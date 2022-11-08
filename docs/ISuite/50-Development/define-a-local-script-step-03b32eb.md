@@ -116,6 +116,8 @@ Cloud Integration provides a Java API to support this use case.
     > -   In tab *General*, you can edit the name of the Script step shape.
     > 
     > -   In tab *Processing*, you can choose *Select* to browse for a script file.
+    >
+    > -   The *Script Function* field on the *Processing* tab holds the name of the script function you want to call. However, if the function has the default name (`processData` for both Groovy and JavaScript) you can leave the field empty.
     > 
     >     You can add external jar files using the *Resource* view. You can then invoke functions from these external jar files in the script. You can also upload a script from your computer using *Upload from File System*.
 
