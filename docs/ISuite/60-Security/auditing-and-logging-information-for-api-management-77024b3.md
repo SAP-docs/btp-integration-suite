@@ -4,7 +4,7 @@
 
 Here you can find a list of the security events that are logged by TECHNICAL COMPONENT.
 
-<a name="loio77024b3e29e749a799b3d724f1535d34__table_dqf_pkf_p4b"/>Security events written in audit logs
+**Security events written in audit logs**
 
 
 <table>

@@ -6,7 +6,7 @@ Information pertaining to the system is described in system variables.
 
 Every system variable consists of two parts, a prefix `_system` and a function. For example: system.time, system is the prefix and time is the function. Supported system variables are listed in the System Variables table.
 
-<a name="loio7806ebf2a1994449bb660f333a6a5101__table_r24_1jw_qmb"/>System Variables
+**System Variables**
 
 
 <table>

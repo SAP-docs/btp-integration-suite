@@ -54,6 +54,8 @@ Assume that the message ID is `ABCD-1234-XYZ`. To get the custom header property
 
 `https://<host address>/api/v1/MessageProcessingLogs('ABCD-1234-XYZ')​/CustomHeaderProperties'`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 The response contains the following part:
 
 ```

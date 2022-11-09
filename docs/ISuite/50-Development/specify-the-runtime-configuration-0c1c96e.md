@@ -20,7 +20,7 @@ Specify the runtime properties of the integration flow.
 
     See: [Product Profiles](product-profiles-8007daa.md)
 
-    <a name="loio0c1c96e50ff340869090469d260976f3__table_ttp_45w_k5"/>Runtime Configuration Properties
+    **Runtime Configuration Properties**
 
 
     <table>

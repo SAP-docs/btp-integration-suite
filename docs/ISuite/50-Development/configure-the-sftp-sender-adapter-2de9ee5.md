@@ -24,7 +24,7 @@ If you have configured a **sender** SFTP adapter, message processing is performe
 
    
   
-<a name="loio2de9ee58737247969eb7dc9e68b1b121__d167e29"/>SFTP Sender Adapter: Tenant reads files from SFTP server
+**SFTP Sender Adapter: Tenant reads files from SFTP server**
 
  ![](images/SFTP_Sender_Adapter_-_Tenat_reads_from_server_2081741.png "SFTP Sender Adapter: Tenant reads files from SFTP server") 
 
@@ -43,7 +43,7 @@ As a prerequisite to use this adapter, you need to set up a connection to an SFT
 
 Once you have created a sender channel and selected the SFTP sender adapter, you can configure the following attributes.
 
-<a name="loio2de9ee58737247969eb7dc9e68b1b121__table_rh2_mql_yjb"/>General
+**General**
 
 
 <table>
@@ -83,7 +83,7 @@ Enter the name of the SFTP channel.
 
 Select the *Source* tab and provide values in the fields as follows.
 
-<a name="loio2de9ee58737247969eb7dc9e68b1b121__table_irv_hdz_25"/>Source
+**Source**
 
 
 <table>
@@ -330,7 +330,7 @@ Disconnect from the SFTP server after each message processing.
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio2de9ee58737247969eb7dc9e68b1b121__table_r3n_qhg_gs"/>Processing
+**Processing**
 
 
 <table>
@@ -632,7 +632,7 @@ Make sure that you specify a relative file path for the target directory. Note t
 
 Select the *Scheduler* tab and provide values in the fields as follows.
 
-<a name="loio2de9ee58737247969eb7dc9e68b1b121__table_dch_trp_gr"/>Scheduler
+**Scheduler**
 
 
 <table>

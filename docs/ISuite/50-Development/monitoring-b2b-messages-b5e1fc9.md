@@ -65,7 +65,7 @@ An interchange is the incoming payload for B2B transactions. It is a bulk messag
 
 You can report an incident or error through the [SAP Support Portal](https://support.sap.com/en/index.html). Please use the following component for your incident:
 
-<a name="loiob5e1fc90bfd5471ca332d54e119faeba__table_bkc_fb5_3sb"/>Ticket Component
+**Ticket Component**
 
 
 <table>

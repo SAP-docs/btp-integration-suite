@@ -17,7 +17,7 @@ A context object is created for each request or response transaction executed by
 
     Following table describes context objects and its children:
 
-    <a name="loioe4d04da772c64ecdabc47e239dbdbaec__table_inj_dly_3fb"/>Context objects
+    **Context objects**
 
 
     <table>
@@ -217,7 +217,7 @@ A context object is created for each request or response transaction executed by
     > ### Note:  
     > You can use the object `request` to access the properties in a request flow. The `request` object refers to either context.proxyRequest or context.targetRequest, depending on where in the flow your JavaScript code executes.
 
-    <a name="loioe4d04da772c64ecdabc47e239dbdbaec__table_spm_14y_3fb"/>context.\*Request child object properties
+    **context.\*Request child object properties**
 
 
     <table>
@@ -458,7 +458,7 @@ A context object is created for each request or response transaction executed by
     > ### Note:  
     > You can use the object `response` to access the properties in a request flow. The response object refers to either context.proxyResponse or context.targetResponse, depending on where in the flow your JavaScript code executes.
 
-    <a name="loioe4d04da772c64ecdabc47e239dbdbaec__table_rhc_54y_3fb"/>context.\*Response object properties
+    **context.\*Response object properties**
 
 
     <table>
@@ -546,7 +546,7 @@ A context object is created for each request or response transaction executed by
     
 -   **Context object methods**
 
-    <a name="loioe4d04da772c64ecdabc47e239dbdbaec__table_scs_sly_3fb"/>Methods
+    **Methods**
 
 
     <table>

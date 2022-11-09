@@ -14,7 +14,7 @@ For example, if you add attributes for your products, applications and use Verif
 
 ## Personas
 
-<a name="loio90a5a6d2a75f4426964ec85c49faef88__table_mll_xfn_xhb"/>Personas
+**Personas**
 
 
 <table>
@@ -118,7 +118,7 @@ User assigned with this role can read, create, delete, and update custom attribu
 
 ## Limits
 
-<a name="loio90a5a6d2a75f4426964ec85c49faef88__table_ppt_gfn_xhb"/>Limits
+**Limits**
 
 
 <table>

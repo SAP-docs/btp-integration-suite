@@ -10,7 +10,7 @@ Get to know the list of available B2B standards, the supported message types and
 
 ## ASC X12
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_h3p_23v_nsb"/>Versions List \(36\)
+**Versions List \(36\)**
 
 
 <table>
@@ -349,7 +349,7 @@ Version
 </tr>
 </table>
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_zwm_dsw_nsb"/>Message Types \(326\)
+**Message Types \(326\)**
 
 
 <table>
@@ -7884,7 +7884,7 @@ Last Version \(if discontinued\)
 
  SAP Integration Suite supports the libraries for syntax version 3\(S3\) and all versions starting from 92.1 are available under this syntax version only.
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_vzc_rvx_qsb"/>Versions List \(60\)
+**Versions List \(60\)**
 
 
 <table>
@@ -8439,7 +8439,7 @@ D.21B S3
 </tr>
 </table>
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_yw4_jd2_rsb"/>Message Types \(199\)
+**Message Types \(199\)**
 
 
 <table>
@@ -13063,7 +13063,7 @@ Due to this versioning strategy and the fact that no updates to the Odette messa
 
 *Message Types \(28\)*
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_zmw_dr4_5sb"/>Message Types
+**Message Types**
 
 
 <table>
@@ -13338,7 +13338,7 @@ The Odette delivery contains 26 different message types. For most of the message
 
 ## cXML
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_onh_ftb_vsb"/>Versions List \(17\)
+**Versions List \(17\)**
 
 
 <table>
@@ -13506,7 +13506,7 @@ Version
 </tr>
 </table>
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_f4j_mhc_vsb"/>Message Types \(102\)
+**Message Types \(102\)**
 
 
 <table>
@@ -15166,7 +15166,7 @@ UpdateMigratedSupplierRequest
 
 ## EANCOM
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_c2h_pmh_gtb"/>Versions List \(10\)
+**Versions List \(10\)**
 
 
 <table>
@@ -15348,7 +15348,7 @@ D.01B S3
 </tr>
 </table>
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_jy4_pnh_gtb"/>Message Types \(48\)
+**Message Types \(48\)**
 
 
 <table>
@@ -16483,7 +16483,7 @@ TAXCON - Tax control message
 
 The following table shows the EANCOM version codes that are supported for each message types and their respective release versions.
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_amy_4c3_gtb"/>Message Types and EANCOM Codes
+**Message Types and EANCOM Codes**
 
 
 <table>
@@ -21802,7 +21802,7 @@ The other available B2B standards are
 
 ## ISO Codelists
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_bgj_lmy_c5b"/>Versions \(4\)
+**Versions \(4\)**
 
 
 <table>
@@ -21853,7 +21853,7 @@ Version
 </tr>
 </table>
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_kr4_1ny_c5b"/>Codelists \(5\)
+**Codelists \(5\)**
 
 
 <table>
@@ -21961,7 +21961,7 @@ ISO 639-1 - Language code \(Alpha-2 code\)
 
 ## UN/CEFACT Recommendations
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_amk_5ny_c5b"/>Versions \(7\)
+**Versions \(7\)**
 
 
 <table>
@@ -22039,7 +22039,7 @@ Version
 </tr>
 </table>
 
-<a name="loioc339707982d141efa7c7849d033ca70d__table_ktm_yny_c5b"/>Codelists \(8\)
+**Codelists \(8\)**
 
 
 <table>
@@ -22209,4 +22209,5 @@ Rec 5 - Abbreviations of Incoterms
 -   [Automotive Edifact Subsets](https://blogs.sap.com/2021/04/06/integration-advisor-automotive-edifact-subsets-jaif-odette-vda-now-available/)
 -   [Odette Message Standard](https://blogs.sap.com/2020/12/21/integration-advisor-odette-message-standard/)
 -   [https://blogs.sap.com/2022/03/09/integration-advisor-new-versions-for-b2b-libraries-cxml-asc-x12-and-un-edifact/](https://blogs.sap.com/2022/03/09/integration-advisor-new-versions-for-b2b-libraries-cxml-asc-x12-and-un-edifact/)
+-   [GS1 Codelists](https://blogs.sap.com/2022/10/20/integration-advisor-now-gs1-global-codelists-library-available/)
 

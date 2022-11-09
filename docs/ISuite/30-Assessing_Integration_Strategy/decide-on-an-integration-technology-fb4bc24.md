@@ -132,7 +132,7 @@ Integration styles are indicated by a color code.
 
 For each combination, a status is displayed:
 
-<a name="loiofb4bc24faec44bdb9cdc1d02d9b5ca99__table_h3d_4sd_psb"/>
+****
 
 
 <table>
@@ -216,7 +216,7 @@ You can define integration guidelines for your organization including default re
 
 For each integration policy, the following attributes are displayed:
 
-<a name="loiofb4bc24faec44bdb9cdc1d02d9b5ca99__table_d2b_dyd_psb"/>
+****
 
 
 <table>
@@ -330,7 +330,7 @@ To inspect and edit the applications overview, go to *Analyze* \> *Applications 
 
 It shows whether each set of source and target applications is definied for the IT landscape
 
-<a name="loiofb4bc24faec44bdb9cdc1d02d9b5ca99__table_g3f_112_psb"/>
+****
 
 
 <table>

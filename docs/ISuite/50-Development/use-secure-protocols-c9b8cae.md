@@ -21,7 +21,7 @@ In case you need end-to-end encryption check the guideline for message level sec
 
 ## Implementation
 
-<a name="loioc9b8cae7ec3e475bb8efaef8e8de28e9__table_o2d_1l3_4mb"/>Recommended Protocols and Adapter-Specific Configuration Measures
+**Recommended Protocols and Adapter-Specific Configuration Measures**
 
 
 <table>

@@ -18,7 +18,7 @@ Visit the [blog](https://blogs.sap.com/2018/06/26/cloud-integration-working-with
 
 A list of number ranges is displayed in a table. For each artifact, the following attributes are displayed:
 
-<a name="loiob6e17fa17a70491da4a54216db298f84__table_xyk_ynt_hv"/>Attributes of Number Ranges Artifacts
+**Attributes of Number Ranges Artifacts**
 
 
 <table>

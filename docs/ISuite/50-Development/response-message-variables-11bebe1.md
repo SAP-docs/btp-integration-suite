@@ -6,7 +6,7 @@ Response message variables are used in policies to access message components lik
 
 API proxy applies the received response to a series of policies, depending on the request condition, API proxy can either modify or transform the request. Based on the content of the response variable, policies can either transform or reject the request. Supported response variables are listed in the Response Message Variables table.
 
-<a name="loio11bebe12aaed4099bd566e5ebbd025f4__table_szq_44n_d1b"/>Response Message Variables
+**Response Message Variables**
 
 
 <table>

@@ -4,7 +4,7 @@
 
 The following table provides an overview of which role templates are required in order to accomplish the various tasks related to Integration Assessment.
 
-<a name="loio693e14fcd6184691a79bc75e10bec805__table_fpq_zjf_4z"/>Tasks and Permissions
+**Tasks and Permissions**
 
 
 <table>

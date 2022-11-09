@@ -6,7 +6,7 @@ Key characteristics are criteria that help enterprise architects and integration
 
  Integration Assessment comes with the following key characteristic groups:
 
-<a name="loioc16258e9957b42cda929076f888b3bfd__table_lql_fzb_psb"/>
+****
 
 
 <table>

@@ -43,7 +43,7 @@ When creating the channel \(see [Overview of Integration Flow Editor](overview-o
 
 The following values are displayed in the *General* tab after a channel has been established. To change the configurations, you need to configure a new channel.
 
-<a name="loio622aa1d5c0b049a891d0c9d21e18ddfc__table_nbt_4sw_jjb"/>General
+**General**
 
 
 <table>
@@ -120,7 +120,7 @@ The protocol that the message broker supports:
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio622aa1d5c0b049a891d0c9d21e18ddfc__table_j3m_1vw_jjb"/>Connection
+**Connection**
 
 
 <table>
@@ -278,7 +278,7 @@ Specify the name of the *User Credentials* artifact.
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio622aa1d5c0b049a891d0c9d21e18ddfc__table_hv2_lql_kjb"/>Processing
+**Processing**
 
 
 <table>

@@ -6,7 +6,7 @@ Several standards are supported to protect the message content \(message-level s
 
 Message-level security features allow you to digitally encrypt/decrypt or sign/verify a message \(or both\). The following standards and algorithms are supported.
 
-<a name="loio463a9085156d4672bc4ee9095277e453__d42e89"/>Message-Level Security Options
+**Message-Level Security Options**
 
 
 <table>

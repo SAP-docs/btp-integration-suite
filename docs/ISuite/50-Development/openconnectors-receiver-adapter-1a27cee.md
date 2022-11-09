@@ -32,7 +32,7 @@ Once you have created a receiver channel and selected the OpenConnectors receive
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loio1a27cee87cd14ef69ca56fb50b1e3983__table_zn5_wtq_yjb"/>General
+**General**
 
 
 <table>
@@ -72,7 +72,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio1a27cee87cd14ef69ca56fb50b1e3983__table_imk_m51_ygb"/>Connection
+**Connection**
 
 
 <table>

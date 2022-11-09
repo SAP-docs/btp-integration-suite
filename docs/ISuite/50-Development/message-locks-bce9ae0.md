@@ -17,7 +17,7 @@ In certain situations \(for example, a runtime node crashes because of an out-of
 
 If you choose the *Message Locks* tile under *Manage Locks* tile in the *Monitor* application, a list of locks is displayed. The following information is shown for each lock entry:
 
-<a name="loiobce9ae0cf9594b2d8a32fafc981b2076__table_vf5_r4c_3z"/>
+****
 
 
 <table>
@@ -155,5 +155,5 @@ To remove the lock entry and retrigger message processing, select the entry and 
 
 [https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/](https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/)
 
-[JMS Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:
+[JMS Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:
 

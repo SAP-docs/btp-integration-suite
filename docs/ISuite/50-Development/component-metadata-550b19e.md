@@ -10,7 +10,7 @@ Component metadata specifies the attributes of sender and receiver adapters used
 
 This set of metadata allows you to define components details.
 
-<a name="loio550b19e79c564534832f4166e7730852__table_at3_xhd_mp"/>Component Metadata
+**Component Metadata**
 
 
 <table>
@@ -309,7 +309,7 @@ Use cluster lock to prevent same message being processed by different runtime no
 
 This set of metadata allows you to define variants for a component.
 
-<a name="loio550b19e79c564534832f4166e7730852__table_onx_zhd_mp"/>Variants
+**Variants**
 
 
 <table>
@@ -904,7 +904,7 @@ Specifies the reused component to be referred by the adapter.
 
 This set of metadata allows you to specify tab pages for the adapter configuration user interface.
 
-<a name="loio550b19e79c564534832f4166e7730852__table_spb_b3d_mp"/>Tabs
+**Tabs**
 
 
 <table>
@@ -1016,7 +1016,7 @@ Currently, guilabel supports only English language.
 
 This set of metadata allows you to group adapter attributes.
 
-<a name="loio550b19e79c564534832f4166e7730852__table_apy_b3d_mp"/>Attribute Group
+**Attribute Group**
 
 
 <table>
@@ -1263,7 +1263,7 @@ The sample attribute group is shown below:
 
 ## Attribute Reference
 
-<a name="loio550b19e79c564534832f4166e7730852__table_vfm_xtg_ss"/>Attribute Reference Table
+**Attribute Reference Table**
 
 
 <table>
@@ -1411,7 +1411,7 @@ If the constraint specified in the restriction tag fails, the system shows the e
 </tr>
 </table>
 
-<a name="loio550b19e79c564534832f4166e7730852__table_y2d_2bf_kr"/>List of Constraints that are supported for Restriction tag
+**List of Constraints that are supported for Restriction tag**
 
 
 <table>
@@ -1587,7 +1587,7 @@ The sample attribute metadata should be as shown below:
 
 ```
 
-<a name="loio550b19e79c564534832f4166e7730852__table_ltt_d3d_mp"/>Attribute Metadata
+**Attribute Metadata**
 
 
 <table>
@@ -2042,7 +2042,7 @@ If the element is set to 'true', then the values are arranged either in ascendin
 </tr>
 </table>
 
-<a name="loio550b19e79c564534832f4166e7730852__table_uwq_pdh_y5"/>Attribute Reference Table
+**Attribute Reference Table**
 
 
 <table>
@@ -2325,7 +2325,7 @@ If you assign *AttributeBehavior* as ***SecureAlias*** for a particular field, t
 </tr>
 </table>
 
-<a name="loio550b19e79c564534832f4166e7730852__table_ohs_czg_ss"/>Attribute Table Metadata
+**Attribute Table Metadata**
 
 
 <table>

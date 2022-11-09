@@ -21,7 +21,7 @@ The *Local Integration Process: Send message to receiver* subprocess sends the m
 
 At the end of the main integration process, an *Idempotent Process Call* step sends the message to the local integration process using the following parameters:
 
-<a name="loioda18f7332adc49a6b6999cf0934822ae__table_us3_tym_hsb"/>
+****
 
 
 <table>
@@ -85,7 +85,7 @@ To test the scenario, perform the following steps:
 
     [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 
-    [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
+    [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
 
 2.  Deploy a *User Credentials* artifact with the following parameters using the *Monitor* application \(*Security Material* tile under *Manage Security*\).
 

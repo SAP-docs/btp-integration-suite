@@ -54,7 +54,7 @@ The integration process *Integration Process Scenario 03a with retry via data 
 
 A content modifier step right before the data store write step stores the order number in an exchange property with name `orderNumber`. The content modifier step uses the following parameters \(tab *Exchange Property*\):
 
-<a name="loiod115669dcb694ae0b9dccd04bf3d889f__table_ykv_sky_ztb"/>
+****
 
 
 <table>
@@ -158,7 +158,7 @@ java.lang.String
 
 The write data store step is defined as follows \(tab *Processing*\):
 
-<a name="loiod115669dcb694ae0b9dccd04bf3d889f__table_lsl_yky_ztb"/>
+****
 
 
 <table>
@@ -281,7 +281,7 @@ To test the scenario, perform the following steps:
 
     [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 
-    [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
+    [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
 
 2.  Deploy a *User Credentials* artifact with the following parameters using the *Monitor* application \(*Security Material* tile under *Manage Security*\).
 

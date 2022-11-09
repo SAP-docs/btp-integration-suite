@@ -21,7 +21,7 @@ You can use the data store to implement the following use cases:
 
 The data store supports four types of operations:
 
-<a name="loio79f63a4bf5a44b5996aa34c51e2f187f__table_opt_kn2_cs"/>Data Store Operations
+**Data Store Operations**
 
 
 <table>

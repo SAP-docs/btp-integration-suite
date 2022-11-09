@@ -8,7 +8,7 @@ Once you have created a sender channel and selected the ProcessDirect sender ada
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loioe340d4c4bce948d4ba6cc5b4fc24ad45__table_th5_fxq_yjb"/>General
+**General**
 
 
 <table>
@@ -48,7 +48,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loioe340d4c4bce948d4ba6cc5b4fc24ad45__table_t4j_13y_3cb"/>Parameters of the ProcessDirect Adapter
+**Parameters of the ProcessDirect Adapter**
 
 
 <table>

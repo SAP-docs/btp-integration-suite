@@ -50,3 +50,5 @@ Send the following GET request:
 
 `https://<host address>/api/v1/MessageProcessingLogs?$inlinecount=allpages&$filter=Status eq 'COMPLETED' and LogStart gt datetime'2021-02-01T00:00:00' and LogEnd lt datetime'2021-02-14T00:00:00'`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+

@@ -58,7 +58,7 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     
 4.  Define the following parameter in the *Processing* tab to sign the incoming message with one or more signatures.
 
-    <a name="loiocc09e03e28984f609b1a05788e8c6129__table_amq_3rp_sr"/>Parameters and Values of PKCS\#7/CMS Signer
+    **Parameters and Values of PKCS\#7/CMS Signer**
 
 
     <table>

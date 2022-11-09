@@ -147,7 +147,7 @@ The following diagram shows the supported the databases for Cloud Integration..
 
 After adding the JDBC receiver adapter step in your integration flow, set up the connection based on the description mentioned in the table:
 
-Configure the Connection Details as Per the Description
+**Configure the Connection Details as Per the Description**
 
 
 <table>

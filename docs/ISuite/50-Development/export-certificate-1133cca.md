@@ -52,6 +52,8 @@ Therefore, you need to send the following GET request:
 
 `https://<host address>/api/v1/KeystoreEntries('736d74702e6d61696c2e7961686f6f2e636f6d')/Certificate/$value`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 As a result, you get the certificate in the following form \(content type: application/pkix-cert\):
 
 ```

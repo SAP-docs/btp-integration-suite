@@ -29,7 +29,7 @@ There are two different options for this component:
 
 The following table lists the options for setting up secure connections for the different protocols. Consider the following table as a connection setup checklist. For a detailed description of the available properties for integration flow design, see the documentation of the individual adapters and integration flow steps.
 
-<a name="loio92dd2a6fdb6045f98d23c828d1567fef__table_fpq_zjf_4z"/>
+****
 
 
 <table>
@@ -240,7 +240,7 @@ You can access the following link to see the list of available landscapes and re
 
 [Setting Up Outbound HTTP Connections \(with Client Certificate Authentication\)](setting-up-outbound-http-connections-with-client-certificate-authentication-f7597d2.md "Using this option, authentication of Cloud Integration calling a receiver is performed based on a client certificate.")
 
-[Twitter Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/453c174be6ca4098a8c99dc4c1262d25.html "You use the Twitter receiver adapter to extract information from the Twitter platform based on certain criteria such as keywords, user data, for example. As one example, you can use this feature to send, search for and receive Twitter feeds.") :arrow_upper_right:
+[Twitter Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/453c174be6ca4098a8c99dc4c1262d25.html "You use the Twitter receiver adapter to extract information from the Twitter platform based on certain criteria such as keywords, user data, for example. As one example, you can use this feature to send, search for and receive Twitter feeds.") :arrow_upper_right:
 
-[Facebook Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/3dcc4080897c4bd4bf55bb8bf1bcac0d.html "You use the Facebook receiver adapter to extract information from Facebook (which is the receiver platform) based on certain criteria such as keywords, user data, for example. As one example, you can use this feature in social marketing activities to do social media data analysis based on Facebook content.") :arrow_upper_right:
+[Facebook Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/3dcc4080897c4bd4bf55bb8bf1bcac0d.html "You use the Facebook receiver adapter to extract information from Facebook (which is the receiver platform) based on certain criteria such as keywords, user data, for example. As one example, you can use this feature in social marketing activities to do social media data analysis based on Facebook content.") :arrow_upper_right:
 

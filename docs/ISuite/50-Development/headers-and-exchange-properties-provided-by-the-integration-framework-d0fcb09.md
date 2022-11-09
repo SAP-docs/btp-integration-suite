@@ -4,7 +4,7 @@
 
 
 
-<a name="loiod0fcb0988f034e889f611c6e36d43ad5__table_hhg_tbq_f2b"/>Headers and Exchange Properties
+**Headers and Exchange Properties**
 
 
 <table>

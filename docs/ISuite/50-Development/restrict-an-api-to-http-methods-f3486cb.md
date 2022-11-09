@@ -108,7 +108,7 @@ To test the integration scenario, perform the following steps:
 
 2.  In the Postman client, open the RestrictHttpMethod folder in the ModelingBasics collection, and run the following requests:
 
-    <a name="loiof3486cb540514fc885f186673f155797__table_tds_1yq_lsb"/>
+    ****
 
 
     <table>

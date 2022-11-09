@@ -60,6 +60,8 @@ To get a single entry with entry ID `1234-abcd-4567-xyz` from the local data sto
 
 `https://<host address>/api/v1​/DataStoreEntries(Id='{1234-abcd-4567-xyz}',DataStoreName='{DataStoreName}',IntegrationFlow='{MyIntegrationFlow}',Type='{Type}')`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 The response contains an entry with the following elements:
 
 ```

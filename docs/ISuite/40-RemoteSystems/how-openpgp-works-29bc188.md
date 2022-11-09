@@ -15,7 +15,7 @@ During runtime, the encryptor/signer processor signs and encrypts the body of th
 
 The required keys are stored in OpenPGP keyrings. The following types of keyrings exist:
 
-<a name="loio29bc18899366482089eaa51985732450__table_azw_fyy_4n"/>PGP Keyrings
+**PGP Keyrings**
 
 
 <table>
@@ -164,7 +164,7 @@ The runtime supports the following features:
 
 The OpenPGP message format is specified at [http://tools.ietf.org/html/rfc4880](http://tools.ietf.org/html/rfc4880). An OpenPGP message is composed of a sequence of packets. The following table contains the most important packet types.
 
-<a name="loio29bc18899366482089eaa51985732450__table_v2z_1jf_rt"/>OpenPGP Message Format - Packets
+**OpenPGP Message Format - Packets**
 
 
 <table>

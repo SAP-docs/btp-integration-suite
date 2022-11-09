@@ -38,7 +38,7 @@ The integration flow performs the following steps:
 
 2.  The Content Modifier *Get Alternative Partner Id* reads the actual values of the elements `AlternativePid`, `Agency`, and `Scheme` from the payload and stores them as properties.
 
-    <a name="loio01a784c181ef4867a8440d6364547bb3__table_fqx_h3w_2mb"/>
+    ****
 
 
     <table>
@@ -184,7 +184,7 @@ The integration flow performs the following steps:
 
     The headers are defined with the following expressions:
 
-    <a name="loio01a784c181ef4867a8440d6364547bb3__table_jfg_clv_2mb"/>
+    ****
 
 
     <table>

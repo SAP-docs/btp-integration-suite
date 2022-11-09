@@ -82,6 +82,9 @@ This topic describes how to add and activate relevant capabilities in Integratio
 
     API Management
 
+    > ### Note:  
+    > To activate additional functionalities such as API business hub enterprise and Graph, select the respective checkboxes while activating API Management.
+
 
     
     </td>

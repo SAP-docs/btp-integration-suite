@@ -109,7 +109,7 @@ Before consuming the drivers in runtime, you must deploy the uploaded driver as 
 
 2.  Specify the following attributes:
 
-    <a name="loio77c7d9550e12494eb600ec82496ef215__table_th1_2pq_gr"/>Driver-Specific Parameters
+    **Driver-Specific Parameters**
 
 
     <table>

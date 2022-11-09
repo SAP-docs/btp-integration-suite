@@ -453,7 +453,7 @@ The "grace period" for times. For example, if the time allowance is configured t
 
 The following flow variables are available after the policy is executed:
 
-<a name="loio277635d687b048448dccfa4402da1bf4__table_vqn_tb4_c3b"/>Flow Variables
+**Flow Variables**
 
 
 <table>
@@ -783,7 +783,7 @@ Header in JSON format.
 
 During the policy execution, the following errors can occur:
 
-<a name="loio277635d687b048448dccfa4402da1bf4__table_nlm_fnz_21b"/>Error Cause
+**Error Cause**
 
 
 <table>
@@ -1143,7 +1143,7 @@ Wrong type of key specified. For example, if you specify an RSA key for an Ellip
 
 The following fault variables are set when the policy triggers an error at runtime:
 
-<a name="loio277635d687b048448dccfa4402da1bf4__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

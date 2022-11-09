@@ -7,7 +7,7 @@ When you have chosen the POP3 \(Post-Office\_Protocol\) the test tool checks the
 > ### Remember:  
 > This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
 
-<a name="loio40eb051fe59d452ca3704750250c6940__table_d3f_sr4_pw"/>IMAP Connectivity Test Options
+**IMAP Connectivity Test Options**
 
 
 <table>

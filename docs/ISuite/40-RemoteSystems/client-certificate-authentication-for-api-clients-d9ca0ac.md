@@ -27,7 +27,7 @@ In detail, perform the following steps:
 
 1.  Look up the role to be used to authorize the API client to access the related Cloud Integration resource using the API.
 
-    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
 
 2.  In SAP BTP cockpit, select the subaccount that hosts your SAP Integration Suite virtual environment and create a service instance and service key.
 
@@ -35,7 +35,7 @@ In detail, perform the following steps:
 
     For this use case, specify the service instance and service key parameters as follows:
 
-    <a name="loiod9ca0ac0b8704381a3fef0bcbb553b3f__table_nb5_sdl_zsb"/>
+    ****
 
 
     <table>
@@ -139,7 +139,7 @@ In detail, perform the following steps:
 
     Select role according to the API resource to access.
 
-    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
 
 
     
@@ -199,7 +199,7 @@ In detail, perform the following steps:
 
     Select role according to the API resource to access.
 
-    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
 
 
     
@@ -249,7 +249,7 @@ In detail, perform the following steps:
 
 ## Next Steps
 
-Configure the request from the API client to the Cloud Integration OData API.
+Configure the request from the API client to the Cloud Integration OData API \(see [HTTP Calls and URI Components](../50-Development/http-calls-and-uri-components-ca75e12.md)\).
 
 With the request, the API client has to pass on a certificate chain that contains a root certificate supported by the load balancer \(see [Load Balancer Root Certificates Supported by SAP](load-balancer-root-certificates-supported-by-sap-4509f60.md)\). Otherwise, the load balancer doesn't pass on the client certificate to SAP Integration Suite .
 

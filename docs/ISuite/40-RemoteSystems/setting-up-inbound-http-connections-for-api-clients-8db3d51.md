@@ -70,7 +70,7 @@ More information: [Basic Authentication of an IdP User for API Clients](basic-au
 
 [Creating Service Instance and Service Key for Inbound Authentication](creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md "With a service instance, you define how to access a certain SAP BTP service. In the context of SAP Integration Suite , a service instance is the definition of an OAuth client.")
 
-[OData API](../50-Development/odata-api-a617d6f.md "An application programming interface (API) allows you to access data, for example, monitoring data.")
+[OData API](../50-Development/odata-api-a617d6f.md "The Cloud Integration application programming interface (API) allows you to access Cloud Integration resources, for example, monitoring data.")
 
 [Tutorial: Set Up Inbound OAuth Client Credentials Grant Authentication for API Clients with SAP-Generated Certificate](https://developers.sap.com/tutorials/btp-integration-suite-oauth-client-certificate.html)
 

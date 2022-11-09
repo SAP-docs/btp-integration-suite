@@ -4,7 +4,7 @@
 
 During an import or export of a policy template, the policy template follows a pre-defined structure.
 
-<a name="loioa0210daca06b4e43af0375224ab28a6e__table_c1j_xbf_js"/>Policy Template Structure
+**Policy Template Structure**
 
 
 <table>

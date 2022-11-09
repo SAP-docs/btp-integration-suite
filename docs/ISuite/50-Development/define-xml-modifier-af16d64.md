@@ -40,7 +40,7 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
 
 3.  Select the *XML Modifier* step, go to the *General* tab define the parameters as follows:
 
-    <a name="loioaf16d64a4a1a4d23a4169ce1a6feee67__table_vx2_n14_pnb"/>XML Modifier – General Tab
+    **XML Modifier – General Tab**
 
 
     <table>
@@ -80,7 +80,7 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
     
 4.  Go to the *Processing* tab and define the parameters as follows:
 
-    <a name="loioaf16d64a4a1a4d23a4169ce1a6feee67__table_oxv_r14_pnb"/>XML Modifier – Processing Tab
+    **XML Modifier – Processing Tab**
 
 
     <table>

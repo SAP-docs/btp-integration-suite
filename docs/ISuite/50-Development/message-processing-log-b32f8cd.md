@@ -17,7 +17,7 @@ Below, you can select and display *Status*, *Properties* and *Logs*. If the proc
 
 The logs section shows the number of runs as well as the following information:
 
-<a name="loiob32f8cda16034a8390ccaea98f8f68b1__table_kw4_2lt_zcb"/>Runs
+**Runs**
 
 
 <table>
@@ -160,7 +160,7 @@ The properties view of the selected integration flow element is displayed at the
 
 The availability of the trace data is also visualized in the integration flow model as envelope icons.
 
-<a name="loiob32f8cda16034a8390ccaea98f8f68b1__table_x1b_dry_ndb"/>Envelope Icons
+**Envelope Icons**
 
 
 <table>

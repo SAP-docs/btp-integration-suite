@@ -13,7 +13,7 @@ Once you have created a message implementation guideline, you can edit and modif
 2.  Navigate to the *Structure* tab and choose a node that you want to edit. The node details are displayed to the right side of the structure.
 3.  Each node has the following details. Certain fields and section pertain only to a leaf node or a group node which is also mentioned below.
 
-    <a name="loio518b54f886e449edb62298eae123a694__table_gyj_dsh_gqb"/>Details Tab
+    **Details Tab**
 
 
     <table>

@@ -59,7 +59,7 @@ To set up this authorization option, perform the following steps.
 
     For this use case, specify the service instance and service key parameters as follows:
 
-    <a name="loio6c052ce62b27449385d3e75aeeb08f05__table_nb5_sdl_zsb"/>
+    ****
 
 
     <table>

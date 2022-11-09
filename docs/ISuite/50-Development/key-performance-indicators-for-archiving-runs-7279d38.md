@@ -6,7 +6,7 @@ In addition to archiving MPLs, the system job also records specific Key Performa
 
 You can use these indicators, for example, to check for recurring errors, or potential performance problems. Use the official OData API to query the KPIs.
 
-<a name="loio7279d38ad1a4496b93098b56b29d215b__table_b2c_42z_1qb"/>List of Job KPIs
+**List of Job KPIs**
 
 
 <table>

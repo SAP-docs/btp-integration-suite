@@ -41,7 +41,7 @@ As a tenant administrator, you can group application roles in role collections. 
 
     The following role collections are available for each capability in SAP Integration Suite:
 
-    <a name="loio2c6214a3228e4b4cba207f49fda92ed4__table_fgt_dt1_hmb"/>Roles
+    **Roles**
 
 
     <table>

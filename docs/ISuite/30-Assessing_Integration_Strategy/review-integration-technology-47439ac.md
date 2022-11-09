@@ -21,7 +21,7 @@ You can use SAP standard integration technologies \(for example, SAP Integration
 
 3.  Under *Create Technology Profile*, specify the following attributes:
 
-    <a name="loio47439ac3bb134d809291dbd52aca7657__table_nwj_3lc_nsb"/>
+    ****
 
 
     <table>
@@ -125,7 +125,7 @@ You can use SAP standard integration technologies \(for example, SAP Integration
 
     You can specify different attributes in the following tabs.
 
-    <a name="loio47439ac3bb134d809291dbd52aca7657__table_a2g_rmc_nsb"/>
+    ****
 
 
     <table>

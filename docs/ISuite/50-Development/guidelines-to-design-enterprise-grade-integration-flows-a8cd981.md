@@ -6,6 +6,9 @@ As an integration developer, you need to make sure that you design integration f
 
 An integration flow is enterprise grade when it's designed in such a way that it's qualified to implement parts of the mission-critical processes of an enterprise. A poorly designed integration flow can lead to errors. In the worst case, the integration flow breaks, resulting in a service disruption for the business process. It is your responsibility to design an integration flow in such a way that the overall availability of the business process isn't impaired. To fulfill this requirement, you need to embrace certain characteristics constituting an enterprise-grade integration flow.
 
+> ### Note:  
+> For example, you can design your integration flows in many different ways to implement a certain integration scenario. However, there are certain guidelines that help you to optimize the performance of your scenario \(see [Optimize Performance](optimize-performance-491c80d.md)\).
+
 In this section, we introduce guidelines for designing enterprise-grade integration flows in SAP Integration Suite .
 
 Enterprise-grade integration flows have the following qualities:

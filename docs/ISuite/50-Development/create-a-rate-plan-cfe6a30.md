@@ -43,7 +43,7 @@ You are creating a rate plan.
             > ### Example:  
             > Tier based rate plan
 
-            <a name="loiocfe6a30600f148a39a7920dbc7fa1ab2__table_ttl_b4s_41b"/>Tier based rate plan
+            **Tier based rate plan**
 
 
             <table>

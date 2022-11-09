@@ -27,7 +27,7 @@ Once you have created a sender channel and selected the mail sender adapter, you
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loioe23e9cce8a974b8c8012ffcad5494766__table_s3r_m4q_yjb"/>General
+**General**
 
 
 <table>
@@ -67,7 +67,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loioe23e9cce8a974b8c8012ffcad5494766__table_bx4_bs5_yt"/>Connection
+**Connection**
 
 
 <table>
@@ -234,7 +234,7 @@ More information: [Deploying a User Credentials Artifact](deploying-a-user-crede
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loioe23e9cce8a974b8c8012ffcad5494766__table_oxn_wtl_l1b"/>Processing
+**Processing**
 
 
 <table>
@@ -431,7 +431,7 @@ To verify signed e-mails, you can include the original e-mail in the `SAP_MAIL_O
 
 Select the *Scheduler* tab and provide values in the fields as follows.
 
-<a name="loioe23e9cce8a974b8c8012ffcad5494766__table_qnp_m55_yt"/>Scheduler
+**Scheduler**
 
 
 <table>

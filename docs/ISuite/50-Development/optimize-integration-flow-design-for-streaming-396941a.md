@@ -12,7 +12,7 @@ If you cannot avoid using a nonstreaming integration flow component, you have to
 
 
 
-<a name="loio396941a8c12441ab999f0f300b862eaa__table_jrg_j4j_2mb"/>
+****
 
 
 <table>

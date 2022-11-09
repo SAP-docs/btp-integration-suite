@@ -89,7 +89,7 @@ In this setup, only a single customer tenant \(typically the test tenant\) is su
 
 You can use the transport management options provides for SAP Integration Suite to supply the other tenants with the content. This way the content consumer has full control over when to update the prepackaged integration content in the landscape.
 
-For more information on the transport management options, see [Content Transport](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/e3c79d65aa604b80992e20609881ad7a.html "Reuse content across multiple tenants. Export integration content from one (source) tenant and import it on another (target) tenant.") :arrow_upper_right:.
+For more information on the transport management options, see [Content Transport](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/e3c79d65aa604b80992e20609881ad7a.html "Reuse content across multiple tenants. Export integration content from one (source) tenant and import it on another (target) tenant.") :arrow_upper_right:.
 
 > ### Note:  
 > **Differences between configured and edited content during update**

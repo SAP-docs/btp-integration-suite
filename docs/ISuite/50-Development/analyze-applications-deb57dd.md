@@ -12,7 +12,7 @@ The analytics information can be viewed as *Performance Analytics* and *Error An
 
 -   **Performance Analytics**: Displays the performance-related charts and KPIs for the selected time period. Following table describes the charts used to analyze the performance of all applications:
 
-    <a name="loiodeb57dd871b842b0bfbd812657941791__table_kfd_25p_tgb"/>Performance Analytics
+    **Performance Analytics**
 
 
     <table>
@@ -116,7 +116,7 @@ The analytics information can be viewed as *Performance Analytics* and *Error An
     
 -   **Error Analytics**: Displays the error-related charts and KPIs for the selected time period. Following table describes the charts used to view error analytics of all the applications:
 
-    <a name="loiodeb57dd871b842b0bfbd812657941791__table_rby_nvp_tgb"/>Error Analytics
+    **Error Analytics**
 
 
     <table>

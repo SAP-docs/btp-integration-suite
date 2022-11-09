@@ -20,7 +20,7 @@ Once you have created a receiver channel and selected the ODC Receiver Adapter, 
 
 Select the Connection tab and provide values in the fields as follows.
 
-<a name="loio3cdbc29ca2b641738513ab8665bab9fd__table_bp3_rs4_xjb"/>Connection
+**Connection**
 
 
 <table>
@@ -177,7 +177,7 @@ Enter the location ID.
 
 Select the Processing tab and provide values in the fields as follows.
 
-<a name="loio3cdbc29ca2b641738513ab8665bab9fd__table_qgr_4t4_xjb"/>Processing
+**Processing**
 
 
 <table>

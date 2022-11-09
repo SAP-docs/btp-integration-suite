@@ -1715,7 +1715,7 @@ If you use a combination of the <Value\> and <Ref\> elements, <Value\> acts as d
 
 During the policy execution, the following errors can occur:
 
-<a name="loio523efe6d0a9d43beb5d62ad07937578f__table_nlm_fnz_21b"/>Error Cause
+**Error Cause**
 
 
 <table>
@@ -1835,7 +1835,7 @@ A payload specified in the policy is invalid.
 
 Following fault variables are set when the policy triggers an error at runtime:
 
-<a name="loio523efe6d0a9d43beb5d62ad07937578f__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

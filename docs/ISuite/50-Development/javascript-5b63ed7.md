@@ -131,57 +131,9 @@ Syntax: `<DisplayName>Policy-Display-Name</DisplayName>`
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-Property \(optional\)
-
-
-
-</td>
-<td valign="top">
-
-Specifies a property that you can access from the JavaScript code at runtime.
-
-Syntax: `<Properties><Property name="propName">property-value</Property></Properties>`
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SSL info \(optional\)
-
-
-
-</td>
-<td valign="top">
-
-Specifies the properties that are used to configure TLS for all HTTP client instances created by the JavaScript policy.
-
-Syntax:
-
-```
-    <SSLInfo>
-        <Enabled>trueFalse</Enabled>
-        <ClientAuthEnabled>trueFalse</ClientAuthEnabled>
-        <KeyStore>ref://keystoreRef</KeyStore>
-        <KeyAlias>keyAlias</KeyAlias>
-        <TrustStore>ref://truststoreRef</TrustStore>
-    </SSLInfo>
-```
-
-
-
-</td>
-</tr>
 </table>
 
 During the policy execution, the following errors can occur:
-
-<a name="loio5b63ed7782ab4b4ea96bf84119059039__table_nlm_fnz_21b"/>Error Cause
 
 
 <table>
@@ -336,8 +288,6 @@ This error occurs when the <ResourceURL\> or the <IncludeURL\> elements refer to
 </table>
 
 Following fault variables are set when the policy triggers an error at runtime:
-
-<a name="loio5b63ed7782ab4b4ea96bf84119059039__table_c4m_r25_h1b"/>Fault Variables
 
 
 <table>

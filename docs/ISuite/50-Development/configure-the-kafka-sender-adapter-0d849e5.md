@@ -33,7 +33,7 @@ Once you’ve created a sender channel and selected the Kafka sender adapter, yo
 
 The following values are displayed in the *General* tab after a channel has been established. If you want to change the configurations, you need to configure a new channel.
 
-<a name="loio0d849e5b2ea749ff890d7e78db2f3a0b__table_pwx_sw1_n4b"/>General
+**General**
 
 
 <table>
@@ -112,7 +112,7 @@ Select the *Connection* tab and provide values in the fields as follows:
 > 
 >     For more information, see also the blog [Monitoring Polling Status in Kafka Sender Adapter](https://blogs.sap.com/2021/08/11/cloud-integration-monitoring-polling-status-in-kafka-sender-adapter/).
 
-<a name="loio0d849e5b2ea749ff890d7e78db2f3a0b__table_htw_xw1_n4b"/>Connection
+**Connection**
 
 
 <table>
@@ -265,7 +265,7 @@ Select the *Processing* tab and provide values in the fields as follows:
 > ### Note:  
 > The integration flow id acts as Consumer Group.
 
-<a name="loio0d849e5b2ea749ff890d7e78db2f3a0b__table_p4c_fx1_n4b"/>Processing
+**Processing**
 
 
 <table>
@@ -357,7 +357,7 @@ Select the*Advanced* tab and provide values in the fields as follows:
 > 
 > -   The parameters condition each other, meaning they’re codependant. So, don't enter contradictory data. For example, if you define the *Min. Fetch Size* as 1 Megabyte, you should configure the *Max. Fetch Wait Time \(in ms\)* accordingly, allowing enough time to actually collect 1 Megabyte.
 
-<a name="loio0d849e5b2ea749ff890d7e78db2f3a0b__table_rw3_jx1_n4b"/>Advanced
+**Advanced**
 
 
 <table>

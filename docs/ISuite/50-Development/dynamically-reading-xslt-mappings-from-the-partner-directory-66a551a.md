@@ -35,7 +35,7 @@ In the *Source* field, select *Header*, and in the *Header Name* field, specify 
 
 In the *Content Modifier* step, specify the following settings \(under *Message Header*\):
 
-<a name="loio66a551a6368a4ecab65902e75643152e__table_wsp_c2b_r1b"/>
+****
 
 
 <table>

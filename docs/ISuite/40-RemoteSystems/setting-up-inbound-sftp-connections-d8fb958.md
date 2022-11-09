@@ -12,7 +12,7 @@ In other words, the tenant sends a request to the SFTP server, but the data flow
 
 The following table lists the options for setting up secure connections for the different protocols. Consider the following table as a connection setup checklist. For a detailed description of the available properties for integration flow design, see the documentation of the individual adapter.
 
-<a name="loiod8fb95805cca4dc88193d24a887c4f70__table_azc_sdb_fdb"/>
+****
 
 
 <table>

@@ -29,7 +29,7 @@ The following integration flow components are parameterizable so that partner-sp
 
 The AS2 sender reads the following parameters from the Partner Directory:
 
-<a name="loio1aa4ba7a38fa4f0e8324553e3b15d05d__d165e233"/>
+****
 
 
 <table>
@@ -160,7 +160,7 @@ Parameter name of public key in Partner Directory.
 
 AS2 MDN sender reads the following parameters from Partner Directory:
 
-<a name="loio1aa4ba7a38fa4f0e8324553e3b15d05d__d165e356"/>
+****
 
 
 <table>

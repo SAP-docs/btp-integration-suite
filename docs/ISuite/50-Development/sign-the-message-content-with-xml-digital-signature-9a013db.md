@@ -60,7 +60,7 @@ You sign a message with an XML digital signature to ensure authenticity and data
     
 4.  Define the following parameters in the *Processing* tab to create an XML digital signature for the incoming message.
 
-    <a name="loio9a013dba51dc45429b0103a866b0e484__table_mhp_fns_5y"/>
+    ****
 
 
     <table>
@@ -331,7 +331,7 @@ You sign a message with an XML digital signature to ensure authenticity and data
 
 5.  Define the following parameters in *Advanced* tab, under *Transformation Parameters*.
 
-    <a name="loio9a013dba51dc45429b0103a866b0e484__table_dfj_l4s_5y"/>
+    ****
 
 
     <table>
@@ -495,7 +495,7 @@ You sign a message with an XML digital signature to ensure authenticity and data
 
 6.  On the *Advanced* tab page, under *XML Document Parameters*, specify the following parameters.
 
-    <a name="loio9a013dba51dc45429b0103a866b0e484__table_rq5_hps_5y"/>
+    ****
 
 
     <table>

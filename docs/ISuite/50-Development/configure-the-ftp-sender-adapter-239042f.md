@@ -38,7 +38,7 @@ The FTP \(File Transfer Protocol\) sender adapter connects an SAP Cloud Integrat
 
 Once you have created a sender channel and selected the FTP sender adapter, you can configure the following attributes. Select the *General* tab and provide values in the fields as follows.
 
-<a name="loio239042f2328a406a8647b93b937921a3__table_qcd_nn1_xlb"/>General
+**General**
 
 
 <table>
@@ -78,7 +78,7 @@ Enter the name of the FTP channel.
 
 Select the *Source* tab and provide values in the fields as follows.
 
-<a name="loio239042f2328a406a8647b93b937921a3__table_ilh_f41_xlb"/>Source
+**Source**
 
 
 <table>
@@ -331,7 +331,7 @@ Disconnect from the FTP server after each message processing.
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio239042f2328a406a8647b93b937921a3__table_hxp_g41_xlb"/>Processing
+**Processing**
 
 
 <table>
@@ -621,7 +621,7 @@ Specifies the target directory where to move the file.
 
 Select the *Scheduler* tab and provide values in the fields as follows.
 
-<a name="loio239042f2328a406a8647b93b937921a3__table_fbp_h41_xlb"/>Scheduler
+**Scheduler**
 
 
 <table>

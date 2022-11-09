@@ -85,7 +85,7 @@ These variables are all prefixed by: `verifyapikey.{policy_name}`
 
 For example: `verifyapikey.{policy_name}.client_id`
 
-<a name="loio4d15a0427494452dbb42a319e9bb420f__table_eln_mnb_n1b"/>General Flow Variables
+**General Flow Variables**
 
 
 <table>
@@ -308,7 +308,7 @@ These variables are all prefixed by: `verifyapikey.{policy_name}.app.`
 
 For example: `verifyapikey.{policy_name}.app.name`
 
-<a name="loio4d15a0427494452dbb42a319e9bb420f__table_o3x_m4b_n1b"/>App Flow Variables
+**App Flow Variables**
 
 
 <table>
@@ -528,7 +528,7 @@ These variables are all prefixed by: `verifyapikey.{policy_name}.developer.`
 
 For example: `verifyapikey.{policy_name}.developer.id`
 
-<a name="loio4d15a0427494452dbb42a319e9bb420f__table_nmr_y2c_n1b"/>Developer Flow Variables
+**Developer Flow Variables**
 
 
 <table>
@@ -735,7 +735,7 @@ The following variables are automatically populated in Analytics when a Verify A
 
 During the policy execution, the following errors can occur:
 
-<a name="loio4d15a0427494452dbb42a319e9bb420f__table_sbx_lsx_lz"/>Error Code
+**Error Code**
 
 
 <table>
@@ -881,7 +881,7 @@ The Developer App associated with the API key is revoked.
 
 Following errors can occur when you deploy a proxy containing this policy:
 
-<a name="loio4d15a0427494452dbb42a319e9bb420f__table_yty_tz5_vgb"/>Deployment errors
+**Deployment errors**
 
 
 <table>
@@ -921,7 +921,7 @@ The APIKey element does not have a value or key specified.
 
 Following fault variables is set when the policy triggers an error at runtime:
 
-<a name="loio4d15a0427494452dbb42a319e9bb420f__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

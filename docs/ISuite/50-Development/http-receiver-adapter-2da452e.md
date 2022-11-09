@@ -94,7 +94,7 @@ Once you've created a receiver channel and selected the HTTP receiver adapter, y
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loio2da452effb764b3bb28f8e0a2f5bd480__table_rxy_gjq_yjb"/>General
+**General**
 
 
 <table>
@@ -134,7 +134,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio2da452effb764b3bb28f8e0a2f5bd480__table_th1_2pq_gr"/>Connection Details
+**Connection Details**
 
 
 <table>
@@ -511,7 +511,7 @@ This option allows you to receive all responses irrespective of the HTTP status 
 </tr>
 </table>
 
-Header Details
+**Header Details**
 
 
 <table>

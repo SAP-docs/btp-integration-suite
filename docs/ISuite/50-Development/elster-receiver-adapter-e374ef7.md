@@ -50,7 +50,7 @@ Once you have created a receiver channel and selected the Elster Receiver Adapte
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loioe374ef7fb342413caf55ad6fd50384bb__table_qrt_wjr_yjb"/>General
+**General**
 
 
 <table>
@@ -90,7 +90,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loioe374ef7fb342413caf55ad6fd50384bb__table_kkm_f5n_sgb"/>Connection
+**Connection**
 
 
 <table>

@@ -46,7 +46,7 @@ You use an adapter in an integration flow for outbound and inbound communication
 
     1.  Select *File* \> *New* \> *Project*.
 
-    2.  Choose *SAP Cloud Integration* \> *Adapter Project* in the *New Project* wizard.
+    2.  Choose *SAP Cloud Platform Integration* \> *Adapter Project* in the *New Project* wizard.
 
     3.  Choose *Next*.
 
@@ -237,7 +237,7 @@ You use an adapter in an integration flow for outbound and inbound communication
 
     1.  Select *File* \> *New* \> *Project*.
 
-    2.  Choose *SAP Cloud Integration* \> *Adapter Project*in the *New Project* wizard.
+    2.  Choose *SAP Cloud Platform Integration* \> *Adapter Project*in the *New Project* wizard.
 
     3.  Choose *Next*.
 
@@ -471,7 +471,7 @@ You use an adapter in an integration flow for outbound and inbound communication
 
 9.  To configure the Operations Server to connect your local Eclipse tooling to the tenant, execute the following substeps:
 
-    1.  Select *Window* \> *Preferences* \> *SAP Cloud Integration* \> *Operations Server*.
+    1.  Select *Window* \> *Preferences* \> *SAP Cloud Platform Integration* \> *Operations Server*.
 
     2.  Enter the server URL.
 

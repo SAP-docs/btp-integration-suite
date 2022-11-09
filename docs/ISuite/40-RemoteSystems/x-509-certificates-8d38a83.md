@@ -14,7 +14,7 @@ This topic does not explain the standard in detail, but points out the following
 
 A digital certificate provides a public key that is signed by a certification authority \(CA\).
 
-<a name="loio8d38a831d13144dda2096a09cc0a833b__table_hvm_vrz_25"/>Elements of X.509 Certificates
+**Elements of X.509 Certificates**
 
 
 <table>

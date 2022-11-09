@@ -9,7 +9,7 @@ When you have chosen the IMAP \(Internet Message Access Protocol\) connection, t
 
 -   If the receiver \(host\) is reachable for the tenant
 
-<a name="loio44e8e8ed5cc84db5ba79578f61d4ad4a__table_d3f_sr4_pw"/>IMAP Connectivity Test Options
+**IMAP Connectivity Test Options**
 
 
 <table>

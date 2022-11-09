@@ -82,7 +82,7 @@ You can use this attribute to support the following use cases:
     
 4.  Enter the following details in the *Processing* tab to verify the signatures of the incoming message.
 
-    <a name="loiof095dc6b9bb04530bbdaf037b250dd7f__d756e72"/>Parameters and Values of PKCS\#7/CMS Signature Verifier
+    **Parameters and Values of PKCS\#7/CMS Signature Verifier**
 
 
     <table>

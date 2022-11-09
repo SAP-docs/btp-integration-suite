@@ -87,7 +87,7 @@ Enter an optional description for the channel.
 
 Select the *Connection* tab and provide information as described as follows:
 
-<a name="loiod16dd12c5c5649e99c8939879a77f9c0__table_rcl_tbz_22b"/>Connection
+**Connection**
 
 
 <table>
@@ -219,7 +219,7 @@ Compresses the response data from SuccessFactors so that you improve the message
 
 Select the *Processing* tab and provide information as described as follows:
 
-<a name="loiod16dd12c5c5649e99c8939879a77f9c0__table_efs_scz_22b"/>Processing
+**Processing**
 
 
 <table>
@@ -578,7 +578,7 @@ There are two main steps in this wizard:
 2.  *Select Entity and Define Operation:* In this step, you select the operation you want to perform and the entity on which you want to perform the operation on. After selecting the entity, you also select the fields, filtering and sorting conditions.
 3.  *Configure Filter & Sorting:* This step is available only for data fetch operations, where you can define the order in which the records are fetched in the response payload and filter for the fields that you require.
 
-<a name="loiod16dd12c5c5649e99c8939879a77f9c0__table_wqk_vjl_xdb"/>Connect to System
+**Connect to System**
 
 
 <table>
@@ -725,7 +725,7 @@ Provide the credential name that you deployed in *Operations View*.
 </tr>
 </table>
 
-<a name="loiod16dd12c5c5649e99c8939879a77f9c0__table_h45_knl_xdb"/>Select Entity & Define Operation
+**Select Entity & Define Operation**
 
 
 <table>
@@ -849,7 +849,7 @@ For more information, see **Skip System Query Option \($skip\)** in [OData V2 UR
 
 This step is available only for data fetch operations, *Query\(GET\), and* *Read\(GET\)*.
 
-<a name="loiod16dd12c5c5649e99c8939879a77f9c0__table_gbn_y3m_xdb"/>Configure Filter & Sorting
+**Configure Filter & Sorting**
 
 
 <table>

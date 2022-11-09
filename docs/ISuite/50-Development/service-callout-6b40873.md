@@ -289,7 +289,7 @@ Refer sample code 4 \(b\).
 
 They allow dynamic performance of policies and flows at runtime. It’s based on HTTP headers, message content, or Flow context. The following Flow variables are available and predefined after a Service Callout policy is executed.
 
-<a name="loio6b4087345716471ebc83369f5fddd9c8__table_g51_ybb_n1b"/>Flow Variables Table
+**Flow Variables Table**
 
 
 <table>
@@ -461,7 +461,7 @@ This segment defines the fault codes and error messages that are returned.
 
 During the policy execution, the following errors can occur:
 
-<a name="loio6b4087345716471ebc83369f5fddd9c8__table_sbx_lsx_lz"/>Error Code
+**Error Code**
 
 
 <table>
@@ -717,7 +717,7 @@ The Request variable quantified in the policy is not of type Request Message. Fo
 
 Following fault variables are set when the policy triggers an error at runtime:
 
-<a name="loio6b4087345716471ebc83369f5fddd9c8__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

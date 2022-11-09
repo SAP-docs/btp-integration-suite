@@ -6,7 +6,7 @@ Check the status of messages and integration content artifacts for a tenant clus
 
 The start page is subdivided into the following sections, each covering a specific task area.
 
-<a name="loio05446d0616d44e1daf821c273b69fcc6__table_z1z_xvs_rl"/>Sections on Monitor Start Page
+**Sections on Monitor Start Page**
 
 
 <table>
@@ -113,7 +113,7 @@ The *Variables* tile allows you to monitor variables used in integration flows.
 The *Message Queues* tile provides an overview of the active queues of a tenant and allows you to manage them
 
 > ### Note:  
-> You can only monitor message queues, if Enterprise Messaging is activated and a JMS Message broker is provisioned. \(See: [Activating Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/a74cddceacb34abb958e817c1f6782d2.html "You can activate Enterprise Messaging on all licensed versions of Cloud Integration.") :arrow_upper_right:\)
+> You can only monitor message queues, if Enterprise Messaging is activated and a JMS Message broker is provisioned. \(See: [Activating Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "You can activate Enterprise Messaging on all licensed versions of Cloud Integration.") :arrow_upper_right:\)
 
 The *Number Ranges* tile provides an overview of number ranges that are used in business-to-business scenarios.
 
@@ -214,9 +214,9 @@ When you add or edit a tile, you can specify the following filter categories:
 
 [Managing PGP Keys](managing-pgp-keys-cd478a7.md "The PGP Keys monitor allows a tenant administrator to manage the public and private PGP keys.")
 
-[Managing Certificate-to-User Mappings, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/88ea2e5336d445f783c194c8d2780d35.html "The Manage Security area provides an overview of security-related artifacts. It also provides access to all certificate-to-user mappings defined for the tenant.") :arrow_upper_right:
+[Managing Certificate-to-User Mappings, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/88ea2e5336d445f783c194c8d2780d35.html "The Manage Security area provides an overview of security-related artifacts. It also provides access to all certificate-to-user mappings defined for the tenant.") :arrow_upper_right:
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
 [Managing Access Policies](managing-access-policies-7db3c87.md "Specifics for Access Policies in the Cloud Foundry Environment..")
 
@@ -234,9 +234,9 @@ When you add or edit a tile, you can specify the following filter categories:
 
 [Managing Number Ranges](managing-number-ranges-b6e17fa.md "The topic provides an overview of number ranges related artifacts.")
 
-[Accessing Logs, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/d5a4113e6da14a18838898d769261512.html "The Access Logssection allows you to monitor audit logs (resulting from system changes) and to analyze errors that occurred during inbound HTTP processing (and documented in system log files).") :arrow_upper_right:
+[Accessing Logs, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d5a4113e6da14a18838898d769261512.html "The Access Logssection allows you to monitor audit logs (resulting from system changes) and to analyze errors that occurred during inbound HTTP processing (and documented in system log files).") :arrow_upper_right:
 
-[Monitoring Audit Log, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/2d6031ffc1aa4af08a03f0444b979667.html "The audit log contains information on system changes. These events can be for example the deployment of an integration flow as well as a configuration change.") :arrow_upper_right:
+[Monitoring Audit Log, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2d6031ffc1aa4af08a03f0444b979667.html "The audit log contains information on system changes. These events can be for example the deployment of an integration flow as well as a configuration change.") :arrow_upper_right:
 
 [Accessing Logs](accessing-logs-c1649cd.md "The Access Logs section allows you to monitor and to analyze errors that occurred during inbound HTTP processing (and documented in system log files)")
 

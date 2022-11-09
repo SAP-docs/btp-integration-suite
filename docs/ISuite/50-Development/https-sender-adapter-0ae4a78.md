@@ -67,7 +67,7 @@ When you have created a sender channel with HTTPS adapter, you can configure the
 
 ### Connection
 
-<a name="loio0ae4a78909c4479cbc3cc414250919de__d725e18"/>Parameters of the HTTPS Sender Adapter
+**Parameters of the HTTPS Sender Adapter**
 
 
 <table>
@@ -144,7 +144,7 @@ This option prevents Cross-Site Request Forgery \(CSRF\), which is a malicious o
 
 ### Conditions
 
-<a name="loio0ae4a78909c4479cbc3cc414250919de__table_t22_fnk_s2b"/>Configure to set size limit
+**Configure to set size limit**
 
 
 <table>
@@ -225,9 +225,9 @@ Save the settings.
 
 [Authentication and Authorization Options \(Inbound\)](../40-RemoteSystems/authentication-and-authorization-options-inbound-983f2a5.md "When a client calls a server using a secure communication channel, two different kinds of checks are performed subsequently.")
 
-[OData API](odata-api-a617d6f.md "An application programming interface (API) allows you to access data, for example, monitoring data.")
+[OData API](odata-api-a617d6f.md "The Cloud Integration application programming interface (API) allows you to access Cloud Integration resources, for example, monitoring data.")
 
-[Sender-Initiated Scenario (with HTTPS Sender Adapter)](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/ccdb189ad99a4db0908150c799cbe9e3.html "Create a simple integration scenario that is initiated by a sender (using the HTTPS sender adapter).") :arrow_upper_right:
+[Sender-Initiated Scenario (with HTTPS Sender Adapter)](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/ccdb189ad99a4db0908150c799cbe9e3.html "Create a simple integration scenario that is initiated by a sender (using the HTTPS sender adapter).") :arrow_upper_right:
 
-[Setting Up Inbound HTTP Connections (Integration Flow Processing), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/778c7e7835ff46408aafe0d499720dc7.html "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.") :arrow_upper_right:
+[Setting Up Inbound HTTP Connections (Integration Flow Processing), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/778c7e7835ff46408aafe0d499720dc7.html "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.") :arrow_upper_right:
 

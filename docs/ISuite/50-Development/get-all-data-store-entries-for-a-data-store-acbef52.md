@@ -60,6 +60,8 @@ To retrieve all data store entries of data store `MyDataStore` created by integr
 
 `https://<host address>/api/v1​/DataStores(DataStoreName='MyDataStore',IntegrationFlow='MyIntegrationFlow',Type='')/Entries`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 For each data store entry, the response contains a part with the following structure:
 
 ```

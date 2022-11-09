@@ -8,7 +8,7 @@ The following tables provides a list of all use cases and links to the correspon
 
 ## Transport Level Security Use Cases
 
-<a name="loio4f32e7b9cf6b4cb6bc7843570fea7b46__table_bxd_jwl_1n"/>Security Artifact Renewal Use Cases \(Transport Level\)
+**Security Artifact Renewal Use Cases \(Transport Level\)**
 
 
 <table>
@@ -228,7 +228,7 @@ Tenant pushes data to SFTP server
 
 ## Message Level Security Use Cases
 
-<a name="loio4f32e7b9cf6b4cb6bc7843570fea7b46__table_a3k_ndt_1n"/>Security Artifact Renewal Use Cases \(Message Level Security\)
+**Security Artifact Renewal Use Cases \(Message Level Security\)**
 
 
 <table>

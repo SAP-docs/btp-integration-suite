@@ -179,7 +179,7 @@ The encoded value of username and password.is retrieved from Source. Do not use 
 
 During the policy execution, the following errors can occur:
 
-<a name="loio693c0d1720644d57918ed77acc6a95ef__table_nlm_fnz_21b"/>Error Cause
+**Error Cause**
 
 
 <table>
@@ -299,7 +299,7 @@ The <Source\> element must be present for the named operation. See the fault str
 
 Following fault variables are set when the policy triggers an error at runtime:
 
-<a name="loio693c0d1720644d57918ed77acc6a95ef__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

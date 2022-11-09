@@ -17,7 +17,7 @@ Creating an agreement is the last step in the design of a B2B transaction and co
 
 3.  In the *Overview* tab, maintain the following fields under the *Details* section
 
-    <a name="loio9bd43c9ae064493286f321551bd0557c__table_e3f_gt5_pqb"/>Details
+    **Details**
 
 
     <table>
@@ -89,7 +89,7 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     
 4.  Maintain the following fields under *My Company Details* section
 
-    <a name="loio9bd43c9ae064493286f321551bd0557c__table_u5b_4t5_pqb"/>My Company Details
+    **My Company Details**
 
 
     <table>
@@ -193,7 +193,7 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     
 5.  Maintain the following fields under *Trading Partner Details* section
 
-    <a name="loio9bd43c9ae064493286f321551bd0557c__table_rd2_j55_pqb"/>Trading Partner Details
+    **Trading Partner Details**
 
 
     <table>
@@ -353,7 +353,7 @@ Creating an agreement is the last step in the design of a B2B transaction and co
 15. Provide the name of your custom integration flow in the *Integration Flow Name* field.
 
     > ### Note:  
-    > To know more about how it works, see [Interchange Processing Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/IAT/en-US/7d3bce9478974229af1abf9121fe47e6.html "This integration flow transforms the message sent by the sending partner to the structure expected by the receiving partner.") :arrow_upper_right:
+    > To know more about how it works, see [Interchange Processing Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/Cloud/en-US/7d3bce9478974229af1abf9121fe47e6.html "This integration flow transforms the message sent by the sending partner to the structure expected by the receiving partner.") :arrow_upper_right:
 
 16. Choose the *Mapping* step on the sender side.
 17. Select a mapping guideline using the value help provided for the field *Mapping Guideline\(MAG\)*.
@@ -385,7 +385,7 @@ Creating an agreement is the last step in the design of a B2B transaction and co
 24. Provide the name of your custom integration flow in the *Integration Flow Name* field.
 
     > ### Note:  
-    > To know more about how it works, see [Interchange Processing Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/IAT/en-US/7d3bce9478974229af1abf9121fe47e6.html "This integration flow transforms the message sent by the sending partner to the structure expected by the receiving partner.") :arrow_upper_right:
+    > To know more about how it works, see [Interchange Processing Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/Cloud/en-US/7d3bce9478974229af1abf9121fe47e6.html "This integration flow transforms the message sent by the sending partner to the structure expected by the receiving partner.") :arrow_upper_right:
 
 25. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgement for the receiver.
 

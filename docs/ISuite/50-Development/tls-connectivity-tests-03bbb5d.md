@@ -12,7 +12,7 @@ When you've chosen the TLS connection, the test tool checks the following:
 
 To perform the TLS connectivity test, you need to specify the following settings:
 
-<a name="loio03bbb5da16854f5aaf4ad4a26014c8a7__table_d3f_sr4_pw"/>TLS Connectivity Test Options
+**TLS Connectivity Test Options**
 
 
 <table>

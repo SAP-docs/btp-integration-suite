@@ -17,7 +17,7 @@ This section provides a summary of the supported query options.
 > 
 > For more information on the supported query options, check out the description of the individual resources on SAP API Business Hub.
 
-<a name="loio99f4b708b1e4474ebe8af1a653aa4c55__table_cxv_d4k_xp"/>Supported System Query Options
+**Supported System Query Options**
 
 
 <table>

@@ -44,7 +44,7 @@ There are the following entry types:
     -   The *Owner* can either by *SAP* or *Tenant Administrator*.
 
 
-    <a name="loio24585bafb39b42d6a1856e05ad2b428a__d39e478"/>Administration Attributes
+    **Administration Attributes**
 
 
     <table>
@@ -133,7 +133,7 @@ There are the following entry types:
     > ### Note:  
     > The user shown in *Last Modified By* is anonymized \(the string *SAP* is shown\) in case the keystore is owned by SAP.
 
-    <a name="loio24585bafb39b42d6a1856e05ad2b428a__d39e578"/>General Attributes
+    **General Attributes**
 
 
     <table>

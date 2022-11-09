@@ -35,7 +35,7 @@ To set up this authorization option, perform the following steps.
 
 1.  Look up the role to be used to authorize the API client to access the related Cloud Integration resource using the API.
 
-    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
 
 2.  In SAP BTP cockpit, select the subaccount that hosts your SAP Integration Suite virtual environment and create a service instance and service key.
 
@@ -43,7 +43,7 @@ To set up this authorization option, perform the following steps.
 
     For this use case, specify the service instance and service key parameters as follows:
 
-    <a name="loio20e26a837a8449c4b8b934b07f71cb76__table_nb5_sdl_zsb"/>
+    ****
 
 
     <table>
@@ -147,7 +147,7 @@ To set up this authorization option, perform the following steps.
 
     Select role according to the API resource to access.
 
-    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
 
 
     
@@ -207,7 +207,7 @@ To set up this authorization option, perform the following steps.
 
     Select role according to the API resource to access.
 
-    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
 
 
     
@@ -267,7 +267,7 @@ To set up this authorization option, perform the following steps.
 
     Select role according to the API resource to access.
 
-    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
 
 
     
@@ -372,14 +372,9 @@ To set up a sequence of requests for an OAuth workflow with the client credentia
 > 
 > 2.  Call the OData API:
 > 
->     For the address of the call, enter the address of the OData API resource.
+>     For the address of the call, enter the address of the OData API resource and the query options \(see [HTTP Calls and URI Components](../50-Development/http-calls-and-uri-components-ca75e12.md)\).
 > 
 >     See: [OData API](../50-Development/odata-api-a617d6f.md)
 > 
 >     Choose the appropriate authentication option and make sure to pass on with the request the access token that you retrieved as a response from the first HTTP call.
-
-> ### Note:  
-> For example, with the following URL, you get the message processing logs from the tenant.
-> 
-> `<url from service key>/api/v1/MessageProcessingLogs`
 

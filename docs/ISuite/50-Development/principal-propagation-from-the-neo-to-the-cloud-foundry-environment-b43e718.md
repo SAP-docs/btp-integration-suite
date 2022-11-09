@@ -27,7 +27,7 @@ Enable an application in your subaccount in the Neo environment to access an API
 1.  Create Trust between the Neo Subaccount and the Cloud Foundry Subaccount. For detailed steps, see [Create Trust between Subaccounts](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/6e194f8e919a40bab7e39cd992677cb7.html#loio561b0623e9a34a1c9bfc20efa1e773c5).
 2.  Create a Destination to the API Proxy that you want to call using principal propagation.
 
-    <a name="copyb43e718dc38040a38c18fb0d8bab307f__table_e1q_4xn_3lb"/>New Destination
+    **New Destination**
 
 
     <table>

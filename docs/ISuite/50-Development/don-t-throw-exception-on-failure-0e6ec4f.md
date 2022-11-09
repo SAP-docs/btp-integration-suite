@@ -27,7 +27,7 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
 
 1.  The integration flow receives a message from an HTTP client with the following headers:
 
-    <a name="loio0e6ec4f9f1394f3c9156dcb0d8a25336__table_p3l_ztw_ksb"/>
+    ****
 
 
     <table>
@@ -107,7 +107,7 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
 
         Using a subsequent *Router* step, message processing in the error case is designed for the following error codes:
 
-        <a name="loio0e6ec4f9f1394f3c9156dcb0d8a25336__table_iht_gvw_ksb"/>
+        ****
 
 
         <table>
@@ -242,7 +242,7 @@ To test the integration scenario, perform the following steps:
 
     [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 
-    [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
+    [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
 
 2.  Deploy a *User Credentials* artifact with alias name ***myCredential*** using the *Monitor* application \(*Security Material* tile under *Manage Security*\).
 
@@ -254,7 +254,7 @@ To test the integration scenario, perform the following steps:
 
     The following requests are available:
 
-    <a name="loio0e6ec4f9f1394f3c9156dcb0d8a25336__table_ht3_fzw_ksb"/>
+    ****
 
 
     <table>

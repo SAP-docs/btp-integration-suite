@@ -4,7 +4,7 @@
 
 The following table provides an overview of which roles are required in order to accomplish the various tasks related to Trading Partner Management. It's also indicated in how far the tasks and roles are relevant for the main persona defined for Cloud Integration.
 
-<a name="loioeb14b2279fca422d9b64b6525a23fbdf__table_mtv_xqn_nrb"/>Tasks and Permissions
+**Tasks and Permissions**
 
 
 <table>

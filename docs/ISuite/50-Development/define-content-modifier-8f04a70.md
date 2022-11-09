@@ -51,7 +51,7 @@ Note that data written to the message header during a processing step, for examp
 
 5.  Specify and define the parameters of the entry as shown below.
 
-    <a name="loio8f04a707843a40bf9f6e07ed55b93034__d116e49"/>Content Modifier Attributes for Message Header or Exchange Property
+    **Content Modifier Attributes for Message Header or Exchange Property**
 
 
     <table>
@@ -303,7 +303,7 @@ The use case is that this message is to be enriched with the actual system time 
 
 In a first content modifier, specify the following settings in the *Exchange Property* tab:
 
-<a name="loio8f04a707843a40bf9f6e07ed55b93034__table_ozt_djx_qpb"/>
+****
 
 
 <table>

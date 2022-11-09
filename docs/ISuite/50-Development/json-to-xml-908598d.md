@@ -405,7 +405,7 @@ The resulting XML appears as:
 
 During the policy execution, the following errors can occur:
 
-<a name="loio908598da29524e2aa1afd4aabf5eb51e__table_nlm_fnz_21b"/>Error Cause
+**Error Cause**
 
 
 <table>
@@ -509,7 +509,7 @@ The type of the variable used to define the Source element is invalid. The valid
 
 The following fault variables are set when the policy triggers an error at runtime:
 
-<a name="loio908598da29524e2aa1afd4aabf5eb51e__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

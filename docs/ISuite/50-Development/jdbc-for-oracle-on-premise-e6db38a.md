@@ -4,7 +4,7 @@
 
 JDBC receiver adapter supports Oracle On-Premise database provided by Oracle.
 
-<a name="loioe6db38ab14ac480ab171b51932a481f5__table_uqd_tph_wtb"/>Database Details
+**Database Details**
 
 
 <table>

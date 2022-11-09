@@ -16,7 +16,7 @@ The *General Splitter* splits a composite message comprising N messages into N i
 
    
   
-<a name="loiob49d088a87854a07a761596bf0890389__fig_yzg_rsr_5y"/>General Splitter
+**General Splitter**
 
  ![](images/General_Splitter_3d89867.png "General Splitter") 
 
@@ -25,7 +25,7 @@ The *General Splitter* splits a composite message comprising N messages into N i
 > 
 >    
 >   
-> <a name="loiob49d088a87854a07a761596bf0890389__fig_lhk_w2w_lkb"/>General Splitter \(Example for Specific Case\)
+> **General Splitter \(Example for Specific Case\)**
 > 
 >  ![](images/Splitter_Special_Case_2edc73a.png "General Splitter (Example for Specific Case)") 
 
@@ -39,7 +39,7 @@ The *Iterating Splitter* splits a composite message into a series of messages wi
 
    
   
-<a name="loiob49d088a87854a07a761596bf0890389__fig_iq2_xsr_5y"/>Iterating Splitter
+**Iterating Splitter**
 
  ![](images/Iterative_Splitter_4cabad4.png "Iterating Splitter") 
 

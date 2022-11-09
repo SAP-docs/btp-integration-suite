@@ -14,7 +14,7 @@ The additional properties allow you to create signatures that are compliant with
 
 The following XAdES forms are supported:
 
-<a name="loio874e032e95e046178afa66510f2b368a__table_c5g_2bw_3q"/>XAdES Forms
+**XAdES Forms**
 
 
 <table>

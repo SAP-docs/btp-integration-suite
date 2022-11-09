@@ -143,7 +143,7 @@ Specifies a value that should be included in the cache key, creating a namespace
 
 The following predefined Flow variables are available after you customize the behavior of the cache you define in a Lookup Cache policy.
 
-<a name="loiodcb15076cbdf4ae198df8525732355c8__table_scm_4rs_q1b"/>Flow Variables
+**Flow Variables**
 
 
 <table>

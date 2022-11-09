@@ -272,7 +272,7 @@ The authorization code sent to the policy is expired.
 
 Following flow variables are populated and is used in cases where you need the profile data:
 
-<a name="loio2e507ea5a8894836bba0877251840e4e__table_c4m_r25_h1b"/>Flow Variables
+**Flow Variables**
 
 
 <table>

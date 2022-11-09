@@ -16,7 +16,7 @@ You can control which messages are displayed by changing the filter.
 
 You can filter messages by *Time*, *Status*, and *Artifact*.
 
-<a name="loio314df3f8f4334dd8829c62e865cc6d02__table_nv5_1td_jr"/>Filter Attributes
+**Filter Attributes**
 
 
 <table>
@@ -160,7 +160,7 @@ To filter for a dedicated value of a custom header, in the *Custom Header* field
 
 Alternatively, you can search for IDs in the*ID* field, and display messages associated with various IDs such as:
 
-<a name="loio314df3f8f4334dd8829c62e865cc6d02__table_udn_ccd_qnb"/>ID
+**ID**
 
 
 <table>
@@ -246,7 +246,7 @@ Alternatively, you can enter a page number to navigate to a specific page of the
 
 The following attributes are displayed for each message:
 
-<a name="loio314df3f8f4334dd8829c62e865cc6d02__table_mjc_rsk_tl"/>Message Attributes in Message Overview
+**Message Attributes in Message Overview**
 
 
 <table>

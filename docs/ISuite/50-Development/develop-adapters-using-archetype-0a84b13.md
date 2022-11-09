@@ -68,7 +68,7 @@ Here we describe how to build and deploy an adapter during runtime using these t
         >  -Dversion=1.0-SNAPSHOT
         > ```
 
-        <a name="loio0a84b13390ba45068f75578bbce3a08a__table_txv_srf_dsb"/>Component Description
+        **Component Description**
 
 
         <table>
@@ -380,7 +380,7 @@ Here we describe how to build and deploy an adapter during runtime using these t
         > 
         > ```
 
-        <a name="loio0a84b13390ba45068f75578bbce3a08a__table_vyv_ytf_dsb"/>Component Description
+        **Component Description**
 
 
         <table>

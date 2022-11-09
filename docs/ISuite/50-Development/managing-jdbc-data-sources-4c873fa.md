@@ -53,7 +53,7 @@ After you complete the above configuration, now create a JDBC data source for yo
 
 3.  Specify the following attributes:
 
-    <a name="loio4c873fac537248e58767f74e4a74d867__table_th1_2pq_gr"/>Database-Specific Configuration Parameters
+    **Database-Specific Configuration Parameters**
 
 
     <table>

@@ -4,7 +4,7 @@
 
 In the *Settings* section you can fine-tune the process of setting up individual capabilities once you've activated them for the Integration Suite. The following tabs are available for each capability:
 
-<a name="loio9e64d054a08a4d88ad6836be294cbf88__table_xmp_m2x_l5b"/>
+****
 
 
 <table>

@@ -9,7 +9,7 @@ The following tables provide a summary of the configuration settings for the ava
 > 
 > Those options based on users registered in an identity provider \(IdP\), don't require service instance/key configuration.
 
-<a name="loio4a428fdc9498429b84e8000b9d240d47__table_nb5_sdl_zsb"/>Configuration Checklist \(Sender Calling Integration Flow Endpoint\)
+**Configuration Checklist \(Sender Calling Integration Flow Endpoint\)**
 
 
 <table>
@@ -383,7 +383,7 @@ n.a.
 </tr>
 </table>
 
-<a name="loio4a428fdc9498429b84e8000b9d240d47__table_wdl_pcb_btb"/>Configuration Checklist \(API Client Calling OData API\)
+**Configuration Checklist \(API Client Calling OData API\)**
 
 
 <table>
@@ -489,7 +489,7 @@ See: [Client Certificate Authentication for API Clients](client-certificate-auth
 </td>
 <td valign="top" rowspan="5">
 
-Role as described at [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right: 
+Role as described at [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right: 
 
 
 
@@ -721,7 +721,7 @@ n.a.
 > 
 > Depending on the chosen inbound authorization option, you define permissions for sender systems to call integration flow endpoints in different ways:
 > 
-> <a name="loio4a428fdc9498429b84e8000b9d240d47__d503e279"/>
+> ****
 > 
 > 
 > <table>

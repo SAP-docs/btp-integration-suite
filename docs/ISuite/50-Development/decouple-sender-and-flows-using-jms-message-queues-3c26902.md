@@ -9,7 +9,7 @@ In the [Decouple Sender and Flows Using Data Store](decouple-sender-and-flows-us
 Like in the [Decouple Sender and Flows Using Data Store](decouple-sender-and-flows-using-data-store-5467c77.md) rule, a long running service call or complex message processing is to be triggered. A response is to be sent back right away in order to not block the client while the service request is processed.
 
 > ### Note:  
-> The Cloud Integration JMS adapter is used for implementing asynchronous communication, that means: for the decoupling of integration flows. With the JMS adapter, you can't access an external message broker. To do this, use the AMQP adapter. An example of an external message broker is SAP Event Mesh. This fully managed cloud service of the allows applications to communicate through asynchronous events. For more details about SAP Event Mesh, see [What Is SAP Event Mesh?](https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US/df532e8735eb4322b00bfc7e42f84e8d.html).
+> The Cloud Integration JMS adapter is used for implementing asynchronous communication, that means: for the decoupling of integration flows. With the JMS adapter, you can't access an external message broker. To do this, use the AMQP adapter. An example of an external message broker is SAP Event Mesh. This fully managed cloud service of the SAP Business Technology Platform allows applications to communicate through asynchronous events. For more details about SAP Event Mesh, see [What Is SAP Event Mesh?](https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US/df532e8735eb4322b00bfc7e42f84e8d.html).
 
 
 

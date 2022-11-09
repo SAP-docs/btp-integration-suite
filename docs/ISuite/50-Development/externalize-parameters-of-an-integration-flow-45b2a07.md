@@ -230,7 +230,7 @@ For more information on downloading integration flow, see [Working with an Integ
 
 Checkbox, drop down, help service, string, scheduler, text area, integer, and individual cells of a table are the supported controls in the *Externalization*.
 
-<a name="loio45b2a0772db94bd9b0e57bc82d8d3797__table_mh3_hxj_dkb"/>Let Us Experience the Externalization Enrichments in Detail.
+**Let Us Experience the Externalization Enrichments in Detail.**
 
 
 <table>

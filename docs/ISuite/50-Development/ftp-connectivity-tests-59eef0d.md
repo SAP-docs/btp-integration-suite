@@ -4,7 +4,7 @@
 
 You can perform FTP connectivity tests to check the settings required by the FTP adapter.
 
-<a name="loio59eef0d6e88d46dca119077896025d36__table_z1y_b3x_pw"/>FTP Connection Test
+**FTP Connection Test**
 
 
 <table>

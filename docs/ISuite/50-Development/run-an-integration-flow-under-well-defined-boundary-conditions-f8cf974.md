@@ -16,7 +16,7 @@ Developing enterprise-grade integration flows mandates the diligent management o
 
 Resources on a tenant are limited, as you can see in the following table showing the resources of SAP Integration Suite .
 
-<a name="loiof8cf97498d2549daab65db34f11e119d__table_png_qkx_k5b"/>
+****
 
 
 <table>
@@ -271,6 +271,8 @@ X
 
 To apply this design guideline, consider the following rules:
 
+-   [Optimize Performance](optimize-performance-491c80d.md)
+
 -   [Manage Large Batch Sizes](manage-large-batch-sizes-825d2cf.md)
 
 -   [Limit Size of Incoming Messages](limit-size-of-incoming-messages-8319e33.md)
@@ -282,8 +284,6 @@ To apply this design guideline, consider the following rules:
 -   [Specify Proper Session Handling](specify-proper-session-handling-06a28e0.md)
 
 -   [Define Proper Transaction Handling](define-proper-transaction-handling-1c31963.md)
-
--   [Optimize Performance](optimize-performance-491c80d.md)
 
 -   [Optimize Memory Footprint](optimize-memory-footprint-dc24074.md)
 

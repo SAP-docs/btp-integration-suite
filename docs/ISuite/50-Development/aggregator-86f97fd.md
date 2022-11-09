@@ -14,7 +14,7 @@ The *Integration Process: Scenario 07 with idempotent local integration process 
 
 The *Fetch order ID and item number* content modifier step stores the item number in an exchange property with name *itemNumber* using the following settings \(*Exchange Property* tab\):
 
-<a name="loio86f97fd7bb944349946f94ec0a8375b9__table_w2x_34n_hsb"/>
+****
 
 
 <table>
@@ -102,7 +102,7 @@ Source Value
 
 Furthermore, the same content modifier stores the order number in a header with name *orderNumber* using the following settings \(*Message Header* tab\):
 
-<a name="loio86f97fd7bb944349946f94ec0a8375b9__table_fmd_44n_hsb"/>
+****
 
 
 <table>
@@ -193,7 +193,7 @@ Source Value
 
 The *Set unique ID* content modifier step creates a unique ID as a combination of the order number and the item number. This step creates an exchange property with name *uniqueID* using the following settings \(*Exchange Property* tab\):
 
-<a name="loio86f97fd7bb944349946f94ec0a8375b9__table_tjh_w4n_hsb"/>
+****
 
 
 <table>
@@ -281,7 +281,7 @@ $\{header.orderNumber\}\_$\{property.itemNumber\}
 
 In order to avoid any duplicates, the *Idempotent Process Call* step sends the message to the *Local Integration Process: Send message to aggregator* subprocess. This step uses the following settings:
 
-<a name="loio86f97fd7bb944349946f94ec0a8375b9__table_nbt_bpn_hsb"/>
+****
 
 
 <table>
@@ -344,7 +344,7 @@ This integration process contains the *Aggregator* step with the correlation exp
 
 The following aggregation strategy has been defined for the Aggregator step:
 
-<a name="loio86f97fd7bb944349946f94ec0a8375b9__table_qrz_hpn_hsb"/>
+****
 
 
 <table>
@@ -452,7 +452,7 @@ Once the completion condition is met, the aggregated multimap items message is m
 
 At receiver side, the scenario uses the SOAP \(SAP RM\) receiver adapter with the following *Processing* settings:
 
-<a name="loio86f97fd7bb944349946f94ec0a8375b9__table_wtd_4pn_hsb"/>
+****
 
 
 <table>
@@ -516,7 +516,7 @@ To test the scenario, perform the following steps:
 
     [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 
-    [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
+    [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
 
 2.  Deploy a *User Credentials* artifact with the following parameters using the *Monitor* application \(*Security Material* tile under *Manage Security*\).
 

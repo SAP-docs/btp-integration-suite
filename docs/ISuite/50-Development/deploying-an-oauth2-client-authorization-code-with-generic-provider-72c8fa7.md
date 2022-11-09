@@ -58,7 +58,7 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
 
 3.  Specify the following attributes:
 
-    <a name="loio72c8fa737dde41ddb0403018174f57f8__table_mmz_35s_2y"/>
+    ****
 
 
     <table>

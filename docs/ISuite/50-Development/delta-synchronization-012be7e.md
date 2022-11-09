@@ -28,7 +28,7 @@ For demo purposes, the Cloud Integration OData API is used to retrieve the messa
 > 
 > -   [Setting Up Inbound HTTP Connections \(for API Clients\)](../40-RemoteSystems/setting-up-inbound-http-connections-for-api-clients-8db3d51.md)
 > 
-> -   [Setting Up Inbound HTTP Connections (for API Clients), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/fbae09c89d9246f88149c5293c96ab5f.html "") :arrow_upper_right:
+> -   [Setting Up Inbound HTTP Connections (for API Clients), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fbae09c89d9246f88149c5293c96ab5f.html "") :arrow_upper_right:
 
 The following variants are provided:
 
@@ -66,7 +66,7 @@ To access the OData API to retrieve the MPL, configure and deploy a *User Creden
 
 Before the first run, the following externalized parameters must be set:
 
-<a name="loio012be7e9eb114a528ac58a93bce73de4__table_l5z_3vz_q4b"/>
+****
 
 
 <table>
@@ -149,11 +149,11 @@ Date for the first run of the process in following format `yyyy-MM-ddT00:00:00`.
 
 [Setting Up Inbound HTTP Connections \(for API Clients\)](../40-RemoteSystems/setting-up-inbound-http-connections-for-api-clients-8db3d51.md)
 
-[Setting Up Inbound HTTP Connections (for API Clients), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/fbae09c89d9246f88149c5293c96ab5f.html "") :arrow_upper_right:
+[Setting Up Inbound HTTP Connections (for API Clients), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fbae09c89d9246f88149c5293c96ab5f.html "") :arrow_upper_right:
 
 [Message Processing Logs](https://api.sap.com/api/MessageProcessingLogs/overview) \(OData API on SAP API Business Hub\)
 
-[Define Transaction Handling](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/2a5d4bc3b5da46df84b26ac96450587b.html "You can configure transaction handling on integration process or local integration process level.") :arrow_upper_right:
+[Define Transaction Handling](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/2a5d4bc3b5da46df84b26ac96450587b.html "You can configure transaction handling on integration process or local integration process level.") :arrow_upper_right:
 
 [Define Write Variables](define-write-variables-de04b75.md)
 

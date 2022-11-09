@@ -48,7 +48,7 @@ If you’ve configured a receiver FTP adapter, message processing is performed a
 
 Once you’ve created a receiver channel and selected the FTP receiver adapter, you can configure the following attributes. Select the *General* tab and provide values in the fields as follows.
 
-<a name="loioc16d331e8ebb4a0e8c58af96bf519561__table_rh2_mql_yjb"/>General
+**General**
 
 
 <table>
@@ -88,7 +88,7 @@ Enter the name of the FTP channel.
 
 Select the *Target* tab and provide values in the fields as follows.
 
-<a name="loioc16d331e8ebb4a0e8c58af96bf519561__table_e4v_qfg_gs"/>Target
+**Target**
 
 
 <table>
@@ -367,7 +367,7 @@ If the property `SAP_FtpDisconnect` is defined, its value is used to specify thi
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loioc16d331e8ebb4a0e8c58af96bf519561__table_r3n_qhg_gs"/>Processing
+**Processing**
 
 
 <table>

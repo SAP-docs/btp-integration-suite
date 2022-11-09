@@ -39,7 +39,7 @@ The parent integration process is designed in the following way \(only exception
 
     Furthermore, the Content Modifier sets the following headers. They determine the name of the data store and the data store content created by the Generic Receiver integration flow in a later step.
 
-    <a name="loio984e51a1d541462396e309f0f41c3e85__table_yjd_n11_fsb"/>
+    ****
 
 
     <table>

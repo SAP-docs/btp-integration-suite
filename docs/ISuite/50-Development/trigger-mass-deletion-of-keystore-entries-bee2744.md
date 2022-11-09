@@ -50,6 +50,8 @@ For example, send the following request:
 
 `https://<host address>/api/v1/KeystoreResources('system')?deleteEntries=true`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 In the request body, provide the aliases of the entries to be deleted.
 
 ```

@@ -32,7 +32,7 @@ You want to combine related individual messages so that they can be processed in
 
 3.  Specify the attributes of the aggregator.
 
-    <a name="loioaa238166757b4f11878c50b07eb8b4b9__d180e18"/>
+    ****
 
 
     <table>

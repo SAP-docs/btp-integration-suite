@@ -112,11 +112,11 @@ Certificate-to-User Mapping
 </td>
 <td valign="top">
 
-[Create a Certificate-to-User Mapping, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/4b99156032bf4c1690a4f6885e872489.html "Create a certificate-to-user mapping.") :arrow_upper_right:
+[Create a Certificate-to-User Mapping, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/4b99156032bf4c1690a4f6885e872489.html "Create a certificate-to-user mapping.") :arrow_upper_right:
 
-[Get Certificate-to-User Mappings with Specific User, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/14c77c949b2f4e658bb9faea237d2a9e.html "Get certificate-to-user mappings with a specific user.") :arrow_upper_right:
+[Get Certificate-to-User Mappings with Specific User, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/14c77c949b2f4e658bb9faea237d2a9e.html "Get certificate-to-user mappings with a specific user.") :arrow_upper_right:
 
-[Read the Expiration Date of a Client Certificate, Neo Environment](read-the-expiration-date-of-a-client-certificate-neo-environment-8a10e5a.md)
+[](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/CLOUD/en-US/8a10e5abf9b8453ab161fefc6fc565ef.html "") :arrow_upper_right:
 
 
 

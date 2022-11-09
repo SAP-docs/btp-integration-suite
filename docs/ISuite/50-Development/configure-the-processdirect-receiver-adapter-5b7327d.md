@@ -8,7 +8,7 @@ Once you have created a receiver channel and selected the ProcessDirect receiver
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loio5b7327df4f874e4986e4e397e5aab3b8__table_gp3_pyq_yjb"/>General
+**General**
 
 
 <table>
@@ -48,7 +48,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio5b7327df4f874e4986e4e397e5aab3b8__table_t4j_13y_3cb"/>Parameters of the ProcessDirect Adapter
+**Parameters of the ProcessDirect Adapter**
 
 
 <table>

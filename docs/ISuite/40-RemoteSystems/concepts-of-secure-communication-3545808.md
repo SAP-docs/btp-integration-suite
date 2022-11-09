@@ -9,5 +9,5 @@ There are several options to protect the message exchange. You can secure the co
 
 [Basics](basics-36839ad.md "")
 
-[Security Elements](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/26e42b1d69304ce39b908fd11882e7ab.html "To set up the secure communication between a tenant and a sender/receiver system, certain security elements have to be created and - in some cases - exchanged between the involved components (the tenant on the one side and the sender/receiver system on the other side of the communication).") :arrow_upper_right:
+[Security Elements](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/26e42b1d69304ce39b908fd11882e7ab.html "To set up the secure communication between a tenant and a sender/receiver system, certain security elements have to be created and - in some cases - exchanged between the involved components (the tenant on the one side and the sender/receiver system on the other side of the communication).") :arrow_upper_right:
 

@@ -46,7 +46,7 @@ In detail, perform the following steps:
 
     For this use case, specify the service instance and service key parameters as follows:
 
-    <a name="loio7f84d16aa42741efb08dc9875743e47c__table_nb5_sdl_zsb"/>
+    ****
 
 
     <table>

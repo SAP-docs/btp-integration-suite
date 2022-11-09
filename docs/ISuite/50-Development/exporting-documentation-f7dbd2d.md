@@ -27,7 +27,7 @@ You can use the document file as a reference to implement the messages and mappi
 3.  Choose <span class="SAP-icons"></span> and then choose *Export*.
 4.  Choose the appropriate option based on your requirement
 
-    <a name="loiof7dbd2da10be484eb20ac6cb21e548fd__table_z1r_f5j_4tb"/>Documentation Export
+    **Documentation Export**
 
 
     <table>

@@ -6,7 +6,7 @@
 
 On top of a secure transport channel \(for example, based on HTTPS\), you have the option to implement message-level security capabilities. That way, you can protect the message by applying digital signing or encryption. Asymmetric key technology is used in the following way to implement these features:
 
-<a name="loio8641a15cff7e4dbd83528556aba1660c__d201e21"/>Keys for Message-Level Security
+**Keys for Message-Level Security**
 
 
 <table>

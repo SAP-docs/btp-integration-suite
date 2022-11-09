@@ -9,7 +9,7 @@ This feature enables you to define an association between fields of messages wit
 
 Similarly, the table illustrates how the same fields might have different identifiers in the source and target systems.
 
-<a name="loio68d816a062484e13b5ae72ece1044e79__table_ow1_mkl_3cb"/>
+****
 
 
 <table>

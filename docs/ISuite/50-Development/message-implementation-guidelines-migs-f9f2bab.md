@@ -20,7 +20,7 @@ The *Message Implementation Guidelines* screen displays an overview of all the M
 
 You can also choose <span class="SAP-icons"></span> \(Extended filter\)to filter MIGs based on specific criteria. You can use the required filter fields to list MIGs that match your query. You can also customize the filter bar by choosing *Filters*. You can expand or collapse the filter area using *Show Filter Bar* or *Hide Filter Bar*.
 
-<a name="loiof9f2bab3ff3a4d86863199f6531ee695__table_z5s_mbt_d4b"/>Filter Criteria
+**Filter Criteria**
 
 
 <table>

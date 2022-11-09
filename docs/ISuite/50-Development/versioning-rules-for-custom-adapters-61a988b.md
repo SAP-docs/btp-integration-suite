@@ -7,7 +7,7 @@ Follow the guidelines mentioned below to version a custom adapter.
 > ### Note:  
 > This versioning feature is available from ADK version 1.38.0.
 
-<a name="loio61a988b4854e4e9988237be1673189ae__table_aw3_vtb_csb"/>Versioning Rules
+**Versioning Rules**
 
 
 <table>

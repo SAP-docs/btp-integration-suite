@@ -21,7 +21,7 @@ Once you have created a sender channel and selected the SuccessFactors \(REST\) 
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loio9f0646b481764b4b890a342c3e14a002__table_jts_31r_yjb"/>General
+**General**
 
 
 <table>
@@ -61,7 +61,7 @@ Enter the name of the channel.
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio9f0646b481764b4b890a342c3e14a002__table_tpv_yxp_gr"/>Processing
+**Processing**
 
 
 <table>
@@ -228,7 +228,7 @@ Maximum number of records on each page of response.
 
 Select the *Scheduler* tab and provide values in the fields as follows.
 
-<a name="loio9f0646b481764b4b890a342c3e14a002__table_dch_trp_gr"/>Scheduler
+**Scheduler**
 
 
 <table>

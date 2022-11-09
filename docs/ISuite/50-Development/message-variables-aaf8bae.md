@@ -6,7 +6,7 @@ Message variables refer to different message types like request, response, or er
 
 Supported message variables are listed in the Message Variables table.
 
-<a name="loioaaf8bae37d28424cbbf789129e4b750a__table_xzf_qvh_d1b"/>Message Variables
+**Message Variables**
 
 
 <table>

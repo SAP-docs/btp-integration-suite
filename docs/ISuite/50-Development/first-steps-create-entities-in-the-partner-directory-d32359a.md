@@ -13,7 +13,7 @@
 
 To work with the example integration flows, you need to create the following entities in Partner Directory for sample partner `PartnerA`:
 
-<a name="loiod32359a67e444c6e899084577e041a0a__table_nh1_j5p_2mb"/>
+****
 
 
 <table>
@@ -288,5 +288,5 @@ Perform the following initial steps with Postman.
 
 [Setting Up Inbound HTTP Connections \(for API Clients\)](../40-RemoteSystems/setting-up-inbound-http-connections-for-api-clients-8db3d51.md "An application programming interface (API) allows you to access Cloud Integration data, for example, monitoring data.")
 
-[Setting Up Inbound HTTP Connections (for API Clients), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/fbae09c89d9246f88149c5293c96ab5f.html "") :arrow_upper_right:
+[Setting Up Inbound HTTP Connections (for API Clients), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fbae09c89d9246f88149c5293c96ab5f.html "") :arrow_upper_right:
 

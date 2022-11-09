@@ -30,7 +30,7 @@ Perform the steps described in: [Setting Up Inbound HTTP Connections \(for API C
 
 Assign the following role template:
 
-`MonitoringDataRead` \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\)
+`MonitoringDataRead` \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\)
 
 
 
@@ -38,7 +38,7 @@ Assign the following role template:
 
 ## Resources
 
-<a name="loio827a2d7e9c6f4866a1d6c0e647bcacd2__table_vvw_dlf_t4b"/>
+****
 
 
 <table>
@@ -181,7 +181,7 @@ More information:
 
 -   [FTP Adapter](ftp-adapter-4464f89.md)
 
--   [JMS Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:
+-   [JMS Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:
 
 -   [SFTP Adapter](sftp-adapter-e3dce88.md)
 
@@ -239,10 +239,9 @@ On SAP API Business Hub, you can test API calls against a sandbox tenant or agai
 
 `https://<host address>/api/v1/<relative resource path>`
 
-You can find the relative resource path for each operation on SAP API Business Hub.
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
 
-> ### Tip:  
-> To find out the Cloud Integration host address, check out the URL of your Cloud Integration Web application. This URL is composed in the following way: `https://<host address>/itspaces`.
+You can find the relative resource path for each operation on SAP API Business Hub.
 
 **Related Information**  
 

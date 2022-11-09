@@ -42,7 +42,7 @@ The following tables describe the parameters that you need to configuration for 
 
 ### S3 Protocol
 
-<a name="loiobc7d1aac1c494af591f8edd5c52bea0f__table_wwm_1sk_c4b"/>Connection
+**Connection**
 
 
 <table>
@@ -144,7 +144,7 @@ Select the checkbox to make the requester pay for the data transfer and the requ
 </tr>
 </table>
 
-<a name="loiobc7d1aac1c494af591f8edd5c52bea0f__table_jwn_zvx_c4b"/>Processing
+**Processing**
 
 
 <table>
@@ -390,7 +390,7 @@ Specify the name of the secured parameter that contains the decryption key for t
 </tr>
 </table>
 
-<a name="loiobc7d1aac1c494af591f8edd5c52bea0f__table_dhc_y1z_c4b"/>Advanced
+**Advanced**
 
 
 <table>
@@ -460,7 +460,7 @@ Specify any additional header name-value pairs that you want to send to AWS.
 
 ### SQS Protocol
 
-<a name="loiobc7d1aac1c494af591f8edd5c52bea0f__table_ifd_5bz_c4b"/>Connection
+**Connection**
 
 
 <table>
@@ -562,7 +562,7 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 </tr>
 </table>
 
-<a name="loiobc7d1aac1c494af591f8edd5c52bea0f__table_wvf_pcz_c4b"/>Processing
+**Processing**
 
 
 <table>
@@ -638,7 +638,7 @@ Specify the message group ID.
 </tr>
 </table>
 
-<a name="loiobc7d1aac1c494af591f8edd5c52bea0f__table_w5l_bdz_c4b"/>Advanced
+**Advanced**
 
 
 <table>
@@ -680,7 +680,7 @@ Specify any additional message attribute name-value pairs that you can send to A
 
 ### SNS Protocol
 
-<a name="loiobc7d1aac1c494af591f8edd5c52bea0f__table_gv4_ldz_c4b"/>Connection
+**Connection**
 
 
 <table>
@@ -782,7 +782,7 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 </tr>
 </table>
 
-<a name="loiobc7d1aac1c494af591f8edd5c52bea0f__table_gb3_qdz_c4b"/>Processing
+**Processing**
 
 
 <table>
@@ -880,7 +880,7 @@ Specify the format of the response message sent by AWS. Possible values include 
 
 ### SWF Protocol
 
-<a name="loiobc7d1aac1c494af591f8edd5c52bea0f__table_zjl_m2z_c4b"/>Connection
+**Connection**
 
 
 <table>
@@ -950,7 +950,7 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 </tr>
 </table>
 
-<a name="loiobc7d1aac1c494af591f8edd5c52bea0f__table_sjc_n2z_c4b"/>Processing
+**Processing**
 
 
 <table>

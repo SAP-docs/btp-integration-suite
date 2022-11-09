@@ -340,7 +340,7 @@ Specifies an absolute time value for the token's expiration. The token is not va
 
 Supported values:
 
-<a name="loioc28be0eab9ba4f95abb56a0ff19085a3__table_arg_jyn_c3b"/>
+****
 
 
 <table>
@@ -640,7 +640,7 @@ The policy generates a JWT containing a sub claim, set to the specified value.Th
 
 The following flow variables are available after the policy is executed:
 
-<a name="loioc28be0eab9ba4f95abb56a0ff19085a3__table_vqn_tb4_c3b"/>Flow Variables
+**Flow Variables**
 
 
 <table>
@@ -970,7 +970,7 @@ Header in JSON format.
 
 During the policy execution, the following errors can occur:
 
-<a name="loioc28be0eab9ba4f95abb56a0ff19085a3__table_nlm_fnz_21b"/>Error Cause
+**Error Cause**
 
 
 <table>
@@ -1330,7 +1330,7 @@ Wrong type of key specified. For example, if you specify an RSA key for an Ellip
 
 The following fault variables are set when the policy triggers an error at runtime:
 
-<a name="loioc28be0eab9ba4f95abb56a0ff19085a3__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

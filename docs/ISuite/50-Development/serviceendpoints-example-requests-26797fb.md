@@ -132,6 +132,8 @@ REST
 
     `https://<host address>/api/v1/ServiceEndpoints?$expand=EntryPoints`
 
+    The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
     An entrypoint is an array of type `EntryPoint`. Following are the properties of the EntryPoint entity:
 
 

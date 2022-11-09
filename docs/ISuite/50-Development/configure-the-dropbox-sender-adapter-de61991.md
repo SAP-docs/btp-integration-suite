@@ -21,7 +21,7 @@ Once you have created a sender channel and selected the Dropbox sender adapter, 
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loiode619914e2a24c53a1253d90b79b814f__table_qcd_nn1_xlb"/>General
+**General**
 
 
 <table>
@@ -61,7 +61,7 @@ Enter the name of the Dropbox channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loiode619914e2a24c53a1253d90b79b814f__table_llw_gll_vrb"/>General
+**General**
 
 
 <table>
@@ -121,7 +121,7 @@ SAP Cloud Integration is connected to Dropbox account trying to perform the oper
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loiode619914e2a24c53a1253d90b79b814f__table_pz5_mll_vrb"/>General
+**General**
 
 
 <table>
@@ -305,7 +305,7 @@ Select this option to raise error in the message processing log if post-processi
 
 Select the *Scheduler* tab and provide values in the fields as follows.
 
-<a name="loiode619914e2a24c53a1253d90b79b814f__table_usd_14l_vrb"/>General
+**General**
 
 
 <table>

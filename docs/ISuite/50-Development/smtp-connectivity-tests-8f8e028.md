@@ -7,7 +7,7 @@ You can perform SMTP connectivity tests to check the settings required for confi
 > ### Remember:  
 > This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
 
-<a name="loio8f8e028bf2d34630a11d53b215d6965d__table_z1y_b3x_pw"/>SMTP Connection Test
+**SMTP Connection Test**
 
 
 <table>

@@ -23,7 +23,7 @@ To know more about the package, see [Cloud Integration - Trading Partner Managem
 5.  Choose and open the integration package and navigate to the *Artifacts* tab.
 6.  The table belows lists the integration flows in the package and their purpose:
 
-    <a name="loio0ff62294f42a40938384de45ac6ea566__table_hhr_ycx_lrb"/>Cloud Integration - Trading Partner Management
+    **Cloud Integration - Trading Partner Management**
 
 
     <table>
@@ -193,9 +193,9 @@ To know more about the package, see [Cloud Integration - Trading Partner Managem
 
 7.  Follow the steps mentioned in the chapters below to configure and deploy the artifacts.
 
-    1.  [Sender Side Integration Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/IAT/en-US/98380f4122a24b8ab56304660a463885.html "The integration flows receive and extract messages sent using the AS2, AS2 MDN, IDoc and SOAP adapter.") :arrow_upper_right:
+    1.  [Sender Side Integration Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/Cloud/en-US/98380f4122a24b8ab56304660a463885.html "The integration flows receive and extract messages sent using the AS2, AS2 MDN, IDoc and SOAP adapter.") :arrow_upper_right:
 
-    2.  [Interchange Processing Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/IAT/en-US/7d3bce9478974229af1abf9121fe47e6.html "This integration flow transforms the message sent by the sending partner to the structure expected by the receiving partner.") :arrow_upper_right:
-    3.  [Receiver Communication Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/IAT/en-US/cd233d11900b45248c062e8b57f1991f.html "This integration flow gets the final message from the queue and sends it to the receiver.") :arrow_upper_right:
+    2.  [Interchange Processing Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/Cloud/en-US/7d3bce9478974229af1abf9121fe47e6.html "This integration flow transforms the message sent by the sending partner to the structure expected by the receiving partner.") :arrow_upper_right:
+    3.  [Receiver Communication Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/Cloud/en-US/cd233d11900b45248c062e8b57f1991f.html "This integration flow gets the final message from the queue and sends it to the receiver.") :arrow_upper_right:
 
 

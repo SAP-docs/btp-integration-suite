@@ -4,7 +4,7 @@
 
 Supported API proxy flow variables are listed in the API proxy flow Variables table.
 
-<a name="loio9a4fb467158545ca9ce130a872f2a08f__table_ipj_kth_d1b"/>API proxy flows variables
+**API proxy flows variables**
 
 
 <table>

@@ -36,7 +36,7 @@ In the proposed landscape, two SSL connections have to be implemented on the way
 
 The following table summarizes the required certificates and the related keystores.
 
-<a name="loiof69e1776a4444722b25b4fa07fb5d7f9__table_zyj_mb1_zl"/>Keystores
+**Keystores**
 
 
 <table>
@@ -224,7 +224,7 @@ As this connection spans the Internet, it is strongly recommended to use certifi
 
 The following table summarizes the required certificates and the related keystores.
 
-<a name="loiof69e1776a4444722b25b4fa07fb5d7f9__table_ej5_vb1_zl"/>Keystores
+**Keystores**
 
 
 <table>

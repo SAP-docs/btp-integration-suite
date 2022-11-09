@@ -30,7 +30,7 @@ Once you have created a sender channel and selected the AMQP sender adapter \(TC
 
 The following values are displayed in the *General* tab after a channel has been established. If you want to change the configurations, you need to configure a new channel.
 
-<a name="loio99ce6748400b4dbfbadf633aeb111067__table_nbt_4sw_jjb"/>General
+**General**
 
 
 <table>
@@ -107,7 +107,7 @@ The protocol that the message broker supports:
 
 Select the *Connection* tab and provide values in the fields as follows:
 
-<a name="loio99ce6748400b4dbfbadf633aeb111067__table_j3m_1vw_jjb"/>Connection
+**Connection**
 
 
 <table>
@@ -275,7 +275,7 @@ Specify the alias of the deployed credentials.
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio99ce6748400b4dbfbadf633aeb111067__table_kyp_1yw_jjb"/>Processing
+**Processing**
 
 
 <table>

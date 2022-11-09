@@ -6,7 +6,7 @@ If you choose the AMQP \(Advanced Message Queuing Protocol\), the test tool chec
 
 1. To perform the AMQP connectivity test, you need to specify the following settings:
 
-<a name="loio01cb360e45ea4890954d193da49aed9c__table_owk_mjb_qkb"/>AMQP Connectivity Test Options
+**AMQP Connectivity Test Options**
 
 
 <table>

@@ -12,7 +12,7 @@ The General tab shows general information such as the adapter type, its directio
 
 Select the *Connection* tab and provide the sender system information.
 
-<a name="loioc54effed7f1643979326e6a461899904__table_sbg_pqf_lkb"/>Connection
+**Connection**
 
 
 <table>
@@ -102,7 +102,7 @@ The default value is ***ESBMessaging.send***. This role authorizes a sender syst
 > ### Caution:  
 > The role name must not contain any umlaut characters \(for example, ***ä***\).
 
-For more information on user roles, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
+For more information on user roles, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
 
 
 
@@ -130,7 +130,7 @@ The client certificates that you are using for inbound authorization. Choose *Ad
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loioc54effed7f1643979326e6a461899904__table_sn5_ncx_m2b"/>Processing
+**Processing**
 
 
 <table>
@@ -266,7 +266,7 @@ Enable this option to set the message status to **Failed** to negative MDN.
 
 Select the *Retry* tab and specify the parameters as follows.
 
-<a name="loioc54effed7f1643979326e6a461899904__table_m23_m42_n2b"/>Retry
+**Retry**
 
 
 <table>

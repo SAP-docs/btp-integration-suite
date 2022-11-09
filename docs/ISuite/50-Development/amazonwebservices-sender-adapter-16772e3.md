@@ -38,7 +38,7 @@ The following tables describe the parameters that you need to configuration for 
 
 ### S3 Protocol
 
-<a name="loio16772e3bd410433b9bb47d9361b03e3c__table_wwm_1sk_c4b"/>Connection
+**Connection**
 
 
 <table>
@@ -158,7 +158,7 @@ Select the checkbox to make the requester pay for the data transfer and the requ
 </tr>
 </table>
 
-<a name="loio16772e3bd410433b9bb47d9361b03e3c__table_jwn_zvx_c4b"/>Processing
+**Processing**
 
 
 <table>
@@ -389,7 +389,7 @@ Specify the name of the secured parameter that contains the decryption key for t
 
 ### SQS Protocol
 
-<a name="loio16772e3bd410433b9bb47d9361b03e3c__table_ifd_5bz_c4b"/>Connection
+**Connection**
 
 
 <table>
@@ -491,7 +491,7 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 </tr>
 </table>
 
-<a name="loio16772e3bd410433b9bb47d9361b03e3c__table_wvf_pcz_c4b"/>Processing
+**Processing**
 
 
 <table>

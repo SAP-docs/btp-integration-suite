@@ -75,7 +75,7 @@ Since in our case, the split elements aren't important for further message proce
 
 The content modifier step *Replace payload* is defined as follows:
 
-<a name="loiode974b877c3949edac3b075b0afe44e5__table_lqt_ppl_mpb"/>Message Body
+**Message Body**
 
 
 <table>
@@ -189,7 +189,7 @@ count\(/root/Items/Item\)
 
 Via the same content modifier, a notification message with the number of dispatched items replaces the payload.
 
-<a name="loiode974b877c3949edac3b075b0afe44e5__table_lnh_ypl_mpb"/>Message Body
+**Message Body**
 
 
 <table>

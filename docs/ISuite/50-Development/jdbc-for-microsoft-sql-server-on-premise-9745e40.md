@@ -4,7 +4,7 @@
 
 JDBC receiver adapter supports Microsoft SQL Server On-Premise database provided by Microsoft.
 
-<a name="loio9745e4096fd9438fb681fac8270f11f1__table_uqd_tph_wtb"/>Database Details
+**Database Details**
 
 
 <table>

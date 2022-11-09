@@ -15,7 +15,7 @@ The `MessageLogFactory` interface can be used through the `messageLogFactory` va
 
 The following table provides examples of how to use the Script step with these interfaces.
 
-<a name="loioe8e928373b66488b8d78fb5a314b8a9e__table_oxs_tm1_p4b"/>
+****
 
 
 <table>

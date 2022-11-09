@@ -52,7 +52,7 @@ Once you have created a receiver channel and selected the RFC Receiver Adapter, 
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loio5c76048b04594888a47e74d35a91c08a__table_wwt_htq_yjb"/>General
+**General**
 
 
 <table>
@@ -92,7 +92,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio5c76048b04594888a47e74d35a91c08a__table_field_reuse"/>Connection
+**Connection**
 
 
 <table>

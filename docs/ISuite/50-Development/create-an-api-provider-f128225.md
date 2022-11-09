@@ -91,7 +91,7 @@ If you want to configure the API Management solution to access data from a serve
 
     -   *Internet* connection type:
 
-        <a name="copyf12822558d784e098c96efbfc9340c77__table_n3n_21k_zcb"/>Internet
+        **Internet**
 
 
         <table>
@@ -312,7 +312,7 @@ If you want to configure the API Management solution to access data from a serve
 
     -   *Open Connectors* connection type:
 
-        <a name="copyf12822558d784e098c96efbfc9340c77__table_dnm_ncq_pgb"/>Open Connectors
+        **Open Connectors**
 
 
         <table>
@@ -416,7 +416,7 @@ If you want to configure the API Management solution to access data from a serve
         
     -   *Cloud Integration* connection type:
 
-        <a name="copyf12822558d784e098c96efbfc9340c77__table_lyd_52b_mmb"/>SAP Cloud Integration
+        **SAP Cloud Integration**
 
 
         <table>
@@ -511,7 +511,7 @@ If you want to configure the API Management solution to access data from a serve
 
 6.  In the *CATALOG SERVICE SETTINGS* section, enter the required details.
 
-    <a name="copyf12822558d784e098c96efbfc9340c77__table_gd2_zdk_zcb"/>Catalog Service Settings
+    **Catalog Service Settings**
 
 
     <table>
@@ -610,7 +610,7 @@ If you want to configure the API Management solution to access data from a serve
     > ### Note:  
     > The following table lists the attributes considered for Test Connection:
     > 
-    > <a name="copyf12822558d784e098c96efbfc9340c77__table_d3t_5hq_5fb"/>Test Connection
+    > **Test Connection**
     > 
     > 
     > <table>

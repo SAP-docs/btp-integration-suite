@@ -22,7 +22,7 @@ Perform the steps described in: [Setting Up Inbound HTTP Connections \(for API C
 
 Assign the following role template:
 
-`MonitoringDataRead` \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\)
+`MonitoringDataRead` \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\)
 
 
 
@@ -30,7 +30,7 @@ Assign the following role template:
 
 ## Resources
 
-<a name="loioe01d3f0076384cf7b2d18adbccb067a1__table_vvw_dlf_t4b"/>
+****
 
 
 <table>
@@ -212,7 +212,7 @@ Certificate-to-User-Mapping \(Neo environment\)
 </td>
 <td valign="top">
 
-Represents a *Certificate-to-User-Mapping* artifact required for inbound calls based on client certificate authentication and *User Role* authorization \(see [Managing Certificate-to-User Mappings, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/88ea2e5336d445f783c194c8d2780d35.html "The Manage Security area provides an overview of security-related artifacts. It also provides access to all certificate-to-user mappings defined for the tenant.") :arrow_upper_right:\).
+Represents a *Certificate-to-User-Mapping* artifact required for inbound calls based on client certificate authentication and *User Role* authorization \(see [Managing Certificate-to-User Mappings, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/88ea2e5336d445f783c194c8d2780d35.html "The Manage Security area provides an overview of security-related artifacts. It also provides access to all certificate-to-user mappings defined for the tenant.") :arrow_upper_right:\).
 
 > ### Note:  
 > Certificate-to-user mappings are only available when using SAP Cloud Integration in the Neo environment.
@@ -280,10 +280,9 @@ On SAP API Business Hub, you can test API calls against a sandbox tenant or agai
 
 `https://<host address>/api/v1/<relative resource path>`
 
-You can find the relative resource path for each operation on SAP API Business Hub.
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
 
-> ### Tip:  
-> To find out the Cloud Integration host address, check out the URL of your Cloud Integration Web application. This URL is composed in the following way: `https://<host address>/itspaces`.
+You can find the relative resource path for each operation on SAP API Business Hub.
 
 **Related Information**  
 

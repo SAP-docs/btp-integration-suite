@@ -12,7 +12,7 @@ Service to view bills :
 
 -   The following table describes the query parameters required to view the bill details.
 
-    <a name="loio1e20fb575ad644399a7af8e1c4f423d0__table_wpp_kdr_zz"/>Query parameters
+    **Query parameters**
 
 
     <table>

@@ -48,6 +48,8 @@ For example, to update a Number Ranges object with name `My NRO Object`\), send 
 
 `https://<host address>/api/v1/NumberRanges('My NRO Object')`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 In the request body, provide the new properties of the Number Ranges object \(example\):
 
 > ### Sample Code:  

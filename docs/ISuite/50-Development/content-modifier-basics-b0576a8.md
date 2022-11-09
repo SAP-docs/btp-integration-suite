@@ -72,7 +72,7 @@ Suppose that the incoming message has the following information:
 
 On the *Message Header* tab of the Content Modifier, enter the following to write constant values to the message header:
 
-<a name="loiob0576a824cdf46868fcc70fd9e697f16__d116e466"/>
+****
 
 
 <table>

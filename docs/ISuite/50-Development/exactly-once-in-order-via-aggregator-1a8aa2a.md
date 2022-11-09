@@ -786,7 +786,7 @@ At the receiver side, the scenario uses the SOAP \(SAP RM\) Receiver Adapter. On
 
 To test the scenario, perform the following steps:
 
-1.  Set up inbound **Basic** authentication for integration flow endpoints. See: [Setting Up Basic Inbound Authentication with clientId and clientsecret from a Service Key, Cloud Foundry Environment](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)[Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
+1.  Set up inbound **Basic** authentication for integration flow endpoints. See: [Setting Up Basic Inbound Authentication with clientId and clientsecret from a Service Key, Cloud Foundry Environment](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)[Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
 2.  Deploy a **User Credentials** artifact with the following parameters, using the *Monitor* application \(*Security Material* tile under *Manage Security*\).
 
 

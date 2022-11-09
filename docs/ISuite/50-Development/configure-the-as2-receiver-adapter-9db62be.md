@@ -21,7 +21,7 @@ The *General* tab shows general information such as the adapter type, its direct
 
 Select the *Connection* tab and provide the recipient information.
 
-<a name="loio9db62be7f6024c45b36ded818b75e6c8__table_sbg_pqf_lkb"/>Connection
+**Connection**
 
 
 <table>
@@ -186,7 +186,7 @@ Specify the maximum time \(in milliseconds\) the adapter waits for receiving a r
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio9db62be7f6024c45b36ded818b75e6c8__table_sn5_ncx_m2b"/>Processing
+**Processing**
 
 
 <table>
@@ -384,7 +384,7 @@ The allowed values are *<binary\>* and *<base64\>*.
 
 Select the *Security* tab and provide values in the fields as follows.
 
-<a name="loio9db62be7f6024c45b36ded818b75e6c8__table_ds5_qc4_zjb"/>Security
+**Security**
 
 
 <table>
@@ -610,7 +610,7 @@ You can also set the value of this attribute dynamically using the header ***SAP
 
 Select the *MDN* tab and provide values in the fields as follows.
 
-<a name="loio9db62be7f6024c45b36ded818b75e6c8__table_xl4_1m2_n2b"/>MDN
+**MDN**
 
 
 <table>

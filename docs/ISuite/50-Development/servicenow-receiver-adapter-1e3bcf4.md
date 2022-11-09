@@ -29,7 +29,7 @@ You configure the receiver channel with the ServiceNow adapter to enable your te
 
 The General tab shows general information such as the adapter type, its direction \(receiver\), the transport protocol, and the message protocol.
 
-<a name="loio1e3bcf40403441d4898e6badd53c2b79__table_rdc_cn3_h4b"/>Connection
+**Connection**
 
 
 <table>
@@ -138,7 +138,7 @@ Specify the alias to the security material that contains the Client Secret for t
 </tr>
 </table>
 
-<a name="loio1e3bcf40403441d4898e6badd53c2b79__table_uqr_153_h4b"/>Processing
+**Processing**
 
 
 <table>

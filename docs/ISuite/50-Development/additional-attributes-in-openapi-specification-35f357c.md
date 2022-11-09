@@ -14,15 +14,13 @@ Additional attributes or custom extensions are supported on the `root` level of 
 
 The following additional attributes have been introduced for use with API designer. All these attributes must be defined at the root level of the OpenAPI Specification.
 
-
-
 **List of additional attributes**
 
 
 
-### x-sap-api-type
+<a name="loio35f357c811f546c5ae3451df42f61ea0__section_fvf_j22_rsb"/>
 
-You can use this attribute to display the API type in the APIs listing page of SAP API Business Hub. For example:
+## x-sap-api-type
 
 > ### Sample Code:  
 > ```
@@ -31,6 +29,8 @@ You can use this attribute to display the API type in the APIs listing page of S
 >   "x-sap-api-type": "ODATA"
 > }
 > ```
+
+You can use this attribute to display the API type in the APIs listing page of SAP API Business Hub. For example:
 
 The API Type is set according to the following rules of precedence:
 
@@ -94,7 +94,9 @@ The API Type is set according to the following rules of precedence:
 
 
 
-### x-sap-shortText
+<a name="loio35f357c811f546c5ae3451df42f61ea0__section_zcj_p22_rsb"/>
+
+## x-sap-shortText
 
 The `x-sap-shortText` attribute is used to display a short description of your APIs in the APIs listing page of SAP API Business Hub. This short text description appears below the title in the list of APIs/services on the *Artifacts* page in SAP API Business Hub.
 
@@ -114,69 +116,273 @@ The `x-sap-shortText` attribute is used to display a short description of your A
 > 
 > ```
 
+The text should not exceed 180 characters. The following characters are allowed in the x-sap-shortText:
 
 
-### x-sap-stateInfo
+<table>
+<tr>
+<th valign="top">
 
-You use `x-sap-stateInfo` attribute to display the current status of an API that you want to publish on SAP API Business Hub. An API can be marked with any of the following statuses:
+Character
 
--   Beta
--   Active
--   Deprecated
--   Decommissioned
+
+
+</th>
+<th valign="top">
+
+Description
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+A-Z
+
+
+
+</td>
+<td valign="top">
+
+Latin letters, case insensitive
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0-9
+
+
+
+</td>
+<td valign="top">
+
+Numbers
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+Space
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\_
+
+
+
+</td>
+<td valign="top">
+
+Underscore
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\- — –
+
+
+
+</td>
+<td valign="top">
+
+Different Hyphens
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+.
+
+
+
+</td>
+<td valign="top">
+
+Dot
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+,
+
+
+
+</td>
+<td valign="top">
+
+Comma
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\(\)
+
+
+
+</td>
+<td valign="top">
+
+Paranthesis
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+'s
+
+
+
+</td>
+<td valign="top">
+
+Possession apostrophe
+
+
+
+</td>
+</tr>
+</table>
+
+Make sure a short text doesn't contain special characters like $, &, !, %, \\, /, \*, ; and so forth.
+
+Do not use semicolons to separate two sentences. Rather, make it two separate sentences.
+
+Please note, though forward slash is not an allowed character to use, it is allowed in a product name, such as S/4HANA or combination of words country/region.
+
+
+
+<a name="loio35f357c811f546c5ae3451df42f61ea0__section_ysv_y22_rsb"/>
+
+## x-sap-stateInfo
+
+You use `x-sap-stateInfo` attribute to display the current status of an API that you want to publish on SAP API Business Hub.
 
 > ### Note:  
 > The `x-sap-stateInfo` is an optional attribute. That is, if you do not use this attribute in your API definition file, then by default, the current status of an API is marked as `Active`. However, If you want to publish your API in the `Beta` status or you have decided to transition your API from `Active` to `Deprecated` or `Decommissioned` status, then it is mandatory to use this attribute to indicate the new status of your API.
 
-The following is a sample code snippet of an API definition file in which `x-sap-stateInfo` attribute is used to indicate that the current status of the API is `Beta`.
+An API can be marked with any of the following statuses:
 
-> ### Sample Code:  
-> ```
-> {
->    "swagger": "2.0",
->    "info": {
->       "title": "Business API",
->       "version": "1.1.0",
->       "description": "API for Reading Business Partner, Supplier, Customer  and Contact Persons"
->    },
->    
->    "x-sap-stateInfo": {
->       "state": "Beta"
->    }
-> }
-> ```
+-   Beta
 
-The following is a sample code snippet of an API definition file in which `x-sap-stateInfo` attribute is used to indicate that the current status of the API is deprecated as on 14th August 2018, and a new version of the API is available:
+    The following is a sample code snippet of an API definition file in which `x-sap-stateInfo` attribute is used to indicate that the current status of the API is `Beta`.
 
-> ### Sample Code:  
-> ```
-> {
->    "swagger": "2.0",
->    "info": {
->       "title": "Business API",
->       "version": "1.1.2",
->       "description": "API for Reading Business Partner, Supplier, Customer  and Contact Persons"
->    },
->    
->    "x-sap-stateInfo": {
->       "state": "Deprecated",
->       "deprecationDate": "14 Aug 2018",
->       "successorApi": "http://api.sap.com/api/product_text_classification_api"
->    }
-> }
-> ```
+    > ### Sample Code:  
+    > ```
+    > {
+    >    "swagger": "2.0",
+    >    "info": {
+    >       "title": "Business API",
+    >       "version": "1.1.0",
+    >       "description": "API for Reading Business Partner, Supplier, Customer  and Contact Persons"
+    >    },
+    >    
+    >    "x-sap-stateInfo": {
+    >       "state": "Beta"
+    >    }
+    > }
+    > ```
 
-> ### Note:  
-> You must enter the `deprecationDate` in the format `dd mmm yyyy`, where `mmm` is a string indicating the month. For example, Jan, Jul, Nov etc.
+-   Active
 
-If `x-sap-stateInfo` attribute is not defined or left empty, then the default status of the API is taken as `Active`.
+    If `x-sap-stateInfo` attribute is not defined or left empty, then the default status of the API is taken as `Active`.
+
+-   Deprecated
+
+    The following is a sample code snippet of an API definition file in which `x-sap-stateInfo` attribute is used to indicate that the current status of the API is deprecated as on 14th August 2018, and a new version of the API is available:
+
+    > ### Sample Code:  
+    > ```
+    > {
+    >    "swagger": "2.0",
+    >    "info": {
+    >       "title": "Business API",
+    >       "version": "1.1.2",
+    >       "description": "API for Reading Business Partner, Supplier, Customer  and Contact Persons"
+    >    },
+    >    
+    >    "x-sap-stateInfo": {
+    >       "state": "Deprecated",
+    >       "deprecationDate": "2018-08-14",
+    >       "successorApi": "http://api.sap.com/api/product_text_classification_api"
+    >    }
+    > }
+    > ```
+
+    > ### Note:  
+    > You must enter the `deprecationDate` in the format `dd mmm yyyy`, where `mmm` is a string indicating the month. For example, Jan, Jul, Nov etc.
+
+-   Decommissioned
+
+    The following is a sample code snippet of an API definition file in which `x-sap-stateInfo` attribute is used to indicate that the current status of the API is decommissioned as on 05th September 2018, and a new version of the API is available:
+
+    > ### Sample Code:  
+    > ```
+    > {
+    >    "swagger": "2.0",
+    >    "info": {
+    >       "title": "Business API",
+    >       "version": "1.1.2",
+    >       "description": "API for Reading Business Partner, Supplier, Customer  and Contact Persons"
+    >    },
+    >    
+    >    "x-sap-stateInfo": {
+    >       "state": "Decommissioned",
+    >       "decommissionedDate": "2018-10-05",
+    >       "successorApi": "http://api.sap.com/api/product_text_classification_api"
+    >    }
+    > }
+    > ```
+
+
+
+
+### Change Log
 
 If you have defined the `x-sap-stateInfo` attribute, then you must also ensure that you have entered the change log information in the *Artifact.json* file of your API package.
 
 > ### Note:  
 > If you do not enter the changelog information in *Artifact.json* file, then it results in unsuccessful builds.
 
-The following is a sample code snippet of the *Artifact.json* file in which `changelog` attribute is used to indicate the most recent state of the API.
+**Change Log for a deprecate API**: The following is a sample code snippet of the *Artifact.json* file in which `changelog` attribute is used to indicate the most recent state of the API.
 
 > ### Sample Code:  
 > ```
@@ -185,19 +391,19 @@ The following is a sample code snippet of the *Artifact.json* file in which `cha
 >   "changelog": [
 >     {
 >       "state": "Deprecated",
->       "date": "14 Aug 2018",
+>       "date": "2018-09-14",
 >       "version": "1.0",
 >       "notes": "New api with enhanced functionality is available"
 >     },
 >     {
 >       "state": "Active",
->       "date": "18 Jan 2018",
+>       "date": "2018-01-18",
 >       "version": "1.0.0",
 >       "notes": "Some bug fixes and performance enhancement"
 >     },
 >     {
 >       "state": "Active",
->       "date": "08 Jan 2021",
+>       "date": "2021-01-08",
 >       "version": "1.0.0",
 >       "notes": "Notifications API has been moved out of Equipment API. <a href=\"https://api.sap.com/api/NotificationsAPI/resource\">Visit Notifications API</a>"
 >     }
@@ -208,33 +414,13 @@ The following is a sample code snippet of the *Artifact.json* file in which `cha
 > ```
 
 > ### Note:  
-> You must enter the `date` in the format `dd mmm yyyy`, where `mmm` is a string indicating the month. For example, Jan, Jul, Nov etc. The most recent state of the API must appear as the first entry under `changelog`, and the values defined for the `state` attribute in `API definition` file and `Artifact.json` file must be same. It is a good practice to indicate the recent changes made to the API using the `notes` attribute. This will help your API consumers to know if they need to follow certain rules or conditions before using the API.
+> You must enter the `date` in the format `yyyy-mm-dd`. The most recent state of the API must appear as the first entry under `changelog`, and the values defined for the `state` attribute in `API definition` file and `Artifact.json` file must be same. It is a good practice to indicate the recent changes made to the API using the `notes` attribute. This will help your API consumers to know if they need to follow certain rules or conditions before using the API.
 
 The following images show a sample API, which is marked `Deprecated` on the SAP API Business Hub:
 
  ![](images/deprecated_API_2_new_49ef553.png) 
 
-The following is a sample code snippet of an API definition file in which `x-sap-stateInfo` attribute is used to indicate that the current status of the API is decommissioned as on 05th September 2018, and a new version of the API is available:
-
-> ### Sample Code:  
-> ```
-> {
->    "swagger": "2.0",
->    "info": {
->       "title": "Business API",
->       "version": "1.1.2",
->       "description": "API for Reading Business Partner, Supplier, Customer  and Contact Persons"
->    },
->    
->    "x-sap-stateInfo": {
->       "state": "Decommissioned",
->       "decommissionedDate": "05 Sep 2018",
->       "successorApi": "http://api.sap.com/api/product_text_classification_api"
->    }
-> }
-> ```
-
-The following is a sample code snippet of the *Artifact.json* file in which `changelog` attribute is used to indicate the decommissioned state of the API.
+**Change Log for a decommissioned API** The following is a sample code snippet of the *Artifact.json* file in which `changelog` attribute is used to indicate the decommissioned state of the API.
 
 > ### Note:  
 > When you transition an API from one state to another, you must enter the changelog information in *Artifatct.json* file. SAP Content pipeline strongly recommends the following:
@@ -249,19 +435,19 @@ The following is a sample code snippet of the *Artifact.json* file in which `cha
 >   "changelog": [
 >     {
 >       "state": "Decommissioned",
->       "date": "05 Sep 2018",
+>       "date": "2018-10-05",
 >       "version": "1.1.2",
 >       "notes": "This API is decommissioned"
 >     },
 >     {
 >       "state": "Deprecated",
->       "date": "18 Jul 2018",
+>       "date": "2018-07-18",
 >       "version": "1.0",
 >       "notes": "This API is deprecated"
 >     },
 >     {
 >       "state": "Active",
->       "date": "18 Jan 2018",
+>       "date": "2018-01-18",
 >       "version": "1.0.0",
 >       "notes": "Some bug fixes and performance enhancement"
 >     }
@@ -271,13 +457,17 @@ The following is a sample code snippet of the *Artifact.json* file in which `cha
 > ```
 
 > ### Note:  
-> You must enter the `date` in the format `dd mmm yyyy`, where `mmm` is a string indicating the month. For example, Jan, Jul, Nov etc. The most recent recent state of the API must appear as the first entry under `changelog`, and the values defined for the `state` attribute in `API definition` file and `Artifact.json` file must be same. It is a good practice to indicate the recent changes made to the API using the `notes` attribute. This will help your API consumers to know if they need to follow certain rules or conditions before using the API.
+> You must enter the `date` in the format `yyyy-mm-dd`. The most recent recent state of the API must appear as the first entry under `changelog`, and the values defined for the `state` attribute in `API definition` file and `Artifact.json` file must be same. It is a good practice to indicate the recent changes made to the API using the `notes` attribute. This will help your API consumers to know if they need to follow certain rules or conditions before using the API.
 
 The following images shows a sample API, which is marked `Decommissioned` on the SAP API Business Hub:
 
  ![](images/decommissioned_api_3e00d2c.png) 
 
-You can also choose to mark an API operation or a parameter as deprecated.
+
+
+### Deprecating API Operation or Parameter
+
+**Marking an API operation or parameter as deprecated** 
 
 > ### Note:  
 > In OpenAPI 2.0 specification, you have the provision to mark only an API operation as deprecated whereas in OpenAPI 3.0 specification, you can mark both API operation and a parameter as deprecated.
@@ -329,7 +519,9 @@ For more information, see [API Deprecation Policy](https://help.sap.com/doc/DRAF
 
 
 
-### x-sap-csrf-token-path
+<a name="loio35f357c811f546c5ae3451df42f61ea0__section_dns_wg2_rsb"/>
+
+## x-sap-csrf-token-path
 
 You use this attribute to provide a path relative to the basepath of your API for fetching X-CSRF-Token. That is, this attribute must contain the path of a resource that handles the fetching of x-csrf token requests. The relative path provided must not include server and transfer protocol information.
 
@@ -364,7 +556,9 @@ You use this attribute to provide a path relative to the basepath of your API fo
 
 
 
-### x-sap-software-min-version
+<a name="loio35f357c811f546c5ae3451df42f61ea0__section_lx2_hh2_rsb"/>
+
+## x-sap-software-min-version
 
 You use this attribute to provide the minimum software version. For example:
 
@@ -379,7 +573,9 @@ You use this attribute to provide the minimum software version. For example:
 
 
 
-### x-sap-ext-overview
+<a name="loio35f357c811f546c5ae3451df42f61ea0__section_fwq_mh2_rsb"/>
+
+## x-sap-ext-overview
 
 You can use this attribute to provide stakeholder-specific information. For example:
 
@@ -404,11 +600,13 @@ You can use this attribute to provide stakeholder-specific information. For exam
 
 
 
-### x-servers
+<a name="loio35f357c811f546c5ae3451df42f61ea0__section_fmr_tly_g1b"/>
+
+## x-servers
 
 The Open API specification 2.0 does not support multiple hosts \(and ports\), neither are path templating or patterns supported. Some APIs need support for both multiple hosts and path templating in the host parameter. This is because the host and landscape vary between regions.
 
-These features will be supported in the `servers` property in the Open API specification v3.0. However, in Open API specification v2.0, the required configuration values can be added via the custom extension `x-servers`.
+These features is supported in the `servers` property in the Open API specification v3.0. However, in Open API specification v2.0, the required configuration values can be added via the custom extension `x-servers`.
 
 For more information about how to specify sandbox url and multiple hosts or production servers in OpenAPI 3.0, see the Sandbox and Configure Information sections in [Governance Guidelines for API Packages](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Cloud/en-US/1e1cd898d3984bc79f214202e12ad5b5.html "A checklist to ensure your APIs have been correctly packaged before they are published on the SAP API Business Hub.") :arrow_upper_right:
 
@@ -433,7 +631,7 @@ For more information on how to define schemes, host and basepath in the API spec
 > ### Note:  
 > The *Try it Out!* feature on SAP API Business Hub can be configured to enable API testing experience either in a sandbox system or in a productive system. To try out the APIs in a sandbox system, the `host` attribute in the OpenAPI specification must be defined and point to the API Sandbox URL. Similarly, to try out the APIs in a productive system, the `x-servers` attribute in the OpenAPI specification must be defined and point to the URL of the productive system. For example, the productive system can be URL to an application/service running on an active SAP BTP account.
 
-`x-servers` attribute is used when you want to specify multiple hosts, for example, to specify values for different servers located across various geographical boundaries. The example below shows how multiple hosts with path templates can be defined using x-servers attribute..
+`x-servers` attribute is used when you want to specify multiple hosts, for example, to specify values for different servers located across various geographical boundaries. The example below shows how multiple hosts with path templates can be defined using x-servers attribute.
 
 ```
 {
@@ -469,8 +667,6 @@ For more information on how to define schemes, host and basepath in the API spec
   ]
 }
 ```
-
-
 
 For more information on how `x-servers` attribute is used for enabling API test experience in a productive environment in SAP API Business Hub, see [here](https://blogs.sap.com/2017/09/09/sap-api-business-hub-support-for-productive-environment/).
 

@@ -37,7 +37,7 @@ You're in the edit mode of the MAG editor.
     > ### Tip:  
     > You can also choose *Share* beside the *Local Code* option to create a reusable code snippet of the local code in the *XSLT Code* editor.
 
-    <a name="loioe951f66397694d89876fee681b9717ee__table_myb_qtg_wnb"/>Quick Actions
+    **Quick Actions**
 
 
     <table>

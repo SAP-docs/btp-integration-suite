@@ -25,7 +25,7 @@ Once you’ve created a receiver channel and selected the OData V4 Receiver Adap
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loiocd66a12cc2054e36a5dfa6b93d56c7bb__table_qrt_wjr_yjb"/>General
+**General**
 
 
 <table>
@@ -65,7 +65,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loiocd66a12cc2054e36a5dfa6b93d56c7bb__table_g1y_2kw_wdb"/>Connection
+**Connection**
 
 
 <table>
@@ -256,7 +256,7 @@ Enter the time in minutes.
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loiocd66a12cc2054e36a5dfa6b93d56c7bb__table_tkx_3mw_wdb"/>Processing
+**Processing**
 
 
 <table>
@@ -289,6 +289,9 @@ Description
 The operation that you want to perform on the selected OData entity or resource.
 
 -   Batch Processing \($batch\)
+
+    > ### Remember:  
+    > For the Batch Processing operation, the maximum XML payload size supported is 2 MB. If your payload is more than 2 MB, message processing fails.
 
 -   Create\(POST\)
 
@@ -412,7 +415,7 @@ There are two main steps in this wizard:
 2.  *Select Entity and Define Operation:* In this step, you select the operation you want to perform and the entity on which you want to perform the operation on. After selecting the entity, you also select the fields, filtering and sorting conditions.
 3.  *Configure Filter & Sorting:* This step is available only for data fetch operations, where you can define the order in which the records are fetched in the response payload and filter for the fields that you require.
 
-<a name="loiocd66a12cc2054e36a5dfa6b93d56c7bb__table_wqk_vjl_xdb"/>Connect to System
+**Connect to System**
 
 
 <table>
@@ -542,7 +545,7 @@ For other authentication types, download the EDMX from the service and use the *
 </tr>
 </table>
 
-<a name="loiocd66a12cc2054e36a5dfa6b93d56c7bb__table_h45_knl_xdb"/>Select Entity & Define Operation
+**Select Entity & Define Operation**
 
 
 <table>
@@ -687,7 +690,7 @@ For more information, see **Skip System Query Option \($skip\)** in [OData V4 UR
 
 This step is available only for data fetch operations, *Query\(GET\)* and *Read\(GET\)*.
 
-<a name="loiocd66a12cc2054e36a5dfa6b93d56c7bb__table_gbn_y3m_xdb"/>Configure Filter & Sorting
+**Configure Filter & Sorting**
 
 
 <table>

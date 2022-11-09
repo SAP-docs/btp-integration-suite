@@ -44,7 +44,7 @@ Once you’ve created a receiver channel and selected the SugarCRM adapter, you 
 
 The General tab shows general information such as the adapter type, its direction \(receiver\), the transport protocol, and the message protocol.
 
-<a name="loiod96ddf70caaf488ba87233f54f79ede6__table_ypb_qmj_h4b"/>Connection
+**Connection**
 
 
 <table>
@@ -146,7 +146,7 @@ Specify the SugarCRM platform name for the connection. A platform provides the p
 </tr>
 </table>
 
-<a name="loiod96ddf70caaf488ba87233f54f79ede6__table_f2p_rnj_h4b"/>Processing
+**Processing**
 
 
 <table>

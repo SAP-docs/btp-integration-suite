@@ -15,7 +15,7 @@ You can develop OData APIs that expose existing data sources, such as SOAP, as O
 
 When deciding whether to use OData APIs or integration projects to implement your business scenario, keep the following differences in mind:
 
-<a name="loiod961654cd36b46ad83b668e4434c9f04__d15e246"/>
+****
 
 
 <table>

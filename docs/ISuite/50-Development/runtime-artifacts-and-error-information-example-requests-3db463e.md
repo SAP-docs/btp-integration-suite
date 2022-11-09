@@ -50,6 +50,8 @@ To get all integration artifacts in status `ERROR`, send the following GET reque
 
 `https://<host address>/api/v1/IntegrationRuntimeArtifacts?$filter=Status eq 'ERROR'`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 To get error information related to the integration artifact with Id `Mail_Sender_Integration_Flow`, send the following GET request:
 
 `https://<host address>/api/v1/IntegrationRuntimeArtifacts('Mail_Sender_Integration_Flow')/ErrorInformation`

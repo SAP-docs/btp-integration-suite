@@ -8,7 +8,7 @@ The `Message` interface allows you to address SOAP headers.
 
 The following table provides examples of how to use the Script step with this interface.
 
-<a name="copy8a2827d030b345f998199774266b9810__table_oxs_tm1_p4b"/>
+****
 
 
 <table>

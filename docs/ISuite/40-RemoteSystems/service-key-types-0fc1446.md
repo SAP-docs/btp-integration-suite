@@ -6,7 +6,7 @@ You can select different service key types depending on the use case.
 
 There are the following options.
 
-<a name="loio0fc1446c4fa547d1b5f991f522c57484__table_bnk_ndv_ytb"/>Service Key Types
+**Service Key Types**
 
 
 <table>

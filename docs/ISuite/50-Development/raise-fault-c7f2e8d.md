@@ -89,7 +89,7 @@ Defines the response message returned to the requesting application.
 
 The following predefined flow variables are available after Raise Fault policy executes.
 
-<a name="loioc7f2e8d9de4249cfa8cc2655ebd4878b__table_pnt_tmv_m1b"/>Flow Variables
+**Flow Variables**
 
 
 <table>
@@ -217,7 +217,7 @@ Returns the fault category in the error and if not available, an empty string.
 
 During the policy execution, the following error can occur:
 
-<a name="loioc7f2e8d9de4249cfa8cc2655ebd4878b__table_nlm_fnz_21b"/>Error Cause
+**Error Cause**
 
 
 <table>
@@ -257,7 +257,7 @@ See fault string.
 
 Following fault variables are set when the policy triggers an error at runtime:
 
-<a name="loioc7f2e8d9de4249cfa8cc2655ebd4878b__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

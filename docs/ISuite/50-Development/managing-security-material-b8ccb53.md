@@ -18,7 +18,7 @@ Security artifacts with the corresponding status \(of the tile\) are displayed.
 
 A list of security material is displayed in a table. For each artifact, the following attributes are displayed:
 
-<a name="loiob8ccb53b9ec44652b885476f02184a0f__table_ikl_25k_tl"/>Attributes of Security-Related Artifacts
+**Attributes of Security-Related Artifacts**
 
 
 <table>
@@ -163,7 +163,7 @@ To sort and filter the content of the table, choose *Table Settings* \(:gear:\).
 
 ## Actions
 
-<a name="loiob8ccb53b9ec44652b885476f02184a0f__table_wp2_mtw_5sb"/>Actions
+**Actions**
 
 
 <table>

@@ -42,7 +42,7 @@ In detail, perform the following steps.
 
     Assign a role that grants permission to access certain data through the API. In our example, we want to access monitoring data through the API, so we select the predefined *MonitoringDataRead* role.
 
-    For more information about the available predefined roles, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
+    For more information about the available predefined roles, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
 
     > ### Tip:  
     > Make sure you select a role with an application identifier that starts with `it!`.
@@ -76,5 +76,5 @@ In detail, perform the following steps.
 16. Choose *Assign Role Collection*.
 
 
-You can now call the resource of the OData API from an API client using the credentials of the IdP user.
+You can now call the resource of the OData API from an API client using the credentials of the IdP user. For more information on the address of the API call, see [HTTP Calls and URI Components](../50-Development/http-calls-and-uri-components-ca75e12.md).
 

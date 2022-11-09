@@ -20,7 +20,7 @@ The *Mapping Guidelines* tab displays an overview of all the MAGs that you've cr
 
 You can also choose <span class="SAP-icons"></span> \(Extended filter\)to filter MAGs based on specific criteria. You can use the required filter fields to list MAGs that match your query. You can also customize the filter bar by choosing *Filters*. You can expand or collapse the filter area using *Show Filter Bar* or *Hide Filter Bar*.
 
-<a name="loio42124f465fc0472a8ab0de30aa14edef__table_z5s_mbt_d4b"/>Filter Criteria
+**Filter Criteria**
 
 
 <table>

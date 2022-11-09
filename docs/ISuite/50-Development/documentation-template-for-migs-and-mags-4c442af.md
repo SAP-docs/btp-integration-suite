@@ -16,7 +16,7 @@ You can maintain a template for documentation export which is later picked by th
 
 2.  Choose *Edit* to edit your document template. There are 3 sections to be filled
 
-    <a name="loio4c442af844e54848ad66f071ae8233ee__table_axn_lfk_4tb"/>Front Cover Page
+    **Front Cover Page**
 
 
     <table>
@@ -134,7 +134,7 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     </table>
     
-    <a name="loio4c442af844e54848ad66f071ae8233ee__table_orm_hgk_4tb"/>Content Page
+    **Content Page**
 
 
     <table>
@@ -172,7 +172,7 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     </table>
     
-    <a name="loio4c442af844e54848ad66f071ae8233ee__table_x1g_3gk_4tb"/>Back Cover Page
+    **Back Cover Page**
 
 
     <table>

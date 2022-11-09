@@ -6,7 +6,7 @@ Here you can find a list of the security events that are logged by Integration A
 
 The audit log retrieval follows the OData 4.0 standard, providing the audit log results as OData with collection of JSON entities.
 
-<a name="loio3dbe5576df864836b4ff54c42e7eef8f__table_dqf_pkf_p4b"/>Security Events Written in Audit Logs
+**Security Events Written in Audit Logs**
 
 
 <table>
@@ -214,7 +214,7 @@ Create new license
 </td>
 <td valign="top">
 
- [Managing Licence for Type Systems](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/ed1e961c636f4835aaa7248cf2488112.html "") :arrow_upper_right: 
+ [Managing Licence for Type Systems](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/ed1e961c636f4835aaa7248cf2488112.html "") :arrow_upper_right: 
 
 
 
@@ -247,7 +247,7 @@ Delete license
 </td>
 <td valign="top">
 
- [Managing Licence for Type Systems](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/ed1e961c636f4835aaa7248cf2488112.html "") :arrow_upper_right: 
+ [Managing Licence for Type Systems](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/ed1e961c636f4835aaa7248cf2488112.html "") :arrow_upper_right: 
 
 
 

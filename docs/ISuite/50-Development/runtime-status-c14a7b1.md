@@ -6,7 +6,7 @@ Indicates if a deployed artifact is ready to operate.
 
 The following status values are possible.
 
-<a name="loioc14a7b18544f4495ab32e41630074726__table_tj3_m53_b5"/>Statuses
+**Statuses**
 
 
 <table>

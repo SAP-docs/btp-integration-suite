@@ -33,7 +33,7 @@ Use the *ebMS3 Pull* message protocol to receive AS4 message \(User Message\).
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio7cdde30dda764614baa96b4a2f25c395__table_gjd_pqg_mdb"/>Connection
+**Connection**
 
 
 <table>
@@ -216,7 +216,7 @@ Provide a connection timeout period \(in seconds\) to define how long the sendin
 
 Select the *Security*tab and provide values in the fields as follows.
 
-<a name="loio7cdde30dda764614baa96b4a2f25c395__table_vx4_lyg_mdb"/>Security
+**Security**
 
 
 <table>
@@ -392,7 +392,7 @@ Provide the private key alias used to decipher the outgoing AS4 message.
 
 Select the *Receipt*tab and provide values in the fields as follows.
 
-<a name="loio7cdde30dda764614baa96b4a2f25c395__table_mck_hzk_pgb"/>Receipt
+**Receipt**
 
 
 <table>

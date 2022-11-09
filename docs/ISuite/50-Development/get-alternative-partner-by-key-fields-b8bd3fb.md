@@ -50,6 +50,8 @@ Therefore, you need to send the following GET request providing the hexadecimal 
 
 `https://<host address>/api/v1/AlternativePartners(Hexagency='4167656e637941',Hexscheme='536368656d6141',Hexid='506172746e6572313233')`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 As a response, you get a message that contains the following part:
 
 ```

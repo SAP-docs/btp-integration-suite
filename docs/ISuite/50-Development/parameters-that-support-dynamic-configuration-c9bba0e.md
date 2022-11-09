@@ -6,7 +6,7 @@ The following tables list all parameters that can be configured dynamically \(fo
 
 For more information on the individual adapter and step types, see the documentation of the related integration flow component.
 
-<a name="loioc9bba0eb3f724dca8388d6f92eaae582__table_ghn_r2s_pdb"/>Adapters
+**Adapters**
 
 
 <table>
@@ -492,7 +492,7 @@ XI receiver
 </tr>
 </table>
 
-<a name="loioc9bba0eb3f724dca8388d6f92eaae582__table_bt3_w2s_pdb"/>Integration Flow Steps
+**Integration Flow Steps**
 
 
 <table>

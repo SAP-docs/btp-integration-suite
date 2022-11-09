@@ -44,7 +44,7 @@ In detail, perform the following steps:
 
     For this use case, specify the service instance and service key parameters as follows:
 
-    <a name="loio647eeb3eca5d4c299009cacd1332247e__table_nb5_sdl_zsb"/>
+    ****
 
 
     <table>
@@ -195,5 +195,5 @@ In detail, perform the following steps:
 
 [Basic Authentication](basic-authentication-2c4c2d9.md "Basic authentication allows a client to authenticate itself against the server based on user credentials.")
 
-[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
+[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
 
