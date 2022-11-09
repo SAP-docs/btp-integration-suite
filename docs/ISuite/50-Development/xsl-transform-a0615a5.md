@@ -236,7 +236,7 @@ Value of the parameter
 
 During the policy execution, the following errors can occur:
 
-<a name="loioa0615a5b8f7b4c81b5d72fe88b43d553__table_nlm_fnz_21b"/>Error Cause
+**Error Cause**
 
 
 <table>

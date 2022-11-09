@@ -64,7 +64,7 @@ The integration flow performs the following steps:
 
     The headers are defined with the following expressions:
 
-    <a name="loioa44a1f9617ab4536b652979535957ba6__table_jfg_clv_2mb"/>
+    ****
 
 
     <table>

@@ -31,7 +31,7 @@ The following data sources are currently supported:
 
 To identify the graphical representations of the OData objects and their binding status on the Service Designer page, refer to the following table:
 
-<a name="loio2b6e8657cc0645c696bb7761fe1ce0fc__table_cqc_ywd_45"/>
+****
 
 
 <table>

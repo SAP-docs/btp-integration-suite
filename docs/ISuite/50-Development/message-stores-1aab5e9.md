@@ -72,7 +72,7 @@ To authorize an API client to access the OData API:
 
 Perform the steps described in: [Setting Up Inbound HTTP Connections \(for API Clients\)](../40-RemoteSystems/setting-up-inbound-http-connections-for-api-clients-8db3d51.md) 
 
-Depending on the use case, assign the following role templates \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\):
+Depending on the use case, assign the following role templates \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\):
 
 -   To view message store content: `MonitoringDataRead` 
 
@@ -91,7 +91,7 @@ Depending on the use case, assign the following role templates \(see [Tasks and 
 
 ## Resources
 
-<a name="loio1aab5e9482f545539a7caae3e9887e4e__table_vvw_dlf_t4b"/>
+****
 
 
 <table>
@@ -195,7 +195,7 @@ JMS Resources
 
 Represents available resources of the used Java Message Service \(JMS\) queues.
 
-JMS queues are accessed to by integration flows that contain an AS2, a JMS, or anXI adapter \(see [AS2 Adapter](as2-adapter-d3af635.md), [JMS Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:, and [XI Adapter](xi-adapter-8fedc92.md)\).
+JMS queues are accessed to by integration flows that contain an AS2, a JMS, or anXI adapter \(see [AS2 Adapter](as2-adapter-d3af635.md), [JMS Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:, and [XI Adapter](xi-adapter-8fedc92.md)\).
 
 
 
@@ -313,8 +313,7 @@ On SAP API Business Hub, you can test API calls against a sandbox tenant or agai
 
 `https://<host address>/api/v1/<relative resource path>`
 
-You can find the relative resource path for each operation on SAP API Business Hub.
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
 
-> ### Tip:  
-> To find out the Cloud Integration host address, check out the URL of your Cloud Integration Web application. This URL is composed in the following way: `https://<host address>/itspaces`.
+You can find the relative resource path for each operation on SAP API Business Hub.
 

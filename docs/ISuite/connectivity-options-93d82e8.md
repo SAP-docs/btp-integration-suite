@@ -37,7 +37,7 @@ SAP Integration Suite comes with a set of standard adapters that allow you to sp
 > 
 > A receiver adapter connects SAP Integration Suite to an external system. A sender adapter receives incoming messages \(sent from an external system\) or polls messages from an external system.
 
-<a name="loio93d82e8ff860450da10ad2c16bf5e971__d140e18"/>Adapter
+**Adapter**
 
 
 <table>
@@ -467,7 +467,7 @@ Connects SAP Integration Suite to the Ariba Network. Using this adapter, SAP and
 
 The sender adapter allows you to define a schedule for polling data from Ariba.
 
-See: [Configure the Ariba Sender Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/0629b58d4a764a0b8bcf9aa884503e78.html "The Ariba sender adapter connects SAP Cloud Integration to the Ariba Network. Using this adapter, SAP and non-SAP cloud applications can receive business-specific documents in commerce eXtensible Markup Language (cXML) format from the Ariba network. The sender adapter allows you to define a schedule for polling data from Ariba.") :arrow_upper_right:
+See: [Configure the Ariba Sender Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/0629b58d4a764a0b8bcf9aa884503e78.html "The Ariba sender adapter connects SAP Cloud Integration to the Ariba Network. Using this adapter, SAP and non-SAP cloud applications can receive business-specific documents in commerce eXtensible Markup Language (cXML) format from the Ariba network. The sender adapter allows you to define a schedule for polling data from Ariba.") :arrow_upper_right:
 
 
 
@@ -487,7 +487,7 @@ Receiver adapter
 
 Connects SAP Integration Suite to the Ariba network. Using this adapter, SAP and non-SAP cloud applications can send business-specific documents in commerce eXtensible Markup Language \(cXML\) format to the Ariba network.Receiver adapter
 
-See: [Configure the Ariba Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/49dffa3da5784b7bb5dd6d8bf975939c.html "The Ariva receiver adapter connects SAP Cloud Integration to the Ariba network. Using this adapter, SAP and non-SAP cloud applications can send business-specific documents in commerce eXtensible Markup Language (cXML) format to the Ariba network.") :arrow_upper_right:
+See: [Configure the Ariba Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/49dffa3da5784b7bb5dd6d8bf975939c.html "The Ariva receiver adapter connects SAP Cloud Integration to the Ariba network. Using this adapter, SAP and non-SAP cloud applications can send business-specific documents in commerce eXtensible Markup Language (cXML) format to the Ariba network.") :arrow_upper_right:
 
 
 
@@ -695,7 +695,7 @@ Enables SAP Integration Suite to access and extract information from Facebook ba
 
 Using OAuth, the SAP BTP tenant can access resources on Facebook on behalf of a Facebook user.
 
-See: [Facebook Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/3dcc4080897c4bd4bf55bb8bf1bcac0d.html "You use the Facebook receiver adapter to extract information from Facebook (which is the receiver platform) based on certain criteria such as keywords, user data, for example. As one example, you can use this feature in social marketing activities to do social media data analysis based on Facebook content.") :arrow_upper_right:
+See: [Facebook Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/3dcc4080897c4bd4bf55bb8bf1bcac0d.html "You use the Facebook receiver adapter to extract information from Facebook (which is the receiver platform) based on certain criteria such as keywords, user data, for example. As one example, you can use this feature in social marketing activities to do social media data analysis based on Facebook content.") :arrow_upper_right:
 
 
 
@@ -1078,7 +1078,7 @@ To prevent situations where the JMS adapter tries again and again to process a f
 
 Certain constraints apply with regard to the number and capacity of involved queues, as well as for the headers and exchange properties defined in the integration flow before the message is saved to the queue \(as described in the product documentation\).
 
-See: [Configure the JMS Sender Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/161791b8cb98485ba00d81efa4197a49.html "The JMS sender adapter enables asynchronous decoupling of inbound and outbound processing by using message queues. The sender adapter consumes messages from a JMS queue.") :arrow_upper_right:
+See: [Configure the JMS Sender Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/161791b8cb98485ba00d81efa4197a49.html "The JMS sender adapter enables asynchronous decoupling of inbound and outbound processing by using message queues. The sender adapter consumes messages from a JMS queue.") :arrow_upper_right:
 
 
 
@@ -1100,7 +1100,7 @@ Enables asynchronous messaging by using message queues.
 
 The receiver adapter stores messages and schedules them for processing in a queue. The messages are processed concurrently.
 
-See: [Configure the JMS Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/79edc04c91574a6bb8c15ae3e1a27b03.html "The JMS receiver adapter enables asynchronous decoupling of inbound and outbound processing by using message queues. The receiver adapter stores messages and schedules them for processing in a queue. The messages are processed concurrently.") :arrow_upper_right:
+See: [Configure the JMS Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/79edc04c91574a6bb8c15ae3e1a27b03.html "The JMS receiver adapter enables asynchronous decoupling of inbound and outbound processing by using message queues. The receiver adapter stores messages and schedules them for processing in a queue. The messages are processed concurrently.") :arrow_upper_right:
 
 
 
@@ -1814,7 +1814,7 @@ Features of OData version 4.0 supported by the adapter:
     Edm.ComplexType, Edm:EnumType, Collection\(Edm.PrimitiveType\) and Collection\(Edm.ComplexType\)
 
 
-See: [SuccessFactors OData V4 Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/cd091fc8051d42ee95eda2858ca2a2f0.html "The SuccessFactors receiver adapter enables you to communicate with the SuccessFactors system. You use the OData V4 message protocol to connect to the OData V4-based Web services of the SuccessFactors system.") :arrow_upper_right:
+See: [SuccessFactors OData V4 Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/cd091fc8051d42ee95eda2858ca2a2f0.html "The SuccessFactors receiver adapter enables you to communicate with the SuccessFactors system. You use the OData V4 message protocol to connect to the OData V4-based Web services of the SuccessFactors system.") :arrow_upper_right:
 
 
 
@@ -1856,7 +1856,7 @@ Enables SAP Integration Suite to access Twitter and read or post tweets.
 
 Using OAuth, SAP Integration Suite can access resources on Twitter on behalf of a Twitter user.
 
-See: [Twitter Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/453c174be6ca4098a8c99dc4c1262d25.html "You use the Twitter receiver adapter to extract information from the Twitter platform based on certain criteria such as keywords, user data, for example. As one example, you can use this feature to send, search for and receive Twitter feeds.") :arrow_upper_right:
+See: [Twitter Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/453c174be6ca4098a8c99dc4c1262d25.html "You use the Twitter receiver adapter to extract information from the Twitter platform based on certain criteria such as keywords, user data, for example. As one example, you can use this feature to send, search for and receive Twitter feeds.") :arrow_upper_right:
 
 
 
@@ -1934,7 +1934,7 @@ Connect SAP Integration Suite to a number of SAP and non-SAP applications such l
 
 Open Connectors provides you with a catalog of 170+ non-SAP connectors. You can use the *OpenConnectors* adapter to connect SAP Integration Suite tenant with such a connector \(see: [OpenConnectors Receiver Adapter](50-Development/openconnectors-receiver-adapter-1a27cee.md)\).
 
-<a name="loio93d82e8ff860450da10ad2c16bf5e971__d524e18"/>Connectors
+**Connectors**
 
 
 <table>

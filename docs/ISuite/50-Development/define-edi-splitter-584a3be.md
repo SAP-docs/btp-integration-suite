@@ -664,7 +664,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
     The error codes for UN-EDIFACT interchange and message levels are given below:
 
-    <a name="loio584a3beb81454d40acb052ae371c7063__table_uz2_q5s_1y"/>Interchange Level
+    **Interchange Level**
 
 
     <table>
@@ -705,7 +705,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     > ### Note:  
     > If you select *Interchange* transaction mode, the splitter treats the entire EDI interchange as a single entity, and includes interchange errors in the acknowledgement.
 
-    <a name="loio584a3beb81454d40acb052ae371c7063__table_lmj_dvs_1y"/>Interchange and Message Level
+    **Interchange and Message Level**
 
 
     <table>
@@ -791,7 +791,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     </table>
     
-    <a name="loio584a3beb81454d40acb052ae371c7063__table_wm2_t1t_1y"/>Message Level
+    **Message Level**
 
 
     <table>
@@ -975,7 +975,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     
     The error codes for ASC-X12 are given below:
 
-    <a name="loio584a3beb81454d40acb052ae371c7063__table_bhq_1ct_1y"/>AK3 Segment Level Error Codes
+    **AK3 Segment Level Error Codes**
 
 
     <table>
@@ -1077,7 +1077,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     </table>
     
-    <a name="loio584a3beb81454d40acb052ae371c7063__table_rqf_jct_1y"/>AK4 Data Element Level Error Codes
+    **AK4 Data Element Level Error Codes**
 
 
     <table>
@@ -1211,7 +1211,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     </table>
     
-    <a name="loio584a3beb81454d40acb052ae371c7063__table_vkr_tct_1y"/>AK5 Transaction Set Level Error Codes
+    **AK5 Transaction Set Level Error Codes**
 
 
     <table>
@@ -1265,7 +1265,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     </table>
     
-    <a name="loio584a3beb81454d40acb052ae371c7063__table_hvt_xct_1y"/>AK9 Functional Group Level Error Codes
+    **AK9 Functional Group Level Error Codes**
 
 
     <table>
@@ -1330,7 +1330,7 @@ UNB+UNOC:3+**4006501000002**:**14**+**5790000016839**:**14**+100818:0028+**0650*
 
 UNH+1+**INVOIC**:**D**:**96A**:**EN:EAN008**'
 
-<a name="loio584a3beb81454d40acb052ae371c7063__d468e52"/>Value for EANCOM Document Standard
+**Value for EANCOM Document Standard**
 
 
 <table>
@@ -1680,7 +1680,7 @@ UNB+UNOC:3+**4006501000002**:**14**+**5790000016839**:**14**+100818:0028+**0650*
 
 UNH+1+**INVOIC**:**D**:**96A**:**UN**'
 
-<a name="loio584a3beb81454d40acb052ae371c7063__d468e397"/>Value for EDIFACT Document Standard
+**Value for EDIFACT Document Standard**
 
 
 <table>
@@ -1888,7 +1888,7 @@ GS\*IN\*GSRESNDR\*GSRERCVR\*20030709\*0816\*12345\*X\***004010**~
 
 **810**\*0001~
 
-<a name="loio584a3beb81454d40acb052ae371c7063__d468e628"/>Value for ASC-X12 Document Standard
+**Value for ASC-X12 Document Standard**
 
 
 <table>

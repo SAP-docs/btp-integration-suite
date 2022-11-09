@@ -530,7 +530,7 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     
     The error codes for UN-EDIFACT are given below:
 
-    <a name="loio9bf3b965a5c74365b44cd24f473e29e7__table_sp5_mk2_y5"/>Interchange Level
+    **Interchange Level**
 
 
     <table>
@@ -568,7 +568,7 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     </table>
     
-    <a name="loio9bf3b965a5c74365b44cd24f473e29e7__table_w4t_cl2_y5"/>Message Level
+    **Message Level**
 
 
     <table>
@@ -800,7 +800,7 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     
     The error codes for ASC-X12 are given below:
 
-    <a name="loio9bf3b965a5c74365b44cd24f473e29e7__table_vby_tls_vv"/>Functional Group Level
+    **Functional Group Level**
 
 
     <table>
@@ -870,7 +870,7 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     </table>
     
-    <a name="loio9bf3b965a5c74365b44cd24f473e29e7__table_zyw_tls_vv"/>Transaction Set Level
+    **Transaction Set Level**
 
 
     <table>
@@ -972,7 +972,7 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     </table>
     
-    <a name="loio9bf3b965a5c74365b44cd24f473e29e7__table_zpy_tms_vv"/>Segment Level
+    **Segment Level**
 
 
     <table>
@@ -1122,7 +1122,7 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     </table>
     
-    <a name="loio9bf3b965a5c74365b44cd24f473e29e7__table_xmd_sns_vv"/>Data Element Level
+    **Data Element Level**
 
 
     <table>

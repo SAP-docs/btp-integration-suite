@@ -49,7 +49,7 @@ You can use the *Poll Enrich* to read \(poll\) messages from an external compone
 
 7.  In the *Processing* tab, define the following parameters.
 
-    <a name="loiof8c8c1d5396b4cc780e91df826810f95__table_dpp_ryy_1qb"/>Processing Tab
+    **Processing Tab**
 
 
     <table>

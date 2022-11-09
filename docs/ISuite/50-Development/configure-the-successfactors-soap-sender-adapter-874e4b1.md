@@ -23,7 +23,7 @@ Once you've created a sender channel and selected the SuccessFactors \(SOAP\) se
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loio874e4b1e7d754b08a0b9e0b606e18a7f__table_umn_qmq_yjb"/>General
+**General**
 
 
 <table>
@@ -63,7 +63,7 @@ Enter the name of the channel.
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio874e4b1e7d754b08a0b9e0b606e18a7f__table_o2z_m4r_yjb"/>Processing
+**Processing**
 
 
 <table>
@@ -294,7 +294,7 @@ Maximum time the system waits for a response.
 
 Select the *Scheduler* tab and provide values in the fields as follows.
 
-Scheduler
+**Scheduler**
 
 
 <table>

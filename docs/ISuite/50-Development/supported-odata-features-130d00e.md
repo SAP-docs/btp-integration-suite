@@ -9,7 +9,7 @@
 
 The following operations are supported when developing an OData API in the Cloud Integration web application:
 
-<a name="loio130d00edf4e8484e9bb8e1bb5d5ffe8a__table_m25_dfd_f5"/>
+****
 
 
 <table>
@@ -141,7 +141,7 @@ The OData API supports the data types for the uploaded metadata file \(EDMX\) de
 
 The following system query options are supported when calling an OData API developed in the Cloud Integration web application:
 
-<a name="loio130d00edf4e8484e9bb8e1bb5d5ffe8a__table_t1b_3sd_f5"/>
+****
 
 
 <table>

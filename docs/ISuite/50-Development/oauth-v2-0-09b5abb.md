@@ -14,7 +14,7 @@ Setting up OAuth 2.0 authorization for your API is a three step process:
 
 You can attach this policy in the following locations![](images/flow_oauth_a3dea91.png):
 
-<a name="loio09b5abbd3d714ce29ee2366254261170__table_byz_tvt_h1b"/>Element and Attribute Descriptions
+**Element and Attribute Descriptions**
 
 
 <table>
@@ -326,7 +326,7 @@ Set this element to true when the <ExternalAuthorization\> element is true. The 
 
 Following flow variables are populated when the policy is executed:
 
-<a name="loio09b5abbd3d714ce29ee2366254261170__table_hnq_yb5_h1b"/>Flow Variables
+**Flow Variables**
 
 
 <table>
@@ -662,7 +662,7 @@ Note : If the app.appType is "Developer", then developer attributes are populate
 
 During the policy execution, the following errors can occur:
 
-<a name="loio09b5abbd3d714ce29ee2366254261170__table_nlm_fnz_21b"/>Error Cause
+**Error Cause**
 
 
 <table>
@@ -1072,7 +1072,7 @@ You must specify a token <Token\> value in the <Tokens\> element.
 
 Following fault variables are set when the policy triggers an error at runtime:
 
-<a name="loio09b5abbd3d714ce29ee2366254261170__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

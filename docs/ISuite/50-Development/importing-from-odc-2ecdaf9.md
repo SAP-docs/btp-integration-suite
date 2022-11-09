@@ -33,7 +33,7 @@ You can use this procedure to create an OData model or build up an existing one 
 
 4.  Enter the connection details as listed in the following table.
 
-    <a name="loio2ecdaf9ada514e5292af9996974ac38c__table_hzm_5gt_rw"/>
+    ****
 
 
     <table>

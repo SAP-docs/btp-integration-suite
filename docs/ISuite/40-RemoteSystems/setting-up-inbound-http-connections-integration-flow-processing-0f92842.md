@@ -98,7 +98,7 @@ Sender is authenticated based on user credentials associated with a user registe
 > 
 > Depending on the chosen inbound authorization option, you define permissions for sender systems to call integration flow endpoints in different ways:
 > 
-> <a name="loio0f92842bee8a46a9890c8b02b6bec05a__table_pvg_y43_2qb"/>
+> ****
 > 
 > 
 > <table>

@@ -6,7 +6,7 @@ To configure a connection to your CMS system for data archiving, you've to defin
 
 Create a new **Destination** pointing to the CMS System. Fill in the properties stated in the table:
 
-<a name="loioc1ac58014a8a4f208d18e716afae04f8__table_klt_1gb_xpb"/>
+****
 
 
 <table>
@@ -481,7 +481,7 @@ We recommend using this parameter only if the performance observed, isn't accept
 </td>
 <td valign="top">
 
-Use this parameter if you want to have your own document type, name, and document attributes in yr CMS repository, differing from the ones provided by SAP.
+Use this parameter if you want to have your own document type, name, and document attributes in your CMS repository, differing from the ones provided by SAP.
 
 The parameter value has to be a JSON string, as shown in the example:
 

@@ -6,7 +6,7 @@ The *Variables* view allows you to monitor variables used in integration flows.
 
 Choose the *Variables* tile in the *Manage Store*section. You get an overview of the existing variables, with the following attributes.
 
-<a name="loioca93653ec211457190ff8466e42ff9cd__table_dvk_gmj_bbb"/>
+****
 
 
 <table>

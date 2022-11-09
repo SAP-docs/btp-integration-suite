@@ -46,7 +46,7 @@ Cloud Integration allows you to configure an integration flow individually or mu
     > ### Note:  
     > You can use error configuration to handle errors when message processing fails at runtime. You select an error handling strategy based on the descriptions below:
     > 
-    > <a name="loio462a4782db7b485b94ffce5b6fe22c31__table_bg4_4wm_yr"/>Error Handler Strategies
+    > **Error Handler Strategies**
     > 
     > 
     > <table>

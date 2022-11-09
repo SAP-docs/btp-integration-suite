@@ -16,7 +16,7 @@ Message mapping as an artifact consists of a mapping definition \(\*.mmap\) file
 
 ![](images/Message_Mapping_Artifact_1f0d4ea.gif)
 
-<a name="loio1d52a7ba8c71438d90f3ea0d8e13a052__table_k5h_3ks_ypb"/>These are the following options available to define a message mapping artifact:
+**These are the following options available to define a message mapping artifact:**
 
 
 <table>

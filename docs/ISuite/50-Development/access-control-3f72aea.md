@@ -101,7 +101,7 @@ An example payload for the policy is as follows:
 > 
 > ```
 
-<a name="loio3f72aea270654527afb0a743fa52702a__table_o25_htp_ks"/>Element and Attribute Descriptions
+**Element and Attribute Descriptions**
 
 
 <table>
@@ -241,7 +241,7 @@ Then, all the IP Addresses with the pattern `20.10.*` are allowed to access the 
 
 During the policy execution, the following errors can occur:
 
-<a name="loio3f72aea270654527afb0a743fa52702a__table_nlm_fnz_21b"/>Error Cause
+**Error Cause**
 
 
 <table>
@@ -361,7 +361,7 @@ See fault string.
 
 Following fault variables are set when the policy triggers an error at runtime:
 
-<a name="loio3f72aea270654527afb0a743fa52702a__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

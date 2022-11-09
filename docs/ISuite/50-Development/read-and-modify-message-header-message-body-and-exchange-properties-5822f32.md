@@ -10,7 +10,7 @@ Note that data written to the message header during a processing step, for examp
 
 The following table provides examples showing how to use the Script step with this interface.
 
-<a name="loio5822f320823040af915c54a379463547__table_oxs_tm1_p4b"/>
+****
 
 
 <table>

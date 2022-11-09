@@ -14,7 +14,7 @@ By answering configurable questionnaires, you can capture the interface requirem
 
     In the following screens, provide answers to the questions, and choose the next step. The following are the sections for which questions have to be answered.
 
-    <a name="loio69b6daede23544c5bf90bac10a7c76aa__table_usj_fqx_psb"/>Details of an Interface Request Example
+    **Details of an Interface Request Example**
 
 
     <table>

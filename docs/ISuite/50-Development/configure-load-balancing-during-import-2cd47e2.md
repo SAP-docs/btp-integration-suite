@@ -34,7 +34,7 @@ You can configure load balancer and health monitor by adding the below attribute
 
 The load-balancing attributes in the sample code are defined in the table below:
 
-<a name="loio2cd47e20b62344379b0f1b09ea184b33__table_dgx_nfr_t4b"/>Load Balancer Attributes
+**Load Balancer Attributes**
 
 
 <table>
@@ -167,7 +167,7 @@ If retry is enabled, a request is sent whenever a response failure occurs, for e
 </tr>
 </table>
 
-<a name="loio2cd47e20b62344379b0f1b09ea184b33__table_fqw_vjr_t4b"/>HealthMonitor with HTTPMonitor/ TCPMonitor Configuration Attributes
+**HealthMonitor with HTTPMonitor/ TCPMonitor Configuration Attributes**
 
 
 <table>

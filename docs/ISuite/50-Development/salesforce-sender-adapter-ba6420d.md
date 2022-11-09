@@ -29,7 +29,7 @@ The *General* tab shows general information such as the adapter type, its direct
 
 Select the *Connection* tab and provide the sender information.
 
-<a name="loioba6420dc38dc4bcc96df1a28ab80af5e__table_rdc_cn3_h4b"/>Connection
+**Connection**
 
 
 <table>
@@ -283,7 +283,7 @@ Select this option to treat errors while connecting to Salesforce as events.
 
 Select the *Processing* tab and provide the recipient information.
 
-<a name="loioba6420dc38dc4bcc96df1a28ab80af5e__table_uqr_153_h4b"/>Processing
+**Processing**
 
 
 <table>

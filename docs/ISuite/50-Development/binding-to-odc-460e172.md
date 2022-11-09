@@ -35,7 +35,7 @@ You can use this procedure to bind function imports and operations of entity set
 
 3.  Enter the following information related to the ODC destination.
 
-    <a name="loio460e1727bf5f4eb3b69e6945b5758c6b__table_hzm_5gt_rw"/>
+    ****
 
 
     <table>

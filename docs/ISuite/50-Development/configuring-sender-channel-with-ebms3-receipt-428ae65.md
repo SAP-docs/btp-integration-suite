@@ -20,7 +20,7 @@ You configure with the AS4 sender adapter with ebMS3 Receipt to support non-repu
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
-<a name="loio428ae6523b61408e9014d55263a47a61__table_hmh_hsk_zdb"/>Connection
+**Connection**
 
 
 <table>
@@ -117,7 +117,7 @@ Select a role to authorize the user to access the receiving MSH endpoint.
 
 Select the *Security* tab and provide values in the fields as follows.
 
-<a name="loio428ae6523b61408e9014d55263a47a61__table_vx4_lyg_mdb"/>Security
+**Security**
 
 
 <table>
@@ -189,7 +189,7 @@ Define the public key alias or aliases to verify the signature of the AS4 messag
 
 Select the *Delivery Assurance* tab and provide values in the fields as follows.
 
-<a name="loio428ae6523b61408e9014d55263a47a61__table_vds_gd3_th"/>Delivery Assurance
+**Delivery Assurance**
 
 
 <table>
@@ -414,7 +414,7 @@ Select this option in case the messages should be stored in an encrypted way dur
 
 Select the *Conditions* tab and provide values in the fields as follows.
 
-<a name="loio428ae6523b61408e9014d55263a47a61__table_ocr_hzk_pgb"/>Conditions
+**Conditions**
 
 
 <table>

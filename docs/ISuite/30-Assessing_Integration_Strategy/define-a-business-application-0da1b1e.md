@@ -35,7 +35,7 @@ You can use SAP standard applications \(for example, SAP ERP\), or you can adjus
 
     You can specify different attributes in the following tabs.
 
-    <a name="loio0da1b1e05d4a4e769c4c2eaa7f482d79__table_a2g_rmc_nsb"/>
+    ****
 
 
     <table>

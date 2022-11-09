@@ -173,7 +173,7 @@ Syntax: `<StringValueLength>200</StringValueLength>`
 
 During the policy execution, the following errors can occur:
 
-<a name="loio952cbd7d32c342788ba699227e734547__table_sbx_lsx_lz"/>Error Code
+**Error Code**
 
 
 <table>
@@ -415,7 +415,7 @@ JSONThreatProtection\[policy\_name\]: Execution failed. reason: \[string\]
 
 Following fault variables is set when the policy triggers an error at runtime:
 
-<a name="loio952cbd7d32c342788ba699227e734547__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

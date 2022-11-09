@@ -1,4 +1,4 @@
-[![REUSE status]()]()
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-docs/btp-integration-suite)](https://api.reuse.software/info/github.com/SAP-docs/btp-integration-suite)
 
 # Contributions to SAP Integration Suite documentation
 

@@ -29,7 +29,7 @@ The Workday adapter supports the Workday SOAP API with basic authentication. Onc
 
 The General tab shows general information such as the adapter type, its direction \(receiver\), the transport protocol, and the message protocol.
 
-<a name="loio0c6e67020af9433cb09a56736d73ca76__table_rdc_cn3_h4b"/>Connection
+**Connection**
 
 
 <table>
@@ -99,7 +99,7 @@ Specify the name of the **User Credentials** artifact that contains the cred
 </tr>
 </table>
 
-<a name="loio0c6e67020af9433cb09a56736d73ca76__table_uqr_153_h4b"/>Processing
+**Processing**
 
 
 <table>

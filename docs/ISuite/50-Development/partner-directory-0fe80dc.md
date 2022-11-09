@@ -39,7 +39,7 @@ Assign the following role collection:
 
 More information on the concepts: [Partner Directory Concepts](partner-directory-concepts-f917d6e.md)
 
-<a name="loio0fe80dc9d3be4dfbbb89ee4c791d326e__table_vvw_dlf_t4b"/>
+****
 
 
 <table>
@@ -261,10 +261,9 @@ On SAP API Business Hub, you can test API calls against a sandbox tenant or agai
 
 `https://<host address>/api/v1/<relative resource path>`
 
-You can find the relative resource path for each operation on SAP API Business Hub.
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
 
-> ### Tip:  
-> To find out the Cloud Integration host address, check out the URL of your Cloud Integration Web application. This URL is composed in the following way: `https://<host address>/itspaces`.
+You can find the relative resource path for each operation on SAP API Business Hub.
 
 
 

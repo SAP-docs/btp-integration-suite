@@ -26,7 +26,7 @@ Depending on the chosen authentication, the following is checked by the test:
 
 3.  Define the attributes for the test.
 
-    <a name="loioda7dfd0f1fce401d99bca63e2de5bde1__table_d3f_sr4_pw"/>SSH Connection Test Options
+    **SSH Connection Test Options**
 
 
     <table>

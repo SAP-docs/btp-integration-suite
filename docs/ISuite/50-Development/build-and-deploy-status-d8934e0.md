@@ -10,7 +10,7 @@ For integration artifacts that have reached the worker node, another status beco
 
 There are the following status values for the build and deploy status.
 
-<a name="loiod8934e0d3ab649ecb5ae744663c7962c__table_tj3_m53_b5"/>Status Values
+**Status Values**
 
 
 <table>

@@ -51,7 +51,9 @@ POST
 -   Send the request as given in the following example.
 
     > ### Example:  
-    > For deploying an integration adapter, the URL is given in the following format: `https://<tenant url>/api/v1/DeployIntegrationAdapterDesigntimeArtifact?Id='SubsystemSymbolicName1'`
+    > For deploying an integration adapter, the URL is given in the following format: `https://<host address>/api/v1/DeployIntegrationAdapterDesigntimeArtifact?Id='SubsystemSymbolicName1'`
+
+    The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
 
 
 

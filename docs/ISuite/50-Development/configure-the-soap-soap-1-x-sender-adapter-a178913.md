@@ -49,7 +49,7 @@ Once you've created a sender channel and selected the SOAP \(SOAP 1.x\) sender A
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loioa178913a4d3245ab9bff2a0edcc331d5__table_qrt_wjr_yjb"/>General
+**General**
 
 
 <table>
@@ -89,7 +89,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loioa178913a4d3245ab9bff2a0edcc331d5__table_ayg_gb3_th"/>Connection
+**Connection**
 
 
 <table>
@@ -250,7 +250,7 @@ Name of the selected endpoint of  a selected service \(that you provide in the 
 
 Select the *WS-Security* tab and provide values in the fields as follows.
 
-<a name="loioa178913a4d3245ab9bff2a0edcc331d5__table_k1g_pxt_qx"/>WS-Security
+**WS-Security**
 
 
 <table>
@@ -505,7 +505,7 @@ See [WS-Security Configuration for the Sender SOAP 1.x Adapter](ws-security-conf
 
 Select the *Conditions* tab and provide values in the fields as follows.
 
-<a name="loioa178913a4d3245ab9bff2a0edcc331d5__d140e2996"/>Conditions
+**Conditions**
 
 
 <table>
@@ -557,7 +557,7 @@ If a message is rejected because it exceeds the configured limit, the sender rec
 
 [https://www.oasis-open.org/committees/tc\_home.php?wg\_abbrev=wss](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wss)
 
-[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
+[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
 
 [Setting Up Principal Propagation \(Example Scenario\)](../40-RemoteSystems/setting-up-principal-propagation-example-scenario-34eff84.md "Use principal propagation to forward the principal (identity of a user) across several connections in a complex system landscape.")
 
@@ -567,5 +567,5 @@ If a message is rejected because it exceeds the configured limit, the sender rec
 
 [WS-Security Configuration for the Sender SOAP 1.x Adapter](ws-security-configuration-for-the-sender-soap-1-x-adapter-e53bb5c.md "")
 
-[Setting Up Inbound HTTP Connections (Integration Flow Processing), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/778c7e7835ff46408aafe0d499720dc7.html "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.") :arrow_upper_right:
+[Setting Up Inbound HTTP Connections (Integration Flow Processing), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/778c7e7835ff46408aafe0d499720dc7.html "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.") :arrow_upper_right:
 

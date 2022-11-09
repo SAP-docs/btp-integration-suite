@@ -43,7 +43,7 @@ The *Resource Path* parameter of the OData receiver channel is specified in the 
 
 In the Postman collection, you can find the POST request `ReadUrlPath` to execute the integration flow. You can use, for example, information as:
 
-<a name="loiof0620cbc2cb94971a39135f0acb70013__table_lnx_yyb_hqb"/>Example
+**Example**
 
 
 <table>

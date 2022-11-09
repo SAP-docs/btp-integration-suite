@@ -41,7 +41,7 @@ The integration flow performs the following steps:
 
 3.  The *Write Variables* step *Store timestamp as variable* is configured in the following way \(tab *Processing*\):
 
-    <a name="loio773a7ec0b51b4857815e7e2bfb5f74ca__table_pll_xpg_ypb"/>
+    ****
 
 
     <table>
@@ -133,7 +133,7 @@ The integration flow performs the following steps:
 
 4.  The *General Splitter* is configured so that it splits the message from the WebShop so that for each customer review an individual message is created.
 
-    <a name="loio773a7ec0b51b4857815e7e2bfb5f74ca__table_hqs_3qg_ypb"/>
+    ****
 
 
     <table>
@@ -191,7 +191,7 @@ The integration flow performs the following steps:
 
 5.  The Data Store *Write* step is configured in the following way:
 
-    <a name="loio773a7ec0b51b4857815e7e2bfb5f74ca__table_jts_rqg_ypb"/>
+    ****
 
 
     <table>
@@ -274,7 +274,7 @@ The integration flow performs the following steps:
 
 2.  The Data Store *Select* step is configured in the following way:
 
-    <a name="loio773a7ec0b51b4857815e7e2bfb5f74ca__table_xxw_grg_ypb"/>
+    ****
 
 
     <table>
@@ -348,7 +348,7 @@ The integration flow performs the following steps:
     
 3.  The Content Modifier *Get timestamp and store payload* is configured in the following way \(tab *Exchange Property*\):
 
-    <a name="loio773a7ec0b51b4857815e7e2bfb5f74ca__table_fsq_bsg_ypb"/>
+    ****
 
 
     <table>
@@ -454,7 +454,7 @@ The integration flow performs the following steps:
 > 
 > To configure transaction handling for JDBC resources, click the *Integration Process* shape of your integration flow model and make sure that the following setting is configured for both integration flows \(*Processing* tab\):
 > 
-> <a name="loio773a7ec0b51b4857815e7e2bfb5f74ca__table_vzj_j2l_ypb"/>
+> ****
 > 
 > 
 > <table>

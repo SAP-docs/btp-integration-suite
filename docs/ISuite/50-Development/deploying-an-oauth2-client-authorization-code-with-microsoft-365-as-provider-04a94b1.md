@@ -25,7 +25,7 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../4
 
 3.  Specify the following attributes:
 
-    <a name="loio04a94b18dac143c8af64708252f26c04__table_mmz_35s_2y"/>
+    ****
 
 
     <table>

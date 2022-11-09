@@ -23,7 +23,7 @@ Follow the procedure below to create a company profile.
 
 4.  Under the *Overview* tab, maintain the following fields under the *Details* section
 
-    <a name="loio909d9282770e40be8dbc1904948b8627__table_xjs_hjs_kqb"/>Details
+    **Details**
 
 
     <table>
@@ -102,7 +102,7 @@ Follow the procedure below to create a company profile.
 7.  Navigate to the *Contact* tab.
 8.  Choose *Create* and provide the following information
 
-    <a name="loio909d9282770e40be8dbc1904948b8627__table_jd1_hls_kqb"/>Contact Details
+    **Contact Details**
 
 
     <table>
@@ -227,7 +227,7 @@ Follow the procedure below to create a company profile.
 13. Navigate to the *Identifier* tab and choose *Create*.
 14. In the resulting dialog box, enter the following details
 
-    <a name="loio909d9282770e40be8dbc1904948b8627__table_prd_zns_kqb"/>Identifier
+    **Identifier**
 
 
     <table>
@@ -316,7 +316,7 @@ Follow the procedure below to create a company profile.
 15. Choose *Save* and navigate to *Business Context*.
 16. Choose *Edit* and enter the following information
 
-    <a name="loio909d9282770e40be8dbc1904948b8627__table_wvl_5ts_kqb"/>Business Context
+    **Business Context**
 
 
     <table>
@@ -440,7 +440,7 @@ Follow the procedure below to create a company profile.
 26. Navigate to the *Communication* tab and choose *Create*.
 27. Maintain the following fields
 
-    <a name="loio909d9282770e40be8dbc1904948b8627__table_ffq_s11_pqb"/>Communication Details
+    **Communication Details**
 
 
     <table>
@@ -566,7 +566,7 @@ Follow the procedure below to create a company profile.
     
 28. The *Connection* appears when you choose SOAP\_1.x as the receiver adapter. Maintain the following fields:
 
-    <a name="loio909d9282770e40be8dbc1904948b8627__table_fvp_nrf_fvb"/>Connection
+    **Connection**
 
 
     <table>
@@ -622,7 +622,7 @@ Follow the procedure below to create a company profile.
     
 29. The *Security* tab appears when you choose AS2 as the sender adapter. Maintain the following fields:
 
-    <a name="loio909d9282770e40be8dbc1904948b8627__table_dhq_3v1_2vb"/>Security
+    **Security**
 
 
     <table>
@@ -747,7 +747,7 @@ Follow the procedure below to create a company profile.
     
 30. The following tabs appear when you choose AS2 receiver adapter. Maintain the following fields:
 
-    <a name="loio909d9282770e40be8dbc1904948b8627__table_zqm_zrf_fvb"/>Connection
+    **Connection**
 
 
     <table>
@@ -848,7 +848,7 @@ Follow the procedure below to create a company profile.
     
     Select the *Processing* tab and maintain the following fields:
 
-    <a name="loio909d9282770e40be8dbc1904948b8627__table_jgs_5sf_fvb"/>Processing
+    **Processing**
 
 
     <table>
@@ -952,7 +952,7 @@ Follow the procedure below to create a company profile.
     
     Select the *Security* tab and maintain the following fields:
 
-    <a name="loio909d9282770e40be8dbc1904948b8627__table_k5s_ntf_fvb"/>Security
+    **Security**
 
 
     <table>
@@ -1024,7 +1024,7 @@ Follow the procedure below to create a company profile.
     
     Select the *MDN* tab and maintain the following fields:
 
-    <a name="loio909d9282770e40be8dbc1904948b8627__table_xkw_wtf_fvb"/>MDN
+    **MDN**
 
 
     <table>
@@ -1131,7 +1131,7 @@ Follow the procedure below to create a company profile.
 32. Navigate to the *Certificate* tab and choose *Create*.
 33. Maintain the following details
 
-    <a name="loio909d9282770e40be8dbc1904948b8627__table_fht_xg5_kqb"/>Certificate
+    **Certificate**
 
 
     <table>

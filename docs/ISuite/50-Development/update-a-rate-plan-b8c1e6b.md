@@ -51,7 +51,7 @@ You are updating a rate plan.
             > ### Example:  
             > Tier based rate plan
 
-            <a name="loiob8c1e6b68be74ead8700f7f8be9baa8b__table_ttl_b4s_41b"/>Tier based rate plan
+            **Tier based rate plan**
 
 
             <table>

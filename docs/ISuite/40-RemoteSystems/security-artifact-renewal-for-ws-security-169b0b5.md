@@ -18,7 +18,7 @@ The corresponding settings on the tenant side are configured in the sender SOAP 
 
 The table below contains the security renewal use cases:
 
-<a name="loio169b0b5b16d2415590bc3ce84cc4a918__table_lgc_hmc_q4"/>Security Renewal Use Cases \(Inbound Communication\)
+**Security Renewal Use Cases \(Inbound Communication\)**
 
 
 <table>
@@ -119,7 +119,7 @@ The corresponding settings at tenant side are configured in the receiver SOAP ad
 
 The table contains the security renewal use cases:
 
-<a name="loio169b0b5b16d2415590bc3ce84cc4a918__table_ejm_bnc_q4"/>Security Renewal Use Cases \(Inbound Communication\)
+**Security Renewal Use Cases \(Inbound Communication\)**
 
 
 <table>
@@ -208,7 +208,7 @@ Tenant decrypts outbound response message.
 **Related Information**  
 
 
-[Configuring a Channel with SOAP (SOAP 1.x) Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/9b619fe82f5e4ba5b7eafde67c1548a9.html "") :arrow_upper_right:
+[Configuring a Channel with SOAP (SOAP 1.x) Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/9b619fe82f5e4ba5b7eafde67c1548a9.html "") :arrow_upper_right:
 
 [WS-Security Configuration for the Sender SOAP 1.x Adapter](../50-Development/ws-security-configuration-for-the-sender-soap-1-x-adapter-e53bb5c.md "")
 

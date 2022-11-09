@@ -238,7 +238,7 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
 
 The Keystore Monitor also gives you the following options:
 
-<a name="loio2dc8942e02de4be59bd2afaa3bfdc591__table_dcv_l5w_5sb"/>Actions
+**Actions**
 
 
 <table>
@@ -419,9 +419,9 @@ To update an artifact, see:
 
 [Certificate Management](../40-RemoteSystems/certificate-management-feb9c2f.md "")
 
-[Client Certificate Authentication and Certificate-to-User Mapping (Inbound), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/4b5afdd6bcbd4bc8a3d50d9ad2ef6482.html "This option includes an authentication step based on a digital client certificate and the mapping of the certificate to a user.") :arrow_upper_right:
+[Client Certificate Authentication and Certificate-to-User Mapping (Inbound), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/4b5afdd6bcbd4bc8a3d50d9ad2ef6482.html "This option includes an authentication step based on a digital client certificate and the mapping of the certificate to a user.") :arrow_upper_right:
 
-[Client Certificate Authentication (Inbound), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/c1eeeab4877147ffa6a5997c76eaaaca.html "This option includes an authentication step based on a digital client certificate.") :arrow_upper_right:
+[Client Certificate Authentication (Inbound), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c1eeeab4877147ffa6a5997c76eaaaca.html "This option includes an authentication step based on a digital client certificate.") :arrow_upper_right:
 
 [Client Certificate Authentication \(Outbound\)](../40-RemoteSystems/client-certificate-authentication-outbound-c4e4a15.md "")
 

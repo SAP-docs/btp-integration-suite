@@ -50,6 +50,8 @@ Therefore, you need to send the following GET request:
 
 `https://<host address>/api/v1/AlternativePartners?$filter=Agency eq 'agency1' and Scheme eq 'schema1' and Id eq 'Id1'&$select=Pid`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 As a response, you get a message that contains the following part:
 
 ```

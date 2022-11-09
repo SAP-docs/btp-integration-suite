@@ -457,22 +457,6 @@ News and Announcement. Lets you know what is new in the Integration Suite.
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-<span class="SAP-icons"></span>
-
-
-
-</td>
-<td valign="top">
-
-Take a survey to give us feedback about your experience.
-
-
-
-</td>
-</tr>
 </table>
 
 **Related Information**  

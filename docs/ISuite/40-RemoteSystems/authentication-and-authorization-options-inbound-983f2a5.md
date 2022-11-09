@@ -23,7 +23,7 @@ We use **inbound** to refer to the communication direction when a sender system 
 
 For inbound communication based on HTTPS, the authentication and authorization options can be combined in a specific way.
 
-<a name="loio983f2a5f994146ab8daff1f97d6db3dd__d41e90"/>Combination of Authentication/Authorization Options
+**Combination of Authentication/Authorization Options**
 
 
 <table>

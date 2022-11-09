@@ -117,7 +117,7 @@ If you omit this element, the value of the policy's name attribute is used.
 
 During the policy execution, the following errors can occur:
 
-<a name="loio1dee3c936b744e9897233bb5d757cf28__table_sbx_lsx_lz"/>Error Code
+**Error Code**
 
 
 <table>

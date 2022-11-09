@@ -46,7 +46,7 @@ UNB+UNOC:3+**4006501000002**:**14**+**5790000016839**:**14**+100818:0028+**0650*
 
 UNH+1+**INVOIC**:**D**:**96A**:**EN:EAN008**'
 
-<a name="loio5fc23232fe1447c09f0a17c876c63c54__d468e52"/>Value for EANCOM Document Standard
+**Value for EANCOM Document Standard**
 
 
 <table>
@@ -396,7 +396,7 @@ UNB+UNOC:3+**4006501000002**:**14**+**5790000016839**:**14**+100818:0028+**0650*
 
 UNH+1+**INVOIC**:**D**:**96A**:**UN**'
 
-<a name="loio5fc23232fe1447c09f0a17c876c63c54__d468e397"/>Value for EDIFACT Document Standard
+**Value for EDIFACT Document Standard**
 
 
 <table>
@@ -604,7 +604,7 @@ GS\*IN\*GSRESNDR\*GSRERCVR\*20030709\*0816\*12345\*X\***004010**~
 
 **810**\*0001~
 
-<a name="loio5fc23232fe1447c09f0a17c876c63c54__d468e628"/>Value for ASC-X12 Document Standard
+**Value for ASC-X12 Document Standard**
 
 
 <table>

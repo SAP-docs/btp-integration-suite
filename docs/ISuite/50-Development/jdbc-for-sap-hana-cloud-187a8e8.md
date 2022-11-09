@@ -4,7 +4,7 @@
 
 JDBC receiver adapter supports SAP HANA cloud database provided by SAP.
 
-<a name="loio187a8e8c16e44fc1bae2bfee793ab7b9__table_uqd_tph_wtb"/>Database Details
+**Database Details**
 
 
 <table>

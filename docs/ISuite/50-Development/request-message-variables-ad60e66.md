@@ -6,7 +6,7 @@ Request message variables are used in policies to access message components like
 
 API proxy applies the incoming request to a series of policies, depending on the request condition, API proxy can either modify or transform the request. Based on the content of the request variable, policies can either transform or reject the request. Supported request variables are listed in the Request Message Variables table.
 
-<a name="loioad60e664a34f485b90c1620e9c249fdb__table_uvm_g4h_qmb"/>Request Message Variables
+**Request Message Variables**
 
 
 <table>

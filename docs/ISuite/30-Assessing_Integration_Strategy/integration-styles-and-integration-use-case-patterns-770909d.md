@@ -6,7 +6,7 @@ An integration style describes a basic category or type of integration, for exam
 
 The following table shows some integration style examples and associated use case patterns.
 
-<a name="loio770909d1a3d045bd96d3e8939208eabd__table_dg4_43z_4sb"/>
+****
 
 
 <table>

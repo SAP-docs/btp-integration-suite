@@ -46,7 +46,7 @@ Configure the properties on TargetEndpoint HTTPTargetConnection elements:
 
 **TargetEndpoint Transport Property Specification**
 
-<a name="loioedeed6a4684b49ed917f0e1cc189a62d__table_x3b_kj5_xfb"/>TargetEndpoint Transport Property Specification
+**TargetEndpoint Transport Property Specification**
 
 
 <table>

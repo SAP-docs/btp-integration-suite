@@ -55,6 +55,8 @@ Send the following PUT request:
 
 `https://<host address>/api/v1/CertificateResources('6d796365727469666963617465')/$value`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 Add the certificate content with the request body \(example content\):
 
 ```

@@ -52,6 +52,8 @@ Therefore, you need to send the following GET request:
 
 `https://<host address>/api/v1/KeystoreEntries('736d74702e6d61696c2e7961686f6f2e636f6d')`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 As a response, you get a message for the keystore entry that contains the following part:
 
 ```

@@ -4,7 +4,7 @@
 
 JDBC receiver adapter supports SAP ASE Service database provided by SAP.
 
-<a name="loioa6271cca6c94457f84b5f1bcb28ccd80__table_uqd_tph_wtb"/>Database Details
+**Database Details**
 
 
 <table>

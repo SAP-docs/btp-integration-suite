@@ -14,7 +14,7 @@ The PGP Keys monitor allows a tenant administrator to manage the public and priv
 
 A list of public and secret PGP keys is displayed in a table. For each artifact, the following attributes are displayed:
 
-<a name="loiocd478a7226304ad683c2df69cf6c2a48__table_nyz_kfq_5sb"/>Attributes of PGP Keyrings
+**Attributes of PGP Keyrings**
 
 
 <table>
@@ -147,7 +147,7 @@ To sort and filter the content of the table, choose *Table Settings* \(:gear:\).
 
 ## Actions
 
-<a name="loiocd478a7226304ad683c2df69cf6c2a48__table_z5z_ghq_5sb"/>Actions
+**Actions**
 
 
 <table>

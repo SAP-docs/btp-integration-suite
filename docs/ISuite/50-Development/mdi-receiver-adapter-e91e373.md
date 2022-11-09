@@ -47,7 +47,7 @@ The adapter is available in the receiver/outbound communication channel. Once yo
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loioe91e373bbb5b49ccbc2977152def61a2__table_zgv_jdd_4tb"/>General
+**General**
 
 
 <table>
@@ -103,7 +103,7 @@ Provide an optional description for the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loioe91e373bbb5b49ccbc2977152def61a2__table_jky_wcd_4tb"/>Connection
+**Connection**
 
 
 <table>
@@ -250,7 +250,7 @@ Specify the amount of time, in seconds, that the client waits for a response bef
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loioe91e373bbb5b49ccbc2977152def61a2__table_fgm_mdd_4tb"/>Processing for Events API
+**Processing for Events API**
 
 
 <table>
@@ -334,7 +334,7 @@ In the *Looping Process Call*, provide the loop condition details that follow:
 </tr>
 </table>
 
-<a name="loioe91e373bbb5b49ccbc2977152def61a2__table_ikl_kdd_4tb"/>Processing for Requests API
+**Processing for Requests API**
 
 
 <table>
@@ -509,7 +509,7 @@ Enable if the incoming payload contains the local identifier for request API. Th
 
 Choose *Add* and provide values in the fields as follows:
 
-<a name="loioe91e373bbb5b49ccbc2977152def61a2__table_rdq_frk_4tb"/>Parameters for a Local ID
+**Parameters for a Local ID**
 
 
 <table>

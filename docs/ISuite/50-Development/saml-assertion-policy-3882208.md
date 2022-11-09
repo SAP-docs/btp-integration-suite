@@ -418,7 +418,7 @@ A boolean that can be set to true or false. When true, the SAML assertion will b
 
 The following flow variables are available after the policy is executed:
 
-<a name="loio38822081dd254309a26084e92bd3614c__table_bpm_b3j_n1b"/>Flow Variables
+**Flow Variables**
 
 
 <table>

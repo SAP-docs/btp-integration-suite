@@ -19,7 +19,7 @@ The *Content Modifier* step provides the following options for configuring how d
 
 As far as applicable for your scenario, try to implement the following measures:
 
-<a name="loio3018480fa8ba40a7a5eda8a21b11e67f__table_llw_gnn_tt"/>Recommendations
+**Recommendations**
 
 
 <table>

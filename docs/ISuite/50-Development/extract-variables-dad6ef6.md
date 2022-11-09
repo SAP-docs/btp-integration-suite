@@ -554,7 +554,7 @@ Specifies the XPath defined for the variable. Only XPath 1.0 expressions are sup
 
 During the policy execution, the following errors can occur:
 
-<a name="loiodad6ef6e8bf444819cd5e26b649bbdd2__table_nlm_fnz_21b"/>Error Cause
+**Error Cause**
 
 
 <table>
@@ -964,7 +964,7 @@ A <Pattern\> element is invalid in one of these elements: `URIPath, QueryParam, 
 
 Following fault variables are set when the policy triggers an error at runtime:
 
-<a name="loiodad6ef6e8bf444819cd5e26b649bbdd2__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

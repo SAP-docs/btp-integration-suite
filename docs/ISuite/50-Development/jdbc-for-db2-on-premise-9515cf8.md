@@ -4,7 +4,7 @@
 
 JDBC receiver adapter supports DB2 On-Premise database provided by IBM.
 
-<a name="loio9515cf8288d049479604b32836a58efe__table_uqd_tph_wtb"/>Database Details
+**Database Details**
 
 
 <table>

@@ -277,7 +277,7 @@ XML Validator
 
 This section explains the different functionalities and how they work in the simulation tool.
 
-<a name="concept_czr_ssg_xkb__table_ojt_lvg_xkb"/>Details of Simulation Functionalities
+**Details of Simulation Functionalities**
 
 
 <table>
@@ -497,7 +497,7 @@ When the simulation run is successful, the message envelope opens and you can fi
 
 During the simulation process, certain colors are familiarly associated with particular meanings.
 
-<a name="concept_blw_fr5_zkb__table_jh1_v55_zkb"/>Colors and Their Meanings in the Simulation Tool.
+**Colors and Their Meanings in the Simulation Tool.**
 
 
 <table>

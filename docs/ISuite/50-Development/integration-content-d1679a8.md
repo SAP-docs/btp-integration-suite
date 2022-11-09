@@ -24,7 +24,7 @@ Integration artifacts contain the information required for the runtime component
 
 There are more kinds of artifacts, as summarized in the table below.
 
-<a name="loiod1679a80543f46509a7329243b595bdb__table_bnp_wq3_4db"/>Integration Artifact Types
+**Integration Artifact Types**
 
 
 <table>
@@ -123,7 +123,7 @@ To authorize an API client to access the OData API, perform the steps as describ
 
 Perform the steps described at: [Setting Up Inbound HTTP Connections \(for API Clients\)](../40-RemoteSystems/setting-up-inbound-http-connections-for-api-clients-8db3d51.md) 
 
-Assign the role template as listed for the desired task \(for example, download deployed integration flow\) under [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
+Assign the role template as listed for the desired task \(for example, download deployed integration flow\) under [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
 
 To be able to maintain custom tags:
 
@@ -137,7 +137,7 @@ Assign the following role template:
 
 ## Resources
 
-<a name="loiod1679a80543f46509a7329243b595bdb__table_vvw_dlf_t4b"/>
+****
 
 
 <table>
@@ -492,8 +492,7 @@ On SAP API Business Hub, you can test API calls against a sandbox tenant or agai
 
 `https://<host address>/api/v1/<relative resource path>`
 
-You can find the relative resource path for each operation on SAP API Business Hub.
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
 
-> ### Tip:  
-> To find out the Cloud Integration host address, check out the URL of your Cloud Integration Web application. This URL is composed in the following way: `https://<host address>/itspaces`.
+You can find the relative resource path for each operation on SAP API Business Hub.
 

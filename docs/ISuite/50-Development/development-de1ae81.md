@@ -490,7 +490,7 @@ Discover the collection of B2B/A2A/B2G type systems.
 <tr>
 <td valign="top">
 
- *Design* \> *Custom Messages* 
+ *Design* \> *Custom Type Systems* 
 
 
 

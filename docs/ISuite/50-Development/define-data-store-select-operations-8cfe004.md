@@ -215,7 +215,7 @@ There is no in-order processing of data store entries. In other words, the seque
 
 To find out how a data store Select operation works, you can enhance the sample integration flow *Timer-Initiated Scenario with a Mail Receiver* with a few clicks.
 
-More information on the sample integration flow: [Timer-Initiated Scenario with a Mail Receiver](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/bfee17e150de43c9a1b363746c5a7e72.html "Create a simple integration scenario that is initiated by a timer, retrieves data from an external source, and sends the result to an e-mail account (as the receiver system).") :arrow_upper_right:
+More information on the sample integration flow: [Timer-Initiated Scenario with a Mail Receiver](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/bfee17e150de43c9a1b363746c5a7e72.html "Create a simple integration scenario that is initiated by a timer, retrieves data from an external source, and sends the result to an e-mail account (as the receiver system).") :arrow_upper_right:
 
 Enhance the sample integration flow in the following way:
 

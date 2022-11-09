@@ -27,7 +27,7 @@ The SFTP Adapter connects an SAP Cloud Integration tenant to a remote system usi
 
 The following examples show the header CamelFileName, read via XPath from the payload, or set using an expression:
 
-<a name="loioe3dce8814857444eacbcf0d3ca4e6706__d217e58"/>Example of Header
+**Example of Header**
 
 
 <table>

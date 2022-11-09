@@ -9,7 +9,7 @@ The Concurrent Rate Limit policy was designed to cater to slow backend systems, 
 
 If you’re wondering which policy to use to best meet your rate limiting needs, refer the following comparison chart:
 
-<a name="loiob70e0d26c9a14f8493e9cf90a4cdebd2__table_hds_blb_bpb"/>Comparison Between the Quota, Spike Arrest, and Concurrent Rate Limit Policy
+**Comparison Between the Quota, Spike Arrest, and Concurrent Rate Limit Policy**
 
 
 <table>

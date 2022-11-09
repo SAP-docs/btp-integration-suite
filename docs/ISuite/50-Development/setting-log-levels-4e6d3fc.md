@@ -13,7 +13,7 @@ Select your integration flow in the *Manage Integration Content* and set the log
 
 You can choose the following log levels:
 
-<a name="loio4e6d3fc3f34544f6ac5289268b653ad1__table_oyp_tgy_jsb"/>
+****
 
 
 <table>

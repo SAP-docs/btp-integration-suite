@@ -58,6 +58,8 @@ To update an Integration flow with Id `My_Integration_Flow` with the new name `M
 
 `https://<host address>/api/v1/IntegrationDesigntimeArtifacts(Id='My_Integration_Flow',Version='active')`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 Provide the following request body:
 
 ```

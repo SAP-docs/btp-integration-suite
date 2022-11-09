@@ -47,7 +47,7 @@ Once you've created a *Data Store* sender channel, you can configure the followi
 
 Go to the *General* tab to configure the following adapter parameters.
 
-<a name="loio4f5ef3f724c2480da421daa7880bb040__table_rh2_mql_yjb"/>General
+**General**
 
 
 <table>
@@ -87,7 +87,7 @@ Enter the name of the channel.
 
 Go to the *Connection* tab to configure the following adapter parameters.
 
-<a name="loio4f5ef3f724c2480da421daa7880bb040__table_dmk_khv_ksb"/>Connection
+**Connection**
 
 
 <table>

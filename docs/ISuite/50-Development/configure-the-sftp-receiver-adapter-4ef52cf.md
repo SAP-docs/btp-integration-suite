@@ -24,7 +24,7 @@ If you have configured a **receiver** SFTP adapter, message processing is perfor
 
    
   
-<a name="loio4ef52cf6c89b44219ab7c23ef8a1df31__d217e48"/>SFTP Receiver Adapter: Tenant writes file to SFTP server
+**SFTP Receiver Adapter: Tenant writes file to SFTP server**
 
  ![](images/SFTP_Receiver_Adapter_-_Tenant_writes_to_server_e380f4a.png "SFTP Receiver Adapter: Tenant writes file to SFTP server") 
 

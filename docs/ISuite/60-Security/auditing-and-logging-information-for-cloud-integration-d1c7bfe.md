@@ -6,7 +6,7 @@ Here you can find a list of the security events that are logged by Cloud Integra
 
 
 
-<a name="loiod1c7bfe00b7c448ab56d7b4d454475f9__table_dqf_pkf_p4b"/>Security Events Written in Audit Logs
+**Security Events Written in Audit Logs**
 
 
 <table>
@@ -85,7 +85,7 @@ When importing a package manually, the following events are written:
 </td>
 <td valign="top">
 
- [Working with Integration Packages](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/45423ba590094233a4c82f94390df096.html "") :arrow_upper_right: 
+ [Working with Integration Packages](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/45423ba590094233a4c82f94390df096.html "") :arrow_upper_right: 
 
 
 
@@ -118,7 +118,7 @@ Transport integration package
 </td>
 <td valign="top">
 
- [Content Transport](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/e3c79d65aa604b80992e20609881ad7a.html "Reuse content across multiple tenants. Export integration content from one (source) tenant and import it on another (target) tenant.") :arrow_upper_right: 
+ [Content Transport](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/e3c79d65aa604b80992e20609881ad7a.html "Reuse content across multiple tenants. Export integration content from one (source) tenant and import it on another (target) tenant.") :arrow_upper_right: 
 
 
 
@@ -1134,7 +1134,7 @@ For the creation of an access policy, the following event is written:
 
 [Managing Access Policies](../50-Development/managing-access-policies-7db3c87.md)
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
 
 
@@ -1181,7 +1181,7 @@ For the update of an access policy, the following event is written:
 
 [Managing Access Policies](../50-Development/managing-access-policies-7db3c87.md)
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
 
 
@@ -1235,7 +1235,7 @@ If you delete an access policy that includes artifact references, 2 logs are wri
 
 [Managing Access Policies](../50-Development/managing-access-policies-7db3c87.md)
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
 
 
@@ -1282,7 +1282,7 @@ For the creation of an artifact reference of an access policy, the following eve
 
 [Managing Access Policies](../50-Development/managing-access-policies-7db3c87.md)
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
 
 
@@ -1331,7 +1331,7 @@ For the update of an artifact reference of an access policy, the following event
 
 [Managing Access Policies](../50-Development/managing-access-policies-7db3c87.md)
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
 
 
@@ -1366,7 +1366,7 @@ Delete artifact reference \(for access policy\)
 
 [Managing Access Policies](../50-Development/managing-access-policies-7db3c87.md)
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
 
 
@@ -1805,7 +1805,7 @@ Move messages to another queue
 </td>
 <td valign="top">
 
- [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
+ [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 
 
@@ -1848,7 +1848,7 @@ Deletion of message queue `MyQueue` writes the following audit log event:
 </td>
 <td valign="top">
 
- [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
+ [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 
 
@@ -1891,7 +1891,7 @@ Deletion of a message from message queue `MyQueue` writes the following audit lo
 </td>
 <td valign="top">
 
- [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
+ [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 
 
@@ -1934,7 +1934,7 @@ Downloading a message from message queue `MyQueue` writes the following audit lo
 </td>
 <td valign="top">
 
- [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
+ [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 
 
@@ -1967,7 +1967,7 @@ Retry message from message queue
 </td>
 <td valign="top">
 
- [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
+ [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 
 

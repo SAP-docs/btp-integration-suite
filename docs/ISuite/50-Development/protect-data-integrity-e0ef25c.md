@@ -35,7 +35,7 @@ The integration flow performs the following steps.
 
     In tab *Exchange Property*, a single property is specified:
 
-    <a name="loioe0ef25c8894e45eb8a9e75e0e0bc6944__table_c3w_kz4_spb"/>
+    ****
 
 
     <table>
@@ -107,7 +107,7 @@ The integration flow performs the following steps.
 
 2.  The *Message Digest* step is configured in the following way \(*Processing* tab\):
 
-    <a name="loioe0ef25c8894e45eb8a9e75e0e0bc6944__table_urv_5z4_spb"/>
+    ****
 
 
     <table>

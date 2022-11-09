@@ -78,7 +78,7 @@ Then, the digest value of the canonicalized 'SignedInfo' is calculated. The resu
     
 4.  Enter the following parameters in the *Processing* tab to verify XML digital signature for the incoming message.
 
-    <a name="loio090b932b15d6492aaf5e953803d181bb__d750e58"/>Parameters and Values of XML Signature Verifier
+    **Parameters and Values of XML Signature Verifier**
 
 
     <table>

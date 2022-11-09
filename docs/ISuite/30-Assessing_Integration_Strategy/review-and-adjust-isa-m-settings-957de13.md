@@ -91,7 +91,7 @@ When you inspect the relevant integration technologies at a later step, Integrat
 
 For each key characteristic, the following attributes are displayed:
 
-<a name="loio957de135ee4c4d5d9778355d76760572__table_lbx_zgw_psb"/>
+****
 
 
 <table>
@@ -244,7 +244,7 @@ To review the predefined questionnaires, go to *Settings* \> *Questionnaires*.
 
 When you select a questionnaire, under *Properties*, the following metadata is displayed:
 
-<a name="loio957de135ee4c4d5d9778355d76760572__table_xnm_stk_4sb"/>
+****
 
 
 <table>

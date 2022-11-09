@@ -115,6 +115,6 @@ For more information, check out the following information:
 
 -   [Define Data Store Operations](define-data-store-operations-79f63a4.md)
 
--   [Define Transaction Handling](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/2a5d4bc3b5da46df84b26ac96450587b.html "You can configure transaction handling on integration process or local integration process level.") :arrow_upper_right:
+-   [Define Transaction Handling](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/2a5d4bc3b5da46df84b26ac96450587b.html "You can configure transaction handling on integration process or local integration process level.") :arrow_upper_right:
 
 

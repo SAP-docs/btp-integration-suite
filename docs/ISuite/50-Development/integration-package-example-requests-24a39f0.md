@@ -64,6 +64,8 @@ If the package to be imported is in zip format, it has to be converted into **ba
 > 
 > `https://<host address>/api/v1/IntegrationPackages?Overwrite=true`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 
 
 <a name="loio24a39f0a9e5b44238b194c55ec390aaa__section_wws_3k5_r4b"/>

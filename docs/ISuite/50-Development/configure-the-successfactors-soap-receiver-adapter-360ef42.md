@@ -23,7 +23,7 @@ Once you've created a receiver channel and selected the SuccessFactors \(SOAP\) 
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loio360ef42b1d4e4b86a6867b6f0adce4ce__table_umn_qmq_yjb"/>General
+**General**
 
 
 <table>
@@ -63,7 +63,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio360ef42b1d4e4b86a6867b6f0adce4ce__table_y5d_zqp_gr"/>Connection
+**Connection**
 
 
 <table>
@@ -267,7 +267,7 @@ If you choose *Manual*, you need to enter values for the fields *Proxy Host* and
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio360ef42b1d4e4b86a6867b6f0adce4ce__table_o2z_m4r_yjb"/>Processing
+**Processing**
 
 
 <table>

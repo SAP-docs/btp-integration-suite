@@ -38,7 +38,7 @@ Generate an XSD/WSDL file for a function module using the Enterprise Services Re
 **Related Information**  
 
 
-[Configuring a Channel with RFC Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/b61dbaedd4244b10b04f1be1d68c0e40.html "You can use Remote Function Call (RFC) to integrate on-premise ABAP systems with the systems hosted on the cloud using the Cloud connector.") :arrow_upper_right:
+[Configuring a Channel with RFC Receiver Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/b61dbaedd4244b10b04f1be1d68c0e40.html "You can use Remote Function Call (RFC) to integrate on-premise ABAP systems with the systems hosted on the cloud using the Cloud connector.") :arrow_upper_right:
 
 [RFC Receiver Adapter](rfc-receiver-adapter-5c76048.md "Connects an SAP Cloud Integration tenant to a remote receiver system using Remote Function Call (RFC).")
 

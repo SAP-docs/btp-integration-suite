@@ -35,7 +35,7 @@ In a parallel multicast flow step, the message is sent to multiple routes where 
 
 The first route removes all items except for flat screens using the following setting in the filter flow step \(*Processing* tab\):
 
-<a name="loio55f2d4a6f98e482ab1ec79b227030bc9__table_rgs_fvt_f5b"/>First Route
+**First Route**
 
 
 <table>
@@ -91,7 +91,7 @@ Value
 
 The second route removes all items except for notebooks using the following setting in the filter flow step \(*Processing* tab\):
 
-<a name="loio55f2d4a6f98e482ab1ec79b227030bc9__table_czb_lvt_f5b"/>Second Route
+**Second Route**
 
 
 <table>
@@ -149,7 +149,7 @@ Both routes send the filtered messages to the same receiver. So, we add an ID Ma
 
 The *ID Mapping* step of the first route is defined in the following way:
 
-<a name="loio55f2d4a6f98e482ab1ec79b227030bc9__table_zpg_pvt_f5b"/>First Route: ID Mapping
+**First Route: ID Mapping**
 
 
 <table>
@@ -253,7 +253,7 @@ Value
 
 The *ID Mapping* step of the second route is defined in the following way:
 
-<a name="loio55f2d4a6f98e482ab1ec79b227030bc9__table_zwd_vvt_f5b"/>Second Route: ID Mapping
+**Second Route: ID Mapping**
 
 
 <table>
@@ -359,7 +359,7 @@ At receiver side, the scenario uses the SOAP \(SAP RM\) receiver adapter. On the
 
 The third route removes all items except for software using the following setting in the filter flow step \(*Processing*\):
 
-<a name="loio55f2d4a6f98e482ab1ec79b227030bc9__table_zy1_jwt_f5b"/>Third Route
+**Third Route**
 
 
 <table>
@@ -422,7 +422,7 @@ The actual request reply step with the SOAP receiver adapter is put into the *Lo
 
 At the end of the third route, an *Idempotent Process Call* step sends the message to the local integration process using the following parameters:
 
-<a name="loio55f2d4a6f98e482ab1ec79b227030bc9__table_yqx_qwt_f5b"/>Message Parameters
+**Message Parameters**
 
 
 <table>
@@ -484,12 +484,12 @@ To test the scenario, perform the following steps:
 
     -   [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 
-    -   [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
+    -   [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
 
 
 2.  Deploy an artifact *User Credentials* with the following parameters using the *Monitor* application \(*Security Material* tile under *Manage Security*\).
 
-    <a name="loio55f2d4a6f98e482ab1ec79b227030bc9__table_ist_4c5_f5b"/>Message Parameters
+    **Message Parameters**
 
 
     <table>

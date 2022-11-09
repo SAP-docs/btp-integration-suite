@@ -6,7 +6,7 @@ Analyze the usage and performance of the artifacts available on the SAP Integrat
 
 The following tabs are available for each capability:
 
-<a name="loio650995cc65b4459681abfe6d89b64306__table_xmp_m2x_l5b"/>
+****
 
 
 <table>

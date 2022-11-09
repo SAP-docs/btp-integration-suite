@@ -13,7 +13,7 @@ You view the system log files by clicking *System Log Files* in the *Access Logs
 
 You can retrieve the following information from the system log file list:
 
-<a name="loio400237616c43436b86a22c179c891dd1__table_dmz_3j2_scb"/>Log Files
+**Log Files**
 
 
 <table>

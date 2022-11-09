@@ -102,7 +102,7 @@ Valid value: integer per <min\> or <sec\> or <variable\>.
 
 When a Spike Arrest policy executes, the following Flow variable is populated:
 
-<a name="loiobf441dc839034613b059cb508ad610f7__table_bnr_fjb_n1b"/>Flow Variable
+**Flow Variable**
 
 
 <table>
@@ -170,7 +170,7 @@ Indicates whether or not the policy failed \(true or false\).
 
 During the policy execution, the following errors can occur:
 
-<a name="loiobf441dc839034613b059cb508ad610f7__table_sbx_lsx_lz"/>Error Code
+**Error Code**
 
 
 <table>
@@ -270,7 +270,7 @@ The referenced variable used to specify the rate can't be resolved.
 
 Following fault variables are set when the policy triggers an error at runtime:
 
-<a name="loiobf441dc839034613b059cb508ad610f7__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

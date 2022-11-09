@@ -29,7 +29,7 @@ If you have configured a **sender** SFTP adapter, message processing is performe
 
    
   
-<a name="loio1f15fe2e8ccc4c078f099ee609f65185__d217e29"/>SFTP Sender Adapter: Tenant reads files from SFTP server
+**SFTP Sender Adapter: Tenant reads files from SFTP server**
 
  ![](images/SFTP_Sender_Adapter_-_Tenat_reads_from_server_2081741.png "SFTP Sender Adapter: Tenant reads files from SFTP server") 
 
@@ -48,7 +48,7 @@ As a prerequisite to use this adapter, you need to set up a connection to an SFT
 
 Once you have created a sender channel and selected the SFTP sender adapter, you can configure the following attributes.
 
-<a name="loio1f15fe2e8ccc4c078f099ee609f65185__table_rh2_mql_yjb"/>General
+**General**
 
 
 <table>
@@ -88,7 +88,7 @@ Enter the name of the SFTP channel.
 
 Select the *Source* tab and provide values in the fields as follows.
 
-<a name="loio1f15fe2e8ccc4c078f099ee609f65185__table_irv_hdz_25"/>Source
+**Source**
 
 
 <table>
@@ -357,7 +357,7 @@ If the property `SAP_FtpDisconnect` is defined, its value is used to specify thi
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio1f15fe2e8ccc4c078f099ee609f65185__table_ofz_dzl_fpb"/>Processing
+**Processing**
 
 
 <table>

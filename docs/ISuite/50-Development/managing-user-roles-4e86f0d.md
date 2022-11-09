@@ -24,7 +24,7 @@ In the *Monitor* view, click the *User Roles* tile in the *Manage Security* sect
 
 A list of user roles are displayed in a table. For each role, the following attributes are displayed:
 
-<a name="loio4e86f0dcb41f49e99ea43e82a0e99c73__table_nsd_bsy_yhb"/>Attributes of Custom Role-Related Entries
+**Attributes of Custom Role-Related Entries**
 
 
 <table>

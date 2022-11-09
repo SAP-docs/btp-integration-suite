@@ -32,7 +32,7 @@ When creating the channel \(see [Overview of Integration Flow Editor](overview-o
 
 The following values are displayed in the *General* tab after a channel has been established. To change the configurations, you need to configure a new channel.
 
-<a name="loio0b7cc2fe80314823a728fa73564adfab__table_nbt_4sw_jjb"/>General
+**General**
 
 
 <table>
@@ -106,7 +106,7 @@ The protocol that the message broker supports:
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio0b7cc2fe80314823a728fa73564adfab__table_j3m_1vw_jjb"/>Connection
+**Connection**
 
 
 <table>
@@ -273,7 +273,7 @@ Specify the *OAuth2 Client Credentials* artifact.
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio0b7cc2fe80314823a728fa73564adfab__table_hv2_lql_kjb"/>Processing
+**Processing**
 
 
 <table>

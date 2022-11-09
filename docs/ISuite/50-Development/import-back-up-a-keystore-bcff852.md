@@ -46,7 +46,7 @@ POST
 
 In the request body, provide the following properties:
 
-<a name="loiobcff8523ff08469396674e51f4a688e2__table_ib2_vr2_zz"/>Properties
+**Properties**
 
 
 <table>

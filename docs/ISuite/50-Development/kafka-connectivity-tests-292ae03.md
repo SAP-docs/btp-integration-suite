@@ -6,7 +6,7 @@ If you choose the Kafka Connectivity test, the test tool checks if the connectio
 
 To perform the Kafka connectivity test, you need to specify the following settings:
 
-<a name="loio292ae03c88ff4718ba7be67ed66f3729__table_yhy_fw3_jpb"/>Kafka Connectivity Options
+**Kafka Connectivity Options**
 
 
 <table>

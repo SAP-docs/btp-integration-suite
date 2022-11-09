@@ -8,7 +8,7 @@ XML Signature can be applied to any XML document.
 
 The following options for XML Signature are supported:
 
-<a name="loio9857d50b6bcc4b55aaa3432952bc3cdf__table_kpd_5jr_4k"/>Options to Apply XML Signature
+**Options to Apply XML Signature**
 
 
 <table>

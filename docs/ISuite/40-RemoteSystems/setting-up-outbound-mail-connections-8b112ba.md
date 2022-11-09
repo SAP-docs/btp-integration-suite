@@ -14,7 +14,7 @@ Using the mail receiver adapter, you can connect to mail servers through the SMT
 
 The following table lists the options for setting up secure connections. Consider the following table as a connection setup checklist. For a detailed description of the available properties for integration flow design, see the documentation of the individual adapter.
 
-<a name="loio8b112ba77c3b4896a95b711840b46627__table_y5c_tdb_fdb"/>
+****
 
 
 <table>

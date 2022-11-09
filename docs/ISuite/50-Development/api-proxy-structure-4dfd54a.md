@@ -6,7 +6,7 @@ During an import or export of an API proxy, the API proxy follows a specific pre
 
 The structure of an API proxy is as follows:
 
-<a name="loio4dfd54a7546c42cfb8dd157ab1355011__table_c1j_xbf_js"/>API Proxy Structure
+**API Proxy Structure**
 
 
 <table>

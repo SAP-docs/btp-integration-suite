@@ -14,7 +14,7 @@ It works as follows:
 
 2.  In the *Get last timestamp* Content Modifier step, the `lastSync` and `dateNow` exchange properties are specified in the following way:
 
-    <a name="loio698307ad7f924c6f8069cbaadcf24180__table_cfk_jxz_q4b"/>
+    ****
 
 
     <table>
@@ -120,7 +120,7 @@ It works as follows:
 
     The OData receiver channel contains the following details:
 
-    <a name="loio698307ad7f924c6f8069cbaadcf24180__table_j1p_kyz_q4b"/>
+    ****
 
 
     <table>

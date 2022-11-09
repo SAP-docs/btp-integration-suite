@@ -53,7 +53,7 @@ Once you have created a receiver channel and selected the IDoc adapter, you can 
 
 The *General* tab shows general information such as the adapter type, its direction \(sender or receiver\), the transport protocol, and the message protocol.
 
-<a name="loio018aa88b6d284ca2b8476b6e6053cfeb__d490e65"/>Connection
+**Connection**
 
 
 <table>

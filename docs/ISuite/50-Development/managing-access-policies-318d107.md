@@ -49,7 +49,7 @@ To restrict access via access policies, proceed as follows.
 
 2.  To create a new access policy, choose :heavy_plus_sign: and provide the details as follows:
 
-    <a name="loio318d107538644d1483c49eb97542b8da__d12e124"/>Create Access Policy.
+    **Create Access Policy.**
 
 
     <table>
@@ -107,7 +107,7 @@ To restrict access via access policies, proceed as follows.
 
 4.  To add *Artifact References* to a specific access policy, select the access policy from the list, and choose :heavy_plus_sign:. Provide the details as mentioned in the table that follows:
 
-    <a name="loio318d107538644d1483c49eb97542b8da__d12e202"/>Create Artifact References.
+    **Create Artifact References.**
 
 
     <table>
@@ -264,7 +264,7 @@ To restrict access via access policies, proceed as follows.
 
 6.  To provide users access to artifacts referenced in access policies, you have to follow the steps described in:
 
-    -   [Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right: or
+    -   [Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right: or
 
     -   [Managing Access Policies](managing-access-policies-7db3c87.md)
 

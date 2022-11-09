@@ -14,7 +14,7 @@ Using the sender mail adapter, you can connect to mail servers through the follo
 
 The following table lists the options for setting up secure connections for the different protocols. Consider the following table as a connection setup checklist. For a detailed description of the available properties for integration flow design, see the documentation of the individual adapter.
 
-<a name="loio6ad4956b4c4d484598ca9f7119313af6__table_y5c_tdb_fdb"/>
+****
 
 
 <table>

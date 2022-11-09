@@ -19,7 +19,7 @@ The mail receiver adapter opens a connection to a mail server and sends messages
  ![](images/Mail_Receiver_8c3073e.png) 
 
 > ### Note:  
-> For an example of how to configure the mail receiver adapter in a dedicated demo integration scenario, check out the following topic: [Create the Mail Receiver Channel](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/a6966fd46aef4e61ada1dcd11dadfc8b.html "Add a Mail receiver channel to enable the integration flow to send messages to an e-mail account.") :arrow_upper_right:.
+> For an example of how to configure the mail receiver adapter in a dedicated demo integration scenario, check out the following topic: [Create the Mail Receiver Channel](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a6966fd46aef4e61ada1dcd11dadfc8b.html "Add a Mail receiver channel to enable the integration flow to send messages to an e-mail account.") :arrow_upper_right:.
 > 
 > If you want to learn how to use the mail receiver adapter to send signed and/or encrypted mails, this blog is for you: [Cloud Integration - Sending Signed and/or Encrypted Mails in Mail Receiver Adapter](https://blogs.sap.com/2019/04/09/cloud-integration-sending-signed-andor-encrypted-mails-in-mail-receiver-adapter/)
 
@@ -27,7 +27,7 @@ Once you've created a receiver channel and selected the mail receiver adapter, y
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loiof68d5e03fd574f509f89474f6a6e272a__table_pnk_nrq_yjb"/>General
+**General**
 
 
 <table>
@@ -67,7 +67,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loiof68d5e03fd574f509f89474f6a6e272a__table_ayg_gb3_th"/>Connection
+**Connection**
 
 
 <table>
@@ -233,7 +233,7 @@ More information: [Deploying a User Credentials Artifact](deploying-a-user-crede
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loiof68d5e03fd574f509f89474f6a6e272a__table_ctz_s2d_wkb"/>Processing
+**Processing**
 
 
 <table>
@@ -579,7 +579,7 @@ You can choose between the following options:
 
 Select the *Security* tab and provide values in the fields as follows.
 
-<a name="loiof68d5e03fd574f509f89474f6a6e272a__table_zmj_h3c_qr"/>Security
+**Security**
 
 
 <table>

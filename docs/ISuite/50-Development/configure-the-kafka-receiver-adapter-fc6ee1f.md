@@ -29,7 +29,7 @@ Once you’ve created a receiver channel and selected the Kafka receiver adapter
 
 The following values are displayed in the *General* tab after a channel has been established. If you want to change the configurations, you need to configure a new channel.
 
-<a name="loiofc6ee1fb1c1843c195f3cc8cdbfd4b15__table_pwx_sw1_n4b"/>General
+**General**
 
 
 <table>
@@ -104,7 +104,7 @@ Select the *Connection* tab and provide values in the fields as follows:
 > ### Note:  
 > Whenever you change the connectivity settings \(Keystore or Security settings\), you need to redeploy your integration flow or restart the integration flow content for the changes to become effective.
 
-<a name="loiofc6ee1fb1c1843c195f3cc8cdbfd4b15__table_htw_xw1_n4b"/>Connection
+**Connection**
 
 
 <table>
@@ -254,7 +254,7 @@ Enter the Private Key Alias.
 
 Select the *Processing* tab and provide values in the fields as follows:
 
-<a name="loiofc6ee1fb1c1843c195f3cc8cdbfd4b15__table_wpl_ny1_n4b"/>Processing
+**Processing**
 
 
 <table>

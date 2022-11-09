@@ -35,7 +35,7 @@ OData receiver adapter supports externalization. To externalize the parameters o
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loioc5c2e38e0c87472e996dfda04920bfc4__table_qpy_zcs_yjb"/>General
+**General**
 
 
 <table>
@@ -75,7 +75,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loioc5c2e38e0c87472e996dfda04920bfc4__table_g1y_2kw_wdb"/>Connection
+**Connection**
 
 
 <table>
@@ -241,7 +241,7 @@ Keep this option selected \(default setting\). It ensures that your integration 
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loioc5c2e38e0c87472e996dfda04920bfc4__table_tkx_3mw_wdb"/>Processing
+**Processing**
 
 
 <table>
@@ -573,7 +573,7 @@ There are two main steps in this wizard:
 2.  *Select Entity and Define Operation:* In this step, you select the operation you want to perform and the entity on which you want to perform the operation on. After selecting the entity, you also select the fields, filtering and sorting conditions.
 3.  *Configure Filter & Sorting:* This step is available only for data fetch operations, where you can define the order in which the records are fetched in the response payload and filter for the fields that you require.
 
-<a name="loioc5c2e38e0c87472e996dfda04920bfc4__table_wqk_vjl_xdb"/>Connect to System
+**Connect to System**
 
 
 <table>
@@ -703,7 +703,7 @@ For other authentication types, download the EDMX from the service and use the *
 </tr>
 </table>
 
-<a name="loioc5c2e38e0c87472e996dfda04920bfc4__table_h45_knl_xdb"/>Select Entity & Define Operation
+**Select Entity & Define Operation**
 
 
 <table>
@@ -864,7 +864,7 @@ For more information, see **Skip System Query Option \($skip\)** in [OData V2 UR
 
 This step is available only for data fetch operations, *Query\(GET\), and* *Read\(GET\)*.
 
-<a name="loioc5c2e38e0c87472e996dfda04920bfc4__table_gbn_y3m_xdb"/>Configure Filter & Sorting
+**Configure Filter & Sorting**
 
 
 <table>

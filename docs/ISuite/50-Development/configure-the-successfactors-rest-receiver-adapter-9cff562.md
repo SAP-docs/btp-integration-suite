@@ -21,7 +21,7 @@ Once you have created a receiver channel and selected the SuccessFactors \(REST\
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loio9cff562cd220458db0aca97ac24887a0__table_jts_31r_yjb"/>General
+**General**
 
 
 <table>
@@ -61,7 +61,7 @@ Enter the name of the channel.
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio9cff562cd220458db0aca97ac24887a0__table_tpv_yxp_gr"/>Processing
+**Processing**
 
 
 <table>

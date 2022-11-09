@@ -18,7 +18,7 @@ Once you have created a receiver channel and selected the Dropbox sender adapter
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loio16ef7b42f5084db28fd2644a0825ec87__table_qcd_nn1_xlb"/>General
+**General**
 
 
 <table>
@@ -58,7 +58,7 @@ Enter the name of the Dropbox channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio16ef7b42f5084db28fd2644a0825ec87__table_llw_gll_vrb"/>General
+**General**
 
 
 <table>
@@ -118,7 +118,7 @@ You can use property `SAP_DropboxTimeout` to dynamically define the value. In th
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio16ef7b42f5084db28fd2644a0825ec87__table_pz5_mll_vrb"/>General
+**General**
 
 
 <table>

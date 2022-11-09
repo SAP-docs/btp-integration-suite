@@ -11,7 +11,7 @@ The message processing log comprises a log header and log steps. In the log head
 
 The log header shows the following properties:
 
-<a name="loio718309ae651b452ea750b3abe2297a7b__table_z5m_syv_1cb"/>MPL Header
+**MPL Header**
 
 
 <table>
@@ -329,7 +329,7 @@ The log steps show the following properties:
 
 ![](images/MLPSteps2_691f0e8.png)
 
-<a name="loio718309ae651b452ea750b3abe2297a7b__table_inj_yfc_bcb"/>MPL Steps
+**MPL Steps**
 
 
 <table>

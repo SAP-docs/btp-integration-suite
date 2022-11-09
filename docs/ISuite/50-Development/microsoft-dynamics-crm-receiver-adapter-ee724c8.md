@@ -50,7 +50,7 @@ Once you’ve created a receiver channel and selected the Microsoft Dynamics CRM
 
 The General tab shows general information such as the adapter type, its direction \(receiver\), the transport protocol, and the message protocol.
 
-<a name="loioee724c8672834041a26413d94dfdb042__table_uh2_mb1_h4b"/>Connection
+**Connection**
 
 
 <table>
@@ -120,7 +120,7 @@ Specifies the name of the User Credentials artifact that contains the credential
 </tr>
 </table>
 
-<a name="loioee724c8672834041a26413d94dfdb042__table_tl2_bc1_h4b"/>Processing
+**Processing**
 
 
 <table>

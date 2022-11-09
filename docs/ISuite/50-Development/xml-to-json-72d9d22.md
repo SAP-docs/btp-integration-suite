@@ -769,7 +769,7 @@ Output:
 
 During the policy execution, the following errors can occur:
 
-<a name="loio72d9d22ae143415381cc717f6b406dab__table_sbx_lsx_lz"/>Error Code
+**Error Code**
 
 
 <table>
@@ -984,7 +984,7 @@ See the fault string.
 
 Following fault variables is set when the policy triggers an error at runtime:
 
-<a name="loio72d9d22ae143415381cc717f6b406dab__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

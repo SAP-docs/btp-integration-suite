@@ -42,7 +42,7 @@ To enable the sender system to authenticate itself against the integration platf
 
 The following figure provides an overview of the involved security artifacts and storage locations.
 
-<a name="loio2c4c2d98e9de4b92a3b3af2ba9483909__table_inh_14j_4m"/>Certificates for Inbound Message Processing
+**Certificates for Inbound Message Processing**
 
 
 <table>
@@ -132,7 +132,7 @@ Based on this setup of keys and OAuth credentials, the communication is establis
 **Related Information**  
 
 
-[Using Custom IDP with SAP Cloud Integration](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/c59610d483974fcda631af4a2aae586b.html "") :arrow_upper_right:
+[Using Custom IDP with SAP Cloud Integration](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c59610d483974fcda631af4a2aae586b.html "") :arrow_upper_right:
 
 [Basic Authentication with clientId and clientsecret for Integration Flow Processing](basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md "Use this procedure to connect a sender system to SAP Cloud Integration")
 

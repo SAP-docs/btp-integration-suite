@@ -34,7 +34,7 @@ You can now enter regular expressions for the headers that are to be added. With
 
 The following table summarizes how the *Encoder* step transforms the message depending on whether you select or deselect the option *Add Multipart Header Inline*.
 
-<a name="loio38165374a3b64ae9ba3e273a2742da1a__table_zkk_5ls_sv"/>Encoder: Add Multipart Header Inline Option
+**Encoder: Add Multipart Header Inline Option**
 
 
 <table>
@@ -101,13 +101,13 @@ The following figures illustrate how the property *Add Multipart Header Inline* 
 
    
   
-<a name="loio38165374a3b64ae9ba3e273a2742da1a__fig_vcs_frr_5y"/>*Add Multipart Header Inline* Selected
+**Add Multipart Header Inline Selected**
 
  ![](images/MIME_Multipart_Encoder_-_selected_5da7b8c.png "Add Multipart Header Inline Selected") 
 
    
   
-<a name="loio38165374a3b64ae9ba3e273a2742da1a__fig_ycv_rrr_5y"/>*Add Multipart Header Inline* Deselected
+**Add Multipart Header Inline Deselected**
 
  ![](images/MIME_Multipart_Encoder_-_deselected_d2417ef.png "Add Multipart Header Inline Deselected") 
 
@@ -115,7 +115,7 @@ The following figures illustrate how the property *Add Multipart Header Inline* 
 
 The following table summarizes how the *Decoder* step transforms the message depending on whether you select or deselect the option *Multipart Headers Inline*.
 
-<a name="loio38165374a3b64ae9ba3e273a2742da1a__table_ty5_dns_sv"/>Decoder: Multipart Headers Inline Option
+**Decoder: Multipart Headers Inline Option**
 
 
 <table>

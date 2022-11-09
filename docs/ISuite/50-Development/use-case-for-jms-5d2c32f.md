@@ -22,5 +22,5 @@ Integration flow 2 can process multiple messages in parallel. That way, the perf
 > ### Tip:  
 > If you like to set up a simple example scenario using JMS queues, check out [Apply the Retry Pattern with JMS Queue](apply-the-retry-pattern-with-jms-queue-da17d2d.md).
 
-For more information on JMS sender and receiver adapter, see [JMS Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:.
+For more information on JMS sender and receiver adapter, see [JMS Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:.
 

@@ -22,7 +22,7 @@ The following table provides examples of how to use the Script step with these i
 > ### Caution:  
 > The sample scripts store security-related information \(for example, a key\) as a header or exchange property. Note that is not a good practice when designing a productive scenario. The reason is that when you store sensible information as a header or property, you take the risk of exposing this data accidentally. For example, a header can be sent to a receiver system if you don't take actions to prevent this. Therefore, use these example scripts for demo or testing purposes only.
 
-<a name="loio8dd981e4f1f44d22bee22c174e5c52d0__table_oxs_tm1_p4b"/>
+****
 
 
 <table>

@@ -4,7 +4,7 @@
 
 
 
-<a name="loio733a57b10f504ac9b2b5aa7fda664dc5__d766e18"/>Message Status
+**Message Status**
 
 
 <table>
@@ -164,7 +164,7 @@ Message processing was interrupted or log wasn't updated for an uncommonly long 
 
 An aggregated message processing log \(MPL\) can have the following status values:
 
-<a name="loio733a57b10f504ac9b2b5aa7fda664dc5__d766e128"/>Status of Aggregated Messages
+**Status of Aggregated Messages**
 
 
 <table>

@@ -55,7 +55,7 @@ The integration flow performs the following steps:
 
 3.  The Content Modifier *write Pid in Header* defines the following headers based on information stored in the Partner Directory. The `PartnerId` property defined in the previous step is used to define the following headers:
 
-    <a name="loioc6bf239803be452789d7f5ea75e59c7d__table_g2p_w2w_2mb"/>
+    ****
 
 
     <table>
@@ -140,7 +140,7 @@ The integration flow performs the following steps:
 
     The headers are defined with the following expressions:
 
-    <a name="loioc6bf239803be452789d7f5ea75e59c7d__table_jfg_clv_2mb"/>
+    ****
 
 
     <table>

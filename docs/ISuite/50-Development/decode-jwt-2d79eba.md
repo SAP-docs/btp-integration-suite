@@ -62,7 +62,7 @@ If present, specifies the flow variable in which the policy expects to find the 
 
 The following flow variables are available after the policy is executed:
 
-<a name="loio2d79eba55e9740db8e6b075b3c5901f4__table_vqn_tb4_c3b"/>Flow Variables
+**Flow Variables**
 
 
 <table>
@@ -392,7 +392,7 @@ Header in JSON format.
 
 During the policy execution, the following errors can occur:
 
-<a name="loio2d79eba55e9740db8e6b075b3c5901f4__table_nlm_fnz_21b"/>Error Cause
+**Error Cause**
 
 
 <table>
@@ -448,7 +448,7 @@ Occurs when the flow variable specified in the <Source\> element of the policy i
 
 The following fault variables are set when the policy triggers an error at runtime:
 
-<a name="loio2d79eba55e9740db8e6b075b3c5901f4__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

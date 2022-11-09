@@ -6,7 +6,7 @@ Cloud Integration supports a subset of the expressions defined in Camel Simple E
 
 You can use Camel Simple Expression Language when configuring the following components:
 
-<a name="loio4688083fad6546c1ba25a06d4ffb9fae__table_ys5_zfd_nsb"/>Components that Support Camel Simple Expression Language
+**Components that Support Camel Simple Expression Language**
 
 
 <table>
@@ -150,7 +150,7 @@ To see some examples, see [Examples](examples-eb2e601.md).
 
 The following table lists the expressions from Camel Simple Expression Language that are supported by the content modifier and write variables step.
 
-<a name="loio4688083fad6546c1ba25a06d4ffb9fae__table_gx4_xnz_qsb"/>
+****
 
 
 <table>

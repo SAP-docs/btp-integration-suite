@@ -37,7 +37,7 @@ Use the *ebMS3 Push* message protocol to transmit AS4 message.
 
 Select the *Connection*tab and provide values in the fields as follows.
 
-<a name="loio449f6e94db044b44864a4878c08237d5__table_hmh_hsk_zdb"/>Configure the Connection Details of the Receiving MSH
+**Configure the Connection Details of the Receiving MSH**
 
 
 <table>
@@ -195,7 +195,7 @@ Enable if you want to compress the message.
 
 Select the *Processing*tab and provide values in the fields as follows.
 
-<a name="loio449f6e94db044b44864a4878c08237d5__table_ksp_3qg_mdb"/>Processing
+**Processing**
 
 
 <table>
@@ -427,7 +427,7 @@ Define a key and value to modify the payload attached to AS4 message.
 
 Select the *Security* tab and provide values in the fields as follows.
 
-<a name="loio449f6e94db044b44864a4878c08237d5__table_vx4_lyg_mdb"/>Security
+**Security**
 
 
 <table>
@@ -613,7 +613,7 @@ The valid values are:
 
 Select the *Receipt* tab and provide values in the fields as follows.
 
-<a name="loio449f6e94db044b44864a4878c08237d5__table_uhm_wd4_zjb"/>Receipt
+**Receipt**
 
 
 <table>

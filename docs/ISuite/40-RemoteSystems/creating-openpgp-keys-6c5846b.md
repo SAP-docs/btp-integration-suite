@@ -17,7 +17,7 @@ The following table lists the possible use cases and the required kinds of keys.
 > ### Note:  
 > As soon as you start gpg4win, files are created for the PGP Public Keyring and PGP Secret Keyring.
 
-<a name="loio6c5846bbe10a4d258507443108f68301__table_sm4_2r5_d4"/>OpenPGP Keys for the Tenant
+**OpenPGP Keys for the Tenant**
 
 
 <table>

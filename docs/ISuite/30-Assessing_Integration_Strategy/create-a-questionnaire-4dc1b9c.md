@@ -16,7 +16,7 @@ To create a new questionnaire under *Settings* tab, do the following:
 
 5.  From the dropdown, select one of the following options:
 
-    <a name="loio4dc1b9cbe4af4715b53ba944f59344c3__table_qhy_blt_qsb"/>
+    ****
 
 
     <table>
@@ -114,7 +114,7 @@ To create a new questionnaire under *Settings* tab, do the following:
 
     You can choose from the following answer sources:
 
-    <a name="loio4dc1b9cbe4af4715b53ba944f59344c3__table_tlm_rnt_qsb"/>
+    ****
 
 
     <table>

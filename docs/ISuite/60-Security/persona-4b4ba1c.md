@@ -16,7 +16,7 @@ Personas cover the different tasks associated with an integration project. To as
 > 
 > -   In the Cloud Foundry environment, a persona is realized by role collection.
 
-<a name="copy4b4ba1c553474259b5be661f4ef0702c__table_wnh_gpy_4k"/>Authorization Groups
+**Authorization Groups**
 
 
 <table>
@@ -297,7 +297,7 @@ In order to enable a sender system to process messages on Cloud Integration Usin
 > 
 > Depending on the chosen inbound authorization option, you define permissions for sender systems to call integration flow endpoints in different ways:
 > 
-> <a name="copy4b4ba1c553474259b5be661f4ef0702c__d503e279"/>
+> ****
 > 
 > 
 > <table>
@@ -373,5 +373,5 @@ In order to enable a sender system to process messages on Cloud Integration Usin
 **Related Information**  
 
 
-[Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+[Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
 

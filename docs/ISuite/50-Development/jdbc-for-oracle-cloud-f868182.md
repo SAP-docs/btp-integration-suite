@@ -4,7 +4,7 @@
 
 JDBC receiver adapter supports Oracle cloud database provided by Amazon RDS.
 
-<a name="loiof86818219a954c829bd847e323ecb23d__table_uqd_tph_wtb"/>Database Details
+**Database Details**
 
 
 <table>

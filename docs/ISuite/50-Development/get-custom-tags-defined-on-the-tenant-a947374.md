@@ -62,6 +62,8 @@ Send the following GET request:
 
 `https://<host address>/api/v1/CustomTagConfigurations('CustomTags')/$value`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 If a mandatory custom tag with name *Author* is defined on the tenant, you get the following response:
 
 ```

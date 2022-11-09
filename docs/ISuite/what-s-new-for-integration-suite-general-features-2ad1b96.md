@@ -1,14 +1,12 @@
 <!-- loio2ad1b9607e6348bdb131703f79da21e0 -->
 
-# What's New
+# What's New for Integration Suite General Features
 
 
 
 
 
-Find out about the new features and functionality specific to the SAP Integration Suite. To know about the new features and functionality for the capabilites, see [What's New in SAP Integration Suite](https://help.sap.com/whats-new/5793247a5d5741beb0decc5b7dee1160?locale=en-US&version=CLOUD).
-
-<a name="loio2ad1b9607e6348bdb131703f79da21e0__wnv_table"/>2022
+**2022**
 
 
 <table>
@@ -101,7 +99,7 @@ Available as of
 <tr>
 <td valign="top">
 
-Integration Suite
+Integration Suite General Features
 
 
 
@@ -115,14 +113,14 @@ Integration Suite
 </td>
 <td valign="top">
 
-Feedback survey.
+Provide feedback and contribute content on GitHub.
 
 
 
 </td>
 <td valign="top">
 
-A survey icon is available on the top toolbar for you to share your feedback.
+You can now actively contribute to this guide by giving feedback via Github. The new Feedback functionality on the SAP Help Portal allows you to provide feedback to responsible authors and the development team and discuss documentation-related issues. You will need a GitHub account to use this feature. See, [What is SAP Integration Suite?](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/5cc6987511104c418b7cb4c25f3d9cb0.html?version=CLOUD) and [SAP BTP Documentation Goes GitHub: Learn About Our New Collaboration Process](https://www.youtube.com/watch?v=WJ0oarMlVW4).
 
 
 
@@ -143,14 +141,14 @@ General Availability
 </td>
 <td valign="top">
 
-New
+Announcement
 
 
 
 </td>
 <td valign="top">
 
-Technology
+Service
 
 
 
@@ -164,19 +162,21 @@ Not applicable
 </td>
 <td valign="top">
 
-Integration Suite
+SAP Business Technology Platform
 
 
 
 </td>
 <td valign="top">
 
+2022-11-07
+
 
 
 </td>
 <td valign="top">
 
-2022-10-29
+2022-11-07
 
 
 

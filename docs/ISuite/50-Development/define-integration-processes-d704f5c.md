@@ -8,7 +8,7 @@ An integration flow template contains the following shapes: *Sender* \(this repr
 
 The following values are displayed in the *General* tab.
 
-<a name="loiod704f5cafb194f059198656d8a1b4c6a__table_nbt_4sw_jjb"/>General
+**General**
 
 
 <table>
@@ -48,7 +48,7 @@ If you want to provide a name for the integration process, enter a name here. Th
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loiod704f5cafb194f059198656d8a1b4c6a__table_j3m_1vw_jjb"/>Transaction Management
+**Transaction Management**
 
 
 <table>
@@ -88,7 +88,7 @@ Select the relevant transactional database processing:
 
 
 > ### Note:  
-> See [Defining Transaction Handling](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/2a5d4bc3b5da46df84b26ac96450587b.html "You can configure transaction handling on integration process or local integration process level.") :arrow_upper_right: for more information.
+> See [Defining Transaction Handling](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/2a5d4bc3b5da46df84b26ac96450587b.html "You can configure transaction handling on integration process or local integration process level.") :arrow_upper_right: for more information.
 
 
 

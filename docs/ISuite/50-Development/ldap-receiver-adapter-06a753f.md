@@ -63,7 +63,7 @@ Once you've created a receiver channel and selected the LDAP Receiver Adapter, y
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loio06a753f90fd64272af1692603cdd3b9e__table_m23_ykq_yjb"/>General
+**General**
 
 
 <table>
@@ -103,7 +103,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio06a753f90fd64272af1692603cdd3b9e__table_x2n_nbp_xjb"/>Connection
+**Connection**
 
 
 <table>
@@ -207,7 +207,7 @@ Enter the credential name you've deployed in the tenant.
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio06a753f90fd64272af1692603cdd3b9e__table_ct1_wbp_xjb"/>Processing
+**Processing**
 
 
 <table>
@@ -272,7 +272,7 @@ Provide the *Distinguished Name* of the objectClass that you want to delete.
 
 ### *Modify*
 
-<a name="loio06a753f90fd64272af1692603cdd3b9e__table_okw_43f_hqb"/>Modify
+**Modify**
 
 
 <table>
@@ -420,7 +420,7 @@ Enable checkbox to pick up modification item from the XML attribute '*<modificat
 
 ### *Search*
 
-Search
+**Search**
 
 
 <table>

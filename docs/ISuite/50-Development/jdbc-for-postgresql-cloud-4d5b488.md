@@ -4,7 +4,7 @@
 
 JDBC receiver adapter supports PostgreSQL cloud database provided by Amazon RDS and Microsoft Azure.
 
-<a name="loio4d5b488b4f394c51974ea8cb520e6d92__table_uqd_tph_wtb"/>Database Details
+**Database Details**
 
 
 <table>

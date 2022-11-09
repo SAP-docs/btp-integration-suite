@@ -283,7 +283,7 @@ The cache specified in the <CacheResource\> element does not exist.
 
 Following fault variables is set when the policy triggers an error at runtime:
 
-<a name="loio17d6ad5ceb944c20ac26291c0698e0ea__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

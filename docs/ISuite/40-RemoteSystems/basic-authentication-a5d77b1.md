@@ -32,7 +32,7 @@ Basic authentication for HTTPS-based outbound calls works the following way:
 
 ## Required Security Material
 
-<a name="loioa5d77b12ff16483c965cce936aa1b698__table_pbl_sqj_4m"/>Certificates for Outbound Message Processing
+**Certificates for Outbound Message Processing**
 
 
 <table>

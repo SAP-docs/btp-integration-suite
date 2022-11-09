@@ -14,7 +14,7 @@ You can create a script step that is specific to an integration artifact to exec
 
 Groovy Script and JavaScript are supported with the following versions.
 
-<a name="loio03b32eb2c5c249f0a59bcd27c44d1e4e__table_j31_pkf_2jb"/>Version Details
+**Version Details**
 
 
 <table>

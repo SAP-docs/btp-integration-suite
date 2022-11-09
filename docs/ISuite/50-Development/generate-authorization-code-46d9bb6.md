@@ -48,7 +48,7 @@ This policy needs to be attached to the response to generate the authorization c
 
 These variables are set when the GenerateAuthorizationCode policy operation executes successfully:
 
-<a name="loio46d9bb6a604d4056b8815d2daf6e0d8e__table_tcx_h35_h1b"/>Authorization Code
+**Authorization Code**
 
 
 <table>

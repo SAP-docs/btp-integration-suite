@@ -78,7 +78,7 @@ XPath Expression
 
 A *Content Modifier* stores the 'productIdentifier' in the productID exchange property. This property is needed in the *Request Reply step*.
 
-<a name="loio604f7b106328476c909d02f6724260a6__table_olf_f52_knb"/>XPath Expression
+**XPath Expression**
 
 
 <table>

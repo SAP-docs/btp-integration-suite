@@ -56,7 +56,7 @@ Therefore, apply the following measures when designing integration flows for sec
 > ### Tip:  
 > Instead of using the predefined authorization groups, you can tailor the permissions to your own requirements by applying elementary roles that are defined for individual tasks.
 > 
-> More information: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+> More information: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
 
 
 

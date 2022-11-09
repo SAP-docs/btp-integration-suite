@@ -4,7 +4,7 @@
 
 Here you can find a list of the security events that are logged by Trading Partner Management.
 
-<a name="loio0503127ec9b84d669d06c964fc42ca60__table_yqw_bc4_nrb"/>Security Events Written in Audit Logs
+**Security Events Written in Audit Logs**
 
 
 <table>

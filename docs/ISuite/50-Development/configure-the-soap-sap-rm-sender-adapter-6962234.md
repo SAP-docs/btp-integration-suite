@@ -27,7 +27,7 @@ Once you have created a sender channel and selected the SOAP \(SAP RM\) sender a
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio69622346a10c4d5086a9b3e4f052337a__table_vds_gd3_th"/>Connection
+**Connection**
 
 
 <table>
@@ -126,7 +126,7 @@ Select the *Conditions* tab and provide values in the fields as follows.
 > 
 > If you want to set SOAP headers via the Camel header, the following table shows which Camel header corresponds to which SOAP header.
 > 
-> <a name="loio69622346a10c4d5086a9b3e4f052337a__table_p3z_bbl_wjb"/>Which Camel header corresponds to which SOAP header
+> **Which Camel header corresponds to which SOAP header**
 > 
 > 
 > <table>
@@ -237,7 +237,7 @@ Select the *Conditions* tab and provide values in the fields as follows.
 
 [https://wiki.scn.sap.com/wiki/display/ABAPConn/Plain+SOAP?original\_fqdn=wiki.sdn.sap.com](https://wiki.scn.sap.com/wiki/display/ABAPConn/Plain+SOAP?original_fqdn=wiki.sdn.sap.com)
 
-[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
+[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
 
-[Setting Up Inbound HTTP Connections (Integration Flow Processing), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/778c7e7835ff46408aafe0d499720dc7.html "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.") :arrow_upper_right:
+[Setting Up Inbound HTTP Connections (Integration Flow Processing), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/778c7e7835ff46408aafe0d499720dc7.html "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.") :arrow_upper_right:
 

@@ -21,7 +21,7 @@ Follow the procedure below to create a trading partner profile
 2.  Choose *Create* to add a new trading partner.
 3.  Under the *Overview* tab, maintain the following fields under the *Details* section
 
-    <a name="loio542fb116e71641e3a0d8ddb130447376__table_xjs_hjs_kqb"/>Details
+    **Details**
 
 
     <table>
@@ -100,7 +100,7 @@ Follow the procedure below to create a trading partner profile
 6.  Navigate to the *Contact* tab.
 7.  Choose Create and provide the following information
 
-    <a name="loio542fb116e71641e3a0d8ddb130447376__table_jd1_hls_kqb"/>Contact Details
+    **Contact Details**
 
 
     <table>
@@ -222,7 +222,7 @@ Follow the procedure below to create a trading partner profile
 9.  Navigate to the *Identifier* tab and choose *Create*.
 10. In the resulting dialog box, enter the following details
 
-    <a name="loio542fb116e71641e3a0d8ddb130447376__table_prd_zns_kqb"/>Identifier
+    **Identifier**
 
 
     <table>
@@ -311,7 +311,7 @@ Follow the procedure below to create a trading partner profile
 11. Choose *Save* and navigate to *Business Context*.
 12. Choose *Edit* and enter the following information
 
-    <a name="loio542fb116e71641e3a0d8ddb130447376__table_wvl_5ts_kqb"/>Business Context
+    **Business Context**
 
 
     <table>
@@ -419,7 +419,7 @@ Follow the procedure below to create a trading partner profile
 22. Navigate to the *Communication* tab and choose *Create*.
 23. Maintain the following fields
 
-    <a name="loio542fb116e71641e3a0d8ddb130447376__table_ffq_s11_pqb"/>Communication Details
+    **Communication Details**
 
 
     <table>
@@ -545,7 +545,7 @@ Follow the procedure below to create a trading partner profile
     
 24. The *Connection* tab appears when you choose SOAP\_1.x as the receiver adapter. Maintain the following fields:
 
-    <a name="loio542fb116e71641e3a0d8ddb130447376__table_fvp_nrf_fvb"/>Connection
+    **Connection**
 
 
     <table>
@@ -601,7 +601,7 @@ Follow the procedure below to create a trading partner profile
     
 25. The *Security* tab appears when you choose AS2 as the sender adapter. Maintain the following fields:
 
-    <a name="loio542fb116e71641e3a0d8ddb130447376__table_dhq_3v1_2vb"/>Security
+    **Security**
 
 
     <table>
@@ -726,7 +726,7 @@ Follow the procedure below to create a trading partner profile
     
 26. The following tabs appear when you choose AS2 receiver adapter. Maintain the following fields:
 
-    <a name="loio542fb116e71641e3a0d8ddb130447376__table_zqm_zrf_fvb"/>Connection
+    **Connection**
 
 
     <table>
@@ -827,7 +827,7 @@ Follow the procedure below to create a trading partner profile
     
     Select the *Processing* tab and maintain the following fields:
 
-    <a name="loio542fb116e71641e3a0d8ddb130447376__table_jgs_5sf_fvb"/>Processing
+    **Processing**
 
 
     <table>
@@ -931,7 +931,7 @@ Follow the procedure below to create a trading partner profile
     
     Select the *Security* tab and maintain the following fields:
 
-    <a name="loio542fb116e71641e3a0d8ddb130447376__table_k5s_ntf_fvb"/>Security
+    **Security**
 
 
     <table>
@@ -1003,7 +1003,7 @@ Follow the procedure below to create a trading partner profile
     
     Select the *MDN* tab and maintain the following fields:
 
-    <a name="loio542fb116e71641e3a0d8ddb130447376__table_xkw_wtf_fvb"/>MDN
+    **MDN**
 
 
     <table>
@@ -1110,7 +1110,7 @@ Follow the procedure below to create a trading partner profile
 28. Navigate to the *Certificate* tab and choose *Create*.
 29. Maintain the following details
 
-    <a name="loio542fb116e71641e3a0d8ddb130447376__table_fht_xg5_kqb"/>Certificate
+    **Certificate**
 
 
     <table>

@@ -16,7 +16,7 @@ It works as follows:
 
 2.  In the *Get last timestamp* Content Modifier step, the `dateNow` exchange property is specified in the following way:
 
-    <a name="loio28a600620386493994b971299f220c00__table_cfk_jxz_q4b"/>
+    ****
 
 
     <table>
@@ -90,7 +90,7 @@ It works as follows:
 
     The OData receiver channel contains the following details:
 
-    <a name="loio28a600620386493994b971299f220c00__table_j1p_kyz_q4b"/>
+    ****
 
 
     <table>

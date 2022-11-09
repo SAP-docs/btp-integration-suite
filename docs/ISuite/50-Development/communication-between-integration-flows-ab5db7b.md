@@ -21,7 +21,7 @@ Furthermore, consider that there are two types of calls:
     The client waits for the response of the called endpoint before continuing with the next step.
 
 
-<a name="loioab5db7bc67c1429ab3b14a724344efce__table_yvh_tpw_bsb"/>
+****
 
 
 <table>
@@ -124,7 +124,7 @@ You can use the ProcessDirect adapter to synchronously connect 2 integration flo
         > ### Note:  
         > A worker node is the component that processes messages at runtime.
         > 
-        > More information: [Runtime in Detail](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/bdbc3f0224864ad5b163355ec537f6c6.html "For different customers, separate resources (in terms of: memory, CPU, file system) of the cloud-based integration platform are allocated – although all customers share the same hardware. This concept is also referred to as tenant isolation.") :arrow_upper_right:
+        > More information: [Runtime in Detail](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/bdbc3f0224864ad5b163355ec537f6c6.html "For different customers, separate resources (in terms of: memory, CPU, file system) of the cloud-based integration platform are allocated – although all customers share the same hardware. This concept is also referred to as tenant isolation.") :arrow_upper_right:
 
 
 -   Disadvantage
@@ -183,7 +183,7 @@ In an asynchronous scenario, the calling integration flow doesn't wait for the r
 
 More information:
 
--   [JMS Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:
+-   [JMS Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:
 
 -   [Apply the Retry Pattern with JMS Queue](apply-the-retry-pattern-with-jms-queue-da17d2d.md)
 

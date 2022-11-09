@@ -12,7 +12,7 @@ After enabling the Cloud Integration capability, you need to configure the servi
 
     You can use the following tabs to specify different settings:
 
-    <a name="loiode929c6614fa4cd4a3d9797de8ebc8a9__table_oyx_pn2_4tb"/>
+    ****
 
 
     <table>

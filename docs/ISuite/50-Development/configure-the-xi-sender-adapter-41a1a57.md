@@ -63,7 +63,7 @@ When you've created a sender channel \(with XI adapter selected\), you can confi
 
 Select the *General* tab and provide values in the field as follows.
 
-<a name="loio41a1a57bf54644d1bd351ca689cf531d__table_pnk_nrq_yjb"/>General
+**General**
 
 
 <table>
@@ -103,7 +103,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio41a1a57bf54644d1bd351ca689cf531d__table_ahv_pc4_hx"/>Connection
+**Connection**
 
 
 <table>
@@ -211,7 +211,7 @@ Depending on your choice, you can also specify one of the following properties:
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio41a1a57bf54644d1bd351ca689cf531d__table_fdt_zb3_xkb"/>Processing
+**Processing**
 
 
 <table>
@@ -264,7 +264,7 @@ Description
 
 Select the *Delivery Assurance* tab and provide values in the fields as follows.
 
-<a name="loio41a1a57bf54644d1bd351ca689cf531d__table_vds_gd3_th"/>Delivery Assurance
+**Delivery Assurance**
 
 
 <table>
@@ -581,7 +581,7 @@ Which header you can use, depends on the chosen kind of temporary storage.
 
 Select the *Conditions* tab and specify the following parameter.
 
-<a name="loio41a1a57bf54644d1bd351ca689cf531d__table_gml_nvg_j1b"/>Conditions
+**Conditions**
 
 
 <table>
@@ -631,11 +631,11 @@ If a message is rejected because it exceeds the configured limit, the sender rec
 **Related Information**  
 
 
-[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
+[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
 
 [Managing Data Stores](managing-data-stores-ac39f1d.md "")
 
-[Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right:
+[Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right:
 
 [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md "")
 

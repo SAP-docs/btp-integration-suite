@@ -38,7 +38,7 @@ A transaction is closed at the end of the process \(or subprocess\) where it's d
 > ### Note:  
 > When the transaction timeout has been exceeded, the operation fails.
 
-For a detailed description of the transaction handling configuration and options, see [Define Transaction Handling](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/2a5d4bc3b5da46df84b26ac96450587b.html "You can configure transaction handling on integration process or local integration process level.") :arrow_upper_right:.
+For a detailed description of the transaction handling configuration and options, see [Define Transaction Handling](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/2a5d4bc3b5da46df84b26ac96450587b.html "You can configure transaction handling on integration process or local integration process level.") :arrow_upper_right:.
 
 When working with transactions, different configuration options are possible leading to different transactional behavior. Some integration flow steps do require a transaction. Some integration flow steps aren't supported with transactional resources. Different combinations of transaction settings are technically possible although not necessarily recommended or allowed. The following characteristics and limitations apply:
 

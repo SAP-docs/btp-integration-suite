@@ -14,7 +14,7 @@ In the different environments, these persona are mapped to different objects.
 -   In the Cloud Foundry environment, a persona ia realized by a role collection.
 
 
-The mapping of the persona to the authorization groups \(Neo\) or role collections \(Cloud Foundry\) is described under [Persona](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/2937e5ca6ef448cfb21451a2461cc2a6.html "When you perform user management tasks using SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.") :arrow_upper_right:.
+The mapping of the persona to the authorization groups \(Neo\) or role collections \(Cloud Foundry\) is described under [Persona](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2937e5ca6ef448cfb21451a2461cc2a6.html "When you perform user management tasks using SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.") :arrow_upper_right:.
 
 In the different environments, the permissions to execute certain tasks are given by different objects.
 
@@ -23,7 +23,7 @@ In the different environments, the permissions to execute certain tasks are give
 -   In the Cloud Foundry environment, a permission to execute a task is given by a role template.
 
 
-<a name="copyfda781c59e4b46a390ce5b409f60365e__table_fpq_zjf_4z"/>Tasks and Permissions
+**Tasks and Permissions**
 
 
 <table>

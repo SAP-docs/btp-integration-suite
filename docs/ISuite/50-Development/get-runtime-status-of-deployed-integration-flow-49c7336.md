@@ -118,6 +118,8 @@ The integration flow performs the following steps:
 
     `https://<host address>/api/v1/DeployIntegrationDesigntimeArtifact?Id='${property.buldleId}'&Version='${property.version}'` \(POST method\)
 
+    The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
     The OData API sends back a response that contains the taskId.
 
     A content modifier \(not shown in the diagram\) stores the taskId as exchange property.

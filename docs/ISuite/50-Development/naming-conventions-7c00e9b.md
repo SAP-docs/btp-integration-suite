@@ -12,7 +12,7 @@ It's important to have a logical system behind the naming patterns applied. This
 
 ### Integration Packages
 
-The Integration Package is the folder containing or organizing your integration content \(integration flows, value mappings, APIs, and so forth\). Right now, an Integration Package is the minimum unit that can be transported. See [Create an Integration Package](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/748968a0f43d442f98d93a9a197cdbd2.html "Create an integration package that contains your integration flows.") :arrow_upper_right:.
+The Integration Package is the folder containing or organizing your integration content \(integration flows, value mappings, APIs, and so forth\). Right now, an Integration Package is the minimum unit that can be transported. See [Create an Integration Package](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/748968a0f43d442f98d93a9a197cdbd2.html "Create an integration package that contains your integration flows.") :arrow_upper_right:.
 
 The naming convention for custom integration packages is as follows:
 
@@ -21,7 +21,7 @@ The naming convention for custom integration packages is as follows:
 -   `Global_<BusinessProcess>_<AdditionalInformation>`
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_ckm_yyc_t4b"/>Naming Guidelines for Custom Integration Package
+**Naming Guidelines for Custom Integration Package**
 
 
 <table>
@@ -121,7 +121,7 @@ The naming convention is as follows:
 -   `Global_<BusinessProcess>_[<Sender/Receiver>_]<InterfaceDescription>`
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_b11_w1d_t4b"/>Naming Guidelines for Integration Flow
+**Naming Guidelines for Integration Flow**
 
 
 <table>
@@ -207,7 +207,7 @@ The naming convention is as follows:
 -   `Global_<BusinessProcess>_[<Sender/Receiver>_]<InterfaceDescription>`
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_pcl_wbd_t4b"/>Naming Guidelines for API-Based Integration Development
+**Naming Guidelines for API-Based Integration Development**
 
 
 <table>
@@ -288,7 +288,7 @@ The naming convention is as follows:
 
 -   `<IntegrationType>_<Application>`
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_sf2_jcd_t4b"/>Naming Guidelines for Sender/Receiver
+**Naming Guidelines for Sender/Receiver**
 
 
 <table>
@@ -371,7 +371,7 @@ The naming convention is as follows:
 -   `<Protocol>_<Direction>_<OperationDefinition>`
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_r3h_bdd_t4b"/>Naming Guidelines for Channels
+**Naming Guidelines for Channels**
 
 
 <table>
@@ -450,7 +450,7 @@ The naming convention is as follows:
 -   `<Mapping Type>_<Message>[<Format>]_<Transformation>` \(if source and target message is the same, but a transformation is needed\)
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_rwk_ndd_t4b"/>Naming Guidelines for Mappings
+**Naming Guidelines for Mappings**
 
 
 <table>
@@ -537,7 +537,7 @@ The naming convention is as follows:
 -   `VM_Global_<BusinessProcess>_<AdditionalInformation>`
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_bvv_b2d_t4b"/>Naming Guidelines for Value Mappings
+**Naming Guidelines for Value Mappings**
 
 
 <table>
@@ -618,7 +618,7 @@ The naming convention is as follows:
 -   Transformation script: `<TypeOfScript>_<operation|purpose><BusinessObject>`
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_oqw_m2d_t4b"/>Naming Guidelines for Scripts
+**Naming Guidelines for Scripts**
 
 
 <table>
@@ -697,7 +697,7 @@ The naming convention is as follows:
 -   `/Global/<BusinessProcess>/<InterfaceDescription>`
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_lgp_z2d_t4b"/>Naming Guidelines for Endpoints: Generic Integration Flow
+**Naming Guidelines for Endpoints: Generic Integration Flow**
 
 
 <table>
@@ -776,7 +776,7 @@ The naming convention is as follows:
 -   `/Global/<Partner>/<BusinessProcess>/<InterfaceDescription>`
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_c5d_pkd_t4b"/>Naming Guidelines for Partner Integration Flow
+**Naming Guidelines for Partner Integration Flow**
 
 
 <table>
@@ -861,7 +861,7 @@ The naming convention is as follows:
 -   Standard Headers: maintain expected notation
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_hdv_2ld_t4b"/>Naming Guidelines for Headers & Properties
+**Naming Guidelines for Headers & Properties**
 
 
 <table>
@@ -931,7 +931,7 @@ The naming convention is as follows:
 -   `<Description>`
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_t5h_pld_t4b"/>Naming Guidelines for Other Elements in Integration Flows
+**Naming Guidelines for Other Elements in Integration Flows**
 
 
 <table>
@@ -998,7 +998,7 @@ Description: Meaningful step description in camelCase
 
 ### Security Artifacts
 
-Security artifacts are the credentials needed to connect to an external system. See [Security Elements](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/26e42b1d69304ce39b908fd11882e7ab.html "To set up the secure communication between a tenant and a sender/receiver system, certain security elements have to be created and - in some cases - exchanged between the involved components (the tenant on the one side and the sender/receiver system on the other side of the communication).") :arrow_upper_right:.
+Security artifacts are the credentials needed to connect to an external system. See [Security Elements](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/26e42b1d69304ce39b908fd11882e7ab.html "To set up the secure communication between a tenant and a sender/receiver system, certain security elements have to be created and - in some cases - exchanged between the involved components (the tenant on the one side and the sender/receiver system on the other side of the communication).") :arrow_upper_right:.
 
 The naming convention is as follows:
 
@@ -1009,7 +1009,7 @@ The naming convention is as follows:
 -   Business Partner System: `<System>_<Partner>_<AdapterType>_<TypeOfMaterial>`
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_dbs_xld_t4b"/>Naming Guidelines for Security Artifacts
+**Naming Guidelines for Security Artifacts**
 
 
 <table>
@@ -1098,7 +1098,7 @@ The naming convention is as follows:
 -   Monitoring Roles: `<Expression/InterfaceDescription>_AccessPolicy_MONCustomRole`
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_ac4_mpd_t4b"/>Naming Guidelines for Custom Roles
+**Naming Guidelines for Custom Roles**
 
 
 <table>
@@ -1167,7 +1167,7 @@ Expression: Meaningful expression describing all the integration flows or queues
 
 ### Message Queues
 
-Messaging Queues enable persistence and asynchronous messaging in integration flows. See [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right:.
+Messaging Queues enable persistence and asynchronous messaging in integration flows. See [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right:.
 
 The naming convention is as follows:
 
@@ -1176,7 +1176,7 @@ The naming convention is as follows:
 -   `<AdapterType>.<IntegrationFlowID>`
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_flk_2qd_t4b"/>Naming Guidelines for Message Queues
+**Naming Guidelines for Message Queues**
 
 
 <table>
@@ -1255,7 +1255,7 @@ The naming convention is as follows:
 -   `<TypeOfDB>_<DataBaseID>`
 
 
-<a name="loio7c00e9bf1d0e41d99e4ba5d770e9bd4a__table_ofv_tqd_t4b"/>Naming Guidelines for JDBC Data Sources
+**Naming Guidelines for JDBC Data Sources**
 
 
 <table>

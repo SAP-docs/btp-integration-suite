@@ -6,7 +6,7 @@ Different kinds of data are stored in the SAP Integration Suite infrastructure d
 
 The following table lists the different kinds and attributes such like storage location and retention time, for example.
 
-<a name="loio0e4e511016754da4bea756df94172a87__table_klk_hvs_vz"/>Data Assets
+**Data Assets**
 
 
 <table>
@@ -348,11 +348,11 @@ Lock entries that are created \(in the in-progress repository\) to avoid the sam
 
 [Message Processing Log](../50-Development/message-processing-log-b32f8cd.md "The message processing log displays structured information of a message.")
 
-[Activating Tracing](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/866b6a94a074487384a21377ec9f2eb2.html "You activate tracing to check the message payload after each and every integration flow step.") :arrow_upper_right:
+[Activating Tracing](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/866b6a94a074487384a21377ec9f2eb2.html "You activate tracing to check the message payload after each and every integration flow step.") :arrow_upper_right:
 
 [Define Data Store Operations](../50-Development/define-data-store-operations-79f63a4.md "You can use the data store to temporarily store messages.")
 
-[Configuring Message Storage at a Process Step](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/9247e59fd76c441592da5724dc890f65.html "") :arrow_upper_right:
+[Configuring Message Storage at a Process Step](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/9247e59fd76c441592da5724dc890f65.html "") :arrow_upper_right:
 
 [Managing Security Material](../50-Development/managing-security-material-b8ccb53.md "The Manage Security Material area provides an overview of security-related artifacts.")
 

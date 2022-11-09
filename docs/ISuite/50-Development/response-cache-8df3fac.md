@@ -418,7 +418,7 @@ This element is a variable \(used in the format ***mm-dd-yyyy***\) which indicat
 
 Some predefined flow variables that are populated when a ResponseCache policy is executed are described in the below table:
 
-<a name="loio8df3fac998f74e0ebd5e8355588057b3__table_tbf_by1_1hb"/>Flow Variables
+**Flow Variables**
 
 
 <table>
@@ -576,7 +576,7 @@ True if the cache entry is invalid
 
 Error messages that are seen when this policy triggers an error are described in the below table:responsecache.\{policy\_name\}.cachekey
 
-<a name="loio8df3fac998f74e0ebd5e8355588057b3__table_unh_5gl_qy"/>Error Messages
+**Error Messages**
 
 
 <table>

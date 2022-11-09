@@ -42,7 +42,7 @@ A token endpoint is simply a URI path that the system uses to identify requests 
 
 These variables are set when the GenerateAccessToken policy operation executes successfully for the authorization code, password, and client credentials grant type flows. Note that refresh token variables do not apply to and are not set by the client credentials grant type flow.
 
-<a name="loiof6f84eeb5e3a455b9530d9a534b4d91b__table_slx_t35_h1b"/>Access Token
+**Access Token**
 
 
 <table>

@@ -4,7 +4,7 @@
 
 JDBC receiver adapter supports SAP HANA Platform On-Premise database provided by SAP.
 
-<a name="loioff29388bfbba4761b84d92017d9fa860__table_uqd_tph_wtb"/>Database Details
+**Database Details**
 
 
 <table>

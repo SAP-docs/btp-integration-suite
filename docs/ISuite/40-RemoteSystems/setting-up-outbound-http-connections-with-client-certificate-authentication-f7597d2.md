@@ -235,7 +235,7 @@ In the related receiver adapter, as *Authentication* choose *Client Certificate*
 
         More information: [Performing Connectivity Tests](../50-Development/performing-connectivity-tests-d5b2fae.md)
 
-        For an example how to get such a certificate for an email server \(as receiver system\), check out: [Update the Tenant Keystore with the Certificates Required by the Mail Server](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/5d5495ed1d94477abaa009984285e483.html "Add the required server root certificates (required by the e-mail provider) to the tenant keystore.") :arrow_upper_right:
+        For an example how to get such a certificate for an email server \(as receiver system\), check out: [Update the Tenant Keystore with the Certificates Required by the Mail Server](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/5d5495ed1d94477abaa009984285e483.html "Add the required server root certificates (required by the e-mail provider) to the tenant keystore.") :arrow_upper_right:
 
 
 2.  Configure the receiver keystore.

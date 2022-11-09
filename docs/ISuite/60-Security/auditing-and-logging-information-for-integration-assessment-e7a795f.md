@@ -6,7 +6,7 @@ Here you can find the security events that are logged by Integration Assessment.
 
 
 
-<a name="loioe7a795feae4f4241a718df1d90c0bcb0__table_dqf_pkf_p4b"/>Security Events Written in Audit Logs
+**Security Events Written in Audit Logs**
 
 
 <table>

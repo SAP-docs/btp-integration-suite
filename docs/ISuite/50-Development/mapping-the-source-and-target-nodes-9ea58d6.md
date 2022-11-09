@@ -409,7 +409,7 @@ When you choose to delete the last available conditional node in a group-to-grou
 
 You can know the type of mapping used based on the icon denoted over the mapping lines.
 
-<a name="loio9ea58d63c6f64516b33c46079cc694e9__table_vhn_3fm_krb"/>Mapping line types
+**Mapping line types**
 
 
 <table>

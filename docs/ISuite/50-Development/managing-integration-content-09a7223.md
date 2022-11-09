@@ -33,7 +33,7 @@ On the right side of the screen, more details about the artifact selected on the
 
 The header area provides the following information about the selected artifact:
 
-<a name="loio09a7223883a74dcb9f4b1b96a7c7f011__table_xgz_3ll_ypb"/>Integration Content Details
+**Integration Content Details**
 
 
 <table>
@@ -191,7 +191,7 @@ Below the header, the following sections contain detailed information about the 
     > 
     > The following table lists the main segments of the endpoint URL.
     > 
-    > <a name="loio09a7223883a74dcb9f4b1b96a7c7f011__table_dw2_zny_hv"/>
+    > ****
     > 
     > 
     > <table>
@@ -294,7 +294,7 @@ Below the header, the following sections contain detailed information about the 
 
     The type of the selected artifact determines which kind of information is displayed.
 
-    <a name="loio09a7223883a74dcb9f4b1b96a7c7f011__table_ud3_rsd_fpb"/>Artifact Details
+    **Artifact Details**
 
 
     <table>

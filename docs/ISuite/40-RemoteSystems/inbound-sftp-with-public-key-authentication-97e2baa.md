@@ -6,7 +6,7 @@
 
 For an SFTP client connected to an SFTP server using the Public Key authentication option, the following artifacts have to be generated and stored at the locations summarized in the following table. The table also shows which artifacts need to be exchanged between the client and the server \(during the onboarding process\):
 
-<a name="loio97e2baafd4184e98916f246c373af3bf__d280e44"/>
+****
 
 
 <table>

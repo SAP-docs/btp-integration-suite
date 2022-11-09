@@ -29,7 +29,7 @@ Once you’ve created a receiver channel and selected the Salesforce receiver ad
 
 The General tab shows general information such as the adapter type, its direction \(receiver\), the transport protocol, and the message protocol.
 
-<a name="loioa548be9518704e4aad7d02963f3f7dec__table_rdc_cn3_h4b"/>Connection
+**Connection**
 
 
 <table>
@@ -163,7 +163,7 @@ Specify the use of Lazy Authentication when logging in. When enabled, the OAuth 
 </tr>
 </table>
 
-<a name="loioa548be9518704e4aad7d02963f3f7dec__table_uqr_153_h4b"/>Processing
+**Processing**
 
 
 <table>

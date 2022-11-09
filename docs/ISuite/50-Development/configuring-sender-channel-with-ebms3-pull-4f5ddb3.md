@@ -20,7 +20,7 @@ Configure the sender channel with the AS4 adapter with ebMS3 Pull as a sending M
 
 You use AS4 message exchange protocol to securely process incoming business documents using Web services.
 
-<a name="loio4f5ddb3dd8164e599745243029db1bf0__table_qsx_5cx_ykb"/>Connection
+**Connection**
 
 
 <table>
@@ -99,7 +99,7 @@ Select *Client Certificate* if you want to authorize a user to send message base
 
 Select the *Processing* tab and provide values in the fields as described.
 
-<a name="loio4f5ddb3dd8164e599745243029db1bf0__table_gtx_5cx_ykb"/>Processing
+**Processing**
 
 
 <table>
@@ -315,7 +315,7 @@ Define a key and value to modify the payload attached to AS4 message.
 
 Select the *Security* tab and provide values in the fields as follows.
 
-<a name="loio4f5ddb3dd8164e599745243029db1bf0__table_htx_5cx_ykb"/>Security
+**Security**
 
 
 <table>
@@ -394,7 +394,7 @@ Define the public key alias or aliases to verify the signature of the AS4 messag
 
 Select the *Response* tab and provide values in the fields as follows.
 
-<a name="loio4f5ddb3dd8164e599745243029db1bf0__table_jtx_5cx_ykb"/>Response
+**Response**
 
 
 <table>
@@ -562,7 +562,7 @@ Select the type of security token reference to encode the payload.
 
 Select the *Conditions* tab and provide values in the fields as follows.
 
-<a name="loio4f5ddb3dd8164e599745243029db1bf0__table_ktx_5cx_ykb"/>Conditions
+**Conditions**
 
 
 <table>

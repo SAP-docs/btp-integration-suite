@@ -924,7 +924,7 @@ This error occurs when the input XML Payload is invalid.
 
 Following fault variables is set when the policy triggers an error at runtime:
 
-<a name="loio3de6615cc00843499d6a427e93e2c582__table_c4m_r25_h1b"/>Fault Variables
+**Fault Variables**
 
 
 <table>

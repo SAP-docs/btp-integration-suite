@@ -6,7 +6,7 @@ Configuration Variables describes the configuration settings.
 
 Supported configuration variables are listed in the Configuration Variables table.
 
-<a name="loio12d3ea6998684d9cb734ec7083a435e5__table_e33_tpw_qmb"/>Configuration Variables
+**Configuration Variables**
 
 
 <table>

@@ -50,7 +50,7 @@ Properties are set on ProxyEndpoint HTTPProxyConnection elements as follows:
 
 **ProxyEndpoint Transport Property Specification**
 
-<a name="loio1705a92daa37474eab483a1ccb6d9b28__table_ilm_lzz_xfb"/>ProxyEndpoint Transport Property Specification
+**ProxyEndpoint Transport Property Specification**
 
 
 <table>

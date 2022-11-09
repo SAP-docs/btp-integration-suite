@@ -4,7 +4,7 @@
 
 Supported path variables are listed in the Path Variables table.
 
-<a name="loio482192514b7c4ec9a15b6ab6ed971e35__table_wst_tcp_d1b"/>Path Variables
+**Path Variables**
 
 
 <table>

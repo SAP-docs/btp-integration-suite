@@ -4,7 +4,7 @@
 
 The integration package contains the following Postman collections:
 
-<a name="loio0f4cf38a058042e3a194b07948752b1c__table_tgd_kpt_3mb"/>Postman Collections
+**Postman Collections**
 
 
 <table>
@@ -91,7 +91,7 @@ The environments created with these collections have the following parameters \(
 > ### Note:  
 > The parameters for which **only** the *Neo* environment is indicated, are only relevant when using SAP Cloud Integration as standalone service in the Neo environment. These parameters are **not** relevant for SAP Integration Suite customers.
 
-<a name="loio0f4cf38a058042e3a194b07948752b1c__table_c2m_qrt_3mb"/>
+****
 
 
 <table>

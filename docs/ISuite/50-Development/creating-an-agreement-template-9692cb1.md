@@ -298,7 +298,7 @@ Follow the procedure below to create an agreement template.
 
 18. Provide the name of your custom integration flow in the *Integration Flow Name* field.
 
-    To know more about how it works, see [Interchange Processing Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/IAT/en-US/7d3bce9478974229af1abf9121fe47e6.html "This integration flow transforms the message sent by the sending partner to the structure expected by the receiving partner.") :arrow_upper_right:
+    To know more about how it works, see [Interchange Processing Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/Cloud/en-US/7d3bce9478974229af1abf9121fe47e6.html "This integration flow transforms the message sent by the sending partner to the structure expected by the receiving partner.") :arrow_upper_right:
 
 19. Similarly, choose the *Communication Channel* on the receiver side and select a value from the drop-down list for the field *Communication*.
 
@@ -323,7 +323,7 @@ Follow the procedure below to create an agreement template.
 
 25. Provide the name of your custom integration flow in the *Integration Flow Name* field.
 
-    To know more about how it works, see [Interchange Processing Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/IAT/en-US/7d3bce9478974229af1abf9121fe47e6.html "This integration flow transforms the message sent by the sending partner to the structure expected by the receiving partner.") :arrow_upper_right:
+    To know more about how it works, see [Interchange Processing Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/Cloud/en-US/7d3bce9478974229af1abf9121fe47e6.html "This integration flow transforms the message sent by the sending partner to the structure expected by the receiving partner.") :arrow_upper_right:
 
 26. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgement for the receiver.
 

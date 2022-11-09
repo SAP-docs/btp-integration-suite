@@ -32,7 +32,7 @@ The Graphical Model Viewer lets you expand or collapse all the section headers o
 
 Depending on the number of OData objects in the model, objects might appear too small or be too big for the Graphical Model Viewer to accommodate. In such cases, the navigation controls help you view the model better.
 
-<a name="loioa53aeedf19924cdba3f919797ce973b6__table_odw_zhb_2s"/>
+****
 
 
 <table>

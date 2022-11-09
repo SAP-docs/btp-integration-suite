@@ -10,7 +10,7 @@ When you connect an on-premise \(receiver\) system to the integration platform, 
 
 To decide which option is the best one for your use case, refer to the following table.
 
-<a name="loio14567e1c8618433c9f003e70f0681141__table_tgb_f41_wv"/>Decision Matrix: Reverse Proxy versus SAP Cloud Connector
+**Decision Matrix: Reverse Proxy versus SAP Cloud Connector**
 
 
 <table>

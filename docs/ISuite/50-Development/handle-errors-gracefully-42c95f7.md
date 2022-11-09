@@ -28,7 +28,7 @@ To apply this design guideline, consider the following rules:
 
 The following example scenarios cover basic exception handing use cases and features:
 
-<a name="loio42c95f752c8d4b4cad98b7608223424f__table_grr_f5z_2sb"/>
+****
 
 
 <table>
@@ -181,7 +181,7 @@ The following tables summarize example scenarios for use cases where:
 
 Handle exceptions raised in integration flow connected by the ProcessDirect adapter.
 
-<a name="loio42c95f752c8d4b4cad98b7608223424f__table_yf4_kxz_2sb"/>
+****
 
 
 <table>
@@ -274,7 +274,7 @@ Handle Errors - Dependent Integration Flows - Child
 
 Handle exceptions raised in local subprocess initiated by Local Process call. Exception raised in subprocess. Main process calls subprocess \(where exception occurs\).
 
-<a name="loio42c95f752c8d4b4cad98b7608223424f__table_hm2_2yz_2sb"/>
+****
 
 
 <table>
@@ -444,7 +444,7 @@ Handle Errors - Splitter Gather without Stop on Exception
 
 Handle exceptions raised in local subprocess initiated by Local Process call. Exception raised in subprocess. Main process calls subprocess \(where exception occurs\).
 
-<a name="loio42c95f752c8d4b4cad98b7608223424f__table_ug4_prw_ksb"/>
+****
 
 
 <table>

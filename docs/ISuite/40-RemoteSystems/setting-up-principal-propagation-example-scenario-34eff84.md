@@ -30,7 +30,7 @@ To configure principal propagation for this setup, perform the following steps.
 
 1.  Enable OAuth \(with SAML Bearer Destination\) for the inbound connection from the sender to SAP BTP.
 
-    More information: [OAuth SAML Bearer Destination](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/f93122629816412c911f827a5eb62e5e.html "You can enable principal propagation between different accounts.") :arrow_upper_right:
+    More information: [OAuth SAML Bearer Destination](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f93122629816412c911f827a5eb62e5e.html "You can enable principal propagation between different accounts.") :arrow_upper_right:
 
     > ### Note:  
     > Note that currently only the following \(sender\) adapter types can be used on the inbound side: HTTPS, SOAP \(SOAP 1.x\), SOAP \(SAP RM\), and IDoc.

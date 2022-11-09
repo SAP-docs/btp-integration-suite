@@ -51,7 +51,7 @@ Once you have created a receiver channel and selected the SOAP \(SOAP 1.x\) rece
 
 Select the *General* tab and provide values in the fields as follows.
 
-<a name="loio57f7b34b9b86438d9cb760c5c541f88c__table_qrt_wjr_yjb"/>General
+**General**
 
 
 <table>
@@ -91,7 +91,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio57f7b34b9b86438d9cb760c5c541f88c__table_ekr_wk1_jj"/>Connection
+**Connection**
 
 
 <table>
@@ -423,7 +423,7 @@ Select the *WS-Security* tab and provide values in the fields as follows.
 
 Select the *WS-Security* tab and provide values in the fields as follows.
 
-<a name="loio57f7b34b9b86438d9cb760c5c541f88c__table_o2q_s3h_qfb"/>WS-Security
+**WS-Security**
 
 
 <table>

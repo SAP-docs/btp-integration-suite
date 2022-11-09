@@ -12,7 +12,7 @@ The integration flow is called using an HTTP sender adapter.
 
 The *Get order ID* content modifier step stores the purchase order number from the payload in an exchange property using the following parameter settings:
 
-<a name="loioa8706217bf174994bdca4cbe2b06955e__table_dyv_qmn_hsb"/>
+****
 
 
 <table>
@@ -116,7 +116,7 @@ string\(//@PurchaseOrderNumber\)
 
 The *Idempotent Process Call* step sends the message to the local integration process using the following idempotent conditions:
 
-<a name="loioa8706217bf174994bdca4cbe2b06955e__table_rjh_wmn_hsb"/>
+****
 
 
 <table>
@@ -200,7 +200,7 @@ To test the scenario, perform the following steps:
 
     [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 
-    [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
+    [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
 
 2.  Deploy a *User Credentials* artifact with the following parameters using the *Monitor* application \(*Security Material* tile under *Manage Security*\).
 

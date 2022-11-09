@@ -48,6 +48,8 @@ Example: To add a *Number Ranges* object to your tenant, send the following POST
 
 `https://<host address>/api/v1/NumberRanges`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 As request body, provide \(example\):
 
 > ### Sample Code:  

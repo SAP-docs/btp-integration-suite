@@ -60,7 +60,7 @@ When you have created a receiver channel \(with XI adapter selected\), you can c
 
 Select the *General* tab and provide values in the field as follows.
 
-<a name="loio5d2670fdfed640db8fd43991440d6da7__table_pnk_nrq_yjb"/>General
+**General**
 
 
 <table>
@@ -100,7 +100,7 @@ Enter the name of the channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-<a name="loio5d2670fdfed640db8fd43991440d6da7__table_lsr_fk1_jj"/>Connection
+**Connection**
 
 
 <table>
@@ -334,7 +334,7 @@ This feature is disabled by default.
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-<a name="loio5d2670fdfed640db8fd43991440d6da7__table_k1r_1zd_wkb"/>Processing
+**Processing**
 
 
 <table>
@@ -431,7 +431,7 @@ Description
 
 Select the *Delivery Assurance* tab and provide values in the fields as follows.
 
-<a name="loio5d2670fdfed640db8fd43991440d6da7__table_p1k_gbx_rdb"/>Delivery Assurance
+**Delivery Assurance**
 
 
 <table>
@@ -788,7 +788,7 @@ Which header you can use, depends on the kind of temporary storage chosen.
 
 [Managing Data Stores](managing-data-stores-ac39f1d.md "")
 
-[Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right:
+[Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right:
 
 [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md "")
 

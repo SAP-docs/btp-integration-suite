@@ -14,11 +14,11 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
 
 -   You are familiar with the conversion rules for XML to JSON conversion.
 
-    For more information see [Conversion Rules for XML to JSON Conversion](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/778aed733e3140cea0435f4615d53812.html "To ensure a successful conversion from XML format to JSON format, you should make yourself familiar with the conversion rules.") :arrow_upper_right:.
+    For more information see [Conversion Rules for XML to JSON Conversion](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/778aed733e3140cea0435f4615d53812.html "To ensure a successful conversion from XML format to JSON format, you should make yourself familiar with the conversion rules.") :arrow_upper_right:.
 
 -   You are familiar with the limitations for XML to JSON conversion.
 
-    For more information see [Limitations for XML-to-JSON Conversion](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/a5b4641c393f406bb544987497c90a72.html "To ensure a successful conversion form XML to JSON format you have to know the limitations for this conversion.") :arrow_upper_right:.
+    For more information see [Limitations for XML-to-JSON Conversion](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/a5b4641c393f406bb544987497c90a72.html "To ensure a successful conversion form XML to JSON format you have to know the limitations for this conversion.") :arrow_upper_right:.
 
 -   You are familiar with streaming for XML to JSON conversion.
 

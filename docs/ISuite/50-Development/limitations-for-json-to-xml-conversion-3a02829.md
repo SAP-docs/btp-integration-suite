@@ -58,5 +58,5 @@ See also: [3112970 - JSON-to-XML Converter Exception Caused by Invalid JSON Memb
 
 [Conversion Rules for JSON to XML Conversion](conversion-rules-for-json-to-xml-conversion-232a9cf.md "To ensure a successful conversion of you data, you should make yourself familiar with the conversion rules.")
 
-[Limitations for XML-to-JSON Conversion](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/IAT/en-US/a5b4641c393f406bb544987497c90a72.html "To ensure a successful conversion form XML to JSON format you have to know the limitations for this conversion.") :arrow_upper_right:
+[Limitations for XML-to-JSON Conversion](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/a5b4641c393f406bb544987497c90a72.html "To ensure a successful conversion form XML to JSON format you have to know the limitations for this conversion.") :arrow_upper_right:
 

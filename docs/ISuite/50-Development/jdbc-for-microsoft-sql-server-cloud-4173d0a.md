@@ -4,7 +4,7 @@
 
 JDBC receiver adapter supports Microsoft SQL Server cloud database provided by Amazon RDS.
 
-<a name="loio4173d0aba45d4978bd3f583740aa09e1__table_uqd_tph_wtb"/>Database Details
+**Database Details**
 
 
 <table>
@@ -92,10 +92,10 @@ JDBC URL Example
 </tr>
 </table>
 
-> ### Note:  
-> If your databse connection fails, try appending `@servername` with *Username*.
-
 Before connecting to this database, you must upload the drivers and then, add the Data Source. For more details, see [Configure JDBC Drivers](configure-jdbc-drivers-77c7d95.md) and [Managing JDBC Data Sources](managing-jdbc-data-sources-4c873fa.md).
+
+> ### Note:  
+> If your database connection fails, try appending `@servername` to your username in the [User](managing-jdbc-data-sources-4c873fa.md#loio4c873fac537248e58767f74e4a74d867__table_th1_2pq_gr) field while adding the [Data Source.](managing-jdbc-data-sources-4c873fa.md) For example, if your username is *test*, and servername is *mysqlserver*, enter*test@mysqlserver* as *User* and try establishing the connection.
 
 **Related Information**  
 
