@@ -4,7 +4,7 @@
 
 # What is SAP Integration Suite?
 
-Develop and manage enterprise-wide integration across heterogeneous landscapes. 
+Develop and manage enterprise wide integration across heterogeneous landscapes. 
 
 SAP Integration Suite connects and contextualizes processes and data while enabling new content-rich applications to be assembled faster with less dependence on IT. Pre-built integration packs along with existing investments can be composed to deliver new outcomes with less involvement by integration experts.
 
