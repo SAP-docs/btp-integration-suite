@@ -257,6 +257,7 @@ Incoming message body
 <td valign="top">
 
 Incoming message body
+Deprecated from Camel version 3.12.x
 
 
 
