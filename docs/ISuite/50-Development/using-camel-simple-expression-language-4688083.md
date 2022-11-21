@@ -256,8 +256,8 @@ Incoming message body
 </td>
 <td valign="top">
 
-Incoming message body
-Deprecated from Camel version 3.12.x
+Incoming message body<br/>
+ <i>Deprecated from Camel version 3.12.x</i>
 
 
 
