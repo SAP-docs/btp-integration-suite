@@ -52,12 +52,8 @@ You can apply the following method on an instance of `MessageLog` in order to cr
 The following Groovy Script stores the message body in an MPL attachment \(`My Attachment`\):
 
 ```
-def Message processData(Message message) {
-    def body = message.getBody(java.lang.String)
-    def messageLog = messageLogFactory.getMessageLog(message)
-    if (messageLog != null) {
-        messageLog.addAttachmentAsString('My Attachment', body, 'text/plain')
-    }
+Message processData(Message message) {
+    messageLogFactory.getMessageLog(message)?.addAttachmentAsString('My Attachment', message.getBody(String), 'text/plain')
     return message
 }
 ```
