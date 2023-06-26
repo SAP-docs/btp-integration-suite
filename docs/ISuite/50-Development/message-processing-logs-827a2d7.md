@@ -181,7 +181,7 @@ More information:
 
 -   [FTP Adapter](ftp-adapter-4464f89.md)
 
--   [JMS Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:
+-   [JMS Adapter](jms-adapter-0993f2a.md)
 
 -   [SFTP Adapter](sftp-adapter-e3dce88.md)
 

@@ -195,7 +195,7 @@ JMS Resources
 
 Represents available resources of the used Java Message Service \(JMS\) queues.
 
-JMS queues are accessed to by integration flows that contain an AS2, a JMS, or anXI adapter \(see [AS2 Adapter](as2-adapter-d3af635.md), [JMS Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:, and [XI Adapter](xi-adapter-8fedc92.md)\).
+JMS queues are accessed to by integration flows that contain an AS2, a JMS, or anXI adapter \(see [AS2 Adapter](as2-adapter-d3af635.md), [JMS Adapter](jms-adapter-0993f2a.md), and [XI Adapter](xi-adapter-8fedc92.md)\).
 
 
 

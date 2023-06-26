@@ -256,15 +256,16 @@ Incoming message body
 </td>
 <td valign="top">
 
-Incoming message body<br/>
- <i>Deprecated from Camel version 3.12.x</i>
+Incoming message body
 
 
 
 </td>
 <td valign="top">
 
- `${in.body}` 
+`${in.body}`
+
+This expression is deprecated from Apache Camel version 3.12.x.
 
 
 

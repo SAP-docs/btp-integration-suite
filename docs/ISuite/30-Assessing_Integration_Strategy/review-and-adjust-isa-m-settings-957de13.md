@@ -24,6 +24,9 @@ Go to the *Settings* section to inspect the available ISA-M master data predefin
 > 
 > You can also delete entities that aren't relevant for you. To do this, select the entity and select :wastebasket: \(*Delete*\).
 
+> ### Note:  
+> SAP Standard master data is represented in the application as *Maintained by SAP*. This represents that the associated data is pre-defined and loaded by SAP.
+
 The following settings exist in the system:
 
 

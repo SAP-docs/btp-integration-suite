@@ -18,21 +18,27 @@ The integration flow *Scripting – Read Url Get Parameters* reads the individua
 
 > ### Sample Code:  
 > ```
-> import com.sap.gateway.ip.core.customdev.util.Message
-> import java.nio.charset.Charset
+> import com.sap.gateway.ip.core.customdev.util.Message;
+> import java.util.HashMap;
 > 
-> Message extractUrlGetParameters(Message message) {
->     String httpQuery = message.getHeader('CamelHttpQuery', String)
+> def Message extractUrlGetParameters(Message message) {
 > 
->     if (httpQuery) {
->         Map<String, String> queryParameters = URLDecoder.decode(httpQuery, Charset.defaultCharset().name())
->                 .tokenize('&')
->                 .collectEntries { it.tokenize('=') }
->         message.setProperties(queryParameters)
->     }
+>        //get url 
+>        def map = message.getHeaders();
+>        def queryString = map.get("CamelHttpQuery");
 > 
->     return message
-> }
+>        //split url
+>        String[] vQuery;
+>        vQuery = queryString.split('&');
+> 
+>        //set properties
+>        for( String pair : vQuery ) {
+>            String[] vPairs = pair.split('=')
+>            message.setProperty(vPairs[0].replace("\$",""), vPairs[1]);
+>        }
+>        
+>        return message;
+>     } 
 > ```
 
 As a next step, the WebShop example application \([https://help.sap.com/viewer/DRAFT/368c481cd6954bdfa5d0435479fd4eaf/DEV/en-US/767d8ef11b0f4e04819f9fe03d76c4a2.html](https://help.sap.com/viewer/DRAFT/368c481cd6954bdfa5d0435479fd4eaf/DEV/en-US/767d8ef11b0f4e04819f9fe03d76c4a2.html)\) is called and given the corresponding properties to build the right query options.

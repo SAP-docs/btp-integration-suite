@@ -15,7 +15,7 @@ Local integration process:
 If an integration process is calling a local integration process and an escalation event has been defined in the local integration process, the *Escalation Event* is thrown, and the processing continues in the calling flow. If there are still steps to process in the main flow, the processing continues normally at this level and the main flow message status will be*Completed*.
 
 > ### Note:  
-> In case of a synchronous exchange pattern, the process raises an exception and the message will be marked as *Escalated*. This behavior violates the process described above and no exception will be raised, but this handling was explicitly chosen, since the event is usually defined in the exception sub-process and the sender expects a valid response in a synchronous exchange pattern.
+> In case of a synchronous exchange pattern, the process raises an exception and the message will be marked as *Escalated*. This behavior violates the process described above that no exception will be raised, but this handling was explicitly chosen, since the event is usually defined in the exception sub-process and the sender expects a valid response in a synchronous exchange pattern.
 
 > ### Note:  
 > In case of an asynchronous exchange pattern no exception will be raised and the message status will be *Escalated*.

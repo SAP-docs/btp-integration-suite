@@ -368,7 +368,7 @@ Example:
 </td>
 <td valign="top">
 
-[Create an Application](../50-Development/create-an-application-7b4e71b.md)
+[Create an Application \[Classic Design\]](../50-Development/create-an-application-classic-design-7b4e71b.md)
 
 
 

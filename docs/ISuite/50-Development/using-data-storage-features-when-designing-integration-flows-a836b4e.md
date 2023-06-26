@@ -453,7 +453,7 @@ JMS queues
 </td>
 <td valign="top">
 
-JMS receiver adapter \(see [JMS Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:\)
+JMS receiver adapter \(see [JMS Adapter](jms-adapter-0993f2a.md)\)
 
 AS2 sender adapter \(see [Configure the AS2 Sender Adapter](configure-the-as2-sender-adapter-5d7ee17.md)\)
 
@@ -468,7 +468,7 @@ XI receiver adapter \(see [Configure the XI Receiver Adapter](configure-the-xi-r
 </td>
 <td valign="top">
 
-JMS sender adapter \(see [Configure the JMS Sender Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/161791b8cb98485ba00d81efa4197a49.html "The JMS sender adapter enables asynchronous decoupling of inbound and outbound processing by using message queues. The sender adapter consumes messages from a JMS queue.") :arrow_upper_right:\)
+JMS sender adapter \(see [Configure the JMS Sender Adapter](configure-the-jms-sender-adapter-161791b.md)\)
 
 AS2 sender adapter \(see [Configure the AS2 Sender Adapter](configure-the-as2-sender-adapter-5d7ee17.md)\)
 

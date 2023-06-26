@@ -10,19 +10,22 @@ Update the credentials you've used to establish a connection between the API por
 
 ## Prerequisites
 
-To update the API portal access credentials, you must first generate it. To generate the credentials from the API Portal, you must have the *APIPortal. Administrator* role assigned to you.
+-   Only the users who submitted the connection request and has the *AuthGroup.APIPortalRegistration* role assigned to themselves can edit the credentials.
 
-1.  Log in to the Integration Suite.
+-   To update the API portal access credentials, you must first generate it. To generate the credentials from the API Portal, you must have the *APIPortal. Administrator* role assigned to you.
 
-2.  Choose the navigation icon on the left and choose *Settings* \> *APIs*.
+    1.  Log in to the Integration Suite.
 
-3.  Choose the *Connection* tab.
+    2.  Choose the navigation icon on the left and choose *Settings* \> *APIs*.
 
-4.  Choose *Generate Credentials* under APIPortal .Service.CatalogIntegration*Connect the API Portal to the centralized API Business Hub Enterprise* and *Copy* the API portal access credentials.
+    3.  Choose the *Connection* tab.
+
+    4.  Choose *Generate Credentials* under APIPortal .Service.CatalogIntegration*Connect the API Portal to the centralized API Business Hub Enterprise* and *Copy* the API portal access credentials.
 
 
-> ### Note:  
-> The client credentials get generated for the ** role.
+    > ### Note:  
+    > The client credentials get generated for the ** role.
+
 
 You must also have the *AuthGroup.APIPortalRegistration*APIPortal role assigned to you.
 

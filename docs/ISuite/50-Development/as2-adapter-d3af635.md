@@ -10,7 +10,7 @@ You use the AS2 adapter to exchange business documents with your partner using t
 > ### Note:  
 > There are certain limitations with regard to the usage of JMS resources.
 > 
-> More information: [JMS Resource Limits and Optimizing their Usage](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/4857054e3f194ae6a7ed93a52002d556.html "") :arrow_upper_right:
+> More information: [JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md)
 
 > ### Caution:  
 > Do not use this adapter type together with *Data Store Operations* steps, *Aggregator* steps, or global variables, as this can cause issues related to transactional behavior.

@@ -348,7 +348,7 @@ An API can be marked with any of the following statuses:
     > ```
 
     > ### Note:  
-    > You must enter the `deprecationDate` in the format `dd mmm yyyy`, where `mmm` is a string indicating the month. For example, Jan, Jul, Nov etc.
+    > You must enter the `deprecationDate` in the format `yyyy-mm-dd`
 
 -   Decommissioned
 

@@ -12,6 +12,8 @@ To publish the API portal content on the API business hub enterprise, you must c
 
 ## Prerequisites
 
+-   To establish connections between the API business hub enterprise and API portals, a Cloud Foundry space should be created in the sub-account from where the API business hub enterprise is hosted.
+
 -   To establish a connection between an API portal and the centralised API business hub enterprise which is available in a different sub-account, you must ensure that the API business hub enterprise capability is not enabled in the same sub-account as that of the API portal.
 
 -   Raise an offline request to the API business hub enterprise administrator for assigning the *AuthGroup.APIPortalRegistration* role to you.

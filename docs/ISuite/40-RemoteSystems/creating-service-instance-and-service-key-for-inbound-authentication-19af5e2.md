@@ -456,6 +456,10 @@ With this step, you create a service key for the instance.
 
         URL of token server that issues the access token.
 
+    -   *url*
+
+        URL to address service.
+
 
 
     
@@ -488,6 +492,10 @@ With this step, you create a service key for the instance.
     -   *tokenurl*
 
         URL of token server that issues the access token.
+
+    -   *url*
+
+        URL to address service.
 
 
     > ### Note:  
@@ -542,6 +550,10 @@ With this step, you create a service key for the instance.
     -   *tokenurl*
 
         URL of token server that issues the access token.
+
+    -   *url*
+
+        URL to address service.
 
 
     A service key with this *Key Pair* doesn't contain a private key because the corresponding key pair has been generated with another application than SAP BTP.

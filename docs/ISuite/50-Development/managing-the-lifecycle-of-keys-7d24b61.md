@@ -60,8 +60,6 @@ During the activation of an SAP key, the system performs three steps, as shown i
 
 ## Procedure
 
-
-
 **Related Information**  
 
 

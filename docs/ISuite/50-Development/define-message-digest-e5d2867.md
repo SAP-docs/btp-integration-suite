@@ -22,6 +22,9 @@ You can use this feature to implement scenarios like the following ones:
 -   Instead of a certain value, you can store its digest. You can check for the value's digest to find out if it has changed during message processing.
 
 
+> ### Note:  
+> This step can only process XML content.
+
 > ### Tip:  
 > To learn how to quickly check if a response message from an external data source has been changed between 2 message processing runs, see [Simple Integration Flow Using a Message Digest Step](simple-integration-flow-using-a-message-digest-step-8b5a7ce.md).
 

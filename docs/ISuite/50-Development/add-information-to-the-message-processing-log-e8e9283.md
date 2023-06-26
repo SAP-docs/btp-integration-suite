@@ -52,11 +52,26 @@ You can apply the following method on an instance of `MessageLog` in order to cr
 The following Groovy Script stores the message body in an MPL attachment \(`My Attachment`\):
 
 ```
-Message processData(Message message) {
-    messageLogFactory.getMessageLog(message)?.addAttachmentAsString('My Attachment', message.getBody(String), 'text/plain')
+def Message processData(Message message) {
+    def body = message.getBody(java.lang.String)
+    def messageLog = messageLogFactory.getMessageLog(message)
+    if (messageLog != null) {
+        messageLog.addAttachmentAsString('My Attachment', body, 'text/plain')
+    }
     return message
 }
 ```
+
+> ### Note:  
+> You can simplify this expression in the following way using idiomatic Groovy style:
+> 
+> ```
+> Message processData(Message message) {
+>     messageLogFactory.getMessageLog(message)?.addAttachmentAsString('My Attachment', message.getBody(String), 'text/plain')
+>     return message
+> }
+> 
+> ```
 
 When monitoring the message in the Cloud Integration *Monitor* section under *Monitor Message Processing*, the attachment is displayed in the *Attachments* tab when the corresponding integration flow is selected.
 

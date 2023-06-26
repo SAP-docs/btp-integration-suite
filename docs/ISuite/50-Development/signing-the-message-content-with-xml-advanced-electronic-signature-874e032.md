@@ -81,8 +81,6 @@ For more information, see [http://uri.etsi.org/01903/v1.3.2/ts\_101903v010302p.p
 
 ## Procedure
 
-
-
 **Related Information**  
 
 

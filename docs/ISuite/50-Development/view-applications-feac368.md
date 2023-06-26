@@ -39,5 +39,5 @@ As an admin, you can now view the subscribed applications from Integration Suite
 **Related Information**  
 
 
-[Create an Application](create-an-application-7b4e71b.md "Create an Application to consume the required APIs.")
+[Create an Application \[Classic Design\]](create-an-application-classic-design-7b4e71b.md "Create an Application to consume the required APIs.")
 

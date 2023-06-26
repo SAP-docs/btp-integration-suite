@@ -228,7 +228,7 @@ As a tenant administrator, you can group application roles in role collections. 
     </td>
     <td valign="top">
 
-    View the Integration Advisor capability tile on the Integration Suite Launchpad.
+    View the Open Connectors capability tile on the Integration Suite Launchpad.
 
     > ### Note:  
     > Just adding the OpenConnectors\_User role collection in the SAP BTP Trust Configuration cockpit isn't sufficient to access Integration Advisor. The newly added user will have to be explicitly added as a **member** by the user who enabled the Integration Suite capability \(or by any other user who already has the **Account Admin** privileges\).

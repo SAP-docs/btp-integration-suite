@@ -120,7 +120,16 @@ With the *Alias* field, you can narrow down further the check that a specific ke
 </td>
 <td valign="top">
 
-Selecting *Include new SAP Key* allows you to execute the connectivity test with the key pair from the keystore. You can therefore test the back end connectivity before activating the new SAP key. For further information, see: [Activating a New Key Pair Provided by SAP](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/383be7ad9c8840e38facf9323619907b.html?version=Cloud&q=new%20sap%20key).
+Choosing *Include new SAP Key* allows you to execute the connectivity test with the new key pair from the *New SAP Keys* keystore.
+
+Using this option, you can test the backend connectivity before activating the new SAP key.
+
+For further information, see: [Activating a New Key Pair Provided by SAP](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/383be7ad9c8840e38facf9323619907b.html?version=Cloud&q=new%20sap%20key).
+
+> ### Note:  
+> The connectivity test checks if the TLS handshake uses the key certificate pair. However, it doesn't validate any authorizations in the target system.
+> 
+> If *Include new SAP Key* is selected and the specified certificate is not available in the *New SAP Keys* keystore, the system uses the certificate from the *Current* keystore as fallback option.
 
 
 
