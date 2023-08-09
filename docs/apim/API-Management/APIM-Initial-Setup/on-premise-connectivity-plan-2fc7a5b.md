@@ -97,33 +97,33 @@ After you have created a service instance, proceed with:
     <tr>
     <td valign="top">
     
-         `“instance-secret”`\(without payload\)
+    `“instance-secret”`\(without payload\)
 
 
     
     </td>
     <td valign="top">
     
-    
-    
-    </td>
-    <td valign="top">
-    
-        Low
-
 
     
     </td>
     <td valign="top">
     
-        For instance-secret, the clientSecret generated is same for all the keys.
+    Low
 
 
     
     </td>
     <td valign="top">
     
-        ```
+    For instance-secret, the clientSecret generated is same for all the keys.
+
+
+    
+    </td>
+    <td valign="top">
+    
+    ```
     {
     	"url": "https://token-enpoint-url",
     	"clientId": "your-client-id",	
@@ -141,14 +141,14 @@ After you have created a service instance, proceed with:
     <tr>
     <td valign="top">
     
-         `“instance-secret”`\(with payload\)
+    `“instance-secret”`\(with payload\)
 
 
     
     </td>
     <td valign="top">
     
-        ```
+    ```
     {
        "xsuaa":{
           "credential-type":"instance-secret"
@@ -162,21 +162,21 @@ After you have created a service instance, proceed with:
     </td>
     <td valign="top">
     
-        Low
+    Low
 
 
     
     </td>
     <td valign="top">
     
-        For instance-secret, the clientSecret generated is same for all the keys.
+    For instance-secret, the clientSecret generated is same for all the keys.
 
 
     
     </td>
     <td valign="top">
     
-        ```
+    ```
     {
     	"url": "https://token-enpoint-url",
     	"clientId": "your-client-id",	
@@ -193,14 +193,14 @@ After you have created a service instance, proceed with:
     <tr>
     <td valign="top">
     
-         `"binding-secret"` 
+    `"binding-secret"` 
 
 
     
     </td>
     <td valign="top">
     
-        ```
+    ```
     {
        "xsuaa":{
           "credential-type":"binding-secret"
@@ -214,21 +214,21 @@ After you have created a service instance, proceed with:
     </td>
     <td valign="top">
     
-        Medium
+    Medium
 
 
     
     </td>
     <td valign="top">
     
-        For binding-secret, the clientSecret generated for every key is unique.
+    For binding-secret, the clientSecret generated for every key is unique.
 
 
     
     </td>
     <td valign="top">
     
-        ```
+    ```
     {
     	"url": "https://token-enpoint-url",
     	"clientId": "your-client-id",	
@@ -245,7 +245,7 @@ After you have created a service instance, proceed with:
     <tr>
     <td valign="top">
     
-        `"x509"`
+    `"x509"`
 
     \(certificate based\)
 
@@ -254,7 +254,7 @@ After you have created a service instance, proceed with:
     </td>
     <td valign="top">
     
-        ```
+    ```
     {
        "xsuaa":{
           "credential-type":"x509",
@@ -273,21 +273,21 @@ After you have created a service instance, proceed with:
     </td>
     <td valign="top">
     
-        High
+    High
 
 
     
     </td>
     <td valign="top">
     
-        For X509, ensure that the credential rotation is done based on the validity provided in the payload. For example, delete and create a new service key every 65 days.
+    For X509, ensure that the credential rotation is done based on the validity provided in the payload. For example, delete and create a new service key every 65 days.
 
 
     
     </td>
     <td valign="top">
     
-        For admin role:
+    For admin role:
 
     ```
     {

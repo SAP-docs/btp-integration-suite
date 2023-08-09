@@ -62,14 +62,14 @@ Consider the following examples:
     <tr>
     <td valign="top">
     
-        Overview
+    Overview
 
 
     
     </td>
     <td valign="top">
     
-        You can edit the following:
+    You can edit the following:
 
     -   Name of the API
     -   Host Alias
@@ -84,30 +84,14 @@ Consider the following examples:
     <tr>
     <td valign="top">
     
-        Proxy Endpoint
+    Proxy Endpoint
 
 
     
     </td>
     <td valign="top">
     
-        You can add the proxy endpoint and the route rules.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Target Endpoint
-
-
-    
-    </td>
-    <td valign="top">
-    
-        You can choose URL, API Provider, or API proxy, as the target endpoint as well as enter target endpoint rules.
+    You can add the proxy endpoint and the route rules.
 
 
     
@@ -116,14 +100,30 @@ Consider the following examples:
     <tr>
     <td valign="top">
     
-        Resources
+    Target Endpoint
 
 
     
     </td>
     <td valign="top">
     
-        You can add resources, or change already existing ones.
+    You can choose URL, API Provider, or API proxy, as the target endpoint as well as enter target endpoint rules.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Resources
+
+
+    
+    </td>
+    <td valign="top">
+    
+    You can add resources, or change already existing ones.
 
 
     

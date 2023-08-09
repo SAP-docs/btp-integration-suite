@@ -2,7 +2,7 @@
 
 # What is API Management
 
- Create simple digital experiences for your consumers, partners, and employees. 
+Create simple digital experiences for your consumers, partners, and employees. 
 
 SAP API Management lets you publish, promote, and oversee APIs in a secure and scalable environment.
 

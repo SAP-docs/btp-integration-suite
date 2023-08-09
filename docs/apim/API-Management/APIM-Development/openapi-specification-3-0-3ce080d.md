@@ -10,7 +10,7 @@ API Management supports creation and import of API definitions in Open API Speci
 
 To know more about importing APIs, see [Import an API](import-an-api-9342a93.md).
 
-To know more about creating APIs using the API designer, see [Create an API from API Designer](create-an-api-from-api-designer-26e1bbd.md).
+To know more about creating APIs using the API designer, see [Create an API Using the API Designer](create-an-api-using-the-api-designer-26e1bbd.md).
 
 
 

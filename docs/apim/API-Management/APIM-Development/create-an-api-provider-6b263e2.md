@@ -1,8 +1,10 @@
 <!-- loio6b263e2c1b2d4d9ba20bcd7872eedd9e -->
 
+<link rel="stylesheet" type="text/css" href="../../css/sap-icons.css"/>
+
 # Create an API Provider
 
-Create an API provider to connect to an API provider and browse for APIs.
+Define the details of the host you want an application to reach by creating an API provider.
 
 
 
@@ -10,26 +12,17 @@ Create an API provider to connect to an API provider and browse for APIs.
 
 ## Prerequisites
 
--   You are assigned the `APIPortal.Administrator` role.
+> ### Note:  
+> If you already have a subscription for Integration Suite, and looking for steps to configure an API provider, get redirected to the Integration Suite documentation by clicking [here](https://help.sap.com/docs/integration-suite/sap-integration-suite/configure-create-api-provider?q=Create%20an%20API%20Provider&version=CLOUD).
 
--   The following prerequisite is applicable for *Open Connectors* type provider only.
+-   You’re assigned the `APIPortal.Administrator` role.
 
-    You have enabled *open connector* service in the cockpit and noted down the organization secret and user secret.
+-   For *Open Connectors* type provider, fetch the *Organization Secret*and *User Secret* from the Open Connectors page.
 
     > ### Note:  
-    > To enable open connector service, perform the following:
-    > 
-    > -   Navigate to *SAP BTP Cockpit* \> *Subscriptions* \> *Open Connectors*
-    > 
-    > -   Choose *Subscribe*
-    > 
-    > -   After the service is subscribed, choose *Go to Application* link.
-    > 
-    > -   You are navigated to Open Connectors home page. In the home page, choose the user icon at the bottom left of the screen and note down the *Organization Secret*and *User Secret*.
-    > 
-    > -   User must have created at least one instance against the ORG/USER secret to create an API proxy in API portal.
+    > Open Connectors is now a part of SAP Integration Suite. To activate the capability, choose *Add Capabilities* and choose *Extend Non-SAP Connectivity* in the *Activate Capabilities* screen. For more information, see [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities?state=DRAFT&version=CLOUD) and [Configuring User Access](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-user-access?state=DRAFT&version=CLOUD&q=the%20Organization%20Secret%20and%20User%20Secret). Once the capability is activated, navigate back to the home page and choose the :pencil2: icon on the *Extend Non-SAP Connectivity* tile. On the *Integration Suite Open Connectors* page, choose the :gear: icon at the bottom left of the screen and note down the *Organization Secret*and *User Secret*.
 
--   The following prerequisites are applicable for *On Premise* type Provider only.
+-   The following prerequisites are applicable for *On-Premise* type provider only.
     1.  Expose the on-premise system using *Cloud Connector*. For more details, see [here](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e6c7616abb5710148cfcf3e75d96d596.html).
     2.  From your *Subaccount*, choose *Cloud Connectors* from the left-hand pane and validate if the system exposed in the previous step is visible in the list.
 
@@ -40,7 +33,7 @@ Create an API provider to connect to an API provider and browse for APIs.
 
 ## Context
 
-If you want to configure the API Management solution to access data from a server that offers a specific service, for example, SAP Gateway service, SAP HANA, SAP Process Integration/Process Orchestration, SAP S/4 HANA, or any 3rd party cloud solutions, we recommend configuring the solution as an API provider in the connection parameters. The API Management enables you to configure connections to OData-hosted systems.
+If you want to configure the API Management solution to access data from a server that offers a specific service, for example, SAP Gateway service, SAP HANA, SAP Process Integration/Process Orchestration, SAP S/4HANA, or any 3rd party cloud solutions, we recommend configuring the solution as an API provider in the connection parameters. The API Management enables you to configure connections to OData-hosted systems.
 
 > ### Note:  
 > You can see the following tutorial for visual instructions on how to [Create an API Provider System](https://developers.sap.com/tutorials/hcp-apim-create-provider.html).
@@ -53,16 +46,16 @@ If you want to configure the API Management solution to access data from a serve
 
 1.  Log on to the API portal.
 
-2.  In the navigation bar on the top-left, choose Choose the navigation icon on the left and choose *Configure*.
+2.  Choose the navigation icon on the left and choose *Configure*.
 
-    The list of API providers appear.
+    The lists of API providers appear.
 
 3.  Choose *Create*.
 
 4.  Enter a name and a description for the API provider.
 
     > ### Note:  
-    > You cannot use the names mentioned in following list as API provider names:
+    > Do not use the names mentioned in following list:
     > 
     > • DEST\_CI
     > 
@@ -80,12 +73,12 @@ If you want to configure the API Management solution to access data from a serve
     > 
     > • TC\_\*
 
-5.  Go to the *CONNECTION* section, enter the required details based on the type of connection you select. Choose:
+5.  Go to the *CONNECTION* section, enter the required details based on the type of connection you selected.
 
-    -   *Internet* to connect to a system on Cloud.
-    -   *On Premise* to connect to the on-premise system through Cloud Connector.
-    -   *Open Connectors* to connect third-party APIs via harmonized RESTful APIs.
-    -   *Cloud Integration* to access all the service endpoints.
+    -   Choose *Internet* to connect to a system on Cloud.
+    -   Choose *On Premise* to connect to the on-premisnee system through Cloud Connector.
+    -   Choose *Open Connectors* to connect third-party APIs via harmonized RESTful APIs.
+    -   Choose *Cloud Integration* to access all the service endpoints.
 
     -   *Internet* connection type:
 
@@ -112,30 +105,14 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                Host
+        Host
 
 
         
         </td>
         <td valign="top">
         
-                Enter a value for the host in the format "example.com".
-
-
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-                Port
-
-
-        
-        </td>
-        <td valign="top">
-        
-                Enter 443 as the port number for SSL and 8080 for all other ports.
+        Enter a value for the host in the format "example.com".
 
 
         
@@ -144,17 +121,33 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                Use SSL
+        Port
 
 
         
         </td>
         <td valign="top">
         
-                Select the checkbox to secure the connection using SSL \(HTTPS protocol\).
+        Enter 443 as the port number for SSL and 8080 for all other ports.
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        Use SSL
+
+
+        
+        </td>
+        <td valign="top">
+        
+        Select the checkbox to secure the connection using SSL \(HTTPS protocol\).
 
         > ### Note:  
-        > Setting this option is not sufficient to set up the SSL connection. If you want to use SSL to secure connections to the configured destination, then upload the server certificate in the SAP BTP Cockpit.
+        > Setting this option is sufficient to set up the SSL connection. If you want to use SSL to secure connections to the configured destination, then upload the server certificate in the SAP BTP cockpit.
 
 
         
@@ -163,14 +156,14 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                Trust store certificate
+        Trust store certificate
 
 
         
         </td>
         <td valign="top">
         
-                By default, API Management trusts all TLS certificates. To validate a certificate, create a truststore to configure API Management to validate the certificate. Specify the trust store certificate details in the API Provider.
+        By default, API Management trusts all TLS certificates. To validate a certificate, create a truststore to configure API Management to validate the certificate. Specify the trust store certificate details in the API provider.
 
 
         
@@ -179,14 +172,14 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                Key store certificate
+        Key store certificate
 
 
         
         </td>
         <td valign="top">
         
-                Specify the key store certificate details.
+        Specify the key store certificate details.
 
 
         
@@ -217,30 +210,14 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                Host
+        Host
 
 
         
         </td>
         <td valign="top">
         
-                Enter a value for the host in the format "example.com". Ensure that you provide the cloud connecter Virtual Host.
-
-
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-                Port
-
-
-        
-        </td>
-        <td valign="top">
-        
-                Enter the port number exposed in the *Cloud Connector* as per the host.
+        Enter a value for the host in the format "example.com". Ensure that you provide the cloud connecter virtual host.
 
 
         
@@ -249,17 +226,33 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                Location ID
+        Port
 
 
         
         </td>
         <td valign="top">
         
-                If you have configured multiple cloud connectors to your SAP BTP account, then provide the location ID of the cloud connector that you want to add.
+        Enter the port number exposed in the *Cloud Connector* as per the host.
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        Location ID
+
+
+        
+        </td>
+        <td valign="top">
+        
+        If you have configured multiple cloud connectors to your SAP BTP account, then provide the location ID of the cloud connector that you want to add.
 
         > ### Note:  
-        > The Location ID value for a cloud connector is set while configuring the cloud connector.
+        > The *Location ID* value for a cloud connector is set while configuring the cloud connector.
 
 
         
@@ -268,14 +261,14 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                Authentication
+        Authentication
 
 
         
         </td>
         <td valign="top">
         
-                Choose an authentication method:
+        Choose an authentication method:
 
         -   *None*: No Authentication. This is a pass through flow and validation is initiated at the API portal layer.
         -   *Principal Propagation*: Enables authentication of a message in the receiver system with the same user that issued the message in the corresponding sender system. For more details, see [Principal Propagation](principal-propagation-e2f3313.md).
@@ -287,17 +280,17 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                Additional Property
+        Additional Property
 
 
         
         </td>
         <td valign="top">
         
-                Select *sap-client* from the dropdown and enter the three-digit client ID. Client-specific data is identified with the client identifier. SAP-client configured in API provider has the highest precedence for runtime calls, metadata fetch, and discovery.
+        Select *sap-client* from the dropdown and enter the three-digit client ID. Client-specific data is identified with the client identifier. SAP-client configured in API provider has the highest precedence for runtime calls, metadata fetch, and discovery.
 
         > ### Note:  
-        > The metadata would be fetched from the specified client ID.
+        > The metadata is fetched from the specified client ID.
 
 
         
@@ -333,30 +326,14 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                Region
+        Region
 
 
         
         </td>
         <td valign="top">
         
-                Select a region from the drop-down list.
-
-
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-                Host
-
-
-        
-        </td>
-        <td valign="top">
-        
-                Value is auto populated based on the selected region.
+        Select a region from the dropdown list.
 
 
         
@@ -365,30 +342,14 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                Port
+        Host
 
 
         
         </td>
         <td valign="top">
         
-                Value is auto populated.
-
-
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-                Organization Secret
-
-
-        
-        </td>
-        <td valign="top">
-        
-                Enter the organization secret. For more information on how to obtain the value, see prerequisites section.
+        Value is auto populated based on the selected region.
 
 
         
@@ -397,14 +358,46 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                User Secret
+        Port
 
 
         
         </td>
         <td valign="top">
         
-                Enter the user secret. For more information on how to obtain the value, see prerequisites section.
+        Value is auto populated.
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        Organization Secret
+
+
+        
+        </td>
+        <td valign="top">
+        
+        Enter the organization secret. For more information on how to obtain the value, see prerequisites section.
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        User Secret
+
+
+        
+        </td>
+        <td valign="top">
+        
+        Enter the user secret. For more information on how to obtain the value, see prerequisites section.
 
 
         
@@ -437,14 +430,14 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                Cloud Integration Host
+        Cloud Integration Host
 
 
         
         </td>
         <td valign="top">
         
-                Enter a tenant-specific address of the Cloud Integration system which can be accessed to by a dialog user \(for example, an integration developer using the Web UI\) or through the OData API.
+        Enter a tenant-specific address of the Cloud Integration system which can be accessed to by a dialog user \(for example, an integration developer using the Web UI\) or through the OData API.
 
         Address of Web UI: https://<Cloud Integration Host\>/itspaces.
 
@@ -457,14 +450,14 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                Port
+        Port
 
 
         
         </td>
         <td valign="top">
         
-                443 \(Default value\)
+        443 \(Default value\)
 
 
         
@@ -473,20 +466,20 @@ If you want to configure the API Management solution to access data from a serve
         <tr>
         <td valign="top">
         
-                Authentication
+        Authentication
 
 
         
         </td>
         <td valign="top">
         
-                The authentication type can be:
+        The authentication type can be:
 
-        -   *Basic* for connecting requests to server. This Basic authentication requires you to enter a usernam and password.
+        -   *Basic* for connecting requests to server. This Basic authentication requires you to enter a username and password.
 
         -   *OAuth2ClientCredentials* for connecting requests to the server.
 
-            The OAuth2ClientCredentials authentication needs you to provide:
+            The OAuth2ClientCredentials authentication needs you to provide the following details:
 
             -   Client ID
             -   Client Secret
@@ -532,14 +525,14 @@ If you want to configure the API Management solution to access data from a serve
     <tr>
     <td valign="top">
     
-        Path Prefix
+    Path Prefix
 
 
     
     </td>
     <td valign="top">
     
-        Specify the path prefix.
+    Specify the path prefix.
 
 
     
@@ -548,17 +541,17 @@ If you want to configure the API Management solution to access data from a serve
     <tr>
     <td valign="top">
     
-        Service Collection URL
+    Service Collection URL
 
 
     
     </td>
     <td valign="top">
     
-        Specify the relative path from where the catalog service should be fetched. For example, ***/CATALOGSERVICE/ServiceCollection***.
+    Specify the relative path from where the catalog service should be fetched. For example, `/CATALOGSERVICE/ServiceCollection`.
 
     > ### Note:  
-    > This option is only relevant for SAP Gateway-enabled SAP NetWeaver systems. A catalog service retrieves a list of all available OData services on SAP Gateway. It is based on a catalog service pattern proposed by Microsoft and consists of an implementation approach of the catalog service pattern in the context of SAP Gateway. Only use the field if you want to fetch services from SAP Gateway. For more information on the catalog service, see [here](http://help.sap.com/saphelp_gateway20sp10/helpdata/en/26/50ea3c3ceb44b0a437fa44c420ad49/content.htm).
+    > The option is only relevant for SAP Gateway-enabled SAP NetWeaver systems. A catalog service retrieves a list of all available OData services on SAP Gateway. It’s based on a catalog service pattern proposed by Microsoft and consists of an implementation approach of the catalog service pattern in the context of SAP Gateway. Only use the field if you want to fetch services from SAP Gateway. For more information on the catalog service, see [here](http://help.sap.com/saphelp_gateway20sp10/helpdata/en/26/50ea3c3ceb44b0a437fa44c420ad49/content.htm).
 
 
     
@@ -567,14 +560,14 @@ If you want to configure the API Management solution to access data from a serve
     <tr>
     <td valign="top">
     
-        Catalog URL
+    Catalog URL
 
 
     
     </td>
     <td valign="top">
     
-        Automatically populates the complete URL in the format https:<***host***\>:<***port***\>/<***path prefix***\>/Catalog Service.
+    Automatically populates the complete URL in the format https:<`host`\>:<`port`\>/<`path prefix`\>/Catalog Service.
 
 
     
@@ -583,14 +576,14 @@ If you want to configure the API Management solution to access data from a serve
     <tr>
     <td valign="top">
     
-        Authentication
+    Authentication
 
 
     
     </td>
     <td valign="top">
     
-        Select the authentication method to be used for connection requests to the server. By default, the authentication type is set to *None*. If you choose *Basic*, then provide a user name and password as authentication credentials in the respective fields.
+    Select the authentication method to be used for connection requests to the server. By default, the authentication type is set to *None*. If you choose *Basic*, then provide a user name and password as authentication credentials in the respective fields.
 
 
     
@@ -603,10 +596,10 @@ If you want to configure the API Management solution to access data from a serve
 
 7.  Save the changes.
 
-    You can view the created API Provider, by navigating to *Configure* \> *API Provider*. Further, you can test the connection of the API Provider, by navigating to the API Provider details page and selecting *Test Connection*.
+    Choose*Configure* \> *API Provider* to view the newly created API provider. Further, you can test the connection of the API provider, by navigating to the API provider's details page and selecting *Test Connection*.
 
     > ### Note:  
-    > The following table lists the attributes considered for Test Connection:
+    > The following table lists the attributes considered for testing the connection:
     > 
     > **Test Connection**
     > 
@@ -673,6 +666,6 @@ If you want to configure the API Management solution to access data from a serve
     > </tr>
     > </table>
     > 
-    > A fixed socket timeout of 5 seconds and connection timeout of 3 seconds is added to the Http Client, which makes the HEAD call to the API Provider.
+    > A fixed socket timeout of 5 seconds and connection timeout of 3 seconds is added to the http client, which makes the HEAD call to the API provider.
 
 

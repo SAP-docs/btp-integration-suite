@@ -35,7 +35,7 @@ To add a Source node in the Transport Management Applications, execute the follo
     > 
     > If Cloud Integration and API Management capabilities are activated under Integration suite subscription, then both the capabilities can use the same source node and the destination node.
 
-6.  In the *Create Node* dialog box, enter a node name that is unique, for example ***Source\_node1***, and enable the *Allow Upload to Node* option.
+6.  In the *Create Node* dialog box, enter a node name that is unique, for example `Source_node1`, and enable the *Allow Upload to Node* option.
 
 7.  Choose *OK*.
 

@@ -115,7 +115,7 @@ EntityIdentifier \(Mandatory\)
 
 The value that identifies the specific entity whose profile should be retrieved.
 
-The `ref` attribute identifies the variable that provides the source of the identifier, for example, ***request.queryparam.apikey***.
+The `ref` attribute identifies the variable that provides the source of the identifier, for example, `request.queryparam.apikey`.
 
 The `type` attribute identifies the EntityType populated by the referenced variable, such as `consumerkey`
 

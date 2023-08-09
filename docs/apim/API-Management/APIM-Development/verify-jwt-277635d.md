@@ -307,7 +307,7 @@ The policy verifies that the issuer in the JWT matches the string specified in t
 
 Specifies a value in the JSON web key set \(JWKS\) format containing a set of public keys. If the JWT contains a key ID in the set of JWKS, then the policy uses the correct public key to verify the JWT.
 
- 
+
 
 ```
 <PublicKey>
@@ -337,7 +337,7 @@ or
 
 Use this element only when the algorithm is an RSA variant. This element specifies the public key to verify the signature. Specify the PEM-encoded key directly or use the ref attribute to pass the key in a flow variable.
 
- 
+
 
 ```
 <PublicKey>

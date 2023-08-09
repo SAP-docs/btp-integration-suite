@@ -61,14 +61,14 @@ Create an instance of API portal, API Management service and fetch the service k
     <tr>
     <td valign="top">
     
-        Name
+    Name
 
 
     
     </td>
     <td valign="top">
     
-        Enter ***APIManagement*** as the destination name.
+    Enter `APIManagement` as the destination name.
 
     Please note that this value is case-sensitive.
 
@@ -79,30 +79,14 @@ Create an instance of API portal, API Management service and fetch the service k
     <tr>
     <td valign="top">
     
-        Type
+    Type
 
 
     
     </td>
     <td valign="top">
     
-        Enter ***HTTP*** as the supported type.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Description
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Enter a brief description stating the purpose of creating a new destination in the *Description* field.
+    Enter `HTTP` as the supported type.
 
 
     
@@ -111,30 +95,14 @@ Create an instance of API portal, API Management service and fetch the service k
     <tr>
     <td valign="top">
     
-        URL
+    Description
 
 
     
     </td>
     <td valign="top">
     
-        Provide the URL from the service key details and append ***/api/1.0/transportmodule/Transport*** to it.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Proxy Type
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Internet
+    Enter a brief description stating the purpose of creating a new destination in the *Description* field.
 
 
     
@@ -143,30 +111,14 @@ Create an instance of API portal, API Management service and fetch the service k
     <tr>
     <td valign="top">
     
-        Authentication
+    URL
 
 
     
     </td>
     <td valign="top">
     
-        Select the authentication type as ***OAuth2ClientCredentials***.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Client ID
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Provide the client ID from the service key details.
+    Provide the URL from the service key details and append `/api/1.0/transportmodule/Transport` to it.
 
 
     
@@ -175,14 +127,14 @@ Create an instance of API portal, API Management service and fetch the service k
     <tr>
     <td valign="top">
     
-        Client Secret
+    Proxy Type
 
 
     
     </td>
     <td valign="top">
     
-        Enter the client secret.
+    Internet
 
 
     
@@ -191,14 +143,62 @@ Create an instance of API portal, API Management service and fetch the service k
     <tr>
     <td valign="top">
     
-        Token Service URL
+    Authentication
 
 
     
     </td>
     <td valign="top">
     
-        Provide the URL from the service key details.
+    Select the authentication type as `OAuth2ClientCredentials`.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Client ID
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Provide the client ID from the service key details.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Client Secret
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Enter the client secret.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Token Service URL
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Provide the URL from the service key details.
 
 
     
@@ -208,7 +208,7 @@ Create an instance of API portal, API Management service and fetch the service k
     
 5.  Choose *Save*.
 
-    You can also do a *Check Connection* to verify whether you've added the destination correctly. Once you perform a check connection, the following pop-up message appears: ***Connection to "APIManagement" is established.***
+    You can also do a *Check Connection* to verify whether you've added the destination correctly. Once you perform a check connection, the following pop-up message appears: `Connection to "APIManagement" is established.`
 
     > ### Note:  
     > In case you receive a "401: Unauthorized" response code, please note that its an accepted response code.

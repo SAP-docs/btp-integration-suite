@@ -59,7 +59,7 @@ The creation of service instance is successful.
 
 Now, for the created service instance, generate a service key from the steps given below:
 
- <a name="task_mc5_3n3_zsb"/>
+<a name="task_mc5_3n3_zsb"/>
 
 <!-- task\_mc5\_3n3\_zsb -->
 
@@ -96,7 +96,7 @@ Now, for the created service instance, generate a service key from the steps giv
     *Copy* the client credentials in a notepad and use it while creating the API Provider.
 
 
- <a name="task_emw_lz3_zsb"/>
+<a name="task_emw_lz3_zsb"/>
 
 <!-- task\_emw\_lz3\_zsb -->
 

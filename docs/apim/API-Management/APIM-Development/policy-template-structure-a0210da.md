@@ -73,9 +73,9 @@ FileResource
 
 Lists all the scripts attached to the policy. Only Java, Python, and XSL Scripts are supported. Follow the below naming convention:
 
--   Java Script: ***<JavaScript name\>.js***
--   Python script: ***<PythonScript name\>.py***
--   XSL script: ***<XSLScript name\>.xsl*** 
+-   Java Script: `<JavaScript name>.js`
+-   Python script: `<PythonScript name>.py`
+-   XSL script: `<XSLScript name>.xsl` 
 
 
 
@@ -98,7 +98,7 @@ Policy
 </td>
 <td valign="top">
 
-Contains a list of all available policies. Each policy is available as a separate file with the naming convention ***<Policy name\>.xml***.
+Contains a list of all available policies. Each policy is available as a separate file with the naming convention `<Policy name>.xml`.
 
 
 
@@ -107,14 +107,14 @@ Contains a list of all available policies. Each policy is available as a separat
 <tr>
 <td valign="top">
 
- ***<policytemplatename\>.xml*** 
+`<policytemplatename>.xml` 
 
 
 
 </td>
 <td valign="top">
 
-\\PolicyTemplateContainer\\***<policytemplate\>.xml*** 
+\\PolicyTemplateContainer\\`<policytemplate>.xml` 
 
 
 

@@ -20,7 +20,7 @@ This block diagram shows how the content is selected and transported when the Tr
 
 This block diagram shows how the content is selected and transported when the Transport Management service is already enabled for other SAP offerings and you’re trying to use it for transporting APIs and its related artifacts from the development or test environment to the production environment:
 
- ![](images/TMS_ISuite_Block_fe78dc7.png) 
+![](images/TMS_ISuite_Block_fe78dc7.png)
 
 > ### Note:  
 > In this case, you don't have to create a separate subaccount for Transport Management service. You can continue to use the Transport Management service in the source subaccount.

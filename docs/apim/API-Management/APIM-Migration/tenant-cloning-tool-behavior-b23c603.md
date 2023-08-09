@@ -9,7 +9,7 @@ This topic describes the behavior of the Tenant Cloning Tool with respect to clo
 -   If you add or modify an entity in your source system, it is always cloned to the target system in your subsequent run of the Tenant Cloning Tool.
 -   If you add a new entity to your target system at any point, it is retained in the target system after the subsequent run of the Tenant Cloning Tool, irrespective of whether the entity is present in your source system or not.
 -   Newer state of an existing entity present in your source system is always migrated to the target system after the subsequent run of the Tenant Cloning Tool, and overwrites any older state of the entity in the target.
--   During the cloning of the Developer Portal entity ***Application Developer***, the app developer receives email notifications while being onboarded to the target Developer Portal.
+-   During the cloning of the Developer Portal entity `Application Developer`, the app developer receives email notifications while being onboarded to the target Developer Portal.
 
     We recommend that you inform your developers about the impending migration and email notifications that they might receive during the process.
 

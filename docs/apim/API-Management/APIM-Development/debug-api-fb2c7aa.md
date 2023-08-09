@@ -63,7 +63,7 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <tr>
     <td valign="top">
     
-        ![](images/Condition_Debug_7f30242.png)
+    ![](images/Condition_Debug_7f30242.png)
 
     Condition
 
@@ -72,7 +72,7 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     </td>
     <td valign="top">
     
-        Indicates a condition evaluated on the API
+    Indicates a condition evaluated on the API
 
 
     
@@ -81,7 +81,7 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <tr>
     <td valign="top">
     
-        ![](images/StateChange_Debug_bec35ed.png)
+    ![](images/StateChange_Debug_bec35ed.png)
 
     State Change
 
@@ -90,7 +90,7 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     </td>
     <td valign="top">
     
-        Indicates the change of state of the execution flow
+    Indicates the change of state of the execution flow
 
 
     
@@ -99,7 +99,7 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <tr>
     <td valign="top">
     
-        ![](images/Normal_3cefefd.png)
+    ![](images/Normal_3cefefd.png)
 
     Flow Information
 
@@ -108,7 +108,7 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     </td>
     <td valign="top">
     
-        Indicates the information about the current flow
+    Indicates the information about the current flow
 
 
     
@@ -117,7 +117,7 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <tr>
     <td valign="top">
     
-        ![](images/Info_Debug_8db3fb6.png)
+    ![](images/Info_Debug_8db3fb6.png)
 
     Execution
 
@@ -126,7 +126,7 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     </td>
     <td valign="top">
     
-        Indicates the result of a condition execution
+    Indicates the result of a condition execution
 
 
     
@@ -135,7 +135,7 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <tr>
     <td valign="top">
     
-        ![](images/Error_Debug_cc46eac.png)
+    ![](images/Error_Debug_cc46eac.png)
 
     Error
 
@@ -144,7 +144,7 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     </td>
     <td valign="top">
     
-        Indicates an occurrence of error at the time of policy execution
+    Indicates an occurrence of error at the time of policy execution
 
 
     
@@ -179,30 +179,14 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <tr>
     <td valign="top">
     
-        Proxy Endpoint
+    Proxy Endpoint
 
 
     
     </td>
     <td valign="top">
     
-        Indicates the selected proxy Endpoint flow for execution. An API proxy can have multiple named proxy endpoints
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Request Headers
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Lists the HTTP request headers
+    Indicates the selected proxy Endpoint flow for execution. An API proxy can have multiple named proxy endpoints
 
 
     
@@ -211,30 +195,14 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <tr>
     <td valign="top">
     
-        Request Content
+    Request Headers
 
 
     
     </td>
     <td valign="top">
     
-        Displays the HTTP request body
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Variables Read
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Lists the flow variables that were read by a policy
+    Lists the HTTP request headers
 
 
     
@@ -243,30 +211,14 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <tr>
     <td valign="top">
     
-        Variables Read and Assigned
+    Request Content
 
 
     
     </td>
     <td valign="top">
     
-        Lists the flow variables that were read and assigned a value by a policy.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Target Endpoint
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Indicates the selected Target Endpoint for execution
+    Displays the HTTP request body
 
 
     
@@ -275,14 +227,14 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <tr>
     <td valign="top">
     
-        Response Headers
+    Variables Read
 
 
     
     </td>
     <td valign="top">
     
-        Lists the HTTP response headers
+    Lists the flow variables that were read by a policy
 
 
     
@@ -291,14 +243,62 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <tr>
     <td valign="top">
     
-        Response Content
+    Variables Read and Assigned
 
 
     
     </td>
     <td valign="top">
     
-        Displays the HTTP response body
+    Lists the flow variables that were read and assigned a value by a policy.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Target Endpoint
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Indicates the selected Target Endpoint for execution
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Response Headers
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Lists the HTTP response headers
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Response Content
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Displays the HTTP response body
 
 
     

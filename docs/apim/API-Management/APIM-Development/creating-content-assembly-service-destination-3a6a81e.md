@@ -18,7 +18,7 @@ Create an instance of Content Agent and fetch the service keys. For more informa
 
 To create the service instance, follow the steps described in [Create SAP Content Agent Service Destination](https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/a4da0c26ced74bbfbc60e7f607dc05ab.html?version=Latest&q=destination).
 
-After creating the destination, you can also do a *Check Connection* to verify whether you've added the destination correctly. Once you perform a check connection, the following pop-up message appears: ***Connection to "ContentAssemblyService" is established. Response returned: "401: Unauthorized"***
+After creating the destination, you can also do a *Check Connection* to verify whether you've added the destination correctly. Once you perform a check connection, the following pop-up message appears: `Connection to "ContentAssemblyService" is established. Response returned: "401: Unauthorized"`
 
 > ### Note:  
 > In this case, 401 is an accepted response code.

@@ -75,14 +75,14 @@ To copy an API proxy, proceed as follows:
     <tr>
     <td valign="top">
     
-         *Save as Draft* 
+    *Save as Draft* 
 
 
     
     </td>
     <td valign="top">
     
-        *Not Deployed*
+    *Not Deployed*
 
     API is available only in the API portal, and is not available for product assignments.
 
@@ -91,7 +91,7 @@ To copy an API proxy, proceed as follows:
     </td>
     <td valign="top">
     
-        *Deploy*
+    *Deploy*
 
     API is deployed and is ready for product assignments.
 
@@ -102,14 +102,14 @@ To copy an API proxy, proceed as follows:
     <tr>
     <td valign="top">
     
-         *Save and Deploy* 
+    *Save and Deploy* 
 
 
     
     </td>
     <td valign="top">
     
-        *Deployed*
+    *Deployed*
 
     Only deployed APIs can be selected for product publishing.
 
@@ -118,7 +118,7 @@ To copy an API proxy, proceed as follows:
     </td>
     <td valign="top">
     
-        *Undeploy*
+    *Undeploy*
 
     If any API is undeployed after being published, it is removed from the developer portal. When the API is deployed again, the product is updated. You can bring down an API without having to delete it from the product assignment. You cannot undeploy an API if it is the only one associated with the product.
 
@@ -143,5 +143,5 @@ To copy an API proxy, proceed as follows:
 
 [Export an API](export-an-api-420abb6.md "Once you create an API in the API portal, you can choose to export it.")
 
-[Create an API from API Designer](create-an-api-from-api-designer-26e1bbd.md "Model APIs in the Open API format that is available on the API portal.")
+[Create an API Using the API Designer](create-an-api-using-the-api-designer-26e1bbd.md "Model APIs in the Open API format that is available on the API portal.")
 

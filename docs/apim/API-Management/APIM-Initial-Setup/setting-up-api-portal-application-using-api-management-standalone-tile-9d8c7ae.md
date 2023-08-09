@@ -12,6 +12,9 @@ You can provision the API portal using the **API Management, API Portal** standa
 
 ## Prerequisites
 
+> ### Note:  
+> If you’re a new user, you can't subscribe to the API Management, API portal service independently anymore. To provide a comprehensive integration experience, API Management is only available as a capability of the SAP Integration Suite. For a new subscription of API Management, API portal subscribe to SAP Integration Suite. For more information, see [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities?q=Create%20an%20API%20Provider&version=CLOUD). For visual instructions on how to set up and configure API Management capability from Integration Suite, see [Set Up API Management from Integration Suite](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html) tutorial published on SAP site.
+
 -   You already have a subaccount and have enable the Cloud Foundry environment in this subaccount. For more information, see [Create a Subaccount](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/05280a123d3044ae97457a25b3013918.html?q=entitlements).
 
 -   An *API Management, API portal* entitlement has been created for your subaccount. For more information, see [Configure Entitlements and Quotas for Subaccounts](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5ba357b4fa1e4de4b9fcc4ae771609da.html?q=entitlements).
@@ -28,7 +31,7 @@ You should have API Management, API portal subscription to set up the API portal
 > ### Note:  
 > Ensure that you don’t have an instance of a starter plan created in the same subaccount where you plan to create an API Management, API portal subscription. Also, note that API Management capabilities from Integration Suite and API Management subscriptions using the stand-alone tile can’t coexist in the same subaccount.
 
-Perform the step-by-step instructions to set up the API portal application. However, you can also refer the following video for visual instructions:  
+Perform the step-by-step instructions to set up the API portal application. However, you can also refer the following video for visual instructions: 
 
 
 
@@ -120,13 +123,13 @@ Once API Business Hub Enterprise is set up, navigate to :gear: and choose *Conne
 
 [Setting Up API Management Capability from Integration Suite](setting-up-api-management-capability-from-integration-suite-f6eb433.md "You can provision the API Management capability from the Integration Suite launchpad.")
 
-[Assign User Roles](assign-user-roles-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
+[Assign User Roles in API Management](assign-user-roles-in-api-management-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
 
 [Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "Cancel your API portal and API business hub enterprise application subscriptions to disable your account from the API Management service.")
 
 [Build APIs](../APIM-Development/build-apis-74c042b.md "API portal provides a common platform for API designers to define and publish APIs. Every API Management customer is provided with their own API portal application on cloud. The API portal offers capabilities to configure systems, build and publish APIs, analyze and test APIs.")
 
-[Create an API Provider](../APIM-Development/create-an-api-provider-6b263e2.md "Create an API provider to connect to an API provider and browse for APIs.")
+[Create an API Provider](../APIM-Development/create-an-api-provider-6b263e2.md "Define the details of the host you want an application to reach by creating an API provider.")
 
 [Create an API Proxy](../APIM-Development/create-an-api-proxy-4ac0431.md "Create API proxies.")
 

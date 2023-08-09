@@ -10,7 +10,7 @@ API Management enables developers to address XML vulnerabilities and minimize at
 
 You can attach this policy in the following locations:
 
- ![](images/Flow_policy_116062b.png) 
+![](images/Flow_policy_116062b.png)
 
 An example payload for the policy is as follows:
 
@@ -201,7 +201,7 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 > 
 > For the following example XML: `<ns1:myelem xmlns:abc="http://abc.com"/>`
 > 
-> The policy snippet below validates that the namespace prefix ***abc*** does not exceed the specified character limit.
+> The policy snippet below validates that the namespace prefix `abc` does not exceed the specified character limit.
 > 
 > ```
 > 
@@ -236,7 +236,7 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 > 
 > For the following example XML: `<?xml-doc type="text/xsl" href="doc.xsl"?>`
 > 
-> The policy snippet below validates that the processing instruction target ***xml-doc*** does not exceed the specified character limit.
+> The policy snippet below validates that the processing instruction target `xml-doc` does not exceed the specified character limit.
 > 
 > ```
 > 
@@ -319,7 +319,7 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 > </book>
 > ```
 > 
-> The policy snippet below validates that the elements book, title, author, and year do not have more than ***3*** attributes each. The attributes used for defining namespaces are not counted.
+> The policy snippet below validates that the elements book, title, author, and year do not have more than `3` attributes each. The attributes used for defining namespaces are not counted.
 > 
 > ```
 > <StructureLimits>
@@ -360,7 +360,7 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 > </a1>
 > ```
 > 
-> The policy snippet below validates that for the elements ***a1*** and ***a2***, the number of namespace definitions are limited to ***5*** each. In the above example, the ***a1*** element has ***0*** namespace definitions and the ***a2*** element has ***2*** namespace definitions: ***xmlns="http://sap.com"*** and***xmlns:abc="http://abc.com"***.
+> The policy snippet below validates that for the elements `a1` and `a2`, the number of namespace definitions are limited to `5` each. In the above example, the `a1` element has `0` namespace definitions and the `a2` element has `2` namespace definitions: `xmlns="http://sap.com"` and`xmlns:abc="http://abc.com"`.
 > 
 > ```
 > <StructureLimits>
@@ -449,7 +449,7 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 > </book>
 > ```
 > 
-> The policy snippet below validates that the element text values ***XML for Beginners***, ***Adam J. Smith***, and ***2010*** do not exceed ***20*** characters each.
+> The policy snippet below validates that the element text values `XML for Beginners`, `Adam J. Smith`, and `2010` do not exceed `20` characters each.
 > 
 > ```
 > <ValueLimits>
@@ -493,7 +493,7 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 > </book>
 > ```
 > 
-> The policy snippet below validates that the attribute value ***WEB*** does not exceed ***10*** characters.
+> The policy snippet below validates that the attribute value `WEB` does not exceed `10` characters.
 > 
 > ```
 > <ValueLimits>
@@ -528,7 +528,7 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 > 
 > For the following example XML: `<ns:my_element xmlns:ns="http://ns.com"/>`
 > 
-> The policy snippet below validates that the namespace URI value ***http://ns.com*** does not exceed ***15*** characters.
+> The policy snippet below validates that the namespace URI value `http://ns.com` does not exceed `15` characters.
 > 
 > ```
 > <ValueLimits>
@@ -573,7 +573,7 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 > </book>
 > ```
 > 
-> The value of the <comment\> element in the policy snippet below validates that the comment text ***This is a comment*** does not exceed ***10*** characters.
+> The value of the <comment\> element in the policy snippet below validates that the comment text `This is a comment` does not exceed `10` characters.
 > 
 > ```
 > <ValueLimits>
@@ -608,7 +608,7 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 > 
 > For the following example XML: `<?xml-doc type="text/xsl" href="doc.xsl"?>`
 > 
-> The policy snippet below validates that the processing instruction text ***type="text/xsl" href="doc.xsl"*** does not exceed ***10*** characters.
+> The policy snippet below validates that the processing instruction text `type="text/xsl" href="doc.xsl"` does not exceed `10` characters.
 > 
 > ```
 > <ValueLimits>
@@ -658,7 +658,7 @@ ExecutionFailed
 
 Errors that occur when specific thresholds set in the policies are exceeded.
 
-These errors include ***node depth***, ***attribute count***, ***child count***, ***namespace count***, ***element name length***,***attribute name and value length***, ***namespace prefix and URL length***, ***processing instruction name and data length***, ***comment length***, and ***text length***.
+These errors include `node depth`, `attribute count`, `child count`, `namespace count`, `element name length`,`attribute name and value length`, `namespace prefix and URL length`, `processing instruction name and data length`, `comment length`, and `text length`.
 
 
 

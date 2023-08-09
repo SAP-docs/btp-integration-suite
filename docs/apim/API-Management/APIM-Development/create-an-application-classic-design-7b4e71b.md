@@ -9,7 +9,7 @@ Create an Application to consume the required APIs.
 
 **Prerequisites**
 
--   You either have the `AuthGroup.API.ApplicationDeveloper` role or `AuthGroup.API.Admin` role assigned to you. For more information on roles, see [Assign User Roles](../APIM-Initial-Setup/assign-user-roles-911ca5a.md).
+-   You either have the `AuthGroup.API.ApplicationDeveloper` role or `AuthGroup.API.Admin` role assigned to you. For more information on roles, see [Assign User Roles in API Management](../APIM-Initial-Setup/assign-user-roles-in-api-management-911ca5a.md).
 
     > ### Note:  
     > The AuthGroup.API.ApplicationDeveloper role must not be assigned manually to a user form the SAP BTP Cockpit and this role must not be a part of any user group assignment.
@@ -47,7 +47,7 @@ In API Management, similar APIs are bundled together to form products, which are
     -   1500000 shows as 1.5M and 1000000000 shows as 1G
 
 3.  To create an application, choose ![](images/Add_icon_587bccc.png) in the *Applications* section.
-4.  In the *Create an Application* dialog, enter a ***Title***, a ***Description*** \(optional\), and a ***Callback URL*** \(optional\) for the application.
+4.  In the *Create an Application* dialog, enter a `Title`, a `Description` \(optional\), and a `Callback URL` \(optional\) for the application.
 5.  Choose ![](images/Add_icon_587bccc.png) to add products to this application.
 6.  In the *Add Products* dialog, select the products that you want to associate with the application.
 
@@ -101,8 +101,8 @@ A API business hub enterprise administrator can perform the following tasks:
     -   1500000 shows as 1.5M and 1000000000 shows as 1G
 
 3.  To create an application, under *Applications* section, choose ![](images/Add_icon_587bccc.png).
-4.  In the *Create an Application* dialog, enter a ***Title***, a ***Description*** \(optional\), and a ***Callback URL*** \(optional\) for the application.
-5.  As an administrator, you have the option to create an application on behalf of a user \(Application Developer\). To achieve this task, select the *Create this application on behalf of someone else* checkbox and enter the ***User ID*** of the user on behalf of whom you are creating the application. If you already possess an application key and secret, then select the *Already have Application Key and Secret* checkbox and enter the ***Application Key*** and ***Application Secret*** .
+4.  In the *Create an Application* dialog, enter a `Title`, a `Description` \(optional\), and a `Callback URL` \(optional\) for the application.
+5.  As an administrator, you have the option to create an application on behalf of a user \(Application Developer\). To achieve this task, select the *Create this application on behalf of someone else* checkbox and enter the `User ID` of the user on behalf of whom you are creating the application. If you already possess an application key and secret, then select the *Already have Application Key and Secret* checkbox and enter the `Application Key` and `Application Secret` .
 
     > ### Note:  
     > Application key and secret of an existing org can't be used in a new application in a new org. This implies that you'll not be able to use the same application key and secret in multiple orgs within the same data center and region.

@@ -116,7 +116,7 @@ For the version, we recommend that you use alphanumeric values. Based on the ver
 
 [Create an API](create-an-api-c0842d5.md "This topic describes the steps to create an API from the API portal.")
 
-[Create an API from API Designer](create-an-api-from-api-designer-26e1bbd.md "Model APIs in the Open API format that is available on the API portal.")
+[Create an API Using the API Designer](create-an-api-using-the-api-designer-26e1bbd.md "Model APIs in the Open API format that is available on the API portal.")
 
 [Copy an API](copy-an-api-23974d6.md "You can copy an API proxy in the same subscription.")
 

@@ -59,14 +59,14 @@ The API Type is set according to the following rules of precedence:
     <tr>
     <td valign="top">
     
-        OData V2 API
+    OData V2 API
 
 
     
     </td>
     <td valign="top">
     
-        ODATA
+    ODATA
 
 
     
@@ -75,14 +75,14 @@ The API Type is set according to the following rules of precedence:
     <tr>
     <td valign="top">
     
-        OData V4 API
+    OData V4 API
 
 
     
     </td>
     <td valign="top">
     
-        ODATAV4
+    ODATAV4
 
 
     
@@ -422,7 +422,7 @@ If you have defined the `x-sap-stateInfo` attribute, then you must also ensure t
 
 The following images show a sample API, which is marked `Deprecated` on the SAP Business Accelerator Hub:
 
- ![](images/deprecated_API_2_new_49ef553.png) 
+![](images/deprecated_API_2_new_49ef553.png)
 
 **Change Log for a decommissioned API** The following is a sample code snippet of the *Artifact.json* file in which `changelog` attribute is used to indicate the decommissioned state of the API.
 
@@ -465,7 +465,7 @@ The following images show a sample API, which is marked `Deprecated` on the SAP 
 
 The following images shows a sample API, which is marked `Decommissioned` on the SAP Business Accelerator Hub:
 
- ![](images/decommissioned_api_3e00d2c.png) 
+![](images/decommissioned_api_3e00d2c.png)
 
 
 

@@ -29,7 +29,7 @@ Information
 <tr>
 <td valign="top">
 
-***Alpha***
+`Alpha`
 
 
 
@@ -45,7 +45,7 @@ A version of an API meant for exploratory purposes.
 <tr>
 <td valign="top">
 
-***Beta***
+`Beta`
 
 
 
@@ -61,7 +61,7 @@ A version of an API that isn't meant for productive use.
 <tr>
 <td valign="top">
 
-***Active***
+`Active`
 
 
 
@@ -77,7 +77,7 @@ A version of an API that is meant for productive use.
 <tr>
 <td valign="top">
 
-***Deprecated***
+`Deprecated`
 
 
 
@@ -93,7 +93,7 @@ When an API is marked as deprecated, the customer is encouraged to use a success
 <tr>
 <td valign="top">
 
-***Decommissioned***
+`Decommissioned`
 
 
 
@@ -110,7 +110,7 @@ A version of an API where the service is no longer available, and can't be used 
 
 
 
-When you deprecate or decommission an API proxy, you must provide a deprecation or decommissioning date, as well as a successor API. This could be another API within the API portal or an external link. You can only mark an API proxy as ***Deprecated*** or ***Decommissioned*** while updating the proxy and not while creating it.
+When you deprecate or decommission an API proxy, you must provide a deprecation or decommissioning date, as well as a successor API. This could be another API within the API portal or an external link. You can only mark an API proxy as `Deprecated` or `Decommissioned` while updating the proxy and not while creating it.
 
 The API state is to be used only for demarcation, and doesn’t play a role in the governance or lifecycle of the API.
 

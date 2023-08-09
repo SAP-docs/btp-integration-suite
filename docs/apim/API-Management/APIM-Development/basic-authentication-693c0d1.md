@@ -16,7 +16,7 @@ The policy has two modes of operations:
 
 The username and password are commonly stored the key/value store and then read from the key/value store at runtime.
 
-You can attach this policy in the following locations: ![](images/Flow_policy_116062b.png) 
+You can attach this policy in the following locations: ![](images/Flow_policy_116062b.png)
 
 An example payload for the policy is as follows:
 

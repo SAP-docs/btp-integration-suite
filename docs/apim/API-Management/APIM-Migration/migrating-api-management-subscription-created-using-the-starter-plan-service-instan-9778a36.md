@@ -51,14 +51,14 @@ You can also enable the new API Management design time subscription on the same 
     <tr>
     <td valign="top">
     
-        OPU-API-OD-OPS
+    OPU-API-OD-OPS
 
 
     
     </td>
     <td valign="top">
     
-        SAP API Management Operations - On Demand
+    SAP API Management Operations - On Demand
 
 
     

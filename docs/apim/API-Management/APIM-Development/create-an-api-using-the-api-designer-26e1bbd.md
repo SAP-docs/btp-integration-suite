@@ -1,6 +1,6 @@
 <!-- loio26e1bbd2f3864b53a288e25786eb94e0 -->
 
-# Create an API from API Designer
+# Create an API Using the API Designer
 
 Model APIs in the Open API format that is available on the API portal.
 

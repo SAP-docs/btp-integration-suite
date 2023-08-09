@@ -44,7 +44,7 @@ For more information, see…
 <tr>
 <td valign="top">
 
- *Home Page* 
+*Home Page* 
 
 
 
@@ -70,7 +70,7 @@ AuthGroup.API.ApplicationDeveloper
 </td>
 <td valign="top">
 
- [Register on API business hub enterprise](register-on-api-business-hub-enterprise-c85fafe.md) 
+[Register on API business hub enterprise](register-on-api-business-hub-enterprise-c85fafe.md) 
 
 
 
@@ -79,7 +79,7 @@ AuthGroup.API.ApplicationDeveloper
 <tr>
 <td valign="top">
 
- *Site Editor* 
+*Site Editor* 
 
 
 
@@ -103,7 +103,7 @@ Customize the visual layout of the API business hub enterprise
 </td>
 <td valign="top">
 
- [Customize the Visual Format of the API business hub enterprise](customize-the-visual-format-of-the-api-business-hub-enterprise-2eacd52.md) 
+[Customize the Visual Format of the API business hub enterprise](customize-the-visual-format-of-the-api-business-hub-enterprise-2eacd52.md) 
 
 
 
@@ -112,7 +112,7 @@ Customize the visual layout of the API business hub enterprise
 <tr>
 <td valign="top">
 
- *Enterprise Manager* \> *Manage API Management Connections* 
+*Enterprise Manager* \> *Manage API Management Connections* 
 
 
 
@@ -134,7 +134,7 @@ Approve and reject the pending connection requests and update the API portal acc
 </td>
 <td valign="top">
 
- [Approve the Pending Connection Requests \[New Design\]](../APIM-Initial-Setup/approve-the-pending-connection-requests-new-design-e296f80.md) 
+[Approve the Pending Connection Requests \[New Design\]](../APIM-Initial-Setup/approve-the-pending-connection-requests-new-design-e296f80.md) 
 
 
 
@@ -143,7 +143,7 @@ Approve and reject the pending connection requests and update the API portal acc
 <tr>
 <td valign="top">
 
- *Enterprise Manager* \> *Manage Users* 
+*Enterprise Manager* \> *Manage Users* 
 
 
 
@@ -175,7 +175,7 @@ AuthGroup.API.Admin
 <tr>
 <td valign="top">
 
- *Enterprise Manager* \> *Manage Domain Categories* 
+*Enterprise Manager* \> *Manage Domain Categories* 
 
 
 
@@ -210,7 +210,7 @@ Also, to add the *AuthGroup.Content.Admin* role, see the table in [Manage Domain
 <tr>
 <td valign="top">
 
- *Enterprise Manager* \> *Manage Notifications* 
+*Enterprise Manager* \> *Manage Notifications* 
 
 
 
@@ -232,7 +232,7 @@ Configure notifications for providing information to the API business hub enterp
 </td>
 <td valign="top">
 
- [Manage Notifications \[New Design\]](manage-notifications-new-design-df32457.md) 
+[Manage Notifications \[New Design\]](manage-notifications-new-design-df32457.md) 
 
 
 
@@ -241,7 +241,7 @@ Configure notifications for providing information to the API business hub enterp
 <tr>
 <td valign="top">
 
- *My Workspace* 
+*My Workspace* 
 
 
 
@@ -271,7 +271,7 @@ AuthGroup.API.Admin
 </td>
 <td valign="top">
 
- [Create an Application \[New Design\]](create-an-application-new-design-a501a6d.md) 
+[Create an Application \[New Design\]](create-an-application-new-design-a501a6d.md) 
 
 
 
@@ -280,7 +280,7 @@ AuthGroup.API.Admin
 <tr>
 <td valign="top">
 
- *Test Environment* 
+*Test Environment* 
 
 
 
@@ -304,7 +304,7 @@ AuthGroup.API.ApplicationDeveloper
 </td>
 <td valign="top">
 
- [Test Runtime Behavior of APIs \[New Design\]](test-runtime-behavior-of-apis-new-design-15c7d52.md) 
+[Test Runtime Behavior of APIs \[New Design\]](test-runtime-behavior-of-apis-new-design-15c7d52.md) 
 
 
 

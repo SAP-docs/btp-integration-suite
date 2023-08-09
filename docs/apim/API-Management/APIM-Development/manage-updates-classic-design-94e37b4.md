@@ -47,30 +47,14 @@ Use the following procedure to configure updates.
     <tr>
     <td valign="top">
     
-        **Title**
+    **Title**
 
 
     
     </td>
     <td valign="top">
     
-        Provide a title for the update.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        **Description**
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Provide a description for the update.
+    Provide a title for the update.
 
 
     
@@ -79,14 +63,30 @@ Use the following procedure to configure updates.
     <tr>
     <td valign="top">
     
-        **Link**
+    **Description**
 
 
     
     </td>
     <td valign="top">
     
-        Provide the details of a reference link. Link is an optional field to provide more information on the update.
+    Provide a description for the update.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Link**
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Provide the details of a reference link. Link is an optional field to provide more information on the update.
 
 
     

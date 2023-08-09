@@ -56,72 +56,35 @@ Service to view bills :
     <tr>
     <td valign="top">
     
-        Month
+    Month
 
 
     
     </td>
     <td valign="top">
     
-        Yes
+    Yes
 
 
     
     </td>
     <td valign="top">
     
-        Yes
+    Yes
 
 
     
     </td>
     <td valign="top">
     
-        Month in MM format
+    Month in MM format
 
 
     
     </td>
     <td valign="top">
     
-        Month = 03
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Year
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Yes
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Yes
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Year in YYYY format
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Year = 2017
+    Month = 03
 
 
     
@@ -130,35 +93,35 @@ Service to view bills :
     <tr>
     <td valign="top">
     
-        developer\_id
+    Year
 
 
     
     </td>
     <td valign="top">
     
-        Yes
+    Yes
 
 
     
     </td>
     <td valign="top">
     
-        No
+    Yes
 
 
     
     </td>
     <td valign="top">
     
-        Developer e-mail Id
+    Year in YYYY format
 
 
     
     </td>
     <td valign="top">
     
-        developer\_id = jon.doe@sap.com
+    Year = 2017
 
 
     
@@ -167,35 +130,72 @@ Service to view bills :
     <tr>
     <td valign="top">
     
-        application\_id
+    developer\_id
 
 
     
     </td>
     <td valign="top">
     
-        No
+    Yes
 
 
     
     </td>
     <td valign="top">
     
-        No
+    No
 
 
     
     </td>
     <td valign="top">
     
-        Id of a specific application for which bill has to be generated
+    Developer e-mail Id
 
 
     
     </td>
     <td valign="top">
     
-        application\_id = 6C7F88BB-74BE-4CCC-A49A-6A8F2BF1EAC1
+    developer\_id = jon.doe@sap.com
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    application\_id
+
+
+    
+    </td>
+    <td valign="top">
+    
+    No
+
+
+    
+    </td>
+    <td valign="top">
+    
+    No
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Id of a specific application for which bill has to be generated
+
+
+    
+    </td>
+    <td valign="top">
+    
+    application\_id = 6C7F88BB-74BE-4CCC-A49A-6A8F2BF1EAC1
 
 
     

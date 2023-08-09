@@ -8,7 +8,7 @@ In an ideal scenario, you often pair a JSON to XML policy on the inbound request
 
 In cases where the APIs are consumed by diverse client apps that may require either JSON or XML, you can set the response format dynamically by configuring JSON to XML and XML to JSON policies to execute with conditions.
 
-The policy can be attached in the following locations: ![](images/Flow_policy_116062b.png) 
+The policy can be attached in the following locations: ![](images/Flow_policy_116062b.png)
 
 An example payload for the policy is as follows:
 
@@ -351,7 +351,7 @@ If NamespaceSeparator isn’t specified, the following JSON structure is generat
 }
 ```
 
-If the elements NamespaceSeparator, NamespaceBlockName, and DefaultNamespaceNodeName are specified as ***:*** , ***\#namespaceblock***, and ***$defaultname*** respectively, then the following JSON structure is generated:
+If the elements NamespaceSeparator, NamespaceBlockName, and DefaultNamespaceNodeName are specified as `:` , `#namespaceblock`, and `$defaultname` respectively, then the following JSON structure is generated:
 
 ```
 {

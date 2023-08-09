@@ -82,5 +82,5 @@ You’re registered as an application developer on the API business hub enterpri
 
 [Create an Application \[Classic Design\]](../APIM-Development/create-an-application-classic-design-7b4e71b.md "Create an Application to consume the required APIs.")
 
-[Assign User Roles](assign-user-roles-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
+[Assign User Roles in API Management](assign-user-roles-in-api-management-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
 

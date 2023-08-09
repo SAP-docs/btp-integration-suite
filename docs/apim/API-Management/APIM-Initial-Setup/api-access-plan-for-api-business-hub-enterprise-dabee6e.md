@@ -25,7 +25,7 @@ This topic explains how to enable API access for API business hub enterprise.
     > ### Note:  
     > Please ensure that you can access API business hub enterprise before creating an instance.
 
--   You have the ***space developer*** role assigned to you.
+-   You have the `space developer` role assigned to you.
 -   You have created a service instance under the *Authorization and Trust Management* tile.
     1.  In your web browser, open the *SAP BTP Cockpit* - [https://eu-access.cockpit.btp.cloud.sap](https://eu-access.cockpit.btp.cloud.sap).
     2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace*.
@@ -43,7 +43,7 @@ This topic explains how to enable API access for API business hub enterprise.
         The client credentials like url, clientId, and clientSecret details appear for the given service key.
 
 
--   You have created a destination of type ***OAuth2Credentials*** to the XSUAA APIs by using the credentials you derived from creating the service key.
+-   You have created a destination of type `OAuth2Credentials` to the XSUAA APIs by using the credentials you derived from creating the service key.
     1.  From your *Subaccount*, navigate to *Connectivity* \> *Destinations* \> *New Destination*.
     2.  Choose the service instance that you created above.
     3.  In the *Destination Configuration* window, provide the details.
@@ -66,10 +66,10 @@ This topic explains how to enable API access for API business hub enterprise.
         
         ```
 
-        -   For URL, provide the value of the ***url*** field from the service key you created above.
-        -   For Client ID, provide the value of the ***clientid*** field from the service key you created above.
-        -   For Client Secret, provide the value of the ***clientsecret*** field from the service key you created above.
-        -   For the Token Service URL, provide the value of the ***url*** field from the service key you created above.
+        -   For URL, provide the value of the `url` field from the service key you created above.
+        -   For Client ID, provide the value of the `clientid` field from the service key you created above.
+        -   For Client Secret, provide the value of the `clientsecret` field from the service key you created above.
+        -   For the Token Service URL, provide the value of the `url` field from the service key you created above.
 
     4.  Click *Save*.
 
@@ -112,22 +112,22 @@ Create a service instance using API Access plan.
     ```
 
     > ### Note:  
-    > **What is ***developerId*****:
+    > **What is `developerId`**:
     > 
-    > Providing an invalid or an empty ***developerId*** throws an error in the service instance creation process.
+    > Providing an invalid or an empty `developerId` throws an error in the service instance creation process.
     > 
-    > To successfully create an application via the API business hub enterprise, you must provide a valid ***developerId***. This means that you must have already registered as an application developer to the API Management, API business hub enterprise service or you must have been onboarded by your adminstrator.
+    > To successfully create an application via the API business hub enterprise, you must provide a valid `developerId`. This means that you must have already registered as an application developer to the API Management, API business hub enterprise service or you must have been onboarded by your adminstrator.
     > 
-    > -   If you have registered to the API Management, API business hub enterprise application, provide your ***developerId***.
+    > -   If you have registered to the API Management, API business hub enterprise application, provide your `developerId`.
     > 
-    >     See the section below to know how to obtain your ***developerId***.
+    >     See the section below to know how to obtain your `developerId`.
     > 
     > -   If you have not registered to the API Management, API business hub enterprise application, follow the steps in [Register on API business hub enterprise](../APIM-Development/register-on-api-business-hub-enterprise-c85fafe.md) and try again.
     > -   If you are not registered to the API Management, API business hub enterprise application, and require your admin to onboard you, contact your admin. See [Onboard an Application Developer](../APIM-Development/onboard-an-application-developer-786d107.md).
     > 
-    > **How to obtain the ***developerId*****:
+    > **How to obtain the `developerId`**:
     > 
-    > -   If you are a registered developer in the API business hub enterprise, access the following URL in your browser to obtain your ***developerId***:
+    > -   If you are a registered developer in the API business hub enterprise, access the following URL in your browser to obtain your `developerId`:
     > 
     >     ```
     >     https://devportal-url/api/1.0/user
@@ -139,11 +139,11 @@ Create a service instance using API Access plan.
     >     "Email":""}]
     >     ```
     > 
-    >     The ***Name*** field in the response is your ***developerId***.
+    >     The `Name` field in the response is your `developerId`.
     > 
-    > -   If you are an admin and are obtaining the ***developerId*** for a developer you have already onboarded, pick the ***userId*** that you provided during the developer onboarding.
+    > -   If you are an admin and are obtaining the `developerId` for a developer you have already onboarded, pick the `userId` that you provided during the developer onboarding.
     > 
-    >     To view a list of the registered developers, access the following URL in your browser. The ***userId*** field in the response is the ***developerId***.
+    >     To view a list of the registered developers, access the following URL in your browser. The `userId` field in the response is the `developerId`.
     > 
     >     ```
     >     https://devportal-url/api/1.0/registrations?type=registered
@@ -220,33 +220,33 @@ Generate a service key for the service instance that you created above:
     <tr>
     <td valign="top">
     
-         `“instance-secret”`\(without payload\)
+    `“instance-secret”`\(without payload\)
 
 
     
     </td>
     <td valign="top">
     
-    
-    
-    </td>
-    <td valign="top">
-    
-        Low
-
 
     
     </td>
     <td valign="top">
     
-        For instance-secret, the clientSecret generated is same for all the keys.
+    Low
 
 
     
     </td>
     <td valign="top">
     
-        For admin role:
+    For instance-secret, the clientSecret generated is same for all the keys.
+
+
+    
+    </td>
+    <td valign="top">
+    
+    For admin role:
 
     ```
     {
@@ -276,14 +276,14 @@ Generate a service key for the service instance that you created above:
     <tr>
     <td valign="top">
     
-         `“instance-secret”`\(with payload\)
+    `“instance-secret”`\(with payload\)
 
 
     
     </td>
     <td valign="top">
     
-        ```
+    ```
     {
        "xsuaa":{
           "credential-type":"instance-secret"
@@ -297,21 +297,21 @@ Generate a service key for the service instance that you created above:
     </td>
     <td valign="top">
     
-        Low
+    Low
 
 
     
     </td>
     <td valign="top">
     
-        For instance-secret, the clientSecret generated is same for all the keys.
+    For instance-secret, the clientSecret generated is same for all the keys.
 
 
     
     </td>
     <td valign="top">
     
-        For admin role:
+    For admin role:
 
     ```
     {
@@ -341,14 +341,14 @@ Generate a service key for the service instance that you created above:
     <tr>
     <td valign="top">
     
-         `"binding-secret"` 
+    `"binding-secret"` 
 
 
     
     </td>
     <td valign="top">
     
-        ```
+    ```
     {
        "xsuaa":{
           "credential-type":"binding-secret"
@@ -362,21 +362,21 @@ Generate a service key for the service instance that you created above:
     </td>
     <td valign="top">
     
-        Medium
+    Medium
 
 
     
     </td>
     <td valign="top">
     
-        For binding-secret, the clientSecret generated for every key is unique.
+    For binding-secret, the clientSecret generated for every key is unique.
 
 
     
     </td>
     <td valign="top">
     
-        For admin role:
+    For admin role:
 
     ```
     {
@@ -406,7 +406,7 @@ Generate a service key for the service instance that you created above:
     <tr>
     <td valign="top">
     
-        `"x509"`
+    `"x509"`
 
     \(certificate based\)
 
@@ -415,7 +415,7 @@ Generate a service key for the service instance that you created above:
     </td>
     <td valign="top">
     
-        ```
+    ```
     {
        "xsuaa":{
           "credential-type":"x509",
@@ -434,21 +434,21 @@ Generate a service key for the service instance that you created above:
     </td>
     <td valign="top">
     
-        High
+    High
 
 
     
     </td>
     <td valign="top">
     
-        For X509, ensure that the credential rotation is done based on the validity provided in the payload. For example, delete and create a new service key every 65 days.
+    For X509, ensure that the credential rotation is done based on the validity provided in the payload. For example, delete and create a new service key every 65 days.
 
 
     
     </td>
     <td valign="top">
     
-        For admin role:
+    For admin role:
 
     ```
     {

@@ -878,7 +878,7 @@ Skipping the cloning of Application Key and Secret in side by side migration
 </td>
 <td valign="top">
 
-If you want to skip the cloning of Application Key and Secret in side by side migration, then set the ***“skipApplicationKeySecretCloning”*** flag to true. For more information, see the Procedure section in [Clone API Management Artifacts](APIM-Migration/clone-api-management-artifacts-7abd887.md). Also, a new version of the tenant cloning tool 1.6.2 is now available. For more information, see [Clone API Management Artifacts](APIM-Migration/clone-api-management-artifacts-7abd887.md).
+If you want to skip the cloning of Application Key and Secret in side by side migration, then set the `“skipApplicationKeySecretCloning”` flag to true. For more information, see the Procedure section in [Clone API Management Artifacts](APIM-Migration/clone-api-management-artifacts-7abd887.md). Also, a new version of the tenant cloning tool 1.6.2 is now available. For more information, see [Clone API Management Artifacts](APIM-Migration/clone-api-management-artifacts-7abd887.md).
 
 
 

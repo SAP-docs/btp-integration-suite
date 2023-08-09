@@ -14,5 +14,5 @@ The *API Management, API portal* supports the following plans:
 **Related Information**  
 
 
-[Create an API Provider](../APIM-Development/create-an-api-provider-6b263e2.md "Create an API provider to connect to an API provider and browse for APIs.")
+[Create an API Provider](../APIM-Development/create-an-api-provider-6b263e2.md "Define the details of the host you want an application to reach by creating an API provider.")
 

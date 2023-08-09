@@ -25,8 +25,8 @@ On the homepage, you can find the list of products under various categories. You
 
 3.  In the product details screen, choose *Subscribe*. You can subscribe to:
 
-    -    *Add to Existing Application*: The list of applications appears. Choose the required application.
-    -    *Create New Application*: Create an application by entering the name and title. The selected Product is added to the application by default.
+    -   *Add to Existing Application*: The list of applications appears. Choose the required application.
+    -   *Create New Application*: Create an application by entering the name and title. The selected Product is added to the application by default.
 
 4.  Choose *Save* .
 

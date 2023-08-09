@@ -6,6 +6,8 @@ Once a token endpoint is set up for an API proxy, a corresponding OAuthV2 policy
 
 
 
+## Example
+
 To ensure that all requests to an API are authorized, the following policy enforces access token verification:
 
 > ### Sample Code:  

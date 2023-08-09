@@ -29,7 +29,7 @@ Procedure to register as an Application developer on the API business hub enterp
 
 
 > ### Note:  
-> The *AuthGroup.API.ApplicationDeveloper* role must not be assigned manually to a user form the SAP BTP Cockpit and this role must not be a part of any user group assignment. This role is assigned by default to a user who onboards to the API business hub enterprise using the Self-registration process or via Add User flow. See [Assign User Roles](../APIM-Initial-Setup/assign-user-roles-911ca5a.md), for more information.
+> The *AuthGroup.API.ApplicationDeveloper* role must not be assigned manually to a user form the SAP BTP Cockpit and this role must not be a part of any user group assignment. This role is assigned by default to a user who onboards to the API business hub enterprise using the Self-registration process or via Add User flow. See [Assign User Roles in API Management](../APIM-Initial-Setup/assign-user-roles-in-api-management-911ca5a.md), for more information.
 
 
 

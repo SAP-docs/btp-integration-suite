@@ -324,7 +324,7 @@ Cloud Foundry Environment
 </td>
 <td valign="top">
 
- SAP BTP Cloud Foundry environment contains the Cloud Foundry Application Runtime, which is based on the open-source application platform managed by the Cloud Foundry Foundation.
+SAP BTP Cloud Foundry environment contains the Cloud Foundry Application Runtime, which is based on the open-source application platform managed by the Cloud Foundry Foundation.
 
 
 
@@ -333,7 +333,7 @@ Cloud Foundry Environment
 <tr>
 <td valign="top">
 
- API business hub enterprise 
+API business hub enterprise 
 
 
 
@@ -426,7 +426,7 @@ NEO Environment
 </td>
 <td valign="top">
 
- SAP BTP NEO environment contains SAP propriety runtime. NEO is a feature-rich and easy-to-use development environment, allowing you to develop Java, SAP HANA XS, and HTML5 applications. 
+SAP BTP NEO environment contains SAP propriety runtime. NEO is a feature-rich and easy-to-use development environment, allowing you to develop Java, SAP HANA XS, and HTML5 applications. 
 
 
 
@@ -499,7 +499,7 @@ Rate Plan is the price per API call made to any external app service. You can de
 <tr>
 <td valign="top">
 
- SAP API Management 
+SAP API Management 
 
 
 

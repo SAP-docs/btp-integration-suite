@@ -2,13 +2,15 @@
 
 # View Applications
 
-Viewing subscribed applications from API portal.
+In the context of API Management, an application is the unit of API consumption.
 
 
 
 ## Context
 
-As an admin, you can now view the subscribed applications from API portal. You can view developer details and associated products and not AppKey and secret.
+As the developer of some external business application if you wish to consume the API proxies exposed through the various products, you must declare your usage of those products by creating an application from API business hub enterprise. For more information, see [Create an Application \[New Design\]](create-an-application-new-design-a501a6d.md).
+
+As an admin, you can view the subscribed applications from API portal. You can view developer details, associated products and AppKey and secret.
 
 
 

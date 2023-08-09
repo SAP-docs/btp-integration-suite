@@ -42,7 +42,7 @@ Automatically Enforced
 <tr>
 <td valign="top" colspan="3">
 
- **API Proxies**
+**API Proxies**
 
 
 
@@ -122,7 +122,7 @@ Yes
 <tr>
 <td valign="top" colspan="3">
 
- **Cache and KVM**
+**Cache and KVM**
 
 
 
@@ -269,7 +269,7 @@ No
 <tr>
 <td valign="top" colspan="3">
 
- **Keys, Developers, Apps, Products**
+**Keys, Developers, Apps, Products**
 
 
 

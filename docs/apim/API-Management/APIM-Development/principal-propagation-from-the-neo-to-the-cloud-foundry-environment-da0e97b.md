@@ -50,30 +50,14 @@ Enable an application in your subaccount in the Neo environment to access an API
     <tr>
     <td valign="top">
     
-        Name
+    Name
 
 
     
     </td>
     <td valign="top">
     
-        Technical name of the destination. It can be used later on to get an instance of that destination. It must be unique for the global account.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        URL
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Enter the API Proxy URL for the proxy you want to call.
+    Technical name of the destination. It can be used later on to get an instance of that destination. It must be unique for the global account.
 
 
     
@@ -82,30 +66,14 @@ Enable an application in your subaccount in the Neo environment to access an API
     <tr>
     <td valign="top">
     
-        Authentication
+    URL
 
 
     
     </td>
     <td valign="top">
     
-        OAuth2SAMLBearerAssertion
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Proxy Type
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Internet
+    Enter the API Proxy URL for the proxy you want to call.
 
 
     
@@ -114,14 +82,46 @@ Enable an application in your subaccount in the Neo environment to access an API
     <tr>
     <td valign="top">
     
-        Audience
+    Authentication
 
 
     
     </td>
     <td valign="top">
     
-        Copy the value of entityID property of the SAML 2.0 metadata representing your subaccount in the Cloud Foundry environment.
+    OAuth2SAMLBearerAssertion
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Proxy Type
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Internet
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Audience
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Copy the value of entityID property of the SAML 2.0 metadata representing your subaccount in the Cloud Foundry environment.
 
     > ### Tip:  
     > You can open the metadata of the subaccount in the Cloud Foundry environment using the tokenUrl you obtain from the Service Key:
@@ -143,14 +143,14 @@ Enable an application in your subaccount in the Neo environment to access an API
     <tr>
     <td valign="top">
     
-        Client Key
+    Client Key
 
 
     
     </td>
     <td valign="top">
     
-        Enter the *clientId* obtained from the *Service Key* in the created service instance using on-premise connectivity plan.
+    Enter the *clientId* obtained from the *Service Key* in the created service instance using on-premise connectivity plan.
 
 
     
@@ -159,14 +159,14 @@ Enable an application in your subaccount in the Neo environment to access an API
     <tr>
     <td valign="top">
     
-        Token Service URL
+    Token Service URL
 
 
     
     </td>
     <td valign="top">
     
-        Enter the token url obtained from the *Service Key* in the created service instance using on-premise connectivity plan.
+    Enter the token url obtained from the *Service Key* in the created service instance using on-premise connectivity plan.
 
     The token service URL is defined in the Location attribute of the element marked as AssertionConsumerService, like this :
 
@@ -184,14 +184,14 @@ Enable an application in your subaccount in the Neo environment to access an API
     <tr>
     <td valign="top">
     
-        Token Service Password
+    Token Service Password
 
 
     
     </td>
     <td valign="top">
     
-        Enter the *clientSecret* obtained from the *Service Key* in the created service instance using on-premise connectivity plan.
+    Enter the *clientSecret* obtained from the *Service Key* in the created service instance using on-premise connectivity plan.
 
 
     
@@ -200,14 +200,14 @@ Enable an application in your subaccount in the Neo environment to access an API
     <tr>
     <td valign="top">
     
-        System User
+    System User
 
 
     
     </td>
     <td valign="top">
     
-        Empty
+    Empty
 
 
     
@@ -216,7 +216,7 @@ Enable an application in your subaccount in the Neo environment to access an API
     <tr>
     <td valign="top" colspan="2">
     
-        If you have not generated the client credentials \(clientId, ClientSecret, tokenUrl and application url\) yet, see [On-Premise Connectivity Plan](../APIM-Initial-Setup/on-premise-connectivity-plan-2fc7a5b.md)
+    If you have not generated the client credentials \(clientId, ClientSecret, tokenUrl and application url\) yet, see [On-Premise Connectivity Plan](../APIM-Initial-Setup/on-premise-connectivity-plan-2fc7a5b.md)
 
 
     

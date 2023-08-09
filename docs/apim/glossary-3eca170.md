@@ -9,14 +9,14 @@
 <tr>
 <th valign="top">
 
- **Entity** 
+**Entity** 
 
 
 
 </th>
 <th valign="top">
 
- **Description** 
+**Description** 
 
 
 
@@ -51,7 +51,7 @@ API Management
 <tr>
 <td valign="top">
 
- SAP API Management 
+SAP API Management 
 
 
 
@@ -137,7 +137,7 @@ Provides powerful analytical tools to track your API usage. Use the API analytic
 <tr>
 <td valign="top">
 
- **Developer Services** 
+**Developer Services** 
 
 
 
@@ -153,7 +153,7 @@ Provides tools to manage app developers. Provides the ability to onboard develop
 <tr>
 <td valign="top">
 
- **API Management Account** 
+**API Management Account** 
 
 
 
@@ -169,7 +169,7 @@ An API Management account is the highest level of data hierarchy. An account is 
 <tr>
 <td valign="top">
 
- **System** 
+**System** 
 
 
 
@@ -185,7 +185,7 @@ In API Management System refers to the API provider systems where the actual bac
 <tr>
 <td valign="top">
 
- **User** 
+**User** 
 
 
 
@@ -201,7 +201,7 @@ API Management can have multiple users. Different users have different roles and
 <tr>
 <td valign="top">
 
- **API** 
+**API** 
 
 
 
@@ -220,7 +220,7 @@ APIs are Application Programming Interfaces. They comprise a set of routines, pr
 <tr>
 <td valign="top">
 
- **Product** 
+**Product** 
 
 
 
@@ -236,7 +236,7 @@ A product is a bundle of APIs. It contains metadata specific to your business fo
 <tr>
 <td valign="top">
 
- **Developer** 
+**Developer** 
 
 
 
@@ -254,7 +254,7 @@ To create an application, the developer must have registered the account. After 
 <tr>
 <td valign="top">
 
- **Application** 
+**Application** 
 
 
 
@@ -270,7 +270,7 @@ Applications include the Web or mobile applications that consume the exposed API
 <tr>
 <td valign="top">
 
- **App Key** 
+**App Key** 
 
 
 
@@ -302,7 +302,7 @@ You can browse through this API package for API Admin services with the required
 <tr>
 <td valign="top">
 
- **Developer Portal** 
+**Developer Portal** 
 
 
 
@@ -318,7 +318,7 @@ You can browse through this API package for application development services tha
 <tr>
 <td valign="top">
 
- **Metering** 
+**Metering** 
 
 
 
@@ -334,7 +334,7 @@ You can now browse through this API package to view metering data for APIs, API 
 <tr>
 <td valign="top">
 
- **API Analytics** 
+**API Analytics** 
 
 
 
@@ -350,7 +350,7 @@ You can now browse through this API package to view metering data for APIs, API 
 <tr>
 <td valign="top">
 
- **Client SDK** 
+**Client SDK** 
 
 
 

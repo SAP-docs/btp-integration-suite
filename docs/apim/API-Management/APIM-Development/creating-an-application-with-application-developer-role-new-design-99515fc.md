@@ -10,7 +10,7 @@ As an application developer you can create an application, and view the existing
 
 ## Prerequisites
 
--   You have the *AuthGroup.API.ApplicationDeveloper* role assigned to you. For more information on roles, see [Assign User Roles](../APIM-Initial-Setup/assign-user-roles-911ca5a.md).
+-   You have the *AuthGroup.API.ApplicationDeveloper* role assigned to you. For more information on roles, see [Assign User Roles in API Management](../APIM-Initial-Setup/assign-user-roles-in-api-management-911ca5a.md).
 
     > ### Note:  
     > The *AuthGroup.API.ApplicationDeveloper* role must not be assigned manually to a user form the SAP BTP Cockpit. Also, this role must not be a part of any user group assignment.

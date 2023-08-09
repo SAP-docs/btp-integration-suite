@@ -342,7 +342,7 @@ A message header in the Service Callout request or response
 <tr>
 <td valign="top">
 
- `servicecallout.requesturi` 
+`servicecallout.requesturi` 
 
 
 
@@ -364,7 +364,7 @@ The TargetEndpoint URI for a ServiceCallout policy. The URI is the TargetEndpoin
 <tr>
 <td valign="top">
 
- `servicecallout.{policy-name}.target.url` 
+`servicecallout.{policy-name}.target.url` 
 
 
 
@@ -410,7 +410,7 @@ The response body from the Service Callout.
 <tr>
 <td valign="top">
 
- `servicecallout.{policy-name}.expectedcn` 
+`servicecallout.{policy-name}.expectedcn` 
 
 
 
@@ -432,7 +432,7 @@ The expected Common Name of the TargetEndpoint as referred to in a ServiceCallou
 <tr>
 <td valign="top">
 
- `servicecallout.{policy-name}.failed` 
+`servicecallout.{policy-name}.failed` 
 
 
 
@@ -619,14 +619,14 @@ This error happens if the <Timeout\> value is negative or zero.
 <tr>
 <th valign="top">
 
- **Fault Code** 
+**Fault Code** 
 
 
 
 </th>
 <th valign="top">
 
- **Cause** 
+**Cause** 
 
 
 

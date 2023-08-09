@@ -149,7 +149,7 @@ Instead of consuming services directly, application developers can access APIs e
 
     1.  Select the *URL* radio button.
 
-    2.  Enter the OData service URL in the *URL* field. For example, http://<***host***\>:<***port***\>/SFlight.
+    2.  Enter the OData service URL in the *URL* field. For example, http://<`host`\>:<`port`\>/SFlight.
 
         > ### Note:  
         > Ensure that the service URL you provide doesn’t redirect to a different URL. That is, check if the service URL you’re trying to access is temporarily or permanently moved to a different location. If it does so, then it’s recommended that you provide the new location \(redirected URL, if exists\) of the service.
@@ -164,16 +164,16 @@ Instead of consuming services directly, application developers can access APIs e
 
     5.  Select a virtual host alias from the *Host Alias* dropdown.
 
-    6.  In the *API Base Path* field, provide a path prefix for the API. For example, ***v1/SFlight***.
+    6.  In the *API Base Path* field, provide a path prefix for the API. For example, `v1/SFlight`.
 
-    7.  In the *Service Type* field, enter ***OData***.
+    7.  In the *Service Type* field, enter `OData`.
 
 
 8.  If you have the URL of the REST service, proceed as follows:
 
     1.  Select the *URL* radio button.
 
-    2.  Enter the REST-based service URL in the *URL* field. For example, http://<***host***\>:<***port***\>/SFlight.
+    2.  Enter the REST-based service URL in the *URL* field. For example, http://<`host`\>:<`port`\>/SFlight.
 
         > ### Note:  
         > Ensure that the service URL you provide doesn’t redirect to a different URL. That is, check if the service URL you’re trying to access is temporarily or permanently moved to a different location. If it does so, then it’s recommended that you provide the new location \(redirected URL, if exists\) of the service.
@@ -188,16 +188,16 @@ Instead of consuming services directly, application developers can access APIs e
 
     5.  Select a virtual host alias from the *Host Alias* dropdown.
 
-    6.  In the *API Base Path* field, provide a path prefix for the API. For example, ***v1/SFlight***.
+    6.  In the *API Base Path* field, provide a path prefix for the API. For example, `v1/SFlight`.
 
-    7.  In the *Service Type* field, enter ***REST***.
+    7.  In the *Service Type* field, enter `REST`.
 
 
 9.  If you have the URL of the SOAP service, proceed as follows:
 
     1.  Choose the *URL* radio button.
 
-    2.  Enter the SOAP service URL in the *URL* field. For example, http://<***host***\>:<***port***\>/SFlight.
+    2.  Enter the SOAP service URL in the *URL* field. For example, http://<`host`\>:<`port`\>/SFlight.
 
     3.  Enter a name and description for the API.
 
@@ -207,9 +207,9 @@ Instead of consuming services directly, application developers can access APIs e
 
     5.  Select a virtual host alias from the *Host Alias* dropdown.
 
-    6.  In the *API Base Path* field, provide a path prefix for the API. For example, ***v1/SFlight***.
+    6.  In the *API Base Path* field, provide a path prefix for the API. For example, `v1/SFlight`.
 
-    7.  In the *Service Type* field, choose ***SOAP***.
+    7.  In the *Service Type* field, choose `SOAP`.
 
 
 10. Choose *Create*.
@@ -220,7 +220,7 @@ Instead of consuming services directly, application developers can access APIs e
     > -   For a SOAP- and REST-based service, the *Resources* tab appears. Add the resources manually.
 
     > ### Note:  
-    > In case you want to restrict your users from accessing all the resources associated with the API Proxy, you need to create a new Product, add the required API to the Product, and select the resources for which you want to provide access. For more information, see [Create a Product](create-a-product-d769622.md).![](images/Add_Resources_6351be2.png) 
+    > In case you want to restrict your users from accessing all the resources associated with the API Proxy, you need to create a new Product, add the required API to the Product, and select the resources for which you want to provide access. For more information, see [Create a Product](create-a-product-d769622.md).![](images/Add_Resources_6351be2.png)
 
 11. For a REST service, add a resource as follows:
 
@@ -322,21 +322,21 @@ Instead of consuming services directly, application developers can access APIs e
     <tr>
     <td valign="top">
     
-         *Save* 
+    *Save* 
 
 
     
     </td>
     <td valign="top">
     
-        *Not Deployed:*API is available only in the API portal, and isn’t available for product assignments.
+    *Not Deployed:*API is available only in the API portal, and isn’t available for product assignments.
 
 
     
     </td>
     <td valign="top">
     
-        *Deploy*
+    *Deploy*
 
     API is deployed and is ready for product assignments.
 
@@ -347,21 +347,21 @@ Instead of consuming services directly, application developers can access APIs e
     <tr>
     <td valign="top">
     
-         *Deploy* 
+    *Deploy* 
 
 
     
     </td>
     <td valign="top">
     
-         *Deployed*: Only deployed APIs can be selected for product publishing.
+    *Deployed*: Only deployed APIs can be selected for product publishing.
 
 
     
     </td>
     <td valign="top">
     
-        *Undeploy*
+    *Undeploy*
 
     If any API is undeployed after being published, it’s removed from the developer portal. When the API is deployed again, the product is updated. You can bring down an API without having to delete it from the product assignment. You can’t undeploy an API if it’s the only one associated with the product.
 
@@ -371,7 +371,8 @@ Instead of consuming services directly, application developers can access APIs e
     </tr>
     </table>
     
-20. 21. Once you’ve created an API, you can do the following:
+
+20. Once you’ve created an API, you can do the following:
 
     -   Go to the *Resources* tab, where you can test the API resource by using the *Operations* button beside it. For more information, see [Test APIs](test-apis-3ba6151.md).
     -   Go to more options and from the drop-down select *Synchronize*. This functionality updates the API with the latest version available in the back end.
@@ -386,5 +387,5 @@ Instead of consuming services directly, application developers can access APIs e
 **Related Information**  
 
 
-[Create an API from API Designer](create-an-api-from-api-designer-26e1bbd.md "Model APIs in the Open API format that is available on the API portal.")
+[Create an API Using the API Designer](create-an-api-using-the-api-designer-26e1bbd.md "Model APIs in the Open API format that is available on the API portal.")
 

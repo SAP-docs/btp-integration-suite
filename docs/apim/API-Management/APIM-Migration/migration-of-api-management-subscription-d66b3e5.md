@@ -60,7 +60,7 @@ Standard Migration
 </td>
 <td valign="top">
 
- [Migrating API Management from Neo to Cloud Foundry Environment](migrating-api-management-from-neo-to-cloud-foundry-environment-92f2da1.md) 
+[Migrating API Management from Neo to Cloud Foundry Environment](migrating-api-management-from-neo-to-cloud-foundry-environment-92f2da1.md) 
 
 
 
@@ -83,7 +83,7 @@ Migration of API Management Subscription within the same Cloud Foundry subaccoun
 </td>
 <td valign="top">
 
- [Migrating API Management Subscription Created Using the Starter Plan Service Instance](migrating-api-management-subscription-created-using-the-starter-plan-service-instan-9778a36.md) 
+[Migrating API Management Subscription Created Using the Starter Plan Service Instance](migrating-api-management-subscription-created-using-the-starter-plan-service-instan-9778a36.md) 
 
 
 
@@ -99,7 +99,7 @@ Migration of API Management Subscription between different Cloud Foundry subacco
 </td>
 <td valign="top">
 
- [Migrating API Management Subscription Created Using the Starter Plan Service Instance to Different Subaccounts](migrating-api-management-subscription-created-using-the-starter-plan-service-instan-1f4ed86.md) 
+[Migrating API Management Subscription Created Using the Starter Plan Service Instance to Different Subaccounts](migrating-api-management-subscription-created-using-the-starter-plan-service-instan-1f4ed86.md) 
 
 
 
@@ -127,7 +127,7 @@ Standard Migration
 </td>
 <td valign="top">
 
- [Migrating API Management Subscription from One Cloud Foundry to Same or Different Cloud Foundry Environment](migrating-api-management-subscription-from-one-cloud-foundry-to-same-or-different-c-17f09f3.md) 
+[Migrating API Management Subscription from One Cloud Foundry to Same or Different Cloud Foundry Environment](migrating-api-management-subscription-from-one-cloud-foundry-to-same-or-different-c-17f09f3.md) 
 
 
 

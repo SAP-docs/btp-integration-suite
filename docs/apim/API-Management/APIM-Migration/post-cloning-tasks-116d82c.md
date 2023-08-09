@@ -16,7 +16,7 @@ The following sections explain the tasks that you must perform after the cloning
 
 You can view the status of the cloned artifacts in the `apim-tct-output.xlsx` excel file or in the `apim-tct.log` file, generated in the same folder where the .jar file is present.
 
-Perform the tasks mentioned in the ***User Actions*** worksheet within the `apim-tct-output.xlsx` excel file.
+Perform the tasks mentioned in the `User Actions` worksheet within the `apim-tct-output.xlsx` excel file.
 
 **The following table describes the actions required for each cloned entity:**
 

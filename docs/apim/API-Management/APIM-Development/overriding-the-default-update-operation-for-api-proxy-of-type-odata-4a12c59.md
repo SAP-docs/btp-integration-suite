@@ -34,7 +34,7 @@ In case both the update operations are required, you can pass both the operation
 > ```
 
 > ### Note:  
-> Use array if only both the operations are required. You can use the API designer to add this key in the Open API specification under “info”. ![](images/Update_Key_c5760ed.png) 
+> Use array if only both the operations are required. You can use the API designer to add this key in the Open API specification under “info”. ![](images/Update_Key_c5760ed.png)
 
 Once you have made the changes in the Open API specification, ensure that you *Synchronize* the API proxy for the changes to reflect on the Resource operations.
 

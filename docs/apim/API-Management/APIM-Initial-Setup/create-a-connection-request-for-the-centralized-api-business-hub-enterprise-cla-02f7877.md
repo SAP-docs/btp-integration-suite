@@ -101,14 +101,14 @@ For the newly set up API portal, you can request for the API Business Hub Enterp
     <tr>
     <td valign="top">
     
-        API Portal Alias Name
+    API Portal Alias Name
 
 
     
     </td>
     <td valign="top">
     
-        Enter the API portal name that gets displayed on the API Business Hub Enterprise. This name is used to distinguish products that are published from the API portal and likewise for applications created for the product.
+    Enter the API portal name that gets displayed on the API Business Hub Enterprise. This name is used to distinguish products that are published from the API portal and likewise for applications created for the product.
 
 
     
@@ -117,14 +117,14 @@ For the newly set up API portal, you can request for the API Business Hub Enterp
     <tr>
     <td valign="top">
     
-        API Portal Access Credentials
+    API Portal Access Credentials
 
 
     
     </td>
     <td valign="top">
     
-        Enter the API portal access credentials that you generated earlier. These credentials are used by the API Business Hub Enterprise to establish the connection.
+    Enter the API portal access credentials that you generated earlier. These credentials are used by the API Business Hub Enterprise to establish the connection.
 
     Sample credentials:
 
@@ -144,14 +144,14 @@ For the newly set up API portal, you can request for the API Business Hub Enterp
     <tr>
     <td valign="top">
     
-        Comment
+    Comment
 
 
     
     </td>
     <td valign="top">
     
-        Provide the details to the approver about the need for the connection request.
+    Provide the details to the approver about the need for the connection request.
 
 
     

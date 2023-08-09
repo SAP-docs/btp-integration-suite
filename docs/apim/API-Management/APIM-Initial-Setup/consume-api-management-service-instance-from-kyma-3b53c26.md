@@ -50,9 +50,9 @@ Before creating the service key, the **API Management, API Portal** and the **AP
 
 6.  Choose *Advance* tab on the *Create Service Instance* dialog and expand *Instance Parameters*.
 
-    To create an instance of *API Management, API Portal*, enter ***role*** as the key in the first textbox and ***APIPortal.Administrator*** as the value in the second textbox.
+    To create an instance of *API Management, API Portal*, enter `role` as the key in the first textbox and `APIPortal.Administrator` as the value in the second textbox.
 
-    Similarly, to create an instance of *API Management, API Business Hub Enterprise*, enter ***role*** in the first textbox and ***AuthGroup.API.Admin*** in the second textbox.
+    Similarly, to create an instance of *API Management, API Business Hub Enterprise*, enter `role` in the first textbox and `AuthGroup.API.Admin` in the second textbox.
 
 7.  Choose *Create*.
 

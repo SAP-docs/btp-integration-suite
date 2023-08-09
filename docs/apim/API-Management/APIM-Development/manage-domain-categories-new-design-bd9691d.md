@@ -20,7 +20,7 @@ You need the following roles to create and update categories:
 
 -   *AuthGroup.API.Admin* 
 
-    To assign the role, see [Assign User Roles](../APIM-Initial-Setup/assign-user-roles-911ca5a.md) .
+    To assign the role, see [Assign User Roles in API Management](../APIM-Initial-Setup/assign-user-roles-in-api-management-911ca5a.md) .
 
 
 
@@ -73,30 +73,14 @@ Use the following procedure to configure navigation categories.
     <tr>
     <td valign="top">
     
-        **Category Name**
+    **Category Name**
 
 
     
     </td>
     <td valign="top">
     
-        Provide a name for the category.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        **Category Title**
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Provide a title for the category. Categories are identified by their title on the home screen.
+    Provide a name for the category.
 
 
     
@@ -105,14 +89,30 @@ Use the following procedure to configure navigation categories.
     <tr>
     <td valign="top">
     
-        **Description**
+    **Category Title**
 
 
     
     </td>
     <td valign="top">
     
-        Provide a description for the category.
+    Provide a title for the category. Categories are identified by their title on the home screen.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Description**
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Provide a description for the category.
 
 
     

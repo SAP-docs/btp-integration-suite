@@ -840,7 +840,7 @@ proxy.client.ip
 </td>
 <td valign="top">
 
-The ***X-Forwarded-For*** address of the inbound call, which is the IP address API Management received from the last external TCP handshake. This could be the calling client.
+The `X-Forwarded-For` address of the inbound call, which is the IP address API Management received from the last external TCP handshake. This could be the calling client.
 
 
 

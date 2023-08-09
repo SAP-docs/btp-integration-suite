@@ -45,6 +45,6 @@ To download the bill details, proceed as follows:
 
     The bill details are downloaded in a .csv file format.
 
-    In the .csv file generated, leading ***=*** signs that might have been present in any user input \(such Product Title, Application Title, or Rateplan Title\) are trimmed.
+    In the .csv file generated, leading `=` signs that might have been present in any user input \(such Product Title, Application Title, or Rateplan Title\) are trimmed.
 
 

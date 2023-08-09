@@ -10,7 +10,7 @@ Create a new virtual host or update an alias for an existing virtual host in the
 
 ## Prerequisites
 
--   You must have a service key for the ***APIManagement.SelfService.Administrator*** role.
+-   You must have a service key for the `APIManagement.SelfService.Administrator` role.
 
     To know more about creating a service key for accessing APIs in the API portal, see the **Creating a Service Key** section in [API Access Plan for API Portal](api-access-plan-for-api-portal-24a2c37.md).
 

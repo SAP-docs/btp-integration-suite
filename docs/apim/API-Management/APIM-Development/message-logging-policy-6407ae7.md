@@ -66,7 +66,7 @@ To send syslog to Splunk, Sumo Logic, Loggly, or similar log management services
 </td>
 <td valign="top">
 
- `Message` 
+`Message` 
 
 
 
@@ -85,7 +85,7 @@ Build the message to be sent to the syslog, combining text with variables to cap
 <tr>
 <td valign="top">
 
- `Host` 
+`Host` 
 
 
 
@@ -101,7 +101,7 @@ The hostname or IP address of the server where the syslog should be sent. If the
 <tr>
 <td valign="top">
 
- `Port` 
+`Port` 
 
 
 
@@ -117,7 +117,7 @@ Port where the syslog is running. If you don't include this element, the default
 <tr>
 <td valign="top">
 
- `Protcol` 
+`Protcol` 
 
 
 
@@ -133,7 +133,7 @@ TCP or UDP \(default\). While UDP is more performant, the TCP protocol guarantee
 <tr>
 <td valign="top">
 
- `FormatMessage` 
+`FormatMessage` 
 
 
 

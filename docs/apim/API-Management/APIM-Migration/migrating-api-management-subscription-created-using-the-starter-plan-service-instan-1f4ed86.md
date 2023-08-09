@@ -23,7 +23,7 @@ With the Integration Suite premium edition license available in a different suba
 > 
 > -   Ensure that both the source and the target subaccounts are in the same data center for migrating the API Management subscription to a different subaccount.
 > 
-> -   To migrate to a different subaccount, you must provide the input ***cfSubaccountTenantID*** in the ***apim-tct-input.json*** file. For more information, see [Clone API Management Artifacts](clone-api-management-artifacts-7abd887.md).
+> -   To migrate to a different subaccount, you must provide the input `cfSubaccountTenantID` in the `apim-tct-input.json` file. For more information, see [Clone API Management Artifacts](clone-api-management-artifacts-7abd887.md).
 
 > ### Caution:  
 > The migration of the Starter Plan Service Instance may involve downtime of the API runtime calls.
@@ -59,14 +59,14 @@ With the Integration Suite premium edition license available in a different suba
     <tr>
     <td valign="top">
     
-        OPU-API-OD-OPS
+    OPU-API-OD-OPS
 
 
     
     </td>
     <td valign="top">
     
-        SAP API Management Operations - On Demand
+    SAP API Management Operations - On Demand
 
 
     

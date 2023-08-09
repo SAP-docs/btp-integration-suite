@@ -108,42 +108,42 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top" rowspan="7">
     
-        source
+    source
 
 
     
     </td>
     <td valign="top" rowspan="3">
     
-        apiportal
+    apiportal
 
 
     
     </td>
     <td valign="top">
     
-        ***url***
+    `url`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Required
+    Required
 
 
     
     </td>
     <td valign="top">
     
-        URL of the source API management, API portal in the Neo environment
+    URL of the source API management, API portal in the Neo environment
 
     Example: `https://<application_name><provider_subaccount>-<consumer_subaccount>.<domain>`
 
@@ -154,28 +154,28 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        ***username***
+    `username`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        User ID having the ***APIPortal.Administrator*** role in the above subscription
+    User ID having the `APIPortal.Administrator` role in the above subscription
 
     You’re prompted to enter these values while running the command in Step 3 if you have not already provided these details in the `apim-tct-input.json` file.
 
@@ -186,28 +186,28 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        ***password***
+    `password`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        Password of the above user
+    Password of the above user
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
@@ -218,35 +218,35 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top" rowspan="3">
     
-        devportal
+    devportal
 
 
     
     </td>
     <td valign="top">
     
-        ***url***
+    `url`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Required
+    Required
 
 
     
     </td>
     <td valign="top">
     
-        URL of the source API Management, Developer Portal in the Neo environment
+    URL of the source API Management, Developer Portal in the Neo environment
 
     Example: `https://<application_name><provider_subaccount>-<consumer_subaccount>.<domain>`
 
@@ -257,28 +257,28 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        ***username***
+    `username`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        User ID having the ***AuthGroup.API.Admin*** role in the above subscription
+    User ID having the `AuthGroup.API.Admin` role in the above subscription
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
@@ -289,28 +289,28 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        ***password***
+    `password`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        Password of the above user
+    Password of the above user
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
@@ -321,35 +321,35 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        cfSubaccountTenantID
+    cfSubaccountTenantID
 
 
     
     </td>
     <td valign="top">
     
-        Supported values: "guid"
+    Supported values: "guid"
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        This is the Tenant ID for your Cloud Foundry sub account where starter plan serivce instance is enabled.
+    This is the Tenant ID for your Cloud Foundry sub account where starter plan serivce instance is enabled.
 
     > ### Note:  
     > If you are migrating within the same subaccount, you are not required to add this parameter.
@@ -366,42 +366,42 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top" rowspan="12">
     
-        target
+    target
 
 
     
     </td>
     <td valign="top" rowspan="4">
     
-        apiportal
+    apiportal
 
 
     
     </td>
     <td valign="top">
     
-        ***Url***
+    `Url`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Required
+    Required
 
 
     
     </td>
     <td valign="top">
     
-        URL received during creation of the service key for API portal API access for the ***APIPortal.Administrator*** role
+    URL received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
 
     To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
 
@@ -412,28 +412,28 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        ***tokenUrl***
+    `tokenUrl`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Required
+    Required
 
 
     
     </td>
     <td valign="top">
     
-        Token URL received during creation of the service key for API portal API access for the ***APIPortal.Administrator*** role
+    Token URL received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
 
     To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
 
@@ -444,28 +444,28 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        ***clientId***
+    `clientId`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        The client ID received during creation of the service key for API portal API access for the ***APIPortal.Administrator*** role
+    The client ID received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
@@ -478,167 +478,28 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        ***clientSecret***
+    `clientSecret`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        The client secret received during creation of the service key for API portal API access for the ***APIPortal.Administrator*** role
-
-    You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
-
-    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top" rowspan="4">
-    
-        apiportalSelfServiceAdmin
-
-
-    
-    </td>
-    <td valign="top">
-    
-        ***Url***
-
-
-    
-    </td>
-    <td valign="top">
-    
-        String
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Required
-
-
-    
-    </td>
-    <td valign="top">
-    
-        URL received during creation of the service key for API portal API access for the ***APIManagement.SelfService.Administrator*** role.
-
-    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        ***tokenUrl***
-
-
-    
-    </td>
-    <td valign="top">
-    
-        String
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Required
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Token URL received during creation of the service key for API portal API access for the ***APIManagement.SelfService.Administrator*** role.
-
-    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        ***clientId***
-
-
-    
-    </td>
-    <td valign="top">
-    
-        String
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Optional
-
-
-    
-    </td>
-    <td valign="top">
-    
-        The client ID received during creation of the service key for API portal API access for the ***APIManagement.SelfService.Administrator*** role.
-
-    You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
-
-    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        ***clientSecret***
-
-
-    
-    </td>
-    <td valign="top">
-    
-        String
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Optional
-
-
-    
-    </td>
-    <td valign="top">
-    
-        The client secret received during creation of the service key for API portal API access for the ***APIManagement.SelfService.Administrator*** role.
+    The client secret received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
@@ -651,35 +512,174 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top" rowspan="4">
     
-        devportal
+    apiportalSelfServiceAdmin
 
 
     
     </td>
     <td valign="top">
     
-        ***url***
+    `Url`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Required
+    Required
 
 
     
     </td>
     <td valign="top">
     
-        URL received during creation of the service key for Developer Portal API access for the ***AuthGroup.API.Admin*** role.
+    URL received during creation of the service key for API portal API access for the `APIManagement.SelfService.Administrator` role.
+
+    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `tokenUrl`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Required
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Token URL received during creation of the service key for API portal API access for the `APIManagement.SelfService.Administrator` role.
+
+    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `clientId`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    The client ID received during creation of the service key for API portal API access for the `APIManagement.SelfService.Administrator` role.
+
+    You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
+
+    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `clientSecret`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    The client secret received during creation of the service key for API portal API access for the `APIManagement.SelfService.Administrator` role.
+
+    You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
+
+    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="4">
+    
+    devportal
+
+
+    
+    </td>
+    <td valign="top">
+    
+    `url`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Required
+
+
+    
+    </td>
+    <td valign="top">
+    
+    URL received during creation of the service key for Developer Portal API access for the `AuthGroup.API.Admin` role.
 
     See [API Access Plan for API business hub enterprise](../APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
 
@@ -690,28 +690,28 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        ***tokenUrl***
+    `tokenUrl`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Required
+    Required
 
 
     
     </td>
     <td valign="top">
     
-        Token url received during creation of the service key for API business hub enterprise API access for the ***AuthGroup.API.Admin*** role.
+    Token url received during creation of the service key for API business hub enterprise API access for the `AuthGroup.API.Admin` role.
 
     To know more about creating the service key, see [API Access Plan for API business hub enterprise](../APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
 
@@ -722,28 +722,28 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        ***clientId***
+    `clientId`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        The client ID received during creation of the service key for Developer Portal API access for the ***AuthGroup.API.Admin*** role.
+    The client ID received during creation of the service key for Developer Portal API access for the `AuthGroup.API.Admin` role.
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
@@ -756,28 +756,28 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        ***clientSecret***
+    `clientSecret`
 
 
     
     </td>
     <td valign="top">
     
-        String
+    String
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        The client secret received during creation of the service key for Developer Portal API access for the ***AuthGroup.API.Admin*** role.
+    The client secret received during creation of the service key for Developer Portal API access for the `AuthGroup.API.Admin` role.
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
@@ -790,45 +790,45 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        skipApplicationKeySecretCloning
+    skipApplicationKeySecretCloning
 
 
     
     </td>
     <td valign="top">
     
-         
+     
 
 
     
     </td>
     <td valign="top">
     
-        Supported values: ***true/false***
+    Supported values: `true/false`
 
 
     
     </td>
     <td valign="top">
     
-        Boolean
+    Boolean
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        -   The default value for skipApplicationKeySecretCloning is false.
+    -   The default value for skipApplicationKeySecretCloning is false.
 
         > ### Note:  
-        > If you want to skip the cloning of Application Key and Secret in side by side migration, then set the ***“skipApplicationKeySecretCloning”*** flag to true.
+        > If you want to skip the cloning of Application Key and Secret in side by side migration, then set the `“skipApplicationKeySecretCloning”` flag to true.
 
 
 
@@ -838,42 +838,42 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        targetDestinationRefreshOnSwitchOver
+    targetDestinationRefreshOnSwitchOver
 
 
     
     </td>
     <td valign="top">
     
-         
+     
 
 
     
     </td>
     <td valign="top">
     
-        Supported values: ***true/false***
+    Supported values: `true/false`
 
 
     
     </td>
     <td valign="top">
     
-        Boolean
+    Boolean
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        The default value for targetDestinationRefreshOnSwitchOver is false.
+    The default value for targetDestinationRefreshOnSwitchOver is false.
 
     > ### Note:  
     > Add this parameter to ensure that during the switchover stage the Tenant Cloning Tool waits for five minutes for the design time to connect to the runtime on the target API portal. If this parameter is not configured, the Tenant Cloning Tool will continue to execute the switchover without any delay.
@@ -885,42 +885,42 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top" rowspan="2">
     
-        clone
+    clone
 
 
     
     </td>
     <td valign="top">
     
-        skip-apiportal
+    skip-apiportal
 
 
     
     </td>
     <td valign="top">
     
-        Supported values: ***true/false***
+    Supported values: `true/false`
 
 
     
     </td>
     <td valign="top">
     
-        Boolean
+    Boolean
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        -   The default value for skip-apiportal is false, and API portal entities are cloned
+    -   The default value for skip-apiportal is false, and API portal entities are cloned
     -   If you set the value for skip-apiportal to true, no cloning of the API portal entities takes place.
 
 
@@ -930,35 +930,35 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        skip-devportal
+    skip-devportal
 
 
     
     </td>
     <td valign="top">
     
-        Supported values: ***true/false***
+    Supported values: `true/false`
 
 
     
     </td>
     <td valign="top">
     
-        Boolean
+    Boolean
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        -   The default value for skip-devportal is false, and Developer Portal entities are cloned.
+    -   The default value for skip-devportal is false, and Developer Portal entities are cloned.
     -   If you set the value for skip-devportal to true, no cloning of the Developer Portal entities takes place.
 
 
@@ -968,42 +968,42 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        stage
+    stage
 
 
     
     </td>
     <td valign="top">
     
-         
+     
 
 
     
     </td>
     <td valign="top">
     
-        Supported values: ***"DEFAULT" | "SWITCHOVER***
+    Supported values: `"DEFAULT" | "SWITCHOVER`
 
 
     
     </td>
     <td valign="top">
     
-        string
+    string
 
 
     
     </td>
     <td valign="top">
     
-        Optional
+    Optional
 
 
     
     </td>
     <td valign="top">
     
-        The supported values for this parameter is either default or switchover.
+    The supported values for this parameter is either default or switchover.
 
 
     
@@ -1119,30 +1119,14 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        ID
+    ID
 
 
     
     </td>
     <td valign="top">
     
-        Entity ID
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Name
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Entity name
+    Entity ID
 
 
     
@@ -1151,30 +1135,14 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        Type
+    Name
 
 
     
     </td>
     <td valign="top">
     
-        Entity type
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Script Execution Timestamp \(UTC\)
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Script execution time in UTC
+    Entity name
 
 
     
@@ -1183,14 +1151,14 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        Artifact’s Last Modified Timestamp \(UTC\)
+    Type
 
 
     
     </td>
     <td valign="top">
     
-        Last modified time of the entity in the source API Management system \(UTC\)
+    Entity type
 
 
     
@@ -1199,14 +1167,46 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-        STATUS
+    Script Execution Timestamp \(UTC\)
 
 
     
     </td>
     <td valign="top">
     
-        Migration Status:
+    Script execution time in UTC
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Artifact’s Last Modified Timestamp \(UTC\)
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Last modified time of the entity in the source API Management system \(UTC\)
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    STATUS
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Migration Status:
 
     -   SUCCESS \(Entity successfully cloned\)
     -   FAILURE \(Entity failed to clone\)
@@ -1238,7 +1238,7 @@ Once you have your source and target system ready, you can clone your API Manage
 
 ## Next Steps
 
-After the cloning process completes, you must perform the tasks mentioned in the ***User Actions*** worksheet within the output excel file `apimtct-output.xlsx`.
+After the cloning process completes, you must perform the tasks mentioned in the `User Actions` worksheet within the output excel file `apimtct-output.xlsx`.
 
 To know more about what actions you must take, see the **User Actions** section in [Post Cloning Tasks](post-cloning-tasks-116d82c.md).
 

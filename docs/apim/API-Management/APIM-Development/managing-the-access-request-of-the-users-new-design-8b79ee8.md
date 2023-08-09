@@ -76,30 +76,14 @@ You’re assigned the *AuthGroup.API.Admin* role.
             <tr>
             <td valign="top">
             
-                        Administrator
+            Administrator
 
 
             
             </td>
             <td valign="top">
             
-                        Manages user registration. Create and delete applications on behalf of application developers. In addition, create custom attributes and import the app key.
-
-
-            
-            </td>
-            </tr>
-            <tr>
-            <td valign="top">
-            
-                        Developer
-
-
-            
-            </td>
-            <td valign="top">
-            
-                        Create applications and check billing and metering data. Test APIs and view analytics data.
+            Manages user registration. Create and delete applications on behalf of application developers. In addition, create custom attributes and import the app key.
 
 
             
@@ -108,14 +92,14 @@ You’re assigned the *AuthGroup.API.Admin* role.
             <tr>
             <td valign="top">
             
-                        Site Administrator
+            Developer
 
 
             
             </td>
             <td valign="top">
             
-                        Configure updates, and perform portal changes like uploading the logo, changing the name and the description, and changing the footer links for the site.
+            Create applications and check billing and metering data. Test APIs and view analytics data.
 
 
             
@@ -124,14 +108,30 @@ You’re assigned the *AuthGroup.API.Admin* role.
             <tr>
             <td valign="top">
             
-                        Content Administrator
+            Site Administrator
 
 
             
             </td>
             <td valign="top">
             
-                        Manages content categories.
+            Configure updates, and perform portal changes like uploading the logo, changing the name and the description, and changing the footer links for the site.
+
+
+            
+            </td>
+            </tr>
+            <tr>
+            <td valign="top">
+            
+            Content Administrator
+
+
+            
+            </td>
+            <td valign="top">
+            
+            Manages content categories.
 
 
             

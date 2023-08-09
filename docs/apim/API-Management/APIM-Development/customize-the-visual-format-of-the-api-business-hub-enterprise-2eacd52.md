@@ -27,8 +27,6 @@ You can use the *Site Editor* to:
 -   Customize background settings
 -   Customize footer
 
-![](images/Site_Editor_092311c.png)
-
 
 
 <a name="loio2eacd52b914c41f6aa10909fd5bced98__section_mvg_xjj_25b"/>
@@ -85,6 +83,11 @@ To change the banner image,
 ## Edit Description
 
 Choose the *Edit Description* tab to modify the *Title* and *Subtitle* of the home page.
+
+> ### Note:  
+> As a part of banner description, you can use the markdown language to add links and email addresses to the *Title* and *Subtitle* fields within the *Edit Description* dialog. For example, \[SAP\]\([www.sap.com](http://(www.sap.com)\) and mailto:john.doe@example.com.
+> 
+> You can also add multiple lines in the sub-titles using markdown. If you want to move to a new line, end the previous line with a backslash \(\\\).
 
 
 

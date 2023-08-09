@@ -22,7 +22,7 @@ You can attach this policy in the following locations: ![](images/Flow_policy_11
 
 **How the Access Control policy determines which IP address to validate?**
 
-In an ideal scenario, IP addresses that are served can come from various sources in a request. For instance, the ***True-Client-IP*** header can contain an IP address and the ***X-Forwarded-For*** header can contain one or more IP addresses. Also, the API Management configuration and the policy configuration determine which ***X-Forwarded-For address\(es\)*** the policy evaluates.
+In an ideal scenario, IP addresses that are served can come from various sources in a request. For instance, the `True-Client-IP` header can contain an IP address and the `X-Forwarded-For` header can contain one or more IP addresses. Also, the API Management configuration and the policy configuration determine which `X-Forwarded-For address(es)` the policy evaluates.
 
 This section describes how you can configure the Access Control policy to determine which IP address it chooses to validate. Following is the logic based on which Access Control policy determines the IP address it chooses to validate:
 
@@ -31,18 +31,18 @@ This section describes how you can configure the Access Control policy to determ
     The policy first checks if an IP address is present in the True-Client-IP header. If a valid IP address is present, the policy validates that IP address.
 
     > ### Caution:  
-    > If you're going to use the ***True-Clinet-IP*** header, then make sure that you trust the source of that address. If you can't ensure that the header contains a trusted address, set ***<IgnoreTrueClientIPHeader\>*** to ***true*** so that the policy ignores the ***True-Client-IP*** and instead evaluates the IP address\(es\) in the ***X-Forwarded-For*** header.
+    > If you're going to use the `True-Clinet-IP` header, then make sure that you trust the source of that address. If you can't ensure that the header contains a trusted address, set `<IgnoreTrueClientIPHeader>` to `true` so that the policy ignores the `True-Client-IP` and instead evaluates the IP address\(es\) in the `X-Forwarded-For` header.
 
 -   **IgnoreTrueClientIPHeader**
 
-    When you set ***<IgnoreTrueClientIPHeader\>*** to ***true***, the policy ignores the ***True-Client-IP header***and evaluates IP addresses in the ***X-Forwarded-For*** header, following the behavior you've configured. When the ***IgnoreTrueClientIPHeader*** attribute is set to false, the policy evaluates the ***True-Client-IP header***. By default, ***IgnoreTrueClientIPHeader*** attribute is set to ***false***.
+    When you set `<IgnoreTrueClientIPHeader>` to `true`, the policy ignores the `True-Client-IP header`and evaluates IP addresses in the `X-Forwarded-For` header, following the behavior you've configured. When the `IgnoreTrueClientIPHeader` attribute is set to false, the policy evaluates the `True-Client-IP header`. By default, `IgnoreTrueClientIPHeader` attribute is set to `false`.
 
 -   **X-Forwarded-For header**
 
-    If the True-Client-IP header doesn’t contain an IP address, or if you've set the***<IgnoreTrueClientIPHeader\>*** element to ***true***, then the policy validates the IP addresses present in the -X-Forwarded-For header. If there are multiple addresses in the X-Forwarded-For header, then those IP addresses, likely belong to the chain of servers that processed a request.
+    If the True-Client-IP header doesn’t contain an IP address, or if you've set the`<IgnoreTrueClientIPHeader>` element to `true`, then the policy validates the IP addresses present in the -X-Forwarded-For header. If there are multiple addresses in the X-Forwarded-For header, then those IP addresses, likely belong to the chain of servers that processed a request.
 
     > ### Note:  
-    > API Management, by default, fills the ***X-Forwarded-For*** header with a single IP address it received from the last external TCP handshake \(such as the Client IP or router\). That is, in API Management, the X-Forwarded-For header is populated with only a single IP address.
+    > API Management, by default, fills the `X-Forwarded-For` header with a single IP address it received from the last external TCP handshake \(such as the Client IP or router\). That is, in API Management, the X-Forwarded-For header is populated with only a single IP address.
 
 
 An example payload for the policy is as follows:

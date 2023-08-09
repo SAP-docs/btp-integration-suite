@@ -28,7 +28,7 @@ A request is made using the following:
 
 -   URL: <URL of OAuth token\>
 -   Method: POST
--   Custom Header: Authorization value: Basic <***Application key***\>:<***Application secret***\>\(base64 encoded\)
+-   Custom Header: Authorization value: Basic <`Application key`\>:<`Application secret`\>\(base64 encoded\)
 -   Payload: grant\_type=client\_credentials
 
 This call returns a json payload with the OAuth validation response. On successful validation, it contains the access token. Note down the access token.

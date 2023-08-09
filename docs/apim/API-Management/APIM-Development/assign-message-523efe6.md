@@ -171,20 +171,20 @@ createNew \(Optional\)
 
 It is a Boolean value which indicates if the request or response object should be newly created or if the existing message should be modified.
 
-If the value is ***true***, the policy creates a new request or response object, based on the type specified. If no name is specified for the new variable, the policy creates a new request or response object, based on the value of type.
+If the value is `true`, the policy creates a new request or response object, based on the type specified. If no name is specified for the new variable, the policy creates a new request or response object, based on the value of type.
 
 > ### Note:  
 > When a new request or response object is created, it deletes the existing one and replaces it completely.
 
-If the value is ***false***, the policy responds in one of the following ways:
+If the value is `false`, the policy responds in one of the following ways:
 
 -   If the variable name to a request or response is resolved, the processing continues.
 -   If the variable name to a request or response is not resolved, or is resolved to a non-message type, the policy throws an error.
 
-If the value of ***createNew*** is not specified, the policy responds in one of the following ways:
+If the value of `createNew` is not specified, the policy responds in one of the following ways:
 
--   If ***createNew*** resolves to a message, the processing continues.
--   If ***createNew*** is not resolved, or is resolved to a non-message type, a new variable of type specified in ***type*** is created.
+-   If `createNew` resolves to a message, the processing continues.
+-   If `createNew` is not resolved, or is resolved to a non-message type, a new variable of type specified in `type` is created.
 
 
 
@@ -216,7 +216,7 @@ type \(Optional\)
 </td>
 <td valign="top">
 
-It is a string that specifies the type of the new message, when ***createNew*** is ***true***.
+It is a string that specifies the type of the new message, when `createNew` is `true`.
 
 Valid values: `request` or `response`
 
@@ -236,9 +236,9 @@ IgnoreUnresolvedVariables \(Optional\)
 </td>
 <td valign="top">
 
-If ***IgnoreUnresolvedVariables*** is set to ***false*** and any variable cannot be resolved, then the policy throws an error.
+If `IgnoreUnresolvedVariables` is set to `false` and any variable cannot be resolved, then the policy throws an error.
 
-If it is set to ***true*** and any variable is unresolvable, the variable is treated as empty string \(Null\).
+If it is set to `true` and any variable is unresolvable, the variable is treated as empty string \(Null\).
 
 Valid values: `true` or `false`
 
@@ -257,7 +257,7 @@ Default value: `false`
 > ### Sample Code:  
 > Example
 > 
-> The following example sets ***IgnoreUnresolvedVariables*** to ***true***:
+> The following example sets `IgnoreUnresolvedVariables` to `true`:
 > 
 > ```
 > 
@@ -320,7 +320,7 @@ To copy multiple headers, mention the header name in the name attribute as below
 
 `<Header name="headerB"/>`
 
- `</Headers>`
+`</Headers>`
 
 `</Copy>`
 
@@ -403,7 +403,7 @@ You can use query parameters only when the message type is Request and the HTTP 
 > ### Sample Code:  
 > Example
 > 
-> The following example copies the ***temp\_param*** query parameter from the request into a new CustomReq object:
+> The following example copies the `temp_param` query parameter from the request into a new CustomReq object:
 > 
 > ```
 > 
@@ -440,8 +440,8 @@ To copy all form parameters, specify `<Copy><FormParams/></Copy>`.
 
 You can use query parameters only when the message type is Request and the HTTP verb is POST. Additionally, you should meet one \(or both\) of the following criteria:
 
--   Set the Form data to some value, or ***'''*** \(empty string\). For example, with ***curl***, add ***\-d ""*** to your request.
--   Set the ***Content-Length*** header to [0\] if there is no data in the original request; otherwise, set it to the current length in bytes. For example, with ***curl***, add ***\-H "Content-Length: 0"*** to your request.
+-   Set the Form data to some value, or `'''` \(empty string\). For example, with `curl`, add `-d ""` to your request.
+-   Set the `Content-Length` header to [0\] if there is no data in the original request; otherwise, set it to the current length in bytes. For example, with `curl`, add `-H "Content-Length: 0"` to your request.
 
 > ### Sample Code:  
 > Syntax
@@ -461,7 +461,7 @@ You can use query parameters only when the message type is Request and the HTTP 
 > ### Sample Code:  
 > Example
 > 
-> The following example copies three form parameters to the custom request ***CustomReq***:
+> The following example copies three form parameters to the custom request `CustomReq`:
 > 
 > ```
 > <AssignMessage async="false" continueOnError="false" enabled="true" xmlns='http://www.sap.com/apimgmt'>
@@ -766,7 +766,7 @@ To remove specific headers, provide the header name in the name attribute as bel
 
 `<Header name="headerB"/>`
 
- `</Headers>`
+`</Headers>`
 
 `</Remove>`
 
@@ -788,7 +788,7 @@ To remove specific headers, provide the header name in the name attribute as bel
 > ### Sample Code:  
 > Example
 > 
-> The following example removes the ***temp*** header from the request:
+> The following example removes the `temp` header from the request:
 > 
 > ```
 > <AssignMessage async="false" continueOnError="false" enabled="true" xmlns='http://www.sap.com/apimgmt'>
@@ -1035,7 +1035,7 @@ You can use query parameters only when the message type is Request and the HTTP 
 > ### Sample Code:  
 > Example
 > 
-> The following example adds the query parameter ***tempParam*** to the request and assigns the value [82\] to it:
+> The following example adds the query parameter `tempParam` to the request and assigns the value [82\] to it:
 > 
 > ```
 > <AssignMessage async="false" continueOnError="false" enabled="true" xmlns='http://www.sap.com/apimgmt'>
@@ -1067,8 +1067,8 @@ Adds the form parameters and the contentType of message is changed to applicatio
 
 You can use form parameters only when the message type is Request and the HTTP verb is POST. Additionally, you should meet one \(or both\) of the following criteria:
 
--   Set the Form data to some value, or ***'''*** \(empty string\). For example, with ***curl***, add ***\-d ""*** to your request.
--   Set the ***Content-Length*** header to [0\] if there is no data in the original request; otherwise, set it to the current length in bytes. For example, with ***curl***, add ***\-H "Content-Length: 0"*** to your request.
+-   Set the Form data to some value, or `'''` \(empty string\). For example, with `curl`, add `-d ""` to your request.
+-   Set the `Content-Length` header to [0\] if there is no data in the original request; otherwise, set it to the current length in bytes. For example, with `curl`, add `-H "Content-Length: 0"` to your request.
 
 > ### Sample Code:  
 > Syntax
@@ -1089,7 +1089,7 @@ You can use form parameters only when the message type is Request and the HTTP v
 > ### Sample Code:  
 > Example
 > 
-> The following example adds a single form parameter \(***"answer"***\) and a static value \(***"42"***\) to the request:
+> The following example adds a single form parameter \(`"answer"`\) and a static value \(`"42"`\) to the request:
 > 
 > ```
 > <AssignMessage async="false" continueOnError="false" enabled="true" xmlns='http://www.sap.com/apimgmt'>
@@ -1266,9 +1266,9 @@ Enter the payloads of type json, xml, plain text, and so on, within this element
 
 Following are the attributes \(optional\) of <Payload\>:
 
--   ***contentType***: It is a string which if specified, assigns the value of ***contentType*** to the Content-Type HTTP header.
--   ***variablePrefix***: It is a character which optionally specifies the leading delimiter on a flow variable. The default is ***"\{"***.
--   ***variableSuffix***: It is a character which optionally specifies the trailing delimiter on a flow variable. The default is ***"\}"***.
+-   `contentType`: It is a string which if specified, assigns the value of `contentType` to the Content-Type HTTP header.
+-   `variablePrefix`: It is a character which optionally specifies the leading delimiter on a flow variable. The default is `"{"`.
+-   `variableSuffix`: It is a character which optionally specifies the trailing delimiter on a flow variable. The default is `"}"`.
 
 > ### Sample Code:  
 > Syntax
@@ -1299,7 +1299,7 @@ Following are the attributes \(optional\) of <Payload\>:
 > ```
 
 > ### Note:  
-> If the payload content is of the type XML, and gets changed unexpectedly during API proxy execution, please wrap it in <!\[CDATA\[***…*** \]\]\> element.
+> If the payload content is of the type XML, and gets changed unexpectedly during API proxy execution, please wrap it in <!\[CDATA\[`…` \]\]\> element.
 > 
 > This way, you can ensure that the payload content is treated as a string and thereby it is not getting processed by the API Proxy back-end system as XML.
 > 
@@ -1526,7 +1526,7 @@ Name \(Required\)
 </td>
 <td valign="top">
 
-It is a string that specifies the name of the variable. If the variable named in ***AssignVariable*** does not exist, the policy creates one with that name.
+It is a string that specifies the name of the variable. If the variable named in `AssignVariable` does not exist, the policy creates one with that name.
 
 > ### Sample Code:  
 > Syntax
@@ -1542,7 +1542,7 @@ It is a string that specifies the name of the variable. If the variable named in
 > ### Sample Code:  
 > Example
 > 
-> The following example specifies the destination variable as ***var*** and sets it to the value ***"83"***:
+> The following example specifies the destination variable as `var` and sets it to the value `"83"`:
 > 
 > ```
 > <AssignMessage async="false" continueOnError="false" enabled="true" xmlns='http://www.sap.com/apimgmt'>
@@ -1555,7 +1555,7 @@ It is a string that specifies the name of the variable. If the variable named in
 > </AssignMessage>
 > ```
 > 
-> If ***myvar*** does not exist, ***AssignVariable*** creates it.
+> If `myvar` does not exist, `AssignVariable` creates it.
 
 
 
@@ -1573,12 +1573,12 @@ Ref \(Optional\)
 
 Reference that assigns value \(as a flow variable and not a string variable\) to the variable.
 
-If you want to assign a literal string value to the variable, use the ***Value*** element instead.
+If you want to assign a literal string value to the variable, use the `Value` element instead.
 
--   Do this \(no brackets\): ***<Ref\>client.host</Ref\>***
--   Do NOT do this \(brackets\): ***<Ref\>\{client.host\}</Ref\>***
+-   Do this \(no brackets\): `<Ref>client.host</Ref>`
+-   Do NOT do this \(brackets\): `<Ref>{client.host}</Ref>`
 
-Define the default value for the destination flow variable by using ***<Value\>*** along with ***<Ref\>***. If the flow variable specified by ***<Ref\>*** does not exist, is not readable, or is null, then the value of ***<Value\>*** is assigned to the destination flow variable instead.
+Define the default value for the destination flow variable by using `<Value>` along with `<Ref>`. If the flow variable specified by `<Ref>` does not exist, is not readable, or is null, then the value of `<Value>` is assigned to the destination flow variable instead.
 
 > ### Sample Code:  
 > Syntax
@@ -1595,7 +1595,7 @@ Define the default value for the destination flow variable by using ***<Value\>*
 > ### Sample Code:  
 > Example
 > 
-> The following example assigns the value of the flow variable ***request.header.temp*** to the destination flow variable ***var*** and the value of the query parameter ***test*** to the ***test*** variable:
+> The following example assigns the value of the flow variable `request.header.temp` to the destination flow variable `var` and the value of the query parameter `test` to the `test` variable:
 > 
 > ```
 > <AssignMessage async="false" continueOnError="false" enabled="true" xmlns='http://www.sap.com/apimgmt'>
@@ -1688,7 +1688,7 @@ If you use a combination of the <Value\> and <Ref\> elements, <Value\> acts as d
 > ### Sample Code:  
 > Example
 > 
-> The following example assigns the value of the flow variable ***request.header.temp*** to the destination flow variable ***var*** and the value of the query parameter ***test*** to the ***test*** variable:
+> The following example assigns the value of the flow variable `request.header.temp` to the destination flow variable `var` and the value of the query parameter `test` to the `test` variable:
 > 
 > ```
 > <AssignMessage name="assignvariable-2">

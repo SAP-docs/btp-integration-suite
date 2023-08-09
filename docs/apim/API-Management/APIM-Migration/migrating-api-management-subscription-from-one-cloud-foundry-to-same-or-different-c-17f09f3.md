@@ -22,21 +22,21 @@ Your target system is the system that has your API Management subscription infra
 <tr>
 <th valign="top">
 
- **Source Subscription** 
+**Source Subscription** 
 
 
 
 </th>
 <th valign="top">
 
- **Target Subscription** 
+**Target Subscription** 
 
 
 
 </th>
 <th valign="top">
 
- **Allowed** 
+**Allowed** 
 
 
 
@@ -174,14 +174,14 @@ The steps assisting the migration of your API Management from your source system
     <tr>
     <td valign="top">
     
-        OPU-API-OD-OPS
+    OPU-API-OD-OPS
 
 
     
     </td>
     <td valign="top">
     
-        SAP API Management Operations - On Demand
+    SAP API Management Operations - On Demand
 
 
     

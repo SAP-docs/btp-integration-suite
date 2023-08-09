@@ -113,6 +113,92 @@ API Management
 </td>
 <td valign="top">
 
+API business hub enterprise: Add Links and Email Addresses Using Markdown
+
+
+
+</td>
+<td valign="top">
+
+You can use markdown to add links and email addresses to the title and subtitle fields as part of the banner description in *Site Editor*. For more information, see [Customize the Visual Format of the API business hub enterprise](APIM-Development/customize-the-visual-format-of-the-api-business-hub-enterprise-2eacd52.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2023-07-17
+
+
+
+</td>
+<td valign="top">
+
+2023-07-17
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Latest Version of the Tenant Cloning Tool
 
 
@@ -457,7 +543,7 @@ API Management
 </td>
 <td valign="top">
 
- API business hub enterprise \[New Design\] and \[Classic Design\]
+API business hub enterprise \[New Design\] and \[Classic Design\]
 
 
 
@@ -543,7 +629,7 @@ API Management
 </td>
 <td valign="top">
 
- API business hub enterprise \[New Design\]
+API business hub enterprise \[New Design\]
 
 
 
@@ -627,7 +713,7 @@ API Management
 </td>
 <td valign="top">
 
- API business hub enterprise \[New Design\]
+API business hub enterprise \[New Design\]
 
 
 
@@ -713,7 +799,7 @@ API Management
 </td>
 <td valign="top">
 
- API business hub enterprise 
+API business hub enterprise 
 
 
 

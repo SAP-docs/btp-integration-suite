@@ -81,44 +81,21 @@ You are updating a rate plan.
             <tr>
             <td valign="top">
             
-                        0
+            0
 
 
             
             </td>
             <td valign="top">
             
-                        5000
+            5000
 
 
             
             </td>
             <td valign="top">
             
-                        0.0
-
-
-            
-            </td>
-            </tr>
-            <tr>
-            <td valign="top">
-            
-                        5001
-
-
-            
-            </td>
-            <td valign="top">
-            
-                        10000
-
-
-            
-            </td>
-            <td valign="top">
-            
-                        0.5
+            0.0
 
 
             
@@ -127,19 +104,42 @@ You are updating a rate plan.
             <tr>
             <td valign="top">
             
-                        10001
+            5001
 
 
             
             </td>
             <td valign="top">
             
-            
+            10000
+
+
             
             </td>
             <td valign="top">
             
-                        0.7
+            0.5
+
+
+            
+            </td>
+            </tr>
+            <tr>
+            <td valign="top">
+            
+            10001
+
+
+            
+            </td>
+            <td valign="top">
+            
+
+            
+            </td>
+            <td valign="top">
+            
+            0.7
 
 
             

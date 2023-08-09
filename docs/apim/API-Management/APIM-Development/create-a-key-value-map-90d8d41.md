@@ -45,30 +45,14 @@ You are assigned the admin role.
     <tr>
     <td valign="top">
     
-        **Name**
+    **Name**
 
 
     
     </td>
     <td valign="top">
     
-        Key value map name
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        **Encrypted**
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Select this checkbox if you want to encrypt the values.
+    Key value map name
 
 
     
@@ -77,14 +61,30 @@ You are assigned the admin role.
     <tr>
     <td valign="top">
     
-        **Key**
+    **Encrypted**
 
 
     
     </td>
     <td valign="top">
     
-        Key name
+    Select this checkbox if you want to encrypt the values.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Key**
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Key name
 
     > ### Restriction:  
     > You cannot use // as a part of the Key name.
@@ -96,14 +96,14 @@ You are assigned the admin role.
     <tr>
     <td valign="top">
     
-        **Value**
+    **Value**
 
 
     
     </td>
     <td valign="top">
     
-        Value for the key
+    Value for the key
 
 
     

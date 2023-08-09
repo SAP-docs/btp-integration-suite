@@ -35,11 +35,11 @@ To add a Destination node in the Cloud Transport Management Applications, execut
     > 
     > If Cloud Integration and API Management capabilities are activated under Integration suite subscription, then both the capabilities can use the same source node and the destination node.
 
-6.  In the *Create Node* dialog box, enter a node name that is unique, for example ***Destination\_node1***, and enable the *Allow Upload to Node* option.
+6.  In the *Create Node* dialog box, enter a node name that is unique, for example `Destination_node1`, and enable the *Allow Upload to Node* option.
 
-7.  Choose ***Multi-Target Application*** from the *Content Type* dropdown.
+7.  Choose `Multi-Target Application` from the *Content Type* dropdown.
 
-8.  Choose the destination ***TMSDeploy*** you created in the Transport subaccount from the *Destination* dropdown. This destination contains the details of the destination subaccount's org and space name. Refer [Create a Deploy Service Destination in Cloud Transport Management Service Subaccount](create-a-deploy-service-destination-in-cloud-transport-management-service-subacco-09b1eec.md) for the Destination name.
+8.  Choose the destination `TMSDeploy` you created in the Transport subaccount from the *Destination* dropdown. This destination contains the details of the destination subaccount's org and space name. Refer [Create a Deploy Service Destination in Cloud Transport Management Service Subaccount](create-a-deploy-service-destination-in-cloud-transport-management-service-subacco-09b1eec.md) for the Destination name.
 
 9.  Choose *OK*.
 

@@ -47,7 +47,7 @@ You can restrict access to an API product in API Management using a custom role.
         > 
         > The *Next* option on the *Create Role* dialogue will remain greyed out until you press enter after typing the attribute values in the text box.
 
-         ![](images/Static_Custom_Role_a6bade0.png)
+        ![](images/Static_Custom_Role_a6bade0.png)
 
         This value is later used to assign permission while creating an API product.
 
@@ -91,5 +91,5 @@ You can restrict access to an API product in API Management using a custom role.
 
 [Create a Product](../APIM-Development/create-a-product-d769622.md "Explains how to create products to publish a bundle of APIs together.")
 
-[Assign User Roles](assign-user-roles-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
+[Assign User Roles in API Management](assign-user-roles-in-api-management-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
 

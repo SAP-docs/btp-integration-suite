@@ -56,14 +56,14 @@ Your target system is the system that has your API Management subscription on th
     <tr>
     <td valign="top">
     
-        Already present
+    Already present
 
 
     
     </td>
     <td valign="top">
     
-        You cannot use this subaccount for migration. Create a new subaccount in the hyperscalers-managed infrastructure within the cloud foundry environment and enable API Management on that subaccount for it to act as your target system.
+    You cannot use this subaccount for migration. Create a new subaccount in the hyperscalers-managed infrastructure within the cloud foundry environment and enable API Management on that subaccount for it to act as your target system.
 
     Additionally, if you want to reuse the existing runtime then follow the steps mentioned in the [Migrating API Management Subscription Created Using the Starter Plan Service Instance](migrating-api-management-subscription-created-using-the-starter-plan-service-instan-9778a36.md).
 
@@ -74,14 +74,14 @@ Your target system is the system that has your API Management subscription on th
     <tr>
     <td valign="top">
     
-        Not present
+    Not present
 
 
     
     </td>
     <td valign="top">
     
-        You can choose to reuse this account as your target system for migration, or create a new subaccount.
+    You can choose to reuse this account as your target system for migration, or create a new subaccount.
 
 
     
@@ -109,7 +109,7 @@ Your target system is the system that has your API Management subscription on th
     -   APIPortal.Administrator role in the API portal
     -   AuthGroup.API.Admin role in the Developer Portal
 
-    Note the service keys \(***url***, ***tokenurl***, ***clientId***, and ***clientSecret***\) for the given roles, and keep handy.
+    Note the service keys \(`url`, `tokenurl`, `clientId`, and `clientSecret`\) for the given roles, and keep handy.
 
     To know more about API access plan for API portal, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
 

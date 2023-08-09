@@ -69,20 +69,24 @@ To set up the API Management capability from Integration Suite, you should first
 
 7.  On the Integration Suite home page, under *Capabilities*, choose *Add Capabilities*.
 
-8.  On the *Activate Capabilities* dialog, under *Select Capabilities*, select the *Design, Develop and Manage APIs* and choose *Next*.
+8.  To design, develop, publish, and oversee APIs in a secure and scalable environment, select *Manage APIs* on the *Activate Capabilities* dialog, and choose *Next*.
 
-9.  If you want to activate API business hub enterprise, select the checkbox *Enable API Business Hub Enterprise* and choose **Next**.
+9.  To discover, consume and monitor APIs from a centralized API catalogue, choose *Enable API Business Hub Enterprise*.
 
-10. Choose *Activate* on the *Activate Capabilities* dialog.
+    Once you enable API business hub enterprise, you will get an option to enable *Graph*.
+
+10. If you want to expose all your business data in the form of a single semantically connected data graph, select the checkbox for *Graph*, and choose **Next**.
+
+11. Choose *Activate* on the *Activate Capabilities* dialog.
 
     > ### Note:  
     > If you face any issues during activation or the activation fails, then refer SAP Note [2904202](https://launchpad.support.sap.com/#/notes/2904202) and proceed accordingly.
 
-11. On the resulting screen, choose *OK* once the status changes from *In Progress* to *Active*.
+12. On the resulting screen, choose *OK* once the status changes from *In Progress* to *Active*.
 
-12. Log out of *Integration Suite*.
+13. Log out of *Integration Suite*.
 
-13. At this point, navigate back to the SAP BTP Cockpit and assign the following roles:
+14. At this point, navigate back to the SAP BTP Cockpit and assign the following roles:
 
     -   *APIManagement.Selfservice.Administrator*: This role is required for the onboarding of API Portal and to get access to its Settings page.
 
@@ -98,11 +102,11 @@ To set up the API Management capability from Integration Suite, you should first
     3.  In the resulting dialog box, select the *APIManagement.Selfservice.Administrator* and *AuthGroup.SelfService.Admin* roles and choose *Assign Role Collection*.
 
 
-14. Once the roles are assigned, log on to the *Integration Suite*.
+15. Once the roles are assigned, log on to the *Integration Suite*.
 
-15. On the *Integration Suite* home page, choose *Settings* \> *APIs* from the left navigation pane.
+16. On the *Integration Suite* home page, choose *Settings* \> *APIs* from the left navigation pane.
 
-16. On the *Configure the API Management Service* screen, configure the following and choose *Set Up*:
+17. On the *Configure the API Management Service* screen, configure the following and choose *Set Up*:
 
     -   Select the *Account type*:
 
@@ -124,7 +128,7 @@ To set up the API Management capability from Integration Suite, you should first
 
     The API Management capability is now configured.
 
-17. You must log out of *Integration Suite* and log in again.
+18. You must log out of *Integration Suite* and log in again.
 
     You can now create APIs, build API proxies as a service provider, or use APIs and other convenient services.
 
@@ -134,13 +138,13 @@ To set up the API Management capability from Integration Suite, you should first
 
 [Setting Up API Portal Application Using API Management Standalone Tile](setting-up-api-portal-application-using-api-management-standalone-tile-9d8c7ae.md "You can provision the API portal using the API Management, API Portal standalone tile from the SAP BTP cockpit.")
 
-[Assign User Roles](assign-user-roles-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
+[Assign User Roles in API Management](assign-user-roles-in-api-management-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
 
 [Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "Cancel your API portal and API business hub enterprise application subscriptions to disable your account from the API Management service.")
 
 [Build APIs](../APIM-Development/build-apis-74c042b.md "API portal provides a common platform for API designers to define and publish APIs. Every API Management customer is provided with their own API portal application on cloud. The API portal offers capabilities to configure systems, build and publish APIs, analyze and test APIs.")
 
-[Create an API Provider](../APIM-Development/create-an-api-provider-6b263e2.md "Create an API provider to connect to an API provider and browse for APIs.")
+[Create an API Provider](../APIM-Development/create-an-api-provider-6b263e2.md "Define the details of the host you want an application to reach by creating an API provider.")
 
 [Create an API Proxy](../APIM-Development/create-an-api-proxy-4ac0431.md "Create API proxies.")
 
