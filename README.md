@@ -10,7 +10,6 @@ You can currently make contributions to the following guides in this repository:
 |:---|:---|
 |[SAP Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/5cc6987511104c418b7cb4c25f3d9cb0.html?version=CLOUD) | SAP Integration Suite connects and contextualizes processes and data while enabling new content-rich applications to be assembled faster with less dependence on IT. |
 |[SAP API Management in the Cloud Foundry Environment](https://help.sap.com/docs/sap-api-management/sap-api-management/sap-api-management-in-cloud-foundry-environment?version=Cloud) | SAP API Management is a standalone service that lets you publish, promote, and oversee APIs in a secure and scalable environment.  |
-|[SAP Cloud Integration](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/sap-cloud-integration)|SAP Cloud Integration facilitates the integration of business processes spanning different companies, organizations, or departments within an organization.|
 
 ## Requirements
 
