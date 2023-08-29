@@ -173,6 +173,8 @@ How to use SAP API Management
                     -   [Export a Policy Template](API-Management/APIM-Development/export-a-policy-template-d27df04.md)
                     -   [Delete a Policy Template](API-Management/APIM-Development/delete-a-policy-template-f8b3c9b.md)
                     -   [Policy Template Structure](API-Management/APIM-Development/policy-template-structure-a0210da.md)
+                -   [API Revisions](API-Management/APIM-Development/api-revisions-58097ac.md)
+                    -   [Creating API Revisions](API-Management/APIM-Development/creating-api-revisions-0a0d7d4.md)
                 -   [Edit an API Proxy](API-Management/APIM-Development/edit-an-api-proxy-a64b952.md)
                 -   [Delete an API Proxy](API-Management/APIM-Development/delete-an-api-proxy-5cd89a3.md)
             -   [Test APIs](API-Management/APIM-Development/test-apis-3ba6151.md)

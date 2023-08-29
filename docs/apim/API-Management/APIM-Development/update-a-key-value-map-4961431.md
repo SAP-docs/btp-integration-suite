@@ -57,3 +57,7 @@ You are updating a key value map to either add an entry, delete an entry, or upd
 
 [Delete a Key Value Map](delete-a-key-value-map-24fbb01.md "Delete a key value map which is not in use.")
 
+[Create a Key Value Map](create-a-key-value-map-90d8d41.md "Create a key value map using the create and manage collections of arbitrary key value pairs for any number of API proxies.")
+
+[Delete a Key Value Map](delete-a-key-value-map-24fbb01.md "Delete a key value map which is not in use.")
+

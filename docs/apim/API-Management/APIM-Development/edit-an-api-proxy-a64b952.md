@@ -129,6 +129,22 @@ Consider the following examples:
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Revision
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Once an API is created, you can plan subsequent compatible changes to the API by creating a revision.
+
+
+    
+    </td>
+    </tr>
     </table>
     
 5.  To edit the API in the embedded API designer, you can either choose *Edit* \> *Edit in API Designer* from the top-right corner of the screen, or choose *Edit* \> *Resources*tab, click *\>* to open the API designer.

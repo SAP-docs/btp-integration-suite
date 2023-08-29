@@ -117,6 +117,10 @@ You are assigned the admin role.
 **Related Information**  
 
 
+[Update a Key Value Map](update-a-key-value-map-4961431.md "Update a key value map.")
+
+[Delete a Key Value Map](delete-a-key-value-map-24fbb01.md "Delete a key value map which is not in use.")
+
 [Delete a Key Value Map](delete-a-key-value-map-24fbb01.md "Delete a key value map which is not in use.")
 
 [Update a Key Value Map](update-a-key-value-map-4961431.md "Update a key value map.")

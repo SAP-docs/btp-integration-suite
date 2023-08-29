@@ -15,6 +15,11 @@ API proxies always get imported to the destination API portal in the deployed st
 > ### Note:  
 > If the API proxy and its artifacts already exist in the destination, only the API proxy gets overwritten during transport. All other artifacts of the API proxy, such as API provider, Key Store Certificate, Trust Store, and Key-Value Maps remain unaffected.
 
+> ### Note:  
+> When you transport an API, a new revision of the API is created. If your API has an existing draft, the draft gets replaced by the new revision created during the transport.
+> 
+> If there are multiple revisions of an API, only the latest revision gets transported.
+
 
 
 <a name="loio2fe1aa277c5a460787ed6b9c9e1cb264__steps_cnz_rqq_1pb"/>

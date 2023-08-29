@@ -113,6 +113,94 @@ API Management
 </td>
 <td valign="top">
 
+API Revisions
+
+
+
+</td>
+<td valign="top">
+
+You can now create a new revision of your API and make necessary changes to the API definitions, policies, and resources without causing any disruption to the already published API.
+
+You can also see all the changes made to the API and restore the API to its previous state. For more information, see [API Revisions](APIM-Development/api-revisions-58097ac.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2023-08-28
+
+
+
+</td>
+<td valign="top">
+
+2023-08-28
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 API business hub enterprise: Add Links and Email Addresses Using Markdown
 
 
