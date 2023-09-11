@@ -16,7 +16,7 @@ We use **inbound** to refer to the communication direction when a sender system 
 
     OAuth allows you to set up authentication scenarios without the need to share credentials.
 
-    More information on the concepts:
+    See:
 
     [Protecting Applications with OAuth 2.0](https://help.hana.ondemand.com/help/frameset.htm?b7b589334d444293a2a91e0ef4234136.html)
 

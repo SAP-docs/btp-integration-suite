@@ -12,7 +12,7 @@ Use this procedure to create and deploy an OData API artifact.
 
 An OData API artifact creates an OData API-based integration scenario with OData V2 sender adapter.
 
- <a name="task_ytz_gq4_gpb"/>
+<a name="task_ytz_gq4_gpb"/>
 
 <!-- task\_ytz\_gq4\_gpb -->
 
@@ -34,11 +34,11 @@ An OData API artifact creates an OData API-based integration scenario with OData
 
 5.  In the *Add OData API* dialog box, choose *Create Using Template*.
 
-    By choosing, *Create Using Wizard* or *Upload* you start creating an OData API project. See [Developing an OData API Project](developing-an-odata-api-project-d961654.md).
+    By choosing *Create Using Wizard* or *Upload*, you start creating an OData API project. See [Developing an OData API Project](developing-an-odata-api-project-d961654.md).
 
 6.  Enter the name and description for the OData API.
 
-    ID and Product Profile are uneditable fields.
+    ID and Runtime Profile are uneditable fields.
 
 7.  Choose *OK* to create the artifact.
 
@@ -70,7 +70,7 @@ An OData API artifact creates an OData API-based integration scenario with OData
 
 You can check the status of all your integration artifacts in the *Monitor* view. By default, API-based artifacts don't appear in the *Monitor*. Perform the steps that follow to view the deployed artifact.
 
- <a name="task_kgx_kq4_gpb"/>
+<a name="task_kgx_kq4_gpb"/>
 
 <!-- task\_kgx\_kq4\_gpb -->
 

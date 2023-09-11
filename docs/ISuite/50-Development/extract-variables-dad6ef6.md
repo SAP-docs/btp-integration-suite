@@ -210,7 +210,7 @@ For example, suppose the name is specified as Developer:
 
 If `<VariablePrefix>` is not specified, the extracted values are assigned to `Developer`.
 
-If `<VariablePrefix>` is specified as ***MyUser***, the extracted values are assigned to `MyUser.Developer`.
+If `<VariablePrefix>` is specified as `MyUser`, the extracted values are assigned to `MyUser.Developer`.
 
 > ### Note:  
 > When an XML variable is not resolved via an XPath expression, the ExtractVariables policy will result in an error. So, continueOnError or IgnoreUnresolvedVariables should be set to true to allow the execution of the policy.

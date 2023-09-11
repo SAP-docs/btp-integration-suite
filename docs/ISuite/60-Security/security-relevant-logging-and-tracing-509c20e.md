@@ -19,5 +19,5 @@ An audit log records the following type of information for each logged event:
 -   Source of the event \(IP address of the source that issued the action\)
 
 
-To view audit logs, the tenant administrator needs to have assigned the roles ***IntegrationOperationServer.read*** and ***AuditLog.Read***.
+To view audit logs, the tenant administrator needs to have assigned the roles `IntegrationOperationServer.read` and `AuditLog.Read`.
 

@@ -36,7 +36,7 @@ POST
 </td>
 <td valign="top">
 
- `/NumberRanges` 
+`/NumberRanges` 
 
 
 

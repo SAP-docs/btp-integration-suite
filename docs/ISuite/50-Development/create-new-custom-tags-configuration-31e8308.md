@@ -41,7 +41,7 @@ POST
 </td>
 <td valign="top">
 
- `​/CustomTagConfigurations` 
+`​/CustomTagConfigurations` 
 
 
 

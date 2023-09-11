@@ -379,7 +379,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to consume messages from queues or topic subscriptions in SAP Event Mesh.
+Enables SAP Integration Suite to consume messages from SAP Event Mesh.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -403,7 +403,7 @@ Receiver adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to send messages to queues or topics in SAP Event Mesh.
+Enables SAP Integration Suite to send messages to SAP Event Mesh.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -427,7 +427,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to consume messages from queues or topic subscriptions in Microsoft Azure Service Bus.
+Enables SAP Integration Suite to consume messages from Microsoft Azure Service Bus.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -451,7 +451,7 @@ Receiver adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to send messages to queues or topics in Microsoft Azure Service Bus.
+Enables SAP Integration Suite to send messages to Microsoft Azure Service Bus.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -475,7 +475,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to consume messages from queues or topic subscriptions in Solace PubSub+.
+Enables SAP Integration Suite to consume messages from Solace PubSub+.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -499,7 +499,7 @@ Receiver adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to send messages to queues or topics in Solace PubSub+.
+Enables SAP Integration Suite to send messages to Solace PubSub+.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -523,7 +523,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to consume messages from queues or topic subscriptions in Apache Qpid Broker-J.
+Enables SAP Integration Suite to consume messages from Apache Qpid Broker-J.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -547,7 +547,7 @@ Receiver adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to send messages to queues or topics in Apache Qpid Broker-J.
+Enables SAP Integration Suite to send messages to Apache Qpid Broker-J.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -571,7 +571,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to consume messages from queues or topic subscriptions in Apache ActiveMQ 5 / Apache ActiveMQ Artemis.
+Enables SAP Integration Suite to consume messages from Apache ActiveMQ 5 / Apache ActiveMQ Artemis.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -595,7 +595,7 @@ Receiver adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to send messages to queues or topics in Apache ActiveMQ 5 / Apache ActiveMQ Artemis.
+Enables SAP Integration Suite to send messages to Apache ActiveMQ 5 / Apache ActiveMQ Artemis.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -619,7 +619,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to consume messages from queues or topic subscriptions in IBM MQ.
+Enables SAP Integration Suite to consume messages from IBM MQ.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -643,7 +643,7 @@ Receiver adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to send messages to queues or topics in IBM MQ.
+Enables SAP Integration Suite to send messages to IBM MQ.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -794,6 +794,46 @@ Receiver adapter:
 
 
 See: [AS4 Receiver Adapter](../50-Development/as4-receiver-adapter-3a2fde8.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*AzureStorage*
+
+Sender adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to receive files from Azure Storage.
+
+See: [Configure the AzureStorage Sender Adapter](../50-Development/configure-the-azurestorage-sender-adapter-d42134a.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*AzureStorage*
+
+Receiver adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to connect to Azure Storage, to manage files, containers, folders, and messages, and to perform *create, read, update and delete* \(CRUD\) operations on objects stored there.
+
+See: [Configure the AzureStorage Receiver Adapter](../50-Development/configure-the-azurestorage-receiver-adapter-30f59b0.md)
 
 
 
@@ -1185,26 +1225,6 @@ See: [JDBC for PostgreSQL \(Cloud\)](../50-Development/jdbc-for-postgresql-cloud
 <tr>
 <td valign="top">
 
-*JDBC for SAP ASE Service \(Neo\)*
-
-Receiver adapter
-
-
-
-</td>
-<td valign="top">
-
-Allows SAP Integration Suite to connect to SAP ASE Service \(Neo\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
-
-See: [JDBC for SAP ASE Service \(Neo\)](../50-Development/jdbc-for-sap-ase-service-neo-a6271cc.md)
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *JDBC for SAP HANA Cloud*
 
 Receiver adapter
@@ -1216,7 +1236,7 @@ Receiver adapter
 
 Allows SAP Integration Suite to connect to SAP HANA Cloud using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
 
-See: [JDBC for SAP HANA Cloud](../50-Development/jdbc-for-sap-hana-cloud-187a8e8.md)
+See: [JDBC for SAP HANA \(Cloud\)](../50-Development/jdbc-for-sap-hana-cloud-187a8e8.md)
 
 
 
@@ -1237,26 +1257,6 @@ Receiver adapter
 Allows SAP Integration Suite to connect to SAP HANA Platform \(On-Premise\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
 
 See: [JDBC for SAP HANA Platform \(On-Premise\)](../50-Development/jdbc-for-sap-hana-platform-on-premise-ff29388.md)
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*JDBC for SAP HANA Service \(Neo\)*
-
-Receiver adapter
-
-
-
-</td>
-<td valign="top">
-
-Allows SAP Integration Suite to connect to SAP HANA Service \(Neo\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
-
-See: [JDBC for SAP HANA Service \(Neo\)](../50-Development/jdbc-for-sap-hana-service-neo-030e47e.md)
 
 
 
@@ -1440,8 +1440,6 @@ See: [Configure the Mail Receiver Adapter](../50-Development/configure-the-mail-
 
 Receiver adapter
 
-\(only available in the Cloud Foundry environment\)
-
 
 
 </td>
@@ -1449,7 +1447,7 @@ Receiver adapter
 
 The MDI \(SAP Master Data Integration\) adapter synchronizes your master data from SAP applications like SAP ECC and other third party applications with SAP MDI service.
 
-See: [MDI Receiver Adapter](../50-Development/mdi-receiver-adapter-e91e373.md)
+See: [SAP Master Data Integration Receiver Adapter](../50-Development/sap-master-data-integration-receiver-adapter-e91e373.md)
 
 
 
@@ -1470,6 +1468,46 @@ Receiver adapter
 Connects SAP Integration Suite to Microsoft Dynamics Customer Relationship Management \(CRM\).
 
 See: [Microsoft Dynamics CRM Receiver Adapter](../50-Development/microsoft-dynamics-crm-receiver-adapter-ee724c8.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft SharePoint* 
+
+Sender adapter
+
+
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to a remote system using the HTTP/HTTPS protocol to read files from the system.
+
+See: [Configure the Microsoft SharePoint Sender Adapter](../50-Development/configure-the-microsoft-sharepoint-sender-adapter-ce41e85.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft SharePoint* 
+
+Receiver adapter
+
+
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to a remote system using the HTTP protocol to write files to the system.
+
+See: [Configure the Microsoft SharePoint Receiver Adapter](../50-Development/configure-the-microsoft-sharepoint-receiver-adapter-b12b33a.md)
 
 
 
@@ -1644,6 +1682,46 @@ See: [Configure the ProcessDirect Receiver Adapter](../50-Development/configure-
 <tr>
 <td valign="top">
 
+*RabbitMQ*
+
+Sender adapter
+
+
+
+</td>
+<td valign="top">
+
+Allows SAP Integration Suite to consume messages from the RabbitMQ server. In addition, you use the adapter to send acknowledgements to the RabbitMQ server.
+
+See: [Configure the RabbitMQ Sender Adapter](../50-Development/configure-the-rabbitmq-sender-adapter-4e3c554.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*RabbitMQ*
+
+Receiver adapter
+
+
+
+</td>
+<td valign="top">
+
+Allows SAP Integration Suite to send messages to the RabbitMQ server.
+
+See: [Configure the RabbitMQ Receiver Adapter](../50-Development/configure-the-rabbitmq-receiver-adapter-e9dfc37.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *RFC*
 
 Receiver adapter
@@ -1778,6 +1856,46 @@ See: [Configure the SFTP Receiver Adapter](../50-Development/configure-the-sftp-
 <tr>
 <td valign="top">
 
+*Slack*
+
+Sender adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to receive search-related information from the Slack storage.
+
+See: [Configure the Slack Sender Adapter](../50-Development/configure-the-slack-sender-adapter-1d93850.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Slack*
+
+Receiver adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to get data from the Slack storage or to create, modify, or delete data on the Slack storage.
+
+See: [Configure the Slack Receiver Adapter](../50-Development/configure-the-slack-receiver-adapter-7c2ea64.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *SOAP SOAP 1.x* 
 
 Sender adapter
@@ -1868,6 +1986,46 @@ See: [Configure the SOAP \(SAP RM\) Receiver Adapter](../50-Development/configur
 <tr>
 <td valign="top">
 
+*Splunk* 
+
+Sender adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to receive search-related information from the Splunk storage.
+
+See: [Configure the Splunk Sender Adapter](../50-Development/configure-the-splunk-sender-adapter-271ad20.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Splunk* 
+
+Receiver adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to get data from the Splunk storage or to create, modify, or delete data on the Splunk storage.
+
+See: [Configure the Splunk Receiver Adapter](../50-Development/configure-the-splunk-receiver-adapter-e8e6ba6.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *SuccessFactors REST*
 
 Sender adapter
@@ -1881,7 +2039,7 @@ Connects SAP Integration Suite to a SuccessFactors sender system using the REST 
 
 The adapter supports the following operations: GET
 
-See: [Configure the SuccessFactors \(REST\) Sender Adapter](../50-Development/configure-the-successfactors-rest-sender-adapter-9f0646b.md)
+See: [Configure the SuccessFactors REST Sender Adapter](../50-Development/configure-the-successfactors-rest-sender-adapter-9f0646b.md)
 
 
 
@@ -1903,7 +2061,7 @@ Connects SAP Integration Suite to a SuccessFactors receiver system using the RES
 
 The adapter supports the following operations: GET, POST
 
-See: [Configure the SuccessFactors \(REST\) Receiver Adapter](../50-Development/configure-the-successfactors-rest-receiver-adapter-9cff562.md)
+See: [Configure the SuccessFactors REST Receiver Adapter](../50-Development/configure-the-successfactors-rest-receiver-adapter-9cff562.md)
 
 
 

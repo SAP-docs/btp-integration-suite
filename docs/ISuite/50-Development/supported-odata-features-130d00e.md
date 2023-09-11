@@ -3,7 +3,7 @@
 # Supported OData Features
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 
 
@@ -273,10 +273,52 @@ Specifies that related records must be retrieved in line with the record or coll
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+$inlinecount
+
+
+
+</td>
+<td valign="top">
+
+Specifies that the response must contain a number of records in the collection of entries identified by the resource path section of the URI.
+
+Message property must be an Integer value. This value is returned in the response.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+$format
+
+
+
+</td>
+<td valign="top">
+
+Specifies that a response to the request must be in the format specified by this query option.
+
+
+
+</td>
+</tr>
 </table>
 
 > ### Note:  
 > The system query options $select and $count are supported out of the box. You do not have to write a script to enable functionality for these system query options.
+
+> ### Note:  
+> **Server side pagination support**:
+> 
+> To enable serverside pagination with next link in response, set the message header `skipToken` with a value for the skiptoken.
+> 
+> > ### Example:  
+> > `skipToken : 20` adds the next link in response as ***<link href=”Products?$skiptoken=20″ rel=”next”/\>***
 
 **Related Information**  
 

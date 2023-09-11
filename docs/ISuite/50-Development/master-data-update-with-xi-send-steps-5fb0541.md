@@ -58,14 +58,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     productId
 
 
@@ -74,14 +74,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Type
 
 
     
     </td>
     <td valign="top">
-
+    
     XPath
 
 
@@ -90,14 +90,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Data Type
 
 
     
     </td>
     <td valign="top">
-
+    
     java.lang.String
 
 
@@ -106,14 +106,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Value
 
 
     
     </td>
     <td valign="top">
-
+    
     //ProductId
 
 
@@ -154,14 +154,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     payloadAll
 
 
@@ -170,14 +170,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Type
 
 
     
     </td>
     <td valign="top">
-
+    
     Expression
 
 
@@ -186,14 +186,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Data Type
 
 
     
     </td>
     <td valign="top">
-
+    
     java.lang.String
 
 
@@ -202,14 +202,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Value
 
 
     
     </td>
     <td valign="top">
-
+    
     $\{in.body\}
 
 
@@ -242,14 +242,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     payloadText
 
 
@@ -258,14 +258,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Type
 
 
     
     </td>
     <td valign="top">
-
+    
     Expression
 
 
@@ -274,14 +274,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Data Type
 
 
     
     </td>
     <td valign="top">
-
+    
     java.lang.String
 
 
@@ -290,14 +290,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Value
 
 
     
     </td>
     <td valign="top">
-
+    
     $\{in.body\}
 
 
@@ -332,14 +332,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     payloadPrice
 
 
@@ -348,14 +348,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Type
 
 
     
     </td>
     <td valign="top">
-
+    
     Expression
 
 
@@ -364,14 +364,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Data Type
 
 
     
     </td>
     <td valign="top">
-
+    
     java.lang.String
 
 
@@ -380,14 +380,14 @@ The process performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Value
 
 
     
     </td>
     <td valign="top">
-
+    
     $\{in.body\}
 
 

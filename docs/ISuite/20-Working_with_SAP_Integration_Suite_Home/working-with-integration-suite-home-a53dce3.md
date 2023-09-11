@@ -52,16 +52,16 @@ The *Capabilities* section displays the tiles of the capabilities activated for 
 Each capability tile also displays some quick links to allow you to start working with the capability.
 
 > ### Note:  
-> If you're working with APIs, and have activated the API Management capability, then the first thing you'll see is the *Settings* tab. Choose *Settings* \> *API* to configure the service. For more information, see [Setting Up API Management Service](../50-Development/setting-up-api-management-service-f34e86c.md)
+> If you're working with APIs, and have activated the API Management capability, then the first thing you'll see is the *Settings* tab. Choose *Settings* \> *API* to configure the service. For more information, see [Setting Up API Management Capability](../50-Development/setting-up-api-management-capability-f34e86c.md).
 
 > ### Note:  
-> For Open Connectors and Integration Assessment, you will be navigated out of the Integration Suite to the respective capability.
+> For Open Connectors, Integration Assessment, and Migration Assessment, you will be navigated out of the Integration Suite to the respective capability.
 
 
 
 ### Overview
 
-This section highlights the salient features of the SAP Integration Suite. You can choose *Explore Videos* to browse though a rich set of How-To videos that showcase various integration scenarios. You can also choose *Explore API Business Hub* to discover various APIs, and integration flows that are available to kickstart your integration journey.
+This section highlights the salient features of the SAP Integration Suite. You can choose *Explore Videos* to browse though a rich set of How-To videos that showcase various integration scenarios. You can also choose *Explore*SAP Business Accelerator Hub to discover various APIs, and integration flows that are available to kickstart your integration journey.
 
 
 
@@ -69,7 +69,7 @@ This section highlights the salient features of the SAP Integration Suite. You c
 
 In you can choose links pointing to various Integration Suite resources ranging from product documentation, feature updates, Learning Journeys, to community pages.
 
-If you want to request for new features, use the *Submit Requests* button at the bottom to navigate to the SAP Integration Suite Influenve Channel.
+If you want to request for new features, use the *Tell Us What You Want* button at the bottom to navigate to the SAP Integration Suite Influence Channel.
 
 
 
@@ -163,7 +163,7 @@ Design :pencil2:
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Design* \> *APIs*
+<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Design* \> *APIs**Design* \> *Graph*
 
 
 
@@ -304,6 +304,43 @@ Monitor <span class="SAP-icons"></span>
 <tr>
 <td valign="top">
 
+Inspect Resource Consumption <span class="SAP-icons"></span> 
+
+
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
+
+
+
+</td>
+<td valign="top">
+
+<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> 
+
+
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
+
+
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Monetize <span class="SAP-icons"></span>
 
 
@@ -424,6 +461,25 @@ Your profile. You can:
 <tr>
 <td valign="top">
 
+<span class="SAP-icons"></span>
+
+
+
+</td>
+<td valign="top">
+
+Contextual help. You can activate contextual help by choosing <span class="SAP-icons"></span>.
+
+> ### Note:  
+> Contextual help is currently available for certain screens only.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 <span class="SAP-icons"></span>
 
 
@@ -433,7 +489,7 @@ Your profile. You can:
 
 Explore our environment, and navigate to the following portals:
 
--   SAP API Business Hub
+-   SAP Business Accelerator Hub
 -   API Business Hub Enterprise \(if you've chosen the API Management capability\)
 -   BTP Cockpit
 
@@ -466,5 +522,5 @@ News and Announcement. Lets you know what is new in the Integration Suite.
 
 [Configuring User Access](configuring-user-access-2c6214a.md "Create and modify application roles and assign users to these roles.")
 
-[Activating Capabilities](activating-capabilities-2ffb343.md "Activate capabilities for the SAP Integration Suite.")
+[Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md "Activate capabilities for the SAP Integration Suite.")
 

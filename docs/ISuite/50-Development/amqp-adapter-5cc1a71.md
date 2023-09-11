@@ -13,7 +13,7 @@ In many integration scenarios, messages or events have to be exchanged between a
 **Related Information**  
 
 
-[Configure the AMQP Sender Adapter](configure-the-amqp-sender-adapter-99ce674.md "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Cloud Integration from queues or topic subscriptions in an external message broker.")
+[Configure the AMQP Sender Adapter](configure-the-amqp-sender-adapter-99ce674.md "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Integration Suite from queues or topic subscriptions in an external message broker.")
 
-[Configure the AMQP Receiver Adapter](configure-the-amqp-receiver-adapter-d5660c1.md "You se the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from Cloud Integration to queues or topics in an external message broker.")
+[Configure the AMQP Receiver Adapter](configure-the-amqp-receiver-adapter-d5660c1.md "You se the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.")
 

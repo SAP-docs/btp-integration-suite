@@ -106,7 +106,7 @@ The challenge with this solution is that if you have more than one communication
 <tr>
 <td valign="top">
 
- **Avoid binary-to-string conversions** 
+**Avoid binary-to-string conversions** 
 
 
 

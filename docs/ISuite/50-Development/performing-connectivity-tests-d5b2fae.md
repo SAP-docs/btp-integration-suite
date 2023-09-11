@@ -5,7 +5,7 @@
 You can test the connectivity to a receiver system.
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 To access the tests, select *Connectivity Tests* tile in *Manage Security* section of *Overview* page. Different types of connectivity can be tested by selecting the corresponding tab.
 

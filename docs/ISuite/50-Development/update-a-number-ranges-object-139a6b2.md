@@ -34,7 +34,7 @@ PUT
 </td>
 <td valign="top">
 
- `/NumberRanges('{objectName}')` 
+`/NumberRanges('{objectName}')` 
 
 
 

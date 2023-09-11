@@ -47,14 +47,14 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../4
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Name of the artifact that you want to deploy on the tenant.
 
 
@@ -63,14 +63,14 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../4
     </tr>
     <tr>
     <td valign="top">
-
+    
     Description
 
 
     
     </td>
     <td valign="top">
-
+    
     Description of the artifact you are deploying on the tenant.
 
 
@@ -79,14 +79,14 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../4
     </tr>
     <tr>
     <td valign="top">
-
+    
     Provider
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the name of the provider of the platform on which you created the OAuth2 client.
 
 
@@ -95,14 +95,14 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../4
     </tr>
     <tr>
     <td valign="top">
-
+    
     Authorization URL
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide the Authorization URL for authorizing the OAuth client to access resources of a user.
 
 
@@ -111,14 +111,14 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../4
     </tr>
     <tr>
     <td valign="top">
-
+    
     Token Service URL
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide the URL that generates the OAuth2 access and refresh token for the registered OAuth2 client and the provided user.
 
 
@@ -127,17 +127,17 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../4
     </tr>
     <tr>
     <td valign="top">
-
+    
     Refresh Token Expiry
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide an amount of time after which the refresh token expires.
 
-    The default is set to 90 days but should be min. 3 days. The SAP Cloud Integration system will update the refresh token before the expiration.
+    The maximum is set to 90 days and the minimum is set to 3 days. The SAP Cloud Integration system will update the refresh token before the expiration.
 
 
     
@@ -145,14 +145,30 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../4
     </tr>
     <tr>
     <td valign="top">
+    
+    Redirect URL
 
+
+    
+    </td>
+    <td valign="top">
+    
+    Displays the URL you need, when creating the OAuth Clients/App im OAuth Authorization Server/Token Server. For more information, see [OAuth2.0 Authorization Code Grant](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/oauth-2-0#loio508a70db7eac4addbb6ac69a06d46e79) 
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Client ID
 
 
     
     </td>
     <td valign="top">
-
+    
     ID of the client you want to connect to.
 
 
@@ -161,14 +177,14 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../4
     </tr>
     <tr>
     <td valign="top">
-
+    
     Client Secret
 
 
     
     </td>
     <td valign="top">
-
+    
     Secret key of the client that you are connecting to.
 
     See: [OAuth 2.0](../40-RemoteSystems/oauth-2-0-3823134.md#loio382313443b8d4453b0fd536b82b9e15d).
@@ -179,14 +195,14 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../4
     </tr>
     <tr>
     <td valign="top">
-
+    
     Send As
 
 
     
     </td>
     <td valign="top">
-
+    
     -   Body Parameter: Send the Client ID and Client Secret in the request body when calling the Authorization URL or Token Service URL.
 
     -   Basic Auth Header: Send the Client ID and Client Secret via Basic Authorization when calling the Authorization URL or Token Service URL.
@@ -198,14 +214,14 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../4
     </tr>
     <tr>
     <td valign="top">
-
+    
     User Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Name of the user whose resources the OAuth2 client gets access to.
 
 
@@ -214,14 +230,14 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../4
     </tr>
     <tr>
     <td valign="top">
-
+    
     Scope
 
 
     
     </td>
     <td valign="top">
-
+    
     OAuth2 scopes protecting the access to the resources.
 
     > ### Note:  

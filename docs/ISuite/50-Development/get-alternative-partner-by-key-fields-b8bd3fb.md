@@ -36,7 +36,7 @@ GET
 </td>
 <td valign="top">
 
- `/AlternativePartners(Hexagency='{Hexagency}',Hexscheme='{Hexscheme}',Hexid='{Hexid}')` 
+`/AlternativePartners(Hexagency='{Hexagency}',Hexscheme='{Hexscheme}',Hexid='{Hexid}')` 
 
 
 

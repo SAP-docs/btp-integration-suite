@@ -4,7 +4,7 @@
 
 Integration flows communicate with each other \(when on the same tenant, through the ProcessDirect adapter\) and need to share data.
 
- ![](images/Integration_Flows_Communicate_with_Each_Other_5bedcaa.png) 
+![](images/Integration_Flows_Communicate_with_Each_Other_5bedcaa.png)
 
 In this case, data can only be shared across integration flows by using the following options.
 

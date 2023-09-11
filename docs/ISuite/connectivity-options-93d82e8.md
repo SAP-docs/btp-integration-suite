@@ -6,7 +6,7 @@ SAP Integration Suite provides you with a comprehensive set of options to connec
 
 This set comprises:
 
--   65+ standard adapters
+-   80+ standard adapters
 
     Use a set of standard adapters out-of-the-box when modeling your integration flow. This set comprises:
 
@@ -175,7 +175,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to consume messages from queues or topic subscriptions in SAP Event Mesh.
+Enables SAP Integration Suite to consume messages from SAP Event Mesh.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -199,7 +199,7 @@ Receiver adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to send messages to queues or topics in SAP Event Mesh.
+Enables SAP Integration Suite to send messages to SAP Event Mesh.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -223,7 +223,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to consume messages from queues or topic subscriptions in Microsoft Azure Service Bus.
+Enables SAP Integration Suite to consume messages from Microsoft Azure Service Bus.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -247,7 +247,7 @@ Receiver adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to send messages to queues or topics in Microsoft Azure Service Bus.
+Enables SAP Integration Suite to send messages to Microsoft Azure Service Bus.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -271,7 +271,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to consume messages from queues or topic subscriptions in Solace PubSub+.
+Enables SAP Integration Suite to consume messages from Solace PubSub+.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -295,7 +295,7 @@ Receiver adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to send messages to queues or topics in Solace PubSub+.
+Enables SAP Integration Suite to send messages to Solace PubSub+.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -319,7 +319,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to consume messages from queues or topic subscriptions in Apache Qpid Broker-J.
+Enables SAP Integration Suite to consume messages from Apache Qpid Broker-J.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -343,7 +343,7 @@ Receiver adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to send messages to queues or topics in Apache Qpid Broker-J.
+Enables SAP Integration Suite to send messages to Apache Qpid Broker-J.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -367,7 +367,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to consume messages from queues or topic subscriptions in Apache ActiveMQ 5 / Apache ActiveMQ Artemis.
+Enables SAP Integration Suite to consume messages from Apache ActiveMQ 5 / Apache ActiveMQ Artemis.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -391,7 +391,7 @@ Receiver adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to send messages to queues or topics in Apache ActiveMQ 5 / Apache ActiveMQ Artemis.
+Enables SAP Integration Suite to send messages to Apache ActiveMQ 5 / Apache ActiveMQ Artemis.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -415,7 +415,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to consume messages from queues or topic subscriptions in IBM MQ.
+Enables SAP Integration Suite to consume messages from IBM MQ.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -439,7 +439,7 @@ Receiver adapter
 </td>
 <td valign="top">
 
-Enables SAP Integration Suite to send messages to queues or topics in IBM MQ.
+Enables SAP Integration Suite to send messages to IBM MQ.
 
 Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
@@ -590,6 +590,46 @@ Receiver adapter:
 
 
 See: [AS4 Receiver Adapter](50-Development/as4-receiver-adapter-3a2fde8.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*AzureStorage*
+
+Sender adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to receive files from Azure Storage.
+
+See: [Configure the AzureStorage Sender Adapter](50-Development/configure-the-azurestorage-sender-adapter-d42134a.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*AzureStorage*
+
+Receiver adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to connect to Azure Storage, to manage files, containers, folders, and messages, and to perform *create, read, update and delete* \(CRUD\) operations on objects stored there.
+
+See: [Configure the AzureStorage Receiver Adapter](50-Development/configure-the-azurestorage-receiver-adapter-30f59b0.md)
 
 
 
@@ -981,26 +1021,6 @@ See: [JDBC for PostgreSQL \(Cloud\)](50-Development/jdbc-for-postgresql-cloud-4d
 <tr>
 <td valign="top">
 
-*JDBC for SAP ASE Service \(Neo\)*
-
-Receiver adapter
-
-
-
-</td>
-<td valign="top">
-
-Allows SAP Integration Suite to connect to SAP ASE Service \(Neo\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
-
-See: [JDBC for SAP ASE Service \(Neo\)](50-Development/jdbc-for-sap-ase-service-neo-a6271cc.md)
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *JDBC for SAP HANA Cloud*
 
 Receiver adapter
@@ -1012,7 +1032,7 @@ Receiver adapter
 
 Allows SAP Integration Suite to connect to SAP HANA Cloud using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
 
-See: [JDBC for SAP HANA Cloud](50-Development/jdbc-for-sap-hana-cloud-187a8e8.md)
+See: [JDBC for SAP HANA \(Cloud\)](50-Development/jdbc-for-sap-hana-cloud-187a8e8.md)
 
 
 
@@ -1033,26 +1053,6 @@ Receiver adapter
 Allows SAP Integration Suite to connect to SAP HANA Platform \(On-Premise\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
 
 See: [JDBC for SAP HANA Platform \(On-Premise\)](50-Development/jdbc-for-sap-hana-platform-on-premise-ff29388.md)
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*JDBC for SAP HANA Service \(Neo\)*
-
-Receiver adapter
-
-
-
-</td>
-<td valign="top">
-
-Allows SAP Integration Suite to connect to SAP HANA Service \(Neo\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
-
-See: [JDBC for SAP HANA Service \(Neo\)](50-Development/jdbc-for-sap-hana-service-neo-030e47e.md)
 
 
 
@@ -1236,8 +1236,6 @@ See: [Configure the Mail Receiver Adapter](50-Development/configure-the-mail-rec
 
 Receiver adapter
 
-\(only available in the Cloud Foundry environment\)
-
 
 
 </td>
@@ -1245,7 +1243,7 @@ Receiver adapter
 
 The MDI \(SAP Master Data Integration\) adapter synchronizes your master data from SAP applications like SAP ECC and other third party applications with SAP MDI service.
 
-See: [MDI Receiver Adapter](50-Development/mdi-receiver-adapter-e91e373.md)
+See: [SAP Master Data Integration Receiver Adapter](50-Development/sap-master-data-integration-receiver-adapter-e91e373.md)
 
 
 
@@ -1266,6 +1264,46 @@ Receiver adapter
 Connects SAP Integration Suite to Microsoft Dynamics Customer Relationship Management \(CRM\).
 
 See: [Microsoft Dynamics CRM Receiver Adapter](50-Development/microsoft-dynamics-crm-receiver-adapter-ee724c8.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft SharePoint* 
+
+Sender adapter
+
+
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to a remote system using the HTTP/HTTPS protocol to read files from the system.
+
+See: [Configure the Microsoft SharePoint Sender Adapter](50-Development/configure-the-microsoft-sharepoint-sender-adapter-ce41e85.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft SharePoint* 
+
+Receiver adapter
+
+
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to a remote system using the HTTP protocol to write files to the system.
+
+See: [Configure the Microsoft SharePoint Receiver Adapter](50-Development/configure-the-microsoft-sharepoint-receiver-adapter-b12b33a.md)
 
 
 
@@ -1440,6 +1478,46 @@ See: [Configure the ProcessDirect Receiver Adapter](50-Development/configure-the
 <tr>
 <td valign="top">
 
+*RabbitMQ*
+
+Sender adapter
+
+
+
+</td>
+<td valign="top">
+
+Allows SAP Integration Suite to consume messages from the RabbitMQ server. In addition, you use the adapter to send acknowledgements to the RabbitMQ server.
+
+See: [Configure the RabbitMQ Sender Adapter](50-Development/configure-the-rabbitmq-sender-adapter-4e3c554.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*RabbitMQ*
+
+Receiver adapter
+
+
+
+</td>
+<td valign="top">
+
+Allows SAP Integration Suite to send messages to the RabbitMQ server.
+
+See: [Configure the RabbitMQ Receiver Adapter](50-Development/configure-the-rabbitmq-receiver-adapter-e9dfc37.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *RFC*
 
 Receiver adapter
@@ -1574,6 +1652,46 @@ See: [Configure the SFTP Receiver Adapter](50-Development/configure-the-sftp-rec
 <tr>
 <td valign="top">
 
+*Slack*
+
+Sender adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to receive search-related information from the Slack storage.
+
+See: [Configure the Slack Sender Adapter](50-Development/configure-the-slack-sender-adapter-1d93850.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Slack*
+
+Receiver adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to get data from the Slack storage or to create, modify, or delete data on the Slack storage.
+
+See: [Configure the Slack Receiver Adapter](50-Development/configure-the-slack-receiver-adapter-7c2ea64.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *SOAP SOAP 1.x* 
 
 Sender adapter
@@ -1664,6 +1782,46 @@ See: [Configure the SOAP \(SAP RM\) Receiver Adapter](50-Development/configure-t
 <tr>
 <td valign="top">
 
+*Splunk* 
+
+Sender adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to receive search-related information from the Splunk storage.
+
+See: [Configure the Splunk Sender Adapter](50-Development/configure-the-splunk-sender-adapter-271ad20.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Splunk* 
+
+Receiver adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to get data from the Splunk storage or to create, modify, or delete data on the Splunk storage.
+
+See: [Configure the Splunk Receiver Adapter](50-Development/configure-the-splunk-receiver-adapter-e8e6ba6.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *SuccessFactors REST*
 
 Sender adapter
@@ -1677,7 +1835,7 @@ Connects SAP Integration Suite to a SuccessFactors sender system using the REST 
 
 The adapter supports the following operations: GET
 
-See: [Configure the SuccessFactors \(REST\) Sender Adapter](50-Development/configure-the-successfactors-rest-sender-adapter-9f0646b.md)
+See: [Configure the SuccessFactors REST Sender Adapter](50-Development/configure-the-successfactors-rest-sender-adapter-9f0646b.md)
 
 
 
@@ -1699,7 +1857,7 @@ Connects SAP Integration Suite to a SuccessFactors receiver system using the RES
 
 The adapter supports the following operations: GET, POST
 
-See: [Configure the SuccessFactors \(REST\) Receiver Adapter](50-Development/configure-the-successfactors-rest-receiver-adapter-9cff562.md)
+See: [Configure the SuccessFactors REST Receiver Adapter](50-Development/configure-the-successfactors-rest-receiver-adapter-9cff562.md)
 
 
 
@@ -1957,7 +2115,7 @@ Description
 <tr>
 <td valign="top">
 
- *Act! 365* 
+*Act! 365* 
 
 
 
@@ -1975,7 +2133,7 @@ See: [Act! 365](https://help.openconnectors.ext.hana.ondemand.com/home/actessent
 <tr>
 <td valign="top">
 
- *Act! Premium* 
+*Act! Premium* 
 
 
 
@@ -1993,7 +2151,7 @@ See: [Act! Premium](https://help.openconnectors.ext.hana.ondemand.com/home/actpr
 <tr>
 <td valign="top">
 
- *Act-On* 
+*Act-On* 
 
 
 
@@ -2011,7 +2169,7 @@ See: [Act-On](https://help.openconnectors.ext.hana.ondemand.com/home/acton)
 <tr>
 <td valign="top">
 
- *Acuity Scheduling* 
+*Acuity Scheduling* 
 
 
 
@@ -2029,7 +2187,7 @@ See: [Acuity Scheduling](https://help.openconnectors.ext.hana.ondemand.com/home/
 <tr>
 <td valign="top">
 
- *Adobe Sign* 
+*Adobe Sign* 
 
 
 
@@ -2047,7 +2205,25 @@ See: [Adobe Sign](https://help.openconnectors.ext.hana.ondemand.com/home/adobe-e
 <tr>
 <td valign="top">
 
- *ADP WorkForce Now* 
+*ADP Lifion* 
+
+
+
+</td>
+<td valign="top">
+
+Building sophisticated, consumer-grade solutions that can meet all of their needs while allowing companies to grow and win in the market.
+
+See: [ADP Lifion](https://help.openconnectors.ext.hana.ondemand.com/home/catalog) 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*ADP WorkForce Now* 
 
 
 
@@ -2065,7 +2241,7 @@ See: [ADP WorkForce Now](https://help.openconnectors.ext.hana.ondemand.com/home/
 <tr>
 <td valign="top">
 
- *Amazon S3* 
+*Amazon S3* 
 
 
 
@@ -2083,7 +2259,25 @@ See: [Amazon S3](https://help.openconnectors.ext.hana.ondemand.com/home/amazons3
 <tr>
 <td valign="top">
 
- *Autotask CRM* 
+*Amazon SQS* 
+
+
+
+</td>
+<td valign="top">
+
+A distributed message queuing service introduced by Amazon.com.
+
+See: [Amazon SQS](https://help.openconnectors.ext.hana.ondemand.com/home/amazonsqs)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Autotask CRM* 
 
 
 
@@ -2101,7 +2295,7 @@ See: [Autotask CRM](https://help.openconnectors.ext.hana.ondemand.com/home/autot
 <tr>
 <td valign="top">
 
- *Autotask Helpdesk* 
+*Autotask Helpdesk* 
 
 
 
@@ -2119,7 +2313,7 @@ See: [Autotask Helpdesk](https://help.openconnectors.ext.hana.ondemand.com/home/
 <tr>
 <td valign="top">
 
- *Azure Blob* 
+*Azure Blob* 
 
 
 
@@ -2137,7 +2331,7 @@ See: [Azure Blob](https://help.openconnectors.ext.hana.ondemand.com/home/azurebl
 <tr>
 <td valign="top">
 
- *Bamboo HR* 
+*Bamboo HR* 
 
 
 
@@ -2155,7 +2349,7 @@ See: [Bamboo HR](https://help.openconnectors.ext.hana.ondemand.com/home/bamboohr
 <tr>
 <td valign="top">
 
- *BigCommerce* 
+*BigCommerce* 
 
 
 
@@ -2173,7 +2367,7 @@ See: [BigCommerce](https://help.openconnectors.ext.hana.ondemand.com/home/bigcom
 <tr>
 <td valign="top">
 
- *BigQuery* 
+*BigQuery* 
 
 
 
@@ -2191,7 +2385,7 @@ See: [BigQuery](https://help.openconnectors.ext.hana.ondemand.com/home/bigquery)
 <tr>
 <td valign="top">
 
- *boxv2* 
+*boxv2* 
 
 
 
@@ -2209,7 +2403,7 @@ See: [boxv2](https://help.openconnectors.ext.hana.ondemand.com/home/box)
 <tr>
 <td valign="top">
 
- *BrightTALK* 
+*BrightTALK* 
 
 
 
@@ -2227,7 +2421,7 @@ See: [BrightTALK](https://help.openconnectors.ext.hana.ondemand.com/home/brightt
 <tr>
 <td valign="top">
 
- *Bullhorn* 
+*Bullhorn* 
 
 
 
@@ -2245,7 +2439,7 @@ See: [Bullhorn](https://help.openconnectors.ext.hana.ondemand.com/home/bullhorn)
 <tr>
 <td valign="top">
 
- *Campaign Monitor* 
+*Campaign Monitor* 
 
 
 
@@ -2263,7 +2457,7 @@ See: [Campaign Monitor](https://help.openconnectors.ext.hana.ondemand.com/home/c
 <tr>
 <td valign="top">
 
- *Chargebee* 
+*Chargebee* 
 
 
 
@@ -2281,7 +2475,7 @@ See: [Chargebee](https://help.openconnectors.ext.hana.ondemand.com/home/chargebe
 <tr>
 <td valign="top">
 
- *Chargebee V2* 
+*Chargebee V2* 
 
 
 
@@ -2299,7 +2493,7 @@ See: [Chargebee](https://help.openconnectors.ext.hana.ondemand.com/home/chargebe
 <tr>
 <td valign="top">
 
- *Chargify* 
+*Chargify* 
 
 
 
@@ -2317,7 +2511,7 @@ See: [Chargify](https://help.openconnectors.ext.hana.ondemand.com/home/chargify)
 <tr>
 <td valign="top">
 
- *Cisco Webex Teams* 
+*Cisco Webex Teams* 
 
 
 
@@ -2335,7 +2529,7 @@ See: [Cisco Webex Teams](https://help.openconnectors.ext.hana.ondemand.com/home/
 <tr>
 <td valign="top">
 
- *Citrix ShareFile* 
+*Citrix ShareFile* 
 
 
 
@@ -2353,7 +2547,7 @@ See: [Citrix ShareFile](https://help.openconnectors.ext.hana.ondemand.com/home/s
 <tr>
 <td valign="top">
 
- *Click Field Service Edge* 
+*Click Field Service Edge* 
 
 
 
@@ -2371,7 +2565,7 @@ See: [Click Field Service Edge](https://help.openconnectors.ext.hana.ondemand.co
 <tr>
 <td valign="top">
 
- *Close.io* 
+*Close.io* 
 
 
 
@@ -2389,7 +2583,7 @@ See: [Close.io](https://help.openconnectors.ext.hana.ondemand.com/home/closeio)
 <tr>
 <td valign="top">
 
- *Clover* 
+*Clover* 
 
 
 
@@ -2407,7 +2601,7 @@ See: [Clover](https://help.openconnectors.ext.hana.ondemand.com/home/clover)
 <tr>
 <td valign="top">
 
- *Connector for Stripe* 
+*Connector for Stripe* 
 
 
 
@@ -2425,7 +2619,7 @@ See:[https://help.openconnectors.ext.hana.ondemand.com/home/stripe](https://help
 <tr>
 <td valign="top">
 
- *ConnectWise CRM REST* 
+*ConnectWise CRM REST* 
 
 
 
@@ -2443,7 +2637,7 @@ See: [ConnectWise CRM Rest](https://help.openconnectors.ext.hana.ondemand.com/ho
 <tr>
 <td valign="top">
 
- *Constant Contact* 
+*Constant Contact* 
 
 
 
@@ -2461,7 +2655,7 @@ See: [Constant Contact](https://help.openconnectors.ext.hana.ondemand.com/home/c
 <tr>
 <td valign="top">
 
- *Coupa* 
+*Coupa* 
 
 
 
@@ -2479,7 +2673,25 @@ See: [Coupa](https://help.openconnectors.ext.hana.ondemand.com/home/coupa)
 <tr>
 <td valign="top">
 
- *DocuShare Flex* 
+*Dayforce HCM* 
+
+
+
+</td>
+<td valign="top">
+
+An always-on people platform that is built as a single system with powerful data at its core.
+
+See: [Dayforce HCM](https://help.openconnectors.ext.hana.ondemand.com/home/catalog)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*DocuShare Flex* 
 
 
 
@@ -2497,7 +2709,7 @@ See: [DocuShare Flex](https://help.openconnectors.ext.hana.ondemand.com/home/doc
 <tr>
 <td valign="top">
 
- *DocuSign* 
+*DocuSign* 
 
 
 
@@ -2515,7 +2727,7 @@ See: [DocuSign](https://help.openconnectors.ext.hana.ondemand.com/home/docusign)
 <tr>
 <td valign="top">
 
- *Dropbox* 
+*Dropbox* 
 
 
 
@@ -2533,7 +2745,7 @@ See: [Dropbox](https://help.openconnectors.ext.hana.ondemand.com/home/dropbox)
 <tr>
 <td valign="top">
 
- *Dropbox Business* 
+*Dropbox Business* 
 
 
 
@@ -2551,7 +2763,7 @@ See: [Dropbox Business](https://help.openconnectors.ext.hana.ondemand.com/home/d
 <tr>
 <td valign="top">
 
- *E-conomic* 
+*E-conomic* 
 
 
 
@@ -2569,7 +2781,7 @@ See: [E-conomic](https://help.openconnectors.ext.hana.ondemand.com/home/economic
 <tr>
 <td valign="top">
 
- *Ecwid* 
+*Ecwid* 
 
 
 
@@ -2587,7 +2799,7 @@ See: [Ecwid](https://help.openconnectors.ext.hana.ondemand.com/home/ecwid)
 <tr>
 <td valign="top">
 
- *Egnyte* 
+*Egnyte* 
 
 
 
@@ -2605,7 +2817,7 @@ See: [Egnyte](https://help.openconnectors.ext.hana.ondemand.com/home/egnyte)
 <tr>
 <td valign="top">
 
- *Etsy* 
+*Etsy* 
 
 
 
@@ -2623,7 +2835,7 @@ See: [Etsy](https://help.openconnectors.ext.hana.ondemand.com/home/etsy)
 <tr>
 <td valign="top">
 
- *Evernote* 
+*Evernote* 
 
 
 
@@ -2641,7 +2853,7 @@ See: [Evernote](https://help.openconnectors.ext.hana.ondemand.com/home/evernote)
 <tr>
 <td valign="top">
 
- *Expensify* 
+*Expensify* 
 
 
 
@@ -2659,7 +2871,7 @@ See: [Expensify](https://help.openconnectors.ext.hana.ondemand.com/home/expensif
 <tr>
 <td valign="top">
 
- *Facebook* 
+*Facebook* 
 
 
 
@@ -2677,7 +2889,7 @@ See: [Facebook](https://help.openconnectors.ext.hana.ondemand.com/home/facebooks
 <tr>
 <td valign="top">
 
- *Facebook Lead Ads* 
+*Facebook Lead Ads* 
 
 
 
@@ -2695,7 +2907,7 @@ See: [Facebook Lead Ads](https://help.openconnectors.ext.hana.ondemand.com/home/
 <tr>
 <td valign="top">
 
- *Facebook Workplace* 
+*Facebook Workplace* 
 
 
 
@@ -2713,7 +2925,7 @@ See: [Facebook Workplace](https://help.openconnectors.ext.hana.ondemand.com/home
 <tr>
 <td valign="top">
 
- *Files* 
+*Files* 
 
 
 
@@ -2731,7 +2943,7 @@ See: [Files](https://help.openconnectors.ext.hana.ondemand.com/home/files)
 <tr>
 <td valign="top">
 
- *First Advantage* 
+*First Advantage* 
 
 
 
@@ -2749,7 +2961,7 @@ See: [First Advantage](https://help.openconnectors.ext.hana.ondemand.com/home/fi
 <tr>
 <td valign="top">
 
- *Fortnox* 
+*Fortnox* 
 
 
 
@@ -2767,7 +2979,7 @@ See: [Fortnox](https://help.openconnectors.ext.hana.ondemand.com/home/fortnox)
 <tr>
 <td valign="top">
 
- *Freshbooks Classic* 
+*Freshbooks Classic* 
 
 
 
@@ -2785,7 +2997,7 @@ See: [FreshBooks Classic](https://help.openconnectors.ext.hana.ondemand.com/home
 <tr>
 <td valign="top">
 
- *Freshbooks Cloud Accounting* 
+*Freshbooks Cloud Accounting* 
 
 
 
@@ -2803,7 +3015,7 @@ See: [Freshbooks Cloud Accounting](https://help.openconnectors.ext.hana.ondemand
 <tr>
 <td valign="top">
 
- *Freshdesk V2* 
+*Freshdesk V2* 
 
 
 
@@ -2821,7 +3033,7 @@ See: [Freshdesk V2](https://help.openconnectors.ext.hana.ondemand.com/home/fresh
 <tr>
 <td valign="top">
 
- *Freshservice* 
+*Freshservice* 
 
 
 
@@ -2839,7 +3051,7 @@ See: [Freshservice](https://help.openconnectors.ext.hana.ondemand.com/home/fresh
 <tr>
 <td valign="top">
 
- *GitHub* 
+*GitHub* 
 
 
 
@@ -2857,7 +3069,7 @@ See: [GitHub](https://help.openconnectors.ext.hana.ondemand.com/home/github)
 <tr>
 <td valign="top">
 
- *GlobalMeet Webinar* 
+*GlobalMeet Webinar* 
 
 
 
@@ -2875,7 +3087,7 @@ See: [GlobalMeet Webinar](https://help.openconnectors.ext.hana.ondemand.com/home
 <tr>
 <td valign="top">
 
- *Gmail* 
+*Gmail* 
 
 
 
@@ -2893,7 +3105,7 @@ See: [Gmail](https://help.openconnectors.ext.hana.ondemand.com/home/gmail)
 <tr>
 <td valign="top">
 
- *GoodData* 
+*GoodData* 
 
 
 
@@ -2911,7 +3123,7 @@ See: [GoodData](https://help.openconnectors.ext.hana.ondemand.com/home/gooddata)
 <tr>
 <td valign="top">
 
- *Google Ads* 
+*Google Ads* 
 
 
 
@@ -2929,7 +3141,7 @@ See: [Google Ads](https://help.openconnectors.ext.hana.ondemand.com/home/google-
 <tr>
 <td valign="top">
 
- *Google AdWords* 
+*Google AdWords* 
 
 
 
@@ -2947,7 +3159,7 @@ See: [Google AdWords](https://help.openconnectors.ext.hana.ondemand.com/home/goo
 <tr>
 <td valign="top">
 
- *Google Analytics* 
+*Google Analytics* 
 
 
 
@@ -2965,7 +3177,7 @@ See: [Google Analytics](https://help.openconnectors.ext.hana.ondemand.com/home/g
 <tr>
 <td valign="top">
 
- *Google Calendar* 
+*Google Calendar* 
 
 
 
@@ -2983,7 +3195,7 @@ See: [Google Calendar](https://help.openconnectors.ext.hana.ondemand.com/home/go
 <tr>
 <td valign="top">
 
- *Google Cloud Storage* 
+*Google Cloud Storage* 
 
 
 
@@ -3001,7 +3213,7 @@ See: [Google Cloud Storage](https://help.openconnectors.ext.hana.ondemand.com/ho
 <tr>
 <td valign="top">
 
- *Google Drive* 
+*Google Drive* 
 
 
 
@@ -3019,7 +3231,7 @@ See: [Google Drive](https://help.openconnectors.ext.hana.ondemand.com/home/googl
 <tr>
 <td valign="top">
 
- *Google Sheets V4* 
+*Google Sheets V4* 
 
 
 
@@ -3037,7 +3249,7 @@ See: [Google Sheets V4](https://help.openconnectors.ext.hana.ondemand.com/home/g
 <tr>
 <td valign="top">
 
- *Google Suite* 
+*Google Suite* 
 
 
 
@@ -3055,7 +3267,7 @@ See: [Google Suite](https://help.openconnectors.ext.hana.ondemand.com/home/googl
 <tr>
 <td valign="top">
 
- *GoToWebinar* 
+*GoToWebinar* 
 
 
 
@@ -3073,7 +3285,7 @@ See: [GoToWebinar](https://help.openconnectors.ext.hana.ondemand.com/home/gotowe
 <tr>
 <td valign="top">
 
- *Greenhouse* 
+*Greenhouse* 
 
 
 
@@ -3091,7 +3303,7 @@ See: [Greenhouse](https://help.openconnectors.ext.hana.ondemand.com/home/greenho
 <tr>
 <td valign="top">
 
- *HireRight* 
+*HireRight* 
 
 
 
@@ -3109,7 +3321,7 @@ See: [HireRight](https://help.openconnectors.ext.hana.ondemand.com/home/hirerigh
 <tr>
 <td valign="top">
 
- *Hootsuite* 
+*Hootsuite* 
 
 
 
@@ -3127,7 +3339,7 @@ See: [Hootsuite](https://help.openconnectors.ext.hana.ondemand.com/home/hootsuit
 <tr>
 <td valign="top">
 
- *HubSpot CRM* 
+*HubSpot CRM* 
 
 
 
@@ -3145,7 +3357,7 @@ See: [HubSpot CRM](https://help.openconnectors.ext.hana.ondemand.com/home/hubspo
 <tr>
 <td valign="top">
 
- *HubSpot Marketing* 
+*HubSpot Marketing* 
 
 
 
@@ -3163,7 +3375,7 @@ See: [HubSpot Marketing](https://help.openconnectors.ext.hana.ondemand.com/home/
 <tr>
 <td valign="top">
 
- *iContact* 
+*iContact* 
 
 
 
@@ -3181,7 +3393,7 @@ See: [iContact](https://help.openconnectors.ext.hana.ondemand.com/home/icontact)
 <tr>
 <td valign="top">
 
- *Infobip* 
+*Infobip* 
 
 
 
@@ -3199,7 +3411,7 @@ See: [Infobip](https://help.openconnectors.ext.hana.ondemand.com/home/infobip)
 <tr>
 <td valign="top">
 
- *Infusionsoft CRM by Keap* 
+*Infusionsoft CRM by Keap* 
 
 
 
@@ -3217,7 +3429,7 @@ See: [Infusionsoft CRM by Keap](https://help.openconnectors.ext.hana.ondemand.co
 <tr>
 <td valign="top">
 
- *Infusionsoft ERP by Keap* 
+*Infusionsoft ERP by Keap* 
 
 
 
@@ -3235,7 +3447,7 @@ See: [Infusionsoft ERP by Keap](https://help.openconnectors.ext.hana.ondemand.co
 <tr>
 <td valign="top">
 
- *Infusionsoft Marketing Automation by Keap* 
+*Infusionsoft Marketing Automation by Keap* 
 
 
 
@@ -3253,7 +3465,7 @@ See: [Infusionsoft Marketing Automation by Keap](https://help.openconnectors.ext
 <tr>
 <td valign="top">
 
- *Infusionsoft Online Sales by Keap* 
+*Infusionsoft Online Sales by Keap* 
 
 
 
@@ -3271,7 +3483,7 @@ See: [Infusionsoft Online Sales by Keap](https://help.openconnectors.ext.hana.on
 <tr>
 <td valign="top">
 
- *Infusionsoft REST by Keap* 
+*Infusionsoft REST by Keap* 
 
 
 
@@ -3289,7 +3501,7 @@ See: [Infusionsoft REST by Keap](https://help.openconnectors.ext.hana.ondemand.c
 <tr>
 <td valign="top">
 
- *Insightly* 
+*Insightly* 
 
 
 
@@ -3307,7 +3519,7 @@ See: [Insightly](https://help.openconnectors.ext.hana.ondemand.com/home/insightl
 <tr>
 <td valign="top">
 
- *Intercom* 
+*Intercom* 
 
 
 
@@ -3325,7 +3537,25 @@ See: [Intercom](https://help.openconnectors.ext.hana.ondemand.com/home/intercom)
 <tr>
 <td valign="top">
 
- *JIRA* 
+*Intercom V2* 
+
+
+
+</td>
+<td valign="top">
+
+A software that specializes in business messaging, providing businesses with a way to chat with their customers
+
+See: [Intercom V2](https://help.openconnectors.ext.hana.ondemand.com/home/intercom)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*JIRA* 
 
 
 
@@ -3343,7 +3573,7 @@ See: [JIRA](https://help.openconnectors.ext.hana.ondemand.com/home/jira)
 <tr>
 <td valign="top">
 
- *Jira On Prem* 
+*Jira On Prem* 
 
 
 
@@ -3361,7 +3591,7 @@ See:[Jira On Prem](https://help.openconnectors.ext.hana.ondemand.com/home/jiraon
 <tr>
 <td valign="top">
 
- *Lithium Response* 
+*Lithium Response* 
 
 
 
@@ -3379,7 +3609,7 @@ See: [Lithium Response](https://help.openconnectors.ext.hana.ondemand.com/home/l
 <tr>
 <td valign="top">
 
- *Magento v2.0* 
+*Magento v2.0* 
 
 
 
@@ -3397,7 +3627,7 @@ See: [Magento v2.0](https://help.openconnectors.ext.hana.ondemand.com/home/magen
 <tr>
 <td valign="top">
 
- *MailChimp v3.0* 
+*MailChimp v3.0* 
 
 
 
@@ -3415,7 +3645,7 @@ See: [MailChimp v3.0](https://help.openconnectors.ext.hana.ondemand.com/home/mai
 <tr>
 <td valign="top">
 
- *MailJet* 
+*MailJet* 
 
 
 
@@ -3433,7 +3663,7 @@ See: [MailJet](https://help.openconnectors.ext.hana.ondemand.com/home/mailjet)
 <tr>
 <td valign="top">
 
- *MailJet Marketing* 
+*MailJet Marketing* 
 
 
 
@@ -3451,7 +3681,7 @@ See: [MailJet Marketing](https://help.openconnectors.ext.hana.ondemand.com/home/
 <tr>
 <td valign="top">
 
- *Marketo* 
+*Marketo* 
 
 
 
@@ -3469,7 +3699,7 @@ See: [Marketo](https://help.openconnectors.ext.hana.ondemand.com/home/marketo)
 <tr>
 <td valign="top">
 
- *Maximizer* 
+*Maximizer* 
 
 
 
@@ -3487,7 +3717,7 @@ See: [Maximizer](https://help.openconnectors.ext.hana.ondemand.com/home/maximize
 <tr>
 <td valign="top">
 
- *Microsoft Dynamics 365 Finance and Operations* 
+*Microsoft Dynamics 365 Finance and Operations* 
 
 
 
@@ -3505,7 +3735,43 @@ See: [Microsoft Dynamics 365 Finance and Operations](https://help.openconnectors
 <tr>
 <td valign="top">
 
- *Microsoft Dynamics CRM* 
+*Microsoft Dynamics 365 HR* 
+
+
+
+</td>
+<td valign="top">
+
+Optimising HR programmes, transform employee experiences, and discover workforce insights
+
+See: [Microsoft Dynamics 365 HR](https://help.openconnectors.ext.hana.ondemand.com/home/catalog)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft Dynamics Business Central Cloud* 
+
+
+
+</td>
+<td valign="top">
+
+A cloud solution that connects operations across your small or medium-sized business
+
+See: [Microsoft Dynamics Business Central Cloud](https://help.openconnectors.ext.hana.ondemand.com/home/msbusinesscentral)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft Dynamics CRM* 
 
 
 
@@ -3523,7 +3789,7 @@ See: [Microsoft Dynamics CRM](https://help.openconnectors.ext.hana.ondemand.com/
 <tr>
 <td valign="top">
 
- *Microsoft Dynamics CRM Rest* 
+*Microsoft Dynamics CRM Rest* 
 
 
 
@@ -3541,7 +3807,7 @@ See: [Microsoft Dynamics CRM Rest](https://help.openconnectors.ext.hana.ondemand
 <tr>
 <td valign="top">
 
- *Microsoft Dynamics GP* 
+*Microsoft Dynamics GP* 
 
 
 
@@ -3559,7 +3825,7 @@ See: [Microsoft Dynamics GP](https://help.openconnectors.ext.hana.ondemand.com/h
 <tr>
 <td valign="top">
 
- *Microsoft Dynamics Navision* 
+*Microsoft Dynamics Navision* 
 
 
 
@@ -3577,7 +3843,7 @@ See: [Microsoft Dynamics Navision](https://help.openconnectors.ext.hana.ondemand
 <tr>
 <td valign="top">
 
- *Microsoft Graph* 
+*Microsoft Graph* 
 
 
 
@@ -3595,7 +3861,7 @@ See: [Microsoft Graph](https://help.openconnectors.ext.hana.ondemand.com/home/mi
 <tr>
 <td valign="top">
 
- *Microsoft Office 365* 
+*Microsoft Office 365* 
 
 
 
@@ -3613,7 +3879,25 @@ See: [Microsoft Office 365](https://help.openconnectors.ext.hana.ondemand.com/ho
 <tr>
 <td valign="top">
 
- *Microsoft OneDrive for Business* 
+*Microsoft OneDrive and Sharepoint Graph* 
+
+
+
+</td>
+<td valign="top">
+
+The OneDrive REST API is a portion of the Microsoft Graph API which allows your app to connect to content stored in OneDrive and SharePoint
+
+See: [Microsoft OneDrive and Sharepoint Graph](https://help.openconnectors.ext.hana.ondemand.com/home/catalog)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft OneDrive for Business* 
 
 
 
@@ -3631,7 +3915,7 @@ See: [Microsoft OneDrive for Business](https://help.openconnectors.ext.hana.onde
 <tr>
 <td valign="top">
 
- *Microsoft SQL Server* 
+*Microsoft SQL Server* 
 
 
 
@@ -3649,7 +3933,7 @@ See: [Microsoft SQL Server](https://help.openconnectors.ext.hana.ondemand.com/ho
 <tr>
 <td valign="top">
 
- *MySQL* 
+*MySQL* 
 
 
 
@@ -3667,7 +3951,7 @@ See: [MySQL](https://help.openconnectors.ext.hana.ondemand.com/home/mysql)
 <tr>
 <td valign="top">
 
- *Netsuite CRM* 
+*Netsuite CRM* 
 
 
 
@@ -3685,7 +3969,97 @@ See: [Netsuite CRM](https://help.openconnectors.ext.hana.ondemand.com/home/netsu
 <tr>
 <td valign="top">
 
- *Netsuite ERP 2018 Release 1* 
+*Netsuite CRM 2022* 
+
+
+
+</td>
+<td valign="top">
+
+Customer relationship management solution with 360 view of customers
+
+See: [Netsuite CRM 2022](https://help.openconnectors.ext.hana.ondemand.com/home/catalog)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Netsuite ERP* 
+
+
+
+</td>
+<td valign="top">
+
+Scalable cloud ERP for mid-sized businesses and large enterprises
+
+See: [Netsuite ERP](https://help.openconnectors.ext.hana.ondemand.com/home/netsuiteerpv2)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Netsuite ERP 2022* 
+
+
+
+</td>
+<td valign="top">
+
+Scalable cloud ERP for mid-sized businesses and large enterprises
+
+See: [Netsuite ERP 2022](https://help.openconnectors.ext.hana.ondemand.com/home/catalog)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Netsuite Finance* 
+
+
+
+</td>
+<td valign="top">
+
+Expedites daily transactions, accelerates close and ensures compliance
+
+See: [Netsuite Finance](https://help.openconnectors.ext.hana.ondemand.com/home/netsuitefinancev2)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Netsuite Finance 2022* 
+
+
+
+</td>
+<td valign="top">
+
+Expedites daily transactions, accelerates close and ensures compliance
+
+See: [Netsuite Finance 2022](https://help.openconnectors.ext.hana.ondemand.com/home/catalog)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Netsuite ERP 2018 Release 1* 
 
 
 
@@ -3703,7 +4077,7 @@ See: [Netsuite ERP 2018 Release 1](https://help.openconnectors.ext.hana.ondemand
 <tr>
 <td valign="top">
 
- *Netsuite Finance 2018 Release 1* 
+*Netsuite Finance 2018 Release 1* 
 
 
 
@@ -3721,7 +4095,7 @@ See: [Netsuite Finance 2018 Release 1](https://help.openconnectors.ext.hana.onde
 <tr>
 <td valign="top">
 
- *Netsuite HC* 
+*Netsuite HC* 
 
 
 
@@ -3739,7 +4113,25 @@ See: [Netsuite HC](https://help.openconnectors.ext.hana.ondemand.com/home/netsui
 <tr>
 <td valign="top">
 
- *Netsuite Restlets* 
+*Netsuite HC 2022* 
+
+
+
+</td>
+<td valign="top">
+
+Integrates people data to allows control over HR processes
+
+See: [Netsuite HC 2022](https://help.openconnectors.ext.hana.ondemand.com/home/catalog)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Netsuite Restlets* 
 
 
 
@@ -3757,7 +4149,7 @@ See: [Netsuite Restlets](https://help.openconnectors.ext.hana.ondemand.com/home/
 <tr>
 <td valign="top">
 
- *OneDrive* 
+*OneDrive* 
 
 
 
@@ -3775,7 +4167,7 @@ See: [OneDrive](https://help.openconnectors.ext.hana.ondemand.com/home/onedrivev
 <tr>
 <td valign="top">
 
- *OneNote* 
+*OneNote* 
 
 
 
@@ -3793,7 +4185,7 @@ See: [OneNote](https://help.openconnectors.ext.hana.ondemand.com/home/onenote)
 <tr>
 <td valign="top">
 
- *Oracle DB* 
+*Oracle DB* 
 
 
 
@@ -3811,7 +4203,7 @@ See: [Oracle DB](https://help.openconnectors.ext.hana.ondemand.com/home/oracledb
 <tr>
 <td valign="top">
 
- *Oracle Eloqua* 
+*Oracle Eloqua* 
 
 
 
@@ -3829,7 +4221,7 @@ See: [Oracle Eloqua](https://help.openconnectors.ext.hana.ondemand.com/home/eloq
 <tr>
 <td valign="top">
 
- *Oracle HCM Cloud* 
+*Oracle HCM Cloud* 
 
 
 
@@ -3847,7 +4239,7 @@ See: [Oracle HCM Cloud](https://help.openconnectors.ext.hana.ondemand.com/home/o
 <tr>
 <td valign="top">
 
- *Oracle Sales Cloud* 
+*Oracle Sales Cloud* 
 
 
 
@@ -3865,7 +4257,7 @@ See: [Oracle Sales Cloud](https://help.openconnectors.ext.hana.ondemand.com/home
 <tr>
 <td valign="top">
 
- *Oracle Service Cloud* 
+*Oracle Service Cloud* 
 
 
 
@@ -3883,7 +4275,7 @@ See: [Oracle Service Cloud](https://help.openconnectors.ext.hana.ondemand.com/ho
 <tr>
 <td valign="top">
 
- *Orderful* 
+*Orderful* 
 
 
 
@@ -3901,7 +4293,7 @@ See: [Orderful](https://help.openconnectors.ext.hana.ondemand.com/home/orderful)
 <tr>
 <td valign="top">
 
- *Outlook Email* 
+*Outlook Email* 
 
 
 
@@ -3919,7 +4311,7 @@ See: [Outlook Email](https://help.openconnectors.ext.hana.ondemand.com/home/outl
 <tr>
 <td valign="top">
 
- *Pardot by Salesforce* 
+*Pardot by Salesforce* 
 
 
 
@@ -3937,7 +4329,7 @@ See: [Pardot by Salesforce](https://help.openconnectors.ext.hana.ondemand.com/ho
 <tr>
 <td valign="top">
 
- *Paypal v2* 
+*Paypal v2* 
 
 
 
@@ -3955,7 +4347,7 @@ See: [Paypal v2](https://help.openconnectors.ext.hana.ondemand.com/home/paypalv2
 <tr>
 <td valign="top">
 
- *Pipedrive* 
+*Pipedrive* 
 
 
 
@@ -3973,7 +4365,7 @@ See: [Pipedrive](https://help.openconnectors.ext.hana.ondemand.com/home/pipedriv
 <tr>
 <td valign="top">
 
- *Plaid* 
+*Plaid* 
 
 
 
@@ -3991,7 +4383,7 @@ See: [Plaid](https://help.openconnectors.ext.hana.ondemand.com/home/plaid)
 <tr>
 <td valign="top">
 
- *Platform API* 
+*Platform API* 
 
 
 
@@ -4009,7 +4401,7 @@ See: [Platform API](https://help.openconnectors.ext.hana.ondemand.com/home/platf
 <tr>
 <td valign="top">
 
- *PostgreSQL* 
+*PostgreSQL* 
 
 
 
@@ -4027,7 +4419,7 @@ See: [PostgreSQL](https://help.openconnectors.ext.hana.ondemand.com/home/postgre
 <tr>
 <td valign="top">
 
- *QuickBooks Online* 
+*QuickBooks Online* 
 
 
 
@@ -4045,7 +4437,7 @@ See: [QuickBooks Online](https://help.openconnectors.ext.hana.ondemand.com/home/
 <tr>
 <td valign="top">
 
- *QuickBooks Online Rest* 
+*QuickBooks Online Rest* 
 
 
 
@@ -4061,7 +4453,7 @@ Rest API for QuickBooks Online which is a Cloud-based financial management softw
 <tr>
 <td valign="top">
 
- *Rally \(Formerly CA Agile Central\)* 
+*Rally \(Formerly CA Agile Central\)* 
 
 
 
@@ -4079,7 +4471,7 @@ See: [Rally \(Formerly CA Agile Central\)](https://help.openconnectors.ext.hana.
 <tr>
 <td valign="top">
 
- *Recurly* 
+*Recurly* 
 
 
 
@@ -4097,7 +4489,7 @@ See: [Recurly](https://help.openconnectors.ext.hana.ondemand.com/home/recurly)
 <tr>
 <td valign="top">
 
- *Sage 200 Accounting* 
+*Sage 200 Accounting* 
 
 
 
@@ -4115,7 +4507,7 @@ See: [Sage 200 Accounting](https://help.openconnectors.ext.hana.ondemand.com/hom
 <tr>
 <td valign="top">
 
- *Sage 50 US* 
+*Sage 50 US* 
 
 
 
@@ -4131,7 +4523,7 @@ US edition of Sage 50 allowing you to manage customers, invoices, purchase order
 <tr>
 <td valign="top">
 
- *Sage Accounting* 
+*Sage Accounting* 
 
 
 
@@ -4149,7 +4541,7 @@ See: [Sage Accounting](https://help.openconnectors.ext.hana.ondemand.com/home/sa
 <tr>
 <td valign="top">
 
- *Sage CRM* 
+*Sage CRM* 
 
 
 
@@ -4167,7 +4559,7 @@ See: [Sage CRM](https://help.openconnectors.ext.hana.ondemand.com/home/sagecrm)
 <tr>
 <td valign="top">
 
- *Sage Intacct V3* 
+*Sage Intacct V3* 
 
 
 
@@ -4183,7 +4575,7 @@ Provides generic or open functions that can operate on multiple types of account
 <tr>
 <td valign="top">
 
- *Salesforce Files* 
+*Salesforce Files* 
 
 
 
@@ -4201,7 +4593,7 @@ See: [Salesforce Files](https://help.openconnectors.ext.hana.ondemand.com/home/s
 <tr>
 <td valign="top">
 
- *Salesforce Libraries* 
+*Salesforce Libraries* 
 
 
 
@@ -4219,7 +4611,7 @@ See: [Salesforce Libraries](https://help.openconnectors.ext.hana.ondemand.com/ho
 <tr>
 <td valign="top">
 
- *Salesforce Marketing Cloud* 
+*Salesforce Marketing Cloud* 
 
 
 
@@ -4237,7 +4629,7 @@ See: [Salesforce Marketing Cloud](https://help.openconnectors.ext.hana.ondemand.
 <tr>
 <td valign="top">
 
- *Salesforce Sales Cloud* 
+*Salesforce Sales Cloud* 
 
 
 
@@ -4255,7 +4647,7 @@ See: [Salesforce Sales Cloud](https://help.openconnectors.ext.hana.ondemand.com/
 <tr>
 <td valign="top">
 
- *Salesforce Service Cloud* 
+*Salesforce Service Cloud* 
 
 
 
@@ -4273,7 +4665,7 @@ See: [Salesforce Service Cloud](https://help.openconnectors.ext.hana.ondemand.co
 <tr>
 <td valign="top">
 
- *SalesLoft* 
+*SalesLoft* 
 
 
 
@@ -4291,7 +4683,7 @@ See: [SalesLoft](https://help.openconnectors.ext.hana.ondemand.com/home/saleslof
 <tr>
 <td valign="top">
 
- *SendGrid* 
+*SendGrid* 
 
 
 
@@ -4309,7 +4701,7 @@ See: [SendGrid](https://help.openconnectors.ext.hana.ondemand.com/home/sendgrid)
 <tr>
 <td valign="top">
 
- *Sendoso* 
+*Sendoso* 
 
 
 
@@ -4327,7 +4719,7 @@ See: [Sendoso](https://help.openconnectors.ext.hana.ondemand.com/home/sendoso)
 <tr>
 <td valign="top">
 
- *ServiceMax* 
+*ServiceMax* 
 
 
 
@@ -4345,7 +4737,7 @@ See: [ServiceMax](https://help.openconnectors.ext.hana.ondemand.com/home/service
 <tr>
 <td valign="top">
 
- *ServiceNow* 
+*ServiceNow* 
 
 
 
@@ -4363,7 +4755,7 @@ See: [ServiceNow](https://help.openconnectors.ext.hana.ondemand.com/home/service
 <tr>
 <td valign="top">
 
- *ServiceNow OAuth* 
+*ServiceNow OAuth* 
 
 
 
@@ -4381,7 +4773,7 @@ See: [ServiceNow OAuth](https://help.openconnectors.ext.hana.ondemand.com/home/s
 <tr>
 <td valign="top">
 
- *SFTP Element* 
+*SFTP Element* 
 
 
 
@@ -4399,7 +4791,7 @@ See: [SFTP Element](https://help.openconnectors.ext.hana.ondemand.com/home/sftp)
 <tr>
 <td valign="top">
 
- *Sharepoint* 
+*Sharepoint* 
 
 
 
@@ -4417,7 +4809,7 @@ See: [Sharepoint](https://help.openconnectors.ext.hana.ondemand.com/home/sharepo
 <tr>
 <td valign="top">
 
- *Shopify* 
+*Shopify* 
 
 
 
@@ -4435,7 +4827,7 @@ See: [Shopify](https://help.openconnectors.ext.hana.ondemand.com/home/shopify)
 <tr>
 <td valign="top">
 
- *Slack* 
+*Slack* 
 
 
 
@@ -4453,7 +4845,7 @@ See: [Slack](https://help.openconnectors.ext.hana.ondemand.com/home/slack)
 <tr>
 <td valign="top">
 
- *SmartRecruiters* 
+*SmartRecruiters* 
 
 
 
@@ -4471,7 +4863,7 @@ See: [SmartRecruiters](https://help.openconnectors.ext.hana.ondemand.com/home/sm
 <tr>
 <td valign="top">
 
- *Snowflake* 
+*Snowflake* 
 
 
 
@@ -4489,7 +4881,7 @@ See: [Snowflake](https://help.openconnectors.ext.hana.ondemand.com/home/snowflak
 <tr>
 <td valign="top">
 
- *Square* 
+*Square* 
 
 
 
@@ -4507,7 +4899,25 @@ See: [Square](https://help.openconnectors.ext.hana.ondemand.com/home/square)
 <tr>
 <td valign="top">
 
- *Sugar Enterprise* 
+*Stripe* 
+
+
+
+</td>
+<td valign="top">
+
+API Driven credit card processing with token based identity
+
+See: [Stripe](https://help.openconnectors.ext.hana.ondemand.com/home/stripe)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Sugar Enterprise* 
 
 
 
@@ -4525,7 +4935,7 @@ See: [Sugar Enterprise](https://help.openconnectors.ext.hana.ondemand.com/home/s
 <tr>
 <td valign="top">
 
- *Sugar Market* 
+*Sugar Market* 
 
 
 
@@ -4543,7 +4953,7 @@ See: [Sugar Market](https://help.openconnectors.ext.hana.ondemand.com/home/sugar
 <tr>
 <td valign="top">
 
- *Sugar Professional* 
+*Sugar Professional* 
 
 
 
@@ -4561,7 +4971,7 @@ See: [Sugar Professional](https://help.openconnectors.ext.hana.ondemand.com/home
 <tr>
 <td valign="top">
 
- *Sugar Sell* 
+*Sugar Sell* 
 
 
 
@@ -4579,7 +4989,7 @@ See: [Sugar Sell](https://help.openconnectors.ext.hana.ondemand.com/home/sugarse
 <tr>
 <td valign="top">
 
- *Sugar Serve* 
+*Sugar Serve* 
 
 
 
@@ -4597,7 +5007,7 @@ See: [Sugar Serve](https://help.openconnectors.ext.hana.ondemand.com/home/sugars
 <tr>
 <td valign="top">
 
- *SugarCRM* 
+*SugarCRM* 
 
 
 
@@ -4615,7 +5025,7 @@ See: [SugarCRM](https://help.openconnectors.ext.hana.ondemand.com/home/sugarcrmv
 <tr>
 <td valign="top">
 
- *Syncplicity* 
+*Syncplicity* 
 
 
 
@@ -4633,7 +5043,7 @@ See: [Syncplicity](https://help.openconnectors.ext.hana.ondemand.com/home/syncpl
 <tr>
 <td valign="top">
 
- *Taleo Business Edition* 
+*Taleo Business Edition* 
 
 
 
@@ -4651,7 +5061,7 @@ See: [Taleo Business Edition](https://help.openconnectors.ext.hana.ondemand.com/
 <tr>
 <td valign="top">
 
- *Tango Card* 
+*Tango Card* 
 
 
 
@@ -4669,7 +5079,7 @@ See: [Tango Card](https://help.openconnectors.ext.hana.ondemand.com/home/tangoca
 <tr>
 <td valign="top">
 
- *Terminus* 
+*Terminus* 
 
 
 
@@ -4687,7 +5097,7 @@ See: [Terminus](https://help.openconnectors.ext.hana.ondemand.com/home/terminus)
 <tr>
 <td valign="top">
 
- *Twilio* 
+*Twilio* 
 
 
 
@@ -4705,7 +5115,7 @@ See: [Twilio](https://help.openconnectors.ext.hana.ondemand.com/home/twiliov2)
 <tr>
 <td valign="top">
 
- *Twilio SMS* 
+*Twilio SMS* 
 
 
 
@@ -4723,7 +5133,7 @@ See: [Twilio SMS](https://help.openconnectors.ext.hana.ondemand.com/home/twilio)
 <tr>
 <td valign="top">
 
- *Twitter* 
+*Twitter* 
 
 
 
@@ -4741,7 +5151,7 @@ See: [Twitter](https://help.openconnectors.ext.hana.ondemand.com/home/twitter)
 <tr>
 <td valign="top">
 
- *Ultimate Ultipro* 
+*Ultimate Ultipro* 
 
 
 
@@ -4757,7 +5167,7 @@ One comprehensive cloud solution that delivers business benefits for your organi
 <tr>
 <td valign="top">
 
- *Volusion* 
+*Volusion* 
 
 
 
@@ -4775,7 +5185,7 @@ See: [Volusion](https://help.openconnectors.ext.hana.ondemand.com/home/volusion)
 <tr>
 <td valign="top">
 
- *Weebly* 
+*Weebly* 
 
 
 
@@ -4793,7 +5203,7 @@ See: [Weebly](https://help.openconnectors.ext.hana.ondemand.com/home/weebly)
 <tr>
 <td valign="top">
 
- *WooCommerce* 
+*WooCommerce* 
 
 
 
@@ -4811,7 +5221,7 @@ See: [WooCommerce](https://help.openconnectors.ext.hana.ondemand.com/home/woocom
 <tr>
 <td valign="top">
 
- *Workday* 
+*Workday* 
 
 
 
@@ -4829,7 +5239,7 @@ See: [Workday](https://help.openconnectors.ext.hana.ondemand.com/home/workday)
 <tr>
 <td valign="top">
 
- *Wufoo* 
+*Wufoo* 
 
 
 
@@ -4847,7 +5257,7 @@ See: [Wufoo](https://help.openconnectors.ext.hana.ondemand.com/home/wufoo)
 <tr>
 <td valign="top">
 
- *Zendesk* 
+*Zendesk* 
 
 
 
@@ -4865,7 +5275,7 @@ See: [Zendesk](https://help.openconnectors.ext.hana.ondemand.com/home/zendesk)
 <tr>
 <td valign="top">
 
- *Zoho Crm* 
+*Zoho Crm* 
 
 
 
@@ -4883,7 +5293,7 @@ See: [Zoho Crm](https://help.openconnectors.ext.hana.ondemand.com/home/zohocrmv2
 <tr>
 <td valign="top">
 
- *Zuora v2* 
+*Zuora v2* 
 
 
 

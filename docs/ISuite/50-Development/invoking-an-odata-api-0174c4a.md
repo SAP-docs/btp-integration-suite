@@ -7,7 +7,7 @@
 ## Context
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 You have deployed an OData API successfully; the service is in active status ready to be consumed.
 

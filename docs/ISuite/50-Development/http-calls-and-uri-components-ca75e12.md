@@ -6,7 +6,7 @@
 
 An HTTP call is composed of a **service root URI**, **resource path**, and **query options**.
 
-To find the **resource path** and the supported **query options**, go to SAP API Business Hub and select the API. For example, to find the resource paths, the supported operations and query options for message processing logs, check out the [Message Processing Logs](https://api.sap.com/api/MessageProcessingLogs/resource) page on SAP API Business Hub.
+To find the **resource path** and the supported **query options**, go to SAP Business Accelerator Hub and select the API. For example, to find the resource paths, the supported operations and query options for message processing logs, check out the [Message Processing Logs](https://api.sap.com/api/MessageProcessingLogs/resource) page on SAP Business Accelerator Hub.
 
 
 

@@ -12,9 +12,11 @@ Enables SAP Integration Suite to send messages to queues or topics in IBM MQ.
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > To be able to connect to queues or topics, you have to create queues and/or topics in the message broker. This needs to be done in the message broker with the configuration tools provided by the message broker.
@@ -27,12 +29,17 @@ Enables SAP Integration Suite to send messages to queues or topics in IBM MQ.
 
 
 
+> ### Note:  
+> This adapter enables you to connect SAP Integration Suite to a remote message broker. SAP can’t give advice on how to configure the external system nor does SAP provide support related to this.
+
+
+
 Note the following when using the AMQP adapter to connect Cloud Integration to IBM MQ:
 
 -   Exclusive queues are supported as of version 9.2.
 
     > ### Note:  
-    > Set parameter *Max. Number of Prefetched Messages* in AMQP sender channel to ***0***.
+    > Set parameter *Max. Number of Prefetched Messages* in AMQP sender channel to `0`.
     > 
     > The Poll status in the deployed artifacts monitor show an error if multiple workers are running on your tenant. The reason is that one consumer is allowed for the exclusive queue. The second worker runs into an error when trying to connect.
 
@@ -74,7 +81,7 @@ Description
 <tr>
 <td valign="top">
 
- *Name/Adapter Type* 
+*Name/Adapter Type* 
 
 
 
@@ -90,7 +97,7 @@ AMQP
 <tr>
 <td valign="top">
 
- *Transport Protocol* 
+*Transport Protocol* 
 
 
 
@@ -108,14 +115,14 @@ The protocol that the message broker supports:
 <tr>
 <td valign="top">
 
- *Message Protocol* 
+*Message Protocol* 
 
 
 
 </td>
 <td valign="top">
 
- *AMQP 1.0* 
+*AMQP 1.0* 
 
 
 
@@ -148,7 +155,7 @@ Description
 <tr>
 <td valign="top">
 
- *Host* 
+*Host* 
 
 
 
@@ -164,7 +171,7 @@ Specify the hostname of the message broker.
 <tr>
 <td valign="top">
 
- *Port* 
+*Port* 
 
 
 
@@ -180,7 +187,7 @@ Specify the port as defined in the IBM MQ broker.
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -202,7 +209,7 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 <tr>
 <td valign="top">
 
- *Path* \(only if *WebSocket* is selected as the *Transport Protocol* in the *General* tab\)
+*Path* \(only if *WebSocket* is selected as the *Transport Protocol* in the *General* tab\)
 
 
 
@@ -218,7 +225,7 @@ Specify the access path of the message broker.
 <tr>
 <td valign="top">
 
- *Connect with TLS* 
+*Connect with TLS* 
 
 
 
@@ -250,7 +257,7 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 
@@ -266,7 +273,7 @@ Select the authentication method the message broker supports. Make sure that *SA
 <tr>
 <td valign="top">
 
- *Credential Name* \(only if *SASL* or *OAuth2 Client Credentials* is selected for *Authentication*\)
+*Credential Name* \(only if *SASL* or *OAuth2 Client Credentials* is selected for *Authentication*\)
 
 
 
@@ -306,7 +313,7 @@ Description
 <tr>
 <td valign="top">
 
- *Destination Type* 
+*Destination Type* 
 
 
 
@@ -326,7 +333,7 @@ Both options are supported by IBM MQ.
 <tr>
 <td valign="top">
 
- *Destination Name* 
+*Destination Name* 
 
 
 
@@ -344,7 +351,7 @@ This value can be defined dynamically by using the following expressions: `${hea
 <tr>
 <td valign="top">
 
- *Expiration Period \(in s\)* 
+*Expiration Period \(in s\)* 
 
 
 
@@ -360,7 +367,7 @@ Specify the Time to Live \(TTL\) for the message. If nothing is specified, the s
 <tr>
 <td valign="top">
 
- *Delivery* 
+*Delivery* 
 
 
 
@@ -381,7 +388,7 @@ Specify whether the message broker has to make sure that the message is not lost
 <tr>
 <td valign="top">
 
- *Message Type* 
+*Message Type* 
 
 
 
@@ -409,7 +416,7 @@ Define the message type to be used for sending the message to the message broker
 <tr>
 <td valign="top">
 
- *Header Format Handling* 
+*Header Format Handling* 
 
 
 

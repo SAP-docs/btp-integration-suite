@@ -38,6 +38,11 @@ To restrict access via access policies, proceed as follows.
 
 
 
+> ### Note:  
+> You can also retrieve access policies \(read and write operations\) by an OData V2 application programming interface \(API\). You find the API and its documentation on SAP Business Accelerator Hub at: [Security Content](http://help.sap.com/disclaimer?site=https%3A%2F%2Fapi.sap.com%2Fapi%2FSecurityContent%2Fresource).
+
+
+
 <a name="loio318d107538644d1483c49eb97542b8da__section_wr5_5b2_v4b"/>
 
 ## Create an Access Policy
@@ -71,14 +76,14 @@ To restrict access via access policies, proceed as follows.
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Role Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a role name \(mandatory\). The role name is the name of a custom role that you've to create in your subscriber account.
 
 
@@ -87,14 +92,14 @@ To restrict access via access policies, proceed as follows.
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Description*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a description for the role specified \(optional\).
 
 
@@ -129,14 +134,14 @@ To restrict access via access policies, proceed as follows.
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter an artifact name \(mandatory\).
 
 
@@ -145,14 +150,14 @@ To restrict access via access policies, proceed as follows.
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Description*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter an artifact description \(optional\), which isn’t necessarily the description of the artifact: if you choose the operator `Matches`, describe the set of artifacts selected by the regular expression \(for example: integration artifacts processing data for German employees\).
 
 
@@ -161,7 +166,7 @@ To restrict access via access policies, proceed as follows.
     </tr>
     <tr>
     <td valign="top" colspan="2">
-
+    
     *Condition*
 
 
@@ -170,15 +175,15 @@ To restrict access via access policies, proceed as follows.
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Artifact Type*
 
 
     
     </td>
     <td valign="top">
-
-    Select an artifact type from the list. By default, preset as ***Integration Flow***.
+    
+    Select an artifact type from the list. By default, preset as `Integration Flow`.
 
 
     
@@ -186,14 +191,14 @@ To restrict access via access policies, proceed as follows.
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Attribute* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose either the name or the ID of the integration artifact.
 
     > ### Note:  
@@ -205,14 +210,14 @@ To restrict access via access policies, proceed as follows.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Operator
 
 
     
     </td>
     <td valign="top">
-
+    
     -   If you select *Equals*, you must enter the exact name or ID of the integration artifact.
     -   If you select *Matches*, the value has to be a valid Java regular expression.
 
@@ -223,14 +228,14 @@ To restrict access via access policies, proceed as follows.
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Value*
 
 
     
     </td>
     <td valign="top">
-
+    
     If you choose *Equals*, enter the *ID*or the *Name*of the integration artifact.
 
 
@@ -239,14 +244,14 @@ To restrict access via access policies, proceed as follows.
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Expression*
 
 
     
     </td>
     <td valign="top">
-
+    
     Is shown only if you choose *Matches*.
 
     Enter a regular expression for *ID* or *Name*;

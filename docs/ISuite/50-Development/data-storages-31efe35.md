@@ -20,7 +20,7 @@ Cloud Integration comes with the following data storage features.
 <tr>
 <th valign="top">
 
-Physical database
+Physical Database
 
 
 
@@ -88,9 +88,9 @@ Tenant database
 </td>
 <td valign="top">
 
-During the processing of an integration flow, Cloud Integration can write data to and read data from a database that comes with the Cloud Integration tenant. The database keeps the data for a restricted amount of time.
+During the processing of an integration flow, Cloud IntegrationCloud Integration tenant. The database keeps the data for a restricted amount of time.
 
-The database resides on the Cloud Integration tenant and is associated with a subaccount of SAP BTP.
+The database is associated with a subaccount of SAP BTP.
 
 You can store the following data in the tenant database:
 
@@ -104,10 +104,15 @@ You can store the following data in the tenant database:
 
 -   Message processing log attachments
 
-    Cloud Foundry: When you use Cloud Integration in the Cloud Integration environment, message processing log attachments are stored in the SAP BTP object store.
-
 -   Partner Directory content \(retention period: No limitation\)
 
+
+> ### Note:  
+> To be more precise from a technical perspective, the following assets are stored in the SAP BTP object store:
+> 
+> -   Message processing log attachments
+> 
+> -   Message store content
 
 
 
@@ -123,7 +128,7 @@ JMS queues
 </td>
 <td valign="top">
 
-To asynchronously decouple inbound and outbound processing, Cloud Integration can store messages in message queues and read from there \(using the JMS adapter\).
+To asynchronously decouple inbound and outbound processing, Cloud Integration can store messages in message queues and read from there \(using the JMS adapter\). can write data to and read data from a database that comes with the
 
 As soon as the message has been consumed successfully, it isn't available anymore in the queue.
 
@@ -141,7 +146,7 @@ Constraints:
 
 -   Retention period: 90 days \(default\)
 
-    The system deletes messages from the queue that weren't consumed within this period.
+    can write data to and read data from a database that comes with theThe system deletes messages from the queue that weren't consumed within this period.
 
 -   As soon as the message has been consumed successfully, it isn't available anymore in the queue.
 

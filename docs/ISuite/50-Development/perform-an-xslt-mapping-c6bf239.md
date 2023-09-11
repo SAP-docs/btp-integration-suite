@@ -6,7 +6,7 @@ Define an XSLT mapping dynamically based on partner-specific information stored 
 
 To illustrate this rule, check out the *Partner Directory - XSLT Mapping* integration flow. It is modeled as shown in the figure.
 
- ![](images/Guidelines_Partner_Directory_XSLT_Mapping_604fa33.png) 
+![](images/Guidelines_Partner_Directory_XSLT_Mapping_604fa33.png)
 
 This integration flow reads binary parameters from the Partner Directory. These parameters are partner-specific. You can use this integration flow for different partners with different mappings and schemas.
 
@@ -84,21 +84,21 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     MyMappingSchema
 
 
     
     </td>
     <td valign="top">
-
+    
     `pd:${property.PartnerId}:MyMappingSchema:Binary`
 
 
     
     </td>
     <td valign="top">
-
+    
     Mapping schema used by the partner
 
     With this schema, the relevant binary is stored in the header and can now be used in the subsequent integration flow steps, for example, the XSLT Mapping step.
@@ -109,21 +109,21 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     MyMapping
 
 
     
     </td>
     <td valign="top">
-
-     `pd:${property.PartnerId}:MyMapping:Binary` 
+    
+    `pd:${property.PartnerId}:MyMapping:Binary` 
 
 
     
     </td>
     <td valign="top">
-
+    
     Partner-specific mapping
 
 
@@ -169,21 +169,21 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     context
 
 
     
     </td>
     <td valign="top">
-
+    
     `PartnerDirectory-XSLT`
 
 
     
     </td>
     <td valign="top">
-
+    
     Defines the Data Store name. In this case, the name reflects this guideline.
 
 
@@ -192,21 +192,21 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     receiver
 
 
     
     </td>
     <td valign="top">
-
-     `Partner ${property.PartnerId}` 
+    
+    `Partner ${property.PartnerId}` 
 
 
     
     </td>
     <td valign="top">
-
+    
     Defines the Data Store entry ID. In this case, the value is given by the partner ID from the Partner Directory.
 
 

@@ -38,6 +38,17 @@ Assign the following role template:
 
 ## Resources
 
+
+
+> ### Caution:  
+> Note the following, if you plan to get message processing logs with status “Discarded”, using the OData API:
+> 
+> -   Discarded messages don’t contain error information.
+> 
+> -   Calling frequent queries, for error information, in discarded messages, can impose an unnecessary high load on the system.
+> 
+> Therefore, decide the usage for such specific queries, diligently.
+
 ****
 
 
@@ -173,7 +184,7 @@ Represents the idempotent repository.
 > ### Note:  
 > The `Idempotent Repository` resource of the `Message Processing Logs` API has been deprecated and replaced by a new one.
 
-The idempotent repository contains information about files that have already been consumed from the connected server in scenarios where one or more of the following features are used: Aggregator step, FTP, adapter, JMS adapter, SFTP adapter, or XI adapter. Files that are stored in the idempotent repository can be identified by the file name. When Cloud Integration tries to process the file, the system can detect if the file has already been consumed \(based on its idempotent repository entry\) and that way can prevent it from being consumed a 2nd time from the server.
+The idempotent repository contains information about files that have already been consumed from the connected server in scenarios where one or more of the following features are used: Aggregator step, FTP, adapter, JMS adapter, SFTP adapter, or XI adapter. Files that are stored in the idempotent repository can be identified by the file name. When Cloud Integration tries to process the file, the system can detect if the file has already been consumed \(based on its idempotent repository entry\) and that way can prevent it from being consumed a second time from the server.
 
 More information:
 
@@ -225,7 +236,7 @@ For general information about query options, see [Query Options](query-options-9
 
 ## Example Requests
 
-You can find various example requests on SAP API Business Hub at [Message Stores](https://api.sap.com/api/MessageStore).
+You can find various example requests on SAP Business Accelerator Hub at [Message Stores](https://api.sap.com/api/MessageStore).
 
 For more example requests, see [Message Processing Logs Example Requests](message-processing-logs-example-requests-27bc167.md).
 
@@ -235,13 +246,13 @@ To trigger the modifying actions \(POST, PUT, and DELETE\), you need to fetch a 
 
 
 
-On SAP API Business Hub, you can test API calls against a sandbox tenant or against a custom tenant \(to be configured under *API Environment*\). If you want to perform an API call against your custom tenant using an HTTP client such like Postman, make sure that the request URL is composed in the following way:
+On SAP Business Accelerator Hub, you can test API calls against a sandbox tenant or against a custom tenant \(to be configured under *API Environment*\). If you want to perform an API call against your custom tenant using an HTTP client such like Postman, make sure that the request URL is composed in the following way:
 
 `https://<host address>/api/v1/<relative resource path>`
 
 The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
 
-You can find the relative resource path for each operation on SAP API Business Hub.
+You can find the relative resource path for each operation on SAP Business Accelerator Hub.
 
 **Related Information**  
 

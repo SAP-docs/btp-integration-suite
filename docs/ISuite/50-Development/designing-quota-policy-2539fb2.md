@@ -67,7 +67,7 @@ Valid value: date and time, for example 2015-02-09 00:00:00.
 
 Interval \(Mandatory\)
 
- 
+
 
 
 
@@ -263,7 +263,7 @@ Note: Always set this value to true.
 
 AsynchronousConfiguration\(Optional\)
 
- 
+
 
 
 

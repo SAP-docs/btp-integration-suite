@@ -23,7 +23,7 @@ The following are the supported file format for certificates: .cer, .jar \(signe
 > ### Note:  
 > If you face any issues while importing the .pkcs/.p12 certificates, please consider checking for restricted characters in your password.
 > 
-> If your password for certificates contains any restricted characters such as \(!, %, ^, and \#\), import of such certificates might fail. Therefore, while creating the certificates please choose a password without these restricted characters and try importing again.
+> If your password for certificates contains any restricted characters such as \(!, %, ^, &, \#\), import of such certificates might fail. Therefore, while creating the certificates please choose a password without these restricted characters and try importing again.
 
 > ### Note:  
 > Whenever you’re trying to establish a connection between your client and the API Management gateway, certificate pinning ensures that the TLS connection is set up using a particular certificate only. This can help you in situations where you may run into the risk of trusting certificate authorities that you shouldn't. However, the certificate pinning feature isn’t supported currently in API Management.

@@ -27,7 +27,7 @@ Description
 <tr>
 <td valign="top">
 
-*SAP Cloud Integration Tenant Parameters Postman Environment \(Neo\)*
+*SAP Cloud Integration Tenant Parameters Postman Environment \(*Neo*\)*
 
 \(Not relevant when using SAP Integration Suite; only relevant when using SAP Cloud Integration as standalone service in the Neo environment\)
 
@@ -45,7 +45,7 @@ You can use this Postman collection as template to set up a Postman environment 
 <tr>
 <td valign="top">
 
- *SAP Cloud Integration Tenant Parameters Postman Environment \(CF\)* 
+*SAP Cloud Integration Tenant Parameters Postman Environment \(CF\)* 
 
 
 
@@ -61,7 +61,7 @@ You can use this Postman collection as template to set up a Postman environment 
 <tr>
 <td valign="top">
 
- *Partner Directory Example Integration Flows Postman Collection* 
+*Partner Directory Example Integration Flows Postman Collection* 
 
 
 
@@ -565,7 +565,7 @@ Enter the alias of the private key from the Cloud Integration keystore.
 
 After you've imported the collection *Partner Directory Example Integration Flows Postman Collection*, it's displayed in the collections area in Postman.
 
-The collection contains 2 folder structures for the different environments \(Cloud Foundry \(CF\) and Neo\).
+The collection contains 2 folder structures for the different environments \(Cloud Foundry \(Cloud Foundry\) and Neo\).
 
 ![](images/696aa291b22443a09bef0e5f11248b5a.image)
 

@@ -16,7 +16,7 @@ To decrypt a message, the decryptor requires a private key that must be deployed
 
 ## Procedure
 
-1.  In the palette, choose :lock:, then ** \> *Decryptor* \> *PKCS\#7 Decryptor*.
+1.  In the palette, choose :lock:, then *Decryptor* \> *PKCS\#7 Decryptor*.
 
 2.  Place *PKCS\#7 Decryptor* in integration process and define the message path.
 
@@ -42,14 +42,14 @@ To decrypt a message, the decryptor requires a private key that must be deployed
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a name for the decryptor.
 
 
@@ -80,14 +80,14 @@ To decrypt a message, the decryptor requires a private key that must be deployed
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Body is Base64 Encoded*
 
 
     
     </td>
     <td valign="top">
-
+    
     Select if you expect the body of payload to be `Base64` encoded.
 
 
@@ -96,14 +96,14 @@ To decrypt a message, the decryptor requires a private key that must be deployed
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Signatures*
 
 
     
     </td>
     <td valign="top">
-
+    
     Select option based on the following description:
 
     -   *Signed and Enveloped Data*: Select if you want decryptor to process payloads that are signed and encrypted.
@@ -117,7 +117,7 @@ To decrypt a message, the decryptor requires a private key that must be deployed
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Public Key Alias*
 
     \(only if you have selected *Signed and Enveloped Data* or *Enveloped or Signed and Enveloped Data* for *Signatures*\)
@@ -126,7 +126,7 @@ To decrypt a message, the decryptor requires a private key that must be deployed
     
     </td>
     <td valign="top">
-
+    
     Choose *Add* to enter the public key alias of the expected senders.
 
     You can enter `${header.headername}` or `${property.propertyname}` to read the name dynamically from a header or exchange property.

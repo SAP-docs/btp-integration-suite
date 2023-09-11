@@ -40,7 +40,7 @@ For more information, see...
 <tr>
 <td valign="top">
 
- *Discover* \> *Integrations* 
+*Discover* \> *Integrations* 
 
 
 
@@ -63,7 +63,7 @@ Consume prepackaged integration scenarios.
 <tr>
 <td valign="top">
 
- *Design* \> *Integrations* 
+*Design* \> *Integrations* 
 
 
 
@@ -86,7 +86,7 @@ Build integration scenarios.
 <tr>
 <td valign="top">
 
- *Monitor* \> *Integrations* 
+*Monitor* \> ** 
 
 
 
@@ -109,7 +109,7 @@ Operate and observe artifacts.
 <tr>
 <td valign="top">
 
- *Settings* \> *Integrations* 
+*Settings* \> *Integrations* 
 
 
 
@@ -123,7 +123,7 @@ Manage your tenant.
 </td>
 <td valign="top">
 
-[Configuring Integration Settings](configuring-integration-settings-de929c6.md)
+[Configuring Integration Settings](IntegrationSettings/configuring-integration-settings-98091f7.md)
 
 
 
@@ -167,7 +167,7 @@ For more information, see...
 <tr>
 <td valign="top">
 
- *Discover* \> *APIs* 
+*Discover* \> *APIs* 
 
 
 
@@ -190,7 +190,9 @@ Explore and consume API packages.
 <tr>
 <td valign="top">
 
- *Design* \> *APIs* 
+*Design* \> *APIs*
+
+*Design* \> *Graph*
 
 
 
@@ -199,12 +201,16 @@ Explore and consume API packages.
 
 Design and develop API artifacts.
 
+Expose all your business data in the form of a semantically connected business data graph.
+
 
 
 </td>
 <td valign="top">
 
 [API Development](api-development-adcbc07.md)
+
+[Graph](https://help.sap.com/docs/graph)
 
 
 
@@ -213,7 +219,7 @@ Design and develop API artifacts.
 <tr>
 <td valign="top">
 
- *Test* \> *APIs* 
+*Test* \> *APIs* 
 
 
 
@@ -236,7 +242,7 @@ Test and debug the runtime behaviour of APIs.
 <tr>
 <td valign="top">
 
- *Configure* \> *APIs* 
+*Configure* \> *APIs* 
 
 
 
@@ -259,7 +265,7 @@ Create and manage API providers, key value pairs, and certificates.
 <tr>
 <td valign="top">
 
- *Monitor* \> *Analyze APIs* 
+*Monitor* \> *Analyze APIs* 
 
 
 
@@ -282,7 +288,7 @@ Analyze API usage and performance.
 <tr>
 <td valign="top">
 
- *Monetize* 
+*Monetize* 
 
 
 
@@ -305,7 +311,7 @@ Generate revenue from APIs.
 <tr>
 <td valign="top">
 
- *Settings* \> *API* 
+*Settings* \> *API* 
 
 
 
@@ -319,7 +325,7 @@ Set up API Management and test API Business Hub Enterprise connections.
 </td>
 <td valign="top">
 
-[Setting Up API Management Service](setting-up-api-management-service-f34e86c.md)
+[Setting Up API Management Capability](setting-up-api-management-capability-f34e86c.md)
 
 
 
@@ -363,7 +369,7 @@ For more information, see...
 <tr>
 <td valign="top">
 
- *Discover* \> *Integrations* 
+*Discover* \> *Integrations* 
 
 
 
@@ -386,7 +392,7 @@ Consume prepackaged integration packages to test end-to-end B2B scenarios.
 <tr>
 <td valign="top">
 
- *Design* \> *B2B Scenarios* 
+*Design* \> *B2B Scenarios* 
 
 
 
@@ -409,7 +415,7 @@ Design and build B2B scenarios.
 <tr>
 <td valign="top">
 
- *Monitor* \> *B2B Scenarios* 
+*Monitor* \> *B2B Scenarios* 
 
 
 
@@ -467,7 +473,7 @@ For more information, see...
 <tr>
 <td valign="top">
 
- *Discover* \> *Type Systems* 
+*Discover* \> *Type Systems* 
 
 
 
@@ -490,7 +496,7 @@ Discover the collection of B2B/A2A/B2G type systems.
 <tr>
 <td valign="top">
 
- *Design* \> *Custom Type Systems* 
+*Design* \> *Custom Type Systems* 
 
 
 
@@ -504,7 +510,7 @@ Create and upload your custom messages using the custom type system.
 </td>
 <td valign="top">
 
-[Library of Custom Type Systems](library-of-custom-type-systems-884bb25.md)
+[Custom Type Systems](custom-type-systems-884bb25.md)
 
 
 
@@ -513,7 +519,7 @@ Create and upload your custom messages using the custom type system.
 <tr>
 <td valign="top">
 
- *Design* \> *MIGs* 
+*Design* \> *MIGs* 
 
 
 
@@ -536,7 +542,7 @@ Create and maintain Message Implementation Guidelines\(MIGs\).
 <tr>
 <td valign="top">
 
- *Design* \> *MAGs* 
+*Design* \> *MAGs* 
 
 
 
@@ -551,6 +557,29 @@ Create and maintain Mapping Guidelines\(MAGs\).
 <td valign="top">
 
 [Mapping Guidelines \(MAGs\)](mapping-guidelines-mags-42124f4.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Settings* \> *MIGs and MAGs* 
+
+
+
+</td>
+<td valign="top">
+
+Documentation template for MIGs and MAGs.
+
+
+
+</td>
+<td valign="top">
+
+[Documentation Template for MIGs and MAGs](documentation-template-for-migs-and-mags-4c442af.md)
 
 
 
@@ -577,4 +606,14 @@ See: [Development for Open Connectors](https://help.openconnectors.ext.hana.onde
 Learn how to assess the integration strategy for your organization in a structured way. Also, get information on how to determine the integration technologies that best suit your requirements.
 
 See: [Development for Integration Assessment](https://help.sap.com/docs/CLOUD_INTEGRATION/36eacbcb75de48a48717090574ba16d0/310067e3e49342ddbe5a90c8f33a1910.html?version=Cloud)
+
+
+
+<a name="loiode1ae814218247c6bac4975cb486e431__section_mcz_qrz_h5b"/>
+
+## Development for Migration Assessment
+
+Learn how to assess your integration scenarios and how to best migrate them to SAP Integration Suite.
+
+See: [Migration Assessment](../migration-assessment-5c5e50e.md)
 

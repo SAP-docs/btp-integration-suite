@@ -48,7 +48,7 @@ Integrations
 </td>
 <td valign="top">
 
-[Configuring Integration Settings](configuring-integration-settings-de929c6.md)
+[Configuring Integration Settings](IntegrationSettings/configuring-integration-settings-98091f7.md)
 
 
 
@@ -71,7 +71,7 @@ APIs
 </td>
 <td valign="top">
 
-[Setting Up API Management Service](setting-up-api-management-service-f34e86c.md)
+[Setting Up API Management Capability](setting-up-api-management-capability-f34e86c.md)
 
 
 

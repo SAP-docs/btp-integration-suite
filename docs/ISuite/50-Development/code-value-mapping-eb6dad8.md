@@ -8,6 +8,9 @@ Code value mappings represent the transformation of a code value that is set at 
 
 The *Code Value Mapping* tab appears only if both the source and target elements in a mapping have code values. The proposal service of MAG provides a proposal of the mapped code values in the target structure. You can also change the proposal or add code value mappings based on your requirement following the steps below.
 
+> ### Note:  
+> Code Value Mapping allows you to only map between pre-defined sets of values and it does not support mapping a non-value. If you want to use your own implementation, it is recommended to create an XSLT code. To know more, see [Functions](functions-2ea22d0.md).
+
 1.  Choose the source node and select *Code Value Mapping*.
 
     The tab displays the code values of the source and target node. The *Source Code Value* displays the list of code values selected for the source node and the *Target Code Value* displays the respective code values by the proposal service.

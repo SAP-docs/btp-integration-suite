@@ -12,6 +12,10 @@ The PGP Keys monitor allows a tenant administrator to manage the public and priv
 
 ## Overview
 
+Select *Monitor* \> *Integrations*.
+
+Under *Manage Security*, select *PGP Keys*.
+
 A list of public and secret PGP keys is displayed in a table. For each artifact, the following attributes are displayed:
 
 **Attributes of PGP Keyrings**
@@ -94,11 +98,11 @@ States the key ID.
 
 Indicates the validity state:
 
--   Valid: The PGP key is valid.
+-   *Valid*: The PGP key is valid.
 
--   Critical: The PGP key will expire within the next 14 days.
+-   *Critical*: The PGP key will expire within the next 14 days.
 
--   Expired: The PGP key is no longer valid.
+-   *Expired*: The PGP key is no longer valid.
 
 
 
@@ -154,30 +158,16 @@ To sort and filter the content of the table, choose *Table Settings* \(:gear:\).
 <tr>
 <td valign="top">
 
-*Add Public Key or Secret Keys*
+Display key properties.
 
 
 
 </td>
 <td valign="top">
 
-To upload a secret or public keyring and replace the existing prior secret or public keyring, choose *Add*.
+To display properties of a dedicated key, click the key.
 
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Download*
-
-
-
-</td>
-<td valign="top">
-
-To download an artifact, select the artifact in the table and choose *Download Public Keys or Secret Keys*.
+See: [Displaying Properties of a PGP Key](displaying-properties-of-a-pgp-key-13b3dc9.md)
 
 
 
@@ -186,14 +176,100 @@ To download an artifact, select the artifact in the table and choose *Download P
 <tr>
 <td valign="top">
 
-*Delete*
+Add a keyring.
 
 
 
 </td>
 <td valign="top">
 
-To delete an artifact, go to *Monitor* \> *Managing Security Material* and choose *Delete* after the selecting the secret or public keyring in the table. See also: [Managing Security Material](managing-security-material-b8ccb53.md) 
+To add a public keyring, select *Add* \> *Public Keys*.
+
+To add a secret keyring, select *Add* \> *Secret Keys*.
+
+When adding a secret keyring, you need to specify the key passphrase.
+
+See:
+
+-   [Deploying a PGP Public Keyring](deploying-a-pgp-public-keyring-7f04458.md)
+
+-   [Deploying a PGP Secret Keyring](deploying-a-pgp-secret-keyring-9d8e1a9.md)
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Download a keyring.
+
+
+
+</td>
+<td valign="top">
+
+To download public keys, select *Download* \> *Public Keys.*
+
+To download secret keys, select *Download* \> *Secret Keys.*
+
+When downloading secret keys, you need to specify the key passphrase twice.
+
+> ### Note:  
+> It is not recommended to download secret keys. If, for certain reasons, you nevertheless need to download secret keys, make sure to use of a sufficiently secure storage location for the downloaded PGP secret keyring file, for example, a password manager.
+> 
+> Why do you need to apply a passphrase again when downloading secret keys? During upload, all keys are decrypted with the passphrase specified by you. In a next step, behind the scenes, the system re-encrypts the keys with a system-generated passphrase that is not disclosed to the user. This step further increases the protection level of your keys. Due to these additional steps, it is necessary that you apply a passphrase also when downloading secret keys. This passphrase is used to encrypt all keys in the downloaded secret keyring file.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Download a single key as file.
+
+
+
+</td>
+<td valign="top">
+
+To download a dedicated key as a file, click the download button \(<span class="SAP-icons"></span>\) at the end of the row of the key.
+
+When downloading a secret key, you need to specify the key passphrase twice.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Delete
+
+
+
+</td>
+<td valign="top">
+
+To delete a dedicated key, click the delete button \(:wastebasket:\) at the end of the row of the key.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Search
+
+
+
+</td>
+<td valign="top">
+
+To search for a key, start typing the user id or key id of a dedicated key in the search field above the table.
 
 
 
@@ -204,11 +280,7 @@ To delete an artifact, go to *Monitor* \> *Managing Security Material* and choos
 **Related Information**  
 
 
-[Deploying a PGP Public Keyring](deploying-a-pgp-public-keyring-7f04458.md "This artifact contains the public key that enables the tenant to encrypt or verify messages using the Pretty Good Privacy (PGP) standard.")
-
-[Deploying a PGP Secret Keyring](deploying-a-pgp-secret-keyring-9d8e1a9.md "This artifact contains the PGP Secret Keys for the usage of Open Pretty Good Privacy (PGP). The private key enables the tenant to decrypt or sign messages.")
-
-[Managing Security](managing-security-6e7c44c.md "The Manage Security section allows you to manage various kinds of security material (for example, user credentials, keystore entries), and to perform outbound connectivity tests.")
+[Manage Security](manage-security-6e7c44c.md "The Manage Security section allows you to manage various kinds of security material (for example, user credentials, keystore entries), and to perform outbound connectivity tests.")
 
 [Define PGP Encryptor](define-pgp-encryptor-7a07766.md "")
 

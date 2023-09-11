@@ -12,7 +12,7 @@ This example scenario shows how to handle exceptions raised by a receiver with t
 
 Integration flow *Handle Errors - Do Not Throw Error on Failure* calls a receiver. It is designed in the following way.
 
- ![](images/Do_Not_Throw_Exception_on_Failure_1_ce50824.png) 
+![](images/Do_Not_Throw_Exception_on_Failure_1_ce50824.png)
 
 > ### Note:  
 > Like in other example integration flows, the WebShop example application \(see: [WebShop Example Application](webshop-example-application-767d8ef.md)\) is used as data source.
@@ -49,14 +49,14 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     productIdentifier
 
 
     
     </td>
     <td valign="top">
-
+    
     Contains the product identifier.
 
     To simulate an error situation, you can
@@ -72,14 +72,14 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     throwExceptionOnFailure
 
 
     
     </td>
     <td valign="top">
-
+    
     Defines how the *Throw Exception on Failure* parameter is set in the HTTP receiver adapter.
 
 
@@ -136,21 +136,21 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
         </tr>
         <tr>
         <td valign="top">
-
+        
         200 OK
 
 
         
         </td>
         <td valign="top">
-
+        
         $\{header.CamelHttpResponseCode\} = '200'
 
 
         
         </td>
         <td valign="top">
-
+        
         Message processing ends. The integration flow sends back the product details to the HTTP client.
 
 
@@ -159,21 +159,21 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
         </tr>
         <tr>
         <td valign="top">
-
+        
         400 Bad Request
 
 
         
         </td>
         <td valign="top">
-
+        
         $\{header.CamelHttpResponseCode\} = '400'
 
 
         
         </td>
         <td valign="top">
-
+        
         The integration flow sends back the following message to the HTTP client:
 
         `Your request was invalid. Have you missed to specify the header productIdentifier with a product code?`
@@ -184,21 +184,21 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
         </tr>
         <tr>
         <td valign="top">
-
+        
         404 not found
 
 
         
         </td>
         <td valign="top">
-
+        
         $\{header.CamelHttpResponseCode\} = '404'
 
 
         
         </td>
         <td valign="top">
-
+        
         The integration flow sends back the following message to the HTTP client:
 
         `The item you were looking for does not exist in the web shop`
@@ -209,21 +209,21 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
         </tr>
         <tr>
         <td valign="top">
-
+        
         other
 
 
         
         </td>
         <td valign="top">
-
+        
         \(default route\)
 
 
         
         </td>
         <td valign="top">
-
+        
         The integration flow finishes message processing with an error end event.
 
 
@@ -244,9 +244,9 @@ To test the integration scenario, perform the following steps:
 
     [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
 
-2.  Deploy a *User Credentials* artifact with alias name ***myCredential*** using the *Monitor* application \(*Security Material* tile under *Manage Security*\).
+2.  Deploy a *User Credentials* artifact with alias name `myCredential` using the *Monitor* application \(*Security Material* tile under *Manage Security*\).
 
-3.  Deploy integration flow *Handle Errors - Do Not Throw Error on Failure* and configure it in such a way that the *User Credentials* parameter fits to the name ***myCredential*** of the *User Credentials* artifact deployed in the previous step.
+3.  Deploy integration flow *Handle Errors - Do Not Throw Error on Failure* and configure it in such a way that the *User Credentials* parameter fits to the name `myCredential` of the *User Credentials* artifact deployed in the previous step.
 
 4.  Deploy integration flow *Webshop Wrapper*.
 
@@ -276,14 +276,14 @@ To test the integration scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     no error, correct identifier
 
 
     
     </td>
     <td valign="top">
-
+    
     Request contains a valid product identifier \(`HT-1000`\). Furthermore, header `throwExceptionOnFailure` is set to `false`. This means that the HTTP receiver adapter with parameter *Throw Exception on Failure* disabled is used.
 
     As response you can expect a message with product details for the given product identifier.
@@ -296,14 +296,14 @@ To test the integration scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     no error, wrong identifier
 
 
     
     </td>
     <td valign="top">
-
+    
     Request contains a nonvalid product identifier \(`HT-10001`\). Furthermore, header `throwExceptionOnFailure` is set to `false`. This means that the HTTP receiver adapter with parameter *Throw Exception on Failure* disabled is used.
 
     As response you can expect a message with response code `404` and the message content:
@@ -318,14 +318,14 @@ To test the integration scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     no error, missing identifier
 
 
     
     </td>
     <td valign="top">
-
+    
     Request doesn't contain any product identifier header. Header `throwExceptionOnFailure` is set to `false`. This means that the HTTP receiver adapter with parameter *Throw Exception on Failure* disabled is used.
 
     As response you can expect a message with response code `400` and the message content:
@@ -340,14 +340,14 @@ To test the integration scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     error on Failure, wrong identifier
 
 
     
     </td>
     <td valign="top">
-
+    
     Request contains a nonvalid product identifier \(`HT-10001`\). Furthermore, header `throwExceptionOnFailure` is set to `true`. This means that the HTTP receiver adapter with parameter *Throw Exception on Failure* enabled is used.
 
     You can expect that the integration flow is ended with status *Failed*:
@@ -358,14 +358,14 @@ To test the integration scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     error on Failure, missing identifier
 
 
     
     </td>
     <td valign="top">
-
+    
     Request doesn't contain any product identifier header. Header `throwExceptionOnFailure` is set to `true`. This means that the HTTP receiver adapter with parameter *Throw Exception on Failure* enabled is used.
 
     You can expect that the integration flow is ended with status *Failed*:

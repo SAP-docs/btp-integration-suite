@@ -111,13 +111,17 @@ Cloud Integration provides a Java API to support this use case.
 6.  Save the integration flow.
 
     > ### Note:  
-    > When having selected the Script step shape in the integration flow model, you can do the following \(in the section below the integration flow model\):
+    > When having selected the Script step shape in the integration flow model, you can do the following in the property sheet:
     > 
-    > -   In tab *General*, you can edit the name of the Script step shape.
+    > -   In the *General* tab, you can edit the name of the Script step shape.
     > 
-    > -   In tab *Processing*, you can choose *Select* to browse for a script file.
+    > -   In the *Processing* tab, choose *Select* to browse and upload a script file.
     > 
     >     You can add external jar files using the *Resource* view. You can then invoke functions from these external jar files in the script. You can also upload a script from your computer using *Upload from File System*.
+    > 
+    > -   In the *Script Function* field, enter the name of the function that you want to call from the script by default. Make sure that you enter the function name without any arguments.
+    > 
+    >     The field helps you define a default function when there are multiple functions defined in the script file. However, if the script contains the function *processData*, which is the default function created in the script, you can leave the field empty.
 
 
 
@@ -130,21 +134,20 @@ When using the Script step, make sure that you follow guidelines about secure us
 
 To make sure that your scenario meets highest standards with regard to security and other aspects, follow the design guidelines, in particular, the following ones:
 
-[Apply the Highest Security Standards](apply-the-highest-security-standards-201fd43.md).
+-   [Apply the Highest Security Standards](apply-the-highest-security-standards-201fd43.md)
 
-[Use Scripting Appropriately](use-scripting-appropriately-d4dc13c.md).
+-   [Use Scripting Appropriately](use-scripting-appropriately-d4dc13c.md)
+
 
 To mention one particular aspect of scripting, note the following:
 
-Any application that parses XML data is prone to the risk of XML External Entity \(XXE\) Processing attacks.
+Any application that parses XML data is prone to the risk of XML External Entity \(XXE\) Processing attacks. More information can be found [here](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing).
 
-More information: [https://www.owasp.org/index.php/XML\_External\_Entity\_%28XXE%29\_Processing](https://www.owasp.org/index.php/XML_External_Entity_%28XXE%29_Processing)
-
-To overcome this issue, you must take either of the following measures to protect integration flows that contain Script steps \(using Groovy script or Java Script\) against XXE Processing attacks:
+To overcome this issue, you must take one of the following measures:
 
 -   Don't use XML parsing \(for example, DocumentBuilderFactory\) at all.
 
--   Switch off the processing of external entities as described at [https://www.owasp.org/index.php/XML\_External\_Entity\_%28XXE%29\_Prevention\_Cheat\_Sheet\#Java](https://www.owasp.org/index.php/XML_External_Entity_%28XXE%29_Prevention_Cheat_Sheet#Java).
+-   Switch off the processing of external entities as explained [here](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html).
 
 
 **Related Information**  

@@ -2,6 +2,8 @@
 
 # Message Status
 
+The message processing status indicates how a messages has been processed at runtime.
+
 
 
 **Message Status**

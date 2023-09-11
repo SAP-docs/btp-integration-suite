@@ -6,7 +6,7 @@ In this use case, the tenant client certificate has to be renewed. In the renewa
 
 The following figure illustrates the communication path that is relevant for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_HTTPS_Certificate_Outbound_HCI_Tenant_36ffd91.png) 
+![](images/SAP_HCI_Security_Renewal_-_HTTPS_Certificate_Outbound_HCI_Tenant_36ffd91.png)
 
 
 

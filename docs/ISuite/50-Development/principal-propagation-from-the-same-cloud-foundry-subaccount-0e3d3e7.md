@@ -6,7 +6,7 @@ Transfer the principal \(user details\) within the same Cloud Foundry subaccount
 
 **Prerequisites**
 
--   You have created a *Service Key* by creating a service instance using the on-premise connectivity plan. For more details, see [On-Premise Connectivity Plan](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/2fc7a5b57541459abedfc26eb63f7590.html "The On-premise connectivity plan helps in achieving principal propagation while connecting to an on-premise backend system.") :arrow_upper_right:.
+-   You have created a *Service Key* by creating a service instance using the on-premise connectivity plan. For more details, see [On-Premise Connectivity Plan](../20-Working_with_SAP_Integration_Suite_Home/on-premise-connectivity-plan-2fc7a5b.md).
 
 **Context**
 
@@ -14,7 +14,7 @@ When an application has to communicate with another application in the same suba
 
 **Procedure**
 
-1.  Create a Destination to the API Proxy that you want to call using principal propagation. Enter the following details while configuring a destination of type OAuth2UserTokenExchange. Also, if you have not generated the client credentials \(clientId, ClientSecret, tokenUrl and application url\) yet, see [On-Premise Connectivity Plan](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/2fc7a5b57541459abedfc26eb63f7590.html "The On-premise connectivity plan helps in achieving principal propagation while connecting to an on-premise backend system.") :arrow_upper_right:.
+1.  Create a Destination to the API Proxy that you want to call using principal propagation. Enter the following details while configuring a destination of type OAuth2UserTokenExchange. Also, if you have not generated the client credentials \(clientId, ClientSecret, tokenUrl and application url\) yet, see [On-Premise Connectivity Plan](../20-Working_with_SAP_Integration_Suite_Home/on-premise-connectivity-plan-2fc7a5b.md).
 
     > ### Sample Code:  
     > ```

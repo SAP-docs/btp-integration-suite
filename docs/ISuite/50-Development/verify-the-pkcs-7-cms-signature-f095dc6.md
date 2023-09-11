@@ -14,8 +14,15 @@ You perform this task to ensure that the signed message received over the cloud 
 
 In the integration flow model, you configure the *Verifier* by providing information about the public key alias, and whether the message header or body is Base64-encoded, depending on where the Signed Data is placed. For example, consider the following two cases:
 
--   If the Signed Data contains the original content, then in the Signature Verifier you provide the Signed Data in the message body.
--   If the Signed Data does not contain the original content, then in the Signature Verifier you provide the Signed Data in the header *SapCmsSignedData* and the original content in the message body.
+-   If the Signed Data contains the original content, then in the Signature Verifier you retrieve the Signed Data from the message body.
+-   If the Signed Data does not contain the original content, then in the Signature Verifier you retrieve the Signed Data from the header or property `SapCmsSignedData` and the original content in the message body.
+
+For more details, see:
+
+-   [Signing and Verifying a Message Using PKCS\#7/CMS](../40-RemoteSystems/signing-and-verifying-a-message-using-pkcs-7-cms-bb76650.md)
+
+-   [Options to Handle Signed Data](../40-RemoteSystems/options-to-handle-signed-data-89f4220.md)
+
 
 The Verifier uses the public key alias to obtain the public keys of type DSA or RSA that are used to decrypt the message digest. In this way the authenticity of the participant who signed the message is verified. If the verification is not successful, the Signature Verifier informs the user by raising an exception.
 
@@ -31,6 +38,9 @@ You can use this attribute to support the following use cases:
 
 > ### Note:  
 > Exceptions that occur during runtime are displayed in the *Message Processing Log* view of the *Operations Integration* perspective.
+
+> ### Tip:  
+> Fore more information on how signing and verifying works and about the technical concepts, check out [Signing and Verifying a Message Using PKCS\#7/CMS](../40-RemoteSystems/signing-and-verifying-a-message-using-pkcs-7-cms-bb76650.md).
 
 
 
@@ -64,14 +74,14 @@ You can use this attribute to support the following use cases:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the name of the verifier.
 
 
@@ -104,15 +114,17 @@ You can use this attribute to support the following use cases:
     </tr>
     <tr>
     <td valign="top">
-
-     *Header is Base64 Encoded* 
+    
+    *Header is Base64 Encoded* 
 
 
     
     </td>
     <td valign="top">
+    
+    Select this option to verify if the Signed Data encoded in Base64 is included in the header/property `SapCmsSignedData`.
 
-    Select this option to verify if the Signed Data encoded in Base64 is included in the header.
+    See also [Options to Handle Signed Data](../40-RemoteSystems/options-to-handle-signed-data-89f4220.md)
 
 
     
@@ -120,30 +132,32 @@ You can use this attribute to support the following use cases:
     </tr>
     <tr>
     <td valign="top">
-
-     *Body is Base64 Encoded* 
+    
+    *Body is Base64 Encoded* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option to verify if the Signed Data encoded in Base64 is included in the message body.
 
+    See also [Options to Handle Signed Data](../40-RemoteSystems/options-to-handle-signed-data-89f4220.md)
+
 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
-
-     *Public Key Alias* 
+    
+    *Public Key Alias* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter an alias name to select a public key and corresponding certificate from the keystore. You can enter `${header.headername}` or `${property.propertyname}` to read the name dynamically from a header or exchange property.
 
     > ### Note:  

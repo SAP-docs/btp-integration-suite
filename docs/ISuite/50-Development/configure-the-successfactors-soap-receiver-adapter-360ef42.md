@@ -7,9 +7,11 @@ The SuccessFactors SOAP receiver adapter connects a tenantSAP Cloud Integration 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -86,7 +88,7 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -102,7 +104,7 @@ URL of the SuccessFactors data center that you want to connect to. You can brows
 <tr>
 <td valign="top">
 
- *Address Suffix* 
+*Address Suffix* 
 
 
 
@@ -228,7 +230,7 @@ Select one of the following authentication methods:
 <tr>
 <td valign="top">
 
- *Credential Name* 
+*Credential Name* 
 
 
 
@@ -244,7 +246,7 @@ Credential name for your credentials that has been deployed on the tenant.
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -290,7 +292,7 @@ Description
 <tr>
 <td valign="top">
 
- *Call Type* 
+*Call Type* 
 
 
 
@@ -308,7 +310,7 @@ If you want to execute an ad hoc operation, select *Asynchronous/Adhoc Query* fr
 <tr>
 <td valign="top">
 
- *Operation* 
+*Operation* 
 
 
 
@@ -335,14 +337,14 @@ Operation that you want to perform on the entity that you're accessing on the Su
 <tr>
 <td valign="top">
 
- *Entity* 
+*Entity* 
 
 
 
 </td>
 <td valign="top">
 
-Entity that you want to access in the SuccessFactors system. For example, ***CompoundEmployee***, ***JobPosting***, or ***PerEmergencyContacts***.
+Entity that you want to access in the SuccessFactors system. For example, `CompoundEmployee`, `JobPosting`, or `PerEmergencyContacts`.
 
 If you want to select or change the entity, and modify the query, choose *Select* and follow the steps in [Modifying SuccessFactors SOAP Entity and Operation](modifying-successfactors-soap-entity-and-operation-a6ee603.md).
 
@@ -353,17 +355,17 @@ If you want to select or change the entity, and modify the query, choose *Select
 <tr>
 <td valign="top">
 
- *Query* 
+*Query* 
 
 
 
 </td>
 <td valign="top">
 
-Query that you want to construct. For example, from the entity ***JobPosting***, you only want to fetch a list of job postings that are open using the property ***postingStatus***.
+Query that you want to construct. For example, from the entity `JobPosting`, you only want to fetch a list of job postings that are open using the property `postingStatus`.
 
 > ### Note:  
-> The parameter ***$\{deltasync.maxDateFromLastRun\}*** supports a timestamp of 3 months.
+> The parameter `${deltasync.maxDateFromLastRun}` supports a timestamp of 3 months.
 
 
 
@@ -372,7 +374,7 @@ Query that you want to construct. For example, from the entity ***JobPosting***,
 <tr>
 <td valign="top">
 
- *Parameters* 
+*Parameters* 
 
 
 
@@ -388,7 +390,7 @@ Enter the parameters.
 <tr>
 <td valign="top">
 
- *Page Size* 
+*Page Size* 
 
 
 
@@ -404,7 +406,7 @@ Maximum number of records to be fetched in one page of response.
 <tr>
 <td valign="top">
 
- *Timeout* 
+*Timeout* 
 
 
 
@@ -420,7 +422,7 @@ Maximum time the system waits for a response.
 <tr>
 <td valign="top">
 
- *Retry on Connection Failure* 
+*Retry on Connection Failure* 
 
 
 
@@ -436,7 +438,7 @@ Select of you want to retry on connection failure.
 <tr>
 <td valign="top">
 
- *Process in Pages* 
+*Process in Pages* 
 
 
 
@@ -454,11 +456,11 @@ To use *Process in Pages*, you must use the adapter in a *Local Integration Proc
 
 -   Select *Expression Type* as *Non-XML*.
 
--   For *Condition Expression*, provide ***$\{property.SAP\_SuccessFactorsHasMoreRecords.<receiver.name\>\} contains 'true'***.
+-   For *Condition Expression*, provide `${property.SAP_SuccessFactorsHasMoreRecords.<receiver.name>} contains 'true'`.
 
-    In case you've also set a channel name, set the *Condition Expression* as ***$\{property.SAP\_SuccessFactorsHasMoreRecords.<receiver.name\>.<channel.name\>\} contains 'true'***.
+    In case you've also set a channel name, set the *Condition Expression* as `${property.SAP_SuccessFactorsHasMoreRecords.<receiver.name>.<channel.name>} contains 'true'`.
 
--   For *Maximum Number of Iterations*, provide ***999***.
+-   For *Maximum Number of Iterations*, provide `999`.
 
 
 

@@ -8,6 +8,8 @@ Download a keystore to your local disk.
 
 ## Context
 
+When you've downloaded the keystore file, you can, for example, open it with an external tool.
+
 
 
 ## Procedure

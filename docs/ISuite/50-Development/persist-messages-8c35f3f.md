@@ -52,7 +52,7 @@ There is also no option to access a message store entry during the execution of 
 > 
 > -   A message is stored for 30 days. After this time, the message is deleted automatically.
 
-The messages are persisted along with the Message ID, which you will need in order to retrieve the persisted entry via the Cloud Integration OData API: [Message Stores in SAP API Business Hub](https://api.sap.com/api/MessageStore/resource).
+The messages are persisted along with the Message ID, which you will need in order to retrieve the persisted entry via the Cloud Integration OData API: [Message Stores](https://api.sap.com/api/MessageStore/resource).
 
 
 
@@ -86,14 +86,14 @@ The messages are persisted along with the Message ID, which you will need in ord
     </tr>
     <tr>
     <td valign="top">
-
+    
     Step ID
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide a unique Step ID, which can be a descriptive name or a step number. For example, for a persistence step configured after a mapping step it could be `MessageStoredAfterMapping`.
 
     When analyzing the message store entry at a later point in time using the OData API, the Step ID of a dedicated Persist step is provided by the `MessageStoreId` element in the OData API response.
@@ -109,14 +109,14 @@ The messages are persisted along with the Message ID, which you will need in ord
     </tr>
     <tr>
     <td valign="top">
-
+    
     Encrypt Stored Message
 
 
     
     </td>
     <td valign="top">
-
+    
     To store the message encrypted, keep the checkbox selected.
 
     If selected, the stored message is encrypted with an encryption key that is unique for each tenant \(using AES and a key length of 128 bits\). The encryption key is generated automatically, stored in a different database than the encrypted data, and periodically regenerated \(to increase security\).

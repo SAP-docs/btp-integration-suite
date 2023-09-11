@@ -20,7 +20,7 @@ To save these efforts for you and to enable you to focus on the guideline, a gen
 
 Each integration flow for which a receiver component is modeled, calls the integration flow *Generic Receiver* through the ProcessDirect adapter \(always using the same address\). When called, the *Generic Receiver* integration flow creates a data store entry on your tenant with the following components:
 
- ![](images/Generic_Receiver_Flow_202cfa1.png) 
+![](images/Generic_Receiver_Flow_202cfa1.png)
 
 The *Generic Receiver* integration flow is called from a sender integration flow through the ProcessDirect adapter. The sender integration flow provides a header with the name *context*. This value represents the pattern or guideline that is covered by the calling integration flow. In some cases, the sender integration flow provides an additional header with the name *receiver*.
 
@@ -73,6 +73,8 @@ If the calling integration flow doesn’t provide any such value, a unique ident
 > Each integration package \(as listed under [Copying the Integration Package and Deploying the Integration Flows](copying-the-integration-package-and-deploying-the-integration-flows-2cb1d31.md)\) has its own *Generic Receiver* integration flow with an integration package-specific address.
 
 
+
+## Example
 
 The *Pattern Content Based Routing - Ignore If No Receiver* integration flow \(for pattern variant [Variant: Ignore](variant-ignore-4998bd8.md)\) sets the following header values:
 

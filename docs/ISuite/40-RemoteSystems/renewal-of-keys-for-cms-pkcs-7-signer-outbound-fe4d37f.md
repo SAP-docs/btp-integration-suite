@@ -8,7 +8,7 @@ The signer \(when configured to use the CMS/PKCS\#7 standard\) uses one or more 
 
 The following figure illustrates the communication path that is relevant for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_PKCS7_Outbound_Sign_26b58d0.png) 
+![](images/SAP_HCI_Security_Renewal_-_PKCS7_Outbound_Sign_26b58d0.png)
 
 The renewal process depends on whether the receiver system can verify signed data with different public keys at one point in time.
 

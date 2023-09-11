@@ -6,7 +6,7 @@ In this variant, the filter is used to remove all unnecessary data items from th
 
 The *Pattern Content Filter - Filter Step* integration flow illustrates this simple scenario.
 
- ![](images/Content_Filter_Filter_6b903bf.png) 
+![](images/Content_Filter_Filter_6b903bf.png)
 
 It contains 3 integration flow steps.
 
@@ -46,28 +46,28 @@ It contains 3 integration flow steps.
     </tr>
     <tr>
     <td valign="top">
-
+    
     deliveryNotes
 
 
     
     </td>
     <td valign="top">
-
+    
     XPath
 
 
     
     </td>
     <td valign="top">
-
+    
     org.w3c.dom.NodeList
 
 
     
     </td>
     <td valign="top">
-
+    
     ns0: PurchaseOrder/DeliveryNotes
 
 
@@ -76,28 +76,28 @@ It contains 3 integration flow steps.
     </tr>
     <tr>
     <td valign="top">
-
+    
     address
 
 
     
     </td>
     <td valign="top">
-
+    
     XPath
 
 
     
     </td>
     <td valign="top">
-
+    
     org.w3c.dom.NodeList
 
 
     
     </td>
     <td valign="top">
-
+    
     ns0:PurchaseOrder/Address
 
 
@@ -106,28 +106,28 @@ It contains 3 integration flow steps.
     </tr>
     <tr>
     <td valign="top">
-
+    
     orderDate
 
 
     
     </td>
     <td valign="top">
-
+    
     XPath
 
 
     
     </td>
     <td valign="top">
-
+    
     java.lang.String
 
 
     
     </td>
     <td valign="top">
-
+    
     string\(//@OrderDate\)
 
 
@@ -136,28 +136,28 @@ It contains 3 integration flow steps.
     </tr>
     <tr>
     <td valign="top">
-
+    
     orderNumber
 
 
     
     </td>
     <td valign="top">
-
+    
     XPath
 
 
     
     </td>
     <td valign="top">
-
+    
     java.lang.String
 
 
     
     </td>
     <td valign="top">
-
+    
     string\(//@PurchaseOrderNumber\)
 
 

@@ -8,7 +8,7 @@ The encryptor \(specified in the integration flow to use the CMS/PKCS\#7 standar
 
 The following figure illustrates the communication path that is relevant for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_PKCS7_Outbound_Encrypt_3c254d6.png) 
+![](images/SAP_HCI_Security_Renewal_-_PKCS7_Outbound_Encrypt_3c254d6.png)
 
 
 

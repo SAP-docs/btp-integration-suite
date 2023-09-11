@@ -5,7 +5,7 @@
 You can perform SMTP connectivity tests to check the settings required for configuring the receiver mail adapter.
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 **SMTP Connection Test**
 
@@ -30,7 +30,7 @@ Description
 <tr>
 <td valign="top">
 
- *Host* 
+*Host* 
 
 
 
@@ -39,7 +39,7 @@ Description
 
 Enter the host name of the receiver.
 
-The host name must **not** contain any path or schema \(for example, ***https://***\). In particular, you must **not** enter a URL as the host name.
+The host name must **not** contain any path or schema \(for example, `https://`\). In particular, you must **not** enter a URL as the host name.
 
 
 
@@ -48,7 +48,7 @@ The host name must **not** contain any path or schema \(for example, ***https://
 <tr>
 <td valign="top">
 
- *Port* 
+*Port* 
 
 
 
@@ -57,7 +57,7 @@ The host name must **not** contain any path or schema \(for example, ***https://
 
 Choose or enter the port that is to be used for outbound communication.
 
-Standard port is ***587 \(SMTP /STARTTLS\)*** or ***465 \(SMTPS\)*** depending on the network protocol.
+Standard port is `587 (SMTP /STARTTLS)` or `465 (SMTPS)` depending on the network protocol.
 
 
 
@@ -75,11 +75,11 @@ Standard port is ***587 \(SMTP /STARTTLS\)*** or ***465 \(SMTPS\)*** depending o
 
 Select a proxy type from the drop-down list:
 
--   ***Internet*** 
+-   `Internet` 
 
     or
 
--   ***On-Premise***
+-   `On-Premise`
 
 
 
@@ -95,7 +95,7 @@ Select a proxy type from the drop-down list:
 </td>
 <td valign="top">
 
-Only if ***On-Premise*** is selected as *Proxy Type*.
+Only if `On-Premise` is selected as *Proxy Type*.
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you 've defined for this instance, in the destination configuration on the cloud side
 
@@ -106,7 +106,7 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <tr>
 <td valign="top">
 
- *Protection* 
+*Protection* 
 
 
 
@@ -115,15 +115,15 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 
 Select the protection type:
 
--   ***Off*** \(none\)
+-   `Off` \(none\)
 
--   ***SMTPS*** 
+-   `SMTPS` 
 
     > ### Note:  
-    > The secure protocol is only available for the *Proxy Type* ***Internet***.
+    > The secure protocol is only available for the *Proxy Type* `Internet`.
 
--   ***STARTTLS Mandatory***
--   ***STARTTLS Optional***
+-   `STARTTLS Mandatory`
+-   `STARTTLS Optional`
 
 
 
@@ -132,7 +132,7 @@ Select the protection type:
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 
@@ -161,7 +161,7 @@ Choose which mechanism is to be used to authenticate against the server. Possibl
 <tr>
 <td valign="top">
 
- *Credential Name* 
+*Credential Name* 
 
 
 
@@ -179,14 +179,14 @@ Choose the name of a deployed credential to use for authentication.
 <tr>
 <td valign="top">
 
- *Validate Server Certificate* 
+*Validate Server Certificate* 
 
 
 
 </td>
 <td valign="top">
 
-Allows you to validate the server certificate \(only when *Protection* is not ***Off***\).
+Allows you to validate the server certificate \(only when *Protection* is not `Off`\).
 
 When you’ve selected the *Validate Server Certificate* option \(which is the default setting\), the following checks are executed:
 
@@ -204,7 +204,7 @@ If it wasn’t successful and there’s an error message, you can unselect the *
 <tr>
 <td valign="top">
 
- *Check Mail Addresses* 
+*Check Mail Addresses* 
 
 
 

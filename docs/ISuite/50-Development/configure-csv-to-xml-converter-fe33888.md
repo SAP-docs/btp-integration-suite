@@ -42,14 +42,14 @@ You’re editing the integration flow in the editor.
     </tr>
     <tr>
     <td valign="top">
-
+    
     XML Schema
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose *Browse*. Select the XML schema you want to use.
 
     Optionally, you can also upload the XML schema from your local file system by choosing *Upload from File System*.
@@ -60,14 +60,14 @@ You’re editing the integration flow in the editor.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Path to Target Element in XSD
 
 
     
     </td>
     <td valign="top">
-
+    
     XPath in the XML schema file where you want to place the content from CSV file.
 
 
@@ -76,14 +76,14 @@ You’re editing the integration flow in the editor.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Record Marker in CSV
 
 
     
     </td>
     <td valign="top">
-
+    
     The record in CSV file that indicates the entry that the converter has to consider as the starting point of the content.
 
     > ### Note:  
@@ -95,14 +95,14 @@ You’re editing the integration flow in the editor.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Field Separator in CSV
 
 
     
     </td>
     <td valign="top">
-
+    
     Select the character from dropdown list that is used as the field separator in CSV file.
 
     > ### Tip:  
@@ -114,14 +114,14 @@ You’re editing the integration flow in the editor.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Exclude First Line Header
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this checkbox if you want to use the header information from the first line of CSV file to map the column to the corresponding xsd attributes.
 
     > ### Note:  

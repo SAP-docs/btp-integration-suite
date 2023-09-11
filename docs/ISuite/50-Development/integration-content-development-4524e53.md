@@ -7,7 +7,7 @@ You can now use SAP Integration Suite to develop integration content with Messag
 **Related Information**  
 
 
-[Library of Custom Type Systems](library-of-custom-type-systems-884bb25.md "")
+[Custom Type Systems](custom-type-systems-884bb25.md "")
 
 [Message Implementation Guidelines \(MIGs\)](message-implementation-guidelines-migs-f9f2bab.md "")
 

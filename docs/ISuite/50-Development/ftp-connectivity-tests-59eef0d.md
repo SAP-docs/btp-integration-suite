@@ -27,7 +27,7 @@ Description
 <tr>
 <td valign="top">
 
- *Host* 
+*Host* 
 
 
 
@@ -36,7 +36,7 @@ Description
 
 Enter the host name of the receiver.
 
-The host name must **not** contain any path or schema \(for example, ***https://***\). In particular, you must **not** enter a URL as the host name.
+The host name must **not** contain any path or schema \(for example, `https://`\). In particular, you must **not** enter a URL as the host name.
 
 
 
@@ -45,7 +45,7 @@ The host name must **not** contain any path or schema \(for example, ***https://
 <tr>
 <td valign="top">
 
- *Port* 
+*Port* 
 
 
 
@@ -54,7 +54,7 @@ The host name must **not** contain any path or schema \(for example, ***https://
 
 Choose or enter the port that is to be used for outbound communication.
 
-Standard port is ***21 \(FTPES/FTP\)*** or ***990\(FTPS\)*** depending on the network protocol.
+Standard port is `21 (FTPES/FTP)` or `990(FTPS)` depending on the network protocol.
 
 
 
@@ -72,11 +72,11 @@ Standard port is ***21 \(FTPES/FTP\)*** or ***990\(FTPS\)*** depending on the ne
 
 Select a proxy type from the drop-down list:
 
--   ***Internet*** 
+-   `Internet` 
 
     or
 
--   ***On-Premise***
+-   `On-Premise`
 
 
 
@@ -92,7 +92,7 @@ Select a proxy type from the drop-down list:
 </td>
 <td valign="top">
 
-Only if ***On-Premise*** is selected as *Proxy Type*.
+Only if `On-Premise` is selected as *Proxy Type*.
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you 've defined for this instance, in the destination configuration on the cloud side
 
@@ -103,7 +103,7 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <tr>
 <td valign="top">
 
- *Encryption* 
+*Encryption* 
 
 
 
@@ -112,12 +112,12 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 
 Select the encryption type:
 
--   ***Explicit FTPS*** \(none\)
+-   `Explicit FTPS` \(none\)
 
--   ***Implicit FTPS*** 
--   ***Plain FTP*** 
+-   `Implicit FTPS` 
+-   `Plain FTP` 
 
-    If you select ***Plain FTP***, there is no valid server certificate.
+    If you select `Plain FTP`, there is no valid server certificate.
 
 
 
@@ -127,7 +127,7 @@ Select the encryption type:
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 
@@ -150,7 +150,7 @@ Choose which mechanism is to be used to authenticate against the server. Possibl
 <tr>
 <td valign="top">
 
- *Credential Name* 
+*Credential Name* 
 
 
 
@@ -168,7 +168,7 @@ Choose the name of a deployed credential to use for authentication.
 <tr>
 <td valign="top">
 
- *Valid Server Certificate* 
+*Valid Server Certificate* 
 
 
 
@@ -193,7 +193,7 @@ If it wasn’t successful and there’s an error message, you can unselect the *
 <tr>
 <td valign="top">
 
- *Check Directory Access* 
+*Check Directory Access* 
 
 
 

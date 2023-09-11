@@ -61,7 +61,7 @@ Open the related integration flow and configure the **SFTP receiver adapter** to
 
 [Blog: Dynamically Configure the SFTP Receiver Adapter](https://blogs.sap.com/2020/05/29/cloud-integration-dynamically-configure-the-sftp-receiver-adapter/)
 
-[How SFTP Works](how-sftp-works-fc8467b.md "")
+
 
 [Creating SFTP Keys](creating-sftp-keys-3485a75.md "You can set up reliable file transfer based on SSH File Transfer Protocol (SFTP). SFTP is an enhancement of the Secure Shell (SSH) network protocol.")
 

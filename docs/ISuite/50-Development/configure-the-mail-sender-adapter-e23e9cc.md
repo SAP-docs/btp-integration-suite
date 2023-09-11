@@ -7,16 +7,18 @@ You use the mail sender adapter to download e-mails from mailboxes using the IMA
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 If you have configured a mail sender adapter, message processing is performed as follows at runtime: According to the Scheduler settings in the mail sender adapter, the tenant sends requests to an e-mail server \(think of this as the sender system\). Nevertheless, the data flow is in the opposite direction, from the mail server to the tenant. In other words, the tenant reads files from the mail server \(a process that is also referred to as polling\).
 
- ![](images/Mail_Sender_0218387.png) 
+![](images/Mail_Sender_0218387.png)
 
 > ### Caution:  
 > To take the necessary precautions in order to avoid any unwanted behavior of your scenario \(in particular, security risks\) check out the following topic:
@@ -90,7 +92,7 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -112,7 +114,7 @@ Use one of the following open ports for external mail servers:
 
 Example address for Yahoo IMAP server:
 
-***imap.mail.yahoo.com:993***
+`imap.mail.yahoo.com:993`
 
 
 
@@ -159,7 +161,7 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <tr>
 <td valign="top">
 
- *Timeout \(in ms\)* 
+*Timeout \(in ms\)* 
 
 
 
@@ -175,7 +177,7 @@ Specifies the network timeout for the connection attempt to the server. The defa
 <tr>
 <td valign="top">
 
- *Protection* 
+*Protection* 
 
 
 
@@ -206,6 +208,41 @@ Specifies the method to use to establish an encrypted \(secure\) connection.
 -   *STARTTTLS Optional* 
 
     If the server supports STARTTLS, the client initiates encryption using TLS. If the server doesn’t support this option, client and server remain connected but communicate without encryption.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication* 
+
+
+
+</td>
+<td valign="top">
+
+Specifies which mechanism is used to protect user name and password combination.
+
+-   *Plain User Name/Password*
+
+    The user name and password are sent in plain text. Only use this option together with SSL or TLS, as otherwise an attacker could obtain the password.
+
+-   *Encrypted User/Password*
+
+    The user name and password are hashed before being sent to the server. This authentication mechanism \(CRAM-MD5 and DIGEST-MD5\) is secure even without encryption.
+
+-   *OAuth2 Authorization Code* \(only when transport protocol *IMAP4* has been selected when creating the channel\)
+
+    The authentification is done via an authorization server as an intermediary step. The client can exchange the OAuth2 Authorization Code for an access token. Your user credentials are never shared with the client.
+
+    See: [Deploying an OAuth2 Authorization Code](deploying-an-oauth2-authorization-code-081bfd7.md)
+
+    > ### Note:  
+    > -   *POP3*: OAuth is not available for POP3.
+    > -   *Personal Accounts:* Microsoft does not support OAuth for personal accounts for IMAP, POP3, and SMTP. This restriction does not exist for basic authentication.
 
 
 
@@ -295,7 +332,7 @@ You can select whether all or only unread mails are to be processed.
 <tr>
 <td valign="top">
 
- *Max. Messages per Poll* 
+*Max. Messages per Poll* 
 
 
 
@@ -311,7 +348,7 @@ Defines the maximal number of messages to be read from the e-mail server in one 
 <tr>
 <td valign="top">
 
- *Lock Timeout \(in min\)* 
+*Lock Timeout \(in min\)* 
 
 
 
@@ -331,7 +368,7 @@ It can happen that the lock is not released after a poll \(that is, in case of a
 <tr>
 <td valign="top">
 
- *Post-Processing* 
+*Post-Processing* 
 
 
 
@@ -375,7 +412,7 @@ Note that the configuration of the mail server can in certain cases override ded
 <tr>
 <td valign="top">
 
- *Archive Folder* \(only if for *Post-Processing* the option *Archive* or *Archive and Mark as Read* is selected\)
+*Archive Folder* \(only if for *Post-Processing* the option *Archive* or *Archive and Mark as Read* is selected\)
 
 
 
@@ -391,7 +428,7 @@ Specify name of folder where mail is to be archived.
 <tr>
 <td valign="top">
 
- *Remove Attachments* 
+*Remove Attachments* 
 
 
 
@@ -407,7 +444,7 @@ Select this option if attachments are to be removed from the mail before further
 <tr>
 <td valign="top">
 
- *Include Original Mail* 
+*Include Original Mail* 
 
 
 
@@ -424,12 +461,103 @@ To verify signed e-mails, you can include the original e-mail in the `SAP_MAIL_O
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Decode MIME Headers*
+
+\(selected by default\)
+
+
+
+</td>
+<td valign="top">
+
+Enable this setting to decode and unfold Multipurpose Internet Mail Extensions \(MIME\) headers that have been encoded during transport.
+
+MIME header fields are inserted by the e-mail server at the beginning of the data transmission. An example for a MIME header is `Content-Type` that indicates the media type of the transferred data.
+
+> ### Note:  
+> It is recommended to keep this option selected.
+
+Non-ASCII characters are not allowed in MIME messages. MIME `encoded-word` syntax is used to encode the non-ASCII characters.
+
+For more details, see [MIME \(Multipurpose Internet Mail Extensions\) Part Three: Message Header Extensions for Non-ASCII Text](https://www.rfc-editor.org/rfc/rfc2047) \(RFC-2047\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Automatically Disconnect*
+
+\(selected by default\)
+
+
+
+</td>
+<td valign="top">
+
+When selected, Cloud Integration disconnects from the e-mail server after each poll.
+
+
+
+</td>
+</tr>
 </table>
 
 > ### Caution:  
-> Attachments can get lost: If there are multiple attachments with the same name, only one of them will be used.
+> Mail attachments with the same attachment name aren't supported.
+> 
+> If there are duplicate attachments, the adapter generates unique attachment names by attaching a GUID to the original attachment name.
+> 
+> If the attachment name isn't set, the adapter generates a new attachment name by generating a GUID as attachment name.
+> 
+> Example 1:
+> 
+> Incoming mail contains the following attachments:
+> 
+> -   myAttachment.pdf
+> 
+> -   myAttachment.pdf
+> 
+> -   myAttachmentUnique.pdf
+> 
+> 
+> Result after mail sender:
+> 
+> -   myAttachment\_b3160958-c58c-436e-a4b9-5078e7c1cdf5.pdf
+> 
+> -   myAttachment\_250f0bb4-adda-4129-9635-f5f6f15e7ce3.pdf
+> 
+> -   myAttachmentUnique.pdf
+> 
+> 
+> Example 2:
+> 
+> Incoming mail contains the following attachments:
+> 
+> -   myAttachment
+> 
+> -   myAttachment
+> 
+> -   myAttachmentUnique
+> 
+> 
+> Result after mail sender:
+> 
+> -   myAttachment\_73e53699-ca6e-4ba1-88ce-b87336720141
+> 
+> -   myAttachment\_c25201a5-f7c6-4113-88bc-617289fd676c
+> 
+> -   myAttachmentUnique
 
 Select the *Scheduler* tab and provide values in the fields as follows.
+
+> ### Caution:  
+> How you specify the *Scheduler* settings depends on the constraints and requirements of your integration scenario. However, make sure to use the *Scheduler* parameters advisedly: Specify the scheduler settings in such a way that messages are not polled with too high frequency. Use intervals below 1 minute only if really required. Otherwise, there’s the risk to overload the mail server.
 
 **Scheduler**
 
@@ -640,7 +768,7 @@ Select the time zone that you want the scheduler to use as a reference for the d
 
 Example: With the configuration shown in the figure below, the integration flow are activated every week on Monday to poll e-mails on this day every hour, between 00:00 and 24:00 \(Greenwich Time Zone\).
 
- ![](images/Mail_Adapter_Scheduler_dbf7aee.png) 
+![](images/Mail_Adapter_Scheduler_dbf7aee.png)
 
 
 
@@ -654,6 +782,8 @@ Example: With the configuration shown in the figure below, the integration flow 
 > -   To access the mail attributes \(Subject, From, or To\), you have to set them manually as *Allowed Headers* on the *Runtime Configuration* tab. This adds them to an allowlist.
 > 
 > -   The mail sender adapter can decrypt encrypted mails and verifies the signature of a signed message. You can access the results of the verification via headers and Exchange properties. For more information, see [Headers and Exchange Properties Provided by the Integration Framework](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d0fcb0988f034e889f611c6e36d43ad5.html?table_hhg_tbq_f2b=SAP_MAIL).
+> 
+> -   The property *Include Original Mail* was changed to allow the saving of duplicate attachments.Before this change, duplicate attachments got lost.
 
 **Related Information**  
 

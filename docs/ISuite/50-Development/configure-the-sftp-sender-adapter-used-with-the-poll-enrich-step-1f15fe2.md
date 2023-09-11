@@ -7,9 +7,11 @@ The SFTP sender adapter connects an SAP Cloud Integration tenant to a remote sys
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -27,11 +29,11 @@ The SFTP sender adapter connects an SAP Cloud Integration tenant to a remote sys
 
 If you have configured a **sender** SFTP adapter, message processing is performed as follows at runtime: The tenant sends a request to an SFTP server \(think of this as the sender system\), but the data flow is in the opposite direction, from the SFTP server to the tenant. In other words, the tenant reads files from the SFTP server \(a process that is also referred to as *polling*\).
 
-   
+  
   
 **SFTP Sender Adapter: Tenant reads files from SFTP server**
 
- ![](images/SFTP_Sender_Adapter_-_Tenat_reads_from_server_2081741.png "SFTP Sender Adapter: Tenant reads files from SFTP server") 
+![](images/SFTP_Sender_Adapter_-_Tenat_reads_from_server_2081741.png "SFTP Sender Adapter: Tenant reads files from SFTP server")
 
 
 
@@ -111,14 +113,14 @@ Description
 <tr>
 <td valign="top">
 
- *Directory* 
+*Directory* 
 
 
 
 </td>
 <td valign="top">
 
-Relative path to read the file from a directory. Example: ***parentdirectory/childdirectory***
+Relative path to read the file from a directory. Example: `parentdirectory/childdirectory`
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
@@ -129,7 +131,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *File Name* 
+*File Name* 
 
 
 
@@ -176,14 +178,14 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
 </td>
 <td valign="top">
 
-Host name or IP address of the SFTP server and an optional port, for example, ***wdfd00213123:22***.
+Host name or IP address of the SFTP server and an optional port, for example, `wdfd00213123:22`.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
@@ -194,7 +196,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -241,7 +243,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *User Name* 
+*User Name* 
 
 
 
@@ -281,14 +283,14 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Timeout \(in ms\)* 
+*Timeout \(in ms\)* 
 
 
 
 </td>
 <td valign="top">
 
-Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted while establishing a connection or performing a read operation. Enter a minimum value bigger than ***0***, and smaller than or equal to the maximum value of ***299999***. The default ist set to ***10000***.
+Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted while establishing a connection or performing a read operation. Enter a minimum value bigger than `0`, and smaller than or equal to the maximum value of `299999`. The default ist set to `10000`.
 
 If the property `SAP_FtpTimeout` is defined, its value is used to specify this parameter at runtime.
 
@@ -299,14 +301,14 @@ If the property `SAP_FtpTimeout` is defined, its value is used to specify this p
 <tr>
 <td valign="top">
 
- *Maximum Reconnect Attempts* 
+*Maximum Reconnect Attempts* 
 
 
 
 </td>
 <td valign="top">
 
-Maximum number of attempts allowed to reconnect to the SFTP server before message processing starts. The default is set to ***3***. Enter ***0*** to disable this behavior.
+Maximum number of attempts allowed to reconnect to the SFTP server before message processing starts. The default is set to `3`. Enter `0` to disable this behavior.
 
 > ### Note:  
 > The setting is only relevant for establishing the initial connection to the server. If the server connection is interrupted during message processing, the connection will not be recovered. The message will be fetched with the next scheduled poll interval.
@@ -320,14 +322,14 @@ If the property `SAP_FtpMaxReconnect` is defined, its value is used to specify t
 <tr>
 <td valign="top">
 
- *Reconnect Delay \(in ms\)* 
+*Reconnect Delay \(in ms\)* 
 
 
 
 </td>
 <td valign="top">
 
-Time \(in milliseconds\) the system waits before attempting to reconnect to the SFTP server; default Value: ***1000***.
+Time \(in milliseconds\) the system waits before attempting to reconnect to the SFTP server; default Value: `1000`.
 
 If the property `SAP_FtpMaxReconDelay` is defined, its value is used to specify this parameter at runtime.
 
@@ -338,7 +340,7 @@ If the property `SAP_FtpMaxReconDelay` is defined, its value is used to specify 
 <tr>
 <td valign="top">
 
- *Automatically Disconnect* 
+*Automatically Disconnect* 
 
 
 
@@ -348,6 +350,24 @@ If the property `SAP_FtpMaxReconDelay` is defined, its value is used to specify 
 Disconnect from the SFTP server after each message processing.
 
 If the property `SAP_FtpDisconnect` is defined, its value is used to specify this parameter at runtime \(possible values: `true` and `false`\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Enable Support for Deprecated Algorithms* 
+
+
+
+</td>
+<td valign="top">
+
+Select to allow several deprecated key exchange, public key, host key, and encryption algorithms like the ‘diffie-hellman-group1-sha1’ key exchange algorithm or the ‘ssh-rsa’ host key and public key algorithm.
+
+For more information on compatibility and support, see SAP KBA [3079510](https://me.sap.com/notes/3079510).
 
 
 
@@ -380,7 +400,7 @@ Description
 <tr>
 <td valign="top">
 
- *Read Lock Strategy* 
+*Read Lock Strategy* 
 
 
 
@@ -403,7 +423,7 @@ Prevents files that are in the process of being written from being read from the
 <tr>
 <td valign="top">
 
- *Change Directories Stepwise* 
+*Change Directories Stepwise* 
 
 
 
@@ -421,7 +441,7 @@ If the property `SAP_FtpStepwise` is defined, its value is used to specify this 
 <tr>
 <td valign="top">
 
- *Include Subdirectories* 
+*Include Subdirectories* 
 
 
 
@@ -455,7 +475,7 @@ If the property `SAP_FtpFastExistsCheck` is defined, its value is used to specif
 <tr>
 <td valign="top">
 
- *Post-Processing* 
+*Post-Processing* 
 
 
 
@@ -510,7 +530,7 @@ You can select one of the following options:
 
 Specifies the target directory where to move the file.
 
-Make sure that you specify a relative file path for the target directory. Note that the specified file path is defined relative to the directory specified with the *Directory* parameter. If you specify an absolute file path, it may occur that the file cannot be stored correctly at runtime. You can also specify the target directory dynamically, for example, using the timestamp of the message. The following example uses backup folders with timestamps and replaces the file extension with ***bak: backup/$\{date:now:yyyyMMdd\}/$\{file:name.noext\}.bak***.
+Make sure that you specify a relative file path for the target directory. Note that the specified file path is defined relative to the directory specified with the *Directory* parameter. If you specify an absolute file path, it may occur that the file cannot be stored correctly at runtime. You can also specify the target directory dynamically, for example, using the timestamp of the message. The following example uses backup folders with timestamps and replaces the file extension with `bak: backup/${date:now:yyyyMMdd}/${file:name.noext}.bak`.
 
 
 

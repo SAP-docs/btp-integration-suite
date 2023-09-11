@@ -8,6 +8,8 @@ The following examples apply to XML-to-JSON conversion:
 
 
 
+## Example
+
 The following example shows the transformation from *XML to JSON* \(option *Suppress JSON Root Element* is selected\).
 
 Input XML Message

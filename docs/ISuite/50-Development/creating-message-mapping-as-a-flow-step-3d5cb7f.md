@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Creating Message Mapping As A Flow Step
+# Creating Message Mapping as a Flow Step
 
 
 
@@ -10,18 +10,144 @@
 
 ## Prerequisites
 
-You have added a message mapping step in the integration flow and defined the message paths.
+You've added a message mapping step in the integration flow and defined the message paths.
 
 
 
 ## Context
 
 > ### Remember:  
-> There are currently certain limitations when working in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> There are currently certain limitations when working in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 In this procedure, you understand the different ways of configuring a message mapping step and the associated mapping definition \(mmap\) file.
 
-After adding a message mapping step in the integration flow, you must create a mapping definition or assign a mmap file that contains the actual mapping details.
+The supported file types for source and target messages are:
+
+-   XML Schema Definitions \(XSD\)
+
+-   OData V2/V4 metadata files with *.edmx* or *.xml* extensions
+
+-   WSDL
+
+    > ### Note:  
+    > -   External reference in WSDL and schema is now supported in Message Mapping with resources. The namespaces on the external references are not considered in mapping. For more information, see: [SAP Note 2888381](https://launchpad.support.sap.com/#/notes/2888381).
+    > 
+    > -   Reference to the remote resources isn't supported.
+    > 
+    >     > ### Sample Code:  
+    >     > ```
+    >     > <?xml version="1.0" encoding="UTF-8"?>
+    >     > <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:bs="http://B.com" xmlns:ds="http://D.com" xmlns:emp="http://Employee.com" xmlns:p1="http://demoDisplayQueue" name="EmployeeDetails" targetNamespace="http://com.sap.copy.com">
+    >     >    <wsdl:documentation />
+    >     >    <wsdl:types>
+    >     >       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://com.sap.copy.com" targetNamespace="http://com.sap.copy.com">
+    >     >          <xsd:import namespace="http://Employee.com" schemaLocation="../../empWsdl/Employee.wsdl" />
+    >     >          <xsd:import namespace="http://B.com" schemaLocation="./mySchema/B.xsd" />
+    >     >          <xsd:import namespace="http://D.com" schemaLocation="mySchema/D.xsd" />
+    >     >          <xsd:complexType name="Employee">
+    >     >             <xsd:annotation>
+    >     >                <xsd:appinfo source="http://sap.com/xi/VersionID">abaed5bfea7111e4c82400000cbe4342</xsd:appinfo>
+    >     >             </xsd:annotation>
+    >     >             <xsd:sequence>
+    >     >                <xsd:element maxOccurs="unbounded" minOccurs="1" name="EmpAddress" type="Address" />
+    >     >                <xsd:element name="Id" type="emp:Employee" />
+    >     >                <xsd:element name="Name" type="bs:B" />
+    >     >                <xsd:element name="Dept" type="ds:D" />
+    >     >             </xsd:sequence>
+    >     >          </xsd:complexType>
+    >     >          <xsd:complexType name="Address">
+    >     >             <xsd:sequence>
+    >     >                <xsd:element maxOccurs="unbounded" minOccurs="1" name="Line" type="LineText" />
+    >     >             </xsd:sequence>
+    >     >             <xsd:attribute name="shelly" type="xsd:string" use="optional" />
+    >     >          </xsd:complexType>
+    >     >          <xsd:complexType name="LineText">
+    >     >             <xsd:sequence>
+    >     >                <!-- <xsd:element name="Text" type ="p2:Source_Person" />-->
+    >     >             </xsd:sequence>
+    >     >          </xsd:complexType>
+    >     >          <xsd:element name="EmployeeDetails" type="Employee" />
+    >     >       </xsd:schema>
+    >     >    </wsdl:types>
+    >     > </wsdl:definitions>
+    >     > ```
+
+-   Swagger/OpenAPI Spec JSON file
+
+    > ### Note:  
+    > Before you upload the file, validate the schema of your Swagger/OpenAPI Spec JSON file using the [Swagger Editor](https://editor.swagger.io/).
+    > 
+    > JSON files based on Open API Spec versions 2.0 and 3.0 are supported.
+    > 
+    > -   The following message structures aren't supported while using Swagger/OpenAPI Spec JSON file:
+    > 
+    >     -   Object elements with no properties or with only additional properties
+    > 
+    >         > ### Sample Code:  
+    >         > ```
+    >         > "innererror": {
+    >         > 			"description": "Object with empty properties"
+    >         > 			"type": "object",
+    >         > 			"properties": {}
+    >         > 		}
+    >         > ```
+    >         > 
+    >         > > ### Sample Code:  
+    >         > > ```
+    >         > > "message": {
+    >         > > 			"description": "Object with no properties"
+    >         > > 			"type": "object"
+    >         > > 		}
+    >         > > ```
+    >         > 
+    >         > > ### Sample Code:  
+    >         > > ```
+    >         > > "errorObj": {
+    >         > > 			"description": "Object with only additional properties"
+    >         > > 			"type": "object",
+    >         > > 			"additionalProperties": {
+    >         > > 				"type": "object"
+    >         > > 			}
+    >         > > 		}
+    >         > > ```
+    > 
+    >     -   External references
+    > 
+    >     -   Composed schema
+    > 
+    >         > ### Sample Code:  
+    >         > ```
+    >         > "nodeName": {
+    >         > 			"title": "Node Name"
+    >         > 			"type": "object",
+    >         > 			"anyOf": [...]
+    >         > ```
+    >         > 
+    >         > > ### Sample Code:  
+    >         > > ```
+    >         > > "nodeName": {
+    >         > > 			"title": "Node Name"
+    >         > > 			"type": "object",
+    >         > > 			"allOf": [...]
+    >         > > 			}
+    >         > > 
+    >         > > ```
+    >         > 
+    >         > > ### Sample Code:  
+    >         > > ```
+    >         > > "nodeName": {
+    >         > > 			"title": "Node Name"
+    >         > > 			"type": "object",
+    >         > > 			"other": [...]
+    >         > > 			}
+    >         > > 
+    >         > > ```
+    > 
+    >     -   For OpenAPI Spec JSON, you can't use the *Duplicate Subtree* action for a node that is of the type array.
+    > 
+    > 
+    >     Read the [blog](https://blogs.sap.com/2020/09/16/sap-cloud-integration-swagger-openapi-spec-json-in-message-mapping/) to know more about Swagger/OpenAPI Spec JSON in message mapping.
+
 
 
 
@@ -29,18 +155,22 @@ After adding a message mapping step in the integration flow, you must create a m
 
 ## Procedure
 
-1.  If you want to assign an existing mapping definition \(mmap file\) which is fixed, do the following substeps:
+1.  Add a *Message Mapping* flow step to your integration flow.
 
-    1.  In the property sheet of the message mapping step, choose the *Processing* tab.
+2.  If you want to assign an existing mapping definition \(.mmap file\) which is fixed, do the following substeps:
 
-    2.  For the *Reference Type*, choose *Static*.
+    1.  From [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md), add or refer existing mapping resources to your integration flow.
 
-    3.  Choose *Select*. Based on your requirement, select a local or referenced message mapping file. For more information, see [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md).
+    2.  In the property sheet of the message mapping step, choose the *Processing* tab.
+
+    3.  For the *Reference Type*, choose *Static*.
+
+    4.  Choose *Select*. Based on your requirement, select a local or referenced message mapping file.
 
 
-2.  If you want to dynamically assign existing mapping definitions, do the following substeps:
+3.  If you want to dynamically assign existing mapping definitions, do the following substeps:
 
-    As a prerequisite, complete [Developing Message Mapping As An Artifact](developing-message-mapping-as-an-artifact-1d52a7b.md).
+    As a prerequisite, complete [Creating Message Mapping as an Artifact](creating-message-mapping-as-an-artifact-1d52a7b.md).
 
     1.  In the property sheet of the message mapping step, choose the *Processing* tab.
 
@@ -50,161 +180,43 @@ After adding a message mapping step in the integration flow, you must create a m
 
         A reference to the message mapping artifact must be contained either in a header/property or via Partner Directory.
 
-        For a header or property, the accepted format is "*<$\{header.header\_name\}\>*", or "*<$\{property.property\_name\}\>*", where the *<header\_name\>* or *<property\_name\>* is defined in the message exchange. Further, the *<header\_name\>* or *<property\_name\>* must contain the identifier \(ID\) of the message mapping artifact in the form "***ref:<message\_mapping\_ID\>***". You can fetch the ID of the message mapping artifact by viewing its metadata.
+        For a header or property, the accepted format is "*<$\{header.header\_name\}\>*", or "*<$\{property.property\_name\}\>*", where the *<header\_name\>* or *<property\_name\>* is defined in the message exchange. Further, the *<header\_name\>* or *<property\_name\>* must contain the identifier \(ID\) of the message mapping artifact in the form "`ref:<message_mapping_ID>`". You can fetch the ID of the message mapping artifact by viewing its metadata.
 
-        For partner directory, the accepted format is "*<pd:<Partner ID\>:<Parameter ID\>*", where the parameter ID refers to the identifier associated to the message mapping artifact ID in the form "***ref:<message\_mapping\_ID\>***".
+        For partner directory, the accepted format is "*<pd:<Partner ID\>:<Parameter ID\>*", where the parameter ID refers to the identifier associated to the message mapping artifact ID in the form "`ref:<message_mapping_ID>`".
 
 
-3.  If you want to create a new mapping definition \(mmap file\), perform the following substeps:
+4.  If you want to create a new mapping definition \(mmap file\), perform the following substeps:
 
     1.  Select the mapping step and choose <span class="SAP-icons"></span> \(Create\).
 
     2.  Specify a name for the mmap file and choose *Create*.
 
-    3.  Add source and target messages.
-
-        The supported file types are:
-
-        -   XML Schema Definitions \(XSD\)
-        -   OData V2/V4 metadata files with *.edmx* or *.xml* extensions
-
-        -   WSDL
-
-        -   Swagger/OpenAPI Spec JSON file
-
-            > ### Note:  
-            > -   External reference in WSDL and schema are now supported in Message Mapping with resources. The namesapces on the external references are not considered in mapping. For more information, see: [SAP Note 2888381](https://launchpad.support.sap.com/#/notes/2888381).
-            > 
-            > -   Reference to the remote resources are not supported.
-            > 
-            >     > ### Sample Code:  
-            >     > ```
-            >     > <?xml version="1.0" encoding="UTF-8"?>
-            >     > <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:bs="http://B.com" xmlns:ds="http://D.com" xmlns:emp="http://Employee.com" xmlns:p1="http://demoDisplayQueue" name="EmployeeDetails" targetNamespace="http://com.sap.copy.com">
-            >     >    <wsdl:documentation />
-            >     >    <wsdl:types>
-            >     >       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://com.sap.copy.com" targetNamespace="http://com.sap.copy.com">
-            >     >          <xsd:import namespace="http://Employee.com" schemaLocation="../../empWsdl/Employee.wsdl" />
-            >     >          <xsd:import namespace="http://B.com" schemaLocation="./mySchema/B.xsd" />
-            >     >          <xsd:import namespace="http://D.com" schemaLocation="mySchema/D.xsd" />
-            >     >          <xsd:complexType name="Employee">
-            >     >             <xsd:annotation>
-            >     >                <xsd:appinfo source="http://sap.com/xi/VersionID">abaed5bfea7111e4c82400000cbe4342</xsd:appinfo>
-            >     >             </xsd:annotation>
-            >     >             <xsd:sequence>
-            >     >                <xsd:element maxOccurs="unbounded" minOccurs="1" name="EmpAddress" type="Address" />
-            >     >                <xsd:element name="Id" type="emp:Employee" />
-            >     >                <xsd:element name="Name" type="bs:B" />
-            >     >                <xsd:element name="Dept" type="ds:D" />
-            >     >             </xsd:sequence>
-            >     >          </xsd:complexType>
-            >     >          <xsd:complexType name="Address">
-            >     >             <xsd:sequence>
-            >     >                <xsd:element maxOccurs="unbounded" minOccurs="1" name="Line" type="LineText" />
-            >     >             </xsd:sequence>
-            >     >             <xsd:attribute name="shelly" type="xsd:string" use="optional" />
-            >     >          </xsd:complexType>
-            >     >          <xsd:complexType name="LineText">
-            >     >             <xsd:sequence>
-            >     >                <!-- <xsd:element name="Text" type ="p2:Source_Person" />-->
-            >     >             </xsd:sequence>
-            >     >          </xsd:complexType>
-            >     >          <xsd:element name="EmployeeDetails" type="Employee" />
-            >     >       </xsd:schema>
-            >     >    </wsdl:types>
-            >     > </wsdl:definitions>
-            >     > ```
-            > 
-            > -   The following message structures are not supported while using Swagger/OpenAPI Spec JSON file:
-            > 
-            >     -   Object elements with no properties or with only additionalproperties
-            > 
-            >         > ### Sample Code:  
-            >         > ```
-            >         > "innererror": {
-            >         > 			"description": "Object with empty properties"
-            >         > 			"type": "object",
-            >         > 			"properties": {}
-            >         > 		}
-            >         > ```
-            >         > 
-            >         > > ### Sample Code:  
-            >         > > ```
-            >         > > "message": {
-            >         > > 			"description": "Object with no properties"
-            >         > > 			"type": "object"
-            >         > > 		}
-            >         > > ```
-            >         > 
-            >         > > ### Sample Code:  
-            >         > > ```
-            >         > > "errorObj": {
-            >         > > 			"description": "Object with only additional properties"
-            >         > > 			"type": "object",
-            >         > > 			"additionalProperties": {
-            >         > > 				"type": "object"
-            >         > > 			}
-            >         > > 		}
-            >         > > ```
-            > 
-            >     -   External references
-            > 
-            >     -   Composed schema
-            > 
-            >         > ### Sample Code:  
-            >         > ```
-            >         > "nodeName": {
-            >         > 			"title": "Node Name"
-            >         > 			"type": "object",
-            >         > 			"anyOf": [...]
-            >         > ```
-            >         > 
-            >         > > ### Sample Code:  
-            >         > > ```
-            >         > > "nodeName": {
-            >         > > 			"title": "Node Name"
-            >         > > 			"type": "object",
-            >         > > 			"allOf": [...]
-            >         > > 			}
-            >         > > 
-            >         > > ```
-            >         > 
-            >         > > ### Sample Code:  
-            >         > > ```
-            >         > > "nodeName": {
-            >         > > 			"title": "Node Name"
-            >         > > 			"type": "object",
-            >         > > 			"other": [...]
-            >         > > 			}
-            >         > > 
-            >         > > ```
-            > 
-            >     -   For OpenAPI Spec JSON, you can't use the *Duplicate Subtree* action for a node that is of the type array.
-            > 
-            > 
-            >     Read this [blog](https://blogs.sap.com/2020/09/16/sap-cloud-integration-swagger-openapi-spec-json-in-message-mapping/) to know more about Swagger/OpenAPI Spec JSON in message mapping.
-
+    3.  Add source and target messages. If you want to consume Message Types, see [Consuming Message Types in Message Mapping](consuming-message-types-in-message-mapping-34f6345.md).
 
     4.  Drag fields from the source to the required field in the target to create a mapping.
 
     5.  If you want to perform an operation, add the required function in the *Mapping Expression* screen area.
 
         > ### Note:  
-        > While modelling message mapping, if you have nodes whose outputs are not connected in the mapping expression then on saving the mapping, these nodes get removed automatically.
+        > To know more about the available built-in functions and their explanations, see: [Standard Functions](https://help.sap.com/docs/SAP_NETWEAVER_750/0b9668e854374d8fa3fc8ec327ff3693/4bfbd16f66d33de4e10000000a42189e.html).
+        > 
+        > While modeling message mapping, if you've nodes whose outputs aren't connected in the mapping expression then on saving the mapping, these nodes get removed automatically.
 
 
-4.  You can create your own custom mapping function. Here's how:
+5.  You can create your own custom mapping function. Here's how:
 
     1.  In the *Mapping Expression* screen area, choose <span class="SAP-icons"></span> \(Create\) .
 
-    2.  Enter the name of the script, which will be the name of the custom function and choose *OK*.
+    2.  Enter the name of the script, which is the name of the custom function and choose *OK*.
 
-        The script editor will be launched.
+        The script editor is launched.
 
     3.  Enter the script for the custom function you want to create and choose *OK*
 
+    4.  To assign a function library object as an user-defined function, see: [Consuming Function Library in Message Mapping](consuming-function-library-in-message-mapping-d4dcb4a.md).
 
-5.  Configure the settings of the message mapping to handle basic data types in the target JSON schema.
+
+6.  Configure the settings of the message mapping to handle basic data types in the target JSON schema.
 
     1.  Choose the <span class="SAP-icons"></span> \(Settings\) icon.
 
@@ -222,7 +234,7 @@ After adding a message mapping step in the integration flow, you must create a m
 
 ## Results
 
-The set-up would look similar to this screenshot after following the steps mentioned above.
+The setup would look similar to this screenshot after following the steps mentioned.
 
 The highlighted sections briefly explain the various features and behaviors of elements in the mapping viewer.
 
@@ -288,7 +300,7 @@ Represents the target structure.
 </td>
 <td valign="top">
 
-If any of the entities \(source or target\) are not visible, a dotted line indicates the calculated position of the invisible entity.
+If any of the entities \(source or target\) not visible, a dotted line indicates the calculated position of the invisible entity.
 
 
 
@@ -354,7 +366,7 @@ This section represents the functions of the selected mapping.
 
 The Search option enables you to search for a particular entity within a source or target structure.
 
-The search result highlights the nodes in the structure that match the search text that are in the visible area, and also displays the number of occurrences of that particular entity within the structure.
+The search result highlights the nodes in the structure that match the search text that is in the visible area, and also displays the number of occurrences of that particular entity within the structure.
 
 You can view the other occurrences by clicking the <span class="SAP-icons"></span> \(Up\) or <span class="SAP-icons"></span> \(Down\) button.
 
@@ -379,7 +391,7 @@ You can view the other occurrences by clicking the <span class="SAP-icons"></
 -   <span class="SAP-icons"></span>: This button enables you to export your mapping as a spreadsheet.
 
     > ### Note:  
-    > Order of mappings in the spreadsheet is not guaranteed as seen in the mapping editor.
+    > Order of mappings in the spreadsheet isn't guaranteed as seen in the mapping editor.
 
 -   <span class="SAP-icons"></span>: This button expands the entire source or target structure.
 
@@ -422,7 +434,7 @@ You can also create a new script <span class="SAP-icons"></span> or assign an
 
 -   <span class="SAP-icons"></span>: Copies the chain of elements in the expression without the target element.
 
--   <span class="SAP-icons"></span>  : Use it to paste the copied expression in the editor.
+-   <span class="SAP-icons"></span>: Use it to paste the copied expression in the editor.
 
 
 
@@ -430,7 +442,4 @@ You can also create a new script <span class="SAP-icons"></span> or assign an
 </td>
 </tr>
 </table>
-
-> ### Note:  
-> You can also upload message mapping file from other integration flow. To know more about adding resources, see : [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md)
 

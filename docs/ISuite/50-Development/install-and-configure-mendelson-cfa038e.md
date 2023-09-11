@@ -22,7 +22,7 @@ To configure the keys for encryption and signing, perform the following steps:
 
     To do that, open Mendelson and choose *File* \> *Certificates* \> *Sign/Crypt* to display the available keys.
 
-    Select 1 key and rename it to ***CPIGuidelinesSenderKey***.
+    Select 1 key and rename it to `CPIGuidelinesSenderKey`.
 
     ![](images/Guidelines_Mendelson_Keystore_Partner_6_3c80f56.png)
 
@@ -53,7 +53,7 @@ To configure the keys for encryption and signing, perform the following steps:
 
     4.  Choose *Import certificate* and browse for the `.cer` file exported from the Cloud Integration keystore.
 
-    5.  Rename the alias of the certificate to ***CPIGuidelinesReceiverCert***.
+    5.  Rename the alias of the certificate to `CPIGuidelinesReceiverCert`.
 
 
 
@@ -65,7 +65,7 @@ Configure the local sender partner.
 
     -   Select the option *Local station*.
 
-    -   For *Name* and for *AS2 id*, enter ***CPIGuidelinesSenderPartner***.
+    -   For *Name* and for *AS2 id*, enter `CPIGuidelinesSenderPartner`.
 
 
     ![](images/Guidelines_Mendelson_Sender_Partner_1_277368e.png)
@@ -87,7 +87,7 @@ Configure the receiver partner.
 
     -   Keep option *Local station* deselected.
 
-    -   For *Name* and for *AS2 id*, enter ***CPIGuidelinesReceiverPartner***.
+    -   For *Name* and for *AS2 id*, enter `CPIGuidelinesReceiverPartner`.
 
 
     ![](images/Guidelines_Mendelson_Receiver_Partner_3_16cb977.png)
@@ -100,7 +100,7 @@ Configure the receiver partner.
 
     As *Receipt URL*, enter the endpoint address of the deployed integration flow *Partner Directory - AS2 Dynamic Keys*.
 
-    As *Payload subject* enter ***Partner Directory – AS2 Dynamic Keys***.
+    As *Payload subject* enter `Partner Directory – AS2 Dynamic Keys`.
 
     ![](images/Guidelines_Mendelson_Receiver_Partner_5_74f77f9.png)
 

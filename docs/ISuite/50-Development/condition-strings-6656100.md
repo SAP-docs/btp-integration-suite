@@ -10,6 +10,8 @@ Conditions can be chained. For example, the following condition evaluates to tru
 
 
 
+## Example
+
 `<Condition>(proxy.pathsuffix MatchesPath "/statuses/**") and (request.verb = "GET")</Condition>`
 
 

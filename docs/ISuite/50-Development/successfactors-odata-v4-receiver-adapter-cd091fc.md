@@ -78,7 +78,7 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -94,7 +94,7 @@ URL of the SuccessFactors data center that you want to connect to.
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 
@@ -113,7 +113,7 @@ URL of the SuccessFactors data center that you want to connect to.
 <tr>
 <td valign="top">
 
- *Credential Name* 
+*Credential Name* 
 
 
 
@@ -129,7 +129,7 @@ Name of the deployed security artifact.
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -139,6 +139,22 @@ Name of the deployed security artifact.
 Type of proxy you want to use to connect to the SuccessFactors system.
 
 Currently, you can only choose *Internet* as the proxy type.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Reuse Connection*
+
+
+
+</td>
+<td valign="top">
+
+The option is enabled by default. This option enables the reuse of connection objects from the internal connection pool which in turn improves the network turnaround time for multiple communications to a same end point.
 
 
 
@@ -171,7 +187,7 @@ Description
 <tr>
 <td valign="top">
 
- *Operation* 
+*Operation* 
 
 
 
@@ -194,7 +210,7 @@ Select the operation that you want to perform from the dropdown list.
 <tr>
 <td valign="top">
 
- *Resource Path* 
+*Resource Path* 
 
 
 

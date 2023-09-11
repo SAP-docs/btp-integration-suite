@@ -16,28 +16,32 @@ Download all the artifacts of a package in one go, using which you can create a 
 
 1.  Open your integration package and choose *Edit*.
 
-2.  Download all artifacts
-3.  Choose the *Artifacts* tab.
 
-4.  Select the checkbox besides the column header *Name* to select all the integration artifacts in the package. Alternatively, you can select only the artifacts that you would like to download.
+Download all artifacts
 
-5.  Choose *Actions* \> *Download*.
+2.  Choose the *Artifacts* tab.
+
+3.  Select the checkbox besides the column header *Name* to select all the integration artifacts in the package. Alternatively, you can select only the artifacts that you would like to download.
+
+4.  Choose *Actions* \> *Download*.
 
     A .zip file with filename same as the integration package's name is ready for download.
 
-6.  Save the file to your choice of destination.
+5.  Save the file to your choice of destination.
 
     > ### Remember:  
     > The folder structure of the mass download file is different from the structure of an individually downloaded artifact. In a mass download, the .zip file contains individual folders for each artifact. In turn, each folder contains the resources of an artifact. But, in an individual download, the downloaded .zip file directly contains the resources of the artifact.
     > 
     > This information is critical to know because when you attempt to upload the downloaded resources in another package, you can't directly upload the mass-downloaded .zip file.
 
-7.  To upload the downloaded artifacts in another package or tenant, continue with the below steps.
-8.  Choose *Design* \> *Integrations*.
 
-9.  Choose *Import*.
+To upload the downloaded artifacts in another package or tenant, continue with the below steps.
 
-10. Browse and select a .zip file.
+6.  Choose *Design* \> *Integrations*.
+
+7.  Choose *Import*.
+
+8.  Browse and select a .zip file.
 
     > ### Remember:  
     > Upload a .zip file that contains multiple .zip files for each artifact. Each .zip file of the artifact must contain the resources directly in it and not within a folder.

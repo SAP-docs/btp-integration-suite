@@ -1,6 +1,6 @@
 <!-- loio187a8e8c16e44fc1bae2bfee793ab7b9 -->
 
-# JDBC for SAP HANA Cloud
+# JDBC for SAP HANA \(Cloud\)
 
 JDBC receiver adapter supports SAP HANA cloud database provided by SAP.
 
@@ -82,7 +82,7 @@ JDBC URL Example
 </td>
 <td valign="top">
 
-`jdbc:sap://myhana:30013/?databaseName=myhanadb&encrypt=true&validateCertificate=true`
+`jdbc:sap://myhana:30013/?databaseName=myhanadb&encrypt=true&validateCertificate=trueBefore connecting to this database, you must add the Data Source. For more details, see`
 
 
 
@@ -90,5 +90,8 @@ JDBC URL Example
 </tr>
 </table>
 
-Before connecting to this database, you must add the Data Source. For more details, see [Managing JDBC Data Sources](managing-jdbc-data-sources-4c873fa.md).
+[Managing JDBC Data Sources](managing-jdbc-data-sources-4c873fa.md).
+
+> ### Note:  
+> This documentation doesn’t provide further advice on how to configure the connected database system. Check out the corresponding documentation for more details.
 

@@ -41,7 +41,7 @@ GET
 </td>
 <td valign="top">
 
- `​/JmsBrokers('Broker1')?$expand=QueueStates` 
+`​/JmsBrokers('Broker1')?$expand=QueueStates` 
 
 
 
@@ -64,7 +64,7 @@ GET
 </td>
 <td valign="top">
 
- `​/JmsBrokers('Broker1')?$expand=InactiveQueues` 
+`​/JmsBrokers('Broker1')?$expand=InactiveQueues` 
 
 
 

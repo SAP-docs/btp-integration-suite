@@ -7,9 +7,11 @@ This adapter enables an SAP BTP tenant to send a tax document to the ELSTER serv
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -113,7 +115,7 @@ Description
 <tr>
 <td valign="top">
 
- *Operation* 
+*Operation* 
 
 
 
@@ -146,7 +148,7 @@ The following operations are supported:
 <tr>
 <td valign="top">
 
- *Data Type* 
+*Data Type* 
 
 
 
@@ -155,9 +157,9 @@ The following operations are supported:
 
 Indicates the type of the document provided as payload. Information about the type is required by the ELSTER server to determine the method to be applied by the tax authority.
 
-For example, if the value ***LStA\_2019*** is specified, the method *ElsterAnmeldung* can be executed by the server for the year 2019. Other examples are: ***DUeAbmelden***, ***DUeAnmelden***, ***UStVA\_2018*** or ***UStVA\_2019***.
+For example, if the value `LStA_2019` is specified, the method *ElsterAnmeldung* can be executed by the server for the year 2019. Other examples are: `DUeAbmelden`, `DUeAnmelden`, `UStVA_2018` or `UStVA_2019`.
 
-You can also dynamically configure this parameter with an expression such like ***$\{header.datatype\}*** or ***$\{property.datatype\}*** to retrieve the data format dynamically at runtime.
+You can also dynamically configure this parameter with an expression such like `${header.datatype}` or `${property.datatype}` to retrieve the data format dynamically at runtime.
 
 
 
@@ -166,7 +168,7 @@ You can also dynamically configure this parameter with an expression such like *
 <tr>
 <td valign="top">
 
- *Private Key Alias for Encryption* 
+*Private Key Alias for Encryption* 
 
 
 
@@ -177,7 +179,7 @@ Alias for the key to be used for message encryption
 
 Note that X.509 key pair needs to be uploaded to the tenant keystore to set up this scenario.
 
-You can also dynamically configure this parameter with an expression such like ***$\{header.encryptionkey\}*** or ***$\{property.encryptionkey\}*** to dynamically retrieve its value at runtime.
+You can also dynamically configure this parameter with an expression such like `${header.encryptionkey}` or `${property.encryptionkey}` to dynamically retrieve its value at runtime.
 
 
 
@@ -186,7 +188,7 @@ You can also dynamically configure this parameter with an expression such like *
 <tr>
 <td valign="top">
 
- *Private Key Alias for Signing* 
+*Private Key Alias for Signing* 
 
 
 
@@ -197,7 +199,7 @@ Alias for the key pair \(private part\) to be used for message signing. Note tha
 
 Alias for the key pair \(private part\) to be used for message signing. Note that X.509 key pair needs to be uploaded to the tenant keystore.
 
-You can also dynamically configure this parameter with an expression such like ***$\{header.signaturekey\}*** or ***$\{property.signaturekey\}*** to dynamically retrieve its value at runtime.
+You can also dynamically configure this parameter with an expression such like `${header.signaturekey}` or `${property.signaturekey}` to dynamically retrieve its value at runtime.
 
 You can also dynamically configure this parameter with an expression such like $\{header.signaturekey\} to dynamically retrieve its value at runtime.
 

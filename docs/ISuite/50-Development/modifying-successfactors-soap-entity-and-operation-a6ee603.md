@@ -58,14 +58,14 @@ You use the following procedure to change the entity and modify the operation fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     System
 
 
     
     </td>
     <td valign="top">
-
+    
     Name of the SuccessFactors data center that you're connecting to.
 
 
@@ -74,14 +74,14 @@ You use the following procedure to change the entity and modify the operation fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     Authentication
 
 
     
     </td>
     <td valign="top">
-
+    
     Select one of the following authentication methods:
 
     -   *Basic*
@@ -95,14 +95,14 @@ You use the following procedure to change the entity and modify the operation fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     Address
 
 
     
     </td>
     <td valign="top">
-
+    
     URL of the SuccessFactors data center that you're connecting to
 
 
@@ -111,15 +111,15 @@ You use the following procedure to change the entity and modify the operation fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     Address Suffix
 
 
     
     </td>
     <td valign="top">
-
-    The field is auto-populated with ***/sfapi/v1/soap***. Don't edit the field.
+    
+    The field is auto-populated with `/sfapi/v1/soap`. Don't edit the field.
 
 
     
@@ -127,14 +127,14 @@ You use the following procedure to change the entity and modify the operation fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     Credential Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Name of the credentials that you've deployed in *Security Material* section in Operations View.
 
 
@@ -143,7 +143,7 @@ You use the following procedure to change the entity and modify the operation fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     Company ID
 
     Only if you choose Basic authentication and don't want to use a deployed credential.
@@ -152,7 +152,7 @@ You use the following procedure to change the entity and modify the operation fo
     
     </td>
     <td valign="top">
-
+    
     Company ID for authentication
 
 
@@ -161,7 +161,7 @@ You use the following procedure to change the entity and modify the operation fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     User Name
 
     Only if you choose Basic authentication and don't want to use a deployed credential.
@@ -170,7 +170,7 @@ You use the following procedure to change the entity and modify the operation fo
     
     </td>
     <td valign="top">
-
+    
     User name associated with the company ID
 
 
@@ -179,7 +179,7 @@ You use the following procedure to change the entity and modify the operation fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     Password
 
     Only if you choose Basic authentication and don't want to use a deployed credential.
@@ -188,7 +188,7 @@ You use the following procedure to change the entity and modify the operation fo
     
     </td>
     <td valign="top">
-
+    
     Relevant password for the specified user name
 
 

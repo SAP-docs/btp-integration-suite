@@ -88,7 +88,7 @@ Like before, in a process call the control is then passed to the subprocess, and
 **Related Information**  
 
 
-[Simulation of an Integration Flow](simulation-of-an-integration-flow-2e2210b.md "The simulation feature allows you to test an integration flow or its subset and see if you can get the desired outcome even before you deploy the integration flow. Based on the simulation result, you can decide whether to continue and deploy the integration flow or make some changes to it. You can also resolve if there are any errors.")
+[Simulation of an Integration Flow](simulation-of-an-integration-flow-2e2210b.md "The simulation feature allows you to test an integration flow or its subset and see if you can get the desired outcome even before you deploy the integration flow. Based on the simulation result, you can decide whether to continue and deploy the integration flow or changes the same. You can also resolve if there are any errors.")
 
 [Define Local Integration Process](define-local-integration-process-520341a.md "You use the local integration process to simplify your integration process. You can break down the main integration process into smaller fragments by using local integration processes. You combine these fragments to achieve your main integration process.")
 

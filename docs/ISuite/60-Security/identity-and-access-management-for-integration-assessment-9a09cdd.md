@@ -5,5 +5,5 @@
 **Related Information**  
 
 
-[Personas](../30-Assessing_Integration_Strategy/personas-5df5af1.md "")
+[Personas](personas-5df5af1.md "")
 

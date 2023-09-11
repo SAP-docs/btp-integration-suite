@@ -13,7 +13,9 @@ Validate and split \(into multiple documents\) different inbound EDI document fo
 You use the EDI splitter to split inbound bulk EDI messages, and configure the splitter to validate and acknowledge the inbound messages. If you choose to acknowledge the EDI message, then the splitter transmits a functional acknowledgement after processing the bulk EDI message. A bulk EDI message can contain one or more EDI formats, such as EDIFACT, ODETTE, EANCOM, and ASC-X12. You can configure the EDI splitter to process different EDI formats depending on the business requirements of the trading partners.
 
 > ### Note:  
-> Do not connect an EDI Splitter with the Gather or Join step in your integration flow. At present such combination is not supported.
+> -   EDI Splitter version 1.8 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
+> -   EDI Splitter version 1.9 and above supports LS/LE segments.
+> -   Do not connect an EDI Splitter with the Gather or Join step in your integration flow. At present such combination is not supported.
 
 ![](images/EDI_Splitter_e5180a1.png)
 
@@ -24,6 +26,8 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 1.  In the palette, choose <span class="SAP-icons"></span>, and then *Splitter* \> *EDI Splitter*.
 
 2.  Choose *EDI Splitter* and provide values in property sheet based on the descriptions in the table.
+
+    **General**
 
 
     <table>
@@ -44,49 +48,53 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </th>
     </tr>
     <tr>
-    <td valign="top" colspan="2">
-
-    *General*
-
-
-    
-    </td>
-    </tr>
-    <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Define a relevant name for the EDI splitter or use the default name.
 
 
     
     </td>
     </tr>
-    <tr>
-    <td valign="top" colspan="2">
+    </table>
+    
+    **Processing**
 
-    *Processing*
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
 
 
     
-    </td>
+    </th>
+    <th valign="top">
+
+    Description
+
+
+    
+    </th>
     </tr>
     <tr>
     <td valign="top">
-
+    
     Parallel Processing
 
 
     
     </td>
     <td valign="top">
-
+    
     This mode creates multiple processes for each split message, and individual EDI messages are processed simultaneously.
 
 
@@ -95,49 +103,62 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Timeout \(in sec\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Set the time limit in seconds for the EDI splitter to process individual split messages. If there are any processes still pending once the time has lapsed, the splitter terminates the processes and updates the MPL status.
 
 
     
     </td>
     </tr>
-    <tr>
-    <td valign="top" colspan="2">
+    </table>
+    
+    **EDIFACT**
 
-    *EDIFACT*
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
 
 
     
-    </td>
+    </th>
+    <th valign="top">
+
+    Description
+
+
+    
+    </th>
     </tr>
     <tr>
     <td valign="top">
-
+    
     Source Encoding
 
 
     
     </td>
     <td valign="top">
-
+    
     Use the appropriate encoding format of the inbound EDIFACT interchange. The following encoding formats are available in the EDI splitter:
 
     -   *UTF-8*
 
     -   *ISO-8859-1*
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_EDIFACT\_SOURCE\_ENCODING***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_SOURCE_ENCODING`. The values for the headers can be one of the following:
 
-    -   ***UTF-8***
-    -   ***ISO-8859-1***
+    -   `UTF-8`
+    -   `ISO-8859-1`
 
 
     
@@ -145,20 +166,20 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Validate Message
 
 
     
     </td>
     <td valign="top">
-
+    
     This mode initiates the validation of the split EDI messages.
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_EDIFACT\_VALIDATE\_MESSAGE***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_VALIDATE_MESSAGE`. The values for the headers can be one of the following:
 
-    -   ***true***
-    -   ***false***
+    -   `true`
+    -   `false`
 
 
     
@@ -166,20 +187,20 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Validate
 
 
     
     </td>
     <td valign="top">
-
+    
     The EDI splitter performs validation of either *Envelope* or *Envelope and Message* for the EDI content.
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_EDIFACT\_VALIDATION\_METHOD***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_VALIDATION_METHOD`. The values for the headers can be one of the following:
 
-    -   ***envelop***
-    -   ***envelopAndMessage***
+    -   `envelop`
+    -   `envelopAndMessage`
 
 
     
@@ -187,14 +208,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Transaction Mode
 
 
     
     </td>
     <td valign="top">
-
+    
     This feature is available only in *Envelope and Message* validation mode. The following two options are available:
 
     -   *Interchange*
@@ -204,10 +225,10 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     > ### Example:  
     > Consider a scenario where you receive a bulk EDI message containing five purchase orders. In *Interchange* mode, if a single EDI message fails, the entire interchange is rejected. However, in *Message* mode, if a single EDI message fails, only the invalid message is rejected and the valid messages are dispatched for further processing.
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_EDIFACT\_TRANSACTION\_MODE***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_TRANSACTION_MODE`. The values for the headers can be one of the following:
 
-    -   ***interchange***
-    -   ***message***
+    -   `interchange`
+    -   `message`
 
 
     
@@ -215,14 +236,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     EDI Schema Definition
 
 
     
     </td>
     <td valign="top">
-
+    
     Validates an EDI interchange against the XSD schema for conversion. Deploy the schema by selecting it from an integration flow or by defining the location of the schema.
 
     Follow the steps here to add an `*.xsd` file to the integration flow:
@@ -239,19 +260,19 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
     The file name of the xml schema for **EDI** payloads should have the following format:
 
-    -   EDIFACT: ***UN-EDIFACT\_ORDERS\_D96A.xsd***
+    -   EDIFACT: `UN-EDIFACT_ORDERS_D96A.xsd`
 
-    -   ODETTE: ***ODETTE\_ORDERR\_2.xsd***
+    -   ODETTE: `ODETTE_ORDERR_2.xsd`
 
-    -   ODETTE EDIFACT: ***UN-EDIFACT\_ORDERS\_D96A\_A18051.xsd***
+    -   ODETTE EDIFACT: `UN-EDIFACT_ORDERS_D96A_A18051.xsd`
 
-    -   EANCOM: ***UN-EDIFACT\_ORDERS\_D96A\_EAN008.xsd***
+    -   EANCOM: `UN-EDIFACT_ORDERS_D96A_EAN008.xsd`
 
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_EDIFACT\_SCHEMA\_SOURCE***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_SCHEMA_SOURCE`. The values for the headers can be one of the following:
 
-    -   ***Header***
-    -   ***IntegrationProject***
+    -   `Header`
+    -   `IntegrationProject`
 
 
     
@@ -259,21 +280,21 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Process Invalid Messages
 
 
     
     </td>
     <td valign="top">
-
+    
     This feature is available only for *Message* option in transaction mode. If you select this option, you must use a router after the splitter to process the split messages.
 
     Use the following conditions to configure the router to:
 
-    -   ***$\{header.SAP\_EDI\_MESSAGE\_STATUS\}= 'failure'*** : Route all invalid messages.
+    -   `${header.SAP_EDI_MESSAGE_STATUS}= 'failure'` : Route all invalid messages.
 
-    -   ***$\{header.SAP\_EDI\_INTERCHANGE\_STATUS\}= 'failure'*** : Route all interchanges that has error.
+    -   `${header.SAP_EDI_INTERCHANGE_STATUS}= 'failure'` : Route all interchanges that has error.
 
 
 
@@ -282,22 +303,22 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Header Name
 
 
     
     </td>
     <td valign="top">
-
-    If you select ***Header*** as *EDI Schema Definition*, then you can see the field *HeaderName*, in *Properties* view. Enter a valid header name for the field.
+    
+    If you select `Header` as *EDI Schema Definition*, then you can see the field *HeaderName*, in *Properties* view. Enter a valid header name for the field.
 
     > ### Note:  
     > This header name is fetched from camel header. The header is added in script element. This script element is added before converter element. You can add value for this header in the script element.
     > 
-    > For example, you can add the value, ***/xsd/UN-EDIFACT\_ORDERS\_D96A.xsd*** for EDIFACT.
+    > For example, you can add the value, `/xsd/UN-EDIFACT_ORDERS_D96A.xsd` for EDIFACT.
     > 
-    > For example, you can add the value, ***/xsd/ASC-X12\_810\_004010.xsd*** for ASC-X12.
+    > For example, you can add the value, `/xsd/ASC-X12_810_004010.xsd` for ASC-X12.
 
 
     
@@ -305,14 +326,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Create Acknowledgement
 
 
     
     </td>
     <td valign="top">
-
+    
     The following options are available to process the functional acknowledgement:
 
     -   *Not Required*: Does not transmit the functional acknowledgement.
@@ -320,14 +341,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     -   *Required*: The splitter creates and transmits a functional acknowledgement.
 
         > ### Note:  
-        > Configure a router and apply the routing condition ***$\{header.SAP\_EDI\_ACKNOWLEDGEMENT\} = 'true'*** to route the functional acknowledgement.
+        > Configure a router and apply the routing condition `${header.SAP_EDI_ACKNOWLEDGEMENT} = 'true'` to route the functional acknowledgement.
 
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_EDIFACT\_CREATE\_ACK***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_CREATE_ACK`. The values for the headers can be one of the following:
 
-    -   ***required***
-    -   ***notRequired***
-    -   ***checkEDIEnvelop***
+    -   `required`
+    -   `notRequired`
+    -   `checkEDIEnvelop`
 
     > ### Note:  
     > In case of rules violation, you see the acknoedgement in a specific format. Here's how the acknowledge is formatted:
@@ -344,20 +365,20 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Interchange Number
 
 
     
     </td>
     <td valign="top">
-
+    
     The splitter uses the interchange number of an EDI message in the functional acknowledgment. It allows the splitter to read the interchange number either from the EDI message or from an assigned set of number ranges.
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_EDIFACT\_INTERCHANGE\_NUMBER***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_INTERCHANGE_NUMBER`. The values for the headers can be one of the following:
 
-    -   ***useFromEDIMessage***
-    -   ***numberRange***
+    -   `useFromEDIMessage`
+    -   `numberRange`
 
 
     
@@ -365,17 +386,17 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Number range
 
 
     
     </td>
     <td valign="top">
-
+    
     Define the number range assigned to an interchange number in the functional acknowledgement.
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_EDIFACT\_NUMBER\_RANGE***
+    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_NUMBER_RANGE`. A unique interchange number is generated for every unique incoming message. A duplicate incoming message is assigned with same interchange number for 30 days.
 
 
     
@@ -383,20 +404,20 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     CONTRL Message Version
 
 
     
     </td>
     <td valign="top">
-
+    
     Determine the appropriate EDIFACT CONTRL message version to be transmitted to the trading partner.. The value for the header should be the number range artifact name.
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_EDIFACT\_CONTRL\_MSG\_VERSION***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_CONTRL_MSG_VERSION`. The values for the headers can be one of the following:
 
-    -   ***defaultVersion***
-    -   ***useFromEDIMessage***
+    -   `defaultVersion`
+    -   `useFromEDIMessage`
 
 
     
@@ -404,44 +425,57 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Include UNA Segment
 
 
     
     </td>
     <td valign="top">
-
+    
     The trading partner uses the UNA segment in the CONTRL message to define special characters, such as separators and indicators. This option enables the splitter to include special characters in the CONTRL message. If not selected, the UNA segment is not included in the CONTRL message.
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_EDIFACT\_INCLUDE\_UNA***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_INCLUDE_UNA`. The values for the headers can be one of the following:
 
-    -   ***true***
-    -   ***false***
+    -   `true`
+    -   `false`
 
 
     
     </td>
     </tr>
-    <tr>
-    <td valign="top" colspan="2">
+    </table>
+    
+    **X12**
 
-    *X12*
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
 
 
     
-    </td>
+    </th>
+    <th valign="top">
+
+    Description
+
+
+    
+    </th>
     </tr>
     <tr>
     <td valign="top">
-
+    
     Source Encoding
 
 
     
     </td>
     <td valign="top">
-
+    
     .Use the appropriate encoding format of the inbound X12 interchange. The following encoding formats are available in the EDI splitter:
 
     -   *UTF-8*
@@ -449,10 +483,10 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     -   *ISO-8859-1*
 
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_X12\_SOURCE\_ENCODING***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_X12_SOURCE_ENCODING`. The values for the headers can be one of the following:
 
-    -   ***UTF-8***
-    -   ***ISO-8859-1***
+    -   `UTF-8`
+    -   `ISO-8859-1`
 
 
     
@@ -460,14 +494,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Validate Message
 
 
     
     </td>
     <td valign="top">
-
+    
     The EDI splitter performs validation on incoming ASC X12 message against the XSD scheme, and has the following options available during validation:
 
     -   *No Validation*: Validation is not performed on the incoming payload.
@@ -475,10 +509,10 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     -   *Standard Validation*: Validates the incoming payload for the structural violations defined in XSD schema.
 
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_X12\_VALIDATE\_MESSAGE\_OPTION***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_X12_VALIDATE_MESSAGE_OPTION`. The values for the headers can be one of the following:
 
-    -   ***none***
-    -   ***basic***
+    -   `none`
+    -   `basic`
 
 
     
@@ -486,14 +520,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Transaction Mode
 
 
     
     </td>
     <td valign="top">
-
+    
     The splitter has two modes for validating a transaction:
 
     -   *Interchange*: Allows the splitter to validate the entire EDI interchange as a single entity.
@@ -501,10 +535,10 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     -   *Message*: Allows the splitter to validate the entire EDI interchange as independent individual entities.
 
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_X12\_TRANSACTION\_MODE***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_X12_TRANSACTION_MODE`. The values for the headers can be one of the following:
 
-    -   ***interchange***
-    -   ***message***
+    -   `interchange`
+    -   `message`
 
 
     
@@ -512,14 +546,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     EDI Schema Definition
 
 
     
     </td>
     <td valign="top">
-
+    
     Validates an EDI interchange against the XSD schema for conversion. Deploy the schema by selecting it from an integration flow or by defining the location of the schema.
 
     Follow the steps here to add an `*.xsd` file to the integration flow:
@@ -536,10 +570,10 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
         > -   If you wish to remove an XSD file from the project, then select the relevant XSD file and choose *Remove*.
 
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_X12\_SCHEMA\_SOURCE***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_X12_SCHEMA_SOURCE`. The values for the headers can be one of the following:
 
-    -   ***Header***
-    -   ***IntegrationProject***
+    -   `Header`
+    -   `IntegrationProject`
 
 
     
@@ -547,22 +581,22 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Header Name
 
 
     
     </td>
     <td valign="top">
-
-    If you select ***Header*** as *EDI Schema Definition*, then you can see the field *HeaderName*, in *Properties* view. Enter a valid header name for the field.
+    
+    If you select `Header` as *EDI Schema Definition*, then you can see the field *HeaderName*, in *Properties* view. Enter a valid header name for the field.
 
     > ### Note:  
     > This header name is fetched from camel header. The header is added in script element. This script element is added before converter element. You can add value for this header in the script element.
     > 
-    > For example, you can add the value, ***/xsd/UN-EDIFACT\_ORDERS\_D96A.xsd*** for EDIFACT.
+    > For example, you can add the value, `/xsd/UN-EDIFACT_ORDERS_D96A.xsd` for EDIFACT.
     > 
-    > For example, you can add the value, ***/xsd/ASC-X12\_810\_004010.xsd*** for ASC-X12.
+    > For example, you can add the value, `/xsd/ASC-X12_810_004010.xsd` for ASC-X12.
 
 
     
@@ -570,14 +604,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Create Acknowledgement
 
 
     
     </td>
     <td valign="top">
-
+    
     The following options are available for processing a functional acknowledgement:
 
     -   *Not Required*: Does not transmit the functional acknowledgement.
@@ -585,14 +619,15 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     -   *Required*: The splitter creates and transmits a functional acknowledgement.
 
         > ### Note:  
-        > Configure a router and apply the routing condition ***$\{header.EDI\_ACKNOWLEDGEMENT\}='true'*** to process the functional acknowledgement.
+        > -   Configure a router and apply the routing condition `${header.EDI_ACKNOWLEDGEMENT}='true'` to process the functional acknowledgement.
+        > -   A unique interchange number is generated for every unique incoming message. A duplicate incoming message is assigned with same interchange number for 30 days.
 
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_X12\_CREATE\_ACK***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_X12_CREATE_ACK`. The values for the headers can be one of the following:
 
-    -   ***required***
-    -   ***notRequired***
-    -   ***checkEDIEnvelop***
+    -   `required`
+    -   `notRequired`
+    -   `checkEDIEnvelop`
 
 
     
@@ -600,20 +635,20 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Interchange Number
 
 
     
     </td>
     <td valign="top">
-
+    
     The splitter uses the interchange number of an EDI message in the functional acknowledgment. It allows the splitter to read the interchange number either from the EDI message or from an assigned set of number ranges.
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_X12\_INTERCHANGE\_NUMBER***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_X12_INTERCHANGE_NUMBER`. The values for the headers can be one of the following:
 
-    -   ***useFromEDIMessage***
-    -   ***numberRange***
+    -   `useFromEDIMessage`
+    -   `numberRange`
 
 
     
@@ -621,17 +656,17 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Number Range
 
 
     
     </td>
     <td valign="top">
+    
+    Define the number range assigned to an interchange number in the functional acknowledgement. A unique interchange number is generated for every unique incoming message. A duplicate incoming message is assigned with same interchange number for 30 days.
 
-    Define the number range assigned to an interchange number in the functional acknowledgement.
-
-    You can also set this field using the header ***SAP\_EDISPLITTER\_X12\_NUMBER\_RANGE***. The value for the header should be the number range artifact name.
+    You can also set this field using the header `SAP_EDISPLITTER_X12_NUMBER_RANGE`. The value for the header should be the number range artifact name.
 
 
     
@@ -639,20 +674,20 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     Exclude AK3 and AK4
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies the splitter to exclude the AK3 and AK4 segments from the functional acknowledgement message. However, it retains the details of the AK1, AK2, AK5, and AK9 segments in the functional acknowledgement.
 
-    You can also set this field using the header ***SAP\_EDISPLITTER\_X12\_EXCLUDE\_AK3\_AK4***. The values for the headers can be one of the following:
+    You can also set this field using the header `SAP_EDISPLITTER_X12_EXCLUDE_AK3_AK4`. The values for the headers can be one of the following:
 
-    -   ***true***
-    -   ***false***
+    -   `true`
+    -   `false`
 
 
     
@@ -686,14 +721,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     2
 
 
     
     </td>
     <td valign="top">
-
+    
     Syntax version and/or level is not supported by the recipient.
 
 
@@ -727,14 +762,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     18
 
 
     
     </td>
     <td valign="top">
-
+    
     An error has been identified, but the nature of the error is not reported.
 
 
@@ -743,14 +778,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     28
 
 
     
     </td>
     <td valign="top">
-
+    
     The control reference in UNB, UNG, or UNH does not match the one in UNZ, UNE, or UNT respectively.
 
 
@@ -759,14 +794,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     29
 
 
     
     </td>
     <td valign="top">
-
+    
     The number of groups, messages, or segments does not match the number given in the UNZ, UNE, or UNT segment.
 
 
@@ -775,14 +810,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     30
 
 
     
     </td>
     <td valign="top">
-
+    
     Groups have been mixed with messages/packages outside of groups in the interchange.
 
 
@@ -813,14 +848,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     12
 
 
     
     </td>
     <td valign="top">
-
+    
     The value of a stand-alone data element, composite data element, or component data element does not conform to the relevant specifications for the value.
 
 
@@ -829,14 +864,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     13
 
 
     
     </td>
     <td valign="top">
-
+    
     Mandatory \(or otherwise required\) service or user segment, data element, composite data element, or component data element is missing.
 
 
@@ -845,14 +880,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     16
 
 
     
     </td>
     <td valign="top">
-
+    
     The identified segment contains too many data elements or the identified composite data element contains too many component data elements.
 
 
@@ -861,14 +896,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     31
 
 
     
     </td>
     <td valign="top">
-
+    
     Different message types are contained in a functional group.
 
 
@@ -877,14 +912,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     35
 
 
     
     </td>
     <td valign="top">
-
+    
     A segment was repeated too many times.
 
 
@@ -893,14 +928,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     36
 
 
     
     </td>
     <td valign="top">
-
+    
     A segment group is repeated to many times.
 
 
@@ -909,14 +944,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     37
 
 
     
     </td>
     <td valign="top">
-
+    
     One or more numeric characters were used in an alphabetic \(component\) data element or one or more alphabetic characters were used in a numeric \(component\) data element.
 
 
@@ -925,14 +960,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     38
 
 
     
     </td>
     <td valign="top">
-
+    
     A decimal sign is not preceded by one or more digits.
 
 
@@ -941,14 +976,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     39
 
 
     
     </td>
     <td valign="top">
-
+    
     The length of the data element received exceeds the maximum length specified in the data element description.
 
 
@@ -957,14 +992,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     40
 
 
     
     </td>
     <td valign="top">
-
+    
     The length of the data element received is shorter than the minimum length specified in the data element description.
 
 
@@ -997,14 +1032,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     3
 
 
     
     </td>
     <td valign="top">
-
+    
     Mandatory segment is missing.
 
 
@@ -1013,14 +1048,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     4
 
 
     
     </td>
     <td valign="top">
-
+    
     Maximum number of loops exceeded.
 
 
@@ -1029,14 +1064,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     5
 
 
     
     </td>
     <td valign="top">
-
+    
     Segment exceeds maximum use.
 
 
@@ -1045,14 +1080,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     6
 
 
     
     </td>
     <td valign="top">
-
+    
     Segment is not defined in transaction set.
 
 
@@ -1061,14 +1096,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     7
 
 
     
     </td>
     <td valign="top">
-
+    
     Segment is not in proper sequence.
 
 
@@ -1099,14 +1134,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     1
 
 
     
     </td>
     <td valign="top">
-
+    
     Mandatory data element is missing.
 
 
@@ -1115,14 +1150,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     3
 
 
     
     </td>
     <td valign="top">
-
+    
     Too many data elements.
 
 
@@ -1131,14 +1166,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     4
 
 
     
     </td>
     <td valign="top">
-
+    
     Data element is too short.
 
 
@@ -1147,14 +1182,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     5
 
 
     
     </td>
     <td valign="top">
-
+    
     Data element is too long.
 
 
@@ -1163,14 +1198,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     6
 
 
     
     </td>
     <td valign="top">
-
+    
     Invalid character in data element.
 
 
@@ -1179,14 +1214,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     7
 
 
     
     </td>
     <td valign="top">
-
+    
     Invalid code value.
 
 
@@ -1195,14 +1230,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     8
 
 
     
     </td>
     <td valign="top">
-
+    
     Invalid date.
 
 
@@ -1233,14 +1268,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     3
 
 
     
     </td>
     <td valign="top">
-
+    
     Transaction set control number in header and trailer do not match.
 
 
@@ -1249,14 +1284,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     4
 
 
     
     </td>
     <td valign="top">
-
+    
     Number of included segments does not match actual count.
 
 
@@ -1287,14 +1322,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     4
 
 
     
     </td>
     <td valign="top">
-
+    
     Group control number in the functional group header and trailer do not match.
 
 
@@ -1303,14 +1338,14 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </tr>
     <tr>
     <td valign="top">
-
+    
     5
 
 
     
     </td>
     <td valign="top">
-
+    
     Number of included transaction sets does not match actual count.
 
 
@@ -1321,6 +1356,8 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     
 
 
+
+## Example
 
 **EANCOM Document Standard**
 

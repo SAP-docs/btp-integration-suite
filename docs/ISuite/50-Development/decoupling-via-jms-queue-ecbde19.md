@@ -102,15 +102,15 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
-    ***OWN***
+    
+    `OWN`
 
 
     
@@ -118,14 +118,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *User*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the user as specified when setting up inbound basic authentication.
 
 
@@ -134,14 +134,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Password*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the password as specified when setting up inbound basic authentication.
 
 

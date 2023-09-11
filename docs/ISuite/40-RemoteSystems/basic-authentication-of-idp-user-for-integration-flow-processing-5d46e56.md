@@ -14,7 +14,7 @@ Use this procedure to connect a sender system to SAP Integration Suite using bas
 > On Alibaba Cloud, SAP ID Service isn't used as default IdP. Therefore, also basic authentication with SAP ID Service can't be used on Alibaba Cloud.
 
 > ### Note:  
-> When setting up trust relationships in SAP BTP cockpit, in most cases *SAP ID service* is used as default identity provider. For more information about adding users to SAP ID Service, see [SAP ID Service](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/d6a8db70bdde459f92f2837349f95090.html)
+> When setting up trust relationships in SAP BTP cockpit, in most cases *SAP ID service* is used as default identity provider. For more information about adding users to SAP ID Service, see [SAP ID Service](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/d6a8db70bdde459f92f2837349f95090.html). In the BTP cockpit, the role name to be used in the Role Collection is `MessagingSend`, which corresponds to the user role `ESBmessaging.send` on Cloud Platform Integration side.
 > 
 > However, you've the option to define a custom IdP as your default IdP.
 > 
@@ -154,7 +154,7 @@ In detail, perform the following steps.
 
 11. Select *Default identity provider*.
 
-12. Enter the email address of the IdP user and click *Show Assignments*.
+12. In the navigation area, select *Security* \> *Users*. Enter the email address of the IdP user and click *Show Assignments*.
 
     If the user isn’t known yet to the tenant, a message is displayed. Confirm the message by choosing *Add User*.
 

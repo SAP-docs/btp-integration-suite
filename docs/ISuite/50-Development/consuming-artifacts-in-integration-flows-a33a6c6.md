@@ -6,7 +6,7 @@ A B2B integration scenario involves many tasks associated with the exchange of b
 
 Integration Advisor unifies all the required tasks for defining the desired interfaces, mappings, and generating the runtime artifacts. The runtime artifacts generated are used within the processing steps of an integration flow. An integration flow defines how messages are processed and exchanged between the sender and receiver systems in a B2B scenario. The platform provides a graphical designer interface to configure – the sender and receiver systems, the adapters to connect the sender and receiver systems to the tenant, and the steps that define the message processing. For more information, see [Getting Started with Integration Flow Development](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/e5724cd84b854719973afe0356ea128b.html "Learn how to develop and run your first integration flow.") :arrow_upper_right: and [Configure Adapter in Communication Channels](configure-adapter-in-communication-channels-1f06633.md).
 
-To get you started with minimum effort in your integration flow creation, SAP Integration Suite Integration Advisor provides a pre-defined set of templates for various B2B integration scenarios. These templates are available in the EDI Integration Templates for SAP Integration Advisor integration package. You can access the integration package via the API Business Hub. You can copy the integration package into your tenant and adapt or extend the predefined integration flow as per your requirements. The package provides the required templates for inbound and outbound integration flows. These cover the standard integration scenarios such as EDI to IDoc, EDI to SOAP, IDoc to EDI, and IDoc to cXML. However, the list of templates and scenarios covered is growing rapidly.
+To get you started with minimum effort in your integration flow creation, SAP Integration Suite Integration Advisor provides a pre-defined set of templates for various B2B integration scenarios. These templates are available in the EDI Integration Templates for SAP Integration Advisor integration package. You can access the integration package via the SAP Business Accelerator Hub. You can copy the integration package into your tenant and adapt or extend the predefined integration flow as per your requirements. The package provides the required templates for inbound and outbound integration flows. These cover the standard integration scenarios such as EDI to IDoc, EDI to SOAP, IDoc to EDI, and IDoc to cXML. However, the list of templates and scenarios covered is growing rapidly.
 
 The Documents tab of the integration package provides details regarding the templates and the usage of the runtime artifacts in the integration flow steps.
 
@@ -123,6 +123,9 @@ EDI Extended Validation \(optional\)
 <td valign="top">
 
 The result of the qualifier preprocessing step is validated against the Russian Doll \(RD\) XSD generated for the source MIG in IA. The resource `<SourceMIGName>_RD.xsd` located in the `source MIG` folder within the exported zip file is used.
+
+> ### Note:  
+> If the source MIG folder contains multiple *\*\_RD\*.xsd* files, all these xsd files need to be added as a Resource to the Integration Flow.
 
 
 

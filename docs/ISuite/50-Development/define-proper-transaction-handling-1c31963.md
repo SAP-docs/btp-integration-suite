@@ -13,6 +13,8 @@ When modeling an integration flow, you can define transaction handling in the fo
 
 You usually enable transactional processing to ensure data consistency if your integration flow model contains persistence-related integration flow steps. However, transaction handling, has an impact on the resource consumption of the Cloud Integration runtime. Depending on your specific scenario, you disable transaction handling for the whole or parts of your integration flow to improve processing performance. However, you must not compromise on data consistency.
 
+For more information on the transaction handling feature, see also [Define Transaction Handling](define-transaction-handling-2a5d4bc.md).
+
 
 
 <a name="loio1c3196315d5a46a293d350b73dc2ccd5__section_bgx_1f5_w4b"/>

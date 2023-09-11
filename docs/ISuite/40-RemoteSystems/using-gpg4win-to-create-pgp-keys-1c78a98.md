@@ -9,11 +9,11 @@
 
 [Creating Tenant-Specific File Directories](creating-tenant-specific-file-directories-8cd3232.md "A PGP Secret Keyring and a PGP Public Keyring have to be maintained for each tenant that uses OpenPGP. The GPA tool cannot maintain several PGP Secret or Public Keyrings at the same time. Therefore, you have to create a separate directory for each tenant, where you have to configure GPA and the launching of GPA separately (otherwise, keys from different tenants will be stored in the same keyring).")
 
-[Starting the GPA Tool](starting-the-gpa-tool-a3e8e13.md "")
+[Starting the GPA Tool](starting-the-gpa-tool-a3e8e13.md "Start the GPA tool to manage keys.")
 
 [Creating a Key Pair](creating-a-key-pair-bb416c5.md "")
 
-[Exporting the Public Key](exporting-the-public-key-2b39fe1.md "You can export a public key in order to make it available for your communication partner (sender or receiver).")
+[Exporting the Public Key](exporting-the-public-key-2b39fe1.md "Export a public key in order to make it available for your communication partner (sender or receiver).")
 
 [Importing a Public Key](importing-a-public-key-651b1c5.md "You can import public keys provided by your communication partner.")
 

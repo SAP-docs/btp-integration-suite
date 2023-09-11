@@ -2,7 +2,7 @@
 
 # Decouple Sender and Flows Using JMS Message Queues
 
- 
+
 
 In the [Decouple Sender and Flows Using Data Store](decouple-sender-and-flows-using-data-store-5467c77.md) scenario, a data store is used as persistency. In the current use case, a JMS message queue is used to decouple 2 integration flows.
 
@@ -109,7 +109,7 @@ To call this integration scenario, provide a `productId` header together with th
 > 
 > To check for products, you can open the WebShop frontend at:
 > 
-> [https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/webshop/index.html](https://refapp-espm-ui-https//refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/webshop/index.html)
+> `https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/webshop/index.html`
 
 A custom response as defined by the integration flow will be sent back right away.
 

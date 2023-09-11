@@ -12,6 +12,8 @@ Whether you select the option *Use Namespace Mapping* or not, leads to different
 
 
 
+## Example
+
 For this example we look at the following **XML document**:
 
 ```
@@ -55,14 +57,14 @@ For the transformation of this document we choose the following settings:
     </tr>
     <tr>
     <td valign="top">
-
+    
     http://com.sap/abc
 
 
     
     </td>
     <td valign="top">
-
+    
     abc
 
 
@@ -71,14 +73,14 @@ For the transformation of this document we choose the following settings:
     </tr>
     <tr>
     <td valign="top">
-
+    
     http://com.sap/xyz
 
 
     
     </td>
     <td valign="top">
-
+    
     xyz
 
 
@@ -104,6 +106,8 @@ We get the following **JSON document**:
 ## No Namespace Mapping
 
 
+
+## Example
 
 For this example we look at the following **XML document**:
 

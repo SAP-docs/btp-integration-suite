@@ -59,7 +59,7 @@ You can assign one or more policies to each PreFlow, PostFlow or Conditional Flo
 
 You enter the conditions in the Conditional String field as illustrated below:
 
- ![](images/Conditional_String_Screenshot_af5c271.jpg) 
+![](images/Conditional_String_Screenshot_af5c271.jpg)
 
 
 
@@ -70,7 +70,7 @@ Adding a policy to an API proxy involves the following two steps:
 1.  Select an existing flow or create a conditional Flow
 2.  Create and attach the policy to the Flow
 
- ![](images/request_response_stream_f348a3c.png) 
+![](images/request_response_stream_f348a3c.png)
 
 The above graphic illustrates the relationship between policies and Flows. A policy is attached to a Flow as a processing **Step**. Each Step can contain one policy. A flow can contain zero or many steps. Each step has a condition, which decides whether the policy has to be executed.
 

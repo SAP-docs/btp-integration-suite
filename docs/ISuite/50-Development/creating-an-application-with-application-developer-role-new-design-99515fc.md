@@ -10,12 +10,12 @@ As an application developer you can create an application, and view the existing
 
 ## Prerequisites
 
--   You have the *AuthGroup.API.ApplicationDeveloper* role assigned to you. For more information on roles, see [Assign User Roles](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:.
+-   You have the *AuthGroup.API.ApplicationDeveloper* role assigned to you. For more information on roles, see [Assign User Roles in API Management](../20-Working_with_SAP_Integration_Suite_Home/assign-user-roles-in-api-management-911ca5a.md).
 
     > ### Note:  
     > The *AuthGroup.API.ApplicationDeveloper* role must not be assigned manually to a user form the SAP BTP Cockpit. Also, this role must not be a part of any user group assignment.
     > 
-    > The *AuthGroup.API.ApplicationDeveloper* role is assigned by default to a user who onboards to the API business hub enterprise using the self-registration process or via*Add User* flow. For more information on registering in API business hub enterprise, see [Register on API Business Hub Enterprise](register-on-api-business-hub-enterprise-c85fafe.md).
+    > The *AuthGroup.API.ApplicationDeveloper* role is assigned by default to a user who onboards to the API business hub enterprise using the self-registration process or via*Add User* flow. For more information on registering in API business hub enterprise, see [Register on API business hub enterprise](register-on-api-business-hub-enterprise-c85fafe.md).
     > 
     > In the Add User flow, the API business hub enterprise admin adds a user who wants to be onboarded to API business hub enterprise. However, the user who is requesting to be onboarded must ensure that the user details provided to the admin matches the user details obtained from the response of <developer portal url\>/api/1.0/users.
 
@@ -24,7 +24,7 @@ As an application developer you can create an application, and view the existing
 
 ## Context
 
-You are about to create an application and add products to your application. You can also select an existing application and view its details under the *Application Details* tab. Navigate to the *Products* tab to view the products and the rate plan associated with this application. You can add custom attributes to your applications, and manage them from the *Custom Attributes* tab. For more information, see . Navigate to the *Analytics* tab to analyze application usage, performance, and error count. For more information, see [Analyze Applications](analyze-applications-deb57dd.md).
+You are about to create an application and add products to your application. You can also select an existing application and view its details under the *Application Details* tab. Navigate to the *Products* tab to view the products and the rate plan associated with this application. You can add custom attributes to your applications, and manage them from the *Custom Attributes* tab. For more information, see [Add Custom Attributes to an Application](add-custom-attributes-to-an-application-39c3cbd.md). Navigate to the *Analytics* tab to analyze application usage, performance, and error count. For more information, see [Analyze Applications](analyze-applications-deb57dd.md).
 
 
 

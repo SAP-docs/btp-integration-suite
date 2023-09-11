@@ -176,5 +176,5 @@ The message queue of the `useOneAsMany` function looks as follows. Here, you can
 **Related Information**  
 
 
-[Creating Message Mapping As A Flow Step](creating-message-mapping-as-a-flow-step-3d5cb7f.md "")
+[Creating Message Mapping as a Flow Step](creating-message-mapping-as-a-flow-step-3d5cb7f.md "")
 

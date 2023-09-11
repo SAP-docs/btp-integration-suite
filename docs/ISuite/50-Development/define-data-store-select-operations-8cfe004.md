@@ -70,14 +70,14 @@ This step selects messages from the data store and provides as output a bulk mes
     </tr>
     <tr>
     <td valign="top">
-
-     *Data Store Name* 
+    
+    *Data Store Name* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies the name of the data store \(no white spaces\).
 
     The maximum length allowed for the data store name is 40 characters. If you enter a longer string, a validation error is raised. Note that this length restriction applies to the value that is used for this parameter at runtime. Therefore, if you configure this parameter dynamically, make sure that the expected header or property value does not exceed this length restriction. Otherwise, a runtime error will be raised.
@@ -88,14 +88,14 @@ This step selects messages from the data store and provides as output a bulk mes
     </tr>
     <tr>
     <td valign="top">
-
-     *Visibility* 
+    
+    *Visibility* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Defines whether the data store is shared by all integration flows \(deployed on the tenant\) or only by one specific integration flow.
 
     -   *Global*: Data store is shared across all integration flows deployed on the tenant.
@@ -111,14 +111,14 @@ This step selects messages from the data store and provides as output a bulk mes
     </tr>
     <tr>
     <td valign="top">
-
-     *Number of Polled Messages* 
+    
+    *Number of Polled Messages* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies the maximum number of messages to be fetched from the data store within one poll \(default is 1\).
 
     If the number of messages fetched per poll is specified in the header `SapDataStoreMaxResults`, the header takes the precedence.
@@ -136,14 +136,14 @@ This step selects messages from the data store and provides as output a bulk mes
     </tr>
     <tr>
     <td valign="top">
-
-     *Delete on Completion* 
+    
+    *Delete on Completion* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option to delete a message from the data store after having successfully processed the message.
 
 

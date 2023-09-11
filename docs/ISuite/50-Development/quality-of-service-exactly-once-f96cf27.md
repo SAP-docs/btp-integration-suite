@@ -129,9 +129,11 @@ Scenario
 
 The sender supports message retry, and the receiver is idempotent. This means that the receiver is able to detect and ignore duplicate messages.
 
-Therefore, the integration flow doesn’t require any additional implementation steps to support EO.
+For a scenario using SAP RM receiver, see: [Sender and Receiver with SAP RM Protocol](sender-and-receiver-with-sap-rm-protocol-9f3e2b6.md)
 
-[Sender and Receiver with SAP RM Protocol](sender-and-receiver-with-sap-rm-protocol-9f3e2b6.md)
+For a scenario using IDoc receiver adapter, see: [IDoc Receiver Handles Duplicates](idoc-receiver-handles-duplicates-8f8feea.md)
+
+For a scenario using XI receiver adapter, see: [XI Receiver Handles Duplicates](xi-receiver-handles-duplicates-fcf026b.md)
 
 
 
@@ -188,7 +190,11 @@ The sender supports message retry, and the receiver is idempotent. However, the 
 
 Therefore, the integration developer needs to design the scenario in such a way that SAP Integration Suite derives a unique ID from the payload.
 
-[Sender and Receiver with SOAP Protocol](sender-and-receiver-with-soap-protocol-cd4c6e0.md)
+For a scenario using SOAP receiver, see: [Sender and Receiver with SOAP Protocol](sender-and-receiver-with-soap-protocol-cd4c6e0.md)
+
+For a scenario using IDoc receiver adapter, see: [IDoc Receiver Handles Duplicates \(based on unique ID in payload\)](idoc-receiver-handles-duplicates-based-on-unique-id-in-payload-bb441a9.md)
+
+For a scenario using XI receiver adapter, see: [XI Receiver Handles Duplicates \(based on unique ID in payload\)](xi-receiver-handles-duplicates-based-on-unique-id-in-payload-3add2bf.md)
 
 
 
@@ -244,6 +250,10 @@ The sender doesn't retry messages, but the receiver is idempotent.
 Therefore, the middleware \(SAP Integration Suite \) needs to carry out the retry of the message delivery if there's an error.
 
 For a scenario using JMS queues, see: [Decoupling via JMS Queue](decoupling-via-jms-queue-ecbde19.md)
+
+For a scenario using IDoc receiver adapter with decoupling via JMS queues, see: [IDoc Receiver Handles Duplicates \(with decoupling via JMS Queue\)](idoc-receiver-handles-duplicates-with-decoupling-via-jms-queue-776b640.md)
+
+For a scenario using XI receiver adapter with decoupling via JMS queues, see: [XI Receiver Handles Duplicates \(with decoupling via JMS Queue\)](xi-receiver-handles-duplicates-with-decoupling-via-jms-queue-bd19abf.md)
 
 
 
@@ -725,5 +735,5 @@ To simulate the communication of sender and receiver systems through SAP Integra
 
 [Sender Handles Retry](sender-handles-retry-48b120a.md "The sender supports message retry.")
 
-[SAP Cloud Integration Handles Retry](sap-cloud-integration-handles-retry-035a1c9.md "")
+[SAP Integration Suite Handles Retry](sap-integration-suite-handles-retry-035a1c9.md "")
 

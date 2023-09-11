@@ -11,9 +11,11 @@ You use the HTTPS sender adapter to communicate with receiver systems using HTTP
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -21,7 +23,7 @@ You use the HTTPS sender adapter to communicate with receiver systems using HTTP
 Supported Header:
 
 > ### Remember:  
-> The adapter adds the headers that follow and you can't add them manually. The adapter removes any custom header that you send with the prefix ***camel*** even if you add them as *Allowed Headers* in the *Runtime Configuration* of the integration flow.
+> The adapter adds the headers that follow and you can't add them manually. The adapter removes any custom header that you send with the prefix `camel` even if you add them as *Allowed Headers* in the *Runtime Configuration* of the integration flow.
 > 
 > Also, any query parameter \(with a key and value\) that you send to the adapter is automatically converted to a header. So, if you send a query and a header with same name, the adapter appends the query to the header.
 
@@ -32,13 +34,13 @@ Supported Header:
 
 The following HTTPS request headers for the sample HTTPS endpoint `https://test.bsn.neo.ondemand.com/http/hello?abcd=1234` are added to exchange headers for further processing in integration flow:
 
--   CamelHttpUrl
+-   **CamelHttpUrl**
 
     Refers to the complete URL called, without query parameters.
 
     For example, `CamelHttpUrl=https://test.bsn.neo.ondemand.com/http/hello`.
 
--   CamelHttpQuery
+-   **CamelHttpQuery**
 
     Refers to the query string that is contained in the request URL.
 
@@ -46,11 +48,11 @@ The following HTTPS request headers for the sample HTTPS endpoint `https://test.
 
     For example, `CamelHttpQuery=abcd=1234`.
 
--   CamelHttpMethod
+-   **CamelHttpMethod**
 
     Refers to the incoming method names used to make the request. These methods are *GET*, *POST*, *PUT*, *DELETE*, and so on.
 
--   CamelServletContextPath
+-   **CamelServletContextPath**
 
     Refers to the path specified in the address field of the channel.
 
@@ -90,7 +92,7 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -100,7 +102,7 @@ Description
 Enter the URL of the HTTP system to connect to.
 
 > ### Note:  
-> -   Use the following pattern: ***http://<host\>:<port\>/http*** . This should be appended by the unique address specified in the channel.
+> -   Use the following pattern: `http://<host>:<port>/http` . This should be appended by the unique address specified in the channel.
 > -   The field value supports these characters **~, -, . , $** and **\*** .
 > -   The *Address* field should start with '/ ' and can contain alphanumeric values, '\_' and '/ '. For example a valid address is */test/123*.
 > -   In the example mentioned above, you can use **~** only for the address part which succeeds */test/*
@@ -108,10 +110,8 @@ Enter the URL of the HTTP system to connect to.
 > -   You cannot begin address with**.**, **\-** or **~**. Alphanumeric value or**\_** must succeed these characters.
 > -   You can use **\*** only at the extreme end of the address and no characters are allowed after **\***. A **\*** can only be preceded with**/**.
 > -   If you are using **/\***, it implies that URI containing the prefix preceding the **/\*** is supported. For example. if the address is */Customer/\** then URIs supported are *http://<host\>:<port\>/http/Customer/<Any-url\>*.
-> -   If you are using **/path /\***, then no other integration flows with the addresses ***/path/any-URL*** or ***/path/any-URL/text*** can be deployed across the tenant.
+> -   If you are using **/path /\***, then no other integration flows with the addresses `/path/any-URL` or `/path/any-URL/text` can be deployed across the tenant.
 > -   URIs are case insensitive. So, *http://<host\>:<port\>/http/test* and *http://<host\>:<port\>/http/Test* is treated as same.
-
-> ### Note:  
 
 
 
@@ -120,7 +120,7 @@ Enter the URL of the HTTP system to connect to.
 <tr>
 <td valign="top">
 
- *CSRF Protected* 
+*CSRF Protected* 
 
 
 
@@ -144,6 +144,11 @@ This option prevents Cross-Site Request Forgery \(CSRF\), which is a malicious o
 
 ### Conditions
 
+The parameters in *Maximum Message Size* allows you to set a maximum size limit for processing inbound messages. All inbound messages that exceeds the configured limit are rejected and the sender receives an error message.
+
+> ### Note:  
+> The minimum allowable size limit is 1MB.
+
 **Configure to set size limit**
 
 
@@ -163,18 +168,6 @@ Description
 
 
 </th>
-</tr>
-<tr>
-<td valign="top" colspan="2">
-
-The parameters in *Maximum Message Size* allows you to set a maximum size limit for processing inbound messages. All inbound messages that exceeds the configured limit are rejected and the sender receives an error message.
-
-> ### Note:  
-> The minimum allowable size limit is 1MB.
-
-
-
-</td>
 </tr>
 <tr>
 <td valign="top">

@@ -2,7 +2,7 @@
 
 # Managing Access Policies
 
-Specifics for Access Policies in the Cloud Foundry Environment..
+Specifics for Access Policies in the Cloud Foundry Environment.
 
 
 
@@ -14,10 +14,10 @@ Access policies in the Cloud Foundry environment are coupled with roles based on
 
 1.  Create a new role as described in [Create Roles for Applications Using Existing Role Templates](https://help.sap.com/docs/CP_AUTHORIZ_TRUST_MNG/ae8e8427ecdf407790d96dad93b5f723/2670fd27fc804ad99313385711d644f6.html?version=Cloud).
 
-    1.  Select Role Template ***CustomRoleTemplate*** for Application ***it***.
+    1.  Select Role Template `CustomRoleTemplate` for Application `it`.
 
     2.  Name the role \(we recommend to include the name of the Access Policy\).
-    3.  Configure the attribute ***custom\_role*** as ***Static*** and provide the name of the Access Policy as its value.
+    3.  Configure the attribute `custom_role` as `Static` and provide the name of the Access Policy as its value. Confirm your entries by pressing Enter on your keyboard and select *Next*.
     4.  \(Optional\) Select the available role collections, if you want to grant access to the artifacts referenced by the access policy specified.
 
 2.  \(Optional\) Create an new role collection containing the role created for the access policy as described in [Define a Role Collection](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/4b20383efab341f181becf0a947a5498.html?version=Cloud).

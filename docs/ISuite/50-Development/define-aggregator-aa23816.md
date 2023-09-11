@@ -20,7 +20,7 @@ You want to combine related individual messages so that they can be processed in
 > ### Note:  
 > When you use the Aggregator step in combination with a polling SFTP sender adapter and you expect a high message load, please consider the following recommendation:
 > 
-> For the involved in SFTP sender adapter set the value for *Maximum Messages per Poll* to a small number which is larger than 0 \(for example, ***20***\) \(under *Advanced Parameters*\). That way, you ensure a proper message processing status logging at runtime.
+> For the involved in SFTP sender adapter set the value for *Maximum Messages per Poll* to a small number which is larger than 0 \(for example, `20`\) \(under *Advanced Parameters*\). That way, you ensure a proper message processing status logging at runtime.
 
 
 
@@ -54,14 +54,14 @@ You want to combine related individual messages so that they can be processed in
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Correlation Expression \(XPath\)*
 
 
     
     </td>
     <td valign="top">
-
+    
     XPath expression that identifies an element based on which the incoming messages should be correlated.
 
 
@@ -70,17 +70,17 @@ You want to combine related individual messages so that they can be processed in
     </tr>
     <tr>
     <td valign="top">
-
-     *Incoming Format* 
+    
+    *Incoming Format* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Content type of the incoming message
 
-    Currently, only ***XML \(Same Format\)*** can be selected.
+    Currently, only `XML (Same Format)` can be selected.
 
     It is important that the incoming messages have the same format.
 
@@ -90,14 +90,14 @@ You want to combine related individual messages so that they can be processed in
     </tr>
     <tr>
     <td valign="top">
-
-     *Aggregation Algorithm* 
+    
+    *Aggregation Algorithm* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies how the correlated messages should be treated.
 
     You can select one of the following options:
@@ -119,7 +119,7 @@ You want to combine related individual messages so that they can be processed in
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Message Sequence Expression \(XPath\)*
 
     \(only if for *Aggregation Algorithm* the option *Combine in Sequence* has been selected\)
@@ -128,10 +128,10 @@ You want to combine related individual messages so that they can be processed in
     
     </td>
     <td valign="top">
-
+    
     Enter an XPath expression for that message element based on which a sequence is being defined.
 
-    You can use only numbers to define a sequence. Each sequence starts with ***1***.
+    You can use only numbers to define a sequence. Each sequence starts with `1`.
 
 
     
@@ -139,25 +139,25 @@ You want to combine related individual messages so that they can be processed in
     </tr>
     <tr>
     <td valign="top">
-
-     *Last Message Condition \(XPath\)* 
+    
+    *Last Message Condition \(XPath\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Define the condition \(<code><code>XPATH</code> = <code>value</code></code>\) to identify the last message of an aggregate.
 
     You have the option to use an *Router* step after the *Aggregator* in order to evaluate the `Camel ${header.CamelAggregatedCompletedBy}` attribute, and, based on the value, decide how to continue.
 
     Note that the header attribute can only have one of the following values:
 
-    -   ***timeout***
+    -   `timeout`
 
         Processing of the aggregate has been finished because the configured *Completion Timeout* has been reached.
 
-    -   ***predicate***
+    -   `predicate`
 
         Processing of the aggregate has been finished because the *Completion Condition* has been fulfilled.
 
@@ -168,25 +168,25 @@ You want to combine related individual messages so that they can be processed in
     </tr>
     <tr>
     <td valign="top">
-
-     *Completion Timeout* 
+    
+    *Completion Timeout* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Defines the maximum time between two messages before aggregation is being stopped \(*period of inactivity*\).
 
     You have the option to use an *Router* step after the *Aggregator* in order to evaluate the `Camel ${header.CamelAggregatedCompletedBy}` attribute, and, based on the value, decide how to continue.
 
     Note that the header attribute can only have one of the following values:
 
-    -   ***timeout***
+    -   `timeout`
 
         Processing of the aggregate has been finished because the configured *Completion Timeout* has been reached.
 
-    -   ***predicate***
+    -   `predicate`
 
         Processing of the aggregate has been finished because the *Completion Condition* has been fulfilled.
 
@@ -197,14 +197,14 @@ You want to combine related individual messages so that they can be processed in
     </tr>
     <tr>
     <td valign="top">
-
-     *Data Store Name* 
+    
+    *Data Store Name* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the name of the transient data store where the aggregated message is to be stored. The name should begin with a letter and use characters \(aA-zZ, 0-9, - \_ . ~ \).
 
     Note that only **local** data stores \(that apply only to the integration flow\) can be used. Global data stores cannot be used for this purpose.

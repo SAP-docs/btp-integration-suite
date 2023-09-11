@@ -12,7 +12,7 @@ Use this procedure to create and deploy a REST API artifact.
 
 A REST API artifact creates a REST API-based integration scenario with HTTPS sender adapter.
 
- <a name="task_uv3_njc_hpb"/>
+<a name="task_uv3_njc_hpb"/>
 
 <!-- task\_uv3\_njc\_hpb -->
 
@@ -61,14 +61,14 @@ A REST API artifact creates a REST API-based integration scenario with HTTPS sen
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Name of the API.
 
 
@@ -77,14 +77,14 @@ A REST API artifact creates a REST API-based integration scenario with HTTPS sen
     </tr>
     <tr>
     <td valign="top">
-
+    
     REST API \(only for upload\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Upload a ZIP file containing the REST API resources.
 
 
@@ -93,14 +93,14 @@ A REST API artifact creates a REST API-based integration scenario with HTTPS sen
     </tr>
     <tr>
     <td valign="top">
-
+    
     ID
 
 
     
     </td>
     <td valign="top">
-
+    
     Uniquely identifies the artifact.
 
 
@@ -109,14 +109,14 @@ A REST API artifact creates a REST API-based integration scenario with HTTPS sen
     </tr>
     <tr>
     <td valign="top">
-
+    
     Description
 
 
     
     </td>
     <td valign="top">
-
+    
     Description of the API and its purpose.
 
 
@@ -125,7 +125,7 @@ A REST API artifact creates a REST API-based integration scenario with HTTPS sen
     </tr>
     </table>
     
-    Product Profile is an uneditable field.
+    Runtime Profile is an uneditable field.
 
 7.  Choose *OK* to create the artifact.
 
@@ -154,7 +154,7 @@ A REST API artifact creates a REST API-based integration scenario with HTTPS sen
 
 You can check the status of all your integration artifacts in the *Monitor* view. By default, API-based artifacts don't appear in the *Monitor*. Perform the steps that follow to view the deployed artifact.
 
- <a name="task_xs3_sjc_hpb"/>
+<a name="task_xs3_sjc_hpb"/>
 
 <!-- task\_xs3\_sjc\_hpb -->
 

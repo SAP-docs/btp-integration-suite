@@ -36,7 +36,7 @@ PUT
 </td>
 <td valign="top">
 
- `/CertificateResources('{Hexalias}')/$value` 
+`/CertificateResources('{Hexalias}')/$value` 
 
 
 

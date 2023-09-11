@@ -2,12 +2,12 @@
 
 # Configure the Dropbox Sender Adapter
 
-The Dropbox sender adapter enables an SAP Cloud Integration tenant to receive files from the Dropbox storage.
+The Dropbox sender adapter enables SAP Integration Suite to receive files from the Dropbox storage.
 
 > ### Note:  
-> This adapter is available on SAP API Business Hub.
+> This adapter is available on SAP Business Accelerator Hub.
 > 
-> For more information, see [Consuming Integration Adapters from SAP API Business Hub](consuming-integration-adapters-from-sap-api-business-hub-b9250fb.md).
+> For more information, see [Consuming Integration Adapters from SAP Business Accelerator Hub](consuming-integration-adapters-from-sap-business-accelerator-hub-b9250fb.md).
 > 
 > The availability of the adapter is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://launchpad.support.sap.com/#/notes/2903776) and [3188446](https://launchpad.support.sap.com/#/notes/3188446).
 
@@ -44,7 +44,7 @@ Description
 <tr>
 <td valign="top">
 
- *Name* 
+*Name* 
 
 
 
@@ -61,7 +61,7 @@ Enter the name of the Dropbox channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-**General**
+**Connection**
 
 
 <table>
@@ -84,7 +84,7 @@ Description
 <tr>
 <td valign="top">
 
- *OAuth Credential Name* 
+*OAuth Credential Name* 
 
 
 
@@ -100,7 +100,7 @@ Name of the credential artifact deployed on the tenant and used to connect to Dr
 <tr>
 <td valign="top">
 
- *Timeout \(in ms\)* 
+*Timeout \(in ms\)* 
 
 
 
@@ -121,7 +121,7 @@ SAP Cloud Integration is connected to Dropbox account trying to perform the oper
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-**General**
+**Processing**
 
 
 <table>
@@ -144,7 +144,7 @@ Description
 <tr>
 <td valign="top">
 
- *Operation* 
+*Operation* 
 
 
 
@@ -171,7 +171,7 @@ Select one of the following options depending on the operation to be performed i
 <tr>
 <td valign="top">
 
- *Folder Path* \(only if *Download Archive File* is selected for *Operation*\)
+*Folder Path* \(only if *Download Archive File* is selected for *Operation*\)
 
 
 
@@ -182,9 +182,9 @@ The path of the folder where to download as zip file.
 
 Examples:
 
-***/Homework/math***
+`/Homework/math`
 
-***id:a4ayc\_80\_OEAAAAAAAAAXw***
+`id:a4ayc_80_OEAAAAAAAAAXw`
 
 
 
@@ -193,7 +193,7 @@ Examples:
 <tr>
 <td valign="top">
 
- *File Path* \(only if *Download File* is selected for *Operation*\)
+*File Path* \(only if *Download File* is selected for *Operation*\)
 
 
 
@@ -204,9 +204,9 @@ The Path to the file which needs to be downloaded.
 
 Examples:
 
-***/Homework/math/Prime\_Numbers.txt***
+`/Homework/math/Prime_Numbers.txt`
 
-***id:a4ayc\_80\_OEAAAAAAAAAXw***
+`id:a4ayc_80_OEAAAAAAAAAXw`
 
 
 
@@ -215,7 +215,7 @@ Examples:
 <tr>
 <td valign="top">
 
- *Post-Processing* \(only if *Download File* is selected for *Operation*\)
+*Post-Processing* \(only if *Download File* is selected for *Operation*\)
 
 
 
@@ -251,7 +251,7 @@ Select the action to be performed after successful processing of the file.
 <tr>
 <td valign="top">
 
- *Archive Directory* \(only if *Download File* is selected for *Operation* and *Move File* is selected for *Post-Processing*\)
+*Archive Directory* \(only if *Download File* is selected for *Operation* and *Move File* is selected for *Post-Processing*\)
 
 
 
@@ -328,7 +328,7 @@ Description
 <tr>
 <td valign="top">
 
- *Every* 
+*Every* 
 
 
 

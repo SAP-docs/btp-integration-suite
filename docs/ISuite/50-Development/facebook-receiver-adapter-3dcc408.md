@@ -2,14 +2,16 @@
 
 # Facebook Receiver Adapter
 
-You use the Facebook receiver adapter to extract information from Facebook \(which is the receiver platform\) based on certain criteria such as keywords, user data, for example. As one example, you can use this feature in social marketing activities to do social media data analysis based on Facebook content.
+You use the Facetbook receiver adapter to extract information from Facebook \(which is the receiver platform\) based on certain criteria such as keywords, user data, for example. As one example, you can use this feature in social marketing activities to do social media data analysis based on Facebook content.
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -19,12 +21,11 @@ You use the Facebook receiver adapter to extract information from Facebook \(whi
 > 
 > -   A user can only query their own comments. Other users' comments are unavailable due to privacy concerns.
 
-The connection works that way that the tenant logs on to Facebook based on an OAuth authentication mechanism and searches for information based on criteria as configured in the adapter at design time. OAuth allows a the tenant to access someone else’s resources \(of a specific Facebook user\) on behalf of the tenant. As illustrated in the figure, the tenant \(through the Facebook receiver adapter\) calls the Facebook API to access resources of a specific Facebook user. For more information on the Facebook API, go to: [https://developers.facebook.com/](https://developers.facebook.com/).
+The connection works that way that the tenant logs on to Facebook based on an OAuth authentication mechanism and searches for information based on criteria as configured in the adapter at design time. OAuth allows the tenant to access someone else’s resources \(of a specific Facebook user\) on behalf of the tenant.
 
-> ### Note:  
-> You can also use headers to provide values in *Connection* settings of Facebook adapter. You can use both exchange headers \(see [Dynamic Parameters \(Example\)](dynamic-parameters-example-5705f2b.md) for more information\) and Apache Camel headers \(see [Facebook Component in Apache Camel](http://camel.apache.org/facebook.html) for more information \).
+![](images/Facebook_Adapter_1115612.png)
 
- ![](images/Facebook_Adapter_1115612.png) 
+As illustrated in the figure, the tenant \(through the Facebook receiver adapter\) calls the Facebook API to access resources of a specific Facebook user. For more information on the Facebook API, go to: [https://developers.facebook.com/](https://developers.facebook.com/).
 
 Once you have created a receiver channel and selected the Facebook receiver adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
@@ -75,7 +76,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 > 
 > Login to [Facebook for Developers](https://developers.facebook.com/). Choose *My Apps* \> *<Your Facebook App\>* \> *Roles* \> *Test Users*. In this page, you will get details like *User/Page ID*.
 > 
-> To get the *Post ID*, you should fetch the posts using *Get Posts*. This will have the *Post ID*
+> To get the *Post ID*, you should fetch the posts using *Get Posts* which has the *Post ID*.
+
+> ### Remember:  
+> There is a new restriction introdcued by Meta which removes the ability for apps to create new test users. Existing test users aren't affected. For more information, see [Test Users](https://developers.facebook.com/docs/development/build-and-test/test-users/).
 
 **Connection**
 
@@ -100,7 +104,7 @@ Description
 <tr>
 <td valign="top">
 
- *Endpoint* 
+*Endpoint* 
 
 
 
@@ -133,7 +137,7 @@ To access Facebook content, you can choose among the following general options.
 <tr>
 <td valign="top">
 
- *User/Page ID* 
+*User/Page ID* 
 
 
 
@@ -149,7 +153,7 @@ Specifies the Facebook user from which account the information is to be extracte
 <tr>
 <td valign="top">
 
- *Timeout \(ms\)* 
+*Timeout \(ms\)* 
 
 
 
@@ -165,7 +169,7 @@ Specifies a timeout \(in miliseconds\) after which the connection to te Facebook
 <tr>
 <td valign="top">
 
- *Application ID* 
+*Application ID* 
 
 
 
@@ -181,7 +185,7 @@ An alias by which the consumer \(tenant\) that requests Facebook resources is id
 <tr>
 <td valign="top">
 
- *Application Secret Alias* 
+*Application Secret Alias* 
 
 
 
@@ -197,7 +201,7 @@ An alias by which the shared secret is identified \(that is used to to define th
 <tr>
 <td valign="top">
 
- *Access Token* 
+*Access Token* 
 
 
 
@@ -234,6 +238,9 @@ Select between the two options given:
 </td>
 </tr>
 </table>
+
+> ### Note:  
+> You can also use headers to provide values in *Connection* settings of Facebook adapter. You can use both exchange headers \(see [Dynamic Parameters \(Example\)](dynamic-parameters-example-5705f2b.md) for more information\) and Apache Camel headers \(see [Facebook Component in Apache Camel](http://camel.apache.org/facebook.html) for more information \).
 
 The authorization is based on shared secret technology. This method relies on the fact that all parties of a communication share a piece of data that is known only to the parties involved. Using OAuth in the context of this adapter, the Consumer \(that calls the API of the receiver platform on behalf of a specific user of this platform\) identifies itself using its **Consumer Key** and **Consumer Secret**, while the context to the user itself is defined by an **Access Token** and an **Access Token Secret**. These artifacts are to be generated for the receiver platform app \(consumer\) and should be configured that way that they will never expire. This adapter only supports consumer key/secret and access token key/secret artifacts that do not expire.
 

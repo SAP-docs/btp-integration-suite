@@ -9,7 +9,7 @@
 ## Context
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 You have created an OData model either by importing from a data source or by editing the model manually using the Cloud Integration Web application.
 

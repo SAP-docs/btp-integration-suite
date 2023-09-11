@@ -259,14 +259,14 @@ $\{header.SenderId\} not regex '1.\*'
 </table>
 
 > ### Example:  
-> A condition with expression ***$\{header.SenderId\} regex '1.\*'*** routes all the messages that have a Sender ID starting with 1.
+> A condition with expression `${header.SenderId} regex '1.*'` routes all the messages that have a Sender ID starting with 1.
 
 > ### Note:  
 > -   You can define a condition based on property or exception that may occur.
 > 
-> -   If the condition ***$\{property.SenderId\} = '1'*** is true, then Router routes the message to a particular sender whose Sender ID is 1.
+> -   If the condition `${property.SenderId} = '1'` is true, then Router routes the message to a particular sender whose Sender ID is 1.
 > 
-> -   If the condition ***$\{exception.message\}contains 'java.lang.Exception'*** is true, then Router routes the message to a particular receiver, otherwise it routes to another receiver.
+> -   If the condition `${exception.message}contains 'java.lang.Exception'` is true, then Router routes the message to a particular receiver, otherwise it routes to another receiver.
 
 
 

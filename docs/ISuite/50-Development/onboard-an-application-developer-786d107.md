@@ -16,7 +16,7 @@ To provide application developers with access to the API business hub enterprise
 
 ## Procedure
 
-1.  The application developers log on to the API business hub enterprise application with their IDP user credentials, and register to the API business hub enterprise. For more information, see [Register on API Business Hub Enterprise](register-on-api-business-hub-enterprise-c85fafe.md).
+1.  The application developers log on to the API business hub enterprise application with their IDP user credentials, and register to the API business hub enterprise. For more information, see [Register on API business hub enterprise](register-on-api-business-hub-enterprise-c85fafe.md).
 
 2.  The API administrator approves or rejects the request to access the API business hub enterprise. For more information, see [Managing the Access Request of the Users \[Classic Design\]](managing-the-access-request-of-the-users-classic-design-5b3e2f6.md).
 

@@ -4,7 +4,7 @@
 
 # Migrating a Message Implementation Guideline
 
-You can migrate your Message Implementation Guideline \(MIG\) to a different version \(newer or older\) of the same type system.
+You can migrate your Message Implementation Guideline \(MIG\) to a different version \(newer or older\) of the same message or even to a different message \(of the same or a different type system\). A new MIG is created based on the new message you have chosen and customizations done in your previous MIG are copied over to the new MIG based on an best-effort strategy.
 
 
 
@@ -27,6 +27,7 @@ After migrating your MIG, you can use the status review section available in the
 
 -   You can also migrate your MIG to a different message such as from ORDERS05 to ORDERS03 in IDoc version 1809 FPS02 if the underlying message structure is similar enough. The compatibility is determined on a case-to-case basis.
 
+-   You can also migrate your MIG to a different message type with different root node. The migration will be done on a best-effort strategy for the subnodes that are present in the old and new message structure.
 
 
 
@@ -60,12 +61,15 @@ A new MIG is created.
 > ### Tip:  
 > A few pointers to keep in mind while you review and verify your MIG after migration:
 > 
-> -   Nodes and their properties are migrated only if they're selected in the original MIG. Unselected mandatory nodes and their properties are not migrated. Since mandatory nodes are preselected based on the underlying message template when a MIG is created, MIG migration does not actively unselect such mandatory nodes.
+> -   The migration works on a best-effort strategy and considers frequently occurring situations. But there can be situations \(when it comes to considering all three of previous message, previous MIG and new message\) which can't be easily resolved and might need user interaction. In such cases a node or property can't be migrated and you will notified of this through a status notification.
+> -   Nodes and their properties are migrated only if they're selected in the original MIG. Unselected mandatory nodes and their properties are not migrated.
 > 
+> -   Since mandatory nodes are preselected based on the underlying message template when a MIG is created, MIG migration does not actively unselect such mandatory nodes.
 > -   For each selected node of the original MIG -
 > 
 >     -   If a matching node is available in the new message structure, details such as properties, code values, and documentation associated with this node gets migrated to the matched node in the new MIG.
 > 
+>     -   There can be situations where a node can't be fully matched but where the migration finds an alternative match. For example, say Node1 in namespace1 is not present in the new message but there is a Node1 in namespace2 available. In such case, migration will be done for this alternative match and you will be notified through a status notification to review this decision.
 >     -   If a matching node isn't present in the new message structure, you're notified through status notifications.
 > 
 >     > ### Note:  

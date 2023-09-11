@@ -7,9 +7,11 @@ Connects an SAP Cloud Integration tenant to a remote receiver system using Remot
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -35,7 +37,7 @@ You can use Remote Function Call \(RFC\) to integrate on-premise ABAP systems wi
 
 RFC executes the function call using synchronous communication, which means that both systems must be available at the time the call is made. When the call is made for the function module using the RFC interface, the calling program must specify the parameters of the connection in the form of an RFC destination. RFC destinations provide the configuration needed to communicate with an on-premise ABAP and S/4 HANA cloud systems through an RFC interface.
 
-The RFC destination configuration settings are used by the SAP JAVA Connector \(SAP JCo\) to establish and manage the connection with on-premise and S/4 HANA cloud system available in public internet. To further understand the destination configuration properties, see [Creating an RFC Destination](creating-an-rfc-destination-3b55fa7.md). While you configure a destination make sure to select ***internet*** as the proxy type to establish connection with an application over the internet.
+The RFC destination configuration settings are used by the SAP JAVA Connector \(SAP JCo\) to establish and manage the connection with on-premise and S/4 HANA cloud system available in public internet. To further understand the destination configuration properties, see [Creating an RFC Destination](creating-an-rfc-destination-3b55fa7.md). While you configure a destination make sure to select `internet` as the proxy type to establish connection with an application over the internet.
 
 > ### Remember:  
 > -   The RFC adapter supports SAP NetWeaver 7.31 and higher.
@@ -115,7 +117,7 @@ Description
 <tr>
 <td valign="top">
 
- *Destination* 
+*Destination* 
 
 
 
@@ -131,7 +133,7 @@ Enter the RFC destination configured in SAP BTP cockpit for your application.
 <tr>
 <td valign="top">
 
- *Send Confirm Transaction* 
+*Send Confirm Transaction* 
 
 
 
@@ -157,7 +159,7 @@ Enter the RFC destination configured in SAP BTP cockpit for your application.
 <tr>
 <td valign="top">
 
- *Create New Connection* 
+*Create New Connection* 
 
 
 
@@ -176,7 +178,7 @@ If you enable this option, the adapter creates a new RFC connection in the backe
 </table>
 
 > ### Note:  
-> You can create dynamic destinations by using regular expressions \(header, property\) in the Content Modifier. Select *Content Modifier* in the integration flow. Then go to *Message Header* in *Content Modifier* properties and assign corresponding value to the header name as the destination name. Select your RFC adapter and assign dynamic destination by using the expression: ***$\{header/property***.*<header/property name\>*\}. For example ***$\{header.abc\}*** or ***$\{property.abc\}*** where ***abc*** is the value of the header or property.
+> You can create dynamic destinations by using regular expressions \(header, property\) in the Content Modifier. Select *Content Modifier* in the integration flow. Then go to *Message Header* in *Content Modifier* properties and assign corresponding value to the header name as the destination name. Select your RFC adapter and assign dynamic destination by using the expression: `${header/property`.*<header/property name\>*\}. For example `${header.abc}` or `${property.abc}` where `abc` is the value of the header or property.
 
 **Related Information**  
 

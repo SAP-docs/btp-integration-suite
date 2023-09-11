@@ -13,9 +13,11 @@ You configure with the AS4 sender adapter with ebMS3 Receipt to support non-repu
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -43,7 +45,7 @@ Description
 <tr>
 <td valign="top">
 
- *Agreement* 
+*Agreement* 
 
 
 
@@ -59,19 +61,19 @@ Define the message exchange pattern agreed between the MSHs.
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
 </td>
 <td valign="top">
 
-Specify the relative endpoint of the receiving MSH. For example, ***/orders***.
+Specify the relative endpoint of the receiving MSH. For example, `/orders`.
 
 > ### Note:  
-> When you specify the endpoint address ***/path***, a sender can also call the integration flow through the endpoint address ***/path/<any string\>*** \(for example, ***/path/test/***\).
+> When you specify the endpoint address `/path`, a sender can also call the integration flow through the endpoint address `/path/<any string>` \(for example, `/path/test/`\).
 > 
-> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address ***/path/test/***, a sender using the ***/path/test*** endpoint address will now call the newly deployed integration flow with the endpoint address ***/path/test/***. When you now undeploy the integration flow with endpoint address ***/path/test***, the sender again calls the integration flow with endpoint address ***/path*** \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using completely separated endpoints for services.
+> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address `/path/test/`, a sender using the `/path/test` endpoint address will now call the newly deployed integration flow with the endpoint address `/path/test/`. When you now undeploy the integration flow with endpoint address `/path/test`, the sender again calls the integration flow with endpoint address `/path` \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using completely separated endpoints for services.
 
 
 
@@ -80,14 +82,14 @@ Specify the relative endpoint of the receiving MSH. For example, ***/orders***.
 <tr>
 <td valign="top">
 
- *Authorization* 
+*Authorization* 
 
 
 
 </td>
 <td valign="top">
 
-Select *User Role* if you want to authorize a user to send message based on the ***ESBMessaging.send***.
+Select *User Role* if you want to authorize a user to send message based on the `ESBMessaging.send`.
 
 Select *Client Certificate* if you want to authorize a user to send message based on a certificate. If you select this option, you have to add and enter the Subject DN \(information used to authorize the sender\) and Issuer DN \(information about the Certificate Authority who issues the certificate\).
 
@@ -140,7 +142,7 @@ Description
 <tr>
 <td valign="top">
 
- *Save Incoming Receipt* 
+*Save Incoming Receipt* 
 
 
 
@@ -172,7 +174,7 @@ Verifies the signature of the incoming receipt.
 <tr>
 <td valign="top">
 
- *Public Key Alias* 
+*Public Key Alias* 
 
 
 
@@ -397,7 +399,7 @@ For more information, read the SAP Community blog [Cloud Integration – Configu
 <tr>
 <td valign="top">
 
- *Encrypt Message During Persistence* 
+*Encrypt Message During Persistence* 
 
 
 
@@ -446,7 +448,7 @@ The parameters in *Maximum Message Size* allow you to set a maximum size limit f
 <tr>
 <td valign="top">
 
- *Body Size \(in MB\)* 
+*Body Size \(in MB\)* 
 
 
 
@@ -462,7 +464,7 @@ Define the size limit for processing the message body. Default value is 40 MB.
 <tr>
 <td valign="top">
 
- *Attachment Size \(in MB\)* 
+*Attachment Size \(in MB\)* 
 
 
 

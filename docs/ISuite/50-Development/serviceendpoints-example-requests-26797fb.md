@@ -163,21 +163,21 @@ REST
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     String
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Required\) Name of the entry point.
 
 
@@ -186,21 +186,21 @@ REST
     </tr>
     <tr>
     <td valign="top">
-
+    
     URL
 
 
     
     </td>
     <td valign="top">
-
+    
     URL
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Required\) Fully qualified endpoint or the base path of the API.
 
 
@@ -209,21 +209,21 @@ REST
     </tr>
     <tr>
     <td valign="top">
-
+    
     Type
 
 
     
     </td>
     <td valign="top">
-
+    
     Enumerated String
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Optional\) Possible values are DEV, TEST, PROD, SANDBOX.
 
 
@@ -265,21 +265,21 @@ REST
     </tr>
     <tr>
     <td valign="top">
-
+    
     URL
 
 
     
     </td>
     <td valign="top">
-
+    
     URL
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Required\) Fully qualified endpoint to the API definitions file.
 
 
@@ -288,21 +288,21 @@ REST
     </tr>
     <tr>
     <td valign="top">
-
+    
     Type
 
 
     
     </td>
     <td valign="top">
-
+    
     Enumerated String
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Required\) Name of the API definition endpoint. Possible values are oas-yaml, oas-json, raml, edmx, wsdl.
 
 

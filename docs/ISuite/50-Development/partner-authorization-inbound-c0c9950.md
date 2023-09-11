@@ -10,7 +10,7 @@ Note that the authorization check is implemented based on a script contained in 
 
 The following figure shows how the partner authorization check works \(the numbers in the figure correspond to those in the numbered list below\).
 
- ![](images/Partner_Authorization_152ad53.png) 
+![](images/Partner_Authorization_152ad53.png)
 
 1.  The partner sends a message to the integration platform \(Cloud Integration\) and the user associated with the sender system is logged in.
 

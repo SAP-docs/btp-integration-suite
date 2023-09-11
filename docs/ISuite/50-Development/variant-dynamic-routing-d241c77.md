@@ -14,7 +14,7 @@ Other than for the static routing variant described in [Variant: Static Routing]
 
 The model is specified in the *Pattern Recipient List - Dynamic Routing* reference integration flow.
 
- ![](images/Dynamic_Routing_87d69f8.png) 
+![](images/Dynamic_Routing_87d69f8.png)
 
 Since the payload is overwritten in the message mapping, it first has to be stored in an exchange property. This task is performed by a Content Modifier that creates an exchange property \(called *payload*\). Its value is given by the expression `${in.body}`.
 

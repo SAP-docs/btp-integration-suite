@@ -4,7 +4,7 @@
 
 
 
-You find various example requests on SAP API Business Hub at:
+You find various example requests on SAP Business Accelerator Hub at:
 
 [https://api.sap.com/api/PartnerDirectory/](https://api.sap.com/api/PartnerDirectory/)
 
@@ -48,7 +48,7 @@ Binary Parameter
 </td>
 <td valign="top">
 
- [Requests for String Parameter, Binary Parameter, and Authorized User](requests-for-string-parameter-binary-parameter-and-authorized-user-47b6999.md) 
+[Requests for String Parameter, Binary Parameter, and Authorized User](requests-for-string-parameter-binary-parameter-and-authorized-user-47b6999.md) 
 
 
 
@@ -64,7 +64,7 @@ User Credential Parameters
 </td>
 <td valign="top">
 
- [Requests for UserCredentialParameter](requests-for-usercredentialparameter-79c06dd.md) 
+[Requests for UserCredentialParameter](requests-for-usercredentialparameter-79c06dd.md) 
 
 
 

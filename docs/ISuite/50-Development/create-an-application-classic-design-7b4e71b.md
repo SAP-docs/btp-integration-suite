@@ -9,14 +9,14 @@ Create an Application to consume the required APIs.
 
 **Prerequisites**
 
--   You either have the `AuthGroup.API.ApplicationDeveloper` role or `AuthGroup.API.Admin` role assigned to you. For more information on roles, see [Assign User Roles](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:.
+-   You either have the `AuthGroup.API.ApplicationDeveloper` role or `AuthGroup.API.Admin` role assigned to you. For more information on roles, see [Assign User Roles in API Management](../20-Working_with_SAP_Integration_Suite_Home/assign-user-roles-in-api-management-911ca5a.md).
 
     > ### Note:  
     > The AuthGroup.API.ApplicationDeveloper role must not be assigned manually to a user form the SAP BTP Cockpit and this role must not be a part of any user group assignment.
     > 
     > This role is assigned by default to a user who onboards to the API business hub enterprise using the Self-registration process or via Add User flow.
     > 
-    > A user must be onboarded to API business hub enterprise only via Self-registration or Add User flow. For more information on registering in API business hub enterprise, see [Register on API Business Hub Enterprise](register-on-api-business-hub-enterprise-c85fafe.md). In the Add User flow, the API business hub enterprise admin adds a user who wants to be onboarded to API business hub enterprise. However, the user who is requesting to be onboarded must ensure that the user details provided to the admin matches the user details obtained from the response of <developer portal url\>/api/1.0/users.
+    > A user must be onboarded to API business hub enterprise only via Self-registration or Add User flow. For more information on registering in API business hub enterprise, see [Register on API business hub enterprise](register-on-api-business-hub-enterprise-c85fafe.md). In the Add User flow, the API business hub enterprise admin adds a user who wants to be onboarded to API business hub enterprise. However, the user who is requesting to be onboarded must ensure that the user details provided to the admin matches the user details obtained from the response of <developer portal url\>/api/1.0/users.
 
 
 An application is a discrete representation of the actual developer’s application. It provides the developer with an API key to pass-in with every request to the API.
@@ -47,7 +47,7 @@ In API Management, similar APIs are bundled together to form products, which are
     -   1500000 shows as 1.5M and 1000000000 shows as 1G
 
 3.  To create an application, choose ![](images/Add_icon_587bccc.png) in the *Applications* section.
-4.  In the *Create an Application* dialog, enter a ***Title***, a ***Description*** \(optional\), and a ***Callback URL*** \(optional\) for the application.
+4.  In the *Create an Application* dialog, enter a `Title`, a `Description` \(optional\), and a `Callback URL` \(optional\) for the application.
 5.  Choose ![](images/Add_icon_587bccc.png) to add products to this application.
 6.  In the *Add Products* dialog, select the products that you want to associate with the application.
 
@@ -101,8 +101,8 @@ A API business hub enterprise administrator can perform the following tasks:
     -   1500000 shows as 1.5M and 1000000000 shows as 1G
 
 3.  To create an application, under *Applications* section, choose ![](images/Add_icon_587bccc.png).
-4.  In the *Create an Application* dialog, enter a ***Title***, a ***Description*** \(optional\), and a ***Callback URL*** \(optional\) for the application.
-5.  As an administrator, you have the option to create an application on behalf of a user \(Application Developer\). To achieve this task, select the *Create this application on behalf of someone else* checkbox and enter the ***User ID*** of the user on behalf of whom you are creating the application. If you already possess an application key and secret, then select the *Already have Application Key and Secret* checkbox and enter the ***Application Key*** and ***Application Secret*** .
+4.  In the *Create an Application* dialog, enter a `Title`, a `Description` \(optional\), and a `Callback URL` \(optional\) for the application.
+5.  As an administrator, you have the option to create an application on behalf of a user \(Application Developer\). To achieve this task, select the *Create this application on behalf of someone else* checkbox and enter the `User ID` of the user on behalf of whom you are creating the application. If you already possess an application key and secret, then select the *Already have Application Key and Secret* checkbox and enter the `Application Key` and `Application Secret` .
 
     > ### Note:  
     > Application key and secret of an existing org can't be used in a new application in a new org. This implies that you'll not be able to use the same application key and secret in multiple orgs within the same data center and region.

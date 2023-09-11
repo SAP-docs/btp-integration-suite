@@ -2,14 +2,16 @@
 
 # Configure the FTP Receiver Adapter
 
-The FTP \(File Transfer Protocol\) receiver adapter connects an SAP Cloud Integration tenant to a remote system using TCP \(Transmission Control Protocol\) to write files to the system.
+The FTP \(File Transfer Protocol\) receiver adapter connects SAP Integration Suite to a remote system using TCP \(Transmission Control Protocol\) to write files to the system.
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -22,14 +24,16 @@ The FTP \(File Transfer Protocol\) receiver adapter connects an SAP Cloud Integr
 
 If you’ve configured a receiver FTP adapter, message processing is performed as follows at runtime: The tenant sends a request to an FTP server \(think of this as the receiver system\), and the data flow is in the same direction, from the tenant to the FTP server. In other words, the tenant writes files to the FTP server \(from where the communication partner can read them\).
 
- ![](images/FTP_Receiver_2_8ca709e.png) 
+![](images/FTP_Receiver_2_8ca709e.png)
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
@@ -38,13 +42,13 @@ If you’ve configured a receiver FTP adapter, message processing is performed a
 > 
 > -   Only the passive mode is supported for the FTP Receiver Adapter.
 > 
+> -   The FTP adapter does not support TLS session re-use.
+> 
 > -   The transfer mode is *BINARY*. You can set the charset by setting the `camelcharsetname` header.
 > 
 > -   You can establish a connection to your on-premise system by using Cloud Connector: [SAP Connectivity Service](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e933fd930039402c907d5afaa75eb0e1.html).
 > 
-> -   This adapter doesn’t support connections to SFTP servers.
-> 
->     See [Configure the SFTP Receiver Adapter](configure-the-sftp-receiver-adapter-4ef52cf.md).
+> -   This adapter doesn’t support connections to SFTP servers. See [Configure the SFTP Receiver Adapter](configure-the-sftp-receiver-adapter-4ef52cf.md).
 
 Once you’ve created a receiver channel and selected the FTP receiver adapter, you can configure the following attributes. Select the *General* tab and provide values in the fields as follows.
 
@@ -111,7 +115,7 @@ Description
 <tr>
 <td valign="top">
 
- *Directory* 
+*Directory* 
 
 
 
@@ -120,7 +124,7 @@ Description
 
 Use the relative path to write the file to a directory.
 
-Example: ***parentdirectory/childdirectory***
+Example: `parentdirectory/childdirectory`
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
@@ -131,7 +135,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *File Name* 
+*File Name* 
 
 
 
@@ -156,7 +160,7 @@ The endpoint URL that is actually used at runtime is displayed in the message pr
 <tr>
 <td valign="top">
 
- *Append Timestamp* 
+*Append Timestamp* 
 
 
 
@@ -184,14 +188,14 @@ If the file has an extension \(for example, .xml\), the timestamp is appended to
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
 </td>
 <td valign="top">
 
-Host name or IP address of the FTP server and an optional port, for example, ***my.host.org:21***.
+Host name or IP address of the FTP server and an optional port, for example, `my.host.org:21`.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
@@ -202,7 +206,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -251,7 +255,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Encryption* 
+*Encryption* 
 
 
 
@@ -285,7 +289,7 @@ Specify the transport encryption. You can choose between the following options:
 <tr>
 <td valign="top">
 
- *Timeout \(in ms\)* 
+*Timeout \(in ms\)* 
 
 
 
@@ -306,7 +310,7 @@ If the property `SAP_FtpTimeout` is defined, its value is used to specify this p
 <tr>
 <td valign="top">
 
- *Maximum Reconnect Attempts* 
+*Maximum Reconnect Attempts* 
 
 
 
@@ -328,7 +332,7 @@ If the property `SAP_FtpMaxReconnect` is defined, its value is used to specify t
 <tr>
 <td valign="top">
 
- *Reconnect Delay \(in ms\)* 
+*Reconnect Delay \(in ms\)* 
 
 
 
@@ -348,7 +352,7 @@ If the property `SAP_FtpMaxReconDelay` is defined, its value is used to specify 
 <tr>
 <td valign="top">
 
- *Automatically Disconnect* 
+*Automatically Disconnect* 
 
 
 
@@ -390,7 +394,7 @@ Description
 <tr>
 <td valign="top">
 
- *Change Directories Stepwise* 
+*Change Directories Stepwise* 
 
 
 
@@ -426,7 +430,7 @@ If the property `SAP_FtpCreateDir` is defined, its value is used to specify this
 <tr>
 <td valign="top">
 
- *Flatten File Names* 
+*Flatten File Names* 
 
 
 
@@ -444,7 +448,7 @@ If the property `SAP_FtpFlattenFileName` is defined, its value is used to specif
 <tr>
 <td valign="top">
 
- *Prevent Directory Traversal* 
+*Prevent Directory Traversal* 
 
 
 

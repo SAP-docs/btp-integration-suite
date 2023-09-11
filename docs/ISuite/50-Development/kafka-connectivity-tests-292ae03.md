@@ -70,7 +70,7 @@ Enter the port name of the messaging server.
 
 Specify the maximum amount of time the client waits for a response from the kafka broker.
 
-Default value is: ***10000 ms***
+Default value is: `10000 ms`
 
 
 

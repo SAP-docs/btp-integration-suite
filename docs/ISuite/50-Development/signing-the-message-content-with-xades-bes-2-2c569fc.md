@@ -47,47 +47,47 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Commitment* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the commitment. You can select one of the following values:
 
-    -   ***Proof of origin*** 
+    -   `Proof of origin` 
 
         Indicates that the signer recognizes to have created, approved and sent the signed data object.
 
         The URI for this commitment is: [http://uri.etsi.org/01903/v1.2.2\#ProofOfOrigin](http://uri.etsi.org/01903/v1.2.2#ProofOfOrigin).
 
-    -   ***Proof of receipt*** 
+    -   `Proof of receipt` 
 
         Indicates that signer recognizes to have received the content of the signed data object.
 
         The URI for this commitment is: [http://uri.etsi.org/01903/v1.2.2\#ProofOfReceipt](http://uri.etsi.org/01903/v1.2.2#ProofOfReceipt).
 
-    -   ***Proof of delivery*** 
+    -   `Proof of delivery` 
 
         Indicates that the trusted service provider \(TSP\) providing that indication has delivered a signed data object in a local store accessible to the recipient of the signed data object.
 
         The URI for this commitment is: [http://uri.etsi.org/01903/v1.2.2\#ProofOfDelivery](http://uri.etsi.org/01903/v1.2.2#ProofOfDelivery).
 
-    -   ***Proof of sender*** 
+    -   `Proof of sender` 
 
         Indicates that the entity providing that indication has sent the signed data object \(but not necessarily created it\).
 
         The URI for this commitment is: [http://uri.etsi.org/01903/v1.2.2\#ProofOfSender](http://uri.etsi.org/01903/v1.2.2#ProofOfSender).
 
-    -   ***Proof of approval*** 
+    -   `Proof of approval` 
 
         Indicates that the signer has approved the content of the signed data object.
 
         The URI for this commitment is: [http://uri.etsi.org/01903/v1.2.2\#ProofOfApproval](http://uri.etsi.org/01903/v1.2.2#ProofOfApproval).
 
-    -   ***Proof of creation*** 
+    -   `Proof of creation` 
 
         Indicates that the signer has created the signed data object \(but not necessarily approved, nor sent it\).
 
@@ -100,14 +100,14 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Description*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a free text description of the commitment.
 
 
@@ -116,14 +116,14 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Documentation Reference*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter references \(URIs\) to one or more documents where the commitment is described.
 
 
@@ -132,14 +132,14 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Commitment Qualifier*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter additional qualifying information on the commitment made by the signer.
 
     Enter a text or an XML fragment with the root element *CommitmentTypeQualifier*.

@@ -34,7 +34,7 @@ You use the *Local Integration Process* to define an integration process that is
 
 3.  If you want to specify the transaction handling of the message, choose a value for *Transaction Handling* under the *Processing* tab.
 
-    To know more about Transcation Handling, see: [Defining Transaction Handling](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/2a5d4bc3b5da46df84b26ac96450587b.html "You can configure transaction handling on integration process or local integration process level.") :arrow_upper_right:
+    To know more about Transcation Handling, see: [Defining Transaction Handling](define-transaction-handling-2a5d4bc.md)
 
 4.  If you want to configure the elements inside the local integration process, refer to the documentation relevant to those elements.
 

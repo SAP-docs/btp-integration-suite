@@ -27,17 +27,20 @@ A token endpoint is simply a URI path that the system uses to identify requests 
 > ```
 > 
 > <OAuthV2 async="false" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
->    <!-- this flag has to be set when you want to work with third-party access tokens -->
->    <ExpiresIn ref="kvm.expiry.value">360000</ExpiresIn> <!-- in mili seconds -->
->    <ExternalAuthorization>false</ExternalAuthorization>
->     <GrantType>request.queryparam.grant_type</GrantType>
->    <Operation>GenerateAccessToken</Operation>
->    <GenerateResponse enabled="true"/>
->    <SupportedGrantTypes>
->        <GrantType>client_credentials</GrantType>
->    </SupportedGrantTypes>
+> <!-- this flag has to be set when you want to work with third-party access tokens -->
+> <ExpiresIn ref="kvm.expiry.value">360000</ExpiresIn> <!-- in mili seconds -->
+> <ExternalAuthorization>false</ExternalAuthorization>
+> <GrantType>request.queryparam.grant_type</GrantType>
+> <Operation>GenerateAccessToken</Operation>
+> <PassWord>request.formparam.password</PassWord>
+> <RedirectUri/>
+> <RefreshToken/>
+> <RefreshTokenExpiresIn ref="kvm.expiry.value">240000</RefreshTokenExpiresIn>
+> <GenerateResponse enabled="true"/>
+> <SupportedGrantTypes>
+> <GrantType>client_credentials</GrantType>
+> </SupportedGrantTypes>
 > </OAuthV2>
-> 
 > ```
 
 These variables are set when the GenerateAccessToken policy operation executes successfully for the authorization code, password, and client credentials grant type flows. Note that refresh token variables do not apply to and are not set by the client credentials grant type flow.

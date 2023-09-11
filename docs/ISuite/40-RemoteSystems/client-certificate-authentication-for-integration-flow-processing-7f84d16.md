@@ -133,56 +133,56 @@ In detail, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     SAP certificate
 
 
     
     </td>
     <td valign="top">
-
-     *integration-flow* 
+    
+    *integration-flow* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Keep standard role `ESBMessaging.send` or use one or more custom roles.
 
 
     
     </td>
     <td valign="top">
-
-     *Client Credentials* 
+    
+    *Client Credentials* 
 
 
     
     </td>
     <td valign="top">
-
-     *Certificate* 
+    
+    *Certificate* 
 
 
     
     </td>
     <td valign="top">
-
+    
     n.a.
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify validity in days.
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify key size.
 
 
@@ -191,56 +191,56 @@ In detail, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     External certificate
 
 
     
     </td>
     <td valign="top">
-
-     *integration-flow* 
+    
+    *integration-flow* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Keep standard role `ESBMessaging.send` or use one or more custom roles.
 
 
     
     </td>
     <td valign="top">
-
-     *Client Credentials* 
+    
+    *Client Credentials* 
 
 
     
     </td>
     <td valign="top">
-
-     *External Certificate* 
+    
+    *External Certificate* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Add PEM-encoded X.509 certificate.
 
 
     
     </td>
     <td valign="top">
-
+    
     n.a.
 
 
     
     </td>
     <td valign="top">
-
+    
     n.a.
 
 

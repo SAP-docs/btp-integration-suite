@@ -36,14 +36,14 @@ By answering configurable questionnaires, you can capture the interface requirem
     </tr>
     <tr>
     <td valign="top">
-
+    
     Integration content
 
 
     
     </td>
     <td valign="top">
-
+    
     Type of integration scenario
 
 
@@ -52,14 +52,14 @@ By answering configurable questionnaires, you can capture the interface requirem
     </tr>
     <tr>
     <td valign="top">
-
+    
     Connectivity
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide details of protocols, business applications, technologies, and adapters.
 
 
@@ -68,14 +68,14 @@ By answering configurable questionnaires, you can capture the interface requirem
     </tr>
     <tr>
     <td valign="top">
-
+    
     API design and management
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide interface structure at the sender and receiver and integration with any other business applications.
 
 
@@ -84,14 +84,14 @@ By answering configurable questionnaires, you can capture the interface requirem
     </tr>
     <tr>
     <td valign="top">
-
+    
     Data format and validation
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide the data format of your integration scenario exchange with sender and receiver.
 
 
@@ -100,14 +100,14 @@ By answering configurable questionnaires, you can capture the interface requirem
     </tr>
     <tr>
     <td valign="top">
-
+    
     Data Orchestration
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide details of routing rules, aggregate messages, and sequence.
 
 
@@ -116,14 +116,14 @@ By answering configurable questionnaires, you can capture the interface requirem
     </tr>
     <tr>
     <td valign="top">
-
+    
     Security
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide details of digital encryption.
 
 
@@ -132,14 +132,14 @@ By answering configurable questionnaires, you can capture the interface requirem
     </tr>
     <tr>
     <td valign="top">
-
+    
     Monitoring and Operations
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide details on how do message and error processing.
 
 

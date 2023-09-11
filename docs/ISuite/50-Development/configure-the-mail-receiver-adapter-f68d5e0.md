@@ -7,16 +7,18 @@ You use the mail receiver adapter to send encrypted messages by e-mail.
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 The mail receiver adapter opens a connection to a mail server and sends messages \(as e-mail\) to it.
 
- ![](images/Mail_Receiver_8c3073e.png) 
+![](images/Mail_Receiver_8c3073e.png)
 
 > ### Note:  
 > For an example of how to configure the mail receiver adapter in a dedicated demo integration scenario, check out the following topic: [Create the Mail Receiver Channel](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a6966fd46aef4e61ada1dcd11dadfc8b.html "Add a Mail receiver channel to enable the integration flow to send messages to an e-mail account.") :arrow_upper_right:.
@@ -110,7 +112,7 @@ Use one of the following open ports for external mail servers:
 
 Example \(to connect to Yahoo mail server\):
 
-***smtp.mail.yahoo.com:465***
+`smtp.mail.yahoo.com:465`
 
 > ### Note:  
 > If no port is specified in the Address field, by default port 25 is used. This is not recommended. Recommended ports are 587 for SMTP+STARTTLS and 465 for SMTPS.
@@ -169,6 +171,8 @@ To connect to a cloud connector instance associated with your account, enter the
 
 Specifies the network timeout for the connection attempt to the server.
 
+The default value is 30000. The timeout must be larger than 0, but less than five minutes.
+
 
 
 </td>
@@ -214,7 +218,47 @@ Defines whether encryption is used. The possible values are:
 <tr>
 <td valign="top">
 
- *Credential Name* \(only if *Plain User Name/Password* or *Encrypted User/Password* is selected for *Authentication*\)
+*Authentication* 
+
+
+
+</td>
+<td valign="top">
+
+Specifies which mechanism is used to authenticate against the server with a user name and password combination. Possible values are:
+
+-   *None*
+
+    No authentication is attempted. No credential can be chosen.
+
+-   *Plain User Name/Password*
+
+    The user name and password are sent in plain text. Only use this option together with SSL or TLS, as otherwise an attacker could obtain the password.
+
+-   *Encrypted User/Password* 
+
+    The user name and password are hashed before being sent to the server. This authentication mechanism \(CRAM-MD5 and DIGEST-MD5\) is secure even without encryption.
+
+-   *OAuth2 Authorization Code*
+
+    The authentification is done via an authorization server as an intermediary step. The client can exchange the OAuth2 Authorization Code for an access token. Your user credentials are never shared with the client.
+
+    See: [Deploying an OAuth2 Authorization Code](deploying-an-oauth2-authorization-code-081bfd7.md)
+
+    > ### Note:  
+    > *Personal Accounts:* Microsoft does not support OAuth for personal accounts for IMAP, POP3, and SMTP. This restriction does not exist for basic authentication.
+
+-   See also: [Managing Security Material](managing-security-material-b8ccb53.md)
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Credential Name* \(only if *Plain User Name/Password* or *Encrypted User/Password* is selected for *Authentication*\)
 
 
 
@@ -436,7 +480,7 @@ You can select from the following encodings:
 <tr>
 <td valign="top">
 
- *Name* \(under *Mail Attachments*\)
+*Name* \(under *Mail Attachments*\)
 
 
 
@@ -452,7 +496,7 @@ Specifies the file name of the attachment.
 <tr>
 <td valign="top">
 
- *MIME Type* \(under *Attachments*\)
+*MIME Type* \(under *Attachments*\)
 
 
 
@@ -487,7 +531,7 @@ You can select from the following MIME types:
 <tr>
 <td valign="top">
 
- *Source* \(under *Attachments*\)
+*Source* \(under *Attachments*\)
 
 
 
@@ -602,7 +646,7 @@ Description
 <tr>
 <td valign="top">
 
- *Signature and Encryption Type* 
+*Signature and Encryption Type* 
 
 
 

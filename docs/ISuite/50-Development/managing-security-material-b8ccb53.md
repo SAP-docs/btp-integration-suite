@@ -41,7 +41,7 @@ Description
 <tr>
 <td valign="top">
 
- *Name* 
+*Name* 
 
 
 
@@ -57,7 +57,7 @@ Display name of the artifact
 <tr>
 <td valign="top">
 
- *Type* 
+*Type* 
 
 
 
@@ -79,10 +79,6 @@ Possible values:
 
 -   *Known Hosts \(SSH\)*
 
--   *PGP Public Keyring*
-
--   *PGP Secret Keyring*
-
 
 
 
@@ -91,7 +87,7 @@ Possible values:
 <tr>
 <td valign="top">
 
- *Status* 
+*Status* 
 
 
 
@@ -123,7 +119,7 @@ Possible values:
 <tr>
 <td valign="top">
 
- *Deployed By* 
+*Deployed By* 
 
 
 
@@ -139,7 +135,7 @@ User who deployed the artifact
 <tr>
 <td valign="top">
 
- *Deployed On* 
+*Deployed On* 
 
 
 
@@ -178,6 +174,22 @@ To sort and filter the content of the table, choose *Table Settings* \(:gear:\).
 <td valign="top">
 
 To create/deploy a new artifact, choose *Create* and select the artifact type \(possible for the following artifact types: *User Credentials*, *OAuth2 Client Credentials*, *OAuth2 SAML Bearer Assertion*, *OAuth2 Authorization Code* and *Secure Parameter*\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Upload*
+
+
+
+</td>
+<td valign="top">
+
+To add a *Known Hosts \(SSH\)* file, select *Upload*.
 
 
 
@@ -260,7 +272,7 @@ You can also delete an artifact \(supported for all artifact types except *Keyst
 
 [Deploying an OAuth2 Client Credentials Artifact](deploying-an-oauth2-client-credentials-artifact-801b106.md "Many web servers use OAuth 2.0 for authorization purposes. If you want to connect to a system that uses OAuth 2.0 authentication, you need to deploy an OAuth2 Credentials artifact using the following procedure.")
 
-[Deploying a PGP Secret Keyring](deploying-a-pgp-secret-keyring-9d8e1a9.md "This artifact contains the PGP Secret Keys for the usage of Open Pretty Good Privacy (PGP). The private key enables the tenant to decrypt or sign messages.")
+[Deploying a PGP Secret Keyring](deploying-a-pgp-secret-keyring-9d8e1a9.md "This artifact contains the PGP secret keys for the usage of Open Pretty Good Privacy (PGP). The private key enables the tenant to decrypt or sign messages.")
 
 [Deploying a PGP Public Keyring](deploying-a-pgp-public-keyring-7f04458.md "This artifact contains the public key that enables the tenant to encrypt or verify messages using the Pretty Good Privacy (PGP) standard.")
 

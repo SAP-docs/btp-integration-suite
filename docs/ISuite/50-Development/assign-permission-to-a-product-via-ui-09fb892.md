@@ -11,13 +11,18 @@ Assign permission to a product in the SAP Integration Suite .
 ## Prerequisites
 
 -   You are assigned the `APIPortal.Administrator` role.
--   You must have created a custom role on the SAP BTP Cockpit Cloud Foundry environment. For more information on creating a custom role, refer [here](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/9d827cd46b6c486f8f74482c828e67cd.html "Create a custom role for API Products in API Management.") :arrow_upper_right:.
+-   You must have created a custom role on the SAP BTP Cockpit Cloud Foundry environment. For more information on creating a custom role, refer [here](../20-Working_with_SAP_Integration_Suite_Home/creating-a-custom-role-9d827cd.md).
 
 
 
 ## Context
 
 Whenever you create a product or edit a draft product, permissions can be added to product. Use this procedure to grant permission to user roles for discovering and subscribing to the product in the API business hub enterprise. Only users who are assigned the required role can discover and subscribe to the product.
+
+> ### Note:  
+> Currently, we do not support assigning of permissions to the products defined in the remote API portals that are connected to a centralised API business hub enterprise.
+> 
+> \*Remote API portals are those that are not in the same subaccount as the centralised API business hub enterprise and are configured via the manage connections. For more information, [Centralized API business hub enterprise \[New Design\]](centralized-api-business-hub-enterprise-new-design-38422de.md) and [Centralized API business hub enterprise \[Classic Design\]](centralized-api-business-hub-enterprise-classic-design-33b706f.md).
 
 
 

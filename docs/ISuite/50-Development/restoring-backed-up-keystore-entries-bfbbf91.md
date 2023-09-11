@@ -45,14 +45,14 @@ You can restore keystore entries that you have backed up. For example, you can r
     </tr>
     <tr>
     <td valign="top">
-
-     *Alias* 
+    
+    *Alias* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Uniquely identifies the keystore entry.
 
     A keystore entry can be either be owned by the tenant administrator or by SAP.
@@ -65,14 +65,14 @@ You can restore keystore entries that you have backed up. For example, you can r
     </tr>
     <tr>
     <td valign="top">
-
-     *Type* 
+    
+    *Type* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Indicates whether the entry is a *Certificate* \(X.509 certificate\) or a *Key Pair* \(with public and private key and an X.509 certificate chain\).
 
     -   Key Pair
@@ -90,14 +90,14 @@ You can restore keystore entries that you have backed up. For example, you can r
     </tr>
     <tr>
     <td valign="top">
-
-     *Valid Until* 
+    
+    *Valid Until* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Indicates the expiration date.
 
     If keys and certificates have expired, the date is highlighted in red.
@@ -108,14 +108,14 @@ You can restore keystore entries that you have backed up. For example, you can r
     </tr>
     <tr>
     <td valign="top">
-
-     *Last Modified At* 
+    
+    *Last Modified At* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Indicates the date and time the entry was last modified.
 
 
@@ -124,14 +124,14 @@ You can restore keystore entries that you have backed up. For example, you can r
     </tr>
     <tr>
     <td valign="top">
-
-     *Subject DN* 
+    
+    *Subject DN* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Indicates the Subject distinguished name \(DN\) which entails information about the owner of the certificate such as the common name of the certificate owner \(CN\), the organization \(O\), or the country or region \(C\).
 
 
@@ -140,14 +140,14 @@ You can restore keystore entries that you have backed up. For example, you can r
     </tr>
     <tr>
     <td valign="top">
-
-     *Issuer DN* 
+    
+    *Issuer DN* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Indicates the Issuer distinguished name \(DN\) which entails information about the issuer of the certificate such as common name of the certificate issuer \(CN\), the organization \(O\), or the country or region \(C\).
 
 
@@ -156,14 +156,14 @@ You can restore keystore entries that you have backed up. For example, you can r
     </tr>
     <tr>
     <td valign="top">
-
-     *Actions* 
+    
+    *Actions* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose the <span class="SAP-icons"></span> \(Actions\) button for a key pair or certificate to perform an action. The available actions depend on the type of the keystore entry and whether it is owned by SAP.
 
     -   *Rename*
@@ -194,5 +194,5 @@ You can restore keystore entries that you have backed up. For example, you can r
 
 [Backing Up Keystore Entries](backing-up-keystore-entries-b8e03b7.md "Back up keystore entries owned by the tenant administrator.")
 
-[https://blogs.sap.com/2017/08/14/cloud-integration-backuprestore-using-keystore-monitor/](https://blogs.sap.com/2017/08/14/cloud-integration-backuprestore-using-keystore-monitor/)
+[Cloud Integration – Backup/Restore using Keystore Monitor](https://blogs.sap.com/2017/08/14/cloud-integration-backuprestore-using-keystore-monitor/)
 

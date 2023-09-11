@@ -10,10 +10,10 @@ For more information, see:
 
 -   [SAP Integration Solution Advisory Methodology](sap-integration-solution-advisory-methodology-a2e17f3.md)
 
--   [Glossary](glossary-d352b13.md)
+-   [Glossary for Integration Assessment](glossary-for-integration-assessment-d352b13.md)
 
 
-Reviewing and adjusting the ISA-M settings is the task of the enterprise architect \(see [Personas](personas-5df5af1.md)\).
+Reviewing and adjusting the ISA-M settings is the task of the enterprise architect \(see [Personas](../60-Security/personas-5df5af1.md)\).
 
 Go to the *Settings* section to inspect the available ISA-M master data predefined by SAP or to adjust the settings by adding your own data.
 
@@ -461,18 +461,16 @@ Type of Questionnaire
 <tr>
 <td valign="top">
 
-*Style Request*
+*Integration Request*
 
 
 
 </td>
 <td valign="top">
 
-Questionnaire for a dedicated integration style
+Questionnaire for a specific integration request.
 
 Use this kind of questionnaire to guide the user through the creation of an interface request.
-
-When creating an interface request, the business domain expert needs to specify a dedicated integration style, for example, process integration. The associated questionnaire, therefore, also needs to be related to a dedicated integration style.
 
 
 
@@ -497,6 +495,16 @@ Use this kind of questionnaire to guide the user through the creation of a busin
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio957de135ee4c4d5d9778355d76760572__section_bkj_ys1_rwb"/>
+
+## Content Life Cycle
+
+The Content Life Cycle update gives you the ability to incorporate relevant changes to the latest standard content, delivered by SAP, into your existing SAP standard content. You can select/deselect the listed updates based on your requirements and apply them as the latest version of your dataset.
+
+See: [Content Life Cycle](content-life-cycle-06581f4.md)
 
 **Related Information**  
 

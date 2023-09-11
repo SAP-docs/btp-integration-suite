@@ -7,9 +7,11 @@ The SFTP receiver adapter connects an SAP Cloud Integration tenant to a remote s
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -22,11 +24,11 @@ The SFTP receiver adapter connects an SAP Cloud Integration tenant to a remote s
 
 If you have configured a **receiver** SFTP adapter, message processing is performed as follows at runtime: The tenant sends a request to an SFTP server \(think of this as the receiver system\), and the data flow is in the same direction, from the tenant to the SFTP server. In other words, the tenant writes files to the SFTP server \(from where the communication partner can read them\).
 
-   
+  
   
 **SFTP Receiver Adapter: Tenant writes file to SFTP server**
 
- ![](images/SFTP_Receiver_Adapter_-_Tenant_writes_to_server_e380f4a.png "SFTP Receiver Adapter: Tenant writes file to SFTP server") 
+![](images/SFTP_Receiver_Adapter_-_Tenant_writes_to_server_e380f4a.png "SFTP Receiver Adapter: Tenant writes file to SFTP server")
 
 > ### Note:  
 > This adapter does **not** support connections to FTP servers.
@@ -98,7 +100,7 @@ Description
 <tr>
 <td valign="top">
 
- *Directory* 
+*Directory* 
 
 
 
@@ -107,7 +109,7 @@ Description
 
 Use the relative path to write the file to a directory.
 
-Example: ***parentdirectory/childdirectory***
+Example: `parentdirectory/childdirectory`
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
@@ -118,7 +120,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *File Name* 
+*File Name* 
 
 
 
@@ -145,7 +147,7 @@ The endpoint URL that is actually used at runtime is displayed in the message pr
 <tr>
 <td valign="top">
 
- *Append Timestamp* 
+*Append Timestamp* 
 
 
 
@@ -175,14 +177,14 @@ The appended timestamp relates to Greenwich Mean Time \(GMT\) time zone.
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
 </td>
 <td valign="top">
 
-Host name or IP address of the SFTP server and an optional port, for example, ***my.host.org:22***.
+Host name or IP address of the SFTP server and an optional port, for example, `my.host.org:22`.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
@@ -193,7 +195,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -242,7 +244,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *User Name* 
+*User Name* 
 
 
 
@@ -282,14 +284,14 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Timeout \(in ms\)* 
+*Timeout \(in ms\)* 
 
 
 
 </td>
 <td valign="top">
 
-Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted while establishing a connection or performing a read operation. Enter a minimum value bigger than ***0***, and smaller than or equal to the maximum value of ***299999***. The default ist set to ***10000***.
+Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted while establishing a connection or performing a read operation. Enter a minimum value bigger than `0`, and smaller than or equal to the maximum value of `299999`. The default ist set to `10000`.
 
 If the property `SAP_FtpTimeout` is defined, its value is used to specify this parameter at runtime and will overrun the timeout specified in the UI.
 
@@ -300,14 +302,14 @@ If the property `SAP_FtpTimeout` is defined, its value is used to specify this p
 <tr>
 <td valign="top">
 
- *Maximum Reconnect Attempts* 
+*Maximum Reconnect Attempts* 
 
 
 
 </td>
 <td valign="top">
 
-Maximum number of attempts allowed to reconnect to the SFTP server before message processing starts. The default is set to ***3***. Enter ***0*** to disable this behavior.
+Maximum number of attempts allowed to reconnect to the SFTP server before message processing starts. The default is set to `3`. Enter `0` to disable this behavior.
 
 > ### Note:  
 > The setting is only relevant for establishing the initial connection to the server. If the server connection is interrupted during message processing, the connection will not be recovered. A retry attempt of the interrupted message processing can only be achieved by explicitly modeling this functionality via integration flow.
@@ -321,7 +323,7 @@ If the property `SAP_FtpMaxReconnect` is defined, its value is used to specify t
 <tr>
 <td valign="top">
 
- *Reconnect Delay \(in ms\)* 
+*Reconnect Delay \(in ms\)* 
 
 
 
@@ -330,7 +332,7 @@ If the property `SAP_FtpMaxReconnect` is defined, its value is used to specify t
 
 Time \(in milliseconds\) the system waits before attempting to reconnect to the SFTP server.
 
-Default value: ***1000***
+Default value: `1000`
 
 If the property `SAP_FtpMaxReconDelay` is defined, its value is used to specify this parameter at runtime.
 
@@ -341,7 +343,7 @@ If the property `SAP_FtpMaxReconDelay` is defined, its value is used to specify 
 <tr>
 <td valign="top">
 
- *Automatically Disconnect* 
+*Automatically Disconnect* 
 
 
 
@@ -351,6 +353,24 @@ If the property `SAP_FtpMaxReconDelay` is defined, its value is used to specify 
 Disconnect from the SFTP server after each message processing.
 
 If the property `SAP_FtpDisconnect` is defined, its value is used to specify this parameter at runtime \(possible values: `true` and `false`\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Enable Support for Deprecated Algorithms* 
+
+
+
+</td>
+<td valign="top">
+
+Select to allow several deprecated key exchange, public key, host key, and encryption algorithms like the ‘diffie-hellman-group1-sha1’ key exchange algorithm or the ‘ssh-rsa’ host key and public key algorithm.
+
+For more information on compatibility and support, see SAP KBA [3079510](https://me.sap.com/notes/3079510).
 
 
 
@@ -381,7 +401,7 @@ Description
 <tr>
 <td valign="top">
 
- *Change Directories Stepwise* 
+*Change Directories Stepwise* 
 
 
 
@@ -417,7 +437,7 @@ If the property `SAP_FtpCreateDir` is defined, its value is used to specify this
 <tr>
 <td valign="top">
 
- *Flatten File Names* 
+*Flatten File Names* 
 
 
 
@@ -435,7 +455,7 @@ If the property `SAP_FtpFlattenFileName` is defined, its value is used to specif
 <tr>
 <td valign="top">
 
- *Prevent Directory Traversal* 
+*Prevent Directory Traversal* 
 
 
 
@@ -536,7 +556,7 @@ If selected, files are stored temporarily with a temporary file name before bein
 
 Enter a unique temporary file name.
 
-The file name has to be unique so that the temporary file is not overwritten by parallel running messages. This can be achieved by using variable parts in the file name, such as ***$\{file:name\}.tmp*** or ***target\_$\{exchangeId\}.temp***.
+The file name has to be unique so that the temporary file is not overwritten by parallel running messages. This can be achieved by using variable parts in the file name, such as `${file:name}.tmp` or `target_${exchangeId}.temp`.
 
 
 
@@ -547,7 +567,7 @@ The file name has to be unique so that the temporary file is not overwritten by 
 **Related Information**  
 
 
-[https://blogs.sap.com/2018/11/16/cloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector/](https://blogs.sap.com/2018/11/16/cloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector/)
+[Cloud Integration - How to Connect to an On-Premise sftp server via Cloud Connector](https://blogs.sap.com/2018/11/16/cloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector/)
 
 [Setting Up Outbound SFTP Connections \(Details\)](../40-RemoteSystems/setting-up-outbound-sftp-connections-details-15401a7.md "")
 

@@ -94,7 +94,7 @@ You can design a value mapping in the Web UI *Design* section.
 <tr>
 <td valign="top">
 
- OData API 
+OData API 
 
 
 
@@ -225,7 +225,7 @@ The tenant administrator can maintain custom tags using one of the following opt
 
 More information:
 
--   [Creating Custom Tags](creating-custom-tags-71c0448.md)
+-   [Creating Custom Tags](IntegrationSettings/creating-custom-tags-71c0448.md)
 
 -   [SAP Cloud Integration – Custom Tags](https://blogs.sap.com/2020/05/11/sap-cloud-integration-custom-tags/) \(SAP Community blog\)
 
@@ -371,6 +371,24 @@ For integration artifacts that have reached the worker node, another status beco
 <tr>
 <td valign="top">
 
+MDI Delta Token
+
+
+
+</td>
+<td valign="top">
+
+Represents the delta token for the SAP Master Data Integration receiver adapter \(MDI receiver adapter\).
+
+See: [SAP Master Data Integration Receiver Adapter](sap-master-data-integration-receiver-adapter-e91e373.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Runtime Artifacts
 
 
@@ -478,7 +496,7 @@ For general information about query options, see [Query Options](query-options-9
 
 ## Example Requests
 
-You find various example requests on SAP API Business Hub at [https://api.sap.com/api/IntegrationContent/](https://api.sap.com/api/IntegrationContent/).
+You find various example requests on SAP Business Accelerator Hub at [https://api.sap.com/api/IntegrationContent/](https://api.sap.com/api/IntegrationContent/).
 
 For more example requests, see [Integration Content Example Requests](integration-content-example-requests-60cc8f1.md).
 
@@ -488,11 +506,11 @@ To trigger the modifying actions \(POST, PUT, and DELETE\), you need to fetch a 
 
 
 
-On SAP API Business Hub, you can test API calls against a sandbox tenant or against a custom tenant \(to be configured under *API Environment*\). If you want to perform an API call against your custom tenant using an HTTP client such like Postman, make sure that the request URL is composed in the following way:
+On SAP Business Accelerator Hub, you can test API calls against a sandbox tenant or against a custom tenant \(to be configured under *API Environment*\). If you want to perform an API call against your custom tenant using an HTTP client such like Postman, make sure that the request URL is composed in the following way:
 
 `https://<host address>/api/v1/<relative resource path>`
 
 The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
 
-You can find the relative resource path for each operation on SAP API Business Hub.
+You can find the relative resource path for each operation on SAP Business Accelerator Hub.
 

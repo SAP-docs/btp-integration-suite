@@ -59,14 +59,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Name for the artifact that you want to deploy on the tenant.
 
 
@@ -75,18 +75,18 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Grant Type
 
 
     
     </td>
     <td valign="top">
-
+    
     The grant type is *OAuth2SAMLBearerAssertion* that is uneditable.
 
     > ### Note:  
-    > Read the [blog](https://blogs.sap.com/2018/07/30/sap-cloud-platform-integration-principal-propagation-with-successfactors-odata-v2/), to understand how to design, and deploy an integration flow that communicates to SuccessFactors OData V2 endpoint with OAuth2 authentication.
+    > Read [SAP Cloud Integration – Principal Propagation with SuccessFactors OData V2](https://blogs.sap.com/2018/07/30/sap-cloud-platform-integration-principal-propagation-with-successfactors-odata-v2/), to understand how to design, and deploy an integration flow that communicates to SuccessFactors OData V2 endpoint with OAuth2 authentication.
 
 
     
@@ -94,14 +94,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Description
 
 
     
     </td>
     <td valign="top">
-
+    
     Description of the artifact name you're deploying on the tenant.
 
 
@@ -110,18 +110,18 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Audience
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide the host name of the target system, to which you want to establish the connection.
 
     > ### Example:  
-    > ***www.successfactors.com***
+    > `www.successfactors.com`
 
 
     
@@ -129,14 +129,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Client Key
 
 
     
     </td>
     <td valign="top">
-
+    
     A unique identifier created by the target system to identify the client.
 
     -   For fetching a client key for SuccessFactors, see [Registering Your OAuth2 Client Application](https://help.sap.com/viewer/d599f15995d348a1b45ba5603e2aba9b/latest/en-US/6b3c741483de47b290d075d798163bc1.html).
@@ -151,14 +151,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Token Service URL
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide the URL that generates OAuth2 token for the registered OAuth2 client.
 
 
@@ -167,14 +167,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Target System Type
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the relevant host system for authenticating the user against the system. Select one of the following systems :
 
     -   SuccessFactors
@@ -190,7 +190,7 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Company ID
 
     \(only if you select *SuccessFactors* for target system type\)
@@ -199,7 +199,7 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     
     </td>
     <td valign="top">
-
+    
     Specify the company ID of your SuccessFactors instance.
 
 
@@ -208,7 +208,7 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     User ID
 
     \(only if you select *SuccessFactors* for target system type\)
@@ -217,7 +217,7 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     
     </td>
     <td valign="top">
-
+    
     Choose one of the following:
 
     -   Principal Propagation
@@ -231,7 +231,7 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Additional Properties
 
     \(only if you select *SuccessFactors* for target system type and *Principal Propagation* for user ID\)
@@ -240,7 +240,7 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     
     </td>
     <td valign="top">
-
+    
     Maintain the *Value* of the key field *userIdSource* for each environment as follows:
 
     -   If your tenant is on Neo environment, set the value as **mail.**
@@ -252,7 +252,7 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Key Pair Alias
 
     \(only if you select *SuccessFactors* for target system type and *Key Pair Common Name \(CN\)* for user ID\)
@@ -261,7 +261,7 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     
     </td>
     <td valign="top">
-
+    
     Provide the alias name that you defined in the prerequisites.
 
 
@@ -270,7 +270,7 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Token Service User
 
     \(only if you select SAP BTP for target system type\)
@@ -279,7 +279,7 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     
     </td>
     <td valign="top">
-
+    
     Username required to access the *Token Service URL*.
 
 
@@ -288,7 +288,7 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Token Service Password
 
     \(only if you select SAP BTP for target system type\)
@@ -297,7 +297,7 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     
     </td>
     <td valign="top">
-
+    
     Password required to access the *Token Service URL*.
 
 

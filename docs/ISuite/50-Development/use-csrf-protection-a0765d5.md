@@ -43,7 +43,7 @@ CSRF protection is enabled on sender and receiver channel side:
 -   On receiver channel side, for the involved HTTP receiver channel, the CSRF token flow needs to be explicitly modeled.
 
 
-Note the following prerequisite to run the integration flows: To allow integration flow *Apply Security - Use CSRF Protection - Receiver Channel* to call integration flow *Apply Security - Use CSRF Protection - Sender Channel*, you need to configure and deploy a *User Credentials* artifact. This artifact contains the credentials of a user that has the *ESBMessaging.send* user role assigned. You can use the same user that is also used to run the Postman collection for the example integration flows. The name of the *User Credentials* must be named ***iFlowDesignGuidelineUser***.
+Note the following prerequisite to run the integration flows: To allow integration flow *Apply Security - Use CSRF Protection - Receiver Channel* to call integration flow *Apply Security - Use CSRF Protection - Sender Channel*, you need to configure and deploy a *User Credentials* artifact. This artifact contains the credentials of a user that has the *ESBMessaging.send* user role assigned. You can use the same user that is also used to run the Postman collection for the example integration flows. The name of the *User Credentials* must be named `iFlowDesignGuidelineUser`.
 
 Reference integration flow *Apply Security - Use CSRF Protection - Receiver Channel* is modeled in the following way:
 

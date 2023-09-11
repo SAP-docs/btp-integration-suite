@@ -3,22 +3,25 @@
 # Configure the AS2 Sender Adapter
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 > ### Note:  
 > -   If you are configuring the sender channel to receive AS2 messages, select the AS2 message protocol.
-> -   If you want to call the AS2 sender channel, then use the pattern ***https://<host\>:<port\>/as2/as2***; to call the AS2 MDN sender channel, use ***https://<host\>:<port\>/as2/mdn*** .
+> -   If you want to call the AS2 sender channel, then use the pattern `https://<host>:<port>/as2/as2`; to call the AS2 MDN sender channel, use `https://<host>:<port>/as2/mdn` .
 > -   The JMS queue name contains the name of the AS2 sender channel. To analyze a troubleshooting scenario better, it's recommended to specify the name of the AS2 sender channel.
+> -   You must activate [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) to use AS2 Sender adapter version 1.6 and below. From version 1.7 and above, the activation is not required if you select [Quality of Service](configure-the-as2-sender-adapter-5d7ee17.md#loio5d7ee17e554841df8ef355413b88e056__table_m23_m42_n2b) as *Best Effort*.
 > -   The expiration period for stored messages is 90 days, after which the messages are deleted.
 > -   The retention threshold for alerting is two days, by which the messages have to be fetched before an alert is raised.
 
@@ -51,7 +54,7 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -60,7 +63,7 @@ Description
 
 Specify the relative path of the endpoint URL.
 
-For example, if the URL is ***https://<tenant address\>/as2/<mdn or as2\>/orders***, then enter the value as ***/orders***
+For example, if the URL is `https://<tenant address>/as2/<mdn or as2>/orders`, then enter the value as `/orders`
 
 
 
@@ -90,7 +93,7 @@ Specifies the authorization option for the sender.
 
 -   *User Role*
 
-    Select this option if you want to authorize a sender based on the roles defined on the tenant for the user associated with the inbound request.
+    Select this option if you want to authorize a sender based on the roles defined on the tenant for the user associated with inbound request.
 
     The role *ESBMessaging.send* is provided by default. It is a predefined role provided by SAP, which authorizes a sender system to process messages on a tenant.
 
@@ -113,10 +116,10 @@ Specifies the authorization option for the sender.
 
 The user role that you are using for inbound authorization. Choose *Select* to get a list of all the available user roles for your tenant and select the one that you want to use.
 
-The default value is ***ESBMessaging.send***. This role authorizes a sender system to process messages on a tenant.
+The default value is `ESBMessaging.send`. This role authorizes a sender system to process messages on a tenant.
 
 > ### Caution:  
-> The role name must not contain any umlaut characters \(for example, ***ä***\).
+> The role name must not contain any umlaut characters \(for example, `ä`\).
 
 For more information on user roles, see[Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right: .
 
@@ -169,7 +172,31 @@ Description
 <tr>
 <td valign="top">
 
- *Message ID Left Part* 
+*Source* 
+
+
+
+</td>
+<td valign="top">
+
+Select among the following values to determine the source of Partner ID:
+
+-   *AS2 Partner ID Header*: to use the AS2 Partner ID header as partner ID.
+-   *Authorized User*: to fetch the partner ID from values specified in partner directory.
+
+-   *Dynamic*: if you select dynamic, you must specify `authorizedUser` or `as2PartnerID` value in `SAP_AS2_Pid_Resolution_Mode` parameter of partner directory.
+
+> ### Note:  
+> This field will have no impact on any *Private Key Alias* fields.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Message ID Left Part* 
 
 
 
@@ -185,7 +212,7 @@ Specify the left side of the AS2 message ID. Regular expression or '.\*' is allo
 <tr>
 <td valign="top">
 
- *Message ID Right Part* 
+*Message ID Right Part* 
 
 
 
@@ -201,7 +228,7 @@ Specify the right side of the AS2 message ID. Regular expression or '.\*' is all
 <tr>
 <td valign="top">
 
- *Partner AS2 ID* 
+*Partner AS2 ID* 
 
 
 
@@ -217,7 +244,7 @@ Specify your partner's AS2 ID. Regular expression or '.\*' is allowed.
 <tr>
 <td valign="top">
 
- *Own AS2 ID* 
+*Own AS2 ID* 
 
 
 
@@ -233,7 +260,7 @@ Specify your own AS2 ID. Regular expression or '.\*' is allowed.
 <tr>
 <td valign="top">
 
- *Message Subject* 
+*Message Subject* 
 
 
 
@@ -249,7 +276,7 @@ Specify the AS2 message subject. Regular expression or '.\*' is allowed.
 <tr>
 <td valign="top">
 
- *Number of Concurrent Processes* 
+*Number of Concurrent Processes* 
 
 
 
@@ -265,7 +292,7 @@ Define how many processes can run in parallel for each worker node. The value de
 <tr>
 <td valign="top" colspan="2">
 
- *Message Settings* 
+*Message Settings* 
 
 
 
@@ -274,14 +301,14 @@ Define how many processes can run in parallel for each worker node. The value de
 <tr>
 <td valign="top">
 
- *Mandatory File Name* 
+*Mandatory File Name* 
 
 
 
 </td>
 <td valign="top">
 
-Select to check the incoming AS2 message contains a filename. If not found, then a negative MDN is sent as per the request of the AS2 sender.
+Select to check that the incoming AS2 message containsthe a filename. If not found, then a negative MDN is sent as per the request of the AS2 sender.
 
 
 
@@ -290,14 +317,14 @@ Select to check the incoming AS2 message contains a filename. If not found, then
 <tr>
 <td valign="top">
 
- *Duplicate Message ID* 
+*Duplicate Message ID* 
 
 
 
 </td>
 <td valign="top">
 
-Select to ensure that the AS2 message with the same message ID is not processed more than once.
+Select to ensure that the AS2 message with the same message ID isn't processed more than once.
 
 Define the *Persist Duration* instant in minutes to store messages for duplicate check. You can also select the appropriate *MDN Response* type when you encounter a duplicate message ID.
 
@@ -311,14 +338,14 @@ Define the *Persist Duration* instant in minutes to store messages for duplicate
 <tr>
 <td valign="top">
 
- *Duplicate File Name* 
+*Duplicate File Name* 
 
 
 
 </td>
 <td valign="top">
 
-Select to ensure that the AS2 message with the same filename is not processed more than once.
+Select to ensure that the AS2 message with the same filename isn't processed more than once.
 
 Define the *Persist Duration* instant in minutes to store messages for duplicate check. You can also select the appropriate *MDN Response* type when you encounter a duplicate filename.
 
@@ -358,6 +385,26 @@ Description
 <tr>
 <td valign="top">
 
+*Decryption Configuration Type*
+
+
+
+</td>
+<td valign="top">
+
+Select the type of decryption configuration.
+
+-   *Channel Configuration*: Decryption is determined from the input of *Decrypt Message* checkbox.
+-   *Incoming AS2 Headers*: Decryption is determined by the incoming message \(headers\) at the runtime.
+-   *Dynamic*: If you select *Dynamic*, you must define `incomingAS2Headers` or `channelConfiguration` value in `pd:SAP_AS2_Inbound_Decryption_Configuration_Type`.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Decrypt Message*
 
 
@@ -367,7 +414,7 @@ Description
 
 Select this checkbox to ensure that the message is decrypted.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Inbound\_Decrypt\_Message***.
+You can also set the value of this attribute dynamically by specifying `SAP_AS2_Inbound_Decrypt_Message` parameter in partner directory.
 
 The valid values are:
 
@@ -375,7 +422,7 @@ The valid values are:
 -   false
 
 > ### Note:  
-> If the header value is set, it takes precedence over the actual value configured in the channel.
+> If the value is set in partner directory, it takes precedence over the actual value configured in the channel.
 
 
 
@@ -386,17 +433,17 @@ The valid values are:
 
 *Private Key Alias*
 
-\(only if you select *Decrypt Message*\).
+\(only if you select *Decrypt Message* or *Decryption Configuration Type* as *Dynamic* or *Incoming AS2 Headers*\).
 
 
 
 </td>
 <td valign="top">
 
-Specify the private key alias to decrypt the AS2 message.
+Specify the private key alias to decrypt the AS2 message. To fetch details from partner directory, use pd:xxxx or pd:AS2OwnId:<certalias\> syntax.
 
 > ### Note:  
-> The private key alias for Cloud Integration is, ***sap\_cloudintegrationcertificate***
+> The private key alias for Cloud Integration is, `sap_cloudintegrationcertificate`
 
 
 
@@ -405,7 +452,7 @@ Specify the private key alias to decrypt the AS2 message.
 <tr>
 <td valign="top">
 
- *Verify Signature* 
+*Verify Signature* 
 
 
 
@@ -421,7 +468,7 @@ Select this checkbox to ensure that the signature is verified using one of the f
 -   *Trusted Root Certificate*: The trust chain begins with the use of the public alias as an intermediate certificate to verify the inbound certificate. After successful verification the inbound certificate is used to verify the Signature.
 
     > ### Note:  
-    > If *Trusted Root Certificate* is selected mention the public key alias immediate root certificate of the incoming message.
+    > If *Trusted Root Certificate* is selected, mention the public key alias immediate root certificate of the incoming message.
 
     When verification is successful by using trusted root certificate the following exchange properties are generated:
 
@@ -431,10 +478,14 @@ Select this checkbox to ensure that the signature is verified using one of the f
 
 
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Inbound\_Verify\_Signature***.
+You can also set the value of this attribute dynamically by specifying `SAP_AS2_Inbound_Verify_Signature` parameter in partner directory. The valid values are:
+
+-   notRequired
+-   trustedCertificate
+-   trustedRootCertificate
 
 > ### Note:  
-> If the header value is set, it takes precedence over the actual value configured in the channel.
+> If the value is set in partner directory, it takes precedence over the actual value configured in the channel.
 
 
 
@@ -452,7 +503,25 @@ You can also set the value of this attribute dynamically using the header ***SAP
 </td>
 <td valign="top">
 
-Specify the public key alias to verify the signature of the AS2 message.
+Specify the public key alias to verify the signature of the AS2 message. To fetch details from partner directory, use `pd:<certAlias>` syntax.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Public Key Aliases*
+
+\(only if you select *Verify Signature* as *Trusted Root Certificate*\).
+
+
+
+</td>
+<td valign="top">
+
+Specify the public key alias values \(comma separated\) to verify the signature of the AS2 message. To fetch details from partner directory, use `pd:<certAlias>` or `pd:AS2PartnerId:<certalias>` syntax.
 
 
 
@@ -485,14 +554,14 @@ Description
 <tr>
 <td valign="top">
 
- *Private Key Alias for Signature* 
+*Private Key Alias for Signature* 
 
 
 
 </td>
 <td valign="top">
 
-Specify the private key alias to sign the MDN on partner's request.
+Specify the private key alias to sign the MDN on partner's request. To fetch details from partner directory, use `pd:xxxx` syntax.
 
 
 
@@ -510,6 +579,12 @@ Specify the private key alias to sign the MDN on partner's request.
 
 Select the MDN signature encoding type.
 
+-   *binary*
+-   *base64*
+-   *Dynamic*
+
+To define this attribute dynamically, set *<binary\>* or *<base64\>* value in `SAP_AS2_Inbound_Signature_Encoding` key in partner directory.
+
 
 
 </td>
@@ -517,7 +592,29 @@ Select the MDN signature encoding type.
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Propagate MDN Details to Exchange*
+
+
+
+</td>
+<td valign="top">
+
+Select whether to include the generated MDN details in Camel Exchange property.
+
+-   *Required*
+-   *Not Required*
+-   *Dynamic*
+
+To define this attribute dynamically, set *<required\>* or *<notRequired\>* value in `SAP_AS2_Inbound_Propagate_MDN_Details` key in partner directory.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Type* 
 
 
 
@@ -528,6 +625,8 @@ Select the type of proxy you want to use to connect asynchronously to an AS2 sen
 
 -   Select *Internet* if you are connecting to a cloud system.
 
+-   If you select *Dynamic*, you must define *<default\>* or *<sapcc\>* value in `SAP_AS2_Inbound_Proxy_Type` key in partner directory.
+
 
 
 
@@ -536,7 +635,25 @@ Select the type of proxy you want to use to connect asynchronously to an AS2 sen
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Location ID*
+
+\(only if *Proxy Type* is *On-Premise* or *Dynamic*\)
+
+
+
+</td>
+<td valign="top">
+
+If you use the SAP Cloud Connector to connect to your on-premise system, specify the virtual address that is configured in the SAP Cloud Connector settings. To fetch details from partner directory, use `pd:xxxx` syntax.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication* 
 
 
 
@@ -551,10 +668,9 @@ You can select one of the following authentication methods:
 
 -   *Basic Authentication*
 
-    The tenant authenticates itself against the receiver using user credentials \(user name and password\).
+-   *Client Certificate* \(only if *Proxy Type* *Internet* or *Dynamic*\)
 
-    It is a prerequisite that user credentials are specified in a Basic Authentication artifact and deployed on the related tenant.
-
+-   If you select *Dynamic*, you must define *<BasicAuthentication\>* or *<ClientCertificate\>* or *<None\>* value in `SAP_AS2_Inbound_Authentication` key in partner directory.
 
 
 
@@ -563,7 +679,45 @@ You can select one of the following authentication methods:
 <tr>
 <td valign="top">
 
- *Timeout \(in ms\)* 
+*Credential Name*
+
+\(only if you select *Authentication* as *Basic Authentication* or *Dynamic*.
+
+
+
+</td>
+<td valign="top">
+
+Specify the deployed user credentials alias for basic authentication. The tenant authenticates itself against the receiver using user credentials \(user name and password\).
+
+It'sis a prerequisite that user credentials are specified in a Basic Authentication artifact and deployed on the related tenant.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key Alias*
+
+\(only if you select *Authentication* as *Client Certificate* or *Dynamic*.
+
+
+
+</td>
+<td valign="top">
+
+Specify the private key alias for client certificate authentication. To fetch details from partner directory, use `pd:xxxx` syntax.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Timeout \(in ms\)* 
 
 
 
@@ -603,7 +757,7 @@ Description
 <tr>
 <td valign="top">
 
- *Quality of Service* 
+*Quality of Service* 
 
 
 
@@ -622,7 +776,7 @@ Based on your requirements you can select one of the following options:
 
     This option allows you to transmit customized MDN acknowledgments to the AS2 sending partner. The AS2 messages are processed immediately and the MDN is only transmitted to the sending partner if the processing is successful.
 
-    By introducing a **Script** into the integration flow, you can customize the original MDN found in the exchange property ***SAP\_AS2\_MDN***. For more information, see [Define a Local Script Step](define-a-local-script-step-03b32eb.md).
+    By introducing a **Script** into the integration flow, you can customize the original MDN found in the exchange property `SAP_AS2_MDN`. For more information, see [Define a Local Script Step](define-a-local-script-step-03b32eb.md).
 
 
 
@@ -648,14 +802,14 @@ Define how many minutes to wait before retrying message delivery.
 <tr>
 <td valign="top">
 
- *Exponential Backoff* 
+*Exponential Backoff* 
 
 
 
 </td>
 <td valign="top">
 
-Select this checkbox to double the retry terval after each unsuccessful retry.
+Select this checkbox to double the retry interval after each unsuccessful retry.
 
 
 
@@ -664,7 +818,7 @@ Select this checkbox to double the retry terval after each unsuccessful retry.
 <tr>
 <td valign="top">
 
- *Maximum Retry Interval \(in min\)* 
+*Maximum Retry Interval \(in min\)* 
 
 
 
@@ -680,7 +834,7 @@ Specify the maximum amount of time to wait before retrying message delivery.
 <tr>
 <td valign="top">
 
- *Dead-Letter Queue* 
+*Dead-Letter Queue* 
 
 
 
@@ -696,7 +850,7 @@ Select this checkbox to store those messages that cannot be successfully process
 <tr>
 <td valign="top">
 
- *Encrypt Message During Persistence* 
+*Encrypt Message During Persistence* 
 
 
 
@@ -736,7 +890,7 @@ Description
 <tr>
 <td valign="top" colspan="2">
 
-The parameters in allowin*Maximum Message Size* you to set a maximum size limit for processing inbound messages. All inbound messages that exceeds the configured limit are rejected from further processing and the sender receives an error message.
+The parameters in allowing*Maximum Message Size* you to set a maximum size limit for processing inbound messages. All inbound messages that exceed the configured limit are rejected from further processing and the sender receives an error message.
 
 > ### Note:  
 > The minimum allowable size limit is 1 MB.
@@ -748,7 +902,7 @@ The parameters in allowin*Maximum Message Size* you to set a maximum size limit 
 <tr>
 <td valign="top">
 
- *Body Size \(in MB\)* 
+*Body Size \(in MB\)* 
 
 
 
@@ -764,7 +918,7 @@ Define the allowable size limit for processing the message body.
 <tr>
 <td valign="top">
 
- *Attachments Size \(in MB\)* 
+*Attachments Size \(in MB\)* 
 
 
 

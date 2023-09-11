@@ -34,7 +34,7 @@ Instead of consuming the API services directly, application developers can acces
 
     1.  In the *Create API* dialog, select the *API Provider* radio button.
 
-    2.  , fromFrom the API Provider dropdown, select an API Provider that belongs to the type *Cloud Integration*.
+    2.  From the API Provider dropdown, select an API Provider that belongs to the type *Cloud Integration*.
 
         The dropdown list contains the providers that you’re connected to. If the provider you need isn’t listed, add an API provider of type *Cloud Integration* from the *Configure* \> *APIs*. tab. For more information, see [Create an API Provider](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/6b263e2c1b2d4d9ba20bcd7872eedd9e.html?q=Create%20an%20API%20Provider).
 

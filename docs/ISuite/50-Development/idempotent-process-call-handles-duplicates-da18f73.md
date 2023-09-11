@@ -15,7 +15,7 @@ At receiver side, the scenario uses the SOAP adapter with SOAP 1.x message proto
 
 The *Pattern Quality Of Service - Scenario 05a* integration flow illustrates this scenario.
 
- ![](images/Integration_Flow_05a_idempotant_process_call_8047f70.png) 
+![](images/Integration_Flow_05a_idempotant_process_call_8047f70.png)
 
 The *Local Integration Process: Send message to receiver* subprocess sends the message to the receiver system using a request reply step with a SOAP receiver adapter.
 
@@ -109,15 +109,15 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
-    ***OWN***
+    
+    `OWN`
 
 
     
@@ -125,14 +125,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *User*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the user as specified when setting up inbound basic authentication.
 
 
@@ -141,14 +141,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Password*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the password as specified when setting up inbound basic authentication.
 
 

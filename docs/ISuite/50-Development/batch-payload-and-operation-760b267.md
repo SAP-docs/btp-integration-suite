@@ -108,6 +108,173 @@ Batch mode is supported in following ways:
         > > ```
 
 
+-   **Update Insert**: This operation lets you to update an existing entry. If it does not exist, a new entry is created.
+
+    > ### Note:  
+    > -   Multiple *access* tags are not supported.
+    > -   Native Batch for UPSERT statement is not available in [SAP HANA Platform](https://help.sap.com/docs/HANA_SERVICE_CF/7c78579ce9b14a669c1f3295b0d8ca16/ea8b6773be584203bcd99da76844c5ed.html#example) and all other databases.
+
+    > ### Sample Code:  
+    > For successful scenarios:
+    > 
+    > ```
+    > 
+    > <?xml version="1.0" encoding="UTF-8"?>
+    > <root>
+    >    <UPDATE_INSERT_statement>
+    >       <dbTableName action="UPDATE_INSERT">
+    >          <table>test</table>
+    >          <access>
+    >             <emp_name>test227</emp_name>
+    >             <email>test@gmail.com</email>
+    >          </access>
+    >          <key>
+    >             <emp_id>227</emp_id>
+    >          </key>
+    >       </dbTableName>
+    >    </UPDATE_INSERT_statement>
+    >    <UPDATE_INSERT_statement>
+    >       <dbTableName action="UPDATE_INSERT">
+    >          <table>test</table>
+    >          <access>
+    >             <emp_name>test228</emp_name>
+    >             <email>test@gmail.com</email>
+    >          </access>
+    >          <key>
+    >             <emp_id>228</emp_id>
+    >          </key>
+    >       </dbTableName>
+    >    </UPDATE_INSERT_statement>
+    >     
+    >    <UPDATE_INSERT_statement>
+    >       <dbTableName action="UPDATE_INSERT">
+    >          <table>test</table>
+    >          <access>
+    >             <emp_name>test229</emp_name>
+    >             <email>test@gmail.com</email>
+    >          </access>
+    >          <key>
+    >             <emp_id>229</emp_id>
+    >          </key>
+    >       </dbTableName>
+    >    </UPDATE_INSERT_statement>
+    > </root>
+    > ```
+    > 
+    > > ### Output Code:  
+    > > ```
+    > > <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    > > <root>
+    > > <insert_statement><table>TEST</table>
+    > > <update_insert_count>1</update_insert_count></insert_statement>
+    > > <insert_statement><table>TEST</table><update_insert_count>1</update_insert_count></insert_statement>
+    > > <insert_statement><table>TEST</table><update_insert_count>1</update_insert_count></insert_statement>
+    > > </root>
+    > > 
+    > > 
+    > > 
+    > > ```
+
+    > ### Sample Code:  
+    > For faliure scenarios:
+    > 
+    > ```
+    > 
+    > <?xml version="1.0" encoding="UTF-8"?>
+    > <root>
+    >     
+    >    <UPDATE_INSERT_statement>
+    >       <dbTableName action="UPDATE_INSERT">
+    >          <table>saffrontest</table>
+    >          <access>
+    >             <emp_name>test227</emp_name>
+    >             <email>test@gmail.com</email>
+    >          </access>
+    >          <key>
+    >             <emp_id>227</emp_id>
+    >          </key>
+    >       </dbTableName>
+    >    </UPDATE_INSERT_statement>
+    >     
+    >    <UPDATE_INSERT_statement>
+    >       <dbTableName action="UPDATE_INSERT">
+    >          <table>saffrontest</table>
+    >          <access>
+    >             <emp_name>test228</emp_name>
+    >             <email>test@gmail.com</email>
+    >          </access>
+    >          <key>
+    >             <emp_id>228</emp_id>
+    >          </key>
+    >       </dbTableName>
+    >    </UPDATE_INSERT_statement>
+    >     
+    >    <UPDATE_INSERT_statement>
+    >       <dbTableName action="UPDATE_INSERT">
+    >          <table>saffrontest</table>
+    >          <access>
+    >             <emp_id>221</emp_id>
+    >             <emp_name>test</emp_name>
+    >             <email>test@gmail.com</email>
+    >          </access>
+    >          <key>
+    >             <emp_id>229</emp_id>
+    >          </key>
+    >       </dbTableName>
+    >    </UPDATE_INSERT_statement>
+    > </root>
+    > ```
+    > 
+    > > ### Output Code:  
+    > > ```
+    > > Error Details
+    > > 
+    > > com.sap.it.rt.adapter.http.api.exception.HttpResponseException: An internal server error occured: ORA-00001: unique constraint (XIVERI.SYS_C0032530) violated
+    > > 
+    > > Statement : UPDATE_INSERT_statement ; Failed Operation : INSERT ; statement sequence : 3 .
+    > > 
+    > > The MPL ID for the failed message is : AGO_s9LDIZCVYPn25Ir6mqBK7EJw
+    > > 
+    > > 
+    > > ```
+    > 
+    > > ### Note:  
+    > > The above error occurs because the table **test** already contains a record with **221 \(emp\_id\)** as primary key. Hence, the key **229** cannot be updated as **221**, primary key should be unique.
+
+-   Stored procedures:
+
+    > ### Sample Code:  
+    > ```
+    > 
+    > <root>
+    >     <StatementName>
+    >         <storedProcedureName action="EXECUTE">
+    >             <table>samplestoredproc</table>
+    >             <emp_id type="INTEGER">3</emp_id>
+    >             <emp_name type="VARCHAR">test</emp_name>
+    >         </storedProcedureName >
+    >     </StatementName>
+    > </root>
+    > 
+    > ```
+    > 
+    > > ### Output Code:  
+    > > ```
+    > > 
+    > > <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    > > <root>
+    > >     <StatementName_response>
+    > >         <response_1>
+    > >             <row>
+    > >                 <emp_id>3</emp_id>
+    > >                 <emp_name>test</emp_name>
+    > >                 <email>test@gmail.com</email>
+    > >             </row>
+    > >         </response_1>
+    > >     </StatementName_response>
+    > > </root>
+    > > ```
+
 -   Native SQL queries are supported with prepared statements only. If you are using batch mode with native SQL queries, ensure:
 
     -   *Message Body* contains query.
@@ -138,6 +305,47 @@ Batch mode is supported in following ways:
     > }
     > ```
 
+
+> ### Note:  
+> If your database has column names with special characters \(like \#, \* etc\), then, you must set `ColumnNameAsTag="false"` in the incoming XML payload for JDBC receiver adapter to process these column names without throwing an exception.
+> 
+> > ### Sample Code:  
+> > In this example, `ColumnNameAsTag` is set as `false` and `name` and `value` of the column must be defined separately under `column` tag.
+> > 
+> > ```
+> > <root>
+> >     <InsertStatement ColumnNameAsTag="false">
+> >         <dbTableName action = "SELECT">
+> >             <table> sampletest </table>
+> >             <access>
+> >                 <column>
+> >                     <name>ID#</name>
+> >                     <value>112</value>
+> >                 </column>
+> >                 <column hasQuot="Yes">
+> >                     <name>NAME#</name>
+> >                     <value>XXX</value></column>
+> >             </access>
+> >         </dbTableName>
+> >     </InsertStatement>
+> >     <InsertStatement>
+> >         <dbTableName action = "SELECT">
+> >             <table> sampletest </table>
+> >             <access>
+> >                 <column>
+> >                     <name>ID#</name>
+> >                     <value>113</value>
+> >                 </column>
+> >                 <column hasQuot="Yes">
+> >                     <name>NAME#</name>
+> >                     <value>ABC</value>
+> >                  </column>
+> >             </access>
+> >         </dbTableName>
+> >     </InsertStatement>
+> > </root>
+> >              
+> > ```
 
 
 

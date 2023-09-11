@@ -6,7 +6,7 @@ In this use case, the tenant client certificate is exchanged by a new one signed
 
 The following figure illustrates the communication path that is relevant for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_HTTPS_Certificate_Outbound_HCI_Tenant_36ffd91.png) 
+![](images/SAP_HCI_Security_Renewal_-_HTTPS_Certificate_Outbound_HCI_Tenant_36ffd91.png)
 
 
 
@@ -81,7 +81,7 @@ Certificate renewal has to be performed in the following sequence:
 **Related Information**  
 
 
-[Technical Landscape for On Premise-On Demand Integration](technical-landscape-for-on-premise-on-demand-integration-f69e177.md "As one example for certificate-based connectivity, customer intends to connect a customer-based SAP on-premise system (based on SAP Application Server ABAP with Cloud Integration.")
+[Technical Landscape for On Premise-On Demand Integration](technical-landscape-for-on-premise-on-demand-integration-f69e177.md "As one example for certificate-based connectivity, customer intends to connect a customer-based SAP on-premise system (based on SAP Application Server ABAP with Cloud Integration).")
 
 [Involved Roles](involved-roles-3968091.md "The security artifact renewal process requires that different persons perform a sequence of steps in a coordinated way on each side of the communication. The exact sequence depends on the kind of security material which is renewed and on the use case.")
 

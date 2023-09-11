@@ -106,7 +106,7 @@ Purpose
 <tr>
 <td valign="top">
 
-One signed *Key Pair* entry with the alias *sap\_cloudintegrationcertificate* 
+One signed *Key Pair* entry with the alias *sap\_cloudintegrationcertificate*.
 
 
 

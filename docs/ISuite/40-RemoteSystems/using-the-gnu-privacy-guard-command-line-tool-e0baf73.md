@@ -12,12 +12,12 @@ Example:
 
 `gpg --homedir=C:/tenantMyCompany --edit-key MyCompany` 
 
-This command edits the key in the tenant directory ***C:/tenantCiti*** that contains the string ***Citi*** in its user ID.
+This command edits the key in the tenant directory `C:/tenantCiti` that contains the string `Citi` in its user ID.
 
-To consult the manual for further details, run the command: ***gpg --help***.
+To consult the manual for further details, run the command: `gpg --help`.
 
 **Related Information**  
 
 
-[https://blogs.sap.com/2021/01/19/cloud-integration-import-and-export-pgp-secret-key-change-pgp-secret-key-password/](https://blogs.sap.com/2021/01/19/cloud-integration-import-and-export-pgp-secret-key-change-pgp-secret-key-password/)
+[Cloud Integration – Import and Export PGP Secret Key – Change PGP Secret Key Password](https://blogs.sap.com/2021/01/19/cloud-integration-import-and-export-pgp-secret-key-change-pgp-secret-key-password/)
 

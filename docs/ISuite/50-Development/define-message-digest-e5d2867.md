@@ -63,14 +63,14 @@ You can use this feature to implement scenarios like the following ones:
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Filter \(XPath\)**
 
 
     
     </td>
     <td valign="top">
-
+    
     If you only want to transform part of the message, enter an XPath expression to specify the part \(optional attribute\).
 
     You can also define a prefix namespace mapping.
@@ -81,14 +81,14 @@ You can use this feature to implement scenarios like the following ones:
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Canonicalization Method**
 
 
     
     </td>
     <td valign="top">
-
+    
     Canonicalization transforms an XML document into a form \(the canonical form\) that makes it possible to compare it with other XML documents. With the *Message Digest* integration flow step, you can apply canonicalization to a message or to parts of a message, calculate a digest out of the transformed message, and add the digest to the message header.
 
     In simple terms, canonicalization skips nonsignificant elements from an XML document. To give some examples, the following changes are applied during the canonicalization of an XML document: Unification of quotation marks and blanks, or encoding of empty elements as start/end pairs. The original message remains unchanged.
@@ -120,14 +120,14 @@ You can use this feature to implement scenarios like the following ones:
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Digest Algorithm**
 
 
     
     </td>
     <td valign="top">
-
+    
     Select the hash algorithm to be used to calculate the digest \(mandatory attribute\).
 
     You can choose between the following hash algorithms:
@@ -144,14 +144,14 @@ You can use this feature to implement scenarios like the following ones:
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Target Header Name**
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the name of the target header element, which is to contain the hash value \(mandatory attribute\).
 
     The value of this header contains the base64-encoded message digest.

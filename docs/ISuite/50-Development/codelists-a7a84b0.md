@@ -10,7 +10,7 @@ Code values provide a more precise meaning to semantically generic elements in a
 
 You can see all the available codelists provided by a type system in the Library of Type Systems. The total number of code values appears in brackets beside any selected codelist. The complete list of code values and their descriptions are available in the Code Values tab when you select a specific codelist.
 
- SAP Integration Suite currently supports four different types of codelists:
+SAP Integration Suite currently supports four different types of codelists:
 
 -   Type-system based codelists – They're provided by the type system itself and can be used only in MIGs that are based on the same type system.
 

@@ -46,7 +46,7 @@ You use an adapter in an integration flow for outbound and inbound communication
 
     1.  Select *File* \> *New* \> *Project*.
 
-    2.  Choose *SAP Cloud Platform Integration* \> *Adapter Project* in the *New Project* wizard.
+    2.  Choose *Adapter Project* in the *New Project* wizard.
 
     3.  Choose *Next*.
 
@@ -87,14 +87,14 @@ You use an adapter in an integration flow for outbound and inbound communication
         </tr>
         <tr>
         <td valign="top">
-
+        
         `*Component.java`
 
 
         
         </td>
         <td valign="top">
-
+        
         Sample runtime component.
 
 
@@ -103,14 +103,14 @@ You use an adapter in an integration flow for outbound and inbound communication
         </tr>
         <tr>
         <td valign="top">
-
+        
         `*Consumer.java`
 
 
         
         </td>
         <td valign="top">
-
+        
         Sample sender component.
 
 
@@ -119,14 +119,14 @@ You use an adapter in an integration flow for outbound and inbound communication
         </tr>
         <tr>
         <td valign="top">
-
+        
         `*Endpoint.java`
 
 
         
         </td>
         <td valign="top">
-
+        
         Logger information is found.
 
 
@@ -135,14 +135,14 @@ You use an adapter in an integration flow for outbound and inbound communication
         </tr>
         <tr>
         <td valign="top">
-
+        
         `*Producer.java`
 
 
         
         </td>
         <td valign="top">
-
+        
         Sample receiver component.
 
 
@@ -151,14 +151,14 @@ You use an adapter in an integration flow for outbound and inbound communication
         </tr>
         <tr>
         <td valign="top">
-
+        
         `metadata.xml`
 
 
         
         </td>
         <td valign="top">
-
+        
         UI values are coded here.
 
 
@@ -167,14 +167,14 @@ You use an adapter in an integration flow for outbound and inbound communication
         </tr>
         <tr>
         <td valign="top">
-
+        
         `*ComponentTest.java`
 
 
         
         </td>
         <td valign="top">
-
+        
         Sample JUnit test
 
 
@@ -183,14 +183,14 @@ You use an adapter in an integration flow for outbound and inbound communication
         </tr>
         <tr>
         <td valign="top">
-
+        
         `pom.xml`
 
 
         
         </td>
         <td valign="top">
-
+        
         Contains configuration details and dependencies.
 
 
@@ -199,14 +199,14 @@ You use an adapter in an integration flow for outbound and inbound communication
         </tr>
         <tr>
         <td valign="top">
-
+        
         `sap-sample`
 
 
         
         </td>
         <td valign="top">
-
+        
         Represents the endpoint scheme.
 
         > ### Note:  
@@ -227,7 +227,7 @@ You use an adapter in an integration flow for outbound and inbound communication
 
     8.  To run maven clean install right click-on the project, choose *Run As* \> *Maven Build*.
 
-    9.  In the *Goals* field, type ***clean install*** and *Run* the project.
+    9.  In the *Goals* field, type `clean install` and *Run* the project.
 
         > ### Note:  
         > To deploy the adapter project right click-on the adapter project, and choose *Deploy Adapter Project*.
@@ -237,7 +237,7 @@ You use an adapter in an integration flow for outbound and inbound communication
 
     1.  Select *File* \> *New* \> *Project*.
 
-    2.  Choose *SAP Cloud Platform Integration* \> *Adapter Project*in the *New Project* wizard.
+    2.  Choose *Adapter Project*in the *New Project* wizard.
 
     3.  Choose *Next*.
 
@@ -278,13 +278,13 @@ You use an adapter in an integration flow for outbound and inbound communication
     > 
     > private String testField;
     > 
-    > Attribute behavior is set as *SecureAlias* if the variable name has ***password***, ***key***, ***secret*** or ***token*** keywords.
+    > Attribute behavior is set as *SecureAlias* if the variable name has `password`, `key`, `secret` or `token` keywords.
 
     Follow the substeps to introduce custom classes using blueprint metadata that allows you to extend the runtime capabilities of the adapter:
 
     1.  Right click-on the new adapter project or the component folder and select*Generate Metadata* \> *Blueprint Metadata* to generate a sample blueprint metadata.
 
-    2.  Update the ***<ReferencedComponents\>*** tag in `metadata.xml` to provide a reference to `bpMetadata.xml`.
+    2.  Update the `<ReferencedComponents>` tag in `metadata.xml` to provide a reference to `bpMetadata.xml`.
 
         > ### Note:  
         > The value provided here is variant specific, for multiple variants fetch appropriate URL and update the `metadata.xml` in the matching variant. For example, a variant can be either Receiver or Sender.
@@ -326,28 +326,28 @@ You use an adapter in an integration flow for outbound and inbound communication
     </tr>
     <tr>
     <td valign="top">
-
-     ***adapterInstanceID*** 
+    
+    `adapterInstanceID` 
 
 
     
     </td>
     <td valign="top">
-
+    
     String
 
 
     
     </td>
     <td valign="top">
-
-     ***adapterInstanceID\(string\)*** 
+    
+    `adapterInstanceID(string)` 
 
 
     
     </td>
     <td valign="top">
-
+    
     Participant ID, which helps to identify log error details.
 
 
@@ -356,28 +356,28 @@ You use an adapter in an integration flow for outbound and inbound communication
     </tr>
     <tr>
     <td valign="top">
-
-     ***adapterVersion*** 
+    
+    `adapterVersion` 
 
 
     
     </td>
     <td valign="top">
-
+    
     String
 
 
     
     </td>
     <td valign="top">
-
-     ***adapterVersion\(string\)*** 
+    
+    `adapterVersion(string)` 
 
 
     
     </td>
     <td valign="top">
-
+    
     The adapter version.
 
 
@@ -386,28 +386,28 @@ You use an adapter in an integration flow for outbound and inbound communication
     </tr>
     <tr>
     <td valign="top">
-
-     ***projectID*** 
+    
+    `projectID` 
 
 
     
     </td>
     <td valign="top">
-
+    
     String
 
 
     
     </td>
     <td valign="top">
-
-     ***projectID\(string\)*** 
+    
+    `projectID(string)` 
 
 
     
     </td>
     <td valign="top">
-
+    
     The integration flow project ID.
 
 
@@ -416,29 +416,29 @@ You use an adapter in an integration flow for outbound and inbound communication
     </tr>
     <tr>
     <td valign="top">
-
-     ***userDefinedNamespaces*** 
+    
+    `userDefinedNamespaces` 
 
 
     
     </td>
     <td valign="top">
-
+    
     Java.util.Map
 
 
     
     </td>
     <td valign="top">
-
-     ***userDefinedNamespaces\(map<string,string\>\)*** 
+    
+    `userDefinedNamespaces(map<string,string>)` 
 
 
     
     </td>
     <td valign="top">
-
-    A namespace mapping generated at runtime for an integration flow model. It contains a namespace-prefix pair with a format ***xmlns:<prefix\>=<namespace\>*** .
+    
+    A namespace mapping generated at runtime for an integration flow model. It contains a namespace-prefix pair with a format `xmlns:<prefix>=<namespace>` .
 
 
     
@@ -447,7 +447,7 @@ You use an adapter in an integration flow for outbound and inbound communication
     </table>
     
     > ### Note:  
-    > Use the ***<AdditionalMetadata\>*** attribute, to include additional properties in the URI. You must place the attribute as an immediate child of any variant in the metadata file.
+    > Use the `<AdditionalMetadata>` attribute, to include additional properties in the URI. You must place the attribute as an immediate child of any variant in the metadata file.
     > 
     > > ### Sample Code:  
     > > ```
@@ -471,7 +471,7 @@ You use an adapter in an integration flow for outbound and inbound communication
 
 9.  To configure the Operations Server to connect your local Eclipse tooling to the tenant, execute the following substeps:
 
-    1.  Select *Window* \> *Preferences* \> *SAP Cloud Platform Integration* \> *Operations Server*.
+    1.  Select *Window* \> *Preferences* \> *Operations Server*.
 
     2.  Enter the server URL.
 
@@ -488,7 +488,7 @@ You use an adapter in an integration flow for outbound and inbound communication
     1.  In *Node Explorer*, choose worker node.
 
         > ### Note:  
-        > You can construct an application URL in the following format ***https://<IFLMAP URL\>/<web context path\>/*** to call the servlet.
+        > You can construct an application URL in the following format `https://<IFLMAP URL>/<web context path>/` to call the servlet.
 
     2.  Select the *Component Status View* tab and check the status of the adapter project.
 

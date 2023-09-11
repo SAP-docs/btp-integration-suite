@@ -57,14 +57,14 @@ Description
 
 Specify whether a signature policy is to be added, and, if yes, in which form this should be done.
 
--   ***None***
--   ***Implied***
+-   `None`
+-   `Implied`
 
     The signature policy can be unambiguously derived from the semantics of the type of data object\(s\) being signed, and some other information.
 
     Using this option, the *SignaturePolicyImplied* element will be part of the signature.
 
--   ***Explicit ID***
+-   `Explicit ID`
 
     The signature contains an identifier of a signature policy together with a hash value of the signature policy that allows verification that the policy selected by the signer is the one being used by the verifier.
 
@@ -76,7 +76,7 @@ Specify whether a signature policy is to be added, and, if yes, in which form th
 <tr>
 <td valign="top">
 
-*Identifier* \(only if the value ***Explicit ID*** has been selected for *Signature Policy*\)
+*Identifier* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
 
 
 
@@ -103,7 +103,7 @@ You can specify the identifier by one of the following options:
 <tr>
 <td valign="top">
 
-*Identifier Qualifier* \(only if the value ***Explicit ID*** has been selected for *Signature Policy*\)
+*Identifier Qualifier* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
 
 
 
@@ -115,8 +115,8 @@ Qualify how the identifier is defined in case Abstract Syntax Notation One \(ASN
 You can select one of the following values:
 
 -   `Empty string` 
--   ***OIDAsURI*** – uses Uniform Resource Name.
--   ***OIDAsURN*** – uses Uniform Resource Name.
+-   `OIDAsURI` – uses Uniform Resource Name.
+-   `OIDAsURN` – uses Uniform Resource Name.
 
 
 
@@ -125,7 +125,7 @@ You can select one of the following values:
 <tr>
 <td valign="top">
 
-*Description* \(only if the value ***Explicit ID*** has been selected for *Signature Policy*\)
+*Description* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
 
 
 
@@ -141,7 +141,7 @@ Enter a description of the signature policy.
 <tr>
 <td valign="top">
 
-*Documentation Reference* \(only if the value ***Explicit ID*** has been selected for *Signature Policy*\)
+*Documentation Reference* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
 
 
 
@@ -157,7 +157,7 @@ Provide a reference to further documentation of the signature policy.
 <tr>
 <td valign="top">
 
-*Digest Algorithm* \(only if the value ***Explicit ID*** has been selected for *Signature Policy*\)
+*Digest Algorithm* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
 
 
 
@@ -175,7 +175,7 @@ As default, SHA256 is used.
 <tr>
 <td valign="top">
 
-*Digest Value* \(only if the value ***Explicit ID*** has been selected for *Signature Policy*\)
+*Digest Value* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
 
 
 
@@ -190,7 +190,7 @@ To calculate the digest value, you have the following options:
 
 -   *Calculate from Identifier*
 
-    Calculates the digest value from the value of the *Identifier* provided above. Note that the Identifier must be a valid URL and start with ***http://*** or ***https://***.
+    Calculates the digest value from the value of the *Identifier* provided above. Note that the Identifier must be a valid URL and start with `http://` or `https://`.
 
 -   *Browse to local File*
 
@@ -204,7 +204,7 @@ To calculate the digest value, you have the following options:
 <tr>
 <td valign="top">
 
-*Policy Qualifier* \(only if the value ***Explicit ID*** has been selected for *Signature Policy*\)
+*Policy Qualifier* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
 
 
 

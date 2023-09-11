@@ -12,14 +12,17 @@ Another example is the splitter, which defines that a single message is split in
 
 This section provides simple example integration flows to show how to implement enterprise integration patterns.
 
-You can find the integration flows in the following integration package published on SAP API Business Hub:
+You can find the integration flows in the following integration package published on SAP Business Accelerator Hub:
 
 > ### Note:  
-> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP API Business Hub:
+> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP Business Accelerator Hub:
 > 
 > [Integration Flow Design Guidelines - Enterprise Integration Patterns](https://api.sap.com/package/DesignGuidelinesPatterns?section=Overview) 
 > 
 > For more information, see [Copying the Integration Package and Deploying the Integration Flows](copying-the-integration-package-and-deploying-the-integration-flows-2cb1d31.md).
+
+> ### Note:  
+> It can be the case that you've applied the integration flow design guidelines described in this section to your best knowledge, but you still face issues during the operation of the scenario. For example, you have applied all design rules with regard to performance but still the performance isn't good enough at runtime. In such cases, you can check out the following page to search for a service that helps you to optimize the implementation of your scenario: [SAP Services and Support](https://www.sap.com/services-support.html).
 
 **Related Information**  
 
@@ -37,6 +40,8 @@ You can find the integration flows in the following integration package publishe
 [Message Filter](message-filter-bd52346.md "You can use the Message Filter pattern to remove any data from a channel that you aren't interested in.")
 
 [Recipient List](recipient-list-06594b9.md "")
+
+[Resequencer](resequencer-068cfc7.md "If you want to reorder individual messages that have been received by Cloud Integration in a wrong order, you can use an Aggregator pattern which allows you to collect individual messages in bulks, sorted by sequence number. To revert the message bulks into multiple individual messages again, use the Splitter pattern and send the individual messages to the receiver.")
 
 [Scatter-Gather](scatter-gather-987eef2.md "You want to send a message to multiple recipients and each of them sends a reply that needs to be collected. With the Scatter-Gather pattern, you can broadcast a message to multiple recipients and reaggregate the responses back into a single message.")
 

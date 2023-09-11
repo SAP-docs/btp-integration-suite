@@ -19,7 +19,7 @@ You can archive data for **persist step content**, **adapter payloads**, and **a
 > ### Note:  
 > Payload recording is currently only supported for the following adapters: AS2, ELSTER, OData, HTTPS, MAIL, HTTP; RFC, SFTP, SuccessFactors, SOAP, XI, IDoc.
 
-A message processing log \(MPL\) is archived in the CMS by storing new entries having message processing log \(MPL\) related properties, as well a ***.zip*** file. The properties include values from the MPL header. The ***.zip*** file contains the payload of the processed messages.
+A message processing log \(MPL\) is archived in the CMS by storing new entries having message processing log \(MPL\) related properties, as well a `.zip` file. The properties include values from the MPL header. The `.zip` file contains the payload of the processed messages.
 
 For every step of an integration flow, where data of the type: persist step content, adapter payloads, and attachments are written, there's a folder named after the step-id. This folder contains the files, and the files contain the data.
 
@@ -29,7 +29,7 @@ Example: For attachments, the structure is: a folder named after the step-id in 
 > Even though the `Persist` step is saving the data encrypted, the data isn’t encrypted when stored in the CMS for archiving.
 
 > ### Tip:  
-> If you're using the archiving feature for the first time, we recommend trying out the feature with a few testing integration flows, in order to establish a successful setup before using it for integration flows in production. We further recommend checking the zip-files uploaded for the testing integration flows to verify that all the information required for your archiving use case is contained in the zip file. Since unnecessary information puts extra load on the runtime database, we recommend that you archive only the necessary information. For example, if you use ***Receiver*** or ***Sender Message*** recording, it'sn't necessary to also archive ***Persisted Messages***.
+> If you're using the archiving feature for the first time, we recommend trying out the feature with a few testing integration flows, in order to establish a successful setup before using it for integration flows in production. We further recommend checking the zip-files uploaded for the testing integration flows to verify that all the information required for your archiving use case is contained in the zip file. Since unnecessary information puts extra load on the runtime database, we recommend that you archive only the necessary information. For example, if you use `Receiver` or `Sender Message` recording, it'sn't necessary to also archive `Persisted Messages`.
 
 > ### Note:  
 > To some extent, the performance of archiving can be tweaked with internal parameters maintained by our Operations Team only. If you find in your tests that the performance of archiving isn't sufficient for your use case, open a ticket with SAP Support. This ticket allows us to investigate whether we can reach the desired performance by tweaking the parameters.

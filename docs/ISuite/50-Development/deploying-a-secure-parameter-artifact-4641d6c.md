@@ -40,14 +40,14 @@ You can store secure data like passwords in a secure store and use an alias name
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Name**
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide a name for the artifact.
 
     The artifact name is used as an alias for the confidential data assigned by this parameter.
@@ -58,14 +58,14 @@ You can store secure data like passwords in a secure store and use an alias name
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Description**
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide a more detailed description of the artifact.
 
 
@@ -74,22 +74,22 @@ You can store secure data like passwords in a secure store and use an alias name
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Secure Parameter**
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the confidential value of the attribute.
 
     > ### Note:  
     > The possible length of the secure parameter varies:
     > 
-    > -   for *Cloud Foundry*: 4096 characters max. \(including spaces\)
+    > -   for **Cloud Foundry: 4096 characters max. \(including spaces\)
     > 
-    > -   for *Neo*: 255 characters max. \(including spaces\)
+    > -   for **Neo: 255 characters max. \(including spaces\)
 
 
     
@@ -97,14 +97,14 @@ You can store secure data like passwords in a secure store and use an alias name
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Repeat Secure Parameter**
 
 
     
     </td>
     <td valign="top">
-
+    
     Repeat the confidential value of the attribute.
 
 

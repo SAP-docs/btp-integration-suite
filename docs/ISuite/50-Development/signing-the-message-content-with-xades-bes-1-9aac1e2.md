@@ -45,14 +45,14 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Time* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option if you want to add the signing time to the signature.
 
     This measure helps to provide evidence that the signature key was valid at the time the signature was created.
@@ -63,27 +63,27 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Certificate* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify whether the certificate of the signing key is to be added to the signature.
 
     You have the following options:
 
-    -   ***None***
+    -   `None`
 
         Add no certificate.
 
-    -   ***Certificate Only***
+    -   `Certificate Only`
 
         Add digest value, issuer, and serial number of the signing certificate.
 
-    -   ***Certificate Chain*** 
+    -   `Certificate Chain` 
 
         Add digest value, issuer, and serial number of the certificates of the certificate chain.
 
@@ -94,14 +94,14 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
-    *Digest Algorithm* \(only when either ***Certificate Only*** or ***Certificate Chain*** is selected for *Certificate*\)
+    
+    *Digest Algorithm* \(only when either `Certificate Only` or `Certificate Chain` is selected for *Certificate*\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify a digest algorithm that is to be used to calculate a digest value from the certificate.
 
     This measure helps to control whether the certificate that is used to verify the message content corresponds to the one that has been used to sign the message content.
@@ -114,19 +114,19 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Certificate URI*
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify a reference to the certificate.
 
-    If as *Certificate* you have selected ***Certificate Only***, only one URI is allowed.
+    If as *Certificate* you have selected `Certificate Only`, only one URI is allowed.
 
-    If as *Certificate* you have selected ***Certificate Chain***, you can add for each certificate in the certificate chain an URI. The URI must be added at the position where the corresponding certificate in the chain is located. At the position 0 the signing certificate URI must be placed. If for a certain certificate in the chain no URI is available, enter an empty string at the corresponding place in the URI list.
+    If as *Certificate* you have selected `Certificate Chain`, you can add for each certificate in the certificate chain an URI. The URI must be added at the position where the corresponding certificate in the chain is located. At the position 0 the signing certificate URI must be placed. If for a certain certificate in the chain no URI is available, enter an empty string at the corresponding place in the URI list.
 
 
     
@@ -160,14 +160,14 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Claimed Roles* \(optional\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the claimed roles of the signer.
 
     To specify a claimed role, choose *Add* and enter a text or an XML fragment with the root element *ClaimedRole*.
@@ -178,14 +178,14 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Certified Roles* \(optional\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the roles of the signer which are certified by an attribute certificate.
 
     An attribute certificate associates the identifier of a certificate to some attributes of its owner, in this case, to a role
@@ -230,14 +230,14 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Description* \(optional\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide an informal text to describe the format of the signed data.
 
 
@@ -246,19 +246,19 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *MIME Type* \(optional\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the Internet Media Type \(MIME type\) that determines the data object format.
 
     You need to enter the MIME type manually.
 
-    Example: ***text/xml***
+    Example: `text/xml`
 
 
     
@@ -290,14 +290,14 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify an identifier to indicate the format of a signed data.
 
     You can specify the identifier by one of the following options:
@@ -308,7 +308,7 @@ For more information on XAdES, see:
 
     -   By means Object Identifier \(OID\) when using ASN.1 \(Abstract Syntax Notation One\)
 
-        To support an OID, the content of Identifier consists of an OID, either encoded as Uniform Resource Name \(URN\) or as Uniform Resource Identifier \(URI\). The optional *Qualifier* attribute can be used to provide a hint about the applied encoding \(values ***OIDAsURN*** or ***OIDAsURI***\).
+        To support an OID, the content of Identifier consists of an OID, either encoded as Uniform Resource Name \(URN\) or as Uniform Resource Identifier \(URI\). The optional *Qualifier* attribute can be used to provide a hint about the applied encoding \(values `OIDAsURN` or `OIDAsURI`\).
 
 
 
@@ -317,21 +317,21 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Qualifier* \(only relevant if an Identifier *Name* has been specified\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Further qualify how the identifier is defined in case Abstract Syntax Notation One \(ASN 1\) is used.
 
     You can select one of the following values:
 
     -   `empty string` 
-    -   ***OIDAsURI*** – uses Uniform Resource Name.
-    -   ***OIDAsURN*** – uses Uniform Resource Name.
+    -   `OIDAsURI` – uses Uniform Resource Name.
+    -   `OIDAsURN` – uses Uniform Resource Name.
 
 
     
@@ -339,14 +339,14 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Description* \(only relevant if an Identifier *Name* has been specified\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide a reference to further documentation of the identifier.
 
 
@@ -355,14 +355,14 @@ For more information on XAdES, see:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Documentation Reference* \(only relevant if an Identifier *Name* has been specified\)
 
 
     
     </td>
     <td valign="top">
-
+    
      
 
 

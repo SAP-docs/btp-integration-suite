@@ -33,7 +33,7 @@ As an API administrator, you use this procedure to revoke an application develop
 
 1.  Log on to the API business hub enterprise.
 
-2.  Choose *Manage Users* \> *Registered Users*.
+2.  Choose *Enterprise Manager* \> *Manage Users* \> *Registered Users*.
 
 3.  From the list of application developers, select the application developer whose access you want to revoke and choose the <span class="SAP-icons"></span> Revoke Usericon under the *Actions* column.
 

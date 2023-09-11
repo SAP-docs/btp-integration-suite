@@ -14,11 +14,11 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
 
 -   You are familiar with the conversion rules for JSON to XML conversion.
 
-    For more information see [Conversion Rules for JSON to XML Conversion](conversion-rules-for-json-to-xml-conversion-232a9cf.md).
+    For more information, see [Conversion Rules for JSON to XML Conversion](conversion-rules-for-json-to-xml-conversion-232a9cf.md).
 
 -   You are familiar with the limitations for JSON to XML conversion.
 
-    For more information see [Limitations for JSON to XML Conversion](limitations-for-json-to-xml-conversion-3a02829.md).
+    See [Limitations for JSON to XML Conversion](limitations-for-json-to-xml-conversion-3a02829.md).
 
 -   You are editing the integration flow in the editor.
 
@@ -64,21 +64,21 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     </tr>
     <tr>
     <td valign="top">
-
+    
     General
 
 
     
     </td>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the name of the converter.
 
 
@@ -87,21 +87,21 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     </tr>
     <tr>
     <td valign="top" rowspan="5">
-
+    
     Processing
 
 
     
     </td>
     <td valign="top">
-
+    
     JSON Prefix \(only if the option *Use Namespace Mapping* is selected\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the mapping of the JSON prefix to the XML namespace. The JSON namespace/prefix must begin with a letter and can contain aA-zZ and 0-9.
 
 
@@ -110,14 +110,14 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     </tr>
     <tr>
     <td valign="top">
-
+    
     JSON Prefix Separator
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the JSON prefix separator to be used to separate the JSON prefix from the local part. The value used must not be used in the JSON prefix or local name.
 
     The following characters are allowed: colon\(:\), comma\(,\), dot\(.\), pipe\(|\), semicolon\(;\), and space.
@@ -128,14 +128,14 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     </tr>
     <tr>
     <td valign="top">
-
+    
     Add XML Root Element
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option to convert JSON documents with an XML root element
 
 
@@ -144,14 +144,14 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name \(only if the option *Add XML Root Element* is selected\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the name of the XML root element. The name must comply with the NCName rules:
 
     -   The name must begin with a letter or an underscore.
@@ -169,14 +169,14 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     </tr>
     <tr>
     <td valign="top">
-
+    
     Namespace Mapping \(only if the option *Add XML Root Element* is selected\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the namespace of the XML root element that you have configured in the integration flow.
 
 

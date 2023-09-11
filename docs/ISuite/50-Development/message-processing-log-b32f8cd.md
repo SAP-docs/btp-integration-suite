@@ -40,7 +40,7 @@ Description
 <tr>
 <td valign="top">
 
- *\#* 
+*\#* 
 
 
 
@@ -56,7 +56,7 @@ Displays the sequential number of the run
 <tr>
 <td valign="top">
 
- *Started At* 
+*Started At* 
 
 
 
@@ -72,7 +72,7 @@ Displays the date and time of the last run.
 <tr>
 <td valign="top">
 
- *Duration* 
+*Duration* 
 
 
 
@@ -88,7 +88,7 @@ Displays the duration of the processing run in *ms*.
 <tr>
 <td valign="top">
 
- *Log Level* 
+*Log Level* 
 
 
 
@@ -104,7 +104,7 @@ Displays the log level.
 <tr>
 <td valign="top">
 
- *Process ID* 
+*Process ID* 
 
 
 
@@ -120,7 +120,7 @@ Displays the ID of the worker node on which the run was executed.
 <tr>
 <td valign="top">
 
- *Status* 
+*Status* 
 
 
 
@@ -183,7 +183,7 @@ Description
 <tr>
 <td valign="top">
 
- ![](images/BlueEnvFull_a826a95.png) 
+![](images/BlueEnvFull_a826a95.png)
 
 
 
@@ -199,7 +199,7 @@ Successfully processed step with trace data available.
 <tr>
 <td valign="top">
 
- ![](images/RedEnvelope_4fabaf5.png) 
+![](images/RedEnvelope_4fabaf5.png)
 
 
 
@@ -215,7 +215,7 @@ Error in processed step with trace data available.
 <tr>
 <td valign="top">
 
- ![](images/BlueEnvelope_7d89277.jpg) 
+![](images/BlueEnvelope_7d89277.jpg)
 
 
 
@@ -231,7 +231,7 @@ Successfully processed step with no trace data available.
 <tr>
 <td valign="top">
 
- ![](images/RedEnvelope1_08fa3b3.jpg) 
+![](images/RedEnvelope1_08fa3b3.jpg)
 
 
 
@@ -267,5 +267,5 @@ For more information on the *Trace* log level check out [Tracing the Execution o
 
 [Setting Log Levels](setting-log-levels-4e6d3fc.md "The log level for the message processing log specifies the granularity of information collected by the message processing log")
 
-[Message Status](message-status-733a57b.md "")
+[Message Status](message-status-733a57b.md "The message processing status indicates how a messages has been processed at runtime.")
 

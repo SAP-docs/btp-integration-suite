@@ -4,7 +4,7 @@
 
 # Import and Export
 
- SAP Integration Suite allows you to export Message Implementation Guidelines \(MIG\), Mapping Guidelines \(MAG\), documentation and runtime artifacts. The application also allows you to import MIGs and MAGs.
+SAP Integration Suite allows you to export Message Implementation Guidelines \(MIG\), Mapping Guidelines \(MAG\), documentation and runtime artifacts. The application also allows you to import MIGs and MAGs.
 
 
 
@@ -16,7 +16,7 @@ There can be situations where you want to bring few of your Message Implementati
 
 There are few things to be considered when using these two features.
 
--   While exporting and importing MIGs/MAGs, their dependent resources such as the custom message for a MIG \(if the MIG is created based on a custom message\), the dependent MIGs for a MAG and the Global Code Value mapping for a MAG are included as well.
+-   While exporting and importing MIGs/MAGs, their dependent resources such as the custom message for a MIG \(if the MIG is created based on a custom message\), the dependent MIGs for a MAG and the Global Code Value mapping for a MAG, Pretransformation of a MAG are included as well.
 -   The following overwrite scenarios are supported:
 
     -   *Draft to Draft*: If you have made any changes to a MIG/MAG that is in draft state in one tenant and need to import that to another tenant that contains a previous state of that MIG/MAG, you can overwrite that MIG/MAG using the *Import* option. You can also overwrite a current draft state of a MIG/MAG with its previous state. The import dialog would display a warning stating that there will be a potential data loss with the overwrite
@@ -97,5 +97,5 @@ You can then import these runtime artifacts in either of these integration solut
 
 See [Exporting Runtime Artifacts](exporting-runtime-artifacts-5ab4cfe.md) to know how to export the runtime artifacts.
 
- 
+
 

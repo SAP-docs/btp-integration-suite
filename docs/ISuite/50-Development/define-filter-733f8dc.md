@@ -30,7 +30,7 @@ Here's an example for a message:
 </Message>
 ```
 
-Let us assume that you are interested only in the *count*. You use the *Filter* and specify an Xpath ***/Message/orders/order/count/text\(\)***.
+Let us assume that you are interested only in the *count*. You use the *Filter* and specify an Xpath `/Message/orders/order/count/text()`.
 
 The output of the content filter would be data in *count* fields of the message. The output in this example with the specified Xpath is *10010*.
 
@@ -66,14 +66,14 @@ For more examples, see [Examples](examples-eb2e601.md).
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify a name for filter step. By default, the value is *Filter*.
 
 
@@ -82,14 +82,14 @@ For more examples, see [Examples](examples-eb2e601.md).
     </tr>
     <tr>
     <td valign="top">
-
+    
     XPath Expression
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify Xpath to the message node that contains information to be extracted
 
 
@@ -120,14 +120,14 @@ For more examples, see [Examples](examples-eb2e601.md).
     </tr>
     <tr>
     <td valign="top">
-
+    
     String
 
 
     
     </td>
     <td valign="top">
-
+    
     The output of filter is of type string
 
 
@@ -136,14 +136,14 @@ For more examples, see [Examples](examples-eb2e601.md).
     </tr>
     <tr>
     <td valign="top">
-
+    
     Integer
 
 
     
     </td>
     <td valign="top">
-
+    
     The output of filter is of type integer
 
 
@@ -152,14 +152,14 @@ For more examples, see [Examples](examples-eb2e601.md).
     </tr>
     <tr>
     <td valign="top">
-
+    
     Boolean
 
 
     
     </td>
     <td valign="top">
-
+    
     The output of filter is of type boolean
 
 
@@ -168,14 +168,14 @@ For more examples, see [Examples](examples-eb2e601.md).
     </tr>
     <tr>
     <td valign="top">
-
+    
     Node
 
 
     
     </td>
     <td valign="top">
-
+    
     The output of filter is of type node
 
 
@@ -184,14 +184,14 @@ For more examples, see [Examples](examples-eb2e601.md).
     </tr>
     <tr>
     <td valign="top">
-
+    
     Nodelist
 
 
     
     </td>
     <td valign="top">
-
+    
     The output of filter is a collection of nodes
 
 

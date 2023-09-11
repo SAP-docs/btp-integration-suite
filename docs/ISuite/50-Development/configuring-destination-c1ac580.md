@@ -89,19 +89,19 @@ Description of the destination
 
 Add the URL :
 
-For *Proxy Type* ***Internet***
+For *Proxy Type* `Internet`
 
 -   The CMS Repository
 
 
-For *Proxy Type* ***OnPremise***
+For *Proxy Type* `OnPremise`
 
 -   The CMS Repository and replace host and port by the virtual host and port configured in the SAP Cloud Connector.
 
 The required protocol in the URL is HTTP. This protocol isn't a security risk, as you can specify HTTPS in the SAP Cloud Connector configuration and thus ensure that the route from cloud connector on the on-premise system is encrypted. The connection between cloud connector and application VM in the cloud is always encrypted, as shown in: [https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/8db6945e70b44c5d8e0873c3e9fb3bf2.html\#loio8db6945e70b44c5d8e0873c3e9fb3bf2\_\_oP](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/8db6945e70b44c5d8e0873c3e9fb3bf2.html#loio8db6945e70b44c5d8e0873c3e9fb3bf2__oP)
 
 > ### Note:  
-> The default binding is the browser-binding. Unless you specify ***AtomPub*** as `BindingType`, you've to specify the URL for the browser binding. WebServices binding isn't supported.
+> The default binding is the browser-binding. Unless you specify `AtomPub` as `BindingType`, you've to specify the URL for the browser binding. WebServices binding isn't supported.
 
 
 
@@ -161,10 +161,10 @@ BasicAuthentication or OAuth2ClientCredentials
 
 The user authorized for the CMS repository for BasicAuthentication. The user who connects with CMS repository requires several permissions. The permissions must include:
 
--   ***cms:read***
+-   `cms:read`
 
--   ***cms:write*** 
--   The query capability ***metadataonly***
+-   `cms:write` 
+-   The query capability `metadataonly`
 
 
 
@@ -228,7 +228,7 @@ Client Secret for the OAuth2ClientCredentials authentication without mTLS \(mutu
 </td>
 <td valign="top">
 
-Select the checkbox, if you want to use mTLS \(mutual TLS\) for Oauth2ClientCredentials authentication. This is only applicable for proxy type ***Internet***
+Select the checkbox, if you want to use mTLS \(mutual TLS\) for Oauth2ClientCredentials authentication. This is only applicable for proxy type `Internet`
 
 
 
@@ -287,7 +287,7 @@ Password for the keystore and the key pair contained in the keystore when using 
 </td>
 <td valign="top">
 
-You can use both values ***Dedicated*** and ***Common*** for OAuth2ClientCredentials authentication.
+You can use both values `Dedicated` and `Common` for OAuth2ClientCredentials authentication.
 
 
 
@@ -305,7 +305,7 @@ You can use both values ***Dedicated*** and ***Common*** for OAuth2ClientCredent
 
 The authentication URL grants the Oauth token for OAuth2ClientCredentials authentication.
 
-For the proxy-type ***OnPremise***, you can only specify a URL with the http protocol. It seems to be a security risk, and is inconvenient if your URL uses the https protocol. But internally, we replace "http" with "https" in the URL used to call the token. We assume a URL with https for the proxy-type ***OnPremise*** and authentication type ***OAuth2ClientCredentials*** in a URL specified with http. For example: if you call the URL "**http**://xxx" in the destination, it's internally replaced by "**https:**://xxx".
+For the proxy-type `OnPremise`, you can only specify a URL with the http protocol. It seems to be a security risk, and is inconvenient if your URL uses the https protocol. But internally, we replace "http" with "https" in the URL used to call the token. We assume a URL with https for the proxy-type `OnPremise` and authentication type `OAuth2ClientCredentials` in a URL specified with http. For example: if you call the URL "**http**://xxx" in the destination, it's internally replaced by "**https:**://xxx".
 
 
 
@@ -373,14 +373,14 @@ Value or Description
 </td>
 <td valign="top">
 
-If you define this parameter and set its value to ***TRUE***, or ***true***, only archiving relevant MPLs with status COMPLETED are archived.
+If you define this parameter and set its value to `TRUE`, or `true`, only archiving relevant MPLs with status COMPLETED are archived.
 
-If this parameter isn't specified, or specified with any value other than ***TRUE*** or ***true***, the MPL status isn't considered, except status DISCARDED.
+If this parameter isn't specified, or specified with any value other than `TRUE` or `true`, the MPL status isn't considered, except status DISCARDED.
 
 All archiving relevant MPLs are archived, except MPLs with status DISCARDED.
 
 > ### Caution:  
-> If you've set the parameter with the value ***TRUE***, or ***true***, and you run an archiving job with this setting, the run **changes the archiving relevance of MPLs**. In this case, these particular MPLs with another status than COMPLETED aren’t archived anymore by further job runs. They'll be deleted by one of the next runs of the `Monitoring Data Cleanup Job`.
+> If you've set the parameter with the value `TRUE`, or `true`, and you run an archiving job with this setting, the run **changes the archiving relevance of MPLs**. In this case, these particular MPLs with another status than COMPLETED aren’t archived anymore by further job runs. They'll be deleted by one of the next runs of the `Monitoring Data Cleanup Job`.
 
 
 
@@ -396,11 +396,11 @@ All archiving relevant MPLs are archived, except MPLs with status DISCARDED.
 </td>
 <td valign="top">
 
-Define this parameter only if you want to use the ***AtomPub-Binding*** instead of the Browser-Binding to connect to the repository.
+Define this parameter only if you want to use the `AtomPub-Binding` instead of the Browser-Binding to connect to the repository.
 
-In this case, specify ***AtomPub*** as parameter value and ensure that the URL property has the correct URL for the ***AtomPub-Binding***. If you use SAP Cloud Connector, ensure that the URL for the ***AtomPub-Binding*** URL has the *URL* property value.
+In this case, specify `AtomPub` as parameter value and ensure that the URL property has the correct URL for the `AtomPub-Binding`. If you use SAP Cloud Connector, ensure that the URL for the `AtomPub-Binding` URL has the *URL* property value.
 
-If you use ***AtomPub-Binding***, the ***AtomPub*** URL must be displayed as an accessible resource in the SAP Cloud Connector configuration.
+If you use `AtomPub-Binding`, the `AtomPub` URL must be displayed as an accessible resource in the SAP Cloud Connector configuration.
 
 
 
@@ -416,7 +416,7 @@ If you use ***AtomPub-Binding***, the ***AtomPub*** URL must be displayed as an 
 </td>
 <td valign="top">
 
-If you set this parameter value to ***true*** or ***TRUE***, the requests sent to the CMIS-Repository are compressed using ***gzip***. This procedure improves the application performance if the repository can handle compressed requests.
+If you set this parameter value to `true` or `TRUE`, the requests sent to the CMIS-Repository are compressed using `gzip`. This procedure improves the application performance if the repository can handle compressed requests.
 
 Before activating this parameter, check if your repository can handle compressed requests.
 
@@ -461,7 +461,7 @@ Use this parameter if you observe frequent failures during testing because the t
 </td>
 <td valign="top">
 
-If you set this parameter value to ***true*** or ***TRUE***, cookies are used to transmit authentication information.
+If you set this parameter value to `true` or `TRUE`, cookies are used to transmit authentication information.
 
 This action improves the application performance, but doesn't apply to all repositories.
 
@@ -529,9 +529,9 @@ The name of the type you create is the value of `mpl:message` in the JSON. In th
 
 Defines how the session to the CMS repository is created.
 
-If you don't specify the parameter or if the parameter value is set to any other value than ***false*** or ***FALSE***, the session is created by using the `RepositoryId` in the call for the session.
+If you don't specify the parameter or if the parameter value is set to any other value than `false` or `FALSE`, the session is created by using the `RepositoryId` in the call for the session.
 
-If the parameter value is set to ***false*** or ***FALSE*** , the system creates a list of all existing repositories and then uses the repository of the specified ID to create the session.
+If the parameter value is set to `false` or `FALSE` , the system creates a list of all existing repositories and then uses the repository of the specified ID to create the session.
 
 > ### Note:  
 > Use this parameter only if you browse out during testing, that the default connection doesn't work.
@@ -552,7 +552,7 @@ If the parameter value is set to ***false*** or ***FALSE*** , the system creates
 
 The default format for data archiving paths is **year/month/day**, using the log end date of the MPL to determine this date. The data archiving path is created under the root folder. The log end date is stated in UTC.
 
-Use the `PathPrefix` parameter if you want to create the archiving path in a specific folder. Specify the path from the root folder down to the specific folder. Use ***/*** to start the path with and to separate its segments.
+Use the `PathPrefix` parameter if you want to create the archiving path in a specific folder. Specify the path from the root folder down to the specific folder. Use `/` to start the path with and to separate its segments.
 
 If you don't create the folder under the `PathPrefix` in advance, the archiving job creates this folder, provided the user-defined in the destination has the required permissions to create the path specified in the `PathPrefix` parameter.
 
@@ -613,7 +613,7 @@ Specify the repository Id and **not** the repository name.
 </td>
 <td valign="top">
 
-If you set this parameter value to ***true*** or ***TRUE***, your CMIS client requests that the repository compresses the responses sent. This procedure improves the application performance if the repository supports compression of responses.
+If you set this parameter value to `true` or `TRUE`, your CMIS client requests that the repository compresses the responses sent. This procedure improves the application performance if the repository supports compression of responses.
 
 Before activating this parameter, check if your repository supports response compression.
 

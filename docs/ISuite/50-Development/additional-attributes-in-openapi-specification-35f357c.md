@@ -30,7 +30,7 @@ The following additional attributes have been introduced for use with API design
 > }
 > ```
 
-You can use this attribute to display the API type in the APIs listing page of SAP API Business Hub. For example:
+You can use this attribute to display the API type in the APIs listing page of SAP Business Accelerator Hub. For example:
 
 The API Type is set according to the following rules of precedence:
 
@@ -58,14 +58,14 @@ The API Type is set according to the following rules of precedence:
     </tr>
     <tr>
     <td valign="top">
-
+    
     OData V2 API
 
 
     
     </td>
     <td valign="top">
-
+    
     ODATA
 
 
@@ -74,14 +74,14 @@ The API Type is set according to the following rules of precedence:
     </tr>
     <tr>
     <td valign="top">
-
+    
     OData V4 API
 
 
     
     </td>
     <td valign="top">
-
+    
     ODATAV4
 
 
@@ -98,10 +98,10 @@ The API Type is set according to the following rules of precedence:
 
 ## x-sap-shortText
 
-The `x-sap-shortText` attribute is used to display a short description of your APIs in the APIs listing page of SAP API Business Hub. This short text description appears below the title in the list of APIs/services on the *Artifacts* page in SAP API Business Hub.
+The `x-sap-shortText` attribute is used to display a short description of your APIs in the APIs listing page of SAP Business Accelerator Hub. This short text description appears below the title in the list of APIs/services on the *Artifacts* page in SAP Business Accelerator Hub.
 
 > ### Note:  
-> The `x-sap-shortText` is a mandatory attribute that must be defined in the API definition file to enable publication of your API on the SAP API Business Hub.
+> The `x-sap-shortText` is a mandatory attribute that must be defined in the API definition file to enable publication of your API on theSAP Business Accelerator Hub.
 
 > ### Sample Code:  
 > ```
@@ -294,10 +294,14 @@ Please note, though forward slash is not an allowed character to use, it is allo
 
 ## x-sap-stateInfo
 
-You use `x-sap-stateInfo` attribute to display the current status of an API that you want to publish on SAP API Business Hub.
+You use `x-sap-stateInfo` attribute to display the current status of an API that you want to publish on SAP Business Accelerator Hub.
 
 > ### Note:  
 > The `x-sap-stateInfo` is an optional attribute. That is, if you do not use this attribute in your API definition file, then by default, the current status of an API is marked as `Active`. However, If you want to publish your API in the `Beta` status or you have decided to transition your API from `Active` to `Deprecated` or `Decommissioned` status, then it is mandatory to use this attribute to indicate the new status of your API.
+
+
+
+### API status
 
 An API can be marked with any of the following statuses:
 
@@ -416,9 +420,9 @@ If you have defined the `x-sap-stateInfo` attribute, then you must also ensure t
 > ### Note:  
 > You must enter the `date` in the format `yyyy-mm-dd`. The most recent state of the API must appear as the first entry under `changelog`, and the values defined for the `state` attribute in `API definition` file and `Artifact.json` file must be same. It is a good practice to indicate the recent changes made to the API using the `notes` attribute. This will help your API consumers to know if they need to follow certain rules or conditions before using the API.
 
-The following images show a sample API, which is marked `Deprecated` on the SAP API Business Hub:
+The following images show a sample API, which is marked `Deprecated` on the SAP Business Accelerator Hub:
 
- ![](images/deprecated_API_2_new_49ef553.png) 
+![](images/deprecated_API_2_new_49ef553.png)
 
 **Change Log for a decommissioned API** The following is a sample code snippet of the *Artifact.json* file in which `changelog` attribute is used to indicate the decommissioned state of the API.
 
@@ -459,9 +463,9 @@ The following images show a sample API, which is marked `Deprecated` on the SAP 
 > ### Note:  
 > You must enter the `date` in the format `yyyy-mm-dd`. The most recent recent state of the API must appear as the first entry under `changelog`, and the values defined for the `state` attribute in `API definition` file and `Artifact.json` file must be same. It is a good practice to indicate the recent changes made to the API using the `notes` attribute. This will help your API consumers to know if they need to follow certain rules or conditions before using the API.
 
-The following images shows a sample API, which is marked `Decommissioned` on the SAP API Business Hub:
+The following images shows a sample API, which is marked `Decommissioned` on the SAP Business Accelerator Hub:
 
- ![](images/decommissioned_api_3e00d2c.png) 
+![](images/decommissioned_api_3e00d2c.png)
 
 
 
@@ -478,13 +482,20 @@ In OpenAPI 2.0, use `deprecated: true` to mark an API operation as deprecated.
 > operation deprecation
 > 
 > ```
-> paths:
->   /list:
->     get:
->       responses:
->         '200':
->           description: This API Operation is deprecated.
->     deprecated: true
+> {
+>     "paths": {
+>         "/list": {
+>             "get": {
+>                 "responses": {
+>                     "200": {
+>                         "description": "This API Operation is deprecated."
+>                     }
+>                 }
+>             },
+>             "deprecated": true
+>         }
+>     }
+> }
 > ```
 
 In OpenAPI 3.0, use `deprecated: true` to mark an API operation and parameter as deprecated.
@@ -493,26 +504,36 @@ In OpenAPI 3.0, use `deprecated: true` to mark an API operation and parameter as
 > operation deprecation
 > 
 > ```
-> paths:
->   /list:
->     get:
->       responses:
->         '200':
->           description: This API Operation is deprecated.
->     deprecated: true
+> {
+>     "paths": {
+>         "/list": {
+>             "get": {
+>                 "responses": {
+>                     "200": {
+>                         "description": "This API Operation is deprecated."
+>                     }
+>                 }
+>             },
+>             "deprecated": true
+>         }
+>     }
+> }
 > ```
 
 > ### Sample Code:  
 > parameter deprecation
 > 
 > ```
-> - in: query
->           name: id
->           required: true
->           schema:
->             type: string
->           deprecated: true
->           description: Deprecated, use 'itemId' paramter instead.
+> {
+>     "in": "query",
+>     "name": "id",
+>     "required": true,
+>     "schema": {
+>         "type": "string"
+>     },
+>     "deprecated": true,
+>     "description": "Deprecated, use 'itemId' parameter instead."
+> }
 > ```
 
 For more information, see [API Deprecation Policy](https://help.sap.com/doc/DRAFT/6a987e2f83f247649f52baa43d89eb1b/Dev/en-US/CTO%20Circle%20-%20API%20Deprecation%20final.pdf).
@@ -582,21 +603,58 @@ You can use this attribute to provide stakeholder-specific information. For exam
 > ### Sample Code:  
 > ```
 > 
-> {
-> "x-sap-ext-overview": [{
-> "name": "Communication Scenarios",
-> "values": ["SAP_COM_0025 Name of SAP_COM_0025", "SAP_COM_0028 Name of SAP_COM_00028"]
-> },
-> {
-> "name": "Additional Property",
-> "values": ["EntryValue1", "EntryValue2", "EntryValue3"]
-> }]
-> }
 > 
+>  [
+>     {
+>       "name": "Communication Scenario",
+>       "values": [
+>         {
+>           "text": "Finance - Accounting Analytics Integration(SAP_COM_0303)",
+>           "format": "plain"
+>         }
+>       ]
+>     },
+>     {
+>       "name": "Scope Items",
+>       "values": [
+>         {
+>           "text": "[Accounting and Financial Close(J58)](https://rapid.sap.com/bp/#/scopeitems/J58 \" Link To BP \")",
+>           "format": "markdown"
+>         },
+>         {
+>           "text": "[Accounting and Financial Close(O58)](https://rapid.sap.com/bp/#/scopeitems/O58 \" Link To BP \")",
+>           "format": "markdown"
+>         }
+>       ]
+>     },
+>     {
+>       "name": "Authentication Methods",
+>       "values": [
+>         {
+>           "text": "x509",
+>           "format": "plain"
+>         }
+>       ]
+>     },
+>     {
+>       "name": "Business Object",
+>       "values": [
+>         {
+>           "text": "Journal Entry",
+>           "format": "plain"
+>         }
+>       ]
+>     }
+>   ],
+>   "security": [
+>     {
+>       "basicAuthentication": []
+>     }
+>   ]
 > ```
 
 > ### Remember:  
-> Authentication details must not be a part of the x-sap-ext-overview. Add authentication details in the security scheme section. For more information, see [Security Scheme](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Cloud/en-US/9bf4fea2546c4c368b068077ce0ade6c.html "Control access to your business-critical APIs using security schemes. Provide information about these schemes in the securityDefinitions object in an API description file.") :arrow_upper_right:.
+> Except for the X509 authentication method, authentication details must not be a part of the x-sap-ext-overview. Add authentication details in the security scheme section. For more information, see [Security Scheme](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Cloud/en-US/9bf4fea2546c4c368b068077ce0ade6c.html "Control access to your business-critical APIs using security schemes. Provide information about these schemes in the securityDefinitions object in an API description file.") :arrow_upper_right:.
 
 
 
@@ -608,7 +666,7 @@ The Open API specification 2.0 does not support multiple hosts \(and ports\), ne
 
 These features is supported in the `servers` property in the Open API specification v3.0. However, in Open API specification v2.0, the required configuration values can be added via the custom extension `x-servers`.
 
-For more information about how to specify sandbox url and multiple hosts or production servers in OpenAPI 3.0, see the Sandbox and Configure Information sections in [Governance Guidelines for API Packages](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Cloud/en-US/1e1cd898d3984bc79f214202e12ad5b5.html "A checklist to ensure your APIs have been correctly packaged before they are published on the SAP API Business Hub.") :arrow_upper_right:
+For more information about how to specify sandbox url and multiple hosts or production servers in OpenAPI 3.0, see the Sandbox and Configure Information sections in [Governance Guidelines for API Packages](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Cloud/en-US/1e1cd898d3984bc79f214202e12ad5b5.html "A checklist to ensure your APIs have been correctly packaged before they are published on the SAP Business Accelerator Hub.") :arrow_upper_right:
 
 See [here](https://blogs.sap.com/2018/01/05/open-api-spec-2.0-vs-3.0/) to know more information about the differences between OpenAPI 2.0 and Open API 3.0 specifications
 
@@ -629,7 +687,7 @@ If values are supplied for host, schemes, and basepath, then they together form 
 For more information on how to define schemes, host and basepath in the API specification, see [Creating APIs](creating-apis-51f3ca1.md).
 
 > ### Note:  
-> The *Try it Out!* feature on SAP API Business Hub can be configured to enable API testing experience either in a sandbox system or in a productive system. To try out the APIs in a sandbox system, the `host` attribute in the OpenAPI specification must be defined and point to the API Sandbox URL. Similarly, to try out the APIs in a productive system, the `x-servers` attribute in the OpenAPI specification must be defined and point to the URL of the productive system. For example, the productive system can be URL to an application/service running on an active SAP BTP account.
+> The *Try it Out!* feature on SAP Business Accelerator Hub can be configured to enable API testing experience either in a sandbox system or in a productive system. To try out the APIs in a sandbox system, the `host` attribute in the OpenAPI specification must be defined and point to the API Sandbox URL. Similarly, to try out the APIs in a productive system, the `x-servers` attribute in the OpenAPI specification must be defined and point to the URL of the productive system. For example, the productive system can be URL to an application/service running on an active SAP BTP account.
 
 `x-servers` attribute is used when you want to specify multiple hosts, for example, to specify values for different servers located across various geographical boundaries. The example below shows how multiple hosts with path templates can be defined using x-servers attribute.
 
@@ -668,5 +726,50 @@ For more information on how to define schemes, host and basepath in the API spec
 }
 ```
 
-For more information on how `x-servers` attribute is used for enabling API test experience in a productive environment in SAP API Business Hub, see [here](https://blogs.sap.com/2017/09/09/sap-api-business-hub-support-for-productive-environment/).
+For more information on how `x-servers` attribute is used for enabling API test experience in a productive environment in SAP Business Accelerator Hub, see [here](https://blogs.sap.com/2017/09/09/sap-api-business-hub-support-for-productive-environment/).
+
+
+
+<a name="loio35f357c811f546c5ae3451df42f61ea0__section_mgp_dlr_hvb"/>
+
+## x-sap-direction
+
+You can use this optional attribute to indicate the direction in which an API operates.
+
+The value for this field would be one of the following:
+
+-   `inbound` \(default\)
+-   `outbound`
+-   `mixed` \(both inbound and outbound\)
+
+> ### Sample Code:  
+> ```
+> {
+>   "x-sap-direction": "outbound"
+> }
+> ```
+
+
+
+<a name="loio35f357c811f546c5ae3451df42f61ea0__section_pzk_dyb_xwb"/>
+
+## x-sap-extensible
+
+This optional attribute lets you indicate that a particular API is extensible.
+
+The value for this field would be one of the following:
+
+-   `Manual`: API can be extended manually by custom fields in some business contexts.
+-   `Automatic`: API can be extended automatically using tools by custom fields in some business contexts.
+-   `No`: API can't be extended.
+
+> ### Sample Code:  
+> ```
+> {
+>   "x-sap-extensible": {
+>     "supported": "manual",
+>     "description": "API can be extended by custom fields on the following business contexts (field usage for this API needs to be selected):\r\n* Procurement: Purchasing Document (MM_PURDOC_HEADER)\r\n* Procurement: Purchasing Document Item (MM_PURDOC_ITEM)\r\n\r\n[How to add an extension field to an API](https://help.sap.com/viewer/9a281eac983f4f688d0deedc96b3c61c/latest/en-US/57909455bf7c4fdd8bcf48d76c1eae33.html)"
+>   },
+> }
+> ```
 

@@ -5,7 +5,7 @@
 The log level for the message processing log specifies the granularity of information collected by the message processing log
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 You can set the log level for an integration flow scenario in the *Manage Integration Content* page of the *Web-based Monitor*.
 
@@ -36,7 +36,7 @@ Description
 <tr>
 <td valign="top">
 
-***None***
+`None`
 
 
 
@@ -55,7 +55,7 @@ No data is recorded during message processing and no data is shown in data monit
 <tr>
 <td valign="top">
 
-***Info***
+`Info`
 
 
 
@@ -73,7 +73,7 @@ If there are failed messages, the message processing log retains and displays ad
 <tr>
 <td valign="top">
 
-***Error***
+`Error`
 
 
 
@@ -87,7 +87,7 @@ No message processing log attachments are recorded.
 > ### Note:  
 > In case data archiving is available on your tenant and configured for your integration flow, no data is archived for this specific integration flow.
 
-Specifics for log level ***Error***: If you've defined a retry-scenario in your integration flow and set log level ***Error***, a final successful retry isn't recorded. In particular, the overall Message Processing Log Status stays in status ***Retry*** or ***Failed*** although the message is finally successfully delivered.
+Specifics for log level `Error`: If you've defined a retry-scenario in your integration flow and set log level `Error`, a final successful retry isn't recorded. In particular, the overall Message Processing Log Status stays in status `Retry` or `Failed` although the message is finally successfully delivered.
 
 
 
@@ -96,7 +96,7 @@ Specifics for log level ***Error***: If you've defined a retry-scenario in your 
 <tr>
 <td valign="top">
 
-***Debug***
+`Debug`
 
 
 
@@ -104,7 +104,7 @@ Specifics for log level ***Error***: If you've defined a retry-scenario in your 
 <td valign="top">
 
 > ### Caution:  
-> As the log level ***Debug*** is a high resource consuming feature, we recommend setting log level***Debug*** only in a development or test environment!
+> As the log level `Debug` is a high resource consuming feature, we recommend setting log level`Debug` only in a development or test environment!
 
 The message processing log records detailed information for all steps during message processing. While all steps \(with headers and additional information\) are accessible in the graphical UI, only the last 100 are shown in the text view of the message processing log. The log level debug expires after a certain period of time. After expiry, the log level switches back to the log level set before.
 
@@ -117,7 +117,7 @@ The expiry time is fixed and set to 24 hours.
 <tr>
 <td valign="top">
 
-***Trace***
+`Trace`
 
 
 
@@ -126,7 +126,7 @@ The expiry time is fixed and set to 24 hours.
 
 The message processing log records detailed information for all steps during message processing and additionally tracks the message content. The trace function expires after a certain period of time \(default value: 10 minutes\). After expiry, the log level switches back to the log level set before. The recorded message content is also only retained for a certain time \(default value: 1 hour\)
 
-Specifics for log level ***Trace***:
+Specifics for log level `Trace`:
 
 -   If the downloaded trace data, such as header value size and exchange properties exceed 10000 characters, they're truncated.
 
@@ -137,7 +137,7 @@ Specifics for log level ***Trace***:
 </table>
 
 > ### Note:  
-> If you update an integration flow, that is, deploy an integration flow without deleting the predecessor version, the log level configuration is kept stable. If you undeploy an integration flow and then deploy a newer version, it's treated as a new integration flow, which is logged with log level ***Info*** 
+> If you update an integration flow, that is, deploy an integration flow without deleting the predecessor version, the log level configuration is kept stable. If you undeploy an integration flow and then deploy a newer version, it's treated as a new integration flow, which is logged with log level `Info` 
 > 
 > Changes to the log level don't affect messages already in process and only apply to newly created messages after the time of modification.
 
@@ -147,8 +147,6 @@ Specifics for log level ***Trace***:
 [Message Processing Log – Text View](message-processing-log-text-view-718309a.md "The message processing log displays structured information on the processing of a message.")
 
 [Monitor Message Processing](monitor-message-processing-314df3f.md "The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.")
-
-
 
 [Message Processing Log - Adapter Tracing](message-processing-log-adapter-tracing-a9db4ea.md "The adapter tracing is part of the regular tracing feature and the payloads are recorded if you have set the log level to Trace.")
 

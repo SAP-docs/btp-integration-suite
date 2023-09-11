@@ -12,7 +12,16 @@ Domain categories are displayed on the API business hub enterprise home page.
 
 ## Prerequisites
 
-You have the *AuthGroup.Content.Admin* and *AuthGroup.API.Admin* roles assigned to you. This role is used to create and update categories.
+You need the following roles to create and update categories:
+
+-   *AuthGroup.Content.Admin* 
+
+    To assign the role, see [Managing the Access Request of the Users \[New Design\]](managing-the-access-request-of-the-users-new-design-8b79ee8.md).
+
+-   *AuthGroup.API.Admin* 
+
+    To assign the role, see [Assign User Roles in API Management](../20-Working_with_SAP_Integration_Suite_Home/assign-user-roles-in-api-management-911ca5a.md) .
+
 
 
 
@@ -37,7 +46,7 @@ Use the following procedure to configure navigation categories.
 
 1.  Log on to the API business hub enterprise.
 
-2.  Choose *Manage Content* from the top navigation bar.
+2.  Choose *Enterprise Manager* \> *Manage Content* from the top navigation bar.
 
 3.  To add a category, choose *Add New Domain Category*.
 
@@ -63,14 +72,14 @@ Use the following procedure to configure navigation categories.
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Category Name**
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide a name for the category.
 
 
@@ -79,14 +88,14 @@ Use the following procedure to configure navigation categories.
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Category Title**
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide a title for the category. Categories are identified by their title on the home screen.
 
 
@@ -95,14 +104,14 @@ Use the following procedure to configure navigation categories.
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Description**
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide a description for the category.
 
 

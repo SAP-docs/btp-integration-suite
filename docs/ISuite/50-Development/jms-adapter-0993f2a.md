@@ -11,9 +11,9 @@ The JMS messaging instance that is used in asynchronous messaging scenarios with
 **Related Information**  
 
 
-[Configure the JMS Sender Adapter](configure-the-jms-sender-adapter-161791b.md "The JMS sender adapter enables asynchronous decoupling of inbound and outbound processing by using message queues. The sender adapter consumes messages from a JMS queue.")
+[Configure the JMS Sender Adapter](configure-the-jms-sender-adapter-161791b.md "The JMS (Java Message Service) sender adapter enables asynchronous decoupling of inbound and outbound processing by using message queues. The sender adapter consumes messages from a JMS queue.")
 
-[Configure the JMS Receiver Adapter](configure-the-jms-receiver-adapter-79edc04.md "The JMS receiver adapter enables asynchronous decoupling of inbound and outbound processing by using message queues. The receiver adapter stores messages and schedules them for processing in a queue. The messages are processed concurrently.")
+[Configure the JMS Receiver Adapter](configure-the-jms-receiver-adapter-79edc04.md "The JMS (Java Message Service) receiver adapter enables asynchronous decoupling of inbound and outbound processing by using message queues. The receiver adapter stores messages and schedules them for processing in a queue. The messages are processed concurrently.")
 
-[JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md "")
+[JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md "The JMS messaging instance that is used in asynchronous messaging scenarios with the JMS, AS2, AS4, or XI adapter has limited resources.")
 

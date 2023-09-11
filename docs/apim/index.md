@@ -186,6 +186,8 @@ How to use SAP API Management
             -   [Load Balancing Across API Providers](API-Management/APIM-Development/load-balancing-across-api-providers-7ac0c09.md)
                 -   [Configure Load Balancing During Import](API-Management/APIM-Development/configure-load-balancing-during-import-2cd47e2.md)
                 -   [Configuring Load Balancing](API-Management/APIM-Development/configuring-load-balancing-503a3aa.md)
+        -   [Test APIs](API-Management/APIM-Development/test-apis-3ba6151.md)
+            -   [Debug API](API-Management/APIM-Development/debug-api-fb2c7aa.md)
         -   [Publish APIs](API-Management/APIM-Development/publish-apis-75a4a11.md)
             -   [Create a Product](API-Management/APIM-Development/create-a-product-d769622.md)
                 -   [Assign Permission to a Product via UI](API-Management/APIM-Development/assign-permission-to-a-product-via-ui-09fb892.md)

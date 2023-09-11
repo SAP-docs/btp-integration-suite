@@ -62,7 +62,7 @@ For both variants the following processing details are selected:
 
 To access the MPL, you use the OData API. The `MessageProcessingLog` OData API entity allows you to get all message processing logs \(see: [Message Processing Logs](message-processing-logs-827a2d7.md)\).
 
-To access the OData API to retrieve the MPL, configure and deploy a *User Credentials* artifact that contains the credentials of a user that is authorized to access the API. The name of the *User Credentials* artifact must correspond to the name that you configure in the integration flow. By default, we used the name ***iFlowDesignGuidelineUser***.
+To access the OData API to retrieve the MPL, configure and deploy a *User Credentials* artifact that contains the credentials of a user that is authorized to access the API. The name of the *User Credentials* artifact must correspond to the name that you configure in the integration flow. By default, we used the name `iFlowDesignGuidelineUser`.
 
 Before the first run, the following externalized parameters must be set:
 
@@ -117,7 +117,7 @@ credentialName
 </td>
 <td valign="top">
 
-Credential Name to access the Cloud Integration OData API for your tenant. By default, the name ***iFlowDesignGuidelineUser*** is preset.
+Credential Name to access the Cloud Integration OData API for your tenant. By default, the name `iFlowDesignGuidelineUser` is preset.
 
 
 
@@ -151,9 +151,9 @@ Date for the first run of the process in following format `yyyy-MM-ddT00:00:00`.
 
 [Setting Up Inbound HTTP Connections (for API Clients), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fbae09c89d9246f88149c5293c96ab5f.html "") :arrow_upper_right:
 
-[Message Processing Logs](https://api.sap.com/api/MessageProcessingLogs/overview) \(OData API on SAP API Business Hub\)
+[Message Processing Logs](https://api.sap.com/api/MessageProcessingLogs/overview) \(OData API on SAP Business Accelerator Hub\)
 
-[Define Transaction Handling](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/2a5d4bc3b5da46df84b26ac96450587b.html "You can configure transaction handling on integration process or local integration process level.") :arrow_upper_right:
+[Define Transaction Handling](define-transaction-handling-2a5d4bc.md)
 
 [Define Write Variables](define-write-variables-de04b75.md)
 

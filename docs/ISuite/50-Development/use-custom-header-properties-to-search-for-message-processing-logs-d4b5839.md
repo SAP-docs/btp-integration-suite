@@ -270,11 +270,11 @@ To find messages for a custom header, perform the following steps.
 
 3.  In the *Custom Header* field, enter the filter in the following form:
 
-    ***<custom header name\> = <custom header value\>***
+    `<custom header name> = <custom header value>`
 
     Example:
 
-    ***po\_number = 12345***
+    `po_number = 12345`
 
     ![](images/CustomHeader1_4dc7da7.png)
 

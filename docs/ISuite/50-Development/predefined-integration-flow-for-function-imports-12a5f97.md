@@ -10,6 +10,8 @@ To understand this integration flow, let's look at an example.
 
 
 
+## Example
+
 You open an app on your smartphone to check the most frequently visited hotel in the city of New York and the number of guests that visited this hotel in the previous year. The hotel booking system publishes this data in the form of a SOAP Web service. The mobile application places this request in the form of a URI, where the city of New York is passed as a parameter.
 
 When the OData sender channel receives the URI request, it passes it to the Script element. The Script element maps the request so that the SOAP receiver understands it.

@@ -18,7 +18,7 @@ Follow this procedure to use model-based code assist in the OData Model Editor.
 
 1.  Choose *OData Model Editor* \(<span class="SAP-icons"></span>\) on the Service Designer page. The OData Model Editor page opens.
 
-2.  Place the cursor between the quotes of the attribute of an element such as PropertyRef, EntitySet, or AssociationSet and press  [Ctrl\] + [Spacebar\]  to see the relevant suggestions.
+2.  Place the cursor between the quotes of the attribute of an element such as PropertyRef, EntitySet, or AssociationSet and press [Ctrl\] + [Spacebar\]  to see the relevant suggestions.
 
 3.  Scroll through the list and select the required suggestion.
 

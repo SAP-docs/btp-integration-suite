@@ -38,7 +38,7 @@ The integration flow performs the following steps:
 
 1.  A message is received from an HTTP client \(Postman\) through the HTTPS sender channel. The payload contains a product identifier.
 
-2.  The Persist step *Persist inbound message* stores the inbound message in the Message Store. As *Step ID*, the following value is specified: ***PersistInbound***.
+2.  The Persist step *Persist inbound message* stores the inbound message in the Message Store. As *Step ID*, the following value is specified: `PersistInbound`.
 
     For a dedicated product identifier, the stored message has the following structure.
 
@@ -84,28 +84,28 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     productIdentifier
 
 
     
     </td>
     <td valign="top">
-
+    
     XPath
 
 
     
     </td>
     <td valign="top">
-
+    
     //productId
 
 
     
     </td>
     <td valign="top">
-
+    
     Product identifier contained in the inbound message.
 
     This property is used in the OData channel query when reading the product details from the WebShop.
@@ -122,7 +122,7 @@ The integration flow performs the following steps:
 
     `$select=ProductId,Category,CategoryName,CurrencyCode,Price,Name&$filter=ProductId eq '${property.productIdentifier}'`
 
-5.  The Persist step *Persist outbound message* stores the message in the Message Store. As *Step ID*, the following value is specified: ***PersistOutbound***.
+5.  The Persist step *Persist outbound message* stores the message in the Message Store. As *Step ID*, the following value is specified: `PersistOutbound`.
 
     For a dedicated product identifier, the stored message has the following structure.
 

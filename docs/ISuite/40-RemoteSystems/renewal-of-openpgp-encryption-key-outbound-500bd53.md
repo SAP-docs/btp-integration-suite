@@ -6,7 +6,7 @@ In this use case, the tenant is the sender \(outbound communication\) and the re
 
 The following figure illustrates the communication path that is relevant for this use case:
 
- ![](images/Renewal_PGP_Encrypt_Outbound_f9b9e4d.png) 
+![](images/Renewal_PGP_Encrypt_Outbound_f9b9e4d.png)
 
 The renewal process depends on the capabilities of the customer receiver system.
 

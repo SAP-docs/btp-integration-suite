@@ -26,6 +26,6 @@ Assigning Operation Mapping
 4.  In the *Processing* tab, choose *Select* and assign the resource \(**.opmap** file\) to the operation mapping step.
 
     > ### Note:  
-    > To know more about importing the mapping content into an integration flow, see [Importing Mapping Content from ES Repository](importing-mapping-content-from-es-repository-e18fc05.md)
+    > To know more about importing the mapping content into an integration flow, see [Importing Mapping Content from ES Repository](IntegrationSettings/importing-mapping-content-from-es-repository-e18fc05.md)
 
 

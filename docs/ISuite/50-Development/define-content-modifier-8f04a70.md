@@ -16,16 +16,18 @@ You are editing the integration flow in the editor.
 
 You use the content modifier step to modify the content of incoming message by providing additional information in the header or body of the message.
 
-The Content Modifier allows you to modify a message by changing the content of the data containers that are involved in message processing \(message header, message body, or message exchange\). Depending on which container you want to modify, select one of the tabs *Message Header*, *Message Body*, or *Exchange Property*. If modifying the *Message Body*, you can enter the data you want to add to the message body in an editor. If modifying the *Message Header* or the *Exchange Property*, you can define how to access the content of the incoming message \(which is then used to change the selected data container\). For example, in the *Source Type*, select ***XPath*** to specify an XPath expression that addresses a particular element in the incoming message, which will be used to change the message header.
+The Content Modifier allows you to modify a message by changing the content of the data containers that are involved in message processing \(message header, message body, or message exchange\). Depending on which container you want to modify, select one of the tabs *Message Header*, *Message Body*, or *Exchange Property*. If modifying the *Message Body*, you can enter the data you want to add to the message body in an editor. If modifying the *Message Header* or the *Exchange Property*, you can define how to access the content of the incoming message \(which is then used to change the selected data container\). For example, in the *Source Type*, select `XPath` to specify an XPath expression that addresses a particular element in the incoming message, which will be used to change the message header.
 
 Note that data written to the message header during a processing step, for example, in a Content Modifier or Script step, also becomes part of the outbound message addressed to a receiver system. However, properties remain within the integration flow and are not handed over to receivers. Because of this, it is important to consider the following header size restriction if you are using an HTTP-based receiver adapter: If the message header exceeds a certain value, the receiver may not be able to accept the inbound call. This rule applies to all HTTP-based receiver adapters. The limiting value depends on the characteristics of the receiver system, but typically ranges between 4 and 16 KB. To overcome this issue, you can use a subsequent Content Modifier step to delete all headers that are not supposed to be part of the outbound message.
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 
 
@@ -73,14 +75,14 @@ Note that data written to the message header during a processing step, for examp
     </tr>
     <tr>
     <td valign="top">
-
-     *Name* 
+    
+    *Name* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Name under which the specified data has to be stored in the selected header or property data container.
 
 
@@ -89,14 +91,14 @@ Note that data written to the message header during a processing step, for examp
     </tr>
     <tr>
     <td valign="top">
-
-     *Source Type* 
+    
+    *Source Type* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Indicates the kind of data you want to use to change the content of the selected header or property data container.
 
     You can select from the following types:
@@ -172,7 +174,7 @@ Note that data written to the message header during a processing step, for examp
 
         Please refer to [Externalize Parameters of an Integration Flow](externalize-parameters-of-an-integration-flow-45b2a07.md) for more details.
 
-    -    *Local Variable*
+    -   *Local Variable*
 
         Allows you to define a local variable and write its value at runtime to the header or property data container. The value can then be evaluated in subsequent steps of the integration flow.
 
@@ -185,7 +187,7 @@ Note that data written to the message header during a processing step, for examp
         > ### Example:  
         > -   If you want to increase the value in the message header define the name of the *Number Range*.
         > 
-        > -   If you do not want to increase the value in the message header, then define the value as ***<name of the Number Range\>:$\{header.headername\}*** or ***<name of the Number Range\>:<correlation ID\>***.
+        > -   If you do not want to increase the value in the message header, then define the value as `<name of the Number Range>:${header.headername}` or `<name of the Number Range>:<correlation ID>`.
 
         > ### Note:  
         > Make sure you use the same correlation ID for all future processing.
@@ -205,14 +207,14 @@ Note that data written to the message header during a processing step, for examp
     </tr>
     <tr>
     <td valign="top">
-
-     *Source Value* 
+    
+    *Source Value* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Value of the property
 
 
@@ -243,14 +245,14 @@ Note that data written to the message header during a processing step, for examp
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Type**
 
 
     
     </td>
     <td valign="top">
-
+    
     The default value is *Expression*. If the payload contains expressions within it, then set the type as *Expression*; if the payload is huge and it has no expressions within it, then it is recommended to use the type *Constant*.
 
 
@@ -259,14 +261,14 @@ Note that data written to the message header during a processing step, for examp
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Body**
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the content expected in the outgoing message.
 
     > ### Remember:  
@@ -287,6 +289,8 @@ Note that data written to the message header during a processing step, for examp
 
 
 
+
+## Example
 
 Let us assume that the incoming message contains the following information content:
 

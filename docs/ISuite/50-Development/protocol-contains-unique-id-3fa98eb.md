@@ -9,6 +9,8 @@ The message protocol contains a unique ID such as a message ID.
 
 [Sender and Receiver with SAP RM Protocol](sender-and-receiver-with-sap-rm-protocol-9f3e2b6.md "")
 
+[IDoc Receiver Handles Duplicates](idoc-receiver-handles-duplicates-8f8feea.md "")
+
 [ID Mapping \(with AS2 Sender Adapter\)](id-mapping-with-as2-sender-adapter-fe142b3.md "")
 
 [ID Mapping \(with Splitter\)](id-mapping-with-splitter-441e51d.md "")

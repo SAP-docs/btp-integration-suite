@@ -8,7 +8,7 @@ This topic explains how to handle URL redirects in an API proxy using policies.
 
 Let’s say you’ve deployed a simple API proxy, wherein the target endpoint is pointing to the backend service located at the following URL:
 
-***https://services.odata.org/V2/Northwind/Northwind.svc***
+`https://services.odata.org/V2/Northwind/Northwind.svc`
 
 For more information on creating an API proxy, see [Create an API Proxy](create-an-api-proxy-4ac0431.md).
 
@@ -90,9 +90,9 @@ Add a condition to indicate when this policy must execute. In our illustration, 
 > response.status.code=307
 > ```
 
-If the above policy executes, the value of the Location header tagged to the response is extracted and stored in the ***redirectUrl*** and ***redirectUrlPath*** variables. For example, if the backend service URL \(redirected URL\) you’re trying to access is ***https://services.odata.org/V2/Northwind/Northwind.svc/***, then the value ***services.odata.org*** is stored in the ***redirectUrl*** variable and the value ***V2/Northwind/Northwind.svc/*** is stored in the ***redirectUrlPath*** variable.
+If the above policy executes, the value of the Location header tagged to the response is extracted and stored in the `redirectUrl` and `redirectUrlPath` variables. For example, if the backend service URL \(redirected URL\) you’re trying to access is `https://services.odata.org/V2/Northwind/Northwind.svc/`, then the value `services.odata.org` is stored in the `redirectUrl` variable and the value `V2/Northwind/Northwind.svc/` is stored in the `redirectUrlPath` variable.
 
-Use the extracted ***redirectUrl*** and ***redirectUrlPath*** variables in the Service Callout policy as described further.
+Use the extracted `redirectUrl` and `redirectUrlPath` variables in the Service Callout policy as described further.
 
 Add a Service Callout policy to your API proxy with the following configuration. Add this policy to the proxy endpoint \(PreFlow/Outgoing Response\).
 
@@ -118,7 +118,7 @@ Add a condition to indicate when this policy must execute. In our illustration, 
 > response.status.code=307
 > ```
 
-If the above policy executes, the response message received from the external service indicated in the ***URL*** element of the policy, is stored in the ***calloutResponse*** variable. For example, if the values stored in ***redirectUrl*** and ***redirectUrlPath*** variables are ***services.odata.org*** and ***V2/Northwind/Northwind.svc/***, respectively, then the response from the URL \(redirected URL\) ***https://services.odata.org/V2/Northwind/Northwind.svc/*** will be stored in the ***calloutResponse*** variable.
+If the above policy executes, the response message received from the external service indicated in the `URL` element of the policy, is stored in the `calloutResponse` variable. For example, if the values stored in `redirectUrl` and `redirectUrlPath` variables are `services.odata.org` and `V2/Northwind/Northwind.svc/`, respectively, then the response from the URL \(redirected URL\) `https://services.odata.org/V2/Northwind/Northwind.svc/` will be stored in the `calloutResponse` variable.
 
 In the next step, send the response message obtained from the service callout policy to the client using the Assign Message policy as shown further.
 
@@ -136,7 +136,7 @@ Add an Assign Message policy to your API proxy with the following configuration.
 > </AssignMessage>
 > ```
 
-If the above policy executes, the client receives the response message stored in the ***calloutResponse*** variable.
+If the above policy executes, the client receives the response message stored in the `calloutResponse` variable.
 
 Save the API proxy after adding the above policies. You can also create a policy template with the above policies so that you can easily attach the policy template to your API proxies to gracefully handle URL redirection. For more information on policy templates, see [Create a Policy Template](create-a-policy-template-c5d1872.md).
 

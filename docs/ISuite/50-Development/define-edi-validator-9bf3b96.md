@@ -9,12 +9,14 @@ The EDI validator validates the message payload in EDI flat file format against 
 ## Context
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use this procedure to assign XSD files to validate the message payload in a process step. The validator checks the message payload against configured XSD schema, and throws an exception in case of discrepancy.
 
 > ### Note:  
-> Contact the Cloud Integration Team to obtain EDI related XSD files.
+> -   EDI Validator version 1.4 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
+> -   Contact the Cloud Integration Team to obtain EDI related XSD files.
+> -   EDI Validator version 1.5 and above supports LS/LE segments.
 
 
 
@@ -30,7 +32,7 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
 
 4.  Select the *EDI Validator* tab in the *Properties* view.
 
-5.  Define the paramters as described below:
+5.  Define the parameters as described below:
 
 
     <table>
@@ -52,14 +54,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the name of the validator.
 
 
@@ -68,14 +70,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Source Encoding
 
 
     
     </td>
     <td valign="top">
-
+    
     Select encoding format for the incoming payload.
 
 
@@ -84,14 +86,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Validate Message
 
 
     
     </td>
     <td valign="top">
-
+    
     The EDI validator performs validation on incoming message against a defined XSD scheme, and has the following options available during validation:
 
     -   *Standard Validation*: Validates the incoming payload for the structural violations defined in XSD schema.
@@ -105,14 +107,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     EDI Schema Definition
 
 
     
     </td>
     <td valign="top">
-
+    
     Select the source of schema definition.
 
 
@@ -121,28 +123,28 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Schemas
 
 
     
     </td>
     <td valign="top">
-
-    If you select ***Integration Flow*** as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the validation will take place.
+    
+    If you select `Integration Flow` as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the validation will take place.
 
     > ### Note:  
     > -   You can add XSD files to the integration flow.
     > 
     > -   The file name of the xml schema for **EDI** payloads should have the following format:
     > 
-    >     -   EDIFACT: ***UN-EDIFACT\_ORDERS\_D96A.xsd***
+    >     -   EDIFACT: `UN-EDIFACT_ORDERS_D96A.xsd`
     > 
-    >     -   ODETTE: ***ODETTE\_ORDERR\_2.xsd***
+    >     -   ODETTE: `ODETTE_ORDERR_2.xsd`
     > 
-    >     -   ODETTE EDIFACT: ***UN-EDIFACT\_ORDERS\_D96A\_A18051.xsd***
+    >     -   ODETTE EDIFACT: `UN-EDIFACT_ORDERS_D96A_A18051.xsd`
     > 
-    >     -   EANCOM: ***UN-EDIFACT\_ORDERS\_D96A\_EAN008.xsd***
+    >     -   EANCOM: `UN-EDIFACT_ORDERS_D96A_EAN008.xsd`
     > 
     > 
     > -   The file name comprises of following three parts separated by '\_':
@@ -153,7 +155,7 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     > 
     > -   The file name of the xml schema for **ASC-X12** should have the following format:
     > 
-    >     ***ASC-X12\_810\_004010.xsd***
+    >     `ASC-X12_810_004010.xsd`
     > 
     >     The file name comprises of following three parts separated by '\_':
     > 
@@ -169,22 +171,22 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     HeaderName
 
 
     
     </td>
     <td valign="top">
-
-    If you select ***Header*** as *EDI Schema Definition*, then you can see the field *HeaderName*, in *Properties* view. Enter a valid header for the field.
+    
+    If you select `Header` as *EDI Schema Definition*, then you can see the field *HeaderName*, in *Properties* view. Enter a valid header for the field.
 
     > ### Note:  
     > This header name is fetched from camel header. The header is added in script element. This script element is added before converter element. You can add value for this header in the script element.
     > 
-    > For example, you can add the value, ***/xsd/UN-EDIFACT\_ORDERS\_D96A.xsd*** for EDIFACT.
+    > For example, you can add the value, `/xsd/UN-EDIFACT_ORDERS_D96A.xsd` for EDIFACT.
     > 
-    > For example, you can add the value, ***/xsd/ASC-X12\_810\_004010.xsd*** for ASC-X12.
+    > For example, you can add the value, `/xsd/ASC-X12_810_004010.xsd` for ASC-X12.
 
 
     
@@ -192,15 +194,15 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Prevent Exception on Failure
 
 
     
     </td>
     <td valign="top">
-
-    If you want to continue the processing even if the system encounters error while validating, then select this parameter. If an exception occurs, then the error payload is added to ***SAP\_EDIValidationResult*** header.
+    
+    If you want to continue the processing even if the system encounters error while validating, then select this parameter. If an exception occurs, then the error payload is added to `SAP_EDIValidationResult` header.
 
 
     
@@ -300,14 +302,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Interchange
 
 
     
     </td>
     <td valign="top">
-
+    
     Describes the full message payload.
 
 
@@ -316,14 +318,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     DocumentStandard
 
 
     
     </td>
     <td valign="top">
-
+    
     Document standard is valid for UN-EDIFACT and ASC-X12.
 
 
@@ -332,14 +334,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     SyntaxVersion
 
 
     
     </td>
     <td valign="top">
-
+    
     The value can be 3 or 4 for UN-EDIFACT.
 
 
@@ -348,14 +350,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     InterchangeSender
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies sender identification and sender qualifier information.
 
 
@@ -364,14 +366,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     InterchangeReceiver
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies receiver identification and receiver qualifier information.
 
 
@@ -380,14 +382,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     InterchangeControlNumber
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies the number that uniquely identifies EDI payload.
 
 
@@ -396,14 +398,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     InterchangeError
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies the error applicable for interchange.
 
 
@@ -412,14 +414,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Error
 
 
     
     </td>
     <td valign="top">
-
+    
     Describes the error details like element type, xpath, error code and error text.
 
     For error code and error text of interchange please refer to the table **Interchange Level**, given below.
@@ -432,14 +434,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     FunctionalGroup
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies the error in the functional group.
 
 
@@ -448,14 +450,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     GroupControlNumber
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies the number that uniquely identifies functional group.
 
 
@@ -464,15 +466,15 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     MessageError type version
 
 
     
     </td>
     <td valign="top">
-
-    Specifies the message error details. For example, type can be ***Invoice*** and version can be ***96A***.
+    
+    Specifies the message error details. For example, type can be `Invoice` and version can be `96A`.
 
 
     
@@ -480,14 +482,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     SegmentPosition
 
 
     
     </td>
     <td valign="top">
-
+    
     Refers to the erroneous segments position in the payload. It either refers to the line number if the segments in the incoming payload occur in different lines or it refers to the number of segment separator after which the erroneous segment occurs in the payload.
 
 
@@ -496,14 +498,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     DataElementPosition
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies the data element position inside the segment.
 
 
@@ -512,14 +514,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     DataCompositePosition
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies the data composite position inside the segment.
 
 
@@ -552,14 +554,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     2
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the syntax version and/or level is not supported by the recipient.
 
 
@@ -590,14 +592,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     12
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the value of a stand-alone data element, composite data element or component data element does not conform to the relevant specifications for the value.
 
 
@@ -606,14 +608,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     13
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that a mandatory \(or otherwise required\) service or user segment, data element, composite data element or component data element is missing.
 
 
@@ -622,14 +624,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     14
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the recipient does not support use of the specific value of an identified stand-alone data element, composite data element or component data element in the position where it is used. The value may be valid according to the relevant specifications and may be supported if it is used in another position.
 
 
@@ -638,14 +640,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     15
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the recipient does not support use of the segment type, stand-alone data element type, composite data element type or component data element type in the identified position.
 
 
@@ -654,14 +656,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     16
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the identified segment contained too many data elements or that the identified composite data element contained too many component data elements.
 
 
@@ -670,14 +672,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     18
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that an error has been identified, but the nature of the error is not reported.
 
 
@@ -686,14 +688,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     19
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the character indicated as decimal notation in UNA is invalid, or the decimal notation used in a data element is not consistent with the one indicated in UNA .
 
 
@@ -702,14 +704,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     35
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that a segment was repeated too many times.
 
 
@@ -718,14 +720,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     36
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that a segment group is repeated to many times.
 
 
@@ -734,14 +736,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     37
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that one or more numeric characters were used in an alphabetic \(component\) data element or that one or more alphabetic characters were used in a numeric \(component\) data element.
 
 
@@ -750,14 +752,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     38
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that a decimal sign is not preceded by one or more digits.
 
 
@@ -766,14 +768,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     39
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the length of the data element received exceeded the maximum length specified in the data element description.
 
 
@@ -782,14 +784,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     40
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the length of the data element received is shorter than the minimum length specified in the data element description.
 
 
@@ -822,14 +824,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     3
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the functional group trailer is missing.
 
 
@@ -838,14 +840,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     4
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the group control number in the functional group header and trailer do not match.
 
 
@@ -854,14 +856,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     5
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the number of included transaction sets does not match actual count .
 
 
@@ -892,14 +894,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     1
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the transaction set is not supported.
 
 
@@ -908,14 +910,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     2
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the transaction set trailer is missing.
 
 
@@ -924,14 +926,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     3
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the transaction set control number in header and trailer do not match.
 
 
@@ -940,14 +942,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     4
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the number of included segments does not match actual count.
 
 
@@ -956,14 +958,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     5
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the one or more segments have error.
 
 
@@ -994,14 +996,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     1
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that there is an unrecognized segment ID.
 
 
@@ -1010,14 +1012,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     2
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that there is an unexpected segment .
 
 
@@ -1026,14 +1028,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     3
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the mandatory segment is missing .
 
 
@@ -1042,14 +1044,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     4
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the loop occurs over maximum times.
 
 
@@ -1058,14 +1060,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     5
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the segment exceeds maximum use.
 
 
@@ -1074,14 +1076,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     6
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the segment is not defined in transaction set.
 
 
@@ -1090,14 +1092,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     7
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the segment is not in proper sequence.
 
 
@@ -1106,14 +1108,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     8
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the segment has data element errors.
 
 
@@ -1144,14 +1146,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     1
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that there mandatory data element is missing.
 
 
@@ -1160,14 +1162,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     3
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that there are too many data elements.
 
 
@@ -1176,14 +1178,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     4
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the data element is too short.
 
 
@@ -1192,14 +1194,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     5
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the data element is too long.
 
 
@@ -1208,14 +1210,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     6
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that there is an invalid character in data element .
 
 
@@ -1224,14 +1226,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     8
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the date is invalid.
 
 
@@ -1240,14 +1242,14 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </tr>
     <tr>
     <td valign="top">
-
+    
     9
 
 
     
     </td>
     <td valign="top">
-
+    
     Notifies that the time is invalid.
 
 
@@ -1257,6 +1259,6 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
     </table>
     
     > ### Note:  
-    > ***SAP\_EDI\_Document\_Number*** header contains document number for the incoming EDI file.
+    > `SAP_EDI_Document_Number` header contains document number for the incoming EDI file.
 
 

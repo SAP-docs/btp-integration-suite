@@ -12,7 +12,7 @@ When using SAP Integration Suite , customer data is processed beyond the boundar
 However, a significant part of the responsibility also lies with the integration developer. The integration flow ultimately specifies how a message is processed and which options are applied to protect the content of the messages on the way between the sender and the receiver. Therefore, the integration developer has to make sure that the integration flows are designed in a way that ensures that the highest security standards are applied.
 
 > ### Note:  
-> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP API Business Hub:
+> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP Business Accelerator Hub:
 > 
 > [Integration Flow Design Guidelines - Apply Highest Security Standards](https://api.sap.com/package/DesignGuidelinesApplySecurity?section=Overview) 
 > 
@@ -24,6 +24,9 @@ However, a significant part of the responsibility also lies with the integration
 > -   Your scenario is exposed to a higher risk for attacks.
 > 
 > -   Third parties can get access to sensitive data.
+
+> ### Note:  
+> It can be the case that you've applied the integration flow design guidelines described in this section to your best knowledge, but you still face issues during the operation of the scenario. For example, you have applied all design rules with regard to performance but still the performance isn't good enough at runtime. In such cases, you can check out the following page to search for a service that helps you to optimize the implementation of your scenario: [SAP Services and Support](https://www.sap.com/services-support.html).
 
 To apply this design guideline, consider the following rules:
 

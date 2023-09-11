@@ -41,7 +41,7 @@ GET
 </td>
 <td valign="top">
 
- `​/Variables(VariableName='{VariableName}',IntegrationFlow='{IntegrationFlowName}')/$value` 
+`​/Variables(VariableName='{VariableName}',IntegrationFlow='{IntegrationFlowName}')/$value` 
 
 
 

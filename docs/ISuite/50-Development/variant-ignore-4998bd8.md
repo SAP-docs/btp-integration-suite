@@ -8,7 +8,7 @@ In this variant, however, the message is discarded if neither routing condition 
 
 For each receiver, the routing condition is configured accordingly. In addition, a route is configured that points to an End event.
 
- ![](images/ContentBased_Routing_Ignore_ca253b0.png) 
+![](images/ContentBased_Routing_Ignore_ca253b0.png)
 
 For the route that points to the End event, the *Default Route* option is selected. As a result, message processing ends if no receiver is found \(no message is delivered\).
 

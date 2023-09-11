@@ -10,6 +10,9 @@
 
 You work with the PKCS\#7/CMS signer to make your identity known to the participants and thus ensure the authenticity of the messages you're sending on the cloud. This task guarantees your identity by signing the messages with one or more private keys using a signature algorithm.
 
+> ### Tip:  
+> Fore more information on how signing and verifying works and about the technical concepts, check out [Signing and Verifying a Message Using PKCS\#7/CMS](../40-RemoteSystems/signing-and-verifying-a-message-using-pkcs-7-cms-bb76650.md).
+
 
 
 ## Procedure
@@ -40,14 +43,14 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a name of the signer.
 
 
@@ -80,17 +83,17 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     </tr>
     <tr>
     <td valign="top">
-
-     *Block Size \(in bytes\)* 
+    
+    *Block Size \(in bytes\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the size of the data that is to be encoded.
 
-    If you enter a value equal to or less than ***0***, the whole data is encoded.
+    If you enter a value equal to or less than `0`, the whole data is encoded.
 
 
     
@@ -98,25 +101,27 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     </tr>
     <tr>
     <td valign="top">
-
-     *Include Content in Signed Data* 
+    
+    *Include Content in Signed Data* 
 
 
     
     </td>
     <td valign="top">
-
+    
     You can choose to include the original content that is to be signed in the `SignedData` element. This `SignedData` element is written to the message body.
 
     You also have the option to keep the original content in the message body and to include the signed data elsewhere: Up to version 1.2 of the PKCS\#7/CMS Signer you can choose to include the signed data in the *SapCmsSignedData* header. From version 1.3 of the PKCS\#7/CMS Signer onwards, you can include the signed data in the *SapCmsSignedData* property.
 
+    See also [Options to Handle Signed Data](../40-RemoteSystems/options-to-handle-signed-data-89f4220.md)
+
 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
-
+    
     *OID for Content Type*
 
     \(only available when *Include Content in Signed Data* is deselected\)
@@ -125,7 +130,7 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     
     </td>
     <td valign="top">
-
+    
     Specify the object identifier \(OID\) for the content type.
 
     You have the following options to specify the OID:
@@ -150,18 +155,20 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     </tr>
     <tr>
     <td valign="top">
-
-     *Encode Signed Data with Base64* 
+    
+    *Encode Signed Data with Base64* 
 
 
     
     </td>
     <td valign="top">
-
+    
     You can also Base64-encode the signed data in either the message body or the message header, to further protect it during message exchange.
 
     > ### Note:  
     > When you Base64-encode the signed data, you encode either the message header or body, depending on where the signed data is placed. When verifying the message, make sure you specify which part of the message \(header or body\) was Base64-encoded.
+
+    See also [Options to Handle Signed Data](../40-RemoteSystems/options-to-handle-signed-data-89f4220.md)
 
 
     
@@ -169,19 +176,19 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     </tr>
     <tr>
     <td valign="top">
-
-     *Signer Parameters* 
+    
+    *Signer Parameters* 
 
 
     
     </td>
     <td valign="top">
-
+    
     For each private key alias, define the following parameters:
 
     -   *Private Key Alias* 
 
-        Enter an alias for selecting a private key from the keystore. You can enter ***$\{header.headername\}*** or ***$\{property.propertyname\}*** to read the name dynamically from a header or exchange property
+        Enter an alias for selecting a private key from the keystore. You can enter `${header.headername}` or `${property.propertyname}` to read the name dynamically from a header or exchange property
 
         > ### Note:  
         > Consider the security implications when deriving key aliases from header attributes as they might be influenced by inbound adapters or exported/published by outbound adapters. It's more secure to use \(exchange\) properties for this purpose.
@@ -194,11 +201,11 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
 
     -   *Include Certificates*
 
-        If you activate this option \(value ***true***\), the certificate chain corresponding to the private key will be added to the SignedData element.
+        If you activate this option \(value `true`\), the certificate chain corresponding to the private key will be added to the SignedData element.
 
     -   *Include Signing Time*
 
-        If you activate this option \(value ***true***\), the signing time for the signed attributes will be added to the SignedData element.
+        If you activate this option \(value `true`\), the signing time for the signed attributes will be added to the SignedData element.
 
 
 

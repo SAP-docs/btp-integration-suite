@@ -7,28 +7,34 @@ Use the HTTP receiver adapter to communicate with target systems using HTTP mess
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
-The HTTP adapter supports only HTTP 1.1. This means that the target system must support chunked transfer encoding and may not rely on the existence of the HTTP Content-Length header.
+The HTTP Receiver adapter works well with target systems that supports either chunked transfer encoding or rely on the existence of the HTTP Content-Length header.
 
-> ### Remember:  
-> From version 1.10 and onwards, the adapter works well with target systems that supports either chunked transfer encoding or rely on the existence of the HTTP Content-Length header.
+> ### Note:  
+> -   For versions 1.10 and lower, the adapter works only with target systems that support chunked transfer encoding and may not rely on the existence of the HTTP Content-Length header.
+> 
+> -   SAP recommends you add content-type header that indicates type of payload before you make an HTTP outbound call.
+> 
+> -   The adapter can process payloads having an attachment or MIME multipart messages that are converted to byte array via script steps. For target systems that supports chunked transfer, you need not convert the payload to a byte array.
 
 > ### Note:  
 > If you want to dynamically override the configuration of the adapter, you can set the following headers before calling the HTTP adapter:
 > 
-> -   CamelHttpUri
+> -   **CamelHttpUri**
 > 
 >     Overrides the existing URI set directly in the endpoint.
 > 
 >     This header can be used to dynamically change the URI to be called.
 > 
-> -   CamelHttpQuery
+> -   **CamelHttpQuery**
 > 
 >     Refers to the query string that is contained in the request URL.
 > 
@@ -57,20 +63,7 @@ The HTTP adapter supports only HTTP 1.1. This means that the target system must 
 > 
 >     The list of available content types is maintained by the Internet Assigned Numbers Authority \(IANA\). For more information, see [http://www.iana.org/assignments/media-types/media-types.xhtml](http://www.iana.org/assignments/media-types/media-types.xhtml).
 > 
->     > ### Note:  
->     > If transferring `text/*` content types, you can also specify the character encoding in the HTTP header using the `charset` parameter.
->     > 
->     > Here is an example of such a header:
->     > 
->     > `Content-Type: text/html; charset=utf-8`
->     > 
->     > The default character encoding that will be applied for `text/*` content types depends on the HTTP version: `us-ascii` for HTTP 1.0 and `iso-8859-1` for HTTP 1.1.
->     > 
->     > Text data in string format is converted using UTF-8 by default during message processing. If you want to override this behavior, you can use the Content Modifier step and specify the `CamelCharsetName` Exchange property. To avoid encoding issues when using this feature together with the HTTP adapter, consider the following example configuration:
->     > 
->     > If you use a Content Modifier step and you want to send `iso-8859-1`-encoded data to a receiver, make sure that you specify the `CamelCharsetName` Exchange property \(either header or property\) as `iso-8859-1`. For the Content-Type HTTP header, use `text/plain; charset=iso-8859-1`.
-> 
-> -   Content-Encoding
+> -   **Content-Encoding**
 > 
 >     HTTP content encoding that indicates the encoding used during message transport \(for example, `gzip` for GZIP file compression\).
 > 
@@ -83,14 +76,22 @@ The HTTP adapter supports only HTTP 1.1. This means that the target system must 
 >     The list of available content types is maintained by the Internet Assigned Numbers Authority \(IANA\). For more information, see:[http://www.iana.org/assignments/http-parameters/http-parameters.xhtml\#content-coding](http://www.iana.org/assignments/http-parameters/http-parameters.xhtml#content-coding).
 
 > ### Note:  
+> If transferring `text/*` content types, you can also specify the character encoding in the HTTP header using the `charset` parameter.
+> 
+> Here is an example of such a header:
+> 
+> `Content-Type: text/html; charset=utf-8`
+> 
+> The default character encoding that will be applied for `text/*` content types depends on the HTTP version: `us-ascii` for HTTP 1.0 and `iso-8859-1` for HTTP 1.1.
+> 
+> If you want to override the character encoding and avoid encoding issues when you use special characters, you can use the Content Modifier step and specify the `CamelCharsetName` Exchange property. Consider the following example configuration:
+> 
+> If you want to send `iso-8859-1`-encoded data to a receiver, make sure that you specify the `CamelCharsetName` Exchange property \(either header or property\) as `iso-8859-1`.
+
+> ### Note:  
 > Adapter tracing is supported for HTTP adapter. For more information, see [Message Processing Log - Adapter Tracing](message-processing-log-adapter-tracing-a9db4ea.md).
 
 Once you've created a receiver channel and selected the HTTP receiver adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
-
-> ### Remember:  
-> -   SAP recommends you add content-type header that indicates type of payload before you make an HTTP outbound call.
-> 
-> -   HTTP receiver adapter can process payloads having an attachment or MIME multipart messages that are converted to byte array input stream via script steps. For target systems that supports chunked transfer, you need not convert the payload to a byte array.
 
 Select the *General* tab and provide values in the fields as follows.
 
@@ -157,18 +158,18 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
 </td>
 <td valign="top">
 
-URL of the target system that you're connecting to, for example, ***https://mysystem.com***
+URL of the target system that you're connecting to, for example, `https://mysystem.com`
 
-Note that the authentication method ***Client Certificate*** requires the HTTPS protocol. For ***Basic authentication***, it's recommended that you use the HTTPS protocol.
+Note that the authentication method `Client Certificate` requires the HTTPS protocol. For `Basic authentication`, it's recommended that you use the HTTPS protocol.
 
-You can also specify HTTP parameters in the URL. However, if you select the HTTP method ***POST***, parameters are sent in the body. You therefore get a warning message if you configure the parameter-value combination.
+You can also specify HTTP parameters in the URL. However, if you select the HTTP method `POST`, parameters are sent in the body. You therefore get a warning message if you configure the parameter-value combination.
 
 The following URL parameters are currently not allowed for technical reasons:
 
@@ -186,7 +187,7 @@ You can dynamically configure the *Address* field of the HTTP adapter.
 When you specify the *Address* field of the HTTP adapter as `${header.a}`, at runtime the value of header `a` \(as contained in the incoming message\) is written into the Camel header `CamelHttpUri`.
 
 > ### Remember:  
-> By using an ***\**** in the *Allowed Headers* field of the *Runtime Configuration* tab of the artifact, you allow all headers to pass through, including camel-specific headers. This action overwrites the URL set in the adapter that can lead to runtime errors. To avoid such a scenario when using an ***\****, add a Content Modifier before the adapter to remove the ***CamelHttpUri*** header.
+> By using an `*` in the *Allowed Headers* field of the *Runtime Configuration* tab of the artifact, you allow all headers to pass through, including camel-specific headers. This action overwrites the URL set in the adapter that can lead to runtime errors. To avoid such a scenario when using an `*`, add a Content Modifier before the adapter to remove the `CamelHttpUri` header.
 > 
 > Also, in case you set the `CamelHttpUri` header in another process step, the *Address* field gets overwritten.
 
@@ -199,7 +200,7 @@ The endpoint URL that is actually used at runtime is displayed in the message pr
 <tr>
 <td valign="top">
 
- *Query* 
+*Query* 
 
 
 
@@ -244,7 +245,7 @@ When you specify the *Query* field of the HTTP adapter as `${header.a}`, at runt
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -260,7 +261,7 @@ The type of proxy that you are using to connect to the target system:
     > ### Note:  
     > If you select the *On-Premise* option, the following restrictions apply to other parameter values:
     > 
-    > -   Do not use an HTTPS address for *Address*, as it leads to errors when performing consistency checks or during deployment.
+    > -   Use HTTP instead of HTTPS when specifying the virtual system url in the *Address* field.
     > 
     > -   Do not use the option *Client Certificate* for the *Authentication* parameter, as it leads to errors when performing consistency checks or during deployment.
 
@@ -281,7 +282,7 @@ The type of proxy that you are using to connect to the target system:
 <tr>
 <td valign="top">
 
- *Method* 
+*Method* 
 
 
 
@@ -358,7 +359,7 @@ The expression field allows you to enter a simple expression that specifies the 
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 
@@ -437,7 +438,7 @@ Enabled only if you choose *Proxy Type* as *Internet*.
 
 Identifies the *User Credential* artifact that contains the credentials \(user name and password\) for the *Basic* authentication. For *OAuth2 SAML Bearer Assertion* type authentication provides the OAuth2 Credential artifact name. For more information see, [Deploying an OAuth2 Client Credentials Artifact](deploying-an-oauth2-client-credentials-artifact-801b106.md).
 
-You can dynamically configure the *Credential Name* property by specifying either a header or a parameter name in one of the following ways: ***$\{header.headername\}*** or ***$\{parameter.parametername\}***. As an example, you can use a *Script* step before the adapter where you look up the *User Credentials*`Authorization`. The HTTP adapter then uses this header in the HTTP request.
+You can dynamically configure the *Credential Name* property by specifying either a header or a parameter name in one of the following ways: `${header.headername}` or `${parameter.parametername}`. As an example, you can use a *Script* step before the adapter where you look up the *User Credentials*`Authorization`. The HTTP adapter then uses this header in the HTTP request.
 
 Although you can configure this feature, it is not supported when using the corresponding integration content with the SAP Process Orchestration \(SAP PO\) runtime in releases lower than SAP PO 7.5 SP5.
 
@@ -460,7 +461,7 @@ Although you can configure this feature, it is not supported when using the corr
 Enter the private key alias that enables the system to fetch the private key from keystore for authentication.
 
 > ### Restriction:  
-> The values ***true*** and ***false*** aren't supported for this field.
+> The values `true` and `false` aren't supported for this field.
 
 
 
@@ -469,7 +470,7 @@ Enter the private key alias that enables the system to fetch the private key fro
 <tr>
 <td valign="top">
 
- *Timeout \(in ms\)* 
+*Timeout \(in ms\)* 
 
 
 
@@ -489,7 +490,7 @@ Note that the timeout setting has no influence on the Transmission Control Proto
 <tr>
 <td valign="top">
 
- *Throw Exception on Failure* 
+*Throw Exception on Failure* 
 
 
 
@@ -504,6 +505,26 @@ This option allows you to receive all responses irrespective of the HTTP status 
 
 > ### Note:  
 > If you use the HTTP Receiver adapter in the *End Message Event* and enable this option, the status shown for the message process log is *Completed*.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Attach Error Details on Failure* 
+
+
+
+</td>
+<td valign="top">
+
+By default, the option is enabled. This option enables the creation of attachments for request header, response headers, and response body when the message processing fails.
+
+Having these attachments during message processing failures can be unneccesary as it leads to persistence of attachments that doesn't help. Especially, if multiple message processing failures occurs, you have attachments piled up for each failure. If you don't require the attachments for failure scenarios, disable the option. Though you disable the creation of attachments, the content of the same are added to the message processing logs.
+
+If you're using older versions of the adapter where you don't see the option, define the property `SAP.DisableAttachments.HTTP` in the message exchange with the value `true`.
 
 
 
@@ -534,21 +555,21 @@ Description
 <tr>
 <td valign="top">
 
- *Request Headers* 
+*Request Headers* 
 
 
 
 </td>
 <td valign="top">
 
-Enter a list of custom headers, separated by a pipe \(|\), that you want to send to the target system. By default, no custom headers are sent. Alternatively, use an ***\**** to send all custom headers to the target system.
+Enter a list of custom headers, separated by a pipe \(|\), that you want to send to the target system. By default, no custom headers are sent. Alternatively, use an `*` to send all custom headers to the target system.
 
 > ### Remember:  
-> Use an ***\**** separately. If you use an ***\**** and custom header together that are separated by a pipe \(|\), only the custom header is considered.
+> Use an `*` separately. If you use an `*` and custom header together that are separated by a pipe \(|\), only the custom header is considered.
 > 
 > You must have defined the custom headers in the previous flow steps like content modifiers or scripts before you mention them in the HTTP Receiver Adapter.
 
-The adapter doesn't support regular expressions like ***SAP\****.
+The adapter doesn't support regular expressions like `SAP*`.
 
 All Camel-specific headers \(that starts with `camel` or `org.apache.camel`\) and the below listed HTTP protocol headers are excluded even if you specify them.
 
@@ -582,14 +603,14 @@ All Camel-specific headers \(that starts with `camel` or `org.apache.camel`\) an
 <tr>
 <td valign="top">
 
- *Response Headers* 
+*Response Headers* 
 
 
 
 </td>
 <td valign="top">
 
-Enter a list of headers coming from the target system's response, separated by a pipe \(|\), to be received in the message. Use an ***\**** to receive all the headers from the target system, which is also the default value.
+Enter a list of headers coming from the target system's response, separated by a pipe \(|\), to be received in the message. Use an `*` to receive all the headers from the target system, which is also the default value.
 
 
 

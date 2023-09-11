@@ -45,14 +45,14 @@ SOAP
 </td>
 <td valign="top">
 
- **X** 
+**X** 
 
 
 
 </td>
 <td valign="top">
 
- **X** 
+**X** 
 
 
 
@@ -68,7 +68,7 @@ IDOC
 </td>
 <td valign="top">
 
- **X** 
+**X** 
 
 
 
@@ -89,7 +89,7 @@ HTTP
 </td>
 <td valign="top">
 
- **X** 
+**X** 
 
 
 
@@ -110,7 +110,7 @@ AS2
 </td>
 <td valign="top">
 
- **X** 
+**X** 
 
 
 
@@ -146,16 +146,80 @@ XI Adapter
 </tr>
 </table>
 
-**SOAP Sender Adapter**:
 
-For the SOAP sender adapter, you've 2 options to download the WSDL. You can download the WSDLwith or without policies. The WSDL with policies includes WS-policy assertions defining special requirements the sender system must adhere to. If the sender system doesn't understand WSDLs with policies, the WSDL without policies can be used instead.
 
-**OData Sender Adapter**:
+<a name="loio6c3fb226fe91412d94bbb63ac834b35a__section_pyh_p4m_hyb"/>
 
-For integration flows with an OData sender adapter, you can download the EDMX files.
+## Download Options
+
+Depending on the sender adapter type contained in the integration flow, you have different download options.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Adapter
+
+
+
+</th>
+<th valign="top">
+
+Download Options
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+SOAP sender adapter
+
+
+
+</td>
+<td valign="top">
+
+-   *Download*
+
+    > ### Caution:  
+    > In case you want to download the WSDL in Cloud Foundry via a technical client, you need a service instance of the plan `api` assigned with the`MonitoringDataRead` role. It is not possible to use a service instance of plan `integration flow`.
+    > 
+    > See: [Creating Service Instance and Service Key for Inbound Authentication](../40-RemoteSystems/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md) and [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
+
+-   *WSDL Policies*
+
+    There are two options to download the WSDL: with or without policies. The WSDL with policies includes WS-policy assertions defining special requirements the sender system must adhere to. If the sender system doesn't understand WSDLs with policies, the WSDL without policies can be used instead.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OData sender adapter
+
+
+
+</td>
+<td valign="top">
+
+*Download*
+
+You can download the EDMX files.
 
 > ### Remember:  
-> -   If such integration flows use "User Role" as authorization, download of EDMX files work only if you disable Single Sign-On \(SSO\) authentication in your browser.
+> -   If such integration flows use *User Role* as authorization, download of EDMX files work only if you disable Single Sign-On \(SSO\) authentication in your browser.
 > 
-> -   For an OData API Project too, download of EDMX files work only if you disable Single Sign-On \(SSO\) authentication.
+> -   For an OData API Project, download of EDMX files work only if you disable Single Sign-On \(SSO\) authentication.
+
+
+
+</td>
+</tr>
+</table>
 

@@ -80,7 +80,7 @@ Example:
 </td>
 <td valign="top">
 
- [Create an API Proxy](../50-Development/create-an-api-proxy-4ac0431.md) 
+[Create an API Proxy](../50-Development/create-an-api-proxy-4ac0431.md) 
 
 
 
@@ -128,7 +128,7 @@ Example:
 </td>
 <td valign="top">
 
- [Edit an API Proxy](../50-Development/edit-an-api-proxy-a64b952.md) 
+[Edit an API Proxy](../50-Development/edit-an-api-proxy-a64b952.md) 
 
 
 
@@ -224,7 +224,7 @@ Example:
 </td>
 <td valign="top">
 
- [Create a Product](../50-Development/create-a-product-d769622.md) 
+[Create a Product](../50-Development/create-a-product-d769622.md) 
 
 
 
@@ -512,7 +512,7 @@ Example:
 </td>
 <td valign="top">
 
- [Create an API Provider](../50-Development/create-an-api-provider-6b263e2.md) 
+[Create an API Provider](../50-Development/create-an-api-provider-6b263e2.md) 
 
 
 
@@ -656,7 +656,7 @@ Example:
 </td>
 <td valign="top">
 
- [Onboard an Application Developer](../50-Development/onboard-an-application-developer-786d107.md) 
+[Onboard an Application Developer](../50-Development/onboard-an-application-developer-786d107.md) 
 
 
 
@@ -1332,7 +1332,7 @@ Example:
 </td>
 <td valign="top">
 
- [Key Value Map](../50-Development/key-value-map-3722a39.md) 
+[Key Value Map](../50-Development/key-value-map-3722a39.md) 
 
 
 
@@ -1476,7 +1476,7 @@ Example:
 </td>
 <td valign="top">
 
- [Create a Key Value Map](../50-Development/create-a-key-value-map-90d8d41.md) 
+[Create a Key Value Map](../50-Development/create-a-key-value-map-90d8d41.md) 
 
 
 
@@ -1524,7 +1524,7 @@ Example:
 </td>
 <td valign="top">
 
- [Update a Key Value Map](../50-Development/update-a-key-value-map-4961431.md) 
+[Update a Key Value Map](../50-Development/update-a-key-value-map-4961431.md) 
 
 
 
@@ -1572,7 +1572,7 @@ Example:
 </td>
 <td valign="top">
 
- [Delete a Key Value Map](../50-Development/delete-a-key-value-map-24fbb01.md) 
+[Delete a Key Value Map](../50-Development/delete-a-key-value-map-24fbb01.md) 
 
 
 
@@ -1765,7 +1765,7 @@ Example:
 </td>
 <td valign="top">
 
- [Manage Certificates](../50-Development/manage-certificates-c665875.md) 
+[Manage Certificates](../50-Development/manage-certificates-c665875.md) 
 
 
 

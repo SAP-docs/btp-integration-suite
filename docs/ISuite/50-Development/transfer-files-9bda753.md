@@ -4,7 +4,7 @@
 
 Learn how to transfer files from an SFTP server.
 
-You can find the example integration flows that illustrate the guidelines explained in this section in a dedicated integration package published on SAP API Business Hub. For more information, see [Copying the Integration Package and Deploying the Integration Flows](copying-the-integration-package-and-deploying-the-integration-flows-2cb1d31.md).
+You can find the example integration flows that illustrate the guidelines explained in this section in a dedicated integration package published on SAP Business Accelerator Hub. For more information, see [Copying the Integration Package and Deploying the Integration Flows](copying-the-integration-package-and-deploying-the-integration-flows-2cb1d31.md).
 
 To apply those design guidelines, consider the following rules:
 

@@ -43,14 +43,14 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the name of the technology.
 
 
@@ -59,14 +59,14 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     </tr>
     <tr>
     <td valign="top">
-
+    
     Vendor
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify a vendor.
 
 
@@ -75,14 +75,14 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     </tr>
     <tr>
     <td valign="top">
-
+    
     Domains
 
 
     
     </td>
     <td valign="top">
-
+    
     Select one or multiple domains.
 
     > ### Example:  
@@ -98,14 +98,14 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     </tr>
     <tr>
     <td valign="top">
-
+    
     Styles
 
 
     
     </td>
     <td valign="top">
-
+    
     Select one or multiple integration styles.
 
     > ### Example:  
@@ -147,14 +147,14 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     </tr>
     <tr>
     <td valign="top">
-
+    
     General
 
 
     
     </td>
     <td valign="top">
-
+    
     Use this tab to specify the following attributes:
 
     -   Technology instances: specify an instance name and a deployment model.
@@ -171,14 +171,14 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     </tr>
     <tr>
     <td valign="top">
-
+    
     Domains and Styles
 
 
     
     </td>
     <td valign="top">
-
+    
     Use this tab to specify domains and styles.
 
     These settings are predefined when creating the technology.
@@ -189,14 +189,14 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     </tr>
     <tr>
     <td valign="top">
-
+    
     Key Characteristics
 
 
     
     </td>
     <td valign="top">
-
+    
     Use this tab to maintain information about the extent to which the relevant key characteristic and their values are covered by the technology.
 
     > ### Note:  

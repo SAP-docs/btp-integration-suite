@@ -37,18 +37,18 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
-    from the left pane and selectEnter a valid name for your destination. This field is case-sensitive.
+    
+    Enter a valid name for your destination. This field is case-sensitive.
 
     > ### Note:  
-    > The destination name must start with the prefix ***CPI\_TENANT\_***.
+    > The destination name must start with the prefix `CPI_TENANT_`.
 
 
     
@@ -56,14 +56,14 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     </tr>
     <tr>
     <td valign="top">
-
+    
     Type
 
 
     
     </td>
     <td valign="top">
-
+    
     HTTP
 
 
@@ -72,14 +72,14 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     </tr>
     <tr>
     <td valign="top">
-
+    
     Description
 
 
     
     </td>
     <td valign="top">
-
+    
     You can provide a description for your reference. This field is optional.
 
 
@@ -88,17 +88,17 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     </tr>
     <tr>
     <td valign="top">
-
+    
     URL
 
 
     
     </td>
     <td valign="top">
-
+    
     For Neo environment, enter the TMN URL of the SAP Cloud Integration tenant.
 
-    For CF, enter the design time URL of the SAP Cloud Integration tenant.
+    For CF, copy the url from the service key of the*Process Integration Runtime*service instance and paste it in the *URL* field.
 
 
     
@@ -106,14 +106,14 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     </tr>
     <tr>
     <td valign="top">
-
+    
     Proxy Type
 
 
     
     </td>
     <td valign="top">
-
+    
     Internet
 
 
@@ -122,14 +122,14 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     </tr>
     <tr>
     <td valign="top">
-
+    
     Authentication
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the authentication details.
 
     > ### Note:  
@@ -137,12 +137,12 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     > 
     > -   BasicAuthentication : Maintain the *User* and *Password* fields.
     > 
-    > -   OAuth2ClientCredentials : Maintain the following fields
+    > -   OAuth2ClientCredentials : Maintain the following fields for CF
     > 
-    >     -   Client ID
+    >     -   *Client ID*: Copy the value from the `clientid` field of the service key created for Process Integration Runtime service instance and paste it in this field.
     > 
-    >     -   Client Secret
-    >     -   Token Service URL
+    >     -   *Client Secret*: Copy the value from the `clientsecret` field from the service key created for Process Integration Runtime service instance and paste it in the field.
+    >     -   *Token Service URL*: Copy the value from the `tokenurl` field from the service key created for Process Integration Runtime service instance and paste it in the field.
     > 
     >     Maintain the following fields if you are working in Neo environment:
     > 

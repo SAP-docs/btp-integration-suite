@@ -8,15 +8,9 @@ You can configure an outbound connection from the tenant via SAP Cloud Connector
 
 ![](images/SCC_d5be228.png)
 
-You need to install and configure the SAP Cloud Connector on your on premise systems for this mode of outbound communication. For more information on installing and configuring SCC, you can refer to [Using SAP Cloud Connector with Cloud Integration Adapters](using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md)
+You need to install and configure the SAP Cloud Connector on your on premise systems for this mode of outbound communication. For more information on installing and configuring SCC, you can refer to [Using SAP Cloud Connector with Cloud Integration Adapters](using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
+See also:
 
-
-## More Information
-
-These documents describe step-by-step how to install SAP Cloud Connector for different scenarios:
-
-[http://scn.sap.com/docs/DOC-42533](http://scn.sap.com/docs/DOC-42533)
-
-[http://scn.sap.com/docs/DOC-62598](http://scn.sap.com/docs/DOC-62598)
+[Installation and Configuration of SAP Cloud Connector](https://blogs.sap.com/2021/09/05/installation-and-configuration-of-sap-cloud-connector/) \(SAP Community blog\)
 

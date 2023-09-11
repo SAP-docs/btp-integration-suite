@@ -44,14 +44,14 @@ You are assigned the admin role.
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Name**
 
 
     
     </td>
     <td valign="top">
-
+    
     Key value map name
 
 
@@ -60,14 +60,14 @@ You are assigned the admin role.
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Encrypted**
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this checkbox if you want to encrypt the values.
 
 
@@ -76,14 +76,14 @@ You are assigned the admin role.
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Key**
 
 
     
     </td>
     <td valign="top">
-
+    
     Key name
 
     > ### Restriction:  
@@ -95,14 +95,14 @@ You are assigned the admin role.
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Value**
 
 
     
     </td>
     <td valign="top">
-
+    
     Value for the key
 
 

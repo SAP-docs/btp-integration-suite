@@ -18,6 +18,9 @@ Attach a rate plan to a product using the SAP Integration Suite.
 > ### Note:  
 > You can only attach rate plans to those products that do not have any rate plans associated with them. A product can only be associated with one rate plan. you can also attach a rate plan to a product during the product creation.
 
+> ### Note:  
+> If you try changing a rate plan or add a new rate plan to a product, all the existing applications of this product will remain unaffected by the changes. For example, if you add a rate plan to a product associated with the application, which has already been subscribed, this will not impact the current billing of the application.
+
 
 
 ## Context

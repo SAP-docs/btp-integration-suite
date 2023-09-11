@@ -4,7 +4,7 @@
 
 The following integration flow shows the *MIME Multipart encoding* step in action.
 
- ![](images/MIME_Multipart_E2E_Scenario_fddd64c.png) 
+![](images/MIME_Multipart_E2E_Scenario_fddd64c.png)
 
 The integration flow initially polls an e-mail \(with an attachment\) from an e-mail server. In a subsequent step, the e-mail is converted into a MIME Multipart message. The encoded message is stored as Data Store entry. To illustrate how headers are handled, the first Content Modifier sets a message header.
 
@@ -31,7 +31,7 @@ The integration flow initially polls an e-mail \(with an attachment\) from an e-
 
     -   In field *Include Headers*, the following regular expression is entered:
 
-        ***h.\****
+        `h.*`
 
         With this regular expression \(regex\), you determine that headers that start with the character `h` are considered by this feature.
 
@@ -43,7 +43,7 @@ With the e-mail \(with image attachment\) polled by the Mail sender adapter and 
 
 The Data Store entry contains the following message body \(after the Encoder step\):
 
- ![](images/Encoded_Message_e360d10.png) 
+![](images/Encoded_Message_e360d10.png)
 
 This document is the representation of your e-mail as a MIME Multipart message. The lower part that represents the encoded photo data is cut and greyed out \(not complete\).
 

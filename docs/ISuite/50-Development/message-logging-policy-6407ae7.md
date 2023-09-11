@@ -2,7 +2,7 @@
 
 # Message Logging Policy
 
-The Message Logging policy lets you send syslog messages to third-party log management services, such as Splunk, Sumo Logic, and Loggly.
+The Message Logging policy lets you send syslog messages to third-party log management services, such as Splunk, Sumo Logic, Loggly, or similar log management services.
 
 If you want to send syslog to one of those services, follow the service documentation of the concerned service to obtain the host, port, and protocol, then set the <Syslog\> element on this policy accordingly.
 
@@ -59,14 +59,14 @@ Description
 
 `Syslog` destination
 
-To send syslog to Splunk, Sumo Logic, or Loggly,
+To send syslog to Splunk, Sumo Logic, Loggly, or similar log management services.
 
 
 
 </td>
 <td valign="top">
 
- `Message` 
+`Message` 
 
 
 
@@ -85,7 +85,7 @@ Build the message to be sent to the syslog, combining text with variables to cap
 <tr>
 <td valign="top">
 
- `Host` 
+`Host` 
 
 
 
@@ -101,7 +101,7 @@ The hostname or IP address of the server where the syslog should be sent. If the
 <tr>
 <td valign="top">
 
- `Port` 
+`Port` 
 
 
 
@@ -117,7 +117,7 @@ Port where the syslog is running. If you don't include this element, the default
 <tr>
 <td valign="top">
 
- `Protcol` 
+`Protcol` 
 
 
 
@@ -133,7 +133,7 @@ TCP or UDP \(default\). While UDP is more performant, the TCP protocol guarantee
 <tr>
 <td valign="top">
 
- `FormatMessage` 
+`FormatMessage` 
 
 
 

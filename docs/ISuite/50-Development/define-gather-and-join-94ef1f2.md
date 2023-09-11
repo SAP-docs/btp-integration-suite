@@ -80,14 +80,14 @@ If the incoming payload contains namespace declarations including default namesp
     </tr>
     <tr>
     <td valign="top">
-
-     *Incoming Format* 
+    
+    *Incoming Format* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify format of incoming message.
 
     -   *XML \(Same Format\)*
@@ -113,14 +113,14 @@ If the incoming payload contains namespace declarations including default namesp
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Aggregation Algorithm*
 
 
     
     </td>
     <td valign="top">
-
+    
     There are the following options:
 
     -   *Combine* \(can only be selected if for *Incoming Format* you have selected *XML \(Same Format\)* or *XML \(Different Format\)*\)
@@ -162,7 +162,7 @@ If the incoming payload contains namespace declarations including default namesp
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Combine from source \(XPath\)*
 
     \(Enabled only if for *Aggregation Algorithm* the option *Combine at XPath* is selected\)
@@ -171,7 +171,7 @@ If the incoming payload contains namespace declarations including default namesp
     
     </td>
     <td valign="top">
-
+    
     XPath of the node that you are using as reference in the source message to retrieve the information.
 
 
@@ -180,7 +180,7 @@ If the incoming payload contains namespace declarations including default namesp
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Combine at target \(XPath\)*
 
     \(Enabled only if for *Aggregation Algorithm* the option *Combine at XPath* is selected\)
@@ -189,7 +189,7 @@ If the incoming payload contains namespace declarations including default namesp
     
     </td>
     <td valign="top">
-
+    
     XPath of node that acts as the root for combined message.
 
 
@@ -198,7 +198,7 @@ If the incoming payload contains namespace declarations including default namesp
     </tr>
     <tr>
     <td valign="top">
-
+    
     *File Name*
 
     \(Enabled only if for *Aggregation Algorithm* the option *Zip* or *Tar* is selected\)
@@ -207,7 +207,7 @@ If the incoming payload contains namespace declarations including default namesp
     
     </td>
     <td valign="top">
-
+    
     Specify a simple expression to define unique file names within the archive.
 
     If not specified, header `CamelFileName` is evaluated. In case the header is not available at runtime, a unique file name will be generated.

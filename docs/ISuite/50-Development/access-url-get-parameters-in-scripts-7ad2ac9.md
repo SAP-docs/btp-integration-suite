@@ -4,7 +4,7 @@
 
 The integration flow *Scripting – Read Url Get Parameters* reads the individual query string parameters of an incoming request \(for example, https://.../...?param1=value1&param2=value2...\) and uses them to modify the call to an external OData service.
 
-![](images/2107_Design-Guidelines-Get_Parameters-1-flow_png_7f3619b.png) 
+![](images/2107_Design-Guidelines-Get_Parameters-1-flow_png_7f3619b.png)
 
 > ### Note:  
 > A typical use case is the combination of the logic of the 2 integration flows to access the elements of an incoming request:
@@ -18,27 +18,25 @@ The integration flow *Scripting – Read Url Get Parameters* reads the individua
 
 > ### Sample Code:  
 > ```
-> import com.sap.gateway.ip.core.customdev.util.Message;
-> import java.util.HashMap;
+> import com.sap.gateway.ip.core.customdev.util.Message
+> import java.nio.charset.Charset
 > 
-> def Message extractUrlGetParameters(Message message) {
+> Message extractUrlGetParameters(Message message) {
+>         
+>         String httpQuery = message.getHeader('CamelHttpQuery', String)
+>         
+>         if (httpQuery) {
+>             Map<String, String> queryParameters = URLDecoder.decode(httpQuery, Charset.defaultCharset().name())
+> 			 .replace("\$","")
+>                 .tokenize('&')
+>                 .collectEntries { it.tokenize('=') }
+>             
+>             message.setProperties(queryParameters)
+>         }       
+>     
+>     return message
+> }
 > 
->        //get url 
->        def map = message.getHeaders();
->        def queryString = map.get("CamelHttpQuery");
-> 
->        //split url
->        String[] vQuery;
->        vQuery = queryString.split('&');
-> 
->        //set properties
->        for( String pair : vQuery ) {
->            String[] vPairs = pair.split('=')
->            message.setProperty(vPairs[0].replace("\$",""), vPairs[1]);
->        }
->        
->        return message;
->     } 
 > ```
 
 As a next step, the WebShop example application \([https://help.sap.com/viewer/DRAFT/368c481cd6954bdfa5d0435479fd4eaf/DEV/en-US/767d8ef11b0f4e04819f9fe03d76c4a2.html](https://help.sap.com/viewer/DRAFT/368c481cd6954bdfa5d0435479fd4eaf/DEV/en-US/767d8ef11b0f4e04819f9fe03d76c4a2.html)\) is called and given the corresponding properties to build the right query options.

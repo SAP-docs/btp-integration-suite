@@ -44,7 +44,7 @@ Used to ...
 <tr>
 <td valign="top">
 
- *Write* 
+*Write* 
 
 
 
@@ -64,7 +64,7 @@ More information: [Define Data Store Write Operations](define-data-store-write-o
 <tr>
 <td valign="top">
 
- *Delete* 
+*Delete* 
 
 
 
@@ -82,7 +82,7 @@ More information: [Define Data Store Delete Operations](define-data-store-delete
 <tr>
 <td valign="top">
 
- *Select* 
+*Select* 
 
 
 
@@ -102,7 +102,7 @@ More information: [Define Data Store Select Operations](define-data-store-select
 <tr>
 <td valign="top">
 
- *Get* 
+*Get* 
 
 
 

@@ -27,6 +27,9 @@ Following this recommendation helps you to avoid memory bottlenecks. Note that, 
 
 SAP is doing the general capacity management of all your SAP Integration Suite tenants, either of productively used tenants or test tenants. Capacity management is also based on the license model. Therefore, you don't need to care about that. However, memory is a limited resource in the Java virtual machines. Before you use your integration flows productively, it's recommended to perform extensive load testing. Try to use the maximum load for your test that you can expect in productive use and don't concentrate on isolated tests only. You can expect that the productive tenant doesn't process just 1 single integration flow. Therefore, choose a realistic tenant load profile as well. Consider doing this test not at the last minute of your development phase, because an integration flow redesign for performance optimizations can take some time.
 
+> ### Note:  
+> If you've designed the integration flow in a performance-friendly way but still the performance isn't good, you can get in touch with SAP to check the tenant resources. Alternatively, check out the following page to search for a service that helps you to optimize the implementation of your scenario: [SAP Services and Support](https://www.sap.com/services-support.html).
+
 
 
 <a name="loio491c80d16c3547c3b124cf38857f1332__section_c5m_fqz_qpb"/>

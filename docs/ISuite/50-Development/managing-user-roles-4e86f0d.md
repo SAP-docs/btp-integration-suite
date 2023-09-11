@@ -57,21 +57,7 @@ Name
 Display name of the user role
 
 > ### Note:  
-> When creating a new user role, be aware of the following allowed characters in user role names:
-> 
-> -   a-z
-> 
-> -   A-Z
-> 
-> -   0-9
-> 
-> -   \_
-> 
->     \(underscore\)
-> 
-> -   .
-> 
->     \(period\)
+> When creating a new user role, be aware of the following allowed characters in user role names: a-z, A-Z, 0-9, \_ \(underscore\), . \(period\).
 
 
 
@@ -87,7 +73,7 @@ Description
 </td>
 <td valign="top">
 
-Description of the user role
+Description of the user role.
 
 
 
@@ -103,7 +89,7 @@ Owner
 </td>
 <td valign="top">
 
-The owner of the entry
+The owner of the entry:
 
 -   *Tenant Administrator*
 
@@ -185,11 +171,7 @@ The following actions are available:
 
 ## Next Steps
 
-For a detailed instruction on how to create a service instance and a service key in the Cloud Foundry environment, visit
-
--   , and also
-
--   
+For a detailed instruction on how to create a service instance and a service key, visit [Creating Service Instance and Service Key for Inbound Authentication](../40-RemoteSystems/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md).
 
 Watch the below video to see a basic inbound authentication end-to-end scenario.
 
@@ -201,5 +183,5 @@ Watch the below video to see a basic inbound authentication end-to-end scenario.
 **Related Information**  
 
 
-[Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md "Use this procedure to connect a sender system to SAP Cloud Integration")
+[Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md "Use this procedure to connect a sender system to SAP Cloud Integration.")
 

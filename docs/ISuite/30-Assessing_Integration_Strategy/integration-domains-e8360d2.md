@@ -8,7 +8,7 @@ Identifying integration domains provides the entry point into SAP Integration So
 
 The following figure illustrates the meaning of integration domains.
 
- ![](images/ISA-M_Integration_Domains_c081959.png) 
+![](images/ISA-M_Integration_Domains_c081959.png)
 
 > ### Example:  
 > The business processes for your organization require integration between cloud applications. In this case, the integration domain *cloud to cloud* is relevant for you.

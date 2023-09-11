@@ -17,7 +17,7 @@ The AS2 protocol provides a unique ID for the incoming message. However its form
 
 The *Pattern Quality Of Service - Scenario 04a* integration flow illustrates this B2B scenario.
 
- ![](images/Example_B2B_Scenario_with_AS2_Sender_Adapter_and_ID_Mapper_b26c59b.png) 
+![](images/Example_B2B_Scenario_with_AS2_Sender_Adapter_and_ID_Mapper_b26c59b.png)
 
 The integration flow performs the following steps:
 
@@ -47,14 +47,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Source Encoding*
 
 
     
     </td>
     <td valign="top">
-
+    
     *UTF-8*
 
 
@@ -63,14 +63,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Validate Message*
 
 
     
     </td>
     <td valign="top">
-
+    
     Deselected
 
 
@@ -79,14 +79,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Create Acknowledgement*
 
 
     
     </td>
     <td valign="top">
-
+    
     *Required*
 
     > ### Note:  
@@ -98,14 +98,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Interchange Number*
 
 
     
     </td>
     <td valign="top">
-
+    
     *Use From EDI Message*
 
 
@@ -114,14 +114,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *CONTRL Message Version*
 
 
     
     </td>
     <td valign="top">
-
+    
     *Version D, Release 3*
 
 
@@ -130,14 +130,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Include UNA Segment*
 
 
     
     </td>
     <td valign="top">
-
+    
     Deselected
 
 
@@ -201,29 +201,29 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *SplitAS2MessageID*
 
 
     
     </td>
     <td valign="top">
-
+    
     *Expression*
 
 
     
     </td>
     <td valign="top">
-
-    ***java.lang.String***
+    
+    `java.lang.String`
 
 
     
     </td>
     <td valign="top">
-
-    ***$\{header.AS2MessageID\}\_$\{header.EDI\_Message\_Control\_Number\}*** 
+    
+    `${header.AS2MessageID}_${header.EDI_Message_Control_Number}` 
 
 
     
@@ -255,15 +255,15 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Source Message ID*
 
 
     
     </td>
     <td valign="top">
-
-    ***$\{property.SplitAS2MessageID\}*** 
+    
+    `${property.SplitAS2MessageID}` 
 
     This value is defined using the property defined in the previous Content Modifier.
 
@@ -273,15 +273,15 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Target Header Name*
 
 
     
     </td>
     <td valign="top">
-
-    ***SapMessageIdEx*** 
+    
+    `SapMessageIdEx` 
 
     You can specify any name. However, using this header has an advantage considering the fact that a SOAP SAP RM receiver channel is used in this integration flow.
 
@@ -291,15 +291,15 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Context*
 
 
     
     </td>
     <td valign="top">
-
-    ***IDMapperContext\_01*** 
+    
+    `IDMapperContext_01` 
 
     You define a unique context for each *ID Mapping* step within your integration flow. If you need any additional *ID Mapping* \(providing a different target ID\), you can use a different context. In this scenario, there's 1 single *ID Mapping* step only. Therefore, the *Context* name doesn’t really matter.
 
@@ -309,14 +309,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Visibility*
 
 
     
     </td>
     <td valign="top">
-
+    
     *Integration Flow* 
 
     The generated IDs are unique within the same integration flow model. If your *ID Mapping* is to be used across different integration flows, you need to select *Global*.
@@ -327,15 +327,15 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Expiration Period \(in d\)*
 
 
     
     </td>
     <td valign="top">
-
-    ***30***
+    
+    `30`
 
 
     
@@ -380,15 +380,15 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
-    ***OWN***
+    
+    `OWN`
 
 
     
@@ -396,14 +396,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *User*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the user as specified when setting up inbound basic authentication.
 
 
@@ -412,14 +412,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Password*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the password as specified when setting up inbound basic authentication.
 
 

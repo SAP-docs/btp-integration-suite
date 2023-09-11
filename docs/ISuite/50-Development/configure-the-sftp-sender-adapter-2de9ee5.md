@@ -7,9 +7,11 @@ The SFTP sender adapter connects an SAP Cloud Integration tenant to a remote sys
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -22,11 +24,11 @@ The SFTP sender adapter connects an SAP Cloud Integration tenant to a remote sys
 
 If you have configured a **sender** SFTP adapter, message processing is performed as follows at runtime: The tenant sends a request to an SFTP server \(think of this as the sender system\), but the data flow is in the opposite direction, from the SFTP server to the tenant. In other words, the tenant reads files from the SFTP server \(a process that is also referred to as *polling*\).
 
-   
+  
   
 **SFTP Sender Adapter: Tenant reads files from SFTP server**
 
- ![](images/SFTP_Sender_Adapter_-_Tenat_reads_from_server_2081741.png "SFTP Sender Adapter: Tenant reads files from SFTP server") 
+![](images/SFTP_Sender_Adapter_-_Tenat_reads_from_server_2081741.png "SFTP Sender Adapter: Tenant reads files from SFTP server")
 
 
 
@@ -106,14 +108,14 @@ Description
 <tr>
 <td valign="top">
 
- *Directory* 
+*Directory* 
 
 
 
 </td>
 <td valign="top">
 
-Relative path to read the file from a directory. Example: ***parentdirectory/childdirectory*** 
+Relative path to read the file from a directory. Example: `parentdirectory/childdirectory` 
 
 
 
@@ -122,7 +124,7 @@ Relative path to read the file from a directory. Example: ***parentdirectory/chi
 <tr>
 <td valign="top">
 
- *File Name* 
+*File Name* 
 
 
 
@@ -169,14 +171,14 @@ If you do not enter a file name and the parameter remains blank, all the files i
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
 </td>
 <td valign="top">
 
-Host name or IP address of the SFTP server and an optional port, for example, ***wdfd00213123:22***.
+Host name or IP address of the SFTP server and an optional port, for example, `wdfd00213123:22`.
 
 
 
@@ -185,7 +187,7 @@ Host name or IP address of the SFTP server and an optional port, for example, **
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -226,7 +228,7 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <tr>
 <td valign="top">
 
- *User Name* 
+*User Name* 
 
 
 
@@ -262,14 +264,14 @@ Alias to identify the private key in the keystore used for the communication wit
 <tr>
 <td valign="top">
 
- *Timeout \(in ms\)* 
+*Timeout \(in ms\)* 
 
 
 
 </td>
 <td valign="top">
 
-Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted while establishing a connection or performing a read operation. Enter a minimum value bigger than ***0***, and smaller than or equal to the maximum value of ***299999***. The default ist set to ***10000***.
+Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted while establishing a connection or performing a read operation. Enter a minimum value bigger than `0`, and smaller than or equal to the maximum value of `299999`. The default ist set to `10000`.
 
 
 
@@ -278,14 +280,14 @@ Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted whi
 <tr>
 <td valign="top">
 
- *Maximum Reconnect Attempts* 
+*Maximum Reconnect Attempts* 
 
 
 
 </td>
 <td valign="top">
 
-Maximum number of attempts allowed to reconnect to the SFTP server before message processing starts. The default is set to ***3***. Enter ***0*** to disable this behavior.
+Maximum number of attempts allowed to reconnect to the SFTP server before message processing starts. The default is set to `3`. Enter `0` to disable this behavior.
 
 > ### Note:  
 > The setting is only relevant for establishing the initial connection to the server. If the server connection is interrupted during message processing, the connection will not be recovered. The message will be fetched with the next scheduled poll interval.
@@ -297,14 +299,14 @@ Maximum number of attempts allowed to reconnect to the SFTP server before messag
 <tr>
 <td valign="top">
 
- *Reconnect Delay \(in ms\)* 
+*Reconnect Delay \(in ms\)* 
 
 
 
 </td>
 <td valign="top">
 
-Time \(in milliseconds\) the system waits before attempting to reconnect to the SFTP server; default Value: ***1000***.
+Time \(in milliseconds\) the system waits before attempting to reconnect to the SFTP server; default Value: `1000`.
 
 
 
@@ -313,7 +315,7 @@ Time \(in milliseconds\) the system waits before attempting to reconnect to the 
 <tr>
 <td valign="top">
 
- *Automatically Disconnect* 
+*Automatically Disconnect* 
 
 
 
@@ -321,6 +323,24 @@ Time \(in milliseconds\) the system waits before attempting to reconnect to the 
 <td valign="top">
 
 Disconnect from the SFTP server after each message processing.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Enable Support for Deprecated Algorithms* 
+
+
+
+</td>
+<td valign="top">
+
+Select to allow several deprecated key exchange, public key, host key, and encryption algorithms like the ‘diffie-hellman-group1-sha1’ key exchange algorithm or the ‘ssh-rsa’ host key and public key algorithm.
+
+For more information on compatibility and support, see SAP KBA [3079510](https://me.sap.com/notes/3079510).
 
 
 
@@ -353,7 +373,7 @@ Description
 <tr>
 <td valign="top">
 
- *Read Lock Strategy* 
+*Read Lock Strategy* 
 
 
 
@@ -376,7 +396,7 @@ Prevents files that are in the process of being written from being read from the
 <tr>
 <td valign="top">
 
- *Sorting* 
+*Sorting* 
 
 
 
@@ -392,7 +412,7 @@ Select the type of sorting to use to poll files from the SFTP server:
 -   *Time Stamp*: Files are polled sorted by the modification time stamp of the file.
 
 > ### Note:  
-> In this context, it is important to know that the SFTP server provides the files in an order that is not controlled by Cloud Integration. Before evaluating the *Sorting* setting, the system determines the maximum number of messages to be read from the SFTP server per poll \(as configured by the *Max. Messages per Poll* parameter\). For example, if there are 1000 files on the SFTP server and for *Max. Messages per Poll* you have specified ***500***, the SFTP adapter reads the first 500 files from the SFTP server and, after this step, sorts these files according to the *Sorting* settings.
+> In this context, it is important to know that the SFTP server provides the files in an order that is not controlled by Cloud Integration. Before evaluating the *Sorting* setting, the system determines the maximum number of messages to be read from the SFTP server per poll \(as configured by the *Max. Messages per Poll* parameter\). For example, if there are 1000 files on the SFTP server and for *Max. Messages per Poll* you have specified `500`, the SFTP adapter reads the first 500 files from the SFTP server and, after this step, sorts these files according to the *Sorting* settings.
 
 > ### Caution:  
 > Be aware that a definitive, controlled sequence of messages cannot be achieved even if the processing parameters have been configured correctly because, usually in scenarios, multiple worker nodes are polling and processing messages in parallel and independently of each other.
@@ -424,22 +444,20 @@ Select whether to sort in ascending or descending order.
 <tr>
 <td valign="top">
 
- *Max. Messages per Poll* 
+*Max. Messages per Poll* 
 
 
 
 </td>
 <td valign="top">
 
-Maximum number of messages to gather in each poll. Consider how long it will take to process this number of messages, and make sure that you set a higher value for *Lock Timeout \(in min\)*. The messages are picked up sequentially.
+Maximum number of messages to gather in each poll. Enter any value between `1` and `500`. The default is set to `20`.
+
+Consider how long it will take to process this number of messages, and make sure that you set a higher value for *Lock Timeout \(in min\)*. The messages are picked up sequentially.
 
 In case the integration flow is deployed on multiple runtime nodes, each runtime node is connected as separate consumer to the SFTP server. Likewise, each runtime node polls files from the SFTP server independently. In such a case, the maximum number of polled files is the value specified for parameter *Max. Messages per Poll* multiplied with the number of runtime nodes. For example, if the integration flow is deployed on two runtime nodes and the parameter *Max. Messages per Poll* is set to 10, the overall maximum number of polled files per scheduled poll time is 20.
 
 The system uses locks to ensure that each file from the SFTP server is only processed on one runtime node \(see: [Message Locks](message-locks-bce9ae0.md)\).
-
-Default: ***20*** 
-
-Example: ***1000*** can be set as a limit.
 
 > ### Note:  
 > The adapter processes the complete list of messages specified by this parameter before the subsequent poll \(according to the settings under *Scheduler*\) starts.
@@ -447,7 +465,7 @@ Example: ***1000*** can be set as a limit.
 > ### Note:  
 > If you are using the sender SFTP adapter in combination with an Aggregator step and you expect a high message load, consider the following recommendation:
 > 
-> Set the value for *Max. Messages per Poll* to a small number larger than ***0*** \(for example, ***20***\). This ensures proper logging of the message processing status at runtime.
+> Set the value for *Max. Messages per Poll* to a small number larger than `0` \(for example, `20`\). This ensures proper logging of the message processing status at runtime.
 
 
 
@@ -456,7 +474,7 @@ Example: ***1000*** can be set as a limit.
 <tr>
 <td valign="top">
 
- *Lock Timeout \(in min\)* 
+*Lock Timeout \(in min\)* 
 
 
 
@@ -465,7 +483,7 @@ Example: ***1000*** can be set as a limit.
 
 Specify how long to wait before trying to process the file again in the event of a Cloud Integration outage. If it takes a very long time to process the scenario, you may need to increase the timeout to avoid parallel processing of the same file. This value should be higher than the processing time required for the number of messages specified by *Max. Messages per Poll*.
 
-Default: ***15***
+Default: `15`
 
 
 
@@ -474,7 +492,7 @@ Default: ***15***
 <tr>
 <td valign="top">
 
- *Change Directories Stepwise* 
+*Change Directories Stepwise* 
 
 
 
@@ -490,7 +508,7 @@ Select this option to change directory levels one at a time.
 <tr>
 <td valign="top">
 
- *Include Subdirectories* 
+*Include Subdirectories* 
 
 
 
@@ -540,7 +558,7 @@ If selected, file exists check is performed on the SFTP server. If your server d
 <tr>
 <td valign="top">
 
- *Post-Processing* 
+*Post-Processing* 
 
 
 
@@ -622,7 +640,7 @@ You can select one of the following idempotent repository options:
 
 Specifies the target directory where to move the file.
 
-Make sure that you specify a relative file path for the target directory. Note that the specified file path is defined relative to the directory specified with the *Directory* parameter. If you specify an absolute file path, it may occur that the file cannot be stored correctly at runtime. You can also specify the target directory dynamically, for example, using the timestamp of the message. The following example uses backup folders with timestamps and replaces the file extension with ***bak: backup/$\{date:now:yyyyMMdd\}/$\{file:name.noext\}.bak***.
+Make sure that you specify a relative file path for the target directory. Note that the specified file path is defined relative to the directory specified with the *Directory* parameter. If you specify an absolute file path, it may occur that the file cannot be stored correctly at runtime. You can also specify the target directory dynamically, for example, using the timestamp of the message. The following example uses backup folders with timestamps and replaces the file extension with `bak: backup/${date:now:yyyyMMdd}/${file:name.noext}.bak`.
 
 
 
@@ -631,6 +649,9 @@ Make sure that you specify a relative file path for the target directory. Note t
 </table>
 
 Select the *Scheduler* tab and provide values in the fields as follows.
+
+> ### Caution:  
+> How you specify the *Scheduler* settings depends on the constraints and requirements of your integration scenario. However, make sure to use the *Scheduler* parameters advisedly: Specify the scheduler settings in such a way that messages are not polled with too high frequency. Use intervals below 1 minute only if really required. Otherwise, there’s the risk to overload the SFTP server.
 
 **Scheduler**
 
@@ -662,7 +683,7 @@ Description
 <tr>
 <td valign="top" rowspan="4">
 
- *Schedule on Day* 
+*Schedule on Day* 
 
 
 
@@ -733,7 +754,7 @@ Select the time zone that you want the scheduler to use as a reference for the d
 <tr>
 <td valign="top" rowspan="3">
 
- *Schedule to Recur* 
+*Schedule to Recur* 
 
 
 

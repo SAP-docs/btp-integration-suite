@@ -11,7 +11,7 @@ After the first message processing run, you can add an own review to the WebShop
 > ### Note:  
 > The external data source supports the Open DataProtocol \(OData\). For our scenario, we use the ESPM WebShop, which is based on the Enterprise Sales and Procurement Model \(ESPM\) provided by SAP.
 
- ![](images/Message_Digest_Flow_fe5feca.png) 
+![](images/Message_Digest_Flow_fe5feca.png)
 
 After the integration flow has been triggered by the *Timer* step, the *Request Reply* step calls the WebShop using the OData V2 receiver adapter.
 
@@ -22,30 +22,14 @@ The OData V2 receiver adapter is configured in the following way:
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
 </td>
 <td valign="top">
 
- ***https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/espm-cloud-web/espm.svc/*** 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Resource Path* 
-
-
-
-</td>
-<td valign="top">
-
- ***CustomerReviews*** 
+`https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/espm-cloud-web/espm.svc/` 
 
 
 
@@ -54,14 +38,30 @@ The OData V2 receiver adapter is configured in the following way:
 <tr>
 <td valign="top">
 
- *Query Options* 
+*Resource Path* 
 
 
 
 </td>
 <td valign="top">
 
- ***$select=CustomerReviewId,Comment,CreationDate,FirstName,LastName,ProductId,Rating*** 
+`CustomerReviews` 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Query Options* 
+
+
+
+</td>
+<td valign="top">
+
+`$select=CustomerReviewId,Comment,CreationDate,FirstName,LastName,ProductId,Rating` 
 
 
 
@@ -82,30 +82,14 @@ A subsequent Data Store *Write* step is configured in the following way:
 <tr>
 <td valign="top">
 
- *Data Store Name* 
+*Data Store Name* 
 
 
 
 </td>
 <td valign="top">
 
- ***CustomerReviews*** 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Entry ID* 
-
-
-
-</td>
-<td valign="top">
-
- ***$\{header.SAPMessageDigest\}*** 
+`CustomerReviews` 
 
 
 
@@ -114,7 +98,23 @@ A subsequent Data Store *Write* step is configured in the following way:
 <tr>
 <td valign="top">
 
- *Overwrite Existing Message.* 
+*Entry ID* 
+
+
+
+</td>
+<td valign="top">
+
+`${header.SAPMessageDigest}` 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Overwrite Existing Message.* 
 
 
 

@@ -20,6 +20,8 @@ You've created a mapping guideline \(MAG\). For more information on creating a n
 
 Once you've created a mapping guideline \(MAG\), you can edit it to change the mapping details to suit your scenario. Additionally, you can also add documentation that provides the users of the MAG with more information on its relevance.
 
+There could be scenarios where there are significant differences between the Message Implementation Guidelines such as different node hierarchies, difference in the message structure etc., that mapping in such cases get difficult. To overcome this, the application provides you with an approach that helps transform the structure of a source MIG to ensure its content can be mapped easily with the traget MIG structure. To know more, see [Pre- Transformation of a Message Implementation Guideline](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b287e5eae6e54359bd0103d0f148befb.html "Learn how to transform the structure of a Message Implementation Guideline.") :arrow_upper_right: 
+
 
 
 <a name="loio0803ca6cde694cea8daa71c2530c9cbc__steps_xkr_jtx_ncb"/>
@@ -27,6 +29,9 @@ Once you've created a mapping guideline \(MAG\), you can edit it to change the m
 ## Procedure
 
 1.  Choose *Edit*.
+
+    > ### Note:  
+    > Ensure that the MAG you are trying to edit is not locked by other users. The *Locked By* field displays the ID of ths user who's currently editing the MAG. You need to have admin rights to unlock it. To know more about the role, see [Assigning Users for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b5226b95e11b42cd9e257ae6d2b0ee0a.html "") :arrow_upper_right:
 
 2.  Choose *Mapping* tab to edit the mapping details of the MAG. For more information on mapping nodes, see [Mapping the Source and Target Nodes](mapping-the-source-and-target-nodes-9ea58d6.md) 
 

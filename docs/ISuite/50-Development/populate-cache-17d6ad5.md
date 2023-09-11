@@ -8,7 +8,7 @@ At runtime, the Populate Cache policy writes data from the variable you specifie
 
 You can attach this policy in the following locations:
 
- ![](images/Flow_policy_116062b.png) 
+![](images/Flow_policy_116062b.png)
 
 An example payload for the policy is as follows:
 

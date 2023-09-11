@@ -43,7 +43,7 @@ An integration flow is a graphical representation of the flow and processing of 
         > 
         > -   However, you can also manually edit the *ID* field and, once it’s modified manually, changing the name of the integration flow doesn’t make any auto-changes to the *ID* field again.
 
-    3.  You can select the product profile for the integration flow in the *Product Profile* field. The integration flow templates used during creation adhere to the latest version of a component available in the product profile. For more information, see [Product Profiles](product-profiles-8007daa.md).
+    3.  You can select the runtime profile for the integration flow in the *Runtime Profile* field. The integration flow templates used during creation adhere to the latest version of a component available in the runtime profile. For more information, see [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 
     4.  Enter *Description* for the integration flow.
 
@@ -52,7 +52,7 @@ An integration flow is a graphical representation of the flow and processing of 
         > ### Tip:  
         > If you don't find a sender or receiver system of your choice, or want to add your own values, type in the *Sender* and *Receiver* fields and press [tab\] button in your keyboard. You can also add multiple values if it's necessary.
 
-    6.  Choose *OK*.
+    6.  Choose *OK*. Alternatively, you can press the [Enter\]/[Return\] key to create the integration flow.
 
 
 5.  If you want to upload an integration flow, execute the following substeps:
@@ -66,7 +66,7 @@ An integration flow is a graphical representation of the flow and processing of 
         > 
         > -   However, you can also manually edit the *ID* field and, once it’s modified manually, changing the name of the integration flow doesn’t make any auto-changes to the *ID* field again.
 
-    3.  Choose *OK*.
+    3.  Choose *OK*. Alternatively, you can press the [Enter\]/[Return\] key to create the integration flow.
 
         > ### Note:  
         > You can copy an integration flow by choosing <span class="SAP-icons"></span> in the *Action* column, and then *Copy*.

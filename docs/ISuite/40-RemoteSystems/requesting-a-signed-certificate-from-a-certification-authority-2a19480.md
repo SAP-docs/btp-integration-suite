@@ -29,7 +29,5 @@ Upload the signing response that you receive from the CA to the keystore.
 **Related Information**  
 
 
-
-
 [Updating a Key Pair with a Signing Response](../50-Development/updating-a-key-pair-with-a-signing-response-4242f01.md "Upload a signing response from a certification authority and use it to update the key pair in your keystore, keeping the alias of the keystore entry unchanged.")
 

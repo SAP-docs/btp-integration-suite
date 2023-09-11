@@ -57,7 +57,7 @@ Recommended configuration option for secure communication is public key authenti
 
 More information:
 
-[How SFTP Works](how-sftp-works-fc8467b.md)
+
 
 
 
@@ -104,7 +104,7 @@ Using this authentication option, the user \(performing the file transfer\) is a
 
 More information:
 
-[How SFTP Works](how-sftp-works-fc8467b.md)
+
 
 
 
@@ -136,7 +136,7 @@ More information: [Setting Up Inbound SFTP Connections \(Details\)](setting-up-i
 **Related Information**  
 
 
-[https://blogs.sap.com/2017/08/03/cloud-integration-how-to-setup-secure-connection-to-sftp-server/](https://blogs.sap.com/2017/08/03/cloud-integration-how-to-setup-secure-connection-to-sftp-server/)
+[Cloud Integration - How to Setup Secure Connections to SFTP Server](https://blogs.sap.com/2017/08/03/cloud-integration-how-to-setup-secure-connection-to-sftp-server/)
 
 [Setting Up Inbound SFTP Connections \(Details\)](setting-up-inbound-sftp-connections-details-e72eba4.md "")
 

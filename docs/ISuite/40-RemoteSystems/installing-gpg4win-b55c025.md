@@ -8,6 +8,8 @@ We recommend that you use gpg4win to create OpenPGP key material.
 
 ## Context
 
+gpg4win is a free software and can be downloaded from the Internet.
+
 
 
 ## Procedure

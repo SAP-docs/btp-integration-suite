@@ -13,7 +13,7 @@ We provide a guideline how to handle exceptions in such a way that message proce
 
 To discuss the topic based on a simplified setup, let's consider a scenario that consists of 2 integration flows - a parent and a child integration flow. Both integration flows communicate with each other as depicted in the figure.
 
- ![](images/Handle_Errors_Dependent_01_6388e7e.png) 
+![](images/Handle_Errors_Dependent_01_6388e7e.png)
 
 The parent integration flow \(triggered by a message from the sender\) communicates with a child integration flow \(through the ProcessDirect adapter\). The child integration flow performs further processing steps and sends a response back to the parent integration flow. The parent integration flow performs additional steps and, finally, sends the resulting message to a receiver system.
 

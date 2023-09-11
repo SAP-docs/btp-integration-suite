@@ -1,11 +1,11 @@
 <!-- loio54b4607902a446e39d8a6ba45ce63d6b -->
 
-# Configure the API Business Hub Enterprise \[New Design\]
+# Configure the API business hub enterprise \[New Design\]
 
 You can configure the API business hub enterprise to personalize it for your organization.
 
 > ### Note:  
-> This document describes the new design of the API business hub enterprise. To view the documentation for the classic design, see [Configure the API Business Hub Enterprise \[Classic Design\]](configure-the-api-business-hub-enterprise-classic-design-7b71b16.md).
+> This document describes the new design of the API business hub enterprise. To view the documentation for the classic design, see [Configure the API business hub enterprise \[Classic Design\]](configure-the-api-business-hub-enterprise-classic-design-7b71b16.md).
 
 Modify the following to personalize the API business hub enterprise:
 
@@ -44,14 +44,14 @@ For more information, see…
 <tr>
 <td valign="top">
 
-Home Page
+*Home Page* 
 
 
 
 </td>
 <td valign="top">
 
-View and search the categories, APIs, and Products
+View and search the categories, APIs, and products
 
 
 
@@ -70,7 +70,7 @@ AuthGroup.API.ApplicationDeveloper
 </td>
 <td valign="top">
 
- [Register on API Business Hub Enterprise](register-on-api-business-hub-enterprise-c85fafe.md) 
+[Register on API business hub enterprise](register-on-api-business-hub-enterprise-c85fafe.md) 
 
 
 
@@ -79,14 +79,14 @@ AuthGroup.API.ApplicationDeveloper
 <tr>
 <td valign="top">
 
-Site Editor
+*Site Editor* 
 
 
 
 </td>
 <td valign="top">
 
-Customize the visual layout of the API business hub enterprise.
+Customize the visual layout of the API business hub enterprise
 
 
 
@@ -103,7 +103,7 @@ Customize the visual layout of the API business hub enterprise.
 </td>
 <td valign="top">
 
- [Customize the Visual Format of the API Business Hub Enterprise](customize-the-visual-format-of-the-api-business-hub-enterprise-2eacd52.md) 
+[Customize the Visual Format of the API business hub enterprise](customize-the-visual-format-of-the-api-business-hub-enterprise-2eacd52.md) 
 
 
 
@@ -112,14 +112,14 @@ Customize the visual layout of the API business hub enterprise.
 <tr>
 <td valign="top">
 
-Manage Connections
+*Enterprise Manager* \> *Manage API Management Connections* 
 
 
 
 </td>
 <td valign="top">
 
-Approve and reject the pending connection requests and update the API portal access credentials.
+Approve and reject the pending connection requests and update the API portal access credentials
 
 
 
@@ -134,7 +134,7 @@ Approve and reject the pending connection requests and update the API portal acc
 </td>
 <td valign="top">
 
-  
+[Approve the Pending Connection Requests \[New Design\]](approve-the-pending-connection-requests-new-design-e296f80.md) 
 
 
 
@@ -143,7 +143,7 @@ Approve and reject the pending connection requests and update the API portal acc
 <tr>
 <td valign="top">
 
-Manage Users
+*Enterprise Manager* \> *Manage Users* 
 
 
 
@@ -175,45 +175,7 @@ AuthGroup.API.Admin
 <tr>
 <td valign="top">
 
-My Workspace
-
-
-
-</td>
-<td valign="top">
-
-Create applications and view your applications, costs and analyze reports.
-
-
-
-</td>
-<td valign="top">
-
-AuthGroup.API.Admin
-
-> ### Note:  
-> Administrators can create applications on behalf of a developer and can see all the applications across developers.
-
-AuthGroup.API.ApplicationDeveloper
-
-> ### Note:  
-> Application developers can create applications and see only the applications created by him.
-
-
-
-</td>
-<td valign="top">
-
- [Create an Application \[New Design\]](create-an-application-new-design-a501a6d.md) 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Manage Content
+*Enterprise Manager* \> *Manage Domain Categories* 
 
 
 
@@ -248,7 +210,77 @@ Also, to add the *AuthGroup.Content.Admin* role, see the table in [Manage Domain
 <tr>
 <td valign="top">
 
-Test Environment
+*Enterprise Manager* \> *Manage Notifications* 
+
+
+
+</td>
+<td valign="top">
+
+Configure notifications for providing information to the API business hub enterprise end users on any website updates or news items.
+
+
+
+</td>
+<td valign="top">
+
+-   AuthGroup.Site.Admin
+
+
+
+
+</td>
+<td valign="top">
+
+[Manage Notifications \[New Design\]](manage-notifications-new-design-df32457.md) 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*My Workspace* 
+
+
+
+</td>
+<td valign="top">
+
+Create applications and view your applications, costs and analyze reports.
+
+
+
+</td>
+<td valign="top">
+
+AuthGroup.API.Admin
+
+> ### Note:  
+> Administrators can create applications on behalf of a developer and can see all the applications across developers.
+
+> ### Note:  
+> AuthGroup.API.ApplicationDeveloper
+> 
+> > ### Note:  
+> > Application developers can create applications and see only the applications created by him.
+
+
+
+</td>
+<td valign="top">
+
+[Create an Application \[New Design\]](create-an-application-new-design-a501a6d.md) 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Test Environment* 
 
 
 
@@ -272,7 +304,7 @@ AuthGroup.API.ApplicationDeveloper
 </td>
 <td valign="top">
 
- [Test Runtime Behavior of APIs \[New Design\]](test-runtime-behavior-of-apis-new-design-15c7d52.md) 
+[Test Runtime Behavior of APIs \[New Design\]](test-runtime-behavior-of-apis-new-design-15c7d52.md) 
 
 
 

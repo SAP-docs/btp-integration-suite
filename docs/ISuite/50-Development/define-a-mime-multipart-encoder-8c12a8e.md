@@ -42,14 +42,14 @@ If you want to send a message with attachments, but the protocol \(for example, 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Multipart Subtype*
 
 
     
     </td>
     <td valign="top">
-
+    
     Defines how the Multipart message is related to the main message.
 
     For more information, check out the specification at [https://www.w3.org/Protocols/rfc1341/7\_2\_Multipart.html](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)
@@ -60,14 +60,14 @@ If you want to send a message with attachments, but the protocol \(for example, 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Add Multipart Headers Inline*
 
 
     
     </td>
     <td valign="top">
-
+    
     Allows you to control whether message headers are to be part of the MIME Multipart message or not.
 
     More information:
@@ -82,15 +82,15 @@ If you want to send a message with attachments, but the protocol \(for example, 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Include Headers* \(only when *Add Multipart Headers Inline* selected\)
 
 
     
     </td>
     <td valign="top">
-
-    With this attribute, you can specify which headers of the inbound message are to be treated in the specified way. You can enter a regular expression. For example, the expression***h.\**** indicates headers that start with character `h`.
+    
+    With this attribute, you can specify which headers of the inbound message are to be treated in the specified way. You can enter a regular expression. For example, the expression`h.*` indicates headers that start with character `h`.
 
 
     
@@ -98,14 +98,14 @@ If you want to send a message with attachments, but the protocol \(for example, 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Fold Long Headers* \(only when *Add Multipart Headers Inline* is not selected\)
 
 
     
     </td>
     <td valign="top">
-
+    
     If set, headers will be folded by inserted line breaks.
 
     > ### Note:  

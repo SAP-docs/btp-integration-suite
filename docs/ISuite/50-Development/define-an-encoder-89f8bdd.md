@@ -12,7 +12,7 @@ You use this task to encode messages using an encoding scheme to secure any sens
 
 1.  Open the integration flow in the editor.
 
-2.  From the palette, choose *Transformation* \> ** \> *Encoder*.
+2.  From the palette, choose *Transformation* \> *Encoder*.
 
 3.  Select one of the following encoding schemes:
 
@@ -40,6 +40,8 @@ You use this task to encode messages using an encoding scheme to secure any sens
 
 
 
+
+## Example
 
 A message with the header Content-Type "text/plain" is sent to a MIME multipart encoder. The add multipart headers inline functionality is activated.
 
@@ -95,5 +97,5 @@ If you select Base64 Encode, the output message would look like this:
 
 [MIME Multipart Encoder: Handling Message Headers \(Examples\)](mime-multipart-encoder-handling-message-headers-examples-b446281.md "")
 
-[https://blogs.sap.com/2020/05/05/cloud-integration-zip-and-compress-capabilities-encoder-decoder-splitter-aggregate/](https://blogs.sap.com/2020/05/05/cloud-integration-zip-and-compress-capabilities-encoder-decoder-splitter-aggregate/)
+[Cloud Integration – ZIP and Compress Capabilities: Encoder, Decoder, Splitter, Aggregate](https://blogs.sap.com/2020/05/05/cloud-integration-zip-and-compress-capabilities-encoder-decoder-splitter-aggregate/)
 

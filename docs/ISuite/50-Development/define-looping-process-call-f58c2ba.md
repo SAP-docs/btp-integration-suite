@@ -6,6 +6,14 @@ Execute a local integration process in a loop.
 
 
 
+<a name="loiof58c2ba1c8d345fab64c565c18727183__context_nfh_pty_byb"/>
+
+## Context
+
+This step uses generates the following property: `CamelLoopIndex` \(see also [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md)\).
+
+
+
 ## Procedure
 
 1.  From the palette, choose *Call* \> *Local Call* \> *Looping Process Call*.
@@ -34,14 +42,14 @@ Execute a local integration process in a loop.
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify a name.
 
 
@@ -72,14 +80,14 @@ Execute a local integration process in a loop.
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Local Integration Process*
 
 
     
     </td>
     <td valign="top">
-
+    
     Select a pre-defined local integration process you want to invoke.
 
 
@@ -88,14 +96,14 @@ Execute a local integration process in a loop.
     </tr>
     <tr>
     <td valign="top">
-
-     *Expression Type* 
+    
+    *Expression Type* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the kind of expression you want to enter in the *Condition Expression* field.
 
     You've got the following options:
@@ -124,14 +132,14 @@ Execute a local integration process in a loop.
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Condition Expression*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter an expression to specify a routing condition. As long as the condition is true, the loop processing is executed.
 
     Example of XML conditions: `/bank_name/bank_id = 'mybank', //BankId = 'ABC'`
@@ -149,14 +157,14 @@ Execute a local integration process in a loop.
     </tr>
     <tr>
     <td valign="top">
-
-     *Max. Number of Iterations* 
+    
+    *Max. Number of Iterations* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the maximum number of iterations the loop is to be executed. Even if the condition is still met, the loop ends afterwards.
 
 
@@ -165,14 +173,14 @@ Execute a local integration process in a loop.
     </tr>
     <tr>
     <td valign="top">
-
-     *Action when Max. Iterations Reached* 
+    
+    *Action when Max. Iterations Reached* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select to throw an exception when the maximum number of iterations has been reached or to exit the loop and continue with the main process without error even if the looping condition continues to be true.
 
 

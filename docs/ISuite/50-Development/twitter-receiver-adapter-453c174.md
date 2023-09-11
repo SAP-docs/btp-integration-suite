@@ -7,16 +7,18 @@ You use the Twitter receiver adapter to extract information from the Twitter pla
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 The connection works that way that the tenant logs on to Twitter based on an OAuth authentication mechnism and searches for information based on criteria as configured in the adapter at design time. OAuth allows the tenant to access someone else’s resources \(of a specific Twitter user\) on behalf of the tenant. As illustrated in the figure, the tenant \(through the Twitter receiver adapter\) calls the Twitter API to access resources of a specific Twitter user. Currently, the Twitter adapter can only be used as receiver adapter. For more information on the Twitter API, go to: [https://dev.twitter.com/](https://dev.twitter.com/).
 
- ![](images/Twitter_Adapter_OAuth_Mechanism_d23ff1f.png) 
+![](images/Twitter_Adapter_OAuth_Mechanism_d23ff1f.png)
 
 Once you have created a receiver channel and selected the Twitter Receiver Adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
@@ -85,7 +87,7 @@ Description
 <tr>
 <td valign="top">
 
- *Endpoint* 
+*Endpoint* 
 
 
 
@@ -132,7 +134,7 @@ Specifies the Twitter user from which account the information is to be extracted
 <tr>
 <td valign="top">
 
- *Page Size* 
+*Page Size* 
 
 
 
@@ -148,7 +150,7 @@ Specifies the maximum number of results \(tweets\) per page.
 <tr>
 <td valign="top">
 
- *Number of Pages* 
+*Number of Pages* 
 
 
 
@@ -225,7 +227,7 @@ Specify the search language.
 <tr>
 <td valign="top">
 
- *Consumer Key* 
+*Consumer Key* 
 
 
 
@@ -241,7 +243,7 @@ An alias by which the consumer \(tenant\) that requests Twitter resources is ide
 <tr>
 <td valign="top">
 
- *Consumer Secret* 
+*Consumer Secret* 
 
 
 
@@ -257,7 +259,7 @@ An alias by which the shared secret is identified \(that is used to to define th
 <tr>
 <td valign="top">
 
- *Access Token* 
+*Access Token* 
 
 
 
@@ -275,7 +277,7 @@ In order to make authorized calls to the TwitterAPI, your application must first
 <tr>
 <td valign="top">
 
- *Access Token Secret* 
+*Access Token Secret* 
 
 
 

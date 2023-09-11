@@ -48,9 +48,11 @@ You use this task to decode the message received over the network to retrieve or
 
 
 
+## Example
+
 Let us suppose that an input message to the decoder is a message encoded in Base64 that looks like this:
 
-***PG1lc3NhZ2U+DQoJSW5wdXQgZm9yIGVuY29kZXINCjwvbWVzc2FnZT4NCg==***
+`PG1lc3NhZ2U+DQoJSW5wdXQgZm9yIGVuY29kZXINCjwvbWVzc2FnZT4NCg==`
 
 The output message of the decoder would be as follows:
 

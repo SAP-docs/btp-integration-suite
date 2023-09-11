@@ -6,7 +6,7 @@ Let’s say as a Developer Portal Administrator, you would want to restrict the 
 
 `Application_1` contains two products namely `Prod_1` and `Prod_2`.
 
- `Application_2` contains two products namely `Prod_3` and `Prod_4`.
+`Application_2` contains two products namely `Prod_3` and `Prod_4`.
 
 `Prod_1` and `Prod_2`contain two common APIs namely `API_1` and `API_2`.
 

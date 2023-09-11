@@ -4,7 +4,7 @@
 
 Using message queues \(JMS queues\), you can implement asynchronous decoupling of messages in an improved was as compared with using the data store \(see [Use Cases for Data Store and Variables](use-cases-for-data-store-and-variables-853d4dd.md)\).
 
- ![](images/Guidelines_JMS_asynchronous_decoupling_b9dc499.png) 
+![](images/Guidelines_JMS_asynchronous_decoupling_b9dc499.png)
 
 To connect to the JMS queue, you use the JMS sender and receiver adapter like shown in the following process flow.
 

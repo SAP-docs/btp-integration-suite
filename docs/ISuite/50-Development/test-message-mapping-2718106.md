@@ -17,7 +17,7 @@ You have ensured that your message mapping is complete, that is, your sources ar
 When you create message mappings, you need to check whether or not they function as expected. By simulating a mapping, you can verify the correctness and functioning of them.
 
 > ### Note:  
-> Message Mapping Simulation is supported only for the SAP Cloud Integration product profile.
+> Message Mapping Simulation is supported only for the Cloud Integration runtime profile.
 
 
 

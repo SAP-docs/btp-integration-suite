@@ -5,9 +5,9 @@
 The message processing log displays structured information on the processing of a message.
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
-The message processing log comprises a log header and log steps. In the log header you find more general information . The log steps show specific processing events and steps as well as further information, depending on the messages logged. This could be an ***EscalationEvent*** for example, which will trigger an alert showing up in the message processing log.
+The message processing log comprises a log header and log steps. In the log header you find more general information . The log steps show specific processing events and steps as well as further information, depending on the messages logged. This could be an `EscalationEvent` for example, which will trigger an alert showing up in the message processing log.
 
 The log header shows the following properties:
 
@@ -412,7 +412,7 @@ ID of the related integration flow step. It is assigned by the Camel framework.
 > 
 > -   The MPL property names are limited to 100 characters. Any property name longer than 100 characters is cut off after 100 characters.
 
-You can create attachments to the message processing log by using the ***Script API***.
+You can create attachments to the message processing log by using the `Script API`.
 
 > ### Note:  
 > The amount of MPL attachments which can be written is limited to 1 GB per 24 hours. If the limit is reached, MPL attachments will no longer be stored until the amount of MPL attachments written in the last 24 hours is again below 1 GB.
@@ -430,5 +430,5 @@ You can create attachments to the message processing log by using the ***Script 
 
 [Error Classification](error-classification-3eada96.md "")
 
-[Message Status](message-status-733a57b.md "")
+[Message Status](message-status-733a57b.md "The message processing status indicates how a messages has been processed at runtime.")
 

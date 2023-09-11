@@ -415,5 +415,5 @@ The output message has the following structure:
 
 [Access Header and Properties in XPath](access-header-and-properties-in-xpath-996ce78.md "Learn how to access header and exchange properties in XPath.")
 
-[Creating Message Mapping As A Flow Step](creating-message-mapping-as-a-flow-step-3d5cb7f.md "")
+[Creating Message Mapping as a Flow Step](creating-message-mapping-as-a-flow-step-3d5cb7f.md "")
 

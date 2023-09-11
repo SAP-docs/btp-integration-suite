@@ -5,7 +5,7 @@
 When you have chosen the POP3 \(Post-Office\_Protocol\) the test tool checks the following.
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 **IMAP Connectivity Test Options**
 
@@ -30,7 +30,7 @@ Description
 <tr>
 <td valign="top">
 
- *Host* 
+*Host* 
 
 
 
@@ -39,7 +39,7 @@ Description
 
 Enter the host name of the receiver.
 
-The host name must **not** contain any path or schema for example, ***https://***\). In particular, you must **not** enter a URL as the host name.
+The host name must **not** contain any path or schema for example, `https://`\). In particular, you must **not** enter a URL as the host name.
 
 
 
@@ -48,7 +48,7 @@ The host name must **not** contain any path or schema for example, ***https://**
 <tr>
 <td valign="top">
 
- *Port* 
+*Port* 
 
 
 
@@ -57,7 +57,7 @@ The host name must **not** contain any path or schema for example, ***https://**
 
 Enter the port that is to be used for outbound communication.
 
-Standard port is ***110*** or ***995*** 
+Standard port is `110` or `995` 
 
 
 
@@ -75,11 +75,11 @@ Standard port is ***110*** or ***995***
 
 Select a proxy type from the drop-down list:\(
 
--   ***Internet*** 
+-   `Internet` 
 
     or
 
--   ***On-Premise***
+-   `On-Premise`
 
 
 
@@ -95,7 +95,7 @@ Select a proxy type from the drop-down list:\(
 </td>
 <td valign="top">
 
-Only if ***On-Premise*** is selected as *Proxy Ttype*.
+Only if `On-Premise` is selected as *Proxy Ttype*.
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you 've defined for this instance, in the destination configuration on the cloud side
 
@@ -118,19 +118,19 @@ Thi
 Select the protection to be used, from the drop-down list.
 
 > ### Note:  
-> STARTTLS is not supported for port 995. For port ***110***, STARTTLS is supported and checked.
+> STARTTLS is not supported for port 995. For port `110`, STARTTLS is supported and checked.
 
 Select the protection type:
 
--   ***Off*** \(none\)
+-   `Off` \(none\)
 
--   ***POP3S***
+-   `POP3S`
 
     > ### Note:  
-    > The secure protocol is only available for the *Proxy Type* ***Internet***.
+    > The secure protocol is only available for the *Proxy Type* `Internet`.
 
--   ***STARTTLS Mandatory***
--   ***STARTTLS Optional***
+-   `STARTTLS Mandatory`
+-   `STARTTLS Optional`
 
 
 
@@ -139,7 +139,7 @@ Select the protection type:
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 
@@ -180,14 +180,14 @@ Enter a credential name or select one from the drop-down list.
 <tr>
 <td valign="top">
 
- *Validate Server Certificate* 
+*Validate Server Certificate* 
 
 
 
 </td>
 <td valign="top">
 
-Allows you to validate the server certificate \(only when *Protection* is not ***Off***\).
+Allows you to validate the server certificate \(only when *Protection* is not `Off`\).
 
 When you have selected the *Validate Server Certificate* option \(which is the default setting\), the following checks are executed:
 
@@ -205,7 +205,7 @@ If it was not successful and there is an error message, you can unselect the *Va
 <tr>
 <td valign="top">
 
- *Check Mailbox Content* 
+*Check Mailbox Content* 
 
 
 

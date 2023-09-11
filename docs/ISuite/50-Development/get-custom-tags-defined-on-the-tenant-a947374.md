@@ -41,7 +41,7 @@ GET
 </td>
 <td valign="top">
 
- `​/CustomTagConfigurations('CustomTags')/$value` 
+`​/CustomTagConfigurations('CustomTags')/$value` 
 
 
 

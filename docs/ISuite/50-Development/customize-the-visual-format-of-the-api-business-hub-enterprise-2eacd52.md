@@ -1,6 +1,6 @@
 <!-- loio2eacd52b914c41f6aa10909fd5bced98 -->
 
-# Customize the Visual Format of the API Business Hub Enterprise
+# Customize the Visual Format of the API business hub enterprise 
 
 As a Site Administrator, you can customize the visual layout of the API business hub enterprise using the Site Editor. The customizations you make using the Site Editor appear to the other users in the system.
 
@@ -26,8 +26,6 @@ You can use the *Site Editor* to:
 -   Change banner image
 -   Customize background settings
 -   Customize footer
-
-![](images/Site_Editor_092311c.png)
 
 
 
@@ -85,6 +83,11 @@ To change the banner image,
 ## Edit Description
 
 Choose the *Edit Description* tab to modify the *Title* and *Subtitle* of the home page.
+
+> ### Note:  
+> As a part of banner description, you can use the markdown language to add links and email addresses to the *Title* and *Subtitle* fields within the *Edit Description* dialog. For example, \[SAP\]\([www.sap.com](http://(www.sap.com)\) and mailto:john.doe@example.com.
+> 
+> You can also add multiple lines in the sub-titles using markdown. If you want to move to a new line, end the previous line with a backslash \(\\\).
 
 
 

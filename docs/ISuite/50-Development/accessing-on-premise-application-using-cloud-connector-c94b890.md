@@ -52,7 +52,7 @@ You can prepare an Adapter Development Kit \(ADK\) project to access any on-prem
         > ```
 
         > ### Sample Code:  
-        > The example here shows how you can use the above proxy details in HTTP client. Ensure to provide the location ID of the Cloud Connector using the header ***SAP-Connectivity-SCC-Location\_ID***.
+        > The example here shows how you can use the above proxy details in HTTP client. Ensure to provide the location ID of the Cloud Connector using the header `SAP-Connectivity-SCC-Location_ID`.
         > 
         > ```java
         > DefaultHttpClient httpclient = new DefaultHttpClient();

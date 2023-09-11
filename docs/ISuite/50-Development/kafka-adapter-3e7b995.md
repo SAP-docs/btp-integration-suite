@@ -2,7 +2,7 @@
 
 # Kafka Adapter
 
-With the Kafka Adapter, SAP Cloud Integration allows you to connect to an external Kafka broker via Kafka protocol. With the help of the Kafka Sender adapter you can receive messages. Use the Kafka Receiver adapter to send messages to the Kafka broker.
+With the Kafka Adapter, SAP Integration Suite allows you to connect to an external Kafka broker via Kafka protocol. With the help of the Kafka Sender adapter you can receive messages. Use the Kafka Receiver adapter to send messages to the Kafka broker.
 
 **Related Information**  
 

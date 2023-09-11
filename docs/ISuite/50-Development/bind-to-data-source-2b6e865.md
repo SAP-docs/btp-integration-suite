@@ -3,7 +3,7 @@
 # Bind to Data Source
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 You have created an OData model in the Cloud Integration Web application. As a result, you can see OData objects associated with the model listed in a table on the Service Designer page.
 
@@ -54,7 +54,7 @@ Description
 <tr>
 <td valign="top">
 
- ![](images/Entity_Set_7995de1.png) 
+![](images/Entity_Set_7995de1.png)
 
 
 
@@ -70,7 +70,7 @@ Represents an entity set in an OData model.
 <tr>
 <td valign="top">
 
- ![](images/Operation_099d11d.png) 
+![](images/Operation_099d11d.png)
 
 
 
@@ -86,7 +86,7 @@ Represents an operation associated with an entity set in an OData model.
 <tr>
 <td valign="top">
 
- ![](images/Operation_with_Error_0a699e5.png) 
+![](images/Operation_with_Error_0a699e5.png)
 
 
 
@@ -102,7 +102,7 @@ Represents an operation bound to a data source with errors in the associated int
 <tr>
 <td valign="top">
 
- ![](images/Operation_with_Warning_01814a4.png) 
+![](images/Operation_with_Warning_01814a4.png)
 
 
 
@@ -118,7 +118,7 @@ Represents an operation bound to a data source with warnings in the associated i
 <tr>
 <td valign="top">
 
- ![](images/Operation_Bound_61f57d5.png) 
+![](images/Operation_Bound_61f57d5.png)
 
 
 
@@ -134,7 +134,7 @@ Represents an operation bound to a data source with no errors or warnings.
 <tr>
 <td valign="top">
 
- ![](images/Function_Import_064e190.png) 
+![](images/Function_Import_064e190.png)
 
 
 
@@ -150,7 +150,7 @@ Represents a function import in an OData model.
 <tr>
 <td valign="top">
 
- ![](images/Function_Import_with_Error_32684a7.png) 
+![](images/Function_Import_with_Error_32684a7.png)
 
 
 
@@ -166,7 +166,7 @@ Represents a function import bound to a data source with errors in the associate
 <tr>
 <td valign="top">
 
- ![](images/Function_Import_with_Warning_215be30.png) 
+![](images/Function_Import_with_Warning_215be30.png)
 
 
 
@@ -182,7 +182,7 @@ Represents a function import bound to a data source with warnings in the associa
 <tr>
 <td valign="top">
 
- ![](images/Function_Import_Bound_e1ed11f.png) 
+![](images/Function_Import_Bound_e1ed11f.png)
 
 
 

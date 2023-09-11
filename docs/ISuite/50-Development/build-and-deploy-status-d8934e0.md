@@ -33,7 +33,7 @@ Description
 <tr>
 <td valign="top">
 
- *Success* 
+*Success* 
 
 
 
@@ -49,7 +49,7 @@ The artifact is deployed on worker node\(s\).
 <tr>
 <td valign="top">
 
- *Fail* 
+*Fail* 
 
 
 
@@ -65,7 +65,7 @@ The artifact isn't deployed on worker node\(s\), for example, because of a valid
 <tr>
 <td valign="top">
 
- *Deploying* 
+*Deploying* 
 
 
 
@@ -81,7 +81,7 @@ The artifact is in the process of being deployed.
 <tr>
 <td valign="top">
 
- *Fail\_On\_License\_Error* 
+*Fail\_On\_License\_Error* 
 
 
 

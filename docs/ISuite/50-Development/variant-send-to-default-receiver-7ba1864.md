@@ -4,7 +4,7 @@
 
 In the example integration flow, the message is routed to different receivers depending on the country or region ID of the shipping address \(in other words, depending on a certain routing condition\). If neither routing condition is met, Cloud Integration sends the message to a default receiver. The *Pattern Content Based Routing - Send To Default* reference integration flow has been designed for demo purposes and therefore contains only 2 receivers. It has the following structure.
 
- ![](images/ContentBased_Routing_Default_bd47a5b.png) 
+![](images/ContentBased_Routing_Default_bd47a5b.png)
 
 The integration flow processes the message in the following way:
 
@@ -37,14 +37,14 @@ The integration flow processes the message in the following way:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Type
 
 
     
     </td>
     <td valign="top">
-
+    
     XPath
 
 
@@ -53,14 +53,14 @@ The integration flow processes the message in the following way:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Data Type
 
 
     
     </td>
     <td valign="top">
-
+    
     java.lang.String
 
 
@@ -69,14 +69,14 @@ The integration flow processes the message in the following way:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Value
 
 
     
     </td>
     <td valign="top">
-
+    
     /ns0:PurchaseOrder/Address/Region\[../../Address\[@Type='Shipping'\]\]
 
 

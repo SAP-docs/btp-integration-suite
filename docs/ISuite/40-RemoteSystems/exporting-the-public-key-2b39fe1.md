@@ -2,11 +2,13 @@
 
 # Exporting the Public Key
 
-You can export a public key in order to make it available for your communication partner \(sender or receiver\).
+Export a public key in order to make it available for your communication partner \(sender or receiver\).
 
 
 
 ## Context
+
+Your communication partner needs the public key for the related activities such as signing the message \(when this is a sender\) or verifying the message \(when this is a receiver\).
 
 
 
@@ -16,7 +18,7 @@ You can export a public key in order to make it available for your communication
 
 2.  Choose *Export*.
 
-3.  Select a location on your local disk and specify a file name \(extension ***.pub***\).
+3.  Select a location on your local disk and specify a file name \(extension `.pub`\).
 
 4.  Choose *Save*.
 

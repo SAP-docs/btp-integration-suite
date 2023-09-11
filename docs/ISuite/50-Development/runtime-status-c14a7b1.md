@@ -29,7 +29,7 @@ Description
 <tr>
 <td valign="top">
 
- *Started* 
+*Started* 
 
 
 
@@ -47,7 +47,7 @@ An artifact with this status is in a final state.
 <tr>
 <td valign="top">
 
- *Error* 
+*Error* 
 
 
 
@@ -65,7 +65,7 @@ An artifact with this status is in a final state.
 <tr>
 <td valign="top">
 
- *Starting* 
+*Starting* 
 
 
 
@@ -83,7 +83,7 @@ An artifact with this status is in an intermediate state.
 <tr>
 <td valign="top">
 
- *Stopping* 
+*Stopping* 
 
 
 

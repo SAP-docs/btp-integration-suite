@@ -300,7 +300,7 @@ Header Name
 Defines the location of the XSD schema.
 
 > ### Note:  
-> The EDI splitter fetches the header name from the Partner Directory. For example, a header name for an EDIFACT message is defined as ***pd:PID:<<pattern\>\>:binary***, where **<<pattern\>\>** can be ***$\{edi.EDI\_Document\_Standard\}\_$\{edi.EDI\_Message\_Type\}\_$\{edi.EDI\_Message\_Version\}*** . At runtime, the splitter automatically picks up the EDI document standard \(UN-EDIFACT\), message type, and message version from the payload. Hence, an EDIFACT header name can look like this: ***pd:userName:UN-EDIFACT\_ORDERS\_D96A:binary***.
+> The EDI splitter fetches the header name from the Partner Directory. For example, a header name for an EDIFACT message is defined as `pd:PID:<<pattern>>:binary`, where **<<pattern\>\>** can be `${edi.EDI_Document_Standard}_${edi.EDI_Message_Type}_${edi.EDI_Message_Version}` . At runtime, the splitter automatically picks up the EDI document standard \(UN-EDIFACT\), message type, and message version from the payload. Hence, an EDIFACT header name can look like this: `pd:userName:UN-EDIFACT_ORDERS_D96A:binary`.
 
 
 
@@ -308,5 +308,5 @@ Defines the location of the XSD schema.
 </tr>
 </table>
 
-For a step-by-step example of how to use the Partner Directory, see [https://blogs.sap.com/2017/07/25/cloud-integration-partner-directory-step-by-step-example/](https://blogs.sap.com/2017/07/25/cloud-integration-partner-directory-step-by-step-example/).
+For a step-by-step example of how to use the Partner Directory, see [Cloud Integration – Partner Directory – Step-by-Step Example](https://blogs.sap.com/2017/07/25/cloud-integration-partner-directory-step-by-step-example/).
 

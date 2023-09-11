@@ -36,7 +36,7 @@ Description
 <tr>
 <td valign="top">
 
- *Name* 
+*Name* 
 
 
 
@@ -52,7 +52,7 @@ Displays the log file name.
 <tr>
 <td valign="top">
 
- *Log Type* 
+*Log Type* 
 
 
 
@@ -68,7 +68,7 @@ Displays 2 different log types the trace log or the HTTP access log.
 <tr>
 <td valign="top">
 
- *Updated At* 
+*Updated At* 
 
 
 
@@ -84,7 +84,7 @@ Displays the date of the last update.
 <tr>
 <td valign="top">
 
- *Entries* 
+*Entries* 
 
 
 
@@ -100,7 +100,7 @@ Displays thenumber of entries in the log file.
 <tr>
 <td valign="top">
 
- *Actions* 
+*Actions* 
 
 
 

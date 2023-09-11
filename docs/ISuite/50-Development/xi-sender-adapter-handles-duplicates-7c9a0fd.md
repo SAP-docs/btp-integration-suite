@@ -27,7 +27,7 @@ The *Pattern Quality Of Service - Scenario 05* integration flow illustrates this
 > 
 > The *Generic Receiver* is designed in such a way that when a message is sent to its SOAP 1.x endpoint, duplicates aren't discarded.
 
- ![](images/Scenario_with_XI_Sender_Adapter_0ecd927.png) 
+![](images/Scenario_with_XI_Sender_Adapter_0ecd927.png)
 
 The integration flow performs the following steps:
 
@@ -53,15 +53,15 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     *Quality Of Service* 
+    
+    *Quality Of Service* 
 
 
     
     </td>
     <td valign="top">
-
-     *Exactly Once* 
+    
+    *Exactly Once* 
 
 
     
@@ -69,15 +69,15 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     *Temporary Storage* 
+    
+    *Temporary Storage* 
 
 
     
     </td>
     <td valign="top">
-
-     *Data Store* 
+    
+    *Data Store* 
 
 
     
@@ -122,15 +122,15 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
-    ***OWN***
+    
+    `OWN`
 
 
     
@@ -138,14 +138,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *User*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the user as specified when setting up inbound basic authentication.
 
 
@@ -154,14 +154,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Password*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the password as specified when setting up inbound basic authentication.
 
 

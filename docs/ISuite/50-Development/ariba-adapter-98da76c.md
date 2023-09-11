@@ -10,7 +10,7 @@ You use this procedure to configure a sender and receiver channel of an integrat
 **Related Information**  
 
 
-[Configure the Ariba Sender Adapter](configure-the-ariba-sender-adapter-0629b58.md "The Ariba sender adapter connects SAP Cloud Integration to the Ariba Network. Using this adapter, SAP and non-SAP cloud applications can receive business-specific documents in commerce eXtensible Markup Language (cXML) format from the Ariba network. The sender adapter allows you to define a schedule for polling data from Ariba.")
+[Configure the Ariba Sender Adapter](configure-the-ariba-sender-adapter-0629b58.md "The Ariba sender adapter connects SAP Integration Suite to the Ariba Network. Using this adapter, SAP and non-SAP cloud applications can receive business-specific documents in commerce eXtensible Markup Language (cXML) format from the Ariba network. The sender adapter allows you to define a schedule for polling data from Ariba.")
 
-[Configure the Ariba Receiver Adapter](configure-the-ariba-receiver-adapter-49dffa3.md "The Ariva receiver adapter connects SAP Cloud Integration to the Ariba network. Using this adapter, SAP and non-SAP cloud applications can send business-specific documents in commerce eXtensible Markup Language (cXML) format to the Ariba network.")
+[Configure the Ariba Receiver Adapter](configure-the-ariba-receiver-adapter-49dffa3.md "The Ariva receiver adapter connects SAP Integration Suite to the Ariba network. Using this adapter, SAP and non-SAP cloud applications can send business-specific documents in commerce eXtensible Markup Language (cXML) format to the Ariba network.")
 

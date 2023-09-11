@@ -4,7 +4,7 @@
 
 Map the selected set of integration domains, integration styles, and use case patterns \(technology-agnostic\) to the best suitable integration technologies.
 
-![](images/IA_Technology_Mapping_cb60934.png) 
+![](images/IA_Technology_Mapping_cb60934.png)
 
 > ### Example:  
 > You have identified the following set of requirements for your integration strategy:

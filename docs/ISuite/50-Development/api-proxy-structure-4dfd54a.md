@@ -73,7 +73,7 @@ APIProxyEndPoint
 </td>
 <td valign="top">
 
-This folder has a ***<Proxy Endpoint name\>.xmlContains one file for every resource associated with the APIProxy. Each*** file that contains information about Proxy Endpoint, resources, documentation, and the policy assignments on the proxy endpoint stream.
+This folder has a `<Proxy Endpoint name>.xmlContains one file for every resource associated with the APIProxy. Each` file that contains information about Proxy Endpoint, resources, documentation, and the policy assignments on the proxy endpoint stream.
 
 
 
@@ -96,7 +96,7 @@ APIResource
 </td>
 <td valign="top">
 
- ***Contains one file for every resource associated with the APIProxy. Each<API Resource name\>.xml***file contains the API resource details such as resource name, title, documentation, and so on.
+`Contains one file for every resource associated with the APIProxy. Each<API Resource name>.xml`file contains the API resource details such as resource name, title, documentation, and so on.
 
 
 
@@ -119,7 +119,7 @@ Documentation
 </td>
 <td valign="top">
 
-Contains one documentation file for every resource. Each document follows the naming convention ***<APIResource name\>\_<language\>.html***. For example, if the API Resource name is *PurchaseOrder* and the supported language is *English*, then the document file name is *PurchaseOrder\_en.html*. The file provides the documentation content relevant to the associated resource.
+Contains one documentation file for every resource. Each document follows the naming convention `<APIResource name>_<language>.html`. For example, if the API Resource name is *PurchaseOrder* and the supported language is *English*, then the document file name is *PurchaseOrder\_en.html*. The file provides the documentation content relevant to the associated resource.
 
 
 
@@ -144,9 +144,9 @@ FileResource
 
 Lists all the scripts attached to the policy. Only Java, Python, and XSL Scripts are supported. Follow the below naming convention:
 
--   Java Script: ***<JavaScript name\>.js***
--   Python script: ***<PythonScript name\>.py***
--   XSL script: ***<XSLScript name\>.xsl*** 
+-   Java Script: `<JavaScript name>.js`
+-   Python script: `<PythonScript name>.py`
+-   XSL script: `<XSLScript name>.xsl` 
 
 
 
@@ -169,7 +169,7 @@ Policy
 </td>
 <td valign="top">
 
-Contains a list of all policies attached to the API Proxy. Each policy is available as a separate file with the naming convention ***<Policy name\>.xml***. The folder should also contain a *defaultRaiseFaultPolicy.xml*.
+Contains a list of all policies attached to the API Proxy. Each policy is available as a separate file with the naming convention `<Policy name>.xml`. The folder should also contain a *defaultRaiseFaultPolicy.xml*.
 
 
 
@@ -178,14 +178,14 @@ Contains a list of all policies attached to the API Proxy. Each policy is availa
 <tr>
 <td valign="top">
 
- ***<APIProxyName\>.xml*** 
+`<APIProxyName>.xml` 
 
 
 
 </td>
 <td valign="top">
 
-\\API Proxy\\***<APIProxyName\>.xml*** 
+\\API Proxy\\`<APIProxyName>.xml` 
 
 
 
@@ -201,7 +201,7 @@ This file contains the header information of the proxy endpoint, target endpoint
 </table>
 
 > ### Note:  
-> -   When you import an API proxy, ensure that the API proxy name in the ***<APIProxy name\>.xml*** file and the value of the *base\_path* field \(inside the *APIProxyEndpoint* file\) is unique.
+> -   When you import an API proxy, ensure that the API proxy name in the `<APIProxy name>.xml` file and the value of the *base\_path* field \(inside the *APIProxyEndpoint* file\) is unique.
 > -   If the API proxy does not contain any API resources, then the *APIResources*, *Documentation*, *FileResource*, and *Policy* folders are not required in the .zip file during import of API proxy.
 
 

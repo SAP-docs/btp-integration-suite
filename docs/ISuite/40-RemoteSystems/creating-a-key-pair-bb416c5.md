@@ -14,9 +14,9 @@ Usually, a primary key is created for certification and signing, and a subkey is
 
 ## Procedure
 
-1.  Start the GPA tool \(by double-clicking ***run\_gpa.bat*** in the tenant-specific directory\).
+1.  Start the GPA tool \(by double-clicking `run_gpa.bat` in the tenant-specific directory\).
 
-2.  In the main menu, select *Window* \> *Key Maintenance* \> **.
+2.  In the main menu, select *Window* \> *Key Maintenance*.
 
 3.  In the menu of the following window, select *New* \> *New Keys*.
 
@@ -24,9 +24,9 @@ Usually, a primary key is created for certification and signing, and a subkey is
 
     For *Name*, enter a string according to the following naming convention:
 
-    ***<speaking tenant name\> <tenant alias\>.hci.sap.com*** 
+    `<speaking tenant name> <tenant alias>.hci.sap.com` 
 
-    For ***<speaking tenant name\>***, you can use the name of the company, for example \(like ***Citi***\).
+    For `<speaking tenant name>`, you can use the name of the company, for example \(like `Citi`\).
 
     Leave the *Email* and *Comment* fields empty.
 
@@ -50,5 +50,5 @@ Usually, a primary key is created for certification and signing, and a subkey is
 **Related Information**  
 
 
-[Deploying a PGP Secret Keyring](../50-Development/deploying-a-pgp-secret-keyring-9d8e1a9.md "This artifact contains the PGP Secret Keys for the usage of Open Pretty Good Privacy (PGP). The private key enables the tenant to decrypt or sign messages.")
+[Deploying a PGP Secret Keyring](../50-Development/deploying-a-pgp-secret-keyring-9d8e1a9.md "This artifact contains the PGP secret keys for the usage of Open Pretty Good Privacy (PGP). The private key enables the tenant to decrypt or sign messages.")
 

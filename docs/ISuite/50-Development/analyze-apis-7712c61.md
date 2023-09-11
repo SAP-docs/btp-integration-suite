@@ -4,7 +4,7 @@
 
 Use the capabilities of API Analytics to analyze API usage and performance.
 
- SAP Integration Suite provides comprehensive analytics capabilities to understand the various patterns of API consumption and performance. The API Analytics server uses the runtime data of the APIs to analyze the information. The runtime data is gathered, analyzed, and displayed as charts, headers, and key performance indicators \(KPIs\).
+SAP Integration Suite provides comprehensive analytics capabilities to understand the various patterns of API consumption and performance. The API Analytics server uses the runtime data of the APIs to analyze the information. The runtime data is gathered, analyzed, and displayed as charts, headers, and key performance indicators \(KPIs\).
 
 Use the analytics dashboard to view the aggregated results. The detailed analytics view helps to manage APIs, attract the right application developers, troubleshoot problems, and ultimately, make better business decisions.
 

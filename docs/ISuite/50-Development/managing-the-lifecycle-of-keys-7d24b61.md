@@ -42,7 +42,7 @@ The following different keystore types enable the tenant administrator to renew 
 
 During the activation of an SAP key, the system performs three steps, as shown in the following figure.
 
- ![](../40-RemoteSystems/images/Cloud_Integration_Certificate_Management_Activating_SAP_Keys_fbe4f91.png) 
+![](../40-RemoteSystems/images/Cloud_Integration_Certificate_Management_Activating_SAP_Keys_fbe4f91.png)
 
 1.  The old key pair \(which expires soon\) is added by the system to the Key History keystore.
 
@@ -53,12 +53,6 @@ During the activation of an SAP key, the system performs three steps, as shown i
 
 > ### Note:  
 > To restore an old key pair, the tenant administrator can copy the key pair from the SAP Key History keystore to the New Keys keystore and activate it there.
-
-
-
-<a name="loio7d24b61c989e4fa5851797fe391e83d2__steps_ojs_1vy_wbb"/>
-
-## Procedure
 
 **Related Information**  
 

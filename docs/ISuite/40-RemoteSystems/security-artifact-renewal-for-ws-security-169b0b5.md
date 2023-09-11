@@ -208,7 +208,7 @@ Tenant decrypts outbound response message.
 **Related Information**  
 
 
-[Configuring a Channel with SOAP (SOAP 1.x) Adapter](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/9b619fe82f5e4ba5b7eafde67c1548a9.html "") :arrow_upper_right:
+
 
 [WS-Security Configuration for the Sender SOAP 1.x Adapter](../50-Development/ws-security-configuration-for-the-sender-soap-1-x-adapter-e53bb5c.md "")
 

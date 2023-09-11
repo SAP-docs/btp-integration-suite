@@ -86,5 +86,5 @@ The conversion from JSON format to XML format follows the following rules:
 
 [Define JSON to XML Converter](define-json-to-xml-converter-5a7c0cd.md "The JSON to XML converter enables you to transform messages in JSON format to XML format.")
 
-[Conversion Rules for XML to JSON Conversion](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/778aed733e3140cea0435f4615d53812.html "To ensure a successful conversion from XML format to JSON format, you should make yourself familiar with the conversion rules.") :arrow_upper_right:
+
 

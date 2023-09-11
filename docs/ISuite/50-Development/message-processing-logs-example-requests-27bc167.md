@@ -4,7 +4,7 @@
 
 
 
-You find various example requests on SAP API Business Hub at [Message Processing Logs](https://api.sap.com/api/MessageProcessingLogs/resource).
+You find various example requests on SAP Business Accelerator Hub at [Message Processing Logs](https://api.sap.com/api/MessageProcessingLogs/resource).
 
 For more example requests, see:
 
@@ -20,7 +20,7 @@ Logs
 </td>
 <td valign="top">
 
- [Get Message Processing Logs for a Dedicated Time Period](get-message-processing-logs-for-a-dedicated-time-period-71cb264.md) 
+[Get Message Processing Logs for a Dedicated Time Period](get-message-processing-logs-for-a-dedicated-time-period-71cb264.md) 
 
 
 
@@ -36,7 +36,7 @@ Custom Header Properties
 </td>
 <td valign="top">
 
- [Get Custom Header Properties](get-custom-header-properties-b90b0b5.md) 
+[Get Custom Header Properties](get-custom-header-properties-b90b0b5.md) 
 
 
 

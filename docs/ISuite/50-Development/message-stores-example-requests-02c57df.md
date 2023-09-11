@@ -4,7 +4,7 @@
 
 
 
-You find various example requests on SAP API Business Hub at [Message Stores](https://api.sap.com/api/MessageStore).
+You find various example requests on SAP Business Accelerator Hub at [Message Stores](https://api.sap.com/api/MessageStore).
 
 For more example requests, see:
 
@@ -20,7 +20,7 @@ Entry Properties
 </td>
 <td valign="top">
 
- [Get Message Store Entry Properties](get-message-store-entry-properties-a43d59e.md) 
+[Get Message Store Entry Properties](get-message-store-entry-properties-a43d59e.md) 
 
 
 

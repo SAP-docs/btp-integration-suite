@@ -8,7 +8,7 @@ The verifier \(specified in the integration flow to use the CMS/PKCS\#7 standard
 
 The following figure illustrates the communication path that is relevant for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_PKCS7_Intbound_Verify_ff17e85.png) 
+![](images/SAP_HCI_Security_Renewal_-_PKCS7_Intbound_Verify_ff17e85.png)
 
 
 

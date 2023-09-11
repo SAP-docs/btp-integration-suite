@@ -4,7 +4,7 @@
 
 The example integration flow *Handle Errors - Splitter without Stop on Exception* is designed in the following way.
 
- ![](images/Handle_Errors_-_Splitter_without_Stop_on_Exception_0e922ee.png) 
+![](images/Handle_Errors_-_Splitter_without_Stop_on_Exception_0e922ee.png)
 
 This example scenario works in the following way:
 
@@ -36,14 +36,14 @@ This example scenario works in the following way:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Expression Type
 
 
     
     </td>
     <td valign="top">
-
+    
     XPath
 
 
@@ -52,14 +52,14 @@ This example scenario works in the following way:
     </tr>
     <tr>
     <td valign="top">
-
+    
     XPath Expression
 
 
     
     </td>
     <td valign="top">
-
+    
     /ns0:PurchaseOrder/Items/Item
 
 
@@ -68,14 +68,14 @@ This example scenario works in the following way:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Grouping
 
 
     
     </td>
     <td valign="top">
-
+    
     1
 
 
@@ -84,14 +84,14 @@ This example scenario works in the following way:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Stop on Exception
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Not selected\)
 
 

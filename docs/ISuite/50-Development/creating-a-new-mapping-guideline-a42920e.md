@@ -28,7 +28,7 @@ A mapping guideline can be used as a source, reference, or guidance, for impleme
 
 1.  Choose *MAGs* from the left pane of the application.
 
-2.  Choose <span class="SAP-icons"></span>.
+2.  In the Overview page, Choose *Add*.
 
 3.  Select the MIG that you want to use as the source in your MAG and choose *Next*.
 

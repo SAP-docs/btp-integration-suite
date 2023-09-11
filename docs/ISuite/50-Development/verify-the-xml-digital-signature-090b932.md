@@ -60,14 +60,14 @@ Then, the digest value of the canonicalized 'SignedInfo' is calculated. The resu
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the name for the verifier step.
 
 
@@ -100,14 +100,14 @@ Then, the digest value of the canonicalized 'SignedInfo' is calculated. The resu
     </tr>
     <tr>
     <td valign="top">
-
-     *Expected Signature Type* 
+    
+    *Expected Signature Type* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select the expected Signature type:
 
     -   **Enveloping or Enveloped XML Signature**: If the signature is contained within the content or the signature contains the signed data.
@@ -219,14 +219,14 @@ Then, the digest value of the canonicalized 'SignedInfo' is calculated. The resu
     </tr>
     <tr>
     <td valign="top">
-
-     *Check for Key Info Element* 
+    
+    *Check for Key Info Element* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option to check that the XML Signature contains a Key Info element
 
     The KeyInfo element has to contain either the certificate chain, the certificate, the Issuer Distinguished Name and Serial Number, or the Key Value element \(or combinations of these attributes\).
@@ -240,14 +240,14 @@ Then, the digest value of the canonicalized 'SignedInfo' is calculated. The resu
     </tr>
     <tr>
     <td valign="top">
-
-     *Disallow DOCTYPE Declaration* 
+    
+    *Disallow DOCTYPE Declaration* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option to disallow DTD DOCTYPE declaration in the incoming XML message
 
 
@@ -256,14 +256,14 @@ Then, the digest value of the canonicalized 'SignedInfo' is calculated. The resu
     </tr>
     <tr>
     <td valign="top">
-
-     *Public Key Alias* 
+    
+    *Public Key Alias* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter an alias name to select a public key and corresponding certificate
 
     Using the *Public Key Alias*, you can enter one or multiple public key aliases for the Verifier.

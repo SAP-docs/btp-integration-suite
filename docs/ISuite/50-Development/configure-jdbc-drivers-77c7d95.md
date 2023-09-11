@@ -6,7 +6,7 @@
 
 Learn how to upload and deploy JDBC type-4 compliant third-party drivers on Cloud Integration service.
 
-JDBC connectivity provides a mechanism for integration flows deployed on Cloud Integration tenants in Neo and Cloud Foundry environments to connect with Amazon RDS \(SQL Server and Oracle\) and HANA-aaS databases hosted on AWS using JDBC drivers. The tenant administrator configures JDBC drivers on your Cloud Integration tenant to enable you to establish connection to a database managed by a third-party vendor. Your database vendor should provide the driver or download it from their official website. We highly recommend that you work with the latest version of the third-party JDBC driver. All uploaded drivers undergo a security validation before being deployed on a Cloud Integration tenant.
+JDBC connectivity provides a mechanism for integration flows deployed on Cloud Integration tenants in Cloud Foundry environments to connect with Amazon RDS \(SQL Server and Oracle\) and HANA-aaS databases hosted on AWS using JDBC drivers. The tenant administrator configures JDBC drivers on your Cloud Integration tenant to enable you to establish connection to a database managed by a third-party vendor. Your database vendor should provide the driver or download it from their official website. We highly recommend that you work with the latest version of the third-party JDBC driver. All uploaded drivers undergo a security validation before being deployed on a Cloud Integration tenant.
 
 > ### Note:  
 > Cloud Services may include features that permit third-party code or tools to be downloaded/uploaded into Customer’s Cloud Service account by \(i\) Customer or \(ii\) by SAP on behalf of and at the request of Customer from a non-SAP service for which Customer has a license, to facilitate the exchange of data or enable or improve other data processing activities. Such third-party code or tools are Customer Data. The code or tools may not be used to connect the Cloud Service or other software/cloud services to a third-party database licensed from SAP under a run-time license for use with specified SAP Applications. Customer must license a full-use license from the applicable database vendor to use such code or tools to replicate data from such database into the Cloud Service.
@@ -63,6 +63,8 @@ JDBC connectivity provides a mechanism for integration flows deployed on Cloud I
 > -   [oracleDB12.2.0.1](https://www.oracle.com/database/technologies/jdbc-upc-downloads.html)
 > 
 > -   [oracleDB19.11.0.0](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19-11-c-downloads.html)
+> 
+> -   [oracleDB19.16.0.0](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19-11-c-downloads.html)
 > 
 > 
 > 
@@ -131,14 +133,14 @@ Before consuming the drivers in runtime, you must deploy the uploaded driver as 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Database Type*
 
 
     
     </td>
     <td valign="top">
-
+    
     Select one of the database types that are supported:
 
     -   Microsoft SQL Server
@@ -154,14 +156,14 @@ Before consuming the drivers in runtime, you must deploy the uploaded driver as 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *JDBC Driver File*
 
 
     
     </td>
     <td valign="top">
-
+    
     Browse to choose the driver file from your file system.
 
     > ### Note:  

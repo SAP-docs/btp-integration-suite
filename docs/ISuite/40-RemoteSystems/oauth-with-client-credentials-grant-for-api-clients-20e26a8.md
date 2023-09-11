@@ -130,21 +130,21 @@ To set up this authorization option, perform the following steps.
     </tr>
     <tr>
     <td valign="top">
-
+    
     ClientId and clientsecret
 
 
     
     </td>
     <td valign="top">
-
-     *api* 
+    
+    *api* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select role according to the API resource to access.
 
     See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
@@ -153,35 +153,35 @@ To set up this authorization option, perform the following steps.
     
     </td>
     <td valign="top">
-
-     *Client Credentials* 
+    
+    *Client Credentials* 
 
 
     
     </td>
     <td valign="top">
-
-     *ClientId/Secret* 
+    
+    *ClientId/Secret* 
 
 
     
     </td>
     <td valign="top">
-
+    
     n.a.
 
 
     
     </td>
     <td valign="top">
-
+    
     n.a.
 
 
     
     </td>
     <td valign="top">
-
+    
     n.a.
 
 
@@ -190,21 +190,21 @@ To set up this authorization option, perform the following steps.
     </tr>
     <tr>
     <td valign="top">
-
+    
     SAP certificate
 
 
     
     </td>
     <td valign="top">
-
-     *api* 
+    
+    *api* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select role according to the API resource to access.
 
     See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
@@ -213,35 +213,35 @@ To set up this authorization option, perform the following steps.
     
     </td>
     <td valign="top">
-
-     *Client Credentials* 
+    
+    *Client Credentials* 
 
 
     
     </td>
     <td valign="top">
-
-     *Certificate* 
+    
+    *Certificate* 
 
 
     
     </td>
     <td valign="top">
-
+    
     n.a.
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify validity in days.
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify key size.
 
 
@@ -250,21 +250,21 @@ To set up this authorization option, perform the following steps.
     </tr>
     <tr>
     <td valign="top">
-
+    
     External certificate
 
 
     
     </td>
     <td valign="top">
-
-     *api* 
+    
+    *api* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select role according to the API resource to access.
 
     See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
@@ -273,35 +273,35 @@ To set up this authorization option, perform the following steps.
     
     </td>
     <td valign="top">
-
-     *Client Credentials* 
+    
+    *Client Credentials* 
 
 
     
     </td>
     <td valign="top">
-
-     *External Certificate* 
+    
+    *External Certificate* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Add PEM-encoded X.509 certificate.
 
 
     
     </td>
     <td valign="top">
-
+    
     n.a.
 
 
     
     </td>
     <td valign="top">
-
+    
     n.a.
 
 

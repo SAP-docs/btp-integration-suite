@@ -41,7 +41,7 @@ Description
 <tr>
 <td valign="top">
 
- *Name* 
+*Name* 
 
 
 
@@ -57,7 +57,7 @@ Displays name of the artifact
 <tr>
 <td valign="top">
 
- *Minimum Value* 
+*Minimum Value* 
 
 
 
@@ -73,7 +73,7 @@ Minimum value of the artifact should be greater than or equal to 0.
 <tr>
 <td valign="top">
 
- *Maximum Value* 
+*Maximum Value* 
 
 
 
@@ -89,7 +89,7 @@ Maximum value of the artifact should be less than 15 digit.
 <tr>
 <td valign="top">
 
- *Next Value* 
+*Next Value* 
 
 
 
@@ -105,7 +105,7 @@ Displays a value that can be used the next time you invoke this artifact.
 <tr>
 <td valign="top">
 
- *Field Length* 
+*Field Length* 
 
 
 
@@ -127,7 +127,7 @@ The maximum value allowed for this attribute is 99.
 <tr>
 <td valign="top">
 
- *Rotate* 
+*Rotate* 
 
 
 
@@ -143,7 +143,7 @@ If this attribute is set and the number range reaches specified **maximum value*
 <tr>
 <td valign="top">
 
- *Deployed By* 
+*Deployed By* 
 
 
 
@@ -159,7 +159,7 @@ Displays the user id of the user who deployed the artifact.
 <tr>
 <td valign="top">
 
- *Deployed On* 
+*Deployed On* 
 
 
 

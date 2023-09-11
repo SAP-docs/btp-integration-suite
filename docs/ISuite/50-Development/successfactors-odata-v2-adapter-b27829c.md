@@ -1,6 +1,6 @@
 <!-- loiob27829c720db4773a147b8bb2b61c2ba -->
 
-# SuccessFactors \(OData V2\) Adapter
+# SuccessFactors OData V2 Adapter
 
 The SuccessFactors adapter enables you to communicate with the SuccessFactors system. You use the OData V2 message protocol to connect to the OData V2 Web services of the SuccessFactors system.
 

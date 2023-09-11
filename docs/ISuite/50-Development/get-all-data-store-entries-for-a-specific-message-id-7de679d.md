@@ -41,7 +41,7 @@ GET
 </td>
 <td valign="top">
 
- `​/DataStoreEntries?messageid=<messageId>` 
+`​/DataStoreEntries?messageid=<messageId>` 
 
 
 

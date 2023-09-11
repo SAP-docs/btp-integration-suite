@@ -57,14 +57,14 @@ You can use this procedure to bind function imports and operations of entity set
     </tr>
     <tr>
     <td valign="top">
-
+    
     Entity Sets
 
 
     
     </td>
     <td valign="top">
-
+    
     A list of entity sets that is populated from the ODC source when importing the OData model. If you have coded the OData model, then the list is populated directly from your model.
 
     Select an entity set that you want to bind to.
@@ -75,14 +75,14 @@ You can use this procedure to bind function imports and operations of entity set
     </tr>
     <tr>
     <td valign="top">
-
+    
     Address
 
 
     
     </td>
     <td valign="top">
-
+    
     Endpoint URI of the target system
 
 
@@ -91,14 +91,14 @@ You can use this procedure to bind function imports and operations of entity set
     </tr>
     <tr>
     <td valign="top">
-
+    
     Client
 
 
     
     </td>
     <td valign="top">
-
+    
     Client of the target system
 
 
@@ -107,14 +107,14 @@ You can use this procedure to bind function imports and operations of entity set
     </tr>
     <tr>
     <td valign="top">
-
+    
     Namespace
 
 
     
     </td>
     <td valign="top">
-
+    
     Logical grouping of the service implementation
 
 
@@ -123,14 +123,14 @@ You can use this procedure to bind function imports and operations of entity set
     </tr>
     <tr>
     <td valign="top">
-
+    
     Service Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Name of the service implementation
 
 
@@ -139,14 +139,14 @@ You can use this procedure to bind function imports and operations of entity set
     </tr>
     <tr>
     <td valign="top">
-
+    
     Version
 
 
     
     </td>
     <td valign="top">
-
+    
     Version of the service implementation
 
 
@@ -155,14 +155,14 @@ You can use this procedure to bind function imports and operations of entity set
     </tr>
     <tr>
     <td valign="top">
-
+    
     Proxy Type
 
 
     
     </td>
     <td valign="top">
-
+    
     The type of proxy that you are using to connect to the target system:
 
     -   Select *On-Premise* if you are connecting to an on-premise system using the SAP Cloud Connector.
@@ -178,14 +178,14 @@ You can use this procedure to bind function imports and operations of entity set
     </tr>
     <tr>
     <td valign="top">
-
+    
     Authentication
 
 
     
     </td>
     <td valign="top">
-
+    
     Select *Basic* if you want to use user credentials to connect to the target system.
 
 
@@ -194,14 +194,14 @@ You can use this procedure to bind function imports and operations of entity set
     </tr>
     <tr>
     <td valign="top">
-
+    
     Credential Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Name of the user credentials artifact deployed on the tenant
 
 

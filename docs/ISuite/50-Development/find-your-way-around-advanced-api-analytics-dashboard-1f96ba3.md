@@ -39,7 +39,7 @@ The Overview page provides a summarized report about your most important and key
 
 At the top of the Overview report page, the following key API metrics are represented in a tile format:
 
- ![](images/Analytics_tiles_7effecc.png) 
+![](images/Analytics_tiles_7effecc.png)
 
 -   **Total API Calls**: Total number of API requests made over a specified period.
 -   **API Response Time**: Total time in milliseconds to respond to an API request. This round-trip time includes the API proxy overhead and the target server time.
@@ -89,7 +89,7 @@ The Health page provides reports about key metrics related to the performance of
 
 At the top of the Health page, there is a date-range selector. This date-range selector lets you set the time period for which you want to analyze the reports. To set a new time period, click and drag the bubble-like endpoints on the date-range selector.
 
- ![](images/date_range_selector_health_5a38025.png) 
+![](images/date_range_selector_health_5a38025.png)
 
 Above the date-range selector, select **Day**, **Hour**, or **Minutes** tabs to see daily, hourly, or 30-minute aggregate data.
 
@@ -121,7 +121,7 @@ The Usage report page provides reports on key metrics related to user-engagement
 
 At the top of the Usage report page, there is a date-range selector. This date-range selector lets you set the time period for which you want to analyze the reports. To set a new time period, click and drag the bubble-like endpoints available on the date-range selector.
 
- ![](images/date_range_selector_usage_1b526c5.png) 
+![](images/date_range_selector_usage_1b526c5.png)
 
 Above the date-range selector, you can select **Month**, **Week**, or **Day** tabs to see data by month, week, or day.
 

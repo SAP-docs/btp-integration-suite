@@ -55,7 +55,7 @@ Usage
 <tr>
 <td valign="top">
 
- ![](images/Navigation_Compass_197ecfe.png) 
+![](images/Navigation_Compass_197ecfe.png)
 
 
 
@@ -82,7 +82,7 @@ Use the compass to control the perspective of the model:
 <tr>
 <td valign="top">
 
- ![](images/Navigation_Zoom_Level_8ed7584.png) 
+![](images/Navigation_Zoom_Level_8ed7584.png)
 
 
 

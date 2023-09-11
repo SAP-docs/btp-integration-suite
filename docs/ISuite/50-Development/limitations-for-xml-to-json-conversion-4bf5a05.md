@@ -27,9 +27,9 @@ The XML to JSON conversion has the following limitations:
 
 [Define XML to JSON Converter](define-xml-to-json-converter-a60a282.md "The XML to JSON converter enables you to transform messages in XML format to JSON format.")
 
-[Conversion Rules for XML to JSON Conversion](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/778aed733e3140cea0435f4615d53812.html "To ensure a successful conversion from XML format to JSON format, you should make yourself familiar with the conversion rules.") :arrow_upper_right:
+
 
 [How Streaming in the XML-to-JSON Converter Works](how-streaming-in-the-xml-to-json-converter-works-4e05044.md "During streaming the XML document is processed in parts or segments:")
 
-[Example: Transformation to a JSON Message without Root Element Tag](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/e8e0fff0280c4ddb8359e198a2c20c8c.html "Examples and Special Cases of JSON Message without Root Element Tag") :arrow_upper_right:
+
 

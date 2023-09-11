@@ -49,5 +49,5 @@ This documentation summarizes the measures that are taken by SAP to fulfill thes
 
 [Auditing and Logging Information](auditing-and-logging-information-86a75cd.md "Here you can find a list of the security events that are logged by SAP Integration Suite.")
 
-[Malware Scanner for Cloud Integration](malware-scanner-for-cloud-integration-37df657.md "Scan your design time artifacts for malware before the users upload them to the tenant.")
+[Malware Scanner for Cloud Integration](../50-Development/IntegrationSettings/malware-scanner-for-cloud-integration-37df657.md "Scan your design time artifacts for malware before the users upload them to the tenant.")
 

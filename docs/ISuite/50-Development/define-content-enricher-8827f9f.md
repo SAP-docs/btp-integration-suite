@@ -8,7 +8,7 @@
 
 ## Context
 
-The content enricher adds the content of a payload with the original message in the course of an integration process. This converts the two separate messages into a single enhanced payload. This feature enables you to make external calls during the course of an integration process to obtain additional data, if any.
+The content enricher adds the content of a payload with the original message in the course of an integration process. This process converts the two separate messages into a single enhanced payload. This feature enables you to make external calls during the course of an integration process to obtain additional data, if any.
 
 > ### Tip:  
 > To find out how to use this step in a dedicated scenario, check out the design guideline [Content Enricher](content-enricher-0e7ba7f.md).
@@ -232,7 +232,7 @@ c\_code
 </tr>
 </table>
 
-The enriched message will be in the following format.
+The enriched message is in the following format.
 
 ```
 <EmployeeList>
@@ -266,20 +266,23 @@ The enriched message will be in the following format.
 
 ```
 
-In the enriched message, you can see the content of the lookup message after the node **<message2\>**.
+> ### Remember:  
+> Content Enricher doesn't support an XML payload that contains namespace-oriented attributes in its XML elements.
+> 
+> For example, the XML element *<mail xsi:nil=true/\>* isn't supported because the attribute *<nil\>* has a namespace prefix. But the XML element *<mail nil=true/\>* works as expected.
 
 > ### Remember:  
-> If lookup message contains more than one entry of the key element, content enricher enhances the enriched message with all the entries referred by the key element in lookup message. In the above example, the lookup message contains the key element `ext_111` in two places. You can see that the enriched message contains both the `<contact>` entries that the key element refers to.
+> If lookup message contains more than one entry of the key element, content enricher enhances the enriched message with all the entries referred by the key element in lookup message. In the preceding example, the lookup message contains the key element `ext_111` in two places. You can see that the enriched message contains both the `<contact>` entries that the key element refers to.
 
 > ### Note:  
-> The *Enrich* strategy does not work as expected if
+> The *Enrich* strategy doesn't work as expected if:
 > 
-> -   The *Key Element* in the Lookup Message is an empty string
+> -   The *Key Element* in the Lookup Message is an empty string.
 > 
-> -   The *Key Element* in the Original message cannot be located during runtime
+> -   The *Key Element* in the Original message can't be located during runtime.
 > 
 > 
-> In such cases, the Content Enricher does not enrich the message.
+> In such cases, the Content Enricher doesn't enrich the message.
 
 
 
@@ -318,15 +321,15 @@ In the enriched message, you can see the content of the lookup message after the
     </tr>
     <tr>
     <td valign="top">
-
-     *Combine* 
+    
+    *Combine* 
 
 
     
     </td>
     <td valign="top">
-
-    Combines the original and lookup messages. You cannot define any rules for combining messages.
+    
+    Combines the original and lookup messages. You can't define any rules for combining messages.
 
 
     
@@ -334,14 +337,14 @@ In the enriched message, you can see the content of the lookup message after the
     </tr>
     <tr>
     <td valign="top">
-
-     *Enrich* 
+    
+    *Enrich* 
 
 
     
     </td>
     <td valign="top">
-
+    
     You can define the path to node and key element based on which the original message is enriched with the lookup message.
 
 
@@ -350,7 +353,7 @@ In the enriched message, you can see the content of the lookup message after the
     </tr>
     </table>
     
-4.  If you have selected *Enrich* as the *Content Enrichment Type*, provide values in fields based on description in table.
+4.  If you've selected *Enrich* as the *Content Enrichment Type*, provide values in fields based on description in table.
 
 
     <table>
@@ -379,21 +382,21 @@ In the enriched message, you can see the content of the lookup message after the
     </tr>
     <tr>
     <td valign="top" rowspan="2">
-
+    
     Original Message
 
 
     
     </td>
     <td valign="top">
-
+    
     Path to Node
 
 
     
     </td>
     <td valign="top">
-
+    
     Path to the reference node in the original message
 
 
@@ -402,14 +405,14 @@ In the enriched message, you can see the content of the lookup message after the
     </tr>
     <tr>
     <td valign="top">
-
+    
     Key Element
 
 
     
     </td>
     <td valign="top">
-
+    
     Key element in the original message
 
 
@@ -418,21 +421,21 @@ In the enriched message, you can see the content of the lookup message after the
     </tr>
     <tr>
     <td valign="top" rowspan="2">
-
+    
     Lookup Message
 
 
     
     </td>
     <td valign="top">
-
+    
     Path to Node
 
 
     
     </td>
     <td valign="top">
-
+    
     Path to the reference node in the lookup message
 
 
@@ -441,14 +444,14 @@ In the enriched message, you can see the content of the lookup message after the
     </tr>
     <tr>
     <td valign="top">
-
+    
     Key Element
 
 
     
     </td>
     <td valign="top">
-
+    
     Key element in the lookup message
 
 

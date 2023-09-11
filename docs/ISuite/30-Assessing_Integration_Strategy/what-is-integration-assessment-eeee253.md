@@ -2,7 +2,7 @@
 
 # What Is Integration Assessment
 
- Integration Assessment allows you to assess the integration strategy for your organization in a structured way. It helps you to determine the integration technologies that best suit your requirements.
+Integration Assessment allows you to assess the integration strategy for your organization in a structured way. It helps you to determine the integration technologies that best suit your requirements.
 
 
 
@@ -10,7 +10,7 @@
 
 ## Methodology
 
-SAP Integration Assessment uses SAP Integration Solution Advisory Methodology \(ISA-M\).
+Integration Assessment uses SAP Integration Solution Advisory Methodology \(ISA-M\).
 
 This methodology:
 
@@ -29,7 +29,7 @@ See: [SAP Integration Solution Advisory Methodology](sap-integration-solution-ad
 
 ## Features
 
- Integration Assessment helps you to:
+Integration Assessment helps you to:
 
 -   Capture ISA-M technology mapping and policies.
 
@@ -53,7 +53,7 @@ See: [SAP Integration Solution Advisory Methodology](sap-integration-solution-ad
 
 -   Get insight into your integration landscape.
 
-     Integration Assessment provides you with insights into your integration landscape. You get an overview of the relevant integration domains, integration styles, use case patterns, key characteristics, and deployment models.
+    Integration Assessment provides you with insights into your integration landscape. You get an overview of the relevant integration domains, integration styles, use case patterns, key characteristics, and deployment models.
 
 -   Discover and use standard SAP integration content.
 

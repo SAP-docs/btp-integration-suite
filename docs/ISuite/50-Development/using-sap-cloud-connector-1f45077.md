@@ -9,7 +9,7 @@ For more details about the SAP Cloud Connector, see: [Outbound: SAP Cloud Connec
 > ### Note:  
 > The location ID is currently not supported.
 
-In the System Mapping, set *Host in Request Header* to ***Use Internal Host***.
+In the System Mapping, set *Host in Request Header* to `Use Internal Host`.
 
 Example of system mapping pointing to a CMS system:
 
@@ -17,7 +17,7 @@ Example of system mapping pointing to a CMS system:
 
 For security reasons, set *Virtual Host* and *Virtual Port* values different to *Internal Host* and *Internal Port* values. With setting identical values for internal host and port and virtual host and port, you save a direct connection to the repository in the destination. This direct connection can lead to attacks on the CMS, if the destination is known by unauthorized persons.
 
- ![](images/ArchivingSyst_EditResource_4c061cd.png)
+![](images/ArchivingSyst_EditResource_4c061cd.png)
 
 In the *Edit Resource* screen, set the *Access Policy* to *Path And all Sub-Paths*.
 

@@ -6,7 +6,7 @@ You can use various receiver adapters \(for example, the SOAP adapters, the IDoc
 
 The following figure illustrates the basic setup for HTTP outbound communication:
 
- ![](images/Outbound_Communication_306026f.png) 
+![](images/Outbound_Communication_306026f.png)
 
 
 
@@ -173,7 +173,7 @@ OAuth
 </td>
 <td valign="top">
 
- Cloud Integration authenticates itself against the receiver system by using OAuth.
+Cloud Integration authenticates itself against the receiver system by using OAuth.
 
 
 
@@ -242,5 +242,5 @@ You can access the following link to see the list of available landscapes and re
 
 [Twitter Receiver Adapter](../50-Development/twitter-receiver-adapter-453c174.md "You use the Twitter receiver adapter to extract information from the Twitter platform based on certain criteria such as keywords, user data, for example. As one example, you can use this feature to send, search for and receive Twitter feeds.")
 
-[Facebook Receiver Adapter](../50-Development/facebook-receiver-adapter-3dcc408.md "You use the Facebook receiver adapter to extract information from Facebook (which is the receiver platform) based on certain criteria such as keywords, user data, for example. As one example, you can use this feature in social marketing activities to do social media data analysis based on Facebook content.")
+[Facebook Receiver Adapter](../50-Development/facebook-receiver-adapter-3dcc408.md "You use the Facetbook receiver adapter to extract information from Facebook (which is the receiver platform) based on certain criteria such as keywords, user data, for example. As one example, you can use this feature in social marketing activities to do social media data analysis based on Facebook content.")
 

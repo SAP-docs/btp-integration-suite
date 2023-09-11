@@ -29,7 +29,7 @@ Create a SOAP channel to define how the sender calls the integration flow.
 
     Specify the following parameters:
 
-    -   *Address*: This parameter defines the endpoint under which the integration flow can be called from the sender. Start the address with a slash, for example,***/FirstFlow***.
+    -   *Address*: This parameter defines the endpoint under which the integration flow can be called from the sender. Start the address with a slash, for example,`/FirstFlow`.
 
     -   *Service Definition*: Keep the option *Manual*. You would select the other option, *WSDL*, if you wanted to define your service based on an uploaded Web Service Description Language \(WSDL\) file.
 

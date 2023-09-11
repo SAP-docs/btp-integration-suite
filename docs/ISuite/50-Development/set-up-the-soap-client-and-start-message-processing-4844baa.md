@@ -21,7 +21,7 @@ Send the SOAP request with a dedicated value for the productIdentifier \(for exa
 
 Check your e-mail account. You should find an e-mail with the following content:
 
- ![](images/Getting_Started_Postman_05_ed1ed42.png) 
+![](images/Getting_Started_Postman_05_ed1ed42.png)
 
 Send another SOAP message with another productIdentifier \(for example, HT-2001\), and you receive details of another product.
 

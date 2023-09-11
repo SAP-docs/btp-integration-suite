@@ -5,7 +5,7 @@
 Developing enterprise-grade integration flows mandates the diligent management of the resources available on the customer tenant. Depending on the capabilities used in the integration flow, SAP Integration Suite relies on the computing system, database persistence, and messaging service broker to process messages.
 
 > ### Note:  
-> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP API Business Hub:
+> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP Business Accelerator Hub:
 > 
 > [Integration Flow Design Guidelines - Run an Integration Flow Under Well-Defined Boundary Conditions](https://api.sap.com/package/DesignGuidelinesManageResources?section=Overview)
 > 
@@ -13,6 +13,9 @@ Developing enterprise-grade integration flows mandates the diligent management o
 
 > ### Note:  
 > For more information, see [Copying the Integration Package and Deploying the Integration Flows](copying-the-integration-package-and-deploying-the-integration-flows-2cb1d31.md).
+
+> ### Note:  
+> It can be the case that you've applied the integration flow design guidelines described in this section to your best knowledge, but you still face issues during the operation of the scenario. For example, you have applied all design rules with regard to performance but still the performance isn't good enough at runtime. In such cases, you can check out the following page to search for a service that helps you to optimize the implementation of your scenario: [SAP Services and Support](https://www.sap.com/services-support.html).
 
 Resources on a tenant are limited, as you can see in the following table showing the resources of SAP Integration Suite .
 

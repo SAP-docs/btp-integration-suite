@@ -72,15 +72,15 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
-    Enter ***TransportManagementService*** as the destination name.
+    
+    Enter `TransportManagementService` as the destination name.
 
 
     
@@ -88,15 +88,15 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     </tr>
     <tr>
     <td valign="top">
-
+    
     Type
 
 
     
     </td>
     <td valign="top">
-
-    Enter ***HTTP*** as the supported type.
+    
+    Enter `HTTP` as the supported type.
 
 
     
@@ -104,14 +104,14 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     </tr>
     <tr>
     <td valign="top">
-
+    
     Description
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a brief description stating the purpose of creating a new destination in the *Description* field.
 
 
@@ -120,14 +120,14 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     </tr>
     <tr>
     <td valign="top">
-
+    
     URL
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide the URL from the service key details of the SAP Cloud Transport Management service plan.
 
 
@@ -136,14 +136,14 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     </tr>
     <tr>
     <td valign="top">
-
+    
     Proxy Type
 
 
     
     </td>
     <td valign="top">
-
+    
     Internet
 
 
@@ -152,15 +152,15 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     </tr>
     <tr>
     <td valign="top">
-
+    
     Authentication
 
 
     
     </td>
     <td valign="top">
-
-    Select the authentication type as ***OAuth2ClientCredentials***.
+    
+    Select the authentication type as `OAuth2ClientCredentials`.
 
 
     
@@ -168,14 +168,14 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     </tr>
     <tr>
     <td valign="top">
-
+    
     Client ID
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide the client ID from the service key details of the SAP Cloud Transport Management service plan.
 
 
@@ -184,14 +184,14 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     </tr>
     <tr>
     <td valign="top">
-
+    
     Client Secret
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the client secret.
 
 
@@ -200,15 +200,15 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     </tr>
     <tr>
     <td valign="top">
-
+    
     Token Service URL
 
 
     
     </td>
     <td valign="top">
-
-    Provide the Token Service URL from the service key details of the SAP Cloud Transport Management service plan.
+    
+    Navigate to the SAP Cloud Transport Management Service instance and copy the token service URL from the service key details and append `/oauth/token` to it.
 
 
     
@@ -218,16 +218,16 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     
 5.  Add an additional property to the SAP Cloud Transport Management service by choosing *Edit* \> *New Property*.
 
-    Add ***sourceSystemId*** in the first text box.
+    Add `sourceSystemId` in the first text box.
 
     > ### Note:  
-    > While entering the sourceSystemId in the first text box, don't change the case of the text ***sourceSystemId***.
+    > While entering the sourceSystemId in the first text box, don't change the case of the text `sourceSystemId`.
 
     Enter the source node that you created in the Transport Management Applications in the second text box. See [Adding a Source Node in Transport Management Applications](adding-a-source-node-in-transport-management-applications-dc24ea2.md) for the steps on how to add a Source node.
 
 6.  Choose *Save*.
 
-    You can also do a *Check Connection* to verify whether you've added the destination correctly. Once you perform a check connection, the following pop-up message appears: ***Connection to "TransportManagementService" is established.***
+    You can also do a *Check Connection* to verify whether you've added the destination correctly. Once you perform a check connection, the following pop-up message appears: `Connection to "TransportManagementService" is established.`
 
     > ### Note:  
     > In case you receive a "401: Unauthorized" response code, please note that its an accepted response code.

@@ -38,14 +38,14 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     <tr>
     <td valign="top">
-
+    
     MIG Document Title
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a title that you would like to see in your MIG document
 
 
@@ -54,14 +54,14 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     <tr>
     <td valign="top">
-
+    
     MAG Document Title
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a title that you would like to see in your MAG document
 
 
@@ -70,14 +70,14 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Front Cover Line 1
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide a description for the front cover
 
 
@@ -86,14 +86,14 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Front Cover Line 2
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide a description for the front cover
 
 
@@ -102,14 +102,14 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Splash Image
 
 
     
     </td>
     <td valign="top">
-
+    
     Browse <span class="SAP-icons"></span> and add a splash image for the front cover.
 
 
@@ -118,14 +118,14 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Logo Image
 
 
     
     </td>
     <td valign="top">
-
+    
     Browse <span class="SAP-icons"></span> and add a logo image for the front cover.
 
 
@@ -156,14 +156,14 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Footer Text
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the footer text that has to be displayed in the content page.
 
 
@@ -194,14 +194,14 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Contact Link
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide your contact details
 
 
@@ -210,14 +210,14 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Copyright Link
 
 
     
     </td>
     <td valign="top">
-
+    
     You can add a copyright link to the back cover of your document
 
 
@@ -226,14 +226,14 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     <tr>
     <td valign="top">
-
+    
     Copyright Text
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide a copyright text along with the copyright link.
 
 

@@ -11,7 +11,7 @@ The package *Cloud Integration – Trading Partner Management* contains the nece
 > ### Note:  
 > This is a configure-only package and hence, you cannot edit the integration flows.
 
-A generic integration flow process for SAP Integration Suite looks like this: ![](images/TPM-_Generic_Integration_Flow_Process_5300302.png) 
+A generic integration flow process for SAP Integration Suite looks like this: ![](images/TPM-_Generic_Integration_Flow_Process_5300302.png)
 
 To know more about the package, see [Cloud Integration - Trading Partner Management](https://api.sap.com/package/CloudIntegrationTradingPartnerManagement/integrationflow). Follow the steps below to copy the integration package to your *Design* space.
 
@@ -52,21 +52,21 @@ To know more about the package, see [Cloud Integration - Trading Partner Managem
     </tr>
     <tr>
     <td valign="top" rowspan="3">
-
+    
     Sender
 
 
     
     </td>
     <td valign="top">
-
+    
     Step 1 - Sender AS2 Communication Flow
 
 
     
     </td>
     <td valign="top">
-
+    
     This integration flow receives and extracts messages sent using AS2 adapter
 
 
@@ -75,14 +75,14 @@ To know more about the package, see [Cloud Integration - Trading Partner Managem
     </tr>
     <tr>
     <td valign="top">
-
+    
     Step 1 - Sender IDOC Communication Flow
 
 
     
     </td>
     <td valign="top">
-
+    
     This integration flow receives and extracts messages sent using IDOC adapter.
 
 
@@ -91,14 +91,14 @@ To know more about the package, see [Cloud Integration - Trading Partner Managem
     </tr>
     <tr>
     <td valign="top">
-
+    
     Step 1 - Sender SOAP Communication Flow
 
 
     
     </td>
     <td valign="top">
-
+    
     This integration flow receives and extracts messages sent using SOAP adapter.
 
 
@@ -107,21 +107,21 @@ To know more about the package, see [Cloud Integration - Trading Partner Managem
     </tr>
     <tr>
     <td valign="top">
-
+    
     Interchange
 
 
     
     </td>
     <td valign="top">
-
+    
     Step 2 - Interchange Processing Flow
 
 
     
     </td>
     <td valign="top">
-
+    
     This integration flow transforms the message sent by the sender to the structure expected by the receiver.
 
 
@@ -130,21 +130,21 @@ To know more about the package, see [Cloud Integration - Trading Partner Managem
     </tr>
     <tr>
     <td valign="top">
-
+    
     Receiver
 
 
     
     </td>
     <td valign="top">
-
+    
     Step 3 - Receiver Communication Flow
 
 
     
     </td>
     <td valign="top">
-
+    
     This integration flow gets the final message from the queue and sends it to the receiver
 
 
@@ -153,21 +153,21 @@ To know more about the package, see [Cloud Integration - Trading Partner Managem
     </tr>
     <tr>
     <td valign="top">
-
+    
      
 
 
     
     </td>
     <td valign="top">
-
+    
     Reusable Groovy Scripts
 
 
     
     </td>
     <td valign="top">
-
+    
     This is the collection of scripts used in the integration flows of the package.
 
 
@@ -193,9 +193,9 @@ To know more about the package, see [Cloud Integration - Trading Partner Managem
 
 7.  Follow the steps mentioned in the chapters below to configure and deploy the artifacts.
 
-    1.  [Sender Side Integration Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/Cloud/en-US/98380f4122a24b8ab56304660a463885.html "The integration flows receive and extract messages sent using the AS2, AS2 MDN, IDoc and SOAP adapter.") :arrow_upper_right:
+    1.  [Sender Side Integration Flow](sender-side-integration-flow-98380f4.md)
 
-    2.  [Interchange Processing Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/Cloud/en-US/7d3bce9478974229af1abf9121fe47e6.html "This integration flow transforms the message sent by the sending partner to the structure expected by the receiving partner.") :arrow_upper_right:
-    3.  [Receiver Communication Flow](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/Cloud/en-US/cd233d11900b45248c062e8b57f1991f.html "This integration flow gets the final message from the queue and sends it to the receiver.") :arrow_upper_right:
+    2.  [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
+    3.  [Receiver Communication Flow](receiver-communication-flow-cd233d1.md)
 
 

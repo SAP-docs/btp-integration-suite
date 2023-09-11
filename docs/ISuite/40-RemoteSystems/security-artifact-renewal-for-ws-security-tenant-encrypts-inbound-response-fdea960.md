@@ -8,7 +8,7 @@ The WS-Security encryptor uses a public key to encrypt the payload of the inboun
 
 The following figure illustrates the communication path for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_WS_Security_Inbound_Response_Encrypt_dac6710.png) 
+![](images/SAP_HCI_Security_Renewal_-_WS_Security_Inbound_Response_Encrypt_dac6710.png)
 
 
 

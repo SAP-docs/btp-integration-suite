@@ -4,7 +4,7 @@
 
 # What is SAP Integration Suite?
 
-Develop and manage enterprise-wide integration across heterogeneous landscapes. 
+Simplify and accelerate enterprise integration. 
 
 SAP Integration Suite connects and contextualizes processes and data while enabling new content-rich applications to be assembled faster with less dependence on IT. Pre-built integration packs along with existing investments can be composed to deliver new outcomes with less involvement by integration experts.
 
@@ -26,6 +26,9 @@ SAP Integration Suite connects and contextualizes processes and data while enabl
 > 
 > -   [Blog Post: Introducing the Open Documentation Initiative](https://blogs.sap.com/2021/05/20/introducing-the-open-documentation-initiative/)
 
+> ### Tip:  
+> Contextual help is available for some screens of the SAP Integration Suite. To activate this help, from the top toolbar, choose <span class="SAP-icons"></span>. A panel with help topics opens on screen to your right. You will also see green <span style="color:#007833;"><span class="SAP-icons"></span></span> icons on the screen. Choose these icons to know more about the associated element.
+
 
 
 ## Environment
@@ -36,25 +39,89 @@ This service runs in the SAP BTP, Cloud Foundry environment.
 
 ## Features
 
-  Build Integration Scenarios 
- :   Discover, design, and operate scenarios for end-to-end process integration with Cloud Integration.
 
-   Manage APIs 
- :   Discover, design, and govern APIs for API consumers with API Management.
+<dl>
+<dt><b>
 
-   Extend Non-SAP Connectivity 
- :   Connect to non-SAP cloud applications from your integration scenarios with Open Connectors.
+Build Integration Scenarios 
 
-   Implement Interfaces and Mappings 
- :   Design interfaces and mappings using crowdsourcing and machine learning with Integration Advisor.
+</b></dt>
+<dd>
 
-   Mange Trading Partners 
- :   Design and operate B2B scenarios with Trading Partner Management.
+Discover, design, and operate scenarios for end-to-end process integration with Cloud Integration.
 
-   Manage and Provide Integration Guidance 
- :   Define, document, and govern your integration strategy powered by ISA-M with Integration Assessment.
 
- 
+
+</dd><dt><b>
+
+Manage APIs 
+
+</b></dt>
+<dd>
+
+Discover, design, and govern application programming interfaces \(APIs\) for API consumers with API Management incl. Graph.
+
+
+
+</dd><dt><b>
+
+Extend Non-SAP Connectivity 
+
+</b></dt>
+<dd>
+
+Connect to non-SAP cloud applications from your integration scenarios with Open Connectors.
+
+
+
+</dd><dt><b>
+
+Implement Interfaces and Mappings 
+
+</b></dt>
+<dd>
+
+Design interfaces and mappings using crowdsourcing and machine learning with Integration Advisor.
+
+
+
+</dd><dt><b>
+
+Manage Trading Partners 
+
+</b></dt>
+<dd>
+
+Design and operate business-to-business scenarios with Trading Partner Management.
+
+
+
+</dd><dt><b>
+
+Provide Integration Technology Guidance 
+
+</b></dt>
+<dd>
+
+Define, document, and govern your integration strategy powered by ISA-M with Integration Assessment.
+
+
+
+</dd><dt><b>
+
+Assess Migration Scenarios 
+
+</b></dt>
+<dd>
+
+Estimate the migration effort for SAP Process Orchestration scenarios with Migration Assessment.
+
+
+
+</dd>
+</dl>
+
+
 
 <a name="loio5cc6987511104c418b7cb4c25f3d9cb0__section_t2h_p31_yfb"/>
 
@@ -99,12 +166,16 @@ Integrate SAP and non-SAP, cloud, and on-premise applications and process messag
 
 [API Management](50-Development/development-de1ae81.md#loiode1ae814218247c6bac4975cb486e431__section_APIM)
 
+[Graph](https://help.sap.com/docs/graph)
+
 
 
 </td>
 <td valign="top">
 
 Get access to simple, scalable, and secure digital assets through application programming interfaces \(APIs\) and consume these.
+
+Expose all your business data in the form of a semantically connected data graph, accessed via a single unified and powerful API.
 
 
 
@@ -174,12 +245,28 @@ Define integration landscape, based on the Integration Solution Advisor Methodol
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+[Migration Assessment](migration-assessment-5c5e50e.md)
+
+
+
+</td>
+<td valign="top">
+
+Assess your existing integration scenarios to migrate them to SAP Integration Suite.
+
+
+
+</td>
+</tr>
 </table>
 
 For more information on the connectivity options, see [Connectivity Options](connectivity-options-93d82e8.md).
 
 > ### Note:  
-> Read the SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776) to understand the service plans offered for SAP Integration Suite. You also find information on the supported feature sets for each service plans.
+> Read the SAP Note [2903776](https://me.sap.com/notes/2903776) to understand the service plans offered for SAP Integration Suite. You also find information on the supported feature sets for each service plans.
 
 For SAP Integration Suite, the free service plan is available. For more information, see [Using Free Service Plans](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/524e1081d8dc4b0f9d055a6bec383ec3.html?locale=en-US&q=trial).
 
@@ -195,7 +282,7 @@ Check out the following resources:
 
 -   Get access to SAP Integration Suite community, Pricing models and all the technical resources, tutorials, blogs, and support you need: [Integration Platform as a Service](https://www.sap.com/products/integration-suite.html).
 
--   For more information on how usage information is recorded for billing and other cost assessments, see SAP Note [2942344](https://launchpad.support.sap.com/#/notes/2942344).
+-   For more information on how usage information is recorded for billing and other cost assessments, see SAP Note [2942344](https://me.sap.com/notes/2942344).
 
 
 **Related Information**  

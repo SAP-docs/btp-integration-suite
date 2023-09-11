@@ -7,9 +7,11 @@ The Salesforce sender adapter enables Cloud Integration to accelerate the implem
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -248,7 +250,7 @@ Specifies the validity of the assertion in seconds.
 <tr>
 <td valign="top">
 
- *Polling Interval \(in ms\)* 
+*Polling Interval \(in ms\)* 
 
 
 
@@ -264,7 +266,7 @@ Specifies the polling interval expressed in milliseconds. The polling interval a
 <tr>
 <td valign="top">
 
- *Process Errors as an Event* 
+*Process Errors as an Event* 
 
 
 

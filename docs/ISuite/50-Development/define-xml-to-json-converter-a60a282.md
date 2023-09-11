@@ -14,11 +14,11 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
 
 -   You are familiar with the conversion rules for XML to JSON conversion.
 
-    For more information see [Conversion Rules for XML to JSON Conversion](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/778aed733e3140cea0435f4615d53812.html "To ensure a successful conversion from XML format to JSON format, you should make yourself familiar with the conversion rules.") :arrow_upper_right:.
+    For more information see .
 
 -   You are familiar with the limitations for XML to JSON conversion.
 
-    For more information see [Limitations for XML-to-JSON Conversion](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/a5b4641c393f406bb544987497c90a72.html "To ensure a successful conversion form XML to JSON format you have to know the limitations for this conversion.") :arrow_upper_right:.
+    For more information see .
 
 -   You are familiar with streaming for XML to JSON conversion.
 
@@ -32,8 +32,6 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
 ## Procedure
 
 1.  In the palette, choose <span class="SAP-icons"></span>*Transformation* \> *Converter* \> *XML to JSON Converter*.
-
-    Your cusor symbol
 
 2.  Insert the converter at the desired position in your integration process.
 
@@ -63,14 +61,14 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the name of the converter.
 
 
@@ -79,14 +77,14 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     </tr>
     <tr>
     <td valign="top">
-
+    
     JSON Output Encoding
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the JSON output encoding. The default value is *from header or property*.
 
     If you select *from header or property*, the converter tries to read the encoding from the message header or exchange property `CamelCharsetName`. If there is no value defined, UTF-8 is used.
@@ -97,14 +95,14 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     </tr>
     <tr>
     <td valign="top">
-
+    
     XML Namespace \(only if the option *Namespace Mapping* is selected\)
 
 
     
     </td>
     <td valign="top">
-
+    
     If you select from header or property, the converter tries to read the encoding from the message header or exchange property CamelCharsetName. If there is no value defined, UTF-8 is used.
 
 
@@ -113,14 +111,14 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     </tr>
     <tr>
     <td valign="top">
-
+    
     JSON Prefix Separator \(only if the option *Namespace Mapping* is selected\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the JSON prefix separator to be used to separate the JSON prefix from the local part. The value used must not be used in the JSON prefix or local name.
 
     The following characters are allowed: colon\(:\), comma\(,\), dot\(.\), pipe\(|\), semicolon\(;\), and space.
@@ -139,14 +137,14 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     <table>
     <tr>
     <td valign="top">
-
+    
     All
 
 
     
     </td>
     <td valign="top">
-
+    
     All elements are presented as JSON arrays.
 
 
@@ -155,14 +153,14 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     </tr>
     <tr>
     <td valign="top">
-
+    
     Specific Ones
 
 
     
     </td>
     <td valign="top">
-
+    
     Only the specified elements will be represented as JSON arrays, the others as JSON objects.
 
     > ### Note:  

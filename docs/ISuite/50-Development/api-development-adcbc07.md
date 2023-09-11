@@ -2,9 +2,9 @@
 
 # API Development
 
- SAP Integration Suite provides **one experience** for managing and monitoring all APIs across various data platforms and is enriched with real-time analytics.
+SAP Integration Suite provides **one experience** for managing and monitoring all APIs across various data platforms and is enriched with real-time analytics.
 
- SAP Integration Suite enables consumers to access relevant data directly in a secure manner. Selective data can be exposed while reducing the risk of security breaches. App devlopers access APIs created using SAP Integration Suite rather than app consuming services directly. SAP Integration Suite maps a publicly available HTTP endpoint to backend services and handles the security and authorizations required to protect, analyze, and monitor your services.
+SAP Integration Suite enables consumers to access relevant data directly in a secure manner. Selective data can be exposed while reducing the risk of security breaches. App devlopers access APIs created using SAP Integration Suite rather than app consuming services directly. SAP Integration Suite maps a publicly available HTTP endpoint to backend services and handles the security and authorizations required to protect, analyze, and monitor your services.
 
 The following table lists the tasks that an Application Developer, Application Consumer and an API Administrator can perform:
 

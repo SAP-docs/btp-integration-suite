@@ -6,7 +6,7 @@ In this use case, the load balancer server certificate has to be renewed. In the
 
 The following figure illustrates the communication path that is relevant for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_HTTPS_Certificate_Inbound_HCI_Load_Balancer_19732a4.png) 
+![](images/SAP_HCI_Security_Renewal_-_HTTPS_Certificate_Inbound_HCI_Load_Balancer_19732a4.png)
 
 > ### Note:  
 

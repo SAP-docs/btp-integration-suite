@@ -90,25 +90,5 @@ See: [Quality of Service Exactly Once](quality-of-service-exactly-once-f96cf27.m
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-In Order \(IO\) \(including Exactly Once In Order \(EOIO\)\)
-
-
-
-</td>
-<td valign="top">
-
-The order of message delivery is kept.
-
-There's the variant *Exactly Once In Order \(EOIO\)* that implements all features given by quality of service EO in addition to a guaranteed order of message delivery.
-
-See: [Quality of Service In Order](quality-of-service-in-order-b91a840.md)
-
-
-
-</td>
-</tr>
 </table>
 

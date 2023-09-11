@@ -12,7 +12,7 @@ The renewal process depends on whether the sender system \(that sends the reques
 
 The following figure illustrates the communication path for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_WS_Security_Inbound_Response_Sign_2e4cd81.png) 
+![](images/SAP_HCI_Security_Renewal_-_WS_Security_Inbound_Response_Sign_2e4cd81.png)
 
 
 

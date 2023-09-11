@@ -49,14 +49,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Name for the credentials. This name is also called as "alias" when using in an adapter.
 
 
@@ -65,18 +65,18 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Grant Type
 
 
     
     </td>
     <td valign="top">
-
+    
     The relevant type of grant for authorizing the client to interact with the server. By default, the value is *Client Credentials* which you can't change.
 
     > ### Note:  
-    > Read the [blog](https://blogs.sap.com/2018/07/30/sap-cloud-platform-integration-principal-propagation-with-successfactors-odata-v2/), to design and deploy an integration flow that talks to SuccessFactors OData V2 endpoint with OAuth2 authentication.
+    > Read [SAP Cloud Integration – Principal Propagation with SuccessFactors OData V2](https://blogs.sap.com/2018/07/30/sap-cloud-platform-integration-principal-propagation-with-successfactors-odata-v2/), to design and deploy an integration flow that talks to SuccessFactors OData V2 endpoint with OAuth2 authentication.
 
 
     
@@ -84,14 +84,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Description
 
 
     
     </td>
     <td valign="top">
-
+    
     Description for the credentials.
 
 
@@ -100,14 +100,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Token Service URL
 
 
     
     </td>
     <td valign="top">
-
+    
     URL of the OAuth2 authorization server that issues the access token.
 
 
@@ -116,14 +116,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Client ID
 
 
     
     </td>
     <td valign="top">
-
+    
     ID of the client that you're connecting to.
 
 
@@ -132,14 +132,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Client Secret
 
 
     
     </td>
     <td valign="top">
-
+    
     Secret key of the client that you're connecting to.
 
     OAuth2 uses a multiple step authentication pattern: Client credentials \(*Client ID* and *Client Secret*, as specified in the artifact\) are used by the client application to initially request an access token. The access token is then used to authorize the client \(for as long as the token is valid\) to access the server’s resources \(for example, the resources that are used in the associated integration flow\). In many OAuth2 scenarios, the access token is issued \(or generated\) by an authorization server.
@@ -150,14 +150,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Client Authentication
 
 
     
     </td>
     <td valign="top">
-
+    
     Allows you to access an application using *Client ID* and *Client Secret*.
 
     By default the *Send as Body Parameter* is selected, this option sends the *Client ID* and *Client Secret* as a JSON content to the authentication server in the request body.
@@ -170,14 +170,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Scope
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide the OAuth2 scope information to be included in the request body.
 
 
@@ -186,14 +186,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Content Type
 
 
     
     </td>
     <td valign="top">
-
+    
     Request content type to indicate the media type.
 
 
@@ -202,14 +202,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Resource
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the identifier of the application or service that shares the same client secret. The identifier varies depending on the service that you want to connect with.
 
 
@@ -218,14 +218,14 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     <tr>
     <td valign="top">
-
+    
     Audience
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the identifier of the application or service that shares the same client secret. The identifier varies depending on the service that you want to connect with.
 
 

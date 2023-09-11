@@ -12,4 +12,6 @@ To apply this design guideline, consider the following guidelines:
 
 -   [Read Attachment Based on Filter Criteria](read-attachment-based-on-filter-criteria-f7f513f.md)
 
+-   [Read Multiple Attachments Based on Filter Criteria](read-multiple-attachments-based-on-filter-criteria-b9c2354.md)
+
 

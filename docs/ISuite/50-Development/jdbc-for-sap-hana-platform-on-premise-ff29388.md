@@ -82,7 +82,7 @@ JDBC URL Example
 </td>
 <td valign="top">
 
-`jdbc:sap://myhana:30013/?databaseName=myhanadb&encrypt=true&validateCertificate=true`
+`jdbc:sap://myhana:30013/?databaseName=myhanadb`
 
 
 
@@ -92,8 +92,11 @@ JDBC URL Example
 
 Before connecting to this database, you must add the Data Source. For more details, see [Managing JDBC Data Sources](managing-jdbc-data-sources-4c873fa.md).
 
+> ### Note:  
+> This documentation doesn’t provide further advice on how to configure the connected database system. Check out the corresponding documentation for more details.
+
 **Related Information**  
 
 
-[JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md "The JDBC (Java Database Connectivity) adapter enables you to connect Cloud Integration to cloud or on-premise databases.")
+[JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md "The JDBC (Java Database Connectivity) adapter enables you to connect SAP Integration Suite to cloud databases.")
 

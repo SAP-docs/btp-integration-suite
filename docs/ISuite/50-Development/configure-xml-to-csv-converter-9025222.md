@@ -55,14 +55,14 @@ You use this procedure to configure XML to CSV converter.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Path to Source Element in XSD
 
 
     
     </td>
     <td valign="top">
-
+    
     Path to the source element in the XSD file
 
 
@@ -71,14 +71,14 @@ You use this procedure to configure XML to CSV converter.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Field Separator in CSV
 
 
     
     </td>
     <td valign="top">
-
+    
     Select the character that you want to use as the field separator in CSV file from dropdown list
 
     > ### Tip:  
@@ -90,14 +90,14 @@ You use this procedure to configure XML to CSV converter.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Include Field Name as Headers
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this checkbox if you want to use the field names as the headers in CSV file
 
 
@@ -106,14 +106,14 @@ You use this procedure to configure XML to CSV converter.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Include Parent Element
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this checkbox if you want to include the parent element of the XML file in CSV file
 
 
@@ -122,14 +122,14 @@ You use this procedure to configure XML to CSV converter.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Include Attribute Values
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this checkbox if you want to include attribute values in the CSV file
 
 
@@ -141,6 +141,8 @@ You use this procedure to configure XML to CSV converter.
 4.  Save or deploy the configuration.
 
     > ### Note:  
+    > -   The converter doesn't support XML values with newline characters.
+    > 
     > -   The CSV format will contain the values in the same order of occurrence of header and row tags in the XML.
     > -   When optional fields exists in the XML, the ordering is maintained in the order when a tag is encountered.
     > -   If there are namespaces declared in the schema file, the same has to be declared at the integration flow level and the namespace prefixes can be used in the XPATH expression.

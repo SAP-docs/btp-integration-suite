@@ -12,7 +12,7 @@ The renewal process depends on whether the receiver system can decrypt XML Encry
 
 The following figure illustrates the communication path for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_WS_Security_Outbound_Request_Encrypt_bcaa4ac.png) 
+![](images/SAP_HCI_Security_Renewal_-_WS_Security_Outbound_Request_Encrypt_bcaa4ac.png)
 
 
 

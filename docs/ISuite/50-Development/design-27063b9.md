@@ -50,6 +50,8 @@ APIs
 
 [API Development](api-development-adcbc07.md)
 
+[Graph](https://help.sap.com/docs/graph)
+
 
 
 </td>
@@ -117,9 +119,9 @@ Custom Messages, MIGs, MAGs
 </td>
 <td valign="top">
 
--   [Library of Custom Type Systems](library-of-custom-type-systems-884bb25.md)
--    [Message Implementation Guidelines \(MIGs\)](message-implementation-guidelines-migs-f9f2bab.md)
--    [Mapping Guidelines \(MAGs\)](mapping-guidelines-mags-42124f4.md)
+-   [Custom Type Systems](custom-type-systems-884bb25.md)
+-   [Message Implementation Guidelines \(MIGs\)](message-implementation-guidelines-migs-f9f2bab.md)
+-   [Mapping Guidelines \(MAGs\)](mapping-guidelines-mags-42124f4.md)
 
 
 

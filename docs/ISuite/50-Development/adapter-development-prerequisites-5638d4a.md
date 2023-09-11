@@ -22,9 +22,9 @@ Following are the guidelines that you need to understand and follow while develo
     -   To access platform-specific features, you can use public APIs that are available with the Adapter Development Kit \(ADK\). Public APIs for the ADK are available in Cloud Integration tools page.
     -   The two maven coordinates available in the central maven for Public API consumption are:
 
-        ***com.sap.cloud.adk:generic.api***
+        `com.sap.cloud.adk:generic.api`
 
-        ***com.sap.cloud.adk:adapter.api***
+        `com.sap.cloud.adk:adapter.api`
 
         Refer the central maven repository to obtain the latest version number.
 

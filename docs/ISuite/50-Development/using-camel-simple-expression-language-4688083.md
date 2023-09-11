@@ -59,7 +59,7 @@ Define:
 </td>
 <td valign="top">
 
- [Define Content Modifier](define-content-modifier-8f04a70.md) 
+[Define Content Modifier](define-content-modifier-8f04a70.md) 
 
 
 
@@ -84,7 +84,7 @@ Define a variable.
 </td>
 <td valign="top">
 
- [Define Write Variables](define-write-variables-de04b75.md) 
+[Define Write Variables](define-write-variables-de04b75.md) 
 
 
 
@@ -109,7 +109,7 @@ Define a routing condition.
 </td>
 <td valign="top">
 
- [Define Router](define-router-d7fddbd.md) 
+[Define Router](define-router-d7fddbd.md) 
 
 
 
@@ -134,7 +134,7 @@ To see some examples, see [Examples](examples-eb2e601.md).
 </td>
 <td valign="top">
 
- [Define Filter](define-filter-733f8dc.md) 
+[Define Filter](define-filter-733f8dc.md) 
 
 
 
@@ -180,7 +180,7 @@ Example
 <tr>
 <td valign="top">
 
- `exchangeId` 
+`exchangeId` 
 
 
 
@@ -194,7 +194,7 @@ Exchange Id.
 </td>
 <td valign="top">
 
- `${exchangeId}` 
+`${exchangeId}` 
 
 
 
@@ -203,7 +203,7 @@ Exchange Id.
 <tr>
 <td valign="top">
 
- `id` 
+`id` 
 
 
 
@@ -217,7 +217,7 @@ Message Id
 </td>
 <td valign="top">
 
- `${id}` 
+`${id}` 
 
 
 
@@ -226,7 +226,7 @@ Message Id
 <tr>
 <td valign="top">
 
- `body` 
+`body` 
 
 
 
@@ -240,7 +240,7 @@ Incoming message body
 </td>
 <td valign="top">
 
- `${body}` 
+`${body}` 
 
 
 
@@ -249,7 +249,7 @@ Incoming message body
 <tr>
 <td valign="top">
 
- `in.body` 
+`in.body` 
 
 
 
@@ -274,7 +274,7 @@ This expression is deprecated from Apache Camel version 3.12.x.
 <tr>
 <td valign="top">
 
- `bodyAs(<class>` 
+`bodyAs(<class>` 
 
 
 
@@ -288,7 +288,7 @@ Message body converted to compatible class
 </td>
 <td valign="top">
 
- `${bodyAs(String)}` 
+`${bodyAs(String)}` 
 
 
 
@@ -297,7 +297,7 @@ Message body converted to compatible class
 <tr>
 <td valign="top">
 
- `mandatoryBodyAs(<class>)` 
+`mandatoryBodyAs(<class>)` 
 
 
 
@@ -311,7 +311,7 @@ Message body is Mandatory converted to compatible class
 </td>
 <td valign="top">
 
- `${mandatoryBodyAs(String)}` 
+`${mandatoryBodyAs(String)}` 
 
 
 
@@ -320,7 +320,7 @@ Message body is Mandatory converted to compatible class
 <tr>
 <td valign="top">
 
- `in.header.fo` 
+`in.header.fo` 
 
 
 
@@ -334,7 +334,7 @@ Refers to foo \(forward declaration\) in header
 </td>
 <td valign="top">
 
- `${in.header.mandatory.length}` 
+`${in.header.mandatory.length}` 
 
 
 
@@ -343,7 +343,7 @@ Refers to foo \(forward declaration\) in header
 <tr>
 <td valign="top">
 
- `in.header.foo.OGNL` 
+`in.header.foo.OGNL` 
 
 
 
@@ -357,7 +357,7 @@ Refers to foo \(forward declaration\) in header with OGNL \(Object-Graph Navigat
 </td>
 <td valign="top">
 
- `${in.header.fname.split(',')[0]}` 
+`${in.header.fname.split(',')[0]}` 
 
 
 
@@ -366,7 +366,7 @@ Refers to foo \(forward declaration\) in header with OGNL \(Object-Graph Navigat
 <tr>
 <td valign="top">
 
- `headerAs(<key>,<class>` 
+`headerAs(<key>,<class>` 
 
 
 
@@ -380,7 +380,7 @@ Refers to header with name `<key>` converted to compatible class
 </td>
 <td valign="top">
 
- `${headerAs(name, String)}` 
+`${headerAs(name, String)}` 
 
 
 
@@ -389,7 +389,7 @@ Refers to header with name `<key>` converted to compatible class
 <tr>
 <td valign="top">
 
- `property.foo` 
+`property.foo` 
 
 
 
@@ -403,7 +403,7 @@ Refers to foo \(forward declaration\) in exchange property
 </td>
 <td valign="top">
 
- `${property.token.length}` 
+`${property.token.length}` 
 
 
 
@@ -412,7 +412,7 @@ Refers to foo \(forward declaration\) in exchange property
 <tr>
 <td valign="top">
 
- `property.foo.OGNL` 
+`property.foo.OGNL` 
 
 
 
@@ -426,7 +426,7 @@ Refers to foo \(forward declaration\) in exchange property with OGNL \(Object-Gr
 </td>
 <td valign="top">
 
- `${property.token.split(',')[0]}` 
+`${property.token.split(',')[0]}` 
 
 
 
@@ -435,7 +435,7 @@ Refers to foo \(forward declaration\) in exchange property with OGNL \(Object-Gr
 <tr>
 <td valign="top">
 
- `sys.foo` 
+`sys.foo` 
 
 
 
@@ -449,7 +449,7 @@ Refers to foo \(forward declaration\) in system \(runtime container\)
 </td>
 <td valign="top">
 
- `${sys.file.separator}` 
+`${sys.file.separator}` 
 
 
 
@@ -458,7 +458,7 @@ Refers to foo \(forward declaration\) in system \(runtime container\)
 <tr>
 <td valign="top">
 
- `sysenv.foo` 
+`sysenv.foo` 
 
 
 
@@ -472,7 +472,7 @@ Refers to foo \(forward declaration\) in system enviroment
 </td>
 <td valign="top">
 
- `${sysenv.property1}` 
+`${sysenv.property1}` 
 
 
 
@@ -481,7 +481,7 @@ Refers to foo \(forward declaration\) in system enviroment
 <tr>
 <td valign="top">
 
- `date:<command>:<pattern>` 
+`date:<command>:<pattern>` 
 
 
 
@@ -499,7 +499,7 @@ Creates date specified in command and uses `SimpleDateFormat` notation
 
 Othe rexample: To write the current timestamp into a message header, define a header with the following value \(and *Type* set to *Expression*\):
 
-***$\{date:now:yyyy-MM-dd HH:mm:ss\}***
+`${date:now:yyyy-MM-dd HH:mm:ss}`
 
 
 
@@ -508,7 +508,7 @@ Othe rexample: To write the current timestamp into a message header, define a he
 <tr>
 <td valign="top">
 
- `date-with-timezone:<command>:<timezone>:<pattern>` 
+`date-with-timezone:<command>:<timezone>:<pattern>` 
 
 
 
@@ -522,7 +522,7 @@ Same as `date`, but with timezone
 </td>
 <td valign="top">
 
- `Expires at ${date-with-timezone:now+2h30m:IST:yyyy-MM-dd'T'HH:mm:ss.SSSZ}` 
+`Expires at ${date-with-timezone:now+2h30m:IST:yyyy-MM-dd'T'HH:mm:ss.SSSZ}` 
 
 
 

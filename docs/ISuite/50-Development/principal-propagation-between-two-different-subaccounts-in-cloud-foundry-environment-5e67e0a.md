@@ -146,14 +146,14 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </tr>
     <tr>
     <td valign="top">
-
+    
     `Name`
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose any name for your destination. You will use this name to request the destination from the Destination service.
 
 
@@ -162,15 +162,15 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </tr>
     <tr>
     <td valign="top">
-
+    
     `Type`
 
 
     
     </td>
     <td valign="top">
-
-    ***HTTP***
+    
+    `HTTP`
 
 
     
@@ -178,14 +178,14 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </tr>
     <tr>
     <td valign="top">
-
+    
     `URL`
 
 
     
     </td>
     <td valign="top">
-
+    
     The URL of application 2, identifying the resource you want to consume.
 
 
@@ -194,15 +194,15 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </tr>
     <tr>
     <td valign="top">
-
+    
     `Proxy Type`
 
 
     
     </td>
     <td valign="top">
-
-    ***Internet***
+    
+    `Internet`
 
 
     
@@ -210,15 +210,15 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </tr>
     <tr>
     <td valign="top">
-
+    
     `Authentication`
 
 
     
     </td>
     <td valign="top">
-
-    ***OAuth2SAMLBearerAssertion***
+    
+    `OAuth2SAMLBearerAssertion`
 
 
     
@@ -226,15 +226,15 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </tr>
     <tr>
     <td valign="top">
-
+    
     `Audience`
 
 
     
     </td>
     <td valign="top">
-
-    ***entityId***
+    
+    `entityId`
 
 
     
@@ -242,14 +242,14 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </tr>
     <tr>
     <td valign="top">
-
+    
     `Client Key`
 
 
     
     </td>
     <td valign="top">
-
+    
     The *clientid* of the XSUAA instance in subaccount 2. Can be acquired via a binding or service key.
 
 
@@ -258,14 +258,14 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </tr>
     <tr>
     <td valign="top">
-
+    
     `Token Service URL`
 
 
     
     </td>
     <td valign="top">
-
+    
     The URL of the XSUAA instance in subaccount 2. Can be acquired from <token\>.
 
 
@@ -274,15 +274,15 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </tr>
     <tr>
     <td valign="top">
-
+    
     `Token Service URL Type`
 
 
     
     </td>
     <td valign="top">
-
-    ***Dedicated***
+    
+    `Dedicated`
 
 
     
@@ -290,14 +290,14 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </tr>
     <tr>
     <td valign="top">
-
+    
     `Token Service User`
 
 
     
     </td>
     <td valign="top">
-
+    
     The *clientid* of the XSUAA instance in subaccount 2. Can be acquired via a binding or service key.
 
 
@@ -306,14 +306,14 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </tr>
     <tr>
     <td valign="top">
-
+    
     `Token Service Password`
 
 
     
     </td>
     <td valign="top">
-
+    
     The *clientsecret* of the XSUAA instance in subaccount 2. Can be acquired via a binding or service key.
 
 
@@ -344,15 +344,15 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </tr>
     <tr>
     <td valign="top">
-
+    
     `nameIdFormat` 
 
 
     
     </td>
     <td valign="top">
-
-    ***urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress***
+    
+    `urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress`
 
 
     
@@ -360,15 +360,15 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </tr>
     <tr>
     <td valign="top">
-
+    
     `authnContextClassRef`
 
 
     
     </td>
     <td valign="top">
-
-    ***urn:oasis:names:tc:SAML:2.0:ac:classes:PreviousSession***
+    
+    `urn:oasis:names:tc:SAML:2.0:ac:classes:PreviousSession`
 
 
     

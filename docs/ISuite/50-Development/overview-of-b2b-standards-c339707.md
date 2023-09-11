@@ -10,6 +10,8 @@ Get to know the list of available B2B standards, the supported message types and
 
 ## ASC X12
 
+ASC X12 \(also known as ANSI ASC X12\) is an Electronic Data Interchange \(EDI\) standard and the message types are created and maintained by the Accredited Standards Committee \(ASC\) X12.
+
 **Versions List \(36\)**
 
 
@@ -7882,7 +7884,7 @@ Last Version \(if discontinued\)
 
 ## UN/EDIFACT
 
- SAP Integration Suite supports the libraries for syntax version 3\(S3\) and all versions starting from 92.1 are available under this syntax version only.
+SAP Integration Suite supports the libraries for syntax version 3\(S3\) and all versions starting from 92.1 are available under this syntax version only.
 
 **Versions List \(60\)**
 
@@ -13338,6 +13340,8 @@ The Odette delivery contains 26 different message types. For most of the message
 
 ## cXML
 
+cXML is a streamlined protocol intended for consistent communication of business documents between procurement applications, e-commerce hubs and suppliers.
+
 **Versions List \(17\)**
 
 
@@ -15165,6 +15169,8 @@ UpdateMigratedSupplierRequest
 <a name="loioc339707982d141efa7c7849d033ca70d__section_mwg_lmh_gtb"/>
 
 ## EANCOM
+
+GS1 EANCOM® is a GS1 subset of the UN/EDIFACT standard \(United Nations Electronic Data Interchange for Administration, Commerce and Transport\).It contains the message elements required by business applications especially for domains supported by the GS1 organizations such as retail, consumer products, transport and logistics.
 
 **Versions List \(10\)**
 
@@ -20651,7 +20657,7 @@ EAN002
 </td>
 <td valign="top">
 
-1997 S3 Edition 1999
+ 
 
 
 
@@ -21783,18 +21789,1833 @@ For example, above table shows that ORDERS EAN008 can be implemented by either E
 
 
 
-<a name="loioc339707982d141efa7c7849d033ca70d__section_r4j_vbq_25b"/>
+<a name="loioc339707982d141efa7c7849d033ca70d__section_hk1_vcp_swb"/>
 
-## Other Available B2B Standards
+## Automotive EDIFACT
 
-The other available B2B standards are
 
--   Automotive EDIFACT
-    -   JAIF EDIFACT
 
-    -   VDA EDIFACT
-    -   ODETTE EDIFACT
+### JAIF EDIFACT
 
+JAIF EDIFACT is a subset of the UN/EDIFACT standard from the JAIF organization \(Joint Automotive Initiative Forum\) and is used in the global automotive industry.
+
+**Versions List \(7\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Version
+
+
+
+</th>
+<th valign="top">
+
+Based on Edifact Version
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+D.03A S3
+
+
+
+</td>
+<td valign="top">
+
+D.03A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.04A S3
+
+
+
+</td>
+<td valign="top">
+
+D.04A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.04B S3
+
+
+
+</td>
+<td valign="top">
+
+D.04B S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.07A S3
+
+
+
+</td>
+<td valign="top">
+
+D.07A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.09B S3
+
+
+
+</td>
+<td valign="top">
+
+D.09B S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.13A S3
+
+
+
+</td>
+<td valign="top">
+
+D.13A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.16A S3
+
+
+
+</td>
+<td valign="top">
+
+D.16A S3
+
+
+
+</td>
+</tr>
+</table>
+
+*Message Types*
+
+The JAIF EDIFACT Message Standard contains the same list of Messages Types as defined by the underlying UN/EDIFACT version. In difference to EANCOM, the JAIF organization did not explicitly distinguish between UN/EDIFACT messages they use and don’t use.
+
+To look up the available Message Types for a specific version, you can directly look it up in the according section for UN/EDIFACT.
+
+*Codelists*
+
+Codelists for this Automotive EDIFACT subset were not defined within the Message Standard. Instead you will find 5 separate Automotive Codelist standards which contain all the required codelists from these organizations.
+
+Reason for providing these codelists as separate libraries was to allow the mixed usage of them and the benefit of separating the lifecycle \(versioning\) of message standard and codelists.
+
+*Message Guidelines*
+
+JAIF EDIFACT \(like many other UN/EDIFACT subsets\) distinguishes between two types of libraries:
+
+• Message Standards: The library of Messages, Segments, Data Elements and Codelists which are required for the subset.
+
+• Message Guidelines: Specific Guidelines for countries and business processes which are defined in the context of the JAIF EDIFACT subset.
+
+The application currently provides the JAIF EDIFACT Message Standard upon which you can build your own Message Implementation Guidelines \(MIGs\).
+
+
+
+### VDA EDIFACT
+
+VDA EDIFACT is a subset of the UN/EDIFACT standard from the VDA organization \(Verband der Automobilindustrie Germany\) and is used in the German automotive industry.
+
+**Versions List \(13\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Version
+
+
+
+</th>
+<th valign="top">
+
+Based on Edifact Versio
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+D.96A S3
+
+
+
+</td>
+<td valign="top">
+
+D.96A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.97B S3
+
+
+
+</td>
+<td valign="top">
+
+D.97B S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.03A S3
+
+
+
+</td>
+<td valign="top">
+
+D.03A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.04A S3
+
+
+
+</td>
+<td valign="top">
+
+D.04A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.05B S3
+
+
+
+</td>
+<td valign="top">
+
+D.05B S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.06A S3
+
+
+
+</td>
+<td valign="top">
+
+D.06A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.07A S3
+
+
+
+</td>
+<td valign="top">
+
+D.07A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.08A S3
+
+
+
+</td>
+<td valign="top">
+
+D.08A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.13A S3
+
+
+
+</td>
+<td valign="top">
+
+D.13A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.14B S3
+
+
+
+</td>
+<td valign="top">
+
+D.14B S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.16A S3
+
+
+
+</td>
+<td valign="top">
+
+D.14B S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.18A S3
+
+
+
+</td>
+<td valign="top">
+
+D.18A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.20B S3
+
+
+
+</td>
+<td valign="top">
+
+D.20B S3
+
+
+
+</td>
+</tr>
+</table>
+
+*Message Types*
+
+The VDA EDIFACT Message Standard contains the same list of Messages Types as defined by the underlying UN/EDIFACT version. In difference to EANCOM, the VDA organization did not explicitly distinguish between UN/EDIFACT messages they use and don’t use.
+
+To look up the available Message Types for a specific version, you can directly look it up in the according section for UN/EDIFACT.
+
+*Codelists*
+
+Codelists for this Automotive EDIFACT subset were not defined within the Message Standard. Instead you will find 5 separate Automotive Codelist standards which contain all the required codelists from these organizations.
+
+Reason for providing these codelists as separate libraries was to allow the mixed usage of them \(such as to using an ODETTE Codelist in a VDA Guideline\) and the benefit of separating the lifecycle \(versioning\) of message standard and codelists.
+
+*Message Guidelines*
+
+VDA EDIFACT \(like many other UN/EDIFACT subsets\) distinguishes between two types of libraries:
+
+• Message Standards: The library of Messages, Segments, Data Elements and Codelists which are required for the subset.
+
+• Message Guidelines: Specific Guidelines for countries and business processes which are defined in the context of the VDA EDIFACT subset.
+
+The application currently provides the VDA EDIFACT Message Standard upon which you can build your own Message Implementation Guidelines \(MIGs\).
+
+
+
+### ODETTE EDIFACT
+
+Odette EDIFACT is a subset of the UN/EDIFACT standard from the Odette organization and is used in the European automotive industry.
+
+**Versions List \(7\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Version
+
+
+
+</th>
+<th valign="top">
+
+Based on Edifact Version
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+D.96A
+
+
+
+</td>
+<td valign="top">
+
+D.96A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.98B
+
+
+
+</td>
+<td valign="top">
+
+D.98B S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.03A
+
+
+
+</td>
+<td valign="top">
+
+D.03A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.05B
+
+
+
+</td>
+<td valign="top">
+
+D.05B S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.07A
+
+
+
+</td>
+<td valign="top">
+
+D.07A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.16A
+
+
+
+</td>
+<td valign="top">
+
+D.16A S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+D.18B
+
+
+
+</td>
+<td valign="top">
+
+D.18B S3
+
+
+
+</td>
+</tr>
+</table>
+
+*Message Types*
+
+The ODETTE EDIFACT Message Standard contains the same list of Messages Types as defined by the underlying UN/EDIFACT version. In difference to EANCOM, the Odette organization did not explicitly distinguish between UN/EDIFACT messages they use and don’t use.
+
+To look up the available Message Types for a specific version, you can directly look it up in the according section for UN/EDIFACT.
+
+*Codelists*
+
+Codelists for this Automotive EDIFACT subset were not defined within the Message Standard. Instead you will find 5 separate Automotive Codelist standards which contain all the required codelists from these organizations.
+
+Reason for providing these codelists as separate libraries was to allow the mixed usage of them \(such as to using an ODETTE Codelist in a VDA Guideline\) and the benefit of separating the lifecycle \(versioning\) of message standard and codelists.
+
+*Message Guidelines*
+
+ODETTE EDIFACT \(like many other UN/EDIFACT subsets\) distinguishes between two types of libraries:
+
+• Message Standards: The library of Messages, Segments, Data Elements and Codelists which are required for the subset.
+
+• Message Guidelines: Specific Guidelines for countries and business processes which are defined in the context of the ODETTE EDIFACT subset.
+
+The application currently provides the ODETTE EDIFACT Message Standard upon which you can build your own Message Implementation Guidelines \(MIGs\).
+
+
+
+<a name="loioc339707982d141efa7c7849d033ca70d__section_qnl_p2j_2xb"/>
+
+## GS1 XML
+
+GS1 uses XML to create a set of standard messages for the GS1 EDI \(Electronic Data Interchange\). GS1 XML messages can be exchanged using any technical solution or internet transport protocol.
+
+**Versions \(7\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Version
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3.1
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3.2
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3.3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3.4
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3.4.1
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3.5.1
+
+
+
+</td>
+</tr>
+</table>
+
+**Message Types \(49\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Message Type
+
+
+
+</th>
+<th valign="top">
+
+Available from Version
+
+
+
+</th>
+<th valign="top">
+
+Last Version \(if discontinued\)
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+advancedRemittanceNotificationMessage - Advanced Remittance Notification Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+applicationReceiptAcknowledgementMessage - Application Receipt Acknowledgement Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+artworkContentMessage - Artwork Content Message
+
+
+
+</td>
+<td valign="top">
+
+3.1
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+artworkContentResponseMessage - Artwork Content Response Message
+
+
+
+</td>
+<td valign="top">
+
+3.1
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+buyerReconciliationOfRequestForPaymentMessage - Buyer Reconciliation Of Request For Payment Message
+
+
+
+</td>
+<td valign="top">
+
+3.1
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+cashCountNotificationMessage - Cash Count Notification Message
+
+
+
+</td>
+<td valign="top">
+
+3.4
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+cashCountReportMessage - Cash Count Report Message
+
+
+
+</td>
+<td valign="top">
+
+3.4
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+cashCountStatisticReportMessage - Cash Count Statistic Report Message
+
+
+
+</td>
+<td valign="top">
+
+3.4
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+cashPackagingReportMessage - Cash Packaging Report Message
+
+
+
+</td>
+<td valign="top">
+
+3.4
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+claimsNotificationMessage - Claims Notification Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+configureToOrderMessage - Configure To Order Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+consumptionReportMessage - Consumption Report Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+debitCreditAdviceMessage - Debit Credit Advice Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+despatchAdviceMessage - Despatch Advice Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+goodsRequirementsMessage - Goods Requirements Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+goodsRequirementsResponseMessage - Goods Requirements Response Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+inventoryReportMessage - Inventory Report Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+invoiceMessage - Invoice Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+itemDataNotificationMessage - Item Data Notification Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+logisticsInventoryReportMessage - Logistics Inventory Report Message
+
+
+
+</td>
+<td valign="top">
+
+3.1
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+logisticsInventoryReportRequestMessage - Logistics Inventory Report Request Message
+
+
+
+</td>
+<td valign="top">
+
+3.1
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+orderMessage - Order Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+orderResponseMessage - Order Response Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+performanceMeasurementMessage - Performance Measurement Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+productRecallCloseoutNotificationMessage - Product Recall Closeout Notification Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+productRecallNotificationMessage - Product Recall Notification Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+productRemovalConfirmationMessage - Product Removal Confirmation Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+purchaseConditionsMessage - Purchase Conditions Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+receivingAdviceMessage - Receiving Advice Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+replenishmentProposalMessage - Replenishment Proposal Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+replenishmentRequestMessage - Replenishment Request Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+requestForPaymentMessage - Request For Payment Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+settlementMessage - Settlement Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+transportCapacityBookingMessage - Transport Capacity Booking Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+transportCapacityBookingResponseMessage - Transport Capacity Booking Response Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+transportCapacityPlanMessage - Transport Capacity Plan Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+transportCapacityRequirementsMessage - Transport Capacity Requirements Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+transportInstructionMessage - Transport Instruction Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+transportInstructionResponseMessage - Transport Instruction Response Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+transportPickUpDropOffConfirmationMessage - Transport Pick Up Drop Off Confirmation Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+transportPickUpDropOffRequestMessage - Transport Pick Up Drop Off Request Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+transportStatusNotificationMessage - Transport Status Notification Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+transportStatusRequestMessage - Transport Status Request Message
+
+
+
+</td>
+<td valign="top">
+
+3.0
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+warehousingInboundInstructionMessage - Warehousing Inbound Instruction Message
+
+
+
+</td>
+<td valign="top">
+
+3.1
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+warehousingInboundNotificationMessage - Warehousing Inbound Notification Message
+
+
+
+</td>
+<td valign="top">
+
+3.1
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+warehousingOperationsInstructionMessage - Warehousing Operations Instruction Message
+
+
+
+</td>
+<td valign="top">
+
+3.1
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+warehousingOperationsNotificationMessage - Warehousing Operations Notification Message
+
+
+
+</td>
+<td valign="top">
+
+3.1
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+warehousingOutboundInstructionMessage - Warehousing Outbound Instruction Message
+
+
+
+</td>
+<td valign="top">
+
+3.1
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+warehousingOutboundNotificationMessage - Warehousing Outbound Notification Message
+
+
+
+</td>
+<td valign="top">
+
+3.1
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+</table>
 
 
 
@@ -22191,12 +24012,4015 @@ Rec 5 - Abbreviations of Incoterms
 
 
 
+<a name="loioc339707982d141efa7c7849d033ca70d__section_rdt_hpk_4wb"/>
+
+## GS1 Codelists
+
+The GS1 Codelists has only one version which is *2021-05* and consists of 211 codelists all pertaining to the same version. This is the collection of all code lists defined and maintained by GS1.
+
+**Codelists \(211\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Codelist
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+AdditionalConsignmentIdentificationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AdditionalIndividualAssetIdentificationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AdditionalLogisticUnitIdentificationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AdditionalPartyIdentificationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AdditionalReturnableAssetIdentificationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AdditionalServiceRelationIdentificationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AdditionalShipmentIdentificationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AdditionalTradeItemClassificationCodeListCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AdditionalTradeItemIdentificationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AdministrativeUnitTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AllowanceChargeTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AllowanceOrChargeEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AnimalIdentificationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ApplicationResponseStatusEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AppointmentTimeMeasurementBasisTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+BarCodeTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+BusinessDocumentProcessingTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CapacityPlanStatusEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CargoTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CashCountStatisticsTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CashCountTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CashProcessingFlagCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ClaimsNotificationTypeEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ColourCodeListCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ColourTintCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CommunicationChannelCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ContactTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CopyElementTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CountryCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CreditReasonCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CustomsWarehouseStatusCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DangerousGoodsAttributeTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DangerousGoodsRegulationCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DataCarrierTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DateFormatCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DayOfTheWeekEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DebitCreditEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DeliverDateTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DeliveryMethodCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DeliveryTimeMeasurementBasisTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DeliveryTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DemandEstimationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DespatchAdviceTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DiscountAgreementCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DMEOrderPriorityCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DockTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DocumentActionEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DocumentStatusEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DutyFeeTaxExemptionReasonCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DutyFeeTaxLiabilityCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DutyFeeTaxRegistrationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DutyFeeTaxTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EffectiveDateTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EntityTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EquipmentTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ErrorOrWarningCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EuUniqueIDTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FinancialAccountNumberTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FinancialAdjustmentReasonCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FinancialRoutingNumberTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ForecastPurposeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ForecastTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GenderEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GoodsReceiptReportingCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GoodsRequirementsTypeEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GraphicElementTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GS1TradeItemIdentificationKeyCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+HandlingInstructionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IdentityDocumentTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IncidentTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InstructionOrResponseEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InventoryActivityTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InventoryBusinessStepCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InventoryDispositionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InventoryEventReasonCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InventoryMeasurementBasisTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InventoryMovementTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InventoryReportTypeEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InventoryStatusCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InventorySubLocationFunctionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InventorySubLocationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InvoiceTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ItemScopeTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ItemSourceCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ItemTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LegalRegistrationCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LineItemActionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LocationScopeParameterTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LocationScopeTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LogisticEventTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LogisticServiceReferenceTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LogisticServiceRequirementCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LogisticsInventoryReportTypeEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MarginSchemeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MaterialTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MeasurementTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MeatProcessingActivityTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MeatProcessingPartyIdentificationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MeatProcessingPartyTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MeatWorkItemTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+NonBinaryLogicEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+NutrientTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ObservationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderEntryTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderInstructionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderRelationshipTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OutOfStockMeasurementTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OwnershipTransferConditionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PackageLevelCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PackageTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PackagingConditionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PackagingMarkingTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PackagingTermsAndConditionsCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PartyRoleCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PassengerCategoryCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PatternCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentFormatCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentMethodCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentTermsEventCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentTermsTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PerformanceMeasureTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PeriodicityTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PhysicalOrLogicalStateDescriptionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PlanBucketSizeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PlanCommitmentLevelCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PrecautionQualifierCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PrintingInstructionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ProductionMethodForFishAndSeafoodCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ProductRecallIncidentRiskLevelCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ProductRecallNotificationStatusEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ProductRecallNotificationVersionStatusEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ProductRecallReasonCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ProductRecallReimbursementReasonCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ProductRecallTrackingTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PurchaseConditionsCommitmentTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+QualityControlCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+QuantitySpecificationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ReadingMethodCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ReceivingConditionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ReconciliationStatusEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RemainingQuantityStatusCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ReplenishmentProposalTypeEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ReplenishmentRequestStatusEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ReplenishmentRequestTypeEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ResponseStatusCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ResponseStatusEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ResponsibleAgencyCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RevisionStatusCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SalesMeasurementTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SealConditionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SealTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ServiceLevelBasisTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ServiceLevelMeasurementBasisTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SettlementAdjustmentReferenceTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SettlementHandlingTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SettlementTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ShipmentRequestTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ShipmentSplitMethodCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SizeCodeListCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SizeTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SpecialServiceTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+StatusCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+StockRequirementTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+StorageStateCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+StructuredCopyElementTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+StructureTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SymbolComponentCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SynchronisationCalculationTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TaxCategoryCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TemperatureMeasurementUnitCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TemperatureQualifierCode\_EDI
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TimeMeasurementUnitCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TimePeriodScopeTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TradeItemDataOwnerCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TradeItemUnitDescriptorCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransactionalReferenceTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportAppointmentStatusEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportAppointmentTypeEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportCapacityBookingStatusEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportChargesPaymentMethodCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportInstructionFunctionEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportInstructionResponseTypeEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportInstructionStatusEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportMeansTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportModeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportPartyRoleCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportPaymentMethodCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportPlanningDateTypeEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportReferenceTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportServiceCategoryCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportServiceConditionTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportServiceLevelCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportStatusConditionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportStatusInformationEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportStatusObjectEnumeration
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TransportStatusReasonCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TypeOfServiceTransactionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+VarianceReasonCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+WarehouseABCClassificationCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+WarehousingDeliveryInstructionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+WarehousingDespatchTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+WarehousingInboundExceptionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+WarehousingInboundStatusCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+WarehousingOutboundExceptionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+WarehousingOutboundStatusCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+WarehousingQuantityVarianceCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+WarehousingReceiptTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+WarehousingServiceAttributeTypeCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+WarehousingServiceConditionCode
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+WeekendDayEnumeration
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loioc339707982d141efa7c7849d033ca70d__section_an4_kk5_wwb"/>
+
+## Automotive Codelists
+
+
+
+### JAIF Codelists
+
+The JAIF Codelists has only one version which is *2020-12* and consists of codelists all pertaining to the same version. These codelists are to be used in Message Guidelines based on JAIF EDIFACT, ODETTE EDIFACT and VDA EDIFACT.
+
+**Codelists \(47\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Codelist
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+JAI001 - Document Type
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI002 - Mode of Transport
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI003 - Tax Exemption Reason Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI004 - Article Status Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI005 - Delivery Instruction Reason Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI006 - Payment Means \(Instrument of Payment\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI007 - Payment conditions \(Payment Method\) Odette
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI008 - Reason for Adjustment
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI009 - Transaction Status Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI010 - Customs Preference Origin Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI011 - Quality Control Status Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI012 - Reply Status Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI013 - Material Category Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI014 - Invoice Correction Action Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI015 - Terms of Transport \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI016 - JAI Subset Identification
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI017 - Minority Owned Business Identification Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI018 - Party ID Type Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI019 - Label Type Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI020 - Price Specification Code \(STAR\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI021 - Order Status Code \(STAR\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI022 - Order Type Code \(STAR\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI023 - Order Line Status Code \(STAR\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI024 - Invoice corrective action code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI025 - Business legal structure type
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI026 - Type Of Label Marking
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI030 - Quantity qualifier
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI031 - Configuration level \(Despatched article\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI032 - Allowance Charge Type
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI033 - Delivery Instruction Type
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI034 - Quality Conformance \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI035 - Safety Regulations Indicator Code \(AIAG\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI036 - Booking key \(self billed invoice line item\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI037 - Transport service description code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI038 - Package ownership
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI039 - JIS Information Status code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI040 - Vehicle reference data \(JIS Process\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI041 - Supplier organises customs clearance indicator
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI042 - Properties of steel
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI043 - Date qualifier code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI044 - Object identification qualifier code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI045 - Stock regime status code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI046 - Stock standard ID
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI047 - Date/Time Format Qualifier
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI048 - Dutiable goods indicator
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI049 - Agency responsible for a package type code list
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JAI050 - MAT label - package level code
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### ODETTE Codelists
+
+The ODETTE Codelists has only one version which is *2020-12* and consists of codelists all pertaining to the same version. These codelists are to be used in Message Guidelines based on JAIF EDIFACT, ODETTE EDIFACT and VDA EDIFACT.
+
+**Codelists \(179\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Codelist
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+3055 - Code list responsible agency code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC001\(1\) - Document Type based on EDIFACT 1001
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC001\(2\) - Document Type
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC001\(A\) - Document Type \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC001\(C\) - Document Type based on 1153 EDIFACT Internal
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC003\(1\) - Mode of Transport
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC004\(1\) - Incoterms
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC006\(1\) - COUNTRIES GEONOMENCLATURE
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC007\(1\) - Currencies
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC008\(1\) - Prepaid/Collect Indicator
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC009\(1\) - Charge Type \(based on EDIFACT 7161\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC009\(A\) - Allowance Charge Type
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC009\(B\) - Allowance Charge Type
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC010\(1\) - VAT Category
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC013\(1\) - Nature of Transaction based on EDIFACT 4183
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC014\(1\) - Transport Ownership based on EDIFACT 8281
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC015\(1\) - Article status
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC017\(1\) - Schedule Status Indicator \(based on EDIFACT 4017\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC018\(1\) - Delivery instruction reason based on EDIFACT 6063
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC018\(2\) - Delivery Instruction Reason \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC021\(1\) - Schedule Release Category based on EDIFACT 1229
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC021\(2\) - Schedule Release Category \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC022\(1\) - Type of Period based on EDIFACT 2379
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC022\(2\) - Type of Period \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC022\(B\) - Type of Period based On EDIFACT 2151
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC023\(1\) - Payment Means based on EDIFACT 4461
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC023\(2\) - Payment Means \(Instrument of Payment\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC024\(1\) - Terms Time Information based on EDIFACT 2009
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC025\(1\) - Unit of Measurement \(based on UN recommendation 20\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC026\(1\) - Payment Conditions based on EDIFACT 4277
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC026\(2\) - Payment conditions \(Payment Method\) Odette
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC027\(1\) - Reason for Adjustment based on 4465 EDIFACT
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC027\(2\) - Reason for Adjustment \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC031\(1\) - Message Status based on EDIFACT 1225
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC031\(2\) - Status based on EDIFACT 1225
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC031\(3\) - Status based on EDIFACT 1229
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC031\(4\) - Status based on EDIFACT 1245
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC031\(5\) - Status \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC032\(1\) - Message Indicator based on EDIFACT 1225
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC032\(2\) - Reply Indicator based on EDIFACT 1229
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC032\(3\) - Reply Indicator \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC033\(1\) - Release Type based on EDIFACT 2005
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC034\(1\) - Preference Origin based on EDIFACT 9213
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC034\(2\) - Preference Origin \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC037\(1\) - Quality Control \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC038\(1\) - Quantity Descriptor based on EDIFACT 6063
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC038\(2\) - Quantity Descriptor based on EDIFACT 6167
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC040\(2\) - Qualifier for Document Balance \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC041\(1\) - General Conditions \(based on EDIFACT 4279\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC041\(2\) - General Conditons \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC042\(1\) - Ownership/Durability \(based on EDIFACT 7073\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC042\(2\) - Ownership/Durability \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC043\(1\) - Product Usage Type \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC045\(1\) - Product/Service Type \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC046\(1\) - Packaging level \(based on EDIFACT 7075\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC047\(1\) - Material Category \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC048\(1\) - Price Type \(based on EDIFACT 5125\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC048\(2\) - Price Type \(based on EDIFACT 5387\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC048\(3\) - Price Type \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC050\(1\) - Packaging Charge \(based on EDIFACT 7073\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC050\(2\) - Packaging Charge \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC052\(1\) - Drawing Type \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC054\(1\) - Domestic/Export Indicator \(based on 7073 EDIFACT\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC055\(1\) - Industry Identification
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC056\(1\) - Reference Table Identification
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC057\(1\) - Product Specification \(based on 6313 EDIFACT\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC057\(2\) - Product Specification \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC058\(1\) - Action \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC059\(1\) - Information Requested \(based on EDIFACT 4511\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC059\(2\) - Information Requested \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC062\(1\) - Package Code Identifier \(based on 3055 EDIFACT\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC062\(2\) - Package Code Identifier \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC063\(1\) - Flow Dest. Indicator \(based on EDIFACT 4183\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC065\(1\) - Schedule Release Frequency \(EDIFACT 2013\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC065\(2\) - Schedule Release Frequency \(EDIFACT 2379\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC065\(3\) - Schedule Release Frequency \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC066\(1\) - Terms of Transport \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC067\(1\) - Supply Condition \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC068\(1\) - Supplier's Stock Turnover \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC069\(1\) - Tooling Type \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC070\(1\) - Tooling Specifier \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC071\(1\) - Reply Reason \(based on EDIFACT 4465\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC071\(2\) - Reply Reason \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC072\(1\) - Price List Type \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC075\(1\) - Anomalies \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC076\(1\) - Split Consignments \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC079\(1\) - File Status \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC080\(1\) - Link Purpose \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC081\(1\) - Quality Conformance \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC082\(1\) - Safety Regulation Specifier \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC083\(1\) - Stock Balance Details \(based on 4503 EDIFACT\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC083\(2\) - Stock Balance Details \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC084\(1\) - Stock Movement Details
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC084\(A\) - Nature of Stock \(based on EDIFACT 7491\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC084\(B\) - Stock Movement Direction \(EDIFACT 4501\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC085\(1\) - Issue Types \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC087\(1\) - Type of Means of Transport \(EDIFACT 8179\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC087\(2\) - Delivery Instruction Type
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC088\(1\) - Dangerous Goods Regulations \(EDIFACT 8273\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC090\(1\) - Type of Equipment \(based on EDIFACT 8053\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC091\(1\) - Equipment Size and Type \(based on 8155 EDIFACT\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC092\(1\) - Transport Priority \(based on 4219 EDIFACT\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC093\(1\) - Nature of Cargo \(based on EDIFACT 7085\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC093\(A\) - Nature of Cargo \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC094\(1\) - Government Agency \(based on EDIFACT 9415\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC095\(1\) - Government Involvement \(based on EDIFACT 9411\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC096\(1\) - Government Procedure \(based on EDIFACT 9353\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC097\(1\) - Identity Number \(based on EDIFACT 7405\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC098\(1\) - Transport Movement \(based on EDIFACT 8323\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC100\(1\) - Allowance/Charge Qualifier \(EDIFACT 5463\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC101\(1\) - Article number source \(based on EDIFACT 7143\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC102\(1\) - Currency Type \(based on EDIFACT 6343\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC103\(1\) - Recalculation \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC104\(1\) - Monetary Amount Type \(based on EDIFACT 5025\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC105\(1\) - Duty Tax Fee Type \(based on EDIFACT 5153\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC106\(1\) - Summary Total Type \(based on EDIFACT 6069\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC107\(1\) - Contract and Carriage Condition \(EDIFACT 4065\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC108\(1\) - Handling Unit category
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC109\(1\) - Free Text Qualifier \(based on EDIFACT 4451\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC110\(1\) - Opening/Closing Balance \(based on EDIFACT 6063\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC111\(1\) - Stock Movement Reason \(based on EDIFACT 4499\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC112\(1\) - Constants identifying volume measurement
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC113\(1\) - Constants identifying dimension
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC114\(1\) - Constants identifying weight
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC115\(1\) - Standard date format \(based on EDIFACT 2379\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC116\(1\) - Payment Time Reference \(based on EDIFACT 2475\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC117\(1\) - Configuration level \(material\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC117\(2\) - Configuration level \(Despatched article\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC118\(1\) - Payment Variation \(based on EDIFACT 5245\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC119\(1\) - Document Response Type \(EDIFACT 4343\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC121\(1\) - Document Function Coded \(Based on EDIFACT 1225\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC122\(1\) - Odette Subset Identification
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC123\(1\) - Product Group Type
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC124\(1\) - Delivery Instruction Type
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC126\(1\) - Reported Discrepancy
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC128\(1\) - Drawing Reference Qualifier based on EDIFACT 1153
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC128\(2\) - Status of Despatch Advice
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC129\(1\) - TYPE OF LABEL MARKING
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC130\(1\) - Type of Label Marking based on EDIFACT 4233
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC131\(1\) - PARTY TYPE \(BASED ON EDIFACT 3035\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC132\(1\) - ODDC132 NATURE OF PACKAGING SERVICES
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC133\(1\) - Nature of Packaging
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC134\(1\) - Message Function \(Based on EDIFACT 1225\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC135\(1\) - Additional Article Information
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC137\(1\) - Administration action code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC139\(1\) - Error code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC140\(1\) - Functional Entity Type
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC141\(1\) - Functional Reference Type
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC142\(1\) - Certificate name code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC143\(1\) - Package Management Action Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC144\(1\) - Transport Status Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC145\(1\) - Complaint reason code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC146\(1\) - Delivery status code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC147\(1\) - Package booking key
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC148\(1\) - Package Order Reason Code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC149\(1\) - Package marking type code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC150\(1\) - Exception reason code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC151\(1\) - Order Information Source Qualifier
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC152\(1\) - Article number source \(Odette\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC153\(1\) - Delivery priority code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC154\(1\) - Item characteristic code based on EDIFACT 7081
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC155\(1\) - RTI Quantities \(based on EDIFACT 6063\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC156\(1\) - Transport stage based on EDIFACT 8051
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC157\(1\) - Status category code based on EDIFACT 9015
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC158\(1\) - Handling instruction description code based on EDIFACT 4079
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC159\(1\) - Dutiable goods indicator
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC160\(1\) - Status attribute, coded
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC161\(1\) - Damage remark code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC162\(1\) - Transport mode information
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC163\(1\) - Reason for ETA change
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC164\(1\) - Vehicle request purpose
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC165\(1\) - Geofence zone level
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC166\(1\) - Movement type
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC167\(1\) - Power type code \(based on EDIFACT 7041\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC168\(1\) - Vehicle request confirmation code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC169\(1\) - Vehicle order type code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC170\(1\) - Vehicle service order code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC171\(1\) - Reason of vehicle service order rejection code
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODDC172\(1\) - Reason for estimated time of completion change code
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loioc339707982d141efa7c7849d033ca70d__section_gfn_b4s_rsb"/>
 
 ## Other B2B Codelist Standards
 
--   Automotive Codelists \(JAIF, ODETTE, VDA, UNC, Error\)
--   GS1 Codelists
+-   Automotive Codelists \(VDA, UNC, Error\)
 
 
 

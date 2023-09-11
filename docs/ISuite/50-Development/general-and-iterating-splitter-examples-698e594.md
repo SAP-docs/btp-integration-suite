@@ -97,7 +97,7 @@ Assume you expect an XML message and like to address elements with *Expression T
 
 To split this message, you need to define a namespace mapping \(of a prefix and a namespace\) for the integration flow \(under *Runtime Configuration*\), for example: `xmlns:n1=http://myCustomer.com`.
 
-When configuring the *General Splitter* and like to address the message element with an XPath expression, make sure that you refer to the namespace prefix.
+When configuring the *General Splitter* and wanting to address the message element with an XPath expression, make sure that you refer to the namespace prefix.
 
 Use the following XPath expression:
 
@@ -106,7 +106,7 @@ Use the following XPath expression:
 > ### Note:  
 > Namespaces are inherited from parent to child element. This is why you need to indicate the namespace explicitly in the XPath expression.
 
-Then the message is split with the *General Splitter* into the following two chunks:
+Then, the message is split with the *General Splitter* into the following two chunks:
 
 ```
 <customer xmlns="http://myCustomer.com">
@@ -164,7 +164,7 @@ Use the following XPath expression:
 
 `/n2:customerList/n2:customers`
 
-The *Iterating Splitter* splitts the message into the following two chunks:
+The *Iterating Splitter* splits the message into the following two chunks:
 
 ```
 <customers xmlns="http://myCustomer.com>
@@ -203,9 +203,9 @@ This is an example for an input message representing orders from different custo
 </customerList>
 ```
 
-In the Iterating Splitter as *Expression Type* select *Token* and in field *Token* enter ***customers***.
+In the Iterating Splitter, as *Expression Type* select *Token* and in field *Token* enter `customers`.
 
-The *Iterating Splitter* splitts the message into the following two chunks:
+The *Iterating Splitter* splits the message into the following two chunks:
 
 ```
 <customers xmlns="http://myCustomer.com>
@@ -222,9 +222,9 @@ The *Iterating Splitter* splitts the message into the following two chunks:
 </customers>
 ```
 
-In the Iterating Splitter as *Expression Type* select *Token* and in field *Token* enter ***customerName***.
+In the Iterating Splitter, as *Expression Type* select *Token* and in field *Token* enter `customerName`.
 
-The *Iterating Splitter* splitts the message into the following two chunks:
+The *Iterating Splitter* splits the message into the following two chunks:
 
 ```
 <customerName>Paul Smith</customerName>
@@ -238,5 +238,8 @@ The *Iterating Splitter* splitts the message into the following two chunks:
 
 For more examples, see the following SAP Community blog: [SAP Cloud Integration – Splitter](https://blogs.sap.com/2019/11/08/sap-cloud-platform-integration-splitter/).
 
-See also: [Using XPath Expressions in the Splitter Step](using-xpath-expressions-in-the-splitter-step-c6e63f1.md)
+**Related Information**  
+
+
+[Using XPath Expressions in the Splitter Step](using-xpath-expressions-in-the-splitter-step-c6e63f1.md "")
 

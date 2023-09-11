@@ -43,14 +43,14 @@ To set up a connection using basic authentication or username token authenticati
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     A name for the artifact
 
     The artifact name is used as an alias for the confidential data assigned by this parameter.
@@ -61,14 +61,14 @@ To set up a connection using basic authentication or username token authenticati
     </tr>
     <tr>
     <td valign="top">
-
+    
     Description
 
 
     
     </td>
     <td valign="top">
-
+    
     A description of the artifact \(optional\)
 
 
@@ -77,14 +77,14 @@ To set up a connection using basic authentication or username token authenticati
     </tr>
     <tr>
     <td valign="top">
-
+    
     Type
 
 
     
     </td>
     <td valign="top">
-
+    
     This allows you to configure a specific system to enable a connection with your integration flow artifact.
 
     If you select:
@@ -102,14 +102,14 @@ To set up a connection using basic authentication or username token authenticati
     </tr>
     <tr>
     <td valign="top">
-
+    
     User
 
 
     
     </td>
     <td valign="top">
-
+    
     The user that calls the receiver system
 
 
@@ -118,14 +118,14 @@ To set up a connection using basic authentication or username token authenticati
     </tr>
     <tr>
     <td valign="top">
-
+    
     Password
 
 
     
     </td>
     <td valign="top">
-
+    
     Password against which the user has to be authenticated
 
     This parameter has a maximum length of 255 characters.

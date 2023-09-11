@@ -62,14 +62,14 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a name for the flow step.
 
 
@@ -102,14 +102,14 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Remove External DTDs* \(deactivated by default\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option, to remove DTDs with external references from the XML payload.
 
     > ### Note:  
@@ -121,14 +121,14 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Remove XML Declaration* \(deactivated by default\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option, to remove the XML declaration from the XML payload.
 
 
@@ -137,14 +137,14 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Invalid XML Character Handling*
 
 
     
     </td>
     <td valign="top">
-
+    
     Select how to handle XML documents containing characters that are not valid in XML version 1.0/1.1. Depending on the XML version of the source message, the adapter checks the characters against the respective range allowed. Choose between the following options:
 
     -   *None*: No removal or substitution of invalid XML characters.
@@ -183,6 +183,8 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
 
 
 
+
+## Example
 
 *Remove External DTDs*: For our first example, suppose the incoming payload has the following information:
 

@@ -20,7 +20,7 @@ Create an API portal, API Management subaccount and subscribe to it. Set it as y
 
 1.  Create a service instance for API Management, API portal.
 
-    Follow the steps described in "Creating a Service Instance in the API Management,API portal" section in [API Access plan for API Portal](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/24a2c37abd754915a74ae0914bebaa5b.html "The API Access plan allows you to generate a service key by creating a service instance.") :arrow_upper_right:.
+    Follow the steps described in "Creating a Service Instance in the API Management,API portal" section in [API Access Plan for API Portal](../20-Working_with_SAP_Integration_Suite_Home/api-access-plan-for-api-portal-24a2c37.md).
 
     > ### Note:  
     > If you don't see the API Management, API portal instance under the *Instances* tab on the *Instances and Subscription* page, then you must add the entitlement.
@@ -37,10 +37,10 @@ Create an API portal, API Management subaccount and subscribe to it. Set it as y
 
 2.  Create a service key for API portal, API Management.
 
-    Follow the steps described in "Creating a Service Key" section in [API Access plan for API Portal](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/24a2c37abd754915a74ae0914bebaa5b.html "The API Access plan allows you to generate a service key by creating a service instance.") :arrow_upper_right:.
+    Follow the steps described in "Creating a Service Key" section in [API Access Plan for API Portal](../20-Working_with_SAP_Integration_Suite_Home/api-access-plan-for-api-portal-24a2c37.md).
 
     > ### Note:  
-    > While configuring JSON, only the *APIportal.Administrator* role must be assigned to you and not the "APIPortal.Guest" and "APIManagement.SelfService.Administrator" roles as mentioned in [API Access plan for API Portal](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/24a2c37abd754915a74ae0914bebaa5b.html "The API Access plan allows you to generate a service key by creating a service instance.") :arrow_upper_right:.
+    > While configuring JSON, only the *APIportal.Administrator* role must be assigned to you and not the "APIPortal.Guest" and "APIManagement.SelfService.Administrator" roles as mentioned in [API Access Plan for API Portal](../20-Working_with_SAP_Integration_Suite_Home/api-access-plan-for-api-portal-24a2c37.md).
 
     Once the service key is created, make a note of the url, clientid, clientsecret, and token as these details would be needed while creating HTTP destination *APIManagement*. To copy the details, perform the following steps:
 

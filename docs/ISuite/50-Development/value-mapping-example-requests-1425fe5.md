@@ -40,7 +40,7 @@ GET
 </td>
 <td valign="top">
 
- `/ValueMappingDesigntimeArtifacts(Id=<Id>,Version=<version>)/ValMapSchema(SrcAgency=<Agency_name>,SrcId=<source_Id,TgtAgency=<Agency_Name>,TgtId=<target_Id>)/ValMaps?$filter=Value/SrcValue eq <Source_Value> and Value/TgtValue eq <target_Value>` 
+`/ValueMappingDesigntimeArtifacts(Id=<Id>,Version=<version>)/ValMapSchema(SrcAgency=<Agency_name>,SrcId=<source_Id,TgtAgency=<Agency_Name>,TgtId=<target_Id>)/ValMaps?$filter=Value/SrcValue eq <Source_Value> and Value/TgtValue eq <target_Value>` 
 
 
 
@@ -84,7 +84,7 @@ POST
 </td>
 <td valign="top">
 
- `/UpsertValMaps?Id=<Id>&Version=<version>&SrcAgency=<Agency_name>&SrcId=<source_Id>&TgtAgency=<Agency_Name>&TgtId=<target_Id>&SrcValue=<value>&TgtValue=<value>&IsConfigured=<true or false>` 
+`/UpsertValMaps?Id=<Id>&Version=<version>&SrcAgency=<Agency_name>&SrcId=<source_Id>&TgtAgency=<Agency_Name>&TgtId=<target_Id>&SrcValue=<value>&TgtValue=<value>&IsConfigured=<true or false>` 
 
 
 

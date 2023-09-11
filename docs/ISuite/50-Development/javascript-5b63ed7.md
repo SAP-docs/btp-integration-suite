@@ -103,7 +103,7 @@ IncludeURL \(optional\)
 </td>
 <td valign="top">
 
-Specifies a JavaScript library to be loaded as dependency. Store libraries under /APIProxy/FileResources/<***policy name***\>.js in your API proxy bundle. The scripts are evaluated in the order in which they are listed in the policy.
+Specifies a JavaScript library to be loaded as dependency. Store libraries under /APIProxy/FileResources/<`policy name`\>.js in your API proxy bundle. The scripts are evaluated in the order in which they are listed in the policy.
 
 Syntax: `<IncludeURL>jsc://my-javascript-URL.js</IncludeURL>`
 
@@ -123,7 +123,7 @@ Display name \(optional\)
 
 Labels the policy in the management UI proxy editor with a different, natural-language name.
 
-If you skip this element, the value of the ***name*** attribute is applied to the policy.
+If you skip this element, the value of the `name` attribute is applied to the policy.
 
 Syntax: `<DisplayName>Policy-Display-Name</DisplayName>`
 

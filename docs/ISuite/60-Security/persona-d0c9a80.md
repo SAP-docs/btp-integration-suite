@@ -4,7 +4,7 @@
 
 When you perform user management tasks using SAP BTP Cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with B2B scenarios, these roles are associated to certain persona relevant for an B2B scenario.
 
-Personas cover the different tasks associated with an integration project. To assign roles that are application-based, see [Configuring User Access to the Application](https://help.sap.com/viewer/9e51bec2356e4664b6d5fd1a336a9e12/Cloud/en-US/1435f10a82394747b6ccd517dfbca996.html "Assign roles and role collection to users for an easy access to the application.") :arrow_upper_right:.
+Personas cover the different tasks associated with an integration project. To assign roles that are application-based, see [Configuring User Access](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-user-access?version=CLOUD).
 
 **Persona**
 

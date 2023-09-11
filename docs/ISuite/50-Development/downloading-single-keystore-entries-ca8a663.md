@@ -47,14 +47,14 @@ You can download a key, a single certificate, a complete certificate chain, a ro
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Key Pair* entry
 
 
     
     </td>
     <td valign="top">
-
+    
     You can download the public key \(X.509 format\).
 
     -   *Download Certificate*
@@ -117,14 +117,14 @@ You can download a key, a single certificate, a complete certificate chain, a ro
     </tr>
     <tr>
     <td valign="top">
-
-     *Certificate* entry
+    
+    *Certificate* entry
 
 
     
     </td>
     <td valign="top">
-
+    
     *Download*
 
     A file with the name `<alias>.cer` is downloaded.

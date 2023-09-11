@@ -87,7 +87,7 @@ SAP Trading Partner Management
 </td>
 <td valign="top">
 
-[Accessibility Features in Trading Partner Management](https://help.sap.com/docs/CLOUD_INTEGRATION/9e51bec2356e4664b6d5fd1a336a9e12/c17213ac639549a9a5d7cd44834156c7.html?version=Cloud)
+[Accessibility Features in SAP Trading Partner Management](accessibility-features-in-sap-trading-partner-management-c17213a.md)
 
 
 

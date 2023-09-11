@@ -379,17 +379,42 @@ You can directly assign a constant value to a target leaf node without defining 
 > </tr>
 > </table>
 
+There are two variables which can be used in functions from Group-to-leaf mapping:
+
+-   *@position*: This variable gives the position of the current instance in the list of all instances of the mapped source group node.
+
+-   *@last*: The variable gives the index of the last instance \(equals the number of instances\) of the mapped source group node.
+
 
 
 <a name="loio9ea58d63c6f64516b33c46079cc694e9__section_olb_5j4_bpb"/>
 
 ## Conditional Mapping
 
-You can specify conditions on leaf nodes to control the creation and cardinality of the target group node instances in a group-to-group node mapping.
+You can specify conditions on leaf nodes to control the creation and cardinality of the target group or leaf node instances in a group-to-group and leaf-to-leaf node mapping respectively.
+
+When a leaf node is added as a condition node to a leaf-to-leaf mapping:
+
+-   A *Condition* checkbox is provided for the leaf node in the mapping list.
+
+    > ### Note:  
+    > Conditional mapping is not supported for nodes with
+    > 
+    > -   Constant value mapping
+    > -   String Processing type
+    > 
+    > For such mapping, the *Condition* checkbox is disabled.
+
+-   On selecting the checkbox, the *Condition* tab on the mapping pane becomes available.
+-   The *XPath Code* editor is displayed where you can specify the condition as an XPath expression.
 
 When a leaf node is added as a condition node to a group-to-group node mapping:
 
 -   The *Condition* checkbox is selected by default for the leaf node in the mapping list.
+
+    > ### Note:  
+    > For group-to-group mappings, all additional source leaf nodes are automatically condition nodes.
+
 -   The *Condition* tab on the mapping pane becomes available.
 -   The *XPath Code* editor is displayed where you can specify the condition as an XPath expression.
 
@@ -403,7 +428,7 @@ The default XPath expression, `boolean($nodes_in/*)`, of the mapping returns tru
 
 Use the shared code feature to create frequently used code snippets and reuse it as required within your Mapping Guideline \(MAG\). You can create, share, and reuse the XPath expressions in the same way as the XSLT functions. For more information, refer [Creating a Shared Code](creating-a-shared-code-e951f66.md).
 
-When you choose to delete the last available conditional node in a group-to-group node mapping, the corresponding leaf node and its condition is removed from the mapping.
+When you choose to delete the last available conditional node in a group-to-group node mapping, the corresponding leaf node and its conditions are removed from the mapping.
 
 
 

@@ -6,7 +6,7 @@ This variant contains the same steps as the [Delta Synchronization Via Date Now 
 
 The example integration flow *Modeling Basics - Delta Sync With Timestamp Via Payload* is designed in the following way:
 
- ![](images/delta_sync_2_8463d55.png) 
+![](images/delta_sync_2_8463d55.png)
 
 It works as follows:
 
@@ -52,28 +52,28 @@ It works as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     lastSync
 
 
     
     </td>
     <td valign="top">
-
+    
     Local Variable
 
 
     
     </td>
     <td valign="top">
-
+    
     timestamp\_DS\_TSvPayload
 
 
     
     </td>
     <td valign="top">
-
+    
     \{\{defaultDate\}\}
 
 
@@ -112,14 +112,14 @@ It works as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Operation Details
 
 
     
     </td>
     <td valign="top">
-
+    
     GET
 
 
@@ -128,14 +128,14 @@ It works as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Resource Path
 
 
     
     </td>
     <td valign="top">
-
+    
     MessageProcessingLogs
 
 
@@ -144,14 +144,14 @@ It works as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Query Options
 
 
     
     </td>
     <td valign="top">
-
+    
     $select=MessageGuid, Status, LogStart&$filter=LogStart gt datetime'$\{property.lastSync\}'&$orderby=LogStart desc
 
 

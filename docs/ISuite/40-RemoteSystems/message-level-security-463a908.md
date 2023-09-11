@@ -121,7 +121,7 @@ Basic Digital Signature Option \(*Simple Signer*\)
 </td>
 <td valign="top">
 
-Signing/verification payload
+Signing payload
 
 
 

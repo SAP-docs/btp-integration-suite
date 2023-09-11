@@ -6,7 +6,7 @@ In this use case, the client certificate \(of the sender\) has to be renewed.
 
 The following figure illustrates the communication path that is relevant for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_HTTPS_Certificate_Inbound_Sender_6a9e928.png) 
+![](images/SAP_HCI_Security_Renewal_-_HTTPS_Certificate_Inbound_Sender_6a9e928.png)
 
 > ### Note:  
 

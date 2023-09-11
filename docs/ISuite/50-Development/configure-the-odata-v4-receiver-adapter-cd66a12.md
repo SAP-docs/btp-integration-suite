@@ -9,9 +9,11 @@ You configure the ODataV4 receiver adapter by understanding the adapter paramete
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -88,7 +90,7 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -104,7 +106,7 @@ Service root URI of the OData V4 service that you want to connect to.
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -143,7 +145,7 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 
@@ -252,6 +254,22 @@ Enter the time in minutes.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Reuse Connection*
+
+
+
+</td>
+<td valign="top">
+
+The option is enabled by default. This option enables the reuse of connection objects from the internal connection pool which in turn improves the network turnaround time for multiple communications to a same end point.
+
+
+
+</td>
+</tr>
 </table>
 
 Select the *Processing* tab and provide values in the fields as follows.
@@ -279,7 +297,7 @@ Description
 <tr>
 <td valign="top">
 
- *Operation* 
+*Operation* 
 
 
 
@@ -311,7 +329,7 @@ To leverage all operations, always use the latest version of the adapter.
 <tr>
 <td valign="top">
 
- *Resource Path* 
+*Resource Path* 
 
 
 
@@ -350,7 +368,7 @@ Query options that you’re passing as a part of the URI to the OData V4 service
 <tr>
 <td valign="top">
 
- *Process in Pages* 
+*Process in Pages* 
 
 
 
@@ -366,7 +384,27 @@ By selecting *Process in Pages*, you enable the adapter to process messages in p
 <tr>
 <td valign="top">
 
- *Request Headers* 
+*Attach Error Details on Failure* 
+
+
+
+</td>
+<td valign="top">
+
+By default, the option is enabled. This option enables the creation of attachments for request header, response headers, and response body when the message processing fails.
+
+Having these attachments during message processing failures can be unneccesary as it leads to persistence of attachments that doesn't help. Especially, if multiple message processing failures occurs, you have attachments piled up for each failure. If you don't require the attachments for failure scenarios, disable the option. Though you disable the creation of attachments, the content of the same are added to the message processing logs.
+
+If you're using older versions of the adapter where you don't see the option, define the property `SAP.DisableAttachments.ODataV4` in the message exchange with the value `true`.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Request Headers* 
 
 
 
@@ -384,7 +422,7 @@ If the value \* is entered, **all** the message headers are converted to HTTP re
 <tr>
 <td valign="top">
 
- *Response Headers* 
+*Response Headers* 
 
 
 
@@ -438,7 +476,7 @@ Description
 <tr>
 <td valign="top">
 
- *Connection Source* 
+*Connection Source* 
 
 
 
@@ -476,7 +514,7 @@ Choose *Select* to select the EDMX service schema. You can also manually upload 
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -528,7 +566,7 @@ Location ID that you’ve configured in the Cloud Connector installation.
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 
@@ -568,7 +606,7 @@ Description
 <tr>
 <td valign="top">
 
- *Operation* 
+*Operation* 
 
 
 
@@ -594,7 +632,7 @@ The adapter supports *Function Import* for the following return types:
 -   Void
 
 
- *Function Import*can also be consumed in the *$batch* mode.
+*Function Import*can also be consumed in the *$batch* mode.
 
 
 
@@ -603,7 +641,7 @@ The adapter supports *Function Import* for the following return types:
 <tr>
 <td valign="top">
 
- *Select Entity* 
+*Select Entity* 
 
 
 
@@ -619,7 +657,7 @@ Entity that you want to perform the operation on.
 <tr>
 <td valign="top">
 
- *Generate XML Schema Definition* 
+*Generate XML Schema Definition* 
 
 
 
@@ -637,7 +675,7 @@ There could be a scenario in which you wish to edit or update your modeling. In 
 <tr>
 <td valign="top">
 
- *Fields* 
+*Fields* 
 
 
 
@@ -653,7 +691,7 @@ Fields associated with the entity that you want to perform the operation on.
 <tr>
 <td valign="top">
 
- *Top* 
+*Top* 
 
 
 
@@ -671,7 +709,7 @@ For more information, see **Top System Query Option \($top\)** in [OData V4 URL 
 <tr>
 <td valign="top">
 
- *Skip* 
+*Skip* 
 
 
 
@@ -713,7 +751,7 @@ Description
 <tr>
 <td valign="top">
 
- *Filter By* 
+*Filter By* 
 
 
 
@@ -739,7 +777,7 @@ Select the field that you want to use as reference for filtering, choose the ope
 <tr>
 <td valign="top">
 
- *Sort By* 
+*Sort By* 
 
 
 

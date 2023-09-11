@@ -8,7 +8,7 @@ The CMS/PKCS7 decryptor uses a private key to decrypt a PKCS7/CMS encrypted payl
 
 The following figure illustrates the communication path that is relevant for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_PKCS7_Inbound_Decrypt_f179f08.png) 
+![](images/SAP_HCI_Security_Renewal_-_PKCS7_Inbound_Decrypt_f179f08.png)
 
 
 

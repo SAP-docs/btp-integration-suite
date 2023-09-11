@@ -213,7 +213,7 @@ Sample payload to create a custom attribute
     -   Request Header: Authorization:Bearer <Token for API access\>
     -   Response: bearer-token value
 
-    To know how to retrieve this token, see [API Access plan for API Portal](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/24a2c37abd754915a74ae0914bebaa5b.html "The API Access plan allows you to generate a service key by creating a service instance.") :arrow_upper_right:.
+    To know how to retrieve this token, see [API Access Plan for API Portal](../20-Working_with_SAP_Integration_Suite_Home/api-access-plan-for-api-portal-24a2c37.md).
 
 
 > ### Sample Code:  
@@ -343,7 +343,7 @@ Sample payload to delete a custom attribute \(batch call\)
 
     Request Header: Authorization:Bearer <Token for API access\> \(for Cloud Foundry environment\)
 
-    To know how to retrieve this token, see [API Access plan for API Portal](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/24a2c37abd754915a74ae0914bebaa5b.html "The API Access plan allows you to generate a service key by creating a service instance.") :arrow_upper_right:.
+    To know how to retrieve this token, see [API Access Plan for API Portal](../20-Working_with_SAP_Integration_Suite_Home/api-access-plan-for-api-portal-24a2c37.md).
 
 
 > ### Sample Code:  
@@ -402,7 +402,7 @@ Sample payload to create a custom attribute \(application\)
         -   Request Header: Authorization:Bearer <Token for API access\>
         -   Response: bearer-token value
 
-        To know how to retrieve this token, see [API Access Plan for API Business Hub Enterprise](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/dabee6e347f645a6805ec5b29f5d578c.html "The API Access plan allows you to generate a service key.") :arrow_upper_right:.
+        To know how to retrieve this token, see [API Access Plan for API business hub enterprise](../20-Working_with_SAP_Integration_Suite_Home/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
 
 
 
@@ -469,7 +469,7 @@ Sample payload to create a custom attribute via navigation \(application\)
     -   Request Header: Authorization:Bearer <Token for API access\>
     -   Response: bearer-token value
 
-    To know how to retrieve this token, see [API Access Plan for API Business Hub Enterprise](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/dabee6e347f645a6805ec5b29f5d578c.html "The API Access plan allows you to generate a service key.") :arrow_upper_right:.
+    To know how to retrieve this token, see [API Access Plan for API business hub enterprise](../20-Working_with_SAP_Integration_Suite_Home/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
 
 
 > ### Sample Code:  

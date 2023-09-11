@@ -9,6 +9,9 @@ The following tables provide a summary of the configuration settings for the ava
 > 
 > Those options based on users registered in an identity provider \(IdP\), don't require service instance/key configuration.
 
+> ### Tip:  
+> You can also use an application programming interface \(API\) to manage service instances and service keys. To learn more about how to use the API to retrieve information on the service instances and service keys configured for inbound communication, check out [Managing Service Instances and Service Keys Using an API](managing-service-instances-and-service-keys-using-an-api-6e5db60.md).
+
 **Configuration Checklist \(Sender Calling Integration Flow Endpoint\)**
 
 
@@ -108,7 +111,7 @@ See: [Client Certificate Authentication for Integration Flow Processing](client-
 </td>
 <td valign="top" rowspan="6">
 
- *integration-flow* 
+*integration-flow* 
 
 
 
@@ -122,14 +125,14 @@ Keep standard role `ESBMessaging.send` or use one or more custom roles.
 </td>
 <td valign="top" rowspan="6">
 
- *Client Credentials* 
+*Client Credentials* 
 
 
 
 </td>
 <td valign="top">
 
- *Certificate* 
+*Certificate* 
 
 
 
@@ -170,7 +173,7 @@ See: [Client Certificate Authentication for Integration Flow Processing](client-
 </td>
 <td valign="top">
 
- *External Certificate* 
+*External Certificate* 
 
 
 
@@ -211,7 +214,7 @@ See: [OAuth with Client Credentials Grant for Integration Flow Processing](oauth
 </td>
 <td valign="top">
 
- *ClientId/Secret* 
+*ClientId/Secret* 
 
 
 
@@ -252,7 +255,7 @@ See: [OAuth with Client Credentials Grant for Integration Flow Processing](oauth
 </td>
 <td valign="top">
 
- *Certificate* 
+*Certificate* 
 
 
 
@@ -293,7 +296,7 @@ See: [OAuth with Client Credentials Grant for Integration Flow Processing](oauth
 </td>
 <td valign="top">
 
- *External Certificate* 
+*External Certificate* 
 
 
 
@@ -334,7 +337,7 @@ See: [Basic Authentication with clientId and clientsecret for Integration Flow P
 </td>
 <td valign="top">
 
- *ClientId/Secret* 
+*ClientId/Secret* 
 
 
 
@@ -482,7 +485,7 @@ See: [Client Certificate Authentication for API Clients](client-certificate-auth
 </td>
 <td valign="top" rowspan="5">
 
- *api* 
+*api* 
 
 
 
@@ -496,14 +499,14 @@ Role as described at [Tasks and Permissions](https://help.sap.com/viewer/368c481
 </td>
 <td valign="top" rowspan="5">
 
- *Client Credentials* 
+*Client Credentials* 
 
 
 
 </td>
 <td valign="top">
 
- *Certificate* 
+*Certificate* 
 
 
 
@@ -544,7 +547,7 @@ See: [Client Certificate Authentication for API Clients](client-certificate-auth
 </td>
 <td valign="top">
 
- *External Certificate* 
+*External Certificate* 
 
 
 
@@ -585,7 +588,7 @@ See: [OAuth with Client Credentials Grant for API Clients](oauth-with-client-cre
 </td>
 <td valign="top">
 
- *ClientId/Secret* 
+*ClientId/Secret* 
 
 
 
@@ -626,7 +629,7 @@ See: [OAuth with Client Credentials Grant for API Clients](oauth-with-client-cre
 </td>
 <td valign="top">
 
- *Certificate* 
+*Certificate* 
 
 
 
@@ -667,7 +670,7 @@ See: [OAuth with Client Credentials Grant for API Clients](oauth-with-client-cre
 </td>
 <td valign="top">
 
- *External Certificate* 
+*External Certificate* 
 
 
 

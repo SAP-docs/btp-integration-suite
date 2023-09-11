@@ -2,7 +2,7 @@
 
 # Basic Authentication with clientId and clientsecret for Integration Flow Processing
 
-Use this procedure to connect a sender system to SAP Cloud Integration
+Use this procedure to connect a sender system to SAP Cloud Integration.
 
 
 
@@ -117,49 +117,49 @@ In detail, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     *integration-flow* 
+    
+    *integration-flow* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Keep standard role `ESBMessaging.send` or use one or more custom roles.
 
 
     
     </td>
     <td valign="top">
-
-     *Client Credentials* 
+    
+    *Client Credentials* 
 
 
     
     </td>
     <td valign="top">
-
-     *ClientId/Secret* 
+    
+    *ClientId/Secret* 
 
 
     
     </td>
     <td valign="top">
-
+    
     n.a.
 
 
     
     </td>
     <td valign="top">
-
+    
     n.a.
 
 
     
     </td>
     <td valign="top">
-
+    
     n.a.
 
 

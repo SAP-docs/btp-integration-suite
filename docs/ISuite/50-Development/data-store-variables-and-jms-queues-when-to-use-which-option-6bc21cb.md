@@ -131,7 +131,7 @@ Can data initiate integration flow execution?
 </td>
 <td valign="top">
 
-No
+Yes
 
 
 

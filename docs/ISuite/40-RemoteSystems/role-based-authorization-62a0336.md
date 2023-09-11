@@ -8,5 +8,5 @@ For HTTPS requests sent to Cloud Integration, it is checked if the role **ESBMes
 
 The permissions of the sending client are checked according to roles assigned to the user in the associated identity provider
 
-User management \(which includes the assignment of permissions to users\) is performed by the tenant administrator using the SAP BTP cockpit.
+User management \(which includes the assignment of permissions to users\) is performed by the tenant administrator using SAP BTP cockpit.
 

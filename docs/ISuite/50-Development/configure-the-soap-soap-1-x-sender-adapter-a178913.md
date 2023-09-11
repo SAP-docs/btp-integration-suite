@@ -7,9 +7,11 @@ The SOAP \(SOAP 1.x\) sender adapter enables a SAP BTP tenant to exchange messag
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -122,9 +124,9 @@ Description
 Relative endpoint address on which the integration runtime expects incoming requests, for example, `/HCM/GetEmployeeDetails`.
 
 > ### Note:  
-> When you specify the endpoint address ***/path***, a sender can also call the integration flow through the endpoint address ***/path/<any string\>*** \(for example, ***/path/test/***\).
+> When you specify the endpoint address `/path`, a sender can also call the integration flow through the endpoint address `/path/<any string>` \(for example, `/path/test/`\).
 > 
-> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address ***/path/test/***, a sender using the ***/path/test*** endpoint address will now call the newly deployed integration flow with the endpoint address ***/path/test/***. When you now undeploy the integration flow with endpoint address ***/path/test***, the sender again calls the integration flow with endpoint address ***/path*** \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using completely separated endpoints for services.
+> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address `/path/test/`, a sender using the `/path/test` endpoint address will now call the newly deployed integration flow with the endpoint address `/path/test/`. When you now undeploy the integration flow with endpoint address `/path/test`, the sender again calls the integration flow with endpoint address `/path` \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using completely separated endpoints for services.
 
 
 
@@ -133,7 +135,7 @@ Relative endpoint address on which the integration runtime expects incoming requ
 <tr>
 <td valign="top">
 
- *Use WS-Addressing* 
+*Use WS-Addressing* 
 
 
 
@@ -149,7 +151,7 @@ Select this option to accept addressing information from message information hea
 <tr>
 <td valign="top">
 
- *URL to WSDL* 
+*URL to WSDL* 
 
 
 
@@ -196,7 +198,7 @@ For more information on how to work with WSDL resources, refer to the following 
 <tr>
 <td valign="top">
 
- *Service* 
+*Service* 
 
 
 
@@ -212,7 +214,7 @@ Name of the selected service contained in the referenced WSDL.
 <tr>
 <td valign="top">
 
- *Endpoint* 
+*Endpoint* 
 
 
 
@@ -245,6 +247,38 @@ Name of the selected endpoint of  a selected service \(that you provide in the 
 </td>
 </tr>
 </table>
+
+
+
+> ### Caution:  
+> SOAP attachments with the same content-ID aren't supported.
+> 
+> If there are duplicate attachments \(with the same content-ID\), the adapter generates unique content-ID's by attaching a GUID to the original content-ID of the duplicates.
+> 
+> If the content-ID isn't set, the adapter generates a new one by generating a GUID.
+> 
+> Example:
+> 
+> Incoming message contains the following attachments:
+> 
+> -   myAttachment
+> 
+> -   myAttachment
+> 
+> -   myAttachmentUnique
+> 
+> -   \(blank\)
+> 
+> 
+> Result after processing of the message by SOAP sender adapter:
+> 
+> -   myAttachment\_c242875-z7c6-9764-99yx-8652879786d
+> 
+> -   myAttachment\_c25201a5-f7c6-4113-88bc-617289fd676c
+> 
+> -   myAttachmentUnique
+> 
+> -   a52c9658-90c9-11ed-a1eb-0242ac120002
 
 
 

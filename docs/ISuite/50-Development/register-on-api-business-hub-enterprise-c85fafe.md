@@ -1,6 +1,6 @@
 <!-- loioc85fafe4ff5b4463924e0ccf5b4e0e41 -->
 
-# Register on API Business Hub Enterprise
+# Register on API business hub enterprise
 
 Procedure to register as an Application developer on the API business hub enterprise to view the products available in the Catalog store. The API business hub enterprise also enables you to explore the APIs, read the associated API Documentation, and view resources.
 
@@ -29,7 +29,7 @@ Procedure to register as an Application developer on the API business hub enterp
 
 
 > ### Note:  
-> The *AuthGroup.API.ApplicationDeveloper* role must not be assigned manually to a user form the SAP BTP Cockpit and this role must not be a part of any user group assignment. This role is assigned by default to a user who onboards to the API business hub enterprise using the Self-registration process or via Add User flow. See [Assign User Roles](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:, for more information.
+> The *AuthGroup.API.ApplicationDeveloper* role must not be assigned manually to a user form the SAP BTP Cockpit and this role must not be a part of any user group assignment. This role is assigned by default to a user who onboards to the API business hub enterprise using the Self-registration process or via Add User flow. See [Assign User Roles in API Management](../20-Working_with_SAP_Integration_Suite_Home/assign-user-roles-in-api-management-911ca5a.md), for more information.
 
 
 

@@ -196,5 +196,5 @@ To view the message content, select tab *Message Content* above the integration 
 
 [How to analyze runtime issues](https://ga.support.sap.com/dtp/viewer/#/tree/2237/actions/28748:28795:33130)
 
-SAP note [2665258](https://launchpad.support.sap.com/#/notes/2665258)
+SAP note [2665258](https://me.sap.com/notes/2665258)
 

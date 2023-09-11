@@ -12,7 +12,7 @@ Use this procedure to create and deploy a SOAP API artifact.
 
 A SOAP API artifact creates a SOAP API-based integration scenario with SOAP 1.x sender adapter.
 
- <a name="task_c2h_xgc_hpb"/>
+<a name="task_c2h_xgc_hpb"/>
 
 <!-- task\_c2h\_xgc\_hpb -->
 
@@ -61,14 +61,14 @@ A SOAP API artifact creates a SOAP API-based integration scenario with SOAP 1.x 
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Name of the API.
 
 
@@ -77,14 +77,14 @@ A SOAP API artifact creates a SOAP API-based integration scenario with SOAP 1.x 
     </tr>
     <tr>
     <td valign="top">
-
+    
     SOAP API \(only for upload\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Upload a ZIP file containing the SOAP API resources.
 
 
@@ -93,14 +93,14 @@ A SOAP API artifact creates a SOAP API-based integration scenario with SOAP 1.x 
     </tr>
     <tr>
     <td valign="top">
-
+    
     ID
 
 
     
     </td>
     <td valign="top">
-
+    
     Uniquely identifies the artifact.
 
 
@@ -109,14 +109,14 @@ A SOAP API artifact creates a SOAP API-based integration scenario with SOAP 1.x 
     </tr>
     <tr>
     <td valign="top">
-
+    
     Description
 
 
     
     </td>
     <td valign="top">
-
+    
     Description of the API and its purpose.
 
 
@@ -125,7 +125,7 @@ A SOAP API artifact creates a SOAP API-based integration scenario with SOAP 1.x 
     </tr>
     </table>
     
-    Product Profile is an uneditable field.
+    Runtime Profile is an uneditable field.
 
 7.  Choose *OK* to create the artifact.
 
@@ -154,7 +154,7 @@ A SOAP API artifact creates a SOAP API-based integration scenario with SOAP 1.x 
 
 You can check the status of all your integration artifacts in the *Monitor* view. By default, API-based artifacts don't appear in the *Monitor*. Perform the steps that follow to view the deployed artifact.
 
- <a name="task_bp3_dhc_hpb"/>
+<a name="task_bp3_dhc_hpb"/>
 
 <!-- task\_bp3\_dhc\_hpb -->
 

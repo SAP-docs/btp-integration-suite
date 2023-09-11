@@ -8,14 +8,14 @@ The Python Script policy allows you to add a custom-built python functionality t
 
 Jython version 2.5.2 provides the required python language support. You can find the Jython version 2.5.2 libraries in the following link:
 
-***https://www.jython.org/jython-old-sites/docs/index.html***
+`https://www.jython.org/jython-old-sites/docs/index.html`
 
 > ### Note:  
 > The third-party libraries you add must be implemented in pure python language only.
 
 A Python policy contains no actual code. Instead, a Python policy references a Python 'resource' and defines the Step in the API flow where the Python script executes. The Python Script resource must always have the .py extension.
 
-You can attach this policy in the following locations: ![](images/Flow_policy_116062b.png) 
+You can attach this policy in the following locations: ![](images/Flow_policy_116062b.png)
 
 An example payload for the policy is as follows:
 

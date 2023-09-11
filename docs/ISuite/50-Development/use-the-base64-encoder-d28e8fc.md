@@ -117,7 +117,7 @@ $\{in.body\}
 
 Furthermore, the body needs to be assigned the constant *None* because the subsequent OData request does not support an encoded message. Therefore, in tab *Message Body* the following settings are configured:
 
-The *Type* parameter is set to *Constant* and in the *Body* entry field, the string ***None*** is entered.
+The *Type* parameter is set to *Constant* and in the *Body* entry field, the string `None` is entered.
 
 In a Request Reply step, product data is read from an external source \(the WebShop component\) through the OData protocol \(using the OData receiver adapter\).
 

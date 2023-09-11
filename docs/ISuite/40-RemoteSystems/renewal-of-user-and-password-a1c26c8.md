@@ -8,15 +8,15 @@ In this use case, the user \(through which the tenant calls the receiver system\
 
 Security artifact renewal has to be performed in the following sequence:
 
-1.  Receiver administrator: Creates a new user \(***user1***\) and assigns authorization roles to the user.
+1.  Receiver administrator: Creates a new user \(`user1`\) and assigns authorization roles to the user.
 
-    After this step has been performed, two users are configured on the receiver system for a certain HTTPS communication: the old user \(***user0***\) and the new one \(***user1***\).
+    After this step has been performed, two users are configured on the receiver system for a certain HTTPS communication: the old user \(`user0`\) and the new one \(`user1`\).
 
-2.  Receiver administrator: Informs the tenant administrator that he wants to exchange the old user \(***user0***\) with a new user \(***user1***\).
+2.  Receiver administrator: Informs the tenant administrator that he wants to exchange the old user \(`user0`\) with a new user \(`user1`\).
 
     The new user also should have a new password.
 
-3.  Tenant administrator: Opens the related *User Credentials* artifact \(specified for ***user0*** and the communication path with the receiver system\) and exchanges the old user/password with the new user/password.
+3.  Tenant administrator: Opens the related *User Credentials* artifact \(specified for `user0` and the communication path with the receiver system\) and exchanges the old user/password with the new user/password.
 4.  Tenant administrator: Restarts the corresponding integration flow\(s\).
 5.  Tenant administrator: Informs the receiver administrator that user/password has been exchanged.
 6.  Receiver administrator: Removes the old user.

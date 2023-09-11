@@ -43,7 +43,7 @@ In this example, the option *Add Multipart Headers Inline* is selected and field
 
 ## 3. Add Multipart Headers Inline Selected, Regular Expression for Header Specified
 
-In this example, the option *Add Multipart Headers Inline* is selected and in field *Include Headers* the regular expression ***h.\**** is specified. The message is transformed so that certain header fields are now part of the message body \(for example, the `MIME Type`\). Note that also the field for the Camel header `header1` is now part of the message body. The reason is that with the regular expression the Encoder step was configured to add headers inline that start with character `h`.
+In this example, the option *Add Multipart Headers Inline* is selected and in field *Include Headers* the regular expression `h.*` is specified. The message is transformed so that certain header fields are now part of the message body \(for example, the `MIME Type`\). Note that also the field for the Camel header `header1` is now part of the message body. The reason is that with the regular expression the Encoder step was configured to add headers inline that start with character `h`.
 
 ![](images/MIME_Multipart_Encoder_03_be8375d.png)
 
@@ -53,7 +53,7 @@ In this example, the option *Add Multipart Headers Inline* is selected and in fi
 
 ## 4. Add Multipart Headers Inline Selected, Another Regular Expression for Header Specified
 
-In this example, the option *Add Multipart Headers Inline* is selected and in field *Include Headers* the regular expression ***h.\*|S.\**** is specified. The message is transformed so that certain header fields are now part of the message body \(for example, the `MIME Type`\). Note that also the field for the Camel header `header1` as well as for other headers starting with character `S` are now part of the message body. The reason is that with the regular expression the Encoder step was configured to add headers inline that start with character `h` or with character `S`.
+In this example, the option *Add Multipart Headers Inline* is selected and in field *Include Headers* the regular expression `h.*|S.*` is specified. The message is transformed so that certain header fields are now part of the message body \(for example, the `MIME Type`\). Note that also the field for the Camel header `header1` as well as for other headers starting with character `S` are now part of the message body. The reason is that with the regular expression the Encoder step was configured to add headers inline that start with character `h` or with character `S`.
 
 ![](images/MIME_Multipart_Encoder_04_a0f998a.png)
 

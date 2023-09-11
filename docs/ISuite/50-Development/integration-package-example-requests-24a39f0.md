@@ -40,7 +40,7 @@ POST
 </td>
 <td valign="top">
 
- `/IntegrationPackages` 
+`/IntegrationPackages` 
 
 
 
@@ -102,7 +102,7 @@ GET
 </td>
 <td valign="top">
 
- `/IntegrationPackages('{Id}')/$value` 
+`/IntegrationPackages('{Id}')/$value` 
 
 
 

@@ -41,7 +41,7 @@ For specific integration flow design guidelines when using the *Script* step, se
 
 
 > ### Note:  
-> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP API Business Hub:
+> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP Business Accelerator Hub:
 > 
 > [Integration Flow Design Guidelines - Scripting Guidelines](https://api.sap.com/package/IntegrationFlowDesignGuidelinesScriptingGuidelines/integrationflow)
 > 
@@ -55,6 +55,9 @@ If you don't consider the proposed guidelines during integration design, there's
 
 -   Your scenario runs into compatibility issues if there are Java upgrades or Cloud Integration updates.
 
+
+> ### Note:  
+> It can be the case that you've applied the integration flow design guidelines described in this section to your best knowledge, but you still face issues during the operation of the scenario. For example, you have applied all design rules with regard to performance but still the performance isn't good enough at runtime. In such cases, you can check out the following page to search for a service that helps you to optimize the implementation of your scenario: [SAP Services and Support](https://www.sap.com/services-support.html).
 
 
 

@@ -1929,7 +1929,7 @@ request.querystring
 </td>
 <td valign="top">
 
-The complete list of query parameters in the request sent from the client app. For example, if the request is ***http://host.com/123?name=first&surname=second&place=address*** then this variable returns name=first&surname=second&place=address
+The complete list of query parameters in the request sent from the client app. For example, if the request is `http://host.com/123?name=first&surname=second&place=address` then this variable returns name=first&surname=second&place=address
 
 
 

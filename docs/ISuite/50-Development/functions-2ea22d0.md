@@ -19,6 +19,8 @@ You can use parameters to pass values to functions. For instance, you can define
 
 
 
+## Example
+
 The following are a few examples of XSLT processing tasks:
 
 -   **Source Data as an Input** - An input value is passed as an argument to a function to transform it. Use the `substring` function to extract the first three characters of the source data.

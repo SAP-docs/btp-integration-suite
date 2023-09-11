@@ -6,7 +6,7 @@ You can apply load-balancing functionality to an API proxy, by including the loa
 
 You can attach the .zip file while importing an existing API definition in to the Integration Suite. For more information, refer [Import an API](import-an-api-9342a93.md).
 
-You can configure load balancer and health monitor by adding the below attributes to ***\\APIProxy\\APITargetEndPoint\\default.xml*** in the design time .zip file as shown in the following example:
+You can configure load balancer and health monitor by adding the below attributes to `\APIProxy\APITargetEndPoint\default.xml` in the design time .zip file as shown in the following example:
 
 > ### Sample Code:  
 > ```

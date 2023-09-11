@@ -1,6 +1,6 @@
 <!-- loio05446d0616d44e1daf821c273b69fcc6 -->
 
-#  Monitor Integrations
+# Monitor Integrations
 
 Check the status of messages and integration content artifacts for a tenant cluster.
 
@@ -29,7 +29,7 @@ Allows you to ...
 <tr>
 <td valign="top">
 
- *Monitor Message Processing* 
+*Monitor Message Processing* 
 
 
 
@@ -47,7 +47,7 @@ Tiles in this section show the number and status of processed messages within a 
 <tr>
 <td valign="top">
 
- *Manage Integration Content* 
+*Manage Integration Content* 
 
 
 
@@ -65,7 +65,7 @@ Tiles in this section show the number and status of integration content artifact
 <tr>
 <td valign="top">
 
- *Manage Security* 
+*Manage Security* 
 
 
 
@@ -97,7 +97,7 @@ The *Connectivity Tests* tile allows you to test the connectivity to a receiver 
 <tr>
 <td valign="top">
 
- *Manage Stores* 
+*Manage Stores* 
 
 
 
@@ -113,7 +113,7 @@ The *Variables* tile allows you to monitor variables used in integration flows.
 The *Message Queues* tile provides an overview of the active queues of a tenant and allows you to manage them
 
 > ### Note:  
-> You can only monitor message queues, if Enterprise Messaging is activated and a JMS Message broker is provisioned. \(See: [Activating Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "You can activate Enterprise Messaging on all licensed versions of Cloud Integration.") :arrow_upper_right:\)
+> You can only monitor message queues, if Enterprise Messaging is activated and a JMS Message broker is provisioned. \(See: [Activating Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:\)
 
 The *Number Ranges* tile provides an overview of number ranges that are used in business-to-business scenarios.
 
@@ -124,7 +124,7 @@ The *Number Ranges* tile provides an overview of number ranges that are used in 
 <tr>
 <td valign="top">
 
- *Access Logs* 
+*Access Logs* 
 
 
 
@@ -133,7 +133,7 @@ The *Number Ranges* tile provides an overview of number ranges that are used in 
 
 Access the *System Log Files* and to analyze errors that occurred during inbound HTTP processing \(and documented in system log files\).
 
-You access the system logs can access the system logs only if the ***Cloud Logging Service*** is available for your Cloud Integration application. This feature isn't yet enabled on all data centers.
+You access the system logs can access the system logs only if the `Cloud Logging Service` is available for your Cloud Integration application. This feature isn't yet enabled on all data centers.
 
 
 
@@ -142,7 +142,7 @@ You access the system logs can access the system logs only if the ***Cloud Loggi
 <tr>
 <td valign="top">
 
- *Manage Locks* 
+*Manage Locks* 
 
 
 
@@ -204,9 +204,9 @@ When you add or edit a tile, you can specify the following filter categories:
 
 [Monitor Message Processing](monitor-message-processing-314df3f.md "The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.")
 
-[Managing Integration Content](managing-integration-content-09a7223.md "The Manage Integration Content section provides an overview of integration content artifacts, such as integration flows, that have been deployed on the tenant.")
+[Manage Integration Content](manage-integration-content-09a7223.md "The Manage Integration Content section provides an overview of integration content artifacts, such as integration flows, that have been deployed on the tenant.")
 
-[Managing Security](managing-security-6e7c44c.md "The Manage Security section allows you to manage various kinds of security material (for example, user credentials, keystore entries), and to perform outbound connectivity tests.")
+[Manage Security](manage-security-6e7c44c.md "The Manage Security section allows you to manage various kinds of security material (for example, user credentials, keystore entries), and to perform outbound connectivity tests.")
 
 [Managing Security Material](managing-security-material-b8ccb53.md "The Manage Security Material area provides an overview of security-related artifacts.")
 
@@ -218,7 +218,7 @@ When you add or edit a tile, you can specify the following filter categories:
 
 [Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
-[Managing Access Policies](managing-access-policies-7db3c87.md "Specifics for Access Policies in the Cloud Foundry Environment..")
+[Managing Access Policies](managing-access-policies-7db3c87.md "Specifics for Access Policies in the Cloud Foundry Environment.")
 
 [Managing User Roles](managing-user-roles-4e86f0d.md "The user role monitor allows a tenant administrator to manage user roles which then can be used during inbound authorization of an integration flow execution.")
 
@@ -226,7 +226,7 @@ When you add or edit a tile, you can specify the following filter categories:
 
 [Performing Connectivity Tests](performing-connectivity-tests-d5b2fae.md "You can test the connectivity to a receiver system.")
 
-[Managing Stores](managing-stores-59f8e3a.md "The Manage Stores section allows you to manage various temporary data storages on your tenant.")
+[Manage Stores](manage-stores-59f8e3a.md "The Manage Stores section allows you to manage various temporary data storages on your tenant.")
 
 [Managing Data Stores](managing-data-stores-ac39f1d.md "")
 
@@ -234,13 +234,13 @@ When you add or edit a tile, you can specify the following filter categories:
 
 [Managing Number Ranges](managing-number-ranges-b6e17fa.md "The topic provides an overview of number ranges related artifacts.")
 
-[Accessing Logs, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d5a4113e6da14a18838898d769261512.html "The Access Logssection allows you to monitor audit logs (resulting from system changes) and to analyze errors that occurred during inbound HTTP processing (and documented in system log files).") :arrow_upper_right:
+[Access Logs, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d5a4113e6da14a18838898d769261512.html "The Access Logssection allows you to monitor audit logs (resulting from system changes) and to analyze errors that occurred during inbound HTTP processing (and documented in system log files).") :arrow_upper_right:
 
 [Monitoring Audit Log, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2d6031ffc1aa4af08a03f0444b979667.html "The audit log contains information on system changes. These events can be for example the deployment of an integration flow as well as a configuration change.") :arrow_upper_right:
 
-[Accessing Logs](accessing-logs-c1649cd.md "The Access Logs section allows you to monitor and to analyze errors that occurred during inbound HTTP processing (and documented in system log files)")
+[Access Logs](access-logs-c1649cd.md "The Access Logs section allows you to monitor and to analyze errors that occurred during inbound HTTP processing (and documented in system log files)")
 
-[Managing Locks](managing-locks-e3fb788.md "The Manage Locks section lets you manage various locked entities on your tenant.")
+[Manage Locks](manage-locks-e3fb788.md "The Manage Locks section lets you manage various locked entities on your tenant.")
 
 [Message Locks](message-locks-bce9ae0.md "This section allows you to display and manage lock entries that are created (in the in-progress repository) to avoid the same message being processed several times in parallel (for example, by different runtime nodes).")
 

@@ -2,11 +2,11 @@
 
 # Technical Landscape for On Premise-On Demand Integration
 
-As one example for certificate-based connectivity, customer intends to connect a customer-based SAP on-premise system \(based on SAP Application Server ABAP with Cloud Integration.
+As one example for certificate-based connectivity, customer intends to connect a customer-based SAP on-premise system \(based on SAP Application Server ABAP with Cloud Integration\).
 
 The following figure illustrates the system landscape.
 
- ![SAP HCI Onboarding Back-End Configuration OPOD External](images/SAP_HCI_Onboarding_Back-End_Configuration_OPOD_External_afbe5b3.png) 
+![SAP HCI Onboarding Back-End Configuration OPOD External](images/SAP_HCI_Onboarding_Back-End_Configuration_OPOD_External_afbe5b3.png)
 
 > ### Note:  
 > We use the following abbreviations in this documentation:

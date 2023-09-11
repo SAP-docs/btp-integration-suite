@@ -8,7 +8,7 @@ The WS-Security verifier uses a public key to verify a WS-Security response payl
 
 The following figure illustrates the communication path for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_WS_Security_Outbound_Response_Verify_516df31.png) 
+![](images/SAP_HCI_Security_Renewal_-_WS_Security_Outbound_Response_Verify_516df31.png)
 
 1.  Receiver administrator: Creates a new key pair/certificate.
 2.  Receiver administrator: Provides the tenant administrator with the new certificate.

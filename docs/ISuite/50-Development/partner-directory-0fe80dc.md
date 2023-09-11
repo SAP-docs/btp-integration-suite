@@ -117,7 +117,7 @@ The API allows you to access \(read, write, delete\) a binary parameter of the P
 
 A Partner Directory parameter has a value and a type. The currently supported predefined types are `Binary` and `String`.
 
-A binary parameter has a maximum size of 262 KB.
+A binary parameter has a maximum size of 1,5 MB.
 
 The following content types are supported \(defined by the `ContentType` parameter\): xml, xsl, xsd, json, text, zip, gz \(for GZIP files\), zlib, crt \(for DER encoded X.509 certificates\)
 
@@ -247,7 +247,7 @@ Restriction:
 
 ## Example Requests
 
-You find various example requests on SAP API Business Hub at [https://api.sap.com/api/PartnerDirectory/](https://api.sap.com/api/PartnerDirectory/).
+You find various example requests on SAP Business Accelerator Hub at [https://api.sap.com/api/PartnerDirectory/](https://api.sap.com/api/PartnerDirectory/).
 
 For more example requests, see [Partner Directory Example Requests](partner-directory-example-requests-30e9cd6.md).
 
@@ -257,13 +257,13 @@ To trigger the modifying actions \(POST, PUT, and DELETE\), you need to fetch a 
 
 
 
-On SAP API Business Hub, you can test API calls against a sandbox tenant or against a custom tenant \(to be configured under *API Environment*\). If you want to perform an API call against your custom tenant using an HTTP client such like Postman, make sure that the request URL is composed in the following way:
+On SAP Business Accelerator Hub, you can test API calls against a sandbox tenant or against a custom tenant \(to be configured under *API Environment*\). If you want to perform an API call against your custom tenant using an HTTP client such like Postman, make sure that the request URL is composed in the following way:
 
 `https://<host address>/api/v1/<relative resource path>`
 
 The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
 
-You can find the relative resource path for each operation on SAP API Business Hub.
+You can find the relative resource path for each operation on SAP Business Accelerator Hub.
 
 
 

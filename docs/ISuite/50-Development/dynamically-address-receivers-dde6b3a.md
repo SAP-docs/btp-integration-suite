@@ -8,7 +8,7 @@ Assume that you need to establish communication with different receiver systems 
 
 To illustrate this rule, check out the *Partner Directory – Dynamic Receiver* integration flow. It's modeled as shown in the figure.
 
- ![](images/Guidelines_Partner_Directory_Dynamic_Receiver_2baa897.png) 
+![](images/Guidelines_Partner_Directory_Dynamic_Receiver_2baa897.png)
 
 The integration flow performs the following steps:
 
@@ -103,21 +103,21 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     context
 
 
     
     </td>
     <td valign="top">
-
+    
     `PartnerDirectory-DynamicReceiver`
 
 
     
     </td>
     <td valign="top">
-
+    
     Defines the Data Store name. In this case, the name reflects this guideline.
 
 
@@ -126,21 +126,21 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     receiver
 
 
     
     </td>
     <td valign="top">
-
-     `Partner ${property.pid}` 
+    
+    `Partner ${property.pid}` 
 
 
     
     </td>
     <td valign="top">
-
+    
     Defines the Data Store entry ID. In this case, the value is given by the partner ID from the Partner Directory.
 
 

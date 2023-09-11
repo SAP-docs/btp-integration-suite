@@ -4,6 +4,9 @@
 
 JDBC receiver adapter supports Microsoft SQL Server cloud database provided by Amazon RDS.
 
+> ### Note:  
+> This adapter enables you to connect Cloud Integration to a remote database system. SAP can’t give advice on how to configure the external system nor does SAP provide support related to this system.
+
 **Database Details**
 
 
@@ -23,6 +26,13 @@ Amazon RDS
 
 
 </td>
+<td valign="top">
+
+Microsoft Azure
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -32,7 +42,7 @@ Infrastructure
 
 
 </td>
-<td valign="top">
+<td valign="top" colspan="2">
 
 Cloud
 
@@ -48,7 +58,7 @@ SAP BTP Environment
 
 
 </td>
-<td valign="top">
+<td valign="top" colspan="2">
 
 Neo and Cloud Foundry
 
@@ -60,6 +70,15 @@ Neo and Cloud Foundry
 <td valign="top">
 
 JDBC URL Pattern
+
+
+
+</td>
+<td valign="top">
+
+`jdbc:sqlserver://[serverName[\instanceName][:portNumber]][;property=value[;property=value]]`
+
+You can delimit properties by using semicolon \(;\). You can't duplicate them.
 
 
 
@@ -89,6 +108,13 @@ JDBC URL Example
 
 
 </td>
+<td valign="top">
+
+`jdbc:sqlserver://mysqlserver:1433;databaseName=mysqlserverdb;loginTimeout=0`
+
+
+
+</td>
 </tr>
 </table>
 
@@ -100,5 +126,5 @@ Before connecting to this database, you must upload the drivers and then, add th
 **Related Information**  
 
 
-[JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md "The JDBC (Java Database Connectivity) adapter enables you to connect Cloud Integration to cloud or on-premise databases.")
+[JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md "The JDBC (Java Database Connectivity) adapter enables you to connect SAP Integration Suite to cloud databases.")
 

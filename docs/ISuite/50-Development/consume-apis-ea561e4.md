@@ -4,14 +4,18 @@
 
 Consume APIs via the API business hub enterprise. In the API business hub enterprise, an application developer registers, explores the API exposed by customers, creates applications, and tests APIs.
 
-If you have added API business hub enterprise as a capability with Integration suite, or if you’ve subscribed to API Business Hub Enterprise as part of standalone API Management subscription, you have an option to experience the new design of the API business hub enterprise user interface along with the classic design.
+If you've added API business hub enterprise as a capability with Integration suite, or if you’ve subscribed to the API business hub enterprise as part of the standalone API Management subscription, you have the option to experience the new design of the API business hub enterprise user interface along with the classic design.
 
-When you login for the very first time, you’ll still see the Classic Design of the API Business Hub Enterprise. However, you can use the toggle switch to view the new design. At this point of time, only the Site Administrator can use the toggle switch.
+When you login for the very first time, you’ll still see the classic design of the API business hub enterprise. However, you can use the toggle switch to view the new design. At this point of time, only the Site Administrator can use the toggle switch.
 
 > ### Note:  
-> By default, the Site Administrator has an option to switch from classic to new design and set the new design as the default UI using the **Site Editor.** The Site Administrator has the right to enable the configuration to let all the other users switch between the old and the new design. For more information, see [Customize the Visual Format of the API Business Hub Enterprise](customize-the-visual-format-of-the-api-business-hub-enterprise-2eacd52.md)
+> By default, the Site Administrator has an option to switch from classic to new design and set the new design as the default UI using the **Site Editor.** The Site Administrator has the right to enable the configuration to let all the other users switch between the old and the new design. For more information, see [Customize the Visual Format of the API business hub enterprise](customize-the-visual-format-of-the-api-business-hub-enterprise-2eacd52.md).
 
-![](images/developer_service_task_overview_3d9b563.png)
+Refer this video for a complete walk through of the new design of the API business hub enterprise:
+
+
+
+![](images/ABHE_Block_509b298.png)
 
 API business hub enterprise is an application that provides a common platform for Application developers to consume APIs. Every API Management customer is provided with their own API business hub enterprise application on cloud. The API business hub enterprise offers capabilities to onboard application developers, explore and test APIs, create and subscribe to Applications.
 
@@ -29,7 +33,7 @@ The API business hub enterprise supports the following features:
 **Related Information**  
 
 
-[Configure the API Business Hub Enterprise \[Classic Design\]](configure-the-api-business-hub-enterprise-classic-design-7b71b16.md "You can configure the API business hub enterprise to personalize it for your organization.")
+[Configure the API business hub enterprise \[Classic Design\]](configure-the-api-business-hub-enterprise-classic-design-7b71b16.md "You can configure the API business hub enterprise to personalize it for your organization.")
 
-[Configure the API Business Hub Enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md "You can configure the API business hub enterprise to personalize it for your organization.")
+[Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md "You can configure the API business hub enterprise to personalize it for your organization.")
 

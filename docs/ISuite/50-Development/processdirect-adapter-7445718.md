@@ -46,7 +46,7 @@ The ProcessDirect adapter supports the following features:
 
 -   **Header propagation**: Header propagation is not supported across producer and consumer integration flows unless configured in *<Allowed Header\(s\)\>* in the integration flow's runtime configuration.
 
--   **Property propagation**: Property propagation is not supported across producer and consumer integration flows, except for ***SAP\_SAPPASSPORT*** property. This property is for internal use only and users are not allowed to modify it.
+-   **Property propagation**: Property propagation is not supported across producer and consumer integration flows, except for `SAP_SAPPASSPORT` property. This property is for internal use only and users are not allowed to modify it.
 
 
 > ### Tip:  

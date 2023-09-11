@@ -10,6 +10,8 @@ To understand this integration flow, let's look at an example of an Update opera
 
 
 
+## Example
+
 You open an app on your smartphone to extend your stay in a hotel room in the city of New York. This application sends the booking information to a hotel booking system. The hotel booking system receives this data with the help of a SOAP Web service and updates it.
 
 The mobile application communicates with the hotel booking system by calling a URI to update a booking record and passes the booking information as the payload. When the OData sender receives the request, it passes it to the Request Mapping element. This mapping element contains information that maps the fields from the OData structure to the SOAP structure and passes the update request to the SOAP receiver.

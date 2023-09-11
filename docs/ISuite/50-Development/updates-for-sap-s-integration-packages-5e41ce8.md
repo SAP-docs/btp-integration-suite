@@ -34,7 +34,7 @@ There are two modes through which the package update is done:
 
 1.  If you've copied a package into your *Design* space and an update is available, only then *Update Available* label appears next to the package name.
 
-    ![](images/Update_Available_1909_3526d9a.png) 
+    ![](images/Update_Available_1909_3526d9a.png)
 
 2.  Open the package and choose *Update Package*.
 

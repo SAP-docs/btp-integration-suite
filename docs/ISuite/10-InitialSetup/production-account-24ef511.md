@@ -15,7 +15,7 @@ This account model includes services for you to start working in SAP Integration
 
 [Working with Integration Suite Home](../20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md "Access the various features and resources available on the Integration Suite home page.")
 
-[Activating Capabilities](../20-Working_with_SAP_Integration_Suite_Home/activating-capabilities-2ffb343.md "Activate capabilities for the SAP Integration Suite.")
+[Activating and Managing Capabilities](../20-Working_with_SAP_Integration_Suite_Home/activating-and-managing-capabilities-2ffb343.md "Activate capabilities for the SAP Integration Suite.")
 
-[Unsubscribing Integration Suite](unsubscribing-integration-suite-74947c8.md "Unsubscribe from the Integration Suite service.")
+[Unsubscribing from Integration Suite](unsubscribing-from-integration-suite-74947c8.md "Unsubscribe from the Integration Suite service.")
 

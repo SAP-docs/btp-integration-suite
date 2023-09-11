@@ -7,9 +7,11 @@ You use the OpenConnectors receiver adapter in integration flows to communicate 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -105,7 +107,7 @@ Description
 Specify the URI that depends on your region and environment, which helps you establish connection with the *Open Connecters* service.
 
 > ### Example:  
-> ***https://api.openconnectors.ext.int.sap.hana.ondemand.com/elements/api-v2***
+> `https://api.openconnectors.ext.int.sap.hana.ondemand.com/elements/api-v2`
 
 
 
@@ -142,7 +144,7 @@ See: [Deploying a User Credentials Artifact](deploying-a-user-credentials-artifa
 Specify the resource name of an instance that you want to access. Resources belonging to specific instances and its operations are listed by Open Connectors. Choose *Select* to see the list of resources available for this specific instance.
 
 > ### Note:  
-> -   Do not use ***$*** character while defining query parameters.
+> -   Do not use `$` character while defining query parameters.
 > 
 > -   Make sure you provide the*Base URI* before selecting the resources.
 
@@ -277,9 +279,9 @@ Specify the content format for the outgoing message. For example, if you select 
 </td>
 <td valign="top">
 
-Define the value of a variable you want to modify. For example, you have defined a variable ***/name/\{varname1\}\{varname2\}*** in the resource field. Now use the *Query Parameters for Resource* field to define the value for ***\{varname1\}\{varname2\}*** variables. Use commas to separate more than variable such as ***varname1=hello world, varname2= hello SAP***.
+Define the value of a variable you want to modify. For example, you have defined a variable `/name/{varname1}{varname2}` in the resource field. Now use the *Query Parameters for Resource* field to define the value for `{varname1}{varname2}` variables. Use commas to separate more than variable such as `varname1=hello world, varname2= hello SAP`.
 
-You can now include queries to the URI to filter for specific resources from the response. For example, define the query parameters with the query data in the format as follows***$\{header.querydata1\};$\{header.querydata2\}***, and use ***;*** to sperate two distinct queries.
+You can now include queries to the URI to filter for specific resources from the response. For example, define the query parameters with the query data in the format as follows`${header.querydata1};${header.querydata2}`, and use `;` to sperate two distinct queries.
 
 
 

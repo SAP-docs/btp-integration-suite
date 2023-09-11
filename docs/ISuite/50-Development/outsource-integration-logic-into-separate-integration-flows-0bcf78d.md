@@ -6,7 +6,7 @@ This variant illustrates outsourcing parts of the integration into separate inte
 
 The *Preserve Readability - Apply Balanced Encapsulation* integration flow reads product details \(for a *productId* value given with the inbound HTTP request header\) from the WebShop system. Depending on the price of the product, different integration flows are called:
 
- ![](images/Design_Guidelines_Encapsulation_d25cf2f.png) 
+![](images/Design_Guidelines_Encapsulation_d25cf2f.png)
 
 > ### Note:  
 > The *Encode header* Script step encodes the header provided with the inbound message in order to meet the security-related guideline [Encode Dynamic Parameters](encode-dynamic-parameters-d278350.md).
@@ -20,7 +20,7 @@ For the sake of simplicity, both target integration flows are designed in a simi
 
 To show an example, the *Preserve Readability - Apply Balanced Encapsulation - Process High Price Items* integration flow has the following structure:
 
- ![](images/Encapsulation_High_Price_5522577.png) 
+![](images/Encapsulation_High_Price_5522577.png)
 
 Both integration flows call the generic receiver and create a data store entry \(with *Data Store Name* set to *PreserveReadability-Encapsulation*\).
 

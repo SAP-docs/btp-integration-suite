@@ -29,7 +29,7 @@ You have created an OData API artifact in an integration package. You can use th
     > -   Only OData models up to 300 KB in size are supported.
 
     > ### Restriction:  
-    > Importing of EDMX files with navigation entities are not supported and also there is size restrictions on EDMX files with large number of complex entities. For more information, see the KBA [2844323](https://launchpad.support.sap.com/#/notes/2844323) and read the blog on [When to use an OData API](https://blogs.sap.com/2017/07/17/odata-service-project-vs-integration-project-when-to-use-what-in-cloud-platform-integration/).
+    > Importing of EDMX files with navigation entities are not supported and also there is size restrictions on EDMX files with large number of complex entities. For more information, see the KBA [2844323](https://me.sap.com/notes/2844323) and read the blog on [When to use an OData API](https://blogs.sap.com/2017/07/17/odata-service-project-vs-integration-project-when-to-use-what-in-cloud-platform-integration/).
 
 5.  Choose *Step 2*. In the *Select Structure* page, you can see entity types and function imports from the EDMX listed in a table. The table also displays the EDM type, primary key and documentation information associated with the OData objects.
 

@@ -11,9 +11,11 @@
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 The *General Splitter* splits a composite message comprising N messages into N individual messages, each containing 1 message with the enveloping elements of the composite message. The term *enveloping elements* refers to these elements including the split point. Note elements that follow the one that is indicated as split point in the original message \(but on the same level\), are'nt counted as enveloping elements. They won't be part of the resulting messages.
 
@@ -64,14 +66,14 @@ If you use a Splitter step in a local integration process, the following limitat
     </tr>
     <tr>
     <td valign="top">
-
-     *XPath Expression* 
+    
+    *XPath Expression* 
 
 
     
     </td>
     <td valign="top">
-
+    
     XPath to the split term
 
     You can specify the absolute or relative path.
@@ -86,25 +88,7 @@ If you use a Splitter step in a local integration process, the following limitat
     > 
     > The following characters are **not** supported in an XPath expression:
     > 
-    > -   |
-    > 
-    > -   \+
-    > 
-    > -   \*
-    > 
-    > -   \>
-    > 
-    > -   <
-    > 
-    > -   \>=
-    > 
-    > -   <=
-    > 
-    > -   \[
-    > 
-    > -   \]
-    > 
-    > -   @
+    > |, +, \*, \>, <, \>=, <=, \[, \], @.
 
     > ### Caution:  
     > You cannot split by **values** of message elements.
@@ -141,14 +125,14 @@ If you use a Splitter step in a local integration process, the following limitat
     </tr>
     <tr>
     <td valign="top">
-
-     *Grouping* 
+    
+    *Grouping* 
 
 
     
     </td>
     <td valign="top">
-
+    
     The size of the groups into which the composite message is to be split.
 
     For example, if a message has 10 nodes and grouping is defined as 2, the message is split into 5 messages with 2 nodes each.
@@ -159,14 +143,14 @@ If you use a Splitter step in a local integration process, the following limitat
     </tr>
     <tr>
     <td valign="top">
-
-     *Streaming* 
+    
+    *Streaming* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option if you want to stream the process of splitting a large composite message.
 
     If you activate streaming, the system already starts processing parts \(*chunks*\) of the composite message before the message is fully transferred to the memory \(of the runtime node\).
@@ -179,14 +163,14 @@ If you use a Splitter step in a local integration process, the following limitat
     </tr>
     <tr>
     <td valign="top">
-
-     *Parallel Processing* 
+    
+    *Parallel Processing* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this checkbox if you want to enable \(parallel\) processing of all the split messages at once.
 
     More information: [Cloud Integration – Using Parallel Processing in General and Iterating Splitter](https://blogs.sap.com/2018/10/17/cloud-integration-using-parallel-processing-in-general-and-iterating-splitter/) \(SAP Community blog\)
@@ -197,7 +181,7 @@ If you use a Splitter step in a local integration process, the following limitat
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Number of Concurrent Processes*
 
     \(Enabled only if *Parallel Processing* is selected\)
@@ -206,7 +190,7 @@ If you use a Splitter step in a local integration process, the following limitat
     
     </td>
     <td valign="top">
-
+    
     If you have selected *Parallel Processing*, the split messages are processed concurrently in threads. Define how many concurrent processes to use in the splitter. The default is 10. The maximum value allowed is 50.
 
 
@@ -215,7 +199,7 @@ If you use a Splitter step in a local integration process, the following limitat
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Timeout \(in s\)*
 
     \(Enabled only if *Parallel Processing* is selected\)
@@ -224,7 +208,7 @@ If you use a Splitter step in a local integration process, the following limitat
     
     </td>
     <td valign="top">
-
+    
     Maximum time in seconds that the system waits for processing all split items to complete before it is aborted. The default value is 300 seconds.
 
     > ### Caution:  
@@ -241,9 +225,9 @@ If you use a Splitter step in a local integration process, the following limitat
     > 
     > The inbound payload contains 100 items to split, and you've activated *Parallel Processing* with the following settings:
     > 
-    > -   *Number of Concurrent Processes*: ***10***
+    > -   *Number of Concurrent Processes*: `10`
     > 
-    > -   *Timeout \(in s\)*: ***60*** \(1 minute\)
+    > -   *Timeout \(in s\)*: `60` \(1 minute\)
     > 
     > 
     > Let's assume that after 1 minute 10 of the 100 elements have been fully processed and there are further 10 elements in processing.
@@ -264,14 +248,14 @@ If you use a Splitter step in a local integration process, the following limitat
     </tr>
     <tr>
     <td valign="top">
-
-     *Stop On Exception* 
+    
+    *Stop On Exception* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option to stop message processing if an exception occurs.
 
 
@@ -287,7 +271,7 @@ If you use a Splitter step in a local integration process, the following limitat
 
 ## Next Steps
 
-When a message is split \(as configured in a Splitter step of an integration flow\), the Camel headers listed below are generated every time the runtime finishes splitting an Exchange. You have several options for accessing these Camel headers at runtime. For example, suppose that you are configuring an integration flow with a Splitter step before an SFTP receiver adapter. If you enter the string ***split\_$\{exchangeId\}\_Index$\{header.CamelSplitIndex\}*** for *File Name*, the file name of the generated file on the SFTP server contains the Camel header `CamelSplitIndex`. In other words, the information on the number of split Exchanges induced by the Splitter step.
+When a message is split \(as configured in a Splitter step of an integration flow\), the Camel headers listed below are generated every time the runtime finishes splitting an Exchange. You have several options for accessing these Camel headers at runtime. For example, suppose that you are configuring an integration flow with a Splitter step before an SFTP receiver adapter. If you enter the string `split_${exchangeId}_Index${header.CamelSplitIndex}` for *File Name*, the file name of the generated file on the SFTP server contains the Camel header `CamelSplitIndex`. In other words, the information on the number of split Exchanges induced by the Splitter step.
 
 -   CamelSplitIndex
 
@@ -309,15 +293,15 @@ When a message is split \(as configured in a Splitter step of an integration flo
 
 [General and Iterating Splitter \(Examples\)](general-and-iterating-splitter-examples-698e594.md "")
 
-[https://blogs.sap.com/2018/01/16/stop-on-exception-for-iteratinggeneral-splitter/](https://blogs.sap.com/2018/01/16/stop-on-exception-for-iteratinggeneral-splitter/)
+[“Stop on Exception” for Iterating/General Splitter | SAP Blogs](https://blogs.sap.com/2018/01/16/stop-on-exception-for-iteratinggeneral-splitter/)
 
-[https://blogs.sap.com/2018/01/26/grouping-option-of-iteratinggeneral-splitter/](https://blogs.sap.com/2018/01/26/grouping-option-of-iteratinggeneral-splitter/)
+[“Grouping” Option of Iterating/General Splitter | SAP Blogs](https://blogs.sap.com/2018/01/26/grouping-option-of-iteratinggeneral-splitter/)
 
-[https://blogs.sap.com/2018/02/07/cloud-integration-usage-of-splitter-flow-steps-in-local-process/](https://blogs.sap.com/2018/02/07/cloud-integration-usage-of-splitter-flow-steps-in-local-process/)
+[Cloud Integration – Usage of Splitter Flow Steps in Local Process | SAP Blogs](https://blogs.sap.com/2018/02/07/cloud-integration-usage-of-splitter-flow-steps-in-local-process/)
 
-[https://blogs.sap.com/2018/10/17/cloud-integration-usage-of-general-and-iterating-splitter-with-exception-handling/](https://blogs.sap.com/2018/10/17/cloud-integration-usage-of-general-and-iterating-splitter-with-exception-handling/)
+[Cloud Integration – Usage of General and Iterating Splitter with Exception Handling | SAP Blogs](https://blogs.sap.com/2018/10/17/cloud-integration-usage-of-general-and-iterating-splitter-with-exception-handling/)
 
-[https://blogs.sap.com/2018/10/17/cloud-integration-using-parallel-processing-in-general-and-iterating-splitter/](https://blogs.sap.com/2018/10/17/cloud-integration-using-parallel-processing-in-general-and-iterating-splitter/)
+[Cloud Integration – Using Parallel Processing in General and Iterating Splitter | SAP Blogs](https://blogs.sap.com/2018/10/17/cloud-integration-using-parallel-processing-in-general-and-iterating-splitter/)
 
 [Handle Exceptions When Using the Splitter Pattern](handle-exceptions-when-using-the-splitter-pattern-74e431c.md "In many integration scenarios, larger messages are split into smaller parts using a splitter pattern. The smaller chunks are then processed by SAP Integration Suite .  ")
 

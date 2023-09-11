@@ -17,13 +17,75 @@ For example, in your integration scenario the tenant needs to retrieve data on e
 In the integration flow model, you design the external service as a receiver shape and to connect the request reply step with the receiver shape with a receiver channel.
 
 > ### Caution:  
-> The request reply step does not work with all available Cloud Integration adapter types.
+> The request reply step does not work with all available adapter types.
 > 
-> Adapters that can be used with the request reply step are the following ones \(to mention examples\):
+> Adapters that can be used with the following receiver adapter types:
 > 
-> -   OData receiver adapter
-> -   HTTP receiver adapter
-> -   SOAP \(SOAP 1.x\) receiver adapter
+> -   AMQP
+> 
+> -   Ariba
+> 
+> -   AS2
+> 
+> -   AS4
+> 
+> -   AzureStorage
+> 
+> -   Dropbox
+> 
+> -   Elster
+> 
+> -   Facebook
+> 
+> -   FTP
+> 
+> -   OData
+> 
+> -   HTTP
+> 
+> -   IDoc
+> 
+> -   JDBC
+> 
+> -   JMS
+> 
+> -   Kafka
+> 
+> -   LDAP
+> 
+> -   Mail
+> 
+> -   MDI
+> 
+> -   Microsoft Sharepoint
+> 
+> -   ODC
+> 
+> -   OpenConnectors
+> 
+> -   ProcessDirect
+> 
+> -   RabbitMQ
+> 
+> -   RFC
+> 
+> -   ServiceNow
+> 
+> -   SFTP
+> 
+> -   Slack
+> 
+> -   SOAP
+> 
+> -   Splunk
+> 
+> -   SuccessFactors
+> 
+> -   Twitter
+> 
+> -   Workday
+> 
+> -   XI
 
 
 

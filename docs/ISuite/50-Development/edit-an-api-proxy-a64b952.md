@@ -61,14 +61,14 @@ Consider the following examples:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Overview
 
 
     
     </td>
     <td valign="top">
-
+    
     You can edit the following:
 
     -   Name of the API
@@ -83,14 +83,14 @@ Consider the following examples:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Proxy Endpoint
 
 
     
     </td>
     <td valign="top">
-
+    
     You can add the proxy endpoint and the route rules.
 
 
@@ -99,14 +99,14 @@ Consider the following examples:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Target Endpoint
 
 
     
     </td>
     <td valign="top">
-
+    
     You can choose URL, API Provider, or API proxy, as the target endpoint as well as enter target endpoint rules.
 
 
@@ -115,15 +115,31 @@ Consider the following examples:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Resources
 
 
     
     </td>
     <td valign="top">
-
+    
     You can add resources, or change already existing ones.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Revision
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Once an API is created, you can plan subsequent compatible changes to the API by creating a revision.
 
 
     

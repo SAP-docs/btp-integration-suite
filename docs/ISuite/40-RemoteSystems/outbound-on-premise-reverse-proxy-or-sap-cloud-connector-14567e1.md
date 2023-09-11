@@ -54,7 +54,7 @@ Existing reverse proxy and demilitarized zone \(DMZ\) infrastructure can be reus
 <tr>
 <td valign="top">
 
-IT-based, centralized approach with more re-use potential, independent of SAP BTP or Cloud Integration infrastructure
+IT-based, centralized approach with more re-use potential, independent of SAP BTP cockpit or Cloud Integration infrastructure
 
 
 
@@ -70,14 +70,14 @@ De-central, simple solution that can be administered by LOBs and subsidiaries
 <tr>
 <td valign="top">
 
-Usage for other cloud scenarios besides SAP BTP/Cloud Integration-connectivity of backends
+Usage for other cloud scenarios besides SAP BTP cockpit/Cloud Integration-connectivity of backends
 
 
 
 </td>
 <td valign="top">
 
-Usage for other SAP BTP-related scenarios, for example, extension apps, possible
+Usage for other SAP BTP cockpit-related scenarios, for example, extension apps, possible
 
 
 
@@ -93,7 +93,7 @@ Additional capabilities might be provided by the reverse proxy \(load balancing,
 </td>
 <td valign="top">
 
-Synchronous native RFC-client call from SAP BTP supported in addition \(that means, outside Cloud Integration\)
+Synchronous native RFC-client call from SAP BTP cockpit supported in addition \(that means, outside Cloud Integration\)
 
 
 
@@ -125,7 +125,7 @@ Monitoring and control included in the IT processes, tools and concepts.
 </td>
 <td valign="top">
 
-Monitoring and control native on SAP BTP \(for example, SAP BTP cockpit, User, Security\)
+Monitoring and control native on SAP BTP cockpit \(for example, SAP BTP cockpit, User, Security\)
 
 
 
@@ -191,7 +191,7 @@ To decide whether to use a reverse proxy or SAP Cloud Connector, you can follow 
 
 3.  Have a reverse proxy in place connected to the required application systems?
 
-    -   Use reverse proxy, add SAP BTP IP range for white-listing, use SSL/TLS, apply your IT standards.
+    -   Use reverse proxy, add SAP BTP cockpit IP range for white-listing, use SSL/TLS, apply your IT standards.
 
     -   No: Go to next question.
 

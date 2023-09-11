@@ -68,21 +68,21 @@ The parent integration process is designed in the following way \(only exception
     </tr>
     <tr>
     <td valign="top">
-
+    
     context
 
 
     
     </td>
     <td valign="top">
-
+    
     Constant
 
 
     
     </td>
     <td valign="top">
-
+    
     HandlingErrors-DependentFlowsSimple
 
 
@@ -91,21 +91,21 @@ The parent integration process is designed in the following way \(only exception
     </tr>
     <tr>
     <td valign="top">
-
+    
     receiver
 
 
     
     </td>
     <td valign="top">
-
+    
     Constant
 
 
     
     </td>
     <td valign="top">
-
+    
     Error
 
 

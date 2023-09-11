@@ -50,7 +50,7 @@ Here's a simple example to show how this works: Let's say you want to write the 
 
 In this case, you could configure the Content Modifier as follows:
 
-On the *Message Header* tab of the Content Modifier, add a new entry. Specify *XPath* as the *Type* \(because you want to address the `CustomerNumber` element in an incoming XML message\). For *Value*, enter the exact XPath expression that is to be used to address this element \(for example, */Order/Customer/CustomerNumber*\). In an additional field, you now need to specify the data format expected for the content of the `CustomerNumber` element. To express that this is a String element, you need to specify a valid Java data type, which is ***java.lang.string*** in this case. For *Name*, enter the desired name of the message header \(which should contain the `CustomerNumber` value\), for example, ***CustomerNo***.
+On the *Message Header* tab of the Content Modifier, add a new entry. Specify *XPath* as the *Type* \(because you want to address the `CustomerNumber` element in an incoming XML message\). For *Value*, enter the exact XPath expression that is to be used to address this element \(for example, */Order/Customer/CustomerNumber*\). In an additional field, you now need to specify the data format expected for the content of the `CustomerNumber` element. To express that this is a String element, you need to specify a valid Java data type, which is `java.lang.string` in this case. For *Name*, enter the desired name of the message header \(which should contain the `CustomerNumber` value\), for example, `CustomerNo`.
 
 
 

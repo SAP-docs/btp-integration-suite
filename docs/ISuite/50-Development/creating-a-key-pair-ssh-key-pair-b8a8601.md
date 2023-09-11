@@ -42,14 +42,14 @@ You create an SSH key pair to connect to the SFTP server.
     </tr>
     <tr>
     <td valign="top">
-
-     *Alias* 
+    
+    *Alias* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Alias for the artifact that you want to create. The alias must be unique. You can't create an alias that is already existing in the tenant for another key pair or SSH key.
 
 
@@ -58,14 +58,14 @@ You create an SSH key pair to connect to the SFTP server.
     </tr>
     <tr>
     <td valign="top">
-
-     *Key Type* 
+    
+    *Key Type* 
 
 
     
     </td>
     <td valign="top">
-
+    
     The available options are:
 
     -   RSA
@@ -81,14 +81,14 @@ You create an SSH key pair to connect to the SFTP server.
     </tr>
     <tr>
     <td valign="top">
-
-     *Key Size* 
+    
+    *Key Size* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Pick a key-bit value of your choice from the list.
 
 
@@ -97,14 +97,14 @@ You create an SSH key pair to connect to the SFTP server.
     </tr>
     <tr>
     <td valign="top">
-
-     *Signature Algorithm* 
+    
+    *Signature Algorithm* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Pick a hash algorithm of your choice from the list.
 
 
@@ -113,14 +113,14 @@ You create an SSH key pair to connect to the SFTP server.
     </tr>
     <tr>
     <td valign="top">
-
-     *Common Name \(CN\)* 
+    
+    *Common Name \(CN\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide a common name for the technical user. You use this common name while deploying an OAuth2 credential.
 
 
@@ -129,14 +129,14 @@ You create an SSH key pair to connect to the SFTP server.
     </tr>
     <tr>
     <td valign="top">
-
-     *Organizational Unit \(OU\)* 
+    
+    *Organizational Unit \(OU\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Optional\): Enter the department name within your organization.
 
 
@@ -145,14 +145,14 @@ You create an SSH key pair to connect to the SFTP server.
     </tr>
     <tr>
     <td valign="top">
-
-     *Organization \(O\)* 
+    
+    *Organization \(O\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Optional\): Enter the name of your organization.
 
 
@@ -161,14 +161,14 @@ You create an SSH key pair to connect to the SFTP server.
     </tr>
     <tr>
     <td valign="top">
-
-     *Location \(L\)* 
+    
+    *Location \(L\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Optional\): Enter the name of the city or town.
 
 
@@ -177,14 +177,14 @@ You create an SSH key pair to connect to the SFTP server.
     </tr>
     <tr>
     <td valign="top">
-
-     *State or Province \(ST\)* 
+    
+    *State or Province \(ST\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Optional\): Enter the name of your state or province.
 
 
@@ -193,14 +193,14 @@ You create an SSH key pair to connect to the SFTP server.
     </tr>
     <tr>
     <td valign="top">
-
-     *Country/Region \(C\)* 
+    
+    *Country/Region \(C\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the two-letter ISO code for the country.
 
 
@@ -209,14 +209,14 @@ You create an SSH key pair to connect to the SFTP server.
     </tr>
     <tr>
     <td valign="top">
-
-     *E-Mail \(E\)* 
+    
+    *E-Mail \(E\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Optional\): Enter the email address associated to the user.
 
 
@@ -225,14 +225,14 @@ You create an SSH key pair to connect to the SFTP server.
     </tr>
     <tr>
     <td valign="top">
-
-     *Valid From* 
+    
+    *Valid From* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the date from which you want the key pair to be active.
 
 
@@ -241,14 +241,14 @@ You create an SSH key pair to connect to the SFTP server.
     </tr>
     <tr>
     <td valign="top">
-
-     *Valid Until* 
+    
+    *Valid Until* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the date until which you want the key pair to be active.
 
 
@@ -265,7 +265,7 @@ You create an SSH key pair to connect to the SFTP server.
 **Related Information**  
 
 
-[Importing a Key Pair](importing-a-key-pair-083911e.md "Import a private/public key pair to the tenant keystore.")
+[Uploading a Key Pair](uploading-a-key-pair-083911e.md "Upload a private/public key pair to the tenant keystore.")
 
 [Updating a Key Pair](updating-a-key-pair-4ceda24.md "Update a key pair keeping the alias of the keystore entry unchanged.")
 

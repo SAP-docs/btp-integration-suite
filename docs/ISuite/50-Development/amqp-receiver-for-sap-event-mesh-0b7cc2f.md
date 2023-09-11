@@ -9,9 +9,11 @@ Enables SAP Integration Suite to send messages to queues or topics in SAP Event 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > To be able to connect to queues or topics, you have to create queues and/or topics in the message broker. This needs to be done in the message broker with the configuration tools provided by the message broker.
@@ -55,7 +57,7 @@ Description
 <tr>
 <td valign="top">
 
- *Name/Adapter Type* 
+*Name/Adapter Type* 
 
 
 
@@ -71,7 +73,7 @@ AMQP
 <tr>
 <td valign="top">
 
- *Transport Protocol* 
+*Transport Protocol* 
 
 
 
@@ -89,14 +91,14 @@ The protocol that the message broker supports:
 <tr>
 <td valign="top">
 
- *Message Protocol* 
+*Message Protocol* 
 
 
 
 </td>
 <td valign="top">
 
- *AMQP 1.0* 
+*AMQP 1.0* 
 
 
 
@@ -129,7 +131,7 @@ Description
 <tr>
 <td valign="top">
 
- *Host* 
+*Host* 
 
 
 
@@ -145,7 +147,7 @@ Specify the hostname of the message broker.
 <tr>
 <td valign="top">
 
- *Port* 
+*Port* 
 
 
 
@@ -154,7 +156,7 @@ Specify the hostname of the message broker.
 
 Specify the port of the message broker.
 
-Enter ***443***.
+Enter `443`.
 
 
 
@@ -163,7 +165,7 @@ Enter ***443***.
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -185,7 +187,7 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 <tr>
 <td valign="top">
 
- *Path* 
+*Path* 
 
 
 
@@ -194,7 +196,7 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 
 Specify the access path of the message broker.
 
-Enter ***/protocols/amqp10ws***.
+Enter `/protocols/amqp10ws`.
 
 
 
@@ -203,7 +205,7 @@ Enter ***/protocols/amqp10ws***.
 <tr>
 <td valign="top">
 
- *Connect with TLS* 
+*Connect with TLS* 
 
 
 
@@ -235,7 +237,7 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 
@@ -256,7 +258,7 @@ Select *OAuth2 Client Credentials*.
 <tr>
 <td valign="top">
 
- *Credential Name* \(only if *SASL* or *OAuth2 Client Credentials* is selected for *Authentication*\)
+*Credential Name* \(only if *SASL* or *OAuth2 Client Credentials* is selected for *Authentication*\)
 
 
 
@@ -296,7 +298,7 @@ Description
 <tr>
 <td valign="top">
 
- *Destination Type* 
+*Destination Type* 
 
 
 
@@ -316,7 +318,7 @@ Both options are supported by SAP Event Mesh.
 <tr>
 <td valign="top">
 
- *Destination Name* 
+*Destination Name* 
 
 
 
@@ -325,9 +327,9 @@ Both options are supported by SAP Event Mesh.
 
 Enter the name of the queue or topic.
 
-When you've selected *Queue* as *Destination Type*, specify the queue name as: ***queue:<queue name\>***
+When you've selected *Queue* as *Destination Type*, specify the queue name as: `queue:<queue name>`
 
-When you've selected *Topic* as *Destination Type*, specify the topic name as: ***topic:<topic name\>***
+When you've selected *Topic* as *Destination Type*, specify the topic name as: `topic:<topic name>`
 
 This value can be defined dynamically by using the following expressions: `${header.queueabc}` or `${property.queueabc}`.
 
@@ -338,7 +340,7 @@ This value can be defined dynamically by using the following expressions: `${hea
 <tr>
 <td valign="top">
 
- *Expiration Period \(in s\)* 
+*Expiration Period \(in s\)* 
 
 
 
@@ -354,7 +356,7 @@ Specify the Time to Live \(TTL\) for the message. If nothing is specified, the s
 <tr>
 <td valign="top">
 
- *Delivery* 
+*Delivery* 
 
 
 
@@ -375,7 +377,7 @@ Specify whether the message broker has to make sure that the message is not lost
 <tr>
 <td valign="top">
 
- *Message Type* 
+*Message Type* 
 
 
 
@@ -403,7 +405,7 @@ Define the message type to be used for sending the message to the message broker
 <tr>
 <td valign="top">
 
- *Header Format Handling* 
+*Header Format Handling* 
 
 
 

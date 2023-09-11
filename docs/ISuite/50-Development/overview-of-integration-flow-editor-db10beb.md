@@ -16,7 +16,7 @@ The editor displays and allows you to edit the content of the currently opened i
 
 The palette shows all the options required to model an integration flow. For more information about the using different components during the development, see [Configure Integration Flow Components](configure-integration-flow-components-3171795.md).
 
- ![](images/CPI_New_Editor_c6563be.png) 
+![](images/CPI_New_Editor_c6563be.png)
 
 
 
@@ -508,6 +508,18 @@ You can easily zoom in and out of the editor with your mouse scroll or the '+' a
 ### Quick Action Buttons for Integration Flow Steps
 
 All integration flow steps and adapters provide quick action buttons that help you to connect, delete, view information, or do more such quick actions. These buttons are helpful in quickly building an integration flow. For example, when you want to delete an adapter, you just need to select the channel and then select the *Delete* \(:wastebasket:\) icon in the palette. This process just takes 2 clicks with the editor.
+
+
+
+### Auto Layout
+
+The editor helps you automatically prettify the flow steps within the Process Pools.
+
+Select an Integration Process pool and choose either <span class="SAP-icons"></span> \(Arrange Horizontally\) or <span class="SAP-icons"></span> \(Arrange Vertically\) to automatically arrange the flow steps inside the process pool.
+
+If your choice of adding flow steps within an Integration Process pool is from left to right, then you can use <span class="SAP-icons"></span> \(Arrange Horizontally\). If your choice of adding flow steps within an Integration Process pool is from top to bottom, then you can use <span class="SAP-icons"></span> \(Arrange Vertically\).
+
+As a best practice, we recommend to save your design changes and configurations first and then use the auto layout feature. Such a practice would help you avoid losing your recent changes.
 
 
 

@@ -4,7 +4,7 @@
 
 The *Modeling Basics - DeltaSync Timestamp via Date Now* example integration flow is designed in the following way:
 
- ![](images/Delta_Sync_1_489699d.png) 
+![](images/Delta_Sync_1_489699d.png)
 
 It works as follows:
 
@@ -50,28 +50,28 @@ It works as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     lastSync
 
 
     
     </td>
     <td valign="top">
-
+    
     Local Variable
 
 
     
     </td>
     <td valign="top">
-
+    
     timestamp\_DS\_DateNow
 
 
     
     </td>
     <td valign="top">
-
+    
     \{\{defaultDate\}\}
 
 
@@ -80,28 +80,28 @@ It works as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     dateNow
 
 
     
     </td>
     <td valign="top">
-
+    
     Expression
 
 
     
     </td>
     <td valign="top">
-
+    
     $\{date:now:yyyy-MM-dd'T'HH:mm:ss.000\}
 
 
     
     </td>
     <td valign="top">
-
+    
      
 
 
@@ -142,14 +142,14 @@ It works as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Operation Details
 
 
     
     </td>
     <td valign="top">
-
+    
     GET
 
 
@@ -158,14 +158,14 @@ It works as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Resource Path
 
 
     
     </td>
     <td valign="top">
-
+    
     MessageProcessingLogs
 
 
@@ -174,14 +174,14 @@ It works as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Query Options
 
 
     
     </td>
     <td valign="top">
-
+    
     $select=MessageGuid, Status, LogStart&$filter=LogStart gt datetime'$\{property.lastSync\}' and LogStart lt datetime'$\{property.dateNow\}'
 
 

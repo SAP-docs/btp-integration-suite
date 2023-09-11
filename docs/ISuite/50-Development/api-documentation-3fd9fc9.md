@@ -10,7 +10,7 @@ Cloud Integration provides various application programming interfaces \(APIs\) w
 
 ## Overview
 
-Cloud Integration provides SDK APIs \(or Java APIs\) and OData APIs for accessing various aspects of the platform. Furthermore, OData APIs can be easily found and tested in the SAP API Business Hub. For further information, simply click on the tiles below:
+Cloud Integration provides SDK APIs \(or Java APIs\) and OData APIs for accessing various aspects of the platform. Furthermore, OData APIs can be easily found and tested in the SAP Business Accelerator Hub. For further information, simply click on the tiles below:
 
 ![](images/CPI_API_Overview_sdk_52cba5a.png)
 
@@ -34,9 +34,9 @@ OData APIs are implemeted as REST API and use the Open Data Protocol as a techni
 
 <a name="loio3fd9fc923dee4d5db0696cfdce187154__section_ODataOverview"/>
 
-## OData APIs in the SAP API Business Hub
+## OData APIs on SAP Business Accelerator Hub
 
-OData APIs can be tested and explored in the[SAP API Business Hub](https://api.sap.com/package/CloudIntegrationAPI?section=Artifacts). They are structured around entity types or resources. Click on the tiles below to find more information on the entity types and aspects.
+Cloud Integration OData APIs can be tested and explored on SAP Business Accelerator Hub under [https://api.sap.com/package/CloudIntegrationAPI/odata](https://api.sap.com/package/CloudIntegrationAPI/odata). They are structured around entity types or resources. Click on the tiles below to find more information on the entity types and aspects.
 
 ![](images/CPI_ODataAPI_a325b4e.png)
 

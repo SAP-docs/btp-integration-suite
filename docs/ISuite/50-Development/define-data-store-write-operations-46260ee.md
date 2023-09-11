@@ -60,14 +60,14 @@ This component stores data on your tenant. Note that the tenant space is limited
     </tr>
     <tr>
     <td valign="top">
-
-     *Data Store Name* 
+    
+    *Data Store Name* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies the name of the data store \(no white spaces\).
 
     The maximum length allowed for the data store name is 40 characters. If you enter a longer string, a validation error is raised. Note that this length restriction applies to the value that is used for this parameter at runtime. Therefore, if you configure this parameter dynamically, make sure that the expected header or property value does not exceed this length restriction. Otherwise, a runtime error will be raised.
@@ -78,14 +78,14 @@ This component stores data on your tenant. Note that the tenant space is limited
     </tr>
     <tr>
     <td valign="top">
-
-     *Visibility* 
+    
+    *Visibility* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Defines whether the data store is shared by all integration flows \(deployed on the tenant\) or only by one specific integration flow.
 
     -   *Global*: Data store is shared across all integration flows deployed on the tenant.
@@ -101,14 +101,14 @@ This component stores data on your tenant. Note that the tenant space is limited
     </tr>
     <tr>
     <td valign="top">
-
-     *Entry ID* 
+    
+    *Entry ID* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify an entry ID that is stored together with the message content. The entry ID must not exceed 255 characters.
 
     Details for the entry ID are read from the incoming message. You can enter the following kinds of expressions:
@@ -119,25 +119,24 @@ This component stores data on your tenant. Note that the tenant space is limited
 
     -   `${xpath.<xpath>}`, to dynamically generate the entry ID from an element in the message indicated by an xPath expression.
 
-        > ### Note:  
-        > > ### Tip:  
-        > > For example, the message body contains customer review information for an individual product:
-        > > 
-        > > ```
-        > > <CustomerReviews>
-        > > <CustomerReview>
-        > > <CreationDate>2021-06-09T16:00:46.542</CreationDate>
-        > > <CustomerReviewId>125</CustomerReviewId>
-        > > <Rating>5</Rating>
-        > > <ProductId>HT-8000</ProductId>
-        > > </CustomerReview>
-        > > </CustomerReviews>
-        > > 
-        > > ```
-        > > 
-        > > If you like to set the related `ProductId` value as *Entry ID*, use the following XPath expression:
-        > > 
-        > > `${xpath./CustomerReviews/CustomerReview/ProductId/text()}`
+        > ### Tip:  
+        > For example, the message body contains customer review information for an individual product:
+        > 
+        > ```
+        > <CustomerReviews>
+        > <CustomerReview>
+        > <CreationDate>2021-06-09T16:00:46.542</CreationDate>
+        > <CustomerReviewId>125</CustomerReviewId>
+        > <Rating>5</Rating>
+        > <ProductId>HT-8000</ProductId>
+        > </CustomerReview>
+        > </CustomerReviews>
+        > 
+        > ```
+        > 
+        > If you like to set the related `ProductId` value as *Entry ID*, use the following XPath expression:
+        > 
+        > `${xpath./CustomerReviews/CustomerReview/ProductId/text()}`
 
 
     If you leave the *Entry ID* field empty, this step uses the value of the `SapDataStoreId` header \(if this header is set\).
@@ -153,14 +152,14 @@ This component stores data on your tenant. Note that the tenant space is limited
     </tr>
     <tr>
     <td valign="top">
-
-     *Retention Threshold for Alerting in \(d\)* 
+    
+    *Retention Threshold for Alerting in \(d\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Time period \(in days\) within which the messages have to be fetched before an alert is raised.
 
     Raising an alert means that the corresponding entry in the data store monitor gets the status *Overdue* \(indicated with red color\).
@@ -173,14 +172,14 @@ This component stores data on your tenant. Note that the tenant space is limited
     </tr>
     <tr>
     <td valign="top">
-
-     *Expiration Period in \(d\)* 
+    
+    *Expiration Period in \(d\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Number of days after which the stored messages are deleted \(default is 30 days, maximum possible value is 180 days\).
 
     The minimum value of *Expiration Period* should be at least twice that of *Retention Threshold for Alerting*.
@@ -191,14 +190,14 @@ This component stores data on your tenant. Note that the tenant space is limited
     </tr>
     <tr>
     <td valign="top">
-
-     *Encrypt Stored Message* 
+    
+    *Encrypt Stored Message* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option to encrypt the message in the data store.
 
 
@@ -207,14 +206,14 @@ This component stores data on your tenant. Note that the tenant space is limited
     </tr>
     <tr>
     <td valign="top">
-
-     *Overwrite Existing Message* 
+    
+    *Overwrite Existing Message* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option to overwrite an existing message in the data store.
 
     Trying to overwrite an existing entry without having this option selected results in a `DuplicateEntryException`.
@@ -225,14 +224,14 @@ This component stores data on your tenant. Note that the tenant space is limited
     </tr>
     <tr>
     <td valign="top">
-
-     *Include Message Headers* 
+    
+    *Include Message Headers* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option to store message headers in addition to the payload.
 
     > ### Note:  

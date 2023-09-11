@@ -28,7 +28,7 @@ As the node creates an infinite substructure, it cannot be displayed in MIG Edit
 
 The XSD Standard allows a special situation on schema level in which a group node can contain a child node with the same identifier multiple times. This is only possible if these repeating nodes appear in different choice branches and if this can be uniquely resolved at runtime. Also, all these repeating nodes must be identical in their details and can not be customized differently.
 
-![](images/Repeating_Elements_2201_22f98d1.png) 
+![](images/Repeating_Elements_2201_22f98d1.png)
 
 If your MIG contains such a node, then the relevant information can be found under the *Documentation* section.
 

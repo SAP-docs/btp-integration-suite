@@ -10,7 +10,7 @@ Integration Suite supports creation and import of API definitions in Open API Sp
 
 To know more about importing APIs, see [Import an API](import-an-api-9342a93.md).
 
-To know more about creating APIs using the API designer, see [Create an API from API Designer](create-an-api-from-api-designer-26e1bbd.md).
+To know more about creating APIs using the API designer, see [Create an API Using the API Designer](create-an-api-using-the-api-designer-26e1bbd.md).
 
 
 
@@ -21,5 +21,5 @@ To know more about creating APIs using the API designer, see [Create an API from
 -   External references aren't supported with OAS 3.0 \(or OAS 2.0\) in SAP Integration Suite.
 -   Images aren't supported with OAS 3.0 in API Management.
 -   Local and remote links aren't supported with OAS 3.0 SAP Integration Suite.
--   API proxy creation is not possible by discovering the OAS 3.0 APIs from SAP API Business Hub. This feature will be enabled soon.
+-   API proxy creation is not possible by discovering the OAS 3.0 APIs from SAP Business Accelerator Hub. This feature will be enabled soon.
 

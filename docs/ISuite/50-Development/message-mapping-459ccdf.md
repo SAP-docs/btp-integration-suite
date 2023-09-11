@@ -5,7 +5,7 @@
 # Message Mapping
 
 > ### Remember:  
-> There are currently certain limitations when working in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> There are currently certain limitations when working in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 Let us consider the example of replicating employee details from system A to system B. Each employee set in system A contains name, date of birth, address, and phone number. System B also provides similar functionality. However, the field names are different in system B. In system A, the employee date of birth is stored in **DOB** field but in system B, the employee date of birth is stored in **birthday** field. In such scenarios, you need an artifact that can define what the equivalent fields are in system A and system B respectively. Message mapping can help you achieve that. Using a graphical editor, you can define a table or a map \(hence the name mapping\) which the system uses as a reference to identify equivalent fields in system A and system B.
 
@@ -24,7 +24,7 @@ In the same scenario, let us assume that the date of birth in system A is in YYY
 The mapping editor provides some standard functions like *Arithmetic*, *Boolean*, *Constants*, *Conversions*, and *Date*.
 
 > ### Note:  
-> The supported format for *currentDate* function is ***yyyy-mm-dd*** or ***yyyy-mm-dd hh:mm:ss*** and the timezone for the function is that of the data center where your SAP Cloud Integration tenant is hosted.
+> The supported format for *currentDate* function is `yyyy-mm-dd` or `yyyy-mm-dd hh:mm:ss` and the timezone for the function is that of the data center where your SAP Cloud Integration tenant is hosted.
 
 If you're unable to achieve the desired transformation using standard functions, you can create a custom function in one of the following ways.
 

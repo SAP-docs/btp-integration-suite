@@ -83,7 +83,7 @@ Edit your integration package to revise the header and overview sections, add or
 
 9.  In the *Tags* tab, you can maintain standard tags such as Product, Country/Region, Lines of Business and Industry.
 
-    Furthermore, you can add custom tags to identify and track your packages based on your custom-defined attributes. For more information, see [Creating Custom Tags](creating-custom-tags-71c0448.md).
+    Furthermore, you can add custom tags to identify and track your packages based on your custom-defined attributes. For more information, see [Creating Custom Tags](IntegrationSettings/creating-custom-tags-71c0448.md).
 
 10. Choose *Save* to keep the changes made to the integration package.
 
@@ -91,10 +91,9 @@ Edit your integration package to revise the header and overview sections, add or
 
 12. Choose *Delete Package* to permanently delete the integration package.
 
-    1.  Provide your consent to delete the package.
+    Provide your consent to delete the package.
 
-        > ### Remember:  
-        > You can’t recover the package and its content after you delete them.
-
+    > ### Remember:  
+    > You can’t recover the package and its content after you delete them.
 
 

@@ -4,7 +4,7 @@
 
 Get the runtime status of a currently deployed integration flow.
 
-Perform 3 subsequent calls:
+Perform three subsequent calls:
 
 
 <table>
@@ -41,7 +41,7 @@ POST
 </td>
 <td valign="top">
 
- `/DeployIntegrationDesigntimeArtifact?Id='<bundleId>'&Version='<version>'` 
+`/DeployIntegrationDesigntimeArtifact?Id='<bundleId>'&Version='<version>'` 
 
 
 
@@ -64,7 +64,7 @@ GET
 </td>
 <td valign="top">
 
- `/BuildAndDeployStatus(TaskId='<taskid>’)` 
+`/BuildAndDeployStatus(TaskId='<taskid>’)` 
 
 
 
@@ -87,7 +87,7 @@ GET
 </td>
 <td valign="top">
 
- `/IntegrationRuntimeArtifacts('<bundleId>')` 
+`/IntegrationRuntimeArtifacts('<bundleId>')` 
 
 
 
@@ -104,7 +104,7 @@ If build and deploy status is Success, get runtime status of currently deployed 
 
 To set up such a sequence of requests, you can design an integration flow with the following sequence of OData API calls:
 
- ![](images/Get_Runtime_Status_of_Deployed_Integration_Flow_0e404a3.png) 
+![](images/Get_Runtime_Status_of_Deployed_Integration_Flow_0e404a3.png)
 
 The integration flow performs the following steps:
 
@@ -112,7 +112,7 @@ The integration flow performs the following steps:
 
     A content modifier \(not shown in the diagram\) stores Id and version as exchange properties \(let's give them the names: `bundleId` and `version`\).
 
-2.  The 1st Request Reply step calls the Cloud Integration OData API through an HTTP receiver adapter \(for the tenant on which the integration flow in question is deployed\).
+2.  The first Request Reply step calls the Cloud Integration OData API through an HTTP receiver adapter \(for the tenant on which the integration flow in question is deployed\).
 
     Cloud Integration calls the OData API with the following URL and query:
 
@@ -124,7 +124,7 @@ The integration flow performs the following steps:
 
     A content modifier \(not shown in the diagram\) stores the taskId as exchange property.
 
-3.  The 2nd Request Reply step calls the OData API \(through an HTTP receiver adapter\) with the following URL and query:
+3.  The second Request Reply step calls the OData API \(through an HTTP receiver adapter\) with the following URL and query:
 
     `https://<host address>/api/v1/BuildAndDeployStatus(TaskId='${property.taskId}')`
 
@@ -139,7 +139,7 @@ The integration flow performs the following steps:
 
     A content modifier \(not shown in the diagram\) stores the status as exchange property.
 
-4.  A routing step leads to 2 different routes, depending in the value of the status:
+4.  A routing step leads to two different routes, depending in the value of the status:
 
     -   The default route leads to a message end event.
 

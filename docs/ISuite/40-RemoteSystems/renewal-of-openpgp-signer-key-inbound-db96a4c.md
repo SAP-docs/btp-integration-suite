@@ -6,7 +6,7 @@ In this use case, the tenant is the receiver \(inbound communication\) and the s
 
 The following figure illustrates the communication path that is relevant for this use case:
 
- ![](images/Renewal_PGP_Signer_Inbound_001b002.png) 
+![](images/Renewal_PGP_Signer_Inbound_001b002.png)
 
 1.  Sender administrator: Creates a new PGP key pair for signing.
 2.  Sender administrator: Provides the tenant administrator with the new public key and informs the tenant administrator that as of a certain the payloads are signed with the new key.

@@ -4,7 +4,7 @@
 
 
 
-You find various example requests on SAP API Business Hub at [Security Content](https://api.sap.com/api/SecurityContent).
+You find various example requests on SAP Business Accelerator Hub at [Security Content](https://api.sap.com/api/SecurityContent).
 
 For more example requests, see:
 
@@ -38,7 +38,7 @@ Key Pair
 </td>
 <td valign="top">
 
- [Generate a Key Pair](generate-a-key-pair-4d3dd24.md) 
+[Generate a Key Pair](generate-a-key-pair-4d3dd24.md) 
 
 
 
@@ -96,7 +96,7 @@ Keystore History
 </td>
 <td valign="top">
 
- [Restore an Entry from the SAP Key History Keystore to the New SAP Keys Keystore](restore-an-entry-from-the-sap-key-history-keystore-to-the-new-sap-keys-keystore-a0bd675.md) 
+[Restore an Entry from the SAP Key History Keystore to the New SAP Keys Keystore](restore-an-entry-from-the-sap-key-history-keystore-to-the-new-sap-keys-keystore-a0bd675.md) 
 
 
 

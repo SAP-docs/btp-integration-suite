@@ -4,7 +4,7 @@
 
 This variant is illustrated by the *Pattern Recipient List - Static Routing* reference integration flow. In this model, the potential list of receivers is fixed. The recipient list pattern is realized via a combination of multicast and message filters.
 
- ![](images/Static_Routing_628b348.png) 
+![](images/Static_Routing_628b348.png)
 
 First, the Multicast step is used to send copies of the same message to multiple routes. The Message Filter is a specific type of the message router that has only one single receiver channel. Any incoming message is evaluated, and if it meets the criteria specified by the Message Filter, the message is routed to the receiver, otherwise it's discarded.
 

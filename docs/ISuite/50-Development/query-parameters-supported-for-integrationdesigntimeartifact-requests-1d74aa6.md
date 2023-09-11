@@ -54,7 +54,7 @@ You can select response properties based on the requirement.
 </td>
 <td valign="top">
 
-***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)?$select=Id,Version***
+`https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')?$select=Id,Version`
 
 
 
@@ -110,7 +110,7 @@ You can select response properties based on the requirement.
 </td>
 <td valign="top">
 
-***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Resources?$select=Name,ResourceType***
+`https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Resources?$select=Name,ResourceType`
 
 
 
@@ -133,7 +133,7 @@ Returns the total count of resources found in the artifact.
 </td>
 <td valign="top">
 
-***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Resources/$count***
+`https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Resources/$count`
 
 
 
@@ -149,14 +149,14 @@ $orderby
 </td>
 <td valign="top">
 
-Orders the collection of entries sorted either in ascending or descending order. By defaut the entries are sorted in ascending order. Use ***desc*** to sort all entries returned in descending oder.
+Orders the collection of entries sorted either in ascending or descending order. By defaut the entries are sorted in ascending order. Use `desc` to sort all entries returned in descending oder.
 
 
 
 </td>
 <td valign="top">
 
-***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Resources?$orderby=Name***or***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Resources?$orderby=Name,ResourceType desc***
+`https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Resources?$orderby=Name`or`https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Resources?$orderby=Name,ResourceType desc`
 
 
 
@@ -193,9 +193,9 @@ The following string functions are supported:
 </td>
 <td valign="top">
 
--   ***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Resources?$filter=Name eq 'script1.groovy'***
--   ***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Resources?$filter=Name ne 'script1.groovy'***
--   ***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Resources?$filter=substringof\('script1', Name\) eq true***
+-   `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Resources?$filter=Name eq 'script1.groovy'`
+-   `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Resources?$filter=Name ne 'script1.groovy'`
+-   `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Resources?$filter=substringof('script1', Name) eq true`
 
 
 
@@ -218,7 +218,7 @@ Response is received either in JSON or Atom XML format. The default format is **
 </td>
 <td valign="top">
 
-***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Resources?$format=json***
+`https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Resources?$format=json`
 
 
 
@@ -274,7 +274,7 @@ You can select response properties based on the requirement.
 </td>
 <td valign="top">
 
-***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Configurations?$select=ParameterKey,ParameterValue***
+`https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Configurations?$select=ParameterKey,ParameterValue`
 
 
 
@@ -297,7 +297,7 @@ Returns the total count of resources found in the artifact.
 </td>
 <td valign="top">
 
-***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Configurations/$count***
+`https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Configurations/$count`
 
 
 
@@ -313,14 +313,14 @@ $orderby
 </td>
 <td valign="top">
 
-Orders the collection of entries sorted either in ascending or descending order. By defaut the entries are sorted in ascending order. Use ***desc*** to sort all entries returned in descending oder.
+Orders the collection of entries sorted either in ascending or descending order. By defaut the entries are sorted in ascending order. Use `desc` to sort all entries returned in descending oder.
 
 
 
 </td>
 <td valign="top">
 
-***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Configurations?$orderby=ParameterKey***or***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Configurations?$orderby=ParameterKey,ParameterValue desc***
+`https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Configurations?$orderby=ParameterKey`or`https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Configurations?$orderby=ParameterKey,ParameterValue desc`
 
 
 
@@ -357,9 +357,9 @@ The following string functions are supported:
 </td>
 <td valign="top">
 
--   ***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Configurations?$filter=ParameterKey eq '<key\>'***
--   ***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Configurations?$filter=ParameterKey ne '<key\>'***
--   ***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Configurations?$filter=substringof\('<substring of key\>', ParameterKey\) eq true***
+-   `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Configurations?$filter=ParameterKey eq '<key>'`
+-   `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Configurations?$filter=ParameterKey ne '<key>'`
+-   `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Configurations?$filter=substringof('<substring of key>', ParameterKey) eq true`
 
 
 
@@ -382,8 +382,8 @@ Response is received either in JSON or Atom XML format. The default format is **
 </td>
 <td valign="top">
 
--   ***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Configurations?$format=json***
--   ***https://<tmnurl\>/api/v1/IntegrationDesigntimeArtifacts\(Id='<bundleid\>',Version='<version\>'\)/Configurations?$format=xml***
+-   `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Configurations?$format=json`
+-   `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Configurations?$format=xml`
 
 
 

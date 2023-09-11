@@ -6,7 +6,7 @@ This use case covers all situations where private keys used by the tenant to dec
 
 The following figure illustrates the communication path for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_WS_Security_Inbound_Request_Decrypt_e520af0.png) 
+![](images/SAP_HCI_Security_Renewal_-_WS_Security_Inbound_Request_Decrypt_e520af0.png)
 
 1.  Tenant administrator: Creates new key pair/certificate.
 2.  Tenant administrator: Adds the new certificate to the keystore.

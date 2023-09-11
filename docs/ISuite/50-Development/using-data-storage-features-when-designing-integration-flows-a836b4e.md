@@ -2,18 +2,33 @@
 
 # Using Data Storage Features When Designing Integration Flows
 
-SAP Integration Suite comes with various options to store data during the execution of an integration scenario. There are also various options to consume such data during message processing or after message processing has finished.
+SAP Integration Suite comes with various options for storing data during the execution of an integration scenario. There are also various options for consuming such data during message processing or after message processing has finished.
 
-The following figure illustrates the options.
 
- ![](images/Data_STorage_Diagram_b0b21c2.png) 
 
-The options also differ by the phase when components can consume the stored data:
+<a name="loioa836b4e38d1a45f6be7071b9b697c2a3__section_t5q_vky_2xb"/>
 
--   **Stored data consumed during message processing \(at runtime\)**: As an example, you like to store a variable that, and another step consumes the data during consecutive processing of the integration flow.
+## Data Storage Options
 
--   **Stored data consumed after message processing has finished**: As an example, you like to store data and make it available for auditing purposes after message processing finished.
+The following figure illustrates the available options.
 
+![](images/data_stor_cf_94cf493.png)
+
+The options also differ according to the phase in which components can consume the stored data:
+
+-   **Stored data consumed during message processing \(at runtime\)**: For example, if you want to store a variable that, and another step consumes the data during consecutive processing of the integration flow.
+
+-   **Stored data consumed after message processing has finished**: For example, if you want to store data and make it available for auditing purposes after message processing has finished.
+
+
+> ### Note:  
+> You might be asking yourself why the script step writes data into the *Monitoring Data and Message Store* data storage component. The monitoring application only reads from that data storage.
+> 
+> However, there are use cases where you can use the script step to add additional, monitoring-related data to the database, namely:
+> 
+> -   Message-processing log attachments \(see [Create MPL Attachments in Scripts](create-mpl-attachments-in-scripts-17dba92.md)\)
+> 
+> -   Custom header properties for the message processing log \(see [Use Custom Header Properties to Search for Message Processing Logs](use-custom-header-properties-to-search-for-message-processing-logs-d4b5839.md)\)
 
 
 
@@ -21,7 +36,7 @@ The options also differ by the phase when components can consume the stored data
 
 ## Using Cloud Integration Data Storage Features
 
-The following table shows the different use cases that you can implement with the data storage feature that come with Cloud Integration. You also get an overview of the Cloud Integration that are in place to write to and read the data.
+The following table shows the different use cases that you can implement with the data storage feature that comes with Cloud Integration. You also get an overview of the Cloud Integration that are in place to write to and read the data.
 
 
 <table>
@@ -249,7 +264,7 @@ Data store viewer in the Cloud Integration *Monitor* section \(see [Managing Dat
 <tr>
 <td valign="top">
 
-Share small amount of data \(for example, a timestamp\) **at runtime**:
+Share a small amount of data \(for example, a timestamp\) **at runtime**:
 
 -   Across different executions of the same integration flow \(local variable\)
 
@@ -303,7 +318,7 @@ Aggregate messages **at runtime**.
 
 When aggregating messages, the system temporarily stores data on the tenant during message processing. Therefore, using the *Aggregator* step puts load on the data storage capacity of the system
 
-You can use this data storage option only to implement a message aggregator pattern; you can't use this option for permanent storage of data.
+You can only use this data storage option to implement a message aggregator pattern; you can't use this option for permanent data storage.
 
 See: [Aggregator](aggregator-5f5e01b.md)
 
@@ -335,11 +350,11 @@ Aggregator \(see [Define Aggregator](define-aggregator-aa23816.md)\)
 <tr>
 <td valign="top">
 
-Store data to access it **after message processing has finished** \(for example, for purposes such as error analysis and audit logging\).
+Store data to access it **after message processing has finished** \(for example, for error analysis and audit logging\).
 
 Using the *Persist* step allows you to store data at dedicated steps of an integration flow.
 
-Note that the stored message content isn't available for other integration flow steps. You can access it after the message processing run has been finished. To read out message content stored with the *Persist* step, you use the OData API \(`MessageStoreEntries` resource\).
+Note that the stored message content isn't available for other integration flow steps. You can access it after the message processing run has finished. To read out message content stored with the *Persist* step, use the OData API \(`MessageStoreEntries` resource\).
 
 See: [Use the Persist Step](use-the-persist-step-2707077.md)
 
@@ -357,7 +372,7 @@ Message Store
 
 Persist step \(see [Persist Messages](persist-messages-8c35f3f.md)\)
 
-SOAP 1.x sender adapter if *WS-Security* and *Save Incoming Signed Message* is selected \(see [Configure the SOAP \(SOAP 1.x\) Sender Adapter](configure-the-soap-soap-1-x-sender-adapter-a178913.md)\)
+SOAP 1.x sender adapter if *WS-Security* and *Save Incoming Signed Message* are selected \(see [Configure the SOAP \(SOAP 1.x\) Sender Adapter](configure-the-soap-soap-1-x-sender-adapter-a178913.md)\)
 
 
 
@@ -373,9 +388,9 @@ OData API \(`MessageStoreEntries` entity\) \(see [Message Stores](message-stores
 <tr>
 <td valign="top">
 
-Store data to access it **after message processing has finished** \(for example, for purposes such as monitoring purposes and error analysis\).
+Store data to access it **after message processing has finished** \(for example, for monitoring purposes and error analysis\).
 
-You can store the payload as message processing log attachment \(see: [Using Message Processing Log Attachments](using-message-processing-log-attachments-6776fd3.md)\).
+You can store the payload as a message-processing log attachment \(see: [Using Message Processing Log Attachments](using-message-processing-log-attachments-6776fd3.md)\).
 
 
 
@@ -396,7 +411,7 @@ Script \(see [Create MPL Attachments in Scripts](create-mpl-attachments-in-scrip
 </td>
 <td valign="top">
 
- *Monitoring* application
+*Monitoring* application
 
 
 
@@ -428,7 +443,7 @@ OData API \(see [Parameterizing Integration Flows Using the Partner Directory](p
 
 Script \(see [Parameterizing Integration Flows Using the Partner Directory](parameterizing-integration-flows-using-the-partner-directory-b7812a5.md)\)
 
-Certain integration flow steps such like the XML validator or XSLT mapping \(for example\) \(see [Dynamically Reading XSLT Mappings from the Partner Directory](dynamically-reading-xslt-mappings-from-the-partner-directory-66a551a.md)\)
+Certain integration flow steps such as the XML validator or XSLT mapping \(see [Dynamically Reading XSLT Mappings from the Partner Directory](dynamically-reading-xslt-mappings-from-the-partner-directory-66a551a.md)\)
 
 
 
@@ -478,7 +493,7 @@ XI sender adapter \(see [Configure the XI Sender Adapter](configure-the-xi-sende
 
 XI receiver adapter \(see [Configure the XI Receiver Adapter](configure-the-xi-receiver-adapter-5d2670f.md)\)
 
-Message queue viewer in the Cloud Integration *Monitor* section \(see [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right:\)
+Message queue viewer in the Cloud Integration *Monitor* section \(see [Managing Message Queues](managing-message-queues-cdcce24.md)\)
 
 
 
@@ -543,7 +558,7 @@ Remote archiving system
 </td>
 <td valign="top">
 
- Cloud Integration archiving feature \(see [Archiving Data](archiving-data-bc71f88.md)\)
+Cloud Integration archiving feature \(see [Archiving Data](archiving-data-bc71f88.md)\)
 
 
 
@@ -561,7 +576,7 @@ Defined by the connected \(remote\) archiving system
 
 Store data in a database system on SAP BTP or in an on-premise database system.
 
-A remote database system typically allows you to store data longer than the maximum 30 days retention period offered by the tenant database. However, the supported storage duration depends on the technical characteristics of the remote database system.
+A remote database system typically allows you to store data longer than the maximum 30-day retention period offered by the tenant database. However, the supported storage duration depends on the technical characteristics of the remote database system.
 
 See:
 
@@ -581,14 +596,14 @@ Remote database system
 </td>
 <td valign="top">
 
-SQL operations injected to database system through external call via JDBC receiver adapter \([JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md)\)
+SQL operations injected into a database system through an external call via a JDBC receiver adapter \([JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md)\)
 
 
 
 </td>
 <td valign="top">
 
-SQL operations injected to database system through external call via JDBC receiver adapter \(see [JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md)\)
+SQL operations injected into a database system through an external call via a JDBC receiver adapter \(see [JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md)\)
 
 
 
@@ -654,10 +669,40 @@ AMQP sender adapter \(see [Configure the AMQP Sender Adapter](configure-the-amqp
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Send message processing logs to an external logging system.
+
+
+
+</td>
+<td valign="top">
+
+Remote logging solution
+
+
+
+</td>
+<td valign="top">
+
+Via API \(see [External Logging](external-logging-ad719c1.md)\)
+
+
+
+</td>
+<td valign="top">
+
+Via API \(see [External Logging](external-logging-ad719c1.md)\)
+
+
+
+</td>
+</tr>
 </table>
 
 > ### Note:  
-> For an overview of the technical details and limitations of each data storage option features, see [Data Storages](data-storages-31efe35.md).
+> For an overview of the technical details and limitations of each data storage option, see [Data Storages](data-storages-31efe35.md).
 
 **Related Information**  
 

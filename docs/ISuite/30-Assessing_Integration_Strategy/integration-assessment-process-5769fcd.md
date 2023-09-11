@@ -4,7 +4,7 @@
 
 Define, document, and govern your integration technology strategy.
 
- Integration Assessment provides you with the necessary tools to determine the most suitable integration technology strategy.
+Integration Assessment provides you with the necessary tools to determine the most suitable integration technology strategy.
 
 The way in which you assess your integration strategy is based on the SAP Integration Solution Advisory Methodology \(ISA-M\) \(see [SAP Integration Solution Advisory Methodology](sap-integration-solution-advisory-methodology-a2e17f3.md)\).
 
@@ -24,7 +24,7 @@ Assess your integration strategy using the SAP Integration Solution Advisory Met
 
 The integration assessment process and final determination of the suitable integration technology is based on certain settings. These settings comprise, for example, a list of integration technologies and information about which key characteristics are supported by each technology. Using this information, during the assessment process the system calculates a recommendation for an integration technology for your interface request.
 
- Integration Assessment comes with a number of settings predefined by SAP. For example, a list of all integration technologies provided by SAP. You can also adjust these settings and add your own technologies or other data.
+Integration Assessment comes with a number of settings predefined by SAP. For example, a list of all integration technologies provided by SAP. You can also adjust these settings and add your own technologies or other data.
 
 In this phase, you review the settings and, if necessary, adjust them to your project.
 
@@ -114,5 +114,5 @@ More information: [Decide on an Integration Technology](decide-on-an-integration
 
 Personas cover the tasks performed by specific roles associated with an integration project.
 
-More information: [Personas](personas-5df5af1.md)
+More information: [Personas](../60-Security/personas-5df5af1.md)
 

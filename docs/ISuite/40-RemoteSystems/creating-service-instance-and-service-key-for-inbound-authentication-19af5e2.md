@@ -43,7 +43,7 @@ Create a service instance to implement inbound communication. A service instance
 
 4.  Choose *Create*.
 
-5.  In the *New Instance or Subscription* dialog box, ***Process Integration Runtime*** is already preselected as *Service*.
+5.  In the *New Instance or Subscription* dialog box, `Process Integration Runtime` is already preselected as *Service*.
 
 6.  Specify the following parameters:
 
@@ -67,14 +67,14 @@ Create a service instance to implement inbound communication. A service instance
     </tr>
     <tr>
     <td valign="top">
-
-     *Plan* 
+    
+    *Plan* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Depending on the use case, select one of the following options:
 
     -   *integration-flow*
@@ -94,15 +94,15 @@ Create a service instance to implement inbound communication. A service instance
     </tr>
     <tr>
     <td valign="top">
-
-     *Runtime Environment* 
+    
+    *Runtime Environment* 
 
 
     
     </td>
     <td valign="top">
-
-     *Cloud Foundry* 
+    
+    *Cloud Foundry* 
 
 
     
@@ -110,14 +110,14 @@ Create a service instance to implement inbound communication. A service instance
     </tr>
     <tr>
     <td valign="top">
-
-     *Space* 
+    
+    *Space* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select a space \(for example *dev*\).
 
 
@@ -126,14 +126,14 @@ Create a service instance to implement inbound communication. A service instance
     </tr>
     <tr>
     <td valign="top">
-
-     *Instance Name* 
+    
+    *Instance Name* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a meaningful short name.
 
     > ### Note:  
@@ -177,14 +177,14 @@ Create a service instance to implement inbound communication. A service instance
     </tr>
     <tr>
     <td valign="top">
-
-     *Roles* 
+    
+    *Roles* 
 
 
     
     </td>
     <td valign="top">
-
+    
     The selection of roles depend on the chosen option for *Plan*.
 
     -   When as *Plan* you've chosen *integration-flow*, you can either keep the standard role `ESBMessaging.send` or enter a custom role \(see [Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md)\).
@@ -207,14 +207,14 @@ Create a service instance to implement inbound communication. A service instance
     </tr>
     <tr>
     <td valign="top">
-
-     *Grant-types* 
+    
+    *Grant-types* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select `Client Credentials`.
 
     > ### Note:  
@@ -238,14 +238,14 @@ Create a service instance to implement inbound communication. A service instance
     </tr>
     <tr>
     <td valign="top">
-
-     *Redirect-uris* \(optional\)
+    
+    *Redirect-uris* \(optional\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the redirect URIs for authorization code grant type. Hit *Enter* after typing your uri and proceed with the next uri.
 
 
@@ -306,14 +306,14 @@ With this step, you create a service key for the instance.
     </tr>
     <tr>
     <td valign="top">
-
-     *Key Type* 
+    
+    *Key Type* 
 
 
     
     </td>
     <td valign="top">
-
+    
     There are the following options.
 
     -   *ClientId/Secret*: To define a service key that contains a clientId and clientsecret.
@@ -339,14 +339,14 @@ With this step, you create a service key for the instance.
     </tr>
     <tr>
     <td valign="top">
-
-     *External Certificate* \(only applicable if for *Key Type* the option *External Certificate* has been chosen\)
+    
+    *External Certificate* \(only applicable if for *Key Type* the option *External Certificate* has been chosen\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Add *External Certificate*: Enter the certificate that you exported from the certificate-generating application to your local computer.
 
     Enter the PEM-encoded X.509 certificate.
@@ -373,14 +373,14 @@ With this step, you create a service key for the instance.
     </tr>
     <tr>
     <td valign="top">
-
-     *Validity in days* \(only applicable if for *Key Type* the option *Certificate* has been chosen\)
+    
+    *Validity in days* \(only applicable if for *Key Type* the option *Certificate* has been chosen\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Define the validity in days by selecting a number between 1 and 365.
 
 
@@ -389,14 +389,14 @@ With this step, you create a service key for the instance.
     </tr>
     <tr>
     <td valign="top">
-
-     *Key Size* \(only applicable if for *Key Type* the option *Certificate* has been chosen\)
+    
+    *Key Size* \(only applicable if for *Key Type* the option *Certificate* has been chosen\)
 
 
     
     </td>
     <td valign="top">
-
+    
     The default for the key size is set to 2048.
 
 
@@ -436,14 +436,14 @@ With this step, you create a service key for the instance.
     </tr>
     <tr>
     <td valign="top">
-
-     *ClientId/Secret* 
+    
+    *ClientId/Secret* 
 
 
     
     </td>
     <td valign="top">
-
+    
     -   *clientid*
 
         clientid to be used as credential when requesting the access token from the token server.
@@ -467,14 +467,14 @@ With this step, you create a service key for the instance.
     </tr>
     <tr>
     <td valign="top">
-
-     *Certificate* 
+    
+    *Certificate* 
 
 
     
     </td>
     <td valign="top">
-
+    
     -   *clientid*
 
         clientid of service key.
@@ -531,14 +531,14 @@ With this step, you create a service key for the instance.
     </tr>
     <tr>
     <td valign="top">
-
-     *External Certificate* 
+    
+    *External Certificate* 
 
 
     
     </td>
     <td valign="top">
-
+    
     -   *clientid*
 
         clientid of service key.
@@ -608,6 +608,9 @@ You can update an existing service instance. To do that, perform the following s
 
 > ### Note:  
 > Because of caching mechanisms in SAP Cloud Integration, it can take up to 1 hour until role changes are considered.
+
+> ### Tip:  
+> You can also use an application programming interface \(API\) to manage service instances and service keys. To learn more about how to use the API to retrieve information on the service instances and service keys configured for inbound communication, check out [Managing Service Instances and Service Keys Using an API](managing-service-instances-and-service-keys-using-an-api-6e5db60.md).
 
 **Related Information**  
 

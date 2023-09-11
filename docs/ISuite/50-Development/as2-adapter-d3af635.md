@@ -5,7 +5,7 @@
 You use the AS2 adapter to exchange business documents with your partner using the AS2 protocol. You can use this adapter to encrypt/decrypt, compress/decompress, and sign/verify the documents.
 
 > ### Note:  
-> If you \(the tenant admin\) want to provision the message broker to use AS2 adapter scenarios, you must have the Enterprise Edition license. You have to set up a cluster to use the message broker. For more information, see [Activating Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "You can activate Enterprise Messaging on all licensed versions of Cloud Integration.") :arrow_upper_right:.
+> If you \(the tenant admin\) want to provision the message broker to use AS2 adapter scenarios, you must have the Enterprise Edition license. You have to set up a cluster to use the message broker. For more information, see [Activating Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:.
 
 > ### Note:  
 > There are certain limitations with regard to the usage of JMS resources.

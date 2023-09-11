@@ -7,9 +7,11 @@ The SuccessFactors \(SOAP\) sender adapter connects an SAP Cloud Integration ten
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -177,7 +179,7 @@ If you choose *Manual*, you need to enter values for the fields *Proxy Host* and
 <tr>
 <td valign="top">
 
- *Call Type* 
+*Call Type* 
 
 
 
@@ -195,7 +197,7 @@ If you want to execute an ad hoc operation, select *Asynchronous/Adhoc Query* fr
 <tr>
 <td valign="top">
 
- *Operation* 
+*Operation* 
 
 
 
@@ -211,7 +213,7 @@ You can only perform a GET operation to read information from the SuccessFactors
 <tr>
 <td valign="top">
 
- *Entity* 
+*Entity* 
 
 
 
@@ -229,7 +231,7 @@ To select or change the entity, see [Modifying SuccessFactors SOAP Entity and Op
 <tr>
 <td valign="top">
 
- *Query* 
+*Query* 
 
 
 
@@ -245,7 +247,7 @@ Provide your query values to look out for the relevant table or field in the Suc
 <tr>
 <td valign="top">
 
- *Parameters* 
+*Parameters* 
 
 
 
@@ -261,7 +263,7 @@ Enter the key-value pairs from the SuccessFactors system to fetch the necessary 
 <tr>
 <td valign="top">
 
- *Page Size* 
+*Page Size* 
 
 
 
@@ -277,7 +279,7 @@ Maximum number of records to be fetched in a page of response.
 <tr>
 <td valign="top">
 
- *Timeout \(in min\)* 
+*Timeout \(in min\)* 
 
 
 
@@ -324,7 +326,7 @@ Description
 <tr>
 <td valign="top">
 
- *Run Once* 
+*Run Once* 
 
 
 
@@ -347,14 +349,14 @@ Select to execute the operation immediately after deploying the integration cont
 <tr>
 <td valign="top" rowspan="4">
 
- *Schedule on Day* 
+*Schedule on Day* 
 
 
 
 </td>
 <td valign="top">
 
- *On Date* 
+*On Date* 
 
 
 
@@ -370,7 +372,7 @@ Specify the date on which you want the operation to be executed.
 <tr>
 <td valign="top">
 
- *At Time* 
+*At Time* 
 
 
 
@@ -386,7 +388,7 @@ Specify the time at which you want the operation to be executed.
 <tr>
 <td valign="top">
 
- *Every* 
+*Every* 
 
 
 
@@ -402,7 +404,7 @@ Specify the interval at which you want the operation to be executed.
 <tr>
 <td valign="top">
 
- *Time Zone* 
+*Time Zone* 
 
 
 
@@ -418,14 +420,14 @@ Select the time zone that you want the scheduler to use as a reference for the d
 <tr>
 <td valign="top" rowspan="3">
 
- *Schedule to Recur* 
+*Schedule to Recur* 
 
 
 
 </td>
 <td valign="top">
 
- *Daily* 
+*Daily* 
 
 
 
@@ -441,7 +443,7 @@ Select the time or interval and time zone for the schedule to recur.
 <tr>
 <td valign="top">
 
- *Weekly* 
+*Weekly* 
 
 
 
@@ -457,7 +459,7 @@ Select the checkboxes to indicate the days of the week on which you want the ope
 <tr>
 <td valign="top">
 
- *Monthly* 
+*Monthly* 
 
 
 

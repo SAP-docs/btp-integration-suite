@@ -6,9 +6,6 @@
 
 ## Context
 
-> ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
-
 When you have selected the SSH connection type, the test tool checks if the SSH outbound connection reaches the associated SFTP server.
 
 Depending on the chosen authentication, the following is checked by the test:
@@ -48,17 +45,17 @@ Depending on the chosen authentication, the following is checked by the test:
     </tr>
     <tr>
     <td valign="top">
-
-     *Host* 
+    
+    *Host* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the host name of the receiver.
 
-    The host name must **not** contain any path or schema \(for example, ***myHost.org***\). In particular, you must **not** enter a URL as the host name.
+    The host name must **not** contain any path or schema \(for example, `myHost.org`\). In particular, you must **not** enter a URL as the host name.
 
 
     
@@ -66,17 +63,17 @@ Depending on the chosen authentication, the following is checked by the test:
     </tr>
     <tr>
     <td valign="top">
-
-     *Port* 
+    
+    *Port* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the port that is to be used for outbound communication.
 
-    Standard port is ***22***.
+    Standard port is `22`.
 
 
     
@@ -84,21 +81,21 @@ Depending on the chosen authentication, the following is checked by the test:
     </tr>
     <tr>
     <td valign="top">
-
-     *Proxy Type* 
+    
+    *Proxy Type* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select a proxy type from the drop-down list:
 
-    -   ***Internet*** 
+    -   `Internet` 
 
         or
 
-    -   ***On-Premise***
+    -   `On-Premise`
 
     For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md) 
 
@@ -108,15 +105,15 @@ Depending on the chosen authentication, the following is checked by the test:
     </tr>
     <tr>
     <td valign="top">
-
-     *Location ID* 
+    
+    *Location ID* 
 
 
     
     </td>
     <td valign="top">
-
-    \(Only if ***On-Premise*** is selected as *Proxy Type*\)
+    
+    \(Only if `On-Premise` is selected as *Proxy Type*\)
 
     To connect to a Cloud Connector instance associated with your account, enter the location ID that you 've defined for this instance, in the destination configuration on the cloud side
 
@@ -126,14 +123,14 @@ Depending on the chosen authentication, the following is checked by the test:
     </tr>
     <tr>
     <td valign="top">
-
-     *Timeout \(ms\)* 
+    
+    *Timeout \(ms\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies a timeout \(in milliseconds\) after which the connection to the server \(host\) should be terminated. The default value is 10.000 ms.
 
 
@@ -142,17 +139,17 @@ Depending on the chosen authentication, the following is checked by the test:
     </tr>
     <tr>
     <td valign="top">
-
-     *Authentication* 
+    
+    *Authentication* 
 
 
     
     </td>
     <td valign="top">
-
+    
     There are the following options:
 
-    -    *None*
+    -   *None*
 
         SFTP server does not require any authentication of the calling component.
 
@@ -182,14 +179,14 @@ Depending on the chosen authentication, the following is checked by the test:
     </tr>
     <tr>
     <td valign="top">
-
-     *User Name* 
+    
+    *User Name* 
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Only if *Public Key* or *Dual* is selected as *Authentication*\)
 
     Enter the ID of the user under which the tenant calls the SFTP server.
@@ -200,14 +197,14 @@ Depending on the chosen authentication, the following is checked by the test:
     </tr>
     <tr>
     <td valign="top">
-
-     *Private Key Alias* 
+    
+    *Private Key Alias* 
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Only if *Public Key* or *Dual* is selected as *Authentication*\)
 
     Alias to identify the private key in the keystore used for the communication with the SFTP server.
@@ -218,14 +215,14 @@ Depending on the chosen authentication, the following is checked by the test:
     </tr>
     <tr>
     <td valign="top">
-
-     *Credential Name*\)
+    
+    *Credential Name*\)
 
 
     
     </td>
     <td valign="top">
-
+    
     \(only if *User Credentials* or *Dual* is selected as *Authentication*\)
 
     Name of User Credentials artifact deployed on the tenant.
@@ -238,14 +235,14 @@ Depending on the chosen authentication, the following is checked by the test:
     </tr>
     <tr>
     <td valign="top">
-
-     *Host Key Verification* 
+    
+    *Host Key Verification* 
 
 
     
     </td>
     <td valign="top">
-
+    
     \(Only if *Public Key*, *User Credentials*, or *Dual* is selected as *Authentication*\).
 
     Verifies the host key.
@@ -281,14 +278,14 @@ Depending on the chosen authentication, the following is checked by the test:
     </tr>
     <tr>
     <td valign="top">
-
-     *Check Directory Access* 
+    
+    *Check Directory Access* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Only if *Public Key* or *User Credentials* is selected as *Authentication*\)
 
     Select this option if you like to check the access to the target directory. If you leave the *Directory* field empty, the default directory is your home directory.
@@ -302,6 +299,28 @@ Depending on the chosen authentication, the following is checked by the test:
     </tr>
     </table>
     
+    > ### Tip:  
+    > You can also use the connectivity test to get the host key of the SFTP server.
+    > 
+    > 1.  Enter the host name of SFTP server.
+    > 
+    > 2.  For *Authentication* select *None*.
+    > 
+    > 3.  Choose *Send*.
+    > 
+    >     If the host name of SFTP server is correct, the test provides the message `Successfully reached host at xxx:22`.
+    > 
+    > 4.  Choose *Copy Host Key*.
+    > 
+    > 
+    > This key is required to specify the known hosts file \(to be uploaded as *Known Hosts \(SSH\)* artifact\).
+    > 
+    > See:
+    > 
+    > -   [Maintaining the Known Hosts File for SFTP Connectivity](../40-RemoteSystems/maintaining-the-known-hosts-file-for-sftp-connectivity-514e383.md)
+    > 
+    > -   [Deploying an SSH Known Hosts Artifact](deploying-an-ssh-known-hosts-artifact-46da324.md)
+
 
 **Related Information**  
 

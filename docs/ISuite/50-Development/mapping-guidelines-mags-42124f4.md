@@ -16,7 +16,15 @@ A Mapping Guideline \(MAG\) is based on a source and a target message implementa
 
 ## Mapping Guidelines
 
-The *Mapping Guidelines* tab displays an overview of all the MAGs that you've created. Filters are used to search and display MAGs based on various criteria. You can use the *Free text filter* search or the <span class="SAP-icons"></span> \(Extended filter\)at the top of the screen to specify your search criteria. The *Free text filter* search allows you to filter and display MAGs that match your search text. It can be used as a quick filter to match your search text against multiple attributes of your MAGs.
+The *Mapping Guidelines* tab displays an overview of all the MAGs that you've created.
+
+-   *Add*: The button allows to create a new MAG. To know more, see [Creating a New Mapping Guideline](creating-a-new-mapping-guideline-a42920e.md)
+
+-   *Export*: You can export your mapping guidelines using this button. To know more, see [Exporting MIG/MAG](exporting-mig-mag-c8bba26.md)
+-   *Import*: You can import mapping guidelines into your tenant using this button. To know more, see [Importing MIG/MAG](importing-mig-mag-7139aad.md)
+-   *Update MAGs*: You can filter and update mapping guidelines in bulk using this button. To know more, see
+
+Filters are used to search and display MAGs based on various criteria. You can use the *Free text filter* search or the <span class="SAP-icons"></span> \(Extended filter\)at the top of the screen to specify your search criteria. The *Free text filter* search allows you to filter and display MAGs that match your search text. It can be used as a quick filter to match your search text against multiple attributes of your MAGs.
 
 You can also choose <span class="SAP-icons"></span> \(Extended filter\)to filter MAGs based on specific criteria. You can use the required filter fields to list MAGs that match your query. You can also customize the filter bar by choosing *Filters*. You can expand or collapse the filter area using *Show Filter Bar* or *Hide Filter Bar*.
 
@@ -280,23 +288,59 @@ The date range during which the MAG was modified.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Last Imported By
+
+
+
+</td>
+<td valign="top">
+
+The unique identifier of the user who last imported the MAG. It is available in the *Administrative Data* section of the *Overview* tab.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Last Imported Between
+
+
+
+</td>
+<td valign="top">
+
+The date range during which the MAG was imported.
+
+
+
+</td>
+</tr>
 </table>
 
+You can also view the version history of a specific mapping guideline. Choose the *History* button provided below the version details of a MAG in the *Mapping Guidelines* page. The resulting screen would display the following version history details of the MAG:
 
+-   *Version*: This column displays the version numbers of the MAG
 
-<a name="loio42124f465fc0472a8ab0de30aa14edef__section_end_s4w_qsb"/>
+-   *Status*: This column displays the status of each version of the MAG. There is always only one active version of a MAG. The previous version of the active MAG will be in draft status and all other MAG versions before that will be deprecated.
 
-## Code Value Mapping
+-   *Name*: Displays the name of the MAG in each version.
 
-The *Code Value Mapping* tab displays the list of global code value mappings that can be used in your mapping guideline. Choose and open a code value maping to see the source and target code values. You can also filter for a specific code value using the *Free Text Filter* <span class="SAP-icons"></span> \(Extended filter\) provided at the column level. This serves as an efficient way to filter through when there are many code values.
+-   *Modified On*: Displays the last modified timestamp.
 
-Choose *Edit* if you want to modify the target code values.
+-   *Modified By*: Displays the unique identifier of the user who modified the MAG.
 
-These global code value mappings consist of only the code values that were selected in the source MIG. To add additional source code values from the underlying code list, choose *Add* and select
+-   *Last Imported On*: Displays the last imported date and time.
 
--   *One source value* if you want to add only one value from the source code list.
+-   *Last Imported By*: Displays the unique identifier of the user who imported the MAG.
+-   *Imported*: This column lets you know if the MAG is imported or not.
+-   The action <span class="SAP-icons"></span> button allows you to copy, migrate or compare your MAG.
 
--   *All remaining source values* if you want to add all the values that were previously unselected the source code list.
+The *Code Value Mapping* tab displays the list of global code value mappings that can be used in your mapping guideline. To know more, see [Global Code Value Mapping](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fd1d3ff10e0f406f95924d5f77c7f6b1.html "Know more about the Code Value Mapping tab in the Mapping Guidelines page.") :arrow_upper_right:.
 
 
 

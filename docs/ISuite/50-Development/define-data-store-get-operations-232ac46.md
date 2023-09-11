@@ -26,7 +26,7 @@ A data store operations step has to be triggered explicitly, for example, by a T
 > From component version 1.5 onwards, the *Created At* \(header: `SAP_DataStoreCreatedAt`\) and *Retain Until* \(header: `SAP_DataStoreExpiresAt`\) timestamps of the data store entry are included in the message.
 
 > ### Tip:  
-> For more information about the data store component and guidelines when to use it, see:
+> For more guidelines about how to use the data store component, see:
 > 
 > -   [Using Data Storage Features When Designing Integration Flows](using-data-storage-features-when-designing-integration-flows-a836b4e.md)
 > 
@@ -35,7 +35,7 @@ A data store operations step has to be triggered explicitly, for example, by a T
 > -   [Data Store, Variables, and JMS Queues: When to Use Which Option?](data-store-variables-and-jms-queues-when-to-use-which-option-6bc21cb.md)
 > 
 > 
-> For examples, see: [Examples](examples-c8ba267.md)
+> For more information, see: [Examples](examples-c8ba267.md)
 
 
 
@@ -71,14 +71,14 @@ A data store operations step has to be triggered explicitly, for example, by a T
     </tr>
     <tr>
     <td valign="top">
-
-     *Data Store Name* 
+    
+    *Data Store Name* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies the name of the data store \(no white spaces\).
 
     The maximum length allowed for the data store name is 40 characters. If you enter a longer string, a validation error is raised. Note that this length restriction applies to the value that is used for this parameter at runtime. Therefore, if you configure this parameter dynamically, make sure that the expected header or property value does not exceed this length restriction. Otherwise, a runtime error will be raised.
@@ -89,14 +89,14 @@ A data store operations step has to be triggered explicitly, for example, by a T
     </tr>
     <tr>
     <td valign="top">
-
-     *Visibility* 
+    
+    *Visibility* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Defines whether the data store is shared by all integration flows \(deployed on the tenant\) or only by one specific integration flow.
 
     -   *Global*: Data store is shared across all integration flows deployed on the tenant.
@@ -112,14 +112,14 @@ A data store operations step has to be triggered explicitly, for example, by a T
     </tr>
     <tr>
     <td valign="top">
-
-     *Entry ID* 
+    
+    *Entry ID* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify an entry ID that is stored together with the message content.
 
     Details for the entry ID are read from the incoming message. You can enter the following kinds of expressions to dynamically specify the entry ID:
@@ -141,14 +141,14 @@ A data store operations step has to be triggered explicitly, for example, by a T
     </tr>
     <tr>
     <td valign="top">
-
-     *Delete on Completion* 
+    
+    *Delete on Completion* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option to delete a message from the data store after having successfully processed the message.
 
 
@@ -157,14 +157,14 @@ A data store operations step has to be triggered explicitly, for example, by a T
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Throw Exception on Missing Entry*
 
 
     
     </td>
     <td valign="top">
-
+    
     You have the option to throw an exception if the entry with the specified *Entry ID* does not exist in the datastore.
 
     This checkbox is selected by default.

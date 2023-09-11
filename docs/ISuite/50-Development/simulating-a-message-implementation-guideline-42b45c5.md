@@ -87,5 +87,5 @@ The payload data should be uploaded in the XML format. The payload you are tryin
 > 
 > -   Uploading EDI text files such as Edifact and X12 are not supported. You can convert these files into their XML representation using the*EDI to XML Converter* flow step in Cloud Integration and use the converted XML files for simulation. To know how this works, see [Define EDI to XML Converter](define-edi-to-xml-converter-6a3d12b.md)
 
- 
+
 

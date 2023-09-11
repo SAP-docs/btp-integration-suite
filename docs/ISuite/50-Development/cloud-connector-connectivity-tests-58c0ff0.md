@@ -5,7 +5,7 @@
 When you have chosen the Cloud Connector, the test tool checks whether the Cloud Connector has been configured and can be reached.
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 To use the Cloud Connector, you must have installed and configured it as described in [Outbound: SAP Cloud Connector](../40-RemoteSystems/outbound-sap-cloud-connector-642e87f.md) 
 

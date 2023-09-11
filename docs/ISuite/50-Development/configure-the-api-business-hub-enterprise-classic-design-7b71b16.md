@@ -1,11 +1,11 @@
 <!-- loio7b71b166d6984e8f81a212568af5ce94 -->
 
-# Configure the API Business Hub Enterprise \[Classic Design\]
+# Configure the API business hub enterprise \[Classic Design\]
 
 You can configure the API business hub enterprise to personalize it for your organization.
 
 > ### Note:  
-> This document describes the classic design of the API business hub enterprise. To view the documentation for the new design, see [Configure the API Business Hub Enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
+> This document describes the classic design of the API business hub enterprise. To view the documentation for the new design, see [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
 
 
 
@@ -79,7 +79,14 @@ Other colors on the Web site are changed to neutral tones to avoid visual confli
 
 ### *Home Page*
 
-Prerequisite: You are assigned the site admin role to view *Name and Description* and *Updates*. You are assigned the content admin role to view *Navigation Categories*.
+Prerequisite:
+
+-   You are assigned the *AuthGroup.Site.Admin* role to view the following sections: *Name and Description* and *Updates*.
+
+-   You are assigned the content admin role to view *Navigation Categories*.
+
+
+From the homepage, you can view and search the categories, APIs, and products.
 
 
 <table>

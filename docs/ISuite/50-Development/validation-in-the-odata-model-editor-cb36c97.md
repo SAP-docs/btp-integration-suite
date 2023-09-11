@@ -10,6 +10,8 @@ Let us look at an example of how validation works.
 
 
 
+## Example
+
 In any OData model, remove the value corresponding to the **Name** attribute in an **EntityContainer** element.
 
 Since **Name** is a mandatory attribute, the corresponding line of code is highlighted with a red icon in the code editor. You can see the error message in a tooltip when you hover the mouse over the red icon.

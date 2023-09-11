@@ -98,7 +98,7 @@ Related Application/Topic
 <tr>
 <td valign="top">
 
- [Managing time intensive Integration Flows using SAP Integration Suite](https://blogs.sap.com/2020/02/10/managing-time-intensive-integration-flows-using-sap-cloud-platform-integration-and-sap-api-management/) 
+[Managing time intensive Integration Flows using SAP Integration Suite](https://blogs.sap.com/2020/02/10/managing-time-intensive-integration-flows-using-sap-cloud-platform-integration-and-sap-api-management/) 
 
 
 
@@ -114,7 +114,7 @@ SAP API Management
 <tr>
 <td valign="top">
 
- [Implementation Design Principles for SAP SuccessFactors solutions](https://blogs.sap.com/2019/04/15/implementation-design-principles-idp-for-successfactors/) 
+[Implementation Design Principles for SAP SuccessFactors solutions](https://blogs.sap.com/2019/04/15/implementation-design-principles-idp-for-successfactors/) 
 
 
 
@@ -130,7 +130,7 @@ SAP SuccessFactors
 <tr>
 <td valign="top">
 
- [Making SAP SuccessFactors and SAP Cloud Integration more reliable and performant](https://blogs.sap.com/2020/09/23/making-sap-successfactors-and-sap-cloud-platform-integration-more-reliable-and-performant/) 
+[Making SAP SuccessFactors and SAP Cloud Integration more reliable and performant](https://blogs.sap.com/2020/09/23/making-sap-successfactors-and-sap-cloud-platform-integration-more-reliable-and-performant/) 
 
 
 

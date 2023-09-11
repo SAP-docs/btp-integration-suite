@@ -3,7 +3,7 @@
 # Working with Mapping
 
 > ### Remember:  
-> There are currently certain limitations when working in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> There are currently certain limitations when working in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 This feature enables you to define an association between fields of messages with different structuring. For example, consider the record **Employee** and we need to update the employee identification number. In the sender system, the field name is **Employee ID**. However, in the receiver system, the same field is called **ID**.
 

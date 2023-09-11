@@ -36,14 +36,14 @@ In [Determine an Integration Technology](determine-an-integration-technology-69b
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Coverage*
 
 
     
     </td>
     <td valign="top">
-
+    
     Percentage of coverage of key characteristics in combination with other technologies selected.
 
 
@@ -52,14 +52,14 @@ In [Determine an Integration Technology](determine-an-integration-technology-69b
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Policy Rule* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Shows the rule pertaining to the coverage selected. This field describes how to use this technology in your context.
 
 
@@ -68,14 +68,14 @@ In [Determine an Integration Technology](determine-an-integration-technology-69b
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Policy-Based Recommendation*
 
 
     
     </td>
     <td valign="top">
-
+    
     Indicates to which degree this technology is recommended \(type of recommendation\):
 
     -   *General Recommendation*
@@ -90,14 +90,14 @@ In [Determine an Integration Technology](determine-an-integration-technology-69b
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Application Policy*
 
 
     
     </td>
     <td valign="top">
-
+    
     Out of the multiple related Integration Policies that a technology can have, the calculation uses the one that isranked the highest.
 
 

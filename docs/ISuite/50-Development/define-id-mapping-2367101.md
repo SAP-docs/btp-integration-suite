@@ -84,14 +84,14 @@ For an example how to use this feature, see [ID Mapping Example](id-mapping-exam
     </tr>
     <tr>
     <td valign="top">
-
+    
     Source Message ID
 
 
     
     </td>
     <td valign="top">
-
+    
     The source message ID.
 
     The source message ID can be dynamically read from a header or property using an expression such like `${property.messageID}` or `${header.messageID}`.
@@ -102,14 +102,14 @@ For an example how to use this feature, see [ID Mapping Example](id-mapping-exam
     </tr>
     <tr>
     <td valign="top">
-
+    
     Target Header Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Name of the header in which to store the target message ID.
 
 
@@ -118,14 +118,14 @@ For an example how to use this feature, see [ID Mapping Example](id-mapping-exam
     </tr>
     <tr>
     <td valign="top">
-
+    
     Context
 
 
     
     </td>
     <td valign="top">
-
+    
     Defines the context the target message ID is generated for.
 
     Typically, the context is used to identify the receiver.
@@ -149,14 +149,14 @@ For an example how to use this feature, see [ID Mapping Example](id-mapping-exam
     </tr>
     <tr>
     <td valign="top">
-
+    
     Visibility
 
 
     
     </td>
     <td valign="top">
-
+    
     Defines whether the ID mapping is shared by all integration flows \(deployed on the tenant\) or only by one specific integration flow.
 
     -   *Global*: ID mapping is shared across all integration flows deployed on the tenant.
@@ -170,14 +170,14 @@ For an example how to use this feature, see [ID Mapping Example](id-mapping-exam
     </tr>
     <tr>
     <td valign="top">
-
+    
     Expiration Period \(in d\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Number of days after which the stored ID mapping is deleted \(default is 30 days\).
 
 

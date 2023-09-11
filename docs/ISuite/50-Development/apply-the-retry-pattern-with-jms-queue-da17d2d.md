@@ -19,11 +19,11 @@ A Content Modifier step creates a simple message with only 1 element for the pro
 
 The inbound integration flow then stores this message in a JMS queue using the JMS receiver adapter:
 
- ![](images/JMS_Inbound_8528758.png) 
+![](images/JMS_Inbound_8528758.png)
 
 An associated 2nd outbound integration flow has the following structure:
 
- ![](images/JMS_Outbound_299fd6e.png) 
+![](images/JMS_Outbound_299fd6e.png)
 
 This outbound integration flow performs the following steps:
 
@@ -76,10 +76,10 @@ To configure the retry behavior, the JMS sender adapter provides a set of attrib
 
 -   *Dead-Letter Queue* 
 
-    Enables Cloud Integration to take a message out of processing and mark it as *Blocked* in the queue if it can't be processed after 2 retries.
+    Enables Cloud Integration to take a message out of processing and mark it as *Blocked* in the queue if the respective message caused two worker node crashes.
 
 
- ![](images/JMS_Sender_Adapter_Retry_6934cb9.png) 
+![](images/JMS_Sender_Adapter_Retry_6934cb9.png)
 
 **Related Information**  
 

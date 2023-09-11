@@ -122,6 +122,38 @@ Yes
 <tr>
 <td valign="top" colspan="3">
 
+**Virtual Host**
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Additional virtual host in Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+By default, only 3 virtual hosts can be configured per tenant/subaccount. In case you have a business requirement to have more than 3 virtual hosts within a tenant, please raise a support ticket through the [SAP Support Portal](https://support.sap.com/en/index.html) using the component OPU-API-OD-OPS.
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="3">
+
 **Cache and KVM**
 
 

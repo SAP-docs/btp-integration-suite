@@ -47,7 +47,7 @@ Here we describe how to build and deploy an adapter during runtime using these t
 
         Use the below maven archetype artifacts:
 
-        ***com.sap.cloud.adk:com.sap.cloud.adk.archetype-adapter***
+        `com.sap.cloud.adk:com.sap.cloud.adk.archetype-adapter`
 
         Refer to the central maven to obtain the latest version number.
 
@@ -90,18 +90,18 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
+        
+        `archetypeGroupId`
 
-        ***archetypeGroupId***
+        `archetypeArtifactId`
 
-        ***archetypeArtifactId***
-
-        ***archetypeVersion***
+        `archetypeVersion`
 
 
         
         </td>
         <td valign="top">
-
+        
         Artifacts of maven archetype
 
 
@@ -110,21 +110,21 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
+        
+        `componentName`
 
-        ***componentName***
-
-        ***scheme***
+        `scheme`
 
 
         
         </td>
         <td valign="top">
-
+        
         Artifacts of your runtime component
 
-        ***componentName*** is the name of your camel component.
+        `componentName` is the name of your camel component.
 
-        ***scheme*** is the scheme name of the component.
+        `scheme` is the scheme name of the component.
 
 
         
@@ -132,20 +132,20 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
+        
+        `adapterName`
 
-        ***adapterName***
+        `adapterId`
 
-        ***adapterId***
+        `adapterVendor`
 
-        ***adapterVendor***
-
-        ***adapterVersion***
+        `adapterVersion`
 
 
         
         </td>
         <td valign="top">
-
+        
         Artifacts of your integration adapter
 
 
@@ -154,18 +154,18 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
+        
+        `groupId`
 
-        ***groupId***
+        `artifactId`
 
-        ***artifactId***
-
-        ***version***
+        `version`
 
 
         
         </td>
         <td valign="top">
-
+        
         Artifacts of your maven project
 
 
@@ -196,14 +196,14 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
-
+        
         `*Component.java`
 
 
         
         </td>
         <td valign="top">
-
+        
         Sample runtime component.
 
 
@@ -212,14 +212,14 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
-
+        
         `*Consumer.java`
 
 
         
         </td>
         <td valign="top">
-
+        
         Sample sender component.
 
 
@@ -228,14 +228,14 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
-
+        
         `*Endpoint.java`
 
 
         
         </td>
         <td valign="top">
-
+        
         Logger information is found.
 
 
@@ -244,14 +244,14 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
-
+        
         `*Producer.java`
 
 
         
         </td>
         <td valign="top">
-
+        
         Sample receiver component.
 
 
@@ -260,14 +260,14 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
-
+        
         `metadata.xml`
 
 
         
         </td>
         <td valign="top">
-
+        
         UI values are coded here.
 
 
@@ -276,14 +276,14 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
-
+        
         `*ComponentTest.java`
 
 
         
         </td>
         <td valign="top">
-
+        
         Sample JUnit test
 
 
@@ -292,14 +292,14 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
-
+        
         `pom.xml`
 
 
         
         </td>
         <td valign="top">
-
+        
         Contains configuration details and dependencies.
 
 
@@ -308,14 +308,14 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
-
+        
         `*config.adk`
 
 
         
         </td>
         <td valign="top">
-
+        
         Contains the adapter configuration parameters.
 
 
@@ -324,14 +324,14 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
-
+        
         `sap-sample`
 
 
         
         </td>
         <td valign="top">
-
+        
         Represents the endpoint scheme.
 
         > ### Note:  
@@ -357,7 +357,7 @@ Here we describe how to build and deploy an adapter during runtime using these t
 
         Use the below maven archetype artifacts:
 
-        ***com.sap.cloud.adk:com.sap.cloud.adk.archetype-adapter-component-reuse***
+        `com.sap.cloud.adk:com.sap.cloud.adk.archetype-adapter-component-reuse`
 
         Refer to the central maven to obtain the latest version number.
 
@@ -402,18 +402,18 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
+        
+        `archetypeGroupId`
 
-        ***archetypeGroupId***
+        `archetypeArtifactId`
 
-        ***archetypeArtifactId***
-
-        ***archetypeVersion***
+        `archetypeVersion`
 
 
         
         </td>
         <td valign="top">
-
+        
         Artifacts of maven archetype
 
 
@@ -422,20 +422,20 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
+        
+        `adapterName`
 
-        ***adapterName***
+        `adapterId`
 
-        ***adapterId***
+        `adapterVendor`
 
-        ***adapterVendor***
-
-        ***adapterVersion***
+        `adapterVersion`
 
 
         
         </td>
         <td valign="top">
-
+        
         Artifacts of your integration adapter
 
 
@@ -444,18 +444,18 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
+        
+        `groupId`
 
-        ***groupId***
+        `artifactId`
 
-        ***artifactId***
-
-        ***version***
+        `version`
 
 
         
         </td>
         <td valign="top">
-
+        
         Artifacts of your maven project
 
 
@@ -486,14 +486,14 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
-
+        
         `component`
 
 
         
         </td>
         <td valign="top">
-
+        
         A folder where runtime component JAR must be placed.
 
 
@@ -502,14 +502,14 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
-
+        
         `libs`
 
 
         
         </td>
         <td valign="top">
-
+        
         A folder where runtime component dependencies JARs must be placed.
 
 
@@ -518,14 +518,14 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
-
+        
         `metadata`
 
 
         
         </td>
         <td valign="top">
-
+        
         A folder where component and blueprint \(optional\) metadata will be generated.
 
 
@@ -534,14 +534,14 @@ Here we describe how to build and deploy an adapter during runtime using these t
         </tr>
         <tr>
         <td valign="top">
-
+        
         `pom.xml`
 
 
         
         </td>
         <td valign="top">
-
+        
         Contains configuration details and dependencies.
 
 

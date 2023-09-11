@@ -7,9 +7,11 @@ The XI sender adapter allows you to connect a tenant to a local Integration Engi
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -126,7 +128,7 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -136,9 +138,9 @@ Description
 Address under which a sender system can reach the tenant.
 
 > ### Note:  
-> When you specify the endpoint address ***/path***, a sender can also call the integration flow through the endpoint address ***/path/<any string\>*** \(for example, ***/path/test/***\).
+> When you specify the endpoint address `/path`, a sender can also call the integration flow through the endpoint address `/path/<any string>` \(for example, `/path/test/`\).
 > 
-> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address ***/path/test/***, a sender using the ***/path/test*** endpoint address will now call the newly deployed integration flow with the endpoint address ***/path/test/***. When you now undeploy the integration flow with endpoint address ***/path/test***, the sender again calls the integration flow with endpoint address ***/path*** \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using completely separated endpoints for services.
+> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address `/path/test/`, a sender using the `/path/test` endpoint address will now call the newly deployed integration flow with the endpoint address `/path/test/`. When you now undeploy the integration flow with endpoint address `/path/test`, the sender again calls the integration flow with endpoint address `/path` \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using completely separated endpoints for services.
 
 
 
@@ -147,7 +149,7 @@ Address under which a sender system can reach the tenant.
 <tr>
 <td valign="top">
 
- *Authorization* 
+*Authorization* 
 
 
 
@@ -320,6 +322,14 @@ There are the following options:
 
     > ### Note:  
     > For *Exactly Once* handling, the sender XI adapter saves the protocol-specific message ID in the header `SapMessageIdEx`. If this header is set, XI receiver uses the content of this header as the message ID for outbound communication. Usually, this is the desired behavior and enables the receiver to identify any duplicates. However, if the sender system is also the receiver system, or several variants of the message are sent to the same system \(for example, in an external call or multicast\), the receiver system will incorrectly identify these messages as duplicates. In this case, the header `SapMessageIdEx` must be deleted \(for example, using a content modifier\) or overwritten with a new generated message ID. This deactivates *Exactly Once* processing \(that is, duplicates are no longer recognized by the protocol\).
+    > 
+    > The adapter sets the header `SapQualityOfService`. Its value indicates the quality of service from the sender system.
+    > 
+    > Possible Values for `SapQualityOfService`:
+    > 
+    > -   `BestEffort`
+    > 
+    > -   `ExactlyOnce`
 
     If you choose this option, the message needs to be temporarily stored on the tenant \(in the storage configured under *Temporary Storage*\). As soon as the message is successfully stored there, the sender receives a successful status message. If an error occurs, the message is retried from the temporary storage.
 
@@ -522,7 +532,25 @@ For more information, read the SAP Community blog [Cloud Integration – Configu
 <tr>
 <td valign="top">
 
- *Encrypt Message during Persistence* \(only in case you've selected *Exactly Once* as *Quality of Service*\)
+*Compress Stored Message*
+
+\(only if *JMS Queue* has been selected for *Temporary Storage*\)
+
+
+
+</td>
+<td valign="top">
+
+Select this option to compress the message in the JMS queue. Compressing the message reduces disk space usage and network traffic.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Encrypt Message during Persistence* \(only in case you've selected *Exactly Once* as *Quality of Service*\)
 
 
 
@@ -635,7 +663,7 @@ If a message is rejected because it exceeds the configured limit, the sender rec
 
 [Managing Data Stores](managing-data-stores-ac39f1d.md "")
 
-[Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right:
+[Managing Message Queues](managing-message-queues-cdcce24.md "You can monitor queues that are active for a tenant.")
 
 [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md "")
 

@@ -1148,7 +1148,7 @@ Expression: Meaningful expression describing all the integration flows or queues
 </td>
 <td valign="top">
 
--    `ESBMessaging.send_EmployeePayrollRead_RTCustomRole`
+-   `ESBMessaging.send_EmployeePayrollRead_RTCustomRole`
 
 -   `ESBMessaging.send_HRData_RTCustomRole`
 
@@ -1167,11 +1167,11 @@ Expression: Meaningful expression describing all the integration flows or queues
 
 ### Message Queues
 
-Messaging Queues enable persistence and asynchronous messaging in integration flows. See [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right:.
+Messaging Queues enable persistence and asynchronous messaging in integration flows. See [Managing Message Queues](managing-message-queues-cdcce24.md).
 
 The naming convention is as follows:
 
--    `<AdapterType>_<IntegrationFlowID>`
+-   `<AdapterType>_<IntegrationFlowID>`
 
 -   `<AdapterType>.<IntegrationFlowID>`
 
@@ -1229,7 +1229,7 @@ Message Queues must be unique for the entire tenant.
 </td>
 <td valign="top">
 
--    `XI.BusinessUnitA_MM_PurchaseOrderReplication.XI.a06f9a3046fb32c48371214aa1d7494d`
+-   `XI.BusinessUnitA_MM_PurchaseOrderReplication.XI.a06f9a3046fb32c48371214aa1d7494d`
 
 -   `AS2_BusinessUnitA_MM_PurchaseOrderReplication_AS2_5b790cac_0cb0_3643_ad87_ba1a0fe1df53`
 
@@ -1306,7 +1306,7 @@ JDBC Data Sources must be unique for the entire tenant.
 </td>
 <td valign="top">
 
--    `HANA_DataBase1`
+-   `HANA_DataBase1`
 
     `ASE_DataBase2`
 

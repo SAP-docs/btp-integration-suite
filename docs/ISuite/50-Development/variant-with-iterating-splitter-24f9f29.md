@@ -4,7 +4,7 @@
 
 You can use an Iterating Splitter to implement the **Splitting a Bulk Order Message into Multiple Orders** use case described in [Splitter](splitter-4b475ea.md). The*Pattern Message Splitter - Iterating Splitter* integration flow illustrates this simple scenario.
 
- ![](images/Iterating_Splitter_50c5781.png) 
+![](images/Iterating_Splitter_50c5781.png)
 
 It contains an Iterating Splitter step with an *XPath* expression type and the following XPath expression:
 

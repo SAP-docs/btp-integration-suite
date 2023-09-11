@@ -36,7 +36,7 @@ GET
 </td>
 <td valign="top">
 
- `​/KeystoreEntries('{Hexalias}')/Certificate/$value` 
+`​/KeystoreEntries('{Hexalias}')/Certificate/$value` 
 
 
 

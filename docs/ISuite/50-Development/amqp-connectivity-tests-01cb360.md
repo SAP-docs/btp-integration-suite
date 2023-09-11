@@ -38,13 +38,13 @@ Description
 
 Select a transport protocol from the drop-down list. You can choose between
 
--   ***TCP*** 
+-   `TCP` 
 
     and
 
--   ***WebSocket***
+-   `WebSocket`
 
-Default value is ***TCP***
+Default value is `TCP`
 
 
 
@@ -78,11 +78,11 @@ Enter the host of the messaging server \(mandatory\).
 
 Enter the port of the messaging server \(mandatory\). Default values are:
 
--   ***5671*** for TCP
+-   `5671` for TCP
 
     or
 
--   ***443*** for WebSocket
+-   `443` for WebSocket
 
 
 
@@ -118,11 +118,11 @@ Access path of the messaging server. Default value is *empty*.
 
 Select a proxy type from the drop-down list:
 
--   ***Internet*** 
+-   `Internet` 
 
     or
 
--   ***On-Premise***
+-   `On-Premise`
 
 
 
@@ -131,14 +131,14 @@ Select a proxy type from the drop-down list:
 <tr>
 <td valign="top">
 
- *Location ID* 
+*Location ID* 
 
 
 
 </td>
 <td valign="top">
 
-Only if ***On-Premise*** is selected as *Proxy Type*.
+Only if `On-Premise` is selected as *Proxy Type*.
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you 've defined for this instance, in the destination configuration on the cloud side
 

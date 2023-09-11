@@ -9,7 +9,7 @@ The Partner Directory contains information on partners that are connected to a t
 There's no dedicated user interface to access the Partner Directory. You can access its content only based on APIs.
 
 > ### Note:  
-> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP API Business Hub:
+> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP Business Accelerator Hub:
 > 
 > [Integration Flow Design Guidelines - Use the Partner Directory Appropriately](https://api.sap.com/package/IntegrationFlowDesignGuidelinesPartnerDirectoryGuidelines?section=Overview)
 > 
@@ -35,6 +35,9 @@ After you've performed these steps, you can execute the example integration flow
 > -   You need to implement more logic within your integration flows. This implies integration flow modifications if objects/configurations related to a specific partner are changed.
 > 
 > -   You expect a high maintenance effort if there are updates or bug fixes.
+
+> ### Note:  
+> It can be the case that you've applied the integration flow design guidelines described in this section to your best knowledge, but you still face issues during the operation of the scenario. For example, you have applied all design rules with regard to performance but still the performance isn't good enough at runtime. In such cases, you can check out the following page to search for a service that helps you to optimize the implementation of your scenario: [SAP Services and Support](https://www.sap.com/services-support.html).
 
 To apply this design guideline, consider the following rules:
 

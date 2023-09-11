@@ -28,7 +28,7 @@ Upon creation of the archiving job, the system defines a random start time for i
 
 To enable archiving, send a `POST` call to the URL : `https://path-to-odata-api/api/v1/activateArchivingConfiguration`, where `path-to-odata-api` is specific to your environment.
 
-If the enabling of the archiving function is successful, you get a response code ***200*** and a message of success. After a successful activation call, you can configure the archiving for integration flows in the Monitoring UI. To do so, you've to reload the *Operations View* in the WebUI Monitor, to be able see the configuration options for your integration flows.
+If the enabling of the archiving function is successful, you get a response code `200` and a message of success. After a successful activation call, you can configure the archiving for integration flows in the Monitoring UI. To do so, you've to reload the *Operations View* in the WebUI Monitor, to be able see the configuration options for your integration flows.
 
 If the enablement isn't successful, the system throws an error code as well as an error message.
 

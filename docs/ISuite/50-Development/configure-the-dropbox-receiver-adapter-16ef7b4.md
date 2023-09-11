@@ -2,12 +2,12 @@
 
 # Configure the Dropbox Receiver Adapter
 
-The Dropbox receiver adapter enables an SAP Cloud Integration tenant to write files and folders to the Dropbox storage.
+The Dropbox receiver adapter enables SAP Integration Suite to write files and folders to the Dropbox storage.
 
 > ### Note:  
-> This adapter is available on SAP API Business Hub.
+> This adapter is available on SAP Business Accelerator Hub.
 > 
-> For more information, see [Consuming Integration Adapters from SAP API Business Hub](consuming-integration-adapters-from-sap-api-business-hub-b9250fb.md).
+> For more information, see [Consuming Integration Adapters from SAP Business Accelerator Hub](consuming-integration-adapters-from-sap-business-accelerator-hub-b9250fb.md).
 > 
 > The availability of the adapter is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://launchpad.support.sap.com/#/notes/2903776) and [3188446](https://launchpad.support.sap.com/#/notes/3188446).
 
@@ -41,7 +41,7 @@ Description
 <tr>
 <td valign="top">
 
- *Name* 
+*Name* 
 
 
 
@@ -58,7 +58,7 @@ Enter the name of the Dropbox channel.
 
 Select the *Connection* tab and provide values in the fields as follows.
 
-**General**
+**Connection**
 
 
 <table>
@@ -81,7 +81,7 @@ Description
 <tr>
 <td valign="top">
 
- *OAuth Credential Name* 
+*OAuth Credential Name* 
 
 
 
@@ -97,7 +97,7 @@ Name of the credential artifact deployed on the tenant and used to connect to Dr
 <tr>
 <td valign="top">
 
- *Timeout \(in ms\)* 
+*Timeout \(in ms\)* 
 
 
 
@@ -118,7 +118,7 @@ You can use property `SAP_DropboxTimeout` to dynamically define the value. In th
 
 Select the *Processing* tab and provide values in the fields as follows.
 
-**General**
+**Processing**
 
 
 <table>
@@ -141,7 +141,7 @@ Description
 <tr>
 <td valign="top">
 
- *Operation* 
+*Operation* 
 
 
 
@@ -210,7 +210,7 @@ Select one of the following options depending on the operation to be performed i
 <tr>
 <td valign="top">
 
- *Source Path* \(only if *Copy File or Folder* is selected for *Operation*\)
+*Source Path* \(only if *Copy File or Folder* is selected for *Operation*\)
 
 
 
@@ -228,7 +228,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Destination Path* \(only if *Download File* is selected for *Operation*\)
+*Destination Path* \(only if *Download File* is selected for *Operation*\)
 
 
 
@@ -246,7 +246,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Handling of Existing Files* \(only if *Copy File or Folder* is selected for *Operation*\)
+*Handling of Existing Files* \(only if *Copy File or Folder* is selected for *Operation*\)
 
 
 
@@ -283,7 +283,7 @@ Defines how to proceed if the file already exists. There are the following optio
 <tr>
 <td valign="top">
 
- *Folder Path* \(only if *Create Folder* is selected for *Operation*\)
+*Folder Path* \(only if *Create Folder* is selected for *Operation*\)
 
 
 
@@ -301,7 +301,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Handling of Existing Folder* \(only if *Create Folder* is selected for *Operation*\)
+*Handling of Existing Folder* \(only if *Create Folder* is selected for *Operation*\)
 
 
 
@@ -338,7 +338,7 @@ Defines how to proceed if the file already exists. There are the following optio
 <tr>
 <td valign="top">
 
- *Path* \(only if *Delete* is selected for *Operation*\)
+*Path* \(only if *Delete* is selected for *Operation*\)
 
 
 
@@ -356,7 +356,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *File Path* \(only if *Get File URL* is selected for *Operation*\)
+*File Path* \(only if *Get File URL* is selected for *Operation*\)
 
 
 
@@ -377,7 +377,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Path* \(only if *Get Metadata for File or Folder* is selected for *Operation*\)
+*Path* \(only if *Get Metadata for File or Folder* is selected for *Operation*\)
 
 
 
@@ -395,7 +395,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Include Deleted* \(only if *Get Metadata for File or Folder* is selected for *Operation*\)
+*Include Deleted* \(only if *Get Metadata for File or Folder* is selected for *Operation*\)
 
 
 
@@ -415,7 +415,7 @@ You can use property `SAP_DropboxIncludeDeleted` to dynamically define the value
 <tr>
 <td valign="top">
 
- *Folder Path* \(only if *List Folder* is selected for *Operation*\)
+*Folder Path* \(only if *List Folder* is selected for *Operation*\)
 
 
 
@@ -426,9 +426,9 @@ Scope of the search to a path in the Dropbox account. Accepts dynamic values.
 
 Examples:
 
-***/Homework/math***
+`/Homework/math`
 
-***id: a4ayc\_80\_OEAAAAAAAAAXw***
+`id: a4ayc_80_OEAAAAAAAAAXw`
 
 You can configure this parameter by entering a dynamic expression such like `${property. property_name}` or `${header.header_name}`.
 
@@ -439,7 +439,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Recursive* \(only if *List Folder* is selected for *Operation*\)
+*Recursive* \(only if *List Folder* is selected for *Operation*\)
 
 
 
@@ -457,7 +457,7 @@ You can use property `SAP_DropboxRecursive` to dynamically define the value. All
 <tr>
 <td valign="top">
 
- *Limit* \(only if *List Folder* is selected for *Operation*\)
+*Limit* \(only if *List Folder* is selected for *Operation*\)
 
 
 
@@ -477,7 +477,7 @@ Default value is 1000. Maximum value is 2000.
 <tr>
 <td valign="top">
 
- *Mode* \(only if *List Revisions for File and Folder* is selected for *Operation*\)
+*Mode* \(only if *List Revisions for File and Folder* is selected for *Operation*\)
 
 
 
@@ -493,7 +493,7 @@ Determines the behavior of the API in listing the revisions for a given file pat
 <tr>
 <td valign="top">
 
- *Path/ID* \(only if *List Revisions for File and Folder* is selected for *Operation*\)
+*Path/ID* \(only if *List Revisions for File and Folder* is selected for *Operation*\)
 
 
 
@@ -511,7 +511,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Limit* \(only if *List Revisions for File and Folder* is selected for *Operation*\)
+*Limit* \(only if *List Revisions for File and Folder* is selected for *Operation*\)
 
 
 
@@ -531,7 +531,7 @@ You can use property `SAP_DropboxLimit` to dynamically define the value.
 <tr>
 <td valign="top">
 
- *Source Path* \(only if *Move File or Folder* is selected for *Operation*\)
+*Source Path* \(only if *Move File or Folder* is selected for *Operation*\)
 
 
 
@@ -549,7 +549,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Destination Path* \(only if *Move File or Folder* is selected for *Operation*\)
+*Destination Path* \(only if *Move File or Folder* is selected for *Operation*\)
 
 
 
@@ -567,7 +567,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Handling of Existing Folder* \(only if *Move File or Folder* is selected for *Operation*\)
+*Handling of Existing Folder* \(only if *Move File or Folder* is selected for *Operation*\)
 
 
 
@@ -604,7 +604,7 @@ Defines how to proceed if the file already exists. There are the following optio
 <tr>
 <td valign="top">
 
- *Query* \(only if *Search File or Folder* is selected for *Operation*\)
+*Query* \(only if *Search File or Folder* is selected for *Operation*\)
 
 
 
@@ -619,9 +619,9 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Examples:
 
-***Filename\****
+`Filename*`
 
-***Foldername\****
+`Foldername*`
 
 
 
@@ -630,7 +630,7 @@ Examples:
 <tr>
 <td valign="top">
 
- *Path* \(only if *Search File or Folder* is selected for *Operation*\)
+*Path* \(only if *Search File or Folder* is selected for *Operation*\)
 
 
 
@@ -648,7 +648,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Max Results* \(only if *Search File or Folder* is selected for *Operation*\)
+*Max Results* \(only if *Search File or Folder* is selected for *Operation*\)
 
 
 
@@ -664,7 +664,7 @@ Maximum number of results to be returned from Dropbox.
 <tr>
 <td valign="top">
 
- *Order By* \(only if *Search File or Folder* is selected for *Operation*\)
+*Order By* \(only if *Search File or Folder* is selected for *Operation*\)
 
 
 
@@ -686,7 +686,7 @@ Allowed values for `SAP_DropboxOrderBy` are `modifiedTime` and `relevance`.
 <tr>
 <td valign="top">
 
- *Path* \(only if *Update Metadata for File or Folder* is selected for *Operation*\)
+*Path* \(only if *Update Metadata for File or Folder* is selected for *Operation*\)
 
 
 
@@ -704,7 +704,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Template ID* \(only if *Update Metadata for File or Folder* is selected for *Operation*\)
+*Template ID* \(only if *Update Metadata for File or Folder* is selected for *Operation*\)
 
 
 
@@ -722,7 +722,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Add or update fields* \(only if *Update Metadata for File or Folder* is selected for *Operation*\)
+*Add or update fields* \(only if *Update Metadata for File or Folder* is selected for *Operation*\)
 
 
 
@@ -738,7 +738,7 @@ Property fields to update. If the property field already exists, it is updated. 
 <tr>
 <td valign="top">
 
- *Remove fields* \(only if *Update Metadata for File or Folder* is selected for *Operation*\)
+*Remove fields* \(only if *Update Metadata for File or Folder* is selected for *Operation*\)
 
 
 
@@ -754,7 +754,7 @@ Property fields to remove \(by name\), provided they exist.
 <tr>
 <td valign="top">
 
- *File Path* \(only if *Upload File* is selected for *Operation*\)
+*File Path* \(only if *Upload File* is selected for *Operation*\)
 
 
 
@@ -772,7 +772,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Handling of Existing Folder* \(only if *Upload File* is selected for *Operation*\)
+*Handling of Existing Folder* \(only if *Upload File* is selected for *Operation*\)
 
 
 
@@ -813,7 +813,7 @@ Defines how to proceed if the file already exists. There are the following optio
 <tr>
 <td valign="top">
 
- *Response Format* 
+*Response Format* 
 
 
 
@@ -838,7 +838,7 @@ There are the following options:
 <tr>
 <td valign="top">
 
- *Request Headers* 
+*Request Headers* 
 
 
 
@@ -847,7 +847,7 @@ There are the following options:
 
 Pipe-separated value list of request headers to be sent to Dropbox.
 
-If the value ***\**** is entered, all message headers are converted to request headers and forwarded.
+If the value `*` is entered, all message headers are converted to request headers and forwarded.
 
 
 
@@ -856,7 +856,7 @@ If the value ***\**** is entered, all message headers are converted to request h
 <tr>
 <td valign="top">
 
- *Response Headers* 
+*Response Headers* 
 
 
 
@@ -865,7 +865,7 @@ If the value ***\**** is entered, all message headers are converted to request h
 
 Pipe-separated value list of response headers. The specified headers from Dropbox are converted to message/exchange headers.
 
-If the value ***\**** is entered, all response header values are converted to message/exchange headers.
+If the value `*` is entered, all response header values are converted to message/exchange headers.
 
 
 
@@ -874,7 +874,7 @@ If the value ***\**** is entered, all response header values are converted to me
 <tr>
 <td valign="top">
 
- *Mute* 
+*Mute* 
 
 
 

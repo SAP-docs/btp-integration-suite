@@ -5,9 +5,20 @@
 Using this option, the API client is authenticated based on user credentials associated with a user registered at an identity provider \(IdP\).
 
 > ### Caution:  
+> This authentication option is supported for compatibility reasons.
+> 
+> However, it is not recommended to use this option for API calls in productive environments.
+> 
+> Therefore, if possible, use one of the other supported authentication options:
+> 
+> -   [Client Certificate Authentication for API Clients](client-certificate-authentication-for-api-clients-d9ca0ac.md)
+> 
+> -   [OAuth with Client Credentials Grant for API Clients](oauth-with-client-credentials-grant-for-api-clients-20e26a8.md)
+
+> ### Caution:  
 > This authentication option can’t be used when operating SAP Integration Suite on Alibaba Cloud.
 > 
-> On Alibaba Cloud, SAP ID Service isn't used as default IdP. Therefore, also basic authentication with SAP ID Service can't be used on Alibaba Cloud.
+> On Alibaba Cloud, SAP ID service isn't used as default IdP. Therefore, also basic authentication with SAP ID Service can't be used on Alibaba Cloud.
 
 > ### Note:  
 > When setting up trust relationships in SAP BTP cockpit, in most cases *SAP ID service* is used as default identity provider. However, you've the option to define a custom IdP as your default IdP.
@@ -16,7 +27,7 @@ Using this option, the API client is authenticated based on user credentials ass
 
 The following figure shows the components and the involved security artifacts:
 
- ![](images/CF_API_BAsic_IdP_e828f5a.png) 
+![](images/CF_API_BAsic_IdP_e828f5a.png)
 
 Using SAP BTP cockpit, assign to the user a role that is to be used to authorize the API client to call the OData API. Which role you assign, depends on the Cloud Integration resource you like to access through the API. For more information, see [API Details](../50-Development/api-details-014d6ad.md).
 
@@ -28,7 +39,7 @@ In detail, perform the following steps.
 
 3.  Click the *\+* icon to create a new role collection.
 
-4.  Specify a role collection name \(for example, ***MonitoringAPI***\).
+4.  Specify a role collection name \(for example, `MonitoringAPI`\).
 
     Let's assume that you want to access monitoring information with the OData API \(using the `MessageProcessingLogs` resource\).
 
@@ -61,19 +72,15 @@ In detail, perform the following steps.
 
 10. Choose *Save*.
 
-11. Go back to the subaccount and choose *Security* \> *Trust Configuration*.
+11. Go to *Security* \> *Users*.
 
-12. Click the *Default identity provider* link.
+12. Select the user for which you like to grant API access.
 
-13. Enter the email address of the IdP user on whose behalf you want to access Cloud Integration through the API.
+13. Under *Role Collections*, select *...* \> *Assign Role Collection*.
 
-14. Click *Show Assignments*.
+14. Select the role collection that you've created in the previous steps.
 
-15. Select *Assign Role Collection*.
-
-    Select the newly defined role collection.
-
-16. Choose *Assign Role Collection*.
+15. Choose *Assign Role Collection*.
 
 
 You can now call the resource of the OData API from an API client using the credentials of the IdP user. For more information on the address of the API call, see [HTTP Calls and URI Components](../50-Development/http-calls-and-uri-components-ca75e12.md).

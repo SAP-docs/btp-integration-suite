@@ -66,14 +66,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Created By* 
+    
+    *Created By* 
 
 
     
     </td>
     <td valign="top">
-
+    
     User who created the certificate
 
 
@@ -82,14 +82,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Created On* 
+    
+    *Created On* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Time when certificate has been created
 
 
@@ -98,14 +98,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Last Modified By* 
+    
+    *Last Modified By* 
 
 
     
     </td>
     <td valign="top">
-
+    
     User that modified the keystore entry at the latest
 
 
@@ -114,14 +114,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Last Modified On* 
+    
+    *Last Modified On* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Time when the keystore entry has been modified at the latest
 
 
@@ -155,14 +155,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Type* 
+    
+    *Type* 
 
 
     
     </td>
     <td valign="top">
-
+    
     -   *Key Pair*
 
         Consists of a private key and its X.509 certificate chain.
@@ -178,14 +178,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Version* 
+    
+    *Version* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Certificate version
 
 
@@ -194,14 +194,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Serial Number* 
+    
+    *Serial Number* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Serial number of certificate as provided by the issuer
 
 
@@ -210,14 +210,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Subject DN* 
+    
+    *Subject DN* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Distinguished name of the entity associated with the public key of the certificate
 
 
@@ -226,14 +226,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Issuer DN* 
+    
+    *Issuer DN* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Distinguished name of the issuer \(the certification authority that issued and signed the certificate\)
 
 
@@ -242,14 +242,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Key Type* 
+    
+    *Key Type* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Cryptographic standard the keystore entry is using \(for example, RSA\)
 
 
@@ -258,14 +258,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Key Size* 
+    
+    *Key Size* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Number of bits \(also referred to as *Key Length*\)
 
 
@@ -274,14 +274,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Signature Algorithm* 
+    
+    *Signature Algorithm* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Algorithm used to create the signature of the key entry \(for example, `SHA-512`\)
 
 
@@ -290,14 +290,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Valid From* 
+    
+    *Valid From* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Start of validity period
 
 
@@ -306,14 +306,14 @@ There are the following entry types:
     </tr>
     <tr>
     <td valign="top">
-
-     *Valid Until* 
+    
+    *Valid Until* 
 
 
     
     </td>
     <td valign="top">
-
+    
     End of validity period
 
 

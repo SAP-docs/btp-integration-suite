@@ -7,8 +7,6 @@ Security artifacts like certificates or passwords \(for example\) are subject to
 For the different use cases specific security artifact renewal processes have been defined.
 
 > ### Note:  
-> Note the following with regard to terminology:
-> 
 > -   The terms *client* and *server* are preferably used in the context of the certificate-based authentication option for HTTPS-based communication \(transport level security\). The background of this is that in order to set up a mutual authentication \(that comes with this option\), certificates for both roles, *client* and *server*, are required. When a message is sent from a sender \(which has the role of a client\) to a receiver \(which has the role of a server\), authentication steps are executed both to check if the server is a trusted partner and if the client is allowed to call the server.
 > -   In the context of message level security, the terms *sender* and *receiver* are preferably used in order to simplify things. These use cases typically require the following kinds of certificates or keys:
 >     -   Keys owned by a *sender* to either encrypt or sign the content of a message

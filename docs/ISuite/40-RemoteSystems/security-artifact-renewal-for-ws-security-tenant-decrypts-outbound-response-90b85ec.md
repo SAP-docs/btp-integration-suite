@@ -8,7 +8,7 @@ The WS-Security decryptor uses a private key to verify a WS-Security response pa
 
 The following figure illustrates the communication path for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_WS_Security_Outbound_Response_Decrypt_b701f48.png) 
+![](images/SAP_HCI_Security_Renewal_-_WS_Security_Outbound_Response_Decrypt_b701f48.png)
 
 1.  Tenant administrator: Creates a new key pair/certificate.
 2.  Tenant administrator: Adds the new certificate to the keystore.

@@ -9,7 +9,7 @@
 ## Context
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 You have created an OData API artifact.
 
@@ -47,14 +47,14 @@ You can use this procedure to modify the parameters that you entered when creati
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Name of the OData API.
 
 
@@ -63,14 +63,14 @@ You can use this procedure to modify the parameters that you entered when creati
     </tr>
     <tr>
     <td valign="top">
-
+    
     Description
 
 
     
     </td>
     <td valign="top">
-
+    
     Description of the OData API and its purpose.
 
 
@@ -79,14 +79,14 @@ You can use this procedure to modify the parameters that you entered when creati
     </tr>
     <tr>
     <td valign="top">
-
+    
     Namespace
 
 
     
     </td>
     <td valign="top">
-
+    
     Logical grouping of the OData API.
 
 

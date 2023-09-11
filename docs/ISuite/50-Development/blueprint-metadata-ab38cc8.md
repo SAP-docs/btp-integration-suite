@@ -132,7 +132,7 @@ Description
 <tr>
 <td valign="top">
 
- `<TransformationTags xmlns:bp=”http://www.adk.gen/xmlns/blueprint/”>` 
+`<TransformationTags xmlns:bp=”http://www.adk.gen/xmlns/blueprint/”>` 
 
 
 
@@ -148,7 +148,7 @@ This is the parent tag for the `<blueprint>` tag. This tag does not contain any 
 <tr>
 <td valign="top">
 
- `<bp:blueprint>` 
+`<bp:blueprint>` 
 
 
 
@@ -164,7 +164,7 @@ This tag can be used to specify additional namespaces if needed.
 <tr>
 <td valign="top">
 
- `<bp:bean>` 
+`<bp:bean>` 
 
 
 
@@ -180,7 +180,7 @@ Beans are declared using <bean\> element.
 <tr>
 <td valign="top">
 
- `<bp:reference>` 
+`<bp:reference>` 
 
 
 
@@ -196,7 +196,7 @@ To generate References this tag can be used. This tag does not contain any new a
 <tr>
 <td valign="top">
 
- `<cxfcore:bus xmlns:cxfcore=”http://cxf.apache.org/blueprint/core”>` 
+`<cxfcore:bus xmlns:cxfcore=”http://cxf.apache.org/blueprint/core”>` 
 
 
 
@@ -212,7 +212,7 @@ Refer `http://cxf.apache.org/schemas/blueprint/core.xsd` for all attributes supp
 <tr>
 <td valign="top">
 
- `<cxf:cxfEndpoint xmlns:cxf=”http://camel.apache.org/schema/blueprint/cxf”>` 
+`<cxf:cxfEndpoint xmlns:cxf=”http://camel.apache.org/schema/blueprint/cxf”>` 
 
 
 
@@ -228,7 +228,7 @@ Refer `https://camel.apache.org/schema/cxf/camel-cxf.xsd` for all the attributes
 <tr>
 <td valign="top">
 
- `<camel:camelContext xmlns:camel=”http://camel.apache.org/schema/blueprint”>` 
+`<camel:camelContext xmlns:camel=”http://camel.apache.org/schema/blueprint”>` 
 
 
 
@@ -244,7 +244,7 @@ This is the root camel context tag just for the reference. This contains all the
 <tr>
 <td valign="top">
 
- `<http-conf:conduit xmlns:http-conf="http://cxf.apache.org/transports/http/configuration" >` 
+`<http-conf:conduit xmlns:http-conf="http://cxf.apache.org/transports/http/configuration" >` 
 
 
 
@@ -260,7 +260,7 @@ This is same as that of Camel Blueprint specification for conduit tag. Refer `ht
 <tr>
 <td valign="top">
 
- `<camel:route xmlns:camel="http://camel.apache.org/schema/blueprint">` 
+`<camel:route xmlns:camel="http://camel.apache.org/schema/blueprint">` 
 
 
 
@@ -276,7 +276,7 @@ This is same as that of Camel blueprint specification <route\>. Must apear withi
 <tr>
 <td valign="top">
 
- `<properties>` 
+`<properties>` 
 
 
 
@@ -292,7 +292,7 @@ Can be contained in the DSL just for reference. This tag must be same as g&b's g
 <tr>
 <td valign="top">
 
- `<streamCaching>` 
+`<streamCaching>` 
 
 
 

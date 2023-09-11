@@ -11,7 +11,7 @@ You can easily modify the integration flow described in the Getting Started sect
 
 The figure shows the integration flow model that you get as a result of this exercise.
 
- ![](images/Getting_Started_SOAP_01_67ac306.png) 
+![](images/Getting_Started_SOAP_01_67ac306.png)
 
 In the modified integration flow, a SOAP client instead of a Timer event triggers message processing.
 

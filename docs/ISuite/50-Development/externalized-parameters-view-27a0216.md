@@ -15,7 +15,7 @@ Default values of parameters can be updated from the *Externalized Parameters* v
 > ### Note:  
 > Modifying the default value of a parameter replaces the current value at all locations. Configured values are always preceded by the default value. Select *Configure* option if any changes are required to the configured value.
 
-This view offers two more options. You can use ***Filter by Name/Value*** option to filter externalized parameter values either by entering name or by values.
+This view offers two more options. You can use `Filter by Name/Value` option to filter externalized parameter values either by entering name or by values.
 
 You can use *Remove Used* option to remove unused externalized parameters. This option allows you to permanently remove the parameters that aren’t consumed by any components of an integration flow.
 
@@ -27,12 +27,12 @@ For more information, see [Externalize Parameters of an Integration Flow](extern
 
 ## Procedure
 
-1.  To view and edit externalized parameters, perform the following steps:
+To view and edit externalized parameters, perform the following steps:
 
-2.  Choose the *Externalized Parameters* tab from the *Integration Flow* section, and the table displays all the used and unused externalized parameters.
+1.  Choose the *Externalized Parameters* tab from the *Integration Flow* section, and the table displays all the used and unused externalized parameters.
 
-3.  You can search for and modify the parameter values.
+2.  You can search for and modify the parameter values.
 
-4.  Choose *Save* to save all your changes.
+3.  Choose *Save* to save all your changes.
 
 

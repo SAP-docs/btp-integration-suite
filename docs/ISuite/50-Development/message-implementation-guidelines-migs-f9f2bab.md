@@ -216,7 +216,57 @@ The date range during which the MIG was modified.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Last Imported By
+
+
+
+</td>
+<td valign="top">
+
+The unique identifier of the user who last imported the MIG. It is available in the *Administrative Data* section of the *Overview* tab.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Last Imported Between
+
+
+
+</td>
+<td valign="top">
+
+The date range during which the MIG was imported.
+
+
+
+</td>
+</tr>
 </table>
+
+You can also view the version history of a specific message implementation guideline. Choose the *History* button provided below the version details of a MIG in the *Message Implementation Guidelines* page. The resulting screen would display the following version history details of the MIG:
+
+-   *Version*: This column displays the version numbers of the MIG
+
+-   *Status*: This column displays the status of each version of the MIG. There is always only one active version of a MIG. The previous version of the active MIG will be in draft status and all other MIGs versions before that will be deprecated.
+
+-   *Name*: Displays the name of the MIG in each version.
+
+-   *Modified On*: Displays the last modified timestamp.
+
+-   *Modified By*: Displays the unique identifier of the user who modified the MIG.
+
+-   *Last Imported On*: Displays the last imported date and time.
+
+-   *Last Imported By*: Displays the unique identifier of the user who imported the MIG.
+-   *Imported*: This column lets you know if the MIG is imported or not.
+-   The action <span class="SAP-icons"></span> button allows you to copy, migrate or compare your MIG.
 
 
 

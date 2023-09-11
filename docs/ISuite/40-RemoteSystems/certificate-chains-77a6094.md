@@ -10,7 +10,7 @@ The X.509 standard allows you to build up hierarchical trust models. In such a m
 
 The following figure shows a certificate chain with two intermediate CAs:
 
- ![](images/Certificate_Chain_fc7e762.png) 
+![](images/Certificate_Chain_fc7e762.png)
 
 We assume that the tenant is connected as a client to an external component \(which can be referred to as the server or receiver system\).
 

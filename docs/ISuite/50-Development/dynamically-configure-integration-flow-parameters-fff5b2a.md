@@ -37,7 +37,7 @@ The following kinds of headers and properties can be used to dynamically configu
 
 
 > ### Note:  
-> If you’re configuring the *Connection* of an Adapter with dynamic parameters, then you must use the same dynamic parameter name for a given ***<host\>:<port\>*** combination across all integration flows in your tenant.
+> If you’re configuring the *Connection* of an Adapter with dynamic parameters, then you must use the same dynamic parameter name for a given `<host>:<port>` combination across all integration flows in your tenant.
 
 
 

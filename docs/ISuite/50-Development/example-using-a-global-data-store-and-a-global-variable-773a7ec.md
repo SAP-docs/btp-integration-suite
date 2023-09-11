@@ -4,13 +4,13 @@
 
 You can use global data stores and global variables to share data across different integration flows deployed on the same tenant.
 
-The following example shows how to use global data stores and global variables combined in a simple integration scenario. This example illustrates the use case where 2 integration flows that run independently from each other share common data. For more information, see [Variant: Sharing Data Across Integration Flows That Operate Independently from Each Other](variant-sharing-data-across-integration-flows-that-operate-independently-from-each-other-1459948.md).
+The following example shows how to use global data stores and global variables combined in a simple integration scenario. This example illustrates the use case where two integration flows that run independently from each other share common data. For more information, see [Variant: Sharing Data Across Integration Flows That Operate Independently from Each Other](variant-sharing-data-across-integration-flows-that-operate-independently-from-each-other-1459948.md).
 
 The following use case is implemented.
 
 A seller of electronic products \(referred to as WebShop\) provides the feature that customers can give feedback to each product listed in a product catalog. You like to implement a scenario where the actual customer feedback is analyzed. However, you like to keep the number of calls to the seller to a minimum to reduce dependency from Cloud Integration to external systems. Furthermore, it's sufficient for your use case that the data from the seller is up to date on a daily basis.
 
-Therefore, you implement 1 integration flow that reads the actual customer review data from the WebShop once per day, triggered by a *Timer* step. This integration flow in detail performs the following steps:
+Therefore, you implement one integration flow that reads the actual customer review data from the WebShop once per day, triggered by a *Timer* step. This integration flow in detail performs the following steps:
 
 1.  It stores the actual system time as a global variable.
 
@@ -19,13 +19,13 @@ Therefore, you implement 1 integration flow that reads the actual customer revie
 
 The external data source supports the Open DataProtocol \(OData\). For our scenario, we use the ESPM WebShop, which is based on the Enterprise Sales and Procurement Model \(ESPM\) provided by SAP.
 
-A 2nd integration flow is triggered by an HTTP client and reads out the actual number of customer reviews by accessing the data store. Furthermore, the timestamp from the latest update of the data store entries is read out as well and added to the integration flow response. As you remember, the timestamp has been created during the last run of the first integration flow. For sakes of simplicity, only the number of customer reviews is retrieved in our example scenario. In a real-world scenario, you can imagine a more sophisticated processing of the data, for example, filtering out customer review data with a certain rating.
+A second integration flow is triggered by an HTTP client and reads out the actual number of customer reviews by accessing the data store. Furthermore, the timestamp from the latest update of the data store entries is read out as well and added to the integration flow response. As you remember, the timestamp has been created during the last run of the first integration flow. For sakes of simplicity, only the number of customer reviews is retrieved in our example scenario. In a real-world scenario, you can imagine a more sophisticated processing of the data, for example, filtering out customer review data with a certain rating.
 
 In other words, both integration flows share data that is provided as global variable and as data store content.
 
 The first, timer-triggered integration flow is modeled in the following way:
 
- ![](images/data_store_1_4e9ac02.png) 
+![](images/data_store_1_4e9ac02.png)
 
 The integration flow performs the following steps:
 
@@ -63,14 +63,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     timestamp
 
 
@@ -79,14 +79,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Type
 
 
     
     </td>
     <td valign="top">
-
+    
     Expression
 
 
@@ -95,14 +95,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Data Type
 
 
     
     </td>
     <td valign="top">
-
+    
     java.lang.String
 
 
@@ -111,14 +111,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Value
 
 
     
     </td>
     <td valign="top">
-
+    
     $\{date:now:yyyy-MM-dd HH:mm:ss\}
 
 
@@ -155,14 +155,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Expression Type
 
 
     
     </td>
     <td valign="top">
-
+    
     XPath
 
 
@@ -171,14 +171,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     XPath Expression
 
 
     
     </td>
     <td valign="top">
-
+    
     //CustomerReview
 
 
@@ -213,14 +213,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Data Store Name
 
 
     
     </td>
     <td valign="top">
-
+    
     CustomerReviews
 
 
@@ -229,14 +229,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Visibility
 
 
     
     </td>
     <td valign="top">
-
+    
     Global
 
 
@@ -245,14 +245,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Entry ID
 
 
     
     </td>
     <td valign="top">
-
+    
     $\{xpath./CustomerReviews/CustomerReview/CustomerReviewId/text\(\)\}
 
     For the actual customer review, an entry is created in the data store with an ID identical to the `CustomerReviewId` value from the message.
@@ -264,9 +264,9 @@ The integration flow performs the following steps:
     </table>
     
 
-The 2nd integration flow is modeled in the following way:
+The second integration flow is modeled in the following way:
 
- ![](images/data_store_2_8584708.png) 
+![](images/data_store_2_8584708.png)
 
 The integration flow performs the following steps:
 
@@ -296,14 +296,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Data Store Name
 
 
     
     </td>
     <td valign="top">
-
+    
     CustomerReviews
 
 
@@ -312,14 +312,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Visibility
 
 
     
     </td>
     <td valign="top">
-
+    
     Global
 
 
@@ -328,14 +328,14 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Number of Polled Messages
 
 
     
     </td>
     <td valign="top">
-
+    
     1000
 
     A large number is entered to make sure that all data store entries are retrieved.
@@ -384,28 +384,28 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     count
 
 
     
     </td>
     <td valign="top">
-
+    
     XPath
 
 
     
     </td>
     <td valign="top">
-
+    
     java.lang.String
 
 
     
     </td>
     <td valign="top">
-
+    
     count\(//message\)
 
 
@@ -414,28 +414,28 @@ The integration flow performs the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     timestamp
 
 
     
     </td>
     <td valign="top">
-
+    
     Global Variable
 
 
     
     </td>
     <td valign="top">
-
+    
      
 
 
     
     </td>
     <td valign="top">
-
+    
     timestamp
 
 
@@ -504,13 +504,13 @@ The integration flow performs the following steps:
 
 ## Executing the Scenario
 
-First deploy the 1st integration flow.
+First deploy the first integration flow.
 
 When going to the *Monitor* application and selecting the *Data Stores* tile under *Manage Stores*, you notice that a data store with several entries has been created. The entry IDs are 3-digit numbers.
 
 When going to the *Monitor* application and selecting the *Variables* tile under *Manage Stores*, you notice that a `timestamp` variable has been created that contains the system time of the execution of the integration flow.
 
-Deploy the 2nd integration flow and set up the inbound connection with an HTTP client \(for example, Postman\).
+Deploy the second integration flow and set up the inbound connection with an HTTP client \(for example, Postman\).
 
 Call the integration flow with the HTTP client to receive a response like the following one:
 
@@ -518,5 +518,5 @@ Call the integration flow with the HTTP client to receive a response like the fo
 
 You can add a new customer review on the WebShup user frontend at: [https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/webshop/index.html](https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/webshop/index.html).
 
-When you call the 2nd integration flow again, you get the same response as before. When you first deploy the first.Timer-triggered integration flow and, thereafter, execute the 2nd one, you get a response with the number of customer reviews increased by one.
+When you call the second integration flow again, you get the same response as before. When you first deploy the first. Timer-triggered integration flow and, thereafter, execute the second one, you get a response with the number of customer reviews increased by one.
 

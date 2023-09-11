@@ -49,7 +49,7 @@ You send the CSR to a certification authority, who will provide a signing respon
 **Related Information**  
 
 
-
+[Requesting a Signed Certificate from a Certification Authority](https://help.sap.com/viewer/70f6fd5a94a14d0f91a40c7d99296144/CLOUD/en-US/5490ca7917b64ef3803d9f34c542db70.html "To enable the tenant to communicate as client with the customer system, you have to import a client certificate to the tenant client keystore. This certificate has to be signed by a certification authority (CA).") :arrow_upper_right:
 
 [Updating a Key Pair with a Signing Response](../50-Development/updating-a-key-pair-with-a-signing-response-4242f01.md "Upload a signing response from a certification authority and use it to update the key pair in your keystore, keeping the alias of the keystore entry unchanged.")
 

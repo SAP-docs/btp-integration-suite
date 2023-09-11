@@ -63,7 +63,7 @@ Encrypts outbound payload
 </td>
 <td valign="top">
 
- **PGP Public Keyring** \(contains **receiver's** public key to encrypt payload\)
+**PGP Public Keyring** \(contains **receiver's** public key to encrypt payload\)
 
 
 
@@ -106,7 +106,7 @@ Decrypts inbound payload
 </td>
 <td valign="top">
 
- **PGP Secret Keyring** \(contains **tenant's** secret key to decrypt payload\)
+**PGP Secret Keyring** \(contains **tenant's** secret key to decrypt payload\)
 
 
 

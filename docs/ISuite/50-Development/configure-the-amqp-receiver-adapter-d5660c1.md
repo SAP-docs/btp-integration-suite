@@ -2,16 +2,18 @@
 
 # Configure the AMQP Receiver Adapter
 
-You se the Advanced Message Queuing Protocol \(AMQP\) receiver adapter to send messages from Cloud Integration to queues or topics in an external message broker.
+You se the Advanced Message Queuing Protocol \(AMQP\) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.
 
 
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > To be able to connect to queues or topics, you have to create queues and/or topics in the message broker. This needs to be done in the message broker with the configuration tools provided by the message broker.
@@ -53,7 +55,7 @@ Description
 <tr>
 <td valign="top">
 
- *Name/Adapter Type* 
+*Name/Adapter Type* 
 
 
 
@@ -69,7 +71,7 @@ AMQP
 <tr>
 <td valign="top">
 
- *Transport Protocol* 
+*Transport Protocol* 
 
 
 
@@ -90,14 +92,14 @@ The protocol that the message broker supports:
 <tr>
 <td valign="top">
 
- *Message Protocol* 
+*Message Protocol* 
 
 
 
 </td>
 <td valign="top">
 
- *AMQP 1.0* 
+*AMQP 1.0* 
 
 
 
@@ -130,7 +132,7 @@ Description
 <tr>
 <td valign="top">
 
- *Host* 
+*Host* 
 
 
 
@@ -146,7 +148,7 @@ Specify the hostname of the message broker.
 <tr>
 <td valign="top">
 
- *Port* 
+*Port* 
 
 
 
@@ -162,7 +164,7 @@ Specify the port of the message broker.
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -184,7 +186,7 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 <tr>
 <td valign="top">
 
- *Path* \(only if *WebSocket* is selected as the *Transport Protocol* in the *General* tab\)
+*Path* \(only if *WebSocket* is selected as the *Transport Protocol* in the *General* tab\)
 
 
 
@@ -200,14 +202,16 @@ Specify the access path of the message broker.
 <tr>
 <td valign="top">
 
- *Connect with TLS* 
+*Connect with TLS* 
 
 
 
 </td>
 <td valign="top">
 
-Select if *TLS* has to be used for the connection.
+Select if Transport Layer Security \(TLS\) has to be used for the connection.
+
+You can't configure this parameter if *Client Certificate* is selected for *Authentication*. In this case, TLS is automatically used.
 
 
 
@@ -232,7 +236,7 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 
@@ -243,13 +247,29 @@ Select the authentication method the message broker supports. *SASL* is selected
 
 -   *SASL*
 
--   *OAuth2 Client Credentials*
+    Select to use Simple Authentication and Security Layer \(SASL\).
+
+-   *OAuth2 Client Credentials* \(only when *WebSocket* has been selected for *Transport Protocol* while creating the connection\)
+
+    Select to use OAuth 2.0 client credentials grant. At runtime, Cloud Integration gets access to the protected resources in two steps: After presenting a set of client credentials, Cloud Integration fetches an access token from a token service. In a subsequent step, Cloud Integration uses the access token to get access to the protected resources in the connected system.
+
+    More information: [OAuth 2.0 Client Credentials Grant](../40-RemoteSystems/oauth-2-0-3823134.md#loio6316af5a7f2c4f3e870a997fd2d3e04e)
+
+-   *Client Certificate* \(only when *TCP* has been selected for *Transport Protocol* while creating the connection and if *Internet* is selected for *Proxy Type*\)
+
+    At runtime, Cloud Integration authenticates itself against the connected system using a client certificate.
+
+    It's a prerequisite that the required key pair is installed and added to a keystore. This keystore has to be deployed on the related tenant. The receiver side has to be configured appropriately.
+
+    > ### Note:  
+    > This authentication option implies that Transport Layer Security \(TLS\) is used for the connection.
+
+    More information: 
 
 -   *None*
 
+    Select when not to use any authentication.
 
-> ### Note:  
-> Option *OAuth2 Client Credentials* is only available for WebSocket.
 
 
 
@@ -258,7 +278,7 @@ Select the authentication method the message broker supports. *SASL* is selected
 <tr>
 <td valign="top">
 
- *Credential Name* \(only if *SASL* or *OAuth2 Client Credentials* is selected for *Authentication*\)
+*Credential Name* \(only if *SASL* or *OAuth2 Client Credentials* is selected for *Authentication*\)
 
 
 
@@ -266,6 +286,22 @@ Select the authentication method the message broker supports. *SASL* is selected
 <td valign="top">
 
 Specify the alias of the deployed credentials.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key Alias* \(only if *Client Certificate* is selected for *Authentication*\)
+
+
+
+</td>
+<td valign="top">
+
+Alias to identify the private key in the keystore used for client certificate authentication.
 
 
 
@@ -298,7 +334,7 @@ Description
 <tr>
 <td valign="top">
 
- *Destination Type* 
+*Destination Type* 
 
 
 
@@ -314,7 +350,7 @@ Specify if messages should be sent to queues or topics in the message broker.
 <tr>
 <td valign="top">
 
- *Destination Name* 
+*Destination Name* 
 
 
 
@@ -332,7 +368,7 @@ This value can be defined dynamically by using the following expressions: `${hea
 <tr>
 <td valign="top">
 
- *Expiration Period \(in s\)* 
+*Expiration Period \(in s\)* 
 
 
 
@@ -348,7 +384,7 @@ Specify the Time to Live \(TTL\) for the message. If nothing is specified, the s
 <tr>
 <td valign="top">
 
- *Delivery* 
+*Delivery* 
 
 
 
@@ -369,7 +405,7 @@ Specify whether the message broker has to make sure that the message is not lost
 <tr>
 <td valign="top">
 
- *Message Type* 
+*Message Type* 
 
 
 
@@ -397,7 +433,7 @@ Define the message type to be used for sending the message to the message broker
 <tr>
 <td valign="top">
 
- *Header Format Handling* 
+*Header Format Handling* 
 
 
 

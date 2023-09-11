@@ -16,18 +16,21 @@ The Externalization Parameters value field of an integration flow has been defin
 
 
 > ### Note:  
-> -   Don't use the following characters while defining a parameter in an integration flow:
+> Don't use the following characters while defining an externalization parameter:
 > 
->     -   &
->     -   <
->     -   \>
->     -   "
->     -   '
+> -   ,
+> -   ?
+> -   /
+> -   ' and "
+> -   < and \>
+> -   ; and :
+> -   \[ and \]
+> -   Special characters like: ! @ \# $ % & \* \( \) = +
 
 > ### Example:  
-> Assume that in an integration flow you're configuring a communication channel with HTTPS sender adapter. Here let us externalize the *Address**Address* field, you define a parameter as ***\{\{HostPort\}\} field, by defining a parameter and value. In the externalization dialog box, for the*** and its value as ***https://localhost:8080/dir***. Now, you've declared a variable for *Address* parameter that can be reused in different components in the same integration flow.
+> Assume that in an integration flow you're configuring a communication channel with HTTPS sender adapter. Here let us externalize the *Address* field. In the externalization dialog box, you define the parameter as `{{HostPort}}` and its value as `https://localhost:8080/dir`. Now, you've declared a variable for *Address* parameter that can be reused in different components in the same integration flow.
 > 
-> Notice that you can assign only one value to a parameter. But if you have a requirement to reuse a specific string in a value, then we recommended to split the value into multiple strings and define them to individual parameters as shown in the table.
+> Remember that you can assign only one value to a parameter. But if you have a requirement to reuse a specific string in a value, then we recommended to split the value into multiple strings and define them to individual parameters as shown in the table.
 > 
 > 
 > <table>
@@ -50,14 +53,14 @@ The Externalization Parameters value field of an integration flow has been defin
 > <tr>
 > <td valign="top">
 > 
->  ***\{\{Host\}\}*** 
+> `{{Host}}` 
 > 
 > 
 > 
 > </td>
 > <td valign="top">
 > 
->  ***localhost*** 
+> `localhost` 
 > 
 > 
 > 
@@ -66,14 +69,14 @@ The Externalization Parameters value field of an integration flow has been defin
 > <tr>
 > <td valign="top">
 > 
->  ***\{\{Port\}\}*** 
+> `{{Port}}` 
 > 
 > 
 > 
 > </td>
 > <td valign="top">
 > 
-> ***8080***
+> `8080`
 > 
 > 
 > 
@@ -82,7 +85,7 @@ The Externalization Parameters value field of an integration flow has been defin
 > </table>
 
 > ### Note:  
-> field, by defining a parameter and value.You can’t reuse the same parameter name more than once for the same field, and defining multiple parameters for the same field or column aren’t supported for tables.
+> You can’t reuse the same parameter name more than once for the same field, and defining multiple parameters for the same field or column aren’t supported for tables.
 
 The integration flow must be in *Edit* mode to perform the steps.
 
@@ -184,7 +187,7 @@ The integration flow must be in *Edit* mode to perform the steps.
     > \{\{Parameter\}\}.
 
     > ### Note:  
-    > By typing ***\{\{*** in the parameter field, the auto-suggest displays existing parameters.
+    > By typing `{{` in the parameter field, the auto-suggest displays existing parameters.
 
 4.  To edit the parameter value, choose the *<Define Value\>* tag.
 
@@ -265,7 +268,7 @@ You can define a new parameter for the *Checkbox* control in the *Externalizatio
 Choose on token of the checkbox control, it opens a *Parameter value update* dialog, to provide a default value for this newly created parameter. You can update the default value of parameter.
 
 > ### Note:  
-> If the parameter isn’t configured from the *Configure* View, the Configured value is flagged as ***<No Value Configured\>***
+> If the parameter isn’t configured from the *Configure* View, the Configured value is flagged as `<No Value Configured>`
 
 After updating the configured value from *Configure* view, configured value of parameter will be seen in the token of the checkbox control, which was externalized.
 

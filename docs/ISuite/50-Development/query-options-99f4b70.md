@@ -15,7 +15,7 @@ This section provides a summary of the supported query options.
 > ### Caution:  
 > Not all quer options listed below are always supported by each entity type of the Cloud Integration OData API.
 > 
-> For more information on the supported query options, check out the description of the individual resources on SAP API Business Hub.
+> For more information on the supported query options, check out the description of the individual resources on SAP Business Accelerator Hub.
 
 **Supported System Query Options**
 
@@ -40,7 +40,7 @@ System Query Option
 <tr>
 <td valign="top">
 
- `$count` 
+`$count` 
 
 
 
@@ -56,7 +56,7 @@ Returns the number of records according to the resource path section of the URI 
 <tr>
 <td valign="top">
 
- `$expand` 
+`$expand` 
 
 
 
@@ -74,7 +74,7 @@ For example, adding the query `$expand=AdapterAttributes` to an OData request ad
 <tr>
 <td valign="top">
 
- `$filter` 
+`$filter` 
 
 
 
@@ -90,7 +90,7 @@ Returns a subset of records according to the resource path section of the URI\) 
 <tr>
 <td valign="top">
 
- `$inlinecount` 
+`$inlinecount` 
 
 
 
@@ -106,7 +106,7 @@ Specifies that the response contains a count of the number of records in the col
 <tr>
 <td valign="top">
 
- `$metadata` 
+`$metadata` 
 
 
 
@@ -122,7 +122,7 @@ Returns the data model \(which is the structure of all resources\).
 <tr>
 <td valign="top">
 
- `$orderby` 
+`$orderby` 
 
 
 
@@ -143,7 +143,7 @@ Specifies an expression for determining which values are used to order the colle
 <tr>
 <td valign="top">
 
- `$select` 
+`$select` 
 
 
 
@@ -162,7 +162,7 @@ Returns a limited set of information on the entities identified by the resource 
 <tr>
 <td valign="top">
 
- `$skip` 
+`$skip` 
 
 
 
@@ -178,7 +178,7 @@ Identifies a subset of records \(according to the resource path section of the U
 <tr>
 <td valign="top">
 
- `$top` 
+`$top` 
 
 
 
@@ -194,7 +194,7 @@ Identifies a subset of records \(according to the resource path section of the U
 <tr>
 <td valign="top">
 
- `$value` 
+`$value` 
 
 
 

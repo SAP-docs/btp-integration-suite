@@ -59,14 +59,14 @@ You're in the edit mode of the MAG editor.
     </tr>
     <tr>
     <td valign="top">
-
+    
     <span class="SAP-icons"></span> \(create new copy of this snippet\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Creates a copy of an existing code snippet.
 
 
@@ -75,14 +75,14 @@ You're in the edit mode of the MAG editor.
     </tr>
     <tr>
     <td valign="top">
-
+    
     :wastebasket:
 
 
     
     </td>
     <td valign="top">
-
+    
     Deletes the code snippet.
 
 

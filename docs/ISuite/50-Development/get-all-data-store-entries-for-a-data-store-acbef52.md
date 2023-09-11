@@ -41,7 +41,7 @@ GET
 </td>
 <td valign="top">
 
- `​/DataStores(DataStoreName='<data store name>',IntegrationFlow='<integration flow ID>',Type='')/Entries` 
+`​/DataStores(DataStoreName='<data store name>',IntegrationFlow='<integration flow ID>',Type='')/Entries` 
 
 
 

@@ -23,7 +23,11 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
 
 > ### Note:  
 > -   Any EDIFACT message is an interchange. An interchange can have multiple groups. And each group consists of message types. For EDIFACT message, the EDI elements in SAP Cloud Integration support only 1 message type per interchange but does not support any group segment \(GS\) per interchange segment.
+> 
+>     EDI to XML converter version 1.5 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
+> 
 > -   Any ASC-X12 message is an interchange. An interchange can have multiple groups. And each group consists of transaction sets. For ASC-X12 message, the EDI elements in SAP Cloud Integration support only 1 group segment \(GS\) per interchange segment and only 1 transaction set \(ST\) per group segment.
+> -   EDI to XML converter version 1.6 and above supports LS/LE segments.
 > -   Cloud Integration does not support repetition characters. Repetition character is a single character which separates the instances of a repeating data element. For example, *^* \(caret sign\) is a repetition character.
 
 
@@ -57,14 +61,14 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the name of the converter.
 
 
@@ -73,14 +77,14 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     </tr>
     <tr>
     <td valign="top">
-
+    
     Source Encoding
 
 
     
     </td>
     <td valign="top">
-
+    
     Select encoding format for the incoming payload.
 
 
@@ -89,14 +93,14 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     </tr>
     <tr>
     <td valign="top">
-
+    
     EDI Schema Definition
 
 
     
     </td>
     <td valign="top">
-
+    
     Select the source of schema definition.
 
 
@@ -105,26 +109,26 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     </tr>
     <tr>
     <td valign="top">
-
+    
     Schemas
 
 
     
     </td>
     <td valign="top">
-
-    If you select ***Integration Flow*** as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the conversion will take place.
+    
+    If you select `Integration Flow` as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the conversion will take place.
 
     > ### Note:  
     > -   You can add XSD files to the integration flow. For more details, please refer to the topic **Validating Message Payload against XML Schema**, in developer's guide.
     > 
     > -   The file name of the xml schema for **EDIFACT/ODETTE** should have the following format:
     > 
-    >     -   EDIFACT: ***UN-EDIFACT\_ORDERS\_D96A.xsd***
+    >     -   EDIFACT: `UN-EDIFACT_ORDERS_D96A.xsd`
     > 
-    >     -   ODETTE: ***ODETTE\_ORDERR\_2.xsd***
+    >     -   ODETTE: `ODETTE_ORDERR_2.xsd`
     > 
-    >     -   ODETTE EDIFACT: ***UN-EDIFACT\_ORDERS\_D96A\_A18051.xsd***
+    >     -   ODETTE EDIFACT: `UN-EDIFACT_ORDERS_D96A_A18051.xsd`
     > 
     > 
     >     Consider the EDIFACT filename as a sample to understand its constituents. The file name comprises of following parts separated by '\_':
@@ -135,7 +139,7 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     > 
     > -   The file name of the xml schema for **ASC-X12** should have the following format:
     > 
-    >     ***ASC-X12\_810\_004010.xsd***
+    >     `ASC-X12_810_004010.xsd`
     > 
     >     The file name comprises of following three parts separated by '\_':
     > 
@@ -153,22 +157,22 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     </tr>
     <tr>
     <td valign="top">
-
+    
     HeaderName
 
 
     
     </td>
     <td valign="top">
-
-    If you select ***Header*** as *EDI Schema Definition*, then you can see the field *HeaderName*, in *Properties* view. Enter a valid header name for the field.
+    
+    If you select `Header` as *EDI Schema Definition*, then you can see the field *HeaderName*, in *Properties* view. Enter a valid header name for the field.
 
     > ### Note:  
     > This header name is fetched from camel header. The header is added in script element. This script element is added before converter element. You can add value for this header in the script element.
     > 
-    > For example, you can add the value, ***/xsd/UN-EDIFACT\_ORDERS\_D96A.xsd*** for EDIFACT.
+    > For example, you can add the value, `/xsd/UN-EDIFACT_ORDERS_D96A.xsd` for EDIFACT.
     > 
-    > For example, you can add the value, ***/xsd/ASC-X12\_810\_004010.xsd*** for ASC-X12.
+    > For example, you can add the value, `/xsd/ASC-X12_810_004010.xsd` for ASC-X12.
 
 
     
@@ -176,14 +180,14 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     </tr>
     <tr>
     <td valign="top">
-
+    
     Exclude Interchange and Group envelopes
 
 
     
     </td>
     <td valign="top">
-
+    
     If selected the feature notifies the converter to exclude the interchange and group envelopes found in an EDI document.
 
 
@@ -199,13 +203,15 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
 5.  If you want to terminate the creation of package, choose *Cancel* before saving it.
 
     > ### Note:  
-    > -   ***SAP\_EDI\_Document\_Number*** header contains document number for the single incoming EDI file.
+    > -   `SAP_EDI_Document_Number` header contains document number for the single incoming EDI file.
     > 
-    > -   In a ODETTE message payload, provide the value for *SAP\_EDI\_Document\_Standard* header as ***ODETTE***.
-    > -   From EDI to XML Converter version 1.4 onwards for EANCOM payloads, use ***UN-EDIFACT*** as the value for ***SAP\_EDI\_Document\_Standard*** header. For earlier version of the converter, you can provide the value for the header as ***EANCOM***.
+    > -   In a ODETTE message payload, provide the value for *SAP\_EDI\_Document\_Standard* header as `ODETTE`.
+    > -   From EDI to XML Converter version 1.4 onwards for EANCOM payloads, use `UN-EDIFACT` as the value for `SAP_EDI_Document_Standard` header. For earlier version of the converter, you can provide the value for the header as `EANCOM`.
 
 
 
+
+## Example
 
 -   The following example shows the transformation from *EDI to XML* format of EDIFACT message.
 

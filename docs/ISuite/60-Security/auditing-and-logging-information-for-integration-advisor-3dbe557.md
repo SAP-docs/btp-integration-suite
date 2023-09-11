@@ -80,7 +80,7 @@ When deleting a MIG successfully, the following event is written:
 </td>
 <td valign="top">
 
- [Message Implementation Guidelines \(MIGs\)](../50-Development/message-implementation-guidelines-migs-f9f2bab.md) 
+[Message Implementation Guidelines \(MIGs\)](../50-Development/message-implementation-guidelines-migs-f9f2bab.md) 
 
 
 
@@ -115,7 +115,7 @@ Delete MIG version
 </td>
 <td valign="top">
 
- [Mapping Guidelines \(MAGs\)](../50-Development/mapping-guidelines-mags-42124f4.md) 
+[Mapping Guidelines \(MAGs\)](../50-Development/mapping-guidelines-mags-42124f4.md) 
 
 
 
@@ -148,7 +148,7 @@ Delete customer message
 </td>
 <td valign="top">
 
- [Adding a Custom Message](../50-Development/adding-a-custom-message-8b7eb45.md) 
+[Adding a Custom Message](../50-Development/adding-a-custom-message-8b7eb45.md) 
 
 
 
@@ -181,7 +181,7 @@ Delete global code value mapping
 </td>
 <td valign="top">
 
- [Code Value Mapping](../50-Development/code-value-mapping-eb6dad8.md) 
+[Code Value Mapping](../50-Development/code-value-mapping-eb6dad8.md) 
 
 
 
@@ -214,7 +214,7 @@ Create new license
 </td>
 <td valign="top">
 
- [Managing Licence for Type Systems](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/ed1e961c636f4835aaa7248cf2488112.html "") :arrow_upper_right: 
+[Managing Licence for Type Systems](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/ed1e961c636f4835aaa7248cf2488112.html "") :arrow_upper_right: 
 
 
 
@@ -247,7 +247,7 @@ Delete license
 </td>
 <td valign="top">
 
- [Managing Licence for Type Systems](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/ed1e961c636f4835aaa7248cf2488112.html "") :arrow_upper_right: 
+[Managing Licence for Type Systems](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/ed1e961c636f4835aaa7248cf2488112.html "") :arrow_upper_right: 
 
 
 

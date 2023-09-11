@@ -5,6 +5,7 @@
 > ### Note:  
 > -   If you are configuring the sender channel to receive asynchronous AS2 MDN, select the AS2 MDN message protocol.
 > -   If you want to call the AS2 MDN sender channel, use http://<host\>:<port\>/as2/mdn .
+> -   You must activate [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) to use this adapter.
 
 Once you have created a sender channel and selected the AS2 MDN adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
@@ -35,7 +36,7 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -44,7 +45,7 @@ Description
 
 Specify the relative path of the endpoint URL.
 
-For example, if the URL is ***http://<tenant address\>/as2/<mdn or as2\>/orders***, then enter the value as ***/orders***
+For example, if the URL is `http://<tenant address>/as2/<mdn or as2>/orders`, then enter the value as `/orders`
 
 
 
@@ -97,10 +98,10 @@ Specifies the authorization option for the sender.
 
 The user role that you are using for inbound authorization. Choose *Select* to get a list of all the available user roles for your tenant and select the one that you want to use.
 
-The default value is ***ESBMessaging.send***. This role authorizes a sender system to process messages on a tenant.
+The default value is `ESBMessaging.send`. This role authorizes a sender system to process messages on a tenant.
 
 > ### Caution:  
-> The role name must not contain any umlaut characters \(for example, ***ä***\).
+> The role name must not contain any umlaut characters \(for example, `ä`\).
 
 For more information on user roles, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
 
@@ -153,7 +154,31 @@ Description
 <tr>
 <td valign="top">
 
- *Partner AS2 ID* 
+*Source*
+
+
+
+</td>
+<td valign="top">
+
+Select among the following values to determine the source of Partner ID:
+
+-   *AS2 Partner ID Header*: to use the AS2 Partner ID header as partner ID.
+-   *Authorized User*: to fetch the partner ID from values specified in partner directory.
+
+-   *Dynamic*: if you select dynamic, you must specify `authorizedUser` or `as2PartnerID` value in `SAP_AS2_MDN_Inbound_Pid_Resolution_Mode` parameter of partner directory.
+
+> ### Note:  
+> The source of partner ID determines the behaviour of other dynamic supported fields of AS2 MDN Sender adapter like *Verify Signature*, *Verify MIC* and *Public Key Alias*.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Partner AS2 ID* 
 
 
 
@@ -169,7 +194,7 @@ Specify your partner's AS2 ID. Regular expression or '.\*' is allowed.
 <tr>
 <td valign="top">
 
- *Own AS2 ID* 
+*Own AS2 ID* 
 
 
 
@@ -185,7 +210,7 @@ Specify your own AS2 ID. Regular expression or '.\*' is allowed.
 <tr>
 <td valign="top">
 
- *Number of Concurrent Processes* 
+*Number of Concurrent Processes* 
 
 
 
@@ -201,14 +226,14 @@ Define how many processes can run in parallel for each worker node. The value de
 <tr>
 <td valign="top">
 
- *Verify Signature* 
+*Verify Signature* 
 
 
 
 </td>
 <td valign="top">
 
-Enable this option to verify AS2 MDN Signature.
+Enable this option to verify AS2 MDN Signature. You can set the value of this attribute dynamically by specifying `SAP_AS2_Inbound_Mdn_Verify_Signature` parameter in partner directory. The valid values are *<true\>* and *<false\>*.
 
 
 
@@ -224,7 +249,7 @@ Enable this option to verify AS2 MDN Signature.
 </td>
 <td valign="top">
 
-Specify Public Key Alias to verify AS2 MDN Signature
+Specify Public Key Alias to verify AS2 MDN Signature. To fetch details from partner directory, use pd:xxxx syntax.
 
 
 
@@ -240,7 +265,7 @@ Specify Public Key Alias to verify AS2 MDN Signature
 </td>
 <td valign="top">
 
-Enable this option to verify Message Integrity Check \(MIC\) from AS2 MDN.
+Enable this option to verify Message Integrity Check \(MIC\) from AS2 MDN. You can set the value of this attribute dynamically by specifying `SAP_AS2_Inbound_Mdn_Verify_Mic` parameter in partner directory. The valid values are *<true\>* and *<false\>*.
 
 
 
@@ -305,7 +330,7 @@ Define how many minutes to wait before retrying message delivery.
 <tr>
 <td valign="top">
 
- *Exponential Backoff* 
+*Exponential Backoff* 
 
 
 
@@ -321,7 +346,7 @@ Select this checkbox to double the retry terval after each unsuccessful retry.
 <tr>
 <td valign="top">
 
- *Maximum Retry Interval \(in min\)* \(onlz if zou select *Exponential Backoff*\)
+*Maximum Retry Interval \(in min\)* \(onlz if zou select *Exponential Backoff*\)
 
 
 
@@ -337,7 +362,7 @@ Specify the maximum amount of time to wait before retrying message delivery.
 <tr>
 <td valign="top">
 
- *Dead-Letter Queue* 
+*Dead-Letter Queue* 
 
 
 
@@ -353,7 +378,7 @@ Select this checkbox to store those messages that cannot be successfully process
 <tr>
 <td valign="top">
 
- *Encrypt Message During Persistence* 
+*Encrypt Message During Persistence* 
 
 
 

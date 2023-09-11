@@ -1,6 +1,6 @@
 <!-- loio314df3f8f4334dd8829c62e865cc6d02 -->
 
-#  Monitor Message Processing
+# Monitor Message Processing
 
 The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.
 
@@ -39,7 +39,7 @@ Description
 <tr>
 <td valign="top">
 
- *Time* 
+*Time* 
 
 
 
@@ -74,7 +74,7 @@ The specified time interval is displayed above the message list. When you browse
 <tr>
 <td valign="top">
 
- *Status* 
+*Status* 
 
 
 
@@ -100,7 +100,9 @@ In the dropdown list you can select one of the following values as the status:
 -   *Cancelled*
 
 -   *Discarded*
--   *Abandonded*
+-   *Abandoned*
+
+See: [Message Status](message-status-733a57b.md)
 
 
 
@@ -109,16 +111,16 @@ In the dropdown list you can select one of the following values as the status:
 <tr>
 <td valign="top">
 
- *Artifact* 
+*Artifact* 
 
 
 
 </td>
 <td valign="top">
 
-Allows you to display messages associated with specific artifacts.
+Allows you to display messages associated with specific artifacts \(integration flows\).
 
-The value help list contains all artifacts and packages for which Message Processing Logs might exist.
+The value help list contains all artifacts and packages for which message processing logs exist.
 
 When you position the cursor on an artifact in the value help list, name and type are displayed and the tooltip shows additional information.
 
@@ -139,90 +141,19 @@ You can filter for artifacts with a specific sequence of characters in their nam
 
 </td>
 </tr>
-</table>
-
-Go to *Use More Fields* to display addition filter criteria, such as:
-
--   *Sender*
-
--   *Receiver*
-
--   *Custom Status*
-
--   *Application Message Type*
-
--   *Custom Header*
-
-
-A value help is available for the *Sender*, *Receiver*, *Custom Status*, and *Application Message Type* fields. The list of available values depends on your integration design.
-
-To filter for a dedicated value of a custom header, in the *Custom Header* field, enter an expression like: ***<custom header name\> = <custom header value\>***
-
-Alternatively, you can search for IDs in the*ID* field, and display messages associated with various IDs such as:
-
-**ID**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Attribute
-
-
-
-</th>
-<th valign="top">
-
-Description
-
-
-
-</th>
-</tr>
 <tr>
 <td valign="top">
 
- *Message ID* 
+*ID* 
 
 
 
 </td>
 <td valign="top">
 
-Identifies the message uniquely.
+Allows you to filter for messages using different of IDs.
 
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Correlation ID* 
-
-
-
-</td>
-<td valign="top">
-
-Identifies correlated messages
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Application ID* 
-
-
-
-</td>
-<td valign="top">
-
-Is set when an `SAP_ApplicationID` header element is specified in the associated integration flow in the Content Modifier step.
+See: [Using IDs to Filter Messages](using-ids-to-filter-messages-a820752.md)
 
 
 
@@ -230,11 +161,9 @@ Is set when an `SAP_ApplicationID` header element is specified in the associated
 </tr>
 </table>
 
-If you search for message processing logs by ID, the system first checks whether there’s a message with the specified Message ID. If the Message ID is not found, the system searches for the Correlation ID. There can be more than one message found for one Correlation ID. If no message is found, the system searches for messages with the given application ID.
+Choose *Use More Fields* to display additional filter criteria.
 
-This search attribute can’t find messages where the Correlation ID is the same as an existing Message ID, or the Application ID equals a Correlation ID or Message ID \(by coincidence\).
-
-Searching for messages by using the ID attribute is helpful for support use cases \(for root cause analysis, for example\).
+See: [Using Additional Filter Criteria](using-additional-filter-criteria-6891f9e.md)
 
 
 
@@ -269,7 +198,7 @@ Description
 <tr>
 <td valign="top">
 
- *Artifact Name* 
+*Artifact Name* 
 
 
 
@@ -287,7 +216,7 @@ The tooltip shows the technical name, the artifact, and the package name.
 <tr>
 <td valign="top">
 
- *Status* 
+*Status* 
 
 
 
@@ -303,7 +232,7 @@ Status of end-to-end message processing.
 <tr>
 <td valign="top">
 
- *Last Updated at* 
+*Last Updated at* 
 
 
 
@@ -319,7 +248,7 @@ Time at which the message processing log was last updated.
 <tr>
 <td valign="top">
 
- *Processing Time* 
+*Processing Time* 
 
 
 
@@ -417,7 +346,7 @@ Below the header, the following sections contain detailed information about the 
 
 [Message Processing Log – Text View](message-processing-log-text-view-718309a.md "The message processing log displays structured information on the processing of a message.")
 
-[Message Status](message-status-733a57b.md "")
+[Message Status](message-status-733a57b.md "The message processing status indicates how a messages has been processed at runtime.")
 
 [Configuring Archiving Settings](configuring-archiving-settings-c38760d.md "You can configure the archiving settings via the Integration Content Monitor for each integration flow.")
 

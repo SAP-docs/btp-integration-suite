@@ -29,7 +29,7 @@ Description
 <tr>
 <td valign="top">
 
- *Name* 
+*Name* 
 
 
 
@@ -45,7 +45,7 @@ The variable name is defined in the integration flow.
 <tr>
 <td valign="top">
 
- *Visibility* 
+*Visibility* 
 
 
 
@@ -61,7 +61,7 @@ A variable can be globally visible across all deployed integration flows of the 
 <tr>
 <td valign="top">
 
- *Integration Flow* 
+*Integration Flow* 
 
 
 
@@ -77,7 +77,7 @@ Displays the ID of the integration flow the variable is used in.
 <tr>
 <td valign="top">
 
- *Updated At* 
+*Updated At* 
 
 
 
@@ -133,9 +133,4 @@ By clicking on the variable name in the table, you can see its content. If the v
 
 > ### Note:  
 > If you want to delete a variable, check that this variable is no longer in use, as there is no “ where used list” available.
-
-**Related Information**  
-
-
-
 

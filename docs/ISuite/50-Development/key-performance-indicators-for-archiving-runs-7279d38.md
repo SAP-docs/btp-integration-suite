@@ -151,7 +151,7 @@ Number of archived MPLs. MPLs already uploaded by a previous run, but not yet fl
 Number of errors that occurred during archiving MPLs. This number includes only errors occurring during preparation of upload and upload of MPLs. Errors leading to the failure of the job run excluded.
 
 > ### Note:  
-> The number of `MplsToBeArchived` and the number of `MplsArchivingFailed` **\+** `MplsArchived` can differ, if the archiving job ends with status ***FAILED***.
+> The number of `MplsToBeArchived` and the number of `MplsArchivingFailed` **\+** `MplsArchived` can differ, if the archiving job ends with status `FAILED`.
 
 
 
@@ -183,7 +183,7 @@ The date until which MPLs are considered as being archiving relevant for this jo
 </td>
 <td valign="top">
 
-Date of the oldest MPLwhich is still archiving relevant after the run. \(If all MPLs have been archived, this value is ***null***\).
+Date of the oldest MPLwhich is still archiving relevant after the run. \(If all MPLs have been archived, this value is `null`\).
 
 
 
@@ -215,10 +215,10 @@ Total volume of uploaded data in megabytes
 </td>
 <td valign="top">
 
-Status of the job run. Possible values are:***COMPLETED*** and ***FAILED***.
+Status of the job run. Possible values are:`COMPLETED` and `FAILED`.
 
 > ### Note:  
-> Status ***COMPLETED*** doesn't indicate, that no errors occurred during the archiving process. It only states, that the job run without any error causing the job run to end prematurely.
+> Status `COMPLETED` doesn't indicate, that no errors occurred during the archiving process. It only states, that the job run without any error causing the job run to end prematurely.
 
 
 
@@ -234,12 +234,12 @@ Status of the job run. Possible values are:***COMPLETED*** and ***FAILED***.
 </td>
 <td valign="top">
 
-Job phase in which the run failed. The job run is divided into 2 phases: ***INITIALIZATION*** and ***EXECUTION***.
+Job phase in which the run failed. The job run is divided into 2 phases: `INITIALIZATION` and `EXECUTION`.
 
 > ### Note:  
-> If the `RunStatus` is ***COMPLETED***, this indicator is null.
+> If the `RunStatus` is `COMPLETED`, this indicator is null.
 
-If the job fails during ***INITIALIZATION***, some necessary resources during this phase, such as reading values from the destination, run into an error.
+If the job fails during `INITIALIZATION`, some necessary resources during this phase, such as reading values from the destination, run into an error.
 
 In this case,
 
@@ -249,7 +249,7 @@ In this case,
 -   If you use SAP Cloud Connector, check that the configuration of the SAP Cloud Connector is correct. Assure that the SAP Cloud Connector exposes the resources required.
 -   Check that the credentials configured in the destination enable the connection to the repository. Assure that the user has all the necessary authorisations for the required operations on the repository.
 
-If the job fails during the ***EXECUTION*** phase, an error occurred either during retrieval, compression, or uploading of the data.
+If the job fails during the `EXECUTION` phase, an error occurred either during retrieval, compression, or uploading of the data.
 
 In this case,
 
@@ -268,7 +268,7 @@ In this case,
 You can query the KPIs with the same OData API used to query the Message Processing Logs: `ArchivingKeyPerformanceIndicators` with `RunStart` as primary key.
 
 > ### Example:  
-> The following query is an example where the query filter for all entries with `MplsToBeArchived` = ***5000***.
+> The following query is an example where the query filter for all entries with `MplsToBeArchived` = `5000`.
 > 
 > Request Method: `GET`
 > 

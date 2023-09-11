@@ -70,7 +70,7 @@ As a tenant administrator, you can group application roles in role collections. 
     </tr>
     <tr>
     <td valign="top" rowspan="3">
-
+    
     Cloud Integration
 
     For more information on relevant roles, see [Understanding User Persona](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/4b4ba1c553474259b5be661f4ef0702c.html).
@@ -79,14 +79,14 @@ As a tenant administrator, you can group application roles in role collections. 
     
     </td>
     <td valign="top">
-
+    
     *PI\_Business\_Expert*
 
 
     
     </td>
     <td valign="top">
-
+    
     -   Monitor integration flows and the status of integration artifacts
 
     -   Read the message payload and attachments
@@ -98,14 +98,14 @@ As a tenant administrator, you can group application roles in role collections. 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *PI\_Administrator*
 
 
     
     </td>
     <td valign="top">
-
+    
     -   Monitor integration flows and the status of integration artifacts
 
     -   Deploy security content
@@ -119,14 +119,14 @@ As a tenant administrator, you can group application roles in role collections. 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *PI\_Integration\_Developer*
 
 
     
     </td>
     <td valign="top">
-
+    
     -   Create Integration Flows
 
     -   Monitor integration flows and the status of integration artifacts
@@ -139,27 +139,30 @@ As a tenant administrator, you can group application roles in role collections. 
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="2">
-
-    API Management
-
-    For more information on relevant roles, see [Assigning User Roles \(Cloud Foundry\)](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html).
-
-    For end-to end intructions on how to set up and configure API Management, refer the tutorial [Set Up API Management from Integration Suite | Tutorials for SAP Developers](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html).
+    <td valign="top" rowspan="4">
+    
+    API Management 
 
 
     
     </td>
     <td valign="top">
-
+    
     *APIManagement.Selfservice.Administrator*
 
 
     
     </td>
     <td valign="top">
+    
+    -   Complete the onboarding process and access the *API Settings* page.
 
-    Complete the onboarding process and access the API Settings page. To set up the API Management service, see [Setting Up API Management Service](../50-Development/setting-up-api-management-service-f34e86c.md).
+
+    For end-to end instructions on how to set up and configure API Management, refer the tutorial [Set Up API Management from Integration Suite | Tutorials for SAP Developers](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html).
+
+    For more information on relevant roles, see [Assign User Roles in API Management](assign-user-roles-in-api-management-911ca5a.md).
+
+    To set up the API Management service, see [Setting Up API Management Capability](../50-Development/setting-up-api-management-capability-f34e86c.md).
 
 
     
@@ -167,15 +170,15 @@ As a tenant administrator, you can group application roles in role collections. 
     </tr>
     <tr>
     <td valign="top">
-
-    *AuthGroup.SelfService.Admin*
+    
+    Role Collection for API business hub enterprise: *AuthGroup.SelfService.Admin* 
 
 
     
     </td>
     <td valign="top">
-
-    Onboard to API business hub enterprise and get access to it. For more information, [Setting Up API Management Service](../50-Development/setting-up-api-management-service-f34e86c.md).
+    
+    Onboard to API business hub enterprise and get access to it.
 
 
     
@@ -183,7 +186,39 @@ As a tenant administrator, you can group application roles in role collections. 
     </tr>
     <tr>
     <td valign="top">
+    
+    Role Collection for Graph: *Graph\_Key\_User* 
 
+
+    
+    </td>
+    <td valign="top">
+    
+    Create and activate business data graphs. For more information, see [Define Users](https://help.sap.com/docs/graph/initial-setup#2.-define-users-for-graph).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Role Collection for Graph: *Graph\_Navigator\_Viewer* 
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Use the Graph Navigator in SAP API business hub enterprise to inspect business data graphs. For more information, see [Define Users](https://help.sap.com/docs/graph/initial-setup#2.-define-users-for-graph).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="2">
+    
     Integration Advisor
 
     For more information on assigning roles, see [Assigning Users](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b5226b95e11b42cd9e257ae6d2b0ee0a.html).
@@ -192,14 +227,14 @@ As a tenant administrator, you can group application roles in role collections. 
     
     </td>
     <td valign="top">
-
+    
     *iadv-content-developer*
 
 
     
     </td>
     <td valign="top">
-
+    
     Create and deploy interfaces and mappings
 
 
@@ -208,14 +243,32 @@ As a tenant administrator, you can group application roles in role collections. 
     </tr>
     <tr>
     <td valign="top">
+    
+    *iacd-content-administrator*
 
+
+    
+    </td>
+    <td valign="top">
+    
+    Create and deploy interfaces and mappings
+
+    Unlock MIGs and MAGs locked by other users
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Open Connectors
 
 
     
     </td>
     <td valign="top">
-
+    
     *OpenConnectors\_User*
 
     > ### Note:  
@@ -227,11 +280,11 @@ As a tenant administrator, you can group application roles in role collections. 
     
     </td>
     <td valign="top">
-
+    
     View the Open Connectors capability tile on the Integration Suite Launchpad.
 
     > ### Note:  
-    > Just adding the OpenConnectors\_User role collection in the SAP BTP Trust Configuration cockpit isn't sufficient to access Integration Advisor. The newly added user will have to be explicitly added as a **member** by the user who enabled the Integration Suite capability \(or by any other user who already has the **Account Admin** privileges\).
+    > Just adding the OpenConnectors\_User role collection in the SAP BTP Trust Configuration cockpit isn't sufficient to access Open Connectors . The newly added user will have to be explicitly added as a **member** by the user who enabled the Integration Suite capability \(or by any other user who already has the **Account Admin** privileges\).
     > 
     > See [Open Connectors](https://help.sap.com/viewer/41a66e9fe3d34f80a50dfdad2357d633/1.0/en-US).
 
@@ -240,22 +293,22 @@ As a tenant administrator, you can group application roles in role collections. 
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="2">
-
+    <td valign="top" rowspan="3">
+    
     Trading Partner Management
 
 
     
     </td>
     <td valign="top">
-
+    
     PI\_Business\_Expert
 
 
     
     </td>
     <td valign="top">
-
+    
     -   Monitor integration flows and the status of integration artifacts
 
     -   Read the message payload and attachments
@@ -267,14 +320,14 @@ As a tenant administrator, you can group application roles in role collections. 
     </tr>
     <tr>
     <td valign="top">
-
+    
     PI\_Integration\_Developer
 
 
     
     </td>
     <td valign="top">
-
+    
     -   Perform all configurations related to trading partner such as creating and maintaining partner profiles, company profile, agreement templates and agreements, and activating partner agreements.
 
     -   Connect to a cluster using Integration Designer and to display, download, and deploy artifacts \(for example, integration flows\).
@@ -284,25 +337,46 @@ As a tenant administrator, you can group application roles in role collections. 
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="5">
+    <td valign="top">
+    
+    *Role* : AuthGroup\_TenantPartnerDirectoryConfigurator
 
+
+    
+    </td>
+    <td valign="top">
+    
+    -   Activate agreements and publish their content into the partner directory.
+
+    -   Deactivate agreements.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="5">
+    
     Integration Assessment
 
 
     
     </td>
     <td valign="top">
-
+    
     INTAS\_BusinessDomainExpert
 
 
     
     </td>
     <td valign="top">
+    
+    -   Create business solution requests for business users.
 
-    -   Create business solution requests for the business users and project managers.
+    -   Create business solution requests for project managers.
 
-    -   Create interface requests
+    -   Create interface requests.
 
 
 
@@ -311,17 +385,20 @@ As a tenant administrator, you can group application roles in role collections. 
     </tr>
     <tr>
     <td valign="top">
-
+    
     INTAS\_IntegrationArchitect
 
 
     
     </td>
     <td valign="top">
-
+    
     -   Fill out questionnaires.
 
+    -   Review integration technologies.
+
     -   Determine application profile and application instance.
+
 
 
     
@@ -329,18 +406,26 @@ As a tenant administrator, you can group application roles in role collections. 
     </tr>
     <tr>
     <td valign="top">
-
+    
     INTAS\_EnterpriseArchitect
 
 
     
     </td>
     <td valign="top">
+    
+    -   Manage the settings of a business solution request.
 
-    -   Maintain the settings of a business solution request, namely integration domain, integration style, integration use case pattern, key characteristics, and questionnaire.
+    -   Determine integration technologies.
 
-    -   Determine integration technologies, application profile and application instance.
+    -   Establish application profile and application instance.
     -   Specify integration guidelines and best practices.
+
+    -   Incorporate new versions of SAP standard content into the dataset.
+
+        > ### Note:  
+        > Only an Enterprise Architect or an Administrator can perform this task.
+
 
 
     
@@ -348,15 +433,23 @@ As a tenant administrator, you can group application roles in role collections. 
     </tr>
     <tr>
     <td valign="top">
-
+    
     INTAS\_Administrator
 
 
     
     </td>
     <td valign="top">
+    
+    -   Manage applications.
 
-    -   Edit/Delete ISA-M data, Questionnaire, Applications, Technologies all sections, Business Solution Request.
+    -   Submit Business Solution Request.
+
+    -   Edit ISA-M data.
+
+    -   Delete ISA-M data.
+
+    -   Complete questionnaires.
 
 
 
@@ -365,15 +458,74 @@ As a tenant administrator, you can group application roles in role collections. 
     </tr>
     <tr>
     <td valign="top">
-
+    
     INTAS\_ViewOnly
 
 
     
     </td>
     <td valign="top">
+    
+    -   View ISA-M data.
 
-    -   View ISA-M data, Questionnaire, Applications, Technologies, Business Solution Request, Interface Assessment.
+    -   View questionnaires.
+
+    -   View applications.
+
+    -   View technologies.
+
+    -   View Business Solution Request.
+
+    -   View Interface Request.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="2">
+    
+    Migration Assessment
+
+
+    
+    </td>
+    <td valign="top">
+    
+    PIMAS\_Admin
+
+
+    
+    </td>
+    <td valign="top">
+    
+    -   Read and maintain system data, rule data, and effort data.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    PIMAS\_IntegrationAnalyst
+
+
+    
+    </td>
+    <td valign="top">
+    
+    -   Read system data, rule data, and effort data.
+
+    -   Read and maintain extraction data requests.
+
+    -   Read and maintain scenario evaluation requests.
+
+    -   Download scenario evaluation results.
+
+    -   Read monitoring data.
 
 
 

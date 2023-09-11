@@ -58,7 +58,7 @@ Specify With the Following Entry ...
 <tr>
 <td valign="top">
 
- *Name* 
+*Name* 
 
 
 
@@ -74,7 +74,7 @@ Enter `XSD_FROM_PD`.
 <tr>
 <td valign="top">
 
- *Type* 
+*Type* 
 
 
 
@@ -90,7 +90,7 @@ Select *Expression*.
 <tr>
 <td valign="top">
 
- *Data Type* 
+*Data Type* 
 
 
 
@@ -106,7 +106,7 @@ Enter `java.lang.string`.
 <tr>
 <td valign="top">
 
- *Value* 
+*Value* 
 
 
 

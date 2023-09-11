@@ -21,7 +21,7 @@
 2.  In the resource pane, perform one of the following tasks:
 
 
- <a name="task_tb2_tjn_npb"/>
+<a name="task_tb2_tjn_npb"/>
 
 <!-- task\_tb2\_tjn\_npb -->
 
@@ -44,7 +44,7 @@
 4.  Make necessary changes to the script file as per your requirement and choose *Save*.
 
 
- <a name="task_pjc_mkn_npb"/>
+<a name="task_pjc_mkn_npb"/>
 
 <!-- task\_pjc\_mkn\_npb -->
 

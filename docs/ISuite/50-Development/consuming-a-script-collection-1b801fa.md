@@ -29,29 +29,33 @@ To add a script to your integration artifact without using a script collection, 
 
 1.  Open your integration artifact in edit mode.
 
-2.  Create a reference to the script collection
-3.  In the property sheet for the integration artifact, choose *Resources* \> *References* \> *Add References* \> *Script Collection*.
+
+Create a reference to the script collection
+
+2.  In the property sheet for the integration artifact, choose *Resources* \> *References* \> *Add References* \> *Script Collection*.
 
     In the *References* dialog box, by default, script collections that are part of the integration package are listed. From the *Packages* list, select the other packages in the tenant to view the script collections available in them.
 
-4.  Select one or more script collection artifacts to which you want to create a reference.
+3.  Select one or more script collection artifacts to which you want to create a reference.
 
-5.  Choose *OK*.
+4.  Choose *OK*.
 
-6.  Create a script step and select a script resource
-7.  At the desired position in your integration artifact, choose *Message Transformers* \> *Script*. Choose *Groovy Script* or *JavaScript* based on your requirements.
 
-8.  In the quick action buttons, choose *Assign*.
+Create a script step and select a script resource
 
-9.  In the *Select Resource* dialog box, choose the *Reference Resources* tab.
+5.  At the desired position in your integration artifact, choose *Message Transformers* \> *Script*. Choose *Groovy Script* or *JavaScript* based on your requirements.
 
-10. In the *Script Collection* list, select a referenced script collection artifact.
+6.  In the quick action buttons, choose *Assign*.
 
-11. In the *Resources* list, select a script resource and choose *OK*.
+7.  In the *Select Resource* dialog box, choose the *Reference Resources* tab.
+
+8.  In the *Script Collection* list, select a referenced script collection artifact.
+
+9.  In the *Resources* list, select a script resource and choose *OK*.
 
     > ### Note:  
     > The scripts that appear in the *Resources* list depend on the script type you chose in a previous step. For example, if you choose JavaScript during script definition, you only see the JavaScript files that are available in the package.
 
-12. Choose *Save*.
+10. Choose *Save*.
 
 

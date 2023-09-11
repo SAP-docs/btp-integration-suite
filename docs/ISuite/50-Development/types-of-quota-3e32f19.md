@@ -4,7 +4,7 @@
 
 Quota type is an attribute of the Quota policy that you define while configuring the policy. API Management supports the following three types of Quota:
 
--    `calendar` type of Quota. For example, `<Quota name="DemoQuota" type="calendar">`
+-   `calendar` type of Quota. For example, `<Quota name="DemoQuota" type="calendar">`
 
     In the calendar Quota, you explicitly provide a start time. The counter starts the count from the specified start date. The Quota counter is refreshed based on the Interval and TimeUnit that you set. For example, the following Quota of type calendar begins counting at 8.30 am on June 26, 2015, and will refresh once in every 20 minutes.
 

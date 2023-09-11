@@ -75,7 +75,7 @@ Set up a certificate-to-user mapping in combination with *User Role* authorizati
 
         More information:
 
-        [Importing a Certificate](importing-a-certificate-03cf78a.md)
+        [Uploading a Certificate](uploading-a-certificate-03cf78a.md)
 
     -   Option 3:
 
@@ -95,12 +95,12 @@ Set up a certificate-to-user mapping in combination with *User Role* authorizati
 
         More information:
 
-        [Importing a Certificate](importing-a-certificate-03cf78a.md)
+        [Uploading a Certificate](uploading-a-certificate-03cf78a.md)
 
 
 2.  Configure the client certificate-to-user-mapping in the receiver.
 
-    Using SAP BTP Cockpit, create a service instance and service key and specify the user and certificate as described under:
+    Using SAP BTP cockpit, create a service instance and service key and specify the user and certificate as described under:
 
     [Client Certificate Authentication for Integration Flow Processing](../40-RemoteSystems/client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
 

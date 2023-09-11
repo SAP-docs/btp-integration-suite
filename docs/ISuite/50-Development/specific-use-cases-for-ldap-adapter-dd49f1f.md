@@ -41,7 +41,7 @@ function processData(message) {
 
 ```
 
-In the script, the values for attributes ***givenName***, ***displayName*** and ***telephoneNumber*** are declared in the script before they are passed to the LDAP adapter. Similarly, you can also create a script where these values are dynamically fetched during runtime.
+In the script, the values for attributes `givenName`, `displayName` and `telephoneNumber` are declared in the script before they are passed to the LDAP adapter. Similarly, you can also create a script where these values are dynamically fetched during runtime.
 
 
 
@@ -49,7 +49,7 @@ In the script, the values for attributes ***givenName***, ***displayName*** and 
 
 The example schema contains a set of attributes for a given record. In case you want the schema to contain additional attributes, you can manually edit the schema before using it in the mapping step.
 
-For example, if you want to add a field, telephone number, you can add an element in the schema under the ***sequence*** element.
+For example, if you want to add a field, telephone number, you can add an element in the schema under the `sequence` element.
 
 Here’s how the edited schema will look like:
 
@@ -113,7 +113,7 @@ def Message processData(Message message)
 
 ## Using Modify Operation to Change DN
 
-You can use the *Modify* operation to change the DN of an LDAP record. You can do this by adding the tag ***<DistinguishedName\_Previous\>*** to the input payload with the old DN. Specify the modified DN in ***<DistinguishedName\>*** tag and perform the *Modify* operation.
+You can use the *Modify* operation to change the DN of an LDAP record. You can do this by adding the tag `<DistinguishedName_Previous>` to the input payload with the old DN. Specify the modified DN in `<DistinguishedName>` tag and perform the *Modify* operation.
 
 Here's an example that shows a sample input payload for modiying the DN of an LDAP record:
 

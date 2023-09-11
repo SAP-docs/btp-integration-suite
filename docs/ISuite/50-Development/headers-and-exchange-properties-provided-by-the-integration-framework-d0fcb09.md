@@ -1574,7 +1574,7 @@ Header
 </td>
 <td valign="top">
 
-When you monitor the messages at runtime, you can search for all messages whose defined ***SAP\_ApplicationID*** has a specific value \(displayed as the *MessageID* attribute in the Message Monitoring editor\).
+When you monitor the messages at runtime, you can search for all messages whose defined `SAP_ApplicationID` has a specific value \(displayed as the *Application Message ID* attribute in the Message Monitoring editor\).
 
 > ### Note:  
 > Only the first 120 characters are displayed.
@@ -2340,7 +2340,7 @@ Property
 
 Specifies whether message processing logs \(MPLs\) are to be correlated with each other using a correlation ID.
 
-By default, MPL correlation is switched on. To specify this property, select ***Constant*** as *Type* and enter ***True*** or ***False*** as *Value*.
+By default, MPL correlation is switched on. To specify this property, select `Constant` as *Type* and enter `True` or `False` as *Value*.
 
 
 
@@ -3696,6 +3696,36 @@ The adapter parses the XML response and generates this header from it. The heade
 <tr>
 <td valign="top">
 
+SapQualityOfService
+
+
+
+</td>
+<td valign="top">
+
+Header
+
+
+
+</td>
+<td valign="top">
+
+XI Sender adapter
+
+
+
+</td>
+<td valign="top">
+
+Indicates the quality of service from the sender system \(possible values: `BestEffort`, `ExactlyOnce`\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SapPlainSoapQueueId
 
 
@@ -4131,7 +4161,7 @@ Header
 </td>
 <td valign="top">
 
-If this message header is present for an incoming message, the processing of this message exchange is written with the specified log level. Allowed values are INFO, NONE, DEBUG \(case-insensitive\). The header does not get filled by the runtime, so it cannot be used to retrieve the currently set log level.
+If this message header is present for an incoming message, the processing of this message exchange is written with the specified log level. Allowed values are INFO, NONE, DEBUG, ERROR \(case-insensitive\). The header does not get filled by the runtime, so it cannot be used to retrieve the currently set log level.
 
 
 
@@ -4258,11 +4288,11 @@ This behavior is helpful in scenarios like,the multicast pattern, for example, w
 > ### Note:  
 > Example configuration:
 > 
-> *Name*: ***SAP\_ReceiverOverwrite***
+> *Name*: `SAP_ReceiverOverwrite`
 > 
-> *Type*: ***Constant***
+> *Type*: `Constant`
 > 
-> *Value*: ***True***
+> *Value*: `True`
 
 
 
@@ -4292,7 +4322,7 @@ Header
 
 Makes available the name of the receiver to monitoring.
 
-If you have specified ***SAP\_Sender*** or ***SAP\_Receiver***, the corresponding values are displayed in the message processing log. If you change the ***SAP\_Receiver*** value during message processing, all values are added to the receiver field in the message processing log as a comma-separated list. If you don't want this behavior, you can specify the exchange property `SAP_ReceiverOverwrite` \(see below\).
+If you have specified `SAP_Sender` or `SAP_Receiver`, the corresponding values are displayed in the message processing log. If you change the `SAP_Receiver` value during message processing, all values are added to the receiver field in the message processing log as a comma-separated list. If you don't want this behavior, you can specify the exchange property `SAP_ReceiverOverwrite` \(see below\).
 
 
 
@@ -4322,7 +4352,7 @@ Header
 
 Makes available the name of the sender to monitoring.
 
-If you have specified ***SAP\_Sender*** or ***SAP\_Receiver***, the corresponding values are displayed in the message processing log. If you change the ***SAP\_Receiver*** value during message processing, all values are added to the receiver field in the message processing log as a comma-separated list. If you don't want this behavior, you can specify the exchange property `SAP_ReceiverOverwrite` \(see below\).
+If you have specified `SAP_Sender` or `SAP_Receiver`, the corresponding values are displayed in the message processing log. If you change the `SAP_Receiver` value during message processing, all values are added to the receiver field in the message processing log as a comma-separated list. If you don't want this behavior, you can specify the exchange property `SAP_ReceiverOverwrite` \(see below\).
 
 
 
@@ -4385,6 +4415,96 @@ XML Validator
 <td valign="top">
 
 Adds the error payload.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP.DisableAttachments.HTTP
+
+
+
+</td>
+<td valign="top">
+
+Header
+
+
+
+</td>
+<td valign="top">
+
+HTTP Adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables the creation of attachments for request header, response headers, and response body when the message processing fails.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP.DisableAttachments.ODataV2
+
+
+
+</td>
+<td valign="top">
+
+Header
+
+
+
+</td>
+<td valign="top">
+
+OData V2 Receiver Adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables the creation of attachments for request header, response headers, and response body when the message processing fails.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP.DisableAttachments.ODataV4
+
+
+
+</td>
+<td valign="top">
+
+Header
+
+
+
+</td>
+<td valign="top">
+
+OData V4 Receiver Adapter
+
+
+
+</td>
+<td valign="top">
+
+Enables the creation of attachments for request header, response headers, and response body when the message processing fails.
 
 
 
@@ -4995,6 +5115,36 @@ Mail adapter
 <td valign="top">
 
 Specifies the e-mail address that the message is sent to.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CamelLoopIndex
+
+
+
+</td>
+<td valign="top">
+
+Property
+
+
+
+</td>
+<td valign="top">
+
+Looping Process Call
+
+
+
+</td>
+<td valign="top">
+
+Provides the index of the currently processed loop \(starting with 0\).
 
 
 

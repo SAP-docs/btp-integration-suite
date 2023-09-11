@@ -4,7 +4,7 @@
 
 For the **Splitting a Single Order with Multiple Items** use case described in [Splitter](splitter-4b475ea.md), you can use a General Splitter as shown in the *Pattern Message Splitter - General Splitter* integration flow. The General Splitter automatically duplicates the header information of the order for each individual message.
 
- ![](images/General_Splitter_c878e22.png) 
+![](images/General_Splitter_c878e22.png)
 
 The integration flow contains a General Splitter step with the *XPath* expression type and the following XPath expression:
 

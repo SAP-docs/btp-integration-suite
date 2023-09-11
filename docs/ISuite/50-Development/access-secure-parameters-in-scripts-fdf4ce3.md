@@ -32,9 +32,9 @@ As a prerequisite for calling this integration flow, the `ApiKey` of your target
     > ### Note:  
     > The possible length of the secure parameter varies:
     > 
-    > -   for *Cloud Foundry*: 4096 characters max. \(including spaces\)
+    > -   for **Cloud Foundry: 4096 characters max. \(including spaces\)
     > 
-    > -   for *Neo*: 255 characters max. \(including spaces\)
+    > -   for **Neo: 255 characters max. \(including spaces\)
 
 3.  You can now see the *Secure Parameter* under *Manage Security Material*:
 

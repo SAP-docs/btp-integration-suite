@@ -32,7 +32,7 @@ A Content Modifier stores the receiver name \(whose value is given by the*/Recei
 
 At this step, the payload still contains the message that was given by the message mapping and the Splitter. Therefore, it has to be replaced by the original message payload, which was saved at the beginning of the flow into a property. That's why we use the `${property.payload}` expression in another Content Modifier.
 
-For the JMS receiver adapter, a dynamic queue name ***$\{header.receiver\}*** is specified..
+For the JMS receiver adapter, a dynamic queue name `${header.receiver}` is specified..
 
 Within this splitter scenario, we'd like to guarantee data consistency across all receiver messages, and hence across the multiple JMS write operations. In case of an error while writing a message into the JMS queue, the other write operations should be rolled back. If the sender now resends the message after it received an error on the first call, it is ensured that no duplicate message is sent to any receiver. To achieve this, it’s important to set the Transaction Handling of the integration process to *Required for JMS*. The Iterating Splitter step however supports transaction handling only in case of sequential processing, so the *Parallel Processing* flag has to be unselected, see above.
 

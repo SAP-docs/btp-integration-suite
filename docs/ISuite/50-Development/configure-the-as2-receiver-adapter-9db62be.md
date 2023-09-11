@@ -3,17 +3,24 @@
 # Configure the AS2 Receiver Adapter
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
+
+> ### Note:  
+> In Neo environment, AS2 Receiver adapter version 1.7 and above can be used without [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) activation.
+> 
+> In Cloud Foundry environment, all versions of the adapter can be used without [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) activation.
 
 Once you have created a receiver channel and selected the AS2 receiver adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
@@ -44,7 +51,7 @@ Description
 <tr>
 <td valign="top">
 
- *Receipient URL* 
+*Receipient URL* 
 
 
 
@@ -60,7 +67,7 @@ Enter the URL of the receiver system.
 <tr>
 <td valign="top">
 
- *URL Parameters Pattern* 
+*URL Parameters Pattern* 
 
 
 
@@ -76,7 +83,7 @@ Define query parameters that are attached to the end of recipient URL.
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -89,7 +96,7 @@ Select the type of proxy you want to use for connecting to receiver system.
 -   *On-Premise*
 -   *Dynamic*
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Proxy\_Type***. The allowed values are *<sapcc\>* and *<default\>*.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Proxy_Type`. The allowed values are *<sapcc\>* and *<default\>*.
 
 
 
@@ -98,7 +105,7 @@ You can also set the value of this attribute dynamically using the header ***SAP
 <tr>
 <td valign="top">
 
- *Location ID*\(only if *On-Premise* is selected for *Proxy Type*.\)
+*Location ID*\(only if *On-Premise* is selected for *Proxy Type*.\)
 
 
 
@@ -114,7 +121,7 @@ Enter the location ID to identify a specific Cloud Connector that is unique to y
 <tr>
 <td valign="top">
 
- *Authentication Type* 
+*Authentication Type* 
 
 
 
@@ -128,7 +135,7 @@ Select one of the following authentication methods:
 -   *Client Certificate*\(only if *Internet* is selected for *Proxy Type*.\)
 -   *Dynamic*
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Authentication\_Type***. The allowed values are *<None\>*, *<BasicAuthentication\>*, and *<ClientCertificate\>*.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Authentication_Type`. The allowed values are *<None\>*, *<BasicAuthentication\>*, and *<ClientCertificate\>*.
 
 
 
@@ -169,7 +176,7 @@ Provide the name of the *User Credentials* artifact that contains the credential
 <tr>
 <td valign="top">
 
- *Timeout \(in ms\)* 
+*Timeout \(in ms\)* 
 
 
 
@@ -209,14 +216,14 @@ Description
 <tr>
 <td valign="top">
 
- *File Name* 
+*File Name* 
 
 
 
 </td>
 <td valign="top">
 
-Specify the AS2 file name. If no file name is specified, the default file name `<Own AS2 ID>_File` is used. Simple expressions, ***$\{header.<header-name\>\}***, or***$\{property.<property-name\>\}*** are allowed.
+Specify the AS2 file name. If no file name is specified, the default file name `<Own AS2 ID>_File` is used. Simple expressions, `${header.<header-name>}`, or`${property.<property-name>}` are allowed.
 
 
 
@@ -225,7 +232,7 @@ Specify the AS2 file name. If no file name is specified, the default file name `
 <tr>
 <td valign="top">
 
- *Message ID Left Part* 
+*Message ID Left Part* 
 
 
 
@@ -241,7 +248,7 @@ Specify the left side of the AS2 message ID. Regular expression or '.\*' is allo
 <tr>
 <td valign="top">
 
- *Message ID Right Part* 
+*Message ID Right Part* 
 
 
 
@@ -257,7 +264,7 @@ Specify the right side of the AS2 message ID. Regular expression or '.\*' is all
 <tr>
 <td valign="top">
 
- *Own AS2 ID* 
+*Own AS2 ID* 
 
 
 
@@ -273,7 +280,7 @@ Specify your own AS2 ID. Regular expression or '.\*' is allowed.
 <tr>
 <td valign="top">
 
- *Partner AS2 ID* 
+*Partner AS2 ID* 
 
 
 
@@ -289,7 +296,7 @@ Specify your partner's AS2 ID. Regular expression or '.\*' is allowed.
 <tr>
 <td valign="top">
 
- *Message Subject* 
+*Message Subject* 
 
 
 
@@ -312,7 +319,7 @@ Specify the AS2 message subject. Regular expression or '.\*' is allowed.
 </td>
 <td valign="top">
 
-Specify your own e-mail ID. Simple expressions, ***$\{header.<header-name\>\}***, or ***$\{property.<property-name\>\}*** are allowed.
+Specify your own e-mail ID. Simple expressions, `${header.<header-name>}`, or `${property.<property-name>}` are allowed.
 
 
 
@@ -321,16 +328,16 @@ Specify your own e-mail ID. Simple expressions, ***$\{header.<header-name\>\}***
 <tr>
 <td valign="top">
 
- *Content Type* 
+*Content Type* 
 
 
 
 </td>
 <td valign="top">
 
-Specify the content type of the outgoing message. For example: application/edi-x12. Simple expressions,***$\{header.<header-name\>\}***, or ***$\{property.<property-name\>\}*** are allowed.
+Specify the content type of the outgoing message. For example: application/edi-x12. Simple expressions,`${header.<header-name>}`, or `${property.<property-name>}` are allowed.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Content\_Type***.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Content_Type`.
 
 > ### Note:  
 > If the header value is set, it takes precedence over the actual value configured in the channel.
@@ -342,7 +349,7 @@ You can also set the value of this attribute dynamically using the header ***SAP
 <tr>
 <td valign="top">
 
- *Custom Headers Pattern* 
+*Custom Headers Pattern* 
 
 
 
@@ -351,7 +358,7 @@ You can also set the value of this attribute dynamically using the header ***SAP
 
 Specify a regular expression to pick message headers and add them as AS2 custom headers.
 
-For example, if you want to pick all EDI headers starting with the name EDI, specify the expression as ***EDI.\****.
+For example, if you want to pick all EDI headers starting with the name EDI, specify the expression as `EDI.*`.
 
 
 
@@ -360,7 +367,7 @@ For example, if you want to pick all EDI headers starting with the name EDI, spe
 <tr>
 <td valign="top">
 
- *Content Transfer Encoding* 
+*Content Transfer Encoding* 
 
 
 
@@ -372,7 +379,7 @@ Specify the AS2 message encoding type as:
 -   base64
 -   binary
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Content\_Transfer\_Encoding***.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Content_Transfer_Encoding`.
 
 The allowed values are *<binary\>* and *<base64\>*.
 
@@ -416,7 +423,7 @@ Description
 
 Select this checkbox to ensure that the outgoing AS2 message is compressed.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Compress\_Message***.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Compress_Message`.
 
 The valid values are:
 
@@ -433,7 +440,7 @@ The valid values are:
 <tr>
 <td valign="top">
 
- *Sign Message* 
+*Sign Message* 
 
 
 
@@ -442,7 +449,7 @@ The valid values are:
 
 Select this checkbox to ensure that the outgoing AS2 message is signed.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Sign\_Message***.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Sign_Message`.
 
 The valid values are:
 
@@ -470,7 +477,7 @@ The valid values are:
 
 Select the AS2 message signing algorithm.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Signing\_Algorithm***.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Signing_Algorithm`.
 
 The valid values are:
 
@@ -500,9 +507,9 @@ The valid values are:
 </td>
 <td valign="top">
 
-Specify the private key alias to sign the AS2 message. Simple expressions, ***$\{header.<header-name\>\}***, or ***$\{property.<property-name\>\}*** are allowed.
+Specify the private key alias to sign the AS2 message. Simple expressions, `${header.<header-name>}`, or `${property.<property-name>}` are allowed.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Signing\_Private\_Key\_Alias***.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Signing_Private_Key_Alias`.
 
 
 
@@ -511,7 +518,7 @@ You can also set the value of this attribute dynamically using the header ***SAP
 <tr>
 <td valign="top">
 
- *Encrypt Message* 
+*Encrypt Message* 
 
 
 
@@ -520,7 +527,7 @@ You can also set the value of this attribute dynamically using the header ***SAP
 
 Select this checkbox to ensure that the message is encrypted.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Encrypt\_Message***.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Encrypt_Message`.
 
 The valid values are:
 
@@ -548,7 +555,7 @@ The valid values are:
 
 Select the AS2 message encryption algorithm.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Encryption\_Algorithm***.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Encryption_Algorithm`.
 
 The valid values are:
 
@@ -577,7 +584,7 @@ The valid values are:
 </td>
 <td valign="top">
 
-Specify the public key alias to encrypt the AS2 message. Simple expressions, ***$\{header.<header-name\>\}***, or ***$\{property.<property-name\>\}*** are allowed. The header or property can contain a public key alias or X509 certificate.
+Specify the public key alias to encrypt the AS2 message. Simple expressions, `${header.<header-name>}`, or `${property.<property-name>}` are allowed. The header or property can contain a public key alias or X509 certificate.
 
 
 
@@ -597,7 +604,7 @@ Specify the public key alias to encrypt the AS2 message. Simple expressions, ***
 
 Specify the public key length.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Encryption\_Key\_Length***.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Encryption_Key_Length`.
 
 > ### Note:  
 > If the header value is set, it takes precedence over the actual value configured in the channel.
@@ -633,7 +640,7 @@ Description
 <tr>
 <td valign="top">
 
- *Type* 
+*Type* 
 
 
 
@@ -642,7 +649,7 @@ Description
 
 Enable this option to request the partner to send a Message Integrity Check \(MIC\) in AS2 MDN.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Mdn\_Type***. The allowed values are *<synchronous\>*, *<asynhronous\>*, and *<none\>*.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Mdn_Type`. The allowed values are *<synchronous\>*, *<asynhronous\>*, and *<none\>*.
 
 > ### Note:  
 > If the header value is set, it takes precedence over the actual value configured in the channel.
@@ -683,7 +690,7 @@ Specify the URL where the AS2 MDN will be received from the partner. Simple expr
 
 Enable this option to request the partner to sign AS2 MDN.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Mdn\_Request\_Signing***.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Mdn_Request_Signing`.
 
 
 
@@ -703,7 +710,7 @@ You can also set the value of this attribute dynamically using the header ***SAP
 
 Select the appropriate algorithm.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Mdn\_Signing\_Algorithm***.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Mdn_Signing_Algorithm`.
 
 > ### Note:  
 > If the header value is set, it takes precedence over the actual value configured in the channel.
@@ -726,7 +733,7 @@ You can also set the value of this attribute dynamically using the header ***SAP
 
 You can enable this option to verify the signature of AS2 MDN.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Mdn\_Verify\_Signature***
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Mdn_Verify_Signature`
 
 
 
@@ -753,7 +760,7 @@ Specify the public key alias to verify the MDN signature. Simple expressions, $\
 <tr>
 <td valign="top">
 
- *Request MIC* 
+*Request MIC* 
 
 
 
@@ -762,7 +769,7 @@ Specify the public key alias to verify the MDN signature. Simple expressions, $\
 
 Enable this option if you want to request an integrity check.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Mdn\_Request\_Mic***.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Mdn_Request_Mic`.
 
 
 
@@ -784,7 +791,7 @@ Enable this option to verify the MIC of AS2 MDN.
 
 You can also enable this option if you enable the *Request MIC* option and want to verify the integrity of the message.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS2\_Outbound\_Mdn\_Verify\_Mic***.
+You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Mdn_Verify_Mic`.
 
 
 

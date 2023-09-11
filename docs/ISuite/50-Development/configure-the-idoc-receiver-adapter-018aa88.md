@@ -2,17 +2,19 @@
 
 # Configure the IDoc Receiver Adapter
 
-The IDoc receiver adapter enables the SAP BTP tenant to send Intermediate Document \(IDoc\) messages to a receiver.
+The IDoc receiver adapter enables SAP Integration Suite to send Intermediate Document \(IDoc\) messages to a receiver.
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -100,7 +102,7 @@ The endpoint URL that is actually used at runtime is displayed in the message pr
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -116,7 +118,7 @@ The type of proxy that you are using to connect to the target system:
     > ### Note:  
     > If you select the *On-Premise* option, the following restrictions apply to other parameter values:
     > 
-    > -   Do not use an HTTPS address for *Address*, as it leads to errors when performing consistency checks or during deployment.
+    > -   Use HTTP instead of HTTPS when specifying the virtual system url in the *Address* field.
     > 
     > -   Do not use the option *Client Certificate* for the *Authentication* parameter, as it leads to errors when performing consistency checks or during deployment.
 
@@ -169,7 +171,7 @@ There are the following options:
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 

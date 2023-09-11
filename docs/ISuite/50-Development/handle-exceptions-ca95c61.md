@@ -91,7 +91,7 @@ In this use case, the message status is set to *Escalated* that allows you to se
 </table>
 
 > ### Note:  
-> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP API Business Hub:
+> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP Business Accelerator Hub:
 > 
 > [Integration Flow Design Guidelines - Handle Errors Gracefully](https://api.sap.com/package/DesignGuidelinesHandleErrors?section=Overview)
 > 

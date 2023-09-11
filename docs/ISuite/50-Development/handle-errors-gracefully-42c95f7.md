@@ -5,7 +5,7 @@
 Even well-designed integration flows sporadically break based on load, resource usage, and other factors. To prepare for such situations, extend the integration flow with the appropriate error handling.
 
 > ### Note:  
-> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP API Business Hub:
+> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP Business Accelerator Hub:
 > 
 > [Integration Flow Design Guidelines - Handle Errors Gracefully](https://api.sap.com/package/DesignGuidelinesHandleErrors?section=Overview)
 > 
@@ -17,6 +17,9 @@ Even well-designed integration flows sporadically break based on load, resource 
 > -   The scenario stops in case of an error.
 > 
 > -   Not enough information is made available by the system to the experts in charge of resolving error situations.
+
+> ### Note:  
+> It can be the case that you've applied the integration flow design guidelines described in this section to your best knowledge, but you still face issues during the operation of the scenario. For example, you have applied all design rules with regard to performance but still the performance isn't good enough at runtime. In such cases, you can check out the following page to search for a service that helps you to optimize the implementation of your scenario: [SAP Services and Support](https://www.sap.com/services-support.html).
 
 To apply this design guideline, consider the following rules:
 

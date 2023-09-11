@@ -29,7 +29,7 @@ Usage
 <tr>
 <td valign="top" rowspan="2">
 
- **Private key** 
+**Private key** 
 
 
 
@@ -54,7 +54,7 @@ Used by a receiver to decrypt a message \(that has been encrypted by a sender\)
 <tr>
 <td valign="top" rowspan="2">
 
- **Public key** 
+**Public key** 
 
 
 

@@ -9,9 +9,11 @@ Configure the OData receiver adapter by understanding the adapter parameters.
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -19,19 +21,19 @@ Configure the OData receiver adapter by understanding the adapter parameters.
 OData receiver adapter supports externalization. To externalize the parameters of this adapter, choose *Externalize* and follow the steps mentioned in [Externalize Parameters of an Integration Flow](externalize-parameters-of-an-integration-flow-45b2a07.md).
 
 > ### Note:  
-> -   OData adapter doesn’t support ***$format*** and ***$inlineCount*** in query options.
+> -   OData adapter doesn’t support `$format` and `$inlineCount` in query options.
 > 
-> -   OData adapter supports sending error response in exception subprocess. The error response body is part of expression ***$\{in.body\}***.
+> -   OData adapter supports sending error response in exception subprocess. The error response body is part of expression `${in.body}`.
 > 
-> -   OData API response code is captured in the ***camelhttpresponsecode*** header.
+> -   OData API response code is captured in the `camelhttpresponsecode` header.
 > 
 > -   OData adapter doesn’t support incoming payload in JSON format. The adapter only supports payload in XML format.
 > 
-> -   OData adapter doesn't support the word ***link*** in your payload. The word is reserved for creating reference links.
+> -   OData adapter doesn't support the word `link` in your payload. The word is reserved for creating reference links.
 > 
-> -   The adapter enables you to use connection pool while connecting to OData backend. For more information, see SAP Note [2863657](https://launchpad.support.sap.com/#/notes/2863657).
+> -   The adapter enables you to use connection pool while connecting to OData backend. For more information, see SAP Note [2863657](https://me.sap.com/notes/2863657).
 > 
-> -   You can enable tracing for the adapter and analyze its log. For more information, see SAP Note [2852998](https://launchpad.support.sap.com/#/notes/2852998).
+> -   You can enable tracing for the adapter and analyze its log. For more information, see SAP Note [2852998](https://me.sap.com/notes/2852998).
 
 Select the *General* tab and provide values in the fields as follows.
 
@@ -98,7 +100,7 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -114,7 +116,7 @@ URL of the OData V2 service that you want to connect to.
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -150,7 +152,7 @@ Location ID that you’ve configured in the cloud connector installed on your sy
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 
@@ -215,7 +217,7 @@ Credential name of the credentials that you’ve deployed in *Security Material*
 Enter the private key alias that enables the system to fetch the private key from keystore for authentication.
 
 > ### Restriction:  
-> The values ***true*** and ***false*** aren’t supported for this field.
+> The values `true` and `false` aren’t supported for this field.
 
 
 
@@ -224,7 +226,7 @@ Enter the private key alias that enables the system to fetch the private key fro
 <tr>
 <td valign="top">
 
- *CSRF Protected* 
+*CSRF Protected* 
 
 
 
@@ -232,6 +234,22 @@ Enter the private key alias that enables the system to fetch the private key fro
 <td valign="top">
 
 Keep this option selected \(default setting\). It ensures that your integration flow is protected against Cross-Site-Request-Forgery, a kind of attack where a malicious party can perform harmful actions by masquerading as the logged in user
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Reuse Connection*
+
+
+
+</td>
+<td valign="top">
+
+The option is enabled by default. This option enables the reuse of connection objects from the internal connection pool which in turn improves the network turnaround time for multiple communications to a same end point.
 
 
 
@@ -264,7 +282,7 @@ Description
 <tr>
 <td valign="top">
 
- *Operation Details* 
+*Operation Details* 
 
 
 
@@ -312,7 +330,7 @@ For the *POST* operation, the automatic Primary Key generation is handled in 2 d
 <tr>
 <td valign="top">
 
- *Resource Path* 
+*Resource Path* 
 
 
 
@@ -375,7 +393,7 @@ Fields in the entity that you’re performing the operation on. If you use the M
 <tr>
 <td valign="top">
 
- *Enable Batch Processing* 
+*Enable Batch Processing* 
 
 
 
@@ -391,7 +409,7 @@ Select to perform multiple operations in one request to the OData V2 service in 
 <tr>
 <td valign="top">
 
- *Custom Query Options* 
+*Custom Query Options* 
 
 
 
@@ -407,7 +425,7 @@ Additional query options that aren’t available in the *Model Operation* wizard
 <tr>
 <td valign="top">
 
- *Content Type* 
+*Content Type* 
 
 
 
@@ -446,7 +464,7 @@ Encoding type used for sending content to OData API.
 <tr>
 <td valign="top">
 
- *Page Size* 
+*Page Size* 
 
 
 
@@ -486,9 +504,9 @@ To use *Process in Pages*, you must use the adapter in a *Local Integration Proc
 
 -   Select *Expression Type* as *Non-XML*
 
--   For *Condition Expression*, provide ***$\{property.<receiver.name\>.<channel.name\>.hasMoreRecords\} contains 'true'***
+-   For *Condition Expression*, provide `${property.<receiver.name>.<channel.name>.hasMoreRecords} contains 'true'`
 
--   For *Maximum Number of Iterations*, provide ***999***
+-   For *Maximum Number of Iterations*, provide `999`
 
 
 This option isn’t enabled for *Content Enricher*.
@@ -503,7 +521,7 @@ This option isn’t enabled for *Content Enricher*.
 <tr>
 <td valign="top">
 
- *Timeout \(in min\)* 
+*Timeout \(in min\)* 
 
 
 
@@ -519,7 +537,27 @@ Maximum time the adapter must wait for receiving a response from the OData V2 se
 <tr>
 <td valign="top">
 
- *HEADER DETAILS* 
+*Attach Error Details on Failure* 
+
+
+
+</td>
+<td valign="top">
+
+By default, the option is enabled. This option enables the creation of attachments for request header, response headers, and response body when the message processing fails.
+
+Having these attachments during message processing failures can be unneccesary as it leads to persistence of attachments that doesn't help. Especially, if multiple message processing failures occurs, you have attachments piled up for each failure. If you don't require the attachments for failure scenarios, disable the option. Though you disable the creation of attachments, the content of the same are added to the message processing logs.
+
+If you're using older versions of the adapter where you don't see the option, define the property `SAP.DisableAttachments.ODataV2` in the message exchange with the value `true`.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*HEADER DETAILS* 
 
 
 
@@ -541,19 +579,19 @@ If the value \* is entered, **all** the HTTP response header values are converte
 <tr>
 <td valign="top">
 
- *Metadata Details* 
+*Metadata Details* 
 
 
 
 </td>
 <td valign="top">
 
-OData receiver adapter makes a $metadata call, before the actual endpoint call. Not all headers or query parameters are passed to the $metadata call. If your service needs some headers \(for example header ***apikey***, which is a customer authorization header to invoke API endpoints\) or parameters then you can provide the same in the request headers and query parameters.
+OData receiver adapter makes a $metadata call, before the actual endpoint call. Not all headers or query parameters are passed to the $metadata call. If your service needs some headers \(for example header `apikey`, which is a customer authorization header to invoke API endpoints\) or parameters then you can provide the same in the request headers and query parameters.
 
 Request headers provide comma-separated HTTP request headers to be sent to $metadata call. Custom query parameters enter key value pairs of query parameters, separated by *&* for multiple entries.
 
 > ### Note:  
-> The adapter stores the metadata cache for 1 hour after which it gets invalidated. The adapter looks out for the metadata again that can cause dips in performance every hour. If you face such dips every hour, you can use the message property ***SAP\_ODataV2\_RefreshCacheOnExpiry*** and set the value to ***false***. This can be done using a Content Modifier or Script step before the adapter. Upon using this property, the adapter stops invalidating the cache and looking for metadata every hour.
+> The adapter stores the metadata cache for 1 hour after which it gets invalidated. The adapter looks out for the metadata again that can cause dips in performance every hour. If you face such dips every hour, you can use the message property `SAP_ODataV2_RefreshCacheOnExpiry` and set the value to `false`. This can be done using a Content Modifier or Script step before the adapter. Upon using this property, the adapter stops invalidating the cache and looking for metadata every hour.
 
 
 
@@ -567,7 +605,7 @@ Request headers provide comma-separated HTTP request headers to be sent to $meta
 
 This adapter provides a wizard for modeling operations easily. It’s recommended that you use this wizard to ensure that the operation doesn’t contain any errors. The wizard can also fetch the *Externalized* parameters that are maintained under the *Connection* details of the OData receiver adapter.
 
-There are two main steps in this wizard:
+There are three main steps in this wizard:
 
 1.  *Connect to System:* In this step, you provide the details required for connecting to the Web Service that you’re accessing.
 2.  *Select Entity and Define Operation:* In this step, you select the operation you want to perform and the entity on which you want to perform the operation on. After selecting the entity, you also select the fields, filtering and sorting conditions.
@@ -596,7 +634,7 @@ Description
 <tr>
 <td valign="top">
 
- *Connection Source* 
+*Connection Source* 
 
 
 
@@ -634,7 +672,7 @@ Choose *Select* to select the EDMX service schema. You can also manually upload 
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -686,7 +724,7 @@ Location ID that you’ve configured in the Cloud Connector installation.
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 
@@ -726,7 +764,7 @@ Description
 <tr>
 <td valign="top">
 
- *Operation* 
+*Operation* 
 
 
 
@@ -752,7 +790,7 @@ The adapter supports *Function Import* for the following return types:
 -   Void
 
 
- *Function Import*can also be consumed in the *$batch* mode.
+*Function Import*can also be consumed in the *$batch* mode.
 
 
 
@@ -761,14 +799,14 @@ The adapter supports *Function Import* for the following return types:
 <tr>
 <td valign="top">
 
- *Sub-Levels* 
+*Sub-Levels* 
 
 
 
 </td>
 <td valign="top">
 
-Sublevels of the entity that you want to access. For example, if you want to access the field *Description* in the entity *Products*, and the field is located at *Category* \> *Products* \> *Description*, you select the *Sub Levels* as ***3*** since the field you want to access is at the third level.
+Sublevels of the entity that you want to access. For example, if you want to access the field *Description* in the entity *Products*, and the field is located at *Category* \> *Products* \> *Description*, you select the *Sub Levels* as `3` since the field you want to access is at the third level.
 
 
 
@@ -777,7 +815,7 @@ Sublevels of the entity that you want to access. For example, if you want to acc
 <tr>
 <td valign="top">
 
- *Select Entity* 
+*Select Entity* 
 
 
 
@@ -793,7 +831,7 @@ Entity that you want to perform the operation on.
 <tr>
 <td valign="top">
 
- *Generate XML Schema Definition* 
+*Generate XML Schema Definition* 
 
 
 
@@ -811,7 +849,7 @@ There could be a scenario in which you wish to edit or update your modeling. In 
 <tr>
 <td valign="top">
 
- *Fields* 
+*Fields* 
 
 
 
@@ -827,7 +865,23 @@ Fields associated with the entity that you want to perform the operation on.
 <tr>
 <td valign="top">
 
- *Top* 
+*Filter Fields* 
+
+
+
+</td>
+<td valign="top">
+
+Type the field name that you are looking for to narrow down your search.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Top* 
 
 
 
@@ -845,7 +899,7 @@ For more information, see **Top System Query Option \($top\)** in [OData V2 URI 
 <tr>
 <td valign="top">
 
- *Skip* 
+*Skip* 
 
 
 
@@ -887,7 +941,7 @@ Description
 <tr>
 <td valign="top">
 
- *Filter By* 
+*Filter By* 
 
 
 
@@ -913,7 +967,7 @@ Select the field that you want to use as reference for filtering, choose the ope
 <tr>
 <td valign="top">
 
- *Sort By* 
+*Sort By* 
 
 
 

@@ -5,7 +5,7 @@
 Understand the basic capabilities for modeling integration flows.
 
 > ### Note:  
-> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP API Business Hub:
+> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP Business Accelerator Hub:
 > 
 > [Integration Flow Design Guidelines - Learn the Basics](https://api.sap.com/package/DesignGuidelinesModelingBasics/integrationflow)
 > 
@@ -59,7 +59,7 @@ Get started with integration flow design, starting with a set of 3 simple integr
 </td>
 <td valign="top">
 
- [Getting Started](getting-started-0a80259.md) 
+[Getting Started](getting-started-0a80259.md) 
 
 
 
@@ -86,7 +86,7 @@ Learn how to access \(and set\) headers and properties.
 </td>
 <td valign="top">
 
- [Access Headers and Properties](access-headers-and-properties-4a03fcd.md) 
+[Access Headers and Properties](access-headers-and-properties-4a03fcd.md) 
 
 
 
@@ -109,7 +109,7 @@ No predefined integration flows are available for this learning target.
 </td>
 <td valign="top">
 
- [Communication between Integration Flows](communication-between-integration-flows-ab5db7b.md) 
+[Communication between Integration Flows](communication-between-integration-flows-ab5db7b.md) 
 
 
 
@@ -125,14 +125,14 @@ Learn how to configure adapters.
 </td>
 <td valign="top">
 
- *Modeling Basics - Consume a Public HTTP Service With Query Parameters* \(covers the HTTP receiver adapter\)
+*Modeling Basics - Consume a Public HTTP Service With Query Parameters* \(covers the HTTP receiver adapter\)
 
 
 
 </td>
 <td valign="top">
 
- [Configure Adapters](configure-adapters-d0a6bc8.md) 
+[Configure Adapters](configure-adapters-d0a6bc8.md) 
 
 
 
@@ -157,7 +157,7 @@ No predefined integration flows are available for this learning target.
 </td>
 <td valign="top">
 
- [Content Transport](content-transport-cb7d2f1.md) 
+[Content Transport](content-transport-cb7d2f1.md) 
 
 
 
@@ -184,7 +184,7 @@ Learn how to implement different scenarios to decouple sender and integration fl
 </td>
 <td valign="top">
 
- [Decouple Processing](decouple-processing-3ef92e4.md) 
+[Decouple Processing](decouple-processing-3ef92e4.md) 
 
 
 
@@ -209,7 +209,7 @@ Learn how to retrieve only delta data from the source system using the current d
 </td>
 <td valign="top">
 
- [Delta Synchronization](delta-synchronization-012be7e.md) 
+[Delta Synchronization](delta-synchronization-012be7e.md) 
 
 
 
@@ -239,7 +239,7 @@ Learn how to handle exceptions with an exception subprocess.
 </td>
 <td valign="top">
 
- [Handle Exceptions](handle-exceptions-445a0c6.md) 
+[Handle Exceptions](handle-exceptions-445a0c6.md) 
 
 
 
@@ -262,7 +262,7 @@ You find a summary of the monitoring features and guidelines how to use them.
 </td>
 <td valign="top">
 
- [Message Monitoring](message-monitoring-8398448.md) 
+[Message Monitoring](message-monitoring-8398448.md) 
 
 
 
@@ -314,7 +314,7 @@ Message mapping:
 </td>
 <td valign="top">
 
- [Modify Content](modify-content-fc0d3c4.md) 
+[Modify Content](modify-content-fc0d3c4.md) 
 
 
 
@@ -339,7 +339,7 @@ Learn how to use steps that store the message on the tenant database.
 </td>
 <td valign="top">
 
- [Persistence](persistence-0c93d55.md) 
+[Persistence](persistence-0c93d55.md) 
 
 
 
@@ -370,7 +370,7 @@ Learn how to transfer files.
 </td>
 <td valign="top">
 
- [Transfer Files](transfer-files-9bda753.md) 
+[Transfer Files](transfer-files-9bda753.md) 
 
 
 

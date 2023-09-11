@@ -15,7 +15,9 @@ This section allows you to display and manage lock entries that are created \(in
 
 In certain situations \(for example, a runtime node crashes because of an out-of-memory error\), the message is retried after the node is restarted until the expiration time is reached. In this case, lock entries could remain in the in-progress repository and block subsequent message processing. You can't use the *Manage Locks* view to analyze the situation and manually delete lock entries, if necessary, to reprocess the message.
 
-If you choose the *Message Locks* tile under *Manage Locks* tile in the *Monitor* application, a list of locks is displayed. The following information is shown for each lock entry:
+If you choose the *Message Locks* tile under *Manage Locks* tile in the *Monitor* application, a list of locks is displayed. Be aware that only the most recent 500 lock entries are displayed.
+
+The following information is shown for each lock entry:
 
 ****
 
@@ -40,7 +42,7 @@ Description
 <tr>
 <td valign="top">
 
- *Component* 
+*Component* 
 
 
 
@@ -58,7 +60,7 @@ AS2, JMS, Mail, SFTP, and XI adapters can write locks.
 <tr>
 <td valign="top">
 
- *Source* 
+*Source* 
 
 
 
@@ -76,7 +78,7 @@ Example for SFTP: `user_sftp@ld1234.mycompany.corp`
 <tr>
 <td valign="top">
 
- *Entry* 
+*Entry* 
 
 
 
@@ -102,7 +104,7 @@ This is only possible for JMS locks.
 <tr>
 <td valign="top">
 
- *Created at* 
+*Created at* 
 
 
 
@@ -120,7 +122,7 @@ This is the time when a runtime node tried to process the message for the first 
 <tr>
 <td valign="top">
 
- *Expires at* 
+*Expires at* 
 
 
 
@@ -153,7 +155,7 @@ To remove the lock entry and retrigger message processing, select the entry and 
 **Related Information**  
 
 
-[https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/](https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/)
+[Cloud Integration – Configure Dead Letter Handling in JMS Adapter](https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/)
 
-[JMS Adapter](jms-adapter-0993f2a.md "You configure the JMS adapter to enable asynchronous messaging using message queues.")
+[JMS Adapter](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/jms-adapter?state=DRAFT&q=Message%20Locks)
 

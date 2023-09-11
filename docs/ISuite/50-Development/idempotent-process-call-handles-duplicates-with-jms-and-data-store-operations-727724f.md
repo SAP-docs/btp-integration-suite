@@ -10,7 +10,7 @@ To overcome this issue and to ensure correct numbers, the increment of the count
 
 The *Pattern Quality Of Service - Scenario 06* integration flow illustrates this scenario.
 
- ![](images/Integration_flow_06_JMS_and_Data_Store_Options_9c26ced.png) 
+![](images/Integration_flow_06_JMS_and_Data_Store_Options_9c26ced.png)
 
 Cloud Integration stores the counter in the local variable `QoS_Counter` using the *Write counter* write variables step.
 
@@ -43,14 +43,14 @@ The main integration process *Integration Process Scenario 06 with side effects:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Action
 
 
     
     </td>
     <td valign="top">
-
+    
     Create
 
 
@@ -59,14 +59,14 @@ The main integration process *Integration Process Scenario 06 with side effects:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     counter
 
 
@@ -75,14 +75,14 @@ The main integration process *Integration Process Scenario 06 with side effects:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Source Type
 
 
     
     </td>
     <td valign="top">
-
+    
     Local Variable
 
 
@@ -91,14 +91,14 @@ The main integration process *Integration Process Scenario 06 with side effects:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Source Value
 
 
     
     </td>
     <td valign="top">
-
+    
     QoS\_Counter
 
 
@@ -107,14 +107,14 @@ The main integration process *Integration Process Scenario 06 with side effects:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Default Value
 
 
     
     </td>
     <td valign="top">
-
+    
     0
 
 
@@ -149,14 +149,14 @@ The main integration process *Integration Process Scenario 06 with side effects:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Message ID
 
 
     
     </td>
     <td valign="top">
-
+    
     $\{header.SAP\_MessageProcessingLogID\}
 
 
@@ -165,14 +165,14 @@ The main integration process *Integration Process Scenario 06 with side effects:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Skip Process Call for Duplicates
 
 
     
     </td>
     <td valign="top">
-
+    
     Selected
 
 
@@ -428,15 +428,15 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
-    ***OWN***
+    
+    `OWN`
 
 
     
@@ -444,14 +444,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *User*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the user as specified when setting up inbound basic authentication.
 
 
@@ -460,14 +460,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Password*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the password as specified when setting up inbound basic authentication.
 
 

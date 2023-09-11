@@ -36,6 +36,8 @@ Nevertheless, the general sequence of steps to configure this authentication opt
 
 
 
+## Example
+
 Check out the following SAP Community blogs to find detailed instructions how to set up scenarios with a given receiver adapter and OAuth grant type:
 
 -   [SAP Cloud Integration – OAuth2 Client Credentials Support in OData V2 Adapter](https://blogs.sap.com/2018/07/31/sap-cloud-platform-integration-oauth2-client-credentials-support-in-odata-v2-adapter/)

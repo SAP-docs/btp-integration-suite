@@ -37,7 +37,7 @@ Create an RFC destination by adding necessary properties before using it in the 
     -   *jco.client.lang*
     -   *jco.client.sysnr*
     -   \(optional\) *jco.destination.pool\_capacity*
-    -   *jco.destination.auth\_type* \(while configuring for principal propagation the value for the property is "***jco.destination.auth\_type = PrincipalPropagation***"\)
+    -   *jco.destination.auth\_type* \(while configuring for principal propagation the value for the property is "`jco.destination.auth_type = PrincipalPropagation`"\)
 
     **WebSocket Connection**
 
@@ -48,11 +48,11 @@ Create an RFC destination by adding necessary properties before using it in the 
     -   *jco.destination.repository\_roundtrip\_optimization*
 
         > ### Note:  
-        > Set the value to ***0*** that helps you to minimizes the number of roundtrip calls made to the server
+        > Set the value to `0` that helps you to minimizes the number of roundtrip calls made to the server
 
 
     > ### Note:  
-    > -   If you’re using principal propagation for authentication, for the property *jco.destination.auth\_type*, specify the value as ***PrincipalPropagation***. Don’t specify any additional credentials in the destination.
+    > -   If you’re using principal propagation for authentication, for the property *jco.destination.auth\_type*, specify the value as `PrincipalPropagation`. Don’t specify any additional credentials in the destination.
     > 
     > -   *Location ID* should correspond to the cloud connector name found in the master instance.
 

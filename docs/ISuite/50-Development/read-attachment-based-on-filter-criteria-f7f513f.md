@@ -145,17 +145,17 @@ To test the scenario, perform the following steps:
 
 1.  Set up inbound *Basic* authentication for integration flow endpoints.
 
-    See: [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md) and [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right:
+    See: [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 
 2.  Deploy the integration flow *Attachment Handling - Read Attachment Based On Filter Criteria*.
 
 3.  In the Postman client, open the *HandlingAttachments* folder in the *ModelingBasics* collection. There, you find three requests that have been prepared to cover all filter options: *ReadAttachmentBasedOnFilter – FileName, ReadAttachmentBasedOnFilter – Suffix*, and *ReadAttachmentBasedOnFilter – ContentType*. For each request, the sample message contains a SOAP message with a list of product IDs and four attachments: Two XML files containing product details, one CSV file containing product details, and one text file containing supplier information. Run each of the requests.
 
-4.  For the request *ReadAttachmentBasedOnFilter – FileName*, the header *FilterType* is set to ***FileName*** and the header *FilterValue* is set to***HT-1081***. Run the request. You receive the product details of the product HT-1081 as response.
+4.  For the request *ReadAttachmentBasedOnFilter – FileName*, the header *FilterType* is set to `FileName` and the header *FilterValue* is set to`HT-1081`. Run the request. You receive the product details of the product HT-1081 as response.
 
-5.  For the *ReadAttachmentBasedOnFilter – Suffix* request, the header *FilterType* is set to ***Suffix*** and the header *FilterValue* is set to ***txt***. Run the request. You receive the supplier ID as response.
+5.  For the *ReadAttachmentBasedOnFilter – Suffix* request, the header *FilterType* is set to `Suffix` and the header *FilterValue* is set to `txt`. Run the request. You receive the supplier ID as response.
 
-6.  For the *ReadAttachmentBasedOnFilter – ContentType* request, the header *FilterType* is set to ***ContentType*** and the header *FilterValue* is set to ***csv***. Run the request. You receive the product details of the product HT-1082 as response.
+6.  For the *ReadAttachmentBasedOnFilter – ContentType* request, the header *FilterType* is set to `ContentType` and the header *FilterValue* is set to `csv`. Run the request. You receive the product details of the product HT-1082 as response.
 
     > ### Note:  
     > Optionally, you can use SoapUI to send a sample SOAP message with multiple attached files in XML, CSV, and text format to the integration flow end point. In this case, ensure that the request property Disable Multipart is set to false. Furthermore, define the http headers FilterType and FilterValue accordingly.

@@ -14,7 +14,7 @@ Set up secure HTTP connections to enable:
 
 
 > ### Note:  
-> Systems acting as clients for SAP Cloud Integration endpoints are required to use SNI. See SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> Systems acting as clients for SAP Cloud Integration endpoints are required to use SNI. See SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 **Related Information**  
 

@@ -36,7 +36,7 @@ GET
 </td>
 <td valign="top">
 
- `​/MessageProcessingLogs('{MessageGuid}')​/CustomHeaderProperties` 
+`​/MessageProcessingLogs('{MessageGuid}')​/CustomHeaderProperties` 
 
 
 

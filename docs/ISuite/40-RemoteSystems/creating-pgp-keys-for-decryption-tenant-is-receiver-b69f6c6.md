@@ -41,7 +41,7 @@ Deploy the **PGP Secret Keyring** on the tenant.
 
 [Creating Tenant-Specific File Directories](creating-tenant-specific-file-directories-8cd3232.md "A PGP Secret Keyring and a PGP Public Keyring have to be maintained for each tenant that uses OpenPGP. The GPA tool cannot maintain several PGP Secret or Public Keyrings at the same time. Therefore, you have to create a separate directory for each tenant, where you have to configure GPA and the launching of GPA separately (otherwise, keys from different tenants will be stored in the same keyring).")
 
-[Starting the GPA Tool](starting-the-gpa-tool-a3e8e13.md "")
+[Starting the GPA Tool](starting-the-gpa-tool-a3e8e13.md "Start the GPA tool to manage keys.")
 
 [Creating a Key Pair](creating-a-key-pair-bb416c5.md "")
 

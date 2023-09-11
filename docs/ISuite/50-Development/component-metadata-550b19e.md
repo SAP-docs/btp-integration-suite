@@ -2317,7 +2317,7 @@ Child Element
 </td>
 <td valign="top">
 
-If you assign *AttributeBehavior* as ***SecureAlias*** for a particular field, then the field refers to alias of security parameter artifact.
+If you assign *AttributeBehavior* as `SecureAlias` for a particular field, then the field refers to alias of security parameter artifact.
 
 
 

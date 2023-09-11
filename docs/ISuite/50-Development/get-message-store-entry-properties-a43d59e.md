@@ -43,7 +43,7 @@ GET
 </td>
 <td valign="top">
 
- `​/MessageProcessingLogs('{MessageGuid}')​/MessageStoreEntries` 
+`​/MessageProcessingLogs('{MessageGuid}')​/MessageStoreEntries` 
 
 
 
@@ -66,7 +66,7 @@ GET
 </td>
 <td valign="top">
 
- `​/MessageStoreEntries('{MessageStoreEntryId}')` 
+`​/MessageStoreEntries('{MessageStoreEntryId}')` 
 
 
 

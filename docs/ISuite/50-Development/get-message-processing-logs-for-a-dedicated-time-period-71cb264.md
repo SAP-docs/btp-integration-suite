@@ -36,7 +36,7 @@ GET
 </td>
 <td valign="top">
 
- `/MessageProcessingLogs?$inlinecount=allpages&$filter=Status eq 'COMPLETED' and LogStart gt datetime'{beginning of time period}' and LogEnd lt datetime'{end of time period}'` 
+`/MessageProcessingLogs?$inlinecount=allpages&$filter=Status eq 'COMPLETED' and LogStart gt datetime'{beginning of time period}' and LogEnd lt datetime'{end of time period}'` 
 
 
 

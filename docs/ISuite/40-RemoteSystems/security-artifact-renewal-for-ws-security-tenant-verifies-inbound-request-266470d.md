@@ -8,7 +8,7 @@ The verifier \(specified in the integration flow as using the WS-Security standa
 
 The following figure illustrates the communication path for this use case.
 
- ![](images/SAP_HCI_Security_Renewal_-_WS_Security_Inbound_Request_Verify_999b032.png) 
+![](images/SAP_HCI_Security_Renewal_-_WS_Security_Inbound_Request_Verify_999b032.png)
 
 1.  Sender administrator: Creates new key pair/certificate.
 2.  Sender administrator: Provides the tenant administrator with the new certificate.

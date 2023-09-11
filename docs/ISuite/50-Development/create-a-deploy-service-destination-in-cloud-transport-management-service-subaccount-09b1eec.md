@@ -2,7 +2,7 @@
 
 # Create a Deploy Service Destination in Cloud Transport Management Service Subaccount
 
-Create a destination ***TMSDeploy*** in Transport subaccount for the deploy service. The deploy service calls the API Management in the destination subaccount to transport the API content into the API Management workspace.
+Create a destination `TMSDeploy` in Transport subaccount for the deploy service. The deploy service calls the API Management in the destination subaccount to transport the API content into the API Management workspace.
 
 
 
@@ -64,15 +64,15 @@ Import request is delegated to deploy-service using destination D4.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
-    Enter a unique name for this destination, for example, ***TMSDeploy***.
+    
+    Enter a unique name for this destination, for example, `TMSDeploy`.
 
 
     
@@ -80,15 +80,15 @@ Import request is delegated to deploy-service using destination D4.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Type
 
 
     
     </td>
     <td valign="top">
-
-    Enter ***HTTP*** as the supported type.
+    
+    Enter `HTTP` as the supported type.
 
 
     
@@ -96,14 +96,14 @@ Import request is delegated to deploy-service using destination D4.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Description
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a brief description stating the purpose of creating a new destination in the *Description* field.
 
 
@@ -112,22 +112,22 @@ Import request is delegated to deploy-service using destination D4.
     </tr>
     <tr>
     <td valign="top">
-
+    
     URL
 
 
     
     </td>
     <td valign="top">
+    
+    Enter `https://deploy-service.cfapps.<default-domain>/slprot/<myorg>/<myspace>/slp` in the URL field.
 
-    Enter ***https://deploy-service.cfapps.<default-domain\>/slprot/<myorg\>/<myspace\>/slp*** in the URL field.
-
-    For ***<myorg\>*** details navigate to your subaccount in BTP cockpit and choose *Overview* on the left pane. Choose *Cloud Foundry Environment* on the *Overview* page and copy the *Org Name* that appears in this section.
+    For `<myorg>` details navigate to your subaccount in BTP cockpit and choose *Overview* on the left pane. Choose *Cloud Foundry Environment* on the *Overview* page and copy the *Org Name* that appears in this section.
 
     > ### Note:  
     > If your Org Name has spaces, add escape characters in place of spaces, for example, SAP BTP should be written as SAP%20BTP.
 
-    For ***<myspace\>*** details navigate to your subaccount in BTP cockpit and choose *Overview* on the left pane. Choose *Cloud Foundry Environment* on the *Overview* page and copy the *Space name* that appears in this section. This is the space inside the subaccount that has the Cloud Transport Management instance subscribed.
+    For `<myspace>` details navigate to your subaccount in BTP cockpit and choose *Overview* on the left pane. Choose *Cloud Foundry Environment* on the *Overview* page and copy the *Space name* that appears in this section. This is the space inside the subaccount that has the Cloud Transport Management instance subscribed.
 
 
     
@@ -135,14 +135,14 @@ Import request is delegated to deploy-service using destination D4.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Proxy Type
 
 
     
     </td>
     <td valign="top">
-
+    
     Internet
 
 
@@ -151,15 +151,15 @@ Import request is delegated to deploy-service using destination D4.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Authentication
 
 
     
     </td>
     <td valign="top">
-
-    Select the authentication type as ***BasicAuthentication***.
+    
+    Select the authentication type as `BasicAuthentication`.
 
 
     
@@ -167,14 +167,14 @@ Import request is delegated to deploy-service using destination D4.
     </tr>
     <tr>
     <td valign="top">
-
+    
     User ID
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the ID of the technical user that is used for the deployment.
 
 
@@ -183,14 +183,14 @@ Import request is delegated to deploy-service using destination D4.
     </tr>
     <tr>
     <td valign="top">
-
+    
     Password
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the password of the technical user.
 
 
@@ -201,7 +201,7 @@ Import request is delegated to deploy-service using destination D4.
     
 5.  Choose *Next*.
 
-    Choose *Check Connection* to verify whether you've added the destination correctly. Once you perform a check connection, the following pop-up message appears: ***Connection to "TMSDeploy" is established.***
+    Choose *Check Connection* to verify whether you've added the destination correctly. Once you perform a check connection, the following pop-up message appears: `Connection to "TMSDeploy" is established.`
 
 
 

@@ -40,7 +40,13 @@ You’ve created the required API on the *APIs* tab. For more information about 
     -   1500000 shows as 1.5M and 1000000000 shows as 1G
 
 4.  To create a product, choose *Create*.
-5.  Enter a name, title, and description for the product.
+5.  For the product, enter a *Name* and *Title*, provide an introductory text in the *Short Text* field, and a brief description in the *Description* field.
+
+    > ### Note:  
+    > If you publish a product with a short introductory text, the short text appears on the corresponding API business hub enterprise pages. It appears on the product tiles on the API business hub enterprise landing page, and on the product details page. It also appears on the search result page for the searched products.
+    > 
+    > If you leave the short text field empty, the product description is displayed instead of the short text in the product tile.
+
 6.  Specify the quota limits for this product.
 
     > ### Note:  
@@ -197,6 +203,10 @@ You’ve created the required API on the *APIs* tab. For more information about 
     -   *Save as Draft* - The resulting state of the product is Draft, and you can publish the product anytime. The product cannot be used for creating applications when it is in the Draft state.
 
     -   *Publish* - The resulting state of the product is Published, and is available for creating applications. You can edit the published product anytime.
+
+        > ### Note:  
+        > When you’re selectively publishing the resources of an API proxy associated with a product, please make sure that the API resources shouldn’t contain any special characters. For example, you can use “/Employee” and not “/Employee\('\{test\}'\)” as it contains special characters.
+
 
 16. If you want to delete a product, select the required product from the catalog and choose *Delete*. if it is being used in an application.
 17. If you want to edit a product, select the required product, in the details view select *Edit*.

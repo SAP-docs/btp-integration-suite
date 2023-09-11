@@ -53,42 +53,6 @@ Description
 <tr>
 <td valign="top">
 
-User Credentials
-
-
-
-</td>
-<td valign="top">
-
-Represents a *User Credentials* artifact \(see [Deploying a User Credentials Artifact](deploying-a-user-credentials-artifact-6912d63.md)\).
-
-To set up outbound connections using basic authentication, you need to deploy a *User Credentials* artifact. The artifact contains a user name and password and, if applicable, other parameters for the user associated with the outbound call.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OAuth2 Client Credentials
-
-
-
-</td>
-<td valign="top">
-
-Represents an *OAuth2 Client Credentials* artifact \(see [Deploying an OAuth2 Client Credentials Artifact](deploying-an-oauth2-client-credentials-artifact-801b106.md)\).
-
-When an OAuth 2.0 client credentials grant is implemented, the client gets access to the protected resources in two steps: After presenting a set of client credentials, the client fetches an access token from the token service. In a subsequent step, the client uses the access token to get access to the protected resources.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Certificate
 
 
@@ -205,6 +169,42 @@ This keystore contains old \(expired\) keys.
 <tr>
 <td valign="top">
 
+User Credentials
+
+
+
+</td>
+<td valign="top">
+
+Represents a *User Credentials* artifact \(see [Deploying a User Credentials Artifact](deploying-a-user-credentials-artifact-6912d63.md)\).
+
+To set up outbound connections using basic authentication, you need to deploy a *User Credentials* artifact. The artifact contains a user name and password and, if applicable, other parameters for the user associated with the outbound call.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OAuth2 Client Credentials
+
+
+
+</td>
+<td valign="top">
+
+Represents an *OAuth2 Client Credentials* artifact \(see [Deploying an OAuth2 Client Credentials Artifact](deploying-an-oauth2-client-credentials-artifact-801b106.md)\).
+
+When an OAuth 2.0 client credentials grant is implemented, the client gets access to the protected resources in two steps: After presenting a set of client credentials, the client fetches an access token from the token service. In a subsequent step, the client uses the access token to get access to the protected resources.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Certificate-to-User-Mapping \(Neo environment\)
 
 
@@ -245,6 +245,42 @@ Represents a *Certificate-to-User-Mapping* artifact required for inbound calls b
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Acces Policies
+
+
+
+</td>
+<td valign="top">
+
+Access policies allow you to restrict the access to integration artifacts and their associated data.
+
+See: [Managing Access Policies](managing-access-policies-318d107.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Artifact References
+
+
+
+</td>
+<td valign="top">
+
+Artifact references define for which artifacts \(for example, integration flows\) an access policy applies.
+
+See: [Managing Access Policies](managing-access-policies-318d107.md)
+
+
+
+</td>
+</tr>
 </table>
 
 For general information about query options, see [Query Options](query-options-99f4b70.md).
@@ -264,7 +300,7 @@ For general information about query options, see [Query Options](query-options-9
 
 ## Example Requests
 
-You find various example requests on SAP API Business Hub at [Security Content](https://api.sap.com/api/SecurityContent).
+You find various example requests on SAP Business Accelerator Hub at [Security Content](https://api.sap.com/api/SecurityContent).
 
 For additional example requests, see [Security Content Example Requests](security-content-example-requests-acb89ef.md).
 
@@ -276,18 +312,18 @@ To trigger the modifying actions \(POST, PUT, and DELETE\), you need to fetch a 
 
 
 
-On SAP API Business Hub, you can test API calls against a sandbox tenant or against a custom tenant \(to be configured under *API Environment*\). If you want to perform an API call against your custom tenant using an HTTP client such like Postman, make sure that the request URL is composed in the following way:
+On SAP Business Accelerator Hub, you can test API calls against a sandbox tenant or against a custom tenant \(to be configured under *API Environment*\). If you want to perform an API call against your custom tenant using an HTTP client such like Postman, make sure that the request URL is composed in the following way:
 
 `https://<host address>/api/v1/<relative resource path>`
 
 The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
 
-You can find the relative resource path for each operation on SAP API Business Hub.
+You can find the relative resource path for each operation on SAP Business Accelerator Hub.
 
 **Related Information**  
 
 
-[Managing Security](managing-security-6e7c44c.md "The Manage Security section allows you to manage various kinds of security material (for example, user credentials, keystore entries), and to perform outbound connectivity tests.")
+[Manage Security](manage-security-6e7c44c.md "The Manage Security section allows you to manage various kinds of security material (for example, user credentials, keystore entries), and to perform outbound connectivity tests.")
 
 [Concepts of Secure Communication](../40-RemoteSystems/concepts-of-secure-communication-3545808.md "There are several options to protect the message exchange. You can secure the communication on transport level by selecting the HTTPS or SFTP protocol and installing specific authentication methods. In addition to that, you can set up methods to encrypt and decrypt the content of the message and to digitally sign and verify the message.")
 

@@ -8,7 +8,7 @@ The XML to EDI converter transforms a XML message in XML format to EDI format.
 
 ## Context
 
-Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 format.
+Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 format.
 
 
 
@@ -16,12 +16,12 @@ Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 fo
 
 ## Procedure
 
-1.  In the graphical editor of integration flow, choose the *XML to EDI Converter* element..
+1.  In the graphical editor of integration flow, choose the *XML to EDI Converter* element.
 
 2.  Define the parameters to convert the XML data format to EDI data format.
 
     > ### Note:  
-    > Use *EDIFACT* tab to convert XML file to ODETTE document.
+    > Use *EDIFACT* tab to convert XML file to ODETTE document. XML to EDI converter version 1.2 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
 
 
     <table>
@@ -50,21 +50,21 @@ Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     General
 
 
     
     </td>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a name for the flow step.
 
 
@@ -73,21 +73,21 @@ Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 fo
     </tr>
     <tr>
     <td valign="top" rowspan="5">
-
+    
     EDIFACT
 
 
     
     </td>
     <td valign="top">
-
+    
     Source Encoding
 
 
     
     </td>
     <td valign="top">
-
+    
     Select encoding format for the incoming payload.
 
 
@@ -96,14 +96,14 @@ Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     EDI Schema Definition
 
 
     
     </td>
     <td valign="top">
-
+    
     Select the source of schema definition.
 
 
@@ -112,26 +112,26 @@ Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     Schemas
 
 
     
     </td>
     <td valign="top">
-
-    If you select ***Integration Flow*** as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the conversion will take place.
+    
+    If you select `Integration Flow` as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the conversion will take place.
 
     > ### Note:  
     > -   You can add XSD files to the integration flow. For more details, please refer to the topic **Validating Message Payload against XML Schema**, in developer's guide.
     > 
     > -   The file name of the xml schema for **EDIFACT/ODETTE** should have the following format:
     > 
-    >     -   EDIFACT: ***UN-EDIFACT\_ORDERS\_D96A.xsd***
+    >     -   EDIFACT: `UN-EDIFACT_ORDERS_D96A.xsd`
     > 
-    >     -   ODETTE: ***ODETTE\_ORDERR\_2.xsd***
+    >     -   ODETTE: `ODETTE_ORDERR_2.xsd`
     > 
-    >     -   ODETTE EDIFACT: ***UN-EDIFACT\_ORDERS\_D96A\_A18051.xsd***
+    >     -   ODETTE EDIFACT: `UN-EDIFACT_ORDERS_D96A_A18051.xsd`
     > 
     > 
     >     Consider the EDIFACT filename as a sample to understand its constituents. The file name comprises of following parts separated by '\_':
@@ -146,20 +146,20 @@ Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     HeaderName
 
 
     
     </td>
     <td valign="top">
-
+    
     If you select Header as *EDI Schema Definition*, then you can see the field *HeaderName*, in *Properties* view. Enter a valid header name for the field.
 
     > ### Note:  
     > This header name is fetched from Camel header. The header is added in script element. This script element is added before the converter element. You can add value for this header in the script element.
     > 
-    > For example, you can add the value, ***/xsd/UN-EDIFACT\_ORDERS\_D96A.xsd***.
+    > For example, you can add the value, `/xsd/UN-EDIFACT_ORDERS_D96A.xsd`.
 
 
     
@@ -167,21 +167,21 @@ Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     Use Custom Separators
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option if you want to specify which separators are to be used in the converted message. You can select the characters available in the dropdown list for each separator.
 
     > ### Note:  
     > You can also manually specify the custom separator.
     > 
-    > -   Enter the hexadecimal value for the separator you want to use in the respective field. For example, enter ***\#x2b*** to use *\+* as the separator.
-    > -   Enter the header value to fetch the sepatator from header. For example, ***$\{header.HEADER\_NAME\}***
+    > -   Enter the hexadecimal value for the separator you want to use in the respective field. For example, enter `#x2b` to use *\+* as the separator.
+    > -   Enter the header value to fetch the sepatator from header. For example, `${header.HEADER_NAME}`
 
 
     
@@ -189,21 +189,21 @@ Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 fo
     </tr>
     <tr>
     <td valign="top" rowspan="4">
-
+    
     X12
 
 
     
     </td>
     <td valign="top">
-
+    
     Source Encoding
 
 
     
     </td>
     <td valign="top">
-
+    
     Select encoding format for the incoming payload.
 
 
@@ -212,14 +212,14 @@ Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     EDI Schema Definition
 
 
     
     </td>
     <td valign="top">
-
+    
     If you select Integration Flow as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the conversion will take place.
 
     > ### Note:  
@@ -238,20 +238,20 @@ Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     Header Name
 
 
     
     </td>
     <td valign="top">
-
+    
     If you select Header as *EDI Schema Definition*, then you can see the field *HeaderName*, in *Properties* view. Enter a valid header name for the field.
 
     > ### Note:  
     > This header name is fetched from camel header. The header is added in script element. This script element is added before converter element. You can add value for this header in the script element.
     > 
-    > For example, you can add the value, ***/xsd/ASC-X12\_810\_004010.xsd***.
+    > For example, you can add the value, `/xsd/ASC-X12_810_004010.xsd`.
 
 
     
@@ -259,21 +259,21 @@ Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 fo
     </tr>
     <tr>
     <td valign="top">
-
+    
     Use Custom Separators
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option if you want to specify which separators are to be used in the converted message. You can select the characters available in the dropdown list for each separator.
 
     > ### Note:  
     > You can also manually specify the custom separator.
     > 
-    > -   Enter the hexadecimal value for the separator you want to use in the respective field. For example, enter ***\#x2b*** to use *\+* as the separator.
-    > -   Enter the header value to fetch the sepatator from header. For example, ***$\{header.HEADER\_NAME\}***
+    > -   Enter the hexadecimal value for the separator you want to use in the respective field. For example, enter `#x2b` to use *\+* as the separator.
+    > -   Enter the header value to fetch the sepatator from header. For example, `${header.HEADER_NAME}`
 
 
     
@@ -303,17 +303,17 @@ Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 fo
     > 
     > -   The file name of the XSD schema for **EDIFACT/ODETTE** should have the following format:
     > 
-    >     -   EDIFACT: ***UN-EDIFACT\_ORDERS\_D96A.xsd***
+    >     -   EDIFACT: `UN-EDIFACT_ORDERS_D96A.xsd`
     > 
-    >     -   ODETTE: ***ODETTE\_ORDERR\_2.xsd***
+    >     -   ODETTE: `ODETTE_ORDERR_2.xsd`
     > 
-    >     -   ODETTE EDIFACT: ***UN-EDIFACT\_ORDERS\_D96A\_A18051.xsd***
+    >     -   ODETTE EDIFACT: `UN-EDIFACT_ORDERS_D96A_A18051.xsd`
     > 
     > 
     > -   During runtime only XSD’s from Integration Advisor \(IA\) are supported.
 
     > ### Note:  
-    > ***SAP\_EDI\_Document\_Number*** header contains document number for the single incoming EDI file.
+    > `SAP_EDI_Document_Number` header contains document number for the single incoming EDI file.
 
     -   The following example shows the transformation from *XML to EDI* format of EDIFACT message.
 
@@ -561,6 +561,8 @@ Use the converter to convert XML message either to EDIFACT,ODETTE, or ASC-X12 fo
 
 
 
+
+## Example
 
 **EANCOM Document Standard**
 

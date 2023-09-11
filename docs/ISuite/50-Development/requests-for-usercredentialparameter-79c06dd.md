@@ -41,7 +41,7 @@ PUT
 </td>
 <td valign="top">
 
- `/UserCredentialParameters` 
+`/UserCredentialParameters` 
 
 
 
@@ -133,7 +133,7 @@ GET
 </td>
 <td valign="top">
 
- `/UserCredentialParameters` 
+`/UserCredentialParameters` 
 
 
 

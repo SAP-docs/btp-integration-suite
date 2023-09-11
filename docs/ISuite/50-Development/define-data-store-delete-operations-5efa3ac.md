@@ -65,14 +65,14 @@ A data store operations step has to be triggered explicitly, for example, by a T
     </tr>
     <tr>
     <td valign="top">
-
-     *Data Store Name* 
+    
+    *Data Store Name* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies the name of the data store \(no white spaces\).
 
     The maximum length allowed for the data store name is 40 characters. If you enter a longer string, a validation error is raised. Note that this length restriction applies to the value that is used for this parameter at runtime. Therefore, if you configure this parameter dynamically, make sure that the expected header or property value does not exceed this length restriction. Otherwise, a runtime error will be raised.
@@ -83,14 +83,14 @@ A data store operations step has to be triggered explicitly, for example, by a T
     </tr>
     <tr>
     <td valign="top">
-
-     *Visibility* 
+    
+    *Visibility* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Defines whether the data store is shared by all integration flows \(deployed on the tenant\) or only by one specific integration flow.
 
     -   *Global*: Data store is shared across all integration flows deployed on the tenant.
@@ -106,14 +106,14 @@ A data store operations step has to be triggered explicitly, for example, by a T
     </tr>
     <tr>
     <td valign="top">
-
-     *Entry ID* 
+    
+    *Entry ID* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify an entry ID that is stored together with the message content.
 
     Note that the delete operation can’t be used to delete whole data stores, but single entries only.
@@ -165,6 +165,8 @@ A data store operations step has to be triggered explicitly, for example, by a T
 
 
 
+
+## Example
 
 You can also delete multiple data store entries at once using the *Delete* step.
 

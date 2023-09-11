@@ -57,30 +57,14 @@ Setting
 <tr>
 <td valign="top">
 
- *Expression Type* 
+*Expression Type* 
 
 
 
 </td>
 <td valign="top">
 
- ***XPath*** 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *XPath Expression* 
-
-
-
-</td>
-<td valign="top">
-
- ***//Item*** 
+`XPath` 
 
 
 
@@ -89,7 +73,23 @@ Setting
 <tr>
 <td valign="top">
 
- *Parallel Processing* 
+*XPath Expression* 
+
+
+
+</td>
+<td valign="top">
+
+`//Item` 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Parallel Processing* 
 
 
 
@@ -140,30 +140,14 @@ Setting
 <tr>
 <td valign="top">
 
- *Name* 
+*Name* 
 
 
 
 </td>
 <td valign="top">
 
- ***SplitMessageID*** 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Type* 
-
-
-
-</td>
-<td valign="top">
-
- ***Expression*** 
+`SplitMessageID` 
 
 
 
@@ -172,14 +156,14 @@ Setting
 <tr>
 <td valign="top">
 
- *Data Type* 
+*Type* 
 
 
 
 </td>
 <td valign="top">
 
- ***java.lang.String*** 
+`Expression` 
 
 
 
@@ -188,14 +172,30 @@ Setting
 <tr>
 <td valign="top">
 
- *Value* 
+*Data Type* 
 
 
 
 </td>
 <td valign="top">
 
- ***$\{header.SapMessageIdEx\}\_$\{header.CamelSplitIndex\}*** 
+`java.lang.String` 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Value* 
+
+
+
+</td>
+<td valign="top">
+
+`${header.SapMessageIdEx}_${header.CamelSplitIndex}` 
 
 
 
@@ -228,14 +228,14 @@ Setting
 <tr>
 <td valign="top">
 
- *Source Message ID* 
+*Source Message ID* 
 
 
 
 </td>
 <td valign="top">
 
-***$\{property.SplitMessageID\}***
+`${property.SplitMessageID}`
 
 The source message ID is defined using the property defined in the previous Content Modifier.
 
@@ -246,14 +246,14 @@ The source message ID is defined using the property defined in the previous Cont
 <tr>
 <td valign="top">
 
- *Target Header Name* 
+*Target Header Name* 
 
 
 
 </td>
 <td valign="top">
 
-***SapMessageIdEx***
+`SapMessageIdEx`
 
 For each split item, the header `SapMessageIdEx` is overwritten with a newly generated ID.
 
@@ -264,14 +264,14 @@ For each split item, the header `SapMessageIdEx` is overwritten with a newly gen
 <tr>
 <td valign="top">
 
- *Context* 
+*Context* 
 
 
 
 </td>
 <td valign="top">
 
-***IDMapperContext\_01***
+`IDMapperContext_01`
 
 Background: You define a unique context for each *ID Mapping* step within your integration flow. For any further *ID Mapping* step, you simply increment the number in the context name. In this scenario, there's 1 single *ID Mapping* step anyway. Therefore, we could have omitted the number without any side effect on the scenario.
 
@@ -282,7 +282,7 @@ Background: You define a unique context for each *ID Mapping* step within your i
 <tr>
 <td valign="top">
 
- *Visibility* 
+*Visibility* 
 
 
 
@@ -300,14 +300,14 @@ The generated IDs are unique within the same integration flow model. If your ID 
 <tr>
 <td valign="top">
 
- *Expiration Period \(in d\)* 
+*Expiration Period \(in d\)* 
 
 
 
 </td>
 <td valign="top">
 
- ***30*** 
+`30` 
 
 
 
@@ -315,7 +315,7 @@ The generated IDs are unique within the same integration flow model. If your ID 
 </tr>
 </table>
 
-At receiver side, the scenario uses the SOAP \(SAP RM\) receiver adapter. On the *Processing* tab of the adapter, the *SAP RM Message ID Determination* property is set to ***Reuse***. This setting ensures that Cloud Integration uses the value of header `SapMessageIdEx` to set the SAP RM Message ID that is then passed to the receiver system. See [Configure the SOAP \(SAP RM\) Receiver Adapter](configure-the-soap-sap-rm-receiver-adapter-8366495.md).
+At receiver side, the scenario uses the SOAP \(SAP RM\) receiver adapter. On the *Processing* tab of the adapter, the *SAP RM Message ID Determination* property is set to `Reuse`. This setting ensures that Cloud Integration uses the value of header `SapMessageIdEx` to set the SAP RM Message ID that is then passed to the receiver system. See [Configure the SOAP \(SAP RM\) Receiver Adapter](configure-the-soap-sap-rm-receiver-adapter-8366495.md).
 
 To test the scenario, perform the following steps:
 
@@ -349,15 +349,15 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
-    ***OWN***
+    
+    `OWN`
 
 
     
@@ -365,14 +365,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *User*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the user as specified when setting up inbound basic authentication.
 
 
@@ -381,14 +381,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Password*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the password as specified when setting up inbound basic authentication.
 
 

@@ -42,7 +42,7 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
 > ### Caution:  
 > Note the following restrictions when managing keystore entries:
 > 
-> The maximum size of a keystore is 6 MB \(when using the Cloud Foundry environment\).
+> The maximum size of a keystore is 6 MB.
 > 
 > -   The 6 MB limit corresponds to around 6000 X.509 certificates.
 > 
@@ -87,14 +87,14 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     </tr>
     <tr>
     <td valign="top">
-
-     *Alias* 
+    
+    *Alias* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Uniquely identifies the keystore entry.
 
     A keystore entry can be either be owned by the tenant administrator or by SAP.
@@ -107,14 +107,14 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     </tr>
     <tr>
     <td valign="top">
-
-     *Type* 
+    
+    *Type* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Indicates whether the entry is a *Certificate* \(X.509 certificate\) or a *Key Pair* \(with public and private key and an X.509 certificate chain\).
 
     -   Key Pair
@@ -132,14 +132,14 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     </tr>
     <tr>
     <td valign="top">
-
-     *Valid Until* 
+    
+    *Valid Until* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Indicates the expiration date.
 
     If keys and certificates have expired, the date is highlighted in red.
@@ -150,14 +150,14 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     </tr>
     <tr>
     <td valign="top">
-
-     *Last Modified At* 
+    
+    *Last Modified At* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Indicates the date and time the entry was last modified.
 
 
@@ -166,14 +166,14 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     </tr>
     <tr>
     <td valign="top">
-
-     *Subject DN* 
+    
+    *Subject DN* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Indicates the Subject distinguished name \(DN\) which entails information about the owner of the certificate such as the common name of the certificate owner \(CN\), the organization \(O\), or the country or region \(C\).
 
 
@@ -182,14 +182,14 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     </tr>
     <tr>
     <td valign="top">
-
-     *Issuer DN* 
+    
+    *Issuer DN* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Indicates the Issuer distinguished name \(DN\) which entails information about the issuer of the certificate such as common name of the certificate issuer \(CN\), the organization \(O\), or the country or region \(C\).
 
 
@@ -198,14 +198,14 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     </tr>
     <tr>
     <td valign="top">
-
-     *Actions* 
+    
+    *Actions* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose the <span class="SAP-icons"></span> \(Actions\) button for a key pair or certificate to perform an action. The available actions depend on the type of the keystore entry and whether it is owned by SAP.
 
     -   *Rename*
@@ -263,28 +263,40 @@ See also[Creating a Key Pair/SSH Key Pair](creating-a-key-pair-ssh-key-pair-b8a8
 <tr>
 <td valign="top">
 
-*Upload*
+*Add*
 
 
 
 </td>
 <td valign="top">
 
-To upload a keystore, certificate, key pair or SSH key, select *Add*.
+To upload an entry to the keystore or to add a keystore, select *Add*.
 
-You can upload or add individual entries to an existing keystore. In the latter case, you can overwrite existing entries or keep them.
+You can upload individual entries to an existing keystore. In the latter case, you can overwrite existing entries or keep them.
 
 SAP-owned keystore entries are indicated by a lock icon. You can't change or delete them.
 
-See also:
+There are the following options:
 
--   [Importing a Certificate](importing-a-certificate-03cf78a.md)
+-   *Add* \> *Certificate*
 
--   [Importing a Key Pair](importing-a-key-pair-083911e.md)
+    See: [Uploading a Certificate](uploading-a-certificate-03cf78a.md)
 
--   [Importing a Keystore](importing-a-keystore-0db193a.md)
+-   *Add* \> *Key Pair*
 
--   [Importing an SSH Key](importing-an-ssh-key-8bf9ae4.md)
+    See: [Uploading a Key Pair](uploading-a-key-pair-083911e.md)
+
+-   *Add* \> *SSH Key*
+
+    See: [Uploading an SSH Key](uploading-an-ssh-key-8bf9ae4.md)
+
+-   *Add* \> *RSA Key*
+
+    See: [Uploading an RSA Key](uploading-an-rsa-key-b8ba4a3.md)
+
+-   *Add* \> *Keystore*
+
+    See: [Uploading a Keystore](uploading-a-keystore-0db193a.md)
 
 
 
@@ -399,6 +411,8 @@ To update an artifact, see:
 
 -   [Updating a Key Pair with a Signing Response](updating-a-key-pair-with-a-signing-response-4242f01.md)
 
+-   [Updating an RSA Key](updating-an-rsa-key-ee6bf92.md)
+
 -   [Updating a Certificate](updating-a-certificate-1fa04fa.md)
 
 -   [Changing the Alias of a Keystore Entry](changing-the-alias-of-a-keystore-entry-72b0f88.md)
@@ -429,5 +443,5 @@ To update an artifact, see:
 
 [Creating a Key Pair/SSH Key Pair](creating-a-key-pair-ssh-key-pair-b8a8601.md "Create a key pair or a Secure Shell (SSH) key pair.")
 
-[https://blogs.sap.com/2017/06/19/cloud-integration-keystore-monitor-now-available-for-tenant-administrator/](https://blogs.sap.com/2017/06/19/cloud-integration-keystore-monitor-now-available-for-tenant-administrator/)
+[Cloud Integration – Keystore Monitor now available for Tenant Administrator](https://blogs.sap.com/2017/06/19/cloud-integration-keystore-monitor-now-available-for-tenant-administrator/)
 

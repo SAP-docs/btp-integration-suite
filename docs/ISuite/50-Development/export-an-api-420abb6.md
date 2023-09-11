@@ -35,7 +35,7 @@ To export an API proxy, proceed as follows:
 
 4.  Alternatively, you can open the required API, choose the breadcrumb and then select the option *Export*.
 
-5.  A .zip file is exported with contents as described in the [API Proxy Structure](api-proxy-structure-4dfd54a.md). All the content related to the API documentation is available in Swagger\_json file. ***The current state of the API, will also be available in the exported zip***.
+5.  A .zip file is exported with contents as described in the [API Proxy Structure](api-proxy-structure-4dfd54a.md). All the content related to the API documentation is available in Swagger\_json file. `The current state of the API, will also be available in the exported zip`.
 
     > ### Note:  
     > The API state and related metadata are not exported.

@@ -1,6 +1,6 @@
 <!-- loiodf4f777329c744f3a054bddc6011ab6b -->
 
-# Creating an Application with API Business Hub Enterprise Administrator Role \[New Design\]
+# Creating an Application with API business hub enterprise Administrator Role \[New Design\]
 
 With the API business hub enterprise administrator role you can create an application on behalf of a user \(application developer\), and view the existing application details, and its associated products, custom attributes, and analytics data.
 
@@ -10,7 +10,7 @@ With the API business hub enterprise administrator role you can create an applic
 
 ## Prerequisites
 
-You shoul have the *AuthGroup.API.Admin* role assigned to you. For more information on roles, see [Assign User Roles](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:.
+You shoul have the *AuthGroup.API.Admin* role assigned to you. For more information on roles, see [Assign User Roles in API Management](../20-Working_with_SAP_Integration_Suite_Home/assign-user-roles-in-api-management-911ca5a.md).
 
 
 

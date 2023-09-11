@@ -5,9 +5,11 @@
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -81,7 +83,7 @@ Description
 <tr>
 <td valign="top">
 
- *Authorization* 
+*Authorization* 
 
 
 
@@ -137,7 +139,7 @@ The client certificate that you're using for authorization. Choose *Add* to add 
 <tr>
 <td valign="top">
 
- *EDMX* 
+*EDMX* 
 
 
 
@@ -153,7 +155,7 @@ Select the EDMX file that contains the OData API definition.
 <tr>
 <td valign="top">
 
- *Operation* 
+*Operation* 
 
 
 
@@ -169,7 +171,7 @@ Select the operation that you want to perform on the selected *Entity Set* in th
 <tr>
 <td valign="top">
 
- *Entity Set* 
+*Entity Set* 
 
 
 
@@ -187,7 +189,7 @@ Entity set in the OData API that you want to perform the operation on.
 > ### Note:  
 > The adapter doesn't support empty response payloads. If used, the invoking of the integration flow results in an error.
 > 
-> For more information on limitations in the OData sender adapter, refer the note [2919230](https://launchpad.support.sap.com/#/notes/2919230).
+> For more information on limitations in the OData sender adapter, refer the note [2919230](https://me.sap.com/notes/2919230).
 
 To know more about using the adapter from external clients, see:
 

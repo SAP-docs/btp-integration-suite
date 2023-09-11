@@ -71,14 +71,14 @@ You’re assigned the *AuthGroup.API.Admin* role.
                 </tr>
                 <tr>
                 <td valign="top">
-
+                
                 Administrator
 
 
                 
                 </td>
                 <td valign="top">
-
+                
                 Manages user registration. Create and delete applications on behalf of application developers. In addition, create custom attributes and import the app key.
 
 
@@ -87,14 +87,14 @@ You’re assigned the *AuthGroup.API.Admin* role.
                 </tr>
                 <tr>
                 <td valign="top">
-
+                
                 Developer
 
 
                 
                 </td>
                 <td valign="top">
-
+                
                 Create applications and check billing and metering data. Test APIs and view analytics data.
 
 
@@ -103,14 +103,14 @@ You’re assigned the *AuthGroup.API.Admin* role.
                 </tr>
                 <tr>
                 <td valign="top">
-
+                
                 Site Administrator
 
 
                 
                 </td>
                 <td valign="top">
-
+                
                 Configure updates, and perform portal changes like uploading the logo, changing the name and the description, and changing the footer links for the site.
 
 
@@ -119,14 +119,14 @@ You’re assigned the *AuthGroup.API.Admin* role.
                 </tr>
                 <tr>
                 <td valign="top">
-
+                
                 Content Administrator
 
 
                 
                 </td>
                 <td valign="top">
-
+                
                 Manages content categories.
 
 
@@ -142,7 +142,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
 **Related Information**  
 
 
-[Configure the API Business Hub Enterprise \[Classic Design\]](configure-the-api-business-hub-enterprise-classic-design-7b71b16.md "You can configure the API business hub enterprise to personalize it for your organization.")
+[Configure the API business hub enterprise \[Classic Design\]](configure-the-api-business-hub-enterprise-classic-design-7b71b16.md "You can configure the API business hub enterprise to personalize it for your organization.")
 
 [Revoke Access \[Classic Design\]](revoke-access-classic-design-147fb9d.md "Revoke the access of an application developer.")
 

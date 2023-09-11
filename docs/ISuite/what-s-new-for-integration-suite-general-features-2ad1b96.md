@@ -1,12 +1,14 @@
 <!-- loio2ad1b9607e6348bdb131703f79da21e0 -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # What's New for Integration Suite General Features
 
 
 
 
 
-**2022**
+**2023**
 
 
 <table>
@@ -113,6 +115,549 @@ Integration Suite General Features
 </td>
 <td valign="top">
 
+Contextual Help
+
+
+
+</td>
+<td valign="top">
+
+You can now access contextual help for the *Monitoring* and *Graph* screens.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2023-08-28
+
+
+
+</td>
+<td valign="top">
+
+2023-08-28
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Suite General Features
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Graph
+
+
+
+</td>
+<td valign="top">
+
+If you've activated Graph as a capability of API Management, and have assigned the suitable roles to your user, you can access Graph by navigating from *Design* \> *Graph*. For more information, see [What is Graph?](https://help.sap.com/docs/graph) 
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-07-17
+
+
+
+</td>
+<td valign="top">
+
+2023-07-17
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Suite General Features
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Contextual Help
+
+
+
+</td>
+<td valign="top">
+
+You can now access contextual help for the *Inspect* screens.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-07-17
+
+
+
+</td>
+<td valign="top">
+
+2023-07-17
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Suite General Features
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Contextual Help
+
+
+
+</td>
+<td valign="top">
+
+You can access contextual help for the following screens:
+
+-   *Home*
+-   *Discover* \> *Integrations*
+-   *Discover* \> *APIs*
+-   *Discover* \> *Type Systems*
+-   *Design* \> *Custom Type Systems*
+-   *Design* \> *MIGs*
+-   *Design* \> *MAGs*
+-   *Monitor* \> *Integrations*
+-   *Settings* \> *MIGs and MAGs*
+
+A guided tour is available for the home page. Take this tour to explore the various aspects of the home page.
+
+To activate this help, choose <span class="SAP-icons"></span> from the top tool bar. You will see green <span style="color:#007833;"><span class="SAP-icons"></span></span> icons on the screen. Choose these icons to know about the UI element associated with them.
+
+To activate the guided tour, from the contextual help panel, choose *Guided Tours* \> *Take A Tour of the Home Screen*. Follow the instructions to take the tour.
+
+You can close the help by again choosing <span class="SAP-icons"></span> .
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-03-13
+
+
+
+</td>
+<td valign="top">
+
+2023-03-13
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Suite General Features
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Contextual Help
+
+
+
+</td>
+<td valign="top">
+
+You can access contextual help for the following screens:
+
+-   *Home*
+-   *Discover* \> *Type Systems*
+-   *Design* \> *Custom Type Systems*
+-   *Design* \> *MIGs*
+-   *Design* \> *MAGs*
+-   *Settings* \> *MIGs and MAGs*
+
+To activate this help, choose <span class="SAP-icons"></span> from the top tool bar. You will see green <span style="color:#007833;"><span class="SAP-icons"></span></span> icons on the screen. Choose these icons to know about the UI element associated with them. You can close the help by again choosing <span class="SAP-icons"></span> .
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Announcement
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-02-20
+
+
+
+</td>
+<td valign="top">
+
+2023-02-20
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Suite General Features
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Feedback survey.
+
+
+
+</td>
+<td valign="top">
+
+A survey is available on the top toolbar, for you to share your feedback on the SAP Integration Suite.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2022-12-10
+
+
+
+</td>
+<td valign="top">
+
+2022-12-10
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Suite General Features
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Provide feedback and contribute content on GitHub.
 
 
@@ -148,7 +693,7 @@ Announcement
 </td>
 <td valign="top">
 
-Service
+Technology
 
 
 

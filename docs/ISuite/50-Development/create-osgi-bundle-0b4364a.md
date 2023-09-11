@@ -42,7 +42,7 @@ To integrate camel component into Cloud Integration framework, camel component a
 
 10. Choose *Finish*.
 
-11. Select the ***MANIFEST.MF*** file of your project, and go to *Runtime* tab.
+11. Select the `MANIFEST.MF` file of your project, and go to *Runtime* tab.
 
 12. Choose *Add*.
 

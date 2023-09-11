@@ -7,9 +7,11 @@ The XI receiver adapter allows you to connect a tenant to a local Integration En
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -137,7 +139,7 @@ The integration engine address is composed in the following way:
 `https://<host name>:<port>/sap/xi/engine?type=receiver&sap-client=<client>`
 
 > ### Note:  
-> You can find out the constituents \(HTTPS port\) of the URL by choosing transaction ***SMICM*** in the receiver system and choosing *Goto* \> *Services*.
+> You can find out the constituents \(HTTPS port\) of the URL by choosing transaction `SMICM` in the receiver system and choosing *Goto* \> *Services*.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
@@ -150,7 +152,7 @@ The endpoint URL that has been used at runtime is displayed in the message proce
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -260,7 +262,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
- *Timeout \(in ms\)* 
+*Timeout \(in ms\)* 
 
 
 
@@ -278,7 +280,9 @@ The default value set to 60000 milliseconds \(1 minute\).
 <tr>
 <td valign="top">
 
- *Compress Message* 
+*Compress Message*
+
+\(only if *JMS Queue* has been selected for *Temporary Storage*\)
 
 
 
@@ -294,7 +298,7 @@ Enables the tenant to send compressed request messages to the receiver \(which a
 <tr>
 <td valign="top">
 
- *Allow Chunking* 
+*Allow Chunking* 
 
 
 
@@ -357,7 +361,7 @@ Description
 <tr>
 <td valign="top">
 
- *XI Identifiers for Sender* 
+*XI Identifiers for Sender* 
 
 
 
@@ -388,7 +392,7 @@ Description
 <tr>
 <td valign="top">
 
- *XI Identifiers for Receiver* 
+*XI Identifiers for Receiver* 
 
 
 
@@ -412,7 +416,7 @@ Description
     You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
     > ### Note:  
-    > To get this information, go to the receiver system and choose transaction ***SLDCHECK***. In section *LCR\_GET\_OWN\_BUSINESS\_SYSTEM*, you find the business system ID \(which typically has the form `<SID>_<client>`\).
+    > To get this information, go to the receiver system and choose transaction `SLDCHECK`. In section *LCR\_GET\_OWN\_BUSINESS\_SYSTEM*, you find the business system ID \(which typically has the form `<SID>_<client>`\).
 
 -   *Service Interface* and *Service Interface Namespace*
 
@@ -421,6 +425,9 @@ Description
     The receiver interface is described according to how interfaces are defined in the Enterprise Services Repository, that means, with a name and a namespace.
 
     You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+
+    > ### Caution:  
+    > Currently, you can only configure both parameters dynamically or hard-coded. A combination of dynamic configuration and hard-coding is not supported.
 
 
 
@@ -454,7 +461,7 @@ Description
 <tr>
 <td valign="top">
 
- *XI Message ID Determination* 
+*XI Message ID Determination* 
 
 
 
@@ -487,7 +494,7 @@ You can choose among the following options:
 <tr>
 <td valign="top">
 
- *Source for XI Message ID* \(only in case you selected *Map* as *XI Message ID Determination*\)
+*Source for XI Message ID* \(only in case you selected *Map* as *XI Message ID Determination*\)
 
 
 
@@ -496,7 +503,7 @@ You can choose among the following options:
 
 To map the source message ID to the XI message ID you can enter the source message ID dynamically by using headers or properties:
 
-***$\{header.headername\}***or ***$\{property.propertyname\}***
+`${header.headername}`or `${property.propertyname}`
 
 > ### Note:  
 > If no header or property is available at runtime, a new message ID is generated.
@@ -730,7 +737,25 @@ For more information, read the SAP Community blog [Cloud Integration – Configu
 <tr>
 <td valign="top">
 
- *Encrypt Message during Persistence* \(only in case you have selected *Exactly Once* as *Quality of Service*\)
+*Compress Stored Message*
+
+\(only if *JMS Queue* has been selected for *Temporary Storage*\)
+
+
+
+</td>
+<td valign="top">
+
+Select this option to compress the message in the JMS queue. Compressing the message reduces disk space usage and network traffic.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Encrypt Message during Persistence* \(only in case you have selected *Exactly Once* as *Quality of Service*\)
 
 
 
@@ -788,7 +813,7 @@ Which header you can use, depends on the kind of temporary storage chosen.
 
 [Managing Data Stores](managing-data-stores-ac39f1d.md "")
 
-[Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right:
+[Managing Message Queues](managing-message-queues-cdcce24.md "You can monitor queues that are active for a tenant.")
 
 [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md "")
 

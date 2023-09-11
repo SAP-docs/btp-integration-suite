@@ -40,11 +40,11 @@ You use this procedure to assign XML schema \(XSD files\) to validate the messag
         > ### Note:  
         > -   You can have references to other XSDs within the same project. XSDs residing outside the projects cannot be referred.
         > 
-        > -   You can enter a value less than 5000 for attribute *maxOccurs*, in input xsd. You can also enter ***unbounded***, if you do not want to check for max occurrence but would like to support any number of nodes.
+        > -   You can enter a value less than 5000 for attribute *maxOccurs*, in input xsd. You can also enter `unbounded`, if you do not want to check for max occurrence but would like to support any number of nodes.
         > 
         > -   If there are any validation errors in the payload, the details of the error is visible in MPL attachment. The link for the attachment is available in MPL log.
         > 
-        > -   Use ***$\{property.SAP\_XmlValidationResult\}*** to get more details on validation excecptions.
+        > -   Use `${property.SAP_XmlValidationResult}` to get more details on validation excecptions.
 
     2.  *Header*, enter the name of the header in the *Header Name* field.
 

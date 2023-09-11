@@ -2,7 +2,7 @@
 
 # Exporting Integration Packages
 
-Download your integration packages to your local system, so that you can provide it to your content management team to upload and publish them. Publishing integration packages makes them available on SAP API Business Hub.
+Download your integration packages to your local system, so that you can provide it to your content management team to upload and publish them. Publishing integration packages makes them available on SAP Business Accelerator Hub.
 
 
 

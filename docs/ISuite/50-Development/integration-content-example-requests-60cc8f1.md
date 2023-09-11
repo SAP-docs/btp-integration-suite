@@ -4,7 +4,7 @@
 
 
 
-You find various example requests on SAP API Business Hub at [https://api.sap.com/api/IntegrationContent/](https://api.sap.com/api/IntegrationContent/).
+You find various example requests on SAP Business Accelerator Hub at [https://api.sap.com/api/IntegrationContent/](https://api.sap.com/api/IntegrationContent/).
 
 For more example requests, see:
 
@@ -20,7 +20,7 @@ Runtime artifacts and error information
 </td>
 <td valign="top">
 
- [Runtime Artifacts and Error Information Example Requests](runtime-artifacts-and-error-information-example-requests-3db463e.md) 
+[Runtime Artifacts and Error Information Example Requests](runtime-artifacts-and-error-information-example-requests-3db463e.md) 
 
 
 
@@ -54,7 +54,7 @@ Service endpoints
 </td>
 <td valign="top">
 
- [ServiceEndpoints Example Requests](serviceendpoints-example-requests-26797fb.md) 
+[ServiceEndpoints Example Requests](serviceendpoints-example-requests-26797fb.md) 
 
 
 
@@ -70,7 +70,7 @@ Integration packages
 </td>
 <td valign="top">
 
- [Integration Package Example Requests](integration-package-example-requests-24a39f0.md) 
+[Integration Package Example Requests](integration-package-example-requests-24a39f0.md) 
 
 
 
@@ -104,7 +104,7 @@ Value mappings
 </td>
 <td valign="top">
 
- [Value Mapping Example Requests](value-mapping-example-requests-1425fe5.md) 
+[Value Mapping Example Requests](value-mapping-example-requests-1425fe5.md) 
 
 
 
@@ -120,7 +120,7 @@ Integration adapter
 </td>
 <td valign="top">
 
- [Integration Adapter Example Requests](integration-adapter-example-requests-b996c4f.md) 
+[Integration Adapter Example Requests](integration-adapter-example-requests-b996c4f.md) 
 
 
 

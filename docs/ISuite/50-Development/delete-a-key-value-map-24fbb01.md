@@ -42,3 +42,7 @@ You are deleting a key value map.
 
 [Update a Key Value Map](update-a-key-value-map-4961431.md "Update a key value map.")
 
+[Create a Key Value Map](create-a-key-value-map-90d8d41.md "Create a key value map using the create and manage collections of arbitrary key value pairs for any number of API proxies.")
+
+[Update a Key Value Map](update-a-key-value-map-4961431.md "Update a key value map.")
+

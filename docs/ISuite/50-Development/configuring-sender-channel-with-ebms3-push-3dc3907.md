@@ -13,9 +13,11 @@ You use AS4 message exchange protocol to securely process incoming business docu
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -43,19 +45,19 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
 </td>
 <td valign="top">
 
-Specify the relative endpoint of the receiving MSH. For example, ***/orders***.
+Specify the relative endpoint of the receiving MSH. For example, `/orders`.
 
 > ### Note:  
-> When you specify the endpoint address ***/path***, a sender can also call the integration flow through the endpoint address ***/path/<any string\>*** \(for example, ***/path/test/***\).
+> When you specify the endpoint address `/path`, a sender can also call the integration flow through the endpoint address `/path/<any string>` \(for example, `/path/test/`\).
 > 
-> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address ***/path/test/***, a sender using the ***/path/test*** endpoint address will now call the newly deployed integration flow with the endpoint address ***/path/test/***. When you now undeploy the integration flow with endpoint address ***/path/test***, the sender again calls the integration flow with endpoint address ***/path*** \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using completely separated endpoints for services.
+> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address `/path/test/`, a sender using the `/path/test` endpoint address will now call the newly deployed integration flow with the endpoint address `/path/test/`. When you now undeploy the integration flow with endpoint address `/path/test`, the sender again calls the integration flow with endpoint address `/path` \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using completely separated endpoints for services.
 
 
 
@@ -64,14 +66,14 @@ Specify the relative endpoint of the receiving MSH. For example, ***/orders***.
 <tr>
 <td valign="top">
 
- *Agreement* 
+*Agreement* 
 
 
 
 </td>
 <td valign="top">
 
-Define the message exchange pattern agreed between the MSHs. For example, ***urn:fdc:peppol.eu:2017:agreements:tia:ap\_provider***.
+Define the message exchange pattern agreed between the MSHs. For example, `urn:fdc:peppol.eu:2017:agreements:tia:ap_provider`.
 
 
 
@@ -80,14 +82,14 @@ Define the message exchange pattern agreed between the MSHs. For example, ***urn
 <tr>
 <td valign="top">
 
- *Authorization* 
+*Authorization* 
 
 
 
 </td>
 <td valign="top">
 
-Select *User Role* if you want to authorize a user to send message based on the ***ESBMessaging.send***.
+Select *User Role* if you want to authorize a user to send message based on the `ESBMessaging.send`.
 
 Select *Client Certificate* if you want to authorize a user to send message based on a certificate. If you select this option, you have to add and enter the Subject DN \(information used to authorize the sender\) and Issuer DN \(information about the Certificate Authority who issues the certificate\).
 
@@ -122,30 +124,14 @@ Description
 <tr>
 <td valign="top">
 
- *Initiator Party: Party ID* 
+*Initiator Party: Party ID* 
 
 
 
 </td>
 <td valign="top">
 
-Specify the ID of the initiating partner. For example, ***APP\_10000000100***.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Initiator Party: Party Type* 
-
-
-
-</td>
-<td valign="top">
-
-Specify a party type to identify the initiating partner. For example, ***urn:fdc:peppol.eu:2017:identifiers:ap*** 
+Specify the ID of the initiating partner. For example, `APP_10000000100`.
 
 
 
@@ -154,30 +140,14 @@ Specify a party type to identify the initiating partner. For example, ***urn:fdc
 <tr>
 <td valign="top">
 
- *Initiator Party: Role* 
+*Initiator Party: Party Type* 
 
 
 
 </td>
 <td valign="top">
 
-Specify the role of the initiating partner. For example, ***http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/initiator*** 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Responder Party: Party ID* 
-
-
-
-</td>
-<td valign="top">
-
-Specify the ID of the responding partner. For example,***APP\_10000000200***.
+Specify a party type to identify the initiating partner. For example, `urn:fdc:peppol.eu:2017:identifiers:ap` 
 
 
 
@@ -186,30 +156,14 @@ Specify the ID of the responding partner. For example,***APP\_10000000200***.
 <tr>
 <td valign="top">
 
- *Responder Party: Party Type* 
+*Initiator Party: Role* 
 
 
 
 </td>
 <td valign="top">
 
-Specify a party type to identify the responding partner. For example, ***urn:fdc:peppol.eu:2017:identifiers:ap*** 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Responder Party: Role* 
-
-
-
-</td>
-<td valign="top">
-
-Specify the role of the responding partner. For example, ***p://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/responder*** 
+Specify the role of the initiating partner. For example, `http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/initiator` 
 
 
 
@@ -218,30 +172,14 @@ Specify the role of the responding partner. For example, ***p://docs.oasis-open.
 <tr>
 <td valign="top">
 
- *Service* 
+*Responder Party: Party ID* 
 
 
 
 </td>
 <td valign="top">
 
-Specify the process identifier of the business document. For example, ***urn:www.cenbii.eu:profile:bii01:ver2.0***.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Service Type* 
-
-
-
-</td>
-<td valign="top">
-
-Specify the process identifier schema of the business document. For example, ***cenbii-procid-ublui***.
+Specify the ID of the responding partner. For example,`APP_10000000200`.
 
 
 
@@ -250,14 +188,78 @@ Specify the process identifier schema of the business document. For example, ***
 <tr>
 <td valign="top">
 
- *Action* 
+*Responder Party: Party Type* 
 
 
 
 </td>
 <td valign="top">
 
-Specify the document type identifier of the business document with the following format: ***urn:www.cenbii.eu:profile:bii01:ver2.0*** .
+Specify a party type to identify the responding partner. For example, `urn:fdc:peppol.eu:2017:identifiers:ap` 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Responder Party: Role* 
+
+
+
+</td>
+<td valign="top">
+
+Specify the role of the responding partner. For example, `p://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/responder` 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Service* 
+
+
+
+</td>
+<td valign="top">
+
+Specify the process identifier of the business document. For example, `urn:www.cenbii.eu:profile:bii01:ver2.0`.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Service Type* 
+
+
+
+</td>
+<td valign="top">
+
+Specify the process identifier schema of the business document. For example, `cenbii-procid-ublui`.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Action* 
+
+
+
+</td>
+<td valign="top">
+
+Specify the document type identifier of the business document with the following format: `urn:www.cenbii.eu:profile:bii01:ver2.0` .
 
 
 
@@ -290,7 +292,7 @@ Description
 <tr>
 <td valign="top">
 
- *Verify Signature* 
+*Verify Signature* 
 
 
 
@@ -316,7 +318,7 @@ Select the checkbox to ensure that the signature is verified using one of the fo
 <tr>
 <td valign="top">
 
- *Decrypt Message* 
+*Decrypt Message* 
 
 
 
@@ -332,7 +334,7 @@ Used to decrypt AS4 message.
 <tr>
 <td valign="top">
 
- *Private Key Alias* 
+*Private Key Alias* 
 
 
 
@@ -401,7 +403,7 @@ Description
 <tr>
 <td valign="top">
 
- *Signing* 
+*Signing* 
 
 
 
@@ -477,7 +479,7 @@ Description
 <tr>
 <td valign="top">
 
- *Type* 
+*Type* 
 
 
 
@@ -502,7 +504,7 @@ The following options are available only if you select *Push and Push* in *Type*
 <tr>
 <td valign="top">
 
- *Target URL* 
+*Target URL* 
 
 
 
@@ -518,14 +520,14 @@ Specify receipient's URL to which the AS4 message is transmitted.
 <tr>
 <td valign="top">
 
- *Agreement* 
+*Agreement* 
 
 
 
 </td>
 <td valign="top">
 
-Provide the message exchange pattern agreed between the MSHs. For example,***https://sbr.gov.au/agreement/Gateway/1.0/Push/PKI***.
+Provide the message exchange pattern agreed between the MSHs. For example,`https://sbr.gov.au/agreement/Gateway/1.0/Push/PKI`.
 
 
 
@@ -534,7 +536,7 @@ Provide the message exchange pattern agreed between the MSHs. For example,***htt
 <tr>
 <td valign="top">
 
- *Authentication Type* 
+*Authentication Type* 
 
 
 
@@ -607,7 +609,7 @@ Specify the private key alias, used to sign the incoming AS4 message.
 <tr>
 <td valign="top">
 
- *Compress Message* 
+*Compress Message* 
 
 
 
@@ -623,7 +625,7 @@ Compresses the AS4 message.
 <tr>
 <td valign="top">
 
- *WS-Security Type* 
+*WS-Security Type* 
 
 
 
@@ -649,7 +651,7 @@ Specify either of the folllowing WS-Security type to protect message integrity a
 <tr>
 <td valign="top">
 
- *Private Key Alias for Signing* 
+*Private Key Alias for Signing* 
 
 
 
@@ -665,7 +667,7 @@ Specify the private key alias to sign the AS4 message.
 <tr>
 <td valign="top">
 
- *Signature Algorithm* 
+*Signature Algorithm* 
 
 
 
@@ -735,7 +737,7 @@ Select the key encryption algorithm and the system uses the related mask generat
 <tr>
 <td valign="top">
 
- *Save Receipt* 
+*Save Receipt* 
 
 
 
@@ -960,7 +962,7 @@ For more information, read the SAP Community blog [Cloud Integration – Configu
 <tr>
 <td valign="top">
 
- *Encrypt Message During Persistence* 
+*Encrypt Message During Persistence* 
 
 
 
@@ -1009,7 +1011,7 @@ The parameters in *Maximum Message Size* allow you to set a maximum size limit f
 <tr>
 <td valign="top">
 
- *Body Size \(in MB\)* 
+*Body Size \(in MB\)* 
 
 
 
@@ -1025,7 +1027,7 @@ Define the size limit for processing the message body.
 <tr>
 <td valign="top">
 
- *Attachment Size \(in MB\)* 
+*Attachment Size \(in MB\)* 
 
 
 

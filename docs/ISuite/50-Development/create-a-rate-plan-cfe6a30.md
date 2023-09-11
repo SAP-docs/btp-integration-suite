@@ -72,21 +72,21 @@ You are creating a rate plan.
             </tr>
             <tr>
             <td valign="top">
-
+            
             0
 
 
             
             </td>
             <td valign="top">
-
+            
             5000
 
 
             
             </td>
             <td valign="top">
-
+            
             0.0
 
 
@@ -95,21 +95,21 @@ You are creating a rate plan.
             </tr>
             <tr>
             <td valign="top">
-
+            
             5001
 
 
             
             </td>
             <td valign="top">
-
+            
             10000
 
 
             
             </td>
             <td valign="top">
-
+            
             0.5
 
 
@@ -118,19 +118,19 @@ You are creating a rate plan.
             </tr>
             <tr>
             <td valign="top">
-
+            
             10001
 
 
             
             </td>
             <td valign="top">
-
+            
 
             
             </td>
             <td valign="top">
-
+            
             0.7
 
 

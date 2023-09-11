@@ -7,9 +7,11 @@ Configure the SuccessFactors OData V2 receiver adapter by understanding the adap
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -19,9 +21,9 @@ The SuccessFactors OData V2 receiver adapter supports externalization. To extern
 > ### Note:  
 > -   The OData adapter doesn't support *$format* in query options.
 > 
-> -   The OData adapter supports sending error response in exception subprocess. The error response body is part of expression ***$\{in.body\}***.
+> -   The OData adapter supports sending error response in exception subprocess. The error response body is part of expression `${in.body}`.
 > 
-> -   OData services response code is captured in the ***camelhttpresponsecode*** header.
+> -   OData services response code is captured in the `camelhttpresponsecode` header.
 > 
 > -   Retry for *Upsert* operation is now enabled for inner error code 412. Retry will be executed once and after 1 minute only.
 > -   Learn how to construct the required payload for SuccessFactors OData V2 Upsert operation from the [blog](https://blogs.sap.com/2019/09/15/payload-structure-for-successfactors-upsert-in-sap-cloud-platform-integration/).
@@ -110,7 +112,7 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -128,14 +130,14 @@ You can browse and select a SuccessFactors data center URL by using the *Select*
 <tr>
 <td valign="top">
 
- *Address Suffix* 
+*Address Suffix* 
 
 
 
 </td>
 <td valign="top">
 
-The field is auto-populated with ***/odata/v2***. Don't edit the field.
+The field is auto-populated with `/odata/v2`. Don't edit the field.
 
 
 
@@ -144,7 +146,7 @@ The field is auto-populated with ***/odata/v2***. Don't edit the field.
 <tr>
 <td valign="top">
 
- *Proxy Type* 
+*Proxy Type* 
 
 
 
@@ -181,7 +183,7 @@ Select one of the following authentication methods:
 <tr>
 <td valign="top">
 
- *Credential Name* 
+*Credential Name* 
 
 
 
@@ -215,6 +217,22 @@ Compresses the response data from SuccessFactors so that you improve the message
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Reuse Connection*
+
+
+
+</td>
+<td valign="top">
+
+The option is enabled by default. This option enables the reuse of connection objects from the internal connection pool which in turn improves the network turnaround time for multiple communications to a same end point.
+
+
+
+</td>
+</tr>
 </table>
 
 Select the *Processing* tab and provide information as described as follows:
@@ -242,7 +260,7 @@ Description
 <tr>
 <td valign="top">
 
- *Operation Details* 
+*Operation Details* 
 
 
 
@@ -273,7 +291,7 @@ To leverage all operations, always use the latest version of the adapter.
 <tr>
 <td valign="top">
 
- *Resource Path* 
+*Resource Path* 
 
 
 
@@ -321,7 +339,7 @@ The fields in the entity that you want to modify. You can add this using the [Mo
 </td>
 <td valign="top">
 
-Additional options that you want to add to the query like ***$top*** or how to order the results using *orderby*. You can add this using the Model Operation Wizard.
+Additional options that you want to add to the query like `$top` or how to order the results using *orderby*. You can add this using the Model Operation Wizard.
 
 
 
@@ -339,7 +357,7 @@ Additional options that you want to add to the query like ***$top*** or how to o
 </td>
 <td valign="top">
 
-Select to perform multiple operations in one request to the OData V2 service in the ***$batch*** mode.
+Select to perform multiple operations in one request to the OData V2 service in the `$batch` mode.
 
 
 
@@ -348,14 +366,14 @@ Select to perform multiple operations in one request to the OData V2 service in 
 <tr>
 <td valign="top">
 
- *Custom Query Options* 
+*Custom Query Options* 
 
 
 
 </td>
 <td valign="top">
 
-Query options that are specific to the SuccessFactors OData V2 service like ***purge***.
+Query options that are specific to the SuccessFactors OData V2 service like `purge`.
 
 
 
@@ -465,7 +483,7 @@ If a value is entered, Client-side pagination is considered with the value provi
 <tr>
 <td valign="top">
 
- *Retry on Failure* 
+*Retry on Failure* 
 
 
 
@@ -513,9 +531,9 @@ To use *Process in Pages*, you must use the adapter in a *Local Integration Proc
 
 -   Select *Expression Type* as *Non-XML*
 
--   For *Condition Expression*, provide ***$\{property.<receiver.name\>.<channel.name\>.hasMoreRecords\} contains 'true'***
+-   For *Condition Expression*, provide `${property.<receiver.name>.<channel.name>.hasMoreRecords} contains 'true'`
 
--   For *Maximum Number of Iterations*, provide ***999***
+-   For *Maximum Number of Iterations*, provide `999`
 
 
 This option isn’t enabled for *Content Enricher*.
@@ -527,7 +545,7 @@ This option isn’t enabled for *Content Enricher*.
 <tr>
 <td valign="top">
 
- *Timeout \(in min\)* 
+*Timeout \(in min\)* 
 
 
 
@@ -543,7 +561,7 @@ Maximum time the system waits for a response before terminating the connection.
 <tr>
 <td valign="top">
 
- *HEADER DETAILS* 
+*HEADER DETAILS* 
 
 
 
@@ -601,7 +619,7 @@ Description
 <tr>
 <td valign="top">
 
- *Connection Source* 
+*Connection Source* 
 
 
 
@@ -639,7 +657,7 @@ Choose *Select* to select the EDMX service schema. You can also manually upload 
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -691,7 +709,7 @@ Location ID that you've configured in the Cloud Connector installation.
 <tr>
 <td valign="top">
 
- *Authentication* 
+*Authentication* 
 
 
 
@@ -710,7 +728,7 @@ Location ID that you've configured in the Cloud Connector installation.
 <tr>
 <td valign="top">
 
- *Credential Name* 
+*Credential Name* 
 
 
 
@@ -748,7 +766,7 @@ Description
 <tr>
 <td valign="top">
 
- *Operation* 
+*Operation* 
 
 
 
@@ -764,14 +782,14 @@ Select the operation that you want to perform.
 <tr>
 <td valign="top">
 
- *Sub-Levels* 
+*Sub-Levels* 
 
 
 
 </td>
 <td valign="top">
 
-Sublevels of the entity that you want to access. For example, if you want to access the field *Description* in the entity *Products*, and the field is located at *Category* \> *Products* \> *Description*, you select the *Sub Levels* as ***3*** since the field you want to access is at the third level.
+Sublevels of the entity that you want to access. For example, if you want to access the field *Description* in the entity *Products*, and the field is located at *Category* \> *Products* \> *Description*, you select the *Sub Levels* as `3` since the field you want to access is at the third level.
 
 
 
@@ -780,7 +798,7 @@ Sublevels of the entity that you want to access. For example, if you want to acc
 <tr>
 <td valign="top">
 
- *Select Entity* 
+*Select Entity* 
 
 
 
@@ -796,7 +814,7 @@ Entity that you want to perform the operation on.
 <tr>
 <td valign="top">
 
- *Fields* 
+*Fields* 
 
 
 
@@ -812,7 +830,7 @@ Fields associated with the entity that you want to perform the operation on.
 <tr>
 <td valign="top">
 
- *Top* 
+*Top* 
 
 
 
@@ -830,7 +848,7 @@ For more information, see **Top System Query Option \($top\)** in [OData V2 URI 
 <tr>
 <td valign="top">
 
- *Skip* 
+*Skip* 
 
 
 
@@ -872,7 +890,7 @@ Description
 <tr>
 <td valign="top">
 
- *Filter By* 
+*Filter By* 
 
 
 
@@ -884,12 +902,10 @@ Select the field that you want to use as reference for filtering, choose the ope
 > ### Note:  
 > The *IN* operation is available under the filtering menu when editing the query manually. This operation isn't available in the Query Modeling wizard.
 > 
-> The IN operator must be used in lower case in the query. Example:
+> The IN operator must be used in lower case in the query.
 > 
 > > ### Example:  
 > > https://<hostname\>/odata/v2/User?$filter=userId in 'ctse1','mhuang1','flynch1'
-> 
-> For more information, see [Customized Operators](https://help.sap.com/viewer/d599f15995d348a1b45ba5603e2aba9b/1902/en-US/ded5808b5edb4bc9a8acfb5e9fe1b025.html) 
 
 
 
@@ -898,7 +914,7 @@ Select the field that you want to use as reference for filtering, choose the ope
 <tr>
 <td valign="top">
 
- *Sort By* 
+*Sort By* 
 
 
 

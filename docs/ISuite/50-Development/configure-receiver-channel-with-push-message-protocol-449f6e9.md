@@ -24,9 +24,11 @@ Use the *ebMS3 Push* message protocol to transmit AS4 message.
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -60,7 +62,7 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -76,7 +78,7 @@ Define the endpoint URL of the receiving MSH.
 <tr>
 <td valign="top">
 
- *Agreement* 
+*Agreement* 
 
 
 
@@ -92,7 +94,7 @@ Define the type of the message exchange pattern as agreed between the MSHs for a
 <tr>
 <td valign="top">
 
- *Authentication Type* 
+*Authentication Type* 
 
 
 
@@ -110,17 +112,17 @@ Select the authentication type to process the outbound message:
 -   *SAML Authentication*
 
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS4\_Outbound\_Authentication\_Type***.
+You can also set the value of this attribute dynamically using the header `SAP_AS4_Outbound_Authentication_Type`.
 
 The valid values are:
 
--   ***saml***
+-   `saml`
 
--   ***basic***
+-   `basic`
 
--   ***clientCert***
+-   `clientCert`
 
--   ***none***
+-   `none`
 
 
 
@@ -130,7 +132,7 @@ The valid values are:
 <tr>
 <td valign="top">
 
- *SAML Endpoint URL* 
+*SAML Endpoint URL* 
 
 
 
@@ -146,7 +148,7 @@ Provide the specific endpoint URL to support SAML-based authentication that allo
 <tr>
 <td valign="top">
 
- *Private Key Alias* 
+*Private Key Alias* 
 
 
 
@@ -162,7 +164,7 @@ Determine the private key alias for SAML authentication.
 <tr>
 <td valign="top">
 
- *Timeout \(in sec.\)* 
+*Timeout \(in sec.\)* 
 
 
 
@@ -218,7 +220,7 @@ Description
 <tr>
 <td valign="top">
 
- *Initiator Party: Party ID* 
+*Initiator Party: Party ID* 
 
 
 
@@ -234,30 +236,14 @@ Define the ID of the sending MSH.
 <tr>
 <td valign="top">
 
- *Initiator Party: Party Type* 
+*Initiator Party: Party Type* 
 
 
 
 </td>
 <td valign="top">
 
-Provide the type of the sending MSH. For example: ***http://abr.gov.au/PartyIdType/ABN*** 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Initiator Party: Role* 
-
-
-
-</td>
-<td valign="top">
-
-Define the role of the sending MSH. For example: ***http://sbr.gov.au/ato/Role/Business*** 
+Provide the type of the sending MSH. For example: `http://abr.gov.au/PartyIdType/ABN` 
 
 
 
@@ -266,7 +252,23 @@ Define the role of the sending MSH. For example: ***http://sbr.gov.au/ato/Role/B
 <tr>
 <td valign="top">
 
- *Responder Party: Party ID* 
+*Initiator Party: Role* 
+
+
+
+</td>
+<td valign="top">
+
+Define the role of the sending MSH. For example: `http://sbr.gov.au/ato/Role/Business` 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Responder Party: Party ID* 
 
 
 
@@ -282,30 +284,14 @@ Define the ID of the receiving MSH.
 <tr>
 <td valign="top">
 
- *Responder Party: Party Type* 
+*Responder Party: Party Type* 
 
 
 
 </td>
 <td valign="top">
 
-Provide the type of the receiving MSH. For example: ***http://abr.gov.au/PartyIdType/ABN*** 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Responder Party: Role* 
-
-
-
-</td>
-<td valign="top">
-
-Define the role of the receiving MSH. For example: ***http://sbr.gov.au/agency*** 
+Provide the type of the receiving MSH. For example: `http://abr.gov.au/PartyIdType/ABN` 
 
 
 
@@ -314,7 +300,23 @@ Define the role of the receiving MSH. For example: ***http://sbr.gov.au/agency**
 <tr>
 <td valign="top">
 
- *Message Partition Channel* 
+*Responder Party: Role* 
+
+
+
+</td>
+<td valign="top">
+
+Define the role of the receiving MSH. For example: `http://sbr.gov.au/agency` 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Message Partition Channel* 
 
 
 
@@ -330,14 +332,14 @@ Specify the partner channel details to enable the partitioned transfer of AS4 me
 <tr>
 <td valign="top">
 
- *Service* 
+*Service* 
 
 
 
 </td>
 <td valign="top">
 
-Define the business service of the recipient. For example, payment details of employees for a specific year: ***http://sbr.gov.au/ato/payevnt/2017*** 
+Define the business service of the recipient. For example, payment details of employees for a specific year: `http://sbr.gov.au/ato/payevnt/2017` 
 
 
 
@@ -346,7 +348,7 @@ Define the business service of the recipient. For example, payment details of em
 <tr>
 <td valign="top">
 
- *Service Type* 
+*Service Type* 
 
 
 
@@ -362,14 +364,14 @@ Define the type of service from the recipient.
 <tr>
 <td valign="top">
 
- *Action* 
+*Action* 
 
 
 
 </td>
 <td valign="top">
 
-Define the type of action that the user message is intended to invoke. For example: ***Submit.002.00*** 
+Define the type of action that the user message is intended to invoke. For example: `Submit.002.00` 
 
 
 
@@ -378,7 +380,7 @@ Define the type of action that the user message is intended to invoke. For examp
 <tr>
 <td valign="top">
 
- *Attachment Name* 
+*Attachment Name* 
 
 
 
@@ -394,7 +396,7 @@ Define the name for the payload attached to the AS4 message.
 <tr>
 <td valign="top">
 
- *Additional Properties* 
+*Additional Properties* 
 
 
 
@@ -450,7 +452,7 @@ Description
 <tr>
 <td valign="top">
 
- *WS-Security Type* 
+*WS-Security Type* 
 
 
 
@@ -466,7 +468,7 @@ Ensures security implemented in web services for SOAP based messages.
 <tr>
 <td valign="top">
 
- *Sign and Enrypt Message* 
+*Sign and Enrypt Message* 
 
 
 
@@ -475,15 +477,15 @@ Ensures security implemented in web services for SOAP based messages.
 
 Used to sign and encrypt the payload.
 
-You can also set the value of this attribute dynamically by using the header ***SAP\_AS4\_Outbound\_Security\_Type***.
+You can also set the value of this attribute dynamically by using the header `SAP_AS4_Outbound_Security_Type`.
 
 The valid values are:
 
--   ***sign***
+-   `sign`
 
--   ***signAndEncrypt***
+-   `signAndEncrypt`
 
--   ***none***
+-   `none`
 
 
 
@@ -493,7 +495,7 @@ The valid values are:
 <tr>
 <td valign="top">
 
- *Sign Message* 
+*Sign Message* 
 
 
 
@@ -502,13 +504,13 @@ The valid values are:
 
 Ensures that the outgoing AS4 message is signed.
 
-You can also set the value of this attribute dynamically by using the header ***SAP\_AS4\_Outbound\_Sign\_Message***.
+You can also set the value of this attribute dynamically by using the header `SAP_AS4_Outbound_Sign_Message`.
 
 The valid values are:
 
--   ***true***
+-   `true`
 
--   ***false***
+-   `false`
 
 
 
@@ -518,7 +520,7 @@ The valid values are:
 <tr>
 <td valign="top">
 
- *Private Key Alias for Signing* 
+*Private Key Alias for Signing* 
 
 
 
@@ -534,7 +536,7 @@ Specify an alias for the tenant private key that is to be used to sign the messa
 <tr>
 <td valign="top">
 
- *Signature Algorithm* 
+*Signature Algorithm* 
 
 
 
@@ -543,7 +545,7 @@ Specify an alias for the tenant private key that is to be used to sign the messa
 
 Use the relevant algorithm to sign the AS4 message.
 
-You can also set the value of this attribute dynamically by using the header ***SAP\_AS4\_Outbound\_Signing\_Algorithm***.
+You can also set the value of this attribute dynamically by using the header `SAP_AS4_Outbound_Signing_Algorithm`.
 
 The valid values are:
 
@@ -574,7 +576,7 @@ Specify an alias for the public key that is to be used to encrypt the message.
 
 The receiver \(WS provider\) public key is used to encrypt the request message \(that is sent to the receiver\). This key has to be part of the tenant keystore.
 
-You can also set the value of this attribute dynamically by using the header ***SAP\_AS4\_Outbound\_Encryption\_Cert***. Use this header to set the certificate value to X509 certificate object.
+You can also set the value of this attribute dynamically by using the header `SAP_AS4_Outbound_Encryption_Cert`. Use this header to set the certificate value to X509 certificate object.
 
 
 
@@ -594,7 +596,7 @@ You can also set the value of this attribute dynamically by using the header ***
 
 Specify a encryption algorithm to be applied when encrypting the message.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS4\_Outbound\_Encryption\_Algorithm***.
+You can also set the value of this attribute dynamically using the header `SAP_AS4_Outbound_Encryption_Algorithm`.
 
 The valid values are:
 
@@ -636,7 +638,7 @@ Description
 <tr>
 <td valign="top">
 
- *Save Incoming Receipt* 
+*Save Incoming Receipt* 
 
 
 
@@ -645,13 +647,13 @@ Description
 
 Saves incoming receipt in the *Message Store* for 90 days. You can refer these receipts for auditing purposes.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS4\_Outbound\_Save\_Receipt***.
+You can also set the value of this attribute dynamically using the header `SAP_AS4_Outbound_Save_Receipt`.
 
 The valid values are:
 
--   ***true***
+-   `true`
 
--   ***false***
+-   `false`
 
 
 
@@ -661,7 +663,7 @@ The valid values are:
 <tr>
 <td valign="top">
 
- *Verify Receipt Signature* 
+*Verify Receipt Signature* 
 
 
 
@@ -670,15 +672,15 @@ The valid values are:
 
 Verifies the incoming receipt signature against the public key alias.
 
-You can also set the value of this attribute dynamically using the header ***SAP\_AS4\_Outbound\_Verify\_Receipt***.
+You can also set the value of this attribute dynamically using the header `SAP_AS4_Outbound_Verify_Receipt`.
 
--   ***true***
+-   `true`
 
--   ***false***
+-   `false`
 
 
 > ### Note:  
-> You can use the ***SAP\_AS4\_Outbound\_Verify\_Receipt\_Cert*** header to set the certificate value to X509 certificate object.
+> You can use the `SAP_AS4_Outbound_Verify_Receipt_Cert` header to set the certificate value to X509 certificate object.
 
 
 
@@ -687,7 +689,7 @@ You can also set the value of this attribute dynamically using the header ***SAP
 <tr>
 <td valign="top">
 
- *Public Key Alias* 
+*Public Key Alias* 
 
 
 
@@ -703,7 +705,7 @@ Enter an alias name to select a public key and corresponding certificate.
 </table>
 
 > ### Note:  
-> Set the value, provided by ATO, to the ***SAP\_AS4\_Outbound\_ATO\_SAML\_AppliesTo*** header for *AppliesTo* parameter to fetch SAML token from Vanguard.
+> Set the value, provided by ATO, to the `SAP_AS4_Outbound_ATO_SAML_AppliesTo` header for *AppliesTo* parameter to fetch SAML token from Vanguard.
 
 **Related Information**  
 

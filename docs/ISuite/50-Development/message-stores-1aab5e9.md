@@ -292,7 +292,7 @@ For general information about query options, see [Query Options](query-options-9
 
 ## Example Requests
 
-You find various example requests on the SAP API Business Hub at [Message Stores](https://api.sap.com/api/MessageStore).
+You find various example requests on the SAP Business Accelerator Hub at [Message Stores](https://api.sap.com/api/MessageStore).
 
 For more example requests, see .
 
@@ -309,11 +309,11 @@ To trigger the modifying actions \(POST, PUT, and DELETE\), you need to fetch a 
 
 
 
-On SAP API Business Hub, you can test API calls against a sandbox tenant or against a custom tenant \(to be configured under *API Environment*\). If you want to perform an API call against your custom tenant using an HTTP client such like Postman, make sure that the request URL is composed in the following way:
+On SAP Business Accelerator Hub, you can test API calls against a sandbox tenant or against a custom tenant \(to be configured under *API Environment*\). If you want to perform an API call against your custom tenant using an HTTP client such like Postman, make sure that the request URL is composed in the following way:
 
 `https://<host address>/api/v1/<relative resource path>`
 
 The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
 
-You can find the relative resource path for each operation on SAP API Business Hub.
+You can find the relative resource path for each operation on SAP Business Accelerator Hub.
 

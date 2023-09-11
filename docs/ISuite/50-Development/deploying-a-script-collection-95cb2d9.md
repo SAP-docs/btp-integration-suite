@@ -19,6 +19,6 @@
 
 4.  Under *Manage Integration Content*, choose the tile *All*.
 
-5.  Check the status of your script collection artifact. For more information, see [Managing Integration Content](managing-integration-content-09a7223.md).
+5.  Check the status of your script collection artifact. For more information, see [Manage Integration Content](manage-integration-content-09a7223.md).
 
 

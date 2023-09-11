@@ -4,7 +4,7 @@
 
 Integration flows run independently from each other but need to share data.
 
- ![](images/Integration_Flows_Run_Independently_From_Each_Other_a3365e3.png) 
+![](images/Integration_Flows_Run_Independently_From_Each_Other_a3365e3.png)
 
 Assume that one timer-based integration flow looks up and consolidates data from a source component on a regular basis. A 2nd integration flow \(running independently from the 1st one\) needs to know the time when the first integration flow was processed \(to be used in a notification mail, for example\).
 

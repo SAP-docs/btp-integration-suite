@@ -14,11 +14,9 @@ Specify the runtime properties of the integration flow.
 
 3.  Specify the following properties.
 
-    With the property *Product Profile*, you choose the target runtime environment for the integration content designed with the application.
+    With the property *Runtime Profile*, you choose the target runtime environment for the integration content designed with the application.
 
-    A product profile defines a set of capabilities for Cloud integration content design supported by a specific target integration platform. For example, a specific product profile supports the configuration of a specific set of adapter types and integration flow steps.
-
-    See: [Product Profiles](product-profiles-8007daa.md)
+    A runtime profile defines a set of capabilities for Cloud integration content design supported by a specific target integration platform. For example, a specific runtime profile supports the configuration of a specific set of adapter types and integration flow steps. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 
     **Runtime Configuration Properties**
 
@@ -42,21 +40,21 @@ Specify the runtime properties of the integration flow.
     </tr>
     <tr>
     <td valign="top">
-
-     *Namespace Mapping* 
+    
+    *Namespace Mapping* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Map a prefix to a namespace at runtime.
 
-    Enter a namespace-prefix pair with a format ***xmlns:<prefix\>=<namespace\>***.
+    Enter a namespace-prefix pair with a format `xmlns:<prefix>=<namespace>`.
 
     This parameter is required for elements such as the content-based router, content modifier or content filter that can use namespaces in their configuration. You can either enter the namespace-prefix pair or the tool automatically fills the namespace-prefix pair whenever a lookup is performed for the assigned WSDL.
 
-    You can also enter multiple namespace-prefixes as shown in the example: ***xmlns:test=http://sapcd.com/testABC;xmlns:test2=http://sapcd.com/testPQR***.
+    You can also enter multiple namespace-prefixes as shown in the example: `xmlns:test=http://sapcd.com/testABC;xmlns:test2=http://sapcd.com/testPQR`.
 
     > ### Note:  
     > `xmlns:ns0=https://hcischemas.netweaver.neo.com/hciflow`
@@ -73,14 +71,14 @@ Specify the runtime properties of the integration flow.
     </tr>
     <tr>
     <td valign="top">
-
-     *Message Processing Log* 
+    
+    *Message Processing Log* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Configure the log level to display in the *Monitoring* editor.
 
     Select one of the log levels from the *Message Processing Log* dropdown.
@@ -95,14 +93,14 @@ Specify the runtime properties of the integration flow.
     </tr>
     <tr>
     <td valign="top">
-
-     *Allowed Header\(s\)* 
+    
+    *Allowed Header\(s\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the headers to be retained when the incoming message is processed.
 
     > ### Note:  
@@ -142,14 +140,14 @@ Specify the runtime properties of the integration flow.
     </tr>
     <tr>
     <td valign="top">
-
-     *HTTP Session Reuse* 
+    
+    *HTTP Session Reuse* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose one of the following options:
 
     -   *None*
@@ -185,7 +183,7 @@ Specify the runtime properties of the integration flow.
 **Related Information**  
 
 
-[Product Profiles](product-profiles-8007daa.md "Cloud Integration allows you to use integration content for different target integration platforms. Accordingly, different product profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.")
+[Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md "Cloud Integration allows you to use integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.")
 
 [Define Content Modifier](define-content-modifier-8f04a70.md "")
 

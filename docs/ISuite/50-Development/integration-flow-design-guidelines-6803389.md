@@ -13,7 +13,7 @@ This section provides guidelines for integration developers covering the followi
 <tr>
 <td valign="top">
 
- [Learn the Basics](learn-the-basics-ebc6034.md) 
+[Learn the Basics](learn-the-basics-ebc6034.md) 
 
 
 
@@ -29,7 +29,7 @@ Helps you to understand the basic capabilities for modeling integration flows.
 <tr>
 <td valign="top">
 
- [Guidelines to Design Enterprise-Grade Integration Flows](guidelines-to-design-enterprise-grade-integration-flows-a8cd981.md) 
+[Guidelines to Design Enterprise-Grade Integration Flows](guidelines-to-design-enterprise-grade-integration-flows-a8cd981.md) 
 
 
 
@@ -47,7 +47,7 @@ For example: applying highest security standards, keeping your integration flows
 <tr>
 <td valign="top">
 
- [Guidelines to Implement Specific Integration Patterns](guidelines-to-implement-specific-integration-patterns-eaf929e.md) 
+[Guidelines to Implement Specific Integration Patterns](guidelines-to-implement-specific-integration-patterns-eaf929e.md) 
 
 
 
@@ -64,7 +64,10 @@ For example: content-based routing, content enricher, and splitter.
 </tr>
 </table>
 
-For each design guideline, one or more reference integration flows are documented. You can also access the integration flows from SAP API Business Hub as described in [How to Work with the Example Integration Flows](how-to-work-with-the-example-integration-flows-03e6959.md).
+> ### Note:  
+> It can be the case that you've applied the integration flow design guidelines described in this section to your best knowledge, but you still face issues during the operation of the scenario. For example, you have applied all design rules with regard to performance but still the performance isn't good enough at runtime. In such cases, you can check out the following page to search for a service that helps you to optimize the implementation of your scenario: [SAP Services and Support](https://www.sap.com/services-support.html).
+
+For each design guideline, one or more reference integration flows are documented. You can also access the integration flows from SAP Business Accelerator Hub as described in [How to Work with the Example Integration Flows](how-to-work-with-the-example-integration-flows-03e6959.md).
 
 The integration flows are designed to meet the following requirements:
 

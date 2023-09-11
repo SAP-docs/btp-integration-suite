@@ -33,7 +33,7 @@ Description
 <tr>
 <td valign="top">
 
- *Name* 
+*Name* 
 
 
 
@@ -49,7 +49,7 @@ Name of the artifact that is locked.
 <tr>
 <td valign="top">
 
- *Type* 
+*Type* 
 
 
 
@@ -65,7 +65,7 @@ Type of the artifact that is locked, like integration flow, REST API, or integra
 <tr>
 <td valign="top">
 
- *Package* 
+*Package* 
 
 
 
@@ -81,7 +81,7 @@ For integration artifacts, the name of the package to which the locked artifact 
 <tr>
 <td valign="top">
 
- *Locked At* 
+*Locked At* 
 
 
 
@@ -97,7 +97,7 @@ Time when the user locked the artifact.
 <tr>
 <td valign="top">
 
- *Locked By* 
+*Locked By* 
 
 
 

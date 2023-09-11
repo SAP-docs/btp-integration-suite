@@ -169,7 +169,7 @@ You can verify the concatenated single name by inspecting the entry of the is ma
 
 [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md "")
 
-[Creating Message Mapping As A Flow Step](creating-message-mapping-as-a-flow-step-3d5cb7f.md "")
+[Creating Message Mapping as a Flow Step](creating-message-mapping-as-a-flow-step-3d5cb7f.md "")
 
 [Cloud Integration – Usage of WSDLs in the SOAP Adapter](https://blogs.sap.com/2018/06/28/cloud-integration-usage-of-wsdls-in-the-soap-adapter/)
 

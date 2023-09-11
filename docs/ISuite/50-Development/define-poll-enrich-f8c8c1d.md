@@ -71,14 +71,14 @@ You can use the *Poll Enrich* to read \(poll\) messages from an external compone
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Aggregation Algorithm*
 
 
     
     </td>
     <td valign="top">
-
+    
     This parameter determines how the system merges the reply from the external component into a single message.
 
     There are the following options.
@@ -100,14 +100,14 @@ You can use the *Poll Enrich* to read \(poll\) messages from an external compone
     </tr>
     <tr>
     <td valign="top">
-
-     *Throw Exception if no Message Found* 
+    
+    *Throw Exception if no Message Found* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option to throw an exception in the message processing if no message is found. By default, this option is disabled.
 
     If you keep this option disabled, the header `SAP_PollEnrichMessageFound` is set to false and processing continues even if there’s no message.

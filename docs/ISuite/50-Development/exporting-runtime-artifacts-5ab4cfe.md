@@ -19,12 +19,12 @@ By exporting the runtime artifacts, the application automatically generates a nu
     > In the `<MIGName>_testdata_ICA.xml` file, for choice elements, some of the choice options are commented out to be XSD-valid. You can choose to change this in the xml file to have other elements uncommented or commented.
 
 
-This automatic generation is a particularly enormous time saver, because without the application, all these schemes, scripts, or payloads must be created separately and manually.
+This automatic generation is a particularly enormous time saver because without the application, all these schemes, scripts, or payloads must be created separately and manually.
 
 > ### Note:  
-> In SAP Process Orchestration mode not all artifacts are relevant and therefore only fewer artifacts are exported.
+> In SAP Process Orchestration mode, not all artifacts are relevant and therefore only fewer artifacts are exported.
 
-You can then import these runtime artifacts in either of these integration solutions and use them to implement your A2A/B2B integration scenario. To know more, see [Consuming Artifacts in Integration Flows](consuming-artifacts-in-integration-flows-a33a6c6.md)
+You can then import these runtime artifacts in either of these integration solutions and use them to implement your A2A/B2B integration scenario. See [Consuming Artifacts in Integration Flows](consuming-artifacts-in-integration-flows-a33a6c6.md)
 
 
 
@@ -57,14 +57,14 @@ You can then import these runtime artifacts in either of these integration solut
     </tr>
     <tr>
     <td valign="top">
-
+    
     *SAP Cloud Integration Runtime Artifacts*
 
 
     
     </td>
     <td valign="top">
-
+    
     The MIG/MAG will be exported in a format where you can directly import them in SAP Cloud Integration.
 
 
@@ -73,14 +73,14 @@ You can then import these runtime artifacts in either of these integration solut
     </tr>
     <tr>
     <td valign="top">
-
+    
     *SAP Process Integration Runtime Artifacts*
 
 
     
     </td>
     <td valign="top">
-
+    
     The MIG/MAG will be exported in a format where you can directly import them in SAP Process Integration.
 
 
@@ -204,4 +204,42 @@ Subset-specific code that identifies the Message Guideline. \(Corresponding to U
 
 > ### Note:  
 > The old EANCOM naming convention is still supported. However, if there is an integration flow for EANCOM with old XSD files and you want to use Message XSD from the new SAP Integration Suite Export, then you would need to replace the older EANCOM files with the new UN-EDIFACT file in your EDI Flow Steps.
+
+
+
+<a name="loio5ab4cfe5ec724adda074c9773ea6b895__section_x2t_2jl_4xb"/>
+
+## Extended Namespace Support for MIGs
+
+Few pointers to be considered for your MIGs for SAP S/4HANA SOAP type systems and Custom Messages.
+
+The application has now been extended to support namespace handling. Earlier, namespace prefixes were only allowed at the root node level and these prefixes were removed as part of internal processing. The recent addition of GS1 XML to our Type System library has enabled the support of XML elements and attributes which are a part of the namespace and require a namespace declaration.
+
+To elaborate on the changes, a node will now carry its namespace prefix in the internal payload format if its required by the message standard. In other words, the namespace prefix will no longer be removed as part of the internal processing.
+
+The change is relevant for the message types of the following type system:
+
+-   S/4HANA Cloud SOAP
+
+-   S/4HANA On-Premise SOAP
+-   Custom Messages \(if the message is defined in a namespace\)
+
+This change will come into effect only when you trigger a new Export of Runtime Artifacts and update your integration flow and will influence all new and existing Message Implementation Guidelines. When you update your integration flow, you need to replace all the files using the latest export of runtime artifacts. You cannot update/replace only a few files as a mix of old and updated artifacts will cause compatibility issue.
+
+You might come across the following scenarios while trying to update your integration flow:
+
+-   Your MIG uses XSD Assertions and, the XPath of any of your MIG Assertions uses an absolute path starting from the root node.
+
+    -   If this is the case, you need to change the XPath of your Assertion to include the namespace prefix of the root node.
+
+    -   Or use a relative XPath starting from the level where you have defined the XSD Assertion.
+
+-   •Your integration flow has an additional flow step within the internal processing and this flow step defines an absolute XPath including the root node.
+    -   If so, you also need to add the root node namespace prefix to this XPath.
+
+
+-   Your integration flow has an additional flow step within the internal processing and this flow step is executing an additional processing/transformation \(like a Groovy or XSLT script\).
+    -   If so, you need to check if your script needs to be updated as well.
+
+
 

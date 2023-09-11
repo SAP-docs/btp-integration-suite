@@ -10,9 +10,9 @@ In this section, we'll show you how to map an XML message to JSON format using a
 
 ## Definition
 
-The message-mapping step in SAP Cloud Integration supports different types of schema definitions such as XSD, WSDL, EDMX, and Swagger/OpenAPI Spec JSON. If you like to map from or to a JSON format, you can add a Swagger/OpenAPI Spec JSON file to your source or target structure. Here, we support JSON files based on OpenAPI Spec versions 2.0 and 3.0 and especially the JSON definition files of the REST APIs that are published on the [SAP API Business Hub](https://api.sap.com/).
+The message-mapping step supports different types of schema definitions such as XSD, WSDL, EDMX, and Swagger/OpenAPI Spec JSON. If you like to map from or to a JSON format, you can add a Swagger/OpenAPI Spec JSON file to your source or target structure. Here, we support JSON files based on OpenAPI Spec versions 2.0 and 3.0 and especially the JSON definition files of the REST APIs that are published on SAP Business Accelerator Hub at [https://api.sap.com](https://api.sap.com/).
 
-For more information about the message mapping and on which message structures aren’t supported when it comes to JSON mappings, see [Creating Message Mapping As A Flow Step](creating-message-mapping-as-a-flow-step-3d5cb7f.md).
+For more information about the message mapping and on which message structures aren’t supported when it comes to JSON mappings, see [Creating Message Mapping as a Flow Step](creating-message-mapping-as-a-flow-step-3d5cb7f.md).
 
 
 
@@ -24,7 +24,7 @@ The sample *Modeling Basics - XML To JSON Mapping* integration flow contains a m
 
 ![](images/2105_Design-Guideline_Message-Mapping-1-Flow_d32806c.png)
 
-The incoming product file can contain multiple products. For each product, an item is created whereas the item number is incremented automatically. The source structure is an XML file whereas the target structure should be in JSON format. In our example, we used a JSON specification originated from the [SAP API Business Hub](https://api.sap.com/) which – for simplicity reasons – we've modified.
+The incoming product file can contain multiple products. For each product, an item is created whereas the item number is incremented automatically. The source structure is an XML file whereas the target structure should be in JSON format. In our example, we used a JSON specification originated from SAP Business Accelerator Hub which – for simplicity reasons – we've modified.
 
 ![](images/2105_Design-Guideline_Message-Mapping-2-MapToFlow_5932987.png)
 
@@ -80,7 +80,7 @@ Optionally, you can simulate the message mapping via the integration flow simula
 **Related Information**  
 
 
-[Creating Message Mapping As A Flow Step](creating-message-mapping-as-a-flow-step-3d5cb7f.md "")
+[Creating Message Mapping as a Flow Step](creating-message-mapping-as-a-flow-step-3d5cb7f.md "")
 
-[Simulation of an Integration Flow](simulation-of-an-integration-flow-2e2210b.md "The simulation feature allows you to test an integration flow or its subset and see if you can get the desired outcome even before you deploy the integration flow. Based on the simulation result, you can decide whether to continue and deploy the integration flow or make some changes to it. You can also resolve if there are any errors.")
+[Simulation of an Integration Flow](simulation-of-an-integration-flow-2e2210b.md "The simulation feature allows you to test an integration flow or its subset and see if you can get the desired outcome even before you deploy the integration flow. Based on the simulation result, you can decide whether to continue and deploy the integration flow or changes the same. You can also resolve if there are any errors.")
 

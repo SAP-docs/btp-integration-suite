@@ -55,14 +55,14 @@ You can use this procedure to create an OData model or build up an existing one 
     </tr>
     <tr>
     <td valign="top">
-
+    
     Address
 
 
     
     </td>
     <td valign="top">
-
+    
     Endpoint URI of the target system
 
 
@@ -71,14 +71,14 @@ You can use this procedure to create an OData model or build up an existing one 
     </tr>
     <tr>
     <td valign="top">
-
+    
     Client
 
 
     
     </td>
     <td valign="top">
-
+    
     Client of the target system
 
 
@@ -87,14 +87,14 @@ You can use this procedure to create an OData model or build up an existing one 
     </tr>
     <tr>
     <td valign="top">
-
+    
     Namespace
 
 
     
     </td>
     <td valign="top">
-
+    
     Logical grouping of the service implementation
 
 
@@ -103,14 +103,14 @@ You can use this procedure to create an OData model or build up an existing one 
     </tr>
     <tr>
     <td valign="top">
-
+    
     Service Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Name of the service implementation
 
 
@@ -119,14 +119,14 @@ You can use this procedure to create an OData model or build up an existing one 
     </tr>
     <tr>
     <td valign="top">
-
+    
     Version
 
 
     
     </td>
     <td valign="top">
-
+    
     Version of the service implementation
 
 
@@ -135,19 +135,19 @@ You can use this procedure to create an OData model or build up an existing one 
     </tr>
     <tr>
     <td valign="top">
-
+    
     Proxy Type
 
 
     
     </td>
     <td valign="top">
-
+    
     The type of proxy that you are using to connect to the target system:
 
     -   Select *On-Premise* if you are connecting to an on-premise system using the SAP Cloud Connector.
 
-        This option is only available if you have chosen SAP Cloud Integration as the product profile.
+        This option is only available if you have chosen Cloud Integration as the runtime profile.
 
         If you select this option, the *Address* field of the adapter refers to a virtual address that has to be configured in the SAP Cloud Connector settings.
 
@@ -158,14 +158,14 @@ You can use this procedure to create an OData model or build up an existing one 
     </tr>
     <tr>
     <td valign="top">
-
+    
     Authentication
 
 
     
     </td>
     <td valign="top">
-
+    
     Select *Basic* if you want to use user credentials to connect to the target system.
 
 
@@ -174,14 +174,14 @@ You can use this procedure to create an OData model or build up an existing one 
     </tr>
     <tr>
     <td valign="top">
-
+    
     Credential Name
 
 
     
     </td>
     <td valign="top">
-
+    
     Name of the user credentials artifact deployed on the tenant
 
 

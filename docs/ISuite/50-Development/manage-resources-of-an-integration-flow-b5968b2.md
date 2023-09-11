@@ -4,12 +4,7 @@
 
 # Manage Resources of an Integration Flow
 
-Use *Resources* to manage different resources associated within an integration content optimally. The term "resources" refers to a collection of different categories of file types. A table in the resources view displays files grouped by categories and their filenames alphabetically sorted. Expanding each resource category shows the files within the category.
-
-Resource files with a link allow you to view or modify the content in a file-specific editor. You can modify the file content only when the integration content is in edit mode.
-
-> ### Note:  
-> Mouseover the filename to view the access path.
+Use *Resources* tab to manage different resources associated within an integration content optimally. The term "resources" refers to a collection of different categories of file types.
 
 
 <table>
@@ -35,6 +30,20 @@ Extensions
 
 
 </th>
+<th valign="top">
+
+You can add from
+
+
+
+</th>
+<th valign="top">
+
+You can...
+
+
+
+</th>
 </tr>
 <tr>
 <td valign="top">
@@ -53,7 +62,23 @@ Archive
 </td>
 <td valign="top">
 
- `.jar` 
+`.jar` 
+
+
+
+</td>
+<td valign="top">
+
+File System
+
+Integration Flow
+
+
+
+</td>
+<td valign="top">
+
+ 
 
 
 
@@ -76,7 +101,25 @@ Message Mapping
 </td>
 <td valign="top">
 
- `.mmap` 
+`.mmap` 
+
+
+
+</td>
+<td valign="top">
+
+File System
+
+Integration Flow
+
+ES Repository
+
+
+
+</td>
+<td valign="top">
+
+ 
 
 
 
@@ -92,7 +135,21 @@ Operation Mapping
 </td>
 <td valign="top">
 
- `.opmap` 
+`.opmap` 
+
+
+
+</td>
+<td valign="top">
+
+ES Repository
+
+
+
+</td>
+<td valign="top">
+
+ 
 
 
 
@@ -111,6 +168,22 @@ XSLT Mapping
 `.xslt`
 
 `.xsl`
+
+
+
+</td>
+<td valign="top">
+
+File System
+
+Integration Flow
+
+
+
+</td>
+<td valign="top">
+
+ 
 
 
 
@@ -142,6 +215,22 @@ Groovy Script
 
 
 </td>
+<td valign="top">
+
+File System
+
+Integration Flow
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -153,14 +242,30 @@ Java Script
 </td>
 <td valign="top">
 
- `.js` 
+`.js` 
+
+
+
+</td>
+<td valign="top">
+
+File System
+
+Integration Flow
+
+
+
+</td>
+<td valign="top">
+
+ 
 
 
 
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="3">
+<td valign="top" rowspan="4">
 
 Schemas
 
@@ -176,7 +281,23 @@ XSD
 </td>
 <td valign="top">
 
- `.xsd` 
+`.xsd` 
+
+
+
+</td>
+<td valign="top">
+
+File System
+
+Integration Flow
+
+
+
+</td>
+<td valign="top">
+
+Upload individual files or an archive file that contains only XSD resources.
 
 
 
@@ -192,7 +313,27 @@ WSDL
 </td>
 <td valign="top">
 
- `.wsdl` 
+`.wsdl`
+
+`.xsd`
+
+
+
+</td>
+<td valign="top">
+
+File System
+
+Integration Flow
+
+ES Repository
+
+
+
+</td>
+<td valign="top">
+
+Upload individual files or an archive file that contains multiple WSDL or XSD or both type resources.
 
 
 
@@ -215,105 +356,11 @@ EDMX
 
 
 </td>
-</tr>
-</table>
-
-
-
-<a name="loiob5968b260c1548418df4e529a9cb153f__section_nbs_mvf_fbb"/>
-
-## Adding Local Resources
-
-
-
-### To add files from the file system, do the following:
-
-You can add multiple resources from the file system. Also, archive the parent along with its dependent resources in a single `*.zip` file and add.
-
-But you can't add multiple archive `(*.zip)` files or an archive file along with other resource files, only resources with the following extensions and dependencies are uploaded:
-
-
-<table>
-<tr>
-<th valign="top">
-
-Resource Type
-
-
-
-</th>
-<th valign="top">
-
-Dependent Resources
-
-
-
-</th>
-<th valign="top">
-
-You can...
-
-
-
-</th>
-</tr>
-<tr>
 <td valign="top">
 
-WSDL
+File System
 
-
-
-</td>
-<td valign="top">
-
-WSDL, XSD
-
-
-
-</td>
-<td valign="top">
-
-Upload individual files or an archive file that contains multiple WSDL or XSD or both type resources.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-XSD
-
-
-
-</td>
-<td valign="top">
-
-XSD
-
-
-
-</td>
-<td valign="top">
-
-Upload individual files or an archive file that contains only XSD resources.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-EDMX
-
-
-
-</td>
-<td valign="top">
-
-EDMX, XML
+Integration Flow
 
 
 
@@ -331,14 +378,23 @@ Ensure that your XML file contains the valid EDMX tag.
 <tr>
 <td valign="top">
 
-XSLT mapping
+JSON
 
 
 
 </td>
 <td valign="top">
 
-XSL
+`.json` 
+
+
+
+</td>
+<td valign="top">
+
+File System
+
+Integration Flow
 
 
 
@@ -352,6 +408,27 @@ Upload individual files or an archive file that contains only XSL resources.
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiob5968b260c1548418df4e529a9cb153f__section_nbs_mvf_fbb"/>
+
+## Adding Local Resources
+
+Under the *Resources* tab, choose *Local*.
+
+A table in the resources view displays files grouped by categories and their filenames alphabetically sorted. Expanding each resource category shows the files within the category. Resource files with a link allow you to view or modify the content in a file-specific editor. You can modify the file content only when the integration content is in edit mode.
+
+> ### Note:  
+> Mouseover the filename to view the access path.
+
+
+
+### To add files from the file system, do the following:
+
+You can add multiple resources from the file system. Also, archive the parent along with its dependent resources in a single `*.zip` file and add.
+
+But you can't add multiple archive `(*.zip)` files or an archive file along with other resource files, only resources with the following extensions and dependencies are uploaded:
 
 > ### Note:  
 > The resource view uploaders are supported for Remote APIs as well.
@@ -367,7 +444,7 @@ Upload individual files or an archive file that contains only XSL resources.
 
 
 
-### To add files from an integration flow project, do the following:
+### To add files from another integration flow, do the following:
 
 1.  In the *Local* tab, choose *Add* and select a file type.
 
@@ -379,13 +456,14 @@ Upload individual files or an archive file that contains only XSL resources.
 
 5.  To add dependent resources, select *Include Additional Resources*.
 
-    > ### Note:  
-    > MMAP files can be added from ESR. To know more, see: [Importing Mapping Content from ES Repository](importing-mapping-content-from-es-repository-e18fc05.md)
-    > 
-    > You can also copy MMAP files from other integration flows. While adding an MMAP file, the dependent resources get copied along with the file. You get to see a summary of the list of dependent resources in a dialog box before adding the file.
-
 6.  In the *All Resources* table, select one or more dependent files and choose *Add* to upload the files.
 
+
+
+
+### To add files from an ES Repository, do the following:
+
+See: [Importing Mapping Content from ES Repository](IntegrationSettings/importing-mapping-content-from-es-repository-e18fc05.md)
 
 
 

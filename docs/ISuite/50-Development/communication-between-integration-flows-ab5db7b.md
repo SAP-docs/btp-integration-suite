@@ -105,7 +105,7 @@ SOAP 1.x adapter
 
 The following figure illustrates the options.
 
- ![](images/Flow2Flow_Communication_Options_9c71d86.png) 
+![](images/Flow2Flow_Communication_Options_9c71d86.png)
 
 
 

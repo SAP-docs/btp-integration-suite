@@ -46,21 +46,21 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     context
 
 
     
     </td>
     <td valign="top">
-
+    
     A wrapper for the message processing pipeline context and the request and response Flows that are executed by the ProxyEndpoint and TargetEndpoint.
 
 
     
     </td>
     <td valign="top">
-
+    
     flow, session
 
 
@@ -69,21 +69,21 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     context.proxyRequest
 
 
     
     </td>
     <td valign="top">
-
+    
     An object that represents the inbound request message to the ProxyEndpoint \(from the requesting app to the API proxy\)
 
 
     
     </td>
     <td valign="top">
-
+    
     headers, query parameters, method, body, url
 
 
@@ -92,21 +92,21 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     context.targetRequest
 
 
     
     </td>
     <td valign="top">
-
+    
     An object that represents the outbound request message from the TargetEndpoint \(from the API proxy to the back end service\).
 
 
     
     </td>
     <td valign="top">
-
+    
     headers, query parameters, method, body, url
 
 
@@ -115,21 +115,21 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     context.targetResponse
 
 
     
     </td>
     <td valign="top">
-
+    
     An object that represents the inbound target response message \(from the backend service to the API proxy\)
 
 
     
     </td>
     <td valign="top">
-
+    
     headers, content, status
 
 
@@ -138,21 +138,21 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     context.proxyResponse
 
 
     
     </td>
     <td valign="top">
-
+    
     An object that represents the outbound proxy response message \(from the API proxy to the requesting app\)
 
 
     
     </td>
     <td valign="top">
-
+    
     headers, content, status
 
 
@@ -161,21 +161,21 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     Context.flow
 
 
     
     </td>
     <td valign="top">
-
+    
     The name of the current flow.
 
 
     
     </td>
     <td valign="top">
-
+    
      
 
 
@@ -184,21 +184,21 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     Context.session
 
 
     
     </td>
     <td valign="top">
-
+    
     A map of name/value pairs that you can use to pass objects between two different steps executing in the same context. For example: context.session\['key'\] = 123.
 
 
     
     </td>
     <td valign="top">
-
+    
      
 
 
@@ -239,14 +239,14 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     url
 
 
     
     </td>
     <td valign="top">
-
+    
     The url property is a read/write convenience property that combines scheme, host, port, path, and query parameters for the targetRequest.
 
     The complete URL of the request is composed of the following properties:
@@ -273,14 +273,14 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     headers
 
 
     
     </td>
     <td valign="top">
-
+    
     HTTP request headers as a mapping of String =\> List
 
     Examples:
@@ -317,14 +317,14 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     queryParams
 
 
     
     </td>
     <td valign="top">
-
+    
     The request message query parameters as a mapping of String =\> List.
 
     Examples: `"?city=PaloAlto&city=NewYork"`
@@ -345,14 +345,14 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     method
 
 
     
     </td>
     <td valign="top">
-
+    
     The HTTP verb \(GET, POST, PUT, DELETE. PATCH, etc.\) associated with the request
 
     Examples:
@@ -381,14 +381,14 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     body
 
 
     
     </td>
     <td valign="top">
-
+    
     The message body \(payload\) of the HTTP request.
 
     The request body has the following members:
@@ -480,14 +480,14 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     headers
 
 
     
     </td>
     <td valign="top">
-
+    
     The HTTP headers of the response message as a mapping of String =\> List.
 
     Example:
@@ -500,14 +500,14 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     status
 
 
     
     </td>
     <td valign="top">
-
+    
     The status code with status message as a property. Both status code and status message are available as properties.
 
     Example:
@@ -522,14 +522,14 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     content
 
 
     
     </td>
     <td valign="top">
-
+    
     The HTTP body \(payload content\) of the response message.
 
     Response content has the following members:
@@ -575,21 +575,21 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     context.getVariable\(\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Retrieves the value of a predefined or custom variable.
 
 
     
     </td>
     <td valign="top">
-
+    
     `context.getVariable("variable-name");` 
 
 
@@ -598,21 +598,21 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     context.setVariable\(\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Sets the value for a custom variable or for any predefined variables.
 
 
     
     </td>
     <td valign="top">
-
+    
     `context.setVariable("variable-name", value);` 
 
 
@@ -621,21 +621,21 @@ A context object is created for each request or response transaction executed by
     </tr>
     <tr>
     <td valign="top">
-
+    
     context.removeVariable\(\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Removes a variable from the context.
 
 
     
     </td>
     <td valign="top">
-
+    
     `context.removeVariable('variable-name');` 
 
 
@@ -739,7 +739,7 @@ Crypto object adds basic, high-performance cryptographic support to the JavaScri
 
     Syntax:
 
-     `crypto.dateFormat(format, [timezone], [time])`
+    `crypto.dateFormat(format, [timezone], [time])`
 
     The following table shows the parameters and examples of Crypto date/time support:
 
@@ -770,21 +770,21 @@ Crypto object adds basic, high-performance cryptographic support to the JavaScri
     </tr>
     <tr>
     <td valign="top">
-
+    
     format \(string\)
 
 
     
     </td>
     <td valign="top">
-
+    
     The underlying implementation for this parameter is java.text.SimpleDateFormat, for example: 'YYYY-MM-DD HH:mm:ss.SSS'
 
 
     
     </td>
     <td valign="top">
-
+    
     Get the current time, down to milliseconds: `var _now = crypto.dateFormat('YYYY-MM-DD HH:mm:ss.SSS');` 
 
 
@@ -793,21 +793,21 @@ Crypto object adds basic, high-performance cryptographic support to the JavaScri
     </tr>
     <tr>
     <td valign="top">
-
+    
     timezone \(string, optional\)
 
 
     
     </td>
     <td valign="top">
-
+    
     The underlying implementation for this parameter is java.util.TimeZone. Default: UTC
 
 
     
     </td>
     <td valign="top">
-
+    
     Get the current time for Pacific Time Zone:`var _pst = crypto.dateFormat('YYYY-MM-DD HH:mm:ss.SSS','PST');` 
 
 
@@ -816,21 +816,21 @@ Crypto object adds basic, high-performance cryptographic support to the JavaScri
     </tr>
     <tr>
     <td valign="top">
-
+    
     time \(number, optional\)
 
 
     
     </td>
     <td valign="top">
-
+    
     A Unix timestamp value to format. Default: current time
 
 
     
     </td>
     <td valign="top">
-
+    
     Get the value of ten seconds from current time: `var _timeNow = Number(context.getVariable('system.timestamp'));``var ten_seconds = crypto.dateFormat('YYYY-MM-DD HH:mm:ss.SSS','PST', _timeNow + 10 * 1000);` 
 
 

@@ -36,7 +36,7 @@ PUT
 </td>
 <td valign="top">
 
- `/HistoryKeystoreEntries('{Hexalias}')` 
+`/HistoryKeystoreEntries('{Hexalias}')` 
 
 
 

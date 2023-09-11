@@ -4,9 +4,9 @@
 
 # Simulation of an Integration Flow
 
-The simulation feature allows you to test an integration flow or its subset and see if you can get the desired outcome even before you deploy the integration flow. Based on the simulation result, you can decide whether to continue and deploy the integration flow or make some changes to it. You can also resolve if there are any errors.
+The simulation feature allows you to test an integration flow or its subset and see if you can get the desired outcome even before you deploy the integration flow. Based on the simulation result, you can decide whether to continue and deploy the integration flow or changes the same. You can also resolve if there are any errors.
 
- <a name="concept_yxf_f5w_1lb"/>
+<a name="concept_yxf_f5w_1lb"/>
 
 <!-- concept\_yxf\_f5w\_1lb -->
 
@@ -19,10 +19,10 @@ The simulation feature is evolving in numerous directions and incorporating new 
 -   In edit mode, you can simulate an integration flow without saving the data and settings.
 
     > ### Note:  
-    > When you switch from edit to read mode, the simulation output won't be retained.
+    > When you switch from edit to read mode, the simulation output isn't retained.
 
 
- <a name="concept_vfh_tdv_vkb"/>
+<a name="concept_vfh_tdv_vkb"/>
 
 <!-- concept\_vfh\_tdv\_vkb -->
 
@@ -41,7 +41,7 @@ This section lists the advantages of using simulation in an integration flow.
 -   The smart upload functionality allows you to upload a zip file as a simulation input payload. The content of the trace message can also be downloaded after simulation.
 
 
- <a name="concept_gjj_ztw_1lb"/>
+<a name="concept_gjj_ztw_1lb"/>
 
 <!-- concept\_gjj\_ztw\_1lb -->
 
@@ -112,7 +112,9 @@ All
 </td>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" rowspan="2">
+
+Call
 
 Call
 
@@ -121,21 +123,36 @@ Call
 </td>
 <td valign="top">
 
--   External Call
+External Call
 
-    -   Request Reply
+-   Request Reply
 
-    -   Content Enricher
+-   Content Enricher
 
-    -   Send
+-   Send
 
 
--   Local Call
 
-    -   Process Call
 
-    -   Looping Process Call
+</td>
+<td valign="top">
 
+All
+
+You can't make the actual call to a receiver system to get the response. However, you can mock the response from the receiver system via receiver adapter. Select the receiver adapter that is connected to *Request Reply* step and select *Add Simulation Response*. Provide the payload or headers in the dialog and the same is considered as a response when you run the simulation. If you don't mock the response, the message payload from the previous steps is be considered.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Local Call
+
+-   Process Call
+
+-   Looping Process Call
 
 
 
@@ -177,10 +194,7 @@ Message Routing
 </td>
 <td valign="top">
 
-All. Except the following:
-
--   Aggregator
-
+Aggregator isn't supported.
 
 
 
@@ -269,7 +283,7 @@ XML Validator
 </tr>
 </table>
 
- <a name="concept_czr_ssg_xkb"/>
+<a name="concept_czr_ssg_xkb"/>
 
 <!-- concept\_czr\_ssg\_xkb -->
 
@@ -307,7 +321,7 @@ Details
 <tr>
 <td valign="top">
 
- *Start Point* 
+*Start Point* 
 
 
 
@@ -330,7 +344,7 @@ Place a Start Point at the beginning of your flow path. It feeds a simulation in
 <tr>
 <td valign="top">
 
- *End Point* 
+*End Point* 
 
 
 
@@ -353,7 +367,7 @@ Place an End Point to end the simulation on your connection or the defined path 
 <tr>
 <td valign="top">
 
- *Add Simulation input* 
+*Add Simulation input* 
 
 
 
@@ -392,7 +406,7 @@ For more information, see [Using Various Types of Body Files in the Simulation](
 <tr>
 <td valign="top">
 
- *Add Simulation Response* 
+*Add Simulation Response* 
 
 
 
@@ -421,7 +435,7 @@ Allows the integration developer to simulate the response from the receiver adap
 <tr>
 <td valign="top">
 
- *Run Simulation* 
+*Run Simulation* 
 
 
 
@@ -444,7 +458,7 @@ Used to run the simulation once the start and end point have been defined.
 <tr>
 <td valign="top">
 
- *Clear Simulation* 
+*Clear Simulation* 
 
 
 
@@ -467,7 +481,7 @@ Removes all of the simulation elements such as the start point, end point, and m
 <tr>
 <td valign="top">
 
- *Message Envelope* 
+*Message Envelope* 
 
 
 
@@ -489,7 +503,7 @@ When the simulation run is successful, the message envelope opens and you can fi
 </tr>
 </table>
 
- <a name="concept_blw_fr5_zkb"/>
+<a name="concept_blw_fr5_zkb"/>
 
 <!-- concept\_blw\_fr5\_zkb -->
 

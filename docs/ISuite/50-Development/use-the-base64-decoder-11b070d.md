@@ -156,7 +156,7 @@ java.lang.String
 
 The same step overwrites the payload with the property value `${property.productImage}` using the following settings \(in tab *Message Body*\):
 
-The *Type* parameter is set to *Expression* and in the *Body* entry field, the string ***$\{property.productImage\}*** is entered.
+The *Type* parameter is set to *Expression* and in the *Body* entry field, the string `${property.productImage}` is entered.
 
 After this step, the message body contains the encoded image.
 

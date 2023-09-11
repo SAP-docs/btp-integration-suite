@@ -36,7 +36,7 @@ GET
 </td>
 <td valign="top">
 
- `/AlternativePartners?$filter=Agency eq '{Agency}' and Scheme eq '{Scheme}' and Id eq '{Id}'&$select=Pid` 
+`/AlternativePartners?$filter=Agency eq '{Agency}' and Scheme eq '{Scheme}' and Id eq '{Id}'&$select=Pid` 
 
 
 

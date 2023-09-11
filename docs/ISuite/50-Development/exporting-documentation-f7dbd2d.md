@@ -49,14 +49,14 @@ You can use the document file as a reference to implement the messages and mappi
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Documentation \(PDF\)*
 
 
     
     </td>
     <td valign="top">
-
+    
     A PDF document of the MIG/MAG will be exported.
 
 
@@ -65,14 +65,14 @@ You can use the document file as a reference to implement the messages and mappi
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Documentation \(RTF\)*
 
 
     
     </td>
     <td valign="top">
-
+    
     The MIG/MAG in RTF format will be exported. RTF documents can be edited by MS Word.
 
 
@@ -81,14 +81,14 @@ You can use the document file as a reference to implement the messages and mappi
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Documentation \(Excel\)*
 
 
     
     </td>
     <td valign="top">
-
+    
     An Excel document of the MIG/MAG will be exported.
 
 

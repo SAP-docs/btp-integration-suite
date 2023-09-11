@@ -250,7 +250,7 @@ The *ItemNumber* element with the value *30* has the *Last Message* indicator *<
 The subsequent Message Mapping step maps from multimap items to a multimap order.
 
 > ### Tip:  
-> If you migrate your integration scenario from SAP Process Orchestration to SAP Integration Suite, you can connect to your Enterprise Services Repository and upload the message mapping, as described in [Importing Content from ES Repository](importing-content-from-es-repository-53db5fb.md). Otherwise, you can create the Message Mapping from scratch.
+> If you migrate your integration scenario from SAP Process Orchestration to SAP Integration Suite, you can connect to your Enterprise Services Repository and upload the message mapping, as described in [Importing Content from SAP Process Orchestration System](IntegrationSettings/importing-content-from-sap-process-orchestration-system-53db5fb.md). Otherwise, you can create the Message Mapping from scratch.
 
 Source and target message types are specified in the Message Mapping \(the occurrence of the target message is set to *unbound*\).
 

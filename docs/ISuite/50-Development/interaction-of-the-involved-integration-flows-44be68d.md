@@ -17,7 +17,7 @@ To simulate the communication of sender and receiver systems through Cloud Integ
 
 The 3 integration flows interact with each other in the following way:
 
- ![](images/Pattern_EO_Overview_Landscape_756b7b0.png) 
+![](images/Pattern_EO_Overview_Landscape_756b7b0.png)
 
 The HTTP client provides a parameter in the dynamic part of the request URL that indicates the pattern or scenario \(for example, scenario [Sender and Receiver with SAP RM Protocol](sender-and-receiver-with-sap-rm-protocol-9f3e2b6.md)\).
 

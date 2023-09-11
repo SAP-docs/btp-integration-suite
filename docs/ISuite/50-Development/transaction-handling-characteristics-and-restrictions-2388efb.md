@@ -38,11 +38,11 @@ A transaction is closed at the end of the process \(or subprocess\) where it's d
 > ### Note:  
 > When the transaction timeout has been exceeded, the operation fails.
 
-For a detailed description of the transaction handling configuration and options, see [Define Transaction Handling](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/2a5d4bc3b5da46df84b26ac96450587b.html "You can configure transaction handling on integration process or local integration process level.") :arrow_upper_right:.
+For a detailed description of the transaction handling configuration and options, see [Define Transaction Handling](define-transaction-handling-2a5d4bc.md).
 
 When working with transactions, different configuration options are possible leading to different transactional behavior. Some integration flow steps do require a transaction. Some integration flow steps aren't supported with transactional resources. Different combinations of transaction settings are technically possible although not necessarily recommended or allowed. The following characteristics and limitations apply:
 
--   By default, when you create a new integration flow, JDBC transaction is switched on to ensure data consistency. However, a transaction is only opened if your integration flow contains a step that carries out a database operation that requires a transaction.
+-   By default, when you create an integration flow, transaction handling is switched off for processing performance reasons. If required, you can switch on transaction handling to ensure data consistency. See: [Define Transaction Handling](define-transaction-handling-2a5d4bc.md). Even if you switch on transaction handling, a transaction is only opened if your integration flow contains a step that carries out a database operation that requires a transaction.
 
 -   Data store operations and the writing of variables can benefit from a JDBC transaction handler to ensure data consistency across multiple data store operations. However, it can also be used without a JDBC transaction. In this case, the database operation is committed for the single integration flow step and no end-to-end transaction is hold.
 

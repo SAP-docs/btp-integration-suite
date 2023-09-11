@@ -43,8 +43,8 @@ Each package has the following details:
 
     This section contains user ratings and feedback for the package.
 
--   **View in API Business Hub**
+-   **View in SAP Business Accelerator Hub**
 
-    At the package level, you can view and copy APIs to the Integration Suite. If you want to perform actions such as trying out the API or generating the code, then navigate to SAP API Business Hub by choosing *View in API Business Hub*. Choosing the link takes you to the same package in SAP API Business Hub.
+    At the package level, you can view and copy APIs to the Integration Suite. If you want to perform actions such as trying out the API or generating the code, then navigate to SAP Business Accelerator Hub by choosing *View in*SAP Business Accelerator Hub. Choosing the link takes you to the same package in SAP Business Accelerator Hub.
 
 

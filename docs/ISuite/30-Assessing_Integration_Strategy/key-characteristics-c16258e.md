@@ -4,7 +4,7 @@
 
 Key characteristics are criteria that help enterprise architects and integration architects to map integration styles to relevant capabilities of integration technologies.
 
- Integration Assessment comes with the following key characteristic groups:
+Integration Assessment comes with the following key characteristic groups:
 
 ****
 
@@ -121,7 +121,7 @@ Data transformation: Level of data structure transformation \(such as mappings\)
 
 When assessing your integration strategy, you analyze which integration technology is possible or supported for dedicated key characteristics relevant for your organization.
 
- Integration Assessment uses key characteristics as a basis for questionnaires that guide you through the interface request process \(during the requirement analysis phase\).
+Integration Assessment uses key characteristics as a basis for questionnaires that guide you through the interface request process \(during the requirement analysis phase\).
 
 There are two different key characteristic types:
 

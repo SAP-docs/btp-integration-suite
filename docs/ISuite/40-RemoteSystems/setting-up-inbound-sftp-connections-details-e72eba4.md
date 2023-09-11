@@ -48,7 +48,7 @@ Configure the **sender SFTP adapter** to specify the technical details of how th
 **Related Information**  
 
 
-[How SFTP Works](how-sftp-works-fc8467b.md "")
+
 
 [Creating SFTP Keys](creating-sftp-keys-3485a75.md "You can set up reliable file transfer based on SSH File Transfer Protocol (SFTP). SFTP is an enhancement of the Secure Shell (SSH) network protocol.")
 

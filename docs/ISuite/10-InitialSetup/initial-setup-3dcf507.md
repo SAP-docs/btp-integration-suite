@@ -38,7 +38,7 @@ Global Account Administrator
 </td>
 <td valign="top">
 
-Verify the entitlements
+Verify the entitlements.
 
 
 
@@ -47,7 +47,7 @@ Verify the entitlements
 <tr>
 <td valign="top">
 
-Create subaccount
+Create subaccount.
 
 
 
@@ -56,7 +56,7 @@ Create subaccount
 <tr>
 <td valign="top">
 
-Assign quota to the subaccount
+Assign quota to the subaccount.
 
 
 
@@ -90,7 +90,7 @@ Assign *Integration\_Provisioner* role to users for accessing the service.
 <tr>
 <td valign="top">
 
-Provision the tenant
+Provision the tenant.
 
 
 
@@ -99,7 +99,7 @@ Provision the tenant
 <tr>
 <td valign="top">
 
-Assign roles required to access the capabilities
+Assign roles required to access the capabilities.
 
 
 
@@ -113,4 +113,8 @@ Assign roles required to access the capabilities
 [Production Account](production-account-24ef511.md "This account model includes services for you to start working in SAP Integration Suite productive environment.")
 
 [Using Free Service Plans](using-free-service-plans-ddf6692.md "The free tier model for SAP BTP lets you try out services in global accounts without any additional cost using the consumption-based commercial model. Using this model, you can start working with SAP Integration Suite with a direct path to productive use.")
+
+[Managing Quotas and Entitlements Using the Cockpit](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/c8248745dde24afb91479361de336111.html?version=Cloud)
+
+[Configure Entitlements and Quotas for Subaccounts](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5ba357b4fa1e4de4b9fcc4ae771609da.html#configure-entitlements-and-quotas-from-your-subaccount)
 

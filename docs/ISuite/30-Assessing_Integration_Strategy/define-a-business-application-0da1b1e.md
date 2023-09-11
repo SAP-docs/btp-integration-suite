@@ -57,14 +57,14 @@ You can use SAP standard applications \(for example, SAP ERP\), or you can adjus
     </tr>
     <tr>
     <td valign="top">
-
+    
     General
 
 
     
     </td>
     <td valign="top">
-
+    
     Use this tab to specify application instances. Specify an instance name and a vendor.
 
 
@@ -73,14 +73,14 @@ You can use SAP standard applications \(for example, SAP ERP\), or you can adjus
     </tr>
     <tr>
     <td valign="top">
-
+    
     Integration Policies
 
 
     
     </td>
     <td valign="top">
-
+    
     This tab displays the following attributes:
 
     -   Integration Technology

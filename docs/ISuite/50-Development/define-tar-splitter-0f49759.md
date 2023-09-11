@@ -44,19 +44,19 @@ When you have applied the Tar Splitter on a file archive, SAP Cloud Integration 
     </tr>
     <tr>
     <td valign="top">
-
-     *File Name Pattern* 
+    
+    *File Name Pattern* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a file name pattern if you like to process only specific files from the archive.
 
     For example, if you like to process only XML files from the archive, enter the following expression:
 
-    ***\*.xml***
+    `*.xml`
 
     If you don't enter anything, all files from the archive are processed.
 
@@ -81,14 +81,14 @@ When you have applied the Tar Splitter on a file archive, SAP Cloud Integration 
     </tr>
     <tr>
     <td valign="top">
-
-     *Stop on Exception* 
+    
+    *Stop on Exception* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option to stop file processing if an exception occurs.
 
     If you deselect this option, splitting the archive and processing of the individual files continues, even if processing one of them fails.

@@ -22,9 +22,11 @@ Configure the AS4 receiver channel as a receiving MSH to exchange business docum
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -56,7 +58,7 @@ Description
 <tr>
 <td valign="top">
 
- *Address* 
+*Address* 
 
 
 
@@ -72,7 +74,7 @@ Define the endpoint URL of the sending MSH.
 <tr>
 <td valign="top">
 
- *Reference Message ID* 
+*Reference Message ID* 
 
 
 
@@ -88,7 +90,7 @@ Define the reference ID of the signal message.
 <tr>
 <td valign="top">
 
- *Message Partition Channel* 
+*Message Partition Channel* 
 
 
 
@@ -104,7 +106,7 @@ Define the partition for the AS4 message that needs to be exchanged between the 
 <tr>
 <td valign="top">
 
- *Authentication Type* 
+*Authentication Type* 
 
 
 
@@ -183,7 +185,7 @@ Provide the specific endpoint URL to support SAML-based authentication that allo
 <tr>
 <td valign="top">
 
- *Private Key Alias* 
+*Private Key Alias* 
 
 
 
@@ -199,7 +201,7 @@ Determine the private key alias for SAML authentication.
 <tr>
 <td valign="top">
 
- *Timeout \(in sec.\)* 
+*Timeout \(in sec.\)* 
 
 
 
@@ -239,7 +241,7 @@ Description
 <tr>
 <td valign="top">
 
- *Sign Message* 
+*Sign Message* 
 
 
 
@@ -248,13 +250,13 @@ Description
 
 Ensures that the outgoing message is signed.
 
-You can also set the value of this attribute dynamically by using the header ***SAP\_AS4\_Inbound\_Sign\_Message***.
+You can also set the value of this attribute dynamically by using the header `SAP_AS4_Inbound_Sign_Message`.
 
 The valid values are:
 
--   ***true***
+-   `true`
 
--   ***false***
+-   `false`
 
 
 
@@ -293,15 +295,15 @@ Specify the private key alias to sign the AS4 message.
 
 Use the relevant algorithm to sign the AS4 message.
 
-You can also set the value of this attribute dynamically by using the header ***SAP\_AS4\_Inbound\_Signing\_Algorithm***.
+You can also set the value of this attribute dynamically by using the header `SAP_AS4_Inbound_Signing_Algorithm`.
 
 The valid values are:
 
--   ***sha256rsa***
+-   `sha256rsa`
 
--   ***sha384rsa***
+-   `sha384rsa`
 
--   ***sha512rsa***
+-   `sha512rsa`
 
 
 
@@ -311,7 +313,7 @@ The valid values are:
 <tr>
 <td valign="top">
 
- *Verify Signature* 
+*Verify Signature* 
 
 
 
@@ -320,13 +322,13 @@ The valid values are:
 
 Ensures that the signature is verified.
 
-You can also set the value of this attribute dynamically by using the header ***SAP\_AS4\_Inbound\_Verify\_Sign***.
+You can also set the value of this attribute dynamically by using the header `SAP_AS4_Inbound_Verify_Sign`.
 
 The valid values are:
 
--   ***true***
+-   `true`
 
--   ***false***
+-   `false`
 
 
 
@@ -354,7 +356,7 @@ Provide the public key alias to verify the signature of the AS4 message.
 <tr>
 <td valign="top">
 
- *Decrypt Message* 
+*Decrypt Message* 
 
 
 
@@ -388,7 +390,7 @@ Provide the private key alias used to decipher the outgoing AS4 message.
 </table>
 
 > ### Note:  
-> Set the value, provided by ATO, to the ***SAP\_AS4\_Outbound\_ATO\_SAML\_AppliesTo*** header for *AppliesTo* parameter to fetch SAML token from Vanguard.
+> Set the value, provided by ATO, to the `SAP_AS4_Outbound_ATO_SAML_AppliesTo` header for *AppliesTo* parameter to fetch SAML token from Vanguard.
 
 Select the *Receipt*tab and provide values in the fields as follows.
 
@@ -415,7 +417,7 @@ Description
 <tr>
 <td valign="top">
 
- *Receipt* 
+*Receipt* 
 
 
 

@@ -11,7 +11,7 @@ You can configure an integration flow to automatically start and run on a partic
 If you want to configure a process to automatically start and run on a particular schedule, you can use this procedure to set the date and time on which the process must run once or repetitively. The day and time combinations allow you to configure the schedule the process requires. For example, you can set the trigger once on a specific date or repetitively on that date. You can periodically trigger the timer every day, specific days in a week, or specific days in a month.
 
 > ### Caution:  
-> Don’t model a Timer start event and a start message event \(sender channel\) in the same integration flow. Such a design would result in different possible errors. The timer only triggers the business logic \(integration flow\) and has no other role. To decouple the timer start event from the actual integration flow, refer to the [SAP Note](https://launchpad.support.sap.com/#/notes/2905759).
+> Don’t model a Timer start event and a start message event \(sender channel\) in the same integration flow. Such a design would result in different possible errors. The timer only triggers the business logic \(integration flow\) and has no other role. To decouple the timer start event from the actual integration flow, refer to the SAP Note [2905759](https://launchpad.support.sap.com/#/notes/2905759).
 
 > ### Remember:  
 > -   When you deploy or undeploy an integration flow with *Scheduler*, the system automatically releases all the scheduler locks.
@@ -65,7 +65,7 @@ If you want to configure a process to automatically start and run on a particula
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Run Once*
 
     Select if you want the message processing to be triggered immediately after you deploy the integration flow.
@@ -74,14 +74,14 @@ If you want to configure a process to automatically start and run on a particula
     
     </td>
     <td valign="top">
-
+    
     Not Applicable
 
 
     
     </td>
     <td valign="top">
-
+    
     When you use timer with *Run Once* option enabled, the message is triggered immediately after deploying the integration flow. If you want to trigger the message with an integration flow that you’ve already deployed, you have to undeploy the integration flow and deploy it again. If you restart the integration flow bundle, message isn't triggered.
 
 
@@ -89,8 +89,8 @@ If you want to configure a process to automatically start and run on a particula
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="4">
-
+    <td valign="top" rowspan="5">
+    
     *Schedule on Day*
 
     Select if you want the message processing to be triggered on a specific date and time.
@@ -101,14 +101,14 @@ If you want to configure a process to automatically start and run on a particula
     
     </td>
     <td valign="top">
-
+    
     On Date
 
 
     
     </td>
     <td valign="top">
-
+    
     Select the date on which you want the message processing to be triggered
 
 
@@ -117,14 +117,14 @@ If you want to configure a process to automatically start and run on a particula
     </tr>
     <tr>
     <td valign="top">
-
+    
     On Time
 
 
     
     </td>
     <td valign="top">
-
+    
     Select the time at which you want the message processing to be triggered
 
 
@@ -133,14 +133,14 @@ If you want to configure a process to automatically start and run on a particula
     </tr>
     <tr>
     <td valign="top">
-
+    
     Every
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option if you want to trigger message processing repeatedly in a specific time interval.
 
 
@@ -149,14 +149,14 @@ If you want to configure a process to automatically start and run on a particula
     </tr>
     <tr>
     <td valign="top">
-
+    
     Time Zone
 
 
     
     </td>
     <td valign="top">
-
+    
     The time zone that you want to be used as reference for the configured date and time.
 
 
@@ -164,8 +164,26 @@ If you want to configure a process to automatically start and run on a particula
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="4">
+    <td valign="top">
+    
+    *Throw exception on schedule expiry* 
 
+
+    
+    </td>
+    <td valign="top">
+    
+    The option is enabled by default. If a non-recurring schedule expires, then this option throws validation exception that sets the integration flow status to error in the *Manage Integration Content* tile of the *Monitoring* section.
+
+    In case of multiple timer steps – if at least one timer step is expired, the runtime status of the integration artifact goes into "Error" status. If you like to keep the integration artifact in "Started" status, the recommendation is to disable this option.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="4">
+    
     *Schedule to Recur*
 
     Select if you want to repeatedly trigger message processing according to a specific schedule.
@@ -176,19 +194,19 @@ If you want to configure a process to automatically start and run on a particula
     
     </td>
     <td valign="top">
-
+    
     Schedule to Recur
 
 
     
     </td>
     <td valign="top">
-
+    
     From the list of recurrence pattern, choose *Daily*, *Weekly*, or *Monthly*.
 
     Accordingly, if you choose
 
-    -    *Weekly*, choose the days of the week
+    -   *Weekly*, choose the days of the week
 
     -   *Monthly*, choose the day of the month from the list.
 
@@ -198,14 +216,14 @@ If you want to configure a process to automatically start and run on a particula
     </tr>
     <tr>
     <td valign="top">
-
+    
     On Time
 
 
     
     </td>
     <td valign="top">
-
+    
     Select the time at which you want the message processing to be triggered
 
 
@@ -214,14 +232,14 @@ If you want to configure a process to automatically start and run on a particula
     </tr>
     <tr>
     <td valign="top">
-
+    
     Every
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option if you want to trigger message processing repeatedly in a specific time interval.
 
 
@@ -230,15 +248,84 @@ If you want to configure a process to automatically start and run on a particula
     </tr>
     <tr>
     <td valign="top">
-
+    
     Time Zone
 
 
     
     </td>
     <td valign="top">
-
+    
     The time zone that you want to be used as reference for the configured date and time.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="3">
+    
+    *Advanced* 
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Seconds
+
+    Minutes
+
+    Hours
+
+    Days
+
+    Months
+
+    Years
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Create a schedule by choosing the different units of time measurement available in seconds, minutes, hours, days, months, and years. The resulting time schedule will be a combined configuration from the multiple options that you choose. The default schedule recurs at every 5th minute starting at the 0th second.
+
+    With the *Advanced* scheduler option, you can configure complex and granular schedules using combination of various units of time measurement. For example, last day of the month, last weekday of the week, specific days in a month or year, every few minutes, between certain hours, and so on. For sample usecases, read the [blog](https://blogs.sap.com/2023/03/06/sap-integration-suite-advanced-scheduler-configuration/).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Time Zone
+
+
+    
+    </td>
+    <td valign="top">
+    
+    The time zone that you want to be used as reference for the configured date and time.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Throw exception on schedule expiry* 
+
+
+    
+    </td>
+    <td valign="top">
+    
+    The option is enabled by default. If a non-recurring schedule expires, then this option throws validation exception that sets the integration flow status to error in the *Manage Integration Content* tile of the *Monitoring* section.
+
+    In case of multiple timer steps – if at least one timer step is expired, the runtime status of the integration artifact goes into "Error" status. If you like to keep the integration artifact in "Started" status, the recommendation is to disable this option.
 
 
     

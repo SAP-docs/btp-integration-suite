@@ -9,7 +9,7 @@
 ## Context
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 You are editing an OData service artifact and you have created an OData model. You have provided binding information for at least one OData object in the model.
 
@@ -40,7 +40,7 @@ You can use this procedure to update the predefined integration flow to suit you
     > 
     > -   You need to ensure that the Namespace Mapping entered in the runtime configuration, is consistent across all integration flows in an OData service artifact.
     > 
-    >     For example, you can enter the namespace-prefix pair ***xmlns:test=http://sapcd.com/testABC*** in multiple integration flows in an OData service artifact. You cannot enter ***xmlns:test=http://sapcd.com/testABC*** in one integration flow and enter ***xmlns:test=http://sapab.com*** in another integration flow in the same OData service artifact. However, it is perfectly valid to enter ***xmlns:test=http://sapcd.com/testABC*** in one integration flow and ***xmlns:test2=http://sapab.com*** in another.
+    >     For example, you can enter the namespace-prefix pair `xmlns:test=http://sapcd.com/testABC` in multiple integration flows in an OData service artifact. You cannot enter `xmlns:test=http://sapcd.com/testABC` in one integration flow and enter `xmlns:test=http://sapab.com` in another integration flow in the same OData service artifact. However, it is perfectly valid to enter `xmlns:test=http://sapcd.com/testABC` in one integration flow and `xmlns:test2=http://sapab.com` in another.
     > 
     > -   You can add other receiver/outbound adapters in the integration flow, but ensure that one of the following outbound adapters is present in the integration flow:
     >     -   OData V2

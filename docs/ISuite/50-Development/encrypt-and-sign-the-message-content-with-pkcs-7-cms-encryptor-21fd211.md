@@ -28,14 +28,14 @@ In addition to encrypting the message content, you can also sign the content to 
     <table>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a name for the encryptor.
 
 
@@ -50,17 +50,17 @@ In addition to encrypting the message content, you can also sign the content to 
     <table>
     <tr>
     <td valign="top">
-
-     *Block Size \(in bytes\)* 
+    
+    *Block Size \(in bytes\)* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the size of the data that is to be encoded.
 
-    If you enter a value equal to or less than ***0***, the whole data is encoded.
+    If you enter a value equal to or less than `0`, the whole data is encoded.
 
 
     
@@ -68,14 +68,14 @@ In addition to encrypting the message content, you can also sign the content to 
     </tr>
     <tr>
     <td valign="top">
-
-     *Encode Body with Base64* 
+    
+    *Encode Body with Base64* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select this option if the message body will be base64-encoded.
 
 
@@ -84,14 +84,14 @@ In addition to encrypting the message content, you can also sign the content to 
     </tr>
     <tr>
     <td valign="top">
-
-     *Signatures* 
+    
+    *Signatures* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select one of the following options:
 
     -   *Enveloped Data Only*
@@ -115,14 +115,14 @@ In addition to encrypting the message content, you can also sign the content to 
     <table>
     <tr>
     <td valign="top">
-
-     *Content Encryption Algorithm* 
+    
+    *Content Encryption Algorithm* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the algorithm that is to be used to encrypt the payload.
 
     Supported algorithms \(by the symmetric key\) for content encryption \(format Cipher/Operation Mode/Padding Scheme\): AES/CBC/PKCS5Padding, ARCFOUR/ECB/NoPadding, Camellia/CBC/PKCS5Padding, CAST5/CBC/PKCS5Padding, DES/CBC/PKCS5Padding, DESede/CBC/PKCS5Padding, RC2/CBC/PKCS5Padding.
@@ -133,14 +133,14 @@ In addition to encrypting the message content, you can also sign the content to 
     </tr>
     <tr>
     <td valign="top">
-
-     *Secret Key Length* 
+    
+    *Secret Key Length* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the key length.
 
     The offered key lengths depend on the chosen encryption algorithm.
@@ -151,17 +151,17 @@ In addition to encrypting the message content, you can also sign the content to 
     </tr>
     <tr>
     <td valign="top">
-
-     *Receiver Public Key Alias* 
+    
+    *Receiver Public Key Alias* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify one or more aliases.
 
-    Enter an alias to select the public key from the keystore. You can enter ***$\{header.headername\}*** or ***$\{property.propertyname\}*** to read the name dynamically from a header or exchange property.
+    Enter an alias to select the public key from the keystore. You can enter `${header.headername}` or `${property.propertyname}` to read the name dynamically from a header or exchange property.
 
 
     
@@ -169,25 +169,25 @@ In addition to encrypting the message content, you can also sign the content to 
     </tr>
     </table>
     
-6.  Define the parameters for the signing process \(only if you selected ***Signed and Enveloped Data*** for *Signatures*\).
+6.  Define the parameters for the signing process \(only if you selected `Signed and Enveloped Data` for *Signatures*\).
 
 
     <table>
     <tr>
     <td valign="top">
-
-     *Signer Parameters* 
+    
+    *Signer Parameters* 
 
 
     
     </td>
     <td valign="top">
-
+    
     For each private key alias, define the following parameters:
 
     -   *Private Key Alias* 
 
-        Enter an alias for selecting a private key from the keystore. You can enter ***$\{header.headername\}*** or ***$\{property.propertyname\}*** to read the name dynamically from a header or exchange property.
+        Enter an alias for selecting a private key from the keystore. You can enter `${header.headername}` or `${property.propertyname}` to read the name dynamically from a header or exchange property.
 
         > ### Note:  
         > Consider the security implications when deriving key aliases from header attributes as they might be influenced by inbound adapters or exported/published by outbound adapters. It is more secure to use \(exchange\) properties for this purpose.
@@ -200,7 +200,7 @@ In addition to encrypting the message content, you can also sign the content to 
 
     -   *Include Certificates*
 
-        If you activate this option \(value ***true***\), the certificate chain corresponding to the private key will be added to the SignedAndEnvelopedData element.
+        If you activate this option \(value `true`\), the certificate chain corresponding to the private key will be added to the SignedAndEnvelopedData element.
 
 
 

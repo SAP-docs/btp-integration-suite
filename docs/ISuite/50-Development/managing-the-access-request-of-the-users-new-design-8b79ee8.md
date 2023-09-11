@@ -25,7 +25,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
 
     Use the *Manage Users* page to approve or reject the developer's registration requests and manage the roles of the registered users. For assigning roles to the users, use the SAP BTP Cockpit.
 
-2.  Choose *Manage Users* \> *E-mail Configuration* and add the administrator’s email in the *E-mail Configuration* textbox.
+2.  Choose *Enterprise Manager* \> *Manage Users* \> *E-mail Configuration* and add the administrator’s email in the *E-mail Configuration* textbox.
 
     The administrator receives email notification of the pending developer registration requests on this email id. Also, the e-mail notifications to the developers or users are sent from this e-mail id.
 
@@ -75,14 +75,14 @@ You’re assigned the *AuthGroup.API.Admin* role.
             </tr>
             <tr>
             <td valign="top">
-
+            
             Administrator
 
 
             
             </td>
             <td valign="top">
-
+            
             Manages user registration. Create and delete applications on behalf of application developers. In addition, create custom attributes and import the app key.
 
 
@@ -91,14 +91,14 @@ You’re assigned the *AuthGroup.API.Admin* role.
             </tr>
             <tr>
             <td valign="top">
-
+            
             Developer
 
 
             
             </td>
             <td valign="top">
-
+            
             Create applications and check billing and metering data. Test APIs and view analytics data.
 
 
@@ -107,14 +107,14 @@ You’re assigned the *AuthGroup.API.Admin* role.
             </tr>
             <tr>
             <td valign="top">
-
+            
             Site Administrator
 
 
             
             </td>
             <td valign="top">
-
+            
             Configure updates, and perform portal changes like uploading the logo, changing the name and the description, and changing the footer links for the site.
 
 
@@ -123,14 +123,14 @@ You’re assigned the *AuthGroup.API.Admin* role.
             </tr>
             <tr>
             <td valign="top">
-
+            
             Content Administrator
 
 
             
             </td>
             <td valign="top">
-
+            
             Manages content categories.
 
 

@@ -55,7 +55,7 @@ With this is authentication option, the user \(performing the file transfer\) is
 
 More information:
 
-[How SFTP Works](how-sftp-works-fc8467b.md)
+
 
 
 
@@ -104,7 +104,7 @@ Supported by SFTP sender adapter.
 
 More information:
 
-[How SFTP Works](how-sftp-works-fc8467b.md)
+
 
 
 

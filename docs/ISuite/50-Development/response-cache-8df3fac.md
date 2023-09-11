@@ -124,7 +124,7 @@ ExcludeErrorResponse \(Optional\)
 
 The response cache policy currently caches both success and error HTTP responses by default.
 
-The default value is ***false***. If you want to exclude caching target responses with HTTP error status codes, set this element to ***true***, in which case only responses with status codes from 200 to 205 \(success codes\) are cached.
+The default value is `false`. If you want to exclude caching target responses with HTTP error status codes, set this element to `true`, in which case only responses with status codes from 200 to 205 \(success codes\) are cached.
 
 Syntax: `<ExcludeErrorResponse>true</ExcludeErrorResponse>`
 
@@ -142,7 +142,7 @@ SkipCacheLookup \(Optional\)
 </td>
 <td valign="top">
 
-This element \(if the value evaluates to ***true***\) indicates that cache lookup should be skipped and the cache should be refreshed.
+This element \(if the value evaluates to `true`\) indicates that cache lookup should be skipped and the cache should be refreshed.
 
 Syntax: `<SkipCacheLookup>variable-condition</SkipCacheLookup>`
 
@@ -164,7 +164,7 @@ SkipCachePopulation \(Optional\)
 </td>
 <td valign="top">
 
-This element \(if the value evaluates to ***true***\) indicates that a write to the cache should be skipped.
+This element \(if the value evaluates to `true`\) indicates that a write to the cache should be skipped.
 
 Syntax: `<SkipCachePopulation>variable-condition</SkipCachePopulation>`
 
@@ -186,7 +186,7 @@ UseAcceptHeader \(Optional\)
 </td>
 <td valign="top">
 
-This element \(if set to ***true***\) indicates that the response cache entry's cache key is appended with values from response accept headers.
+This element \(if set to `true`\) indicates that the response cache entry's cache key is appended with values from response accept headers.
 
 The following request headers are used while calculating the cache key:
 
@@ -211,9 +211,9 @@ UseResponseCacheHeader \(Optional\)
 </td>
 <td valign="top">
 
-This element \(if set to ***true***\) indicates that HTTP response headers are considered while setting the ***time to live*** \(TTL\) of the response in the cache.
+This element \(if set to `true`\) indicates that HTTP response headers are considered while setting the `time to live` \(TTL\) of the response in the cache.
 
-While setting TTL, the values of the following response headers are considered, and compared with the values set by the ***ExpirySettings*** element:
+While setting TTL, the values of the following response headers are considered, and compared with the values set by the `ExpirySettings` element:
 
 -   Cache-Control s-maxage
 -   Cache-Control max-age
@@ -372,7 +372,7 @@ TimeOfDay
 </td>
 <td valign="top">
 
-This element is a variable with the expiration time value \(used in the format ***hh.mm.ss***\), which indicates the time of the day when a cache entry should expire.
+This element is a variable with the expiration time value \(used in the format `hh.mm.ss`\), which indicates the time of the day when a cache entry should expire.
 
 The default time depends on the locale and timezone, which vary according to where the code is running.
 
@@ -399,7 +399,7 @@ ExpiryDate
 </td>
 <td valign="top">
 
-This element is a variable \(used in the format ***mm-dd-yyyy***\) which indicates the date on which a cache entry should expire.
+This element is a variable \(used in the format `mm-dd-yyyy`\) which indicates the date on which a cache entry should expire.
 
 > ### Sample Code:  
 > Syntax

@@ -11,7 +11,7 @@ With regard to WS-Security in a sender channel, you specify the following:
 
 The following figure illustrates the setup of components:
 
- ![](../40-RemoteSystems/images/SOAP_1_x_WS_Security_Sender_Channel_6afaf0a.png) 
+![](../40-RemoteSystems/images/SOAP_1_x_WS_Security_Sender_Channel_6afaf0a.png)
 
 The sender SOAP 1.x adapter allows the following combination of message-level security options:
 

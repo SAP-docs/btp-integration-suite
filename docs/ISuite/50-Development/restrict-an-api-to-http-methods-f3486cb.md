@@ -130,14 +130,14 @@ To test the integration scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     RestrictHttpMethod - POST
 
 
     
     </td>
     <td valign="top">
-
+    
     The POST request contains an XML body with product details. By default, the product id is defined as HT-1000. You may change the id before sending or re-sending the request.
 
     If you send the request, a new entry is added to the data store ModelingBasics-RestrictHttpMethod with entry id equals specified product id in the message body.
@@ -152,14 +152,14 @@ To test the integration scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     RestrictHttpMethod - GET
 
 
     
     </td>
     <td valign="top">
-
+    
     The GET request contains the product id in the URL path. By default, the id HT-1000 is defined. You may change the URL path depending on the specified id in the POST request before.
 
     If you send the request, the product details are read from the data store ModelingBasics-RestrictHttpMethod.
@@ -174,14 +174,14 @@ To test the integration scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     RestrictHttpMethod - PUT
 
 
     
     </td>
     <td valign="top">
-
+    
     The PUT request contains an XML body with product details.
 
     Regardless of the message body, you always get a response code 405 and the following message content returned:
@@ -194,14 +194,14 @@ To test the integration scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     RestrictHttpMethod - PATCH
 
 
     
     </td>
     <td valign="top">
-
+    
     The PATCH request contains an XML body with product details.
 
     Regardless of the message body, you always get a response code 405 and the following message content returned:
@@ -214,14 +214,14 @@ To test the integration scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     RestrictHttpMethod - DELETE
 
 
     
     </td>
     <td valign="top">
-
+    
     The DELETE request contains the product id in the URL path. By default, the id HT-1000 is defined. You may change the URL path depending on the specified id in the POST request before.
 
     If you send the request, the product details are deleted from the data store ModelingBasics-RestrictHttpMethod.

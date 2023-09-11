@@ -2,14 +2,16 @@
 
 # Configure the Ariba Receiver Adapter
 
-The Ariva receiver adapter connects SAP Cloud Integration to the Ariba network. Using this adapter, SAP and non-SAP cloud applications can send business-specific documents in commerce eXtensible Markup Language \(cXML\) format to the Ariba network.
+The Ariva receiver adapter connects SAP Integration Suite to the Ariba network. Using this adapter, SAP and non-SAP cloud applications can send business-specific documents in commerce eXtensible Markup Language \(cXML\) format to the Ariba network.
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -81,7 +83,7 @@ Description
 <tr>
 <td valign="top">
 
- *Ariba Network ID* 
+*Ariba Network ID* 
 
 
 
@@ -97,7 +99,7 @@ Enter the ID associated with the Ariba Network. The default value is set to AN01
 <tr>
 <td valign="top">
 
- *cXML Version* 
+*cXML Version* 
 
 
 
@@ -113,7 +115,7 @@ Default value provided by SAP is 1.2.025. If you are entering the version, it mu
 <tr>
 <td valign="top">
 
- *User Agent* 
+*User Agent* 
 
 
 
@@ -129,7 +131,7 @@ Enter the user agent details. The convention is a textual string representing th
 <tr>
 <td valign="top">
 
- *Language* 
+*Language* 
 
 
 

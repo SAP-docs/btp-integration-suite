@@ -80,7 +80,7 @@ To set up the API Management capability from Integration Suite, you should first
 11. Choose *Activate* on the *Activate Capabilities* dialog.
 
     > ### Note:  
-    > If you face any issues during activation or the activation fails, then refer SAP Note [2904202](https://launchpad.support.sap.com/#/notes/2904202) and proceed accordingly.
+    > If you face any issues during activation or the activation fails, then refer SAP Note [2904202](https://me.sap.com/notes/2904202) and proceed accordingly.
 
 12. On the resulting screen, choose *OK* once the status changes from *In Progress* to *Active*.
 

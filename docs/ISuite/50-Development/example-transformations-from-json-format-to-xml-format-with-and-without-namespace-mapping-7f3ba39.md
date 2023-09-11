@@ -44,14 +44,14 @@ For the transformation of this document we choose the following settings:
     </tr>
     <tr>
     <td valign="top">
-
+    
     abc
 
 
     
     </td>
     <td valign="top">
-
+    
     http://com.sap/abc
 
 
@@ -60,14 +60,14 @@ For the transformation of this document we choose the following settings:
     </tr>
     <tr>
     <td valign="top">
-
+    
     xyz
 
 
     
     </td>
     <td valign="top">
-
+    
     http://com.sap/xyz
 
 

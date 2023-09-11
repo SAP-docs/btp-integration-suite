@@ -20,9 +20,13 @@ These details will be downloaded as a JSON file.
 
 ## Procedure
 
-1.  Choose the *Design* tab and navigate to the *Company Profile* tab.
+1.  Log on to your Integration Suite .
 
-2.  Select the company profile and choose *Download*.
+2.  Choose *Design* \> *B2B Scenarios*
+
+3.  Navigate to the *Company Profile* tab.
+
+4.  Select the company profile and choose *Download*.
 
     You can similarly download the other content in the application using the *Download* option.
 

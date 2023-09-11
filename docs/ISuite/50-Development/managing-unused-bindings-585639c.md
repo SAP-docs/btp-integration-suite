@@ -9,7 +9,7 @@
 ## Context
 
 > ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://launchpad.support.sap.com/#/notes/2752867).
+> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 
 You are editing an OData API artifact and you have bound a function import or operations of an entity set to a data source. At this point, let us assume you changed the name of the function import or entity set, or even deleted it in the OData Model Editor. The binding associated with the renamed or deleted entity set or function import is now unused.
 
@@ -17,7 +17,7 @@ The unused bindings appear in a separate table on the Service Designer page. You
 
 Cloud Integration Web application helps you manage unused bindings by providing you with the following options:
 
- <a name="task_fs2_pd4_pv"/>
+<a name="task_fs2_pd4_pv"/>
 
 <!-- task\_fs2\_pd4\_pv -->
 
@@ -49,7 +49,7 @@ You can use this procedure to reconfigure the binding from the earlier entity se
     > To retain a copy of the current artifact, choose *Save as version*.
 
 
- <a name="task_nbp_xc4_pv"/>
+<a name="task_nbp_xc4_pv"/>
 
 <!-- task\_nbp\_xc4\_pv -->
 

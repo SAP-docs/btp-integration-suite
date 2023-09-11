@@ -1,6 +1,6 @@
 <!-- loioa49c05ff355f4872b152e1883c1b0a25 -->
 
-# Service to View User Details on API Business Hub Enterprise
+# Service to View User Details on API business hub enterprise
 
 API Management allows user to view their personal data stored in the API business hub enterprise.
 

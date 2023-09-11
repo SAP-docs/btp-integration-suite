@@ -38,7 +38,7 @@ POST
 </td>
 <td valign="top">
 
- `/api/v1/DeployIntegrationAdapterDesigntimeArtifact?Id='SubsystemSymbolicName1'` 
+`/api/v1/DeployIntegrationAdapterDesigntimeArtifact?Id='SubsystemSymbolicName1'` 
 
 
 
@@ -92,7 +92,7 @@ DELETE
 </td>
 <td valign="top">
 
- `/api/v1/IntegrationAdapterDesigntimeArtifacts(Id='SubsystemSymbolicName1')` 
+`/api/v1/IntegrationAdapterDesigntimeArtifacts(Id='SubsystemSymbolicName1')` 
 
 
 

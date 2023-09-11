@@ -50,7 +50,7 @@ POST
 </td>
 <td valign="top">
 
- `/AuthorizedUsers` 
+`/AuthorizedUsers` 
 
 
 
@@ -141,7 +141,7 @@ POST
 </td>
 <td valign="top">
 
- `/StringParameters` 
+`/StringParameters` 
 
 
 
@@ -164,7 +164,7 @@ GET
 </td>
 <td valign="top">
 
- `/StringParameters` 
+`/StringParameters` 
 
 
 
@@ -337,7 +337,7 @@ POST
 </td>
 <td valign="top">
 
- `/BinaryParameters` 
+`/BinaryParameters` 
 
 
 
@@ -436,7 +436,7 @@ PUT
 </td>
 <td valign="top">
 
- `/BinaryParameters(Pid='partner1',Id='bp1')?user=userXYZ` 
+`/BinaryParameters(Pid='partner1',Id='bp1')?user=userXYZ` 
 
 
 

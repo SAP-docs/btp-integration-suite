@@ -22,24 +22,25 @@ You can experience the following behaviour while providing input payload.
 
 ## Procedure
 
-1.  Here's how you can add simulation input while you’re working with integration flow simulation.
-2.  Identify a subset of an integration flow that you would like to simulate.
+Here's how you can add simulation input while you’re working with integration flow simulation.
 
-3.  Choose <span class="SAP-icons"></span> start point of the simulation on identified connection to begin.
+1.  Identify a subset of an integration flow that you would like to simulate.
 
-4.  A dialog opens to add a simulation input. Add the necessary details.
+2.  Choose <span class="SAP-icons"></span> start point of the simulation on identified connection to begin.
+
+3.  A dialog opens to add a simulation input. Add the necessary details.
 
     -   You can add input that could be of *Headers* or *Properties* or *Body*.
 
     -   You can also upload input payload from your local file system.
 
-5.  To add *Header*, choose *Add* button and enter the *Name* and *Value*.
+4.  To add *Header*, choose *Add* button and enter the *Name* and *Value*.
 
-6.  To add *Properties*, choose *Add* button and enter the *Name* and *Value*.
+5.  To add *Properties*, choose *Add* button and enter the *Name* and *Value*.
 
-7.  To upload your local file, choose *Upload from File System* that automatically fetches all the values.
+6.  To upload your local file, choose *Upload from File System* that automatically fetches all the values.
 
-8.  If you have chosen to upload the file, the file appears in the *Body* section and the content is displayed.
+7.  If you have chosen to upload the file, the file appears in the *Body* section and the content is displayed.
 
     > ### Note:  
     > -   A file with binary content can't be displayed in the body section. The file supports encoding in UTF8 format only.
@@ -48,7 +49,7 @@ You can experience the following behaviour while providing input payload.
     > 
     > -   If you don't want the modified content to be simulated, select *Reset* option and that brings back the uploaded file.
 
-9.  Choose *OK*.
+8.  Choose *OK*.
 
 
 **Related Information**  

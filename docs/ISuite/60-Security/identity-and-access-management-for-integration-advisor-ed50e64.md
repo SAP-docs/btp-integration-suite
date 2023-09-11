@@ -140,5 +140,48 @@ None
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+IA Administrator
+
+
+
+</td>
+<td valign="top">
+
+Develops and maintains customer content
+
+Responsibilities:
+
+-   Read & consume type systems
+
+-   Create & maintain Message Implementation Guidelines
+-   Create & maintain Mapping Guidelines
+-   Refresh B2B license entitlements
+-   Unlock Message Guidelines & Mapping Guidelines locked by other users
+
+
+
+</td>
+<td valign="top">
+
+Guidelines.Administrator
+
+Guidelines.ReadWrite
+
+Typesystem.Read
+
+
+
+</td>
+<td valign="top">
+
+None
+
+
+
+</td>
+</tr>
 </table>
 

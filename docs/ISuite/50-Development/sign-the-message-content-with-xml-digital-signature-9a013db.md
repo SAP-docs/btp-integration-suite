@@ -42,14 +42,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a name for the signifier.
 
 
@@ -82,14 +82,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Private Key Alias* 
+    
+    *Private Key Alias* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter an alias for selecting a private key from keystore. You can also enter $\{header.headername\} or $\{property.propertyname\} to read the name dynamically from a header or exchange property.
 
 
@@ -98,14 +98,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Signature Algorithm* 
+    
+    *Signature Algorithm* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Signature algorithm for the RSA,DSA, or ECDSA private key type
 
     Using the private key, the sender encrypts the digest.
@@ -118,14 +118,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Digest Algorithm* 
+    
+    *Digest Algorithm* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Digest algorithm that is used to calculate a digest from the canonicalized XML document
 
     Note that if the digest algorithm is not specified, the digest algorithm of the signature algorithm is used by default.
@@ -136,14 +136,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Signature Type* 
+    
+    *Signature Type* 
 
 
     
     </td>
     <td valign="top">
-
+    
     -   *Enveloping XML Signature* 
 
         The input message body is signed and embedded in the signature. This means that the message body is wrapped by the `Object` element, where `Object` is a child element of the `Signature` element.
@@ -163,14 +163,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *XML Schema file path* \(only if the option *Detached XML Signatures* is selected\)
+    
+    *XML Schema file path* \(only if the option *Detached XML Signatures* is selected\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose *Browse* and select the file path to the XML schema file that is used to validate the incoming XML document. This file has to be in the package source.main.resources.xsd
 
 
@@ -179,14 +179,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Signatures for Elements* \(only if the option *Detached XML Signatures* is selected\)
+    
+    *Signatures for Elements* \(only if the option *Detached XML Signatures* is selected\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose *Add* to enter the XPath to the attribute of type ID, in order to identify the element to be signed. Example: `/nsx:Document/SubDocument/@Id`
 
     Namespaces prefixes must be defined in the namespaces mapping of the runtime configuration.
@@ -197,14 +197,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Parent Node* \(only if the option *Enveloped XML Signature* is selected for the attribute *Signature Type*\)
+    
+    *Parent Node* \(only if the option *Enveloped XML Signature* is selected for the attribute *Signature Type*\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify how the parent element of the Signature element is to be specified. You have the following options:
 
     -   *Specified by Name and Namespace* \(using local name and namespace\)
@@ -216,14 +216,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Parent Node Name* \(only if the option *Enveloped XML Signature* is selected for the attribute *Signature Type* and *Specified by Name and Namespace* is selected for *Parent Node*\)
+    
+    *Parent Node Name* \(only if the option *Enveloped XML Signature* is selected for the attribute *Signature Type* and *Specified by Name and Namespace* is selected for *Parent Node*\)
 
 
     
     </td>
     <td valign="top">
-
+    
     A local name of the parent element of the Signature element
 
     This attribute is only relevant for Enveloped XML Signature case. The Signature element is added at the end of the children of the parent.
@@ -234,14 +234,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Parent Node Namespace* \(only if the option *Enveloped XML Signature* is selected for the attribute *Signature Type* and *Specified by Name and Namespace* is selected for *Parent Node*\)
+    
+    *Parent Node Namespace* \(only if the option *Enveloped XML Signature* is selected for the attribute *Signature Type* and *Specified by Name and Namespace* is selected for *Parent Node*\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Namespace of the parent element of the Signature element
 
     This attribute is only relevant for Enveloped XML Signature case. In the Enveloped XML Signature case, a null value is also allowed to support no namespaces. An empty value is not allowed.
@@ -252,14 +252,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *XPath Expression* \(only if the option *Enveloped XML Signature* is selected for the attribute *Signature Type* and *Specified by XPath expression* is selected for *Parent Node*\)
+    
+    *XPath Expression* \(only if the option *Enveloped XML Signature* is selected for the attribute *Signature Type* and *Specified by XPath expression* is selected for *Parent Node*\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter an XPath expression for the parent node to be specified.
 
     This attribute is only relevant for Enveloped XML Signature case.
@@ -270,14 +270,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Key Info Content* 
+    
+    *Key Info Content* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies which signing key information will be included in the KeyInfo element of the XML signature. You can select a combination of the following attribute values:
 
     -   *X.509 Certificate Chain*
@@ -309,14 +309,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Sign Key Info* 
+    
+    *Sign Key Info* 
 
 
     
     </td>
     <td valign="top">
-
+    
     With this attribute you can specify a reference to the KeyInfo element.
 
 
@@ -353,14 +353,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Canonicalization Method for SignedInfo* 
+    
+    *Canonicalization Method for SignedInfo* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the canonicalization method to be used to transform the `SignedInfo` element that contains the digest \(from the canonicalized XML document\).
 
 
@@ -369,14 +369,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Transform Method for Payload* 
+    
+    *Transform Method for Payload* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify the canonicalization method to be used to transform the inbound message body before it is signed.
 
 
@@ -517,14 +517,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Reference Type* 
+    
+    *Reference Type* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the value of the type attribute of the content reference.
 
     If you enter null or empty, no reference type is created.
@@ -537,14 +537,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Namespace Prefix* 
+    
+    *Namespace Prefix* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter a prefix for the XML signature namespace.
 
     Default value is *ds*.
@@ -555,14 +555,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Signature Id* 
+    
+    *Signature Id* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies the value of the Id attribute of the Signature element.
 
     If you specify no value, no Id attribute is added to the Signature element.
@@ -573,14 +573,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Output Encoding* 
+    
+    *Output Encoding* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Select an encoding scheme for the output XML document.
 
     The encoded output document will be written into the message header. If no encoding scheme is specified, the output will be *UTF-8*-encoded.
@@ -591,14 +591,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Exclude XML Declaration* 
+    
+    *Exclude XML Declaration* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify whether the XML declaration header shall be omitted in the output XML message.
 
 
@@ -607,14 +607,14 @@ You sign a message with an XML digital signature to ensure authenticity and data
     </tr>
     <tr>
     <td valign="top">
-
-     *Disallow DOCTYPE Declaration* 
+    
+    *Disallow DOCTYPE Declaration* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Specify whether DTD DOCTYPE declarations shall be disallowed in the incoming XML message.
 
 

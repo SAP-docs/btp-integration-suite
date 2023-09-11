@@ -1,6 +1,6 @@
 <!-- loio28b29d6b50d6419eadb15e59b9462da4 -->
 
-# SuccessFactors \(SOAP\) Adapter
+# SuccessFactors SOAP Adapter
 
 The SuccessFactors adapter enables you to communicate with the SuccessFactors system. You use the SOAP message protocol to connect to the SOAP-based Web services of the SuccessFactors system.
 

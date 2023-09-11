@@ -6,7 +6,7 @@ Use principal propagation to forward the principal \(identity of a user\) across
 
 In the following example setup, the principal of the inbound user is forwarded to SAP Cloud Connector, and from there to the back-end receiver system.
 
- ![](images/Principal_Propagation_Scenario_5024193.png) 
+![](images/Principal_Propagation_Scenario_5024193.png)
 
 We assume the following:
 
@@ -52,9 +52,7 @@ To configure principal propagation for this setup, perform the following steps.
 
 4.  In SAP Cloud Connector, configure the trust relationship with the SAP BTP application.
 
-    More information: [Configuring the Cloud Connector](https://help.hana.ondemand.com/help/frameset.htm?ec68ee242c3d4c7797fc53bb65abcd71.html)
-
-    You can find a step-by-step description for an example configuration in the following document under *Configure HCC for Principal Propagation*: [HCP, OData Provisioning Principal Propagation](http://www.sap.com/india/documents/2016/08/c205a8c3-817c-0010-82c7-eda71af511fa.html).
+    More information: [Cloud Connector](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector)
 
 5.  Configure the receiver system. You need to do the following:
 
@@ -65,6 +63,6 @@ To configure principal propagation for this setup, perform the following steps.
     -   Map the short-living certificate \(from SAP Cloud Connector\) to the user \(whose identity is being propagated\).
 
 
-    More information: [Configuring Principal Propagation to an ABAP System for HTTPS](https://help.hana.ondemand.com/help/frameset.htm?a8bb87a72d094e0d981d2b1f67df7bc3.html)
+    More information: [Configuring Principal Propagation to an ABAP System for HTTPS](https://userapps.support.sap.com/sap/support/knowledge/en/2462533)
 
 

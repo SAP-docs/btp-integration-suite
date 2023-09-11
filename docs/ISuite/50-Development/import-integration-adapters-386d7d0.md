@@ -2,7 +2,7 @@
 
 # Import Integration Adapters
 
-Import and auto-deploy the adapters that are published in the SAP API Business Hub in your design workspace.
+Import and auto-deploy the adapters that are published in the SAP Business Accelerator Hub in your design workspace.
 
 
 
@@ -17,9 +17,9 @@ Import and auto-deploy the adapters that are published in the SAP API Business H
 
 2.  In the *Adapter Type* dialog, select the adapter that you want to assign.
 
-    You see a list that includes both preshipped adapters and the ones from SAP API Business Hub. Though you haven't imported adapters from SAP API Business Hub, Cloud Integration shows you all the adapters that are available from the Hub.
+    You see a list that includes both preshipped adapters and the ones from SAP Business Accelerator Hub. Though you haven't imported adapters from SAP Business Accelerator Hub, Cloud Integration shows you all the adapters that are available from the Hub.
 
-    If you select an adapter from SAP API Business Hub, Cloud Integration automatically imports the adapter and its package to your design workspace, and deploys the adapter for consumption across your tenant.
+    If you select an adapter from SAP Business Accelerator Hub, Cloud Integration automatically imports the adapter and its package to your design workspace, and deploys the adapter for consumption across your tenant.
 
 3.  Save or deploy your changes after configuring the adapter. See [Configure Adapter in Communication Channels](configure-adapter-in-communication-channels-1f06633.md).
 

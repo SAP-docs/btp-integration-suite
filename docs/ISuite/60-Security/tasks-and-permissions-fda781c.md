@@ -14,7 +14,7 @@ In the different environments, these persona are mapped to different objects.
 -   In the Cloud Foundry environment, a persona ia realized by a role collection.
 
 
-The mapping of the persona to the authorization groups \(Neo\) or role collections \(Cloud Foundry\) is described under [Persona](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2937e5ca6ef448cfb21451a2461cc2a6.html "When you perform user management tasks using SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.") :arrow_upper_right:.
+The mapping of the persona to the authorization groups \(Neo\) or role collections \(Cloud Foundry\) is described under [Persona](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2937e5ca6ef448cfb21451a2461cc2a6.html "When you perform user management tasks using SAP BTP SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.") :arrow_upper_right:.
 
 In the different environments, the permissions to execute certain tasks are given by different objects.
 
@@ -1068,8 +1068,6 @@ IntegrationOperationServer.read
 
 NodeManager.deploycredentials
 
-NodeManager.readcredentials
-
 NodeManager.deploycontent
 
 
@@ -1949,7 +1947,7 @@ Test connectivity
 
 IntegrationOperationServer.read
 
-NodeManager.deploycredentials
+NodeManager.readcredentials
 
 
 
@@ -1958,7 +1956,7 @@ NodeManager.deploycredentials
 
 MonitoringDataRead \(only for tests without authentication\)
 
-CredentialsEdit
+CredentialsRead
 
 
 
@@ -2104,7 +2102,7 @@ Monitor
 </td>
 <td valign="top">
 
-Activate Archiving Enablement
+Activate archiving Enablement
 
 
 
@@ -2141,7 +2139,7 @@ Monitor
 </td>
 <td valign="top">
 
-Read Archiving Enablement
+Read archiving enablement
 
 
 
@@ -2184,7 +2182,7 @@ Monitor
 </td>
 <td valign="top">
 
-Change Archiving Configuration
+Change archiving configuration
 
 
 
@@ -2229,7 +2227,7 @@ Monitor
 </td>
 <td valign="top">
 
-Change Log Level
+Change log level
 
 
 
@@ -2263,6 +2261,49 @@ Tenant Administrator
 <tr>
 <td valign="top">
 
+Inspect
+
+
+
+</td>
+<td valign="top">
+
+Inspect usage of integration resources
+
+
+
+</td>
+<td valign="top">
+
+n.a.
+
+
+
+</td>
+<td valign="top">
+
+MonitoringDataRead
+
+
+
+</td>
+<td valign="top">
+
+Integration Developer
+
+Business Expert
+
+Read-Only Persona/System Developer
+
+Tenant Administrator
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Settings
 
 
@@ -2270,7 +2311,7 @@ Settings
 </td>
 <td valign="top">
 
-View/change product profile
+View/change runtime profile
 
 
 

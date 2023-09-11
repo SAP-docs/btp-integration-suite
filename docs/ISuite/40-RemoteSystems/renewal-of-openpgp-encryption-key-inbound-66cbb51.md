@@ -6,7 +6,7 @@ In this use case, the tenant is the receiver \(inbound communication\) and renew
 
 The following figure illustrates the communication path that is relevant for this use case:
 
- ![](images/Renewal_PGP_Encrypt_Inbound_a95879a.png) 
+![](images/Renewal_PGP_Encrypt_Inbound_a95879a.png)
 
 1.  Tenant administrator: Creates a new PGP key pair with the same user ID as the old key in the PGP Secret Keyring.
 2.  Tenant administrator: Deploys the changed PGP Secret Keyring.

@@ -2,11 +2,13 @@
 
 # SDK API
 
+SDK APIs refer to the overall set of APIs like the Generic API, Adapter API, Script API
+
 Application programming interfaces \(APIs\) are available for the following use cases:
 
 -   Using a programming language \(Java Script or Groovy\), you can control how a message is being processed on a tenant.
 
--   Using an API, you can build your own \(custom\) adapter in the context of the Adapter Development Kit.
+-   Using an API, you can build your own custom adapter in the context of the Adapter Development Kit.
 
 
 > ### Note:  
@@ -26,11 +28,15 @@ Some of the public APIs are available in the Maven Central Repository. Look out 
 
 
 
-### Adapter API
+<a name="loioc5c7933b77ba46dbaa9a2c1576dbb381__section_skh_g4j_rvb"/>
+
+## Adapter API
+
+Use Adapter APIs if you want to develop custom adapters.
 
 To access the Adapter API from Maven Central Repository, do the following steps:
 
-1.  Look out for the latest public API in Maven Central Repository. The group ID is ***com.sap.cloud.adk*** and artifact ID is ***adapter.api***.
+1.  Look out for the latest public API in Maven Central Repository. The group ID is `com.sap.cloud.adk` and artifact ID is `adapter.api`.
 
 2.  Add the maven dependency for the API in your adapter pom file. For example, the sample that follows is a way to consume the adapter API.
 
@@ -48,7 +54,7 @@ To access the Adapter API from Maven Central Repository, do the following steps:
     > 
     > ```
 
-3.  Add ***com.sap.cloud.adk*** to the ***excludeGroupIds*** section in the *Configuration Settings* of the *Maven Dependency Plugin*. For example:
+3.  Add `com.sap.cloud.adk` to the `excludeGroupIds` section in the *Configuration Settings* of the *Maven Dependency Plugin*. For example:
 
     > ### Sample Code:  
     > ```
@@ -63,41 +69,11 @@ The [javadoc for Adapter API](https://help.sap.com/doc/11615149a5364a279cb901903
 
 
 
-### Generic API
+<a name="loioc5c7933b77ba46dbaa9a2c1576dbb381__section_jqf_h4j_rvb"/>
 
-To access the Generic API from Maven Central Repository, do the following steps:
+## Script API
 
-1.  Look out for the latest public API in Maven Central Repository. The group ID is ***com.sap.cloud.adk*** and artifact ID is ***generic.api***.
-
-2.  Add the maven dependency for the API in your adapter pom file. For example, the sample that follows is a way to consume the generic API.
-
-    > ### Sample Code:  
-    > ```
-    > 
-    > 
-    > <dependency>
-    > 	<groupId>com.sap.cloud.adk</groupId>
-    > 		<artifactId>generic.api</artifactId>
-    > 		<version>XX.YY.ZZ</version>
-    > 		<!-- replace XX.YY.ZZ with the latest version -->
-    > </dependency>
-    > 
-    > 
-    > ```
-
-3.  Add ***com.sap.cloud.adk*** to the ***excludeGroupIds*** section in the *Configuration Settings* of the *Maven Dependency Plugin*. For example:
-
-    > ### Sample Code:  
-    > ```
-    > <excludeGroupIds>com.sap.cloud.adk,org.apache.camel,org.slf4j,log4j</excludeGroupIds>
-    > ```
-
-
-The [javadoc for Generic API](https://help.sap.com/doc/471310fc71c94c2d913884e2ff1b4039/Cloud/en-US/index.html) contains the complete set of packages and classes.
-
-
-
-### Script API
+Use the Script APIs if you want to use the Script step in your integration flow.
 
 Look out for the latest public API in Maven Central Repository. Use the maven coordinates that follow in your project to consume the script API.
 
@@ -116,6 +92,44 @@ Look out for the latest public API in Maven Central Repository. Use the maven co
 > ```
 
 The [javadoc for Script API](https://help.sap.com/doc/a56f52e1a58e4e2bac7f7adbf45b2e26/Cloud/en-US/index.html) contains the complete set of packages and classes.
+
+
+
+<a name="loioc5c7933b77ba46dbaa9a2c1576dbb381__section_uyc_h4j_rvb"/>
+
+## Generic API
+
+Generic APIs are common for Script step and developing custom adapters.
+
+To access the Generic API from Maven Central Repository, do the following steps:
+
+1.  Look out for the latest public API in Maven Central Repository. The group ID is `com.sap.cloud.adk` and artifact ID is `generic.api`.
+
+2.  Add the maven dependency for the API in your adapter pom file. For example, the sample that follows is a way to consume the generic API.
+
+    > ### Sample Code:  
+    > ```
+    > 
+    > 
+    > <dependency>
+    > 	<groupId>com.sap.cloud.adk</groupId>
+    > 		<artifactId>generic.api</artifactId>
+    > 		<version>XX.YY.ZZ</version>
+    > 		<!-- replace XX.YY.ZZ with the latest version -->
+    > </dependency>
+    > 
+    > 
+    > ```
+
+3.  Add `com.sap.cloud.adk` to the `excludeGroupIds` section in the *Configuration Settings* of the *Maven Dependency Plugin*. For example:
+
+    > ### Sample Code:  
+    > ```
+    > <excludeGroupIds>com.sap.cloud.adk,org.apache.camel,org.slf4j,log4j</excludeGroupIds>
+    > ```
+
+
+The [javadoc for Generic API](https://help.sap.com/doc/471310fc71c94c2d913884e2ff1b4039/Cloud/en-US/index.html) contains the complete set of packages and classes.
 
 
 

@@ -85,7 +85,7 @@ When importing a package manually, the following events are written:
 </td>
 <td valign="top">
 
- [Working with Integration Packages](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/45423ba590094233a4c82f94390df096.html "") :arrow_upper_right: 
+[Working with Integration Packages](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/45423ba590094233a4c82f94390df096.html "") :arrow_upper_right: 
 
 
 
@@ -118,7 +118,7 @@ Transport integration package
 </td>
 <td valign="top">
 
- [Content Transport](https://help.sap.com/viewer/987273656c2f47d2aca4e0bfce26c594/Cloud/en-US/e3c79d65aa604b80992e20609881ad7a.html "Reuse content across multiple tenants. Export integration content from one (source) tenant and import it on another (target) tenant.") :arrow_upper_right: 
+[Content Transport](../50-Development/content-transport-e3c79d6.md) 
 
 
 
@@ -210,7 +210,7 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing Script and Script Collection](../50-Development/developing-script-and-script-collection-e60f706.md)
 
-[Developing Message Mapping As An Artifact](../50-Development/developing-message-mapping-as-an-artifact-1d52a7b.md)
+[Creating Message Mapping as an Artifact](../50-Development/creating-message-mapping-as-an-artifact-1d52a7b.md)
 
 [Develop API-Based Integration Artifacts](../50-Development/develop-api-based-integration-artifacts-997501d.md)
 
@@ -273,7 +273,7 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing Script and Script Collection](../50-Development/developing-script-and-script-collection-e60f706.md)
 
-[Developing Message Mapping As An Artifact](../50-Development/developing-message-mapping-as-an-artifact-1d52a7b.md)
+[Creating Message Mapping as an Artifact](../50-Development/creating-message-mapping-as-an-artifact-1d52a7b.md)
 
 [Develop API-Based Integration Artifacts](../50-Development/develop-api-based-integration-artifacts-997501d.md)
 
@@ -318,7 +318,7 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing Script and Script Collection](../50-Development/developing-script-and-script-collection-e60f706.md)
 
-[Developing Message Mapping As An Artifact](../50-Development/developing-message-mapping-as-an-artifact-1d52a7b.md)
+[Creating Message Mapping as an Artifact](../50-Development/creating-message-mapping-as-an-artifact-1d52a7b.md)
 
 [Develop API-Based Integration Artifacts](../50-Development/develop-api-based-integration-artifacts-997501d.md)
 
@@ -355,7 +355,7 @@ Update integration flow configuration
 </td>
 <td valign="top">
 
- [Configure Externalized Parameters of an Integration Flow](../50-Development/configure-externalized-parameters-of-an-integration-flow-462a478.md) 
+[Configure Externalized Parameters of an Integration Flow](../50-Development/configure-externalized-parameters-of-an-integration-flow-462a478.md) 
 
 
 
@@ -396,7 +396,7 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing Script and Script Collection](../50-Development/developing-script-and-script-collection-e60f706.md)
 
-[Developing Message Mapping As An Artifact](../50-Development/developing-message-mapping-as-an-artifact-1d52a7b.md)
+[Creating Message Mapping as an Artifact](../50-Development/creating-message-mapping-as-an-artifact-1d52a7b.md)
 
 [Develop API-Based Integration Artifacts](../50-Development/develop-api-based-integration-artifacts-997501d.md)
 
@@ -471,7 +471,7 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing Script and Script Collection](../50-Development/developing-script-and-script-collection-e60f706.md)
 
-[Developing Message Mapping As An Artifact](../50-Development/developing-message-mapping-as-an-artifact-1d52a7b.md)
+[Creating Message Mapping as an Artifact](../50-Development/creating-message-mapping-as-an-artifact-1d52a7b.md)
 
 [Develop API-Based Integration Artifacts](../50-Development/develop-api-based-integration-artifacts-997501d.md)
 
@@ -538,7 +538,7 @@ Read Partner Directory entity
 </td>
 <td valign="top">
 
- [Parameterizing Integration Flows Using the Partner Directory](../50-Development/parameterizing-integration-flows-using-the-partner-directory-b7812a5.md) 
+[Parameterizing Integration Flows Using the Partner Directory](../50-Development/parameterizing-integration-flows-using-the-partner-directory-b7812a5.md) 
 
 
 
@@ -581,7 +581,7 @@ Creation of an alternative partner writes the following log event:
 </td>
 <td valign="top">
 
- [Parameterizing Integration Flows Using the Partner Directory](../50-Development/parameterizing-integration-flows-using-the-partner-directory-b7812a5.md) 
+[Parameterizing Integration Flows Using the Partner Directory](../50-Development/parameterizing-integration-flows-using-the-partner-directory-b7812a5.md) 
 
 
 
@@ -614,7 +614,7 @@ Update Partner Directory entity
 </td>
 <td valign="top">
 
- [Parameterizing Integration Flows Using the Partner Directory](../50-Development/parameterizing-integration-flows-using-the-partner-directory-b7812a5.md) 
+[Parameterizing Integration Flows Using the Partner Directory](../50-Development/parameterizing-integration-flows-using-the-partner-directory-b7812a5.md) 
 
 
 
@@ -657,7 +657,7 @@ Deletion of an authorized user writes the following log event:
 </td>
 <td valign="top">
 
- [Parameterizing Integration Flows Using the Partner Directory](../50-Development/parameterizing-integration-flows-using-the-partner-directory-b7812a5.md) 
+[Parameterizing Integration Flows Using the Partner Directory](../50-Development/parameterizing-integration-flows-using-the-partner-directory-b7812a5.md) 
 
 
 
@@ -1409,7 +1409,7 @@ For the deployment of JDBC material, the following event is written:
 </td>
 <td valign="top">
 
- [Managing JDBC Material](../50-Development/managing-jdbc-material-32ee7cd.md) 
+[Managing JDBC Material](../50-Development/managing-jdbc-material-32ee7cd.md) 
 
 
 
@@ -1442,7 +1442,7 @@ Undeploy JDBC material
 </td>
 <td valign="top">
 
- [Managing JDBC Material](../50-Development/managing-jdbc-material-32ee7cd.md) 
+[Managing JDBC Material](../50-Development/managing-jdbc-material-32ee7cd.md) 
 
 
 
@@ -1472,7 +1472,7 @@ Create user role \(only Cloud Foundry\)
 </td>
 <td valign="top">
 
- [Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md) 
+[Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md) 
 
 
 
@@ -1502,7 +1502,7 @@ Update user role \(only Cloud Foundry\)
 </td>
 <td valign="top">
 
- [Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md) 
+[Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md) 
 
 
 
@@ -1532,7 +1532,7 @@ Delete user role \(only Cloud Foundry\)
 </td>
 <td valign="top">
 
- [Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md) 
+[Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md) 
 
 
 
@@ -1576,7 +1576,7 @@ Downloading data store entry `HT-1037` of global data store `Products` writes th
 </td>
 <td valign="top">
 
- [Managing Data Stores](../50-Development/managing-data-stores-ac39f1d.md) 
+[Managing Data Stores](../50-Development/managing-data-stores-ac39f1d.md) 
 
 
 
@@ -1620,7 +1620,7 @@ Deletion of data store entry `126` of global data store `CustomerReviews` writes
 </td>
 <td valign="top">
 
- [Managing Data Stores](../50-Development/managing-data-stores-ac39f1d.md) 
+[Managing Data Stores](../50-Development/managing-data-stores-ac39f1d.md) 
 
 
 
@@ -1663,7 +1663,7 @@ Deletion of global data store `CustomerReviews` writes the following audit log e
 </td>
 <td valign="top">
 
- [Managing Data Stores](../50-Development/managing-data-stores-ac39f1d.md) 
+[Managing Data Stores](../50-Development/managing-data-stores-ac39f1d.md) 
 
 
 
@@ -1717,7 +1717,7 @@ Download of local variable `ProductId` \(related to integration flow `Write_Prod
 </td>
 <td valign="top">
 
- [Managing Variables](../50-Development/managing-variables-ca93653.md) 
+[Managing Variables](../50-Development/managing-variables-ca93653.md) 
 
 
 
@@ -1772,7 +1772,7 @@ Deletion of local variable `ProductId` \(related to integration flow `Write_Prod
 </td>
 <td valign="top">
 
- [Managing Variables](../50-Development/managing-variables-ca93653.md) 
+[Managing Variables](../50-Development/managing-variables-ca93653.md) 
 
 
 
@@ -1805,7 +1805,7 @@ Move messages to another queue
 </td>
 <td valign="top">
 
- [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](../50-Development/managing-message-queues-cdcce24.md) 
 
 
 
@@ -1848,7 +1848,7 @@ Deletion of message queue `MyQueue` writes the following audit log event:
 </td>
 <td valign="top">
 
- [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](../50-Development/managing-message-queues-cdcce24.md) 
 
 
 
@@ -1891,7 +1891,7 @@ Deletion of a message from message queue `MyQueue` writes the following audit lo
 </td>
 <td valign="top">
 
- [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](../50-Development/managing-message-queues-cdcce24.md) 
 
 
 
@@ -1934,7 +1934,7 @@ Downloading a message from message queue `MyQueue` writes the following audit lo
 </td>
 <td valign="top">
 
- [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](../50-Development/managing-message-queues-cdcce24.md) 
 
 
 
@@ -1967,7 +1967,7 @@ Retry message from message queue
 </td>
 <td valign="top">
 
- [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html "Certain adapters allow you to store messages in queues. Using the Web UI, you can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](../50-Development/managing-message-queues-cdcce24.md) 
 
 
 
@@ -2012,7 +2012,7 @@ Reading the message payload writes the following audit log event:
 </td>
 <td valign="top">
 
- [Monitor Message Processing](../50-Development/monitor-message-processing-314df3f.md) 
+[Monitor Message Processing](../50-Development/monitor-message-processing-314df3f.md) 
 
 
 
@@ -2045,7 +2045,7 @@ Read message processing log attachment
 </td>
 <td valign="top">
 
- [Monitor Message Processing](../50-Development/monitor-message-processing-314df3f.md) 
+[Monitor Message Processing](../50-Development/monitor-message-processing-314df3f.md) 
 
 
 

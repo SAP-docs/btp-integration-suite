@@ -6,7 +6,7 @@ This topic provides information on patch releases for SAP Integration Suite capa
 
 
 
-The following patch release information covers the most recent changes made to the latest version of the software. The information provided here are specific to the capabilities of SAP Integration Suite. For a comprehensive list of capability-specific release notes, see[What's New?](https://help.sap.com/doc/7ac9748e20cf453a94efda779542d34e/sap.cp.integration.suite/en-US/c10c21cd7c684f0885fa8b5db2982284.html).
+The following patch release information covers the most recent changes made to the latest version of the software. The information provided here are specific to the capabilities of SAP Integration Suite. For a comprehensive list of capability-specific release notes, see[What's New?](https://help.sap.com/whats-new/5793247a5d5741beb0decc5b7dee1160?locale=en-US).
 
 
 

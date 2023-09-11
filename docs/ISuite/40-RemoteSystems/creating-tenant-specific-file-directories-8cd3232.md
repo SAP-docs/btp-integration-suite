@@ -37,12 +37,14 @@ Start Gnu Privacy Assistant \(separately for each tenant\).
 
     These files are required to configure the usage of the GPA tool.
 
-    The file ***run\_gpa.bat*** sets the shell variable GNUPGHOME to the tenant-specific directory.
+    The file `run_gpa.bat` sets the shell variable GNUPGHOME to the tenant-specific directory.
 
-    The files ***gpa.conf*** and ***gpg.conf*** contain configurations for GPA and GPG. The file ***gpg.conf***, for example, determines the strength of the applied encryption. Read the comments in the configuration files for further details.
+    The files `gpa.conf` and `gpg.conf` contain configurations for GPA and GPG. The file `gpg.conf`, for example, determines the strength of the applied encryption. Read the comments in the configuration files for further details.
 
 
 
 
 ## Next Steps
+
+You can now start creating keys.
 

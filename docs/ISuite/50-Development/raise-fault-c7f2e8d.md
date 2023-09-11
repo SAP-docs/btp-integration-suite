@@ -8,7 +8,7 @@ A FaultResponse can consist of HTTP headers, query parameters, and a message pay
 
 During execution, the RaiseFault policy transfers the message flow to the default ErrorFlow, which in turn returns the designated FaultResponse to the requesting application. When the message flow switches to the default ErrorFlow, no further policy processing occurs. All remaining processing steps are bypassed, and the FaultResponse is returned directly to the requesting app.
 
-You can attach this policy in the following locations:![](images/Flow_policy_116062b.png) 
+You can attach this policy in the following locations:![](images/Flow_policy_116062b.png)
 
 An example payload for the policy is as follows::
 

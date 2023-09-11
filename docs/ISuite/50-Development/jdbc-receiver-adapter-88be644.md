@@ -2,25 +2,25 @@
 
 # JDBC Receiver Adapter
 
-The JDBC \(Java Database Connectivity\) adapter enables you to connect Cloud Integration to cloud or on-premise databases.
+The JDBC \(Java Database Connectivity\) adapter enables you to connect SAP Integration Suite to cloud databases.
 
 Use the JDBC receiver adapter in your integration flow to establish a connection with SAP-managed and third-party databases. Before deploying the integration flow, you’re required to do the following to establish connection with the database:
 
--   Your Tenant Administrator has uploaded and deployed JDBC drivers. For more information, see [Configure JDBC Drivers](configure-jdbc-drivers-77c7d95.md).
+-   Your tenant administrator has uploaded and deployed JDBC drivers. For more information, see [Configure JDBC Drivers](configure-jdbc-drivers-77c7d95.md).
 
 -   Create a Data Source, to access the database, based on the uploaded JDBC driver. For more information, see [Managing JDBC Data Sources](managing-jdbc-data-sources-4c873fa.md).
 
--   If you're connecting to on-premise database, then you must validate the connection in the Cloud Connector. For more information, see [Configure Access Control](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/f42fe4471d6a4a5fb09b7f3bb83c66a4.html).
-
--   Configure the JDBC adapter to communicate with your database based on the environment that hosts your tenant.
+-   -   Configure the JDBC adapter to communicate with your database based on the environment that hosts your tenant.
 
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -30,6 +30,7 @@ The JDBC receiver adapter uses XML SQL Format message protocol. The adapter perf
 > ### Note:  
 > -   UPSERT operation is currently not supported for XML SQL format. It’s recommended to use stored procedure to update an existing record. If the record doesn’t exist, then use INSERT.
 > 
+> -   Currently, only TCP connections are supported.
 > -   Deploy the public certificate in the keystore of your Cloud Integration tenant for verifying the response.
 > 
 > -   While executing direct SQL queries, it’s recommended to use standard stored procedure method to read XML files.
@@ -44,14 +45,14 @@ To try out a simple demo, visit the [blog](https://blogs.sap.com/2019/02/19/clou
 
 ## Supported Databases
 
-The following table lists the databases currently supported for Neo or Cloud Foundry tenants.
+The following table lists the databases currently supported for Cloud Foundry tenants.
 
 
 <table>
 <tr>
 <th valign="top">
 
-Database supported for Neo and Cloud Foundry
+Database supported for Cloud Foundry
 
 
 
@@ -69,20 +70,15 @@ Database supported for Neo only
 
 -   [DB2](jdbc-for-db2-on-premise-9515cf8.md)
 -   [Microsoft SQL Server \(Cloud\)](jdbc-for-microsoft-sql-server-cloud-4173d0a.md)
--   [Microsoft SQL Server \(On-Premise\)](jdbc-for-microsoft-sql-server-on-premise-9745e40.md)
 -   [Oracle \(Cloud\)](jdbc-for-oracle-cloud-f868182.md)
--   [Oracle \(On-Premise\)](jdbc-for-oracle-on-premise-e6db38a.md)
 -   [PostgreSQL \(Cloud\)](jdbc-for-postgresql-cloud-4d5b488.md)
 -   [SAP HANA \(Cloud\)](jdbc-for-sap-hana-cloud-187a8e8.md)
--   [SAP HANA Platform \(On-Premise\)](jdbc-for-sap-hana-platform-on-premise-ff29388.md)
+-   [JDBC for SAP ASE Service \(Cloud\)](jdbc-for-sap-ase-service-cloud-d96c7c5.md)
 
 
 
 </td>
 <td valign="top">
-
--   [SAP ASE Service \(Neo\)](jdbc-for-sap-ase-service-neo-a6271cc.md)
--   [SAP HANA Service \(Neo\)](jdbc-for-sap-hana-service-neo-030e47e.md)
 
 
 
@@ -180,7 +176,7 @@ Description
 Enter the name of the data source, which is created to establish the connection to your preferred database. For more information, see [Managing JDBC Data Sources](managing-jdbc-data-sources-4c873fa.md).
 
 > ### Note:  
-> -   Deployment of JDBC Data Source fails if you have heterogeneous cluster setup, that is the cluster setup must be configured with the same product profiles combination of different product profiles aren’t supported.
+> -   Deployment of JDBC Data Source fails if you have heterogeneous cluster setup, that is the cluster setup must be configured with the same runtime profiles. Combination of different runtime profiles aren’t supported.
 > 
 > -   You can use the same JDBC Data Source in different integration flows configured with JDBC adapter. But you can’t use the same JDBC Data Source to configure multiple JDBC adapters within an integration flow. You need to deploy two JDBC Data Source artifacts with different names for the same database and use them in the integrations flows having multiple JDBC adapters.
 

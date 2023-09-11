@@ -4,7 +4,7 @@
 
 The integration flow *Pattern Message Splitter - Message Mapping* illustrates the required flow steps. Alternatively, you can implement the **Splitting a Single Order with Multiple Items** use case described in [Splitter](splitter-4b475ea.md) using message mapping.
 
- ![](images/Splitter_Message_Mapping_9af27cd.png) 
+![](images/Splitter_Message_Mapping_9af27cd.png)
 
 > ### Tip:  
 > Use Message Mapping instead of General Splitter in the following cases:
@@ -99,7 +99,7 @@ Therefore, another Content Modifier is needed where the message body is defined 
 > ```
 
 > ### Note:  
-> If you migrate your integration scenario from SAP Process Orchestration to SAP Integration Suite , you can connect to your Enterprise Services Repository and upload a message mapping, as described in [Importing Content from ES Repository](importing-content-from-es-repository-53db5fb.md). Otherwise, you can create the message mapping from scratch.
+> If you migrate your integration scenario from SAP Process Orchestration to SAP Integration Suite , you can connect to your Enterprise Services Repository and upload a message mapping, as described in [Importing Content from SAP Process Orchestration System](IntegrationSettings/importing-content-from-sap-process-orchestration-system-53db5fb.md). Otherwise, you can create the message mapping from scratch.
 
 In the message mapping, the following settings are configured:
 

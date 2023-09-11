@@ -89,11 +89,12 @@ Videos
 </td>
 <td valign="top">
 
-Subscribe to Content Agent Service.
+Create an instance of Content Agent.
 
-SAP Content Agent service is now introduced with a standardized user interface. Now, you have a direct access to all the functionalities of this service on the home screen. Therefore, on subscription you can access the Content Agent Service to select and transport the API Management artifacts, such as API product and API proxy. To use Content Agent user interface, subscribe to Content Agent service application. For more information, see [Subscribe to Content Agent Service](https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/fe2599a57535408ebf1596854fbe6043.html?version=Latest).
+You can transport the API Management artifacts, such as API products, API proxies, KVMs, certificates, and API providers by creating a service instance and a service key of content agent in your source subaccount. See, [Create Service Key](https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/c0ec2ba3016644a19cd6322fbc72ea2a.html?version=Latest) and [Creating an Instance of Content Agent](creating-an-instance-of-content-agent-359ecd7.md). You can also refer to the video in the next column.
 
-Alternatively, you can create a service instance and a service key of content agent in your source subaccount. See, [Create Service Key](https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/c0ec2ba3016644a19cd6322fbc72ea2a.html?version=Latest) and refer the video in the next column.
+> ### Note:  
+> Alternatively, you can transport only the API products and the API proxies using the Content Agent service user interface. To do this, you need to **subscribe** to the free plan of Content Agent application. For more information, see [Subscribe to Content Agent Service](https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/fe2599a57535408ebf1596854fbe6043.html?version=Latest).
 
 
 
@@ -116,10 +117,10 @@ Alternatively, you can create a service instance and a service key of content ag
 </td>
 <td valign="top">
 
-> ### Note:  
-> If you’ve already subscribed to the Content Agent service as mentioned in Step 1, you can skip creating destination ContentAssemblyService in source subaccount to step.
+Create a ContentAssemblyService destination in source subaccount to make API calls to the Content Assembly Service. See, [Create SAP Content Agent Service Destination](https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/a4da0c26ced74bbfbc60e7f607dc05ab.html?version=Latest).
 
-Alternatively, you can create destination ContentAssemblyService in source subaccount to make API calls to the Content Assembly Service. See, [Create SAP Content Agent Service Destination](https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/a4da0c26ced74bbfbc60e7f607dc05ab.html?version=Latest).
+> ### Note:  
+> If you’ve already subscribed to the Content Agent service as mentioned in Step 1, you can skip creating destination ContentAssemblyService in source subaccount.
 
 
 

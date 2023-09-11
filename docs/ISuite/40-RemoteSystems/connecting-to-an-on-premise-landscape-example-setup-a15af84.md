@@ -6,7 +6,7 @@ To give you an idea of what the technical landscape behind a real-life integrati
 
 The following figure shows a typical setup of components:
 
- ![](images/Cloud_Technical_Landscape_SAP_Cloud_Connector_be397c6.png) 
+![](images/Cloud_Technical_Landscape_SAP_Cloud_Connector_be397c6.png)
 
 The left side of the figure covers the communication of Cloud Integration with the on-premise system in the customer landscape.
 

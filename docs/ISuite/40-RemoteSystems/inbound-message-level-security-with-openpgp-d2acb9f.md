@@ -29,7 +29,7 @@ Usage
 <tr>
 <td valign="top" rowspan="2">
 
- **Private key** 
+**Private key** 
 
 
 
@@ -54,7 +54,7 @@ Used by a receiver to decrypt a message \(that has been encrypted by a sender\)
 <tr>
 <td valign="top" rowspan="2">
 
- **Public key** 
+**Public key** 
 
 
 
@@ -111,7 +111,7 @@ Configure the **Decryptor** \(PGP\) and **Verifyer** \(PGP\) step.
 
 When signatures are expected, make sure that you specify the *Signer User ID of Key\(s\) from Public Keyring* for all expected senders.
 
-Based on the signer user ID of key\(s\) parts, the public key \(for message verification\) is looked up in the PGP public keyring. The signer user ID of key\(s\) key parts specified in this step restrict the list of expected senders and, in this way, act as an authorization check
+Based on the signer user ID of key\(s\) parts, the public key \(for message verification\) is looked up in the PGP public keyring. The signer user ID of key\(s\) key parts specified in this step restrict the list of expected senders and, in this way, act as an authorization check.
 
 **Related Information**  
 

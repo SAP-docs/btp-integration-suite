@@ -2,7 +2,7 @@
 
 # Data Store Example Requests
 
- 
+
 
 
 
@@ -18,7 +18,7 @@ Data Stores
 </td>
 <td valign="top">
 
- [Get All Data Stores with Overdue Messages](get-all-data-stores-with-overdue-messages-5173f5c.md) 
+[Get All Data Stores with Overdue Messages](get-all-data-stores-with-overdue-messages-5173f5c.md) 
 
 
 
@@ -54,7 +54,7 @@ Variables
 </td>
 <td valign="top">
 
- [Download a Variable](download-a-variable-94e6799.md) 
+[Download a Variable](download-a-variable-94e6799.md) 
 
 
 

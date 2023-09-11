@@ -25,7 +25,7 @@ You can now enter regular expressions for the headers that are to be added. With
 > ### Tip:  
 > Example:
 > 
-> When you enter for *Include Headers* the string ***\(x-.\*|myAdditionalHeader\)***, all headers that start with ***x-*** and the header ***myAdditionalHeader*** are added to the body of the MIME-encoded message.
+> When you enter for *Include Headers* the string `(x-.*|myAdditionalHeader)`, all headers that start with `x-` and the header `myAdditionalHeader` are added to the body of the MIME-encoded message.
 
 > ### Tip:  
 > There are various cases where message headers can get lost. When SAP Cloud Integration sends a message to a receiver through a protocol that doesn't transfer Camel headers \(for example, when the Mail receiver adapter is used\). On the other hand, assume that the information contained in the header is required by the receiver to interpret and process the message in the right way. In such a case, you can configure the MIME Multipart Encoder in such a way that Camel headers become part of the message body. Using this feature, you can make sure that the information contained in the header is transferred to the receiver.
@@ -99,17 +99,17 @@ The following cases can occur:
 
 The following figures illustrate how the property *Add Multipart Header Inline* influences the processing of the message.
 
-   
+  
   
 **Add Multipart Header Inline Selected**
 
- ![](images/MIME_Multipart_Encoder_-_selected_5da7b8c.png "Add Multipart Header Inline Selected") 
+![](images/MIME_Multipart_Encoder_-_selected_5da7b8c.png "Add Multipart Header Inline Selected")
 
-   
+  
   
 **Add Multipart Header Inline Deselected**
 
- ![](images/MIME_Multipart_Encoder_-_deselected_d2417ef.png "Add Multipart Header Inline Deselected") 
+![](images/MIME_Multipart_Encoder_-_deselected_d2417ef.png "Add Multipart Header Inline Deselected")
 
 **MIME Multipart Decoder**
 

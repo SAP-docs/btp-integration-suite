@@ -4,6 +4,9 @@
 
 JDBC receiver adapter supports DB2 On-Premise database provided by IBM.
 
+> ### Note:  
+> This adapter enables you to connect Cloud Integration to a remote database system. SAP can’t give advice on how to configure the external system nor does SAP provide support related to this system.
+
 **Database Details**
 
 
@@ -97,5 +100,5 @@ Before connecting to this database, you must upload the drivers and then, add th
 **Related Information**  
 
 
-[JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md "The JDBC (Java Database Connectivity) adapter enables you to connect Cloud Integration to cloud or on-premise databases.")
+[JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md "The JDBC (Java Database Connectivity) adapter enables you to connect SAP Integration Suite to cloud databases.")
 

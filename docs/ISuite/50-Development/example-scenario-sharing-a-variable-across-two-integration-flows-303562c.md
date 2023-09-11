@@ -43,7 +43,7 @@ Design integration flow *Integration Flow 1 - Write Variable* as depicted in the
 
     In the *Connection* tab, specify the following value for the *Address* parameter:
 
-    ***https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/espm-cloud-web/espm.svc/***
+    `https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/espm-cloud-web/espm.svc/`
 
     The external data source supports the Open DataProtocol \(OData\). For our scenario, we use the ESPM WebShop, which is based on the Enterprise Sales and Procurement Model \(ESPM\) provided by SAP.
 
@@ -69,14 +69,14 @@ Design integration flow *Integration Flow 1 - Write Variable* as depicted in the
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Operation Details*
 
 
     
     </td>
     <td valign="top">
-
+    
     Query \(GET\)
 
 
@@ -85,14 +85,14 @@ Design integration flow *Integration Flow 1 - Write Variable* as depicted in the
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Resource Path*
 
 
     
     </td>
     <td valign="top">
-
+    
     Products
 
 
@@ -101,14 +101,14 @@ Design integration flow *Integration Flow 1 - Write Variable* as depicted in the
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Query Options*
 
 
     
     </td>
     <td valign="top">
-
+    
     $select=ProductId,Price,CurrencyCode,Name
 
 
@@ -123,13 +123,13 @@ Design integration flow *Integration Flow 1 - Write Variable* as depicted in the
 
     ![](images/Global_Variable_5a8d687.png)
 
-    -   In field *Name*, enter ***Timestamp***.
+    -   In field *Name*, enter `Timestamp`.
 
     -   For parameter *Type*, select *Expression*.
 
-    -   For parameter *Data Type*, enter ***java.lang.String***.
+    -   For parameter *Data Type*, enter `java.lang.String`.
 
-    -   For parameter *Value*, enter ***$\{date:now:yyyy-MM-dd HH:mm:ss\}***.
+    -   For parameter *Value*, enter `${date:now:yyyy-MM-dd HH:mm:ss}`.
 
     -   Select the parameter *Global Scope* in order to share the variable with other integration flows on the same tenant.
 
@@ -169,11 +169,11 @@ This integration flow is also started by a Timer start event. It reads a product
 
     -   A property containing the payload of the message \(which is the content read from the ProductCatalog Data Store entry\).
 
-        As *Type*, select *Expression*, and in field *Value* enter ***$\{in.body\}***.
+        As *Type*, select *Expression*, and in field *Value* enter `${in.body}`.
 
     -   A property containing the timestamp for the latest message processing run of integration flow *Integration Flow 1 – Write Variable*. This property is defined by selecting the global variable set by the other integration flow.
 
-        As *Type*, select *Global Variable*, and in field *Value* enter ***Timestamp***.
+        As *Type*, select *Global Variable*, and in field *Value* enter `Timestamp`.
 
         This property is defined based on the global variable written by the first integration flow.
 

@@ -6,7 +6,7 @@ In this example, Cloud Integration synchronously creates a purchase order and ex
 
 The *Pattern Quality Of Service - Scenario 06a* integration flow illustrates this scenario.
 
- ![](images/Image_Scenario_with_alternative_response_be42d15.png) 
+![](images/Image_Scenario_with_alternative_response_be42d15.png)
 
 The integration flow is called using an HTTP sender adapter.
 
@@ -224,15 +224,15 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name*
 
 
     
     </td>
     <td valign="top">
-
-    ***OWN***
+    
+    `OWN`
 
 
     
@@ -240,14 +240,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *User*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the user as specified when setting up inbound basic authentication.
 
 
@@ -256,14 +256,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Password*
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the password as specified when setting up inbound basic authentication.
 
 

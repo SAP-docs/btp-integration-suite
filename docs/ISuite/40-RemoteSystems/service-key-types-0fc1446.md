@@ -36,7 +36,7 @@ Supported Authentication Options
 <tr>
 <td valign="top">
 
- *ClientId/Secret* 
+*ClientId/Secret* 
 
 
 
@@ -68,7 +68,7 @@ For API clients:
 <tr>
 <td valign="top">
 
- *Certificate* 
+*Certificate* 
 
 
 
@@ -111,7 +111,7 @@ For API clients:
 <tr>
 <td valign="top">
 
- *External Certificate* 
+*External Certificate* 
 
 
 

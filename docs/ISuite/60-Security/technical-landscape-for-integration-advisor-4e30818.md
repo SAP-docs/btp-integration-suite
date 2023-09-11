@@ -6,7 +6,7 @@ The technical infrastructure comprises a set of technical components that can co
 
 The following figure shows the high-level technical infrastructure and the main access points and connections. Areas in blue indicate components owned by customers, areas in gray are components that are owned by SAP \(in most cases\).
 
- ![](images/ICA-Security-Technical-Landscape_a088b05.png) 
+![](images/ICA-Security-Technical-Landscape_a088b05.png)
 
 
 

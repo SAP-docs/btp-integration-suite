@@ -29,7 +29,7 @@ The *Pattern Quality Of Service - Scenario 04b* integration flow illustrates thi
 
 ![](images/Pattern_Quality_Of_Service_ee747f1.png)
 
-At sender side, the scenario uses the SOAP \(SAP RM\) sender adapter with message protocol SAP Reliable Messaging. This setting ensures that the sender can pass on a protocol-specific message ID to the integration flow. Cloud Integration saves the ID in the header ***SapMessageIdEx***. See [Configure the SOAP \(SAP RM\) Sender Adapter](configure-the-soap-sap-rm-sender-adapter-6962234.md).
+At sender side, the scenario uses the SOAP \(SAP RM\) sender adapter with message protocol SAP Reliable Messaging. This setting ensures that the sender can pass on a protocol-specific message ID to the integration flow. Cloud Integration saves the ID in the header `SapMessageIdEx`. See [Configure the SOAP \(SAP RM\) Sender Adapter](configure-the-soap-sap-rm-sender-adapter-6962234.md).
 
 In a parallel multicast flow step, the message is sent to multiple routes where it's processed in parallel. Each route implements a content filter pattern \(for more information on this pattern, see also [Content Filter](content-filter-6fd4a86.md)\).
 
@@ -58,14 +58,14 @@ Value
 <tr>
 <td valign="top">
 
- *XPath Expression* 
+*XPath Expression* 
 
 
 
 </td>
 <td valign="top">
 
- ***ns0:PurchaseOrder/Items/Item\[./Category/text\(\)='Flat screens'\]*** 
+`ns0:PurchaseOrder/Items/Item[./Category/text()='Flat screens']` 
 
 
 
@@ -74,14 +74,14 @@ Value
 <tr>
 <td valign="top">
 
- *Value Type* 
+*Value Type* 
 
 
 
 </td>
 <td valign="top">
 
- ***Nodelist*** 
+`Nodelist` 
 
 
 
@@ -114,14 +114,14 @@ Value
 <tr>
 <td valign="top">
 
- *XPath Expression* 
+*XPath Expression* 
 
 
 
 </td>
 <td valign="top">
 
- ***ns0:PurchaseOrder/Items/Item\[./Category/text\(\)='Notebooks'\]*** 
+`ns0:PurchaseOrder/Items/Item[./Category/text()='Notebooks']` 
 
 
 
@@ -130,14 +130,14 @@ Value
 <tr>
 <td valign="top">
 
- *Value Type* 
+*Value Type* 
 
 
 
 </td>
 <td valign="top">
 
- ***Nodelist*** 
+`Nodelist` 
 
 
 
@@ -172,30 +172,14 @@ Value
 <tr>
 <td valign="top">
 
- *Source Message ID* 
+*Source Message ID* 
 
 
 
 </td>
 <td valign="top">
 
- ***$\{property.SplitMessageID\}*** 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Target Header Name* 
-
-
-
-</td>
-<td valign="top">
-
- ***SapMessageIdEx*** 
+`${property.SplitMessageID}` 
 
 
 
@@ -204,30 +188,14 @@ Value
 <tr>
 <td valign="top">
 
- *Context* 
+*Target Header Name* 
 
 
 
 </td>
 <td valign="top">
 
- ***Branch\_1*** 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Visibility* 
-
-
-
-</td>
-<td valign="top">
-
- ***Integration Flow*** 
+`SapMessageIdEx` 
 
 
 
@@ -236,14 +204,46 @@ Value
 <tr>
 <td valign="top">
 
- *Expiration Period \(in d\)* 
+*Context* 
 
 
 
 </td>
 <td valign="top">
 
- ***30*** 
+`Branch_1` 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Visibility* 
+
+
+
+</td>
+<td valign="top">
+
+`Integration Flow` 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Expiration Period \(in d\)* 
+
+
+
+</td>
+<td valign="top">
+
+`30` 
 
 
 
@@ -276,30 +276,14 @@ Value
 <tr>
 <td valign="top">
 
- *Source Message ID* 
+*Source Message ID* 
 
 
 
 </td>
 <td valign="top">
 
- ***$\{property.SplitMessageID\}*** 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Target Header Name* 
-
-
-
-</td>
-<td valign="top">
-
- ***SapMessageIdEx*** 
+`${property.SplitMessageID}` 
 
 
 
@@ -308,30 +292,14 @@ Value
 <tr>
 <td valign="top">
 
- *Context* 
+*Target Header Name* 
 
 
 
 </td>
 <td valign="top">
 
- ***Branch\_2*** 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Visibility* 
-
-
-
-</td>
-<td valign="top">
-
- ***Integration Flow*** 
+`SapMessageIdEx` 
 
 
 
@@ -340,14 +308,46 @@ Value
 <tr>
 <td valign="top">
 
- *Expiration Period \(in d\)* 
+*Context* 
 
 
 
 </td>
 <td valign="top">
 
- ***30*** 
+`Branch_2` 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Visibility* 
+
+
+
+</td>
+<td valign="top">
+
+`Integration Flow` 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Expiration Period \(in d\)* 
+
+
+
+</td>
+<td valign="top">
+
+`30` 
 
 
 
@@ -355,7 +355,7 @@ Value
 </tr>
 </table>
 
-At receiver side, the scenario uses the SOAP \(SAP RM\) receiver adapter. On the *Processing* tab of the adapter, the *SAP RM Message ID Determination* property is set to ***Reuse***. This setting ensures that Cloud Integration uses the value of the header ***SapMessageIdEx*** to set the SAP RM Message ID that is then passed to the receiver system. See [Configure the SOAP \(SAP RM\) Receiver Adapter](configure-the-soap-sap-rm-receiver-adapter-8366495.md).
+At receiver side, the scenario uses the SOAP \(SAP RM\) receiver adapter. On the *Processing* tab of the adapter, the *SAP RM Message ID Determination* property is set to `Reuse`. This setting ensures that Cloud Integration uses the value of the header `SapMessageIdEx` to set the SAP RM Message ID that is then passed to the receiver system. See [Configure the SOAP \(SAP RM\) Receiver Adapter](configure-the-soap-sap-rm-receiver-adapter-8366495.md).
 
 The third route removes all items except for software using the following setting in the filter flow step \(*Processing*\):
 
@@ -382,14 +382,14 @@ Value
 <tr>
 <td valign="top">
 
- *XPath Expression* 
+*XPath Expression* 
 
 
 
 </td>
 <td valign="top">
 
- ***ns0:PurchaseOrder/Items/Item\[./Category/text\(\)='Software'\]*** 
+`ns0:PurchaseOrder/Items/Item[./Category/text()='Software']` 
 
 
 
@@ -398,14 +398,14 @@ Value
 <tr>
 <td valign="top">
 
- *Value Type* 
+*Value Type* 
 
 
 
 </td>
 <td valign="top">
 
- ***Nodelist*** 
+`Nodelist` 
 
 
 
@@ -445,14 +445,14 @@ Value
 <tr>
 <td valign="top">
 
- *Message ID* 
+*Message ID* 
 
 
 
 </td>
 <td valign="top">
 
- ***$\{header.SapMessageIdEx\}*** 
+`${header.SapMessageIdEx}` 
 
 
 
@@ -461,14 +461,14 @@ Value
 <tr>
 <td valign="top">
 
- *Skip Process Call for Duplicates* 
+*Skip Process Call for Duplicates* 
 
 
 
 </td>
 <td valign="top">
 
- ***Selected*** 
+`Selected` 
 
 
 
@@ -511,15 +511,15 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     *Name* 
+    
+    *Name* 
 
 
     
     </td>
     <td valign="top">
-
-     ***OWN*** 
+    
+    `OWN` 
 
 
     
@@ -527,14 +527,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     *User* 
+    
+    *User* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the user as specified when setting up inbound basic authentication.
 
 
@@ -543,14 +543,14 @@ To test the scenario, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     *Password* 
+    
+    *Password* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Enter the password as specified when setting up inbound basic authentication.
 
 
@@ -568,7 +568,7 @@ To test the scenario, perform the following steps:
 
 4.  In the Postman client, open the *QualityOfService* folder in the *Enterprise Integration Patterns* collection, and run the *QualityOfService – Scenario 04b* request.
 
-    If you set the request parameter ***sendDuplicates*** to ***true*** \(in the *Params* tab of Postman\), the *Pattern Quality Of Service – Mocked Sender* integration flow sends a second message to the *Pattern Quality Of Service - Scenario 04b* integration flow with a delay of five seconds.
+    If you set the request parameter `sendDuplicates` to `true` \(in the *Params* tab of Postman\), the *Pattern Quality Of Service – Mocked Sender* integration flow sends a second message to the *Pattern Quality Of Service - Scenario 04b* integration flow with a delay of five seconds.
 
 5.  Once the system has processed the second message successfully, check the data store *Pattern-QualityOfService* \(open the *Monitor* application and select the *Data Stores* tile under *Manage Stores*\).
 

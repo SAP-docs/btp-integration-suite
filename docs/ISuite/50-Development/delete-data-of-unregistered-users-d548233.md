@@ -10,7 +10,7 @@ SAP API Management stores the data of users who have logged on to the developer 
 
 ## Prerequisites
 
-You are assigned the Dev Portal AuthGroup.API.Admin role.
+You are assigned the AuthGroup.API.Admin role.
 
 
 

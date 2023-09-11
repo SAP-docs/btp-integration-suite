@@ -4,7 +4,7 @@
 
 In the reference integration flow, *Pattern Content Based Routing - Raise Error*, an error is raised if no receiver can be determined. The integration flow is modeled similar to [Variant: Ignore](variant-ignore-4998bd8.md). As an exception, the default route now leads to an Error End event. In addition, an Exception Subprocess is added which handles the exception. As a result, if no routing condition is met, an error event is raised which is fetched by the Exception Subprocess.
 
- ![](images/ContentBased_Routing_Error_0cb225d.png) 
+![](images/ContentBased_Routing_Error_0cb225d.png)
 
 Different message processing options are modeled for the Exception Subprocess. The options depend on whether the event is triggered by the Error End event within the main integration process or any other error that can occur during message processing. An example for the latter, is that a receiver is temporarily unavailable.
 

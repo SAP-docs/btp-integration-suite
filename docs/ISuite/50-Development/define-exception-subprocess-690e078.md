@@ -11,7 +11,7 @@ You use this element to catch any exceptions thrown in the integration process a
 > ### Note:  
 > To learn how to implement exception handling, check out the integration flow design guidelines provided for this topic under [Handle Errors Gracefully](handle-errors-gracefully-42c95f7.md).
 > 
-> The integration flow design guidelines provide both documentation and predefined integration content. You can deploy and run the integration content out-of-the-box to learn basic concepts of Cloud Integration. You can also access the integration flows from SAP API Business Hub as described in [How to Work with the Example Integration Flows](how-to-work-with-the-example-integration-flows-03e6959.md).
+> The integration flow design guidelines provide both documentation and predefined integration content. You can deploy and run the integration content out-of-the-box to learn basic concepts of Cloud Integration. You can also access the integration flows from SAP Business Accelerator Hub as described in [How to Work with the Example Integration Flows](how-to-work-with-the-example-integration-flows-03e6959.md).
 
 
 
@@ -71,7 +71,7 @@ You use this element to catch any exceptions thrown in the integration process a
 
     > ### Note:  
     > -   The message processing log will be in an error state even if a user catches an exception and performs additional processing on it.
-    > -   You can get more details on exception using ***$\{exception.message\}*** or ***$\{exception.stacktrace\}***.
+    > -   You can get more details on exception using `${exception.message}` or `${exception.stacktrace}`.
     > -   You cannot catch exceptions of local integration process in the main integration process.
     > -   When an error is thrown during integration runtime and the same is caught by the Exception Subprocess, the processing gets terminated.
 

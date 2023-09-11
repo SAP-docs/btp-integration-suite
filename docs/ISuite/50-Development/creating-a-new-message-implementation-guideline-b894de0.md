@@ -40,7 +40,7 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
 
     2.  *Direction*: Direction is used together with your *Own Business Context* and your *Partners Business Context* to make the *Proposal Service* more precise. The values given describe the direction from a B2B interaction point of view.
 
-        -    *In* - The MIG describes a message that you receive from a Business Partner.
+        -   *In* - The MIG describes a message that you receive from a Business Partner.
 
         -   *Out* - The MIG describes a message that you send to a Business Partner.
         -   *Both* - The MIG describes a message that can both be received from a partner or sent to a partner. Or the MIG describes an A2A communication where only the *Own Business Context* is set \(and where *Partner Business Context* isn't relevant\).
@@ -66,6 +66,6 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
     > ### Note:  
     > These videos were created before our branding changes related to SAP technology were announced in January 2021.
 
-       
+
 
 

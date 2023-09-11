@@ -10,7 +10,7 @@ For each guideline, one or more example integration flows are provided that help
 
 ## Integration Packages
 
-The integration flows are contained in a set of dedicated integration packages published on SAP API Business Hub. To learn how to access the integration packages and deploy the integration flows, see [Copying the Integration Package and Deploying the Integration Flows](copying-the-integration-package-and-deploying-the-integration-flows-2cb1d31.md).
+The integration flows are contained in a set of dedicated integration packages published on SAP Business Accelerator Hub. To learn how to access the integration packages and deploy the integration flows, see [Copying the Integration Package and Deploying the Integration Flows](copying-the-integration-package-and-deploying-the-integration-flows-2cb1d31.md).
 
 
 
@@ -31,6 +31,10 @@ The Postman collections associated with the example integration flows are contai
 ## Generic Receiver
 
 For the example integration flows, we provide a generic receiver. This measure saves you the effort of configuring a receiver system. The generic receiver is implemented with a separate integration flow \(with name *GenericReceiver*\) that creates a data store entry for each receiver call.
+
+Each integration package \(as listed under [Copying the Integration Package and Deploying the Integration Flows](copying-the-integration-package-and-deploying-the-integration-flows-2cb1d31.md)\) has its own *Generic Receiver* integration flow with an integration package-specific address.
+
+As a prerequiste to run an example integration flow, you also need to deploy the *Generic Receiver* integration flow contained in the same integration package as the example integration flow.
 
 For more information about this integration flow, see [Generic Receiver](generic-receiver-83a6970.md).
 

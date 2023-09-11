@@ -2,14 +2,16 @@
 
 # Configure the FTP Sender Adapter
 
-The FTP \(File Transfer Protocol\) sender adapter connects an SAP Cloud Integration tenant to a remote system using TCP \(Transmission Control Protocol\) to receive files from the system.
+The FTP \(File Transfer Protocol\) sender adapter connects SAP Integration Suite to a remote system using TCP \(Transmission Control Protocol\) to receive files from the system.
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
-> -   You are using a product profile other than the one expected \(see [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md)\).
+> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow \(see [Product Profiles](product-profiles-8007daa.md)\). To use the latest version of a flow step or adapter, edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integraion flow.
+> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+> 
+>     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -19,22 +21,18 @@ The FTP \(File Transfer Protocol\) sender adapter connects an SAP Cloud Integrat
 > ### Note:  
 > Consider the following when operating with the FTP sender adapter:
 > 
-> -   This adapter does not support connections to SFTP servers.
-> 
->     See: [Configure the SFTP Sender Adapter](configure-the-sftp-sender-adapter-2de9ee5.md).
+> -   This adapter does not support connections to SFTP servers. See: [Configure the SFTP Sender Adapter](configure-the-sftp-sender-adapter-2de9ee5.md).
 
 > ### Note:  
 > Consider the following when using the FTP sender adapter:
 > 
 > -   Only the passive mode is supported for the FTP sender adapter.
 > 
+> -   The FTP adapter does not support TLS session re-use.
+> 
 > -   The transfer mode is *BINARY*.
 > 
 > -   You can establish a connection to your on-premise system by using Cloud Connector: [SAP Connectivity Service](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e933fd930039402c907d5afaa75eb0e1.html).
-> 
-> -   This adapter doesn’t support connections to SFTP servers.
-> 
->     See [Configure the SFTP Sender Adapter](configure-the-sftp-sender-adapter-2de9ee5.md).
 
 Once you have created a sender channel and selected the FTP sender adapter, you can configure the following attributes. Select the *General* tab and provide values in the fields as follows.
 
@@ -110,7 +108,7 @@ Description
 
 Use the relative path to read the file from a directory.
 
-Example:***parentdirectory/childdirectory***
+Example:`parentdirectory/childdirectory`
 
 
 
@@ -169,7 +167,7 @@ Name of the file to be read.
 </td>
 <td valign="top">
 
-Host name or IP address of the FTP server and an optional port, for example, ***wdfd00213123:21***.
+Host name or IP address of the FTP server and an optional port, for example, `wdfd00213123:21`.
 
 
 
@@ -242,7 +240,7 @@ Specify the transport encryption. You can choose between the following options:
 <tr>
 <td valign="top">
 
- *Credential Name* 
+*Credential Name* 
 
 
 
@@ -267,7 +265,7 @@ Name of the *User Credentials* artifact that contains the user name and password
 
 Maximum time \(in milliseconds\) to wait for the FTP server to be contacted while establishing connection or performing a read operation.
 
-Default value: ***10000***
+Default value: `10000`
 
 
 
@@ -285,9 +283,9 @@ Default value: ***10000***
 
 Maximum number of attempts allowed to reconnect to the FTP server.
 
-Default value: ***3***
+Default value: `3`
 
-Enter ***0*** to disable this behavior.
+Enter `0` to disable this behavior.
 
 
 
@@ -305,7 +303,7 @@ Enter ***0*** to disable this behavior.
 
 Time \(in milliseconds\) the system waits before attempting to reconnect to the FTP server.
 
-Default Value: ***1000***
+Default Value: `1000`
 
 
 
@@ -436,11 +434,9 @@ Choose from the following options:
 </td>
 <td valign="top">
 
-Maximum number of messages to gather in each poll. Consider how long it will take to process this number of messages, and make sure that you set a higher value for *Lock Timeout \(in min\)*. The messages are picked up sequentially.
+Maximum number of messages to gather in each poll. Enter any value between `1` and `500`. The default is set to `20`.
 
-Default: ***20*** 
-
-Example: ***1000*** can be set as a limit.
+Consider how long it will take to process this number of messages, and make sure that you set a higher value for *Lock Timeout \(in min\)*. The messages are picked up sequentially.
 
 > ### Note:  
 > The adapter processes the complete list of messages specified by this parameter before the subsequent poll \(according to the settings under *Scheduler*\) starts.
@@ -448,7 +444,7 @@ Example: ***1000*** can be set as a limit.
 > ### Note:  
 > If you are using the sender FTP adapter in combination with an Aggregator step and you expect a high message load, consider the following recommendation:
 > 
-> Set the value for *Max. Messages per Poll* to a small number larger than ***0*** \(for example, ***20***\). This ensures proper logging of the message processing status at runtime.
+> Set the value for *Max. Messages per Poll* to a small number larger than `0` \(for example, `20`\). This ensures proper logging of the message processing status at runtime.
 
 
 
@@ -564,7 +560,7 @@ You can select one of the following options from the dropdown list:
     > ### Note:  
     > If you specify an absolute file path, it may occur that the file cannot be stored correctly at runtime.
 
-    You can also specify the target directory dynamically, for example, using the timestamp of the message. The following example uses backup folders with timestamps and replaces the file extension with ***bak: backup/$\{date:now:yyyyMMdd\}/$\{file:name.noext\}.bak***
+    You can also specify the target directory dynamically, for example, using the timestamp of the message. The following example uses backup folders with timestamps and replaces the file extension with `bak: backup/${date:now:yyyyMMdd}/${file:name.noext}.bak`
 
     If you have also selected *Done File Expected* as *Read Lock Strategy*, only the file to be processed is moved and the done file will be deleted.
 
@@ -621,6 +617,9 @@ Specifies the target directory where to move the file.
 
 Select the *Scheduler* tab and provide values in the fields as follows.
 
+> ### Caution:  
+> How you specify the *Scheduler* settings depends on the constraints and requirements of your integration scenario. However, make sure to use the *Scheduler* parameters advisedly: Specify the scheduler settings in such a way that messages are not polled with too high frequency. Use intervals below 1 minute only if really required. Otherwise, there’s the risk to overload the FTP server.
+
 **Scheduler**
 
 
@@ -651,7 +650,7 @@ Description
 <tr>
 <td valign="top" rowspan="4">
 
- *Schedule on Day* 
+*Schedule on Day* 
 
 
 
@@ -722,7 +721,7 @@ Select the time zone that you want the scheduler to use as a reference for the d
 <tr>
 <td valign="top" rowspan="3">
 
- *Schedule to Recur* 
+*Schedule to Recur* 
 
 
 

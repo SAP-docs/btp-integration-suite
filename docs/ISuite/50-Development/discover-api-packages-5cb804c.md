@@ -2,7 +2,7 @@
 
 # Discover API Packages
 
-API packages supported by the API Management are available in SAP API Business Hub. You can discover these API packages on Integration Suite.
+API packages supported by the API Management are available in SAP Business Accelerator Hub. You can discover these API packages on Integration Suite.
 
 
 

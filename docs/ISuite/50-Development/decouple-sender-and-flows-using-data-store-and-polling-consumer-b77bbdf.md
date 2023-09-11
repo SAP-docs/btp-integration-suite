@@ -76,18 +76,12 @@ The Read integration process is defined as follows:
 
 ![](images/2012_Decouple_Sender_and_Flows_Using_Persistence_and_Polling_Consumer_2_ed05622.png)
 
-The integration process starts with a timer start event. The scheduler is set to run every 5 minutes.
-
-In a *Select data store operations step*, a message is then picked up from the very same data store with name `ModelingBasics-DecouplingPoll-Request`. The visibility is set to Global so that we can access it from multiple integration flows. The number of polled messages is set to 1 so that only one single message is processed at once. Furthermore, the Delete on Completion flag is selected to ensure the message gets removed after a successful processing to ensure that the message is processed only once.
+The integration process polls the message from the same data store *ModelingBasics-DecouplingPoll -Request* used before using a Data Store sender adapter. The visibility is set to *Global* so that the content can be accessed from multiple integration flows.
 
 > ### Note:  
-> -   You may poll more than one message to ensure a better performance behavior. In this case you need to enhance the integration process with a splitter step right after the Select. For reasons of simplicity, we kept the number of polled messages to 1.
-> 
-> -   The integration process needs to hold a JDBC transaction to guarantee data consistency. To achieve this, in the integration process configuration, set the transaction handling parameter to Required for JDBC. By this, if an error happens during message processing, the deletion of the message from the data store will be rolled back, and in the next scheduler run the message is polled from the data store again.
+> The integration process needs to hold a JDBC transaction to guarantee data consistency. To achieve this, in the integration process configuration, set the transaction handling parameter to Required for JDBC. By this, if an error happens during message processing, the deletion of the message from the data store will be rolled back, and in the next scheduler run the message is polled from the data store again.
 
-After the Select step, the integration process would carry out a couple of processing steps or service calls. Since the timer start event runs frequently, there will be situations where the message store is empty. To ensure that the message processing steps won’t be carried out with an empty message, we stop the processing in this case. To do this, a router step needs to be added right after the Select step. In the routing condition, we check if the number of messages is greater than zero. The routing condition of the first route is of expression type XML and is defined as follows: `/messages[count(message) > 0]`. The second route which applies if no messages have been picked up is defined as default route and ends at a message end event which will cause the message processing to complete immediately.
-
-In our sample scenario, in a *Request Reply* step, product data is read from an external source through the OData protocol \(using the OData receiver adapter\). For our scenario, we use the ESPM WebShop, which is based on the Enterprise Sales and Procurement Model \(ESPM\) provided by SAP. The demo application can be accessed at the following address: [https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/webshop/index.html](https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/webshop/index.html).
+The integration process carries out a couple of processing steps or service calls. In our sample scenario, in a *Request Reply* step, product data is read from an external source through the OData protocol \(using the OData receiver adapter\). For our scenario, we use the ESPM WebShop, which is based on the Enterprise Sales and Procurement Model \(ESPM\) provided by SAP. The demo application can be accessed at the following address: [https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/webshop/index.html](https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/webshop/index.html).
 
 The query is defined as follows:
 
@@ -148,9 +142,9 @@ To call the overall integration scenario, provide a productId header together wi
 
 [Define Data Store Operations](define-data-store-operations-79f63a4.md "You can use the data store to temporarily store messages.")
 
-[Define a Timer Start Event](define-a-timer-start-event-ae14ad7.md "You can configure an integration flow to automatically start and run on a particular schedule.")
-
 [Define Router](define-router-d7fddbd.md "")
 
 [Define Exception Subprocess](define-exception-subprocess-690e078.md "")
+
+[Data Store Sender Adapter](data-store-sender-adapter-4f5ef3f.md "This adapter enables Cloud Integration to consume messages from a data store. This feature helps you to enable asynchronous decoupling of inbound and outbound processing by using the data store as temporary storage.")
 

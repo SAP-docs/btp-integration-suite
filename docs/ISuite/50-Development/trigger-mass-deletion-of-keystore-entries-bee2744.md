@@ -36,7 +36,7 @@ PUT
 </td>
 <td valign="top">
 
- `/KeystoreResources('system')?deleteEntries=true` 
+`/KeystoreResources('system')?deleteEntries=true` 
 
 
 

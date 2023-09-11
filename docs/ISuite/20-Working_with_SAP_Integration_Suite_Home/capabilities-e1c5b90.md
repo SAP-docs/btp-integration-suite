@@ -4,9 +4,9 @@
 
 Working with capabilities.
 
-The SAP Integration Suite brings together the features and functionality of various capabilities such as Cloud Integration, API Management, Trading Partner Management, Integration Advisor, Open Connectors, and Integration Assessment. To work with these capabilities, you must:
+The SAP Integration Suite brings together the features and functionality of various capabilities such as Cloud Integration, API Management, Graph, Trading Partner Management, Integration Advisor, Open Connectors, Integration Assessment, and Migration Assessment. To work with these capabilities, you must:
 
--   Add and activate capabilities. For more information, see [Activating Capabilities](activating-capabilities-2ffb343.md).
+-   Add and activate capabilities. For more information, see [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md).
 
     > ### Note:  
     > You must have the Integration\_Provisioner role to add and activate the capabilities.

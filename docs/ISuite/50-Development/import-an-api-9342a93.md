@@ -13,7 +13,9 @@ You are assigned with *APIPortal. Administrator* role.
 The API proxy content is available as a .zip file and swagger json file. The contents adhere to the API proxy structure as defined in [API Proxy Structure](api-proxy-structure-4dfd54a.md).
 
 > ### Note:  
-> -   Ensure that the API proxy name in the <***APIProxyName***\>.xml file and the value of the *base\_path* field \(inside the APIProxyEndpoint file\) is unique.
+> -   If your API proxy uses an API provider that belongs to the type Cloud Integration flow, import of such an API proxy is currently not supported.
+> 
+> -   Ensure that the API proxy name in the <`APIProxyName`\>.xml file and the value of the *base\_path* field \(inside the APIProxyEndpoint file\) is unique.
 > 
 > -   *APIResources*, *Documentation**FileResource*, and *Policy* folders are not required in the .zip file.
 > -   Ensure that the resource documentation is available in a single **OAS\_json** file. Note that you cannot refer to external links in the API definitions within this json file.
@@ -50,7 +52,10 @@ The API proxy content is available as a .zip file and swagger json file. The con
 API Management provides the option to import an API definition.
 
 > ### Note:  
-> When an API proxy is transported or exported individually or as a part of a Product, by default, it gets imported to the target in the deployed state.
+> When an API proxy is transported or exported individually or as a part of a product, by default, it gets imported to the target in the deployed state.
+
+> ### Note:  
+> The API proxy zip can be successfully imported only if the providers associated with the API proxy in the source system are also present in the target system.
 
 
 

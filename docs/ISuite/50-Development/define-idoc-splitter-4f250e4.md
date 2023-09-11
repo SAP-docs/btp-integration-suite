@@ -103,12 +103,14 @@ The adapter parses the XML response and generates this header from it. The heade
     No parameters are to be configured for this step.
 
     > ### Note:  
-    > This step works in the same way like a General Splitter with an XPath Expression set to ***//IDOC***.
+    > This step works in the same way like a General Splitter with an XPath Expression set to `//IDOC`.
 
 3.  Save or deploy the configuration.
 
 
 
+
+## Example
 
 The IDoc splitter splits a composite IDoc message at the element `IDoc` \(split point\).
 
@@ -193,5 +195,5 @@ The structure of the second message is:
 **Related Information**  
 
 
-[Configure the IDoc Receiver Adapter](configure-the-idoc-receiver-adapter-018aa88.md "The IDoc receiver adapter enables the SAP BTP tenant to send Intermediate Document (IDoc) messages to a receiver.")
+[Configure the IDoc Receiver Adapter](configure-the-idoc-receiver-adapter-018aa88.md "The IDoc receiver adapter enables SAP Integration Suite to send Intermediate Document (IDoc) messages to a receiver.")
 
