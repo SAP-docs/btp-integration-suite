@@ -113,6 +113,92 @@ API Management
 </td>
 <td valign="top">
 
+Client SDK
+
+
+
+</td>
+<td valign="top">
+
+In Cloud Foundry, Authentication using the X509 certificate and key is now supported. Instead of clientid, clientsecret and tokenurl, use certificate, privateKey, certUrl and clientid. For more information, refer to the Client SDK version 1.5.0 in [API Services](api-services-007d50f.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2023-09-13
+
+
+
+</td>
+<td valign="top">
+
+2023-09-13
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 API Revisions
 
 

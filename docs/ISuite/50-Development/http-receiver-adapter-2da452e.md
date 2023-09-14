@@ -562,7 +562,7 @@ Description
 </td>
 <td valign="top">
 
-Enter a list of custom headers, separated by a pipe \(|\), that you want to send to the target system. By default, no custom headers are sent. Alternatively, use an `*` to send all custom headers to the target system.
+Enter a list of custom headers, separated by a pipe \(|\), that you want to send to the target system. By default, no custom headers are sent. Alternatively, use an `*` to send all custom headers to the target system. Alternatively, you can dynamically pass on the values by defining a property that includes a list of headers.
 
 > ### Remember:  
 > Use an `*` separately. If you use an `*` and custom header together that are separated by a pipe \(|\), only the custom header is considered.

@@ -84,7 +84,7 @@ A client software development kit \(SDK\) is available for developers through a 
 
 In the API Portal, at the top-right corner, choose *Navigation Links* \(![](images/Finalgrid_1a621ca.png)\) and select *Client SDK* \(![](images/clientsdk_f85baa6.png)\). On selecting the client SDK, you are navigated to the maven repository, where you can download this package.
 
-For more information, see [SAP API Management, 1.4.0 Client SDK](https://help.sap.com/doc/3cf9060925e241e5968d54202f5e7365/CLOUD/en-US/SAP%20API%20Management%20Cloud%20SDK_1.4.0.pdf).
+For more information, see [SAP API Management, 1.5.0 Client SDK](https://help.sap.com/doc/sap-api-management-client-sdk/Cloud/en-US/SAP%20API%20Management%20Cloud%20SDK_1.5.0%20.pdf).
 
 You can also download the package from [https://mvnrepository.com/artifact/com.sap.apimgmt.client.sdk/apim-client-sdk](https://mvnrepository.com/artifact/com.sap.apimgmt.client.sdk/apim-client-sdk). On navigating to this link, select the latest version and choose *View All*.
 
