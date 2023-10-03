@@ -122,6 +122,92 @@ Contextual Help
 </td>
 <td valign="top">
 
+You can now access contextual help for a few screens of the API Management capability.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Suite General Features
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Contextual Help
+
+
+
+</td>
+<td valign="top">
+
 You can now access contextual help for the *Monitoring* and *Graph* screens.
 
 
@@ -164,7 +250,7 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+SAP Business Technology Platform
 
 
 

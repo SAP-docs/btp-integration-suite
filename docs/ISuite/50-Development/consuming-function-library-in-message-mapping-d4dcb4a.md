@@ -26,7 +26,7 @@ Understand how to consume a function library object in a message mapping flow st
 
 1.  Open the integration flow that contains the message mapping flow step in edit mode.
 
-2.  In the property sheet of the integration flow, under the *Resources* tab, create a reference to a Function Libraries artifact. See: [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md).
+2.  In the property sheet of the integration flow, under the *References* tab, create a reference to a Function Libraries artifact. See: [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md).
 
 3.  In the property sheet of the message mapping step, choose the *Processing* tab.
 

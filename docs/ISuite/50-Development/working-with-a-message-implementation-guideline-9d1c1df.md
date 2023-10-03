@@ -50,7 +50,7 @@ Here are a few considerations to be mindful of before you work with MIG:
     > 
     > To know more on editing these properties, see [Working with a Node](working-with-a-node-518b54f.md)
     > 
-    > Refer to the [Terminology &amp; Glossary for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/9c221b48799a4ce59367b0e3367f5a8f.html "") :arrow_upper_right: to get an understanding of Qualifier, Notes and Codelist.
+    > Refer to the [Terminology & Glossary for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/9c221b48799a4ce59367b0e3367f5a8f.html "") :arrow_upper_right: to get an understanding of Qualifier, Notes and Codelist.
 
 5.  Review the *Message Implementation Guideline* by setting a review status, or comparing the MIG
 

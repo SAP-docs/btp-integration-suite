@@ -44,7 +44,7 @@ Note that data written to the message header during a processing step, for examp
     2.  Place *Content Modifier* step in the integration process.
 
 
-3.  Go to the *Message Header* tab or choose *Exchange Property* \(depending on whether you want to modify a message header or write data to the exchange property\).
+3.  Go to the *Message Header* or *Exchange Property* tab \(depending on whether you want to modify a message header or write data to the exchange property\).
 
     > ### Note:  
     > Name defined for an *Exchange Property* is case-sensitive. This is a known behavior of the camel framework.
@@ -72,6 +72,24 @@ Note that data written to the message header during a processing step, for examp
 
     
     </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Action* 
+
+
+    
+    </td>
+    <td valign="top">
+    
+    You can specify whether the Content Modifier should create or delete the header or property defined by the table row.
+
+    You must specify the name of the header or property you want to delete.
+
+
+    
+    </td>
     </tr>
     <tr>
     <td valign="top">
@@ -221,9 +239,55 @@ Note that data written to the message header during a processing step, for examp
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    *Data Type*
+
+    \(If you've selected *XPath* or *Expression* as *Type*\)
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Valid Java data type
+
+    The data type can belong to any Java class. For example, if you are addressing a string-type element, enter `java.lang.String` as the Java data type. For more information about supported data types, see [https://camel.apache.org/components/latest/languages/simple-language.html](https://camel.apache.org/components/latest/languages/simple-language.html).
+
+    If the XPath contains a namespace prefix, specify the association between the namespace and the prefix on the Runtime Configuration tab page of the integration flow Properties view.
+
+    To enter an XPath, browse for an XPath from the lookup in the *Value* column.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Default Value*
+
+    \(If you've selected *Local Variable* or *Global Variable* as *Type*\)
+
+
+    
+    </td>
+    <td valign="top">
+    
+    If you have selected *Local Variable* or *Global Variable* as *Type*, the value specified as *Default* will be assigned to the header value if the variable is not found at runtime.
+
+
+    
+    </td>
+    </tr>
     </table>
     
-6.  Go to the *Message Body* tab, and define the fields as shown below.
+6.  If you have multiple entries, use the *Move Up* or *Move Down* actions to sort your entries.
+
+    Headers and properties in a content modifier are processed from top to bottom. Therefore, if you want to process the header or properties in a certain order, first add all your entries and then use the "move" actions to sort them in the order of your choice.
+
+7.  Go to the *Message Body* tab, and define the fields as shown below.
 
 
     <table>
@@ -280,7 +344,7 @@ Note that data written to the message header during a processing step, for examp
     </tr>
     </table>
     
-7.  Save or deploy the changes.
+8.  Save or deploy the changes.
 
     > ### Note:  
     > -   If you add a Content Modifier step without a header, body, and property, you cannot trace the element.

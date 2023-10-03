@@ -71,6 +71,8 @@ Once you have your source and target system ready, you can clone your API Manage
 
     Ensure that you don’t modify the name of the `apim-tct-input.json` file.
 
+    For more information on how to create the service key, refer the [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md) and [API Access Plan for API business hub enterprise](../APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
+
     **Structure of the apim-tct-input.json file:**
 
 
@@ -79,6 +81,13 @@ Once you have your source and target system ready, you can clone your API Manage
     <th valign="top" colspan="3">
 
     Input Field
+
+
+    
+    </th>
+    <th valign="top">
+
+    Credentials Type
 
 
     
@@ -129,6 +138,13 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+
+
+    
+    </td>
+    <td valign="top">
+    
     String
 
 
@@ -155,6 +171,13 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `username`
+
+
+    
+    </td>
+    <td valign="top" rowspan="2">
+    
+    Basic
 
 
     
@@ -232,6 +255,13 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+
+
+    
+    </td>
+    <td valign="top">
+    
     String
 
 
@@ -258,6 +288,13 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `username`
+
+
+    
+    </td>
+    <td valign="top" rowspan="2">
+    
+    Basic
 
 
     
@@ -335,6 +372,13 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+
+
+    
+    </td>
+    <td valign="top">
+    
     String
 
 
@@ -364,16 +408,19 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="12">
+    <td valign="top" rowspan="24">
     
     target
 
 
     
     </td>
-    <td valign="top" rowspan="4">
+    <td valign="top" rowspan="8">
     
     apiportal
+
+    > ### Note:  
+    > Choose the relevant fields based on the credential type you've configured for the API access plan. For example, if you've used Client Secret as the credential type, do not select the fields from X509 mTLS.
 
 
     
@@ -381,6 +428,13 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `Url`
+
+
+    
+    </td>
+    <td valign="top">
+    
+     
 
 
     
@@ -403,8 +457,6 @@ Once you have your source and target system ready, you can clone your API Manage
     
     URL received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
 
-    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
-
 
     
     </td>
@@ -413,6 +465,13 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `tokenUrl`
+
+
+    
+    </td>
+    <td valign="top" rowspan="3">
+    
+    Client Secret
 
 
     
@@ -434,8 +493,6 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Token URL received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
-
-    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
 
 
     
@@ -469,8 +526,6 @@ Once you have your source and target system ready, you can clone your API Manage
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
-    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
-
 
     
     </td>
@@ -503,16 +558,144 @@ Once you have your source and target system ready, you can clone your API Manage
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
-    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `certurl`
+
+
+    
+    </td>
+    <td valign="top" rowspan="4">
+    
+    X509 mTLS
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Cert URL received during creation of the service key for API portal API access for the APIPortal.Administrator role.
 
 
     
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="4">
+    <td valign="top">
+    
+    `certificate`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    The content of the certificate received during creation of the service key for API portal API access for the APIPortal.Administrator role.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `clientid`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Client ID received during creation of the service key for API portal API access for the APIPortal.Administrator role.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `privatekey`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Private Key received during creation of the service key for API portal API access for the APIPortal.Administrator role.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="8">
     
     apiportalSelfServiceAdmin
+
+    > ### Note:  
+    > Choose the relevant fields based on the credential type you've configured for the API access plan. For example, if you've used Client Secret as the credential type, do not select the fields from X509 mTLS.
 
 
     
@@ -520,6 +703,13 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `Url`
+
+
+    
+    </td>
+    <td valign="top" rowspan="4">
+    
+    Client Secret
 
 
     
@@ -541,8 +731,6 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     URL received during creation of the service key for API portal API access for the `APIManagement.SelfService.Administrator` role.
-
-    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
 
 
     
@@ -573,8 +761,6 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Token URL received during creation of the service key for API portal API access for the `APIManagement.SelfService.Administrator` role.
-
-    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
 
 
     
@@ -608,8 +794,6 @@ Once you have your source and target system ready, you can clone your API Manage
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
-    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
-
 
     
     </td>
@@ -642,16 +826,144 @@ Once you have your source and target system ready, you can clone your API Manage
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
-    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `certurl`
+
+
+    
+    </td>
+    <td valign="top" rowspan="4">
+    
+    X509 mTLS
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Cert URL received during creation of the service key for API portal API access for the APIPortal.Administrator role.
 
 
     
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="4">
+    <td valign="top">
+    
+    `certificate`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    The content of the certificate received during creation of the service key for API portal API access for the APIPortal.Administrator role.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `clientid`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Client ID received during creation of the service key for API portal API access for the APIPortal.Administrator role.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `privatekey`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Private Key received during creation of the service key for API portal API access for the APIPortal.Administrator role.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="8">
     
     devportal
+
+    > ### Note:  
+    > Choose the relevant fields based on the credential type you've configured for the API access plan. For example, if you've used Client Secret as the credential type, do not select the fields from X509 mTLS.
 
 
     
@@ -659,6 +971,13 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `url`
+
+
+    
+    </td>
+    <td valign="top" rowspan="4">
+    
+    Client Secret
 
 
     
@@ -680,8 +999,6 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     URL received during creation of the service key for Developer Portal API access for the `AuthGroup.API.Admin` role.
-
-    See [API Access Plan for API business hub enterprise](../APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
 
 
     
@@ -712,8 +1029,6 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Token url received during creation of the service key for API business hub enterprise API access for the `AuthGroup.API.Admin` role.
-
-    To know more about creating the service key, see [API Access Plan for API business hub enterprise](../APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
 
 
     
@@ -747,8 +1062,6 @@ Once you have your source and target system ready, you can clone your API Manage
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
-    To know more about creating the service key, see [API Access Plan for API business hub enterprise](../APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
-
 
     
     </td>
@@ -781,7 +1094,132 @@ Once you have your source and target system ready, you can clone your API Manage
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
-    To know more about creating the service key, see [API Access Plan for API business hub enterprise](../APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `certurl`
+
+
+    
+    </td>
+    <td valign="top" rowspan="4">
+    
+    X509 mTLS
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Cert URL received during creation of the service key for API portal API access for the APIPortal.Administrator role.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `certificate`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    The content of the certificate received during creation of the service key for API portal API access for the APIPortal.Administrator role.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `clientid`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Client ID received during creation of the service key for API portal API access for the APIPortal.Administrator role.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `privatekey`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    String
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Private Key received during creation of the service key for API portal API access for the APIPortal.Administrator role.
 
 
     
@@ -805,6 +1243,13 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Supported values: `true/false`
+
+
+    
+    </td>
+    <td valign="top">
+    
+     
 
 
     
@@ -859,6 +1304,13 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+
+
+    
+    </td>
+    <td valign="top">
+    
     Boolean
 
 
@@ -906,6 +1358,13 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+
+
+    
+    </td>
+    <td valign="top">
+    
     Boolean
 
 
@@ -938,6 +1397,13 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Supported values: `true/false`
+
+
+    
+    </td>
+    <td valign="top">
+    
+     
 
 
     
@@ -983,6 +1449,13 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Supported values: `"DEFAULT" | "SWITCHOVER`
+
+
+    
+    </td>
+    <td valign="top">
+    
+     
 
 
     

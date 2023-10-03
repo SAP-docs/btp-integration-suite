@@ -666,7 +666,7 @@ The Open API specification 2.0 does not support multiple hosts \(and ports\), ne
 
 These features is supported in the `servers` property in the Open API specification v3.0. However, in Open API specification v2.0, the required configuration values can be added via the custom extension `x-servers`.
 
-For more information about how to specify sandbox url and multiple hosts or production servers in OpenAPI 3.0, see the Sandbox and Configure Information sections in [Governance Guidelines for API Packages](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Cloud/en-US/1e1cd898d3984bc79f214202e12ad5b5.html "A checklist to ensure your APIs have been correctly packaged before they are published on the SAP Business Accelerator Hub.") :arrow_upper_right:
+For more information about how to specify sandbox url and multiple hosts or production servers in OpenAPI 3.0, see the Sandbox and Configure Information sections in [Governance Guidelines for API Packages](https://help.sap.com/viewer/4fb3aee633a84254a48d3f8c3b5c5364/Cloud/en-US/1e1cd898d3984bc79f214202e12ad5b5.html "A checklist to ensure your APIs have been correctly packaged before they are published on the SAP Business Accelerator Hub.") :arrow_upper_right:
 
 See [here](https://blogs.sap.com/2018/01/05/open-api-spec-2.0-vs-3.0/) to know more information about the differences between OpenAPI 2.0 and Open API 3.0 specifications
 
@@ -684,7 +684,7 @@ If values are supplied for host, schemes, and basepath, then they together form 
 > }
 > ```
 
-For more information on how to define schemes, host and basepath in the API specification, see [Creating APIs](creating-apis-51f3ca1.md).
+For more information on how to define schemes, host and basepath in the API specification, see [API Designer](api-designer-51f3ca1.md).
 
 > ### Note:  
 > The *Try it Out!* feature on SAP Business Accelerator Hub can be configured to enable API testing experience either in a sandbox system or in a productive system. To try out the APIs in a sandbox system, the `host` attribute in the OpenAPI specification must be defined and point to the API Sandbox URL. Similarly, to try out the APIs in a productive system, the `x-servers` attribute in the OpenAPI specification must be defined and point to the URL of the productive system. For example, the productive system can be URL to an application/service running on an active SAP BTP account.

@@ -19,7 +19,7 @@ Based on the recommendations provided by the policies for the usage in certain d
 
 ## Creating Integration Policy
 
-1.  Go to *Analyse* \> *Integration Policies*. In the Integration Technology tab, you will be able to see the list of existing integration technologies. You can either choose from the existing SAP standard content or create and customise your own integration policy.
+1.  Go to *Analyze* \> *Integration Policies*. In the Integration Technology tab, you will be able to see the list of existing integration technologies. You can either choose from the existing SAP standard content or create and customise your own integration policy.
 
 2.  Choose \(*Create*\) to add a new integration policy.
 

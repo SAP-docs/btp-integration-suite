@@ -64,11 +64,15 @@ If you encounter one of the following situations when your connection request is
     ```
     {
       "url": "https://<application name>.cfapps.sap.hana.ondemand.com",
-      "tokenUrl": "https://<name>.authentication.sap.hana.ondemand.com/oauth/token",
-      "clientId": "sb-apiaccessxxxxxxxx!xxxx|api-portal-xsuaa!bxxxx",
-      "clientSecret": "xxxxxxxxxxxxxxxxxxxxxxx="
+      "tokenurl": "https://<name>.authentication.sap.hana.ondemand.com/oauth/token",
+      "certurl": "https://xxxxxx.authentication.cert.sap.hana.ondemand.com",
+      "certificate": "xxxxxxxxxxxxxxxxxxx",
+      "key": "xxxxxxxxxxxxxx"
     }
     ```
+
+    > ### Note:  
+    > These credentials will remain valid for a period of 65 days. Please make sure to regenerate them and reestablish the connection within this timeframe.
 
 5.  Choose *Save*.
 

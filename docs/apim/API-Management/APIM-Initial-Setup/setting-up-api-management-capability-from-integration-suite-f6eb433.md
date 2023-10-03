@@ -126,6 +126,9 @@ To set up the API Management capability from Integration Suite, you should first
 
     When the processes complete, the indicators turn green to indicate that the processes are successful. A *Release Notification* mail is sent out to the email IDs provided in the *Configure the API Management Service* screen. This email contains details of the newly set up API Management service on your account.
 
+    > ### Note:  
+    > If the API Management Service Setup encounters an error or fails, the onboarding process will automatically retry the setup up to five times. If the same error or failure continues to occur, please report the issue by creating an incident in the [SAP Support Portal](https://support.sap.com/en/index.html). Please use the component OPU-API-OD-OPS for reporting.
+
     The API Management capability is now configured.
 
 18. You must log out of *Integration Suite* and log in again.
@@ -148,7 +151,7 @@ To set up the API Management capability from Integration Suite, you should first
 
 [Create an API Proxy](../APIM-Development/create-an-api-proxy-4ac0431.md "Create API proxies.")
 
-[Requesting for Custom Domain for a Virtual Host](requesting-for-custom-domain-for-a-virtual-host-6b9e5a3.md "When you subscribe to API Management service, and are creating API proxies, they get created with the default virtual host, and the default domain. To suit your requirements, you can request for a custom domain.")
+[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "Virtual host is an entity where the API proxy gets deployed, and API proxies can be accessed using the URL defined in the virtual host.")
 
 [Request for Two-Way SSL Certificate](request-for-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
 

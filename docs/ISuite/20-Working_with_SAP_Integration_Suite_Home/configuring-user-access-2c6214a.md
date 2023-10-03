@@ -346,10 +346,13 @@ As a tenant administrator, you can group application roles in role collections. 
     </td>
     <td valign="top">
     
-    -   Activate agreements and publish their content into the partner directory.
+    This is a role that needs to be assigned to a role collection in order to
 
+    -   Activate agreements and publish their content into the partner directory.
     -   Deactivate agreements.
 
+
+    To know more, see [Additional Configurations for Trading Partner Management](additional-configurations-for-trading-partner-management-bcf7f21.md)
 
 
     

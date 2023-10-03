@@ -15,6 +15,15 @@ Learn more about Migration Assessment.
 
 -   Extract data from your existing SAP Process Orchestration 7.5 system
 
+    Migration is currently supported for the following versions of SAP Process Orchestration:
+
+    -   7.31 SP28 and above
+
+    -   7.40 SP23 and above
+
+    -   7.50 SP06 and above
+
+
 -   Evaluate the extracted data
 
 -   Estimate the potential effort of migrating your integrated configuration objects from your SAP Process Orchestration 7.5 system to SAP Integration Suite

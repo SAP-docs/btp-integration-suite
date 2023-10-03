@@ -113,6 +113,266 @@ API Management
 </td>
 <td valign="top">
 
+API Revisions
+
+
+
+</td>
+<td valign="top">
+
+When publishing products, it's important to note that resources are available from the deployed API, rather than from the latest revision or draft of the API. Additionally, if a deployed resource is not available in the latest revision, you won't be able to attach that resource to the product.
+
+The revision name now includes support for parentheses \(\) as an additional special character in the name. For more information, see [Creating API Revisions](APIM-Development/creating-api-revisions-0a0d7d4.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2023-09-30
+
+
+
+</td>
+<td valign="top">
+
+2023-09-30
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Certificate-based Credentials
+
+
+
+</td>
+<td valign="top">
+
+The connection between the centralised API business hub enterprise and the API portal has been secured with certificate-based authentication. For more information, see [Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](APIM-Initial-Setup/create-a-connection-request-for-the-centralized-api-business-hub-enterprise-cla-02f7877.md) and [Create a Connection Request for the Centralized API business hub enterprise \[New Design\]](APIM-Initial-Setup/create-a-connection-request-for-the-centralized-api-business-hub-enterprise-new-c7bda8c.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2023-09-30
+
+
+
+</td>
+<td valign="top">
+
+2023-09-30
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+mTLS Authentication
+
+
+
+</td>
+<td valign="top">
+
+You can now utilize certificate-based credentials to seamlessly migrate API Management subscriptions from Neo to Cloud Foundry, as well as between same or different Cloud Foundry environments. For more information, see [Clone API Management Artifacts](APIM-Migration/clone-api-management-artifacts-7abd887.md) and [Clone API Management Artifacts During Cloud Foundry to Cloud Foundry Migration](APIM-Migration/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration-2e5d127.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2023-09-30
+
+
+
+</td>
+<td valign="top">
+
+2023-09-30
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Client SDK
 
 
@@ -803,14 +1063,14 @@ API Management
 </td>
 <td valign="top">
 
-API business hub enterprise \[New Design\]
+API business hub enterprise 
 
 
 
 </td>
 <td valign="top">
 
-The Manage options \(for example Manage Users, Manage Domain Categories, and so on\) on the API business hub enterprise \[New Design\] header are now listed under *Enterprise Manager*. Based on the roles assigned to the users, these options will appear under the *Enterprise Manager* tab. For more information, see [Manage Domain Categories \[New Design\]](APIM-Development/manage-domain-categories-new-design-bd9691d.md).
+\[New DesignThe Manage options \(for example Manage Users, Manage Domain\] Categories, and so on\) on the API business hub enterprise \[New Design\] header are now listed under *\[New DesignEnterprise Manager*. Based on the roles assigned to the users, these options will appear under the *Enterprise Manager* tab. For more information, see [Manage Domain Categories \[New Design\]](APIM-Development/manage-domain-categories-new-design-bd9691d.md).
 
 
 

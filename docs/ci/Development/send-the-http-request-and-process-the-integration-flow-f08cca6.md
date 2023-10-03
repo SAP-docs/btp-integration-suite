@@ -88,7 +88,7 @@ You can now send the POST request to the integration flow.
 **Related Information**  
 
 
+ <?sap-ot O2O class="- topic/link " href="fd5fcb4f396348e9977b532dbd56a02e.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f08cca6af4fd48b687d3f86c329efaed.xml" ?> 
 
-
-
+ <?sap-ot O2O class="- topic/link " href="3d99ae8a0cc6477196b7e0561f1897d6.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f08cca6af4fd48b687d3f86c329efaed.xml" ?> 
 

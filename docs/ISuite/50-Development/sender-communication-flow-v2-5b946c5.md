@@ -28,7 +28,7 @@ Follow the procedure below to configure these integration flows.
 >     The activation will create two new PD entries for the values above and these entries are specific to an user account. So, if there are multiple agreements that use the AS2 Sender Communication of the same user account with no changes made to the *Security* or *Processing*, then you need to activate only one agreement so that the entries are created for this user account.
 > 
 > -   If you have configured AS2 Partner ID based security configurations in the *Security* tab of the partner profile, then on activation of agreements using these configurations can potentially overwrite similar AS2 Partner ID based configurations done outside of Trading Partner Management solution. To know more about the IDs that could be potentially impacted, see [Creating a Trading Partner Profile](creating-a-trading-partner-profile-542fb11.md).
-> -   If you have an active agreement that consists of the AS2 adapter but is not compatible with 2.0 version of the integration flow, you need to deactivate the agreement and follow few more steps to make it work with this version. To know more, see 
+> -   If you have an active agreement that consists of the AS2 adapter but is not compatible with 2.0 version of the integration flow, you need to deactivate the agreement and follow few more steps to make it work with this version. To know more, see  <?sap-ot O2O class="- topic/xref " href="86319603293b432b8c65880c609aa9d2.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/ccm1691418051317/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5b946c5acdd5455fab15d3bc90a35ccc.xml" ?> 
 
 
 

@@ -76,7 +76,7 @@ You’re registered as an application developer on the API business hub enterpri
 **Related Information**  
 
 
-
+ <?sap-ot O2O class="- topic/link " href="dd6d58c1586a4a0a8ffca46a1a019d38.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/80c0519ebf1449d9bed37fccf7ba127a.xml" ?> 
 
 [Configure the API business hub enterprise \[Classic Design\]](../APIM-Development/configure-the-api-business-hub-enterprise-classic-design-7b71b16.md "You can configure the API business hub enterprise to personalize it for your organization.")
 

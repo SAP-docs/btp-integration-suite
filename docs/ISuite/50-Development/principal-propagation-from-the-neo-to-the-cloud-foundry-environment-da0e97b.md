@@ -8,7 +8,7 @@
 
 ## Prerequisites
 
--   You have created a Service Key by creating a service instance using the on-premise connectivity plan. For more details, see [On-Premise Connectivity Plan](../20-Working_with_SAP_Integration_Suite_Home/on-premise-connectivity-plan-2fc7a5b.md).
+-   You have created a Service Key by creating a service instance using the on-premise connectivity plan. For more details, see [On-Premise Connectivity Plan](../on-premise-connectivity-plan-2fc7a5b.md).
 
 
 
@@ -216,7 +216,7 @@ Enable an application in your subaccount in the Neo environment to access an API
     <tr>
     <td valign="top" colspan="2">
     
-    If you have not generated the client credentials \(clientId, ClientSecret, tokenUrl and application url\) yet, see [On-Premise Connectivity Plan](../20-Working_with_SAP_Integration_Suite_Home/on-premise-connectivity-plan-2fc7a5b.md)
+    If you have not generated the client credentials \(clientId, ClientSecret, tokenUrl and application url\) yet, see [On-Premise Connectivity Plan](../on-premise-connectivity-plan-2fc7a5b.md)
 
 
     

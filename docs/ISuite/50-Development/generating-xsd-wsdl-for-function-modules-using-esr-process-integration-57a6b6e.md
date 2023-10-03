@@ -38,7 +38,7 @@ Generate an XSD/WSDL file for a function module using the Enterprise Services Re
 **Related Information**  
 
 
-
+ <?sap-ot O2O class="- topic/link " href="b61dbaedd4244b10b04f1be1d68c0e40.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/ccm1691418051317/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/57a6b6ede47c449aa0808ff9695aec49.xml" ?> 
 
 [RFC Receiver Adapter](rfc-receiver-adapter-5c76048.md "Connects an SAP Cloud Integration tenant to a remote receiver system using Remote Function Call (RFC).")
 

@@ -228,6 +228,26 @@ Content Based Router with 1 router and a receiver for each router branch raising
 
 ![](images/CBR_ASYNC_0001_c25af87.png)
 
+<a name="loiof09058b58304481886657df51c22b8ff"/>
+
+<!-- loiof09058b58304481886657df51c22b8ff -->
+
+## CBR\_ASYNC\_0002
+
+Content Based Router with 1 router and a receiver for each router branch ignoring message in case of receiver not determined
+
+![](images/CBR_ASYNC_0002_a5acb3b.png)
+
+<a name="loio467a2272e10d431688ab36b7f50ba383"/>
+
+<!-- loio467a2272e10d431688ab36b7f50ba383 -->
+
+## CBR\_ASYNC\_0003
+
+Content Based Router with 1 router and a receiver for each router branch sending message to default receiver in case of receiver not determined
+
+![](images/CBR_ASYNC_0003_b742101.png)
+
 <a name="loio157f24c29b3f4f148c8c2d17f7f925b0"/>
 
 <!-- loio157f24c29b3f4f148c8c2d17f7f925b0 -->
@@ -277,4 +297,34 @@ Command Message pattern triggered via start timer event with 1 XSLT mapping and 
 Message Filter asynchronous interface with 1 message mapping, 1 router, and 1 receiver
 
 ![](images/MF_ASYNC_0001_15d8925.png)
+
+<a name="loio514734ab903f47ceb4838504d0a50e82"/>
+
+<!-- loio514734ab903f47ceb4838504d0a50e82 -->
+
+## RL\_ASYNC\_0001
+
+Recipient List with option to raise an error if receiver cannot be determined
+
+![](images/RL_ASYNC_0001_0f9d278.png)
+
+<a name="loioc8e5653e6ecc41e6a461951152862a55"/>
+
+<!-- loioc8e5653e6ecc41e6a461951152862a55 -->
+
+## RL\_ASYNC\_0002
+
+Recipient List with option to ignore the message if receiver cannot be determined
+
+![](images/RL_ASYNC_0002_14bc64f.png)
+
+<a name="loio4a9041be9c344a07bba2d71a96f3844e"/>
+
+<!-- loio4a9041be9c344a07bba2d71a96f3844e -->
+
+## RL\_ASYNC\_0003
+
+Recipient List with option to send message to default receiver in case of receiver not determined
+
+![](images/RL_ASYNC_0003_5163d0f.png)
 

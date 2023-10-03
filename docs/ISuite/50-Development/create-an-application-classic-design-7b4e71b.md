@@ -9,7 +9,7 @@ Create an Application to consume the required APIs.
 
 **Prerequisites**
 
--   You either have the `AuthGroup.API.ApplicationDeveloper` role or `AuthGroup.API.Admin` role assigned to you. For more information on roles, see [Assign User Roles in API Management](../20-Working_with_SAP_Integration_Suite_Home/assign-user-roles-in-api-management-911ca5a.md).
+-   You either have the `AuthGroup.API.ApplicationDeveloper` role or `AuthGroup.API.Admin` role assigned to you. For more information on roles, see [Assign User Roles in API Management](../assign-user-roles-in-api-management-911ca5a.md).
 
     > ### Note:  
     > The AuthGroup.API.ApplicationDeveloper role must not be assigned manually to a user form the SAP BTP Cockpit and this role must not be a part of any user group assignment.

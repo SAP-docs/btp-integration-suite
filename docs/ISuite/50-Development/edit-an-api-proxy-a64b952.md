@@ -149,7 +149,7 @@ Consider the following examples:
     
 5.  To edit the API in the embedded API designer, you can either choose *Edit* \> *Edit in API Designer* from the top-right corner of the screen, or choose *Edit* \> *Resources*tab, click *\>* to open the API designer.
 
-6.  You can make required changes to the swagger structure in the API designer. For more information on the API designer, see [Creating APIs](creating-apis-51f3ca1.md).
+6.  You can make required changes to the swagger structure in the API designer. For more information on the API designer, see [API Designer](api-designer-51f3ca1.md).
 
 7.  Once you've made the swagger changes, click *Save*. These changes will then be reflected in the various tabs on the Integration Suite.
 

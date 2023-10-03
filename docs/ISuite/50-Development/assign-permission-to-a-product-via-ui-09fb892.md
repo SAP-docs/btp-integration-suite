@@ -11,7 +11,7 @@ Assign permission to a product in the SAP Integration Suite .
 ## Prerequisites
 
 -   You are assigned the `APIPortal.Administrator` role.
--   You must have created a custom role on the SAP BTP Cockpit Cloud Foundry environment. For more information on creating a custom role, refer [here](../20-Working_with_SAP_Integration_Suite_Home/creating-a-custom-role-9d827cd.md).
+-   You must have created a custom role on the SAP BTP Cockpit Cloud Foundry environment. For more information on creating a custom role, refer [here](../creating-a-custom-role-9d827cd.md).
 
 
 

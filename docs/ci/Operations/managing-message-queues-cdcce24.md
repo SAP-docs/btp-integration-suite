@@ -220,7 +220,7 @@ Sort the table entries according to the displayed sorting criteria.
 
 [JMS Adapter](../Development/jms-adapter-0993f2a.md "You configure the JMS adapter to enable asynchronous messaging using message queues.")
 
+ <?sap-ot O2O class="- topic/link " href="63a96540c8494b578ec657bdfa5be6b8.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/cdcce24f484a41c08ab46d12ab666451.xml" ?> 
 
-
-
+ <?sap-ot O2O class="- topic/link " href="3208eda405674b8b8f14c4e2bfdf22ee.xml" text="" desc="" xtrc="link:5" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/cdcce24f484a41c08ab46d12ab666451.xml" ?> 
 

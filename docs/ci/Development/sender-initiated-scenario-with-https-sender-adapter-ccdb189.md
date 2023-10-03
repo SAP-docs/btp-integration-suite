@@ -53,11 +53,11 @@ When you have finished the integration flow design, you can send the message thr
 
 [Add the JSON to XML Converter](add-the-json-to-xml-converter-2c49c10.md "Add a JSON-to-XML converter to convert the HTTP request, which is in JavaScript Object Notation (JSON) format, to XML for further processing.")
 
+ <?sap-ot O2O class="- topic/link " href="1399da491e7946999ead9566ae751311.xml" text="" desc="" xtrc="link:5" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/ccdb189ad99a4db0908150c799cbe9e3.xml" ?> 
 
+ <?sap-ot O2O class="- topic/link " href="b60b009577f54f7eb56b457c16b25b26.xml" text="" desc="" xtrc="link:6" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/ccdb189ad99a4db0908150c799cbe9e3.xml" ?> 
 
-
-
-
+ <?sap-ot O2O class="- topic/link " href="b08ee602f6954b2eb3cfd111f9a4d367.xml" text="" desc="" xtrc="link:7" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/ccdb189ad99a4db0908150c799cbe9e3.xml" ?> 
 
 [Create the Mail Receiver Channel](create-the-mail-receiver-channel-a6966fd.md "Add a Mail receiver channel to enable the integration flow to send messages to an e-mail account.")
 

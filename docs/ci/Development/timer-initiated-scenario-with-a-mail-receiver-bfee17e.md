@@ -55,13 +55,13 @@ This integration flow introduces you to a number of important aspects of integra
 
 [Create and Deploy a User Credentials Artifact for the E-Mail Account](create-and-deploy-a-user-credentials-artifact-for-the-e-mail-account-1c1fced.md "Deploy a User Credentials artifact that contains the user name and password for your receiver mail account.")
 
+ <?sap-ot O2O class="- topic/link " href="dc464296532f4d5aa7e49fc21e016b79.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/bfee17e150de43c9a1b363746c5a7e72.xml" ?> 
 
+ <?sap-ot O2O class="- topic/link " href="1399da491e7946999ead9566ae751311.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/bfee17e150de43c9a1b363746c5a7e72.xml" ?> 
 
+ <?sap-ot O2O class="- topic/link " href="b60b009577f54f7eb56b457c16b25b26.xml" text="" desc="" xtrc="link:5" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/bfee17e150de43c9a1b363746c5a7e72.xml" ?> 
 
-
-
-
-
+ <?sap-ot O2O class="- topic/link " href="b08ee602f6954b2eb3cfd111f9a4d367.xml" text="" desc="" xtrc="link:6" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/bfee17e150de43c9a1b363746c5a7e72.xml" ?> 
 
 [Create the Mail Receiver Channel](create-the-mail-receiver-channel-a6966fd.md "Add a Mail receiver channel to enable the integration flow to send messages to an e-mail account.")
 

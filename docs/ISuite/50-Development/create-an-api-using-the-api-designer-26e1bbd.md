@@ -44,7 +44,7 @@ To know more about OAS 3.0 support in API Management, see [OpenAPI Specification
     > -   You can now create your API in the embedded API designer
     > -   To update an existing API, select the API and choose *Edit in API Designer*.
 
-4.  Enter the API-related information and choose *Save*. For information on how to model the API, see [Creating APIs](creating-apis-51f3ca1.md).
+4.  Enter the API-related information and choose *Save*. For information on how to model the API, see [API Designer](api-designer-51f3ca1.md).
 
 5.  You can choose to version your the API, by selecting *Save* \> *Save as Version*, and entering a new value in the *Version* field. To know more about versioning your API, see [API Versioning](api-versioning-b3cda3b.md)
 

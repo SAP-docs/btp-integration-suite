@@ -32,7 +32,7 @@ This documentation summarizes the measures that are taken by SAP to fulfill thes
 
 
 > ### Note:  
-> The role collection *Integration\_Provisioner* has been made available for managing security settings for SAP Integration Suite. For detailed information on how to assign this role collection, refer to [Configuring User Access](../20-Working_with_SAP_Integration_Suite_Home/configuring-user-access-2c6214a.md).
+> The role collection *Integration\_Provisioner* has been made available for managing security settings for SAP Integration Suite. For detailed information on how to assign this role collection, refer to [Configuring User Access](../configuring-user-access-2c6214a.md).
 
 **Related Information**  
 

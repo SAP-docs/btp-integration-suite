@@ -15,7 +15,7 @@ The API Management, API business hub enterprise as a service on Cloud Foundry pr
 
 [Requesting an Additional Virtual Host in Cloud Foundry Environment](requesting-an-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "Create a new virtual host or update an alias for an existing virtual host in the Cloud Foundry environment.")
 
-[Requesting for Custom Domain for a Virtual Host](requesting-for-custom-domain-for-a-virtual-host-6b9e5a3.md "When you subscribe to API Management service, and are creating API proxies, they get created with the default virtual host, and the default domain. To suit your requirements, you can request for a custom domain.")
+[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "Virtual host is an entity where the API proxy gets deployed, and API proxies can be accessed using the URL defined in the virtual host.")
 
 [Request for Two-Way SSL Certificate](request-for-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
 

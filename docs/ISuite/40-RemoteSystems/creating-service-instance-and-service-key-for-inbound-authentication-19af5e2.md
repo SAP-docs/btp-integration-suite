@@ -139,7 +139,7 @@ Create a service instance to implement inbound communication. A service instance
     > ### Note:  
     > We recommend you use a CLI-friendly name to enable the managing of your instances with the SAP BTP command line interface as well.
     > 
-    > CLI-friendly name is a short string \(up to 32 characters\) that only contains alphanumeric characters \(A-Z, a-z, 0-9\), periods, underscores, and hyphens.
+    > CLI-friendly name is a short string \(up to 32 characters\) that only contains alphanumeric characters \(A-Z, a-z, 0–9\), periods, underscores, and hyphens.
     > 
     > Your instance name can't contain white spaces if you want your instance name to be CLI-friendly.
 
@@ -153,7 +153,7 @@ Create a service instance to implement inbound communication. A service instance
 
 8.  Configure instance parameters. Choose how to enter your details, via *Form* or *JSON*.
 
-    We recommend to choose *Form* as the more convenient option.
+    We recommend choosing *Form* as the more convenient option.
 
     Specify the following parameters.
 
@@ -189,7 +189,7 @@ Create a service instance to implement inbound communication. A service instance
 
     -   When as *Plan* you've chosen *integration-flow*, you can either keep the standard role `ESBMessaging.send` or enter a custom role \(see [Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md)\).
 
-        You are able to add multiple roles by pressing enter after each role. The default is set to the standard role \(`ESBMessaging.send`\).
+        You're able to add multiple roles by pressing enter after each role. The default is set to the standard role \(`ESBMessaging.send`\).
 
         > ### Tip:  
         > When defining a service instance with *integration-flow* plan, you assign a role to it that enables the associated user to process the integration flow on the worker node. Simply spoken, this role defines permission for a sender to process an integration flow.
@@ -247,6 +247,29 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     Enter the redirect URIs for authorization code grant type. Hit *Enter* after typing your uri and proceed with the next uri.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Access Token Validity* \(in seconds\)
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Define the period of time for which your access token is valid in seconds. Enter any value from `3600` to `86400` \(1- 24 hours\).
+
+    The following values have been set as default:
+
+    -   for plan `api`: `4300` \(12 hours\)
+
+    -   for plan `integration-flow`: `3600` \(1 hour\)
+
 
 
     
@@ -340,7 +363,9 @@ With this step, you create a service key for the instance.
     <tr>
     <td valign="top">
     
-    *External Certificate* \(only applicable if for *Key Type* the option *External Certificate* has been chosen\)
+    *External Certificate* 
+
+    \(only applicable if for *Key Type* the option *External Certificate* has been chosen\)
 
 
     
@@ -365,7 +390,7 @@ With this step, you create a service key for the instance.
 
     Make sure that the certificate is signed by a certification authority supported by the load balancer \(see [Load Balancer Root Certificates Supported by SAP](load-balancer-root-certificates-supported-by-sap-4509f60.md)\).
 
-    You can only use a single certificate once across all existing service instances. To assign multiple roles, don't create multiple service instances. Instead of this, maintain multiple roles within one service instance.
+    You can only use a single certificate once across all existing service instances. To assign multiple roles, don't create multiple service instances. Instead, maintain multiple roles within one service instance.
 
 
     
@@ -374,7 +399,50 @@ With this step, you create a service key for the instance.
     <tr>
     <td valign="top">
     
-    *Validity in days* \(only applicable if for *Key Type* the option *Certificate* has been chosen\)
+    *Pin Certificate* 
+
+    \(only available for plan `integration-flow` and only applicable if for *Key Type* the option *External Certificate* has been chosen\)
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Defines whether the exact client certificate is required for authentication.
+
+    If this setting is **enabled** \(=default\), the incoming client certificate used during authentication must match the stored certificate in the service key exactly. In case the client certificate is renewed, a new service key with the new certificate has to be created. See: [Service Key Types](service-key-types-0fc1446.md).
+
+    If this setting is **disabled**, only the subjectDN and issuerDN of the incoming client certificate will be compared. This allows you to use renewed client certificates for authentication without changing the service key thus reducing configuration efforts.
+
+    The following conditions need to be fulfilled for a renewed certificate:
+
+    -   The renewed certificate has the same subjectDN and issuerDN as the certificate configured in the service key.
+
+    -   The issueDate of the renewed certificate must be issued after the previously accepted certificate.
+
+
+    > ### Note:  
+    > Once a new certificate was used for authentication purposes, the previously used certificate \(with an older issueDate\) won't be accepted anymore.
+
+    > ### Caution:  
+    > You must ensure that there are no conflicts between certificates uploaded in different service keys. A call with such a certificate will be rejected at runtime, if there are:
+    > 
+    > -   multiple certificates with the same subjectDN and issuerDN where pinning is disabled;
+    > 
+    > -   or one certificate with pinning enabled and another certificate with the same subjectDN and issuerDN where pinning is disabled.
+
+    .
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Validity in days* 
+
+    \(only applicable if for *Key Type* the option *Certificate* has been chosen\)
 
 
     
@@ -390,7 +458,9 @@ With this step, you create a service key for the instance.
     <tr>
     <td valign="top">
     
-    *Key Size* \(only applicable if for *Key Type* the option *Certificate* has been chosen\)
+    *Key Size* 
+
+    \(only applicable if for *Key Type* the option *Certificate* has been chosen\)
 
 
     
@@ -516,11 +586,11 @@ With this step, you create a service key for the instance.
     > ### Note:  
     > The generated certificate also contains additional parameters under *certificatedetails*.
     > 
-    > When for *Key Type* you have chosen *Certificate*, the following applies for these parameters:
+    > When for *Key Type*, you've chosen *Certificate*, the following applies for these parameters:
     > 
     > -   The values for the parameters *issuerdn*, *serialnumber*, and *subjectdn* are determined by SAP.
     > 
-    > -   The value of parameter *validuntil* is calculated from the entry that you have selected for *Validity in days* when defining the service key.
+    > -   The value of parameter *validuntil* is calculated from the entry that you've selected for *Validity in days* when defining the service key.
     > 
     > 
     > See: [Service Key Types](service-key-types-0fc1446.md)
@@ -565,7 +635,7 @@ With this step, you create a service key for the instance.
     </table>
     
     > ### Note:  
-    > You have 2 options to display these parameters:
+    > You have two options to display these parameters:
     > 
     > -   *Form*
     > 

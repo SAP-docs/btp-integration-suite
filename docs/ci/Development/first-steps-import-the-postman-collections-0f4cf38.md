@@ -560,7 +560,7 @@ After you've imported the collection *Partner Directory Example Integration Flow
 
 The collection contains 2 folder structures for the different environments \(Cloud Foundry \(Cloud Foundry\) and Neo\).
 
-![](images/696aa291b22443a09bef0e5f11248b5a.image)
+![](images/696aa291b22443a09bef0e5f11248b5a.xml)
 
 Each environment-specific folder contains the following sub folders.
 

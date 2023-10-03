@@ -14,11 +14,11 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
 
 -   You are familiar with the conversion rules for XML to JSON conversion.
 
-    For more information see .
+    For more information see  <?sap-ot O2O class="- topic/xref " href="778aed733e3140cea0435f4615d53812.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" ?> .
 
 -   You are familiar with the limitations for XML to JSON conversion.
 
-    For more information see .
+    For more information see  <?sap-ot O2O class="- topic/xref " href="a5b4641c393f406bb544987497c90a72.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" ?> .
 
 -   You are familiar with streaming for XML to JSON conversion.
 

@@ -159,7 +159,7 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     Select a contact person from the drop-down list.
 
     > ### Note:  
-    > You need to have the Business Expert to assign a contact person. To know more on assigning roles, see [Configuring User Access](../20-Working_with_SAP_Integration_Suite_Home/configuring-user-access-2c6214a.md).
+    > You need to have the Business Expert to assign a contact person. To know more on assigning roles, see [Configuring User Access](../configuring-user-access-2c6214a.md).
 
 
     
@@ -300,7 +300,7 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     Select a contact person from the drop-down list.
 
     > ### Note:  
-    > You need to have the Business Expert to assign a contact person. To know more on assigning roles, see [Configuring User Access](../20-Working_with_SAP_Integration_Suite_Home/configuring-user-access-2c6214a.md).
+    > You need to have the Business Expert to assign a contact person. To know more on assigning roles, see [Configuring User Access](../configuring-user-access-2c6214a.md).
 
 
     

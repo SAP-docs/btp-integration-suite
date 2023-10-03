@@ -12,11 +12,11 @@ Establish a connection between your SAP Process Orchestration system and Migrati
 
 ## Prerequisites
 
--   You've enabled the Migration Assessment capability in SAP BTP cockpit as described in [Activating and Managing Capabilities](20-Working_with_SAP_Integration_Suite_Home/activating-and-managing-capabilities-2ffb343.md).
+-   You've enabled the Migration Assessment capability in SAP BTP cockpit as described in [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md).
 
     Do you prefer hands-on instructions? Check out the tutorial [Enable Migration Assessment Application](https://developers.sap.com/tutorials/migration-assessment-enablement.html).
 
--   You've set up the relevant access rights for yourself and your users as described in [Configuring User Access](20-Working_with_SAP_Integration_Suite_Home/configuring-user-access-2c6214a.md).
+-   You've set up the relevant access rights for yourself and your users as described in [Configuring User Access](configuring-user-access-2c6214a.md).
 
 -   As API endpoints and subpaths are used to extract data from your SAP Process Orchestration system, make sure that SAP Destination service can access the endpoints listed in the following. See [Destination Service](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/eeb0ec2318fb4dda87830a09ac7a02fa.html).
 

@@ -47,6 +47,9 @@ After enabling the API Management capability, you need to configure the service.
 
     As and when the processes complete the indicators turn green to indicate that the processes are successful. Then, a *Release Notification* mail is sent out to the e-mail IDs provided in the *Configure the API Management Service* screen. This e-mail contains details of the newly set up API Management service on your account.
 
+    > ### Note:  
+    > If the API Management Service Setup encounters an error or fails, the onboarding process will automatically retry the setup up to three times. If the same error or failure continues to occur, please report the issue by creating an incident in the [SAP Support Portal](https://support.sap.com/en/index.html). Please use the component OPU-API-OD-DT for reporting.
+
 
 
 

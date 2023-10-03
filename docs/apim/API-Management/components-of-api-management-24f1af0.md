@@ -26,7 +26,7 @@ The one-stop-shop to create, secure, and publish API Proxies. This is the place 
 
 ### API Business Hub Enterprise
 
-Self-service for application developers to discover, browse, and explore APIs, subscribe to rate plans, and build apps. To know more about using the API business hub enterprise, see .
+Self-service for application developers to discover, browse, and explore APIs, subscribe to rate plans, and build apps. To know more about using the API business hub enterprise, see  <?sap-ot O2O class="- topic/xref " href="dd6d58c1586a4a0a8ffca46a1a019d38.xml" text="" desc="" xtrc="xref:7" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/24f1af0b2f6041d49d0d65b5defb4eb8.xml" ?> .
 
 
 

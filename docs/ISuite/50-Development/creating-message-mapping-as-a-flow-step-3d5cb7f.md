@@ -203,6 +203,9 @@ The supported file types for source and target messages are:
         > While modeling message mapping, if you've nodes whose outputs aren't connected in the mapping expression then on saving the mapping, these nodes get removed automatically.
 
 
+
+Now that you've defined the mapping, proceed with further actions.
+
 5.  You can create your own custom mapping function. Here's how:
 
     1.  In the *Mapping Expression* screen area, choose <span class="SAP-icons"></span> \(Create\) .

@@ -7,7 +7,7 @@ SAP Cloud Integration facilitates the integration of business processes spanning
 **Related Information**  
 
 
-
+ <?sap-ot O2O class="- topic/link " href="c5631b19ea154c1caa325c32771a101d.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2fb0aa4dc5194b589adcd1c5534901e3.xml" ?> 
 
 [SAP Cloud Integration](WhatsNewInCloudIntegration/sap-cloud-integration-72ef31d.md)
 
@@ -29,7 +29,7 @@ SAP Cloud Integration facilitates the integration of business processes spanning
 
 [Operating and Monitoring Cloud Integration](Operations/operating-and-monitoring-cloud-integration-c401afc.md "Operate a Cloud Integration cluster and monitor messages and integration artifacts at runtime")
 
-
+ <?sap-ot O2O class="- topic/link " href="0875355bc75b41d8af00fcf2a6fb9929.xml" text="" desc="" xtrc="link:12" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2fb0aa4dc5194b589adcd1c5534901e3.xml" ?> 
 
 [API Documentation](Development/api-documentation-3fd9fc9.md "Cloud Integration provides various application programming interfaces (APIs) with which you can access data.")
 

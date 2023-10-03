@@ -208,7 +208,7 @@ Tenant decrypts outbound response message.
 **Related Information**  
 
 
-
+ <?sap-ot O2O class="- topic/link " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/169b0b5b16d2415590bc3ce84cc4a918.xml" ?> 
 
 [WS-Security Configuration for the Sender SOAP 1.x Adapter](../Development/ws-security-configuration-for-the-sender-soap-1-x-adapter-e53bb5c.md "")
 

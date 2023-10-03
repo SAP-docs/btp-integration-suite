@@ -11,5 +11,5 @@ The basic concept is that a standard integration flow \(predefined by SAP or an 
 **Related Information**  
 
 
-[Integration Flow Extension](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d3741720e29842e4bf547dcd66139f7f.html "SAP Cloud Integration allows you to extend the capabilities of standard integration content provided by SAP. This approach allows you to implement specific integration scenarios relevant to your business use case without changing the content provided by SAP.") :arrow_upper_right:
+[Integration Flow Extension](integration-flow-extension-d374172.md "SAP Integration Suite allows you to extend the capabilities of standard integration content provided by SAP. This approach allows you to implement specific integration scenarios relevant to your business use case without changing the content provided by SAP.")
 

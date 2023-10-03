@@ -14,7 +14,7 @@ In this scenario, you run a simulation without deploying the integration flow an
 
 In the course of this exercise, you execute a simulation tool on the following integration flow.
 
-![](images/da4c128eeb1e45bbab6a2a99bbbcdc01.image)
+![](images/da4c128eeb1e45bbab6a2a99bbbcdc01.xml)
 
 > ### Note:  
 > Create an integration flow, add the following details, and save.

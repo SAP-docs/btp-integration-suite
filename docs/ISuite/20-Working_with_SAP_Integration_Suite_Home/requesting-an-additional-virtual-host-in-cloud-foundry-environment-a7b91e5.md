@@ -183,7 +183,7 @@ Virtual hosts are the base URLs of an API Proxy. They include the protocol \(htt
 
 [Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](region-specific-ip-addresses-available-for-api-management-cloud-foundr-585d639.md "API Management protects your backend services. However, API Management needs to establish connectivity to your backend services during an API call execution.")
 
-[Requesting for Custom Domain for a Virtual Host](requesting-for-custom-domain-for-a-virtual-host-6b9e5a3.md "When you subscribe to API Management service, and are creating API proxies, they get created with the default virtual host, and the default domain. To suit your requirements, you can request for a custom domain.")
+[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "Virtual host is an entity where the API proxy gets deployed, and API proxies can be accessed using the URL defined in the virtual host.")
 
 [Request for Two-Way SSL Certificate](request-for-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
 

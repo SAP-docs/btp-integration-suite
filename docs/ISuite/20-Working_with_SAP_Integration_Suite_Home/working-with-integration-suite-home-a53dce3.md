@@ -8,8 +8,8 @@ Access the various features and resources available on the Integration Suite hom
 
 **Prerequisites**
 
--   You’ve subscribed to the Integration Suite application. For more information, see [Subscribing to Integration Suite](../10-InitialSetup/subscribing-to-integration-suite-8a3c8b7.md).
--   You’ve the *Integration\_Provisioner* role or any relevant Integration Suite capability-specific role assigned to your user. For more information, see [Configuring User Access](configuring-user-access-2c6214a.md).
+-   You’ve subscribed to the Integration Suite application. For more information, see [Subscribing and Configuring Initial Access to Integration Suite](../10-InitialSetup/subscribing-and-configuring-initial-access-to-integration-suite-8a3c8b7.md).
+-   You’ve the *Integration\_Provisioner* role or any relevant Integration Suite capability-specific role assigned to your user. For more information, see [Configuring User Access](../configuring-user-access-2c6214a.md).
 
 
 
@@ -47,7 +47,7 @@ This section, depending on the capabilities provisioned, displays information pe
 
 ### Capabilities
 
-The *Capabilities* section displays the tiles of the capabilities activated for you. If you've the Integration\_Provisioner role, you'll be able to add new capabilities, and manage the existing capabilities. To know more about adding and activating capabilities, and providing users access to the functionality, see [Capabilities](capabilities-e1c5b90.md) .
+The *Capabilities* section displays the tiles of the capabilities activated for you. If you've the Integration\_Provisioner role, you'll be able to add new capabilities, and manage the existing capabilities. To know more about adding and activating capabilities, and providing users access to the functionality, see [Capabilities](../capabilities-e1c5b90.md) .
 
 Each capability tile also displays some quick links to allow you to start working with the capability.
 
@@ -518,9 +518,9 @@ News and Announcement. Lets you know what is new in the Integration Suite.
 **Related Information**  
 
 
-[Subscribing to Integration Suite](../10-InitialSetup/subscribing-to-integration-suite-8a3c8b7.md "Subscribe to the Integration Suite application from the Subscriptions page in the SAP BTP cockpit.")
+[Subscribing and Configuring Initial Access to Integration Suite](../10-InitialSetup/subscribing-and-configuring-initial-access-to-integration-suite-8a3c8b7.md "Subscribe to the Integration Suite application from the Subscriptions page in the SAP BTP cockpit and assign the Integration_Provisioner role.")
 
-[Configuring User Access](configuring-user-access-2c6214a.md "Create and modify application roles and assign users to these roles.")
+[Configuring User Access](../configuring-user-access-2c6214a.md "Assign the required roles to users for accessing the individual capabilities.")
 
-[Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md "Activate capabilities for the SAP Integration Suite.")
+[Activating and Managing Capabilities](../activating-and-managing-capabilities-2ffb343.md "Activate capabilities for the SAP Integration Suite.")
 

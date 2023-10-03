@@ -23,7 +23,299 @@ The following are the supported file format for certificates: .cer, .jar \(signe
 > ### Note:  
 > If you face any issues while importing the .pkcs/.p12 certificates, please consider checking for restricted characters in your password.
 > 
-> If your password for certificates contains any restricted characters such as \(!, %, ^, &, \#\), import of such certificates might fail. Therefore, while creating the certificates please choose a password without these restricted characters and try importing again.
+> If your password for certificates contains any restricted characters \(listed in the table below\), import of such certificates might fail. Therefore, while creating the certificates please choose a password without these restricted characters and try importing again.
+> 
+> 
+> <table>
+> <tr>
+> <td valign="top">
+> 
+> Exclamation mark
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **!** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Percentage
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **%** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Caret
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **^** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Ampersand
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **&** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Hash
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **\#** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Colon
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **:** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Slash
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **/** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Question mark
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **?** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Square brackets
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **\[ \]** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> At the rate sign
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **@** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Dollar sign
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **$** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Single quotation mark
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **'** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Parenthesis
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **\( \)** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Asterisk
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **\*** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Plus sign
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **\+** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Comma
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **,** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Semicolon
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **;** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Equal sign
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> **=** 
+> 
+> 
+> 
+> </td>
+> </tr>
+> </table>
 
 > ### Note:  
 > Whenever you’re trying to establish a connection between your client and the API Management gateway, certificate pinning ensures that the TLS connection is set up using a particular certificate only. This can help you in situations where you may run into the risk of trusting certificate authorities that you shouldn't. However, the certificate pinning feature isn’t supported currently in API Management.

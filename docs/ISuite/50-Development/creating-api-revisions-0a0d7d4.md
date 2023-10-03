@@ -158,7 +158,7 @@ To create a new revision, execute the following steps:
 10. In the *Save as Revision* dialog, provide a revision name and a description, and choose *Save*.
 
     > ### Note:  
-    > The revision name must be unique and cannot be named "Draft" as it is a reserved term. Instead, you can use alphanumeric characters \(both lowercase and uppercase\), as well as the special characters '\_', '.', and '-'. The name should not exceed 50 characters.
+    > The revision name must be unique and cannot be named "Draft" as it is a reserved term. Instead, you can use alphanumeric characters \(both lowercase and uppercase\), as well as the special characters '\_', '.', '-', and '\(\)'. The name should not exceed 50 characters.
 
     A new revision gets created. You can now edit, delete, and deploy the new revision of the API.
 

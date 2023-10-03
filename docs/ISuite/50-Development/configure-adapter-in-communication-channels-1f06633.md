@@ -1584,7 +1584,7 @@ Connects SAP Integration Suite to a remote system using the SSH File Transfer pr
 
 Supported versions:
 
-SSH version 2 \(as specified at [http://tools.ietf.org/html/rfc4251](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher
+SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher
 
 The sender adapter allows you to define a schedule for polling data from the connected system.
 
@@ -1610,7 +1610,7 @@ Connects SAP Integration Suite to a remote system using the SSH File Transfer pr
 
 Supported versions:
 
-SSH version 2 \(as specified at [http://tools.ietf.org/html/rfc4251](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher
+SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher
 
 See: [Configure the SFTP Receiver Adapter](configure-the-sftp-receiver-adapter-4ef52cf.md)
 

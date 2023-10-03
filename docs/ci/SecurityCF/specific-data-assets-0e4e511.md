@@ -388,11 +388,11 @@ Lock entries that are created \(in the in-progress repository\) to avoid the sam
 
 [Message Processing Log](../Operations/message-processing-log-b32f8cd.md "The message processing log displays structured information of a message.")
 
-
+ <?sap-ot O2O class="- topic/link " href="866b6a94a074487384a21377ec9f2eb2.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/0e4e511016754da4bea756df94172a87.xml" ?> 
 
 [Define Data Store Operations](../Development/define-data-store-operations-79f63a4.md "You can use the data store to temporarily store messages.")
 
-
+ <?sap-ot O2O class="- topic/link " href="9247e59fd76c441592da5724dc890f65.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/0e4e511016754da4bea756df94172a87.xml" ?> 
 
 [Managing Security Material](../Operations/managing-security-material-b8ccb53.md "The Manage Security Material area provides an overview of security-related artifacts.")
 

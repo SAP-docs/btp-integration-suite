@@ -415,7 +415,7 @@ Upload individual files or an archive file that contains only XSL resources.
 
 ## Adding Local Resources
 
-Under the *Resources* tab, choose *Local*.
+Under the *References* tab, choose *Local*.
 
 A table in the resources view displays files grouped by categories and their filenames alphabetically sorted. Expanding each resource category shows the files within the category. Resource files with a link allow you to view or modify the content in a file-specific editor. You can modify the file content only when the integration content is in edit mode.
 
@@ -473,7 +473,7 @@ See: [Importing Mapping Content from ES Repository](IntegrationSettings/importin
 
 Apart from adding resources that are local your integration flow, you can also refer to reusable message mappings and script collections. You can refer to such artifacts from the package that you're in and other packages too. This way, when the reusable artifact is updated in the source, all referring integration flows are also automatically updated.
 
-1.  In the *References* tab, choose *Add References* and select a reusable artifact type.
+1.  In the *References* tab, choose *Global* \> *Add References* and select a reusable artifact type.
 
 2.  Select one or more integration packages.
 

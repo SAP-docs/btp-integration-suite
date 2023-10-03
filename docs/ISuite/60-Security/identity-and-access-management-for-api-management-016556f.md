@@ -48,7 +48,7 @@ Authorization
 </td>
 <td valign="top">
 
-In API Management, you provide authorization to users by assigning relevant roles. For more information on how to provide authorizations, see [Assign User Roles in API Management](../20-Working_with_SAP_Integration_Suite_Home/assign-user-roles-in-api-management-911ca5a.md).
+In API Management, you provide authorization to users by assigning relevant roles. For more information on how to provide authorizations, see [Assign User Roles in API Management](../assign-user-roles-in-api-management-911ca5a.md).
 
 
 

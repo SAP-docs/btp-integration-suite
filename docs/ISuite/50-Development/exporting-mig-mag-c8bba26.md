@@ -29,3 +29,16 @@ You can now export a list of message implementation guidelines\(MIG\) or mapping
 4.  Use the filter option provided under each column header to search for a particular MIG/MAG.
 5.  Choose *Export*. This will download the files in the `.zip` format.
 
+
+
+<a name="loioc8bba26412d44253b734db432e736203__section_ncn_fpw_pyb"/>
+
+## Exporting a single MIG/MAG
+
+If you want to export only one MIG/MAG, follow the procedure below:
+
+1.  Select and open your MIG/MAG.
+
+2.  Choose <span class="SAP-icons"></span> and select *MAG Version \(ZIP\)*/*MIG Version \(ZIP\)* from the list.
+3.  This will download only that specific version of MIG/MAG into a `.zip` file.
+

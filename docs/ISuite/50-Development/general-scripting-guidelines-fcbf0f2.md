@@ -43,9 +43,9 @@ Follow these general guidelines when using the *Script* step.
     > 
     > ```
 
--   Avoid generating pretty-printed versions of xml/json documents. Compacted \(or minified\) documents are normally smaller in size as new line characters and indents are removed from the output. For that reason, a compacted version is preferred when transmitting large documents, for example: `<xml><a>123</a></xml>Reader reader = message.getBody(Reader) def rootNode = new XmlSlurper().parse(reader)`.
+-   Avoid generating pretty-printed versions of xml/json documents. Compacted \(or minified\) documents are normally smaller in size as new line characters and indents are removed from the output. For that reason, a compacted version is preferred when transmitting large documents, for example: `<xml><a>123</a></xml>`.
 
--   Don’t include declarations like `Reader reader = message.getBody(Reader)"def body = message.getBody(java.lang.String) as String"`. The use of Groovy coercion \(for example, as String\) is redundant here and can be omitted because the return type of `message.getBody(String)` is already a String. It's enough to write `“def body = message.getBody(java.lang.String)”`.
+-   Don’t include declarations like `"def body = message.getBody(java.lang.String) as String"`. The use of Groovy coercion \(for example, as String\) is redundant here and can be omitted because the return type of `message.getBody(String)` is already a String. It's enough to write `“def body = message.getBody(java.lang.String)”`.
 
 -   Don't use expressions like `"if (text !=null && text.length() > 0)"` as they can be simplified to `"if (text)"` to check if a string isn’t initial.
 

@@ -5,7 +5,7 @@
 Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.
 
 > ### Note:  
-> The default domain of the virtual host provided with your API Management service is secured with a one-way SSL certificate. For more information, see [Requesting for Custom Domain for a Virtual Host](requesting-for-custom-domain-for-a-virtual-host-6b9e5a3.md).
+> The default domain of the virtual host provided with your API Management service is secured with a one-way SSL certificate. For more information, see [Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md).
 
 You can request for a two-way SSL certificate, which validates the identities of both the web server and the web client.
 

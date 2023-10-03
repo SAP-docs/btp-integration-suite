@@ -278,7 +278,7 @@ More information:
 
 [Authentication and Authorization Options \(Inbound\)](authentication-and-authorization-options-inbound-983f2a5.md "When a client calls a server using a secure communication channel, two different kinds of checks are performed subsequently.")
 
-
+ <?sap-ot O2O class="- topic/link " href="7679ddc6a0b34d2d943d8de76fd37a34.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/778c7e7835ff46408aafe0d499720dc7.xml" ?> 
 
 [Setting Up Inbound HTTP Connections \(with Certificate-to-User Mapping\), Neo Environment](setting-up-inbound-http-connections-with-certificate-to-user-mapping-neo-environment-9949c61.md "Using this option, authentication of a sender is performed based on a client certificate. With a certificate-to-user mapping, the certificate is mapped to a user, whose authorizations are checked on the tenant.")
 

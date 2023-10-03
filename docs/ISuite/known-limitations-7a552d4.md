@@ -106,7 +106,7 @@ Multiple Operations on service instance
 
 Interfaces that use multiple operations aren't supported.
 
-![](images/ab9bbd7ff3ef4f5eb96676df57f135ec.image)
+![](images/ab9bbd7ff3ef4f5eb96676df57f135ec.xml)
 
 You must redesign your interface using an integration pattern to properly identify and handle the multiple operations. You could insert a router step to identify the correct operation and redirect the message to the proper message mapping and receiver.
 

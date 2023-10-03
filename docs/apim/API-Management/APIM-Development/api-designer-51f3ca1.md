@@ -1,6 +1,6 @@
 <!-- loio51f3ca114ea74d4c87990aafd8e6c778 -->
 
-# Creating APIs
+# API Designer
 
 You can create APIs in API designer.
 
@@ -523,10 +523,6 @@ Once you have defined all the necessary information of the API, choose *File* \>
 
 **Related Information**  
 
-
-[Documenting APIs](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Cloud/en-US/6cffa3ef25794fed97ddf7db19f16778.html "Describes the API documentation guidelines, and how to create or edit the documentation in the API designer.") :arrow_upper_right:
-
-[Creating APIs](creating-apis-51f3ca1.md "You can create APIs in API designer.")
 
 [Perform Additional Tasks in API Designer](perform-additional-tasks-in-api-designer-a92cf80.md "")
 

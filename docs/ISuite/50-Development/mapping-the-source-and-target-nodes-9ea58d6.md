@@ -567,14 +567,13 @@ If you want to search for a particular entry in the *Mapping List* tab, select t
 
 ## Deletion of Mapping Lines
 
-You can delete both mapping lines and mapping entities that aren't required. Select the mapping line or entity, and press the [Delete\] key.
+You can delete both mapping lines and mapping entities that aren't required. In *Edit* mode, select the mapping line or entity, and press the [Delete\] key.
 
 Alternatively, you can -
 
 -   Right-click the mapping line or entity and choose *Delete* from the context menu.
 
--   On the *Mapping List* tab, in the mapping pane, choose the *Delete* icon against the mapping line or entity in the *Source* column.
-
+-   Delete multiple mapping entities by selecting the check box of the entries you want to delete under the *Mapping List* tab and selecting *Delete* button provided above the table.
 
 You can also delete an individual mapping line from a mapping entity. You can select the mapping entity and right-click the individual mapping line, and choose *Delete Line* from the context menu.
 
