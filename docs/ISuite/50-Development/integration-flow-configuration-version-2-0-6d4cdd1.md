@@ -10,7 +10,7 @@ The AS2 Adapter has two configuration modes - *Profile* and *Channel*. The Profi
 
 To know more on how to configure this profile mode, see [Creating a Trading Partner Profile](creating-a-trading-partner-profile-542fb11.md).
 
-If you want to make your active agreement compatible with this version, follow the steps mentioned here  <?sap-ot O2O class="- topic/xref " href="86319603293b432b8c65880c609aa9d2.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/ccm1691418051317/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/6d4cdd14953842509907b19175882fea.xml" ?> .
+If you want to make your active agreement compatible with this version, follow the steps mentioned here [Migration Steps for 2.0 Compatibility](migration-steps-for-2-0-compatibility-8631960.md).
 
 > ### Note:  
 > This is a configure-only package and hence, you cannot edit the integration flows.
@@ -219,6 +219,5 @@ Follow the steps below to copy the integration package to your *Design* space.
 
     -   [Interchange Processing Flow V2](interchange-processing-flow-v2-cd26ea5.md)
     -   [Receiver Communication Flow V2](receiver-communication-flow-v2-3897ded.md)
-    -   
 
 

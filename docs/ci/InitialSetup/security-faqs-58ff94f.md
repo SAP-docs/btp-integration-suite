@@ -162,7 +162,7 @@ More information:
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="4b3bb3b1f4784cdbaf6ab103c18ea4a8.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/58ff94fc64784e3d9e53f357f08a0bce.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="4b3bb3b1f4784cdbaf6ab103c18ea4a8.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/58ff94fc64784e3d9e53f357f08a0bce.xml" ?> 
 
 [Connecting a Customer System to Cloud Integration](../ConnectionSetup/connecting-a-customer-system-to-cloud-integration-7cfe913.md "You can set up the technical connection between a tenant and different kinds of remote systems (in many cases located in the customer landscape).")
 

@@ -146,7 +146,7 @@ For example, assume that an integration flow is initiated by a Timer event \(sch
 <tr>
 <td valign="top">
 
-ABANDONDED
+ABANDONED
 
 
 
@@ -156,7 +156,7 @@ ABANDONDED
 Message processing was interrupted or log wasn't updated for an uncommonly long time. The status can change in case processing is resumed.
 
 > ### Note:  
-> When the message processing is interrupted because of a re- or undeployment of an integration flow, or a controlled worker node shutdown, the MPL is immediately set to ABANDONDED. This status isn’t final and the processing can be resumed if retries are configured. If there are hard worker node crashes, the status is changed to ABANDONDED by an asynchronous system job, after some time of inactivity
+> When the message processing is interrupted because of a re- or undeployment of an integration flow, or a controlled worker node shutdown, the MPL is immediately set to ABANDONED. This status isn’t final and the processing can be resumed if retries are configured. If there are hard worker node crashes, the status is changed to ABANDONED by an asynchronous system job, after some time of inactivity
 
 
 

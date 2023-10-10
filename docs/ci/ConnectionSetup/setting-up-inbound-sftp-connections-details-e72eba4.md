@@ -48,7 +48,7 @@ Configure the **sender SFTP adapter** to specify the technical details of how th
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="fc8467b6dc7e40479d3d568cd79a3c1c.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e72eba4a3d894a248ed7686caf76a332.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="fc8467b6dc7e40479d3d568cd79a3c1c.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e72eba4a3d894a248ed7686caf76a332.xml" ?> 
 
 [Creating SFTP Keys](creating-sftp-keys-3485a75.md "You can set up reliable file transfer based on SSH File Transfer Protocol (SFTP). SFTP is an enhancement of the Secure Shell (SSH) network protocol.")
 

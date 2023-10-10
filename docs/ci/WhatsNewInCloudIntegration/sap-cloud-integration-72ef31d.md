@@ -120,6 +120,807 @@ Software Version Update
 </td>
 <td valign="top">
 
+-   SAP Cloud Integration: 6.44.\*
+-   SAP Integration Advisor: 1.78.\*
+-   Increment: 2308
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Changed
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+
+
+</td>
+<td valign="top">
+
+-   SAP Cloud Integration: 5.52.\*
+-   SAP Integration Advisor: 1.78.\*
+-   Adapter Development Kit for SAP Cloud Integration: 2.54.\*
+
+-   Increment: 2308
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Changed
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Adjust the Validity Time of Access Token during Instance Creation
+
+
+
+</td>
+<td valign="top">
+
+You can now manually adjust the validity time of your access token during the creation of your service instance.
+
+See: [Creating Service Instance and Service Key for Inbound Authentication](../ConnectionSetup/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Deactivate Pin Certificates Option during Service Instance Creation
+
+
+
+</td>
+<td valign="top">
+
+You can now manually deactivate the pin certificate functionality to be able to use renewed certificates without additional configuration.
+
+See: [Creating Service Instance and Service Key for Inbound Authentication](../ConnectionSetup/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Multi Mapping for JSON Schemas
+
+
+
+</td>
+<td valign="top">
+
+In message mapping, you can now design a multi-mapping definition by using JSON schemas.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Move Properties and Headers In A Content Modifier Step
+
+
+
+</td>
+<td valign="top">
+
+You can now move the properties and headers in a content modifier step up and down to decide the order of processing them. See: [Define Content Modifier](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/define-content-modifier?version=Cloud#loio8f04a707843a40bf9f6e07ed55b93034__move).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Mapping Guidelines
+
+
+
+</td>
+<td valign="top">
+
+-   You can now search and filter the mapping entities in a MAG based on a specific function pattern.
+
+    See: [Working with a Mapping Guideline \(MAG\)](../IntegrationAdvisor/working-with-a-mapping-guideline-mag-0803ca6.md) 
+
+-   You can now delete multiple mapping entities together in a Mapping Guideline.
+
+    See: [Mapping the Source and Target Nodes](../IntegrationAdvisor/mapping-the-source-and-target-nodes-9ea58d6.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Changed
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Export a single MIG/MAG version
+
+
+
+</td>
+<td valign="top">
+
+You can now export a single version of MIG or MAG into a `.zip` file.
+
+See: [Exporting MIG/MAG](../IntegrationAdvisor/exporting-mig-mag-c8bba26.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Changed
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Code Value Mapping
+
+
+
+</td>
+<td valign="top">
+
+Code value mapping in a MAG now supports N:1 mapping cardinality.
+
+See: [Code Value Mapping](../IntegrationAdvisor/code-value-mapping-eb6dad8.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Changed
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+<td valign="top">
+
+2023-10-01
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+
+
+</td>
+<td valign="top">
+
 -   SAP Cloud Integration: 6.43.\*
 -   SAP Integration Advisor: 1.77.\*
 -   Increment: 2307

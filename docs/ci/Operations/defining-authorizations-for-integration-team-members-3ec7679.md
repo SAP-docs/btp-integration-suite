@@ -55,5 +55,5 @@ Perform the following steps for all users for which to assign authorizations.
 
 [Persona](../SecurityNeo/persona-2937e5c.md "When you perform user management tasks using SAP BTP SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.")
 
- <?sap-ot O2O class="- topic/link " href="289ef3f8cfad442ea86fe0d5ddad8c42.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/3ec767915f4b4cf894413971c8376ca5.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="289ef3f8cfad442ea86fe0d5ddad8c42.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/3ec767915f4b4cf894413971c8376ca5.xml" ?> 
 

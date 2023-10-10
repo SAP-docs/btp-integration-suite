@@ -10,6 +10,9 @@ A processing pipeline comprises of a Request and a Response stream. Proxy endpoi
 
 -   **Conditional Flow**: A condition associated to a flow. A flow can contain one or more conditions. However, only the first condition met is executed. Configure a conditional Flow when you want a set of policies to be executed only when a condition is met. You can define multiple conditional Flows. However, a conditional flow segment is executed only when a match is found with the criteria defined in the Conditional String. Once a conditional Flow is executed, all other succeeding conditional Flows along the chain will not be executed. For example, you want to convert XML to JSON only when the requesting application is running on a mobile device. This scenario can be configured by setting up conditional Flows.
 
+    > ### Note:  
+    > If you need a custom ordering of conditional flows, you can modify it in the proxy zip. The proxy zip can be exported and in the *proxyzip* \> *APIProxy* \> *APIProxyEndPoint* \> *default.xml file*, you can order the sequence of the conditional flows as needed. However, please note that the DefaultFaultFlow will always be appended at the end, regardless of the sequence order assigned to other flows.
+
 -   **PostFlow**: This flow is always executed as the last step in the segment where it is applied, after the conditional flow. Configure a PostFlow when you want to log some data or send a notification that something happened. A PostFlow is always executed regardless of the situation.
 
 -   **PostClientFlow**: This is an optional flow that executes after the response message has been sent to the requesting client application. You can add a PostClientFlow only to the response flow of a ProxyEndpoint. PostClientFlow reduces API proxy latency and makes information available for logging that is not calculated until after the response is returned to the client.

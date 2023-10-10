@@ -264,7 +264,7 @@ Select the authentication method the message broker supports. *SASL* is selected
     > ### Note:  
     > This authentication option implies that Transport Layer Security \(TLS\) is used for the connection.
 
-    More information:  <?sap-ot O2O class="- topic/xref " href="ce627b59a3c2492a8f4263c27e8750a8.xml" text="REFCONT: Product Name Variables" desc="" xtrc="xref:4" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/99ce6748400b4dbfbadf633aeb111067.xml" ?> 
+    More information:  <?sap-ot O2O class="- topic/xref " href="ce627b59a3c2492a8f4263c27e8750a8.xml" text="REFCONT: Product Name Variables" desc="" xtrc="xref:4" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/99ce6748400b4dbfbadf633aeb111067.xml" ?> 
 
 -   *None*
 

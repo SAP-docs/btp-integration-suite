@@ -10,15 +10,16 @@
 
 ## Prerequisites
 
-You've configured a connection to ES Repository under *Settings* \(:gear:\) tab. For more information, see [Configuring Connectivity to an SAP Process Orchestration System](configuring-connectivity-to-an-sap-process-orchestration-system-8c36fd2.md).
+-   You've configured a connection to ES Repository under *Settings* \(:gear:\) tab. For more information, see [Configuring Connectivity to an SAP Process Orchestration System](configuring-connectivity-to-an-sap-process-orchestration-system-8c36fd2.md).
 
-You've opened the integration flow in which you want to add the integration content and you are editing it.
+-   You've opened the integration flow in which you want to add the integration content and you are editing it.
+
 
 
 
 ## Context
 
-After you've configured the connection to ES Repository, you can import content from it in the *Resources* tab of the integration flow editor. Currently, you can import:
+After you've configured the connection to ES Repository, you can import content from it in the *References* tab of the integration flow editor. Currently, you can import:
 
 -   Message mapping
 
@@ -39,7 +40,7 @@ After you've configured the connection to ES Repository, you can import content 
 > 
 > -   The import process fails if the message mapping contains:
 > 
->     -   User Defined Functions with function libraries or imported archives
+>     -   Imported archives
 > 
 >     -   Parameters
 > 
@@ -54,21 +55,23 @@ Here's how you can do it:
 
 ## Procedure
 
-1.  Choose *Resources* \> *Local* tab in the integration flow settings.
+1.  Choose *References* \> *Local* tab in the integration flow properties sheet.
 
-    If you don't see the *Resources* tab, click the empty space in the integration flow editor. You see the *Resources* tab at the bottom of the integration flow editor.
+    If you don't see the *References* tab, click the empty space in the integration flow editor. You see the *References* tab at the bottom of the integration flow editor.
 
-2.  Choose *Add* and select a supported resource.
+2.  Choose *Add* and select a supported resource. See the supported sources here: [Manage Resources of an Integration Flow](../Development/manage-resources-of-an-integration-flow-b5968b2.md).
 
-3.  Choose *ES Repository* as the source. You see the details populated in *Name*, *Address*, and *Location ID* fields. Choose *Connect*.
+3.  Choose *ES Repository* as the source.
+
+4.  Select a ES Repository from the *Name* list. Choose *Connect*.
 
     A connection is established to the ES Repository. A table with the list of available content is displayed.
 
-4.  Choose the resource that you want to import and choose *Select*.
+5.  Choose the resource that you want to import and choose *Select*.
 
     A summary of all the artifacts that are available for import is displayed.
 
-5.  Choose *Add*.
+6.  Choose *Add*.
 
     You see a confirmation about all the artifacts that are successfully imported.
 

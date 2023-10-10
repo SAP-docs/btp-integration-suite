@@ -465,16 +465,9 @@ By default the value is set to *Server Snapshot-Based* which is the recommended 
 </td>
 <td valign="top">
 
-Maximum number of records in one page of results fetched from the service. If set to Zero or empty, it fetches the default page size.
+Maximum number of records in one page from the available results fetched from the service. The value is set to *Empty* by default.
 
-The value is set to *Empty* by default.
-
-If no value is set, then Server-side pagination\(**\_next** link\) is considered.
-
-If a value is entered, Client-side pagination is considered with the value provided.
-
-> ### Note:  
-> It's recommended to leave the value *Empty*.
+If set to empty, fetches the default page size which is 1000 records.
 
 
 

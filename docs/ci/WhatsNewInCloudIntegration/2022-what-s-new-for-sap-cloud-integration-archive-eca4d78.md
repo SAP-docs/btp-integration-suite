@@ -5753,7 +5753,7 @@ Self-Service to Delay Software Update
 </td>
 <td valign="top">
 
-Tenant administrators can now configure their tenants to delay the monthly updates from SAP. See:  <?sap-ot O2O class="- topic/xref " href="ee8ba5b4c9354fbb8c07c24199f7540f.xml" text="" desc="" xtrc="xref:56" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/eca4d788800c4b37b38f738be5410ff1.xml" ?> .
+Tenant administrators can now configure their tenants to delay the monthly updates from SAP. See:  <?sap-ot O2O class="- topic/xref " href="ee8ba5b4c9354fbb8c07c24199f7540f.xml" text="" desc="" xtrc="xref:56" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/eca4d788800c4b37b38f738be5410ff1.xml" ?> .
 
 
 

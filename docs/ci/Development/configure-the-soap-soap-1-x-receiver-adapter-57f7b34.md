@@ -212,6 +212,8 @@ To select the WSDL from a source, you have the following options:
 
 
 > ### Note:  
+> -   If you’ve configured SAP Cloud Connector with the SOAP receiver adapter, you cannot access WSDL via Cloud Connector.
+> 
 > -   If you specify a WSDL, you also have to specify the name of the selected service and the name of the port selected for this service. These fields must have a namespace prefix.
 > 
 >     Expected format: `<namespace>:<service_name>`

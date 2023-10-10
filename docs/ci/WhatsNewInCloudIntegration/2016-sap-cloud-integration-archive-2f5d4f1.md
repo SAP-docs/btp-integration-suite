@@ -115,7 +115,7 @@ For the following adapter types, the authorization option has been enhanced to a
 
 [HTTPS Sender Adapter](../Development/https-sender-adapter-0ae4a78.md)
 
- <?sap-ot O2O class="- topic/xref " href="63a96540c8494b578ec657bdfa5be6b8.xml" text="" desc="" xtrc="xref:9" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="63a96540c8494b578ec657bdfa5be6b8.xml" text="" desc="" xtrc="xref:9" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -263,7 +263,7 @@ You can change the context of a field in the source message of the mapping defin
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="3f2f4bb739b84bf48154d6734869a992.xml" text="" desc="" xtrc="xref:13" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="3f2f4bb739b84bf48154d6734869a992.xml" text="" desc="" xtrc="xref:13" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -364,9 +364,9 @@ For the following adapter types, the authorization option has been enhanced to a
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="96c4de6cc2224e2a8eac6ecef7e562ce.xml" text="" desc="" xtrc="xref:15" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="96c4de6cc2224e2a8eac6ecef7e562ce.xml" text="" desc="" xtrc="xref:15" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="a5eebca5329749669660b1779202b4c0.xml" text="" desc="" xtrc="xref:16" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="a5eebca5329749669660b1779202b4c0.xml" text="" desc="" xtrc="xref:16" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -396,7 +396,7 @@ You can now dynamically provide the Data Store Name for the transient data store
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="249800a2ce894867bb6dde96b5dc5df3.xml" text="" desc="" xtrc="xref:17" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="249800a2ce894867bb6dde96b5dc5df3.xml" text="" desc="" xtrc="xref:17" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -426,7 +426,7 @@ Post message processing, the trace data is deleted after 60 minutes.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="866b6a94a074487384a21377ec9f2eb2.xml" text="" desc="" xtrc="xref:18" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="866b6a94a074487384a21377ec9f2eb2.xml" text="" desc="" xtrc="xref:18" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -456,7 +456,7 @@ You can now use the SuccessFactors OData V4 adapter to perform *Update* operatio
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="9c915cc929d84559997c12e18c74e9f0.xml" text="" desc="" xtrc="xref:19" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="9c915cc929d84559997c12e18c74e9f0.xml" text="" desc="" xtrc="xref:19" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -486,7 +486,7 @@ You can now define \(on integration process and local integration process level\
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="e4630de9a8314848b73555e0b0c35d7e.xml" text="" desc="" xtrc="xref:20" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="e4630de9a8314848b73555e0b0c35d7e.xml" text="" desc="" xtrc="xref:20" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -856,9 +856,9 @@ Configuration of inbound authorization for SOAP-based adapters \(SOAP 1.x, SAP R
 
 [SOAP \(SAP RM\) Adapter](../Development/soap-sap-rm-adapter-6bd724f.md)
 
- <?sap-ot O2O class="- topic/xref " href="efff064fdb9140adbc4e195fdf906e3e.xml" text="" desc="" xtrc="xref:30" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="efff064fdb9140adbc4e195fdf906e3e.xml" text="" desc="" xtrc="xref:30" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="9597227a3a044904988fb9dca54aaceb.xml" text="" desc="" xtrc="xref:31" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="9597227a3a044904988fb9dca54aaceb.xml" text="" desc="" xtrc="xref:31" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 [Assign Sender and Receiver Components](../Development/assign-sender-and-receiver-components-f0eb056.md)
 
@@ -1082,13 +1082,13 @@ Configuration of inbound authorization for SOAP-based adapters \(SOAP 1.x, SAP R
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="45a7fe20558b4b188cfc93180be982be.xml" text="" desc="" xtrc="xref:40" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="45a7fe20558b4b188cfc93180be982be.xml" text="" desc="" xtrc="xref:40" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="16b2960160204db8a9c6098634593f72.xml" text="" desc="" xtrc="xref:41" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="16b2960160204db8a9c6098634593f72.xml" text="" desc="" xtrc="xref:41" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="411ef9c366754e14bb790c6a663827ec.xml" text="" desc="" xtrc="xref:42" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="411ef9c366754e14bb790c6a663827ec.xml" text="" desc="" xtrc="xref:42" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:43" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:43" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -1174,7 +1174,7 @@ You can now find an example how to use the query string in the HTTP Receiver Ada
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="5e77b59f09e04088b0a01abb1fe4d191.xml" text="" desc="" xtrc="xref:44" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="5e77b59f09e04088b0a01abb1fe4d191.xml" text="" desc="" xtrc="xref:44" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -1204,7 +1204,7 @@ This fix ensures that integration flows with *Run Once* setting in *Timer*/*Sche
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="27f4f030b2cc432f93869f9692f5f5c2.xml" text="" desc="" xtrc="xref:46" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="27f4f030b2cc432f93869f9692f5f5c2.xml" text="" desc="" xtrc="xref:46" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -1234,7 +1234,7 @@ You can now pass filter conditions via header or properties while performing asy
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="aad94bc587904765b64f1bbbf80aac19.xml" text="" desc="" xtrc="xref:47" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="aad94bc587904765b64f1bbbf80aac19.xml" text="" desc="" xtrc="xref:47" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -1300,7 +1300,7 @@ The server certificate chain now also contains the SAN \(SubjectsAlternativeName
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="08adad0516e347dbb0539fc488092a8f.xml" text="" desc="" xtrc="xref:48" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="08adad0516e347dbb0539fc488092a8f.xml" text="" desc="" xtrc="xref:48" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -1613,7 +1613,7 @@ You can now configure a proxy server to AS2 receiver communication channel.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="63a96540c8494b578ec657bdfa5be6b8.xml" text="" desc="" xtrc="xref:60" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="63a96540c8494b578ec657bdfa5be6b8.xml" text="" desc="" xtrc="xref:60" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -1709,7 +1709,7 @@ You can now add, set, get, remove headers to/from an attachment and add, set att
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="905b24171cc746ef9069939ff3b536db.xml" text="" desc="" xtrc="xref:63" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="905b24171cc746ef9069939ff3b536db.xml" text="" desc="" xtrc="xref:63" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -1775,7 +1775,7 @@ Integration flow developers and/or tenant admin personas can now enable tracing 
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="a83ce8c016a8467fa6a165ce9da5a40c.xml" text="" desc="" xtrc="xref:64" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="a83ce8c016a8467fa6a165ce9da5a40c.xml" text="" desc="" xtrc="xref:64" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -1805,7 +1805,7 @@ If you configure the *Timer* or *Scheduler* with *Run Once* setting, message is 
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="27f4f030b2cc432f93869f9692f5f5c2.xml" text="" desc="" xtrc="xref:65" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="27f4f030b2cc432f93869f9692f5f5c2.xml" text="" desc="" xtrc="xref:65" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -1946,9 +1946,9 @@ The OData API has been extended by the following entities:
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="9e990d5d0a1e438dbb3675d43a8f91c3.xml" text="" desc="" xtrc="xref:66" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="9e990d5d0a1e438dbb3675d43a8f91c3.xml" text="" desc="" xtrc="xref:66" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="cb643921a2ab4a4d8c5f7fc092120811.xml" text="" desc="" xtrc="xref:67" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="cb643921a2ab4a4d8c5f7fc092120811.xml" text="" desc="" xtrc="xref:67" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -2320,7 +2320,7 @@ You can now select product profiles while creating integration project for an in
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="c8b95b276d6d4feaa19591f7e7af386b.xml" text="" desc="" xtrc="xref:82" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="c8b95b276d6d4feaa19591f7e7af386b.xml" text="" desc="" xtrc="xref:82" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -2350,7 +2350,7 @@ You can now select mapping source from partner directory and also set header and
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="bb7da9abd6914e98ba5b7baacec5c609.xml" text="" desc="" xtrc="xref:83" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="bb7da9abd6914e98ba5b7baacec5c609.xml" text="" desc="" xtrc="xref:83" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -2387,7 +2387,7 @@ You can now use the mail sender adapter for the following tasks:
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="08af047a0c0145ab8742b946cff7bcd7.xml" text="" desc="" xtrc="xref:84" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="08af047a0c0145ab8742b946cff7bcd7.xml" text="" desc="" xtrc="xref:84" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -2761,7 +2761,7 @@ You can now not just create but also delete headers and properties.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="2c667a12a0a545d2ad4210e070479312.xml" text="" desc="" xtrc="xref:98" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="2c667a12a0a545d2ad4210e070479312.xml" text="" desc="" xtrc="xref:98" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -2832,9 +2832,9 @@ Outbound connectivity test for SSL and SSH connections has been enhanced in the 
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="08adad0516e347dbb0539fc488092a8f.xml" text="" desc="" xtrc="xref:99" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="08adad0516e347dbb0539fc488092a8f.xml" text="" desc="" xtrc="xref:99" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="dcf0040fa517454784669bed3eacfe8b.xml" text="" desc="" xtrc="xref:100" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="dcf0040fa517454784669bed3eacfe8b.xml" text="" desc="" xtrc="xref:100" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -3014,7 +3014,7 @@ In a Content Modifier step, you can set the property `SAP_CorrelateMPLs` to swit
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="3983143d6f8f4ea49461d4f167b5ae6f.xml" text="" desc="" xtrc="xref:108" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="3983143d6f8f4ea49461d4f167b5ae6f.xml" text="" desc="" xtrc="xref:108" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -3104,7 +3104,7 @@ You can now use the Content Modifier to reset the header SAP\_Receiver.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="3983143d6f8f4ea49461d4f167b5ae6f.xml" text="" desc="" xtrc="xref:111" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="3983143d6f8f4ea49461d4f167b5ae6f.xml" text="" desc="" xtrc="xref:111" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -3200,7 +3200,7 @@ You can now select None as authentication method.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="411ef9c366754e14bb790c6a663827ec.xml" text="" desc="" xtrc="xref:112" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="411ef9c366754e14bb790c6a663827ec.xml" text="" desc="" xtrc="xref:112" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -3268,7 +3268,7 @@ With this release, OData sender adapter is not available for editing in the inte
 
 [Editing an Integration Flow](../Development/editing-an-integration-flow-ccd062a.md) 
 
- <?sap-ot O2O class="- topic/xref " href="ff4cfc53ea5c440da78fe039d85b8319.xml" text="" desc="" xtrc="xref:114" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="ff4cfc53ea5c440da78fe039d85b8319.xml" text="" desc="" xtrc="xref:114" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -3592,7 +3592,7 @@ You can now access and use integration content from partners in the public catal
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="ad1d6124df8540259302a8787e79217c.xml" text="" desc="" xtrc="xref:132" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="ad1d6124df8540259302a8787e79217c.xml" text="" desc="" xtrc="xref:132" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -3718,7 +3718,7 @@ You can use the*Use Temporary File* function to write the data to a temporary fi
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="a9d84ab623bc436db8ddd073db6b5165.xml" text="" desc="" xtrc="xref:135" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="a9d84ab623bc436db8ddd073db6b5165.xml" text="" desc="" xtrc="xref:135" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -3748,7 +3748,7 @@ When *Add Multipart Header Inline* is selected and the inbound message is, other
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="10d649ed16db446183f466d15dba199e.xml" text="" desc="" xtrc="xref:136" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="10d649ed16db446183f466d15dba199e.xml" text="" desc="" xtrc="xref:136" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -3778,7 +3778,7 @@ You can use the new Read Lock Strategy *Done File Expected*to signal that the fi
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="6199b175528740d88cb6d07e621275b9.xml" text="" desc="" xtrc="xref:137" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="6199b175528740d88cb6d07e621275b9.xml" text="" desc="" xtrc="xref:137" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -3808,7 +3808,7 @@ You can now use Create\(POST\) operation with SuccessFactors adapter with OData 
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="9c915cc929d84559997c12e18c74e9f0.xml" text="" desc="" xtrc="xref:138" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="9c915cc929d84559997c12e18c74e9f0.xml" text="" desc="" xtrc="xref:138" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -3838,7 +3838,7 @@ You can now configure timeout or the maximum time the adapter waits for a respon
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="aad94bc587904765b64f1bbbf80aac19.xml" text="" desc="" xtrc="xref:139" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="aad94bc587904765b64f1bbbf80aac19.xml" text="" desc="" xtrc="xref:139" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -4112,7 +4112,7 @@ The maximum number of iterations for the looping process call has been increased
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="bcb885971519439790aafb61ad6c5474.xml" text="" desc="" xtrc="xref:156" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="bcb885971519439790aafb61ad6c5474.xml" text="" desc="" xtrc="xref:156" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -4142,7 +4142,7 @@ Certain Post Processing parameters are now externalizable.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="1db65d7205864e638627265ee7f32bf0.xml" text="" desc="" xtrc="xref:157" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="1db65d7205864e638627265ee7f32bf0.xml" text="" desc="" xtrc="xref:157" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -4172,7 +4172,7 @@ You can now configure a temporary file name for the *Override* option of the SFT
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="a9d84ab623bc436db8ddd073db6b5165.xml" text="" desc="" xtrc="xref:158" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="a9d84ab623bc436db8ddd073db6b5165.xml" text="" desc="" xtrc="xref:158" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -4202,7 +4202,7 @@ You cannot download configure-only content any more.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="8a43e29496154ebe8683bf9e4178a108.xml" text="" desc="" xtrc="xref:159" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="8a43e29496154ebe8683bf9e4178a108.xml" text="" desc="" xtrc="xref:159" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -4232,7 +4232,7 @@ You can externalize the*Allow Chunking* parameter.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="1db65d7205864e638627265ee7f32bf0.xml" text="" desc="" xtrc="xref:161" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="1db65d7205864e638627265ee7f32bf0.xml" text="" desc="" xtrc="xref:161" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -4262,7 +4262,7 @@ The AS2 adapter will no longer generate an additional message processing log \(M
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="a5eebca5329749669660b1779202b4c0.xml" text="" desc="" xtrc="xref:162" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="a5eebca5329749669660b1779202b4c0.xml" text="" desc="" xtrc="xref:162" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -4643,7 +4643,7 @@ The Integration Designer and the Integration Operations feature now run on Eclip
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="4ba9fa6f288446bb98be3aede3b66b80.xml" text="" desc="" xtrc="xref:180" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="4ba9fa6f288446bb98be3aede3b66b80.xml" text="" desc="" xtrc="xref:180" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -4673,7 +4673,7 @@ You can dynamically configure the *Credential Name*property \(when basic authent
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="5e77b59f09e04088b0a01abb1fe4d191.xml" text="" desc="" xtrc="xref:181" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="5e77b59f09e04088b0a01abb1fe4d191.xml" text="" desc="" xtrc="xref:181" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -4738,9 +4738,9 @@ The SFTP adapter has been enhanced by the following new capabilities:
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="6199b175528740d88cb6d07e621275b9.xml" text="" desc="" xtrc="xref:182" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="6199b175528740d88cb6d07e621275b9.xml" text="" desc="" xtrc="xref:182" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="a9d84ab623bc436db8ddd073db6b5165.xml" text="" desc="" xtrc="xref:183" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="a9d84ab623bc436db8ddd073db6b5165.xml" text="" desc="" xtrc="xref:183" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -4770,7 +4770,7 @@ Enhanced
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="18cb520cf8e74c528b14312058e8e38e.xml" text="" desc="" xtrc="xref:185" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="18cb520cf8e74c528b14312058e8e38e.xml" text="" desc="" xtrc="xref:185" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -4836,7 +4836,7 @@ The Integration Designer and the Integration Operations feature now run on Eclip
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="4ba9fa6f288446bb98be3aede3b66b80.xml" text="" desc="" xtrc="xref:186" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="4ba9fa6f288446bb98be3aede3b66b80.xml" text="" desc="" xtrc="xref:186" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -4866,7 +4866,7 @@ The *CorrelationId* was added that allows you to identify correlated messages.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="ce3fcff9b07941269ea0e41908dfda3f.xml" text="" desc="" xtrc="xref:187" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="ce3fcff9b07941269ea0e41908dfda3f.xml" text="" desc="" xtrc="xref:187" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -4980,7 +4980,7 @@ You can now assign an OData adapter to the sender channel in an integration proj
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="ff4cfc53ea5c440da78fe039d85b8319.xml" text="" desc="" xtrc="xref:197" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="ff4cfc53ea5c440da78fe039d85b8319.xml" text="" desc="" xtrc="xref:197" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -5196,7 +5196,7 @@ You can now assign an OData adapter to the sender channel in an integration proj
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="3b52ea0b3973478094931f399f6c5696.xml" text="" desc="" xtrc="xref:203" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="3b52ea0b3973478094931f399f6c5696.xml" text="" desc="" xtrc="xref:203" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?> 
 
 
 
@@ -5226,7 +5226,7 @@ You can now access SuccessFactors OData V4 service using the SuccessFactors adap
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="9c915cc929d84559997c12e18c74e9f0.xml" text="" desc="" xtrc="xref:204" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="9c915cc929d84559997c12e18c74e9f0.xml" text="" desc="" xtrc="xref:204" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -5570,7 +5570,7 @@ You can find a list of parameters that can be externalized.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="1db65d7205864e638627265ee7f32bf0.xml" text="" desc="" xtrc="xref:222" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="1db65d7205864e638627265ee7f32bf0.xml" text="" desc="" xtrc="xref:222" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -5636,7 +5636,7 @@ A new property *Profile* is displayed for nodes in the Properties view.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="ab9f8bfa719f469cac12dd5c8da27f73.xml" text="" desc="" xtrc="xref:225" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="ab9f8bfa719f469cac12dd5c8da27f73.xml" text="" desc="" xtrc="xref:225" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 
@@ -5874,7 +5874,7 @@ You can add an additional header \(`SAP_MessageType`\) to a message using the Co
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="3983143d6f8f4ea49461d4f167b5ae6f.xml" text="" desc="" xtrc="xref:243" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="3983143d6f8f4ea49461d4f167b5ae6f.xml" text="" desc="" xtrc="xref:243" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2f5d4f15e3944e7d86109406afbaf054.xml" ?>  
 
 
 

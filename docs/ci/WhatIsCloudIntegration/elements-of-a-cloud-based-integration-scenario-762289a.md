@@ -34,9 +34,9 @@ The following figure provides a simplified and generalized representation of an 
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="eb8a714909e54e3581efc58518e5bcfc.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/762289ab192a4a9a9230b1a56757bf19.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="eb8a714909e54e3581efc58518e5bcfc.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/762289ab192a4a9a9230b1a56757bf19.xml" ?> 
 
- <?sap-ot O2O class="- topic/link " href="f1094c33ce164b9ba6ee413855a0dee2.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/762289ab192a4a9a9230b1a56757bf19.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="f1094c33ce164b9ba6ee413855a0dee2.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/762289ab192a4a9a9230b1a56757bf19.xml" ?> 
 
 [Runtime in Detail](../Operations/runtime-in-detail-bdbc3f0.md "For different customers, separate resources (in terms of: memory, CPU, file system) of the cloud-based integration platform are allocated – although all customers share the same hardware. This concept is also referred to as tenant isolation.")
 

@@ -47,13 +47,13 @@ You can then run the integration flow and monitor message processing as describe
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="dc464296532f4d5aa7e49fc21e016b79.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e4bef7446ad14c5a815b93ff20efebec.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="dc464296532f4d5aa7e49fc21e016b79.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e4bef7446ad14c5a815b93ff20efebec.xml" ?> 
 
- <?sap-ot O2O class="- topic/link " href="1399da491e7946999ead9566ae751311.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e4bef7446ad14c5a815b93ff20efebec.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="1399da491e7946999ead9566ae751311.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e4bef7446ad14c5a815b93ff20efebec.xml" ?> 
 
- <?sap-ot O2O class="- topic/link " href="b60b009577f54f7eb56b457c16b25b26.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e4bef7446ad14c5a815b93ff20efebec.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="b60b009577f54f7eb56b457c16b25b26.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e4bef7446ad14c5a815b93ff20efebec.xml" ?> 
 
- <?sap-ot O2O class="- topic/link " href="b08ee602f6954b2eb3cfd111f9a4d367.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e4bef7446ad14c5a815b93ff20efebec.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="b08ee602f6954b2eb3cfd111f9a4d367.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e4bef7446ad14c5a815b93ff20efebec.xml" ?> 
 
 [Create the Script Step to Log the Payload](create-the-script-step-to-log-the-payload-613181e.md "Add a Script step to log the message payload.")
 

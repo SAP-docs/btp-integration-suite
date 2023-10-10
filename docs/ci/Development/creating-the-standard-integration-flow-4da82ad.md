@@ -13,7 +13,7 @@ This is a summary of the elements of the integration flow. Check out the detaile
 
 -   Sender and SOAP sender adapter
 
-    The sender is simulated by using a SOAP client that calls the integration flow endpoint using the SOAP 1.x sender adapter. The SOAP client sends message A to Cloud Integration.
+    The sender is simulated by using a SOAP client that calls the integration flow endpoint using the SOAP 1.x sender adapter. The SOAP client sends message A to SAP Cloud Integration.
 
 -   Content Modifier
 

@@ -160,7 +160,7 @@ For detailed step-by-step descriptions how to use the Partner Directory, see the
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="bbccb60d93474163a1e278bacb64ecb3.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e7fa1e2cd16049b7bfefe938355a574c.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="bbccb60d93474163a1e278bacb64ecb3.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e7fa1e2cd16049b7bfefe938355a574c.xml" ?> 
 
 [Partner Authorization \(Inbound\)](../Development/partner-authorization-inbound-c0c9950.md "For inbound calls (when a partner sends a message to the integration platform), a partner authorization check evaluates whether the logged-in user has permission to execute messages with a particular sender partner ID.")
 

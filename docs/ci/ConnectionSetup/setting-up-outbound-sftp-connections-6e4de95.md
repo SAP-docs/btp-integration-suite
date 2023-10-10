@@ -55,7 +55,7 @@ With this is authentication option, the user \(performing the file transfer\) is
 
 More information:
 
- <?sap-ot O2O class="- topic/xref " href="fc8467b6dc7e40479d3d568cd79a3c1c.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/6e4de95808134022b1543476eea0b1b3.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="fc8467b6dc7e40479d3d568cd79a3c1c.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/6e4de95808134022b1543476eea0b1b3.xml" ?> 
 
 
 
@@ -104,7 +104,7 @@ Supported by SFTP sender adapter.
 
 More information:
 
- <?sap-ot O2O class="- topic/xref " href="fc8467b6dc7e40479d3d568cd79a3c1c.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/6e4de95808134022b1543476eea0b1b3.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="fc8467b6dc7e40479d3d568cd79a3c1c.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/6e4de95808134022b1543476eea0b1b3.xml" ?> 
 
 
 

@@ -820,7 +820,7 @@ More information: [Configure the OData V2 Receiver Adapter](../Development/confi
 
 You can call the remote API for copying an integration package from *Discover* section to *Design* section.
 
-More information:  <?sap-ot O2O class="- topic/xref " href="b63acd364c144996b437a99342a7c0ef.xml" text="" desc="" xtrc="xref:25" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
+More information:  <?sap-ot O2O class="- topic/xref " href="b63acd364c144996b437a99342a7c0ef.xml" text="" desc="" xtrc="xref:25" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
 
 
 
@@ -1054,7 +1054,7 @@ Enhanced
 
 You can not only update but also call the remote API to create an integration flow.
 
-More information:  <?sap-ot O2O class="- topic/xref " href="01685c0e628a46399a1f9113cf446bc5.xml" text="" desc="" xtrc="xref:38" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+More information:  <?sap-ot O2O class="- topic/xref " href="01685c0e628a46399a1f9113cf446bc5.xml" text="" desc="" xtrc="xref:38" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
 
 
@@ -1237,9 +1237,9 @@ You can also create and update a resource with content in zip folder. In this ca
 
 More information:
 
- <?sap-ot O2O class="- topic/xref " href="6fbffc0f6dab44348769e6fc7b2daf38.xml" text="" desc="" xtrc="xref:44" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="6fbffc0f6dab44348769e6fc7b2daf38.xml" text="" desc="" xtrc="xref:44" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="8f4c5e52dc4b4696b89e14729140fb10.xml" text="" desc="" xtrc="xref:45" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="8f4c5e52dc4b4696b89e14729140fb10.xml" text="" desc="" xtrc="xref:45" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
 
 
@@ -1480,9 +1480,9 @@ More information:
 
 [Updating a Certificate](../Operations/updating-a-certificate-1fa04fa.md) \(Web UI\)
 
- <?sap-ot O2O class="- topic/xref " href="9e18587a2c7841c699d6296e235a8d08.xml" text="" desc="" xtrc="xref:53" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?>  \(OData API\)
+ <?sap-ot O2O class="- topic/xref " href="9e18587a2c7841c699d6296e235a8d08.xml" text="" desc="" xtrc="xref:53" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?>  \(OData API\)
 
- <?sap-ot O2O class="- topic/xref " href="5defe675a5d54e558599ce88efb15edb.xml" text="" desc="" xtrc="xref:54" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?>  \(OData API\)
+ <?sap-ot O2O class="- topic/xref " href="5defe675a5d54e558599ce88efb15edb.xml" text="" desc="" xtrc="xref:54" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?>  \(OData API\)
 
 
 
@@ -1506,7 +1506,7 @@ New
 
 You can call the remote API to download integration artifact.
 
-More information:  <?sap-ot O2O class="- topic/xref " href="460dee19f9c141e88ba0454ce892247a.xml" text="" desc="" xtrc="xref:56" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
+More information:  <?sap-ot O2O class="- topic/xref " href="460dee19f9c141e88ba0454ce892247a.xml" text="" desc="" xtrc="xref:56" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
 
 
 
@@ -1532,17 +1532,17 @@ You can call the remote API for reading, creating, updating, deleting and downlo
 
 More information:
 
- <?sap-ot O2O class="- topic/xref " href="6064c670642f4472b60bc2de81ff0545.xml" text="" desc="" xtrc="xref:57" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="6064c670642f4472b60bc2de81ff0545.xml" text="" desc="" xtrc="xref:57" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="8f4c5e52dc4b4696b89e14729140fb10.xml" text="" desc="" xtrc="xref:58" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="8f4c5e52dc4b4696b89e14729140fb10.xml" text="" desc="" xtrc="xref:58" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="6fbffc0f6dab44348769e6fc7b2daf38.xml" text="" desc="" xtrc="xref:59" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="6fbffc0f6dab44348769e6fc7b2daf38.xml" text="" desc="" xtrc="xref:59" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="e5c0698bc35f4906b75c7db9fc07536f.xml" text="" desc="" xtrc="xref:60" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="e5c0698bc35f4906b75c7db9fc07536f.xml" text="" desc="" xtrc="xref:60" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="e18b3568d27c4321add368ac8e811dfc.xml" text="" desc="" xtrc="xref:61" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="e18b3568d27c4321add368ac8e811dfc.xml" text="" desc="" xtrc="xref:61" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="f6c1e78e2a0342d4a33198b607f681c7.xml" text="" desc="" xtrc="xref:62" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="f6c1e78e2a0342d4a33198b607f681c7.xml" text="" desc="" xtrc="xref:62" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
 
 
@@ -1566,7 +1566,7 @@ New
 
 You can call the remote API to delete integration artifact.
 
-More information:  <?sap-ot O2O class="- topic/xref " href="e8e0dca12e444b23949f00862e317551.xml" text="" desc="" xtrc="xref:63" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
+More information:  <?sap-ot O2O class="- topic/xref " href="e8e0dca12e444b23949f00862e317551.xml" text="" desc="" xtrc="xref:63" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
 
 
 
@@ -2040,7 +2040,7 @@ New
 
 You can call the remote API to create integration flow.
 
- <?sap-ot O2O class="- topic/xref " href="4e7b436380f04ad3980e4ed79ee9af0a.xml" text="" desc="" xtrc="xref:78" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="4e7b436380f04ad3980e4ed79ee9af0a.xml" text="" desc="" xtrc="xref:78" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
 
 
@@ -2184,11 +2184,11 @@ You can call the remote API for reading an integration artifact which will retur
 
 More information:
 
- <?sap-ot O2O class="- topic/xref " href="ed0806de808c49b683d8a9aa583a4e6e.xml" text="" desc="" xtrc="xref:85" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="ed0806de808c49b683d8a9aa583a4e6e.xml" text="" desc="" xtrc="xref:85" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="4d6feb4d541640fc89b386ec1421f22c.xml" text="" desc="" xtrc="xref:86" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="4d6feb4d541640fc89b386ec1421f22c.xml" text="" desc="" xtrc="xref:86" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="4ac6cc2f5b5544e6b72c195d7cefdba9.xml" text="" desc="" xtrc="xref:87" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="4ac6cc2f5b5544e6b72c195d7cefdba9.xml" text="" desc="" xtrc="xref:87" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
 
 
@@ -2214,7 +2214,7 @@ This feature is available for Web.
 
 Now tenant administrators can disable a tenant in Cloud Integration service.
 
-More information:  <?sap-ot O2O class="- topic/xref " href="0127d4764f3f40b3b9a8fe363f2f26cc.xml" text="" desc="" xtrc="xref:88" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
+More information:  <?sap-ot O2O class="- topic/xref " href="0127d4764f3f40b3b9a8fe363f2f26cc.xml" text="" desc="" xtrc="xref:88" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
 
 
 
@@ -2467,11 +2467,11 @@ In case you have as *Authorization* chosen the option *User Role*, the value hel
 
 More information:
 
- <?sap-ot O2O class="- topic/xref " href="efff064fdb9140adbc4e195fdf906e3e.xml" text="" desc="" xtrc="xref:97" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="efff064fdb9140adbc4e195fdf906e3e.xml" text="" desc="" xtrc="xref:97" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
 [SOAP \(SAP RM\) Adapter](../Development/soap-sap-rm-adapter-6bd724f.md)
 
- <?sap-ot O2O class="- topic/xref " href="9597227a3a044904988fb9dca54aaceb.xml" text="" desc="" xtrc="xref:99" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="9597227a3a044904988fb9dca54aaceb.xml" text="" desc="" xtrc="xref:99" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
 
 
@@ -3279,7 +3279,7 @@ More information:
 
 -   [SOAP \(SAP RM\) Adapter](../Development/soap-sap-rm-adapter-6bd724f.md)
 
--    <?sap-ot O2O class="- topic/xref " href="9597227a3a044904988fb9dca54aaceb.xml" text="" desc="" xtrc="xref:135" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="9597227a3a044904988fb9dca54aaceb.xml" text="" desc="" xtrc="xref:135" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
 -   [HTTP Receiver Adapter](../Development/http-receiver-adapter-2da452e.md)
 
@@ -3421,7 +3421,7 @@ This feature is available in Web application.
 
 SAP BTP now offers Consumption-based model for consuming services in Cloud Integration.
 
-For more information, see  <?sap-ot O2O class="- topic/xref " href="ababa8559b4740f78fb47941dad42f81.xml" text="" desc="" xtrc="xref:141" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
+For more information, see  <?sap-ot O2O class="- topic/xref " href="ababa8559b4740f78fb47941dad42f81.xml" text="" desc="" xtrc="xref:141" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
 
 
 

@@ -62,7 +62,7 @@ Once the tenant is activated, you need to assign the roles on the tenant before 
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="289ef3f8cfad442ea86fe0d5ddad8c42.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/68071199dcd047d180b1bceb83016d81.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="289ef3f8cfad442ea86fe0d5ddad8c42.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/68071199dcd047d180b1bceb83016d81.xml" ?> 
 
 [Managing Users and Role Assignments, Neo Environment](../Operations/managing-users-and-role-assignments-neo-environment-1d470b0.md "You specify the members of the account and assign roles to them.")
 

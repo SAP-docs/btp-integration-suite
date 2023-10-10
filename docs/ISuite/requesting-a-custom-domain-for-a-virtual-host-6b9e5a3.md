@@ -10,7 +10,7 @@ Virtual host is an entity where the API proxy gets deployed, and API proxies can
 
 ## Context
 
-During onboarding, when you enable the API Management capability within Integration Suite , a virtual host is created by default, and you can execute the APIs using the URL of this virtual host. The domain for this virtual host URL is specific to the SAP data center where the tenant is onboarded.
+During onboarding, when you enable the API Management capability within Integration Suite, a virtual host is created by default, and you can execute the APIs using the URL of this virtual host. The domain for this virtual host URL is specific to the SAP data center where the tenant is onboarded.
 
 Once onboarding is completed, you can create an additional virtual host. You have the option to create the virtual host with a domain that is specific to your organization. This domain is referred to as a Custom Domain.
 

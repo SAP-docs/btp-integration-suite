@@ -57,7 +57,7 @@ Recommended configuration option for secure communication is public key authenti
 
 More information:
 
- <?sap-ot O2O class="- topic/xref " href="fc8467b6dc7e40479d3d568cd79a3c1c.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/d8fb95805cca4dc88193d24a887c4f70.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="fc8467b6dc7e40479d3d568cd79a3c1c.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/d8fb95805cca4dc88193d24a887c4f70.xml" ?> 
 
 
 
@@ -104,7 +104,7 @@ Using this authentication option, the user \(performing the file transfer\) is a
 
 More information:
 
- <?sap-ot O2O class="- topic/xref " href="fc8467b6dc7e40479d3d568cd79a3c1c.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/d8fb95805cca4dc88193d24a887c4f70.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="fc8467b6dc7e40479d3d568cd79a3c1c.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/d8fb95805cca4dc88193d24a887c4f70.xml" ?> 
 
 
 

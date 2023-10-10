@@ -169,7 +169,7 @@ You can use the *Upsert* operation to perform both *Insert* and *Update* operati
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="9ffdd15d82c2479eba9f92843c97b127.xml" text="Configuring a Channel with SuccessFactors Adapter" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="9ffdd15d82c2479eba9f92843c97b127.xml" text="Configuring a Channel with SuccessFactors Adapter" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -199,7 +199,7 @@ The enhanced message from content enricher contains all the content from the loo
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="3b0c2c392f3c463aabd43f73d05b32e4.xml" text="Defining Content Enricher" desc="" xtrc="xref:9" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="3b0c2c392f3c463aabd43f73d05b32e4.xml" text="Defining Content Enricher" desc="" xtrc="xref:9" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -436,7 +436,7 @@ Using the XML-to-JSON Converter you can now transform messages in XML format to 
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="a5ef737d7a7e41ba80245109ff39b917.xml" text="" desc="" xtrc="xref:18" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="a5ef737d7a7e41ba80245109ff39b917.xml" text="" desc="" xtrc="xref:18" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -736,7 +736,7 @@ You use Write Variables to define variables, which you access across message flo
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="240dba8c853c433cbff8328bba730b21.xml" text="Defining Write Variables" desc="" xtrc="xref:28" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="240dba8c853c433cbff8328bba730b21.xml" text="Defining Write Variables" desc="" xtrc="xref:28" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -770,7 +770,7 @@ The XML Digital Signer has been enhanced by the following attributes:
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="ac6fbbf76f2a4fb6b115911c5cd86523.xml" text="" desc="" xtrc="xref:29" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="ac6fbbf76f2a4fb6b115911c5cd86523.xml" text="" desc="" xtrc="xref:29" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -830,7 +830,7 @@ The Aggregator step allows you to combine multiple incoming messages into a sing
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="e1316558f4cd45c28eb2a7158bd4840e.xml" text="" desc="" xtrc="xref:30" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="e1316558f4cd45c28eb2a7158bd4840e.xml" text="" desc="" xtrc="xref:30" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -969,7 +969,7 @@ You can use Data Store to store messages. Data Store supports four types of oper
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="249800a2ce894867bb6dde96b5dc5df3.xml" text="Defining Data Store" desc="" xtrc="xref:37" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="249800a2ce894867bb6dde96b5dc5df3.xml" text="Defining Data Store" desc="" xtrc="xref:37" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -1378,7 +1378,7 @@ You can use this task if you want to catch any thrown exception in the integrati
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="f090fd40347c4cccba6c566193f76624.xml" text="" desc="" xtrc="xref:49" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="f090fd40347c4cccba6c566193f76624.xml" text="" desc="" xtrc="xref:49" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -1408,7 +1408,7 @@ You can set headers before calling the HTTP adapter in case you want to dynamica
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="5e77b59f09e04088b0a01abb1fe4d191.xml" text="" desc="" xtrc="xref:50" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="5e77b59f09e04088b0a01abb1fe4d191.xml" text="" desc="" xtrc="xref:50" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -1438,9 +1438,9 @@ Detached XML Signatures are now supported.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="ac6fbbf76f2a4fb6b115911c5cd86523.xml" text="" desc="" xtrc="xref:51" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="ac6fbbf76f2a4fb6b115911c5cd86523.xml" text="" desc="" xtrc="xref:51" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="969f8165175e4946ba31b3e8de55e3f2.xml" text="" desc="" xtrc="xref:52" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="969f8165175e4946ba31b3e8de55e3f2.xml" text="" desc="" xtrc="xref:52" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -1808,7 +1808,7 @@ You can configure username token \(password digest, plain text\) authentication 
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:58" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:58" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -1838,7 +1838,7 @@ Use this method to update or create the enclosed data on the receiver side.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="5e77b59f09e04088b0a01abb1fe4d191.xml" text="" desc="" xtrc="xref:59" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="5e77b59f09e04088b0a01abb1fe4d191.xml" text="" desc="" xtrc="xref:59" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -2058,7 +2058,7 @@ The SOAP 1.x Adapter allows the configuration of WS-Security options.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:65" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:65" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -2088,7 +2088,7 @@ You use content modifier if you want to modify the content of the incoming messa
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="2c667a12a0a545d2ad4210e070479312.xml" text="" desc="" xtrc="xref:66" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="2c667a12a0a545d2ad4210e070479312.xml" text="" desc="" xtrc="xref:66" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -2120,7 +2120,7 @@ This feature has now been made available externally.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="866b6a94a074487384a21377ec9f2eb2.xml" text="" desc="" xtrc="xref:67" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="866b6a94a074487384a21377ec9f2eb2.xml" text="" desc="" xtrc="xref:67" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -2150,7 +2150,7 @@ You use this task to assign javascript or groovy script for message processing.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="905b24171cc746ef9069939ff3b536db.xml" text="" desc="" xtrc="xref:68" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="905b24171cc746ef9069939ff3b536db.xml" text="" desc="" xtrc="xref:68" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 
@@ -2180,7 +2180,7 @@ You use content modifier if you want to modify the content of the incoming messa
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="2c667a12a0a545d2ad4210e070479312.xml" text="" desc="" xtrc="xref:69" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="2c667a12a0a545d2ad4210e070479312.xml" text="" desc="" xtrc="xref:69" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/59a5f827b8824856a9669b9a8d9e4329.xml" ?> 
 
 
 

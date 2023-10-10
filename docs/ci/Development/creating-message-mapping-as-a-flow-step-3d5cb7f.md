@@ -191,7 +191,7 @@ The supported file types for source and target messages are:
 
     2.  Specify a name for the mmap file and choose *Create*.
 
-    3.  Add source and target messages. If you want to consume Message Types, see  <?sap-ot O2O class="- topic/xref " href="34f6345df88247acb4c63e20c1e7d7e2.xml" text="" desc="" xtrc="xref:6" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/3d5cb7ff43fb4a4b9c28153472f6d0f1.xml" ?> .
+    3.  Add source and target messages. If you want to consume Message Types, see  <?sap-ot O2O class="- topic/xref " href="34f6345df88247acb4c63e20c1e7d7e2.xml" text="" desc="" xtrc="xref:6" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/3d5cb7ff43fb4a4b9c28153472f6d0f1.xml" ?> .
 
     4.  Drag fields from the source to the required field in the target to create a mapping.
 
@@ -203,6 +203,9 @@ The supported file types for source and target messages are:
         > While modeling message mapping, if you've nodes whose outputs aren't connected in the mapping expression then on saving the mapping, these nodes get removed automatically.
 
 
+
+Now that you've defined the mapping, proceed with further actions.
+
 5.  You can create your own custom mapping function. Here's how:
 
     1.  In the *Mapping Expression* screen area, choose <span class="SAP-icons"></span> \(Create\) .
@@ -213,7 +216,7 @@ The supported file types for source and target messages are:
 
     3.  Enter the script for the custom function you want to create and choose *OK*
 
-    4.  To assign a function library object as an user-defined function, see:  <?sap-ot O2O class="- topic/xref " href="d4dcb4af8e944b33b9116e2837353930.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/3d5cb7ff43fb4a4b9c28153472f6d0f1.xml" ?> .
+    4.  To assign a function library object as an user-defined function, see:  <?sap-ot O2O class="- topic/xref " href="d4dcb4af8e944b33b9116e2837353930.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/3d5cb7ff43fb4a4b9c28153472f6d0f1.xml" ?> .
 
 
 6.  Configure the settings of the message mapping to handle basic data types in the target JSON schema.

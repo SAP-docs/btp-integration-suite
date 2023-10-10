@@ -390,7 +390,7 @@ MDI Delta Token
 
 Represents the delta token for the SAP Master Data Integration receiver adapter \(MDI receiver adapter\).
 
-See:  <?sap-ot O2O class="- topic/xref " href="e91e373bbb5b49ccbc2977152def61a2.xml" text="" desc="" xtrc="xref:13" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/d1679a80543f46509a7329243b595bdb.xml" ?> 
+See:  <?sap-ot O2O class="- topic/xref " href="e91e373bbb5b49ccbc2977152def61a2.xml" text="" desc="" xtrc="xref:13" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/d1679a80543f46509a7329243b595bdb.xml" ?> 
 
 
 

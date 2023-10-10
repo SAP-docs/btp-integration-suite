@@ -91,6 +91,41 @@ The following patch release information covers the most recent changes made to t
 
 
 
+<a name="loio023a4725bb734f86be8a5625abe54110__section_d44_zpb_bzb"/>
+
+## October 2023
+
+**Software Increment: 2308**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+
+
+</th>
+<th valign="top">
+
+Software Version
+
+
+
+</th>
+<th valign="top">
+
+Description
+
+
+
+</th>
+</tr>
+</table>
+
+
+
 <a name="loio023a4725bb734f86be8a5625abe54110__section_wd4_c52_qyb"/>
 
 ## September 2023

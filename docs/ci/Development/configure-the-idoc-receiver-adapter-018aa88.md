@@ -173,7 +173,9 @@ There are the following options:
 -   Enables Exactly-Once processing.
 
     > ### Note:  
-    > Enables Exactly-Once processing in the backend, if the header `SapMessageId` is set.
+    > The IDoc adapter uses the header `SapMessageId` within the integration flow processing. If header `SapMessageId` isn't defined, the IDoc receiver adapter automatically generates a unique ID. This may lead to duplicates in situations where an already delivered message is retried. If however the header `SapMessageId` is set, the IDoc receiver adapter reuses its value. For `Exactly-Once` processing in the backend, you need to ensure that the header `SapMessageId` remains the same in case that the message is retried.
+    > 
+    > See: [Quality of Service Exactly Once](quality-of-service-exactly-once-f96cf27.md)
 
 
 *Text/XML*

@@ -542,13 +542,13 @@ Limited retention times make sure that data is stored in the system only for a l
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="c138a1cc346f4dccba8ffcb9a3b97b88.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f9223443fb8b43abb602332d9be94cce.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="c138a1cc346f4dccba8ffcb9a3b97b88.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f9223443fb8b43abb602332d9be94cce.xml" ?> 
 
- <?sap-ot O2O class="- topic/link " href="866b6a94a074487384a21377ec9f2eb2.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f9223443fb8b43abb602332d9be94cce.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="866b6a94a074487384a21377ec9f2eb2.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f9223443fb8b43abb602332d9be94cce.xml" ?> 
 
 [Define Data Store Operations](../Development/define-data-store-operations-79f63a4.md "You can use the data store to temporarily store messages.")
 
- <?sap-ot O2O class="- topic/link " href="9247e59fd76c441592da5724dc890f65.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f9223443fb8b43abb602332d9be94cce.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="9247e59fd76c441592da5724dc890f65.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f9223443fb8b43abb602332d9be94cce.xml" ?> 
 
 [Managing Security Material](../Operations/managing-security-material-b8ccb53.md "The Manage Security Material area provides an overview of security-related artifacts.")
 

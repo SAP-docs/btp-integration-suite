@@ -13,7 +13,7 @@ There are the following tasks:
 
 [Understanding the Basic Concepts](understanding-the-basic-concepts-bf8316e.md "This section provides an overview of the concepts and terms.")
 
- <?sap-ot O2O class="- topic/link " href="0f0335a44f0341e690014a72264d5f34.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/c401afc97d954e298a3b3473257e1cf3.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="0f0335a44f0341e690014a72264d5f34.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/c401afc97d954e298a3b3473257e1cf3.xml" ?> 
 
 [Monitor](monitor-05446d0.md "Check the status of messages and integration content artifacts for a tenant cluster.")
 

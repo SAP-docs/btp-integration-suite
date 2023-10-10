@@ -42,7 +42,7 @@ This section covers the following extension scenario with a post-exit.
 
 In this scenario, the standard integration flow passes a message to a post-exit integration flow \(which contains the custom mapping\).
 
-In this demo scenario, the sender system is simulated by a SOAP client, which sends a SOAP message toCloud Integration. The original message has a simple structure \(only four elements\). The standard mapping is also kept simple and concatenates \(me.res\) two of the original fields
+In this demo scenario, the sender system is simulated by a SOAP client, which sends a SOAP message to SAP Cloud Integration. The original message has a simple structure \(only four elements\). The standard mapping is also kept simple and concatenates \(me.res\) two of the original fields
 
 More information: [Standard Mapping](standard-mapping-56c3bf5.md)
 

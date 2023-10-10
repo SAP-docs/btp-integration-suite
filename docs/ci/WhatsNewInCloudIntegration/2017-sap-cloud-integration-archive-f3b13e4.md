@@ -69,7 +69,7 @@ For more information, see:
 
 -   [RFC Receiver Adapter](../Development/rfc-receiver-adapter-5c76048.md)
 
--    <?sap-ot O2O class="- topic/xref " href="b61dbaedd4244b10b04f1be1d68c0e40.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="b61dbaedd4244b10b04f1be1d68c0e40.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -240,7 +240,7 @@ For more information, see:
 
 [JMS Adapter](../Development/jms-adapter-0993f2a.md)
 
- <?sap-ot O2O class="- topic/xref " href="18cb520cf8e74c528b14312058e8e38e.xml" text="" desc="" xtrc="xref:13" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="18cb520cf8e74c528b14312058e8e38e.xml" text="" desc="" xtrc="xref:13" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -425,7 +425,7 @@ For more information, see:
 
 -   [RFC Receiver Adapter](../Development/rfc-receiver-adapter-5c76048.md)
 
--    <?sap-ot O2O class="- topic/xref " href="b61dbaedd4244b10b04f1be1d68c0e40.xml" text="" desc="" xtrc="xref:21" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="b61dbaedd4244b10b04f1be1d68c0e40.xml" text="" desc="" xtrc="xref:21" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -517,9 +517,9 @@ The Scheduler of SFTP and Mail sender adapter has been changed so that the optio
 
 For more information, see:
 
- <?sap-ot O2O class="- topic/xref " href="08af047a0c0145ab8742b946cff7bcd7.xml" text="" desc="" xtrc="xref:22" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="08af047a0c0145ab8742b946cff7bcd7.xml" text="" desc="" xtrc="xref:22" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="6199b175528740d88cb6d07e621275b9.xml" text="" desc="" xtrc="xref:23" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="6199b175528740d88cb6d07e621275b9.xml" text="" desc="" xtrc="xref:23" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 [Mail Adapter](../Development/mail-adapter-f1145cc.md)
 
@@ -551,9 +551,9 @@ In the WS Security settings, you can now specify a signature algorithm to be app
 
 For more information, see:
 
- <?sap-ot O2O class="- topic/xref " href="efff064fdb9140adbc4e195fdf906e3e.xml" text="" desc="" xtrc="xref:26" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="efff064fdb9140adbc4e195fdf906e3e.xml" text="" desc="" xtrc="xref:26" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:27" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:27" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -687,7 +687,7 @@ RFC receiver adapter version 1.2.0 and higher supports:
 
 For more information, see:
 
- <?sap-ot O2O class="- topic/xref " href="b61dbaedd4244b10b04f1be1d68c0e40.xml" text="" desc="" xtrc="xref:33" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="b61dbaedd4244b10b04f1be1d68c0e40.xml" text="" desc="" xtrc="xref:33" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 [RFC Receiver Adapter](../Development/rfc-receiver-adapter-5c76048.md)
 
@@ -939,7 +939,7 @@ More information:
 
 You can now use content assist feature for groovy script which means that you can view list of existing methods of message class, once you start typing initial letters of the required method. You can add content assist jar file in integration project to use this feature.
 
-For more information, see  <?sap-ot O2O class="- topic/xref " href="905b24171cc746ef9069939ff3b536db.xml" text="" desc="" xtrc="xref:45" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
+For more information, see  <?sap-ot O2O class="- topic/xref " href="905b24171cc746ef9069939ff3b536db.xml" text="" desc="" xtrc="xref:45" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
 
 
 
@@ -967,9 +967,9 @@ This feature is available in the Web UI and in Eclipse.
 
 For more information, see \(for the Web UI\):
 
- <?sap-ot O2O class="- topic/xref " href="9597227a3a044904988fb9dca54aaceb.xml" text="" desc="" xtrc="xref:46" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?>  
+ <?sap-ot O2O class="- topic/xref " href="9597227a3a044904988fb9dca54aaceb.xml" text="" desc="" xtrc="xref:46" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?>  
 
- <?sap-ot O2O class="- topic/xref " href="efff064fdb9140adbc4e195fdf906e3e.xml" text="" desc="" xtrc="xref:47" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="efff064fdb9140adbc4e195fdf906e3e.xml" text="" desc="" xtrc="xref:47" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 [SOAP \(SAP RM\) Adapter](../Development/soap-sap-rm-adapter-6bd724f.md)
 
@@ -1025,7 +1025,7 @@ Cloud Connector Proxy in Mail Sender Adapter is supported.
 
 For more information, see
 
--    <?sap-ot O2O class="- topic/xref " href="08af047a0c0145ab8742b946cff7bcd7.xml" text="" desc="" xtrc="xref:49" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="08af047a0c0145ab8742b946cff7bcd7.xml" text="" desc="" xtrc="xref:49" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 -   [Mail Adapter](../Development/mail-adapter-f1145cc.md)
 
@@ -1055,7 +1055,7 @@ This feature is available in the Web UI and in Eclipse.
 
 For more information, see
 
- <?sap-ot O2O class="- topic/xref " href="b068577a9c564d69a9f63f11fe0372f5.xml" text="" desc="" xtrc="xref:51" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="b068577a9c564d69a9f63f11fe0372f5.xml" text="" desc="" xtrc="xref:51" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 [Define a Send Step](../Development/define-a-send-step-9b83f10.md)
 
@@ -1081,9 +1081,9 @@ For more information, see
 
 The **Dead-letter** queue option has been introduced in AS2 adapter. This option enables you to place those messages that cannot be processed after two retries.
 
--   For more information, see  <?sap-ot O2O class="- topic/xref " href="63a96540c8494b578ec657bdfa5be6b8.xml" text="" desc="" xtrc="xref:53" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
+-   For more information, see  <?sap-ot O2O class="- topic/xref " href="63a96540c8494b578ec657bdfa5be6b8.xml" text="" desc="" xtrc="xref:53" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
 
--   For more information, see  <?sap-ot O2O class="- topic/xref " href="a5eebca5329749669660b1779202b4c0.xml" text="" desc="" xtrc="xref:54" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
+-   For more information, see  <?sap-ot O2O class="- topic/xref " href="a5eebca5329749669660b1779202b4c0.xml" text="" desc="" xtrc="xref:54" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
 
 
 
@@ -1192,7 +1192,7 @@ For more information, see
 
 You can now disable a field in the target structure in a mapping definition resource. This helps you in testing or simulating the mapping without mapping the mandatory fields.
 
-For more information, see <?sap-ot O2O class="- topic/xref " href="3f2f4bb739b84bf48154d6734869a992.xml" text="" desc="" xtrc="xref:60" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
+For more information, see <?sap-ot O2O class="- topic/xref " href="3f2f4bb739b84bf48154d6734869a992.xml" text="" desc="" xtrc="xref:60" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
 
 
 
@@ -1319,7 +1319,7 @@ RFC is the standard interface used for integrating On-premise ABAP systems to th
 
 For more information, see
 
--    <?sap-ot O2O class="- topic/xref " href="b61dbaedd4244b10b04f1be1d68c0e40.xml" text="" desc="" xtrc="xref:62" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="b61dbaedd4244b10b04f1be1d68c0e40.xml" text="" desc="" xtrc="xref:62" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 -   [RFC Receiver Adapter](../Development/rfc-receiver-adapter-5c76048.md)
 
@@ -1396,7 +1396,7 @@ Cloud Connector Proxy in Mail Receiver Adapter is supported. You can now use the
 
 For more information, see
 
--    <?sap-ot O2O class="- topic/xref " href="08af047a0c0145ab8742b946cff7bcd7.xml" text="" desc="" xtrc="xref:65" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="08af047a0c0145ab8742b946cff7bcd7.xml" text="" desc="" xtrc="xref:65" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 -   [Mail Adapter](../Development/mail-adapter-f1145cc.md)
 
@@ -1422,7 +1422,7 @@ Enhancement
 
 You can now configure the script in the custom function to return multiple string values.
 
-For more information, see <?sap-ot O2O class="- topic/xref " href="376a16ca0d0a4ebeb78fe3d7af333d79.xml" text="" desc="" xtrc="xref:67" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
+For more information, see <?sap-ot O2O class="- topic/xref " href="376a16ca0d0a4ebeb78fe3d7af333d79.xml" text="" desc="" xtrc="xref:67" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
 
 
 
@@ -1450,7 +1450,7 @@ You can now place messages in the dead-letter queue if it cannot be processed af
 
 For more information, see
 
--    <?sap-ot O2O class="- topic/xref " href="18cb520cf8e74c528b14312058e8e38e.xml" text="" desc="" xtrc="xref:68" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="18cb520cf8e74c528b14312058e8e38e.xml" text="" desc="" xtrc="xref:68" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 -   [JMS Adapter](../Development/jms-adapter-0993f2a.md)
 
 
@@ -1479,7 +1479,7 @@ You can now configure HTTP Session Handling in the Runtime Configuration.
 
 For more information, see
 
--    <?sap-ot O2O class="- topic/xref " href="c5eeddd36c0143c18258e5f9210803e9.xml" text="" desc="" xtrc="xref:70" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="c5eeddd36c0143c18258e5f9210803e9.xml" text="" desc="" xtrc="xref:70" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 -   [Specify the Runtime Configuration](../Development/specify-the-runtime-configuration-0c1c96e.md)
 
 
@@ -1554,7 +1554,7 @@ More information: [Downloading Single Keystore Entries](../Operations/downloadin
 
 Authentication via principal propagation is now available in the OData adapter.
 
-For more information, see  <?sap-ot O2O class="- topic/xref " href="ff4cfc53ea5c440da78fe039d85b8319.xml" text="" desc="" xtrc="xref:76" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
+For more information, see  <?sap-ot O2O class="- topic/xref " href="ff4cfc53ea5c440da78fe039d85b8319.xml" text="" desc="" xtrc="xref:76" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
 
 
 
@@ -1776,7 +1776,7 @@ For more information, see:
 
 The OData API was enhanced to support keystore management activities by the tenant administrator.
 
-For more information, see  <?sap-ot O2O class="- topic/xref " href="9c26ac71c5a54e65a7550aacd58ca1b1.xml" text="" desc="" xtrc="xref:85" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+For more information, see  <?sap-ot O2O class="- topic/xref " href="9c26ac71c5a54e65a7550aacd58ca1b1.xml" text="" desc="" xtrc="xref:85" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -1800,7 +1800,7 @@ For more information, see  <?sap-ot O2O class="- topic/xref " href="9c26ac71c5a5
 
 The OData API allows you to address certificate-to-user mappings.
 
-For more information, see  <?sap-ot O2O class="- topic/xref " href="3e3d82939da64fb898539421cd0e9a02.xml" text="" desc="" xtrc="xref:86" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+For more information, see  <?sap-ot O2O class="- topic/xref " href="3e3d82939da64fb898539421cd0e9a02.xml" text="" desc="" xtrc="xref:86" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -1848,7 +1848,7 @@ New
 
 JMS Adapter and Message Queue Monitor is available for Cloud Integration Customer only if you have *Enterprise Edition* license.
 
-For more information, see  <?sap-ot O2O class="- topic/xref " href="18cb520cf8e74c528b14312058e8e38e.xml" text="" desc="" xtrc="xref:88" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+For more information, see  <?sap-ot O2O class="- topic/xref " href="18cb520cf8e74c528b14312058e8e38e.xml" text="" desc="" xtrc="xref:88" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -1896,7 +1896,7 @@ New
 
 Parameter *CRAM-MD5* in Sender/Receiver Mail Adapter was renamed to *Encrypted User/Password*
 
-For more information, see  <?sap-ot O2O class="- topic/xref " href="08af047a0c0145ab8742b946cff7bcd7.xml" text="" desc="" xtrc="xref:90" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+For more information, see  <?sap-ot O2O class="- topic/xref " href="08af047a0c0145ab8742b946cff7bcd7.xml" text="" desc="" xtrc="xref:90" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -2039,7 +2039,7 @@ For methods GET, DELETE, and HEAD you can now send the body of a message with th
 
 More information:
 
--    <?sap-ot O2O class="- topic/xref " href="5e77b59f09e04088b0a01abb1fe4d191.xml" text="" desc="" xtrc="xref:93" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="5e77b59f09e04088b0a01abb1fe4d191.xml" text="" desc="" xtrc="xref:93" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 -   [HTTP Receiver Adapter](../Development/http-receiver-adapter-2da452e.md)
 
@@ -2103,7 +2103,7 @@ More information:
 
 -   [Define EDI Splitter](../Development/define-edi-splitter-584a3be.md) \(Web UI\)
 
--    <?sap-ot O2O class="- topic/xref " href="45b45a08f75d440a853d33f3e769b70d.xml" text="" desc="" xtrc="xref:98" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?>  \(Eclipse\)
+-    <?sap-ot O2O class="- topic/xref " href="45b45a08f75d440a853d33f3e769b70d.xml" text="" desc="" xtrc="xref:98" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?>  \(Eclipse\)
 
 
 
@@ -2129,7 +2129,7 @@ The SMTP Outbound Connection Test has been enhanced in the Eclipse tooling of Cl
 
 You can now download certificates, check for mail addresses and validate the server certificate.
 
-More information:  <?sap-ot O2O class="- topic/xref " href="c834dd0512774ffab268a83bfdcc3b48.xml" text="" desc="" xtrc="xref:99" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+More information:  <?sap-ot O2O class="- topic/xref " href="c834dd0512774ffab268a83bfdcc3b48.xml" text="" desc="" xtrc="xref:99" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -2155,7 +2155,7 @@ The following feature is available in the Eclipse tooling of Cloud Integration.
 
 The *Data Store* viewer now also downloads headers.
 
-More information:  <?sap-ot O2O class="- topic/xref " href="2dcd5ff49449489a993479b98238e759.xml" text="" desc="" xtrc="xref:100" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+More information:  <?sap-ot O2O class="- topic/xref " href="2dcd5ff49449489a993479b98238e759.xml" text="" desc="" xtrc="xref:100" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -2316,9 +2316,9 @@ The OData API allows you now to access the HTTP access log files \(about authent
 
 More information:
 
- <?sap-ot O2O class="- topic/xref " href="cb643921a2ab4a4d8c5f7fc092120811.xml" text="" desc="" xtrc="xref:104" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="cb643921a2ab4a4d8c5f7fc092120811.xml" text="" desc="" xtrc="xref:104" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
- <?sap-ot O2O class="- topic/xref " href="fddeb49ff9344eccb9a087cb5d55a07a.xml" text="" desc="" xtrc="xref:105" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+ <?sap-ot O2O class="- topic/xref " href="fddeb49ff9344eccb9a087cb5d55a07a.xml" text="" desc="" xtrc="xref:105" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -2346,9 +2346,9 @@ In the SAP SOAP 1.x Sender Adapter, you can now configure the Message Exchange P
 
 More information:
 
--    <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:106" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:106" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
--    <?sap-ot O2O class="- topic/xref " href="efff064fdb9140adbc4e195fdf906e3e.xml" text="" desc="" xtrc="xref:107" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="efff064fdb9140adbc4e195fdf906e3e.xml" text="" desc="" xtrc="xref:107" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -2493,7 +2493,7 @@ The following feature is available in Eclipse and in the Web UI of Cloud Integra
 
 In the SAP SOAP 1.x Receiver Adapter, you can now clean up the adapter-specific headers after the receiver call.
 
-More information:  <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:109" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+More information:  <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:109" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -2523,16 +2523,16 @@ You define the Location ID in the destination configuration on the cloud side.
 
 More information:
 
--    <?sap-ot O2O class="- topic/xref " href="411ef9c366754e14bb790c6a663827ec.xml" text="" desc="" xtrc="xref:110" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="411ef9c366754e14bb790c6a663827ec.xml" text="" desc="" xtrc="xref:110" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
--    <?sap-ot O2O class="- topic/xref " href="16b2960160204db8a9c6098634593f72.xml" text="" desc="" xtrc="xref:111" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="16b2960160204db8a9c6098634593f72.xml" text="" desc="" xtrc="xref:111" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
--    <?sap-ot O2O class="- topic/xref " href="5e77b59f09e04088b0a01abb1fe4d191.xml" text="" desc="" xtrc="xref:112" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="5e77b59f09e04088b0a01abb1fe4d191.xml" text="" desc="" xtrc="xref:112" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
--    <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:113" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:113" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -2565,7 +2565,7 @@ The provider invokes service synchronously and the processing errors are returne
 
 More information:
 
--    <?sap-ot O2O class="- topic/xref " href="411ef9c366754e14bb790c6a663827ec.xml" text="" desc="" xtrc="xref:114" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="411ef9c366754e14bb790c6a663827ec.xml" text="" desc="" xtrc="xref:114" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 -   [SOAP \(SAP RM\) Adapter](../Development/soap-sap-rm-adapter-6bd724f.md)
 
@@ -2596,9 +2596,9 @@ For the SOAP \(SOAP 1.x\) receiver adapter *Principal Propagation* is now availa
 
 More information:
 
--    <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:116" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:116" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
--    <?sap-ot O2O class="- topic/xref " href="efff064fdb9140adbc4e195fdf906e3e.xml" text="" desc="" xtrc="xref:117" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="efff064fdb9140adbc4e195fdf906e3e.xml" text="" desc="" xtrc="xref:117" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 
 
@@ -2651,7 +2651,7 @@ More information:[Define JSON to XML Converter](../Development/define-json-to-xm
 
 In the mapping definition resource editor of Cloud Integration WebUI, you can map two selected fields and all the fields with identical names in their corresponding sub-tree by choosing ![](images/map_all_4bf8289.png). You can delete all the definitions by choosing ![](images/clear_all_8bde6f9.png).
 
-For more information, see  <?sap-ot O2O class="- topic/xref " href="3f2f4bb739b84bf48154d6734869a992.xml" text="" desc="" xtrc="xref:119" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
+For more information, see  <?sap-ot O2O class="- topic/xref " href="3f2f4bb739b84bf48154d6734869a992.xml" text="" desc="" xtrc="xref:119" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
 
 
 

@@ -17,7 +17,7 @@ This integration flow is kept very simple.
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="274e4d0ac4774d7792e5812d6aa98041.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/988e5e3149a045a388d45a5d0027743c.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="274e4d0ac4774d7792e5812d6aa98041.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/988e5e3149a045a388d45a5d0027743c.xml" ?> 
 
 [Configuring the ProcessDirect Sender Adapter](configuring-the-processdirect-sender-adapter-4787d80.md "")
 

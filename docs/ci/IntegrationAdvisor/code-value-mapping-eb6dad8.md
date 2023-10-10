@@ -34,6 +34,40 @@ You can use the following options only if you have used a standard code list.
 
 
 
+<a name="loioeb6dad8fdf6146cb980ee159738d5b16__section_wry_mmf_tyb"/>
+
+## N:1 Local Code Value Mapping
+
+The local code value mapping now supports N:1 mapping cardinality. You can map more than one source node with a target node for the local code value mapping.
+
+> ### Note:  
+> You cannot create a global code value mapping out of this N:1 local code value mapping.
+> 
+> You cannot assign a global code value mapping to this mapping.
+
+1.  Once the mapping is set, the *Code Value Mapping* tab appears with the following details.
+
+2.  The *Default Value* field allows you to set a default value for the mapping in case no mapping values are matched for the target code value. Select the value help <span class="SAP-icons"></span> and set a default from the list. You can only set a default value from the rules other than the ones mentioned in the table below and you can also select only the target code values for the default value.
+3.  The table displays the source code values from left to right in the top-down order of the source MIG node.The target code values are displayed at the rightmost-end of the table.
+
+    Let us take for example, you have mapped the source nodes `AddressTypeCode` and `CountryCode` with the target node `AddressType`. The *Code Value Mapping* tab would display a table with three columns - two for each source node and one for the target node.
+
+4.  You can now start setting the code values using the value help <span class="SAP-icons"></span> button provided for each entry in the table.
+
+    > ### Note:  
+    > You need to ensure that there are no duplicate code value mappings. In such cases, the row entry will be marked as an error.
+
+5.  Choose the Add :heavy_plus_sign: button provided above the table to add more code values.
+6.  The sort code value mapping <span class="SAP-icons"></span> button automatically reorders the code value mappings to ensure that more specific mappings are applied first thereby increasing the accuracy of mapping each source code value to its corresponding target code value.
+7.  If you had applied the *Proposal* service and then tried 1:1 code value mapping, the proposals are automatically applied to the target code values. In case of N:1 code value mapping, the proposals are not applied automatically. You need to choose the*Proposal* option provided under the *Code Value Mapping* tab to apply proposals on the code values.
+
+    > ### Note:  
+    > The *Proposal* option appears under the *Code Value Mapping* tab only if you have used the Proposal service on the entire MAG.
+
+8.  Selecting the *Proposal* button for N:1 mapping displays the list of proposals. You can select the necessary proposals from the list and choose *Add*.
+
+
+
 <a name="loioeb6dad8fdf6146cb980ee159738d5b16__section_f2r_ghh_gqb"/>
 
 ## Deprecated Code Values

@@ -49,7 +49,7 @@ You send the CSR to a certification authority, who will provide a signing respon
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="5490ca7917b64ef3803d9f34c542db70.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdo1688560638547/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/b199dbe8c59e49ac933f29337c853d6e.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="5490ca7917b64ef3803d9f34c542db70.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/b199dbe8c59e49ac933f29337c853d6e.xml" ?> 
 
 [Updating a Key Pair with a Signing Response](../Operations/updating-a-key-pair-with-a-signing-response-4242f01.md "Upload a signing response from a certification authority and use it to update the key pair in your keystore, keeping the alias of the keystore entry unchanged.")
 
