@@ -30,7 +30,7 @@ Whenever you create a product or edit a draft product, permissions can be added 
 
 1.  Log on to the SAP Integration Suite .
 
-2.  Choose the navigation icon on the left and choose *Design*.
+2.  Choose the navigation icon on the left and choose *Engage*.
 
 3.  Go to the *Products* tab and choose *Permission*.
 

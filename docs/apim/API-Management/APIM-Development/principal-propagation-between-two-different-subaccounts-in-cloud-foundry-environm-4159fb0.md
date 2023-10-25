@@ -1,6 +1,6 @@
 <!-- loio4159fb0700be40c28327e43a656ef2c3 -->
 
-# Principal Propagation between two different Subaccounts in Cloud Foundry Environment
+# Principal Propagation Between Two Different Subaccounts in Cloud Foundry Environment
 
 Propagate the identity of a user between two Cloud Foundry applications that are located in different subaccounts or regions.
 
@@ -10,7 +10,10 @@ Propagate the identity of a user between two Cloud Foundry applications that are
 
 ## Prerequisites
 
--   You have two applications \(application 1 and application 2\) deployed in Cloud Foundry spaces in different subaccounts in the same region or in different regions.
+-   You have two applications \(application 1 and application 2\) deployed in Cloud Foundry environment in different subaccounts in the same region or in different regions.
+
+    Application 1 resides in subaccount 1 and application 2 resides in subaccount 2.
+
 -   You have an instance of the Destination service bound to application 1.
 -   You have a user JWT \(JSON Web Token\) in application 1 where the call to application 2 is performed.
 
@@ -30,9 +33,9 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     -----BEGIN CERTIFICATE-----<content>-----END CERTIFICATE-----
     ```
 
-    Below, we refer to the value of <content\> as `${S1_CERTIFICATE}`.
+    We refer to the value of <content\> as `${S1_CERTIFICATE}`.
 
-2.  In the cockpit, navigate to the overview page of subaccount 1. Here you can see the landscape domain, subaccount ID and subdomain. Below, we refer to the landscape domain as `${S1_LANDSCAPE_DOMAIN}`, to the subaccount ID as `${S1_SUBACCOUNT_ID}` and to the subdomain as `${S1_SUBDOMAIN}`.
+2.  In the cockpit, navigate to the overview page of subaccount 1. Here you can see the landscape domain, subaccount ID, and subdomain. Below we refer to the landscape domain as `${S1_LANDSCAPE_DOMAIN}`, to the subaccount ID as `${S1_SUBACCOUNT_ID}` and to the subdomain as `${S1_SUBDOMAIN}`.
 3.  In your browser, call `https://${S1_SUBDOMAIN}.authentication.${S1_LANDSCAPE_DOMAIN}/saml/idp/metadata` and download the XML file. Within the XML file you can find the following structure:
 
     > ### Sample Code:  
@@ -43,7 +46,7 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     > </md:EntityDescriptor>
     > ```
 
-    Below, we refer to the value of <alias\> as `${S1_ALIAS}`.
+    We refer to the value of <alias\> as `${S1_ALIAS}`.
 
 4.  Assemble the new IdP metadata for subaccount 1 by replacing the `${...}` placeholders in the following template with the values determined in the previous steps:
 
@@ -105,7 +108,7 @@ Propagate the identity of a user between two Cloud Foundry applications that are
 ### Create an OAuthSAMLBearerAssertion Destination for Application 1
 
 1.  In the cockpit, navigate to the overview page for subaccount 2.
-2.  Here you can see the landscape domain, subaccount ID and subdomain of subaccount 2. Below, we refer to the landscape domain as `${S2_LANDSCAPE_DOMAIN}`, to the subaccount ID as `${S2_SUBACCOUNT_ID}` and to the subdomain as `${S2_SUBDOMAIN}`.
+2.  Here you can see the landscape domain, subaccount ID and subdomain of subaccount 2. We refer to the landscape domain as `${S2_LANDSCAPE_DOMAIN}`, to the subaccount ID as `${S2_SUBACCOUNT_ID}` and to the subdomain as `${S2_SUBDOMAIN}`.
 3.  In your browser, call `https://${S2_SUBDOMAIN}.authentication.${S2_LANDSCAPE_DOMAIN}/saml/idp/metadata` and download the XML file. Within the XML file, you can find the following structure.
 
     > ### Sample Code:  
@@ -120,7 +123,7 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     > </md:EntityDescriptor> Token= ${S2_Token_URL}
     > ```
 
-    Below, we refer to the value of <alias\> as `${S2_ALIAS}`.
+    We refer to the value of <alias\> as `${S2_ALIAS}`.
 
 4.  In cockpit, navigate to subaccount 1.
 5.  From the left panel, select *Connectivity* \> *Destinations*.
@@ -154,7 +157,7 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     </td>
     <td valign="top">
     
-    Choose any name for your destination. You will use this name to request the destination from the Destination service.
+    Choose any name for your destination. You use this name to request the destination from the Destination service.
 
 
     

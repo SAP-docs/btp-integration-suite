@@ -18,7 +18,7 @@ After the conversion, you can create API proxies for these internally managed AP
 
 1.  Log on to the Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
 3.  Identify the externally managed API that you want to convert from the list of APIs.
 
@@ -32,7 +32,7 @@ After the conversion, you can create API proxies for these internally managed AP
     > ### Note:  
     > You can attach policies to the API only after it’s deployed.
 
-6.  To attach policies, navigate back to the list of APIs on the *Design* \> *APIs* page, choose the externally managed API that you’ve converted into an internally managed API.
+6.  To attach policies, navigate back to the list of APIs on the *Configure* \> *APIs* page, choose the externally managed API that you’ve converted into an internally managed API.
 
     You can see that the status column now shows the status of the API as Deployed.
 

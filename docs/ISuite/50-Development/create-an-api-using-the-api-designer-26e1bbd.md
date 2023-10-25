@@ -34,7 +34,7 @@ To know more about OAS 3.0 support in API Management, see [OpenAPI Specification
 
 1.  Log on to the Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
     A list of registered APIs appears in the catalog.
 

@@ -80,7 +80,7 @@ Example:
 </td>
 <td valign="top">
 
-[Create an API Proxy](../50-Development/create-an-api-proxy-4ac0431.md) 
+[Different Methods of Creating an API](../50-Development/different-methods-of-creating-an-api-4ac0431.md) 
 
 
 

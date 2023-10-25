@@ -10,7 +10,7 @@ Create an API proxy from list of APIs that is deployed in a SAP Cloud Integratio
 
 ## Prerequisites
 
--   You should have already created an API provider of type SAP Cloud Integration*Configure* \> *APIs* tab in the Integration Suite. To do so, see [Create an API Provider](create-an-api-provider-6b263e2.md).
+-   You should have already created an API provider of type SAP Cloud Integration *Configure* \> *APIs* tab in the Integration Suite. To do so, see [Create an API Provider](create-an-api-provider-6b263e2.md).
 
 
 
@@ -26,7 +26,7 @@ Instead of consuming the API services directly, application developers can acces
 
 1.  Log on to the Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
 3.  To expose a service as an API, choose *Create*.
 

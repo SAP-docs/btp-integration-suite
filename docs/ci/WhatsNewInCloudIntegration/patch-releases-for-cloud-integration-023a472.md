@@ -122,6 +122,98 @@ Description
 
 </th>
 </tr>
+<tr>
+<td valign="top">
+
+Integration Suite
+
+
+
+</td>
+<td valign="top">
+
+5.52.11
+
+
+
+</td>
+<td valign="top">
+
+There is an issue with customer database connection, as existing drivers are incompatible with the customer database. To allowlist the new SQL Server Driver 11.2.3 with this patch fixes this issue.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Suite
+
+
+
+</td>
+<td valign="top">
+
+6.44.12
+
+
+
+</td>
+<td valign="top">
+
+Back-up keystore entries were not shown due to an issue in the UI. This patch fixes the issue.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+
+
+</td>
+<td valign="top">
+
+1.78.5
+
+
+
+</td>
+<td valign="top">
+
+Customers are unable to activate their MAGs due to a code issue as the UI generates duplicate mappings for the target nodes. This patch fixes this issue.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Suite
+
+
+
+</td>
+<td valign="top">
+
+6.44.13
+
+
+
+</td>
+<td valign="top">
+
+As the external logging activation is not synchronized with Kafka activation, depending on the timing, the external logging activation can terminate during start-up and activation changes are no longer processed. External logging activation must be manually restarted. This patch fixes the issue.
+
+
+
+</td>
+</tr>
 </table>
 
 

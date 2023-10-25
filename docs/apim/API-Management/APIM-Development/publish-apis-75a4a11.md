@@ -21,9 +21,11 @@ A product is a bundle of APIs. It contains metadata specific to your business fo
 > 
 > Let us consider another scenario where resources are attached to your API, and you have created multiple revisions of this API. If you add such an API to a product and try to publish it, you'll notice the following behaviour:
 > 
-> -   The deployed revision of the API and the resources attached to the it gets published.
+> -   The deployed revision of the API and the resources attached to it gets published.
 > 
 > -   If you add a resource from an API which is not deployed, the same resource will not get published.
+> 
+> -   If any resources attached to the product are present in the deployed API but not in its latest revision or draft, you should remove those resources before publishing the product.
 
 When you create a product, you link it to one or more APIs. Also, the same API can be linked to multiple products. After you have linked an API to a product, all attributes of the API such as API resources and API documentation are implicitly part of the product.
 

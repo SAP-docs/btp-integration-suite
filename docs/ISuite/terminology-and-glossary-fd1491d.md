@@ -5,7 +5,7 @@
 **Related Information**  
 
 
-[Glossary for Integration Assessment](30-Assessing_Integration_Strategy/glossary-for-integration-assessment-d352b13.md "")
+[Glossary for Integration Assessment](https://help.sap.com/viewer/70f6fd5a94a14d0f91a40c7d99296144/IAT/en-US/d352b138fddb4da094314eb922b4ba1a.html "") :arrow_upper_right:
 
 [Glossary for SAP Trading Partner Management](glossary-for-sap-trading-partner-management-81860a4.md "")
 

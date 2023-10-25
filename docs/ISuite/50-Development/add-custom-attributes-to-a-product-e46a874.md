@@ -28,7 +28,7 @@ Use this procedure to add cutom attributes to a product.
 
 1.  Log on to the Integration Suite.
 
-2.  Choose the navigation icon on the left and navigate to *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and navigate to *Configure* \> *APIs*.
 
 3.  Choose *Products* and select the product for which you want to add the custom attribute.
 

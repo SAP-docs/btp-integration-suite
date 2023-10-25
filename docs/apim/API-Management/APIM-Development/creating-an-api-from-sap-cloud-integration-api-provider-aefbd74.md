@@ -10,7 +10,7 @@ Create an API proxy from list of APIs that is deployed in a SAP Cloud Integratio
 
 ## Prerequisites
 
--   You should have already created an API provider of type SAP Cloud Integration*Configure* tab in the API portal. To do so, see [Create an API Provider](create-an-api-provider-6b263e2.md).
+-   You should have already created an API provider of type SAP Cloud Integration *Configure* tab in the API portal. To do so, see [Create an API Provider](create-an-api-provider-6b263e2.md).
 
 
 

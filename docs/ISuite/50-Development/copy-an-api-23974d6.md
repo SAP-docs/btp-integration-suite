@@ -30,7 +30,7 @@ To copy an API proxy, proceed as follows:
 
 1.  Log on to the Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
 3.  On the *APIs* tab page, choose the <span class="SAP-icons"></span> Action icon against the required API and then select the *Copy* option. Alternatively, you can open the required API and in the details page select the option *Copy*.
 

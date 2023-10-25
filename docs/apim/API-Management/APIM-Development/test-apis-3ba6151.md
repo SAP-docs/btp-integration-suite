@@ -4,7 +4,7 @@
 
 # Test APIs
 
-Use the API Test Console to test the runtime behavior of APIs
+Use the API Test Console to test the runtime behavior of APIs.
 
 SAP API Management provides an *API Test Console*, which enables you to test your APIs. Testing an API is essential to understand the runtime behavior of the APIs. The test console allows you to explore the resources associated with an API and execute the operations.
 

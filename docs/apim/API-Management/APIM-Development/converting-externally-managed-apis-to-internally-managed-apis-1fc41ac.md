@@ -10,7 +10,7 @@ You can convert an external API, whose lifecycle is managed by an external API M
 
 ## Context
 
-After the conversion, you can create API proxies for these internally managed APIs, import, and publish them and apply policies to them. You can apply all the SAP API Management capabilities to these managed APIs.
+After the conversion, you can create API proxies for these internally managed APIs, import, and publish them and apply policies to them. You can apply all the API Management capabilities to these managed APIs.
 
 
 

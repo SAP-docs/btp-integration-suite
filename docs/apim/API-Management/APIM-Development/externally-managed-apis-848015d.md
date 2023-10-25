@@ -12,9 +12,9 @@ You can import an API definition \(Open API Specification 2.0 or 3.0\) of extern
 
 ## Features of Externally Managed APIs
 
--   These APIs may be managed by external gateways.
+-   Sometimes these APIs are managed by external gateways.
 -   API Proxies are not created for these APIs.
--   These APIs are only listed in SAP API Management. No aspect of their life cycle is managed by API Management.
+-   These APIs are only listed in SAP API Management. No aspect of their life cycle is managed by SAP API Management.
 -   Status \(Deployed/Not Deployed\) is not displayed for these APIs.
 -   These APIs are represented by the symbol: ![](images/External_API_94e5ac7.png)
 -   If you create a product using only externally managed APIs , your consumers can't view the rate plan for these APIs, nor can they subscribe to the product or use custom attributes for the product in the API business hub enterprise. For more information, see [Create a Product](create-a-product-d769622.md).

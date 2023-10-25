@@ -10,7 +10,7 @@ You debug an API proxy to troubleshoot and monitor them in SAP Integration Suite
 
 1.  Log on to the Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
 3.  Select the required API that you want to debug.
 

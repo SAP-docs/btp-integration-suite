@@ -20,7 +20,7 @@ Create a policy template add it to an API proxy.
 
 1.  Log on to the Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
     A list of registered APIs appears in the catalog.
 
@@ -42,7 +42,7 @@ Create a policy template add it to an API proxy.
 
 7.  Choose *OK*.
 
-    To view the policy template that you have just created, navigate from the API Portal home page to *Develop* -\>*Policy Templates*.
+    To view the policy template that you have just created, navigate from the API portal home page to *Configure* \> *APIs* -\>*Policy Templates*.
 
 
 **Related Information**  

@@ -12,3 +12,5 @@ The Advanced Event Mesh \(AEM\) adapter enables SAP Integration Suite to connect
 
 [Configure the Advanced Event Mesh Sender Adapter](configure-the-advanced-event-mesh-sender-adapter-abd2efc.md "")
 
+[Configure the Advanced Event Mesh Receiver Adapter](configure-the-advanced-event-mesh-receiver-adapter-881f656.md "The advanced event mesh receiver adapter allows you to send messages to queues or topics on an advanced event mesh broker in SAP Integration Suite using the SMF message protocol.")
+

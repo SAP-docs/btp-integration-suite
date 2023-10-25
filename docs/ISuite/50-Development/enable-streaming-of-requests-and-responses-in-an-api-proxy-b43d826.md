@@ -71,7 +71,7 @@ You can enable streaming if your API proxy handles large request and response pa
 
     **Enabling Streaming via API portal**
 
-    1.  In the Integration Suite, navigate to the *Design* \> *APIs* tab.
+    1.  In the Integration Suite, navigate to the *Configure* \> *APIs* tab.
     2.  Select the API for which you want to enable streaming.
     3.  Choose *Edit* from the top-right corner of the screen.
     4.  Choose *Proxy EndPoint*.

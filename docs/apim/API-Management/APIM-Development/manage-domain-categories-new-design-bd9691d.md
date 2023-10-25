@@ -46,7 +46,7 @@ Use the following procedure to configure navigation categories.
 
 1.  Log on to the API business hub enterprise.
 
-2.  Choose *Enterprise Manager* \> *Manage Content* from the top navigation bar.
+2.  Choose *Enterprise Manager* \> *Manage Domain Categories* from the top navigation bar.
 
 3.  To add a category, choose *Add New Domain Category*.
 

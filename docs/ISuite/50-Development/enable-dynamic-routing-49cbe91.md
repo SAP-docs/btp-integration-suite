@@ -33,7 +33,7 @@ For our implementation, let’s consider the following two target endpoints:
 
 1.  Navigate to Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
 3.  Under *APIs*, choose *Create* to create a simple API proxy.
 
@@ -58,7 +58,7 @@ For our implementation, let’s consider the following two target endpoints:
 
 **Steps for defining new target endpoint**
 
-10. Navigate to the *Design* \> *APIs* tab. From the *APIs* list, choose the API proxy that you deployed.
+10. Navigate to the *Configure* \> *APIs* tab. From the *APIs* list, choose the API proxy that you deployed.
 
 11. Download the newly deployed API proxy using the *Export* option. For more information, see [Export an API](export-an-api-420abb6.md)
 

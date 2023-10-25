@@ -131,9 +131,9 @@ Once API Business Hub Enterprise is set up, navigate to :gear: and choose *Conne
 
 [Create an API Provider](../APIM-Development/create-an-api-provider-6b263e2.md "Define the details of the host you want an application to reach by creating an API provider.")
 
-[Create an API Proxy](../APIM-Development/create-an-api-proxy-4ac0431.md "Create API proxies.")
+[Different Methods of Creating an API](../APIM-Development/different-methods-of-creating-an-api-4ac0431.md "An API proxy is the data object that contains all the functionality to be executed when an external user wants to access the backend service.")
 
-[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "Virtual host is an entity where the API proxy gets deployed, and API proxies can be accessed using the URL defined in the virtual host.")
+[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "A virtual host lets you host multiple domain names on API Management service.")
 
 [Request for Two-Way SSL Certificate](request-for-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
 

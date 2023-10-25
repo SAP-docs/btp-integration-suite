@@ -24,11 +24,9 @@ To validate your custom adapters and integration flows in the new version of Apa
 
 ## Procedure
 
-1.  From the subaccount of your productive Integration Suite tenant, go to *Services* \> *Integration Suite* \> *Settings* \> *Integrations* \> *Camel 3.14 Upgrade*.
+1.  From the subaccount of your productive Integration Suite tenant, go to *Services* \> *Integration Suite* \> *Settings* \> *Camel 3.14 Upgrade* \> *Request*.
 
-2.  On the *Request New Tenant* page, choose *Request*.
-
-3.  Accept the test tenant usage conditions.
+2.  Accept the test tenant usage conditions.
 
     > ### Note:  
     > A test tenant:

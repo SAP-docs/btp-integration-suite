@@ -24,11 +24,11 @@ To validate your custom adapters and integration flows in the new version of Apa
 
 ## Procedure
 
-1.  From the subaccount of your productive Cloud Integration tenant, go to *Services* \> *Process Integration* \> *Settings* \> *Camel 3.14 Upgrade*.
+1.  For Neo, from the subaccount of your productive Cloud Integration tenant, go to *Services* \> *Process Integration* \> *Configure Process Integration* \> *Camel Upgrade*.
 
-2.  On the *Request New Tenant* page, choose *Request*.
+    For Cloud Foundry CPI, from the subaccount of your productive Cloud Integration tenant, go to *Services* \> *Instances and Subscriptions* \> *Process Integration* \> *Camel Upgrade*.
 
-3.  Accept the test tenant usage conditions.
+2.  Accept the test tenant usage conditions.
 
     > ### Note:  
     > A test tenant:

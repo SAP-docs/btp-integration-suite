@@ -233,7 +233,7 @@ Test and debug the runtime behaviour of APIs.
 </td>
 <td valign="top">
 
-[Test APIs](test-apis-3ba6151.md)
+[Test APIs](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of APIs.") :arrow_upper_right:
 
 
 

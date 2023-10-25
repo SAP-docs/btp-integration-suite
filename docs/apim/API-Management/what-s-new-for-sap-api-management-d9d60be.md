@@ -120,6 +120,92 @@ API Revisions
 </td>
 <td valign="top">
 
+Unique namng pattern for Drafts in API Revisions to clearly differentiate between the deployed draft and the working draft and the drafts originating from revisions. For more information, see [Creating API Revisions](APIM-Development/creating-api-revisions-0a0d7d4.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2023-10-30
+
+
+
+</td>
+<td valign="top">
+
+2023-10-30
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+API Revisions
+
+
+
+</td>
+<td valign="top">
+
 When publishing products, it's important to note that resources are available from the deployed API, rather than from the latest revision or draft of the API. Additionally, if a deployed resource is not available in the latest revision, you won't be able to attach that resource to the product.
 
 The revision name now includes support for parentheses \(\) as an additional special character in the name. For more information, see [Creating API Revisions](APIM-Development/creating-api-revisions-0a0d7d4.md).

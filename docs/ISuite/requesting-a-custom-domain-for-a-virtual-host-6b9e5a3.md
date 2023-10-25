@@ -2,7 +2,7 @@
 
 # Requesting a Custom Domain for a Virtual Host
 
-Virtual host is an entity where the API proxy gets deployed, and API proxies can be accessed using the URL defined in the virtual host.
+A virtual host lets you host multiple domain names on API Management capability within Integration Suite.
 
 
 
@@ -10,18 +10,15 @@ Virtual host is an entity where the API proxy gets deployed, and API proxies can
 
 ## Context
 
-During onboarding, when you enable the API Management capability within Integration Suite, a virtual host is created by default, and you can execute the APIs using the URL of this virtual host. The domain for this virtual host URL is specific to the SAP data center where the tenant is onboarded.
+After successful onboarding, API proxies are assigned a default virtual host URL. Currently, this URL uses the domain "ondemand.com," which is the common domain for the Business Technology Platform. It’s prefixed with the subdomain consisting of the subaccount name and the data center where the Integration Suite tenant is onboarded. For example, the default host alias could be https://myaccount....eu10.hana.ondemand.com.
 
-Once onboarding is completed, you can create an additional virtual host. You have the option to create the virtual host with a domain that is specific to your organization. This domain is referred to as a Custom Domain.
+The API Management capability enables you to personalize the virtual host URL by configuring a custom domain of your choice. This means that you can have all your APIs displayed as "https://api.bestrun.com/..." if desired. Additionally, you have the option to set up multiple virtual hosts using the same custom domain, such as "https://api1.bestrun.com," "https://api2.bestrun.com," and so on.
 
-Here are the reasons why you need a custom domain:
+Another advantage of establishing your own custom domain with a virtual host is that it protects you from future changes, such as those that may occur when rehosting your APIs.
 
--   To meet your branding needs, where you can configure API proxy endpoint URLs specific to your organization.
+In addition, you have the option to secure your custom domain with either a one-way or a two-way SSL certificate. A one-way SSL certificate validates only the secure identity of the API Proxy, providing encryption and authentication for the server. On the other hand, a two-way SSL certificate validates the identities of both the API Proxy and the client, providing mutual authentication.
 
--   To migrate the proxy definitions to another BTP region or even outside of BTP, without affecting the URLs that API clients use to access the API.
-
-
-You can secure the custom domain with either a one-way or a two-way SSL certificate. SSL is a standard security protocol that encrypts the connection between a web server and a web client, for example the connection between a web browser and an application. Here, the one-way SSL validates only the identity of the web-server but the two-way SSL validates the identities of both the web server and the web client. For requesting the two-way SSL certificate, see [Request for Two-Way SSL Certificate](request-for-two-way-ssl-certificate-9faf7ce.md).
+If you want to request a two-way SSL certificate, see [Request for Two-Way SSL Certificate](request-for-two-way-ssl-certificate-9faf7ce.md). This process enables you to establish a more secure connection between your API Proxy and the client, ensuring that both parties can trust each other's identities.
 
 To request a custom domain with one-way SSL, perform the following steps:
 
@@ -29,13 +26,17 @@ To request a custom domain with one-way SSL, perform the following steps:
 
 ## Procedure
 
-1.  Create an incident using the link [https://launchpad.support.sap.com/](https://launchpad.support.sap.com/).
+1.  Navigate to [https://launchpad.support.sap.com/](https://launchpad.support.sap.com/).
 
-2.  In the *Create Incident* window, expand the *Description* category and enter the following details in the description field:
+2.  On the *SAP for Me* page, select the *Enter the SAP ONE Support Launchpad* tile.
+
+3.  On the *SAP ONE Support Launchpad*, select the *Report and Incident* tile.
+
+4.  In the *Create Incident* window, expand the *Description* category and enter the following details in the description field:
 
     1.  Specify the desired custom domain name.
 
-        If you have multiple virtual hosts, please mention the virtual host alias for which you want the custom domain.
+        If you have multiple virtual hosts, mention the virtual host alias for which you want the custom domain.
 
     2.  Specify the *Subdomain Name* and *ID*.
 
@@ -50,14 +51,14 @@ To request a custom domain with one-way SSL, perform the following steps:
     3.  Please provide an email address that you intend to use for sharing the secure drive link. The secure drive link will be provided to you once you raise this incident. You’ll need to use the secure drive link to upload the private key, public certificate, and the relevant chain certificate.
 
         > ### Note:  
-        > Refrain from using the Custom Domain Service \(CDS\) to create certificates, as it is not possible to export these certificates from there. Instead, use a third-party or open-source tools to generate the required certifications.
+        > Refrain from using the Custom Domain Service \(CDS\) to create certificates, as it isn’t possible to export these certificates from there. Instead, use a third-party or open-source tools to generate the required certifications.
 
     4.  Specify that One-way SSL authentication is enabled.
 
     5.  Select the following component: **OPU-API-OD-OPS**
 
 
-3.  Submit the incident.
+5.  Submit the incident.
 
     > ### Note:  
     > It’s recommended that you redeploy the API proxies that are associated with the custom domain virtual host after updating the virtual host.

@@ -10,7 +10,7 @@ After an API is created, you must deploy the API to make it ready for product as
 
 1.  Log on to the Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
 3.  To expose a service as an API, choose *Create*. See [Create an API](create-an-api-c0842d5.md) for the steps on how to create an API.
 

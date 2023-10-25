@@ -28,7 +28,7 @@ API proxies always get imported to the destination API portal in the deployed st
 
 1.  Log on to the Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
 3.  Choose the *API* that you want to transport on the *APIs* tab page.
 

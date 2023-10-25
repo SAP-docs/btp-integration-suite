@@ -10,7 +10,7 @@ You create a product when you want to expose one or more APIs to the Application
 
 ## Prerequisites
 
-You’ve created the required API on the *APIs* tab. For more information about how to create APIs, see [Create an API Proxy](create-an-api-proxy-4ac0431.md).
+You’ve created the required API on the *APIs* tab. For more information about how to create APIs, see [Different Methods of Creating an API](different-methods-of-creating-an-api-4ac0431.md).
 
 
 
@@ -18,7 +18,7 @@ You’ve created the required API on the *APIs* tab. For more information about 
 
 1.  Log on to the SAP Integration Suite .
 
-2.  Choose the navigation icon on the left and choose *Design*.
+2.  Choose the navigation icon on the left and choose *Engage*.
 3.  Go to the *Products* tab.
 
     A list of published products appears.
@@ -125,12 +125,17 @@ You’ve created the required API on the *APIs* tab. For more information about 
     > -   API Management doesn’t support API calls to those resources whose path starts with a `/$` character. That is, if you create a product by attaching individual resources, then API calls to those resources whose path starts with `/$<resource_name>` don’t work. However, when you attach the whole API and none of its resources to a product, then API calls made to those resources of the selected API still works irrespective of whether the path starts with `/$` character or not.
 
     > ### Note:  
-    > Select at least 1 API to publish a product.
+    > -   If you attempt to add a resource to a product from an API that has not been deployed, the same resource will not be published.
+    > 
+    > -   When publishing products, it's important to note that resources are available from the deployed API, rather than from the latest revision or draft of the API. Additionally, if a deployed resource is not available in the latest revision, you won't be able to attach that resource to the product.
 
     > ### Note:  
-    > Make sure that the API is deployed before attaching it to a Product. If you try to publish a Product that has an API with saved changes attached to it, the following error message appears: "The API proxy attach to the Product has some changes that aren't deployed yet."
+    > Select at least one API to publish a product.
+
+    > ### Note:  
+    > Make sure that the API is deployed before attaching it to a product. If you try to publish a product that has an API with saved changes attached to it, the following error message appears: "The API proxy attach to the product has some changes that aren't deployed yet."
     > 
-    > Similarly, if the Product has multiple APIs attached to it, and few of the APIs have changes that are saved but not deployed, you'll receive the following message when you try to publish the Product: "The following API Proxies attached to the Product weren't published as they have changes that aren’t yet deployed:"
+    > Similarly, if the product has multiple APIs attached to it, and few of the APIs have changes that are saved but not deployed, you'll receive the following message when you try to publish the product: "The following API proxies attached to the product weren't published as they have changes that aren’t yet deployed:"
 
 10. Choose *OK*.
 

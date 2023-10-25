@@ -8,7 +8,7 @@ API portal provides a common platform for API designers to define and publish AP
 
 ## Prerequisites
 
-Before you start the process of building APIs, it is important to understand the different artifacts associated to an API. For more information, see [API Artifacts](api-artifacts-19c0654.md).
+Before you start the process of building APIs, it is important to understand the different artifacts associated to an API. For more information, see [Key Components of an API](key-components-of-an-api-19c0654.md).
 
 ![](images/build_api_d735c8b.png)
 
@@ -26,7 +26,7 @@ To build an API, you need to perform the following tasks:
 
 1.  [Create an API Provider](create-an-api-provider-6b263e2.md).
 
-2.  [Create an API Proxy](create-an-api-proxy-4ac0431.md).
+2.  [Different Methods of Creating an API](different-methods-of-creating-an-api-4ac0431.md).
 
 3.  [Associate policies to an API](policies-7e4f3e5.md).
 

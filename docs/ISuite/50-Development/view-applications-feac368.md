@@ -18,7 +18,7 @@ As an admin, you can view the subscribed applications from Integration Suite. Yo
 
 1.  Log on to the Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Engage*.
 
 3.  Navigate to the *Applications* tab page.
 

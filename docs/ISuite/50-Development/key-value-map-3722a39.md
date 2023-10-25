@@ -7,7 +7,7 @@ A key value map lets you create and manage collections of arbitrary key value pa
 > ### Note:  
 > It’s recommended that you avoid making any concurrent inserts and updates to the same key value map \(KVM\) scoped to the environment level as it may cause loss of data.
 > 
-> As a workaround, use API proxy scoped key value map.
+> As a work-around, use API proxy scoped key value map.
 
 > ### Caution:  
 > Don’t use Key Value Maps to store your logs as this can impact API proxy runtime flow. Instead, use the message logging policy to write your logs to external endpoints.

@@ -63,7 +63,7 @@ API Management provides the option to import an API definition.
 
 1.  Log on to the Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
 3.  On the *APIs* tab page, choose *Create* \> *Import API*.
 

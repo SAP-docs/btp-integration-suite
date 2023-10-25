@@ -6,6 +6,19 @@ An API is exposed in SAP Integration Suite as an API proxy. An API proxy is a di
 
 The API proxy decouples an API from any backend changes. This provides flexibility to application developers to continue calling the same API.
 
+API proxies enforces the following:
+
+-   **Security**: API proxies can enforce authentication and authorization mechanisms, ensuring that only authorized clients can access the API. They can also implement rate limiting, throttling, and other security measures to protect the backend services from malicious attacks.
+
+-   **Scalability**: API proxies can handle the scaling of backend services by distributing incoming requests across multiple instances. They can also cache responses and reduce the load on backend services, improving overall performance and scalability.
+
+-   **Flexibility**: API proxies can modify or transform requests and responses, allowing clients to interact with the API in a standardized way. They can add or remove headers, modify payloads, or even aggregate data from multiple backend services into a single response.
+
+-   **Monitoring and analytics**: API proxies can collect and analyze data about incoming requests and responses, providing insights into API usage, performance, and potential issues. This information can be used to optimize the API and improve the overall developer experience.
+
+-   **Revisioning and backward compatibility**: API proxies can handle versioning of the API, allowing clients to use different versions of the API without impacting the backend services. This enables developers to introduce changes and updates to the API while ensuring backward compatibility for existing clients.
+
+
 **Supported Service Types** 
 
 Broadly API Proxies can be exposed as REST, ODATA, and SOAP APIs. For example, a backend RESTful service can be exposed directly as REST AP. An ODATA service can be exposed either as an ODATA API or even a REST API. A SOAP service can be exposed as a pass-through SOAP API directly. The benefit of exposing a service as an ODATA API is that the exposed API will comply with ODATA-specific operations \(like metadata fetch, navigating through associations and so on\). You have the flexibility of exposing an ODATA service also as a RESTful API. But in doing so, you also need to ensure that the REST resource is mapped correctly to the ODATA resource. When you expose a SOAP service as a SOAP API, there is no strict notion of an API resource as SOAP services work directly on the endpoint. Every operation-type on the SOAP service is as per the WSDL contract and does not directly map to the exposed resource.

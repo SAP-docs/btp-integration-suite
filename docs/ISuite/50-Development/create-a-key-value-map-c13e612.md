@@ -10,7 +10,7 @@ Create a key value map using the create and manage collections of arbitrary key 
 
 ## Prerequisites
 
-You are assigned the admin role.
+You’re assigned the admin role.
 
 
 
@@ -87,7 +87,7 @@ You are assigned the admin role.
     Key name
 
     > ### Restriction:  
-    > You cannot use // as a part of the Key name.
+    > You can’t use // as a part of the Key name.
 
 
     

@@ -8,7 +8,7 @@ SAP Integration Suite provides a common platform for API designers to define and
 
 ## Prerequisites
 
-Before you start the process of building APIs, it is important to understand the different artifacts associated to an API. For more information, see [API Artifacts](api-artifacts-19c0654.md).
+Before you start the process of building APIs, it is important to understand the different artifacts associated to an API. For more information, see [Key Components of an API](key-components-of-an-api-19c0654.md).
 
 ![](images/build_api_d735c8b.png)
 
@@ -26,11 +26,11 @@ To build an API, you need to perform the following tasks:
 
 1.  [Create an API Provider](create-an-api-provider-6b263e2.md).
 
-2.  [Create an API Proxy](create-an-api-proxy-4ac0431.md).
+2.  [Different Methods of Creating an API](different-methods-of-creating-an-api-4ac0431.md).
 
 3.  [Associate policies to an API](policies-7e4f3e5.md).
 
-4.  [Test APIs using the API Test Console](test-apis-3ba6151.md).
+4.  [Test APIs using the API Test Console](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of APIs.") :arrow_upper_right:.
 
     > ### Note:  
     > In order to achieve an effortless navigation to the API business hub enterprise, choose *Navigation Links*\(![](images/Finalgrid_1a621ca.png)\) from the SAP Integration Suite and select *API Business Hub Enterprise*.

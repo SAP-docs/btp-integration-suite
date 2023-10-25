@@ -22,12 +22,12 @@ In the destination subaccount, for the imported API entity, replace the dummy ce
 
     1.  Choose the API provider and choose *Connection*.
     2.  Make a note of the certificate name displayed under *Key Store Certificate* and *Trust Store*.
-    3.  Navigate back to the *Configure* page, and look for the certificate on the *Certificates* tab.
+    3.  Navigate back to the *Configure* \> *APIs* page, and look for the certificate on the *Certificates* tab.
     4.  Delete the certificate, and with the same name create a new certificate. For more information, see [Manage Certificates](manage-certificates-c665875.md).
 
 4.  Replace the dummy value in the encrypted Key Value Map that got imported along with the API proxy with authentic values:
 
-    1.  Navigate to the *Configure* page, and choose the *Key Value Maps* tab.
+    1.  Navigate to the *Configure* \> *APIs* page, and choose the *Key Value Maps* tab.
     2.  Choose the imported Key Value Map and choose *Edit*.
     3.  Delete the dummy value from the *Value* field and enter an authentic value.
 

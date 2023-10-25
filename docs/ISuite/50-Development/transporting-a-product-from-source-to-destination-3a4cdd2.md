@@ -27,7 +27,7 @@ APIs, Permissions, and custom attributes, that are associated with the product g
 
 1.  Log on to the Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
 3.  Choose the *Product* that you want to transport on the *Products* tab page.
 
