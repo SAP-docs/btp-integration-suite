@@ -22,14 +22,10 @@ Connectivity tests:
 
 Runtime
 
-
-
 </th>
 <th valign="top">
 
 Connectivity Tests
-
-
 
 </th>
 </tr>
@@ -37,8 +33,6 @@ Connectivity Tests
 <td valign="top">
 
 Cloud Integration runtime
-
-
 
 </td>
 <td valign="top">

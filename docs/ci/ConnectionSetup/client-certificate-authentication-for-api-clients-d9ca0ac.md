@@ -46,22 +46,16 @@ In detail, perform the following steps:
     <th valign="top">
 
      
-
-
     
     </th>
     <th valign="top" colspan="3">
 
     Service Instance
-
-
     
     </th>
     <th valign="top" colspan="4">
 
     Service Key
-
-
     
     </th>
     </tr>
@@ -69,57 +63,41 @@ In detail, perform the following steps:
     <th valign="top">
 
     Option \(Certificate Type\)
-
-
     
     </th>
     <th valign="top">
 
     Plan
-
-
     
     </th>
     <th valign="top">
 
     Roles
-
-
     
     </th>
     <th valign="top">
 
     Grant-types
-
-
     
     </th>
     <th valign="top">
 
     Key Type
-
-
     
     </th>
     <th valign="top">
 
     External Certificate
-
-
     
     </th>
     <th valign="top">
 
     Validity
-
-
     
     </th>
     <th valign="top">
 
     Key Size
-
-
     
     </th>
     </tr>
@@ -127,15 +105,11 @@ In detail, perform the following steps:
     <td valign="top">
     
     SAP certificate
-
-
     
     </td>
     <td valign="top">
     
     *api* 
-
-
     
     </td>
     <td valign="top">
@@ -143,43 +117,31 @@ In detail, perform the following steps:
     Select role according to the API resource to access.
 
     See: [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md)
-
-
     
     </td>
     <td valign="top">
     
     *Client Credentials* 
-
-
     
     </td>
     <td valign="top">
     
     *Certificate* 
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     Specify validity in days.
-
-
     
     </td>
     <td valign="top">
     
     Specify key size.
-
-
     
     </td>
     </tr>
@@ -187,15 +149,11 @@ In detail, perform the following steps:
     <td valign="top">
     
     External certificate
-
-
     
     </td>
     <td valign="top">
     
     *api* 
-
-
     
     </td>
     <td valign="top">
@@ -203,43 +161,31 @@ In detail, perform the following steps:
     Select role according to the API resource to access.
 
     See: [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md)
-
-
     
     </td>
     <td valign="top">
     
     *Client Credentials* 
-
-
     
     </td>
     <td valign="top">
     
     *External Certificate* 
-
-
     
     </td>
     <td valign="top">
     
     Add PEM-encoded X.509 certificate.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     </tr>

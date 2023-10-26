@@ -24,21 +24,15 @@ The level of usage is indicated by the bar height and color \(from green for low
 
 Level of Usage
 
-
-
 </th>
 <th valign="top">
 
 Bar Color
 
-
-
 </th>
 <th valign="top">
 
 Database Transaction Usage
-
-
 
 </th>
 </tr>
@@ -47,21 +41,15 @@ Database Transaction Usage
 
 Critical
 
-
-
 </td>
 <td valign="top">
 
 Red
 
-
-
 </td>
 <td valign="top">
 
 Maximum duration: more than 30 minutes
-
-
 
 </td>
 </tr>
@@ -70,21 +58,15 @@ Maximum duration: more than 30 minutes
 
 Warning
 
-
-
 </td>
 <td valign="top">
 
 Orange
 
-
-
 </td>
 <td valign="top">
 
 Maximum duration: between 5 minutes and 30 minutes
-
-
 
 </td>
 </tr>
@@ -93,21 +75,15 @@ Maximum duration: between 5 minutes and 30 minutes
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 Green
 
-
-
 </td>
 <td valign="top">
 
 Maximum duration: less than 5 minutes
-
-
 
 </td>
 </tr>

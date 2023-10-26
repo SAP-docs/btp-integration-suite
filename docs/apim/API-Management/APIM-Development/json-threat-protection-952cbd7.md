@@ -34,14 +34,10 @@ An example payload for the policy is as follows:
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -49,8 +45,6 @@ An example payload for the policy is as follows:
 <td valign="top">
 
 Array Element Count \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -61,16 +55,12 @@ The limit is not applied if you do not specify this element, or if you specify a
 
 Syntax: `<ArrayElementCount>10</ArrayElementCount>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Container Depth \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -83,16 +73,12 @@ The limit is not applied if you do not specify this element, or if you specify a
 
 Syntax: `<ContainerDepth>5</ContainerDepth>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Object Entry Count \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -103,16 +89,12 @@ The limit is not applied if you do not specify this element, or if you specify a
 
 Syntax: `<ObjectEntryCount>10</ObjectEntryCount>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Object Entry Length Name \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -123,16 +105,12 @@ The limit is not applied if you do not specify this element, or if you specify a
 
 Syntax: `<ObjectEntryNameLength>100</ObjectEntryNameLength>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Source \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -145,16 +123,12 @@ This attribute indicates the message to be screened for JSON payload attacks.
 
 Syntax: `<Source>response</Source>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 String Value Length \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -164,8 +138,6 @@ This attribute specifies the maximum length allowed for a string value.
 The limit is not applied if you do not specify this element, or if you specify a negative integer.
 
 Syntax: `<StringValueLength>200</StringValueLength>`
-
-
 
 </td>
 </tr>
@@ -182,21 +154,15 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 HTTP Status
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -205,21 +171,15 @@ Cause
 
 ExceededContainerDepth
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 JSONThreatProtection\[policy\_name\]: Exceeded container depth at line \[line\_num\]
-
-
 
 </td>
 </tr>
@@ -228,21 +188,15 @@ JSONThreatProtection\[policy\_name\]: Exceeded container depth at line \[line\_n
 
 ExceededObjectEntryCount
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 JSONThreatProtection\[policy\_name\]: Exceeded object entry count at line \[line\_num\]
-
-
 
 </td>
 </tr>
@@ -251,21 +205,15 @@ JSONThreatProtection\[policy\_name\]: Exceeded object entry count at line \[line
 
 ExceededArrayElementCount
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 JSONThreatProtection\[policy\_name\]: Exceeded array element count at line \[line\_num\]
-
-
 
 </td>
 </tr>
@@ -274,21 +222,15 @@ JSONThreatProtection\[policy\_name\]: Exceeded array element count at line \[lin
 
 ExceededObjectEntryNameLength
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 JSONThreatProtection\[policy\_name\]: Exceeded object entry name length at line \[line\_num\]
-
-
 
 </td>
 </tr>
@@ -297,21 +239,15 @@ JSONThreatProtection\[policy\_name\]: Exceeded object entry name length at line 
 
 ExceededStringValueLength
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 JSONThreatProtection\[policy\_name\]: Exceeded string value length at line \[line\_num\]
-
-
 
 </td>
 </tr>
@@ -320,21 +256,15 @@ JSONThreatProtection\[policy\_name\]: Exceeded string value length at line \[lin
 
 Invalid JSON object
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 JSONThreatProtection\[policy\_name\]: The input JSON Payload is invalid.
-
-
 
 </td>
 </tr>
@@ -343,14 +273,10 @@ JSONThreatProtection\[policy\_name\]: The input JSON Payload is invalid.
 
 SourceUnavailable
 
-
-
 </td>
 <td valign="top">
 
 500
-
-
 
 </td>
 <td valign="top">
@@ -359,8 +285,6 @@ This error occurs when the message variable mentioned in the source element is e
 
 JSONThreatProtection\[policy\_name\]: Source \[var\_name\] is not available
 
-
-
 </td>
 </tr>
 <tr>
@@ -368,14 +292,10 @@ JSONThreatProtection\[policy\_name\]: Source \[var\_name\] is not available
 
 NonMessageVariable
 
-
-
 </td>
 <td valign="top">
 
 500
-
-
 
 </td>
 <td valign="top">
@@ -384,8 +304,6 @@ This error occurs when the source element is set to a variable type which is not
 
 JSONThreatProtection\[policy\_name\]: Variable \[var\_name\] does not resolve to a Message
 
-
-
 </td>
 </tr>
 <tr>
@@ -393,21 +311,15 @@ JSONThreatProtection\[policy\_name\]: Variable \[var\_name\] does not resolve to
 
 ExecutionFailed
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 JSONThreatProtection\[policy\_name\]: Execution failed. reason: \[string\]
-
-
 
 </td>
 </tr>
@@ -424,21 +336,15 @@ Following fault variables is set when the policy triggers an error at runtime:
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -447,8 +353,6 @@ Example
 
 \[prefix\].\[policy\_name\].failed
 
-
-
 </td>
 <td valign="top">
 
@@ -456,14 +360,10 @@ Example
 
 \[policy\_name\]: The name of the policy to check.
 
-
-
 </td>
 <td valign="top">
 
 jsonthreatprotection.JTP-SecureRequest.failed = true
-
-
 
 </td>
 </tr>
@@ -472,21 +372,15 @@ jsonthreatprotection.JTP-SecureRequest.failed = true
 
 fault.\[error\_name\]
 
-
-
 </td>
 <td valign="top">
 
 \[error\_name\] = The specific error name to check for as listed in the table above.
 
-
-
 </td>
 <td valign="top">
 
 fault.name Matches "SourceUnavailable"
-
-
 
 </td>
 </tr>

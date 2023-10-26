@@ -24,21 +24,15 @@ Cloud Integration is operated in a cloud infrastructure: Physically, the softwar
 
 Environment
 
-
-
 </th>
 <th valign="top">
 
 Product Availability
 
-
-
 </th>
 <th valign="top">
 
 Infrastructure Provider
-
-
 
 </th>
 </tr>
@@ -46,8 +40,6 @@ Infrastructure Provider
 <td valign="top">
 
 Cloud Foundry
-
-
 
 </td>
 <td valign="top">
@@ -58,14 +50,10 @@ SAP Integration Suite comprises these capabilities: Cloud Integration, Integrati
 
 For Cloud Foundry, dedicated service plans are available. Depending on the service plan, some features used in Neo might not be available or only usable in a restricted way in Cloud Foundry. For more information, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
-
-
 </td>
 <td valign="top">
 
 Data centers of the cloud infrastructures of Amazon Web Services, Alibaba Cloud, and Microsoft Azure can be involved.
-
-
 
 </td>
 </tr>
@@ -74,21 +62,15 @@ Data centers of the cloud infrastructures of Amazon Web Services, Alibaba Cloud,
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Licensed as stand-alone service, SAP Cloud Integration.
 
-
-
 </td>
 <td valign="top">
 
 The hardware that processes the messages is located exclusively in one, or multiple data centers owned by SAP.
-
-
 
 </td>
 </tr>

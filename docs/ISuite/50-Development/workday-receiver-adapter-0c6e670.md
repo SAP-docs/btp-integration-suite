@@ -40,14 +40,10 @@ The General tab shows general information such as the adapter type, its directio
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -56,14 +52,10 @@ Description
 
 *Address*
 
-
-
 </td>
 <td valign="top">
 
 Specify the recipient's endpoint URL, the Workday login base URL, for user authentication. This value can also be specified dynamically. Example: https://wd2-impl-services1.workday.com
-
-
 
 </td>
 </tr>
@@ -72,14 +64,10 @@ Specify the recipient's endpoint URL, the Workday login base URL, for user authe
 
 *Tenant*
 
-
-
 </td>
 <td valign="top">
 
 Specify the ID of your Workday Tenant. For example: myTenant1.
-
-
 
 </td>
 </tr>
@@ -88,14 +76,10 @@ Specify the ID of your Workday Tenant. For example: myTenant1.
 
 *Credential Name*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the **User Credentials** artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Workday. This property enables the system to fetch the User Credential security material deployed in your Cloud Integration tenant.
-
-
 
 </td>
 </tr>
@@ -110,14 +94,10 @@ Specify the name of the **User Credentials** artifact that contains the cred
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -125,8 +105,6 @@ Description
 <td valign="top">
 
 *API Version*
-
-
 
 </td>
 <td valign="top">
@@ -145,8 +123,6 @@ Specify the version of the Workday SOAP API to be used for calling Workday. Sele
 <td valign="top">
 
 *Service*
-
-
 
 </td>
 <td valign="top">
@@ -249,14 +225,10 @@ To access and exchange data with Workday, you can choose among the following ser
 
 *Request Operation Tag*
 
-
-
 </td>
 <td valign="top">
 
 Specify the operation tag of your payload. Example: Put\_Cost\_Center\_Request.
-
-
 
 </td>
 </tr>

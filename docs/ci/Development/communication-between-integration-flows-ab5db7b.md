@@ -30,21 +30,15 @@ Furthermore, consider that there are two types of calls:
 
  
 
-
-
 </th>
 <th valign="top">
 
 Within Cloud Integration tenant
 
-
-
 </th>
 <th valign="top">
 
 Through public Internet
-
-
 
 </th>
 </tr>
@@ -53,21 +47,15 @@ Through public Internet
 
 Synchronous
 
-
-
 </td>
 <td valign="top">
 
 ProcessDirect adapter
 
-
-
 </td>
 <td valign="top">
 
 HTTP-based call
-
-
 
 </td>
 </tr>
@@ -76,21 +64,15 @@ HTTP-based call
 
 Asynchronous
 
-
-
 </td>
 <td valign="top">
 
 JMS queue
 
-
-
 </td>
 <td valign="top">
 
 SOAP 1.x adapter
-
-
 
 </td>
 </tr>

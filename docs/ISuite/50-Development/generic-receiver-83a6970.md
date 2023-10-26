@@ -35,14 +35,10 @@ The Data Store Write step *Write payload in data store* creates a data store ent
 
 Data Store Name
 
-
-
 </td>
 <td valign="top">
 
 Generated from the value of the *context* header \(through the dynamic expression *$\{header.context\}*\).
-
-
 
 </td>
 </tr>
@@ -50,8 +46,6 @@ Generated from the value of the *context* header \(through the dynamic expressio
 <td valign="top">
 
 Entry ID
-
-
 
 </td>
 <td valign="top">
@@ -85,14 +79,10 @@ The *Pattern Content Based Routing - Ignore If No Receiver* integration flow \(f
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -101,16 +91,12 @@ Value
 
 *context*
 
-
-
 </td>
 <td valign="top">
 
 *ContentBasedRouting-IgnoreIfNoReceiver*
 
 This value identifies the pattern variant.
-
-
 
 </td>
 </tr>
@@ -119,14 +105,10 @@ This value identifies the pattern variant.
 
 *receiver*
 
-
-
 </td>
 <td valign="top">
 
 The value depends on the value of the *shippingCountry* element in the actual message processing run.
-
-
 
 </td>
 </tr>

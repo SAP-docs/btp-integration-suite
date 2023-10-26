@@ -110,15 +110,11 @@ The supported file types for an import are json, and .zip.
     <th valign="top">
 
     Action
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -126,15 +122,11 @@ The supported file types for an import are json, and .zip.
     <td valign="top">
     
     *Save* 
-
-
     
     </td>
     <td valign="top">
     
     Saves the artifact as Draft version.
-
-
     
     </td>
     </tr>
@@ -142,8 +134,6 @@ The supported file types for an import are json, and .zip.
     <td valign="top">
     
     *Save as version* 
-
-
     
     </td>
     <td valign="top">
@@ -151,8 +141,6 @@ The supported file types for an import are json, and .zip.
     Creates a new version of the artifact.
 
     Specify the version in the *Version Information* dialog. In the *Comment* section, you can add additional information specific to the artifact for later reference. This helps you determine the purpose of each version.
-
-
     
     </td>
     </tr>
@@ -160,15 +148,11 @@ The supported file types for an import are json, and .zip.
     <td valign="top">
     
     *Deploy* 
-
-
     
     </td>
     <td valign="top">
     
     Deployes the API artifact.
-
-
     
     </td>
     </tr>
@@ -176,15 +160,11 @@ The supported file types for an import are json, and .zip.
     <td valign="top">
     
     *Delete* 
-
-
     
     </td>
     <td valign="top">
     
     Deletes the API artifact from the package.
-
-
     
     </td>
     </tr>
@@ -192,15 +172,11 @@ The supported file types for an import are json, and .zip.
     <td valign="top">
     
     *Cancel* 
-
-
     
     </td>
     <td valign="top">
     
     Ends your edit session without saving any of the changes you have made.
-
-
     
     </td>
     </tr>

@@ -44,15 +44,11 @@ The API Type is set according to the following rules of precedence:
     <th valign="top">
 
     Type of API
-
-
     
     </th>
     <th valign="top">
 
     Input
-
-
     
     </th>
     </tr>
@@ -60,15 +56,11 @@ The API Type is set according to the following rules of precedence:
     <td valign="top">
     
     OData V2 API
-
-
     
     </td>
     <td valign="top">
     
     ODATA
-
-
     
     </td>
     </tr>
@@ -76,15 +68,11 @@ The API Type is set according to the following rules of precedence:
     <td valign="top">
     
     OData V4 API
-
-
     
     </td>
     <td valign="top">
     
     ODATAV4
-
-
     
     </td>
     </tr>
@@ -125,14 +113,10 @@ The text should not exceed 180 characters. The following characters are allowed 
 
 Character
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -141,14 +125,10 @@ Description
 
 A-Z
 
-
-
 </td>
 <td valign="top">
 
 Latin letters, case insensitive
-
-
 
 </td>
 </tr>
@@ -157,14 +137,10 @@ Latin letters, case insensitive
 
 0-9
 
-
-
 </td>
 <td valign="top">
 
 Numbers
-
-
 
 </td>
 </tr>
@@ -173,14 +149,10 @@ Numbers
 
  
 
-
-
 </td>
 <td valign="top">
 
 Space
-
-
 
 </td>
 </tr>
@@ -189,14 +161,10 @@ Space
 
 \_
 
-
-
 </td>
 <td valign="top">
 
 Underscore
-
-
 
 </td>
 </tr>
@@ -205,14 +173,10 @@ Underscore
 
 \- — –
 
-
-
 </td>
 <td valign="top">
 
 Different Hyphens
-
-
 
 </td>
 </tr>
@@ -221,14 +185,10 @@ Different Hyphens
 
 .
 
-
-
 </td>
 <td valign="top">
 
 Dot
-
-
 
 </td>
 </tr>
@@ -237,14 +197,10 @@ Dot
 
 ,
 
-
-
 </td>
 <td valign="top">
 
 Comma
-
-
 
 </td>
 </tr>
@@ -253,14 +209,10 @@ Comma
 
 \(\)
 
-
-
 </td>
 <td valign="top">
 
 Paranthesis
-
-
 
 </td>
 </tr>
@@ -269,14 +221,10 @@ Paranthesis
 
 's
 
-
-
 </td>
 <td valign="top">
 
 Possession apostrophe
-
-
 
 </td>
 </tr>

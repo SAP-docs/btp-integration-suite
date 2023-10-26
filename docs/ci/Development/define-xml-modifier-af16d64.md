@@ -48,15 +48,11 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -64,15 +60,11 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     Enter a name for the flow step.
-
-
     
     </td>
     </tr>
@@ -88,15 +80,11 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -104,8 +92,6 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
     <td valign="top">
     
     *Remove External DTDs* \(deactivated by default\)
-
-
     
     </td>
     <td valign="top">
@@ -123,15 +109,11 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
     <td valign="top">
     
     *Remove XML Declaration* \(deactivated by default\)
-
-
     
     </td>
     <td valign="top">
     
     Select this option, to remove the XML declaration from the XML payload.
-
-
     
     </td>
     </tr>
@@ -139,8 +121,6 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
     <td valign="top">
     
     *Invalid XML Character Handling*
-
-
     
     </td>
     <td valign="top">

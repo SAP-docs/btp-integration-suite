@@ -64,14 +64,10 @@ The *General* tab shows general information such as the adapter type, its direct
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -79,8 +75,6 @@ Description
 <td valign="top">
 
 *Address*
-
-
 
 </td>
 <td valign="top">
@@ -95,16 +89,12 @@ Also in case the `CamelDestinationOverrideUrl` header has been set by another pr
 
 The endpoint URL that is actually used at runtime is displayed in the message processing log \(MPL\) in the message monitoring application \(MPL property `RealDestinationUrl`\). Note that you can manually configure the endpoint URL using the *Address* attribute of the adapter. However, there are several ways to dynamically override the value of this attribute \(for example, by using the Camel header `CamelHttpUri`\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -141,8 +131,6 @@ The type of proxy that you are using to connect to the target system:
 
 *IDoc Content Type*
 
-
-
 </td>
 <td valign="top">
 
@@ -174,8 +162,6 @@ There are the following options:
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -236,14 +222,10 @@ You can select one of the following authentication methods:
 
 *Credential Name* \(only available if you have selected *Basic* for the *Authentication* parameter\)
 
-
-
 </td>
 <td valign="top">
 
 Name of the *User Credentials* artifact that contains the credentials for basic authentication
-
-
 
 </td>
 </tr>
@@ -251,8 +233,6 @@ Name of the *User Credentials* artifact that contains the credentials for basic 
 <td valign="top">
 
 *Private Key Alias* \(only available if you have selected *Client Certificate* for the *Authentication* parameter\)
-
-
 
 </td>
 <td valign="top">
@@ -263,16 +243,12 @@ You can dynamically configure the *Private Key Alias* parameter by specifying ei
 
 Be aware that in some cases this feature can have a negative impact on performance.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Timeout*
-
-
 
 </td>
 <td valign="top">
@@ -281,8 +257,6 @@ Specifies the time \(in milliseconds\) that the client will wait for a response 
 
 The default value is 60000 milliseconds \(1 minute\).
 
-
-
 </td>
 </tr>
 <tr>
@@ -290,14 +264,10 @@ The default value is 60000 milliseconds \(1 minute\).
 
 *Compress Message*
 
-
-
 </td>
 <td valign="top">
 
 Enables the WS endpoint to send compressed request messages to the WS Provider and to indicate the WS Provider that it can handle compressed response messages.
-
-
 
 </td>
 </tr>
@@ -306,14 +276,10 @@ Enables the WS endpoint to send compressed request messages to the WS Provider a
 
 *Allow Chunking*
 
-
-
 </td>
 <td valign="top">
 
 Used for enabling HTTP chunking of data while sending messages.
-
-
 
 </td>
 </tr>
@@ -321,8 +287,6 @@ Used for enabling HTTP chunking of data while sending messages.
 <td valign="top">
 
 *Return HTTP Response Code as Header*
-
-
 
 </td>
 <td valign="top">
@@ -345,14 +309,10 @@ This feature is disabled by default.
 
 *Clean-up Request Headers*
 
-
-
 </td>
 <td valign="top">
 
 Select this option to clean up the adapter specific- headers after the receiver call.
-
-
 
 </td>
 </tr>

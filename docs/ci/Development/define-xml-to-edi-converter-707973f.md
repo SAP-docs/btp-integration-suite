@@ -29,22 +29,16 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     <th valign="top">
 
     Tab
-
-
     
     </th>
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -52,22 +46,16 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     <td valign="top">
     
     General
-
-
     
     </td>
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Enter a name for the flow step.
-
-
     
     </td>
     </tr>
@@ -75,22 +63,16 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     <td valign="top" rowspan="5">
     
     EDIFACT
-
-
     
     </td>
     <td valign="top">
     
     Source Encoding
-
-
     
     </td>
     <td valign="top">
     
     Select encoding format for the incoming payload.
-
-
     
     </td>
     </tr>
@@ -98,15 +80,11 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     <td valign="top">
     
     EDI Schema Definition
-
-
     
     </td>
     <td valign="top">
     
     Select the source of schema definition.
-
-
     
     </td>
     </tr>
@@ -114,8 +92,6 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     <td valign="top">
     
     Schemas
-
-
     
     </td>
     <td valign="top">
@@ -148,8 +124,6 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     <td valign="top">
     
     HeaderName
-
-
     
     </td>
     <td valign="top">
@@ -169,8 +143,6 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     <td valign="top">
     
     Use Custom Separators
-
-
     
     </td>
     <td valign="top">
@@ -191,22 +163,16 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     <td valign="top" rowspan="4">
     
     X12
-
-
     
     </td>
     <td valign="top">
     
     Source Encoding
-
-
     
     </td>
     <td valign="top">
     
     Select encoding format for the incoming payload.
-
-
     
     </td>
     </tr>
@@ -214,8 +180,6 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     <td valign="top">
     
     EDI Schema Definition
-
-
     
     </td>
     <td valign="top">
@@ -240,8 +204,6 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     <td valign="top">
     
     Header Name
-
-
     
     </td>
     <td valign="top">
@@ -261,8 +223,6 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     <td valign="top">
     
     Use Custom Separators
-
-
     
     </td>
     <td valign="top">
@@ -581,14 +541,10 @@ UNH+1+**INVOIC**:**D**:**96A**:**EN:EAN008**'
 
 Header Name
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -597,14 +553,10 @@ Value
 
 SAP\_EDI\_Document\_Standard
 
-
-
 </td>
 <td valign="top">
 
 UN-EDIFACT
-
-
 
 </td>
 </tr>
@@ -613,14 +565,10 @@ UN-EDIFACT
 
 SAP\_EDI\_Interchange\_Control\_Number
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -629,14 +577,10 @@ SAP\_EDI\_Interchange\_Control\_Number
 
 SAP\_EDI\_Message\_Association\_Assign\_Code
 
-
-
 </td>
 <td valign="top">
 
 EAN008
-
-
 
 </td>
 </tr>
@@ -645,14 +589,10 @@ EAN008
 
 SAP\_EDI\_Message\_Control\_Number
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -661,14 +601,10 @@ SAP\_EDI\_Message\_Control\_Number
 
 SAP\_EDI\_Message\_Controlling\_Agency
 
-
-
 </td>
 <td valign="top">
 
 UN
-
-
 
 </td>
 </tr>
@@ -677,14 +613,10 @@ UN
 
 SAP\_EDI\_Message\_Release
 
-
-
 </td>
 <td valign="top">
 
 96A
-
-
 
 </td>
 </tr>
@@ -693,14 +625,10 @@ SAP\_EDI\_Message\_Release
 
 SAP\_EDI\_Message\_Type
 
-
-
 </td>
 <td valign="top">
 
 ORDERS
-
-
 
 </td>
 </tr>
@@ -709,14 +637,10 @@ ORDERS
 
 SAP\_EDI\_Message\_Version
 
-
-
 </td>
 <td valign="top">
 
 D
-
-
 
 </td>
 </tr>
@@ -725,14 +649,10 @@ D
 
 SAP\_EDI\_Payload\_Format
 
-
-
 </td>
 <td valign="top">
 
 EDI\_FLAT
-
-
 
 </td>
 </tr>
@@ -741,14 +661,10 @@ EDI\_FLAT
 
 SAP\_EDI\_Processing\_Priority\_Code
 
-
-
 </td>
 <td valign="top">
 
 A
-
-
 
 </td>
 </tr>
@@ -757,14 +673,10 @@ A
 
 SAP\_EDI\_Receiver\_ID
 
-
-
 </td>
 <td valign="top">
 
 RECIPIENT ID
-
-
 
 </td>
 </tr>
@@ -773,14 +685,10 @@ RECIPIENT ID
 
 SAP\_EDI\_Receiver\_Routing\_Address
 
-
-
 </td>
 <td valign="top">
 
 INT ROUT
-
-
 
 </td>
 </tr>
@@ -789,14 +697,10 @@ INT ROUT
 
 SAP\_EDI\_Recipient\_Reference\_Password
 
-
-
 </td>
 <td valign="top">
 
 PASSWORD RCV
-
-
 
 </td>
 </tr>
@@ -805,14 +709,10 @@ PASSWORD RCV
 
 SAP\_EDI\_Receiver\_ID\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 14
-
-
 
 </td>
 </tr>
@@ -821,14 +721,10 @@ SAP\_EDI\_Receiver\_ID\_Qualifier
 
 SAP\_EDI\_Sender\_ID
 
-
-
 </td>
 <td valign="top">
 
 SENDER ID
-
-
 
 </td>
 </tr>
@@ -837,14 +733,10 @@ SENDER ID
 
 SAP\_EDI\_Sender\_ID\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 14
-
-
 
 </td>
 </tr>
@@ -853,14 +745,10 @@ SAP\_EDI\_Sender\_ID\_Qualifier
 
 SAP\_EDI\_Sender\_Reverse\_Routing\_Address
 
-
-
 </td>
 <td valign="top">
 
 REV ROUT
-
-
 
 </td>
 </tr>
@@ -869,14 +757,10 @@ REV ROUT
 
 SAP\_EDI\_Syntax\_Identifier
 
-
-
 </td>
 <td valign="top">
 
 UNOC
-
-
 
 </td>
 </tr>
@@ -885,14 +769,10 @@ UNOC
 
 SAP\_EDI\_Syntax\_Version\_Number
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -901,14 +781,10 @@ SAP\_EDI\_Syntax\_Version\_Number
 
 SAP\_EDI\_Test\_Indicator
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -931,14 +807,10 @@ UNH+1+**INVOIC**:**D**:**96A**:**UN**'
 
 Header Name
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -947,14 +819,10 @@ Value
 
 SAP\_EDI\_Payload\_Format
 
-
-
 </td>
 <td valign="top">
 
 XML or Flat-File
-
-
 
 </td>
 </tr>
@@ -963,14 +831,10 @@ XML or Flat-File
 
 SAP\_EDI\_Document\_Standard
 
-
-
 </td>
 <td valign="top">
 
 UN-EDIFACT
-
-
 
 </td>
 </tr>
@@ -979,14 +843,10 @@ UN-EDIFACT
 
 SAP\_EDI\_Sender\_ID
 
-
-
 </td>
 <td valign="top">
 
 4006501000002
-
-
 
 </td>
 </tr>
@@ -995,14 +855,10 @@ SAP\_EDI\_Sender\_ID
 
 SAP\_EDI\_Sender\_ID\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 14
-
-
 
 </td>
 </tr>
@@ -1011,14 +867,10 @@ SAP\_EDI\_Sender\_ID\_Qualifier
 
 SAP\_EDI\_Receiver\_ID
 
-
-
 </td>
 <td valign="top">
 
 5790000016839
-
-
 
 </td>
 </tr>
@@ -1027,14 +879,10 @@ SAP\_EDI\_Receiver\_ID
 
 SAP\_EDI\_Receiver\_ID\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 14
-
-
 
 </td>
 </tr>
@@ -1043,14 +891,10 @@ SAP\_EDI\_Receiver\_ID\_Qualifier
 
 SAP\_EDI\_Interchange\_Control\_Number
 
-
-
 </td>
 <td valign="top">
 
 0650
-
-
 
 </td>
 </tr>
@@ -1059,14 +903,10 @@ SAP\_EDI\_Interchange\_Control\_Number
 
 SAP\_EDI\_Message\_Type
 
-
-
 </td>
 <td valign="top">
 
 INVOIC
-
-
 
 </td>
 </tr>
@@ -1075,14 +915,10 @@ INVOIC
 
 SAP\_EDI\_Message\_Version
 
-
-
 </td>
 <td valign="top">
 
 D
-
-
 
 </td>
 </tr>
@@ -1091,14 +927,10 @@ D
 
 SAP\_EDI\_Message\_Release
 
-
-
 </td>
 <td valign="top">
 
 96A
-
-
 
 </td>
 </tr>
@@ -1107,14 +939,10 @@ SAP\_EDI\_Message\_Release
 
 SAP\_EDI\_Message\_Controlling\_Agency
 
-
-
 </td>
 <td valign="top">
 
 UN
-
-
 
 </td>
 </tr>
@@ -1139,14 +967,10 @@ GS\*IN\*GSRESNDR\*GSRERCVR\*20030709\*0816\*12345\*X\***004010**~
 
 Header Name
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -1155,14 +979,10 @@ Value
 
 SAP\_EDI\_Payload\_Format
 
-
-
 </td>
 <td valign="top">
 
 XML or Flat-File
-
-
 
 </td>
 </tr>
@@ -1171,14 +991,10 @@ XML or Flat-File
 
 SAP\_EDI\_Document\_Standard
 
-
-
 </td>
 <td valign="top">
 
 ASC-X12
-
-
 
 </td>
 </tr>
@@ -1187,14 +1003,10 @@ ASC-X12
 
 SAP\_EDI\_Sender\_ID
 
-
-
 </td>
 <td valign="top">
 
 WWRESNDR
-
-
 
 </td>
 </tr>
@@ -1203,14 +1015,10 @@ WWRESNDR
 
 SAP\_EDI\_Sender\_ID\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 ZZ
-
-
 
 </td>
 </tr>
@@ -1219,14 +1027,10 @@ ZZ
 
 SAP\_EDI\_Receiver\_ID
 
-
-
 </td>
 <td valign="top">
 
 WWRERCVR
-
-
 
 </td>
 </tr>
@@ -1235,14 +1039,10 @@ WWRERCVR
 
 SAP\_EDI\_Receiver\_ID\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 ZZ
-
-
 
 </td>
 </tr>
@@ -1251,14 +1051,10 @@ ZZ
 
 SAP\_EDI\_Interchange\_Control\_Number
 
-
-
 </td>
 <td valign="top">
 
 000046668
-
-
 
 </td>
 </tr>
@@ -1267,14 +1063,10 @@ SAP\_EDI\_Interchange\_Control\_Number
 
 SAP\_EDI\_Message\_Type
 
-
-
 </td>
 <td valign="top">
 
 810
-
-
 
 </td>
 </tr>
@@ -1283,14 +1075,10 @@ SAP\_EDI\_Message\_Type
 
 SAP\_EDI\_Message\_Version
 
-
-
 </td>
 <td valign="top">
 
 004010
-
-
 
 </td>
 </tr>
@@ -1299,14 +1087,10 @@ SAP\_EDI\_Message\_Version
 
 SAP\_EDI\_GS\_Sender\_ID
 
-
-
 </td>
 <td valign="top">
 
 GSRESNDR
-
-
 
 </td>
 </tr>
@@ -1315,14 +1099,10 @@ GSRESNDR
 
 SAP\_EDI\_Receiver\_ID
 
-
-
 </td>
 <td valign="top">
 
 GSRERCVR
-
-
 
 </td>
 </tr>
@@ -1331,14 +1111,10 @@ GSRERCVR
 
 SAP\_EDI\_GS\_Control\_Number
 
-
-
 </td>
 <td valign="top">
 
 12345
-
-
 
 </td>
 </tr>
@@ -1347,14 +1123,10 @@ SAP\_EDI\_GS\_Control\_Number
 
 SAP\_GS\_Functional\_Id\_Code
 
-
-
 </td>
 <td valign="top">
 
 IN
-
-
 
 </td>
 </tr>
@@ -1363,14 +1135,10 @@ IN
 
 SAP\_GS\_Responsible\_Agency\_Code
 
-
-
 </td>
 <td valign="top">
 
 X
-
-
 
 </td>
 </tr>
@@ -1379,14 +1147,10 @@ X
 
 SAP\_ISA\_Acknowledgment\_Requested
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -1395,14 +1159,10 @@ SAP\_ISA\_Acknowledgment\_Requested
 
 SAP\_ISA\_Auth\_Information\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 00
-
-
 
 </td>
 </tr>
@@ -1410,8 +1170,6 @@ SAP\_ISA\_Auth\_Information\_Qualifier
 <td valign="top">
 
 SAP\_ISA\_Control\_Standards\_Identifier
-
-
 
 </td>
 <td valign="top">
@@ -1425,14 +1183,10 @@ SAP\_ISA\_Control\_Standards\_Identifier
 
 SAP\_ ISA\_Security\_Information\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 00
-
-
 
 </td>
 </tr>
@@ -1441,14 +1195,10 @@ SAP\_ ISA\_Security\_Information\_Qualifier
 
 SAP\_ISA\_Usage\_Indicator
 
-
-
 </td>
 <td valign="top">
 
 P
-
-
 
 </td>
 </tr>
@@ -1457,14 +1207,10 @@ P
 
 SAP\_ISA\_Version\_Number
 
-
-
 </td>
 <td valign="top">
 
 004010
-
-
 
 </td>
 </tr>
@@ -1472,8 +1218,6 @@ SAP\_ISA\_Version\_Number
 <td valign="top">
 
 SAP\_MessageProcessingLogID
-
-
 
 </td>
 <td valign="top">
@@ -1486,8 +1230,6 @@ SAP\_MessageProcessingLogID
 <td valign="top">
 
 SAP\_ST\_Control\_Number
-
-
 
 </td>
 <td valign="top">

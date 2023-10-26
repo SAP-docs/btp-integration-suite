@@ -28,15 +28,11 @@ This step uses generates the following property: `CamelLoopIndex` \(see also [He
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -44,15 +40,11 @@ This step uses generates the following property: `CamelLoopIndex` \(see also [He
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     Specify a name.
-
-
     
     </td>
     </tr>
@@ -66,15 +58,11 @@ This step uses generates the following property: `CamelLoopIndex` \(see also [He
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -82,15 +70,11 @@ This step uses generates the following property: `CamelLoopIndex` \(see also [He
     <td valign="top">
     
     *Local Integration Process*
-
-
     
     </td>
     <td valign="top">
     
     Select a pre-defined local integration process you want to invoke.
-
-
     
     </td>
     </tr>
@@ -98,8 +82,6 @@ This step uses generates the following property: `CamelLoopIndex` \(see also [He
     <td valign="top">
     
     *Expression Type* 
-
-
     
     </td>
     <td valign="top">
@@ -134,8 +116,6 @@ This step uses generates the following property: `CamelLoopIndex` \(see also [He
     <td valign="top">
     
     *Condition Expression*
-
-
     
     </td>
     <td valign="top">
@@ -150,8 +130,6 @@ This step uses generates the following property: `CamelLoopIndex` \(see also [He
     > Don't use a mixed expression \(containing both XML and Non-XML expressions\). For more information, see the example described as part of Step 5.
 
     For more information about the usage of operators, see [Define Router](define-router-d7fddbd.md).
-
-
     
     </td>
     </tr>
@@ -159,15 +137,11 @@ This step uses generates the following property: `CamelLoopIndex` \(see also [He
     <td valign="top">
     
     *Max. Number of Iterations* 
-
-
     
     </td>
     <td valign="top">
     
     Specify the maximum number of iterations the loop is to be executed. Even if the condition is still met, the loop ends afterwards.
-
-
     
     </td>
     </tr>
@@ -175,15 +149,11 @@ This step uses generates the following property: `CamelLoopIndex` \(see also [He
     <td valign="top">
     
     *Action when Max. Iterations Reached* 
-
-
     
     </td>
     <td valign="top">
     
     Select to throw an exception when the maximum number of iterations has been reached or to exit the loop and continue with the main process without error even if the looping condition continues to be true.
-
-
     
     </td>
     </tr>

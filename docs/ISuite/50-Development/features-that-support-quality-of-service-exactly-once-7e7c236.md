@@ -11,14 +11,10 @@ Various capabilities help to ensure guaranteed delivery.
 
 Capability
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -27,14 +23,10 @@ Description
 
 Unique identifier \(for example, a message ID\)
 
-
-
 </td>
 <td valign="top">
 
 A unique identifier is a prerequisite to be able to identify duplicates. The ID can change during message processing. However, this change has to be done in a deterministic, reproducible way. That means: An ID of the sender system must always result in the same ID for the receiver system even when resending the message \(see the description of ID mapping\).
-
-
 
 </td>
 </tr>
@@ -42,8 +34,6 @@ A unique identifier is a prerequisite to be able to identify duplicates. The ID 
 <td valign="top">
 
 ID mapping
-
-
 
 </td>
 <td valign="top">
@@ -85,14 +75,10 @@ If the receiver adapter isn't offering the option to map an ID, use the *ID Mapp
 
 Acknowledgment:
 
-
-
 </td>
 <td valign="top">
 
 When exchanging messages between systems, an acknowledgment verifies that the message was received successfully at the target system. On transport layer, an acknowledgment can be an HTTP status code, for example. In asynchronous messages, an acknowledgment can be a separate message \(for example, MDN in AS2 adapter\). The system handles messages where a positive acknowledgment is missing as failed messages that need to be resent.
-
-
 
 </td>
 </tr>
@@ -101,14 +87,10 @@ When exchanging messages between systems, an acknowledgment verifies that the me
 
 Sender with retry
 
-
-
 </td>
 <td valign="top">
 
 If message processing fails, the sender should be able to resend the message. In order to survive application crashes, such a retry is to be based on a persistent message storage.
-
-
 
 </td>
 </tr>
@@ -116,8 +98,6 @@ If message processing fails, the sender should be able to resend the message. In
 <td valign="top">
 
 Idempotent receiver
-
-
 
 </td>
 <td valign="top">

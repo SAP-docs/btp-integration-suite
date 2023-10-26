@@ -29,15 +29,11 @@ You can download a key, a complete certificate, a certificate chain, or a root c
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -45,8 +41,6 @@ You can download a key, a complete certificate, a certificate chain, or a root c
     <td valign="top">
     
     *Key Pair* entry
-
-
     
     </td>
     <td valign="top">

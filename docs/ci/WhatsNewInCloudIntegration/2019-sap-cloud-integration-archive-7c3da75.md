@@ -15,49 +15,35 @@
 
 Technical Component
 
-
-
 </th>
 <th valign="top">
 
 Capability
-
-
 
 </th>
 <th valign="top">
 
 Environment
 
-
-
 </th>
 <th valign="top">
 
 Title
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Available as of
-
-
 
 </th>
 </tr>
@@ -66,28 +52,20 @@ Available as of
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update **\(release skipped\)** 
-
-
 
 </td>
 <td valign="top">
@@ -105,14 +83,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-12-21
-
-
 
 </td>
 </tr>
@@ -121,28 +95,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update **\(release skipped\)** 
-
-
 
 </td>
 <td valign="top">
@@ -159,14 +125,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-12-21
-
-
 
 </td>
 </tr>
@@ -175,28 +137,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -213,14 +167,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-12-07
-
-
 
 </td>
 </tr>
@@ -229,28 +179,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -269,14 +211,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-12-07
-
-
 
 </td>
 </tr>
@@ -285,14 +223,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -307,28 +241,20 @@ Integration Suite
 
 User Interface
 
-
-
 </td>
 <td valign="top">
 
 The latest version of SAP Cloud Integration has introduced an impressive visual experience with the new user interface theme. You can notice the change has been made to appearance of windows, dialogs, and controls.
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-12-07
-
-
 
 </td>
 </tr>
@@ -337,14 +263,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -359,8 +281,6 @@ Integration Suite
 
 SuccessFactors SOAP Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -370,21 +290,15 @@ See:
 
 [Configure Communication Channel with SuccessFactors\(SOAP\) Adapter](../Development/successfactors-soap-adapter-28b29d6.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-12-07
-
-
 
 </td>
 </tr>
@@ -393,14 +307,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -415,8 +325,6 @@ Integration Suite
 
 New Adapter for AMQP Messaging Systems
 
-
-
 </td>
 <td valign="top">
 
@@ -428,21 +336,15 @@ See:
 
 [Configure the AMQP Receiver Adapter](../Development/configure-the-amqp-receiver-adapter-d5660c1.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-12-07
-
-
 
 </td>
 </tr>
@@ -451,14 +353,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -473,8 +371,6 @@ Integration Suite
 
 AS4 Receiver Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -482,21 +378,15 @@ Now you can partition AS4 messages between the exchange participants.
 
 See: [Configure Receiver Channel with Push Message Protocol](../Development/configure-receiver-channel-with-push-message-protocol-449f6e9.md).
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-12-07
-
-
 
 </td>
 </tr>
@@ -505,49 +395,35 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 AS4 Sender Adapter
-
-
 
 </td>
 <td valign="top">
 
 Partner Directory support is now available for AS4 Sender Adapter. Partner Directory parameters are shown in the MPL log as MPL properties.
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-12-07
-
-
 
 </td>
 </tr>
@@ -556,14 +432,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -578,8 +450,6 @@ Integration Suite
 
 Queue Status Added to JMS Resource View
 
-
-
 </td>
 <td valign="top">
 
@@ -587,21 +457,15 @@ The *Manage Message Queues* editor now provides the queue status in the JMS reso
 
 See: [Managing Message Queues](../Operations/managing-message-queues-cdcce24.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-12-07
-
-
 
 </td>
 </tr>
@@ -610,14 +474,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -632,8 +492,6 @@ Integration Suite
 
 Configuration of individual JMS queues available in Message Queue Monitor
 
-
-
 </td>
 <td valign="top">
 
@@ -641,21 +499,15 @@ To prevent any blockages in the processing due to overloaded JMS queues, you can
 
 See: [Managing Message Queues](../Operations/managing-message-queues-cdcce24.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-12-07
-
-
 
 </td>
 </tr>
@@ -664,28 +516,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -702,14 +546,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-10-26
-
-
 
 </td>
 </tr>
@@ -718,28 +558,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -758,14 +590,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-10-26
-
-
 
 </td>
 </tr>
@@ -774,14 +602,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -796,8 +620,6 @@ Integration Suite
 
 XML to CSV Converter
 
-
-
 </td>
 <td valign="top">
 
@@ -805,21 +627,15 @@ The namespace information used in the schema will now be considered provided the
 
 See: [Configure XML to CSV Converter](../Development/configure-xml-to-csv-converter-9025222.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-10-26
-
-
 
 </td>
 </tr>
@@ -828,14 +644,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -850,8 +662,6 @@ Integration Suite
 
 OData V4 Receiver Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -859,21 +669,15 @@ You can now connect to OData V4 service using OAuth2 Client Credentials authenti
 
 See: [Configure OData V Receiver Adapter](../Development/configure-the-odata-v4-receiver-adapter-cd66a12.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-10-26
-
-
 
 </td>
 </tr>
@@ -882,14 +686,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -903,8 +703,6 @@ Integration Suite
 <td valign="top">
 
 SuccessFactors OData V2 Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -925,14 +723,10 @@ See:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-10-26
-
-
 
 </td>
 </tr>
@@ -941,28 +735,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Importing Integration Packages
-
-
 
 </td>
 <td valign="top">
@@ -971,21 +757,15 @@ You can now import an integration package \(zip import\) over an existing packag
 
 See: [Importing Integration Packages](../Development/importing-integration-packages-b6a1a61.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-10-26
-
-
 
 </td>
 </tr>
@@ -994,49 +774,35 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
 
-
-
 </td>
 <td valign="top">
 
 Neo
-
-
 
 </td>
 <td valign="top">
 
 OData V2 Remote API
 
-
-
 </td>
 <td valign="top">
 
 OData V2 API for OAuth2ClientCredentials is now available.
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-10-26
-
-
 
 </td>
 </tr>
@@ -1045,28 +811,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Accessing On-Premise Application using Cloud Connector
-
-
 
 </td>
 <td valign="top">
@@ -1075,21 +833,15 @@ Now you can use APIs to build a ADK project for accessing an op-premise applicat
 
 See: [Accessing On-Premise Application using Cloud Connector](../Development/accessing-on-premise-application-using-cloud-connector-c94b890.md).
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-10-26
-
-
 
 </td>
 </tr>
@@ -1098,14 +850,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1120,8 +868,6 @@ Integration Suite
 
 Validating Message Payload against XML Schema
 
-
-
 </td>
 <td valign="top">
 
@@ -1129,21 +875,15 @@ XML Validator will now show the result of an output in property instead of heade
 
 See: [Validating Message Payload against XML Schema](../Development/validating-message-payload-against-xml-schema-360dc70.md).
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-10-26
-
-
 
 </td>
 </tr>
@@ -1152,28 +892,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1190,14 +922,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-09-28
-
-
 
 </td>
 </tr>
@@ -1206,28 +934,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1246,14 +966,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-09-28
-
-
 
 </td>
 </tr>
@@ -1262,14 +978,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1284,8 +996,6 @@ Integration Suite
 
 OData API 
 
-
-
 </td>
 <td valign="top">
 
@@ -1293,21 +1003,15 @@ All the headers available in the integration flow pipeline at the time of messag
 
 See: [Invoking an OData API](../Development/invoking-an-odata-api-0174c4a.md).
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-09-28
-
-
 
 </td>
 </tr>
@@ -1316,28 +1020,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Cloud Connector Connectivity Test
-
-
 
 </td>
 <td valign="top">
@@ -1346,21 +1042,15 @@ Cloud Connector Connectivity Test is now supported. This test checks if the clou
 
 See: [Cloud Connector Connectivity Tests](../Operations/cloud-connector-connectivity-tests-58c0ff0.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-09-28
-
-
 
 </td>
 </tr>
@@ -1369,28 +1059,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1407,14 +1089,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-08-31
-
-
 
 </td>
 </tr>
@@ -1423,28 +1101,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1463,14 +1133,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-08-31
-
-
 
 </td>
 </tr>
@@ -1479,14 +1145,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1501,8 +1163,6 @@ Integration Suite
 
 OData V4 Receiver Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -1510,21 +1170,15 @@ You can now ensure that your integration flow is protected against malicious att
 
 See: [Configure OData V4 Receiver Adapter](../Development/configure-the-odata-v4-receiver-adapter-cd66a12.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-08-31
-
-
 
 </td>
 </tr>
@@ -1533,14 +1187,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1555,8 +1205,6 @@ Integration Suite
 
 Filter
 
-
-
 </td>
 <td valign="top">
 
@@ -1564,21 +1212,15 @@ Now Filter component supports Enterprise Edition capabilities of XPath 3.1.
 
 See: [Define Filter](../Development/define-filter-733f8dc.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-08-31
-
-
 
 </td>
 </tr>
@@ -1587,28 +1229,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Where-Used Feature Available in Queue Monitor
-
-
 
 </td>
 <td valign="top">
@@ -1617,21 +1251,15 @@ The tile *Managing Message Queues* \(in the Web UI *Operations* view under *Mana
 
 See: [Managing Message Queues](../Operations/managing-message-queues-cdcce24.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-08-31
-
-
 
 </td>
 </tr>
@@ -1640,28 +1268,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Cloud Connector Support for Receiver Adapters
-
-
 
 </td>
 <td valign="top">
@@ -1674,21 +1294,15 @@ See:
 
 [Outbound: SAP Cloud Connector](../ConnectionSetup/outbound-sap-cloud-connector-642e87f.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-08-31
-
-
 
 </td>
 </tr>
@@ -1697,28 +1311,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Elster Receiver Adapter Available
-
-
 
 </td>
 <td valign="top">
@@ -1727,21 +1333,15 @@ The Elster receiver adapter is now supported when using SAP Cloud Integration in
 
 See: [ELSTER Receiver Adapter](../Development/elster-receiver-adapter-e374ef7.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-08-31
-
-
 
 </td>
 </tr>
@@ -1750,14 +1350,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1772,8 +1368,6 @@ Integration Suite
 
 Integration Flow Design Pattern Document
 
-
-
 </td>
 <td valign="top">
 
@@ -1781,21 +1375,15 @@ A new section provides an overview of patterns how to to design enterprise-grade
 
 See: [Integration Flow Design Guidelines](../Development/integration-flow-design-guidelines-6803389.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-08-31
-
-
 
 </td>
 </tr>
@@ -1804,14 +1392,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1826,8 +1410,6 @@ Integration Suite
 
 Lock Timeout for In-Progress Repository Now Configurable in XI Sender Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -1835,21 +1417,15 @@ The timeout lock for the in-progress repository of the XI sender adapter is now 
 
 See: [Configure the XI Sender Adapter](../Development/configure-the-xi-sender-adapter-41a1a57.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-08-31
-
-
 
 </td>
 </tr>
@@ -1858,28 +1434,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1896,14 +1464,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-08-03
-
-
 
 </td>
 </tr>
@@ -1912,28 +1476,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1952,14 +1508,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-08-03
-
-
 
 </td>
 </tr>
@@ -1968,28 +1520,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 JMS Resource View Now Available in the Cloud Foundry Environment
-
-
 
 </td>
 <td valign="top">
@@ -2000,21 +1544,15 @@ See:
 
 [Managing Message Queues](../Operations/managing-message-queues-cdcce24.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-08-03
-
-
 
 </td>
 </tr>
@@ -2023,28 +1561,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Content Transport
-
-
 
 </td>
 <td valign="top">
@@ -2059,21 +1589,15 @@ See:
 
 [Content Transport Using MTAR Download](../Development/content-transport-using-mtar-download-c111710.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-08-03
-
-
 
 </td>
 </tr>
@@ -2082,28 +1606,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Managing Custom Roles in the Cloud Foundry Environment
-
-
 
 </td>
 <td valign="top">
@@ -2116,21 +1632,15 @@ More information:
 
 [Managing User Roles, Cloud Foundry Environment](../Operations/managing-user-roles-cloud-foundry-environment-4e86f0d.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-08-03
-
-
 
 </td>
 </tr>
@@ -2139,14 +1649,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2161,8 +1667,6 @@ Integration Suite
 
 Create/Upload an Integration Flow
 
-
-
 </td>
 <td valign="top">
 
@@ -2170,21 +1674,15 @@ You can now edit the ID field while creating or uploading an integration flow.
 
 See: [Creating an Integration Flow](../Development/creating-an-integration-flow-da53d93.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-08-03
-
-
 
 </td>
 </tr>
@@ -2193,28 +1691,20 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Library of Type Systems
-
-
 
 </td>
 <td valign="top">
@@ -2225,21 +1715,15 @@ See: [Library of Type Systems](../IntegrationAdvisor/library-of-type-systems-740
 
 and read the blog on [Latest B2B/A2A Libraries](https://blogs.sap.com/2019/06/20/integration-advisor-latest-b2ba2a-libraries-for-creating-and-maintaining-your-customized-interfaces-and-apis/).
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-08-03
-
-
 
 </td>
 </tr>
@@ -2248,28 +1732,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -2288,14 +1764,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-07-06
-
-
 
 </td>
 </tr>
@@ -2304,28 +1776,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 ServiceEndpoints Entity
-
-
 
 </td>
 <td valign="top">
@@ -2334,21 +1798,15 @@ You can now apply filter based on Protocol while retrieving the service endpoint
 
 See: [ServiceEndpoints Example Requests](../Development/serviceendpoints-example-requests-26797fb.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-07-06
-
-
 
 </td>
 </tr>
@@ -2357,28 +1815,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 OData V2 receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -2391,21 +1841,15 @@ See:
 
 [Configure OData V2 Receiver Adapter](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-07-06
-
-
 
 </td>
 </tr>
@@ -2414,28 +1858,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Increased Size Limit for Keystore Monitor and Certificate to User Mapping
-
-
 
 </td>
 <td valign="top">
@@ -2448,21 +1884,15 @@ See:
 
 [Managing Certificate-to-User Mappings, Neo Environment](../Operations/managing-certificate-to-user-mappings-neo-environment-88ea2e5.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-07-06
-
-
 
 </td>
 </tr>
@@ -2471,28 +1901,20 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Message Implementation Guidelines \(MIGs\)
-
-
 
 </td>
 <td valign="top">
@@ -2504,21 +1926,15 @@ Message Implementation Guidelines \(MIGs\)
 
 See: [Message Implementation Guidelines \(MIGs\)](../IntegrationAdvisor/message-implementation-guidelines-migs-f9f2bab.md) and also find this useful blog on [Importance of Customized Codelists in MIGs](https://blogs.sap.com/2019/03/01/integration-content-advisor-the-importance-of-customized-codelists-in-message-implementation-guidelines-migs/).
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-07-06
-
-
 
 </td>
 </tr>
@@ -2527,28 +1943,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -2565,14 +1973,10 @@ The versions have been updated:
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-06-10
-
-
 
 </td>
 </tr>
@@ -2581,28 +1985,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -2621,14 +2017,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-06-10
-
-
 
 </td>
 </tr>
@@ -2637,28 +2029,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 SAP Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -2670,21 +2054,15 @@ SAP Cloud Integration is now available in Cloud Foundry environment.
 
 See: [Initial Setup of SAP Cloud Integration in the Cloud Foundry Environment](../InitialSetup/initial-setup-of-sap-cloud-integration-in-the-cloud-foundry-environment-302b47b.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-06-10
-
-
 
 </td>
 </tr>
@@ -2693,28 +2071,20 @@ New
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Message Implementation Guidelines \(MIGs\)
-
-
 
 </td>
 <td valign="top">
@@ -2723,21 +2093,15 @@ You can now export a Message Implementation Guideline \(MIG\) in RTF Format.
 
 See: [Message Implementation Guidelines \(MIGs\)](../IntegrationAdvisor/message-implementation-guidelines-migs-f9f2bab.md).
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-06-10
-
-
 
 </td>
 </tr>
@@ -2746,28 +2110,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -2786,14 +2142,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-05-11
-
-
 
 </td>
 </tr>
@@ -2802,28 +2154,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Content Transport
-
-
 
 </td>
 <td valign="top">
@@ -2832,21 +2176,15 @@ You can now view the error codes along with the error message if there is a conf
 
 See: [Content Transport](../Development/content-transport-e3c79d6.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-05-11
-
-
 
 </td>
 </tr>
@@ -2855,28 +2193,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 OData V2 Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -2885,21 +2215,15 @@ Now during message processing for non-GET operations, the OData V2 receiver adap
 
 See: [Configure OData V2 Receiver Adapter](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-05-11
-
-
 
 </td>
 </tr>
@@ -2908,28 +2232,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Mail Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -2938,21 +2254,15 @@ The mail receiver adapter now supports dynamic configuration of the public key u
 
 See: [Configure the Mail Receiver Adapter](../Development/configure-the-mail-receiver-adapter-f68d5e0.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-05-11
-
-
 
 </td>
 </tr>
@@ -2961,28 +2271,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Add SSH Keys in Keystore Monitor
-
-
 
 </td>
 <td valign="top">
@@ -2991,21 +2293,15 @@ You can now upload SSH keys or putty keys to the keystore monitor.
 
 See: [Uploading an SSH Key](../Operations/uploading-an-ssh-key-8bf9ae4.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-05-11
-
-
 
 </td>
 </tr>
@@ -3014,28 +2310,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 SuccessFactors OData V2 Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -3044,21 +2332,15 @@ You can now link an entity to a different navigation entity with different key p
 
 See: [Configure SuccessFactors OData V2 Receiver Adapter](../Development/configure-the-successfactors-odata-v2-receiver-adapter-d16dd12.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-05-11
-
-
 
 </td>
 </tr>
@@ -3067,28 +2349,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Integration Flow Editor
-
-
 
 </td>
 <td valign="top">
@@ -3097,21 +2371,15 @@ You can now recover the unsaved version version of you script or XSLT resource t
 
 See: [New and Improvised Integration Flow Editor for SAP Cloud Integration](../Development/overview-of-integration-flow-editor-db10beb.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-05-11
-
-
 
 </td>
 </tr>
@@ -3120,28 +2388,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Integration Flow Editor
-
-
 
 </td>
 <td valign="top">
@@ -3150,21 +2410,15 @@ You can now view the help information for a specific adapter or flow step direct
 
 See: [New and Improved Integration Flow Editor for SAP Cloud Integration](../Development/overview-of-integration-flow-editor-db10beb.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-05-11
-
-
 
 </td>
 </tr>
@@ -3173,28 +2427,20 @@ New
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Message Implementation Guidelines \(MIGs\) and Mapping Guidelines \(MAG\)
-
-
 
 </td>
 <td valign="top">
@@ -3216,14 +2462,10 @@ See:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-05-11
-
-
 
 </td>
 </tr>
@@ -3232,28 +2474,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -3272,14 +2506,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3288,28 +2518,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 OData V4 receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -3318,21 +2540,15 @@ The OData V4 receiver adapter now supports On-Premise connectivity.
 
 See: [Configure OData V4 Receiver Adapter](../Development/configure-the-odata-v4-receiver-adapter-cd66a12.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3341,28 +2557,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Message Mapping
-
-
 
 </td>
 <td valign="top">
@@ -3371,21 +2579,15 @@ You can now upload an OData V4 metadata file with extensions *.edmx* and *.xml* 
 
 See: [Creating Message Mapping](../Development/creating-message-mapping-as-a-flow-step-3d5cb7f.md) 
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3394,28 +2596,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Content Transport
-
-
 
 </td>
 <td valign="top">
@@ -3424,21 +2618,15 @@ The Transport Management Service is now generally available.
 
 More information : [Content Transport using Transport Management Service](../Development/content-transport-using-cloud-transport-management-d458b17.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3447,28 +2635,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Content Modifier
-
-
 
 </td>
 <td valign="top">
@@ -3477,21 +2657,15 @@ You can now maintain the data type value for the type Expression in the Content 
 
 See: [Define Content Modifier](../Development/define-content-modifier-8f04a70.md) 
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3500,28 +2674,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Text Area Externalization
-
-
 
 </td>
 <td valign="top">
@@ -3530,21 +2696,15 @@ Externalization of the text area has been improvised to provide better usability
 
 See: [Externalize Parameters of an Integration Flow](../Development/externalize-parameters-of-an-integration-flow-45b2a07.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3553,28 +2713,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 XSLT Mapping
-
-
 
 </td>
 <td valign="top">
@@ -3583,21 +2735,15 @@ You can now utilize the XSLT 3.0 specification through XSLT mapping version 1.2.
 
 See: [Create XSLT Mapping](../Development/create-xslt-mapping-5ce1f15.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3606,49 +2752,35 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 SAP Cloud Integration 
-
-
 
 </td>
 <td valign="top">
 
 Now you can save a complete URL of a tenant that contains specific strings related to the resources. Bookmarking URLs provides you an easy way of direct access to the resource.
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3657,49 +2789,35 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
 
-
-
 </td>
 <td valign="top">
 
 Neo
-
-
 
 </td>
 <td valign="top">
 
 SAP Cloud Integration 
 
-
-
 </td>
 <td valign="top">
 
 The Cloud Integration service tile has been renamed to *Process Integration*.
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3708,28 +2826,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Creation of SSH keys now possible with EC algorithms
-
-
 
 </td>
 <td valign="top">
@@ -3738,21 +2848,15 @@ SSH keys now support Elliptic Curve \(EC\) algorithms to connect to the SFTP ser
 
 See: [Creating a Key Pair/SSH Key Pair](../Operations/creating-a-key-pair-ssh-key-pair-b8a8601.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3761,28 +2865,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Mail Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -3791,21 +2887,15 @@ Mails that are sent out to email recipients can now be signed in the Mail receiv
 
 See: [Configure the Mail Receiver Adapter](../Development/configure-the-mail-receiver-adapter-f68d5e0.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3814,28 +2904,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 SOAP Header Script API
-
-
 
 </td>
 <td valign="top">
@@ -3844,21 +2926,15 @@ SOAP headers received by a sender channel can now be accessed and further proces
 
 See: [Setting and Getting SOAP Headers](../Development/setting-and-getting-soap-headers-65c70da.md) 
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3867,49 +2943,35 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 JSON to XML Converter
-
-
 
 </td>
 <td valign="top">
 
 The *JSON to XML Converter* now has the option to add XML root elements. Before that, you could only convert JSON documents with one root element.
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3918,28 +2980,20 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Mapping Guidelines \(MAG\)
-
-
 
 </td>
 <td valign="top">
@@ -3948,21 +3002,15 @@ You can now maintain changes to code list mappings centrally. The application wi
 
 See: [Mapping Guidelines \(MAGs\)](../IntegrationAdvisor/mapping-guidelines-mags-42124f4.md) and do read the [blog](https://blogs.sap.com/2019/03/21/integration-content-advisor-quickly-create-your-individual-code-value-mappings-in-mags/) on how to create individual code value mappings in MAGs.
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-04-13
-
-
 
 </td>
 </tr>
@@ -3971,28 +3019,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -4011,14 +3051,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-03-16
-
-
 
 </td>
 </tr>
@@ -4027,28 +3063,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Integration Content Entity Types
-
-
 
 </td>
 <td valign="top">
@@ -4057,21 +3085,15 @@ New OData API called `ServiceEndpoints` introduced to access the service endpoin
 
 See: [Integration Content](../Development/integration-content-d1679a8.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-03-16
-
-
 
 </td>
 </tr>
@@ -4080,28 +3102,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Open Connectors Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -4110,21 +3124,15 @@ Use *Open Connector* adapter to integrate and enable message exchange with over 
 
 See: [OpenConnectors Receiver Adapter](../Development/openconnectors-receiver-adapter-1a27cee.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-03-16
-
-
 
 </td>
 </tr>
@@ -4133,28 +3141,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 OData V4 Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -4163,21 +3163,15 @@ You can now allowlist the HTTP request and response headers for OData V4 outboun
 
 See: [Configure OData Receiver Adapter V4](../Development/configure-the-odata-v4-receiver-adapter-cd66a12.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-03-16
-
-
 
 </td>
 </tr>
@@ -4186,28 +3180,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 OData V2 Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -4216,21 +3202,15 @@ The Modeling Operation wizard can now read the Externalized parameters of the OD
 
 [Configure OData Receiver Adapter V2See:](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-03-16
-
-
 
 </td>
 </tr>
@@ -4239,28 +3219,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Dynamic Configuration of Username Token in SOAP 1.x Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -4275,21 +3247,15 @@ See:
 
 [Configure the SOAP \(SOAP 1.x\) Receiver Adapter](../Development/configure-the-soap-soap-1-x-receiver-adapter-57f7b34.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-03-16
-
-
 
 </td>
 </tr>
@@ -4298,28 +3264,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Web UI Enhancement of JMS Resources
-
-
 
 </td>
 <td valign="top">
@@ -4332,21 +3290,15 @@ See:
 
 [Managing Message Queues](../Operations/managing-message-queues-cdcce24.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-03-16
-
-
 
 </td>
 </tr>
@@ -4355,28 +3307,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Downloading Key Pairs from SAP History Tab in Keystore
-
-
 
 </td>
 <td valign="top">
@@ -4387,21 +3331,15 @@ See:
 
 [Downloading a Key Pair from the Key History](../Operations/downloading-a-key-pair-from-the-key-history-8e89659.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-03-16
-
-
 
 </td>
 </tr>
@@ -4410,28 +3348,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Minimum Limit of Max Retry Interval in XI Sender and Receiver Adapter and JMS Sender Adapter
-
-
 
 </td>
 <td valign="top">
@@ -4446,21 +3376,15 @@ See:
 
 [JMS Adapter](../Development/jms-adapter-0993f2a.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-03-16
-
-
 
 </td>
 </tr>
@@ -4469,28 +3393,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Data Store Write Operation
-
-
 
 </td>
 <td valign="top">
@@ -4501,21 +3417,15 @@ See:
 
 [Define Data Store Write Operations](../Development/define-data-store-write-operations-46260ee.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-03-16
-
-
 
 </td>
 </tr>
@@ -4524,28 +3434,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -4564,14 +3466,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-02-16
-
-
 
 </td>
 </tr>
@@ -4580,28 +3478,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 SuccessFactors OData V2 Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -4610,21 +3500,15 @@ You can now filter the fields using the IN operation when editing the query manu
 
 See: [Configure SuccessFactors OData V2 Receiver Adapter](../Development/configure-the-successfactors-odata-v2-receiver-adapter-d16dd12.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-02-16
-
-
 
 </td>
 </tr>
@@ -4633,28 +3517,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 AS4 Sender Adapter
-
-
 
 </td>
 <td valign="top">
@@ -4665,21 +3541,15 @@ See:
 
 [AS4 Sender Adapter](../Development/as4-sender-adapter-a448605.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-02-16
-
-
 
 </td>
 </tr>
@@ -4688,28 +3558,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 AS4 Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -4720,21 +3582,15 @@ See:
 
 [Configure Receiver Channel with Push Message Protocol](../Development/configure-receiver-channel-with-push-message-protocol-449f6e9.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-02-16
-
-
 
 </td>
 </tr>
@@ -4743,28 +3599,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Creating an Integration Flow
-
-
 
 </td>
 <td valign="top">
@@ -4775,21 +3623,15 @@ See:
 
 [Creating an Integration Flow](../Development/creating-an-integration-flow-da53d93.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-02-16
-
-
 
 </td>
 </tr>
@@ -4798,28 +3640,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 JMS Resource and Size Limits
-
-
 
 </td>
 <td valign="top">
@@ -4830,21 +3664,15 @@ See:
 
 [Configure Communication Channel with JMS Adapter](../Development/jms-adapter-0993f2a.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-02-16
-
-
 
 </td>
 </tr>
@@ -4853,28 +3681,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -4893,14 +3713,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-19
-
-
 
 </td>
 </tr>
@@ -4909,28 +3725,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 JMS Adapter
-
-
 
 </td>
 <td valign="top">
@@ -4941,21 +3749,15 @@ More information about JMS resource and size limits:
 
 [Configure Communication Channel with JMS Adapter](../Development/jms-adapter-0993f2a.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-01-19
-
-
 
 </td>
 </tr>
@@ -4964,28 +3766,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 OData V2 Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -4996,21 +3790,15 @@ See:
 
 [Configure OData Receiver Adapter V2](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-01-19
-
-
 
 </td>
 </tr>
@@ -5019,28 +3807,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 JDBC Data Sources
-
-
 
 </td>
 <td valign="top">
@@ -5051,21 +3831,15 @@ See:
 
 [Managing JDBC Data Sources](../Operations/managing-jdbc-data-sources-4c873fa.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-01-19
-
-
 
 </td>
 </tr>
@@ -5074,28 +3848,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 SuccessFactors OData V2 Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -5106,21 +3872,15 @@ See:
 
 [Configure SuccessFactors OData V2 Receiver Adapter](../Development/configure-the-successfactors-odata-v2-receiver-adapter-d16dd12.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-01-19
-
-
 
 </td>
 </tr>
@@ -5129,28 +3889,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Manage Resources of an Integration Flow
-
-
 
 </td>
 <td valign="top">
@@ -5161,21 +3913,15 @@ See:
 
 [Manage Resources of an Integration Flow](../Development/manage-resources-of-an-integration-flow-b5968b2.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-19
-
-
 
 </td>
 </tr>
@@ -5184,28 +3930,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 XSL Documents and XSD Documents Reference in Partner Directory
-
-
 
 </td>
 <td valign="top">
@@ -5218,21 +3956,15 @@ See:
 
 [Dynamically Reading XSD Files from the Partner Directory](../Development/dynamically-reading-xsd-files-from-the-partner-directory-9331745.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-19
-
-
 
 </td>
 </tr>
@@ -5241,28 +3973,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Downloading New Key Pairs in the Keystore
-
-
 
 </td>
 <td valign="top">
@@ -5273,21 +3997,15 @@ See:
 
 [Downloading a New Key Pair Provided by SAP](../Operations/downloading-a-new-key-pair-provided-by-sap-b3c989e.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-01-19
-
-
 
 </td>
 </tr>
@@ -5296,28 +4014,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Message Routing
-
-
 
 </td>
 <td valign="top">
@@ -5330,21 +4040,15 @@ See:
 
 [Define Iterating Splitter](../Development/define-iterating-splitter-d61d6ec.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-19
-
-
 
 </td>
 </tr>
@@ -5353,28 +4057,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 OData API
-
-
 
 </td>
 <td valign="top">
@@ -5383,21 +4079,15 @@ We have enhanced the Odata API by `IdempotentRepositoryEntries` in the Message P
 
 See: [Message Processing Logs](../Development/message-processing-logs-827a2d7.md)
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-01-19
-
-
 
 </td>
 </tr>
@@ -5406,28 +4096,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 XI Sender Adapter Enhancements
-
-
 
 </td>
 <td valign="top">
@@ -5436,21 +4118,15 @@ When configuring the XI sender adapter, you can now select among an updated sele
 
 To learn more, see: [Configure XI Sender Adapter](../Development/configure-the-xi-sender-adapter-41a1a57.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-19
-
-
 
 </td>
 </tr>
@@ -5459,28 +4135,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -5499,14 +4167,10 @@ The versions have been updated:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -5515,28 +4179,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Provisioning Enterprise Messaging
-
-
 
 </td>
 <td valign="top">
@@ -5545,21 +4201,15 @@ You can now increase or decrease the enterprise messaging queues for a specific 
 
 See: [Activating Enterprise Messaging](../Operations/activating-enterprise-messaging-a74cddc.md).
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -5568,28 +4218,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Message-Mapping Editor
-
-
 
 </td>
 <td valign="top">
@@ -5598,21 +4240,15 @@ You can now search for a particular node element and also view its occurrences w
 
 See: [Creating Message Mapping](../Development/creating-message-mapping-as-a-flow-step-3d5cb7f.md).
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -5621,28 +4257,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 SuccessFactors OData V2 and SOAP Adapters
-
-
 
 </td>
 <td valign="top">
@@ -5653,21 +4281,15 @@ See: [SuccessFactors OData V2 Adapter](../Development/successfactors-odata-v2-ad
 
 [Configure Communication Channel with SuccessFactors \(SOAP\) Adapter](../Development/successfactors-soap-adapter-28b29d6.md).
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -5676,28 +4298,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 SuccessFactors OData V2 and SOAP Adapters
-
-
 
 </td>
 <td valign="top">
@@ -5708,21 +4322,15 @@ See: [Configure SuccessFactors OData V2 Receiver Adapter](../Development/configu
 
 [Configure Communication Channel with SuccessFactors \(SOAP\) Adapter](../Development/successfactors-soap-adapter-28b29d6.md).
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -5731,49 +4339,35 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
 
-
-
 </td>
 <td valign="top">
 
 Neo
-
-
 
 </td>
 <td valign="top">
 
 ProcessDirect Adapter
 
-
-
 </td>
 <td valign="top">
 
 Now it is not mandatory to configure a payload body between a *Timer* and a *ProcessDirect* receiver adapter. This functionality is made available from *ProcessDirect* adapter 1.1 version onwards.
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -5782,28 +4376,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Twitter Adapter
-
-
 
 </td>
 <td valign="top">
@@ -5812,21 +4398,15 @@ If your retweet contains 280 characters, then the adapter fetches the entire twe
 
 See: [Twitter Receiver Adapter](../Development/twitter-receiver-adapter-453c174.md).
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -5835,28 +4415,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Integration Flow Editor
-
-
 
 </td>
 <td valign="top">
@@ -5865,21 +4437,15 @@ You can find the **Unsaved Changes** text appearing under the name of an integra
 
 See: [New and Improved Integration Flow Editor for SAP Cloud Integration](../Development/overview-of-integration-flow-editor-db10beb.md).
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -5888,28 +4454,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Integration Flow Editor
-
-
 
 </td>
 <td valign="top">
@@ -5918,21 +4476,15 @@ You can now copy and paste the adapter configurations in an integration flow.
 
 See: [New and Improved Integration Flow Editor for SAP Cloud Integration](../Development/overview-of-integration-flow-editor-db10beb.md).
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -5941,28 +4493,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Content Modifier
-
-
 
 </td>
 <td valign="top">
@@ -5971,21 +4515,15 @@ You can now set the type as Expression or Constant for a payload in a message bo
 
 See: [Define Content Modifier](../Development/define-content-modifier-8f04a70.md).
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -5994,28 +4532,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 OData Receiver Adapter V4
-
-
 
 </td>
 <td valign="top">
@@ -6024,21 +4554,15 @@ You can now define a new version of the OData receiver adapter in an Integration
 
 See: [Configure OData Receiver Adapter V4](../Development/configure-the-odata-v4-receiver-adapter-cd66a12.md).
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -6047,28 +4571,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 OData Receiver Adapter V2
-
-
 
 </td>
 <td valign="top">
@@ -6077,21 +4593,15 @@ You can now enable/disable the CSRF protected option of your OData receiver V2 a
 
 See: [Configure OData Receiver Adapter V2](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md).
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -6100,28 +4610,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Invoking an OData API 
-
-
 
 </td>
 <td valign="top">
@@ -6130,21 +4632,15 @@ You can now invoke an active OData APIOData API from your calling application.
 
 See: [Invoking an OData API](../Development/invoking-an-odata-api-0174c4a.md).
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -6153,28 +4649,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Creating Message Mapping
-
-
 
 </td>
 <td valign="top">
@@ -6183,21 +4671,15 @@ You can now add external reference to WSDL and Schema in Message Mapping.
 
 See: [Creating Message Mapping](../Development/creating-message-mapping-as-a-flow-step-3d5cb7f.md).
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -6206,28 +4688,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 PKCS\#7/CMS Signer, PKCS\#7/CMS Encryptor
-
-
 
 </td>
 <td valign="top">
@@ -6236,21 +4710,15 @@ You can now use headers and exchange properties to dynamically configure the *Pr
 
 See: [Sign the Message Content with PKCS\#7/CMS Signer](../Development/sign-the-message-content-with-pkcs-7-cms-signer-cc09e03.md), [Encrypt and Sign the Message Content with PKCS\#7/CMS Encryptor](../Development/encrypt-and-sign-the-message-content-with-pkcs-7-cms-encryptor-21fd211.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>
@@ -6259,28 +4727,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Data Store Operations
-
-
 
 </td>
 <td valign="top">
@@ -6289,21 +4749,15 @@ You can now use exchange properties to dynamically define the *Data Store Name* 
 
 See: [Define Data Store Select Operations](../Development/define-data-store-select-operations-8cfe004.md), [Define Data Store Write Operations](../Development/define-data-store-write-operations-46260ee.md), [Define Data Store Get Operations](../Development/define-data-store-get-operations-232ac46.md), [Define Data Store Delete Operations](../Development/define-data-store-delete-operations-5efa3ac.md)
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2019-01-07
-
-
 
 </td>
 </tr>

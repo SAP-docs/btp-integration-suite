@@ -28,8 +28,6 @@ Resources on a tenant are limited, as you can see in the following table showing
 
 Management Node
 
-
-
 </td>
 <td valign="top">
 
@@ -48,8 +46,6 @@ Management Node
 <td valign="top">
 
 Runtime/Worker Node
-
-
 
 </td>
 <td valign="top">
@@ -72,8 +68,6 @@ Runtime/Worker Node
 
 Database
 
-
-
 </td>
 <td valign="top">
 
@@ -90,8 +84,6 @@ Database
 <td valign="top">
 
 Message Broker
-
-
 
 </td>
 <td valign="top">
@@ -124,21 +116,15 @@ SAP Cloud Integration uses Apache Camel as an integration bus for message proces
 
 Processing Step
 
-
-
 </th>
 <th valign="top">
 
 CPU
 
-
-
 </th>
 <th valign="top">
 
 RAM
-
-
 
 </th>
 </tr>
@@ -147,21 +133,15 @@ RAM
 
 Mapping components including message mapping, operation mapping, and XSLT mapping
 
-
-
 </td>
 <td valign="top">
 
 X
 
-
-
 </td>
 <td valign="top">
 
 X
-
-
 
 </td>
 </tr>
@@ -170,21 +150,15 @@ X
 
 Security components, including decryptor, encryptor, signer, and verifier
 
-
-
 </td>
 <td valign="top">
 
 X
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -193,21 +167,15 @@ X
 
 Components with XPath operations like content modifier, splitter, and filter
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 X
-
-
 
 </td>
 </tr>
@@ -216,21 +184,15 @@ X
 
 Validating components including XML validator and adapters like SOAP adapter performing a validation of the message syntax
 
-
-
 </td>
 <td valign="top">
 
 X
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -239,21 +201,15 @@ X
 
 Transforming components like content converter, encoder, decoder, filter and message digest
 
-
-
 </td>
 <td valign="top">
 
 X
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>

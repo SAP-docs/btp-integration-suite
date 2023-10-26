@@ -28,15 +28,11 @@
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -44,15 +40,11 @@
     <td valign="top">
     
     *Plan* 
-
-
     
     </td>
     <td valign="top">
     
     default
-
-
     
     </td>
     </tr>
@@ -60,15 +52,11 @@
     <td valign="top">
     
     *Runtime Environment* 
-
-
     
     </td>
     <td valign="top">
     
     You can choose any environment \(for example cloudfoundry/kyma/Kubernetes etc\)
-
-
     
     </td>
     </tr>
@@ -76,15 +64,11 @@
     <td valign="top">
     
     *Space* 
-
-
     
     </td>
     <td valign="top">
     
     Select a space \(for example *dev*\).
-
-
     
     </td>
     </tr>
@@ -92,15 +76,11 @@
     <td valign="top">
     
     *Instance Name* 
-
-
     
     </td>
     <td valign="top">
     
     Enter a meaningful short name.
-
-
     
     </td>
     </tr>
@@ -141,15 +121,11 @@ With this step, you create a service key for the instance.
     <th valign="top">
 
     Key
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -157,15 +133,11 @@ With this step, you create a service key for the instance.
     <td valign="top">
     
     *entities* 
-
-
     
     </td>
     <td valign="top">
     
     Base URL for accessing API’s.
-
-
     
     </td>
     </tr>
@@ -173,15 +145,11 @@ With this step, you create a service key for the instance.
     <td valign="top">
     
     *clientid* 
-
-
     
     </td>
     <td valign="top">
     
     clientid to be used as credential when requesting the access token from the token server.
-
-
     
     </td>
     </tr>
@@ -189,15 +157,11 @@ With this step, you create a service key for the instance.
     <td valign="top">
     
     *clientsecret* 
-
-
     
     </td>
     <td valign="top">
     
     clientsecret to be used as password when requesting the access token from the token server.
-
-
     
     </td>
     </tr>
@@ -205,15 +169,11 @@ With this step, you create a service key for the instance.
     <td valign="top">
     
     *url* 
-
-
     
     </td>
     <td valign="top">
     
     URL of token server that issues the access token. Append “/oauth/token” in the url to request for token.
-
-
     
     </td>
     </tr>

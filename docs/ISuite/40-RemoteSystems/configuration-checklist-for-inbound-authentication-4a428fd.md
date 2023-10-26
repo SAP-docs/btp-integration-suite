@@ -21,21 +21,15 @@ The following tables provide a summary of the configuration settings for the ava
 
  
 
-
-
 </th>
 <th valign="top" colspan="3">
 
 Service Instance
 
-
-
 </th>
 <th valign="top" colspan="4">
 
 Service Key
-
-
 
 </th>
 </tr>
@@ -44,56 +38,40 @@ Service Key
 
 Authentication Option
 
-
-
 </th>
 <th valign="top">
 
 Plan
-
-
 
 </th>
 <th valign="top">
 
 Roles
 
-
-
 </th>
 <th valign="top">
 
 Grant-types
-
-
 
 </th>
 <th valign="top">
 
 Key Type
 
-
-
 </th>
 <th valign="top">
 
 External Certificate
-
-
 
 </th>
 <th valign="top">
 
 Validity
 
-
-
 </th>
 <th valign="top">
 
 Key Size
-
-
 
 </th>
 </tr>
@@ -106,56 +84,40 @@ Using SAP certificate
 
 See: [Client Certificate Authentication for Integration Flow Processing](client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
 
-
-
 </td>
 <td valign="top" rowspan="6">
 
 *integration-flow* 
-
-
 
 </td>
 <td valign="top" rowspan="6">
 
 Keep standard role `ESBMessaging.send` or use one or more custom roles.
 
-
-
 </td>
 <td valign="top" rowspan="6">
 
 *Client Credentials* 
-
-
 
 </td>
 <td valign="top">
 
 *Certificate* 
 
-
-
 </td>
 <td valign="top">
 
 n.a.
-
-
 
 </td>
 <td valign="top">
 
 Specify validity in days.
 
-
-
 </td>
 <td valign="top">
 
 Specify key size.
-
-
 
 </td>
 </tr>
@@ -168,35 +130,25 @@ Using own \(external\) certificate
 
 See: [Client Certificate Authentication for Integration Flow Processing](client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
 
-
-
 </td>
 <td valign="top">
 
 *External Certificate* 
-
-
 
 </td>
 <td valign="top">
 
 Add PEM-encoded X.509 certificate.
 
-
-
 </td>
 <td valign="top">
 
 n.a.
 
-
-
 </td>
 <td valign="top">
 
 n.a.
-
-
 
 </td>
 </tr>
@@ -209,35 +161,25 @@ Using clientId and clientsecret to authenticate against token server
 
 See: [OAuth with Client Credentials Grant for Integration Flow Processing](oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md)
 
-
-
 </td>
 <td valign="top">
 
 *ClientId/Secret* 
 
+</td>
+<td valign="top">
 
+n.a.
 
 </td>
 <td valign="top">
 
 n.a.
 
-
-
 </td>
 <td valign="top">
 
 n.a.
-
-
-
-</td>
-<td valign="top">
-
-n.a.
-
-
 
 </td>
 </tr>
@@ -250,35 +192,25 @@ Using SAP certificate to authenticate against token server
 
 See: [OAuth with Client Credentials Grant for Integration Flow Processing](oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md)
 
-
-
 </td>
 <td valign="top">
 
 *Certificate* 
-
-
 
 </td>
 <td valign="top">
 
 n.a.
 
-
-
 </td>
 <td valign="top">
 
 Specify validity in days.
 
-
-
 </td>
 <td valign="top">
 
 Specify key size.
-
-
 
 </td>
 </tr>
@@ -291,35 +223,25 @@ Using own certificate to authenticate against token server
 
 See: [OAuth with Client Credentials Grant for Integration Flow Processing](oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md)
 
-
-
 </td>
 <td valign="top">
 
 *External Certificate* 
-
-
 
 </td>
 <td valign="top">
 
 Add PEM-encoded X.509 certificate.
 
-
-
 </td>
 <td valign="top">
 
 n.a.
 
-
-
 </td>
 <td valign="top">
 
 n.a.
-
-
 
 </td>
 </tr>
@@ -332,35 +254,25 @@ With clientId and clientsecret
 
 See: [Basic Authentication with clientId and clientsecret for Integration Flow Processing](basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 
-
-
 </td>
 <td valign="top">
 
 *ClientId/Secret* 
 
+</td>
+<td valign="top">
 
+n.a.
 
 </td>
 <td valign="top">
 
 n.a.
 
-
-
 </td>
 <td valign="top">
 
 n.a.
-
-
-
-</td>
-<td valign="top">
-
-n.a.
-
-
 
 </td>
 </tr>
@@ -373,14 +285,10 @@ With IdP user
 
 See: [Basic Authentication of IdP User for Integration Flow Processing](basic-authentication-of-idp-user-for-integration-flow-processing-5d46e56.md)
 
-
-
 </td>
 <td valign="top" colspan="7">
 
 n.a.
-
-
 
 </td>
 </tr>
@@ -395,21 +303,15 @@ n.a.
 
  
 
-
-
 </th>
 <th valign="top" colspan="3">
 
 Service Instance
 
-
-
 </th>
 <th valign="top" colspan="4">
 
 Service Key
-
-
 
 </th>
 </tr>
@@ -418,56 +320,40 @@ Service Key
 
 Authentication Option
 
-
-
 </th>
 <th valign="top">
 
 Plan
-
-
 
 </th>
 <th valign="top">
 
 Roles
 
-
-
 </th>
 <th valign="top">
 
 Grant-types
-
-
 
 </th>
 <th valign="top">
 
 Key Type
 
-
-
 </th>
 <th valign="top">
 
 External Certificate
-
-
 
 </th>
 <th valign="top">
 
 Validity
 
-
-
 </th>
 <th valign="top">
 
 Key Size
-
-
 
 </th>
 </tr>
@@ -480,56 +366,40 @@ Using SAP certificate
 
 See: [Client Certificate Authentication for API Clients](client-certificate-authentication-for-api-clients-d9ca0ac.md)
 
-
-
 </td>
 <td valign="top" rowspan="5">
 
 *api* 
-
-
 
 </td>
 <td valign="top" rowspan="5">
 
 Role as described at [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right: 
 
-
-
 </td>
 <td valign="top" rowspan="5">
 
 *Client Credentials* 
-
-
 
 </td>
 <td valign="top">
 
 *Certificate* 
 
-
-
 </td>
 <td valign="top">
 
 n.a.
-
-
 
 </td>
 <td valign="top">
 
 Specify validity in days.
 
-
-
 </td>
 <td valign="top">
 
 Specify key size.
-
-
 
 </td>
 </tr>
@@ -542,35 +412,25 @@ Using own \(external\) certificate
 
 See: [Client Certificate Authentication for API Clients](client-certificate-authentication-for-api-clients-d9ca0ac.md)
 
-
-
 </td>
 <td valign="top">
 
 *External Certificate* 
-
-
 
 </td>
 <td valign="top">
 
 Add PEM-encoded X.509 certificate.
 
-
-
 </td>
 <td valign="top">
 
 n.a.
 
-
-
 </td>
 <td valign="top">
 
 n.a.
-
-
 
 </td>
 </tr>
@@ -583,35 +443,25 @@ Using clientId and clientsecret to authenticate against token server
 
 See: [OAuth with Client Credentials Grant for API Clients](oauth-with-client-credentials-grant-for-api-clients-20e26a8.md)
 
-
-
 </td>
 <td valign="top">
 
 *ClientId/Secret* 
 
+</td>
+<td valign="top">
 
+n.a.
 
 </td>
 <td valign="top">
 
 n.a.
 
-
-
 </td>
 <td valign="top">
 
 n.a.
-
-
-
-</td>
-<td valign="top">
-
-n.a.
-
-
 
 </td>
 </tr>
@@ -624,35 +474,25 @@ Using SAP certificate to authenticate against token server
 
 See: [OAuth with Client Credentials Grant for API Clients](oauth-with-client-credentials-grant-for-api-clients-20e26a8.md)
 
-
-
 </td>
 <td valign="top">
 
 *Certificate* 
-
-
 
 </td>
 <td valign="top">
 
 n.a.
 
-
-
 </td>
 <td valign="top">
 
 Specify validity in days.
 
-
-
 </td>
 <td valign="top">
 
 Specify key size.
-
-
 
 </td>
 </tr>
@@ -665,35 +505,25 @@ Using own certificate to authenticate against token server
 
 See: [OAuth with Client Credentials Grant for API Clients](oauth-with-client-credentials-grant-for-api-clients-20e26a8.md)
 
-
-
 </td>
 <td valign="top">
 
 *External Certificate* 
-
-
 
 </td>
 <td valign="top">
 
 Add PEM-encoded X.509 certificate.
 
-
-
 </td>
 <td valign="top">
 
 n.a.
 
-
-
 </td>
 <td valign="top">
 
 n.a.
-
-
 
 </td>
 </tr>
@@ -706,14 +536,10 @@ With IdP user
 
 See: [Basic Authentication of an IdP User for API Clients](basic-authentication-of-an-idp-user-for-api-clients-57f104d.md)
 
-
-
 </td>
 <td valign="top" colspan="7">
 
 n.a.
-
-
 
 </td>
 </tr>
@@ -733,14 +559,10 @@ n.a.
 > 
 > Option
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Summary of Steps
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -749,8 +571,6 @@ n.a.
 > 
 > Basic authentication of a user registered at an identity provider \(IdP\)
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
@@ -758,16 +578,12 @@ n.a.
 > 
 > See: [Basic Authentication of IdP User for Integration Flow Processing](basic-authentication-of-idp-user-for-integration-flow-processing-5d46e56.md)
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
 > <td valign="top">
 > 
 > Authentication with an OAuth client \(service instance\)
-> 
-> 
 > 
 > </td>
 > <td valign="top">
@@ -784,12 +600,9 @@ n.a.
 > 
 > -   [Basic Authentication with clientId and clientsecret for Integration Flow Processing](basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 > 
-> 
-> [Basic Authentication with clientId and clientsecret for Integration Flow Processing](basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
-> 
-> [Client Certificate Authentication for Integration Flow Processing](client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
-> 
-> [OAuth with Client Credentials Grant for Integration Flow Processing](oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md)
+> -   [Basic Authentication with clientId and clientsecret for Integration Flow Processing](basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
+> -   [Client Certificate Authentication for Integration Flow Processing](client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
+> -   [OAuth with Client Credentials Grant for Integration Flow Processing](oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md)
 > 
 > 
 > 

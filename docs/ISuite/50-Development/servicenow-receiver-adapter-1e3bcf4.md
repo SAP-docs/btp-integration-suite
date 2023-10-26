@@ -40,14 +40,10 @@ The General tab shows general information such as the adapter type, its directio
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -56,14 +52,10 @@ Description
 
 *Address*
 
-
-
 </td>
 <td valign="top">
 
 Specify the recipient's endpoint URL, the ServiceNow login base URL, for user authentication. This value can also be specified dynamically. Example: https://dev12345.service-now.com
-
-
 
 </td>
 </tr>
@@ -71,8 +63,6 @@ Specify the recipient's endpoint URL, the ServiceNow login base URL, for user au
 <td valign="top">
 
 *Authentication*
-
-
 
 </td>
 <td valign="top">
@@ -91,14 +81,10 @@ Select the authentication mechanism to be used while connecting to ServiceNow. I
 
 *Credential Name*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the **User Credentials** artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to ServiceNow. This property enables the system to fetch the User Credential security material deployed in your Cloud Integration tenant.
-
-
 
 </td>
 </tr>
@@ -109,14 +95,10 @@ Specify the name of the **User Credentials** artifact that contains the cred
 
 \(Only if you select the Authentication OAuth2 Client Credentials\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the alias to the security material that contains the Client ID for the endpoint.
-
-
 
 </td>
 </tr>
@@ -127,14 +109,10 @@ Specify the alias to the security material that contains the Client ID for the e
 
 \(Only if you select the Authentication OAuth2 Client Credentials\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the alias to the security material that contains the Client Secret for the endpoint.
-
-
 
 </td>
 </tr>
@@ -149,14 +127,10 @@ Specify the alias to the security material that contains the Client Secret for t
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -164,8 +138,6 @@ Description
 <td valign="top">
 
 *API Version*
-
-
 
 </td>
 <td valign="top">
@@ -184,8 +156,6 @@ Specify the version of the API to be used for calling the ServiceNow. Select one
 <td valign="top">
 
 *Operation*
-
-
 
 </td>
 <td valign="top">
@@ -216,14 +186,10 @@ To access and exchange data with ServiceNow, you can choose among the following 
 
 *Table Name*
 
-
-
 </td>
 <td valign="top">
 
 Specify the technical name of the ServiceNow table. Example: incident.
-
-
 
 </td>
 </tr>
@@ -234,14 +200,10 @@ Specify the technical name of the ServiceNow table. Example: incident.
 
 \(only if update, modify, delete, or Get Object by ID operation is used\)
 
-
-
 </td>
 <td valign="top">
 
 The unique ID of the record. Specifies the unique ID that represents the instance of the record that you specified in the Table Name field. Also known as sys\_id in ServiceNow.
-
-
 
 </td>
 </tr>
@@ -250,14 +212,10 @@ The unique ID of the record. Specifies the unique ID that represents the instanc
 
 *Display Value*
 
-
-
 </td>
 <td valign="top">
 
 Select if the response returned by ServiceNow should be in display, actual values, or both forms.
-
-
 
 </td>
 </tr>
@@ -266,14 +224,10 @@ Select if the response returned by ServiceNow should be in display, actual value
 
 *Access Data Across Domains*
 
-
-
 </td>
 <td valign="top">
 
 Select if data should be accessed across domains or not.
-
-
 
 </td>
 </tr>
@@ -282,14 +236,10 @@ Select if data should be accessed across domains or not.
 
 *Response Fields*
 
-
-
 </td>
 <td valign="top">
 
 Specify the fields or properties to be returned in the ServiceNow response. Use comma to separate multiple fields.
-
-
 
 </td>
 </tr>
@@ -300,14 +250,10 @@ Specify the fields or properties to be returned in the ServiceNow response. Use 
 
 \(only if you enable for the operation Query or Query Advanced\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the limit to be applied on pagination. The default value is 1000.
-
-
 
 </td>
 </tr>
@@ -318,14 +264,10 @@ Specify the limit to be applied on pagination. The default value is 1000.
 
 \(only if you enable for the operation Query or Query Advanced\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the offset to be applied on pagination. The default value is 0.
-
-
 
 </td>
 </tr>
@@ -333,8 +275,6 @@ Specify the offset to be applied on pagination. The default value is 0.
 <td valign="top">
 
 *Render Response for*
-
-
 
 </td>
 <td valign="top">
@@ -347,8 +287,6 @@ Select if the response should be rendered according to the specified UI view \(o
 
 The default value is set to Both.
 
-
-
 </td>
 </tr>
 <tr>
@@ -356,14 +294,10 @@ The default value is set to Both.
 
 *Suppress System Fields Auto Generation*
 
-
-
 </td>
 <td valign="top">
 
 Select to suppress the auto-generation of system fields. The default value is false.
-
-
 
 </td>
 </tr>
@@ -374,14 +308,10 @@ Select to suppress the auto-generation of system fields. The default value is fa
 
 \(only if you enable for the operation Query or Query Advanced\)
 
-
-
 </td>
 <td valign="top">
 
 Select to remove the Link header from the response. The Link header allows you to request additional pages of data when the number of records matching your query exceeds the query limit.
-
-
 
 </td>
 </tr>
@@ -390,14 +320,10 @@ Select to remove the Link header from the response. The Link header allows you t
 
 *Display Raw Value*
 
-
-
 </td>
 <td valign="top">
 
 Select to make ServiceNow return raw values in its response.
-
-
 
 </td>
 </tr>
@@ -406,14 +332,10 @@ Select to make ServiceNow return raw values in its response.
 
 *Exclude Reference Link*
 
-
-
 </td>
 <td valign="top">
 
 Select to suppress and remove additional information provided for reference fields. These references include URI to other resources.
-
-
 
 </td>
 </tr>
@@ -424,14 +346,10 @@ Select to suppress and remove additional information provided for reference fiel
 
 \(only if you enable for the operation Query or Query Advanced\)
 
-
-
 </td>
 <td valign="top">
 
 Select to execute a select count\(\*\) on the table. Note that by default count is unchecked.
-
-
 
 </td>
 </tr>
@@ -442,14 +360,10 @@ Select to execute a select count\(\*\) on the table. Note that by default count 
 
 \(Only if the Query Advanced operation is used\)
 
-
-
 </td>
 <td valign="top">
 
 Specify a query to represent a complex filter on a list of records manually. Example: unit\_name=day^ORDERBYvalue.
-
-
 
 </td>
 </tr>
@@ -457,8 +371,6 @@ Specify a query to represent a complex filter on a list of records manually. Exa
 <td valign="top" colspan="2">
 
 FORMAT
-
-
 
 </td>
 </tr>
@@ -468,8 +380,6 @@ FORMAT
 *Request*
 
 \(Only if the Delete, Create, Update, or Modify operation is used\)
-
-
 
 </td>
 <td valign="top">
@@ -482,8 +392,6 @@ Select the format of the request message toward ServiceNow. Possible values incl
 
 The default value is Application/XML.
 
-
-
 </td>
 </tr>
 <tr>
@@ -492,8 +400,6 @@ The default value is Application/XML.
 *Response*
 
 \(Only if the Delete, Create, Update, or Modify operation is used\)
-
-
 
 </td>
 <td valign="top">
@@ -506,16 +412,12 @@ Select the format of the response message to be returned by ServiceNow. Possible
 
 The default value is Application/XML.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" colspan="2">
 
 HEADER PARAMETERS
-
-
 
 </td>
 </tr>
@@ -524,14 +426,10 @@ HEADER PARAMETERS
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the header Parameter.
-
-
 
 </td>
 </tr>
@@ -540,14 +438,10 @@ Specify the name of the header Parameter.
 
 *Value*
 
-
-
 </td>
 <td valign="top">
 
 Specify the value of the header Parameter.
-
-
 
 </td>
 </tr>
@@ -556,8 +450,6 @@ Specify the value of the header Parameter.
 
 FILTERS
 
-
-
 </td>
 </tr>
 <tr>
@@ -565,14 +457,10 @@ FILTERS
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Query Strings to be used for filtering the data to be returned by the ServiceNow Service.
-
-
 
 </td>
 </tr>
@@ -580,8 +468,6 @@ Specify the name of the Query Strings to be used for filtering the data to be re
 <td valign="top">
 
 *Function*
-
-
 
 </td>
 <td valign="top">
@@ -616,8 +502,6 @@ Specify the function to be used for your filter. Several functions are provided:
 
 The default value for this field is Equal.
 
-
-
 </td>
 </tr>
 <tr>
@@ -625,14 +509,10 @@ The default value for this field is Equal.
 
 *Value*
 
-
-
 </td>
 <td valign="top">
 
 Specify the value of the Query Strings.
-
-
 
 </td>
 </tr>
@@ -640,8 +520,6 @@ Specify the value of the Query Strings.
 <td valign="top">
 
 *Condition*
-
-
 
 </td>
 <td valign="top">
@@ -653,16 +531,12 @@ In case multiple filters need to be used, select the condition to be used for jo
 
 The default value is OR.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" colspan="2">
 
 QUERY PARAMETERS
-
-
 
 </td>
 </tr>
@@ -671,14 +545,10 @@ QUERY PARAMETERS
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Query Parameter.
-
-
 
 </td>
 </tr>
@@ -687,14 +557,10 @@ Specify the name of the Query Parameter.
 
 *Value*
 
-
-
 </td>
 <td valign="top">
 
 Specify the value of the Query Parameter.
-
-
 
 </td>
 </tr>
@@ -703,8 +569,6 @@ Specify the value of the Query Parameter.
 
 ORDER BY
 
-
-
 </td>
 </tr>
 <tr>
@@ -712,14 +576,10 @@ ORDER BY
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the field to be used for sorting the results.
-
-
 
 </td>
 </tr>
@@ -727,8 +587,6 @@ Specify the name of the field to be used for sorting the results.
 <td valign="top">
 
 *Type*
-
-
 
 </td>
 <td valign="top">
@@ -739,8 +597,6 @@ Specify if the result needs to be sorted using the ascending or descending order
 -   Descending
 
 The default value is Ascending.
-
-
 
 </td>
 </tr>

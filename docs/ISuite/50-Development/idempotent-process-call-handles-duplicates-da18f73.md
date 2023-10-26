@@ -30,14 +30,10 @@ At the end of the main integration process, an *Idempotent Process Call* step se
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -46,14 +42,10 @@ Setting
 
 Message ID
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SapMessageIdEx\}
-
-
 
 </td>
 </tr>
@@ -62,14 +54,10 @@ $\{header.SapMessageIdEx\}
 
 Skip Process Call for Duplicates
 
-
-
 </td>
 <td valign="top">
 
 Selected
-
-
 
 </td>
 </tr>
@@ -95,15 +83,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -111,15 +95,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     `OWN`
-
-
     
     </td>
     </tr>
@@ -127,15 +107,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *User*
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -143,15 +119,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Password*
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

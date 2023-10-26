@@ -15,14 +15,10 @@ Create a new **Destination** pointing to the CMS System. Fill in the properties 
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Value or Description
-
-
 
 </th>
 </tr>
@@ -30,8 +26,6 @@ Value or Description
 <td valign="top">
 
 *Name*
-
-
 
 </td>
 <td valign="top">
@@ -50,14 +44,10 @@ CloudIntegration\_LogArchive
 
 *Type*
 
-
-
 </td>
 <td valign="top">
 
 Type of protocol must be HTTP.
-
-
 
 </td>
 </tr>
@@ -66,14 +56,10 @@ Type of protocol must be HTTP.
 
 *Description*
 
-
-
 </td>
 <td valign="top">
 
 Description of the destination
-
-
 
 </td>
 </tr>
@@ -81,8 +67,6 @@ Description of the destination
 <td valign="top">
 
 *URL*
-
-
 
 </td>
 <td valign="top">
@@ -112,8 +96,6 @@ The required protocol in the URL is HTTP. This protocol isn't a security risk, a
 
 *Proxy Type*
 
-
-
 </td>
 <td valign="top">
 
@@ -135,8 +117,6 @@ The required protocol in the URL is HTTP. This protocol isn't a security risk, a
 
 *Authentication*
 
-
-
 </td>
 <td valign="top">
 
@@ -153,8 +133,6 @@ BasicAuthentication or OAuth2ClientCredentials
 <td valign="top">
 
 *User*
-
-
 
 </td>
 <td valign="top">
@@ -175,14 +153,10 @@ The user authorized for the CMS repository for BasicAuthentication. The user who
 
 *Password*
 
-
-
 </td>
 <td valign="top">
 
 The user's password for BasicAuthentication.
-
-
 
 </td>
 </tr>
@@ -191,14 +165,10 @@ The user's password for BasicAuthentication.
 
 *Client ID*
 
-
-
 </td>
 <td valign="top">
 
 Client ID for the OAuth2ClientCredentials authentication
-
-
 
 </td>
 </tr>
@@ -207,14 +177,10 @@ Client ID for the OAuth2ClientCredentials authentication
 
 *Client Secret*
 
-
-
 </td>
 <td valign="top">
 
 Client Secret for the OAuth2ClientCredentials authentication without mTLS \(mutual TLS\).
-
-
 
 </td>
 </tr>
@@ -223,14 +189,10 @@ Client Secret for the OAuth2ClientCredentials authentication without mTLS \(mutu
 
 *Use mTLS for Token Retrieval*
 
-
-
 </td>
 <td valign="top">
 
 Select the checkbox, if you want to use mTLS \(mutual TLS\) for Oauth2ClientCredentials authentication. This is only applicable for proxy type `Internet`
-
-
 
 </td>
 </tr>
@@ -238,8 +200,6 @@ Select the checkbox, if you want to use mTLS \(mutual TLS\) for Oauth2ClientCred
 <td valign="top">
 
 *Token Service Key Store Location*
-
-
 
 </td>
 <td valign="top">
@@ -257,8 +217,6 @@ The keystore has to meet the following requirements:
 
 After updloading the keystore, enter a name by selecting it from the dropdown list.
 
-
-
 </td>
 </tr>
 <tr>
@@ -266,14 +224,10 @@ After updloading the keystore, enter a name by selecting it from the dropdown li
 
 *Token Service Key Store Password*
 
-
-
 </td>
 <td valign="top">
 
 Password for the keystore and the key pair contained in the keystore when using Oauth2ClientCredentials with mTLS.
-
-
 
 </td>
 </tr>
@@ -282,14 +236,10 @@ Password for the keystore and the key pair contained in the keystore when using 
 
 *Token Service URL Type*
 
-
-
 </td>
 <td valign="top">
 
 You can use both values `Dedicated` and `Common` for OAuth2ClientCredentials authentication.
-
-
 
 </td>
 </tr>
@@ -298,16 +248,12 @@ You can use both values `Dedicated` and `Common` for OAuth2ClientCredentials aut
 
 *Token Service URL*
 
-
-
 </td>
 <td valign="top">
 
 The authentication URL grants the Oauth token for OAuth2ClientCredentials authentication.
 
 For the proxy-type `OnPremise`, you can only specify a URL with the http protocol. It seems to be a security risk, and is inconvenient if your URL uses the https protocol. But internally, we replace "http" with "https" in the URL used to call the token. We assume a URL with https for the proxy-type `OnPremise` and authentication type `OAuth2ClientCredentials` in a URL specified with http. For example: if you call the URL "**http**://xxx" in the destination, it's internally replaced by "**https:**://xxx".
-
-
 
 </td>
 </tr>
@@ -316,14 +262,10 @@ For the proxy-type `OnPremise`, you can only specify a URL with the http protoco
 
 *Token Service User*
 
-
-
 </td>
 <td valign="top">
 
 This value can be left empty. \(We don't use it yet\)
-
-
 
 </td>
 </tr>
@@ -332,14 +274,10 @@ This value can be left empty. \(We don't use it yet\)
 
 *Token Service Password*
 
-
-
 </td>
 <td valign="top">
 
 This value can be left empty. \(We don't use it yet\)
-
-
 
 </td>
 </tr>
@@ -352,14 +290,10 @@ This value can be left empty. \(We don't use it yet\)
 
 Additional Properties
 
-
-
 </th>
 <th valign="top">
 
 Value or Description
-
-
 
 </th>
 </tr>
@@ -367,8 +301,6 @@ Value or Description
 <td valign="top">
 
 `ArchiveCompletedMessagesOnly` \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -391,8 +323,6 @@ All archiving relevant MPLs are archived, except MPLs with status DISCARDED.
 
 `BindingType` \(optional\)
 
-
-
 </td>
 <td valign="top">
 
@@ -402,16 +332,12 @@ In this case, specify `AtomPub` as parameter value and ensure that the URL prope
 
 If you use `AtomPub-Binding`, the `AtomPub` URL must be displayed as an accessible resource in the SAP Cloud Connector configuration.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `ClientCompression` \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -422,16 +348,12 @@ Before activating this parameter, check if your repository can handle compressed
 
 We recommend using this parameter only if the performance observed, isn't acceptable for your usage scenario.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `ConnectTimeout` \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -447,16 +369,12 @@ The value is a positive whole number and specifies the timeout in milliseconds.
 
 Use this parameter if you observe frequent failures during testing because the timeout value being too low, or if the requests take too long to time out.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `CookiesForAuthentication` \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -467,16 +385,12 @@ This action improves the application performance, but doesn't apply to all repos
 
 We recommend using this parameter only if the performance observed, isn't acceptable for your usage scenario.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `CustomAttributeAndTypeNamesMapping` \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -513,16 +427,12 @@ The keys in the JSON are the names as provided by SAP, the values are the names 
 
 The name of the type you create is the value of `mpl:message` in the JSON. In the sample code, the type name is `sapcpi_mpl_message`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `DirectConnection` \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -545,8 +455,6 @@ If the parameter value is set to `false` or `FALSE` , the system creates a list 
 
 `PathPrefix` \(optional\)
 
-
-
 </td>
 <td valign="top">
 
@@ -556,16 +464,12 @@ Use the `PathPrefix` parameter if you want to create the archiving path in a spe
 
 If you don't create the folder under the `PathPrefix` in advance, the archiving job creates this folder, provided the user-defined in the destination has the required permissions to create the path specified in the `PathPrefix` parameter.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `ReadTimeout` \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -581,16 +485,12 @@ The value is a positive whole number and specifies the timeout in milliseconds.
 
 Use this parameter if you observe frequent failures during testing because the timeout value being too low, or if the requests take too long to time out.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `RepositoryId`
-
-
 
 </td>
 <td valign="top">
@@ -599,16 +499,12 @@ ID of the CMS Repository.
 
 Specify the repository Id and **not** the repository name.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `ResponseCompression` \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -618,8 +514,6 @@ If you set this parameter value to `true` or `TRUE`, your CMIS client requests t
 Before activating this parameter, check if your repository supports response compression.
 
 We recommend using this parameter only if the performance observed, isn't acceptable for your usage scenario.
-
-
 
 </td>
 </tr>

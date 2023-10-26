@@ -24,21 +24,15 @@ The level of usage is indicated by the bar height and color \(from green for low
 
 Level of Usage
 
-
-
 </th>
 <th valign="top">
 
 Bar Color
 
-
-
 </th>
 <th valign="top">
 
 Database Connection Usage
-
-
 
 </th>
 </tr>
@@ -47,21 +41,15 @@ Database Connection Usage
 
 Critical
 
-
-
 </td>
 <td valign="top">
 
 Red
 
-
-
 </td>
 <td valign="top">
 
 More than 90%
-
-
 
 </td>
 </tr>
@@ -70,21 +58,15 @@ More than 90%
 
 Warning
 
-
-
 </td>
 <td valign="top">
 
 Orange
 
-
-
 </td>
 <td valign="top">
 
 Between 70% and 90%
-
-
 
 </td>
 </tr>
@@ -93,21 +75,15 @@ Between 70% and 90%
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 Green
 
-
-
 </td>
 <td valign="top">
 
 Less than 70%
-
-
 
 </td>
 </tr>

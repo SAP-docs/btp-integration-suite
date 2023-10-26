@@ -20,7 +20,7 @@ You've created a mapping guideline \(MAG\). For more information on creating a n
 
 Once you've created a mapping guideline \(MAG\), you can edit it to change the mapping details to suit your scenario. Additionally, you can also add documentation that provides the users of the MAG with more information on its relevance.
 
-There could be scenarios where there are significant differences between the Message Implementation Guidelines such as different node hierarchies, difference in the message structure etc., that mapping in such cases get difficult. To overcome this, the application provides you with an approach that helps transform the structure of a source MIG to ensure its content can be mapped easily with the traget MIG structure. To know more, see [Pre- Transformation of a Message Implementation Guideline](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b287e5eae6e54359bd0103d0f148befb.html "Learn how to transform the structure of a Message Implementation Guideline.") :arrow_upper_right: 
+There could be scenarios where there are significant differences between the Message Implementation Guidelines such as different node hierarchies, difference in the message structure etc., that mapping in such cases get difficult. To overcome this, the application provides you with an approach that helps transform the structure of a source MIG to ensure its content can be mapped easily with the traget MIG structure. To know more, see [Pre-Transformation of a Message Implementation Guideline](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b287e5eae6e54359bd0103d0f148befb.html "Learn how to transform the structure of a Message Implementation Guideline.") :arrow_upper_right: 
 
 
 

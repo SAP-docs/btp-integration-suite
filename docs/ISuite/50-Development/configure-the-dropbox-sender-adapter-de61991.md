@@ -30,14 +30,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -46,14 +42,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the Dropbox channel.
-
-
 
 </td>
 </tr>
@@ -70,14 +62,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -86,14 +74,10 @@ Description
 
 *OAuth Credential Name* 
 
-
-
 </td>
 <td valign="top">
 
 Name of the credential artifact deployed on the tenant and used to connect to Dropbox account.
-
-
 
 </td>
 </tr>
@@ -101,8 +85,6 @@ Name of the credential artifact deployed on the tenant and used to connect to Dr
 <td valign="top">
 
 *Timeout \(in ms\)* 
-
-
 
 </td>
 <td valign="top">
@@ -112,8 +94,6 @@ Maximum waiting time \(in milliseconds\) to contact the Dropbox server while est
 Default value: `300000`
 
 SAP Cloud Integration is connected to Dropbox account trying to perform the operation for the stipulated time before throwing an error.
-
-
 
 </td>
 </tr>
@@ -130,14 +110,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -145,8 +121,6 @@ Description
 <td valign="top">
 
 *Operation* 
-
-
 
 </td>
 <td valign="top">
@@ -173,8 +147,6 @@ Select one of the following options depending on the operation to be performed i
 
 *Folder Path* \(only if *Download Archive File* is selected for *Operation*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -186,16 +158,12 @@ Examples:
 
 `id:a4ayc_80_OEAAAAAAAAAXw`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *File Path* \(only if *Download File* is selected for *Operation*\)
-
-
 
 </td>
 <td valign="top">
@@ -208,16 +176,12 @@ Examples:
 
 `id:a4ayc_80_OEAAAAAAAAAXw`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Post-Processing* \(only if *Download File* is selected for *Operation*\)
-
-
 
 </td>
 <td valign="top">
@@ -252,8 +216,6 @@ Select the action to be performed after successful processing of the file.
 <td valign="top">
 
 *Archive Directory* \(only if *Download File* is selected for *Operation* and *Move File* is selected for *Post-Processing*\)
-
-
 
 </td>
 <td valign="top">
@@ -314,14 +276,10 @@ Select the *Scheduler* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -330,14 +288,10 @@ Description
 
 *Every* 
 
-
-
 </td>
 <td valign="top">
 
 Specify a time period \(for example, every hour\) in a dedicated time window.
-
-
 
 </td>
 </tr>

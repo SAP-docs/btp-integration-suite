@@ -31,14 +31,10 @@ You use AS4 message exchange protocol to securely process incoming business docu
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -46,8 +42,6 @@ Description
 <td valign="top">
 
 *Address* 
-
-
 
 </td>
 <td valign="top">
@@ -68,14 +62,10 @@ Specify the relative endpoint of the receiving MSH. For example, `/orders`.
 
 *Agreement* 
 
-
-
 </td>
 <td valign="top">
 
 Define the message exchange pattern agreed between the MSHs. For example, `urn:fdc:peppol.eu:2017:agreements:tia:ap_provider`.
-
-
 
 </td>
 </tr>
@@ -84,16 +74,12 @@ Define the message exchange pattern agreed between the MSHs. For example, `urn:f
 
 *Authorization* 
 
-
-
 </td>
 <td valign="top">
 
 Select *User Role* if you want to authorize a user to send message based on the `ESBMessaging.send`.
 
 Select *Client Certificate* if you want to authorize a user to send message based on a certificate. If you select this option, you have to add and enter the Subject DN \(information used to authorize the sender\) and Issuer DN \(information about the Certificate Authority who issues the certificate\).
-
-
 
 </td>
 </tr>
@@ -110,14 +96,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -126,14 +108,10 @@ Description
 
 *Initiator Party: Party ID* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the ID of the initiating partner. For example, `APP_10000000100`.
-
-
 
 </td>
 </tr>
@@ -142,14 +120,10 @@ Specify the ID of the initiating partner. For example, `APP_10000000100`.
 
 *Initiator Party: Party Type* 
 
-
-
 </td>
 <td valign="top">
 
 Specify a party type to identify the initiating partner. For example, `urn:fdc:peppol.eu:2017:identifiers:ap` 
-
-
 
 </td>
 </tr>
@@ -158,14 +132,10 @@ Specify a party type to identify the initiating partner. For example, `urn:fdc:p
 
 *Initiator Party: Role* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the role of the initiating partner. For example, `http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/initiator` 
-
-
 
 </td>
 </tr>
@@ -174,14 +144,10 @@ Specify the role of the initiating partner. For example, `http://docs.oasis-open
 
 *Responder Party: Party ID* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the ID of the responding partner. For example,`APP_10000000200`.
-
-
 
 </td>
 </tr>
@@ -190,14 +156,10 @@ Specify the ID of the responding partner. For example,`APP_10000000200`.
 
 *Responder Party: Party Type* 
 
-
-
 </td>
 <td valign="top">
 
 Specify a party type to identify the responding partner. For example, `urn:fdc:peppol.eu:2017:identifiers:ap` 
-
-
 
 </td>
 </tr>
@@ -206,14 +168,10 @@ Specify a party type to identify the responding partner. For example, `urn:fdc:p
 
 *Responder Party: Role* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the role of the responding partner. For example, `p://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/responder` 
-
-
 
 </td>
 </tr>
@@ -222,14 +180,10 @@ Specify the role of the responding partner. For example, `p://docs.oasis-open.or
 
 *Service* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the process identifier of the business document. For example, `urn:www.cenbii.eu:profile:bii01:ver2.0`.
-
-
 
 </td>
 </tr>
@@ -238,14 +192,10 @@ Specify the process identifier of the business document. For example, `urn:www.c
 
 *Service Type* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the process identifier schema of the business document. For example, `cenbii-procid-ublui`.
-
-
 
 </td>
 </tr>
@@ -254,14 +204,10 @@ Specify the process identifier schema of the business document. For example, `ce
 
 *Action* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the document type identifier of the business document with the following format: `urn:www.cenbii.eu:profile:bii01:ver2.0` .
-
-
 
 </td>
 </tr>
@@ -278,14 +224,10 @@ Select the *Security* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -293,8 +235,6 @@ Description
 <td valign="top">
 
 *Verify Signature* 
-
-
 
 </td>
 <td valign="top">
@@ -320,14 +260,10 @@ Select the checkbox to ensure that the signature is verified using one of the fo
 
 *Decrypt Message* 
 
-
-
 </td>
 <td valign="top">
 
 Used to decrypt AS4 message.
-
-
 
 </td>
 </tr>
@@ -336,14 +272,10 @@ Used to decrypt AS4 message.
 
 *Private Key Alias* 
 
-
-
 </td>
 <td valign="top">
 
 Determine the private key alias to decrypt the AS4 message.
-
-
 
 </td>
 </tr>
@@ -354,14 +286,10 @@ Determine the private key alias to decrypt the AS4 message.
 
 \(only if you select *Trusted Certificate*.\)
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
 Define the public key alias or aliases to verify the signature of the AS4 message.
-
-
 
 </td>
 </tr>
@@ -371,8 +299,6 @@ Define the public key alias or aliases to verify the signature of the AS4 messag
 *Public Key Aliases*
 
 \(only if you select *Trusted Root Certificate*.\)
-
-
 
 </td>
 </tr>
@@ -389,14 +315,10 @@ Select the *Receipt* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -405,14 +327,10 @@ Description
 
 *Signing* 
 
-
-
 </td>
 <td valign="top">
 
 Ensures that the outgoing AS4 message is signed.
-
-
 
 </td>
 </tr>
@@ -423,14 +341,10 @@ Ensures that the outgoing AS4 message is signed.
 
 \(only if you select *Required* in *Signing*.\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the private key alias to sign the AS4 message.
-
-
 
 </td>
 </tr>
@@ -441,14 +355,10 @@ Specify the private key alias to sign the AS4 message.
 
 \(only if you select *Required* in *Signing*.\)
 
-
-
 </td>
 <td valign="top">
 
 Use the relevant algorithm to sign the AS4 message.
-
-
 
 </td>
 </tr>
@@ -465,14 +375,10 @@ Select the *Response* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -481,14 +387,10 @@ Description
 
 *Type* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the response type.
-
-
 
 </td>
 </tr>
@@ -497,8 +399,6 @@ Specify the response type.
 
 The following options are available only if you select *Push and Push* in *Type*.
 
-
-
 </td>
 </tr>
 <tr>
@@ -506,14 +406,10 @@ The following options are available only if you select *Push and Push* in *Type*
 
 *Target URL* 
 
-
-
 </td>
 <td valign="top">
 
 Specify receipient's URL to which the AS4 message is transmitted.
-
-
 
 </td>
 </tr>
@@ -522,14 +418,10 @@ Specify receipient's URL to which the AS4 message is transmitted.
 
 *Agreement* 
 
-
-
 </td>
 <td valign="top">
 
 Provide the message exchange pattern agreed between the MSHs. For example,`https://sbr.gov.au/agreement/Gateway/1.0/Push/PKI`.
-
-
 
 </td>
 </tr>
@@ -537,8 +429,6 @@ Provide the message exchange pattern agreed between the MSHs. For example,`https
 <td valign="top">
 
 *Authentication Type* 
-
-
 
 </td>
 <td valign="top">
@@ -577,14 +467,10 @@ There are the following options:
 
 \(only if you select *Basic Authentication*.\)
 
-
-
 </td>
 <td valign="top">
 
 Provide the alias you used while deploying basic authentication credentials.
-
-
 
 </td>
 </tr>
@@ -595,14 +481,10 @@ Provide the alias you used while deploying basic authentication credentials.
 
 \(only if you select *Client Certificate*.\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the private key alias, used to sign the incoming AS4 message.
-
-
 
 </td>
 </tr>
@@ -611,14 +493,10 @@ Specify the private key alias, used to sign the incoming AS4 message.
 
 *Compress Message* 
 
-
-
 </td>
 <td valign="top">
 
 Compresses the AS4 message.
-
-
 
 </td>
 </tr>
@@ -626,8 +504,6 @@ Compresses the AS4 message.
 <td valign="top">
 
 *WS-Security Type* 
-
-
 
 </td>
 <td valign="top">
@@ -653,14 +529,10 @@ Specify either of the folllowing WS-Security type to protect message integrity a
 
 *Private Key Alias for Signing* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the private key alias to sign the AS4 message.
-
-
 
 </td>
 </tr>
@@ -669,14 +541,10 @@ Specify the private key alias to sign the AS4 message.
 
 *Signature Algorithm* 
 
-
-
 </td>
 <td valign="top">
 
 Use the relevant algorithm to sign the AS4 message.
-
-
 
 </td>
 </tr>
@@ -687,14 +555,10 @@ Use the relevant algorithm to sign the AS4 message.
 
 \(only if you select *Sign and Encrypt Message*.\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the public key alias to sign the AS4 message.
-
-
 
 </td>
 </tr>
@@ -705,14 +569,10 @@ Specify the public key alias to sign the AS4 message.
 
 \(only if you select *Sign and Encrypt Message*.\)
 
-
-
 </td>
 <td valign="top">
 
 Select the algorithm you want to use to encrypt the payload.
-
-
 
 </td>
 </tr>
@@ -723,14 +583,10 @@ Select the algorithm you want to use to encrypt the payload.
 
 \(only if you select *Sign and Encrypt Message*.\)
 
-
-
 </td>
 <td valign="top">
 
 Select the key encryption algorithm and the system uses the related mask generation functions \(MGFs\) to encrypt the payload.
-
-
 
 </td>
 </tr>
@@ -739,14 +595,10 @@ Select the key encryption algorithm and the system uses the related mask generat
 
 *Save Receipt* 
 
-
-
 </td>
 <td valign="top">
 
 Check to save the receipt in the message store.
-
-
 
 </td>
 </tr>
@@ -763,14 +615,10 @@ Select the *Delivery Assurance* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -778,8 +626,6 @@ Description
 <td valign="top">
 
 *Quality of Service*
-
-
 
 </td>
 <td valign="top">
@@ -821,8 +667,6 @@ There are the following options:
 *Temporary Storage*
 
 \(only if as *Quality of Service* the option *Exactly Once* or *At Least Once* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -874,14 +718,10 @@ You can choose among the following storage types:
 
 \(only configurable if *Data Store* is selected
 
-
-
 </td>
 <td valign="top">
 
 Enter a value for the retry timeout of the in-progress repository.
-
-
 
 </td>
 </tr>
@@ -890,14 +730,10 @@ Enter a value for the retry timeout of the in-progress repository.
 
 *Retry Interval \(in min\)*
 
-
-
 </td>
 <td valign="top">
 
 Enter a value for the amount of time to wait before retrying message delivery.
-
-
 
 </td>
 </tr>
@@ -906,14 +742,10 @@ Enter a value for the amount of time to wait before retrying message delivery.
 
 *Exponential Backoff*
 
-
-
 </td>
 <td valign="top">
 
 Select this option to double the retry interval after each unsuccessful retry.
-
-
 
 </td>
 </tr>
@@ -924,14 +756,10 @@ Select this option to double the retry interval after each unsuccessful retry.
 
 \(only configurable when *Exponential Backoff* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 You can set an upper limit on that value to avoid an endless increase of the retry interval. The default value is 60 minutes. The minimum value is 10 minutes.
-
-
 
 </td>
 </tr>
@@ -941,8 +769,6 @@ You can set an upper limit on that value to avoid an endless increase of the ret
 *Dead-Letter Queue*
 
 \(only if as *Temporary Storage* the option *JMS Queue* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -955,8 +781,6 @@ Use this option to avoid out-of-memory situations \(caused in many cases by larg
 
 For more information, read the SAP Community blog [Cloud Integration – Configure Dead Letter Handling in JMS Adapter](https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/).
 
-
-
 </td>
 </tr>
 <tr>
@@ -964,14 +788,10 @@ For more information, read the SAP Community blog [Cloud Integration – Configu
 
 *Encrypt Message During Persistence* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option in case the messages should be stored in an encrypted way during certain processing steps.
-
-
 
 </td>
 </tr>
@@ -988,14 +808,10 @@ Select the *Conditions* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -1004,8 +820,6 @@ Description
 
 The parameters in *Maximum Message Size* allow you to set a maximum size limit for processing inbound messages. Any inbound message that exceeds the configured limit is rejected from further processing and the sender receives an error message.
 
-
-
 </td>
 </tr>
 <tr>
@@ -1013,14 +827,10 @@ The parameters in *Maximum Message Size* allow you to set a maximum size limit f
 
 *Body Size \(in MB\)* 
 
-
-
 </td>
 <td valign="top">
 
 Define the size limit for processing the message body.
-
-
 
 </td>
 </tr>
@@ -1029,14 +839,10 @@ Define the size limit for processing the message body.
 
 *Attachment Size \(in MB\)* 
 
-
-
 </td>
 <td valign="top">
 
 Define the size limit for processing the attachment.
-
-
 
 </td>
 </tr>

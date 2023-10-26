@@ -36,15 +36,11 @@ You can also enable the new API Management design time subscription on the same 
     <th valign="top">
 
     Component Name
-
-
     
     </th>
     <th valign="top">
 
     Component Description
-
-
     
     </th>
     </tr>
@@ -52,15 +48,11 @@ You can also enable the new API Management design time subscription on the same 
     <td valign="top">
     
     OPU-API-OD-OPS
-
-
     
     </td>
     <td valign="top">
     
     SAP API Management Operations - On Demand
-
-
     
     </td>
     </tr>

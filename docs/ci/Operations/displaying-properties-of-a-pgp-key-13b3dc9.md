@@ -39,15 +39,11 @@ See: [How OpenPGP Works](../ConnectionSetup/how-openpgp-works-29bc188.md)
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -55,8 +51,6 @@ See: [How OpenPGP Works](../ConnectionSetup/how-openpgp-works-29bc188.md)
     <td valign="top">
     
     *Fingerprint* 
-
-
     
     </td>
     <td valign="top">
@@ -64,8 +58,6 @@ See: [How OpenPGP Works](../ConnectionSetup/how-openpgp-works-29bc188.md)
     Character sequence that identifies the public key.
 
     A fingerprint is generated out of the public key applying a hash function on the public key.
-
-
     
     </td>
     </tr>
@@ -73,8 +65,6 @@ See: [How OpenPGP Works](../ConnectionSetup/how-openpgp-works-29bc188.md)
     <td valign="top">
     
     *User IDs* 
-
-
     
     </td>
     <td valign="top">
@@ -100,8 +90,6 @@ See: [How OpenPGP Works](../ConnectionSetup/how-openpgp-works-29bc188.md)
     <td valign="top">
     
     *PGP Keys* 
-
-
     
     </td>
     <td valign="top">

@@ -25,22 +25,16 @@ A context object is created for each request or response transaction executed by
     <th valign="top">
 
     Name
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     <th valign="top">
 
     Properties
-
-
     
     </th>
     </tr>
@@ -48,22 +42,16 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     context
-
-
     
     </td>
     <td valign="top">
     
     A wrapper for the message processing pipeline context and the request and response Flows that are executed by the ProxyEndpoint and TargetEndpoint.
-
-
     
     </td>
     <td valign="top">
     
     flow, session
-
-
     
     </td>
     </tr>
@@ -71,22 +59,16 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     context.proxyRequest
-
-
     
     </td>
     <td valign="top">
     
     An object that represents the inbound request message to the ProxyEndpoint \(from the requesting app to the API proxy\)
-
-
     
     </td>
     <td valign="top">
     
     headers, query parameters, method, body, url
-
-
     
     </td>
     </tr>
@@ -94,22 +76,16 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     context.targetRequest
-
-
     
     </td>
     <td valign="top">
     
     An object that represents the outbound request message from the TargetEndpoint \(from the API proxy to the back end service\).
-
-
     
     </td>
     <td valign="top">
     
     headers, query parameters, method, body, url
-
-
     
     </td>
     </tr>
@@ -117,22 +93,16 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     context.targetResponse
-
-
     
     </td>
     <td valign="top">
     
     An object that represents the inbound target response message \(from the backend service to the API proxy\)
-
-
     
     </td>
     <td valign="top">
     
     headers, content, status
-
-
     
     </td>
     </tr>
@@ -140,22 +110,16 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     context.proxyResponse
-
-
     
     </td>
     <td valign="top">
     
     An object that represents the outbound proxy response message \(from the API proxy to the requesting app\)
-
-
     
     </td>
     <td valign="top">
     
     headers, content, status
-
-
     
     </td>
     </tr>
@@ -163,22 +127,16 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     Context.flow
-
-
     
     </td>
     <td valign="top">
     
     The name of the current flow.
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -186,22 +144,16 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     Context.session
-
-
     
     </td>
     <td valign="top">
     
     A map of name/value pairs that you can use to pass objects between two different steps executing in the same context. For example: context.session\['key'\] = 123.
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -225,15 +177,11 @@ A context object is created for each request or response transaction executed by
     <th valign="top">
 
     Property Name
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -241,8 +189,6 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     url
-
-
     
     </td>
     <td valign="top">
@@ -266,8 +212,6 @@ A context object is created for each request or response transaction executed by
     Examples:
 
     `context.targetRequest.url = 'http://www.example.com/path?q1=1'``context.targetRequest.protocol ='https';`
-
-
     
     </td>
     </tr>
@@ -275,8 +219,6 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     headers
-
-
     
     </td>
     <td valign="top">
@@ -319,8 +261,6 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     queryParams
-
-
     
     </td>
     <td valign="top">
@@ -347,8 +287,6 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     method
-
-
     
     </td>
     <td valign="top">
@@ -374,8 +312,6 @@ A context object is created for each request or response transaction executed by
     returns the following value
 
     `POST`
-
-
     
     </td>
     </tr>
@@ -383,8 +319,6 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     body
-
-
     
     </td>
     <td valign="top">
@@ -466,15 +400,11 @@ A context object is created for each request or response transaction executed by
     <th valign="top">
 
     Property Name
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -482,8 +412,6 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     headers
-
-
     
     </td>
     <td valign="top">
@@ -493,8 +421,6 @@ A context object is created for each request or response transaction executed by
     Example:
 
     `var cookie = context.targetResponse.headers['Set-Cookie'];`
-
-
     
     </td>
     </tr>
@@ -502,8 +428,6 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     status
-
-
     
     </td>
     <td valign="top">
@@ -515,8 +439,6 @@ A context object is created for each request or response transaction executed by
     `var status = context.targetResponse.status.code; // 200`
 
     `var msg = context.targetResponse.status.message; // "OK"`
-
-
     
     </td>
     </tr>
@@ -524,8 +446,6 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     content
-
-
     
     </td>
     <td valign="top">
@@ -537,8 +457,6 @@ A context object is created for each request or response transaction executed by
     `context.targetResponse.content.asXML;`
 
     `context.targetResponse.content.asJSON;`
-
-
     
     </td>
     </tr>
@@ -554,22 +472,16 @@ A context object is created for each request or response transaction executed by
     <th valign="top">
 
     Method Name
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     <th valign="top">
 
     Syntax
-
-
     
     </th>
     </tr>
@@ -577,22 +489,16 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     context.getVariable\(\)
-
-
     
     </td>
     <td valign="top">
     
     Retrieves the value of a predefined or custom variable.
-
-
     
     </td>
     <td valign="top">
     
     `context.getVariable("variable-name");` 
-
-
     
     </td>
     </tr>
@@ -600,22 +506,16 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     context.setVariable\(\)
-
-
     
     </td>
     <td valign="top">
     
     Sets the value for a custom variable or for any predefined variables.
-
-
     
     </td>
     <td valign="top">
     
     `context.setVariable("variable-name", value);` 
-
-
     
     </td>
     </tr>
@@ -623,22 +523,16 @@ A context object is created for each request or response transaction executed by
     <td valign="top">
     
     context.removeVariable\(\)
-
-
     
     </td>
     <td valign="top">
     
     Removes a variable from the context.
-
-
     
     </td>
     <td valign="top">
     
     `context.removeVariable('variable-name');` 
-
-
     
     </td>
     </tr>
@@ -749,22 +643,16 @@ Crypto object adds basic, high-performance cryptographic support to the JavaScri
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     <th valign="top">
 
     Example
-
-
     
     </th>
     </tr>
@@ -772,22 +660,16 @@ Crypto object adds basic, high-performance cryptographic support to the JavaScri
     <td valign="top">
     
     format \(string\)
-
-
     
     </td>
     <td valign="top">
     
     The underlying implementation for this parameter is java.text.SimpleDateFormat, for example: 'YYYY-MM-DD HH:mm:ss.SSS'
-
-
     
     </td>
     <td valign="top">
     
     Get the current time, down to milliseconds: `var _now = crypto.dateFormat('YYYY-MM-DD HH:mm:ss.SSS');` 
-
-
     
     </td>
     </tr>
@@ -795,22 +677,16 @@ Crypto object adds basic, high-performance cryptographic support to the JavaScri
     <td valign="top">
     
     timezone \(string, optional\)
-
-
     
     </td>
     <td valign="top">
     
     The underlying implementation for this parameter is java.util.TimeZone. Default: UTC
-
-
     
     </td>
     <td valign="top">
     
     Get the current time for Pacific Time Zone:`var _pst = crypto.dateFormat('YYYY-MM-DD HH:mm:ss.SSS','PST');` 
-
-
     
     </td>
     </tr>
@@ -818,22 +694,16 @@ Crypto object adds basic, high-performance cryptographic support to the JavaScri
     <td valign="top">
     
     time \(number, optional\)
-
-
     
     </td>
     <td valign="top">
     
     A Unix timestamp value to format. Default: current time
-
-
     
     </td>
     <td valign="top">
     
     Get the value of ten seconds from current time: `var _timeNow = Number(context.getVariable('system.timestamp'));``var ten_seconds = crypto.dateFormat('YYYY-MM-DD HH:mm:ss.SSS','PST', _timeNow + 10 * 1000);` 
-
-
     
     </td>
     </tr>

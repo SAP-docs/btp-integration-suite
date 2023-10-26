@@ -16,14 +16,10 @@ JDBC receiver adapter supports Oracle cloud database provided by Amazon RDS.
 
 Database Provider
 
-
-
 </td>
 <td valign="top">
 
 Amazon RDS
-
-
 
 </td>
 </tr>
@@ -32,14 +28,10 @@ Amazon RDS
 
 Infrastructure
 
-
-
 </td>
 <td valign="top">
 
 Cloud
-
-
 
 </td>
 </tr>
@@ -48,14 +40,10 @@ Cloud
 
 SAP BTP Environment
 
-
-
 </td>
 <td valign="top">
 
 Neo and Cloud Foundry
-
-
 
 </td>
 </tr>
@@ -64,16 +52,12 @@ Neo and Cloud Foundry
 
 JDBC URL Pattern
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:oracle:thin:@<database>`
 
 To connect to Oracle Database SID, use: `jdbc:oracle:thin:@<host>[:<port>]:<SID>`
-
-
 
 </td>
 </tr>
@@ -82,14 +66,10 @@ To connect to Oracle Database SID, use: `jdbc:oracle:thin:@<host>[:<port>]:<SID>
 
 JDBC URL Example
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:oracle:thin:@myoracle:1521:my_sid`
-
-
 
 </td>
 </tr>

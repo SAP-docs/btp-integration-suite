@@ -62,14 +62,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -78,14 +74,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -102,14 +94,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -117,8 +105,6 @@ Description
 <td valign="top">
 
 *Address*
-
-
 
 </td>
 <td valign="top">
@@ -133,16 +119,12 @@ Also, if the CamelDestinationOverrideUrl header has been set by another process 
 
 The endpoint URL that is used at runtime is displayed in the message processing log \(MPL\) in the message monitoring application \(MPL property `RealDestinationUrl`\). Note that you can manually configure the endpoint URL using the *Address* attribute of the adapter. However, there are several ways to dynamically override the value of this attribute \(for example, by using the Camel header `CamelDestinationOverrideUrl`\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type*
-
-
 
 </td>
 <td valign="top">
@@ -179,8 +161,6 @@ The type of proxy that you are using to connect to the target system:
 
 *URL to WSDL* 
 
-
-
 </td>
 <td valign="top">
 
@@ -210,8 +190,6 @@ To select the WSDL from a source, you have the following options:
 
 For more information on how to work with WSDL resources, see the following blog: [Cloud Integration – Usage of WSDLs in the SOAP Adapter](https://blogs.sap.com/2018/06/28/cloud-integration-usage-of-wsdls-in-the-soap-adapter/)
 
-
-
 </td>
 </tr>
 <tr>
@@ -219,14 +197,10 @@ For more information on how to work with WSDL resources, see the following blog:
 
 *Service Name* 
 
-
-
 </td>
 <td valign="top">
 
 Name of the selected service contained in the referenced WSDL
-
-
 
 </td>
 </tr>
@@ -234,8 +208,6 @@ Name of the selected service contained in the referenced WSDL
 <td valign="top">
 
 *Endpoint*
-
-
 
 </td>
 <td valign="top">
@@ -254,14 +226,10 @@ Name of the selected endpoint of  a selected service \(that you provide in the 
 
 *Operation Name*
 
-
-
 </td>
 <td valign="top">
 
 Name of the operation of a selected service \(that you provide in the *Service Name* field\) contained in the referenced WSDL.
-
-
 
 </td>
 </tr>
@@ -270,14 +238,10 @@ Name of the operation of a selected service \(that you provide in the *Service N
 
 *Credential Name* \(only available if you have selected *Basic* or *OAuth 2.0 SAML Bearer Assertion Grant* for the *Authentication* parameter\)
 
-
-
 </td>
 <td valign="top">
 
 Name of the *User Credentials* artifact that contains the credentials for basic authentication or OAuth 2.0 SAML Bearer Assertion Grant.
-
-
 
 </td>
 </tr>
@@ -285,8 +249,6 @@ Name of the *User Credentials* artifact that contains the credentials for basic 
 <td valign="top">
 
 *Private Key Alias* \(only available if you have selected *Client Certificate* for the *Authentication* parameter\)
-
-
 
 </td>
 <td valign="top">
@@ -297,16 +259,12 @@ You can dynamically configure the *Private Key Alias* parameter by specifying ei
 
 In some cases this feature can have a negative impact on performance.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Timeout \(in ms\)*
-
-
 
 </td>
 <td valign="top">
@@ -317,16 +275,12 @@ The default value is 60000 milliseconds \(1 minute\).
 
 Note that the timeout setting has no influence on the Transmission Control Protocol \(TCP\) timeout if the receiver or any additional component interconnected between the Cloud Integration tenant and the receiver has a lower timeout. For example, consider that you have configured a receiver channel timeout of 10 minutes and there is another component involved with a timeout of 5 minutes. If nothing is transferred for a period of time, the connection will be closed after the fifth minute. In HTTP communication spanning multiple components \(for example, from a sender, through the load balancer, to a Cloud Integration tenant, and from there to a receiver\), the actual timeout period is influenced by each of the timeout settings of the individual components that are interconnected between the sender and receiver \(to be more exact, of those components that can control the TCP session\). The component or device with the lowest number set for the idle session timeout will determine the timeout that will be used.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Keep-Alive*
-
-
 
 </td>
 <td valign="top">
@@ -345,14 +299,10 @@ Select to signal to the server that the client wants to leave the connection ope
 
 *Compress Message*
 
-
-
 </td>
 <td valign="top">
 
 Enables the WS endpoint to send compressed request messages to the WS Provider and to indicate to the WS Provider that it can handle compressed response messages.
-
-
 
 </td>
 </tr>
@@ -360,8 +310,6 @@ Enables the WS endpoint to send compressed request messages to the WS Provider a
 <td valign="top">
 
 *Allow Chunking*
-
-
 
 </td>
 <td valign="top">
@@ -379,8 +327,6 @@ Used for enabling HTTP chunking of data while sending messages.
 <td valign="top">
 
 *Return HTTP Response Code as Header*
-
-
 
 </td>
 <td valign="top">
@@ -408,14 +354,10 @@ This feature is disabled by default.
 
 *Clean Up Request Headers*
 
-
-
 </td>
 <td valign="top">
 
 Select this option to clean up the adapter-specific headers after the receiver call.
-
-
 
 </td>
 </tr>
@@ -436,14 +378,10 @@ Select the *WS-Security* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -451,8 +389,6 @@ Description
 <td valign="top">
 
 *WS-Security Configuration*
-
-
 
 </td>
 <td valign="top">
@@ -480,8 +416,6 @@ Specifies how WS-Security settings are to be configured.
 <td valign="top">
 
 *Username Token*
-
-
 
 </td>
 <td valign="top">
@@ -527,14 +461,10 @@ If you have selected the option *Plain Text Password* or *Hashed Password*, ente
 
 \(only if the option *Based on Policies in WSDL* or *Via Manual Configuration in Channel* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Alias that was assigned to the authorized user and password during tenant deployment
-
-
 
 </td>
 </tr>
@@ -544,8 +474,6 @@ Alias that was assigned to the authorized user and password during tenant deploy
 *WS-Security Type*
 
 \(only if the option *Via Manual Configuration in Channel* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -574,8 +502,6 @@ Specifies the combination of message protection methods that are to be applied. 
 
 *Private Key Alias for Signing*
 
-
-
 </td>
 <td valign="top">
 
@@ -584,8 +510,6 @@ Specify an alias for the tenant private key that is to be used to sign the messa
 The tenant private key is used to sign the request message \(that is sent to the WS provider \(receiver\)\). The tenant private key has to be part of the tenant keystore.
 
 More information: [WS-Security Configuration for the Receiver SOAP 1.x Adapter](ws-security-configuration-for-the-receiver-soap-1-x-adapter-e9f42bf.md)
-
-
 
 </td>
 </tr>
@@ -596,8 +520,6 @@ More information: [WS-Security Configuration for the Receiver SOAP 1.x Adapter](
 
 \(only if the option *Sign and Encrypt Message* is selected\)
 
-
-
 </td>
 <td valign="top">
 
@@ -607,16 +529,12 @@ The receiver \(WS provider\) public key is used to encrypt the request message \
 
 More information: [WS-Security Configuration for the Receiver SOAP 1.x Adapter](ws-security-configuration-for-the-receiver-soap-1-x-adapter-e9f42bf.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Set Time Stamp* 
-
-
 
 </td>
 <td valign="top">
@@ -625,8 +543,6 @@ Select this option to send a time stamp along with the message.
 
 If a Request-Response pattern is configured, a time stamp is expected in the response message.
 
-
-
 </td>
 </tr>
 <tr>
@@ -634,14 +550,10 @@ If a Request-Response pattern is configured, a time stamp is expected in the res
 
 *Receiver is Basic Security Profile Compliant*
 
-
-
 </td>
 <td valign="top">
 
 Leave this option selected if the receiver system complies with the basic security profile \(as assumed to be the case for most systems\). Deselect this option if the receiver system does not support this security profile.
-
-
 
 
 
@@ -653,8 +565,6 @@ Leave this option selected if the receiver system complies with the basic securi
 *Layout*
 
 \(only if the option *Via Manual Configuration in Channel* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -679,14 +589,10 @@ Leave this option selected if the receiver system complies with the basic securi
 
 \(only if the option *Via Manual Configuration in Channel* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies which algorithms are used by the WS consumer.
-
-
 
 </td>
 </tr>
@@ -696,8 +602,6 @@ Specifies which algorithms are used by the WS consumer.
 *Initiator Token*
 
 \(only if the option *Via Manual Configuration in Channel* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -732,8 +636,6 @@ These entries define policies for the WS consumer:
 *Recipient Token*
 
 \(only if the option *Via Manual Configuration in Channel* is selected\)
-
-
 
 </td>
 <td valign="top">

@@ -23,14 +23,10 @@ A digital certificate provides a public key that is signed by a certification au
 
 Element
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -39,14 +35,10 @@ Description
 
 Issuer
 
-
-
 </td>
 <td valign="top">
 
 Specifies the CA \(that issued and signed the certificate\).
-
-
 
 </td>
 </tr>
@@ -55,14 +47,10 @@ Specifies the CA \(that issued and signed the certificate\).
 
 Subject
 
-
-
 </td>
 <td valign="top">
 
 Specifies the entity associated with the public key of the certificate.
-
-
 
 </td>
 </tr>
@@ -71,16 +59,12 @@ Specifies the entity associated with the public key of the certificate.
 
 Distinguished Name \(DN\)
 
-
-
 </td>
 <td valign="top">
 
 Comprises the issuer, the subject, and other attributes.
 
 A DN is a unique identifier of the certificate.
-
-
 
 </td>
 </tr>

@@ -19,14 +19,10 @@ You get the following information:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -35,14 +31,10 @@ Description
 
 *Component* 
 
-
-
 </td>
 <td valign="top">
 
 The component writing the lock entry. \(AS2, JMS, Mail, SFTP, and XI adapters can write locks.\)
-
-
 
 </td>
 </tr>
@@ -51,14 +43,10 @@ The component writing the lock entry. \(AS2, JMS, Mail, SFTP, and XI adapters ca
 
 *Source* 
 
-
-
 </td>
 <td valign="top">
 
 The component causing the lock.
-
-
 
 </td>
 </tr>
@@ -67,14 +55,10 @@ The component causing the lock.
 
 *Entry* 
 
-
-
 </td>
 <td valign="top">
 
 Content of the lock entry. This parameter provides a link to the message in the message queues monitor. To access the associated JMS Message, click ID. The queue monitor opens and loads the JMS Message. This operation is only possible for JMS locks.
-
-
 
 </td>
 </tr>
@@ -83,14 +67,10 @@ Content of the lock entry. This parameter provides a link to the message in the 
 
 *Created At* 
 
-
-
 </td>
 <td valign="top">
 
 Time when the lock was created.
-
-
 
 </td>
 </tr>

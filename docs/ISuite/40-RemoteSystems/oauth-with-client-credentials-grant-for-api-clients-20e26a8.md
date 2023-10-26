@@ -51,22 +51,16 @@ To set up this authorization option, perform the following steps.
     <th valign="top">
 
      
-
-
     
     </th>
     <th valign="top" colspan="3">
 
     Service Instance
-
-
     
     </th>
     <th valign="top" colspan="4">
 
     Service Key
-
-
     
     </th>
     </tr>
@@ -74,57 +68,41 @@ To set up this authorization option, perform the following steps.
     <th valign="top">
 
     Option \(Authentication At Token Server\)
-
-
     
     </th>
     <th valign="top">
 
     Plan
-
-
     
     </th>
     <th valign="top">
 
     Roles
-
-
     
     </th>
     <th valign="top">
 
     Grant-types
-
-
     
     </th>
     <th valign="top">
 
     Key Type
-
-
     
     </th>
     <th valign="top">
 
     External Certificate
-
-
     
     </th>
     <th valign="top">
 
     Validity
-
-
     
     </th>
     <th valign="top">
 
     Key Size
-
-
     
     </th>
     </tr>
@@ -132,15 +110,11 @@ To set up this authorization option, perform the following steps.
     <td valign="top">
     
     ClientId and clientsecret
-
-
     
     </td>
     <td valign="top">
     
     *api* 
-
-
     
     </td>
     <td valign="top">
@@ -148,43 +122,31 @@ To set up this authorization option, perform the following steps.
     Select role according to the API resource to access.
 
     See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
-
-
     
     </td>
     <td valign="top">
     
     *Client Credentials* 
-
-
     
     </td>
     <td valign="top">
     
     *ClientId/Secret* 
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     </tr>
@@ -192,15 +154,11 @@ To set up this authorization option, perform the following steps.
     <td valign="top">
     
     SAP certificate
-
-
     
     </td>
     <td valign="top">
     
     *api* 
-
-
     
     </td>
     <td valign="top">
@@ -208,43 +166,31 @@ To set up this authorization option, perform the following steps.
     Select role according to the API resource to access.
 
     See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
-
-
     
     </td>
     <td valign="top">
     
     *Client Credentials* 
-
-
     
     </td>
     <td valign="top">
     
     *Certificate* 
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     Specify validity in days.
-
-
     
     </td>
     <td valign="top">
     
     Specify key size.
-
-
     
     </td>
     </tr>
@@ -252,15 +198,11 @@ To set up this authorization option, perform the following steps.
     <td valign="top">
     
     External certificate
-
-
     
     </td>
     <td valign="top">
     
     *api* 
-
-
     
     </td>
     <td valign="top">
@@ -268,43 +210,31 @@ To set up this authorization option, perform the following steps.
     Select role according to the API resource to access.
 
     See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
-
-
     
     </td>
     <td valign="top">
     
     *Client Credentials* 
-
-
     
     </td>
     <td valign="top">
     
     *External Certificate* 
-
-
     
     </td>
     <td valign="top">
     
     Add PEM-encoded X.509 certificate.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     </tr>
@@ -352,7 +282,7 @@ To set up a sequence of requests for an OAuth workflow with the client credentia
 >             > ### Note:  
 >             > To enable the related HTTP client to support this authentication option, you need to format the certificate \(including the certificate chain\) and the key accordingly. In particular, make sure to replace all `\n` in the SAP-generated certificate or key by line breaks.
 >             > 
->             > A suitable certificate, for example, would then look like:
+>             > A suitable certificate, for example, would then look like the following:
 >             > 
 >             > ```
 >             > -----BEGIN CERTIFICATE-----

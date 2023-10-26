@@ -46,14 +46,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -62,14 +58,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -86,14 +78,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -102,14 +90,10 @@ Description
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 URL of the OData V2 service that you want to connect to.
-
-
 
 </td>
 </tr>
@@ -118,16 +102,12 @@ URL of the OData V2 service that you want to connect to.
 
 *Proxy Type* 
 
-
-
 </td>
 <td valign="top">
 
 The type of proxy you want to use for establishing connection with OData V2 service.
 
 Currently, you can choose between *Internet* \(default\) and *On-Premise*.
-
-
 
 </td>
 </tr>
@@ -138,14 +118,10 @@ Currently, you can choose between *Internet* \(default\) and *On-Premise*.
 
 \(only if you choose *Proxy Type* as *On-Premise*\).
 
-
-
 </td>
 <td valign="top">
 
 Location ID that you’ve configured in the cloud connector installed on your system.
-
-
 
 </td>
 </tr>
@@ -154,12 +130,10 @@ Location ID that you’ve configured in the cloud connector installed on your sy
 
 *Authentication* 
 
-
-
 </td>
 <td valign="top">
 
-Authentication method that you want to use for connecting to the OData V2 service. Currently, you can choose from
+Authentication method that you want to use for connecting to the OData V2 service. Currently, you can choose from:
 
 -   *None*
 
@@ -171,7 +145,7 @@ Authentication method that you want to use for connecting to the OData V2 servic
     > When you want to use Principal Propagation as the authentication method to connect with an on-premise system, don't pass any authorization headers. Follow the approach recommended by SAP BTP Connectivity. See: [Authentication to the On-Premise System](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/67b0b94f09f2446598787eea0855e56b.html).
 
 
-The following options are enabled only if you choose *Proxy Type* as *Internet*
+The following options are enabled only if you choose *Proxy Type* as *Internet*.
 
 -   *Client Certificate*
 
@@ -191,14 +165,10 @@ The following options are enabled only if you choose *Proxy Type* as *Internet*
 
 \(only if you choose *Authentication* as *Basic*, *OAuth2 Client Credentials*, or *OAuth2 SAML Bearer Assertion*\).
 
-
-
 </td>
 <td valign="top">
 
 Credential name of the credentials that you’ve deployed in *Security Material* section of :eye:.
-
-
 
 </td>
 </tr>
@@ -208,8 +178,6 @@ Credential name of the credentials that you’ve deployed in *Security Material*
 *Private Key Alias*
 
 \(only if you select *Client Certificate Authentication*\).
-
-
 
 </td>
 <td valign="top">
@@ -228,14 +196,10 @@ Enter the private key alias that enables the system to fetch the private key fro
 
 *CSRF Protected* 
 
-
-
 </td>
 <td valign="top">
 
-Keep this option selected \(default setting\). It ensures that your integration flow is protected against Cross-Site-Request-Forgery, a kind of attack where a malicious party can perform harmful actions by masquerading as the logged in user
-
-
+Keep this option selected \(default setting\). It ensures that your integration flow is protected against Cross-Site-Request-Forgery, a kind of attack where a malicious party can perform harmful actions by masquerading as the logged in user.
 
 </td>
 </tr>
@@ -244,14 +208,10 @@ Keep this option selected \(default setting\). It ensures that your integration 
 
 *Reuse Connection*
 
-
-
 </td>
 <td valign="top">
 
-The option is enabled by default. This option enables the reuse of connection objects from the internal connection pool which in turn improves the network turnaround time for multiple communications to a same end point.
-
-
+The option is enabled by default. This option enables the reuse of connection objects from the internal connection pool, which in turn improves the network turnaround time for multiple communications to a same end point.
 
 </td>
 </tr>
@@ -268,14 +228,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -283,8 +239,6 @@ Description
 <td valign="top">
 
 *Operation Details* 
-
-
 
 </td>
 <td valign="top">
@@ -318,9 +272,9 @@ For the *POST* operation, the automatic Primary Key generation is handled in 2 d
 -   If the backend supports the primary key entry in the payload and later overwrites the entry value after receiving, you can enter a dummy value for the primary key.
 
 -   If the primary key entry in the payload isn’t supported by the backend, then the payload must be sent without a primary key value. If mapping step is used, you can disable the entry by performing one of the following steps:
-    -   Disable the primary key value in the mapping
+    -   Disable the primary key value in the mapping.
 
-    -   Manually remove the primary key entry from the schema and use that schema in mapping
+    -   Manually remove the primary key entry from the schema and use that schema in mapping.
 
 
 
@@ -331,8 +285,6 @@ For the *POST* operation, the automatic Primary Key generation is handled in 2 d
 <td valign="top">
 
 *Resource Path* 
-
-
 
 </td>
 <td valign="top">
@@ -361,14 +313,10 @@ Choose *Select* to launch the *Model Operation* wizard. Refer to table **Model O
 
 \(enabled for *Query \(GET\)* and *Read \(GET\)* operations.\)
 
-
-
 </td>
 <td valign="top">
 
 Query options that you’re passing as a part of the URI to the OData V2 service.
-
-
 
 </td>
 </tr>
@@ -379,14 +327,10 @@ Query options that you’re passing as a part of the URI to the OData V2 service
 
 \(enabled for *Create \(POST\)*, *Merge \(MERGE\)*, *Patch \(PATCH\)*, and *Update \(PUT\)* operations.\)
 
-
-
 </td>
 <td valign="top">
 
 Fields in the entity that you’re performing the operation on. If you use the Model Operation wizard, the input for this field is provided by the wizard.
-
-
 
 </td>
 </tr>
@@ -395,14 +339,10 @@ Fields in the entity that you’re performing the operation on. If you use the M
 
 *Enable Batch Processing* 
 
-
-
 </td>
 <td valign="top">
 
 Select to perform multiple operations in one request to the OData V2 service in the **$batch** mode.
-
-
 
 </td>
 </tr>
@@ -411,14 +351,10 @@ Select to perform multiple operations in one request to the OData V2 service in 
 
 *Custom Query Options* 
 
-
-
 </td>
 <td valign="top">
 
 Additional query options that aren’t available in the *Model Operation* wizard.
-
-
 
 </td>
 </tr>
@@ -426,8 +362,6 @@ Additional query options that aren’t available in the *Model Operation* wizard
 <td valign="top">
 
 *Content Type* 
-
-
 
 </td>
 <td valign="top">
@@ -450,14 +384,10 @@ Type of content that you’re sending to the OData V2 backend service. The adapt
 
 \(enabled for *Create \(POST\)*, *Merge \(MERGE\)*, *Patch \(PATCH\)*, and *Update \(PUT\)*, and *Function Import* operations.\)
 
-
-
 </td>
 <td valign="top">
 
 Encoding type used for sending content to OData API.
-
-
 
 </td>
 </tr>
@@ -465,8 +395,6 @@ Encoding type used for sending content to OData API.
 <td valign="top">
 
 *Page Size* 
-
-
 
 </td>
 <td valign="top">
@@ -492,8 +420,6 @@ If a value is entered, Client-side pagination is considered with the value provi
 *Process in Page*
 
 \(only when you’re performing the *Query \(GET\)* operation.\)
-
-
 
 </td>
 <td valign="top">
@@ -523,14 +449,10 @@ This option isn’t enabled for *Content Enricher*.
 
 *Timeout \(in min\)* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum time the adapter must wait for receiving a response from the OData V2 service.
-
-
 
 </td>
 </tr>
@@ -539,18 +461,14 @@ Maximum time the adapter must wait for receiving a response from the OData V2 se
 
 *Attach Error Details on Failure* 
 
-
-
 </td>
 <td valign="top">
 
 By default, the option is enabled. This option enables the creation of attachments for request header, response headers, and response body when the message processing fails.
 
-Having these attachments during message processing failures can be unneccesary as it leads to persistence of attachments that doesn't help. Especially, if multiple message processing failures occurs, you have attachments piled up for each failure. If you don't require the attachments for failure scenarios, disable the option. Though you disable the creation of attachments, the content of the same are added to the message processing logs.
+Having these attachments during message processing failures can be unnecessary as it leads to persistence of attachments that doesn't help. Especially, if multiple message processing failures occur, you have attachments piled up for each failure. If you don't require the attachments for failure scenarios, disable the option. Though you disable the creation of attachments, the content of the same are added to the message processing logs.
 
 If you're using older versions of the adapter where you don't see the option, define the property `SAP.DisableAttachments.ODataV2` in the message exchange with the value `true`.
-
-
 
 </td>
 </tr>
@@ -559,12 +477,10 @@ If you're using older versions of the adapter where you don't see the option, de
 
 *HEADER DETAILS* 
 
-
-
 </td>
 <td valign="top">
 
-*Request Headers*: Provide the **| \(Pipe\)**separated value list of HTTP request headers that has to be sent to the OData backend
+*Request Headers*: Provide the **| \(Pipe\)**separated value list of HTTP request headers that has to be sent to the OData backend.
 
 If the value \* is entered, **all** the message headers are converted to HTTP request headers and forwarded.
 
@@ -572,16 +488,12 @@ If the value \* is entered, **all** the message headers are converted to HTTP re
 
 If the value \* is entered, **all** the HTTP response header values are converted to message/exchange headers.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Metadata Details* 
-
-
 
 </td>
 <td valign="top">
@@ -620,14 +532,10 @@ There are three main steps in this wizard:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -635,8 +543,6 @@ Description
 <td valign="top">
 
 *Connection Source* 
-
-
 
 </td>
 <td valign="top">
@@ -647,8 +553,6 @@ If you choose *Remote*, you’ve to manually specify all the details like addres
 
 If you choose *Local EDMX File*, you select the service definition EDMX file that contains all these details that you specified manually when you selected *Remote*.
 
-
-
 </td>
 </tr>
 <tr>
@@ -658,14 +562,10 @@ If you choose *Local EDMX File*, you select the service definition EDMX file tha
 
 \(only if you select *Connection Source* as *Local EDMX File*\).
 
-
-
 </td>
 <td valign="top">
 
 Choose *Select* to select the EDMX service schema. You can also manually upload it from your local file system.
-
-
 
 </td>
 </tr>
@@ -674,14 +574,10 @@ Choose *Select* to select the EDMX service schema. You can also manually upload 
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 URL of the service that you want to access. If you’re connecting to an on-premise system, enter the *Virtual Host* in your Cloud Connector installation.
-
-
 
 </td>
 </tr>
@@ -692,14 +588,10 @@ URL of the service that you want to access. If you’re connecting to an on-prem
 
 \(only if you select *Connection Source* as *Remote*.\)
 
-
-
 </td>
 <td valign="top">
 
 Type of proxy that you want to use to connect to the service.
-
-
 
 </td>
 </tr>
@@ -710,14 +602,10 @@ Type of proxy that you want to use to connect to the service.
 
 \(only if you select *Proxy Type* as *On-Premise*\).
 
-
-
 </td>
 <td valign="top">
 
 Location ID that you’ve configured in the Cloud Connector installation.
-
-
 
 </td>
 </tr>
@@ -726,16 +614,12 @@ Location ID that you’ve configured in the Cloud Connector installation.
 
 *Authentication* 
 
-
-
 </td>
 <td valign="top">
 
 Only *Basic* authentication is supported. You can deploy credentials in :eye: and provide the *Credential Name* or provide the *Username* and *Password*.
 
 For other authentication types, download the EDMX from the service and use the *Local EDMX File* to model the operation.
-
-
 
 </td>
 </tr>
@@ -750,14 +634,10 @@ For other authentication types, download the EDMX from the service and use the *
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -765,8 +645,6 @@ Description
 <td valign="top">
 
 *Operation* 
-
-
 
 </td>
 <td valign="top">
@@ -792,8 +670,6 @@ The adapter supports *Function Import* for the following return types:
 
 *Function Import*can also be consumed in the *$batch* mode.
 
-
-
 </td>
 </tr>
 <tr>
@@ -801,14 +677,10 @@ The adapter supports *Function Import* for the following return types:
 
 *Sub-Levels* 
 
-
-
 </td>
 <td valign="top">
 
 Sublevels of the entity that you want to access. For example, if you want to access the field *Description* in the entity *Products*, and the field is located at *Category* \> *Products* \> *Description*, you select the *Sub Levels* as `3` since the field you want to access is at the third level.
-
-
 
 </td>
 </tr>
@@ -817,14 +689,10 @@ Sublevels of the entity that you want to access. For example, if you want to acc
 
 *Select Entity* 
 
-
-
 </td>
 <td valign="top">
 
 Entity that you want to perform the operation on.
-
-
 
 </td>
 </tr>
@@ -833,16 +701,12 @@ Entity that you want to perform the operation on.
 
 *Generate XML Schema Definition* 
 
-
-
 </td>
 <td valign="top">
 
 Enable the check box if you want to generate an XSD file for the operation. You can also provide a name of your choice for the XSD file. This XSD file is needed when you create a message mapping.
 
 There could be a scenario in which you wish to edit or update your modeling. In such cases, you can overwrite the XSD file instead of generating a new file every time.
-
-
 
 </td>
 </tr>
@@ -851,14 +715,10 @@ There could be a scenario in which you wish to edit or update your modeling. In 
 
 *Fields* 
 
-
-
 </td>
 <td valign="top">
 
 Fields associated with the entity that you want to perform the operation on.
-
-
 
 </td>
 </tr>
@@ -867,14 +727,10 @@ Fields associated with the entity that you want to perform the operation on.
 
 *Filter Fields* 
 
-
-
 </td>
 <td valign="top">
 
 Type the field name that you are looking for to narrow down your search.
-
-
 
 </td>
 </tr>
@@ -883,16 +739,12 @@ Type the field name that you are looking for to narrow down your search.
 
 *Top* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the top 'n' number of entries to be fetched.
 
 For more information, see **Top System Query Option \($top\)** in [OData V2 URI Conventions](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
-
-
 
 </td>
 </tr>
@@ -901,8 +753,6 @@ For more information, see **Top System Query Option \($top\)** in [OData V2 URI 
 
 *Skip* 
 
-
-
 </td>
 <td valign="top">
 
@@ -910,13 +760,11 @@ Specifies the top 'n' number of entries to be skipped and the rest of the entrie
 
 For more information, see **Skip System Query Option \($skip\)** in [OData V2 URI Conventions](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
-
-
 </td>
 </tr>
 </table>
 
-This step is available only for data fetch operations, *Query\(GET\), and* *Read\(GET\)*.
+The following step is available only for data fetch operations, *Query\(GET\), and* *Read\(GET\)*.
 
 **Configure Filter & Sorting**
 
@@ -927,14 +775,10 @@ This step is available only for data fetch operations, *Query\(GET\), and* *Read
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -942,8 +786,6 @@ Description
 <td valign="top">
 
 *Filter By* 
-
-
 
 </td>
 <td valign="top">
@@ -969,14 +811,10 @@ Select the field that you want to use as reference for filtering, choose the ope
 
 *Sort By* 
 
-
-
 </td>
 <td valign="top">
 
 Select the field that you want to use as sorting parameter and choose *Ascending* or *Descending* order.
-
-
 
 </td>
 </tr>

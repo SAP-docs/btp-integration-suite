@@ -22,14 +22,10 @@ Based on specific integration requirement, you can filter and choose prepackaged
 
 APIs
 
-
-
 </th>
 <th valign="top">
 
 Operations
-
-
 
 </th>
 </tr>
@@ -38,14 +34,10 @@ Operations
 
 OData
 
-
-
 </td>
 <td valign="top">
 
 GET, POST, and DELETE
-
-
 
 </td>
 </tr>
@@ -54,14 +46,10 @@ GET, POST, and DELETE
 
 REST
 
-
-
 </td>
 <td valign="top">
 
 GET, POST, PUT, and DELETE
-
-
 
 </td>
 </tr>
@@ -100,15 +88,11 @@ To generate an integration flow and add it to the workspace of an existing integ
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -116,15 +100,11 @@ To generate an integration flow and add it to the workspace of an existing integ
     <td valign="top">
     
     **Package**
-
-
     
     </td>
     <td valign="top">
     
     Select the package where to add the generated integration flow.
-
-
     
     </td>
     </tr>
@@ -132,15 +112,11 @@ To generate an integration flow and add it to the workspace of an existing integ
     <td valign="top">
     
     **Name**
-
-
     
     </td>
     <td valign="top">
     
     Specify the name of the generated integration flow.
-
-
     
     </td>
     </tr>
@@ -148,8 +124,6 @@ To generate an integration flow and add it to the workspace of an existing integ
     <td valign="top">
     
     **Resource**
-
-
     
     </td>
     <td valign="top">
@@ -157,8 +131,6 @@ To generate an integration flow and add it to the workspace of an existing integ
     Select the resource of the chosen API.
 
     For example, select */MessageProcessingLogs*.
-
-
     
     </td>
     </tr>
@@ -166,15 +138,11 @@ To generate an integration flow and add it to the workspace of an existing integ
     <td valign="top">
     
     **Operation**
-
-
     
     </td>
     <td valign="top">
     
     Select the operation. In the chosen example, only *GET* is available.
-
-
     
     </td>
     </tr>
@@ -182,15 +150,11 @@ To generate an integration flow and add it to the workspace of an existing integ
     <td valign="top">
     
     **URL**
-
-
     
     </td>
     <td valign="top">
     
     Specify the URL of the target system that exposes the API.
-
-
     
     </td>
     </tr>
@@ -206,15 +170,11 @@ To generate an integration flow and add it to the workspace of an existing integ
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -222,8 +182,6 @@ To generate an integration flow and add it to the workspace of an existing integ
     <td valign="top">
     
     **Entity Set**
-
-
     
     </td>
     <td valign="top">
@@ -231,8 +189,6 @@ To generate an integration flow and add it to the workspace of an existing integ
     Specify an entity set for the API, for example,`/GetAllMPLs`.
 
     This parameter is added to the sender adapter of the generated integration flow. In the chosen example, the generated integration flow contains an OData sender adapter, and this parameter specifies the *Entity Set* parameter of the sender adapter.
-
-
     
     </td>
     </tr>
@@ -240,15 +196,11 @@ To generate an integration flow and add it to the workspace of an existing integ
     <td valign="top">
     
     **Receiver Addres**
-
-
     
     </td>
     <td valign="top">
     
     Specify the URL under which the API can be reached on the target tenant.
-
-
     
     </td>
     </tr>
@@ -256,15 +208,11 @@ To generate an integration flow and add it to the workspace of an existing integ
     <td valign="top">
     
     **Credential Name**
-
-
     
     </td>
     <td valign="top">
     
     Specify a name for a *User Credentials* artifact. This artifact contains the credentials that are used to authenticate the integration flow against the target tenant \(only basic authentication is supported\). The credential name is added to the receiver dapter of the generated integration flow.
-
-
     
     </td>
     </tr>

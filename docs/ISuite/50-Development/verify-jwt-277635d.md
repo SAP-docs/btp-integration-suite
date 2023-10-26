@@ -97,14 +97,10 @@ Following table lists the elements and attributes that you can configure on this
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -112,8 +108,6 @@ Following table lists the elements and attributes that you can configure on this
 <td valign="top">
 
 Algorithm
-
-
 
 </td>
 <td valign="top">
@@ -135,8 +129,6 @@ Supported value: HS256, HS384, HS512, RS256, RS384, RS512
 
 Audience \(optional\)
 
-
-
 </td>
 <td valign="top">
 
@@ -154,8 +146,6 @@ The policy verifies that the audience claim in the JWT matches the value specifi
 <td valign="top">
 
 AdditionalClaims \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -185,16 +175,12 @@ The <Claim\> element takes these attributes:
 
 Only name attribute is mandatory.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AdditionalHeaders \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -225,16 +211,12 @@ The <Claim\> element takes these attributes:
 
 Only name attribute is mandatory.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Id \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -259,8 +241,6 @@ The JWT ID \(jti\) claim is a unique identifier for the JWT. Id attribute verifi
 
 IgnoreUnresolvedVariables \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
@@ -278,8 +258,6 @@ Set to false if you want the policy to throw an error when any referenced variab
 <td valign="top">
 
 Issuer \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -299,8 +277,6 @@ The policy verifies that the issuer in the JWT matches the string specified in t
 <td valign="top">
 
 <PublicKey/JWKS\> \(JWKS or Value element is required to verify a JWT signed with RSA algorithm\)
-
-
 
 </td>
 <td valign="top">
@@ -329,8 +305,6 @@ or
 <td valign="top">
 
 <PublicKey/Value\> \(JWKS or Value element is required to verify a JWT signed with RSA algorithm\)
-
-
 
 </td>
 <td valign="top">
@@ -371,8 +345,6 @@ Use this element only when the algorithm is an RSA variant. This element specifi
 
 <Source\> \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
@@ -391,8 +363,6 @@ If present, specifies the flow variable in which the policy expects to find the 
 
 <Subject\> \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
@@ -410,8 +380,6 @@ The policy verifies that the subject in the JWT matches the string specified in 
 <td valign="top">
 
 <SecretKey/Value\> \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -432,8 +400,6 @@ Provides the secret key used to verify or sign tokens with an HMAC algorithm. Us
 <td valign="top">
 
 <TimeAllowance\> \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -462,14 +428,10 @@ The following flow variables are available after the policy is executed:
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -478,14 +440,10 @@ Description
 
 header.algorithm
 
-
-
 </td>
 <td valign="top">
 
 Signing algorithm used on JWT.
-
-
 
 </td>
 </tr>
@@ -494,14 +452,10 @@ Signing algorithm used on JWT.
 
 claim.subject
 
-
-
 </td>
 <td valign="top">
 
 JWT subject claim.
-
-
 
 </td>
 </tr>
@@ -510,14 +464,10 @@ JWT subject claim.
 
 claim.issuer
 
-
-
 </td>
 <td valign="top">
 
 JWT issuer claim.
-
-
 
 </td>
 </tr>
@@ -526,14 +476,10 @@ JWT issuer claim.
 
 claim.audience
 
-
-
 </td>
 <td valign="top">
 
 JWT audience claim. This value may be a string, or an array of strings.
-
-
 
 </td>
 </tr>
@@ -542,14 +488,10 @@ JWT audience claim. This value may be a string, or an array of strings.
 
 claim.expiry
 
-
-
 </td>
 <td valign="top">
 
 Expiration date or time, expressed in seconds.
-
-
 
 </td>
 </tr>
@@ -558,14 +500,10 @@ Expiration date or time, expressed in seconds.
 
 expiry\_formatted
 
-
-
 </td>
 <td valign="top">
 
 Expiration date or time, formatted as a human readable string. Example: 2019-18-28T21:30:45.000+0000
-
-
 
 </td>
 </tr>
@@ -574,14 +512,10 @@ Expiration date or time, formatted as a human readable string. Example: 2019-18-
 
 seconds\_remaining
 
-
-
 </td>
 <td valign="top">
 
 Number of seconds before the token expires. If the token is expired, this number will be negative.
-
-
 
 </td>
 </tr>
@@ -590,14 +524,10 @@ Number of seconds before the token expires. If the token is expired, this number
 
 time\_remaining\_formatted
 
-
-
 </td>
 <td valign="top">
 
 Time remaining before the token expires, formatted as a human-readable string. Example: 00:59:59.926
-
-
 
 </td>
 </tr>
@@ -606,14 +536,10 @@ Time remaining before the token expires, formatted as a human-readable string. E
 
 is\_expired
 
-
-
 </td>
 <td valign="top">
 
 true or false
-
-
 
 </td>
 </tr>
@@ -622,14 +548,10 @@ true or false
 
 claim.issuedat
 
-
-
 </td>
 <td valign="top">
 
 Token issued Date, expressed in seconds since epoch.
-
-
 
 </td>
 </tr>
@@ -638,14 +560,10 @@ Token issued Date, expressed in seconds since epoch.
 
 claim.notbefore
 
-
-
 </td>
 <td valign="top">
 
 If the JWT includes a nbf claim, this variable will contain the value. This is expressed in seconds since epoch.
-
-
 
 </td>
 </tr>
@@ -654,16 +572,12 @@ If the JWT includes a nbf claim, this variable will contain the value. This is e
 
 valid
 
-
-
 </td>
 <td valign="top">
 
 In the case of VerifyJWT, this variable will be true when the signature is verified, and the current time is before the token expiry, and after the token notBefore value, if they are present. Otherwise false.
 
 In the case of DecodeJWT, this variable is not set.
-
-
 
 </td>
 </tr>
@@ -672,14 +586,10 @@ In the case of DecodeJWT, this variable is not set.
 
 claim.name
 
-
-
 </td>
 <td valign="top">
 
 The value of the named claim \(standard or additional\) in the payload. One of these will be set for every claim in the payload.
-
-
 
 </td>
 </tr>
@@ -688,14 +598,10 @@ The value of the named claim \(standard or additional\) in the payload. One of t
 
 header.name
 
-
-
 </td>
 <td valign="top">
 
 The value of the named header \(standard or additional\). One of these will be set for every additional header in the header portion of the JWT.
-
-
 
 </td>
 </tr>
@@ -704,14 +610,10 @@ The value of the named header \(standard or additional\). One of these will be s
 
 header.kid
 
-
-
 </td>
 <td valign="top">
 
 The Key ID, if added when the JWT was generated.
-
-
 
 </td>
 </tr>
@@ -720,14 +622,10 @@ The Key ID, if added when the JWT was generated.
 
 header.type
 
-
-
 </td>
 <td valign="top">
 
 Will be set to JWT.
-
-
 
 </td>
 </tr>
@@ -736,14 +634,10 @@ Will be set to JWT.
 
 payload-claim-names
 
-
-
 </td>
 <td valign="top">
 
 An array of claims supported by the JWT.
-
-
 
 </td>
 </tr>
@@ -752,14 +646,10 @@ An array of claims supported by the JWT.
 
 payload-json
 
-
-
 </td>
 <td valign="top">
 
 Payload in JSON format.
-
-
 
 </td>
 </tr>
@@ -768,14 +658,10 @@ Payload in JSON format.
 
 header-json
 
-
-
 </td>
 <td valign="top">
 
 Header in JSON format.
-
-
 
 </td>
 </tr>
@@ -792,14 +678,10 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -808,14 +690,10 @@ Cause
 
 steps.jwt.AlgorithmInTokenNotPresentInConfiguration
 
-
-
 </td>
 <td valign="top">
 
 Occurs when the verification policy has multiple algorithms.
-
-
 
 </td>
 </tr>
@@ -824,14 +702,10 @@ Occurs when the verification policy has multiple algorithms.
 
 steps.jwt.AlgorithmMismatch
 
-
-
 </td>
 <td valign="top">
 
 The algorithm specified in the Generate policy did not match the one expected in the Verify policy. The algorithms specified must match
-
-
 
 </td>
 </tr>
@@ -840,14 +714,10 @@ The algorithm specified in the Generate policy did not match the one expected in
 
 steps.jwt.FailedToDecode
 
-
-
 </td>
 <td valign="top">
 
 The policy was unable to decode the JWT. The JWT is possibly corrupted.
-
-
 
 </td>
 </tr>
@@ -856,14 +726,10 @@ The policy was unable to decode the JWT. The JWT is possibly corrupted.
 
 steps.jwt.GenerationFailed
 
-
-
 </td>
 <td valign="top">
 
 The policy was unable to generate the JWT.
-
-
 
 </td>
 </tr>
@@ -872,14 +738,10 @@ The policy was unable to generate the JWT.
 
 steps.jwt.InsufficientKeyLength
 
-
-
 </td>
 <td valign="top">
 
 For a key less than 32 bytes for the HS256 algorithm, less than 48 bytes for the HS386 algortithm, and less than 64 bytes for the HS512 algorithm.
-
-
 
 </td>
 </tr>
@@ -888,14 +750,10 @@ For a key less than 32 bytes for the HS256 algorithm, less than 48 bytes for the
 
 steps.jwt.InvalidClaim
 
-
-
 </td>
 <td valign="top">
 
 For a missing claim or claim mismatch, or a missing header or header mismatch.
-
-
 
 </td>
 </tr>
@@ -904,14 +762,10 @@ For a missing claim or claim mismatch, or a missing header or header mismatch.
 
 steps.jwt.InvalidCurve
 
-
-
 </td>
 <td valign="top">
 
 The curve specified by the key is not valid for the Elliptic Curve algorithm.
-
-
 
 </td>
 </tr>
@@ -920,14 +774,10 @@ The curve specified by the key is not valid for the Elliptic Curve algorithm.
 
 steps.jwt.InvalidJsonFormat
 
-
-
 </td>
 <td valign="top">
 
 Invalid JSON found in the header or payload.
-
-
 
 </td>
 </tr>
@@ -936,14 +786,10 @@ Invalid JSON found in the header or payload.
 
 steps.jwt.InvalidToken
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the JWT signature verification fails.
-
-
 
 </td>
 </tr>
@@ -952,14 +798,10 @@ This error occurs when the JWT signature verification fails.
 
 steps.jwt.JwtAudienceMismatch
 
-
-
 </td>
 <td valign="top">
 
 The audience claim failed on token verification.
-
-
 
 </td>
 </tr>
@@ -968,14 +810,10 @@ The audience claim failed on token verification.
 
 steps.jwt.JwtIssuerMismatch
 
-
-
 </td>
 <td valign="top">
 
 The issuer claim failed on token verification.
-
-
 
 </td>
 </tr>
@@ -984,14 +822,10 @@ The issuer claim failed on token verification.
 
 steps.jwt.JwtSubjectMismatch
 
-
-
 </td>
 <td valign="top">
 
 The subject claim failed on token verification.
-
-
 
 </td>
 </tr>
@@ -1000,14 +834,10 @@ The subject claim failed on token verification.
 
 steps.jwt.KeyIdMissing
 
-
-
 </td>
 <td valign="top">
 
 The Verify policy uses a JWKS as a source for public keys, but the signed JWT does not include a kid property in the header
-
-
 
 </td>
 </tr>
@@ -1016,14 +846,10 @@ The Verify policy uses a JWKS as a source for public keys, but the signed JWT do
 
 steps.jwt.KeyParsingFailed
 
-
-
 </td>
 <td valign="top">
 
 The public key could not be parsed from the given key information.
-
-
 
 </td>
 </tr>
@@ -1032,14 +858,10 @@ The public key could not be parsed from the given key information.
 
 steps.jwt.NoAlgorithmFoundInHeader
 
-
-
 </td>
 <td valign="top">
 
 Occurs when the JWT contains no algorithm header.
-
-
 
 </td>
 </tr>
@@ -1048,14 +870,10 @@ Occurs when the JWT contains no algorithm header.
 
 steps.jwt.NoMatchingPublicKey
 
-
-
 </td>
 <td valign="top">
 
 The Verify policy uses a JWKS as a source for public keys, but the kid in the signed JWT is not listed in the JWKS.
-
-
 
 </td>
 </tr>
@@ -1064,14 +882,10 @@ The Verify policy uses a JWKS as a source for public keys, but the kid in the si
 
 steps.jwt.SigningFailed
 
-
-
 </td>
 <td valign="top">
 
 In GenerateJWT, for a key less than the minimum size for the HS384 or HS512 algorithms
-
-
 
 </td>
 </tr>
@@ -1080,14 +894,10 @@ In GenerateJWT, for a key less than the minimum size for the HS384 or HS512 algo
 
 steps.jwt.TokenExpired
 
-
-
 </td>
 <td valign="top">
 
 The policy attempts to verify an expired token.
-
-
 
 </td>
 </tr>
@@ -1096,14 +906,10 @@ The policy attempts to verify an expired token.
 
 steps.jwt.TokenNotYetValid
 
-
-
 </td>
 <td valign="top">
 
 The token is not yet valid.
-
-
 
 </td>
 </tr>
@@ -1112,14 +918,10 @@ The token is not yet valid.
 
 steps.jwt.UnknownException
 
-
-
 </td>
 <td valign="top">
 
 An unknown exception occurred.
-
-
 
 </td>
 </tr>
@@ -1128,14 +930,10 @@ An unknown exception occurred.
 
 steps.jwt.WrongKeyType
 
-
-
 </td>
 <td valign="top">
 
 Wrong type of key specified. For example, if you specify an RSA key for an Elliptic Curve algorithm, or a curve key for an RSA algorithm.
-
-
 
 </td>
 </tr>
@@ -1152,21 +950,15 @@ The following fault variables are set when the policy triggers an error at runti
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -1175,21 +967,15 @@ Example
 
 fault.name="fault\_name"
 
-
-
 </td>
 <td valign="top">
 
 fault\_name is the name of the fault, as listed in the Runtime errors table above. The fault name is the last part of the fault code.
 
-
-
 </td>
 <td valign="top">
 
 fault.name Matches "TokenExpired"
-
-
 
 </td>
 </tr>
@@ -1198,21 +984,15 @@ fault.name Matches "TokenExpired"
 
 jwt.policy\_name.failed
 
-
-
 </td>
 <td valign="top">
 
 policy\_name is the user-specified name of the policy that threw the fault.
 
-
-
 </td>
 <td valign="top">
 
 jwt.JWT-Policy.failed = true
-
-
 
 </td>
 </tr>

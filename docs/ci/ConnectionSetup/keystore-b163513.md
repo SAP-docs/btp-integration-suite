@@ -92,14 +92,10 @@ When a customer starts using Cloud Integration, certain keystore entries have al
 
 Keystore Entry
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -107,8 +103,6 @@ Purpose
 <td valign="top">
 
 One signed *Key Pair* entry with the alias *sap\_cloudintegrationcertificate*.
-
-
 
 </td>
 <td valign="top">
@@ -127,14 +121,10 @@ One signed *Key Pair* entry with the alias *sap\_cloudintegrationcertificate*.
 
 Certain *Certificate* entries which are also owned by SAP.
 
-
-
 </td>
 <td valign="top">
 
 These are root certificates that the customer can use to set up connections with other SAP cloud systems such like SAP SuccessFactors, for example.
-
-
 
 </td>
 </tr>

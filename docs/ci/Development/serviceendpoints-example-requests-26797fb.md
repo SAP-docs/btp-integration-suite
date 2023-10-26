@@ -13,14 +13,10 @@ The Service Endpoints also provides you with the adapter-specific protocol infor
 
 Adapter
 
-
-
 </th>
 <th valign="top">
 
 Protocol Type
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Protocol Type
 
 SOAP
 
-
-
 </td>
 <td valign="top">
 
 SOAP
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ SOAP
 
 IDoc
 
-
-
 </td>
 <td valign="top">
 
 SOAP
-
-
 
 </td>
 </tr>
@@ -61,15 +49,11 @@ SOAP
 
 OData V2
 
-
-
 </td>
 <td valign="top">
 
 ODATAV2
 
-
-
 </td>
 </tr>
 <tr>
@@ -77,14 +61,10 @@ ODATAV2
 
 AS2
 
-
-
 </td>
 <td valign="top">
 
 AS2
-
-
 
 </td>
 </tr>
@@ -93,14 +73,10 @@ AS2
 
 AS4
 
-
-
 </td>
 <td valign="top">
 
 AS4
-
-
 
 </td>
 </tr>
@@ -109,14 +85,10 @@ AS4
 
 HTTPS
 
-
-
 </td>
 <td valign="top">
 
 REST
-
-
 
 </td>
 </tr>
@@ -142,22 +114,16 @@ REST
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Type
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -165,22 +131,16 @@ REST
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     \(Required\) Name of the entry point.
-
-
     
     </td>
     </tr>
@@ -188,22 +148,16 @@ REST
     <td valign="top">
     
     URL
-
-
     
     </td>
     <td valign="top">
     
     URL
-
-
     
     </td>
     <td valign="top">
     
     \(Required\) Fully qualified endpoint or the base path of the API.
-
-
     
     </td>
     </tr>
@@ -211,22 +165,16 @@ REST
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     Enumerated String
-
-
     
     </td>
     <td valign="top">
     
     \(Optional\) Possible values are DEV, TEST, PROD, SANDBOX.
-
-
     
     </td>
     </tr>
@@ -244,22 +192,16 @@ REST
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Type
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -267,22 +209,16 @@ REST
     <td valign="top">
     
     URL
-
-
     
     </td>
     <td valign="top">
     
     URL
-
-
     
     </td>
     <td valign="top">
     
     \(Required\) Fully qualified endpoint to the API definitions file.
-
-
     
     </td>
     </tr>
@@ -290,22 +226,16 @@ REST
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     Enumerated String
-
-
     
     </td>
     <td valign="top">
     
     \(Required\) Name of the API definition endpoint. Possible values are oas-yaml, oas-json, raml, edmx, wsdl.
-
-
     
     </td>
     </tr>

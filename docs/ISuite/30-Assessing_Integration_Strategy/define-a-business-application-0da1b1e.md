@@ -43,15 +43,11 @@ You can use SAP standard applications \(for example, SAP ERP\), or you can adjus
     <th valign="top">
 
     Tab
-
-
     
     </th>
     <th valign="top">
 
     Settings
-
-
     
     </th>
     </tr>
@@ -59,15 +55,11 @@ You can use SAP standard applications \(for example, SAP ERP\), or you can adjus
     <td valign="top">
     
     General
-
-
     
     </td>
     <td valign="top">
     
     Use this tab to specify application instances. Specify an instance name and a vendor.
-
-
     
     </td>
     </tr>
@@ -75,8 +67,6 @@ You can use SAP standard applications \(for example, SAP ERP\), or you can adjus
     <td valign="top">
     
     Integration Policies
-
-
     
     </td>
     <td valign="top">

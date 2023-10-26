@@ -36,49 +36,35 @@ The scenarios are grouped along the requirements met by the following components
 
 Sender handles retry
 
-
-
 </th>
 <th valign="top">
 
 SAP Cloud Integration handles retry
-
-
 
 </th>
 <th valign="top">
 
 SAP Cloud Integration idempotent
 
-
-
 </th>
 <th valign="top">
 
 SAP Cloud Integration - ID mapping required
-
-
 
 </th>
 <th valign="top">
 
 Receiver idempotent
 
-
-
 </th>
 <th valign="top">
 
 Side effects and constraints
 
-
-
 </th>
 <th valign="top">
 
 Scenario
-
-
 
 </th>
 </tr>
@@ -87,42 +73,30 @@ Scenario
 
 :heavy_check_mark:
 
+</td>
+<td valign="top">
 
+ 
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
-
-</td>
-<td valign="top">
-
- 
-
-
 
 </td>
 <td valign="top">
 
 :heavy_check_mark:
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -135,8 +109,6 @@ For a scenario using IDoc receiver adapter, see: [IDoc Receiver Handles Duplicat
 
 For a scenario using XI receiver adapter, see: [XI Receiver Handles Duplicates](xi-receiver-handles-duplicates-fcf026b.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -144,35 +116,25 @@ For a scenario using XI receiver adapter, see: [XI Receiver Handles Duplicates](
 
 :heavy_check_mark:
 
+</td>
+<td valign="top">
 
+ 
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
-
-</td>
-<td valign="top">
-
- 
-
-
 
 </td>
 <td valign="top">
 
 :heavy_check_mark:
-
-
 
 </td>
 <td valign="top">
@@ -180,8 +142,6 @@ For a scenario using XI receiver adapter, see: [XI Receiver Handles Duplicates](
 :heavy_check_mark:
 
 \(Message protocol doesn't contain unique ID\)
-
-
 
 </td>
 <td valign="top">
@@ -196,8 +156,6 @@ For a scenario using IDoc receiver adapter, see: [IDoc Receiver Handles Duplicat
 
 For a scenario using XI receiver adapter, see: [XI Receiver Handles Duplicates \(based on unique ID in payload\)](xi-receiver-handles-duplicates-based-on-unique-id-in-payload-3add2bf.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -205,42 +163,30 @@ For a scenario using XI receiver adapter, see: [XI Receiver Handles Duplicates \
 
  
 
+</td>
+<td valign="top">
 
+:heavy_check_mark:
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 <td valign="top">
 
 :heavy_check_mark:
 
-
-
 </td>
 <td valign="top">
 
  
-
-
-
-</td>
-<td valign="top">
-
- 
-
-
-
-</td>
-<td valign="top">
-
-:heavy_check_mark:
-
-
-
-</td>
-<td valign="top">
-
- 
-
-
 
 </td>
 <td valign="top">
@@ -255,8 +201,6 @@ For a scenario using IDoc receiver adapter with decoupling via JMS queues, see: 
 
 For a scenario using XI receiver adapter with decoupling via JMS queues, see: [XI Receiver Handles Duplicates \(with decoupling via JMS Queue\)](xi-receiver-handles-duplicates-with-decoupling-via-jms-queue-bd19abf.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -264,42 +208,30 @@ For a scenario using XI receiver adapter with decoupling via JMS queues, see: [X
 
  
 
+</td>
+<td valign="top">
 
+:heavy_check_mark:
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 <td valign="top">
 
 :heavy_check_mark:
 
-
-
 </td>
 <td valign="top">
 
  
-
-
-
-</td>
-<td valign="top">
-
- 
-
-
-
-</td>
-<td valign="top">
-
-:heavy_check_mark:
-
-
-
-</td>
-<td valign="top">
-
- 
-
-
 
 </td>
 <td valign="top">
@@ -310,8 +242,6 @@ Therefore, the middleware \(Cloud Integration\) needs to carry out the retry of 
 
 For a scenario using a data store, see: [Decoupling via Data Store](decoupling-via-data-store-d115669.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -319,35 +249,25 @@ For a scenario using a data store, see: [Decoupling via Data Store](decoupling-v
 
 :heavy_check_mark:
 
+</td>
+<td valign="top">
 
+ 
 
 </td>
 <td valign="top">
 
  
 
-
-
-</td>
-<td valign="top">
-
- 
-
-
-
 </td>
 <td valign="top">
 
 :heavy_check_mark:
 
-
-
 </td>
 <td valign="top">
 
 :heavy_check_mark:
-
-
 
 </td>
 <td valign="top">
@@ -355,8 +275,6 @@ For a scenario using a data store, see: [Decoupling via Data Store](decoupling-v
 :heavy_check_mark:
 
 \(Sender and receiver require different ID formats \(for example, ID format supported by AS2 adapter versus XI adapter\)\)
-
-
 
 </td>
 <td valign="top">
@@ -367,8 +285,6 @@ The system needs to generate a unique ID in the format dictated by the receiver 
 
 For an example with the AS2 sender adapter, see: [ID Mapping \(with AS2 Sender Adapter\)](id-mapping-with-as2-sender-adapter-fe142b3.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -376,42 +292,30 @@ For an example with the AS2 sender adapter, see: [ID Mapping \(with AS2 Sender A
 
 :heavy_check_mark:
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 :heavy_check_mark:
 
-
-
 </td>
 <td valign="top">
 
 :heavy_check_mark:
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -424,8 +328,6 @@ For an example with the splitter pattern, see: [ID Mapping \(with Splitter\)](id
 
 For an example with the multicast pattern. see: [ID Mapping \(with Multicast\)](id-mapping-with-multicast-55f2d4a.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -433,14 +335,10 @@ For an example with the multicast pattern. see: [ID Mapping \(with Multicast\)](
 
  
 
-
-
 </td>
 <td valign="top">
 
 :heavy_check_mark:
-
-
 
 </td>
 <td valign="top">
@@ -449,28 +347,20 @@ For an example with the multicast pattern. see: [ID Mapping \(with Multicast\)](
 
 \(Sender adapter\)
 
+</td>
+<td valign="top">
 
+ 
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
-
-</td>
-<td valign="top">
-
- 
-
-
 
 </td>
 <td valign="top">
@@ -486,8 +376,6 @@ For example, the XI adapter provides the following features:
 
 See: [XI Sender Adapter Handles Duplicates](xi-sender-adapter-handles-duplicates-7c9a0fd.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -495,14 +383,10 @@ See: [XI Sender Adapter Handles Duplicates](xi-sender-adapter-handles-duplicates
 
 :heavy_check_mark:
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -511,28 +395,20 @@ See: [XI Sender Adapter Handles Duplicates](xi-sender-adapter-handles-duplicates
 
 \(Idempotent process call\)
 
+</td>
+<td valign="top">
 
+ 
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
-
-</td>
-<td valign="top">
-
- 
-
-
 
 </td>
 <td valign="top">
@@ -541,8 +417,6 @@ The sender adapter isn't able to remove duplicates. However, the integration flo
 
 See: [Idempotent Process Call Handles Duplicates](idempotent-process-call-handles-duplicates-da18f73.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -550,14 +424,10 @@ See: [Idempotent Process Call Handles Duplicates](idempotent-process-call-handle
 
  
 
-
-
 </td>
 <td valign="top">
 
 :heavy_check_mark:
-
-
 
 </td>
 <td valign="top">
@@ -566,21 +436,15 @@ See: [Idempotent Process Call Handles Duplicates](idempotent-process-call-handle
 
 \(Idempotent process call\)
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -588,8 +452,6 @@ See: [Idempotent Process Call Handles Duplicates](idempotent-process-call-handle
 :heavy_check_mark:
 
 \(Side effects lead to non-deterministic behavior\)
-
-
 
 </td>
 <td valign="top">
@@ -598,8 +460,6 @@ A JMS queue is used to handle the retry of the message delivery if an error occu
 
 See: [Idempotent Process Call Handles Duplicates \(with JMS and Data Store Operations\)](idempotent-process-call-handles-duplicates-with-jms-and-data-store-operations-727724f.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -607,14 +467,10 @@ See: [Idempotent Process Call Handles Duplicates \(with JMS and Data Store Opera
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -623,21 +479,15 @@ See: [Idempotent Process Call Handles Duplicates \(with JMS and Data Store Opera
 
 \(Idempotent process call\)
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -646,16 +496,12 @@ See: [Idempotent Process Call Handles Duplicates \(with JMS and Data Store Opera
 
 \(Side effects lead to non-deterministic behavior\)
 
-
-
 </td>
 <td valign="top">
 
 The sender expects a response. If the same request is called again, the message must not be sent to the receiver system. Instead of this, an alternative response is to be created.
 
 See: [Idempotent Process Call Handles Duplicates \(With Alternative Response\)](idempotent-process-call-handles-duplicates-with-alternative-response-a870621.md)
-
-
 
 </td>
 </tr>
@@ -664,14 +510,10 @@ See: [Idempotent Process Call Handles Duplicates \(With Alternative Response\)](
 
 :heavy_check_mark:
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -680,28 +522,20 @@ See: [Idempotent Process Call Handles Duplicates \(With Alternative Response\)](
 
 \(Idempotent process call\)
 
+</td>
+<td valign="top">
 
+ 
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
-
-</td>
-<td valign="top">
-
- 
-
-
 
 </td>
 <td valign="top">
@@ -709,8 +543,6 @@ See: [Idempotent Process Call Handles Duplicates \(With Alternative Response\)](
 This scenario combines the aggregator pattern with the quality of service Exactly Once.
 
 See: [Aggregator](aggregator-86f97fd.md)
-
-
 
 </td>
 </tr>

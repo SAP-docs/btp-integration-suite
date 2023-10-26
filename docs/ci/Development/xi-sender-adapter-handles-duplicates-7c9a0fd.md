@@ -39,15 +39,11 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -55,15 +51,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *Quality Of Service* 
-
-
     
     </td>
     <td valign="top">
     
     *Exactly Once* 
-
-
     
     </td>
     </tr>
@@ -71,15 +63,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *Temporary Storage* 
-
-
     
     </td>
     <td valign="top">
     
     *Data Store* 
-
-
     
     </td>
     </tr>
@@ -108,15 +96,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -124,15 +108,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     `OWN`
-
-
     
     </td>
     </tr>
@@ -140,15 +120,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *User*
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -156,15 +132,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Password*
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

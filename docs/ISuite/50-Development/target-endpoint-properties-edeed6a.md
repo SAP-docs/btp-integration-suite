@@ -55,21 +55,15 @@ Configure the properties on TargetEndpoint HTTPTargetConnection elements:
 
 Property Name
 
-
-
 </th>
 <th valign="top">
 
 Default Value
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -78,21 +72,15 @@ Description
 
 keepalive.timeout.millis
 
-
-
 </td>
 <td valign="top">
 
 60000 milliseconds
 
-
-
 </td>
 <td valign="top">
 
 Connection idle timeout for the target connection in the connection pool. If the connection in the pool is idle beyond the specified limit, then the connection is closed.
-
-
 
 </td>
 </tr>
@@ -101,21 +89,15 @@ Connection idle timeout for the target connection in the connection pool. If the
 
 connect.timeout.millis
 
-
-
 </td>
 <td valign="top">
 
 3000 milliseconds
 
-
-
 </td>
 <td valign="top">
 
 Target connection timeout. returns an HTTP 503 status code if a connection timeout occurs.
-
-
 
 </td>
 </tr>
@@ -124,14 +106,10 @@ Target connection timeout. returns an HTTP 503 status code if a connection timeo
 
 io.timeout.millis
 
-
-
 </td>
 <td valign="top">
 
 55000 milliseconds
-
-
 
 </td>
 <td valign="top">
@@ -159,21 +137,15 @@ If there’s no data to read for the specified number of milliseconds, or if the
 
 supports.http10
 
-
-
 </td>
 <td valign="top">
 
 true
 
-
-
 </td>
 <td valign="top">
 
 If true and the client sends a 1.0 request, the target is also sent a 1.0 request. Otherwise 1.1 request is sent to target.
-
-
 
 </td>
 </tr>
@@ -182,21 +154,15 @@ If true and the client sends a 1.0 request, the target is also sent a 1.0 reques
 
 supports.http11
 
-
-
 </td>
 <td valign="top">
 
 true
 
-
-
 </td>
 <td valign="top">
 
 If true and the client sends a 1.1 request, the target is also sent a 1.1 request, otherwise 1.0 request is sent to target.
-
-
 
 </td>
 </tr>
@@ -205,14 +171,10 @@ If true and the client sends a 1.1 request, the target is also sent a 1.1 reques
 
 success.codes
 
-
-
 </td>
 <td valign="top">
 
 N/A
-
-
 
 </td>
 <td valign="top">
@@ -233,8 +195,6 @@ If you want only HTTP code 400 to be treated as a success code, set the property
 
 By setting HTTP code 400 as the only success code, the codes 1xx, 2xx, and 3xx are treated as failures.
 
-
-
 </td>
 </tr>
 <tr>
@@ -242,14 +202,10 @@ By setting HTTP code 400 as the only success code, the codes 1xx, 2xx, and 3xx a
 
 compression.algorithm
 
-
-
 </td>
 <td valign="top">
 
 N/A
-
-
 
 </td>
 <td valign="top">
@@ -262,8 +218,6 @@ Supported values:
 
 For example, when a client submits a request that uses `gzip` compression, API Management forwards the request to target using `gzip` compression. You can configure compression algorithms to be explicitly applied by setting this property on the TargetEndpoint or ProxyEndpoint.
 
-
-
 </td>
 </tr>
 <tr>
@@ -271,21 +225,15 @@ For example, when a client submits a request that uses `gzip` compression, API M
 
 enable.method.override
 
-
-
 </td>
 <td valign="top">
 
 false
 
-
-
 </td>
 <td valign="top">
 
 For the specified HTTP method, sets an X-HTTP-Method-Override header on the outbound request to the target service. For example, `<Property><name>="GET.override.method"</name><value>POST</value></Property>`.
-
-
 
 </td>
 </tr>
@@ -294,14 +242,10 @@ For the specified HTTP method, sets an X-HTTP-Method-Override header on the outb
 
 request.streaming.enabled
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 <td valign="top">
@@ -312,8 +256,6 @@ True: HTTP request payloads are not read into a buffer, they are streamed to the
 
 For more information about enabling streaming, see [Enable Streaming of Requests and Responses in an API Proxy](enable-streaming-of-requests-and-responses-in-an-api-proxy-b43d826.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -321,21 +263,15 @@ For more information about enabling streaming, see [Enable Streaming of Requests
 
 \*.override.method
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 For the specified HTTP method, sets an X-HTTP-Method-Override header on the outbound request. For example, `<Property><name>="GET.override.method"</name><value>POST</value></Property>`.
-
-
 
 </td>
 </tr>
@@ -344,14 +280,10 @@ For the specified HTTP method, sets an X-HTTP-Method-Override header on the outb
 
 response.streaming.enabled
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 <td valign="top">
@@ -362,8 +294,6 @@ true: HTTP response payloads aren’t read into a buffer; they’re streamed as-
 
 For more information about enabling streaming, see [Enable Streaming of Requests and Responses in an API Proxy](enable-streaming-of-requests-and-responses-in-an-api-proxy-b43d826.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -371,21 +301,15 @@ For more information about enabling streaming, see [Enable Streaming of Requests
 
 request.retain.headers.enabled
 
-
-
 </td>
 <td valign="top">
 
 true
 
-
-
 </td>
 <td valign="top">
 
 By default, all HTTP headers on outbound messages are retained. On setting it to true, all HTTP headers present on the inbound request are set on the outbound request.
-
-
 
 </td>
 </tr>
@@ -394,21 +318,15 @@ By default, all HTTP headers on outbound messages are retained. On setting it to
 
 request.retain.headers
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 Set HTTP headers from the request on the outbound request to the target service. For example, to 'passthrough' the `User-Agent` header, set the value of `request.retain.headers` to User-Agent. Specify multiple HTTP headers as a comma-separated list, for example, User-Agent,Referer,Accept-Language. This property overrides `request.retain.headers.enabled`. If `request.retain.headers.enabled` is set to false, any headers specified in the `request.retain.headers` property are still set on the outbound message.
-
-
 
 </td>
 </tr>
@@ -417,21 +335,15 @@ Set HTTP headers from the request on the outbound request to the target service.
 
 response.retain.headers.enabled
 
-
-
 </td>
 <td valign="top">
 
 true
 
-
-
 </td>
 <td valign="top">
 
 By default, all HTTP headers on outbound messages are retained. On setting it to true, all HTTP headers present on the inbound response from the target service are set on the outbound response before it’s passed to the ProxyEndpoint.
-
-
 
 </td>
 </tr>
@@ -440,21 +352,15 @@ By default, all HTTP headers on outbound messages are retained. On setting it to
 
 response.retain.headers
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 Set HTTP headers from the response on the outbound response before it is passed to the ProxyEndpoint. For example, to `passthrough` the `Expires` header, set the value of `response.retain.headers` to Expires. Specify multiple HTTP headers as a comma-separated list, for example, Expires,Set-Cookie. This property overrides `response.retain.headers.enabled`. If`response.retain.headers.enabled` is set to false, any headers specified in the `response.retain.headers` property are still set on the outbound message.
-
-
 
 </td>
 </tr>
@@ -463,21 +369,15 @@ Set HTTP headers from the response on the outbound response before it is passed 
 
 retain.queryparams
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 Set query parameters on the outbound request. For example, to include the query parameter `apikey` from the request message, set retain.queryparams to apikey. Specify multiple query parameters as a comma-separated list, for example, apikey, environment. This property overrides retain.queryparams.enabled.
-
-
 
 </td>
 </tr>
@@ -486,21 +386,15 @@ Set query parameters on the outbound request. For example, to include the query 
 
 retain.queryparams.enabled
 
-
-
 </td>
 <td valign="top">
 
 true
 
-
-
 </td>
 <td valign="top">
 
 By default, all query parameters on outbound requests are retained. On setting it to true, all query parameters present on the inbound request are set on the outbound request to the target service.
-
-
 
 </td>
 </tr>

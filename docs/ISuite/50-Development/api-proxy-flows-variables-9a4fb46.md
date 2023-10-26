@@ -13,35 +13,25 @@ Supported API proxy flow variables are listed in the API proxy flow Variables ta
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Scope
 
-
-
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Permission
-
-
 
 </th>
 </tr>
@@ -50,35 +40,25 @@ Permission
 
 current.flow.name
 
-
-
 </td>
 <td valign="top">
 
 The name of the currently executed flow \(such as "PreFlow", "PostFlow", or the name of a conditional flow\).
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -87,35 +67,25 @@ Read
 
 current.flow.description
 
-
-
 </td>
 <td valign="top">
 
 The description of the currently executed flow.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -124,35 +94,25 @@ Read
 
 proxy.flow.name
 
-
-
 </td>
 <td valign="top">
 
 The name of the most recently executed ProxyEndpoint flow \(such as "PreFlow", "PostFlow", or the name of a conditional flow\).
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -161,35 +121,25 @@ Read
 
 proxy.flow.description
 
-
-
 </td>
 <td valign="top">
 
 The description of the most recently executed ProxyEndpoint flow.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -198,35 +148,25 @@ Read
 
 target.flow.name
 
-
-
 </td>
 <td valign="top">
 
 The name of the most recently executed TargetEndpoint flow \(such as "PreFlow", "PostFlow", or the name of a conditional flow\).
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -235,35 +175,25 @@ Read
 
 target.flow.description
 
-
-
 </td>
 <td valign="top">
 
 The description of the most recently executed TargetEndpoint flow.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>

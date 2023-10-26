@@ -28,15 +28,11 @@ If you want to send a message with attachments, but the protocol \(for example, 
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
      
-
-
     
     </th>
     </tr>
@@ -44,8 +40,6 @@ If you want to send a message with attachments, but the protocol \(for example, 
     <td valign="top">
     
     *Multipart Subtype*
-
-
     
     </td>
     <td valign="top">
@@ -53,8 +47,6 @@ If you want to send a message with attachments, but the protocol \(for example, 
     Defines how the Multipart message is related to the main message.
 
     For more information, check out the specification at [https://www.w3.org/Protocols/rfc1341/7\_2\_Multipart.html](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)
-
-
     
     </td>
     </tr>
@@ -62,8 +54,6 @@ If you want to send a message with attachments, but the protocol \(for example, 
     <td valign="top">
     
     *Add Multipart Headers Inline*
-
-
     
     </td>
     <td valign="top">
@@ -75,8 +65,6 @@ If you want to send a message with attachments, but the protocol \(for example, 
     [MIME Multipart Messages](mime-multipart-messages-3816537.md)
 
     [MIME Multipart Encoder: Handling Message Headers \(Examples\)](mime-multipart-encoder-handling-message-headers-examples-b446281.md)
-
-
     
     </td>
     </tr>
@@ -84,15 +72,11 @@ If you want to send a message with attachments, but the protocol \(for example, 
     <td valign="top">
     
     *Include Headers* \(only when *Add Multipart Headers Inline* selected\)
-
-
     
     </td>
     <td valign="top">
     
     With this attribute, you can specify which headers of the inbound message are to be treated in the specified way. You can enter a regular expression. For example, the expression`h.*` indicates headers that start with character `h`.
-
-
     
     </td>
     </tr>
@@ -100,8 +84,6 @@ If you want to send a message with attachments, but the protocol \(for example, 
     <td valign="top">
     
     *Fold Long Headers* \(only when *Add Multipart Headers Inline* is not selected\)
-
-
     
     </td>
     <td valign="top">

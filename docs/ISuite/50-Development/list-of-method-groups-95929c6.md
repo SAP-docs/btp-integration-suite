@@ -18,21 +18,15 @@ There are 24 method groups with each containing many methods. Depending on the m
 
 Method Group
 
-
-
 </th>
 <th valign="top">
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Parameters
-
-
 
 </th>
 </tr>
@@ -41,8 +35,6 @@ Parameters
 
 Admin Method Group
 
-
-
 </td>
 <td valign="top">
 
@@ -50,14 +42,10 @@ Admin Method Group
 
 You can get analytics data for a given date, presented as a compressed JSON file.
 
-
-
 </td>
 <td valign="top">
 
 *Type*: Specify the type for analytics to retrieve.
-
-
 
 </td>
 </tr>
@@ -65,8 +53,6 @@ You can get analytics data for a given date, presented as a compressed JSON file
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -99,16 +85,12 @@ You can get analytics data for a given date, presented as a compressed JSON file
 
  
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -117,14 +99,10 @@ You can get analytics data for a given date, presented as a compressed JSON file
 
 You can clear an app resolution by providing App ID.
 
-
-
 </td>
 <td valign="top">
 
 *App ID*: Specify the ID of the application whose resolution you want to clear or undo.
-
-
 
 </td>
 </tr>
@@ -132,8 +110,6 @@ You can clear an app resolution by providing App ID.
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -142,14 +118,10 @@ You can clear an app resolution by providing App ID.
 
 You can cancel restricted Apps for an org or workspace.
 
-
-
 </td>
 <td valign="top">
 
 *Request ID*: Specify the ID of the request to cancel.
-
-
 
 </td>
 </tr>
@@ -157,8 +129,6 @@ You can cancel restricted Apps for an org or workspace.
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -167,14 +137,10 @@ You can cancel restricted Apps for an org or workspace.
 
 You can uninstall an app from one or many workspaces, or an entire enterprise organization by providing App ID.
 
-
-
 </td>
 <td valign="top">
 
 *App ID*: Specify the ID of the application that you want to uninstall.
-
-
 
 </td>
 </tr>
@@ -183,16 +149,12 @@ You can uninstall an app from one or many workspaces, or an entire enterprise or
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.auth.policy.assignEntities*
 
 You can assign entities to a particular authentication policy by providing the Entry IDs, Entity Type and Policy Name.
-
-
 
 </td>
 <td valign="top">
@@ -215,8 +177,6 @@ You can assign entities to a particular authentication policy by providing the E
 
  
 
-
-
 </td>
 <td valign="top">
 
@@ -224,14 +184,10 @@ You can assign entities to a particular authentication policy by providing the E
 
 You can fetch all the entities assigned to a particular authentication policy by providing policy name.
 
-
-
 </td>
 <td valign="top">
 
 *Policy Name*: Specify your email ID for the name of the authentication policy.
-
-
 
 </td>
 </tr>
@@ -240,16 +196,12 @@ You can fetch all the entities assigned to a particular authentication policy by
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.auth.policy.removeEntities*
 
 You can remove specified entities from a specified authentication policy.
-
-
 
 </td>
 <td valign="top">
@@ -272,16 +224,12 @@ You can remove specified entities from a specified authentication policy.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.barriers.create*
 
 You can create an Information Barrier.
-
-
 
 </td>
 <td valign="top">
@@ -305,8 +253,6 @@ You can create an Information Barrier.
 
  
 
-
-
 </td>
 <td valign="top">
 
@@ -314,14 +260,10 @@ You can create an Information Barrier.
 
 You can delete an Information Barrier by providing the already created Barrier ID.
 
-
-
 </td>
 <td valign="top">
 
 *Barrier ID*: Specify the ID of the barrier you're trying to delete
-
-
 
 </td>
 </tr>
@@ -329,8 +271,6 @@ You can delete an Information Barrier by providing the already created Barrier I
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -339,14 +279,10 @@ You can delete an Information Barrier by providing the already created Barrier I
 
 You can get list of all Information Barriers for your organization.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -355,16 +291,12 @@ You can get list of all Information Barriers for your organization.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.barriers.update*
 
 You can update an existing Information Barrier.
-
-
 
 </td>
 <td valign="top">
@@ -383,8 +315,6 @@ You can update an existing Information Barrier.
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -409,8 +339,6 @@ You can update an existing Information Barrier.
 
 *Channel ID*: Specify the ID of the channel
 
-
-
 </td>
 </tr>
 <tr>
@@ -418,16 +346,12 @@ You can update an existing Information Barrier.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.conversations.create*
 
 You can create a private channel or a public channel.
-
-
 
 </td>
 <td valign="top">
@@ -445,14 +369,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.conversations.invite* You can invite new users to a channel by this API endpoint.
-
-
 
 </td>
 <td valign="top">
@@ -470,14 +390,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.conversations.rename* This API endpoint can be used by any admin to rename a channel's retention policy.
-
-
 
 </td>
 <td valign="top">
@@ -494,8 +410,6 @@ You can create a private channel or a public channel.
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -513,8 +427,6 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -522,14 +434,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.conversations.restrictAccess.addGroup* You can add an allowlist of IDP groups for accessing a channel
-
-
 
 </td>
 <td valign="top">
@@ -546,14 +454,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.conversations.restrictAccess.removeGroup* You can remove a linked IDP group linked from a private channel.
-
-
 
 </td>
 <td valign="top">
@@ -571,14 +475,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.conversations.setConversationPrefs* You can set the posting permissions for a public or private channel.
-
-
 
 </td>
 <td valign="top">
@@ -596,14 +496,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.conversations.setCustomRetention* This API endpoint can be used by any admin to set a channel's retention policy.
-
-
 
 </td>
 <td valign="top">
@@ -621,14 +517,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.emoji.add* This API endpoint is to add an emoji.
-
-
 
 </td>
 <td valign="top">
@@ -646,14 +538,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.emoji.addAlias* This API endpoint is to add an emoji Alias.
-
-
 
 </td>
 <td valign="top">
@@ -670,8 +558,6 @@ You can create a private channel or a public channel.
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -692,30 +578,22 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 *admin.emoji.remove* This API endpoint is to remove an emoji across an Enterprise Grid organization.
 
-
-
 </td>
 <td valign="top">
 
 *Name*: Specify the name of the public or the private channel.
-
-
 
 </td>
 </tr>
@@ -724,14 +602,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.emoji.rename* This API endpoint is to rename an emoji.
-
-
 
 </td>
 <td valign="top">
@@ -749,8 +623,6 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
@@ -765,16 +637,12 @@ You can create a private channel or a public channel.
 
 *Invite Request ID*: Specify the ID of the request.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -791,8 +659,6 @@ You can create a private channel or a public channel.
 
 *Team ID*: Specify the ID of the workspace.
 
-
-
 </td>
 </tr>
 <tr>
@@ -800,14 +666,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.teams.create* You can create an enterprise team.
-
-
 
 </td>
 <td valign="top">
@@ -825,14 +687,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.teams.settings.setDefaultChannels* You can set the default channels of a workspace in settings.
-
-
 
 </td>
 <td valign="top">
@@ -850,14 +708,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.teams.settings.setDescription* You can set the description of a given workspace in settings.
-
-
 
 </td>
 <td valign="top">
@@ -875,14 +729,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.teams.settings.setDiscoverability* You can set the discoverability of a given workspace in settings.
-
-
 
 </td>
 <td valign="top">
@@ -900,14 +750,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.teams.settings.setIcon* You can set the icon of a given workspace in settings by providing Team ID and image URL.
-
-
 
 </td>
 <td valign="top">
@@ -925,14 +771,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.teams.settings.setName* You can set the name of a given workspace in settings by providing Name and Team ID.
-
-
 
 </td>
 <td valign="top">
@@ -949,8 +791,6 @@ You can create a private channel or a public channel.
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -977,14 +817,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.usergroups.addTeams* You can associate one or more default workspaces with an organization-wide IDP group by providing below-mentioned parameters.
-
-
 
 </td>
 <td valign="top">
@@ -1002,21 +838,15 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.usergroups.listChannels* You can list the channels linked to an org-level IDP group \(user group\).
 
-
-
 </td>
 <td valign="top">
 
 *User Group ID*: Specify the ID of the IDP group to add default workspaces for.
-
-
 
 </td>
 </tr>
@@ -1024,8 +854,6 @@ You can create a private channel or a public channel.
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1055,14 +883,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.users.invite* You can invite a user to a workspace by providing Team ID, Channel IDs and Email.
-
-
 
 </td>
 <td valign="top">
@@ -1081,8 +905,6 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
@@ -1098,8 +920,6 @@ You can create a private channel or a public channel.
 
 *User IDs*: Specify the ID of the users.
 
-
-
 </td>
 </tr>
 <tr>
@@ -1107,14 +927,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.users.session.invalidate* You can revoke a single session for a user. Then, the user will be forced to login to Slack.users.
-
-
 
 </td>
 <td valign="top">
@@ -1132,21 +948,15 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.users.session.reset* You can reset valid sessions on all devices for a given user by providing respective User ID.
 
-
-
 </td>
 <td valign="top">
 
 *User ID*: Specify the ID of the user to wipe sessions for.
-
-
 
 </td>
 </tr>
@@ -1155,14 +965,10 @@ You can create a private channel or a public channel.
 
  
 
-
-
 </td>
 <td valign="top">
 
 *admin.users.setExpiration* You can set an expiration for a guest user using User ID and Timestamp of expiration.
-
-
 
 </td>
 <td valign="top">
@@ -1180,21 +986,15 @@ You can create a private channel or a public channel.
 
 API Method Group
 
-
-
 </td>
 <td valign="top">
 
 *api.test* You can test API.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1203,21 +1003,15 @@ API Method Group
 
 Apps Method Group
 
-
-
 </td>
 <td valign="top">
 
 *apps.connections.open* With this API endpoint, you can generate a temporary Socket Mode WebSocket URL that your app can connect to in order to receive events and interactive payloads over.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1225,22 +1019,16 @@ Apps Method Group
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 *apps.event.authorizations.list* You can get a list of authorizations for the given event context. Each authorization represents an app installation that the event is visible to.
 
-
-
 </td>
 <td valign="top">
 
 *Event Context*: Specify the event context.
-
-
 
 </td>
 </tr>
@@ -1248,8 +1036,6 @@ Apps Method Group
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1265,16 +1051,12 @@ Apps Method Group
 
 *Manifest*: Specify the JSON app manifest encoded as a string. This manifest must use a valid app manifest.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1290,8 +1072,6 @@ Apps Method Group
 
 *App ID* : Specify the ID of the app.
 
-
-
 </td>
 </tr>
 <tr>
@@ -1299,14 +1079,10 @@ Apps Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *apps.manifest.update* By this API endpoint, you can update an app manifest from an existing app.
-
-
 
 </td>
 <td valign="top">
@@ -1324,14 +1100,10 @@ Apps Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *apps.uninstall* By this API endpoint, you can uninstall your app from workspace.
-
-
 
 </td>
 <td valign="top">
@@ -1349,8 +1121,6 @@ Apps Method Group
 
 Auth Method Group
 
-
-
 </td>
 <td valign="top">
 
@@ -1366,8 +1136,6 @@ Auth Method Group
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1375,21 +1143,15 @@ Auth Method Group
 
 Bots Method Group
 
-
-
 </td>
 <td valign="top">
 
 *bots.info* By this API endpoint, you can access information about a bot user.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1398,14 +1160,10 @@ Bots Method Group
 
 Calls Method Group
 
-
-
 </td>
 <td valign="top">
 
 *calls.add* By this API endpoint, you can add a new Call.
-
-
 
 </td>
 <td valign="top">
@@ -1423,8 +1181,6 @@ Calls Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
@@ -1440,16 +1196,12 @@ Calls Method Group
 
 *ID*: Specify the ID which is returned when registering the call using the calls.add method.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1475,8 +1227,6 @@ Calls Method Group
 <td valign="top">
 
 Chat Method Group
-
-
 
 </td>
 <td valign="top">
@@ -1507,14 +1257,10 @@ Chat Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *chat.deleteScheduledMessage* This API endpoint deletes a pending scheduled message from the queue.
-
-
 
 </td>
 <td valign="top">
@@ -1532,14 +1278,10 @@ Chat Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *chat.getPermalink* This API endpoint retrieves a permalink URL for a specific extant message.
-
-
 
 </td>
 <td valign="top">
@@ -1556,8 +1298,6 @@ Chat Method Group
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1584,14 +1324,10 @@ Chat Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *chat.postEphemeral* This API endpoint sends an ephemeral message to a user in a channel.
-
-
 
 </td>
 <td valign="top">
@@ -1610,21 +1346,15 @@ Chat Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *chat.scheduledMessages.list* You can get a list of scheduled messages in chat.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1633,14 +1363,10 @@ Chat Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *chat.scheduleMessage* You can schedule a message to be sent to a channel.
-
-
 
 </td>
 <td valign="top">
@@ -1659,14 +1385,10 @@ Chat Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *chat.unfurl*You can provide custom unfurl behavior for user-posted URL.
-
-
 
 </td>
 <td valign="top">
@@ -1690,21 +1412,15 @@ Chat Method Group
 
 Conversations Method Group
 
-
-
 </td>
 <td valign="top">
 
 *conversations.acceptSharedInvite* This API endpoint accept an invitation to a Slack Connect channel.
 
-
-
 </td>
 <td valign="top">
 
 *Channel Name*: Specify the name of the channel.
-
-
 
 </td>
 </tr>
@@ -1712,8 +1428,6 @@ Conversations Method Group
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1729,16 +1443,12 @@ Conversations Method Group
 
 *Invite ID*: Specify the ID of the Slack Connect invite.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1764,30 +1474,22 @@ Conversations Method Group
 
 *Channel*: Specify the ID of the channel.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 *conversations.create* You can initiate a public or private channel-based conversation.
 
-
-
 </td>
 <td valign="top">
 
 *Name*: Specify the name of the public or the private channel.
-
-
 
 </td>
 </tr>
@@ -1795,8 +1497,6 @@ Conversations Method Group
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1804,8 +1504,6 @@ Conversations Method Group
 *conversations.invite* This Conversations API method invites 1-1000 users to a public or private channel.
 
 This Conversations API method's required scopes depend on the type of channel-like object you are working with. To use the method, you will need at least one of the channels:, groups:, im: or mpim: scopes corresponding to the conversation type you're working with.
-
-
 
 </td>
 <td valign="top">
@@ -1823,14 +1521,10 @@ This Conversations API method's required scopes depend on the type of channel-li
 
  
 
-
-
 </td>
 <td valign="top">
 
 *conversations.kick* This conversations API method removes a user from a conversation.
-
-
 
 </td>
 <td valign="top">
@@ -1848,8 +1542,6 @@ This Conversations API method's required scopes depend on the type of channel-li
 
  
 
-
-
 </td>
 <td valign="top">
 
@@ -1865,16 +1557,12 @@ This Conversations API method's required scopes depend on the type of channel-li
 
  
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1901,14 +1589,10 @@ This Conversations API method's required scopes depend on the type of channel-li
 
  
 
-
-
 </td>
 <td valign="top">
 
 *conversations.rename* This conversations API method helps rename a conversation.
-
-
 
 </td>
 <td valign="top">
@@ -1926,14 +1610,10 @@ This Conversations API method's required scopes depend on the type of channel-li
 
  
 
-
-
 </td>
 <td valign="top">
 
 *conversations.setPurpose* This conversations API method helps set the purpose for a conversation.
-
-
 
 </td>
 <td valign="top">
@@ -1951,14 +1631,10 @@ This Conversations API method's required scopes depend on the type of channel-li
 
  
 
-
-
 </td>
 <td valign="top">
 
 *conversations.setTopic* This conversations API method helps set the topic for a conversation.
-
-
 
 </td>
 <td valign="top">
@@ -1976,14 +1652,10 @@ This Conversations API method's required scopes depend on the type of channel-li
 
 Dialog Method Group
 
-
-
 </td>
 <td valign="top">
 
 *dialog.open* You can open a dialog with a user
-
-
 
 </td>
 <td valign="top">
@@ -2001,8 +1673,6 @@ Dialog Method Group
 
 DND Method Group
 
-
-
 </td>
 <td valign="top">
 
@@ -2019,8 +1689,6 @@ DND Method Group
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -2028,21 +1696,15 @@ DND Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *dnd.teamInfo* This DND API retrieves the Do Not Disturb status for up to 50 users on a team.
 
-
-
 </td>
 <td valign="top">
 
 *Users*: Specify the list of users to whom DND message will be retrieved.
-
-
 
 </td>
 </tr>
@@ -2051,21 +1713,15 @@ DND Method Group
 
 Emoji Method Group
 
-
-
 </td>
 <td valign="top">
 
 *emoji.list* This Emoji API lists custom emoji for a team.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2074,14 +1730,10 @@ Emoji Method Group
 
 Files Method Group
 
-
-
 </td>
 <td valign="top">
 
 *files.comment.delete* This File API deletes an existing comment on a file. Only the original author of the comment or a Team Administrator may delete a file comment.
-
-
 
 </td>
 <td valign="top">
@@ -2099,8 +1751,6 @@ Files Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
@@ -2117,16 +1767,12 @@ Files Method Group
 
 *File*: Specify the file name.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -2153,14 +1799,10 @@ Files Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *files.remote.add* This File API adds a file from a remote service.
-
-
 
 </td>
 <td valign="top">
@@ -2179,21 +1821,15 @@ Files Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *files.remote.share* This File API shares a remote file into a channel.
 
-
-
 </td>
 <td valign="top">
 
 *Channels*: Comma-separated list of channel IDs where the file will be shared.
-
-
 
 </td>
 </tr>
@@ -2202,21 +1838,15 @@ Files Method Group
 
 Openid Method Group
 
-
-
 </td>
 <td valign="top">
 
 *openid.connect.userInfo* This OpenID API method gets the identity of a user who has authorized Sign in with Slack.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2224,8 +1854,6 @@ Openid Method Group
 <td valign="top">
 
 Pins Method Group
-
-
 
 </td>
 <td valign="top">
@@ -2242,8 +1870,6 @@ Pins Method Group
 
 *Channel*: Specify the Channel ID.
 
-
-
 </td>
 </tr>
 <tr>
@@ -2251,14 +1877,10 @@ Pins Method Group
 
 Reactions Method Group
 
-
-
 </td>
 <td valign="top">
 
 *reactions.add* This Reactions API method adds reactions to an item.
-
-
 
 </td>
 <td valign="top">
@@ -2277,8 +1899,6 @@ Reactions Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
@@ -2293,8 +1913,6 @@ Reactions Method Group
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -2302,21 +1920,15 @@ Reactions Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *reactions.remove* This Reactions API method removes a reaction from an item.
 
-
-
 </td>
 <td valign="top">
 
 *Name*: Specify the name of the public or the private channel.
-
-
 
 </td>
 </tr>
@@ -2325,14 +1937,10 @@ Reactions Method Group
 
 Reminders Method Group
 
-
-
 </td>
 <td valign="top">
 
 *reminders.add* This Reminders API method creates a reminder.
-
-
 
 </td>
 <td valign="top">
@@ -2350,8 +1958,6 @@ Reminders Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
@@ -2367,8 +1973,6 @@ Reminders Method Group
 
 *Reminder*: Specify the ID of the reminder.
 
-
-
 </td>
 </tr>
 <tr>
@@ -2376,21 +1980,15 @@ Reminders Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *reminders.list* This Reminders API method lists all reminders created by or for a given user.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2399,21 +1997,15 @@ Reminders Method Group
 
 RTM Method Group
 
-
-
 </td>
 <td valign="top">
 
 *rtm.connect* This RTM API method starts Real Time Messaging session.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2421,8 +2013,6 @@ RTM Method Group
 <td valign="top">
 
 Search Method Group
-
-
 
 </td>
 <td valign="top">
@@ -2439,16 +2029,12 @@ Search Method Group
 
 *Query*: Specify the search query. May contain Booleans, etc. This method allows users and applications to search both messages and files in a single call
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Stars Method Group
-
-
 
 </td>
 <td valign="top">
@@ -2465,16 +2051,12 @@ Stars Method Group
 
  
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Teams Method Group
-
-
 
 </td>
 <td valign="top">
@@ -2495,8 +2077,6 @@ Teams Method Group
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -2504,21 +2084,15 @@ Teams Method Group
 
 Usergroups Method Group
 
-
-
 </td>
 <td valign="top">
 
 *usergroups.create* This Usergroups API Method creates a new user group
 
-
-
 </td>
 <td valign="top">
 
 *Name*: Specify the name of the public or the private channel.
-
-
 
 </td>
 </tr>
@@ -2526,8 +2100,6 @@ Usergroups Method Group
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -2545,30 +2117,22 @@ Usergroups Method Group
 
 *Usergroup*: Specify the encoded ID of the User Group.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 *usergroups.list* This method returns a list of all users within a User Group. This Conversations API method opens a multi-person direct message or just a 1:1 direct message.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2577,14 +2141,10 @@ Usergroups Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *usergroups.users.update* This method updates the list of users that belong to a User Group. This method replaces all users in a User Group with the list of users provided in the users parameter.
-
-
 
 </td>
 <td valign="top">
@@ -2601,8 +2161,6 @@ Usergroups Method Group
 <td valign="top">
 
 Users Method Group
-
-
 
 </td>
 <td valign="top">
@@ -2624,30 +2182,22 @@ Users Method Group
 
  
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 *users.info* This method gets information about a user.
 
-
-
 </td>
 <td valign="top">
 
 *User*: Specify ID of the user
-
-
 
 </td>
 </tr>
@@ -2655,22 +2205,16 @@ Users Method Group
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 *users.lookupByEmail* This method finds a user with an email address.
 
-
-
 </td>
 <td valign="top">
 
 *Email*: Specify the email address of the user.
-
-
 
 </td>
 </tr>
@@ -2679,21 +2223,15 @@ Users Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *users.setPresence* This method sets user presence manually.
 
-
-
 </td>
 <td valign="top">
 
 *Presence*: Specify the presence to either auto or away.
-
-
 
 </td>
 </tr>
@@ -2701,8 +2239,6 @@ Users Method Group
 <td valign="top">
 
 Views Method Group
-
-
 
 </td>
 <td valign="top">
@@ -2729,14 +2265,10 @@ Views Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *views.publish* This method publishes a static view for a User.
-
-
 
 </td>
 <td valign="top">
@@ -2754,14 +2286,10 @@ Views Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *views.update* This method updates an existing view.
-
-
 
 </td>
 <td valign="top">
@@ -2779,21 +2307,15 @@ Views Method Group
 
 Workflows Method Group
 
-
-
 </td>
 <td valign="top">
 
 *workflows.stepCompleted* This method indicates that an app's step in a workflow completed execution.
 
-
-
 </td>
 <td valign="top">
 
 *Workflow Step Execute ID*: Specify the Context identifier that maps to the correct workflow step execution.
-
-
 
 </td>
 </tr>
@@ -2802,14 +2324,10 @@ Workflows Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *workflows.stepFailed* This method indicates that an app's step in a workflow failed to execute.
-
-
 
 </td>
 <td valign="top">
@@ -2827,21 +2345,15 @@ Workflows Method Group
 
  
 
-
-
 </td>
 <td valign="top">
 
 *workflows.updateStep* This method updates the configuration for a workflow step.
 
-
-
 </td>
 <td valign="top">
 
 *Workflow Step Edit ID*: A context identifier provided with view\_submission payloads used to call back to workflows.updateStep.
-
-
 
 </td>
 </tr>

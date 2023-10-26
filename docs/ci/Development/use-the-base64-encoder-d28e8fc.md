@@ -44,35 +44,25 @@ The Content Modifier stores the encoded image string in the exchange property `p
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Name
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -81,35 +71,25 @@ Value
 
 Create
 
-
-
 </td>
 <td valign="top">
 
 productImage
-
-
 
 </td>
 <td valign="top">
 
 Expression
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 $\{in.body\}
-
-
 
 </td>
 </tr>

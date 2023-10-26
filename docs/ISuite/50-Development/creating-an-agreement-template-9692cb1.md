@@ -33,15 +33,11 @@ Follow the procedure below to create an agreement template.
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -49,15 +45,11 @@ Follow the procedure below to create an agreement template.
     <td valign="top">
     
     **Name**
-
-
     
     </td>
     <td valign="top">
     
     Name of the agreement template
-
-
     
     </td>
     </tr>
@@ -65,15 +57,11 @@ Follow the procedure below to create an agreement template.
     <td valign="top">
     
     **Description**
-
-
     
     </td>
     <td valign="top">
     
     Provide a description of your agreement template
-
-
     
     </td>
     </tr>
@@ -81,15 +69,11 @@ Follow the procedure below to create an agreement template.
     <td valign="top">
     
     **Version**
-
-
     
     </td>
     <td valign="top">
     
     It is set to *1.0* by default. You can modify this value according to your requirement.
-
-
     
     </td>
     </tr>
@@ -103,15 +87,11 @@ Follow the procedure below to create an agreement template.
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -119,15 +99,11 @@ Follow the procedure below to create an agreement template.
     <td valign="top">
     
     **System**
-
-
     
     </td>
     <td valign="top">
     
     Select a system from the drop-down list
-
-
     
     </td>
     </tr>
@@ -135,15 +111,11 @@ Follow the procedure below to create an agreement template.
     <td valign="top">
     
     **Type System**
-
-
     
     </td>
     <td valign="top">
     
     Select a type system from the drop-down list
-
-
     
     </td>
     </tr>
@@ -153,8 +125,6 @@ Follow the procedure below to create an agreement template.
     Contact Person
 
     This field appears only when you choose *GS1 XML* as the type system.
-
-
     
     </td>
     <td valign="top">
@@ -172,15 +142,11 @@ Follow the procedure below to create an agreement template.
     <td valign="top">
     
     **Type System Version**
-
-
     
     </td>
     <td valign="top">
     
     Select a type system version from the drop-down list
-
-
     
     </td>
     </tr>
@@ -188,15 +154,11 @@ Follow the procedure below to create an agreement template.
     <td valign="top">
     
     **Identifier**
-
-
     
     </td>
     <td valign="top">
     
     Select an identifier using the value help provided
-
-
     
     </td>
     </tr>
@@ -216,15 +178,11 @@ Follow the procedure below to create an agreement template.
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -232,15 +190,11 @@ Follow the procedure below to create an agreement template.
     <td valign="top">
     
     **Name**
-
-
     
     </td>
     <td valign="top">
     
     Provide a name for your business transaction
-
-
     
     </td>
     </tr>
@@ -248,15 +202,11 @@ Follow the procedure below to create an agreement template.
     <td valign="top">
     
     **Business Transaction Pattern**
-
-
     
     </td>
     <td valign="top">
     
     Select a pattern for the business transaction
-
-
     
     </td>
     </tr>
@@ -264,15 +214,11 @@ Follow the procedure below to create an agreement template.
     <td valign="top">
     
     **My Company Role**
-
-
     
     </td>
     <td valign="top">
     
     Check the radio button based on whether your company is an *Initiator* or *Reactor*
-
-
     
     </td>
     </tr>

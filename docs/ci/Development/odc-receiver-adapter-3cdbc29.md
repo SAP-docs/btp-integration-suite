@@ -31,14 +31,10 @@ Select the Connection tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -47,14 +43,10 @@ Description
 
 *Address*
 
-
-
 </td>
 <td valign="top">
 
 Enter the URL of the SAP NetWeaver Gateway OData Channel that you are accessing.
-
-
 
 </td>
 </tr>
@@ -63,14 +55,10 @@ Enter the URL of the SAP NetWeaver Gateway OData Channel that you are accessing.
 
 *Client*
 
-
-
 </td>
 <td valign="top">
 
 Enter the backend system client you want to connect to.
-
-
 
 </td>
 </tr>
@@ -79,14 +67,10 @@ Enter the backend system client you want to connect to.
 
 *Namespace*
 
-
-
 </td>
 <td valign="top">
 
 Enter the namespace of the service.
-
-
 
 </td>
 </tr>
@@ -95,14 +79,10 @@ Enter the namespace of the service.
 
 *Service Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the service.
-
-
 
 </td>
 </tr>
@@ -111,14 +91,10 @@ Enter the name of the service.
 
 *Version*
 
-
-
 </td>
 <td valign="top">
 
 enter the version of the service.
-
-
 
 </td>
 </tr>
@@ -126,8 +102,6 @@ enter the version of the service.
 <td valign="top">
 
 *Authentication*
-
-
 
 </td>
 <td valign="top">
@@ -148,14 +122,10 @@ Select the tuthentication method you want to use for connecting to the system.
 
 *Credential Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the alias you used while deploying basic authentication credentials.
-
-
 
 </td>
 </tr>
@@ -164,14 +134,10 @@ Enter the alias you used while deploying basic authentication credentials.
 
 *Location ID*
 
-
-
 </td>
 <td valign="top">
 
 Enter the location ID.
-
-
 
 </td>
 </tr>
@@ -188,14 +154,10 @@ Select the Processing tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -204,14 +166,10 @@ Description
 
 *Operation*
 
-
-
 </td>
 <td valign="top">
 
 Select the operation that you want to perform from the dropdown list.
-
-
 
 </td>
 </tr>
@@ -220,14 +178,10 @@ Select the operation that you want to perform from the dropdown list.
 
 *Resource Path*
 
-
-
 </td>
 <td valign="top">
 
 Enter the path to the resource that you want to perform the operation on.
-
-
 
 </td>
 </tr>
@@ -235,8 +189,6 @@ Enter the path to the resource that you want to perform the operation on.
 <td valign="top">
 
 *EDMX*
-
-
 
 </td>
 <td valign="top">
@@ -264,15 +216,11 @@ If you want to connect to a new system, perform the following substeps:
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -280,15 +228,11 @@ If you want to connect to a new system, perform the following substeps:
     <td valign="top">
     
     System
-
-
     
     </td>
     <td valign="top">
     
     Enter the system name that you want to specify. You can use this name as reference for selecting the same system for future use.
-
-
     
     </td>
     </tr>
@@ -296,15 +240,11 @@ If you want to connect to a new system, perform the following substeps:
     <td valign="top">
     
     Address
-
-
     
     </td>
     <td valign="top">
     
     Enter the URL of the system that you are connecting to.
-
-
     
     </td>
     </tr>
@@ -312,15 +252,11 @@ If you want to connect to a new system, perform the following substeps:
     <td valign="top">
     
     Client
-
-
     
     </td>
     <td valign="top">
     
     Enter the backend system client that you are connecting to.
-
-
     
     </td>
     </tr>
@@ -328,15 +264,11 @@ If you want to connect to a new system, perform the following substeps:
     <td valign="top">
     
     Namespace
-
-
     
     </td>
     <td valign="top">
     
     Enter the namespace of the service.
-
-
     
     </td>
     </tr>
@@ -344,15 +276,11 @@ If you want to connect to a new system, perform the following substeps:
     <td valign="top">
     
     Service Name
-
-
     
     </td>
     <td valign="top">
     
     Enter the name of the service.
-
-
     
     </td>
     </tr>
@@ -360,15 +288,11 @@ If you want to connect to a new system, perform the following substeps:
     <td valign="top">
     
     Version
-
-
     
     </td>
     <td valign="top">
     
     Enter the version of the service.
-
-
     
     </td>
     </tr>
@@ -376,15 +300,11 @@ If you want to connect to a new system, perform the following substeps:
     <td valign="top">
     
     Location ID
-
-
     
     </td>
     <td valign="top">
     
     Enter the location ID.
-
-
     
     </td>
     </tr>
@@ -392,15 +312,11 @@ If you want to connect to a new system, perform the following substeps:
     <td valign="top">
     
     Authenticate Using
-
-
     
     </td>
     <td valign="top">
     
     Select the authentication method you want to use for connecting to the system. You can choose `Basic Authentication` or `Deployed Credentials`.
-
-
     
     </td>
     </tr>
@@ -408,15 +324,11 @@ If you want to connect to a new system, perform the following substeps:
     <td valign="top">
     
     Credential Name
-
-
     
     </td>
     <td valign="top">
     
     Enter the credential name.
-
-
     
     </td>
     </tr>

@@ -41,14 +41,10 @@ The pattern for the name and base path for an API Proxy, when you’re using the
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -57,14 +53,10 @@ Value
 
 Version
 
-
-
 </td>
 <td valign="top">
 
 v1
-
-
 
 </td>
 </tr>
@@ -73,14 +65,10 @@ v1
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 Name\_v1
-
-
 
 </td>
 </tr>
@@ -89,14 +77,10 @@ Name\_v1
 
 Base Path
 
-
-
 </td>
 <td valign="top">
 
 /v1/SalesOrder
-
-
 
 </td>
 </tr>

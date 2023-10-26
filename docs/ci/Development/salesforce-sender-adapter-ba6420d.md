@@ -40,14 +40,10 @@ Select the *Connection* tab and provide the sender information.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -55,8 +51,6 @@ Description
 <td valign="top">
 
 *Authentication*
-
-
 
 </td>
 <td valign="top">
@@ -81,14 +75,10 @@ Select one of the following types:
 
 \(if *Authentication* is *OAuth Client Credentials*\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the recipient's endpoint URL, the Salesforce login base URL, for user authentication.
-
-
 
 </td>
 </tr>
@@ -99,14 +89,10 @@ Specifies the recipient's endpoint URL, the Salesforce login base URL, for user 
 
 \(if *Authentication* is *OAuth Client Credentials*\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the name of the *User Credentials* artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Salesforce. This property enables the system to fetch the *User Credentials* security material deployed on Cloud Integration.
-
-
 
 </td>
 </tr>
@@ -117,14 +103,10 @@ Specifies the name of the *User Credentials* artifact that contains the credenti
 
 \(if *Authentication* is *OAuth Client Credentials*\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the name of the *Secure Parameter* artifact that contains the security token needed to connect to Salesforce. This property enables the system to fetch the Security Token from the security material deployed on Cloud Integration. This field can be omitted if your IP has been whitelisted on Salesforce
-
-
 
 </td>
 </tr>
@@ -135,16 +117,12 @@ Specifies the name of the *Secure Parameter* artifact that contains the security
 
 \(if *Authentication* is *OAuth Client Credentials*\)
 
-
-
 </td>
 <td valign="top">
 
 ​
 
 Specifies the name of the *OAuth Client Credentials* artifact that contains the Salesforce’s OAuth consumer key-client secret pair. This property enables the system to retrieve the OAuth security material deployed on Cloud Integration.
-
-
 
 </td>
 </tr>
@@ -154,8 +132,6 @@ Specifies the name of the *OAuth Client Credentials* artifact that contains the 
 *Audience*
 
 \(if *Authentication* is *OAuth JWT Bearer*\)
-
-
 
 </td>
 <td valign="top">
@@ -182,14 +158,10 @@ By default, the URL `https://login.salesforce.com` is used. Based on your scenar
 
 \(if *Authentication* is *OAuth JWT Bearer*\)
 
-
-
 </td>
 <td valign="top">
 
 The alias name of the deployed *Secure Parameter* artifact. It specifies the Salesforce username.
-
-
 
 </td>
 </tr>
@@ -200,14 +172,10 @@ The alias name of the deployed *Secure Parameter* artifact. It specifies the Sal
 
 \(if *Authentication* is *OAuth JWT Bearer*\)
 
-
-
 </td>
 <td valign="top">
 
 The alias name of the deployed *Secure Parameter* artifact. It specifies the OAuth Consumer Key of the connected app for which the certificate was registered.
-
-
 
 </td>
 </tr>
@@ -218,14 +186,10 @@ The alias name of the deployed *Secure Parameter* artifact. It specifies the OAu
 
 \(if *Authentication* is *OAuth JWT Bearer*\)
 
-
-
 </td>
 <td valign="top">
 
 The alias name of the added JKS file in the keystore as a key pair. It consists of a key and certificate to sign the JWT.
-
-
 
 </td>
 </tr>
@@ -236,14 +200,10 @@ The alias name of the added JKS file in the keystore as a key pair. It consists 
 
 \(if *Authentication* is *OAuth JWT Bearer*\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the validity of the assertion in seconds.
-
-
 
 </td>
 </tr>
@@ -252,14 +212,10 @@ Specifies the validity of the assertion in seconds.
 
 *Polling Interval \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the polling interval expressed in milliseconds. The polling interval allows you to control the waiting time before checking if the existing connection is still active or needs to be reestablished.
-
-
 
 </td>
 </tr>
@@ -268,16 +224,12 @@ Specifies the polling interval expressed in milliseconds. The polling interval a
 
 *Process Errors as an Event* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option to treat errors while connecting to Salesforce as events.
 
 *Process Errors as an Event* creates message exceptions in Cloud Integration for each connection error during Salesforce Streaming. Errors that prevent Cloud Integration from picking up events via streaming are raised as a message exception in Cloud Integration. An example exception message during streaming is `Organization concurrent user limit exceeded`.
-
-
 
 </td>
 </tr>
@@ -294,14 +246,10 @@ Select the *Processing* tab and provide the recipient information.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -309,8 +257,6 @@ Description
 <td valign="top">
 
 *Event Type*
-
-
 
 </td>
 <td valign="top">
@@ -336,8 +282,6 @@ Select one of the following types:
 <td valign="top">
 
 *Replay Id Approach*
-
-
 
 </td>
 <td valign="top">
@@ -368,14 +312,10 @@ There are 3 possible settings:
 
 *Operation*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the operation to perform towards Salesforce by choosing one of the provided operation options. Currently, the *Subscribe* option is available.
-
-
 
 </td>
 </tr>
@@ -384,14 +324,10 @@ Specifies the operation to perform towards Salesforce by choosing one of the pro
 
 *Channel Name*
 
-
-
 </td>
 <td valign="top">
 
 Made of a Topic name preceded with a prefix. For instance, a PushTopic can be prefixed with `/topic/`. Example: `/topic/MyPushTopic`. Note that in general the names are case-sensitive.
-
-
 
 </td>
 </tr>
@@ -400,14 +336,10 @@ Made of a Topic name preceded with a prefix. For instance, a PushTopic can be pr
 
 *Replay Id*
 
-
-
 </td>
 <td valign="top">
 
 Refers to the position of the event in the event stream. The *Replay Id* is populated by Salesforce and refers to the position of the event in the event stream. Note that the *Replay Id* values are not guaranteed to be continuous for consecutive events. By specifying the value of the *Replay Id*, the integration flow retrieves events that are within the retention window and that have followed the specified *Replay Id*. Example: If *Replay Id* 6 is specified, the integration flow receives all messages with a *Replay Id* greater than 6.
-
-
 
 </td>
 </tr>
@@ -416,14 +348,10 @@ Refers to the position of the event in the event stream. The *Replay Id* is popu
 
 *API Version*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the version of the API to be used for retrieving data from Salesforce. The default version is 51.0.
-
-
 
 </td>
 </tr>
@@ -432,14 +360,10 @@ Specifies the version of the API to be used for retrieving data from Salesforce.
 
 *Payload Format*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the format of the request message to be sent to and the response to be returned from Salesforce. Possible values include *Application/XML* and *Application/JSON*. Note that the default value is *Application/XML* 
-
-
 
 </td>
 </tr>
@@ -448,14 +372,10 @@ Specifies the format of the request message to be sent to and the response to be
 
 *Pretty Print*
 
-
-
 </td>
 <td valign="top">
 
 Select the *Pretty Print* option to have the XML payload nicely formatted and its readability improved.
-
-
 
 </td>
 </tr>

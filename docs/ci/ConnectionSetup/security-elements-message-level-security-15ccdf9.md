@@ -15,49 +15,35 @@ The following tables provide a summary of how the required security elements \(i
 
 Security Option/Standard
 
-
-
 </th>
 <th valign="top">
 
 Direction
-
-
 
 </th>
 <th valign="top">
 
 Protection Method on Tenant
 
-
-
 </th>
 <th valign="top">
 
 Required by tenant administrator …
 
-
-
 </th>
 <th valign="top">
 
 … to do the following
-
-
 
 </th>
 <th valign="top">
 
 Required by sender/receiver administrator …
 
-
-
 </th>
 <th valign="top">
 
 … to do the following
-
-
 
 </th>
 </tr>
@@ -68,35 +54,25 @@ PKCS\#7, WS-Security, XML Digital Signature \(uses X.509 certificates\)
 
 XML Digital Signature: only sign/encrypt
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
 Inbound \(sender calls tenant\)
-
-
 
 </td>
 <td valign="top">
 
 Decrypt
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -105,14 +81,10 @@ Decrypt
 
 Is used to encrypt the message from the sender \(that is to be encrypted by the tenant\).
 
-
-
 </td>
 <td valign="top">
 
 Import into sender keystore
-
-
 
 </td>
 </tr>
@@ -121,8 +93,6 @@ Import into sender keystore
 
 Verify
 
-
-
 </td>
 <td valign="top">
 
@@ -130,28 +100,20 @@ Verify
 
 Is used by the tenant to verify the signature of the message sent from the sender system.
 
-
-
 </td>
 <td valign="top">
 
 Import into tenant keystore.
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -160,14 +122,10 @@ Import into tenant keystore.
 
 Outbound \(tenant calls receiver\)
 
-
-
 </td>
 <td valign="top">
 
 Encrypt
-
-
 
 </td>
 <td valign="top">
@@ -176,28 +134,20 @@ Encrypt
 
 Is used by the tenant to encrypt the message \(sent to the receiver\).
 
-
-
 </td>
 <td valign="top">
 
 Import into tenant keystore.
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -206,21 +156,15 @@ Import into tenant keystore.
 
 Sign
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -229,14 +173,10 @@ Sign
 
 Is used by the receiver to verify the message sent from the tenant.
 
-
-
 </td>
 <td valign="top">
 
 Import into receiver keystore
-
-
 
 </td>
 </tr>
@@ -245,35 +185,25 @@ Import into receiver keystore
 
 OpenPGP \(uses PGP keys\)
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
 Inbound \(sender calls tenant\)
-
-
 
 </td>
 <td valign="top">
 
 Decrypt
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -284,14 +214,10 @@ Is used to encrypt the message from the sender \(that is to be encrypted by the 
 
 To make sure that the public key originates from the correct source and that it has not been changed on its way, consider the note below this table.
 
-
-
 </td>
 <td valign="top">
 
 Import into sender PGP public keyring
-
-
 
 </td>
 </tr>
@@ -299,8 +225,6 @@ Import into sender PGP public keyring
 <td valign="top">
 
 Verify
-
-
 
 </td>
 <td valign="top">
@@ -311,28 +235,20 @@ Is used by the tenant to verify the signature of the message sent from the sende
 
 To make sure that the public key originates from the correct source and that it has not been changed on its way, consider the note below this table.
 
-
-
 </td>
 <td valign="top">
 
 Import into tenant PGP public keyring.
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -341,14 +257,10 @@ Import into tenant PGP public keyring.
 
 Outbound \(tenant calls receiver\)
 
-
-
 </td>
 <td valign="top">
 
 Encrypt
-
-
 
 </td>
 <td valign="top">
@@ -359,28 +271,20 @@ Is used by the tenant to encrypt the message \(sent to the receiver\).
 
 To make sure that the public key originates from the correct source and that it has not been changed on its way, consider the note below this table.
 
-
-
 </td>
 <td valign="top">
 
 Import into tenant PGP public keyring.
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -389,21 +293,15 @@ Import into tenant PGP public keyring.
 
 Sign
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -414,14 +312,10 @@ Is used by the receiver to verify the message sent from the tenant.
 
 To make sure that the public key originates from the correct source and that it has not been changed on its way, consider the note below this table.
 
-
-
 </td>
 <td valign="top">
 
 Import into receiver PGP public keyring
-
-
 
 </td>
 </tr>

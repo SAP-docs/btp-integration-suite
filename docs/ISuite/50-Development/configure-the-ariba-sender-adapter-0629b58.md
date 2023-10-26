@@ -29,14 +29,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -45,14 +41,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -69,14 +61,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -85,14 +73,10 @@ Description
 
 *Ariba Network ID* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the ID associated with the Ariba Network. The default value is set to AN01000000001.
-
-
 
 </td>
 </tr>
@@ -101,14 +85,10 @@ Enter the ID associated with the Ariba Network. The default value is set to AN01
 
 *cXML version* 
 
-
-
 </td>
 <td valign="top">
 
 Default value provided by SAP is 1.2.025. If you are entering the version, it must be above 1.2.018.
-
-
 
 </td>
 </tr>
@@ -117,14 +97,10 @@ Default value provided by SAP is 1.2.025. If you are entering the version, it mu
 
 *User Agent* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the user agent details. The convention is a textual string representing the client system conducting the cXML conversation. It must consist of the software company name and the product name.
-
-
 
 </td>
 </tr>
@@ -133,14 +109,10 @@ Enter the user agent details. The convention is a textual string representing th
 
 *Language* 
 
-
-
 </td>
 <td valign="top">
 
 Language used for constructing the cXML conversation. The only language supported is EN.
-
-
 
 </td>
 </tr>
@@ -157,14 +129,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -173,14 +141,10 @@ Description
 
 *Ariba Network URL*
 
-
-
 </td>
 <td valign="top">
 
 Specify the URL to which the cXML requests are posted, or from where the cXMLs are polled.
-
-
 
 </td>
 </tr>
@@ -188,8 +152,6 @@ Specify the URL to which the cXML requests are posted, or from where the cXMLs a
 <td valign="top">
 
 *Connection Mode*
-
-
 
 </td>
 <td valign="top">
@@ -210,8 +172,6 @@ Select one of the options based on the description given below:
 
 *Account Type*
 
-
-
 </td>
 <td valign="top">
 
@@ -231,14 +191,10 @@ Select one of the options based on the description given below:
 
 *Request Type*
 
-
-
 </td>
 <td valign="top">
 
 Select one of the options based on the request types of buyer/supplier that you want to poll.
-
-
 
 </td>
 </tr>
@@ -247,14 +203,10 @@ Select one of the options based on the request types of buyer/supplier that you 
 
 *Maximum Messages*
 
-
-
 </td>
 <td valign="top">
 
 Enter the number of messages to be polled from the Ariba Network for the above-selected *Request Type*. The maximum allowed value is 200.
-
-
 
 </td>
 </tr>
@@ -262,8 +214,6 @@ Enter the number of messages to be polled from the Ariba Network for the above-s
 <td valign="top">
 
 *System ID*
-
-
 
 </td>
 <td valign="top">
@@ -281,8 +231,6 @@ Provide the *System ID* for receiving the requests from a specific ERP system be
 <td valign="top">
 
 *Authentication Domain*
-
-
 
 </td>
 <td valign="top">
@@ -303,8 +251,6 @@ Select one of the options based on the description given below:
 
 *Authentication*
 
-
-
 </td>
 <td valign="top">
 
@@ -324,16 +270,12 @@ Select one of the options based on the description given below:
 
 *Credential Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter a name. This name is treated as an alias to the secure store where the user credentials are deployed. This value should be set according to the Authentication selected above. If you have selected *Client Certificate*, then enter the alias details in the *Private Key Alias* field.
 
 This alias is used to identify the keystore credentials deployed on the SAP Cloud Integration account.
-
-
 
 </td>
 </tr>
@@ -350,14 +292,10 @@ Select the *Scheduler* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -366,14 +304,10 @@ Description
 
 *Schedule on Day*
 
-
-
 </td>
 <td valign="top">
 
 Specify a date and time or interval for executing the data polling.
-
-
 
 </td>
 </tr>
@@ -381,8 +315,6 @@ Specify a date and time or interval for executing the data polling.
 <td valign="top">
 
 *Schedule to Recur*
-
-
 
 </td>
 <td valign="top">
@@ -408,14 +340,10 @@ Specify a recurring pattern for consistently running the polling process. It can
 
 *On Date* \(only if *Schedule on Day* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Specific date on which the data polling process has to be initiated to fetch data from the Ariba system.
-
-
 
 </td>
 </tr>
@@ -424,14 +352,10 @@ Specific date on which the data polling process has to be initiated to fetch dat
 
 *On Time*
 
-
-
 </td>
 <td valign="top">
 
 The time at which the data polling cycle has to be initiated. For example, if you want the data polling to be started at 4:10 p.m., enter 16:10. Note that the time must be entered in 24-hour format.
-
-
 
 </td>
 </tr>
@@ -439,8 +363,6 @@ The time at which the data polling cycle has to be initiated. For example, if yo
 <td valign="top">
 
 Every `xx` minutes between `HH` hours and `HH` hours
-
-
 
 </td>
 <td valign="top">
@@ -459,14 +381,10 @@ The connector fetches data from the Ariba system every ‘xx’ minutes between 
 
 *Time Zone*
 
-
-
 </td>
 <td valign="top">
 
 Select the time zone you want to use as reference for scheduling the data polling cycle.
-
-
 
 </td>
 </tr>

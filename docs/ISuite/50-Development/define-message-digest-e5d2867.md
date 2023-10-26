@@ -49,15 +49,11 @@ You can use this feature to implement scenarios like the following ones:
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -65,8 +61,6 @@ You can use this feature to implement scenarios like the following ones:
     <td valign="top">
     
     **Filter \(XPath\)**
-
-
     
     </td>
     <td valign="top">
@@ -74,8 +68,6 @@ You can use this feature to implement scenarios like the following ones:
     If you only want to transform part of the message, enter an XPath expression to specify the part \(optional attribute\).
 
     You can also define a prefix namespace mapping.
-
-
     
     </td>
     </tr>
@@ -83,8 +75,6 @@ You can use this feature to implement scenarios like the following ones:
     <td valign="top">
     
     **Canonicalization Method**
-
-
     
     </td>
     <td valign="top">
@@ -122,8 +112,6 @@ You can use this feature to implement scenarios like the following ones:
     <td valign="top">
     
     **Digest Algorithm**
-
-
     
     </td>
     <td valign="top">
@@ -146,8 +134,6 @@ You can use this feature to implement scenarios like the following ones:
     <td valign="top">
     
     **Target Header Name**
-
-
     
     </td>
     <td valign="top">
@@ -157,8 +143,6 @@ You can use this feature to implement scenarios like the following ones:
     The value of this header contains the base64-encoded message digest.
 
     By default, the header has the name `SAPMessageDigest`, but you can also define another header name.
-
-
     
     </td>
     </tr>

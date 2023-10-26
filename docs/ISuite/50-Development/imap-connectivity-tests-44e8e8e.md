@@ -18,14 +18,10 @@ When you have chosen the IMAP \(Internet Message Access Protocol\) connection, t
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -34,16 +30,12 @@ Description
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the host name of the receiver.
 
 The host name must **not** contain any path or schema, for example, `https://`\). In particular, you must **not** enter a URL as the host name.
-
-
 
 </td>
 </tr>
@@ -52,8 +44,6 @@ The host name must **not** contain any path or schema, for example, `https://`\)
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
@@ -61,16 +51,12 @@ Enter the port that is to be used for outbound communication.
 
 Standard port is `143 (IMAP/STARTTLS)` or `993/IMAPS` 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type*
-
-
 
 </td>
 <td valign="top">
@@ -92,8 +78,6 @@ Select a proxy type from the drop-down list:
 
 *Location ID*
 
-
-
 </td>
 <td valign="top">
 
@@ -101,16 +85,12 @@ Only if `On-Premise` is selected as *Proxy Type*.
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you 've defined for this instance, in the destination configuration on the cloud side
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Protection* 
-
-
 
 </td>
 <td valign="top">
@@ -136,8 +116,6 @@ Select the protection type:
 
 *Authentication* 
 
-
-
 </td>
 <td valign="top">
 
@@ -161,14 +139,10 @@ Choose the mechanism to authenticate against the server. Possible values are:
 
 *Credential Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter a credential name or select one from the drop-down list.
-
-
 
 </td>
 </tr>
@@ -176,8 +150,6 @@ Enter a credential name or select one from the drop-down list.
 <td valign="top">
 
 *Validate Server Certificate* 
-
-
 
 </td>
 <td valign="top">
@@ -192,8 +164,6 @@ When you’ve selected the *Validate Server Certificate* option \(which is the d
 
 
 If it wasn’t successful and there’s an error message, you can unselect the *Validate Server Certificate* option.
-
-
 
 </td>
 </tr>
@@ -215,8 +185,6 @@ If you check*List Folders*, you get a list of mail folders.
 
 If you select *Check Mailbox Content*, the folders are checked and the total number of mails and the number of unread mails is displayed.
 
-
-
 </td>
 </tr>
 <tr>
@@ -224,14 +192,10 @@ If you select *Check Mailbox Content*, the folders are checked and the total num
 
 *Folder* \(mandatory\)
 
-
-
 </td>
 <td valign="top">
 
 If you select *Check Mailbox Content*, you can specify a folder.
-
-
 
 </td>
 </tr>

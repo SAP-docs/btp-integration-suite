@@ -13,14 +13,10 @@ In the *Deployment Status* view, you can see whether the artifact is deployed or
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -28,8 +24,6 @@ Description
 <td valign="top">
 
 Deployment Status
-
-
 
 </td>
 <td valign="top">
@@ -40,16 +34,12 @@ The following values are possible: *Deployed*, *Not Deployed*.
 
 If the status is *Deployed*, a link is shown. Click the link to navigate to the *Monitor* view of the artifact.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Runtime Status
-
-
 
 </td>
 <td valign="top">
@@ -60,16 +50,12 @@ An entry is shown only if *Deployment Status* is *Deployed*.
 
 The runtime status can have the values as described under [Runtime Status](runtime-status-c14a7b1.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Deployed By
-
-
 
 </td>
 <td valign="top">
@@ -78,16 +64,12 @@ User who deployed the artifact
 
 An entry is shown only if *Deployment Status* is *Deployed*.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Deployed On
-
-
 
 </td>
 <td valign="top">
@@ -96,8 +78,6 @@ Time when artifact was deployed
 
 An entry is shown only if *Deployment Status* is *Deployed*.
 
-
-
 </td>
 </tr>
 <tr>
@@ -105,16 +85,12 @@ An entry is shown only if *Deployment Status* is *Deployed*.
 
 Deployed Version
 
-
-
 </td>
 <td valign="top">
 
 Version of artifact that is deployed
 
 An entry is shown only if *Deployment Status* is *Deployed*.
-
-
 
 </td>
 </tr>

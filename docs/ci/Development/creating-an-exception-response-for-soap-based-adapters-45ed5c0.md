@@ -26,14 +26,10 @@ The `com.sap.gateway.ip.core.customdev.processor.SoapFaultFactory` class provide
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -41,8 +37,6 @@ Description
 <td valign="top">
 
 throwSoapFault\(SoapFaultParam param\)
-
-
 
 </td>
 <td valign="top">
@@ -65,8 +59,6 @@ Use this method for SOAP sender channels. It allows the setting of all attribute
 
 throwSoapFault\(String faultstring, Element detail, Map<String, String\> namespaces\)
 
-
-
 </td>
 <td valign="top">
 
@@ -88,8 +80,6 @@ Use this method for SOAP sender channels. It provides a minimum set of parameter
 <td valign="top">
 
 throwXiSoapFault\(XiSoapFaultParam param\)
-
-
 
 </td>
 <td valign="top">

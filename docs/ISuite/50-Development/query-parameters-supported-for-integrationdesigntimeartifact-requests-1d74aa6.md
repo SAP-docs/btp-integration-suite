@@ -19,21 +19,15 @@ System Query Options are query string parameters that a client specifies to cont
 
 Query
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -42,21 +36,15 @@ Example
 
 $select
 
-
-
 </td>
 <td valign="top">
 
 You can select response properties based on the requirement.
 
-
-
 </td>
 <td valign="top">
 
 `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')?$select=Id,Version`
-
-
 
 </td>
 </tr>
@@ -75,21 +63,15 @@ You can select response properties based on the requirement.
 
 Query
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -98,21 +80,15 @@ Example
 
 $select
 
-
-
 </td>
 <td valign="top">
 
 You can select response properties based on the requirement.
 
-
-
 </td>
 <td valign="top">
 
 `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Resources?$select=Name,ResourceType`
-
-
 
 </td>
 </tr>
@@ -121,21 +97,15 @@ You can select response properties based on the requirement.
 
 $count
 
-
-
 </td>
 <td valign="top">
 
 Returns the total count of resources found in the artifact.
 
-
-
 </td>
 <td valign="top">
 
 `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Resources/$count`
-
-
 
 </td>
 </tr>
@@ -144,21 +114,15 @@ Returns the total count of resources found in the artifact.
 
 $orderby
 
-
-
 </td>
 <td valign="top">
 
 Orders the collection of entries sorted either in ascending or descending order. By defaut the entries are sorted in ascending order. Use `desc` to sort all entries returned in descending oder.
 
-
-
 </td>
 <td valign="top">
 
 `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Resources?$orderby=Name`or`https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Resources?$orderby=Name,ResourceType desc`
-
-
 
 </td>
 </tr>
@@ -166,8 +130,6 @@ Orders the collection of entries sorted either in ascending or descending order.
 <td valign="top">
 
 $filter
-
-
 
 </td>
 <td valign="top">
@@ -206,21 +168,15 @@ The following string functions are supported:
 
 $format
 
-
-
 </td>
 <td valign="top">
 
 Response is received either in JSON or Atom XML format. The default format is **Atom XML**.
 
-
-
 </td>
 <td valign="top">
 
 `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Resources?$format=json`
-
-
 
 </td>
 </tr>
@@ -239,21 +195,15 @@ Response is received either in JSON or Atom XML format. The default format is **
 
 Query
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -262,21 +212,15 @@ Example
 
 $select
 
-
-
 </td>
 <td valign="top">
 
 You can select response properties based on the requirement.
 
-
-
 </td>
 <td valign="top">
 
 `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Configurations?$select=ParameterKey,ParameterValue`
-
-
 
 </td>
 </tr>
@@ -285,21 +229,15 @@ You can select response properties based on the requirement.
 
 $count
 
-
-
 </td>
 <td valign="top">
 
 Returns the total count of resources found in the artifact.
 
-
-
 </td>
 <td valign="top">
 
 `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Configurations/$count`
-
-
 
 </td>
 </tr>
@@ -308,21 +246,15 @@ Returns the total count of resources found in the artifact.
 
 $orderby
 
-
-
 </td>
 <td valign="top">
 
 Orders the collection of entries sorted either in ascending or descending order. By defaut the entries are sorted in ascending order. Use `desc` to sort all entries returned in descending oder.
 
-
-
 </td>
 <td valign="top">
 
 `https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Configurations?$orderby=ParameterKey`or`https://<tmnurl>/api/v1/IntegrationDesigntimeArtifacts(Id='<bundleid>',Version='<version>')/Configurations?$orderby=ParameterKey,ParameterValue desc`
-
-
 
 </td>
 </tr>
@@ -330,8 +262,6 @@ Orders the collection of entries sorted either in ascending or descending order.
 <td valign="top">
 
 $filter
-
-
 
 </td>
 <td valign="top">
@@ -370,14 +300,10 @@ The following string functions are supported:
 
 $format
 
-
-
 </td>
 <td valign="top">
 
 Response is received either in JSON or Atom XML format. The default format is **Atom XML**.
-
-
 
 </td>
 <td valign="top">

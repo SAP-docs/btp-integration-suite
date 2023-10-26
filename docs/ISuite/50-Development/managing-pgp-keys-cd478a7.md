@@ -27,14 +27,10 @@ A list of public and secret PGP keys is displayed in a table. For each artifact,
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *User ID*
 
-
-
 </td>
 <td valign="top">
 
 States the User ID of this PGP key.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ States the User ID of this PGP key.
 
 *Type*
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether the entry is a public PGP Key or a secret PGP key.
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Indicates whether the entry is a public PGP Key or a secret PGP key.
 
 *Key ID*
 
-
-
 </td>
 <td valign="top">
 
 States the key ID.
-
-
 
 </td>
 </tr>
@@ -90,8 +74,6 @@ States the key ID.
 <td valign="top">
 
 *Validity State*
-
-
 
 </td>
 <td valign="top">
@@ -114,14 +96,10 @@ Indicates the validity state:
 
 *Valid Until*
 
-
-
 </td>
 <td valign="top">
 
 Indicates the expiration date.
-
-
 
 </td>
 </tr>
@@ -130,14 +108,10 @@ Indicates the expiration date.
 
 *Modified On*
 
-
-
 </td>
 <td valign="top">
 
 Indicates the date and time the entry was last modified.
-
-
 
 </td>
 </tr>
@@ -160,8 +134,6 @@ To sort and filter the content of the table, choose *Table Settings* \(:gear:\).
 
 Display key properties.
 
-
-
 </td>
 <td valign="top">
 
@@ -169,16 +141,12 @@ To display properties of a dedicated key, click the key.
 
 See: [Displaying Properties of a PGP Key](displaying-properties-of-a-pgp-key-13b3dc9.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Add a keyring.
-
-
 
 </td>
 <td valign="top">
@@ -205,8 +173,6 @@ See:
 
 Download a keyring.
 
-
-
 </td>
 <td valign="top">
 
@@ -230,16 +196,12 @@ When downloading secret keys, you need to specify the key passphrase twice.
 
 Download a single key as file.
 
-
-
 </td>
 <td valign="top">
 
 To download a dedicated key as a file, click the download button \(<span class="SAP-icons"></span>\) at the end of the row of the key.
 
 When downloading a secret key, you need to specify the key passphrase twice.
-
-
 
 </td>
 </tr>
@@ -248,14 +210,10 @@ When downloading a secret key, you need to specify the key passphrase twice.
 
 Delete
 
-
-
 </td>
 <td valign="top">
 
 To delete a dedicated key, click the delete button \(:wastebasket:\) at the end of the row of the key.
-
-
 
 </td>
 </tr>
@@ -264,14 +222,10 @@ To delete a dedicated key, click the delete button \(:wastebasket:\) at the end 
 
 Search
 
-
-
 </td>
 <td valign="top">
 
 To search for a key, start typing the user id or key id of a dedicated key in the search field above the table.
-
-
 
 </td>
 </tr>

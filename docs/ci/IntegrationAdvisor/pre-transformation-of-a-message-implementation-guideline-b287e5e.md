@@ -61,15 +61,11 @@ Suppose, let us say you have created a MAG with two MIGs and want to transform a
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -77,15 +73,11 @@ Suppose, let us say you have created a MAG with two MIGs and want to transform a
     <td valign="top">
     
     Grouped node
-
-
     
     </td>
     <td valign="top">
     
     The group node whose instances will be grouped.
-
-
     
     </td>
     </tr>
@@ -93,15 +85,11 @@ Suppose, let us say you have created a MAG with two MIGs and want to transform a
     <td valign="top">
     
     Key node
-
-
     
     </td>
     <td valign="top">
     
     The leaf node that contains the key for grouping. This node must be a child node of the grouped node.
-
-
     
     </td>
     </tr>
@@ -109,15 +97,11 @@ Suppose, let us say you have created a MAG with two MIGs and want to transform a
     <td valign="top">
     
     Wrapper name
-
-
     
     </td>
     <td valign="top">
     
     The name of the group node that will contain the grouped nodes. This node will become the parent node of the grouped node.
-
-
     
     </td>
     </tr>
@@ -125,15 +109,11 @@ Suppose, let us say you have created a MAG with two MIGs and want to transform a
     <td valign="top">
     
     Group key node
-
-
     
     </td>
     <td valign="top">
     
     Child node of the wrapper node that will contain the key of the group for each instance.
-
-
     
     </td>
     </tr>
@@ -149,15 +129,11 @@ Suppose, let us say you have created a MAG with two MIGs and want to transform a
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -165,15 +141,11 @@ Suppose, let us say you have created a MAG with two MIGs and want to transform a
     <td valign="top">
     
     Receiving node
-
-
     
     </td>
     <td valign="top">
     
     The group node to which the referenced node is copied into.
-
-
     
     </td>
     </tr>
@@ -181,15 +153,11 @@ Suppose, let us say you have created a MAG with two MIGs and want to transform a
     <td valign="top">
     
     Node with reference ID
-
-
     
     </td>
     <td valign="top">
     
     Leaf node that contains the reference ID of the node to be copied. This node must be a child node of the receiving node.
-
-
     
     </td>
     </tr>
@@ -197,15 +165,11 @@ Suppose, let us say you have created a MAG with two MIGs and want to transform a
     <td valign="top">
     
     Referenced Node
-
-
     
     </td>
     <td valign="top">
     
     Group node which is referenced and will be copied.
-
-
     
     </td>
     </tr>
@@ -213,15 +177,11 @@ Suppose, let us say you have created a MAG with two MIGs and want to transform a
     <td valign="top">
     
     Referenced ID Node
-
-
     
     </td>
     <td valign="top">
     
     Leaf node that contains the ID which is referenced. This node must be the child node of the referenced node.
-
-
     
     </td>
     </tr>

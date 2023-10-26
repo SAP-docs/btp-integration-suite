@@ -36,28 +36,20 @@ The following examples show the header CamelFileName, read via XPath from the pa
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -66,28 +58,20 @@ Value
 
 CamelFileName
 
-
-
 </td>
 <td valign="top">
 
 xpath
-
-
 
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 /p:<XYZ\>MessageBulk/<XYZ\>Message/FileName/text\(\)
-
-
 
 </td>
 </tr>
@@ -106,21 +90,15 @@ CamelFileName
 
 expression
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 <myapplication\>/template/out/output$\{date:now:yyyyMMddHHmmss\}.xml
-
-
 
 </td>
 </tr>

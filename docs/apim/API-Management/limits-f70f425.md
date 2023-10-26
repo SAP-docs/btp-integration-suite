@@ -21,21 +21,15 @@ Currently, certain configurations are automatically enforced for optimal perform
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Specified Configuration Values
 
-
-
 </th>
 <th valign="top">
 
 Automatically Enforced
-
-
 
 </th>
 </tr>
@@ -44,8 +38,6 @@ Automatically Enforced
 
 **API Proxies**
 
-
-
 </td>
 </tr>
 <tr>
@@ -53,21 +45,15 @@ Automatically Enforced
 
 Port
 
-
-
 </td>
 <td valign="top">
 
 Virtual host URL can only be configured only on the secured port 443 over https.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -76,21 +62,15 @@ Yes
 
 API proxy resource file size \(such as XSL, JavaScript or Python\).
 
-
-
 </td>
 <td valign="top">
 
 15 MB
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -99,8 +79,6 @@ Yes
 
 Maximum number of resources that can be attached to an API proxy
 
-
-
 </td>
 <td valign="top">
 
@@ -108,14 +86,10 @@ You can attached up to 100 resources to an API proxy. However, it is recommended
 
 In case you have a business requirement to attach more than 100 resources to an API proxy, please contact the SAP API Management support team by creating a ticket with component OPU-API-OD-DT. However, the team can support your request up to a maximum of 200 resources per API proxy.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -124,8 +98,6 @@ Yes
 
 **Virtual Host**
 
-
-
 </td>
 </tr>
 <tr>
@@ -133,21 +105,15 @@ Yes
 
 Additional virtual host in Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 By default, only 3 virtual hosts can be configured per tenant/subaccount. In case you have a business requirement to have more than 3 virtual hosts within a tenant, please raise a support ticket through the [SAP Support Portal](https://support.sap.com/en/index.html) using the component OPU-API-OD-OPS.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -156,8 +122,6 @@ No
 
 **Cache and KVM**
 
-
-
 </td>
 </tr>
 <tr>
@@ -165,21 +129,15 @@ No
 
 Caches
 
-
-
 </td>
 <td valign="top">
 
 100 MB
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -188,21 +146,15 @@ No
 
 Cache key size
 
-
-
 </td>
 <td valign="top">
 
 2 KB
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -211,21 +163,15 @@ Yes
 
 Cache value size
 
-
-
 </td>
 <td valign="top">
 
 512 KB
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -234,21 +180,15 @@ Yes
 
 Cache expiration
 
-
-
 </td>
 <td valign="top">
 
 \>=180 seconds, <= 30 days
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -257,21 +197,15 @@ No
 
 Key Value Map \(KVM\) key size
 
-
-
 </td>
 <td valign="top">
 
 2 KB
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -280,21 +214,15 @@ Yes
 
 Key Value Map \(KVM\) value size
 
-
-
 </td>
 <td valign="top">
 
 10 KB
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -303,8 +231,6 @@ No
 
 **Keys, Developers, Apps, Products**
 
-
-
 </td>
 </tr>
 <tr>
@@ -312,21 +238,15 @@ No
 
 API key size
 
-
-
 </td>
 <td valign="top">
 
 2 KB
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -335,21 +255,15 @@ Yes
 
 Custom attribute name size
 
-
-
 </td>
 <td valign="top">
 
 255 characters
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -358,21 +272,15 @@ Yes
 
 Custom attribute value size
 
-
-
 </td>
 <td valign="top">
 
 1024 characters
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -381,21 +289,15 @@ Yes
 
 Number of custom attributes permitted
 
-
-
 </td>
 <td valign="top">
 
 18
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -404,8 +306,6 @@ Yes
 
 **OAuth**
 
-
-
 </td>
 </tr>
 <tr>
@@ -413,21 +313,15 @@ Yes
 
 OAuth access token expiration
 
-
-
 </td>
 <td valign="top">
 
 \>= 180 seconds, <= 30 days
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -436,21 +330,15 @@ No
 
 OAuth refresh token expiration
 
-
-
 </td>
 <td valign="top">
 
 \>= 1 day, <= 90 days
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -459,21 +347,15 @@ No
 
 OAuth access and refresh token size
 
-
-
 </td>
 <td valign="top">
 
 2 KB
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -482,8 +364,6 @@ Yes
 
 **System**
 
-
-
 </td>
 </tr>
 <tr>
@@ -491,21 +371,15 @@ Yes
 
 API proxy request URL size
 
-
-
 </td>
 <td valign="top">
 
 7 KB
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -514,21 +388,15 @@ Yes
 
 Request header size
 
-
-
 </td>
 <td valign="top">
 
 18 KB
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -537,21 +405,15 @@ Yes
 
 Response header size
 
-
-
 </td>
 <td valign="top">
 
 25 KB
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -560,21 +422,15 @@ Yes
 
 Request size \(for non-streamed HTTP requests\)
 
-
-
 </td>
 <td valign="top">
 
 10 MB
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -583,21 +439,15 @@ Yes
 
 Request size \(for streamed HTTP requests\)
 
-
-
 </td>
 <td valign="top">
 
 <500 MB. However, if the connection is terminated unexpectedly, you must reinitiate the connection.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -606,21 +456,15 @@ No
 
 Response size \(for non-streamed HTTP requests\)
 
-
-
 </td>
 <td valign="top">
 
 10 MB
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -629,21 +473,15 @@ Yes
 
 Timeout \( Applicable for all API Proxies and the Backend Server is expected to respond within the value set \)
 
-
-
 </td>
 <td valign="top">
 
 55 Seconds
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -652,21 +490,15 @@ Yes
 
 Security Protocol
 
-
-
 </td>
 <td valign="top">
 
 TLSv 1.2 only \( on Hyperscalers \)
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -675,14 +507,10 @@ Yes
 
 TLSv 1.2 & TLSv1.1 \( on SAP DC \)
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -691,14 +519,10 @@ Yes
 
 TLSv1.1 \(deprecated, planned to be removed by end of 2019\)
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -707,14 +531,10 @@ No
 
 TLSv1.0 \(Unsupported\)
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -722,8 +542,6 @@ Yes
 <td valign="top">
 
 SNI \( Server Name Indication \) Enforcement
-
-
 
 </td>
 <td valign="top">
@@ -734,14 +552,10 @@ For Client which doesn't support SNI extension, APIM would send a default certif
 
 For Reference on SNI : [https://en.wikipedia.org/wiki/Server\_Name\_Indication](https://en.wikipedia.org/wiki/Server_Name_Indication)
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -750,21 +564,15 @@ Yes
 
 Security Protocol applicable for API Management Runtime
 
-
-
 </td>
 <td valign="top">
 
 TLSv 1.2 only \( on Hyperscalers & SAP DC \)
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -773,14 +581,10 @@ Yes
 
 TLSv1.0 & TLS 1.1 \(Unsupported\)
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -797,21 +601,15 @@ Table below describes the naming constraints for API Management.
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Maximum Characters
 
-
-
 </th>
 <th valign="top">
 
 Permitted Characters
-
-
 
 </th>
 </tr>
@@ -820,21 +618,15 @@ Permitted Characters
 
 API product
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Alphanumeric, space, and the following: \_ - . \# $ %
-
-
 
 </td>
 </tr>
@@ -843,21 +635,15 @@ Alphanumeric, space, and the following: \_ - . \# $ %
 
 Cache name
 
-
-
 </td>
 <td valign="top">
 
 255
 
-
-
 </td>
 <td valign="top">
 
 Alphanumeric
-
-
 
 </td>
 </tr>
@@ -866,21 +652,15 @@ Alphanumeric
 
 Developer app
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Alphanumeric, space, and the following: \_ - . \# $ %
-
-
 
 </td>
 </tr>
@@ -889,21 +669,15 @@ Alphanumeric, space, and the following: \_ - . \# $ %
 
 E-mail ID
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Valid e-mail address syntax
-
-
 
 </td>
 </tr>
@@ -912,21 +686,15 @@ Valid e-mail address syntax
 
 Policy name
 
-
-
 </td>
 <td valign="top">
 
 255
 
-
-
 </td>
 <td valign="top">
 
 Alphanumeric and underscore.
-
-
 
 </td>
 </tr>
@@ -935,21 +703,15 @@ Alphanumeric and underscore.
 
 Resource file names.
 
-
-
 </td>
 <td valign="top">
 
 255
 
-
-
 </td>
 <td valign="top">
 
 Alphanumeric, space, and the following: : / \\ ! @ \# $ % ^ & \{ \} \[ \] \( \) \_ + - = , . ~ '
-
-
 
 </td>
 </tr>
@@ -958,21 +720,15 @@ Alphanumeric, space, and the following: : / \\ ! @ \# $ % ^ & \{ \} \[ \] \( \) 
 
 Revision name
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 Numeric
-
-
 
 </td>
 </tr>

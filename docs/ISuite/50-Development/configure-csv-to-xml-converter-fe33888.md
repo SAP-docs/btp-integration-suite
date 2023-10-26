@@ -28,15 +28,11 @@ You’re editing the integration flow in the editor.
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -44,8 +40,6 @@ You’re editing the integration flow in the editor.
     <td valign="top">
     
     XML Schema
-
-
     
     </td>
     <td valign="top">
@@ -53,8 +47,6 @@ You’re editing the integration flow in the editor.
     Choose *Browse*. Select the XML schema you want to use.
 
     Optionally, you can also upload the XML schema from your local file system by choosing *Upload from File System*.
-
-
     
     </td>
     </tr>
@@ -62,15 +54,11 @@ You’re editing the integration flow in the editor.
     <td valign="top">
     
     Path to Target Element in XSD
-
-
     
     </td>
     <td valign="top">
     
     XPath in the XML schema file where you want to place the content from CSV file.
-
-
     
     </td>
     </tr>
@@ -78,8 +66,6 @@ You’re editing the integration flow in the editor.
     <td valign="top">
     
     Record Marker in CSV
-
-
     
     </td>
     <td valign="top">
@@ -97,8 +83,6 @@ You’re editing the integration flow in the editor.
     <td valign="top">
     
     Field Separator in CSV
-
-
     
     </td>
     <td valign="top">
@@ -116,8 +100,6 @@ You’re editing the integration flow in the editor.
     <td valign="top">
     
     Exclude First Line Header
-
-
     
     </td>
     <td valign="top">

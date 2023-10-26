@@ -2,6 +2,13 @@
 
 # Identity and Access Management
 
+SAP Integration Suite is based on authentication and authorization mechanisms provided by SAP Business Technology Platform, Cloud Foundry environment. For information about security recommendations and guidelines for user administration, authentication, and authorizations, see [Security Administration: Managing Authentication and Authorization](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/1ff47b2d980e43a6b2ce294352333708.html) in the SAP Business Technology Platform Security Guide.
+
+> ### Note:  
+> Note with regard to Edge Integration Cell:
+> 
+> Identity and access management features provided by SAP Business Technology Platform are used during the lifecycle of an integration scenario. Extended Services - User Account and Authentication \(XSUAA\) is the central service for business user authentication and authorization. Edge Integration Cell components rely on XSUAA service instances to access cloud services, such as object store or secure store.
+
 **Related Information**  
 
 

@@ -15,14 +15,10 @@ This section provides guidelines for integration developers covering the followi
 
 [Learn the Basics](learn-the-basics-ebc6034.md) 
 
-
-
 </td>
 <td valign="top">
 
 Helps you to understand the basic capabilities for modeling integration flows.
-
-
 
 </td>
 </tr>
@@ -31,16 +27,12 @@ Helps you to understand the basic capabilities for modeling integration flows.
 
 [Guidelines to Design Enterprise-Grade Integration Flows](guidelines-to-design-enterprise-grade-integration-flows-a8cd981.md) 
 
-
-
 </td>
 <td valign="top">
 
 Provides guidelines to design **enterprise grade** integration flows in a robust fashion in order to safeguard your company's mission-critical business processes. Provides clear and easy-to-apply guidelines to help integration developers design robust enterprise grade integration flows to safeguard your company's mission-critical business processes.
 
 For example: applying highest security standards, keeping your integration flows readable and easy to understand, and handling errors in a good way.
-
-
 
 </td>
 </tr>
@@ -49,16 +41,12 @@ For example: applying highest security standards, keeping your integration flows
 
 [Guidelines to Implement Specific Integration Patterns](guidelines-to-implement-specific-integration-patterns-eaf929e.md) 
 
-
-
 </td>
 <td valign="top">
 
 Provides guidelines to implement the basic enterprise integration patterns.
 
 For example: content-based routing, content enricher, and splitter.
-
-
 
 </td>
 </tr>

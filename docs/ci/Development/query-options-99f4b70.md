@@ -26,14 +26,10 @@ This section provides a summary of the supported query options.
 
 System Query Option
 
-
-
 </th>
 <th valign="top">
 
 ... Does the Following
-
-
 
 </th>
 </tr>
@@ -42,14 +38,10 @@ System Query Option
 
 `$count` 
 
-
-
 </td>
 <td valign="top">
 
 Returns the number of records according to the resource path section of the URI \(or, if a filter is applied, the number of records matching the filter\).
-
-
 
 </td>
 </tr>
@@ -58,16 +50,12 @@ Returns the number of records according to the resource path section of the URI 
 
 `$expand` 
 
-
-
 </td>
 <td valign="top">
 
 Returns related entities for a given navigation property in line with the entities being retrieved.
 
 For example, adding the query `$expand=AdapterAttributes` to an OData request addressing the `MessagingProcessingLog` entity returns adapter-specific attributes in line with the message processing log data.
-
-
 
 </td>
 </tr>
@@ -76,14 +64,10 @@ For example, adding the query `$expand=AdapterAttributes` to an OData request ad
 
 `$filter` 
 
-
-
 </td>
 <td valign="top">
 
 Returns a subset of records according to the resource path section of the URI\) and to the filter expression.
-
-
 
 </td>
 </tr>
@@ -92,14 +76,10 @@ Returns a subset of records according to the resource path section of the URI\) 
 
 `$inlinecount` 
 
-
-
 </td>
 <td valign="top">
 
 Specifies that the response contains a count of the number of records in the collection of entries identified by the resource path section of the URI.
-
-
 
 </td>
 </tr>
@@ -108,14 +88,10 @@ Specifies that the response contains a count of the number of records in the col
 
 `$metadata` 
 
-
-
 </td>
 <td valign="top">
 
 Returns the data model \(which is the structure of all resources\).
-
-
 
 </td>
 </tr>
@@ -123,8 +99,6 @@ Returns the data model \(which is the structure of all resources\).
 <td valign="top">
 
 `$orderby` 
-
-
 
 </td>
 <td valign="top">
@@ -145,8 +119,6 @@ Specifies an expression for determining which values are used to order the colle
 
 `$select` 
 
-
-
 </td>
 <td valign="top">
 
@@ -164,14 +136,10 @@ Returns a limited set of information on the entities identified by the resource 
 
 `$skip` 
 
-
-
 </td>
 <td valign="top">
 
 Identifies a subset of records \(according to the resource path section of the URI\), where the subset is defined by seeking n entries and selecting only the remaining entries \(starting with entry n+1\).
-
-
 
 </td>
 </tr>
@@ -180,14 +148,10 @@ Identifies a subset of records \(according to the resource path section of the U
 
 `$top` 
 
-
-
 </td>
 <td valign="top">
 
 Identifies a subset of records \(according to the resource path section of the URI\), where the subset is defined by selecting only the first n items of the set.
-
-
 
 </td>
 </tr>
@@ -196,14 +160,10 @@ Identifies a subset of records \(according to the resource path section of the U
 
 `$value` 
 
-
-
 </td>
 <td valign="top">
 
 When applied with the entity RuntimeArtifactErrorInformation, this query returns the error message in JSON format.
-
-
 
 </td>
 </tr>

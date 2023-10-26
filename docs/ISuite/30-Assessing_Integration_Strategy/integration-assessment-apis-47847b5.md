@@ -19,14 +19,10 @@ The following are the list of APIs used in Integration Assessment. For more info
 
 Resource
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -34,8 +30,6 @@ Description
 <td valign="top">
 
 Domain
-
-
 
 </td>
 <td valign="top">
@@ -46,16 +40,12 @@ Identifying integration domains provides the entry point into SAP Integration So
 
 See: [Integration Domains](integration-domains-e8360d2.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Style
-
-
 
 </td>
 <td valign="top">
@@ -64,8 +54,6 @@ Style is the basic integration category or type. Each integration style has spec
 
 See: [Integration Styles and Integration Use Case Patterns](integration-styles-and-integration-use-case-patterns-770909d.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -73,14 +61,10 @@ See: [Integration Styles and Integration Use Case Patterns](integration-styles-a
 
 Use Case Pattern
 
-
-
 </td>
 <td valign="top">
 
 Integration use case patterns refine the integration styles identified for your organization's integration strategy.
-
-
 
 </td>
 </tr>
@@ -89,16 +73,12 @@ Integration use case patterns refine the integration styles identified for your 
 
 Integration Pattern
 
-
-
 </td>
 <td valign="top">
 
 To derive integration guidelines for complex landscapes, Integration patterns combines integration domains and integration styles to derive integration guidelines.
 
 You can do an assessment of your integration architecture by adding the integration patterns that are relevant to your organization or that you might want to further evaluate.
-
-
 
 </td>
 </tr>
@@ -107,14 +87,10 @@ You can do an assessment of your integration architecture by adding the integrat
 
 Key Characteristic
 
-
-
 </td>
 <td valign="top">
 
 Key Characteristic help enterprise architects and integration architects to map integration styles to relevant capabilities of integration technologies.
-
-
 
 </td>
 </tr>
@@ -123,14 +99,10 @@ Key Characteristic help enterprise architects and integration architects to map 
 
 Key Characteristic Group
 
-
-
 </td>
 <td valign="top">
 
 Key characteristics group, groups key characteristics and offers an additional layer for structuring for the key characteristcs.
-
-
 
 </td>
 </tr>
@@ -139,16 +111,12 @@ Key characteristics group, groups key characteristics and offers an additional l
 
 Key Characteristic Value
 
-
-
 </td>
 <td valign="top">
 
 Values of key characteristics can be defined in order to express the variability a key characteristic can have.
 
 In case of a key characteristic of type single, only one value for a key characteristic may exist.
-
-
 
 </td>
 </tr>
@@ -157,14 +125,10 @@ In case of a key characteristic of type single, only one value for a key charact
 
 Key Characteristic Recommendation
 
-
-
 </td>
 <td valign="top">
 
 The available classification levels on how good a technology supports a specific key characteristic value of a key characteristic.
-
-
 
 </td>
 </tr>
@@ -173,14 +137,10 @@ The available classification levels on how good a technology supports a specific
 
 Deployment Model
 
-
-
 </td>
 <td valign="top">
 
 Identifies how the software is hosted, for example, in the public cloud or on-premise.
-
-
 
 </td>
 </tr>
@@ -189,14 +149,10 @@ Identifies how the software is hosted, for example, in the public cloud or on-pr
 
 Domain Determination
 
-
-
 </td>
 <td valign="top">
 
 The available classification levels on how good a technology supports a specific key characteristic value of a key characteristic.
-
-
 
 </td>
 </tr>
@@ -205,14 +161,10 @@ The available classification levels on how good a technology supports a specific
 
 Application
 
-
-
 </td>
 <td valign="top">
 
 Application is a software solution \(SaaS or on-premise\) used in the integration landscape. Integration assessment differentiates between application profile, which indicates the software group, and application instance, which is the actual runtime component.
-
-
 
 </td>
 </tr>
@@ -221,14 +173,10 @@ Application is a software solution \(SaaS or on-premise\) used in the integratio
 
 Application Instance
 
-
-
 </td>
 <td valign="top">
 
 Application instances are concrete instances of an application having a concrete deployment model.
-
-
 
 </td>
 </tr>
@@ -237,14 +185,10 @@ Application instances are concrete instances of an application having a concrete
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Middleware component that helps you solve your integration challenge. Integration technologies are the representative middleware components that are independent of the deployment model, namely on-premise or cloud. Integration Assessment differentiates between integration technology profile, which indicates the software group, and integration technology instance, which is the actual runtime instance.
-
-
 
 </td>
 </tr>
@@ -253,14 +197,10 @@ Middleware component that helps you solve your integration challenge. Integratio
 
 Technology Instance
 
-
-
 </td>
 <td valign="top">
 
 Technology instances are concrete instances of a technology having a concrete deployment model.
-
-
 
 </td>
 </tr>
@@ -269,14 +209,10 @@ Technology instances are concrete instances of a technology having a concrete de
 
 Technology Domain
 
-
-
 </td>
 <td valign="top">
 
 This is an association entity and describes the relation between a domain and a style.
-
-
 
 </td>
 </tr>
@@ -285,14 +221,10 @@ This is an association entity and describes the relation between a domain and a 
 
 Technology Style
 
-
-
 </td>
 <td valign="top">
 
 This is an association entity and describes the relation between a technology and a style.
-
-
 
 </td>
 </tr>
@@ -301,14 +233,10 @@ This is an association entity and describes the relation between a technology an
 
 Technology Key Characteristic
 
-
-
 </td>
 <td valign="top">
 
 This is an association entity and describes the relation between a key characteristic and a style.
-
-
 
 </td>
 </tr>
@@ -317,14 +245,10 @@ This is an association entity and describes the relation between a key character
 
 Vendor
 
-
-
 </td>
 <td valign="top">
 
 A vendor is a company that develops and sells software. You can choose an existing vendor or create a new vendor for an application or an integration technology.
-
-
 
 </td>
 </tr>
@@ -333,14 +257,10 @@ A vendor is a company that develops and sells software. You can choose an existi
 
 Request
 
-
-
 </td>
 <td valign="top">
 
 Business solution requests and interface requests represent the integration requirements. While a business solution request focuses on the business or project perspective, an interface request represents the technical view of integration scenarios.
-
-
 
 </td>
 </tr>
@@ -349,14 +269,10 @@ Business solution requests and interface requests represent the integration requ
 
 Request Line Item
 
-
-
 </td>
 <td valign="top">
 
 A request line item is the representation of an integration flow within the request workflow.
-
-
 
 </td>
 </tr>
@@ -365,14 +281,10 @@ A request line item is the representation of an integration flow within the requ
 
 Integration Flow
 
-
-
 </td>
 <td valign="top">
 
 An integration flow represents the overall integration of one or more application.
-
-
 
 </td>
 </tr>
@@ -381,14 +293,10 @@ An integration flow represents the overall integration of one or more applicatio
 
 Message Flow
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -397,14 +305,10 @@ Message Flow
 
 Integration Flow Message Flow
 
-
-
 </td>
 <td valign="top">
 
 This is an association entity and describes the relation between integration flows and message flows.
-
-
 
 </td>
 </tr>
@@ -413,14 +317,10 @@ This is an association entity and describes the relation between integration flo
 
 Request Line Item Technology Instance Decision
 
-
-
 </td>
 <td valign="top">
 
 This entity describes the decision for a certain technology instance for a specific request line item.
-
-
 
 </td>
 </tr>

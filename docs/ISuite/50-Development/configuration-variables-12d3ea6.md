@@ -15,35 +15,25 @@ Supported configuration variables are listed in the Configuration Variables tabl
 
 Variables
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Scope
 
-
-
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Permission
-
-
 
 </th>
 </tr>
@@ -52,35 +42,25 @@ Permission
 
 organization.name
 
-
-
 </td>
 <td valign="top">
 
 Name of the organization
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -89,35 +69,25 @@ Read
 
 environment
 
-
-
 </td>
 <td valign="top">
 
 Container for environment.name.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -126,35 +96,25 @@ Read
 
 environment.name
 
-
-
 </td>
 <td valign="top">
 
 Name of the environment in which the transaction ran
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -163,35 +123,25 @@ Read
 
 apiproxy.name
 
-
-
 </td>
 <td valign="top">
 
 Name of the api proxy
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -200,35 +150,25 @@ Read
 
 apiproxy.revision
 
-
-
 </td>
 <td valign="top">
 
 The revision number of an API proxy
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -237,35 +177,25 @@ Read
 
 is.error
 
-
-
 </td>
 <td valign="top">
 
 Error flag
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Boolean
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -274,35 +204,25 @@ Read
 
 proxy.name
 
-
-
 </td>
 <td valign="top">
 
 The name attribute configured for the ProxyEndpoint
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>

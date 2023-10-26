@@ -89,15 +89,11 @@ If you want to configure the API Management solution to access data from a serve
         <th valign="top">
 
         Field Name
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -105,15 +101,11 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Host
-
-
         
         </td>
         <td valign="top">
         
         Enter a value for the host in the format "example.com".
-
-
         
         </td>
         </tr>
@@ -121,15 +113,11 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Port
-
-
         
         </td>
         <td valign="top">
         
         Enter 443 as the port number for SSL and 8080 for all other ports.
-
-
         
         </td>
         </tr>
@@ -137,8 +125,6 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Use SSL
-
-
         
         </td>
         <td valign="top">
@@ -156,15 +142,11 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Trust store certificate
-
-
         
         </td>
         <td valign="top">
         
         By default, API Management trusts all TLS certificates. To validate a certificate, create a truststore to configure API Management to validate the certificate. Specify the trust store certificate details in the API provider.
-
-
         
         </td>
         </tr>
@@ -172,15 +154,11 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Key store certificate
-
-
         
         </td>
         <td valign="top">
         
         Specify the key store certificate details.
-
-
         
         </td>
         </tr>
@@ -194,15 +172,11 @@ If you want to configure the API Management solution to access data from a serve
         <th valign="top">
 
         Field Name
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -210,15 +184,11 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Host
-
-
         
         </td>
         <td valign="top">
         
         Enter a value for the host in the format "example.com". Ensure that you provide the cloud connecter virtual host.
-
-
         
         </td>
         </tr>
@@ -226,15 +196,11 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Port
-
-
         
         </td>
         <td valign="top">
         
         Enter the port number exposed in the *Cloud Connector* as per the host.
-
-
         
         </td>
         </tr>
@@ -242,8 +208,6 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Location ID
-
-
         
         </td>
         <td valign="top">
@@ -261,8 +225,6 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Authentication
-
-
         
         </td>
         <td valign="top">
@@ -280,8 +242,6 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Additional Property
-
-
         
         </td>
         <td valign="top">
@@ -310,15 +270,11 @@ If you want to configure the API Management solution to access data from a serve
         <th valign="top">
 
         Field Name
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -326,15 +282,11 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Region
-
-
         
         </td>
         <td valign="top">
         
         Select a region from the dropdown list.
-
-
         
         </td>
         </tr>
@@ -342,15 +294,11 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Host
-
-
         
         </td>
         <td valign="top">
         
         Value is auto populated based on the selected region.
-
-
         
         </td>
         </tr>
@@ -358,15 +306,11 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Port
-
-
         
         </td>
         <td valign="top">
         
         Value is auto populated.
-
-
         
         </td>
         </tr>
@@ -374,15 +318,11 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Organization Secret
-
-
         
         </td>
         <td valign="top">
         
         Enter the organization secret. For more information on how to obtain the value, see prerequisites section.
-
-
         
         </td>
         </tr>
@@ -390,15 +330,11 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         User Secret
-
-
         
         </td>
         <td valign="top">
         
         Enter the user secret. For more information on how to obtain the value, see prerequisites section.
-
-
         
         </td>
         </tr>
@@ -414,15 +350,11 @@ If you want to configure the API Management solution to access data from a serve
         <th valign="top">
 
         Field Name
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -430,8 +362,6 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Cloud Integration Host
-
-
         
         </td>
         <td valign="top">
@@ -441,8 +371,6 @@ If you want to configure the API Management solution to access data from a serve
         Address of Web UI: https://<Cloud Integration Host\>/itspaces.
 
         Address of Cloud Integration OData API: https://<Cloud Integration Host\>/api/v1.
-
-
         
         </td>
         </tr>
@@ -450,15 +378,11 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Port
-
-
         
         </td>
         <td valign="top">
         
         443 \(Default value\)
-
-
         
         </td>
         </tr>
@@ -466,8 +390,6 @@ If you want to configure the API Management solution to access data from a serve
         <td valign="top">
         
         Authentication
-
-
         
         </td>
         <td valign="top">
@@ -509,15 +431,11 @@ If you want to configure the API Management solution to access data from a serve
     <th valign="top">
 
     Field Name
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -525,15 +443,11 @@ If you want to configure the API Management solution to access data from a serve
     <td valign="top">
     
     Path Prefix
-
-
     
     </td>
     <td valign="top">
     
     Specify the path prefix.
-
-
     
     </td>
     </tr>
@@ -541,8 +455,6 @@ If you want to configure the API Management solution to access data from a serve
     <td valign="top">
     
     Service Collection URL
-
-
     
     </td>
     <td valign="top">
@@ -560,15 +472,11 @@ If you want to configure the API Management solution to access data from a serve
     <td valign="top">
     
     Catalog URL
-
-
     
     </td>
     <td valign="top">
     
     Automatically populates the complete URL in the format https:<`host`\>:<`port`\>/<`path prefix`\>/Catalog Service.
-
-
     
     </td>
     </tr>
@@ -576,15 +484,11 @@ If you want to configure the API Management solution to access data from a serve
     <td valign="top">
     
     Authentication
-
-
     
     </td>
     <td valign="top">
     
     Select the authentication method to be used for connection requests to the server. By default, the authentication type is set to *None*. If you choose *Basic*, then provide a user name and password as authentication credentials in the respective fields.
-
-
     
     </td>
     </tr>
@@ -609,21 +513,15 @@ If you want to configure the API Management solution to access data from a serve
     > 
     > Type
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Supported Attributes
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Unsupported Attributes
-    > 
-    > 
     > 
     > </th>
     > </tr>
@@ -631,8 +529,6 @@ If you want to configure the API Management solution to access data from a serve
     > <td valign="top">
     > 
     > Internet
-    > 
-    > 
     > 
     > </td>
     > <td valign="top">

@@ -53,14 +53,10 @@ In the content modifier step, we create a new header in the Message Header tab a
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 CamelHttpResponseCode
-
-
 
 </td>
 </tr>
@@ -69,14 +65,10 @@ CamelHttpResponseCode
 
 *Source Type*
 
-
-
 </td>
 <td valign="top">
 
 Constant
-
-
 
 </td>
 </tr>
@@ -85,14 +77,10 @@ Constant
 
 *Source Value*
 
-
-
 </td>
 <td valign="top">
 
 405
-
-
 
 </td>
 </tr>
@@ -116,15 +104,11 @@ To test the integration scenario, perform the following steps:
     <th valign="top">
 
     Request
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -132,8 +116,6 @@ To test the integration scenario, perform the following steps:
     <td valign="top">
     
     RestrictHttpMethod - POST
-
-
     
     </td>
     <td valign="top">
@@ -145,8 +127,6 @@ To test the integration scenario, perform the following steps:
     You should see the following response text depending on the specified product id:
 
     Product <your product id\> written to the database.
-
-
     
     </td>
     </tr>
@@ -154,8 +134,6 @@ To test the integration scenario, perform the following steps:
     <td valign="top">
     
     RestrictHttpMethod - GET
-
-
     
     </td>
     <td valign="top">
@@ -167,8 +145,6 @@ To test the integration scenario, perform the following steps:
     You should see the product details in the response. Otherwise, if you have chosen an id in your GET request which doesn't correspond to an entry in the data store, you should receive the response code 404 and the message content:
 
     Product with ID <your product id\> not found.
-
-
     
     </td>
     </tr>
@@ -176,8 +152,6 @@ To test the integration scenario, perform the following steps:
     <td valign="top">
     
     RestrictHttpMethod - PUT
-
-
     
     </td>
     <td valign="top">
@@ -187,8 +161,6 @@ To test the integration scenario, perform the following steps:
     Regardless of the message body, you always get a response code 405 and the following message content returned:
 
     HTTP method PUT not implemented.
-
-
     
     </td>
     </tr>
@@ -196,8 +168,6 @@ To test the integration scenario, perform the following steps:
     <td valign="top">
     
     RestrictHttpMethod - PATCH
-
-
     
     </td>
     <td valign="top">
@@ -207,8 +177,6 @@ To test the integration scenario, perform the following steps:
     Regardless of the message body, you always get a response code 405 and the following message content returned:
 
     HTTP method PATCH not implemented.
-
-
     
     </td>
     </tr>
@@ -216,8 +184,6 @@ To test the integration scenario, perform the following steps:
     <td valign="top">
     
     RestrictHttpMethod - DELETE
-
-
     
     </td>
     <td valign="top">
@@ -229,8 +195,6 @@ To test the integration scenario, perform the following steps:
     You should receive the following message content:
 
     Product <your product id\> deleted from the database.
-
-
     
     </td>
     </tr>

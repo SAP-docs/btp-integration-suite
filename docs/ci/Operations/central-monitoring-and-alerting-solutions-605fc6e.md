@@ -30,14 +30,10 @@ The following use cases of SAP Cloud ALM for Operations are relevant for the mon
 
 Use Case
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -45,8 +41,6 @@ Description
 <td valign="top">
 
 Integration and exception monitoring
-
-
 
 </td>
 <td valign="top">
@@ -59,8 +53,6 @@ Additionally, you can also monitor integration-related exceptions. Examples are 
 
 For further error analysis, you can drill down to detailed information on each single message. To tackle corrective measures, you can use a contextual link and navigate to the local monitoring application of SAP Cloud Integration.
 
-
-
 </td>
 </tr>
 <tr>
@@ -68,14 +60,10 @@ For further error analysis, you can drill down to detailed information on each s
 
 Health monitoring
 
-
-
 </td>
 <td valign="top">
 
 Understand the technical healthiness of your cloud applications and on-premise systems. This feature helps you to oversee the technical aspects of your SAP Cloud Integration tenants. You can track the validity of certificates across all tenants and monitor the JMS resources of all Cloud Integration tenants.
-
-
 
 </td>
 </tr>

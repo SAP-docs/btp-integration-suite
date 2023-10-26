@@ -15,14 +15,10 @@ For more example requests, see:
 
 Entry Properties
 
-
-
 </td>
 <td valign="top">
 
 [Get Message Store Entry Properties](get-message-store-entry-properties-a43d59e.md) 
-
-
 
 </td>
 </tr>
@@ -31,16 +27,12 @@ Entry Properties
 
 Number Ranges
 
-
-
 </td>
 <td valign="top">
 
 [Add a Number Ranges Object](add-a-number-ranges-object-b1bd945.md)
 
 [Update a Number Ranges Object](update-a-number-ranges-object-139a6b2.md)
-
-
 
 </td>
 </tr>

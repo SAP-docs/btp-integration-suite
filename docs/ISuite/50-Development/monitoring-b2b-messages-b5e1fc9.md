@@ -6,9 +6,9 @@
 
 The Business to Business \(B2B\) Monitoring view allows you to check the processing status of your B2B interchanges.
 
-An interchange is the incoming payload for B2B transactions. It is a bulk message or a functional group, which is a special case of a bulk message. Follow the procedure below to access the monitoring tab:
+An interchange is the incoming payload for B2B transactions. It is a bulk message or a functional group, which is a special case of a bulk message. Follow the next procedure to access the monitoring tab:
 
-1.  Log on to your Integration Suite .
+1.  Log on to yourIntegration Suite .
 2.  Choose *Monitor* \> *B2B Scenarios*
 3.  The monitoring section opens with two tiles
     -   Interchanges
@@ -17,27 +17,32 @@ An interchange is the incoming payload for B2B transactions. It is a bulk messag
 
 4.  Choose *Interchanges* to open the *Standard* monitoring view.
 
-    This will display the list of message transactions that happened during the last 24 hours.
+    This will open the list of message transactions that happened during the last 24 hours.
 
-5.  The filter options are displayed in the upper part of the screen. You can filter for a particular interchange using these filter options.
+5.  The filter options are available in the first part of the screen. You can filter for a particular interchange using these filter options.
 
     > ### Note:  
-    > Choose *Custom* from the *Interchange Creation Date Time* field dropdown if you want to see messages that were created between a specific time period.
+    > Choose *Custom* from the *Interchange Creation Date Time* field dropdown if you want to access messages that were created between a specific time period.
 
 6.  If you want to customise your filter options, choose *Adapt Filters*.
 7.  In the resulting dialog box, select or unselect fields depending on your preference and choose *OK*.
-8.  You can also save your customised filter options using the *Save As* option provided under the down <span class="SAP-icons"></span> icon next to the title *Standard\**.
-9.  You can also export the interchanges in Excel format using the <span class="SAP-icons"></span> icon provided above the list.
+
+    > ### Note:  
+    > If you had defined any custom search attributes in your active agreements, they will appear in *Adapt Filters* dialog. Select them if you want to customise your search option.
+
+8.  You can also save your customised filter options using the *Save As* option provided under the down <span class="SAP-icons"></span> icon after the title *Standard\**.
+9.  You can also export the interchanges in Excel format using the <span class="SAP-icons"></span> icon provided proceeding the list.
 10. Choose and open an interchange from the *Interchanges* list.
-11. The *Error Information* tab provides additional error information for the failed interchanges. Choose *Details* to view more information on the error.
-12. If there are any issues with the agreement configuration, the *Error Information* tab displays a *Check Agreements* button. Select the button to see the agreement details.
-13. The *Used Agreement Data in Message* section displays the Partner Directory information of the interchange.
-14. The corresponding transaction activities are displayed in the *Valid Agreements* table. You can also filter the table details using the filter option provided by selecting the column header. Choose *Close* after viewing the details.
+11. The *Error Information* tab provides additional error information for the failed interchanges. Choose *Details* to access more information about the error.
+12. If there are any issues with the agreement configuration, the *Error Information* tab provides a *Check Agreements* option. Select it to review the agreement details.
+13. The *Used Agreement Data in Message* section provides the Partner Directory information of the interchange.
+14. The corresponding transaction activities are listed in the *Valid Agreements* table. You can also filter the table details using the filter option provided by selecting the column header. Choose *Close* after viewing the details.
 15. The *General* tab of your interchange displays the following information
     1.  General Information
 
-    2.  Sender
-    3.  Receiver
+    2.  Custom Attributes \(if defined in the agreement transaction\)
+    3.  Sender
+    4.  Receiver
 
 16. The *Events* tab displays the list of business transaction events with the following details
     1.  *ID* 
@@ -58,9 +63,9 @@ An interchange is the incoming payload for B2B transactions. It is a bulk messag
 
 
 17. Choose the link provided under *Monitoring Reference* for an event. It displays the message processing details of the integration flow involved in the transaction in a new window.
-18. The *Interchange Payload* tab displays the payload file of the interchange. You can choose to see either the sender or receiver payload from the drop-down list provided in the *Version* field.
-19. Choose the *Download* <span class="SAP-icons"></span> provided next to the *Version* field if you want to download the interchange payload.
-20. Navigate to the *Unassigned Interchanges* tile under the *Monitor* tab.
+18. The *Interchange Payload* tab displays the payload file of the interchange. You can choose to open either the sender or receiver payload from the drop-down list provided in the *Version* field.
+19. Choose *Download* <span class="SAP-icons"></span> provided after the *Version* field if you want to download the interchange payload.
+20. Navigate to the *Unassigned Interchanges* tile after the *Monitor* tab.
 21. This tile displays the interchanges that resulted in an error early during the processing.
 22. You can also filter the unassigned interchanges based on
     -   Error Date Time
@@ -71,7 +76,7 @@ An interchange is the incoming payload for B2B transactions. It is a bulk messag
 
 23. Set the filter based on your requirements and choose *Go*.
 24. Choose and open an interchange from the list.
-25. You can view the details of the error in the resulting screen. The link under the *Message Processing Log ID* displays the error log details of the integration flow involved in the transaction.
+25. You can review the details of the error in the resulting dialog. The link after *Message Processing Log ID* displays the error log details of the integration flow involved in the transaction.
 
 
 
@@ -90,14 +95,10 @@ You can report an incident or error through the [SAP Support Portal](https://sup
 
 Component Name
 
-
-
 </th>
 <th valign="top">
 
 Component Description
-
-
 
 </th>
 </tr>
@@ -106,14 +107,10 @@ Component Description
 
 LOD-HCI-PI-TPM
 
-
-
 </td>
 <td valign="top">
 
 B2B Scenarios with Trading Partners
-
-
 
 </td>
 </tr>

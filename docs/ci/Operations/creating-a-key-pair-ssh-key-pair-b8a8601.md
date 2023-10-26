@@ -28,15 +28,11 @@ You create an SSH key pair to connect to the SFTP server.
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -44,15 +40,11 @@ You create an SSH key pair to connect to the SFTP server.
     <td valign="top">
     
     *Alias* 
-
-
     
     </td>
     <td valign="top">
     
     Alias for the artifact that you want to create. The alias must be unique. You can't create an alias that is already existing in the tenant for another key pair or SSH key.
-
-
     
     </td>
     </tr>
@@ -60,8 +52,6 @@ You create an SSH key pair to connect to the SFTP server.
     <td valign="top">
     
     *Key Type* 
-
-
     
     </td>
     <td valign="top">
@@ -83,15 +73,11 @@ You create an SSH key pair to connect to the SFTP server.
     <td valign="top">
     
     *Key Size* 
-
-
     
     </td>
     <td valign="top">
     
     Pick a key-bit value of your choice from the list.
-
-
     
     </td>
     </tr>
@@ -99,15 +85,11 @@ You create an SSH key pair to connect to the SFTP server.
     <td valign="top">
     
     *Signature Algorithm* 
-
-
     
     </td>
     <td valign="top">
     
     Pick a hash algorithm of your choice from the list.
-
-
     
     </td>
     </tr>
@@ -115,15 +97,11 @@ You create an SSH key pair to connect to the SFTP server.
     <td valign="top">
     
     *Common Name \(CN\)* 
-
-
     
     </td>
     <td valign="top">
     
     Provide a common name for the technical user. You use this common name while deploying an OAuth2 credential.
-
-
     
     </td>
     </tr>
@@ -131,15 +109,11 @@ You create an SSH key pair to connect to the SFTP server.
     <td valign="top">
     
     *Organizational Unit \(OU\)* 
-
-
     
     </td>
     <td valign="top">
     
     \(Optional\): Enter the department name within your organization.
-
-
     
     </td>
     </tr>
@@ -147,15 +121,11 @@ You create an SSH key pair to connect to the SFTP server.
     <td valign="top">
     
     *Organization \(O\)* 
-
-
     
     </td>
     <td valign="top">
     
     \(Optional\): Enter the name of your organization.
-
-
     
     </td>
     </tr>
@@ -163,15 +133,11 @@ You create an SSH key pair to connect to the SFTP server.
     <td valign="top">
     
     *Location \(L\)* 
-
-
     
     </td>
     <td valign="top">
     
     \(Optional\): Enter the name of the city or town.
-
-
     
     </td>
     </tr>
@@ -179,15 +145,11 @@ You create an SSH key pair to connect to the SFTP server.
     <td valign="top">
     
     *State or Province \(ST\)* 
-
-
     
     </td>
     <td valign="top">
     
     \(Optional\): Enter the name of your state or province.
-
-
     
     </td>
     </tr>
@@ -195,15 +157,11 @@ You create an SSH key pair to connect to the SFTP server.
     <td valign="top">
     
     *Country/Region \(C\)* 
-
-
     
     </td>
     <td valign="top">
     
     Enter the two-letter ISO code for the country.
-
-
     
     </td>
     </tr>
@@ -211,15 +169,11 @@ You create an SSH key pair to connect to the SFTP server.
     <td valign="top">
     
     *E-Mail \(E\)* 
-
-
     
     </td>
     <td valign="top">
     
     \(Optional\): Enter the email address associated to the user.
-
-
     
     </td>
     </tr>
@@ -227,15 +181,11 @@ You create an SSH key pair to connect to the SFTP server.
     <td valign="top">
     
     *Valid From* 
-
-
     
     </td>
     <td valign="top">
     
     Enter the date from which you want the key pair to be active.
-
-
     
     </td>
     </tr>
@@ -243,15 +193,11 @@ You create an SSH key pair to connect to the SFTP server.
     <td valign="top">
     
     *Valid Until* 
-
-
     
     </td>
     <td valign="top">
     
     Enter the date until which you want the key pair to be active.
-
-
     
     </td>
     </tr>

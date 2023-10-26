@@ -51,28 +51,20 @@ The *SetMPLStandardHeaders* Content Modifier is configured in the following way 
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -81,28 +73,20 @@ Value
 
 po\_number
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 /order/po\_number
-
-
 
 </td>
 </tr>
@@ -111,28 +95,20 @@ java.lang.String
 
 SAP\_Sender
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 /order/sender
-
-
 
 </td>
 </tr>
@@ -141,28 +117,20 @@ java.lang.String
 
 SAP\_Receiver
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 /order/receiver
-
-
 
 </td>
 </tr>
@@ -171,28 +139,20 @@ java.lang.String
 
 SAP\_MessageType
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 /order/messagetype
-
-
 
 </td>
 </tr>
@@ -201,28 +161,20 @@ java.lang.String
 
 SAP\_ApplicationID
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 /order/messageID
-
-
 
 </td>
 </tr>

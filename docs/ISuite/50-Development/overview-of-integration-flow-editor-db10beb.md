@@ -52,21 +52,15 @@ The following table shows the icons in the palette and their actions.
 
 Icon
 
-
-
 </th>
 <th valign="top">
 
 Name of the Icon
 
-
-
 </th>
 <th valign="top">
 
 Action
-
-
 
 </th>
 </tr>
@@ -75,21 +69,15 @@ Action
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 *Copy*
 
-
-
 </td>
 <td valign="top">
 
 Allows you to copy flow steps from your integration flow.
-
-
 
 </td>
 </tr>
@@ -98,14 +86,10 @@ Allows you to copy flow steps from your integration flow.
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 *Paste*
-
-
 
 </td>
 <td valign="top">
@@ -126,21 +110,15 @@ Allows you to paste the copied flow steps within and across integration flows. S
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 *Participants*
 
-
-
 </td>
 <td valign="top">
 
 Specify the end points or sender and receiver participants. For more information, see [Assign Sender and Receiver Components](assign-sender-and-receiver-components-f0eb056.md).
-
-
 
 </td>
 </tr>
@@ -149,21 +127,15 @@ Specify the end points or sender and receiver participants. For more information
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 *Process*
 
-
-
 </td>
 <td valign="top">
 
 Define different processes, which are required to process the message transfer between the sender and receiver systems, to simplify your integration process and identify any exceptions appears in the integration process. For more information, see [Define Process Shapes](define-process-shapes-b573574.md).
-
-
 
 </td>
 </tr>
@@ -172,21 +144,15 @@ Define different processes, which are required to process the message transfer b
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 *Events*
 
-
-
 </td>
 <td valign="top">
 
 Define different events of message processing. For more information, see [Define Events](define-events-4c33ae8.md).
-
-
 
 </td>
 </tr>
@@ -195,21 +161,15 @@ Define different events of message processing. For more information, see [Define
 
 :arrow_right:
 
-
-
 </td>
 <td valign="top">
 
 *Connectors*
 
-
-
 </td>
 <td valign="top">
 
 Establish connection between the 2 flow steps.
-
-
 
 </td>
 </tr>
@@ -218,21 +178,15 @@ Establish connection between the 2 flow steps.
 
 :wastebasket:
 
-
-
 </td>
 <td valign="top">
 
 *Delete*
 
-
-
 </td>
 <td valign="top">
 
 Delete the selected component or the integration flow step.
-
-
 
 </td>
 </tr>
@@ -241,21 +195,15 @@ Delete the selected component or the integration flow step.
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 *Mapping*
 
-
-
 </td>
 <td valign="top">
 
 Define different kinds of mapping, if you want to define an association between fields of messages with different structuring you use message mapping. If you want to relate an Outbound service interface operation with an Inbound service interface operation, you use operation Mapping. For more information, see [Working with Mapping](working-with-mapping-68d816a.md).
-
-
 
 </td>
 </tr>
@@ -264,21 +212,15 @@ Define different kinds of mapping, if you want to define an association between 
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 *Message Transformers*
 
-
-
 </td>
 <td valign="top">
 
 Convert messages from a format to another. For more information, see [Define Message Transformer Steps](define-message-transformer-steps-e223071.md).
-
-
 
 </td>
 </tr>
@@ -287,21 +229,15 @@ Convert messages from a format to another. For more information, see [Define Mes
 
 ![](images/Call_Image_5dd82b0.png)
 
-
-
 </td>
 <td valign="top">
 
 *Call*
 
-
-
 </td>
 <td valign="top">
 
 Define various steps that execute a call into a remote \(external\) component or into a sub process of the integration flow. For more information, see [Define Call Steps](define-call-steps-376619d.md).
-
-
 
 </td>
 </tr>
@@ -310,21 +246,15 @@ Define various steps that execute a call into a remote \(external\) component or
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 *Message Routing*
 
-
-
 </td>
 <td valign="top">
 
 Define the message path to perform different operations like splitting and routing messages. For more information, see [Define Routing Steps](define-routing-steps-ad0a19a.md).
-
-
 
 </td>
 </tr>
@@ -333,21 +263,15 @@ Define the message path to perform different operations like splitting and routi
 
 :lock:
 
-
-
 </td>
 <td valign="top">
 
 *Security Elements*
 
-
-
 </td>
 <td valign="top">
 
 Encrypt, decrypt, sign, and verify messages in the integration flow. For more information, see [Define Security-Related Steps](define-security-related-steps-0f71687.md).
-
-
 
 </td>
 </tr>
@@ -356,21 +280,15 @@ Encrypt, decrypt, sign, and verify messages in the integration flow. For more in
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 *Persistence*
 
-
-
 </td>
 <td valign="top">
 
 Define different steps to access your tenant database. You can share data across different integration flows and store the messages. For more information, see [Define Message Persistence Steps](define-message-persistence-steps-cd48445.md).
-
-
 
 </td>
 </tr>
@@ -379,21 +297,15 @@ Define different steps to access your tenant database. You can share data across
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 *Message Validator*
 
-
-
 </td>
 <td valign="top">
 
 Check the content of the message against a defined schema. For more information, see [Define Validator Steps](define-validator-steps-20e23e7.md).
-
-
 
 </td>
 </tr>
@@ -402,21 +314,15 @@ Check the content of the message against a defined schema. For more information
 
 :arrow_forward:
 
-
-
 </td>
 <td valign="top">
 
 *Run Simulation*
 
-
-
 </td>
 <td valign="top">
 
 Run the simulation once the start and end point have been defined. For more information, see [Simulation of an Integration Flow](simulation-of-an-integration-flow-2e2210b.md).
-
-
 
 </td>
 </tr>
@@ -425,21 +331,15 @@ Run the simulation once the start and end point have been defined. For more info
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 *Clear Simulation*
 
-
-
 </td>
 <td valign="top">
 
 Remove all the simulation elements such as the start point, end point, and message processing output. For more information, see [Configure Simulation](configure-simulation-45a71f8.md).
-
-
 
 </td>
 </tr>
@@ -448,21 +348,15 @@ Remove all the simulation elements such as the start point, end point, and messa
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 *Context Sensitive Help*
 
-
-
 </td>
 <td valign="top">
 
 Access the help information of a particular Flow step. It gives direct access to the information.
-
-
 
 </td>
 </tr>
@@ -471,21 +365,15 @@ Access the help information of a particular Flow step. It gives direct access to
 
 ![](images/SearchStep_IntegrationFlow_Editor_189c05d.png)
 
-
-
 </td>
 <td valign="top">
 
 *Search Step*
 
-
-
 </td>
 <td valign="top">
 
 Easy way to search a required flow step. You can either type in the search field or scroll down to select the flow step.
-
-
 
 </td>
 </tr>
@@ -606,21 +494,15 @@ Allows you to paste the copied flow step. Supports 2 pasting options:
 
 Scope
 
-
-
 </th>
 <th valign="top">
 
 Pasting within an integration flow
 
-
-
 </th>
 <th valign="top">
 
 Pasting across integration flows
-
-
 
 </th>
 </tr>
@@ -629,21 +511,15 @@ Pasting across integration flows
 
 Reuse the nonexternalized parameters from the copied step.
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -652,21 +528,15 @@ Yes
 
 Reuse the externalized parameters from the copied step.
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Checks the existence of the parameters in the target integration flow. If the value doesn't exist, creates the parameter. If the value exists in the target integration flow, the editor reuses the same parameter.
-
-
 
 </td>
 </tr>
@@ -675,21 +545,15 @@ Checks the existence of the parameters in the target integration flow. If the va
 
 Reuse the local resources \(like message mapping, scripts\) from the copied step.
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -698,21 +562,15 @@ No
 
 Reuse the referenced resources \(like message mapping, scripts\) from the copied step.
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>

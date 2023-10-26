@@ -81,28 +81,20 @@ On the *Message Header* tab of the Content Modifier, enter the following to writ
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Name
-
-
 
 </th>
 <th valign="top">
 
 Source Type
 
-
-
 </th>
 <th valign="top">
 
 Source Value
-
-
 
 </th>
 </tr>
@@ -110,29 +102,21 @@ Source Value
 <td valign="top">
 
 Create
-
-
 
 </td>
 <td valign="top">
 
 vendor
 
-
-
 </td>
 <td valign="top">
 
 constant
 
-
-
 </td>
 <td valign="top">
 
 ABC Corp
-
-
 
 </td>
 </tr>
@@ -141,28 +125,20 @@ ABC Corp
 
 Create
 
-
-
 </td>
 <td valign="top">
 
 delivery date
-
-
 
 </td>
 <td valign="top">
 
 constant
 
-
-
 </td>
 <td valign="top">
 
 25062013
-
-
 
 </td>
 </tr>

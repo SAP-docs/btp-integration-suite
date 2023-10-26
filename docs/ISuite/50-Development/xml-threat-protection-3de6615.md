@@ -49,21 +49,15 @@ An example payload for the policy is as follows:
 
 **Attribute Name**
 
-
-
 </th>
 <th valign="top">
 
  
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -72,16 +66,12 @@ An example payload for the policy is as follows:
 
 Source
 
-
-
 </td>
 <td valign="top">
 
 Indicates the message that needs to be screened for XML payload attacks. If it is set to request, you must validate the inbound requests from client apps. If it is set to message, the element automatically evaluates the request or response message when the message is attached to a request flow or a response flow respectively.
 
 `<Source>response</Source>`
-
-
 
 </td>
 </tr>
@@ -90,14 +80,10 @@ Indicates the message that needs to be screened for XML payload attacks. If it i
 
 Name Limits \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 Element
-
-
 
 </td>
 <td valign="top">
@@ -143,8 +129,6 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 
 Attribute
 
-
-
 </td>
 <td valign="top">
 
@@ -187,8 +171,6 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 
 NamespacePrefix
 
-
-
 </td>
 <td valign="top">
 
@@ -221,8 +203,6 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 <td valign="top">
 
 ProcessingInstructionTarget
-
-
 
 </td>
 <td valign="top">
@@ -257,14 +237,10 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 
 StructuralLimits \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 NodeDepth
-
-
 
 </td>
 <td valign="top">
@@ -295,8 +271,6 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 <td valign="top">
 
 AttributeCountPerElement
-
-
 
 </td>
 <td valign="top">
@@ -339,8 +313,6 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 
 NamespaceCountPerElement
 
-
-
 </td>
 <td valign="top">
 
@@ -380,8 +352,6 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 
 ChildCount
 
-
-
 </td>
 <td valign="top">
 
@@ -417,14 +387,10 @@ The ChildCount element contains the following attributes:
 
 ValueLimits \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 Text
-
-
 
 </td>
 <td valign="top">
@@ -470,8 +436,6 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 
 Attribute
 
-
-
 </td>
 <td valign="top">
 
@@ -514,8 +478,6 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 
 NamespaceURI
 
-
-
 </td>
 <td valign="top">
 
@@ -548,8 +510,6 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 <td valign="top">
 
 Comment
-
-
 
 </td>
 <td valign="top">
@@ -594,8 +554,6 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 
 ProcessingInstructionData
 
-
-
 </td>
 <td valign="top">
 
@@ -635,14 +593,10 @@ XML Threat Protection policy type defines the following error codes:
 
 Error Code
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -651,16 +605,12 @@ Cause
 
 ExecutionFailed
 
-
-
 </td>
 <td valign="top">
 
 Errors that occur when specific thresholds set in the policies are exceeded.
 
 These errors include `node depth`, `attribute count`, `child count`, `namespace count`, `element name length`,`attribute name and value length`, `namespace prefix and URL length`, `processing instruction name and data length`, `comment length`, and `text length`.
-
-
 
 </td>
 </tr>
@@ -669,14 +619,10 @@ These errors include `node depth`, `attribute count`, `child count`, `namespace 
 
 NodeDepthExceeded
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the maximum depth of XML elements allowed in an XML payload is exceeded.
-
-
 
 </td>
 </tr>
@@ -685,14 +631,10 @@ This error occurs when the maximum depth of XML elements allowed in an XML paylo
 
 AttrCountExceeded
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the maximum number of attributes allowed in a single element is exceeded.
-
-
 
 </td>
 </tr>
@@ -701,14 +643,10 @@ This error occurs when the maximum number of attributes allowed in a single elem
 
 ChildCountExceeded
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the maximum number of child elements allowed in an XML payload is exceeded.
-
-
 
 </td>
 </tr>
@@ -717,14 +655,10 @@ This error occurs when the maximum number of child elements allowed in an XML pa
 
 NSCountExceeded
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the number of name spaces allowed in a single element is exceeded.
-
-
 
 </td>
 </tr>
@@ -733,14 +667,10 @@ This error occurs when the number of name spaces allowed in a single element is 
 
 ElemNameExceeded
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the maximum string length allowed in an XML tag is exceeded.
-
-
 
 </td>
 </tr>
@@ -749,14 +679,10 @@ This error occurs when the maximum string length allowed in an XML tag is exceed
 
 AttrNameExceeded
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the maximum length allowed for an attribute name is exceeded.
-
-
 
 </td>
 </tr>
@@ -765,14 +691,10 @@ This error occurs when the maximum length allowed for an attribute name is excee
 
 AttrValueExceeded
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the maximum length allowed for an attribute value is exceeded.
-
-
 
 </td>
 </tr>
@@ -781,14 +703,10 @@ This error occurs when the maximum length allowed for an attribute value is exce
 
 NSPrefixExceeded
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the namespace prefix length is exceeded.
-
-
 
 </td>
 </tr>
@@ -797,14 +715,10 @@ This error occurs when the namespace prefix length is exceeded.
 
 NSURIExceeded
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the namespace URL length is exceeded.
-
-
 
 </td>
 </tr>
@@ -813,14 +727,10 @@ This error occurs when the namespace URL length is exceeded.
 
 PITargetExceeded
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the process instruction name length is exceeded.
-
-
 
 </td>
 </tr>
@@ -829,14 +739,10 @@ This error occurs when the process instruction name length is exceeded.
 
 PIDataExceeded
 
-
-
 </td>
 <td valign="top">
 
 The allowed processing instruction data length is exceeded.
-
-
 
 </td>
 </tr>
@@ -845,14 +751,10 @@ The allowed processing instruction data length is exceeded.
 
 CommentExceeded
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the maximum length allowed for a comment is exceeded.
-
-
 
 </td>
 </tr>
@@ -861,14 +763,10 @@ This error occurs when the maximum length allowed for a comment is exceeded.
 
 TextExceeded
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the maximum length allowed for text is exceeded.
-
-
 
 </td>
 </tr>
@@ -877,14 +775,10 @@ This error occurs when the maximum length allowed for text is exceeded.
 
 SourceUnavailable
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the message variable mentioned in the source element is either unavailable in the specific flow where the policy is being executed or it does not have a valid value \(request, response, or message\).
-
-
 
 </td>
 </tr>
@@ -893,14 +787,10 @@ This error occurs when the message variable mentioned in the source element is e
 
 NonMessageVariable
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the source element is set to a variable type which is not a message.
-
-
 
 </td>
 </tr>
@@ -909,14 +799,10 @@ This error occurs when the source element is set to a variable type which is not
 
 InvalidXMLPayload
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the input XML Payload is invalid.
-
-
 
 </td>
 </tr>
@@ -933,21 +819,15 @@ Following fault variables is set when the policy triggers an error at runtime:
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -956,8 +836,6 @@ Example
 
 \[prefix\].\[policy\_name\].failed
 
-
-
 </td>
 <td valign="top">
 
@@ -965,14 +843,10 @@ The \[prefix\] is xmlattack.
 
 The \[policy\_name\] is the name of the policy that threw the error.
 
-
-
 </td>
 <td valign="top">
 
 xmlattack.XPT-SecureRequest.failed = true
-
-
 
 </td>
 </tr>
@@ -981,21 +855,15 @@ xmlattack.XPT-SecureRequest.failed = true
 
 fault.\[error\_name\]
 
-
-
 </td>
 <td valign="top">
 
 \[error\_name\] = The specific error name to check for as listed in the table above.
 
-
-
 </td>
 <td valign="top">
 
 fault.name Matches "SourceUnavailable"
-
-
 
 </td>
 </tr>

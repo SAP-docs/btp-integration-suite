@@ -24,14 +24,10 @@ The following table explains the basic terms involved in mapping nodes:
 
 Term
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,14 +36,10 @@ Description
 
 Group Node
 
-
-
 </td>
 <td valign="top">
 
 A node that has subnodes and doesn't contain data. It can also be a subnode to another group node.
-
-
 
 </td>
 </tr>
@@ -56,14 +48,10 @@ A node that has subnodes and doesn't contain data. It can also be a subnode to a
 
 Leaf Node
 
-
-
 </td>
 <td valign="top">
 
 A subnode that contains data.
-
-
 
 </td>
 </tr>
@@ -71,8 +59,6 @@ A subnode that contains data.
 <td valign="top">
 
 Cardinality
-
-
 
 </td>
 <td valign="top">
@@ -91,14 +77,10 @@ Specifies the number of times an element can occur in a document. There are two 
 
 Mapping Line
 
-
-
 </td>
 <td valign="top">
 
 Mapping associates elements of a source structure with one or more elements of a target structure and determines target node construction. A mapping line is drawn to connect nodes and subnodes from source to target.
-
-
 
 </td>
 </tr>
@@ -107,14 +89,10 @@ Mapping associates elements of a source structure with one or more elements of a
 
 Mapping Entity
 
-
-
 </td>
 <td valign="top">
 
 A mapping entity represents a mapping from one or more source elements to a single target element.
-
-
 
 </td>
 </tr>
@@ -177,14 +155,10 @@ The following options are supported when mapping nodes from source to target.
 
 Mapping Cardinalities
 
-
-
 </th>
 <th valign="top">
 
 Mapping Type
-
-
 
 </th>
 </tr>
@@ -192,32 +166,24 @@ Mapping Type
 <td valign="top">
 
 1:1
-
-
 
 </td>
 <td valign="top">
 
 Leaf to Leaf
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 1:1
-
-
 
 </td>
 <td valign="top">
 
 Group to Group
 
-
-
 </td>
 </tr>
 <tr>
@@ -225,14 +191,10 @@ Group to Group
 
 1:1
 
-
-
 </td>
 <td valign="top">
 
 Leaf to Group
-
-
 
 </td>
 </tr>
@@ -241,14 +203,10 @@ Leaf to Group
 
 N:1
 
-
-
 </td>
 <td valign="top">
 
 Leaf to Leaf
-
-
 
 </td>
 </tr>
@@ -257,14 +215,10 @@ Leaf to Leaf
 
 0:1
 
-
-
 </td>
 <td valign="top">
 
 None to Leaf \(Constants\)
-
-
 
 </td>
 </tr>
@@ -273,14 +227,10 @@ None to Leaf \(Constants\)
 
 1:1
 
-
-
 </td>
 <td valign="top">
 
 Group to Leaf
-
-
 
 </td>
 </tr>
@@ -289,14 +239,10 @@ Group to Leaf
 
 N:1
 
-
-
 </td>
 <td valign="top">
 
 Group to Leaf
-
-
 
 </td>
 </tr>
@@ -334,14 +280,10 @@ You can directly assign a constant value to a target leaf node without defining 
 > 
 > Mapping Cardinalities
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Mapping Type
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -349,16 +291,12 @@ You can directly assign a constant value to a target leaf node without defining 
 > <td valign="top">
 > 
 > N:1
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Group to Group
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
@@ -366,14 +304,10 @@ You can directly assign a constant value to a target leaf node without defining 
 > 
 > N:1
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Leaf to Group
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -443,14 +377,10 @@ You can know the type of mapping used based on the icon denoted over the mapping
 
 Icon
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -458,8 +388,6 @@ Description
 <td valign="top">
 
 <span class="SAP-icons"></span>
-
-
 
 </td>
 <td valign="top">
@@ -480,14 +408,10 @@ Denotes
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 String processing
-
-
 
 </td>
 </tr>
@@ -496,14 +420,10 @@ String processing
 
 :calendar:
 
-
-
 </td>
 <td valign="top">
 
 Date Time mapping
-
-
 
 </td>
 </tr>
@@ -512,14 +432,10 @@ Date Time mapping
 
 :hash:
 
-
-
 </td>
 <td valign="top">
 
 Constant
-
-
 
 </td>
 </tr>
@@ -528,14 +444,10 @@ Constant
 
 <span class="SAP-icons-TNT"></span>
 
-
-
 </td>
 <td valign="top">
 
 Code value mapping
-
-
 
 </td>
 </tr>
@@ -544,14 +456,10 @@ Code value mapping
 
 <span class="SAP-icons-TNT"></span>
 
-
-
 </td>
 <td valign="top">
 
 Conditional mapping
-
-
 
 </td>
 </tr>

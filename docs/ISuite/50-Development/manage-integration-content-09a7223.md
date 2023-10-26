@@ -42,14 +42,10 @@ The header area provides the following information about the selected artifact:
 
 Information
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -58,14 +54,10 @@ Description
 
 *Deployed on*
 
-
-
 </td>
 <td valign="top">
 
 Time when the artifact was deployed.
-
-
 
 </td>
 </tr>
@@ -74,14 +66,10 @@ Time when the artifact was deployed.
 
 *Deployed by*
 
-
-
 </td>
 <td valign="top">
 
 User who deployed the artifact.
-
-
 
 </td>
 </tr>
@@ -90,14 +78,10 @@ User who deployed the artifact.
 
 *Version*
 
-
-
 </td>
 <td valign="top">
 
 Version of the artifact, for example, the integration flow version.
-
-
 
 </td>
 </tr>
@@ -106,14 +90,10 @@ Version of the artifact, for example, the integration flow version.
 
 *ID*
 
-
-
 </td>
 <td valign="top">
 
 Artifact ID
-
-
 
 </td>
 </tr>
@@ -122,14 +102,10 @@ Artifact ID
 
 *Package*
 
-
-
 </td>
 <td valign="top">
 
 Name of the package the artifact was deployed from.
-
-
 
 </td>
 </tr>
@@ -138,14 +114,10 @@ Name of the package the artifact was deployed from.
 
 *Mode*\(if applicable\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether it is configure-only content.
-
-
 
 </td>
 </tr>
@@ -216,15 +188,11 @@ Below the header, the following sections contain detailed information about the 
     <th valign="top">
 
     Artifact Type
-
-
     
     </th>
     <th valign="top">
 
     You can:
-
-
     
     </th>
     </tr>
@@ -232,8 +200,6 @@ Below the header, the following sections contain detailed information about the 
     <td valign="top">
     
     Integration flows
-
-
     
     </td>
     <td valign="top">
@@ -243,8 +209,6 @@ Below the header, the following sections contain detailed information about the 
     *View deployed artifact*
 
     *Navigate to Artifact Editor*
-
-
     
     </td>
     </tr>
@@ -252,8 +216,6 @@ Below the header, the following sections contain detailed information about the 
     <td valign="top">
     
     Value mapping
-
-
     
     </td>
     <td valign="top">
@@ -261,8 +223,6 @@ Below the header, the following sections contain detailed information about the 
     *View deployed artifact*
 
     *Navigate to Artifact Editor*
-
-
     
     </td>
     </tr>
@@ -270,8 +230,6 @@ Below the header, the following sections contain detailed information about the 
     <td valign="top">
     
     SOAP API
-
-
     
     </td>
     <td valign="top">
@@ -281,8 +239,6 @@ Below the header, the following sections contain detailed information about the 
     *View deployed artifact*
 
     *Navigate to Artifact Editor*
-
-
     
     </td>
     </tr>
@@ -290,8 +246,6 @@ Below the header, the following sections contain detailed information about the 
     <td valign="top">
     
     REST API
-
-
     
     </td>
     <td valign="top">
@@ -301,8 +255,6 @@ Below the header, the following sections contain detailed information about the 
     *View deployed artifact*
 
     *Navigate to Artifact Editor*
-
-
     
     </td>
     </tr>
@@ -310,8 +262,6 @@ Below the header, the following sections contain detailed information about the 
     <td valign="top">
     
     OData API
-
-
     
     </td>
     <td valign="top">
@@ -319,8 +269,6 @@ Below the header, the following sections contain detailed information about the 
     access the *Monitor Message Processing*
 
     *Navigate to Artifact Editor*
-
-
     
     </td>
     </tr>
@@ -328,15 +276,11 @@ Below the header, the following sections contain detailed information about the 
     <td valign="top">
     
     Integration Adapter
-
-
     
     </td>
     <td valign="top">
     
     access the *Vendor* 
-
-
     
     </td>
     </tr>
@@ -344,8 +288,6 @@ Below the header, the following sections contain detailed information about the 
     <td valign="top">
     
     Script Collection
-
-
     
     </td>
     <td valign="top">
@@ -353,8 +295,6 @@ Below the header, the following sections contain detailed information about the 
     *View deployed artifact*
 
     *Navigate to Artifact Editor*
-
-
     
     </td>
     </tr>
@@ -362,8 +302,6 @@ Below the header, the following sections contain detailed information about the 
     <td valign="top">
     
     Message Mapping
-
-
     
     </td>
     <td valign="top">
@@ -371,8 +309,6 @@ Below the header, the following sections contain detailed information about the 
     *View deployed artifact*
 
     *Navigate to Artifact Editor*
-
-
     
     </td>
     </tr>

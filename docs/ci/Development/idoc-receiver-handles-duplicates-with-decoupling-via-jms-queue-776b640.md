@@ -57,21 +57,15 @@ In the Content Modifier **Set SapMessageId**, check out the Message Header t
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Source Type
 
-
-
 </th>
 <th valign="top">
 
 SourceValue
-
-
 
 </th>
 </tr>
@@ -80,21 +74,15 @@ SourceValue
 
 SapMessageId
 
-
-
 </td>
 <td valign="top">
 
 Header
 
-
-
 </td>
 <td valign="top">
 
 SAP\_MessageProcessingLogID
-
-
 
 </td>
 </tr>
@@ -118,15 +106,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -134,15 +118,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     OWN
-
-
     
     </td>
     </tr>
@@ -150,15 +130,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     User
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -166,15 +142,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     Password
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

@@ -31,28 +31,20 @@ Invalidate Cache policy defines the following attributes that are common to all 
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Default
 
-
-
 </th>
 <th valign="top">
 
 Presence
-
-
 
 </th>
 </tr>
@@ -61,28 +53,20 @@ Presence
 
 name
 
-
-
 </td>
 <td valign="top">
 
 The internal name of the policy. Characters you can use in the name are restricted to: A-Z 0-9.\_\\-$ %.
-
-
 
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 Required
-
-
 
 </td>
 </tr>
@@ -91,8 +75,6 @@ Required
 
 continueOnError
 
-
-
 </td>
 <td valign="top">
 
@@ -100,21 +82,15 @@ Set to false to return an error when a policy fails. This is expected behavior f
 
 Set to true to have flow execution continue even after a policy fails.
 
-
-
 </td>
 <td valign="top">
 
 false
 
-
-
 </td>
 <td valign="top">
 
 Optional
-
-
 
 </td>
 </tr>
@@ -123,8 +99,6 @@ Optional
 
 enabled
 
-
-
 </td>
 <td valign="top">
 
@@ -132,21 +106,15 @@ Set to true to enforce the policy.
 
 Set to false to "turn off" the policy. The policy will not be enforced even if it remains attached to a flow.
 
-
-
 </td>
 <td valign="top">
 
 true
 
-
-
 </td>
 <td valign="top">
 
 Optional
-
-
 
 </td>
 </tr>
@@ -155,28 +123,20 @@ Optional
 
 async
 
-
-
 </td>
 <td valign="top">
 
 This attribute is deprecated.
-
-
 
 </td>
 <td valign="top">
 
 false
 
-
-
 </td>
 <td valign="top">
 
 Deprecated
-
-
 
 </td>
 </tr>
@@ -189,14 +149,10 @@ Deprecated
 
 **Element**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -205,14 +161,10 @@ Deprecated
 
 CacheKey
 
-
-
 </td>
 <td valign="top">
 
 Configures a unique pointer to a piece of data stored in the cache.
-
-
 
 </td>
 </tr>
@@ -221,14 +173,10 @@ Configures a unique pointer to a piece of data stored in the cache.
 
 CacheResource
 
-
-
 </td>
 <td valign="top">
 
 Specifies the cache where messages should be stored. A default cache is available.
-
-
 
 </td>
 </tr>
@@ -237,14 +185,10 @@ Specifies the cache where messages should be stored. A default cache is availabl
 
 Scope
 
-
-
 </td>
 <td valign="top">
 
 Enumeration used to construct a prefix for a cache key when a <Prefix\> element is not provided in the <CacheKey\> element.
-
-
 
 </td>
 </tr>
@@ -253,14 +197,10 @@ Enumeration used to construct a prefix for a cache key when a <Prefix\> element 
 
 CacheContext
 
-
-
 </td>
 <td valign="top">
 
 Specifies how to construct a cache key when a <Prefix\> element value is not specified, or to clear cache entries added by another API proxy.
-
-
 
 </td>
 </tr>
@@ -269,14 +209,10 @@ Specifies how to construct a cache key when a <Prefix\> element value is not spe
 
 PurgeChildEntries
 
-
-
 </td>
 <td valign="top">
 
 true to purge child cache entries when invalidating the cache. Default is false.
-
-
 
 </td>
 </tr>
@@ -285,14 +221,10 @@ true to purge child cache entries when invalidating the cache. Default is false.
 
 Prefix
 
-
-
 </td>
 <td valign="top">
 
 Specifies a value to use as a cache key prefix.
-
-
 
 </td>
 </tr>
@@ -301,14 +233,10 @@ Specifies a value to use as a cache key prefix.
 
 KeyFragment
 
-
-
 </td>
 <td valign="top">
 
 Specifies a value that should be included in the cache key, creating a namespace for matching requests to cached responses.
-
-
 
 </td>
 </tr>
@@ -323,14 +251,10 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -339,14 +263,10 @@ Cause
 
 InvalidCacheResourceReference
 
-
-
 </td>
 <td valign="top">
 
 The cache specified in the <CacheResource\> element does not exist.
-
-
 
 </td>
 </tr>
@@ -355,14 +275,10 @@ The cache specified in the <CacheResource\> element does not exist.
 
 CacheNotFound
 
-
-
 </td>
 <td valign="top">
 
 The cache specified in the <CacheResource\> element does not exist.
-
-
 
 </td>
 </tr>

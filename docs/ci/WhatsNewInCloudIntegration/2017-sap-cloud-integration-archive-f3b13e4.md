@@ -17,14 +17,10 @@
 
 Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.38.\*
-
-
 
 </td>
 </tr>
@@ -33,14 +29,10 @@ Tooling
 
 Node Assembly \(Cluster 2.x\)
 
-
-
 </td>
 <td valign="top">
 
 2.35.\*
-
-
 
 </td>
 </tr>
@@ -55,8 +47,6 @@ Node Assembly \(Cluster 2.x\)
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -85,8 +75,6 @@ For more information, see:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -95,8 +83,6 @@ New
 The integration flow editor available in Web application has a new improved interface that helps the integration developers to work efficiently.
 
 For more information, see [Configure Integration Flow Components](../Development/configure-integration-flow-components-3171795.md).
-
-
 
 </td>
 </tr>
@@ -108,8 +94,6 @@ For more information, see [Configure Integration Flow Components](../Development
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -120,8 +104,6 @@ You can now upload a single or multiple resources either from the file system or
 
 For more information, see [Manage Resources of an Integration Flow](../Development/manage-resources-of-an-integration-flow-b5968b2.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -132,8 +114,6 @@ For more information, see [Manage Resources of an Integration Flow](../Developme
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -156,8 +136,6 @@ For more information, see:
 
 [Restoring a Key Pair from the Key History](../Operations/restoring-a-key-pair-from-the-key-history-43965e7.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -168,8 +146,6 @@ For more information, see:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -184,8 +160,6 @@ More information:
 
 [Configure Externalized Parameters of an Integration Flow](../Development/configure-externalized-parameters-of-an-integration-flow-462a478.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -196,8 +170,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -212,8 +184,6 @@ More information:
 
 [Migrate an Integration Flow Component to a New Version](../Development/migrate-an-integration-flow-component-to-a-new-version-61bf6a2.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -224,8 +194,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -242,8 +210,6 @@ For more information, see:
 
  <?sap-ot O2O class="- topic/xref " href="18cb520cf8e74c528b14312058e8e38e.xml" text="" desc="" xtrc="xref:13" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -254,8 +220,6 @@ For more information, see:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -284,8 +248,6 @@ For more information, see:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -308,8 +270,6 @@ A subprocessor is any entity or individual, which has or potentially will have a
 
 Note that services of SAP BTP such as, for example, Neo, are covered by this document.
 
-
-
 </td>
 </tr>
 </table>
@@ -329,14 +289,10 @@ Note that services of SAP BTP such as, for example, Neo, are covered by this doc
 
 Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.37.\*
-
-
 
 </td>
 </tr>
@@ -345,14 +301,10 @@ Tooling
 
 Node Assembly \(Cluster 1.x\)
 
-
-
 </td>
 <td valign="top">
 
 1.56.\*
-
-
 
 </td>
 </tr>
@@ -361,14 +313,10 @@ Node Assembly \(Cluster 1.x\)
 
 Node Assembly \(Cluster 2.x\)
 
-
-
 </td>
 <td valign="top">
 
 2.34.\*
-
-
 
 </td>
 </tr>
@@ -384,8 +332,6 @@ Node Assembly \(Cluster 2.x\)
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -399,8 +345,6 @@ For more information, see:
 
 [Displaying Properties of a Keystore Entry](../Operations/displaying-properties-of-a-keystore-entry-24585ba.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -411,8 +355,6 @@ For more information, see:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -449,14 +391,10 @@ For more information, see:
 
 Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.36.0
-
-
 
 </td>
 </tr>
@@ -465,14 +403,10 @@ Tooling
 
 Node Assembly \(Cluster 1.x\)
 
-
-
 </td>
 <td valign="top">
 
 1.55.0
-
-
 
 </td>
 </tr>
@@ -481,14 +415,10 @@ Node Assembly \(Cluster 1.x\)
 
 Node Assembly \(Cluster 2.x\)
 
-
-
 </td>
 <td valign="top">
 
 2.33.0
-
-
 
 </td>
 </tr>
@@ -503,8 +433,6 @@ Node Assembly \(Cluster 2.x\)
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -525,8 +453,6 @@ For more information, see:
 
 [Configure the SFTP Sender Adapter](../Development/configure-the-sftp-sender-adapter-2de9ee5.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -537,8 +463,6 @@ For more information, see:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -555,8 +479,6 @@ For more information, see:
 
  <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:27" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -567,8 +489,6 @@ For more information, see:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -581,8 +501,6 @@ You can now import or add different file types to an integration content.
 
 For more information, see [Manage Resources of an Integration Flow](../Development/manage-resources-of-an-integration-flow-b5968b2.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -593,8 +511,6 @@ For more information, see [Manage Resources of an Integration Flow](../Developme
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -623,8 +539,6 @@ For more information, see:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -636,8 +550,6 @@ In the Message Queue Monitor you can now display the integration flows in which 
 
 For more information, see [Managing Message Queues](../Operations/managing-message-queues-cdcce24.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -648,8 +560,6 @@ For more information, see [Managing Message Queues](../Operations/managing-messa
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -660,8 +570,6 @@ EDIFACT syntax version 4 is now supported.
 
 For more information, see [Define EDI Splitter](../Development/define-edi-splitter-584a3be.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -672,8 +580,6 @@ For more information, see [Define EDI Splitter](../Development/define-edi-splitt
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -690,8 +596,6 @@ For more information, see:
  <?sap-ot O2O class="- topic/xref " href="b61dbaedd4244b10b04f1be1d68c0e40.xml" text="" desc="" xtrc="xref:33" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
 [RFC Receiver Adapter](../Development/rfc-receiver-adapter-5c76048.md)
-
-
 
 </td>
 </tr>
@@ -712,14 +616,10 @@ For more information, see:
 
 Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.35.0
-
-
 
 </td>
 </tr>
@@ -728,14 +628,10 @@ Tooling
 
 Node Assembly \(Cluster 1.x\)
 
-
-
 </td>
 <td valign="top">
 
 1.54.0
-
-
 
 </td>
 </tr>
@@ -744,14 +640,10 @@ Node Assembly \(Cluster 1.x\)
 
 Node Assembly \(Cluster 2.x\)
 
-
-
 </td>
 <td valign="top">
 
 2.32.0
-
-
 
 </td>
 </tr>
@@ -767,8 +659,6 @@ Node Assembly \(Cluster 2.x\)
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -780,8 +670,6 @@ You can now view externalised values by selecting relevant details of externalis
 
 More information: [Configure Externalized Parameters of an Integration Flow](../Development/configure-externalized-parameters-of-an-integration-flow-462a478.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -792,8 +680,6 @@ More information: [Configure Externalized Parameters of an Integration Flow](../
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -804,8 +690,6 @@ You can now transport integration content using *Change and Transport System \(C
 
 For more information, see [Content Transport](../Development/content-transport-e3c79d6.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -817,8 +701,6 @@ For more information, see [Content Transport](../Development/content-transport-e
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -827,8 +709,6 @@ For more information, see [Content Transport](../Development/content-transport-e
 Now you can include additional properties in the URI, for retrieving specific information on an custom adapter \(SAP ADK\) during runtime.
 
 For more information, see [Develop Adapters](../Development/develop-adapters-f798db6.md).
-
-
 
 </td>
 </tr>
@@ -849,14 +729,10 @@ For more information, see [Develop Adapters](../Development/develop-adapters-f79
 
 Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.34.0
-
-
 
 </td>
 </tr>
@@ -865,14 +741,10 @@ Tooling
 
 Node Assembly \(Cluster 1.x\)
 
-
-
 </td>
 <td valign="top">
 
 1.53.0
-
-
 
 </td>
 </tr>
@@ -881,14 +753,10 @@ Node Assembly \(Cluster 1.x\)
 
 Node Assembly \(Cluster 2.x\)
 
-
-
 </td>
 <td valign="top">
 
 2.31.0
-
-
 
 </td>
 </tr>
@@ -903,8 +771,6 @@ Node Assembly \(Cluster 2.x\)
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -921,16 +787,12 @@ More information:
 
 [Restoring Backed-Up Keystore Entries](../Operations/restoring-backed-up-keystore-entries-bfbbf91.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -940,8 +802,6 @@ More information:
 You can now use content assist feature for groovy script which means that you can view list of existing methods of message class, once you start typing initial letters of the required method. You can add content assist jar file in integration project to use this feature.
 
 For more information, see  <?sap-ot O2O class="- topic/xref " href="905b24171cc746ef9069939ff3b536db.xml" text="" desc="" xtrc="xref:45" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
-
-
 
 </td>
 </tr>
@@ -953,8 +813,6 @@ For more information, see  <?sap-ot O2O class="- topic/xref " href="905b24171cc7
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -973,8 +831,6 @@ For more information, see \(for the Web UI\):
 
 [SOAP \(SAP RM\) Adapter](../Development/soap-sap-rm-adapter-6bd724f.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -985,8 +841,6 @@ For more information, see \(for the Web UI\):
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -999,8 +853,6 @@ The Partner Directory contains information on partners that are connected to a c
 
 You can use the Partner Directory when setting up a network of many communication partners. Partner-specific information can be parameterized in a few integration flows \(which dynamically read the partner-specific information from the Partner Directory\). That way, you can easily add new partners to the network without changing or redeploying integration flows.
 
-
-
 </td>
 </tr>
 </table>
@@ -1011,8 +863,6 @@ You can use the Partner Directory when setting up a network of many communicatio
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1042,8 +892,6 @@ For more information, see
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -1059,8 +907,6 @@ For more information, see
 
 [Define a Send Step](../Development/define-a-send-step-9b83f10.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -1071,8 +917,6 @@ For more information, see
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1099,8 +943,6 @@ The **Dead-letter** queue option has been introduced in AS2 adapter. This option
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -1109,8 +951,6 @@ The **Dead-letter** queue option has been introduced in AS2 adapter. This option
 SAP ADK framework has introduced a new adapter project creation wizard with maven plugin support. It allows you to build and deploy custom adapters.
 
 For more information, see [Develop Adapters](../Development/develop-adapters-f798db6.md).
-
-
 
 </td>
 </tr>
@@ -1122,8 +962,6 @@ For more information, see [Develop Adapters](../Development/develop-adapters-f79
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1136,8 +974,6 @@ For more information, see
 
 [Performing Connectivity Tests](../Operations/performing-connectivity-tests-d5b2fae.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -1148,8 +984,6 @@ For more information, see
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1170,8 +1004,6 @@ For more information, see
 
 [Managing Keystore Entries](../Operations/managing-keystore-entries-2dc8942.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -1182,8 +1014,6 @@ For more information, see
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1194,8 +1024,6 @@ You can now disable a field in the target structure in a mapping definition reso
 
 For more information, see <?sap-ot O2O class="- topic/xref " href="3f2f4bb739b84bf48154d6734869a992.xml" text="" desc="" xtrc="xref:60" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
 
-
-
 </td>
 </tr>
 </table>
@@ -1206,8 +1034,6 @@ For more information, see <?sap-ot O2O class="- topic/xref " href="3f2f4bb739b84
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1230,8 +1056,6 @@ Kaavian Systems
 
 Find the updated list at: [Subprocessor \(non SAP Affiliates\) List](https://support.sap.com/content/dam/support/en_us/library/ssp/my-support/subprocessors/SAP%20Cloud%20Platform%20Subprocessor%20(non%20SAP%20Affiliates)%20List.pdf)
 
-
-
 </td>
 </tr>
 </table>
@@ -1251,14 +1075,10 @@ Find the updated list at: [Subprocessor \(non SAP Affiliates\) List](https://sup
 
 Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.33.0
-
-
 
 </td>
 </tr>
@@ -1267,14 +1087,10 @@ Tooling
 
 Node Assembly \(Cluster 1.x\)
 
-
-
 </td>
 <td valign="top">
 
 1.52.0
-
-
 
 </td>
 </tr>
@@ -1283,14 +1099,10 @@ Node Assembly \(Cluster 1.x\)
 
 Node Assembly \(Cluster 2.x\)
 
-
-
 </td>
 <td valign="top">
 
 2.30.0
-
-
 
 </td>
 </tr>
@@ -1305,8 +1117,6 @@ Node Assembly \(Cluster 2.x\)
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1337,8 +1147,6 @@ For more information, see
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -1348,8 +1156,6 @@ Logging can be implemented by using Simple Logging Facade for Java \(SLF4J\).
 
 For more information, see [Develop Adapters](../Development/develop-adapters-f798db6.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1360,8 +1166,6 @@ For more information, see [Develop Adapters](../Development/develop-adapters-f79
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1370,8 +1174,6 @@ For more information, see [Develop Adapters](../Development/develop-adapters-f79
 
 Developing an OData API is generally available now. This service was previously in beta version.
 
-
-
 </td>
 </tr>
 </table>
@@ -1382,8 +1184,6 @@ Developing an OData API is generally available now. This service was previously 
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1413,8 +1213,6 @@ For more information, see
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -1423,8 +1221,6 @@ Enhancement
 You can now configure the script in the custom function to return multiple string values.
 
 For more information, see <?sap-ot O2O class="- topic/xref " href="376a16ca0d0a4ebeb78fe3d7af333d79.xml" text="" desc="" xtrc="xref:67" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
-
-
 
 </td>
 </tr>
@@ -1436,8 +1232,6 @@ For more information, see <?sap-ot O2O class="- topic/xref " href="376a16ca0d0a4
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1466,8 +1260,6 @@ For more information, see
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -1495,8 +1287,6 @@ For more information, see
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -1505,8 +1295,6 @@ For more information, see
 The SAP Cloud Integration, enterprise edition supports additional capabilities of an integration flow.
 
 More information: [Licensed Capabilities and Features](../WhatIsCloudIntegration/licensed-capabilities-and-features-cd0b75e.md) 
-
-
 
 </td>
 </tr>
@@ -1518,8 +1306,6 @@ More information: [Licensed Capabilities and Features](../WhatIsCloudIntegration
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1532,8 +1318,6 @@ The tenant administrator can now also download SSH keystore entries for SFTP con
 
 More information: [Downloading Single Keystore Entries](../Operations/downloading-single-keystore-entries-ca8a663.md) 
 
-
-
 </td>
 </tr>
 </table>
@@ -1544,8 +1328,6 @@ More information: [Downloading Single Keystore Entries](../Operations/downloadin
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1556,8 +1338,6 @@ Authentication via principal propagation is now available in the OData adapter.
 
 For more information, see  <?sap-ot O2O class="- topic/xref " href="ff4cfc53ea5c440da78fe039d85b8319.xml" text="" desc="" xtrc="xref:76" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
 
-
-
 </td>
 </tr>
 </table>
@@ -1569,8 +1349,6 @@ For more information, see  <?sap-ot O2O class="- topic/xref " href="ff4cfc53ea5c
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -1579,8 +1357,6 @@ For more information, see  <?sap-ot O2O class="- topic/xref " href="ff4cfc53ea5c
 Message Monitoring/Managing Locks allows you to deal with messages that cannot be processed and are placed in the dead-letter queue.
 
 More information: [Message Locks](../Operations/message-locks-bce9ae0.md)
-
-
 
 </td>
 </tr>
@@ -1601,14 +1377,10 @@ More information: [Message Locks](../Operations/message-locks-bce9ae0.md)
 
 Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.32.0
-
-
 
 </td>
 </tr>
@@ -1617,14 +1389,10 @@ Tooling
 
 Node Assembly \(Cluster 1.x\)
 
-
-
 </td>
 <td valign="top">
 
 1.51.0
-
-
 
 </td>
 </tr>
@@ -1633,14 +1401,10 @@ Node Assembly \(Cluster 1.x\)
 
 Node Assembly \(Cluster 2.x\)
 
-
-
 </td>
 <td valign="top">
 
 2.29.0
-
-
 
 </td>
 </tr>
@@ -1655,8 +1419,6 @@ Node Assembly \(Cluster 2.x\)
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1678,8 +1440,6 @@ Furthermore, the Keystore Monitor provides you with the following options:
 
 For more information, see [Managing Keystore Entries](../Operations/managing-keystore-entries-2dc8942.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -1690,8 +1450,6 @@ For more information, see [Managing Keystore Entries](../Operations/managing-key
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1702,8 +1460,6 @@ Externalize feature is now available in the Web UI of Cloud Integration. It allo
 
 For more information, see [Externalize Parameters of an Integration Flow](../Development/externalize-parameters-of-an-integration-flow-45b2a07.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1714,8 +1470,6 @@ For more information, see [Externalize Parameters of an Integration Flow](../Dev
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1726,8 +1480,6 @@ The Resources viewer in the Web UI of Cloud Integration helps you to manage diff
 
 For more information, see [Manage Resources of an Integration Flow](../Development/manage-resources-of-an-integration-flow-b5968b2.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1738,8 +1490,6 @@ For more information, see [Manage Resources of an Integration Flow](../Developme
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1754,8 +1504,6 @@ For more information, see:
 
 [Blueprint Metadata](../Development/blueprint-metadata-ab38cc8.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -1766,8 +1514,6 @@ For more information, see:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1778,8 +1524,6 @@ The OData API was enhanced to support keystore management activities by the tena
 
 For more information, see  <?sap-ot O2O class="- topic/xref " href="9c26ac71c5a54e65a7550aacd58ca1b1.xml" text="" desc="" xtrc="xref:85" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -1790,8 +1534,6 @@ For more information, see  <?sap-ot O2O class="- topic/xref " href="9c26ac71c5a5
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1802,8 +1544,6 @@ The OData API allows you to address certificate-to-user mappings.
 
 For more information, see  <?sap-ot O2O class="- topic/xref " href="3e3d82939da64fb898539421cd0e9a02.xml" text="" desc="" xtrc="xref:86" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -1814,8 +1554,6 @@ For more information, see  <?sap-ot O2O class="- topic/xref " href="3e3d82939da6
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1826,8 +1564,6 @@ Provisioning message broker allows you \(tenant admin\) to use JMS adapter scena
 
 For more information, see [Activating Enterprise Messaging](../Operations/activating-enterprise-messaging-a74cddc.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -1838,8 +1574,6 @@ For more information, see [Activating Enterprise Messaging](../Operations/activa
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1850,8 +1584,6 @@ JMS Adapter and Message Queue Monitor is available for Cloud Integration Custome
 
 For more information, see  <?sap-ot O2O class="- topic/xref " href="18cb520cf8e74c528b14312058e8e38e.xml" text="" desc="" xtrc="xref:88" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -1862,8 +1594,6 @@ For more information, see  <?sap-ot O2O class="- topic/xref " href="18cb520cf8e7
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1874,8 +1604,6 @@ The Web UI now supports also an additional transaction handling configuration op
 
 For more information, see [Define Transaction Handling](../Development/define-transaction-handling-2a5d4bc.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -1886,8 +1614,6 @@ For more information, see [Define Transaction Handling](../Development/define-tr
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1898,8 +1624,6 @@ Parameter *CRAM-MD5* in Sender/Receiver Mail Adapter was renamed to *Encrypted U
 
 For more information, see  <?sap-ot O2O class="- topic/xref " href="08af047a0c0145ab8742b946cff7bcd7.xml" text="" desc="" xtrc="xref:90" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -1910,8 +1634,6 @@ For more information, see  <?sap-ot O2O class="- topic/xref " href="08af047a0c01
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1925,8 +1647,6 @@ The list of subprocessors \(non SAP affiliates\) has been updated. A subprocesso
 Note that services such as, for example, SAP Cloud Integration, are covered by this document.
 
 Find the updated list at: [List of Subprocessors \(non SAP Affiliates\)](https://support.sap.com/content/dam/support/en_us/library/ssp/my-support/subprocessors/SAP%20Cloud%20Platform%20Subprocessor%20%28non%20SAP%20Affiliates%29%20List%20v13%20%28002%29.pdf)
-
-
 
 </td>
 </tr>
@@ -1947,14 +1667,10 @@ Find the updated list at: [List of Subprocessors \(non SAP Affiliates\)](https:/
 
 Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.31.0
-
-
 
 </td>
 </tr>
@@ -1963,14 +1679,10 @@ Tooling
 
 Node Assembly \(Cluster 1.x\)
 
-
-
 </td>
 <td valign="top">
 
 1.50.0
-
-
 
 </td>
 </tr>
@@ -1979,14 +1691,10 @@ Node Assembly \(Cluster 1.x\)
 
 Node Assembly \(Cluster 2.x\)
 
-
-
 </td>
 <td valign="top">
 
 2.28.0
-
-
 
 </td>
 </tr>
@@ -2002,8 +1710,6 @@ Node Assembly \(Cluster 2.x\)
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -2012,8 +1718,6 @@ Node Assembly \(Cluster 2.x\)
 You can now create or upload value mapping artifacts to your integration package.
 
 For more information, see [Creating Value Mapping](../Development/creating-value-mapping-25eff9b.md).
-
-
 
 </td>
 </tr>
@@ -2025,8 +1729,6 @@ For more information, see [Creating Value Mapping](../Development/creating-value
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2055,8 +1757,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2088,8 +1788,6 @@ More information:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -2118,8 +1816,6 @@ More information:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -2131,8 +1827,6 @@ You can now download certificates, check for mail addresses and validate the ser
 
 More information:  <?sap-ot O2O class="- topic/xref " href="c834dd0512774ffab268a83bfdcc3b48.xml" text="" desc="" xtrc="xref:99" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -2143,8 +1837,6 @@ More information:  <?sap-ot O2O class="- topic/xref " href="c834dd0512774ffab268
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2157,8 +1849,6 @@ The *Data Store* viewer now also downloads headers.
 
 More information:  <?sap-ot O2O class="- topic/xref " href="2dcd5ff49449489a993479b98238e759.xml" text="" desc="" xtrc="xref:100" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -2170,8 +1860,6 @@ More information:  <?sap-ot O2O class="- topic/xref " href="2dcd5ff49449489a9934
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -2180,8 +1868,6 @@ More information:  <?sap-ot O2O class="- topic/xref " href="2dcd5ff49449489a9934
 The *Managing Locks* editor in the Web UI of Cloud Integration has been improved and made more user-friendly. You can now filter or search for entries, for example.
 
 More information: [Message Locks](../Operations/message-locks-bce9ae0.md)
-
-
 
 </td>
 </tr>
@@ -2202,14 +1888,10 @@ More information: [Message Locks](../Operations/message-locks-bce9ae0.md)
 
 Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.30.0
-
-
 
 </td>
 </tr>
@@ -2218,14 +1900,10 @@ Tooling
 
 Node Assembly \(Cluster 1.x\)
 
-
-
 </td>
 <td valign="top">
 
 1.49.0
-
-
 
 </td>
 </tr>
@@ -2234,14 +1912,10 @@ Node Assembly \(Cluster 1.x\)
 
 Node Assembly \(Cluster 2.x\)
 
-
-
 </td>
 <td valign="top">
 
 2.27.0
-
-
 
 </td>
 </tr>
@@ -2257,8 +1931,6 @@ Node Assembly \(Cluster 2.x\)
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -2270,8 +1942,6 @@ It allows you to display and manage lock entries that are created when more than
 
 More information: [Message Locks](../Operations/message-locks-bce9ae0.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -2282,8 +1952,6 @@ More information: [Message Locks](../Operations/message-locks-bce9ae0.md)
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2292,8 +1960,6 @@ More information: [Message Locks](../Operations/message-locks-bce9ae0.md)
 
 Cloud Integration tools are supported on Eclipse Neon only. You will get update for Cloud Integration software through this Eclipse update site:.
 
-
-
 </td>
 </tr>
 </table>
@@ -2304,8 +1970,6 @@ Cloud Integration tools are supported on Eclipse Neon only. You will get update 
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2320,8 +1984,6 @@ More information:
 
  <?sap-ot O2O class="- topic/xref " href="fddeb49ff9344eccb9a087cb5d55a07a.xml" text="" desc="" xtrc="xref:105" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -2332,8 +1994,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2364,8 +2024,6 @@ More information:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -2384,8 +2042,6 @@ The SOAPAction Header can now be used as a Camel Header for the following receiv
 
 More information: [Headers and Exchange Properties Provided by the Integration Framework](../Development/headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -2397,16 +2053,12 @@ More information: [Headers and Exchange Properties Provided by the Integration F
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 **New**
 
 The **documentation** now contains a detailed list showing which **single roles** are required in order to perform the various tasks related to Cloud Integration.
-
-
 
 </td>
 </tr>
@@ -2427,14 +2079,10 @@ The **documentation** now contains a detailed list showing which **single roles*
 
 Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.29.\*
-
-
 
 </td>
 </tr>
@@ -2443,14 +2091,10 @@ Tooling
 
 Node Assembly \(Cluster 1.x\)
 
-
-
 </td>
 <td valign="top">
 
 1.48.\*
-
-
 
 </td>
 </tr>
@@ -2459,14 +2103,10 @@ Node Assembly \(Cluster 1.x\)
 
 Node Assembly \(Cluster 2.x\)
 
-
-
 </td>
 <td valign="top">
 
 2.26.\*
-
-
 
 </td>
 </tr>
@@ -2482,8 +2122,6 @@ Node Assembly \(Cluster 2.x\)
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -2495,8 +2133,6 @@ In the SAP SOAP 1.x Receiver Adapter, you can now clean up the adapter-specific 
 
 More information:  <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="xref:109" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -2507,8 +2143,6 @@ More information:  <?sap-ot O2O class="- topic/xref " href="9b619fe82f5e4ba5b7ea
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2548,8 +2182,6 @@ More information:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -2583,8 +2215,6 @@ More information:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -2614,8 +2244,6 @@ More information:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -2627,8 +2255,6 @@ The *JSON to XML Conveter* is now avaiable.
 
 More information:[Define JSON to XML Converter](../Development/define-json-to-xml-converter-5a7c0cd.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -2639,8 +2265,6 @@ More information:[Define JSON to XML Converter](../Development/define-json-to-xm
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2653,8 +2277,6 @@ In the mapping definition resource editor of Cloud Integration WebUI, you can ma
 
 For more information, see  <?sap-ot O2O class="- topic/xref " href="3f2f4bb739b84bf48154d6734869a992.xml" text="" desc="" xtrc="xref:119" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f3b13e456c6544cd97232275bd3c2288.xml" ?> .
 
-
-
 </td>
 </tr>
 </table>
@@ -2666,16 +2288,12 @@ For more information, see  <?sap-ot O2O class="- topic/xref " href="3f2f4bb739b8
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 **New**
 
 **Usability enhancements to workspace \(*Design* tab page\)**
-
-
 
 </td>
 </tr>
@@ -2696,14 +2314,10 @@ For more information, see  <?sap-ot O2O class="- topic/xref " href="3f2f4bb739b8
 
 Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.28.\*
-
-
 
 </td>
 </tr>
@@ -2712,14 +2326,10 @@ Tooling
 
 Node Assembly \(Cluster 1.x\)
 
-
-
 </td>
 <td valign="top">
 
 1.47.\*
-
-
 
 </td>
 </tr>
@@ -2728,14 +2338,10 @@ Node Assembly \(Cluster 1.x\)
 
 Node Assembly \(Cluster 2.x\)
 
-
-
 </td>
 <td valign="top">
 
 2.25.\*
-
-
 
 </td>
 </tr>
@@ -2750,8 +2356,6 @@ Node Assembly \(Cluster 2.x\)
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">

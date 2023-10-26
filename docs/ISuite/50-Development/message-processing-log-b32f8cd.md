@@ -26,14 +26,10 @@ The logs section shows the number of runs as well as the following information:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -42,14 +38,10 @@ Description
 
 *\#* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the sequential number of the run
-
-
 
 </td>
 </tr>
@@ -58,14 +50,10 @@ Displays the sequential number of the run
 
 *Started At* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the date and time of the last run.
-
-
 
 </td>
 </tr>
@@ -74,14 +62,10 @@ Displays the date and time of the last run.
 
 *Duration* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration of the processing run in *ms*.
-
-
 
 </td>
 </tr>
@@ -90,14 +74,10 @@ Displays the duration of the processing run in *ms*.
 
 *Log Level* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the log level.
-
-
 
 </td>
 </tr>
@@ -106,14 +86,10 @@ Displays the log level.
 
 *Process ID* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the worker node on which the run was executed.
-
-
 
 </td>
 </tr>
@@ -122,14 +98,10 @@ Displays the ID of the worker node on which the run was executed.
 
 *Status* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the intermediate status of the message processing log after this run.
-
-
 
 </td>
 </tr>
@@ -169,14 +141,10 @@ The availability of the trace data is also visualized in the integration flow mo
 
 Icons
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -185,14 +153,10 @@ Description
 
 ![](images/BlueEnvFull_a826a95.png)
 
-
-
 </td>
 <td valign="top">
 
 Successfully processed step with trace data available.
-
-
 
 </td>
 </tr>
@@ -201,14 +165,10 @@ Successfully processed step with trace data available.
 
 ![](images/RedEnvelope_4fabaf5.png)
 
-
-
 </td>
 <td valign="top">
 
 Error in processed step with trace data available.
-
-
 
 </td>
 </tr>
@@ -217,14 +177,10 @@ Error in processed step with trace data available.
 
 ![](images/BlueEnvelope_7d89277.jpg)
 
-
-
 </td>
 <td valign="top">
 
 Successfully processed step with no trace data available.
-
-
 
 </td>
 </tr>
@@ -233,14 +189,10 @@ Successfully processed step with no trace data available.
 
 ![](images/RedEnvelope1_08fa3b3.jpg)
 
-
-
 </td>
 <td valign="top">
 
 Error in processed step with no trace data available.
-
-
 
 </td>
 </tr>

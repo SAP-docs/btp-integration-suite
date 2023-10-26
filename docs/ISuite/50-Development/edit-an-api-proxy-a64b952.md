@@ -47,15 +47,11 @@ Consider the following examples:
     <th valign="top">
 
     Tab
-
-
     
     </th>
     <th valign="top">
 
     Details
-
-
     
     </th>
     </tr>
@@ -63,8 +59,6 @@ Consider the following examples:
     <td valign="top">
     
     Overview
-
-
     
     </td>
     <td valign="top">
@@ -85,15 +79,11 @@ Consider the following examples:
     <td valign="top">
     
     Proxy Endpoint
-
-
     
     </td>
     <td valign="top">
     
     You can add the proxy endpoint and the route rules.
-
-
     
     </td>
     </tr>
@@ -101,15 +91,11 @@ Consider the following examples:
     <td valign="top">
     
     Target Endpoint
-
-
     
     </td>
     <td valign="top">
     
     You can choose URL, API Provider, or API proxy, as the target endpoint as well as enter target endpoint rules.
-
-
     
     </td>
     </tr>
@@ -117,15 +103,11 @@ Consider the following examples:
     <td valign="top">
     
     Resources
-
-
     
     </td>
     <td valign="top">
     
     You can add resources, or change already existing ones.
-
-
     
     </td>
     </tr>
@@ -133,15 +115,11 @@ Consider the following examples:
     <td valign="top">
     
     Revision
-
-
     
     </td>
     <td valign="top">
     
     Once an API is created, you can plan subsequent compatible changes to the API by creating a revision.
-
-
     
     </td>
     </tr>

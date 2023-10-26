@@ -61,14 +61,10 @@ Once you’ve created a receiver channel and selected the FTP receiver adapter, 
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -77,14 +73,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the FTP channel.
-
-
 
 </td>
 </tr>
@@ -101,14 +93,10 @@ Select the *Target* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -116,8 +104,6 @@ Description
 <td valign="top">
 
 *Directory* 
-
-
 
 </td>
 <td valign="top">
@@ -128,16 +114,12 @@ Example: `parentdirectory/childdirectory`
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *File Name* 
-
-
 
 </td>
 <td valign="top">
@@ -153,16 +135,12 @@ The endpoint URL that is actually used at runtime is displayed in the message pr
 
 *Append Timestamp* and dynamically configuring *File Name* \(through a Camel simple expression\) must not be used together. The reason is that using the *Append Timestamp* option results in generating a simple expression for the date. Both simple expressions result in an invalid expression that can’t be processed correctly.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Append Timestamp* 
-
-
 
 </td>
 <td valign="top">
@@ -190,8 +168,6 @@ If the file has an extension \(for example, .xml\), the timestamp is appended to
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
@@ -199,16 +175,12 @@ Host name or IP address of the FTP server and an optional port, for example, `my
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -239,8 +211,6 @@ The type of proxy that you’re using to connect to the target system.
 
 \(only if *On-Premise* or *Dynamic* is selected for *Proxy Type*
 
-
-
 </td>
 <td valign="top">
 
@@ -248,16 +218,12 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Encryption* 
-
-
 
 </td>
 <td valign="top">
@@ -291,8 +257,6 @@ Specify the transport encryption. You can choose between the following options:
 
 *Credential Name* 
 
-
-
 </td>
 <td valign="top">
 
@@ -313,8 +277,6 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <td valign="top">
 
 *Timeout \(in ms\)* 
-
-
 
 </td>
 <td valign="top">
@@ -337,8 +299,6 @@ If the property `SAP_FtpTimeout` is defined, its value is used to specify this p
 
 *Maximum Reconnect Attempts* 
 
-
-
 </td>
 <td valign="top">
 
@@ -350,16 +310,12 @@ Use 0 to disable this behavior.
 
 If the property `SAP_FtpMaxReconnect` is defined, its value is used to specify this parameter at runtime.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Reconnect Delay \(in ms\)* 
-
-
 
 </td>
 <td valign="top">
@@ -370,8 +326,6 @@ Default Value: 1000ms
 
 If the property `SAP_FtpMaxReconDelay` is defined, its value is used to specify this parameter at runtime.
 
-
-
 </td>
 </tr>
 <tr>
@@ -379,16 +333,12 @@ If the property `SAP_FtpMaxReconDelay` is defined, its value is used to specify 
 
 *Automatically Disconnect* 
 
-
-
 </td>
 <td valign="top">
 
 Disconnect from the FTP server after each message processing.
 
 If the property `SAP_FtpDisconnect` is defined, its value is used to specify this parameter at runtime \(possible values: `true` and `false`\).
-
-
 
 </td>
 </tr>
@@ -405,14 +355,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -421,16 +367,12 @@ Description
 
 *Change Directories Stepwise* 
 
-
-
 </td>
 <td valign="top">
 
 If selected, changes directory levels step by step \(selected by default\).
 
 If the property `SAP_FtpStepwise` is defined, its value is used to specify this parameter at runtime \(possible values: `true` and `false`\).
-
-
 
 </td>
 </tr>
@@ -439,16 +381,12 @@ If the property `SAP_FtpStepwise` is defined, its value is used to specify this 
 
 *Create Directories*
 
-
-
 </td>
 <td valign="top">
 
 If selected, creates missing directory levels as provided in the file's pathname \(selected by default\).
 
 If the property `SAP_FtpCreateDir` is defined, its value is used to specify this parameter at runtime \(possible values: `true` and `false`\).
-
-
 
 </td>
 </tr>
@@ -457,8 +395,6 @@ If the property `SAP_FtpCreateDir` is defined, its value is used to specify this
 
 *Flatten File Names* 
 
-
-
 </td>
 <td valign="top">
 
@@ -466,16 +402,12 @@ Flatten the file path by removing the directory levels so that only the file nam
 
 If the property `SAP_FtpFlattenFileName` is defined, its value is used to specify this parameter at runtime \(possible values: `true` and `false`\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Prevent Directory Traversal* 
-
-
 
 </td>
 <td valign="top">
@@ -494,8 +426,6 @@ If the file contains any backward path traversals such as `\..\` or `/../..`, th
 
 *Handling for Existing Files*
 
-
-
 </td>
 <td valign="top">
 
@@ -512,8 +442,6 @@ Define how existing files should be treated.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
@@ -521,14 +449,10 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 *Use Temporary File* \(only if *Override* is selected for *Handling for Existing Files\)*
 
-
-
 </td>
 <td valign="top">
 
 This option is used to write a file by using a temporary name and then, after the process has been completed, rename it to the actual name. It can be used to identify files which are being written. It also blocks consumers \(not using exclusive read locks\) from reading files in progress. It’s often used by the FTP server when uploading big files.
-
-
 
 </td>
 </tr>

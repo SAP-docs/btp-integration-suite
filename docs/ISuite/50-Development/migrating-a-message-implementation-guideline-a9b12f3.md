@@ -4,7 +4,7 @@
 
 # Migrating a Message Implementation Guideline
 
-You can migrate your Message Implementation Guideline \(MIG\) to a different version \(newer or older\) of the same message or even to a different message \(of the same or a different type system\). A new MIG is created based on the new message you have chosen and customizations done in your previous MIG are copied over to the new MIG based on an best-effort strategy.
+You can migrate your Message Implementation Guideline \(MIG\) to a different version \(newer or older\) of the same message or even to a different message \(of the same or a different type system\). A new MIG is created based on the new message you have chosen and customizations done in your previous MIG are copied over to the new MIG based on a best-effort strategy.
 
 
 
@@ -15,7 +15,7 @@ MIGs are developed based on predefined message definitions of a specific type sy
 Let’s consider a scenario where, you and your Business Partner 1 agreed on using an UN/EDIFACT D.01B S3 version ORDER message. You've created a MIG based on this specific version of the message from the type system library. You've also customized your MIG definition to meet your business needs. Later, you realize that you need to build another MIG for Business Partner 2 who is also using the same message of the same type system but a different version, say, D.16A S3. However, messages from two different versions of the same type system have similar settings except for a few variations. Earlier, you had to create a new MIG based on the new version and redo the customizations that you had done in the existing MIG. Instead, you can now migrate your existing MIG to a different version of the same type system. After migration, a new MIG is created based on the chosen version including the customizations done in the existing MIG.
 
 > ### Note:  
-> -   Customizations or nodes that are incompatible with the new version aren’t migrated. They're notified through error messages.
+> Customizations or nodes that are incompatible with the new version aren’t migrated. They're notified through error messages.
 
 After migrating your MIG, you can use the status review section available in the MIG editor to view notifications, add comments, and mark review status for all the selected nodes that are part of the MIG. You can identify nodes needing further rework or discussion by reviewing the icons in the Status column on the Structure tab. You can also compare the MIGs after migration to review them. Comparisons are made across the structure definition, properties, documentation, code values, and example values of the MIGs. This allows easy identification of similarities and variations across MIGs.
 
@@ -61,7 +61,7 @@ A new MIG is created.
 > ### Tip:  
 > A few pointers to keep in mind while you review and verify your MIG after migration:
 > 
-> -   The migration works on a best-effort strategy and considers frequently occurring situations. But there can be situations \(when it comes to considering all three of previous message, previous MIG and new message\) which can't be easily resolved and might need user interaction. In such cases a node or property can't be migrated and you will notified of this through a status notification.
+> -   The migration works on a best-effort strategy and considers frequently occurring situations. But there can be situations \(when it comes to considering all three of previous message, previous MIG and new message\) which can't be easily resolved and might need user interaction. In such cases a node or property can't be migrated and you will be notified of this through a status notification.
 > -   Nodes and their properties are migrated only if they're selected in the original MIG. Unselected mandatory nodes and their properties are not migrated.
 > 
 > -   Since mandatory nodes are preselected based on the underlying message template when a MIG is created, MIG migration does not actively unselect such mandatory nodes.
@@ -81,7 +81,7 @@ A new MIG is created.
 
 This section contains the recommended follow-up steps for review and verification after migration.
 
-1.  To review status notifications, On the *Structure* tab, review the message structure and filter for any notification on the *Status* column to display the number of errors, warnings, informational messages, and comments.
+1.  To review status notifications, on the *Structure* tab, review the message structure and filter for any notification on the *Status* column to display the number of errors, warnings, informational messages, and comments.
 
     1.  Select the required cell in the *Status* column to view more details in the *Notifications* section.
 

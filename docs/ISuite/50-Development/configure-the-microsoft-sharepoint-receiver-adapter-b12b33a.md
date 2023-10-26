@@ -27,14 +27,10 @@ Select the *General* tab to access the following parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Value
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the Microsoft SharePoint Storage adapter.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Enter the name of the Microsoft SharePoint Storage adapter.
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 Microsoft SharePoint
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Microsoft SharePoint
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 HTTP
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ HTTP
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 REST
-
-
 
 </td>
 </tr>
@@ -107,14 +87,10 @@ REST
 
 *Description* 
 
-
-
 </td>
 <td valign="top">
 
 Add useful information to describe the adapter.
-
-
 
 </td>
 </tr>
@@ -131,14 +107,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -147,14 +119,10 @@ Value
 
 *Site Host Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the hostname of the Microsoft SharePoint server, for example, `sap-my.sharepoint.com/`.
-
-
 
 </td>
 </tr>
@@ -163,14 +131,10 @@ Enter the hostname of the Microsoft SharePoint server, for example, `sap-my.shar
 
 *Server Relative Path* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the path for site as *<site type/site name\>*, for example, `/teams/MicrosoftSharePointAdapter`.
-
-
 
 </td>
 </tr>
@@ -178,8 +142,6 @@ Enter the path for site as *<site type/site name\>*, for example, `/teams/Micros
 <td valign="top">
 
 *Authentication Type* 
-
-
 
 </td>
 <td valign="top">
@@ -211,14 +173,10 @@ Select the authentication type. Supported types are:
 
 *Credential Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the alias name of the deployed User Credentials artifact.
-
-
 
 </td>
 </tr>
@@ -227,14 +185,10 @@ Enter the alias name of the deployed User Credentials artifact.
 
 *Proxy Type* 
 
-
-
 </td>
 <td valign="top">
 
 Select *Internet* as proxy type to connect to the SharePoint Cloud server.
-
-
 
 </td>
 </tr>
@@ -243,14 +197,10 @@ Select *Internet* as proxy type to connect to the SharePoint Cloud server.
 
 *Timeout \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the maximum waiting time, in milliseconds, to contact the Microsoft SharePoint server while establishing a connection or performing a read operation. If you leave it blank, the timeout value is set to 60000 by default.
-
-
 
 </td>
 </tr>
@@ -267,21 +217,15 @@ Select the *Processing* tab and access the following parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Sub Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -290,21 +234,15 @@ Value
 
 *Product Type* 
 
-
-
 </td>
 <td valign="top">
 
 Not Applicable
 
-
-
 </td>
 <td valign="top">
 
 *SharePoint On-Cloud* 
-
-
 
 </td>
 </tr>
@@ -313,14 +251,10 @@ Not Applicable
 
 *Operation Group* 
 
-
-
 </td>
 <td valign="top">
 
 Batch
-
-
 
 </td>
 <td valign="top">
@@ -338,16 +272,12 @@ For example, you want to compose a view of unrelated data such as:
 
 Combining these three individual requests into a single batch request can save the application significant network latency.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Columns
-
-
 
 </td>
 <td valign="top">
@@ -369,8 +299,6 @@ Select one of the operations:
 <td valign="top">
 
 Content types
-
-
 
 </td>
 <td valign="top">
@@ -394,16 +322,12 @@ Select one of the operations:
 
 To get the details of all content types, navigate to the following path: *SharePoint Application Home Screen* \> *Documents* \> *All Documents* \> *Settings* \> *Site Contents* \> *Site Settings* \> *Site content types*.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Files
-
-
 
 </td>
 <td valign="top">
@@ -424,7 +348,7 @@ Select one of the operations:
 
 -   *Delete Permission*: Removes access to a DriveItem.
 
-    Only sharing permissions that aren't inherited can be deleted. The inheritedFrom property must be null.
+    Only sharing permissions that aren't inherited can be deleted. The InheritedFrom property must be null.
 
 -   *DriveItem:Copy*: Asynchronously creates a copy of an DriveItem \(including any children\), under a new parent item or with a new name.
 
@@ -444,7 +368,7 @@ Select one of the operations:
 
 -   *List available drives*: Retrieve the list of Drive resources available for a target User, Group, or Site. To list the document libraries for a site, your app requests the drives relationship on the Site.
 
--   *List children of a DriveItem*: Return a collection of DriveItems in the children relationship of a DriveItem. DriveItems with a non-null folder or package facet can have one or more child DriveItems
+-   *List children of a DriveItem*: Return a collection of DriveItems in the children relationship of a DriveItem. DriveItems with a non-null folder or package facet can have one or more child DriveItems.
 
 -   *List Permissions*: List the effective sharing permissions on a DriveItem. Retrieves the collection of permissions on an DriveItem.
 
@@ -481,8 +405,6 @@ Select one of the operations:
 
 List
 
-
-
 </td>
 <td valign="top">
 
@@ -504,14 +426,12 @@ Select one of the operations:
 
 ListItems
 
-
-
 </td>
 <td valign="top">
 
 Select one of the operations:
 
--   *Create List Item*: Creates a new list item in a list
+-   *Create List Item*: Creates a new list item in a list.
 
 -   *Delete List Item*: Removes an item from a list.
 
@@ -530,8 +450,6 @@ Select one of the operations:
 <td valign="top">
 
 Sites
-
-
 
 </td>
 <td valign="top">
@@ -576,14 +494,10 @@ Select one of the operations:
 
 *List Name* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter the name of the list.
-
-
 
 </td>
 </tr>
@@ -592,14 +506,10 @@ Enter the name of the list.
 
 *Content Type Name* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter the name of content type, for example, `Item/Document Set/Folder`.
-
-
 
 </td>
 </tr>
@@ -608,14 +518,10 @@ Enter the name of content type, for example, `Item/Document Set/Folder`.
 
 *Query* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter the search term, for example, `searchindex=indexname`.
-
-
 
 </td>
 </tr>
@@ -624,14 +530,10 @@ Enter the search term, for example, `searchindex=indexname`.
 
 *Page Size* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Specify maximum number of results to be retrieved per page.
-
-
 
 </td>
 </tr>
@@ -640,14 +542,10 @@ Specify maximum number of results to be retrieved per page.
 
 *Process in Pages* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Message is processed in batches with size as specified in Page Size. Select only when used together with Looping Process Call.
-
-
 
 </td>
 </tr>
@@ -656,14 +554,10 @@ Message is processed in batches with size as specified in Page Size. Select only
 
 *Column Name* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
-Enter the name of the column
-
-
+Enter the name of the column.
 
 </td>
 </tr>
@@ -672,14 +566,10 @@ Enter the name of the column
 
 *Directory* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter directory path to where the file must be written, for example, `/mydirectory/mysubdirectory`.
-
-
 
 </td>
 </tr>
@@ -687,8 +577,6 @@ Enter directory path to where the file must be written, for example, `/mydirecto
 <td valign="top">
 
 *File Name* 
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -709,14 +597,10 @@ Enter name of the file to be written.
 
 *Comment* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Specify the comment associated with the version.
-
-
 
 </td>
 </tr>
@@ -725,14 +609,10 @@ Specify the comment associated with the version.
 
 *ExpirationDateTime* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter the DateTime format of ‘yyyy-MM-ddTHH:mm:ss’ as the expiration time of the permission.
-
-
 
 </td>
 </tr>
@@ -740,8 +620,6 @@ Enter the DateTime format of ‘yyyy-MM-ddTHH:mm:ss’ as the expiration time of
 <td valign="top">
 
 *Type* 
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -770,8 +648,6 @@ Select one of the types of sharing link:
 <td valign="top">
 
 *Scope* 
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -809,14 +685,10 @@ Select one of the scopes:
 
 *Folder Name* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter folder name to create it under specified directory.
-
-
 
 </td>
 </tr>
@@ -825,14 +697,10 @@ Enter folder name to create it under specified directory.
 
 *Permission ID* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter the Permission ID, which is received when the permission was created.
-
-
 
 </td>
 </tr>
@@ -841,14 +709,10 @@ Enter the Permission ID, which is received when the permission was created.
 
 *Source Directory* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter directory path from where the file must be read, for example, `/mydirectory/mysubdirectory`.
-
-
 
 </td>
 </tr>
@@ -857,14 +721,10 @@ Enter directory path from where the file must be read, for example, `/mydirector
 
 *Source File Name* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter name of the file to be read. Source filename is available in source directory.
-
-
 
 </td>
 </tr>
@@ -873,14 +733,10 @@ Enter name of the file to be read. Source filename is available in source direct
 
 *Target Directory* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter directory path to where the file must be written, for example, `/mydirectory/mysubdirectory`.
-
-
 
 </td>
 </tr>
@@ -889,14 +745,10 @@ Enter directory path to where the file must be written, for example, `/mydirecto
 
 *Target File Name* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter name of the file that must be placed in the target directory.
-
-
 
 </td>
 </tr>
@@ -905,14 +757,10 @@ Enter name of the file that must be placed in the target directory.
 
 *Search For Item* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter any search keyword to get the available list of drive items.
-
-
 
 </td>
 </tr>
@@ -921,14 +769,10 @@ Enter any search keyword to get the available list of drive items.
 
 *Existing File Name* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter the existing file name that is being renamed.
-
-
 
 </td>
 </tr>
@@ -937,14 +781,10 @@ Enter the existing file name that is being renamed.
 
 *New File Name* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter the new file name.
-
-
 
 </td>
 </tr>
@@ -952,8 +792,6 @@ Enter the new file name.
 <td valign="top">
 
 *Role Type* 
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -987,8 +825,6 @@ Specify the role type:
 
 *Handling for Existing Files* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -1017,14 +853,10 @@ You must dynamically define the value in the message exchange using the property
 
 *Item ID* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter the item ID of the list for the specified List name.
-
-
 
 </td>
 </tr>
@@ -1033,16 +865,12 @@ Enter the item ID of the list for the specified List name.
 
 *StartDateTime* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enter the starting point of time range that must be in the format “YYYY-MM-DD”.
 
 This parameter supports a time range of 90 days for daily counts. The value must represent a time range of less than 90 days.
-
-
 
 </td>
 </tr>
@@ -1051,8 +879,6 @@ This parameter supports a time range of 90 days for daily counts. The value must
 
 *EndDateTime* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -1060,16 +886,12 @@ Enter the ending point of time range that must be in the format “YYYY-MM-DD”
 
 This parameter supports a time range of 90 days for daily counts. The value must represent a time range of less than 90 days.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Interval* 
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1092,8 +914,6 @@ Select one of the values:
 
 *AnalyticsTimeRange* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -1112,8 +932,6 @@ Select one of the values:
 <td valign="top">
 
 *Response Format* 
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1138,14 +956,10 @@ Select one of the values:
 
 *Request Header* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Pipe separated list of HTTP request headers to be sent to the Microsoft SharePoint target system.
-
-
 
 </td>
 </tr>
@@ -1154,14 +968,10 @@ Pipe separated list of HTTP request headers to be sent to the Microsoft SharePoi
 
 *Response Header* 
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Pipe separated list of HTTP response headers. The specified headers from Microsoft SharePoint target system are received in the message exchange.
-
-
 
 </td>
 </tr>

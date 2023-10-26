@@ -46,22 +46,16 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     XPath Expression
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -69,22 +63,16 @@ The integration flow performs the following steps:
     <td valign="top">
     
     Agency
-
-
     
     </td>
     <td valign="top">
     
     `/Order/Header/Agency` 
-
-
     
     </td>
     <td valign="top">
     
     Name of organization that defines the identification scheme and issues names for the objects to be identified.
-
-
     
     </td>
     </tr>
@@ -92,22 +80,16 @@ The integration flow performs the following steps:
     <td valign="top">
     
     Scheme
-
-
     
     </td>
     <td valign="top">
     
     `/Order/Header/Scheme` 
-
-
     
     </td>
     <td valign="top">
     
     Constitutes the reference framework within which objects are uniquely identified by names.
-
-
     
     </td>
     </tr>
@@ -115,22 +97,16 @@ The integration flow performs the following steps:
     <td valign="top">
     
     AlternativePid
-
-
     
     </td>
     <td valign="top">
     
     `/Order/Header/AlternativePid` 
-
-
     
     </td>
     <td valign="top">
     
     The \(unique\) ID or name in the given identification scheme.
-
-
     
     </td>
     </tr>
@@ -192,22 +168,16 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Header
-
-
     
     </th>
     <th valign="top">
 
     Expression
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -215,22 +185,16 @@ The integration flow performs the following steps:
     <td valign="top">
     
     context
-
-
     
     </td>
     <td valign="top">
     
     `PartnerDirectory-AlternativePartnerId`
-
-
     
     </td>
     <td valign="top">
     
     Defines the Data Store name. In this case, the name reflects this guideline.
-
-
     
     </td>
     </tr>
@@ -238,22 +202,16 @@ The integration flow performs the following steps:
     <td valign="top">
     
     receiver
-
-
     
     </td>
     <td valign="top">
     
     Partner $\{property.pid\}
-
-
     
     </td>
     <td valign="top">
     
     Defines the Data Store entry ID. In this case, the value is given by the partner ID from the Partner Directory.
-
-
     
     </td>
     </tr>

@@ -39,14 +39,10 @@ The Externalization Parameters value field of an integration flow has been defin
 > 
 > Define Parameter
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Define Value
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -55,14 +51,10 @@ The Externalization Parameters value field of an integration flow has been defin
 > 
 > `{{Host}}` 
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `localhost` 
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -71,14 +63,10 @@ The Externalization Parameters value field of an integration flow has been defin
 > 
 > `{{Port}}` 
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `8080`
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -242,14 +230,10 @@ Checkbox, drop down, help service, string, scheduler, text area, integer, and in
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -257,8 +241,6 @@ Description
 <td valign="top">
 
 Checkbox
-
-
 
 </td>
 <td valign="top">
@@ -272,16 +254,12 @@ Choose on token of the checkbox control, it opens a *Parameter value update* dia
 
 After updating the configured value from *Configure* view, configured value of parameter will be seen in the token of the checkbox control, which was externalized.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Dropdown
-
-
 
 </td>
 <td valign="top">
@@ -294,8 +272,6 @@ You can configure dropdown control from the *Configure* view.
 
 Upon configuration from *Configure* view, the configured value shows in the parameter update dialog when you click on dropdown control token.
 
-
-
 </td>
 </tr>
 <tr>
@@ -303,14 +279,10 @@ Upon configuration from *Configure* view, the configured value shows in the para
 
 Text area control
 
-
-
 </td>
 <td valign="top">
 
 You can define a new parameter for *Text area* control in the *Externalization* view. You can also modify the default value of parameter. After configuring the parameter from the *Configure* view, the parameter update dialog shows both the default and configured value.
-
-
 
 </td>
 </tr>
@@ -319,14 +291,10 @@ You can define a new parameter for *Text area* control in the *Externalization* 
 
 Table cell
 
-
-
 </td>
 <td valign="top">
 
 You can define a new parameter for *Table cell* in the *Externalization* view. User can add or edit the default value of parameter by choosing the token in parameter update dialog.
-
-
 
 </td>
 </tr>
@@ -334,8 +302,6 @@ You can define a new parameter for *Table cell* in the *Externalization* view. U
 <td valign="top">
 
 Help Service
-
-
 
 </td>
 <td valign="top">
@@ -347,8 +313,6 @@ You can select or browse the resource using *Help Service* control.
 
 Choose the token of the help service control to define the default value of parameter. When the parameter is configured, you can see in the parameter update dialog.
 
-
-
 </td>
 </tr>
 <tr>
@@ -356,14 +320,10 @@ Choose the token of the help service control to define the default value of para
 
 Scheduler
 
-
-
 </td>
 <td valign="top">
 
 You can define a new parameter for dropdown control in the *Externalization* view. Select *Configure* view to modify the *Scheduler* control. You can find the details of configured value by clicking show button.
-
-
 
 </td>
 </tr>

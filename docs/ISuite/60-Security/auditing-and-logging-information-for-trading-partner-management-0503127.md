@@ -13,21 +13,15 @@ Here you can find a list of the security events that are logged by Trading Partn
 
 Event grouping
 
-
-
 </th>
 <th valign="top">
 
 What events are logged
 
-
-
 </th>
 <th valign="top">
 
 How to identify related log events
-
-
 
 </th>
 </tr>
@@ -36,44 +30,32 @@ How to identify related log events
 
 Data Access
 
-
-
 </td>
 <td valign="top">
 
 Access to contact person
-
-
 
 </td>
 <td valign="top">
 
 action: Get Contact Person
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Configuration Change
-
-
 
 </td>
 <td valign="top">
 
 Tenant onboarding
 
-
-
 </td>
 <td valign="top">
 
 action: AuditAction.aboutToCreate CFTenantOnboardingService.class
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ action: AuditAction.aboutToCreate CFTenantOnboardingService.class
 
 Configuration Change
 
-
-
 </td>
 <td valign="top">
 
 Tenant offboarding
 
-
-
 </td>
 <td valign="top">
 
 action: AuditAction.aboutToDelete CFTenantOnboardingService.class
-
-
 
 </td>
 </tr>
@@ -105,14 +81,10 @@ action: AuditAction.aboutToDelete CFTenantOnboardingService.class
 
 Data Modification
 
-
-
 </td>
 <td valign="top">
 
 Delete Artifact
-
-
 
 </td>
 <td valign="top">
@@ -121,8 +93,6 @@ action : AuditAction.aboutToDelete
 
 objectType: Company, Certificate, TradingPartner, Coummunication Channel, Identifier,ResourceFile, Subsidary, SystemInstance, SystemType, TradingPartnerAgreement, TradingPartnerAgreementTemplate, TradingPartnerAttachment
 
-
-
 </td>
 </tr>
 <tr>
@@ -130,14 +100,10 @@ objectType: Company, Certificate, TradingPartner, Coummunication Channel, Identi
 
 Data Modification
 
-
-
 </td>
 <td valign="top">
 
 Update Artifact
-
-
 
 </td>
 <td valign="top">
@@ -146,8 +112,6 @@ action : AuditAction.Update
 
 objectType: Company, Certificate, TradingPartner, Coummunication Channel, Identifier,ResourceFile, Subsidary, SystemInstance, SystemType, TradingPartnerAgreement, TradingPartnerAgreementTemplate, TradingPartnerAttachment
 
-
-
 </td>
 </tr>
 <tr>
@@ -155,14 +119,10 @@ objectType: Company, Certificate, TradingPartner, Coummunication Channel, Identi
 
 Data Modification
 
-
-
 </td>
 <td valign="top">
 
 Create Artifact
-
-
 
 </td>
 <td valign="top">
@@ -170,8 +130,6 @@ Create Artifact
 action : AuditAction.Create
 
 objectType: Company, Certificate, TradingPartner, Coummunication Channel, Identifier,ResourceFile, Subsidary, SystemInstance, SystemType, TradingPartnerAgreement, TradingPartnerAgreementTemplate, TradingPartnerAttachment
-
-
 
 </td>
 </tr>

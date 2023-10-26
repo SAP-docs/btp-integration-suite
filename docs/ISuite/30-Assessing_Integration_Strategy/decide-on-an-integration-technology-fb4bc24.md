@@ -22,15 +22,11 @@ In [Determine an Integration Technology](determine-an-integration-technology-69b
     <th valign="top">
 
     Status
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -38,15 +34,11 @@ In [Determine an Integration Technology](determine-an-integration-technology-69b
     <td valign="top">
     
     *Coverage*
-
-
     
     </td>
     <td valign="top">
     
     Percentage of coverage of key characteristics in combination with other technologies selected.
-
-
     
     </td>
     </tr>
@@ -54,15 +46,11 @@ In [Determine an Integration Technology](determine-an-integration-technology-69b
     <td valign="top">
     
     *Policy Rule* 
-
-
     
     </td>
     <td valign="top">
     
     Shows the rule pertaining to the coverage selected. This field describes how to use this technology in your context.
-
-
     
     </td>
     </tr>
@@ -70,8 +58,6 @@ In [Determine an Integration Technology](determine-an-integration-technology-69b
     <td valign="top">
     
     *Policy-Based Recommendation*
-
-
     
     </td>
     <td valign="top">
@@ -92,15 +78,11 @@ In [Determine an Integration Technology](determine-an-integration-technology-69b
     <td valign="top">
     
     *Application Policy*
-
-
     
     </td>
     <td valign="top">
     
     Out of the multiple related Integration Policies that a technology can have, the calculation uses the one that isranked the highest.
-
-
     
     </td>
     </tr>
@@ -141,14 +123,10 @@ For each combination, a status is displayed:
 
 Status
 
-
-
 </th>
 <th valign="top">
 
 Meaning
-
-
 
 </th>
 </tr>
@@ -157,14 +135,10 @@ Meaning
 
 Not Applicable
 
-
-
 </td>
 <td valign="top">
 
 The combination can't be applied.
-
-
 
 </td>
 </tr>
@@ -173,14 +147,10 @@ The combination can't be applied.
 
 Not Assigned
 
-
-
 </td>
 <td valign="top">
 
 Can be applied but not assigned for some business reason.
-
-
 
 </td>
 </tr>
@@ -189,14 +159,10 @@ Can be applied but not assigned for some business reason.
 
 Applied
 
-
-
 </td>
 <td valign="top">
 
 The combination is assigned.
-
-
 
 </td>
 </tr>
@@ -225,14 +191,10 @@ For each integration policy, the following attributes are displayed:
 
 Guideline
 
-
-
 </th>
 <th valign="top">
 
 Usage
-
-
 
 </th>
 </tr>
@@ -241,14 +203,10 @@ Usage
 
 Integration Technology
 
-
-
 </td>
 <td valign="top">
 
 Name of the integration technology
-
-
 
 </td>
 </tr>
@@ -257,14 +215,10 @@ Name of the integration technology
 
 Recommendation Degree
 
-
-
 </td>
 <td valign="top">
 
 Degree of recommendation, for example, *General* or *Reasonable Alternative*
-
-
 
 </td>
 </tr>
@@ -273,14 +227,10 @@ Degree of recommendation, for example, *General* or *Reasonable Alternative*
 
 Rule
 
-
-
 </td>
 <td valign="top">
 
 Where the technology is used
-
-
 
 </td>
 </tr>
@@ -289,14 +239,10 @@ Where the technology is used
 
 Supported Domains
 
-
-
 </td>
 <td valign="top">
 
 Supported domains
-
-
 
 </td>
 </tr>
@@ -305,14 +251,10 @@ Supported domains
 
 Applications
 
-
-
 </td>
 <td valign="top">
 
 Supported applications
-
-
 
 </td>
 </tr>
@@ -339,14 +281,10 @@ It shows whether each set of source and target applications is definied for the 
 
 Status
 
-
-
 </th>
 <th valign="top">
 
 Meaning
-
-
 
 </th>
 </tr>
@@ -355,14 +293,10 @@ Meaning
 
 Connection is there
 
-
-
 </td>
 <td valign="top">
 
 There is a connection between the source and the target application.
-
-
 
 </td>
 </tr>
@@ -371,14 +305,10 @@ There is a connection between the source and the target application.
 
 Connection is not there
 
-
-
 </td>
 <td valign="top">
 
 There's no connection between the source and the target application.
-
-
 
 </td>
 </tr>
@@ -387,14 +317,10 @@ There's no connection between the source and the target application.
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 Defining a connection isn't possible for source and target applications.
-
-
 
 </td>
 </tr>

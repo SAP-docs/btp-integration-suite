@@ -27,14 +27,10 @@ Select the *General* tab to access the following parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the Slack channel.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Enter the name of the Slack channel.
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 Shows *Slack* as adapter type.
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Shows *Slack* as adapter type.
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 Shows *HTTPS* as transport protocol.
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ Shows *HTTPS* as transport protocol.
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 Shows *REST* as message protocol.
-
-
 
 </td>
 </tr>
@@ -117,14 +97,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -132,8 +108,6 @@ Description
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -158,8 +132,6 @@ You can select one of the following options:
 
 If *Bot Token* is selected for *Authentication* 
 
-
-
 </td>
 <td valign="top">
 
@@ -182,8 +154,6 @@ If *Bot Token* is selected for *Authentication*
 <td valign="top">
 
 If *Dynamic* is selected for *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -214,8 +184,6 @@ If *Dynamic* is selected for *Authentication*
 <td valign="top">
 
 If *User Token* is selected for *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -255,21 +223,15 @@ To know more about the scope of these tokens and the API methods, see the table 
 
 API Method
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Token
-
-
 
 </th>
 </tr>
@@ -278,21 +240,15 @@ Token
 
 admin
 
-
-
 </td>
 <td valign="top">
 
 Administer a workspace.
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -301,21 +257,15 @@ User
 
 admin.analytics:read
 
-
-
 </td>
 <td valign="top">
 
 Access analytics data about the organization
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -324,21 +274,15 @@ User
 
 admin.apps:read
 
-
-
 </td>
 <td valign="top">
 
 View apps and app requests in a workspace
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -347,21 +291,15 @@ User
 
 admin.apps:write
 
-
-
 </td>
 <td valign="top">
 
 Manage apps in a workspace
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -370,21 +308,15 @@ User
 
 admin.barriers:read
 
-
-
 </td>
 <td valign="top">
 
 Read information barriers in the organization
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -393,21 +325,15 @@ User
 
 admin.barriers:write
 
-
-
 </td>
 <td valign="top">
 
 Manage information barriers in the organization
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -416,21 +342,15 @@ User
 
 admin.conversations:read
 
-
-
 </td>
 <td valign="top">
 
 View the channel’s member list, topic, purpose and channel name
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -439,21 +359,15 @@ User
 
 admin.conversations:write
 
-
-
 </td>
 <td valign="top">
 
 Start a new conversation, modify a conversation and modify channel details.
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -462,21 +376,15 @@ User
 
 admin.invites:read
 
-
-
 </td>
 <td valign="top">
 
 Gain information about invite requests in a Grid organization.
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -485,21 +393,15 @@ User
 
 admin.invites:write
 
-
-
 </td>
 <td valign="top">
 
 Approve or deny invite requests in a Grid organization.
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -508,21 +410,15 @@ User
 
 admin.teams:read
 
-
-
 </td>
 <td valign="top">
 
 Access information about a workspace.
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -531,21 +427,15 @@ User
 
 admin.teams:write
 
-
-
 </td>
 <td valign="top">
 
 Make changes to a workspace
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -554,21 +444,15 @@ User
 
 admin.usergroups:read
 
-
-
 </td>
 <td valign="top">
 
 Access information about user groups
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -577,21 +461,15 @@ User
 
 admin.usergroups:write
 
-
-
 </td>
 <td valign="top">
 
 Make changes to your usergroups
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -600,21 +478,15 @@ User
 
 admin.users:read
 
-
-
 </td>
 <td valign="top">
 
 Access a workspace’s profile information
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -623,21 +495,15 @@ User
 
 admin.users:write
 
-
-
 </td>
 <td valign="top">
 
 Modify account information
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -646,21 +512,15 @@ User
 
 app\_configurations:read
 
-
-
 </td>
 <td valign="top">
 
 Read app configuration info via App Manifest APIs
 
-
-
 </td>
 <td valign="top">
 
 app\_config
-
-
 
 </td>
 </tr>
@@ -669,21 +529,15 @@ app\_config
 
 app\_configurations:write
 
-
-
 </td>
 <td valign="top">
 
 Write app configuration info and create apps via App Manifest APIs
 
-
-
 </td>
 <td valign="top">
 
 app\_config
-
-
 
 </td>
 </tr>
@@ -692,21 +546,15 @@ app\_config
 
 app\_mentions:read
 
-
-
 </td>
 <td valign="top">
 
 View messages that directly mention @your\_slack\_app in conversations that the app is in
 
-
-
 </td>
 <td valign="top">
 
 Legacy bot Bot
-
-
 
 </td>
 </tr>
@@ -715,21 +563,15 @@ Legacy bot Bot
 
 auditlogs:read
 
-
-
 </td>
 <td valign="top">
 
 View events from all workspaces, channels and users \(Enterprise Grid only\)
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -738,21 +580,15 @@ User
 
 authorizations:read
 
-
-
 </td>
 <td valign="top">
 
 Grants permission to list authorizations associated with the Events API
 
-
-
 </td>
 <td valign="top">
 
 App level
-
-
 
 </td>
 </tr>
@@ -761,21 +597,15 @@ App level
 
 bookmarks:read
 
-
-
 </td>
 <td valign="top">
 
 List bookmarks
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -784,21 +614,15 @@ UserLegacy botWorkspaceBot
 
 bookmarks:write
 
-
-
 </td>
 <td valign="top">
 
 Create, edit, and remove bookmarks
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -807,21 +631,15 @@ UserLegacy botWorkspaceBot
 
 bot
 
-
-
 </td>
 <td valign="top">
 
 Add the ability for people to direct message or mention @your\_slack\_app
 
-
-
 </td>
 <td valign="top">
 
 Legacy bot
-
-
 
 </td>
 </tr>
@@ -830,21 +648,15 @@ Legacy bot
 
 calls:read
 
-
-
 </td>
 <td valign="top">
 
 View information about ongoing and past calls
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botBot
-
-
 
 </td>
 </tr>
@@ -853,21 +665,15 @@ UserLegacy botBot
 
 calls:write
 
-
-
 </td>
 <td valign="top">
 
 Start and manage calls in a workspace
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botBot
-
-
 
 </td>
 </tr>
@@ -876,21 +682,15 @@ UserLegacy botBot
 
 channels:history
 
-
-
 </td>
 <td valign="top">
 
 View messages and other content in public channels to which your slack app has been added.
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -899,21 +699,15 @@ UserLegacy botWorkspaceBot
 
 channels:join
 
-
-
 </td>
 <td valign="top">
 
 Join public channels in a workspace
 
-
-
 </td>
 <td valign="top">
 
 Legacy botBot
-
-
 
 </td>
 </tr>
@@ -922,21 +716,15 @@ Legacy botBot
 
 channels:manage
 
-
-
 </td>
 <td valign="top">
 
 Manage public channels to which your slack app has been added and create new ones
 
-
-
 </td>
 <td valign="top">
 
 Legacy botBot
-
-
 
 </td>
 </tr>
@@ -945,21 +733,15 @@ Legacy botBot
 
 channels:read
 
-
-
 </td>
 <td valign="top">
 
 View basic information about public channels in a workspace
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -968,21 +750,15 @@ UserLegacy botWorkspaceBot
 
 channels:write
 
-
-
 </td>
 <td valign="top">
 
 Manage a user’s public channels and create new ones on a user’s behalf
 
-
-
 </td>
 <td valign="top">
 
 UserWorkspace
-
-
 
 </td>
 </tr>
@@ -991,21 +767,15 @@ UserWorkspace
 
 chat:write
 
-
-
 </td>
 <td valign="top">
 
 Post messages in approved channels & conversations
 
-
-
 </td>
 <td valign="top">
 
 UserBotWorkspace
-
-
 
 </td>
 </tr>
@@ -1014,21 +784,15 @@ UserBotWorkspace
 
 chat:write.customize
 
-
-
 </td>
 <td valign="top">
 
 Send messages as @your\_slack\_app with a customized username and avatar
 
-
-
 </td>
 <td valign="top">
 
 Legacy botBot
-
-
 
 </td>
 </tr>
@@ -1037,21 +801,15 @@ Legacy botBot
 
 chat:write.public
 
-
-
 </td>
 <td valign="top">
 
 Send messages to channels @your\_slack\_app
 
-
-
 </td>
 <td valign="top">
 
 Legacy botBot
-
-
 
 </td>
 </tr>
@@ -1060,21 +818,15 @@ Legacy botBot
 
 chat:write:bot
 
-
-
 </td>
 <td valign="top">
 
 Send messages as your slack app
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -1083,21 +835,15 @@ User
 
 chat:write:user
 
-
-
 </td>
 <td valign="top">
 
 Send messages on a user’s behalf
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -1106,21 +852,15 @@ User
 
 commands
 
-
-
 </td>
 <td valign="top">
 
 Add shortcuts and/or slash commands that people can use
 
-
-
 </td>
 <td valign="top">
 
 UserBot
-
-
 
 </td>
 </tr>
@@ -1129,21 +869,15 @@ UserBot
 
 connections:write
 
-
-
 </td>
 <td valign="top">
 
 Grants permission to generate websocket URIs and connect to Socket Mode
 
-
-
 </td>
 <td valign="top">
 
 App level
-
-
 
 </td>
 </tr>
@@ -1152,21 +886,15 @@ App level
 
 conversations.connect:manage
 
-
-
 </td>
 <td valign="top">
 
 Allows your slack app to manage Slack Connect channels
 
-
-
 </td>
 <td valign="top">
 
 Legacy botBot
-
-
 
 </td>
 </tr>
@@ -1175,21 +903,15 @@ Legacy botBot
 
 conversations.connect:read
 
-
-
 </td>
 <td valign="top">
 
 Receive Slack Connect invite events sent to the channels pertained to your slack app.
 
-
-
 </td>
 <td valign="top">
 
 Legacy botBot
-
-
 
 </td>
 </tr>
@@ -1198,21 +920,15 @@ Legacy botBot
 
 conversations.connect:write
 
-
-
 </td>
 <td valign="top">
 
 Create Slack Connect invitations for channels that your slack app has been added to, and accept invitations sent to your slack app
 
-
-
 </td>
 <td valign="top">
 
 Legacy bot
-
-
 
 </td>
 </tr>
@@ -1221,21 +937,15 @@ Legacy bot
 
 dnd:read
 
-
-
 </td>
 <td valign="top">
 
 View Do Not Disturb settings for people in a workspace
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1244,21 +954,15 @@ UserLegacy botWorkspaceBot
 
 dnd:write
 
-
-
 </td>
 <td valign="top">
 
 Edit a user’s Do Not Disturb settings
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -1267,21 +971,15 @@ User
 
 dnd:write:user
 
-
-
 </td>
 <td valign="top">
 
 Change the user's Do Not Disturb settings
 
-
-
 </td>
 <td valign="top">
 
 Workspace
-
-
 
 </td>
 </tr>
@@ -1290,21 +988,15 @@ Workspace
 
 email
 
-
-
 </td>
 <td valign="top">
 
 View a user’s email address
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -1313,21 +1005,15 @@ User
 
 emoji:read
 
-
-
 </td>
 <td valign="top">
 
 View custom emoji in a workspace
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1336,21 +1022,15 @@ UserLegacy botWorkspaceBot
 
 files:read
 
-
-
 </td>
 <td valign="top">
 
 View files shared in channels and conversations to which your slack app has been added.
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1359,21 +1039,15 @@ UserLegacy botWorkspaceBot
 
 files:write
 
-
-
 </td>
 <td valign="top">
 
 Upload, edit, and delete files as your slack app
 
-
-
 </td>
 <td valign="top">
 
 UserWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1382,21 +1056,15 @@ UserWorkspaceBot
 
 files:write:user
 
-
-
 </td>
 <td valign="top">
 
 Upload, edit, and delete files as your slack app
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy bot
-
-
 
 </td>
 </tr>
@@ -1405,21 +1073,15 @@ UserLegacy bot
 
 groups:history
 
-
-
 </td>
 <td valign="top">
 
 View messages and other content in private channels that your slack app has been added to
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1428,21 +1090,15 @@ UserLegacy botWorkspaceBot
 
 groups:read
 
-
-
 </td>
 <td valign="top">
 
 View basic information about private channels to which your slack app has been added.
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1451,21 +1107,15 @@ UserLegacy botWorkspaceBot
 
 groups:write
 
-
-
 </td>
 <td valign="top">
 
 Manage private channels that your slack app has been added to and create new ones
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1474,21 +1124,15 @@ UserLegacy botWorkspaceBot
 
 identify
 
-
-
 </td>
 <td valign="top">
 
 View information about a user’s identity
 
-
-
 </td>
 <td valign="top">
 
 legacy
-
-
 
 </td>
 </tr>
@@ -1497,21 +1141,15 @@ legacy
 
 identity.avatar
 
-
-
 </td>
 <td valign="top">
 
 View a user’s Slack avatar
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -1520,21 +1158,15 @@ User
 
 identity.avatar:read:user
 
-
-
 </td>
 <td valign="top">
 
 View the user's profile picture
 
-
-
 </td>
 <td valign="top">
 
 Workspace
-
-
 
 </td>
 </tr>
@@ -1543,21 +1175,15 @@ Workspace
 
 identity.basic
 
-
-
 </td>
 <td valign="top">
 
 View information about a user’s identity
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -1566,21 +1192,15 @@ User
 
 identity.email
 
-
-
 </td>
 <td valign="top">
 
 View a user’s email address
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -1589,21 +1209,15 @@ User
 
 identity.email:read:user
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Workspace
-
-
 
 </td>
 </tr>
@@ -1612,21 +1226,15 @@ Workspace
 
 identity.team
 
-
-
 </td>
 <td valign="top">
 
 View a user’s Slack workspace name
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -1635,21 +1243,15 @@ User
 
 identity.team:read:user
 
-
-
 </td>
 <td valign="top">
 
 View the workspace's name, domain, and icon
 
-
-
 </td>
 <td valign="top">
 
 Workspace
-
-
 
 </td>
 </tr>
@@ -1658,21 +1260,15 @@ Workspace
 
 identity:read:user
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Workspace
-
-
 
 </td>
 </tr>
@@ -1681,21 +1277,15 @@ Workspace
 
 im:history
 
-
-
 </td>
 <td valign="top">
 
 View messages and other content in direct messages to which your slack app has been added.
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1704,21 +1294,15 @@ UserLegacy botWorkspaceBot
 
 im:read
 
-
-
 </td>
 <td valign="top">
 
 View basic information about direct messages to which your slack app has been added.
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1727,21 +1311,15 @@ UserLegacy botWorkspaceBot
 
 im:write
 
-
-
 </td>
 <td valign="top">
 
 Start direct messages with people
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1750,21 +1328,15 @@ UserLegacy botWorkspaceBot
 
 incoming-webhook
 
-
-
 </td>
 <td valign="top">
 
 Create one-way webhooks to post messages to a specific channel
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botBot
-
-
 
 </td>
 </tr>
@@ -1773,21 +1345,15 @@ UserLegacy botBot
 
 links:read
 
-
-
 </td>
 <td valign="top">
 
 View URLs in messages
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1796,21 +1362,15 @@ UserLegacy botWorkspaceBot
 
 links:write
 
-
-
 </td>
 <td valign="top">
 
 Show previews of URLs in messages
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1819,21 +1379,15 @@ UserLegacy botWorkspaceBot
 
 metadata.message:read
 
-
-
 </td>
 <td valign="top">
 
 Allows your slack app to read message metadata in channels to which your slack app has been added.
 
-
-
 </td>
 <td valign="top">
 
 Legacy botBot
-
-
 
 </td>
 </tr>
@@ -1842,21 +1396,15 @@ Legacy botBot
 
 mpim:history
 
-
-
 </td>
 <td valign="top">
 
 View messages and other content in group direct messages to which your slack app has been added.
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1865,21 +1413,15 @@ UserLegacy botWorkspaceBot
 
 mpim:read
 
-
-
 </td>
 <td valign="top">
 
 View basic information about group direct messages to which your slack app has been added.
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1888,21 +1430,15 @@ UserLegacy botWorkspaceBot
 
 mpim:write
 
-
-
 </td>
 <td valign="top">
 
 Start group direct messages with people
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1911,21 +1447,15 @@ UserLegacy botWorkspaceBot
 
 none
 
-
-
 </td>
 <td valign="top">
 
 Execute methods without needing a scope
 
-
-
 </td>
 <td valign="top">
 
 Legacy botWorkspace
-
-
 
 </td>
 </tr>
@@ -1934,21 +1464,15 @@ Legacy botWorkspace
 
 openid
 
-
-
 </td>
 <td valign="top">
 
 View information about a user’s identity
 
-
-
 </td>
 <td valign="top">
 
 UserWorkspace
-
-
 
 </td>
 </tr>
@@ -1957,21 +1481,15 @@ UserWorkspace
 
 pins:read
 
-
-
 </td>
 <td valign="top">
 
 View pinned content in channels and conversations to which your slack app has been added.
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -1980,21 +1498,15 @@ UserLegacy botWorkspaceBot
 
 pins:write
 
-
-
 </td>
 <td valign="top">
 
 Add and remove pinned messages and files
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -2003,21 +1515,15 @@ UserLegacy botWorkspaceBot
 
 profile
 
-
-
 </td>
 <td valign="top">
 
 View a user’s Slack avatar and Slack workspace's basic information
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -2026,21 +1532,15 @@ User
 
 reactions:read
 
-
-
 </td>
 <td valign="top">
 
 View emoji reactions and their associated content in channels and conversations to which your slack app has been added.
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -2049,21 +1549,15 @@ UserLegacy botWorkspaceBot
 
 reactions:write
 
-
-
 </td>
 <td valign="top">
 
 Add and edit emoji reactions
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -2072,21 +1566,15 @@ UserLegacy botWorkspaceBot
 
 reminders:read
 
-
-
 </td>
 <td valign="top">
 
 View reminders created by your slack app
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botBot
-
-
 
 </td>
 </tr>
@@ -2095,21 +1583,15 @@ UserLegacy botBot
 
 reminders:read:user
 
-
-
 </td>
 <td valign="top">
 
 Access reminders created by a user or for a user
 
-
-
 </td>
 <td valign="top">
 
 Workspace
-
-
 
 </td>
 </tr>
@@ -2118,21 +1600,15 @@ Workspace
 
 reminders:write
 
-
-
 </td>
 <td valign="top">
 
 Add, remove, or mark reminders as complete
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botBot
-
-
 
 </td>
 </tr>
@@ -2141,21 +1617,15 @@ UserLegacy botBot
 
 reminders:write:user
 
-
-
 </td>
 <td valign="top">
 
 Add, remove, or complete reminders for the user
 
-
-
 </td>
 <td valign="top">
 
 Workspace
-
-
 
 </td>
 </tr>
@@ -2164,21 +1634,15 @@ Workspace
 
 remote\_files:read
 
-
-
 </td>
 <td valign="top">
 
 View remote files added by the app in a workspace
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botBot
-
-
 
 </td>
 </tr>
@@ -2187,21 +1651,15 @@ UserLegacy botBot
 
 remote\_files:share
 
-
-
 </td>
 <td valign="top">
 
 Share remote files on a user’s behalf
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botBot
-
-
 
 </td>
 </tr>
@@ -2210,21 +1668,15 @@ UserLegacy botBot
 
 remote\_files:write
 
-
-
 </td>
 <td valign="top">
 
 Add, edit, and delete remote files on a user’s behalf
 
-
-
 </td>
 <td valign="top">
 
 Legacy botBot
-
-
 
 </td>
 </tr>
@@ -2233,21 +1685,15 @@ Legacy botBot
 
 search:read
 
-
-
 </td>
 <td valign="top">
 
 Search a workspace’s content
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -2256,21 +1702,15 @@ User
 
 stars:read
 
-
-
 </td>
 <td valign="top">
 
 View messages and files that your slack app has starred
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -2279,21 +1719,15 @@ User
 
 stars:write
 
-
-
 </td>
 <td valign="top">
 
 Add or remove stars
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -2302,14 +1736,10 @@ User
 
 team.billing:read
 
-
-
 </td>
 <td valign="top">
 
 Allows your slack app to read the billing plan for workspaces in which your slack app has been installed.
-
-
 
 </td>
 <td valign="top">
@@ -2320,8 +1750,6 @@ Legacy bot
 
 Bot
 
-
-
 </td>
 </tr>
 <tr>
@@ -2329,21 +1757,15 @@ Bot
 
 team.preferences:read
 
-
-
 </td>
 <td valign="top">
 
 Allows your slack app to read the preferences for workspaces in which your slack app has been installed.
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botBot
-
-
 
 </td>
 </tr>
@@ -2352,21 +1774,15 @@ UserLegacy botBot
 
 team:read
 
-
-
 </td>
 <td valign="top">
 
 View the name, email domain, and icon for workspaces to which your slack app is connected.
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -2375,21 +1791,15 @@ UserLegacy botWorkspaceBot
 
 tokens.basic
 
-
-
 </td>
 <td valign="top">
 
 Execute methods without needing a scope
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -2398,21 +1808,15 @@ UserLegacy botWorkspaceBot
 
 triggers:write
 
-
-
 </td>
 <td valign="top">
 
 Create new Platform triggers
 
-
-
 </td>
 <td valign="top">
 
 Legacy botBot
-
-
 
 </td>
 </tr>
@@ -2421,21 +1825,15 @@ Legacy botBot
 
 usergroups:read
 
-
-
 </td>
 <td valign="top">
 
 View user groups in a workspace
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -2444,21 +1842,15 @@ UserLegacy botWorkspaceBot
 
 usergroups:write
 
-
-
 </td>
 <td valign="top">
 
 Create and manage user groups
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -2467,21 +1859,15 @@ UserLegacy botWorkspaceBot
 
 users.profile:read
 
-
-
 </td>
 <td valign="top">
 
 View profile details about people in a workspace
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -2490,21 +1876,15 @@ UserLegacy botWorkspaceBot
 
 users.profile:write
 
-
-
 </td>
 <td valign="top">
 
 Edit a user’s profile information and status
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -2513,21 +1893,15 @@ User
 
 users.profile:write:user
 
-
-
 </td>
 <td valign="top">
 
 Change the user's profile fields
 
-
-
 </td>
 <td valign="top">
 
 Workspace
-
-
 
 </td>
 </tr>
@@ -2536,21 +1910,15 @@ Workspace
 
 users:read
 
-
-
 </td>
 <td valign="top">
 
 View people in a workspace
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -2559,21 +1927,15 @@ UserLegacy botWorkspaceBot
 
 users:read.email
 
-
-
 </td>
 <td valign="top">
 
 View email addresses of people in a workspace
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botWorkspaceBot
-
-
 
 </td>
 </tr>
@@ -2582,21 +1944,15 @@ UserLegacy botWorkspaceBot
 
 users:write
 
-
-
 </td>
 <td valign="top">
 
 Set presence for your slack app
 
-
-
 </td>
 <td valign="top">
 
 UserLegacy botBot
-
-
 
 </td>
 </tr>
@@ -2605,21 +1961,15 @@ UserLegacy botBot
 
 workflow.steps:execute
 
-
-
 </td>
 <td valign="top">
 
 Add steps that people can use in Workflow Builder
 
-
-
 </td>
 <td valign="top">
 
 Legacy botBot
-
-
 
 </td>
 </tr>
@@ -2636,14 +1986,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -2651,8 +1997,6 @@ Description
 <td valign="top">
 
 *Method Group* 
-
-
 
 </td>
 <td valign="top">
@@ -2696,8 +2040,6 @@ The supported API method groups are:
 
 *Method* 
 
-
-
 </td>
 <td valign="top">
 
@@ -2717,14 +2059,10 @@ Specify the API Method for Method Group.
 
 *Arguments* 
 
-
-
 </td>
 <td valign="top">
 
 Choose *Add* and maintain the values of the *Key* and *Value* fields.
-
-
 
 </td>
 </tr>
@@ -2733,16 +2071,12 @@ Choose *Add* and maintain the values of the *Key* and *Value* fields.
 
 *Key* 
 
-
-
 </td>
 <td valign="top">
 
 Select the name of property. You can also enter `${header.headername}` or `${property.propertyname}` to dynamically ready the value from a header or property.
 
 The supported Keys are mentioned in the table below.
-
-
 
 </td>
 </tr>
@@ -2751,8 +2085,6 @@ The supported Keys are mentioned in the table below.
 
 *Value* 
 
-
-
 </td>
 <td valign="top">
 
@@ -2760,16 +2092,12 @@ Specify the value of the property.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Response Format*
-
-
 
 </td>
 <td valign="top">
@@ -2800,14 +2128,10 @@ You can set one of the following 3 response formats:
 
 *Request Header*
 
-
-
 </td>
 <td valign="top">
 
 Pipe separated value list of HTTP request headers. The specified headers to be sent from the Slack backend.
-
-
 
 </td>
 </tr>
@@ -2822,14 +2146,10 @@ Pipe separated value list of HTTP request headers. The specified headers to be s
 
 Sl.No
 
-
-
 </th>
 <th valign="top">
 
 Key
-
-
 
 </th>
 </tr>
@@ -2838,14 +2158,10 @@ Key
 
 1
 
-
-
 </td>
 <td valign="top">
 
 app\_id
-
-
 
 </td>
 </tr>
@@ -2854,14 +2170,10 @@ app\_id
 
 2
 
-
-
 </td>
 <td valign="top">
 
 as\_user
-
-
 
 </td>
 </tr>
@@ -2870,14 +2182,10 @@ as\_user
 
 3
 
-
-
 </td>
 <td valign="top">
 
 attachments
-
-
 
 </td>
 </tr>
@@ -2886,14 +2194,10 @@ attachments
 
 4
 
-
-
 </td>
 <td valign="top">
 
 auto\_provision
-
-
 
 </td>
 </tr>
@@ -2902,14 +2206,10 @@ auto\_provision
 
 5
 
-
-
 </td>
 <td valign="top">
 
 bot
-
-
 
 </td>
 </tr>
@@ -2918,14 +2218,10 @@ bot
 
 6
 
-
-
 </td>
 <td valign="top">
 
 channel
-
-
 
 </td>
 </tr>
@@ -2934,14 +2230,10 @@ channel
 
 7
 
-
-
 </td>
 <td valign="top">
 
 channel\_ids
-
-
 
 </td>
 </tr>
@@ -2950,14 +2242,10 @@ channel\_ids
 
 8
 
-
-
 </td>
 <td valign="top">
 
 code
-
-
 
 </td>
 </tr>
@@ -2966,14 +2254,10 @@ code
 
 9
 
-
-
 </td>
 <td valign="top">
 
 created\_by
-
-
 
 </td>
 </tr>
@@ -2982,14 +2266,10 @@ created\_by
 
 10
 
-
-
 </td>
 <td valign="top">
 
 cursor
-
-
 
 </td>
 </tr>
@@ -2998,14 +2278,10 @@ cursor
 
 11
 
-
-
 </td>
 <td valign="top">
 
 custom\_message
-
-
 
 </td>
 </tr>
@@ -3014,14 +2290,10 @@ custom\_message
 
 12
 
-
-
 </td>
 <td valign="top">
 
 date
-
-
 
 </td>
 </tr>
@@ -3030,14 +2302,10 @@ date
 
 13
 
-
-
 </td>
 <td valign="top">
 
 description
-
-
 
 </td>
 </tr>
@@ -3046,14 +2314,10 @@ description
 
 14
 
-
-
 </td>
 <td valign="top">
 
 emoji
-
-
 
 </td>
 </tr>
@@ -3062,14 +2326,10 @@ emoji
 
 15
 
-
-
 </td>
 <td valign="top">
 
 enterprise\_id
-
-
 
 </td>
 </tr>
@@ -3078,14 +2338,10 @@ enterprise\_id
 
 16
 
-
-
 </td>
 <td valign="top">
 
 entity\_type
-
-
 
 </td>
 </tr>
@@ -3094,14 +2350,10 @@ entity\_type
 
 17
 
-
-
 </td>
 <td valign="top">
 
 error
-
-
 
 </td>
 </tr>
@@ -3110,14 +2362,10 @@ error
 
 18
 
-
-
 </td>
 <td valign="top">
 
 grant\_type
-
-
 
 </td>
 </tr>
@@ -3126,14 +2374,10 @@ grant\_type
 
 19
 
-
-
 </td>
 <td valign="top">
 
 hash
-
-
 
 </td>
 </tr>
@@ -3142,14 +2386,10 @@ hash
 
 20
 
-
-
 </td>
 <td valign="top">
 
 icon\_emoji
-
-
 
 </td>
 </tr>
@@ -3158,14 +2398,10 @@ icon\_emoji
 
 21
 
-
-
 </td>
 <td valign="top">
 
 icon\_url
-
-
 
 </td>
 </tr>
@@ -3174,14 +2410,10 @@ icon\_url
 
 22
 
-
-
 </td>
 <td valign="top">
 
 include\_count
-
-
 
 </td>
 </tr>
@@ -3190,14 +2422,10 @@ include\_count
 
 23
 
-
-
 </td>
 <td valign="top">
 
 latest
-
-
 
 </td>
 </tr>
@@ -3206,14 +2434,10 @@ latest
 
 24
 
-
-
 </td>
 <td valign="top">
 
 leaving\_team\_ids
-
-
 
 </td>
 </tr>
@@ -3222,14 +2446,10 @@ leaving\_team\_ids
 
 25
 
-
-
 </td>
 <td valign="top">
 
 limit
-
-
 
 </td>
 </tr>
@@ -3238,14 +2458,10 @@ limit
 
 26
 
-
-
 </td>
 <td valign="top">
 
 name
-
-
 
 </td>
 </tr>
@@ -3254,14 +2470,10 @@ name
 
 27
 
-
-
 </td>
 <td valign="top">
 
 num\_minutes
-
-
 
 </td>
 </tr>
@@ -3270,14 +2482,10 @@ num\_minutes
 
 28
 
-
-
 </td>
 <td valign="top">
 
 oldest
-
-
 
 </td>
 </tr>
@@ -3286,14 +2494,10 @@ oldest
 
 29
 
-
-
 </td>
 <td valign="top">
 
 org\_channel
-
-
 
 </td>
 </tr>
@@ -3302,14 +2506,10 @@ org\_channel
 
 30
 
-
-
 </td>
 <td valign="top">
 
 parent\_id
-
-
 
 </td>
 </tr>
@@ -3318,14 +2518,10 @@ parent\_id
 
 31
 
-
-
 </td>
 <td valign="top">
 
 query
-
-
 
 </td>
 </tr>
@@ -3334,14 +2530,10 @@ query
 
 32
 
-
-
 </td>
 <td valign="top">
 
 request\_id
-
-
 
 </td>
 </tr>
@@ -3350,14 +2542,10 @@ request\_id
 
 33
 
-
-
 </td>
 <td valign="top">
 
 resend
-
-
 
 </td>
 </tr>
@@ -3366,14 +2554,10 @@ resend
 
 34
 
-
-
 </td>
 <td valign="top">
 
 search\_channel\_types
-
-
 
 </td>
 </tr>
@@ -3382,14 +2566,10 @@ search\_channel\_types
 
 35
 
-
-
 </td>
 <td valign="top">
 
 sort
-
-
 
 </td>
 </tr>
@@ -3398,14 +2578,10 @@ sort
 
 36
 
-
-
 </td>
 <td valign="top">
 
 team\_description
-
-
 
 </td>
 </tr>
@@ -3414,14 +2590,10 @@ team\_description
 
 37
 
-
-
 </td>
 <td valign="top">
 
 team\_id
-
-
 
 </td>
 </tr>
@@ -3430,14 +2602,10 @@ team\_id
 
 38
 
-
-
 </td>
 <td valign="top">
 
 timestamp
-
-
 
 </td>
 </tr>
@@ -3446,14 +2614,10 @@ timestamp
 
 39
 
-
-
 </td>
 <td valign="top">
 
 title
-
-
 
 </td>
 </tr>
@@ -3462,14 +2626,10 @@ title
 
 40
 
-
-
 </td>
 <td valign="top">
 
 users
-
-
 
 </td>
 </tr>
@@ -3478,14 +2638,10 @@ users
 
 41
 
-
-
 </td>
 <td valign="top">
 
 visibility
-
-
 
 </td>
 </tr>
@@ -3502,21 +2658,15 @@ Various operations, their APIs and pagination types have been tabulated below.
 
 Operation
 
-
-
 </th>
 <th valign="top">
 
 API
 
-
-
 </th>
 <th valign="top">
 
 Pagination Type
-
-
 
 </th>
 </tr>
@@ -3525,21 +2675,15 @@ Pagination Type
 
 conversations.history
 
-
-
 </td>
 <td valign="top">
 
 https://slack.com/api/conversations.history
 
-
-
 </td>
 <td valign="top">
 
 Cursor
-
-
 
 </td>
 </tr>
@@ -3548,21 +2692,15 @@ Cursor
 
 conversations.list
 
-
-
 </td>
 <td valign="top">
 
 https://slack.com/api/conversations.list
 
-
-
 </td>
 <td valign="top">
 
 Cursor
-
-
 
 </td>
 </tr>
@@ -3571,21 +2709,15 @@ Cursor
 
 conversations.members
 
-
-
 </td>
 <td valign="top">
 
 https://slack.com/api/conversations.members
 
-
-
 </td>
 <td valign="top">
 
 Cursor
-
-
 
 </td>
 </tr>
@@ -3594,21 +2726,15 @@ Cursor
 
 conversations.replies
 
-
-
 </td>
 <td valign="top">
 
 https://slack.com/api/conversations.replies
 
-
-
 </td>
 <td valign="top">
 
 Cursor
-
-
 
 </td>
 </tr>
@@ -3617,21 +2743,15 @@ Cursor
 
 files.info
 
-
-
 </td>
 <td valign="top">
 
 https://slack.com/api/files.info
 
-
-
 </td>
 <td valign="top">
 
 Cursor
-
-
 
 </td>
 </tr>
@@ -3640,21 +2760,15 @@ Cursor
 
 reactions.list
 
-
-
 </td>
 <td valign="top">
 
 https://slack.com/api/reactions.list
 
-
-
 </td>
 <td valign="top">
 
 Cursor
-
-
 
 </td>
 </tr>
@@ -3663,21 +2777,15 @@ Cursor
 
 stars.list
 
-
-
 </td>
 <td valign="top">
 
 https://slack.com/api/stars.list
 
-
-
 </td>
 <td valign="top">
 
 Cursor
-
-
 
 </td>
 </tr>
@@ -3686,21 +2794,15 @@ Cursor
 
 users.list
 
-
-
 </td>
 <td valign="top">
 
 https://slack.com/api/users.list
 
-
-
 </td>
 <td valign="top">
 
 Cursor
-
-
 
 </td>
 </tr>
@@ -3709,21 +2811,15 @@ Cursor
 
 files.list
 
-
-
 </td>
 <td valign="top">
 
 https://api.slack.com/methods/files.list
 
-
-
 </td>
 <td valign="top">
 
 Traditional
-
-
 
 </td>
 </tr>
@@ -3732,21 +2828,15 @@ Traditional
 
 search.all
 
-
-
 </td>
 <td valign="top">
 
 https://api.slack.com/methods/search.all
 
-
-
 </td>
 <td valign="top">
 
 Traditional
-
-
 
 </td>
 </tr>
@@ -3755,21 +2845,15 @@ Traditional
 
 search.files
 
-
-
 </td>
 <td valign="top">
 
 https://slack.com/api/search.files
 
-
-
 </td>
 <td valign="top">
 
 Traditional
-
-
 
 </td>
 </tr>
@@ -3778,21 +2862,15 @@ Traditional
 
 search.messages
 
-
-
 </td>
 <td valign="top">
 
 https://api.slack.com/methods/search.messages
 
-
-
 </td>
 <td valign="top">
 
 Traditional
-
-
 
 </td>
 </tr>

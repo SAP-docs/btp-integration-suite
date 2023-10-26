@@ -27,14 +27,10 @@ Select the *General* tab to access the following parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Enter the name of the channel.
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 RabbitMQ
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ RabbitMQ
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 TCP
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ TCP
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 AMQP 0-9-1
-
-
 
 </td>
 </tr>
@@ -117,14 +97,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -132,8 +108,6 @@ Description
 <td valign="top">
 
 *Host* 
-
-
 
 </td>
 <td valign="top">
@@ -152,14 +126,10 @@ Enter the host name or IP address of the RabbitMQ server.
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the port of the RabbitMQ server.
-
-
 
 </td>
 </tr>
@@ -167,8 +137,6 @@ Enter the port of the RabbitMQ server.
 <td valign="top">
 
 *Virtual Host* 
-
-
 
 </td>
 <td valign="top">
@@ -190,8 +158,6 @@ Enter the virtual host of the RabbitMQ server. The default virtual host is:
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -218,14 +184,10 @@ Select the Proxy Type to connect to the target system.
 
 \(Only if for *Proxy Type* the option *On-Premise* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to a Cloud Connector instance associated with your account, enter the location ID that you define for this instance in the destination configuration of SAP BTP cockpit.
-
-
 
 </td>
 </tr>
@@ -233,8 +195,6 @@ To connect to a Cloud Connector instance associated with your account, enter the
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -265,14 +225,10 @@ Select authentication option to use to connect to the RabbitMQ server. There are
 
 \(Only if for *Authentication* the option *Client Certificate* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Alias to identify the private key in the key store to communicate with the RabbitMQ server.
-
-
 
 </td>
 </tr>
@@ -283,14 +239,10 @@ Alias to identify the private key in the key store to communicate with the Rabbi
 
 \(Only if for *Authentication* the option *SASL* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Select to securely connect using TLS \(Security protocol: SASL\_SSL or SASL\_PLAIN\).
-
-
 
 </td>
 </tr>
@@ -301,14 +253,10 @@ Select to securely connect using TLS \(Security protocol: SASL\_SSL or SASL\_PLA
 
 \(Only if for *Authentication* the option *SASL* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Enter the alias name of the deployed *User Credentials* artifact.
-
-
 
 </td>
 </tr>
@@ -325,14 +273,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -341,14 +285,10 @@ Description
 
 *Queue Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the queue from which the messages will be consumed.
-
-
 
 </td>
 </tr>
@@ -357,14 +297,10 @@ Enter the name of the queue from which the messages will be consumed.
 
 *Number of Concurrent Processes* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the number of processes running in parallel for each worker node.
-
-
 
 </td>
 </tr>
@@ -373,14 +309,10 @@ Enter the number of processes running in parallel for each worker node.
 
 *Max. Number of Prefetched Messages* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the maximum number of messages that may be prefetched by one process.
-
-
 
 </td>
 </tr>
@@ -388,8 +320,6 @@ Enter the maximum number of messages that may be prefetched by one process.
 <td valign="top">
 
 *Acknowledgement Type* 
-
-
 
 </td>
 <td valign="top">

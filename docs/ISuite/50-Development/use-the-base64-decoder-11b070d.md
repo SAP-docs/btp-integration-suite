@@ -83,35 +83,25 @@ The Content Modifier *Define Properties* stores the base64-encoded image string 
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Name
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -120,35 +110,25 @@ Value
 
 Create
 
-
-
 </td>
 <td valign="top">
 
 productImage
-
-
 
 </td>
 <td valign="top">
 
 XPath
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 //ProductImage
-
-
 
 </td>
 </tr>

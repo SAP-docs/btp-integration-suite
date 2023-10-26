@@ -15,14 +15,10 @@ If you choose the AMQP \(Advanced Message Queuing Protocol\), the test tool chec
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -30,8 +26,6 @@ Description
 <td valign="top">
 
 *Transport Protocol*
-
-
 
 </td>
 <td valign="top">
@@ -46,8 +40,6 @@ Select a transport protocol from the drop-down list. You can choose between
 
 Default value is `TCP`
 
-
-
 </td>
 </tr>
 <tr>
@@ -55,14 +47,10 @@ Default value is `TCP`
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the host of the messaging server \(mandatory\).
-
-
 
 </td>
 </tr>
@@ -70,8 +58,6 @@ Enter the host of the messaging server \(mandatory\).
 <td valign="top">
 
 *Port*
-
-
 
 </td>
 <td valign="top">
@@ -93,8 +79,6 @@ Enter the port of the messaging server \(mandatory\). Default values are:
 
 *Path*
 
-
-
 </td>
 <td valign="top">
 
@@ -102,16 +86,12 @@ Additional attribute for the WebSocket protocol.
 
 Access path of the messaging server. Default value is *empty*.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type*
-
-
 
 </td>
 <td valign="top">
@@ -133,16 +113,12 @@ Select a proxy type from the drop-down list:
 
 *Location ID* 
 
-
-
 </td>
 <td valign="top">
 
 Only if `On-Premise` is selected as *Proxy Type*.
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you 've defined for this instance, in the destination configuration on the cloud side
-
-
 
 </td>
 </tr>
@@ -151,8 +127,6 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 
 *Connect with TLS*
 
-
-
 </td>
 <td valign="top">
 
@@ -160,16 +134,12 @@ Enable the secure connection via TLS \(Transport Layer Security\).
 
 Default value: checkbox selected.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Validate Server Certificate*
-
-
 
 </td>
 <td valign="top">
@@ -187,8 +157,6 @@ When you’ve selected the *Validate Server Certificate* option \(which is the d
 
 
 If it wasn’t successful and there’s an error message, you can unselect the *Validate Server Certificate* option.
-
-
 
 </td>
 </tr>

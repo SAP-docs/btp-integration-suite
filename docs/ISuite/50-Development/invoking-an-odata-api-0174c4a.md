@@ -15,7 +15,7 @@ You have deployed an OData API successfully; the service is in active status rea
 
 ## Procedure
 
-1.  Choose *Monitor* \> *Integrations*.
+1.  Choose *Monitor* \> *Integrations and APIs*.
 
 2.  On the Overview page, in the section *Manage Integration Content*, choose the tile that shows the services with the status *Started*.
 

@@ -146,14 +146,10 @@ Use SAP Cloud Integration and SAP’s on-premise integration Platform, SAP Proce
 
 Tools
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -162,14 +158,10 @@ Description
 
 [SAP BTP cockpit](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/e47748b5bb571014afedc70595804f3e.html)
 
-
-
 </td>
 <td valign="top">
 
 The cockpit is the central point for managing all activities associated with your subaccount and for accessing key information about your applications.
-
-
 
 </td>
 </tr>
@@ -178,14 +170,10 @@ The cockpit is the central point for managing all activities associated with you
 
 [Adapter Development Kit](https://tools.hana.ondemand.com/#cloudintegration)
 
-
-
 </td>
 <td valign="top">
 
 The Adapter Development Kit allows integration developers to define new adapter types and to integrate them into the Cloud Integration tool environment.
-
-
 
 </td>
 </tr>
@@ -194,14 +182,10 @@ The Adapter Development Kit allows integration developers to define new adapter 
 
 [Cloud Connector](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e6c7616abb5710148cfcf3e75d96d596.html)
 
-
-
 </td>
 <td valign="top">
 
 It serves as the link between on-demand applications in SAP BTP and existing on-premise systems. You can control the resources available for the cloud applications in those systems.
-
-
 
 </td>
 </tr>
@@ -210,14 +194,10 @@ It serves as the link between on-demand applications in SAP BTP and existing on-
 
 [Integration Suite Dashboard Overview](https://help.sap.com/viewer/42093f14b43c485fbe3adbbe81eff6c8/release/en-US/a6c514ce6f624a77857f6ff59bbc29cf.html?q=integration%20reporting%20dashboard)
 
-
-
 </td>
 <td valign="top">
 
 The Cloud Integration reporting dashboard is part of the Integration Suite content package developed on SAP Analytics Cloud. It is a simple and intuitive widget-based analytics dashboard that provides at-a-glance view of relevant key performance indicators of a Cloud Integration tenant. The widgets in the dashboard display data in a simplified way that helps you visualize the context information with slicing and dicing capabilities. If you’re curious to explore, then read the blog on [Interactive Reporting Dashboard for SAP Cloud Integration using SAP Analytics Cloud](https://blogs.sap.com/2020/08/26/sap-analytics-cloud-content-for-sap-cloud-platform-integration/).
-
-
 
 </td>
 </tr>
@@ -238,14 +218,10 @@ This section describes the system scope for Cloud Integration tenants that are d
 
 Resource
 
-
-
 </th>
 <th valign="top">
 
 Scope
-
-
 
 </th>
 </tr>
@@ -254,8 +230,6 @@ Scope
 
 **Integration content**
 
-
-
 </td>
 <td valign="top">
 
@@ -263,16 +237,12 @@ Scope
 
 Refer to the blog on [Content Size Limits](https://blogs.sap.com/2020/08/02/cloud-integration-content-size-limits/) learn how to reduce your integration content size.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 **JMS queues**
-
-
 
 </td>
 <td valign="top">
@@ -283,16 +253,12 @@ Can be scaled up to 30 GB, 500 transactions \(with 100 queues\)
 
 See the blog on [Cloud Integration – JMS Resource and Size Limits](https://blogs.sap.com/2017/10/04/cloud-integration-jms-resource-and-size-limits-in-cpi-enterprise-edition/) for further guidance on how to set the queue size to restrict the limit and on how to delete unused queues.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 **Message processing log persistence**
-
-
 
 </td>
 <td valign="top">
@@ -301,16 +267,12 @@ See the blog on [Cloud Integration – JMS Resource and Size Limits](https://blo
 
 See: [Cloud Integration – Setting the Log Level for Message Processing](https://blogs.sap.com/2017/06/22/cloud-integration-setting-the-log-level-for-message-processing/)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 **Data store message persistence**
-
-
 
 </td>
 <td valign="top">
@@ -319,8 +281,6 @@ See: [Cloud Integration – Setting the Log Level for Message Processing](https:
 
 See: [Optimize Performance](../Development/optimize-performance-491c80d.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -328,16 +288,12 @@ See: [Optimize Performance](../Development/optimize-performance-491c80d.md)
 
 **Disk space**
 
-
-
 </td>
 <td valign="top">
 
 4 GB
 
 Refer to SAP Note [2648415](https://me.sap.com/notes/2648415) to learn how to optimize the integration flow development to prevent the integration flow from running into the “No More Space left on Disk” error.
-
-
 
 </td>
 </tr>
@@ -360,14 +316,10 @@ This section describes the system scope for Cloud Integration tenants that are d
 
 Resource
 
-
-
 </th>
 <th valign="top">
 
 Scope
-
-
 
 </th>
 </tr>
@@ -376,8 +328,6 @@ Scope
 
 **Integration content**
 
-
-
 </td>
 <td valign="top">
 
@@ -385,16 +335,12 @@ Scope
 
 Refer to the blog on [Content Size Limits](https://blogs.sap.com/2020/08/02/cloud-integration-content-size-limits/) learn how to reduce your integration content size.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 **JMS queues**
-
-
 
 </td>
 <td valign="top">
@@ -407,16 +353,12 @@ Can be scaled up to 30 GB, 500 transactions \(with 100 queues\)
 
 See the blog on [Cloud Integration – JMS Resource and Size Limits](https://blogs.sap.com/2017/10/04/cloud-integration-jms-resource-and-size-limits-in-cpi-enterprise-edition/) for further guidance on how to set the queue size to restrict the limit and on how to delete unused queues.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 **ASE database**
-
-
 
 </td>
 <td valign="top">
@@ -441,16 +383,12 @@ See the following blogs for information on how to:
 
 **Disk space**
 
-
-
 </td>
 <td valign="top">
 
 2 GB
 
 Refer to SAP Note [2648415](https://me.sap.com/notes/2648415) to learn how to optimize the integration flow development to prevent the integration flow from running into the “No More Space left on Disk” error.
-
-
 
 </td>
 </tr>

@@ -30,28 +30,20 @@ In case you need end-to-end encryption check the guideline for message level sec
 
 Adapters
 
-
-
 </th>
 <th valign="top">
 
 Unprotected Protocols \(Avoid\)
-
-
 
 </th>
 <th valign="top">
 
 Encrypted Protocols \(Recommended\)
 
-
-
 </th>
 <th valign="top">
 
 Configuration Measures
-
-
 
 </th>
 </tr>
@@ -74,21 +66,15 @@ HTTP-based receiver adapters
 
 HTTP
 
-
-
 </td>
 <td valign="top">
 
 HTTPS
 
-
-
 </td>
 <td valign="top">
 
 Specify `https://` as protocol in the URL specified with the *Address* parameter.
-
-
 
 </td>
 </tr>
@@ -97,21 +83,15 @@ Specify `https://` as protocol in the URL specified with the *Address* parameter
 
 FTP
 
-
-
 </td>
 <td valign="top">
 
 FTP
 
-
-
 </td>
 <td valign="top">
 
 FTPS or SFTP
-
-
 
 </td>
 <td valign="top">
@@ -120,8 +100,6 @@ As *Encryption*, select either *Explicit FTS* or *Implicit FTPS*.
 
 Alternatively, you can also use the SFTP adapter that is based on the Secure Shell \(SSH\) protocol.
 
-
-
 </td>
 </tr>
 <tr>
@@ -129,28 +107,20 @@ Alternatively, you can also use the SFTP adapter that is based on the Secure She
 
 Mail receiver
 
-
-
 </td>
 <td valign="top">
 
 SMTP
-
-
 
 </td>
 <td valign="top">
 
 SMTPS or STARTTLS
 
-
-
 </td>
 <td valign="top" rowspan="3">
 
 As *Authentication*, select either the secure protocol variant \(ending with *s*: *SMTPS*, *POP3S*, *IMAPS*\) or *STARTTLS Mandatory*.
-
-
 
 </td>
 </tr>
@@ -159,21 +129,15 @@ As *Authentication*, select either the secure protocol variant \(ending with *s*
 
 Mail sender
 
-
-
 </td>
 <td valign="top">
 
 POP3
 
-
-
 </td>
 <td valign="top">
 
 POP3S or STARTTLS
-
-
 
 </td>
 </tr>
@@ -182,14 +146,10 @@ POP3S or STARTTLS
 
 IMAP
 
-
-
 </td>
 <td valign="top">
 
 IMAPS or STARTTLS
-
-
 
 </td>
 </tr>
@@ -198,28 +158,20 @@ IMAPS or STARTTLS
 
 AMQP
 
-
-
 </td>
 <td valign="top">
 
 AMQP
-
-
 
 </td>
 <td valign="top">
 
 AMQP via TLS
 
-
-
 </td>
 <td valign="top">
 
 Select the *Connect with TLS* flag.
-
-
 
 </td>
 </tr>
@@ -238,21 +190,15 @@ LDAP
 
 n/a
 
-
-
 </td>
 <td valign="top">
 
 LDAPS
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

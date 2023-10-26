@@ -42,15 +42,11 @@ You have created an OData API artifact in an integration package. You can use th
     <th valign="top">
 
     WSDL Type
-
-
     
     </th>
     <th valign="top">
 
     OData Type
-
-
     
     </th>
     </tr>
@@ -58,15 +54,11 @@ You have created an OData API artifact in an integration package. You can use th
     <td valign="top" rowspan="3">
     
     Operation
-
-
     
     </td>
     <td valign="top">
     
     Complex Type
-
-
     
     </td>
     </tr>
@@ -74,8 +66,6 @@ You have created an OData API artifact in an integration package. You can use th
     <td valign="top">
     
     Entity Type
-
-
     
     </td>
     </tr>
@@ -83,8 +73,6 @@ You have created an OData API artifact in an integration package. You can use th
     <td valign="top">
     
     Function Import
-
-
     
     </td>
     </tr>
@@ -92,15 +80,11 @@ You have created an OData API artifact in an integration package. You can use th
     <td valign="top">
     
     Complex Type
-
-
     
     </td>
     <td valign="top">
     
     Complex Type
-
-
     
     </td>
     </tr>
@@ -108,15 +92,11 @@ You have created an OData API artifact in an integration package. You can use th
     <td valign="top">
     
     Input Message
-
-
     
     </td>
     <td valign="top">
     
     Complex Type
-
-
     
     </td>
     </tr>
@@ -124,15 +104,11 @@ You have created an OData API artifact in an integration package. You can use th
     <td valign="top">
     
     Output Message
-
-
     
     </td>
     <td valign="top">
     
     Complex Type
-
-
     
     </td>
     </tr>
@@ -140,15 +116,11 @@ You have created an OData API artifact in an integration package. You can use th
     <td valign="top">
     
     Part
-
-
     
     </td>
     <td valign="top">
     
     Complex Type
-
-
     
     </td>
     </tr>

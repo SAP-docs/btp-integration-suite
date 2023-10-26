@@ -56,15 +56,11 @@ This step selects messages from the data store and provides as output a bulk mes
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -72,8 +68,6 @@ This step selects messages from the data store and provides as output a bulk mes
     <td valign="top">
     
     *Data Store Name* 
-
-
     
     </td>
     <td valign="top">
@@ -81,8 +75,6 @@ This step selects messages from the data store and provides as output a bulk mes
     Specifies the name of the data store \(no white spaces\).
 
     The maximum length allowed for the data store name is 40 characters. If you enter a longer string, a validation error is raised. Note that this length restriction applies to the value that is used for this parameter at runtime. Therefore, if you configure this parameter dynamically, make sure that the expected header or property value does not exceed this length restriction. Otherwise, a runtime error will be raised.
-
-
     
     </td>
     </tr>
@@ -90,8 +82,6 @@ This step selects messages from the data store and provides as output a bulk mes
     <td valign="top">
     
     *Visibility* 
-
-
     
     </td>
     <td valign="top">
@@ -104,8 +94,6 @@ This step selects messages from the data store and provides as output a bulk mes
 
 
     For more information and guidelines how to use this parameter, see [Anticipate Message Throughput When Choosing a Storage Option](anticipate-message-throughput-when-choosing-a-storage-option-5b38765.md).
-
-
     
     </td>
     </tr>
@@ -113,8 +101,6 @@ This step selects messages from the data store and provides as output a bulk mes
     <td valign="top">
     
     *Number of Polled Messages* 
-
-
     
     </td>
     <td valign="top">
@@ -138,15 +124,11 @@ This step selects messages from the data store and provides as output a bulk mes
     <td valign="top">
     
     *Delete on Completion* 
-
-
     
     </td>
     <td valign="top">
     
     Select this option to delete a message from the data store after having successfully processed the message.
-
-
     
     </td>
     </tr>

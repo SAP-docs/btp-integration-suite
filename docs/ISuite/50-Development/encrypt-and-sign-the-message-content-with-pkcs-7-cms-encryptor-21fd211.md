@@ -30,15 +30,11 @@ In addition to encrypting the message content, you can also sign the content to 
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     Enter a name for the encryptor.
-
-
     
     </td>
     </tr>
@@ -52,8 +48,6 @@ In addition to encrypting the message content, you can also sign the content to 
     <td valign="top">
     
     *Block Size \(in bytes\)* 
-
-
     
     </td>
     <td valign="top">
@@ -61,8 +55,6 @@ In addition to encrypting the message content, you can also sign the content to 
     Enter the size of the data that is to be encoded.
 
     If you enter a value equal to or less than `0`, the whole data is encoded.
-
-
     
     </td>
     </tr>
@@ -70,15 +62,11 @@ In addition to encrypting the message content, you can also sign the content to 
     <td valign="top">
     
     *Encode Body with Base64* 
-
-
     
     </td>
     <td valign="top">
     
     Select this option if the message body will be base64-encoded.
-
-
     
     </td>
     </tr>
@@ -86,8 +74,6 @@ In addition to encrypting the message content, you can also sign the content to 
     <td valign="top">
     
     *Signatures* 
-
-
     
     </td>
     <td valign="top">
@@ -117,8 +103,6 @@ In addition to encrypting the message content, you can also sign the content to 
     <td valign="top">
     
     *Content Encryption Algorithm* 
-
-
     
     </td>
     <td valign="top">
@@ -126,8 +110,6 @@ In addition to encrypting the message content, you can also sign the content to 
     Specify the algorithm that is to be used to encrypt the payload.
 
     Supported algorithms \(by the symmetric key\) for content encryption \(format Cipher/Operation Mode/Padding Scheme\): AES/CBC/PKCS5Padding, ARCFOUR/ECB/NoPadding, Camellia/CBC/PKCS5Padding, CAST5/CBC/PKCS5Padding, DES/CBC/PKCS5Padding, DESede/CBC/PKCS5Padding, RC2/CBC/PKCS5Padding.
-
-
     
     </td>
     </tr>
@@ -135,8 +117,6 @@ In addition to encrypting the message content, you can also sign the content to 
     <td valign="top">
     
     *Secret Key Length* 
-
-
     
     </td>
     <td valign="top">
@@ -144,8 +124,6 @@ In addition to encrypting the message content, you can also sign the content to 
     Specify the key length.
 
     The offered key lengths depend on the chosen encryption algorithm.
-
-
     
     </td>
     </tr>
@@ -153,8 +131,6 @@ In addition to encrypting the message content, you can also sign the content to 
     <td valign="top">
     
     *Receiver Public Key Alias* 
-
-
     
     </td>
     <td valign="top">
@@ -162,8 +138,6 @@ In addition to encrypting the message content, you can also sign the content to 
     Specify one or more aliases.
 
     Enter an alias to select the public key from the keystore. You can enter `${header.headername}` or `${property.propertyname}` to read the name dynamically from a header or exchange property.
-
-
     
     </td>
     </tr>
@@ -177,8 +151,6 @@ In addition to encrypting the message content, you can also sign the content to 
     <td valign="top">
     
     *Signer Parameters* 
-
-
     
     </td>
     <td valign="top">

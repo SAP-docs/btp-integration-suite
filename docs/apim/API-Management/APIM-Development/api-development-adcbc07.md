@@ -17,16 +17,12 @@ The following table lists the tasks that an Application Developer, Application C
 
 [Build APIs](build-apis-74c042b.md) 
 
-
-
 </td>
 <td valign="top">
 
 **API Platform**: To expose an API, you first need to create an API Provider. You can then create an API proxy and associate it with policies.
 
 Applicable to: API Administrator
-
-
 
 </td>
 </tr>
@@ -35,16 +31,12 @@ Applicable to: API Administrator
 
 [Publish APIs](publish-apis-75a4a11.md) 
 
-
-
 </td>
 <td valign="top">
 
 **API Platform**: To publish your APIs, you need to create a product.
 
 Applicable to: API Administrator
-
-
 
 </td>
 </tr>
@@ -53,16 +45,12 @@ Applicable to: API Administrator
 
 [Consume APIs](consume-apis-ea561e4.md) 
 
-
-
 </td>
 <td valign="top">
 
 **Developer Services**: Use the API business hub enterprise to consume the exposed APIs.
 
 Applicable to: Application Developer and Application Consumer
-
-
 
 </td>
 </tr>

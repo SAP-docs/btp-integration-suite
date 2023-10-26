@@ -24,7 +24,7 @@ An integration flow is a graphical representation of the flow and processing of 
 
 ## Procedure
 
-1.  Choose *Design* \> *Integrations* to view the list of integration packages.
+1.  Choose *Design* \> *Integrations and APIs* to view the list of integration packages.
 
 2.  Select the integration package in which you want to add an integration flow and choose *Edit*.
 
@@ -69,7 +69,7 @@ An integration flow is a graphical representation of the flow and processing of 
     3.  Choose *OK*. Alternatively, you can press the [Enter\]/[Return\] key to create the integration flow.
 
         > ### Note:  
-        > You can copy an integration flow by choosing <span class="SAP-icons"></span> in the *Action* column, and then *Copy*.
+        > You can copy an integration flow by choosing <span class="SAP-icons"></span> Actions in the *Action* column, and then *Copy*.
         > 
         > -   An integration flow can be copied within the same package or to a different package.
         > -   The copied integration flow has the same version as the source.

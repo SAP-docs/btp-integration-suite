@@ -85,15 +85,11 @@ To create a request to connect the API portal to the centralized API business hu
     <th valign="top">
 
     Parameters
-
-
     
     </th>
     <th valign="top">
 
     Values
-
-
     
     </th>
     </tr>
@@ -101,15 +97,11 @@ To create a request to connect the API portal to the centralized API business hu
     <td valign="top">
     
     API Portal Alias Name
-
-
     
     </td>
     <td valign="top">
     
     Enter the API portal name that gets displayed on the API Business Hub Enterprise. This name is used to distinguish products that are published from the API portal and likewise for applications created for the product.
-
-
     
     </td>
     </tr>
@@ -117,8 +109,6 @@ To create a request to connect the API portal to the centralized API business hu
     <td valign="top">
     
     API Portal Access Credentials
-
-
     
     </td>
     <td valign="top">
@@ -148,15 +138,11 @@ To create a request to connect the API portal to the centralized API business hu
     <td valign="top">
     
     Comment
-
-
     
     </td>
     <td valign="top">
     
     Provide the details to the approver about the need for the connection request.
-
-
     
     </td>
     </tr>
@@ -164,15 +150,11 @@ To create a request to connect the API portal to the centralized API business hu
     <td valign="top">
     
     Once this connection is set up, you can't place a request to severe this connection and establish a new connection with any other centralized API business hub enterprise.
-
-
     
     </td>
     <td valign="top">
     
     Select the checkbox to confirm.
-
-
     
     </td>
     </tr>

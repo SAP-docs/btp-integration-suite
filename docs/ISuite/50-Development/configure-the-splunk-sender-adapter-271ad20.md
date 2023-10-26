@@ -27,14 +27,10 @@ Select the *General* tab to access the following parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the Splunk channel.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Enter the name of the Splunk channel.
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 Shows *Splunk* as adapter type.
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Shows *Splunk* as adapter type.
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 Shows *HTTPS* as transport protocol.
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ Shows *HTTPS* as transport protocol.
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 Shows *REST* as message protocol.
-
-
 
 </td>
 </tr>
@@ -117,14 +97,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -132,8 +108,6 @@ Description
 <td valign="top">
 
 *Address* 
-
-
 
 </td>
 <td valign="top">
@@ -144,16 +118,12 @@ Example:
 
 `https://host:port`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -182,16 +152,12 @@ You can select one of the following options:
 
 \(only if *Basic Authentication* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Name of the *User Credentials* artifact that contains the user name and password.
 
 See: [Deploying a User Credentials Artifact](deploying-a-user-credentials-artifact-6912d63.md)
-
-
 
 </td>
 </tr>
@@ -202,8 +168,6 @@ See: [Deploying a User Credentials Artifact](deploying-a-user-credentials-artifa
 
 \(only if *Splunk Token* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -211,16 +175,12 @@ Name of the *Secure Parameter* artifact that contains the Splunk token credentia
 
 See: [Deploying a Secure Parameter Artifact](deploying-a-secure-parameter-artifact-4641d6c.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -233,8 +193,6 @@ Select *On-Premise* if you’re connecting to an SAP Cloud Connector instance.
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -244,14 +202,10 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 
 \(only if *On-Premise* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side.
-
-
 
 </td>
 </tr>
@@ -260,14 +214,10 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 
 *Timeout \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the amount of time, in milliseconds, that the client waits for a response before it times out; default value: `30000`.
-
-
 
 </td>
 </tr>
@@ -284,14 +234,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -299,8 +245,6 @@ Description
 <td valign="top">
 
 *Method* 
-
-
 
 </td>
 <td valign="top">
@@ -329,8 +273,6 @@ Method to perform further operations.
 
 *Search Query* 
 
-
-
 </td>
 <td valign="top">
 
@@ -352,8 +294,6 @@ Example:
 
 *Search Time Range* 
 
-
-
 </td>
 <td valign="top">
 
@@ -361,9 +301,7 @@ Time range to retrieve the data for the particular time period from Splunk.
 
 When you select *Custom Range*, you can specify the parameters *Earliest Time* and *Latest Time*. Otherwise, multiple options are available to specify the time range.
 
-*Earliest Time* and *Latest Time* are mandatory parameters, and *Condition* is optional one
-
-
+*Earliest Time* and *Latest Time* are mandatory parameters, and *Condition* is an optional one.
 
 </td>
 </tr>
@@ -374,14 +312,10 @@ When you select *Custom Range*, you can specify the parameters *Earliest Time* a
 
 \(only if *Custom Range* is selected for *Search Time Range*\)
 
-
-
 </td>
 <td valign="top">
 
 Beginning point of time range or exact timestamp where you want to start the search. You can either use a standard unit of measure or enter an absolute timestamp in the format `MM/DD/YY: HH:MM:SS`. For example, enter `4` and select `Hour` as unit, to specify: 4 hours from now. Alternatively, enter the exact timestamp, for example `10/18/2022: 14:50:00`. You can also use the specific formats supported by Splunk.
-
-
 
 </td>
 </tr>
@@ -392,14 +326,10 @@ Beginning point of time range or exact timestamp where you want to start the sea
 
 \(only if *Custom Range* is selected for *Search Time Range*\)
 
-
-
 </td>
 <td valign="top">
 
 Ending point of time range or exact timestamp where you want to end the search. You can either use a standard unit of measure or enter an absolute timestamp in the format `MM/DD/YY: HH:MM:SS`. For example, enter `2` and select `Hour` as unit to specify: for 2 hours from now. Alternatively, enter the exact timestamp, for example `10/18/2022: 16:50:00`. You can also use the specific formats supported by Splunk.
-
-
 
 </td>
 </tr>
@@ -408,16 +338,12 @@ Ending point of time range or exact timestamp where you want to end the search. 
 
 *Condition* 
 
-
-
 </td>
 <td valign="top">
 
 Condition to filter out the results in the required format, for example: `| stats count | where count > 1000`.
 
 You can implement scheduled alerts from Cloud Integration using this parameter.
-
-
 
 </td>
 </tr>
@@ -428,14 +354,10 @@ You can implement scheduled alerts from Cloud Integration using this parameter.
 
 \(only if *On Run Export Search* is selected for *Method*\)
 
-
-
 </td>
 <td valign="top">
 
 Query response format \(*JSON* or *XML*\).
-
-
 
 </td>
 </tr>
@@ -446,14 +368,10 @@ Query response format \(*JSON* or *XML*\).
 
 \(only if *On Run Export Search* is selected for *Method*\)
 
-
-
 </td>
 <td valign="top">
 
 Choose *Add* and maintain the values of the *Key* and *Value* fields.
-
-
 
 </td>
 </tr>
@@ -463,8 +381,6 @@ Choose *Add* and maintain the values of the *Key* and *Value* fields.
 *Key*
 
 \(only if *On Run Export Search* is selected for *Method*\)
-
-
 
 </td>
 <td valign="top">
@@ -519,8 +435,6 @@ time\_format
 
 timeout
 
-
-
 </td>
 </tr>
 <tr>
@@ -530,16 +444,12 @@ timeout
 
 \(only if *On Run Export Search* is selected for *Method*\)
 
-
-
 </td>
 <td valign="top">
 
 Value of the property.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
-
-
 
 </td>
 </tr>
@@ -550,8 +460,6 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 \(only if *On Run Normal Search* or *On Run Real Time Search* is selected for *Method*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -561,8 +469,6 @@ Example:
 
 `https://host:port/serviceNS/username`
 
-
-
 </td>
 </tr>
 <tr>
@@ -571,8 +477,6 @@ Example:
 *Search Mode*
 
 \(only if *On Run Normal Search* or*On Run Real Time Search* is selected for *Method*\)
-
-
 
 </td>
 <td valign="top">
@@ -585,8 +489,6 @@ Valid values:
 
 
 If set to `realtime`, search runs over live data. By default, `normal` is used.
-
-
 
 </td>
 </tr>

@@ -23,14 +23,10 @@ See the *Modeling Basics - Timer-Initiated Scenario with External Data Source an
 
 Integration Flow
 
-
-
 </th>
 <th valign="top">
 
 Tasks
-
-
 
 </th>
 </tr>
@@ -39,14 +35,10 @@ Tasks
 
 *Modeling Basics - Timer-Initiated Scenario with External Data Source and Receiver*
 
-
-
 </td>
 <td valign="top">
 
 Performs the main business-related steps \(calling WebShop component\).
-
-
 
 </td>
 </tr>
@@ -55,14 +47,10 @@ Performs the main business-related steps \(calling WebShop component\).
 
 *Generic Receiver*
 
-
-
 </td>
 <td valign="top">
 
 Creates a Data Store entry to represent the receiver system \(both in success and error cases\).
-
-
 
 </td>
 </tr>
@@ -92,28 +80,20 @@ The 2nd Content Modifier *Define property* defines a message header that determi
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Name
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -122,28 +102,20 @@ Value
 
 Create
 
-
-
 </td>
 <td valign="top">
 
 context
-
-
 
 </td>
 <td valign="top">
 
 Constant
 
-
-
 </td>
 <td valign="top">
 
 ModelingBasics-TimerInitiated
-
-
 
 </td>
 </tr>
@@ -158,35 +130,25 @@ It also creates an Exchange property \(which we also call `productIdentifier`\) 
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Name
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -195,35 +157,25 @@ Value
 
 Create
 
-
-
 </td>
 <td valign="top">
 
 productIdentifier
-
-
 
 </td>
 <td valign="top">
 
 XPath
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 //productIdentifier
-
-
 
 </td>
 </tr>

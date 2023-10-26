@@ -43,14 +43,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -59,14 +55,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -83,14 +75,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -98,8 +86,6 @@ Description
 <td valign="top">
 
 *Base URI*
-
-
 
 </td>
 <td valign="top">
@@ -118,8 +104,6 @@ Specify the URI that depends on your region and environment, which helps you est
 
 *Credential Name*
 
-
-
 </td>
 <td valign="top">
 
@@ -127,16 +111,12 @@ Provide the alias value for identifying the connector credentials. This helps th
 
 See: [Deploying a User Credentials Artifact](../Operations/deploying-a-user-credentials-artifact-6912d63.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Resource*
-
-
 
 </td>
 <td valign="top">
@@ -156,8 +136,6 @@ Specify the resource name of an instance that you want to access. Resources belo
 <td valign="top">
 
 *Method*
-
-
 
 </td>
 <td valign="top">
@@ -181,8 +159,6 @@ Specify the HTTP method to retrieve the data from the connector. Find suitable H
 <td valign="top">
 
 *Request Format*
-
-
 
 </td>
 <td valign="top">
@@ -255,8 +231,6 @@ Specify the content format of the incoming message. You can select one of the fo
 
 *Response Format*
 
-
-
 </td>
 <td valign="top">
 
@@ -274,16 +248,12 @@ Specify the content format for the outgoing message. For example, if you select 
 
 *Query Parameters for Resource*
 
-
-
 </td>
 <td valign="top">
 
 Define the value of a variable you want to modify. For example, you have defined a variable `/name/{varname1}{varname2}` in the resource field. Now use the *Query Parameters for Resource* field to define the value for `{varname1}{varname2}` variables. Use commas to separate more than variable such as `varname1=hello world, varname2= hello SAP`.
 
 You can now include queries to the URI to filter for specific resources from the response. For example, define the query parameters with the query data in the format as follows`${header.querydata1};${header.querydata2}`, and use `;` to sperate two distinct queries.
-
-
 
 </td>
 </tr>
@@ -292,14 +262,10 @@ You can now include queries to the URI to filter for specific resources from the
 
 *Page Size*
 
-
-
 </td>
 <td valign="top">
 
 Specify the maximum number of records to be fetched in one page.
-
-
 
 </td>
 </tr>
@@ -307,8 +273,6 @@ Specify the maximum number of records to be fetched in one page.
 <td valign="top">
 
 *Process in Pages*
-
-
 
 </td>
 <td valign="top">
@@ -327,14 +291,10 @@ The message is processed in pages of size defined in the *Page Size* field.
 
 *Timeout \(in ms\)*
 
-
-
 </td>
 <td valign="top">
 
 Specify the maximum amount of time the system waits for a response before terminating the connection.
-
-
 
 </td>
 </tr>

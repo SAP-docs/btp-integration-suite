@@ -44,15 +44,11 @@ The process performs the following steps:
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -60,15 +56,11 @@ The process performs the following steps:
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     productId
-
-
     
     </td>
     </tr>
@@ -76,15 +68,11 @@ The process performs the following steps:
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     XPath
-
-
     
     </td>
     </tr>
@@ -92,15 +80,11 @@ The process performs the following steps:
     <td valign="top">
     
     Data Type
-
-
     
     </td>
     <td valign="top">
     
     java.lang.String
-
-
     
     </td>
     </tr>
@@ -108,15 +92,11 @@ The process performs the following steps:
     <td valign="top">
     
     Value
-
-
     
     </td>
     <td valign="top">
     
     //ProductId
-
-
     
     </td>
     </tr>
@@ -140,15 +120,11 @@ The process performs the following steps:
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -156,15 +132,11 @@ The process performs the following steps:
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     payloadAll
-
-
     
     </td>
     </tr>
@@ -172,15 +144,11 @@ The process performs the following steps:
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     Expression
-
-
     
     </td>
     </tr>
@@ -188,15 +156,11 @@ The process performs the following steps:
     <td valign="top">
     
     Data Type
-
-
     
     </td>
     <td valign="top">
     
     java.lang.String
-
-
     
     </td>
     </tr>
@@ -204,15 +168,11 @@ The process performs the following steps:
     <td valign="top">
     
     Value
-
-
     
     </td>
     <td valign="top">
     
     $\{in.body\}
-
-
     
     </td>
     </tr>
@@ -228,15 +188,11 @@ The process performs the following steps:
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -244,15 +200,11 @@ The process performs the following steps:
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     payloadText
-
-
     
     </td>
     </tr>
@@ -260,15 +212,11 @@ The process performs the following steps:
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     Expression
-
-
     
     </td>
     </tr>
@@ -276,15 +224,11 @@ The process performs the following steps:
     <td valign="top">
     
     Data Type
-
-
     
     </td>
     <td valign="top">
     
     java.lang.String
-
-
     
     </td>
     </tr>
@@ -292,15 +236,11 @@ The process performs the following steps:
     <td valign="top">
     
     Value
-
-
     
     </td>
     <td valign="top">
     
     $\{in.body\}
-
-
     
     </td>
     </tr>
@@ -318,15 +258,11 @@ The process performs the following steps:
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -334,15 +270,11 @@ The process performs the following steps:
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     payloadPrice
-
-
     
     </td>
     </tr>
@@ -350,15 +282,11 @@ The process performs the following steps:
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     Expression
-
-
     
     </td>
     </tr>
@@ -366,15 +294,11 @@ The process performs the following steps:
     <td valign="top">
     
     Data Type
-
-
     
     </td>
     <td valign="top">
     
     java.lang.String
-
-
     
     </td>
     </tr>
@@ -382,15 +306,11 @@ The process performs the following steps:
     <td valign="top">
     
     Value
-
-
     
     </td>
     <td valign="top">
     
     $\{in.body\}
-
-
     
     </td>
     </tr>

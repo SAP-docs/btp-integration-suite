@@ -20,21 +20,15 @@ The integration package contains various integration flows that help you to achi
 
 Learning Target
 
-
-
 </th>
 <th valign="top">
 
 Integration Flows
 
-
-
 </th>
 <th valign="top">
 
 More Information
-
-
 
 </th>
 </tr>
@@ -42,8 +36,6 @@ More Information
 <td valign="top">
 
 Get started with integration flow design, starting with a set of 3 simple integration flows showing basic features of message processing \(with increasing complexity\).
-
-
 
 </td>
 <td valign="top">
@@ -54,14 +46,10 @@ Get started with integration flow design, starting with a set of 3 simple integr
 
 *Modeling Basics - Sender-Initiated Scenario with External Data Source and Receiver*
 
-
-
 </td>
 <td valign="top">
 
 [Getting Started](getting-started-0a80259.md) 
-
-
 
 </td>
 </tr>
@@ -69,8 +57,6 @@ Get started with integration flow design, starting with a set of 3 simple integr
 <td valign="top">
 
 Learn how to access \(and set\) headers and properties.
-
-
 
 </td>
 <td valign="top">
@@ -81,14 +67,10 @@ Learn how to access \(and set\) headers and properties.
 
 *Modeling Basics - Access Header And Properties In XPATH And Conditions*
 
-
-
 </td>
 <td valign="top">
 
 [Access Headers and Properties](access-headers-and-properties-4a03fcd.md) 
-
-
 
 </td>
 </tr>
@@ -97,21 +79,15 @@ Learn how to access \(and set\) headers and properties.
 
 Learn how to design integration scenarios with integration flow-to-integration flow communication.
 
-
-
 </td>
 <td valign="top">
 
 No predefined integration flows are available for this learning target.
 
-
-
 </td>
 <td valign="top">
 
 [Communication between Integration Flows](communication-between-integration-flows-ab5db7b.md) 
-
-
 
 </td>
 </tr>
@@ -120,21 +96,15 @@ No predefined integration flows are available for this learning target.
 
 Learn how to configure adapters.
 
-
-
 </td>
 <td valign="top">
 
 *Modeling Basics - Consume a Public HTTP Service With Query Parameters* \(covers the HTTP receiver adapter\)
 
-
-
 </td>
 <td valign="top">
 
 [Configure Adapters](configure-adapters-d0a6bc8.md) 
-
-
 
 </td>
 </tr>
@@ -143,8 +113,6 @@ Learn how to configure adapters.
 
 Learn how to transport integration content from a source to a target tenant.
 
-
-
 </td>
 <td valign="top">
 
@@ -152,14 +120,10 @@ You find documentation of the transport options and criteria that help you to de
 
 No predefined integration flows are available for this learning target.
 
-
-
 </td>
 <td valign="top">
 
 [Content Transport](content-transport-cb7d2f1.md) 
-
-
 
 </td>
 </tr>
@@ -167,8 +131,6 @@ No predefined integration flows are available for this learning target.
 <td valign="top">
 
 Learn how to implement different scenarios to decouple sender and integration flow processing.
-
-
 
 </td>
 <td valign="top">
@@ -179,14 +141,10 @@ Learn how to implement different scenarios to decouple sender and integration fl
 
 *Modeling Basics – Decouple Flows With Polling Consumer*
 
-
-
 </td>
 <td valign="top">
 
 [Decouple Processing](decouple-processing-3ef92e4.md) 
-
-
 
 </td>
 </tr>
@@ -195,8 +153,6 @@ Learn how to implement different scenarios to decouple sender and integration fl
 
 Learn how to retrieve only delta data from the source system using the current date or the latest date in the payload.
 
-
-
 </td>
 <td valign="top">
 
@@ -204,14 +160,10 @@ Learn how to retrieve only delta data from the source system using the current d
 
 *Modeling Basics - Delta Sync With Timestamp Via Payload*
 
-
-
 </td>
 <td valign="top">
 
 [Delta Synchronization](delta-synchronization-012be7e.md) 
-
-
 
 </td>
 </tr>
@@ -219,8 +171,6 @@ Learn how to retrieve only delta data from the source system using the current d
 <td valign="top">
 
 Learn how to handle exceptions with an exception subprocess.
-
-
 
 </td>
 <td valign="top">
@@ -241,8 +191,6 @@ Learn how to handle exceptions with an exception subprocess.
 
 [Handle Exceptions](handle-exceptions-445a0c6.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -250,21 +198,15 @@ Learn how to handle exceptions with an exception subprocess.
 
 Learn how to use the *Monitor* application to analyze the behavior of an integration flow at runtime.
 
-
-
 </td>
 <td valign="top">
 
 You find a summary of the monitoring features and guidelines how to use them.
 
-
-
 </td>
 <td valign="top">
 
 [Message Monitoring](message-monitoring-8398448.md) 
-
-
 
 </td>
 </tr>
@@ -309,14 +251,10 @@ Message mapping:
 
 *Modeling Basics - Mapping Context*
 
-
-
 </td>
 <td valign="top">
 
 [Modify Content](modify-content-fc0d3c4.md) 
-
-
 
 </td>
 </tr>
@@ -325,8 +263,6 @@ Message mapping:
 
 Learn how to use steps that store the message on the tenant database.
 
-
-
 </td>
 <td valign="top">
 
@@ -334,14 +270,10 @@ Learn how to use steps that store the message on the tenant database.
 
 *Modeling Basics - Usage Of Data Store*
 
-
-
 </td>
 <td valign="top">
 
 [Persistence](persistence-0c93d55.md) 
-
-
 
 </td>
 </tr>
@@ -349,8 +281,6 @@ Learn how to use steps that store the message on the tenant database.
 <td valign="top">
 
 Learn how to transfer files.
-
-
 
 </td>
 <td valign="top">
@@ -365,14 +295,10 @@ Learn how to transfer files.
 
 *File Transfer – Poll and Merge Folder*
 
-
-
 </td>
 <td valign="top">
 
 [Transfer Files](transfer-files-9bda753.md) 
-
-
 
 </td>
 </tr>

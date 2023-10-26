@@ -46,15 +46,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -62,15 +58,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     *Address*
-
-
     
     </td>
     <td valign="top">
     
     Provide the URL from Cloud Connector that connects to your PO system.
-
-
     
     </td>
     </tr>
@@ -80,15 +72,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     *Credential Name*
 
     Credential name is applicable only for Neo environment. For CF, use *User ID* and *Password*.
-
-
     
     </td>
     <td valign="top">
     
     Enter the name of the deployed user credentials.
-
-
     
     </td>
     </tr>
@@ -96,8 +84,6 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     *User ID*
-
-
     
     </td>
     <td valign="top">
@@ -119,15 +105,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     *Password*
-
-
     
     </td>
     <td valign="top">
     
     Add the user's password.
-
-
     
     </td>
     </tr>
@@ -135,15 +117,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     *Confirm Password*
-
-
     
     </td>
     <td valign="top">
     
     Enter the password again.
-
-
     
     </td>
     </tr>
@@ -151,15 +129,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     *Location ID*
-
-
     
     </td>
     <td valign="top">
     
     Add the location ID.
-
-
     
     </td>
     </tr>
@@ -175,15 +149,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -191,15 +161,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     *Address*
-
-
     
     </td>
     <td valign="top">
     
     Provide the URL from Cloud Connector that connects to your PO system.
-
-
     
     </td>
     </tr>
@@ -207,8 +173,6 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     *User ID*
-
-
     
     </td>
     <td valign="top">
@@ -230,15 +194,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     *Password*
-
-
     
     </td>
     <td valign="top">
     
     Add the user's password.
-
-
     
     </td>
     </tr>
@@ -246,15 +206,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     *Confirm Password*
-
-
     
     </td>
     <td valign="top">
     
     Enter the password again.
-
-
     
     </td>
     </tr>
@@ -262,15 +218,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     *Location ID*
-
-
     
     </td>
     <td valign="top">
     
     Add the location ID.
-
-
     
     </td>
     </tr>
@@ -319,15 +271,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Content
-
-
     
     </th>
     </tr>
@@ -335,15 +283,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     `PO_<systemname>_DIR`
-
-
     
     </td>
     </tr>
@@ -351,15 +295,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Type*
-
-
     
     </td>
     <td valign="top">
     
     `HTTP`
-
-
     
     </td>
     </tr>
@@ -367,15 +307,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Description*
-
-
     
     </td>
     <td valign="top">
     
     Add a meaningful description
-
-
     
     </td>
     </tr>
@@ -383,15 +319,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *URL*
-
-
     
     </td>
     <td valign="top">
     
     Add your system URL
-
-
     
     </td>
     </tr>
@@ -399,15 +331,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Proxy Type*
-
-
     
     </td>
     <td valign="top">
     
     `OnPremise`
-
-
     
     </td>
     </tr>
@@ -415,15 +343,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Authentication*
-
-
     
     </td>
     <td valign="top">
     
     `Basic Authentication`
-
-
     
     </td>
     </tr>
@@ -431,15 +355,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Location ID*
-
-
     
     </td>
     <td valign="top">
     
     Add your location ID
-
-
     
     </td>
     </tr>
@@ -447,8 +367,6 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *User*
-
-
     
     </td>
     <td valign="top">
@@ -470,15 +388,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Password*
-
-
     
     </td>
     <td valign="top">
     
     Add the user's password
-
-
     
     </td>
     </tr>
@@ -486,15 +400,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     Additional Properties:
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -502,15 +412,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *systemname*
-
-
     
     </td>
     <td valign="top">
     
     Add the name of the system you created in Migration Assessment
-
-
     
     </td>
     </tr>
@@ -518,15 +424,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *esrdestination*
-
-
     
     </td>
     <td valign="top">
     
     **Optional**: If you use a central ESR and need to create an ESR destination \(see next step\), add the destination's name here
-
-
     
     </td>
     </tr>
@@ -544,15 +446,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Content
-
-
     
     </th>
     </tr>
@@ -560,15 +458,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     `PO_<systemname>_ESR`
-
-
     
     </td>
     </tr>
@@ -576,15 +470,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Type*
-
-
     
     </td>
     <td valign="top">
     
     `HTTP`
-
-
     
     </td>
     </tr>
@@ -592,15 +482,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Description*
-
-
     
     </td>
     <td valign="top">
     
     Add a meaningful description
-
-
     
     </td>
     </tr>
@@ -608,15 +494,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *URL*
-
-
     
     </td>
     <td valign="top">
     
     Add your system URL
-
-
     
     </td>
     </tr>
@@ -624,15 +506,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Proxy Type*
-
-
     
     </td>
     <td valign="top">
     
     `OnPremise`
-
-
     
     </td>
     </tr>
@@ -640,15 +518,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Authentication*
-
-
     
     </td>
     <td valign="top">
     
     `Basic Authentication`
-
-
     
     </td>
     </tr>
@@ -656,15 +530,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Location ID*
-
-
     
     </td>
     <td valign="top">
     
     Add your location ID
-
-
     
     </td>
     </tr>
@@ -672,8 +542,6 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *User*
-
-
     
     </td>
     <td valign="top">
@@ -695,15 +563,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *Password*
-
-
     
     </td>
     <td valign="top">
     
     Add the user's password
-
-
     
     </td>
     </tr>
@@ -711,15 +575,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     Additional Properties:
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -727,15 +587,11 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     <td valign="top">
     
     *systemname*
-
-
     
     </td>
     <td valign="top">
     
     Add the name of the system you created in Migration Assessment
-
-
     
     </td>
     </tr>

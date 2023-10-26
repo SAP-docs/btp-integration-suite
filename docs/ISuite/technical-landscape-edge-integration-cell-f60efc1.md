@@ -62,14 +62,10 @@ Additionally, Edge LM offers an optional monitoring and logging stack to allow c
 
 Component
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -78,14 +74,10 @@ Description
 
 Image Replication Service
 
-
-
 </td>
 <td valign="top">
 
 Used to mirror container images from RBSC to a local Container Registry \(optional\).
-
-
 
 </td>
 </tr>
@@ -94,14 +86,10 @@ Used to mirror container images from RBSC to a local Container Registry \(option
 
 LM Operator
 
-
-
 </td>
 <td valign="top">
 
 Handles the lifecycle of solutions represented as K8s custom resources following the K8s operator pattern.
-
-
 
 </td>
 </tr>
@@ -110,14 +98,10 @@ Handles the lifecycle of solutions represented as K8s custom resources following
 
 Cloud Connector
 
-
-
 </td>
 <td valign="top">
 
 Establishes a secure tunnel between cloud and edge environments.
-
-
 
 </td>
 </tr>
@@ -126,14 +110,10 @@ Establishes a secure tunnel between cloud and edge environments.
 
 Monitoring
 
-
-
 </td>
 <td valign="top">
 
 \(Based on Prometheus\) Pushes system monitoring data to the cloud \(optional\).
-
-
 
 </td>
 </tr>
@@ -142,14 +122,10 @@ Monitoring
 
 Logging
 
-
-
 </td>
 <td valign="top">
 
 \(Based on Fluentd\) Pushes logging data to the cloud \(optional\).
-
-
 
 </td>
 </tr>
@@ -187,14 +163,10 @@ Edge Deploy Controller accesses the platform’s object store where credentials 
 
 Component
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -203,14 +175,10 @@ Description
 
 Istio
 
-
-
 </td>
 <td valign="top">
 
 A service mesh that manages secure traffic flows between services.
-
-
 
 </td>
 </tr>
@@ -219,14 +187,10 @@ A service mesh that manages secure traffic flows between services.
 
 Edge Deploy Controller
 
-
-
 </td>
 <td valign="top">
 
 Handles the content lifecycle.
-
-
 
 </td>
 </tr>
@@ -235,14 +199,10 @@ Handles the content lifecycle.
 
 Edge Security Artifact Controller
 
-
-
 </td>
 <td valign="top">
 
 Manages security material on the edge.
-
-
 
 </td>
 </tr>
@@ -251,14 +211,10 @@ Manages security material on the edge.
 
 Edge Event Controller
 
-
-
 </td>
 <td valign="top">
 
 Distributes events on the edge.
-
-
 
 </td>
 </tr>
@@ -267,14 +223,10 @@ Distributes events on the edge.
 
 API Application
 
-
-
 </td>
 <td valign="top">
 
 Provides APIs for monitoring and operations.
-
-
 
 </td>
 </tr>
@@ -283,14 +235,10 @@ Provides APIs for monitoring and operations.
 
 Policy Engine
 
-
-
 </td>
 <td valign="top">
 
 Enforces policies like security or traffic management on API proxies.
-
-
 
 </td>
 </tr>
@@ -299,14 +247,10 @@ Enforces policies like security or traffic management on API proxies.
 
 Worker
 
-
-
 </td>
 <td valign="top">
 
 Executes integration flow models and services.
-
-
 
 </td>
 </tr>
@@ -315,14 +259,10 @@ Executes integration flow models and services.
 
 Event Broker Operations
 
-
-
 </td>
 <td valign="top">
 
 Manages the local Event Broker.
-
-
 
 </td>
 </tr>
@@ -331,14 +271,10 @@ Manages the local Event Broker.
 
 Monitoring Data Consumer
 
-
-
 </td>
 <td valign="top">
 
 processes and stores monitoring events.
-
-
 
 </td>
 </tr>
@@ -369,14 +305,10 @@ Edge Integration Cell includes an event broker for handling events.
 
 Component
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -385,14 +317,10 @@ Description
 
 Event Broker
 
-
-
 </td>
 <td valign="top">
 
 Used for asynchronous messaging and event integration.
-
-
 
 </td>
 </tr>
@@ -409,14 +337,10 @@ Edge Integration Cell requires external services for managing persistence and po
 
 Component
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -425,14 +349,10 @@ Description
 
 PostgreSQL
 
-
-
 </td>
 <td valign="top">
 
 A relational database system.
-
-
 
 </td>
 </tr>
@@ -441,14 +361,10 @@ A relational database system.
 
 Redis
 
-
-
 </td>
 <td valign="top">
 
 An in-memory data store used for caching.
-
-
 
 </td>
 </tr>

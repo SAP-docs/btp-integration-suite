@@ -33,15 +33,11 @@ For more information on XAdES, see:
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -49,8 +45,6 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Commitment* 
-
-
     
     </td>
     <td valign="top">
@@ -102,15 +96,11 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Description*
-
-
     
     </td>
     <td valign="top">
     
     Enter a free text description of the commitment.
-
-
     
     </td>
     </tr>
@@ -118,15 +108,11 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Documentation Reference*
-
-
     
     </td>
     <td valign="top">
     
     Enter references \(URIs\) to one or more documents where the commitment is described.
-
-
     
     </td>
     </tr>
@@ -134,8 +120,6 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Commitment Qualifier*
-
-
     
     </td>
     <td valign="top">
@@ -143,8 +127,6 @@ For more information on XAdES, see:
     Enter additional qualifying information on the commitment made by the signer.
 
     Enter a text or an XML fragment with the root element *CommitmentTypeQualifier*.
-
-
     
     </td>
     </tr>

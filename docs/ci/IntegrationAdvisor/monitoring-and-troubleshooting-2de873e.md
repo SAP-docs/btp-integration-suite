@@ -17,14 +17,10 @@ You can report an incident or error through the [SAP Support Portal](https://sup
 
 Component Name
 
-
-
 </th>
 <th valign="top">
 
 Component Description
-
-
 
 </th>
 </tr>
@@ -33,14 +29,10 @@ Component Description
 
 LOD-HCI-PI-SUG
 
-
-
 </td>
 <td valign="top">
 
 Integration Advisor: Intelligent Mapping Tool
-
-
 
 </td>
 </tr>

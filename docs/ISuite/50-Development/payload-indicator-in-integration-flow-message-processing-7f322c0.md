@@ -32,15 +32,11 @@ The *Monitor* tab of the Cloud Integration tenant allows you to monitor the mess
     <th valign="top">
 
     Purpose
-
-
     
     </th>
     <th valign="top">
 
     Indicator
-
-
     
     </th>
     </tr>
@@ -48,15 +44,11 @@ The *Monitor* tab of the Cloud Integration tenant allows you to monitor the mess
     <td valign="top">
     
     Production
-
-
     
     </td>
     <td valign="top">
     
     P
-
-
     
     </td>
     </tr>
@@ -64,15 +56,11 @@ The *Monitor* tab of the Cloud Integration tenant allows you to monitor the mess
     <td valign="top">
     
     Development
-
-
     
     </td>
     <td valign="top">
     
     I
-
-
     
     </td>
     </tr>
@@ -80,15 +68,11 @@ The *Monitor* tab of the Cloud Integration tenant allows you to monitor the mess
     <td valign="top">
     
     Test
-
-
     
     </td>
     <td valign="top">
     
     T
-
-
     
     </td>
     </tr>
@@ -102,15 +86,11 @@ The *Monitor* tab of the Cloud Integration tenant allows you to monitor the mess
     <th valign="top">
 
     Purpose
-
-
     
     </th>
     <th valign="top">
 
     Indicator
-
-
     
     </th>
     </tr>
@@ -118,15 +98,11 @@ The *Monitor* tab of the Cloud Integration tenant allows you to monitor the mess
     <td valign="top">
     
     Production
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -134,15 +110,11 @@ The *Monitor* tab of the Cloud Integration tenant allows you to monitor the mess
     <td valign="top">
     
     Development
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -150,15 +122,11 @@ The *Monitor* tab of the Cloud Integration tenant allows you to monitor the mess
     <td valign="top">
     
     Test
-
-
     
     </td>
     <td valign="top">
     
     1
-
-
     
     </td>
     </tr>
@@ -172,15 +140,11 @@ The *Monitor* tab of the Cloud Integration tenant allows you to monitor the mess
     <th valign="top">
 
     Purpose
-
-
     
     </th>
     <th valign="top">
 
     Indicator
-
-
     
     </th>
     </tr>
@@ -188,15 +152,11 @@ The *Monitor* tab of the Cloud Integration tenant allows you to monitor the mess
     <td valign="top">
     
     Production
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -204,15 +164,11 @@ The *Monitor* tab of the Cloud Integration tenant allows you to monitor the mess
     <td valign="top">
     
     Development
-
-
     
     </td>
     <td valign="top">
     
     X
-
-
     
     </td>
     </tr>
@@ -220,15 +176,11 @@ The *Monitor* tab of the Cloud Integration tenant allows you to monitor the mess
     <td valign="top">
     
     Test
-
-
     
     </td>
     <td valign="top">
     
     X
-
-
     
     </td>
     </tr>

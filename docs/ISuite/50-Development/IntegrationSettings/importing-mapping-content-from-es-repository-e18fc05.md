@@ -57,7 +57,7 @@ Here's how you can do it:
 
 1.  Choose *References* \> *Local* tab in the integration flow properties sheet.
 
-    If you don't see the *References* tab, click the empty space in the integration flow editor. You see the *References* tab at the bottom of the integration flow editor.
+    If you can't find the *References* tab, choose the empty space in the integration flow editor. You will find the *References* tab at the end of the integration flow editor.
 
 2.  Choose *Add* and select a supported resource. See the supported sources here: [Manage Resources of an Integration Flow](../manage-resources-of-an-integration-flow-b5968b2.md).
 

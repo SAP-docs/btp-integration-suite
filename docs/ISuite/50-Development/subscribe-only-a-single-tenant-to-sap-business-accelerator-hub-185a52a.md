@@ -17,14 +17,10 @@ There are 2 different content update modes, and which one is configured for an i
 
 Update Mode.
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -32,8 +28,6 @@ Description
 <td valign="top">
 
 Automatic update
-
-
 
 </td>
 <td valign="top">
@@ -44,16 +38,12 @@ No user interaction is required \(by the content consumer\) in order to perform 
 
 According to the settings made by the content publisher, the corresponding artifacts on the customer tenant are marked with the date when the automatic update is applied.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Manual update
-
-
 
 </td>
 <td valign="top">
@@ -63,8 +53,6 @@ As soon as an update has been made available by the content publisher, the syste
 Notified that way, the content consumer can decide whether to perform the update.
 
 To perform the update, the content consumer needs to select the integration artifact and choose the *Update* function.
-
-
 
 </td>
 </tr>

@@ -40,14 +40,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -56,14 +52,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -90,14 +82,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -105,8 +93,6 @@ Description
 <td valign="top">
 
 *Endpoint* 
-
-
 
 </td>
 <td valign="top">
@@ -139,14 +125,10 @@ To access Facebook content, you can choose among the following general options.
 
 *User/Page ID* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the Facebook user from which account the information is to be extracted.
-
-
 
 </td>
 </tr>
@@ -155,14 +137,10 @@ Specifies the Facebook user from which account the information is to be extracte
 
 *Timeout \(ms\)* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies a timeout \(in miliseconds\) after which the connection to te Facebook platform should be terminated.
-
-
 
 </td>
 </tr>
@@ -171,14 +149,10 @@ Specifies a timeout \(in miliseconds\) after which the connection to te Facebook
 
 *Application ID* 
 
-
-
 </td>
 <td valign="top">
 
 An alias by which the consumer \(tenant\) that requests Facebook resources is identified.
-
-
 
 </td>
 </tr>
@@ -187,14 +161,10 @@ An alias by which the consumer \(tenant\) that requests Facebook resources is id
 
 *Application Secret Alias* 
 
-
-
 </td>
 <td valign="top">
 
 An alias by which the shared secret is identified \(that is used to to define the token of the consumer \(tenant\)\).
-
-
 
 </td>
 </tr>
@@ -203,8 +173,6 @@ An alias by which the shared secret is identified \(that is used to to define th
 
 *Access Token* 
 
-
-
 </td>
 <td valign="top">
 
@@ -212,16 +180,12 @@ An alias by which the access token for the Facebook user is identified.
 
 In order to make authorized calls to the Facebook API, your application must first obtain an OAuth access token on behalf of a Facebook user.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type*
-
-
 
 </td>
 <td valign="top">

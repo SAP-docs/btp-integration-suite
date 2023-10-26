@@ -45,14 +45,10 @@ This documentation is structured as follows to serve both groups:
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 Target Group
-
-
 
 </th>
 </tr>
@@ -63,16 +59,12 @@ Target Group
 
 Provides an overview of the concept and the involved components; shows how standard content and extended content work in conjunction.
 
-
-
 </td>
 <td valign="top">
 
 **Content publisher**
 
 **Customer**
-
-
 
 </td>
 </tr>
@@ -103,8 +95,6 @@ Provides a step-by-step description of a simple demo example and covers *both si
 
 This scenario is also feasible as a learning scenario: You should be able to set up and run this example in about an hour.
 
-
-
 </td>
 </tr>
 <tr>
@@ -114,14 +104,10 @@ This scenario is also feasible as a learning scenario: You should be able to set
 
 Shows how a mapping extension is done for a real-life use case \(covering pre-exit and post-exit mappings\).
 
-
-
 </td>
 <td valign="top">
 
 **Customer** 
-
-
 
 </td>
 </tr>

@@ -39,14 +39,10 @@ Assign the following role template:
 
 Resource
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -55,14 +51,10 @@ Description
 
 Certificate
 
-
-
 </td>
 <td valign="top">
 
 Represents a trusted certificate \(keystore entry\) \(see [Managing Keystore Entries](managing-keystore-entries-2dc8942.md) and [X.509 Certificates](../40-RemoteSystems/x-509-certificates-8d38a83.md)\).
-
-
 
 </td>
 </tr>
@@ -71,8 +63,6 @@ Represents a trusted certificate \(keystore entry\) \(see [Managing Keystore Ent
 
 Key Pair
 
-
-
 </td>
 <td valign="top">
 
@@ -80,16 +70,12 @@ Represents a key pair of the tenant keystore \(see [Creating a Key Pair/SSH Key 
 
 You can use the API to create, import, or export a private key pair. You can also create a certificate signing request, or import and export the related certificate chain.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Keystore Entry
-
-
 
 </td>
 <td valign="top">
@@ -110,16 +96,12 @@ Various properties are available for a keystore entry, for example, alias, key t
 
 You can find a user interface to manage keystore entries in the *Keystore* tile of the *Monitor* section under *Manage Security*.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Keystore
-
-
 
 </td>
 <td valign="top">
@@ -144,16 +126,12 @@ You can import a keystore \(containing multiple keystore entries\) or export the
 
 If you upload a whole keystore \(`.jks` file\) to the tenant, the maximum keystore size is limited to 2 MB.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Keystore History
-
-
 
 </td>
 <td valign="top">
@@ -162,16 +140,12 @@ Represents the SAP Key History keystore \(see [Managing the Lifecycle of Keys](m
 
 This keystore contains old \(expired\) keys.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 User Credentials
-
-
 
 </td>
 <td valign="top">
@@ -180,16 +154,12 @@ Represents a *User Credentials* artifact \(see [Deploying a User Credentials Art
 
 To set up outbound connections using basic authentication, you need to deploy a *User Credentials* artifact. The artifact contains a user name and password and, if applicable, other parameters for the user associated with the outbound call.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OAuth2 Client Credentials
-
-
 
 </td>
 <td valign="top">
@@ -198,16 +168,12 @@ Represents an *OAuth2 Client Credentials* artifact \(see [Deploying an OAuth2 Cl
 
 When an OAuth 2.0 client credentials grant is implemented, the client gets access to the protected resources in two steps: After presenting a set of client credentials, the client fetches an access token from the token service. In a subsequent step, the client uses the access token to get access to the protected resources.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Certificate-to-User-Mapping \(Neo environment\)
-
-
 
 </td>
 <td valign="top">
@@ -250,16 +216,12 @@ Represents a *Certificate-to-User-Mapping* artifact required for inbound calls b
 
 Acces Policies
 
-
-
 </td>
 <td valign="top">
 
 Access policies allow you to restrict the access to integration artifacts and their associated data.
 
 See: [Managing Access Policies](managing-access-policies-318d107.md)
-
-
 
 </td>
 </tr>
@@ -268,16 +230,12 @@ See: [Managing Access Policies](managing-access-policies-318d107.md)
 
 Artifact References
 
-
-
 </td>
 <td valign="top">
 
 Artifact references define for which artifacts \(for example, integration flows\) an access policy applies.
 
 See: [Managing Access Policies](managing-access-policies-318d107.md)
-
-
 
 </td>
 </tr>

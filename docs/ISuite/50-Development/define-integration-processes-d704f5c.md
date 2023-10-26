@@ -17,14 +17,10 @@ The following values are displayed in the *General* tab.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -33,14 +29,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 If you want to provide a name for the integration process, enter a name here. The default is set to *Integration Process*.
-
-
 
 </td>
 </tr>
@@ -57,14 +49,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -72,8 +60,6 @@ Description
 <td valign="top">
 
 *Transaction Handling* 
-
-
 
 </td>
 <td valign="top">
@@ -98,8 +84,6 @@ Select the relevant transactional database processing:
 <td valign="top">
 
 *Timeout \(in min\)* \(only if *Required for JDBC* or *Required for JMS* is selected in *Transaction Handling*\)
-
-
 
 </td>
 <td valign="top">

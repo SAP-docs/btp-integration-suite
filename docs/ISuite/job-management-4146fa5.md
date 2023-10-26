@@ -26,14 +26,10 @@ For each of the jobs, the following information is available:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Information
-
-
 
 </th>
 </tr>
@@ -42,14 +38,10 @@ Information
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Name of the system job.
-
-
 
 </td>
 </tr>
@@ -58,16 +50,12 @@ Name of the system job.
 
 *Last Changed By*
 
-
-
 </td>
 <td valign="top">
 
 Information on which user last edited the job.
 
 Per default, `SYSTEM_USER` is set.
-
-
 
 </td>
 </tr>
@@ -76,14 +64,10 @@ Per default, `SYSTEM_USER` is set.
 
 *Last Changed On*
 
-
-
 </td>
 <td valign="top">
 
 Information on when this job was last edited. The format specifies date and time down to minutes.
-
-
 
 </td>
 </tr>
@@ -91,8 +75,6 @@ Information on when this job was last edited. The format specifies date and time
 <td valign="top">
 
 *Last Execution State*
-
-
 
 </td>
 <td valign="top">
@@ -119,14 +101,10 @@ Information on whether or not this job has run successfully.
 
 *Last Execution Time*
 
-
-
 </td>
 <td valign="top">
 
 Information on when this job was last executed. The format specifies date and time down to minutes.
-
-
 
 </td>
 </tr>
@@ -135,14 +113,10 @@ Information on when this job was last executed. The format specifies date and ti
 
 *Next Execution Time*
 
-
-
 </td>
 <td valign="top">
 
 Information on when this job is to be executed next. The format specifies date and time down to minutes. The date is calculated based on defined schedule settings.
-
-
 
 </td>
 </tr>
@@ -161,8 +135,6 @@ Enter the following information for *Parameters*:
 
 Only available for *Cleanup Monitoring Data*
 
-
-
 </td>
 <td valign="top">
 
@@ -178,14 +150,10 @@ Only available for *Cleanup Monitoring Data*
 
 Only available for *Cleanup Trace Entries*
 
-
-
 </td>
 <td valign="top">
 
 *Delete Data Trace From Trace Table Older than \(Minutes\)*: Enter a number representing minutes. The default is set to `60`.
-
-
 
 </td>
 </tr>
@@ -201,8 +169,6 @@ Enter the following information for *Schedule*:
 <td valign="top">
 
 *Select Schedule*
-
-
 
 </td>
 <td valign="top">
@@ -227,8 +193,6 @@ The following options are available:
 
 *Schedule Type*
 
-
-
 </td>
 <td valign="top">
 
@@ -249,8 +213,6 @@ The following options are available:
 *Every* 
 
 \(only available if for *Schedule Time* *Recurrence* is set\)
-
-
 
 </td>
 <td valign="top">
@@ -291,14 +253,10 @@ The following options are available:
 
 \(only available if for *Schedule Time* *Recurrence* is set\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the hours in which this job is to run between `00:00` and `24:00`.
-
-
 
 </td>
 </tr>
@@ -309,14 +267,10 @@ Specify the hours in which this job is to run between `00:00` and `24:00`.
 
 \(only available if for *Schedule Time* *Once* is set\)
 
-
-
 </td>
 <td valign="top">
 
 Define the time when the job is supposed to run.
-
-
 
 </td>
 </tr>
@@ -331,14 +285,10 @@ Depending on your use cases, you can add or delete jobs. To add an additional jo
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter a unique name.
-
-
 
 </td>
 </tr>
@@ -346,8 +296,6 @@ Enter a unique name.
 <td valign="top">
 
 *Actions*
-
-
 
 </td>
 <td valign="top">

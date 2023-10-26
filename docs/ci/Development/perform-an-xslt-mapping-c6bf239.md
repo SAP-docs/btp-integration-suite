@@ -63,22 +63,16 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Header
-
-
     
     </th>
     <th valign="top">
 
     Expression
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -86,15 +80,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     MyMappingSchema
-
-
     
     </td>
     <td valign="top">
     
     `pd:${property.PartnerId}:MyMappingSchema:Binary`
-
-
     
     </td>
     <td valign="top">
@@ -102,8 +92,6 @@ The integration flow performs the following steps:
     Mapping schema used by the partner
 
     With this schema, the relevant binary is stored in the header and can now be used in the subsequent integration flow steps, for example, the XSLT Mapping step.
-
-
     
     </td>
     </tr>
@@ -111,22 +99,16 @@ The integration flow performs the following steps:
     <td valign="top">
     
     MyMapping
-
-
     
     </td>
     <td valign="top">
     
     `pd:${property.PartnerId}:MyMapping:Binary` 
-
-
     
     </td>
     <td valign="top">
     
     Partner-specific mapping
-
-
     
     </td>
     </tr>
@@ -148,22 +130,16 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Header
-
-
     
     </th>
     <th valign="top">
 
     Expression
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -171,22 +147,16 @@ The integration flow performs the following steps:
     <td valign="top">
     
     context
-
-
     
     </td>
     <td valign="top">
     
     `PartnerDirectory-XSLT`
-
-
     
     </td>
     <td valign="top">
     
     Defines the Data Store name. In this case, the name reflects this guideline.
-
-
     
     </td>
     </tr>
@@ -194,22 +164,16 @@ The integration flow performs the following steps:
     <td valign="top">
     
     receiver
-
-
     
     </td>
     <td valign="top">
     
     `Partner ${property.PartnerId}` 
-
-
     
     </td>
     <td valign="top">
     
     Defines the Data Store entry ID. In this case, the value is given by the partner ID from the Partner Directory.
-
-
     
     </td>
     </tr>

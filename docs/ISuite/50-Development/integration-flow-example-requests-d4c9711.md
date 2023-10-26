@@ -25,14 +25,10 @@ To update an Integration flow name, and save as a draft, send the following call
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -41,14 +37,10 @@ Resource Path
 
 PUT
 
-
-
 </td>
 <td valign="top">
 
 /IntegrationDesigntimeArtifacts\(Id='<integration flow ID\>',Version='active'\)
-
-
 
 </td>
 </tr>
@@ -89,14 +81,10 @@ To copy an Integration flow with a new version, send the following call:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -105,14 +93,10 @@ Resource Path
 
 POST
 
-
-
 </td>
 <td valign="top">
 
 /IntegrationDesigntimeArtifactSaveAsVersion?Id='<integration flow ID\>'&SaveAsVersion='<new version\>
-
-
 
 </td>
 </tr>
@@ -138,14 +122,10 @@ To save Integration flow with Id `My_Integration_Flow` to version `1.0.0`, send 
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -154,14 +134,10 @@ Resource Path
 
 PUT
 
-
-
 </td>
 <td valign="top">
 
 /IntegrationDesigntimeArtifacts\(Id='\{Id\}',Version='\{Version\}'\)​/$links​/Configurations\('\{ParameterKey\}'\)
-
-
 
 </td>
 </tr>

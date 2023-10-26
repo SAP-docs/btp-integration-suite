@@ -26,14 +26,10 @@ This section provides a summary of the supported query options.
 
 System Query Option
 
-
-
 </th>
 <th valign="top">
 
 ... Does the Following
-
-
 
 </th>
 </tr>
@@ -42,14 +38,10 @@ System Query Option
 
 `$count` 
 
-
-
 </td>
 <td valign="top">
 
 Returns the number of records according to the resource path section of the URI \(or, if a filter is applied, the number of records matching the filter\).
-
-
 
 </td>
 </tr>
@@ -58,16 +50,12 @@ Returns the number of records according to the resource path section of the URI 
 
 `$expand` 
 
-
-
 </td>
 <td valign="top">
 
 Returns related entities for a given navigation property in line with the entities being retrieved.
 
 For example, adding the query `$expand=AdapterAttributes` to an OData request addressing the `MessagingProcessingLog` entity returns adapter-specific attributes in line with the message processing log data.
-
-
 
 </td>
 </tr>
@@ -76,14 +64,10 @@ For example, adding the query `$expand=AdapterAttributes` to an OData request ad
 
 `$filter` 
 
-
-
 </td>
 <td valign="top">
 
 Returns a subset of records according to the resource path section of the URI\) and to the filter expression.
-
-
 
 </td>
 </tr>
@@ -92,14 +76,10 @@ Returns a subset of records according to the resource path section of the URI\) 
 
 `$inlinecount` 
 
-
-
 </td>
 <td valign="top">
 
 Specifies that the response contains a count of the number of records in the collection of entries identified by the resource path section of the URI.
-
-
 
 </td>
 </tr>
@@ -108,14 +88,10 @@ Specifies that the response contains a count of the number of records in the col
 
 `$metadata` 
 
-
-
 </td>
 <td valign="top">
 
 Returns the data model \(which is the structure of all resources\).
-
-
 
 </td>
 </tr>
@@ -123,8 +99,6 @@ Returns the data model \(which is the structure of all resources\).
 <td valign="top">
 
 `$orderby` 
-
-
 
 </td>
 <td valign="top">
@@ -145,8 +119,6 @@ Specifies an expression for determining which values are used to order the colle
 
 `$select` 
 
-
-
 </td>
 <td valign="top">
 
@@ -164,14 +136,10 @@ Returns a limited set of information on the entities identified by the resource 
 
 `$skip` 
 
-
-
 </td>
 <td valign="top">
 
 Identifies a subset of records \(according to the resource path section of the URI\), where the subset is defined by seeking n entries and selecting only the remaining entries \(starting with entry n+1\).
-
-
 
 </td>
 </tr>
@@ -180,14 +148,10 @@ Identifies a subset of records \(according to the resource path section of the U
 
 `$top` 
 
-
-
 </td>
 <td valign="top">
 
 Identifies a subset of records \(according to the resource path section of the URI\), where the subset is defined by selecting only the first n items of the set.
-
-
 
 </td>
 </tr>
@@ -196,14 +160,10 @@ Identifies a subset of records \(according to the resource path section of the U
 
 `$value` 
 
-
-
 </td>
 <td valign="top">
 
 When applied with the entity RuntimeArtifactErrorInformation, this query returns the error message in JSON format.
-
-
 
 </td>
 </tr>
@@ -259,4 +219,77 @@ Example:
  <link href="https://<tmn>/api/v1/MessageProcessingLogs?$skiptoken=1000" rel="next" />
 </feed>
 ```
+
+
+
+<a name="loio99f4b708b1e4474ebe8af1a653aa4c55__section_wdm_vmp_fzb"/>
+
+## Filtering Message Processing Logs for Custom Header Properties
+
+You can set custom header properties to filter message processing logs. The *Monitor* application shows these custom header properties in the filtering section of the message processing log screen.
+
+When requesting message processing logs \(MPLs\) using the OData API, you can use additional query options to filter MPLs along custom header properties as well as to ge tinformation on the available custom header properties.
+
+You can combine filter for custom properties with other query parameters such like `filter`, `format`, `orderby`, and `top`, for example.
+
+Let's assume that you have MPLs with the custom header property `po_number` which can have different values \(`12345`, for example\).
+
+If you like to return MPLs with given custom header properties and values \(for the example above\), perform one of the following API calls:
+
+`/MessageProcessingLogs?filterCustomHeaderProperties='po_number' eq '12345'`
+
+`/MessageProcessingLogs?$format=json&…&$filter=<different-filters>&filterCustomHeaderProperties='po_number' eq '12345'`
+
+The response contains the MPL details.
+
+Let's assume that you don't know which custom properties and values are available and you like to get a list of all custom header properties used in different MPLs, perform the following API call:
+
+`/MessageProcessingLogCustomHeaderProperties` 
+
+The response contains one or many of the following sections with the custom header properties and their values \(for example\):
+
+```
+<content type="application/xml">
+            <m:properties>
+                <d:Id>1234</d:Id>
+                <d:Name>po_number</d:Name>
+                <d:Value>12345</d:Value>
+            </m:properties>
+        </content>
+
+```
+
+You can use following request to get information about MPLs using a specific custom header property:
+
+`/MessageProcessingLogCustomHeaderProperties('1234')/Log`g
+
+To return information about a specific custom header property, perform the following call:
+
+`/MessageProcessingLogCustomHeaderProperties?$filter=Name eq 'custom_property_name' and Value eq 'custom_Property_value'`
+
+For example, assume that there are MPLs with the custom header property `po_number` and you perform the following API call:
+
+`/MessageProcessingLogCustomHeaderProperties?$filter=Name eq 'po_number' and Value eq '12345'` 
+
+The response contains the following section with the custom header property, its value, and an Id:
+
+```
+<content type="application/xml">
+            <m:properties>
+                <d:Id>1234</d:Id>
+                <d:Name>po_number</d:Name>
+                <d:Value>12345</d:Value>
+            </m:properties>
+        </content>
+
+```
+
+Now that you know the custom header property Id, you can use following request to get information about MPLs associated with the custom header property with this Id:
+
+`/MessageProcessingLogCustomHeaderProperties('1234')/Log`
+
+The response contains the MPL details.
+
+> ### Tip:  
+> For more information on how to set custom header properties, see [Use Custom Header Properties to Search for Message Processing Logs](use-custom-header-properties-to-search-for-message-processing-logs-d4b5839.md).
 

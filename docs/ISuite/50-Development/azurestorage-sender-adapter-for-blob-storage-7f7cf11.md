@@ -27,14 +27,10 @@ Select the *General* tab to access the following parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Enter the name of the channel.
 
 *Direction* 
 
-
-
 </td>
 <td valign="top">
 
 Sender
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Sender
 
 *System* 
 
-
-
 </td>
 <td valign="top">
 
 Sender
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ Sender
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 AzureStorage
-
-
 
 </td>
 </tr>
@@ -107,14 +87,10 @@ AzureStorage
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 HTTPS
-
-
 
 </td>
 </tr>
@@ -123,16 +99,12 @@ HTTPS
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 *BLOB Storage*
 
 Shows the message protocol selected when creating the channel.
-
-
 
 </td>
 </tr>
@@ -151,14 +123,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -166,8 +134,6 @@ Description
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -190,14 +156,10 @@ Select authentication option to use to connect to Azure Storage server. There ar
 
 \(Only if for *Authentication* the option *SAS Token* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Alias name of token used to communicate with Azure Storage.
-
-
 
 </td>
 </tr>
@@ -208,14 +170,10 @@ Alias name of token used to communicate with Azure Storage.
 
 \(Only if for *Authentication* the option *Shared Access Key* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Alias name of key used to communicate with Azure Storage.
-
-
 
 </td>
 </tr>
@@ -224,16 +182,12 @@ Alias name of key used to communicate with Azure Storage.
 
 *Timeout* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum waiting time, in milliseconds, to contact Azure Storage while establishing a connection or performing a read operation \(default value: 60000\).
 
 Setting a timeout is mandatory for both token and key aliases.
-
-
 
 </td>
 </tr>
@@ -250,14 +204,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -265,8 +215,6 @@ Description
 <td valign="top">
 
 *Storage Account Name* 
-
-
 
 </td>
 <td valign="top">
@@ -284,8 +232,6 @@ Enter name of the storage account.
 <td valign="top">
 
 *Container name* 
-
-
 
 </td>
 <td valign="top">
@@ -310,16 +256,12 @@ Enter name of the container.
 
 *Blob Path* 
 
-
-
 </td>
 <td valign="top">
 
 Enter blob path along with the blob name.
 
 Example: `employee_details.txt` 
-
-
 
 </td>
 </tr>
@@ -328,16 +270,12 @@ Example: `employee_details.txt`
 
 *Body Size \(in MB\)* 
 
-
-
 </td>
 <td valign="top">
 
-Enter blob maximum body size \(in MB\). By default, it is 40. Only positive numbers are allowed..
+Enter blob maximum body size \(in MB\). By default, it is 40. Only positive numbers are allowed.
 
 Setting a timeout is mandatory for both token and key aliases.
-
-
 
 </td>
 </tr>
@@ -345,8 +283,6 @@ Setting a timeout is mandatory for both token and key aliases.
 <td valign="top">
 
 *Post-Processing* 
-
-
 
 </td>
 <td valign="top">
@@ -384,14 +320,10 @@ Select the action to be performed after successful processing of the file:
 
 \(Only if for *Post-Processing* the option *Keep Blob and Mark as Processed in Idempotent Repository* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Enter the time \(in days\), for which blob name is to be stored in idempotent repository to avoid processing again within the given duration \(default: 90 days\).
-
-
 
 </td>
 </tr>
@@ -401,8 +333,6 @@ Enter the time \(in days\), for which blob name is to be stored in idempotent re
 *Archive Directory*
 
 \(Only if for *Post-Processing* the option *Move Blob* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -459,14 +389,10 @@ Using this option, if post-processing fails, the message gets *Failed* status. O
 
 *Key* 
 
-
-
 </td>
 <td valign="top">
 
 Select a request parameter.
-
-
 
 </td>
 </tr>
@@ -475,14 +401,10 @@ Select a request parameter.
 
 *Value* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the value of the argument. You can also enter`${header.headername}` or `${property.propertyname}` to dynamically read the value from the message exchange.
-
-
 
 </td>
 </tr>
@@ -490,7 +412,7 @@ Specify the value of the argument. You can also enter`${header.headername}` or `
 
 
 
-Select the *Scheduler* tab and provide values in the fields as follows. The scheduler helps you to download the blobs on regular intervals as per the timer
+Select the *Scheduler* tab and provide values in the fields as follows. The scheduler helps you to download the blobs on regular intervals as per the timer:
 
 **Scheduler**
 
@@ -501,14 +423,10 @@ Select the *Scheduler* tab and provide values in the fields as follows. The sche
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -516,8 +434,6 @@ Description
 <td valign="top">
 
 *Schedule on Day* 
-
-
 
 </td>
 <td valign="top">
@@ -541,8 +457,6 @@ There are the following options:
 <td valign="top">
 
 *Schedule to Recur* 
-
-
 
 </td>
 <td valign="top">

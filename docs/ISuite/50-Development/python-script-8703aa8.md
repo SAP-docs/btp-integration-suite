@@ -50,21 +50,15 @@ An example payload for the policy is as follows:
 
 **Attribute Name**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 </tr>
@@ -73,21 +67,15 @@ Required
 
 `timeLimit`
 
-
-
 </td>
 <td valign="top">
 
 Specifies the maximum time \(in milliseconds\) that the script is permitted to execute.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -95,8 +83,6 @@ Yes
 <td valign="top">
 
 `IncludeURL`
-
-
 
 </td>
 <td valign="top">
@@ -110,14 +96,10 @@ The name of the dependency python file must be of type ‘String’.
 
 You can include multiple dependency python files with additional `IncludeURL` attributes. The scripts are evaluated in the order in which they are listed in the policy.
 
-
-
 </td>
 <td valign="top">
 
 Optional
-
-
 
 </td>
 </tr>
@@ -125,8 +107,6 @@ Optional
 <td valign="top">
 
 `ResourceURL`
-
-
 
 </td>
 <td valign="top">
@@ -145,8 +125,6 @@ The name of the primary python file must be of type ‘String’.
 
 Yes
 
-
-
 </td>
 </tr>
 </table>
@@ -160,14 +138,10 @@ During the policy execution, the following errors can occur:
 
 **Attribute Name**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -176,14 +150,10 @@ During the policy execution, the following errors can occur:
 
 `InvalidResourceUrlFormat`
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the format of the resource URL specified within the `<ResourceURL>` or the `<IncludeURL>` attribute of the Python Script policy is invalid, resulting in the failure of API proxy deployment.
-
-
 
 </td>
 </tr>
@@ -192,14 +162,10 @@ This error occurs when the format of the resource URL specified within the `<Res
 
 `InvalidResourceUrlReference`
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the `<ResourceURL>` or the `<IncludeURL>` attributes refer to a python file that doesn't exist, resulting in failure of API proxy deployment.
-
-
 
 </td>
 </tr>
@@ -208,14 +174,10 @@ This error occurs when the `<ResourceURL>` or the `<IncludeURL>` attributes refe
 
 `NoResourceForURL`
 
-
-
 </td>
 <td valign="top">
 
 The `<ResourceURL>` and `<IncludeURL>` attributes refer to a Python Script file that doesn't exist.
-
-
 
 </td>
 </tr>

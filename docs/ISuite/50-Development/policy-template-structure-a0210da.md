@@ -13,21 +13,15 @@ During an import or export of a policy template, the policy template follows a p
 
 Folder Name
 
-
-
 </th>
 <th valign="top">
 
 Path
 
-
-
 </th>
 <th valign="top">
 
 Contents
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Contents
 
 Policy Template Container
 
-
-
 </td>
 <td valign="top">
 
 \\PolicyTemplateContainer
 
-
-
 </td>
 <td valign="top">
 
 Root folder that contains the FileResource and Policy information.
-
-
 
 </td>
 </tr>
@@ -59,14 +47,10 @@ Root folder that contains the FileResource and Policy information.
 
 FileResource
 
-
-
 </td>
 <td valign="top">
 
 \\PolicyTemplateContainer\\FileResource
-
-
 
 </td>
 <td valign="top">
@@ -86,21 +70,15 @@ Lists all the scripts attached to the policy. Only Java, Python, and XSL Scripts
 
 Policy
 
-
-
 </td>
 <td valign="top">
 
 \\PolicyTemplateContainer\\Policy
 
-
-
 </td>
 <td valign="top">
 
 Contains a list of all available policies. Each policy is available as a separate file with the naming convention `<Policy name>.xml`.
-
-
 
 </td>
 </tr>
@@ -109,21 +87,15 @@ Contains a list of all available policies. Each policy is available as a separat
 
 `<policytemplatename>.xml` 
 
-
-
 </td>
 <td valign="top">
 
 \\PolicyTemplateContainer\\`<policytemplate>.xml` 
 
-
-
 </td>
 <td valign="top">
 
 Contains the header information of all the available policies.
-
-
 
 </td>
 </tr>

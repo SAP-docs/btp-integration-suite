@@ -28,14 +28,10 @@ You've different options to implement error handling for such a scenario:
 
 Error Handling Option
 
-
-
 </th>
 <th valign="top">
 
 When to Use
-
-
 
 </th>
 </tr>
@@ -46,16 +42,12 @@ Option 1
 
 If an exception occurs in the child integration flow, processing of the parent integration flow is stopped.
 
-
-
 </td>
 <td valign="top">
 
 You don't need to retrieve detailed information about the cause of the exception when monitoring the scenario.
 
 It's expected that message processing always fails if an exception occurs in one dependent child integration flow.
-
-
 
 </td>
 </tr>
@@ -67,8 +59,6 @@ Option 2
 If an exception occurs in the child integration flow, the parent integration flow continues message processing in a defined way.
 
 Furthermore, the integration scenario is designed in such a way that message processing is adapted to the exception situation at runtime: In such a case, the message is processed in a different way than in the success case.
-
-
 
 </td>
 <td valign="top">

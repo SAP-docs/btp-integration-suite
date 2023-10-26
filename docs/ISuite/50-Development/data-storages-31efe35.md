@@ -22,14 +22,10 @@ Cloud Integration comes with the following data storage features.
 
 Physical Database
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -37,8 +33,6 @@ Description
 <td valign="top">
 
 Main memory \(only available during the processing of an integration flow\)
-
-
 
 </td>
 <td valign="top">
@@ -74,16 +68,12 @@ Cloud Integration can transfer message headers and the message body to remote co
 
 See [About Headers and Exchange Properties](about-headers-and-exchange-properties-0974c4f.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Tenant database
-
-
 
 </td>
 <td valign="top">
@@ -122,8 +112,6 @@ You can store the following data in the tenant database:
 <td valign="top">
 
 JMS queues
-
-
 
 </td>
 <td valign="top">

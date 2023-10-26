@@ -16,7 +16,7 @@ The Microsoft SharePoint sender adapter connects an SAP Integration Suite tenant
 
 Once you've created a sender channel and selected the **Microsoft SharePoint** sender adapter, you can configure the following attributes.
 
-Select the *General* tab to access the following parameters.
+Select the *General* tab to access the parameters described in the following table.
 
 **General**
 
@@ -27,14 +27,10 @@ Select the *General* tab to access the following parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the Microsoft SharePoint Storage adapter.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Enter the name of the Microsoft SharePoint Storage adapter.
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 Microsoft SharePoint
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Microsoft SharePoint
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 HTTP/HTTPS
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ HTTP/HTTPS
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 REST
-
-
 
 </td>
 </tr>
@@ -107,20 +87,16 @@ REST
 
 *Description* 
 
-
-
 </td>
 <td valign="top">
 
 Add useful information to describe the adapter.
 
-
-
 </td>
 </tr>
 </table>
 
-Select the *Connection* tab and provide values in the fields as follows.
+Select the *Connection* tab and provide values in the fields as described in the following table.
 
 **Connection**
 
@@ -131,14 +107,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -147,14 +119,10 @@ Description
 
 *Site Host Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the hostname of the Microsoft SharePoint server, for example, `sap-my.sharepoint.com/`.
-
-
 
 </td>
 </tr>
@@ -163,14 +131,10 @@ Enter the hostname of the Microsoft SharePoint server, for example, `sap-my.shar
 
 *Server Relative Path* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the path for site as ‘site type/site name’, for example, `/teams/MicrosoftSharePointAdapter`.
-
-
 
 </td>
 </tr>
@@ -178,8 +142,6 @@ Enter the path for site as ‘site type/site name’, for example, `/teams/Micro
 <td valign="top">
 
 *Authentication Type* 
-
-
 
 </td>
 <td valign="top">
@@ -200,14 +162,10 @@ Select the authentication type. Supported types are:
 
 *Credential Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the alias name of the deployed User Credentials artifact.
-
-
 
 </td>
 </tr>
@@ -216,14 +174,10 @@ Enter the alias name of the deployed User Credentials artifact.
 
 *Proxy Type* 
 
-
-
 </td>
 <td valign="top">
 
 Select *Internet* as proxy type to connect to the SharePoint Cloud server.
-
-
 
 </td>
 </tr>
@@ -232,20 +186,16 @@ Select *Internet* as proxy type to connect to the SharePoint Cloud server.
 
 *Timeout \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the maximum waiting time, in milliseconds, to contact the Microsoft SharePoint server while establishing a connection or performing a read operation. If you leave it blank, the timeout value is set to 60000 by default.
 
-
-
 </td>
 </tr>
 </table>
 
-Select the *Processing* tab and provide values in the fields as follows.
+Select the *Processing* tab and provide values in the fields as described in the following table.
 
 **Processing**
 
@@ -256,14 +206,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -272,14 +218,10 @@ Description
 
 *Directory* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the directory path of the source file, for example, */mydirectory/mysubdirectory*.
-
-
 
 </td>
 </tr>
@@ -287,8 +229,6 @@ Enter the directory path of the source file, for example, */mydirectory/mysubdir
 <td valign="top">
 
 *File Name* 
-
-
 
 </td>
 <td valign="top">
@@ -318,8 +258,6 @@ Enter name of the source file to be downloaded. If you leave the field blank, al
 
 *Body Size \(in MB\)* 
 
-
-
 </td>
 <td valign="top">
 
@@ -327,16 +265,12 @@ Enter the maximum body size in MB. 40 MB is the default value. Only positive num
 
 If the incoming file size is greater than the configured value, then the adapter doesn't execute your integration scenario and the file is ignored for post processing.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Post Processing* 
-
-
 
 </td>
 <td valign="top">
@@ -360,8 +294,6 @@ Post-processing operations allow you to specify how to handle the files after pr
 
 Only successfully processed messages can be post-processed. If message processing fails, the Post Processing settings aren't effective.
 
-
-
 </td>
 </tr>
 <tr>
@@ -369,14 +301,10 @@ Only successfully processed messages can be post-processed. If message processin
 
 *Raise Exception on Post-Processing Failure* 
 
-
-
 </td>
 <td valign="top">
 
 If you enable this check box, upon post-processing operation failure, the adapter throws exception and logs the failure information in the message processing logs.
-
-
 
 </td>
 </tr>
@@ -387,14 +315,10 @@ If you enable this check box, upon post-processing operation failure, the adapte
 
 Only if for *Post Processing* you select *Keep File and Mark as Processed in Idempotent Repository*.
 
-
-
 </td>
 <td valign="top">
 
 Enter the number of days for which the file must be stored in idempotent repository for duplicate check.
-
-
 
 </td>
 </tr>
@@ -405,20 +329,16 @@ Enter the number of days for which the file must be stored in idempotent reposit
 
 Only if for *Post Processing* you select *Move File*.
 
-
-
 </td>
 <td valign="top">
 
 Specify the directory and a file name to use when moving the file into an archive directory after processing. The format must be in the following format: *<archive-directory/folder-name/filename\>*.
 
-
-
 </td>
 </tr>
 </table>
 
-Select the *Scheduler* tab and provide values in the fields as follows.
+Select the *Scheduler* tab and provide values in the fields as specified in the following table.
 
 
 <table>
@@ -427,21 +347,15 @@ Select the *Scheduler* tab and provide values in the fields as follows.
 
 Option
 
-
-
 </th>
 <th valign="top">
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -454,21 +368,15 @@ Select if you want the message processing to be triggered on a specific date and
 
 The fields *On Date* and *Time Zone* are mandatory. Choose between *On Time* and *Every* based on your use case.
 
-
-
 </td>
 <td valign="top">
 
 On Date
 
-
-
 </td>
 <td valign="top">
 
 Select the date on which you want the message processing to be triggered.
-
-
 
 </td>
 </tr>
@@ -477,14 +385,10 @@ Select the date on which you want the message processing to be triggered.
 
 On Time
 
-
-
 </td>
 <td valign="top">
 
 Select the time at which you want the message processing to be triggered.
-
-
 
 </td>
 </tr>
@@ -493,14 +397,10 @@ Select the time at which you want the message processing to be triggered.
 
 Every
 
-
-
 </td>
 <td valign="top">
 
 Select this option if you want to trigger message processing repeatedly in a specific time interval.
-
-
 
 </td>
 </tr>
@@ -509,14 +409,10 @@ Select this option if you want to trigger message processing repeatedly in a spe
 
 Time Zone
 
-
-
 </td>
 <td valign="top">
 
 The time zone that you want to be used as reference for the configured date and time.
-
-
 
 </td>
 </tr>
@@ -529,14 +425,10 @@ Select if you want to repeatedly trigger message processing according to a speci
 
 The fields *Schedule to Recur* and *Time Zone* are mandatory. Choose between *On Time* and *Every* based on your use case.
 
-
-
 </td>
 <td valign="top">
 
 Schedule to Recur
-
-
 
 </td>
 <td valign="top">
@@ -558,14 +450,10 @@ Accordingly, if you choose
 
 On Time
 
-
-
 </td>
 <td valign="top">
 
 Select the time at which you want the message processing to be triggered.
-
-
 
 </td>
 </tr>
@@ -574,14 +462,10 @@ Select the time at which you want the message processing to be triggered.
 
 Every
 
-
-
 </td>
 <td valign="top">
 
 Select this option if you want to trigger message processing repeatedly in a specific time interval.
-
-
 
 </td>
 </tr>
@@ -590,14 +474,10 @@ Select this option if you want to trigger message processing repeatedly in a spe
 
 Time Zone
 
-
-
 </td>
 <td valign="top">
 
 The time zone that you want to be used as reference for the configured date and time.
-
-
 
 </td>
 </tr>

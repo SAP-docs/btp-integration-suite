@@ -27,14 +27,10 @@ A list of number ranges is displayed in a table. For each artifact, the followin
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Displays name of the artifact
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Displays name of the artifact
 
 *Minimum Value* 
 
-
-
 </td>
 <td valign="top">
 
 Minimum value of the artifact should be greater than or equal to 0.
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Minimum value of the artifact should be greater than or equal to 0.
 
 *Maximum Value* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum value of the artifact should be less than 15 digit.
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ Maximum value of the artifact should be less than 15 digit.
 
 *Next Value* 
 
-
-
 </td>
 <td valign="top">
 
 Displays a value that can be used the next time you invoke this artifact.
-
-
 
 </td>
 </tr>
@@ -106,8 +86,6 @@ Displays a value that can be used the next time you invoke this artifact.
 <td valign="top">
 
 *Field Length* 
-
-
 
 </td>
 <td valign="top">
@@ -120,8 +98,6 @@ If the value of this attribute is 0 then the value of **current value** attribut
 
 The maximum value allowed for this attribute is 99.
 
-
-
 </td>
 </tr>
 <tr>
@@ -129,14 +105,10 @@ The maximum value allowed for this attribute is 99.
 
 *Rotate* 
 
-
-
 </td>
 <td valign="top">
 
 If this attribute is set and the number range reaches specified **maximum value**, then the **current value** resets to specified **minimum value**.
-
-
 
 </td>
 </tr>
@@ -145,14 +117,10 @@ If this attribute is set and the number range reaches specified **maximum value*
 
 *Deployed By* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the user id of the user who deployed the artifact.
-
-
 
 </td>
 </tr>
@@ -161,14 +129,10 @@ Displays the user id of the user who deployed the artifact.
 
 *Deployed On* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the time when the artifact was deployed.
-
-
 
 </td>
 </tr>

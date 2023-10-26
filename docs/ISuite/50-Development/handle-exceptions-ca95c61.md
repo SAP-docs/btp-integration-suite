@@ -23,14 +23,10 @@ You can implement 3 variants - using different types of end events:
 
 Exception Subprocess Ending with ...
 
-
-
 </th>
 <th valign="top">
 
 Use Case and Exception Handling
-
-
 
 </th>
 </tr>
@@ -39,16 +35,12 @@ Use Case and Exception Handling
 
 End event
 
-
-
 </td>
 <td valign="top">
 
 Use this variant if you want to reply with a custom error message.
 
 In this case, the message is set to status *Completed*. You've the option to define a custom status that allows you to distinguish this error situation from successfully processed messages.
-
-
 
 </td>
 </tr>
@@ -57,16 +49,12 @@ In this case, the message is set to status *Completed*. You've the option to def
 
 Error end event
 
-
-
 </td>
 <td valign="top">
 
 Use this variant to catch an error in an exception subprocess to add additional information to the message processing log.
 
 In this use case, the message status is set to *Failed*.
-
-
 
 </td>
 </tr>
@@ -75,16 +63,12 @@ In this use case, the message status is set to *Failed*.
 
 Escalation end event
 
-
-
 </td>
 <td valign="top">
 
 Use this variant to catch an error in an exception subprocess to add additional information to the message processing log.
 
 In this use case, the message status is set to *Escalated* that allows you to search for messages based on the dedicated Escalated message status.
-
-
 
 </td>
 </tr>

@@ -33,21 +33,15 @@ The level of usage is indicated by the bar height and color \(from green for low
 
 Level of Usage
 
-
-
 </th>
 <th valign="top">
 
 Bar Color
 
-
-
 </th>
 <th valign="top">
 
 Database Connection Usage
-
-
 
 </th>
 </tr>
@@ -56,21 +50,15 @@ Database Connection Usage
 
 Critical
 
-
-
 </td>
 <td valign="top">
 
 Red
 
-
-
 </td>
 <td valign="top">
 
 More than 90%
-
-
 
 </td>
 </tr>
@@ -79,21 +67,15 @@ More than 90%
 
 Warning
 
-
-
 </td>
 <td valign="top">
 
 Orange
 
-
-
 </td>
 <td valign="top">
 
 Between 70% and 90%
-
-
 
 </td>
 </tr>
@@ -102,21 +84,15 @@ Between 70% and 90%
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 Green
 
-
-
 </td>
 <td valign="top">
 
 Less than 70%
-
-
 
 </td>
 </tr>
@@ -164,14 +140,10 @@ On the *Top Data Stores* screen, you can find more details in the following sect
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -179,8 +151,6 @@ Description
 <td valign="top">
 
 *Top Local Data Stores by Usage* 
-
-
 
 </td>
 <td valign="top">
@@ -191,16 +161,12 @@ Click a cell to display more context information for the selected integration fl
 
 See: [Inspect Top Local Data Stores by Usage](inspect-top-local-data-stores-by-usage-55670e6.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Top Global Data Stores by Usage* 
-
-
 
 </td>
 <td valign="top">
@@ -210,8 +176,6 @@ Shows those global data stores that are identified as top consumers of the tenan
 Click a cell to display more context information for the selected integration flow \(result filtered according to the setting of the *Time* parameter\):
 
 See: [Inspect Top Global Data Stores by Usage](inspect-top-global-data-stores-by-usage-00431bf.md)
-
-
 
 </td>
 </tr>

@@ -58,14 +58,10 @@ For the delivery of messages received from a sender system Cloud Integration sup
 
 Quality of Service
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -73,8 +69,6 @@ Description
 <td valign="top">
 
 At least once
-
-
 
 </td>
 <td valign="top">
@@ -95,14 +89,10 @@ If the same message is received multiple times from a sender, all of them are pr
 
 Best effort
 
-
-
 </td>
 <td valign="top">
 
 Inbound message is sent synchronously and an immediate response is given back to the sender system.
-
-
 
 </td>
 </tr>
@@ -110,8 +100,6 @@ Inbound message is sent synchronously and an immediate response is given back to
 <td valign="top">
 
 Exactly once
-
-
 
 </td>
 <td valign="top">

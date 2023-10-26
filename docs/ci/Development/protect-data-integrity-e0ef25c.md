@@ -43,22 +43,16 @@ The integration flow performs the following steps.
     <th valign="top">
 
     Name
-
-
     
     </th>
     <th valign="top">
 
     Type
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -66,22 +60,16 @@ The integration flow performs the following steps.
     <td valign="top">
     
     ExpectedHash
-
-
     
     </td>
     <td valign="top">
     
     Constant
-
-
     
     </td>
     <td valign="top">
     
     CBUArpOZ6Wfota6iRcAPlk3YW14=
-
-
     
     </td>
     </tr>
@@ -115,15 +103,11 @@ The integration flow performs the following steps.
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -131,15 +115,11 @@ The integration flow performs the following steps.
     <td valign="top">
     
     Filter \(XPath\)
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -147,15 +127,11 @@ The integration flow performs the following steps.
     <td valign="top">
     
     Canonicalization Method
-
-
     
     </td>
     <td valign="top">
     
     Canonical XML Version 1.0
-
-
     
     </td>
     </tr>
@@ -163,15 +139,11 @@ The integration flow performs the following steps.
     <td valign="top">
     
     Digest Algorithm
-
-
     
     </td>
     <td valign="top">
     
     SHA1
-
-
     
     </td>
     </tr>
@@ -179,15 +151,11 @@ The integration flow performs the following steps.
     <td valign="top">
     
     Target Header
-
-
     
     </td>
     <td valign="top">
     
     SAPMessageDigest
-
-
     
     </td>
     </tr>

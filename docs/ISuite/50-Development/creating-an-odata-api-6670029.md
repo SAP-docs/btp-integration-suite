@@ -17,7 +17,7 @@ Use this procedure to create an integration package that contains an OData API a
 
 ## Procedure
 
-1.  Choose *Design* \> *Integrations*.
+1.  Choose *Design* \> *Integrations and APIs*.
 
 2.  Choose *Create*.
 
@@ -43,15 +43,11 @@ Use this procedure to create an integration package that contains an OData API a
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -59,15 +55,11 @@ Use this procedure to create an integration package that contains an OData API a
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the OData API.
-
-
     
     </td>
     </tr>
@@ -75,15 +67,11 @@ Use this procedure to create an integration package that contains an OData API a
     <td valign="top">
     
     Namespace \(for Create Using Wizard\)
-
-
     
     </td>
     <td valign="top">
     
     Logical grouping of the OData API. Default is *SAP*.
-
-
     
     </td>
     </tr>
@@ -91,15 +79,11 @@ Use this procedure to create an integration package that contains an OData API a
     <td valign="top">
     
     ID \(for Create Using Wizard\)
-
-
     
     </td>
     <td valign="top">
     
     Uniquely identifies the OData API and is a combination of the name and namespace of the OData API in the format <name\>\_<namespace\>\_1. This field isn’t editable.
-
-
     
     </td>
     </tr>
@@ -107,15 +91,11 @@ Use this procedure to create an integration package that contains an OData API a
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     Description of the OData API and its purpose.
-
-
     
     </td>
     </tr>
@@ -123,15 +103,11 @@ Use this procedure to create an integration package that contains an OData API a
     <td valign="top">
     
     OData API \(only for uploading the artifact\)
-
-
     
     </td>
     <td valign="top">
     
     Upload a ZIP file containing the OData API artifact.
-
-
     
     </td>
     </tr>
@@ -139,15 +115,11 @@ Use this procedure to create an integration package that contains an OData API a
     <td valign="top">
     
     OData Version
-
-
     
     </td>
     <td valign="top">
     
     Currently, OData V2 is the only supported OData version.
-
-
     
     </td>
     </tr>

@@ -35,15 +35,11 @@ Enable an application in your subaccount in the Neo environment to access an API
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -51,15 +47,11 @@ Enable an application in your subaccount in the Neo environment to access an API
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Technical name of the destination. It can be used later on to get an instance of that destination. It must be unique for the global account.
-
-
     
     </td>
     </tr>
@@ -67,15 +59,11 @@ Enable an application in your subaccount in the Neo environment to access an API
     <td valign="top">
     
     URL
-
-
     
     </td>
     <td valign="top">
     
     Enter the API Proxy URL for the proxy you want to call.
-
-
     
     </td>
     </tr>
@@ -83,15 +71,11 @@ Enable an application in your subaccount in the Neo environment to access an API
     <td valign="top">
     
     Authentication
-
-
     
     </td>
     <td valign="top">
     
     OAuth2SAMLBearerAssertion
-
-
     
     </td>
     </tr>
@@ -99,15 +83,11 @@ Enable an application in your subaccount in the Neo environment to access an API
     <td valign="top">
     
     Proxy Type
-
-
     
     </td>
     <td valign="top">
     
     Internet
-
-
     
     </td>
     </tr>
@@ -115,8 +95,6 @@ Enable an application in your subaccount in the Neo environment to access an API
     <td valign="top">
     
     Audience
-
-
     
     </td>
     <td valign="top">
@@ -135,8 +113,6 @@ Enable an application in your subaccount in the Neo environment to access an API
     Example of audience/entityID:
 
     demo.aws-live-us10
-
-
     
     </td>
     </tr>
@@ -144,15 +120,11 @@ Enable an application in your subaccount in the Neo environment to access an API
     <td valign="top">
     
     Client Key
-
-
     
     </td>
     <td valign="top">
     
     Enter the *clientId* obtained from the *Service Key* in the created service instance using on-premise connectivity plan.
-
-
     
     </td>
     </tr>
@@ -160,8 +132,6 @@ Enable an application in your subaccount in the Neo environment to access an API
     <td valign="top">
     
     Token Service URL
-
-
     
     </td>
     <td valign="top">
@@ -185,15 +155,11 @@ Enable an application in your subaccount in the Neo environment to access an API
     <td valign="top">
     
     Token Service Password
-
-
     
     </td>
     <td valign="top">
     
     Enter the *clientSecret* obtained from the *Service Key* in the created service instance using on-premise connectivity plan.
-
-
     
     </td>
     </tr>
@@ -201,15 +167,11 @@ Enable an application in your subaccount in the Neo environment to access an API
     <td valign="top">
     
     System User
-
-
     
     </td>
     <td valign="top">
     
     Empty
-
-
     
     </td>
     </tr>
@@ -217,8 +179,6 @@ Enable an application in your subaccount in the Neo environment to access an API
     <td valign="top" colspan="2">
     
     If you have not generated the client credentials \(clientId, ClientSecret, tokenUrl and application url\) yet, see [On-Premise Connectivity Plan](../on-premise-connectivity-plan-2fc7a5b.md)
-
-
     
     </td>
     </tr>

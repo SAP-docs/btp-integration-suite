@@ -29,15 +29,11 @@ To set up a connection using basic authentication or username token authenticati
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -45,8 +41,6 @@ To set up a connection using basic authentication or username token authenticati
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
@@ -54,8 +48,6 @@ To set up a connection using basic authentication or username token authenticati
     A name for the artifact
 
     The artifact name is used as an alias for the confidential data assigned by this parameter.
-
-
     
     </td>
     </tr>
@@ -63,15 +55,11 @@ To set up a connection using basic authentication or username token authenticati
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     A description of the artifact \(optional\)
-
-
     
     </td>
     </tr>
@@ -79,8 +67,6 @@ To set up a connection using basic authentication or username token authenticati
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
@@ -104,15 +90,11 @@ To set up a connection using basic authentication or username token authenticati
     <td valign="top">
     
     User
-
-
     
     </td>
     <td valign="top">
     
     The user that calls the receiver system
-
-
     
     </td>
     </tr>
@@ -120,8 +102,6 @@ To set up a connection using basic authentication or username token authenticati
     <td valign="top">
     
     Password
-
-
     
     </td>
     <td valign="top">
@@ -129,8 +109,6 @@ To set up a connection using basic authentication or username token authenticati
     Password against which the user has to be authenticated
 
     This parameter has a maximum length of 255 characters.
-
-
     
     </td>
     </tr>

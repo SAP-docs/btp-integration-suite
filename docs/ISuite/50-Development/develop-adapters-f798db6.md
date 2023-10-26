@@ -73,15 +73,11 @@ You use an adapter in an integration flow for outbound and inbound communication
         <th valign="top">
 
         Component
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -89,15 +85,11 @@ You use an adapter in an integration flow for outbound and inbound communication
         <td valign="top">
         
         `*Component.java`
-
-
         
         </td>
         <td valign="top">
         
         Sample runtime component.
-
-
         
         </td>
         </tr>
@@ -105,15 +97,11 @@ You use an adapter in an integration flow for outbound and inbound communication
         <td valign="top">
         
         `*Consumer.java`
-
-
         
         </td>
         <td valign="top">
         
         Sample sender component.
-
-
         
         </td>
         </tr>
@@ -121,15 +109,11 @@ You use an adapter in an integration flow for outbound and inbound communication
         <td valign="top">
         
         `*Endpoint.java`
-
-
         
         </td>
         <td valign="top">
         
         Logger information is found.
-
-
         
         </td>
         </tr>
@@ -137,15 +121,11 @@ You use an adapter in an integration flow for outbound and inbound communication
         <td valign="top">
         
         `*Producer.java`
-
-
         
         </td>
         <td valign="top">
         
         Sample receiver component.
-
-
         
         </td>
         </tr>
@@ -153,15 +133,11 @@ You use an adapter in an integration flow for outbound and inbound communication
         <td valign="top">
         
         `metadata.xml`
-
-
         
         </td>
         <td valign="top">
         
         UI values are coded here.
-
-
         
         </td>
         </tr>
@@ -169,15 +145,11 @@ You use an adapter in an integration flow for outbound and inbound communication
         <td valign="top">
         
         `*ComponentTest.java`
-
-
         
         </td>
         <td valign="top">
         
         Sample JUnit test
-
-
         
         </td>
         </tr>
@@ -185,15 +157,11 @@ You use an adapter in an integration flow for outbound and inbound communication
         <td valign="top">
         
         `pom.xml`
-
-
         
         </td>
         <td valign="top">
         
         Contains configuration details and dependencies.
-
-
         
         </td>
         </tr>
@@ -201,8 +169,6 @@ You use an adapter in an integration flow for outbound and inbound communication
         <td valign="top">
         
         `sap-sample`
-
-
         
         </td>
         <td valign="top">
@@ -298,29 +264,21 @@ You use an adapter in an integration flow for outbound and inbound communication
     <th valign="top">
 
     Value
-
-
     
     </th>
     <th valign="top">
 
     Data Type
-
-
     
     </th>
     <th valign="top">
 
     Endpoint Variable and Setter
-
-
     
     </th>
     <th valign="top">
 
     Refers to...
-
-
     
     </th>
     </tr>
@@ -328,29 +286,21 @@ You use an adapter in an integration flow for outbound and inbound communication
     <td valign="top">
     
     `adapterInstanceID` 
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     `adapterInstanceID(string)` 
-
-
     
     </td>
     <td valign="top">
     
     Participant ID, which helps to identify log error details.
-
-
     
     </td>
     </tr>
@@ -358,29 +308,21 @@ You use an adapter in an integration flow for outbound and inbound communication
     <td valign="top">
     
     `adapterVersion` 
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     `adapterVersion(string)` 
-
-
     
     </td>
     <td valign="top">
     
     The adapter version.
-
-
     
     </td>
     </tr>
@@ -388,29 +330,21 @@ You use an adapter in an integration flow for outbound and inbound communication
     <td valign="top">
     
     `projectID` 
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     `projectID(string)` 
-
-
     
     </td>
     <td valign="top">
     
     The integration flow project ID.
-
-
     
     </td>
     </tr>
@@ -418,29 +352,21 @@ You use an adapter in an integration flow for outbound and inbound communication
     <td valign="top">
     
     `userDefinedNamespaces` 
-
-
     
     </td>
     <td valign="top">
     
     Java.util.Map
-
-
     
     </td>
     <td valign="top">
     
     `userDefinedNamespaces(map<string,string>)` 
-
-
     
     </td>
     <td valign="top">
     
     A namespace mapping generated at runtime for an integration flow model. It contains a namespace-prefix pair with a format `xmlns:<prefix>=<namespace>` .
-
-
     
     </td>
     </tr>

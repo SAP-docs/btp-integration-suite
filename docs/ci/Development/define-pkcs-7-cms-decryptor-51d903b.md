@@ -28,15 +28,11 @@ To decrypt a message, the decryptor requires a private key that must be deployed
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -44,15 +40,11 @@ To decrypt a message, the decryptor requires a private key that must be deployed
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     Enter a name for the decryptor.
-
-
     
     </td>
     </tr>
@@ -66,15 +58,11 @@ To decrypt a message, the decryptor requires a private key that must be deployed
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -82,15 +70,11 @@ To decrypt a message, the decryptor requires a private key that must be deployed
     <td valign="top">
     
     *Body is Base64 Encoded*
-
-
     
     </td>
     <td valign="top">
     
     Select if you expect the body of payload to be `Base64` encoded.
-
-
     
     </td>
     </tr>
@@ -98,8 +82,6 @@ To decrypt a message, the decryptor requires a private key that must be deployed
     <td valign="top">
     
     *Signatures*
-
-
     
     </td>
     <td valign="top">
@@ -121,8 +103,6 @@ To decrypt a message, the decryptor requires a private key that must be deployed
     *Public Key Alias*
 
     \(only if you have selected *Signed and Enveloped Data* or *Enveloped or Signed and Enveloped Data* for *Signatures*\)
-
-
     
     </td>
     <td valign="top">

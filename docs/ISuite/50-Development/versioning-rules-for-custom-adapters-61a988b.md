@@ -16,21 +16,15 @@ Follow the guidelines mentioned below to version a custom adapter.
 
 Version Type
 
-
-
 </th>
 <th valign="top">
 
 Applicable For
 
-
-
 </th>
 <th valign="top">
 
 Rules
-
-
 
 </th>
 </tr>
@@ -39,14 +33,10 @@ Rules
 
 Micro Version
 
-
-
 </td>
 <td valign="top">
 
 Small changes such as label and tooltip updates
-
-
 
 </td>
 <td valign="top">
@@ -64,8 +54,6 @@ Small changes such as label and tooltip updates
 <td valign="top">
 
 Minor Version
-
-
 
 </td>
 <td valign="top">
@@ -95,8 +83,6 @@ Adding a new feature
 
 Major Version
 
-
-
 </td>
 <td valign="top">
 
@@ -111,8 +97,6 @@ Incompatible Changes
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

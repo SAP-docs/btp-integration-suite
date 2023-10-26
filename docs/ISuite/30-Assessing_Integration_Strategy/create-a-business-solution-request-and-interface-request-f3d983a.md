@@ -32,15 +32,11 @@ Perform the following steps to create a business solution request.
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -48,15 +44,11 @@ Perform the following steps to create a business solution request.
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     Provide a name for the interface request.
-
-
     
     </td>
     </tr>
@@ -64,15 +56,11 @@ Perform the following steps to create a business solution request.
     <td valign="top">
     
     *Source Application Instance* 
-
-
     
     </td>
     <td valign="top">
     
     Select a source application instance and choose *Select*.
-
-
     
     </td>
     </tr>
@@ -80,15 +68,11 @@ Perform the following steps to create a business solution request.
     <td valign="top">
     
     *Target Application Instance*
-
-
     
     </td>
     <td valign="top">
     
     Select a target application instance and choose *Select*.
-
-
     
     </td>
     </tr>
@@ -96,8 +80,6 @@ Perform the following steps to create a business solution request.
     <td valign="top">
     
     *Style*
-
-
     
     </td>
     <td valign="top">
@@ -105,8 +87,6 @@ Perform the following steps to create a business solution request.
     Select the integration style.
 
     See: [Integration Styles and Integration Use Case Patterns](integration-styles-and-integration-use-case-patterns-770909d.md)
-
-
     
     </td>
     </tr>
@@ -129,15 +109,11 @@ Perform the following steps to create a business solution request.
     <th valign="top">
 
     Status
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -145,15 +121,11 @@ Perform the following steps to create a business solution request.
     <td valign="top">
     
     *Requirement Analysis*
-
-
     
     </td>
     <td valign="top">
     
     When you fill out the questionnaire for the interface request.
-
-
     
     </td>
     </tr>
@@ -161,15 +133,11 @@ Perform the following steps to create a business solution request.
     <td valign="top">
     
     *Technology Selection* 
-
-
     
     </td>
     <td valign="top">
     
     When you select the technology.
-
-
     
     </td>
     </tr>
@@ -177,15 +145,11 @@ Perform the following steps to create a business solution request.
     <td valign="top">
     
     *Completed*
-
-
     
     </td>
     <td valign="top">
     
     When the technology has been determined.
-
-
     
     </td>
     </tr>
@@ -219,15 +183,11 @@ Perform the following steps to create a business solution request.
     <th valign="top">
 
     Status
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -235,15 +195,11 @@ Perform the following steps to create a business solution request.
     <td valign="top">
     
     *Draft*
-
-
     
     </td>
     <td valign="top">
     
     The request hasn't been submitted yet.
-
-
     
     </td>
     </tr>
@@ -251,15 +207,11 @@ Perform the following steps to create a business solution request.
     <td valign="top">
     
     *New* 
-
-
     
     </td>
     <td valign="top">
     
     The request has been submitted and all interface requests are in *Requirement Analysis* status.
-
-
     
     </td>
     </tr>
@@ -267,15 +219,11 @@ Perform the following steps to create a business solution request.
     <td valign="top">
     
     *In Progress*
-
-
     
     </td>
     <td valign="top">
     
     At least one interface request has *Technology Selection* or *Completed* status.
-
-
     
     </td>
     </tr>
@@ -283,15 +231,11 @@ Perform the following steps to create a business solution request.
     <td valign="top">
     
     *Completed*
-
-
     
     </td>
     <td valign="top">
     
     The business solution request is completed.
-
-
     
     </td>
     </tr>

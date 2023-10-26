@@ -39,14 +39,10 @@ An example payload for the policy is as follows
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -55,14 +51,10 @@ An example payload for the policy is as follows
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 The internal name of the policy. Characters you can use in the name are restricted to: A-Z0-9.\_\\-$ %. Optionally, use the <DisplayName\> element to label the policy in the UI proxy editor with a different, natural-language name.
-
-
 
 </td>
 </tr>
@@ -71,14 +63,10 @@ The internal name of the policy. Characters you can use in the name are restrict
 
 continueOnError
 
-
-
 </td>
 <td valign="top">
 
 Set to false to return an error when a policy fails. This is expected behavior for most policies. Set to true to have flow execution continue even after a policy fails.
-
-
 
 </td>
 </tr>
@@ -87,14 +75,10 @@ Set to false to return an error when a policy fails. This is expected behavior f
 
 enabled
 
-
-
 </td>
 <td valign="top">
 
 Set to true to enforce the policy. Set to false to "turn off" the policy. The policy will not be enforced even if it remains attached to a flow.
-
-
 
 </td>
 </tr>
@@ -103,14 +87,10 @@ Set to true to enforce the policy. Set to false to "turn off" the policy. The po
 
 async
 
-
-
 </td>
 <td valign="top">
 
 This attribute is deprecated.
-
-
 
 </td>
 </tr>
@@ -119,14 +99,10 @@ This attribute is deprecated.
 
 DisplayName
 
-
-
 </td>
 <td valign="top">
 
 Use in addition to the name attribute to label the policy in the management UI proxy editor with a different, natural-language name. If you omit this element, then the value of the policy's name attribute is used.
-
-
 
 </td>
 </tr>
@@ -134,8 +110,6 @@ Use in addition to the name attribute to label the policy in the management UI p
 <td valign="top">
 
 Source
-
-
 
 </td>
 <td valign="top">
@@ -150,16 +124,12 @@ If the source variable resolves to a null value in the message flow, a steps.mes
 
 If the source variable resolves to a non-message value, a steps.messagevalidation.NonMessageVariable error code is thrown.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ResourceURL
-
-
 
 </td>
 <td valign="top">
@@ -176,8 +146,6 @@ Presence: Optional
 
 Type: String
 
-
-
 </td>
 </tr>
 <tr>
@@ -185,14 +153,10 @@ Type: String
 
 SOAPMessage
 
-
-
 </td>
 <td valign="top">
 
 Provides the SOAP version against which to validate SOAP messages. <SOAPMessage version="1.1/1.2"/\>
-
-
 
 </td>
 </tr>
@@ -201,14 +165,10 @@ Provides the SOAP version against which to validate SOAP messages. <SOAPMessage 
 
 Version
 
-
-
 </td>
 <td valign="top">
 
 Identifies the SOAP version against which to validate SOAP messages. Valid values: 1.1, 1.2, 1.1/1.2
-
-
 
 </td>
 </tr>
@@ -216,8 +176,6 @@ Identifies the SOAP version against which to validate SOAP messages. Valid value
 <td valign="top">
 
 Element
-
-
 
 </td>
 <td valign="top">
@@ -228,8 +186,6 @@ Specifies the root, or parent, element of the messages to be validated.
 
 <Element namespace="http://finance.com/2000"\>PurchaseOrder</Element\>
 
-
-
 </td>
 </tr>
 <tr>
@@ -237,14 +193,10 @@ Specifies the root, or parent, element of the messages to be validated.
 
 namespace
 
-
-
 </td>
 <td valign="top">
 
 Provides the namespace of the root, or parent, element of the messages to be validated. Default: "http://sample.com"
-
-
 
 </td>
 </tr>
@@ -259,14 +211,10 @@ Message Validation policy type defines the following error codes:
 
 Error code
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -275,14 +223,10 @@ Cause
 
 InvalidResourceType
 
-
-
 </td>
 <td valign="top">
 
 InvalidResourceType MessageValidation \{0\}: Invalid Resource Type \{1\}. It should be xsd or wsdl. Context \{2\}
-
-
 
 </td>
 </tr>
@@ -291,14 +235,10 @@ InvalidResourceType MessageValidation \{0\}: Invalid Resource Type \{1\}. It sho
 
 ResourceCompileFailed
 
-
-
 </td>
 <td valign="top">
 
 ResourceCompileFailed MessageValidation \{0\}: Failed to compile resource \{1\}. Context \{2\}
-
-
 
 </td>
 </tr>
@@ -307,14 +247,10 @@ ResourceCompileFailed MessageValidation \{0\}: Failed to compile resource \{1\}.
 
 RootElementNameUnspecified
 
-
-
 </td>
 <td valign="top">
 
 RootElementNameUnspecified MessageValidation \{0\}: RootElement name is not specified
-
-
 
 </td>
 </tr>
@@ -323,14 +259,10 @@ RootElementNameUnspecified MessageValidation \{0\}: RootElement name is not spec
 
 InvalidRootElementName
 
-
-
 </td>
 <td valign="top">
 
 InvalidRootElementName MessageValidation \{0\}: RootElement name \{1\} is invalid
-
-
 
 </td>
 </tr>
@@ -339,14 +271,10 @@ InvalidRootElementName MessageValidation \{0\}: RootElement name \{1\} is invali
 
 NonMessageVariable
 
-
-
 </td>
 <td valign="top">
 
 NonMessageVariable Variable \{0\} does not resolve to a Message
-
-
 
 </td>
 </tr>
@@ -355,14 +283,10 @@ NonMessageVariable Variable \{0\} does not resolve to a Message
 
 SourceMessageNotAvailable
 
-
-
 </td>
 <td valign="top">
 
 SourceMessageNotAvailable \{0\} message is not available for MessageValidation: \{1\}
-
-
 
 </td>
 </tr>
@@ -371,14 +295,10 @@ SourceMessageNotAvailable \{0\} message is not available for MessageValidation: 
 
 NoElements
 
-
-
 </td>
 <td valign="top">
 
 Resource "\{0\}" has no element definitions
-
-
 
 </td>
 </tr>
@@ -387,14 +307,10 @@ Resource "\{0\}" has no element definitions
 
 Failed
 
-
-
 </td>
 <td valign="top">
 
 MessageValidation \{0\} failed with reason: "\{1\}"
-
-
 
 </td>
 </tr>

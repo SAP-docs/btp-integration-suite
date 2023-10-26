@@ -32,14 +32,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -48,14 +44,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -72,14 +64,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -88,14 +76,10 @@ Description
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 URL of the SuccessFactors LMS service
-
-
 
 </td>
 </tr>
@@ -104,14 +88,10 @@ URL of the SuccessFactors LMS service
 
 *Address Suffix* 
 
-
-
 </td>
 <td valign="top">
 
 URL suffix for the SuccessFactors LMS service
-
-
 
 </td>
 </tr>
@@ -119,8 +99,6 @@ URL suffix for the SuccessFactors LMS service
 <td valign="top">
 
 *Credential Name* 
-
-
 
 </td>
 <td valign="top">
@@ -139,8 +117,6 @@ Name of the credentials deployed on the SuccessFactors LMS service for authentic
 
 *Proxy Type* 
 
-
-
 </td>
 <td valign="top">
 
@@ -152,16 +128,12 @@ If you choose *Manual*, you need to enter values for the fields *Proxy Host* and
 
 *Proxy Port* is the port number that you are using.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Operation* 
-
-
 
 </td>
 <td valign="top">
@@ -182,8 +154,6 @@ Operation that you want to perform. Supported operations are:
 
 *Entity* 
 
-
-
 </td>
 <td valign="top">
 
@@ -201,14 +171,10 @@ LMS entity that you are accessing
 
 *Parameters* 
 
-
-
 </td>
 <td valign="top">
 
 Operation parameters that you want to send
-
-
 
 </td>
 </tr>
@@ -217,14 +183,10 @@ Operation parameters that you want to send
 
 *Page Size* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum number of records on each page of response
-
-
 
 </td>
 </tr>

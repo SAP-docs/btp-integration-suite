@@ -15,14 +15,10 @@ The following status values are possible.
 
 Status
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -31,16 +27,12 @@ Description
 
 *Started* 
 
-
-
 </td>
 <td valign="top">
 
 The artifact is ready to be used.
 
 An artifact with this status is in a final state.
-
-
 
 </td>
 </tr>
@@ -49,16 +41,12 @@ An artifact with this status is in a final state.
 
 *Error* 
 
-
-
 </td>
 <td valign="top">
 
 The artifact requires attention by the user \(administrator\).
 
 An artifact with this status is in a final state.
-
-
 
 </td>
 </tr>
@@ -67,8 +55,6 @@ An artifact with this status is in a final state.
 
 *Starting* 
 
-
-
 </td>
 <td valign="top">
 
@@ -76,16 +62,12 @@ The artifact is in the process of being deployed on the worker node\(s\) and, if
 
 An artifact with this status is in an intermediate state.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Stopping* 
-
-
 
 </td>
 <td valign="top">
@@ -95,8 +77,6 @@ The artifact is in the process of being stopped on the worker node\(s\) and, if 
 An artifact with this status is in an intermediate state.
 
 During the process of undeployment, the artifact has status *Stopping*. An artifact with this status cannot be restarted, undeployed or downloaded.
-
-
 
 </td>
 </tr>

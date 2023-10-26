@@ -35,15 +35,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -51,15 +47,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Define a relevant name for the EDI splitter or use the default name.
-
-
     
     </td>
     </tr>
@@ -73,15 +65,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -89,15 +77,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Parallel Processing
-
-
     
     </td>
     <td valign="top">
     
     This mode creates multiple processes for each split message, and individual EDI messages are processed simultaneously.
-
-
     
     </td>
     </tr>
@@ -105,15 +89,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Timeout \(in sec\)
-
-
     
     </td>
     <td valign="top">
     
     Set the time limit in seconds for the EDI splitter to process individual split messages. If there are any processes still pending once the time has lapsed, the splitter terminates the processes and updates the MPL status.
-
-
     
     </td>
     </tr>
@@ -127,15 +107,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -143,8 +119,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Source Encoding
-
-
     
     </td>
     <td valign="top">
@@ -168,8 +142,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Validate Message
-
-
     
     </td>
     <td valign="top">
@@ -189,8 +161,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Validate
-
-
     
     </td>
     <td valign="top">
@@ -210,8 +180,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Transaction Mode
-
-
     
     </td>
     <td valign="top">
@@ -238,8 +206,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     EDI Schema Definition
-
-
     
     </td>
     <td valign="top">
@@ -282,8 +248,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Process Invalid Messages
-
-
     
     </td>
     <td valign="top">
@@ -305,8 +269,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Header Name
-
-
     
     </td>
     <td valign="top">
@@ -328,8 +290,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Create Acknowledgement
-
-
     
     </td>
     <td valign="top">
@@ -367,8 +327,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Interchange Number
-
-
     
     </td>
     <td valign="top">
@@ -388,8 +346,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Number range
-
-
     
     </td>
     <td valign="top">
@@ -397,8 +353,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     Define the number range assigned to an interchange number in the functional acknowledgement.
 
     You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_NUMBER_RANGE`. A unique interchange number is generated for every unique incoming message. A duplicate incoming message is assigned with same interchange number for 30 days.
-
-
     
     </td>
     </tr>
@@ -406,8 +360,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     CONTRL Message Version
-
-
     
     </td>
     <td valign="top">
@@ -427,8 +379,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Include UNA Segment
-
-
     
     </td>
     <td valign="top">
@@ -454,15 +404,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -470,8 +416,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Source Encoding
-
-
     
     </td>
     <td valign="top">
@@ -496,8 +440,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Validate Message
-
-
     
     </td>
     <td valign="top">
@@ -522,8 +464,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Transaction Mode
-
-
     
     </td>
     <td valign="top">
@@ -548,8 +488,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     EDI Schema Definition
-
-
     
     </td>
     <td valign="top">
@@ -583,8 +521,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Header Name
-
-
     
     </td>
     <td valign="top">
@@ -606,8 +542,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Create Acknowledgement
-
-
     
     </td>
     <td valign="top">
@@ -637,8 +571,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Interchange Number
-
-
     
     </td>
     <td valign="top">
@@ -658,8 +590,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Number Range
-
-
     
     </td>
     <td valign="top">
@@ -667,8 +597,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     Define the number range assigned to an interchange number in the functional acknowledgement. A unique interchange number is generated for every unique incoming message. A duplicate incoming message is assigned with same interchange number for 30 days.
 
     You can also set this field using the header `SAP_EDISPLITTER_X12_NUMBER_RANGE`. The value for the header should be the number range artifact name.
-
-
     
     </td>
     </tr>
@@ -676,8 +604,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Exclude AK3 and AK4
-
-
     
     </td>
     <td valign="top">
@@ -707,15 +633,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <th valign="top">
 
     Error Code
-
-
     
     </th>
     <th valign="top">
 
     Error Text NotifiesThat...
-
-
     
     </th>
     </tr>
@@ -723,15 +645,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     2
-
-
     
     </td>
     <td valign="top">
     
     Syntax version and/or level is not supported by the recipient.
-
-
     
     </td>
     </tr>
@@ -748,15 +666,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <th valign="top">
 
     Error Code
-
-
     
     </th>
     <th valign="top">
 
     Error Text NotifiesThat...
-
-
     
     </th>
     </tr>
@@ -764,15 +678,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     18
-
-
     
     </td>
     <td valign="top">
     
     An error has been identified, but the nature of the error is not reported.
-
-
     
     </td>
     </tr>
@@ -780,15 +690,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     28
-
-
     
     </td>
     <td valign="top">
     
     The control reference in UNB, UNG, or UNH does not match the one in UNZ, UNE, or UNT respectively.
-
-
     
     </td>
     </tr>
@@ -796,15 +702,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     29
-
-
     
     </td>
     <td valign="top">
     
     The number of groups, messages, or segments does not match the number given in the UNZ, UNE, or UNT segment.
-
-
     
     </td>
     </tr>
@@ -812,15 +714,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     30
-
-
     
     </td>
     <td valign="top">
     
     Groups have been mixed with messages/packages outside of groups in the interchange.
-
-
     
     </td>
     </tr>
@@ -834,15 +732,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <th valign="top">
 
     Error Code
-
-
     
     </th>
     <th valign="top">
 
     Error Text Notifies That...
-
-
     
     </th>
     </tr>
@@ -850,15 +744,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     12
-
-
     
     </td>
     <td valign="top">
     
     The value of a stand-alone data element, composite data element, or component data element does not conform to the relevant specifications for the value.
-
-
     
     </td>
     </tr>
@@ -866,15 +756,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     13
-
-
     
     </td>
     <td valign="top">
     
     Mandatory \(or otherwise required\) service or user segment, data element, composite data element, or component data element is missing.
-
-
     
     </td>
     </tr>
@@ -882,15 +768,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     16
-
-
     
     </td>
     <td valign="top">
     
     The identified segment contains too many data elements or the identified composite data element contains too many component data elements.
-
-
     
     </td>
     </tr>
@@ -898,15 +780,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     31
-
-
     
     </td>
     <td valign="top">
     
     Different message types are contained in a functional group.
-
-
     
     </td>
     </tr>
@@ -914,15 +792,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     35
-
-
     
     </td>
     <td valign="top">
     
     A segment was repeated too many times.
-
-
     
     </td>
     </tr>
@@ -930,15 +804,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     36
-
-
     
     </td>
     <td valign="top">
     
     A segment group is repeated to many times.
-
-
     
     </td>
     </tr>
@@ -946,15 +816,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     37
-
-
     
     </td>
     <td valign="top">
     
     One or more numeric characters were used in an alphabetic \(component\) data element or one or more alphabetic characters were used in a numeric \(component\) data element.
-
-
     
     </td>
     </tr>
@@ -962,15 +828,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     38
-
-
     
     </td>
     <td valign="top">
     
     A decimal sign is not preceded by one or more digits.
-
-
     
     </td>
     </tr>
@@ -978,15 +840,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     39
-
-
     
     </td>
     <td valign="top">
     
     The length of the data element received exceeds the maximum length specified in the data element description.
-
-
     
     </td>
     </tr>
@@ -994,15 +852,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     40
-
-
     
     </td>
     <td valign="top">
     
     The length of the data element received is shorter than the minimum length specified in the data element description.
-
-
     
     </td>
     </tr>
@@ -1018,15 +872,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <th valign="top">
 
     Error Codes
-
-
     
     </th>
     <th valign="top">
 
     Error Text Notifies That...
-
-
     
     </th>
     </tr>
@@ -1034,15 +884,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     3
-
-
     
     </td>
     <td valign="top">
     
     Mandatory segment is missing.
-
-
     
     </td>
     </tr>
@@ -1050,15 +896,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     4
-
-
     
     </td>
     <td valign="top">
     
     Maximum number of loops exceeded.
-
-
     
     </td>
     </tr>
@@ -1066,15 +908,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     5
-
-
     
     </td>
     <td valign="top">
     
     Segment exceeds maximum use.
-
-
     
     </td>
     </tr>
@@ -1082,15 +920,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     6
-
-
     
     </td>
     <td valign="top">
     
     Segment is not defined in transaction set.
-
-
     
     </td>
     </tr>
@@ -1098,15 +932,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     7
-
-
     
     </td>
     <td valign="top">
     
     Segment is not in proper sequence.
-
-
     
     </td>
     </tr>
@@ -1120,15 +950,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <th valign="top">
 
     Error Code
-
-
     
     </th>
     <th valign="top">
 
     Error Text Notifies That...
-
-
     
     </th>
     </tr>
@@ -1136,15 +962,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     1
-
-
     
     </td>
     <td valign="top">
     
     Mandatory data element is missing.
-
-
     
     </td>
     </tr>
@@ -1152,15 +974,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     3
-
-
     
     </td>
     <td valign="top">
     
     Too many data elements.
-
-
     
     </td>
     </tr>
@@ -1168,15 +986,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     4
-
-
     
     </td>
     <td valign="top">
     
     Data element is too short.
-
-
     
     </td>
     </tr>
@@ -1184,15 +998,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     5
-
-
     
     </td>
     <td valign="top">
     
     Data element is too long.
-
-
     
     </td>
     </tr>
@@ -1200,15 +1010,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     6
-
-
     
     </td>
     <td valign="top">
     
     Invalid character in data element.
-
-
     
     </td>
     </tr>
@@ -1216,15 +1022,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     7
-
-
     
     </td>
     <td valign="top">
     
     Invalid code value.
-
-
     
     </td>
     </tr>
@@ -1232,15 +1034,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     8
-
-
     
     </td>
     <td valign="top">
     
     Invalid date.
-
-
     
     </td>
     </tr>
@@ -1254,15 +1052,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <th valign="top">
 
     Error Code
-
-
     
     </th>
     <th valign="top">
 
     Error Text Notifies That...
-
-
     
     </th>
     </tr>
@@ -1270,15 +1064,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     3
-
-
     
     </td>
     <td valign="top">
     
     Transaction set control number in header and trailer do not match.
-
-
     
     </td>
     </tr>
@@ -1286,15 +1076,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     4
-
-
     
     </td>
     <td valign="top">
     
     Number of included segments does not match actual count.
-
-
     
     </td>
     </tr>
@@ -1308,15 +1094,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <th valign="top">
 
     Error Code
-
-
     
     </th>
     <th valign="top">
 
     Error Text Notifies That...
-
-
     
     </th>
     </tr>
@@ -1324,15 +1106,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     4
-
-
     
     </td>
     <td valign="top">
     
     Group control number in the functional group header and trailer do not match.
-
-
     
     </td>
     </tr>
@@ -1340,15 +1118,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     5
-
-
     
     </td>
     <td valign="top">
     
     Number of included transaction sets does not match actual count.
-
-
     
     </td>
     </tr>
@@ -1376,14 +1150,10 @@ UNH+1+**INVOIC**:**D**:**96A**:**EN:EAN008**'
 
 Header Name
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -1392,14 +1162,10 @@ Value
 
 SAP\_EDI\_Document\_Standard
 
-
-
 </td>
 <td valign="top">
 
 UN-EDIFACT
-
-
 
 </td>
 </tr>
@@ -1408,14 +1174,10 @@ UN-EDIFACT
 
 SAP\_EDI\_Interchange\_Control\_Number
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -1424,14 +1186,10 @@ SAP\_EDI\_Interchange\_Control\_Number
 
 SAP\_EDI\_Message\_Association\_Assign\_Code
 
-
-
 </td>
 <td valign="top">
 
 EAN008
-
-
 
 </td>
 </tr>
@@ -1440,14 +1198,10 @@ EAN008
 
 SAP\_EDI\_Message\_Control\_Number
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -1456,14 +1210,10 @@ SAP\_EDI\_Message\_Control\_Number
 
 SAP\_EDI\_Message\_Controlling\_Agency
 
-
-
 </td>
 <td valign="top">
 
 UN
-
-
 
 </td>
 </tr>
@@ -1472,14 +1222,10 @@ UN
 
 SAP\_EDI\_Message\_Release
 
-
-
 </td>
 <td valign="top">
 
 96A
-
-
 
 </td>
 </tr>
@@ -1488,14 +1234,10 @@ SAP\_EDI\_Message\_Release
 
 SAP\_EDI\_Message\_Type
 
-
-
 </td>
 <td valign="top">
 
 ORDERS
-
-
 
 </td>
 </tr>
@@ -1504,14 +1246,10 @@ ORDERS
 
 SAP\_EDI\_Message\_Version
 
-
-
 </td>
 <td valign="top">
 
 D
-
-
 
 </td>
 </tr>
@@ -1520,14 +1258,10 @@ D
 
 SAP\_EDI\_Payload\_Format
 
-
-
 </td>
 <td valign="top">
 
 EDI\_FLAT
-
-
 
 </td>
 </tr>
@@ -1536,14 +1270,10 @@ EDI\_FLAT
 
 SAP\_EDI\_Processing\_Priority\_Code
 
-
-
 </td>
 <td valign="top">
 
 A
-
-
 
 </td>
 </tr>
@@ -1552,14 +1282,10 @@ A
 
 SAP\_EDI\_Receiver\_ID
 
-
-
 </td>
 <td valign="top">
 
 RECIPIENT ID
-
-
 
 </td>
 </tr>
@@ -1568,14 +1294,10 @@ RECIPIENT ID
 
 SAP\_EDI\_Receiver\_Routing\_Address
 
-
-
 </td>
 <td valign="top">
 
 INT ROUT
-
-
 
 </td>
 </tr>
@@ -1584,14 +1306,10 @@ INT ROUT
 
 SAP\_EDI\_Recipient\_Reference\_Password
 
-
-
 </td>
 <td valign="top">
 
 PASSWORD RCV
-
-
 
 </td>
 </tr>
@@ -1600,14 +1318,10 @@ PASSWORD RCV
 
 SAP\_EDI\_Receiver\_ID\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 14
-
-
 
 </td>
 </tr>
@@ -1616,14 +1330,10 @@ SAP\_EDI\_Receiver\_ID\_Qualifier
 
 SAP\_EDI\_Sender\_ID
 
-
-
 </td>
 <td valign="top">
 
 SENDER ID
-
-
 
 </td>
 </tr>
@@ -1632,14 +1342,10 @@ SENDER ID
 
 SAP\_EDI\_Sender\_ID\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 14
-
-
 
 </td>
 </tr>
@@ -1648,14 +1354,10 @@ SAP\_EDI\_Sender\_ID\_Qualifier
 
 SAP\_EDI\_Sender\_Reverse\_Routing\_Address
 
-
-
 </td>
 <td valign="top">
 
 REV ROUT
-
-
 
 </td>
 </tr>
@@ -1664,14 +1366,10 @@ REV ROUT
 
 SAP\_EDI\_Syntax\_Identifier
 
-
-
 </td>
 <td valign="top">
 
 UNOC
-
-
 
 </td>
 </tr>
@@ -1680,14 +1378,10 @@ UNOC
 
 SAP\_EDI\_Syntax\_Version\_Number
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -1696,14 +1390,10 @@ SAP\_EDI\_Syntax\_Version\_Number
 
 SAP\_EDI\_Test\_Indicator
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -1726,14 +1416,10 @@ UNH+1+**INVOIC**:**D**:**96A**:**UN**'
 
 Header Name
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -1742,14 +1428,10 @@ Value
 
 SAP\_EDI\_Payload\_Format
 
-
-
 </td>
 <td valign="top">
 
 XML or Flat-File
-
-
 
 </td>
 </tr>
@@ -1758,14 +1440,10 @@ XML or Flat-File
 
 SAP\_EDI\_Document\_Standard
 
-
-
 </td>
 <td valign="top">
 
 UN-EDIFACT
-
-
 
 </td>
 </tr>
@@ -1774,14 +1452,10 @@ UN-EDIFACT
 
 SAP\_EDI\_Sender\_ID
 
-
-
 </td>
 <td valign="top">
 
 4006501000002
-
-
 
 </td>
 </tr>
@@ -1790,14 +1464,10 @@ SAP\_EDI\_Sender\_ID
 
 SAP\_EDI\_Sender\_ID\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 14
-
-
 
 </td>
 </tr>
@@ -1806,14 +1476,10 @@ SAP\_EDI\_Sender\_ID\_Qualifier
 
 SAP\_EDI\_Receiver\_ID
 
-
-
 </td>
 <td valign="top">
 
 5790000016839
-
-
 
 </td>
 </tr>
@@ -1822,14 +1488,10 @@ SAP\_EDI\_Receiver\_ID
 
 SAP\_EDI\_Receiver\_ID\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 14
-
-
 
 </td>
 </tr>
@@ -1838,14 +1500,10 @@ SAP\_EDI\_Receiver\_ID\_Qualifier
 
 SAP\_EDI\_Interchange\_Control\_Number
 
-
-
 </td>
 <td valign="top">
 
 0650
-
-
 
 </td>
 </tr>
@@ -1854,14 +1512,10 @@ SAP\_EDI\_Interchange\_Control\_Number
 
 SAP\_EDI\_Message\_Type
 
-
-
 </td>
 <td valign="top">
 
 INVOIC
-
-
 
 </td>
 </tr>
@@ -1870,14 +1524,10 @@ INVOIC
 
 SAP\_EDI\_Message\_Version
 
-
-
 </td>
 <td valign="top">
 
 D
-
-
 
 </td>
 </tr>
@@ -1886,14 +1536,10 @@ D
 
 SAP\_EDI\_Message\_Release
 
-
-
 </td>
 <td valign="top">
 
 96A
-
-
 
 </td>
 </tr>
@@ -1902,14 +1548,10 @@ SAP\_EDI\_Message\_Release
 
 SAP\_EDI\_Message\_Controlling\_Agency
 
-
-
 </td>
 <td valign="top">
 
 UN
-
-
 
 </td>
 </tr>
@@ -1934,14 +1576,10 @@ GS\*IN\*GSRESNDR\*GSRERCVR\*20030709\*0816\*12345\*X\***004010**~
 
 Header Name
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -1950,14 +1588,10 @@ Value
 
 SAP\_EDI\_Payload\_Format
 
-
-
 </td>
 <td valign="top">
 
 XML or Flat-File
-
-
 
 </td>
 </tr>
@@ -1966,14 +1600,10 @@ XML or Flat-File
 
 SAP\_EDI\_Document\_Standard
 
-
-
 </td>
 <td valign="top">
 
 ASC-X12
-
-
 
 </td>
 </tr>
@@ -1982,14 +1612,10 @@ ASC-X12
 
 SAP\_EDI\_Sender\_ID
 
-
-
 </td>
 <td valign="top">
 
 WWRESNDR
-
-
 
 </td>
 </tr>
@@ -1998,14 +1624,10 @@ WWRESNDR
 
 SAP\_EDI\_Sender\_ID\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 ZZ
-
-
 
 </td>
 </tr>
@@ -2014,14 +1636,10 @@ ZZ
 
 SAP\_EDI\_Receiver\_ID
 
-
-
 </td>
 <td valign="top">
 
 WWRERCVR
-
-
 
 </td>
 </tr>
@@ -2030,14 +1648,10 @@ WWRERCVR
 
 SAP\_EDI\_Receiver\_ID\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 ZZ
-
-
 
 </td>
 </tr>
@@ -2046,14 +1660,10 @@ ZZ
 
 SAP\_EDI\_Interchange\_Control\_Number
 
-
-
 </td>
 <td valign="top">
 
 000046668
-
-
 
 </td>
 </tr>
@@ -2062,14 +1672,10 @@ SAP\_EDI\_Interchange\_Control\_Number
 
 SAP\_EDI\_Message\_Type
 
-
-
 </td>
 <td valign="top">
 
 810
-
-
 
 </td>
 </tr>
@@ -2078,14 +1684,10 @@ SAP\_EDI\_Message\_Type
 
 SAP\_EDI\_Message\_Version
 
-
-
 </td>
 <td valign="top">
 
 004010
-
-
 
 </td>
 </tr>
@@ -2094,14 +1696,10 @@ SAP\_EDI\_Message\_Version
 
 SAP\_EDI\_GS\_Sender\_ID
 
-
-
 </td>
 <td valign="top">
 
 GSRESNDR
-
-
 
 </td>
 </tr>
@@ -2110,14 +1708,10 @@ GSRESNDR
 
 SAP\_EDI\_Receiver\_ID
 
-
-
 </td>
 <td valign="top">
 
 GSRERCVR
-
-
 
 </td>
 </tr>
@@ -2126,14 +1720,10 @@ GSRERCVR
 
 SAP\_EDI\_GS\_Control\_Number
 
-
-
 </td>
 <td valign="top">
 
 12345
-
-
 
 </td>
 </tr>
@@ -2142,14 +1732,10 @@ SAP\_EDI\_GS\_Control\_Number
 
 SAP\_GS\_Functional\_Id\_Code
 
-
-
 </td>
 <td valign="top">
 
 IN
-
-
 
 </td>
 </tr>
@@ -2158,14 +1744,10 @@ IN
 
 SAP\_GS\_Responsible\_Agency\_Code
 
-
-
 </td>
 <td valign="top">
 
 X
-
-
 
 </td>
 </tr>
@@ -2174,14 +1756,10 @@ X
 
 SAP\_ISA\_Acknowledgment\_Requested
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -2190,14 +1768,10 @@ SAP\_ISA\_Acknowledgment\_Requested
 
 SAP\_ISA\_Auth\_Information\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 00
-
-
 
 </td>
 </tr>
@@ -2205,8 +1779,6 @@ SAP\_ISA\_Auth\_Information\_Qualifier
 <td valign="top">
 
 SAP\_ISA\_Control\_Standards\_Identifier
-
-
 
 </td>
 <td valign="top">
@@ -2220,14 +1792,10 @@ SAP\_ISA\_Control\_Standards\_Identifier
 
 SAP\_ ISA\_Security\_Information\_Qualifier
 
-
-
 </td>
 <td valign="top">
 
 00
-
-
 
 </td>
 </tr>
@@ -2236,14 +1804,10 @@ SAP\_ ISA\_Security\_Information\_Qualifier
 
 SAP\_ISA\_Usage\_Indicator
 
-
-
 </td>
 <td valign="top">
 
 P
-
-
 
 </td>
 </tr>
@@ -2252,14 +1816,10 @@ P
 
 SAP\_ISA\_Version\_Number
 
-
-
 </td>
 <td valign="top">
 
 004010
-
-
 
 </td>
 </tr>
@@ -2267,8 +1827,6 @@ SAP\_ISA\_Version\_Number
 <td valign="top">
 
 SAP\_MessageProcessingLogID
-
-
 
 </td>
 <td valign="top">
@@ -2281,8 +1839,6 @@ SAP\_MessageProcessingLogID
 <td valign="top">
 
 SAP\_ST\_Control\_Number
-
-
 
 </td>
 <td valign="top">

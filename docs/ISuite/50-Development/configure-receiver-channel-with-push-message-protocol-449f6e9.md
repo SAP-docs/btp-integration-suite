@@ -48,14 +48,10 @@ Select the *Connection*tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -64,14 +60,10 @@ Description
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 Define the endpoint URL of the receiving MSH.
-
-
 
 </td>
 </tr>
@@ -80,14 +72,10 @@ Define the endpoint URL of the receiving MSH.
 
 *Agreement* 
 
-
-
 </td>
 <td valign="top">
 
 Define the type of the message exchange pattern as agreed between the MSHs for a specific type of business transaction.
-
-
 
 </td>
 </tr>
@@ -95,8 +83,6 @@ Define the type of the message exchange pattern as agreed between the MSHs for a
 <td valign="top">
 
 *Authentication Type* 
-
-
 
 </td>
 <td valign="top">
@@ -134,14 +120,10 @@ The valid values are:
 
 *SAML Endpoint URL* 
 
-
-
 </td>
 <td valign="top">
 
 Provide the specific endpoint URL to support SAML-based authentication that allows access to the sending MSH.
-
-
 
 </td>
 </tr>
@@ -150,14 +132,10 @@ Provide the specific endpoint URL to support SAML-based authentication that allo
 
 *Private Key Alias* 
 
-
-
 </td>
 <td valign="top">
 
 Determine the private key alias for SAML authentication.
-
-
 
 </td>
 </tr>
@@ -166,14 +144,10 @@ Determine the private key alias for SAML authentication.
 
 *Timeout \(in sec.\)* 
 
-
-
 </td>
 <td valign="top">
 
 Provide a connection timeout period \(in seconds\) to define how long the receiving MSH waits for the AS4 message to be received by the sending MSH.
-
-
 
 </td>
 </tr>
@@ -182,14 +156,10 @@ Provide a connection timeout period \(in seconds\) to define how long the receiv
 
 *Compress Message*
 
-
-
 </td>
 <td valign="top">
 
 Enable if you want to compress the message.
-
-
 
 </td>
 </tr>
@@ -206,14 +176,10 @@ Select the *Processing*tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -222,14 +188,10 @@ Description
 
 *Initiator Party: Party ID* 
 
-
-
 </td>
 <td valign="top">
 
 Define the ID of the sending MSH.
-
-
 
 </td>
 </tr>
@@ -238,14 +200,10 @@ Define the ID of the sending MSH.
 
 *Initiator Party: Party Type* 
 
-
-
 </td>
 <td valign="top">
 
 Provide the type of the sending MSH. For example: `http://abr.gov.au/PartyIdType/ABN` 
-
-
 
 </td>
 </tr>
@@ -254,14 +212,10 @@ Provide the type of the sending MSH. For example: `http://abr.gov.au/PartyIdType
 
 *Initiator Party: Role* 
 
-
-
 </td>
 <td valign="top">
 
 Define the role of the sending MSH. For example: `http://sbr.gov.au/ato/Role/Business` 
-
-
 
 </td>
 </tr>
@@ -270,14 +224,10 @@ Define the role of the sending MSH. For example: `http://sbr.gov.au/ato/Role/Bus
 
 *Responder Party: Party ID* 
 
-
-
 </td>
 <td valign="top">
 
 Define the ID of the receiving MSH.
-
-
 
 </td>
 </tr>
@@ -286,14 +236,10 @@ Define the ID of the receiving MSH.
 
 *Responder Party: Party Type* 
 
-
-
 </td>
 <td valign="top">
 
 Provide the type of the receiving MSH. For example: `http://abr.gov.au/PartyIdType/ABN` 
-
-
 
 </td>
 </tr>
@@ -302,14 +248,10 @@ Provide the type of the receiving MSH. For example: `http://abr.gov.au/PartyIdTy
 
 *Responder Party: Role* 
 
-
-
 </td>
 <td valign="top">
 
 Define the role of the receiving MSH. For example: `http://sbr.gov.au/agency` 
-
-
 
 </td>
 </tr>
@@ -318,14 +260,10 @@ Define the role of the receiving MSH. For example: `http://sbr.gov.au/agency`
 
 *Message Partition Channel* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the partner channel details to enable the partitioned transfer of AS4 messages between AS4 exchange partners.
-
-
 
 </td>
 </tr>
@@ -334,14 +272,10 @@ Specify the partner channel details to enable the partitioned transfer of AS4 me
 
 *Service* 
 
-
-
 </td>
 <td valign="top">
 
 Define the business service of the recipient. For example, payment details of employees for a specific year: `http://sbr.gov.au/ato/payevnt/2017` 
-
-
 
 </td>
 </tr>
@@ -350,14 +284,10 @@ Define the business service of the recipient. For example, payment details of em
 
 *Service Type* 
 
-
-
 </td>
 <td valign="top">
 
 Define the type of service from the recipient.
-
-
 
 </td>
 </tr>
@@ -366,14 +296,10 @@ Define the type of service from the recipient.
 
 *Action* 
 
-
-
 </td>
 <td valign="top">
 
 Define the type of action that the user message is intended to invoke. For example: `Submit.002.00` 
-
-
 
 </td>
 </tr>
@@ -382,14 +308,10 @@ Define the type of action that the user message is intended to invoke. For examp
 
 *Attachment Name* 
 
-
-
 </td>
 <td valign="top">
 
 Define the name for the payload attached to the AS4 message.
-
-
 
 </td>
 </tr>
@@ -398,14 +320,10 @@ Define the name for the payload attached to the AS4 message.
 
 *Additional Properties* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the Key, Kype, and Value attributes to modify an existing parameter in the property sheet. For example, if you want to modify the MSH details, you must define a key and its value. The *Type* attribute is used in AS4 message in order to identify the payload.
-
-
 
 </td>
 </tr>
@@ -414,14 +332,10 @@ Specify the Key, Kype, and Value attributes to modify an existing parameter in t
 
 *Payload Properties*
 
-
-
 </td>
 <td valign="top">
 
 Define a key and value to modify the payload attached to AS4 message.
-
-
 
 </td>
 </tr>
@@ -438,14 +352,10 @@ Select the *Security* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -454,14 +364,10 @@ Description
 
 *WS-Security Type* 
 
-
-
 </td>
 <td valign="top">
 
 Ensures security implemented in web services for SOAP based messages.
-
-
 
 </td>
 </tr>
@@ -469,8 +375,6 @@ Ensures security implemented in web services for SOAP based messages.
 <td valign="top">
 
 *Sign and Enrypt Message* 
-
-
 
 </td>
 <td valign="top">
@@ -497,8 +401,6 @@ The valid values are:
 
 *Sign Message* 
 
-
-
 </td>
 <td valign="top">
 
@@ -522,14 +424,10 @@ The valid values are:
 
 *Private Key Alias for Signing* 
 
-
-
 </td>
 <td valign="top">
 
 Specify an alias for the tenant private key that is to be used to sign the message. The tenant private key is used to sign the request message \(that is sent to the WS provider \(receiver\)\). The tenant private key has to be part of the tenant keystore.
-
-
 
 </td>
 </tr>
@@ -537,8 +435,6 @@ Specify an alias for the tenant private key that is to be used to sign the messa
 <td valign="top">
 
 *Signature Algorithm* 
-
-
 
 </td>
 <td valign="top">
@@ -567,8 +463,6 @@ The valid values are:
 
 \(only if you select *Sign and Encrypt Message*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -578,8 +472,6 @@ The receiver \(WS provider\) public key is used to encrypt the request message \
 
 You can also set the value of this attribute dynamically by using the header `SAP_AS4_Outbound_Encryption_Cert`. Use this header to set the certificate value to X509 certificate object.
 
-
-
 </td>
 </tr>
 <tr>
@@ -588,8 +480,6 @@ You can also set the value of this attribute dynamically by using the header `SA
 *Encryption Algorithm*
 
 \(only if you enable *Sign and Encrypt Message*\)
-
-
 
 </td>
 <td valign="top">
@@ -624,14 +514,10 @@ Select the *Receipt* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -639,8 +525,6 @@ Description
 <td valign="top">
 
 *Save Incoming Receipt* 
-
-
 
 </td>
 <td valign="top">
@@ -664,8 +548,6 @@ The valid values are:
 <td valign="top">
 
 *Verify Receipt Signature* 
-
-
 
 </td>
 <td valign="top">
@@ -691,14 +573,10 @@ You can also set the value of this attribute dynamically using the header `SAP_A
 
 *Public Key Alias* 
 
-
-
 </td>
 <td valign="top">
 
 Enter an alias name to select a public key and corresponding certificate.
-
-
 
 </td>
 </tr>

@@ -48,14 +48,10 @@ More information on the concepts: [Partner Directory Concepts](partner-directory
 
 Resource
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -63,8 +59,6 @@ Description
 <td valign="top">
 
 Alternative Partners
-
-
 
 </td>
 <td valign="top">
@@ -77,16 +71,12 @@ A partner can be identified by different identifiers. For example, a bank can be
 
 Each alternative partner has three string fields: Agency, Scheme, and ID.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Authorized Users
-
-
 
 </td>
 <td valign="top">
@@ -99,16 +89,12 @@ This entity is required for the authorization of the partner sender system when 
 
 An authorized user has a `user` property \(name of the authorized user\) and a `Pid` property \(internal identifier of the associated partner\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Binary Parameters
-
-
 
 </td>
 <td valign="top">
@@ -125,16 +111,12 @@ Here, you can also specify the encoding for xml, xsl, xsd, json, and text \(sepa
 
 The parameter `Value` of this entity can have a maximum length of 262144 bytes.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Partners
-
-
 
 </td>
 <td valign="top">
@@ -145,16 +127,12 @@ A partner is identified by an internal identifier \(referred to as `Pid`\) \(whi
 
 A partner can have parameters \(StringParameter, BinaryParameter, or UserCredentialParameter\). The parameter is uniquely identified by the Pid of the partner to which the parameter belongs and its Id.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 String Parameters
-
-
 
 </td>
 <td valign="top">
@@ -165,16 +143,12 @@ A Partner Directory parameter has a value and a type. The currently supported pr
 
 A string parameter has a maximum length of 4000 characters.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 User Credential Parameters
-
-
 
 </td>
 <td valign="top">

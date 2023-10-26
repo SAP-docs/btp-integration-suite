@@ -83,14 +83,10 @@ The envelope icon indicates the message's traversal path:
 
 Icon
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -99,14 +95,10 @@ Description
 
 ![](images/TraceIcon1_651cb3c.png)
 
-
-
 </td>
 <td valign="top">
 
 Successfully processed step with trace data available.
-
-
 
 </td>
 </tr>
@@ -115,14 +107,10 @@ Successfully processed step with trace data available.
 
 ![](images/TraceIcon2_4d61abc.png)
 
-
-
 </td>
 <td valign="top">
 
 Error in processed step with trace data available.
-
-
 
 </td>
 </tr>
@@ -131,14 +119,10 @@ Error in processed step with trace data available.
 
 ![](images/TraceIcon3_553cfe0.png)
 
-
-
 </td>
 <td valign="top">
 
 Successfully processed step with no trace data available \(for log level *Info* or *Debug*, or if the trace retention period \(default 60 min\) is exceeded\).
-
-
 
 </td>
 </tr>
@@ -147,14 +131,10 @@ Successfully processed step with no trace data available \(for log level *Info* 
 
 ![](images/TraceIcon4_c2ba836.png)
 
-
-
 </td>
 <td valign="top">
 
 Error in processed step with no trace data available.
-
-
 
 </td>
 </tr>

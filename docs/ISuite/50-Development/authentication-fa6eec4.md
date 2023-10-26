@@ -13,14 +13,10 @@ Different API Proxies may have various authentication mechanisms. The authentica
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Description
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 The internal name of the policy. The value of the name attribute can contain letters, numbers, spaces, hyphens, underscores, and periods. This value cannot exceed 255 characters.
-
-
 
 </td>
 </tr>
@@ -44,8 +36,6 @@ The internal name of the policy. The value of the name attribute can contain let
 <td valign="top">
 
 Type
-
-
 
 </td>
 <td valign="top">
@@ -57,8 +47,6 @@ Basic - Used in situations where simple userid/password-based authentication is 
 Client Certificate – The user provides a digital certificate consisting of a public and private key, which the server verifies to provide access.
 
 oAuth - Used in situations where third-party services are allowed to exchange your information without you having to give away your password.
-
-
 
 </td>
 </tr>

@@ -29,15 +29,11 @@ Create a Function Libraries artifact to which later you can add function library
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -45,15 +41,11 @@ Create a Function Libraries artifact to which later you can add function library
     <td valign="top">
     
     Function Libraries \(only for upload\)
-
-
     
     </td>
     <td valign="top">
     
     Upload a .zip file containing the resources.
-
-
     
     </td>
     </tr>
@@ -61,15 +53,11 @@ Create a Function Libraries artifact to which later you can add function library
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the Function Libraries.
-
-
     
     </td>
     </tr>
@@ -77,15 +65,11 @@ Create a Function Libraries artifact to which later you can add function library
     <td valign="top">
     
     ID
-
-
     
     </td>
     <td valign="top">
     
     Uniquely identifies the Function Libraries.
-
-
     
     </td>
     </tr>
@@ -93,15 +77,11 @@ Create a Function Libraries artifact to which later you can add function library
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     Description of the Function Libraries and its purpose.
-
-
     
     </td>
     </tr>

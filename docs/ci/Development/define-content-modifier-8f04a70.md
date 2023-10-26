@@ -61,15 +61,11 @@ Note that data written to the message header during a processing step, for examp
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -77,8 +73,6 @@ Note that data written to the message header during a processing step, for examp
     <td valign="top">
     
     *Action* 
-
-
     
     </td>
     <td valign="top">
@@ -86,8 +80,6 @@ Note that data written to the message header during a processing step, for examp
     You can specify whether the Content Modifier should create or delete the header or property defined by the table row.
 
     You must specify the name of the header or property you want to delete.
-
-
     
     </td>
     </tr>
@@ -95,15 +87,11 @@ Note that data written to the message header during a processing step, for examp
     <td valign="top">
     
     *Name* 
-
-
     
     </td>
     <td valign="top">
     
     Name under which the specified data has to be stored in the selected header or property data container.
-
-
     
     </td>
     </tr>
@@ -111,8 +99,6 @@ Note that data written to the message header during a processing step, for examp
     <td valign="top">
     
     *Source Type* 
-
-
     
     </td>
     <td valign="top">
@@ -227,15 +213,11 @@ Note that data written to the message header during a processing step, for examp
     <td valign="top">
     
     *Source Value* 
-
-
     
     </td>
     <td valign="top">
     
     Value of the property
-
-
     
     </td>
     </tr>
@@ -245,8 +227,6 @@ Note that data written to the message header during a processing step, for examp
     *Data Type*
 
     \(If you've selected *XPath* or *Expression* as *Type*\)
-
-
     
     </td>
     <td valign="top">
@@ -258,8 +238,6 @@ Note that data written to the message header during a processing step, for examp
     If the XPath contains a namespace prefix, specify the association between the namespace and the prefix on the Runtime Configuration tab page of the integration flow Properties view.
 
     To enter an XPath, browse for an XPath from the lookup in the *Value* column.
-
-
     
     </td>
     </tr>
@@ -269,15 +247,11 @@ Note that data written to the message header during a processing step, for examp
     *Default Value*
 
     \(If you've selected *Local Variable* or *Global Variable* as *Type*\)
-
-
     
     </td>
     <td valign="top">
     
     If you have selected *Local Variable* or *Global Variable* as *Type*, the value specified as *Default* will be assigned to the header value if the variable is not found at runtime.
-
-
     
     </td>
     </tr>
@@ -295,15 +269,11 @@ Note that data written to the message header during a processing step, for examp
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -311,15 +281,11 @@ Note that data written to the message header during a processing step, for examp
     <td valign="top">
     
     **Type**
-
-
     
     </td>
     <td valign="top">
     
     The default value is *Expression*. If the payload contains expressions within it, then set the type as *Expression*; if the payload is huge and it has no expressions within it, then it is recommended to use the type *Constant*.
-
-
     
     </td>
     </tr>
@@ -327,8 +293,6 @@ Note that data written to the message header during a processing step, for examp
     <td valign="top">
     
     **Body**
-
-
     
     </td>
     <td valign="top">
@@ -380,14 +344,10 @@ In a first content modifier, specify the following settings in the *Exchange Pro
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -396,14 +356,10 @@ Value
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 timestamp
-
-
 
 </td>
 </tr>
@@ -412,14 +368,10 @@ timestamp
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 Expression
-
-
 
 </td>
 </tr>
@@ -428,14 +380,10 @@ Expression
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
-
-
 
 </td>
 </tr>
@@ -444,14 +392,10 @@ java.lang.String
 
 Value
 
-
-
 </td>
 <td valign="top">
 
 $\{date:now:yyyy-MM-dd HH:mm:ss\}
-
-
 
 </td>
 </tr>

@@ -19,7 +19,7 @@ You can use this procedure to modify the parameters that you entered when creati
 
 ## Procedure
 
-1.  Choose *Design* \> *Integrations*.
+1.  Choose *Design* \> *Integrations and APIs*.
 
 2.  Choose the integration package that contains the OData artifact for which the details need to be changed.
 
@@ -33,15 +33,11 @@ You can use this procedure to modify the parameters that you entered when creati
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -49,15 +45,11 @@ You can use this procedure to modify the parameters that you entered when creati
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the OData API.
-
-
     
     </td>
     </tr>
@@ -65,15 +57,11 @@ You can use this procedure to modify the parameters that you entered when creati
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     Description of the OData API and its purpose.
-
-
     
     </td>
     </tr>
@@ -81,15 +69,11 @@ You can use this procedure to modify the parameters that you entered when creati
     <td valign="top">
     
     Namespace
-
-
     
     </td>
     <td valign="top">
     
     Logical grouping of the OData API.
-
-
     
     </td>
     </tr>

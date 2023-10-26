@@ -110,14 +110,10 @@ An example payload for the policy is as follows:
 
 **Elements & Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -126,14 +122,10 @@ An example payload for the policy is as follows:
 
 IPRules \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 This is the parent element containing the rules to allow or deny IP addresses.
-
-
 
 </td>
 </tr>
@@ -141,8 +133,6 @@ This is the parent element containing the rules to allow or deny IP addresses.
 <td valign="top">
 
 noRuleMatchAction \(Mandatory\)
-
-
 
 </td>
 <td valign="top">
@@ -155,16 +145,12 @@ The default value is `ALLOW`.
 
 Syntax: `<IPRules noRuleMatchAction = "ALLOW">`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 MatchRule action \(Mandatory\)
-
-
 
 </td>
 <td valign="top">
@@ -198,14 +184,10 @@ The default value is `ALLOW`.
 
 SourceAddress \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 This element indicates the IP address range of a client. The valid IP address of the consumer in dotted decimal notation is a valid value. For example, `127.0.0.1`.
-
-
 
 </td>
 </tr>
@@ -213,8 +195,6 @@ This element indicates the IP address range of a client. The valid IP address of
 <td valign="top">
 
 Mask \(Mandatory\)
-
-
 
 </td>
 <td valign="top">
@@ -233,8 +213,6 @@ For example:
 
 Then, all the IP Addresses with the pattern `20.10.*` are allowed to access the proxy.
 
-
-
 </td>
 </tr>
 </table>
@@ -250,14 +228,10 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -266,14 +240,10 @@ Cause
 
 ClientIpExtractionFailed
 
-
-
 </td>
 <td valign="top">
 
 See fault string.
-
-
 
 </td>
 </tr>
@@ -282,14 +252,10 @@ See fault string.
 
 IPDeniedAccess
 
-
-
 </td>
 <td valign="top">
 
 See fault string.
-
-
 
 </td>
 </tr>
@@ -298,14 +264,10 @@ See fault string.
 
 InvalidIPAddress
 
-
-
 </td>
 <td valign="top">
 
 See fault string.
-
-
 
 </td>
 </tr>
@@ -314,14 +276,10 @@ See fault string.
 
 InvalidIPv4Address
 
-
-
 </td>
 <td valign="top">
 
 See fault string.
-
-
 
 </td>
 </tr>
@@ -330,14 +288,10 @@ See fault string.
 
 InvalidIPv6Address
 
-
-
 </td>
 <td valign="top">
 
 See fault string.
-
-
 
 </td>
 </tr>
@@ -346,14 +300,10 @@ See fault string.
 
 InvalidRulePattern
 
-
-
 </td>
 <td valign="top">
 
 See fault string.
-
-
 
 </td>
 </tr>
@@ -370,21 +320,15 @@ Following fault variables are set when the policy triggers an error at runtime:
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -393,8 +337,6 @@ Example
 
 \[prefix\].\[policy\_name\].failed
 
-
-
 </td>
 <td valign="top">
 
@@ -402,14 +344,10 @@ The \[prefix\] is acl.
 
 The \[policy\_name\] is the name of the policy that threw the error.
 
-
-
 </td>
 <td valign="top">
 
 acl.AC-AllowAccess.failed = true
-
-
 
 </td>
 </tr>
@@ -418,21 +356,15 @@ acl.AC-AllowAccess.failed = true
 
 fault.\[error\_name\]
 
-
-
 </td>
 <td valign="top">
 
 \[error\_name\] = The specific error name to check for as listed in the table above.
 
-
-
 </td>
 <td valign="top">
 
 fault.name = "IPDeniedAccess"
-
-
 
 </td>
 </tr>

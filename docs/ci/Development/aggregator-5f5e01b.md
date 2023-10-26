@@ -112,14 +112,10 @@ The following Aggregation strategy has been defined for the Aggregator step:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -128,14 +124,10 @@ Value
 
 Incoming Format
 
-
-
 </td>
 <td valign="top">
 
 XML \(Same Format\)
-
-
 
 </td>
 </tr>
@@ -144,14 +136,10 @@ XML \(Same Format\)
 
 Aggregation Algorithm
 
-
-
 </td>
 <td valign="top">
 
 Combine
-
-
 
 </td>
 </tr>
@@ -160,14 +148,10 @@ Combine
 
 Last Message Condition \(XPath\)
 
-
-
 </td>
 <td valign="top">
 
 ns0:Item/LastMessageIndicator='X'
-
-
 
 </td>
 </tr>
@@ -176,14 +160,10 @@ ns0:Item/LastMessageIndicator='X'
 
 Completion Timeout \(in min\)
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -192,14 +172,10 @@ Completion Timeout \(in min\)
 
 Data Store Name
 
-
-
 </td>
 <td valign="top">
 
 Aggregator-EIP
-
-
 
 </td>
 </tr>

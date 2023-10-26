@@ -31,14 +31,10 @@ The following table provides examples of how to use the Script step with these i
 
 Use Case
 
-
-
 </th>
 <th valign="top">
 
 Example Requests / More Information
-
-
 
 </th>
 </tr>
@@ -46,8 +42,6 @@ Example Requests / More Information
 <td valign="top">
 
 Access credentials from a *Secure Parameter* or *User Credentials* artifact and retrieve user and password
-
-
 
 </td>
 <td valign="top">
@@ -105,8 +99,6 @@ def Message processData(Message message) {
 
 Access a certificate from a tenant keystore
 
-
-
 </td>
 <td valign="top">
 
@@ -138,14 +130,10 @@ def Message processData(Message message) {
 
 Access a certificate chain from a tenant keystore
 
-
-
 </td>
 <td valign="top">
 
 You can apply the `getCertificateChain(String alias)` method on an instance of `KeystoreService`:
-
-
 
 </td>
 </tr>
@@ -153,8 +141,6 @@ You can apply the `getCertificateChain(String alias)` method on an instance of `
 <td valign="top">
 
 Access a key from a tenant keystore \(associated with an alias\)
-
-
 
 </td>
 <td valign="top">
@@ -187,8 +173,6 @@ def Message processData(Message message) {
 
 Get an access token and user name for an *OAuth2 Authorization Code*credential.
 
-
-
 </td>
 <td valign="top">
 
@@ -209,8 +193,6 @@ def Message processData(Message message) {
 ```
 
 The following SAP Community blog provides an example: [Cloud Integration – Call Microsoft Graph API with OAuth 2.0 Authorization Code](https://blogs.sap.com/2021/01/11/cloud-integration-call-microsoft-graph-api-with-oauth-2.0-authorization-code/)
-
-
 
 </td>
 </tr>

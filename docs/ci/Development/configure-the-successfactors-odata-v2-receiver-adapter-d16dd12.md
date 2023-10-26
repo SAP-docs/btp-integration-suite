@@ -42,14 +42,10 @@ Select the *General* tab and provide information as described as follows:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -58,14 +54,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter a name for the channel.
-
-
 
 </td>
 </tr>
@@ -74,14 +66,10 @@ Enter a name for the channel.
 
 *Description*
 
-
-
 </td>
 <td valign="top">
 
 Enter an optional description for the channel.
-
-
 
 </td>
 </tr>
@@ -98,14 +86,10 @@ Select the *Connection* tab and provide information as described as follows:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -114,16 +98,12 @@ Description
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 URL of the SuccessFactors data center that you're connecting to.
 
 You can browse and select a SuccessFactors data center URL by using the *Select* option.
-
-
 
 </td>
 </tr>
@@ -132,14 +112,10 @@ You can browse and select a SuccessFactors data center URL by using the *Select*
 
 *Address Suffix* 
 
-
-
 </td>
 <td valign="top">
 
 The field is auto-populated with `/odata/v2`. Don't edit the field.
-
-
 
 </td>
 </tr>
@@ -148,14 +124,10 @@ The field is auto-populated with `/odata/v2`. Don't edit the field.
 
 *Proxy Type* 
 
-
-
 </td>
 <td valign="top">
 
 Type of proxy you want to use for connecting to SuccessFactors OData V2 service. Choose *Internet*. There are other proxy types that are irrelevant for this adapter that you can ignore.
-
-
 
 </td>
 </tr>
@@ -163,8 +135,6 @@ Type of proxy you want to use for connecting to SuccessFactors OData V2 service.
 <td valign="top">
 
 *Authentication*
-
-
 
 </td>
 <td valign="top">
@@ -185,14 +155,10 @@ Select one of the following authentication methods:
 
 *Credential Name* 
 
-
-
 </td>
 <td valign="top">
 
 Name of the credentials that you've deployed in *Security Material* in Operations View.
-
-
 
 </td>
 </tr>
@@ -200,8 +166,6 @@ Name of the credentials that you've deployed in *Security Material* in Operation
 <td valign="top">
 
 *Accept-Encoding*
-
-
 
 </td>
 <td valign="top">
@@ -222,14 +186,10 @@ Compresses the response data from SuccessFactors so that you improve the message
 
 *Reuse Connection*
 
-
-
 </td>
 <td valign="top">
 
 The option is enabled by default. This option enables the reuse of connection objects from the internal connection pool which in turn improves the network turnaround time for multiple communications to a same end point.
-
-
 
 </td>
 </tr>
@@ -246,14 +206,10 @@ Select the *Processing* tab and provide information as described as follows:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -261,8 +217,6 @@ Description
 <td valign="top">
 
 *Operation Details* 
-
-
 
 </td>
 <td valign="top">
@@ -284,16 +238,12 @@ Operation that you want to perform on the SuccessFactors OData V2 service. Suppo
 
 To leverage all operations, always use the latest version of the adapter.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Resource Path* 
-
-
 
 </td>
 <td valign="top">
@@ -316,14 +266,10 @@ Choose *Select* to launch the [modeling operation](configure-the-successfactors-
 
 \(only for *PUT* and *POST* operations\)
 
-
-
 </td>
 <td valign="top">
 
 The fields in the entity that you want to modify. You can add this using the [Model Operation Wizard](configure-the-successfactors-odata-v2-receiver-adapter-d16dd12.md#loiod16dd12c5c5649e99c8939879a77f9c0__model-operation).
-
-
 
 </td>
 </tr>
@@ -334,14 +280,10 @@ The fields in the entity that you want to modify. You can add this using the [Mo
 
 \(only for *GET* operations\)
 
-
-
 </td>
 <td valign="top">
 
 Additional options that you want to add to the query like `$top` or how to order the results using *orderby*. You can add this using the Model Operation Wizard.
-
-
 
 </td>
 </tr>
@@ -352,14 +294,10 @@ Additional options that you want to add to the query like `$top` or how to order
 
 \(only for *POST* – UPSERT operation\)
 
-
-
 </td>
 <td valign="top">
 
 Select to perform multiple operations in one request to the OData V2 service in the `$batch` mode.
-
-
 
 </td>
 </tr>
@@ -368,14 +306,10 @@ Select to perform multiple operations in one request to the OData V2 service in 
 
 *Custom Query Options* 
 
-
-
 </td>
 <td valign="top">
 
 Query options that are specific to the SuccessFactors OData V2 service like `purge`.
-
-
 
 </td>
 </tr>
@@ -385,8 +319,6 @@ Query options that are specific to the SuccessFactors OData V2 service like `pur
 *Content Type*
 
 \(only for *PUT* and *POST* operations\)
-
-
 
 </td>
 <td valign="top">
@@ -409,8 +341,6 @@ Select one of the following content options:
 
 \(only for *PUT* and *POST* operations\)
 
-
-
 </td>
 <td valign="top">
 
@@ -431,8 +361,6 @@ Select one of the options. You can either encode the content using UTF-8 or not 
 *Pagination*
 
 \(only for *GET* – QUERY operation\)
-
-
 
 </td>
 <td valign="top">
@@ -460,8 +388,6 @@ By default the value is set to *Server Snapshot-Based* which is the recommended 
 
 \(only for *GET* operation\)
 
-
-
 </td>
 <td valign="top">
 
@@ -469,16 +395,12 @@ Maximum number of records in one page from the available results fetched from th
 
 If set to empty, fetches the default page size which is 1000 records.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Retry on Failure* 
-
-
 
 </td>
 <td valign="top">
@@ -513,8 +435,6 @@ By default, retry is enabled. This option enables you to mitigate intermittent n
 
 \(only for *GET* – QUERY operation\)
 
-
-
 </td>
 <td valign="top">
 
@@ -531,8 +451,6 @@ To use *Process in Pages*, you must use the adapter in a *Local Integration Proc
 
 This option isn’t enabled for *Content Enricher*.
 
-
-
 </td>
 </tr>
 <tr>
@@ -540,14 +458,10 @@ This option isn’t enabled for *Content Enricher*.
 
 *Timeout \(in min\)* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum time the system waits for a response before terminating the connection.
-
-
 
 </td>
 </tr>
@@ -555,8 +469,6 @@ Maximum time the system waits for a response before terminating the connection.
 <td valign="top">
 
 *HEADER DETAILS* 
-
-
 
 </td>
 <td valign="top">
@@ -568,8 +480,6 @@ If the value \* is entered, **all** the message headers are converted to HTTP re
 *Response Headers* : Provide the **| \(Pipe\)** separated value list of HTTP response headers. The received header values are converted to message/exchange headers.
 
 If the value \* is entered, **all** the HTTP response header values are converted to message/exchange headers.
-
-
 
 </td>
 </tr>
@@ -598,14 +508,10 @@ There are two main steps in this wizard:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -613,8 +519,6 @@ Description
 <td valign="top">
 
 *Connection Source* 
-
-
 
 </td>
 <td valign="top">
@@ -625,8 +529,6 @@ If you choose *Remote*, you've to manually specify all the details like address 
 
 If you choose *Local EDMX File*, you select the service definition EDMX file that contains all these details that you specified manually when you selected *Remote*.
 
-
-
 </td>
 </tr>
 <tr>
@@ -636,14 +538,10 @@ If you choose *Local EDMX File*, you select the service definition EDMX file tha
 
 \(only if you select *Connection Source* as *Local EDMX File*\).
 
-
-
 </td>
 <td valign="top">
 
 Choose *Select* to select the EDMX service schema. You can also manually upload it from your local file system.
-
-
 
 </td>
 </tr>
@@ -652,14 +550,10 @@ Choose *Select* to select the EDMX service schema. You can also manually upload 
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 URL of the service that you want to access. If you're connecting to an on-premise system, enter the *Virtual Host* in your Cloud Connector installation.
-
-
 
 </td>
 </tr>
@@ -670,14 +564,10 @@ URL of the service that you want to access. If you're connecting to an on-premis
 
 \(only if you select *Connection Source* as *Remote*.\)
 
-
-
 </td>
 <td valign="top">
 
 Type of proxy that you want to use to connect to the service.
-
-
 
 </td>
 </tr>
@@ -688,14 +578,10 @@ Type of proxy that you want to use to connect to the service.
 
 \(only if you select *Proxy Type* as *On-Premise*\).
 
-
-
 </td>
 <td valign="top">
 
 Location ID that you've configured in the Cloud Connector installation.
-
-
 
 </td>
 </tr>
@@ -703,8 +589,6 @@ Location ID that you've configured in the Cloud Connector installation.
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -723,14 +607,10 @@ Location ID that you've configured in the Cloud Connector installation.
 
 *Credential Name* 
 
-
-
 </td>
 <td valign="top">
 
 Provide the credential name that you deployed in *Operations View*.
-
-
 
 </td>
 </tr>
@@ -745,14 +625,10 @@ Provide the credential name that you deployed in *Operations View*.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -761,14 +637,10 @@ Description
 
 *Operation* 
 
-
-
 </td>
 <td valign="top">
 
 Select the operation that you want to perform.
-
-
 
 </td>
 </tr>
@@ -777,14 +649,10 @@ Select the operation that you want to perform.
 
 *Sub-Levels* 
 
-
-
 </td>
 <td valign="top">
 
 Sublevels of the entity that you want to access. For example, if you want to access the field *Description* in the entity *Products*, and the field is located at *Category* \> *Products* \> *Description*, you select the *Sub Levels* as `3` since the field you want to access is at the third level.
-
-
 
 </td>
 </tr>
@@ -793,14 +661,10 @@ Sublevels of the entity that you want to access. For example, if you want to acc
 
 *Select Entity* 
 
-
-
 </td>
 <td valign="top">
 
 Entity that you want to perform the operation on.
-
-
 
 </td>
 </tr>
@@ -809,14 +673,10 @@ Entity that you want to perform the operation on.
 
 *Fields* 
 
-
-
 </td>
 <td valign="top">
 
 Fields associated with the entity that you want to perform the operation on.
-
-
 
 </td>
 </tr>
@@ -825,16 +685,12 @@ Fields associated with the entity that you want to perform the operation on.
 
 *Top* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the top 'n' number of entries to be fetched.
 
 For more information, see **Top System Query Option \($top\)** in [OData V2 URI Conventions](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
-
-
 
 </td>
 </tr>
@@ -843,16 +699,12 @@ For more information, see **Top System Query Option \($top\)** in [OData V2 URI 
 
 *Skip* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the top 'n' number of entries to be skipped and the rest of the entries are fetched.
 
 For more information, see **Skip System Query Option \($skip\)** in [OData V2 URI Conventions](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
-
-
 
 </td>
 </tr>
@@ -869,14 +721,10 @@ This step is available only for data fetch operations, *Query\(GET\), and* *Read
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -884,8 +732,6 @@ Description
 <td valign="top">
 
 *Filter By* 
-
-
 
 </td>
 <td valign="top">
@@ -909,14 +755,10 @@ Select the field that you want to use as reference for filtering, choose the ope
 
 *Sort By* 
 
-
-
 </td>
 <td valign="top">
 
 Select the field that you want to use as sorting parameter and choose *Ascending* or *Descending* order.
-
-
 
 </td>
 </tr>

@@ -38,21 +38,15 @@ The following table lists the options for setting up secure connections for the 
 
 Authentication
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 How to configure \(checklist\) ...
-
-
 
 </th>
 </tr>
@@ -60,8 +54,6 @@ How to configure \(checklist\) ...
 <td valign="top">
 
 Basic
-
-
 
 </td>
 <td valign="top">
@@ -71,8 +63,6 @@ Cloud Integration authenticates itself against receiver system is based on user 
 Supported by the following receiver adapters: AS2 \(only for Enterprise license\), OData, HTTP, IDoc, ODC, SOAP \(SOAP 1.x\), SOAP \(SAP RM\), SuccessFactors
 
 More information: [Basic Authentication](basic-authentication-a5d77b1.md)
-
-
 
 </td>
 <td valign="top">
@@ -92,16 +82,12 @@ More information:
 
 [Setting Up Outbound HTTP Connections \(with Basic Authentication\)](setting-up-outbound-http-connections-with-basic-authentication-2d808e7.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Client certificate
-
-
 
 </td>
 <td valign="top">
@@ -111,8 +97,6 @@ Cloud Integration authenticates itself against receiver system is based on a cli
 Supported by the following receiver adapters: Ariba, AS2 \(only for Enterprise license\), OData, HTTP, IDoc, SOAP \(SOAP 1.x\), SOAP \(SAP RM\)
 
 More information: [Client Certificate Authentication \(Outbound\)](client-certificate-authentication-outbound-c4e4a15.md)
-
-
 
 </td>
 <td valign="top">
@@ -132,16 +116,12 @@ More information:
 
 [Setting Up Outbound HTTP Connections \(with Client Certificate Authentication\)](setting-up-outbound-http-connections-with-client-certificate-authentication-f7597d2.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Principal propagation
-
-
 
 </td>
 <td valign="top">
@@ -150,16 +130,12 @@ Cloud Integration authenticates itself against the receiver system by forwarding
 
 Supported by the following receiver adapters: OData, HTTP, IDoc, ODC, SOAP \(SOAP 1.x\), SOAP \(SAP RM\)
 
-
-
 </td>
 <td valign="top">
 
 More information:
 
 [Setting Up Principal Propagation \(Example Scenario\)](setting-up-principal-propagation-example-scenario-34eff84.md)
-
-
 
 </td>
 </tr>
@@ -168,14 +144,10 @@ More information:
 
 OAuth
 
-
-
 </td>
 <td valign="top">
 
 Cloud Integration authenticates itself against the receiver system by using OAuth.
-
-
 
 </td>
 <td valign="top">
@@ -184,16 +156,12 @@ More information:
 
 [Setting Up Outbound HTTP Connections \(with OAuth\)](setting-up-outbound-http-connections-with-oauth-cb7abee.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OAuth with Twitter and Facebook adapter
-
-
 
 </td>
 <td valign="top">
@@ -203,8 +171,6 @@ Using the Twitter or Facebook receiver adapter, you can connect Cloud Integratio
 Supported by the following receiver adapters: Twitter, Facebook
 
 More information: [OAuth 2.0](oauth-2-0-3823134.md#loio382313443b8d4453b0fd536b82b9e15d)
-
-
 
 </td>
 <td valign="top">

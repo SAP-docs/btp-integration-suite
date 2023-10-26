@@ -15,21 +15,15 @@ The structure of an API proxy is as follows:
 
 Folder Name
 
-
-
 </th>
 <th valign="top">
 
 Path
 
-
-
 </th>
 <th valign="top">
 
 Contents
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Contents
 
 APIProxy
 
-
-
 </td>
 <td valign="top">
 
 \\API Proxy
 
-
-
 </td>
 <td valign="top">
 
 Root folder that contains the APIProxyEndPoint, APITargetEndPoint, APIResource, Documentation, FileResource, and Policy information.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Root folder that contains the APIProxyEndPoint, APITargetEndPoint, APIResource, 
 
 APIProxyEndPoint
 
-
-
 </td>
 <td valign="top">
 
 \\API Proxy\\APIProxyEndPoint
 
-
-
 </td>
 <td valign="top">
 
 This folder has a `<Proxy Endpoint name>.xmlContains one file for every resource associated with the APIProxy. Each` file that contains information about Proxy Endpoint, resources, documentation, and the policy assignments on the proxy endpoint stream.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ This folder has a `<Proxy Endpoint name>.xmlContains one file for every resource
 
 APIResource
 
-
-
 </td>
 <td valign="top">
 
 \\API Proxy\\APIResource\\
 
-
-
 </td>
 <td valign="top">
 
 `Contains one file for every resource associated with the APIProxy. Each<API Resource name>.xml`file contains the API resource details such as resource name, title, documentation, and so on.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ APIResource
 
 Documentation
 
-
-
 </td>
 <td valign="top">
 
 \\API Proxy\\Documentation
 
-
-
 </td>
 <td valign="top">
 
 Contains one documentation file for every resource. Each document follows the naming convention `<APIResource name>_<language>.html`. For example, if the API Resource name is *PurchaseOrder* and the supported language is *English*, then the document file name is *PurchaseOrder\_en.html*. The file provides the documentation content relevant to the associated resource.
-
-
 
 </td>
 </tr>
@@ -130,14 +100,10 @@ Contains one documentation file for every resource. Each document follows the na
 
 FileResource
 
-
-
 </td>
 <td valign="top">
 
 \\API Proxy\\FileResource
-
-
 
 </td>
 <td valign="top">
@@ -157,21 +123,15 @@ Lists all the scripts attached to the policy. Only Java, Python, and XSL Scripts
 
 Policy
 
-
-
 </td>
 <td valign="top">
 
 \\API Proxy\\Policy
 
-
-
 </td>
 <td valign="top">
 
 Contains a list of all policies attached to the API Proxy. Each policy is available as a separate file with the naming convention `<Policy name>.xml`. The folder should also contain a *defaultRaiseFaultPolicy.xml*.
-
-
 
 </td>
 </tr>
@@ -180,21 +140,15 @@ Contains a list of all policies attached to the API Proxy. Each policy is availa
 
 `<APIProxyName>.xml` 
 
-
-
 </td>
 <td valign="top">
 
 \\API Proxy\\`<APIProxyName>.xml` 
 
-
-
 </td>
 <td valign="top">
 
 This file contains the header information of the proxy endpoint, target endpoint, policies, and file resources.
-
-
 
 </td>
 </tr>

@@ -4,15 +4,17 @@
 
 # Custom Type Systems
 
-The library of custom type systems allows you to upload custom messages – this enables you to create MIGs and MAGs based on your own message structures. Use cases for this could be proprietary messages, standard messages extended by you and messages from B2B standards not available in the SAP Integration Suite. With this feature, you can:
+The library of custom type systems allows you to upload custom messages and custom IDocs – this enables you to create MIGs and MAGs based on your own message structures. Use cases for this could be proprietary messages, standard messages extended by you and messages from B2B standards not available in the system. With this feature, you can:
 
 -   Upload custom interface xsd files
 
+-   Upload custom IDocs
 -   Create MIG and MAG
 -   Customize your MIG
 -   View the list of your custom messages
+-   View the list of your custom IDocs
 
-To upload and use custom messages in SAP Integration Suite, you need to have a custom type system. Follow the procedure given below to do the same.
+To upload and use custom messages or custom IDocs, you need to have a custom type system. Follow the procedure given below to do the same.
 
 
 
@@ -22,10 +24,10 @@ To upload and use custom messages in SAP Integration Suite, you need to have a c
 
 1.  Navigate to *Custom Type Systems* <span class="SAP-icons"></span> icon from the left pane of your application.
 
-2.  Choose *Enable* to create a custom type system.
+2.  Choose *Add* to create a custom type system.
 
     > ### Note:  
-    > Currently SAP Integration Suite supports only one custom type system which serves as container for all your custom messages.
+    > Currently the application supports only one custom type system each for custom messages and IDocs.
 
 3.  Choose and open the type system. The *Overview* tab provides you with the following details :
     -   General information

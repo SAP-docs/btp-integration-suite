@@ -38,14 +38,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -53,8 +49,6 @@ Description
 <td valign="top">
 
 *Address* 
-
-
 
 </td>
 <td valign="top">
@@ -69,16 +63,12 @@ Also in case the CamelDestinationOverrideUrl header has been set by another proc
 
 The endpoint URL that is actually used at runtime is displayed in the message processing log \(MPL\) in the message monitoring application \(MPL property `RealDestinationUrl`\). Note that you can manually configure the endpoint URL using the *Address* attribute of the adapter. However, there are several ways to dynamically override the value of this attribute \(for example, by using the Camel header `CamelHttpUri`\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *URL to WSDL*
-
-
 
 </td>
 <td valign="top">
@@ -101,14 +91,10 @@ In the *Resources* view, you can upload an individual WSDL file or an archive fi
 
 *Service* 
 
-
-
 </td>
 <td valign="top">
 
 Name of the selected service contained in the referenced WSDL.
-
-
 
 </td>
 </tr>
@@ -116,8 +102,6 @@ Name of the selected service contained in the referenced WSDL.
 <td valign="top">
 
 *Endpoint*
-
-
 
 </td>
 <td valign="top">
@@ -136,14 +120,10 @@ Name of the selected port of  a selected service \(that you provide in the Serv
 
 *Operation Name*
 
-
-
 </td>
 <td valign="top">
 
 Name of the operation of the selected service \(that you provide in the Service Name field\) contained in the referenced WSDL.
-
-
 
 </td>
 </tr>
@@ -151,8 +131,6 @@ Name of the operation of the selected service \(that you provide in the Service 
 <td valign="top">
 
 *Proxy Type*
-
-
 
 </td>
 <td valign="top">
@@ -165,8 +143,6 @@ Select *On-Premise* if you are connecting to on-premise system.
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -174,14 +150,10 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 
 *Location ID* \(only in case *On-Premise* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to a Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side. You can also enter `${header.headername}` or `${property.propertyname}` to dynamically read the value from a header or a property.
-
-
 
 </td>
 </tr>
@@ -189,8 +161,6 @@ To connect to a Cloud Connector instance associated with your account, enter the
 <td valign="top">
 
 *Authentication*
-
-
 
 </td>
 <td valign="top">
@@ -220,16 +190,12 @@ You can select one of the following authentication methods:
 
 *Private Key Alias* \(only in case *Client Certificate* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Allows you to enter the private key alias name that gets the private key from the keystore and authenticates you to the receiver in an HTTPS communication.
 
 You can also enter `${header.headername}` or `${property.propertyname}` to dynamically read the value from a header or a property.
-
-
 
 </td>
 </tr>
@@ -238,14 +204,10 @@ You can also enter `${header.headername}` or `${property.propertyname}` to dynam
 
 *Credential Name* \(only in case *Basic* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Name of the *User Credentials* artifact that contains the credentials for basic authentication
-
-
 
 </td>
 </tr>
@@ -253,8 +215,6 @@ Name of the *User Credentials* artifact that contains the credentials for basic 
 <td valign="top">
 
 *Timeout*
-
-
 
 </td>
 <td valign="top">
@@ -265,8 +225,6 @@ The default value is 60000 milliseconds \(1 minute\).
 
 Note that the timeout setting has no influence on the Transmission Control Protocol \(TCP\) timeout if the receiver or any additional component interconnected between the Cloud Integration tenant and the receiver has a lower timeout. For example, consider that you have configured a receiver channel timeout of 10 minutes and there is another component involved with a timeout of 5 minutes. If nothing is transferred for a period of time, the connection will be closed after the fifth minute. In HTTP communication spanning multiple components \(for example, from a sender, through the load balancer, to a Cloud Integration tenant, and from there to a receiver\), the actual timeout period is influenced by each of the timeout settings of the individual components that are interconnected between the sender and receiver \(to be more exact, of those components that can control the TCP session\). The component or device with the lowest number set for the idle session timeout will determine the timeout that will be used.
 
-
-
 </td>
 </tr>
 <tr>
@@ -274,14 +232,10 @@ Note that the timeout setting has no influence on the Transmission Control Proto
 
 *Compress Message*
 
-
-
 </td>
 <td valign="top">
 
 Enables the WS endpoint to send compressed request messages to the WS provider and to indicate to the WS provider that it can handle compressed response messages.
-
-
 
 </td>
 </tr>
@@ -289,8 +243,6 @@ Enables the WS endpoint to send compressed request messages to the WS provider a
 <td valign="top">
 
 *Allow Chunking*
-
-
 
 </td>
 <td valign="top">
@@ -308,8 +260,6 @@ Used for enabling HTTP chunking of data while sending messages.
 <td valign="top">
 
 *Return HTTP Response Code as Header*
-
-
 
 </td>
 <td valign="top">
@@ -332,14 +282,10 @@ This feature is disabled by default.
 
 *Clean Up Request Headers*
 
-
-
 </td>
 <td valign="top">
 
 Select this option to clean up the adapter specific-headers after the receiver call.
-
-
 
 </td>
 </tr>
@@ -354,14 +300,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Definition
-
-
 
 </th>
 </tr>
@@ -369,8 +311,6 @@ Definition
 <td valign="top">
 
 *SAP RM Message ID Determination*
-
-
 
 </td>
 <td valign="top">
@@ -400,8 +340,6 @@ You can choose among the following options:
 <td valign="top">
 
 *Source for SAP RM Message ID* \(only in case *Map* is selected for *SAP RM Message ID Determination*\)
-
-
 
 </td>
 <td valign="top">

@@ -44,22 +44,16 @@ If you want to configure a process to automatically start and run on a particula
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -69,22 +63,16 @@ If you want to configure a process to automatically start and run on a particula
     *Run Once*
 
     Select if you want the message processing to be triggered immediately after you deploy the integration flow.
-
-
     
     </td>
     <td valign="top">
     
     Not Applicable
-
-
     
     </td>
     <td valign="top">
     
     When you use timer with *Run Once* option enabled, the message is triggered immediately after deploying the integration flow. If you want to trigger the message with an integration flow that you’ve already deployed, you have to undeploy the integration flow and deploy it again. If you restart the integration flow bundle, message isn't triggered.
-
-
     
     </td>
     </tr>
@@ -96,22 +84,16 @@ If you want to configure a process to automatically start and run on a particula
     Select if you want the message processing to be triggered on a specific date and time.
 
     The fields *On Date* and *Time Zone* are mandatory. Choose between *On Time* and *Every* based on your use case.
-
-
     
     </td>
     <td valign="top">
     
     On Date
-
-
     
     </td>
     <td valign="top">
     
     Select the date on which you want the message processing to be triggered
-
-
     
     </td>
     </tr>
@@ -119,15 +101,11 @@ If you want to configure a process to automatically start and run on a particula
     <td valign="top">
     
     On Time
-
-
     
     </td>
     <td valign="top">
     
     Select the time at which you want the message processing to be triggered
-
-
     
     </td>
     </tr>
@@ -135,15 +113,11 @@ If you want to configure a process to automatically start and run on a particula
     <td valign="top">
     
     Every
-
-
     
     </td>
     <td valign="top">
     
     Select this option if you want to trigger message processing repeatedly in a specific time interval.
-
-
     
     </td>
     </tr>
@@ -151,15 +125,11 @@ If you want to configure a process to automatically start and run on a particula
     <td valign="top">
     
     Time Zone
-
-
     
     </td>
     <td valign="top">
     
     The time zone that you want to be used as reference for the configured date and time.
-
-
     
     </td>
     </tr>
@@ -167,8 +137,6 @@ If you want to configure a process to automatically start and run on a particula
     <td valign="top">
     
     *Throw exception on schedule expiry* 
-
-
     
     </td>
     <td valign="top">
@@ -176,8 +144,6 @@ If you want to configure a process to automatically start and run on a particula
     The option is enabled by default. If a non-recurring schedule expires, then this option throws validation exception that sets the integration flow status to error in the *Manage Integration Content* tile of the *Monitoring* section.
 
     In case of multiple timer steps – if at least one timer step is expired, the runtime status of the integration artifact goes into "Error" status. If you like to keep the integration artifact in "Started" status, the recommendation is to disable this option.
-
-
     
     </td>
     </tr>
@@ -189,15 +155,11 @@ If you want to configure a process to automatically start and run on a particula
     Select if you want to repeatedly trigger message processing according to a specific schedule.
 
     The fields *Schedule to Recur* and *Time Zone* are mandatory. Choose between *On Time* and *Every* based on your use case.
-
-
     
     </td>
     <td valign="top">
     
     Schedule to Recur
-
-
     
     </td>
     <td valign="top">
@@ -218,15 +180,11 @@ If you want to configure a process to automatically start and run on a particula
     <td valign="top">
     
     On Time
-
-
     
     </td>
     <td valign="top">
     
     Select the time at which you want the message processing to be triggered
-
-
     
     </td>
     </tr>
@@ -234,15 +192,11 @@ If you want to configure a process to automatically start and run on a particula
     <td valign="top">
     
     Every
-
-
     
     </td>
     <td valign="top">
     
     Select this option if you want to trigger message processing repeatedly in a specific time interval.
-
-
     
     </td>
     </tr>
@@ -250,15 +204,11 @@ If you want to configure a process to automatically start and run on a particula
     <td valign="top">
     
     Time Zone
-
-
     
     </td>
     <td valign="top">
     
     The time zone that you want to be used as reference for the configured date and time.
-
-
     
     </td>
     </tr>
@@ -266,8 +216,6 @@ If you want to configure a process to automatically start and run on a particula
     <td valign="top" rowspan="3">
     
     *Advanced* 
-
-
     
     </td>
     <td valign="top">
@@ -283,8 +231,6 @@ If you want to configure a process to automatically start and run on a particula
     Months
 
     Years
-
-
     
     </td>
     <td valign="top">
@@ -292,8 +238,6 @@ If you want to configure a process to automatically start and run on a particula
     Create a schedule by choosing the different units of time measurement available in seconds, minutes, hours, days, months, and years. The resulting time schedule will be a combined configuration from the multiple options that you choose. The default schedule recurs at every 5th minute starting at the 0th second.
 
     With the *Advanced* scheduler option, you can configure complex and granular schedules using combination of various units of time measurement. For example, last day of the month, last weekday of the week, specific days in a month or year, every few minutes, between certain hours, and so on. For sample usecases, read the [blog](https://blogs.sap.com/2023/03/06/sap-integration-suite-advanced-scheduler-configuration/).
-
-
     
     </td>
     </tr>
@@ -301,15 +245,11 @@ If you want to configure a process to automatically start and run on a particula
     <td valign="top">
     
     Time Zone
-
-
     
     </td>
     <td valign="top">
     
     The time zone that you want to be used as reference for the configured date and time.
-
-
     
     </td>
     </tr>
@@ -317,8 +257,6 @@ If you want to configure a process to automatically start and run on a particula
     <td valign="top">
     
     *Throw exception on schedule expiry* 
-
-
     
     </td>
     <td valign="top">
@@ -326,8 +264,6 @@ If you want to configure a process to automatically start and run on a particula
     The option is enabled by default. If a non-recurring schedule expires, then this option throws validation exception that sets the integration flow status to error in the *Manage Integration Content* tile of the *Monitoring* section.
 
     In case of multiple timer steps – if at least one timer step is expired, the runtime status of the integration artifact goes into "Error" status. If you like to keep the integration artifact in "Started" status, the recommendation is to disable this option.
-
-
     
     </td>
     </tr>

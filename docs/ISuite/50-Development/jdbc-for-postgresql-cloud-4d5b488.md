@@ -16,21 +16,15 @@ JDBC receiver adapter supports PostgreSQL cloud database provided by Amazon RDS 
 
 Database Provider
 
-
-
 </td>
 <td valign="top">
 
 Amazon RDS
 
-
-
 </td>
 <td valign="top">
 
 Microsoft Azure
-
-
 
 </td>
 </tr>
@@ -39,14 +33,10 @@ Microsoft Azure
 
 Infrastructure
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Cloud
-
-
 
 </td>
 </tr>
@@ -55,14 +45,10 @@ Cloud
 
 SAP BTP Environment
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Neo and Cloud Foundry
-
-
 
 </td>
 </tr>
@@ -71,21 +57,15 @@ Neo and Cloud Foundry
 
 JDBC URL Pattern
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:postgresql://host:port/database?param1=value1&param2=value2&…`
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:postgresql://host:port/database?param1=value1&param2=value2&…`
-
-
 
 </td>
 </tr>
@@ -94,21 +74,15 @@ JDBC URL Pattern
 
 JDBC URL Example
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:postgresql://mypostgresql:5434/mypostgresdb?ssl=false&loglevel=2`
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:postgresql://mypostgresql:5434/mypostgresdb?ssl=false&loglevel=2`
-
-
 
 </td>
 </tr>

@@ -31,15 +31,11 @@ Depending on the chosen authentication, the following is checked by the test:
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -47,8 +43,6 @@ Depending on the chosen authentication, the following is checked by the test:
     <td valign="top">
     
     *Host* 
-
-
     
     </td>
     <td valign="top">
@@ -56,8 +50,6 @@ Depending on the chosen authentication, the following is checked by the test:
     Enter the host name of the receiver.
 
     The host name must **not** contain any path or schema \(for example, `myHost.org`\). In particular, you must **not** enter a URL as the host name.
-
-
     
     </td>
     </tr>
@@ -65,8 +57,6 @@ Depending on the chosen authentication, the following is checked by the test:
     <td valign="top">
     
     *Port* 
-
-
     
     </td>
     <td valign="top">
@@ -74,8 +64,6 @@ Depending on the chosen authentication, the following is checked by the test:
     Enter the port that is to be used for outbound communication.
 
     Standard port is `22`.
-
-
     
     </td>
     </tr>
@@ -83,8 +71,6 @@ Depending on the chosen authentication, the following is checked by the test:
     <td valign="top">
     
     *Proxy Type* 
-
-
     
     </td>
     <td valign="top">
@@ -98,8 +84,6 @@ Depending on the chosen authentication, the following is checked by the test:
     -   `On-Premise`
 
     For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md) 
-
-
     
     </td>
     </tr>
@@ -107,8 +91,6 @@ Depending on the chosen authentication, the following is checked by the test:
     <td valign="top">
     
     *Location ID* 
-
-
     
     </td>
     <td valign="top">
@@ -116,8 +98,6 @@ Depending on the chosen authentication, the following is checked by the test:
     \(Only if `On-Premise` is selected as *Proxy Type*\)
 
     To connect to a Cloud Connector instance associated with your account, enter the location ID that you 've defined for this instance, in the destination configuration on the cloud side
-
-
     
     </td>
     </tr>
@@ -125,15 +105,11 @@ Depending on the chosen authentication, the following is checked by the test:
     <td valign="top">
     
     *Timeout \(ms\)* 
-
-
     
     </td>
     <td valign="top">
     
     Specifies a timeout \(in milliseconds\) after which the connection to the server \(host\) should be terminated. The default value is 10.000 ms.
-
-
     
     </td>
     </tr>
@@ -141,8 +117,6 @@ Depending on the chosen authentication, the following is checked by the test:
     <td valign="top">
     
     *Authentication* 
-
-
     
     </td>
     <td valign="top">
@@ -181,8 +155,6 @@ Depending on the chosen authentication, the following is checked by the test:
     <td valign="top">
     
     *User Name* 
-
-
     
     </td>
     <td valign="top">
@@ -190,8 +162,6 @@ Depending on the chosen authentication, the following is checked by the test:
     \(Only if *Public Key* or *Dual* is selected as *Authentication*\)
 
     Enter the ID of the user under which the tenant calls the SFTP server.
-
-
     
     </td>
     </tr>
@@ -199,8 +169,6 @@ Depending on the chosen authentication, the following is checked by the test:
     <td valign="top">
     
     *Private Key Alias* 
-
-
     
     </td>
     <td valign="top">
@@ -208,8 +176,6 @@ Depending on the chosen authentication, the following is checked by the test:
     \(Only if *Public Key* or *Dual* is selected as *Authentication*\)
 
     Alias to identify the private key in the keystore used for the communication with the SFTP server.
-
-
     
     </td>
     </tr>
@@ -217,8 +183,6 @@ Depending on the chosen authentication, the following is checked by the test:
     <td valign="top">
     
     *Credential Name*\)
-
-
     
     </td>
     <td valign="top">
@@ -228,8 +192,6 @@ Depending on the chosen authentication, the following is checked by the test:
     Name of User Credentials artifact deployed on the tenant.
 
     This artifact contains user name and password that are used for authentication at the server.
-
-
     
     </td>
     </tr>
@@ -237,8 +199,6 @@ Depending on the chosen authentication, the following is checked by the test:
     <td valign="top">
     
     *Host Key Verification* 
-
-
     
     </td>
     <td valign="top">
@@ -280,8 +240,6 @@ Depending on the chosen authentication, the following is checked by the test:
     <td valign="top">
     
     *Check Directory Access* 
-
-
     
     </td>
     <td valign="top">

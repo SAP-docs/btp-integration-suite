@@ -17,14 +17,10 @@ To deploy an integration adapter, send the following call:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -33,14 +29,10 @@ Resource Path
 
 POST
 
-
-
 </td>
 <td valign="top">
 
 `/api/v1/DeployIntegrationAdapterDesigntimeArtifact?Id='SubsystemSymbolicName1'` 
-
-
 
 </td>
 </tr>
@@ -71,14 +63,10 @@ To delete an integration adapter, send the following call:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -87,14 +75,10 @@ Resource Path
 
 DELETE
 
-
-
 </td>
 <td valign="top">
 
 `/api/v1/IntegrationAdapterDesigntimeArtifacts(Id='SubsystemSymbolicName1')` 
-
-
 
 </td>
 </tr>

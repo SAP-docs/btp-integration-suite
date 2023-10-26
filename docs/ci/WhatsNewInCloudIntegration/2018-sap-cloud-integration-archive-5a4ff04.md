@@ -17,14 +17,10 @@
 
 SAP Cloud Integration 
 
-
-
 </td>
 <td valign="top">
 
 2.47.\*
-
-
 
 </td>
 </tr>
@@ -33,14 +29,10 @@ SAP Cloud Integration
 
 SAP Integration Advisor 
 
-
-
 </td>
 <td valign="top">
 
 2.5.\*
-
-
 
 </td>
 </tr>
@@ -49,14 +41,10 @@ SAP Integration Advisor
 
 Adapter Development Kit for SAP Cloud Integration 
 
-
-
 </td>
 <td valign="top">
 
 2.48.\*
-
-
 
 </td>
 </tr>
@@ -65,14 +53,10 @@ Adapter Development Kit for SAP Cloud Integration
 
 Increment
 
-
-
 </td>
 <td valign="top">
 
 1810
-
-
 
 </td>
 </tr>
@@ -84,8 +68,6 @@ Increment
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -98,8 +80,6 @@ The Odata API was enhanced by `IdMapToIds` and `IdMapFromIds` in the Message Pro
 
 More information: [Message Processing Logs](../Development/message-processing-logs-827a2d7.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -110,8 +90,6 @@ More information: [Message Processing Logs](../Development/message-processing-lo
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -122,8 +100,6 @@ More information: [Message Processing Logs](../Development/message-processing-lo
 
 You can now use adapter tracing in JDBC Receiver Adapter.
 
-
-
 </td>
 </tr>
 </table>
@@ -134,8 +110,6 @@ You can now use adapter tracing in JDBC Receiver Adapter.
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -148,8 +122,6 @@ You can now download the public content of the backup keystore to your local dis
 
 More information: [Downloading Backed-Up Keystore Entries](../Operations/downloading-backed-up-keystore-entries-3a67f8a.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -160,8 +132,6 @@ More information: [Downloading Backed-Up Keystore Entries](../Operations/downloa
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -175,8 +145,6 @@ You can now use the SFTP Sender Adapter to poll messages via the SAP Cloud Conne
 You can now use the SFTP Receiver Adapter to send messages via the SAP Cloud Connector to the SFTP Server.
 
 More information: [Configure the SFTP Sender Adapter](../Development/configure-the-sftp-sender-adapter-2de9ee5.md), [Configure the SFTP Receiver Adapter](../Development/configure-the-sftp-receiver-adapter-4ef52cf.md)
-
-
 
 </td>
 </tr>
@@ -197,14 +165,10 @@ More information: [Configure the SFTP Sender Adapter](../Development/configure-t
 
 SAP Cloud Integration 
 
-
-
 </td>
 <td valign="top">
 
 2.46.\*
-
-
 
 </td>
 </tr>
@@ -213,14 +177,10 @@ SAP Cloud Integration
 
 SAP Integration Advisor 
 
-
-
 </td>
 <td valign="top">
 
 1.6.\*
-
-
 
 </td>
 </tr>
@@ -229,14 +189,10 @@ SAP Integration Advisor
 
 Adapter Development Kit for SAP Cloud Integration 
 
-
-
 </td>
 <td valign="top">
 
 2.47.\*
-
-
 
 </td>
 </tr>
@@ -245,14 +201,10 @@ Adapter Development Kit for SAP Cloud Integration
 
 Increment
 
-
-
 </td>
 <td valign="top">
 
 1809
-
-
 
 </td>
 </tr>
@@ -264,8 +216,6 @@ Increment
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -278,8 +228,6 @@ Use *Enterprise Messaging* service to design and deploy integration flows config
 
 More information: [Enabling and Configuring a Tenant](../InitialSetup/enabling-and-configuring-a-tenant-6807119.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -290,8 +238,6 @@ More information: [Enabling and Configuring a Tenant](../InitialSetup/enabling-a
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -304,8 +250,6 @@ The JDBC Receiver Adapter enables you to connect integration flows with HANA or 
 
 More information: [JDBC Receiver Adapter](../Development/jdbc-receiver-adapter-88be644.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -316,8 +260,6 @@ More information: [JDBC Receiver Adapter](../Development/jdbc-receiver-adapter-8
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -330,8 +272,6 @@ Now you can use Auto-Save functionality to recover the unsaved version of the in
 
 More information: [Overview of Integration Flow Editor](../Development/overview-of-integration-flow-editor-db10beb.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -342,8 +282,6 @@ More information: [Overview of Integration Flow Editor](../Development/overview-
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -356,8 +294,6 @@ Now you can enable Basic and Certificate based authentication for custom adapter
 
 More information: [Enabling Authentication for Servlet Based Adapters](../Development/enabling-authentication-for-servlet-based-adapters-3c6458c.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -368,8 +304,6 @@ More information: [Enabling Authentication for Servlet Based Adapters](../Develo
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -382,8 +316,6 @@ Use query parameters for controlling the amount and order of data for Integratio
 
 More information: [Query Parameters Supported for IntegrationDesigntimeArtifact Requests](../Development/query-parameters-supported-for-integrationdesigntimeartifact-requests-1d74aa6.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -394,8 +326,6 @@ More information: [Query Parameters Supported for IntegrationDesigntimeArtifact 
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -408,8 +338,6 @@ You can now use the JDBC Data Sources to create and manage a cluster of artifact
 
 More information: [Managing JDBC Data Sources](../Operations/managing-jdbc-data-sources-4c873fa.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -420,8 +348,6 @@ More information: [Managing JDBC Data Sources](../Operations/managing-jdbc-data-
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -434,8 +360,6 @@ OData adapter now supports patch operation.
 
 More information: [Configure the OData V2 Receiver Adapter](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -446,8 +370,6 @@ More information: [Configure the OData V2 Receiver Adapter](../Development/confi
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -460,8 +382,6 @@ You can update attribute with multiple values.
 
 More information: [LDAP Receiver Adapter](../Development/ldap-receiver-adapter-06a753f.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -472,8 +392,6 @@ More information: [LDAP Receiver Adapter](../Development/ldap-receiver-adapter-0
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -486,8 +404,6 @@ OData adapter now supports patch operation for both single and multiple \($Batch
 
 More information: [Configure the OData V2 Receiver Adapter](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -498,8 +414,6 @@ More information: [Configure the OData V2 Receiver Adapter](../Development/confi
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -512,8 +426,6 @@ All the response headers will be converted to message headers. This may overwrit
 
 More information: [Configure the OData V2 Receiver Adapter](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -524,8 +436,6 @@ More information: [Configure the OData V2 Receiver Adapter](../Development/confi
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -538,8 +448,6 @@ You can now download a root certificate to your keystore.
 
 More information: [Downloading Single Keystore Entries](../Operations/downloading-single-keystore-entries-ca8a663.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -550,8 +458,6 @@ More information: [Downloading Single Keystore Entries](../Operations/downloadin
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -564,8 +470,6 @@ You can now use principal propagation to authenticate users to access applicatio
 
 More information: [Deploying an OAuth2 Client Credentials Artifact](../Operations/deploying-an-oauth2-client-credentials-artifact-801b106.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -576,8 +480,6 @@ More information: [Deploying an OAuth2 Client Credentials Artifact](../Operation
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -590,8 +492,6 @@ You can now use APIs to generate integration flows and add it to a pre-existing 
 
 More information: [Generating Integration Content using APIs](../Development/generating-integration-content-using-apis-6922c86.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -602,8 +502,6 @@ More information: [Generating Integration Content using APIs](../Development/gen
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -616,8 +514,6 @@ If you are deploying multiple adapters, make sure you provide different endpoint
 
 More information: [Develop Adapters](../Development/develop-adapters-f798db6.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -628,8 +524,6 @@ More information: [Develop Adapters](../Development/develop-adapters-f798db6.md)
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -642,8 +536,6 @@ You can now use XML Validator 2.0 version to help you to validate XML files agai
 
 More information: [Validating Message Payload against XML Schema](../Development/validating-message-payload-against-xml-schema-360dc70.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -654,8 +546,6 @@ More information: [Validating Message Payload against XML Schema](../Development
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -668,8 +558,6 @@ The sender mail adapter can now decrypt encrypted mails and can check the signat
 
 More information: [Configure a Channel with Mail Adapter](../Development/mail-adapter-f1145cc.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -680,8 +568,6 @@ More information: [Configure a Channel with Mail Adapter](../Development/mail-ad
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -694,8 +580,6 @@ You can now use *OAuth2 SAML Bearer Assertion* authentication method to forward 
 
 More information: [Configure the OData V2 Receiver Adapter](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -706,8 +590,6 @@ More information: [Configure the OData V2 Receiver Adapter](../Development/confi
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -720,8 +602,6 @@ You can now copy an integration flow artifact from the *Artifact* \> *Actions* v
 
 More information: [Creating an Integration Flow](../Development/creating-an-integration-flow-da53d93.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -732,8 +612,6 @@ More information: [Creating an Integration Flow](../Development/creating-an-inte
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -744,8 +622,6 @@ More information: [Creating an Integration Flow](../Development/creating-an-inte
 
 Odata V2 adapter supports creation or insertion of data with payload having primary key\(s\). If the key\(s\) are auto generated in the service the primary key is optional and need not be provided in the payload.
 
-
-
 </td>
 </tr>
 </table>
@@ -756,8 +632,6 @@ Odata V2 adapter supports creation or insertion of data with payload having prim
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -770,8 +644,6 @@ Retry for *Upsert* operation is now enabled for inner error code 412. Retry will
 
 More information: [Configure the SuccessFactors OData V2 Receiver Adapter](../Development/configure-the-successfactors-odata-v2-receiver-adapter-d16dd12.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -782,8 +654,6 @@ More information: [Configure the SuccessFactors OData V2 Receiver Adapter](../De
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -796,8 +666,6 @@ OData receiver adapter makes a $metadata call, before the actual endpoint call.
 
 More information: [Configure the OData V2 Receiver Adapter](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -808,8 +676,6 @@ More information: [Configure the OData V2 Receiver Adapter](../Development/confi
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -822,8 +688,6 @@ You can call the remote API for copying an integration package from *Discover* s
 
 More information:  <?sap-ot O2O class="- topic/xref " href="b63acd364c144996b437a99342a7c0ef.xml" text="" desc="" xtrc="xref:25" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
 
-
-
 </td>
 </tr>
 </table>
@@ -834,8 +698,6 @@ More information:  <?sap-ot O2O class="- topic/xref " href="b63acd364c144996b437
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -910,14 +772,10 @@ Please note that a new functionality has been made available on the [SAP Subproc
 
 SAP Cloud Integration Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.47.\*
-
-
 
 </td>
 </tr>
@@ -926,14 +784,10 @@ SAP Cloud Integration Tooling
 
 SAP Cloud Integration Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 2.44.\*
-
-
 
 </td>
 </tr>
@@ -942,14 +796,10 @@ SAP Cloud Integration Node Assembly
 
 SAP Integration Advisor Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 2.2.\*
-
-
 
 </td>
 </tr>
@@ -961,8 +811,6 @@ SAP Integration Advisor Node Assembly
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -973,8 +821,6 @@ You can now set a maximum size limit for processing inbound messages.
 
 More information: [HTTPS Sender Adapter](../Development/https-sender-adapter-0ae4a78.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -985,8 +831,6 @@ More information: [HTTPS Sender Adapter](../Development/https-sender-adapter-0ae
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -997,8 +841,6 @@ You can now use *OAuth2 SAML Bearer Assertion* authentication methods to allow t
 
 More information: [HTTP Receiver Adapter](../Development/http-receiver-adapter-2da452e.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1009,8 +851,6 @@ More information: [HTTP Receiver Adapter](../Development/http-receiver-adapter-2
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1032,8 +872,6 @@ You can now:
 
 More information: [Configure the AS2 Sender Adapter](../Development/configure-the-as2-sender-adapter-5d7ee17.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1044,8 +882,6 @@ More information: [Configure the AS2 Sender Adapter](../Development/configure-th
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1056,8 +892,6 @@ You can not only update but also call the remote API to create an integration fl
 
 More information:  <?sap-ot O2O class="- topic/xref " href="01685c0e628a46399a1f9113cf446bc5.xml" text="" desc="" xtrc="xref:38" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -1068,8 +902,6 @@ More information:  <?sap-ot O2O class="- topic/xref " href="01685c0e628a46399a1f
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1084,8 +916,6 @@ More information:
 
 [SuccessFactors SOAP Adapter](../Development/successfactors-soap-adapter-28b29d6.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -1096,8 +926,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1112,8 +940,6 @@ More information:
 
 [SuccessFactors SOAP Adapter](../Development/successfactors-soap-adapter-28b29d6.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -1124,8 +950,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1134,8 +958,6 @@ Enhanced
 
 OData API Projects \(ODP\) can now be visualized on SAP Business Accelerator Hub.
 
-
-
 </td>
 </tr>
 </table>
@@ -1146,8 +968,6 @@ OData API Projects \(ODP\) can now be visualized on SAP Business Accelerator Hub
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1180,8 +1000,6 @@ Odata V2 adapter supports *Function Import* for functions which return entity or
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -1191,8 +1009,6 @@ You can view and download exchange properties during tracing.
 
 More information: [Message Processing Log](../Operations/message-processing-log-b32f8cd.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -1203,8 +1019,6 @@ More information: [Message Processing Log](../Operations/message-processing-log-
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1213,8 +1027,6 @@ Enhanced
 
 You can see the custom script that you have created with the name you have provided in the *Custom* section of *Mapping Expression*. You can now open and edit the script file.
 
-
-
 </td>
 </tr>
 </table>
@@ -1225,8 +1037,6 @@ You can see the custom script that you have created with the name you have provi
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1240,8 +1050,6 @@ More information:
  <?sap-ot O2O class="- topic/xref " href="6fbffc0f6dab44348769e6fc7b2daf38.xml" text="" desc="" xtrc="xref:44" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
  <?sap-ot O2O class="- topic/xref " href="8f4c5e52dc4b4696b89e14729140fb10.xml" text="" desc="" xtrc="xref:45" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
-
-
 
 </td>
 </tr>
@@ -1262,14 +1070,10 @@ More information:
 
 SAP Cloud Integration Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.46.\*
-
-
 
 </td>
 </tr>
@@ -1278,14 +1082,10 @@ SAP Cloud Integration Tooling
 
 SAP Cloud Integration Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 2.43.\*
-
-
 
 </td>
 </tr>
@@ -1294,14 +1094,10 @@ SAP Cloud Integration Node Assembly
 
 SAP Integration Advisor Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 2.1.\*
-
-
 
 </td>
 </tr>
@@ -1313,8 +1109,6 @@ SAP Integration Advisor Node Assembly
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1325,8 +1119,6 @@ You can now use SuccessFactors OData V2 adapter with *OAuth2 SAML Bearer Asserti
 
 More information: [Configure the SuccessFactors OData V2 Receiver Adapter](../Development/configure-the-successfactors-odata-v2-receiver-adapter-d16dd12.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1337,8 +1129,6 @@ More information: [Configure the SuccessFactors OData V2 Receiver Adapter](../De
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1349,8 +1139,6 @@ You can now select the maximum numbers of characters that are fetched from a twe
 
 More information: [Twitter Receiver Adapter](../Development/twitter-receiver-adapter-453c174.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1361,8 +1149,6 @@ More information: [Twitter Receiver Adapter](../Development/twitter-receiver-ada
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1373,8 +1159,6 @@ You cannot use property propagation across producer and consumer integration flo
 
 More information: [ProcessDirect Adapter](../Development/processdirect-adapter-7445718.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1385,8 +1169,6 @@ More information: [ProcessDirect Adapter](../Development/processdirect-adapter-7
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1397,8 +1179,6 @@ OData receiver adapter supports sending error response in exception subprocess. 
 
 More information: [Configure the OData V2 Receiver Adapter](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1409,8 +1189,6 @@ More information: [Configure the OData V2 Receiver Adapter](../Development/confi
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1430,8 +1208,6 @@ You can now dynamically configure the following parameters of the XI receiver ad
 
 More information: [Configure the XI Receiver Adapter](../Development/configure-the-xi-receiver-adapter-5d2670f.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1442,8 +1218,6 @@ More information: [Configure the XI Receiver Adapter](../Development/configure-t
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1452,8 +1226,6 @@ Enhanced
 
 You can now minimize, maximize and restore model diagram screen while viewing message processing log of an integration flow.
 
-
-
 </td>
 </tr>
 </table>
@@ -1464,8 +1236,6 @@ You can now minimize, maximize and restore model diagram screen while viewing me
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1484,8 +1254,6 @@ More information:
 
  <?sap-ot O2O class="- topic/xref " href="5defe675a5d54e558599ce88efb15edb.xml" text="" desc="" xtrc="xref:54" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?>  \(OData API\)
 
-
-
 </td>
 </tr>
 </table>
@@ -1496,8 +1264,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1508,8 +1274,6 @@ You can call the remote API to download integration artifact.
 
 More information:  <?sap-ot O2O class="- topic/xref " href="460dee19f9c141e88ba0454ce892247a.xml" text="" desc="" xtrc="xref:56" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
 
-
-
 </td>
 </tr>
 </table>
@@ -1520,8 +1284,6 @@ More information:  <?sap-ot O2O class="- topic/xref " href="460dee19f9c141e88ba0
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1544,8 +1306,6 @@ More information:
 
  <?sap-ot O2O class="- topic/xref " href="f6c1e78e2a0342d4a33198b607f681c7.xml" text="" desc="" xtrc="xref:62" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -1556,8 +1316,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1568,8 +1326,6 @@ You can call the remote API to delete integration artifact.
 
 More information:  <?sap-ot O2O class="- topic/xref " href="e8e0dca12e444b23949f00862e317551.xml" text="" desc="" xtrc="xref:63" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
 
-
-
 </td>
 </tr>
 </table>
@@ -1580,8 +1336,6 @@ More information:  <?sap-ot O2O class="- topic/xref " href="e8e0dca12e444b23949f
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1592,8 +1346,6 @@ You can pass custom HTTP headers to OData receiver if you have defined the heade
 
 More information: [Configure the OData V2 Receiver Adapter](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1604,8 +1356,6 @@ More information: [Configure the OData V2 Receiver Adapter](../Development/confi
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1614,8 +1364,6 @@ Enhanced
 
 You can now save value mapping entries with version number in value mapping editor, by clicking on **Save as version**.
 
-
-
 </td>
 </tr>
 </table>
@@ -1626,8 +1374,6 @@ You can now save value mapping entries with version number in value mapping edit
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1638,8 +1384,6 @@ You can deploy OData API artifact for **SAP Cloud Integration** and **SAP Cloud 
 
 More information: [Developing an OData API Project](../Development/developing-an-odata-api-project-d961654.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1650,8 +1394,6 @@ More information: [Developing an OData API Project](../Development/developing-an
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1664,8 +1406,6 @@ You can refer to input xml file uploaded for simulation, for display queue also,
 
 More information: [Message Mapping](../Development/message-mapping-459ccdf.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1676,8 +1416,6 @@ More information: [Message Mapping](../Development/message-mapping-459ccdf.md).
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1759,14 +1497,10 @@ Please note that a new functionality has been made available on the [SAP Subproc
 
 SAP Cloud Integration Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.45.\*
-
-
 
 </td>
 </tr>
@@ -1775,14 +1509,10 @@ SAP Cloud Integration Tooling
 
 SAP Cloud Integration Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 2.42.\*
-
-
 
 </td>
 </tr>
@@ -1794,8 +1524,6 @@ SAP Cloud Integration Node Assembly
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1806,8 +1534,6 @@ You can now capture OData receiver adapter's error response body, HTTP response 
 
 More information: [Configure the OData V2 Receiver Adapter](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1818,8 +1544,6 @@ More information: [Configure the OData V2 Receiver Adapter](../Development/confi
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1828,8 +1552,6 @@ New
 
 You can now use *Delete* operation in SuccessFactors OData V2 adapter.
 
-
-
 </td>
 </tr>
 </table>
@@ -1840,8 +1562,6 @@ You can now use *Delete* operation in SuccessFactors OData V2 adapter.
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1852,8 +1572,6 @@ You can now by default, *Exclude Interchange and Group Envelopes* found in an ED
 
 More information: [Define EDI to XML Converter](../Development/define-edi-to-xml-converter-6a3d12b.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1864,8 +1582,6 @@ More information: [Define EDI to XML Converter](../Development/define-edi-to-xml
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1876,8 +1592,6 @@ You can now use a new header value to notify the AS4 receiver adapter to perform
 
 More information: [Configure Receiver Channel with Push Message Protocol](../Development/configure-receiver-channel-with-push-message-protocol-449f6e9.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1888,8 +1602,6 @@ More information: [Configure Receiver Channel with Push Message Protocol](../Dev
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1900,8 +1612,6 @@ You now use *Number Ranges* to add a unique interchange number to each document 
 
 More information: [Managing Number Ranges](../Operations/managing-number-ranges-b6e17fa.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1912,8 +1622,6 @@ More information: [Managing Number Ranges](../Operations/managing-number-ranges-
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1924,8 +1632,6 @@ You can now use *Best Effort* to transmit customized MDN acknowledgments to the 
 
 More information:[AS2 Adapter](../Development/as2-adapter-d3af635.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1936,8 +1642,6 @@ More information:[AS2 Adapter](../Development/as2-adapter-d3af635.md).
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1948,8 +1652,6 @@ You can now use *Number Range* type attribute in the Content Modifier to fetch v
 
 More information: [Define Content Modifier](../Development/define-content-modifier-8f04a70.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1960,8 +1662,6 @@ More information: [Define Content Modifier](../Development/define-content-modifi
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1972,8 +1672,6 @@ You can now use the *System ID* to fetch the requests from a specific business s
 
 More information: [Ariba Adapter](../Development/ariba-adapter-98da76c.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -1984,8 +1682,6 @@ More information: [Ariba Adapter](../Development/ariba-adapter-98da76c.md).
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -1996,8 +1692,6 @@ You can now view a display queue in which you can see a list of the field values
 
 More information: [Message Mapping](../Development/message-mapping-459ccdf.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -2008,8 +1702,6 @@ More information: [Message Mapping](../Development/message-mapping-459ccdf.md).
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2018,8 +1710,6 @@ New
 
 You can now use *Delete* operation in SuccessFactors SOAP adapter.
 
-
-
 </td>
 </tr>
 </table>
@@ -2030,8 +1720,6 @@ You can now use *Delete* operation in SuccessFactors SOAP adapter.
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2042,8 +1730,6 @@ You can call the remote API to create integration flow.
 
  <?sap-ot O2O class="- topic/xref " href="4e7b436380f04ad3980e4ed79ee9af0a.xml" text="" desc="" xtrc="xref:78" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -2055,16 +1741,12 @@ You can call the remote API to create integration flow.
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Enhanced
 
 You can now minimize, maximize and restore property sheet screen.
-
-
 
 </td>
 </tr>
@@ -2088,14 +1770,10 @@ You can now minimize, maximize and restore property sheet screen.
 
 SAP Cloud Integration Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.44.\*
-
-
 
 </td>
 </tr>
@@ -2104,14 +1782,10 @@ SAP Cloud Integration Tooling
 
 SAP Cloud Integration Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 2.41.\*
-
-
 
 </td>
 </tr>
@@ -2120,14 +1794,10 @@ SAP Cloud Integration Node Assembly
 
 SAP Integration Advisor Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 1.9.\*
-
-
 
 </td>
 </tr>
@@ -2142,8 +1812,6 @@ SAP Integration Advisor Node Assembly
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2160,8 +1828,6 @@ More information:
 
 [Configure the XI Receiver Adapter](../Development/configure-the-xi-receiver-adapter-5d2670f.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -2172,8 +1838,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2190,8 +1854,6 @@ More information:
 
  <?sap-ot O2O class="- topic/xref " href="4ac6cc2f5b5544e6b72c195d7cefdba9.xml" text="" desc="" xtrc="xref:87" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -2202,8 +1864,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2216,8 +1876,6 @@ Now tenant administrators can disable a tenant in Cloud Integration service.
 
 More information:  <?sap-ot O2O class="- topic/xref " href="0127d4764f3f40b3b9a8fe363f2f26cc.xml" text="" desc="" xtrc="xref:88" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
 
-
-
 </td>
 </tr>
 </table>
@@ -2228,8 +1886,6 @@ More information:  <?sap-ot O2O class="- topic/xref " href="0127d4764f3f40b3b9a8
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2242,8 +1898,6 @@ You can now configure a custom adapter with endpoint visualization.
 
 More information: [Enabling Endpoint Visualization for Custom Adapter](../Development/enabling-endpoint-visualization-for-custom-adapter-add7636.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -2254,8 +1908,6 @@ More information: [Enabling Endpoint Visualization for Custom Adapter](../Develo
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2268,8 +1920,6 @@ You can now build custom adapter with tracing feature.
 
 More information: [Enabling Tracing for Custom Adapter](../Development/enabling-tracing-for-custom-adapter-a7cafa6.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -2280,8 +1930,6 @@ More information: [Enabling Tracing for Custom Adapter](../Development/enabling-
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2294,8 +1942,6 @@ You can now add dependent resources while adding a particular resource from anot
 
 More information: [Manage Resources of an Integration Flow](../Development/manage-resources-of-an-integration-flow-b5968b2.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -2306,8 +1952,6 @@ More information: [Manage Resources of an Integration Flow](../Development/manag
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2324,8 +1968,6 @@ More information:
 
 [Define Write Variables](../Development/define-write-variables-de04b75.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -2336,8 +1978,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2350,8 +1990,6 @@ You can now copy and work with integration content published by SAP partners on 
 
 More information on working with prepackaged integration content: [Working with Prepackaged Integration Content](../Development/working-with-prepackaged-integration-content-bd2ed3e.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -2363,8 +2001,6 @@ More information on working with prepackaged integration content: [Working with 
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -2375,8 +2011,6 @@ This feature/enhancement is available for Web.
 In the OData sender adapter, you can now see a list of available user roles on your tenant by choosing *Select* when you select the *Authorization* as *User Role*. For example, if you want to use *ESBMessaging.send* user role for authorization, you can select that from a list instead of manually typing it. This method is less error prone.
 
 More information: [Configure the OData Sender Adapter](../Development/configure-the-odata-sender-adapter-de7aee5.md).
-
-
 
 </td>
 </tr>
@@ -2397,14 +2031,10 @@ More information: [Configure the OData Sender Adapter](../Development/configure-
 
 SAP Cloud Integration Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.43.\*
-
-
 
 </td>
 </tr>
@@ -2413,14 +2043,10 @@ SAP Cloud Integration Tooling
 
 SAP Cloud Integration Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 2.40.\*
-
-
 
 </td>
 </tr>
@@ -2429,14 +2055,10 @@ SAP Cloud Integration Node Assembly
 
 SAP Integration Advisor Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 1.8.\*
-
-
 
 </td>
 </tr>
@@ -2451,8 +2073,6 @@ SAP Integration Advisor Node Assembly
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2473,8 +2093,6 @@ More information:
 
  <?sap-ot O2O class="- topic/xref " href="9597227a3a044904988fb9dca54aaceb.xml" text="" desc="" xtrc="xref:99" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> 
 
-
-
 </td>
 </tr>
 </table>
@@ -2485,8 +2103,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2499,8 +2115,6 @@ You can now benefit from a system job that automatically deletes queues that are
 
 More information: [JMS Adapter](../Development/jms-adapter-0993f2a.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -2511,8 +2125,6 @@ More information: [JMS Adapter](../Development/jms-adapter-0993f2a.md)
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2534,8 +2146,6 @@ More information:
 
 [Uploading a Key Pair](../Operations/uploading-a-key-pair-083911e.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -2546,8 +2156,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2560,8 +2168,6 @@ You can now import and use CSV files in value mapping artifacts.
 
 More information: [Formatting Guidelines for CSV Files used in Value Mapping](../Development/formatting-guidelines-for-csv-files-used-in-value-mapping-8fa8203.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -2572,8 +2178,6 @@ More information: [Formatting Guidelines for CSV Files used in Value Mapping](..
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2602,8 +2206,6 @@ More information:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -2615,8 +2217,6 @@ You can now externalize values for individual cell in a table, checkboxes, and d
 
 More information: [Externalize Parameters of an Integration Flow](../Development/externalize-parameters-of-an-integration-flow-45b2a07.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -2627,8 +2227,6 @@ More information: [Externalize Parameters of an Integration Flow](../Development
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2641,8 +2239,6 @@ You can now upload multiple resources and archived dependent resources to an int
 
 More information: [Manage Resources of an Integration Flow](../Development/manage-resources-of-an-integration-flow-b5968b2.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -2653,8 +2249,6 @@ More information: [Manage Resources of an Integration Flow](../Development/manag
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2667,8 +2261,6 @@ You can now poll for bids using Quote Message request for buyer account type in 
 
 More information: [Ariba Adapter](../Development/ariba-adapter-98da76c.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -2679,8 +2271,6 @@ More information: [Ariba Adapter](../Development/ariba-adapter-98da76c.md).
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2693,8 +2283,6 @@ You can now use AS4 Light Client Conformance Profile for exchanging business mes
 
 More information: [AS4 Receiver Adapter](../Development/as4-receiver-adapter-3a2fde8.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -2705,8 +2293,6 @@ More information: [AS4 Receiver Adapter](../Development/as4-receiver-adapter-3a2
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2719,8 +2305,6 @@ You can now visualize endpoint definitions for integration flows using IDoc, SOA
 
 More information: [Endpoint Visualization](../Operations/endpoint-visualization-6c3fb22.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -2731,8 +2315,6 @@ More information: [Endpoint Visualization](../Operations/endpoint-visualization-
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2745,8 +2327,6 @@ You can now use multiple messages in the source and target of message mapping de
 
 More information: [Creating Message Mapping as a Flow Step](../Development/creating-message-mapping-as-a-flow-step-3d5cb7f.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -2757,8 +2337,6 @@ More information: [Creating Message Mapping as a Flow Step](../Development/creat
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2771,8 +2349,6 @@ You can now import WSDL files from ES repository.
 
 More information: [Importing Mapping Content from ES Repository](../IntegrationSettings/importing-mapping-content-from-es-repository-e18fc05.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -2783,8 +2359,6 @@ More information: [Importing Mapping Content from ES Repository](../IntegrationS
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2797,8 +2371,6 @@ You can now use Principal Propagation as an Authentication setting in the XI Rec
 
 More information:[Configure the XI Receiver Adapter](../Development/configure-the-xi-receiver-adapter-5d2670f.md) .
 
-
-
 </td>
 </tr>
 </table>
@@ -2809,8 +2381,6 @@ More information:[Configure the XI Receiver Adapter](../Development/configure-th
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2829,8 +2399,6 @@ More information:
 
 .
 
-
-
 </td>
 </tr>
 </table>
@@ -2841,8 +2409,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2872,8 +2438,6 @@ More information:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -2900,8 +2464,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -2932,8 +2494,6 @@ A subprocessor is any entity or individual, which has or potentially will have a
 
 Note that services of SAP BTP such as, for example, Neo environment, are covered by this document.
 
-
-
 </td>
 </tr>
 </table>
@@ -2953,14 +2513,10 @@ Note that services of SAP BTP such as, for example, Neo environment, are covered
 
 SAP Cloud Integration Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.42.\*
-
-
 
 </td>
 </tr>
@@ -2969,14 +2525,10 @@ SAP Cloud Integration Tooling
 
 SAP Cloud Integration Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 2.39.\*
-
-
 
 </td>
 </tr>
@@ -2985,14 +2537,10 @@ SAP Cloud Integration Node Assembly
 
 SAP Integration Advisor Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 1.7.\*
-
-
 
 </td>
 </tr>
@@ -3007,8 +2555,6 @@ SAP Integration Advisor Node Assembly
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3025,8 +2571,6 @@ As of now, the option *Enable Debug Trace* is only available in the *Runtime Con
 
 More information: [Message Processing Log - Adapter Tracing](../Operations/message-processing-log-adapter-tracing-a9db4ea.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -3037,8 +2581,6 @@ More information: [Message Processing Log - Adapter Tracing](../Operations/messa
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3051,8 +2593,6 @@ You can now configure the RFC adapter to create a new RFC connection in the back
 
 More information: [RFC Receiver Adapter](../Development/rfc-receiver-adapter-5c76048.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -3063,8 +2603,6 @@ More information: [RFC Receiver Adapter](../Development/rfc-receiver-adapter-5c7
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3077,8 +2615,6 @@ You can now import *Operation Mapping* content from *ES Repository*. For example
 
 More information: [Importing Mapping Content from ES Repository](../IntegrationSettings/importing-mapping-content-from-es-repository-e18fc05.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -3089,8 +2625,6 @@ More information: [Importing Mapping Content from ES Repository](../IntegrationS
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3107,8 +2641,6 @@ More information:
 
 [Uploading a Key Pair](../Operations/uploading-a-key-pair-083911e.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -3119,8 +2651,6 @@ More information:
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3131,8 +2661,6 @@ Keystore lifecycle management has been enhanced in the following way:
 
 A system job makes sure that in case a key provided by SAP is due to expire, the new key is automatically is activated one day before the expiration.
 
-
-
 </td>
 </tr>
 </table>
@@ -3143,8 +2671,6 @@ A system job makes sure that in case a key provided by SAP is due to expire, the
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3162,8 +2688,6 @@ More information:
 
 .
 
-
-
 </td>
 </tr>
 </table>
@@ -3175,8 +2699,6 @@ More information:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -3187,8 +2709,6 @@ This is a documentation update.
 You can now use the Eclipse Developer's Guide as a PDF only.
 
 More information: [Developer's Guide for Eclipse \(PEF\)](https://help.sap.com/doc/dd250f2e3c2645a8ae327e935071281e/Cloud/en-US/DevGuide_ManageIntContent_External.pdf)
-
-
 
 </td>
 </tr>
@@ -3209,14 +2729,10 @@ More information: [Developer's Guide for Eclipse \(PEF\)](https://help.sap.com/d
 
 SAP Cloud Integration Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.41.\*
-
-
 
 </td>
 </tr>
@@ -3225,14 +2741,10 @@ SAP Cloud Integration Tooling
 
 SAP Cloud Integration Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 2.38.\*
-
-
 
 </td>
 </tr>
@@ -3241,14 +2753,10 @@ SAP Cloud Integration Node Assembly
 
 SAP Integration Advisor Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 1.6.\*
-
-
 
 </td>
 </tr>
@@ -3263,8 +2771,6 @@ SAP Integration Advisor Node Assembly
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3297,8 +2803,6 @@ More information:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -3309,8 +2813,6 @@ This feature is available in Web application and in Eclipse.
 You can now use headers and exchange properties to dynamically configure the Private Key Alias property for WS-Security in the SOAP 1.x Sender and Receiver Adapter.
 
 More information: [SOAP \(SOAP 1.x\) Adapter](../Development/soap-soap-1-x-adapter-b847968.md).
-
-
 
 </td>
 </tr>
@@ -3331,14 +2833,10 @@ More information: [SOAP \(SOAP 1.x\) Adapter](../Development/soap-soap-1-x-adapt
 
 SAP Cloud Integration Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.40.\*
-
-
 
 </td>
 </tr>
@@ -3347,14 +2845,10 @@ SAP Cloud Integration Tooling
 
 SAP Cloud Integration Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 2.39.\*
-
-
 
 </td>
 </tr>
@@ -3363,14 +2857,10 @@ SAP Cloud Integration Node Assembly
 
 SAP Integration Advisor Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 1.5.\*
-
-
 
 </td>
 </tr>
@@ -3386,8 +2876,6 @@ SAP Integration Advisor Node Assembly
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -3396,8 +2884,6 @@ New
 The **ProcessDirect** \(Sender and Receiver\) adapter is introduced in both Eclipse and Web UI.
 
 For more information see, Web UI: [ProcessDirect Adapter](../Development/processdirect-adapter-7445718.md)
-
-
 
 </td>
 </tr>
@@ -3409,8 +2895,6 @@ For more information see, Web UI: [ProcessDirect Adapter](../Development/process
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3423,8 +2907,6 @@ SAP BTP now offers Consumption-based model for consuming services in Cloud Integ
 
 For more information, see  <?sap-ot O2O class="- topic/xref " href="ababa8559b4740f78fb47941dad42f81.xml" text="" desc="" xtrc="xref:141" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/5a4ff04ed13b40828a86766fff9ec639.xml" ?> .
 
-
-
 </td>
 </tr>
 </table>
@@ -3435,8 +2917,6 @@ For more information, see  <?sap-ot O2O class="- topic/xref " href="ababa8559b47
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3449,8 +2929,6 @@ This feature is available only in theSAP Cloud Integration web application.
 
 For more information, see [Content Transport](../Development/content-transport-e3c79d6.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -3461,8 +2939,6 @@ For more information, see [Content Transport](../Development/content-transport-e
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3475,8 +2951,6 @@ You can change the alias of a keystore entry.
 
 More information: [Changing the Alias of a Keystore Entry](../Operations/changing-the-alias-of-a-keystore-entry-72b0f88.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -3487,8 +2961,6 @@ More information: [Changing the Alias of a Keystore Entry](../Operations/changin
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3497,8 +2969,6 @@ Enhanced
 
 You can now see some changes in the user interface of SuccessFactors SOAP adapter versions 1.0, 1.1 and 1.2 in the *Processing* tab.
 
-
-
 </td>
 </tr>
 </table>
@@ -3509,8 +2979,6 @@ You can now see some changes in the user interface of SuccessFactors SOAP adapte
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3521,8 +2989,6 @@ You can now import integration content \(mainly mapping artifacts\) from ES Repo
 
 For more information, see [Importing Content from SAP Process Orchestration System](../IntegrationSettings/importing-content-from-sap-process-orchestration-system-53db5fb.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -3533,8 +2999,6 @@ For more information, see [Importing Content from SAP Process Orchestration Syst
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3545,8 +3009,6 @@ The *Externalize* feature now allows you to externalize a text area of an integr
 
 For more information see, [Externalize Parameters of an Integration Flow](../Development/externalize-parameters-of-an-integration-flow-45b2a07.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -3557,8 +3019,6 @@ For more information see, [Externalize Parameters of an Integration Flow](../Dev
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3569,8 +3029,6 @@ In *Problems* view, you can click the Location ID link to identify the issue rel
 
 For more information see, [Problems View](../Development/problems-view-7614a1f.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -3581,8 +3039,6 @@ For more information see, [Problems View](../Development/problems-view-7614a1f.m
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3616,8 +3072,6 @@ A subprocessor is any entity or individual, which has or potentially will have a
 
 Note that services of SAP BTP such as, for example, Neo environment, are covered by this document.
 
-
-
 </td>
 </tr>
 </table>
@@ -3637,14 +3091,10 @@ Note that services of SAP BTP such as, for example, Neo environment, are covered
 
 SAP Cloud Integration Tooling
 
-
-
 </td>
 <td valign="top">
 
 2.39.\*
-
-
 
 </td>
 </tr>
@@ -3653,14 +3103,10 @@ SAP Cloud Integration Tooling
 
 SAP Cloud Integration Node Assembly \(Cluster 2.x\)
 
-
-
 </td>
 <td valign="top">
 
 2.36.\*
-
-
 
 </td>
 </tr>
@@ -3669,14 +3115,10 @@ SAP Cloud Integration Node Assembly \(Cluster 2.x\)
 
 SAP Integration Advisor Node Assembly
 
-
-
 </td>
 <td valign="top">
 
 1.4.\*
-
-
 
 </td>
 </tr>
@@ -3692,8 +3134,6 @@ SAP Integration Advisor Node Assembly
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -3705,8 +3145,6 @@ In XML Signer you can now use headers in private key alias field to dynamically 
 
 More information: [Sign the Message Content with XML Digital Signature](../Development/sign-the-message-content-with-xml-digital-signature-9a013db.md)
 
-
-
 </td>
 </tr>
 </table>
@@ -3717,8 +3155,6 @@ More information: [Sign the Message Content with XML Digital Signature](../Devel
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3729,8 +3165,6 @@ This new view available in Web application lists all the errors and warnings rel
 
 For more information see, [Problems View](../Development/problems-view-7614a1f.md).
 
-
-
 </td>
 </tr>
 </table>
@@ -3741,8 +3175,6 @@ For more information see, [Problems View](../Development/problems-view-7614a1f.m
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -3776,8 +3208,6 @@ RFC receiver adapter:
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -3788,8 +3218,6 @@ This feature is available in Web application.
 Keystore management \(for the tenant administrator\) has been enhanced by the following feature.
 
 A system job makes sure that in this case the key is automatically activated \(within a day after it has expired\).
-
-
 
 </td>
 </tr>
@@ -3802,8 +3230,6 @@ A system job makes sure that in this case the key is automatically activated \(w
 
  
 
-
-
 </td>
 <td valign="top" colspan="2">
 
@@ -3814,8 +3240,6 @@ The OData API was enhanced for the `UserCredentialParameter` of the Partner Dire
 You can now request that the user credential parameter returns a hashed value for the password instead of a NULL value
 
 More information: [Requests for UserCredentialParameter](../Development/requests-for-usercredentialparameter-79c06dd.md)
-
-
 
 </td>
 </tr>

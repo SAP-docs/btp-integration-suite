@@ -52,14 +52,10 @@ In the Postman collection, you can find the POST request `ReadUrlPath` to execut
 
 Service
 
-
-
 </td>
 <td valign="top">
 
 espm.svc
-
-
 
 </td>
 </tr>
@@ -68,14 +64,10 @@ espm.svc
 
 Resource
 
-
-
 </td>
 <td valign="top">
 
 Products / ProductCategories
-
-
 
 </td>
 </tr>
@@ -84,14 +76,10 @@ Products / ProductCategories
 
 Id
 
-
-
 </td>
 <td valign="top">
 
 HT-1073 / Software
-
-
 
 </td>
 </tr>

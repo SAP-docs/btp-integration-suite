@@ -52,15 +52,11 @@ For more examples, see [Examples](examples-eb2e601.md).
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -68,15 +64,11 @@ For more examples, see [Examples](examples-eb2e601.md).
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Specify a name for filter step. By default, the value is *Filter*.
-
-
     
     </td>
     </tr>
@@ -84,15 +76,11 @@ For more examples, see [Examples](examples-eb2e601.md).
     <td valign="top">
     
     XPath Expression
-
-
     
     </td>
     <td valign="top">
     
     Specify Xpath to the message node that contains information to be extracted
-
-
     
     </td>
     </tr>
@@ -106,15 +94,11 @@ For more examples, see [Examples](examples-eb2e601.md).
     <th valign="top">
 
     Value Type
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -122,15 +106,11 @@ For more examples, see [Examples](examples-eb2e601.md).
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     The output of filter is of type string
-
-
     
     </td>
     </tr>
@@ -138,15 +118,11 @@ For more examples, see [Examples](examples-eb2e601.md).
     <td valign="top">
     
     Integer
-
-
     
     </td>
     <td valign="top">
     
     The output of filter is of type integer
-
-
     
     </td>
     </tr>
@@ -154,15 +130,11 @@ For more examples, see [Examples](examples-eb2e601.md).
     <td valign="top">
     
     Boolean
-
-
     
     </td>
     <td valign="top">
     
     The output of filter is of type boolean
-
-
     
     </td>
     </tr>
@@ -170,15 +142,11 @@ For more examples, see [Examples](examples-eb2e601.md).
     <td valign="top">
     
     Node
-
-
     
     </td>
     <td valign="top">
     
     The output of filter is of type node
-
-
     
     </td>
     </tr>
@@ -186,15 +154,11 @@ For more examples, see [Examples](examples-eb2e601.md).
     <td valign="top">
     
     Nodelist
-
-
     
     </td>
     <td valign="top">
     
     The output of filter is a collection of nodes
-
-
     
     </td>
     </tr>

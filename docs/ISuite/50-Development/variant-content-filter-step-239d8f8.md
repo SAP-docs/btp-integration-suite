@@ -18,29 +18,21 @@ It contains 3 integration flow steps.
     <th valign="top">
 
     Name
-
-
     
     </th>
     <th valign="top">
 
     Type
-
-
     
     </th>
     <th valign="top">
 
     Data Type
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -48,29 +40,21 @@ It contains 3 integration flow steps.
     <td valign="top">
     
     deliveryNotes
-
-
     
     </td>
     <td valign="top">
     
     XPath
-
-
     
     </td>
     <td valign="top">
     
     org.w3c.dom.NodeList
-
-
     
     </td>
     <td valign="top">
     
     ns0: PurchaseOrder/DeliveryNotes
-
-
     
     </td>
     </tr>
@@ -78,29 +62,21 @@ It contains 3 integration flow steps.
     <td valign="top">
     
     address
-
-
     
     </td>
     <td valign="top">
     
     XPath
-
-
     
     </td>
     <td valign="top">
     
     org.w3c.dom.NodeList
-
-
     
     </td>
     <td valign="top">
     
     ns0:PurchaseOrder/Address
-
-
     
     </td>
     </tr>
@@ -108,29 +84,21 @@ It contains 3 integration flow steps.
     <td valign="top">
     
     orderDate
-
-
     
     </td>
     <td valign="top">
     
     XPath
-
-
     
     </td>
     <td valign="top">
     
     java.lang.String
-
-
     
     </td>
     <td valign="top">
     
     string\(//@OrderDate\)
-
-
     
     </td>
     </tr>
@@ -138,29 +106,21 @@ It contains 3 integration flow steps.
     <td valign="top">
     
     orderNumber
-
-
     
     </td>
     <td valign="top">
     
     XPath
-
-
     
     </td>
     <td valign="top">
     
     java.lang.String
-
-
     
     </td>
     <td valign="top">
     
     string\(//@PurchaseOrderNumber\)
-
-
     
     </td>
     </tr>

@@ -66,28 +66,20 @@ An example payload for the policy is as follows:
 
 Element
 
-
-
 </th>
 <th valign="top">
 
 Default
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -96,21 +88,15 @@ Description
 
 `mapIdentifier` \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 N/A
-
-
 
 </td>
 <td valign="top">
@@ -118,8 +104,6 @@ N/A
 Specifies an identifier to be used when accessing a map created by this policy.
 
 If you exclude this attribute, a KVM named `kvmap` is used.
-
-
 
 </td>
 </tr>
@@ -134,28 +118,20 @@ If you exclude this attribute, a KVM named `kvmap` is used.
 
 Element
 
-
-
 </th>
 <th valign="top">
 
 Default
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -164,21 +140,15 @@ Description
 
 `Scope` \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 environment
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
@@ -209,28 +179,20 @@ If you set the scope to apiproxy, then the entries in the key value map are acce
 
 Element
 
-
-
 </th>
 <th valign="top">
 
 Default
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -239,21 +201,15 @@ Description
 
 `Entry` \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 N/A
-
-
 
 </td>
 <td valign="top">
@@ -295,28 +251,20 @@ Seed values for key value maps, which are populated in the key value map when it
 
 Element
 
-
-
 </th>
 <th valign="top">
 
 Default
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -325,21 +273,15 @@ Description
 
 `InitialEntries` \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 N/A
-
-
 
 </td>
 <td valign="top">
@@ -393,28 +335,20 @@ When using this element, when you save the policy on a deployed version of the p
 
 Element
 
-
-
 </th>
 <th valign="top">
 
 Default
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -423,21 +357,15 @@ Description
 
 `key` \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 N/A
-
-
 
 </td>
 <td valign="top">
@@ -454,8 +382,6 @@ Specifies the key in a key/value map entry. A key can be composite, which means 
 
 See the <parameter\> element for information about how to set the key name.
 
-
-
 </td>
 </tr>
 </table>
@@ -469,28 +395,20 @@ See the <parameter\> element for information about how to set the key name.
 
 Element
 
-
-
 </th>
 <th valign="top">
 
 Default
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -499,21 +417,15 @@ Description
 
 `parameter` \(Required\)
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
@@ -572,28 +484,20 @@ When the Key element includes multiple Parameter elements, the effective key str
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Default
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -602,28 +506,20 @@ Description
 
 `ref`
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 N/A
-
-
 
 </td>
 <td valign="top">
 
 Specifies the name of a variable whose value contains the exact name of the key you want to create, retrieve, or delete.
-
-
 
 </td>
 </tr>
@@ -638,28 +534,20 @@ Specifies the name of a variable whose value contains the exact name of the key 
 
 Element
 
-
-
 </th>
 <th valign="top">
 
 Default
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -668,21 +556,15 @@ Description
 
 `value` \(Required\)
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
@@ -745,28 +627,20 @@ In the following example, two keys ‘key1’ with values ‘val1’ and ‘val2
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Default
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -775,28 +649,20 @@ Description
 
 `ref`
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 N/A
-
-
 
 </td>
 <td valign="top">
 
 Specifies the name of a variable whose value contains the key value\(s\) you want to set.
-
-
 
 </td>
 </tr>
@@ -811,28 +677,20 @@ Specifies the name of a variable whose value contains the key value\(s\) you wan
 
 Element
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Attributes
 
-
-
 </th>
 <th valign="top">
 
  
-
-
 
 </th>
 </tr>
@@ -840,8 +698,6 @@ Attributes
 <td valign="top" rowspan="2">
 
 `Get` \(Required if <Put\> or <Delete\> are not present\)
-
-
 
 </td>
 <td valign="top" rowspan="2">
@@ -869,14 +725,10 @@ Make sure to specify the name of the KVM with the mapIdentifier attribute on the
 
 `assignTo`
 
-
-
 </td>
 <td valign="top">
 
 The variable to which the retrieved value must be assigned.
-
-
 
 </td>
 </tr>
@@ -885,14 +737,10 @@ The variable to which the retrieved value must be assigned.
 
 index
 
-
-
 </td>
 <td valign="top">
 
 You can specify an index for a multivalued key. For example, if index=1, the value at index 1 is fetched and assigned to the variable. If not specified, all the values of that entry are assigned to the variable as java.util.List.
-
-
 
 </td>
 </tr>
@@ -907,28 +755,20 @@ You can specify an index for a multivalued key. For example, if index=1, the val
 
 Element
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Attributes
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -936,8 +776,6 @@ Description
 <td valign="top">
 
 `Put` \(Required if <Get\> or <Delete\> are not present\)
-
-
 
 </td>
 <td valign="top">
@@ -962,16 +800,12 @@ Writes a key/value pair to a key value map.
 
 `override`
 
-
-
 </td>
 <td valign="top">
 
 The default value is false.
 
 If true, it overrides the value of a key.
-
-
 
 </td>
 </tr>
@@ -986,28 +820,20 @@ If true, it overrides the value of a key.
 
 Element
 
-
-
 </th>
 <th valign="top">
 
 Default
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -1016,21 +842,15 @@ Description
 
 `Delete` \(Required if <Get\> or <Put\> are not present\)
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 N/A
-
-
 
 </td>
 <td valign="top">
@@ -1066,14 +886,10 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -1081,8 +897,6 @@ Cause
 <td valign="top">
 
 SetVariableFailed
-
-
 
 </td>
 <td valign="top">
@@ -1107,14 +921,10 @@ Failed to set variable \{0\} in KeyValueMapStepDefinition \{1\}. When getting va
 
 RemoveVariableFailed
 
-
-
 </td>
 <td valign="top">
 
 Failed to remove variable \{0\} in KeyValueMapStepDefinition \{1\}
-
-
 
 </td>
 </tr>
@@ -1123,14 +933,10 @@ Failed to remove variable \{0\} in KeyValueMapStepDefinition \{1\}
 
 InvalidIndex
 
-
-
 </td>
 <td valign="top">
 
 Invalid index \{0\} in KeyValueMapStepDefinition \{1\}
-
-
 
 </td>
 </tr>
@@ -1139,14 +945,10 @@ Invalid index \{0\} in KeyValueMapStepDefinition \{1\}
 
 KeyIsMissing
 
-
-
 </td>
 <td valign="top">
 
 Key element is missing in KeyValueMapStepDefinition \{0\}
-
-
 
 </td>
 </tr>
@@ -1155,14 +957,10 @@ Key element is missing in KeyValueMapStepDefinition \{0\}
 
 ValueIsMissing
 
-
-
 </td>
 <td valign="top">
 
 Value element is missing in KeyValueMapStepDefinition \{0\}
-
-
 
 </td>
 </tr>

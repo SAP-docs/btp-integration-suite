@@ -27,14 +27,10 @@ Select the *General* tab to access the following parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Enter the name of the channel.
 
 *Direction* 
 
-
-
 </td>
 <td valign="top">
 
 Receiver
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Receiver
 
 *System* 
 
-
-
 </td>
 <td valign="top">
 
 Receiver
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ Receiver
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 AzureStorage
-
-
 
 </td>
 </tr>
@@ -107,14 +87,10 @@ AzureStorage
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 HTTPS
-
-
 
 </td>
 </tr>
@@ -123,16 +99,12 @@ HTTPS
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 *Table Storage*
 
 Shows the message protocol selected when creating the channel.
-
-
 
 </td>
 </tr>
@@ -151,14 +123,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -166,8 +134,6 @@ Description
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -190,14 +156,10 @@ Select authentication option to use to connect to Azure Storage server. There ar
 
 \(Only if for *Authentication* the option *SAS Token* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Alias name of token used to communicate with Azure Storage.
-
-
 
 </td>
 </tr>
@@ -208,14 +170,10 @@ Alias name of token used to communicate with Azure Storage.
 
 \(Only if for *Authentication* the option *Shared Access Key* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Alias name of key used to communicate with Azure Storage.
-
-
 
 </td>
 </tr>
@@ -223,8 +181,6 @@ Alias name of key used to communicate with Azure Storage.
 <td valign="top">
 
 *Dynamic* 
-
-
 
 </td>
 <td valign="top">
@@ -245,16 +201,12 @@ Select this option to dynamically define the authentication through the value of
 
 *Timeout* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum waiting time, in milliseconds, to contact Azure Storage while establishing a connection or performing a read operation \(default value: 60000\).
 
 Setting a timeout is mandatory for both token and key aliases.
-
-
 
 </td>
 </tr>
@@ -271,14 +223,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -286,8 +234,6 @@ Description
 <td valign="top">
 
 *Operation* 
-
-
 
 </td>
 <td valign="top">
@@ -339,8 +285,6 @@ Select one of the following options to define which operation to perform:
 
 *Storage Account Name* 
 
-
-
 </td>
 <td valign="top">
 
@@ -357,8 +301,6 @@ Enter the name of the storage account for all operations.
 <td valign="top">
 
 *Table Name* 
-
-
 
 </td>
 <td valign="top">
@@ -385,16 +327,12 @@ Enter the name of the name of the table for all operations, except \(*List Table
 
 \(Only if for *Operation* the option *Add Entity*, *Delete Entity* or *Update Entity* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Enter the partition key.
 
 Don't leave this field empty.
-
-
 
 </td>
 </tr>
@@ -405,16 +343,12 @@ Don't leave this field empty.
 
 \(Only if for *Operation* the option *Add Entity*, *Delete Entity* or *Update Entity* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Enter the partition key.
 
 Don't leave this field empty.
-
-
 
 </td>
 </tr>
@@ -424,8 +358,6 @@ Don't leave this field empty.
 *Query Options*
 
 \(Only if for *Operation* the option *Get Entities* or *List Tables* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -448,14 +380,10 @@ Enter query options. Prefix each query options with `$` character and separate b
 
 \(Only if for *Operation* the option *Get Entities* or *List Tables* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the page size to retrieve specific number of results. If you do not specify any page size, the server returns up to 1000 results.
-
-
 
 </td>
 </tr>
@@ -465,8 +393,6 @@ Specify the page size to retrieve specific number of results. If you do not spec
 *Process in Pages*
 
 \(Only if for *Operation* the option *Get Entities* or *List Tables* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -491,14 +417,10 @@ Message is processed in batches with a size specified by the *Page Size* paramet
 
 *Key* 
 
-
-
 </td>
 <td valign="top">
 
 Select a request parameter.
-
-
 
 </td>
 </tr>
@@ -507,14 +429,10 @@ Select a request parameter.
 
 *Value* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the value of the argument. You can also enter`${header.headername}` or `${property.propertyname}` to dynamically read the value from the message exchange.
-
-
 
 </td>
 </tr>
@@ -522,8 +440,6 @@ Specify the value of the argument. You can also enter`${header.headername}` or `
 <td valign="top">
 
 *Response Format* 
-
-
 
 </td>
 <td valign="top">
@@ -548,16 +464,12 @@ The following response formats are given:
 
 *Request Headers* 
 
-
-
 </td>
 <td valign="top">
 
 Enter Pipe-separated \(`|`\) value list of request headers to be sent to Azure.
 
 If you enter the value `*`, all message headers are converted to request headers and forwarded.
-
-
 
 </td>
 </tr>
@@ -576,35 +488,25 @@ If you enter the value `*`, all message headers are converted to request headers
 
 Sl No
 
-
-
 </th>
 <th valign="top">
 
 Operation
-
-
 
 </th>
 <th valign="top">
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -613,35 +515,25 @@ Description
 
 1
 
-
-
 </td>
 <td valign="top">
 
 All table storage-related operations \(except *List Table*\)
-
-
 
 </td>
 <td valign="top">
 
 SAP\_AzureStorage\_Outbound\_Tablename
 
-
-
 </td>
 <td valign="top">
 
 Property
 
-
-
 </td>
 <td valign="top">
 
 Capture the table name specified in the table storage operations.
-
-
 
 </td>
 </tr>

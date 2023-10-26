@@ -250,14 +250,10 @@ The highlighted sections briefly explain the various features and behaviors of e
 
 Section in Screenshot
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -266,14 +262,10 @@ Description
 
 1
 
-
-
 </td>
 <td valign="top">
 
 Represents the source structure.
-
-
 
 </td>
 </tr>
@@ -282,14 +274,10 @@ Represents the source structure.
 
 2
 
-
-
 </td>
 <td valign="top">
 
 Represents the target structure.
-
-
 
 </td>
 </tr>
@@ -298,14 +286,10 @@ Represents the target structure.
 
 3
 
-
-
 </td>
 <td valign="top">
 
 If any of the entities \(source or target\) not visible, a dotted line indicates the calculated position of the invisible entity.
-
-
 
 </td>
 </tr>
@@ -314,14 +298,10 @@ If any of the entities \(source or target\) not visible, a dotted line indicates
 
 4
 
-
-
 </td>
 <td valign="top">
 
 Solid lines represent visible source and target entities.
-
-
 
 </td>
 </tr>
@@ -330,14 +310,10 @@ Solid lines represent visible source and target entities.
 
 5
 
-
-
 </td>
 <td valign="top">
 
 If you select a line, both source and target entities come to the center in the table, and the line becomes solid.
-
-
 
 </td>
 </tr>
@@ -346,14 +322,10 @@ If you select a line, both source and target entities come to the center in the 
 
 6
 
-
-
 </td>
 <td valign="top">
 
 This section represents the functions of the selected mapping.
-
-
 
 </td>
 </tr>
@@ -361,8 +333,6 @@ This section represents the functions of the selected mapping.
 <td valign="top">
 
 7
-
-
 
 </td>
 <td valign="top">
@@ -373,16 +343,12 @@ The search result highlights the nodes in the structure that match the search te
 
 You can view the other occurrences by clicking the <span class="SAP-icons"></span> \(Up\) or <span class="SAP-icons"></span> \(Down\) button.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 8
-
-
 
 </td>
 <td valign="top">
@@ -412,8 +378,6 @@ You can view the other occurrences by clicking the <span class="SAP-icons"></
 
 9
 
-
-
 </td>
 <td valign="top">
 
@@ -421,16 +385,12 @@ The *Functions* pane lists the standard functions that can be used in the Messag
 
 You can also create a new script <span class="SAP-icons"></span> or assign an existing script <span class="SAP-icons"></span> to the mapping expression.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 10
-
-
 
 </td>
 <td valign="top">

@@ -13,35 +13,25 @@ This topic provides information about the flow variables.
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Scope begins
 
-
-
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Permission
-
-
 
 </th>
 </tr>
@@ -49,8 +39,6 @@ Permission
 <td valign="top">
 
 client.cn
-
-
 
 </td>
 <td valign="top">
@@ -69,21 +57,15 @@ The common name specified in the TLS/SSL certificate presented by the client app
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -92,35 +74,25 @@ Read
 
 client.country
 
-
-
 </td>
 <td valign="top">
 
 The country/region in the TLS/SSL certificate presented by the client app.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -129,35 +101,25 @@ Read
 
 client.email.address
 
-
-
 </td>
 <td valign="top">
 
 The e-mail address in the TLS/SSL certificate presented by the client app.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -166,35 +128,25 @@ Read
 
 client.host
 
-
-
 </td>
 <td valign="top">
 
 The HTTP host IP associated with the request received by the ProxyEndpoint.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -203,35 +155,25 @@ Read
 
 client.ip
 
-
-
 </td>
 <td valign="top">
 
 The IP address of the client or system sending the message. For example, this could be the original client IP or a load balancer IP.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -240,35 +182,25 @@ Read
 
 client.locality
 
-
-
 </td>
 <td valign="top">
 
 The locality \(City\) in the TLS/SSL certificate presented by the client.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -277,35 +209,25 @@ Read
 
 client.organization
 
-
-
 </td>
 <td valign="top">
 
 The organization in the TLS/SSL certificate presented by the client.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -314,35 +236,25 @@ Read
 
 client.organization.unit
 
-
-
 </td>
 <td valign="top">
 
 The organizational unit in the TLS/SSL certificate presented by the client.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -351,35 +263,25 @@ Read
 
 client.port
 
-
-
 </td>
 <td valign="top">
 
 The HTTP port associated with the originating client request to ProxyEndpoint.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -387,8 +289,6 @@ Read
 <td valign="top">
 
 client.received.end.time
-
-
 
 </td>
 <td valign="top">
@@ -403,21 +303,15 @@ client.received.end.time
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -426,35 +320,25 @@ Read
 
 client.received.end.timestamp
 
-
-
 </td>
 <td valign="top">
 
 The timestamp value specifying when the proxy finished receiving the request from the originating client at the ProxyEndpoint. This value is a 64-bit \(long\) integer containing the number of milliseconds elapsed since midnight, on January 1, 1970 UTC.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Long
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -462,8 +346,6 @@ Read
 <td valign="top">
 
 client.received.start.time
-
-
 
 </td>
 <td valign="top">
@@ -478,21 +360,15 @@ client.received.start.time
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -501,35 +377,25 @@ Read
 
 client.received.start.timestamp
 
-
-
 </td>
 <td valign="top">
 
 The timestamp value specifying when the proxy began receiving the request from the originating client at the ProxyEndpoint. This value is a 64-bit \(long\) integer containing the number of milliseconds elapsed since midnight, on January 1, 1970 UTC.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Long
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -537,8 +403,6 @@ Read
 <td valign="top">
 
 client.sent.end.time
-
-
 
 </td>
 <td valign="top">
@@ -553,21 +417,15 @@ client.sent.end.time
 
 Proxy response
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -576,35 +434,25 @@ Read
 
 client.sent.end.timestamp
 
-
-
 </td>
 <td valign="top">
 
 The timestamp value specifying when the ProxyEndpoint finished returning the response to the originating client app. This value is a 64-bit \(long\) integer containing the number of milliseconds elapsed since midnight, on January 1, 1970 UTC.
-
-
 
 </td>
 <td valign="top">
 
 Proxy response
 
-
-
 </td>
 <td valign="top">
 
 Long
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -612,8 +460,6 @@ Read
 <td valign="top">
 
 client.sent.start.time
-
-
 
 </td>
 <td valign="top">
@@ -628,21 +474,15 @@ client.sent.start.time
 
 Proxy response
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -651,35 +491,25 @@ Read
 
 client.sent.start.timestamp
 
-
-
 </td>
 <td valign="top">
 
 The timestamp value specifying when the ProxyEndpoint started returning the response to the originating client app. This value is a 64-bit \(long\) integer containing the number of milliseconds elapsed since midnight, on January 1, 1970 UTC.
-
-
 
 </td>
 <td valign="top">
 
 Proxy response
 
-
-
 </td>
 <td valign="top">
 
 Long
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -688,35 +518,25 @@ Read
 
 client.scheme
 
-
-
 </td>
 <td valign="top">
 
 Returns http or https depending on the transport used by client app to send the request message.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -725,35 +545,25 @@ Read
 
 client.state
 
-
-
 </td>
 <td valign="top">
 
 The state in the TLS/SSL certificate presented by the client.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -762,35 +572,25 @@ Read
 
 client.ssl.enabled
 
-
-
 </td>
 <td valign="top">
 
 Returns true or false, depending on whether the ProxyEndpoint is configured for TLS/SSL.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -805,35 +605,25 @@ Read
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Scope
 
-
-
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Permission
-
-
 
 </th>
 </tr>
@@ -842,35 +632,25 @@ Permission
 
 error
 
-
-
 </td>
 <td valign="top">
 
 Error of type Message, which is a contextual object in the error flow
-
-
 
 </td>
 <td valign="top">
 
 Error
 
-
-
 </td>
 <td valign="top">
 
 Message
 
-
-
 </td>
 <td valign="top">
 
 Read/Write
-
-
 
 </td>
 </tr>
@@ -879,35 +659,25 @@ Read/Write
 
 error.content
 
-
-
 </td>
 <td valign="top">
 
 Content of the error
-
-
 
 </td>
 <td valign="top">
 
 Error
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read/Write
-
-
 
 </td>
 </tr>
@@ -916,35 +686,25 @@ Read/Write
 
 error.message
 
-
-
 </td>
 <td valign="top">
 
 Message associated with an error, whose value is available only before the error Flow is executed.
-
-
 
 </td>
 <td valign="top">
 
 Error
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -953,35 +713,25 @@ Read
 
 error.status.code
 
-
-
 </td>
 <td valign="top">
 
 The HTTP status code associated with the error. For example: "400".
-
-
 
 </td>
 <td valign="top">
 
 Error
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -990,35 +740,25 @@ Read
 
 error.reason.phrase
 
-
-
 </td>
 <td valign="top">
 
 The reason phrase associated with the error. For example: "Bad Request"
-
-
 
 </td>
 <td valign="top">
 
 Error
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1027,35 +767,25 @@ Read
 
 error.transport.message
 
-
-
 </td>
 <td valign="top">
 
 Any error of type TransportMessage
-
-
 
 </td>
 <td valign="top">
 
 Error
 
-
-
 </td>
 <td valign="top">
 
 Transport\_Message
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1064,35 +794,25 @@ Read
 
 error.state
 
-
-
 </td>
 <td valign="top">
 
 State in the Flow where an error occurred
-
-
 
 </td>
 <td valign="top">
 
 Error
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1101,35 +821,25 @@ Read
 
 error.header.<name\>
 
-
-
 </td>
 <td valign="top">
 
 Get or set the response header.
-
-
 
 </td>
 <td valign="top">
 
 Error
 
-
-
 </td>
 <td valign="top">
 
 integer
 
-
-
 </td>
 <td valign="top">
 
 Read/Write
-
-
 
 </td>
 </tr>
@@ -1144,35 +854,25 @@ Read/Write
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Scope
 
-
-
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Permission
-
-
 
 </th>
 </tr>
@@ -1181,35 +881,25 @@ Permission
 
 request
 
-
-
 </td>
 <td valign="top">
 
 The complete request, including any payload present.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Message
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1218,35 +908,25 @@ Read
 
 request.content
 
-
-
 </td>
 <td valign="top">
 
 Gets or sets the payload of the request message.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read/Write
-
-
 
 </td>
 </tr>
@@ -1255,35 +935,25 @@ Read/Write
 
 request.formparam.\{formparam\_name\}
 
-
-
 </td>
 <td valign="top">
 
 Gets or sets the value of the specified form parameter in the request sent from the client app.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read/Write
-
-
 
 </td>
 </tr>
@@ -1292,35 +962,25 @@ Read/Write
 
 request.formparam.\{formparam\_name\}.values.count.
 
-
-
 </td>
 <td valign="top">
 
 Count of all values for the specified form parameter associated with the request.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1329,35 +989,25 @@ Read
 
 request.formparams.count
 
-
-
 </td>
 <td valign="top">
 
 Count of all form parameters associated with the request sent from the client app.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1366,35 +1016,25 @@ Read
 
 request.formparams.names
 
-
-
 </td>
 <td valign="top">
 
 A list of all form parameter names associated with the request.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Collection
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1402,8 +1042,6 @@ Read
 <td valign="top">
 
 request.header.\{header\_name\}
-
-
 
 </td>
 <td valign="top">
@@ -1420,21 +1058,15 @@ Gets or sets the value of a particular header found in the request.
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read/Write
-
-
 
 </td>
 </tr>
@@ -1443,35 +1075,25 @@ Read/Write
 
 request.header.\{header\_name\}.values
 
-
-
 </td>
 <td valign="top">
 
 All the values of a particular header in the request
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Collection
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1480,35 +1102,25 @@ Read
 
 request.header.\{header\_name\}.values.count
 
-
-
 </td>
 <td valign="top">
 
 Count of all the values of a particular header in the request.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1517,35 +1129,25 @@ Read
 
 request.formparams.count
 
-
-
 </td>
 <td valign="top">
 
 Count of all form parameters associated with the request sent from the client a
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1554,35 +1156,25 @@ Read
 
 request.formparams.names
 
-
-
 </td>
 <td valign="top">
 
 A list of all form parameter names associated with the request.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Collection
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1591,35 +1183,25 @@ Read
 
 request.header.\{header\_name\}
 
-
-
 </td>
 <td valign="top">
 
 Gets or sets the value of a particular header found in the request.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read/Write
-
-
 
 </td>
 </tr>
@@ -1628,35 +1210,25 @@ Read/Write
 
 request.header.\{header\_name\}.values
 
-
-
 </td>
 <td valign="top">
 
 All the values of a particular header in the request
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1665,35 +1237,25 @@ Read
 
 request.header.\{header\_name\}.values.count
 
-
-
 </td>
 <td valign="top">
 
 Count of all the values of a particular header in the request.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1702,35 +1264,25 @@ Read
 
 request.headers.count
 
-
-
 </td>
 <td valign="top">
 
 Count of all the headers in the request.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1739,35 +1291,25 @@ Read
 
 request.path
 
-
-
 </td>
 <td valign="top">
 
 The unproxied resource path \(not including the host\) to the backend service, excluding query parameters.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1776,35 +1318,25 @@ Read
 
 request.queryparam.\{queryparam\_name\}
 
-
-
 </td>
 <td valign="top">
 
 The value of a particular query parameter found in the request.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Read/Write
-
-
 
 </td>
 </tr>
@@ -1813,35 +1345,25 @@ Read/Write
 
 request.queryparam.\{queryparam\_name\}.values.count
 
-
-
 </td>
 <td valign="top">
 
 The count of all the values of a particular query parameter in the request.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1850,35 +1372,25 @@ Read
 
 request.queryparams.count
 
-
-
 </td>
 <td valign="top">
 
 The count of all the query parameters in the request.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1887,35 +1399,25 @@ Read
 
 request.queryparams.names
 
-
-
 </td>
 <td valign="top">
 
 request.queryparams.names
-
-
 
 </td>
 <td valign="top">
 
 Proxy request \(Java Object\)
 
-
-
 </td>
 <td valign="top">
 
 Collection
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1924,35 +1426,25 @@ Read
 
 request.querystring
 
-
-
 </td>
 <td valign="top">
 
 The complete list of query parameters in the request sent from the client app. For example, if the request is `http://host.com/123?name=first&surname=second&place=address` then this variable returns name=first&surname=second&place=address
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1961,35 +1453,25 @@ Read
 
 request.transportid
 
-
-
 </td>
 <td valign="top">
 
 ID of the request as type TransportMessage which is a contextual object
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -1998,35 +1480,25 @@ Read
 
 request.transport.message
 
-
-
 </td>
 <td valign="top">
 
 Request of type TransportMessage which is a contextual object
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 Transport
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2034,8 +1506,6 @@ Read
 <td valign="top">
 
 request.uri
-
-
 
 </td>
 <td valign="top">
@@ -2078,28 +1548,20 @@ Request: request.uri = /my-mock-proxy/user?user=test
 
 Response: request.uri = /user?user=test
 
-
-
 </td>
 <td valign="top">
 
 Proxy request \(differs with response\)
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2108,35 +1570,25 @@ Read
 
 request.url
 
-
-
 </td>
 <td valign="top">
 
 Returns the exact complete URL of the final request made.
-
-
 
 </td>
 <td valign="top">
 
 Target request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2145,35 +1597,25 @@ Read
 
 request.verb
 
-
-
 </td>
 <td valign="top">
 
 The HTTP verb used for the request. For example: GET, PUT, DELETE
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2182,35 +1624,25 @@ Read
 
 request.version
 
-
-
 </td>
 <td valign="top">
 
 Gets the HTTP version of the request.
-
-
 
 </td>
 <td valign="top">
 
 Proxy request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2219,8 +1651,6 @@ Read
 
 response.formstring
 
-
-
 </td>
 <td valign="top">
 
@@ -2228,28 +1658,20 @@ The complete list of form parameters in the request.
 
 For example: name=test&type=first&group=A
 
-
-
 </td>
 <td valign="top">
 
 Target request
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2258,35 +1680,25 @@ Read
 
 route.name
 
-
-
 </td>
 <td valign="top">
 
 The name of the RouteRule that was executed in the ProxyEndpoint. For example: default. A RouteRule references an API proxy TargetEndpoint to execute.
-
-
 
 </td>
 <td valign="top">
 
 Target request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2295,35 +1707,25 @@ Read
 
 route.target
 
-
-
 </td>
 <td valign="top">
 
 The name of the TargetEndpoint that was executed. For example: default.
-
-
 
 </td>
 <td valign="top">
 
 Target request
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2338,35 +1740,25 @@ Read
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Scope begins
 
-
-
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Permission
-
-
 
 </th>
 </tr>
@@ -2375,35 +1767,25 @@ Permission
 
 response
 
-
-
 </td>
 <td valign="top">
 
 Complete response message returned by target
-
-
 
 </td>
 <td valign="top">
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 Message
 
-
-
 </td>
 <td valign="top">
 
 Read/Write
-
-
 
 </td>
 </tr>
@@ -2412,35 +1794,25 @@ Read/Write
 
 response.content
 
-
-
 </td>
 <td valign="top">
 
 Payload content of the response message returned by the target
-
-
 
 </td>
 <td valign="top">
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read/Write
-
-
 
 </td>
 </tr>
@@ -2449,35 +1821,25 @@ Read/Write
 
 response.formparam.\{formparam\_name\}
 
-
-
 </td>
 <td valign="top">
 
 The value of a form parameter in the response
-
-
 
 </td>
 <td valign="top">
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read/Write
-
-
 
 </td>
 </tr>
@@ -2486,35 +1848,25 @@ Read/Write
 
 response.formparam.\{formparam\_name\}.values.count
 
-
-
 </td>
 <td valign="top">
 
 Count of all the values of the specified form parameter in response
-
-
 
 </td>
 <td valign="top">
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2523,35 +1875,25 @@ Read
 
 response.formparams.count
 
-
-
 </td>
 <td valign="top">
 
 Count of all form parameters in the response
-
-
 
 </td>
 <td valign="top">
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2560,35 +1902,25 @@ Read
 
 response.formparams.names
 
-
-
 </td>
 <td valign="top">
 
 The names of all the form parameters in the response
-
-
 
 </td>
 <td valign="top">
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 Collection
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2596,8 +1928,6 @@ Read
 <td valign="top">
 
 response.header.\{header\_name\}
-
-
 
 </td>
 <td valign="top">
@@ -2614,21 +1944,15 @@ Gets or sets the value of a specified HTTP header in the response. If the header
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read/Write
-
-
 
 </td>
 </tr>
@@ -2637,35 +1961,25 @@ Read/Write
 
 response.header.\{header\_name\}.values
 
-
-
 </td>
 <td valign="top">
 
 All the values of a specified HTTP header in response.
-
-
 
 </td>
 <td valign="top">
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2674,35 +1988,25 @@ Read
 
 response.header.\{header\_name\}.values.count
 
-
-
 </td>
 <td valign="top">
 
 Count of all the values of the specified HTTP header in response
-
-
 
 </td>
 <td valign="top">
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2711,35 +2015,25 @@ Read
 
 response.headers.count
 
-
-
 </td>
 <td valign="top">
 
 Count of all the headers in the response
-
-
 
 </td>
 <td valign="top">
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2748,35 +2042,25 @@ Read
 
 response.headers.names
 
-
-
 </td>
 <td valign="top">
 
 The names of all the headers in the response
-
-
 
 </td>
 <td valign="top">
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2785,35 +2069,25 @@ Read
 
 response.reason.phrase
 
-
-
 </td>
 <td valign="top">
 
 The response reason phrase for a particular request
-
-
 
 </td>
 <td valign="top">
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>
@@ -2822,35 +2096,25 @@ Read
 
 response.status.code
 
-
-
 </td>
 <td valign="top">
 
 The response code returned for a request. You can use this variable to override the response status code, which is stored in message.status.code.
-
-
 
 </td>
 <td valign="top">
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Read/Write
-
-
 
 </td>
 </tr>
@@ -2859,35 +2123,25 @@ Read/Write
 
 response.transport.message
 
-
-
 </td>
 <td valign="top">
 
 Response of type TransportMessage which is a contextual object
-
-
 
 </td>
 <td valign="top">
 
 Target response
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Read
-
-
 
 </td>
 </tr>

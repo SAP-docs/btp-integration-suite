@@ -54,14 +54,10 @@ Once you have created a sender channel and selected the SFTP sender adapter, you
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -70,14 +66,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the SFTP channel.
-
-
 
 </td>
 </tr>
@@ -94,14 +86,10 @@ Select the *Source* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -110,14 +98,10 @@ Description
 
 *Directory* 
 
-
-
 </td>
 <td valign="top">
 
 Relative path to read the file from a directory. Example: `parentdirectory/childdirectory` 
-
-
 
 </td>
 </tr>
@@ -125,8 +109,6 @@ Relative path to read the file from a directory. Example: `parentdirectory/child
 <td valign="top">
 
 *File Name* 
-
-
 
 </td>
 <td valign="top">
@@ -173,14 +155,10 @@ If you do not enter a file name and the parameter remains blank, all the files i
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 Host name or IP address of the SFTP server and an optional port, for example, `wdfd00213123:22`.
-
-
 
 </td>
 </tr>
@@ -188,8 +166,6 @@ Host name or IP address of the SFTP server and an optional port, for example, `w
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -203,8 +179,6 @@ Proxy type that you are using to connect to the target system.
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md). For more information on how to use the *On-Premise* option to connect to an on-premise SFTP server, check out SAP Community blog [Cloud Integration – How to Connect to an On-Premise sftp server via Cloud Connector](https://blogs.sap.com/2018/11/16/cloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector/).
 
-
-
 </td>
 </tr>
 <tr>
@@ -214,14 +188,10 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 
 \(only if *On-Premise* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration of SAP BTP cockpit.
-
-
 
 </td>
 </tr>
@@ -230,16 +200,12 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 
 *User Name* 
 
-
-
 </td>
 <td valign="top">
 
 ID of the user performing the file transfer.
 
 Make sure that the user name contains no other characters than `A-z`, `0-9`, `_` \(underscore\), `-` \(hyphen\), `/` \(slash\), `?` \(question mark\), `@` \(at\), `!` \(exclamation mark\), `$` \(dollar sign \), `'` \(apostrophe\), `(`, `)` \(brackets\), `*` \(asterisk\), `+` \(plus sign\), `,` \(comma\), `;` \(semicolon\), `=` \(equality sign\), `.` \(dot\), or `~` \(tilde\). Otherwise, an attempt for anonymous login is made which results in an error.
-
-
 
 </td>
 </tr>
@@ -250,14 +216,10 @@ Make sure that the user name contains no other characters than `A-z`, `0-9`, `_`
 
 \(only if *Public Key* or *Dual* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Alias to identify the private key in the keystore used for the communication with the SFTP server.
-
-
 
 </td>
 </tr>
@@ -266,14 +228,10 @@ Alias to identify the private key in the keystore used for the communication wit
 
 *Timeout \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted while establishing a connection or performing a read operation. Enter a minimum value bigger than `0`, and smaller than or equal to the maximum value of `299999`. The default ist set to `10000`.
-
-
 
 </td>
 </tr>
@@ -281,8 +239,6 @@ Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted whi
 <td valign="top">
 
 *Maximum Reconnect Attempts* 
-
-
 
 </td>
 <td valign="top">
@@ -301,14 +257,10 @@ Maximum number of attempts allowed to reconnect to the SFTP server before messag
 
 *Reconnect Delay \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
 Time \(in milliseconds\) the system waits before attempting to reconnect to the SFTP server; default Value: `1000`.
-
-
 
 </td>
 </tr>
@@ -317,14 +269,10 @@ Time \(in milliseconds\) the system waits before attempting to reconnect to the 
 
 *Automatically Disconnect* 
 
-
-
 </td>
 <td valign="top">
 
 Disconnect from the SFTP server after each message processing.
-
-
 
 </td>
 </tr>
@@ -333,16 +281,12 @@ Disconnect from the SFTP server after each message processing.
 
 *Enable Support for Deprecated Algorithms* 
 
-
-
 </td>
 <td valign="top">
 
 Select to allow several deprecated key exchange, public key, host key, and encryption algorithms like the ‘diffie-hellman-group1-sha1’ key exchange algorithm or the ‘ssh-rsa’ host key and public key algorithm.
 
 For more information on compatibility and support, see SAP KBA [3079510](https://me.sap.com/notes/3079510).
-
-
 
 </td>
 </tr>
@@ -359,14 +303,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -374,8 +314,6 @@ Description
 <td valign="top">
 
 *Read Lock Strategy* 
-
-
 
 </td>
 <td valign="top">
@@ -397,8 +335,6 @@ Prevents files that are in the process of being written from being read from the
 <td valign="top">
 
 *Sorting* 
-
-
 
 </td>
 <td valign="top">
@@ -430,14 +366,10 @@ Select the type of sorting to use to poll files from the SFTP server:
 
 \(only if for *Sorting* another option than *None* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Select whether to sort in ascending or descending order.
-
-
 
 </td>
 </tr>
@@ -445,8 +377,6 @@ Select whether to sort in ascending or descending order.
 <td valign="top">
 
 *Max. Messages per Poll* 
-
-
 
 </td>
 <td valign="top">
@@ -476,16 +406,12 @@ The system uses locks to ensure that each file from the SFTP server is only proc
 
 *Lock Timeout \(in min\)* 
 
-
-
 </td>
 <td valign="top">
 
 Specify how long to wait before trying to process the file again in the event of a Cloud Integration outage. If it takes a very long time to process the scenario, you may need to increase the timeout to avoid parallel processing of the same file. This value should be higher than the processing time required for the number of messages specified by *Max. Messages per Poll*.
 
 Default: `15`
-
-
 
 </td>
 </tr>
@@ -494,14 +420,10 @@ Default: `15`
 
 *Change Directories Stepwise* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option to change directory levels one at a time.
-
-
 
 </td>
 </tr>
@@ -510,14 +432,10 @@ Select this option to change directory levels one at a time.
 
 *Include Subdirectories* 
 
-
-
 </td>
 <td valign="top">
 
 Selecting this option allows you to look for files in all subdirectories of the directory.
-
-
 
 </td>
 </tr>
@@ -528,14 +446,10 @@ Selecting this option allows you to look for files in all subdirectories of the 
 
 \(only if *Include Sub-Directories* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Flatten the file path by removing the directory levels so that only the file names are considered.
-
-
 
 </td>
 </tr>
@@ -544,14 +458,10 @@ Flatten the file path by removing the directory levels so that only the file nam
 
 *Use Fast Exists Check*
 
-
-
 </td>
 <td valign="top">
 
 If selected, file exists check is performed on the SFTP server. If your server doesn't support this operation, switch back to client side check. This option is enabled by default.
-
-
 
 </td>
 </tr>
@@ -559,8 +469,6 @@ If selected, file exists check is performed on the SFTP server. If your server d
 <td valign="top">
 
 *Post-Processing* 
-
-
 
 </td>
 <td valign="top">
@@ -607,8 +515,6 @@ You can select one of the following options:
 
 \(only if *Keep File and Mark as Processed in Idempotent Repository* is selected for *Post-Processing*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -633,16 +539,12 @@ You can select one of the following idempotent repository options:
 
 \(only if *Move File* is selected for *Post-Processing*\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the target directory where to move the file.
 
 Make sure that you specify a relative file path for the target directory. Note that the specified file path is defined relative to the directory specified with the *Directory* parameter. If you specify an absolute file path, it may occur that the file cannot be stored correctly at runtime. You can also specify the target directory dynamically, for example, using the timestamp of the message. The following example uses backup folders with timestamps and replaces the file extension with `bak: backup/${date:now:yyyyMMdd}/${file:name.noext}.bak`.
-
-
 
 </td>
 </tr>
@@ -662,21 +564,15 @@ Select the *Scheduler* tab and provide values in the fields as follows.
 
 Scheduler Option
 
-
-
 </th>
 <th valign="top">
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -685,21 +581,15 @@ Description
 
 *Schedule on Day* 
 
-
-
 </td>
 <td valign="top">
 
 On Date
 
-
-
 </td>
 <td valign="top">
 
 Specify the date on which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -708,14 +598,10 @@ Specify the date on which you want the operation to be executed.
 
 At Time
 
-
-
 </td>
 <td valign="top">
 
 Specify the time at which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -724,14 +610,10 @@ Specify the time at which you want the operation to be executed.
 
 Every
 
-
-
 </td>
 <td valign="top">
 
 Specify a time period \(for example, every hour\) in a dedicated time window.
-
-
 
 </td>
 </tr>
@@ -740,14 +622,10 @@ Specify a time period \(for example, every hour\) in a dedicated time window.
 
 Time Zone
 
-
-
 </td>
 <td valign="top">
 
 Select the time zone that you want the scheduler to use as a reference for the date and time settings.
-
-
 
 </td>
 </tr>
@@ -756,21 +634,15 @@ Select the time zone that you want the scheduler to use as a reference for the d
 
 *Schedule to Recur* 
 
-
-
 </td>
 <td valign="top">
 
 Daily
 
-
-
 </td>
 <td valign="top">
 
 Select the time or interval and time zone for the schedule to recur.
-
-
 
 </td>
 </tr>
@@ -779,14 +651,10 @@ Select the time or interval and time zone for the schedule to recur.
 
 Weekly
 
-
-
 </td>
 <td valign="top">
 
 Select the checkboxes to indicate the days of the week on which the operation has to be executed. Also, specify the time or interval for the schedule to recur.
-
-
 
 </td>
 </tr>
@@ -795,14 +663,10 @@ Select the checkboxes to indicate the days of the week on which the operation ha
 
 Monthly
 
-
-
 </td>
 <td valign="top">
 
 Select the day of the month on which the operation has to be executed. Also indicate the time or the interval for the schedule to recur.
-
-
 
 </td>
 </tr>

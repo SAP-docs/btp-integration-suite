@@ -37,14 +37,10 @@ You can also choose <span class="SAP-icons"></span> \(Extended filter\)to fil
 
 Filter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -53,14 +49,10 @@ Description
 
 MAG Name
 
-
-
 </td>
 <td valign="top">
 
 The Name of the MAG provided in the *General Information* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -69,14 +61,10 @@ The Name of the MAG provided in the *General Information* section of the *Overvi
 
 MAG Version
 
-
-
 </td>
 <td valign="top">
 
 The Version of the MAG provided in the *General Information* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -85,14 +73,10 @@ The Version of the MAG provided in the *General Information* section of the *Ove
 
 Status
 
-
-
 </td>
 <td valign="top">
 
 The Status of the MAG provided in the *General Information* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -101,14 +85,10 @@ The Status of the MAG provided in the *General Information* section of the *Over
 
 Source MIG Name
 
-
-
 </td>
 <td valign="top">
 
 The Name of the source MIG provided in the *Source and Target MIGs* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -117,14 +97,10 @@ The Name of the source MIG provided in the *Source and Target MIGs* section of t
 
 Type System of Source MIG
 
-
-
 </td>
 <td valign="top">
 
 The Type System of the source MIG provided in the *Source and Target MIGs* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -133,14 +109,10 @@ The Type System of the source MIG provided in the *Source and Target MIGs* secti
 
 Type System Version of Source MIG
 
-
-
 </td>
 <td valign="top">
 
 The Type System version of the source MIG provided in the *Source and Target MIGs* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -149,14 +121,10 @@ The Type System version of the source MIG provided in the *Source and Target MIG
 
 Message Type
 
-
-
 </td>
 <td valign="top">
 
 The Message Type of the source MIG provided in the *Source and Target MIGs* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -165,14 +133,10 @@ The Message Type of the source MIG provided in the *Source and Target MIGs* sect
 
 Target MIG Name
 
-
-
 </td>
 <td valign="top">
 
 The Name of the target MIG provided in the *Source and Target MIGs* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -181,14 +145,10 @@ The Name of the target MIG provided in the *Source and Target MIGs* section of t
 
 Type System of Target MIG
 
-
-
 </td>
 <td valign="top">
 
 The Type System of the target MIG provided in the *Source and Target MIGs* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -197,14 +157,10 @@ The Type System of the target MIG provided in the *Source and Target MIGs* secti
 
 Type System Version of Target MIG
 
-
-
 </td>
 <td valign="top">
 
 The Type System version of the target MIG provided in the *Source and Target MIGs* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -213,14 +169,10 @@ The Type System version of the target MIG provided in the *Source and Target MIG
 
 Message Type
 
-
-
 </td>
 <td valign="top">
 
 The Message Type of the target MIG provided in the *Source and Target MIGs* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -229,14 +181,10 @@ The Message Type of the target MIG provided in the *Source and Target MIGs* sect
 
 Created By
 
-
-
 </td>
 <td valign="top">
 
 The unique identifier of the user who created the MAG. It is available in the *Administrative Data* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -245,14 +193,10 @@ The unique identifier of the user who created the MAG. It is available in the *A
 
 Created Between
 
-
-
 </td>
 <td valign="top">
 
 The date range during which the MAG was created.
-
-
 
 </td>
 </tr>
@@ -261,14 +205,10 @@ The date range during which the MAG was created.
 
 Modified By
 
-
-
 </td>
 <td valign="top">
 
 The unique identifier of the user who modified the MAG. It is available in the *Administrative Data* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -277,14 +217,10 @@ The unique identifier of the user who modified the MAG. It is available in the *
 
 Modified Between
 
-
-
 </td>
 <td valign="top">
 
 The date range during which the MAG was modified.
-
-
 
 </td>
 </tr>
@@ -293,14 +229,10 @@ The date range during which the MAG was modified.
 
 Last Imported By
 
-
-
 </td>
 <td valign="top">
 
 The unique identifier of the user who last imported the MAG. It is available in the *Administrative Data* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -309,14 +241,10 @@ The unique identifier of the user who last imported the MAG. It is available in 
 
 Last Imported Between
 
-
-
 </td>
 <td valign="top">
 
 The date range during which the MAG was imported.
-
-
 
 </td>
 </tr>

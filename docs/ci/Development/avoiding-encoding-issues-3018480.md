@@ -28,21 +28,15 @@ As far as applicable for your scenario, try to implement the following measures:
 
 Recommendation
 
-
-
 </th>
 <th valign="top">
 
 Required Tasks
 
-
-
 </th>
 <th valign="top">
 
 Conditions and Challenges
-
-
 
 </th>
 </tr>
@@ -53,14 +47,10 @@ Conditions and Challenges
 
 Try to use UTF-8 encoding for all binary character representations throughout the scenario.
 
-
-
 </td>
 <td valign="top">
 
 You do not have to set any `CamelCharsetName` property or header \(as UTF-8 is the default\), or any XML declaration \(as UTF-8 is also the default for XML\).
-
-
 
 </td>
 <td valign="top">
@@ -68,8 +58,6 @@ You do not have to set any `CamelCharsetName` property or header \(as UTF-8 is t
 Make sure that all mappings use UTF-8 for output encoding. If you do not define an output encoding, UTF-8 is used as the default.
 
 The challenge with this solution is that it requires all your communication partners to send and receive data in UTF-8 character encoding \(which, although not uncommon, is unfortunately not always the case\).
-
-
 
 </td>
 </tr>
@@ -79,8 +67,6 @@ The challenge with this solution is that it requires all your communication part
 **Use a fixed character encoding throughout the whole integration flow**
 
 If your communication partners require a character encoding for communication other than UTF-8 \(for example, ISO-8859-15\), and this character encoding is the same for all communication partners, you can set up your integration flow to use that character encoding.
-
-
 
 </td>
 <td valign="top">
@@ -99,8 +85,6 @@ Perform the following steps:
 
 The challenge with this solution is that if you have more than one communication partner, it is rather unlikely that they all agree on a character encoding different from UTF-8.
 
-
-
 </td>
 </tr>
 <tr>
@@ -108,16 +92,12 @@ The challenge with this solution is that if you have more than one communication
 
 **Avoid binary-to-string conversions** 
 
-
-
 </td>
 <td valign="top">
 
 If you are working with XML data and you are communicating with different communication partners using different character encodings, one way to avoid character encoding issues is to avoid the serialized string representation of XML documents altogether.
 
 In this case, the content of the `CamelCharsetName` is irrelevant as no string-to-binary conversion occurs \(only XML parsing and marshaling\).
-
-
 
 </td>
 <td valign="top">
@@ -127,8 +107,6 @@ If using this solution, the integration flow developer must not modify a message
 The filter and XSLT mapping steps both have the option to provide string output. This option should only be used if the result is a non-XML string, not an XML document or fragment.
 
 The integration developer must therefore exercise caution and due care if applying these measures.
-
-
 
 </td>
 </tr>

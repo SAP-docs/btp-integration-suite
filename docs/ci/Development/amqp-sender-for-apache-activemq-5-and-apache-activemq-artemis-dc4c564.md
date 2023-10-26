@@ -48,14 +48,10 @@ The following values are displayed in the *General* tab after a channel has been
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -64,14 +60,10 @@ Description
 
 *Name/Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 AMQP
-
-
 
 </td>
 </tr>
@@ -80,16 +72,12 @@ AMQP
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 The protocol that the message broker supports:
 
 *TCP*
-
-
 
 </td>
 </tr>
@@ -98,14 +86,10 @@ The protocol that the message broker supports:
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 *AMQP 1.0* 
-
-
 
 </td>
 </tr>
@@ -122,14 +106,10 @@ Select the *Connection* tab and provide values in the fields as follows:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -138,14 +118,10 @@ Description
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the hostname of the message broker.
-
-
 
 </td>
 </tr>
@@ -154,14 +130,10 @@ Specify the hostname of the message broker.
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the port of the message broker.
-
-
 
 </td>
 </tr>
@@ -169,8 +141,6 @@ Specify the port of the message broker.
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -183,8 +153,6 @@ Select *On-Premise* if you’re connecting to an on-premise message broker.
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -192,14 +160,10 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 
 *Path* \(only if *WebSocket* is selected as the *Transport Protocol* in the *General* tab\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the access path of the message broker.
-
-
 
 </td>
 </tr>
@@ -208,14 +172,10 @@ Specify the access path of the message broker.
 
 *Connect with TLS* 
 
-
-
 </td>
 <td valign="top">
 
 Select if *TLS* has to be used for the connection.
-
-
 
 </td>
 </tr>
@@ -224,14 +184,10 @@ Select if *TLS* has to be used for the connection.
 
 *Location ID* \(only if *On-Premise* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side.
-
-
 
 </td>
 </tr>
@@ -240,14 +196,10 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 
 *Authentication* 
 
-
-
 </td>
 <td valign="top">
 
 Select the authentication method supported by the message broker. Make sure that *SASL* is selected \(default setting\).
-
-
 
 </td>
 </tr>
@@ -256,14 +208,10 @@ Select the authentication method supported by the message broker. Make sure that
 
 *Credential Name* \(only if *SASL* or *OAuth2 Client Credentials* are selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the *User Credentials* artifact.
-
-
 
 </td>
 </tr>
@@ -280,14 +228,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -295,8 +239,6 @@ Description
 <td valign="top">
 
 *Queue Name* 
-
-
 
 </td>
 <td valign="top">
@@ -317,8 +259,6 @@ Specify the name of the queue or topic subscription to consume from.
 
 *Number of Current Processes* 
 
-
-
 </td>
 <td valign="top">
 
@@ -335,8 +275,6 @@ Specify the number of processes used for parallel message processing. Note, that
 <td valign="top">
 
 *Max. Number of Prefechted Messages*
-
-
 
 </td>
 <td valign="top">
@@ -361,8 +299,6 @@ If you need to process a large number of messages with the integration flow, and
 
 *Consume Expired Messages*
 
-
-
 </td>
 <td valign="top">
 
@@ -370,16 +306,12 @@ Select if the adapter is to consume already expired messages.
 
 By default, this option is deactivated.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Max. Number of Retries* 
-
-
 
 </td>
 <td valign="top">
@@ -403,8 +335,6 @@ Define the number of retries to be executed before a different delivery status i
 <td valign="top">
 
 *Delivery Status After Max. Retries* 
-
-
 
 </td>
 <td valign="top">

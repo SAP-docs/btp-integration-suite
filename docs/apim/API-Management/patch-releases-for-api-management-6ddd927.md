@@ -19,28 +19,20 @@ This topic provides information on patch releases for API Management that are pr
 
 Technical Component
 
-
-
 </th>
 <th valign="top">
 
 Software Version
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Available as of
-
-
 
 </th>
 </tr>
@@ -49,28 +41,20 @@ Available as of
 
 API Management
 
-
-
 </td>
 <td valign="top">
 
 1.135.3
-
-
 
 </td>
 <td valign="top">
 
 Error messages were popping up on the API Portal *Onboarding settings* page, and the page was not accessible. Backend configurations were applied to resolve this issue.
 
-
-
 </td>
 <td valign="top">
 
 2021-10-20
-
-
 
 </td>
 </tr>
@@ -91,28 +75,20 @@ Error messages were popping up on the API Portal *Onboarding settings* page, and
 
 Technical Component
 
-
-
 </th>
 <th valign="top">
 
 Software Version
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Available as of
-
-
 
 </th>
 </tr>
@@ -121,14 +97,10 @@ Available as of
 
 API Management
 
-
-
 </td>
 <td valign="top">
 
 1.134
-
-
 
 </td>
 <td valign="top">
@@ -145,8 +117,6 @@ The following issues have been fixed with this patch:
 <td valign="top">
 
 2021-08-31
-
-
 
 </td>
 </tr>
@@ -167,28 +137,20 @@ The following issues have been fixed with this patch:
 
 Technical Component
 
-
-
 </th>
 <th valign="top">
 
 Software Version
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Available as of
-
-
 
 </th>
 </tr>
@@ -196,29 +158,21 @@ Available as of
 <td valign="top">
 
 API Management
-
-
 
 </td>
 <td valign="top">
 
 1.133.7
 
-
-
 </td>
 <td valign="top">
 
 The deployment of an API Proxy would get timed out and fail when large number of Products were associated with it. This patch ensures that in such exceptional cases the deployment of the API Proxy wouldn't fail due to timeout.
 
-
-
 </td>
 <td valign="top">
 
 2021-08-18
-
-
 
 </td>
 </tr>
@@ -227,14 +181,10 @@ The deployment of an API Proxy would get timed out and fail when large number of
 
 API Management
 
-
-
 </td>
 <td valign="top">
 
 1.133.6
-
-
 
 </td>
 <td valign="top">
@@ -256,8 +206,6 @@ The following issues have been fixed with this patch:
 <td valign="top">
 
 2021-08-13
-
-
 
 </td>
 </tr>

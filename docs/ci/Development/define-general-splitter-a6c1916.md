@@ -52,15 +52,11 @@ If you use a Splitter step in a local integration process, the following limitat
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -68,8 +64,6 @@ If you use a Splitter step in a local integration process, the following limitat
     <td valign="top">
     
     *Expression Type* 
-
-
     
     </td>
     <td valign="top">
@@ -121,8 +115,6 @@ If you use a Splitter step in a local integration process, the following limitat
 
 
     For more examples, see [General and Iterating Splitter \(Examples\)](general-and-iterating-splitter-examples-698e594.md).
-
-
     
     </td>
     </tr>
@@ -132,8 +124,6 @@ If you use a Splitter step in a local integration process, the following limitat
     *XPath Expression* 
 
     \(Enabled only if you select *XPath* in the *Expression Type* field\)
-
-
     
     </td>
     <td valign="top">
@@ -202,8 +192,6 @@ If you use a Splitter step in a local integration process, the following limitat
     <td valign="top">
     
     *Grouping* 
-
-
     
     </td>
     <td valign="top">
@@ -211,8 +199,6 @@ If you use a Splitter step in a local integration process, the following limitat
     The size of the groups into which the composite message is to be split.
 
     For example, if a message has 10 nodes and grouping is defined as 2, the message is split into 5 messages with 2 nodes each.
-
-
     
     </td>
     </tr>
@@ -220,8 +206,6 @@ If you use a Splitter step in a local integration process, the following limitat
     <td valign="top">
     
     *Streaming* 
-
-
     
     </td>
     <td valign="top">
@@ -231,8 +215,6 @@ If you use a Splitter step in a local integration process, the following limitat
     If you activate streaming, the system already starts processing parts \(*chunks*\) of the composite message before the message is fully transferred to the memory \(of the runtime node\).
 
     If you deactivate this option, the message is transferred fully to the memory before it is split and processed further. Deactivating streaming is more memory-intensive than activating it.
-
-
     
     </td>
     </tr>
@@ -240,8 +222,6 @@ If you use a Splitter step in a local integration process, the following limitat
     <td valign="top">
     
     *Parallel Processing* 
-
-
     
     </td>
     <td valign="top">
@@ -249,8 +229,6 @@ If you use a Splitter step in a local integration process, the following limitat
     Select this checkbox if you want to enable \(parallel\) processing of all the split messages at once.
 
     More information: [Cloud Integration – Using Parallel Processing in General and Iterating Splitter](https://blogs.sap.com/2018/10/17/cloud-integration-using-parallel-processing-in-general-and-iterating-splitter/) \(SAP Community blog\)
-
-
     
     </td>
     </tr>
@@ -260,15 +238,11 @@ If you use a Splitter step in a local integration process, the following limitat
     *Number of Concurrent Processes*
 
     \(Enabled only if *Parallel Processing* is selected\)
-
-
     
     </td>
     <td valign="top">
     
     If you have selected *Parallel Processing*, the split messages are processed concurrently in threads. Define how many concurrent processes to use in the splitter. The default is 10. The maximum value allowed is 50.
-
-
     
     </td>
     </tr>
@@ -278,8 +252,6 @@ If you use a Splitter step in a local integration process, the following limitat
     *Timeout \(in s\)*
 
     \(Enabled only if *Parallel Processing* is selected\)
-
-
     
     </td>
     <td valign="top">
@@ -325,15 +297,11 @@ If you use a Splitter step in a local integration process, the following limitat
     <td valign="top">
     
     *Stop On Exception* 
-
-
     
     </td>
     <td valign="top">
     
     Select this option to stop message processing if an exception occurs.
-
-
     
     </td>
     </tr>

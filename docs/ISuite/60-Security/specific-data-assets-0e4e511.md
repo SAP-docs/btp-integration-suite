@@ -15,35 +15,25 @@ The following table lists the different kinds and attributes such like storage l
 
 Data
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Logical `Storage` 
 
-
-
 </th>
 <th valign="top">
 
 Classification
 
-
-
 </th>
 <th valign="top">
 
 Retention Time
-
-
 
 </th>
 </tr>
@@ -52,14 +42,10 @@ Retention Time
 
 Message processing log
 
-
-
 </td>
 <td valign="top">
 
 Structured information on the processing of a message
-
-
 
 </td>
 <td valign="top">
@@ -71,14 +57,10 @@ Structured information on the processing of a message
 
 Log data
 
-
-
 </td>
 <td valign="top">
 
 30 days
-
-
 
 </td>
 </tr>
@@ -87,21 +69,15 @@ Log data
 
 Message processing log attachments
 
-
-
 </td>
 <td valign="top">
 
 Data attached to a message processing log during runtime
 
-
-
 </td>
 <td valign="top">
 
 Message store
-
-
 
 </td>
 <td valign="top">
@@ -110,14 +86,10 @@ Log data
 
 Business data
 
-
-
 </td>
 <td valign="top">
 
 30 days
-
-
 
 </td>
 </tr>
@@ -126,21 +98,15 @@ Business data
 
 Integration flow tracing data
 
-
-
 </td>
 <td valign="top">
 
 Information on the message flow \(including the message payload\) and on errors that occurred during message processing
 
-
-
 </td>
 <td valign="top">
 
 Trace store
-
-
 
 </td>
 <td valign="top">
@@ -149,14 +115,10 @@ Log data
 
 Business data
 
-
-
 </td>
 <td valign="top">
 
 60 minutes
-
-
 
 </td>
 </tr>
@@ -165,35 +127,25 @@ Business data
 
 Integration content \(design time\)
 
-
-
 </td>
 <td valign="top">
 
 Integration flow models and value mappings created or edited by an integration developer
-
-
 
 </td>
 <td valign="top">
 
 Workspace
 
-
-
 </td>
 <td valign="top">
 
 Configuration data
 
-
-
 </td>
 <td valign="top">
 
 Unlimited
-
-
 
 </td>
 </tr>
@@ -202,14 +154,10 @@ Unlimited
 
 Integration content \(runtime\)
 
-
-
 </td>
 <td valign="top">
 
 Camel XML representation of integration flows and other design time entities \(as deployed on a runtime node\)
-
-
 
 </td>
 <td valign="top">
@@ -221,14 +169,10 @@ Camel XML representation of integration flows and other design time entities \(a
 
 Configuration data
 
-
-
 </td>
 <td valign="top">
 
 Unlimited
-
-
 
 </td>
 </tr>
@@ -237,8 +181,6 @@ Unlimited
 
 Data stored by Data Store operations step
 
-
-
 </td>
 <td valign="top">
 
@@ -246,28 +188,20 @@ Message content stored in dedicated steps in an integration flow \(contains info
 
 Is used for further message processing in subsequent steps in an integration flow.
 
-
-
 </td>
 <td valign="top">
 
 Data store
-
-
 
 </td>
 <td valign="top">
 
 Business data
 
-
-
 </td>
 <td valign="top">
 
 Can be defined by integration developer \(default value: 30 days\)
-
-
 
 </td>
 </tr>
@@ -276,8 +210,6 @@ Can be defined by integration developer \(default value: 30 days\)
 
 Data stored by Persist step
 
-
-
 </td>
 <td valign="top">
 
@@ -285,28 +217,20 @@ Message content stored in dedicated steps in an integration flow \(contains info
 
 Can be accessed and analyzed after message processing.
 
-
-
 </td>
 <td valign="top">
 
 Message store
-
-
 
 </td>
 <td valign="top">
 
 Business data
 
-
-
 </td>
 <td valign="top">
 
 90 days
-
-
 
 </td>
 </tr>
@@ -315,14 +239,10 @@ Business data
 
 Lock entries
 
-
-
 </td>
 <td valign="top">
 
 Lock entries that are created \(in the in-progress repository\) to avoid the same message being processed several times in parallel \(for example, by different runtime nodes\)
-
-
 
 </td>
 <td valign="top">
@@ -348,11 +268,11 @@ Lock entries that are created \(in the in-progress repository\) to avoid the sam
 
 [Message Processing Log](../50-Development/message-processing-log-b32f8cd.md "The message processing log displays structured information of a message.")
 
- <?sap-ot O2O class="- topic/link " href="866b6a94a074487384a21377ec9f2eb2.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/ccm1691418051317/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/0e4e511016754da4bea756df94172a87.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="866b6a94a074487384a21377ec9f2eb2.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cdm1692607551357/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/0e4e511016754da4bea756df94172a87.xml" ?> 
 
 [Define Data Store Operations](../50-Development/define-data-store-operations-79f63a4.md "You can use the data store to temporarily store messages.")
 
- <?sap-ot O2O class="- topic/link " href="9247e59fd76c441592da5724dc890f65.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/ccm1691418051317/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/0e4e511016754da4bea756df94172a87.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="9247e59fd76c441592da5724dc890f65.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/cdm1692607551357/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/0e4e511016754da4bea756df94172a87.xml" ?> 
 
 [Managing Security Material](../50-Development/managing-security-material-b8ccb53.md "The Manage Security Material area provides an overview of security-related artifacts.")
 

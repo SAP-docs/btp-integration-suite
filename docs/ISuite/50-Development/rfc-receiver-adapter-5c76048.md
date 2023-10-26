@@ -63,14 +63,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -79,14 +75,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -103,14 +95,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -119,14 +107,10 @@ Description
 
 *Destination* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the RFC destination configured in SAP BTP cockpit for your application.
-
-
 
 </td>
 </tr>
@@ -134,8 +118,6 @@ Enter the RFC destination configured in SAP BTP cockpit for your application.
 <td valign="top">
 
 *Send Confirm Transaction* 
-
-
 
 </td>
 <td valign="top">
@@ -160,8 +142,6 @@ Enter the RFC destination configured in SAP BTP cockpit for your application.
 <td valign="top">
 
 *Create New Connection* 
-
-
 
 </td>
 <td valign="top">

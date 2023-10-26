@@ -41,15 +41,11 @@ You can use this procedure to create an OData model or build up an existing one 
     <th valign="top">
 
     Connection Details
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -57,15 +53,11 @@ You can use this procedure to create an OData model or build up an existing one 
     <td valign="top">
     
     Address
-
-
     
     </td>
     <td valign="top">
     
     Endpoint URI of the target system
-
-
     
     </td>
     </tr>
@@ -73,15 +65,11 @@ You can use this procedure to create an OData model or build up an existing one 
     <td valign="top">
     
     Client
-
-
     
     </td>
     <td valign="top">
     
     Client of the target system
-
-
     
     </td>
     </tr>
@@ -89,15 +77,11 @@ You can use this procedure to create an OData model or build up an existing one 
     <td valign="top">
     
     Namespace
-
-
     
     </td>
     <td valign="top">
     
     Logical grouping of the service implementation
-
-
     
     </td>
     </tr>
@@ -105,15 +89,11 @@ You can use this procedure to create an OData model or build up an existing one 
     <td valign="top">
     
     Service Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the service implementation
-
-
     
     </td>
     </tr>
@@ -121,15 +101,11 @@ You can use this procedure to create an OData model or build up an existing one 
     <td valign="top">
     
     Version
-
-
     
     </td>
     <td valign="top">
     
     Version of the service implementation
-
-
     
     </td>
     </tr>
@@ -137,8 +113,6 @@ You can use this procedure to create an OData model or build up an existing one 
     <td valign="top">
     
     Proxy Type
-
-
     
     </td>
     <td valign="top">
@@ -160,15 +134,11 @@ You can use this procedure to create an OData model or build up an existing one 
     <td valign="top">
     
     Authentication
-
-
     
     </td>
     <td valign="top">
     
     Select *Basic* if you want to use user credentials to connect to the target system.
-
-
     
     </td>
     </tr>
@@ -176,15 +146,11 @@ You can use this procedure to create an OData model or build up an existing one 
     <td valign="top">
     
     Credential Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the user credentials artifact deployed on the tenant
-
-
     
     </td>
     </tr>

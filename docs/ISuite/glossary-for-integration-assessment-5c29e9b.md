@@ -9,14 +9,10 @@
 
 Term
 
-
-
 </th>
 <th valign="top">
 
 Definition
-
-
 
 </th>
 </tr>
@@ -25,14 +21,10 @@ Definition
 
 Application
 
-
-
 </td>
 <td valign="top">
 
 A software solution \(SaaS or on-premise\) used in the integration landscape.
-
-
 
 </td>
 </tr>
@@ -41,14 +33,10 @@ A software solution \(SaaS or on-premise\) used in the integration landscape.
 
 Business solution request
 
-
-
 </td>
 <td valign="top">
 
 A business solution request represents the key entity for an integration requirement from a business standpoint.
-
-
 
 </td>
 </tr>
@@ -57,8 +45,6 @@ A business solution request represents the key entity for an integration require
 
 Deployment model
 
-
-
 </td>
 <td valign="top">
 
@@ -66,16 +52,12 @@ Identifies how the software is hosted, for example, in the public cloud or on-pr
 
 For example, the deployment mode *public cloud* applies when the software is provisioned to multiple customers for open use via the Internet.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Integration domain
-
-
 
 </td>
 <td valign="top">
@@ -90,16 +72,12 @@ You can do an assessment of your integration architecture by specifying the inte
 
 See: [Integration Domains](30-Assessing_Integration_Strategy/integration-domains-e8360d2.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Integration Areas
-
-
 
 </td>
 <td valign="top">
@@ -108,16 +86,12 @@ A combination of integration domain and integration style.
 
 You can do an assessment of your integration architecture by specifying the integration patterns that are relevant for your organization or that you might want to further evaluate.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Integration policy
-
-
 
 </td>
 <td valign="top">
@@ -128,16 +102,12 @@ SAP Integration Solution Advisory Methodology foresees various levels of recomme
 
 For each integration technology, the supported integration domains are also indicated.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Integration style
-
-
 
 </td>
 <td valign="top">
@@ -148,16 +118,12 @@ Integration styles are the key pillar of ISA-M. Each integration style has speci
 
 See: [Integration Styles and Integration Use Case Patterns](30-Assessing_Integration_Strategy/integration-styles-and-integration-use-case-patterns-770909d.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Integration technology
-
-
 
 </td>
 <td valign="top">
@@ -166,16 +132,12 @@ Middleware component that helps you solve your integration challenge.
 
 Integration Assessment comes with a predefined list of SAP integration technologies. You can also specify custom integration technologies.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Integration use case pattern
-
-
 
 </td>
 <td valign="top">
@@ -188,8 +150,6 @@ You can do an assessment of your integration architecture by adding the integrat
 
 See: [Integration Styles and Integration Use Case Patterns](30-Assessing_Integration_Strategy/integration-styles-and-integration-use-case-patterns-770909d.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -197,14 +157,10 @@ See: [Integration Styles and Integration Use Case Patterns](30-Assessing_Integra
 
 Interface request
 
-
-
 </td>
 <td valign="top">
 
 An interface request represents the key entity for an integration requirement from a technical standpoint.
-
-
 
 </td>
 </tr>
@@ -212,8 +168,6 @@ An interface request represents the key entity for an integration requirement fr
 <td valign="top">
 
 Key characteristic
-
-
 
 </td>
 <td valign="top">
@@ -224,8 +178,6 @@ You can use the listed criteria as a starting point for discussion. You can furt
 
 See: [Key Characteristics](30-Assessing_Integration_Strategy/key-characteristics-c16258e.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -235,8 +187,6 @@ SAP Integration Solution Advisory Methodology
 
 \(ISA-M\)
 
-
-
 </td>
 <td valign="top">
 
@@ -245,8 +195,6 @@ Methodology that helps you to blueprint an integration reference architecture fo
 ISA-M provides you with a structured approach that helps you to assess your integration strategy.
 
 See: [SAP Integration Solution Advisory Methodology](30-Assessing_Integration_Strategy/sap-integration-solution-advisory-methodology-a2e17f3.md)
-
-
 
 </td>
 </tr>

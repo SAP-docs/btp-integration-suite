@@ -15,7 +15,7 @@ Choose a package based on your requirements.
 
 Choose *Copy* to create a copy of the package to your design workspace that you can later edit, configure, and deploy. To know more about how to best work with prepackaged content, see [Use Prepackaged Integration Content Provided by SAP](use-prepackaged-integration-content-provided-by-sap-95c68ce.md).
 
-You can also access prepackaged content on the SAP Business Accelerator Hub: [https://api.sap.com/products/SAPCloudPlatform/integrations/packages](https://api.sap.com/products/SAPCloudPlatform/integrations/packages).
+You can also access prepackaged content on the SAP Business Accelerator Hub: [SAP Business Technology Platform - Packages](https://api.sap.com/products/SAPCloudPlatform/integrations/packages).
 
 > ### Note:  
 > You can also find integration content from SAP partners in the *Discover* \> *Integrations* menu. You can find the vendor packages by filtering for the *Vendor* with any other available value apart from SAP.

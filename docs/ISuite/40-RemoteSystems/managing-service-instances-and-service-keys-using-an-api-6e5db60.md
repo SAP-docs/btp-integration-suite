@@ -75,15 +75,11 @@ Using Postman, set up the API call in the following way:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -91,15 +87,11 @@ Using Postman, set up the API call in the following way:
     <td valign="top">
     
     *Grant Type* 
-
-
     
     </td>
     <td valign="top">
     
     Select *Password Credentials*.
-
-
     
     </td>
     </tr>
@@ -107,8 +99,6 @@ Using Postman, set up the API call in the following way:
     <td valign="top">
     
     *Access Token URL* 
-
-
     
     </td>
     <td valign="top">
@@ -122,8 +112,6 @@ Using Postman, set up the API call in the following way:
     In this case, for *Access Token URL* enter:
 
     `https://uaa.<myAPI>/oauth/token`
-
-
     
     </td>
     </tr>
@@ -131,15 +119,11 @@ Using Postman, set up the API call in the following way:
     <td valign="top">
     
     *Client ID* 
-
-
     
     </td>
     <td valign="top">
     
     `cf`
-
-
     
     </td>
     </tr>
@@ -147,15 +131,11 @@ Using Postman, set up the API call in the following way:
     <td valign="top">
     
     *Username* 
-
-
     
     </td>
     <td valign="top">
     
     Enter the user name of the user that has the corresponding permissions on the subaccount.
-
-
     
     </td>
     </tr>
@@ -163,15 +143,11 @@ Using Postman, set up the API call in the following way:
     <td valign="top">
     
     *Password* 
-
-
     
     </td>
     <td valign="top">
     
     Enter the password of the user.
-
-
     
     </td>
     </tr>
@@ -201,21 +177,15 @@ To get the details of the service keys you are interested in, you can implement 
 
 API Call
 
-
-
 </th>
 <th valign="top">
 
 API Call
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -226,14 +196,10 @@ Description
 
 Get all service instances with service plan `integration-flow`.
 
-
-
 </td>
 <td valign="top">
 
 `https://<API Endpoint address>/v3/service_instances?service_plan_names=integration-flow` 
-
-
 
 </td>
 <td valign="top">
@@ -295,8 +261,6 @@ This is part of an example response:
 **\(2\)**
 
 Get the service keys configured for the service instances retrieved from previous call.
-
-
 
 </td>
 <td valign="top">
@@ -363,8 +327,6 @@ This is part of an example response:
 
 Get details of individual service key retrieved from previous call.
 
-
-
 </td>
 <td valign="top">
 
@@ -378,8 +340,6 @@ You can use the `guid` parameter retrieved from the previous call to get details
 > `https://<API Endpoint address>/v3/service_credential_bindings/abcd-1234/details`
 
 You need to repeat call \(3\) for all service key guids retrieved from the previous call to get the details for all relevant service keys.
-
-
 
 </td>
 <td valign="top">

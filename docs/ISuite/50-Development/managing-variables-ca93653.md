@@ -15,14 +15,10 @@ Choose the *Variables* tile in the *Manage Store*section. You get an overview of
 
 Table Settings
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 The variable name is defined in the integration flow.
-
-
 
 </td>
 </tr>
@@ -47,14 +39,10 @@ The variable name is defined in the integration flow.
 
 *Visibility* 
 
-
-
 </td>
 <td valign="top">
 
 A variable can be globally visible across all deployed integration flows of the tenant or be used only by one integration flow.
-
-
 
 </td>
 </tr>
@@ -63,14 +51,10 @@ A variable can be globally visible across all deployed integration flows of the 
 
 *Integration Flow* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the integration flow the variable is used in.
-
-
 
 </td>
 </tr>
@@ -79,14 +63,10 @@ Displays the ID of the integration flow the variable is used in.
 
 *Updated At* 
 
-
-
 </td>
 <td valign="top">
 
 Shows date and time when the variable content was last updated.
-
-
 
 </td>
 </tr>
@@ -95,14 +75,10 @@ Shows date and time when the variable content was last updated.
 
 *Retain Until*
 
-
-
 </td>
 <td valign="top">
 
 Displays date and time until the variable is still available. The retention time is updated along with any update of the variable.
-
-
 
 </td>
 </tr>
@@ -111,14 +87,10 @@ Displays date and time until the variable is still available. The retention time
 
 *Actions*
 
-
-
 </td>
 <td valign="top">
 
 You can download the variable content or delete the variable.
-
-
 
 </td>
 </tr>

@@ -73,21 +73,15 @@ An example payload for the policy is as follows:
 
 **Attribute Name**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
 
-
-
 </th>
 <th valign="top">
 
 Presence
-
-
 
 </th>
 </tr>
@@ -95,8 +89,6 @@ Presence
 <td valign="top">
 
 Source
-
-
 
 </td>
 <td valign="top">
@@ -109,14 +101,10 @@ If the source message cannot be resolved or if it resolves to a non-message type
 
 `<Source>response</Source>`
 
-
-
 </td>
 <td valign="top">
 
 Optional
-
-
 
 </td>
 </tr>
@@ -125,8 +113,6 @@ Optional
 
 IgnoreUnresolvedVariables
 
-
-
 </td>
 <td valign="top">
 
@@ -134,14 +120,10 @@ If set to true and any variable is unresolvable, the policy returns an error and
 
 `<IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>`
 
-
-
 </td>
 <td valign="top">
 
 Optional
-
-
 
 </td>
 </tr>
@@ -149,8 +131,6 @@ Optional
 <td valign="top">
 
 URIPath
-
-
 
 </td>
 <td valign="top">
@@ -171,16 +151,12 @@ Specifies the request URI path from where the information needs to be extracted 
 
 Optional
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 QueryParam
-
-
 
 </td>
 <td valign="top">
@@ -201,16 +177,12 @@ Specifies the request query parameter from where the information needs to be ext
 
 Optional
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Header
-
-
 
 </td>
 <td valign="top">
@@ -231,16 +203,12 @@ Specifies the request and response header from where the information needs to be
 
 Optional
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 FormParam
-
-
 
 </td>
 <td valign="top">
@@ -261,16 +229,12 @@ Specifies the request form parameter from where the information needs to be extr
 
 Optional
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Variable
-
-
 
 </td>
 <td valign="top">
@@ -291,16 +255,12 @@ Specifies the variable from where the information needs to be extracted and eval
 
 Optional
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 XMLPayload
-
-
 
 </td>
 <td valign="top">
@@ -328,16 +288,12 @@ Specifies theXML payload from where the information needs to be extracted and ev
 
 Optional
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JSONPayload
-
-
 
 </td>
 <td valign="top">
@@ -361,8 +317,6 @@ Specifies the JSON payload from where the information needs to be extracted and 
 
 Optional
 
-
-
 </td>
 </tr>
 </table>
@@ -376,14 +330,10 @@ RegularExpressionProtection policy type defines the following error codes:
 
 Error code
 
-
-
 </th>
 <th valign="top">
 
 Message
-
-
 
 </th>
 </tr>
@@ -392,14 +342,10 @@ Message
 
 NothingToEnforce
 
-
-
 </td>
 <td valign="top">
 
 RegularExpressionProtection \{0\}: at least one of URIPath, QueryParam, Header, FormParam, XMLPayload, JSONPayload is mandatory
-
-
 
 </td>
 </tr>
@@ -408,14 +354,10 @@ RegularExpressionProtection \{0\}: at least one of URIPath, QueryParam, Header, 
 
 NoPatternsToEnforce
 
-
-
 </td>
 <td valign="top">
 
 RegularExpressionProtection \{0\}: No patterns to enforce in \{1\}
-
-
 
 </td>
 </tr>
@@ -424,14 +366,10 @@ RegularExpressionProtection \{0\}: No patterns to enforce in \{1\}
 
 EmptyXPathExpression
 
-
-
 </td>
 <td valign="top">
 
 RegularExpressionProtection \{0\}: Empty XPath expression
-
-
 
 </td>
 </tr>
@@ -440,14 +378,10 @@ RegularExpressionProtection \{0\}: Empty XPath expression
 
 EmptyJSONPathExpression
 
-
-
 </td>
 <td valign="top">
 
 RegularExpressionProtection \{0\}: Empty JSONPath expression
-
-
 
 </td>
 </tr>
@@ -456,14 +390,10 @@ RegularExpressionProtection \{0\}: Empty JSONPath expression
 
 DuplicatePrefix
 
-
-
 </td>
 <td valign="top">
 
 RegularExpressionProtection \{0\}: Duplicate prefix \{1\}
-
-
 
 </td>
 </tr>
@@ -472,14 +402,10 @@ RegularExpressionProtection \{0\}: Duplicate prefix \{1\}
 
 NONEmptyPrefixMappedToEmptyURI
 
-
-
 </td>
 <td valign="top">
 
 RegularExpressionProtection \{0\}: Non-empty prefix \{1\} cannot be mapped to empty uri
-
-
 
 </td>
 </tr>
@@ -488,14 +414,10 @@ RegularExpressionProtection \{0\}: Non-empty prefix \{1\} cannot be mapped to em
 
 ThreatDetected
 
-
-
 </td>
 <td valign="top">
 
 Regular Expression Threat Detected in \{0\}: regex: \{1\} input: \{2\}
-
-
 
 </td>
 </tr>
@@ -504,14 +426,10 @@ Regular Expression Threat Detected in \{0\}: regex: \{1\} input: \{2\}
 
 ExecutionFailed
 
-
-
 </td>
 <td valign="top">
 
 Failed to execute the RegularExpressionProtection StepDefinition \{0\}. Reason: \{1\}
-
-
 
 </td>
 </tr>
@@ -520,14 +438,10 @@ Failed to execute the RegularExpressionProtection StepDefinition \{0\}. Reason: 
 
 VariableResolutionFailed
 
-
-
 </td>
 <td valign="top">
 
 Failed to resolve variable \{0\}
-
-
 
 </td>
 </tr>
@@ -536,14 +450,10 @@ Failed to resolve variable \{0\}
 
 NonMessageVariable
 
-
-
 </td>
 <td valign="top">
 
 Variable \{0\} does not resolve to a Message
-
-
 
 </td>
 </tr>
@@ -552,14 +462,10 @@ Variable \{0\} does not resolve to a Message
 
 SourceMessageNotAvailable
 
-
-
 </td>
 <td valign="top">
 
 \{0\} message is not available for RegularExpressionProtection StepDefinition \{1\}
-
-
 
 </td>
 </tr>
@@ -568,14 +474,10 @@ SourceMessageNotAvailable
 
 InvalidRegularExpression
 
-
-
 </td>
 <td valign="top">
 
 RegularExpressionProtection \{0\}: Invalid Regular Expression \{1\}, Context \{2\}
-
-
 
 </td>
 </tr>
@@ -584,14 +486,10 @@ RegularExpressionProtection \{0\}: Invalid Regular Expression \{1\}, Context \{2
 
 InstantiationFailed
 
-
-
 </td>
 <td valign="top">
 
 Failed to instantiate the RegularExpressionProtection StepDefinition \{0\}
-
-
 
 </td>
 </tr>
@@ -600,14 +498,10 @@ Failed to instantiate the RegularExpressionProtection StepDefinition \{0\}
 
 CannotBeConvertedToNodeset
 
-
-
 </td>
 <td valign="top">
 
 RegularExpressionProtection \{0\}: Result of xpath \{1\} cannot be converted to nodeset. Context \{2\}
-
-
 
 </td>
 </tr>
@@ -616,14 +510,10 @@ RegularExpressionProtection \{0\}: Result of xpath \{1\} cannot be converted to 
 
 XPathCompilationFailed
 
-
-
 </td>
 <td valign="top">
 
 RegularExpressionProtection \{0\}: Failed to compile xpath \{1\}. Context \{2\}
-
-
 
 </td>
 </tr>
@@ -632,14 +522,10 @@ RegularExpressionProtection \{0\}: Failed to compile xpath \{1\}. Context \{2\}
 
 JSONPathCompilationFailed
 
-
-
 </td>
 <td valign="top">
 
 RegularExpressionProtection \{0\}: Failed to compile jsonpath \{1\}. Context \{2\}
-
-
 
 </td>
 </tr>

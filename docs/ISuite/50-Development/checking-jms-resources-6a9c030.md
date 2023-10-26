@@ -24,8 +24,6 @@ Click *Details* to find out more details.
 
 *Number of Queues* 
 
-
-
 </td>
 <td valign="top">
 
@@ -50,8 +48,6 @@ This row illustrates the remaining resources:
 
 *Capacity* 
 
-
-
 </td>
 <td valign="top">
 
@@ -74,8 +70,6 @@ This row illustrates the remaining resources:
 <td valign="top">
 
 *Queue Status* 
-
-
 
 </td>
 <td valign="top">
@@ -101,8 +95,6 @@ Displays a summary of the individual statuses of the respective queues.
 
 *Transactions* 
 
-
-
 </td>
 <td valign="top" rowspan="3">
 
@@ -126,16 +118,12 @@ See:
 
 *Providers* 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Consumers* 
-
-
 
 </td>
 </tr>
@@ -144,14 +132,10 @@ See:
 
 *Runtime Nodes* 
 
-
-
 </td>
 <td valign="top">
 
 Number of runtime nodes \(aka worker nodes\) in use.
-
-
 
 </td>
 </tr>

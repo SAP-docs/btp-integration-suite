@@ -72,15 +72,11 @@ The messages are persisted along with the Message ID, which you will need in ord
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -88,8 +84,6 @@ The messages are persisted along with the Message ID, which you will need in ord
     <td valign="top">
     
     Step ID
-
-
     
     </td>
     <td valign="top">
@@ -111,8 +105,6 @@ The messages are persisted along with the Message ID, which you will need in ord
     <td valign="top">
     
     Encrypt Stored Message
-
-
     
     </td>
     <td valign="top">
@@ -120,8 +112,6 @@ The messages are persisted along with the Message ID, which you will need in ord
     To store the message encrypted, keep the checkbox selected.
 
     If selected, the stored message is encrypted with an encryption key that is unique for each tenant \(using AES and a key length of 128 bits\). The encryption key is generated automatically, stored in a different database than the encrypted data, and periodically regenerated \(to increase security\).
-
-
     
     </td>
     </tr>

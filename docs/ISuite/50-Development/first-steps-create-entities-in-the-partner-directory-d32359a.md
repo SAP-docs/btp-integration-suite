@@ -22,22 +22,16 @@ To work with the example integration flows, you need to create the following ent
 
 Entity Type
 
-
-
 </th>
 <th valign="top">
 
 Entity
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
@@ -45,44 +39,32 @@ Description
 
 String Parameters
 
-
-
 </td>
 <td valign="top">
 
 ReceiverUrl
-
-
 
 </td>
 <td valign="top">
 
 Endpoint of receiver that is called by the integration flow *Partner Directory – Dynamic Receiver*
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 String Parameters
-
-
 
 </td>
 <td valign="top">
 
 AS2\_inbound\_decrypt\_message
 
-
-
 </td>
 <td valign="top">
 
 Indicates if the message has to be decrypted in the integration flow *Partner Directory – AS2 Dynamic Keys* 
-
-
 
 </td>
 </tr>
@@ -90,22 +72,16 @@ Indicates if the message has to be decrypted in the integration flow *Partner Di
 <td valign="top">
 
 String Parameters
-
-
 
 </td>
 <td valign="top">
 
 ReceiverPrivateKey
 
-
-
 </td>
 <td valign="top">
 
 Private key alias to identify key in Cloud Integration keystore used to decrypt message in the integration flow *Partner Directory – AS2 Dynamic Keys* 
-
-
 
 </td>
 </tr>
@@ -114,21 +90,15 @@ Private key alias to identify key in Cloud Integration keystore used to decrypt 
 
 String Parameters
 
-
-
 </td>
 <td valign="top">
 
 AS2\_inbound\_verify\_signature
 
-
-
 </td>
 <td valign="top">
 
 Indicates if the signature of a message must be validated in the integration flow *Partner Directory – AS2 Dynamic Keys* 
-
-
 
 </td>
 </tr>
@@ -137,21 +107,15 @@ Indicates if the signature of a message must be validated in the integration flo
 
 User Credentials
 
-
-
 </td>
 <td valign="top">
 
 ReceiverCredentials
 
-
-
 </td>
 <td valign="top">
 
 Security artifact \(deployed on the Cloud Integration tenant\) that is used to call the receiver endpoint in integration flow *Partner Directory – Dynamic Receiver* 
-
-
 
 </td>
 </tr>
@@ -160,21 +124,15 @@ Security artifact \(deployed on the Cloud Integration tenant\) that is used to c
 
 Authorized User
 
-
-
 </td>
 <td valign="top">
 
 \(Create an authorized user with arbitrary name\)
 
-
-
 </td>
 <td valign="top">
 
 User assigned to Partner ID for integration flow *Partner Directory – Authorized User* and *Partner Directory – AS2 Dynamic Keys* 
-
-
 
 </td>
 </tr>
@@ -183,44 +141,32 @@ User assigned to Partner ID for integration flow *Partner Directory – Authoriz
 
 Alternative Partner Id
 
-
-
 </td>
 <td valign="top">
 
 \(Define an alternative partner Id with arbitrary value\)
-
-
 
 </td>
 <td valign="top">
 
 Alternative partner id assigned to partner id for the integration flow *Partner Directory – Alternative Partner Id* 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Binary Parameter
-
-
 
 </td>
 <td valign="top">
 
 SenderPublicKey
 
-
-
 </td>
 <td valign="top">
 
 Public key of Mendelson tool for signing messages for the integration flow *Partner Directory – AS2 Dynamic Keys* 
-
-
 
 </td>
 </tr>
@@ -228,22 +174,16 @@ Public key of Mendelson tool for signing messages for the integration flow *Part
 <td valign="top">
 
 Binary Parameter
-
-
 
 </td>
 <td valign="top">
 
 MyMapping
 
-
-
 </td>
 <td valign="top">
 
 XSLT mapping used in the integration flow *Partner Directory – XSLT Mapping* 
-
-
 
 </td>
 </tr>
@@ -252,21 +192,15 @@ XSLT mapping used in the integration flow *Partner Directory – XSLT Mapping*
 
 Binary Parameter
 
-
-
 </td>
 <td valign="top">
 
 MyMappingSchema
 
-
-
 </td>
 <td valign="top">
 
 XSD schema used in the integration flow *Partner Directory – XSLT Mapping* 
-
-
 
 </td>
 </tr>
@@ -276,11 +210,11 @@ Perform the following initial steps with Postman.
 
 1.  Initially create the Partner Directory entries.
 
-    Start the Postman Runner and select collection *CPI Partner Directory Example Flows*.
+2.  Start the Postman Runner and select collection *CPI Partner Directory Example Flows*.
 
-    Depending on the Cloud environment, select folder *Update PD \(CF\)* or *Update PD \(Neo\)*. This folder contains a request that automatically creates the sample partner `PartnerA` with the entities listed in table above.
+3.  Depending on the Cloud environment, select folder *Update PD \(CF\)* or *Update PD \(Neo\)*. This folder contains a request that automatically creates the sample partner `PartnerA` with the entities listed in table above.
 
-    Start the Postman runner for folder *Update PD \(CF\)* or *Update PD \(Neo\)*.
+4.  Start the Postman runner for folder *Update PD \(CF\)* or *Update PD \(Neo\)*.
 
 
 **Related Information**  

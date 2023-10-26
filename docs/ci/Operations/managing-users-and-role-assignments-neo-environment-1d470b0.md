@@ -37,14 +37,10 @@ The URL of the SAP BTP cockpit depends on the data center.
 
 Region
 
-
-
 </th>
 <th valign="top">
 
 URL
-
-
 
 </th>
 </tr>
@@ -53,14 +49,10 @@ URL
 
 Europe \(Rot\)
 
-
-
 </td>
 <td valign="top">
 
 [https://account.hana.ondemand.com/cockpit](https://account.hana.ondemand.com/cockpit) 
-
-
 
 </td>
 </tr>
@@ -69,14 +61,10 @@ Europe \(Rot\)
 
 US East \(Ashburn\)
 
-
-
 </td>
 <td valign="top">
 
 [https://account.us1.hana.ondemand.com/cockpit](https://account.us1.hana.ondemand.com/cockpit) 
-
-
 
 </td>
 </tr>
@@ -85,14 +73,10 @@ US East \(Ashburn\)
 
 Australia \(Sydney\)
 
-
-
 </td>
 <td valign="top">
 
 [https://account.ap1.hana.ondemand.com/cockpit](https://account.ap1.hana.ondemand.com/cockpit) 
-
-
 
 </td>
 </tr>

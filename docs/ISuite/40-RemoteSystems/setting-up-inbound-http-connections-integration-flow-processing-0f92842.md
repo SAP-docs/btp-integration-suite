@@ -107,14 +107,10 @@ Sender is authenticated based on user credentials associated with a user registe
 > 
 > Option
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Summary of Steps
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -123,8 +119,6 @@ Sender is authenticated based on user credentials associated with a user registe
 > 
 > Basic authentication of a user registered at an identity provider \(IdP\)
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
@@ -132,16 +126,12 @@ Sender is authenticated based on user credentials associated with a user registe
 > 
 > See: [Basic Authentication of IdP User for Integration Flow Processing](basic-authentication-of-idp-user-for-integration-flow-processing-5d46e56.md)
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
 > <td valign="top">
 > 
 > Authentication with an OAuth client \(service instance\)
-> 
-> 
 > 
 > </td>
 > <td valign="top">
@@ -158,12 +148,9 @@ Sender is authenticated based on user credentials associated with a user registe
 > 
 > -   [Basic Authentication with clientId and clientsecret for Integration Flow Processing](basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 > 
-> 
-> [Basic Authentication with clientId and clientsecret for Integration Flow Processing](basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
-> 
-> [Client Certificate Authentication for Integration Flow Processing](client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
-> 
-> [OAuth with Client Credentials Grant for Integration Flow Processing](oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md)
+> -   [Basic Authentication with clientId and clientsecret for Integration Flow Processing](basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
+> -   [Client Certificate Authentication for Integration Flow Processing](client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
+> -   [OAuth with Client Credentials Grant for Integration Flow Processing](oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md)
 > 
 > 
 > 

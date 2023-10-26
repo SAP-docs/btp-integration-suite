@@ -13,14 +13,10 @@ Minimizes the risk posed by content-level attacks by enabling specific limits on
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Description
 
 Name\*
 
-
-
 </td>
 <td valign="top">
 
 The internal name of the policy. The value of the name attribute can contain letters, numbers, spaces, hyphens, underscores, and periods. This value can’t exceed 255 characters.
-
-
 
 </td>
 </tr>
@@ -44,8 +36,6 @@ The internal name of the policy. The value of the name attribute can contain let
 <td valign="top">
 
 On Error
-
-
 
 </td>
 <td valign="top">
@@ -64,14 +54,10 @@ Determines the behavior when an exception or an error occurs during the policy e
 
 Max Array Element Count
 
-
-
 </td>
 <td valign="top">
 
 Maximum number of elements allowed in an array. The maximum value is 1,00,000.
-
-
 
 </td>
 </tr>
@@ -80,14 +66,10 @@ Maximum number of elements allowed in an array. The maximum value is 1,00,000.
 
 Max Depth
 
-
-
 </td>
 <td valign="top">
 
 Maximum container depth allowed for objects or arrays. The maximum value is 1,00,000.
-
-
 
 </td>
 </tr>
@@ -96,14 +78,10 @@ Maximum container depth allowed for objects or arrays. The maximum value is 1,00
 
 Max Object Count
 
-
-
 </td>
 <td valign="top">
 
 Maximum number of entries allowed within an object. The maximum value is 1,00,000.
-
-
 
 </td>
 </tr>
@@ -112,14 +90,10 @@ Maximum number of entries allowed within an object. The maximum value is 1,00,00
 
 Max Name Length
 
-
-
 </td>
 <td valign="top">
 
 Maximum string length allowed for a property name within an object. The maximum value is 1,00,000.
-
-
 
 </td>
 </tr>
@@ -128,14 +102,10 @@ Maximum string length allowed for a property name within an object. The maximum 
 
 Max String Value Length
 
-
-
 </td>
 <td valign="top">
 
 Maximum length allowed for a string value. The maximum value is 1,00,000.
-
-
 
 </td>
 </tr>
@@ -144,14 +114,10 @@ Maximum length allowed for a string value. The maximum value is 1,00,000.
 
 Max JSON Size
 
-
-
 </td>
 <td valign="top">
 
 Maximum size allowed for a JSON payload in KB. The maximum value is 10 MB.
-
-
 
 </td>
 </tr>

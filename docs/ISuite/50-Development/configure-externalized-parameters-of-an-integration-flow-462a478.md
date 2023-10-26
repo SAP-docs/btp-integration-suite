@@ -55,14 +55,10 @@ Cloud Integration allows you to configure an integration flow individually or mu
     > 
     > Option
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Description
-    > 
-    > 
     > 
     > </th>
     > </tr>
@@ -73,14 +69,10 @@ Cloud Integration allows you to configure an integration flow individually or mu
     > 
     > \(default setting\)
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > No error handling strategy is used if a message exchange could not be processed .
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -89,14 +81,10 @@ Cloud Integration allows you to configure an integration flow individually or mu
     > 
     > Raise Exception \(Deprecated\)
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > If a message exchange could not be processed and there is an IDoc or SOAP \( SAP RM\) channel in the integration flow, an exception is raised to the sender.
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -105,14 +93,10 @@ Cloud Integration allows you to configure an integration flow individually or mu
     > 
     > Raise Exception
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > If a message exchange could not be processed, an exception is raised to the sender.
-    > 
-    > 
     > 
     > </td>
     > </tr>

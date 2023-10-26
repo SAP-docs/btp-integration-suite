@@ -34,8 +34,6 @@ You’re assigned the *AuthGroup.Site.Admin* role. To assign the role, see [Mana
     <td valign="top">
     
     *Topic Name* 
-
-
     
     </td>
     <td valign="top">
@@ -43,8 +41,6 @@ You’re assigned the *AuthGroup.Site.Admin* role. To assign the role, see [Mana
     Enter a name for the notification entity.
 
     **Example**: Experience the new design of the API business hub enterprise!
-
-
     
     </td>
     </tr>
@@ -52,8 +48,6 @@ You’re assigned the *AuthGroup.Site.Admin* role. To assign the role, see [Mana
     <td valign="top">
     
     *Description* 
-
-
     
     </td>
     <td valign="top">
@@ -61,8 +55,6 @@ You’re assigned the *AuthGroup.Site.Admin* role. To assign the role, see [Mana
     Enter a description for the notification entity.
 
     **Example**: If you’ve subscribed to API business hub enterprise as part of Integration Suite subscription , we now have a new design of the user interface for you to experience.
-
-
     
     </td>
     </tr>

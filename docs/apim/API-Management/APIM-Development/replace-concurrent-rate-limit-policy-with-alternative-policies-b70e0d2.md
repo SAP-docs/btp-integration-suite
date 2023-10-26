@@ -18,21 +18,15 @@ If you’re wondering which policy to use to best meet your rate limiting needs,
 
 Quota
 
-
-
 </th>
 <th valign="top">
 
 Spike Arrest
 
-
-
 </th>
 <th valign="top">
 
 Concurrent Rate Limit \(Decomissioned\)
-
-
 
 </th>
 </tr>
@@ -41,21 +35,15 @@ Concurrent Rate Limit \(Decomissioned\)
 
 Use it to limit the number of connections apps can make to your API proxy's target backend over a specific period of time.
 
-
-
 </td>
 <td valign="top">
 
 Use it to protect your API proxy's target backend against severe traffic spikes and denial of service attacks.
 
-
-
 </td>
 <td valign="top">
 
 Use it to limit the number of concurrent connections apps can make to your API proxy's target backend.
-
-
 
 </td>
 </tr>
@@ -64,21 +52,15 @@ Use it to limit the number of concurrent connections apps can make to your API p
 
 Don't use it to protect your API proxy's target backend against traffic spikes. Use the Spike Arrest policy instead.
 
-
-
 </td>
 <td valign="top">
 
 Don't use it to count and limit the number of connections apps can make to your API proxy's target backend over a specific period of time. Use the Quota policy instead.
 
-
-
 </td>
 <td valign="top">
 
 Don't use it to limit the number of connections applications can make to your API proxy's target backend over a specific period of time. Use the Quota policy for this purpose.
-
-
 
 </td>
 </tr>
@@ -87,21 +69,15 @@ Don't use it to limit the number of connections applications can make to your AP
 
 The Quota policy stores the count.
 
-
-
 </td>
 <td valign="top">
 
 The Spike Arrest policy doesn't store the count.
 
-
-
 </td>
 <td valign="top">
 
 The Concurrent Rate Limit policy stores the count.
-
-
 
 </td>
 </tr>
@@ -110,14 +86,10 @@ The Concurrent Rate Limit policy stores the count.
 
 Attach the policy to the **ProxyEndpoint Request Pre-Flow**, generally after the authentication of the user. This enables the policy to check the quota counter at the entry point of your API proxy.
 
-
-
 </td>
 <td valign="top">
 
 Attach the policy to the **ProxyEndpoint Request Pre-Flow**, generally at the very beginning of the flow. This provides spike protection at the entry point of your API proxy.
-
-
 
 </td>
 <td valign="top">
@@ -140,21 +112,15 @@ This policy must be attached in these three locations:
 
 HTTP status code when limit has been reached: 500 \(Internal Server Error\) \*
 
-
-
 </td>
 <td valign="top">
 
 HTTP status code when limit has been reached: 500 \(Internal Server Error\) \*
 
-
-
 </td>
 <td valign="top">
 
 HTTP status code when limit has been reached: 503 \(Service Unavailable\)
-
-
 
 </td>
 </tr>
@@ -172,8 +138,6 @@ Good to know facts:
 
 See [Quota](quota-1f742c1.md) for more information.
 
-
-
 </td>
 <td valign="top">
 
@@ -188,8 +152,6 @@ Good to know facts:
 
 See [Spike Arrest](spike-arrest-bf441dc.md) for more information.
 
-
-
 </td>
 <td valign="top">
 
@@ -203,8 +165,6 @@ Good to know facts:
 
 
 See [Concurrent Rate Limit](concurrent-rate-limit-8f22baa.md) for more information.
-
-
 
 </td>
 </tr>

@@ -31,14 +31,10 @@ An example payload for the policy is as follows:
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -46,8 +42,6 @@ An example payload for the policy is as follows:
 <td valign="top">
 
 Quota \(Mandatory\)
-
-
 
 </td>
 <td valign="top">
@@ -58,16 +52,12 @@ The ref attribute identifies the variable that fetches the Quota policy that has
 
 Both name and ref are optional but at least one of attributes should be used.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Identifier \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -78,8 +68,6 @@ The ref attribute is the variable used for uniquely identifying the client, for 
 
 Both name and ref are optional but at least one of attributes should be used.
 
-
-
 </td>
 </tr>
 <tr>
@@ -87,14 +75,10 @@ Both name and ref are optional but at least one of attributes should be used.
 
 Allow \(Allow integer\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the message count to which the Quota will be reset.
-
-
 
 </td>
 </tr>
@@ -102,8 +86,6 @@ Specifies the message count to which the Quota will be reset.
 <td valign="top">
 
 Class\(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -113,8 +95,6 @@ Refers to the class for which the quota counter will be reset.
 `<Class name="{name}"`
 
 `ref="request.header.classIdentifier">`
-
-
 
 
 
@@ -131,14 +111,10 @@ Reset Quota policy type defines the following error codes:
 
 Error code
 
-
-
 </th>
 <th valign="top">
 
 Message
-
-
 
 </th>
 </tr>
@@ -147,14 +123,10 @@ Message
 
 InvalidRLPolicyDefinition
 
-
-
 </td>
 <td valign="top">
 
 Invalid rate limit policy \{0\}
-
-
 
 </td>
 </tr>
@@ -163,14 +135,10 @@ Invalid rate limit policy \{0\}
 
 NoRLPolicy
 
-
-
 </td>
 <td valign="top">
 
 Quota policy \{0\} is not attached.
-
-
 
 </td>
 </tr>
@@ -179,14 +147,10 @@ Quota policy \{0\} is not attached.
 
 InvalidCount
 
-
-
 </td>
 <td valign="top">
 
 Invalid count value \{0\} for identifier \{1\} in \{2\}
-
-
 
 </td>
 </tr>
@@ -195,14 +159,10 @@ Invalid count value \{0\} for identifier \{1\} in \{2\}
 
 FailedToResolveAllowCountRef
 
-
-
 </td>
 <td valign="top">
 
 Failed to resolve allow count reference \{0\} for identifier \{1\} in \{2\}
-
-
 
 </td>
 </tr>

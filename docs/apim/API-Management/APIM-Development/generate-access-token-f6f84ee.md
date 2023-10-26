@@ -54,14 +54,10 @@ These variables are set when the GenerateAccessToken policy operation executes s
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -70,14 +66,10 @@ Description
 
 oauthv2accesstoken.\{policy\_name\}.token\_type
 
-
-
 </td>
 <td valign="top">
 
 Will be set to accesstoken.
-
-
 
 </td>
 </tr>
@@ -86,14 +78,10 @@ Will be set to accesstoken.
 
 oauthv2accesstoken.\{policy\_name\}.expires\_in
 
-
-
 </td>
 <td valign="top">
 
 The expiry value for the token.
-
-
 
 </td>
 </tr>
@@ -102,14 +90,10 @@ The expiry value for the token.
 
 oauthv2accesstoken.\{policy\_name\}.refresh\_token
 
-
-
 </td>
 <td valign="top">
 
 The refresh token generated when the policy executes.
-
-
 
 </td>
 </tr>
@@ -118,14 +102,10 @@ The refresh token generated when the policy executes.
 
 oauthv2accesstoken.\{policy\_name\}.refresh\_token\_expires\_in
 
-
-
 </td>
 <td valign="top">
 
 The lifespan of the refresh token, in seconds.
-
-
 
 </td>
 </tr>
@@ -134,14 +114,10 @@ The lifespan of the refresh token, in seconds.
 
 oauthv2accesstoken.\{policy\_name\}.refresh\_token\_issued\_at
 
-
-
 </td>
 <td valign="top">
 
 This time value is the string representation of the corresponding 32-bit timestamp quantity.
-
-
 
 </td>
 </tr>
@@ -150,14 +126,10 @@ This time value is the string representation of the corresponding 32-bit timesta
 
 oauthv2accesstoken.\{policy\_name\}.refresh\_token\_status
 
-
-
 </td>
 <td valign="top">
 
 Set to approved or revoked.
-
-
 
 </td>
 </tr>
@@ -166,14 +138,10 @@ Set to approved or revoked.
 
 oauthv2accesstoken.\{policy\_name\}.scope
 
-
-
 </td>
 <td valign="top">
 
 List of available OAuth scopes.
-
-
 
 </td>
 </tr>

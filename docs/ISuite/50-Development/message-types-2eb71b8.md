@@ -23,14 +23,10 @@ The nodes are represented in a hierarchical manner using indents with the follow
 
 Entry
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -39,14 +35,10 @@ Description
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 Name of the node.
-
-
 
 </td>
 </tr>
@@ -54,8 +46,6 @@ Name of the node.
 <td valign="top">
 
 Category
-
-
 
 </td>
 <td valign="top">
@@ -74,14 +64,10 @@ Displays category of the node. It can be an *Element* or *Attribute*.
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 Displays the referenced [data type](data-types-97ad101.md) assigned to the root node and built-in data type \(decimal, string, or integer\) of the child nodes.
-
-
 
 </td>
 </tr>
@@ -90,14 +76,10 @@ Displays the referenced [data type](data-types-97ad101.md) assigned to the root 
 
 Occurrence
 
-
-
 </td>
 <td valign="top">
 
 Determines how often elements occur. For attributes, the possible value is *Optional* or *Required*.
-
-
 
 </td>
 </tr>
@@ -106,14 +88,10 @@ Determines how often elements occur. For attributes, the possible value is *Opti
 
 Restrictions
 
-
-
 </td>
 <td valign="top">
 
 Displays the of the value range of a node.
-
-
 
 </td>
 </tr>
@@ -138,14 +116,10 @@ From Cloud Integration Web UI you can view the following general details of a Me
 
 Entry
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -154,14 +128,10 @@ Description
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 Name of the Message Type
-
-
 
 </td>
 </tr>
@@ -170,14 +140,10 @@ Name of the Message Type
 
 ID
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique ID of the artifact
-
-
 
 </td>
 </tr>
@@ -186,14 +152,10 @@ Displays the unique ID of the artifact
 
 XML Namespace
 
-
-
 </td>
 <td valign="top">
 
 Displays the namespace to which Message Type belongs to or where it's created.
-
-
 
 </td>
 </tr>
@@ -202,14 +164,10 @@ Displays the namespace to which Message Type belongs to or where it's created.
 
 Data Type Used & Data Type's Package
 
-
-
 </td>
 <td valign="top">
 
 Displays the data type of this message type and name of the package in which the data type exists.
-
-
 
 </td>
 </tr>
@@ -218,14 +176,10 @@ Displays the data type of this message type and name of the package in which the
 
 Version
 
-
-
 </td>
 <td valign="top">
 
 Current version of message type.
-
-
 
 </td>
 </tr>
@@ -234,14 +188,10 @@ Current version of message type.
 
 Created On & Created By
 
-
-
 </td>
 <td valign="top">
 
 User who created the artifact and when it's created.
-
-
 
 </td>
 </tr>
@@ -250,14 +200,10 @@ User who created the artifact and when it's created.
 
 Description
 
-
-
 </td>
 <td valign="top">
 
 Displays the description associated with the Message Type, if any.
-
-
 
 </td>
 </tr>
@@ -265,8 +211,6 @@ Displays the description associated with the Message Type, if any.
 <td valign="top">
 
 ES Repository Information
-
-
 
 </td>
 <td valign="top">

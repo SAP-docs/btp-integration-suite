@@ -24,14 +24,10 @@ The required keys are stored in OpenPGP keyrings. The following types of keyring
 
 Type of Keyring
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,16 +36,12 @@ Description
 
 PGP secret keyring
 
-
-
 </td>
 <td valign="top">
 
 Contains the public/private key pairs of the sender. It can contain multiple key pairs, each identified by a user ID.
 
 The private key is protected with a passphrase. For PGP secret keyrings deployed on tenants, the same passphrase has to be used to access all private keys of the PGP secret keyring.
-
-
 
 </td>
 </tr>
@@ -58,14 +50,10 @@ The private key is protected with a passphrase. For PGP secret keyrings deployed
 
 PGP public keyring
 
-
-
 </td>
 <td valign="top">
 
 Contains the public keys \(related to the private keys that are stored in the PGP secret keyring of the communication partner\).
-
-
 
 </td>
 </tr>
@@ -173,14 +161,10 @@ The OpenPGP message format is specified at [http://tools.ietf.org/html/rfc4880](
 
 Packet Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -189,14 +173,10 @@ Description
 
 Public Key Encrypted Session Key
 
-
-
 </td>
 <td valign="top">
 
 Session key encrypted with a public key, key ID of the public key, and public-key algorithm
-
-
 
 </td>
 </tr>
@@ -204,8 +184,6 @@ Session key encrypted with a public key, key ID of the public key, and public-ke
 <td valign="top">
 
 Signature
-
-
 
 </td>
 <td valign="top">
@@ -216,8 +194,6 @@ There are several types of signature packets:
 
 The certification, direct key, and subkey binding signature can be self-signed. The version 4 signature packet may also contain meta-information about the signature such as creation time, issuer, or key expiration time. The version 3 signature is deprecated.
 
-
-
 </td>
 </tr>
 <tr>
@@ -225,14 +201,10 @@ The certification, direct key, and subkey binding signature can be self-signed. 
 
 Symmetric Key Encrypted Session Key
 
-
-
 </td>
 <td valign="top">
 
 A symmetric key \(also called session key\) encrypted with a symmetric key; a symmetric algorithm is used. This packet is not supported.
-
-
 
 </td>
 </tr>
@@ -240,8 +212,6 @@ A symmetric key \(also called session key\) encrypted with a symmetric key; a sy
 <td valign="top">
 
 One-Pass Signature
-
-
 
 </td>
 <td valign="top">
@@ -260,8 +230,6 @@ Placed at the beginning of the message before the data. It contains sufficient i
 
 Public Key
 
-
-
 </td>
 <td valign="top">
 
@@ -274,14 +242,10 @@ Public Key
 
 Public Subkey
 
-
-
 </td>
 <td valign="top">
 
 Contains similar information to a public key package, but it denotes a subkey.
-
-
 
 </td>
 </tr>
@@ -290,14 +254,10 @@ Contains similar information to a public key package, but it denotes a subkey.
 
 Secret Key
 
-
-
 </td>
 <td valign="top">
 
 Contains all the information that is found in a public key packet, but also includes the secret key \(encrypted private key\).
-
-
 
 </td>
 </tr>
@@ -306,14 +266,10 @@ Contains all the information that is found in a public key packet, but also incl
 
 Secret Subkey
 
-
-
 </td>
 <td valign="top">
 
 Contains similar information to a secret key package, but it denotes a subkey.
-
-
 
 </td>
 </tr>
@@ -322,14 +278,10 @@ Contains similar information to a secret key package, but it denotes a subkey.
 
 Compressed Data
 
-
-
 </td>
 <td valign="top">
 
 Typically, this packet contains the contents of an encrypted packet, or follows a Signature or One-Pass Signature packet, and it contains a literal data packet.
-
-
 
 </td>
 </tr>
@@ -338,14 +290,10 @@ Typically, this packet contains the contents of an encrypted packet, or follows 
 
 Symmetrically Encrypted Data
 
-
-
 </td>
 <td valign="top">
 
 Data encrypted with a symmetric key \(using a symmetric key algorithm\). The symmetric cipher used may be specified in a Public-Key or Symmetric-Key Encrypted Session Key packet that precedes the Symmetrically Encrypted Data packet. This packet uses a variant of the cipher feedback mode \(CFB\) \(as defined at [http://tools.ietf.org/html/rfc4880](http://tools.ietf.org/html/rfc4880)\).
-
-
 
 </td>
 </tr>
@@ -354,14 +302,10 @@ Data encrypted with a symmetric key \(using a symmetric key algorithm\). The sym
 
 Literal Data
 
-
-
 </td>
 <td valign="top">
 
 Contains plain data \(binary or text\).
-
-
 
 </td>
 </tr>
@@ -370,14 +314,10 @@ Contains plain data \(binary or text\).
 
 User ID
 
-
-
 </td>
 <td valign="top">
 
 Indicates the holder of a key. The package contains the user name, e-mail address, and comment of the keyholder.
-
-
 
 </td>
 </tr>
@@ -386,14 +326,10 @@ Indicates the holder of a key. The package contains the user name, e-mail addres
 
 User Attribute
 
-
-
 </td>
 <td valign="top">
 
 Variant of the User ID packet, which can contain more information about the user. It is only used together with key material. This packet is not supported.
-
-
 
 </td>
 </tr>
@@ -402,14 +338,10 @@ Variant of the User ID packet, which can contain more information about the user
 
 Sym. Encrypted and Integrity Protected Data
 
-
-
 </td>
 <td valign="top">
 
 Variant of the Symmetrically Encrypted Data packet. It contains data that is encrypted with a symmetric key algorithm \(using a symmetric key algorithm\) and is protected against modification by the SHA-1 hash algorithm \(less strong than a signature, but stronger than bare CFB encryption\). It does not use Open PGP CFB mode but pure CFB mode.
-
-
 
 </td>
 </tr>

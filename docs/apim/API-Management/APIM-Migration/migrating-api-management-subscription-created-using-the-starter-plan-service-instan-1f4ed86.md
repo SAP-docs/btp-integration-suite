@@ -44,15 +44,11 @@ With the Integration Suite premium edition license available in a different suba
     <th valign="top">
 
     Component Name
-
-
     
     </th>
     <th valign="top">
 
     Component Description
-
-
     
     </th>
     </tr>
@@ -60,15 +56,11 @@ With the Integration Suite premium edition license available in a different suba
     <td valign="top">
     
     OPU-API-OD-OPS
-
-
     
     </td>
     <td valign="top">
     
     SAP API Management Operations - On Demand
-
-
     
     </td>
     </tr>

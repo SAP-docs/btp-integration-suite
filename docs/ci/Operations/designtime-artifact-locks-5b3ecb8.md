@@ -19,14 +19,10 @@ The following information is shown for each locked artifact:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -35,14 +31,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Name of the artifact that is locked.
-
-
 
 </td>
 </tr>
@@ -51,14 +43,10 @@ Name of the artifact that is locked.
 
 *Type* 
 
-
-
 </td>
 <td valign="top">
 
 Type of the artifact that is locked, like integration flow, REST API, or integration package.
-
-
 
 </td>
 </tr>
@@ -67,14 +55,10 @@ Type of the artifact that is locked, like integration flow, REST API, or integra
 
 *Package* 
 
-
-
 </td>
 <td valign="top">
 
 For integration artifacts, the name of the package to which the locked artifact belongs.
-
-
 
 </td>
 </tr>
@@ -83,14 +67,10 @@ For integration artifacts, the name of the package to which the locked artifact 
 
 *Locked At* 
 
-
-
 </td>
 <td valign="top">
 
 Time when the user locked the artifact.
-
-
 
 </td>
 </tr>
@@ -99,14 +79,10 @@ Time when the user locked the artifact.
 
 *Locked By* 
 
-
-
 </td>
 <td valign="top">
 
 Name of the user who locked the artifact.
-
-
 
 </td>
 </tr>

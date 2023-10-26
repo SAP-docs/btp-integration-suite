@@ -22,14 +22,10 @@ You can choose the following log levels:
 
 Log Level
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -37,8 +33,6 @@ Description
 <td valign="top">
 
 `None`
-
-
 
 </td>
 <td valign="top">
@@ -57,8 +51,6 @@ No data is recorded during message processing and no data is shown in data monit
 
 `Info`
 
-
-
 </td>
 <td valign="top">
 
@@ -66,16 +58,12 @@ Basic information is recorded during message processing. The header is always di
 
 If there are failed messages, the message processing log retains and displays additional detailed information about the last 50 message steps.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `Error`
-
-
 
 </td>
 <td valign="top">
@@ -89,16 +77,12 @@ No message processing log attachments are recorded.
 
 Specifics for log level `Error`: If you've defined a retry-scenario in your integration flow and set log level `Error`, a final successful retry isn't recorded. In particular, the overall Message Processing Log Status stays in status `Retry` or `Failed` although the message is finally successfully delivered.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `Debug`
-
-
 
 </td>
 <td valign="top">
@@ -121,8 +105,6 @@ The message processing log records detailed information for all steps during mes
 <td valign="top">
 
 `Trace`
-
-
 
 </td>
 <td valign="top">

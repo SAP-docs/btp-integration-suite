@@ -47,22 +47,16 @@ The parent integration process is designed in the following way \(only exception
     <th valign="top">
 
     Name
-
-
     
     </th>
     <th valign="top">
 
     Source Type
-
-
     
     </th>
     <th valign="top">
 
     Source Value
-
-
     
     </th>
     </tr>
@@ -70,22 +64,16 @@ The parent integration process is designed in the following way \(only exception
     <td valign="top">
     
     context
-
-
     
     </td>
     <td valign="top">
     
     Constant
-
-
     
     </td>
     <td valign="top">
     
     HandlingErrors-DependentFlowsSimple
-
-
     
     </td>
     </tr>
@@ -93,22 +81,16 @@ The parent integration process is designed in the following way \(only exception
     <td valign="top">
     
     receiver
-
-
     
     </td>
     <td valign="top">
     
     Constant
-
-
     
     </td>
     <td valign="top">
     
     Error
-
-
     
     </td>
     </tr>

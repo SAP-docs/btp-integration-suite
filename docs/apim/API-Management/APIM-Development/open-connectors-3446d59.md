@@ -31,14 +31,10 @@ Following table lists the elements and attributes that you can configure on this
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -47,14 +43,10 @@ Following table lists the elements and attributes that you can configure on this
 
 InstanceSecret
 
-
-
 </td>
 <td valign="top">
 
 Specifies the KVM map name and key.
-
-
 
 </td>
 </tr>
@@ -63,14 +55,10 @@ Specifies the KVM map name and key.
 
 kvm-map-name
 
-
-
 </td>
 <td valign="top">
 
 Map name that specifies the instance token.
-
-
 
 </td>
 </tr>
@@ -79,14 +67,10 @@ Map name that specifies the instance token.
 
 kvm-key-name
 
-
-
 </td>
 <td valign="top">
 
 Specifies the key to the KVM.
-
-
 
 </td>
 </tr>
@@ -139,14 +123,10 @@ Following table lists the elements and attributes that you can configure on this
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -155,14 +135,10 @@ Following table lists the elements and attributes that you can configure on this
 
 APProvider
 
-
-
 </td>
 <td valign="top">
 
 Name of the open connector typeAPI Provider.
-
-
 
 </td>
 </tr>
@@ -171,14 +147,10 @@ Name of the open connector typeAPI Provider.
 
 Timeout
 
-
-
 </td>
 <td valign="top">
 
 Time the policy waits for a response from the target. Time in milliseconds
-
-
 
 </td>
 </tr>
@@ -186,8 +158,6 @@ Time the policy waits for a response from the target. Time in milliseconds
 <td valign="top">
 
 Headers
-
-
 
 </td>
 <td valign="top">
@@ -212,8 +182,6 @@ Overwriting existing HTTP headers.
 
 QueryParams
 
-
-
 </td>
 <td valign="top">
 
@@ -237,14 +205,10 @@ Adds new query parameters to the request. Use this attribute for GET operation o
 
 Path
 
-
-
 </td>
 <td valign="top">
 
 Path to the endpoint that is targeted
-
-
 
 </td>
 </tr>
@@ -253,14 +217,10 @@ Path to the endpoint that is targeted
 
 InstanceSecret
 
-
-
 </td>
 <td valign="top">
 
 Specifies the KVM map name and key.
-
-
 
 </td>
 </tr>
@@ -269,14 +229,10 @@ Specifies the KVM map name and key.
 
 kvm-map-name
 
-
-
 </td>
 <td valign="top">
 
 Map name that specifies the instance token.
-
-
 
 </td>
 </tr>
@@ -285,14 +241,10 @@ Map name that specifies the instance token.
 
 kvm-key-name
 
-
-
 </td>
 <td valign="top">
 
 Specifies the key to the KVM.
-
-
 
 </td>
 </tr>

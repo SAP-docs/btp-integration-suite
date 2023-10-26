@@ -13,14 +13,10 @@
 
 Data Stores
 
-
-
 </td>
 <td valign="top">
 
 [Get All Data Stores with Overdue Messages](get-all-data-stores-with-overdue-messages-5173f5c.md) 
-
-
 
 </td>
 </tr>
@@ -28,8 +24,6 @@ Data Stores
 <td valign="top">
 
 Data Store Entries
-
-
 
 </td>
 <td valign="top">
@@ -40,8 +34,6 @@ Data Store Entries
 
 [Get All Data Store Entries for a Specific Message ID](get-all-data-store-entries-for-a-specific-message-id-7de679d.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -49,14 +41,10 @@ Data Store Entries
 
 Variables
 
-
-
 </td>
 <td valign="top">
 
 [Download a Variable](download-a-variable-94e6799.md) 
-
-
 
 </td>
 </tr>

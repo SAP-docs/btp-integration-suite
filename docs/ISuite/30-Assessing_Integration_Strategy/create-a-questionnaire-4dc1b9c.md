@@ -25,15 +25,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -41,15 +37,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     <td valign="top">
     
     *Create Question Section*
-
-
     
     </td>
     <td valign="top">
     
     Create a new section by providing *Name* and *Description* for the question section.
-
-
     
     </td>
     </tr>
@@ -57,15 +49,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     <td valign="top">
     
     *Copy Question Section*
-
-
     
     </td>
     <td valign="top">
     
     Allows you to copy a section from a predefined questionnaire.
-
-
     
     </td>
     </tr>
@@ -75,15 +63,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     *Add Attachment Section*
 
     \(only when you select *Integration Request* as the *Request Type*\)
-
-
     
     </td>
     <td valign="top">
     
     Add a section for attachments if any.
-
-
     
     </td>
     </tr>
@@ -108,15 +92,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     <th valign="top">
 
     Answer Source
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -124,15 +104,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     <td valign="top">
     
     *Free Text*
-
-
     
     </td>
     <td valign="top">
     
     You can enter free text in the placeholder provided.
-
-
     
     </td>
     </tr>
@@ -140,15 +116,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     <td valign="top">
     
     *Key Characteristic*
-
-
     
     </td>
     <td valign="top">
     
     The possible answers to the question are given by a key characteristic.
-
-
     
     </td>
     </tr>
@@ -156,15 +128,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     <td valign="top">
     
     *Custom Options*
-
-
     
     </td>
     <td valign="top">
     
     You can specify the type as Multiple select or Single select.
-
-
     
     </td>
     </tr>
@@ -180,15 +148,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -196,15 +160,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     <td valign="top">
     
     *Question*
-
-
     
     </td>
     <td valign="top">
     
     Populated from the question chosen.
-
-
     
     </td>
     </tr>
@@ -212,15 +172,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     <td valign="top">
     
     *Question Description*
-
-
     
     </td>
     <td valign="top">
     
     Provide a detailed description for the question as some questions may need additional explanations.
-
-
     
     </td>
     </tr>
@@ -228,15 +184,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     <td valign="top">
     
     *Mandatory*
-
-
     
     </td>
     <td valign="top">
     
     Define whether the question is mandatory or not by choosing *Yes \(mandatory\)* or *No \(Not mandatory\)*.
-
-
     
     </td>
     </tr>
@@ -244,15 +196,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     <td valign="top">
     
     *Answer Source*
-
-
     
     </td>
     <td valign="top">
     
     Populated from the answer source provided during question creation.
-
-
     
     </td>
     </tr>
@@ -260,15 +208,11 @@ To create a new questionnaire under *Settings* tab, do the following:
     <td valign="top">
     
     *Type*
-
-
     
     </td>
     <td valign="top">
     
     Depending on the Answer Source selected, the type field changes.
-
-
     
     </td>
     </tr>
@@ -282,15 +226,11 @@ To create a new questionnaire under *Settings* tab, do the following:
         <th valign="top">
 
         Answer Source
-
-
         
         </th>
         <th valign="top">
 
         Type
-
-
         
         </th>
         </tr>
@@ -298,8 +238,6 @@ To create a new questionnaire under *Settings* tab, do the following:
         <td valign="top">
         
         *Free Text*
-
-
         
         </td>
         <td valign="top">
@@ -319,8 +257,6 @@ To create a new questionnaire under *Settings* tab, do the following:
         <td valign="top">
         
         *Key Characteristic*
-
-
         
         </td>
         <td valign="top">
@@ -337,8 +273,6 @@ To create a new questionnaire under *Settings* tab, do the following:
         For *Key Characteristic* answer source, select the key characteristic from the list.
 
         See: [Key Characteristics](key-characteristics-c16258e.md)
-
-
         
         </td>
         </tr>
@@ -346,8 +280,6 @@ To create a new questionnaire under *Settings* tab, do the following:
         <td valign="top">
         
         *Custom Options*
-
-
         
         </td>
         <td valign="top">

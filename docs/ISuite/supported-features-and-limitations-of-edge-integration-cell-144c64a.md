@@ -15,14 +15,10 @@
 
 Supported Features
 
-
-
 </th>
 <th valign="top">
 
 Details
-
-
 
 </th>
 </tr>
@@ -30,8 +26,6 @@ Details
 <td valign="top">
 
 Artifact types
-
-
 
 </td>
 <td valign="top">
@@ -49,8 +43,6 @@ Artifact types
 <td valign="top">
 
 Reusable artifacts
-
-
 
 </td>
 <td valign="top">
@@ -72,8 +64,6 @@ Reusable artifacts
 <td valign="top">
 
 Integration flow steps
-
-
 
 </td>
 <td valign="top">
@@ -117,16 +107,12 @@ Integration flow steps
 
 For more information see, [Configure Integration Flow Components](50-Development/configure-integration-flow-components-3171795.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Adapters
-
-
 
 </td>
 <td valign="top">
@@ -142,16 +128,12 @@ Adapters
 
 More information: [Configure Adapter in Communication Channels](50-Development/configure-adapter-in-communication-channels-1f06633.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Operations
-
-
 
 </td>
 <td valign="top">
@@ -163,8 +145,6 @@ Operations
 
 For more information about restrictions with regard to monitoring, see: [Application Monitoring](application-monitoring-c9863ba.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -172,14 +152,10 @@ For more information about restrictions with regard to monitoring, see: [Applica
 
 Security
 
-
-
 </td>
 <td valign="top">
 
 Secure content lifecycle using location-specific encryption keys
-
-
 
 </td>
 </tr>
@@ -201,14 +177,10 @@ Secure content lifecycle using location-specific encryption keys
 > 
 > Resource
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Description
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -217,16 +189,12 @@ Secure content lifecycle using location-specific encryption keys
 > 
 > Integration content
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > 500 MB
 > 
 > Refer to the SAP Community blog:
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -235,14 +203,10 @@ Secure content lifecycle using location-specific encryption keys
 > 
 > X.509 Keystores
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > max. 20
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -251,14 +215,10 @@ Secure content lifecycle using location-specific encryption keys
 > 
 > Number of runtimes associated with a credential or X.509 Keystore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > max. 20
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -267,16 +227,12 @@ Secure content lifecycle using location-specific encryption keys
 > 
 > Message processing log \(MPL\) persistence
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Depends on database storage size.
 > 
 > See: [Cloud Integration – Setting the Log Level for Message Processing](https://blogs.sap.com/2017/06/22/cloud-integration-setting-the-log-level-for-message-processing/)
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -285,16 +241,12 @@ Secure content lifecycle using location-specific encryption keys
 > 
 > Data store message persistence
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Depends on database storage size.
 > 
 > See: [Optimize Performance](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/491c80d16c3547c3b124cf38857f1332.html)
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -303,16 +255,12 @@ Secure content lifecycle using location-specific encryption keys
 > 
 > Disk space
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Depends on cluster node storage size.
 > 
 > See: SAP Note [2648415](https://me.sap.com/notes/2648415) to learn how to optimize the integration flow development in such a way that the integration flow doesn't run into the `No More Space left on Disk` error.
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -321,14 +269,10 @@ Secure content lifecycle using location-specific encryption keys
 > 
 > X.509 Keystore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > 1 MB
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -337,14 +281,10 @@ Secure content lifecycle using location-specific encryption keys
 > 
 > PGP keyrings \(secring & pubring\)
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > 1 MB
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -353,14 +293,10 @@ Secure content lifecycle using location-specific encryption keys
 > 
 > Known Host File
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > 1 MB
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -369,14 +305,10 @@ Secure content lifecycle using location-specific encryption keys
 > 
 > JDBC Data sources
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > 500 per edge runtime
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -403,8 +335,6 @@ Secure content lifecycle using location-specific encryption keys
 > <td valign="top">
 > 
 > 500 per runtime
-> 
-> 
 > 
 > </td>
 > </tr>

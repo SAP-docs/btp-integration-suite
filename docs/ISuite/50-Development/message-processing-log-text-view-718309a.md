@@ -20,14 +20,10 @@ The log header shows the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,14 +32,10 @@ Description
 
 StartTime
 
-
-
 </td>
 <td valign="top">
 
 Start of message processing.
-
-
 
 </td>
 </tr>
@@ -52,14 +44,10 @@ Start of message processing.
 
 StopTime
 
-
-
 </td>
 <td valign="top">
 
 End of message processing.
-
-
 
 </td>
 </tr>
@@ -67,8 +55,6 @@ End of message processing.
 <td valign="top">
 
 OverallStatus
-
-
 
 </td>
 <td valign="top">
@@ -79,8 +65,6 @@ For more information on statuses see **Message Status** in the **Related Informa
 
 .
 
-
-
 </td>
 </tr>
 <tr>
@@ -88,14 +72,10 @@ For more information on statuses see **Message Status** in the **Related Informa
 
 ChildCount
 
-
-
 </td>
 <td valign="top">
 
 Indicates the serial number of the current processing step.
-
-
 
 </td>
 </tr>
@@ -104,14 +84,10 @@ Indicates the serial number of the current processing step.
 
 ChildrenCounter
 
-
-
 </td>
 <td valign="top">
 
 Specifies the total number of message processing steps.
-
-
 
 </td>
 </tr>
@@ -120,14 +96,10 @@ Specifies the total number of message processing steps.
 
 ContextName
 
-
-
 </td>
 <td valign="top">
 
 Integration flow name.
-
-
 
 </td>
 </tr>
@@ -136,14 +108,10 @@ Integration flow name.
 
 CorrelationId
 
-
-
 </td>
 <td valign="top">
 
 ID that identifies correlated messages. Messages can be correlated, for example, when different integration flows on the same tenant communicate with each other. A correlation ID is a base64-encoded ID that is generated in this case by the first integration flow and stored in the message header. As part of the message header, the CorrelationId is then propagated across all related integration flows \(that are in charge of processing the correlated messages\).
-
-
 
 </td>
 </tr>
@@ -152,14 +120,10 @@ ID that identifies correlated messages. Messages can be correlated, for example,
 
 CustomHeaderProperties
 
-
-
 </td>
 <td valign="top">
 
 Can only be added by defining a script in the script API and the properties are displayed in the message processing log header. For more information see **Define Scripts** in the **Related Information** section.
-
-
 
 </td>
 </tr>
@@ -168,14 +132,10 @@ Can only be added by defining a script in the script API and the properties are 
 
 ExecutedMapping
 
-
-
 </td>
 <td valign="top">
 
 Indicates the name of the message mapping artifact that was executed. Useful when you use the dynamic message mapping feature to understand which message mapping artifact was executed by the integration flow.
-
-
 
 </td>
 </tr>
@@ -184,14 +144,10 @@ Indicates the name of the message mapping artifact that was executed. Useful whe
 
 Id
 
-
-
 </td>
 <td valign="top">
 
 Is displayed in the MPL header if the ID has been previously defined as header property. For more information see**Headers and Exchange Properties** in the **Related Information** section.
-
-
 
 </td>
 </tr>
@@ -200,14 +156,10 @@ Is displayed in the MPL header if the ID has been previously defined as header p
 
 IntermediateError
 
-
-
 </td>
 <td valign="top">
 
 True if an error occurred \(even temporarily\) during message processing, or message processing took more than 1 minute. The header then contains an additional property: LastError showing the error type.
-
-
 
 </td>
 </tr>
@@ -216,14 +168,10 @@ True if an error occurred \(even temporarily\) during message processing, or mes
 
 MessageGuid
 
-
-
 </td>
 <td valign="top">
 
 Key that identifies the message uniquely in the database.
-
-
 
 </td>
 </tr>
@@ -232,14 +180,10 @@ Key that identifies the message uniquely in the database.
 
 MessageType
 
-
-
 </td>
 <td valign="top">
 
 Is displayed in the MPL header if the message type has been previously defined as header property. For more information see**Headers and Exchange Properties** in the **Related Information** section.
-
-
 
 </td>
 </tr>
@@ -248,14 +192,10 @@ Is displayed in the MPL header if the message type has been previously defined a
 
 Node
 
-
-
 </td>
 <td valign="top">
 
 Host name of the node that processed the message.
-
-
 
 </td>
 </tr>
@@ -264,14 +204,10 @@ Host name of the node that processed the message.
 
 ReceiverId
 
-
-
 </td>
 <td valign="top">
 
 Is displayed in the MPL header if the receiver ID has been previously defined as header property. For more information see**Headers and Exchange Properties** in the **Related Information** section.
-
-
 
 </td>
 </tr>
@@ -280,14 +216,10 @@ Is displayed in the MPL header if the receiver ID has been previously defined as
 
 SenderId
 
-
-
 </td>
 <td valign="top">
 
 Is displayed in the MPL header if the sender ID has been previously defined as header property. For more information see**Headers and Exchange Properties** in the**Related Information**section.
-
-
 
 </td>
 </tr>
@@ -296,14 +228,10 @@ Is displayed in the MPL header if the sender ID has been previously defined as h
 
 LocalSuccessor Id
 
-
-
 </td>
 <td valign="top">
 
 Is set during aggregation and incoming message process processing logs get the aggregated MPL as a successor.
-
-
 
 </td>
 </tr>
@@ -312,14 +240,10 @@ Is set during aggregation and incoming message process processing logs get the a
 
 LocalPredecessor Id
 
-
-
 </td>
 <td valign="top">
 
 Is set during creation of a new MPL, if the message header SAP\_MessageProcessingLogID is present or the message header SapPredecessorMessageProcessingLogId is set.
-
-
 
 </td>
 </tr>
@@ -338,14 +262,10 @@ The log steps show the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -354,14 +274,10 @@ Description
 
 Branch
 
-
-
 </td>
 <td valign="top">
 
 Indicates that the following steps have been processed in the same branch. If a **Split** or **Multicast Step** is used, the steps belonging to one sub-message are grouped together within one **Branch**.
-
-
 
 </td>
 </tr>
@@ -370,16 +286,12 @@ Indicates that the following steps have been processed in the same branch. If a 
 
 ModelStepId
 
-
-
 </td>
 <td valign="top">
 
 This ID is used to specify relation between modeled step \(in integration flow\) and MPL entry. The integration flow model steps are fragmented in the Camel runtime environment into several processing steps.
 
 For more information see **Error Classification** in the **Related Information** section.
-
-
 
 </td>
 </tr>
@@ -388,14 +300,10 @@ For more information see **Error Classification** in the **Related Information**
 
 StepId
 
-
-
 </td>
 <td valign="top">
 
 ID of the related integration flow step. It is assigned by the Camel framework.
-
-
 
 </td>
 </tr>

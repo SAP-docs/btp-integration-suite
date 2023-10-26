@@ -71,14 +71,10 @@ Select the *General* tab and provide values in the field as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -87,14 +83,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -111,14 +103,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -126,8 +114,6 @@ Description
 <td valign="top">
 
 *Address*
-
-
 
 </td>
 <td valign="top">
@@ -145,16 +131,12 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 The endpoint URL that has been used at runtime is displayed in the message processing log \(MPL\) in the message monitoring application \(MPL property `RealDestinationUrl`\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -188,8 +170,6 @@ The type of proxy that you are using to connect to the target system:
 <td valign="top">
 
 *Authentication Type*
-
-
 
 </td>
 <td valign="top">
@@ -226,16 +206,12 @@ There are the following options:
 
 \(Only when you have selected *Basic Authentication* as *Authentication Type*\)
 
-
-
 </td>
 <td valign="top">
 
 Name of the *User Credentials* artifact that needs to be deployed separately on the tenant \(it contains user name and password for the user to be authenticated\).
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
-
-
 
 </td>
 </tr>
@@ -246,16 +222,12 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 \(Only when you have selected *Certificate-Based Authentication* as *Authentication Type*\)
 
-
-
 </td>
 <td valign="top">
 
 Optional entry to specify the alias of the private key to be used for authentication. If you leave this field empty, the system checks at runtime for any valid key pair in the tenant keystore.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
-
-
 
 </td>
 </tr>
@@ -264,16 +236,12 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 *Timeout \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the amount of time \(in milliseconds\) that the client waits for a response before the http connection is interrupted.
 
 The default value set to 60000 milliseconds \(1 minute\).
-
-
 
 </td>
 </tr>
@@ -284,14 +252,10 @@ The default value set to 60000 milliseconds \(1 minute\).
 
 \(only if *JMS Queue* has been selected for *Temporary Storage*\)
 
-
-
 </td>
 <td valign="top">
 
 Enables the tenant to send compressed request messages to the receiver \(which acts as WS provider\) and to indicate to the receiver that it can handle compressed response messages.
-
-
 
 </td>
 </tr>
@@ -300,14 +264,10 @@ Enables the tenant to send compressed request messages to the receiver \(which a
 
 *Allow Chunking* 
 
-
-
 </td>
 <td valign="top">
 
 Used for enabling chunking of data while sending messages.
-
-
 
 </td>
 </tr>
@@ -315,8 +275,6 @@ Used for enabling chunking of data while sending messages.
 <td valign="top">
 
 *Return HTTP Response Code as Header*
-
-
 
 </td>
 <td valign="top">
@@ -347,14 +305,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -362,8 +316,6 @@ Description
 <td valign="top">
 
 *XI Identifiers for Sender* 
-
-
 
 </td>
 <td valign="top">
@@ -393,8 +345,6 @@ Description
 <td valign="top">
 
 *XI Identifiers for Receiver* 
-
-
 
 </td>
 <td valign="top">
@@ -447,14 +397,10 @@ Select the *Delivery Assurance* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -462,8 +408,6 @@ Description
 <td valign="top">
 
 *XI Message ID Determination* 
-
-
 
 </td>
 <td valign="top">
@@ -496,8 +440,6 @@ You can choose among the following options:
 
 *Source for XI Message ID* \(only in case you selected *Map* as *XI Message ID Determination*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -516,8 +458,6 @@ To map the source message ID to the XI message ID you can enter the source messa
 <td valign="top">
 
 *Quality of Service*
-
-
 
 </td>
 <td valign="top">
@@ -549,8 +489,6 @@ There are the following options:
 *Temporary Storage*
 
 \(only if *Exactly Once* is selected for *Quality of Service*\)
-
-
 
 </td>
 <td valign="top">
@@ -601,8 +539,6 @@ You can choose from the following storage types:
 
 \(only if *JMS Queue* has been selected for *Temporary Storage*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -622,16 +558,12 @@ Enter the number of concurrent processes for each worker node. The recommended v
 
 \(only in case *Exactly One* is selected for *Quality of Service* and *Data Store* is selected for *Temporary Storage*\)
 
-
-
 </td>
 <td valign="top">
 
 Specify how long the client should wait before trying to process the message again, for example, in the event of a cluster outage. The amount of time you choose should be higher than the processing time.
 
 The default is set to 10 minutes.
-
-
 
 </td>
 </tr>
@@ -641,8 +573,6 @@ The default is set to 10 minutes.
 *Poll Interval \(in s\)*
 
 \(only if *Exactly Once* has been selected for *Quality of Service* and *Data Store* has been selected for *Temporary Storage*\)
-
-
 
 </td>
 <td valign="top">
@@ -665,14 +595,10 @@ The poll interval only becomes effective as soon as the data store doesn't conta
 
 *Retry Interval \(in min\)*
 
-
-
 </td>
 <td valign="top">
 
 Enter a value for the amount of time to wait before retrying message delivery \(in case of an error\).
-
-
 
 </td>
 </tr>
@@ -681,14 +607,10 @@ Enter a value for the amount of time to wait before retrying message delivery \(
 
 *Exponential Backoff*
 
-
-
 </td>
 <td valign="top">
 
 Select this option to double the retry interval after each unsuccessful retry.
-
-
 
 </td>
 </tr>
@@ -699,14 +621,10 @@ Select this option to double the retry interval after each unsuccessful retry.
 
 \(only configurable when *Exponential Backoff* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 You can set an upper limit on that value to avoid an endless increase of the retry interval. The default value is 60 minutes. The minimum value is set to 10 minutes.
-
-
 
 </td>
 </tr>
@@ -716,8 +634,6 @@ You can set an upper limit on that value to avoid an endless increase of the ret
 *Dead-Letter Queue*
 
 \(only if as *Temporary Storage* the option *JMS Queue* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -730,8 +646,6 @@ Use this option to avoid out-of-memory situations \(caused in many cases by larg
 
 For more information, read the SAP Community blog [Cloud Integration – Configure Dead Letter Handling in JMS Adapter](https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/).
 
-
-
 </td>
 </tr>
 <tr>
@@ -741,14 +655,10 @@ For more information, read the SAP Community blog [Cloud Integration – Configu
 
 \(only if *JMS Queue* has been selected for *Temporary Storage*\)
 
-
-
 </td>
 <td valign="top">
 
 Select this option to compress the message in the JMS queue. Compressing the message reduces disk space usage and network traffic.
-
-
 
 </td>
 </tr>
@@ -757,14 +667,10 @@ Select this option to compress the message in the JMS queue. Compressing the mes
 
 *Encrypt Message during Persistence* \(only in case you have selected *Exactly Once* as *Quality of Service*\)
 
-
-
 </td>
 <td valign="top">
 
 Select this option in case the messages should be stored in an encrypted way in the temporary storage. It is recommended to choose this option if the message can contain sensitive data. Note that this setting might decrease performance of the integration scenario.
-
-
 
 </td>
 </tr>
@@ -773,14 +679,10 @@ Select this option in case the messages should be stored in an encrypted way in 
 
 *Expiration Period \(in d\)*
 
-
-
 </td>
 <td valign="top">
 
 Enter the number of days after which the stored messages are deleted \(default is 30\).
-
-
 
 </td>
 </tr>

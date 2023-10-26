@@ -23,14 +23,10 @@ The application consists of the following components which allow you to perform 
 
 Component
 
-
-
 </th>
 <th valign="top">
 
 Allows you to...
-
-
 
 </th>
 </tr>
@@ -38,8 +34,6 @@ Allows you to...
 <td valign="top">
 
 *Discover* 
-
-
 
 </td>
 <td valign="top">
@@ -50,16 +44,12 @@ Which integration packages are available to you depends on the permissions for t
 
 This component is also known as *catalog*.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Design* 
-
-
 
 </td>
 <td valign="top">
@@ -70,16 +60,12 @@ After completing this task, you can save the changes, save as a version or deplo
 
 This component is also known as *customer workspace*.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Monitor* 
-
-
 
 </td>
 <td valign="top">
@@ -90,8 +76,6 @@ You can check the status of messages and integration artifacts for your tenant c
 
 You can also access the dedicated message monitor and integration content monitor to view more information.
 
-
-
 </td>
 </tr>
 <tr>
@@ -99,14 +83,10 @@ You can also access the dedicated message monitor and integration content monito
 
 *Settings* 
 
-
-
 </td>
 <td valign="top">
 
 Select the runtime profile to specify the target runtime for your content.
-
-
 
 </td>
 </tr>

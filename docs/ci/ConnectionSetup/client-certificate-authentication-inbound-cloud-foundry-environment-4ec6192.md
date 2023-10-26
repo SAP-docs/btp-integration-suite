@@ -31,21 +31,15 @@ The table provides an overview of the required digital keys and their purpose in
 
 Security Artifact
 
-
-
 </th>
 <th valign="top">
 
 Used to ...
 
-
-
 </th>
 <th valign="top">
 
 Configuration Steps
-
-
 
 </th>
 </tr>
@@ -54,14 +48,10 @@ Configuration Steps
 
 Load balancer server root certificate
 
-
-
 </td>
 <td valign="top">
 
 Make the sender trust the load balancer.
-
-
 
 </td>
 <td valign="top">
@@ -70,8 +60,6 @@ Sender administrator:
 
 Get certificate using the SAP Cloud Integration *Connectivity Test* \(pointing to endpoint address of integration flow\).
 
-
-
 </td>
 </tr>
 <tr>
@@ -79,21 +67,15 @@ Get certificate using the SAP Cloud Integration *Connectivity Test* \(pointing t
 
 Load balancer server certificate \(including certificate chain\)
 
-
-
 </td>
 <td valign="top">
 
 Qualify load balancer as trusted component \(for senders that like to connect to it\).
 
-
-
 </td>
 <td valign="top">
 
 No action required as this artifact is maintained by the operator of the cloud infrastructure.
-
-
 
 </td>
 </tr>
@@ -104,16 +86,12 @@ Sender client certificate
 
 \(public and private key, including certificate chain\)
 
-
-
 </td>
 <td valign="top">
 
 Authorize sender to call integration flow.
 
 At runtime, system checks if there's a service key that contains a client certificate that matches client certificate provided with the sender's request.
-
-
 
 </td>
 <td valign="top">
@@ -126,8 +104,6 @@ Add sender client certificate \(provided by sender administrator\) to service ke
 
 This key pair is to be signed by a CA supported by the load balancer. Only root certificates are being imported into the load balancer keystore. Therefore, the whole certificate chain must be assigned to the certificate to enable the connected component to evaluate the chain of trust.
 
-
-
 </td>
 </tr>
 <tr>
@@ -135,14 +111,10 @@ This key pair is to be signed by a CA supported by the load balancer. Only root 
 
 Sender client root certificate
 
-
-
 </td>
 <td valign="top">
 
 Sign sender client certificate.
-
-
 
 </td>
 <td valign="top">
@@ -150,8 +122,6 @@ Sign sender client certificate.
 Sender administrator:
 
 Get sender client certificate signed by a certificate authority \(CA\) supported by the load balancer. The root certificates supported by the load balancer are listed at [Load Balancer Root Certificates Supported by SAP](load-balancer-root-certificates-supported-by-sap-4509f60.md).
-
-
 
 </td>
 </tr>
@@ -162,14 +132,10 @@ SAP key pair \(alias: *sap\_cloudintegrationcertificate*\)
 
 \(not available on trial tenant\)
 
-
-
 </td>
 <td valign="top">
 
 Enable internal communication between involved SAP BTP microservices.
-
-
 
 </td>
 <td valign="top">

@@ -27,14 +27,10 @@ Select the *General* tab to access the following parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Enter the name of the channel.
 
 *Direction* 
 
-
-
 </td>
 <td valign="top">
 
 Receiver
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Receiver
 
 *System* 
 
-
-
 </td>
 <td valign="top">
 
 Receiver
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ Receiver
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 AzureStorage
-
-
 
 </td>
 </tr>
@@ -107,14 +87,10 @@ AzureStorage
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 HTTPS
-
-
 
 </td>
 </tr>
@@ -123,16 +99,12 @@ HTTPS
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 *Queue Storage*
 
 Shows the message protocol selected when creating the channel.
-
-
 
 </td>
 </tr>
@@ -151,14 +123,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -166,8 +134,6 @@ Description
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -190,14 +156,10 @@ Select authentication option to use to connect to Azure Storage server. There ar
 
 \(Only if for *Authentication* the option *SAS Token* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Alias name of token used to communicate with Azure Storage.
-
-
 
 </td>
 </tr>
@@ -208,14 +170,10 @@ Alias name of token used to communicate with Azure Storage.
 
 \(Only if for *Authentication* the option *Shared Access Key* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Alias name of key used to communicate with Azure Storage.
-
-
 
 </td>
 </tr>
@@ -223,8 +181,6 @@ Alias name of key used to communicate with Azure Storage.
 <td valign="top">
 
 *Dynamic* 
-
-
 
 </td>
 <td valign="top">
@@ -245,16 +201,12 @@ Select this option to dynamically define the authentication through the value of
 
 *Timeout* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum waiting time, in milliseconds, to contact Azure Storage while establishing a connection or performing a read operation \(default value: 60000\).
 
 Setting a timeout is mandatory for both token and key aliases.
-
-
 
 </td>
 </tr>
@@ -271,14 +223,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -286,8 +234,6 @@ Description
 <td valign="top">
 
 *Operation* 
-
-
 
 </td>
 <td valign="top">
@@ -344,8 +290,6 @@ Select one of the following options to define which operation to perform:
 
 *Storage Account Name* 
 
-
-
 </td>
 <td valign="top">
 
@@ -362,8 +306,6 @@ Enter the name of the storage account for all the eleven above-mentioned operati
 <td valign="top">
 
 *Queue Name* 
-
-
 
 </td>
 <td valign="top">
@@ -390,14 +332,10 @@ Enter the name of the container for all the above-mentioned operations except fo
 
 \(Only if for *Operation* the option *Delete Message* or *Update Message* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the valid pop receipt value returned from an earlier call to the *Update Message* operation
-
-
 
 </td>
 </tr>
@@ -408,14 +346,10 @@ Specifies the valid pop receipt value returned from an earlier call to the *Upda
 
 \(Only if for *Operation* the option *Delete Message* or *Update Message* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 The MessageID element is a GUID value that identifies the message in the queue.
-
-
 
 </td>
 </tr>
@@ -426,14 +360,10 @@ The MessageID element is a GUID value that identifies the message in the queue.
 
 \(Only if for *Operation* the option *Get Messages and Peek Messages* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 The number of messages to retrieve from the queue, up to a maximum of 32. If you do not specify the number of messages, only one message is executed.
-
-
 
 </td>
 </tr>
@@ -444,14 +374,10 @@ The number of messages to retrieve from the queue, up to a maximum of 32. If you
 
 \(Only if for *Operation* the option *Get Messages*, *Put Message*, or *Update Message* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the visibility timeout value in seconds, up to a maximum of 120 seconds. The default value is 30 seconds.
-
-
 
 </td>
 </tr>
@@ -462,14 +388,10 @@ Specifies the visibility timeout value in seconds, up to a maximum of 120 second
 
 \(Only if for *Operation* the option *List Queues* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Returns only queues with name that begins with the specified prefix.
-
-
 
 </td>
 </tr>
@@ -480,14 +402,10 @@ Returns only queues with name that begins with the specified prefix.
 
 \(Only if for *Operation* the option *List Queues* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the page size to retrieve specific number of results. If you do not specify any page size, the server returns up to 5000 results.
-
-
 
 </td>
 </tr>
@@ -497,8 +415,6 @@ Specify the page size to retrieve specific number of results. If you do not spec
 *Process in Pages*
 
 \(Only if for *Operation* the option *List Queues* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -525,14 +441,10 @@ Message is processed in batches with a size specified by the *Page Size* paramet
 
 \(Only if for *Operation* the option *Peek Messages* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 The number of messages to peek from the queue up to a maximum of 32. If you do not specify the number of messages, only one message is peeked from the queue. This is optional.
-
-
 
 </td>
 </tr>
@@ -543,14 +455,10 @@ The number of messages to peek from the queue up to a maximum of 32. If you do n
 
 \(Only if for *Operation* the option *Put Message* or *Update Message* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Enter the time-to-live interval for the message, in seconds.
-
-
 
 </td>
 </tr>
@@ -561,14 +469,10 @@ Enter the time-to-live interval for the message, in seconds.
 
 \(Only if for *Operation* the option *Set Queue Metadata* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Enter one or more name value pair to set the metadata in the format `revenue:incometax` for one and `finance:incometax|finance:exciseduty` for more than one. If nothing is passed for name value pair, existing metadata is deleted.
-
-
 
 </td>
 </tr>
@@ -577,14 +481,10 @@ Enter one or more name value pair to set the metadata in the format `revenue:inc
 
 *Key* 
 
-
-
 </td>
 <td valign="top">
 
 Select a request parameter.
-
-
 
 </td>
 </tr>
@@ -593,14 +493,10 @@ Select a request parameter.
 
 *Value* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the value of the argument. You can also enter`${header.headername}` or `${property.propertyname}` to dynamically read the value from the message exchange.
-
-
 
 </td>
 </tr>
@@ -608,8 +504,6 @@ Specify the value of the argument. You can also enter`${header.headername}` or `
 <td valign="top">
 
 *Response Format* 
-
-
 
 </td>
 <td valign="top">
@@ -634,8 +528,6 @@ The following response formats are given:
 
 *Request Headers* 
 
-
-
 </td>
 <td valign="top">
 
@@ -643,16 +535,12 @@ Enter Pipe-separated \(`|`\) value list of request headers to be sent to Azure.
 
 If you enter the value `*`, all message headers are converted to request headers and forwarded.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Response Headers* 
-
-
 
 </td>
 <td valign="top">
@@ -662,8 +550,6 @@ Enter Pipe-separated \(`|`\) value list of response headers.
 The headers specified by Azure Storage are converted to message/exchange headers.
 
 If you enter the value `*`, all response header values are converted to message/exchange headers.
-
-
 
 </td>
 </tr>
@@ -682,35 +568,25 @@ If you enter the value `*`, all response header values are converted to message/
 
 Sl No
 
-
-
 </th>
 <th valign="top">
 
 Operation
-
-
 
 </th>
 <th valign="top">
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -719,35 +595,25 @@ Description
 
 1
 
-
-
 </td>
 <td valign="top">
 
 All Queue storage-related operations \(except *List Queue*\)
-
-
 
 </td>
 <td valign="top">
 
 SAP\_AzureStorage\_Outbound\_QueueName
 
-
-
 </td>
 <td valign="top">
 
 Property
 
-
-
 </td>
 <td valign="top">
 
 Capture the queue name specified in the queue storage operations.
-
-
 
 </td>
 </tr>
@@ -756,28 +622,20 @@ Capture the queue name specified in the queue storage operations.
 
 2
 
-
-
 </td>
 <td valign="top">
 
 Get messages in queue
-
-
 
 </td>
 <td valign="top">
 
 SAP\_AzureStorage\_DeliveryCount
 
-
-
 </td>
 <td valign="top">
 
 Property
-
-
 
 </td>
 <td valign="top">
@@ -785,8 +643,6 @@ Property
 When a message is retrieved for the first time, its `DequeueCount` property is set to 1.
 
 If it is not deleted and is subsequently retrieved again, the `DequeueCount` property is incremented.
-
-
 
 </td>
 </tr>

@@ -21,16 +21,12 @@ ASC X12 \(also known as ANSI ASC X12\) is an Electronic Data Interchange \(EDI\)
 
 Version
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 002001
-
-
 
 </td>
 </tr>
@@ -39,16 +35,12 @@ Version
 
 002002
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 002003
-
-
 
 </td>
 </tr>
@@ -57,16 +49,12 @@ Version
 
 002040
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 002042
-
-
 
 </td>
 </tr>
@@ -75,16 +63,12 @@ Version
 
 003010
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 003020
-
-
 
 </td>
 </tr>
@@ -93,16 +77,12 @@ Version
 
 003030
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 003040
-
-
 
 </td>
 </tr>
@@ -111,16 +91,12 @@ Version
 
 003050
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 003060
-
-
 
 </td>
 </tr>
@@ -129,16 +105,12 @@ Version
 
 003070
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 004010
-
-
 
 </td>
 </tr>
@@ -147,16 +119,12 @@ Version
 
 004020
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 004030
-
-
 
 </td>
 </tr>
@@ -165,16 +133,12 @@ Version
 
 004040
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 004050
-
-
 
 </td>
 </tr>
@@ -183,16 +147,12 @@ Version
 
 004060
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 005010
-
-
 
 </td>
 </tr>
@@ -201,16 +161,12 @@ Version
 
 005020
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 005030
-
-
 
 </td>
 </tr>
@@ -219,16 +175,12 @@ Version
 
 005040
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 005050
-
-
 
 </td>
 </tr>
@@ -237,16 +189,12 @@ Version
 
 006010
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 006020
-
-
 
 </td>
 </tr>
@@ -255,16 +203,12 @@ Version
 
 006030
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 006040
-
-
 
 </td>
 </tr>
@@ -273,16 +217,12 @@ Version
 
 006050
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 007010
-
-
 
 </td>
 </tr>
@@ -291,16 +231,12 @@ Version
 
 007020
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 007030
-
-
 
 </td>
 </tr>
@@ -309,16 +245,12 @@ Version
 
 007040
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 007050
-
-
 
 </td>
 </tr>
@@ -327,8 +259,6 @@ Version
 
 007060
 
-
-
 </td>
 </tr>
 <tr>
@@ -336,16 +266,12 @@ Version
 
 008010
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 008020
-
-
 
 </td>
 </tr>
@@ -360,21 +286,15 @@ Version
 
 Message Type
 
-
-
 </th>
 <th valign="top">
 
 Available from Version
 
-
-
 </th>
 <th valign="top">
 
 Last Version \(if discontinued\)
-
-
 
 </th>
 </tr>
@@ -383,21 +303,15 @@ Last Version \(if discontinued\)
 
 100 - Insurance Plan Description
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -406,21 +320,15 @@ Last Version \(if discontinued\)
 
 101 - Name and Address Lists
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -429,21 +337,15 @@ Last Version \(if discontinued\)
 
 102 - Associated Data
 
-
-
 </td>
 <td valign="top">
 
 004020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -452,21 +354,15 @@ Last Version \(if discontinued\)
 
 103 - Abandoned Property Filings
 
-
-
 </td>
 <td valign="top">
 
 004020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -475,21 +371,15 @@ Last Version \(if discontinued\)
 
 104 - Air Shipment Information
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -498,21 +388,15 @@ Last Version \(if discontinued\)
 
 105 - Business Entity Filings
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -521,21 +405,15 @@ Last Version \(if discontinued\)
 
 106 - Motor Carrier Rate Proposal
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -544,21 +422,15 @@ Last Version \(if discontinued\)
 
 107 - Request for Motor Carrier Rate Proposal
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -567,21 +439,15 @@ Last Version \(if discontinued\)
 
 108 - Response to a Motor Carrier Rate Proposal
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -590,21 +456,15 @@ Last Version \(if discontinued\)
 
 109 - Vessel Content Details
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -613,21 +473,15 @@ Last Version \(if discontinued\)
 
 110 - Air Freight Details and Invoice
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -636,21 +490,15 @@ Last Version \(if discontinued\)
 
 111 - Individual Insurance Policy and Client Information
 
-
-
 </td>
 <td valign="top">
 
 004020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -659,21 +507,15 @@ Last Version \(if discontinued\)
 
 112 - Property Damage Report
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -682,21 +524,15 @@ Last Version \(if discontinued\)
 
 113 - Election Campaign and Lobbyist Reporting
 
-
-
 </td>
 <td valign="top">
 
 004030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -705,21 +541,15 @@ Last Version \(if discontinued\)
 
 114 - Air Shipment Status Message
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
 003030
-
-
 
 </td>
 </tr>
@@ -728,21 +558,15 @@ Last Version \(if discontinued\)
 
 120 - Vehicle Shipping Order
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -751,21 +575,15 @@ Last Version \(if discontinued\)
 
 121 - Vehicle Service
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -774,21 +592,15 @@ Last Version \(if discontinued\)
 
 124 - Vehicle Damage
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -797,21 +609,15 @@ Last Version \(if discontinued\)
 
 125 - Multilevel Railcar Load Details
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -820,21 +626,15 @@ Last Version \(if discontinued\)
 
 126 - Vehicle Application Advice
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -843,21 +643,15 @@ Last Version \(if discontinued\)
 
 127 - Vehicle Baying Order
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -866,21 +660,15 @@ Last Version \(if discontinued\)
 
 128 - Dealer Information
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -889,21 +677,15 @@ Last Version \(if discontinued\)
 
 129 - Vehicle Carrier Rate Update
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -912,21 +694,15 @@ Last Version \(if discontinued\)
 
 130 - Student Educational Record \(Transcript\)
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -935,21 +711,15 @@ Last Version \(if discontinued\)
 
 131 - Student Educational Record \(Transcript\) Acknowledgment
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -958,21 +728,15 @@ Last Version \(if discontinued\)
 
 132 - Human Resource Information
 
-
-
 </td>
 <td valign="top">
 
 004040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -981,21 +745,15 @@ Last Version \(if discontinued\)
 
 133 - Educational Institution Record
 
-
-
 </td>
 <td valign="top">
 
 004040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1004,21 +762,15 @@ Last Version \(if discontinued\)
 
 135 - Student Aid Origination Record
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1027,21 +779,15 @@ Last Version \(if discontinued\)
 
 138 - Educational Testing and Prospect Request and Report
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1050,21 +796,15 @@ Last Version \(if discontinued\)
 
 139 - Student Loan Guarantee Result
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1073,21 +813,15 @@ Last Version \(if discontinued\)
 
 140 - Product Registration
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1096,21 +830,15 @@ Last Version \(if discontinued\)
 
 141 - Product Service Claim Response
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1119,21 +847,15 @@ Last Version \(if discontinued\)
 
 142 - Product Service Claim
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1142,21 +864,15 @@ Last Version \(if discontinued\)
 
 143 - Product Service Notification
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1165,21 +881,15 @@ Last Version \(if discontinued\)
 
 144 - Student Loan Transfer and Status Verification
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1188,21 +898,15 @@ Last Version \(if discontinued\)
 
 146 - Request for Student Educational Record \(Transcript\)
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1211,21 +915,15 @@ Last Version \(if discontinued\)
 
 147 - Response to Request for Student Educational Record \(Transcript\)
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1234,21 +932,15 @@ Last Version \(if discontinued\)
 
 148 - Report of Injury, Illness or Incident
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1257,21 +949,15 @@ Last Version \(if discontinued\)
 
 149 - Notice of Tax Adjustment or Assessment
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1280,21 +966,15 @@ Last Version \(if discontinued\)
 
 150 - Tax Rate Notification
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1303,21 +983,15 @@ Last Version \(if discontinued\)
 
 151 - Electronic Filing of Tax Return Data Acknowledgment
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1326,21 +1000,15 @@ Last Version \(if discontinued\)
 
 152 - Statistical Government Information
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1349,21 +1017,15 @@ Last Version \(if discontinued\)
 
 153 - Unemployment Insurance Tax Claim or Charge Information
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1372,21 +1034,15 @@ Last Version \(if discontinued\)
 
 154 - Secured Interest Filing
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1395,21 +1051,15 @@ Last Version \(if discontinued\)
 
 155 - Business Credit Report
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1418,21 +1068,15 @@ Last Version \(if discontinued\)
 
 157 - Notice of Power of Attorney
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1441,21 +1085,15 @@ Last Version \(if discontinued\)
 
 158 - Tax Jurisdiction Sourcing
 
-
-
 </td>
 <td valign="top">
 
 004060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1464,21 +1102,15 @@ Last Version \(if discontinued\)
 
 159 - Motion Picture Booking Confirmation
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1487,21 +1119,15 @@ Last Version \(if discontinued\)
 
 160 - Transportation Automatic Equipment Identification
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1510,21 +1136,15 @@ Last Version \(if discontinued\)
 
 161 - Train Sheet
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1533,21 +1153,15 @@ Last Version \(if discontinued\)
 
 163 - Transportation Appointment Schedule Information
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1556,21 +1170,15 @@ Last Version \(if discontinued\)
 
 170 - Revenue Receipts Statement
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1579,21 +1187,15 @@ Last Version \(if discontinued\)
 
 175 - Court and Law Enforcement Notice
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1602,21 +1204,15 @@ Last Version \(if discontinued\)
 
 176 - Court Submission
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1625,21 +1221,15 @@ Last Version \(if discontinued\)
 
 179 - Environmental Compliance Reporting
 
-
-
 </td>
 <td valign="top">
 
 004040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1648,21 +1238,15 @@ Last Version \(if discontinued\)
 
 180 - Return Merchandise Authorization and Notification
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1671,21 +1255,15 @@ Last Version \(if discontinued\)
 
 185 - Royalty Regulatory Report
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1694,21 +1272,15 @@ Last Version \(if discontinued\)
 
 186 - Insurance Underwriting Requirements Reporting
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1717,21 +1289,15 @@ Last Version \(if discontinued\)
 
 187 - Premium Audit Request and Return
 
-
-
 </td>
 <td valign="top">
 
 004020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1740,21 +1306,15 @@ Last Version \(if discontinued\)
 
 188 - Educational Course Inventory
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1763,21 +1323,15 @@ Last Version \(if discontinued\)
 
 189 - Application for Admission to Educational Institutions
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1786,21 +1340,15 @@ Last Version \(if discontinued\)
 
 190 - Student Enrollment Verification
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1809,21 +1357,15 @@ Last Version \(if discontinued\)
 
 191 - Student Loan Pre-Claims and Claims
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1832,21 +1374,15 @@ Last Version \(if discontinued\)
 
 194 - Grant or Assistance Application
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1855,21 +1391,15 @@ Last Version \(if discontinued\)
 
 195 - Federal Communications Commission \(FCC\) License Application
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1878,21 +1408,15 @@ Last Version \(if discontinued\)
 
 196 - Contractor Cost Data Reporting
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1901,21 +1425,15 @@ Last Version \(if discontinued\)
 
 197 - Real Estate Title Evidence
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1924,21 +1442,15 @@ Last Version \(if discontinued\)
 
 198 - Loan Verification Information
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1947,21 +1459,15 @@ Last Version \(if discontinued\)
 
 199 - Real Estate Settlement Information
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1970,21 +1476,15 @@ Last Version \(if discontinued\)
 
 200 - Mortgage Credit Report
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1993,21 +1493,15 @@ Last Version \(if discontinued\)
 
 201 - Residential Loan Application
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2016,21 +1510,15 @@ Last Version \(if discontinued\)
 
 202 - Secondary Mortgage Market Loan Delivery
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2039,21 +1527,15 @@ Last Version \(if discontinued\)
 
 203 - Secondary Mortgage Market Investor Report
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2062,21 +1544,15 @@ Last Version \(if discontinued\)
 
 204 - Motor Carrier Load Tender
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2085,21 +1561,15 @@ Last Version \(if discontinued\)
 
 205 - Mortgage Note
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2108,21 +1578,15 @@ Last Version \(if discontinued\)
 
 206 - Real Estate Inspection
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2131,21 +1595,15 @@ Last Version \(if discontinued\)
 
 210 - Motor Carrier Freight Details and Invoice
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2154,21 +1612,15 @@ Last Version \(if discontinued\)
 
 211 - Motor Carrier Bill of Lading
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2177,21 +1629,15 @@ Last Version \(if discontinued\)
 
 212 - Motor Carrier Delivery Trailer Manifest
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2200,21 +1646,15 @@ Last Version \(if discontinued\)
 
 213 - Motor Carrier Shipment Status Inquiry
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2223,21 +1663,15 @@ Last Version \(if discontinued\)
 
 214 - Transportation Carrier Shipment Status Message
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2246,21 +1680,15 @@ Last Version \(if discontinued\)
 
 215 - Motor Carrier Pickup Manifest
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2269,21 +1697,15 @@ Last Version \(if discontinued\)
 
 216 - Motor Carrier Shipment Pickup Notification
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2292,21 +1714,15 @@ Last Version \(if discontinued\)
 
 217 - Motor Carrier Loading and Route Guide
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2315,21 +1731,15 @@ Last Version \(if discontinued\)
 
 218 - Motor Carrier Tariff Information
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
 004040
-
-
 
 </td>
 </tr>
@@ -2338,21 +1748,15 @@ Last Version \(if discontinued\)
 
 219 - Logistics Service Request
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2361,21 +1765,15 @@ Last Version \(if discontinued\)
 
 220 - Logistics Service Response
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2384,21 +1782,15 @@ Last Version \(if discontinued\)
 
 222 - Cartage Work Assignment
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2407,21 +1799,15 @@ Last Version \(if discontinued\)
 
 223 - Consolidators Freight Bill and Invoice
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2430,21 +1816,15 @@ Last Version \(if discontinued\)
 
 224 - Motor Carrier Summary Freight Bill Manifest
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2453,21 +1833,15 @@ Last Version \(if discontinued\)
 
 225 - Response to a Cartage Work Assignment
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2476,21 +1850,15 @@ Last Version \(if discontinued\)
 
 227 - Trailer Usage Report
 
-
-
 </td>
 <td valign="top">
 
 004030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2499,21 +1867,15 @@ Last Version \(if discontinued\)
 
 228 - Equipment Inspection Report
 
-
-
 </td>
 <td valign="top">
 
 005010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2522,21 +1884,15 @@ Last Version \(if discontinued\)
 
 240 - Motor Carrier Package Status
 
-
-
 </td>
 <td valign="top">
 
 004020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2545,21 +1901,15 @@ Last Version \(if discontinued\)
 
 242 - Data Status Tracking
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2568,21 +1918,15 @@ Last Version \(if discontinued\)
 
 244 - Product Source Information
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2591,21 +1935,15 @@ Last Version \(if discontinued\)
 
 245 - Real Estate Tax Service Response
 
-
-
 </td>
 <td valign="top">
 
 004030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2614,21 +1952,15 @@ Last Version \(if discontinued\)
 
 248 - Account Assignment/Inquiry and Service/Status
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2637,21 +1969,15 @@ Last Version \(if discontinued\)
 
 249 - Animal Toxicological Data
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2660,21 +1986,15 @@ Last Version \(if discontinued\)
 
 250 - Purchase Order Shipment Management Document
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2683,21 +2003,15 @@ Last Version \(if discontinued\)
 
 251 - Pricing Support
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2706,21 +2020,15 @@ Last Version \(if discontinued\)
 
 252 - Insurance Producer Administration
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2729,21 +2037,15 @@ Last Version \(if discontinued\)
 
 255 - Underwriting Information Services
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2752,21 +2054,15 @@ Last Version \(if discontinued\)
 
 256 - Periodic Compensation
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2775,21 +2071,15 @@ Last Version \(if discontinued\)
 
 259 - Residential Mortgage Insurance Explanation of Benefits
 
-
-
 </td>
 <td valign="top">
 
 004060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2798,21 +2088,15 @@ Last Version \(if discontinued\)
 
 260 - Application for Mortgage Insurance Benefits
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2821,21 +2105,15 @@ Last Version \(if discontinued\)
 
 261 - Real Estate Information Request
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2844,21 +2122,15 @@ Last Version \(if discontinued\)
 
 262 - Real Estate Information Report
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2867,21 +2139,15 @@ Last Version \(if discontinued\)
 
 263 - Residential Mortgage Insurance Application Response
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2890,21 +2156,15 @@ Last Version \(if discontinued\)
 
 264 - Mortgage Loan Default Status
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2913,21 +2173,15 @@ Last Version \(if discontinued\)
 
 265 - Real Estate Title Insurance Services Order
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2936,21 +2190,15 @@ Last Version \(if discontinued\)
 
 266 - Mortgage or Property Record Change Notification
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2959,21 +2207,15 @@ Last Version \(if discontinued\)
 
 267 - Individual Life, Annuity and Disability Application
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -2982,21 +2224,15 @@ Last Version \(if discontinued\)
 
 268 - Annuity Activity
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3005,21 +2241,15 @@ Last Version \(if discontinued\)
 
 269 - Health Care Benefit Coordination Verification
 
-
-
 </td>
 <td valign="top">
 
 004040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3028,21 +2258,15 @@ Last Version \(if discontinued\)
 
 270 - Eligibility, Coverage or Benefit Inquiry
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3051,21 +2275,15 @@ Last Version \(if discontinued\)
 
 271 - Eligibility, Coverage or Benefit Information
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3074,21 +2292,15 @@ Last Version \(if discontinued\)
 
 272 - Property and Casualty Loss Notification
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3097,21 +2309,15 @@ Last Version \(if discontinued\)
 
 273 - Insurance/Annuity Application Status
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3120,21 +2326,15 @@ Last Version \(if discontinued\)
 
 274 - Healthcare Provider Information
 
-
-
 </td>
 <td valign="top">
 
 004020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3143,21 +2343,15 @@ Last Version \(if discontinued\)
 
 275 - Patient Information
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3166,21 +2360,15 @@ Last Version \(if discontinued\)
 
 276 - Health Care Claim Status Request
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3189,21 +2377,15 @@ Last Version \(if discontinued\)
 
 277 - Health Care Information Status Notification
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3212,21 +2394,15 @@ Last Version \(if discontinued\)
 
 278 - Health Care Services Review Information
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3235,21 +2411,15 @@ Last Version \(if discontinued\)
 
 280 - Voter Registration Information
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3258,21 +2428,15 @@ Last Version \(if discontinued\)
 
 283 - Tax or Fee Exemption Certification
 
-
-
 </td>
 <td valign="top">
 
 004020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3281,21 +2445,15 @@ Last Version \(if discontinued\)
 
 284 - Commercial Vehicle Safety Reports
 
-
-
 </td>
 <td valign="top">
 
 004020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3304,21 +2462,15 @@ Last Version \(if discontinued\)
 
 285 - Commercial Vehicle Safety and Credentials Information Exchange
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3327,21 +2479,15 @@ Last Version \(if discontinued\)
 
 286 - Commercial Vehicle Credentials
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3350,21 +2496,15 @@ Last Version \(if discontinued\)
 
 288 - Wage Determination
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3373,21 +2513,15 @@ Last Version \(if discontinued\)
 
 290 - Cooperative Advertising Agreements
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3396,21 +2530,15 @@ Last Version \(if discontinued\)
 
 300 - Reservation \(Booking Request\) \(Ocean\)
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3419,21 +2547,15 @@ Last Version \(if discontinued\)
 
 301 - Confirmation \(Ocean\)
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3442,21 +2564,15 @@ Last Version \(if discontinued\)
 
 303 - Booking Cancellation \(Ocean\)
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3465,21 +2581,15 @@ Last Version \(if discontinued\)
 
 304 - Shipping Instructions
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3488,21 +2598,15 @@ Last Version \(if discontinued\)
 
 309 - Customs Manifest
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3511,21 +2615,15 @@ Last Version \(if discontinued\)
 
 310 - Freight Receipt and Invoice \(Ocean\)
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3534,21 +2632,15 @@ Last Version \(if discontinued\)
 
 311 - Canada Customs Information
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3557,21 +2649,15 @@ Last Version \(if discontinued\)
 
 312 - Arrival Notice \(Ocean\)
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3580,21 +2666,15 @@ Last Version \(if discontinued\)
 
 313 - Shipment Status Inquiry \(Ocean\)
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3603,21 +2683,15 @@ Last Version \(if discontinued\)
 
 315 - Status Details \(Ocean\)
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3626,21 +2700,15 @@ Last Version \(if discontinued\)
 
 317 - Delivery/Pickup Order
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3649,21 +2717,15 @@ Last Version \(if discontinued\)
 
 319 - Terminal Information
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3672,21 +2734,15 @@ Last Version \(if discontinued\)
 
 322 - Terminal Operations and Intermodal Ramp Activity
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3695,21 +2751,15 @@ Last Version \(if discontinued\)
 
 323 - Vessel Schedule and Itinerary \(Ocean\)
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3718,21 +2768,15 @@ Last Version \(if discontinued\)
 
 324 - Vessel Stow Plan \(Ocean\)
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3741,21 +2785,15 @@ Last Version \(if discontinued\)
 
 325 - Consolidation of Goods In Container
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3764,21 +2802,15 @@ Last Version \(if discontinued\)
 
 326 - Consignment Summary List
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3787,21 +2819,15 @@ Last Version \(if discontinued\)
 
 350 - Customs Status Information
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3810,21 +2836,15 @@ Last Version \(if discontinued\)
 
 352 - Customs Carrier General Order Status
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3833,21 +2853,15 @@ Last Version \(if discontinued\)
 
 353 - Customs Events Advisory Details
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3856,21 +2870,15 @@ Last Version \(if discontinued\)
 
 354 - Customs Automated Manifest Archive Status
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3879,21 +2887,15 @@ Last Version \(if discontinued\)
 
 355 - Customs Acceptance/Rejection
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3902,21 +2904,15 @@ Last Version \(if discontinued\)
 
 356 - Customs Permit to Transfer Request
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3925,21 +2921,15 @@ Last Version \(if discontinued\)
 
 357 - Customs In-Bond Information
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3948,21 +2938,15 @@ Last Version \(if discontinued\)
 
 358 - Customs Consist Information
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3971,21 +2955,15 @@ Last Version \(if discontinued\)
 
 359 - Customs Customer Profile Management
 
-
-
 </td>
 <td valign="top">
 
 005040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -3994,21 +2972,15 @@ Last Version \(if discontinued\)
 
 361 - Carrier Interchange Agreement \(Ocean\)
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4017,21 +2989,15 @@ Last Version \(if discontinued\)
 
 362 - Cargo Insurance Advice of Shipment
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4040,21 +3006,15 @@ Last Version \(if discontinued\)
 
 404 - Rail Carrier Shipment Information
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4063,21 +3023,15 @@ Last Version \(if discontinued\)
 
 410 - Rail Carrier Freight Details and Invoice
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4086,21 +3040,15 @@ Last Version \(if discontinued\)
 
 412 - Trailer or Container Repair Billing
 
-
-
 </td>
 <td valign="top">
 
 004030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4109,21 +3057,15 @@ Last Version \(if discontinued\)
 
 414 - Rail Carhire Settlements
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4132,21 +3074,15 @@ Last Version \(if discontinued\)
 
 417 - Rail Carrier Waybill Interchange
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4155,21 +3091,15 @@ Last Version \(if discontinued\)
 
 418 - Rail Advance Interchange Consist
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4178,21 +3108,15 @@ Last Version \(if discontinued\)
 
 419 - Advance Car Disposition
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4201,21 +3125,15 @@ Last Version \(if discontinued\)
 
 420 - Car Handling Information
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4224,21 +3142,15 @@ Last Version \(if discontinued\)
 
 421 - Estimated Time of Arrival and Car Scheduling
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4247,21 +3159,15 @@ Last Version \(if discontinued\)
 
 422 - Equipment Order
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4270,21 +3176,15 @@ Last Version \(if discontinued\)
 
 423 - Rail Industrial Switch List
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4293,21 +3193,15 @@ Last Version \(if discontinued\)
 
 424 - Rail Carrier Services Settlement
 
-
-
 </td>
 <td valign="top">
 
 004050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4316,21 +3210,15 @@ Last Version \(if discontinued\)
 
 425 - Rail Waybill Request
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4339,21 +3227,15 @@ Last Version \(if discontinued\)
 
 426 - Rail Revenue Waybill
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4362,21 +3244,15 @@ Last Version \(if discontinued\)
 
 429 - Railroad Retirement Activity
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4385,21 +3261,15 @@ Last Version \(if discontinued\)
 
 431 - Railroad Station Master File
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4408,21 +3278,15 @@ Last Version \(if discontinued\)
 
 432 - Rail Car Hire Rate Negotiation
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4431,21 +3295,15 @@ Last Version \(if discontinued\)
 
 433 - Railroad Reciprocal Switch File
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4454,21 +3312,15 @@ Last Version \(if discontinued\)
 
 434 - Railroad Mark Register Update Activity
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4477,21 +3329,15 @@ Last Version \(if discontinued\)
 
 435 - Standard Transportation Commodity Code Master
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4500,21 +3346,15 @@ Last Version \(if discontinued\)
 
 436 - Locomotive Information
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4523,21 +3363,15 @@ Last Version \(if discontinued\)
 
 437 - Railroad Junctions and Interchanges Activity
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4546,21 +3380,15 @@ Last Version \(if discontinued\)
 
 440 - Shipment Weights
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4569,21 +3397,15 @@ Last Version \(if discontinued\)
 
 451 - Railroad Event Report
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4592,21 +3414,15 @@ Last Version \(if discontinued\)
 
 452 - Railroad Problem Log Inquiry or Advice
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4615,21 +3431,15 @@ Last Version \(if discontinued\)
 
 453 - Railroad Service Commitment Advice
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4638,21 +3448,15 @@ Last Version \(if discontinued\)
 
 455 - Railroad Parameter Trace Registration
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4661,21 +3465,15 @@ Last Version \(if discontinued\)
 
 456 - Railroad Equipment Inquiry or Advice
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4684,21 +3482,15 @@ Last Version \(if discontinued\)
 
 460 - Railroad Price Distribution Request or Response
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4707,21 +3499,15 @@ Last Version \(if discontinued\)
 
 463 - Rail Rate Reply
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4730,21 +3516,15 @@ Last Version \(if discontinued\)
 
 466 - Rate Request
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4753,21 +3533,15 @@ Last Version \(if discontinued\)
 
 468 - Rate Docket Journal Log
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4776,21 +3550,15 @@ Last Version \(if discontinued\)
 
 470 - Railroad Clearance
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4799,21 +3567,15 @@ Last Version \(if discontinued\)
 
 475 - Rail Route File Maintenance
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4822,21 +3584,15 @@ Last Version \(if discontinued\)
 
 485 - Ratemaking Action
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4845,21 +3601,15 @@ Last Version \(if discontinued\)
 
 486 - Rate Docket Expiration
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4868,21 +3618,15 @@ Last Version \(if discontinued\)
 
 490 - Rate Group Definition
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4891,21 +3635,15 @@ Last Version \(if discontinued\)
 
 492 - Miscellaneous Rates
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4914,21 +3652,15 @@ Last Version \(if discontinued\)
 
 494 - Rail Scale Rates
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4937,21 +3669,15 @@ Last Version \(if discontinued\)
 
 500 - Medical Event Reporting
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4960,21 +3686,15 @@ Last Version \(if discontinued\)
 
 501 - Vendor Performance Review
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -4983,21 +3703,15 @@ Last Version \(if discontinued\)
 
 503 - Pricing History
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5006,21 +3720,15 @@ Last Version \(if discontinued\)
 
 504 - Clauses and Provisions
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5029,21 +3737,15 @@ Last Version \(if discontinued\)
 
 511 - Requisition
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5052,21 +3754,15 @@ Last Version \(if discontinued\)
 
 517 - Material Obligation Validation
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5075,21 +3771,15 @@ Last Version \(if discontinued\)
 
 521 - Income or Asset Offset
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5098,21 +3788,15 @@ Last Version \(if discontinued\)
 
 527 - Material Due-In and Receipt
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5121,21 +3805,15 @@ Last Version \(if discontinued\)
 
 536 - Logistics Reassignment
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5144,21 +3822,15 @@ Last Version \(if discontinued\)
 
 540 - Notice of Employment Status
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5167,21 +3839,15 @@ Last Version \(if discontinued\)
 
 561 - Contract Abstract
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5190,21 +3856,15 @@ Last Version \(if discontinued\)
 
 567 - Contract Completion Status
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5213,21 +3873,15 @@ Last Version \(if discontinued\)
 
 568 - Contract Payment Management Report
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5236,21 +3890,15 @@ Last Version \(if discontinued\)
 
 601 - Customs Export Shipment Information
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5259,21 +3907,15 @@ Last Version \(if discontinued\)
 
 602 - Transportation Services Tender
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
 005050
-
-
 
 </td>
 </tr>
@@ -5282,21 +3924,15 @@ Last Version \(if discontinued\)
 
 603 - Transportation Equipment Registration
 
-
-
 </td>
 <td valign="top">
 
 006030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5305,21 +3941,15 @@ Last Version \(if discontinued\)
 
 620 - Excavation Communication
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5328,21 +3958,15 @@ Last Version \(if discontinued\)
 
 622 - Intermodal Ramp Activity
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
 003050
-
-
 
 </td>
 </tr>
@@ -5351,21 +3975,15 @@ Last Version \(if discontinued\)
 
 625 - Well Information
 
-
-
 </td>
 <td valign="top">
 
 004010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5374,21 +3992,15 @@ Last Version \(if discontinued\)
 
 650 - Maintenance Service Order
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5397,21 +4009,15 @@ Last Version \(if discontinued\)
 
 715 - Intermodal Group Loading Plan
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5420,21 +4026,15 @@ Last Version \(if discontinued\)
 
 753 - Request for Routing Instructions
 
-
-
 </td>
 <td valign="top">
 
 004030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5443,21 +4043,15 @@ Last Version \(if discontinued\)
 
 754 - Routing Instructions
 
-
-
 </td>
 <td valign="top">
 
 004030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5466,21 +4060,15 @@ Last Version \(if discontinued\)
 
 805 - Contract Pricing Proposal
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5489,21 +4077,15 @@ Last Version \(if discontinued\)
 
 806 - Project Schedule Reporting
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5512,21 +4094,15 @@ Last Version \(if discontinued\)
 
 810 - Invoice
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5535,21 +4111,15 @@ Last Version \(if discontinued\)
 
 811 - Consolidated Service Invoice/Statement
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5558,21 +4128,15 @@ Last Version \(if discontinued\)
 
 812 - Credit/Debit Adjustment
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5581,21 +4145,15 @@ Last Version \(if discontinued\)
 
 813 - Electronic Filing of Tax Return Data
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5604,21 +4162,15 @@ Last Version \(if discontinued\)
 
 814 - General Request, Response or Confirmation
 
-
-
 </td>
 <td valign="top">
 
 003070
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5627,21 +4179,15 @@ Last Version \(if discontinued\)
 
 815 - Cryptographic Service Message
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5650,21 +4196,15 @@ Last Version \(if discontinued\)
 
 816 - Organizational Relationships
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5673,21 +4213,15 @@ Last Version \(if discontinued\)
 
 818 - Commission Sales Report
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5696,21 +4230,15 @@ Last Version \(if discontinued\)
 
 819 - Joint Interest Billing and Operating Expense Statement
 
-
-
 </td>
 <td valign="top">
 
 002003
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5719,21 +4247,15 @@ Last Version \(if discontinued\)
 
 820 - Payment Order/Remittance Advice
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5742,21 +4264,15 @@ Last Version \(if discontinued\)
 
 821 - Financial Information Reporting
 
-
-
 </td>
 <td valign="top">
 
 002040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5765,21 +4281,15 @@ Last Version \(if discontinued\)
 
 822 - Account Analysis
 
-
-
 </td>
 <td valign="top">
 
 002003
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5788,21 +4298,15 @@ Last Version \(if discontinued\)
 
 823 - Lockbox
 
-
-
 </td>
 <td valign="top">
 
 002002
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5811,21 +4315,15 @@ Last Version \(if discontinued\)
 
 824 - Application Advice
 
-
-
 </td>
 <td valign="top">
 
 002042
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5834,21 +4332,15 @@ Last Version \(if discontinued\)
 
 826 - Tax Information Exchange
 
-
-
 </td>
 <td valign="top">
 
 002042
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5857,21 +4349,15 @@ Last Version \(if discontinued\)
 
 827 - Financial Return Notice
 
-
-
 </td>
 <td valign="top">
 
 002042
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5880,21 +4366,15 @@ Last Version \(if discontinued\)
 
 828 - Debit Authorization
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5903,21 +4383,15 @@ Last Version \(if discontinued\)
 
 829 - Payment Cancellation Request
 
-
-
 </td>
 <td valign="top">
 
 002042
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5926,21 +4400,15 @@ Last Version \(if discontinued\)
 
 830 - Planning Schedule with Release Capability
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5949,21 +4417,15 @@ Last Version \(if discontinued\)
 
 831 - Application Control Totals
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5972,21 +4434,15 @@ Last Version \(if discontinued\)
 
 832 - Price/Sales Catalog
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -5995,21 +4451,15 @@ Last Version \(if discontinued\)
 
 833 - Mortgage Credit Report Order
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6018,21 +4468,15 @@ Last Version \(if discontinued\)
 
 834 - Benefit Enrollment and Maintenance
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6041,21 +4485,15 @@ Last Version \(if discontinued\)
 
 835 - Health Care Claim Payment/Advice
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6064,21 +4502,15 @@ Last Version \(if discontinued\)
 
 836 - Procurement Notices
 
-
-
 </td>
 <td valign="top">
 
 003010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6087,21 +4519,15 @@ Last Version \(if discontinued\)
 
 837 - Health Care Claim
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6110,21 +4536,15 @@ Last Version \(if discontinued\)
 
 838 - Trading Partner Profile
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6133,21 +4553,15 @@ Last Version \(if discontinued\)
 
 839 - Project Cost Reporting
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6156,21 +4570,15 @@ Last Version \(if discontinued\)
 
 840 - Request for Quotation
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6179,21 +4587,15 @@ Last Version \(if discontinued\)
 
 841 - Specifications/Technical Information
 
-
-
 </td>
 <td valign="top">
 
 003010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6202,21 +4604,15 @@ Last Version \(if discontinued\)
 
 842 - Nonconformance Report
 
-
-
 </td>
 <td valign="top">
 
 003010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6225,21 +4621,15 @@ Last Version \(if discontinued\)
 
 843 - Response to Request for Quotation
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6248,21 +4638,15 @@ Last Version \(if discontinued\)
 
 844 - Product Transfer Account Adjustment
 
-
-
 </td>
 <td valign="top">
 
 002003
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6271,21 +4655,15 @@ Last Version \(if discontinued\)
 
 845 - Price Authorization Acknowledgment/Status
 
-
-
 </td>
 <td valign="top">
 
 002003
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6294,21 +4672,15 @@ Last Version \(if discontinued\)
 
 846 - Inventory Inquiry/Advice
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6317,21 +4689,15 @@ Last Version \(if discontinued\)
 
 847 - Material Claim
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6340,21 +4706,15 @@ Last Version \(if discontinued\)
 
 848 - Material Safety Data Sheet
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6363,21 +4723,15 @@ Last Version \(if discontinued\)
 
 849 - Response to Product Transfer Account Adjustment
 
-
-
 </td>
 <td valign="top">
 
 002003
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6386,21 +4740,15 @@ Last Version \(if discontinued\)
 
 850 - Purchase Order
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6409,21 +4757,15 @@ Last Version \(if discontinued\)
 
 851 - Asset Schedule
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6432,21 +4774,15 @@ Last Version \(if discontinued\)
 
 852 - Product Activity Data
 
-
-
 </td>
 <td valign="top">
 
 003010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6455,21 +4791,15 @@ Last Version \(if discontinued\)
 
 853 - Routing and Carrier Instruction
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6478,21 +4808,15 @@ Last Version \(if discontinued\)
 
 854 - Shipment Delivery Discrepancy Information
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6501,21 +4825,15 @@ Last Version \(if discontinued\)
 
 855 - Purchase Order Acknowledgment
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6524,21 +4842,15 @@ Last Version \(if discontinued\)
 
 856 - Ship Notice/Manifest
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6547,21 +4859,15 @@ Last Version \(if discontinued\)
 
 857 - Shipment and Billing Notice
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6570,21 +4876,15 @@ Last Version \(if discontinued\)
 
 858 - Shipment Information
 
-
-
 </td>
 <td valign="top">
 
 002040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6593,21 +4893,15 @@ Last Version \(if discontinued\)
 
 859 - Freight Invoice
 
-
-
 </td>
 <td valign="top">
 
 002042
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6616,21 +4910,15 @@ Last Version \(if discontinued\)
 
 860 - Purchase Order Change Request - Buyer Initiated
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6639,21 +4927,15 @@ Last Version \(if discontinued\)
 
 861 - Receiving Advice/Acceptance Certificate
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6662,21 +4944,15 @@ Last Version \(if discontinued\)
 
 862 - Shipping Schedule
 
-
-
 </td>
 <td valign="top">
 
 002002
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6685,21 +4961,15 @@ Last Version \(if discontinued\)
 
 863 - Report of Test Results
 
-
-
 </td>
 <td valign="top">
 
 002003
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6708,21 +4978,15 @@ Last Version \(if discontinued\)
 
 864 - Text Message
 
-
-
 </td>
 <td valign="top">
 
 002040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6731,21 +4995,15 @@ Last Version \(if discontinued\)
 
 865 - Purchase Order Change Acknowledgment/Request - Seller Initiated
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6754,21 +5012,15 @@ Last Version \(if discontinued\)
 
 866 - Production Sequence
 
-
-
 </td>
 <td valign="top">
 
 002040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6777,21 +5029,15 @@ Last Version \(if discontinued\)
 
 867 - Product Transfer and Resale Report
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6800,21 +5046,15 @@ Last Version \(if discontinued\)
 
 868 - Electronic Form Structure
 
-
-
 </td>
 <td valign="top">
 
 002042
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6823,21 +5063,15 @@ Last Version \(if discontinued\)
 
 869 - Order Status Inquiry
 
-
-
 </td>
 <td valign="top">
 
 002002
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6846,21 +5080,15 @@ Last Version \(if discontinued\)
 
 870 - Order Status Report
 
-
-
 </td>
 <td valign="top">
 
 002002
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6869,21 +5097,15 @@ Last Version \(if discontinued\)
 
 871 - Component Parts Content
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 005010
-
-
 
 </td>
 </tr>
@@ -6892,21 +5114,15 @@ Last Version \(if discontinued\)
 
 872 - Residential Mortgage Insurance Application
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6915,21 +5131,15 @@ Last Version \(if discontinued\)
 
 873 - Commodity Movement Services
 
-
-
 </td>
 <td valign="top">
 
 004030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6938,21 +5148,15 @@ Last Version \(if discontinued\)
 
 874 - Commodity Movement Services Response
 
-
-
 </td>
 <td valign="top">
 
 004040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6961,21 +5165,15 @@ Last Version \(if discontinued\)
 
 875 - Grocery Products Purchase Order
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -6984,21 +5182,15 @@ Last Version \(if discontinued\)
 
 876 - Grocery Products Purchase Order Change
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7007,21 +5199,15 @@ Last Version \(if discontinued\)
 
 877 - Manufacturer Coupon Family Code Structure
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7030,21 +5216,15 @@ Last Version \(if discontinued\)
 
 878 - Product Authorization/De-authorization
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7053,21 +5233,15 @@ Last Version \(if discontinued\)
 
 879 - Price Information
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7076,21 +5250,15 @@ Last Version \(if discontinued\)
 
 880 - Grocery Products Invoice
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7099,21 +5267,15 @@ Last Version \(if discontinued\)
 
 881 - Manufacturer Coupon Redemption Detail
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7122,21 +5284,15 @@ Last Version \(if discontinued\)
 
 882 - Direct Store Delivery Summary Information
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7145,21 +5301,15 @@ Last Version \(if discontinued\)
 
 883 - Market Development Fund Allocation
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7168,21 +5318,15 @@ Last Version \(if discontinued\)
 
 884 - Market Development Fund Settlement
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7191,21 +5335,15 @@ Last Version \(if discontinued\)
 
 885 - Retail Account Characteristics
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7214,21 +5352,15 @@ Last Version \(if discontinued\)
 
 886 - Customer Call Reporting
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7237,21 +5369,15 @@ Last Version \(if discontinued\)
 
 887 - Coupon Notification
 
-
-
 </td>
 <td valign="top">
 
 003060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7260,21 +5386,15 @@ Last Version \(if discontinued\)
 
 888 - Item Maintenance
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7283,21 +5403,15 @@ Last Version \(if discontinued\)
 
 889 - Promotion Announcement
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7306,21 +5420,15 @@ Last Version \(if discontinued\)
 
 890 - Contract & Rebate Management Transaction
 
-
-
 </td>
 <td valign="top">
 
 006010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7329,21 +5437,15 @@ Last Version \(if discontinued\)
 
 891 - Deduction Research Report
 
-
-
 </td>
 <td valign="top">
 
 003050
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7352,21 +5454,15 @@ Last Version \(if discontinued\)
 
 892 - Trading Partner Performance Measurement
 
-
-
 </td>
 <td valign="top">
 
 007020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7375,21 +5471,15 @@ Last Version \(if discontinued\)
 
 893 - Item Information Request
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7398,21 +5488,15 @@ Last Version \(if discontinued\)
 
 894 - Delivery/Return Base Record
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7421,21 +5505,15 @@ Last Version \(if discontinued\)
 
 895 - Delivery/Return Acknowledgment or Adjustment
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7444,21 +5522,15 @@ Last Version \(if discontinued\)
 
 896 - Product Dimension Maintenance
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7467,21 +5539,15 @@ Last Version \(if discontinued\)
 
 897 - Data Synchronization
 
-
-
 </td>
 <td valign="top">
 
 007060
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7490,21 +5556,15 @@ Last Version \(if discontinued\)
 
 920 - Loss or Damage Claim - General Commodities
 
-
-
 </td>
 <td valign="top">
 
 003040
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7513,21 +5573,15 @@ Last Version \(if discontinued\)
 
 924 - Loss or Damage Claim - Motor Vehicle
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7536,21 +5590,15 @@ Last Version \(if discontinued\)
 
 925 - Claim Tracer
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7559,21 +5607,15 @@ Last Version \(if discontinued\)
 
 926 - Claim Status Report and Tracer Reply
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7582,21 +5624,15 @@ Last Version \(if discontinued\)
 
 928 - Automotive Inspection Detail
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7605,21 +5641,15 @@ Last Version \(if discontinued\)
 
 940 - Warehouse Shipping Order
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7628,21 +5658,15 @@ Last Version \(if discontinued\)
 
 943 - Warehouse Stock Transfer Shipment Advice
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7651,21 +5675,15 @@ Last Version \(if discontinued\)
 
 944 - Warehouse Stock Transfer Receipt Advice
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7674,21 +5692,15 @@ Last Version \(if discontinued\)
 
 945 - Warehouse Shipping Advice
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7697,21 +5709,15 @@ Last Version \(if discontinued\)
 
 947 - Warehouse Inventory Adjustment Advice
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7720,21 +5726,15 @@ Last Version \(if discontinued\)
 
 980 - Functional Group Totals
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7743,21 +5743,15 @@ Last Version \(if discontinued\)
 
 990 - Response to a Load Tender
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7766,21 +5760,15 @@ Last Version \(if discontinued\)
 
 993 - Secured Receipt or Acknowledgment
 
-
-
 </td>
 <td valign="top">
 
 004020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7789,21 +5777,15 @@ Last Version \(if discontinued\)
 
 996 - File Transfer
 
-
-
 </td>
 <td valign="top">
 
 003020
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7812,21 +5794,15 @@ Last Version \(if discontinued\)
 
 997 - Functional Acknowledgment
 
-
-
 </td>
 <td valign="top">
 
 002001
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7835,21 +5811,15 @@ Last Version \(if discontinued\)
 
 998 - Set Cancellation
 
-
-
 </td>
 <td valign="top">
 
 003030
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7858,21 +5828,15 @@ Last Version \(if discontinued\)
 
 999 - Implementation Acknowledgment
 
-
-
 </td>
 <td valign="top">
 
 005010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -7895,16 +5859,12 @@ SAP Integration Suite supports the libraries for syntax version 3\(S3\) and all 
 
 Version
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 92.1 S3
-
-
 
 </td>
 </tr>
@@ -7913,16 +5873,12 @@ Version
 
 93.2 S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.93A S3
-
-
 
 </td>
 </tr>
@@ -7931,16 +5887,12 @@ D.93A S3
 
 D.94A S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.94B S3
-
-
 
 </td>
 </tr>
@@ -7949,16 +5901,12 @@ D.94B S3
 
 D.95A S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.95B S3
-
-
 
 </td>
 </tr>
@@ -7967,16 +5915,12 @@ D.95B S3
 
 D.96A S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.96B S3
-
-
 
 </td>
 </tr>
@@ -7985,16 +5929,12 @@ D.96B S3
 
 D.97A S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.97B S3
-
-
 
 </td>
 </tr>
@@ -8003,16 +5943,12 @@ D.97B S3
 
 D.98A S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.98B S3
-
-
 
 </td>
 </tr>
@@ -8021,16 +5957,12 @@ D.98B S3
 
 D.99A S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.99B S3
-
-
 
 </td>
 </tr>
@@ -8039,16 +5971,12 @@ D.99B S3
 
 D.00A S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.00B S3
-
-
 
 </td>
 </tr>
@@ -8057,16 +5985,12 @@ D.00B S3
 
 D.01A S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.01B S3
-
-
 
 </td>
 </tr>
@@ -8075,16 +5999,12 @@ D.01B S3
 
 D.01C S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.02A S3
-
-
 
 </td>
 </tr>
@@ -8093,16 +6013,12 @@ D.02A S3
 
 D.02B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.03A S3
-
-
 
 </td>
 </tr>
@@ -8111,16 +6027,12 @@ D.03A S3
 
 D.03B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.04A S3
-
-
 
 </td>
 </tr>
@@ -8129,16 +6041,12 @@ D.04A S3
 
 D.04B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.05A S3
-
-
 
 </td>
 </tr>
@@ -8147,16 +6055,12 @@ D.05A S3
 
 D.05B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.06A S3
-
-
 
 </td>
 </tr>
@@ -8165,16 +6069,12 @@ D.06A S3
 
 D.06B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.07A S3
-
-
 
 </td>
 </tr>
@@ -8183,16 +6083,12 @@ D.07A S3
 
 D.07B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.08A S3
-
-
 
 </td>
 </tr>
@@ -8201,16 +6097,12 @@ D.08A S3
 
 D.08B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.09A S3
-
-
 
 </td>
 </tr>
@@ -8219,16 +6111,12 @@ D.09A S3
 
 D.09B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.10A S3
-
-
 
 </td>
 </tr>
@@ -8237,16 +6125,12 @@ D.10A S3
 
 D.10B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.11A S3
-
-
 
 </td>
 </tr>
@@ -8255,16 +6139,12 @@ D.11A S3
 
 D.11B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.12A S3
-
-
 
 </td>
 </tr>
@@ -8273,16 +6153,12 @@ D.12A S3
 
 D.12B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.13A S3
-
-
 
 </td>
 </tr>
@@ -8291,16 +6167,12 @@ D.13A S3
 
 D.13B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.14A S3
-
-
 
 </td>
 </tr>
@@ -8309,16 +6181,12 @@ D.14A S3
 
 D.14B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.15A S3
-
-
 
 </td>
 </tr>
@@ -8327,16 +6195,12 @@ D.15A S3
 
 D.15B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.16A S3
-
-
 
 </td>
 </tr>
@@ -8345,16 +6209,12 @@ D.16A S3
 
 D.16B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.17A S3
-
-
 
 </td>
 </tr>
@@ -8363,16 +6223,12 @@ D.17A S3
 
 D.17B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.18A S3
-
-
 
 </td>
 </tr>
@@ -8381,16 +6237,12 @@ D.18A S3
 
 D.18B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.19A S3
-
-
 
 </td>
 </tr>
@@ -8399,16 +6251,12 @@ D.19A S3
 
 D.19B S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.20A S3
-
-
 
 </td>
 </tr>
@@ -8417,8 +6265,6 @@ D.20A S3
 
 D.20B S3
 
-
-
 </td>
 </tr>
 <tr>
@@ -8426,16 +6272,12 @@ D.20B S3
 
 D.21A S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 D.21B S3
-
-
 
 </td>
 </tr>
@@ -8450,21 +6292,15 @@ D.21B S3
 
 Message
 
-
-
 </th>
 <th valign="top">
 
 Available from Version
 
-
-
 </th>
 <th valign="top">
 
 Last Version \(if discontinued\)
-
-
 
 </th>
 </tr>
@@ -8473,21 +6309,15 @@ Last Version \(if discontinued\)
 
 APERAK - Application error and acknowledgement message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8496,21 +6326,15 @@ D.95A S3
 
 AUTHOR - Authorization message
 
-
-
 </td>
 <td valign="top">
 
 D.94A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8519,21 +6343,15 @@ D.94A S3
 
 BALANC - Balance message
 
-
-
 </td>
 <td valign="top">
 
 D.98A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8542,21 +6360,15 @@ D.98A S3
 
 BANSTA - Banking status message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -8565,21 +6377,15 @@ Not included in Edifact version *93.2 S3*.
 
 BAPLIE - Bayplan/stowage plan occupied and empty locations message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8588,21 +6394,15 @@ BAPLIE - Bayplan/stowage plan occupied and empty locations message
 
 BAPLTE - Bayplan/stowage plan total numbers message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 D.02B S3
-
-
 
 </td>
 </tr>
@@ -8611,21 +6411,15 @@ D.02B S3
 
 BERMAN - Berth management message
 
-
-
 </td>
 <td valign="top">
 
 D.00A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8634,21 +6428,15 @@ D.00A S3
 
 BMISRM - Bulk marine inspection summary report message
 
-
-
 </td>
 <td valign="top">
 
 D.98B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8657,21 +6445,15 @@ D.98B S3
 
 BOPBNK - Bank transactions and portfolio transactions report message
 
-
-
 </td>
 <td valign="top">
 
 D.94B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8680,21 +6462,15 @@ D.94B S3
 
 BOPCUS - Balance of payment customer transaction report message
 
-
-
 </td>
 <td valign="top">
 
 D.94B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8703,21 +6479,15 @@ D.94B S3
 
 BOPDIR - Direct balance of payment declaration message
 
-
-
 </td>
 <td valign="top">
 
 D.94B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8726,21 +6496,15 @@ D.94B S3
 
 BOPINF - Balance of payment information from customer message
 
-
-
 </td>
 <td valign="top">
 
 D.94B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8749,21 +6513,15 @@ D.94B S3
 
 BUSCRD - Business credit report message
 
-
-
 </td>
 <td valign="top">
 
 D.99B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8772,21 +6530,15 @@ D.99B S3
 
 CALINF - Vessel call information message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8795,21 +6547,15 @@ D.95A S3
 
 CASINT - Request for legal administration action in civil proceedings message
 
-
-
 </td>
 <td valign="top">
 
 D.96B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8818,21 +6564,15 @@ D.96B S3
 
 CASRES - Legal administration response in civil proceedings message
 
-
-
 </td>
 <td valign="top">
 
 D.96B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8841,21 +6581,15 @@ D.96B S3
 
 CHACCO - Chart of accounts message
 
-
-
 </td>
 <td valign="top">
 
 D.98A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8864,21 +6598,15 @@ D.98A S3
 
 CLASET - Classification information set message
 
-
-
 </td>
 <td valign="top">
 
 D.99A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8887,21 +6615,15 @@ D.99A S3
 
 CNTCND - Contractual conditions message
 
-
-
 </td>
 <td valign="top">
 
 D.99A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8910,21 +6632,15 @@ D.99A S3
 
 COACSU - Commercial account summary message
 
-
-
 </td>
 <td valign="top">
 
 D.99B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8933,21 +6649,15 @@ D.99B S3
 
 COARRI - Container discharge/loading report message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8956,21 +6666,15 @@ D.95A S3
 
 CODECO - Container gate-in/gate-out report message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -8979,21 +6683,15 @@ D.95A S3
 
 CODENO - Permit expiration/clearance ready notice message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9002,21 +6700,15 @@ D.95A S3
 
 COEDOR - Transport equipment stock and profile report message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9025,21 +6717,15 @@ D.95A S3
 
 COHAOR - Container special handling order message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9048,21 +6734,15 @@ D.95A S3
 
 COLREQ - Request for a documentary collection message
 
-
-
 </td>
 <td valign="top">
 
 D.97B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9071,21 +6751,15 @@ D.97B S3
 
 COMDIS - Commercial dispute message
 
-
-
 </td>
 <td valign="top">
 
 D.94A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9094,21 +6768,15 @@ D.94A S3
 
 CONAPW - Advice on pending works message
 
-
-
 </td>
 <td valign="top">
 
 D.94A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9117,21 +6785,15 @@ D.94A S3
 
 CONDPV - Direct payment valuation message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -9140,21 +6802,15 @@ Not included in Edifact version *93.2 S3*.
 
 CONDRA - Drawing administration message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9163,21 +6819,15 @@ D.95A S3
 
 CONDRO - Drawing organisation message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9186,21 +6836,15 @@ D.95A S3
 
 CONEST - Establishment of contract message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -9209,21 +6853,15 @@ Not included in Edifact version *93.2 S3*.
 
 CONITT - Invitation to tender message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -9232,21 +6870,15 @@ Not included in Edifact version *93.2 S3*.
 
 CONPVA - Payment valuation message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -9255,21 +6887,15 @@ Not included in Edifact version *93.2 S3*.
 
 CONQVA - Quantity valuation message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -9278,21 +6904,15 @@ Not included in Edifact version *93.2 S3*.
 
 CONRPW - Response of pending works message
 
-
-
 </td>
 <td valign="top">
 
 D.94A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9301,21 +6921,15 @@ D.94A S3
 
 CONTEN - Tender message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -9324,21 +6938,15 @@ Not included in Edifact version *93.2 S3*.
 
 CONTRL - Syntax and service report message
 
-
-
 </td>
 <td valign="top">
 
 D.99B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9347,21 +6955,15 @@ D.99B S3
 
 CONWQD - Work item quantity determination message
 
-
-
 </td>
 <td valign="top">
 
 D.94A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9370,21 +6972,15 @@ D.94A S3
 
 COPARN - Container announcement message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9393,21 +6989,15 @@ D.95A S3
 
 COPAYM - Contributions for payment
 
-
-
 </td>
 <td valign="top">
 
 D.99B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9416,21 +7006,15 @@ D.99B S3
 
 COPINO - Container pre-notification message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9439,21 +7023,15 @@ D.95A S3
 
 COPRAR - Container discharge/loading order message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9462,21 +7040,15 @@ D.95A S3
 
 COREOR - Container release order message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9485,21 +7057,15 @@ D.95A S3
 
 COSTCO - Container stuffing/stripping confirmation message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9508,21 +7074,15 @@ D.95A S3
 
 COSTOR - Container stuffing/stripping order message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9531,21 +7091,15 @@ D.95A S3
 
 CREADV - Credit advice message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9554,21 +7108,15 @@ CREADV - Credit advice message
 
 CREEXT - Extended credit advice message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9577,21 +7125,15 @@ CREEXT - Extended credit advice message
 
 CREMUL - Multiple credit advice message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9600,21 +7142,15 @@ D.95A S3
 
 CUSCAR - Customs cargo report message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9623,21 +7159,15 @@ CUSCAR - Customs cargo report message
 
 CUSDEC - Customs declaration message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9646,21 +7176,15 @@ CUSDEC - Customs declaration message
 
 CUSEXP - Customs express consignment declaration message
 
-
-
 </td>
 <td valign="top">
 
 D.94A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9669,21 +7193,15 @@ D.94A S3
 
 CUSPED - Periodic customs declaration message
 
-
-
 </td>
 <td valign="top">
 
 D.97B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9692,21 +7210,15 @@ D.97B S3
 
 CUSREP - Customs conveyance report message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9715,21 +7227,15 @@ CUSREP - Customs conveyance report message
 
 CUSRES - Customs response message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9738,21 +7244,15 @@ CUSRES - Customs response message
 
 DAPLOS - Data Plot Sheet
 
-
-
 </td>
 <td valign="top">
 
 D.05A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9761,21 +7261,15 @@ D.05A S3
 
 DEBADV - Debit advice message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9784,21 +7278,15 @@ DEBADV - Debit advice message
 
 DEBMUL - Multiple debit advice message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9807,21 +7295,15 @@ D.95A S3
 
 DEBREC - Debts recovery message
 
-
-
 </td>
 <td valign="top">
 
 D.99B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9830,21 +7312,15 @@ D.99B S3
 
 DELFOR - Delivery schedule message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -9853,21 +7329,15 @@ Not included in Edifact version *93.2 S3*.
 
 DELJIT - Delivery just in time message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9876,21 +7346,15 @@ DELJIT - Delivery just in time message
 
 DESADV - Despatch advice message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -9899,21 +7363,15 @@ Not included in Edifact version *93.2 S3*.
 
 DESTIM - Equipment damage and repair estimate message
 
-
-
 </td>
 <td valign="top">
 
 D.96B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9922,21 +7380,15 @@ D.96B S3
 
 DGRECA - Dangerous goods recapitulation message
 
-
-
 </td>
 <td valign="top">
 
 D.97A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9945,21 +7397,15 @@ D.97A S3
 
 DIRDEB - Direct debit message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -9968,21 +7414,15 @@ Not included in Edifact version *93.2 S3*.
 
 DIRDEF - Directory definition message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -9991,21 +7431,15 @@ D.95B S3
 
 DMRDEF - Data maintenance request definition message
 
-
-
 </td>
 <td valign="top">
 
 D.98B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10014,21 +7448,15 @@ D.98B S3
 
 DMSTAT - Data maintenance status report/query message
 
-
-
 </td>
 <td valign="top">
 
 D.98B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10037,21 +7465,15 @@ D.98B S3
 
 DOCADV - Documentary credit advice message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -10060,21 +7482,15 @@ Not included in Edifact version *93.2 S3*.
 
 DOCAMA - Advice of an amendment of a documentary credit message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10083,21 +7499,15 @@ D.95A S3
 
 DOCAMI - Documentary credit amendment information message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10106,21 +7516,15 @@ D.95A S3
 
 DOCAMR - Request for an amendment of a documentary credit message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10129,21 +7533,15 @@ D.95A S3
 
 DOCAPP - Documentary credit application message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -10152,21 +7550,15 @@ Not included in Edifact version *93.2 S3*.
 
 DOCARE - Response to an amendment of a documentary credit message
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10175,21 +7567,15 @@ DOCARE - Response to an amendment of a documentary credit message
 
 DOCINF - Documentary credit issuance information message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -10198,21 +7584,15 @@ Not included in Edifact version *93.2 S3*.
 
 ENTREC - Accounting entries message
 
-
-
 </td>
 <td valign="top">
 
 D.98A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10221,21 +7601,15 @@ D.98A S3
 
 FINCAN - Financial cancellation message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10244,21 +7618,15 @@ D.95A S3
 
 FINPAY - Multiple interbank funds transfer message
 
-
-
 </td>
 <td valign="top">
 
 D.98A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10267,21 +7635,15 @@ D.98A S3
 
 FINSTA - Financial statement of an account message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10290,21 +7652,15 @@ D.95A S3
 
 GENRAL - General purpose message
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10313,21 +7669,15 @@ D.96A S3
 
 GESMES - Generic statistical message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10336,21 +7686,15 @@ D.95A S3
 
 GOVCBR - Government Cross Border Regulatory message
 
-
-
 </td>
 <td valign="top">
 
 D.09A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10359,21 +7703,15 @@ D.09A S3
 
 HANMOV - Cargo/goods handling and movement message
 
-
-
 </td>
 <td valign="top">
 
 D.94A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10382,21 +7720,15 @@ D.94A S3
 
 ICASRP - Insurance claim assessment and reporting message
 
-
-
 </td>
 <td valign="top">
 
 D.01A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10405,21 +7737,15 @@ D.01A S3
 
 ICSOLI - Insurance claim solicitor's instruction message
 
-
-
 </td>
 <td valign="top">
 
 D.00B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10428,21 +7754,15 @@ D.00B S3
 
 IFCSUM - Forwarding and consolidation summary message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10451,21 +7771,15 @@ IFCSUM - Forwarding and consolidation summary message
 
 IFTCCA - Forwarding and transport shipment charge calculation message
 
-
-
 </td>
 <td valign="top">
 
 D.93A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10474,21 +7788,15 @@ D.93A S3
 
 IFTDGN - Dangerous goods notification message
 
-
-
 </td>
 <td valign="top">
 
 D.94A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10497,21 +7805,15 @@ D.94A S3
 
 IFTFCC - International transport freight costs and other charges message
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10520,21 +7822,15 @@ D.96A S3
 
 IFTIAG - Dangerous cargo list message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
 D.02B S3
-
-
 
 </td>
 </tr>
@@ -10543,21 +7839,15 @@ D.02B S3
 
 IFTICL - Cargo insurance claims message
 
-
-
 </td>
 <td valign="top">
 
 D.00B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10566,21 +7856,15 @@ D.00B S3
 
 IFTMAN - Arrival notice message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10589,21 +7873,15 @@ IFTMAN - Arrival notice message
 
 IFTMBC - Booking confirmation message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10612,21 +7890,15 @@ IFTMBC - Booking confirmation message
 
 IFTMBF - Firm booking message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10635,21 +7907,15 @@ IFTMBF - Firm booking message
 
 IFTMBP - Provisional booking message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10658,21 +7924,15 @@ IFTMBP - Provisional booking message
 
 IFTMCA - Consignment advice message
 
-
-
 </td>
 <td valign="top">
 
 D.99B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10681,21 +7941,15 @@ D.99B S3
 
 IFTMCS - Instruction contract status message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10704,21 +7958,15 @@ IFTMCS - Instruction contract status message
 
 IFTMFR - International forwarding and transport message framework
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
-
-
 
 </td>
 </tr>
@@ -10727,21 +7975,15 @@ IFTMFR - International forwarding and transport message framework
 
 IFTMIN - Instruction message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10750,21 +7992,15 @@ IFTMIN - Instruction message
 
 IFTRIN - Forwarding and transport rate information message
 
-
-
 </td>
 <td valign="top">
 
 D.93A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10773,21 +8009,15 @@ D.93A S3
 
 IFTSAI - Forwarding and transport schedule and availability information message
 
-
-
 </td>
 <td valign="top">
 
 D.93A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10796,21 +8026,15 @@ D.93A S3
 
 IFTSTA - International multimodal status report message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -10819,21 +8043,15 @@ Not included in Edifact version *93.2 S3*.
 
 IFTSTQ - International multimodal status request message
 
-
-
 </td>
 <td valign="top">
 
 D.94A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10842,21 +8060,15 @@ D.94A S3
 
 IMPDEF - EDI implementation guide definition message
 
-
-
 </td>
 <td valign="top">
 
 D.98B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10865,21 +8077,15 @@ D.98B S3
 
 INFCON - Infrastructure condition message
 
-
-
 </td>
 <td valign="top">
 
 D.00B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10888,21 +8094,15 @@ D.00B S3
 
 INFENT - Enterprise accounting information message
 
-
-
 </td>
 <td valign="top">
 
 D.97B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10911,21 +8111,15 @@ D.97B S3
 
 INSDES - Instruction to despatch message
 
-
-
 </td>
 <td valign="top">
 
 D.98A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10934,21 +8128,15 @@ D.98A S3
 
 INSPRE - Insurance premium message
 
-
-
 </td>
 <td valign="top">
 
 D.94A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10957,21 +8145,15 @@ D.94A S3
 
 INSREQ - Inspection request message
 
-
-
 </td>
 <td valign="top">
 
 D.99A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -10980,21 +8162,15 @@ D.99A S3
 
 INSRPT - Inspection report message
 
-
-
 </td>
 <td valign="top">
 
 D.99A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11003,21 +8179,15 @@ D.99A S3
 
 INVOIC - Invoice message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11026,21 +8196,15 @@ INVOIC - Invoice message
 
 INVRPT - Inventory report message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -11049,21 +8213,15 @@ Not included in Edifact version *93.2 S3*.
 
 IPPOAD - Insurance policy administration message
 
-
-
 </td>
 <td valign="top">
 
 D.00A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11072,21 +8230,15 @@ D.00A S3
 
 IPPOMO - Motor insurance policy message
 
-
-
 </td>
 <td valign="top">
 
 D.98B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11095,21 +8247,15 @@ D.98B S3
 
 ISENDS - Intermediary system enablement or disablement message
 
-
-
 </td>
 <td valign="top">
 
 D.00B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11118,21 +8264,15 @@ D.00B S3
 
 ITRRPT - In transit report detail message
 
-
-
 </td>
 <td valign="top">
 
 D.96B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11141,21 +8281,15 @@ D.96B S3
 
 JAPRES - Job application result message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11164,21 +8298,15 @@ D.95B S3
 
 JINFDE - Job information demand message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11187,21 +8315,15 @@ D.95B S3
 
 JOBAPP - Job application proposal message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11210,21 +8332,15 @@ D.95B S3
 
 JOBCON - Job order confirmation message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11233,21 +8349,15 @@ D.95B S3
 
 JOBMOD - Job order modification message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11256,21 +8366,15 @@ D.95B S3
 
 JOBOFF - Job order message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11279,21 +8383,15 @@ D.95B S3
 
 JUPREQ - Justified payment request message
 
-
-
 </td>
 <td valign="top">
 
 D.99B S3
 
-
-
 </td>
 <td valign="top">
 
 D.02B S3
-
-
 
 </td>
 </tr>
@@ -11302,21 +8400,15 @@ D.02B S3
 
 LEDGER - Ledger message
 
-
-
 </td>
 <td valign="top">
 
 D.99B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11325,21 +8417,15 @@ D.99B S3
 
 LREACT - Life reinsurance activity message
 
-
-
 </td>
 <td valign="top">
 
 D.97B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11348,21 +8434,15 @@ D.97B S3
 
 LRECLM - Life reinsurance claims message
 
-
-
 </td>
 <td valign="top">
 
 D.98B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11371,21 +8451,15 @@ D.98B S3
 
 MEDPID - Person identification message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11394,21 +8468,15 @@ D.95B S3
 
 MEDPRE - Medical prescription message
 
-
-
 </td>
 <td valign="top">
 
 D.99B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11417,21 +8485,15 @@ D.99B S3
 
 MEDREQ - Medical service request message
 
-
-
 </td>
 <td valign="top">
 
 D.96B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11440,21 +8502,15 @@ D.96B S3
 
 MEDRPT - Medical service report message
 
-
-
 </td>
 <td valign="top">
 
 D.96B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11463,21 +8519,15 @@ D.96B S3
 
 MEDRUC - Medical resource usage and cost message
 
-
-
 </td>
 <td valign="top">
 
 D.97B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11486,21 +8536,15 @@ D.97B S3
 
 MEQPOS - Means of transport and equipment position message
 
-
-
 </td>
 <td valign="top">
 
 D.97A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11509,21 +8553,15 @@ D.97A S3
 
 MOVINS - Stowage instruction message
 
-
-
 </td>
 <td valign="top">
 
 D.94A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11532,21 +8570,15 @@ D.94A S3
 
 MSCONS - Metered services consumption report message
 
-
-
 </td>
 <td valign="top">
 
 D.97A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11555,21 +8587,15 @@ D.97A S3
 
 ORDCHG - Purchase order change request message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -11578,21 +8604,15 @@ Not included in Edifact version *93.2 S3*.
 
 ORDERS - Purchase order message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11601,21 +8621,15 @@ ORDERS - Purchase order message
 
 ORDRSP - Purchase order response message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -11624,21 +8638,15 @@ Not included in Edifact version *93.2 S3*.
 
 OSTENQ - Order status enquiry message
 
-
-
 </td>
 <td valign="top">
 
 D.97A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11647,21 +8655,15 @@ D.97A S3
 
 OSTRPT - Order status report message
 
-
-
 </td>
 <td valign="top">
 
 D.97A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11670,21 +8672,15 @@ D.97A S3
 
 PARTIN - Party information message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11693,21 +8689,15 @@ PARTIN - Party information message
 
 PAXLST - Passenger list message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -11716,21 +8706,15 @@ Not included in Edifact version *93.2 S3*.
 
 PAYDUC - Payroll deductions advice message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 D.02B S3
-
-
 
 </td>
 </tr>
@@ -11739,21 +8723,15 @@ D.02B S3
 
 PAYEXT - Extended payment order message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11762,21 +8740,15 @@ PAYEXT - Extended payment order message
 
 PAYMUL - Multiple payment order message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -11785,21 +8757,15 @@ Not included in Edifact version *93.2 S3*.
 
 PAYORD - Payment order message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11808,21 +8774,15 @@ PAYORD - Payment order message
 
 PRICAT - Price/sales catalogue message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -11831,21 +8791,15 @@ Not included in Edifact version *93.2 S3*.
 
 PRIHIS - Pricing history message
 
-
-
 </td>
 <td valign="top">
 
 D.97B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11854,21 +8808,15 @@ D.97B S3
 
 PROCST - Project cost reporting message
 
-
-
 </td>
 <td valign="top">
 
 D.99B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11877,21 +8825,15 @@ D.99B S3
 
 PRODAT - Product data message
 
-
-
 </td>
 <td valign="top">
 
 D.96B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11900,21 +8842,15 @@ D.96B S3
 
 PRODEX - Product exchange reconciliation message
 
-
-
 </td>
 <td valign="top">
 
 D.94A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11923,21 +8859,15 @@ D.94A S3
 
 PROINQ - Product inquiry message
 
-
-
 </td>
 <td valign="top">
 
 D.97A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11946,21 +8876,15 @@ D.97A S3
 
 PROSRV - Product service message
 
-
-
 </td>
 <td valign="top">
 
 D.00A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11969,21 +8893,15 @@ D.00A S3
 
 PROTAP - Project tasks planning message
 
-
-
 </td>
 <td valign="top">
 
 D.98B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -11992,21 +8910,15 @@ D.98B S3
 
 PRPAID - Insurance premium payment message
 
-
-
 </td>
 <td valign="top">
 
 D.94A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12015,21 +8927,15 @@ D.94A S3
 
 QALITY - Quality data message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12038,21 +8944,15 @@ QALITY - Quality data message
 
 QUOTES - Quote message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12061,21 +8961,15 @@ QUOTES - Quote message
 
 RDRMES - Raw data reporting message
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12084,21 +8978,15 @@ D.96A S3
 
 REBORD - Reinsurance bordereau message
 
-
-
 </td>
 <td valign="top">
 
 D.96B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12107,21 +8995,15 @@ D.96B S3
 
 RECADV - Receiving advice message
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12130,21 +9012,15 @@ D.96A S3
 
 RECALC - Reinsurance calculation message
 
-
-
 </td>
 <td valign="top">
 
 D.96B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12153,21 +9029,15 @@ D.96B S3
 
 RECECO - Credit risk cover message
 
-
-
 </td>
 <td valign="top">
 
 D.94B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12176,21 +9046,15 @@ D.94B S3
 
 RECLAM - Reinsurance claims message
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12199,21 +9063,15 @@ D.96A S3
 
 RECORD - Reinsurance core data message
 
-
-
 </td>
 <td valign="top">
 
 D.00A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12222,21 +9080,15 @@ D.00A S3
 
 REGENT - Registration of enterprise message
 
-
-
 </td>
 <td valign="top">
 
 D.99B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12245,21 +9097,15 @@ D.99B S3
 
 RELIST - Reinsured objects list message
 
-
-
 </td>
 <td valign="top">
 
 D.00A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12268,21 +9114,15 @@ D.00A S3
 
 REMADV - Remittance advice message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12291,21 +9131,15 @@ REMADV - Remittance advice message
 
 REPREM - Reinsurance premium message
 
-
-
 </td>
 <td valign="top">
 
 D.96B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12314,21 +9148,15 @@ D.96B S3
 
 REQDOC - Request for document message
 
-
-
 </td>
 <td valign="top">
 
 D.94B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12337,21 +9165,15 @@ D.94B S3
 
 REQOTE - Request for quote message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12360,21 +9182,15 @@ REQOTE - Request for quote message
 
 RESETT - Reinsurance settlement message
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12383,21 +9199,15 @@ D.96A S3
 
 RESMSG - Reservation message
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12406,21 +9216,15 @@ D.96A S3
 
 RETACC - Reinsurance technical account message
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12429,21 +9233,15 @@ D.96A S3
 
 RETANN - Announcement for returns message
 
-
-
 </td>
 <td valign="top">
 
 D.97B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12452,21 +9250,15 @@ D.97B S3
 
 RETINS - Instruction for returns message
 
-
-
 </td>
 <td valign="top">
 
 D.97B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12475,21 +9267,15 @@ D.97B S3
 
 RPCALL - Repair call message
 
-
-
 </td>
 <td valign="top">
 
 D.00A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12498,21 +9284,15 @@ D.00A S3
 
 SAFHAZ - Safety and hazard data message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12521,21 +9301,15 @@ D.95B S3
 
 SANCRT - International movement of goods governmental regulatory message
 
-
-
 </td>
 <td valign="top">
 
 D.93A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12544,21 +9318,15 @@ D.93A S3
 
 SLSFCT - Sales forecast message
 
-
-
 </td>
 <td valign="top">
 
 D.94B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12567,21 +9335,15 @@ D.94B S3
 
 SLSRPT - Sales data report message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -12590,21 +9352,15 @@ Not included in Edifact version *93.2 S3*.
 
 SOCADE - Social administration message
 
-
-
 </td>
 <td valign="top">
 
 D.98A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12613,21 +9369,15 @@ D.98A S3
 
 SSIMOD - Modification of identity details message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12636,21 +9386,15 @@ D.95B S3
 
 SSRECH - Worker's insurance history message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12659,21 +9403,15 @@ D.95B S3
 
 SSREGW - Notification of registration of a worker message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12682,21 +9420,15 @@ D.95B S3
 
 STATAC - Statement of account message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12705,21 +9437,15 @@ STATAC - Statement of account message
 
 STLRPT - Settlement transaction reporting message
 
-
-
 </td>
 <td valign="top">
 
 D.98B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12728,21 +9454,15 @@ D.98B S3
 
 SUPCOT - Superannuation contributions advice message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -12751,21 +9471,15 @@ Not included in Edifact version *93.2 S3*.
 
 SUPMAN - Superannuation maintenance message
 
-
-
 </td>
 <td valign="top">
 
 92.1 S3
 
-
-
 </td>
 <td valign="top">
 
 Not included in Edifact version *93.2 S3*.
-
-
 
 </td>
 </tr>
@@ -12774,21 +9488,15 @@ Not included in Edifact version *93.2 S3*.
 
 SUPRES - Supplier response message
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12797,21 +9505,15 @@ D.96A S3
 
 TANSTA - Tank status report message
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12820,21 +9522,15 @@ D.96A S3
 
 TAXCON - Tax control message
 
-
-
 </td>
 <td valign="top">
 
 D.99B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12843,21 +9539,15 @@ D.99B S3
 
 TPFREP - Terminal performance message
 
-
-
 </td>
 <td valign="top">
 
 D.00A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12866,21 +9556,15 @@ D.00A S3
 
 UTILMD - Utilities master data message
 
-
-
 </td>
 <td valign="top">
 
 D.01A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12889,21 +9573,15 @@ D.01A S3
 
 UTILTS - Utilities time series message
 
-
-
 </td>
 <td valign="top">
 
 D.01A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12912,21 +9590,15 @@ D.01A S3
 
 VATDEC - Value added tax message
 
-
-
 </td>
 <td valign="top">
 
 D.96B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12935,21 +9607,15 @@ D.96B S3
 
 VERMAS - Verified gross mass message
 
-
-
 </td>
 <td valign="top">
 
 D.16A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12958,21 +9624,15 @@ D.16A S3
 
 VESDEP - Vessel departure message
 
-
-
 </td>
 <td valign="top">
 
 D.95A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -12981,21 +9641,15 @@ D.95A S3
 
 WASDIS - Waste disposal information message
 
-
-
 </td>
 <td valign="top">
 
 D.97A S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -13004,21 +9658,15 @@ D.97A S3
 
 WKGRDC - Work grant decision message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -13027,21 +9675,15 @@ D.95B S3
 
 WKGRRE - Work grant request message
 
-
-
 </td>
 <td valign="top">
 
 D.95B S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -13074,16 +9716,12 @@ Due to this versioning strategy and the fact that no updates to the Odette messa
 
 Message Type
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 AVIEXP:4 - Despatch Advice
-
-
 
 </td>
 </tr>
@@ -13092,16 +9730,12 @@ AVIEXP:4 - Despatch Advice
 
 AVIGRU:2 - Grouping Centre Despatch Advice
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AVIREX:2 - Receival Discrepancy Advice
-
-
 
 </td>
 </tr>
@@ -13110,16 +9744,12 @@ AVIREX:2 - Receival Discrepancy Advice
 
 BASDAT:2 - Basic Data
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 CONTRL:1 - Acknowledgement or Rejection Advice
-
-
 
 </td>
 </tr>
@@ -13128,16 +9758,12 @@ CONTRL:1 - Acknowledgement or Rejection Advice
 
 CONTRL:2 - Acknowledgement or Rejection Advice
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 CREDIT:2 - Credit Note
-
-
 
 </td>
 </tr>
@@ -13146,16 +9772,12 @@ CREDIT:2 - Credit Note
 
 DEBNOT:2 - Debit Note
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 DELINS:3 - Delivery Instruction
-
-
 
 </td>
 </tr>
@@ -13164,16 +9786,12 @@ DELINS:3 - Delivery Instruction
 
 ENGDAT:1 - Engineering Data Message
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ENQIRY:2 - Enquiry
-
-
 
 </td>
 </tr>
@@ -13182,16 +9800,12 @@ ENQIRY:2 - Enquiry
 
 FORDIS:2 - Forecast of Despatch
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 INVOIC:3 - Invoice
-
-
 
 </td>
 </tr>
@@ -13200,16 +9814,12 @@ INVOIC:3 - Invoice
 
 KANBAN:2 - KANBAN
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OFFERR:2 - Offer
-
-
 
 </td>
 </tr>
@@ -13218,16 +9828,12 @@ OFFERR:2 - Offer
 
 ORDELI:1 - Delivery Order
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ORDERR:1 - Order
-
-
 
 </td>
 </tr>
@@ -13236,16 +9842,12 @@ ORDERR:1 - Order
 
 ORDERR:2 - Order
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OSTENQ:1 - Order Status Enquiry
-
-
 
 </td>
 </tr>
@@ -13254,16 +9856,12 @@ OSTENQ:1 - Order Status Enquiry
 
 PRILST:1 - Price List
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 REMADV:2 - Remittance Advice
-
-
 
 </td>
 </tr>
@@ -13272,16 +9870,12 @@ REMADV:2 - Remittance Advice
 
 REPDEL:2 - Reply to Delivery Instruction
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 REPINV:2 - Reply to Invoice
-
-
 
 </td>
 </tr>
@@ -13290,16 +9884,12 @@ REPINV:2 - Reply to Invoice
 
 REPORD:2 - Reply to Order
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 STATAC:2 - Statement of Account
-
-
 
 </td>
 </tr>
@@ -13308,8 +9898,6 @@ STATAC:2 - Statement of Account
 
 STOACT:1 - Stock Activities
 
-
-
 </td>
 </tr>
 <tr>
@@ -13317,16 +9905,12 @@ STOACT:1 - Stock Activities
 
 SYNCRO:2 - Sequenced Delivery
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 SYNPAC:2 - Sequenced Packaged Delivery
-
-
 
 </td>
 </tr>
@@ -13351,16 +9935,12 @@ cXML is a streamlined protocol intended for consistent communication of business
 
 Version
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13369,16 +9949,12 @@ Version
 
 1.2.038
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 1.2.039
-
-
 
 </td>
 </tr>
@@ -13387,16 +9963,12 @@ Version
 
 1.2.040
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 1.2.041
-
-
 
 </td>
 </tr>
@@ -13405,16 +9977,12 @@ Version
 
 1.2.042
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -13423,16 +9991,12 @@ Version
 
 1.2.044
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 1.2.045
-
-
 
 </td>
 </tr>
@@ -13441,16 +10005,12 @@ Version
 
 1.2.046
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 1.2.047
-
-
 
 </td>
 </tr>
@@ -13459,16 +10019,12 @@ Version
 
 1.2.048
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 1.2.049
-
-
 
 </td>
 </tr>
@@ -13477,16 +10033,12 @@ Version
 
 1.2.050
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 1.2.051
-
-
 
 </td>
 </tr>
@@ -13495,16 +10047,12 @@ Version
 
 1.2.052
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 1.2.053
-
-
 
 </td>
 </tr>
@@ -13519,14 +10067,10 @@ Version
 
 Message Type
 
-
-
 </th>
 <th valign="top">
 
 Available from Version
-
-
 
 </th>
 </tr>
@@ -13535,14 +10079,10 @@ Available from Version
 
 ApprovalRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13551,14 +10091,10 @@ ApprovalRequest
 
 AuthRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13567,14 +10103,10 @@ AuthRequest
 
 AuthResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -13583,14 +10115,10 @@ AuthResponse
 
 BlanketOrderStatusUpdateRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13599,14 +10127,10 @@ BlanketOrderStatusUpdateRequest
 
 CatalogChangeRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13615,14 +10139,10 @@ CatalogChangeRequest
 
 CatalogUploadRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13631,14 +10151,10 @@ CatalogUploadRequest
 
 ChargeFileRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.045
-
-
 
 </td>
 </tr>
@@ -13647,14 +10163,10 @@ ChargeFileRequest
 
 CollaborationRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13663,14 +10175,10 @@ CollaborationRequest
 
 ComponentConsumptionRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13679,14 +10187,10 @@ ComponentConsumptionRequest
 
 ConfirmationRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13695,14 +10199,10 @@ ConfirmationRequest
 
 ContentRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13711,14 +10211,10 @@ ContentRequest
 
 ContentResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -13727,14 +10223,10 @@ ContentResponse
 
 ContractRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13743,14 +10235,10 @@ ContractRequest
 
 ContractStatusUpdateRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13759,14 +10247,10 @@ ContractStatusUpdateRequest
 
 CopyRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13775,14 +10259,10 @@ CopyRequest
 
 DataAvailableMessage
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13791,14 +10271,10 @@ DataAvailableMessage
 
 DataRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13807,14 +10283,10 @@ DataRequest
 
 DataResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -13823,14 +10295,10 @@ DataResponse
 
 DataSyncChangeListRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13839,14 +10307,10 @@ DataSyncChangeListRequest
 
 DataSyncChangeListResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -13855,14 +10319,10 @@ DataSyncChangeListResponse
 
 DataSyncDataRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13871,14 +10331,10 @@ DataSyncDataRequest
 
 DataSyncDataResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -13887,14 +10343,10 @@ DataSyncDataResponse
 
 GetPendingRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13903,14 +10355,10 @@ GetPendingRequest
 
 GetPendingResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -13919,14 +10367,10 @@ GetPendingResponse
 
 InvoiceDetailRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13935,14 +10379,10 @@ InvoiceDetailRequest
 
 InvoiceRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13951,14 +10391,10 @@ InvoiceRequest
 
 L3ChargeFileRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13967,14 +10403,10 @@ L3ChargeFileRequest
 
 MapSyncRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13983,14 +10415,10 @@ MapSyncRequest
 
 MasterAgreementRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -13999,14 +10427,10 @@ MasterAgreementRequest
 
 NotificationRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14015,14 +10439,10 @@ NotificationRequest
 
 OrderRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14031,14 +10451,10 @@ OrderRequest
 
 OrderStatusDataRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14047,14 +10463,10 @@ OrderStatusDataRequest
 
 OrderStatusDoneMessage
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14063,14 +10475,10 @@ OrderStatusDoneMessage
 
 OrderStatusRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14079,14 +10487,10 @@ OrderStatusRequest
 
 OrderStatusSetupRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14095,14 +10499,10 @@ OrderStatusSetupRequest
 
 OrderStatusSetupResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14111,14 +10511,10 @@ OrderStatusSetupResponse
 
 OrganizationChangeMessage
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14127,14 +10523,10 @@ OrganizationChangeMessage
 
 OrganizationDataRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14143,14 +10535,10 @@ OrganizationDataRequest
 
 OrganizationDataResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14159,14 +10547,10 @@ OrganizationDataResponse
 
 PaymentBatchRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14175,14 +10559,10 @@ PaymentBatchRequest
 
 PaymentProposalRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14191,14 +10571,10 @@ PaymentProposalRequest
 
 PaymentReceiptConfirmationRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.045
-
-
 
 </td>
 </tr>
@@ -14207,14 +10583,10 @@ PaymentReceiptConfirmationRequest
 
 PaymentRemittanceRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14223,14 +10595,10 @@ PaymentRemittanceRequest
 
 PaymentRemittanceStatusUpdateRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14239,14 +10607,10 @@ PaymentRemittanceStatusUpdateRequest
 
 PriceAvailabilityRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14255,14 +10619,10 @@ PriceAvailabilityRequest
 
 PriceAvailabilityResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14271,14 +10631,10 @@ PriceAvailabilityResponse
 
 PrivateOrganizationRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14287,14 +10643,10 @@ PrivateOrganizationRequest
 
 PrivateOrganizationResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14303,14 +10655,10 @@ PrivateOrganizationResponse
 
 ProductActivityMessage
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14319,14 +10667,10 @@ ProductActivityMessage
 
 ProductReplenishmentMessage
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14335,14 +10679,10 @@ ProductReplenishmentMessage
 
 ProfileRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14351,14 +10691,10 @@ ProfileRequest
 
 ProfileResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14367,14 +10703,10 @@ ProfileResponse
 
 ProofOfServiceRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.042
-
-
 
 </td>
 </tr>
@@ -14383,14 +10715,10 @@ ProofOfServiceRequest
 
 ProviderDataRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14399,14 +10727,10 @@ ProviderDataRequest
 
 ProviderDataResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14415,14 +10739,10 @@ ProviderDataResponse
 
 ProviderDoneMessage
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14431,14 +10751,10 @@ ProviderDoneMessage
 
 ProviderSetupRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14447,14 +10763,10 @@ ProviderSetupRequest
 
 ProviderSetupResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14463,14 +10775,10 @@ ProviderSetupResponse
 
 PunchOutOrderMessage
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14479,14 +10787,10 @@ PunchOutOrderMessage
 
 PunchOutSetupRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14495,14 +10799,10 @@ PunchOutSetupRequest
 
 PunchOutSetupResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14511,14 +10811,10 @@ PunchOutSetupResponse
 
 PurchaseRequisitionRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14527,14 +10823,10 @@ PurchaseRequisitionRequest
 
 QualityInspectionDecisionRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14543,14 +10835,10 @@ QualityInspectionDecisionRequest
 
 QualityInspectionRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14559,14 +10847,10 @@ QualityInspectionRequest
 
 QualityInspectionResultRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14575,14 +10859,10 @@ QualityInspectionResultRequest
 
 QualityNotificationRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14591,14 +10871,10 @@ QualityNotificationRequest
 
 QuoteDataMessage
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14607,14 +10883,10 @@ QuoteDataMessage
 
 QuoteMessage
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14623,14 +10895,10 @@ QuoteMessage
 
 QuoteRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14639,14 +10907,10 @@ QuoteRequest
 
 ReceiptRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14655,14 +10919,10 @@ ReceiptRequest
 
 RelationshipRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14671,14 +10931,10 @@ RelationshipRequest
 
 RelationshipResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14687,14 +10943,10 @@ RelationshipResponse
 
 RFxEventRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14703,14 +10955,10 @@ RFxEventRequest
 
 RFxPublishRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14719,14 +10967,10 @@ RFxPublishRequest
 
 S4DataPushRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14735,14 +10979,10 @@ S4DataPushRequest
 
 S4DataPushResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14751,14 +10991,10 @@ S4DataPushResponse
 
 SalesOrderRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14767,14 +11003,10 @@ SalesOrderRequest
 
 SearchRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14783,14 +11015,10 @@ SearchRequest
 
 SearchResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14799,14 +11027,10 @@ SearchResponse
 
 ServiceEntryRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14815,14 +11039,10 @@ ServiceEntryRequest
 
 SessionStatusRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14831,14 +11051,10 @@ SessionStatusRequest
 
 SessionStatusResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14847,14 +11063,10 @@ SessionStatusResponse
 
 ShipNoticeRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14863,14 +11075,10 @@ ShipNoticeRequest
 
 SourcingUpdateRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14879,14 +11087,10 @@ SourcingUpdateRequest
 
 StatusUpdateRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14895,14 +11099,10 @@ StatusUpdateRequest
 
 SubscriptionChangeMessage
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14911,14 +11111,10 @@ SubscriptionChangeMessage
 
 SubscriptionContentRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14927,14 +11123,10 @@ SubscriptionContentRequest
 
 SubscriptionContentResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14943,14 +11135,10 @@ SubscriptionContentResponse
 
 SubscriptionListRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14959,14 +11147,10 @@ SubscriptionListRequest
 
 SubscriptionListResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -14975,14 +11159,10 @@ SubscriptionListResponse
 
 SubscriptionStatusUpdateRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -14991,14 +11171,10 @@ SubscriptionStatusUpdateRequest
 
 SupplierChangeMessage
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -15007,14 +11183,10 @@ SupplierChangeMessage
 
 SupplierDataRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -15023,14 +11195,10 @@ SupplierDataRequest
 
 SupplierDataResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -15039,14 +11207,10 @@ SupplierDataResponse
 
 SupplierListRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -15055,14 +11219,10 @@ SupplierListRequest
 
 SupplierListResponse
 
-
-
 </td>
 <td valign="top">
 
 1.2.043
-
-
 
 </td>
 </tr>
@@ -15071,14 +11231,10 @@ SupplierListResponse
 
 TimeCardInfoRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -15087,14 +11243,10 @@ TimeCardInfoRequest
 
 TimeCardRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -15103,14 +11255,10 @@ TimeCardRequest
 
 TradeRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -15119,14 +11267,10 @@ TradeRequest
 
 TransportConfirmation
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -15135,14 +11279,10 @@ TransportConfirmation
 
 TransportRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -15151,14 +11291,10 @@ TransportRequest
 
 UpdateMigratedSupplierRequest
 
-
-
 </td>
 <td valign="top">
 
 1.2.037
-
-
 
 </td>
 </tr>
@@ -15181,14 +11317,10 @@ GS1 EANCOM® is a GS1 subset of the UN/EDIFACT standard \(United Nations Electro
 
 Version
 
-
-
 </th>
 <th valign="top">
 
 Based on Edifact Version
-
-
 
 </th>
 </tr>
@@ -15197,14 +11329,10 @@ Based on Edifact Version
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 D.93A S3
-
-
 
 </td>
 </tr>
@@ -15213,14 +11341,10 @@ D.93A S3
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
-
-
 
 </td>
 </tr>
@@ -15229,14 +11353,10 @@ D.96A S3
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
-
-
 
 </td>
 </tr>
@@ -15245,14 +11365,10 @@ D.96A S3
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
-
-
 
 </td>
 </tr>
@@ -15261,14 +11377,10 @@ D.96A S3
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
 D.01B S3
-
-
 
 </td>
 </tr>
@@ -15277,14 +11389,10 @@ D.01B S3
 
 2002 S3 Edition 2008
 
-
-
 </td>
 <td valign="top">
 
 D.01B S3
-
-
 
 </td>
 </tr>
@@ -15293,14 +11401,10 @@ D.01B S3
 
 2002 S3 Edition 2010
 
-
-
 </td>
 <td valign="top">
 
 D.01B S3
-
-
 
 </td>
 </tr>
@@ -15309,14 +11413,10 @@ D.01B S3
 
 2002 S3 Edition 2012
 
-
-
 </td>
 <td valign="top">
 
 D.01B S3
-
-
 
 </td>
 </tr>
@@ -15325,14 +11425,10 @@ D.01B S3
 
 2002 S3 Edition 2014
 
-
-
 </td>
 <td valign="top">
 
 D.01B S3
-
-
 
 </td>
 </tr>
@@ -15341,14 +11437,10 @@ D.01B S3
 
 2002 S3 Edition 2016
 
-
-
 </td>
 <td valign="top">
 
 D.01B S3
-
-
 
 </td>
 </tr>
@@ -15363,21 +11455,15 @@ D.01B S3
 
 Message
 
-
-
 </th>
 <th valign="top">
 
 Available from Version
 
-
-
 </th>
 <th valign="top">
 
 Last Version \(if discontinued\)
-
-
 
 </th>
 </tr>
@@ -15386,21 +11472,15 @@ Last Version \(if discontinued\)
 
 APERAK - Application error and acknowledgement message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15409,21 +11489,15 @@ APERAK - Application error and acknowledgement message
 
 BANSTA - Banking status message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15432,21 +11506,15 @@ BANSTA - Banking status message
 
 CNTCND - Contractual conditions message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15455,21 +11523,15 @@ CNTCND - Contractual conditions message
 
 COACSU - Commercial account summary message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15478,21 +11540,15 @@ COACSU - Commercial account summary message
 
 COMDIS - Commercial dispute message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15501,21 +11557,15 @@ COMDIS - Commercial dispute message
 
 CONDRA - Drawing administration message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15524,21 +11574,15 @@ CONDRA - Drawing administration message
 
 CONTRL - Syntax and service report message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15547,21 +11591,15 @@ CONTRL - Syntax and service report message
 
 CREMUL - Multiple credit advice message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15570,21 +11608,15 @@ CREMUL - Multiple credit advice message
 
 DEBMUL - Multiple debit advice message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15593,21 +11625,15 @@ DEBMUL - Multiple debit advice message
 
 DELFOR - Delivery schedule message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15616,21 +11642,15 @@ DELFOR - Delivery schedule message
 
 DESADV - Despatch advice message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15639,21 +11659,15 @@ DESADV - Despatch advice message
 
 DIRDEB - Direct debit message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15662,21 +11676,15 @@ DIRDEB - Direct debit message
 
 FINCAN - Financial cancellation message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15685,21 +11693,15 @@ FINCAN - Financial cancellation message
 
 FINSTA - Financial statement of an account message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15708,21 +11710,15 @@ FINSTA - Financial statement of an account message
 
 GENRAL - General purpose message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15731,21 +11727,15 @@ GENRAL - General purpose message
 
 HANMOV - Cargo/goods handling and movement message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15754,21 +11744,15 @@ HANMOV - Cargo/goods handling and movement message
 
 IFCSUM - Forwarding and consolidation summary message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15777,21 +11761,15 @@ IFCSUM - Forwarding and consolidation summary message
 
 IFTMAN - Arrival notice message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15800,21 +11778,15 @@ IFTMAN - Arrival notice message
 
 IFTMBC - Booking confirmation message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15823,21 +11795,15 @@ IFTMBC - Booking confirmation message
 
 IFTMBF - Firm booking message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15846,21 +11812,15 @@ IFTMBF - Firm booking message
 
 IFTMIN - Instruction message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15869,21 +11829,15 @@ IFTMIN - Instruction message
 
 IFTSTA - International multimodal status report message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15892,21 +11846,15 @@ IFTSTA - International multimodal status report message
 
 INSDES - Instruction to despatch message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15915,21 +11863,15 @@ INSDES - Instruction to despatch message
 
 INVOIC - Invoice message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15938,21 +11880,15 @@ INVOIC - Invoice message
 
 INVRPT - Inventory report message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15961,21 +11897,15 @@ INVRPT - Inventory report message
 
 MSCONS - Metered services consumption report message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -15984,21 +11914,15 @@ MSCONS - Metered services consumption report message
 
 ORDCHG - Purchase order change request message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16007,21 +11931,15 @@ ORDCHG - Purchase order change request message
 
 ORDERS - Purchase order message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16030,21 +11948,15 @@ ORDERS - Purchase order message
 
 ORDRSP - Purchase order response message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16053,21 +11965,15 @@ ORDRSP - Purchase order response message
 
 OSTENQ - Order status enquiry message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16076,21 +11982,15 @@ OSTENQ - Order status enquiry message
 
 OSTRPT - Order status report message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16099,21 +11999,15 @@ OSTRPT - Order status report message
 
 PARTIN - Party information message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16122,21 +12016,15 @@ PARTIN - Party information message
 
 PAYDUC - Payroll deductions advice message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -16145,21 +12033,15 @@ PAYDUC - Payroll deductions advice message
 
 PAYMUL - Multiple payment order message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16168,21 +12050,15 @@ PAYMUL - Multiple payment order message
 
 PRICAT - Price/sales catalogue message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16191,21 +12067,15 @@ PRICAT - Price/sales catalogue message
 
 PRODAT - Product data message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16214,21 +12084,15 @@ PRODAT - Product data message
 
 PROINQ - Product inquiry message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16237,21 +12101,15 @@ PROINQ - Product inquiry message
 
 QALITY - Quality data message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16260,21 +12118,15 @@ QALITY - Quality data message
 
 QUOTES - Quote message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16283,21 +12135,15 @@ QUOTES - Quote message
 
 RECADV - Receiving advice message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16306,21 +12152,15 @@ RECADV - Receiving advice message
 
 REMADV - Remittance advice message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16329,21 +12169,15 @@ REMADV - Remittance advice message
 
 REQOTE - Request for quote message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16352,21 +12186,15 @@ REQOTE - Request for quote message
 
 RETANN - Announcement for returns message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16375,21 +12203,15 @@ RETANN - Announcement for returns message
 
 RETINS - Instruction for returns message
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16398,21 +12220,15 @@ RETINS - Instruction for returns message
 
 SLSFCT - Sales forecast message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16421,21 +12237,15 @@ SLSFCT - Sales forecast message
 
 SLSRPT - Sales data report message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16444,21 +12254,15 @@ SLSRPT - Sales data report message
 
 STATAC - Statement of account message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -16467,21 +12271,15 @@ STATAC - Statement of account message
 
 TAXCON - Tax control message
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16498,29 +12296,21 @@ The following table shows the EANCOM version codes that are supported for each m
 
 Message
 
-
-
 </th>
 <th valign="top">
 
 EANCOM Version Code
-
-
 
 </th>
 <th valign="top">
 
 Available from Version
 
-
-
 </th>
 <th valign="top">
 
 Last Version \(if discontinued\)
 
-
-
 </th>
 </tr>
 <tr>
@@ -16528,28 +12318,20 @@ Last Version \(if discontinued\)
 
 APERAK
 
-
-
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -16558,28 +12340,20 @@ EAN001
 
 APERAK
 
-
-
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -16588,28 +12362,20 @@ EAN002
 
 APERAK
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16617,59 +12383,43 @@ EAN003
 <td valign="top">
 
 BANSTA
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 BANSTA
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -16678,28 +12428,20 @@ EAN002
 
 BANSTA
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16707,29 +12449,21 @@ EAN003
 <td valign="top">
 
 CNTCND
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -16737,29 +12471,21 @@ EAN001
 <td valign="top">
 
 CNTCND
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -16768,28 +12494,20 @@ EAN002
 
 CNTCND
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16797,59 +12515,43 @@ EAN003
 <td valign="top">
 
 COACSU
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 COACSU
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -16857,29 +12559,21 @@ EAN003
 <td valign="top">
 
 COACSU
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -16888,28 +12582,20 @@ EAN004
 
 COMDIS
 
-
-
 </td>
 <td valign="top">
 
 EAN001
-
-
 
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -16917,29 +12603,21 @@ EAN001
 <td valign="top">
 
 COMDIS
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -16948,58 +12626,42 @@ EAN002
 
 COMDIS
 
-
-
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 CONDRA
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -17007,29 +12669,21 @@ EAN001
 <td valign="top">
 
 CONDRA
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -17037,29 +12691,21 @@ EAN002
 <td valign="top">
 
 CONDRA
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 </tr>
@@ -17068,28 +12714,20 @@ EAN003
 
 CONDRA
 
-
-
 </td>
 <td valign="top">
 
 EAN004
-
-
 
 </td>
 <td valign="top">
 
 2002 S3 Edition 2008
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -17097,29 +12735,21 @@ EAN004
 <td valign="top">
 
 CONTRL
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -17127,59 +12757,43 @@ EAN001
 <td valign="top">
 
 CONTRL
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 CONTRL
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -17187,29 +12801,21 @@ EAN003
 <td valign="top">
 
 CONTRL
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -17217,59 +12823,43 @@ EAN004
 <td valign="top">
 
 CREMUL
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 CREMUL
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -17278,28 +12868,20 @@ EAN002
 
 CREMUL
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -17307,59 +12889,43 @@ EAN003
 <td valign="top">
 
 DEBMUL
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 DEBMUL
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -17368,28 +12934,20 @@ EAN002
 
 DEBMUL
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -17398,28 +12956,20 @@ EAN003
 
 DELFOR
 
-
-
 </td>
 <td valign="top">
 
 EAN001
-
-
 
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -17427,59 +12977,43 @@ EAN001
 <td valign="top">
 
 DELFOR
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 DELFOR
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -17487,30 +13021,22 @@ EAN003
 <td valign="top">
 
 DELFOR
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 <td valign="top">
 
 2002 S3 Edition 2014
 
-
-
 </td>
 </tr>
 <tr>
@@ -17518,28 +13044,20 @@ EAN004
 
 DELFOR
 
-
-
 </td>
 <td valign="top">
 
 EAN005
-
-
 
 </td>
 <td valign="top">
 
 2002 S3 Edition 2016
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -17547,29 +13065,21 @@ EAN005
 <td valign="top">
 
 DESADV
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -17577,29 +13087,21 @@ EAN004
 <td valign="top">
 
 DESADV
-
-
 
 </td>
 <td valign="top">
 
 EAN005
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -17607,29 +13109,21 @@ EAN005
 <td valign="top">
 
 DESADV
-
-
 
 </td>
 <td valign="top">
 
 EAN006
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -17638,29 +13132,21 @@ EAN006
 
 DESADV
 
-
-
 </td>
 <td valign="top">
 
 EAN007
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 <td valign="top">
 
 2002 S3 Edition 2014
 
-
-
 </td>
 </tr>
 <tr>
@@ -17668,28 +13154,20 @@ EAN007
 
 DESADV
 
-
-
 </td>
 <td valign="top">
 
 EAN008
-
-
 
 </td>
 <td valign="top">
 
 2002 S3 Edition 2016
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -17697,29 +13175,21 @@ EAN008
 <td valign="top">
 
 DIRDEB
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -17727,29 +13197,21 @@ EAN001
 <td valign="top">
 
 DIRDEB
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -17758,28 +13220,20 @@ EAN002
 
 DIRDEB
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -17788,28 +13242,20 @@ EAN003
 
 FINCAN
 
-
-
 </td>
 <td valign="top">
 
 EAN001
-
-
 
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -17817,29 +13263,21 @@ EAN001
 <td valign="top">
 
 FINCAN
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -17848,28 +13286,20 @@ EAN002
 
 FINCAN
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -17877,59 +13307,43 @@ EAN003
 <td valign="top">
 
 FINSTA
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 FINSTA
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -17938,28 +13352,20 @@ EAN002
 
 FINSTA
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -17968,28 +13374,20 @@ EAN003
 
 GENRAL
 
-
-
 </td>
 <td valign="top">
 
 EAN002
-
-
 
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 </tr>
@@ -17997,29 +13395,21 @@ EAN002
 <td valign="top">
 
 GENRAL
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -18027,29 +13417,21 @@ EAN003
 <td valign="top">
 
 GENRAL
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -18057,29 +13439,21 @@ EAN004
 <td valign="top">
 
 GENRAL
-
-
 
 </td>
 <td valign="top">
 
 EAN005
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -18087,59 +13461,43 @@ EAN005
 <td valign="top">
 
 HANMOV
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 HANMOV
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -18148,28 +13506,20 @@ EAN003
 
 HANMOV
 
-
-
 </td>
 <td valign="top">
 
 EAN004
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -18177,59 +13527,43 @@ EAN004
 <td valign="top">
 
 IFCSUM
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 IFCSUM
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -18237,29 +13571,21 @@ EAN002
 <td valign="top">
 
 IFCSUM
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 </tr>
@@ -18268,28 +13594,20 @@ EAN003
 
 IFCSUM
 
-
-
 </td>
 <td valign="top">
 
 EAN004
-
-
 
 </td>
 <td valign="top">
 
 2002 S3 Edition 2008
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -18298,28 +13616,20 @@ EAN004
 
 IFTMAN
 
-
-
 </td>
 <td valign="top">
 
 EAN001
-
-
 
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -18328,28 +13638,20 @@ EAN001
 
 IFTMAN
 
-
-
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -18358,28 +13660,20 @@ EAN002
 
 IFTMAN
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -18387,59 +13681,43 @@ EAN003
 <td valign="top">
 
 IFTMBC
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 IFTMBC
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -18448,28 +13726,20 @@ EAN002
 
 IFTMBC
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -18477,59 +13747,43 @@ EAN003
 <td valign="top">
 
 IFTMBF
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 IFTMBF
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -18538,28 +13792,20 @@ EAN002
 
 IFTMBF
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -18568,58 +13814,42 @@ EAN003
 
 IFTMIN
 
-
-
 </td>
 <td valign="top">
 
 EAN001
-
-
 
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 IFTMIN
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 </tr>
@@ -18627,29 +13857,21 @@ EAN002
 <td valign="top">
 
 IFTMIN
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -18658,28 +13880,20 @@ EAN003
 
 IFTMIN
 
-
-
 </td>
 <td valign="top">
 
 EAN004
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -18687,59 +13901,43 @@ EAN004
 <td valign="top">
 
 IFTSTA
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 IFTSTA
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -18748,28 +13946,20 @@ EAN003
 
 IFTSTA
 
-
-
 </td>
 <td valign="top">
 
 EAN004
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -18777,59 +13967,43 @@ EAN004
 <td valign="top">
 
 INSDES
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 INSDES
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -18838,28 +14012,20 @@ EAN002
 
 INSDES
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -18867,29 +14033,21 @@ EAN003
 <td valign="top">
 
 INVOIC
-
-
 
 </td>
 <td valign="top">
 
 EAN007
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -18897,59 +14055,43 @@ EAN007
 <td valign="top">
 
 INVOIC
-
-
 
 </td>
 <td valign="top">
 
 EAN008
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 INVOIC
-
-
 
 </td>
 <td valign="top">
 
 EAN009
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -18957,29 +14099,21 @@ EAN009
 <td valign="top">
 
 INVOIC
-
-
 
 </td>
 <td valign="top">
 
 EAN010
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 </tr>
@@ -18987,29 +14121,21 @@ EAN010
 <td valign="top">
 
 INVOIC
-
-
 
 </td>
 <td valign="top">
 
 EAN011
 
-
-
 </td>
 <td valign="top">
 
 2002 S3 Edition 2008
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -19017,29 +14143,21 @@ EAN011
 <td valign="top">
 
 INVRPT
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -19047,59 +14165,43 @@ EAN003
 <td valign="top">
 
 INVRPT
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 INVRPT
-
-
 
 </td>
 <td valign="top">
 
 EAN005
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -19107,29 +14209,21 @@ EAN005
 <td valign="top">
 
 INVRPT
-
-
 
 </td>
 <td valign="top">
 
 EAN006
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 </tr>
@@ -19138,28 +14232,20 @@ EAN006
 
 INVRPT
 
-
-
 </td>
 <td valign="top">
 
 EAN007
-
-
 
 </td>
 <td valign="top">
 
 2002 S3 Edition 2008
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -19167,29 +14253,21 @@ EAN007
 <td valign="top">
 
 MSCONS
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -19197,29 +14275,21 @@ EAN002
 <td valign="top">
 
 MSCONS
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -19228,28 +14298,20 @@ EAN003
 
 MSCONS
 
-
-
 </td>
 <td valign="top">
 
 EAN004
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -19257,29 +14319,21 @@ EAN004
 <td valign="top">
 
 ORDCHG
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -19287,29 +14341,21 @@ EAN004
 <td valign="top">
 
 ORDCHG
-
-
 
 </td>
 <td valign="top">
 
 EAN005
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -19317,29 +14363,21 @@ EAN005
 <td valign="top">
 
 ORDCHG
-
-
 
 </td>
 <td valign="top">
 
 EAN006
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -19348,28 +14386,20 @@ EAN006
 
 ORDCHG
 
-
-
 </td>
 <td valign="top">
 
 EAN007
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -19377,29 +14407,21 @@ EAN007
 <td valign="top">
 
 ORDERS
-
-
 
 </td>
 <td valign="top">
 
 EAN007
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -19407,59 +14429,43 @@ EAN007
 <td valign="top">
 
 ORDERS
-
-
 
 </td>
 <td valign="top">
 
 EAN008
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ORDERS
-
-
 
 </td>
 <td valign="top">
 
 EAN009
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -19467,59 +14473,43 @@ EAN009
 <td valign="top">
 
 ORDERS
-
-
 
 </td>
 <td valign="top">
 
 EAN010
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ORDRSP
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -19527,29 +14517,21 @@ EAN004
 <td valign="top">
 
 ORDRSP
-
-
 
 </td>
 <td valign="top">
 
 EAN005
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -19557,29 +14539,21 @@ EAN005
 <td valign="top">
 
 ORDRSP
-
-
 
 </td>
 <td valign="top">
 
 EAN006
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -19587,29 +14561,21 @@ EAN006
 <td valign="top">
 
 ORDRSP
-
-
 
 </td>
 <td valign="top">
 
 EAN007
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 </tr>
@@ -19617,29 +14583,21 @@ EAN007
 <td valign="top">
 
 ORDRSP
-
-
 
 </td>
 <td valign="top">
 
 EAN008
 
-
-
 </td>
 <td valign="top">
 
 2002 S3 Edition 2008
 
-
-
 </td>
 <td valign="top">
 
 2002 S3 Edition 2008
-
-
 
 </td>
 </tr>
@@ -19648,28 +14606,20 @@ EAN008
 
 ORDRSP
 
-
-
 </td>
 <td valign="top">
 
 EAN009
-
-
 
 </td>
 <td valign="top">
 
 2002 S3 Edition 2010
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -19677,59 +14627,43 @@ EAN009
 <td valign="top">
 
 OSTENQ
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OSTENQ
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -19738,88 +14672,64 @@ EAN003
 
 OSTENQ
 
-
-
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OSTRPT
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OSTRPT
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -19827,29 +14737,21 @@ EAN003
 <td valign="top">
 
 OSTRPT
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 </tr>
@@ -19857,29 +14759,21 @@ EAN004
 <td valign="top">
 
 OSTRPT
-
-
 
 </td>
 <td valign="top">
 
 EAN005
-
-
 
 </td>
 <td valign="top">
 
 2002 S3 Edition 2008
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -19887,29 +14781,21 @@ EAN005
 <td valign="top">
 
 PARTIN
-
-
 
 </td>
 <td valign="top">
 
 EAN005
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -19917,59 +14803,43 @@ EAN005
 <td valign="top">
 
 PARTIN
-
-
 
 </td>
 <td valign="top">
 
 EAN006
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PARTIN
-
-
 
 </td>
 <td valign="top">
 
 EAN007
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -19977,29 +14847,21 @@ EAN007
 <td valign="top">
 
 PARTIN
-
-
 
 </td>
 <td valign="top">
 
 EAN008
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
 2002 S3 Edition 2010
-
-
 
 </td>
 </tr>
@@ -20008,28 +14870,20 @@ EAN008
 
 PARTIN
 
-
-
 </td>
 <td valign="top">
 
 EAN009
-
-
 
 </td>
 <td valign="top">
 
 2002 S3 Edition 2012
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -20038,28 +14892,20 @@ EAN009
 
 PAYDUC
 
-
-
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -20068,28 +14914,20 @@ EAN001
 
 PAYDUC
 
-
-
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -20097,29 +14935,21 @@ EAN002
 <td valign="top">
 
 PAYMUL
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -20127,29 +14957,21 @@ EAN001
 <td valign="top">
 
 PAYMUL
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -20158,58 +14980,42 @@ EAN002
 
 PAYMUL
 
-
-
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PRICAT
-
-
 
 </td>
 <td valign="top">
 
 EAN005
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -20217,59 +15023,43 @@ EAN005
 <td valign="top">
 
 PRICAT
-
-
 
 </td>
 <td valign="top">
 
 EAN006
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PRICAT
-
-
 
 </td>
 <td valign="top">
 
 EAN007
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -20277,29 +15067,21 @@ EAN007
 <td valign="top">
 
 PRICAT
-
-
 
 </td>
 <td valign="top">
 
 EAN008
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 </tr>
@@ -20307,29 +15089,21 @@ EAN008
 <td valign="top">
 
 PRICAT
-
-
 
 </td>
 <td valign="top">
 
 EAN009
 
-
-
 </td>
 <td valign="top">
 
 2002 S3 Edition 2008
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -20337,59 +15111,43 @@ EAN009
 <td valign="top">
 
 PRODAT
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PRODAT
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -20398,28 +15156,20 @@ EAN003
 
 PRODAT
 
-
-
 </td>
 <td valign="top">
 
 EAN004
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -20427,59 +15177,43 @@ EAN004
 <td valign="top">
 
 PROINQ
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PROINQ
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -20488,28 +15222,20 @@ EAN003
 
 PROINQ
 
-
-
 </td>
 <td valign="top">
 
 EAN004
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -20517,59 +15243,43 @@ EAN004
 <td valign="top">
 
 QALITY
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 QALITY
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -20578,28 +15288,20 @@ EAN002
 
 QALITY
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -20607,29 +15309,21 @@ EAN003
 <td valign="top">
 
 QUOTES
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -20637,59 +15331,43 @@ EAN001
 <td valign="top">
 
 QUOTES
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 QUOTES
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -20698,28 +15376,20 @@ EAN003
 
 QUOTES
 
-
-
 </td>
 <td valign="top">
 
 EAN004
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -20727,29 +15397,21 @@ EAN004
 <td valign="top">
 
 RECADV
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -20757,59 +15419,43 @@ EAN002
 <td valign="top">
 
 RECADV
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 RECADV
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -20817,29 +15463,21 @@ EAN004
 <td valign="top">
 
 RECADV
-
-
 
 </td>
 <td valign="top">
 
 EAN005
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 </tr>
@@ -20847,29 +15485,21 @@ EAN005
 <td valign="top">
 
 RECADV
-
-
 
 </td>
 <td valign="top">
 
 EAN006
 
-
-
 </td>
 <td valign="top">
 
 2002 S3 Edition 2008
 
-
-
 </td>
 <td valign="top">
 
 2002 S3 Edition 2008
-
-
 
 </td>
 </tr>
@@ -20877,29 +15507,21 @@ EAN006
 <td valign="top">
 
 RECADV
-
-
 
 </td>
 <td valign="top">
 
 EAN007
 
-
-
 </td>
 <td valign="top">
 
 2002 S3 Edition 2010
 
-
-
 </td>
 <td valign="top">
 
 2002 S3 Edition 2010
-
-
 
 </td>
 </tr>
@@ -20907,29 +15529,21 @@ EAN007
 <td valign="top">
 
 RECADV
-
-
 
 </td>
 <td valign="top">
 
 EAN008
 
-
-
 </td>
 <td valign="top">
 
 2002 S3 Edition 2012
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -20937,59 +15551,43 @@ EAN008
 <td valign="top">
 
 REMADV
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 REMADV
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -20997,29 +15595,21 @@ EAN003
 <td valign="top">
 
 REMADV
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -21027,59 +15617,43 @@ EAN004
 <td valign="top">
 
 REMADV
-
-
 
 </td>
 <td valign="top">
 
 EAN005
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 REQOTE
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -21087,59 +15661,43 @@ EAN001
 <td valign="top">
 
 REQOTE
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 REQOTE
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -21147,29 +15705,21 @@ EAN003
 <td valign="top">
 
 REQOTE
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -21177,59 +15727,43 @@ EAN004
 <td valign="top">
 
 RETANN
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 RETANN
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -21238,28 +15772,20 @@ EAN002
 
 RETANN
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -21267,59 +15793,43 @@ EAN003
 <td valign="top">
 
 RETINS
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 RETINS
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -21328,28 +15838,20 @@ EAN002
 
 RETINS
 
-
-
 </td>
 <td valign="top">
 
 EAN003
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -21358,28 +15860,20 @@ EAN003
 
 SLSFCT
 
-
-
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -21387,29 +15881,21 @@ EAN003
 <td valign="top">
 
 SLSFCT
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
-
-
 
 </td>
 </tr>
@@ -21417,29 +15903,21 @@ EAN004
 <td valign="top">
 
 SLSFCT
-
-
 
 </td>
 <td valign="top">
 
 EAN005
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -21447,59 +15925,43 @@ EAN005
 <td valign="top">
 
 SLSFCT
-
-
 
 </td>
 <td valign="top">
 
 EAN006
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 SLSRPT
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -21507,59 +15969,43 @@ EAN003
 <td valign="top">
 
 SLSRPT
-
-
 
 </td>
 <td valign="top">
 
 EAN004
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 SLSRPT
-
-
 
 </td>
 <td valign="top">
 
 EAN005
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -21567,29 +16013,21 @@ EAN005
 <td valign="top">
 
 SLSRPT
-
-
 
 </td>
 <td valign="top">
 
 EAN006
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
 2002 S3
-
-
 
 </td>
 </tr>
@@ -21597,29 +16035,21 @@ EAN006
 <td valign="top">
 
 SLSRPT
-
-
 
 </td>
 <td valign="top">
 
 EAN007
 
-
-
 </td>
 <td valign="top">
 
 2002 S3 Edition 2008
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -21628,28 +16058,20 @@ EAN007
 
 STATAC
 
-
-
 </td>
 <td valign="top">
 
 No Code assigned by EANCOM
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -21657,29 +16079,21 @@ No Code assigned by EANCOM
 <td valign="top">
 
 TAXCON
-
-
 
 </td>
 <td valign="top">
 
 EAN001
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
 
-
-
 </td>
 <td valign="top">
 
 1995 S3
-
-
 
 </td>
 </tr>
@@ -21687,59 +16101,43 @@ EAN001
 <td valign="top">
 
 TAXCON
-
-
 
 </td>
 <td valign="top">
 
 EAN002
 
-
-
 </td>
 <td valign="top">
 
 1997 S3
-
-
 
 </td>
 <td valign="top">
 
 1997 S3 Edition 1999
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TAXCON
-
-
 
 </td>
 <td valign="top">
 
 EAN003
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
 
-
-
 </td>
 <td valign="top">
 
 1997 S3 Edition 2001
-
-
 
 </td>
 </tr>
@@ -21748,28 +16146,20 @@ EAN003
 
 TAXCON
 
-
-
 </td>
 <td valign="top">
 
 EAN004
-
-
 
 </td>
 <td valign="top">
 
 2002 S3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -21808,15 +16198,11 @@ JAIF EDIFACT is a subset of the UN/EDIFACT standard from the JAIF organization \
 
 Version
 
-
-
 </th>
 <th valign="top">
 
 Based on Edifact Version
 
-
-
 </th>
 </tr>
 <tr>
@@ -21824,15 +16210,11 @@ Based on Edifact Version
 
 D.03A S3
 
-
-
 </td>
 <td valign="top">
 
 D.03A S3
 
-
-
 </td>
 </tr>
 <tr>
@@ -21840,14 +16222,10 @@ D.03A S3
 
 D.04A S3
 
-
-
 </td>
 <td valign="top">
 
 D.04A S3
-
-
 
 </td>
 </tr>
@@ -21856,15 +16234,11 @@ D.04A S3
 
 D.04B S3
 
-
-
 </td>
 <td valign="top">
 
 D.04B S3
 
-
-
 </td>
 </tr>
 <tr>
@@ -21872,14 +16246,10 @@ D.04B S3
 
 D.07A S3
 
-
-
 </td>
 <td valign="top">
 
 D.07A S3
-
-
 
 </td>
 </tr>
@@ -21888,15 +16258,11 @@ D.07A S3
 
 D.09B S3
 
-
-
 </td>
 <td valign="top">
 
 D.09B S3
 
-
-
 </td>
 </tr>
 <tr>
@@ -21904,14 +16270,10 @@ D.09B S3
 
 D.13A S3
 
-
-
 </td>
 <td valign="top">
 
 D.13A S3
-
-
 
 </td>
 </tr>
@@ -21920,14 +16282,10 @@ D.13A S3
 
 D.16A S3
 
-
-
 </td>
 <td valign="top">
 
 D.16A S3
-
-
 
 </td>
 </tr>
@@ -21970,15 +16328,11 @@ VDA EDIFACT is a subset of the UN/EDIFACT standard from the VDA organization \(V
 
 Version
 
-
-
 </th>
 <th valign="top">
 
 Based on Edifact Versio
 
-
-
 </th>
 </tr>
 <tr>
@@ -21986,15 +16340,11 @@ Based on Edifact Versio
 
 D.96A S3
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
 
-
-
 </td>
 </tr>
 <tr>
@@ -22002,14 +16352,10 @@ D.96A S3
 
 D.97B S3
 
-
-
 </td>
 <td valign="top">
 
 D.97B S3
-
-
 
 </td>
 </tr>
@@ -22018,15 +16364,11 @@ D.97B S3
 
 D.03A S3
 
-
-
 </td>
 <td valign="top">
 
 D.03A S3
 
-
-
 </td>
 </tr>
 <tr>
@@ -22034,14 +16376,10 @@ D.03A S3
 
 D.04A S3
 
-
-
 </td>
 <td valign="top">
 
 D.04A S3
-
-
 
 </td>
 </tr>
@@ -22050,15 +16388,11 @@ D.04A S3
 
 D.05B S3
 
-
-
 </td>
 <td valign="top">
 
 D.05B S3
 
-
-
 </td>
 </tr>
 <tr>
@@ -22066,14 +16400,10 @@ D.05B S3
 
 D.06A S3
 
-
-
 </td>
 <td valign="top">
 
 D.06A S3
-
-
 
 </td>
 </tr>
@@ -22082,15 +16412,11 @@ D.06A S3
 
 D.07A S3
 
-
-
 </td>
 <td valign="top">
 
 D.07A S3
 
-
-
 </td>
 </tr>
 <tr>
@@ -22098,14 +16424,10 @@ D.07A S3
 
 D.08A S3
 
-
-
 </td>
 <td valign="top">
 
 D.08A S3
-
-
 
 </td>
 </tr>
@@ -22114,14 +16436,10 @@ D.08A S3
 
 D.13A S3
 
-
-
 </td>
 <td valign="top">
 
 D.13A S3
-
-
 
 </td>
 </tr>
@@ -22130,14 +16448,10 @@ D.13A S3
 
 D.14B S3
 
-
-
 </td>
 <td valign="top">
 
 D.14B S3
-
-
 
 </td>
 </tr>
@@ -22146,15 +16460,11 @@ D.14B S3
 
 D.16A S3
 
-
-
 </td>
 <td valign="top">
 
 D.14B S3
 
-
-
 </td>
 </tr>
 <tr>
@@ -22162,14 +16472,10 @@ D.14B S3
 
 D.18A S3
 
-
-
 </td>
 <td valign="top">
 
 D.18A S3
-
-
 
 </td>
 </tr>
@@ -22178,14 +16484,10 @@ D.18A S3
 
 D.20B S3
 
-
-
 </td>
 <td valign="top">
 
 D.20B S3
-
-
 
 </td>
 </tr>
@@ -22228,14 +16530,10 @@ Odette EDIFACT is a subset of the UN/EDIFACT standard from the Odette organizati
 
 Version
 
-
-
 </th>
 <th valign="top">
 
 Based on Edifact Version
-
-
 
 </th>
 </tr>
@@ -22244,14 +16542,10 @@ Based on Edifact Version
 
 D.96A
 
-
-
 </td>
 <td valign="top">
 
 D.96A S3
-
-
 
 </td>
 </tr>
@@ -22260,14 +16554,10 @@ D.96A S3
 
 D.98B
 
-
-
 </td>
 <td valign="top">
 
 D.98B S3
-
-
 
 </td>
 </tr>
@@ -22276,14 +16566,10 @@ D.98B S3
 
 D.03A
 
-
-
 </td>
 <td valign="top">
 
 D.03A S3
-
-
 
 </td>
 </tr>
@@ -22292,14 +16578,10 @@ D.03A S3
 
 D.05B
 
-
-
 </td>
 <td valign="top">
 
 D.05B S3
-
-
 
 </td>
 </tr>
@@ -22308,14 +16590,10 @@ D.05B S3
 
 D.07A
 
-
-
 </td>
 <td valign="top">
 
 D.07A S3
-
-
 
 </td>
 </tr>
@@ -22324,14 +16602,10 @@ D.07A S3
 
 D.16A
 
-
-
 </td>
 <td valign="top">
 
 D.16A S3
-
-
 
 </td>
 </tr>
@@ -22340,14 +16614,10 @@ D.16A S3
 
 D.18B
 
-
-
 </td>
 <td valign="top">
 
 D.18B S3
-
-
 
 </td>
 </tr>
@@ -22392,16 +16662,12 @@ GS1 uses XML to create a set of standard messages for the GS1 EDI \(Electronic D
 
 Version
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 3.0
-
-
 
 </td>
 </tr>
@@ -22410,16 +16676,12 @@ Version
 
 3.1
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 3.2
-
-
 
 </td>
 </tr>
@@ -22428,16 +16690,12 @@ Version
 
 3.3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 3.4
-
-
 
 </td>
 </tr>
@@ -22446,16 +16704,12 @@ Version
 
 3.4.1
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 3.5.1
-
-
 
 </td>
 </tr>
@@ -22470,21 +16724,15 @@ Version
 
 Message Type
 
-
-
 </th>
 <th valign="top">
 
 Available from Version
 
-
-
 </th>
 <th valign="top">
 
 Last Version \(if discontinued\)
-
-
 
 </th>
 </tr>
@@ -22493,21 +16741,15 @@ Last Version \(if discontinued\)
 
 advancedRemittanceNotificationMessage - Advanced Remittance Notification Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22516,21 +16758,15 @@ advancedRemittanceNotificationMessage - Advanced Remittance Notification Message
 
 applicationReceiptAcknowledgementMessage - Application Receipt Acknowledgement Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22539,21 +16775,15 @@ applicationReceiptAcknowledgementMessage - Application Receipt Acknowledgement M
 
 artworkContentMessage - Artwork Content Message
 
-
-
 </td>
 <td valign="top">
 
 3.1
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22562,21 +16792,15 @@ artworkContentMessage - Artwork Content Message
 
 artworkContentResponseMessage - Artwork Content Response Message
 
-
-
 </td>
 <td valign="top">
 
 3.1
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22585,21 +16809,15 @@ artworkContentResponseMessage - Artwork Content Response Message
 
 buyerReconciliationOfRequestForPaymentMessage - Buyer Reconciliation Of Request For Payment Message
 
-
-
 </td>
 <td valign="top">
 
 3.1
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22608,21 +16826,15 @@ buyerReconciliationOfRequestForPaymentMessage - Buyer Reconciliation Of Request 
 
 cashCountNotificationMessage - Cash Count Notification Message
 
-
-
 </td>
 <td valign="top">
 
 3.4
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22631,21 +16843,15 @@ cashCountNotificationMessage - Cash Count Notification Message
 
 cashCountReportMessage - Cash Count Report Message
 
-
-
 </td>
 <td valign="top">
 
 3.4
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22654,21 +16860,15 @@ cashCountReportMessage - Cash Count Report Message
 
 cashCountStatisticReportMessage - Cash Count Statistic Report Message
 
-
-
 </td>
 <td valign="top">
 
 3.4
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22677,21 +16877,15 @@ cashCountStatisticReportMessage - Cash Count Statistic Report Message
 
 cashPackagingReportMessage - Cash Packaging Report Message
 
-
-
 </td>
 <td valign="top">
 
 3.4
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22700,21 +16894,15 @@ cashPackagingReportMessage - Cash Packaging Report Message
 
 claimsNotificationMessage - Claims Notification Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22723,21 +16911,15 @@ claimsNotificationMessage - Claims Notification Message
 
 configureToOrderMessage - Configure To Order Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22746,21 +16928,15 @@ configureToOrderMessage - Configure To Order Message
 
 consumptionReportMessage - Consumption Report Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22769,21 +16945,15 @@ consumptionReportMessage - Consumption Report Message
 
 debitCreditAdviceMessage - Debit Credit Advice Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22792,21 +16962,15 @@ debitCreditAdviceMessage - Debit Credit Advice Message
 
 despatchAdviceMessage - Despatch Advice Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22815,21 +16979,15 @@ despatchAdviceMessage - Despatch Advice Message
 
 goodsRequirementsMessage - Goods Requirements Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22838,21 +16996,15 @@ goodsRequirementsMessage - Goods Requirements Message
 
 goodsRequirementsResponseMessage - Goods Requirements Response Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22861,21 +17013,15 @@ goodsRequirementsResponseMessage - Goods Requirements Response Message
 
 inventoryReportMessage - Inventory Report Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22884,21 +17030,15 @@ inventoryReportMessage - Inventory Report Message
 
 invoiceMessage - Invoice Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22907,21 +17047,15 @@ invoiceMessage - Invoice Message
 
 itemDataNotificationMessage - Item Data Notification Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22930,21 +17064,15 @@ itemDataNotificationMessage - Item Data Notification Message
 
 logisticsInventoryReportMessage - Logistics Inventory Report Message
 
-
-
 </td>
 <td valign="top">
 
 3.1
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22953,21 +17081,15 @@ logisticsInventoryReportMessage - Logistics Inventory Report Message
 
 logisticsInventoryReportRequestMessage - Logistics Inventory Report Request Message
 
-
-
 </td>
 <td valign="top">
 
 3.1
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22976,21 +17098,15 @@ logisticsInventoryReportRequestMessage - Logistics Inventory Report Request Mess
 
 orderMessage - Order Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -22999,21 +17115,15 @@ orderMessage - Order Message
 
 orderResponseMessage - Order Response Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23022,21 +17132,15 @@ orderResponseMessage - Order Response Message
 
 performanceMeasurementMessage - Performance Measurement Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23045,21 +17149,15 @@ performanceMeasurementMessage - Performance Measurement Message
 
 productRecallCloseoutNotificationMessage - Product Recall Closeout Notification Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23068,21 +17166,15 @@ productRecallCloseoutNotificationMessage - Product Recall Closeout Notification 
 
 productRecallNotificationMessage - Product Recall Notification Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23091,21 +17183,15 @@ productRecallNotificationMessage - Product Recall Notification Message
 
 productRemovalConfirmationMessage - Product Removal Confirmation Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23114,21 +17200,15 @@ productRemovalConfirmationMessage - Product Removal Confirmation Message
 
 purchaseConditionsMessage - Purchase Conditions Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23137,21 +17217,15 @@ purchaseConditionsMessage - Purchase Conditions Message
 
 receivingAdviceMessage - Receiving Advice Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23160,21 +17234,15 @@ receivingAdviceMessage - Receiving Advice Message
 
 replenishmentProposalMessage - Replenishment Proposal Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23183,21 +17251,15 @@ replenishmentProposalMessage - Replenishment Proposal Message
 
 replenishmentRequestMessage - Replenishment Request Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23206,21 +17268,15 @@ replenishmentRequestMessage - Replenishment Request Message
 
 requestForPaymentMessage - Request For Payment Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23229,21 +17285,15 @@ requestForPaymentMessage - Request For Payment Message
 
 settlementMessage - Settlement Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23252,21 +17302,15 @@ settlementMessage - Settlement Message
 
 transportCapacityBookingMessage - Transport Capacity Booking Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23275,21 +17319,15 @@ transportCapacityBookingMessage - Transport Capacity Booking Message
 
 transportCapacityBookingResponseMessage - Transport Capacity Booking Response Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23298,21 +17336,15 @@ transportCapacityBookingResponseMessage - Transport Capacity Booking Response Me
 
 transportCapacityPlanMessage - Transport Capacity Plan Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23321,21 +17353,15 @@ transportCapacityPlanMessage - Transport Capacity Plan Message
 
 transportCapacityRequirementsMessage - Transport Capacity Requirements Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23344,21 +17370,15 @@ transportCapacityRequirementsMessage - Transport Capacity Requirements Message
 
 transportInstructionMessage - Transport Instruction Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23367,21 +17387,15 @@ transportInstructionMessage - Transport Instruction Message
 
 transportInstructionResponseMessage - Transport Instruction Response Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23390,21 +17404,15 @@ transportInstructionResponseMessage - Transport Instruction Response Message
 
 transportPickUpDropOffConfirmationMessage - Transport Pick Up Drop Off Confirmation Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23413,21 +17421,15 @@ transportPickUpDropOffConfirmationMessage - Transport Pick Up Drop Off Confirmat
 
 transportPickUpDropOffRequestMessage - Transport Pick Up Drop Off Request Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23436,21 +17438,15 @@ transportPickUpDropOffRequestMessage - Transport Pick Up Drop Off Request Messag
 
 transportStatusNotificationMessage - Transport Status Notification Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23459,21 +17455,15 @@ transportStatusNotificationMessage - Transport Status Notification Message
 
 transportStatusRequestMessage - Transport Status Request Message
 
-
-
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23482,21 +17472,15 @@ transportStatusRequestMessage - Transport Status Request Message
 
 warehousingInboundInstructionMessage - Warehousing Inbound Instruction Message
 
-
-
 </td>
 <td valign="top">
 
 3.1
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23505,21 +17489,15 @@ warehousingInboundInstructionMessage - Warehousing Inbound Instruction Message
 
 warehousingInboundNotificationMessage - Warehousing Inbound Notification Message
 
-
-
 </td>
 <td valign="top">
 
 3.1
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23528,21 +17506,15 @@ warehousingInboundNotificationMessage - Warehousing Inbound Notification Message
 
 warehousingOperationsInstructionMessage - Warehousing Operations Instruction Message
 
-
-
 </td>
 <td valign="top">
 
 3.1
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23551,21 +17523,15 @@ warehousingOperationsInstructionMessage - Warehousing Operations Instruction Mes
 
 warehousingOperationsNotificationMessage - Warehousing Operations Notification Message
 
-
-
 </td>
 <td valign="top">
 
 3.1
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23574,21 +17540,15 @@ warehousingOperationsNotificationMessage - Warehousing Operations Notification M
 
 warehousingOutboundInstructionMessage - Warehousing Outbound Instruction Message
 
-
-
 </td>
 <td valign="top">
 
 3.1
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23597,21 +17557,15 @@ warehousingOutboundInstructionMessage - Warehousing Outbound Instruction Message
 
 warehousingOutboundNotificationMessage - Warehousing Outbound Notification Message
 
-
-
 </td>
 <td valign="top">
 
 3.1
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -23632,16 +17586,12 @@ warehousingOutboundNotificationMessage - Warehousing Outbound Notification Messa
 
 Version
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 2002
-
-
 
 </td>
 </tr>
@@ -23650,8 +17600,6 @@ Version
 
 2004
 
-
-
 </td>
 </tr>
 <tr>
@@ -23659,16 +17607,12 @@ Version
 
 2013
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 2015
-
-
 
 </td>
 </tr>
@@ -23683,14 +17627,10 @@ Version
 
 Codelist
 
-
-
 </th>
 <th valign="top">
 
 Version
-
-
 
 </th>
 </tr>
@@ -23699,14 +17639,10 @@ Version
 
 ISO 3166-1 - Country codes
 
-
-
 </td>
 <td valign="top">
 
 2013
-
-
 
 </td>
 </tr>
@@ -23715,14 +17651,10 @@ ISO 3166-1 - Country codes
 
 ISO 3166-2 - Country subdivision code
 
-
-
 </td>
 <td valign="top">
 
 2013
-
-
 
 </td>
 </tr>
@@ -23731,14 +17663,10 @@ ISO 3166-2 - Country subdivision code
 
 ISO\_4217 - Currency codes
 
-
-
 </td>
 <td valign="top">
 
 2015
-
-
 
 </td>
 </tr>
@@ -23747,14 +17675,10 @@ ISO\_4217 - Currency codes
 
 ISO 5218 - Gender codes
 
-
-
 </td>
 <td valign="top">
 
 2004
-
-
 
 </td>
 </tr>
@@ -23763,14 +17687,10 @@ ISO 5218 - Gender codes
 
 ISO 639-1 - Language code \(Alpha-2 code\)
 
-
-
 </td>
 <td valign="top">
 
 2002
-
-
 
 </td>
 </tr>
@@ -23791,16 +17711,12 @@ ISO 639-1 - Language code \(Alpha-2 code\)
 
 Version
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 1982
-
-
 
 </td>
 </tr>
@@ -23809,16 +17725,12 @@ Version
 
 2001
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 2011
-
-
 
 </td>
 </tr>
@@ -23827,16 +17739,12 @@ Version
 
 2012
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 2014
-
-
 
 </td>
 </tr>
@@ -23845,16 +17753,12 @@ Version
 
 2016
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 2017
-
-
 
 </td>
 </tr>
@@ -23869,14 +17773,10 @@ Version
 
 Codelist
 
-
-
 </th>
 <th valign="top">
 
 Version
-
-
 
 </th>
 </tr>
@@ -23885,14 +17785,10 @@ Version
 
 Rec 17 - PAYTERMS
 
-
-
 </td>
 <td valign="top">
 
 1982
-
-
 
 </td>
 </tr>
@@ -23901,14 +17797,10 @@ Rec 17 - PAYTERMS
 
 Rec 19 - Code for Modes of Transport
 
-
-
 </td>
 <td valign="top">
 
 2001
-
-
 
 </td>
 </tr>
@@ -23917,14 +17809,10 @@ Rec 19 - Code for Modes of Transport
 
 Rec\_20 - Measurement unit code
 
-
-
 </td>
 <td valign="top">
 
 2016
-
-
 
 </td>
 </tr>
@@ -23933,14 +17821,10 @@ Rec\_20 - Measurement unit code
 
 Rec 21 - Package type code
 
-
-
 </td>
 <td valign="top">
 
 2012
-
-
 
 </td>
 </tr>
@@ -23949,14 +17833,10 @@ Rec 21 - Package type code
 
 Rec 23 - Freight Cost Code - FCC
 
-
-
 </td>
 <td valign="top">
 
 2012
-
-
 
 </td>
 </tr>
@@ -23965,14 +17845,10 @@ Rec 23 - Freight Cost Code - FCC
 
 Rec\_24 - Trade and Transport Status Code
 
-
-
 </td>
 <td valign="top">
 
 2017
-
-
 
 </td>
 </tr>
@@ -23981,14 +17857,10 @@ Rec\_24 - Trade and Transport Status Code
 
 Rec 28 - Codes for Types of Means of Transport
 
-
-
 </td>
 <td valign="top">
 
 2014
-
-
 
 </td>
 </tr>
@@ -23997,14 +17869,10 @@ Rec 28 - Codes for Types of Means of Transport
 
 Rec 5 - Abbreviations of Incoterms
 
-
-
 </td>
 <td valign="top">
 
 2011
-
-
 
 </td>
 </tr>
@@ -24027,16 +17895,12 @@ The GS1 Codelists has only one version which is *2021-05* and consists of 211 co
 
 Codelist
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 AdditionalConsignmentIdentificationTypeCode
-
-
 
 </td>
 </tr>
@@ -24045,16 +17909,12 @@ AdditionalConsignmentIdentificationTypeCode
 
 AdditionalIndividualAssetIdentificationTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AdditionalLogisticUnitIdentificationTypeCode
-
-
 
 </td>
 </tr>
@@ -24063,16 +17923,12 @@ AdditionalLogisticUnitIdentificationTypeCode
 
 AdditionalPartyIdentificationTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AdditionalReturnableAssetIdentificationTypeCode
-
-
 
 </td>
 </tr>
@@ -24081,16 +17937,12 @@ AdditionalReturnableAssetIdentificationTypeCode
 
 AdditionalServiceRelationIdentificationTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AdditionalShipmentIdentificationTypeCode
-
-
 
 </td>
 </tr>
@@ -24099,16 +17951,12 @@ AdditionalShipmentIdentificationTypeCode
 
 AdditionalTradeItemClassificationCodeListCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AdditionalTradeItemIdentificationTypeCode
-
-
 
 </td>
 </tr>
@@ -24117,16 +17965,12 @@ AdditionalTradeItemIdentificationTypeCode
 
 AdministrativeUnitTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AllowanceChargeTypeCode
-
-
 
 </td>
 </tr>
@@ -24135,16 +17979,12 @@ AllowanceChargeTypeCode
 
 AllowanceOrChargeEnumeration
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AnimalIdentificationTypeCode
-
-
 
 </td>
 </tr>
@@ -24153,16 +17993,12 @@ AnimalIdentificationTypeCode
 
 ApplicationResponseStatusEnumeration
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AppointmentTimeMeasurementBasisTypeCode
-
-
 
 </td>
 </tr>
@@ -24171,16 +18007,12 @@ AppointmentTimeMeasurementBasisTypeCode
 
 BarCodeTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 BusinessDocumentProcessingTypeCode
-
-
 
 </td>
 </tr>
@@ -24189,16 +18021,12 @@ BusinessDocumentProcessingTypeCode
 
 CapacityPlanStatusEnumeration
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 CargoTypeCode
-
-
 
 </td>
 </tr>
@@ -24207,16 +18035,12 @@ CargoTypeCode
 
 CashCountStatisticsTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 CashCountTypeCode
-
-
 
 </td>
 </tr>
@@ -24225,16 +18049,12 @@ CashCountTypeCode
 
 CashProcessingFlagCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ClaimsNotificationTypeEnumeration
-
-
 
 </td>
 </tr>
@@ -24243,16 +18063,12 @@ ClaimsNotificationTypeEnumeration
 
 ColourCodeListCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ColourTintCode
-
-
 
 </td>
 </tr>
@@ -24261,16 +18077,12 @@ ColourTintCode
 
 CommunicationChannelCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ContactTypeCode
-
-
 
 </td>
 </tr>
@@ -24279,16 +18091,12 @@ ContactTypeCode
 
 CopyElementTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 CountryCode
-
-
 
 </td>
 </tr>
@@ -24297,16 +18105,12 @@ CountryCode
 
 CreditReasonCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 CustomsWarehouseStatusCode
-
-
 
 </td>
 </tr>
@@ -24315,16 +18119,12 @@ CustomsWarehouseStatusCode
 
 DangerousGoodsAttributeTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 DangerousGoodsRegulationCode
-
-
 
 </td>
 </tr>
@@ -24333,16 +18133,12 @@ DangerousGoodsRegulationCode
 
 DataCarrierTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 DateFormatCode
-
-
 
 </td>
 </tr>
@@ -24351,16 +18147,12 @@ DateFormatCode
 
 DayOfTheWeekEnumeration
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 DebitCreditEnumeration
-
-
 
 </td>
 </tr>
@@ -24369,16 +18161,12 @@ DebitCreditEnumeration
 
 DeliverDateTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 DeliveryMethodCode
-
-
 
 </td>
 </tr>
@@ -24387,16 +18175,12 @@ DeliveryMethodCode
 
 DeliveryTimeMeasurementBasisTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 DeliveryTypeCode
-
-
 
 </td>
 </tr>
@@ -24405,16 +18189,12 @@ DeliveryTypeCode
 
 DemandEstimationTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 DespatchAdviceTypeCode
-
-
 
 </td>
 </tr>
@@ -24423,16 +18203,12 @@ DespatchAdviceTypeCode
 
 DiscountAgreementCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 DMEOrderPriorityCode
-
-
 
 </td>
 </tr>
@@ -24441,16 +18217,12 @@ DMEOrderPriorityCode
 
 DockTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 DocumentActionEnumeration
-
-
 
 </td>
 </tr>
@@ -24459,16 +18231,12 @@ DocumentActionEnumeration
 
 DocumentStatusEnumeration
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 DutyFeeTaxExemptionReasonCode
-
-
 
 </td>
 </tr>
@@ -24477,16 +18245,12 @@ DutyFeeTaxExemptionReasonCode
 
 DutyFeeTaxLiabilityCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 DutyFeeTaxRegistrationTypeCode
-
-
 
 </td>
 </tr>
@@ -24495,16 +18259,12 @@ DutyFeeTaxRegistrationTypeCode
 
 DutyFeeTaxTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 EffectiveDateTypeCode
-
-
 
 </td>
 </tr>
@@ -24513,16 +18273,12 @@ EffectiveDateTypeCode
 
 EntityTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 EquipmentTypeCode
-
-
 
 </td>
 </tr>
@@ -24531,16 +18287,12 @@ EquipmentTypeCode
 
 ErrorOrWarningCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 EuUniqueIDTypeCode
-
-
 
 </td>
 </tr>
@@ -24549,16 +18301,12 @@ EuUniqueIDTypeCode
 
 FinancialAccountNumberTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 FinancialAdjustmentReasonCode
-
-
 
 </td>
 </tr>
@@ -24567,16 +18315,12 @@ FinancialAdjustmentReasonCode
 
 FinancialRoutingNumberTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ForecastPurposeCode
-
-
 
 </td>
 </tr>
@@ -24585,16 +18329,12 @@ ForecastPurposeCode
 
 ForecastTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 GenderEnumeration
-
-
 
 </td>
 </tr>
@@ -24603,16 +18343,12 @@ GenderEnumeration
 
 GoodsReceiptReportingCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 GoodsRequirementsTypeEnumeration
-
-
 
 </td>
 </tr>
@@ -24621,16 +18357,12 @@ GoodsRequirementsTypeEnumeration
 
 GraphicElementTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 GS1TradeItemIdentificationKeyCode
-
-
 
 </td>
 </tr>
@@ -24639,16 +18371,12 @@ GS1TradeItemIdentificationKeyCode
 
 HandlingInstructionCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 IdentityDocumentTypeCode
-
-
 
 </td>
 </tr>
@@ -24657,16 +18385,12 @@ IdentityDocumentTypeCode
 
 IncidentTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 InstructionOrResponseEnumeration
-
-
 
 </td>
 </tr>
@@ -24675,16 +18399,12 @@ InstructionOrResponseEnumeration
 
 InventoryActivityTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 InventoryBusinessStepCode
-
-
 
 </td>
 </tr>
@@ -24693,16 +18413,12 @@ InventoryBusinessStepCode
 
 InventoryDispositionCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 InventoryEventReasonCode
-
-
 
 </td>
 </tr>
@@ -24711,16 +18427,12 @@ InventoryEventReasonCode
 
 InventoryMeasurementBasisTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 InventoryMovementTypeCode
-
-
 
 </td>
 </tr>
@@ -24729,16 +18441,12 @@ InventoryMovementTypeCode
 
 InventoryReportTypeEnumeration
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 InventoryStatusCode
-
-
 
 </td>
 </tr>
@@ -24747,16 +18455,12 @@ InventoryStatusCode
 
 InventorySubLocationFunctionCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 InventorySubLocationTypeCode
-
-
 
 </td>
 </tr>
@@ -24765,16 +18469,12 @@ InventorySubLocationTypeCode
 
 InvoiceTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ItemScopeTypeCode
-
-
 
 </td>
 </tr>
@@ -24783,16 +18483,12 @@ ItemScopeTypeCode
 
 ItemSourceCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ItemTypeCode
-
-
 
 </td>
 </tr>
@@ -24801,16 +18497,12 @@ ItemTypeCode
 
 LegalRegistrationCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 LineItemActionCode
-
-
 
 </td>
 </tr>
@@ -24819,16 +18511,12 @@ LineItemActionCode
 
 LocationScopeParameterTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 LocationScopeTypeCode
-
-
 
 </td>
 </tr>
@@ -24837,16 +18525,12 @@ LocationScopeTypeCode
 
 LogisticEventTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 LogisticServiceReferenceTypeCode
-
-
 
 </td>
 </tr>
@@ -24855,16 +18539,12 @@ LogisticServiceReferenceTypeCode
 
 LogisticServiceRequirementCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 LogisticsInventoryReportTypeEnumeration
-
-
 
 </td>
 </tr>
@@ -24873,16 +18553,12 @@ LogisticsInventoryReportTypeEnumeration
 
 MarginSchemeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 MaterialTypeCode
-
-
 
 </td>
 </tr>
@@ -24891,16 +18567,12 @@ MaterialTypeCode
 
 MeasurementTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 MeatProcessingActivityTypeCode
-
-
 
 </td>
 </tr>
@@ -24909,16 +18581,12 @@ MeatProcessingActivityTypeCode
 
 MeatProcessingPartyIdentificationTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 MeatProcessingPartyTypeCode
-
-
 
 </td>
 </tr>
@@ -24927,16 +18595,12 @@ MeatProcessingPartyTypeCode
 
 MeatWorkItemTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 NonBinaryLogicEnumeration
-
-
 
 </td>
 </tr>
@@ -24945,16 +18609,12 @@ NonBinaryLogicEnumeration
 
 NutrientTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ObservationTypeCode
-
-
 
 </td>
 </tr>
@@ -24963,16 +18623,12 @@ ObservationTypeCode
 
 OrderEntryTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OrderInstructionCode
-
-
 
 </td>
 </tr>
@@ -24981,16 +18637,12 @@ OrderInstructionCode
 
 OrderRelationshipTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OrderTypeCode
-
-
 
 </td>
 </tr>
@@ -24999,16 +18651,12 @@ OrderTypeCode
 
 OutOfStockMeasurementTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OwnershipTransferConditionCode
-
-
 
 </td>
 </tr>
@@ -25017,16 +18665,12 @@ OwnershipTransferConditionCode
 
 PackageLevelCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PackageTypeCode
-
-
 
 </td>
 </tr>
@@ -25035,16 +18679,12 @@ PackageTypeCode
 
 PackagingConditionCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PackagingMarkingTypeCode
-
-
 
 </td>
 </tr>
@@ -25053,16 +18693,12 @@ PackagingMarkingTypeCode
 
 PackagingTermsAndConditionsCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PartyRoleCode
-
-
 
 </td>
 </tr>
@@ -25071,16 +18707,12 @@ PartyRoleCode
 
 PassengerCategoryCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PatternCode
-
-
 
 </td>
 </tr>
@@ -25089,16 +18721,12 @@ PatternCode
 
 PaymentFormatCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PaymentMethodCode
-
-
 
 </td>
 </tr>
@@ -25107,16 +18735,12 @@ PaymentMethodCode
 
 PaymentTermsEventCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PaymentTermsTypeCode
-
-
 
 </td>
 </tr>
@@ -25125,16 +18749,12 @@ PaymentTermsTypeCode
 
 PerformanceMeasureTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PeriodicityTypeCode
-
-
 
 </td>
 </tr>
@@ -25143,16 +18763,12 @@ PeriodicityTypeCode
 
 PhysicalOrLogicalStateDescriptionCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PlanBucketSizeCode
-
-
 
 </td>
 </tr>
@@ -25161,16 +18777,12 @@ PlanBucketSizeCode
 
 PlanCommitmentLevelCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PrecautionQualifierCode
-
-
 
 </td>
 </tr>
@@ -25179,16 +18791,12 @@ PrecautionQualifierCode
 
 PrintingInstructionCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ProductionMethodForFishAndSeafoodCode
-
-
 
 </td>
 </tr>
@@ -25197,16 +18805,12 @@ ProductionMethodForFishAndSeafoodCode
 
 ProductRecallIncidentRiskLevelCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ProductRecallNotificationStatusEnumeration
-
-
 
 </td>
 </tr>
@@ -25215,16 +18819,12 @@ ProductRecallNotificationStatusEnumeration
 
 ProductRecallNotificationVersionStatusEnumeration
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ProductRecallReasonCode
-
-
 
 </td>
 </tr>
@@ -25233,16 +18833,12 @@ ProductRecallReasonCode
 
 ProductRecallReimbursementReasonCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ProductRecallTrackingTypeCode
-
-
 
 </td>
 </tr>
@@ -25251,16 +18847,12 @@ ProductRecallTrackingTypeCode
 
 PurchaseConditionsCommitmentTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 QualityControlCode
-
-
 
 </td>
 </tr>
@@ -25269,16 +18861,12 @@ QualityControlCode
 
 QuantitySpecificationTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ReadingMethodCode
-
-
 
 </td>
 </tr>
@@ -25287,16 +18875,12 @@ ReadingMethodCode
 
 ReceivingConditionCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ReconciliationStatusEnumeration
-
-
 
 </td>
 </tr>
@@ -25305,16 +18889,12 @@ ReconciliationStatusEnumeration
 
 RemainingQuantityStatusCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ReplenishmentProposalTypeEnumeration
-
-
 
 </td>
 </tr>
@@ -25323,16 +18903,12 @@ ReplenishmentProposalTypeEnumeration
 
 ReplenishmentRequestStatusEnumeration
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ReplenishmentRequestTypeEnumeration
-
-
 
 </td>
 </tr>
@@ -25341,16 +18917,12 @@ ReplenishmentRequestTypeEnumeration
 
 ResponseStatusCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ResponseStatusEnumeration
-
-
 
 </td>
 </tr>
@@ -25359,16 +18931,12 @@ ResponseStatusEnumeration
 
 ResponsibleAgencyCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 RevisionStatusCode
-
-
 
 </td>
 </tr>
@@ -25377,16 +18945,12 @@ RevisionStatusCode
 
 SalesMeasurementTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 SealConditionCode
-
-
 
 </td>
 </tr>
@@ -25395,16 +18959,12 @@ SealConditionCode
 
 SealTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ServiceLevelBasisTypeCode
-
-
 
 </td>
 </tr>
@@ -25413,16 +18973,12 @@ ServiceLevelBasisTypeCode
 
 ServiceLevelMeasurementBasisTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 SettlementAdjustmentReferenceTypeCode
-
-
 
 </td>
 </tr>
@@ -25431,16 +18987,12 @@ SettlementAdjustmentReferenceTypeCode
 
 SettlementHandlingTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 SettlementTypeCode
-
-
 
 </td>
 </tr>
@@ -25449,16 +19001,12 @@ SettlementTypeCode
 
 ShipmentRequestTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ShipmentSplitMethodCode
-
-
 
 </td>
 </tr>
@@ -25467,16 +19015,12 @@ ShipmentSplitMethodCode
 
 SizeCodeListCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 SizeTypeCode
-
-
 
 </td>
 </tr>
@@ -25485,16 +19029,12 @@ SizeTypeCode
 
 SpecialServiceTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 StatusCode
-
-
 
 </td>
 </tr>
@@ -25503,16 +19043,12 @@ StatusCode
 
 StockRequirementTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 StorageStateCode
-
-
 
 </td>
 </tr>
@@ -25521,16 +19057,12 @@ StorageStateCode
 
 StructuredCopyElementTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 StructureTypeCode
-
-
 
 </td>
 </tr>
@@ -25539,16 +19071,12 @@ StructureTypeCode
 
 SymbolComponentCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 SynchronisationCalculationTypeCode
-
-
 
 </td>
 </tr>
@@ -25557,16 +19085,12 @@ SynchronisationCalculationTypeCode
 
 TaxCategoryCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TemperatureMeasurementUnitCode
-
-
 
 </td>
 </tr>
@@ -25575,16 +19099,12 @@ TemperatureMeasurementUnitCode
 
 TemperatureQualifierCode\_EDI
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TimeMeasurementUnitCode
-
-
 
 </td>
 </tr>
@@ -25593,16 +19113,12 @@ TimeMeasurementUnitCode
 
 TimePeriodScopeTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TradeItemDataOwnerCode
-
-
 
 </td>
 </tr>
@@ -25611,16 +19127,12 @@ TradeItemDataOwnerCode
 
 TradeItemUnitDescriptorCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TransactionalReferenceTypeCode
-
-
 
 </td>
 </tr>
@@ -25629,16 +19141,12 @@ TransactionalReferenceTypeCode
 
 TransportAppointmentStatusEnumeration
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TransportAppointmentTypeEnumeration
-
-
 
 </td>
 </tr>
@@ -25647,16 +19155,12 @@ TransportAppointmentTypeEnumeration
 
 TransportCapacityBookingStatusEnumeration
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TransportChargesPaymentMethodCode
-
-
 
 </td>
 </tr>
@@ -25665,16 +19169,12 @@ TransportChargesPaymentMethodCode
 
 TransportInstructionFunctionEnumeration
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TransportInstructionResponseTypeEnumeration
-
-
 
 </td>
 </tr>
@@ -25683,16 +19183,12 @@ TransportInstructionResponseTypeEnumeration
 
 TransportInstructionStatusEnumeration
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TransportMeansTypeCode
-
-
 
 </td>
 </tr>
@@ -25701,16 +19197,12 @@ TransportMeansTypeCode
 
 TransportModeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TransportPartyRoleCode
-
-
 
 </td>
 </tr>
@@ -25719,16 +19211,12 @@ TransportPartyRoleCode
 
 TransportPaymentMethodCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TransportPlanningDateTypeEnumeration
-
-
 
 </td>
 </tr>
@@ -25737,16 +19225,12 @@ TransportPlanningDateTypeEnumeration
 
 TransportReferenceTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TransportServiceCategoryCode
-
-
 
 </td>
 </tr>
@@ -25755,16 +19239,12 @@ TransportServiceCategoryCode
 
 TransportServiceConditionTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TransportServiceLevelCode
-
-
 
 </td>
 </tr>
@@ -25773,16 +19253,12 @@ TransportServiceLevelCode
 
 TransportStatusConditionCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TransportStatusInformationEnumeration
-
-
 
 </td>
 </tr>
@@ -25791,16 +19267,12 @@ TransportStatusInformationEnumeration
 
 TransportStatusObjectEnumeration
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TransportStatusReasonCode
-
-
 
 </td>
 </tr>
@@ -25809,16 +19281,12 @@ TransportStatusReasonCode
 
 TypeOfServiceTransactionCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 VarianceReasonCode
-
-
 
 </td>
 </tr>
@@ -25827,16 +19295,12 @@ VarianceReasonCode
 
 WarehouseABCClassificationCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 WarehousingDeliveryInstructionCode
-
-
 
 </td>
 </tr>
@@ -25845,16 +19309,12 @@ WarehousingDeliveryInstructionCode
 
 WarehousingDespatchTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 WarehousingInboundExceptionCode
-
-
 
 </td>
 </tr>
@@ -25863,16 +19323,12 @@ WarehousingInboundExceptionCode
 
 WarehousingInboundStatusCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 WarehousingOutboundExceptionCode
-
-
 
 </td>
 </tr>
@@ -25881,16 +19337,12 @@ WarehousingOutboundExceptionCode
 
 WarehousingOutboundStatusCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 WarehousingQuantityVarianceCode
-
-
 
 </td>
 </tr>
@@ -25899,16 +19351,12 @@ WarehousingQuantityVarianceCode
 
 WarehousingReceiptTypeCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 WarehousingServiceAttributeTypeCode
-
-
 
 </td>
 </tr>
@@ -25917,16 +19365,12 @@ WarehousingServiceAttributeTypeCode
 
 WarehousingServiceConditionCode
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 WeekendDayEnumeration
-
-
 
 </td>
 </tr>
@@ -25953,16 +19397,12 @@ The JAIF Codelists has only one version which is *2020-12* and consists of codel
 
 Codelist
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 JAI001 - Document Type
-
-
 
 </td>
 </tr>
@@ -25971,16 +19411,12 @@ JAI001 - Document Type
 
 JAI002 - Mode of Transport
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI003 - Tax Exemption Reason Code
-
-
 
 </td>
 </tr>
@@ -25989,16 +19425,12 @@ JAI003 - Tax Exemption Reason Code
 
 JAI004 - Article Status Code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI005 - Delivery Instruction Reason Code
-
-
 
 </td>
 </tr>
@@ -26007,16 +19439,12 @@ JAI005 - Delivery Instruction Reason Code
 
 JAI006 - Payment Means \(Instrument of Payment\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI007 - Payment conditions \(Payment Method\) Odette
-
-
 
 </td>
 </tr>
@@ -26025,16 +19453,12 @@ JAI007 - Payment conditions \(Payment Method\) Odette
 
 JAI008 - Reason for Adjustment
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI009 - Transaction Status Code
-
-
 
 </td>
 </tr>
@@ -26043,16 +19467,12 @@ JAI009 - Transaction Status Code
 
 JAI010 - Customs Preference Origin Code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI011 - Quality Control Status Code
-
-
 
 </td>
 </tr>
@@ -26061,16 +19481,12 @@ JAI011 - Quality Control Status Code
 
 JAI012 - Reply Status Code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI013 - Material Category Code
-
-
 
 </td>
 </tr>
@@ -26079,16 +19495,12 @@ JAI013 - Material Category Code
 
 JAI014 - Invoice Correction Action Code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI015 - Terms of Transport \(Odette\)
-
-
 
 </td>
 </tr>
@@ -26097,16 +19509,12 @@ JAI015 - Terms of Transport \(Odette\)
 
 JAI016 - JAI Subset Identification
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI017 - Minority Owned Business Identification Code
-
-
 
 </td>
 </tr>
@@ -26115,16 +19523,12 @@ JAI017 - Minority Owned Business Identification Code
 
 JAI018 - Party ID Type Code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI019 - Label Type Code
-
-
 
 </td>
 </tr>
@@ -26133,16 +19537,12 @@ JAI019 - Label Type Code
 
 JAI020 - Price Specification Code \(STAR\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI021 - Order Status Code \(STAR\)
-
-
 
 </td>
 </tr>
@@ -26151,16 +19551,12 @@ JAI021 - Order Status Code \(STAR\)
 
 JAI022 - Order Type Code \(STAR\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI023 - Order Line Status Code \(STAR\)
-
-
 
 </td>
 </tr>
@@ -26169,16 +19565,12 @@ JAI023 - Order Line Status Code \(STAR\)
 
 JAI024 - Invoice corrective action code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI025 - Business legal structure type
-
-
 
 </td>
 </tr>
@@ -26187,16 +19579,12 @@ JAI025 - Business legal structure type
 
 JAI026 - Type Of Label Marking
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI030 - Quantity qualifier
-
-
 
 </td>
 </tr>
@@ -26205,16 +19593,12 @@ JAI030 - Quantity qualifier
 
 JAI031 - Configuration level \(Despatched article\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI032 - Allowance Charge Type
-
-
 
 </td>
 </tr>
@@ -26223,16 +19607,12 @@ JAI032 - Allowance Charge Type
 
 JAI033 - Delivery Instruction Type
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI034 - Quality Conformance \(Odette\)
-
-
 
 </td>
 </tr>
@@ -26241,16 +19621,12 @@ JAI034 - Quality Conformance \(Odette\)
 
 JAI035 - Safety Regulations Indicator Code \(AIAG\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI036 - Booking key \(self billed invoice line item\)
-
-
 
 </td>
 </tr>
@@ -26259,16 +19635,12 @@ JAI036 - Booking key \(self billed invoice line item\)
 
 JAI037 - Transport service description code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI038 - Package ownership
-
-
 
 </td>
 </tr>
@@ -26277,16 +19649,12 @@ JAI038 - Package ownership
 
 JAI039 - JIS Information Status code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI040 - Vehicle reference data \(JIS Process\)
-
-
 
 </td>
 </tr>
@@ -26295,16 +19663,12 @@ JAI040 - Vehicle reference data \(JIS Process\)
 
 JAI041 - Supplier organises customs clearance indicator
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI042 - Properties of steel
-
-
 
 </td>
 </tr>
@@ -26313,16 +19677,12 @@ JAI042 - Properties of steel
 
 JAI043 - Date qualifier code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI044 - Object identification qualifier code
-
-
 
 </td>
 </tr>
@@ -26331,16 +19691,12 @@ JAI044 - Object identification qualifier code
 
 JAI045 - Stock regime status code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI046 - Stock standard ID
-
-
 
 </td>
 </tr>
@@ -26349,16 +19705,12 @@ JAI046 - Stock standard ID
 
 JAI047 - Date/Time Format Qualifier
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI048 - Dutiable goods indicator
-
-
 
 </td>
 </tr>
@@ -26367,16 +19719,12 @@ JAI048 - Dutiable goods indicator
 
 JAI049 - Agency responsible for a package type code list
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JAI050 - MAT label - package level code
-
-
 
 </td>
 </tr>
@@ -26397,16 +19745,12 @@ The ODETTE Codelists has only one version which is *2020-12* and consists of cod
 
 Codelist
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 3055 - Code list responsible agency code
-
-
 
 </td>
 </tr>
@@ -26415,16 +19759,12 @@ Codelist
 
 ODDC001\(1\) - Document Type based on EDIFACT 1001
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC001\(2\) - Document Type
-
-
 
 </td>
 </tr>
@@ -26433,16 +19773,12 @@ ODDC001\(2\) - Document Type
 
 ODDC001\(A\) - Document Type \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC001\(C\) - Document Type based on 1153 EDIFACT Internal
-
-
 
 </td>
 </tr>
@@ -26451,16 +19787,12 @@ ODDC001\(C\) - Document Type based on 1153 EDIFACT Internal
 
 ODDC003\(1\) - Mode of Transport
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC004\(1\) - Incoterms
-
-
 
 </td>
 </tr>
@@ -26469,16 +19801,12 @@ ODDC004\(1\) - Incoterms
 
 ODDC006\(1\) - COUNTRIES GEONOMENCLATURE
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC007\(1\) - Currencies
-
-
 
 </td>
 </tr>
@@ -26487,16 +19815,12 @@ ODDC007\(1\) - Currencies
 
 ODDC008\(1\) - Prepaid/Collect Indicator
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC009\(1\) - Charge Type \(based on EDIFACT 7161\)
-
-
 
 </td>
 </tr>
@@ -26505,16 +19829,12 @@ ODDC009\(1\) - Charge Type \(based on EDIFACT 7161\)
 
 ODDC009\(A\) - Allowance Charge Type
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC009\(B\) - Allowance Charge Type
-
-
 
 </td>
 </tr>
@@ -26523,16 +19843,12 @@ ODDC009\(B\) - Allowance Charge Type
 
 ODDC010\(1\) - VAT Category
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC013\(1\) - Nature of Transaction based on EDIFACT 4183
-
-
 
 </td>
 </tr>
@@ -26541,16 +19857,12 @@ ODDC013\(1\) - Nature of Transaction based on EDIFACT 4183
 
 ODDC014\(1\) - Transport Ownership based on EDIFACT 8281
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC015\(1\) - Article status
-
-
 
 </td>
 </tr>
@@ -26559,16 +19871,12 @@ ODDC015\(1\) - Article status
 
 ODDC017\(1\) - Schedule Status Indicator \(based on EDIFACT 4017\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC018\(1\) - Delivery instruction reason based on EDIFACT 6063
-
-
 
 </td>
 </tr>
@@ -26577,16 +19885,12 @@ ODDC018\(1\) - Delivery instruction reason based on EDIFACT 6063
 
 ODDC018\(2\) - Delivery Instruction Reason \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC021\(1\) - Schedule Release Category based on EDIFACT 1229
-
-
 
 </td>
 </tr>
@@ -26595,16 +19899,12 @@ ODDC021\(1\) - Schedule Release Category based on EDIFACT 1229
 
 ODDC021\(2\) - Schedule Release Category \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC022\(1\) - Type of Period based on EDIFACT 2379
-
-
 
 </td>
 </tr>
@@ -26613,16 +19913,12 @@ ODDC022\(1\) - Type of Period based on EDIFACT 2379
 
 ODDC022\(2\) - Type of Period \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC022\(B\) - Type of Period based On EDIFACT 2151
-
-
 
 </td>
 </tr>
@@ -26631,16 +19927,12 @@ ODDC022\(B\) - Type of Period based On EDIFACT 2151
 
 ODDC023\(1\) - Payment Means based on EDIFACT 4461
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC023\(2\) - Payment Means \(Instrument of Payment\)
-
-
 
 </td>
 </tr>
@@ -26649,16 +19941,12 @@ ODDC023\(2\) - Payment Means \(Instrument of Payment\)
 
 ODDC024\(1\) - Terms Time Information based on EDIFACT 2009
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC025\(1\) - Unit of Measurement \(based on UN recommendation 20\)
-
-
 
 </td>
 </tr>
@@ -26667,16 +19955,12 @@ ODDC025\(1\) - Unit of Measurement \(based on UN recommendation 20\)
 
 ODDC026\(1\) - Payment Conditions based on EDIFACT 4277
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC026\(2\) - Payment conditions \(Payment Method\) Odette
-
-
 
 </td>
 </tr>
@@ -26685,16 +19969,12 @@ ODDC026\(2\) - Payment conditions \(Payment Method\) Odette
 
 ODDC027\(1\) - Reason for Adjustment based on 4465 EDIFACT
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC027\(2\) - Reason for Adjustment \(Odette\)
-
-
 
 </td>
 </tr>
@@ -26703,16 +19983,12 @@ ODDC027\(2\) - Reason for Adjustment \(Odette\)
 
 ODDC031\(1\) - Message Status based on EDIFACT 1225
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC031\(2\) - Status based on EDIFACT 1225
-
-
 
 </td>
 </tr>
@@ -26721,16 +19997,12 @@ ODDC031\(2\) - Status based on EDIFACT 1225
 
 ODDC031\(3\) - Status based on EDIFACT 1229
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC031\(4\) - Status based on EDIFACT 1245
-
-
 
 </td>
 </tr>
@@ -26739,16 +20011,12 @@ ODDC031\(4\) - Status based on EDIFACT 1245
 
 ODDC031\(5\) - Status \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC032\(1\) - Message Indicator based on EDIFACT 1225
-
-
 
 </td>
 </tr>
@@ -26757,16 +20025,12 @@ ODDC032\(1\) - Message Indicator based on EDIFACT 1225
 
 ODDC032\(2\) - Reply Indicator based on EDIFACT 1229
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC032\(3\) - Reply Indicator \(Odette\)
-
-
 
 </td>
 </tr>
@@ -26775,16 +20039,12 @@ ODDC032\(3\) - Reply Indicator \(Odette\)
 
 ODDC033\(1\) - Release Type based on EDIFACT 2005
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC034\(1\) - Preference Origin based on EDIFACT 9213
-
-
 
 </td>
 </tr>
@@ -26793,16 +20053,12 @@ ODDC034\(1\) - Preference Origin based on EDIFACT 9213
 
 ODDC034\(2\) - Preference Origin \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC037\(1\) - Quality Control \(Odette\)
-
-
 
 </td>
 </tr>
@@ -26811,16 +20067,12 @@ ODDC037\(1\) - Quality Control \(Odette\)
 
 ODDC038\(1\) - Quantity Descriptor based on EDIFACT 6063
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC038\(2\) - Quantity Descriptor based on EDIFACT 6167
-
-
 
 </td>
 </tr>
@@ -26829,16 +20081,12 @@ ODDC038\(2\) - Quantity Descriptor based on EDIFACT 6167
 
 ODDC040\(2\) - Qualifier for Document Balance \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC041\(1\) - General Conditions \(based on EDIFACT 4279\)
-
-
 
 </td>
 </tr>
@@ -26847,16 +20095,12 @@ ODDC041\(1\) - General Conditions \(based on EDIFACT 4279\)
 
 ODDC041\(2\) - General Conditons \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC042\(1\) - Ownership/Durability \(based on EDIFACT 7073\)
-
-
 
 </td>
 </tr>
@@ -26865,16 +20109,12 @@ ODDC042\(1\) - Ownership/Durability \(based on EDIFACT 7073\)
 
 ODDC042\(2\) - Ownership/Durability \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC043\(1\) - Product Usage Type \(Odette\)
-
-
 
 </td>
 </tr>
@@ -26883,16 +20123,12 @@ ODDC043\(1\) - Product Usage Type \(Odette\)
 
 ODDC045\(1\) - Product/Service Type \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC046\(1\) - Packaging level \(based on EDIFACT 7075\)
-
-
 
 </td>
 </tr>
@@ -26901,16 +20137,12 @@ ODDC046\(1\) - Packaging level \(based on EDIFACT 7075\)
 
 ODDC047\(1\) - Material Category \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC048\(1\) - Price Type \(based on EDIFACT 5125\)
-
-
 
 </td>
 </tr>
@@ -26919,16 +20151,12 @@ ODDC048\(1\) - Price Type \(based on EDIFACT 5125\)
 
 ODDC048\(2\) - Price Type \(based on EDIFACT 5387\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC048\(3\) - Price Type \(Odette\)
-
-
 
 </td>
 </tr>
@@ -26937,16 +20165,12 @@ ODDC048\(3\) - Price Type \(Odette\)
 
 ODDC050\(1\) - Packaging Charge \(based on EDIFACT 7073\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC050\(2\) - Packaging Charge \(Odette\)
-
-
 
 </td>
 </tr>
@@ -26955,16 +20179,12 @@ ODDC050\(2\) - Packaging Charge \(Odette\)
 
 ODDC052\(1\) - Drawing Type \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC054\(1\) - Domestic/Export Indicator \(based on 7073 EDIFACT\)
-
-
 
 </td>
 </tr>
@@ -26973,16 +20193,12 @@ ODDC054\(1\) - Domestic/Export Indicator \(based on 7073 EDIFACT\)
 
 ODDC055\(1\) - Industry Identification
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC056\(1\) - Reference Table Identification
-
-
 
 </td>
 </tr>
@@ -26991,16 +20207,12 @@ ODDC056\(1\) - Reference Table Identification
 
 ODDC057\(1\) - Product Specification \(based on 6313 EDIFACT\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC057\(2\) - Product Specification \(Odette\)
-
-
 
 </td>
 </tr>
@@ -27009,16 +20221,12 @@ ODDC057\(2\) - Product Specification \(Odette\)
 
 ODDC058\(1\) - Action \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC059\(1\) - Information Requested \(based on EDIFACT 4511\)
-
-
 
 </td>
 </tr>
@@ -27027,16 +20235,12 @@ ODDC059\(1\) - Information Requested \(based on EDIFACT 4511\)
 
 ODDC059\(2\) - Information Requested \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC062\(1\) - Package Code Identifier \(based on 3055 EDIFACT\)
-
-
 
 </td>
 </tr>
@@ -27045,16 +20249,12 @@ ODDC062\(1\) - Package Code Identifier \(based on 3055 EDIFACT\)
 
 ODDC062\(2\) - Package Code Identifier \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC063\(1\) - Flow Dest. Indicator \(based on EDIFACT 4183\)
-
-
 
 </td>
 </tr>
@@ -27063,16 +20263,12 @@ ODDC063\(1\) - Flow Dest. Indicator \(based on EDIFACT 4183\)
 
 ODDC065\(1\) - Schedule Release Frequency \(EDIFACT 2013\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC065\(2\) - Schedule Release Frequency \(EDIFACT 2379\)
-
-
 
 </td>
 </tr>
@@ -27081,16 +20277,12 @@ ODDC065\(2\) - Schedule Release Frequency \(EDIFACT 2379\)
 
 ODDC065\(3\) - Schedule Release Frequency \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC066\(1\) - Terms of Transport \(Odette\)
-
-
 
 </td>
 </tr>
@@ -27099,16 +20291,12 @@ ODDC066\(1\) - Terms of Transport \(Odette\)
 
 ODDC067\(1\) - Supply Condition \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC068\(1\) - Supplier's Stock Turnover \(Odette\)
-
-
 
 </td>
 </tr>
@@ -27117,16 +20305,12 @@ ODDC068\(1\) - Supplier's Stock Turnover \(Odette\)
 
 ODDC069\(1\) - Tooling Type \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC070\(1\) - Tooling Specifier \(Odette\)
-
-
 
 </td>
 </tr>
@@ -27135,16 +20319,12 @@ ODDC070\(1\) - Tooling Specifier \(Odette\)
 
 ODDC071\(1\) - Reply Reason \(based on EDIFACT 4465\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC071\(2\) - Reply Reason \(Odette\)
-
-
 
 </td>
 </tr>
@@ -27153,16 +20333,12 @@ ODDC071\(2\) - Reply Reason \(Odette\)
 
 ODDC072\(1\) - Price List Type \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC075\(1\) - Anomalies \(Odette\)
-
-
 
 </td>
 </tr>
@@ -27171,16 +20347,12 @@ ODDC075\(1\) - Anomalies \(Odette\)
 
 ODDC076\(1\) - Split Consignments \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC079\(1\) - File Status \(Odette\)
-
-
 
 </td>
 </tr>
@@ -27189,16 +20361,12 @@ ODDC079\(1\) - File Status \(Odette\)
 
 ODDC080\(1\) - Link Purpose \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC081\(1\) - Quality Conformance \(Odette\)
-
-
 
 </td>
 </tr>
@@ -27207,16 +20375,12 @@ ODDC081\(1\) - Quality Conformance \(Odette\)
 
 ODDC082\(1\) - Safety Regulation Specifier \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC083\(1\) - Stock Balance Details \(based on 4503 EDIFACT\)
-
-
 
 </td>
 </tr>
@@ -27225,16 +20389,12 @@ ODDC083\(1\) - Stock Balance Details \(based on 4503 EDIFACT\)
 
 ODDC083\(2\) - Stock Balance Details \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC084\(1\) - Stock Movement Details
-
-
 
 </td>
 </tr>
@@ -27243,16 +20403,12 @@ ODDC084\(1\) - Stock Movement Details
 
 ODDC084\(A\) - Nature of Stock \(based on EDIFACT 7491\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC084\(B\) - Stock Movement Direction \(EDIFACT 4501\)
-
-
 
 </td>
 </tr>
@@ -27261,16 +20417,12 @@ ODDC084\(B\) - Stock Movement Direction \(EDIFACT 4501\)
 
 ODDC085\(1\) - Issue Types \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC087\(1\) - Type of Means of Transport \(EDIFACT 8179\)
-
-
 
 </td>
 </tr>
@@ -27279,16 +20431,12 @@ ODDC087\(1\) - Type of Means of Transport \(EDIFACT 8179\)
 
 ODDC087\(2\) - Delivery Instruction Type
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC088\(1\) - Dangerous Goods Regulations \(EDIFACT 8273\)
-
-
 
 </td>
 </tr>
@@ -27297,16 +20445,12 @@ ODDC088\(1\) - Dangerous Goods Regulations \(EDIFACT 8273\)
 
 ODDC090\(1\) - Type of Equipment \(based on EDIFACT 8053\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC091\(1\) - Equipment Size and Type \(based on 8155 EDIFACT\)
-
-
 
 </td>
 </tr>
@@ -27315,16 +20459,12 @@ ODDC091\(1\) - Equipment Size and Type \(based on 8155 EDIFACT\)
 
 ODDC092\(1\) - Transport Priority \(based on 4219 EDIFACT\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC093\(1\) - Nature of Cargo \(based on EDIFACT 7085\)
-
-
 
 </td>
 </tr>
@@ -27333,16 +20473,12 @@ ODDC093\(1\) - Nature of Cargo \(based on EDIFACT 7085\)
 
 ODDC093\(A\) - Nature of Cargo \(Odette\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC094\(1\) - Government Agency \(based on EDIFACT 9415\)
-
-
 
 </td>
 </tr>
@@ -27351,16 +20487,12 @@ ODDC094\(1\) - Government Agency \(based on EDIFACT 9415\)
 
 ODDC095\(1\) - Government Involvement \(based on EDIFACT 9411\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC096\(1\) - Government Procedure \(based on EDIFACT 9353\)
-
-
 
 </td>
 </tr>
@@ -27369,16 +20501,12 @@ ODDC096\(1\) - Government Procedure \(based on EDIFACT 9353\)
 
 ODDC097\(1\) - Identity Number \(based on EDIFACT 7405\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC098\(1\) - Transport Movement \(based on EDIFACT 8323\)
-
-
 
 </td>
 </tr>
@@ -27387,16 +20515,12 @@ ODDC098\(1\) - Transport Movement \(based on EDIFACT 8323\)
 
 ODDC100\(1\) - Allowance/Charge Qualifier \(EDIFACT 5463\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC101\(1\) - Article number source \(based on EDIFACT 7143\)
-
-
 
 </td>
 </tr>
@@ -27405,16 +20529,12 @@ ODDC101\(1\) - Article number source \(based on EDIFACT 7143\)
 
 ODDC102\(1\) - Currency Type \(based on EDIFACT 6343\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC103\(1\) - Recalculation \(Odette\)
-
-
 
 </td>
 </tr>
@@ -27423,16 +20543,12 @@ ODDC103\(1\) - Recalculation \(Odette\)
 
 ODDC104\(1\) - Monetary Amount Type \(based on EDIFACT 5025\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC105\(1\) - Duty Tax Fee Type \(based on EDIFACT 5153\)
-
-
 
 </td>
 </tr>
@@ -27441,16 +20557,12 @@ ODDC105\(1\) - Duty Tax Fee Type \(based on EDIFACT 5153\)
 
 ODDC106\(1\) - Summary Total Type \(based on EDIFACT 6069\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC107\(1\) - Contract and Carriage Condition \(EDIFACT 4065\)
-
-
 
 </td>
 </tr>
@@ -27459,16 +20571,12 @@ ODDC107\(1\) - Contract and Carriage Condition \(EDIFACT 4065\)
 
 ODDC108\(1\) - Handling Unit category
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC109\(1\) - Free Text Qualifier \(based on EDIFACT 4451\)
-
-
 
 </td>
 </tr>
@@ -27477,16 +20585,12 @@ ODDC109\(1\) - Free Text Qualifier \(based on EDIFACT 4451\)
 
 ODDC110\(1\) - Opening/Closing Balance \(based on EDIFACT 6063\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC111\(1\) - Stock Movement Reason \(based on EDIFACT 4499\)
-
-
 
 </td>
 </tr>
@@ -27495,16 +20599,12 @@ ODDC111\(1\) - Stock Movement Reason \(based on EDIFACT 4499\)
 
 ODDC112\(1\) - Constants identifying volume measurement
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC113\(1\) - Constants identifying dimension
-
-
 
 </td>
 </tr>
@@ -27513,16 +20613,12 @@ ODDC113\(1\) - Constants identifying dimension
 
 ODDC114\(1\) - Constants identifying weight
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC115\(1\) - Standard date format \(based on EDIFACT 2379\)
-
-
 
 </td>
 </tr>
@@ -27531,16 +20627,12 @@ ODDC115\(1\) - Standard date format \(based on EDIFACT 2379\)
 
 ODDC116\(1\) - Payment Time Reference \(based on EDIFACT 2475\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC117\(1\) - Configuration level \(material\)
-
-
 
 </td>
 </tr>
@@ -27549,16 +20641,12 @@ ODDC117\(1\) - Configuration level \(material\)
 
 ODDC117\(2\) - Configuration level \(Despatched article\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC118\(1\) - Payment Variation \(based on EDIFACT 5245\)
-
-
 
 </td>
 </tr>
@@ -27567,16 +20655,12 @@ ODDC118\(1\) - Payment Variation \(based on EDIFACT 5245\)
 
 ODDC119\(1\) - Document Response Type \(EDIFACT 4343\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC121\(1\) - Document Function Coded \(Based on EDIFACT 1225\)
-
-
 
 </td>
 </tr>
@@ -27585,16 +20669,12 @@ ODDC121\(1\) - Document Function Coded \(Based on EDIFACT 1225\)
 
 ODDC122\(1\) - Odette Subset Identification
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC123\(1\) - Product Group Type
-
-
 
 </td>
 </tr>
@@ -27603,16 +20683,12 @@ ODDC123\(1\) - Product Group Type
 
 ODDC124\(1\) - Delivery Instruction Type
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC126\(1\) - Reported Discrepancy
-
-
 
 </td>
 </tr>
@@ -27621,16 +20697,12 @@ ODDC126\(1\) - Reported Discrepancy
 
 ODDC128\(1\) - Drawing Reference Qualifier based on EDIFACT 1153
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC128\(2\) - Status of Despatch Advice
-
-
 
 </td>
 </tr>
@@ -27639,16 +20711,12 @@ ODDC128\(2\) - Status of Despatch Advice
 
 ODDC129\(1\) - TYPE OF LABEL MARKING
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC130\(1\) - Type of Label Marking based on EDIFACT 4233
-
-
 
 </td>
 </tr>
@@ -27657,16 +20725,12 @@ ODDC130\(1\) - Type of Label Marking based on EDIFACT 4233
 
 ODDC131\(1\) - PARTY TYPE \(BASED ON EDIFACT 3035\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC132\(1\) - ODDC132 NATURE OF PACKAGING SERVICES
-
-
 
 </td>
 </tr>
@@ -27675,16 +20739,12 @@ ODDC132\(1\) - ODDC132 NATURE OF PACKAGING SERVICES
 
 ODDC133\(1\) - Nature of Packaging
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC134\(1\) - Message Function \(Based on EDIFACT 1225\)
-
-
 
 </td>
 </tr>
@@ -27693,16 +20753,12 @@ ODDC134\(1\) - Message Function \(Based on EDIFACT 1225\)
 
 ODDC135\(1\) - Additional Article Information
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC137\(1\) - Administration action code
-
-
 
 </td>
 </tr>
@@ -27711,16 +20767,12 @@ ODDC137\(1\) - Administration action code
 
 ODDC139\(1\) - Error code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC140\(1\) - Functional Entity Type
-
-
 
 </td>
 </tr>
@@ -27729,16 +20781,12 @@ ODDC140\(1\) - Functional Entity Type
 
 ODDC141\(1\) - Functional Reference Type
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC142\(1\) - Certificate name code
-
-
 
 </td>
 </tr>
@@ -27747,16 +20795,12 @@ ODDC142\(1\) - Certificate name code
 
 ODDC143\(1\) - Package Management Action Code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC144\(1\) - Transport Status Code
-
-
 
 </td>
 </tr>
@@ -27765,16 +20809,12 @@ ODDC144\(1\) - Transport Status Code
 
 ODDC145\(1\) - Complaint reason code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC146\(1\) - Delivery status code
-
-
 
 </td>
 </tr>
@@ -27783,16 +20823,12 @@ ODDC146\(1\) - Delivery status code
 
 ODDC147\(1\) - Package booking key
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC148\(1\) - Package Order Reason Code
-
-
 
 </td>
 </tr>
@@ -27801,16 +20837,12 @@ ODDC148\(1\) - Package Order Reason Code
 
 ODDC149\(1\) - Package marking type code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC150\(1\) - Exception reason code
-
-
 
 </td>
 </tr>
@@ -27819,16 +20851,12 @@ ODDC150\(1\) - Exception reason code
 
 ODDC151\(1\) - Order Information Source Qualifier
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC152\(1\) - Article number source \(Odette\)
-
-
 
 </td>
 </tr>
@@ -27837,16 +20865,12 @@ ODDC152\(1\) - Article number source \(Odette\)
 
 ODDC153\(1\) - Delivery priority code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC154\(1\) - Item characteristic code based on EDIFACT 7081
-
-
 
 </td>
 </tr>
@@ -27855,16 +20879,12 @@ ODDC154\(1\) - Item characteristic code based on EDIFACT 7081
 
 ODDC155\(1\) - RTI Quantities \(based on EDIFACT 6063\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC156\(1\) - Transport stage based on EDIFACT 8051
-
-
 
 </td>
 </tr>
@@ -27873,16 +20893,12 @@ ODDC156\(1\) - Transport stage based on EDIFACT 8051
 
 ODDC157\(1\) - Status category code based on EDIFACT 9015
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC158\(1\) - Handling instruction description code based on EDIFACT 4079
-
-
 
 </td>
 </tr>
@@ -27891,16 +20907,12 @@ ODDC158\(1\) - Handling instruction description code based on EDIFACT 4079
 
 ODDC159\(1\) - Dutiable goods indicator
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC160\(1\) - Status attribute, coded
-
-
 
 </td>
 </tr>
@@ -27909,16 +20921,12 @@ ODDC160\(1\) - Status attribute, coded
 
 ODDC161\(1\) - Damage remark code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC162\(1\) - Transport mode information
-
-
 
 </td>
 </tr>
@@ -27927,16 +20935,12 @@ ODDC162\(1\) - Transport mode information
 
 ODDC163\(1\) - Reason for ETA change
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC164\(1\) - Vehicle request purpose
-
-
 
 </td>
 </tr>
@@ -27945,16 +20949,12 @@ ODDC164\(1\) - Vehicle request purpose
 
 ODDC165\(1\) - Geofence zone level
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC166\(1\) - Movement type
-
-
 
 </td>
 </tr>
@@ -27963,16 +20963,12 @@ ODDC166\(1\) - Movement type
 
 ODDC167\(1\) - Power type code \(based on EDIFACT 7041\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC168\(1\) - Vehicle request confirmation code
-
-
 
 </td>
 </tr>
@@ -27981,16 +20977,12 @@ ODDC168\(1\) - Vehicle request confirmation code
 
 ODDC169\(1\) - Vehicle order type code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ODDC170\(1\) - Vehicle service order code
-
-
 
 </td>
 </tr>
@@ -27999,8 +20991,6 @@ ODDC170\(1\) - Vehicle service order code
 
 ODDC171\(1\) - Reason of vehicle service order rejection code
 
-
-
 </td>
 </tr>
 <tr>
@@ -28008,7 +20998,2477 @@ ODDC171\(1\) - Reason of vehicle service order rejection code
 
 ODDC172\(1\) - Reason for estimated time of completion change code
 
+</td>
+</tr>
+</table>
 
+
+
+### VDA Codelists
+
+These automotive codelists are defined by VDA - to be used in Message Guidelines based on VDA EDIFACT. It has only one version which is *2020-12* and consists of codelists all pertaining to the same version.
+
+**Codelists \(39\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Codelist
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+0057 - Subset identification
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+01 - Freight prepayment
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+02 - Means of transportation
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+03 - Delivery medium
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+04 - Country of origin
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+05 - Quantity unit
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+06 - Call-off key
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+07 - Use
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+08 - Preference status
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+09 - Transaction key
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+10 - Truck type key
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+11 - Package type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1101 - Packaging coding
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+12 - Warehousekeeper key
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+13 - Delivery code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+14 - Key to SA 712 Pos. 16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+15 - Bonded goods
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+16 - Stock status
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+17 - Label identification
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+18 - Packaging identification
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+19 - Property identification
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3055 - Code list responsible agency code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4183 - Reason for the exception
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4401 - Action code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4405 - Status description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4405\(2\) - Reason for complaint, code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4441\(1\) - Delivery status
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4441\(2\) - Author order reference
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4441\(3\) - Premium services for transports
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4499 - Booking key
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6063 - Quantity, qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6411 - Measure unit, code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7064 - Packaging type, code \(also valid as CL 11 for VDA 4913\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7295 - Requirement reason for packaging material
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7405 - Object identification code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7511 - Marking type
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8393 - Reusable packaging, cargo content, code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9015 - Status category, code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9321 - APERAK Error Codes - VDA
+
+</td>
+</tr>
+</table>
+
+
+
+### UNC Codelists
+
+The UNC Codelists have only one version which is *2020-12* and consists of codelists all pertaining to the same version.
+
+**Codelists \(304\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Codelist
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+0001 - Syntax identifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0002 - Syntax version number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0007 - Partner identification code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0013 - Service segment tag, coded
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0025 - Recipient's reference/password qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0029 - Processing priority code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0031 - Acknowledgement request
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0035 - Test indicator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0051 - Controlling agency
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0052 - Message version number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0054 - Message release number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0065 - Message type identifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0073 - First/last sequence message transfer indication
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0081 - Section identification
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0083 - Action, coded
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+0085 - Syntax error, coded
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1001 - Document name code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1049 - Message section code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1073 - Document line action code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1153 - Reference code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1159 - Sequence identifier source code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1225 - Message function code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1227 - Calculation sequence code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1229 - Action code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1373 - Document status code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1501 - Computer environment details code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1503 - Data format description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1505 - Value list type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1507 - Designated class code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2005 - Date or time or period function code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2009 - Terms time relation code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2013 - Frequency code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2015 - Despatch pattern code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2017 - Despatch pattern timing code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2023 - Period type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2151 - Period type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2155 - Charge period type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2379 - Date or time or period format code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2475 - Event time reference code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3035 - Party function code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3045 - Party name format code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3055 - Code list responsible agency code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3077 - Test medium code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3079 - Organisation classification code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3083 - Organisational class name code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3131 - Address type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3139 - Contact function code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3153 - Communication medium type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3155 - Communication means type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3207 - Country name code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3227 - Location function code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3237 - Sample location description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3239 - Country of origin name code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3279 - Geographic area code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3285 - Instruction receiving party identifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3289 - Person characteristic code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3295 - Name original alphabet code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3299 - Address purpose code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3301 - Enacting party identifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3397 - Name status code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3401 - Name component usage code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3403 - Name type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3405 - Name component type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3453 - Language name code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3455 - Language code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3457 - Originator type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3475 - Address status code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3477 - Address format code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3479 - Marital status description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3493 - Nationality code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3499 - Gender code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4017 - Delivery plan commitment level code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4025 - Business function code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4027 - Business function type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4035 - Priority type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4037 - Priority description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4043 - Trade class code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4049 - Certainty description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4051 - Characteristic relevance code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4053 - Delivery or transport terms description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4055 - Delivery or transport terms function code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4059 - Clause code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4065 - Contract and carriage condition code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4071 - Proviso code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4079 - Handling instruction description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4153 - Information details code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4183 - Special condition code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4215 - Transport charges payment method code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4219 - Transport service priority code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4221 - Discrepancy nature identification code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4233 - Marking instructions code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4237 - Payment arrangement code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4277 - Payment terms description identifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4279 - Payment terms type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4295 - Change reason description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4343 - Response type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4347 - Product identifier code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4383 - Bank operation code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4401 - Instruction description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4403 - Instruction type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4405 - Status description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4407 - Sample process step code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4419 - Test administration method code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4431 - Payment guarantee means code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4435 - Payment channel code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4437 - Account type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4439 - Payment conditions code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4441 - Tunnel restriction code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4447 - Free text format code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4451 - Text subject code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4453 - Free text function code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4455 - Back order arrangement type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4457 - Substitution condition code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4461 - Payment means code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4463 - Intra-company payment indicator code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4465 - Adjustment reason description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4471 - Settlement means code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4475 - Accounting entry type name code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4487 - Financial transaction type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4493 - Delivery instruction code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4499 - Inventory movement reason code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4501 - Inventory movement direction code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4503 - Inventory balance method code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4505 - Credit cover request type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4507 - Credit cover response type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4509 - Credit cover response reason code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4511 - Requested information description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4513 - Maintenance operation code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4517 - Seal condition code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4525 - Seal type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5007 - Monetary amount function description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5013 - Index code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5025 - Monetary amount type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5027 - Index type identifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5039 - Index representation code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5047 - Contribution code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5049 - Contribution type description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5125 - Price code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5153 - Duty or tax or fee type name code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5189 - Allowance or charge identification code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5213 - Sub-line item price change operation code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5237 - Charge category code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5243 - Rate or tariff class description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5245 - Percentage type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5249 - Percentage basis identification code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5261 - Charge unit code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5267 - Service type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5273 - Duty or tax or fee rate basis code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5283 - Duty or tax or fee function code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5305 - Duty or tax or fee category code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5307 - Tax or duty or fee payment due date code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5315 - Remuneration type name code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5375 - Price type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5379 - Product group type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5387 - Price specification code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5393 - Price multiplier type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5419 - Rate type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5463 - Allowance or charge code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5495 - Sub-line indicator code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5501 - Rate plan code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6029 - Geographical position code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6063 - Quantity type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6069 - Control total type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6071 - Frequency code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6077 - Result representation code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6079 - Result normalcy code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6085 - Dosage administration code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6087 - Result value type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6113 - Length type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6145 - Dimension type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6155 - Non-discrete measurement name code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6167 - Range type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6173 - Size type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6245 - Temperature type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6311 - Measurement purpose code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6313 - Measured attribute code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6321 - Measurement significance code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6331 - Statistic type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6341 - Exchange rate currency market identifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6343 - Currency type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6345 - Currency identification code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6347 - Currency usage code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6353 - Unit type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6411 - Measurement unit code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6415 - Clinical information type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+6417 - Measurement unit name code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7001 - Physical or logical state type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7007 - Physical or logical state description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7009 - Item description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7011 - Item availability code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7039 - Sample selection method code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7041 - Power type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7045 - Sample state code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7047 - Sample direction code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7059 - Class type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7065 - Package type description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7073 - Packaging terms and conditions code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7075 - Packaging level code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7077 - Description format code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7081 - Item characteristic code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7083 - Configuration operation code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7085 - Cargo type classification code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7111 - Characteristic value description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7133 - Product details type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7139 - Product characteristic identification code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7143 - Item type identification code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7161 - Special service description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7171 - Hierarchical structure relationship code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7173 - Hierarchy object code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7187 - Process type description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7233 - Packaging related description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7273 - Service requirement code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7293 - Sector area identification code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7295 - Requirement or condition description identifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7297 - Set type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7299 - Requirement designator code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7365 - Processing indicator description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7383 - Surface or layer code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7405 - Object identification code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7429 - Indexing structure code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7431 - Agreement type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7433 - Agreement type description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7449 - Membership type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7451 - Membership category description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7455 - Membership level code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7459 - Attendee category description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7491 - Inventory type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7493 - Damage details code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7495 - Object type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7497 - Structure component function code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7511 - Marking type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+7515 - Structure type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8015 - Traffic restriction code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8023 - Freight and other charges description identifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8025 - Conveyance call purpose description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8035 - Traffic restriction type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8051 - Transport stage code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8053 - Equipment type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8067 - Transport mode name code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8077 - Equipment supplier code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8101 - Transit direction indicator code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8155 - Equipment size and type description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8169 - Full or empty indicator code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8179 - Transport means description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8249 - Equipment status code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8273 - Dangerous goods regulations code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8275 - Container or package contents indicator code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8281 - Transport means ownership indicator code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8323 - Transport movement code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8325 - Hazardous means of transport category code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8335 - Movement type description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8339 - Packaging danger level code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8341 - Haulage arrangements code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8393 - Returnable package load contents code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8395 - Returnable package freight payment responsibility code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8453 - Transport means nationality code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8457 - Excess transportation reason code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+8459 - Excess transportation responsibility code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9003 - Employment details code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9013 - Status reason description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9015 - Status category code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9017 - Attribute function code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9023 - Definition function code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9025 - Definition extent code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9029 - Value definition code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9031 - Edit mask representation code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9035 - Qualification application area code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9037 - Qualification type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9039 - Facility type description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9043 - Reservation identifier code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9045 - Basis code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9051 - Applicability code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9141 - Relationship type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9143 - Relationship description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9153 - Simple data element character representation code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9155 - Length type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9161 - Code set indicator code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9169 - Data representation type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9175 - Data element usage type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9213 - Duty regime type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9285 - Validation criteria code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9303 - Sealing party name code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9353 - Government procedure code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9411 - Government involvement code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9415 - Government agency identification code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9417 - Government action code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9421 - Process stage code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9437 - Clinical intervention description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9441 - Clinical intervention type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9443 - Attendance type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9447 - Discharge type description code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9453 - Code value source code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9501 - Formula type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9507 - Formula sequence code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9509 - Formula sequence operand code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9601 - Information category code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9623 - Diagnosis type code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9625 - Related cause code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9633 - Information details code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9635 - Event details code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9641 - Service basis code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9643 - Supporting evidence type code qualifier
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9645 - Payer responsibility level code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9649 - Processing information code qualifier
+
+</td>
+</tr>
+</table>
+
+
+
+### Error Codelists
+
+The Error Codelists has only one version which is **2020-12** and consists of codelists all pertaining to the same version.
+
+**Codelists \(2\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Codelist
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+4441 - Application error severity code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+9321 - Application error code
 
 </td>
 </tr>
@@ -28020,7 +23480,7 @@ ODDC172\(1\) - Reason for estimated time of completion change code
 
 ## Other B2B Codelist Standards
 
--   Automotive Codelists \(VDA, UNC, Error\)
+-   Automotive Codelists \(Error\)
 
 
 

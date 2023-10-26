@@ -37,14 +37,10 @@ Custom integration adapter eases the integration of a business based on your req
 
 Design Time Operations
 
-
-
 </th>
 <th valign="top">
 
 Monitoring view Operations
-
-
 
 </th>
 </tr>
@@ -53,14 +49,10 @@ Monitoring view Operations
 
 The adapter is available for modeling in the integration flow once the custom adapter is imported as an artifact in the integration package.
 
-
-
 </td>
 <td valign="top">
 
 You can monitor the status of deployed custom integration adapter. The status details show the status of the integration adapter with regard to its usage at runtime.
-
-
 
 </td>
 </tr>
@@ -69,14 +61,10 @@ You can monitor the status of deployed custom integration adapter. The status de
 
 The version history shows the versions of the adapters that are maintained in the design workspace.
 
-
-
 </td>
 <td valign="top">
 
 You can *Restart*, *Undeploy*, and *Download* from the *Manage Integration Content* view.
-
-
 
 </td>
 </tr>
@@ -85,14 +73,10 @@ You can *Restart*, *Undeploy*, and *Download* from the *Manage Integration Conte
 
 You can *Delete*, *Download*, and *Deploy* the imported custom integration adapter through *Actions*. You can also edit via *View metadata*.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

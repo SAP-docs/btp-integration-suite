@@ -74,14 +74,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -90,14 +86,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -114,14 +106,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -130,14 +118,10 @@ Description
 
 *Address*
 
-
-
 </td>
 <td valign="top">
 
 Enter the URL of the LDAP directory service that you're connecting to.
-
-
 
 </td>
 </tr>
@@ -146,14 +130,10 @@ Enter the URL of the LDAP directory service that you're connecting to.
 
 *Proxy Type*
 
-
-
 </td>
 <td valign="top">
 
 Select the proxy type that you want to use. Currently, only *On Premise* is supported.
-
-
 
 </td>
 </tr>
@@ -162,14 +142,10 @@ Select the proxy type that you want to use. Currently, only *On Premise* is supp
 
 *Location ID*
 
-
-
 </td>
 <td valign="top">
 
 Enter the location ID.
-
-
 
 </td>
 </tr>
@@ -178,14 +154,10 @@ Enter the location ID.
 
 *Authentication*
 
-
-
 </td>
 <td valign="top">
 
 Select the authentication type that you want to use. Currently, only *Simple* is supported.
-
-
 
 </td>
 </tr>
@@ -194,14 +166,10 @@ Select the authentication type that you want to use. Currently, only *Simple* is
 
 *Credential Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the credential name you've deployed in the tenant.
-
-
 
 </td>
 </tr>
@@ -218,14 +186,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -233,8 +197,6 @@ Description
 <td valign="top">
 
 *Operation*
-
-
 
 </td>
 <td valign="top">
@@ -283,14 +245,10 @@ Provide the *Distinguished Name* of the objectClass that you want to delete.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -298,8 +256,6 @@ Description
 <td valign="top">
 
 *Input Type*
-
-
 
 </td>
 <td valign="top">
@@ -320,8 +276,6 @@ Select the *Input Type that* you're providing. Supported types are:
 
 For *Java \(JNDI\) Attributes*, select one of the following:
 
-
-
 </td>
 </tr>
 <tr>
@@ -329,14 +283,10 @@ For *Java \(JNDI\) Attributes*, select one of the following:
 
 *Consider attributes from class ModificationItem*
 
-
-
 </td>
 <td valign="top">
 
 Enable the checkbox to have the script file return '*<modificationItem\>*' object in body having *<ModificationItem\[\]\>*.
-
-
 
 </td>
 </tr>
@@ -344,8 +294,6 @@ Enable the checkbox to have the script file return '*<modificationItem\>*' objec
 <td valign="top">
 
 *Modification Type*
-
-
 
 </td>
 <td valign="top">
@@ -368,16 +316,12 @@ Select the type of modification that you want to make. Supported types are:
 
 For *XML*, do the following:
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Modification Type*
-
-
 
 </td>
 <td valign="top">
@@ -399,8 +343,6 @@ Select the type of modification that you want to make. Supported types are:
 <td valign="top">
 
 *Consider additional attributes for modification*
-
-
 
 </td>
 <td valign="top">
@@ -431,14 +373,10 @@ Enable checkbox to pick up modification item from the XML attribute '*<modificat
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -447,14 +385,10 @@ Description
 
 *Base DN*
 
-
-
 </td>
 <td valign="top">
 
 Provide the Base Distinguished Name that helps to identify the highest point in the hierarchy of the directory from which the search is initiated.
-
-
 
 </td>
 </tr>
@@ -462,8 +396,6 @@ Provide the Base Distinguished Name that helps to identify the highest point in 
 <td valign="top">
 
 *Scope*
-
-
 
 </td>
 <td valign="top">
@@ -486,8 +418,6 @@ Select an attribute, placed below the Base DN, to define the extent of the searc
 
 *Search Filter*
 
-
-
 </td>
 <td valign="top">
 
@@ -507,14 +437,10 @@ Specify a search criteria applied to each entry within the scope.
 
 *Output Type*
 
-
-
 </td>
 <td valign="top">
 
 Select the type of output format when the data is returned.
-
-
 
 </td>
 </tr>
@@ -522,8 +448,6 @@ Select the type of output format when the data is returned.
 <td valign="top">
 
 *Multivalued Response*
-
-
 
 </td>
 <td valign="top">
@@ -552,8 +476,6 @@ Select the format for your responses if there are multiple values for the querie
 
 *Attributes*
 
-
-
 </td>
 <td valign="top">
 
@@ -571,14 +493,10 @@ Specify the attribute that the query has to return.
 
 *Size Limit*
 
-
-
 </td>
 <td valign="top">
 
 Define an integer value, to set the maximum number of entries that is returned.
-
-
 
 </td>
 </tr>
@@ -587,14 +505,10 @@ Define an integer value, to set the maximum number of entries that is returned.
 
 *Timeout \(in min\)*
 
-
-
 </td>
 <td valign="top">
 
 Define an integer value, to set the maximum time that the server must wait before returning the results.
-
-
 
 </td>
 </tr>

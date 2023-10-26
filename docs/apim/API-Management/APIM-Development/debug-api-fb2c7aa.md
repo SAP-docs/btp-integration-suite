@@ -48,15 +48,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <th valign="top">
 
     Icon
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -66,15 +62,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     ![](images/Condition_Debug_7f30242.png)
 
     Condition
-
-
     
     </td>
     <td valign="top">
     
     Indicates a condition evaluated on the API
-
-
     
     </td>
     </tr>
@@ -84,15 +76,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     ![](images/StateChange_Debug_bec35ed.png)
 
     State Change
-
-
     
     </td>
     <td valign="top">
     
     Indicates the change of state of the execution flow
-
-
     
     </td>
     </tr>
@@ -102,15 +90,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     ![](images/Normal_3cefefd.png)
 
     Flow Information
-
-
     
     </td>
     <td valign="top">
     
     Indicates the information about the current flow
-
-
     
     </td>
     </tr>
@@ -120,15 +104,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     ![](images/Info_Debug_8db3fb6.png)
 
     Execution
-
-
     
     </td>
     <td valign="top">
     
     Indicates the result of a condition execution
-
-
     
     </td>
     </tr>
@@ -138,15 +118,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     ![](images/Error_Debug_cc46eac.png)
 
     Error
-
-
     
     </td>
     <td valign="top">
     
     Indicates an occurrence of error at the time of policy execution
-
-
     
     </td>
     </tr>
@@ -164,15 +140,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <th valign="top">
 
     Phase
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -180,15 +152,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <td valign="top">
     
     Proxy Endpoint
-
-
     
     </td>
     <td valign="top">
     
     Indicates the selected proxy Endpoint flow for execution. An API proxy can have multiple named proxy endpoints
-
-
     
     </td>
     </tr>
@@ -196,15 +164,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <td valign="top">
     
     Request Headers
-
-
     
     </td>
     <td valign="top">
     
     Lists the HTTP request headers
-
-
     
     </td>
     </tr>
@@ -212,15 +176,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <td valign="top">
     
     Request Content
-
-
     
     </td>
     <td valign="top">
     
     Displays the HTTP request body
-
-
     
     </td>
     </tr>
@@ -228,15 +188,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <td valign="top">
     
     Variables Read
-
-
     
     </td>
     <td valign="top">
     
     Lists the flow variables that were read by a policy
-
-
     
     </td>
     </tr>
@@ -244,15 +200,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <td valign="top">
     
     Variables Read and Assigned
-
-
     
     </td>
     <td valign="top">
     
     Lists the flow variables that were read and assigned a value by a policy.
-
-
     
     </td>
     </tr>
@@ -260,15 +212,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <td valign="top">
     
     Target Endpoint
-
-
     
     </td>
     <td valign="top">
     
     Indicates the selected Target Endpoint for execution
-
-
     
     </td>
     </tr>
@@ -276,15 +224,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <td valign="top">
     
     Response Headers
-
-
     
     </td>
     <td valign="top">
     
     Lists the HTTP response headers
-
-
     
     </td>
     </tr>
@@ -292,15 +236,11 @@ You debug an API proxy to troubleshoot and monitor them in SAP API Management, b
     <td valign="top">
     
     Response Content
-
-
     
     </td>
     <td valign="top">
     
     Displays the HTTP response body
-
-
     
     </td>
     </tr>

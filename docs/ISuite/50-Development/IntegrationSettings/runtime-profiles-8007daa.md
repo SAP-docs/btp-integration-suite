@@ -35,12 +35,12 @@ Based on your choice, you request an account and tenant at SAP.
 
 Under *Settings* \> *Integration*, you choose the default runtime profile. When you create a new integration flow, this choice is applied by default.
 
-All the profiles are visible in the *Runtime Profiles* tile. You can enable or disable the availability of the runtime profile in the tenant under the enable option. Only enabled runtime profiles appear in the integration flow under *Runtime Configuration*.
+All the profiles appear in the *Runtime Profiles* tile. You can enable or disable the availability of the runtime profile in the tenant under the enable option. Only enabled runtime profiles appear in the integration flow under *Runtime Configuration*.
 
 > ### Note:  
 > -   Runtime profiles are shown as enabled under *Settings*.
 > 
-> -   Using the switch option, tenant administrator can enable or disable runtime profiles. Users can edit the profiles page and save the settings.
+> -   Using the switch option, tenant administrator can enable or disable runtime profiles. Users can edit the profile's page and save the settings.
 > 
 > -   The Cloud Integration profile can’t be disabled. The switch option is grayed out.
 > 
@@ -50,10 +50,10 @@ All the profiles are visible in the *Runtime Profiles* tile. You can enable or d
 > 
 > -   If you disable the runtime profile already used in the integration flow
 > 
->     -   The palette shows an alert message indicating that the runtime profile set in the integration flow isn’t available; default profile set at the workspace level will be used for loading the palette and validations.
+>     -   The palette sends an alert message indicating that the runtime profile set in the integration flow isn’t available; default profile set at the workspace level will be used for loading the palette and validations.
 >     -   Disabled runtime profile is grayed out in the integration flow under *Runtime Configuration*.
 
-The integration flow editor shows the options and executes checks based on the chosen runtime profile. The reason for this is that the target integration platform imposes specific restrictions on the Cloud integration content.
+The integration flow editor displays the options and executes checks based on the chosen runtime profile. The reason for this is that the target integration platform imposes specific restrictions on the Cloud integration content.
 
 You have the option to configure a runtime profile also for an individual integration flow \(under *Runtime Configuration*\).
 

@@ -19,28 +19,20 @@ This set of metadata allows you to define components details.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Datatype
-
-
 
 </th>
 <th valign="top">
 
 Cardinality
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -49,21 +41,15 @@ Description
 
 ComponentId
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
 
-
-
 </td>
 <td valign="top">
 
 Attribute
-
-
 
 </td>
 <td valign="top">
@@ -76,8 +62,6 @@ ctype is type of component, which is adapter in this particular example
 
 cname is component name, which is sap:dropbox in this example. Here, sap is vendor and dropbox is name
 
-
-
 </td>
 </tr>
 <tr>
@@ -85,28 +69,20 @@ cname is component name, which is sap:dropbox in this example. Here, sap is vend
 
 ComponentDisplayName
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
 
 Attribute
 
-
-
 </td>
 <td valign="top">
 
 Specifies display name of the component.
-
-
 
 </td>
 </tr>
@@ -114,8 +90,6 @@ Specifies display name of the component.
 <td valign="top">
 
 Variant
-
-
 
 </td>
 <td valign="top">
@@ -127,14 +101,10 @@ Variant
 
 Child Element
 
-
-
 </td>
 <td valign="top">
 
 Different variants for a specific component type - for example: Sender and Receiver variants of an adapter
-
-
 
 </td>
 </tr>
@@ -143,21 +113,15 @@ Different variants for a specific component type - for example: Sender and Recei
 
 gen:RuntimeComponentBaseUri
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
 
-
-
 </td>
 <td valign="top">
 
 Attribute
-
-
 
 </td>
 <td valign="top">
@@ -193,21 +157,15 @@ Example for specifiying attribute in the CMD:
 
 IsRequestResponse
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
 
-
-
 </td>
 <td valign="top">
 
 Attribute
-
-
 
 </td>
 <td valign="top">
@@ -216,8 +174,6 @@ This attribute is used for enabling the component to allow the service call for 
 
 Henceforth, you should define it at **variants** level only.
 
-
-
 </td>
 </tr>
 <tr>
@@ -225,28 +181,20 @@ Henceforth, you should define it at **variants** level only.
 
 hci:FirstUriPart
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
 
 Attribute
 
-
-
 </td>
 <td valign="top">
 
 Specifies the initial part of the URI. Customer can provide custom values for the first part of the URI string. Default value is 'foo'.
-
-
 
 </td>
 </tr>
@@ -255,21 +203,15 @@ Specifies the initial part of the URI. Customer can provide custom values for th
 
 adapterInstanceID
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
 
-
-
 </td>
 <td valign="top">
 
 Attribute
-
-
 
 </td>
 <td valign="top">
@@ -318,28 +260,20 @@ This set of metadata allows you to define variants for a component.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Datatype
-
-
 
 </th>
 <th valign="top">
 
 Cardinality
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -348,21 +282,15 @@ Description
 
 Id
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -377,16 +305,12 @@ mp stands for message protocol
 
 direction refers to Sender or Receiver system
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Groups
-
-
 
 </td>
 <td valign="top">
@@ -398,14 +322,10 @@ Groups
 
 Child Element
 
-
-
 </td>
 <td valign="top">
 
 Specifies collection of attributes defining metadata.
-
-
 
 </td>
 </tr>
@@ -414,28 +334,20 @@ Specifies collection of attributes defining metadata.
 
 VariantDisplayName
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
 
 Attribute
 
-
-
 </td>
 <td valign="top">
 
 Specifies display name of the variant.
-
-
 
 </td>
 </tr>
@@ -446,8 +358,6 @@ Input Content
 
 Tag used <InputContent\>
 
-
-
 </td>
 <td valign="top">
 
@@ -457,8 +367,6 @@ Tag used <InputContent\>
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -472,21 +380,15 @@ Input content specifies the type of data the adapter processes.
 
 Properties
 
-
-
 </th>
 <th valign="top">
 
 Attributes/Child Elements
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -495,14 +397,10 @@ Description
 
 ContentType
 
-
-
 </td>
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -510,8 +408,6 @@ Child Element
 Actual content type
 
 Supported content types: Xml, String, Boolean, Base64Encoded, Any, Json, Binary, Zip, GZip, Integer, NonXml, None and Text.
-
-
 
 </td>
 </tr>
@@ -526,21 +422,15 @@ Supported content types: Xml, String, Boolean, Base64Encoded, Any, Json, Binary,
 
 Output Content
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -554,21 +444,15 @@ Output content specifies the type of data the adapter produces. Example: XML.
 
 Properties
 
-
-
 </th>
 <th valign="top">
 
 Attributes/Child Elements
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -577,14 +461,10 @@ Description
 
 ContentType
 
-
-
 </td>
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -592,8 +472,6 @@ Child Element
 Actual content type
 
 <ManifestEntries\> <ManifestEntry\> <Name\>Import-PackageSupported content types: Xml, String, Boolean, Base64Encoded, Any, Json, Binary, Zip, GZip, Integer, NonXml, None and Text. <ManifestEntries\> <ManifestEntry\> <Name\>Import-Package</Name\> <Value\>com.sap.gateway.core.service.ljs.registry;resolution:=optional,com.sap.gateway.core.ljs;resolution:=optional</Value\> </ManifestEntry\> </ManifestEntries\>
-
-
 
 </td>
 </tr>
@@ -608,8 +486,6 @@ Actual content type
 
 Metadata
 
-
-
 </td>
 <td valign="top">
 
@@ -619,8 +495,6 @@ Metadata
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -663,21 +537,15 @@ Example for specifiying attribute in the CMD:
 
 ManifestEntries
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -700,21 +568,15 @@ Example for specifiying attribute in the CMD:
 
 Allowed Headers
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -741,28 +603,20 @@ Example for specifiying attribute in the CMD:
 
 hci:FirstUriPart
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
 
 Attribute
 
-
-
 </td>
 <td valign="top">
 
 Specifies the initial part of the URI. Customer can provide custom values for the first part of the URI string.
-
-
 
 </td>
 </tr>
@@ -771,28 +625,20 @@ Specifies the initial part of the URI. Customer can provide custom values for th
 
 IsRequestResponse
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
 
 Attribute
 
-
-
 </td>
 <td valign="top">
 
 This attribute is used for enabling the variant to allow the service call for Request Reply
-
-
 
 </td>
 </tr>
@@ -801,28 +647,20 @@ This attribute is used for enabling the variant to allow the service call for Re
 
 supportsPolling
 
-
-
 </td>
 <td valign="top">
 
 xsd:boolean
-
-
 
 </td>
 <td valign="top">
 
 Attribute
 
-
-
 </td>
 <td valign="top">
 
 This attribute depicts if the component has the polling behavior. \(supportsPolling\). It also helps in populating the timer icon at design time when IFlow is decorated. Default value is false. It is applicable for sender channel only.
-
-
 
 </td>
 </tr>
@@ -831,21 +669,15 @@ This attribute depicts if the component has the polling behavior. \(supportsPoll
 
 AttachmentBehavior
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
 
-
-
 </td>
 <td valign="top">
 
 Attribute
-
-
 
 </td>
 <td valign="top">
@@ -859,16 +691,12 @@ This attribute helps to identify the component behavior towards attachment.
 
 If attachment behavior is not specified; system considers that the component lost the attachment.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ReferencedComponents
-
-
 
 </td>
 <td valign="top">
@@ -880,14 +708,10 @@ ReferencedComponents
 
 Child Element
 
-
-
 </td>
 <td valign="top">
 
 Specifies the reused component to be referred by the adapter.
-
-
 
 </td>
 </tr>
@@ -913,28 +737,20 @@ This set of metadata allows you to specify tab pages for the adapter configurati
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Datatype
-
-
 
 </th>
 <th valign="top">
 
 Cardinality
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -943,28 +759,20 @@ Description
 
 Id
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Specifies the tab identifier.
-
-
 
 </td>
 </tr>
@@ -973,21 +781,15 @@ Specifies the tab identifier.
 
 GuiLabels
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1003,8 +805,6 @@ Specifies a language-specific GUILabel. Sample GUILabel is shown below:
 Here, Label language = "EN" represents that the text of guilabel is in english. Address is the text for the attribute name.
 
 Currently, guilabel supports only English language.
-
-
 
 </td>
 </tr>
@@ -1025,28 +825,20 @@ This set of metadata allows you to group adapter attributes.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Datatype
-
-
 
 </th>
 <th valign="top">
 
 Cardinality
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -1055,28 +847,20 @@ Description
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1085,21 +869,15 @@ xsd:string
 
 Id
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1112,8 +890,6 @@ Examples:
 
 `Dropbox Security Settings`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1121,28 +897,20 @@ Examples:
 
 AttributeReference
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 Child Element
 
-
-
 </td>
 <td valign="top">
 
 Specifies ReferenceName, ErrorMessage, Restriction, and Description
-
-
 
 </td>
 </tr>
@@ -1151,28 +919,20 @@ Specifies ReferenceName, ErrorMessage, Restriction, and Description
 
 GuiLabels
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 Specifies a language-specific GUI label.
-
-
 
 </td>
 </tr>
@@ -1180,8 +940,6 @@ Specifies a language-specific GUI label.
 <td valign="top">
 
 Value - Datatype
-
-
 
 </td>
 <td valign="top">
@@ -1192,8 +950,6 @@ Value - Datatype
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -1272,28 +1028,20 @@ The sample attribute group is shown below:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Data Type
-
-
 
 </th>
 <th valign="top">
 
 Cardinality
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -1302,14 +1050,10 @@ Description
 
 ReferenceName
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
@@ -1321,8 +1065,6 @@ xsd:string
 
 Specifies that in the CMD there is an attribute definition associated with this reference name.
 
-
-
 </td>
 </tr>
 <tr>
@@ -1330,14 +1072,10 @@ Specifies that in the CMD there is an attribute definition associated with this 
 
 description
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
@@ -1349,8 +1087,6 @@ xsd:string
 
 Brief description of the attribute, which is shown as the tool tip.
 
-
-
 </td>
 </tr>
 <tr>
@@ -1358,14 +1094,10 @@ Brief description of the attribute, which is shown as the tool tip.
 
 Restriction
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
@@ -1377,8 +1109,6 @@ xsd:string
 
 Details given below in the table.
 
-
-
 </td>
 </tr>
 <tr>
@@ -1386,14 +1116,10 @@ Details given below in the table.
 
 ErrorMessage
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
@@ -1404,8 +1130,6 @@ xsd:string
 <td valign="top">
 
 If the constraint specified in the restriction tag fails, the system shows the error message set in this tag. If this field is not set, then the system shows a default error message at the time of check failure.
-
-
 
 </td>
 </tr>
@@ -1420,14 +1144,10 @@ If the constraint specified in the restriction tag fails, the system shows the e
 
 Constraint
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -1435,8 +1155,6 @@ Description
 <td valign="top">
 
 isValidRegex
-
-
 
 </td>
 <td valign="top">
@@ -1463,14 +1181,10 @@ Method will check a value against a passed regex. Returns true in case value mat
 
 isAlphaNumeric
 
-
-
 </td>
 <td valign="top">
 
 Checks whether the pass value is alphanumeric
-
-
 
 </td>
 </tr>
@@ -1479,14 +1193,10 @@ Checks whether the pass value is alphanumeric
 
 isStartsWithLetter
 
-
-
 </td>
 <td valign="top">
 
 Checks the passed value starts with Letter
-
-
 
 </td>
 </tr>
@@ -1495,14 +1205,10 @@ Checks the passed value starts with Letter
 
 isValidURIString
 
-
-
 </td>
 <td valign="top">
 
 Returns true if it is valid URI String. It can start with http\(s\), ftp, file or ldap
-
-
 
 </td>
 </tr>
@@ -1511,14 +1217,10 @@ Returns true if it is valid URI String. It can start with http\(s\), ftp, file o
 
 isValidXMLString
 
-
-
 </td>
 <td valign="top">
 
 Returns true if passed string is a valid XML String
-
-
 
 </td>
 </tr>
@@ -1527,14 +1229,10 @@ Returns true if passed string is a valid XML String
 
 isValidNCName
 
-
-
 </td>
 <td valign="top">
 
 Return true if passed string value is valid NCName
-
-
 
 </td>
 </tr>
@@ -1543,14 +1241,10 @@ Return true if passed string value is valid NCName
 
 isValidXpath
 
-
-
 </td>
 <td valign="top">
 
 Returns true if passed string value is valid xpath expression
-
-
 
 </td>
 </tr>
@@ -1596,28 +1290,20 @@ The sample attribute metadata should be as shown below:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Datatype
-
-
 
 </th>
 <th valign="top">
 
 Cardinality
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -1626,21 +1312,15 @@ Description
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1649,8 +1329,6 @@ Specifies the parameter id.
 
 Example: `address`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1658,28 +1336,20 @@ Example: `address`
 
 Usage
 
-
-
 </td>
 <td valign="top">
 
 xsd:boolean
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Specifies if the field is mandatory or not. If the value is true then usage of field is mandatory. If the value is false then usage of field is not mandatory.
-
-
 
 </td>
 </tr>
@@ -1688,21 +1358,15 @@ Specifies if the field is mandatory or not. If the value is true then usage of f
 
 Default
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1711,8 +1375,6 @@ Specifies a default value.
 
 Example: <code><code>/BSN/paymentOrder</code></code> 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1720,21 +1382,15 @@ Example: <code><code>/BSN/paymentOrder</code></code>
 
 Datatype
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1747,8 +1403,6 @@ Examples:
 
 `xsd:integer`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1756,28 +1410,20 @@ Examples:
 
 Length
 
-
-
 </td>
 <td valign="top">
 
 xsd:integer
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Specifies the maximum character length for field values.
-
-
 
 </td>
 </tr>
@@ -1786,28 +1432,20 @@ Specifies the maximum character length for field values.
 
 Minlength
 
-
-
 </td>
 <td valign="top">
 
 xsd:integer
-
-
 
 </td>
 <td valign="top">
 
 Child Element
 
-
-
 </td>
 <td valign="top">
 
 Specifies the minimum character length for field values.
-
-
 
 </td>
 </tr>
@@ -1816,8 +1454,6 @@ Specifies the minimum character length for field values.
 
 HelpService
 
-
-
 </td>
 <td valign="top">
 
@@ -1827,8 +1463,6 @@ HelpService
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -1872,8 +1506,6 @@ Once you add the above code, then a *Browse* button gets enabled. You can click 
 
 *ResourceLocation* specifies relative path to project from where files are read or written.
 
-
-
 </td>
 </tr>
 <tr>
@@ -1881,28 +1513,20 @@ Once you add the above code, then a *Browse* button gets enabled. You can click 
 
 GUILabel
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 Child Element
 
-
-
 </td>
 <td valign="top">
 
 Specifies a language-specific GUI label.
-
-
 
 </td>
 </tr>
@@ -1911,21 +1535,15 @@ Specifies a language-specific GUI label.
 
 FixedValue\(s\)
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -1939,21 +1557,15 @@ Specifies a fixed list of allowed values.
 
 Properties
 
-
-
 </th>
 <th valign="top">
 
 Attributes/Child Elements
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -1962,21 +1574,15 @@ Description
 
 FixedValue
 
-
-
 </td>
 <td valign="top">
 
 Child Element
 
-
-
 </td>
 <td valign="top">
 
 Specifies fixed list of allowed values. Multiple FixedValue tags together are called a combo.
-
-
 
 </td>
 </tr>
@@ -1985,21 +1591,15 @@ Specifies fixed list of allowed values. Multiple FixedValue tags together are ca
 
 isEditable
 
-
-
 </td>
 <td valign="top">
 
 Child Element
 
-
-
 </td>
 <td valign="top">
 
 If the element is set to 'true', then the dropdown and combo fields are editable.
-
-
 
 </td>
 </tr>
@@ -2008,14 +1608,10 @@ If the element is set to 'true', then the dropdown and combo fields are editable
 
 Sort
 
-
-
 </td>
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -2051,28 +1647,20 @@ If the element is set to 'true', then the values are arranged either in ascendin
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Data Type
-
-
 
 </th>
 <th valign="top">
 
 Cardinality
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -2081,8 +1669,6 @@ Description
 
 AttributeName
 
-
-
 </td>
 <td valign="top">
 
@@ -2093,14 +1679,10 @@ AttributeName
 
 Child Element
 
-
-
 </td>
 <td valign="top">
 
 Name of the attribute
-
-
 
 </td>
 </tr>
@@ -2109,8 +1691,6 @@ Name of the attribute
 
 AttributeValue
 
-
-
 </td>
 <td valign="top">
 
@@ -2121,14 +1701,10 @@ AttributeValue
 
 Child Element
 
-
-
 </td>
 <td valign="top">
 
 Value of the attribute
-
-
 
 </td>
 </tr>
@@ -2137,8 +1713,6 @@ Value of the attribute
 
 AndCondition
 
-
-
 </td>
 <td valign="top">
 
@@ -2148,8 +1722,6 @@ AndCondition
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -2177,16 +1749,12 @@ Example of Complex condition
 
 As you can see in the above example AndCondition is complex condition that contains two or more EditConditions\(basic conditions\) and for the condition to be satisfied both of these basic conditions is satisfied.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OrCondition
-
-
 
 </td>
 <td valign="top">
@@ -2197,8 +1765,6 @@ OrCondition
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -2209,16 +1775,12 @@ This is complex constraint that is used when satisfaction of any one of the nest
 
 The structure of OrCondition is similar to And condition, with only change from <AndCondition\> to <OrCondition\>.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 NotCondition
-
-
 
 </td>
 <td valign="top">
@@ -2229,8 +1791,6 @@ NotCondition
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -2264,8 +1824,6 @@ Not condition can contain only one edit condition but multiple complex condition
 
 EditCondition
 
-
-
 </td>
 <td valign="top">
 
@@ -2275,8 +1833,6 @@ EditCondition
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -2289,8 +1845,6 @@ a\) $PROFILE.NAME - environment variables starting with profile are properties f
 
 b\) $ENV.VARIABLE - environment variables starting with env are system properties for vm
 
-
-
 </td>
 </tr>
 <tr>
@@ -2298,28 +1852,20 @@ b\) $ENV.VARIABLE - environment variables starting with env are system propertie
 
 AttributeBehavior
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
 
 Child Element
 
-
-
 </td>
 <td valign="top">
 
 If you assign *AttributeBehavior* as `SecureAlias` for a particular field, then the field refers to alias of security parameter artifact.
-
-
 
 </td>
 </tr>
@@ -2334,28 +1880,20 @@ If you assign *AttributeBehavior* as `SecureAlias` for a particular field, then 
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Data Type
-
-
 
 </th>
 <th valign="top">
 
 Cardinality
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -2364,14 +1902,10 @@ Description
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
@@ -2390,14 +1924,10 @@ xsd:string
 
 Usage
 
-
-
 </td>
 <td valign="top">
 
 xsd:boolean
-
-
 
 </td>
 <td valign="top">
@@ -2416,8 +1946,6 @@ xsd:boolean
 
 HelpService
 
-
-
 </td>
 <td valign="top">
 
@@ -2427,8 +1955,6 @@ HelpService
 <td valign="top">
 
 Child Element
-
-
 
 </td>
 <td valign="top">
@@ -2452,16 +1978,12 @@ Once you add the above code, then a *Browse* button gets enabled. You can click 
 
 This attribute supports *\*.crt* and *\*.cer* types of certificates only.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AttributeReference
-
-
 
 </td>
 <td valign="top">
@@ -2490,14 +2012,10 @@ Specifies reference name that is header of the column.
 
 Guilabels
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
@@ -2508,8 +2026,6 @@ xsd:string
 <td valign="top">
 
 Specifies the label of the table.
-
-
 
 </td>
 </tr>

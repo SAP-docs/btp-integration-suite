@@ -15,28 +15,20 @@ The Integration Designer allows you to model specific patterns which are handled
 
 Modelled Pattern
 
-
-
 </th>
 <th valign="top">
 
 Expected Behavior at Runtime
-
-
 
 </th>
 <th valign="top">
 
 Actual Behavior at Runtime
 
-
-
 </th>
 <th valign="top">
 
 Alternative Modeling Option
-
-
 
 </th>
 </tr>
@@ -47,14 +39,10 @@ Integration flow step with more than one outgoing sequence flows
 
 For example, after a Message Persistence step the message is supposed to be sent to multiple receivers in parallel.
 
-
-
 </td>
 <td valign="top">
 
 The same message is processed in parallel after the integration flow step.
-
-
 
 </td>
 <td valign="top">
@@ -74,8 +62,6 @@ In addition to that, the following behavior may occur: the message which results
 <td valign="top">
 
 Configure only one outgoing sequence flow and parallel processing using a multicast of messages.
-
-
 
 </td>
 </tr>

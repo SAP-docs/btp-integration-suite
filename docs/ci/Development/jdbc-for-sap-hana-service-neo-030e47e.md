@@ -13,14 +13,10 @@ JDBC receiver adapter supports SAP HANA Service cloud database provided by SAP.
 
 Database Provider
 
-
-
 </td>
 <td valign="top">
 
 SAP
-
-
 
 </td>
 </tr>
@@ -29,14 +25,10 @@ SAP
 
 Infrastructure
 
-
-
 </td>
 <td valign="top">
 
 Cloud
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ Cloud
 
 SAP BTP Environment
 
-
-
 </td>
 <td valign="top">
 
 Neo 
-
-
 
 </td>
 </tr>

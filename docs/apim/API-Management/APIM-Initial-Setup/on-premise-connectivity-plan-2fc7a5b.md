@@ -61,36 +61,26 @@ After you have created a service instance, proceed with:
     <th valign="top">
 
     To create service key of credential type…
-
-
     
     </th>
     <th valign="top">
 
     Use payload…
-
-
     
     </th>
     <th valign="top">
 
     Level of Security
-
-
     
     </th>
     <th valign="top">
 
     Important Notes
-
-
     
     </th>
     <th valign="top">
 
     Sample of generated credentials
-
-
     
     </th>
     </tr>
@@ -98,8 +88,6 @@ After you have created a service instance, proceed with:
     <td valign="top">
     
     `“instance-secret”`\(without payload\)
-
-
     
     </td>
     <td valign="top">
@@ -110,15 +98,11 @@ After you have created a service instance, proceed with:
     <td valign="top">
     
     Low
-
-
     
     </td>
     <td valign="top">
     
     For instance-secret, the clientSecret generated is same for all the keys.
-
-
     
     </td>
     <td valign="top">
@@ -142,8 +126,6 @@ After you have created a service instance, proceed with:
     <td valign="top">
     
     `“instance-secret”`\(with payload\)
-
-
     
     </td>
     <td valign="top">
@@ -163,15 +145,11 @@ After you have created a service instance, proceed with:
     <td valign="top">
     
     Low
-
-
     
     </td>
     <td valign="top">
     
     For instance-secret, the clientSecret generated is same for all the keys.
-
-
     
     </td>
     <td valign="top">
@@ -194,8 +172,6 @@ After you have created a service instance, proceed with:
     <td valign="top">
     
     `"binding-secret"` 
-
-
     
     </td>
     <td valign="top">
@@ -215,15 +191,11 @@ After you have created a service instance, proceed with:
     <td valign="top">
     
     Medium
-
-
     
     </td>
     <td valign="top">
     
     For binding-secret, the clientSecret generated for every key is unique.
-
-
     
     </td>
     <td valign="top">
@@ -248,8 +220,6 @@ After you have created a service instance, proceed with:
     `"x509"`
 
     \(certificate based\)
-
-
     
     </td>
     <td valign="top">
@@ -274,15 +244,11 @@ After you have created a service instance, proceed with:
     <td valign="top">
     
     High
-
-
     
     </td>
     <td valign="top">
     
     For X509, ensure that the credential rotation is done based on the validity provided in the payload. For example, delete and create a new service key every 65 days.
-
-
     
     </td>
     <td valign="top">

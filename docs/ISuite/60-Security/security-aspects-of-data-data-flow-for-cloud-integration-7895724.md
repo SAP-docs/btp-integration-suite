@@ -26,14 +26,10 @@ Each adapter allows you to set up a specific security level based on the underly
 
 Transport Protocol
 
-
-
 </th>
 <th valign="top">
 
 Transport-Level Security
-
-
 
 </th>
 </tr>
@@ -41,8 +37,6 @@ Transport-Level Security
 <td valign="top">
 
 HTTP\(S\) \(Hypertext Transfer Protocol Secure\)
-
-
 
 </td>
 <td valign="top">
@@ -76,16 +70,12 @@ Various authentication options \(basic authentication using user credentials, cl
 
 This protocol is supported by all adapter types that allow communication over HTTPS, for example: Ariba, AS2, AS4, ELSTER, Facebook, HTTP, SOAP, IDoc, OData, ODC, OpenConnectors, SAP SuccessFactors, Twitter, XI.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 SFTP \(Secure Shell File Transfer Protocol\)
-
-
 
 </td>
 <td valign="top">
@@ -112,16 +102,12 @@ Supported versions:
 
 This protocol is supported by the SFTP sender and receiver adapter.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 FTPS \(Secure File Transfer Protocol\)
-
-
 
 </td>
 <td valign="top">
@@ -130,16 +116,12 @@ This protocol is used to transfer files from and to file servers. This is an ext
 
 This protocol is supported by the FTP sender and receiver adapter.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JMS \(Java Message Service\)
-
-
 
 </td>
 <td valign="top">
@@ -148,16 +130,12 @@ JMS is an API that supports reliable asynchronous communication based on a JMS M
 
 This protocol is supported by the JMS sender and receiver adapter.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 JDBC \(Java Database Connectivity\)
-
-
 
 </td>
 <td valign="top">
@@ -166,16 +144,12 @@ Java Database Connectivity \(JDBC\) is a protocol or API that defines how a clie
 
 This protocol is supported by the JDBC receiver adapter.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 RFC \(Remote Function Call\)
-
-
 
 </td>
 <td valign="top">
@@ -184,16 +158,12 @@ Remote Function Call \(RFC\) is an SAP-proprietary protocol that is used as stan
 
 This protocol is supported by the RFC receiver adapter.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TCP \(Transmission Control Protocol\)
-
-
 
 </td>
 <td valign="top">
@@ -202,16 +172,12 @@ TCP is one of the main communication protocols used on the Internet. TLS, mentio
 
 This protocol is supported by the AMQP \(TCP\) and the LDAP adapter.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 WebSocket
-
-
 
 </td>
 <td valign="top">
@@ -220,16 +186,12 @@ WebSocket is a protocol that supports simultaneous communication in both directi
 
 This protocol is supported by the AMQP \(WebSocket\) adapter.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 SMTPS \(Simple Mail Transfer Protocol Secure\)
-
-
 
 </td>
 <td valign="top">
@@ -245,16 +207,12 @@ To authenticate against the e-mail server, you can send user name and password i
 
 This protocol is used by the Mail receiver adapter.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 POP3S \(Post Office Protocol version 3 over TLS/SSL\)
-
-
 
 </td>
 <td valign="top">
@@ -270,16 +228,12 @@ To authenticate against the e-mail server, you can send user name and password i
 
 This protocol can be used by the Mail sender adapter.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 IMAPS \(Internet Message Access Protocol over TLS/SSL\)
-
-
 
 </td>
 <td valign="top">
@@ -296,8 +250,6 @@ To authenticate against the e-mail server, you can send user name and password i
 > The \(optional\) password-based authentication only applies to communication between the Cloud Integration system and the mail server. Communication between mail servers is usually not authenticated. Therefore, you must not assume that data received by mail comes from a trustworthy source, unless other security measures \(such as digital signatures at message level\) are applied.
 
 This protocol can be used by the Mail sender adapter.
-
-
 
 </td>
 </tr>
@@ -324,14 +276,10 @@ The following standards and algorithms are supported:
 
 Standard
 
-
-
 </th>
 <th valign="top">
 
 Security Feature
-
-
 
 </th>
 </tr>
@@ -340,14 +288,10 @@ Security Feature
 
 PKCS\#7/CMS Enveloped Data and Signed Data
 
-
-
 </td>
 <td valign="top">
 
 Encryption/decryption of message content
-
-
 
 </td>
 </tr>
@@ -355,8 +299,6 @@ Encryption/decryption of message content
 <td valign="top">
 
 Signing/verification of payload
-
-
 
 </td>
 </tr>
@@ -365,14 +307,10 @@ Signing/verification of payload
 
 PKCS\#7/CMS Enveloped and Signed Data
 
-
-
 </td>
 <td valign="top">
 
 Encryption/decryption and signing/verification of payload
-
-
 
 </td>
 </tr>
@@ -381,14 +319,10 @@ Encryption/decryption and signing/verification of payload
 
 Open Pretty Good Privacy \(PGP\)
 
-
-
 </td>
 <td valign="top">
 
 Encryption/decryption of message content
-
-
 
 </td>
 </tr>
@@ -397,8 +331,6 @@ Encryption/decryption of message content
 
 Encryption/decryption and signing/verification of message
 
-
-
 </td>
 </tr>
 <tr>
@@ -406,14 +338,10 @@ Encryption/decryption and signing/verification of message
 
 XML Signature
 
-
-
 </td>
 <td valign="top">
 
 Signing/verification of payload
-
-
 
 </td>
 </tr>
@@ -422,14 +350,10 @@ Signing/verification of payload
 
 WS-Security
 
-
-
 </td>
 <td valign="top">
 
 Signing/verification of SOAP body
-
-
 
 </td>
 </tr>

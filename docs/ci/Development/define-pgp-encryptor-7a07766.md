@@ -26,15 +26,11 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -42,15 +38,11 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     Enter a name for the encryptor.
-
-
     
     </td>
     </tr>
@@ -64,15 +56,11 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -80,15 +68,11 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     <td valign="top">
     
     *Signatures* 
-
-
     
     </td>
     <td valign="top">
     
     Select *Including* if you want to sign the payload with a signature.
-
-
     
     </td>
     </tr>
@@ -96,8 +80,6 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     <td valign="top">
     
     *Content Encryption Algorithm* 
-
-
     
     </td>
     <td valign="top">
@@ -105,8 +87,6 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     In the dropdown list, select the algorithm you want to use to encrypt the payload.
 
     Supported symmetric key algorithms for content encryption \(symmetric key algorithms\): AES with 128, 192, and 256-bit key, Blowfish \(128 bit key, 16 rounds\), CAST5 \(128 bit key, as per \[RFC2144\]\), DESede with 168-bit key, Twofish with 256-bit key. DES is not supported.
-
-
     
     </td>
     </tr>
@@ -114,8 +94,6 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     <td valign="top">
     
     *Secret Key Length* 
-
-
     
     </td>
     <td valign="top">
@@ -133,15 +111,11 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     <td valign="top">
     
     *Compression Algorithm* 
-
-
     
     </td>
     <td valign="top">
     
     Select the algorithm you want to use to compress the payload.
-
-
     
     </td>
     </tr>
@@ -149,15 +123,11 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     <td valign="top">
     
     *Armored* 
-
-
     
     </td>
     <td valign="top">
     
     Select if you want the output to be radix 64 \(base64\) encoded with additional header.
-
-
     
     </td>
     </tr>
@@ -165,8 +135,6 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     <td valign="top">
     
     *Integrity Protected Data Packet* 
-
-
     
     </td>
     <td valign="top">
@@ -174,8 +142,6 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     Select if you want to create an Encrypted Integrity Protected Data Packet. This is a specific format where an additional hash value is calculated \(using SHA-1 algorithm\) and added to the message.
 
     This increases the message security level.
-
-
     
     </td>
     </tr>
@@ -183,8 +149,6 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     <td valign="top">
     
     *Encryption User ID of Key\(s\) from Public Keyring* 
-
-
     
     </td>
     <td valign="top">
@@ -199,8 +163,6 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     > More information: [About Headers and Exchange Properties](about-headers-and-exchange-properties-0974c4f.md)
 
     You can specify multiple user IDs.
-
-
     
     </td>
     </tr>
@@ -210,8 +172,6 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     *Signature Algorithm*
 
     \(only if for *Signatures* the option *Including* has been selected\)
-
-
     
     </td>
     <td valign="top">
@@ -221,8 +181,6 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     The signature is created by transferring the message content into a digest \(hash value\) using a digest algorithm.
 
     Supported signature algorithms for PGP signing: MD5, RIPE-MD/160, SHA-1, SHA224, SHA256, SHA384, SHA512.
-
-
     
     </td>
     </tr>
@@ -232,8 +190,6 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     *Signer User ID of Key\(s\) from Secret Keyring*
 
     \(only if for *Signatures* the option *Including* has been selected\)
-
-
     
     </td>
     <td valign="top">
@@ -248,8 +204,6 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
     > More information: [About Headers and Exchange Properties](about-headers-and-exchange-properties-0974c4f.md)
 
     You can specify multiple user IDs.
-
-
     
     </td>
     </tr>

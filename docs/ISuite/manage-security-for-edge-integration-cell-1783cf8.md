@@ -31,14 +31,10 @@ According to your selection from the drop-down list, you get two different views
 
 All View
 
-
-
 </th>
 <th valign="top">
 
 Runtime-specific View
-
-
 
 </th>
 </tr>
@@ -54,8 +50,6 @@ Runtime-specific View
 
 
 The number displayed in the *Runtime* column indicates the different runtimes the security-related artifact is deployed on. To see the different runtimes, select the number.
-
-
 
 </td>
 <td valign="top">

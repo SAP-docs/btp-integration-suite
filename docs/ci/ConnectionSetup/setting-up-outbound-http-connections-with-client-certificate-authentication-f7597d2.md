@@ -28,21 +28,15 @@ The table summarizes the required security artifacts required to set up this inb
 
 Security Artifact
 
-
-
 </th>
 <th valign="top">
 
 Used to ...
 
-
-
 </th>
 <th valign="top">
 
 Configuration Steps
-
-
 
 </th>
 </tr>
@@ -50,8 +44,6 @@ Configuration Steps
 <td valign="top">
 
 Tenant client certificate \(private/public key pair including certificate chain\)
-
-
 
 </td>
 <td valign="top">
@@ -90,8 +82,6 @@ More information:
 
 [Managing Keystore Entries](../Operations/managing-keystore-entries-2dc8942.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -99,16 +89,12 @@ More information:
 
 Tenant client root certificate \(identifies CA that has signed the tenant client certificate\)
 
-
-
 </td>
 <td valign="top">
 
 Sign tenant client certificate.
 
 This certificate is required to identify the root CA that is at the top of the certificate chain that ultimately guarantees the trustability of the tenant client certificate.
-
-
 
 </td>
 <td valign="top">
@@ -129,14 +115,10 @@ Receiver administrator:
 
 Tenant client certificate \(public key\)
 
-
-
 </td>
 <td valign="top">
 
 Check trustworthiness of the Cloud Integration tenant at the receiver side based on this certificate.
-
-
 
 </td>
 <td valign="top">
@@ -157,16 +139,12 @@ Receiver administrator:
 
 Receiver server certificate \(signed by CA with which the tenant has a trust relationship\)
 
-
-
 </td>
 <td valign="top">
 
 Qualify receiver as trusted component \(for Cloud Integration tenants that like to connect to it\).
 
 This certificate is required to identify the receiver \(to which the tenant connects as the client\) as a trusted server.
-
-
 
 </td>
 <td valign="top">
@@ -189,8 +167,6 @@ Receiver administrator:
 
 Receiver server root certificate
 
-
-
 </td>
 <td valign="top">
 
@@ -198,16 +174,12 @@ Make Cloud Integration trust the receiver.
 
 This certificate is required to identify the root CA that is at the top of the certificate chain that ultimately guarantees the trustability of the receiver server certificate.
 
-
-
 </td>
 <td valign="top">
 
 Tenant administrator:
 
 Import this certificate into the tenant keystore.
-
-
 
 </td>
 </tr>

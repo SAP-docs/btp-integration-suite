@@ -75,22 +75,16 @@ To set up this authorization option, perform the following steps.
     <th valign="top">
 
      
-
-
     
     </th>
     <th valign="top" colspan="3">
 
     Service Instance
-
-
     
     </th>
     <th valign="top" colspan="4">
 
     Service Key
-
-
     
     </th>
     </tr>
@@ -98,57 +92,41 @@ To set up this authorization option, perform the following steps.
     <th valign="top">
 
     Option \(Authentication At Token Server\)
-
-
     
     </th>
     <th valign="top">
 
     Plan
-
-
     
     </th>
     <th valign="top">
 
     Roles
-
-
     
     </th>
     <th valign="top">
 
     Grant-types
-
-
     
     </th>
     <th valign="top">
 
     Key Type
-
-
     
     </th>
     <th valign="top">
 
     External Certificate
-
-
     
     </th>
     <th valign="top">
 
     Validity
-
-
     
     </th>
     <th valign="top">
 
     Key Size
-
-
     
     </th>
     </tr>
@@ -156,57 +134,41 @@ To set up this authorization option, perform the following steps.
     <td valign="top">
     
     ClientId and clientsecret
-
-
     
     </td>
     <td valign="top">
     
     *integration-flow* 
-
-
     
     </td>
     <td valign="top">
     
     Keep standard role `ESBMessaging.send` or use one or more custom roles.
-
-
     
     </td>
     <td valign="top">
     
     *Client Credentials* 
-
-
     
     </td>
     <td valign="top">
     
     *ClientId/Secret* 
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     </tr>
@@ -214,57 +176,41 @@ To set up this authorization option, perform the following steps.
     <td valign="top">
     
     SAP certificate
-
-
     
     </td>
     <td valign="top">
     
     *integration-flow* 
-
-
     
     </td>
     <td valign="top">
     
     Keep standard role `ESBMessaging.send` or use one or more custom roles.
-
-
     
     </td>
     <td valign="top">
     
     *Client Credentials* 
-
-
     
     </td>
     <td valign="top">
     
     *Certificate* 
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     Specify validity in days.
-
-
     
     </td>
     <td valign="top">
     
     Specify key size.
-
-
     
     </td>
     </tr>
@@ -272,57 +218,41 @@ To set up this authorization option, perform the following steps.
     <td valign="top">
     
     External certificate
-
-
     
     </td>
     <td valign="top">
     
     *integration-flow* 
-
-
     
     </td>
     <td valign="top">
     
     Keep standard role `ESBMessaging.send` or use one or more custom roles.
-
-
     
     </td>
     <td valign="top">
     
     *Client Credentials* 
-
-
     
     </td>
     <td valign="top">
     
     *External Certificate* 
-
-
     
     </td>
     <td valign="top">
     
     Add PEM-encoded X.509 certificate.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     </tr>

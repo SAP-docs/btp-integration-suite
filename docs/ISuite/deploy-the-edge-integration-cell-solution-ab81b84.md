@@ -52,15 +52,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -68,15 +64,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Enable Shared File System
-
-
     
     </td>
     <td valign="top">
     
     A shared file system can be enabled to preserve traces or dumps. This option is recommended especially for production environments.
-
-
     
     </td>
     </tr>
@@ -84,15 +76,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Shared File System Storage Class \(only visible if shared file system is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Enter storage class for access mode `ReadWriteMany`.
-
-
     
     </td>
     </tr>
@@ -100,15 +88,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Default Virtual Host
-
-
     
     </td>
     <td valign="top">
     
     Custom domain name used for exposing Edge Integration Cell endpoints.
-
-
     
     </td>
     </tr>
@@ -116,8 +100,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Default Virtual Host Key Alias
-
-
     
     </td>
     <td valign="top">
@@ -125,8 +107,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     Key pair alias used for TLS enablement.
 
     You've to create the virtual host key alias and choose a name for it. The chosen name is needed to upload the virtual host key alias to the keystore.
-
-
     
     </td>
     </tr>
@@ -144,15 +124,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -160,8 +136,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Enable Multi-AZ Support
-
-
     
     </td>
     <td valign="top">
@@ -169,8 +143,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     If your Kubernetes cluster nodes are distributed across availability zones, you can enable this property for your deployment. It has no effect otherwise.
 
     On cloud platforms, multiple availability zones are available.
-
-
     
     </td>
     </tr>
@@ -178,8 +150,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Event Broker Storage Class
-
-
     
     </td>
     <td valign="top">
@@ -189,8 +159,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     If this field is left empty, the default storage class is used.
 
     For more information, see [3247839](https://me.sap.com/notes/3247839).
-
-
     
     </td>
     </tr>
@@ -198,8 +166,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Event Broker Scaling Tier
-
-
     
     </td>
     <td valign="top">
@@ -219,15 +185,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Enable External DB
-
-
     
     </td>
     <td valign="top">
     
     Select this option for production environments.
-
-
     
     </td>
     </tr>
@@ -235,8 +197,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     PostgreSQL Storage Class \(only visible if External DB isn't enabled\)
-
-
     
     </td>
     <td valign="top">
@@ -246,8 +206,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     If this field is left empty, the default storage class is used.
 
     For more information, see [3247839](https://me.sap.com/notes/3247839).
-
-
     
     </td>
     </tr>
@@ -255,15 +213,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External DB Hostname \(visible if External DB is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Enter hostname of PostgreSQL database.
-
-
     
     </td>
     </tr>
@@ -271,15 +225,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External DB Port \(visible if External DB is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Enter port of PostgreSQL database.
-
-
     
     </td>
     </tr>
@@ -287,15 +237,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External DB Name \(visible if External DB is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Enter name of PostgreSQL database.
-
-
     
     </td>
     </tr>
@@ -303,15 +249,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External DB Username \(visible if External DB is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Enter username to connect to PostgreSQL database.
-
-
     
     </td>
     </tr>
@@ -319,15 +261,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External DB Password \(visible if External DB isnullnullnull
-
-
     
     </td>
     <td valign="top">
     
     Enter password to connect to PostgreSQL database.
-
-
     
     </td>
     </tr>
@@ -335,15 +273,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External DB TLS Root Certificate Password \(visible if External DB is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Upload Trust CA certificate to connect to PostgreSQL database using TLS.
-
-
     
     </td>
     </tr>
@@ -351,15 +285,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Enable External Redis
-
-
     
     </td>
     <td valign="top">
     
     Select this option for production environments.
-
-
     
     </td>
     </tr>
@@ -367,8 +297,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Redis Storage Class \(only visible if External Redis is enabled\)
-
-
     
     </td>
     <td valign="top">
@@ -378,8 +306,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     If this field is left empty, the default storage class isn't used.
 
     For more information, see [3247839](https://me.sap.com/notes/3247839).
-
-
     
     </td>
     </tr>
@@ -387,15 +313,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External Redis Addresses \(only visible if External Redis is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Enter comma-separated list of addresses in format HOST:PORT \(with write access\). For sentinel mode, this option represents the list of sentinel addresses.
-
-
     
     </td>
     </tr>
@@ -403,15 +325,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External Redis Mode \(only visible if External Redis is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Select Redis mode \(Cluster, Sentinel, Standalone\).
-
-
     
     </td>
     </tr>
@@ -419,15 +337,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External Redis Username \(only visible if External Redis is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Enter username to connect to Redis \(if username enabled\).
-
-
     
     </td>
     </tr>
@@ -435,15 +349,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External Redis Password \(only visible if External Redis is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Enter password to connect to Redis \(password protected required\).
-
-
     
     </td>
     </tr>
@@ -451,15 +361,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External Redis Sentinel Username \(only visible if External Redis is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Enter username to connect to Redis Sentinel \(for Sentinel mode only\).
-
-
     
     </td>
     </tr>
@@ -467,15 +373,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External Redis Sentinel Password \(only visible if External Redis is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Enter password to connect to Redis Sentinel \(for Sentinel mode only\).
-
-
     
     </td>
     </tr>
@@ -483,15 +385,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External Redis TLS Certificate \(only visible if External Redis is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Upload Trust CA certificate to connect to external Redis using TLS.
-
-
     
     </td>
     </tr>
@@ -499,15 +397,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     External Redis Server Name \(only visible if External Redis is enabled\)
-
-
     
     </td>
     <td valign="top">
     
     Enter server name, required only if the server’s certificate doesn't have IP Subject Alternative Names \(SAN\).
-
-
     
     </td>
     </tr>
@@ -525,15 +419,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -541,8 +431,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     HTTP version 1.0
-
-
     
     </td>
     <td valign="top">
@@ -550,8 +438,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     Select this option to enable HTTP 1.0 for inbound Edge Integration Cell endpoints.
 
     Otherwise, only HTTP 1.1 is supported.
-
-
     
     </td>
     </tr>
@@ -559,8 +445,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Client IP Preservation
-
-
     
     </td>
     <td valign="top">
@@ -568,8 +452,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     Select this option if a client’s source IP is to be preserved. This option requires to have a network load balancer capable of forwarding the source IP. On cloud platforms, a network load balancer is used for this option.
 
     This option is a prerequisite for using client IP filtering policies. For more information, see [https://istio.io/latest/docs/tasks/security/authorization/authz-ingress/\#network](https://istio.io/latest/docs/tasks/security/authorization/authz-ingress/#network).
-
-
     
     </td>
     </tr>
@@ -577,15 +459,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Load Balancer Provider
-
-
     
     </td>
     <td valign="top">
     
     Select the Load Balancer Provider. Based on the provider, you can enable an internal Load Balancer.
-
-
     
     </td>
     </tr>
@@ -593,15 +471,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Internal Load Balancer \(only visible if Load Balancer Provider AWS or Azure is selected\)
-
-
     
     </td>
     <td valign="top">
     
     Select this option if you want to enable an internal Load Balancer.
-
-
     
     </td>
     </tr>

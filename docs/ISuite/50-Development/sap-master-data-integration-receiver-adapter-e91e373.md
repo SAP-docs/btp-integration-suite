@@ -60,14 +60,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -76,14 +72,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Provide a name for the channel.
-
-
 
 </td>
 </tr>
@@ -92,14 +84,10 @@ Provide a name for the channel.
 
 *Description* 
 
-
-
 </td>
 <td valign="top">
 
 Provide an optional description for the channel.
-
-
 
 </td>
 </tr>
@@ -116,14 +104,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -132,16 +116,12 @@ Description
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the MDI host address to which you want to connect to. For example, `https://one-mds.cfapps.sap.hana.ondemand.com`.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
-
-
 
 </td>
 </tr>
@@ -150,16 +130,12 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 *ODM Entity Type* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the fully qualified name of a One Data Model \(ODM\) entity type. For example, `sap.odm.businesspartner.BusinessPartner`.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
-
-
 
 </td>
 </tr>
@@ -168,8 +144,6 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 *ODM Entity Version* 
 
-
-
 </td>
 <td valign="top">
 
@@ -177,16 +151,12 @@ Enter the ODM entity version. For example, `2.1.1`.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *API Type* 
-
-
 
 </td>
 <td valign="top">
@@ -214,14 +184,10 @@ Select one of the following values:
 
 *Authentication* 
 
-
-
 </td>
 <td valign="top">
 
 *OAuth2 Client Credentials*is the supported authentication type and selected by default.
-
-
 
 </td>
 </tr>
@@ -230,14 +196,10 @@ Select one of the following values:
 
 *Credential Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of an OAuth2 Client Credentials you’ve deployed on the tenant.
-
-
 
 </td>
 </tr>
@@ -246,14 +208,10 @@ Enter the name of an OAuth2 Client Credentials you’ve deployed on the tenant.
 
 *Timeout \(in seconds\)* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the amount of time, in seconds, that the client waits for a response before it times out. Maximum allowed value is `600`. To wait indefinitely, enter `0`.
-
-
 
 </td>
 </tr>
@@ -270,14 +228,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -286,14 +240,10 @@ Description
 
 *Page Size* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the number of records from fetched results that you want in one page. Maximum allowed value is `5000`.
-
-
 
 </td>
 </tr>
@@ -301,8 +251,6 @@ Enter the number of records from fetched results that you want in one page. Maxi
 <td valign="top">
 
 *Response Data* 
-
-
 
 </td>
 <td valign="top">
@@ -322,8 +270,6 @@ Select one of the following values:
 <td valign="top">
 
 *Process in Pages* 
-
-
 
 </td>
 <td valign="top">
@@ -354,14 +300,10 @@ In the *Looping Process Call*, provide the loop condition details that follow:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -370,14 +312,10 @@ Description
 
 *Consider Operation from Payload* 
 
-
-
 </td>
 <td valign="top">
 
 Enable if the incoming payload contains the Operation for request API. The payload could be in an earlier step like Content modifier or Script.
-
-
 
 </td>
 </tr>
@@ -387,8 +325,6 @@ Enable if the incoming payload contains the Operation for request API. The paylo
 *Operation*
 
 Enabled only if the option *Consider Operation from Payload* isn't opted.
-
-
 
 </td>
 <td valign="top">
@@ -415,8 +351,6 @@ Manually select the operation to be performed on the ODM Entity, if you don't en
 
 *Consider Change Token from Payload* 
 
-
-
 </td>
 <td valign="top">
 
@@ -425,8 +359,6 @@ Enable if the incoming payload contains the change token for request API. The pa
 Change token is a string value of the corresponding change request. It confirms the status that resulted from your change with that token. It avoids initial load and supplies all changes that have happened since the mentioned change token.
 
 For the operation *Forcepatch*, we strongly recommend you to enable the option. Forcepatch is an equivalent to an upsert operation and it's essential to carry a change token for such operation.
-
-
 
 </td>
 </tr>
@@ -437,14 +369,10 @@ For the operation *Forcepatch*, we strongly recommend you to enable the option. 
 
 Enabled only if the option *Consider Change Token from Payload* isn't opted.
 
-
-
 </td>
 <td valign="top">
 
 Enter a prefix for the change token that is less than or equal to 5 characters. The format of the change token is: *<prefix\>*\_*<date in yy-mm-dd-hh-mm-ss\>*\_*<hashcode of UUID\>*.
-
-
 
 </td>
 </tr>
@@ -453,16 +381,12 @@ Enter a prefix for the change token that is less than or equal to 5 characters. 
 
 *Retry for Change Request Confirmation* \> *Retry Interval \(in seconds\)* 
 
-
-
 </td>
 <td valign="top">
 
 Select the amount of time after which you want the adapter to try again for change request confirmation.
 
 **Why Retry is important** – When you send a change request \(Requests API\) to MDI, you also need to trigger an Events API to ensure that the change request was successfully executed. The adapter does this part automatically – that is, upon receiving a success message \(status code 202\) for the change request, the adapter triggers an Events API to let you know the changes were successfully made. If there's no response from MDI, the retry option enables the adapter to trigger another Events API to check the change request confirmation.
-
-
 
 </td>
 </tr>
@@ -471,14 +395,10 @@ Select the amount of time after which you want the adapter to try again for chan
 
 *Retry for Change Request Confirmation* \> *Retry Iterations* 
 
-
-
 </td>
 <td valign="top">
 
 Select the number of retries to be attempted.
-
-
 
 </td>
 </tr>
@@ -487,16 +407,12 @@ Select the number of retries to be attempted.
 
 *Change Request Contains LocalIds* 
 
-
-
 </td>
 <td valign="top">
 
 Enable if your change request contain local identifiers. You can include a local identifier either from an incoming payload or manually adding it in the adapter.
 
 *<localId\>* is an identifier for the specific master data object that you can pass on to MDI. If you change request is successfully processed, the *<localId\>* is stored by MDI.
-
-
 
 </td>
 </tr>
@@ -505,14 +421,10 @@ Enable if your change request contain local identifiers. You can include a local
 
 *Consider LocalId from Payload* 
 
-
-
 </td>
 <td valign="top">
 
 Enable if the incoming payload contains the local identifier for request API. The payload could be in an earlier step like Content modifier or Script. Else, use the parameters in the table that follows to manually add a local identifier.
-
-
 
 </td>
 </tr>
@@ -529,14 +441,10 @@ Choose *Add* and provide values in the fields as follows:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -545,14 +453,10 @@ Description
 
 *Application* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the application that owns the local identifier.
-
-
 
 </td>
 </tr>
@@ -561,14 +465,10 @@ Enter the application that owns the local identifier.
 
 *Tenant* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the tenant identifier in the application.
-
-
 
 </td>
 </tr>
@@ -577,14 +477,10 @@ Enter the tenant identifier in the application.
 
 *Type* 
 
-
-
 </td>
 <td valign="top">
 
 Optional – Enter the fully qualified entity type. For example, `sap.odm.businesspartner.BusinessPartner`.
-
-
 
 </td>
 </tr>
@@ -593,14 +489,10 @@ Optional – Enter the fully qualified entity type. For example, `sap.odm.busine
 
 *Additional Context* 
 
-
-
 </td>
 <td valign="top">
 
 Optional – Provide additional information if other fields are unable to uniquely identify the master data object.
-
-
 
 </td>
 </tr>
@@ -609,14 +501,10 @@ Optional – Provide additional information if other fields are unable to unique
 
 *LocalId* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the unique value of the entity.
-
-
 
 </td>
 </tr>
@@ -625,14 +513,10 @@ Enter the unique value of the entity.
 
 *Status* 
 
-
-
 </td>
 <td valign="top">
 
 Optional – Enter the status of the local identifier. Accepted values are: `active` and `inactive`.
-
-
 
 </td>
 </tr>
@@ -640,8 +524,6 @@ Optional – Enter the status of the local identifier. Accepted values are: `act
 <td valign="top">
 
 *LocalId Source* 
-
-
 
 </td>
 <td valign="top">

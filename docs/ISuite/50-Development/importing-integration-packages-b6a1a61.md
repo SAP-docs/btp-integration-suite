@@ -8,7 +8,7 @@ Upload your existing integration packages that suits your integration scenario t
 
 ## Procedure
 
-1.  Choose *Design* \> *Integrations* \> *Import*.
+1.  Choose *Design* \> *Integrations and APIs* \> *Import*.
 
     Importing a new version of a package \(zip import\) over an existing package doesn't overwrite the configured values of the externalized parameters in the existing package.
 

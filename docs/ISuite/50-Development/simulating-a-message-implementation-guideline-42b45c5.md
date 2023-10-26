@@ -20,8 +20,8 @@ This chapter shows you how to simulate a message implementation guideline.
 
 3.  A new column *Simulation Data* appears in the message structure populated with the following details
     -   The rows with values in the structure are the input values from the payload data.
-    -   If there are multiple occurences of values in the payload, they are denoted by the navigation buttons <span class="SAP-icons"></span> <span class="SAP-icons"></span> . These buttons allow you to navigate to the other occurences of the payload values.
-    -   The navigation button <span class="SAP-icons"></span> <span class="SAP-icons"></span> is also displayed for a group node if it occurs atleast once in the simulation data.
+    -   If there are multiple occurrences of values in the payload, they are denoted by the navigation buttons <span class="SAP-icons"></span> <span class="SAP-icons"></span> . These buttons allow you to navigate to the other occurrences of the payload values.
+    -   The navigation button <span class="SAP-icons"></span> <span class="SAP-icons"></span> is also displayed for a group node if it occurs at least once in the simulation data.
     -   The <span class="BusinessSuiteInAppSymbols"></span> icon denotes the leaf node exists in the structure but is empty.
 
     -   The <span class="BusinessSuiteInAppSymbols"></span> icon denotes that the leaf node does not exist in the structure.
@@ -53,7 +53,7 @@ The data corresponding to each leaf node is fetched in the following order:
 
 1.  *Example Value*:
 
-    These are the values that are defined as example values for a particular node. To know how to define these values, see [Working with a Node](working-with-a-node-518b54f.md). During simulation, each value from the list in the given order gets assigned to a particular occurrence of a leaf node. When the last value in the list is reached, then the first value is fetched again for the next occurence. If there is only one example value provided, then the same value is fetched for all the occurrences of the leaf node.
+    These are the values that are defined as example values for a particular node. To know how to define these values, see [Working with a Node](working-with-a-node-518b54f.md). During simulation, each value from the list in the given order gets assigned to a particular occurrence of a leaf node. When the last value in the list is reached, then the first value is fetched again for the next occurrence. If there is only one example value provided, then the same value is fetched for all the occurrences of the leaf node.
 
 2.  *Fixed Value*:
 
@@ -61,7 +61,7 @@ The data corresponding to each leaf node is fetched in the following order:
 
 3.  *Code Value*:
 
-    If there is neither an example value nor a fixed value for a particular leaf node, the simulation then considers the data from the code values assigned to a leaf node. To know more about creating and assigning a code list to a leaf node, see [Codelists](codelists-a7a84b0.md)
+    If there is neither an example value nor a fixed value for a particular leaf node, the simulation then considers the data from the code values assigned to a leaf node. To know more about creating and assigning a code list to a leaf node, see [Codelists](codelists-a7a84b0.md).
 
     If there are any selected code values, only those values will be fetched.
 

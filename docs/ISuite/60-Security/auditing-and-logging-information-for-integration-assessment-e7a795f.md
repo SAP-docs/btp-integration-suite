@@ -15,28 +15,20 @@ Here you can find the security events that are logged by Integration Assessment.
 
 Event grouping
 
-
-
 </th>
 <th valign="top">
 
 What events are logged
-
-
 
 </th>
 <th valign="top">
 
 How to identify related log events
 
-
-
 </th>
 <th valign="top">
 
 Additional information
-
-
 
 </th>
 </tr>
@@ -45,14 +37,10 @@ Additional information
 
 Security Event
 
-
-
 </td>
 <td valign="top">
 
 Resource restrictions
-
-
 
 </td>
 <td valign="top">
@@ -61,14 +49,10 @@ Filter by:
 
 `category = "audit.security-events", message.data contains JSON with message like "Access to resource '...' for operation '...' is forbidden"`
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

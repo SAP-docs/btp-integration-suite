@@ -55,14 +55,10 @@ The General tab shows general information such as the adapter type, its directio
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -71,14 +67,10 @@ Description
 
 *Address*
 
-
-
 </td>
 <td valign="top">
 
 Specify the SugarCRM endpoint URL.
-
-
 
 </td>
 </tr>
@@ -87,14 +79,10 @@ Specify the SugarCRM endpoint URL.
 
 *Client ID Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the Client ID needed to connect to SugarCRM.
-
-
 
 </td>
 </tr>
@@ -103,14 +91,10 @@ Specify the name of the Secure Parameter artifact that contains the Client ID ne
 
 *Security Token Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the Client Secret needed to connect to SugarCRM.
-
-
 
 </td>
 </tr>
@@ -119,14 +103,10 @@ Specify the name of the Secure Parameter artifact that contains the Client Secre
 
 *Credential Name*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the User Credentials artifact that contains the credentials for basic authentication. This refers to the username-password pair in SugarCRM.
-
-
 
 </td>
 </tr>
@@ -135,14 +115,10 @@ Specify the name of the User Credentials artifact that contains the credenti
 
 *Platform*
 
-
-
 </td>
 <td valign="top">
 
 Specify the SugarCRM platform name for the connection. A platform provides the possibility to define custom metadata and views in SugarCRM. Hence, it helps customers to customize their experience. The default platform used for connection is “base”, some other platforms are “Mobile” and “Portal”. Register the platform using SugarCRM Platform Extensions or via the Administration Panel.
-
-
 
 </td>
 </tr>
@@ -157,14 +133,10 @@ Specify the SugarCRM platform name for the connection. A platform provides the p
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -173,14 +145,10 @@ Description
 
 *API Version*
 
-
-
 </td>
 <td valign="top">
 
 Select the version of the API used for fetching data from the SugarCRM.
-
-
 
 </td>
 </tr>
@@ -188,8 +156,6 @@ Select the version of the API used for fetching data from the SugarCRM.
 <td valign="top">
 
 *Operation*
-
-
 
 </td>
 <td valign="top">
@@ -222,14 +188,10 @@ To access and exchange data with the SugarCRM, you can select among the followin
 
 *Module Name*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the name of the SugarCRM Module. For example: Accounts, Contacts, and so on.
-
-
 
 </td>
 </tr>
@@ -240,14 +202,10 @@ Specifies the name of the SugarCRM Module. For example: Accounts, Contacts, and 
 
 \(if the operation is Delete Record, Get Record by ID, Update Record, Create Record or Upload a file\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the unique ID that represents an instance of a SugarCRM Module.
-
-
 
 </td>
 </tr>
@@ -256,14 +214,10 @@ Specifies the unique ID that represents an instance of a SugarCRM Module.
 
 *Link*
 
-
-
 </td>
 <td valign="top">
 
 Select to perform operation on a relationship of a specified SugarCRM Module. If checked the details need to be provided for the Relationship Name and Module Record ID.
-
-
 
 </td>
 </tr>
@@ -274,14 +228,10 @@ Select to perform operation on a relationship of a specified SugarCRM Module. If
 
 \(only when Link is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the relationship name of the specified SugarCRM Module. For example: "contacts".
-
-
 
 </td>
 </tr>
@@ -292,14 +242,10 @@ Specifies the relationship name of the specified SugarCRM Module. For example: "
 
 \(if the operation is Delete Record, Get Record by ID, Update Record operation and when you select the Link\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the record ID of the specified relationship \(in Relationship Name\).
-
-
 
 </td>
 </tr>
@@ -310,14 +256,10 @@ Specifies the record ID of the specified relationship \(in Relationship Name\).
 
 \(if the operation is Bulk, Create Record, Delete Record, or Update Record\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the format of the request message sent to SugarCRM. Possible values include Application/XML and Application/JSON. The default value is Application/XML.
-
-
 
 </td>
 </tr>
@@ -328,14 +270,10 @@ Specifies the format of the request message sent to SugarCRM. Possible values in
 
 \(All operations\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the format of the response message returned by the SugarCRM adapter. Possible values include Application/XML and Application/JSON. The default value is Application/XML.
-
-
 
 </td>
 </tr>
@@ -346,14 +284,10 @@ Specifies the format of the response message returned by the SugarCRM adapter. P
 
 \(only for the Global Search and Query Records operations\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the maximum number of records to be returned in the response.
-
-
 
 </td>
 </tr>
@@ -364,14 +298,10 @@ Specifies the maximum number of records to be returned in the response.
 
 \(only for the Global Search and Query Records operations\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the number of records to skip before returning the results. For example: "10".
-
-
 
 </td>
 </tr>
@@ -382,14 +312,10 @@ Specifies the number of records to skip before returning the results. For exampl
 
 \(only for the Global Search and Query Records operations\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies a comma-separated list of fields to be returned in response. For example: "name, id".
-
-
 
 </td>
 </tr>
@@ -400,14 +326,10 @@ Specifies a comma-separated list of fields to be returned in response. For examp
 
 \(only for the Query Records operation\)
 
-
-
 </td>
 <td valign="top">
 
 Select to get the count of the records from SugarCRM.
-
-
 
 </td>
 </tr>
@@ -418,14 +340,10 @@ Select to get the count of the records from SugarCRM.
 
 \(only for Global Search operation\)
 
-
-
 </td>
 <td valign="top">
 
 Comma-separated list of modules to search. If omitted, all search enabled modules are queried. For example: Accounts, Contacts.
-
-
 
 </td>
 </tr>
@@ -433,8 +351,6 @@ Comma-separated list of modules to search. If omitted, all search enabled module
 <td valign="top">
 
 *Filter Type*
-
-
 
 </td>
 <td valign="top">
@@ -459,14 +375,10 @@ Select one of the following Filter Type:
 
 *Filter ID*
 
-
-
 </td>
 <td valign="top">
 
 Refers to the identifier for a pre-existing filter. You can create Custom filters in SugarCRM WebUI. If the filter is also set, the two filters are joined with an AND logic.
-
-
 
 </td>
 </tr>
@@ -475,14 +387,10 @@ Refers to the identifier for a pre-existing filter. You can create Custom filter
 
 *View*
 
-
-
 </td>
 <td valign="top">
 
 Instead of defining the field's argument, the view argument can be used. The field list is constructed at the server-side based on the view definition, which is requested. Common views are "record" and "list".
-
-
 
 </td>
 </tr>
@@ -491,14 +399,10 @@ Instead of defining the field's argument, the view argument can be used. The fie
 
 *Search*
 
-
-
 </td>
 <td valign="top">
 
 Refers to the search expression. Multiple terms can be specified at once. All enabled fields are searched. The results are ordered by relevance, which is based on a multitude of settings based on token counts, hit ratio, weighted boost values, and type of field. Currently, no operators are supported in the search expression itself. By refining the search expression more relevant results are displayed at the top. If no search expression is given, then the results are returned based on the last modified date.
-
-
 
 </td>
 </tr>
@@ -507,14 +411,10 @@ Refers to the search expression. Multiple terms can be specified at once. All en
 
 *Deleted*
 
-
-
 </td>
 <td valign="top">
 
 Boolean to show deleted records in the result set.
-
-
 
 </td>
 </tr>
@@ -523,14 +423,10 @@ Boolean to show deleted records in the result set.
 
 *Nulls Last*
 
-
-
 </td>
 <td valign="top">
 
 Boolean to return records with null values in *order\_by* fields last in the result set.
-
-
 
 </td>
 </tr>
@@ -539,14 +435,10 @@ Boolean to return records with null values in *order\_by* fields last in the res
 
 *Order Response by*
 
-
-
 </td>
 <td valign="top">
 
 Specifies in which order the records in the response are returned. You can’t always use this feature together with the aggregate property.
-
-
 
 </td>
 </tr>
@@ -557,14 +449,10 @@ Specifies in which order the records in the response are returned. You can’t a
 
 \(only for Upload a file operation\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the target field name in the Record where the file is uploaded. For example: Under the module Name Contacts, a photo of the contact can be uploaded in the field picture.
-
-
 
 </td>
 </tr>
@@ -575,14 +463,10 @@ Specifies the target field name in the Record where the file is uploaded. For ex
 
 \(only for Upload a file operation\)
 
-
-
 </td>
 <td valign="top">
 
 Refers to the exchange attachment name that contains the upload file.
-
-
 
 </td>
 </tr>
@@ -593,14 +477,10 @@ Refers to the exchange attachment name that contains the upload file.
 
 \(only for Upload a file operation\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the name of the file that you want to be visible in SugarCRM.
-
-
 
 </td>
 </tr>
@@ -611,14 +491,10 @@ Specifies the name of the file that you want to be visible in SugarCRM.
 
 \(only for Upload a file operation\)
 
-
-
 </td>
 <td valign="top">
 
 Refers to the content type of the attached file. For example: image/png, image/jpg
-
-
 
 </td>
 </tr>

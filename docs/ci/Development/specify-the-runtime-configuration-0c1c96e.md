@@ -26,15 +26,11 @@ Specify the runtime properties of the integration flow.
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Allows you to ...
-
-
     
     </th>
     </tr>
@@ -42,8 +38,6 @@ Specify the runtime properties of the integration flow.
     <td valign="top">
     
     *Namespace Mapping* 
-
-
     
     </td>
     <td valign="top">
@@ -73,8 +67,6 @@ Specify the runtime properties of the integration flow.
     <td valign="top">
     
     *Message Processing Log* 
-
-
     
     </td>
     <td valign="top">
@@ -95,8 +87,6 @@ Specify the runtime properties of the integration flow.
     <td valign="top">
     
     *Allowed Header\(s\)* 
-
-
     
     </td>
     <td valign="top">
@@ -142,8 +132,6 @@ Specify the runtime properties of the integration flow.
     <td valign="top">
     
     *HTTP Session Reuse* 
-
-
     
     </td>
     <td valign="top">

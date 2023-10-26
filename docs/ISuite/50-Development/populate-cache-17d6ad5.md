@@ -43,14 +43,10 @@ Populate cache policy defines the following elements:
 
 **Element**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -85,14 +81,10 @@ Configures a unique pointer to a piece of data stored in the cache.
 
 CacheResource
 
-
-
 </td>
 <td valign="top">
 
 Specifies the cache where messages should be stored. A default cache is available.
-
-
 
 </td>
 </tr>
@@ -101,14 +93,10 @@ Specifies the cache where messages should be stored. A default cache is availabl
 
 Scope
 
-
-
 </td>
 <td valign="top">
 
 Enumeration used to construct a prefix for a cache key when a<Prefix\> element is not provided in the <CacheKey\>element.
-
-
 
 </td>
 </tr>
@@ -147,14 +135,10 @@ Specifies when the cached value should expire.
 
 Source
 
-
-
 </td>
 <td valign="top">
 
 Specifies the variable whose value should be written to the cache.
-
-
 
 </td>
 </tr>
@@ -169,14 +153,10 @@ Populate cache policy type defines the following error codes:
 
 Error code
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -185,14 +165,10 @@ Cause
 
 EntryCannotBeCached
 
-
-
 </td>
 <td valign="top">
 
 An entry cannot be cached. The message object being cached is not an instance of a class that is Serializable.
-
-
 
 </td>
 </tr>
@@ -201,14 +177,10 @@ An entry cannot be cached. The message object being cached is not an instance of
 
 InvalidCacheResourceReference
 
-
-
 </td>
 <td valign="top">
 
 The cache specified in the <CacheResource\> element does not exist.
-
-
 
 </td>
 </tr>
@@ -217,14 +189,10 @@ The cache specified in the <CacheResource\> element does not exist.
 
 CacheNotFound
 
-
-
 </td>
 <td valign="top">
 
 The cache specified in the <CacheResource\> element does not exist.
-
-
 
 </td>
 </tr>
@@ -241,21 +209,15 @@ Following fault variables is set when the policy triggers an error at runtime:
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -264,8 +226,6 @@ Example
 
 \[prefix\].\[policy\_name\].failed
 
-
-
 </td>
 <td valign="top">
 
@@ -273,14 +233,10 @@ Example
 
 \[policy\_name\]: The name of the policy to check.
 
-
-
 </td>
 <td valign="top">
 
 populatecache.POP-CACHE-1.failed = true
-
-
 
 </td>
 </tr>
@@ -289,21 +245,15 @@ populatecache.POP-CACHE-1.failed = true
 
 fault.\[error\_name\]
 
-
-
 </td>
 <td valign="top">
 
 \[error\_name\] = The specific error name to check for as listed in the table above.
 
-
-
 </td>
 <td valign="top">
 
 fault.name Matches "EntryCannotBeCached"
-
-
 
 </td>
 </tr>

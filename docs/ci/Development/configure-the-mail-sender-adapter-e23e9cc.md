@@ -38,14 +38,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -54,14 +50,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -78,14 +70,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -93,8 +81,6 @@ Description
 <td valign="top">
 
 *Address* 
-
-
 
 </td>
 <td valign="top">
@@ -116,16 +102,12 @@ Example address for Yahoo IMAP server:
 
 `imap.mail.yahoo.com:993`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type*
-
-
 
 </td>
 <td valign="top">
@@ -138,8 +120,6 @@ Select *On-Premise* if you’re connecting to an on-premise mail server.
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -147,14 +127,10 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 
 *Location ID* \(only if *On-Premise* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side.
-
-
 
 </td>
 </tr>
@@ -163,14 +139,10 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 
 *Timeout \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the network timeout for the connection attempt to the server. The default value is 30000.
-
-
 
 </td>
 </tr>
@@ -178,8 +150,6 @@ Specifies the network timeout for the connection attempt to the server. The defa
 <td valign="top">
 
 *Protection* 
-
-
 
 </td>
 <td valign="top">
@@ -219,8 +189,6 @@ Specifies the method to use to establish an encrypted \(secure\) connection.
 
 *Authentication* 
 
-
-
 </td>
 <td valign="top">
 
@@ -254,16 +222,12 @@ Specifies which mechanism is used to protect user name and password combination.
 
 *Credential Name* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the name of the *User Credentials* artifact that contains user name and password \(used to authenticate at the e-mail account\).
 
 More information: [Deploying a User Credentials Artifact](../Operations/deploying-a-user-credentials-artifact-6912d63.md)
-
-
 
 </td>
 </tr>
@@ -280,14 +244,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -298,14 +258,10 @@ Description
 
 \(only if as *Transport Protocol* the option *IMAP4* has been selected\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the IMAP folder containing the mails to be read.
-
-
 
 </td>
 </tr>
@@ -316,16 +272,12 @@ Specify the IMAP folder containing the mails to be read.
 
 \(only if as *Transport Protocol* the option *IMAP4* has been selected\)
 
-
-
 </td>
 <td valign="top">
 
 Specify which mails are to be processed \(all mails or only unread ones\).
 
 You can select whether all or only unread mails are to be processed.
-
-
 
 </td>
 </tr>
@@ -334,14 +286,10 @@ You can select whether all or only unread mails are to be processed.
 
 *Max. Messages per Poll* 
 
-
-
 </td>
 <td valign="top">
 
 Defines the maximal number of messages to be read from the e-mail server in one polling step.
-
-
 
 </td>
 </tr>
@@ -349,8 +297,6 @@ Defines the maximal number of messages to be read from the e-mail server in one 
 <td valign="top">
 
 *Lock Timeout \(in min\)* 
-
-
 
 </td>
 <td valign="top">
@@ -361,16 +307,12 @@ When you start a poll, the mail adapter acquires a lock to be allowed to poll th
 
 It can happen that the lock is not released after a poll \(that is, in case of a node crash\). In this case, the processing will only continue after the lock timed out or the lock is removed manually via the *Lock Monitor* \(see: [Message Locks](../Operations/message-locks-bce9ae0.md)\). It’s recommended to set the lock time higher than the processing time that is required per poll. But also make sure to not block the processing for a long time in the case of a node crash. A poll is completed after the number of messages as defined in Max. Messages Per Poll has been processed.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Post-Processing* 
-
-
 
 </td>
 <td valign="top">
@@ -405,8 +347,6 @@ There are the following options:
 
 Note that the configuration of the mail server can in certain cases override dedicated *Post-Processing* settings \(see: [Important Notes on Security Risks and Mailbox Settings](important-notes-on-security-risks-and-mailbox-settings-34aa095.md)\).
 
-
-
 </td>
 </tr>
 <tr>
@@ -414,14 +354,10 @@ Note that the configuration of the mail server can in certain cases override ded
 
 *Archive Folder* \(only if for *Post-Processing* the option *Archive* or *Archive and Mark as Read* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Specify name of folder where mail is to be archived.
-
-
 
 </td>
 </tr>
@@ -430,14 +366,10 @@ Specify name of folder where mail is to be archived.
 
 *Remove Attachments* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option if attachments are to be removed from the mail before further processing.
-
-
 
 </td>
 </tr>
@@ -445,8 +377,6 @@ Select this option if attachments are to be removed from the mail before further
 <td valign="top">
 
 *Include Original Mail* 
-
-
 
 </td>
 <td valign="top">
@@ -457,8 +387,6 @@ The mail adapter polls the messages from the mailbox and splits them into header
 
 To verify signed e-mails, you can include the original e-mail in the `SAP_MAIL_ORIGINAL_MESSAGE` property.
 
-
-
 </td>
 </tr>
 <tr>
@@ -467,8 +395,6 @@ To verify signed e-mails, you can include the original e-mail in the `SAP_MAIL_O
 *Decode MIME Headers*
 
 \(selected by default\)
-
-
 
 </td>
 <td valign="top">
@@ -484,8 +410,6 @@ Non-ASCII characters are not allowed in MIME messages. MIME `encoded-word` synta
 
 For more details, see [MIME \(Multipurpose Internet Mail Extensions\) Part Three: Message Header Extensions for Non-ASCII Text](https://www.rfc-editor.org/rfc/rfc2047) \(RFC-2047\).
 
-
-
 </td>
 </tr>
 <tr>
@@ -495,14 +419,10 @@ For more details, see [MIME \(Multipurpose Internet Mail Extensions\) Part Three
 
 \(selected by default\)
 
-
-
 </td>
 <td valign="top">
 
 When selected, Cloud Integration disconnects from the e-mail server after each poll.
-
-
 
 </td>
 </tr>
@@ -568,21 +488,15 @@ Select the *Scheduler* tab and provide values in the fields as follows.
 
 Scheduler Option
 
-
-
 </th>
 <th valign="top">
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -593,21 +507,15 @@ Description
 
 \(mails are to be polled at a specific day\)
 
-
-
 </td>
 <td valign="top">
 
 On Date
 
-
-
 </td>
 <td valign="top">
 
 Specify the date on which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -616,14 +524,10 @@ Specify the date on which you want the operation to be executed.
 
 On Time
 
-
-
 </td>
 <td valign="top">
 
 Specify the time at which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -632,14 +536,10 @@ Specify the time at which you want the operation to be executed.
 
 Every
 
-
-
 </td>
 <td valign="top">
 
 Specify the interval at which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -648,14 +548,10 @@ Specify the interval at which you want the operation to be executed.
 
 Time Zone
 
-
-
 </td>
 <td valign="top">
 
 Select the time zone that you want the scheduler to use as a reference for the date and time settings.
-
-
 
 </td>
 </tr>
@@ -666,21 +562,15 @@ Select the time zone that you want the scheduler to use as a reference for the d
 
 \(mails are to be polled periodically\)
 
-
-
 </td>
 <td valign="top">
 
 Daily
 
-
-
 </td>
 <td valign="top">
 
 Specify that the messages are to be polled daily \(either at a specific time as defined next to the checkbox *On Time* or in a specific time interval as defined next to the checkbox *Every*\).
-
-
 
 </td>
 </tr>
@@ -689,14 +579,10 @@ Specify that the messages are to be polled daily \(either at a specific time as 
 
 Weekly
 
-
-
 </td>
 <td valign="top">
 
 Specify that the messages are to be polled weekly. Select the checkboxes to indicate the days of the week on which you want the operation to be executed. Also specify the time \(checkbox *On Time*\) or interval \(checkbox *Every*\) for the schedule to recur.
-
-
 
 </td>
 </tr>
@@ -705,14 +591,10 @@ Specify that the messages are to be polled weekly. Select the checkboxes to indi
 
 Monthly
 
-
-
 </td>
 <td valign="top">
 
 Specify that the messages are to be polled monthly. Select the day of the month on which you want the operation to be executed. Also specify the time \(checkbox *On Time*\) or interval \(checkbox *Every*\) for the schedule to recur.
-
-
 
 </td>
 </tr>
@@ -721,14 +603,10 @@ Specify that the messages are to be polled monthly. Select the day of the month 
 
 On Time
 
-
-
 </td>
 <td valign="top">
 
 Specify the time at which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -737,14 +615,10 @@ Specify the time at which you want the operation to be executed.
 
 Every
 
-
-
 </td>
 <td valign="top">
 
 Specify the interval at which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -753,14 +627,10 @@ Specify the interval at which you want the operation to be executed.
 
 Time Zone
 
-
-
 </td>
 <td valign="top">
 
 Select the time zone that you want the scheduler to use as a reference for the date and time settings.
-
-
 
 </td>
 </tr>

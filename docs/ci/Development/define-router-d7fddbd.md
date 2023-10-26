@@ -21,14 +21,10 @@ You perform this task when you have to specify conditions based on which the mes
 
 Operator
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -37,14 +33,10 @@ Example
 
 =
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\} = '1'
-
-
 
 </td>
 </tr>
@@ -53,14 +45,10 @@ $\{header.SenderId\} = '1'
 
 !=
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\} != '1'
-
-
 
 </td>
 </tr>
@@ -69,14 +57,10 @@ $\{header.SenderId\} != '1'
 
 \>
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\} \> '1'
-
-
 
 </td>
 </tr>
@@ -85,14 +69,10 @@ $\{header.SenderId\} \> '1'
 
 \>=
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\} \>= '1'
-
-
 
 </td>
 </tr>
@@ -101,14 +81,10 @@ $\{header.SenderId\} \>= '1'
 
 <
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\} < '1'
-
-
 
 </td>
 </tr>
@@ -117,14 +93,10 @@ $\{header.SenderId\} < '1'
 
 <=
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\} <= '1'
-
-
 
 </td>
 </tr>
@@ -133,14 +105,10 @@ $\{header.SenderId\} <= '1'
 
 and
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\}= '1' and $\{header.ReceiverId\} = '2'
-
-
 
 </td>
 </tr>
@@ -149,14 +117,10 @@ $\{header.SenderId\}= '1' and $\{header.ReceiverId\} = '2'
 
 or
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\}= '1' or $\{header.ReceiverId\}= '2'
-
-
 
 </td>
 </tr>
@@ -165,14 +129,10 @@ $\{header.SenderId\}= '1' or $\{header.ReceiverId\}= '2'
 
 contains
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\} contains '1'
-
-
 
 </td>
 </tr>
@@ -181,14 +141,10 @@ $\{header.SenderId\} contains '1'
 
 not contains
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\} not contains '1'
-
-
 
 </td>
 </tr>
@@ -197,14 +153,10 @@ $\{header.SenderId\} not contains '1'
 
 in
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\} in '1,2'
-
-
 
 </td>
 </tr>
@@ -213,14 +165,10 @@ $\{header.SenderId\} in '1,2'
 
 not in
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\} not in '1,2'
-
-
 
 </td>
 </tr>
@@ -229,14 +177,10 @@ $\{header.SenderId\} not in '1,2'
 
 regex
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\} regex '1.\*'
-
-
 
 </td>
 </tr>
@@ -245,14 +189,10 @@ $\{header.SenderId\} regex '1.\*'
 
 not regex
 
-
-
 </td>
 <td valign="top">
 
 $\{header.SenderId\} not regex '1.\*'
-
-
 
 </td>
 </tr>

@@ -23,14 +23,10 @@ The *Fetch order ID and item number* content modifier step stores the item numbe
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -39,14 +35,10 @@ Setting
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 itemNumber
-
-
 
 </td>
 </tr>
@@ -55,14 +47,10 @@ itemNumber
 
 Source Type
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 </tr>
@@ -71,14 +59,10 @@ XPath
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
-
-
 
 </td>
 </tr>
@@ -87,14 +71,10 @@ java.lang.String
 
 Source Value
 
-
-
 </td>
 <td valign="top">
 
 //@ItemNumber
-
-
 
 </td>
 </tr>
@@ -111,14 +91,10 @@ Furthermore, the same content modifier stores the order number in a header with 
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -127,14 +103,10 @@ Setting
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 orderNumber
-
-
 
 </td>
 </tr>
@@ -143,14 +115,10 @@ orderNumber
 
 Source Type
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 </tr>
@@ -159,14 +127,10 @@ XPath
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
-
-
 
 </td>
 </tr>
@@ -175,14 +139,10 @@ java.lang.String
 
 Source Value
 
-
-
 </td>
 <td valign="top">
 
 //@PurchaseOrderNumber
-
-
 
 </td>
 </tr>
@@ -202,14 +162,10 @@ The *Set unique ID* content modifier step creates a unique ID as a combination o
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -218,14 +174,10 @@ Setting
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 uniqueID
-
-
 
 </td>
 </tr>
@@ -234,14 +186,10 @@ uniqueID
 
 Source Type
 
-
-
 </td>
 <td valign="top">
 
 Expression
-
-
 
 </td>
 </tr>
@@ -250,14 +198,10 @@ Expression
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
-
-
 
 </td>
 </tr>
@@ -266,14 +210,10 @@ java.lang.String
 
 Source Value
 
-
-
 </td>
 <td valign="top">
 
 $\{header.orderNumber\}\_$\{property.itemNumber\}
-
-
 
 </td>
 </tr>
@@ -290,14 +230,10 @@ In order to avoid any duplicates, the *Idempotent Process Call* step sends the m
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -306,14 +242,10 @@ Setting
 
 Message ID
 
-
-
 </td>
 <td valign="top">
 
 $\{property.uniqueID\}
-
-
 
 </td>
 </tr>
@@ -322,14 +254,10 @@ $\{property.uniqueID\}
 
 Skip Process Call for Duplicates
 
-
-
 </td>
 <td valign="top">
 
 Selected
-
-
 
 </td>
 </tr>
@@ -353,14 +281,10 @@ The following aggregation strategy has been defined for the Aggregator step:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -369,14 +293,10 @@ Setting
 
 Incoming Format
 
-
-
 </td>
 <td valign="top">
 
 XML \(Same Format\)
-
-
 
 </td>
 </tr>
@@ -385,14 +305,10 @@ XML \(Same Format\)
 
 Aggregation Algorithm
 
-
-
 </td>
 <td valign="top">
 
 Combine
-
-
 
 </td>
 </tr>
@@ -401,14 +317,10 @@ Combine
 
 Last Message Condition \(XPath\)
 
-
-
 </td>
 <td valign="top">
 
 ns0:Item/LastMessageIndicator='X'
-
-
 
 </td>
 </tr>
@@ -417,14 +329,10 @@ ns0:Item/LastMessageIndicator='X'
 
 Completion Timeout \(in min\)
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -433,14 +341,10 @@ Completion Timeout \(in min\)
 
 Data Store Name
 
-
-
 </td>
 <td valign="top">
 
 QoS-Aggregator
-
-
 
 </td>
 </tr>
@@ -461,14 +365,10 @@ At receiver side, the scenario uses the SOAP \(SAP RM\) receiver adapter with th
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -477,14 +377,10 @@ Setting
 
 SAP RM Message ID Determination
 
-
-
 </td>
 <td valign="top">
 
 Map
-
-
 
 </td>
 </tr>
@@ -493,14 +389,10 @@ Map
 
 Source for SAP RM Message ID
 
-
-
 </td>
 <td valign="top">
 
 Source for SAP RM Message ID
-
-
 
 </td>
 </tr>
@@ -526,15 +418,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -542,15 +430,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     `OWN`
-
-
     
     </td>
     </tr>
@@ -558,15 +442,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *User*
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -574,15 +454,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Password*
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

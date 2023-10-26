@@ -33,72 +33,52 @@ In a *Content Modifier* step, 2 exchange properties are defined: `category` and 
 
 **Action**
 
-
-
 </td>
 <td valign="top">
 
 **Name**
-
-
 
 </td>
 <td valign="top">
 
 **Type**
 
-
-
 </td>
 <td valign="top">
 
 **Data Type**
-
-
 
 </td>
 <td valign="top">
 
 **Value**
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Create
-
-
 
 </td>
 <td valign="top">
 
 category
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 //Category
-
-
 
 </td>
 </tr>
@@ -107,35 +87,25 @@ java.lang.String
 
 Create
 
-
-
 </td>
 <td valign="top">
 
 maxPrice
-
-
 
 </td>
 <td valign="top">
 
 XPath
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 //MaxPrice
-
-
 
 </td>
 </tr>
@@ -163,14 +133,10 @@ The XPath expression is defined as follows:
 
 XPath Expression
 
-
-
 </td>
 <td valign="top">
 
 //Products/Product\[./Price < $maxPrice\]
-
-
 
 </td>
 </tr>
@@ -179,14 +145,10 @@ XPath Expression
 
 Value Type
 
-
-
 </td>
 <td valign="top">
 
 Nodelist
-
-
 
 </td>
 </tr>
@@ -212,28 +174,20 @@ In the next step, the message is routed to the receiver with the following condi
 
 **Order**
 
-
-
 </td>
 <td valign="top">
 
 **Route Name**
-
-
 
 </td>
 <td valign="top">
 
 **Condition Expression**
 
-
-
 </td>
 <td valign="top">
 
 **Default Route**
-
-
 
 </td>
 </tr>
@@ -242,28 +196,20 @@ In the next step, the message is routed to the receiver with the following condi
 
 1
 
-
-
 </td>
 <td valign="top">
 
 XML
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 X
-
-
 
 </td>
 </tr>
@@ -272,28 +218,20 @@ X
 
 2
 
-
-
 </td>
 <td valign="top">
 
 JSON
-
-
 
 </td>
 <td valign="top">
 
 $\{header.Accept\} = 'application/json'
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

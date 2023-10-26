@@ -27,14 +27,10 @@ Select the *General* tab to access the following parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the Slack channel.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Enter the name of the Slack channel.
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 Shows *Slack* as adapter type.
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Shows *Slack* as adapter type.
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 Shows *HTTPS* as transport protocol.
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ Shows *HTTPS* as transport protocol.
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 Shows *REST* as message protocol.
-
-
 
 </td>
 </tr>
@@ -117,14 +97,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -133,16 +109,12 @@ Description
 
 *App Token Alias* 
 
-
-
 </td>
 <td valign="top">
 
 Name of the *Secure Parameter* artifact that contains the app token credentials.
 
 See: [Deploying a Secure Parameter Artifact](deploying-a-secure-parameter-artifact-4641d6c.md)
-
-
 
 </td>
 </tr>
@@ -151,14 +123,10 @@ See: [Deploying a Secure Parameter Artifact](deploying-a-secure-parameter-artifa
 
 *Response Format*
 
-
-
 </td>
 <td valign="top">
 
 There is no explicit support for response format in Slack Sender. By default, the value is JSON.
-
-
 
 </td>
 </tr>

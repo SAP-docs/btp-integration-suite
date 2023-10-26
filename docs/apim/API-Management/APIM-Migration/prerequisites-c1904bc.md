@@ -41,15 +41,11 @@ Your target system is the system that has your API Management subscription on th
     <th valign="top">
 
     Service Instance for Starter Plan in the Subaccount
-
-
     
     </th>
     <th valign="top">
 
     Instruction
-
-
     
     </th>
     </tr>
@@ -57,8 +53,6 @@ Your target system is the system that has your API Management subscription on th
     <td valign="top">
     
     Already present
-
-
     
     </td>
     <td valign="top">
@@ -66,8 +60,6 @@ Your target system is the system that has your API Management subscription on th
     You cannot use this subaccount for migration. Create a new subaccount in the hyperscalers-managed infrastructure within the cloud foundry environment and enable API Management on that subaccount for it to act as your target system.
 
     Additionally, if you want to reuse the existing runtime then follow the steps mentioned in the [Migrating API Management Subscription Created Using the Starter Plan Service Instance](migrating-api-management-subscription-created-using-the-starter-plan-service-instan-9778a36.md).
-
-
     
     </td>
     </tr>
@@ -75,15 +67,11 @@ Your target system is the system that has your API Management subscription on th
     <td valign="top">
     
     Not present
-
-
     
     </td>
     <td valign="top">
     
     You can choose to reuse this account as your target system for migration, or create a new subaccount.
-
-
     
     </td>
     </tr>

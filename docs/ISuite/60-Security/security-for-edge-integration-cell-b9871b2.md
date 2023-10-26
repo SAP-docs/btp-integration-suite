@@ -19,7 +19,7 @@ For secure runtime parameter configurations and operations, see [Runtime Paramet
 
 [Data Protection and Privacy](data-protection-and-privacy-d164170.md "Various types of customer data are processed by, and stored on, the integration platform at different times. This data gets the highest level of protection, and SAP takes dedicated measures to guarantee this security level.")
 
-[Kubernetes](../kubernetes-f06bfa1.md "")
+[Kubernetes](kubernetes-f06bfa1.md "")
 
 [Technical Landscape \(Edge Integration Cell\)](../technical-landscape-edge-integration-cell-f60efc1.md "Get to know the system landscape and the components of SAP Integration Suite Edge Integration Cell.")
 

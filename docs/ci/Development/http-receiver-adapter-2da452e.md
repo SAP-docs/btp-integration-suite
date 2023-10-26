@@ -104,14 +104,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -120,14 +116,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -144,14 +136,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -159,8 +147,6 @@ Description
 <td valign="top">
 
 *Address* 
-
-
 
 </td>
 <td valign="top">
@@ -193,16 +179,12 @@ When you specify the *Address* field of the HTTP adapter as `${header.a}`, at ru
 
 The endpoint URL that is actually used at runtime is displayed in the message processing log \(MPL\) in the message monitoring application \(MPL property `RealDestinationUrl`\). Note that you can manually configure the endpoint URL using the *Address* attribute of the adapter. However, there are several ways to dynamically override the value of this attribute \(for example, by using the Camel header `CamelHttpUri`\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Query* 
-
-
 
 </td>
 <td valign="top">
@@ -247,8 +229,6 @@ When you specify the *Query* field of the HTTP adapter as `${header.a}`, at runt
 
 *Proxy Type* 
 
-
-
 </td>
 <td valign="top">
 
@@ -286,14 +266,10 @@ The type of proxy that you are using to connect to the target system:
 
 \(only if you select *On-Premise* for *Proxy Type*.\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to a cloud connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side. You can also enter `${header.headername}` or `${property.propertyname}` to dynamically read the value from a header or a property.
-
-
 
 </td>
 </tr>
@@ -301,8 +277,6 @@ To connect to a cloud connector instance associated with your account, enter the
 <td valign="top">
 
 *Method* 
-
-
 
 </td>
 <td valign="top">
@@ -353,14 +327,10 @@ Action that the HTTP request must perform.
 
 \(only if you select for *Method* the option *GET, DELETE, HEAD*, or *Dynamic*.\)
 
-
-
 </td>
 <td valign="top">
 
 Select this checkbox if you want to send the body of the message with the request. For methods GET, DELETE, and HEAD, the body isn't sent by default because some HTTP servers don't support this function.
-
-
 
 </td>
 </tr>
@@ -371,14 +341,10 @@ Select this checkbox if you want to send the body of the message with the reques
 
 \(only if you select for *Method* the option *Dynamic*.\)
 
-
-
 </td>
 <td valign="top">
 
 The expression field allows you to enter a simple expression that specifies the HTTP method for the HTTP call . For example, you can define that the method is determined dynamically by reading a value from a message header or property such as `${header.abc}` or `${property.abc}`. If the header or property doesn’t exist or its value is empty, the **POST** method is used by default.
-
-
 
 </td>
 </tr>
@@ -386,8 +352,6 @@ The expression field allows you to enter a simple expression that specifies the 
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -469,8 +433,6 @@ Enabled only if you choose *Proxy Type* as *Internet*.
 
 \(only if you select for *Authentication* the option *Basic*, *OAuth2 Client Credentials*, or *OAuth2 SAML Bearer Assertion*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -480,8 +442,6 @@ You can dynamically configure the *Credential Name* property by specifying eithe
 
 Although you can configure this feature, it is not supported when using the corresponding integration content with the SAP Process Orchestration \(SAP PO\) runtime in releases lower than SAP PO 7.5 SP5.
 
-
-
 </td>
 </tr>
 <tr>
@@ -490,8 +450,6 @@ Although you can configure this feature, it is not supported when using the corr
 *Private Key Alias*
 
 \(only if you select *Client Certificate* for authentication\)
-
-
 
 </td>
 <td valign="top">
@@ -510,8 +468,6 @@ Enter the private key alias that enables the system to fetch the private key fro
 
 *Timeout \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
@@ -521,16 +477,12 @@ The default value is 60000 milliseconds \(1 minute\).
 
 Note that the timeout setting has no influence on the Transmission Control Protocol \(TCP\) timeout if the receiver or any additional component interconnected between the Cloud Integration tenant and the receiver has a lower timeout. For example, consider that you have configured a receiver channel timeout of 10 minutes and there is another component involved with a timeout of 5 minutes. If nothing is transferred for a period of time, the connection will be closed after the fifth minute. In HTTP communication spanning multiple components \(for example, from a sender, through the load balancer, to a Cloud Integration tenant, and from there to a receiver\), the actual timeout period is influenced by each of the timeout settings of the individual components that are interconnected between the sender and receiver \(to be more exact, of those components that can control the TCP session\). The component or device with the lowest number set for the idle session timeout will determine the timeout that will be used.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Throw Exception on Failure* 
-
-
 
 </td>
 <td valign="top">
@@ -553,8 +505,6 @@ This option allows you to receive all responses irrespective of the HTTP status 
 
 *Attach Error Details on Failure* 
 
-
-
 </td>
 <td valign="top">
 
@@ -563,8 +513,6 @@ By default, the option is enabled. This option enables the creation of attachmen
 Having these attachments during message processing failures can be unneccesary as it leads to persistence of attachments that doesn't help. Especially, if multiple message processing failures occurs, you have attachments piled up for each failure. If you don't require the attachments for failure scenarios, disable the option. Though you disable the creation of attachments, the content of the same are added to the message processing logs.
 
 If you're using older versions of the adapter where you don't see the option, define the property `SAP.DisableAttachments.HTTP` in the message exchange with the value `true`.
-
-
 
 </td>
 </tr>
@@ -579,14 +527,10 @@ If you're using older versions of the adapter where you don't see the option, de
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -594,8 +538,6 @@ Description
 <td valign="top">
 
 *Request Headers* 
-
-
 
 </td>
 <td valign="top">
@@ -643,14 +585,10 @@ All Camel-specific headers \(that starts with `camel` or `org.apache.camel`\) an
 
 *Response Headers* 
 
-
-
 </td>
 <td valign="top">
 
 Enter a list of headers coming from the target system's response, separated by a pipe \(|\), to be received in the message. Use an `*` to receive all the headers from the target system, which is also the default value.
-
-
 
 </td>
 </tr>

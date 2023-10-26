@@ -47,15 +47,11 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -63,15 +59,11 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Enter the name of the converter.
-
-
     
     </td>
     </tr>
@@ -79,15 +71,11 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     <td valign="top">
     
     Source Encoding
-
-
     
     </td>
     <td valign="top">
     
     Select encoding format for the incoming payload.
-
-
     
     </td>
     </tr>
@@ -95,15 +83,11 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     <td valign="top">
     
     EDI Schema Definition
-
-
     
     </td>
     <td valign="top">
     
     Select the source of schema definition.
-
-
     
     </td>
     </tr>
@@ -111,8 +95,6 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     <td valign="top">
     
     Schemas
-
-
     
     </td>
     <td valign="top">
@@ -159,8 +141,6 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     <td valign="top">
     
     HeaderName
-
-
     
     </td>
     <td valign="top">
@@ -182,15 +162,11 @@ Use the procedure here to convert EDIFACT, ODETTE, and ASC-X12 format into XML f
     <td valign="top">
     
     Exclude Interchange and Group envelopes
-
-
     
     </td>
     <td valign="top">
     
     If selected the feature notifies the converter to exclude the interchange and group envelopes found in an EDI document.
-
-
     
     </td>
     </tr>

@@ -13,21 +13,15 @@ To get data store entries of specific data store, perform the following call:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Purpose
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `​/DataStores(DataStoreName='<data store name>',IntegrationFlow='<integration flow ID>',Type='')/Entries` 
 
-
-
 </td>
 <td valign="top">
 
 Gets all entries of a specific data store.
-
-
 
 </td>
 </tr>

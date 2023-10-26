@@ -23,7 +23,7 @@ You can use the Message Type artifacts in message mapping and integration flows 
 
 ## Procedure
 
-1.  Choose *Design* \> *Integrations* to view the list of integration packages.
+1.  Choose *Design* \> *Integrations and APIs* to view the list of integration packages.
 
 2.  Select the integration package in which you want to add a Data Type or Message Type and choose *Edit*.
 

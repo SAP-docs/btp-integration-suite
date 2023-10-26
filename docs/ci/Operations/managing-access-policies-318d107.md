@@ -62,15 +62,11 @@ To restrict access via access policies, proceed as follows.
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -78,15 +74,11 @@ To restrict access via access policies, proceed as follows.
     <td valign="top">
     
     *Role Name*
-
-
     
     </td>
     <td valign="top">
     
     Enter a role name \(mandatory\). The role name is the name of a custom role that you've to create in your subscriber account.
-
-
     
     </td>
     </tr>
@@ -94,15 +86,11 @@ To restrict access via access policies, proceed as follows.
     <td valign="top">
     
     *Description*
-
-
     
     </td>
     <td valign="top">
     
     Enter a description for the role specified \(optional\).
-
-
     
     </td>
     </tr>
@@ -120,15 +108,11 @@ To restrict access via access policies, proceed as follows.
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -136,15 +120,11 @@ To restrict access via access policies, proceed as follows.
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     Enter an artifact name \(mandatory\).
-
-
     
     </td>
     </tr>
@@ -152,15 +132,11 @@ To restrict access via access policies, proceed as follows.
     <td valign="top">
     
     *Description*
-
-
     
     </td>
     <td valign="top">
     
     Enter an artifact description \(optional\), which isn’t necessarily the description of the artifact: if you choose the operator `Matches`, describe the set of artifacts selected by the regular expression \(for example: integration artifacts processing data for German employees\).
-
-
     
     </td>
     </tr>
@@ -168,8 +144,6 @@ To restrict access via access policies, proceed as follows.
     <td valign="top" colspan="2">
     
     *Condition*
-
-
     
     </td>
     </tr>
@@ -177,15 +151,11 @@ To restrict access via access policies, proceed as follows.
     <td valign="top">
     
     *Artifact Type*
-
-
     
     </td>
     <td valign="top">
     
     Select an artifact type from the list. By default, preset as `Integration Flow`.
-
-
     
     </td>
     </tr>
@@ -193,8 +163,6 @@ To restrict access via access policies, proceed as follows.
     <td valign="top">
     
     *Attribute* 
-
-
     
     </td>
     <td valign="top">
@@ -212,8 +180,6 @@ To restrict access via access policies, proceed as follows.
     <td valign="top">
     
     Operator
-
-
     
     </td>
     <td valign="top">
@@ -230,15 +196,11 @@ To restrict access via access policies, proceed as follows.
     <td valign="top">
     
     *Value*
-
-
     
     </td>
     <td valign="top">
     
     If you choose *Equals*, enter the *ID*or the *Name*of the integration artifact.
-
-
     
     </td>
     </tr>
@@ -246,8 +208,6 @@ To restrict access via access policies, proceed as follows.
     <td valign="top">
     
     *Expression*
-
-
     
     </td>
     <td valign="top">

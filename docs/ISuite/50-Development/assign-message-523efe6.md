@@ -96,21 +96,15 @@ An example payload for the policy is as follows:
 
 **Elements & Attributes**
 
-
-
 </th>
 <th valign="top">
 
  
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -118,8 +112,6 @@ An example payload for the policy is as follows:
 <td valign="top" colspan="2">
 
 AssignTo \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -164,8 +156,6 @@ In some cases, you cannot change the object on which this policy works. For exam
 
 createNew \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
@@ -195,14 +185,10 @@ If the value of `createNew` is not specified, the policy responds in one of the 
 
 transport \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 It is a string which indicates the transport method for request and response messages. The only supported value is HTTP.
-
-
 
 </td>
 </tr>
@@ -210,8 +196,6 @@ It is a string which indicates the transport method for request and response mes
 <td valign="top" colspan="2">
 
 type \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -222,16 +206,12 @@ Valid values: `request` or `response`
 
 Default value: `request`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" colspan="2">
 
 IgnoreUnresolvedVariables \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -278,14 +258,10 @@ Default value: `false`
 
 Copy \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 source
-
-
 
 </td>
 <td valign="top">
@@ -294,16 +270,12 @@ Copies the specified information from the <source\> to the variable specified in
 
 If the source is not specified, it is treated as a simple message. If the source variable cannot be resolved, or resolves to a non-message type, <Copy\> fails to respond.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Headers
-
-
 
 </td>
 <td valign="top">
@@ -370,8 +342,6 @@ To copy all headers, specify `<Copy><Headers/></Copy>`.
 
 QueryParams
 
-
-
 </td>
 <td valign="top">
 
@@ -426,8 +396,6 @@ You can use query parameters only when the message type is Request and the HTTP 
 <td valign="top">
 
 FormParams
-
-
 
 </td>
 <td valign="top">
@@ -486,8 +454,6 @@ You can use query parameters only when the message type is Request and the HTTP 
 
 Payload
 
-
-
 </td>
 <td valign="top">
 
@@ -530,8 +496,6 @@ If true, the Content-Type header is copied.
 
 Version
 
-
-
 </td>
 <td valign="top">
 
@@ -572,8 +536,6 @@ If true, the HTTP version is copied.
 <td valign="top">
 
 Verb
-
-
 
 </td>
 <td valign="top">
@@ -616,8 +578,6 @@ If true, the verb of the request gets assigned to the new request message, which
 
 Path
 
-
-
 </td>
 <td valign="top">
 
@@ -657,8 +617,6 @@ If true, the path of the request gets assigned to the path of the new request ob
 <td valign="top">
 
 StatusCode
-
-
 
 </td>
 <td valign="top">
@@ -700,8 +658,6 @@ Valid values: `true` or `false`. If true, the response status gets assigned to t
 
 Reason Phrase
 
-
-
 </td>
 <td valign="top">
 
@@ -742,14 +698,10 @@ If true, the reason phrase of the response gets assigned to the new response mes
 
 Remove \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 Headers
-
-
 
 </td>
 <td valign="top">
@@ -811,8 +763,6 @@ To remove specific headers, provide the header name in the name attribute as bel
 
 QueryParams
 
-
-
 </td>
 <td valign="top">
 
@@ -858,8 +808,6 @@ Note that the QueryParams are removed only when the AssignTo type is request and
 <td valign="top">
 
 FormParams
-
-
 
 </td>
 <td valign="top">
@@ -911,8 +859,6 @@ Note that the FormParams are removed only when the contentType of AssignTo is ap
 
 Payload
 
-
-
 </td>
 <td valign="top">
 
@@ -953,14 +899,10 @@ Valid values: `true` or `false`. If true, the payload is cleared.
 
 Add \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 Headers
-
-
 
 </td>
 <td valign="top">
@@ -1009,8 +951,6 @@ Note that the empty header `<Add><Headers/></Add>` does not add any header. The 
 
 QueryParams
 
-
-
 </td>
 <td valign="top">
 
@@ -1057,8 +997,6 @@ You can use query parameters only when the message type is Request and the HTTP 
 <td valign="top">
 
 FormParams
-
-
 
 </td>
 <td valign="top">
@@ -1112,14 +1050,10 @@ You can use form parameters only when the message type is Request and the HTTP v
 
 Set \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 Headers
-
-
 
 </td>
 <td valign="top">
@@ -1166,8 +1100,6 @@ Note that the empty header `<Set><Headers/></Set>` does not set any header. The 
 
 QueryParams
 
-
-
 </td>
 <td valign="top">
 
@@ -1209,8 +1141,6 @@ Sets or overwrites the query parameters in a request.
 <td valign="top">
 
 FormParams
-
-
 
 </td>
 <td valign="top">
@@ -1256,8 +1186,6 @@ You can use form parameters only when the message type is Request and the HTTP v
 <td valign="top">
 
 Payload
-
-
 
 </td>
 <td valign="top">
@@ -1329,8 +1257,6 @@ Following are the attributes \(optional\) of <Payload\>:
 
 Version
 
-
-
 </td>
 <td valign="top">
 
@@ -1372,8 +1298,6 @@ Sets the HTTP version on a request.
 <td valign="top">
 
 Reason Phrase
-
-
 
 </td>
 <td valign="top">
@@ -1417,8 +1341,6 @@ Sets the reason phrase only when AssignTo type is response. This is generally us
 
 Status Code
 
-
-
 </td>
 <td valign="top">
 
@@ -1460,8 +1382,6 @@ Sets the status code only when AssignTo type is response.
 <td valign="top">
 
 Verb
-
-
 
 </td>
 <td valign="top" rowspan="2">
@@ -1505,8 +1425,6 @@ Sets the HTTP verb and path only when AssignTo type is request.
 
 Path
 
-
-
 </td>
 </tr>
 <tr>
@@ -1514,14 +1432,10 @@ Path
 
 AssignVariable
 
-
-
 </td>
 <td valign="top">
 
 Name \(Required\)
-
-
 
 </td>
 <td valign="top">
@@ -1565,8 +1479,6 @@ It is a string that specifies the name of the variable. If the variable named in
 <td valign="top">
 
 Ref \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -1621,8 +1533,6 @@ Define the default value for the destination flow variable by using `<Value>` al
 
 Template \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
@@ -1663,8 +1573,6 @@ It is a string that specifies the message template, which support functions like
 <td valign="top">
 
 Value \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -1724,14 +1632,10 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -1740,14 +1644,10 @@ Cause
 
 UnresolvedVariable
 
-
-
 </td>
 <td valign="top">
 
 A flow variable referenced in the policy does not exist. Be sure that the variable is in scope - some of the built-in variables are only available in certain flow contexts.
-
-
 
 </td>
 </tr>
@@ -1756,14 +1656,10 @@ A flow variable referenced in the policy does not exist. Be sure that the variab
 
 VariableOfNonMsgType
 
-
-
 </td>
 <td valign="top">
 
 The policy tried to assign a value to a non-message type variable. Message type variables include request and response. They also can be custom variables that are of type message. You might see this in the <Copy\> element if you set the source attribute to a variable that is not of type Message.
-
-
 
 </td>
 </tr>
@@ -1772,14 +1668,10 @@ The policy tried to assign a value to a non-message type variable. Message type 
 
 SetVariableFailed
 
-
-
 </td>
 <td valign="top">
 
 The policy was not able to set a variable. See the fault string for the name of the unresolved variable
-
-
 
 </td>
 </tr>
@@ -1788,14 +1680,10 @@ The policy was not able to set a variable. See the fault string for the name of 
 
 InvalidIndex
 
-
-
 </td>
 <td valign="top">
 
 The index must be greater than zero when specified in the Copy and Remove operations. For example, a query parameter can have multiple values. This error occurs if you specify an invalid index, such as 0 or a negative number.
-
-
 
 </td>
 </tr>
@@ -1804,14 +1692,10 @@ The index must be greater than zero when specified in the Copy and Remove operat
 
 InvalidVariableName
 
-
-
 </td>
 <td valign="top">
 
 The policy schema validation failed because a variable name is invalid.
-
-
 
 </td>
 </tr>
@@ -1820,14 +1704,10 @@ The policy schema validation failed because a variable name is invalid.
 
 InvalidPayload
 
-
-
 </td>
 <td valign="top">
 
 A payload specified in the policy is invalid.
-
-
 
 </td>
 </tr>
@@ -1844,21 +1724,15 @@ Following fault variables are set when the policy triggers an error at runtime:
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -1867,8 +1741,6 @@ Example
 
 \[prefix\].\[policy\_name\].failed
 
-
-
 </td>
 <td valign="top">
 
@@ -1876,14 +1748,10 @@ The \[prefix\] is assignmessage.
 
 The \[policy\_name\] is the name of the policy that threw the error.
 
-
-
 </td>
 <td valign="top">
 
 assignmessage.AM-SetResponse.failed = true
-
-
 
 </td>
 </tr>
@@ -1892,21 +1760,15 @@ assignmessage.AM-SetResponse.failed = true
 
 fault.name = \[error\_name\]
 
-
-
 </td>
 <td valign="top">
 
 \[error\_name\] is the specific error name to check for as listed in the table above.
 
-
-
 </td>
 <td valign="top">
 
 fault.name = "UnresolvedVariable"
-
-
 
 </td>
 </tr>

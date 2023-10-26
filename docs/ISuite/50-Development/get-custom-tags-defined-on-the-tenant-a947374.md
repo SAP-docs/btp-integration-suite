@@ -13,21 +13,15 @@ To get all custom tags defined by the tenant administrator, you need to perform 
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Purpose
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `​/CustomTagConfigurations('CustomTags')/$value` 
 
-
-
 </td>
 <td valign="top">
 
 Get all custom tags.
-
-
 
 </td>
 </tr>

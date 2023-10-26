@@ -30,8 +30,6 @@ The naming convention for custom integration packages is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
@@ -39,16 +37,12 @@ Tenant
 
 The Integration Package is the uppermost unit in Cloud Integration. The name must be unique for the tenant.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Definition*
-
-
 
 </td>
 <td valign="top">
@@ -66,16 +60,12 @@ The Integration Package is the uppermost unit in Cloud Integration. The name mus
 
 In case, an integration package is to be copied, then follow the next rules: Use the tag `<AdditionalInformation>` at the end to differentiate the new package from the copied one. For example, use the country key.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">
@@ -130,8 +120,6 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
@@ -139,16 +127,12 @@ Integration Package/Tenant
 
 Integration flows are organized in integration packages. However, the ID must be unique for the tenant.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Definition*
-
-
 
 </td>
 <td valign="top">
@@ -173,8 +157,6 @@ Integration flows are organized in integration packages. However, the ID must be
 
 *Example*
 
-
-
 </td>
 <td valign="top">
 
@@ -187,8 +169,6 @@ Integration flows are organized in integration packages. However, the ID must be
 -   `Global_MM_Ariba_PurchaseOrderReplication`
 
 Standard Integration Flows maintain their original names.
-
-
 
 </td>
 </tr>
@@ -216,8 +196,6 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
@@ -225,16 +203,12 @@ Integration Package/Tenant
 
 The APIs are organized in integration packages. However, the ID must be unique for the entire tenant.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Definition*
-
-
 
 </td>
 <td valign="top">
@@ -258,8 +232,6 @@ The APIs are organized in integration packages. However, the ID must be unique f
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">
@@ -297,8 +269,6 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
@@ -306,16 +276,12 @@ Integration Flow
 
 Participants of different integration flows can have the same name. This naming convention for participants is just for documentation and readability purposes. It has no technical impact during deployment and doesn't collide with participants of other already deployed integration flows.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Definition*
-
-
 
 </td>
 <td valign="top">
@@ -333,16 +299,12 @@ Application:
 
 Generic name in capital letters for the systems involved in the scenario. No technical names. Examples: SAP S/4HANA, SAP ERP, SAP SuccessFactors, SAP Cloud for Customer, SAP Solution Manager.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">
@@ -380,8 +342,6 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
@@ -389,16 +349,12 @@ Integration Flow
 
 Channels of different integration flows can have the same name.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Definition*
-
-
 
 </td>
 <td valign="top">
@@ -418,8 +374,6 @@ Channels of different integration flows can have the same name.
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">
@@ -459,8 +413,6 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
@@ -468,16 +420,12 @@ Integration Flow
 
 Mappings of different integration flows can have the same name.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Definition*
-
-
 
 </td>
 <td valign="top">
@@ -499,8 +447,6 @@ Mappings of different integration flows can have the same name.
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">
@@ -546,8 +492,6 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
@@ -555,16 +499,12 @@ Integration Package
 
 The value mappings are organized in integration packages. The id must be unique for the entire tenant.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Definition*
-
-
 
 </td>
 <td valign="top">
@@ -586,8 +526,6 @@ The value mappings are organized in integration packages. The id must be unique 
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">
@@ -627,8 +565,6 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
@@ -636,16 +572,12 @@ Integration Flow
 
 Scripts of different integration flows can have the same name.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Definition*
-
-
 
 </td>
 <td valign="top">
@@ -667,8 +599,6 @@ Scripts of different integration flows can have the same name.
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">
@@ -706,8 +636,6 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
@@ -715,16 +643,12 @@ Tenant
 
 Endpoints must be unique for the entire tenant. The address entered as url can be repeated in sender channels, if they have different protocols, as the protocol forms also the url.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Definition*
-
-
 
 </td>
 <td valign="top">
@@ -746,8 +670,6 @@ Endpoints must be unique for the entire tenant. The address entered as url can b
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">
@@ -785,8 +707,6 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
@@ -794,16 +714,12 @@ Tenant
 
 Endpoints must be unique for the entire tenant.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Definition*
-
-
 
 </td>
 <td valign="top">
@@ -830,8 +746,6 @@ This can be used when different partners should call different Integration Flows
 
 *Example*
 
-
-
 </td>
 <td valign="top">
 
@@ -841,8 +755,6 @@ This can be used when different partners should call different Integration Flows
 
 
 Standard Integration Flows maintain their original names.
-
-
 
 </td>
 </tr>
@@ -870,16 +782,12 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
 Integration Flow
 
 Headers and properties of different integration flows can have the same name.
-
-
 
 </td>
 </tr>
@@ -888,14 +796,10 @@ Headers and properties of different integration flows can have the same name.
 
 *Definition*
 
-
-
 </td>
 <td valign="top">
 
 CamelCase: Meaningful name
-
-
 
 </td>
 </tr>
@@ -903,8 +807,6 @@ CamelCase: Meaningful name
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">
@@ -940,16 +842,12 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
 Integration Flow
 
 Elements of different integration flows can have the same name.
-
-
 
 </td>
 </tr>
@@ -958,14 +856,10 @@ Elements of different integration flows can have the same name.
 
 *Definition*
 
-
-
 </td>
 <td valign="top">
 
 Description: Meaningful step description in camelCase
-
-
 
 </td>
 </tr>
@@ -973,8 +867,6 @@ Description: Meaningful step description in camelCase
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">
@@ -1018,8 +910,6 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
@@ -1027,16 +917,12 @@ Tenant
 
 Security artifacts must be unique in the whole tenant.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Definition*
-
-
 
 </td>
 <td valign="top">
@@ -1062,8 +948,6 @@ Security artifacts must be unique in the whole tenant.
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">
@@ -1107,16 +991,12 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
 Tenant
 
 Custom roles must be unique in the whole tenant.
-
-
 
 </td>
 </tr>
@@ -1125,8 +1005,6 @@ Custom roles must be unique in the whole tenant.
 
 *Definition*
 
-
-
 </td>
 <td valign="top">
 
@@ -1134,16 +1012,12 @@ If the custom role applies just to 1 integration flow, use InterfaceDescription 
 
 Expression: Meaningful expression describing all the integration flows or queues included in the role, in case the custom role applies to a group of integration flows or queues.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">
@@ -1185,8 +1059,6 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
@@ -1194,16 +1066,12 @@ Tenant
 
 Message Queues must be unique for the entire tenant.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Definition*
-
-
 
 </td>
 <td valign="top">
@@ -1223,8 +1091,6 @@ Message Queues must be unique for the entire tenant.
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">
@@ -1264,8 +1130,6 @@ The naming convention is as follows:
 
 *Scope*
 
-
-
 </td>
 <td valign="top">
 
@@ -1273,16 +1137,12 @@ Tenant
 
 JDBC Data Sources must be unique for the entire tenant.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Definition*
-
-
 
 </td>
 <td valign="top">
@@ -1300,8 +1160,6 @@ JDBC Data Sources must be unique for the entire tenant.
 <td valign="top">
 
 *Example*
-
-
 
 </td>
 <td valign="top">

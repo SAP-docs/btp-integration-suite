@@ -68,15 +68,11 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -84,15 +80,11 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the artifact that you want to deploy on the tenant.
-
-
     
     </td>
     </tr>
@@ -100,15 +92,11 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     Description of the artifact you're deploying on the tenant.
-
-
     
     </td>
     </tr>
@@ -116,15 +104,11 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     <td valign="top">
     
     Provider
-
-
     
     </td>
     <td valign="top">
     
     Enter the name of the provider of the platform on which you created the OAuth2 client.
-
-
     
     </td>
     </tr>
@@ -132,8 +116,6 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     <td valign="top">
     
     Authorization URL
-
-
     
     </td>
     <td valign="top">
@@ -141,8 +123,6 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     Provide the Authorization URL for authorizing the OAuth client to access resources of a user.
 
     You can add also additional query parameters, as described at the beginning of this chapter. Be aware that the following query parameters are added automatically: `client_id=<client_id>&response_type=code&redirect_uri=<url encoded redirect uri>&state=<state guid>&scope=<scope>`. The scope query part is only added if the scope attribute is not empty, see below.
-
-
     
     </td>
     </tr>
@@ -150,8 +130,6 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     <td valign="top">
     
     Token Service URL
-
-
     
     </td>
     <td valign="top">
@@ -159,8 +137,6 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     Provide the URL that generates the OAuth2 access and refresh token for the registered OAuth2 client and the provided user.
 
     You can add also additional query parameters, as described at the beginning of this chapter. The scope attribute \(see below\) is added as query parameter automatically in case of the "authorization\_code" grant type request; the scope attribute is not added in case of the "refresh\_token" grant type request.
-
-
     
     </td>
     </tr>
@@ -168,15 +144,11 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     <td valign="top">
     
     Redirect URL
-
-
     
     </td>
     <td valign="top">
     
     Displays the URL you need, when creating the OAuth Clients/App im OAuth Authorization Server/Token Server. For more information, see [OAuth2.0 Authorization Code Grant](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/oauth-2-0#loio508a70db7eac4addbb6ac69a06d46e79) 
-
-
     
     </td>
     </tr>
@@ -184,15 +156,11 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     <td valign="top">
     
     Client ID
-
-
     
     </td>
     <td valign="top">
     
     ID of the client you want to connect to.
-
-
     
     </td>
     </tr>
@@ -200,8 +168,6 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     <td valign="top">
     
     Client Secret
-
-
     
     </td>
     <td valign="top">
@@ -209,8 +175,6 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     Secret key of the client that you're connecting to.
 
     See: [OAuth 2.0](../40-RemoteSystems/oauth-2-0-3823134.md#loio382313443b8d4453b0fd536b82b9e15d).
-
-
     
     </td>
     </tr>
@@ -218,8 +182,6 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     <td valign="top">
     
     Send As
-
-
     
     </td>
     <td valign="top">
@@ -237,15 +199,11 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     <td valign="top">
     
     User Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the user whose resources the OAuth2 client gets access to.
-
-
     
     </td>
     </tr>
@@ -253,8 +211,6 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     <td valign="top">
     
     Scope
-
-
     
     </td>
     <td valign="top">

@@ -8,6 +8,9 @@ This integration flow gets the final message from the queue and sends it to the 
 
 Follow the procedure below to configure the integration flow.
 
+> ### Note:  
+> If the receiver side integration flow is calling a custom integration flow, only the computed Partner Directory ID header will be handed over by the receiver integration flow to the custom integration flow.
+
 1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons"></span> button of the integration flow *Step 3 - Receiver Communication Flow* and select *Configure*
 
 2.  Under the *Sender* tab, maintain the following parameter.
@@ -20,22 +23,16 @@ Follow the procedure below to configure the integration flow.
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Default Value
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -43,22 +40,16 @@ Follow the procedure below to configure the integration flow.
     <td valign="top">
     
     Queue Name
-
-
     
     </td>
     <td valign="top">
     
     OUTBOUND\_Q
-
-
     
     </td>
     <td valign="top">
     
     JMS queue where the messages are taken from. These are the outgoing messages persisted in the interchange step.
-
-
     
     </td>
     </tr>
@@ -83,14 +74,10 @@ The integration flow process is explained below
 
 Component
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -98,8 +85,6 @@ Description
 <td valign="top">
 
 Adapter Type Selection
-
-
 
 </td>
 <td valign="top">
@@ -120,14 +105,10 @@ This router checks the receiver adapter type. The message is sent depending on t
 
 B2B Monitoring - Business Document Sent Event
 
-
-
 </td>
 <td valign="top">
 
 The script `InterchangeSendEvent.groovy` updates the interchange of the *B2B Monitor* with the status *COMPLETED* and the event *BUSINESSDOCUMENT\_SEND\_EVENT*
-
-
 
 </td>
 </tr>
@@ -144,14 +125,10 @@ The Retry Configuration integration process is explained below
 
 Component
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -160,14 +137,10 @@ Description
 
 Max Retries Number
 
-
-
 </td>
 <td valign="top">
 
 This content modifier sets the maximum number of retries in case of an error. *Number of Retries* is an externalized parameter.
-
-
 
 </td>
 </tr>
@@ -175,8 +148,6 @@ This content modifier sets the maximum number of retries in case of an error. *N
 <td valign="top">
 
 Router
-
-
 
 </td>
 <td valign="top">

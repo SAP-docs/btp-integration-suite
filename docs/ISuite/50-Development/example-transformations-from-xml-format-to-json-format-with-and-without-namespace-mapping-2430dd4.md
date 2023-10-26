@@ -43,15 +43,11 @@ For the transformation of this document we choose the following settings:
     <th valign="top">
 
     XML Namespace
-
-
     
     </th>
     <th valign="top">
 
     JSON Prefix
-
-
     
     </th>
     </tr>
@@ -59,15 +55,11 @@ For the transformation of this document we choose the following settings:
     <td valign="top">
     
     http://com.sap/abc
-
-
     
     </td>
     <td valign="top">
     
     abc
-
-
     
     </td>
     </tr>
@@ -75,15 +67,11 @@ For the transformation of this document we choose the following settings:
     <td valign="top">
     
     http://com.sap/xyz
-
-
     
     </td>
     <td valign="top">
     
     xyz
-
-
     
     </td>
     </tr>

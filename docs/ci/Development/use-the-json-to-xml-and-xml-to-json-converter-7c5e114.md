@@ -29,14 +29,10 @@ The following settings are defined in the JSON to XML Converter under *Processin
 
 **Attribute**
 
-
-
 </td>
 <td valign="top">
 
 **Value**
-
-
 
 </td>
 </tr>
@@ -45,14 +41,10 @@ The following settings are defined in the JSON to XML Converter under *Processin
 
 Use Namespace Mapping
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -61,14 +53,10 @@ No
 
 JSON Prefix Separator
 
-
-
 </td>
 <td valign="top">
 
 Colon\(:\)
-
-
 
 </td>
 </tr>
@@ -77,14 +65,10 @@ Colon\(:\)
 
 Add XML Root Element
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -93,14 +77,10 @@ Yes
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 Products
-
-
 
 </td>
 </tr>
@@ -134,14 +114,10 @@ The following settings are defined in the OData receiver adapter under *Processi
 
 **Attribute**
 
-
-
 </td>
 <td valign="top">
 
 **Value**
-
-
 
 </td>
 </tr>
@@ -150,14 +126,10 @@ The following settings are defined in the OData receiver adapter under *Processi
 
 Operation Details
 
-
-
 </td>
 <td valign="top">
 
 Query \(GET\)
-
-
 
 </td>
 </tr>
@@ -166,14 +138,10 @@ Query \(GET\)
 
 Resource Path
 
-
-
 </td>
 <td valign="top">
 
 Products
-
-
 
 </td>
 </tr>
@@ -182,14 +150,10 @@ Products
 
 Query Options
 
-
-
 </td>
 <td valign="top">
 
 $select=ProductId,Price,Category,QuantityUnit,ShortDescription,Name,CurrencyCode
-
-
 
 </td>
 </tr>
@@ -206,14 +170,10 @@ Under *ORIGINAL MESSAGE*, the following settings are defined:
 
 **Attribute**
 
-
-
 </td>
 <td valign="top">
 
 **Value**
-
-
 
 </td>
 </tr>
@@ -222,14 +182,10 @@ Under *ORIGINAL MESSAGE*, the following settings are defined:
 
 Path to Node
 
-
-
 </td>
 <td valign="top">
 
 Products
-
-
 
 </td>
 </tr>
@@ -238,14 +194,10 @@ Products
 
 Key Element
 
-
-
 </td>
 <td valign="top">
 
 ProductId
-
-
 
 </td>
 </tr>
@@ -326,14 +278,10 @@ The following settings are defined in the *XML to JSON Converter* under *Process
 
 **Attribute**
 
-
-
 </td>
 <td valign="top">
 
 **Value**
-
-
 
 </td>
 </tr>
@@ -342,14 +290,10 @@ The following settings are defined in the *XML to JSON Converter* under *Process
 
 JSON Prefix Separator
 
-
-
 </td>
 <td valign="top">
 
 Colon\(:\)
-
-
 
 </td>
 </tr>
@@ -358,14 +302,10 @@ Colon\(:\)
 
 JSON Output Encoding
 
-
-
 </td>
 <td valign="top">
 
 From Header or Property
-
-
 
 </td>
 </tr>

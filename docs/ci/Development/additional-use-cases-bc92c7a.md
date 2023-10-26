@@ -11,14 +11,10 @@
 
 Use Case
 
-
-
 </th>
 <th valign="top">
 
 Example Requests / More Information
-
-
 
 </th>
 </tr>
@@ -26,8 +22,6 @@ Example Requests / More Information
 <td valign="top">
 
 Address value mappings
-
-
 
 </td>
 <td valign="top">
@@ -65,8 +59,6 @@ messageLog.setStringProperty("Information","The transformed locale value is : " 
 <td valign="top">
 
 Address number ranges
-
-
 
 </td>
 <td valign="top">

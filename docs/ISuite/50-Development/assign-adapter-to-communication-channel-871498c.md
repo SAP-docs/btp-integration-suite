@@ -23,7 +23,7 @@ You use this procedure if you want to change the adapter assigned to the communi
 
 ## Procedure
 
-1.  Choose *Design* \> *Integrations*.
+1.  Choose *Design* \> *Integrations and APIs*.
 
 2.  Select the integration package that contains the integration flow or create a new one.
 

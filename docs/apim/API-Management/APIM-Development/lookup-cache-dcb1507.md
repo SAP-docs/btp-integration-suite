@@ -32,14 +32,10 @@ An example payload for the policy is as follows:
 
 **Element**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -48,14 +44,10 @@ An example payload for the policy is as follows:
 
 CacheKey
 
-
-
 </td>
 <td valign="top">
 
 Configures a unique pointer to a piece of data stored in the cache.
-
-
 
 </td>
 </tr>
@@ -64,14 +56,10 @@ Configures a unique pointer to a piece of data stored in the cache.
 
 CacheResource
 
-
-
 </td>
 <td valign="top">
 
 Specifies the cache where messages should be stored. A default cache is available.
-
-
 
 </td>
 </tr>
@@ -80,14 +68,10 @@ Specifies the cache where messages should be stored. A default cache is availabl
 
 Scope
 
-
-
 </td>
 <td valign="top">
 
 Enumeration used to construct a prefix for a cache key when a Prefix element is not provided in the CacheKey element.The list of supported values are: Global, Application, Proxy, Target, and Exclusive.
-
-
 
 </td>
 </tr>
@@ -96,14 +80,10 @@ Enumeration used to construct a prefix for a cache key when a Prefix element is 
 
 AssignTo
 
-
-
 </td>
 <td valign="top">
 
 Specifies the variable where the cache entry is assigned after it has been retrieved from the cache.
-
-
 
 </td>
 </tr>
@@ -112,14 +92,10 @@ Specifies the variable where the cache entry is assigned after it has been retri
 
 Prefix
 
-
-
 </td>
 <td valign="top">
 
 Specifies a value to use as a cache key prefix.
-
-
 
 </td>
 </tr>
@@ -128,14 +104,10 @@ Specifies a value to use as a cache key prefix.
 
 KeyFragment
 
-
-
 </td>
 <td valign="top">
 
 Specifies a value that should be included in the cache key, creating a namespace for matching requests to cached responses.
-
-
 
 </td>
 </tr>
@@ -152,28 +124,20 @@ The following predefined Flow variables are available after you customize the be
 
 Variables
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Permission
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -182,28 +146,20 @@ Description
 
 lookupcache.\{policy-name\}.cachename
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Read-Only
 
-
-
 </td>
 <td valign="top">
 
 Returns the cache name used in the policy.
-
-
 
 </td>
 </tr>
@@ -212,28 +168,20 @@ Returns the cache name used in the policy.
 
 lookupcache.\{policy-name\}.cachekey
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Read-Only
 
-
-
 </td>
 <td valign="top">
 
 Returns the key used.
-
-
 
 </td>
 </tr>
@@ -242,28 +190,20 @@ Returns the key used.
 
 lookupcache.\{policy-name\}.cachehit
 
-
-
 </td>
 <td valign="top">
 
 Boolean
-
-
 
 </td>
 <td valign="top">
 
 Read-Only
 
-
-
 </td>
 <td valign="top">
 
 True if the policy found a value for the specified cache key.
-
-
 
 </td>
 </tr>
@@ -272,28 +212,20 @@ True if the policy found a value for the specified cache key.
 
 lookupcache.\{policy-name\}.assignto
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Read-Only
 
-
-
 </td>
 <td valign="top">
 
 Returns the variable to which cache is assigned.
-
-
 
 </td>
 </tr>
@@ -308,14 +240,10 @@ Lookup Cache policy type defines the following error codes:
 
 Error code
 
-
-
 </th>
 <th valign="top">
 
 Occurs when
-
-
 
 </th>
 </tr>
@@ -324,14 +252,10 @@ Occurs when
 
 InvalidCacheResourceReference
 
-
-
 </td>
 <td valign="top">
 
 The cache specified in the <CacheResource\> element does not exist.
-
-
 
 </td>
 </tr>
@@ -340,14 +264,10 @@ The cache specified in the <CacheResource\> element does not exist.
 
 InvalidTimeout
 
-
-
 </td>
 <td valign="top">
 
 The CacheLookupTimeoutInSeconds value must be greater than zero.
-
-
 
 </td>
 </tr>
@@ -356,14 +276,10 @@ The CacheLookupTimeoutInSeconds value must be greater than zero.
 
 CacheNotFound
 
-
-
 </td>
 <td valign="top">
 
 The cache specified in the <CacheResource\> element does not exist.
-
-
 
 </td>
 </tr>

@@ -20,14 +20,10 @@ The following are the list of flow variables that contain TLS connection informa
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,14 +32,10 @@ Description
 
 tls.cipher
 
-
-
 </td>
 <td valign="top">
 
 The cipher used by the TLS/SSL connection.
-
-
 
 </td>
 </tr>
@@ -52,14 +44,10 @@ The cipher used by the TLS/SSL connection.
 
 tls.protocol
 
-
-
 </td>
 <td valign="top">
 
 The protocol used by the TLS/SSL connection.
-
-
 
 </td>
 </tr>
@@ -68,14 +56,10 @@ The protocol used by the TLS/SSL connection.
 
 tls.server.name
 
-
-
 </td>
 <td valign="top">
 
 The requested SNI server name.
-
-
 
 </td>
 </tr>
@@ -84,16 +68,12 @@ The requested SNI server name.
 
 tls.session.id
 
-
-
 </td>
 <td valign="top">
 
 The session identifier.
 
 This flow variable is available when you set either `<ConnectionProperties>` or `<ClientProperties>` to true.
-
-
 
 </td>
 </tr>
@@ -111,14 +91,10 @@ The following are the list of flow variables that contain TSL connection informa
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -127,14 +103,10 @@ Description
 
 tls.client.s.dn
 
-
-
 </td>
 <td valign="top">
 
 The subject Distinguished Name \(DN\) of the client cert. This variable enables you to capture information about the subject \(individual\) being certified, including common name \(client.cn\), organization \(client.organization\), organization unit \(client.organization.unit\), e-mail address \(client.email.address\), country/region codes \(client.country\), locality \(client.locality\) etc.
-
-
 
 </td>
 </tr>
@@ -143,14 +115,10 @@ The subject Distinguished Name \(DN\) of the client cert. This variable enables 
 
 tls.client.i.dn
 
-
-
 </td>
 <td valign="top">
 
 The issuer Distinguished Name \(DN\) of the client cert.
-
-
 
 </td>
 </tr>
@@ -159,14 +127,10 @@ The issuer Distinguished Name \(DN\) of the client cert.
 
 tls.client.raw.cert
 
-
-
 </td>
 <td valign="top">
 
 The client cert in the PEM format.
-
-
 
 </td>
 </tr>
@@ -175,14 +139,10 @@ The client cert in the PEM format.
 
 tls.client.cert.serial
 
-
-
 </td>
 <td valign="top">
 
 The serial number of the client cert.
-
-
 
 </td>
 </tr>
@@ -191,14 +151,10 @@ The serial number of the client cert.
 
 tls.client.cert.fingerprint
 
-
-
 </td>
 <td valign="top">
 
 The SHA1 fingerprint of the client cert.
-
-
 
 </td>
 </tr>
@@ -207,16 +163,12 @@ The SHA1 fingerprint of the client cert.
 
 tls.session.id
 
-
-
 </td>
 <td valign="top">
 
 The session identifier.
 
 This flow variable is available when you set either `<ConnectionProperties>` or `<ClientProperties>` to true.
-
-
 
 </td>
 </tr>
@@ -231,14 +183,10 @@ To configure a virtual host to capture the TLS/SSL information, you need to requ
 
 Virtual Host Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -247,14 +195,10 @@ Description
 
 ConnectionProperties
 
-
-
 </td>
 <td valign="top">
 
 Set it to true to capture TLS connection information for both one-way and two-way TLS.
-
-
 
 </td>
 </tr>
@@ -263,14 +207,10 @@ Set it to true to capture TLS connection information for both one-way and two-wa
 
 ClientProperties
 
-
-
 </td>
 <td valign="top">
 
 Set it to true to capture additional information for two-way TLS.
-
-
 
 </td>
 </tr>

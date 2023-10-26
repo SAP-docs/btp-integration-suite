@@ -32,14 +32,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -48,14 +44,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -72,14 +64,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -88,14 +76,10 @@ Description
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 URL of the SuccessFactors LMS service.
-
-
 
 </td>
 </tr>
@@ -104,14 +88,10 @@ URL of the SuccessFactors LMS service.
 
 *Address Suffix* 
 
-
-
 </td>
 <td valign="top">
 
 URL suffix for the SuccessFactors LMS service.
-
-
 
 </td>
 </tr>
@@ -119,8 +99,6 @@ URL suffix for the SuccessFactors LMS service.
 <td valign="top">
 
 *Credential Name* 
-
-
 
 </td>
 <td valign="top">
@@ -139,8 +117,6 @@ Name of the credentials deployed on the SuccessFactors LMS service for authentic
 
 *Proxy Type* 
 
-
-
 </td>
 <td valign="top">
 
@@ -152,16 +128,12 @@ If you choose *Manual*, you need to enter values for the fields *Proxy Host* and
 
 *Proxy Port* is the port number that you are using.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Operation* 
-
-
 
 </td>
 <td valign="top">
@@ -180,8 +152,6 @@ Operation that you want to perform.
 
 *Entity* 
 
-
-
 </td>
 <td valign="top">
 
@@ -199,14 +169,10 @@ LMS entity that you are accessing.
 
 *Parameters* 
 
-
-
 </td>
 <td valign="top">
 
 Operation parameters that you want to send.
-
-
 
 </td>
 </tr>
@@ -215,14 +181,10 @@ Operation parameters that you want to send.
 
 *Page Size* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum number of records on each page of response.
-
-
 
 </td>
 </tr>
@@ -239,21 +201,15 @@ Select the *Scheduler* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -262,21 +218,15 @@ Description
 
 *Run Once* 
 
-
-
 </td>
 <td valign="top">
 
 NA
 
-
-
 </td>
 <td valign="top">
 
 Select to execute the operation immediately after deploying the integration content.
-
-
 
 </td>
 </tr>
@@ -285,21 +235,15 @@ Select to execute the operation immediately after deploying the integration cont
 
 *Schedule on Day* 
 
-
-
 </td>
 <td valign="top">
 
 *On Date* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the date on which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -308,14 +252,10 @@ Specify the date on which you want the operation to be executed.
 
 *On Time* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the time at which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -324,14 +264,10 @@ Specify the time at which you want the operation to be executed.
 
 *Every* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the interval at which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -340,14 +276,10 @@ Specify the interval at which you want the operation to be executed.
 
 *Time Zone* 
 
-
-
 </td>
 <td valign="top">
 
 Select the time zone that you want the scheduler to use as a reference for the date and time settings.
-
-
 
 </td>
 </tr>
@@ -356,21 +288,15 @@ Select the time zone that you want the scheduler to use as a reference for the d
 
 *Schedule to Recur* 
 
-
-
 </td>
 <td valign="top">
 
 *Daily* 
 
-
-
 </td>
 <td valign="top">
 
 Select the time or interval and time zone for the schedule to recur.
-
-
 
 </td>
 </tr>
@@ -379,14 +305,10 @@ Select the time or interval and time zone for the schedule to recur.
 
 *Weekly* 
 
-
-
 </td>
 <td valign="top">
 
 Select the checkboxes to indicate the days of the week on which you want the operation to be executed. Also, specify the time or interval for the schedule to recur.
-
-
 
 </td>
 </tr>
@@ -395,14 +317,10 @@ Select the checkboxes to indicate the days of the week on which you want the ope
 
 *Monthly* 
 
-
-
 </td>
 <td valign="top">
 
 Select the day of the month on which you want the operation to be executed. Also indicate the time or the interval for the schedule to recur.
-
-
 
 </td>
 </tr>

@@ -58,15 +58,11 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     <th valign="top">
 
     Fields
-
-
     
     </th>
     <th valign="top">
 
     Details
-
-
     
     </th>
     </tr>
@@ -74,15 +70,11 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Enter `TransportManagementService` as the destination name.
-
-
     
     </td>
     </tr>
@@ -90,15 +82,11 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     Enter `HTTP` as the supported type.
-
-
     
     </td>
     </tr>
@@ -106,15 +94,11 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     Enter a brief description stating the purpose of creating a new destination in the *Description* field.
-
-
     
     </td>
     </tr>
@@ -122,15 +106,11 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     <td valign="top">
     
     URL
-
-
     
     </td>
     <td valign="top">
     
     Provide the URL from the service key details of the SAP Cloud Transport Management service plan.
-
-
     
     </td>
     </tr>
@@ -138,15 +118,11 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     <td valign="top">
     
     Proxy Type
-
-
     
     </td>
     <td valign="top">
     
     Internet
-
-
     
     </td>
     </tr>
@@ -154,15 +130,11 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     <td valign="top">
     
     Authentication
-
-
     
     </td>
     <td valign="top">
     
     Select the authentication type as `OAuth2ClientCredentials`.
-
-
     
     </td>
     </tr>
@@ -170,15 +142,11 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     <td valign="top">
     
     Client ID
-
-
     
     </td>
     <td valign="top">
     
     Provide the client ID from the service key details of the SAP Cloud Transport Management service plan.
-
-
     
     </td>
     </tr>
@@ -186,15 +154,11 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     <td valign="top">
     
     Client Secret
-
-
     
     </td>
     <td valign="top">
     
     Enter the client secret.
-
-
     
     </td>
     </tr>
@@ -202,15 +166,11 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
     <td valign="top">
     
     Token Service URL
-
-
     
     </td>
     <td valign="top">
     
     Navigate to the SAP Cloud Transport Management Service instance and copy the token service URL from the service key details and append `/oauth/token` to it.
-
-
     
     </td>
     </tr>

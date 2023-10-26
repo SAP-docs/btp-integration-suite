@@ -51,14 +51,10 @@ Note the following limitations and recommendations related to transaction handli
 
 Integration Flow Contains the Following Elements
 
-
-
 </th>
 <th valign="top">
 
 Recommended Settings/Limitations
-
-
 
 </th>
 </tr>
@@ -66,8 +62,6 @@ Recommended Settings/Limitations
 <td valign="top">
 
 *Aggregator* steps
-
-
 
 </td>
 <td valign="top">
@@ -86,8 +80,6 @@ Recommended Settings/Limitations
 
 *Data Store* operations
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
@@ -95,16 +87,12 @@ Recommended Settings/Limitations
 
 If you choose *Not Required*, the related database operation is committed for each single step and no end-to-end transaction handling is implemented.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Write* 
-
-
 
 </td>
 </tr>
@@ -114,8 +102,6 @@ If you choose *Not Required*, the related database operation is committed for ea
 *JMS sender adapter* 
 
 This also applies to scenarios that include the AS2 adapter.
-
-
 
 </td>
 <td valign="top">
@@ -138,8 +124,6 @@ In general, no transaction handling is required.
 
 This also applies to scenarios that include the AS2 adapter.
 
-
-
 </td>
 <td valign="top">
 
@@ -157,16 +141,12 @@ This also applies to scenarios that include the AS2 adapter.
 
 *JMS receiver adapter* in a *Send* step
 
-
-
 </td>
 <td valign="top">
 
 *Required for JMS* \(mandatory\)
 
 This setting is mandatory to ensure that the data is consistently updated in the JMS queue.
-
-
 
 </td>
 </tr>
@@ -175,8 +155,6 @@ This setting is mandatory to ensure that the data is consistently updated in the
 
 Several *JMS receiver adapters* together with a *JMS sender adapter* 
 
-
-
 </td>
 <td valign="top">
 
@@ -184,16 +162,12 @@ Several *JMS receiver adapters* together with a *JMS sender adapter*
 
 This setting is mandatory to ensure that the data is consistently updated in the JMS queue.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 One *JMS receiver adapter* \(without Splitter or sequential Multicast\)
-
-
 
 </td>
 <td valign="top">
@@ -214,16 +188,12 @@ No JMS transaction handler is required.
 
 Several *JMS receiver adapters* or a sequential *Multicast* or *Splitter* step followed by a *JMS receiver adapter* 
 
-
-
 </td>
 <td valign="top">
 
 *Required for JMS* 
 
 This setting is mandatory to ensure that the data is consistently updated in all JMS queues.
-
-
 
 </td>
 </tr>
@@ -260,15 +230,11 @@ Let us assume that you want to configure a message multicast and the integration
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -276,8 +242,6 @@ Let us assume that you want to configure a message multicast and the integration
     <td valign="top">
     
     *Required for JDBC* 
-
-
     
     </td>
     <td valign="top">
@@ -299,8 +263,6 @@ Let us assume that you want to configure a message multicast and the integration
     <td valign="top">
     
     *Required for JMS* 
-
-
     
     </td>
     <td valign="top">
@@ -324,15 +286,11 @@ Let us assume that you want to configure a message multicast and the integration
     <td valign="top">
     
     *Not Required* 
-
-
     
     </td>
     <td valign="top">
     
     No specific transactional processing is configured. The integration process doesn't process transactions even if \(for example\) data store operations are included.
-
-
     
     </td>
     </tr>
@@ -348,15 +306,11 @@ Let us assume that you want to configure a message multicast and the integration
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -364,15 +318,11 @@ Let us assume that you want to configure a message multicast and the integration
     <td valign="top">
     
     *From Calling Process* 
-
-
     
     </td>
     <td valign="top">
     
     Transactional processing is inherited from the calling process. The value defined for the calling process is used as the timeout.
-
-
     
     </td>
     </tr>
@@ -380,8 +330,6 @@ Let us assume that you want to configure a message multicast and the integration
     <td valign="top">
     
     *Required for JMS* 
-
-
     
     </td>
     <td valign="top">
@@ -403,8 +351,6 @@ Let us assume that you want to configure a message multicast and the integration
     <td valign="top">
     
     *Required for JDBC* 
-
-
     
     </td>
     <td valign="top">

@@ -26,21 +26,15 @@ The following table lists the possible use cases and the required kinds of keys.
 
 Role of Tenant
 
-
-
 </th>
 <th valign="top">
 
 Chosen Kind of Message Protection
 
-
-
 </th>
 <th valign="top">
 
 Required Keys
-
-
 
 </th>
 </tr>
@@ -51,21 +45,15 @@ Sender
 
 \(outbound communication\)
 
-
-
 </td>
 <td valign="top">
 
 Encrypts outbound payload
 
-
-
 </td>
 <td valign="top">
 
 **PGP Public Keyring** \(contains **receiver's** public key to encrypt payload\)
-
-
 
 </td>
 </tr>
@@ -74,16 +62,12 @@ Encrypts outbound payload
 
 Encrypts and signs outbound payload
 
-
-
 </td>
 <td valign="top">
 
 **PGP Public Keyring** \(contains **receiver's** public key to encrypt payload\)
 
 **PGP Secret Keyring** \(contains **tenant's** secret key to sign payload\)
-
-
 
 </td>
 </tr>
@@ -94,21 +78,15 @@ Receiver
 
 \(inbound communication\)
 
-
-
 </td>
 <td valign="top">
 
 Decrypts inbound payload
 
-
-
 </td>
 <td valign="top">
 
 **PGP Secret Keyring** \(contains **tenant's** secret key to decrypt payload\)
-
-
 
 </td>
 </tr>
@@ -117,16 +95,12 @@ Decrypts inbound payload
 
 Decrypts and verifies inbound payload
 
-
-
 </td>
 <td valign="top">
 
 **PGP Secret Keyring** \(contains **tenant's** secret key to decrypt payload\)
 
 **PGP Public Keyring** \(contains the **sender's** public key to verify payload\) for verifying
-
-
 
 </td>
 </tr>

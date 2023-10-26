@@ -8,7 +8,7 @@ Create an integration package that is specific to your integration scenario.
 
 ## Procedure
 
-1.  Choose *Design* \> *Integrations*.
+1.  Choose *Design* \> *Integrations and APIs*.
 
 2.  Choose *Create*.
 

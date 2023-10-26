@@ -21,14 +21,10 @@ To perform the TLS connectivity test, you need to specify the following settings
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -37,16 +33,12 @@ Description
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Add the host name of the receiver.
 
 The host name must **not** contain any path or schema, for example, `https://`\). In particular, you must **not** add a URL as the host name.
-
-
 
 </td>
 </tr>
@@ -55,16 +47,12 @@ The host name must **not** contain any path or schema, for example, `https://`\)
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
 Add the port that is to be used for outbound communication.
 
 Standard port is `443`.
-
-
 
 </td>
 </tr>
@@ -73,8 +61,6 @@ Standard port is `443`.
 
 *Authenticate with Client Certificate* \(optional\)
 
-
-
 </td>
 <td valign="top">
 
@@ -82,16 +68,12 @@ Choose this option if the client is to be authenticated against the receiver \(s
 
 If you choose this option, you can also specify the key to be used for the test.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Alias* \(only if *Authenticate with Client Certificate* has been chosen\)
-
-
 
 </td>
 <td valign="top">
@@ -106,16 +88,12 @@ For the tenant to be able to authenticate itself as the client against the recei
 
 With the *Alias* field, you can narrow down further the check that a specific key is being used \(for example, a key that matches the configuration settings in the corresponding adapter\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Include new SAP Key* \(only if *Authenticate with Client Certificate* has been chosen\)
-
-
 
 </td>
 <td valign="top">
@@ -140,8 +118,6 @@ For further information, see: [Activating a New Key Pair Provided by SAP](https:
 
 *Validate Server Certificate Required* 
 
-
-
 </td>
 <td valign="top">
 
@@ -156,8 +132,6 @@ When you've chosen the *Validate Server Certificate Required* option \(which is 
 
 If it wasn't successful and there's an error message, you can unselect the *Validate Server Certificate Required* option.
 
-
-
 </td>
 </tr>
 </table>
@@ -171,14 +145,10 @@ If the connectivity test was successful, you get the information about the diffe
 
 *Action*
 
-
-
 </th>
 <th valign="top">
 
 *Description*
-
-
 
 </th>
 </tr>
@@ -187,14 +157,10 @@ If the connectivity test was successful, you get the information about the diffe
 
 *Download* 
 
-
-
 </td>
 <td valign="top">
 
 Option to save the Server Certificate Chain and add it to your trusted store.
-
-
 
 </td>
 </tr>
@@ -202,8 +168,6 @@ Option to save the Server Certificate Chain and add it to your trusted store.
 <td valign="top">
 
 *Add to keystore* 
-
-
 
 </td>
 <td valign="top">

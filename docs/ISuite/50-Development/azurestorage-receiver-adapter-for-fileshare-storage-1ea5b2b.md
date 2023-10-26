@@ -27,14 +27,10 @@ Select the *General* tab to access the following parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Enter the name of the channel.
 
 *Direction* 
 
-
-
 </td>
 <td valign="top">
 
 Receiver
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Receiver
 
 *System* 
 
-
-
 </td>
 <td valign="top">
 
 Receiver
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ Receiver
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 AzureStorage
-
-
 
 </td>
 </tr>
@@ -107,14 +87,10 @@ AzureStorage
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 HTTPS
-
-
 
 </td>
 </tr>
@@ -123,16 +99,12 @@ HTTPS
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 *Fileshare Storage*
 
 Shows the message protocol selected when creating the channel.
-
-
 
 </td>
 </tr>
@@ -151,14 +123,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -166,8 +134,6 @@ Description
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -190,14 +156,10 @@ Select authentication option to use to connect to Azure Storage server. There ar
 
 \(Only if for *Authentication* the option *SAS Token* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Alias name of token used to communicate with Azure Storage.
-
-
 
 </td>
 </tr>
@@ -208,14 +170,10 @@ Alias name of token used to communicate with Azure Storage.
 
 \(Only if for *Authentication* the option *Shared Access Key* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Alias name of key used to communicate with Azure Storage.
-
-
 
 </td>
 </tr>
@@ -223,8 +181,6 @@ Alias name of key used to communicate with Azure Storage.
 <td valign="top">
 
 *Dynamic* 
-
-
 
 </td>
 <td valign="top">
@@ -245,16 +201,12 @@ Select this option to dynamically define the authentication through the value of
 
 *Timeout* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum waiting time, in milliseconds, to contact Azure Storage while establishing a connection or performing a read operation \(default value: 60000\).
 
 Setting a timeout is mandatory for both token and key aliases.
-
-
 
 </td>
 </tr>
@@ -271,14 +223,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -286,8 +234,6 @@ Description
 <td valign="top">
 
 *Operation* 
-
-
 
 </td>
 <td valign="top">
@@ -350,8 +296,6 @@ Select one of the following options to define which operation to perform:
 
 *Storage Account Name* 
 
-
-
 </td>
 <td valign="top">
 
@@ -369,14 +313,10 @@ Enter the name of the storage account for all supported operations.
 
 *Container Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the container for all operations.
-
-
 
 </td>
 </tr>
@@ -386,8 +326,6 @@ Enter the name of the container for all operations.
 *Access-Tier*
 
 \(Only if for *Operation* the option *Create Share* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -405,8 +343,6 @@ Specifies an access tier of the share.
 
 To dynamically define this parameter, use property `SAP_AzureStorage_Outbound_AccessTier`.
 
-
-
 </td>
 </tr>
 <tr>
@@ -416,16 +352,12 @@ To dynamically define this parameter, use property `SAP_AzureStorage_Outbound_Ac
 
 \(Only if for *Operation* the option *Delete Directory* or *List Directory and Files* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Enter directory path.
 
 Example: `/finance/wage`
-
-
 
 </td>
 </tr>
@@ -456,8 +388,6 @@ Enter File path along with the file name.
 
 Example: `/finance/tax/ledger.txt`
 
-
-
 </td>
 </tr>
 <tr>
@@ -466,8 +396,6 @@ Example: `/finance/tax/ledger.txt`
 *Share Name*
 
 \(Only if for *Operation* the option *Create Share, Delete Share* or *Get Share Properties* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -494,14 +422,10 @@ Enter name of the share.
 
 \(Only if for *Operation* the option *List Directory and Files* or *List Shares* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Filters the results to return only containers whose name begins with the specified prefix. This is optional.
-
-
 
 </td>
 </tr>
@@ -512,14 +436,10 @@ Filters the results to return only containers whose name begins with the specifi
 
 \(Only if for *Operation* the option *List Directory and Files* or *List Shares* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the page size to retrieve specific number of results. If you did not specify, the server returns up to 5000 results.
-
-
 
 </td>
 </tr>
@@ -529,8 +449,6 @@ Specify the page size to retrieve specific number of results. If you did not spe
 *Process in Pages*
 
 \(Only if for *Operation* the option *List Directory and Files* or *List Shares* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -557,14 +475,10 @@ Message is processed in batches with a size specified by the *Page Size* paramet
 
 \(Only if for *Operation* the option *Set File Metadata* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Enter one or more name value pair to set the metadata in the format `revenue:incometax` for one and `finance:incometax|finance:exciseduty` for more than one. If nothing is passed for name value pair, existing metadata is deleted.
-
-
 
 </td>
 </tr>
@@ -574,8 +488,6 @@ Enter one or more name value pair to set the metadata in the format `revenue:inc
 *Handling for Existing File*
 
 \(Only if for *Operation* the option *Upload File* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -608,14 +520,10 @@ Choose an action to perform if the file already exists.
 
 *Key* 
 
-
-
 </td>
 <td valign="top">
 
 Select a request parameter.
-
-
 
 </td>
 </tr>
@@ -624,14 +532,10 @@ Select a request parameter.
 
 *Value* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the value of the argument. You can also enter`${header.headername}` or `${property.propertyname}` to dynamically read the value from the message exchange.
-
-
 
 </td>
 </tr>
@@ -639,8 +543,6 @@ Specify the value of the argument. You can also enter`${header.headername}` or `
 <td valign="top">
 
 *Response Format* 
-
-
 
 </td>
 <td valign="top">
@@ -665,16 +567,12 @@ The following response formats are given:
 
 *Request Headers* 
 
-
-
 </td>
 <td valign="top">
 
 Enter Pipe-separated \(`|`\) value list of request headers to be sent to Azure.
 
 If you enter the value `*`, all message headers are converted to request headers and forwarded.
-
-
 
 </td>
 </tr>
@@ -693,35 +591,25 @@ If you enter the value `*`, all message headers are converted to request headers
 
 Sl No
 
-
-
 </th>
 <th valign="top">
 
 Operation
-
-
 
 </th>
 <th valign="top">
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -730,35 +618,25 @@ Description
 
 1
 
-
-
 </td>
 <td valign="top">
 
 All file storage-related operation \(except *List Directory and File*\)
-
-
 
 </td>
 <td valign="top">
 
 SAP\_AzureStorage\_Outbound\_FileName
 
-
-
 </td>
 <td valign="top">
 
 Property
 
-
-
 </td>
 <td valign="top">
 
 Capture the file name specified.
-
-
 
 </td>
 </tr>
@@ -767,35 +645,25 @@ Capture the file name specified.
 
 2
 
-
-
 </td>
 <td valign="top">
 
 All share-related operation \(except *List Shares*\)
-
-
 
 </td>
 <td valign="top">
 
 SAP\_AzureStorage\_Outbound\_ShareName
 
-
-
 </td>
 <td valign="top">
 
 Property
 
-
-
 </td>
 <td valign="top">
 
 Capture the share name specified.
-
-
 
 </td>
 </tr>

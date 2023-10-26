@@ -33,14 +33,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -49,14 +45,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -73,14 +65,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -88,8 +76,6 @@ Description
 <td valign="top">
 
 *Endpoint* 
-
-
 
 </td>
 <td valign="top">
@@ -120,14 +106,10 @@ To access Twitter content, you can choose among the following general options.
 
 \(only if you select *Send Direct Message* endpoint\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the Twitter user from which account the information is to be extracted.
-
-
 
 </td>
 </tr>
@@ -136,14 +118,10 @@ Specifies the Twitter user from which account the information is to be extracted
 
 *Page Size* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the maximum number of results \(tweets\) per page.
-
-
 
 </td>
 </tr>
@@ -152,14 +130,10 @@ Specifies the maximum number of results \(tweets\) per page.
 
 *Number of Pages* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the number of pages which you want the tenant to consume.
-
-
 
 </td>
 </tr>
@@ -169,8 +143,6 @@ Specifies the number of pages which you want the tenant to consume.
 *Max. Characters Retrieved from Tweet*
 
 \(only if you select *Search* endpoint\)
-
-
 
 </td>
 <td valign="top">
@@ -193,16 +165,12 @@ Select the maximum numbers of characters that are fetched from a tweet.
 
 \(only if you select *Search* endpoint\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the keywords used to filter the results.
 
 Use commas to separate different keywords or a valid Twitter Search API query \(-\(For more information, go to [https://dev.twitter.com/rest/public/search](https://dev.twitter.com/rest/public/search)\).
-
-
 
 </td>
 </tr>
@@ -213,14 +181,10 @@ Use commas to separate different keywords or a valid Twitter Search API query \(
 
 \(only if you select *Search* endpoint\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the search language.
-
-
 
 </td>
 </tr>
@@ -229,14 +193,10 @@ Specify the search language.
 
 *Consumer Key* 
 
-
-
 </td>
 <td valign="top">
 
 An alias by which the consumer \(tenant\) that requests Twitter resources is identified
-
-
 
 </td>
 </tr>
@@ -245,14 +205,10 @@ An alias by which the consumer \(tenant\) that requests Twitter resources is ide
 
 *Consumer Secret* 
 
-
-
 </td>
 <td valign="top">
 
 An alias by which the shared secret is identified \(that is used to to define the token of the consumer \(tenant\)\)
-
-
 
 </td>
 </tr>
@@ -261,16 +217,12 @@ An alias by which the shared secret is identified \(that is used to to define th
 
 *Access Token* 
 
-
-
 </td>
 <td valign="top">
 
 An alias by which the access token for the Twitter user is identified
 
 In order to make authorized calls to the TwitterAPI, your application must first obtain an OAuth access token on behalf of a Twitter user
-
-
 
 </td>
 </tr>
@@ -279,14 +231,10 @@ In order to make authorized calls to the TwitterAPI, your application must first
 
 *Access Token Secret* 
 
-
-
 </td>
 <td valign="top">
 
 An alias by which shared secret is identified that is used to define the token of the Twitter user
-
-
 
 </td>
 </tr>
@@ -294,8 +242,6 @@ An alias by which shared secret is identified that is used to define the token o
 <td valign="top">
 
 *Proxy Type*
-
-
 
 </td>
 <td valign="top">

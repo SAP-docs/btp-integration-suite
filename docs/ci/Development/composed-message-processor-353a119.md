@@ -90,15 +90,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -106,15 +102,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     Expression Type
-
-
     
     </td>
     <td valign="top">
     
     XPath
-
-
     
     </td>
     </tr>
@@ -122,15 +114,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     XPath Expression
-
-
     
     </td>
     <td valign="top">
     
     /ns0:PurchaseOrder/Items/Item
-
-
     
     </td>
     </tr>
@@ -138,15 +126,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     Grouping
-
-
     
     </td>
     <td valign="top">
     
     1
-
-
     
     </td>
     </tr>
@@ -160,15 +144,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <th valign="top">
 
     Route Name
-
-
     
     </th>
     <th valign="top">
 
     Condition Expression
-
-
     
     </th>
     </tr>
@@ -176,15 +156,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     Route1
-
-
     
     </td>
     <td valign="top">
     
     /ns0:PurchaseOrder/Items/Item/Category = 'Notebooks'
-
-
     
     </td>
     </tr>
@@ -192,15 +168,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     Route2
-
-
     
     </td>
     <td valign="top">
     
     /ns0:PurchaseOrder/Items/Item/Category = 'Software'
-
-
     
     </td>
     </tr>
@@ -208,15 +180,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     Route3
-
-
     
     </td>
     <td valign="top">
     
     \(Default route\)
-
-
     
     </td>
     </tr>
@@ -236,15 +204,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     For Inventory1
-
-
     
     </td>
     <td valign="top">
     
     $select=Category,MainCategoryName&$filter=Category eq 'Notebooks'
-
-
     
     </td>
     </tr>
@@ -252,15 +216,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     For Inventory2
-
-
     
     </td>
     <td valign="top">
     
     $select=Category,MainCategoryName&$filter=Category eq 'Software'
-
-
     
     </td>
     </tr>
@@ -268,15 +228,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     For Inventory3
-
-
     
     </td>
     <td valign="top">
     
     $select=Category,MainCategoryName
-
-
     
     </td>
     </tr>
@@ -294,15 +250,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -310,15 +262,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     Path to Node
-
-
     
     </td>
     <td valign="top">
     
     PurchaseOrder/Items
-
-
     
     </td>
     </tr>
@@ -326,15 +274,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     Key Element
-
-
     
     </td>
     <td valign="top">
     
     Item/Category
-
-
     
     </td>
     </tr>
@@ -348,15 +292,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -364,15 +304,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     Path to Node
-
-
     
     </td>
     <td valign="top">
     
     ProductCategory
-
-
     
     </td>
     </tr>
@@ -380,15 +316,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     Key Element
-
-
     
     </td>
     <td valign="top">
     
     Category
-
-
     
     </td>
     </tr>
@@ -402,15 +334,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -418,15 +346,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     Aggregation Algorithm
-
-
     
     </td>
     <td valign="top">
     
     Combine at XPath
-
-
     
     </td>
     </tr>
@@ -434,15 +358,11 @@ In this example, a General Splitter is used to break up the order into multiple 
     <td valign="top">
     
     Combine from source \(XPath\)
-
-
     
     </td>
     <td valign="top">
     
     /ns0:PurchaseOrder/Items/Item
-
-
     
     </td>
     </tr>

@@ -67,14 +67,10 @@ As a user having permission “ReadAllCustomAttributes”, you can now see a tab
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -83,14 +79,10 @@ Value
 
 Custom attribute name size for Application
 
-
-
 </td>
 <td valign="top">
 
 235 characters
-
-
 
 </td>
 </tr>
@@ -99,14 +91,10 @@ Custom attribute name size for Application
 
 Custom attribute value size for Application
 
-
-
 </td>
 <td valign="top">
 
 1024 characters
-
-
 
 </td>
 </tr>
@@ -115,14 +103,10 @@ Custom attribute value size for Application
 
 Number of custom attributes permitted for Application
 
-
-
 </td>
 <td valign="top">
 
 18
-
-
 
 </td>
 </tr>

@@ -6,7 +6,7 @@ The free tier model for SAP BTP lets you try out services in global accounts wit
 
 Using this model, you benefit from the following advantages:
 
--   Explore all service capabilities for free of charge.
+-   Explore all service capabilities free of charge.
 
 -   Have the option to transition from a free to a paid service plan while retaining your prior work.
 

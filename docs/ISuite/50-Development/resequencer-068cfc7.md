@@ -103,14 +103,10 @@ The following aggregation strategy has been defined for the Aggregator step:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -119,14 +115,10 @@ Value
 
 Incoming Format
 
-
-
 </td>
 <td valign="top">
 
 XML \(Same Format\)
-
-
 
 </td>
 </tr>
@@ -135,14 +127,10 @@ XML \(Same Format\)
 
 Aggregation Algorithm
 
-
-
 </td>
 <td valign="top">
 
 Combine in Sequence
-
-
 
 </td>
 </tr>
@@ -151,14 +139,10 @@ Combine in Sequence
 
 Message Sequence Expression \(XPath\)
 
-
-
 </td>
 <td valign="top">
 
 //@ItemNumber
-
-
 
 </td>
 </tr>
@@ -167,14 +151,10 @@ Message Sequence Expression \(XPath\)
 
 Last Message Condition \(XPath\)
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -183,14 +163,10 @@ Last Message Condition \(XPath\)
 
 Completion Timeout \(in min\)
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -199,14 +175,10 @@ Completion Timeout \(in min\)
 
 Data Store Name
 
-
-
 </td>
 <td valign="top">
 
 Pattern-Resequencer
-
-
 
 </td>
 </tr>

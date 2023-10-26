@@ -13,21 +13,15 @@ To get data store entries that are associated with a specific message ID, perfor
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Purpose
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `​/DataStoreEntries?messageid=<messageId>` 
 
-
-
 </td>
 <td valign="top">
 
 Gets all data store entries for a given message ID.
-
-
 
 </td>
 </tr>

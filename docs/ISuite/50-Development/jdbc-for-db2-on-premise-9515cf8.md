@@ -16,14 +16,10 @@ JDBC receiver adapter supports DB2 On-Premise database provided by IBM.
 
 Database Provider
 
-
-
 </td>
 <td valign="top">
 
 IBM
-
-
 
 </td>
 </tr>
@@ -32,14 +28,10 @@ IBM
 
 Infrastructure
 
-
-
 </td>
 <td valign="top">
 
 On-Premise
-
-
 
 </td>
 </tr>
@@ -48,14 +40,10 @@ On-Premise
 
 SAP BTP Environment
 
-
-
 </td>
 <td valign="top">
 
 Neo and Cloud Foundry
-
-
 
 </td>
 </tr>
@@ -64,16 +52,12 @@ Neo and Cloud Foundry
 
 JDBC URL Pattern
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:db2://<host>:<port>/<database_name>:property1=value1;property2=value2;...`
 
 Each property and value pair, including the last one, must end with a semicolon \(;\). Don't include space or other white-space characters anywhere within the list of property and value strings.
-
-
 
 </td>
 </tr>
@@ -82,14 +66,10 @@ Each property and value pair, including the last one, must end with a semicolon 
 
 JDBC URL Example
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:db2://mydb2:5021/mydb2db`
-
-
 
 </td>
 </tr>

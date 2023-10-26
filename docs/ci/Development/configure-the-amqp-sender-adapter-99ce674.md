@@ -41,14 +41,10 @@ The following values are displayed in the *General* tab after a channel has been
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -57,14 +53,10 @@ Description
 
 *Name/Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 AMQP
-
-
 
 </td>
 </tr>
@@ -72,8 +64,6 @@ AMQP
 <td valign="top">
 
 *Transport Protocol* 
-
-
 
 </td>
 <td valign="top">
@@ -94,14 +84,10 @@ The protocol that the message broker supports:
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 *AMQP 1.0* 
-
-
 
 </td>
 </tr>
@@ -118,14 +104,10 @@ Select the *Connection* tab and provide values in the fields as follows:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -134,14 +116,10 @@ Description
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the hostname of the message broker.
-
-
 
 </td>
 </tr>
@@ -150,14 +128,10 @@ Specify the hostname of the message broker.
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the port of the message broker.
-
-
 
 </td>
 </tr>
@@ -165,8 +139,6 @@ Specify the port of the message broker.
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -179,8 +151,6 @@ Select *On-Premise* if you’re connecting to an on-premise message broker.
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -188,14 +158,10 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 
 *Path* \(only if *WebSocket* is selected as the *Transport Protocol* in the *General* tab\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the access path of the message broker.
-
-
 
 </td>
 </tr>
@@ -204,16 +170,12 @@ Specify the access path of the message broker.
 
 *Connect with TLS* 
 
-
-
 </td>
 <td valign="top">
 
 Select if Transport Layer Security \(TLS\) has to be used for the connection.
 
 You can't configure this parameter if *Client Certificate* is selected for *Authentication*. In this case, TLS is automatically used.
-
-
 
 </td>
 </tr>
@@ -222,14 +184,10 @@ You can't configure this parameter if *Client Certificate* is selected for *Auth
 
 *Location ID* \(only if *On-Premise* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side.
-
-
 
 </td>
 </tr>
@@ -237,8 +195,6 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -280,14 +236,10 @@ Select the authentication method the message broker supports. *SASL* is selected
 
 *Credential Name* \(only if *SASL* or *OAuth2 Client Credentials* are selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the alias of the deployed credentials.
-
-
 
 </td>
 </tr>
@@ -296,14 +248,10 @@ Specify the alias of the deployed credentials.
 
 *Private Key Alias* \(only if *Client Certificate* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Alias to identify the private key in the keystore used for client certificate authentication.
-
-
 
 </td>
 </tr>
@@ -320,14 +268,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -335,8 +279,6 @@ Description
 <td valign="top">
 
 *Queue Name* 
-
-
 
 </td>
 <td valign="top">
@@ -362,8 +304,6 @@ Note that topics are not supported in the sender adapter, only queues and topic 
 
 *Number of Current Processes* 
 
-
-
 </td>
 <td valign="top">
 
@@ -380,8 +320,6 @@ Specify the number of processes used for parallel message processing. Note, that
 <td valign="top">
 
 *Max. Number of Prefechted Messages*
-
-
 
 </td>
 <td valign="top">
@@ -406,8 +344,6 @@ If you need to process a large number of messages with the integration flow, and
 
 *Consume Expired Messages*
 
-
-
 </td>
 <td valign="top">
 
@@ -415,16 +351,12 @@ Select if the adapter is to consume already expired messages.
 
 By default, this option is deactivated.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Max. Number of Retries* 
-
-
 
 </td>
 <td valign="top">
@@ -450,8 +382,6 @@ Default nalue is set to `0`, maximum value is `99`.
 <td valign="top">
 
 *Delivery Status After Max. Retries* 
-
-
 
 </td>
 <td valign="top">

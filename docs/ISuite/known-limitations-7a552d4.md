@@ -13,14 +13,10 @@ The following table describes the limitations when using the migration tooling:
 
 Components
 
-
-
 </th>
 <th valign="top">
 
 Limitations
-
-
 
 </th>
 </tr>
@@ -28,8 +24,6 @@ Limitations
 <td valign="top">
 
 Message Mapping
-
-
 
 </td>
 <td valign="top">
@@ -40,8 +34,6 @@ Importing, viewing, and editing a local Java UDF is supported.
 
 For more information, see: [Importing Mapping Content from ES Repository](50-Development/IntegrationSettings/importing-mapping-content-from-es-repository-e18fc05.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -49,16 +41,12 @@ For more information, see: [Importing Mapping Content from ES Repository](50-Dev
 
 XSLT Mapping
 
-
-
 </td>
 <td valign="top">
 
 Extensions aren't supported in the XSLT mapping. The recommendation is to remove all such references in your resources to avoid errors. For example, the usage of `xmlns:ext` reference.
 
-![](images/XSLT-mapping-limitation_91615b8.png)
-
-
+![Example of a reference that can be removed in the XSLT mapping.](images/XSLT-mapping-limitation_91615b8.png)
 
 </td>
 </tr>
@@ -68,8 +56,6 @@ Extensions aren't supported in the XSLT mapping. The recommendation is to remove
 CSV to XML Converter
 
 XML to CSV Converter
-
-
 
 </td>
 <td valign="top">
@@ -99,18 +85,14 @@ See:
 
 Multiple Operations on service instance
 
-
-
 </td>
 <td valign="top">
 
 Interfaces that use multiple operations aren't supported.
 
-![](images/ab9bbd7ff3ef4f5eb96676df57f135ec.xml)
+![Screenshot of the Operations page. In the Operation Create section, the attributes selected are Normal Operation and Asynchronous Mode.](images/Multiple_Operations_on_Service_Instance_ab9bbd7.jpg)
 
 You must redesign your interface using an integration pattern to properly identify and handle the multiple operations. You could insert a router step to identify the correct operation and redirect the message to the proper message mapping and receiver.
-
-
 
 </td>
 </tr>

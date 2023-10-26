@@ -11,14 +11,10 @@ Here you can find information on how to secure API Management applications.
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -26,8 +22,6 @@ Description
 <td valign="top">
 
 Securing APIs
-
-
 
 </td>
 <td valign="top">
@@ -50,8 +44,6 @@ Secure your APIs by referring to the following security policies supported by AP
 
 Security Best Practices
 
-
-
 </td>
 <td valign="top">
 
@@ -71,8 +63,6 @@ Security policies provide information on how to control access to your APIs with
 <td valign="top">
 
 Traffic management
-
-
 
 </td>
 <td valign="top">

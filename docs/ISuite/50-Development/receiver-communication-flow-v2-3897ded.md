@@ -8,6 +8,9 @@ This integration flow gets the final message from the queue and sends it to the 
 
 Follow the procedure below to configure the integration flow.
 
+> ### Note:  
+> If the receiver side integration flow is calling a custom integration flow, only the computed Partner Directory ID header will be handed over by the receiver integration flow to the custom integration flow.
+
 1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons"></span> button of the integration flow *Step 3 - Receiver Communication Flow V2* and select *Configure*
 
 2.  Under the *Sender* tab, maintain the following parameter.
@@ -20,22 +23,16 @@ Follow the procedure below to configure the integration flow.
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Default Value
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -43,22 +40,16 @@ Follow the procedure below to configure the integration flow.
     <td valign="top">
     
     Sender
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     The name of the sender.
-
-
     
     </td>
     </tr>
@@ -66,22 +57,16 @@ Follow the procedure below to configure the integration flow.
     <td valign="top">
     
     Adapter Type
-
-
     
     </td>
     <td valign="top">
     
     JMS
-
-
     
     </td>
     <td valign="top">
     
     The type of the sender adapter which is set to *JMS* by default.
-
-
     
     </td>
     </tr>
@@ -89,22 +74,16 @@ Follow the procedure below to configure the integration flow.
     <td valign="top">
     
     Queue Name
-
-
     
     </td>
     <td valign="top">
     
     SAP\_TPM\_OUTBOUND\_Q
-
-
     
     </td>
     <td valign="top">
     
     JMS queue where the messages are taken from. These are the outgoing messages persisted in the interchange step.
-
-
     
     </td>
     </tr>

@@ -51,7 +51,7 @@ The assessment process is composed of the following main steps:
 **Related Information**  
 
 
-[Glossary for Integration Assessment](https://help.sap.com/viewer/70f6fd5a94a14d0f91a40c7d99296144/IAT/en-US/d352b138fddb4da094314eb922b4ba1a.html "") :arrow_upper_right:
+ <?sap-ot O2O class="- topic/link " href="d352b138fddb4da094314eb922b4ba1a.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdm1692607551357/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/a2e17f349b734689ac86ff4611aebf4e.xml" ?> 
 
 [Integration Architecture Guide for Cloud and Hybrid Landscapes Based on SAP Integration Solution Advisory Methodology](https://www.sap.com/documents/2020/11/400ae14b-bf7d-0010-87a3-c30de2ffd8ff.html)
 

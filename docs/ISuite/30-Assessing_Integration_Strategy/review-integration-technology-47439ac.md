@@ -29,15 +29,11 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -45,15 +41,11 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Specify the name of the technology.
-
-
     
     </td>
     </tr>
@@ -61,15 +53,11 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     <td valign="top">
     
     Vendor
-
-
     
     </td>
     <td valign="top">
     
     Specify a vendor.
-
-
     
     </td>
     </tr>
@@ -77,8 +65,6 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     <td valign="top">
     
     Domains
-
-
     
     </td>
     <td valign="top">
@@ -100,8 +86,6 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     <td valign="top">
     
     Styles
-
-
     
     </td>
     <td valign="top">
@@ -133,15 +117,11 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     <th valign="top">
 
     Tab
-
-
     
     </th>
     <th valign="top">
 
     Settings
-
-
     
     </th>
     </tr>
@@ -149,8 +129,6 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     <td valign="top">
     
     General
-
-
     
     </td>
     <td valign="top">
@@ -173,8 +151,6 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     <td valign="top">
     
     Domains and Styles
-
-
     
     </td>
     <td valign="top">
@@ -182,8 +158,6 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     Use this tab to specify domains and styles.
 
     These settings are predefined when creating the technology.
-
-
     
     </td>
     </tr>
@@ -191,8 +165,6 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     <td valign="top">
     
     Key Characteristics
-
-
     
     </td>
     <td valign="top">
@@ -223,8 +195,6 @@ You can use SAP standard integration technologies \(for example, SAP Integration
     -   Not Supported/Not Relevant
 
     You can provide an optional description which you can see when you select the table cell.
-
-
     
     </td>
     </tr>

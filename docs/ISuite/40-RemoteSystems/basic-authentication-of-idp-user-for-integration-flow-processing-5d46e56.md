@@ -36,21 +36,15 @@ The table provides an overview of the required digital keys and their purpose in
 
 Security Artifact
 
-
-
 </th>
 <th valign="top">
 
 Used to ...
 
-
-
 </th>
 <th valign="top">
 
 Configuration Steps
-
-
 
 </th>
 </tr>
@@ -59,14 +53,10 @@ Configuration Steps
 
 Load balancer server root certificate
 
-
-
 </td>
 <td valign="top">
 
 Make the sender trust the load balancer.
-
-
 
 </td>
 <td valign="top">
@@ -75,8 +65,6 @@ Sender administrator:
 
 Get certificate using the Cloud Integration *Connectivity Test* \(pointing to endpoint address of integration flow\).
 
-
-
 </td>
 </tr>
 <tr>
@@ -84,21 +72,15 @@ Get certificate using the Cloud Integration *Connectivity Test* \(pointing to en
 
 Load balancer server certificate \(including certificate chain\)
 
-
-
 </td>
 <td valign="top">
 
 Qualify load balancer as trusted component \(for senders that like to connect to it\).
 
-
-
 </td>
 <td valign="top">
 
 No action required as this artifact is maintained by the operator of the cloud infrastructure.
-
-
 
 </td>
 </tr>

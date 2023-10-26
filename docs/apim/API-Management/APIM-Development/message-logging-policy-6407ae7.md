@@ -43,14 +43,10 @@ An example payload for the policy is as follows:
 
 Elements and Attributes
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -61,14 +57,10 @@ Description
 
 To send syslog to Splunk, Sumo Logic, Loggly, or similar log management services.
 
-
-
 </td>
 <td valign="top">
 
 `Message` 
-
-
 
 </td>
 <td valign="top">
@@ -87,14 +79,10 @@ Build the message to be sent to the syslog, combining text with variables to cap
 
 `Host` 
 
-
-
 </td>
 <td valign="top">
 
 The hostname or IP address of the server where the syslog should be sent. If the element is not specified, the default is localhost.
-
-
 
 </td>
 </tr>
@@ -103,14 +91,10 @@ The hostname or IP address of the server where the syslog should be sent. If the
 
 `Port` 
 
-
-
 </td>
 <td valign="top">
 
 Port where the syslog is running. If you don't include this element, the default is 514.
-
-
 
 </td>
 </tr>
@@ -119,14 +103,10 @@ Port where the syslog is running. If you don't include this element, the default
 
 `Protcol` 
 
-
-
 </td>
 <td valign="top">
 
 TCP or UDP \(default\). While UDP is more performant, the TCP protocol guarantees message log delivery to the syslog server. For sending syslog messages over TLS/SSL, only TCP is supported.
-
-
 
 </td>
 </tr>
@@ -134,8 +114,6 @@ TCP or UDP \(default\). While UDP is more performant, the TCP protocol guarantee
 <td valign="top">
 
 `FormatMessage` 
-
-
 
 </td>
 <td valign="top">
@@ -146,16 +124,12 @@ Optional, but <FormatMessage\>true</FormatMessage\> is required for use with Log
 
 This element lets you control the format of generated content prepended to the message. If set to true, the syslog message is prepended by a fixed number of characters, which lets you filter out that information from messages.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 SSLInfo
-
-
 
 </td>
 <td valign="top">

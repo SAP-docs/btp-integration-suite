@@ -86,15 +86,11 @@ For the newly set up API portal, you can request for the API Business Hub Enterp
     <th valign="top">
 
     Parameters
-
-
     
     </th>
     <th valign="top">
 
     Values
-
-
     
     </th>
     </tr>
@@ -102,15 +98,11 @@ For the newly set up API portal, you can request for the API Business Hub Enterp
     <td valign="top">
     
     API Portal Alias Name
-
-
     
     </td>
     <td valign="top">
     
     Enter the API portal name that gets displayed on the API Business Hub Enterprise. This name is used to distinguish products that are published from the API portal and likewise for applications created for the product.
-
-
     
     </td>
     </tr>
@@ -118,8 +110,6 @@ For the newly set up API portal, you can request for the API Business Hub Enterp
     <td valign="top">
     
     API Portal Access Credentials
-
-
     
     </td>
     <td valign="top">
@@ -149,15 +139,11 @@ For the newly set up API portal, you can request for the API Business Hub Enterp
     <td valign="top">
     
     Comment
-
-
     
     </td>
     <td valign="top">
     
     Provide the details to the approver about the need for the connection request.
-
-
     
     </td>
     </tr>

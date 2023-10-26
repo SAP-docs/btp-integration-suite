@@ -2,6 +2,8 @@
 
 # Basics
 
+Familiarize yourself with the basics of secure communication.
+
 **Related Information**  
 
 

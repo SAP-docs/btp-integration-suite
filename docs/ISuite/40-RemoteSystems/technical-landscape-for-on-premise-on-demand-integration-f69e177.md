@@ -45,21 +45,15 @@ The following table summarizes the required certificates and the related keystor
 
 Keystore
 
-
-
 </th>
 <th valign="top">
 
 Certificate/Key
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -68,14 +62,10 @@ Description
 
 Cloud Integration client keystore
 
-
-
 </td>
 <td valign="top">
 
 Cloud Integration client certificate \(private and public key\)
-
-
 
 </td>
 <td valign="top">
@@ -86,8 +76,6 @@ This security artifact has to be generated at SAP side and contains the public a
 
 The certificate has to be signed by a certification authority \(CA\) that both SAP \(Cloud Integration\) and the customer \(WD\) trust.
 
-
-
 </td>
 </tr>
 <tr>
@@ -95,16 +83,12 @@ The certificate has to be signed by a certification authority \(CA\) that both S
 
 WD server root certificate \(of the CA that has signed the server certificate\)
 
-
-
 </td>
 <td valign="top">
 
 Required to authenticate WD as receiver od messages.
 
 This certificate identifies the CA that has signed the WD server certificate.
-
-
 
 </td>
 </tr>
@@ -115,14 +99,10 @@ WD server keystore
 
 \(SSL server PSE\)
 
-
-
 </td>
 <td valign="top">
 
 Cloud Integration client root certificate
-
-
 
 </td>
 <td valign="top">
@@ -131,8 +111,6 @@ Required to identify Cloud Integration as trusted communication partner.
 
 This certificate identifies the CA that has signed the Cloud Integration client certificate.
 
-
-
 </td>
 </tr>
 <tr>
@@ -140,16 +118,12 @@ This certificate identifies the CA that has signed the Cloud Integration client 
 
 WD server certificate
 
-
-
 </td>
 <td valign="top">
 
 Required to authenticate WD as trusted communication partner to receive calls.
 
 This certificate is signed by the CA to which both WD and Cloud Integration have established a trust relationship.
-
-
 
 </td>
 </tr>
@@ -160,14 +134,10 @@ WD client keystore
 
 \(SSL client PSE\)
 
-
-
 </td>
 <td valign="top">
 
 WD client certificate \(private and public key\)
-
-
 
 </td>
 <td valign="top">
@@ -192,14 +162,10 @@ AS server keystore
 
 \(SSL server PSE\)
 
-
-
 </td>
 <td valign="top">
 
 WD client certificate \(public key\)
-
-
 
 </td>
 <td valign="top">
@@ -207,8 +173,6 @@ WD client certificate \(public key\)
 Required to authenticate WD as sender of messages.
 
 This public key has to be imported it into the AS server keystore.
-
-
 
 </td>
 </tr>
@@ -233,21 +197,15 @@ The following table summarizes the required certificates and the related keystor
 
 Keystore
 
-
-
 </th>
 <th valign="top">
 
 Certificate/Key
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -256,14 +214,10 @@ Description
 
 AS client keystore
 
-
-
 </td>
 <td valign="top">
 
 AS client certificate \(private and public key\)
-
-
 
 </td>
 <td valign="top">
@@ -274,16 +228,12 @@ This security artifact has to be generated at customer side and contains the pub
 
 The certificate has to be signed by a certification authority \(CA\) that both SAP \(Cloud Integration\) and the customer \(AS\) trust.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Cloud Integration server root certificate
-
-
 
 </td>
 <td valign="top">
@@ -292,8 +242,6 @@ Required to authenticate Cloud Integration as trusted receiver of messages.
 
 This certificate identifies the CA that has signed the Cloud Integration server certificate.
 
-
-
 </td>
 </tr>
 <tr>
@@ -301,14 +249,10 @@ This certificate identifies the CA that has signed the Cloud Integration server 
 
 Cloud Integration server keystore
 
-
-
 </td>
 <td valign="top">
 
 AS client root certificate
-
-
 
 </td>
 <td valign="top">
@@ -319,8 +263,6 @@ This certificate identifies the CA that has signed the AS client certificate.
 
 This artifact has to be provided by the customer for SAP during the connection setup process, and the expert at SAP side has to import it into the Cloud Integration server keystore.
 
-
-
 </td>
 </tr>
 <tr>
@@ -328,16 +270,12 @@ This artifact has to be provided by the customer for SAP during the connection s
 
 Cloud Integration server certificate
 
-
-
 </td>
 <td valign="top">
 
 Required to authenticate Cloud Integration as trusted communication partner to receive calls.
 
 This certificate is signed by the CA to which both AS and Cloud Integration have established a trust relationship.
-
-
 
 </td>
 </tr>

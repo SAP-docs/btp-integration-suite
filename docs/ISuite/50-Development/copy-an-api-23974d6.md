@@ -53,22 +53,16 @@ To copy an API proxy, proceed as follows:
     <th valign="top">
 
     Action
-
-
     
     </th>
     <th valign="top">
 
     Resulting API State
-
-
     
     </th>
     <th valign="top">
 
     Future Action on API
-
-
     
     </th>
     </tr>
@@ -76,8 +70,6 @@ To copy an API proxy, proceed as follows:
     <td valign="top">
     
     *Save as Draft* 
-
-
     
     </td>
     <td valign="top">
@@ -85,8 +77,6 @@ To copy an API proxy, proceed as follows:
     *Not Deployed*
 
     API is available only in the Integration Suite, and is not available for product assignments.
-
-
     
     </td>
     <td valign="top">
@@ -94,8 +84,6 @@ To copy an API proxy, proceed as follows:
     *Deploy*
 
     API is deployed and is ready for product assignments.
-
-
     
     </td>
     </tr>
@@ -103,8 +91,6 @@ To copy an API proxy, proceed as follows:
     <td valign="top">
     
     *Save and Deploy* 
-
-
     
     </td>
     <td valign="top">
@@ -112,8 +98,6 @@ To copy an API proxy, proceed as follows:
     *Deployed*
 
     Only deployed APIs can be selected for product publishing.
-
-
     
     </td>
     <td valign="top">
@@ -121,8 +105,6 @@ To copy an API proxy, proceed as follows:
     *Undeploy*
 
     If any API is undeployed after being published, it is removed from the developer portal. When the API is deployed again, the product is updated. You can bring down an API without having to delete it from the product assignment. You cannot undeploy an API if it is the only one associated with the product.
-
-
     
     </td>
     </tr>

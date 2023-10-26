@@ -24,14 +24,10 @@ The following table provides examples of how to use the Script step with these i
 
 Use Case
 
-
-
 </th>
 <th valign="top">
 
 Example Requests/More Information
-
-
 
 </th>
 </tr>
@@ -39,8 +35,6 @@ Example Requests/More Information
 <td valign="top">
 
 Create MPL attachments
-
-
 
 </td>
 <td valign="top">
@@ -76,8 +70,6 @@ def Message processData(Message message) {
 When monitoring the message in the Cloud Integration *Monitor* section under *Monitor Message Processing*, the attachment is displayed in the *Attachments* tab when the corresponding integration flow is selected.
 
 You find an example scenario here: [Create MPL Attachments in Scripts](create-mpl-attachments-in-scripts-17dba92.md).
-
-
 
 </td>
 </tr>
@@ -136,8 +128,6 @@ messageLog.setStringProperty("Greeting", "Hello World!")
 
 Add a longer, structured document to the MPL
 
-
-
 </td>
 <td valign="top">
 
@@ -145,16 +135,12 @@ Use the `addAttachmentAsString` method to add a longer, structured document to t
 
 If the value `"null"` is specified for the `mediaType` parameter, the `"text/plain"` value is assumed as the media type.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Set custom header properties for message search
-
-
 
 </td>
 <td valign="top">
@@ -179,8 +165,6 @@ When monitoring the message in the Cloud Integration *Monitor* section under *Mo
 ![](images/Custom_Header_Properties_ddb7cbd.png)
 
 You find an example scenario here: [Use Custom Header Properties to Search for Message Processing Logs](use-custom-header-properties-to-search-for-message-processing-logs-d4b5839.md).
-
-
 
 </td>
 </tr>

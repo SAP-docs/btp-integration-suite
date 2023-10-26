@@ -49,15 +49,11 @@ Finally, you assign the role collection to the users provided by the SAP ID serv
     <th valign="top">
 
     Role Collection
-
-
     
     </th>
     <th valign="top">
 
     You Can...
-
-
     
     </th>
     </tr>
@@ -65,8 +61,6 @@ Finally, you assign the role collection to the users provided by the SAP ID serv
     <td valign="top">
     
     *PI\_Read\_Only*
-
-
     
     </td>
     <td valign="top">
@@ -94,8 +88,6 @@ Finally, you assign the role collection to the users provided by the SAP ID serv
     <td valign="top">
     
     *PI\_Business\_Expert*
-
-
     
     </td>
     <td valign="top">
@@ -125,8 +117,6 @@ Finally, you assign the role collection to the users provided by the SAP ID serv
     <td valign="top">
     
     *PI\_Integration\_Developer*
-
-
     
     </td>
     <td valign="top">
@@ -146,8 +136,6 @@ Finally, you assign the role collection to the users provided by the SAP ID serv
     <td valign="top">
     
     *PI\_Administrator*
-
-
     
     </td>
     <td valign="top">

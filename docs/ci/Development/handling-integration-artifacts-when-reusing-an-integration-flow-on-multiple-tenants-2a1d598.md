@@ -17,21 +17,15 @@ This topic provides an overview of how to handle the different kinds of artifact
 
 Web UI Section
 
-
-
 </th>
 <th valign="top">
 
 Artifact Type
 
-
-
 </th>
 <th valign="top">
 
 Required Actions to After Content Transport
-
-
 
 </th>
 </tr>
@@ -40,14 +34,10 @@ Required Actions to After Content Transport
 
 Design view
 
-
-
 </td>
 <td valign="top">
 
 Integration flow, value mapping, OData API 
-
-
 
 </td>
 <td valign="top">
@@ -56,8 +46,6 @@ Can be transported as part of an integration package \(with one of the chosen tr
 
 More information: [Content Transport](content-transport-e3c79d6.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -65,21 +53,15 @@ More information: [Content Transport](content-transport-e3c79d6.md)
 
 Design view
 
-
-
 </td>
 <td valign="top">
 
 Integration flow resources \(schemas, mappings\)
 
-
-
 </td>
 <td valign="top">
 
 Are transported along with the integration flow.
-
-
 
 </td>
 </tr>
@@ -88,14 +70,10 @@ Are transported along with the integration flow.
 
 Operations view/Keystore
 
-
-
 </td>
 <td valign="top">
 
 Public key or certificate
-
-
 
 </td>
 <td valign="top">
@@ -104,8 +82,6 @@ Download public part of key pair \(certificate, certificate chain, root certific
 
 More information: [Managing Keystore Entries](../Operations/managing-keystore-entries-2dc8942.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -113,14 +89,10 @@ More information: [Managing Keystore Entries](../Operations/managing-keystore-en
 
 Operations view/Keystore
 
-
-
 </td>
 <td valign="top">
 
 Private/public key pair
-
-
 
 </td>
 <td valign="top">
@@ -129,8 +101,6 @@ You need to newly create the key pair and upload it to the keystore of the targe
 
 More information: [Creating a Key Pair/SSH Key Pair](../Operations/creating-a-key-pair-ssh-key-pair-b8a8601.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -138,14 +108,10 @@ More information: [Creating a Key Pair/SSH Key Pair](../Operations/creating-a-ke
 
 Operations view/Security Material
 
-
-
 </td>
 <td valign="top">
 
 User Credentials artifact
-
-
 
 </td>
 <td valign="top">
@@ -154,8 +120,6 @@ Cannot be reused; newly create artifact on target tenant \(and use same artifact
 
 More information: [Deploying a User Credentials Artifact](../Operations/deploying-a-user-credentials-artifact-6912d63.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -163,14 +127,10 @@ More information: [Deploying a User Credentials Artifact](../Operations/deployin
 
 Operations view/Security Material
 
-
-
 </td>
 <td valign="top">
 
 Secure Parameter artifact
-
-
 
 </td>
 <td valign="top">
@@ -179,8 +139,6 @@ Cannot be reused; newly create artifact on target tenant \(and use same artifact
 
 More information: [Deploying a Secure Parameter Artifact](../Operations/deploying-a-secure-parameter-artifact-4641d6c.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -188,14 +146,10 @@ More information: [Deploying a Secure Parameter Artifact](../Operations/deployin
 
 Operations view/Security Material
 
-
-
 </td>
 <td valign="top">
 
 OAuth2 Credentials
-
-
 
 </td>
 <td valign="top">
@@ -204,8 +158,6 @@ Cannot be reused; newly create artifact on target tenant \(and use same artifact
 
 More information: [Deploying an OAuth2 Client Credentials Artifact](../Operations/deploying-an-oauth2-client-credentials-artifact-801b106.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -213,14 +165,10 @@ More information: [Deploying an OAuth2 Client Credentials Artifact](../Operation
 
 Operations view/Security Material
 
-
-
 </td>
 <td valign="top">
 
 Known Hosts
-
-
 
 </td>
 <td valign="top">
@@ -229,8 +177,6 @@ Newly upload the known hosts file to the target tenant.
 
 More information: [Deploying an SSH Known Hosts Artifact](../Operations/deploying-an-ssh-known-hosts-artifact-46da324.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -238,14 +184,10 @@ More information: [Deploying an SSH Known Hosts Artifact](../Operations/deployin
 
 Operations view/Security Material
 
-
-
 </td>
 <td valign="top">
 
 PGP Public Keyring
-
-
 
 </td>
 <td valign="top">
@@ -254,8 +196,6 @@ Newly upload the keyring file to the target tenant.
 
 More information: [Deploying a PGP Public Keyring](../Operations/deploying-a-pgp-public-keyring-7f04458.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -263,14 +203,10 @@ More information: [Deploying a PGP Public Keyring](../Operations/deploying-a-pgp
 
 Operations view/Security Material
 
-
-
 </td>
 <td valign="top">
 
 PGP Secret Keyring
-
-
 
 </td>
 <td valign="top">
@@ -279,8 +215,6 @@ Newly upload the keyring file to the target tenant.
 
 More information: [Deploying a PGP Secret Keyring](../Operations/deploying-a-pgp-secret-keyring-9d8e1a9.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -288,14 +222,10 @@ More information: [Deploying a PGP Secret Keyring](../Operations/deploying-a-pgp
 
 Operations view/Certificate-to-User Mappings
 
-
-
 </td>
 <td valign="top">
 
 Certificate-to-User Mapping
-
-
 
 </td>
 <td valign="top">
@@ -304,8 +234,6 @@ Newly create certificate-to-user mapping on target tenant. You can reuse an exis
 
 More information: [Managing Certificate-to-User Mappings, Neo Environment](../Operations/managing-certificate-to-user-mappings-neo-environment-88ea2e5.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -313,14 +241,10 @@ More information: [Managing Certificate-to-User Mappings, Neo Environment](../Op
 
 Operations view/JDBC Data Sources
 
-
-
 </td>
 <td valign="top">
 
 Operations view/JDBC Data Source
-
-
 
 </td>
 <td valign="top">
@@ -328,8 +252,6 @@ Operations view/JDBC Data Source
 Cannot be reused; newly create artifact on target tenant \(and use same artifact name in order not to break any integration flow references to the artifact\).
 
 More information: [Managing JDBC Data Sources](../Operations/managing-jdbc-data-sources-4c873fa.md)
-
-
 
 </td>
 </tr>
@@ -348,14 +270,10 @@ More information: [Managing JDBC Data Sources](../Operations/managing-jdbc-data-
 
 Artifact T
 
-
-
 </th>
 <th valign="top">
 
 More information:
-
-
 
 </th>
 </tr>
@@ -364,16 +282,12 @@ More information:
 
 Partner Directory content
 
-
-
 </td>
 <td valign="top">
 
 You need to migrate the Partner Directory content using the OData API.
 
 More information: [Parameterizing Integration Flows Using the Partner Directory](parameterizing-integration-flows-using-the-partner-directory-b7812a5.md)
-
-
 
 </td>
 </tr>

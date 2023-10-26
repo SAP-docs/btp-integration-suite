@@ -24,14 +24,10 @@ The OData V2 receiver adapter is configured in the following way:
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 `https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/espm-cloud-web/espm.svc/` 
-
-
 
 </td>
 </tr>
@@ -40,14 +36,10 @@ The OData V2 receiver adapter is configured in the following way:
 
 *Resource Path* 
 
-
-
 </td>
 <td valign="top">
 
 `CustomerReviews` 
-
-
 
 </td>
 </tr>
@@ -56,14 +48,10 @@ The OData V2 receiver adapter is configured in the following way:
 
 *Query Options* 
 
-
-
 </td>
 <td valign="top">
 
 `$select=CustomerReviewId,Comment,CreationDate,FirstName,LastName,ProductId,Rating` 
-
-
 
 </td>
 </tr>
@@ -84,14 +72,10 @@ A subsequent Data Store *Write* step is configured in the following way:
 
 *Data Store Name* 
 
-
-
 </td>
 <td valign="top">
 
 `CustomerReviews` 
-
-
 
 </td>
 </tr>
@@ -100,14 +84,10 @@ A subsequent Data Store *Write* step is configured in the following way:
 
 *Entry ID* 
 
-
-
 </td>
 <td valign="top">
 
 `${header.SAPMessageDigest}` 
-
-
 
 </td>
 </tr>
@@ -116,14 +96,10 @@ A subsequent Data Store *Write* step is configured in the following way:
 
 *Overwrite Existing Message.* 
 
-
-
 </td>
 <td valign="top">
 
 Selected
-
-
 
 </td>
 </tr>

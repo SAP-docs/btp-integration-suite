@@ -11,14 +11,10 @@ Consider the following limitations before you upload a custom message:
 
 DescriptionLimitation
 
-
-
 </th>
 <th valign="top">
 
  
-
-
 
 </th>
 </tr>
@@ -27,14 +23,10 @@ DescriptionLimitation
 
 Only native-XML messages supported
 
-
-
 </td>
 <td valign="top">
 
 Full support is only given to messages that are natively XML \(All messages are imported with SyntaxType = XML.\) You can also import XSDs representing non-XML messages and SAP Integration Suite will support standard XML-handling. But extended special features like XSD creation for EDI Flow Steps are not supported.
-
-
 
 </td>
 </tr>
@@ -43,14 +35,10 @@ Full support is only given to messages that are natively XML \(All messages are 
 
 Qualification of elements and attributes of the message is not supported
 
-
-
 </td>
 <td valign="top">
 
 *elementFormDefault* or *form* attribute must be set to *unqualified*.
-
-
 
 </td>
 </tr>
@@ -59,14 +47,10 @@ Qualification of elements and attributes of the message is not supported
 
 *xsd:include* and *xsd:import* are not supported
 
-
-
 </td>
 <td valign="top">
 
 Import \(or reference\) of another XSD is not supported. This also implies that only one namespace is allowed across the message.
-
-
 
 </td>
 </tr>
@@ -75,14 +59,10 @@ Import \(or reference\) of another XSD is not supported. This also implies that 
 
 *@ref* is not supported
 
-
-
 </td>
 <td valign="top">
 
 Referencing another element/attribute/group/attributeGroup is not possible. The SAP Integration Suite will throw a validation exception.
-
-
 
 </td>
 </tr>
@@ -106,8 +86,6 @@ No support for :
 
 The SAP Integration Suite will throw a validation exception.
 
-
-
 </td>
 </tr>
 <tr>
@@ -115,16 +93,12 @@ The SAP Integration Suite will throw a validation exception.
 
 Recursion \(limited support\)
 
-
-
 </td>
 <td valign="top">
 
 **Self-recursion** occurs when a child node refers to its parent *complexType*. In such cases, the message will be imported as Custom Message. But this recursive node can not be used and will be disabled for selection in the MIG.
 
 **Chain recursion** occurs when a child node refers to an ancestor *complexType*. This scenario is not supported and such elements will be removed automatically when imported into the SAP Integration Suite.
-
-
 
 </td>
 </tr>

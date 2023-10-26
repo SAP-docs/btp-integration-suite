@@ -34,7 +34,7 @@ You’ve created a subaccount in your assigned global account using the SAP BTP 
 
 6.  Enter the *User Name* and *E-Mail*, and choose *Create*.
 
-7.  Choose the user and select <span class="SAP-icons"></span> under *Role Collections* section and choose *Assign Role Collection*.
+7.  Choose the user and select <span class="SAP-icons"></span> Additional Options under *Role Collections* section and choose *Assign Role Collection*.
 
     > ### Note:  
     > For Feature Set B customers, *Integration\_Provisioner* role is assigned automatically.

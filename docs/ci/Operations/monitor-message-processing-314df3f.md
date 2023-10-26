@@ -25,14 +25,10 @@ You can filter messages by *Time*, *Status*, and *Artifact*.
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,8 +36,6 @@ Description
 <td valign="top">
 
 *Time* 
-
-
 
 </td>
 <td valign="top">
@@ -67,16 +61,12 @@ You can select the start and end time of the interval.
 
 The specified time interval is displayed above the message list. When you browse different pages of the message monitor, the time interval stays the same. You can only modify the time interval by changing the filter settings or by refreshing the message monitor \(applies to all-time intervals except for *Custom*\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Status* 
-
-
 
 </td>
 <td valign="top">
@@ -104,16 +94,12 @@ In the dropdown list you can select one of the following values as the status:
 
 See: [Message Status](message-status-733a57b.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Artifact* 
-
-
 
 </td>
 <td valign="top">
@@ -137,8 +123,6 @@ When you select one of the following entries in the value help list, you can als
 
 You can filter for artifacts with a specific sequence of characters in their name or ID. The search is case insensitive.
 
-
-
 </td>
 </tr>
 <tr>
@@ -146,16 +130,12 @@ You can filter for artifacts with a specific sequence of characters in their nam
 
 *ID* 
 
-
-
 </td>
 <td valign="top">
 
 Allows you to filter for messages using different of IDs.
 
 See: [Using IDs to Filter Messages](using-ids-to-filter-messages-a820752.md)
-
-
 
 </td>
 </tr>
@@ -184,14 +164,10 @@ The following attributes are displayed for each message:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -200,16 +176,12 @@ Description
 
 *Artifact Name* 
 
-
-
 </td>
 <td valign="top">
 
 Display name of the artifact \(for example, the name of the integration flow that specifies the message processing\).
 
 The tooltip shows the technical name, the artifact, and the package name.
-
-
 
 </td>
 </tr>
@@ -218,14 +190,10 @@ The tooltip shows the technical name, the artifact, and the package name.
 
 *Status* 
 
-
-
 </td>
 <td valign="top">
 
 Status of end-to-end message processing.
-
-
 
 </td>
 </tr>
@@ -234,14 +202,10 @@ Status of end-to-end message processing.
 
 *Last Updated at* 
 
-
-
 </td>
 <td valign="top">
 
 Time at which the message processing log was last updated.
-
-
 
 </td>
 </tr>
@@ -250,14 +214,10 @@ Time at which the message processing log was last updated.
 
 *Processing Time* 
 
-
-
 </td>
 <td valign="top">
 
 Total message processing time.
-
-
 
 </td>
 </tr>

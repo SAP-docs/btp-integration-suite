@@ -73,15 +73,11 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -89,8 +85,6 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     <td valign="top">
     
     *Alias* 
-
-
     
     </td>
     <td valign="top">
@@ -100,8 +94,6 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     A keystore entry can be either be owned by the tenant administrator or by SAP.
 
     In case a keystore entry it is owned by SAP, the lock icon \(:lock:\) is shown next to the alias. SAP-owned keystore entries provide a reduced set of functions. For example, you cannot update or delete an SAP-owned keystore entry.
-
-
     
     </td>
     </tr>
@@ -109,8 +101,6 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     <td valign="top">
     
     *Type* 
-
-
     
     </td>
     <td valign="top">
@@ -134,8 +124,6 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     <td valign="top">
     
     *Valid Until* 
-
-
     
     </td>
     <td valign="top">
@@ -143,8 +131,6 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     Indicates the expiration date.
 
     If keys and certificates have expired, the date is highlighted in red.
-
-
     
     </td>
     </tr>
@@ -152,15 +138,11 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     <td valign="top">
     
     *Last Modified At* 
-
-
     
     </td>
     <td valign="top">
     
     Indicates the date and time the entry was last modified.
-
-
     
     </td>
     </tr>
@@ -168,15 +150,11 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     <td valign="top">
     
     *Subject DN* 
-
-
     
     </td>
     <td valign="top">
     
     Indicates the Subject distinguished name \(DN\) which entails information about the owner of the certificate such as the common name of the certificate owner \(CN\), the organization \(O\), or the country or region \(C\).
-
-
     
     </td>
     </tr>
@@ -184,15 +162,11 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     <td valign="top">
     
     *Issuer DN* 
-
-
     
     </td>
     <td valign="top">
     
     Indicates the Issuer distinguished name \(DN\) which entails information about the issuer of the certificate such as common name of the certificate issuer \(CN\), the organization \(O\), or the country or region \(C\).
-
-
     
     </td>
     </tr>
@@ -200,8 +174,6 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     <td valign="top">
     
     *Actions* 
-
-
     
     </td>
     <td valign="top">
@@ -247,8 +219,6 @@ The Keystore Monitor also gives you the following options:
 
 *Create*
 
-
-
 </td>
 <td valign="top">
 
@@ -256,16 +226,12 @@ To create a Key Pair or an SSH Key Pair, select *Create* and specify the artifac
 
 See also[Creating a Key Pair/SSH Key Pair](creating-a-key-pair-ssh-key-pair-b8a8601.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Add*
-
-
 
 </td>
 <td valign="top">
@@ -308,8 +274,6 @@ There are the following options:
 
 *Download*
 
-
-
 </td>
 <td valign="top">
 
@@ -331,14 +295,10 @@ See also:
 
 *Back Up*
 
-
-
 </td>
 <td valign="top">
 
 To back up key store entries, see: [Backing Up Keystore Entries](backing-up-keystore-entries-b8e03b7.md)
-
-
 
 </td>
 </tr>
@@ -347,14 +307,10 @@ To back up key store entries, see: [Backing Up Keystore Entries](backing-up-keys
 
 *Download Back Up*
 
-
-
 </td>
 <td valign="top">
 
 To download backed-up keystore entries, select *Back Up*. See also: [Downloading Backed-Up Keystore Entries](downloading-backed-up-keystore-entries-3a67f8a.md).
-
-
 
 </td>
 </tr>
@@ -362,8 +318,6 @@ To download backed-up keystore entries, select *Back Up*. See also: [Downloading
 <td valign="top">
 
 *Delete*
-
-
 
 </td>
 <td valign="top">
@@ -384,14 +338,10 @@ To delete an artifact, go to *Monitor* \> *Managing Security Material* and choos
 
 *Restore*
 
-
-
 </td>
 <td valign="top">
 
 To restore backed-up keystore entries, see: [Restoring Backed-Up Keystore Entries](restoring-backed-up-keystore-entries-bfbbf91.md) 
-
-
 
 </td>
 </tr>
@@ -399,8 +349,6 @@ To restore backed-up keystore entries, see: [Restoring Backed-Up Keystore Entrie
 <td valign="top">
 
 *Update*
-
-
 
 </td>
 <td valign="top">

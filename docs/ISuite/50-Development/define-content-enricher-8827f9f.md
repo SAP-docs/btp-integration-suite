@@ -134,21 +134,15 @@ Consequently, you specify the following values while configuring the Content Enr
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 User input
-
-
 
 </th>
 </tr>
@@ -157,21 +151,15 @@ User input
 
 Original Message
 
-
-
 </td>
 <td valign="top">
 
 Path to Node
 
-
-
 </td>
 <td valign="top">
 
 EmployeeList/Employee
-
-
 
 </td>
 </tr>
@@ -180,14 +168,10 @@ EmployeeList/Employee
 
 Key Element
 
-
-
 </td>
 <td valign="top">
 
 external\_id
-
-
 
 </td>
 </tr>
@@ -196,21 +180,15 @@ external\_id
 
 Lookup Message
 
-
-
 </td>
 <td valign="top">
 
 Path to Node
 
-
-
 </td>
 <td valign="top">
 
 EmergencyContacts/contact
-
-
 
 </td>
 </tr>
@@ -219,14 +197,10 @@ EmergencyContacts/contact
 
 Key Element
 
-
-
 </td>
 <td valign="top">
 
 c\_code
-
-
 
 </td>
 </tr>
@@ -307,15 +281,11 @@ The enriched message is in the following format.
     <th valign="top">
 
     Value
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -323,15 +293,11 @@ The enriched message is in the following format.
     <td valign="top">
     
     *Combine* 
-
-
     
     </td>
     <td valign="top">
     
     Combines the original and lookup messages. You can't define any rules for combining messages.
-
-
     
     </td>
     </tr>
@@ -339,15 +305,11 @@ The enriched message is in the following format.
     <td valign="top">
     
     *Enrich* 
-
-
     
     </td>
     <td valign="top">
     
     You can define the path to node and key element based on which the original message is enriched with the lookup message.
-
-
     
     </td>
     </tr>
@@ -361,22 +323,16 @@ The enriched message is in the following format.
     <th valign="top">
 
     Section
-
-
     
     </th>
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -384,22 +340,16 @@ The enriched message is in the following format.
     <td valign="top" rowspan="2">
     
     Original Message
-
-
     
     </td>
     <td valign="top">
     
     Path to Node
-
-
     
     </td>
     <td valign="top">
     
     Path to the reference node in the original message
-
-
     
     </td>
     </tr>
@@ -407,15 +357,11 @@ The enriched message is in the following format.
     <td valign="top">
     
     Key Element
-
-
     
     </td>
     <td valign="top">
     
     Key element in the original message
-
-
     
     </td>
     </tr>
@@ -423,22 +369,16 @@ The enriched message is in the following format.
     <td valign="top" rowspan="2">
     
     Lookup Message
-
-
     
     </td>
     <td valign="top">
     
     Path to Node
-
-
     
     </td>
     <td valign="top">
     
     Path to the reference node in the lookup message
-
-
     
     </td>
     </tr>
@@ -446,15 +386,11 @@ The enriched message is in the following format.
     <td valign="top">
     
     Key Element
-
-
     
     </td>
     <td valign="top">
     
     Key element in the lookup message
-
-
     
     </td>
     </tr>

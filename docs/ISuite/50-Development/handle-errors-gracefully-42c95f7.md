@@ -40,21 +40,15 @@ The following example scenarios cover basic exception handing use cases and feat
 
 Exception handling rule
 
-
-
 </th>
 <th valign="top">
 
 Description and more information
 
-
-
 </th>
 <th valign="top">
 
 Example integration flow\(s\)
-
-
 
 </th>
 </tr>
@@ -62,8 +56,6 @@ Example integration flow\(s\)
 <td valign="top">
 
 Handle exception with an exception subprocess.
-
-
 
 </td>
 <td valign="top">
@@ -93,8 +85,6 @@ There are different variants depending on the event type that ends exception sub
 
 See: [Handle Exceptions](handle-exceptions-ca95c61.md)
 
-
-
 </td>
 <td valign="top">
 
@@ -104,16 +94,12 @@ Handle Errors - Extend With Exception Subprocess – Error End Event
 
 Handle Errors - Extend With Exception Subprocess – Escalation End Event
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Handle exceptions in successful responses.
-
-
 
 </td>
 <td valign="top">
@@ -122,14 +108,10 @@ Use this option to handle situations where the return HTTP status code of the re
 
 See: [Handle Errors in Successful Responses](handle-errors-in-successful-responses-f066020.md)
 
-
-
 </td>
 <td valign="top">
 
 Handle Errors - Error in Successful Response
-
-
 
 </td>
 </tr>
@@ -137,8 +119,6 @@ Handle Errors - Error in Successful Response
 <td valign="top">
 
 Outsource exception handling into separate integration flow.
-
-
 
 </td>
 <td valign="top">
@@ -152,8 +132,6 @@ There are different variants depending on the event type that ends exception sub
 
 See: [Outsource Exception Handling into a Separate Integration Flow](outsource-exception-handling-into-a-separate-integration-flow-7f3bb85.md)
 
-
-
 </td>
 <td valign="top">
 
@@ -162,8 +140,6 @@ Handle Errors - Outsource Error Handling - Main Integration Flow with Error End 
 Handle Errors - Outsource Error Handling - Main Integration Flow with Message End Event
 
 Handle Errors - Outsource Error Handling - Error Handling Flow
-
-
 
 </td>
 </tr>
@@ -193,21 +169,15 @@ Handle exceptions raised in integration flow connected by the ProcessDirect adap
 
 Exception handling rule
 
-
-
 </th>
 <th valign="top">
 
 Description and more information
 
-
-
 </th>
 <th valign="top">
 
 Integration flow\(s\)
-
-
 
 </th>
 </tr>
@@ -215,8 +185,6 @@ Integration flow\(s\)
 <td valign="top">
 
 Handle exception raised in a connected integration flow \(simple scenario\).
-
-
 
 </td>
 <td valign="top">
@@ -229,14 +197,10 @@ The child integration flow handles the exception and ends message processing in 
 
 See: [Handle Exceptions in Dependent Integration Flows \(Simple Scenario\)](handle-exceptions-in-dependent-integration-flows-simple-scenario-984e51a.md)
 
-
-
 </td>
 <td valign="top">
 
 Handle Errors - Dependent Integration Flows - Simple Scenario
-
-
 
 </td>
 </tr>
@@ -244,8 +208,6 @@ Handle Errors - Dependent Integration Flows - Simple Scenario
 <td valign="top">
 
 Handle exception raised in a connected integration flow in combination with a Splitter/Gather pattern and with *Stop on Exception* activated.
-
-
 
 </td>
 <td valign="top">
@@ -256,16 +218,12 @@ Parent and child integration flows are designed in such a way that in this case 
 
 See: [Handle Exceptions in Dependent Integration Flows](handle-exceptions-in-dependent-integration-flows-3973cc3.md)
 
-
-
 </td>
 <td valign="top">
 
 Handle Errors - Dependent Integration Flows - Parent
 
 Handle Errors - Dependent Integration Flows - Child
-
-
 
 </td>
 </tr>
@@ -286,21 +244,15 @@ Handle exceptions raised in local subprocess initiated by Local Process call. Ex
 
 Exception handling rule
 
-
-
 </th>
 <th valign="top">
 
 Description and more information
 
-
-
 </th>
 <th valign="top">
 
 Integration flow\(s\)
-
-
 
 </th>
 </tr>
@@ -308,8 +260,6 @@ Integration flow\(s\)
 <td valign="top">
 
 Handle exception raised in a subprocess \(simple scenario\).
-
-
 
 </td>
 <td valign="top">
@@ -320,14 +270,10 @@ If an exception is raised in the subprocess, the processing of the main integrat
 
 See: [Handle Exceptions in Subprocess \(Simple Scenario\)](handle-exceptions-in-subprocess-simple-scenario-e8b10b6.md)
 
-
-
 </td>
 <td valign="top">
 
 Handle Errors - Local Integration Process
-
-
 
 </td>
 </tr>
@@ -335,8 +281,6 @@ Handle Errors - Local Integration Process
 <td valign="top">
 
 Handle exception raised in a subprocess in combination with a Splitter with *Stop on Exception* activated.
-
-
 
 </td>
 <td valign="top">
@@ -347,14 +291,10 @@ If an exception is raised, processing ends because of the *Stop on Exception* 
 
 See: [Variant 1: Splitter Without Gather with Stop on Exception and with Exception Subprocess](variant-1-splitter-without-gather-with-stop-on-exception-and-with-exception-subprocess-d2445ff.md)
 
-
-
 </td>
 <td valign="top">
 
 Handle Errors - Splitter with Stop on Exception
-
-
 
 </td>
 </tr>
@@ -362,8 +302,6 @@ Handle Errors - Splitter with Stop on Exception
 <td valign="top">
 
 Handle exception raised in a subprocess in combination with a Splitter with *Stop on Exception* deactivated.
-
-
 
 </td>
 <td valign="top">
@@ -374,14 +312,10 @@ The subprocess contains an exception subprocess that ends with a message end eve
 
 See: [Variant 2: Splitter Without Gather Without Stop on Exception and with Exception Subprocess](variant-2-splitter-without-gather-without-stop-on-exception-and-with-exception-subprocess-f9a508a.md)
 
-
-
 </td>
 <td valign="top">
 
 Handle Errors - Splitter without Stop on Exception
-
-
 
 </td>
 </tr>
@@ -389,8 +323,6 @@ Handle Errors - Splitter without Stop on Exception
 <td valign="top">
 
 Handle exception raised in a subprocess in combination with a Splitter/Gather pattern and with *Stop on Exception* activated.
-
-
 
 </td>
 <td valign="top">
@@ -401,14 +333,10 @@ The subprocess contains an exception subprocess that ends with an error end even
 
 See: [Variant 3: Splitter with Gather with Stop on Exception and with Exception Subprocess](variant-3-splitter-with-gather-with-stop-on-exception-and-with-exception-subprocess-4eac8a7.md)
 
-
-
 </td>
 <td valign="top">
 
 Handle Errors - Splitter Gather with Stop on Exception
-
-
 
 </td>
 </tr>
@@ -416,8 +344,6 @@ Handle Errors - Splitter Gather with Stop on Exception
 <td valign="top">
 
 Handle exception raised in a subprocess in combination with a Splitter/Gather pattern and with *Stop on Exception* deactivated.
-
-
 
 </td>
 <td valign="top">
@@ -428,14 +354,10 @@ The subprocess contains an exception subprocess that ends with a message end eve
 
 See: [Variant 4: Splitter with Gather Without Stop on Exception and with Exception Subprocess](variant-4-splitter-with-gather-without-stop-on-exception-and-with-exception-subprocess-77b89c1.md)
 
-
-
 </td>
 <td valign="top">
 
 Handle Errors - Splitter Gather without Stop on Exception
-
-
 
 </td>
 </tr>
@@ -456,21 +378,15 @@ Handle exceptions raised in local subprocess initiated by Local Process call. Ex
 
 Exception handling rule
 
-
-
 </th>
 <th valign="top">
 
 Description and more information
 
-
-
 </th>
 <th valign="top">
 
 Integration flow\(s\)
-
-
 
 </th>
 </tr>
@@ -478,8 +394,6 @@ Integration flow\(s\)
 <td valign="top">
 
 Handle exception raised in a receiver system.
-
-
 
 </td>
 <td valign="top">
@@ -490,16 +404,12 @@ If an exception is raised in the receiver, processing of the message is continue
 
 See: [Don't Throw Exception on Failure](don-t-throw-exception-on-failure-0e6ec4f.md)
 
-
-
 </td>
 <td valign="top">
 
 Handle Errors - Do not throw Error on Failure
 
 Webshop Wrapper
-
-
 
 </td>
 </tr>

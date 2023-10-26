@@ -50,15 +50,11 @@ Import request is delegated to deploy-service using destination D4.
     <th valign="top">
 
     Fields
-
-
     
     </th>
     <th valign="top">
 
     Details
-
-
     
     </th>
     </tr>
@@ -66,15 +62,11 @@ Import request is delegated to deploy-service using destination D4.
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Enter a unique name for this destination, for example, `TMSDeploy`.
-
-
     
     </td>
     </tr>
@@ -82,15 +74,11 @@ Import request is delegated to deploy-service using destination D4.
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     Enter `HTTP` as the supported type.
-
-
     
     </td>
     </tr>
@@ -98,15 +86,11 @@ Import request is delegated to deploy-service using destination D4.
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     Enter a brief description stating the purpose of creating a new destination in the *Description* field.
-
-
     
     </td>
     </tr>
@@ -114,8 +98,6 @@ Import request is delegated to deploy-service using destination D4.
     <td valign="top">
     
     URL
-
-
     
     </td>
     <td valign="top">
@@ -128,8 +110,6 @@ Import request is delegated to deploy-service using destination D4.
     > If your Org Name has spaces, add escape characters in place of spaces, for example, SAP BTP should be written as SAP%20BTP.
 
     For `<myspace>` details navigate to your subaccount in BTP cockpit and choose *Overview* on the left pane. Choose *Cloud Foundry Environment* on the *Overview* page and copy the *Space name* that appears in this section. This is the space inside the subaccount that has the Cloud Transport Management instance subscribed.
-
-
     
     </td>
     </tr>
@@ -137,15 +117,11 @@ Import request is delegated to deploy-service using destination D4.
     <td valign="top">
     
     Proxy Type
-
-
     
     </td>
     <td valign="top">
     
     Internet
-
-
     
     </td>
     </tr>
@@ -153,15 +129,11 @@ Import request is delegated to deploy-service using destination D4.
     <td valign="top">
     
     Authentication
-
-
     
     </td>
     <td valign="top">
     
     Select the authentication type as `BasicAuthentication`.
-
-
     
     </td>
     </tr>
@@ -169,15 +141,11 @@ Import request is delegated to deploy-service using destination D4.
     <td valign="top">
     
     User ID
-
-
     
     </td>
     <td valign="top">
     
     Specify the ID of the technical user that is used for the deployment.
-
-
     
     </td>
     </tr>
@@ -185,15 +153,11 @@ Import request is delegated to deploy-service using destination D4.
     <td valign="top">
     
     Password
-
-
     
     </td>
     <td valign="top">
     
     Specify the password of the technical user.
-
-
     
     </td>
     </tr>

@@ -13,14 +13,10 @@ Get onboarded to Edge Integration Cell.
 
 Persona
 
-
-
 </th>
 <th valign="top">
 
 Activity
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Activity
 
 System Administrator
 
-
-
 </td>
 <td valign="top">
 
 [Before You Start](before-you-start-1d116bd.md)
-
-
 
 </td>
 </tr>
@@ -44,8 +36,6 @@ System Administrator
 <td valign="top">
 
 Tenant Administrator
-
-
 
 </td>
 <td valign="top">
@@ -71,8 +61,6 @@ Tenant Administrator
 <td valign="top">
 
 Integration Developer
-
-
 
 </td>
 <td valign="top">

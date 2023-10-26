@@ -8,19 +8,18 @@ We use **inbound** to refer to the communication direction when a sender system 
 
 -   **Basic authentication**
 
-    The calling entity is authenticated based on credentials \(user name and password\)
+    The calling entity is authenticated based on credentials \(user name and password\).
 
 -   **Client-certificate authentication** 
 
--   OAuth 2.0
+-   **OAuth 2.0**
 
     OAuth allows you to set up authentication scenarios without the need to share credentials.
 
     See:
 
-    [Protecting Applications with OAuth 2.0](https://help.hana.ondemand.com/help/frameset.htm?b7b589334d444293a2a91e0ef4234136.html)
-
-    [OAuth 2.0 Specification](https://oauth.net/2/) 
+    -   [Protecting Applications with OAuth 2.0](https://help.hana.ondemand.com/help/frameset.htm?b7b589334d444293a2a91e0ef4234136.html)
+    -   [OAuth 2.0 Specification](https://oauth.net/2/) 
 
 
 **Related Information**  

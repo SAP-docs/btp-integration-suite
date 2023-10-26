@@ -47,15 +47,11 @@ Perform the following steps to add an existing keystore to your runtime.
     <td valign="top">
     
     *Keystore*
-
-
     
     </td>
     <td valign="top">
     
     From the drop-down list, select the keystore.
-
-
     
     </td>
     </tr>
@@ -63,15 +59,11 @@ Perform the following steps to add an existing keystore to your runtime.
     <td valign="top">
     
     *Runtime*
-
-
     
     </td>
     <td valign="top">
     
     Depending on the runtime-specfic view you've chosen, this field is prefilled.
-
-
     
     </td>
     </tr>
@@ -105,15 +97,11 @@ Perform the following steps to create a new keystore.
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     Provide a name.
-
-
     
     </td>
     </tr>
@@ -121,15 +109,11 @@ Perform the following steps to create a new keystore.
     <td valign="top">
     
     *Runtime*
-
-
     
     </td>
     <td valign="top">
     
     Select one or more runtimes associated with this keystore.
-
-
     
     </td>
     </tr>

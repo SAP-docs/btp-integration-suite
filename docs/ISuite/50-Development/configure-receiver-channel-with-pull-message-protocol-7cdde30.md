@@ -44,14 +44,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -60,14 +56,10 @@ Description
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 Define the endpoint URL of the sending MSH.
-
-
 
 </td>
 </tr>
@@ -76,14 +68,10 @@ Define the endpoint URL of the sending MSH.
 
 *Reference Message ID* 
 
-
-
 </td>
 <td valign="top">
 
 Define the reference ID of the signal message.
-
-
 
 </td>
 </tr>
@@ -92,14 +80,10 @@ Define the reference ID of the signal message.
 
 *Message Partition Channel* 
 
-
-
 </td>
 <td valign="top">
 
 Define the partition for the AS4 message that needs to be exchanged between the participants.
-
-
 
 </td>
 </tr>
@@ -107,8 +91,6 @@ Define the partition for the AS4 message that needs to be exchanged between the 
 <td valign="top">
 
 *Authentication Type* 
-
-
 
 </td>
 <td valign="top">
@@ -135,14 +117,10 @@ Authentication method that you want to use for connecting to the sending MSH. Yo
 
 \(only if you select *Basic Authentication*.\)
 
-
-
 </td>
 <td valign="top">
 
 Provide the alias you used while deploying basic authentication credentials.
-
-
 
 </td>
 </tr>
@@ -153,14 +131,10 @@ Provide the alias you used while deploying basic authentication credentials.
 
 \(only if you select *Client Certificate*.\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the private key alias to sign the message.
-
-
 
 </td>
 </tr>
@@ -171,14 +145,10 @@ Specify the private key alias to sign the message.
 
 \(only if you select *SAML Authentication*.\)
 
-
-
 </td>
 <td valign="top">
 
 Provide the specific endpoint URL to support SAML-based authentication that allows access to the sending MSH.
-
-
 
 </td>
 </tr>
@@ -187,14 +157,10 @@ Provide the specific endpoint URL to support SAML-based authentication that allo
 
 *Private Key Alias* 
 
-
-
 </td>
 <td valign="top">
 
 Determine the private key alias for SAML authentication.
-
-
 
 </td>
 </tr>
@@ -203,14 +169,10 @@ Determine the private key alias for SAML authentication.
 
 *Timeout \(in sec.\)* 
 
-
-
 </td>
 <td valign="top">
 
 Provide a connection timeout period \(in seconds\) to define how long the sending MSH waits for the AS4 message to be received by the receiving MSH.
-
-
 
 </td>
 </tr>
@@ -227,14 +189,10 @@ Select the *Security*tab and provide values in the fields as follows.
 
 Paramter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -242,8 +200,6 @@ Description
 <td valign="top">
 
 *Sign Message* 
-
-
 
 </td>
 <td valign="top">
@@ -270,14 +226,10 @@ The valid values are:
 
 \(only if *Sign Message* is enabed\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the private key alias to sign the AS4 message.
-
-
 
 </td>
 </tr>
@@ -287,8 +239,6 @@ Specify the private key alias to sign the AS4 message.
 *Signature Algorithm*
 
 \(only if *Sign Message* is enabled\)
-
-
 
 </td>
 <td valign="top">
@@ -315,8 +265,6 @@ The valid values are:
 
 *Verify Signature* 
 
-
-
 </td>
 <td valign="top">
 
@@ -342,14 +290,10 @@ The valid values are:
 
 \(only if *Verify Signature* is enabled\)
 
-
-
 </td>
 <td valign="top">
 
 Provide the public key alias to verify the signature of the AS4 message.
-
-
 
 </td>
 </tr>
@@ -358,14 +302,10 @@ Provide the public key alias to verify the signature of the AS4 message.
 
 *Decrypt Message* 
 
-
-
 </td>
 <td valign="top">
 
 Select to decrypt outgoing AS4 message.
-
-
 
 </td>
 </tr>
@@ -376,14 +316,10 @@ Select to decrypt outgoing AS4 message.
 
 \(only if *Decrypt Message* is enabled\)
 
-
-
 </td>
 <td valign="top">
 
 Provide the private key alias used to decipher the outgoing AS4 message.
-
-
 
 </td>
 </tr>
@@ -403,14 +339,10 @@ Select the *Receipt*tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -419,14 +351,10 @@ Description
 
 *Receipt* 
 
-
-
 </td>
 <td valign="top">
 
 Ensures that the outgoing AS4 message is signed.
-
-
 
 </td>
 </tr>
@@ -435,14 +363,10 @@ Ensures that the outgoing AS4 message is signed.
 
 *Target URL*
 
-
-
 </td>
 <td valign="top">
 
 Provide the URL of the relevant host system for authenticating the user against the system.
-
-
 
 </td>
 </tr>
@@ -450,8 +374,6 @@ Provide the URL of the relevant host system for authenticating the user against 
 <td valign="top">
 
 *Authentication Type*
-
-
 
 </td>
 <td valign="top">
@@ -490,14 +412,10 @@ There are the following options:
 
 \(only if you select *Required* in *Basic Authentication*.\)
 
-
-
 </td>
 <td valign="top">
 
 Provide the alias you used while deploying basic authentication credentials.
-
-
 
 </td>
 </tr>
@@ -508,14 +426,10 @@ Provide the alias you used while deploying basic authentication credentials.
 
 \(only if you select *Required* in *Client Certificate*.\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the private key alias to sign the AS4 message.
-
-
 
 </td>
 </tr>
@@ -524,14 +438,10 @@ Specify the private key alias to sign the AS4 message.
 
 *Timeout \(in sec\)*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the time \(in seconds\) that the client will wait for a response before the connection is interrupted.
-
-
 
 </td>
 </tr>
@@ -540,14 +450,10 @@ Specifies the time \(in seconds\) that the client will wait for a response befor
 
 *Signing*
 
-
-
 </td>
 <td valign="top">
 
 Select *Required* if you want to sign the outgoing AS4 message. This guarantees your identity by signing the messages with one or more private keys using a signature algorithm.
-
-
 
 </td>
 </tr>
@@ -556,14 +462,10 @@ Select *Required* if you want to sign the outgoing AS4 message. This guarantees 
 
 *Private Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Provide an alias for selecting a private key from the keystore.
-
-
 
 </td>
 </tr>
@@ -574,14 +476,10 @@ Provide an alias for selecting a private key from the keystore.
 
 \(only if you select *Required* in *Signing*.\)
 
-
-
 </td>
 <td valign="top">
 
 Use the relevant algorithm to sign the AS4 message.
-
-
 
 </td>
 </tr>

@@ -37,72 +37,52 @@ In a *Content Modifier* step, 2 exchange properties are defined holding the prod
 
 ***Action***
 
-
-
 </td>
 <td valign="top">
 
 ***Name***
-
-
 
 </td>
 <td valign="top">
 
 ***Type***
 
-
-
 </td>
 <td valign="top">
 
 ***Data Type***
-
-
 
 </td>
 <td valign="top">
 
 ***Value***
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Create
-
-
 
 </td>
 <td valign="top">
 
 quantity
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 //quantity
-
-
 
 </td>
 </tr>
@@ -111,35 +91,25 @@ java.lang.String
 
 Create
 
-
-
 </td>
 <td valign="top">
 
 productID
-
-
 
 </td>
 <td valign="top">
 
 XPath
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 //productIdentifier
-
-
 
 </td>
 </tr>

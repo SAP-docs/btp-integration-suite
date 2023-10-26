@@ -27,14 +27,10 @@ Select the *General* tab to access the following parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Enter the name of the channel.
 
 *Direction* 
 
-
-
 </td>
 <td valign="top">
 
 Sender
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Sender
 
 *System* 
 
-
-
 </td>
 <td valign="top">
 
 Sender
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ Sender
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 AzureStorage
-
-
 
 </td>
 </tr>
@@ -107,14 +87,10 @@ AzureStorage
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 HTTPS
-
-
 
 </td>
 </tr>
@@ -123,16 +99,12 @@ HTTPS
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 *Queue Storage*
 
 Shows the message protocol selected when creating the channel.
-
-
 
 </td>
 </tr>
@@ -147,14 +119,10 @@ Shows the message protocol selected when creating the channel.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -162,8 +130,6 @@ Description
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -186,14 +152,10 @@ Select authentication option to use to connect to Azure Storage server. There ar
 
 \(Only if for *Authentication* the option *SAS Token* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Alias name of token used to communicate with Azure Storage.
-
-
 
 </td>
 </tr>
@@ -204,14 +166,10 @@ Alias name of token used to communicate with Azure Storage.
 
 \(Only if for *Authentication* the option *Shared Access Key* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Alias name of key used to communicate with Azure Storage.
-
-
 
 </td>
 </tr>
@@ -220,16 +178,12 @@ Alias name of key used to communicate with Azure Storage.
 
 *Timeout* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum waiting time, in milliseconds, to contact Azure Storage while establishing a connection or performing a read operation \(default value: 60000\).
 
 Setting a timeout is mandatory for both token and key aliases.
-
-
 
 </td>
 </tr>
@@ -246,14 +200,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -261,8 +211,6 @@ Description
 <td valign="top">
 
 *Operation* 
-
-
 
 </td>
 <td valign="top">
@@ -285,14 +233,10 @@ There are the following options.
 
 \(for both operations of get messages and peek messages\)
 
-
-
 </td>
 <td valign="top">
 
 Enter name of the storage account.
-
-
 
 </td>
 </tr>
@@ -303,14 +247,10 @@ Enter name of the storage account.
 
 \(for both operations of get messages and peek messages\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the queue name to retrieve the message\(s\).
-
-
 
 </td>
 </tr>
@@ -321,14 +261,10 @@ Specifies the queue name to retrieve the message\(s\).
 
 \(for both operations of get messages and peek messages\)
 
-
-
 </td>
 <td valign="top">
 
 The number of messages to peek from the queue up to a maximum of 32. If you do not specify the number of messages, only one message is retrieved.
-
-
 
 </td>
 </tr>
@@ -337,14 +273,10 @@ The number of messages to peek from the queue up to a maximum of 32. If you do n
 
 *Consume all messages in single payload* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies that all the messages in the *Max. Number of Messages* are combined into single payload..
-
-
 
 </td>
 </tr>
@@ -355,14 +287,10 @@ Specifies that all the messages in the *Max. Number of Messages* are combined in
 
 \(Only if for *Operation* the option *Get Messages* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Visibility timeout value in seconds, up to a maximum of 120 seconds.
-
-
 
 </td>
 </tr>
@@ -370,8 +298,6 @@ Visibility timeout value in seconds, up to a maximum of 120 seconds.
 <td valign="top">
 
 *Post-Processing Operations* 
-
-
 
 </td>
 <td valign="top">
@@ -405,14 +331,10 @@ There are the following options::
 
 \(Only if for *Post-Processing* the option *Keep Message and Mark as Processed in Idempotent Repository* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Enter the time \(in days\), for which queue name is to be stored in idempotent repository to avoid processing again within the given duration \(default: 90 days\).
-
-
 
 </td>
 </tr>
@@ -423,8 +345,6 @@ Enter the time \(in days\), for which queue name is to be stored in idempotent r
 
 \(Only if for *Post-Processing* the option *Keep Message and Mark as Processed in Idempotent Repository* is selected\)
 
-
-
 </td>
 <td valign="top">
 
@@ -432,16 +352,12 @@ Select this option to raise error in the message processing log if post processi
 
 Using this option, if post-processing fails, the message gets *Failed* status. Otherwise, the message gets status *Successful*. In both cases, the post-processing operation status is stored in message property log.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Request Format* 
-
-
 
 </td>
 <td valign="top">
@@ -464,14 +380,10 @@ The following request formats are given:
 
 *Key* 
 
-
-
 </td>
 <td valign="top">
 
 Select a request parameter.
-
-
 
 </td>
 </tr>
@@ -480,14 +392,10 @@ Select a request parameter.
 
 *Value* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the value of the argument. You can also enter`${header.headername}` or `${property.propertyname}` to dynamically read the value from the message exchange.
-
-
 
 </td>
 </tr>
@@ -495,7 +403,7 @@ Specify the value of the argument. You can also enter`${header.headername}` or `
 
 
 
-Select the *Scheduler* tab and provide values in the fields as follows. The scheduler helps you to download the blobs on regular intervals as per the timer
+Select the *Scheduler* tab and provide values in the fields as follows. The scheduler helps you to download the blobs on regular intervals as per the timer:
 
 **Scheduler**
 
@@ -506,14 +414,10 @@ Select the *Scheduler* tab and provide values in the fields as follows. The sche
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -521,8 +425,6 @@ Description
 <td valign="top">
 
 *Schedule on Day* 
-
-
 
 </td>
 <td valign="top">
@@ -546,8 +448,6 @@ There are the following options:
 <td valign="top">
 
 *Schedule to Recur* 
-
-
 
 </td>
 <td valign="top">
@@ -586,35 +486,25 @@ There are the following options:
 
 Sl No
 
-
-
 </th>
 <th valign="top">
 
 Operation
-
-
 
 </th>
 <th valign="top">
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -623,28 +513,20 @@ Description
 
 1
 
-
-
 </td>
 <td valign="top">
 
 Get messages in queue
-
-
 
 </td>
 <td valign="top">
 
 SAP\_AzureStorage\_DeliveryCount
 
-
-
 </td>
 <td valign="top">
 
 Property
-
-
 
 </td>
 <td valign="top">
@@ -652,8 +534,6 @@ Property
 When a message is retrieved for the first time, its `DequeueCount` property is set to 1.
 
 If it is not deleted and is subsequently retrieved again, the `DequeueCount` property is incremented.
-
-
 
 </td>
 </tr>

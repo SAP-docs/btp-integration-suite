@@ -27,14 +27,10 @@ Select the *General* tab to access the following parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the Splunk channel.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Enter the name of the Splunk channel.
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 Shows *Splunk* as adapter type.
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Shows *Splunk* as adapter type.
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 Shows *HTTPS* as transport protocol.
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ Shows *HTTPS* as transport protocol.
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 Shows *REST* as message protocol.
-
-
 
 </td>
 </tr>
@@ -117,14 +97,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -132,8 +108,6 @@ Description
 <td valign="top">
 
 *Address* 
-
-
 
 </td>
 <td valign="top">
@@ -144,16 +118,12 @@ Example:
 
 `https://host:port`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -190,16 +160,12 @@ You can select one of the following options:
 
 \(only if *Basic Authentication* or *Dynamic* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Name of the *User Credentials* artifact that contains the user name and password.
 
 See: [Deploying a User Credentials Artifact](deploying-a-user-credentials-artifact-6912d63.md)
-
-
 
 </td>
 </tr>
@@ -210,8 +176,6 @@ See: [Deploying a User Credentials Artifact](deploying-a-user-credentials-artifa
 
 \(only if *Splunk Token* or *Dynamic* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -219,16 +183,12 @@ Name of the *Secure Parameter* artifact that contains the Splunk token credentia
 
 See: [Deploying a Secure Parameter Artifact](deploying-a-secure-parameter-artifact-4641d6c.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -244,8 +204,6 @@ The type of proxy that you’re using to connect to the target system.
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -255,14 +213,10 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 
 \(only if *On-Premise* or *Dynamic* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side.
-
-
 
 </td>
 </tr>
@@ -271,14 +225,10 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 
 *Timeout \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the time range, in milliseconds, that the client waits for a response before it times out; default value: `30000`.
-
-
 
 </td>
 </tr>
@@ -295,14 +245,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -310,8 +256,6 @@ Description
 <td valign="top">
 
 *Product Type* 
-
-
 
 </td>
 <td valign="top">
@@ -325,16 +269,12 @@ You can select one of the following product types:
 
 Depending on the chosen product type, you can select different operations.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Operation Details* 
-
-
 
 </td>
 <td valign="top">
@@ -354,8 +294,6 @@ You can select from the following operations:
 
 Which operations and methods are available for each product type, are listed under [Operations and Methods](operations-and-methods-a5ffb3f.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -363,14 +301,10 @@ Which operations and methods are available for each product type, are listed und
 
 *Method* 
 
-
-
 </td>
 <td valign="top">
 
 Which methods are available for each operation depends on the chosen product type. For more information, see [Operations and Methods](operations-and-methods-a5ffb3f.md).
-
-
 
 </td>
 </tr>
@@ -381,14 +315,10 @@ Which methods are available for each operation depends on the chosen product typ
 
 \(only if for *Method* one of the following options is selected: *Delete Data Model*, *Create Data Model*, *Modify Data Model*, or *Get Data Model*\)
 
-
-
 </td>
 <td valign="top">
 
 Name of the model that is subject to the selected operation and method.
-
-
 
 </td>
 </tr>
@@ -399,8 +329,6 @@ Name of the model that is subject to the selected operation and method.
 
 \(only if for *Method* the option *Create Data Model* is selected\)
 
-
-
 </td>
 <td valign="top">
 
@@ -409,8 +337,6 @@ Description of the data model.
 Use JSON format, for example:
 
 `{"description":"demo"}`
-
-
 
 </td>
 </tr>
@@ -436,8 +362,6 @@ Splunk username. It is appended in the endpoint URL.
 Example:
 
 `https://host:port/serviceNS/username`
-
-
 
 </td>
 </tr>
@@ -480,14 +404,10 @@ If you keep indexing your data, all indexed data is stored in index, increasing 
 
 \(only if for *Method* one of the following options is selected: *Remove Input*, *Create Input*, *Get Input*, *Modify Input*\)
 
-
-
 </td>
 <td valign="top">
 
 Name of the input that is subject to the selected operation and method.
-
-
 
 </td>
 </tr>
@@ -495,8 +415,6 @@ Name of the input that is subject to the selected operation and method.
 <td valign="top">
 
 *Response Format* 
-
-
 
 </td>
 <td valign="top">
@@ -521,14 +439,10 @@ Response format. The following options are available:
 
 *Additional Request Parameters* 
 
-
-
 </td>
 <td valign="top">
 
 Choose *Add* and maintain the values of the *Key* and *Value* fields.
-
-
 
 </td>
 </tr>
@@ -536,8 +450,6 @@ Choose *Add* and maintain the values of the *Key* and *Value* fields.
 <td valign="top">
 
 *Key* 
-
-
 
 </td>
 <td valign="top">
@@ -594,16 +506,12 @@ frozenTimePeriodInSecs
 
 host
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Value* 
-
-
 
 </td>
 <td valign="top">
@@ -614,16 +522,12 @@ You can configure this parameter by entering a dynamic expression such as `${pro
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Search Name* 
-
-
 
 </td>
 <td valign="top">
@@ -637,8 +541,6 @@ Rrelevant search name:
 
 If set to `realtime`, search runs over live data. By default, the option `normal` is used.
 
-
-
 </td>
 </tr>
 <tr>
@@ -646,14 +548,10 @@ If set to `realtime`, search runs over live data. By default, the option `normal
 
 *Search* 
 
-
-
 </td>
 <td valign="top">
 
 Search ID number to get results of a particular search.
-
-
 
 </td>
 </tr>
@@ -662,14 +560,10 @@ Search ID number to get results of a particular search.
 
 *Search Query* 
 
-
-
 </td>
 <td valign="top">
 
 Search query for Splunk system.
-
-
 
 </td>
 </tr>
@@ -678,14 +572,10 @@ Search query for Splunk system.
 
 *Search ID* 
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -693,8 +583,6 @@ Search query for Splunk system.
 <td valign="top">
 
 *Execution Mode* 
-
-
 
 </td>
 <td valign="top">
@@ -713,14 +601,10 @@ Search query for Splunk system.
 
 *Owner* 
 
-
-
 </td>
 <td valign="top">
 
 Username of resource owner \(default: resource creator\). This parameter is required for updating any knowledge object ACL properties.
-
-
 
 </td>
 </tr>
@@ -728,8 +612,6 @@ Username of resource owner \(default: resource creator\). This parameter is requ
 <td valign="top">
 
 *Sharing* 
-
-
 
 </td>
 <td valign="top">
@@ -752,14 +634,10 @@ Indicates how the resource is shared. This parameter is required for updating an
 
 *Token* 
 
-
-
 </td>
 <td valign="top">
 
 Token that is to be retrieved from the getinput/createinput operation.
-
-
 
 </td>
 </tr>
@@ -770,8 +648,6 @@ Token that is to be retrieved from the getinput/createinput operation.
 
 \(only if for *Method* one of the following options is selected: *Add Data to Index*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -780,8 +656,6 @@ Specify "event" in JSON format to add data to index.
 Example:
 
 `{"event": "Hello, world!"}`
-
-
 
 </td>
 </tr>
@@ -792,8 +666,6 @@ Example:
 
 \(only if for *Method* one of the following options is selected: *Add Data to TCP Input*, *Add Data to UDP Input*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -802,8 +674,6 @@ Name of port to perform create operation.
 Example:
 
 `443`
-
-
 
 </td>
 </tr>
@@ -814,14 +684,10 @@ Example:
 
 \(only if for *Method* one of the following options is selected: *Enable Global Settings*\)
 
-
-
 </td>
 <td valign="top">
 
 Specify value `0` to disable permission and `1` to enable permission.
-
-
 
 </td>
 </tr>

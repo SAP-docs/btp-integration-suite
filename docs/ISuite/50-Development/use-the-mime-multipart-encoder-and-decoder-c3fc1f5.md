@@ -35,14 +35,10 @@ The Content Modifier *Define context for monitoring purposes* sets the context f
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -51,14 +47,10 @@ Value
 
 context
 
-
-
 </td>
 <td valign="top">
 
 ModelingBasics-MIMEMultipart
-
-
 
 </td>
 </tr>
@@ -67,14 +59,10 @@ ModelingBasics-MIMEMultipart
 
 receiver
 
-
-
 </td>
 <td valign="top">
 
 Encoded
-
-
 
 </td>
 </tr>
@@ -93,14 +81,10 @@ The Content Modifier *Define context for monitoring purposes* sets the context f
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -109,14 +93,10 @@ Value
 
 context
 
-
-
 </td>
 <td valign="top">
 
 ModelingBasics-MIMEMultipart
-
-
 
 </td>
 </tr>
@@ -125,14 +105,10 @@ ModelingBasics-MIMEMultipart
 
 receiver
 
-
-
 </td>
 <td valign="top">
 
 Decoded
-
-
 
 </td>
 </tr>

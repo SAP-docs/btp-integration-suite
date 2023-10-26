@@ -40,15 +40,11 @@ You want to combine related individual messages so that they can be processed in
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -56,15 +52,11 @@ You want to combine related individual messages so that they can be processed in
     <td valign="top">
     
     *Correlation Expression \(XPath\)*
-
-
     
     </td>
     <td valign="top">
     
     XPath expression that identifies an element based on which the incoming messages should be correlated.
-
-
     
     </td>
     </tr>
@@ -72,8 +64,6 @@ You want to combine related individual messages so that they can be processed in
     <td valign="top">
     
     *Incoming Format* 
-
-
     
     </td>
     <td valign="top">
@@ -83,8 +73,6 @@ You want to combine related individual messages so that they can be processed in
     Currently, only `XML (Same Format)` can be selected.
 
     It is important that the incoming messages have the same format.
-
-
     
     </td>
     </tr>
@@ -92,8 +80,6 @@ You want to combine related individual messages so that they can be processed in
     <td valign="top">
     
     *Aggregation Algorithm* 
-
-
     
     </td>
     <td valign="top">
@@ -112,8 +98,6 @@ You want to combine related individual messages so that they can be processed in
 
 
     The *Aggregator* step generates an SAP Process Integration **multi mapping** as specific format. This is important to know because the integration developer typically has to create a mapping from the generated format to the message structure required by the receiver.
-
-
     
     </td>
     </tr>
@@ -123,8 +107,6 @@ You want to combine related individual messages so that they can be processed in
     *Message Sequence Expression \(XPath\)*
 
     \(only if for *Aggregation Algorithm* the option *Combine in Sequence* has been selected\)
-
-
     
     </td>
     <td valign="top">
@@ -132,8 +114,6 @@ You want to combine related individual messages so that they can be processed in
     Enter an XPath expression for that message element based on which a sequence is being defined.
 
     You can use only numbers to define a sequence. Each sequence starts with `1`.
-
-
     
     </td>
     </tr>
@@ -141,8 +121,6 @@ You want to combine related individual messages so that they can be processed in
     <td valign="top">
     
     *Last Message Condition \(XPath\)* 
-
-
     
     </td>
     <td valign="top">
@@ -170,8 +148,6 @@ You want to combine related individual messages so that they can be processed in
     <td valign="top">
     
     *Completion Timeout* 
-
-
     
     </td>
     <td valign="top">
@@ -199,8 +175,6 @@ You want to combine related individual messages so that they can be processed in
     <td valign="top">
     
     *Data Store Name* 
-
-
     
     </td>
     <td valign="top">

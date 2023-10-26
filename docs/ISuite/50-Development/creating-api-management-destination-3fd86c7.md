@@ -46,15 +46,11 @@ Create an instance of API portal, API Management service and fetch the service k
     <th valign="top">
 
     Fields
-
-
     
     </th>
     <th valign="top">
 
     Details
-
-
     
     </th>
     </tr>
@@ -62,8 +58,6 @@ Create an instance of API portal, API Management service and fetch the service k
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
@@ -71,8 +65,6 @@ Create an instance of API portal, API Management service and fetch the service k
     Enter `APIManagement` as the destination name.
 
     Please note that this value is case-sensitive.
-
-
     
     </td>
     </tr>
@@ -80,15 +72,11 @@ Create an instance of API portal, API Management service and fetch the service k
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     Enter `HTTP` as the supported type.
-
-
     
     </td>
     </tr>
@@ -96,15 +84,11 @@ Create an instance of API portal, API Management service and fetch the service k
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     Enter a brief description stating the purpose of creating a new destination in the *Description* field.
-
-
     
     </td>
     </tr>
@@ -112,15 +96,11 @@ Create an instance of API portal, API Management service and fetch the service k
     <td valign="top">
     
     URL
-
-
     
     </td>
     <td valign="top">
     
     Provide the URL from the service key details and append `/api/1.0/transportmodule/Transport` to it.
-
-
     
     </td>
     </tr>
@@ -128,15 +108,11 @@ Create an instance of API portal, API Management service and fetch the service k
     <td valign="top">
     
     Proxy Type
-
-
     
     </td>
     <td valign="top">
     
     Internet
-
-
     
     </td>
     </tr>
@@ -144,15 +120,11 @@ Create an instance of API portal, API Management service and fetch the service k
     <td valign="top">
     
     Authentication
-
-
     
     </td>
     <td valign="top">
     
     Select the authentication type as `OAuth2ClientCredentials`.
-
-
     
     </td>
     </tr>
@@ -160,15 +132,11 @@ Create an instance of API portal, API Management service and fetch the service k
     <td valign="top">
     
     Client ID
-
-
     
     </td>
     <td valign="top">
     
     Provide the client ID from the service key details.
-
-
     
     </td>
     </tr>
@@ -176,15 +144,11 @@ Create an instance of API portal, API Management service and fetch the service k
     <td valign="top">
     
     Client Secret
-
-
     
     </td>
     <td valign="top">
     
     Enter the client secret.
-
-
     
     </td>
     </tr>
@@ -192,15 +156,11 @@ Create an instance of API portal, API Management service and fetch the service k
     <td valign="top">
     
     Token Service URL
-
-
     
     </td>
     <td valign="top">
     
     Provide the URL from the service key details.
-
-
     
     </td>
     </tr>

@@ -17,14 +17,10 @@ To create a ticket for troubleshooting purposes, you have to choose a component 
 
 Issues
 
-
-
 </th>
 <th valign="top">
 
 Component
-
-
 
 </th>
 </tr>
@@ -39,8 +35,6 @@ Software lifecycle:
 
 -   Delete/undeploy the software solution
 
-> ### Note:  
-> Edge Integration Cell is deployed **on-premise**.
 
 
 
@@ -49,8 +43,6 @@ Software lifecycle:
 
 BC-CP-IS-EDG-DPL
 
-
-
 </td>
 </tr>
 <tr>
@@ -58,14 +50,10 @@ BC-CP-IS-EDG-DPL
 
 System Monitoring
 
-
-
 </td>
 <td valign="top">
 
 BC-CP-IS-EDG-SMN
-
-
 
 </td>
 </tr>
@@ -76,14 +64,10 @@ Backing Services
 
 The component covers OEM Software such as Solace, Postgres, and Redis.
 
-
-
 </td>
 <td valign="top">
 
 BC-CP-IS-EDG-BCS
-
-
 
 </td>
 </tr>
@@ -92,14 +76,10 @@ BC-CP-IS-EDG-BCS
 
 Provisioning of Edge Integration Cell.
 
-
-
 </td>
 <td valign="top">
 
 LOD-HCI-PI-PRV
-
-
 
 </td>
 </tr>
@@ -117,8 +97,6 @@ LOD-HCI-PI-PRV
 
 LOD-HCI-PI-OP-NM
 
-
-
 </td>
 </tr>
 <tr>
@@ -126,14 +104,10 @@ LOD-HCI-PI-OP-NM
 
 Issues with application monitoring.
 
-
-
 </td>
 <td valign="top">
 
 LOD-HCI-PI-OP-SRV
-
-
 
 </td>
 </tr>
@@ -144,14 +118,10 @@ Issues with the following adapters:
 
 SOAP, SAP RM, AMQP, Kafka, JMS, Idoc, XI, SFTP/FTP, Mail, Elster, Data Store Sender Adapter.
 
-
-
 </td>
 <td valign="top">
 
 LOD-HCI-PI-CON-SOAP
-
-
 
 </td>
 </tr>
@@ -162,14 +132,10 @@ Issues with the following adapters:
 
 SuccessFactors SOAP and REST, MDI Adapter.
 
-
-
 </td>
 <td valign="top">
 
 LOD-HCI-PI-GB
-
-
 
 </td>
 </tr>
@@ -180,14 +146,10 @@ Issues with the following adapters:
 
 OData, SuccessFactors OData Adapter variants.
 
-
-
 </td>
 <td valign="top">
 
 LOD-HCI-PI-CON-OD
-
-
 
 </td>
 </tr>
@@ -196,14 +158,10 @@ LOD-HCI-PI-CON-OD
 
 Issues with the HTTP Adapter
 
-
-
 </td>
 <td valign="top">
 
 LOD-HCI-PI-CON-HTTP
-
-
 
 </td>
 </tr>
@@ -214,14 +172,10 @@ Issues with the following adapters:
 
 Twitter, Facebook, Process Direct, Open Connectors.
 
-
-
 </td>
 <td valign="top">
 
 LOD-HCI-PI-CON-RFC
-
-
 
 </td>
 </tr>
@@ -230,14 +184,10 @@ LOD-HCI-PI-CON-RFC
 
 Issues with the Ariba adapter.
 
-
-
 </td>
 <td valign="top">
 
 LOD-HCI-PI-RT-B2B
-
-
 
 </td>
 </tr>
@@ -246,14 +196,10 @@ LOD-HCI-PI-RT-B2B
 
 Handling API Artifact runtime relevant issues on Edge Integration Cell 
 
-
-
 </td>
 <td valign="top">
 
 OPU-API-OD-PE
-
-
 
 </td>
 </tr>

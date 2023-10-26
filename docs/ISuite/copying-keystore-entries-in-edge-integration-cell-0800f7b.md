@@ -34,16 +34,12 @@ Fill in the following information:
 
 *Source Alias*
 
-
-
 </td>
 <td valign="top">
 
 Source alias ready to be copied.
 
 This field is pre-filled and not editable. If you want to change the source alias, cancel the current process and select a different artifact.
-
-
 
 </td>
 </tr>
@@ -52,16 +48,12 @@ This field is pre-filled and not editable. If you want to change the source alia
 
 *Target Alias*
 
-
-
 </td>
 <td valign="top">
 
 Enter a name for the copied artifact.
 
 This field is pre-filled with the information from the source alias.
-
-
 
 </td>
 </tr>
@@ -70,16 +62,12 @@ This field is pre-filled with the information from the source alias.
 
 *Source Keystore*
 
-
-
 </td>
 <td valign="top">
 
 Source Keystore from where you copy the existing artifact.
 
 This field is pre-filled and not editable.
-
-
 
 </td>
 </tr>
@@ -88,14 +76,10 @@ This field is pre-filled and not editable.
 
 *Target Keystore*
 
-
-
 </td>
 <td valign="top">
 
 Select an existing keystore you want the artifact to copy in from the drop-down.
-
-
 
 </td>
 </tr>
@@ -104,16 +88,12 @@ Select an existing keystore you want the artifact to copy in from the drop-down.
 
 *Overwrite Existing Entry*
 
-
-
 </td>
 <td valign="top">
 
 Check to allow the overwriting of existing entries.
 
 If you don’t select this option while choosing a name that already exist in your target keystore, an error message is thrown.
-
-
 
 </td>
 </tr>

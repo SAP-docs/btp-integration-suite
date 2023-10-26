@@ -27,14 +27,10 @@ Perform the tasks mentioned in the `User Actions` worksheet within the `apim-tct
 
 Cloned Entity
 
-
-
 </th>
 <th valign="top">
 
 User Action
-
-
 
 </th>
 </tr>
@@ -42,8 +38,6 @@ User Action
 <td valign="top">
 
 Certificates
-
-
 
 </td>
 <td valign="top">
@@ -73,8 +67,6 @@ Perform the following steps:
 
 Key Value Maps
 
-
-
 </td>
 <td valign="top">
 
@@ -92,8 +84,6 @@ Fill in the values for the keys of the encrypted Key Value Maps.
 <td valign="top">
 
 API Provider Credentials
-
-
 
 </td>
 <td valign="top">
@@ -120,8 +110,6 @@ Update open connector credentials:
 <td valign="top">
 
 Proxy Scoped Key Value Map
-
-
 
 </td>
 <td valign="top">
@@ -243,14 +231,10 @@ This section explains the various scenarios for a switch-over:
 
 Scenario
 
-
-
 </th>
 <th valign="top">
 
 Actions Required for Switchover
-
-
 
 </th>
 </tr>
@@ -259,14 +243,10 @@ Actions Required for Switchover
 
 If you want to retain the same proxy URL as that of your source system
 
-
-
 </td>
 <td valign="top">
 
 If the proxy URL of your source system is on a domain managed by SAP
-
-
 
 </td>
 <td valign="top">
@@ -275,16 +255,12 @@ There’s no option to retain the old proxy URL.
 
 You must adopt the new proxy URL that is generated for your target system.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 If the proxy URL of your source system is on a custom domain
-
-
 
 </td>
 <td valign="top">
@@ -304,14 +280,10 @@ If the proxy URL of your source system is on a custom domain
 
 If you have multiple virtual hosts configured on your source system subscription, and want to retain those on your target system
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">

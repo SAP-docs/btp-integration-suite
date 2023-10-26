@@ -30,15 +30,11 @@ To make sure that the right private key is used for decryption, the encrypted me
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -46,15 +42,11 @@ To make sure that the right private key is used for decryption, the encrypted me
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     Enter a name for the decryptor.
-
-
     
     </td>
     </tr>
@@ -68,15 +60,11 @@ To make sure that the right private key is used for decryption, the encrypted me
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -84,8 +72,6 @@ To make sure that the right private key is used for decryption, the encrypted me
     <td valign="top">
     
     *Signatures* 
-
-
     
     </td>
     <td valign="top">
@@ -107,8 +93,6 @@ To make sure that the right private key is used for decryption, the encrypted me
     *Signer User ID of Key\(s\) from Public Keyring*
 
     \(only if for *Signatures* the option *Optional* or *Required* has been selected\)
-
-
     
     </td>
     <td valign="top">

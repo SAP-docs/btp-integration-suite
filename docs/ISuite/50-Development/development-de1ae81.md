@@ -19,21 +19,15 @@ Get an overview of roles, working environment, and tasks involved in managing in
 
 Choose…
 
-
-
 </th>
 <th valign="top">
 
 To learn how to…
 
-
-
 </th>
 <th valign="top">
 
 For more information, see...
-
-
 
 </th>
 </tr>
@@ -42,67 +36,49 @@ For more information, see...
 
 *Discover* \> *Integrations* 
 
-
-
 </td>
 <td valign="top">
 
 Consume prepackaged integration scenarios.
-
-
 
 </td>
 <td valign="top">
 
 [Working with Prepackaged Integration Content](working-with-prepackaged-integration-content-bd2ed3e.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Design* \> *Integrations* 
-
-
+*Design* \> *Integrations and APIs* 
 
 </td>
 <td valign="top">
 
 Build integration scenarios.
 
-
-
 </td>
 <td valign="top">
 
 [Integration Development](integration-development-b18936e.md)
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Monitor* \> ** 
-
-
+*Monitor* \> *Integrations and APIs* 
 
 </td>
 <td valign="top">
 
 Operate and observe artifacts.
 
-
-
 </td>
 <td valign="top">
 
 [Monitor Integrations](monitor-integrations-05446d0.md)
-
-
 
 </td>
 </tr>
@@ -111,21 +87,15 @@ Operate and observe artifacts.
 
 *Settings* \> *Integrations* 
 
-
-
 </td>
 <td valign="top">
 
 Manage your tenant.
 
-
-
 </td>
 <td valign="top">
 
 [Configuring Integration Settings](IntegrationSettings/configuring-integration-settings-98091f7.md)
-
-
 
 </td>
 </tr>
@@ -146,21 +116,15 @@ Learn the process of designing, publishing, and analyzing APIs in a secure and s
 
 Choose…
 
-
-
 </th>
 <th valign="top">
 
 To learn how to…
 
-
-
 </th>
 <th valign="top">
 
 For more information, see...
-
-
 
 </th>
 </tr>
@@ -169,50 +133,32 @@ For more information, see...
 
 *Discover* \> *APIs* 
 
-
-
 </td>
 <td valign="top">
 
 Explore and consume API packages.
-
-
 
 </td>
 <td valign="top">
 
 [Discover API Packages](discover-api-packages-5cb804c.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Design* \> *APIs*
-
-*Design* \> *Graph*
-
-
+*Design* \> *Graph* 
 
 </td>
 <td valign="top">
-
-Design and develop API artifacts.
 
 Expose all your business data in the form of a semantically connected business data graph.
 
-
-
 </td>
 <td valign="top">
 
-[API Development](api-development-adcbc07.md)
-
-[Graph](https://help.sap.com/docs/graph)
-
-
+[Graph](https://help.sap.com/docs/graph) 
 
 </td>
 </tr>
@@ -221,21 +167,15 @@ Expose all your business data in the form of a semantically connected business d
 
 *Test* \> *APIs* 
 
-
-
 </td>
 <td valign="top">
 
 Test and debug the runtime behaviour of APIs.
 
-
-
 </td>
 <td valign="top">
 
 [Test APIs](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of APIs.") :arrow_upper_right:
-
-
 
 </td>
 </tr>
@@ -244,21 +184,36 @@ Test and debug the runtime behaviour of APIs.
 
 *Configure* \> *APIs* 
 
-
-
 </td>
 <td valign="top">
+
+Design and develop API proxies.
 
 Create and manage API providers, key value pairs, and certificates.
 
+</td>
+<td valign="top">
 
+[API Development](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/adcbc07b031b4ac285b22867a1216306.html "SAP Integration Suite provides one experience for managing and monitoring all APIs across various data platforms and is enriched with real-time analytics.") :arrow_upper_right:
+
+[API Providers](api-providers-42e13b2.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Engage* 
 
 </td>
 <td valign="top">
 
-[API Providers](api-providers-42e13b2.md)
+Create products and view application details as they’re the key components used to manage and expose APIs to the developers.
 
+</td>
+<td valign="top">
 
+[Engage](engage-1036845.md)
 
 </td>
 </tr>
@@ -267,21 +222,15 @@ Create and manage API providers, key value pairs, and certificates.
 
 *Monitor* \> *Analyze APIs* 
 
-
-
 </td>
 <td valign="top">
 
 Analyze API usage and performance.
 
-
-
 </td>
 <td valign="top">
 
 [Analyze APIs](analyze-apis-7712c61.md)
-
-
 
 </td>
 </tr>
@@ -290,21 +239,15 @@ Analyze API usage and performance.
 
 *Monetize* 
 
-
-
 </td>
 <td valign="top">
 
 Generate revenue from APIs.
 
-
-
 </td>
 <td valign="top">
 
 [Monetize APIs](monetize-apis-fcdc89b.md)
-
-
 
 </td>
 </tr>
@@ -313,21 +256,15 @@ Generate revenue from APIs.
 
 *Settings* \> *API* 
 
-
-
 </td>
 <td valign="top">
 
 Set up API Management and test API Business Hub Enterprise connections.
 
-
-
 </td>
 <td valign="top">
 
 [Setting Up API Management Capability](setting-up-api-management-capability-f34e86c.md)
-
-
 
 </td>
 </tr>
@@ -348,21 +285,15 @@ Learn the basic concepts of a business to business \(B2B\) scenario. Get to know
 
 Choose…
 
-
-
 </th>
 <th valign="top">
 
 To learn how to…
 
-
-
 </th>
 <th valign="top">
 
 For more information, see...
-
-
 
 </th>
 </tr>
@@ -371,21 +302,15 @@ For more information, see...
 
 *Discover* \> *Integrations* 
 
-
-
 </td>
 <td valign="top">
 
 Consume prepackaged integration packages to test end-to-end B2B scenarios.
 
-
-
 </td>
 <td valign="top">
 
 [Integration Flow Configuration](integration-flow-configuration-0ff6229.md)
-
-
 
 </td>
 </tr>
@@ -394,21 +319,15 @@ Consume prepackaged integration packages to test end-to-end B2B scenarios.
 
 *Design* \> *B2B Scenarios* 
 
-
-
 </td>
 <td valign="top">
 
 Design and build B2B scenarios.
 
-
-
 </td>
 <td valign="top">
 
 [B2B Scenarios](b2b-scenarios-c55eb4d.md)
-
-
 
 </td>
 </tr>
@@ -417,21 +336,15 @@ Design and build B2B scenarios.
 
 *Monitor* \> *B2B Scenarios* 
 
-
-
 </td>
 <td valign="top">
 
 Observe the status of your B2B interchanges.
 
-
-
 </td>
 <td valign="top">
 
 [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
-
-
 
 </td>
 </tr>
@@ -452,21 +365,15 @@ Get information on how to use Integration Advisor. This includes information on 
 
 Choose…
 
-
-
 </th>
 <th valign="top">
 
 To learn how to…
 
-
-
 </th>
 <th valign="top">
 
 For more information, see...
-
-
 
 </th>
 </tr>
@@ -475,21 +382,15 @@ For more information, see...
 
 *Discover* \> *Type Systems* 
 
-
-
 </td>
 <td valign="top">
 
 Discover the collection of B2B/A2A/B2G type systems.
 
-
-
 </td>
 <td valign="top">
 
 [Library of Type Systems](library-of-type-systems-740136b.md)
-
-
 
 </td>
 </tr>
@@ -498,21 +399,15 @@ Discover the collection of B2B/A2A/B2G type systems.
 
 *Design* \> *Custom Type Systems* 
 
-
-
 </td>
 <td valign="top">
 
 Create and upload your custom messages using the custom type system.
 
-
-
 </td>
 <td valign="top">
 
 [Custom Type Systems](custom-type-systems-884bb25.md)
-
-
 
 </td>
 </tr>
@@ -521,21 +416,15 @@ Create and upload your custom messages using the custom type system.
 
 *Design* \> *MIGs* 
 
-
-
 </td>
 <td valign="top">
 
 Create and maintain Message Implementation Guidelines\(MIGs\).
 
-
-
 </td>
 <td valign="top">
 
 [Message Implementation Guidelines \(MIGs\)](message-implementation-guidelines-migs-f9f2bab.md)
-
-
 
 </td>
 </tr>
@@ -544,21 +433,15 @@ Create and maintain Message Implementation Guidelines\(MIGs\).
 
 *Design* \> *MAGs* 
 
-
-
 </td>
 <td valign="top">
 
 Create and maintain Mapping Guidelines\(MAGs\).
 
-
-
 </td>
 <td valign="top">
 
 [Mapping Guidelines \(MAGs\)](mapping-guidelines-mags-42124f4.md)
-
-
 
 </td>
 </tr>
@@ -567,21 +450,15 @@ Create and maintain Mapping Guidelines\(MAGs\).
 
 *Settings* \> *MIGs and MAGs* 
 
-
-
 </td>
 <td valign="top">
 
 Documentation template for MIGs and MAGs.
 
-
-
 </td>
 <td valign="top">
 
 [Documentation Template for MIGs and MAGs](documentation-template-for-migs-and-mags-4c442af.md)
-
-
 
 </td>
 </tr>

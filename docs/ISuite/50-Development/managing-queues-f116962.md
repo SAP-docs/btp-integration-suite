@@ -23,14 +23,10 @@ All message queues that are active for the tenant are displayed in a table. For 
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -39,14 +35,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Name of JMS queue.
-
-
 
 </td>
 </tr>
@@ -55,14 +47,10 @@ Name of JMS queue.
 
 *Entries* 
 
-
-
 </td>
 <td valign="top">
 
 Number of messages stored in queue.
-
-
 
 </td>
 </tr>
@@ -89,14 +77,10 @@ For a dedicated queue, choose *Actions* \(<span class="SAP-icons"></span>\) t
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -104,8 +88,6 @@ Description
 <td valign="top">
 
 *Retry*
-
-
 
 </td>
 <td valign="top">
@@ -123,8 +105,6 @@ Triggers a retry of all messages in the selected queue.
 <td valign="top">
 
 *Status*
-
-
 
 </td>
 <td valign="top">
@@ -172,16 +152,12 @@ This screen provides the following functions:
 
 *Configure Size*
 
-
-
 </td>
 <td valign="top">
 
 Change the maximum size of the sub queues.
 
 For more information and examples how to configure queue sizes, check out the SAP Community blog [Cloud Integration – JMS Resource and Size Limits](https://blogs.sap.com/2017/10/04/cloud-integration-jms-resource-and-size-limits-in-cpi-enterprise-edition/).
-
-
 
 </td>
 </tr>
@@ -190,8 +166,6 @@ For more information and examples how to configure queue sizes, check out the SA
 
 *Where-Used*
 
-
-
 </td>
 <td valign="top">
 
@@ -199,16 +173,12 @@ Displays the integration flows in which a queue is used, and specifies whether t
 
 During the operation of your scenarios, you may find that messages are piling up in one queue, and you want to get more details so that you can analyze why the messages aren't being processed.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Move*
-
-
 
 </td>
 <td valign="top">
@@ -228,8 +198,6 @@ Use to manually trigger the process of moving all messages from the source queue
 <td valign="top">
 
 *Delete*
-
-
 
 </td>
 <td valign="top">

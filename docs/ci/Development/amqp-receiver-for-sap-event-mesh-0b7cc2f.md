@@ -43,14 +43,10 @@ The following values are displayed in the *General* tab after a channel has been
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -59,14 +55,10 @@ Description
 
 *Name/Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 AMQP
-
-
 
 </td>
 </tr>
@@ -75,16 +67,12 @@ AMQP
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 The protocol that the message broker supports:
 
 *WebSocket*
-
-
 
 </td>
 </tr>
@@ -93,14 +81,10 @@ The protocol that the message broker supports:
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 *AMQP 1.0* 
-
-
 
 </td>
 </tr>
@@ -117,14 +101,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -133,14 +113,10 @@ Description
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the hostname of the message broker.
-
-
 
 </td>
 </tr>
@@ -149,8 +125,6 @@ Specify the hostname of the message broker.
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
@@ -158,16 +132,12 @@ Specify the port of the message broker.
 
 Enter `443`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -180,16 +150,12 @@ Select *On-Premise* if you’re connecting to an on-premise message broker.
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Path* 
-
-
 
 </td>
 <td valign="top">
@@ -198,8 +164,6 @@ Specify the access path of the message broker.
 
 Enter `/protocols/amqp10ws`.
 
-
-
 </td>
 </tr>
 <tr>
@@ -207,14 +171,10 @@ Enter `/protocols/amqp10ws`.
 
 *Connect with TLS* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option to ensure that *TLS* is used for the connection.
-
-
 
 </td>
 </tr>
@@ -223,14 +183,10 @@ Select this option to ensure that *TLS* is used for the connection.
 
 *Location ID* \(only if *On-Premise* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side.
-
-
 
 </td>
 </tr>
@@ -238,8 +194,6 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -260,14 +214,10 @@ Select *OAuth2 Client Credentials*.
 
 *Credential Name* \(only if *SASL* or *OAuth2 Client Credentials* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the *OAuth2 Client Credentials* artifact.
-
-
 
 </td>
 </tr>
@@ -284,14 +234,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -299,8 +245,6 @@ Description
 <td valign="top">
 
 *Destination Type* 
-
-
 
 </td>
 <td valign="top">
@@ -311,16 +255,12 @@ You can select *Topic* or *Queue*.
 
 Both options are supported by SAP Event Mesh.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Destination Name* 
-
-
 
 </td>
 <td valign="top">
@@ -333,8 +273,6 @@ When you've selected *Topic* as *Destination Type*, specify the topic name as: `
 
 This value can be defined dynamically by using the following expressions: `${header.queueabc}` or `${property.queueabc}`.
 
-
-
 </td>
 </tr>
 <tr>
@@ -342,14 +280,10 @@ This value can be defined dynamically by using the following expressions: `${hea
 
 *Expiration Period \(in s\)* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the Time to Live \(TTL\) for the message. If nothing is specified, the setting for the queue or topic subscription in the message broker applies.
-
-
 
 </td>
 </tr>
@@ -357,8 +291,6 @@ Specify the Time to Live \(TTL\) for the message. If nothing is specified, the s
 <td valign="top">
 
 *Delivery* 
-
-
 
 </td>
 <td valign="top">
@@ -378,8 +310,6 @@ Specify whether the message broker has to make sure that the message is not lost
 <td valign="top">
 
 *Message Type* 
-
-
 
 </td>
 <td valign="top">
@@ -406,8 +336,6 @@ Define the message type to be used for sending the message to the message broker
 <td valign="top">
 
 *Header Format Handling* 
-
-
 
 </td>
 <td valign="top">

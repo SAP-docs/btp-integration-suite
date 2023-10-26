@@ -8,7 +8,7 @@ When you edit an integration package or an artifact, it is locked and cannot be 
 
 ## Unlocking Packages or Artifacts Locked by You
 
-1.  Choose *Design* \> *Integrations*, and select the locked integration package or artifact.
+1.  Choose *Design* \> *Integrations and APIs*, and select the locked integration package or artifact.
 2.  Choose *Edit*.
 3.  Select *Yes* when you are prompted to close the previous session.
 

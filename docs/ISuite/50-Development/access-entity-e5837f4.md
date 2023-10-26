@@ -74,14 +74,10 @@ An example payload for the policy is as follows:
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -90,8 +86,6 @@ An example payload for the policy is as follows:
 
 EntityType \(Mandatory\)
 
-
-
 </td>
 <td valign="top">
 
@@ -99,16 +93,12 @@ The element indicates the type of entity to be retrieved from the data store. Th
 
 Syntax: `<EntityType value="entity_type"/>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 EntityIdentifier \(Mandatory\)
-
-
 
 </td>
 <td valign="top">
@@ -141,8 +131,6 @@ Syxtax: `<EntityIdentifier ref="value_variable" type="identifier_type"/>`
 <td valign="top">
 
 SecondaryIdentifier \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -184,21 +172,15 @@ The following table illustrates the values supported for `Entity Type` elements:
 
 EntityType Value
 
-
-
 </th>
 <th valign="top">
 
 EntityIdentifier Types
 
-
-
 </th>
 <th valign="top">
 
 SecondaryIdentifier Types
-
-
 
 </th>
 </tr>
@@ -207,21 +189,15 @@ SecondaryIdentifier Types
 
 apiproduct
 
-
-
 </td>
 <td valign="top">
 
 appid
 
-
-
 </td>
 <td valign="top">
 
 apiresource
-
-
 
 </td>
 </tr>
@@ -235,8 +211,6 @@ apiresource
 
 apiproductname
 
-
-
 </td>
 <td valign="top">
 
@@ -254,8 +228,6 @@ apiproductname
 
 appname
 
-
-
 </td>
 <td valign="top">
 
@@ -266,8 +238,6 @@ developeremail
 developerid
 
 companyname
-
-
 
 </td>
 </tr>
@@ -281,14 +251,10 @@ companyname
 
 consumerkey
 
-
-
 </td>
 <td valign="top">
 
 apiresource
-
-
 
 </td>
 </tr>
@@ -297,14 +263,10 @@ apiresource
 
 app
 
-
-
 </td>
 <td valign="top">
 
 appid
-
-
 
 </td>
 <td valign="top">
@@ -323,8 +285,6 @@ appid
 
 appname
 
-
-
 </td>
 <td valign="top">
 
@@ -333,8 +293,6 @@ developeremail
 developerid
 
 companyname
-
-
 
 </td>
 </tr>
@@ -348,8 +306,6 @@ companyname
 
 consumerkey
 
-
-
 </td>
 <td valign="top">
 
@@ -362,14 +318,10 @@ consumerkey
 
 authorizationcode
 
-
-
 </td>
 <td valign="top">
 
 authorizationcode
-
-
 
 </td>
 <td valign="top">
@@ -382,8 +334,6 @@ authorizationcode
 <td valign="top">
 
 company
-
-
 
 </td>
 <td valign="top">
@@ -394,14 +344,10 @@ company
 
 consumerkey
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -410,21 +356,15 @@ consumerkey
 
 companydeveloper
 
-
-
 </td>
 <td valign="top">
 
 companyname
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -433,14 +373,10 @@ companyname
 
 consumerkey
 
-
-
 </td>
 <td valign="top">
 
 consumerkey
-
-
 
 </td>
 <td valign="top">
@@ -454,14 +390,10 @@ consumerkey
 
 consumerkey\_scope
 
-
-
 </td>
 <td valign="top">
 
 consumerkey
-
-
 
 </td>
 <td valign="top">
@@ -475,14 +407,10 @@ consumerkey
 
 developer
 
-
-
 </td>
 <td valign="top">
 
 appid
-
-
 
 </td>
 <td valign="top">
@@ -500,8 +428,6 @@ appid
 <td valign="top">
 
 consumerkey
-
-
 
 </td>
 <td valign="top">
@@ -520,8 +446,6 @@ consumerkey
 
 developeremail
 
-
-
 </td>
 <td valign="top">
 
@@ -539,8 +463,6 @@ developeremail
 
 developerid
 
-
-
 </td>
 <td valign="top">
 
@@ -553,22 +475,16 @@ developerid
 
 requesttoken
 
-
-
 </td>
 <td valign="top">
 
 requesttoken
-
-
 
 </td>
 <td valign="top">
 
 consumerkey
 
-
-
 </td>
 </tr>
 <tr>
@@ -576,14 +492,10 @@ consumerkey
 
 verifier
 
-
-
 </td>
 <td valign="top">
 
 verifier
-
-
 
 </td>
 <td valign="top">

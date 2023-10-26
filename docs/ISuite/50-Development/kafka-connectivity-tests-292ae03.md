@@ -15,14 +15,10 @@ To perform the Kafka connectivity test, you need to specify the following settin
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Description
 
 *Host*
 
-
-
 </td>
 <td valign="top">
 
 Enter the host name of the messaging server.
-
-
 
 </td>
 </tr>
@@ -47,14 +39,10 @@ Enter the host name of the messaging server.
 
 *Port*
 
-
-
 </td>
 <td valign="top">
 
 Enter the port name of the messaging server.
-
-
 
 </td>
 </tr>
@@ -63,8 +51,6 @@ Enter the port name of the messaging server.
 
 *Time out \(in ms\)*
 
-
-
 </td>
 <td valign="top">
 
@@ -72,16 +58,12 @@ Specify the maximum amount of time the client waits for a response from the kafk
 
 Default value is: `10000 ms`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -105,8 +87,6 @@ Select the type of authentication for connecting to the broker. SASL is selected
 
 \(only if *SASL* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -127,14 +107,10 @@ Select the SASL mechanism:
 
 \(only if *SASL* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Select this option to switch between *PLAIN* and *SCRAM-SHA-256*.
-
-
 
 </td>
 </tr>
@@ -145,14 +121,10 @@ Select this option to switch between *PLAIN* and *SCRAM-SHA-256*.
 
 \(only if *SASL* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Enter the credential name of the username-password pair specified during the deployment of the user credential on the tenant.
-
-
 
 </td>
 </tr>
@@ -163,14 +135,10 @@ Enter the credential name of the username-password pair specified during the dep
 
 \(only if *Client Certificate* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Enter the private key alias.
-
-
 
 </td>
 </tr>

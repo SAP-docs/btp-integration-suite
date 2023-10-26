@@ -25,28 +25,20 @@ Personas cover the different tasks associated with an integration project. To as
 
 Persona
 
-
-
 </th>
 <th valign="top">
 
 Authorization Group \(Neo\)
-
-
 
 </th>
 <th valign="top">
 
 Role Collection \(Cloud Foundry\)
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -55,21 +47,15 @@ Description
 
 Business expert
 
-
-
 </td>
 <td valign="top">
 
 AuthGroup.BusinessExpert
 
-
-
 </td>
 <td valign="top">
 
 PI\_Business\_Expert
-
-
 
 </td>
 <td valign="top">
@@ -92,21 +78,15 @@ This includes tasks like:
 
 Administrator
 
-
-
 </td>
 <td valign="top">
 
 AuthGroup.Administrator
 
-
-
 </td>
 <td valign="top">
 
 PI\_Administrator
-
-
 
 </td>
 <td valign="top">
@@ -133,21 +113,15 @@ This includes tasks like:
 
 Integration developer
 
-
-
 </td>
 <td valign="top">
 
 AuthGroup.IntegrationDeveloper
 
-
-
 </td>
 <td valign="top">
 
 PI\_Integration\_Developer
-
-
 
 </td>
 <td valign="top">
@@ -172,21 +146,15 @@ This includes tasks like:
 
 Read-only persona
 
-
-
 </td>
 <td valign="top">
 
 AuthGroup.ReadOnly
 
-
-
 </td>
 <td valign="top">
 
 PI\_Read\_Only
-
-
 
 </td>
 <td valign="top">
@@ -195,8 +163,6 @@ Enables you to connect to a tenant and to monitor messages.
 
 This authorization group enables you to access \(read-only\) artifacts in the Monotoring area, as well as to download integration flow artifacts and WSDL.
 
-
-
 </td>
 </tr>
 <tr>
@@ -204,21 +170,15 @@ This authorization group enables you to access \(read-only\) artifacts in the Mo
 
 System developer
 
-
-
 </td>
 <td valign="top">
 
 AuthGroup.SystemDeveloper
 
-
-
 </td>
 <td valign="top">
 
 n.a.
-
-
 
 </td>
 <td valign="top">
@@ -248,14 +208,10 @@ This authorization group enables you to access \(read-only\) the Data Store view
 
 Partner Directory configurator
 
-
-
 </td>
 <td valign="top">
 
 AuthGroup.TenantPartnerDirectoryConfigurator
-
-
 
 </td>
 <td valign="top">
@@ -264,14 +220,10 @@ There is no predefined role collection for the Partner Directory configurator.
 
 You need to assign the role template `AuthGroup_TenantPartnerDirectoryConfigurator` to the service instance for the related API client.
 
-
-
 </td>
 <td valign="top">
 
 Enables the Partner Directory administrator to read and write Partner Directory content.
-
-
 
 </td>
 </tr>
@@ -306,14 +258,10 @@ In order to enable a sender system to process messages on Cloud Integration Usin
 > 
 > Option
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Summary of Steps
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -322,8 +270,6 @@ In order to enable a sender system to process messages on Cloud Integration Usin
 > 
 > Basic authentication of a user registered at an identity provider \(IdP\)
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
@@ -331,16 +277,12 @@ In order to enable a sender system to process messages on Cloud Integration Usin
 > 
 > See: [Basic Authentication of IdP User for Integration Flow Processing](../40-RemoteSystems/basic-authentication-of-idp-user-for-integration-flow-processing-5d46e56.md)
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
 > <td valign="top">
 > 
 > Authentication with an OAuth client \(service instance\)
-> 
-> 
 > 
 > </td>
 > <td valign="top">
@@ -357,12 +299,9 @@ In order to enable a sender system to process messages on Cloud Integration Usin
 > 
 > -   [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 > 
-> 
-> [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
-> 
-> [Client Certificate Authentication for Integration Flow Processing](../40-RemoteSystems/client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
-> 
-> [OAuth with Client Credentials Grant for Integration Flow Processing](../40-RemoteSystems/oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md)
+> -   [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
+> -   [Client Certificate Authentication for Integration Flow Processing](../40-RemoteSystems/client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
+> -   [OAuth with Client Credentials Grant for Integration Flow Processing](../40-RemoteSystems/oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md)
 > 
 > 
 > 

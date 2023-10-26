@@ -49,14 +49,10 @@ Following table lists the elements and attributes that you can configure on this
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -64,8 +60,6 @@ Following table lists the elements and attributes that you can configure on this
 <td valign="top">
 
 Source \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -76,16 +70,12 @@ If you have not defined the source, then it is treated as message, resolving to 
 
 If the source variable cannot be resolved, or resolves to a non-message type, the policy throws an error.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OutputVariable
-
-
 
 </td>
 <td valign="top">
@@ -106,8 +96,6 @@ If OutputVariable is not specified, then the source variable is treated as Outpu
 
 InvalidCharsReplacement
 
-
-
 </td>
 <td valign="top">
 
@@ -125,16 +113,12 @@ Converts this JSON object:
 
 to this XML structure: `<First_Name>Adam<First_Name>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TextNodeName
-
-
 
 </td>
 <td valign="top">
@@ -174,8 +158,6 @@ If TextNodeName is not specified, the XML is generated, using the default settin
 
 NullValue
 
-
-
 </td>
 <td valign="top">
 
@@ -189,16 +171,12 @@ to the following XML element: `<person></person>`
 
 Where no value \(or a value other than NULL\_VALUE\) is specified for the Null value, then the same payload converts to: `<person>NULL_VALUE</person>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AttributeBlockName
-
-
 
 </td>
 <td valign="top">
@@ -225,16 +203,12 @@ is converted to the following XML structure:
 
 `<person firstName="Adam" lastName="Philip"><location>California</location></person>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AttributePrefix
-
-
 
 </td>
 <td valign="top">
@@ -260,8 +234,6 @@ to the following XML structure:
 
 `<person firstName="Adam" lastName="Philip"><location>California</location></person>`
 
-
-
 </td>
 </tr>
 <tr>
@@ -272,8 +244,6 @@ NamespaceBlockName
 DefaultNamespaceNodeName
 
 NameSpaceSeparator
-
-
 
 </td>
 <td valign="top">
@@ -323,8 +293,6 @@ ArrayRootElementName
 
 ArrayItemElementName
 
-
-
 </td>
 <td valign="top">
 
@@ -370,8 +338,6 @@ into the following XML structure:
 
 ObjectRootElementName
 
-
-
 </td>
 <td valign="top">
 
@@ -414,14 +380,10 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -430,14 +392,10 @@ Cause
 
 SourceUnavailable
 
-
-
 </td>
 <td valign="top">
 
 The variable specified in the Source element is not available or cannot be resolved.
-
-
 
 </td>
 </tr>
@@ -446,14 +404,10 @@ The variable specified in the Source element is not available or cannot be resol
 
 ExecutionFailed
 
-
-
 </td>
 <td valign="top">
 
 The input payload \(JSON\) is empty or the input \(JSON\) passed to XML policy is invalid or malformed.
-
-
 
 </td>
 </tr>
@@ -462,14 +416,10 @@ The input payload \(JSON\) is empty or the input \(JSON\) passed to XML policy i
 
 OutputVariableIsNotAvailable
 
-
-
 </td>
 <td valign="top">
 
 The variable specified in the Source element of the JSON to XML Policy is of type string and the OutputVariable is not defined.
-
-
 
 </td>
 </tr>
@@ -478,14 +428,10 @@ The variable specified in the Source element of the JSON to XML Policy is of typ
 
 InCompatibleTypes
 
-
-
 </td>
 <td valign="top">
 
 The type of the variable defined in the Source and OutputVariable element does not match. The valid types are message and string.
-
-
 
 </td>
 </tr>
@@ -494,14 +440,10 @@ The type of the variable defined in the Source and OutputVariable element does n
 
 InvalidSourceType
 
-
-
 </td>
 <td valign="top">
 
 The type of the variable used to define the Source element is invalid. The valid types are message and string.
-
-
 
 </td>
 </tr>
@@ -518,21 +460,15 @@ The following fault variables are set when the policy triggers an error at runti
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -541,8 +477,6 @@ Example
 
 \[prefix\].\[policy\_name\].failed
 
-
-
 </td>
 <td valign="top">
 
@@ -550,14 +484,10 @@ The variable \[prefix\] is jsontoxml.
 
 The \[policy\_name\] is the name of the policy that threw the error.
 
-
-
 </td>
 <td valign="top">
 
 jsontoxml.JSON-to-XML-1.failed = true
-
-
 
 </td>
 </tr>
@@ -566,21 +496,15 @@ jsontoxml.JSON-to-XML-1.failed = true
 
 fault.\[error\_name\]
 
-
-
 </td>
 <td valign="top">
 
 \[error\_name\] = The specific error name to check for as listed in the table above.
 
-
-
 </td>
 <td valign="top">
 
 fault.name Matches "SourceUnavailable"
-
-
 
 </td>
 </tr>

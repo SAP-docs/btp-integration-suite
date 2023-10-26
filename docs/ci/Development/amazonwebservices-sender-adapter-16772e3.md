@@ -49,14 +49,10 @@ The following tables describe the parameters that you need to configuration for 
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -65,14 +61,10 @@ Description
 
 *Region Name* 
 
-
-
 </td>
 <td valign="top">
 
 Select the AWS Region. If the region doesn’t exist in the preconfigured list, then the user can manually enter the region name in the text box.
-
-
 
 </td>
 </tr>
@@ -81,14 +73,10 @@ Select the AWS Region. If the region doesn’t exist in the preconfigured list, 
 
 *Bucket Name* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the bucket to be used.
-
-
 
 </td>
 </tr>
@@ -97,16 +85,12 @@ Specify the name of the bucket to be used.
 
 *Polling Interval \(in ms\)*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the value of the Polling Interval in milliseconds.
 
 The default value is 300000.
-
-
 
 </td>
 </tr>
@@ -115,14 +99,10 @@ The default value is 300000.
 
 *Access Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS access key needed to connect to AWS.
-
-
 
 </td>
 </tr>
@@ -131,14 +111,10 @@ Specify the name of the Secure Parameter artifact that contains the AWS access k
 
 *Secret Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS secret key needed to connect to AWS.
-
-
 
 </td>
 </tr>
@@ -147,14 +123,10 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 
 *Requester Pays*
 
-
-
 </td>
 <td valign="top">
 
 Select the checkbox to make the requester pay for the data transfer and the request.
-
-
 
 </td>
 </tr>
@@ -169,14 +141,10 @@ Select the checkbox to make the requester pay for the data transfer and the requ
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -184,8 +152,6 @@ Description
 <td valign="top">
 
 *Directory*
-
-
 
 </td>
 <td valign="top">
@@ -207,8 +173,6 @@ Specify the location on the S3 bucket where the file is written.
 
 *File Name*
 
-
-
 </td>
 <td valign="top">
 
@@ -228,8 +192,6 @@ Specify the name of the file to be written. If the field is left blank, the file
 <td valign="top">
 
 *Sorting*
-
-
 
 </td>
 <td valign="top">
@@ -254,14 +216,10 @@ Specify which property should be used for sorting while polling files. The sorti
 
 *Include Sub-Directories*
 
-
-
 </td>
 <td valign="top">
 
 Select to read all the files in the directory and subdirectory.
-
-
 
 </td>
 </tr>
@@ -269,8 +227,6 @@ Select to read all the files in the directory and subdirectory.
 <td valign="top">
 
 *Post-Processing*
-
-
 
 </td>
 <td valign="top">
@@ -297,14 +253,10 @@ Select the action that should be taken after the file has been processed. It is 
 
 *Optional S3 Metadata*
 
-
-
 </td>
 <td valign="top">
 
 Specify the property parameter to be populated from S3 object metadata. If specified, then a property with the name will be created in Cloud Integration.
-
-
 
 </td>
 </tr>
@@ -313,14 +265,10 @@ Specify the property parameter to be populated from S3 object metadata. If speci
 
 *S3 Pre-Signed URL*
 
-
-
 </td>
 <td valign="top">
 
 Select this option to generate a pre-signed URL. Select the HTTP method and the expiration duration of the pre-signed URL.
-
-
 
 </td>
 </tr>
@@ -328,8 +276,6 @@ Select this option to generate a pre-signed URL. Select the HTTP method and the 
 <td valign="top">
 
 *HTTP Method of Pre-Signed URL*
-
-
 
 </td>
 <td valign="top">
@@ -358,14 +304,10 @@ Select the HTTP method that should be used for the pre-signed URL. Select from t
 
 *Expired Duration of Pre-Signed URL \(secs\)*
 
-
-
 </td>
 <td valign="top">
 
 Specify the duration in seconds for the Pre-Signed URL to expire. The default value is 86400.
-
-
 
 </td>
 </tr>
@@ -374,14 +316,10 @@ Specify the duration in seconds for the Pre-Signed URL to expire. The default va
 
 *Customer Decryption Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the secured parameter that contains the decryption key for the Amazon S3 to decrypt data.
-
-
 
 </td>
 </tr>
@@ -400,14 +338,10 @@ Specify the name of the secured parameter that contains the decryption key for t
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -416,14 +350,10 @@ Description
 
 *Region Name* 
 
-
-
 </td>
 <td valign="top">
 
 Select the AWS Region. If the region doesn’t exist in the preconfigured list, then the user can manually enter the region name in the text box.
-
-
 
 </td>
 </tr>
@@ -432,14 +362,10 @@ Select the AWS Region. If the region doesn’t exist in the preconfigured list, 
 
 *Account Number* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the 12-digit AWS account number for the queue.
-
-
 
 </td>
 </tr>
@@ -448,14 +374,10 @@ Specify the 12-digit AWS account number for the queue.
 
 *Queue Name*
 
-
-
 </td>
 <td valign="top">
 
 Specify the AWS Queue name where the data needs to be written.
-
-
 
 </td>
 </tr>
@@ -464,14 +386,10 @@ Specify the AWS Queue name where the data needs to be written.
 
 *Access Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS access key needed to connect to AWS.
-
-
 
 </td>
 </tr>
@@ -480,14 +398,10 @@ Specify the name of the Secure Parameter artifact that contains the AWS access k
 
 *Secret Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS secret key needed to connect to AWS.
-
-
 
 </td>
 </tr>
@@ -502,14 +416,10 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -518,14 +428,10 @@ Description
 
 *Max Number of Messages*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the maximum number of messages to be read from the queue. Possible values can be between 1 and 10. The default value is set to 10.
-
-
 
 </td>
 </tr>
@@ -534,14 +440,10 @@ Specifies the maximum number of messages to be read from the queue. Possible val
 
 *Wait Time \(in sec\)*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the duration in seconds to wait for a message to arrive in the queue. The default value is set to 20.
-
-
 
 </td>
 </tr>
@@ -550,14 +452,10 @@ Specifies the duration in seconds to wait for a message to arrive in the queue. 
 
 *Visibility Timeout \(in sec\)*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the duration in seconds that the message is hidden from subsequent retrieval requests. The default value is set to 30.
-
-
 
 </td>
 </tr>
@@ -565,8 +463,6 @@ Specifies the duration in seconds that the message is hidden from subsequent ret
 <td valign="top">
 
 *Post-Processing*
-
-
 
 </td>
 <td valign="top">
@@ -587,14 +483,10 @@ Specifies the action to be performed after the message processing in the queue. 
 
 *Optional SQS Metadata*
 
-
-
 </td>
 <td valign="top">
 
 Specify the header parameters to be populated from SQS object metadata. Separate the metadata with comma “,”.
-
-
 
 </td>
 </tr>

@@ -41,14 +41,10 @@ The following values are displayed in the *General* tab after a channel has been
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -57,14 +53,10 @@ Description
 
 *Name/Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 AMQP
-
-
 
 </td>
 </tr>
@@ -72,8 +64,6 @@ AMQP
 <td valign="top">
 
 *Transport Protocol* 
-
-
 
 </td>
 <td valign="top">
@@ -94,14 +84,10 @@ The protocol that the message broker supports:
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 *AMQP 1.0* 
-
-
 
 </td>
 </tr>
@@ -118,14 +104,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -134,14 +116,10 @@ Description
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the hostname of the message broker.
-
-
 
 </td>
 </tr>
@@ -150,14 +128,10 @@ Specify the hostname of the message broker.
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the port of the message broker.
-
-
 
 </td>
 </tr>
@@ -165,8 +139,6 @@ Specify the port of the message broker.
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -179,8 +151,6 @@ Select *On-Premise* if you’re connecting to an on-premise message broker.
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -188,14 +158,10 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 
 *Path* \(only if *WebSocket* is selected as the *Transport Protocol* in the *General* tab\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the access path of the message broker.
-
-
 
 </td>
 </tr>
@@ -204,16 +170,12 @@ Specify the access path of the message broker.
 
 *Connect with TLS* 
 
-
-
 </td>
 <td valign="top">
 
 Select if Transport Layer Security \(TLS\) has to be used for the connection.
 
 You can't configure this parameter if *Client Certificate* is selected for *Authentication*. In this case, TLS is automatically used.
-
-
 
 </td>
 </tr>
@@ -222,14 +184,10 @@ You can't configure this parameter if *Client Certificate* is selected for *Auth
 
 *Location ID* \(only if *On-Premise* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side.
-
-
 
 </td>
 </tr>
@@ -237,8 +195,6 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -264,7 +220,7 @@ Select the authentication method the message broker supports. *SASL* is selected
     > ### Note:  
     > This authentication option implies that Transport Layer Security \(TLS\) is used for the connection.
 
-    More information:  <?sap-ot O2O class="- topic/xref " href="ce627b59a3c2492a8f4263c27e8750a8.xml" text="" desc="" xtrc="xref:4" xtrf="file:/home/builder/src/dita-all/ccm1691418051317/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/d5660c146a93483692335e9d79a8c58f.xml" ?> 
+    More information:  <?sap-ot O2O class="- topic/xref " href="ce627b59a3c2492a8f4263c27e8750a8.xml" text="" desc="" xtrc="xref:4" xtrf="file:/home/builder/src/dita-all/cdm1692607551357/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/d5660c146a93483692335e9d79a8c58f.xml" ?> 
 
 -   *None*
 
@@ -280,14 +236,10 @@ Select the authentication method the message broker supports. *SASL* is selected
 
 *Credential Name* \(only if *SASL* or *OAuth2 Client Credentials* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the alias of the deployed credentials.
-
-
 
 </td>
 </tr>
@@ -296,14 +248,10 @@ Specify the alias of the deployed credentials.
 
 *Private Key Alias* \(only if *Client Certificate* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Alias to identify the private key in the keystore used for client certificate authentication.
-
-
 
 </td>
 </tr>
@@ -320,14 +268,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -336,14 +280,10 @@ Description
 
 *Destination Type* 
 
-
-
 </td>
 <td valign="top">
 
 Specify if messages should be sent to queues or topics in the message broker.
-
-
 
 </td>
 </tr>
@@ -352,16 +292,12 @@ Specify if messages should be sent to queues or topics in the message broker.
 
 *Destination Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the queue or topic.
 
 This value can be defined dynamically by using the following expressions: `${header.queueabc}` or `${property.queueabc}`.
-
-
 
 </td>
 </tr>
@@ -370,14 +306,10 @@ This value can be defined dynamically by using the following expressions: `${hea
 
 *Expiration Period \(in s\)* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the Time to Live \(TTL\) for the message. If nothing is specified, the setting for the queue or topic subscription in the message broker applies.
-
-
 
 </td>
 </tr>
@@ -385,8 +317,6 @@ Specify the Time to Live \(TTL\) for the message. If nothing is specified, the s
 <td valign="top">
 
 *Delivery* 
-
-
 
 </td>
 <td valign="top">
@@ -406,8 +336,6 @@ Specify whether the message broker has to make sure that the message is not lost
 <td valign="top">
 
 *Message Type* 
-
-
 
 </td>
 <td valign="top">
@@ -434,8 +362,6 @@ Define the message type to be used for sending the message to the message broker
 <td valign="top">
 
 *Header Format Handling* 
-
-
 
 </td>
 <td valign="top">

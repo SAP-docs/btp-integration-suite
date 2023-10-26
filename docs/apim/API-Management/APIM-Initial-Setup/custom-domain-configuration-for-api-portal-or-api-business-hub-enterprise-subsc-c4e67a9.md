@@ -22,14 +22,10 @@ Use the following component for your incident:
 
 Component Name
 
-
-
 </th>
 <th valign="top">
 
 Component Description
-
-
 
 </th>
 </tr>
@@ -38,14 +34,10 @@ Component Description
 
 OPU-API-OD-OPS
 
-
-
 </td>
 <td valign="top">
 
 SAP API Management Operations - On Demand
-
-
 
 </td>
 </tr>

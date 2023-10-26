@@ -106,28 +106,20 @@ The scenarios and their settings are summarized in the table:
 
 Scenario
 
-
-
 </th>
 <th valign="top">
 
 Transaction required in main process
-
-
 
 </th>
 <th valign="top">
 
 Transaction required in subprocess
 
-
-
 </th>
 <th valign="top">
 
 Transaction type
-
-
 
 </th>
 </tr>
@@ -136,28 +128,20 @@ Transaction type
 
 Delta load with last modified time stamp
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 n/a
 
-
-
 </td>
 <td valign="top">
 
 n/a
-
-
 
 </td>
 </tr>
@@ -166,28 +150,20 @@ n/a
 
 Control database connections: subprocess with two write operations
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Required for JDBC
-
-
 
 </td>
 </tr>
@@ -196,28 +172,20 @@ Required for JDBC
 
 Control database connections: subprocess with select and delete on completion
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 n/a
-
-
 
 </td>
 </tr>
@@ -226,28 +194,20 @@ n/a
 
 Splitter with JMS receivers
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 n/a
 
-
-
 </td>
 <td valign="top">
 
 Required for JMS
-
-
 
 </td>
 </tr>
@@ -256,28 +216,20 @@ Required for JMS
 
 JMS send step in reusable subprocess
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Required for JMS
-
-
 
 </td>
 </tr>
@@ -286,28 +238,20 @@ Required for JMS
 
 Master data update with XI send steps
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Required for JDBC
-
-
 
 </td>
 </tr>
@@ -316,28 +260,20 @@ Required for JDBC
 
 Master data update with JMS send steps
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Required for JMS
-
-
 
 </td>
 </tr>

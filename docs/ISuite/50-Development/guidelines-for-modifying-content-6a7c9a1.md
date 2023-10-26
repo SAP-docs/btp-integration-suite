@@ -122,7 +122,7 @@ For more information, see:
 
 With the datastore, payloads can be persisted to and read from the SAP Cloud Integration database. When values are read from the database, the result is set as new message body. For this reason, this step is also listed here as a payload modification.
 
-There are 2 options to read the values from the database. The datastore GET step reads exactly 1 entry from the database and sets the payload as a new body. The retrieved payload can be of any format. The datastore SELECT step loads multiple entries from the database and forms a new body using a certain XML schema. Therefore, the entries also have to be in XML format.
+There are two options to read the values from the database. The datastore GET step reads exactly one entry from the database and sets the payload as a new body. The retrieved payload can be of any format. The datastore SELECT step loads multiple entries from the database and forms a new body using a certain XML schema. Therefore, the entries also have to be in XML format.
 
 ![](images/2101-Design-Guidelines_Datastore-Get_png_5f368d2.png)
 
@@ -132,7 +132,7 @@ For more information, see [Define Data Store Operations](define-data-store-opera
 
 ### Converter
 
-Different communication partners offer different endpoints. Some partners use REST services, others web services, and there are those with OData services and those which even use SFTP servers. Many endpoints are connected to a certain format. To connect 2 communication partners that 'speak' different protocols, it’s necessary to modify the payload by converting it from one format to a different one. SAP Cloud Integration offers converters to transform payloads into different formats: XML, JSON, and CSV converters are available.
+Different communication partners offer different endpoints. Some partners use REST services, others Web services, and there are those with OData services and those which even use SFTP servers. Many endpoints are connected to a certain format. To connect two communication partners that 'speak' different protocols, it’s necessary to modify the payload by converting it from one format to a different one. SAP Cloud Integration offers converters to transform payloads into different formats: XML, JSON, and CSV converters are available.
 
 ![](images/2101-Design-Guidelines_Converter_png_eb6af28.png)
 
@@ -158,7 +158,7 @@ XML payloads usually contain a preamble with information about the encoding, etc
 
 Furthermore, XML payloads can contain Document Type Definitions or short DTDs. They define, among other things, the structure of the XML payload.
 
-If one or both of the above-mentioned elements is removed from the payload, the XML modifier is the best option to do so.
+If one or both of the above-mentioned elements are removed from the payload, the XML modifier is the best option to do so.
 
 ![](images/2101-Design-Guidelines_Best-Practice-XML-Modifier_png_66ddd54.png)
 
@@ -249,7 +249,7 @@ If the original body doesn't fit your needs and you need a different schema usin
 
 ### Merge / Combine Two Payloads
 
-If you want to take the original body and merge it with a body from either a different split branch or a multicast branch, you've to use a Gather step and either merge or combine the 2 payloads. If the results, that is, the structure isn't satisfactory, you can refine it afterwards with the steps mentioned in the other chapters, like message mappings, scripts, etc.
+If you want to take the original body and merge it with a body from either a different split branch or a multicast branch, you've to use a Gather step and either merge or combine the two payloads. If the results, that is, the structure isn't satisfactory, you can refine it afterwards with the steps mentioned in the other chapters, like message mappings, scripts, etc.
 
 If you want to merge or combine the original body with content from an external call, you've to use Content Enricher. If you need to adjust the new body after the merge, refer to the other chapters in this section.
 
@@ -268,7 +268,7 @@ There are multiple options if you want to transfer or park the payload and want 
 
 ### Replace the Payload with a Previous state
 
-In some scenarios, for example, when an intermediate external call overwrites your payload, it might be necessary to buffer the original payload and restore it later. You've 2 options:
+In some scenarios, for example, when an intermediate external call overwrites your payload, it might be necessary to buffer the original payload and restore it later. You've got two options:
 
 -   If you want to use the payload in the same flow process, store the payload initially into a property by using the Content Modifier and restore it once needed again using a Content Modifier. Don’t use any persistency for inner-flow buffer.
 

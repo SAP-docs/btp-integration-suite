@@ -36,14 +36,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -52,14 +48,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -76,14 +68,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -92,14 +80,10 @@ Description
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 Service root URI of the OData V4 service that you want to connect to.
-
-
 
 </td>
 </tr>
@@ -107,8 +91,6 @@ Service root URI of the OData V4 service that you want to connect to.
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -131,14 +113,10 @@ The type of proxy you want to use for establishing connection with OData V4 serv
 
 only if *On-Premise* is selected for *Proxy Type*
 
-
-
 </td>
 <td valign="top">
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration.
-
-
 
 </td>
 </tr>
@@ -146,8 +124,6 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -177,14 +153,10 @@ The following options are enabled only if you choose *Proxy Type* as *Internet*
 
 \(only if *Basic* or *OAuth2 Client Credentials* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Name of the credentials that you’ve deployed in *Security Material* section of :eye:.
-
-
 
 </td>
 </tr>
@@ -195,14 +167,10 @@ Name of the credentials that you’ve deployed in *Security Material* section of
 
 \(only if *Client Certificate* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Enter the alias of the deployed key pair.
-
-
 
 </td>
 </tr>
@@ -211,14 +179,10 @@ Enter the alias of the deployed key pair.
 
 *Allow Chunking*
 
-
-
 </td>
 <td valign="top">
 
 Select this option if you want to allow the chunking of the data.
-
-
 
 </td>
 </tr>
@@ -227,14 +191,10 @@ Select this option if you want to allow the chunking of the data.
 
 *CSRF Protected*
 
-
-
 </td>
 <td valign="top">
 
 Keep this option selected \(default setting\). It ensures that your integration flow is protected against Cross-Site-Request-Forgery, a kind of attack where a malicious party can perform harmful actions by masquerading as the logged in user.
-
-
 
 </td>
 </tr>
@@ -243,14 +203,10 @@ Keep this option selected \(default setting\). It ensures that your integration 
 
 *Timeout \(in min\)*
 
-
-
 </td>
 <td valign="top">
 
 Enter the time in minutes.
-
-
 
 </td>
 </tr>
@@ -259,14 +215,10 @@ Enter the time in minutes.
 
 *Reuse Connection*
 
-
-
 </td>
 <td valign="top">
 
 The option is enabled by default. This option enables the reuse of connection objects from the internal connection pool which in turn improves the network turnaround time for multiple communications to a same end point.
-
-
 
 </td>
 </tr>
@@ -283,14 +235,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -298,8 +246,6 @@ Description
 <td valign="top">
 
 *Operation* 
-
-
 
 </td>
 <td valign="top">
@@ -322,16 +268,12 @@ The operation that you want to perform on the selected OData entity or resource.
 
 To leverage all operations, always use the latest version of the adapter.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Resource Path* 
-
-
 
 </td>
 <td valign="top">
@@ -354,14 +296,10 @@ Enter a valid resource path.
 
 \(enabled for *Query\(GET\)* operation\).
 
-
-
 </td>
 <td valign="top">
 
 Query options that you’re passing as a part of the URI to the OData V4 service.
-
-
 
 </td>
 </tr>
@@ -370,14 +308,10 @@ Query options that you’re passing as a part of the URI to the OData V4 service
 
 *Process in Pages* 
 
-
-
 </td>
 <td valign="top">
 
 By selecting *Process in Pages*, you enable the adapter to process messages in pages, the page size of which is defined in the server-side system. To use *Process in Pages*, you must use the adapter in a Local Integration Process that is invoked by a Looping Process Call step.
-
-
 
 </td>
 </tr>
@@ -385,8 +319,6 @@ By selecting *Process in Pages*, you enable the adapter to process messages in p
 <td valign="top">
 
 *Attach Error Details on Failure* 
-
-
 
 </td>
 <td valign="top">
@@ -397,16 +329,12 @@ Having these attachments during message processing failures can be unneccesary a
 
 If you're using older versions of the adapter where you don't see the option, define the property `SAP.DisableAttachments.ODataV4` in the message exchange with the value `true`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Request Headers* 
-
-
 
 </td>
 <td valign="top">
@@ -415,8 +343,6 @@ If you're using older versions of the adapter where you don't see the option, de
 
 If the value \* is entered, **all** the message headers are converted to HTTP request headers and forwarded.
 
-
-
 </td>
 </tr>
 <tr>
@@ -424,16 +350,12 @@ If the value \* is entered, **all** the message headers are converted to HTTP re
 
 *Response Headers* 
 
-
-
 </td>
 <td valign="top">
 
 *Response Headers*: Provide the **| \(Pipe\)** separated value list of HTTP response headers. The received header values will then be converted to message/exchange headers.
 
 If the value \* is entered, **all** the HTTP response header values are converted to message/exchange headers.
-
-
 
 </td>
 </tr>
@@ -462,14 +384,10 @@ There are two main steps in this wizard:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -477,8 +395,6 @@ Description
 <td valign="top">
 
 *Connection Source* 
-
-
 
 </td>
 <td valign="top">
@@ -489,8 +405,6 @@ If you choose *Remote*, you’ve to manually specify all the details like addres
 
 If you choose *Local EDMX File*, you select the service definition EDMX file that contains all these details that you specified manually when you selected *Remote*.
 
-
-
 </td>
 </tr>
 <tr>
@@ -500,14 +414,10 @@ If you choose *Local EDMX File*, you select the service definition EDMX file tha
 
 \(only if you select *Connection Source* as *Local EDMX File*\).
 
-
-
 </td>
 <td valign="top">
 
 Choose *Select* to select the EDMX service schema. You can also manually upload it from your local file system.
-
-
 
 </td>
 </tr>
@@ -516,14 +426,10 @@ Choose *Select* to select the EDMX service schema. You can also manually upload 
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 URL of the service that you want to access. If you’re connecting to an on-premise system, enter the *Virtual Host* in your Cloud Connector installation.
-
-
 
 </td>
 </tr>
@@ -534,14 +440,10 @@ URL of the service that you want to access. If you’re connecting to an on-prem
 
 \(only if you select *Connection Source* as *Remote*.\)
 
-
-
 </td>
 <td valign="top">
 
 Type of proxy that you want to use to connect to the service.
-
-
 
 </td>
 </tr>
@@ -552,14 +454,10 @@ Type of proxy that you want to use to connect to the service.
 
 \(only if you select *Proxy Type* as *On-Premise*\).
 
-
-
 </td>
 <td valign="top">
 
 Location ID that you’ve configured in the Cloud Connector installation.
-
-
 
 </td>
 </tr>
@@ -568,16 +466,12 @@ Location ID that you’ve configured in the Cloud Connector installation.
 
 *Authentication* 
 
-
-
 </td>
 <td valign="top">
 
 Only *Basic* authentication is supported. You can deploy credentials in :eye: and provide the *Credential Name* or provide the *Username* and *Password*.
 
 For other authentication types, download the EDMX from the service and use the *Local EDMX File* to model the operation.
-
-
 
 </td>
 </tr>
@@ -592,14 +486,10 @@ For other authentication types, download the EDMX from the service and use the *
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -607,8 +497,6 @@ Description
 <td valign="top">
 
 *Operation* 
-
-
 
 </td>
 <td valign="top">
@@ -634,8 +522,6 @@ The adapter supports *Function Import* for the following return types:
 
 *Function Import*can also be consumed in the *$batch* mode.
 
-
-
 </td>
 </tr>
 <tr>
@@ -643,14 +529,10 @@ The adapter supports *Function Import* for the following return types:
 
 *Select Entity* 
 
-
-
 </td>
 <td valign="top">
 
 Entity that you want to perform the operation on.
-
-
 
 </td>
 </tr>
@@ -659,16 +541,12 @@ Entity that you want to perform the operation on.
 
 *Generate XML Schema Definition* 
 
-
-
 </td>
 <td valign="top">
 
 Enable the check box if you want to generate an XSD file for the operation. You can also provide a name of your choice for the XSD file. This XSD file is needed when you create a message mapping.
 
 There could be a scenario in which you wish to edit or update your modeling. In such cases, you can overwrite the XSD file instead of generating a new file every time.
-
-
 
 </td>
 </tr>
@@ -677,14 +555,10 @@ There could be a scenario in which you wish to edit or update your modeling. In 
 
 *Fields* 
 
-
-
 </td>
 <td valign="top">
 
 Fields associated with the entity that you want to perform the operation on.
-
-
 
 </td>
 </tr>
@@ -693,16 +567,12 @@ Fields associated with the entity that you want to perform the operation on.
 
 *Top* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the top 'n' number of entries to be fetched.
 
 For more information, see **Top System Query Option \($top\)** in [OData V4 URL Conventions](https://docs.oasis-open.org/odata/odata/v4.01/os/part2-url-conventions/odata-v4.01-os-part2-url-conventions.html)
-
-
 
 </td>
 </tr>
@@ -711,16 +581,12 @@ For more information, see **Top System Query Option \($top\)** in [OData V4 URL 
 
 *Skip* 
 
-
-
 </td>
 <td valign="top">
 
 Specifies the top 'n' number of entries to be skipped and the rest of the entries are fetched.
 
 For more information, see **Skip System Query Option \($skip\)** in [OData V4 URL Conventions](https://docs.oasis-open.org/odata/odata/v4.01/os/part2-url-conventions/odata-v4.01-os-part2-url-conventions.html).
-
-
 
 </td>
 </tr>
@@ -737,14 +603,10 @@ This step is available only for data fetch operations, *Query\(GET\)* and *Read\
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -752,8 +614,6 @@ Description
 <td valign="top">
 
 *Filter By* 
-
-
 
 </td>
 <td valign="top">
@@ -779,14 +639,10 @@ Select the field that you want to use as reference for filtering, choose the ope
 
 *Sort By* 
 
-
-
 </td>
 <td valign="top">
 
 Select the field that you want to use as sorting parameter and choose *Ascending* or *Descending* order.
-
-
 
 </td>
 </tr>

@@ -55,15 +55,11 @@ In detail, perform the following steps:
     <th valign="top" colspan="3">
 
     Service Instance
-
-
     
     </th>
     <th valign="top" colspan="4">
 
     Service Key
-
-
     
     </th>
     </tr>
@@ -71,50 +67,36 @@ In detail, perform the following steps:
     <th valign="top">
 
      
-
-
     
     </th>
     <th valign="top">
 
     Roles
-
-
     
     </th>
     <th valign="top">
 
     Grant-types
-
-
     
     </th>
     <th valign="top">
 
      
-
-
     
     </th>
     <th valign="top">
 
     External Certificate
-
-
     
     </th>
     <th valign="top">
 
     Validity
-
-
     
     </th>
     <th valign="top">
 
     Key Size
-
-
     
     </th>
     </tr>
@@ -122,50 +104,36 @@ In detail, perform the following steps:
     <td valign="top">
     
     *integration-flow* 
-
-
     
     </td>
     <td valign="top">
     
     Keep standard role `ESBMessaging.send` or use one or more custom roles.
-
-
     
     </td>
     <td valign="top">
     
     *Client Credentials* 
-
-
     
     </td>
     <td valign="top">
     
     *ClientId/Secret* 
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     </tr>

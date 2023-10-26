@@ -60,15 +60,11 @@ To design an integration flow step to write a variable, perform the following st
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -76,8 +72,6 @@ To design an integration flow step to write a variable, perform the following st
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
@@ -85,8 +79,6 @@ To design an integration flow step to write a variable, perform the following st
     Enter the variable name.
 
     The variable name can either be constant or type `${header.source}`. For example, a valid value is `Variable1` or type `${header.source}`.
-
-
     
     </td>
     </tr>
@@ -94,8 +86,6 @@ To design an integration flow step to write a variable, perform the following st
     <td valign="top">
     
     *Type*
-
-
     
     </td>
     <td valign="top">
@@ -142,15 +132,11 @@ To design an integration flow step to write a variable, perform the following st
     *Data Type*
 
     \(only if for parameter *Type* you've selected one of the following options: *Expression*, *Constant*, or *Xpath*\)
-
-
     
     </td>
     <td valign="top">
     
     Enter a valid Java type \(for example, `java.lang.String`\).
-
-
     
     </td>
     </tr>
@@ -158,8 +144,6 @@ To design an integration flow step to write a variable, perform the following st
     <td valign="top">
     
     *Value*
-
-
     
     </td>
     <td valign="top">
@@ -171,8 +155,6 @@ To design an integration flow step to write a variable, perform the following st
     If for parameter *Type* you've selected *Expression*, you can enter the following expression to create a timestamp:
 
     `${date:now:yyyy-MM-dd HH:mm:ss}`
-
-
     
     </td>
     </tr>
@@ -180,8 +162,6 @@ To design an integration flow step to write a variable, perform the following st
     <td valign="top">
     
     *Global Scope*
-
-
     
     </td>
     <td valign="top">
@@ -191,8 +171,6 @@ To design an integration flow step to write a variable, perform the following st
     If not selected, the variable can be shared only across different components of the same integration flow and is invisible for other integration flows.
 
     For more information and guidelines how to use this parameter, see [Anticipate Message Throughput When Choosing a Storage Option](anticipate-message-throughput-when-choosing-a-storage-option-5b38765.md).
-
-
     
     </td>
     </tr>

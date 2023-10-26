@@ -74,14 +74,10 @@ Select the *General* tab and provide values in the field as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -90,14 +86,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -114,14 +106,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -129,8 +117,6 @@ Description
 <td valign="top">
 
 *Address* 
-
-
 
 </td>
 <td valign="top">
@@ -150,8 +136,6 @@ Address under which a sender system can reach the tenant.
 <td valign="top">
 
 *Authorization* 
-
-
 
 </td>
 <td valign="top">
@@ -222,14 +206,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -237,8 +217,6 @@ Description
 <td valign="top">
 
 *XI Receiver Identifiers for Response*
-
-
 
 </td>
 <td valign="top">
@@ -275,14 +253,10 @@ Select the *Delivery Assurance* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -290,8 +264,6 @@ Description
 <td valign="top">
 
 *Quality of Service*
-
-
 
 </td>
 <td valign="top">
@@ -345,8 +317,6 @@ There are the following options:
 
 \(only if *Exactly Once* or *At Least Once* is selected for *Quality of Service*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -398,8 +368,6 @@ You can choose among the following storage types:
 
 \(only if *JMS Queue* has been selected for *Temporary Storage*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -419,14 +387,10 @@ Enter the number of concurrent processes for each worker node. The recommended v
 
 \(only configurable if *Data Store* has been selected\)
 
-
-
 </td>
 <td valign="top">
 
 Enter a value for the timeout of the in-progress repository. After this time, a message is retried in case of a cluster outage.
-
-
 
 </td>
 </tr>
@@ -436,8 +400,6 @@ Enter a value for the timeout of the in-progress repository. After this time, a 
 *Poll Interval \(in s\)*
 
 \(only if *Exactly Once* or *At Least Once* has been selected for *Quality of Service* and *Data Store* has been selected for *Temporary Storage*\)
-
-
 
 </td>
 <td valign="top">
@@ -460,14 +422,10 @@ The poll interval only becomes effective as soon as the data store doesn't conta
 
 *Retry Interval \(in min\)*
 
-
-
 </td>
 <td valign="top">
 
 Enter a value for the amount of time to wait before retrying message delivery.
-
-
 
 </td>
 </tr>
@@ -476,14 +434,10 @@ Enter a value for the amount of time to wait before retrying message delivery.
 
 *Exponential Backoff*
 
-
-
 </td>
 <td valign="top">
 
 Select this option to double the retry interval after each unsuccessful retry.
-
-
 
 </td>
 </tr>
@@ -494,14 +448,10 @@ Select this option to double the retry interval after each unsuccessful retry.
 
 \(only configurable if *Exponential Backoff* has been selected\)
 
-
-
 </td>
 <td valign="top">
 
 You can set an upper limit on that value to avoid an endless increase of the retry interval. The default value is 60 minutes. The minimum value is 10 minutes.
-
-
 
 </td>
 </tr>
@@ -511,8 +461,6 @@ You can set an upper limit on that value to avoid an endless increase of the ret
 *Dead-Letter Queue*
 
 \(only if *JMS Queue* has been selected for *Temporary Storage*\)
-
-
 
 </td>
 <td valign="top">
@@ -525,8 +473,6 @@ Use this option to avoid out-of-memory situations \(caused in many cases by larg
 
 For more information, read the SAP Community blog [Cloud Integration – Configure Dead Letter Handling in JMS Adapter](https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/).
 
-
-
 </td>
 </tr>
 <tr>
@@ -536,14 +482,10 @@ For more information, read the SAP Community blog [Cloud Integration – Configu
 
 \(only if *JMS Queue* has been selected for *Temporary Storage*\)
 
-
-
 </td>
 <td valign="top">
 
 Select this option to compress the message in the JMS queue. Compressing the message reduces disk space usage and network traffic.
-
-
 
 </td>
 </tr>
@@ -552,14 +494,10 @@ Select this option to compress the message in the JMS queue. Compressing the mes
 
 *Encrypt Message during Persistence* \(only in case you've selected *Exactly Once* as *Quality of Service*\)
 
-
-
 </td>
 <td valign="top">
 
 Select this option in case the messages should be stored in an encrypted way in the temporary storage.
-
-
 
 </td>
 </tr>
@@ -568,14 +506,10 @@ Select this option in case the messages should be stored in an encrypted way in 
 
 *Expiration Period \(in d\)*
 
-
-
 </td>
 <td valign="top">
 
 Enter the number of days after which the stored messages are deleted \(default is 30\).
-
-
 
 </td>
 </tr>
@@ -618,14 +552,10 @@ Select the *Conditions* tab and specify the following parameter.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -633,8 +563,6 @@ Description
 <td valign="top">
 
 Maximum Message Size
-
-
 
 </td>
 <td valign="top">
@@ -649,8 +577,6 @@ To configure the maximum message size, you can specify the following parameter:
 
 
 If a message is rejected because it exceeds the configured limit, the sender receives an error message.
-
-
 
 </td>
 </tr>

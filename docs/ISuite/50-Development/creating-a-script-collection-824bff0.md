@@ -28,15 +28,11 @@
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -44,15 +40,11 @@
     <td valign="top">
     
     Script Collection \(only for upload\)
-
-
     
     </td>
     <td valign="top">
     
     Upload a .zip file containing the script collection resources.
-
-
     
     </td>
     </tr>
@@ -60,15 +52,11 @@
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the script collection.
-
-
     
     </td>
     </tr>
@@ -76,15 +64,11 @@
     <td valign="top">
     
     ID
-
-
     
     </td>
     <td valign="top">
     
     Uniquely identifies the script collection.
-
-
     
     </td>
     </tr>
@@ -92,15 +76,11 @@
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     Description of the script collection and its purpose.
-
-
     
     </td>
     </tr>

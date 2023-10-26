@@ -28,14 +28,10 @@ At the receiver side, the scenario uses an XI receiver adapter. On the**Delivery
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -44,14 +40,10 @@ Setting
 
 XI Message ID Determination
 
-
-
 </td>
 <td valign="top">
 
 Reuse
-
-
 
 </td>
 </tr>
@@ -60,14 +52,10 @@ Reuse
 
 Quality Of Service
 
-
-
 </td>
 <td valign="top">
 
 Exactly Once
-
-
 
 </td>
 </tr>
@@ -76,14 +64,10 @@ Exactly Once
 
 Temporary Storage
 
-
-
 </td>
 <td valign="top">
 
 Either Data Store or JMS Queue
-
-
 
 </td>
 </tr>
@@ -115,15 +99,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -131,15 +111,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     OWN
-
-
     
     </td>
     </tr>
@@ -147,15 +123,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     User
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -163,15 +135,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     Password
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

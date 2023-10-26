@@ -38,28 +38,20 @@ The following table lists the options for setting up secure connections for the 
 
 Authorization
 
-
-
 </th>
 <th valign="top">
 
 Authentication
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 How to configure \(checklist\) ...
-
-
 
 </th>
 </tr>
@@ -68,14 +60,10 @@ How to configure \(checklist\) ...
 
 User role
 
-
-
 </td>
 <td valign="top">
 
 Client-Certificate with certificate-to-user mapping
-
-
 
 </td>
 <td valign="top">
@@ -90,8 +78,6 @@ Load balancer authenticates sender based on a client certificate and, if the che
 Supported by the following sender adapters: HTTPS, IDoc, SOAP \(SOAP RM, SOAP 1.x\), AS2, OData
 
 More information: [Client Certificate Authentication and Certificate-to-User Mapping \(Inbound\), Neo Environment](client-certificate-authentication-and-certificate-to-user-mapping-inbound-neo-environment-4b5afdd.md)
-
-
 
 </td>
 <td valign="top">
@@ -116,14 +102,10 @@ Tenant administrator:
 
 Client certificate
 
-
-
 </td>
 <td valign="top">
 
 Client-Certificate without certificate-to-user mapping
-
-
 
 </td>
 <td valign="top">
@@ -136,16 +118,12 @@ Supported by the following sender adapters: HTTPS, IDoc, SOAP \(SOAP RM, SOAP 1.
 
 More information: [Client Certificate Authentication \(Inbound\), Neo Environment](client-certificate-authentication-inbound-neo-environment-c1eeeab.md)
 
-
-
 </td>
 <td valign="top">
 
 Sender administrator: Configure sender keystore \(generate sender key pair; import CA root certificate supported by load balancer\).
 
 Tenant administrator: In integration flow / sender adapter, choose *Client Certificate* authorization and specify the certificate.
-
-
 
 </td>
 </tr>
@@ -154,14 +132,10 @@ Tenant administrator: In integration flow / sender adapter, choose *Client Certi
 
 User role
 
-
-
 </td>
 <td valign="top">
 
 Basic
-
-
 
 </td>
 <td valign="top">
@@ -173,8 +147,6 @@ This option is not recommended for productive usage.
 Supported by the following adapters: HTTPS, IDoc, SOAP \(SOAP RM, SOAP 1.x\), AS2, OData
 
 More information: [Basic Authentication](basic-authentication-2c4c2d9.md)
-
-
 
 </td>
 <td valign="top">
@@ -197,14 +169,10 @@ Tenant administrator:
 
 User role
 
-
-
 </td>
 <td valign="top">
 
 OAuth Client Credentials Grant
-
-
 
 </td>
 <td valign="top">
@@ -227,8 +195,6 @@ More information:
 
 [OAuth Client Credentials Grant](oauth-client-credentials-grant-cf611ec.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -236,14 +202,10 @@ More information:
 
 User role
 
-
-
 </td>
 <td valign="top">
 
 OAuth SAML Bearer Destination
-
-
 
 </td>
 <td valign="top">
@@ -256,16 +218,12 @@ An SAML 2.0 Bearer Assertion is used to authenticate the sender as well as to re
 
 Supported by the following sender adapters: SOAP \(SOAP 1.x\), SOAP \(SAP RM\), HTTPS
 
-
-
 </td>
 <td valign="top">
 
 More information:
 
 [OAuth SAML Bearer Destination](oauth-saml-bearer-destination-f931226.md)
-
-
 
 </td>
 </tr>

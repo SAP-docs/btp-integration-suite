@@ -15,28 +15,20 @@ Here you can find a list of the security events that are logged by Cloud Integra
 
 Event grouping
 
-
-
 </th>
 <th valign="top">
 
 What events are logged
-
-
 
 </th>
 <th valign="top">
 
 How to identify related log events
 
-
-
 </th>
 <th valign="top">
 
 Additional information
-
-
 
 </th>
 </tr>
@@ -45,14 +37,10 @@ Additional information
 
 Integration design
 
-
-
 </td>
 <td valign="top">
 
 Import integration package manually
-
-
 
 </td>
 <td valign="top">
@@ -87,8 +75,6 @@ When importing a package manually, the following events are written:
 
 [Working with Integration Packages](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/45423ba590094233a4c82f94390df096.html "") :arrow_upper_right: 
 
-
-
 </td>
 </tr>
 <tr>
@@ -96,14 +82,10 @@ When importing a package manually, the following events are written:
 
 Integration design
 
-
-
 </td>
 <td valign="top">
 
 Transport integration package
-
-
 
 </td>
 <td valign="top">
@@ -120,8 +102,6 @@ Transport integration package
 
 [Content Transport](../50-Development/content-transport-e3c79d6.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -129,14 +109,10 @@ Transport integration package
 
 Integration design
 
-
-
 </td>
 <td valign="top">
 
 Transport integration artifact
-
-
 
 </td>
 <td valign="top">
@@ -153,8 +129,6 @@ Transport integration artifact
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -162,14 +136,10 @@ Transport integration artifact
 
 Integration design
 
-
-
 </td>
 <td valign="top">
 
 Create integration artifact
-
-
 
 </td>
 <td valign="top">
@@ -216,8 +186,6 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing Custom Adapters](../50-Development/developing-custom-adapters-7392cc4.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -225,14 +193,10 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 Integration design
 
-
-
 </td>
 <td valign="top">
 
 Update integration artifact
-
-
 
 </td>
 <td valign="top">
@@ -279,8 +243,6 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing Custom Adapters](../50-Development/developing-custom-adapters-7392cc4.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -288,14 +250,10 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 Integration design
 
-
-
 </td>
 <td valign="top">
 
 Update integration artifact as version
-
-
 
 </td>
 <td valign="top">
@@ -324,8 +282,6 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing Custom Adapters](../50-Development/developing-custom-adapters-7392cc4.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -333,14 +289,10 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 Integration design
 
-
-
 </td>
 <td valign="top">
 
 Update integration flow configuration
-
-
 
 </td>
 <td valign="top">
@@ -357,8 +309,6 @@ Update integration flow configuration
 
 [Configure Externalized Parameters of an Integration Flow](../50-Development/configure-externalized-parameters-of-an-integration-flow-462a478.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -366,14 +316,10 @@ Update integration flow configuration
 
 Integration design
 
-
-
 </td>
 <td valign="top">
 
 Deploy integration artifact
-
-
 
 </td>
 <td valign="top">
@@ -402,37 +348,27 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing Custom Adapters](../50-Development/developing-custom-adapters-7392cc4.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Integration design
-
-
 
 </td>
 <td valign="top">
 
 Deploy integration artifact \(mass deployment\)
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -441,14 +377,10 @@ Deploy integration artifact \(mass deployment\)
 
 Integration design
 
-
-
 </td>
 <td valign="top">
 
 Delete integration artifact
-
-
 
 </td>
 <td valign="top">
@@ -477,8 +409,6 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing Custom Adapters](../50-Development/developing-custom-adapters-7392cc4.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -486,28 +416,20 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 Integration design
 
-
-
 </td>
 <td valign="top">
 
 Download WSDL
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -516,14 +438,10 @@ Download WSDL
 
 Partner Directory
 
-
-
 </td>
 <td valign="top">
 
 Read Partner Directory entity
-
-
 
 </td>
 <td valign="top">
@@ -540,8 +458,6 @@ Read Partner Directory entity
 
 [Parameterizing Integration Flows Using the Partner Directory](../50-Development/parameterizing-integration-flows-using-the-partner-directory-b7812a5.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -549,14 +465,10 @@ Read Partner Directory entity
 
 Partner Directory
 
-
-
 </td>
 <td valign="top">
 
 Create Partner Directory entity
-
-
 
 </td>
 <td valign="top">
@@ -583,8 +495,6 @@ Creation of an alternative partner writes the following log event:
 
 [Parameterizing Integration Flows Using the Partner Directory](../50-Development/parameterizing-integration-flows-using-the-partner-directory-b7812a5.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -592,14 +502,10 @@ Creation of an alternative partner writes the following log event:
 
 Partner Directory
 
-
-
 </td>
 <td valign="top">
 
 Update Partner Directory entity
-
-
 
 </td>
 <td valign="top">
@@ -616,8 +522,6 @@ Update Partner Directory entity
 
 [Parameterizing Integration Flows Using the Partner Directory](../50-Development/parameterizing-integration-flows-using-the-partner-directory-b7812a5.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -625,14 +529,10 @@ Update Partner Directory entity
 
 Partner Directory
 
-
-
 </td>
 <td valign="top">
 
 Delete Partner Directory entity
-
-
 
 </td>
 <td valign="top">
@@ -659,8 +559,6 @@ Deletion of an authorized user writes the following log event:
 
 [Parameterizing Integration Flows Using the Partner Directory](../50-Development/parameterizing-integration-flows-using-the-partner-directory-b7812a5.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -668,14 +566,10 @@ Deletion of an authorized user writes the following log event:
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Create keystore entry
-
-
 
 </td>
 <td valign="top">
@@ -715,8 +609,6 @@ More information on the keystore:
 
 [Managing Keystore Entries](../50-Development/managing-keystore-entries-2dc8942.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -724,14 +616,10 @@ More information on the keystore:
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Update keystore entry by uploading a new file
-
-
 
 </td>
 <td valign="top">
@@ -764,8 +652,6 @@ More information on the keystore:
 
 [Managing Keystore Entries](../50-Development/managing-keystore-entries-2dc8942.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -773,14 +659,10 @@ More information on the keystore:
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Rename alias of keystore entry
-
-
 
 </td>
 <td valign="top">
@@ -821,8 +703,6 @@ More information on the keystore:
 
 [Managing Keystore Entries](../50-Development/managing-keystore-entries-2dc8942.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -830,14 +710,10 @@ More information on the keystore:
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Delete keystore entry
-
-
 
 </td>
 <td valign="top">
@@ -858,24 +734,18 @@ More information on the keystore:
 
 [Managing Keystore Entries](../50-Development/managing-keystore-entries-2dc8942.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Manage security
-
-
 
 </td>
 <td valign="top">
 
 Create security material
 
-
-
 </td>
 <td valign="top">
 
@@ -893,24 +763,18 @@ Covers the following kinds of artifact: User Credentials, OAuth2 Client Credenti
 
 [Managing Security Material](../50-Development/managing-security-material-b8ccb53.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Manage security
-
-
 
 </td>
 <td valign="top">
 
 Update security material
 
-
-
 </td>
 <td valign="top">
 
@@ -928,8 +792,6 @@ Covers the following kinds of artifact: User Credentials, OAuth2 Client Credenti
 
 [Managing Security Material](../50-Development/managing-security-material-b8ccb53.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -937,14 +799,10 @@ Covers the following kinds of artifact: User Credentials, OAuth2 Client Credenti
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Delete security material
-
-
 
 </td>
 <td valign="top">
@@ -963,8 +821,6 @@ Covers the following kinds of artifact: User Credentials, OAuth2 Client Credenti
 
 [Managing Security Material](../50-Development/managing-security-material-b8ccb53.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -972,14 +828,10 @@ Covers the following kinds of artifact: User Credentials, OAuth2 Client Credenti
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Upload security material
-
-
 
 </td>
 <td valign="top">
@@ -998,8 +850,6 @@ Covers the following kinds of artifact: known hosts, PGP public keyring, PGP sec
 
 [Managing Security Material](../50-Development/managing-security-material-b8ccb53.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1007,14 +857,10 @@ Covers the following kinds of artifact: known hosts, PGP public keyring, PGP sec
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Undeploy security material
-
-
 
 </td>
 <td valign="top">
@@ -1044,8 +890,6 @@ Covers the following kinds of artifact: known hosts, PGP public keyring, PGP sec
 
 [Managing Security Material](../50-Development/managing-security-material-b8ccb53.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1053,14 +897,10 @@ Covers the following kinds of artifact: known hosts, PGP public keyring, PGP sec
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Download security material
-
-
 
 </td>
 <td valign="top">
@@ -1090,8 +930,6 @@ Covers the following kinds of artifact: known hosts, PGP public keyring, PGP sec
 
 [Managing Security Material](../50-Development/managing-security-material-b8ccb53.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1099,14 +937,10 @@ Covers the following kinds of artifact: known hosts, PGP public keyring, PGP sec
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Create access policy
-
-
 
 </td>
 <td valign="top">
@@ -1136,8 +970,6 @@ For the creation of an access policy, the following event is written:
 
 [Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
-
-
 </td>
 </tr>
 <tr>
@@ -1145,14 +977,10 @@ For the creation of an access policy, the following event is written:
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Update access policy
-
-
 
 </td>
 <td valign="top">
@@ -1183,8 +1011,6 @@ For the update of an access policy, the following event is written:
 
 [Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
-
-
 </td>
 </tr>
 <tr>
@@ -1192,14 +1018,10 @@ For the update of an access policy, the following event is written:
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Delete access policy
-
-
 
 </td>
 <td valign="top">
@@ -1237,8 +1059,6 @@ If you delete an access policy that includes artifact references, 2 logs are wri
 
 [Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
-
-
 </td>
 </tr>
 <tr>
@@ -1246,14 +1066,10 @@ If you delete an access policy that includes artifact references, 2 logs are wri
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Create artifact reference \(for access policy\)
-
-
 
 </td>
 <td valign="top">
@@ -1284,8 +1100,6 @@ For the creation of an artifact reference of an access policy, the following eve
 
 [Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
-
-
 </td>
 </tr>
 <tr>
@@ -1293,14 +1107,10 @@ For the creation of an artifact reference of an access policy, the following eve
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Update artifact reference \(for access policy\)
-
-
 
 </td>
 <td valign="top">
@@ -1333,8 +1143,6 @@ For the update of an artifact reference of an access policy, the following event
 
 [Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
-
-
 </td>
 </tr>
 <tr>
@@ -1342,14 +1150,10 @@ For the update of an artifact reference of an access policy, the following event
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Delete artifact reference \(for access policy\)
-
-
 
 </td>
 <td valign="top">
@@ -1368,8 +1172,6 @@ Delete artifact reference \(for access policy\)
 
 [Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
-
-
 </td>
 </tr>
 <tr>
@@ -1377,14 +1179,10 @@ Delete artifact reference \(for access policy\)
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Deploy JDBC material
-
-
 
 </td>
 <td valign="top">
@@ -1411,8 +1209,6 @@ For the deployment of JDBC material, the following event is written:
 
 [Managing JDBC Material](../50-Development/managing-jdbc-material-32ee7cd.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1420,14 +1216,10 @@ For the deployment of JDBC material, the following event is written:
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Undeploy JDBC material
-
-
 
 </td>
 <td valign="top">
@@ -1444,37 +1236,27 @@ Undeploy JDBC material
 
 [Managing JDBC Material](../50-Development/managing-jdbc-material-32ee7cd.md) 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Manage security
-
-
 
 </td>
 <td valign="top">
 
 Create user role \(only Cloud Foundry\)
 
-
-
 </td>
 <td valign="top">
 
 \(tbd\)
 
-
-
 </td>
 <td valign="top">
 
 [Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md) 
-
-
 
 </td>
 </tr>
@@ -1482,29 +1264,21 @@ Create user role \(only Cloud Foundry\)
 <td valign="top">
 
 Manage security
-
-
 
 </td>
 <td valign="top">
 
 Update user role \(only Cloud Foundry\)
 
-
-
 </td>
 <td valign="top">
 
 \(tbd\)
 
-
-
 </td>
 <td valign="top">
 
 [Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md) 
-
-
 
 </td>
 </tr>
@@ -1513,28 +1287,20 @@ Update user role \(only Cloud Foundry\)
 
 Manage security
 
-
-
 </td>
 <td valign="top">
 
 Delete user role \(only Cloud Foundry\)
-
-
 
 </td>
 <td valign="top">
 
 \(tbd\)
 
-
-
 </td>
 <td valign="top">
 
 [Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md) 
-
-
 
 </td>
 </tr>
@@ -1543,14 +1309,10 @@ Delete user role \(only Cloud Foundry\)
 
 Manage stores
 
-
-
 </td>
 <td valign="top">
 
 Download data store entry
-
-
 
 </td>
 <td valign="top">
@@ -1578,8 +1340,6 @@ Downloading data store entry `HT-1037` of global data store `Products` writes th
 
 [Managing Data Stores](../50-Development/managing-data-stores-ac39f1d.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1587,14 +1347,10 @@ Downloading data store entry `HT-1037` of global data store `Products` writes th
 
 Manage stores
 
-
-
 </td>
 <td valign="top">
 
 Delete data store entry
-
-
 
 </td>
 <td valign="top">
@@ -1622,8 +1378,6 @@ Deletion of data store entry `126` of global data store `CustomerReviews` writes
 
 [Managing Data Stores](../50-Development/managing-data-stores-ac39f1d.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1631,14 +1385,10 @@ Deletion of data store entry `126` of global data store `CustomerReviews` writes
 
 Manage stores
 
-
-
 </td>
 <td valign="top">
 
 Delete data store
-
-
 
 </td>
 <td valign="top">
@@ -1665,8 +1415,6 @@ Deletion of global data store `CustomerReviews` writes the following audit log e
 
 [Managing Data Stores](../50-Development/managing-data-stores-ac39f1d.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1674,14 +1422,10 @@ Deletion of global data store `CustomerReviews` writes the following audit log e
 
 Manage stores
 
-
-
 </td>
 <td valign="top">
 
 Download variable
-
-
 
 </td>
 <td valign="top">
@@ -1719,8 +1463,6 @@ Download of local variable `ProductId` \(related to integration flow `Write_Prod
 
 [Managing Variables](../50-Development/managing-variables-ca93653.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1728,14 +1470,10 @@ Download of local variable `ProductId` \(related to integration flow `Write_Prod
 
 Manage stores
 
-
-
 </td>
 <td valign="top">
 
 Delete variable
-
-
 
 </td>
 <td valign="top">
@@ -1774,8 +1512,6 @@ Deletion of local variable `ProductId` \(related to integration flow `Write_Prod
 
 [Managing Variables](../50-Development/managing-variables-ca93653.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1783,14 +1519,10 @@ Deletion of local variable `ProductId` \(related to integration flow `Write_Prod
 
 Manage stores
 
-
-
 </td>
 <td valign="top">
 
 Move messages to another queue
-
-
 
 </td>
 <td valign="top">
@@ -1807,8 +1539,6 @@ Move messages to another queue
 
 [Managing Message Queues](../50-Development/managing-message-queues-cdcce24.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1816,14 +1546,10 @@ Move messages to another queue
 
 Manage stores
 
-
-
 </td>
 <td valign="top">
 
 Delete message queue
-
-
 
 </td>
 <td valign="top">
@@ -1850,8 +1576,6 @@ Deletion of message queue `MyQueue` writes the following audit log event:
 
 [Managing Message Queues](../50-Development/managing-message-queues-cdcce24.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1859,14 +1583,10 @@ Deletion of message queue `MyQueue` writes the following audit log event:
 
 Manage stores
 
-
-
 </td>
 <td valign="top">
 
 Delete message from message queue
-
-
 
 </td>
 <td valign="top">
@@ -1893,8 +1613,6 @@ Deletion of a message from message queue `MyQueue` writes the following audit lo
 
 [Managing Message Queues](../50-Development/managing-message-queues-cdcce24.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1902,14 +1620,10 @@ Deletion of a message from message queue `MyQueue` writes the following audit lo
 
 Manage stores
 
-
-
 </td>
 <td valign="top">
 
 Download message from message queue
-
-
 
 </td>
 <td valign="top">
@@ -1936,8 +1650,6 @@ Downloading a message from message queue `MyQueue` writes the following audit lo
 
 [Managing Message Queues](../50-Development/managing-message-queues-cdcce24.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1945,14 +1657,10 @@ Downloading a message from message queue `MyQueue` writes the following audit lo
 
 Manage stores
 
-
-
 </td>
 <td valign="top">
 
 Retry message from message queue
-
-
 
 </td>
 <td valign="top">
@@ -1969,8 +1677,6 @@ Retry message from message queue
 
 [Managing Message Queues](../50-Development/managing-message-queues-cdcce24.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1978,14 +1684,10 @@ Retry message from message queue
 
 Message monitoring
 
-
-
 </td>
 <td valign="top">
 
 Read / download message payload / header when monitoring integration flow with Trace log level
-
-
 
 </td>
 <td valign="top">
@@ -2014,8 +1716,6 @@ Reading the message payload writes the following audit log event:
 
 [Monitor Message Processing](../50-Development/monitor-message-processing-314df3f.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -2023,14 +1723,10 @@ Reading the message payload writes the following audit log event:
 
 Message monitoring
 
-
-
 </td>
 <td valign="top">
 
 Read message processing log attachment
-
-
 
 </td>
 <td valign="top">
@@ -2046,8 +1742,6 @@ Read message processing log attachment
 <td valign="top">
 
 [Monitor Message Processing](../50-Development/monitor-message-processing-314df3f.md) 
-
-
 
 </td>
 </tr>

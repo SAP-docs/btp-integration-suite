@@ -45,15 +45,11 @@ You're in the edit mode of the MAG editor.
     <th valign="top">
 
     Icon
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -61,15 +57,11 @@ You're in the edit mode of the MAG editor.
     <td valign="top">
     
     <span class="SAP-icons"></span> \(create new copy of this snippet\)
-
-
     
     </td>
     <td valign="top">
     
     Creates a copy of an existing code snippet.
-
-
     
     </td>
     </tr>
@@ -77,15 +69,11 @@ You're in the edit mode of the MAG editor.
     <td valign="top">
     
     :wastebasket:
-
-
     
     </td>
     <td valign="top">
     
     Deletes the code snippet.
-
-
     
     </td>
     </tr>

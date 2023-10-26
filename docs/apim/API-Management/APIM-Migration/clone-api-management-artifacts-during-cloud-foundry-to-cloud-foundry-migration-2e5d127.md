@@ -81,36 +81,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <th valign="top" colspan="3">
 
     Input Field
-
-
     
     </th>
     <th valign="top">
 
     Type of Credentials
-
-
     
     </th>
     <th valign="top">
 
     Data Type
-
-
     
     </th>
     <th valign="top">
 
     Required/Optional
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -118,8 +108,6 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top" rowspan="17">
     
     source
-
-
     
     </td>
     <td valign="top" rowspan="8">
@@ -135,36 +123,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `url`
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Required
-
-
     
     </td>
     <td valign="top">
     
     URL received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
-
-
     
     </td>
     </tr>
@@ -172,36 +150,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `tokenUrl`
-
-
     
     </td>
     <td valign="top" rowspan="3">
     
     Client Secret
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     Token URL received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
-
-
     
     </td>
     </tr>
@@ -209,22 +177,16 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `clientId`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
@@ -234,8 +196,6 @@ Once you have your source and target system ready, you can clone your API Manage
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
     To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
-
-
     
     </td>
     </tr>
@@ -243,22 +203,16 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `clientSecret`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
@@ -266,8 +220,6 @@ Once you have your source and target system ready, you can clone your API Manage
     The client secret received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
-
-
     
     </td>
     </tr>
@@ -275,36 +227,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `certurl`
-
-
     
     </td>
     <td valign="top" rowspan="4">
     
     X509 mTLS
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Required
-
-
     
     </td>
     <td valign="top">
     
     Cert URL received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -312,29 +254,21 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `certificate`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Required
-
-
     
     </td>
     <td valign="top">
     
     The content of the certificate received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -342,29 +276,21 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `clientid`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Required
-
-
     
     </td>
     <td valign="top">
     
     Client ID received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -372,29 +298,21 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `privatekey`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Required
-
-
     
     </td>
     <td valign="top">
     
     Private Key received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -412,36 +330,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `url`
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Required
-
-
     
     </td>
     <td valign="top">
     
     URL received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
-
-
     
     </td>
     </tr>
@@ -449,36 +357,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `tokenUrl`
-
-
     
     </td>
     <td valign="top" rowspan="3">
     
     Client Secret
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     Token URL received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
-
-
     
     </td>
     </tr>
@@ -486,22 +384,16 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `clientId`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
@@ -509,8 +401,6 @@ Once you have your source and target system ready, you can clone your API Manage
     The client ID received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
-
-
     
     </td>
     </tr>
@@ -518,22 +408,16 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `clientSecret`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
@@ -541,8 +425,6 @@ Once you have your source and target system ready, you can clone your API Manage
     The client secret received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
-
-
     
     </td>
     </tr>
@@ -550,36 +432,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `certurl`
-
-
     
     </td>
     <td valign="top" rowspan="4">
     
     X509 mTLS
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     Certificate URL received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -587,29 +459,21 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `certificate`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     The contents of the certificate received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -617,29 +481,21 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `clientid`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     Client ID received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -647,29 +503,21 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `privatekey`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     Private Key received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -677,43 +525,31 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     cfSubaccountTenantID
-
-
     
     </td>
     <td valign="top">
     
     Supported values: "guid"
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Not Applicable
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -721,8 +557,6 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top" rowspan="16">
     
     target
-
-
     
     </td>
     <td valign="top" rowspan="8">
@@ -738,36 +572,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `Url`
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Required
-
-
     
     </td>
     <td valign="top">
     
     URL received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
-
-
     
     </td>
     </tr>
@@ -775,36 +599,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `tokenUrl`
-
-
     
     </td>
     <td valign="top" rowspan="3">
     
     Client Secret
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Required
-
-
     
     </td>
     <td valign="top">
     
     Token URL received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
-
-
     
     </td>
     </tr>
@@ -812,22 +626,16 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `clientId`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
@@ -835,8 +643,6 @@ Once you have your source and target system ready, you can clone your API Manage
     The client ID received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
-
-
     
     </td>
     </tr>
@@ -844,22 +650,16 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `clientSecret`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
@@ -867,8 +667,6 @@ Once you have your source and target system ready, you can clone your API Manage
     The client secret received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
-
-
     
     </td>
     </tr>
@@ -876,36 +674,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `certurl`
-
-
     
     </td>
     <td valign="top" rowspan="4">
     
     X509 mTLS
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     Certificate URL received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -913,29 +701,21 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `certificate`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     The contents of the certificate received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -943,29 +723,21 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `clientid`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     Client ID received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -973,29 +745,21 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `privatekey`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     Private Key received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -1013,36 +777,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `url`
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Required
-
-
     
     </td>
     <td valign="top">
     
     URL received during creation of the service key for API business hub enterprise API access for the `AuthGroup.API.Admin` role.
-
-
     
     </td>
     </tr>
@@ -1050,36 +804,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `tokenUrl`
-
-
     
     </td>
     <td valign="top" rowspan="3">
     
     Client Secret
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Required
-
-
     
     </td>
     <td valign="top">
     
     Token url received during creation of the service key for API business hub enterprise API access for the `AuthGroup.API.Admin` role.
-
-
     
     </td>
     </tr>
@@ -1087,22 +831,16 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `clientId`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
@@ -1110,8 +848,6 @@ Once you have your source and target system ready, you can clone your API Manage
     The client ID received during creation of the service key for API business hub enterprise API access for the `AuthGroup.API.Admin` role.
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
-
-
     
     </td>
     </tr>
@@ -1119,22 +855,16 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `clientSecret`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
@@ -1142,8 +872,6 @@ Once you have your source and target system ready, you can clone your API Manage
     The client secret received during creation of the service key for API business hub enterprise API access for the `AuthGroup.API.Admin` role.
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
-
-
     
     </td>
     </tr>
@@ -1151,36 +879,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `certurl`
-
-
     
     </td>
     <td valign="top" rowspan="4">
     
     X509 mTLS
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     Certificate URL received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -1188,29 +906,21 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `certificate`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     The contents of the certificate received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -1218,29 +928,21 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `clientid`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     Client ID received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -1248,29 +950,21 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     `privatekey`
-
-
     
     </td>
     <td valign="top">
     
     String
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     Private Key received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-
-
     
     </td>
     </tr>
@@ -1278,43 +972,31 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     skipApplicationKeySecretCloning
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Supported values: `true/false`
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Boolean
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
@@ -1335,43 +1017,31 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top" rowspan="2">
     
     clone
-
-
     
     </td>
     <td valign="top">
     
     skip-apiportal
-
-
     
     </td>
     <td valign="top">
     
     Supported values: `true/false`
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Boolean
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
@@ -1387,36 +1057,26 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     skip-devportal
-
-
     
     </td>
     <td valign="top">
     
     Supported values: `true/false`
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Boolean
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
@@ -1432,50 +1092,36 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     stage
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Supported values: `"DEFAULT" | "SWITCHOVER`
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     string
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     <td valign="top">
     
     The default values for this parameter is supported. Switchover is not applicable for this scenario.
-
-
     
     </td>
     </tr>
@@ -1568,15 +1214,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <th valign="top">
 
     Column
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -1584,15 +1226,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     ID
-
-
     
     </td>
     <td valign="top">
     
     Entity ID
-
-
     
     </td>
     </tr>
@@ -1600,15 +1238,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Entity name
-
-
     
     </td>
     </tr>
@@ -1616,15 +1250,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     Entity type
-
-
     
     </td>
     </tr>
@@ -1632,15 +1262,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Script Execution Timestamp \(UTC\)
-
-
     
     </td>
     <td valign="top">
     
     Script execution time in UTC
-
-
     
     </td>
     </tr>
@@ -1648,15 +1274,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Artifact’s Last Modified Timestamp \(UTC\)
-
-
     
     </td>
     <td valign="top">
     
     Last modified time of the entity in the source API Management system \(UTC\)
-
-
     
     </td>
     </tr>
@@ -1664,8 +1286,6 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     STATUS
-
-
     
     </td>
     <td valign="top">

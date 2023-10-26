@@ -22,14 +22,10 @@ A Content Modifier removes the preamble of the incoming XML message by creating 
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -38,14 +34,10 @@ Value
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 payload
-
-
 
 </td>
 </tr>
@@ -54,14 +46,10 @@ payload
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
 org.w3c.dom.Element
-
-
 
 </td>
 </tr>
@@ -70,14 +58,10 @@ org.w3c.dom.Element
 
 Value
 
-
-
 </td>
 <td valign="top">
 
 /
-
-
 
 </td>
 </tr>

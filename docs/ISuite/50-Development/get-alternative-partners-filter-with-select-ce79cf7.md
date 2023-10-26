@@ -15,14 +15,10 @@ Perform the following call:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Resource Path
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `/AlternativePartners?$filter=Agency eq '{Agency}' and Scheme eq '{Scheme}' and Id eq '{Id}'&$select=Pid` 
-
-
 
 </td>
 </tr>

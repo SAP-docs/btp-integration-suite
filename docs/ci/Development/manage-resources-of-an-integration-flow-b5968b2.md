@@ -13,35 +13,25 @@ Use *Resources* tab to manage different resources associated within an integrati
 
 Category
 
-
-
 </th>
 <th valign="top">
 
 File Type
-
-
 
 </th>
 <th valign="top">
 
 Extensions
 
-
-
 </th>
 <th valign="top">
 
 You can add from
 
-
-
 </th>
 <th valign="top">
 
 You can...
-
-
 
 </th>
 </tr>
@@ -50,21 +40,15 @@ You can...
 
 Archives
 
-
-
 </td>
 <td valign="top">
 
 Archive
 
-
-
 </td>
 <td valign="top">
 
 `.jar` 
-
-
 
 </td>
 <td valign="top">
@@ -73,14 +57,10 @@ File System
 
 Integration Flow
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -89,21 +69,15 @@ Integration Flow
 
 Mappings
 
-
-
 </td>
 <td valign="top">
 
 Message Mapping
 
-
-
 </td>
 <td valign="top">
 
 `.mmap` 
-
-
 
 </td>
 <td valign="top">
@@ -114,14 +88,10 @@ Integration Flow
 
 ES Repository
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -130,28 +100,20 @@ ES Repository
 
 Operation Mapping
 
-
-
 </td>
 <td valign="top">
 
 `.opmap` 
-
-
 
 </td>
 <td valign="top">
 
 ES Repository
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -160,16 +122,12 @@ ES Repository
 
 XSLT Mapping
 
-
-
 </td>
 <td valign="top">
 
 `.xslt`
 
 `.xsl`
-
-
 
 </td>
 <td valign="top">
@@ -178,14 +136,10 @@ File System
 
 Integration Flow
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -194,14 +148,10 @@ Integration Flow
 
 Scripts
 
-
-
 </td>
 <td valign="top">
 
 Groovy Script
-
-
 
 </td>
 <td valign="top">
@@ -212,8 +162,6 @@ Groovy Script
 
 `.groovy`
 
-
-
 </td>
 <td valign="top">
 
@@ -221,14 +169,10 @@ File System
 
 Integration Flow
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -237,14 +181,10 @@ Integration Flow
 
 Java Script
 
-
-
 </td>
 <td valign="top">
 
 `.js` 
-
-
 
 </td>
 <td valign="top">
@@ -253,14 +193,10 @@ File System
 
 Integration Flow
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -269,21 +205,15 @@ Integration Flow
 
 Schemas
 
-
-
 </td>
 <td valign="top">
 
 XSD
 
-
-
 </td>
 <td valign="top">
 
 `.xsd` 
-
-
 
 </td>
 <td valign="top">
@@ -292,14 +222,10 @@ File System
 
 Integration Flow
 
-
-
 </td>
 <td valign="top">
 
 Upload individual files or an archive file that contains only XSD resources.
-
-
 
 </td>
 </tr>
@@ -308,16 +234,12 @@ Upload individual files or an archive file that contains only XSD resources.
 
 WSDL
 
-
-
 </td>
 <td valign="top">
 
 `.wsdl`
 
 `.xsd`
-
-
 
 </td>
 <td valign="top">
@@ -328,14 +250,10 @@ Integration Flow
 
 ES Repository
 
-
-
 </td>
 <td valign="top">
 
 Upload individual files or an archive file that contains multiple WSDL or XSD or both type resources.
-
-
 
 </td>
 </tr>
@@ -344,8 +262,6 @@ Upload individual files or an archive file that contains multiple WSDL or XSD or
 
 EDMX
 
-
-
 </td>
 <td valign="top">
 
@@ -353,16 +269,12 @@ EDMX
 
 `.xml`
 
-
-
 </td>
 <td valign="top">
 
 File System
 
 Integration Flow
-
-
 
 </td>
 <td valign="top">
@@ -371,8 +283,6 @@ Upload individual EDMX or XML files, or an archive file that contains multiple E
 
 Ensure that your XML file contains the valid EDMX tag.
 
-
-
 </td>
 </tr>
 <tr>
@@ -380,14 +290,10 @@ Ensure that your XML file contains the valid EDMX tag.
 
 JSON
 
-
-
 </td>
 <td valign="top">
 
 `.json` 
-
-
 
 </td>
 <td valign="top">
@@ -396,14 +302,10 @@ File System
 
 Integration Flow
 
-
-
 </td>
 <td valign="top">
 
 Upload individual files or an archive file that contains only XSL resources.
-
-
 
 </td>
 </tr>
@@ -499,14 +401,10 @@ You can perform the following actions for managing resource files:
 
 Actions
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -515,14 +413,10 @@ Description
 
 :wastebasket:
 
-
-
 </td>
 <td valign="top">
 
 Removes relevant resource file from the integration flow. Before deleting make sure that the selected file isn't being referred in other integration flows.
-
-
 
 </td>
 </tr>
@@ -532,8 +426,6 @@ Removes relevant resource file from the integration flow. Before deleting make s
 <span class="SAP-icons"></span> \(Download\)
 
 \(Applicable only for local resources\)
-
-
 
 </td>
 <td valign="top">

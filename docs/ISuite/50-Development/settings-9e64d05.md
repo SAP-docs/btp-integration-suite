@@ -13,21 +13,15 @@ In the *Settings* section you can fine-tune the process of setting up individual
 
 Capability
 
-
-
 </th>
 <th valign="top">
 
-Tab
-
-
+Tabs
 
 </th>
 <th valign="top">
 
 Document Link
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Document Link
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
-Integrations
-
-
+Integrations, Runtime
 
 </td>
 <td valign="top">
 
 [Configuring Integration Settings](IntegrationSettings/configuring-integration-settings-98091f7.md)
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Integrations
 
 API Management
 
-
-
 </td>
 <td valign="top">
 
-APIs
-
-
+APIs, Runtime
 
 </td>
 <td valign="top">
 
 [Setting Up API Management Capability](setting-up-api-management-capability-f34e86c.md)
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ APIs
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 MIGs and MAGs
 
-
-
 </td>
 <td valign="top">
 
 [Documentation Template for MIGs and MAGs](documentation-template-for-migs-and-mags-4c442af.md)
-
-
 
 </td>
 </tr>

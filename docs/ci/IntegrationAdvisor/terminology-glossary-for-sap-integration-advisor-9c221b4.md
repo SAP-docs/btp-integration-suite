@@ -9,14 +9,10 @@
 
 Term
 
-
-
 </th>
 <th valign="top">
 
 Definition
-
-
 
 </th>
 </tr>
@@ -24,8 +20,6 @@ Definition
 <td valign="top">
 
 Type System
-
-
 
 </td>
 <td valign="top">
@@ -40,8 +34,6 @@ A "Type System" is an independent system of data description format of reusable 
 
 Only a single agency \(organization ANSI ASC X12 for the Type System ASC X12 or organization SAP SE for the Type System SAP IDoc\) is responsible for the development and maintenance of the syntax, concept \(methodology\) and library.
 
-
-
 </td>
 </tr>
 <tr>
@@ -49,14 +41,10 @@ Only a single agency \(organization ANSI ASC X12 for the Type System ASC X12 or 
 
 Message Implementation Guideline \(MIG\)
 
-
-
 </td>
 <td valign="top">
 
 A Message Implementation Guideline \(also called as Message Guideline or MIG\) is a detailed documentation of a A2A/B2B message type considering just these aspects and constraints for fulfilling the needs of the user's business purpose in a given business context.
-
-
 
 </td>
 </tr>
@@ -65,8 +53,6 @@ A Message Implementation Guideline \(also called as Message Guideline or MIG\) i
 
 Mapping Guideline \(MAG\)
 
-
-
 </td>
 <td valign="top">
 
@@ -74,16 +60,12 @@ A Mapping Guideline \(also called as a MAG\) is an artifact that you can directl
 
 A Mapping Guideline \(MAG\) is based on a source and a target message implementation guideline. It demonstrates how the defined nodes at each side are mapped, describing all mapping elements in detail with definitions or notes and providing further instructions for the transformation, such as functions or code value mappings.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Business Context
-
-
 
 </td>
 <td valign="top">
@@ -101,8 +83,6 @@ The business context is a very important part of the MIG. It labels the MIG so t
 
 The accuracy of the proposal depends on the selected number of business context categories and business context values. As more business context categories and values you selected as tighter will be the proposal.
 
-
-
 </td>
 </tr>
 <tr>
@@ -110,14 +90,10 @@ The accuracy of the proposal depends on the selected number of business context 
 
 Message
 
-
-
 </td>
 <td valign="top">
 
 A message is used to describe business document transactions between two business partners in electronic manner.
-
-
 
 </td>
 </tr>
@@ -126,14 +102,10 @@ A message is used to describe business document transactions between two busines
 
 Complex Types
 
-
-
 </td>
 <td valign="top">
 
 Reusable complex structures that are used for assembling a message. Each complex type has a complex structure of child elements for expressing the properties of a complex object such as *Partner*, *Location* or *Address*.
-
-
 
 </td>
 </tr>
@@ -142,14 +114,10 @@ Reusable complex structures that are used for assembling a message. Each complex
 
 Simple Types
 
-
-
 </td>
 <td valign="top">
 
 Reusable simple types are defining the characteristics and properties of leaf elements that are used for carrying data in an instance
-
-
 
 </td>
 </tr>
@@ -157,8 +125,6 @@ Reusable simple types are defining the characteristics and properties of leaf el
 <td valign="top">
 
 Codelists
-
-
 
 </td>
 <td valign="top">
@@ -186,14 +152,10 @@ Codelists require consideration when you use them in MIGs, for the following rea
 
 Qualifiers
 
-
-
 </td>
 <td valign="top">
 
 The qualifier reference approach in IA supports the semantic qualification in a very efficient manner. The qualifier references bring both, the semantically generic elements and the leaf elements who provide the additional meaning by code values together. This new approach is very powerful, because it increases the understanding of customized interfaces in MIGs on business meaning level and furthermore, it significantly reduces the efforts in mappings.
-
-
 
 </td>
 </tr>
@@ -201,8 +163,6 @@ The qualifier reference approach in IA supports the semantic qualification in a 
 <td valign="top">
 
 Notes
-
-
 
 </td>
 <td valign="top">
@@ -216,8 +176,6 @@ The *Constraint* category is used to provide information about the qualifiers.
 The *Example* category is used to provide example data.
 
 The *Comment* category is used to provide addition information.
-
-
 
 </td>
 </tr>

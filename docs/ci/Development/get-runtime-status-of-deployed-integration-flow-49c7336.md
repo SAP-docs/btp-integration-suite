@@ -13,21 +13,15 @@ Perform three subsequent calls:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -36,44 +30,32 @@ Purpose
 
 POST
 
-
-
 </td>
 <td valign="top">
 
 `/DeployIntegrationDesigntimeArtifact?Id='<bundleId>'&Version='<version>'` 
-
-
 
 </td>
 <td valign="top">
 
 Get taskID of currently deployed integration flow.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 GET
-
-
 
 </td>
 <td valign="top">
 
 `/BuildAndDeployStatus(TaskId='<taskid>’)` 
 
-
-
 </td>
 <td valign="top">
 
 Get build and deploy status of currently deployed integration flow.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Get build and deploy status of currently deployed integration flow.
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `/IntegrationRuntimeArtifacts('<bundleId>')` 
 
-
-
 </td>
 <td valign="top">
 
 If build and deploy status is Success, get runtime status of currently deployed integration flow.
-
-
 
 </td>
 </tr>

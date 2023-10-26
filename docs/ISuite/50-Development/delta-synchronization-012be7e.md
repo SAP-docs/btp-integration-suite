@@ -75,14 +75,10 @@ Before the first run, the following externalized parameters must be set:
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Default Value
-
-
 
 </th>
 </tr>
@@ -90,8 +86,6 @@ Default Value
 <td valign="top">
 
 address
-
-
 
 </td>
 <td valign="top">
@@ -112,14 +106,10 @@ URL to access the `Message Processing Logs` OData API for your tenant. For examp
 
 credentialName
 
-
-
 </td>
 <td valign="top">
 
 Credential Name to access the Cloud Integration OData API for your tenant. By default, the name `iFlowDesignGuidelineUser` is preset.
-
-
 
 </td>
 </tr>
@@ -128,14 +118,10 @@ Credential Name to access the Cloud Integration OData API for your tenant. By de
 
 defaultDate
 
-
-
 </td>
 <td valign="top">
 
 Date for the first run of the process in following format `yyyy-MM-ddT00:00:00`. For example: date now – 1 day
-
-
 
 </td>
 </tr>

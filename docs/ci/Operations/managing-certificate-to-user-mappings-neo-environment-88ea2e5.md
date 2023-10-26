@@ -26,14 +26,10 @@ A list of certificate-to-user mappings is displayed in a table. For each artifac
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -42,14 +38,10 @@ Description
 
 *User Name* 
 
-
-
 </td>
 <td valign="top">
 
 Name of the user to which the certificate is to be mapped
-
-
 
 </td>
 </tr>
@@ -58,14 +50,10 @@ Name of the user to which the certificate is to be mapped
 
 *Subject DN* 
 
-
-
 </td>
 <td valign="top">
 
 Indicates the subject distinguished name \(DN\) which entails information about the owner of the certificate such as the common name of the certificate owner \(CN\), the organization \(O\), or the country or region \(C\).
-
-
 
 </td>
 </tr>
@@ -74,14 +62,10 @@ Indicates the subject distinguished name \(DN\) which entails information about 
 
 *Issuer DN* 
 
-
-
 </td>
 <td valign="top">
 
 Indicates the Issuer distinguished name \(DN\) which entails information about the issuer of the certificate such as common name of the certificate issuer \(CN\), the organization \(O\), or the country or region \(C\).
-
-
 
 </td>
 </tr>
@@ -90,14 +74,10 @@ Indicates the Issuer distinguished name \(DN\) which entails information about t
 
 *Serial Number* 
 
-
-
 </td>
 <td valign="top">
 
 Unique serial number of the certificate
-
-
 
 </td>
 </tr>
@@ -106,14 +86,10 @@ Unique serial number of the certificate
 
 *Valid Until* 
 
-
-
 </td>
 <td valign="top">
 
 Time when the certificate expires
-
-
 
 </td>
 </tr>
@@ -122,14 +98,10 @@ Time when the certificate expires
 
 *Last Modified by* 
 
-
-
 </td>
 <td valign="top">
 
 Name of user who has modified the certificate-to-user mapping the last time
-
-
 
 </td>
 </tr>
@@ -138,14 +110,10 @@ Name of user who has modified the certificate-to-user mapping the last time
 
 *Last Modified on* 
 
-
-
 </td>
 <td valign="top">
 
 Date and time when certificate-to-user mapping has been modified the last time
-
-
 
 </td>
 </tr>

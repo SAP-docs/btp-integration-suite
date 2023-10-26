@@ -19,14 +19,10 @@ Note that 1 JMS queue comes with the following resources in terms of data volume
 
 Queue capacity
 
-
-
 </td>
 <td valign="top">
 
 300 MB
-
-
 
 </td>
 </tr>
@@ -35,14 +31,10 @@ Queue capacity
 
 Transactions
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 </tr>
@@ -51,14 +43,10 @@ Transactions
 
 Consumers
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 </tr>
@@ -67,14 +55,10 @@ Consumers
 
 Providers
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 </tr>
@@ -83,14 +67,10 @@ Providers
 
 Message volume that can be processed by JMS messaging
 
-
-
 </td>
 <td valign="top">
 
 5 GB/month
-
-
 
 </td>
 </tr>
@@ -113,21 +93,15 @@ Note that resources such like number of transactions, message volume, etc, calcu
 
  
 
-
-
 </th>
 <th valign="top">
 
 Default JMS resources
 
-
-
 </th>
 <th valign="top">
 
 Maximum JMS resources to get by self-service
-
-
 
 </th>
 </tr>
@@ -136,21 +110,15 @@ Maximum JMS resources to get by self-service
 
 Number of JMS queues
 
-
-
 </td>
 <td valign="top">
 
 30
 
-
-
 </td>
 <td valign="top">
 
 100
-
-
 
 </td>
 </tr>
@@ -159,21 +127,15 @@ Number of JMS queues
 
 Queue Capacity
 
-
-
 </td>
 <td valign="top">
 
 9.3 GB
 
-
-
 </td>
 <td valign="top">
 
 30 GB
-
-
 
 </td>
 </tr>
@@ -182,21 +144,15 @@ Queue Capacity
 
 Number of transactions
 
-
-
 </td>
 <td valign="top">
 
 150
 
-
-
 </td>
 <td valign="top">
 
 500
-
-
 
 </td>
 </tr>
@@ -205,21 +161,15 @@ Number of transactions
 
 Number of consumers
 
-
-
 </td>
 <td valign="top">
 
 150
 
-
-
 </td>
 <td valign="top">
 
 500
-
-
 
 </td>
 </tr>
@@ -228,21 +178,15 @@ Number of consumers
 
 Number of providers
 
-
-
 </td>
 <td valign="top">
 
 159
 
-
-
 </td>
 <td valign="top">
 
 500
-
-
 
 </td>
 </tr>
@@ -251,21 +195,15 @@ Number of providers
 
 Message volume that can be processed by JMS messaging
 
-
-
 </td>
 <td valign="top">
 
 150 GB/month
 
-
-
 </td>
 <td valign="top">
 
 500 GB/month
-
-
 
 </td>
 </tr>
@@ -301,21 +239,15 @@ You can increase the capacity up to 100 queues be self-service, as described in 
 
 License
 
-
-
 </th>
 <th valign="top">
 
 Increase up to 100 queues by self-service
 
-
-
 </th>
 <th valign="top">
 
 Increase to \> 100 queues
-
-
 
 </th>
 </tr>
@@ -324,8 +256,6 @@ Increase to \> 100 queues
 
 SAP Integration Suite 
 
-
-
 </td>
 <td valign="top">
 
@@ -333,14 +263,10 @@ To get up to 100 queues, for the Cloud Integration capability, increase the JMS 
 
 See the following SAP Community blog: [Integration Suite – Simplified Onboarding and Provisioning](https://blogs.sap.com/2020/05/11/integration-suite-simplified-onboarding-and-provisioning) \(section *Increasing the JMS Message Broker resources*\)
 
-
-
 </td>
 <td valign="top">
 
 Check out [2589823](https://me.sap.com/notes/2589823).
-
-
 
 </td>
 </tr>
@@ -388,14 +314,10 @@ Processing JMS messages always requires a consumer \(JMS sender adapter\) or pro
 
 Min. No. of ...
 
-
-
 </th>
 <th valign="top">
 
 Max. No. of ...
-
-
 
 </th>
 </tr>
@@ -404,14 +326,10 @@ Max. No. of ...
 
 Consumers
 
-
-
 </td>
 <td valign="top">
 
 \(no. of runtime nodes\) x \(no. of JMS queues\)
-
-
 
 </td>
 <td valign="top">
@@ -420,16 +338,12 @@ Consumers
 
 \(where the value of the latter argument is derived from the sender channel parameter *Number of Concurrent Processes*\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Providers
-
-
 
 </td>
 <td valign="top" colspan="2">
@@ -438,8 +352,6 @@ Number of providers for a tenant cannot be calculated \(depends on the sender sy
 
 The no. of providers is equal to the no. of parallel sender calls.
 
-
-
 </td>
 </tr>
 <tr>
@@ -447,21 +359,15 @@ The no. of providers is equal to the no. of parallel sender calls.
 
 Transactions
 
-
-
 </td>
 <td valign="top">
 
 \(min. no. of consumers\) + \(no. of providers\)
 
-
-
 </td>
 <td valign="top">
 
 \(max. no. of consumers\) + \(no. of providers\)
-
-
 
 </td>
 </tr>

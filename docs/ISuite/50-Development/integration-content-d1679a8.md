@@ -6,7 +6,7 @@ Manage integration artifacts for your tenant.
 
 You can access the OData API at:
 
-[https://api.sap.com/api/IntegrationContent/](https://api.sap.com/api/IntegrationContent/)
+[Integration Content](https://api.sap.com/api/IntegrationContent/)
 
 There, you find the basic operations.
 
@@ -20,9 +20,9 @@ This documentation provides additional information.
 
 Operating an integration scenario requires certain integration artifacts. Using the OData API you can access integration artifacts.
 
-Integration artifacts contain the information required for the runtime components to process messages in the context of a certain integration scenario. First and foremost, an integration flow artifact contains all information about the connectivity settings and processing steps modeled in an integration flow model with the Web UI \(in the *Design* section\). When an integration developer has finished the modeling tasks, he or she deploys the integration - as an *integration artifact* - on the tenant and, that way, makes it executable.
+Integration artifacts contain the information required for the runtime components to process messages in the context of a certain integration scenario. First and foremost, an integration flow artifact contains all information about the connectivity settings and processing steps modeled in an integration flow model with the Web UI \(in the *Design* section\). When an integration developer has finished the modeling tasks, they deploy the integration - as an *integration artifact* - on the tenant and, that way, makes it executable.
 
-There are more kinds of artifacts, as summarized in the table below.
+There are more kinds of artifacts, as summarized in the following table.
 
 **Integration Artifact Types**
 
@@ -33,14 +33,10 @@ There are more kinds of artifacts, as summarized in the table below.
 
 Artifact Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -48,8 +44,6 @@ Description
 <td valign="top">
 
 Integration flow
-
-
 
 </td>
 <td valign="top">
@@ -62,16 +56,12 @@ In particular, you define in an integration flow: the senders and receivers of a
 
 You can design an integration flow in the Web UI *Design* section.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Value mapping
-
-
 
 </td>
 <td valign="top">
@@ -96,16 +86,12 @@ You can design a value mapping in the Web UI *Design* section.
 
 OData API 
 
-
-
 </td>
 <td valign="top">
 
 An executable OData API model
 
 You can use an OData API to expose data sources as OData endpoints. You can design an OData in the Web UI *Design* section. The system generates from an OData API an integration flow that contains by default an OData sender adapter.
-
-
 
 </td>
 </tr>
@@ -137,6 +123,8 @@ Assign the following role template:
 
 ## Resources
 
+The following table contains a list of resources and their respective descriptions.
+
 ****
 
 
@@ -146,14 +134,10 @@ Assign the following role template:
 
 Resource
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -162,16 +146,12 @@ Description
 
 Integration Package - Discover
 
-
-
 </td>
 <td valign="top">
 
 Represents an integration package in the Cloud Integration *Discover* section.
 
 You can use the `CopyIntegrationPackage` resource to copy an integration package from the *Discover* section to the *Design* section.
-
-
 
 </td>
 </tr>
@@ -180,8 +160,6 @@ You can use the `CopyIntegrationPackage` resource to copy an integration package
 
 Integration Packages - Design
 
-
-
 </td>
 <td valign="top">
 
@@ -189,16 +167,12 @@ Represents an integration package in the Cloud Integration *Design* section.
 
 You can use resource `IntegrationPackages` to access \(create, update, delete, read\) integration packages. You can read an entire integration package, or only an integration flow or you can read all the packages in design time.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Custom Tag Configurations
-
-
 
 </td>
 <td valign="top">
@@ -244,8 +218,6 @@ More information:
 
 Integration Flow
 
-
-
 </td>
 <td valign="top">
 
@@ -266,8 +238,6 @@ You can use resource `IntegrationDesigntimeArtifacts` to read, download, create,
 
 Configurations of Integration Flow
 
-
-
 </td>
 <td valign="top">
 
@@ -277,16 +247,12 @@ You can read or update integration flow configurations.
 
 You can access integration flow configurations through the `IntegrationDesigntimeArtifacts` resource.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Resources of Integration Flow
-
-
 
 </td>
 <td valign="top">
@@ -311,8 +277,6 @@ You can access integration flow resources through the `IntegrationDesigntimeArti
 
 Message Mapping
 
-
-
 </td>
 <td valign="top">
 
@@ -322,16 +286,12 @@ You can read, create, and delete message mappings.
 
 You can access message mappings through the `MessageMappingDesigntimeArtifacts` resource.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Script Collection
-
-
 
 </td>
 <td valign="top">
@@ -342,16 +302,12 @@ You can create and upload a script collection, add resources to a script collect
 
 You can access script collections through the `ScriptCollectionDesigntimeArtifacts` resource.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Build and Deploy Status
-
-
 
 </td>
 <td valign="top">
@@ -364,16 +320,12 @@ For more information on the possible status values, see [Build and Deploy Status
 
 For integration artifacts that have reached the worker node, another status becomes relevant, the runtime status. The runtime status indicates if a deployed artifact is ready to operate \(see [Runtime Status](runtime-status-c14a7b1.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 MDI Delta Token
-
-
 
 </td>
 <td valign="top">
@@ -382,16 +334,12 @@ Represents the delta token for the SAP Master Data Integration receiver adapter 
 
 See: [SAP Master Data Integration Receiver Adapter](sap-master-data-integration-receiver-adapter-e91e373.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Runtime Artifacts
-
-
 
 </td>
 <td valign="top">
@@ -403,7 +351,7 @@ You can use resource `IntegrationRuntimeArtifacts` to read, deploy, and undeploy
 > ### Note:  
 > To deploy a runtime artifact, you've to include the artifact that you want to deploy as a binary stream into the body of your POST request. Refer to the OData Protocol specification for details on how to use Media Entities.
 > 
-> You can only deploy `BUNDLE` type integration artifacts \(integration flows, value mappings or OData services\).
+> You can only deploy `BUNDLE` type integration artifacts \(integration flows, value mappings, or OData services\).
 
 
 
@@ -414,8 +362,6 @@ You can use resource `IntegrationRuntimeArtifacts` to read, deploy, and undeploy
 
 Error Information of Runtime Artifact
 
-
-
 </td>
 <td valign="top">
 
@@ -425,16 +371,12 @@ You can read error information related to deployed integration artifacts \(such 
 
 You can access error information through the `IntegrationRuntimeArtifacts` resource.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Endpoints of Runtime Artifacts
-
-
 
 </td>
 <td valign="top">
@@ -443,16 +385,12 @@ Represents endpoints of deployed integration content \(for example, integration 
 
 You can use resource `ServiceEndpoints` to read all endpoints provided for integration flows and to get the number of endpoints.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Value Mappings
-
-
 
 </td>
 <td valign="top">
@@ -461,8 +399,6 @@ Represents value mapping.
 
 You can use resource `ValueMappingDesigntimeArtifacts` to read, download, create, upload, deploy value mappings, and to delete entries from value mappings.
 
-
-
 </td>
 </tr>
 <tr>
@@ -470,16 +406,12 @@ You can use resource `ValueMappingDesigntimeArtifacts` to read, download, create
 
 Integration Adapter
 
-
-
 </td>
 <td valign="top">
 
 Represents an integration adapter \(only available in the Cloud Foundry environment\).
 
 You can use resource `IntegrationAdapterDesigntimeArtifacts` to import, deploy, or delete an integration adapter.
-
-
 
 </td>
 </tr>
@@ -496,7 +428,7 @@ For general information about query options, see [Query Options](query-options-9
 
 ## Example Requests
 
-You find various example requests on SAP Business Accelerator Hub at [https://api.sap.com/api/IntegrationContent/](https://api.sap.com/api/IntegrationContent/).
+You find various example requests on SAP Business Accelerator Hub at [Integration Content](https://api.sap.com/api/IntegrationContent/).
 
 For more example requests, see [Integration Content Example Requests](integration-content-example-requests-60cc8f1.md).
 

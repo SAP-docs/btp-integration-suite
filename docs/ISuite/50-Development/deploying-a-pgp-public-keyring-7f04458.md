@@ -41,15 +41,11 @@ You have created a PGP keyring file and stored it on your computer.
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -57,8 +53,6 @@ You have created a PGP keyring file and stored it on your computer.
     <td valign="top">
     
     *Add* 
-
-
     
     </td>
     <td valign="top">
@@ -78,8 +72,6 @@ You have created a PGP keyring file and stored it on your computer.
     <td valign="top">
     
     *Replace* 
-
-
     
     </td>
     <td valign="top">
@@ -89,8 +81,6 @@ You have created a PGP keyring file and stored it on your computer.
     Replaces the whole keyring with the uploaded one \(replaces only the keys that are already available\).
 
     You need to confirm the replacement of the existing keys.
-
-
     
     </td>
     </tr>

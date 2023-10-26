@@ -31,15 +31,11 @@ For more information on XAdES, see:
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -47,8 +43,6 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Time* 
-
-
     
     </td>
     <td valign="top">
@@ -56,8 +50,6 @@ For more information on XAdES, see:
     Select this option if you want to add the signing time to the signature.
 
     This measure helps to provide evidence that the signature key was valid at the time the signature was created.
-
-
     
     </td>
     </tr>
@@ -65,8 +57,6 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Certificate* 
-
-
     
     </td>
     <td valign="top">
@@ -96,8 +86,6 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Digest Algorithm* \(only when either `Certificate Only` or `Certificate Chain` is selected for *Certificate*\)
-
-
     
     </td>
     <td valign="top">
@@ -107,8 +95,6 @@ For more information on XAdES, see:
     This measure helps to control whether the certificate that is used to verify the message content corresponds to the one that has been used to sign the message content.
 
     `SHA256` is proposed as the default.
-
-
     
     </td>
     </tr>
@@ -116,8 +102,6 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Certificate URI*
-
-
     
     </td>
     <td valign="top">
@@ -127,8 +111,6 @@ For more information on XAdES, see:
     If as *Certificate* you have selected `Certificate Only`, only one URI is allowed.
 
     If as *Certificate* you have selected `Certificate Chain`, you can add for each certificate in the certificate chain an URI. The URI must be added at the position where the corresponding certificate in the chain is located. At the position 0 the signing certificate URI must be placed. If for a certain certificate in the chain no URI is available, enter an empty string at the corresponding place in the URI list.
-
-
     
     </td>
     </tr>
@@ -146,15 +128,11 @@ For more information on XAdES, see:
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -162,8 +140,6 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Claimed Roles* \(optional\)
-
-
     
     </td>
     <td valign="top">
@@ -171,8 +147,6 @@ For more information on XAdES, see:
     Specify the claimed roles of the signer.
 
     To specify a claimed role, choose *Add* and enter a text or an XML fragment with the root element *ClaimedRole*.
-
-
     
     </td>
     </tr>
@@ -180,8 +154,6 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Certified Roles* \(optional\)
-
-
     
     </td>
     <td valign="top">
@@ -216,15 +188,11 @@ For more information on XAdES, see:
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -232,15 +200,11 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Description* \(optional\)
-
-
     
     </td>
     <td valign="top">
     
     Provide an informal text to describe the format of the signed data.
-
-
     
     </td>
     </tr>
@@ -248,8 +212,6 @@ For more information on XAdES, see:
     <td valign="top">
     
     *MIME Type* \(optional\)
-
-
     
     </td>
     <td valign="top">
@@ -259,8 +221,6 @@ For more information on XAdES, see:
     You need to enter the MIME type manually.
 
     Example: `text/xml`
-
-
     
     </td>
     </tr>
@@ -276,15 +236,11 @@ For more information on XAdES, see:
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -292,8 +248,6 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
@@ -319,8 +273,6 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Qualifier* \(only relevant if an Identifier *Name* has been specified\)
-
-
     
     </td>
     <td valign="top">
@@ -341,15 +293,11 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Description* \(only relevant if an Identifier *Name* has been specified\)
-
-
     
     </td>
     <td valign="top">
     
     Provide a reference to further documentation of the identifier.
-
-
     
     </td>
     </tr>
@@ -357,15 +305,11 @@ For more information on XAdES, see:
     <td valign="top">
     
     *Documentation Reference* \(only relevant if an Identifier *Name* has been specified\)
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>

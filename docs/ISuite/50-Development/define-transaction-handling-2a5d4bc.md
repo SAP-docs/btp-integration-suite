@@ -51,14 +51,10 @@ Note the following limitations and recommendations related to transaction handli
 
 Integration Flow Contains the Following Elements
 
-
-
 </th>
 <th valign="top">
 
 Recommended Settings/Limitations
-
-
 
 </th>
 </tr>
@@ -66,8 +62,6 @@ Recommended Settings/Limitations
 <td valign="top">
 
 *Aggregator* steps
-
-
 
 </td>
 <td valign="top">
@@ -86,8 +80,6 @@ Recommended Settings/Limitations
 
 *Data Store* operations
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
@@ -95,16 +87,12 @@ Recommended Settings/Limitations
 
 If you choose *Not Required*, the related database operation is committed for each single step and no end-to-end transaction handling is implemented.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Write* 
-
-
 
 </td>
 </tr>
@@ -141,15 +129,11 @@ Let us assume that you want to configure a message multicast and the integration
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -157,8 +141,6 @@ Let us assume that you want to configure a message multicast and the integration
     <td valign="top">
     
     *Required for JDBC* 
-
-
     
     </td>
     <td valign="top">
@@ -180,15 +162,11 @@ Let us assume that you want to configure a message multicast and the integration
     <td valign="top">
     
     *Not Required* 
-
-
     
     </td>
     <td valign="top">
     
     No specific transactional processing is configured. The integration process doesn't process transactions even if \(for example\) data store operations are included.
-
-
     
     </td>
     </tr>
@@ -204,15 +182,11 @@ Let us assume that you want to configure a message multicast and the integration
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -220,15 +194,11 @@ Let us assume that you want to configure a message multicast and the integration
     <td valign="top">
     
     *From Calling Process* 
-
-
     
     </td>
     <td valign="top">
     
     Transactional processing is inherited from the calling process. The value defined for the calling process is used as the timeout.
-
-
     
     </td>
     </tr>
@@ -236,8 +206,6 @@ Let us assume that you want to configure a message multicast and the integration
     <td valign="top">
     
     *Required for JDBC* 
-
-
     
     </td>
     <td valign="top">

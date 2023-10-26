@@ -33,14 +33,10 @@ A list of user roles are displayed in a table. For each role, the following attr
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -48,8 +44,6 @@ Description
 <td valign="top">
 
 Name
-
-
 
 </td>
 <td valign="top">
@@ -68,14 +62,10 @@ Display name of the user role
 
 Description
 
-
-
 </td>
 <td valign="top">
 
 Description of the user role.
-
-
 
 </td>
 </tr>
@@ -83,8 +73,6 @@ Description of the user role.
 <td valign="top">
 
 Owner
-
-
 
 </td>
 <td valign="top">
@@ -108,8 +96,6 @@ The owner of the entry:
 <td valign="top">
 
 Actions
-
-
 
 </td>
 <td valign="top">

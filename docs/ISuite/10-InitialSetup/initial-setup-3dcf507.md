@@ -8,7 +8,7 @@ Get onboarded to SAP Integration Suite.
 
 <a name="loio3dcf507f92f54597bc203600bf8f94c5__section_uyh_v3g_brb"/>
 
-## Personas involved in provisioning of SAP Integration Suite tenant.
+## Personas involved in provisioning of SAP Integration Suite tenant
 
 
 <table>
@@ -17,14 +17,10 @@ Get onboarded to SAP Integration Suite.
 
 Persona
 
-
-
 </th>
 <th valign="top">
 
 Activity
-
-
 
 </th>
 </tr>
@@ -33,14 +29,10 @@ Activity
 
 Global Account Administrator
 
-
-
 </td>
 <td valign="top">
 
 Verify the entitlements.
-
-
 
 </td>
 </tr>
@@ -49,16 +41,12 @@ Verify the entitlements.
 
 Create subaccount.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Assign quota to the subaccount.
-
-
 
 </td>
 </tr>
@@ -67,14 +55,10 @@ Assign quota to the subaccount.
 
 Subaccount or Tenant Administrator
 
-
-
 </td>
 <td valign="top">
 
-Subscribe to Integration Suite
-
-
+Subscribe to Integration Suite.
 
 </td>
 </tr>
@@ -83,8 +67,6 @@ Subscribe to Integration Suite
 
 Assign *Integration\_Provisioner* role to users for accessing the service.
 
-
-
 </td>
 </tr>
 <tr>
@@ -92,16 +74,12 @@ Assign *Integration\_Provisioner* role to users for accessing the service.
 
 Provision the tenant.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Assign roles required to access the capabilities.
-
-
 
 </td>
 </tr>

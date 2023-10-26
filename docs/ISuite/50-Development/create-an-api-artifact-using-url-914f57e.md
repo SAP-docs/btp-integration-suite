@@ -41,15 +41,11 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <th valign="top">
 
     API Details
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -57,15 +53,11 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Provide an intuitive name in lowercase. Avoid using space, special characters, and forward slash \(/\).
-
-
     
     </td>
     </tr>
@@ -73,15 +65,11 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <td valign="top">
     
     ID
-
-
     
     </td>
     <td valign="top">
     
     APIs are identified by their IDs on the home screen. You can use space and special characters in an ID.
-
-
     
     </td>
     </tr>
@@ -89,8 +77,6 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <td valign="top">
     
     URL
-
-
     
     </td>
     <td valign="top">
@@ -110,15 +96,11 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <td valign="top">
     
     Service Type
-
-
     
     </td>
     <td valign="top">
     
     API Proxies can be exposed as REST and SOAP APIs.
-
-
     
     </td>
     </tr>
@@ -126,15 +108,11 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <td valign="top">
     
     API Base Path
-
-
     
     </td>
     <td valign="top">
     
     Enter the path prefix for the API. For example, `v1/SFlight`.
-
-
     
     </td>
     </tr>
@@ -142,15 +120,11 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <td valign="top">
     
     API State
-
-
     
     </td>
     <td valign="top">
     
     API state is used only for demarcation and not used to govern the lifecycle of the API. Choose Alpha if the version of an API is used for exploratory purposes, Beta if the API isn’t meant for productive use, and Active if the API is meant for productive use.
-
-
     
     </td>
     </tr>
@@ -158,8 +132,6 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <td valign="top">
     
     API Version
-
-
     
     </td>
     <td valign="top">
@@ -167,8 +139,6 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     Add a version if you want to improve, upgrade, or customize the functional behavior of an existing API proxy. Versioning allows the creation and management of multiple releases of an API. For example, v1.
 
     When you choose to version your API proxy, its name is appended with the version, and its basepath is prepended with the version. For example, if the version you enter is v1, the name is Name\_v1, and the basepath is `/v1/SalesOrder`.
-
-
     
     </td>
     </tr>
@@ -176,15 +146,11 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <td valign="top">
     
     Runtime Profile
-
-
     
     </td>
     <td valign="top">
     
     The runtime node on which the API artifact will be deployed.
-
-
     
     </td>
     </tr>
@@ -235,15 +201,11 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <th valign="top">
 
     Action
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -251,15 +213,11 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <td valign="top">
     
     *Save* 
-
-
     
     </td>
     <td valign="top">
     
     Saves the artifact as Draft version.
-
-
     
     </td>
     </tr>
@@ -267,8 +225,6 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <td valign="top">
     
     *Save as version* 
-
-
     
     </td>
     <td valign="top">
@@ -276,8 +232,6 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     Creates a new version of the artifact.
 
     Specify the version in the *Version Information* dialog. In the *Comment* section, you can add additional information specific to the artifact for later reference. This helps you determine the purpose of each version.
-
-
     
     </td>
     </tr>
@@ -285,15 +239,11 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <td valign="top">
     
     *Deploy* 
-
-
     
     </td>
     <td valign="top">
     
     Deployes the API artifact.
-
-
     
     </td>
     </tr>
@@ -301,15 +251,11 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <td valign="top">
     
     *Delete* 
-
-
     
     </td>
     <td valign="top">
     
     Deletes the API artifact from the package.
-
-
     
     </td>
     </tr>
@@ -317,15 +263,11 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     <td valign="top">
     
     *Cancel* 
-
-
     
     </td>
     <td valign="top">
     
     Ends your edit session without saving any of the changes you have made.
-
-
     
     </td>
     </tr>

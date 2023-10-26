@@ -24,14 +24,10 @@ These are the main characteristics of the data store and the JMS queues \(for mo
 
 Option
 
-
-
 </th>
 <th valign="top">
 
 Usage
-
-
 
 </th>
 </tr>
@@ -40,14 +36,10 @@ Usage
 
 Data store/variable
 
-
-
 </td>
 <td valign="top">
 
 The data store is used to persist messages on the database of your SAP Cloud Integration tenant. You can use the *Data Store Operations* integration flow steps \(*Write*, *Get*, *Select*, and *Delete*\) to do operations on the data store.
-
-
 
 </td>
 </tr>
@@ -56,16 +48,12 @@ The data store is used to persist messages on the database of your SAP Cloud Int
 
 JMS queue
 
-
-
 </td>
 <td valign="top">
 
 You can use the JMS sender adapter to store messages in a JMS queue. One important key characteristic of the Java Message Service \(JMS\) feature is the support of high-speed messaging with high throughput. This is why it offers the optimal solution for reliable messaging using asynchronous decoupling. JMS is a Java-based standard application programming interface \(API\) for sending and receiving messages. It enables efficient asynchronous communication based on a JMS message broker between different components. The JMS message broker is a separate runtime component that ensures that messages in JMS queues in the JMS message broker are treated separately. The JMS adapter is used to store messages in the JMS queue and to consume messages from the JMS queue in the JMS message broker.
 
 The processing sequence used by the JMS adapter is first-in, first-out \(FIFO\). However, because of parallel processing and retry handling this does not mean that messages are processed in a guaranteed order.
-
-
 
 </td>
 </tr>
@@ -80,21 +68,15 @@ The following questions help you to decide which option to use.
 
 Question
 
-
-
 </th>
 <th valign="top">
 
 Data Store
 
-
-
 </th>
 <th valign="top">
 
 JMS Queue
-
-
 
 </th>
 </tr>
@@ -103,21 +85,15 @@ JMS Queue
 
 Can data be consumed during integration flow processing?
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -126,21 +102,15 @@ No
 
 Can data initiate integration flow execution?
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -149,21 +119,15 @@ Yes
 
 What is the frequency of consumption?
 
-
-
 </td>
 <td valign="top">
 
 Whenever a message is initiated by a client's call or a timer \(scheduler\)
 
-
-
 </td>
 <td valign="top">
 
 Broker pushes message to integration flow automatically \(if a listening thread is available\)
-
-
 
 </td>
 </tr>
@@ -172,8 +136,6 @@ Broker pushes message to integration flow automatically \(if a listening thread 
 
 Is parallel consumption of different data possible?
 
-
-
 </td>
 <td valign="top">
 
@@ -181,14 +143,10 @@ Yes for parallel incoming messages
 
 No for scheduler-initiated integration flows
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -197,21 +155,15 @@ Yes
 
 Can the same data be consumed multiple times?
 
-
-
 </td>
 <td valign="top">
 
 Yes, the data is available until expired or explicitly removed.
 
-
-
 </td>
 <td valign="top">
 
 No, once processed successfully, the data is gone.
-
-
 
 </td>
 </tr>
@@ -220,21 +172,15 @@ No, once processed successfully, the data is gone.
 
 Suitable for high volume message processing?
 
-
-
 </td>
 <td valign="top">
 
 Not recommended
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>

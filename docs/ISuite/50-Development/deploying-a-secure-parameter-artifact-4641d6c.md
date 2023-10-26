@@ -26,15 +26,11 @@ You can store secure data like passwords in a secure store and use an alias name
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -42,8 +38,6 @@ You can store secure data like passwords in a secure store and use an alias name
     <td valign="top">
     
     **Name**
-
-
     
     </td>
     <td valign="top">
@@ -51,8 +45,6 @@ You can store secure data like passwords in a secure store and use an alias name
     Provide a name for the artifact.
 
     The artifact name is used as an alias for the confidential data assigned by this parameter.
-
-
     
     </td>
     </tr>
@@ -60,15 +52,11 @@ You can store secure data like passwords in a secure store and use an alias name
     <td valign="top">
     
     **Description**
-
-
     
     </td>
     <td valign="top">
     
     Provide a more detailed description of the artifact.
-
-
     
     </td>
     </tr>
@@ -76,8 +64,6 @@ You can store secure data like passwords in a secure store and use an alias name
     <td valign="top">
     
     **Secure Parameter**
-
-
     
     </td>
     <td valign="top">
@@ -99,15 +85,11 @@ You can store secure data like passwords in a secure store and use an alias name
     <td valign="top">
     
     **Repeat Secure Parameter**
-
-
     
     </td>
     <td valign="top">
     
     Repeat the confidential value of the attribute.
-
-
     
     </td>
     </tr>

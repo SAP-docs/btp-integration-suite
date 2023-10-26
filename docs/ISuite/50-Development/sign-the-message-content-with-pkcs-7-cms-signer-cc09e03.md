@@ -29,15 +29,11 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -45,15 +41,11 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     Enter a name of the signer.
-
-
     
     </td>
     </tr>
@@ -69,15 +61,11 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -85,8 +73,6 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     <td valign="top">
     
     *Block Size \(in bytes\)* 
-
-
     
     </td>
     <td valign="top">
@@ -94,8 +80,6 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     Enter the size of the data that is to be encoded.
 
     If you enter a value equal to or less than `0`, the whole data is encoded.
-
-
     
     </td>
     </tr>
@@ -103,8 +87,6 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     <td valign="top">
     
     *Include Content in Signed Data* 
-
-
     
     </td>
     <td valign="top">
@@ -114,8 +96,6 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     You also have the option to keep the original content in the message body and to include the signed data elsewhere: Up to version 1.2 of the PKCS\#7/CMS Signer you can choose to include the signed data in the *SapCmsSignedData* header. From version 1.3 of the PKCS\#7/CMS Signer onwards, you can include the signed data in the *SapCmsSignedData* property.
 
     See also [Options to Handle Signed Data](../40-RemoteSystems/options-to-handle-signed-data-89f4220.md)
-
-
     
     </td>
     </tr>
@@ -125,8 +105,6 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     *OID for Content Type*
 
     \(only available when *Include Content in Signed Data* is deselected\)
-
-
     
     </td>
     <td valign="top">
@@ -157,8 +135,6 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     <td valign="top">
     
     *Encode Signed Data with Base64* 
-
-
     
     </td>
     <td valign="top">
@@ -169,8 +145,6 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     > When you Base64-encode the signed data, you encode either the message header or body, depending on where the signed data is placed. When verifying the message, make sure you specify which part of the message \(header or body\) was Base64-encoded.
 
     See also [Options to Handle Signed Data](../40-RemoteSystems/options-to-handle-signed-data-89f4220.md)
-
-
     
     </td>
     </tr>
@@ -178,8 +152,6 @@ You work with the PKCS\#7/CMS signer to make your identity known to the particip
     <td valign="top">
     
     *Signer Parameters* 
-
-
     
     </td>
     <td valign="top">

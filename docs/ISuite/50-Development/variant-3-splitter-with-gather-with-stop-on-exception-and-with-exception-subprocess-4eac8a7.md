@@ -22,15 +22,11 @@ This example scenario works in the following way:
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -38,15 +34,11 @@ This example scenario works in the following way:
     <td valign="top">
     
     Expression Type
-
-
     
     </td>
     <td valign="top">
     
     XPath
-
-
     
     </td>
     </tr>
@@ -54,15 +46,11 @@ This example scenario works in the following way:
     <td valign="top">
     
     XPath Expression
-
-
     
     </td>
     <td valign="top">
     
     /ns0:PurchaseOrder/Items/Item
-
-
     
     </td>
     </tr>
@@ -70,15 +58,11 @@ This example scenario works in the following way:
     <td valign="top">
     
     Grouping
-
-
     
     </td>
     <td valign="top">
     
     1
-
-
     
     </td>
     </tr>
@@ -86,15 +70,11 @@ This example scenario works in the following way:
     <td valign="top">
     
     Stop on Exception
-
-
     
     </td>
     <td valign="top">
     
     \(Selected\)
-
-
     
     </td>
     </tr>
@@ -114,15 +94,11 @@ This example scenario works in the following way:
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -130,15 +106,11 @@ This example scenario works in the following way:
     <td valign="top">
     
     Incoming Format
-
-
     
     </td>
     <td valign="top">
     
     XML \(Same Format\)
-
-
     
     </td>
     </tr>
@@ -146,15 +118,11 @@ This example scenario works in the following way:
     <td valign="top">
     
     Aggregation Algorithm
-
-
     
     </td>
     <td valign="top">
     
     Combine
-
-
     
     </td>
     </tr>
@@ -174,14 +142,10 @@ Dedicated elements in the integration flow model have dedicated tasks:
 
 Element
 
-
-
 </th>
 <th valign="top">
 
 Task
-
-
 
 </th>
 </tr>
@@ -190,14 +154,10 @@ Task
 
 *Integration Process: Message Splitter with Stop on Exception*
 
-
-
 </td>
 <td valign="top">
 
 Main integration flow
-
-
 
 </td>
 </tr>
@@ -206,14 +166,10 @@ Main integration flow
 
 *Local Integration Process: Split Process*
 
-
-
 </td>
 <td valign="top">
 
 Local integration flow encapsulating split logic
-
-
 
 </td>
 </tr>
@@ -222,14 +178,10 @@ Local integration flow encapsulating split logic
 
 *Exception* \(Receiver shape\)
 
-
-
 </td>
 <td valign="top">
 
 Generic Receiver integration flow creating a Data Store entry in error case.
-
-
 
 </td>
 </tr>
@@ -238,14 +190,10 @@ Generic Receiver integration flow creating a Data Store entry in error case.
 
 *Receiver1* \(Receiver shape\)
 
-
-
 </td>
 <td valign="top">
 
 Generic Receiver integration flow creating a Data Store entry to represent the receiver system in success case.
-
-
 
 </td>
 </tr>

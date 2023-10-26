@@ -20,22 +20,16 @@ The following table provides a summary of the available application URLs:
 
 Node Type
 
-
-
 </th>
 <th valign="top">
 
 Application URL
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
@@ -43,21 +37,15 @@ Description
 
 Tenant management node
 
-
-
 </td>
 <td valign="top">
 
 `http://<tenant management node address>/Operations` 
 
-
-
 </td>
 <td valign="top">
 
 Operations URL to be used when connecting to the tenant using Eclipse \(for example, when using the Adapter Development Kit\)
-
-
 
 </td>
 </tr>
@@ -66,14 +54,10 @@ Operations URL to be used when connecting to the tenant using Eclipse \(for exam
 
 Tenant management node
 
-
-
 </td>
 <td valign="top">
 
 `http://<tenant management node address>/api` 
-
-
 
 </td>
 <td valign="top">
@@ -84,30 +68,22 @@ Note that the SAP Cloud Integration OData API is published on the SAP Business A
 
 [https://api.sap.com/shell/discover/contentpackage/CloudIntegrationAPI](https://api.sap.com/shell/discover/contentpackage/CloudIntegrationAPI)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Tenant management node
-
-
 
 </td>
 <td valign="top">
 
 `http://<tenant management node address>/itspaces` 
 
-
-
 </td>
 <td valign="top">
 
 Web UI URL for the tenant \(for dialog users to design integration flows, monitor message processing, and execute additional tasks within an integration project\)
-
-
 
 </td>
 </tr>
@@ -116,44 +92,32 @@ Web UI URL for the tenant \(for dialog users to design integration flows, monito
 
 Tenant management node
 
-
-
 </td>
 <td valign="top">
 
 `http://<tenant management node address>/cxf` 
-
-
 
 </td>
 <td valign="top">
 
 Endpoint address under which SAP Solution Manager can retrieve alert notifications \(if configured accordingly\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Runtime node
-
-
 
 </td>
 <td valign="top">
 
 `http://<runtime node address>/as2` 
 
-
-
 </td>
 <td valign="top">
 
 AS2 sender adapter endpoint base URL
-
-
 
 </td>
 </tr>
@@ -161,22 +125,16 @@ AS2 sender adapter endpoint base URL
 <td valign="top">
 
 Runtime node
-
-
 
 </td>
 <td valign="top">
 
 `http://<runtime node address>/cxf` 
 
-
-
 </td>
 <td valign="top">
 
 SOAP sender adapter endpoint base URL
-
-
 
 </td>
 </tr>
@@ -184,22 +142,16 @@ SOAP sender adapter endpoint base URL
 <td valign="top">
 
 Runtime node
-
-
 
 </td>
 <td valign="top">
 
 `http://<runtime node address>/gw/odata` 
 
-
-
 </td>
 <td valign="top">
 
 OData endpoint URL
-
-
 
 </td>
 </tr>
@@ -208,14 +160,10 @@ OData endpoint URL
 
 Runtime node
 
-
-
 </td>
 <td valign="top">
 
 `http://<runtime node address>/http` 
-
-
 
 </td>
 <td valign="top">
@@ -225,8 +173,6 @@ HTTPS sender adapter endpoint base URL
 For example, assume that you have configured an integration flow with an HTTPS sender adapter and as *Address* you have specified the following value: `/myEndpoint`. Then an HTTP client can call this integration flow through the following endpoint address:
 
 `http://<tenant address>/http/myEndpoint`
-
-
 
 </td>
 </tr>

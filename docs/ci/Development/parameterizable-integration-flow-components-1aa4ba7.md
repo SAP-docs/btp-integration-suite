@@ -42,21 +42,15 @@ The AS2 sender reads the following parameters from the Partner Directory:
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -65,14 +59,10 @@ Value
 
 Decrypt Message
 
-
-
 </td>
 <td valign="top">
 
 SAP\_AS2\_Inbound\_Decrypt\_Message
-
-
 
 </td>
 <td valign="top">
@@ -89,21 +79,15 @@ SAP\_AS2\_Inbound\_Decrypt\_Message
 
 Private Key Alias
 
-
-
 </td>
 <td valign="top">
 
 pd:<pd parameter name\>
 
-
-
 </td>
 <td valign="top">
 
 Parameter name of private key alias in Partner Directory.
-
-
 
 </td>
 </tr>
@@ -112,14 +96,10 @@ Parameter name of private key alias in Partner Directory.
 
 Verify Signature
 
-
-
 </td>
 <td valign="top">
 
 SAP\_AS2\_Inbound\_Verify\_Signature
-
-
 
 </td>
 <td valign="top">
@@ -140,21 +120,15 @@ SAP\_AS2\_Inbound\_Verify\_Signature
 
 Public Key Alias
 
-
-
 </td>
 <td valign="top">
 
 pd:<pd parameter name\>
 
-
-
 </td>
 <td valign="top">
 
 Parameter name of public key in Partner Directory.
-
-
 
 </td>
 </tr>
@@ -173,21 +147,15 @@ AS2 MDN sender reads the following parameters from Partner Directory:
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -196,14 +164,10 @@ Value
 
 Verify Signature
 
-
-
 </td>
 <td valign="top">
 
 SAP\_AS2\_Inbound\_Mdn\_Verify\_Signature
-
-
 
 </td>
 <td valign="top">
@@ -220,14 +184,10 @@ SAP\_AS2\_Inbound\_Mdn\_Verify\_Signature
 
 Verify MIC
 
-
-
 </td>
 <td valign="top">
 
 SAP\_AS2\_Inbound\_Mdn\_Verify\_Mic
-
-
 
 </td>
 <td valign="top">
@@ -244,21 +204,15 @@ SAP\_AS2\_Inbound\_Mdn\_Verify\_Mic
 
 Public Key Alias
 
-
-
 </td>
 <td valign="top">
 
 pd:<pd parameter name\>
 
-
-
 </td>
 <td valign="top">
 
 Parameter name of public key in Partner Directory.
-
-
 
 </td>
 </tr>
@@ -280,14 +234,10 @@ Parameter name of public key in Partner Directory.
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -295,8 +245,6 @@ Description
 <td valign="top">
 
 Header Name
-
-
 
 </td>
 <td valign="top">

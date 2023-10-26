@@ -13,28 +13,20 @@ Here you can find a list of the security events that are logged by TECHNICAL COM
 
 Event grouping
 
-
-
 </th>
 <th valign="top">
 
 What events are logged
-
-
 
 </th>
 <th valign="top">
 
 How to identify related log events
 
-
-
 </th>
 <th valign="top">
 
 Additional information
-
-
 
 </th>
 </tr>
@@ -43,14 +35,10 @@ Additional information
 
 API Proxy
 
-
-
 </td>
 <td valign="top">
 
 Create API Proxy
-
-
 
 </td>
 <td valign="top">
@@ -82,8 +70,6 @@ Example:
 
 [Different Methods of Creating an API](APIM-Development/different-methods-of-creating-an-api-4ac0431.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -91,14 +77,10 @@ Example:
 
 API Proxy
 
-
-
 </td>
 <td valign="top">
 
 Update API Proxy
-
-
 
 </td>
 <td valign="top">
@@ -130,8 +112,6 @@ Example:
 
 [Edit an API Proxy](APIM-Development/edit-an-api-proxy-a64b952.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -139,14 +119,10 @@ Example:
 
 API Proxy
 
-
-
 </td>
 <td valign="top">
 
 Delete API Proxy
-
-
 
 </td>
 <td valign="top">
@@ -178,8 +154,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -187,14 +161,10 @@ Example:
 
 API Product
 
-
-
 </td>
 <td valign="top">
 
 Create API Product
-
-
 
 </td>
 <td valign="top">
@@ -226,8 +196,6 @@ Example:
 
 [Create a Product](APIM-Development/create-a-product-d769622.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -235,14 +203,10 @@ Example:
 
 API Product
 
-
-
 </td>
 <td valign="top">
 
 Update API Product
-
-
 
 </td>
 <td valign="top">
@@ -274,8 +238,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -283,14 +245,10 @@ Example:
 
 API Product
 
-
-
 </td>
 <td valign="top">
 
 Delete API Product
-
-
 
 </td>
 <td valign="top">
@@ -322,8 +280,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -331,14 +287,10 @@ Example:
 
 Application
 
-
-
 </td>
 <td valign="top">
 
 Create Application Name
-
-
 
 </td>
 <td valign="top">
@@ -370,8 +322,6 @@ Example:
 
 [Create an Application \[Classic Design\]](APIM-Development/create-an-application-classic-design-7b4e71b.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -379,14 +329,10 @@ Example:
 
 Application
 
-
-
 </td>
 <td valign="top">
 
 Update Application Name
-
-
 
 </td>
 <td valign="top">
@@ -418,8 +364,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -427,14 +371,10 @@ Example:
 
 Application
 
-
-
 </td>
 <td valign="top">
 
 Delete Application Name
-
-
 
 </td>
 <td valign="top">
@@ -466,8 +406,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -475,14 +413,10 @@ Example:
 
 API Provider
 
-
-
 </td>
 <td valign="top">
 
 Create API Provider
-
-
 
 </td>
 <td valign="top">
@@ -514,8 +448,6 @@ Example:
 
 [Create an API Provider](APIM-Development/create-an-api-provider-6b263e2.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -523,14 +455,10 @@ Example:
 
 API Provider
 
-
-
 </td>
 <td valign="top">
 
 Update API Provider
-
-
 
 </td>
 <td valign="top">
@@ -562,8 +490,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -571,14 +497,10 @@ Example:
 
 API Provider
 
-
-
 </td>
 <td valign="top">
 
 Delete API Provider
-
-
 
 </td>
 <td valign="top">
@@ -610,8 +532,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -619,14 +539,10 @@ Example:
 
 Developer
 
-
-
 </td>
 <td valign="top">
 
 Create Developer
-
-
 
 </td>
 <td valign="top">
@@ -658,8 +574,6 @@ Example:
 
 [Onboard an Application Developer](APIM-Development/onboard-an-application-developer-786d107.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -667,14 +581,10 @@ Example:
 
 Developer
 
-
-
 </td>
 <td valign="top">
 
 Update Developer
-
-
 
 </td>
 <td valign="top">
@@ -706,8 +616,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -715,14 +623,10 @@ Example:
 
 Developer
 
-
-
 </td>
 <td valign="top">
 
 Delete Developer
-
-
 
 </td>
 <td valign="top">
@@ -754,8 +658,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -763,14 +665,10 @@ Example:
 
 Environment
 
-
-
 </td>
 <td valign="top">
 
 Create Environment
-
-
 
 </td>
 <td valign="top">
@@ -802,8 +700,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -811,14 +707,10 @@ Example:
 
 Environment
 
-
-
 </td>
 <td valign="top">
 
 Delete Environment
-
-
 
 </td>
 <td valign="top">
@@ -850,8 +742,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -859,14 +749,10 @@ Example:
 
 XProperty
 
-
-
 </td>
 <td valign="top">
 
 Create XProperty
-
-
 
 </td>
 <td valign="top">
@@ -898,8 +784,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -907,14 +791,10 @@ Example:
 
 XProperty
 
-
-
 </td>
 <td valign="top">
 
 Delete XProperty
-
-
 
 </td>
 <td valign="top">
@@ -946,8 +826,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -955,14 +833,10 @@ Example:
 
 XTenantProperty
 
-
-
 </td>
 <td valign="top">
 
 Create XTenantProperty
-
-
 
 </td>
 <td valign="top">
@@ -994,8 +868,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1003,14 +875,10 @@ Example:
 
 XTenantProperty
 
-
-
 </td>
 <td valign="top">
 
 Delete XTenantProperty
-
-
 
 </td>
 <td valign="top">
@@ -1042,8 +910,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1051,14 +917,10 @@ Example:
 
 Application
 
-
-
 </td>
 <td valign="top">
 
 Create Application
-
-
 
 </td>
 <td valign="top">
@@ -1092,8 +954,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1101,14 +961,10 @@ Example:
 
 Application ID
 
-
-
 </td>
 <td valign="top">
 
 Update Application ID
-
-
 
 </td>
 <td valign="top">
@@ -1141,8 +997,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1150,14 +1004,10 @@ Example:
 
 Application ID
 
-
-
 </td>
 <td valign="top">
 
 Delete Application ID
-
-
 
 </td>
 <td valign="top">
@@ -1189,8 +1039,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1198,14 +1046,10 @@ Example:
 
 Subscription
 
-
-
 </td>
 <td valign="top">
 
 Create Subscription
-
-
 
 </td>
 <td valign="top">
@@ -1238,8 +1082,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1247,14 +1089,10 @@ Example:
 
 Subscription
 
-
-
 </td>
 <td valign="top">
 
 Update Subscription
-
-
 
 </td>
 <td valign="top">
@@ -1286,8 +1124,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1295,14 +1131,10 @@ Example:
 
 Key Map Entry
 
-
-
 </td>
 <td valign="top">
 
 Create Key Map Entry
-
-
 
 </td>
 <td valign="top">
@@ -1334,8 +1166,6 @@ Example:
 
 [Key Value Map](APIM-Development/key-value-map-3722a39.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1343,14 +1173,10 @@ Example:
 
 Key Map Entry
 
-
-
 </td>
 <td valign="top">
 
 Update Key Map Entry
-
-
 
 </td>
 <td valign="top">
@@ -1382,8 +1208,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1391,14 +1215,10 @@ Example:
 
 Key Map Entry
 
-
-
 </td>
 <td valign="top">
 
 Delete Key Map Entry
-
-
 
 </td>
 <td valign="top">
@@ -1430,8 +1250,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1439,14 +1257,10 @@ Example:
 
 Key Map Value
 
-
-
 </td>
 <td valign="top">
 
 Create Key Map Value
-
-
 
 </td>
 <td valign="top">
@@ -1478,8 +1292,6 @@ Example:
 
 [Create a Key Value Map](APIM-Development/create-a-key-value-map-90d8d41.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1487,14 +1299,10 @@ Example:
 
 Key Map Value
 
-
-
 </td>
 <td valign="top">
 
 Update Key Map Value
-
-
 
 </td>
 <td valign="top">
@@ -1526,8 +1334,6 @@ Example:
 
 [Update a Key Value Map](APIM-Development/update-a-key-value-map-4961431.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1535,14 +1341,10 @@ Example:
 
 Key Map Value
 
-
-
 </td>
 <td valign="top">
 
 Delete Key Map Value
-
-
 
 </td>
 <td valign="top">
@@ -1574,8 +1376,6 @@ Example:
 
 [Delete a Key Value Map](APIM-Development/delete-a-key-value-map-24fbb01.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1583,14 +1383,10 @@ Example:
 
 Certificate Store
 
-
-
 </td>
 <td valign="top">
 
 Create Certificate Store
-
-
 
 </td>
 <td valign="top">
@@ -1622,8 +1418,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1631,14 +1425,10 @@ Example:
 
 Certificate Store
 
-
-
 </td>
 <td valign="top">
 
 Update Certificate Store
-
-
 
 </td>
 <td valign="top">
@@ -1670,8 +1460,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1679,14 +1467,10 @@ Example:
 
 Certificate Store
 
-
-
 </td>
 <td valign="top">
 
 Delete Certificate Store
-
-
 
 </td>
 <td valign="top">
@@ -1718,8 +1502,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1727,14 +1509,10 @@ Example:
 
 Certificate
 
-
-
 </td>
 <td valign="top">
 
 Create Certificate
-
-
 
 </td>
 <td valign="top">
@@ -1767,8 +1545,6 @@ Example:
 
 [Manage Certificates](APIM-Development/manage-certificates-c665875.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -1776,14 +1552,10 @@ Example:
 
 Certificate
 
-
-
 </td>
 <td valign="top">
 
 Update Certificate
-
-
 
 </td>
 <td valign="top">
@@ -1816,8 +1588,6 @@ Example:
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -1825,14 +1595,10 @@ Example:
 
 Certificate
 
-
-
 </td>
 <td valign="top">
 
 Delete Certificate
-
-
 
 </td>
 <td valign="top">
@@ -1863,8 +1629,6 @@ Example:
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

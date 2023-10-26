@@ -10,7 +10,7 @@ Edit your integration package to revise the header and overview sections, add or
 
 ## Procedure
 
-1.  Choose *Design* \> *Integrations* to view the list of integration packages.
+1.  Choose *Design* \> *Integrations and APIs* to view the list of integration packages.
 
 2.  Select the required integration package.
 

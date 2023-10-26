@@ -24,22 +24,16 @@ Your target system is the system that has your API Management subscription infra
 
 **Source Subscription** 
 
-
-
 </th>
 <th valign="top">
 
 **Target Subscription** 
-
-
 
 </th>
 <th valign="top">
 
 **Allowed** 
 
-
-
 </th>
 </tr>
 <tr>
@@ -47,21 +41,15 @@ Your target system is the system that has your API Management subscription infra
 
 Standalone
 
-
-
 </td>
 <td valign="top">
 
 Standalone
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -70,21 +58,15 @@ Yes
 
 Standalone
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -93,22 +75,16 @@ Yes
 
 Integration Suite
 
-
-
 </td>
 <td valign="top">
 
 Standalone
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 </tr>
 <tr>
@@ -116,21 +92,15 @@ No
 
 Integration Suite
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -159,15 +129,11 @@ The steps assisting the migration of your API Management from your source system
     <th valign="top">
 
     Component Name
-
-
     
     </th>
     <th valign="top">
 
     Component Description
-
-
     
     </th>
     </tr>
@@ -175,15 +141,11 @@ The steps assisting the migration of your API Management from your source system
     <td valign="top">
     
     OPU-API-OD-OPS
-
-
     
     </td>
     <td valign="top">
     
     SAP API Management Operations - On Demand
-
-
     
     </td>
     </tr>

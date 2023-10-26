@@ -76,15 +76,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <th valign="top">
 
         Component
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -96,15 +92,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         `archetypeArtifactId`
 
         `archetypeVersion`
-
-
         
         </td>
         <td valign="top">
         
         Artifacts of maven archetype
-
-
         
         </td>
         </tr>
@@ -114,8 +106,6 @@ Here we describe how to build and deploy an adapter during runtime using these t
         `componentName`
 
         `scheme`
-
-
         
         </td>
         <td valign="top">
@@ -125,8 +115,6 @@ Here we describe how to build and deploy an adapter during runtime using these t
         `componentName` is the name of your camel component.
 
         `scheme` is the scheme name of the component.
-
-
         
         </td>
         </tr>
@@ -140,15 +128,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         `adapterVendor`
 
         `adapterVersion`
-
-
         
         </td>
         <td valign="top">
         
         Artifacts of your integration adapter
-
-
         
         </td>
         </tr>
@@ -160,15 +144,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         `artifactId`
 
         `version`
-
-
         
         </td>
         <td valign="top">
         
         Artifacts of your maven project
-
-
         
         </td>
         </tr>
@@ -182,15 +162,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <th valign="top">
 
         Component
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -198,15 +174,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <td valign="top">
         
         `*Component.java`
-
-
         
         </td>
         <td valign="top">
         
         Sample runtime component.
-
-
         
         </td>
         </tr>
@@ -214,15 +186,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <td valign="top">
         
         `*Consumer.java`
-
-
         
         </td>
         <td valign="top">
         
         Sample sender component.
-
-
         
         </td>
         </tr>
@@ -230,15 +198,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <td valign="top">
         
         `*Endpoint.java`
-
-
         
         </td>
         <td valign="top">
         
         Logger information is found.
-
-
         
         </td>
         </tr>
@@ -246,15 +210,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <td valign="top">
         
         `*Producer.java`
-
-
         
         </td>
         <td valign="top">
         
         Sample receiver component.
-
-
         
         </td>
         </tr>
@@ -262,15 +222,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <td valign="top">
         
         `metadata.xml`
-
-
         
         </td>
         <td valign="top">
         
         UI values are coded here.
-
-
         
         </td>
         </tr>
@@ -278,15 +234,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <td valign="top">
         
         `*ComponentTest.java`
-
-
         
         </td>
         <td valign="top">
         
         Sample JUnit test
-
-
         
         </td>
         </tr>
@@ -294,15 +246,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <td valign="top">
         
         `pom.xml`
-
-
         
         </td>
         <td valign="top">
         
         Contains configuration details and dependencies.
-
-
         
         </td>
         </tr>
@@ -310,15 +258,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <td valign="top">
         
         `*config.adk`
-
-
         
         </td>
         <td valign="top">
         
         Contains the adapter configuration parameters.
-
-
         
         </td>
         </tr>
@@ -326,8 +270,6 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <td valign="top">
         
         `sap-sample`
-
-
         
         </td>
         <td valign="top">
@@ -388,15 +330,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <th valign="top">
 
         Component
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -408,15 +346,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         `archetypeArtifactId`
 
         `archetypeVersion`
-
-
         
         </td>
         <td valign="top">
         
         Artifacts of maven archetype
-
-
         
         </td>
         </tr>
@@ -430,15 +364,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         `adapterVendor`
 
         `adapterVersion`
-
-
         
         </td>
         <td valign="top">
         
         Artifacts of your integration adapter
-
-
         
         </td>
         </tr>
@@ -450,15 +380,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         `artifactId`
 
         `version`
-
-
         
         </td>
         <td valign="top">
         
         Artifacts of your maven project
-
-
         
         </td>
         </tr>
@@ -472,15 +398,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <th valign="top">
 
         Component
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -488,15 +410,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <td valign="top">
         
         `component`
-
-
         
         </td>
         <td valign="top">
         
         A folder where runtime component JAR must be placed.
-
-
         
         </td>
         </tr>
@@ -504,15 +422,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <td valign="top">
         
         `libs`
-
-
         
         </td>
         <td valign="top">
         
         A folder where runtime component dependencies JARs must be placed.
-
-
         
         </td>
         </tr>
@@ -520,15 +434,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <td valign="top">
         
         `metadata`
-
-
         
         </td>
         <td valign="top">
         
         A folder where component and blueprint \(optional\) metadata will be generated.
-
-
         
         </td>
         </tr>
@@ -536,15 +446,11 @@ Here we describe how to build and deploy an adapter during runtime using these t
         <td valign="top">
         
         `pom.xml`
-
-
         
         </td>
         <td valign="top">
         
         Contains configuration details and dependencies.
-
-
         
         </td>
         </tr>

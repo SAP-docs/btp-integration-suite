@@ -47,15 +47,11 @@ A SOAP API artifact creates a SOAP API-based integration scenario with SOAP 1.x 
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -63,15 +59,11 @@ A SOAP API artifact creates a SOAP API-based integration scenario with SOAP 1.x 
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the API.
-
-
     
     </td>
     </tr>
@@ -79,15 +71,11 @@ A SOAP API artifact creates a SOAP API-based integration scenario with SOAP 1.x 
     <td valign="top">
     
     SOAP API \(only for upload\)
-
-
     
     </td>
     <td valign="top">
     
     Upload a ZIP file containing the SOAP API resources.
-
-
     
     </td>
     </tr>
@@ -95,15 +83,11 @@ A SOAP API artifact creates a SOAP API-based integration scenario with SOAP 1.x 
     <td valign="top">
     
     ID
-
-
     
     </td>
     <td valign="top">
     
     Uniquely identifies the artifact.
-
-
     
     </td>
     </tr>
@@ -111,15 +95,11 @@ A SOAP API artifact creates a SOAP API-based integration scenario with SOAP 1.x 
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     Description of the API and its purpose.
-
-
     
     </td>
     </tr>

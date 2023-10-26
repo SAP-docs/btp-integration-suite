@@ -61,14 +61,10 @@ The General tab shows general information such as the adapter type, its directio
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -77,14 +73,10 @@ Description
 
 *Address*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the recipient's endpoint URL. This value can also be specified dynamically. ​
-
-
 
 </td>
 </tr>
@@ -93,14 +85,10 @@ Specifies the recipient's endpoint URL. This value can also be specified dynamic
 
 *Client ID Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the client ID for the endpoint. This value can be retrieved from Azure AD.
-
-
 
 </td>
 </tr>
@@ -109,14 +97,10 @@ Specifies the client ID for the endpoint. This value can be retrieved from Azure
 
 *Credential Name*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the name of the User Credentials artifact that contains the credentials for basic authentication.
-
-
 
 </td>
 </tr>
@@ -131,14 +115,10 @@ Specifies the name of the User Credentials artifact that contains the credential
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -146,8 +126,6 @@ Description
 <td valign="top">
 
 *API Version*
-
-
 
 </td>
 <td valign="top">
@@ -168,8 +146,6 @@ The version of the API used for calling the Microsoft Dynamics CRM application. 
 
 *Processing Mode*
 
-
-
 </td>
 <td valign="top">
 
@@ -188,8 +164,6 @@ Specifies the processing mode. Select one of the following processing modes:
 <td valign="top">
 
 *Operation*
-
-
 
 </td>
 <td valign="top">
@@ -222,14 +196,10 @@ To access and exchange data with Microsoft Dynamics CRM, you can select among th
 
 *Business Object*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the name of the entity to perform the operation on. For Example: accounts, invoices, opportunities, and so on.
-
-
 
 </td>
 </tr>
@@ -240,14 +210,10 @@ Specifies the name of the entity to perform the operation on. For Example: accou
 
 \(only if you select Update, Delete, Associate, Disassociate, Function \(Bound\), and Get by ID operations\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the unique ID. The ID represents the instance of the entity that you’ve specified in the Business Object field.
-
-
 
 </td>
 </tr>
@@ -258,14 +224,10 @@ Specifies the unique ID. The ID represents the instance of the entity that you�
 
 \(only if Delete operation is used\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the property of the entity affected by the deletion. In case you specify this property, only the specified property is deleted and the rest of the properties of the entity is left as it is. In case this field is left empty, the complete record of the entity or the business object is deleted.
-
-
 
 </td>
 </tr>
@@ -276,14 +238,10 @@ Specifies the property of the entity affected by the deletion. In case you speci
 
 \(only if Create or Update operation is used\)
 
-
-
 </td>
 <td valign="top">
 
 As a default behavior, the update object doesn’t check for duplicates. This means that in case you attempt to update already existing records in the Microsoft Dynamics CRM, the feature still updates. To prevent such updates, select this checkbox.
-
-
 
 </td>
 </tr>
@@ -293,8 +251,6 @@ As a default behavior, the update object doesn’t check for duplicates. This me
 *Type*
 
 \(only if Function operation is used\)
-
-
 
 </td>
 <td valign="top">
@@ -317,14 +273,10 @@ Select the type of function from one of the following:
 
 \(only if Function operation is used\)
 
-
-
 </td>
 <td valign="top">
 
 The adapter supports calling Microsoft Dynamics CRM functions. You can add the function name and parameters in this field.
-
-
 
 </td>
 </tr>
@@ -335,14 +287,10 @@ The adapter supports calling Microsoft Dynamics CRM functions. You can add the f
 
 \(only if Query or Function operation is used\)
 
-
-
 </td>
 <td valign="top">
 
 This field specifies how to control the number of returned records. It’s useful, especially when dealing with many records. Once checked, you can specify the Page Size and the Next Page Link.
-
-
 
 </td>
 </tr>
@@ -353,14 +301,10 @@ This field specifies how to control the number of returned records. It’s usefu
 
 \(only if you enable Use Pagination option\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the maximum number of records that is returned in the response. This field is set to 500 by default.
-
-
 
 </td>
 </tr>
@@ -371,14 +315,10 @@ Specifies the maximum number of records that is returned in the response. This f
 
 \(only if you enable Use Pagination option\)
 
-
-
 </td>
 <td valign="top">
 
 In case, more records are returned in the response than the number specified in the Page Size, then a @odata.nextLink property is returned with the results. The value @odata.nextLink property can be used to retrieve the next result page. The Next Page Link is meant to be filled with this value. In most cases, this field needs to be made dynamic by using a property.
-
-
 
 </td>
 </tr>
@@ -389,14 +329,10 @@ In case, more records are returned in the response than the number specified in 
 
 \(only for create, update, associate, disassociate operation\)
 
-
-
 </td>
 <td valign="top">
 
 This field specifies the format of the request message to be sent to Microsoft Dynamics CRM. Possible values include Application/XML and Application/JSON. The default value is Application/XML.
-
-
 
 </td>
 </tr>
@@ -405,14 +341,10 @@ This field specifies the format of the request message to be sent to Microsoft D
 
 *Response*
 
-
-
 </td>
 <td valign="top">
 
 This field specifies the format of the response message to be returned by Microsoft Dynamics CRM. Possible values include Application/XML and Application/JSON. The default value is Application/XML.
-
-
 
 </td>
 </tr>
@@ -422,8 +354,6 @@ This field specifies the format of the response message to be returned by Micros
 *Query Type*
 
 \(only for Query Objects, Get Object by ID operation\)
-
-
 
 </td>
 <td valign="top">
@@ -448,14 +378,10 @@ Possible values include the following values:
 
 \(only for Query Objects are set to Advanced\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies complex queries according to OData query options.
-
-
 
 </td>
 </tr>
@@ -466,14 +392,10 @@ Specifies complex queries according to OData query options.
 
 \(only for Query Objects are set to FetchXML\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies FetchXML queries to query data from Dynamics CRM.
-
-
 
 </td>
 </tr>
@@ -484,14 +406,10 @@ Specifies FetchXML queries to query data from Dynamics CRM.
 
 \(only for the Query Objects operation\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the maximum number of records to be returned as a response.
-
-
 
 </td>
 </tr>
@@ -502,14 +420,10 @@ Specifies the maximum number of records to be returned as a response.
 
 \(only for the Query Objects operation\)
 
-
-
 </td>
 <td valign="top">
 
 Select to include the total number of records that meet the query or filtering criteria in the response. The response includes a property called OData.count.
-
-
 
 </td>
 </tr>
@@ -518,14 +432,10 @@ Select to include the total number of records that meet the query or filtering c
 
 *Filters*
 
-
-
 </td>
 <td valign="top">
 
 Specifies filter conditions to determine which type of records should be returned by the server.
-
-
 
 </td>
 </tr>
@@ -534,14 +444,10 @@ Specifies filter conditions to determine which type of records should be returne
 
 *Response Properties*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the fields that are returned in the response. This is a way to limit, which properties of the response is returned. Each property is added in a separate row of the table. In case no properties are added to this property, all fields of the concerned entity is returned.
-
-
 
 </td>
 </tr>
@@ -550,14 +456,10 @@ Specifies the fields that are returned in the response. This is a way to limit, 
 
 *Order Response by*
 
-
-
 </td>
 <td valign="top">
 
 Specifies in which order the records in the response is returned. You can’t always use this feature together with the aggregate property.
-
-
 
 </td>
 </tr>
@@ -566,14 +468,10 @@ Specifies in which order the records in the response is returned. You can’t al
 
 *Expand Navigation Properties*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the properties to be included and expanded in the response. The aggregation isn’t supported while expanding.
-
-
 
 </td>
 </tr>
@@ -582,14 +480,10 @@ Specifies the properties to be included and expanded in the response. The aggreg
 
 *Aggregate Properties*
 
-
-
 </td>
 <td valign="top">
 
 Specifies how to aggregate and group your response data. The aggregation isn’t supported while doing any other query options.
-
-
 
 </td>
 </tr>
@@ -598,14 +492,10 @@ Specifies how to aggregate and group your response data. The aggregation isn’t
 
 *Outbound Headers*
 
-
-
 </td>
 <td valign="top">
 
 Specifies any additional headers that you need to send to the Microsoft Dynamics CRM.
-
-
 
 </td>
 </tr>

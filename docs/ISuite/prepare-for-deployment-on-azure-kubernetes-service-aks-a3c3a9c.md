@@ -13,14 +13,10 @@ Before deploying your cluster on Azure Kubernetes Service \(AKS\), perform the f
 
 Task
 
-
-
 </th>
 <th valign="top">
 
 More Information
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ More Information
 
 Create a Microsoft Azure account.
 
-
-
 </td>
 <td valign="top">
 
 [https://support.microsoft.com/en-us/account-billing/how-to-create-a-new-microsoft-account-a84675c3-3e9e-17cf-2911-3d56b15c0aaf](https://support.microsoft.com/en-us/account-billing/how-to-create-a-new-microsoft-account-a84675c3-3e9e-17cf-2911-3d56b15c0aaf)
-
-
 
 </td>
 </tr>
@@ -55,8 +47,6 @@ Subscribe to Microsoft Azure.
 
 [https://learn.microsoft.com/en-us/dynamics-nav/how-to--sign-up-for-a-microsoft-azure-subscription](https://learn.microsoft.com/en-us/dynamics-nav/how-to--sign-up-for-a-microsoft-azure-subscription)
 
-
-
 </td>
 </tr>
 <tr>
@@ -64,14 +54,10 @@ Subscribe to Microsoft Azure.
 
 Sign up for Azure Kubernetes Service \(AKS\).
 
-
-
 </td>
 <td valign="top">
 
 [https://docs.microsoft.com/en-us/azure/aks](https://docs.microsoft.com/en-us/azure/aks)
-
-
 
 </td>
 </tr>
@@ -84,8 +70,6 @@ Create a service principal to provide scoped access to your private container re
 
 The service principal ID and client secret can be used as logon credentials. The Kubernetes cluster must have the reader role assigned so that it has pull permissions on the container registry.
 
-
-
 </td>
 <td valign="top">
 
@@ -95,8 +79,6 @@ The service principal ID and client secret can be used as logon credentials. The
 
 [https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks)
 
-
-
 </td>
 </tr>
 <tr>
@@ -104,14 +86,10 @@ The service principal ID and client secret can be used as logon credentials. The
 
 Install the Azure Command-Line Interface \(CLI\).
 
-
-
 </td>
 <td valign="top">
 
 [https://docs.microsoft.com/en-us/cli/azure/install-azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
-
-
 
 </td>
 </tr>
@@ -120,14 +98,10 @@ Install the Azure Command-Line Interface \(CLI\).
 
 Install the Kubernetes command-line tool `kubectl`.
 
-
-
 </td>
 <td valign="top">
 
 [https://kubernetes.io/docs/tasks/tools/\#kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
-
-
 
 </td>
 </tr>

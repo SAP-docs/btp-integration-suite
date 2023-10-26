@@ -40,14 +40,10 @@ You can retrieve the following information from the audit log list and filter th
 
 Attributes
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -56,14 +52,10 @@ Description
 
 *Time* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the time of the event.
-
-
 
 </td>
 </tr>
@@ -72,14 +64,10 @@ Displays the time of the event.
 
 *Action* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the action performed on the system such *Create* or *Delete* 
-
-
 
 </td>
 </tr>
@@ -88,14 +76,10 @@ Displays the action performed on the system such *Create* or *Delete*
 
 *Object Type* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the object type such as *IntegrationFlow* on which the action was performed on.
-
-
 
 </td>
 </tr>
@@ -104,14 +88,10 @@ Displays the object type such as *IntegrationFlow* on which the action was perfo
 
 *Object Name* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name such as the integration flow name.
-
-
 
 </td>
 </tr>
@@ -120,14 +100,10 @@ Displays the object name such as the integration flow name.
 
 *User* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the user who triggered the action.
-
-
 
 </td>
 </tr>
@@ -136,14 +112,10 @@ Displays the user who triggered the action.
 
 *Source* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the IP address of the source that issued the action.
-
-
 
 </td>
 </tr>

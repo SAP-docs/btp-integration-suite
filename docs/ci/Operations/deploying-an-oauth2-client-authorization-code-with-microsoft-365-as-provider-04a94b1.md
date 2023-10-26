@@ -33,15 +33,11 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -49,15 +45,11 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the artifact that you want to deploy on the tenant.
-
-
     
     </td>
     </tr>
@@ -65,15 +57,11 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     Description of the artifact you are deploying on the tenant.
-
-
     
     </td>
     </tr>
@@ -81,15 +69,11 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     <td valign="top">
     
     Provider
-
-
     
     </td>
     <td valign="top">
     
     Enter the name of the provider of the platform on which you created the OAuth2 client.
-
-
     
     </td>
     </tr>
@@ -97,15 +81,11 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     <td valign="top">
     
     Authorization URL
-
-
     
     </td>
     <td valign="top">
     
     Provide the Authorization URL for authorizing the OAuth client to access resources of a user.
-
-
     
     </td>
     </tr>
@@ -113,15 +93,11 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     <td valign="top">
     
     Token Service URL
-
-
     
     </td>
     <td valign="top">
     
     Provide the URL that generates the OAuth2 access and refresh token for the registered OAuth2 client and the provided user.
-
-
     
     </td>
     </tr>
@@ -129,8 +105,6 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     <td valign="top">
     
     Refresh Token Expiry
-
-
     
     </td>
     <td valign="top">
@@ -138,8 +112,6 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     Provide an amount of time after which the refresh token expires.
 
     The maximum is set to 90 days and the minimum is set to 3 days. The SAP Cloud Integration system will update the refresh token before the expiration.
-
-
     
     </td>
     </tr>
@@ -147,15 +119,11 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     <td valign="top">
     
     Redirect URL
-
-
     
     </td>
     <td valign="top">
     
     Displays the URL you need, when creating the OAuth Clients/App im OAuth Authorization Server/Token Server. For more information, see [OAuth2.0 Authorization Code Grant](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/oauth-2-0#loio508a70db7eac4addbb6ac69a06d46e79) 
-
-
     
     </td>
     </tr>
@@ -163,15 +131,11 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     <td valign="top">
     
     Client ID
-
-
     
     </td>
     <td valign="top">
     
     ID of the client you want to connect to.
-
-
     
     </td>
     </tr>
@@ -179,8 +143,6 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     <td valign="top">
     
     Client Secret
-
-
     
     </td>
     <td valign="top">
@@ -188,8 +150,6 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     Secret key of the client that you are connecting to.
 
     See: [OAuth 2.0](../ConnectionSetup/oauth-2-0-3823134.md#loio382313443b8d4453b0fd536b82b9e15d).
-
-
     
     </td>
     </tr>
@@ -197,8 +157,6 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     <td valign="top">
     
     Send As
-
-
     
     </td>
     <td valign="top">
@@ -216,15 +174,11 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     <td valign="top">
     
     User Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the user whose resources the OAuth2 client gets access to.
-
-
     
     </td>
     </tr>
@@ -232,8 +186,6 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     <td valign="top">
     
     Scope
-
-
     
     </td>
     <td valign="top">

@@ -80,3 +80,17 @@ To learn more about such use cases, see [Script Use Cases](https://help.sap.com/
 
 And if you want to know more on script APIs, see [Script API](https://help.sap.com/doc/a56f52e1a58e4e2bac7f7adbf45b2e26/Cloud/en-US/index.html).
 
+
+
+<a name="loio883b3ee83a3b4669bee0a47bb5990053__section_xtc_43r_zyb"/>
+
+## Pointers to Consider
+
+Here are few things to consider when using this ProcessDirect adapter for your sender and receiver scenarios:
+
+-   The groovy scripts in the package is not public to the customer. It is recommended to use caution while applying the groovy code to your custom integration flows.
+
+-   The step *1b* is used for internal purposes. So it is not recommended to call the ProcessDirect in step 1b but you can utilise the adapter in step *1a* which is *Step 1 - Sender Process Direct Communication Flow V2*.
+-   You can transfer all the camel header properties that you define in your custom integration flows to ProcessDirect Step 1a, but if your camel header property name is the same as SAP's camel header property \(with prefix *SAP\_*\), then the property value might be overwritten by the Generic integration flow. To avoid this, it is recommended to use a different property name in the camel header.
+-   The computed PID can be used not only in Step 2 ProcessDirect, but also in Step 3 ProcessDirect of the integration flow.
+

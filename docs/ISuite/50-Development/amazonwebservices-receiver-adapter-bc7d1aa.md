@@ -53,14 +53,10 @@ The following tables describe the parameters that you need to configuration for 
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -69,14 +65,10 @@ Description
 
 *Region Name* 
 
-
-
 </td>
 <td valign="top">
 
 Select the AWS Region. If the region doesn’t exist in the preconfigured list, then the user can manually enter the region name in the text box.
-
-
 
 </td>
 </tr>
@@ -85,14 +77,10 @@ Select the AWS Region. If the region doesn’t exist in the preconfigured list, 
 
 *Bucket Name* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the bucket to be used.
-
-
 
 </td>
 </tr>
@@ -101,14 +89,10 @@ Specify the name of the bucket to be used.
 
 *Access Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS access key needed to connect to AWS.
-
-
 
 </td>
 </tr>
@@ -117,14 +101,10 @@ Specify the name of the Secure Parameter artifact that contains the AWS access k
 
 *Secret Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS secret key needed to connect to AWS.
-
-
 
 </td>
 </tr>
@@ -133,14 +113,10 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 
 *Requester Pays*
 
-
-
 </td>
 <td valign="top">
 
 Select the checkbox to make the requester pay for the data transfer and the request.
-
-
 
 </td>
 </tr>
@@ -155,14 +131,10 @@ Select the checkbox to make the requester pay for the data transfer and the requ
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -170,8 +142,6 @@ Description
 <td valign="top">
 
 *Operation*
-
-
 
 </td>
 <td valign="top">
@@ -189,8 +159,6 @@ Select to specify if the files are written or read from the S3 bucket. The defau
 <td valign="top">
 
 *Directory*
-
-
 
 </td>
 <td valign="top">
@@ -212,8 +180,6 @@ Specify the location on the S3 bucket where the file is written.
 
 *File Name*
 
-
-
 </td>
 <td valign="top">
 
@@ -234,14 +200,10 @@ Specify the name of the file to be written. If the field is left blank, the file
 
 *Append Timestamp*
 
-
-
 </td>
 <td valign="top">
 
 Select to append the date and timestamp to the filename.
-
-
 
 </td>
 </tr>
@@ -249,8 +211,6 @@ Select to append the date and timestamp to the filename.
 <td valign="top">
 
 *Content Type*
-
-
 
 </td>
 <td valign="top">
@@ -272,8 +232,6 @@ Specify the MIME type of the file to be written.
 
 *Content Encoding*
 
-
-
 </td>
 <td valign="top">
 
@@ -293,8 +251,6 @@ Specify the content encoding of the file.
 <td valign="top">
 
 *Storage Class*
-
-
 
 </td>
 <td valign="top">
@@ -325,8 +281,6 @@ Select the AWS Storage Class from the following options:
 
 *Existing File Handling*
 
-
-
 </td>
 <td valign="top">
 
@@ -349,8 +303,6 @@ Select the file handling behavior, if a file with the same name exists in the di
 *Post-Processing*
 
 \(only if Operation is Write Operation\)
-
-
 
 </td>
 <td valign="top">
@@ -379,14 +331,10 @@ Specify the action taken after the file is processed. Select from the following 
 
 \(only if Operation is Write Operation\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the secured parameter that contains the decryption key for the Amazon S3 to decrypt data.
-
-
 
 </td>
 </tr>
@@ -401,14 +349,10 @@ Specify the name of the secured parameter that contains the decryption key for t
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -416,8 +360,6 @@ Description
 <td valign="top">
 
 *Encryption Option*
-
-
 
 </td>
 <td valign="top">
@@ -441,8 +383,6 @@ Select the server-side encryption, used for storing the file in AWS, from the fo
 <td valign="top">
 
 *Custom Metadata*
-
-
 
 </td>
 <td valign="top">
@@ -471,14 +411,10 @@ Specify any additional header name-value pairs that you want to send to AWS.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -487,14 +423,10 @@ Description
 
 *Region Name* 
 
-
-
 </td>
 <td valign="top">
 
 Select the AWS Region. If the region doesn’t exist in the preconfigured list, then the user can manually enter the region name in the text box.
-
-
 
 </td>
 </tr>
@@ -503,14 +435,10 @@ Select the AWS Region. If the region doesn’t exist in the preconfigured list, 
 
 *Account Number* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the 12-digit AWS account number for the queue.
-
-
 
 </td>
 </tr>
@@ -519,14 +447,10 @@ Specify the 12-digit AWS account number for the queue.
 
 *Queue Name*
 
-
-
 </td>
 <td valign="top">
 
 Specify the AWS Queue name where the data needs to be written.
-
-
 
 </td>
 </tr>
@@ -535,14 +459,10 @@ Specify the AWS Queue name where the data needs to be written.
 
 *Access Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS access key needed to connect to AWS.
-
-
 
 </td>
 </tr>
@@ -551,14 +471,10 @@ Specify the name of the Secure Parameter artifact that contains the AWS access k
 
 *Secret Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS secret key needed to connect to AWS.
-
-
 
 </td>
 </tr>
@@ -573,14 +489,10 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -589,14 +501,10 @@ Description
 
 *Delays*
 
-
-
 </td>
 <td valign="top">
 
 Specify the duration \(in seconds\) after which messages become available for processing. Valid values: 0–900 .
-
-
 
 </td>
 </tr>
@@ -604,8 +512,6 @@ Specify the duration \(in seconds\) after which messages become available for pr
 <td valign="top">
 
 *Message Deduplication ID*
-
-
 
 </td>
 <td valign="top">
@@ -623,8 +529,6 @@ Specify the message deduplication ID.
 <td valign="top">
 
 *Message Group ID*
-
-
 
 </td>
 <td valign="top">
@@ -649,14 +553,10 @@ Specify the message group ID.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -665,14 +565,10 @@ Description
 
 *Message Attribute*
 
-
-
 </td>
 <td valign="top">
 
 Specify any additional message attribute name-value pairs that you can send to AWS.
-
-
 
 </td>
 </tr>
@@ -691,14 +587,10 @@ Specify any additional message attribute name-value pairs that you can send to A
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -707,14 +599,10 @@ Description
 
 *Region Name* 
 
-
-
 </td>
 <td valign="top">
 
 Select the AWS Region. If the region doesn’t exist in the preconfigured list, then the user can manually enter the region name in the text box.
-
-
 
 </td>
 </tr>
@@ -723,14 +611,10 @@ Select the AWS Region. If the region doesn’t exist in the preconfigured list, 
 
 *Account Number* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the 12-digit AWS account number for the queue.
-
-
 
 </td>
 </tr>
@@ -739,14 +623,10 @@ Specify the 12-digit AWS account number for the queue.
 
 *Topic Name*
 
-
-
 </td>
 <td valign="top">
 
 Specify the AWS Topic name where the data needs to be written.
-
-
 
 </td>
 </tr>
@@ -755,14 +635,10 @@ Specify the AWS Topic name where the data needs to be written.
 
 *Access Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS access key needed to connect to AWS.
-
-
 
 </td>
 </tr>
@@ -771,14 +647,10 @@ Specify the name of the Secure Parameter artifact that contains the AWS access k
 
 *Secret Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS secret key needed to connect to AWS.
-
-
 
 </td>
 </tr>
@@ -793,14 +665,10 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -808,8 +676,6 @@ Description
 <td valign="top">
 
 *Subject*
-
-
 
 </td>
 <td valign="top">
@@ -827,8 +693,6 @@ Specify the subject of the message.
 <td valign="top">
 
 *Message Structure*
-
-
 
 </td>
 <td valign="top">
@@ -849,14 +713,10 @@ Select the structure of the message from the following options:
 
 *Message Attribute*
 
-
-
 </td>
 <td valign="top">
 
 Specify any additional message attribute name-value pairs that you can send to AWS.
-
-
 
 </td>
 </tr>
@@ -865,14 +725,10 @@ Specify any additional message attribute name-value pairs that you can send to A
 
 *Response*
 
-
-
 </td>
 <td valign="top">
 
 Specify the format of the response message sent by AWS. Possible values include Application/XML and Application/JSON. The default value is Application/XML.
-
-
 
 </td>
 </tr>
@@ -891,14 +747,10 @@ Specify the format of the response message sent by AWS. Possible values include 
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -907,14 +759,10 @@ Description
 
 *Region Name* 
 
-
-
 </td>
 <td valign="top">
 
 Select the AWS Region. If the region doesn’t exist in the preconfigured list, then the user can manually enter the region name in the text box.
-
-
 
 </td>
 </tr>
@@ -923,14 +771,10 @@ Select the AWS Region. If the region doesn’t exist in the preconfigured list, 
 
 *Access Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS access key needed to connect to AWS.
-
-
 
 </td>
 </tr>
@@ -939,14 +783,10 @@ Specify the name of the Secure Parameter artifact that contains the AWS access k
 
 *Secret Key Alias*
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS secret key needed to connect to AWS.
-
-
 
 </td>
 </tr>
@@ -961,14 +801,10 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -976,8 +812,6 @@ Description
 <td valign="top">
 
 *Action*
-
-
 
 </td>
 <td valign="top">
@@ -996,14 +830,10 @@ Select the API action to be performed in AWS Simple Workflow.
 
 *Request*
 
-
-
 </td>
 <td valign="top">
 
 Specify the format of the request message to send to AWS. Possible values include Application/XML and Application/JSON. The default value is Application/XML.
-
-
 
 </td>
 </tr>
@@ -1012,14 +842,10 @@ Specify the format of the request message to send to AWS. Possible values includ
 
 *Response*
 
-
-
 </td>
 <td valign="top">
 
 Specify the format of the response message sent by AWS. Possible values include Application/XML and Application/JSON. The default value is Application/XML.
-
-
 
 </td>
 </tr>

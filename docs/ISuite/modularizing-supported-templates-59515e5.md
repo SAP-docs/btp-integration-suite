@@ -15,11 +15,13 @@ For certain templates, if depicted in the template's description, the following 
     -   An Exception Subprocess pool is available for you to set up your own exception handling.
 
 
--   A Content Modifier step is added with headers *SAP\_Sender*, *SAP\_Receiver*, and *SAP\_MessageType*. The headers help you search for your messages in the monitoring of message processing.
+-   A Content Modifier step is added with headers *SAP\_Sender*, *SAP\_Receiver*, *SapMessageId*, and *SAP\_MessageType*. The headers help you search for your messages in the monitoring of message processing.
 
     -   *SAP\_Sender* and *SAP\_Receiver* are mapped to the sender and receiver adapter types respectively.
 
     -   You can manually define the source value for the header *SAP\_MessageType*.
+
+    -   You can manually define the source value for the header *SapMessageId*. This header is used only when an IDOC receiver adapter is available in the newly created integration flow.
 
 
 

@@ -40,14 +40,10 @@ Select the *Connection* tab and provide the sender system information.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -56,8 +52,6 @@ Description
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
@@ -65,16 +59,12 @@ Specify the relative path of the endpoint URL.
 
 For example, if the URL is `https://<tenant address>/as2/<mdn or as2>/orders`, then enter the value as `/orders`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Authorization*
-
-
 
 </td>
 <td valign="top">
@@ -109,8 +99,6 @@ Specifies the authorization option for the sender.
 
 \(only if you select *User Role* for *Authorization*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -123,8 +111,6 @@ The default value is `ESBMessaging.send`. This role authorizes a sender system t
 
 For more information on user roles, see[Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right: .
 
-
-
 </td>
 </tr>
 <tr>
@@ -134,14 +120,10 @@ For more information on user roles, see[Tasks and Permissions](https://help.sap.
 
 \(only if you select *Client Certificate* for *Authorization*\).
 
-
-
 </td>
 <td valign="top">
 
 The client certificates that you are using for inbound authorization. Choose *Add* to add a new row and then choose *Select* to select a certificate stored locally on your computer. You can also delete certificates from the list.
-
-
 
 </td>
 </tr>
@@ -158,14 +140,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -173,8 +151,6 @@ Description
 <td valign="top">
 
 *Source* 
-
-
 
 </td>
 <td valign="top">
@@ -198,14 +174,10 @@ Select among the following values to determine the source of Partner ID:
 
 *Message ID Left Part* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the left side of the AS2 message ID. Regular expression or '.\*' is allowed.
-
-
 
 </td>
 </tr>
@@ -214,14 +186,10 @@ Specify the left side of the AS2 message ID. Regular expression or '.\*' is allo
 
 *Message ID Right Part* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the right side of the AS2 message ID. Regular expression or '.\*' is allowed.
-
-
 
 </td>
 </tr>
@@ -230,14 +198,10 @@ Specify the right side of the AS2 message ID. Regular expression or '.\*' is all
 
 *Partner AS2 ID* 
 
-
-
 </td>
 <td valign="top">
 
 Specify your partner's AS2 ID. Regular expression or '.\*' is allowed.
-
-
 
 </td>
 </tr>
@@ -246,14 +210,10 @@ Specify your partner's AS2 ID. Regular expression or '.\*' is allowed.
 
 *Own AS2 ID* 
 
-
-
 </td>
 <td valign="top">
 
 Specify your own AS2 ID. Regular expression or '.\*' is allowed.
-
-
 
 </td>
 </tr>
@@ -262,14 +222,10 @@ Specify your own AS2 ID. Regular expression or '.\*' is allowed.
 
 *Message Subject* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the AS2 message subject. Regular expression or '.\*' is allowed.
-
-
 
 </td>
 </tr>
@@ -278,14 +234,10 @@ Specify the AS2 message subject. Regular expression or '.\*' is allowed.
 
 *Number of Concurrent Processes* 
 
-
-
 </td>
 <td valign="top">
 
 Define how many processes can run in parallel for each worker node. The value depends on the number of worker nodes, the number of queues on the tenant, and the incoming load, and must be less than 99.
-
-
 
 </td>
 </tr>
@@ -294,8 +246,6 @@ Define how many processes can run in parallel for each worker node. The value de
 
 *Message Settings* 
 
-
-
 </td>
 </tr>
 <tr>
@@ -303,14 +253,10 @@ Define how many processes can run in parallel for each worker node. The value de
 
 *Mandatory File Name* 
 
-
-
 </td>
 <td valign="top">
 
 Select to check that the incoming AS2 message containsthe a filename. If not found, then a negative MDN is sent as per the request of the AS2 sender.
-
-
 
 </td>
 </tr>
@@ -318,8 +264,6 @@ Select to check that the incoming AS2 message containsthe a filename. If not fou
 <td valign="top">
 
 *Duplicate Message ID* 
-
-
 
 </td>
 <td valign="top">
@@ -340,16 +284,12 @@ Define the *Persist Duration* instant in minutes to store messages for duplicate
 
 *Duplicate File Name* 
 
-
-
 </td>
 <td valign="top">
 
 Select to ensure that the AS2 message with the same filename isn't processed more than once.
 
 Define the *Persist Duration* instant in minutes to store messages for duplicate check. You can also select the appropriate *MDN Response* type when you encounter a duplicate filename.
-
-
 
 </td>
 </tr>
@@ -371,14 +311,10 @@ Select the *Security* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -386,8 +322,6 @@ Description
 <td valign="top">
 
 *Decryption Configuration Type*
-
-
 
 </td>
 <td valign="top">
@@ -406,8 +340,6 @@ Select the type of decryption configuration.
 <td valign="top">
 
 *Decrypt Message*
-
-
 
 </td>
 <td valign="top">
@@ -435,8 +367,6 @@ The valid values are:
 
 \(only if you select *Decrypt Message* or *Decryption Configuration Type* as *Dynamic* or *Incoming AS2 Headers*\).
 
-
-
 </td>
 <td valign="top">
 
@@ -453,8 +383,6 @@ Specify the private key alias to decrypt the AS2 message. To fetch details from 
 <td valign="top">
 
 *Verify Signature* 
-
-
 
 </td>
 <td valign="top">
@@ -498,14 +426,10 @@ You can also set the value of this attribute dynamically by specifying `SAP_AS2_
 
 \(only if you select *Verify Signature*\).
 
-
-
 </td>
 <td valign="top">
 
 Specify the public key alias to verify the signature of the AS2 message. To fetch details from partner directory, use `pd:<certAlias>` syntax.
-
-
 
 </td>
 </tr>
@@ -516,14 +440,10 @@ Specify the public key alias to verify the signature of the AS2 message. To fetc
 
 \(only if you select *Verify Signature* as *Trusted Root Certificate*\).
 
-
-
 </td>
 <td valign="top">
 
 Specify the public key alias values \(comma separated\) to verify the signature of the AS2 message. To fetch details from partner directory, use `pd:<certAlias>` or `pd:AS2PartnerId:<certalias>` syntax.
-
-
 
 </td>
 </tr>
@@ -540,14 +460,10 @@ Select the *MDN* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -556,14 +472,10 @@ Description
 
 *Private Key Alias for Signature* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the private key alias to sign the MDN on partner's request. To fetch details from partner directory, use `pd:xxxx` syntax.
-
-
 
 </td>
 </tr>
@@ -571,8 +483,6 @@ Specify the private key alias to sign the MDN on partner's request. To fetch det
 <td valign="top">
 
 *Signature Encoding*
-
-
 
 </td>
 <td valign="top">
@@ -585,16 +495,12 @@ Select the MDN signature encoding type.
 
 To define this attribute dynamically, set *<binary\>* or *<base64\>* value in `SAP_AS2_Inbound_Signature_Encoding` key in partner directory.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Propagate MDN Details to Exchange*
-
-
 
 </td>
 <td valign="top">
@@ -607,16 +513,12 @@ Select whether to include the generated MDN details in Camel Exchange property.
 
 To define this attribute dynamically, set *<required\>* or *<notRequired\>* value in `SAP_AS2_Inbound_Propagate_MDN_Details` key in partner directory.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -639,14 +541,10 @@ Select the type of proxy you want to use to connect asynchronously to an AS2 sen
 
 \(only if *Proxy Type* is *On-Premise* or *Dynamic*\)
 
-
-
 </td>
 <td valign="top">
 
 If you use the SAP Cloud Connector to connect to your on-premise system, specify the virtual address that is configured in the SAP Cloud Connector settings. To fetch details from partner directory, use `pd:xxxx` syntax.
-
-
 
 </td>
 </tr>
@@ -654,8 +552,6 @@ If you use the SAP Cloud Connector to connect to your on-premise system, specify
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -683,16 +579,12 @@ You can select one of the following authentication methods:
 
 \(only if you select *Authentication* as *Basic Authentication* or *Dynamic*.
 
-
-
 </td>
 <td valign="top">
 
 Specify the deployed user credentials alias for basic authentication. The tenant authenticates itself against the receiver using user credentials \(user name and password\).
 
 It'sis a prerequisite that user credentials are specified in a Basic Authentication artifact and deployed on the related tenant.
-
-
 
 </td>
 </tr>
@@ -703,14 +595,10 @@ It'sis a prerequisite that user credentials are specified in a Basic Authenticat
 
 \(only if you select *Authentication* as *Client Certificate* or *Dynamic*.
 
-
-
 </td>
 <td valign="top">
 
 Specify the private key alias for client certificate authentication. To fetch details from partner directory, use `pd:xxxx` syntax.
-
-
 
 </td>
 </tr>
@@ -719,14 +607,10 @@ Specify the private key alias for client certificate authentication. To fetch de
 
 *Timeout \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
 Specify how long in milliseconds the client has to accept the asynchronous MDN. Enter the value '0' if you want the client to wait indefinitely.
-
-
 
 </td>
 </tr>
@@ -743,14 +627,10 @@ Select the *Delivery Assurance* tab and specify the parameters as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -758,8 +638,6 @@ Description
 <td valign="top">
 
 *Quality of Service* 
-
-
 
 </td>
 <td valign="top">
@@ -788,14 +666,10 @@ Based on your requirements you can select one of the following options:
 
 *Retry Interval \(in min\)* 
 
-
-
 </td>
 <td valign="top">
 
 Define how many minutes to wait before retrying message delivery.
-
-
 
 </td>
 </tr>
@@ -804,14 +678,10 @@ Define how many minutes to wait before retrying message delivery.
 
 *Exponential Backoff* 
 
-
-
 </td>
 <td valign="top">
 
 Select this checkbox to double the retry interval after each unsuccessful retry.
-
-
 
 </td>
 </tr>
@@ -820,14 +690,10 @@ Select this checkbox to double the retry interval after each unsuccessful retry.
 
 *Maximum Retry Interval \(in min\)* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the maximum amount of time to wait before retrying message delivery.
-
-
 
 </td>
 </tr>
@@ -836,14 +702,10 @@ Specify the maximum amount of time to wait before retrying message delivery.
 
 *Dead-Letter Queue* 
 
-
-
 </td>
 <td valign="top">
 
 Select this checkbox to store those messages that cannot be successfully processed after the second retry during a tenant crash. This helps you to analyze and resolve the cause of failure.
-
-
 
 </td>
 </tr>
@@ -852,14 +714,10 @@ Select this checkbox to store those messages that cannot be successfully process
 
 *Encrypt Message During Persistence* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option to encrypt the message in the data store.
-
-
 
 </td>
 </tr>
@@ -876,14 +734,10 @@ Select the *Conditions* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -904,14 +758,10 @@ The parameters in allowing*Maximum Message Size* you to set a maximum size limit
 
 *Body Size \(in MB\)* 
 
-
-
 </td>
 <td valign="top">
 
 Define the allowable size limit for processing the message body.
-
-
 
 </td>
 </tr>
@@ -920,14 +770,10 @@ Define the allowable size limit for processing the message body.
 
 *Attachments Size \(in MB\)* 
 
-
-
 </td>
 <td valign="top">
 
 Define the allowable size limit for processing the attachment.
-
-
 
 </td>
 </tr>

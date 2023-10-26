@@ -37,14 +37,10 @@ The following table provides code snippets that show how to use the Script step 
 
 Use Case
 
-
-
 </th>
 <th valign="top">
 
 Example Requestsand More Information
-
-
 
 </th>
 </tr>
@@ -52,8 +48,6 @@ Example Requestsand More Information
 <td valign="top">
 
 Get partner ID
-
-
 
 </td>
 <td valign="top">
@@ -90,16 +84,12 @@ Check out the following example code snippet:
 
 See also: [Use an Alternative Partner Id to Retrieve Partner Information](use-an-alternative-partner-id-to-retrieve-partner-information-01a784c.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Get alternative partner ID
-
-
 
 </td>
 <td valign="top">
@@ -143,8 +133,6 @@ Check out the following example code snippet:
 <td valign="top">
 
 Get the partner-specific value of a Partner Directory parameter
-
-
 
 </td>
 <td valign="top">
@@ -191,8 +179,6 @@ Check out the following example code snippet:
 
 Get an X.509 certificate for a binary parameter
 
-
-
 </td>
 <td valign="top">
 
@@ -234,8 +220,6 @@ Check out the following example code snippet:
 
 Get Partner ID to which an authorized user is assigned
 
-
-
 </td>
 <td valign="top">
 
@@ -268,8 +252,6 @@ Check out the following example code snippet:
 <td valign="top">
 
 Get the authorized users of a partner
-
-
 
 </td>
 <td valign="top">
@@ -305,8 +287,6 @@ Check out the following example code snippet:
 <td valign="top">
 
 Store binary data \(as byte array\) and the associated content type for Partner Directory binary parameters
-
-
 
 </td>
 <td valign="top">

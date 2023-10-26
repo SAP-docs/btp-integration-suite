@@ -28,14 +28,10 @@ The following information is shown for each lock entry:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -44,16 +40,12 @@ Description
 
 *Component* 
 
-
-
 </td>
 <td valign="top">
 
 Component that wrote the lock entry
 
 AS2, JMS, Mail, SFTP, and XI adapters can write locks.
-
-
 
 </td>
 </tr>
@@ -62,8 +54,6 @@ AS2, JMS, Mail, SFTP, and XI adapters can write locks.
 
 *Source* 
 
-
-
 </td>
 <td valign="top">
 
@@ -71,16 +61,12 @@ Component that caused the lock
 
 Example for SFTP: `user_sftp@ld1234.mycompany.corp`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Entry* 
-
-
 
 </td>
 <td valign="top">
@@ -97,16 +83,12 @@ To access the associated JMS Message, click *ID*. The Queue Monitor opens and lo
 
 This is only possible for JMS locks.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Created at* 
-
-
 
 </td>
 <td valign="top">
@@ -115,8 +97,6 @@ Time when the lock was created
 
 This is the time when a runtime node tried to process the message for the first time.
 
-
-
 </td>
 </tr>
 <tr>
@@ -124,16 +104,12 @@ This is the time when a runtime node tried to process the message for the first 
 
 *Expires at* 
 
-
-
 </td>
 <td valign="top">
 
 Time when lock entry expires
 
 If the message is retried but cannot be processed successfully before the expiration time, processing is stopped. In this case, the lock entry has to be removed manually to enable further processing.
-
-
 
 </td>
 </tr>

@@ -78,14 +78,10 @@ When you have created a sender channel with HTTPS adapter, you can configure the
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -93,8 +89,6 @@ Description
 <td valign="top">
 
 *Address* 
-
-
 
 </td>
 <td valign="top">
@@ -121,8 +115,6 @@ Enter the URL of the HTTP system to connect to.
 <td valign="top">
 
 *Authorization* 
-
-
 
 </td>
 <td valign="top">
@@ -171,8 +163,6 @@ Depending on your choice, you can also specify one of the following properties:
 
 *CSRF Protected* 
 
-
-
 </td>
 <td valign="top">
 
@@ -207,14 +197,10 @@ The parameters in *Maximum Message Size* allows you to set a maximum size limit 
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -223,14 +209,10 @@ Description
 
 Body Size \(in MB\)
 
-
-
 </td>
 <td valign="top">
 
 Define the allowable size limit for processing the message body.
-
-
 
 </td>
 </tr>

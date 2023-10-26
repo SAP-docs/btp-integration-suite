@@ -33,14 +33,10 @@ An example payload for the policy is as follows:
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -48,8 +44,6 @@ An example payload for the policy is as follows:
 <td valign="top">
 
 Name
-
-
 
 </td>
 <td valign="top">
@@ -70,14 +64,10 @@ The name used to reference the data collected for the specified variable. When v
 
 ref
 
-
-
 </td>
 <td valign="top">
 
 The flow variable for which you are collecting statistics. This variable can be a flow variable predefined by API Management or a custom variable that you define in your API proxy. The ref attribute often references a custom variable defined by the Extract Variables policy.
-
-
 
 </td>
 </tr>
@@ -86,14 +76,10 @@ The flow variable for which you are collecting statistics. This variable can be 
 
 type
 
-
-
 </td>
 <td valign="top">
 
 Specifies the data type of the variable specified by the ref attribute. Valid values are: string/integer/float/long/double. For data of type string, reference the statistical data as a Dimension in a custom report. For numerical data types \(integer/float/long/double\), reference the statistical data in a custom report as a Metric. See Create custom reports for more. The value of type can be omitted only if ref refers to a predefined API Management flow variable or the type is declared in the XML payload of the Extract Variables policy.
-
-
 
 </td>
 </tr>
@@ -102,14 +88,10 @@ Specifies the data type of the variable specified by the ref attribute. Valid va
 
 Default Value
 
-
-
 </td>
 <td valign="top">
 
 If you omit this element, the value of the policy's name attribute is used.
-
-
 
 </td>
 </tr>
@@ -126,21 +108,15 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Fault String
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -149,21 +125,15 @@ Cause
 
 UnsupportedDatatype
 
-
-
 </td>
 <td valign="top">
 
 StatisticsCollection \[collection\]: Datatype \[type\] is unsupported . Context \[context\]
 
-
-
 </td>
 <td valign="top">
 
 See the fault string.
-
-
 
 </td>
 </tr>
@@ -172,21 +142,15 @@ See the fault string.
 
 InvalidName
 
-
-
 </td>
 <td valign="top">
 
 StatisticsCollection: Name: \[name\] conflicts with system defined variables. Context \[context\]
 
-
-
 </td>
 <td valign="top">
 
 See the fault string.
-
-
 
 </td>
 </tr>
@@ -195,21 +159,15 @@ See the fault string.
 
 DatatypeMissing
 
-
-
 </td>
 <td valign="top">
 
 StatisticsCollection \[name\]: Datatype of \[type\] is missing. Context \[context\]
 
-
-
 </td>
 <td valign="top">
 
 See the fault string.
-
-
 
 </td>
 </tr>

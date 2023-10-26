@@ -62,14 +62,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -77,8 +73,6 @@ Description
 <td valign="top">
 
 *Address*
-
-
 
 </td>
 <td valign="top">
@@ -98,8 +92,6 @@ Relative endpoint address on which Cloud Integration can be reached by incoming 
 <td valign="top">
 
 *Authorization* 
-
-
 
 </td>
 <td valign="top">
@@ -170,14 +162,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -185,8 +173,6 @@ Description
 <td valign="top">
 
 Invalid XML Character Handling
-
-
 
 </td>
 <td valign="top">
@@ -236,14 +222,10 @@ Select the *Conditions* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -251,8 +233,6 @@ Description
 <td valign="top">
 
 Maximum Message Size
-
-
 
 </td>
 <td valign="top">
@@ -267,8 +247,6 @@ To configure the maximum message size, you can specify the following parameters:
 
 
 If a message is rejected because it exceeds the configured limit, the sender receives an error message.
-
-
 
 </td>
 </tr>

@@ -35,14 +35,10 @@ To create a destination:
 
 Property \(mandatory with \*\)
 
-
-
 </th>
 <th valign="top">
 
 Value or Description
-
-
 
 </th>
 </tr>
@@ -51,14 +47,10 @@ Value or Description
 
 *Name*\*
 
-
-
 </td>
 <td valign="top">
 
 The name must be `CloudIntegration_MonitoringDataConsumer`.
-
-
 
 </td>
 </tr>
@@ -67,14 +59,10 @@ The name must be `CloudIntegration_MonitoringDataConsumer`.
 
 *Type*\*
 
-
-
 </td>
 <td valign="top">
 
 The type HTTP is used for both HTTP and HTTPS connections.
-
-
 
 </td>
 </tr>
@@ -82,8 +70,6 @@ The type HTTP is used for both HTTP and HTTPS connections.
 <td valign="top">
 
 *URL*\*
-
-
 
 </td>
 <td valign="top">
@@ -96,8 +82,6 @@ For a Splunk Cloud Platform host `myhost`, use
 
 `http://http-inputs-myhost.splunkcloud.com`
 
-
-
 </td>
 </tr>
 <tr>
@@ -105,14 +89,10 @@ For a Splunk Cloud Platform host `myhost`, use
 
 *Proxy Type*\*
 
-
-
 </td>
 <td valign="top">
 
 Choose `Internet` for a Splunk Cloud Platform instance and *On Premise* for a Splunk Enterprise installation.
-
-
 
 </td>
 </tr>
@@ -121,14 +101,10 @@ Choose `Internet` for a Splunk Cloud Platform instance and *On Premise* for a Sp
 
 *Authentication*\*
 
-
-
 </td>
 <td valign="top">
 
 Choose *Basic Authentication*.
-
-
 
 </td>
 </tr>
@@ -137,14 +113,10 @@ Choose *Basic Authentication*.
 
 *User*\*
 
-
-
 </td>
 <td valign="top">
 
 Specify the value "Splunk".
-
-
 
 </td>
 </tr>
@@ -153,16 +125,12 @@ Specify the value "Splunk".
 
 *Password*\*
 
-
-
 </td>
 <td valign="top">
 
 Specify the HTTP Event Collector token \(generated when configuring HEC in Splunk\).
 
 For information on how to enable and configure the HTTP Event Collector, see: [https://docs.splunk.com/Documentation/Splunk/9.0.3/Data/UsetheHTTPEventCollector](https://docs.splunk.com/Documentation/Splunk/9.0.3/Data/UsetheHTTPEventCollector) 
-
-
 
 </td>
 </tr>
@@ -171,14 +139,10 @@ For information on how to enable and configure the HTTP Event Collector, see: [h
 
 *IndexName*\*
 
-
-
 </td>
 <td valign="top">
 
 Enter an index name
-
-
 
 </td>
 </tr>
@@ -199,14 +163,10 @@ Enter an index name
 
 *TargetSystem*\*
 
-
-
 </td>
 <td valign="top">
 
 Splunk
-
-
 
 </td>
 </tr>
@@ -215,14 +175,10 @@ Splunk
 
 *Source*
 
-
-
 </td>
 <td valign="top">
 
 Any value, used to fill in the source attribute Splunk events.
-
-
 
 </td>
 </tr>
@@ -231,14 +187,10 @@ Any value, used to fill in the source attribute Splunk events.
 
 *Host*
 
-
-
 </td>
 <td valign="top">
 
 Any value, used to fill in the host attribute Splunk events.
-
-
 
 </td>
 </tr>
@@ -247,14 +199,10 @@ Any value, used to fill in the host attribute Splunk events.
 
 *SourceType*
 
-
-
 </td>
 <td valign="top">
 
 If the source type is specified, it's set to the defined value in Splunk events.
-
-
 
 </td>
 </tr>
@@ -262,8 +210,6 @@ If the source type is specified, it's set to the defined value in Splunk events.
 <td valign="top">
 
 *DynamicSourceType*
-
-
 
 </td>
 <td valign="top">
@@ -284,14 +230,10 @@ If set to `true`, the source type is set to a value matching one of the followin
 
 *SourceTypePrefix*
 
-
-
 </td>
 <td valign="top">
 
 If *DynamicSourceType* is true, and the *SourceTypePrefix* property is , the property value is prepended to the source type. For example: for a prefix of `Custom` and an MPL run event, the source type is to `CustomRun`.
-
-
 
 </td>
 </tr>
@@ -300,14 +242,10 @@ If *DynamicSourceType* is true, and the *SourceTypePrefix* property is , the pro
 
 *SubValuesInline*
 
-
-
 </td>
 <td valign="top">
 
 If the property is set to `true`, values like custom header attributes and adapter attributes are added as JSON structures to the base `Run` event. This property is independent from the *SubValuesExtra* property.
-
-
 
 </td>
 </tr>
@@ -316,14 +254,10 @@ If the property is set to `true`, values like custom header attributes and adapt
 
 *SubValuesExtra*
 
-
-
 </td>
 <td valign="top">
 
 If the property is set to `true`, values like custom header attributes and adapter attributes are added as separate stand-alone events, following the base `Run` event. This property. is independent of the `SubValuesInline` property
-
-
 
 </td>
 </tr>

@@ -15,14 +15,10 @@ On top of a secure transport channel \(for example, based on HTTPS\), you have t
 
 Key Type
 
-
-
 </th>
 <th valign="top">
 
 Usage
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Usage
 
 **Private key** 
 
-
-
 </td>
 <td valign="top">
 
 Used by a sender to sign a message
-
-
 
 </td>
 </tr>
@@ -47,8 +39,6 @@ Used by a sender to sign a message
 
 Used by a receiver to decrypt a message \(that has been encrypted by a sender\)
 
-
-
 </td>
 </tr>
 <tr>
@@ -56,14 +46,10 @@ Used by a receiver to decrypt a message \(that has been encrypted by a sender\)
 
 **Public key** 
 
-
-
 </td>
 <td valign="top">
 
 Used by a receiver to verify a message \(signed by a sender\)
-
-
 
 </td>
 </tr>
@@ -71,8 +57,6 @@ Used by a receiver to verify a message \(signed by a sender\)
 <td valign="top">
 
 Used by a sender to encrypt a message
-
-
 
 </td>
 </tr>

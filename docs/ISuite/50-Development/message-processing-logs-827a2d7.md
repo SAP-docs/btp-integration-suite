@@ -58,14 +58,10 @@ Assign the following role template:
 
 Resource
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -73,8 +69,6 @@ Description
 <td valign="top">
 
 Logs
-
-
 
 </td>
 <td valign="top">
@@ -99,8 +93,6 @@ More information:
 
 Adapter Attributes
 
-
-
 </td>
 <td valign="top">
 
@@ -110,8 +102,6 @@ Each adapter has a defined set of attributes that are described for every adapte
 
 The `AdapterId` property identifies the adapter that logs something \(the component ID of the adapter in the component metadata\). The `AdapterMessageId` property uniquely identifies a message in context of a particular adapter.
 
-
-
 </td>
 </tr>
 <tr>
@@ -119,14 +109,10 @@ The `AdapterId` property identifies the adapter that logs something \(the compon
 
 Attachments
 
-
-
 </td>
 <td valign="top">
 
 Represents attachments of message processing logs.
-
-
 
 </td>
 </tr>
@@ -134,8 +120,6 @@ Represents attachments of message processing logs.
 <td valign="top">
 
 Custom Header Properties
-
-
 
 </td>
 <td valign="top">
@@ -149,8 +133,6 @@ Represents custom header properties of the message processing log.
 
 More information: [Use Custom Header Properties to Search for Message Processing Logs](use-custom-header-properties-to-search-for-message-processing-logs-d4b5839.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -158,14 +140,10 @@ More information: [Use Custom Header Properties to Search for Message Processing
 
 ID Mapper
 
-
-
 </td>
 <td valign="top">
 
 Allows you to get all target IDs for the given source ID \(stored in the ID mapper\) or to get all source IDs for the given target ID \(stored in the ID mapper\).
-
-
 
 </td>
 </tr>
@@ -173,8 +151,6 @@ Allows you to get all target IDs for the given source ID \(stored in the ID mapp
 <td valign="top">
 
 Idempotent Repository
-
-
 
 </td>
 <td valign="top">
@@ -201,8 +177,6 @@ More information:
 
 Certain values \(when indicated as `<hexalias>`\) need to be provided in hexadecimal notation. String characters are stored by the computer as numbers. When the hexadecimal notation is required, the text is to be provided not as decimal number but as a hexadecimal number instead. For example: The string `my alias` is expressed by the following decimal numbers: `109 121 32 97 108 105 97 115` because, according to the American Standard Code for Information Interchange \(ASCII \), the letter `m` is translated to the decimal number `109`, and so forth. If you convert each number to a hexadecimal number, you get: `6D 79 20 61 6C 69 61 73`. Note that `6D` is the hexadecimal representation of `109`, and so forth. If you want to specify `my alias` in an example request, enter `6D7920616C696173`.
 
-
-
 </td>
 </tr>
 <tr>
@@ -210,16 +184,12 @@ Certain values \(when indicated as `<hexalias>`\) need to be provided in hexadec
 
 Data Archiving \(only available in the Cloud Foundry environment.\)
 
-
-
 </td>
 <td valign="top">
 
 Allows you to activate data archiving.
 
 More information:[Archiving Data](archiving-data-bc71f88.md) 
-
-
 
 </td>
 </tr>

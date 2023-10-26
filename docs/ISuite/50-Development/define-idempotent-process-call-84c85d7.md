@@ -48,15 +48,11 @@ The Idempotent Process Call is useful for modeling at-most-once or exactly-once 
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -64,15 +60,11 @@ The Idempotent Process Call is useful for modeling at-most-once or exactly-once 
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     Specify a name.
-
-
     
     </td>
     </tr>
@@ -86,15 +78,11 @@ The Idempotent Process Call is useful for modeling at-most-once or exactly-once 
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -102,15 +90,11 @@ The Idempotent Process Call is useful for modeling at-most-once or exactly-once 
     <td valign="top">
     
     *Local Integration Process* 
-
-
     
     </td>
     <td valign="top">
     
     Select a pre-defined local integration process that you want to invoke.
-
-
     
     </td>
     </tr>
@@ -118,8 +102,6 @@ The Idempotent Process Call is useful for modeling at-most-once or exactly-once 
     <td valign="top">
     
     *Message ID* 
-
-
     
     </td>
     <td valign="top">
@@ -137,8 +119,6 @@ The Idempotent Process Call is useful for modeling at-most-once or exactly-once 
     <td valign="top">
     
     *Skip Process Call for Duplicates* 
-
-
     
     </td>
     <td valign="top">

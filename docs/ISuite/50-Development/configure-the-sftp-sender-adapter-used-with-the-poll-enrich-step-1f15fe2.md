@@ -59,14 +59,10 @@ Once you have created a sender channel and selected the SFTP sender adapter, you
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -75,14 +71,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the SFTP channel.
-
-
 
 </td>
 </tr>
@@ -99,14 +91,10 @@ Select the *Source* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -115,8 +103,6 @@ Description
 
 *Directory* 
 
-
-
 </td>
 <td valign="top">
 
@@ -124,16 +110,12 @@ Relative path to read the file from a directory. Example: `parentdirectory/child
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *File Name* 
-
-
 
 </td>
 <td valign="top">
@@ -171,16 +153,12 @@ Name of the file to be read.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Address* 
-
-
 
 </td>
 <td valign="top">
@@ -189,16 +167,12 @@ Host name or IP address of the SFTP server and an optional port, for example, `w
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -216,8 +190,6 @@ Proxy type that you're using to connect to the target system.
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md). For more information on how to use the *On-Premise* option to connect to an on-premise SFTP server, check out SAP Community blog [Cloud Integration – How to Connect to an On-Premise sftp server via Cloud Connector](https://blogs.sap.com/2018/11/16/cloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector/).
 
-
-
 </td>
 </tr>
 <tr>
@@ -227,8 +199,6 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 
 \(only if *On-Premise* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -236,16 +206,12 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *User Name* 
-
-
 
 </td>
 <td valign="top">
@@ -256,8 +222,6 @@ Make sure that the user name contains no other characters than `A-z`, `0-9`, `_`
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
@@ -267,16 +231,12 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 \(only if *Public Key* or *Dual* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Alias to identify the private key in the keystore used for the communication with the SFTP server.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
-
-
 
 </td>
 </tr>
@@ -285,8 +245,6 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 *Timeout \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
@@ -294,16 +252,12 @@ Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted whi
 
 If the property `SAP_FtpTimeout` is defined, its value is used to specify this parameter at runtime.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Maximum Reconnect Attempts* 
-
-
 
 </td>
 <td valign="top">
@@ -315,16 +269,12 @@ Maximum number of attempts allowed to reconnect to the SFTP server before messag
 
 If the property `SAP_FtpMaxReconnect` is defined, its value is used to specify this parameter at runtime.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Reconnect Delay \(in ms\)* 
-
-
 
 </td>
 <td valign="top">
@@ -333,16 +283,12 @@ Time \(in milliseconds\) the system waits before attempting to reconnect to the 
 
 If the property `SAP_FtpMaxReconDelay` is defined, its value is used to specify this parameter at runtime.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Automatically Disconnect* 
-
-
 
 </td>
 <td valign="top">
@@ -351,8 +297,6 @@ Disconnect from the SFTP server after each message processing.
 
 If the property `SAP_FtpDisconnect` is defined, its value is used to specify this parameter at runtime \(possible values: `true` and `false`\).
 
-
-
 </td>
 </tr>
 <tr>
@@ -360,16 +304,12 @@ If the property `SAP_FtpDisconnect` is defined, its value is used to specify thi
 
 *Enable Support for Deprecated Algorithms* 
 
-
-
 </td>
 <td valign="top">
 
 Select to allow several deprecated key exchange, public key, host key, and encryption algorithms like the ‘diffie-hellman-group1-sha1’ key exchange algorithm or the ‘ssh-rsa’ host key and public key algorithm.
 
 For more information on compatibility and support, see SAP KBA [3079510](https://me.sap.com/notes/3079510).
-
-
 
 </td>
 </tr>
@@ -386,14 +326,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -401,8 +337,6 @@ Description
 <td valign="top">
 
 *Read Lock Strategy* 
-
-
 
 </td>
 <td valign="top">
@@ -425,16 +359,12 @@ Prevents files that are in the process of being written from being read from the
 
 *Change Directories Stepwise* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option to change directory levels one at a time.
 
 If the property `SAP_FtpStepwise` is defined, its value is used to specify this parameter at runtime \(possible values: `true` and `false`\).
-
-
 
 </td>
 </tr>
@@ -443,14 +373,10 @@ If the property `SAP_FtpStepwise` is defined, its value is used to specify this 
 
 *Include Subdirectories* 
 
-
-
 </td>
 <td valign="top">
 
 Selecting this option allows you to look for files in all subdirectories of the directory.
-
-
 
 </td>
 </tr>
@@ -459,8 +385,6 @@ Selecting this option allows you to look for files in all subdirectories of the 
 
 *Use Fast Exists Check*
 
-
-
 </td>
 <td valign="top">
 
@@ -468,16 +392,12 @@ If selected, file exists check is performed on the SFTP server. If your server d
 
 If the property `SAP_FtpFastExistsCheck` is defined, its value is used to specify this parameter at runtime.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Post-Processing* 
-
-
 
 </td>
 <td valign="top">
@@ -523,16 +443,12 @@ You can select one of the following options:
 
 \(only if *Move File* is selected for *Post-Processing*\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the target directory where to move the file.
 
 Make sure that you specify a relative file path for the target directory. Note that the specified file path is defined relative to the directory specified with the *Directory* parameter. If you specify an absolute file path, it may occur that the file cannot be stored correctly at runtime. You can also specify the target directory dynamically, for example, using the timestamp of the message. The following example uses backup folders with timestamps and replaces the file extension with `bak: backup/${date:now:yyyyMMdd}/${file:name.noext}.bak`.
-
-
 
 </td>
 </tr>

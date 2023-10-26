@@ -61,7 +61,7 @@ The following HTTPS request headers for the sample HTTPS endpoint `https://test.
 
 > ### Note:  
 > -   Adapter tracing is supported for HTTPS adapter. For more information, see [Message Processing Log - Adapter Tracing](message-processing-log-adapter-tracing-a9db4ea.md).
-> -   When you deploy an integration flow with HTTPS sender adapter, you can see the endpoint information of this integration flow in *Manage Integration Content* section of operations view.
+> -   When you deploy an integration flow with HTTPS sender adapter, you can review the endpoint information of this integration flow in *Manage Integration Content* section of operations view.
 
 When you have created a sender channel with HTTPS adapter, you can configure the following attributes:
 
@@ -78,14 +78,10 @@ When you have created a sender channel with HTTPS adapter, you can configure the
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -93,8 +89,6 @@ Description
 <td valign="top">
 
 *Address* 
-
-
 
 </td>
 <td valign="top">
@@ -121,8 +115,6 @@ Enter the URL of the HTTP system to connect to.
 <td valign="top">
 
 *CSRF Protected* 
-
-
 
 </td>
 <td valign="top">
@@ -158,14 +150,10 @@ The parameters in *Maximum Message Size* allows you to set a maximum size limit 
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -174,14 +162,10 @@ Description
 
 Body Size \(in MB\)
 
-
-
 </td>
 <td valign="top">
 
 Define the allowable size limit for processing the message body.
-
-
 
 </td>
 </tr>
@@ -192,7 +176,7 @@ Save the settings.
 > ### Note:  
 > -   Additional incoming request headers and URL parameters can be added to exchange headers for further processing in integration flow. You must define these headers and paramters in *Allowed Headers* list at integration flow level.
 > -   Once the integration flow processing completes, the HTTPS sender adapter returns header and body to end user and sets the response code. You can use *Content Modifier* element to send back specific http response and customize the response.
-> -   The sample integration flow is as shown below:![](images/HTTP3_e763f14.png)
+> -   The sample integration flow is as shown next:![](images/HTTP3_e763f14.png)
 > -   Address URLs for http endpoints across integration flow must be unique. If it is not unique then the integration flow does not start.
 > -   Adapter returns the following HTTP response code:
 > 

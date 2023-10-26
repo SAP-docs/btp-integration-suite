@@ -17,8 +17,6 @@ For more example requests, see:
 
 Alternative Partner
 
-
-
 </td>
 <td valign="top">
 
@@ -29,8 +27,6 @@ Alternative Partner
 [Create Alternative Partner](create-alternative-partner-7e6baf3.md)
 
 [Update an Alternative Partner](update-an-alternative-partner-60d19e3.md)
-
-
 
 </td>
 </tr>
@@ -43,14 +39,10 @@ String Parameter
 
 Binary Parameter
 
-
-
 </td>
 <td valign="top">
 
 [Requests for String Parameter, Binary Parameter, and Authorized User](requests-for-string-parameter-binary-parameter-and-authorized-user-47b6999.md) 
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Binary Parameter
 
 User Credential Parameters
 
-
-
 </td>
 <td valign="top">
 
 [Requests for UserCredentialParameter](requests-for-usercredentialparameter-79c06dd.md) 
-
-
 
 </td>
 </tr>

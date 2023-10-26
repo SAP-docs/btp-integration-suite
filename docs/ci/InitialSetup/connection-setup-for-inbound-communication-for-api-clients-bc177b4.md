@@ -21,21 +21,15 @@ The following table provides an overview of the available authentication options
 
 Authentication Option
 
-
-
 </th>
 <th valign="top">
 
 Configuration \(Summary\)
 
-
-
 </th>
 <th valign="top">
 
 How it Works
-
-
 
 </th>
 </tr>
@@ -43,8 +37,6 @@ How it Works
 <td valign="top">
 
 OAuth
-
-
 
 </td>
 <td valign="top">
@@ -54,8 +46,6 @@ Go to SAP BTP cockpit and define a service key for the *Process Integration* ser
 The generated service key contains the following properties: `clientid`, `clientsecret`, and `tokenurl`.
 
 See: [OAuth with Client Credentials Grant for API Clients](../ConnectionSetup/oauth-with-client-credentials-grant-for-api-clients-20e26a8.md)
-
-
 
 </td>
 <td valign="top">
@@ -80,8 +70,6 @@ Basic authentication of a user registered at an identity provider \(IdP\)
 
 \(this option isn't considered to be secure enough for productive scenarios\)
 
-
-
 </td>
 <td valign="top">
 
@@ -89,16 +77,12 @@ Register a user at an identity provider \(for example, SAP's default identity pr
 
 See: [Basic Authentication of an IdP User for API Clients](../ConnectionSetup/basic-authentication-of-an-idp-user-for-api-clients-57f104d.md)
 
-
-
 </td>
 <td valign="top">
 
 With username and password \(known to the identity provider\), the API client can access the Cloud Integration resource.
 
 For modifying calls, an CSRF-Token is required.
-
-
 
 </td>
 </tr>
@@ -119,21 +103,15 @@ The following table provides an overview of the available authentication options
 
 Authentication Option
 
-
-
 </th>
 <th valign="top">
 
 Configuration \(Summary\)
 
-
-
 </th>
 <th valign="top">
 
 How it Works
-
-
 
 </th>
 </tr>
@@ -142,16 +120,12 @@ How it Works
 
 OAuth
 
-
-
 </td>
 <td valign="top">
 
 Go to SAP BTP cockpit and define an OAuth client. For *Authorization Grant* select the option *Client Credentials*. On saving, a client ID and secret is generated. Assign to user `oauth_client_<client ID>` a role that grants access to the Cloud Integration resource.
 
 See: [Setting Up OAuth Inbound Authentication with Client Credentials Grant for API Clients](../ConnectionSetup/setting-up-oauth-inbound-authentication-with-client-credentials-grant-for-api-clients-040d811.md)
-
-
 
 </td>
 <td valign="top">
@@ -176,8 +150,6 @@ Basic authentication of a user registered at an identity provider \(IdP\)
 
 \(this option isn't considered to be secure enough for productive scenarios\)
 
-
-
 </td>
 <td valign="top">
 
@@ -185,14 +157,10 @@ Register a user at an identity provider \(for example, SAP's default identity pr
 
 See: [Setting Up Inbound Authentication of an IdP User for API Clients](../ConnectionSetup/setting-up-inbound-authentication-of-an-idp-user-for-api-clients-1656c91.md) 
 
-
-
 </td>
 <td valign="top">
 
 With username and password \(known to the identity provider\), the API client can access the Cloud Integration resource. For modifying calls, an CSRF-Token is required.
-
-
 
 </td>
 </tr>

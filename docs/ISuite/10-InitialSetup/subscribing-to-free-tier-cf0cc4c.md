@@ -26,7 +26,7 @@ Subscribe to free tier service plan.
 
     1.  Verify the service entitlement by navigating to *Global Account* \> *Entitlements* \> *Service Assignments* and find Integration Suite's *free* service plan.
 
-    2.  Create a subaccount in your assigned global account. See, [Setting Up Your Account](setting-up-your-account-079c68f.md).
+    2.  Create a subaccount in your assigned global account. See: [Setting Up Your Account](setting-up-your-account-079c68f.md).
 
 
 2.  Task of Tenant Administrator
@@ -39,15 +39,15 @@ Subscribe to free tier service plan.
 
     4.  Save the changes.
 
-    5.  Subscribe to the Integration Suite free tier plan. See, [Subscribing and Configuring Initial Access to Integration Suite](subscribing-and-configuring-initial-access-to-integration-suite-8a3c8b7.md).
+    5.  Subscribe to the Integration Suite free tier plan. See: [Subscribing and Configuring Initial Access to Integration Suite](subscribing-and-configuring-initial-access-to-integration-suite-8a3c8b7.md).
 
         > ### Note:  
         > In the *New Instance or Subscription* dialog box, select the *free* as the plan.
 
-    6.  Assign role collection to access the tenant. See, [Configuring User Access](../configuring-user-access-2c6214a.md).
+    6.  Assign role collection to access the tenant. See: [Configuring User Access](../configuring-user-access-2c6214a.md).
 
 
-3.  Go to the Integration Suite home pageand provision the capabilities. See, [Working with Integration Suite Home](../20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md).
+3.  Go to the Integration Suite home page and provision the capabilities. See: [Working with Integration Suite Home](../20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md).
 
     The free tier plan has an option to migrate to a paid service plan. See: [SAP Integration Suite – How to seamlessly upgrade your tenant to a higher service plan](https://blogs.sap.com/2021/09/27/sap-integration-suite-how-to-seamlessly-upgrade-your-tenant-to-a-higher-service-plan/).
 

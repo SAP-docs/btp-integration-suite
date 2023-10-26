@@ -6,7 +6,7 @@
 
 Configure the sender side integration flow.
 
-The integration flows receive and extract messages sent using the AS2, AS2 MDN, IDoc and SOAP adapter. In 2.0 version, the error messages are persisted in the JMS Queue and also during retry, the error messages will be persisted again in the queue. You need to monitor the JMS queue in order to resolve the issues.
+The integration flows receive and extract messages sent using the AS2, AS2 MDN, IDoc, SOAP and ProcessDirect adapter. In 2.1.0 version, the error messages are persisted in the JMS Queue and also during retry, the error messages will be persisted again in the queue. You need to monitor the JMS queue in order to resolve the issues.
 
 The image below shows the default configuration of the JMS *Connection* tab in 2.0.
 
@@ -15,6 +15,8 @@ The image below shows the default configuration of the JMS *Connection* tab in 2
 Follow the procedure below to configure these integration flows.
 
 > ### Note:  
+> If you have a custom integration flow calling the sender side integration flow, it has to hand over the type system in header, and avoid using the header name reserved by the application\(TPM\).
+> 
 > Few pointers to note while using the AS2/AS2 MDN communication flow:
 > 
 > -   All AS2 Requests will be decrypted based on the mime header instead of the Communication settings \(AS2 Sender\).
@@ -48,22 +50,16 @@ Follow the procedure below to configure these integration flows.
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Default Value
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -71,22 +67,16 @@ Follow the procedure below to configure these integration flows.
     <td valign="top">
     
     Sender
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     The sender adapter name.
-
-
     
     </td>
     </tr>
@@ -94,22 +84,16 @@ Follow the procedure below to configure these integration flows.
     <td valign="top">
     
     Adapter Type
-
-
     
     </td>
     <td valign="top">
     
     AS2
-
-
     
     </td>
     <td valign="top">
     
     The adapter type which is set to *AS2* by default.
-
-
     
     </td>
     </tr>
@@ -117,22 +101,16 @@ Follow the procedure below to configure these integration flows.
     <td valign="top">
     
     Address
-
-
     
     </td>
     <td valign="top">
     
     /tpm/b2b/as2
-
-
     
     </td>
     <td valign="top">
     
     Address of the endpoint to start the integration flow.
-
-
     
     </td>
     </tr>
@@ -140,15 +118,11 @@ Follow the procedure below to configure these integration flows.
     <td valign="top">
     
     User Role
-
-
     
     </td>
     <td valign="top">
     
     ESBMessaging.send
-
-
     
     </td>
     <td valign="top">
@@ -156,8 +130,6 @@ Follow the procedure below to configure these integration flows.
     Role authorisation needed to trigger the integration flow. *ESBMessaging.send* is selected by default.
 
     Choose *Select* if you want to change the user role.
-
-
     
     </td>
     </tr>
@@ -165,22 +137,16 @@ Follow the procedure below to configure these integration flows.
     <td valign="top">
     
     Own AS2 ID
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Own company ID \(receiver\) from the incoming message expected in the sender AS2 channel.
-
-
     
     </td>
     </tr>
@@ -196,22 +162,16 @@ Follow the procedure below to configure these integration flows.
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Default Value
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -219,22 +179,16 @@ Follow the procedure below to configure these integration flows.
     <td valign="top">
     
     Receiver
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     The name of the receiver
-
-
     
     </td>
     </tr>
@@ -242,22 +196,16 @@ Follow the procedure below to configure these integration flows.
     <td valign="top">
     
     Adapter Type
-
-
     
     </td>
     <td valign="top">
     
     JMS
-
-
     
     </td>
     <td valign="top">
     
     The type of the receiver adapter which is set to *JMS* by default.
-
-
     
     </td>
     </tr>
@@ -265,15 +213,11 @@ Follow the procedure below to configure these integration flows.
     <td valign="top">
     
     Queue Name
-
-
     
     </td>
     <td valign="top">
     
     SAP\_TPM\_INBOUND\_Q
-
-
     
     </td>
     <td valign="top">
@@ -321,22 +265,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Default Value
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -344,22 +282,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     Sender
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     The name of the sender.
-
-
     
     </td>
     </tr>
@@ -367,22 +299,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     Adapter Type
-
-
     
     </td>
     <td valign="top">
     
     IDOC
-
-
     
     </td>
     <td valign="top">
     
     The type of the sender adapter which is set to *IDOC* by default.
-
-
     
     </td>
     </tr>
@@ -390,22 +316,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     Address
-
-
     
     </td>
     <td valign="top">
     
     /tpm/b2b/idoc/
-
-
     
     </td>
     <td valign="top">
     
     Address of the endpoint to start the integration flow
-
-
     
     </td>
     </tr>
@@ -413,15 +333,11 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     User Role
-
-
     
     </td>
     <td valign="top">
     
     ESBMessaging.send
-
-
     
     </td>
     <td valign="top">
@@ -429,8 +345,6 @@ This integration flow is used to capture the Technical Acknowledgement through t
     Role authorisation needed to trigger the integration flow.
 
     Choose *Select* to change the user role.
-
-
     
     </td>
     </tr>
@@ -446,22 +360,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Default Value
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -469,22 +377,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     Receiver
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     The name of the receiver
-
-
     
     </td>
     </tr>
@@ -492,22 +394,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     Adapter Type
-
-
     
     </td>
     <td valign="top">
     
     JMS
-
-
     
     </td>
     <td valign="top">
     
     The type of the receiver adapter which is set to *JMS* by default.
-
-
     
     </td>
     </tr>
@@ -515,22 +411,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     Queue Name
-
-
     
     </td>
     <td valign="top">
     
     SAP\_TPM\_INBOUND\_Q
-
-
     
     </td>
     <td valign="top">
     
     JMS queue where the incoming message is persisted.
-
-
     
     </td>
     </tr>
@@ -557,22 +447,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Default Value
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -580,22 +464,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     Sender
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     The name of the sender
-
-
     
     </td>
     </tr>
@@ -603,22 +481,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     Adapter Type
-
-
     
     </td>
     <td valign="top">
     
     SOAP
-
-
     
     </td>
     <td valign="top">
     
     The type of the sender adapter which is set to *SOAP* by default.
-
-
     
     </td>
     </tr>
@@ -626,22 +498,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     Address
-
-
     
     </td>
     <td valign="top">
     
     /tpm/b2b/soap/
-
-
     
     </td>
     <td valign="top">
     
     Address of the endpoint to start the integration flow
-
-
     
     </td>
     </tr>
@@ -649,15 +515,11 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     User Role
-
-
     
     </td>
     <td valign="top">
     
     ESBMessaging.send
-
-
     
     </td>
     <td valign="top">
@@ -665,8 +527,6 @@ This integration flow is used to capture the Technical Acknowledgement through t
     Role authorisation needed to trigger the integration flow.
 
     Choose *Select* if you want to change the user role.
-
-
     
     </td>
     </tr>
@@ -682,22 +542,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Default Value
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -705,22 +559,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     Receiver
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     The name of the receiver
-
-
     
     </td>
     </tr>
@@ -728,22 +576,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     Adapter Type
-
-
     
     </td>
     <td valign="top">
     
     JMS
-
-
     
     </td>
     <td valign="top">
     
     The type of the receiver adapter which is set to *JMS* by default.
-
-
     
     </td>
     </tr>
@@ -751,22 +593,16 @@ This integration flow is used to capture the Technical Acknowledgement through t
     <td valign="top">
     
     Queue Name
-
-
     
     </td>
     <td valign="top">
     
     SAP\_TPM\_INBOUND\_Q
-
-
     
     </td>
     <td valign="top">
     
     JMS queue where the incoming message is persisted.
-
-
     
     </td>
     </tr>
@@ -774,4 +610,107 @@ This integration flow is used to capture the Technical Acknowledgement through t
     
 4.  Choose *Save*.
 5.  Choose *Deploy*.
+
+
+
+<a name="loio5b946c5acdd5455fab15d3bc90a35ccc__section_phb_xhq_bzb"/>
+
+## Sender Process Direct Communication Flow V2
+
+1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons"></span> button of the integration flow *Step 1 - Sender Process Direct Communication Flow V2* and select *Deploy*.
+
+
+
+
+<a name="loio5b946c5acdd5455fab15d3bc90a35ccc__section_jmd_h3q_bzb"/>
+
+## Write Message to Message Queue
+
+This integration flow writes the incoming message into the message queue.
+
+1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons"></span> button of the integration flow *Step 1b - Write Message to Message queue* and select *Configure*.
+
+2.  Select the *Receiver* tab and maintain the following parameter
+
+    **Receiver Parameter**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Parameter
+    
+    </th>
+    <th valign="top">
+
+    Default Value
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Receiver
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+    The name of the receiver
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Adapter Type
+    
+    </td>
+    <td valign="top">
+    
+    JMS
+    
+    </td>
+    <td valign="top">
+    
+    The type of the receiver adapter which is set to *JMS* by default.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Queue Name
+    
+    </td>
+    <td valign="top">
+    
+    SAP\_TPM\_INBOUND\_Q
+    
+    </td>
+    <td valign="top">
+    
+    JMS queue where the incoming message is persisted.
+
+    > ### Note:  
+    > This queue will also persist the error messages.
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+3.  Choose *Save*.
+4.  Choose *Deploy*.
 

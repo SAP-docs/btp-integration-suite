@@ -17,14 +17,10 @@ The following table contains operating processes and tasks that are performed by
 
 Process
 
-
-
 </th>
 <th valign="top">
 
 Customer Task
-
-
 
 </th>
 </tr>
@@ -33,14 +29,10 @@ Customer Task
 
 Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Provisioning of Kubernetes resources and systems. This includes the allocation and provisioning of technical resources, such as storage, network, compute units, systems, the deployment of the application software and proper initial configuration.
-
-
 
 </td>
 </tr>
@@ -49,14 +41,10 @@ Provisioning of Kubernetes resources and systems. This includes the allocation a
 
 Change Management
 
-
-
 </td>
 <td valign="top">
 
 Apply regular product increments, as well as corrections to the infrastructure, systems, and services.
-
-
 
 </td>
 </tr>
@@ -65,14 +53,10 @@ Apply regular product increments, as well as corrections to the infrastructure, 
 
 User Management
 
-
-
 </td>
 <td valign="top">
 
 Manage users, permissions, and security configurations in your subaccount.
-
-
 
 </td>
 </tr>
@@ -81,14 +65,10 @@ Manage users, permissions, and security configurations in your subaccount.
 
 System Monitoring
 
-
-
 </td>
 <td valign="top">
 
 Monitor availability and resource consumption \(memory, CPU, storage\) to detect issues in technical operations.
-
-
 
 </td>
 </tr>
@@ -97,14 +77,10 @@ Monitor availability and resource consumption \(memory, CPU, storage\) to detect
 
 Application Management
 
-
-
 </td>
 <td valign="top">
 
 Design, develop, deploy, configure, maintain, and operate the application within the subaccount. This includes application monitoring.
-
-
 
 </td>
 </tr>
@@ -113,14 +89,10 @@ Design, develop, deploy, configure, maintain, and operate the application within
 
 Decommissioning
 
-
-
 </td>
 <td valign="top">
 
 Ensure the secure deletion of data and other resources. This includes the disassembling of Kubernetes resources and systems.
-
-
 
 </td>
 </tr>

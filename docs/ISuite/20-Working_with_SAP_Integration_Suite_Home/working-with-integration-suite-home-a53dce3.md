@@ -9,7 +9,7 @@ Access the various features and resources available on the Integration Suite hom
 **Prerequisites**
 
 -   You’ve subscribed to the Integration Suite application. For more information, see [Subscribing and Configuring Initial Access to Integration Suite](../10-InitialSetup/subscribing-and-configuring-initial-access-to-integration-suite-8a3c8b7.md).
--   You’ve the *Integration\_Provisioner* role or any relevant Integration Suite capability-specific role assigned to your user. For more information, see [Configuring User Access](../configuring-user-access-2c6214a.md).
+-   You have the *Integration\_Provisioner* role or any relevant Integration Suite capability-specific role assigned to your user. For more information, see [Configuring User Access](../configuring-user-access-2c6214a.md).
 
 
 
@@ -18,7 +18,7 @@ The Integration Suite home page is your first entry point to the Integration Sui
 > ### Note:  
 > If you've subscribed to an older version of the Integration Suite, when you choose *Go To Application* from the *Instances and Subscriptions*page on the BTP cockpit, you will be navigated to the provisioning window. To navigate to the new home page, just choose *Integration Suite* from the top left corner of the toolbar.
 
-You can see the following sections on the Integration Suite home page:
+You find see the following sections on the Integration Suite home page:
 
 
 
@@ -47,12 +47,12 @@ This section, depending on the capabilities provisioned, displays information pe
 
 ### Capabilities
 
-The *Capabilities* section displays the tiles of the capabilities activated for you. If you've the Integration\_Provisioner role, you'll be able to add new capabilities, and manage the existing capabilities. To know more about adding and activating capabilities, and providing users access to the functionality, see [Capabilities](../capabilities-e1c5b90.md) .
+The *Capabilities* section displays the tiles of the capabilities activated for you. If you have the Integration\_Provisioner role, you'll be able to add new capabilities, and manage the existing capabilities. To know more about adding and activating capabilities, and providing users access to the functionality, see [Capabilities](../capabilities-e1c5b90.md) .
 
 Each capability tile also displays some quick links to allow you to start working with the capability.
 
 > ### Note:  
-> If you're working with APIs, and have activated the API Management capability, then the first thing you'll see is the *Settings* tab. Choose *Settings* \> *API* to configure the service. For more information, see [Setting Up API Management Capability](../50-Development/setting-up-api-management-capability-f34e86c.md).
+> If you're working with APIs, and have activated the API Management capability, then the first thing displayed is the *Settings* tab. Choose *Settings* \> *API* to configure the service. For more information, see [Setting Up API Management Capability](../50-Development/setting-up-api-management-capability-f34e86c.md).
 
 > ### Note:  
 > For Open Connectors, Integration Assessment, and Migration Assessment, you will be navigated out of the Integration Suite to the respective capability.
@@ -67,9 +67,9 @@ This section highlights the salient features of the SAP Integration Suite. You c
 
 ### Resources
 
-In you can choose links pointing to various Integration Suite resources ranging from product documentation, feature updates, Learning Journeys, to community pages.
+In this section, you can choose links pointing to various Integration Suite resources ranging from product documentation, feature updates, Learning Journeys, to community pages.
 
-If you want to request for new features, use the *Tell Us What You Want* button at the bottom to navigate to the SAP Integration Suite Influence Channel.
+If you want to request for new features, choose *Tell Us What You Want* to navigate to the SAP Integration Suite Influence Channel.
 
 
 
@@ -84,35 +84,25 @@ The left navigation bar allows you to navigate through different aspects of the 
 
 Tab
 
-
-
 </th>
 <th valign="top">
 
 API Management
-
-
 
 </th>
 <th valign="top">
 
 Cloud Integration
 
-
-
 </th>
 <th valign="top">
 
 Trading Partner Management
 
-
-
 </th>
 <th valign="top">
 
 Integration Advisor
-
-
 
 </th>
 </tr>
@@ -121,35 +111,25 @@ Integration Advisor
 
 Discover <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Discover* \> *APIs*
-
-
 
 </td>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Discover* \> *Integrations*
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Discover* \> *Type Systems*
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Discover* \> *Type Systems*
-
-
 
 </td>
 </tr>
@@ -158,35 +138,25 @@ Discover <span class="SAP-icons"></span>
 
 Design :pencil2:
 
+</td>
+<td valign="top">
 
+<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Design* \> *Graph*
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Design* \> *APIs**Design* \> *Graph*
-
-
-
-</td>
-<td valign="top">
-
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Design* \> *Integrations*
-
-
+<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Design* \> *Integrations and APIs*
 
 </td>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Design* \> *B2B Scenarios*
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Design* \> *Custom Messages, MIGs, and MAGs*
-
-
 
 </td>
 </tr>
@@ -195,35 +165,25 @@ Design :pencil2:
 
 Test <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Test* \> *APIs*
 
+</td>
+<td valign="top">
 
+<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
 
 </td>
 <td valign="top">
 
 <span style="color:#BB0000;"><span class="SAP-icons"></span></span>
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#BB0000;"><span class="SAP-icons"></span></span>
-
-
-
-</td>
-<td valign="top">
-
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
-
-
 
 </td>
 </tr>
@@ -232,35 +192,52 @@ Test <span class="SAP-icons"></span>
 
 Configure <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Configure* \> *APIs*
 
+</td>
+<td valign="top">
 
+<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
 
 </td>
 <td valign="top">
 
 <span style="color:#BB0000;"><span class="SAP-icons"></span></span>
 
+</td>
+<td valign="top">
 
+<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Engage <span class="SAP-icons"></span> 
+
+</td>
+<td valign="top">
+
+<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> 
 
 </td>
 <td valign="top">
 
 <span style="color:#BB0000;"><span class="SAP-icons"></span></span>
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#BB0000;"><span class="SAP-icons"></span></span>
 
+</td>
+<td valign="top">
 
+<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
 
 </td>
 </tr>
@@ -269,35 +246,25 @@ Configure <span class="SAP-icons"></span>
 
 Monitor <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Monitor* \> *Analyze APIs*
 
-
-
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Monitor* \> *Integrations*
-
-
+<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Monitor* \> *Integrations and APIs*
 
 </td>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Monitor* \> *B2B scenarios*
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#BB0000;"><span class="SAP-icons"></span></span>
-
-
 
 </td>
 </tr>
@@ -306,35 +273,25 @@ Monitor <span class="SAP-icons"></span>
 
 Inspect Resource Consumption <span class="SAP-icons"></span> 
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#BB0000;"><span class="SAP-icons"></span></span>
-
-
 
 </td>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> 
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#BB0000;"><span class="SAP-icons"></span></span>
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#BB0000;"><span class="SAP-icons"></span></span>
-
-
 
 </td>
 </tr>
@@ -343,35 +300,54 @@ Inspect Resource Consumption <span class="SAP-icons"></span>
 
 Monetize <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Monitor* \> *APIs*
 
+</td>
+<td valign="top">
 
+<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
 
 </td>
 <td valign="top">
 
 <span style="color:#BB0000;"><span class="SAP-icons"></span></span>
 
-
-
 </td>
 <td valign="top">
 
 <span style="color:#BB0000;"><span class="SAP-icons"></span></span>
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+Administrate and Operate Edge Integrations Cell :wrench:
+
+Operate the different active Edge Integration Cells.
 
 </td>
 <td valign="top">
 
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
+NA
 
+</td>
+<td valign="top">
 
+NA
+
+</td>
+<td valign="top">
+
+NA
+
+</td>
+<td valign="top">
+
+NA
 
 </td>
 </tr>
@@ -380,35 +356,33 @@ Monetize <span class="SAP-icons"></span>
 
 Settings :gear:
 
+</td>
+<td valign="top">
 
+<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> 
+
+*Settings* \> *APIs*
+
+*Settings* \> *Runtime*
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Settings* \> *APIs*
+<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> 
 
+*Settings* \> *Integrations*
 
-
-</td>
-<td valign="top">
-
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Settings* \> *Integrations*
-
-
+*Settings* \> *Runtime*
 
 </td>
 <td valign="top">
 
 NA
 
-
-
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span>*Settings* \> *Integration Advisor*
-
-
+<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span>*Settings* \> *MIGs and MAGs*
 
 </td>
 </tr>
@@ -427,23 +401,17 @@ The following options are available on the top toolbar:
 
 Icon
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
-
-
+<span class="SAP-icons"></span> Profile
 
 </td>
 <td valign="top">
@@ -461,14 +429,12 @@ Your profile. You can:
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
-
-
+<span class="SAP-icons"></span> Help
 
 </td>
 <td valign="top">
 
-Contextual help. You can activate contextual help by choosing <span class="SAP-icons"></span>.
+Contextual help. You can activate contextual help by choosing <span class="SAP-icons"></span> Help.
 
 > ### Note:  
 > Contextual help is currently available for certain screens only.
@@ -480,9 +446,7 @@ Contextual help. You can activate contextual help by choosing <span class="SAP-i
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
-
-
+<span class="SAP-icons"></span> Explore our Ecosystem
 
 </td>
 <td valign="top">
@@ -500,16 +464,12 @@ Explore our environment, and navigate to the following portals:
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
-
-
+<span class="SAP-icons"></span> News and Announcements
 
 </td>
 <td valign="top">
 
 News and Announcement. Lets you know what is new in the Integration Suite.
-
-
 
 </td>
 </tr>

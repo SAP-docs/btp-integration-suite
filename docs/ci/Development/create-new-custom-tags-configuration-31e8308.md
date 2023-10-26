@@ -13,21 +13,15 @@ To create custom tags, you need to perform the following call:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Purpose
 
 POST
 
-
-
 </td>
 <td valign="top">
 
 `​/CustomTagConfigurations` 
 
-
-
 </td>
 <td valign="top">
 
 Create custom tags.
-
-
 
 </td>
 </tr>

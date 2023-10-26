@@ -53,14 +53,10 @@ An example payload for the policy is as follows:
 
 **Attribute Name**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -68,8 +64,6 @@ An example payload for the policy is as follows:
 <td valign="top">
 
 Source \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -82,16 +76,12 @@ If you don’t define the Source, it is treated as message. If the source variab
 
 Syntax: `<Source>request</Source>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OutputVariable \(mandatory when the variable defined in the Source is a string\)
-
-
 
 </td>
 <td valign="top">
@@ -102,16 +92,12 @@ If you do not specify an OutputVariable, the source is treated as OutputVariable
 
 Syntax: `<OutputVariable>response</OutputVariable>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Options
-
-
 
 </td>
 <td valign="top">
@@ -120,16 +106,12 @@ Use Options to have control over the conversion from XML to JSON.
 
 The following configuration elements can be added as children of the Options element. All options are optional, however, at a minimum, an empty Options element must be present for a policy to be valid.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 <Options\>/<RecognizeBoolean\>
-
-
 
 </td>
 <td valign="top">
@@ -186,8 +168,6 @@ If false, then:
 
 <Options\>/<RecognizeNumber\>
 
-
-
 </td>
 <td valign="top">
 
@@ -242,8 +222,6 @@ If false, then:
 <td valign="top">
 
 <Options\>/<RecognizeNull\>
-
-
 
 </td>
 <td valign="top">
@@ -300,8 +278,6 @@ If false, then:
 
 <Options\>/<NullValue\>
 
-
-
 </td>
 <td valign="top">
 
@@ -309,16 +285,12 @@ Indicates a null value. By default the value is NULL.
 
 Syntax: `<NullValue>NULL</NullValue>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 <Options\>/<NamespaceSeparator\>
-
-
 
 </td>
 <td valign="top" rowspan="3">
@@ -374,8 +346,6 @@ If the elements NamespaceSeparator, NamespaceBlockName, and DefaultNamespaceNode
 
 <Options\>/<NamespaceBlockName\>
 
-
-
 </td>
 </tr>
 <tr>
@@ -383,16 +353,12 @@ If the elements NamespaceSeparator, NamespaceBlockName, and DefaultNamespaceNode
 
 <Options\>/<DefaultNamespaceNodeName\>
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 <Options\>/<OutputPrefix\>
-
-
 
 </td>
 <td valign="top" rowspan="2">
@@ -449,16 +415,12 @@ If neither OutputPrefix nor OutputSuffix is specified, the following JSON struct
 
 <Options\>/<OutputSuffix\>
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 <Options\>/<AttributeBlockName\>
-
-
 
 </td>
 <td valign="top" rowspan="2">
@@ -531,16 +493,12 @@ If neither value is specified, the following JSON structure is generated:
 
 <Options\>/<AttributePrefix\>
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 <Options\>/<TextAlwaysAsProperty\>
-
-
 
 </td>
 <td valign="top" rowspan="2">
@@ -616,16 +574,12 @@ If TextAlwaysAsProperty is set to false and TextNodeName specified as TEXT, the 
 
 <Options\>/<TextNodeName\>
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 <Options\>/<TreatAsArray\>
-
-
 
 </td>
 <td valign="top">
@@ -778,21 +732,15 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 HTTP Status
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -801,21 +749,15 @@ Cause
 
 EitherOptionOrFormat
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 See the fault string.
-
-
 
 </td>
 </tr>
@@ -824,21 +766,15 @@ See the fault string.
 
 UnknownFormat
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 See the fault string.
-
-
 
 </td>
 </tr>
@@ -847,21 +783,15 @@ See the fault string.
 
 FormatUnavailable
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 See the fault string.
-
-
 
 </td>
 </tr>
@@ -870,21 +800,15 @@ See the fault string.
 
 SourceUnavailable
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 The variable specified in the `<Source>` element has to exist.
-
-
 
 </td>
 </tr>
@@ -893,21 +817,15 @@ The variable specified in the `<Source>` element has to exist.
 
 ExecutionFailed
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 See the fault string. Be sure the incoming message contains valid XML.
-
-
 
 </td>
 </tr>
@@ -916,21 +834,15 @@ See the fault string. Be sure the incoming message contains valid XML.
 
 InvalidSourceType
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 See the fault string.
-
-
 
 </td>
 </tr>
@@ -939,21 +851,15 @@ See the fault string.
 
 InCompatibleTypes
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 See the fault string.
-
-
 
 </td>
 </tr>
@@ -962,21 +868,15 @@ See the fault string.
 
 OutputVariableIsNotAvailable
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 See the fault string.
-
-
 
 </td>
 </tr>
@@ -993,21 +893,15 @@ Following fault variables is set when the policy triggers an error at runtime:
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -1016,8 +910,6 @@ Example
 
 \[prefix\].\[policy\_name\].failed
 
-
-
 </td>
 <td valign="top">
 
@@ -1025,14 +917,10 @@ The \[prefix\] is xmltojson..
 
 The \[policy\_name\] is the name of the policy that threw the error.
 
-
-
 </td>
 <td valign="top">
 
 xmltojson.XMLtoJSON-1.failed = true
-
-
 
 </td>
 </tr>
@@ -1041,21 +929,15 @@ xmltojson.XMLtoJSON-1.failed = true
 
 fault.\[error\_name\]
 
-
-
 </td>
 <td valign="top">
 
 \[error\_name\] = The specific error name to check for as listed in the table above.
 
-
-
 </td>
 <td valign="top">
 
 fault.name Matches "SourceUnavailable"
-
-
 
 </td>
 </tr>

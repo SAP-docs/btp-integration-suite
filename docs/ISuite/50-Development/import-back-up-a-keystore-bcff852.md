@@ -15,14 +15,10 @@ Perform the following call:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Resource Path
 
 POST
 
-
-
 </td>
 <td valign="top">
 
 `/KeystoreResources` 
-
-
 
 </td>
 </tr>
@@ -55,21 +47,15 @@ In the request body, provide the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Possible Values
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -78,14 +64,10 @@ Description
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 system
-
-
 
 </td>
 <td valign="top">
@@ -94,8 +76,6 @@ Key field name of the keystore
 
 Currently, only `system` is allowed \(SAP supports only one keystore\).
 
-
-
 </td>
 </tr>
 <tr>
@@ -103,21 +83,15 @@ Currently, only `system` is allowed \(SAP supports only one keystore\).
 
 Resource
 
-
-
 </td>
 <td valign="top">
 
 <base64-encoded JKS or JCEKS keystore\>
 
-
-
 </td>
 <td valign="top">
 
 Keystore in JKS or JCEKS format
-
-
 
 </td>
 </tr>
@@ -126,14 +100,10 @@ Keystore in JKS or JCEKS format
 
 password
 
-
-
 </td>
 <td valign="top">
 
 password
-
-
 
 </td>
 <td valign="top">

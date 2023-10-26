@@ -1,5 +1,7 @@
 <!-- loio19af5e205fe14af6a4f8a9fd80d4dc92 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Creating Service Instance and Service Key for Inbound Authentication
 
 With a service instance, you define how to access a certain SAP BTP service. In the context of SAP Integration Suite , a service instance is the definition of an OAuth client.
@@ -37,9 +39,9 @@ Create a service instance to implement inbound communication. A service instance
 3.  Choose your subaccount, navigate to *Services* \> *Service Marketplace*, and select *Process Integration Runtime*.
 
     > ### Note:  
-    > This tile is only displayed when you've created a runtime instance.
+    > The Process Integration Runtime tile is only displayed when you've created a runtime instance.
 
-    ![](images/2101_Instance-Creation_1b8a322.png)
+    ![Screenshot: Process Integration Runtime tile in the subaccount service marketplace](images/2101_Instance-Creation_1b8a322.png)
 
 4.  Choose *Create*.
 
@@ -53,15 +55,11 @@ Create a service instance to implement inbound communication. A service instance
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -69,8 +67,6 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Plan* 
-
-
     
     </td>
     <td valign="top">
@@ -96,15 +92,11 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Runtime Environment* 
-
-
     
     </td>
     <td valign="top">
     
     *Cloud Foundry* 
-
-
     
     </td>
     </tr>
@@ -112,15 +104,11 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Space* 
-
-
     
     </td>
     <td valign="top">
     
     Select a space \(for example *dev*\).
-
-
     
     </td>
     </tr>
@@ -128,8 +116,6 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Instance Name* 
-
-
     
     </td>
     <td valign="top">
@@ -163,15 +149,11 @@ Create a service instance to implement inbound communication. A service instance
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -179,8 +161,6 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Roles* 
-
-
     
     </td>
     <td valign="top">
@@ -189,7 +169,7 @@ Create a service instance to implement inbound communication. A service instance
 
     -   When as *Plan* you've chosen *integration-flow*, you can either keep the standard role `ESBMessaging.send` or enter a custom role \(see [Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md)\).
 
-        You're able to add multiple roles by pressing enter after each role. The default is set to the standard role \(`ESBMessaging.send`\).
+        You're able to add multiple roles by selecting enter after each role. The default is set to the standard role \(`ESBMessaging.send`\).
 
         > ### Tip:  
         > When defining a service instance with *integration-flow* plan, you assign a role to it that enables the associated user to process the integration flow on the worker node. Simply spoken, this role defines permission for a sender to process an integration flow.
@@ -209,8 +189,6 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Grant-types* 
-
-
     
     </td>
     <td valign="top">
@@ -240,15 +218,11 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Redirect-uris* \(optional\)
-
-
     
     </td>
     <td valign="top">
     
-    Enter the redirect URIs for authorization code grant type. Hit *Enter* after typing your uri and proceed with the next uri.
-
-
+    Enter the redirect URIs for authorization code grant type. Select *Enter* after filling out your uri and proceed with the next uri.
     
     </td>
     </tr>
@@ -256,8 +230,6 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Access Token Validity* \(in seconds\)
-
-
     
     </td>
     <td valign="top">
@@ -299,7 +271,7 @@ With this step, you create a service key for the instance.
 
 2.  Select the service instance.
 
-3.  Under *Actions \(°°°\)*, choose *Create Service Key*.
+3.  Under <span class="SAP-icons"></span> Actions, choose *Create Service Key*.
 
 4.  Enter a name for the service key under *Service Key Name*. You can use up to 32 characters.
 
@@ -315,15 +287,11 @@ With this step, you create a service key for the instance.
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -331,8 +299,6 @@ With this step, you create a service key for the instance.
     <td valign="top">
     
     *Key Type* 
-
-
     
     </td>
     <td valign="top">
@@ -355,8 +321,6 @@ With this step, you create a service key for the instance.
 
 
     See: [Service Key Types](service-key-types-0fc1446.md)
-
-
     
     </td>
     </tr>
@@ -366,8 +330,6 @@ With this step, you create a service key for the instance.
     *External Certificate* 
 
     \(only applicable if for *Key Type* the option *External Certificate* has been chosen\)
-
-
     
     </td>
     <td valign="top">
@@ -388,11 +350,9 @@ With this step, you create a service key for the instance.
 
     Don't enter the whole certificate chain.
 
-    Make sure that the certificate is signed by a certification authority supported by the load balancer \(see [Load Balancer Root Certificates Supported by SAP](load-balancer-root-certificates-supported-by-sap-4509f60.md)\).
+    Make sure that the certificate is signed by a Certification Authority supported by the load balancer \(see [Load Balancer Root Certificates Supported by SAP](load-balancer-root-certificates-supported-by-sap-4509f60.md)\).
 
     You can only use a single certificate once across all existing service instances. To assign multiple roles, don't create multiple service instances. Instead, maintain multiple roles within one service instance.
-
-
     
     </td>
     </tr>
@@ -402,8 +362,6 @@ With this step, you create a service key for the instance.
     *Pin Certificate* 
 
     \(only available for plan `integration-flow` and only applicable if for *Key Type* the option *External Certificate* has been chosen\)
-
-
     
     </td>
     <td valign="top">
@@ -431,8 +389,6 @@ With this step, you create a service key for the instance.
     > 
     > -   or one certificate with pinning enabled and another certificate with the same subjectDN and issuerDN where pinning is disabled.
 
-    .
-
 
     
     </td>
@@ -443,15 +399,11 @@ With this step, you create a service key for the instance.
     *Validity in days* 
 
     \(only applicable if for *Key Type* the option *Certificate* has been chosen\)
-
-
     
     </td>
     <td valign="top">
     
     Define the validity in days by selecting a number between 1 and 365.
-
-
     
     </td>
     </tr>
@@ -461,26 +413,22 @@ With this step, you create a service key for the instance.
     *Key Size* 
 
     \(only applicable if for *Key Type* the option *Certificate* has been chosen\)
-
-
     
     </td>
     <td valign="top">
     
     The default for the key size is set to 2048.
-
-
     
     </td>
     </tr>
     </table>
     
-6.  > ### Note:  
+    > ### Note:  
     > Selecting *JSON*, you can also pass these parameters in a valid JSON object that contains service-specific configuration parameters, provided either in-line or in a file \(see [Specifying Service Instance and Service Key Parameters in JSON Format](specifying-service-instance-and-service-key-parameters-in-json-format-ae419b6.md)\).
 
-7.  Choose *Create*.
+6.  Choose *Create*.
 
-8.  Choose the newly created service key to display the details of the service key. You need the values of the service key for later reference.
+7.  Choose the newly created service key to display the details of the service key. You need the values of the service key for later reference.
 
     Depending on the chosen *Key Type*, the service key contains certain parameters. The following table lists the parameters that are required to configure the client application:
 
@@ -492,15 +440,11 @@ With this step, you create a service key for the instance.
     <th valign="top">
 
     Key Type
-
-
     
     </th>
     <th valign="top">
 
     Parameters Contained in Service Key
-
-
     
     </th>
     </tr>
@@ -508,8 +452,6 @@ With this step, you create a service key for the instance.
     <td valign="top">
     
     *ClientId/Secret* 
-
-
     
     </td>
     <td valign="top">
@@ -539,8 +481,6 @@ With this step, you create a service key for the instance.
     <td valign="top">
     
     *Certificate* 
-
-
     
     </td>
     <td valign="top">
@@ -571,7 +511,7 @@ With this step, you create a service key for the instance.
     > ### Note:  
     > To enable the related HTTP client to support this authentication option, you need to format the certificate \(including the certificate chain\) and the key accordingly. In particular, make sure to replace all `\n` in the SAP-generated certificate or key by line breaks.
     > 
-    > A suitable certificate, for example, would then look like:
+    > A suitable certificate, for example, would then look like the following:
     > 
     > ```
     > -----BEGIN CERTIFICATE-----
@@ -603,8 +543,6 @@ With this step, you create a service key for the instance.
     <td valign="top">
     
     *External Certificate* 
-
-
     
     </td>
     <td valign="top">
@@ -627,8 +565,6 @@ With this step, you create a service key for the instance.
 
 
     A service key with this *Key Pair* doesn't contain a private key because the corresponding key pair has been generated with another application than SAP BTP.
-
-
     
     </td>
     </tr>
@@ -669,7 +605,7 @@ You can update an existing service instance. To do that, perform the following s
 
 2.  Select the service instance.
 
-3.  Under *Actions \(°°°\)*, choose *Update*.
+3.  Under <span class="SAP-icons"></span> Actions, choose *Update*.
 
 4.  Check out the parameter settings and, if necessary, change them.
 

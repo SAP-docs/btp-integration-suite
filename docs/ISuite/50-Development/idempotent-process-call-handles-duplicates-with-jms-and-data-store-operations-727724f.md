@@ -29,15 +29,11 @@ The main integration process *Integration Process Scenario 06 with side effects:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -45,15 +41,11 @@ The main integration process *Integration Process Scenario 06 with side effects:
     <td valign="top">
     
     Action
-
-
     
     </td>
     <td valign="top">
     
     Create
-
-
     
     </td>
     </tr>
@@ -61,15 +53,11 @@ The main integration process *Integration Process Scenario 06 with side effects:
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     counter
-
-
     
     </td>
     </tr>
@@ -77,15 +65,11 @@ The main integration process *Integration Process Scenario 06 with side effects:
     <td valign="top">
     
     Source Type
-
-
     
     </td>
     <td valign="top">
     
     Local Variable
-
-
     
     </td>
     </tr>
@@ -93,15 +77,11 @@ The main integration process *Integration Process Scenario 06 with side effects:
     <td valign="top">
     
     Source Value
-
-
     
     </td>
     <td valign="top">
     
     QoS\_Counter
-
-
     
     </td>
     </tr>
@@ -109,15 +89,11 @@ The main integration process *Integration Process Scenario 06 with side effects:
     <td valign="top">
     
     Default Value
-
-
     
     </td>
     <td valign="top">
     
     0
-
-
     
     </td>
     </tr>
@@ -135,15 +111,11 @@ The main integration process *Integration Process Scenario 06 with side effects:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -151,15 +123,11 @@ The main integration process *Integration Process Scenario 06 with side effects:
     <td valign="top">
     
     Message ID
-
-
     
     </td>
     <td valign="top">
     
     $\{header.SAP\_MessageProcessingLogID\}
-
-
     
     </td>
     </tr>
@@ -167,15 +135,11 @@ The main integration process *Integration Process Scenario 06 with side effects:
     <td valign="top">
     
     Skip Process Call for Duplicates
-
-
     
     </td>
     <td valign="top">
     
     Selected
-
-
     
     </td>
     </tr>
@@ -197,14 +161,10 @@ In the local integration process *Local Integration Process: Increment message c
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -213,14 +173,10 @@ Setting
 
 Action
 
-
-
 </td>
 <td valign="top">
 
 Create
-
-
 
 </td>
 </tr>
@@ -229,14 +185,10 @@ Create
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 counter
-
-
 
 </td>
 </tr>
@@ -245,14 +197,10 @@ counter
 
 Source Type
 
-
-
 </td>
 <td valign="top">
 
 Expression
-
-
 
 </td>
 </tr>
@@ -261,14 +209,10 @@ Expression
 
 Source Value
 
-
-
 </td>
 <td valign="top">
 
 $\{property.counter\}++
-
-
 
 </td>
 </tr>
@@ -277,14 +221,10 @@ $\{property.counter\}++
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
 Integer
-
-
 
 </td>
 </tr>
@@ -303,14 +243,10 @@ The *Write counter* step overwrites the local variable `QoS_Counter` with the in
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -319,14 +255,10 @@ Setting
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 QoS\_Counter
-
-
 
 </td>
 </tr>
@@ -335,14 +267,10 @@ QoS\_Counter
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 Expression
-
-
 
 </td>
 </tr>
@@ -351,14 +279,10 @@ Expression
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
 Integer
-
-
 
 </td>
 </tr>
@@ -367,14 +291,10 @@ Integer
 
 Value
 
-
-
 </td>
 <td valign="top">
 
 $\{property.counter\}
-
-
 
 </td>
 </tr>
@@ -383,14 +303,10 @@ $\{property.counter\}
 
 Global Scope
 
-
-
 </td>
 <td valign="top">
 
 Deselected
-
-
 
 </td>
 </tr>
@@ -414,15 +330,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -430,15 +342,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     `OWN`
-
-
     
     </td>
     </tr>
@@ -446,15 +354,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *User*
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -462,15 +366,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Password*
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

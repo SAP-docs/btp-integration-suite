@@ -17,14 +17,10 @@ The following options for XML Signature are supported:
 
 Option
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -33,16 +29,12 @@ Description
 
 Enveloped Signature
 
-
-
 </td>
 <td valign="top">
 
 Digital signature/validation is applied to XML element that contains the signature as an element \(the Signature element\).
 
 Using this option, the digital signature is part of the XML document to be signed/validated.
-
-
 
 </td>
 </tr>
@@ -51,16 +43,12 @@ Using this option, the digital signature is part of the XML document to be signe
 
 Enveloping Signature
 
-
-
 </td>
 <td valign="top">
 
 Digital signature/validation is applied to content within an Object element which is part of the Signature element.
 
 That way, the Signature elements acts as an envelope for the signed content. Using this option, the digital signature is part of the XML document to be signed/validated.
-
-
 
 </td>
 </tr>

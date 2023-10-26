@@ -16,21 +16,15 @@ JDBC receiver adapter supports Microsoft SQL Server cloud database provided by A
 
 Database Provider
 
-
-
 </td>
 <td valign="top">
 
 Amazon RDS
 
-
-
 </td>
 <td valign="top">
 
 Microsoft Azure
-
-
 
 </td>
 </tr>
@@ -39,14 +33,10 @@ Microsoft Azure
 
 Infrastructure
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Cloud
-
-
 
 </td>
 </tr>
@@ -55,14 +45,10 @@ Cloud
 
 SAP BTP Environment
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 Neo and Cloud Foundry
-
-
 
 </td>
 </tr>
@@ -71,8 +57,6 @@ Neo and Cloud Foundry
 
 JDBC URL Pattern
 
-
-
 </td>
 <td valign="top">
 
@@ -80,16 +64,12 @@ JDBC URL Pattern
 
 You can delimit properties by using semicolon \(;\). You can't duplicate them.
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:sqlserver://[serverName[\instanceName][:portNumber]][;property=value[;property=value]]`
 
 You can delimit properties by using semicolon \(;\). You can't duplicate them.
-
-
 
 </td>
 </tr>
@@ -98,21 +78,15 @@ You can delimit properties by using semicolon \(;\). You can't duplicate them.
 
 JDBC URL Example
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:sqlserver://mysqlserver:1433;databaseName=mysqlserverdb;loginTimeout=0`
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:sqlserver://mysqlserver:1433;databaseName=mysqlserverdb;loginTimeout=0`
-
-
 
 </td>
 </tr>

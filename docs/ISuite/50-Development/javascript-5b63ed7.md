@@ -48,14 +48,10 @@ An example payload for the policy is as follows:
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -64,14 +60,10 @@ An example payload for the policy is as follows:
 
 timeLimit \(required\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the maximum time \(in milliseconds\) that the script is permitted to execute.
-
-
 
 </td>
 </tr>
@@ -80,16 +72,12 @@ Specifies the maximum time \(in milliseconds\) that the script is permitted to e
 
 ResourceURL \(required\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the JavaScript resource \(file\). This is the main code file from which the execution begins.
 
 Syntax: `<ResourceURL>jsc://example-javascript.js</ResourceURL>`
-
-
 
 </td>
 </tr>
@@ -98,8 +86,6 @@ Syntax: `<ResourceURL>jsc://example-javascript.js</ResourceURL>`
 
 IncludeURL \(optional\)
 
-
-
 </td>
 <td valign="top">
 
@@ -107,16 +93,12 @@ Specifies a JavaScript library to be loaded as dependency. Store libraries under
 
 Syntax: `<IncludeURL>jsc://my-javascript-URL.js</IncludeURL>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Display name \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -126,8 +108,6 @@ Labels the policy in the management UI proxy editor with a different, natural-la
 If you skip this element, the value of the `name` attribute is applied to the policy.
 
 Syntax: `<DisplayName>Policy-Display-Name</DisplayName>`
-
-
 
 </td>
 </tr>
@@ -142,14 +122,10 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -158,14 +134,10 @@ Cause
 
 ScriptExecutionFailed
 
-
-
 </td>
 <td valign="top">
 
 A runtime error occurred in the JavaScript code. See the fault string for details.
-
-
 
 </td>
 </tr>
@@ -174,14 +146,10 @@ A runtime error occurred in the JavaScript code. See the fault string for detail
 
 ScriptExecutionFailedLineNumber
 
-
-
 </td>
 <td valign="top">
 
 An error occurred in the JavaScript code. See the fault string for details.
-
-
 
 </td>
 </tr>
@@ -190,14 +158,10 @@ An error occurred in the JavaScript code. See the fault string for details.
 
 ScriptSecurityError
 
-
-
 </td>
 <td valign="top">
 
 A security error occurred when the JavaScript executed. See the fault string for details.
-
-
 
 </td>
 </tr>
@@ -205,8 +169,6 @@ A security error occurred when the JavaScript executed. See the fault string for
 <td valign="top">
 
 WrongResourceType
-
-
 
 </td>
 <td valign="top">
@@ -217,8 +179,6 @@ For example, here is the correct way to refer to the JavaScript file in the poli
 
 <ResourceURL\>jsc://JavaScript-1.js</ResourceURL\>
 
-
-
 </td>
 </tr>
 <tr>
@@ -226,14 +186,10 @@ For example, here is the correct way to refer to the JavaScript file in the poli
 
 NoResourceForURL
 
-
-
 </td>
 <td valign="top">
 
 The <ResourceURL\> and <IncludeURL\> elements refer to a JavaScript file that does not exist.
-
-
 
 </td>
 </tr>
@@ -242,14 +198,10 @@ The <ResourceURL\> and <IncludeURL\> elements refer to a JavaScript file that do
 
 ScriptCompilationFailed
 
-
-
 </td>
 <td valign="top">
 
 An error occurred during compilation of the JavaScript code. Refer to the error message for details.
-
-
 
 </td>
 </tr>
@@ -258,14 +210,10 @@ An error occurred during compilation of the JavaScript code. Refer to the error 
 
 InvalidResourceUrlFormat
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the format of the resource URL specified within the <ResourceURL\> or the <IncludeURL\> element of the JavaScript policy is invalid, resulting in the deployment of the API proxy to fail.
-
-
 
 </td>
 </tr>
@@ -274,14 +222,10 @@ This error occurs when the format of the resource URL specified within the <Reso
 
 InvalidResourceUrlReference
 
-
-
 </td>
 <td valign="top">
 
 This error occurs when the <ResourceURL\> or the <IncludeURL\> elements refer to a JavaScript file that does not exist, resulting in the deployment of the API proxy to fail.
-
-
 
 </td>
 </tr>
@@ -296,21 +240,15 @@ Following fault variables are set when the policy triggers an error at runtime:
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -319,8 +257,6 @@ Example
 
 \[prefix\].\[policy\_name\].failed
 
-
-
 </td>
 <td valign="top">
 
@@ -328,14 +264,10 @@ The \[prefix\] is javascript.
 
 The \[policy\_name\] is the name of the policy that threw the error.
 
-
-
 </td>
 <td valign="top">
 
 javascript.JavaScript-1.failed = true
-
-
 
 </td>
 </tr>
@@ -344,21 +276,15 @@ javascript.JavaScript-1.failed = true
 
 fault.\[error\_name\]
 
-
-
 </td>
 <td valign="top">
 
 \[error\_name\] is the specific error name to check for as listed in the table above.
 
-
-
 </td>
 <td valign="top">
 
 fault.name Matches "ScriptExecutionFailed"
-
-
 
 </td>
 </tr>

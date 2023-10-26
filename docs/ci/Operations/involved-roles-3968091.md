@@ -13,14 +13,10 @@ The security artifact renewal process requires that different persons perform a 
 
 Role
 
-
-
 </th>
 <th valign="top">
 
 Tasks
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Tasks
 
 Sender/receiver administrator \(at customer side\)
 
-
-
 </td>
 <td valign="top">
 
 Updates the security artifacts owned by the sender/receiver back-end system \(for example, the keystore\).
-
-
 
 </td>
 </tr>
@@ -45,16 +37,12 @@ Updates the security artifacts owned by the sender/receiver back-end system \(fo
 
 Integration developer
 
-
-
 </td>
 <td valign="top">
 
 Updates the integration flow in certain use cases.
 
 It depends on the **operating model** whether the tenant administrator and the integration developer are at the customer or at SAP. In the **customer-managed operating model**, the tenant administrator and integration developer tasks are performed by the customer. In the **SAP-managed operating model**, these tasks are performed by SAP.
-
-
 
 </td>
 </tr>
@@ -63,16 +51,12 @@ It depends on the **operating model** whether the tenant administrator and the i
 
 Tenant administrator
 
-
-
 </td>
 <td valign="top">
 
 Updates the security artifacts of the tenant \(relevant for outbound communication\).
 
 It depends on the **operating model** whether the tenant administrator and the integration developer are at the customer or at SAP. In the **customer-managed operating model**, the tenant administrator and integration developer tasks are performed by the customer. In the **SAP-managed operating model**, these tasks are performed by SAP.
-
-
 
 </td>
 </tr>
@@ -81,14 +65,10 @@ It depends on the **operating model** whether the tenant administrator and the i
 
 Load balancer administrator
 
-
-
 </td>
 <td valign="top">
 
 Updates the security artifacts of the load balancer \(relevant for inbound communication\).
-
-
 
 </td>
 </tr>

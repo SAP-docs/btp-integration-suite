@@ -19,14 +19,10 @@ See the following video for visual instructions on how to add and configure the 
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -35,14 +31,10 @@ Description
 
 Name\*
 
-
-
 </td>
 <td valign="top">
 
 The value of the name attribute can contain letters, numbers, spaces, hyphens, underscores, and periods. This value cannot exceed 255 characters.
-
-
 
 </td>
 </tr>
@@ -51,14 +43,10 @@ The value of the name attribute can contain letters, numbers, spaces, hyphens, u
 
 On Error
 
-
-
 </td>
 <td valign="top">
 
 Determines the behavior when an exception or an error occurs during the policy execution. The default value is abort on error.The internal name of the policy. The value of the name attribute can contain letters, numbers, spaces, hyphens, underscores, and periods. This value can’t exceed 255 characters.
-
-
 
 </td>
 </tr>
@@ -67,14 +55,10 @@ Determines the behavior when an exception or an error occurs during the policy e
 
 Mode
 
-
-
 </td>
 <td valign="top">
 
 Select the type of the policy that you want to configure. For example, if you want to explicitly provide a start time, select Calendar. For more information, see [Modes of the Quota Policy](modes-of-the-quota-policy-61b36a1.md).
-
-
 
 </td>
 </tr>
@@ -82,8 +66,6 @@ Select the type of the policy that you want to configure. For example, if you wa
 <td valign="top">
 
 Start Time \(UTC\)\*
-
-
 
 </td>
 <td valign="top">
@@ -94,8 +76,6 @@ Enter the date and time when the Quota counter begins counting.
 
 Timestamp format in UTC format: 2015-02-09 00:00:00.
 
-
-
 </td>
 </tr>
 <tr>
@@ -103,14 +83,10 @@ Timestamp format in UTC format: 2015-02-09 00:00:00.
 
 Calls\*
 
-
-
 </td>
 <td valign="top">
 
 Specify the number of calls that a client can make to an API endpoint over a duration. For example, 1000 calls over a duration of 1 hour.
-
-
 
 </td>
 </tr>
@@ -119,16 +95,12 @@ Specify the number of calls that a client can make to an API endpoint over a dur
 
 Duration\*
 
-
-
 </td>
 <td valign="top">
 
 Determines the period for which the quota is allotted to the client.
 
 Data type: positive integer. For example, 5, 10, ..., 60, etc. that is coupled with the unit \(second, minute, hour, day, week, or month\) in the next field.
-
-
 
 </td>
 </tr>
@@ -137,16 +109,12 @@ Data type: positive integer. For example, 5, 10, ..., 60, etc. that is coupled w
 
 Duration Unit
 
-
-
 </td>
 <td valign="top">
 
 Represents the unit of time used along with interval.
 
 Supported units are second, minute, hour, day, week, or month.
-
-
 
 </td>
 </tr>
@@ -155,14 +123,10 @@ Supported units are second, minute, hour, day, week, or month.
 
 Quota Identifier\*
 
-
-
 </td>
 <td valign="top">
 
 Represents a unique identifier for the client or the application against which the quota is allotted. For example, you can define that the *Quota Identifier\** is determined dynamically by reading a value from a request header such as $\{request.header.appId\}. Refer the table for the supported expressions for the quota identifier.
-
-
 
 </td>
 </tr>
@@ -177,14 +141,10 @@ Represents a unique identifier for the client or the application against which t
 
 Expressions for Requestor Key
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -193,14 +153,10 @@ Description
 
 $\{request.header.<headerName\>\}
 
-
-
 </td>
 <td valign="top">
 
 This expression represents a header in the incoming request message where the name of the header is denoted by <headerName\>. For example, you can use the clientID, and username as the <headerName\>.
-
-
 
 </td>
 </tr>
@@ -209,14 +165,10 @@ This expression represents a header in the incoming request message where the na
 
 $\{request.query.<queryParamName\>\}
 
-
-
 </td>
 <td valign="top">
 
 This expression represents a query parameter in the incoming request message where the name of the query parameter is denoted by <queryParamName\>. For example, you can use the clientID, and username as the <queryParamName\>.
-
-
 
 </td>
 </tr>

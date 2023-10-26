@@ -54,21 +54,15 @@ This section lists the advantages of using simulation in an integration flow.
 
 Category
 
-
-
 </th>
 <th valign="top">
 
 Elements
 
-
-
 </th>
 <th valign="top">
 
 Supported Elements
-
-
 
 </th>
 </tr>
@@ -76,8 +70,6 @@ Supported Elements
 <td valign="top">
 
 Message Transformers
-
-
 
 </td>
 <td valign="top">
@@ -118,8 +110,6 @@ Call
 
 Call
 
-
-
 </td>
 <td valign="top">
 
@@ -141,8 +131,6 @@ All
 
 You can't make the actual call to a receiver system to get the response. However, you can mock the response from the receiver system via receiver adapter. Select the receiver adapter that is connected to *Request Reply* step and select *Add Simulation Response*. Provide the payload or headers in the dialog and the same is considered as a response when you run the simulation. If you don't mock the response, the message payload from the previous steps is be considered.
 
-
-
 </td>
 </tr>
 <tr>
@@ -162,16 +150,12 @@ Local Call
 
 All
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Message Routing
-
-
 
 </td>
 <td valign="top">
@@ -196,16 +180,12 @@ Message Routing
 
 Aggregator isn't supported.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Security Elements
-
-
 
 </td>
 <td valign="top">
@@ -226,16 +206,12 @@ Security Elements
 
 All
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Persistence
-
-
 
 </td>
 <td valign="top">
@@ -254,8 +230,6 @@ Persistence
 
 You can only simulate the read operation for *Write Variables* and *Data Store.* 
 
-
-
 </td>
 </tr>
 <tr>
@@ -263,21 +237,15 @@ You can only simulate the read operation for *Write Variables* and *Data Store.*
 
 Validator
 
-
-
 </td>
 <td valign="top">
 
 XML Validator
 
-
-
 </td>
 <td valign="top">
 
 XML Validator
-
-
 
 </td>
 </tr>
@@ -300,21 +268,15 @@ This section explains the different functionalities and how they work in the sim
 
 Functionalities
 
-
-
 </th>
 <th valign="top">
 
 Icon
 
-
-
 </th>
 <th valign="top">
 
 Details
-
-
 
 </th>
 </tr>
@@ -323,21 +285,15 @@ Details
 
 *Start Point* 
 
-
-
 </td>
 <td valign="top">
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 Place a Start Point at the beginning of your flow path. It feeds a simulation input.
-
-
 
 </td>
 </tr>
@@ -346,21 +302,15 @@ Place a Start Point at the beginning of your flow path. It feeds a simulation in
 
 *End Point* 
 
-
-
 </td>
 <td valign="top">
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 Place an End Point to end the simulation on your connection or the defined path of simulation.
-
-
 
 </td>
 </tr>
@@ -369,14 +319,10 @@ Place an End Point to end the simulation on your connection or the defined path 
 
 *Add Simulation input* 
 
-
-
 </td>
 <td valign="top">
 
 <span class="SAP-icons"></span>
-
-
 
 </td>
 <td valign="top">
@@ -399,8 +345,6 @@ When you choose a Start Point, the *Add Simulation Input* dialog opens where an 
 
 For more information, see [Using Various Types of Body Files in the Simulation](using-various-types-of-body-files-in-the-simulation-2e3cf3b.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -408,14 +352,10 @@ For more information, see [Using Various Types of Body Files in the Simulation](
 
 *Add Simulation Response* 
 
-
-
 </td>
 <td valign="top">
 
 <span class="SAP-icons"></span>
-
-
 
 </td>
 <td valign="top">
@@ -437,21 +377,15 @@ Allows the integration developer to simulate the response from the receiver adap
 
 *Run Simulation* 
 
-
-
 </td>
 <td valign="top">
 
 :arrow_forward:
 
-
-
 </td>
 <td valign="top">
 
 Used to run the simulation once the start and end point have been defined.
-
-
 
 </td>
 </tr>
@@ -460,21 +394,15 @@ Used to run the simulation once the start and end point have been defined.
 
 *Clear Simulation* 
 
-
-
 </td>
 <td valign="top">
 
 <span class="SAP-icons"></span>
 
-
-
 </td>
 <td valign="top">
 
 Removes all of the simulation elements such as the start point, end point, and message processing output.
-
-
 
 </td>
 </tr>
@@ -483,21 +411,15 @@ Removes all of the simulation elements such as the start point, end point, and m
 
 *Message Envelope* 
 
-
-
 </td>
 <td valign="top">
 
 :envelope:
 
-
-
 </td>
 <td valign="top">
 
 When the simulation run is successful, the message envelope opens and you can find it between the start and end point. Choose the message envelope to display the message content. After simulation, you can download trace message content.
-
-
 
 </td>
 </tr>
@@ -520,21 +442,15 @@ During the simulation process, certain colors are familiarly associated with par
 
 Color Code
 
-
-
 </th>
 <th valign="top">
 
 Used For
 
-
-
 </th>
 <th valign="top">
 
 Details
-
-
 
 </th>
 </tr>
@@ -543,14 +459,10 @@ Details
 
 Blue
 
-
-
 </td>
 <td valign="top">
 
 Start point and Message Envelope
-
-
 
 </td>
 <td valign="top">
@@ -568,21 +480,15 @@ Start point and Message Envelope
 
 Red
 
-
-
 </td>
 <td valign="top">
 
 End point and Message Envelope
 
-
-
 </td>
 <td valign="top">
 
 Appears when there are any errors. Choose the respective elements to check error messages.
-
-
 
 </td>
 </tr>
@@ -591,21 +497,15 @@ Appears when there are any errors. Choose the respective elements to check error
 
 Black
 
-
-
 </td>
 <td valign="top">
 
 End point
 
-
-
 </td>
 <td valign="top">
 
 Normal behavior and no action required.
-
-
 
 </td>
 </tr>
@@ -614,21 +514,15 @@ Normal behavior and no action required.
 
 Green
 
-
-
 </td>
 <td valign="top">
 
 End point
 
-
-
 </td>
 <td valign="top">
 
 Appears on successful execution of the simulation.
-
-
 
 </td>
 </tr>

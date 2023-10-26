@@ -23,21 +23,15 @@ For example, if you add attributes for your products, applications and use Verif
 
 Role
 
-
-
 </th>
 <th valign="top">
 
 Component
 
-
-
 </th>
 <th valign="top">
 
 Details
-
-
 
 </th>
 </tr>
@@ -46,21 +40,15 @@ Details
 
 AuthGroup.API.Admin
 
-
-
 </td>
 <td valign="top">
 
 API Business Hub Enterprise
 
-
-
 </td>
 <td valign="top">
 
 User assigned with this role can read, create, delete, and update custom attributes for application.
-
-
 
 </td>
 </tr>
@@ -69,21 +57,15 @@ User assigned with this role can read, create, delete, and update custom attribu
 
 APIPortal.Service.Catalog.Integration
 
-
-
 </td>
 <td valign="top">
 
 API Portal
 
-
-
 </td>
 <td valign="top">
 
 User assigned with this role can read, create, delete, and update custom attributes for application.
-
-
 
 </td>
 </tr>
@@ -92,21 +74,15 @@ User assigned with this role can read, create, delete, and update custom attribu
 
 APIPortal.Administrator
 
-
-
 </td>
 <td valign="top">
 
 API Portal
 
-
-
 </td>
 <td valign="top">
 
 User assigned with this role can read, create, delete, and update custom attributes for products
-
-
 
 </td>
 </tr>
@@ -127,14 +103,10 @@ User assigned with this role can read, create, delete, and update custom attribu
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -143,14 +115,10 @@ Value
 
 Custom attribute name size
 
-
-
 </td>
 <td valign="top">
 
 255 characters
-
-
 
 </td>
 </tr>
@@ -159,14 +127,10 @@ Custom attribute name size
 
 Custom attribute value size
 
-
-
 </td>
 <td valign="top">
 
 1024 characters
-
-
 
 </td>
 </tr>
@@ -175,14 +139,10 @@ Custom attribute value size
 
 Number of custom attributes permitted
 
-
-
 </td>
 <td valign="top">
 
 18
-
-
 
 </td>
 </tr>

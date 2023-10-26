@@ -47,14 +47,10 @@ In the first step, in the *General splitter*, the message is broken up into 4 in
 
 Expression Type
 
-
-
 </th>
 <th valign="top">
 
 XPATH
-
-
 
 </th>
 </tr>
@@ -63,14 +59,10 @@ XPATH
 
 XPath Expression
 
-
-
 </td>
 <td valign="top">
 
 //productIdentifier
-
-
 
 </td>
 </tr>
@@ -87,28 +79,20 @@ A *Content Modifier* stores the 'productIdentifier' in the productID exchange pr
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -117,28 +101,20 @@ Value
 
 productID
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 //productIdentifier
-
-
 
 </td>
 </tr>
@@ -157,14 +133,10 @@ The HTTP request for 'productID' is defined as follows:
 
 Address
 
-
-
 </td>
 <td valign="top">
 
 [https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/espm-cloud-web/espm.svc](https://refapp-espm-ui-cf.cfapps.eu10.hana.ondemand.com/espm-cloud-web/espm.svc) 
-
-
 
 </td>
 </tr>
@@ -173,14 +145,10 @@ Address
 
 Operations Details
 
-
-
 </td>
 <td valign="top">
 
 GET
-
-
 
 </td>
 </tr>
@@ -189,14 +157,10 @@ GET
 
 Resource Path
 
-
-
 </td>
 <td valign="top">
 
 Products
-
-
 
 </td>
 </tr>
@@ -205,14 +169,10 @@ Products
 
 Query Options
 
-
-
 </td>
 <td valign="top">
 
 `$select=ProductId,Name,Category,Price&$filter=ProductId eq '${property.productID}'`
-
-
 
 </td>
 </tr>
@@ -227,14 +187,10 @@ In the *Write step*, the 4 messages are written to the data store 'ModelingBasic
 
 Data Store Name
 
-
-
 </td>
 <td valign="top">
 
 ModelingBasics-UsageOfDataStore
-
-
 
 </td>
 </tr>
@@ -243,14 +199,10 @@ ModelingBasics-UsageOfDataStore
 
 Visibility
 
-
-
 </td>
 <td valign="top">
 
 Global
-
-
 
 </td>
 </tr>
@@ -259,14 +211,10 @@ Global
 
 Entry ID
 
-
-
 </td>
 <td valign="top">
 
 `${xpath.//Products/Product/ProductId}`
-
-
 
 </td>
 </tr>
@@ -275,14 +223,10 @@ Entry ID
 
 Retention Threshold for Alerting \(in d\)
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -291,14 +235,10 @@ Retention Threshold for Alerting \(in d\)
 
 Expiration Period \(in d\)
 
-
-
 </td>
 <td valign="top">
 
 90
-
-
 
 </td>
 </tr>
@@ -333,14 +273,10 @@ The Select step is defined as follows:
 
 Data Store Name
 
-
-
 </td>
 <td valign="top">
 
 ModelingBasics-UsageOfDataStore
-
-
 
 </td>
 </tr>
@@ -349,14 +285,10 @@ ModelingBasics-UsageOfDataStore
 
 Visibility
 
-
-
 </td>
 <td valign="top">
 
 Global
-
-
 
 </td>
 </tr>
@@ -365,14 +297,10 @@ Global
 
 Number of Polled Messages
 
-
-
 </td>
 <td valign="top">
 
 `${xpath.//count}`
-
-
 
 </td>
 </tr>
@@ -381,14 +309,10 @@ Number of Polled Messages
 
 Delete On Completion
 
-
-
 </td>
 <td valign="top">
 
 no
-
-
 
 </td>
 </tr>
@@ -419,21 +343,15 @@ To present the response in the XML format, the message header 'content-type' is 
 
 Header Name
 
-
-
 </td>
 <td valign="top">
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 Value
-
-
 
 </td>
 </tr>
@@ -442,21 +360,15 @@ Value
 
 content-type
 
-
-
 </td>
 <td valign="top">
 
 constant
 
-
-
 </td>
 <td valign="top">
 
 application/xml
-
-
 
 </td>
 </tr>
@@ -489,14 +401,10 @@ The *Get step* is defined as follows:
 
 Data Store Name
 
-
-
 </td>
 <td valign="top">
 
 ModelingBasics-UsageOfDataStore
-
-
 
 </td>
 </tr>
@@ -505,14 +413,10 @@ ModelingBasics-UsageOfDataStore
 
 Visibility
 
-
-
 </td>
 <td valign="top">
 
 Global
-
-
 
 </td>
 </tr>
@@ -521,14 +425,10 @@ Global
 
 Entry ID
 
-
-
 </td>
 <td valign="top">
 
 `${xpath.//ProductID}`
-
-
 
 </td>
 </tr>
@@ -537,14 +437,10 @@ Entry ID
 
 Delete On Completion
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -553,14 +449,10 @@ No
 
 Throw Exception on Missing Entry
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -575,21 +467,15 @@ To present the response in the XML format, in the *context modifier step* 'Defin
 
 Header name
 
-
-
 </td>
 <td valign="top">
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 Value
-
-
 
 </td>
 </tr>
@@ -598,21 +484,15 @@ Value
 
 content-type
 
-
-
 </td>
 <td valign="top">
 
 Constant
 
-
-
 </td>
 <td valign="top">
 
 application/xml
-
-
 
 </td>
 </tr>
@@ -645,14 +525,10 @@ The *Delete step* is defined as follows:
 
 Data Store Name
 
-
-
 </td>
 <td valign="top">
 
 ModelingBasics-UsageOfDataStore
-
-
 
 </td>
 </tr>
@@ -661,14 +537,10 @@ ModelingBasics-UsageOfDataStore
 
 Visibility
 
-
-
 </td>
 <td valign="top">
 
 Global
-
-
 
 </td>
 </tr>
@@ -677,14 +549,10 @@ Global
 
 Entry ID
 
-
-
 </td>
 <td valign="top">
 
 `${xpath.//ProductID/text()}`
-
-
 
 </td>
 </tr>
@@ -699,21 +567,15 @@ To present the response in the XML format, in the context modifier step 'Define 
 
 Header Name
 
-
-
 </td>
 <td valign="top">
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 Value
-
-
 
 </td>
 </tr>
@@ -722,21 +584,15 @@ Value
 
 content-type
 
-
-
 </td>
 <td valign="top">
 
 Constant
 
-
-
 </td>
 <td valign="top">
 
 application/xml
-
-
 
 </td>
 </tr>

@@ -44,14 +44,10 @@ The first route removes all items except for flat screens using the following se
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -60,14 +56,10 @@ Value
 
 *XPath Expression* 
 
-
-
 </td>
 <td valign="top">
 
 `ns0:PurchaseOrder/Items/Item[./Category/text()='Flat screens']` 
-
-
 
 </td>
 </tr>
@@ -76,14 +68,10 @@ Value
 
 *Value Type* 
 
-
-
 </td>
 <td valign="top">
 
 `Nodelist` 
-
-
 
 </td>
 </tr>
@@ -100,14 +88,10 @@ The second route removes all items except for notebooks using the following sett
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -116,14 +100,10 @@ Value
 
 *XPath Expression* 
 
-
-
 </td>
 <td valign="top">
 
 `ns0:PurchaseOrder/Items/Item[./Category/text()='Notebooks']` 
-
-
 
 </td>
 </tr>
@@ -132,14 +112,10 @@ Value
 
 *Value Type* 
 
-
-
 </td>
 <td valign="top">
 
 `Nodelist` 
-
-
 
 </td>
 </tr>
@@ -158,14 +134,10 @@ The *ID Mapping* step of the first route is defined in the following way:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -174,14 +146,10 @@ Value
 
 *Source Message ID* 
 
-
-
 </td>
 <td valign="top">
 
 `${property.SplitMessageID}` 
-
-
 
 </td>
 </tr>
@@ -190,14 +158,10 @@ Value
 
 *Target Header Name* 
 
-
-
 </td>
 <td valign="top">
 
 `SapMessageIdEx` 
-
-
 
 </td>
 </tr>
@@ -206,14 +170,10 @@ Value
 
 *Context* 
 
-
-
 </td>
 <td valign="top">
 
 `Branch_1` 
-
-
 
 </td>
 </tr>
@@ -222,14 +182,10 @@ Value
 
 *Visibility* 
 
-
-
 </td>
 <td valign="top">
 
 `Integration Flow` 
-
-
 
 </td>
 </tr>
@@ -238,14 +194,10 @@ Value
 
 *Expiration Period \(in d\)* 
 
-
-
 </td>
 <td valign="top">
 
 `30` 
-
-
 
 </td>
 </tr>
@@ -262,14 +214,10 @@ The *ID Mapping* step of the second route is defined in the following way:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -278,14 +226,10 @@ Value
 
 *Source Message ID* 
 
-
-
 </td>
 <td valign="top">
 
 `${property.SplitMessageID}` 
-
-
 
 </td>
 </tr>
@@ -294,14 +238,10 @@ Value
 
 *Target Header Name* 
 
-
-
 </td>
 <td valign="top">
 
 `SapMessageIdEx` 
-
-
 
 </td>
 </tr>
@@ -310,14 +250,10 @@ Value
 
 *Context* 
 
-
-
 </td>
 <td valign="top">
 
 `Branch_2` 
-
-
 
 </td>
 </tr>
@@ -326,14 +262,10 @@ Value
 
 *Visibility* 
 
-
-
 </td>
 <td valign="top">
 
 `Integration Flow` 
-
-
 
 </td>
 </tr>
@@ -342,14 +274,10 @@ Value
 
 *Expiration Period \(in d\)* 
 
-
-
 </td>
 <td valign="top">
 
 `30` 
-
-
 
 </td>
 </tr>
@@ -368,14 +296,10 @@ The third route removes all items except for software using the following settin
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -384,14 +308,10 @@ Value
 
 *XPath Expression* 
 
-
-
 </td>
 <td valign="top">
 
 `ns0:PurchaseOrder/Items/Item[./Category/text()='Software']` 
-
-
 
 </td>
 </tr>
@@ -400,14 +320,10 @@ Value
 
 *Value Type* 
 
-
-
 </td>
 <td valign="top">
 
 `Nodelist` 
-
-
 
 </td>
 </tr>
@@ -431,14 +347,10 @@ At the end of the third route, an *Idempotent Process Call* step sends the messa
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -447,14 +359,10 @@ Value
 
 *Message ID* 
 
-
-
 </td>
 <td valign="top">
 
 `${header.SapMessageIdEx}` 
-
-
 
 </td>
 </tr>
@@ -463,14 +371,10 @@ Value
 
 *Skip Process Call for Duplicates* 
 
-
-
 </td>
 <td valign="top">
 
 `Selected` 
-
-
 
 </td>
 </tr>
@@ -497,15 +401,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -513,15 +413,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Name* 
-
-
     
     </td>
     <td valign="top">
     
     `OWN` 
-
-
     
     </td>
     </tr>
@@ -529,15 +425,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *User* 
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -545,15 +437,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Password* 
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

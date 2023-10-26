@@ -61,14 +61,10 @@ OAuth v2.0 SET policy defines the following elements:
 
 **Field Name**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -77,14 +73,10 @@ OAuth v2.0 SET policy defines the following elements:
 
 AccessToken
 
-
-
 </td>
 <td valign="top">
 
 Use the ref attribute to identify the variable where the access token is located. For example, if the access token is attached to request message as a query parameter, specifyrequest.queryparam.access\_token.
-
-
 
 </td>
 </tr>
@@ -93,14 +85,10 @@ Use the ref attribute to identify the variable where the access token is located
 
 Attributes
 
-
-
 </td>
 <td valign="top">
 
 A set of attributes in the access token profile that will be modified or augmented.
-
-
 
 </td>
 </tr>
@@ -108,8 +96,6 @@ A set of attributes in the access token profile that will be modified or augment
 <td valign="top">
 
 Attribute
-
-
 
 </td>
 <td valign="top">
@@ -161,14 +147,10 @@ OAuth v2.0 SET policy defines the following errors:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -177,14 +159,10 @@ Cause
 
 invalid\_access\_token
 
-
-
 </td>
 <td valign="top">
 
 The access token sent to the policy is invalid.
-
-
 
 </td>
 </tr>
@@ -193,14 +171,10 @@ The access token sent to the policy is invalid.
 
 expired\_access\_token
 
-
-
 </td>
 <td valign="top">
 
 The access token sent to the policy is expired.
-
-
 
 </td>
 </tr>

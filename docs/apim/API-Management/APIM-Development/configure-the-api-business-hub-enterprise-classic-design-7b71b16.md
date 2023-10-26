@@ -26,14 +26,10 @@ Prerequisite: You are assigned the site admin role.
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -42,14 +38,10 @@ Description
 
 Company Logo
 
-
-
 </td>
 <td valign="top">
 
 Upload an image file for your logo, and save the changes.
-
-
 
 </td>
 </tr>
@@ -57,8 +49,6 @@ Upload an image file for your logo, and save the changes.
 <td valign="top">
 
 Color Scheme
-
-
 
 </td>
 <td valign="top">
@@ -68,8 +58,6 @@ Information about the color scheme used.
 When you upload a logo, the dark color of the navigation area at the top of the screens is replaced with white, since many logos require a white background.
 
 Other colors on the Web site are changed to neutral tones to avoid visual conflicts with your company's logo colors.
-
-
 
 </td>
 </tr>
@@ -95,14 +83,10 @@ From the homepage, you can view and search the categories, APIs, and products.
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -111,14 +95,10 @@ Description
 
 Name and Description
 
-
-
 </td>
 <td valign="top">
 
 Edit the default name and description for your application.
-
-
 
 </td>
 </tr>
@@ -127,14 +107,10 @@ Edit the default name and description for your application.
 
 Updates
 
-
-
 </td>
 <td valign="top">
 
 Configure updates to be displayed on the Home page. For more information on how to add, edit, or delete an update, see [Manage Updates \[Classic Design\]](manage-updates-classic-design-94e37b4.md).
-
-
 
 </td>
 </tr>
@@ -143,14 +119,10 @@ Configure updates to be displayed on the Home page. For more information on how 
 
 Navigation Categories
 
-
-
 </td>
 <td valign="top">
 
 Configure navigation categories to be displayed on the Home page. For more information on how to add, edit, or delete a category, see [Manage Navigation Categories \[Classic Design\]](manage-navigation-categories-classic-design-7f1a44b.md).
-
-
 
 </td>
 </tr>
@@ -169,14 +141,10 @@ Prerequisite: You are assigned the admin role.
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -185,14 +153,10 @@ Description
 
 E-mail Configuration
 
-
-
 </td>
 <td valign="top">
 
 Provide the administrators e-mail id.
-
-
 
 </td>
 </tr>
@@ -201,14 +165,10 @@ Provide the administrators e-mail id.
 
 Pending Requests
 
-
-
 </td>
 <td valign="top">
 
 Information about pending user requests. You can either accept or reject the requests. For more information, see [Managing the Access Request of the Users \[Classic Design\]](managing-the-access-request-of-the-users-classic-design-5b3e2f6.md).
-
-
 
 </td>
 </tr>
@@ -217,14 +177,10 @@ Information about pending user requests. You can either accept or reject the req
 
 Registered Users
 
-
-
 </td>
 <td valign="top">
 
 Information about users registered. You can either edit the roles for an existing user or register a new user. For more information, see [Managing the Access Request of the Users \[Classic Design\]](managing-the-access-request-of-the-users-classic-design-5b3e2f6.md).
-
-
 
 </td>
 </tr>

@@ -46,15 +46,11 @@ Then, the digest value of the canonicalized 'SignedInfo' is calculated. The resu
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -62,15 +58,11 @@ Then, the digest value of the canonicalized 'SignedInfo' is calculated. The resu
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     Enter the name for the verifier step.
-
-
     
     </td>
     </tr>
@@ -86,15 +78,11 @@ Then, the digest value of the canonicalized 'SignedInfo' is calculated. The resu
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -102,8 +90,6 @@ Then, the digest value of the canonicalized 'SignedInfo' is calculated. The resu
     <td valign="top">
     
     *Expected Signature Type* 
-
-
     
     </td>
     <td valign="top">
@@ -221,8 +207,6 @@ Then, the digest value of the canonicalized 'SignedInfo' is calculated. The resu
     <td valign="top">
     
     *Check for Key Info Element* 
-
-
     
     </td>
     <td valign="top">
@@ -242,15 +226,11 @@ Then, the digest value of the canonicalized 'SignedInfo' is calculated. The resu
     <td valign="top">
     
     *Disallow DOCTYPE Declaration* 
-
-
     
     </td>
     <td valign="top">
     
     Select this option to disallow DTD DOCTYPE declaration in the incoming XML message
-
-
     
     </td>
     </tr>
@@ -258,8 +238,6 @@ Then, the digest value of the canonicalized 'SignedInfo' is calculated. The resu
     <td valign="top">
     
     *Public Key Alias* 
-
-
     
     </td>
     <td valign="top">

@@ -45,7 +45,7 @@ When prompted to select a role for the service plan, choose the role *WorkspaceP
 
 The content transport mechanism provides you the flexibility of directly exporting integration content to CTS+ and Cloud Transport Management system, or exporting the content as an MTAR file to a local file system. To use either of the modes, you must enable *Transport Mode* found in *Settings*.
 
-Navigate to *Settings* \> *Integrations* and move to the *Transport* tab. Based on your requirement, select either *CTS+*, or *Transport Management Service*, or *MTAR Download* from the dropdown list.
+Navigate to *Tenant Settings* \> *Integrations* and move to the *Transport* tab. Based on your requirement, select either *CTS+*, or *Transport Management Service*, or *MTAR Download* from the dropdown list.
 
 > ### Remember:  
 > -   This step must be performed on the tenant from which you want to export content. For example, if you're exporting content from your **Test** tenant, you need to perform this step only in the **Test** tenant.

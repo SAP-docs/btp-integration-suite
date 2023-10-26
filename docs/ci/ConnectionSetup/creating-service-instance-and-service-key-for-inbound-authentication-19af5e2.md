@@ -56,15 +56,11 @@ Create a service instance to implement inbound communication. A service instance
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -72,8 +68,6 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Plan* 
-
-
     
     </td>
     <td valign="top">
@@ -99,15 +93,11 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Runtime Environment* 
-
-
     
     </td>
     <td valign="top">
     
     *Cloud Foundry* 
-
-
     
     </td>
     </tr>
@@ -115,15 +105,11 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Space* 
-
-
     
     </td>
     <td valign="top">
     
     Select a space \(for example *dev*\).
-
-
     
     </td>
     </tr>
@@ -131,8 +117,6 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Instance Name* 
-
-
     
     </td>
     <td valign="top">
@@ -166,15 +150,11 @@ Create a service instance to implement inbound communication. A service instance
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -182,8 +162,6 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Roles* 
-
-
     
     </td>
     <td valign="top">
@@ -212,8 +190,6 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Grant-types* 
-
-
     
     </td>
     <td valign="top">
@@ -243,15 +219,11 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Redirect-uris* \(optional\)
-
-
     
     </td>
     <td valign="top">
     
     Enter the redirect URIs for authorization code grant type. Hit *Enter* after typing your uri and proceed with the next uri.
-
-
     
     </td>
     </tr>
@@ -259,8 +231,6 @@ Create a service instance to implement inbound communication. A service instance
     <td valign="top">
     
     *Access Token Validity* \(in seconds\)
-
-
     
     </td>
     <td valign="top">
@@ -318,15 +288,11 @@ With this step, you create a service key for the instance.
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -334,8 +300,6 @@ With this step, you create a service key for the instance.
     <td valign="top">
     
     *Key Type* 
-
-
     
     </td>
     <td valign="top">
@@ -358,8 +322,6 @@ With this step, you create a service key for the instance.
 
 
     See: [Service Key Types](service-key-types-0fc1446.md)
-
-
     
     </td>
     </tr>
@@ -369,8 +331,6 @@ With this step, you create a service key for the instance.
     *External Certificate* 
 
     \(only applicable if for *Key Type* the option *External Certificate* has been chosen\)
-
-
     
     </td>
     <td valign="top">
@@ -394,8 +354,6 @@ With this step, you create a service key for the instance.
     Make sure that the certificate is signed by a certification authority supported by the load balancer \(see [Load Balancer Root Certificates Supported by SAP](load-balancer-root-certificates-supported-by-sap-4509f60.md)\).
 
     You can only use a single certificate once across all existing service instances. To assign multiple roles, don't create multiple service instances. Instead, maintain multiple roles within one service instance.
-
-
     
     </td>
     </tr>
@@ -405,8 +363,6 @@ With this step, you create a service key for the instance.
     *Pin Certificate* 
 
     \(only available for plan `integration-flow` and only applicable if for *Key Type* the option *External Certificate* has been chosen\)
-
-
     
     </td>
     <td valign="top">
@@ -435,8 +391,6 @@ With this step, you create a service key for the instance.
     > -   or one certificate with pinning enabled and another certificate with the same subjectDN and issuerDN where pinning is disabled.
 
     .
-
-
     
     </td>
     </tr>
@@ -446,15 +400,11 @@ With this step, you create a service key for the instance.
     *Validity in days* 
 
     \(only applicable if for *Key Type* the option *Certificate* has been chosen\)
-
-
     
     </td>
     <td valign="top">
     
     Define the validity in days by selecting a number between 1 and 365.
-
-
     
     </td>
     </tr>
@@ -464,15 +414,11 @@ With this step, you create a service key for the instance.
     *Key Size* 
 
     \(only applicable if for *Key Type* the option *Certificate* has been chosen\)
-
-
     
     </td>
     <td valign="top">
     
     The default for the key size is set to 2048.
-
-
     
     </td>
     </tr>
@@ -495,15 +441,11 @@ With this step, you create a service key for the instance.
     <th valign="top">
 
     Key Type
-
-
     
     </th>
     <th valign="top">
 
     Parameters Contained in Service Key
-
-
     
     </th>
     </tr>
@@ -511,8 +453,6 @@ With this step, you create a service key for the instance.
     <td valign="top">
     
     *ClientId/Secret* 
-
-
     
     </td>
     <td valign="top">
@@ -542,8 +482,6 @@ With this step, you create a service key for the instance.
     <td valign="top">
     
     *Certificate* 
-
-
     
     </td>
     <td valign="top">
@@ -606,8 +544,6 @@ With this step, you create a service key for the instance.
     <td valign="top">
     
     *External Certificate* 
-
-
     
     </td>
     <td valign="top">
@@ -630,8 +566,6 @@ With this step, you create a service key for the instance.
 
 
     A service key with this *Key Pair* doesn't contain a private key because the corresponding key pair has been generated with another application than SAP BTP.
-
-
     
     </td>
     </tr>

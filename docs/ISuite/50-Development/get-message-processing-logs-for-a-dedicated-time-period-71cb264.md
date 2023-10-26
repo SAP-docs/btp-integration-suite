@@ -15,14 +15,10 @@ Perform the following call:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Resource Path
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `/MessageProcessingLogs?$inlinecount=allpages&$filter=Status eq 'COMPLETED' and LogStart gt datetime'{beginning of time period}' and LogEnd lt datetime'{end of time period}'` 
-
-
 
 </td>
 </tr>

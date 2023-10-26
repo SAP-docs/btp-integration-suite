@@ -13,21 +13,15 @@ You can use this URL to access the tenant.
 
 Tenant
 
-
-
 </th>
 <th valign="top">
 
 SSL Host
 
-
-
 </th>
 <th valign="top">
 
 URL
-
-
 
 </th>
 </tr>
@@ -36,14 +30,10 @@ URL
 
 Productive
 
-
-
 </td>
 <td valign="top">
 
 HCI
-
-
 
 </td>
 <td valign="top">
@@ -52,8 +42,6 @@ https://<Account Short Name\>-tmn.hci.<Landscape Host\>
 
 For example, [https://l0001-tmn.hci.eu1.hana.ondemand.com](https://l0001-tmn.hci.eu1.hana.ondemand.com) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -61,21 +49,15 @@ For example, [https://l0001-tmn.hci.eu1.hana.ondemand.com](https://l0001-tmn.hci
 
 Test
 
-
-
 </td>
 <td valign="top">
 
 HCI
 
-
-
 </td>
 <td valign="top">
 
 https://<Account Short Name\>-tmn.hci.<Landscape Host\>
-
-
 
 </td>
 </tr>
@@ -90,21 +72,15 @@ https://<Account Short Name\>-tmn.hci.<Landscape Host\>
 
 Tenant
 
-
-
 </th>
 <th valign="top">
 
 SSL Host
 
-
-
 </th>
 <th valign="top">
 
 URL
-
-
 
 </th>
 </tr>
@@ -113,14 +89,10 @@ URL
 
 Productive
 
-
-
 </td>
 <td valign="top">
 
 HCISBP
-
-
 
 </td>
 <td valign="top">
@@ -129,8 +101,6 @@ https://<Account Short Name\>-iflmap.hcisbp.<Landscape Host\>
 
 For example, [https://l0001-iflmap.hcisbp.eu1.hana.ondemand.com](https://l0001-iflmap.hcisbp.eu1.hana.ondemand.com) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -138,21 +108,15 @@ For example, [https://l0001-iflmap.hcisbp.eu1.hana.ondemand.com](https://l0001-i
 
 Test
 
-
-
 </td>
 <td valign="top">
 
 HCISBT
 
-
-
 </td>
 <td valign="top">
 
 https://<Account Short Name\>-iflmap.hcisbt.<Landscape Host\>
-
-
 
 </td>
 </tr>

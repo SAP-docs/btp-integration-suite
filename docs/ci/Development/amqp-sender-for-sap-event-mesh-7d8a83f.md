@@ -43,14 +43,10 @@ The following values are displayed in the *General* tab after a channel has been
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -59,14 +55,10 @@ Description
 
 *Name/Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 *AMQP* 
-
-
 
 </td>
 </tr>
@@ -75,16 +67,12 @@ Description
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 The protocol that the message broker supports:
 
 *WebSocket*
-
-
 
 </td>
 </tr>
@@ -93,14 +81,10 @@ The protocol that the message broker supports:
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 *AMQP 1.0* 
-
-
 
 </td>
 </tr>
@@ -117,14 +101,10 @@ Select the *Connection* tab and provide values in the fields as follows:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -133,14 +113,10 @@ Description
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the hostname of the message broker.
-
-
 
 </td>
 </tr>
@@ -149,8 +125,6 @@ Specify the hostname of the message broker.
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
@@ -158,16 +132,12 @@ Specify the port of the message broker.
 
 Enter `443`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -180,16 +150,12 @@ Select *On-Premise* if you’re connecting to an on-premise message broker.
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Path* 
-
-
 
 </td>
 <td valign="top">
@@ -198,8 +164,6 @@ Specify the access path of the message broker.
 
 Enter `/protocols/amqp10ws`.
 
-
-
 </td>
 </tr>
 <tr>
@@ -207,14 +171,10 @@ Enter `/protocols/amqp10ws`.
 
 *Connect with TLS* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option.
-
-
 
 </td>
 </tr>
@@ -223,14 +183,10 @@ Select this option.
 
 *Location ID* \(only if *On-Premise* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side.
-
-
 
 </td>
 </tr>
@@ -239,14 +195,10 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 
 *Authentication* 
 
-
-
 </td>
 <td valign="top">
 
 Select *OAuth2 Client Credentials*.
-
-
 
 </td>
 </tr>
@@ -255,14 +207,10 @@ Select *OAuth2 Client Credentials*.
 
 *Credential Name* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the name of the *OAuth2 Client Credentials* artifact.
-
-
 
 </td>
 </tr>
@@ -279,14 +227,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -294,8 +238,6 @@ Description
 <td valign="top">
 
 *Queue Name* 
-
-
 
 </td>
 <td valign="top">
@@ -321,8 +263,6 @@ Specify the name of the queue or topic subscription to consume from.
 
 *Number of Current Processes* 
 
-
-
 </td>
 <td valign="top">
 
@@ -339,8 +279,6 @@ Specify the number of processes used for parallel message processing. Note, that
 <td valign="top">
 
 *Max. Number of Prefechted Messages*
-
-
 
 </td>
 <td valign="top">
@@ -365,8 +303,6 @@ If you need to process a large number of messages with the integration flow, and
 
 *Consume Expired Messages*
 
-
-
 </td>
 <td valign="top">
 
@@ -374,16 +310,12 @@ Select if the adapter is to consume already expired messages.
 
 By default, this option is deactivated.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Max. Number of Retries* 
-
-
 
 </td>
 <td valign="top">
@@ -407,8 +339,6 @@ Define the number of retries to be executed before a different delivery status i
 <td valign="top">
 
 *Delivery Status After Max. Retries* 
-
-
 
 </td>
 <td valign="top">

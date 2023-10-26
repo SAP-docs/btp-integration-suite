@@ -51,21 +51,15 @@ The following figure provides an overview of the involved security artifacts and
 
 Keystore
 
-
-
 </th>
 <th valign="top">
 
 Certificate
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -74,14 +68,10 @@ Description
 
 Sender keystore
 
-
-
 </td>
 <td valign="top">
 
 Load balancer server root certificate \(identifies CA that has signed the load balancer server certificate\)
-
-
 
 </td>
 <td valign="top">
@@ -90,8 +80,6 @@ This certificate is required to identify the root CA at the top of the certifica
 
 In many cases, there is a multilevel setup of CAs so that a certificate is signed by an intermediate CA. The trustability of the intermediate CA is guaranteed by another intermediate CA one level higher, and so on, up to the root CA at the top of the **certificate chain**. In this case, it is necessary to assign the certificate chain to the certificate, to enable the connected component \(which has imported only the root CA into its keystore\) to evaluate the chain of trust.
 
-
-
 </td>
 </tr>
 <tr>
@@ -99,21 +87,15 @@ In many cases, there is a multilevel setup of CAs so that a certificate is signe
 
 Load balancer keystore
 
-
-
 </td>
 <td valign="top">
 
 Load balancer server certificate
 
-
-
 </td>
 <td valign="top">
 
 This certificate is required to identify the load balancer as a trusted server \(to which clients like the sender system can connect\).
-
-
 
 </td>
 </tr>

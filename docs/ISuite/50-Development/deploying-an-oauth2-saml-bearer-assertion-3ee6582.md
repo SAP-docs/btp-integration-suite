@@ -45,15 +45,11 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -61,15 +57,11 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Name for the artifact that you want to deploy on the tenant.
-
-
     
     </td>
     </tr>
@@ -77,8 +69,6 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     <td valign="top">
     
     Grant Type
-
-
     
     </td>
     <td valign="top">
@@ -96,15 +86,11 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     Description of the artifact name you're deploying on the tenant.
-
-
     
     </td>
     </tr>
@@ -112,8 +98,6 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     <td valign="top">
     
     Audience
-
-
     
     </td>
     <td valign="top">
@@ -131,8 +115,6 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     <td valign="top">
     
     Client Key
-
-
     
     </td>
     <td valign="top">
@@ -153,15 +135,11 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     <td valign="top">
     
     Token Service URL
-
-
     
     </td>
     <td valign="top">
     
     Provide the URL that generates OAuth2 token for the registered OAuth2 client.
-
-
     
     </td>
     </tr>
@@ -169,8 +147,6 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     <td valign="top">
     
     Target System Type
-
-
     
     </td>
     <td valign="top">
@@ -194,15 +170,11 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     Company ID
 
     \(only if you select *SuccessFactors* for target system type\)
-
-
     
     </td>
     <td valign="top">
     
     Specify the company ID of your SuccessFactors instance.
-
-
     
     </td>
     </tr>
@@ -212,8 +184,6 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     User ID
 
     \(only if you select *SuccessFactors* for target system type\)
-
-
     
     </td>
     <td valign="top">
@@ -235,8 +205,6 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     Additional Properties
 
     \(only if you select *SuccessFactors* for target system type and *Principal Propagation* for user ID\)
-
-
     
     </td>
     <td valign="top">
@@ -256,15 +224,11 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     Key Pair Alias
 
     \(only if you select *SuccessFactors* for target system type and *Key Pair Common Name \(CN\)* for user ID\)
-
-
     
     </td>
     <td valign="top">
     
     Provide the alias name that you defined in the prerequisites.
-
-
     
     </td>
     </tr>
@@ -274,15 +238,11 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     Token Service User
 
     \(only if you select SAP BTP for target system type\)
-
-
     
     </td>
     <td valign="top">
     
     Username required to access the *Token Service URL*.
-
-
     
     </td>
     </tr>
@@ -292,15 +252,11 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     Token Service Password
 
     \(only if you select SAP BTP for target system type\)
-
-
     
     </td>
     <td valign="top">
     
     Password required to access the *Token Service URL*.
-
-
     
     </td>
     </tr>

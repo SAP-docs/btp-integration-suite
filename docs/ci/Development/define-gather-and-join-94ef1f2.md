@@ -66,15 +66,11 @@ If the incoming payload contains namespace declarations including default namesp
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -82,8 +78,6 @@ If the incoming payload contains namespace declarations including default namesp
     <td valign="top">
     
     *Incoming Format* 
-
-
     
     </td>
     <td valign="top">
@@ -115,8 +109,6 @@ If the incoming payload contains namespace declarations including default namesp
     <td valign="top">
     
     *Aggregation Algorithm*
-
-
     
     </td>
     <td valign="top">
@@ -166,15 +158,11 @@ If the incoming payload contains namespace declarations including default namesp
     *Combine from source \(XPath\)*
 
     \(Enabled only if for *Aggregation Algorithm* the option *Combine at XPath* is selected\)
-
-
     
     </td>
     <td valign="top">
     
     XPath of the node that you are using as reference in the source message to retrieve the information.
-
-
     
     </td>
     </tr>
@@ -184,15 +172,11 @@ If the incoming payload contains namespace declarations including default namesp
     *Combine at target \(XPath\)*
 
     \(Enabled only if for *Aggregation Algorithm* the option *Combine at XPath* is selected\)
-
-
     
     </td>
     <td valign="top">
     
     XPath of node that acts as the root for combined message.
-
-
     
     </td>
     </tr>
@@ -202,8 +186,6 @@ If the incoming payload contains namespace declarations including default namesp
     *File Name*
 
     \(Enabled only if for *Aggregation Algorithm* the option *Zip* or *Tar* is selected\)
-
-
     
     </td>
     <td valign="top">
@@ -211,8 +193,6 @@ If the incoming payload contains namespace declarations including default namesp
     Specify a simple expression to define unique file names within the archive.
 
     If not specified, header `CamelFileName` is evaluated. In case the header is not available at runtime, a unique file name will be generated.
-
-
     
     </td>
     </tr>

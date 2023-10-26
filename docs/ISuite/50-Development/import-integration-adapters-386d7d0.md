@@ -21,7 +21,7 @@ Import and auto-deploy the adapters that are published in the SAP Business Accel
 
     If you select an adapter from SAP Business Accelerator Hub, Cloud Integration automatically imports the adapter and its package to your design workspace, and deploys the adapter for consumption across your tenant.
 
-3.  Save or deploy your changes after configuring the adapter. See [Configure Adapter in Communication Channels](configure-adapter-in-communication-channels-1f06633.md).
+3.  Save or deploy your changes after configuring the adapter. See: [Configure Adapter in Communication Channels](configure-adapter-in-communication-channels-1f06633.md).
 
 
 **Related Information**  

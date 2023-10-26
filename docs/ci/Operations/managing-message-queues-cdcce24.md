@@ -56,14 +56,10 @@ The *Manage Message Queues* screen has a header and two main areas: an overview 
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 More Information
-
-
 
 </th>
 </tr>
@@ -84,8 +80,6 @@ In the *JMS Resources* information box below the header, you can see the status 
 
 [Checking JMS Resources](checking-jms-resources-6a9c030.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -95,14 +89,10 @@ In the *JMS Resources* information box below the header, you can see the status 
 
 Active queues are displayed in the master table on the left side of the screen.
 
-
-
 </td>
 <td valign="top">
 
 [Managing Queues](managing-queues-f116962.md).
-
-
 
 </td>
 </tr>
@@ -113,14 +103,10 @@ Active queues are displayed in the master table on the left side of the screen.
 
 Clicking a queue shows the messages stored in that queue on the right side of the screen.
 
-
-
 </td>
 <td valign="top">
 
 [Managing Messages Stored in Queues](managing-messages-stored-in-queues-6733197.md).
-
-
 
 </td>
 </tr>
@@ -143,14 +129,10 @@ You can perform the following general actions that affect all queues:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -158,8 +140,6 @@ Description
 <td valign="top">
 
 *Check*\(<span class="SAP-icons"></span>\)
-
-
 
 </td>
 <td valign="top">
@@ -173,8 +153,6 @@ The check results show the following:
 
 You can delete queues that aren't needed and generate missing queues by redeploying the integration flow.
 
-
-
 </td>
 </tr>
 <tr>
@@ -182,14 +160,10 @@ You can delete queues that aren't needed and generate missing queues by redeploy
 
 *Reload*\(<span class="SAP-icons"></span>\)
 
-
-
 </td>
 <td valign="top">
 
 Reload the table.
-
-
 
 </td>
 </tr>
@@ -198,14 +172,10 @@ Reload the table.
 
 *Sort*\(<span class="SAP-icons"></span>\)
 
-
-
 </td>
 <td valign="top">
 
 Sort the table entries according to the displayed sorting criteria.
-
-
 
 </td>
 </tr>

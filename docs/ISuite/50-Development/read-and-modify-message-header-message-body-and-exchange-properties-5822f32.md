@@ -19,14 +19,10 @@ The following table provides examples showing how to use the Script step with th
 
 Use Case
 
-
-
 </th>
 <th valign="top">
 
 Example Requests / More Information
-
-
 
 </th>
 </tr>
@@ -34,8 +30,6 @@ Example Requests / More Information
 <td valign="top">
 
 Address exchange properties
-
-
 
 </td>
 <td valign="top">
@@ -70,8 +64,6 @@ def Message processData(Message message) {
 
 Address the message header.
 
-
-
 </td>
 <td valign="top">
 
@@ -83,16 +75,12 @@ You can apply the following methods on an instance of `Message` in order to get 
 
 `setHeader(String name, Object value)` 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Address message body
-
-
 
 </td>
 <td valign="top">
@@ -172,8 +160,6 @@ def Message processData(Message message) {
 <td valign="top">
 
 Get size of the message body
-
-
 
 </td>
 <td valign="top">

@@ -32,15 +32,11 @@ You can deploy the artifact on the tenant by following the procedure below.
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -48,8 +44,6 @@ You can deploy the artifact on the tenant by following the procedure below.
     <td valign="top">
     
     **Name**
-
-
     
     </td>
     <td valign="top">
@@ -57,8 +51,6 @@ You can deploy the artifact on the tenant by following the procedure below.
     Provide a name for the artifact.
 
     The artifact name is used as an alias for the confidential data assigned by this parameter.
-
-
     
     </td>
     </tr>
@@ -66,15 +58,11 @@ You can deploy the artifact on the tenant by following the procedure below.
     <td valign="top">
     
     **Description**
-
-
     
     </td>
     <td valign="top">
     
     Provide a more detailed description of the artifact.
-
-
     
     </td>
     </tr>
@@ -82,8 +70,6 @@ You can deploy the artifact on the tenant by following the procedure below.
     <td valign="top">
     
     **Secure Parameter**
-
-
     
     </td>
     <td valign="top">
@@ -105,15 +91,11 @@ You can deploy the artifact on the tenant by following the procedure below.
     <td valign="top">
     
     **Repeat Secure Parameter**
-
-
     
     </td>
     <td valign="top">
     
     Repeat the confidential value of the attribute.
-
-
     
     </td>
     </tr>

@@ -13,14 +13,10 @@ There are the following types:
 
 Quality of Service
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Description
 
 Best Effort \(BE\)
 
-
-
 </td>
 <td valign="top">
 
 Doesn't provide any guarantee if or how often the message is delivered.
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ Doesn't provide any guarantee if or how often the message is delivered.
 
 At Least Once \(ALO\)
 
-
-
 </td>
 <td valign="top">
 
 Guarantees that a message is delivered at least one time; duplicate delivery of the same message is possible.
-
-
 
 </td>
 </tr>
@@ -61,14 +49,10 @@ Guarantees that a message is delivered at least one time; duplicate delivery of 
 
 At Most Once \(AMO\)
 
-
-
 </td>
 <td valign="top">
 
 Guarantees that the same message isn't sent multiple times; however, in certain cases the message isn't delivered at all.
-
-
 
 </td>
 </tr>
@@ -77,16 +61,12 @@ Guarantees that the same message isn't sent multiple times; however, in certain 
 
 Exactly Once \(EO\)
 
-
-
 </td>
 <td valign="top">
 
 Guarantees that a message is delivered only once. Therefore, this quality of service is a combination of ALO and AMO.
 
 See: [Quality of Service Exactly Once](quality-of-service-exactly-once-f96cf27.md)
-
-
 
 </td>
 </tr>

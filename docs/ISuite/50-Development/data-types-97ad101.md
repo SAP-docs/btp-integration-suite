@@ -23,14 +23,10 @@ The nodes are represented in a hierarchical manner using indents with the follow
 
 Entry
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -39,14 +35,10 @@ Description
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 Name of the node.
-
-
 
 </td>
 </tr>
@@ -54,8 +46,6 @@ Name of the node.
 <td valign="top">
 
 Category
-
-
 
 </td>
 <td valign="top">
@@ -74,14 +64,10 @@ Displays category of the node. For root node, it can be *Simple Type* or *Comple
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 Displays a built-in data type \(example string, decimal, or integer\) or reference to an existing data type for an element or attribute.
-
-
 
 </td>
 </tr>
@@ -90,14 +76,10 @@ Displays a built-in data type \(example string, decimal, or integer\) or referen
 
 Occurrence
 
-
-
 </td>
 <td valign="top">
 
 Determines how often elements occur. For attributes the possible value is *Optional* or *Required*.
-
-
 
 </td>
 </tr>
@@ -106,14 +88,10 @@ Determines how often elements occur. For attributes the possible value is *Optio
 
 Restrictions
 
-
-
 </td>
 <td valign="top">
 
 Displays the restriction of the value range of a built-in data type for simple data types, elements, or attributes.
-
-
 
 </td>
 </tr>
@@ -130,14 +108,10 @@ Choose a row to view the following details:
 
 Facet
 
-
-
 </th>
 <th valign="top">
 
 Meaning
-
-
 
 </th>
 </tr>
@@ -146,8 +120,6 @@ Meaning
 
 **Properties**
 
-
-
 </td>
 </tr>
 <tr>
@@ -155,14 +127,10 @@ Meaning
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the selected node
-
-
 
 </td>
 </tr>
@@ -171,14 +139,10 @@ Displays the name of the selected node
 
 Category
 
-
-
 </td>
 <td valign="top">
 
 Displays the category of the selected node
-
-
 
 </td>
 </tr>
@@ -187,14 +151,10 @@ Displays the category of the selected node
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 Displays a built-in data type \(example string, decimal, or integer\) or reference to an existing data type for an element or attribute.
-
-
 
 </td>
 </tr>
@@ -203,14 +163,10 @@ Displays a built-in data type \(example string, decimal, or integer\) or referen
 
 Namespace
 
-
-
 </td>
 <td valign="top">
 
 Displays the namespace to which the parent artifact of the selected node belongs to or where it's created.
-
-
 
 </td>
 </tr>
@@ -221,14 +177,10 @@ Package Name
 
 \(appears only if the Type is reference to an existing data type\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the package for referenced data type.
-
-
 
 </td>
 </tr>
@@ -237,14 +189,10 @@ Displays the name of the package for referenced data type.
 
 MinOccurs & Maxoccurs
 
-
-
 </td>
 <td valign="top">
 
 Specify the minimum and maximum occurrence of an an element
-
-
 
 </td>
 </tr>
@@ -253,14 +201,10 @@ Specify the minimum and maximum occurrence of an an element
 
 Description
 
-
-
 </td>
 <td valign="top">
 
 Displays description of the node.
-
-
 
 </td>
 </tr>
@@ -269,8 +213,6 @@ Displays description of the node.
 
 **Restrictions**
 
-
-
 </td>
 </tr>
 <tr>
@@ -278,14 +220,10 @@ Displays description of the node.
 
 enumeration
 
-
-
 </td>
 <td valign="top">
 
 Restricts the value range to a set of individual values.
-
-
 
 </td>
 </tr>
@@ -294,14 +232,10 @@ Restricts the value range to a set of individual values.
 
 fractionDigits
 
-
-
 </td>
 <td valign="top">
 
 Specifies the number of places permitted after the comma.
-
-
 
 </td>
 </tr>
@@ -310,14 +244,10 @@ Specifies the number of places permitted after the comma.
 
 length, maxLength, minLength
 
-
-
 </td>
 <td valign="top">
 
 Exact \(length\), maximum \(maxLength\), or minimum \(minLength\) length of a data type.
-
-
 
 </td>
 </tr>
@@ -326,14 +256,10 @@ Exact \(length\), maximum \(maxLength\), or minimum \(minLength\) length of a da
 
 maxExclusive, maxInclusive
 
-
-
 </td>
 <td valign="top">
 
 Upper limit for the value set exclusive \(maxExclusive\) or inclusive \(maxInclusive\) of the specified value. The value of this facet doesn't exceed the value range of the data type that is restricted by the facet.
-
-
 
 </td>
 </tr>
@@ -342,14 +268,10 @@ Upper limit for the value set exclusive \(maxExclusive\) or inclusive \(maxInclu
 
 minExclusive, minInclusive
 
-
-
 </td>
 <td valign="top">
 
 Lower limit for the value set exclusive \(minExclusive\) or inclusive \(minInclusive\) of the specified value. The value of this facet does not exceed the value range of the data type that is restricted by the facet.
-
-
 
 </td>
 </tr>
@@ -358,14 +280,10 @@ Lower limit for the value set exclusive \(minExclusive\) or inclusive \(minInclu
 
 pattern
 
-
-
 </td>
 <td valign="top">
 
 Specifies a pattern for string-based data types. The pattern has the form of a regular expression that describes a set of appropriate character sequences.
-
-
 
 </td>
 </tr>
@@ -374,14 +292,10 @@ Specifies a pattern for string-based data types. The pattern has the form of a r
 
 totalDigits
 
-
-
 </td>
 <td valign="top">
 
 Specifies the total number of digits in a number. The value is only xsd: positiveInteger type.
-
-
 
 </td>
 </tr>
@@ -389,8 +303,6 @@ Specifies the total number of digits in a number. The value is only xsd: positiv
 <td valign="top">
 
 whiteSpace
-
-
 
 </td>
 <td valign="top">
@@ -402,8 +314,6 @@ preserve: Retains all white-space characters.
 replace: Replaces every line feed, tab, and carriage return with a blank.
 
 collapse: As for replace but subsequent blanks are replaced by a single blank and leading, final blanks are deleted.
-
-
 
 </td>
 </tr>
@@ -426,14 +336,10 @@ From Cloud Integration Web UI you can view the following general details of a Da
 
 Entry
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -442,14 +348,10 @@ Description
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 Name of the Data Type
-
-
 
 </td>
 </tr>
@@ -458,14 +360,10 @@ Name of the Data Type
 
 ID
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique ID of the artifact.
-
-
 
 </td>
 </tr>
@@ -474,14 +372,10 @@ Displays the unique ID of the artifact.
 
 Namespace
 
-
-
 </td>
 <td valign="top">
 
 Displays the namespace to which Data Type belongs to or where it's created.
-
-
 
 </td>
 </tr>
@@ -490,14 +384,10 @@ Displays the namespace to which Data Type belongs to or where it's created.
 
 Version
 
-
-
 </td>
 <td valign="top">
 
 Current version of data type.
-
-
 
 </td>
 </tr>
@@ -506,14 +396,10 @@ Current version of data type.
 
 Created On & Created By
 
-
-
 </td>
 <td valign="top">
 
 User who created the data type and when it's created.
-
-
 
 </td>
 </tr>
@@ -522,14 +408,10 @@ User who created the data type and when it's created.
 
 Description
 
-
-
 </td>
 <td valign="top">
 
 Displays the description associated with the data type, if any.
-
-
 
 </td>
 </tr>
@@ -537,8 +419,6 @@ Displays the description associated with the data type, if any.
 <td valign="top">
 
 ES Repository Information
-
-
 
 </td>
 <td valign="top">

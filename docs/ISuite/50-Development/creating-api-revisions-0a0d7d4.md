@@ -18,14 +18,24 @@ Create API revisions to make nonbreaking API changes in a safe and controlled ma
 
 -   Every time you edit and save a revision, a draft gets created.
 
--   You can restore any of the previous revisions using the revert action. The revert action creates a new revision, which is a copy of the prevision version you’re trying to restore.
+-   You can restore any of the previous revisions using the revert action. The revert action creates a new revision, which is a copy of the prevision version you’re trying to restore. dialog and choose
 
 
 Refer the block diagram to understand the flow:
 
 ![](images/Revision_Flow_Diagram_a91e57d.png)
 
-For visual intructions on how to get started with API Revisions, refer the following [Tutorial](https://developers.sap.com/tutorials/api-mgmt-revisioning.html).
+A unique draft name is generated with each **Deploy** and *Edit-Save* action, following a specific naming pattern. When an API proxy is created, a draft is automatically generated with the name "Draft". If the draft is deployed and then edited, the new draft name will change to *Draft-1* from *Draft*. Subsequent deploy and edit actions will increment the number, resulting in names like *Draft-2* dialog and choose and so on. This naming convention helps to clearly differentiate between the deployed draft and the working draft.
+
+
+
+If the draft is originated from a revision, the draft name will include the revision name. For example, if the revision name is "1.0.0", editing and saving this revision will create a draft with the name *Draft-\(1.0.0\)*. Subsequent deploy and edit actions will increment the number, resulting in names like *Draft-1-\(1.0.0\)*.
+
+Drafts originating from revisions will include the parent name to ensure a unique name for each API proxy draft.
+
+![](images/Revision_Draft_c938fe2.png)
+
+For visual instructions on how to get started with API Revisions, refer the following [Tutorial](https://developers.sap.com/tutorials/api-mgmt-revisioning.html).
 
 To create a new revision, execute the following steps:
 
@@ -37,11 +47,11 @@ To create a new revision, execute the following steps:
 
 1.  Log on to the Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
 3.  Choose *Create*.
 
-4.  Fill in the details in the *Create API* dialog and choose *Create*.
+4.  Fill in the details in the *Create API**Create*.
 
     To create an API proxy from scratch, see [Create an API](create-an-api-c0842d5.md).
 
@@ -53,15 +63,11 @@ To create a new revision, execute the following steps:
     <th valign="top">
 
     Tab
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -69,8 +75,6 @@ To create a new revision, execute the following steps:
     <td valign="top">
     
     *Overview* 
-
-
     
     </td>
     <td valign="top">
@@ -97,15 +101,11 @@ To create a new revision, execute the following steps:
     <td valign="top">
     
     *Proxy Endpoint* 
-
-
     
     </td>
     <td valign="top">
     
     You can add the proxy endpoint and the route rules.
-
-
     
     </td>
     </tr>
@@ -113,15 +113,11 @@ To create a new revision, execute the following steps:
     <td valign="top">
     
     *Target Endpoint* 
-
-
     
     </td>
     <td valign="top">
     
     You can choose URL, API Provider, or API Proxy, as the target endpoint as well as enter target endpoint rules.
-
-
     
     </td>
     </tr>
@@ -129,15 +125,11 @@ To create a new revision, execute the following steps:
     <td valign="top">
     
     *Resources* 
-
-
     
     </td>
     <td valign="top">
     
     You can add resources, or change already existing ones.
-
-
     
     </td>
     </tr>
@@ -158,7 +150,7 @@ To create a new revision, execute the following steps:
 10. In the *Save as Revision* dialog, provide a revision name and a description, and choose *Save*.
 
     > ### Note:  
-    > The revision name must be unique and cannot be named "Draft" as it is a reserved term. Instead, you can use alphanumeric characters \(both lowercase and uppercase\), as well as the special characters '\_', '.', '-', and '\(\)'. The name should not exceed 50 characters.
+    > The revision name must be unique and can’t be named "Draft" as it’s a reserved term. Instead, you can use alphanumeric characters \(both lowercase and uppercase\), as well as the special characters '\_', '.', '-', and '\(\)'. The name shouldn’t exceed 50 characters.
 
     A new revision gets created. You can now edit, delete, and deploy the new revision of the API.
 
@@ -185,14 +177,10 @@ To create a new revision, execute the following steps:
     > 
     > Actions
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Behavior
-    > 
-    > 
     > 
     > </th>
     > </tr>
@@ -201,14 +189,10 @@ To create a new revision, execute the following steps:
     > 
     > Publishing of products
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > When you create a product, you link it to one or more APIs. Also, the same API can be linked to multiple products. After you’ve linked an API to a product, all attributes of the API such as API resources, and API documentation become an implicit part of the product. Now, if the product has an API proxy that has multiple revisions, and the deployed revision of the API proxy isn’t the latest revision; if you try to publish such a product, the deployed revision of the API proxy gets published. For more information, see [Publish APIs](publish-apis-75a4a11.md).
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -217,14 +201,10 @@ To create a new revision, execute the following steps:
     > 
     > Importing an API proxy
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > When you import an API, a new revision of the API gets created. If your API has an existing draft, the draft gets replaced by the new revision created during the import. For more information, see [Import an API](import-an-api-9342a93.md).
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -233,16 +213,12 @@ To create a new revision, execute the following steps:
     > 
     > Transporting APIs and its related artifacts
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > When you transport an API, a new revision of the API is created. If your API has an existing draft, the draft gets replaced by the new revision created during the transport.
     > 
     > If there are multiple revisions of an API, only the latest revision gets transported. For more information, see [Transporting an API Proxy from Source to Destination](transporting-an-api-proxy-from-source-to-destination-2fe1aa2.md).
-    > 
-    > 
     > 
     > </td>
     > </tr>

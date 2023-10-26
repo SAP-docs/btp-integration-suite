@@ -38,14 +38,10 @@ An example payload for the policy is as follows::
 
 **Field Name**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -53,8 +49,6 @@ An example payload for the policy is as follows::
 <td valign="top">
 
 IgnoreUnresolvedVariables\(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -65,8 +59,6 @@ Valid values: `true` or `false`
 
 Default value: `true`
 
-
-
 </td>
 </tr>
 <tr>
@@ -74,14 +66,10 @@ Default value: `true`
 
 FaultResponse\(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 Defines the response message returned to the requesting application.
-
-
 
 </td>
 </tr>
@@ -98,28 +86,20 @@ The following predefined flow variables are available after Raise Fault policy e
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Permission
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -128,28 +108,20 @@ Description
 
 fault.name
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Read-Only
 
-
-
 </td>
 <td valign="top">
 
 Returns the fault name in the error and if not available, an empty string.
-
-
 
 </td>
 </tr>
@@ -158,28 +130,20 @@ Returns the fault name in the error and if not available, an empty string.
 
 fault.type
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Read-Only
 
-
-
 </td>
 <td valign="top">
 
 Returns the fault type in the error and if not available, an empty string.
-
-
 
 </td>
 </tr>
@@ -188,28 +152,20 @@ Returns the fault type in the error and if not available, an empty string.
 
 fault.category
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Read-Only
 
-
-
 </td>
 <td valign="top">
 
 Returns the fault category in the error and if not available, an empty string.
-
-
 
 </td>
 </tr>
@@ -226,14 +182,10 @@ During the policy execution, the following error can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -242,14 +194,10 @@ Cause
 
 RaiseFault
 
-
-
 </td>
 <td valign="top">
 
 See fault string.
-
-
 
 </td>
 </tr>
@@ -266,21 +214,15 @@ Following fault variables are set when the policy triggers an error at runtime:
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -289,8 +231,6 @@ Example
 
 \[prefix\].\[policy\_name\].failed
 
-
-
 </td>
 <td valign="top">
 
@@ -298,14 +238,10 @@ The \[prefix\] is raisefault.
 
 The \[policy\_name\] is the name of the policy that threw the error.
 
-
-
 </td>
 <td valign="top">
 
 raisefault.RF-ThrowError.failed = true
-
-
 
 </td>
 </tr>
@@ -314,21 +250,15 @@ raisefault.RF-ThrowError.failed = true
 
 fault.\[error\_name\]
 
-
-
 </td>
 <td valign="top">
 
 \[error\_name\] = The specific error name to check for as listed in the table above.
 
-
-
 </td>
 <td valign="top">
 
 fault.name = "RaiseFault"
-
-
 
 </td>
 </tr>

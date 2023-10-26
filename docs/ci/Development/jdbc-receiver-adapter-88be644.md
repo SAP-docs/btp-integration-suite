@@ -54,14 +54,10 @@ The following table lists the databases currently supported for Cloud Foundry te
 
 Database supported for Cloud Foundry
 
-
-
 </th>
 <th valign="top">
 
 Database supported for Neo only
-
-
 
 </th>
 </tr>
@@ -152,14 +148,10 @@ After adding the JDBC receiver adapter step in your integration flow, set up the
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -167,8 +159,6 @@ Description
 <td valign="top">
 
 *JDBC Data Source Alias*
-
-
 
 </td>
 <td valign="top">
@@ -189,14 +179,10 @@ Enter the name of the data source, which is created to establish the connection 
 
 *Connection Timeout \(in s\)*
 
-
-
 </td>
 <td valign="top">
 
 Provide a connection timeout, in seconds, to define how long the adapter waits for a server response before the connection retry is terminated.
-
-
 
 </td>
 </tr>
@@ -205,14 +191,10 @@ Provide a connection timeout, in seconds, to define how long the adapter waits f
 
 *Query/Response Timeout \(in s\)*
 
-
-
 </td>
 <td valign="top">
 
 Provide a query timeout, in seconds, to define the waiting duration for receiving a query response. After the elapsed time, the adapter stops waiting for response.
-
-
 
 </td>
 </tr>
@@ -221,14 +203,10 @@ Provide a query timeout, in seconds, to define the waiting duration for receivin
 
 *Maximum Records*
 
-
-
 </td>
 <td valign="top">
 
 Determine a value to display the maximum number of fetched records.
-
-
 
 </td>
 </tr>
@@ -237,14 +215,10 @@ Determine a value to display the maximum number of fetched records.
 
 *Batch Mode*
 
-
-
 </td>
 <td valign="top">
 
 This enables you to process collection queries in a single request. For more details, see [Batch Payload and Operation](batch-payload-and-operation-760b267.md).
-
-
 
 </td>
 </tr>
@@ -255,14 +229,10 @@ This enables you to process collection queries in a single request. For more det
 
 \(only available if *Batch Mode* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Choose the behavior of batch operation. For more details, see [Batch Payload and Operation](batch-payload-and-operation-760b267.md).
-
-
 
 </td>
 </tr>

@@ -38,14 +38,10 @@ The first step in the model is a *Local Process* call. The called subprocess con
 
 Expression Type
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 </tr>
@@ -54,14 +50,10 @@ XPath
 
 XPath Expression
 
-
-
 </td>
 <td valign="top">
 
 /root/Items/Item
-
-
 
 </td>
 </tr>
@@ -84,14 +76,10 @@ The content modifier step *Replace payload* is defined as follows:
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 Constant
-
-
 
 </td>
 </tr>
@@ -100,14 +88,10 @@ Constant
 
 Body
 
-
-
 </td>
 <td valign="top">
 
 'Small payload'
-
-
 
 </td>
 </tr>
@@ -126,14 +110,10 @@ When the split process finishes without a Gather-step, the main flow continues w
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 numberOfItems
-
-
 
 </td>
 </tr>
@@ -142,14 +122,10 @@ numberOfItems
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 </tr>
@@ -158,14 +134,10 @@ XPath
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
 java.lang.Integer
-
-
 
 </td>
 </tr>
@@ -174,14 +146,10 @@ java.lang.Integer
 
 Value
 
-
-
 </td>
 <td valign="top">
 
 count\(/root/Items/Item\)
-
-
 
 </td>
 </tr>
@@ -198,14 +166,10 @@ Via the same content modifier, a notification message with the number of dispatc
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 Expression
-
-
 
 </td>
 </tr>
@@ -214,14 +178,10 @@ Expression
 
 Body
 
-
-
 </td>
 <td valign="top">
 
 Notification message: The original payload was split by Item ID,`${property.numberOfItems}` messages were stored in the data store 'ManageResources-SplitterSubprocess'.
-
-
 
 </td>
 </tr>

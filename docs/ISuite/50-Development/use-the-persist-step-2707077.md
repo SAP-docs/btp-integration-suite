@@ -56,29 +56,21 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Name
-
-
     
     </th>
     <th valign="top">
 
     Type
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     <th valign="top">
 
     Purpose
-
-
     
     </th>
     </tr>
@@ -86,22 +78,16 @@ The integration flow performs the following steps:
     <td valign="top">
     
     productIdentifier
-
-
     
     </td>
     <td valign="top">
     
     XPath
-
-
     
     </td>
     <td valign="top">
     
     //productId
-
-
     
     </td>
     <td valign="top">
@@ -109,8 +95,6 @@ The integration flow performs the following steps:
     Product identifier contained in the inbound message.
 
     This property is used in the OData channel query when reading the product details from the WebShop.
-
-
     
     </td>
     </tr>
@@ -194,14 +178,10 @@ The Postman collection for this guideline \(in folder `PersistStep`\) comes with
 
 Postman Request
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -210,14 +190,10 @@ Purpose
 
 PersistStep
 
-
-
 </td>
 <td valign="top">
 
 Calls the integration flow endpoint.
-
-
 
 </td>
 </tr>
@@ -226,14 +202,10 @@ Calls the integration flow endpoint.
 
 MessageStoreEntries
 
-
-
 </td>
 <td valign="top">
 
 Reads the Message Store entries written during the execution of the integration flow. As there are two Persist steps, 2 entries are written. One entry contains the payload of the inbound message, the other one the payload of the outbound message.
-
-
 
 </td>
 </tr>
@@ -242,14 +214,10 @@ Reads the Message Store entries written during the execution of the integration 
 
 MessageStorePayload Inbound
 
-
-
 </td>
 <td valign="top">
 
 Reads the \(inbound\) payload stored in the first Message Store entry.
-
-
 
 </td>
 </tr>
@@ -258,14 +226,10 @@ Reads the \(inbound\) payload stored in the first Message Store entry.
 
 MessageStorePayload Outbound
 
-
-
 </td>
 <td valign="top">
 
 Reads the \(outbound\) payload stored in the 2nd Message Store entry.
-
-
 
 </td>
 </tr>

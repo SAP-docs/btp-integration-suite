@@ -55,15 +55,11 @@ Design integration flow *Integration Flow 1 - Write Variable* as depicted in the
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -71,15 +67,11 @@ Design integration flow *Integration Flow 1 - Write Variable* as depicted in the
     <td valign="top">
     
     *Operation Details*
-
-
     
     </td>
     <td valign="top">
     
     Query \(GET\)
-
-
     
     </td>
     </tr>
@@ -87,15 +79,11 @@ Design integration flow *Integration Flow 1 - Write Variable* as depicted in the
     <td valign="top">
     
     *Resource Path*
-
-
     
     </td>
     <td valign="top">
     
     Products
-
-
     
     </td>
     </tr>
@@ -103,15 +91,11 @@ Design integration flow *Integration Flow 1 - Write Variable* as depicted in the
     <td valign="top">
     
     *Query Options*
-
-
     
     </td>
     <td valign="top">
     
     $select=ProductId,Price,CurrencyCode,Name
-
-
     
     </td>
     </tr>

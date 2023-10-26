@@ -15,14 +15,10 @@ Perform the following call:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Resource Path
 
 PUT
 
-
-
 </td>
 <td valign="top">
 
 `/AlternativePartners(Hexagency='{Hexagency}',Hexscheme='{Hexscheme}',Hexid='{Hexid}')` 
-
-
 
 </td>
 </tr>

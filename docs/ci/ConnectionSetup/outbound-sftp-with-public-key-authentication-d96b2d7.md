@@ -15,14 +15,10 @@ For an SFTP client connected to an SFTP server using the Public Key authenticati
 
 SFTP Client Side
 
-
-
 </th>
 <th valign="top">
 
 SFTP Server Side
-
-
 
 </th>
 </tr>

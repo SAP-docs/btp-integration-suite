@@ -70,15 +70,11 @@ For an example how to use this feature, see [ID Mapping Example](id-mapping-exam
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -86,8 +82,6 @@ For an example how to use this feature, see [ID Mapping Example](id-mapping-exam
     <td valign="top">
     
     Source Message ID
-
-
     
     </td>
     <td valign="top">
@@ -95,8 +89,6 @@ For an example how to use this feature, see [ID Mapping Example](id-mapping-exam
     The source message ID.
 
     The source message ID can be dynamically read from a header or property using an expression such like `${property.messageID}` or `${header.messageID}`.
-
-
     
     </td>
     </tr>
@@ -104,15 +96,11 @@ For an example how to use this feature, see [ID Mapping Example](id-mapping-exam
     <td valign="top">
     
     Target Header Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the header in which to store the target message ID.
-
-
     
     </td>
     </tr>
@@ -120,8 +108,6 @@ For an example how to use this feature, see [ID Mapping Example](id-mapping-exam
     <td valign="top">
     
     Context
-
-
     
     </td>
     <td valign="top">
@@ -151,8 +137,6 @@ For an example how to use this feature, see [ID Mapping Example](id-mapping-exam
     <td valign="top">
     
     Visibility
-
-
     
     </td>
     <td valign="top">
@@ -172,15 +156,11 @@ For an example how to use this feature, see [ID Mapping Example](id-mapping-exam
     <td valign="top">
     
     Expiration Period \(in d\)
-
-
     
     </td>
     <td valign="top">
     
     Number of days after which the stored ID mapping is deleted \(default is 30 days\).
-
-
     
     </td>
     </tr>

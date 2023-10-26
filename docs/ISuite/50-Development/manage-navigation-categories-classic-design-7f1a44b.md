@@ -39,15 +39,11 @@ Use the following procedure to configure navigation categories.
     <th valign="top">
 
     Name
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -55,15 +51,11 @@ Use the following procedure to configure navigation categories.
     <td valign="top">
     
     **Category Name**
-
-
     
     </td>
     <td valign="top">
     
     Provide a name for the category.
-
-
     
     </td>
     </tr>
@@ -71,15 +63,11 @@ Use the following procedure to configure navigation categories.
     <td valign="top">
     
     **Category Title**
-
-
     
     </td>
     <td valign="top">
     
     Provide a title for the category. Categories are identified by their title on the home screen.
-
-
     
     </td>
     </tr>
@@ -87,15 +75,11 @@ Use the following procedure to configure navigation categories.
     <td valign="top">
     
     **Description**
-
-
     
     </td>
     <td valign="top">
     
     Provide a description for the category.
-
-
     
     </td>
     </tr>

@@ -20,21 +20,15 @@ The following table provides tha mapping of environment variables in Neo and Clo
 
 Variable Name \(Neo\)
 
-
-
 </th>
 <th valign="top">
 
 Variable Name \(Cloud Foundry\)
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -45,8 +39,6 @@ HC\_APPLICATION
 
 Example value: `abcd01iflmap`
 
-
-
 </td>
 <td valign="top">
 
@@ -54,14 +46,10 @@ TENANT\_NAME
 
 Example value: `xyz001`
 
-
-
 </td>
 <td valign="top">
 
 Sub domain of worker application \(associated with application identifier for worker node\)
-
-
 
 </td>
 </tr>
@@ -72,8 +60,6 @@ HC\_APPLICATION\_URL
 
 Example value: `abcd01iflmap.uvwxy.eu1.hana.ondemand.com`
 
-
-
 </td>
 <td valign="top">
 
@@ -81,14 +67,10 @@ TENANT\_NAME + IT\_SYSTEM\_ID + IT\_TENANT\_UX\_DOMAIN
 
 Example value: `xyz001.it-cpi001.cfapps.eu10.hana.ondemand.com`
 
-
-
 </td>
 <td valign="top">
 
 URL of the worker application sub domain
-
-
 
 </td>
 </tr>
@@ -99,8 +81,6 @@ HC\_HOST
 
 Example value: `hana.ondemand.com`
 
-
-
 </td>
 <td valign="top">
 
@@ -108,14 +88,10 @@ IT\_TENANT\_UX\_DOMAIN
 
 Example value: `cfapps.eu10.hana.ondemand.com`
 
-
-
 </td>
 <td valign="top">
 
 Base URL of the SAP BTP region host where the application is deployed
-
-
 
 </td>
 </tr>
@@ -126,8 +102,6 @@ HC\_LOCAL\_HTTP\_PORT
 
 Example value: `9001`
 
-
-
 </td>
 <td valign="top">
 
@@ -135,14 +109,10 @@ PORT
 
 Example value: `8080`
 
-
-
 </td>
 <td valign="top">
 
 HTTP port of the application bound to localhost
-
-
 
 </td>
 </tr>
@@ -151,21 +121,15 @@ HTTP port of the application bound to localhost
 
 HC\_OP\_HTTP\_PROXY\_HOST
 
-
-
 </td>
 <td valign="top">
 
 VCAP\_SERVICES
 
-
-
 </td>
 <td valign="top">
 
 Host of the HTTP Proxy for on-premise connectivity
-
-
 
 </td>
 </tr>
@@ -176,8 +140,6 @@ HC\_OP\_HTTP\_PROXY\_PORT
 
 Example value: `20003`
 
-
-
 </td>
 <td valign="top">
 
@@ -185,14 +147,10 @@ VCAP\_SERVICES
 
 Example value: `20003`
 
-
-
 </td>
 <td valign="top">
 
 Port of the HTTP Proxy for on-premise connectivity
-
-
 
 </td>
 </tr>
@@ -203,8 +161,6 @@ HC\_REGION
 
 Example value: `EU_1`
 
-
-
 </td>
 <td valign="top">
 
@@ -212,14 +168,10 @@ IT\_TENANT\_UX\_DOMAIN
 
 Example value: `cfapps.eu10.hana.ondemand.com`
 
-
-
 </td>
 <td valign="top">
 
 Region where the application is deployed
-
-
 
 </td>
 </tr>

@@ -55,14 +55,10 @@ OAuth v2.0 GET policy defines the following elements:
 
 **Field Name**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -71,14 +67,10 @@ OAuth v2.0 GET policy defines the following elements:
 
 AccessToken \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 Use this element to retrieve the profile for an OAuth 2.0 access token.
-
-
 
 </td>
 </tr>
@@ -87,16 +79,12 @@ Use this element to retrieve the profile for an OAuth 2.0 access token.
 
 AuthorizationCode \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 Use this element to retrieve the profile for an OAuth
 
 2.0 authorization code.
-
-
 
 </td>
 </tr>
@@ -105,14 +93,10 @@ Use this element to retrieve the profile for an OAuth
 
 ClientId
 
-
-
 </td>
 <td valign="top">
 
 Use this element to retrieve information about ClientId.
-
-
 
 </td>
 </tr>
@@ -121,16 +105,12 @@ Use this element to retrieve information about ClientId.
 
 RefreshToken \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 Use this element to retrieve the profile for an OAuth
 
 2.0 refresh token.
-
-
 
 </td>
 </tr>
@@ -145,14 +125,10 @@ OAuth v2.0 GET policy defines the following errors:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -161,14 +137,10 @@ Cause
 
 invalid\_access\_token
 
-
-
 </td>
 <td valign="top">
 
 The access token sent to the policy is invalid.
-
-
 
 </td>
 </tr>
@@ -177,14 +149,10 @@ The access token sent to the policy is invalid.
 
 expired\_access\_token
 
-
-
 </td>
 <td valign="top">
 
 The access token sent to the policy is expired.
-
-
 
 </td>
 </tr>
@@ -193,14 +161,10 @@ The access token sent to the policy is expired.
 
 invalid\_refresh\_token
 
-
-
 </td>
 <td valign="top">
 
 The refresh token sent to the policy is invalid.
-
-
 
 </td>
 </tr>
@@ -209,14 +173,10 @@ The refresh token sent to the policy is invalid.
 
 refresh\_token\_expired
 
-
-
 </td>
 <td valign="top">
 
 The refresh token sent to the policy is expired.
-
-
 
 </td>
 </tr>
@@ -225,14 +185,10 @@ The refresh token sent to the policy is expired.
 
 invalid\_client-invalid\_client\_id
 
-
-
 </td>
 <td valign="top">
 
 The client ID sent to the policy is invalid.
-
-
 
 </td>
 </tr>
@@ -241,14 +197,10 @@ The client ID sent to the policy is invalid.
 
 invalid\_request-authorization\_code\_invalid
 
-
-
 </td>
 <td valign="top">
 
 The authorization code sent to the policy is invalid.
-
-
 
 </td>
 </tr>
@@ -257,14 +209,10 @@ The authorization code sent to the policy is invalid.
 
 authorization\_code\_expired
 
-
-
 </td>
 <td valign="top">
 
 The authorization code sent to the policy is expired.
-
-
 
 </td>
 </tr>
@@ -281,21 +229,15 @@ Following flow variables are populated and is used in cases where you need the p
 
 Variable Type
 
-
-
 </th>
 <th valign="top">
 
 When
 
-
-
 </th>
 <th valign="top">
 
 Variables list
-
-
 
 </th>
 </tr>
@@ -304,14 +246,10 @@ Variables list
 
 Client ID variables
 
-
-
 </td>
 <td valign="top">
 
 These variables are populated when the <ClientId\> operation executes
-
-
 
 </td>
 <td valign="top">
@@ -330,8 +268,6 @@ oauthv2client.\{policy\_name\}.developer.id
 
 oauthv2client.\{policy\_name\}.\{developer\_app\_custom\_attribute\_name\}
 
-
-
 </td>
 </tr>
 <tr>
@@ -339,14 +275,10 @@ oauthv2client.\{policy\_name\}.\{developer\_app\_custom\_attribute\_name\}
 
 Access token variables
 
-
-
 </td>
 <td valign="top">
 
 These variables are populated when the <AccessToken\> operation executes
-
-
 
 </td>
 <td valign="top">
@@ -367,8 +299,6 @@ oauthv2accesstoken.\{policy\_name\}.expires\_in
 
 oauthv2accesstoken.\{policy\_name\}.status
 
-
-
 </td>
 </tr>
 <tr>
@@ -376,14 +306,10 @@ oauthv2accesstoken.\{policy\_name\}.status
 
 Authorization code variables
 
-
-
 </td>
 <td valign="top">
 
 These variables are populated when the <AuthorizationCode\> operation executes
-
-
 
 </td>
 <td valign="top">
@@ -408,8 +334,6 @@ oauthv2authcode.\{policy\_name\}.id
 
 oauthv2authcode.\{policy\_name\}.\{auth\_code\_custom\_attribute\_name\}
 
-
-
 </td>
 </tr>
 <tr>
@@ -417,14 +341,10 @@ oauthv2authcode.\{policy\_name\}.\{auth\_code\_custom\_attribute\_name\}
 
 Refresh token variables
 
-
-
 </td>
 <td valign="top">
 
 These variables are populated when the <RefreshToken\> operation executes
-
-
 
 </td>
 <td valign="top">
@@ -454,8 +374,6 @@ oauthv2refreshtoken.\{policy\_name\}.developer.app.name
 oauthv2refreshtoken.\{policy\_name\}.developer.app.id
 
 oauthv2refreshtoken.\{policy\_name\}.accesstoken.\{custom\_attribute\_name\}
-
-
 
 </td>
 </tr>

@@ -41,14 +41,10 @@ The Content Modifier *Keep order header* stores the order ID as exchange pro
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -57,14 +53,10 @@ Value
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 orderNumber
-
-
 
 </td>
 </tr>
@@ -73,14 +65,10 @@ orderNumber
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 </tr>
@@ -89,14 +77,10 @@ XPath
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
-
-
 
 </td>
 </tr>
@@ -105,14 +89,10 @@ java.lang.String
 
 Value
 
-
-
 </td>
 <td valign="top">
 
 string\(//@PurchaseOrderNumber\)
-
-
 
 </td>
 </tr>
@@ -127,14 +107,10 @@ At the receiver side, the scenario uses an XI receiver adapter. On the *Delive
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -143,14 +119,10 @@ Setting
 
 *XI Message ID Determination*
 
-
-
 </td>
 <td valign="top">
 
 Map
-
-
 
 </td>
 </tr>
@@ -159,14 +131,10 @@ Map
 
 *Source for XI Message ID*
 
-
-
 </td>
 <td valign="top">
 
 $\{property.orderNumber\}
-
-
 
 </td>
 </tr>
@@ -175,14 +143,10 @@ $\{property.orderNumber\}
 
 *Quality Of Service* 
 
-
-
 </td>
 <td valign="top">
 
 Exactly Once
-
-
 
 </td>
 </tr>
@@ -191,14 +155,10 @@ Exactly Once
 
 *Temporary Storage*
 
-
-
 </td>
 <td valign="top">
 
 Either Data Store or JMS Queue
-
-
 
 </td>
 </tr>
@@ -226,15 +186,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -242,15 +198,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     OWN
-
-
     
     </td>
     </tr>
@@ -258,15 +210,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     User
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -274,15 +222,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     Password
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

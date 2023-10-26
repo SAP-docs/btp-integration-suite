@@ -38,14 +38,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -54,14 +50,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -78,14 +70,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -93,8 +81,6 @@ Description
 <td valign="top">
 
 *Address*
-
-
 
 </td>
 <td valign="top">
@@ -126,8 +112,6 @@ Example \(to connect to Yahoo mail server\):
 
 *Proxy Type*
 
-
-
 </td>
 <td valign="top">
 
@@ -139,8 +123,6 @@ Select *On-Premise* if you’re connecting to an on-premise mail server.
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -148,14 +130,10 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 
 *Location ID* \(only if *On-Premise* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to a cloud connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side.
-
-
 
 </td>
 </tr>
@@ -164,8 +142,6 @@ To connect to a cloud connector instance associated with your account, enter the
 
 *Timeout \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
@@ -173,16 +149,12 @@ Specifies the network timeout for the connection attempt to the server.
 
 The default value is 30000. The timeout must be larger than 0, but less than five minutes.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Protection*
-
-
 
 </td>
 <td valign="top">
@@ -219,8 +191,6 @@ Defines whether encryption is used. The possible values are:
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -260,16 +230,12 @@ Specifies which mechanism is used to authenticate against the server with a user
 
 *Credential Name* \(only if *Plain User Name/Password* or *Encrypted User/Password* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the name of a deployed credential to use for authentication.
 
 More information: [Deploying a User Credentials Artifact](../Operations/deploying-a-user-credentials-artifact-6912d63.md)
-
-
 
 </td>
 </tr>
@@ -286,14 +252,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -302,14 +264,10 @@ Description
 
 *From*
 
-
-
 </td>
 <td valign="top">
 
 E-mail address that the message comes from.
-
-
 
 </td>
 </tr>
@@ -317,8 +275,6 @@ E-mail address that the message comes from.
 <td valign="top">
 
 *To*
-
-
 
 </td>
 <td valign="top">
@@ -329,16 +285,12 @@ If you want to configure multiple mail receivers, use a comma \(`,`\) to separat
 
 Example: `name1@example.com, name2@example.com, name3@example.com` 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Cc*
-
-
 
 </td>
 <td valign="top">
@@ -351,16 +303,12 @@ If you want to configure multiple mail receivers, use a comma \(`,`\) to separat
 
 Example: `name1@example.com, name2@example.com, name3@example.com` 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Bcc*
-
-
 
 </td>
 <td valign="top">
@@ -373,8 +321,6 @@ If you want to configure multiple mail receivers, use a comma \(`,`\) to separat
 
 Example: `name1@example.com, name2@example.com, name3@example.com` 
 
-
-
 </td>
 </tr>
 <tr>
@@ -382,14 +328,10 @@ Example: `name1@example.com, name2@example.com, name3@example.com`
 
 *Subject*
 
-
-
 </td>
 <td valign="top">
 
 Subject of the e-mail message.
-
-
 
 </td>
 </tr>
@@ -397,8 +339,6 @@ Subject of the e-mail message.
 <td valign="top">
 
 *Mail Body*
-
-
 
 </td>
 <td valign="top">
@@ -411,16 +351,12 @@ As default entry, the following expression is set:
 
 If you keep the default setting, the message body \(as determined by this dynamic expression\) is sent to the receiver.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Body MIME Type*
-
-
 
 </td>
 <td valign="top">
@@ -455,8 +391,6 @@ You can select from the following MIME types:
 
 *Body Encoding*
 
-
-
 </td>
 <td valign="top">
 
@@ -482,14 +416,10 @@ You can select from the following encodings:
 
 *Name* \(under *Mail Attachments*\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the file name of the attachment.
-
-
 
 </td>
 </tr>
@@ -497,8 +427,6 @@ Specifies the file name of the attachment.
 <td valign="top">
 
 *MIME Type* \(under *Attachments*\)
-
-
 
 </td>
 <td valign="top">
@@ -533,8 +461,6 @@ You can select from the following MIME types:
 
 *Source* \(under *Attachments*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -558,14 +484,10 @@ Specifies the source of the data.
 
 *Header Name* \(under *Attachments*\)
 
-
-
 </td>
 <td valign="top">
 
 If the source is *Header*, this parameter specifies the name of the header that is attached.
-
-
 
 </td>
 </tr>
@@ -574,14 +496,10 @@ If the source is *Header*, this parameter specifies the name of the header that 
 
 *Add Message Attachments* \(under *Attachments*\)
 
-
-
 </td>
 <td valign="top">
 
 Select this option to add all attachments contained in the message exchange to the e-mail.
-
-
 
 </td>
 </tr>
@@ -589,8 +507,6 @@ Select this option to add all attachments contained in the message exchange to t
 <td valign="top">
 
 *Content Transfer Encoding*
-
-
 
 </td>
 <td valign="top">
@@ -632,14 +548,10 @@ Select the *Security* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -647,8 +559,6 @@ Description
 <td valign="top">
 
 *Signature and Encryption Type* 
-
-
 
 </td>
 <td valign="top">
@@ -674,8 +584,6 @@ You can choose between the following types:
 <td valign="top">
 
 *SIGNATURE* parameters \(only if for *Signature and Encryption Type* the option *S/MIME Signature* or *S/MIME Signature and Encryption* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -711,8 +619,6 @@ Under *Signer Parameters*, add the reference to one or multiple private keys tha
 <td valign="top">
 
 *ENCRYPTION* parameters \(only if for *Signature and Encryption Type* the option *S/MIME Encryption* or *S/MIME Signature and Encryption* is selected\)
-
-
 
 </td>
 <td valign="top">

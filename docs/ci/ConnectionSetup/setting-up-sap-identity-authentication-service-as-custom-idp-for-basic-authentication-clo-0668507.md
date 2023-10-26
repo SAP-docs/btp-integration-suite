@@ -67,14 +67,10 @@ To make sure to switch back to SAP ID service, use the following settings for th
 
 Operation
 
-
-
 </td>
 <td valign="top">
 
 PATCH
-
-
 
 </td>
 </tr>
@@ -82,8 +78,6 @@ PATCH
 <td valign="top">
 
 URL
-
-
 
 </td>
 <td valign="top">
@@ -94,8 +88,6 @@ Example
 
 `https://api.authentication.sap.hana.ondemand.com/sap/rest/authorization/v2/securitySettings`
 
-
-
 </td>
 </tr>
 <tr>
@@ -103,14 +95,10 @@ Example
 
 Authorization
 
-
-
 </td>
 <td valign="top">
 
 Bearer Token
-
-
 
 </td>
 </tr>
@@ -119,14 +107,10 @@ Bearer Token
 
 Token
 
-
-
 </td>
 <td valign="top">
 
 Value retrieved from previous step as described in SAP Community blog: [Cloud Integration: Enable SAP IAS \(Identity Authentication Service\) as Custom IdP for Basic Inbound Authentication in Cloud Foundry Environment](https://blogs.sap.com/2021/05/25/enable-sap-ias-identity-authentication-service-as-custom-idp-for-basic-inbound-authentication-on-cloud-integration-cloud-foundry/) 
-
-
 
 </td>
 </tr>
@@ -135,14 +119,10 @@ Value retrieved from previous step as described in SAP Community blog: [Cloud In
 
 Header
 
-
-
 </td>
 <td valign="top">
 
 Content-Type with value as application/json
-
-
 
 </td>
 </tr>
@@ -150,8 +130,6 @@ Content-Type with value as application/json
 <td valign="top">
 
 Body
-
-
 
 </td>
 <td valign="top">

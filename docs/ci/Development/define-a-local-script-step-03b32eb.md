@@ -23,14 +23,10 @@ Groovy Script and JavaScript are supported with the following versions.
 
 Software
 
-
-
 </th>
 <th valign="top">
 
 Version
-
-
 
 </th>
 </tr>
@@ -39,14 +35,10 @@ Version
 
 Groovy Runtime
 
-
-
 </td>
 <td valign="top">
 
 2.4.12
-
-
 
 </td>
 </tr>
@@ -55,14 +47,10 @@ Groovy Runtime
 
 JavaScript Engine \(Rhino\)
 
-
-
 </td>
 <td valign="top">
 
 1.7 R4
-
-
 
 </td>
 </tr>

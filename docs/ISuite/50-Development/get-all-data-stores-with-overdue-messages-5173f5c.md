@@ -13,21 +13,15 @@ To get data stores that contain overdue messages, perform the following call:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Purpose
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `​/DataStores?overdueonly=true` 
 
-
-
 </td>
 <td valign="top">
 
 Gets all data stores that contain overdue messages.
-
-
 
 </td>
 </tr>

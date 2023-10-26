@@ -30,15 +30,11 @@ You’re assigned the admin role.
     <th valign="top">
 
     Field Name
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -46,15 +42,11 @@ You’re assigned the admin role.
     <td valign="top">
     
     **Name**
-
-
     
     </td>
     <td valign="top">
     
     Key value map name
-
-
     
     </td>
     </tr>
@@ -62,15 +54,11 @@ You’re assigned the admin role.
     <td valign="top">
     
     **Encrypted**
-
-
     
     </td>
     <td valign="top">
     
     Select this checkbox if you want to encrypt the values.
-
-
     
     </td>
     </tr>
@@ -78,8 +66,6 @@ You’re assigned the admin role.
     <td valign="top">
     
     **Key**
-
-
     
     </td>
     <td valign="top">
@@ -97,15 +83,11 @@ You’re assigned the admin role.
     <td valign="top">
     
     **Value**
-
-
     
     </td>
     <td valign="top">
     
     Value for the key
-
-
     
     </td>
     </tr>

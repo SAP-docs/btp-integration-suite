@@ -40,21 +40,15 @@ When using SAP Cloud Integration with an SAP BTP trial account, the following la
 
 Region / SAP Cloud Integration Domain
 
-
-
 </th>
 <th valign="top">
 
 IPs for outbound requests from SAP Cloud Integration
 
-
-
 </th>
 <th valign="top">
 
 Load balancer IPs for inbound requests to SAP Cloud Integration
-
-
 
 </th>
 </tr>
@@ -62,8 +56,6 @@ Load balancer IPs for inbound requests to SAP Cloud Integration
 <td valign="top">
 
 \*.eu10-001.hana.ondemand.com
-
-
 
 </td>
 <td valign="top">
@@ -122,8 +114,6 @@ Load balancer IPs for inbound requests to SAP Cloud Integration
 
 18.195.153.225
 
-
-
 </td>
 <td valign="top">
 
@@ -133,16 +123,12 @@ Load balancer IPs for inbound requests to SAP Cloud Integration
 
 3.124.200.210
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 \*.eu10-002.hana.ondemand.com
-
-
 
 </td>
 <td valign="top">
@@ -165,8 +151,6 @@ Load balancer IPs for inbound requests to SAP Cloud Integration
 
 3.66.249.150
 
-
-
 </td>
 <td valign="top">
 
@@ -176,16 +160,12 @@ Load balancer IPs for inbound requests to SAP Cloud Integration
 
 18.193.180.19
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 \*.us10.hana.ondemand.com
-
-
 
 </td>
 <td valign="top">
@@ -244,8 +224,6 @@ Load balancer IPs for inbound requests to SAP Cloud Integration
 
 54.221.30.9
 
-
-
 </td>
 <td valign="top">
 
@@ -255,16 +233,12 @@ Load balancer IPs for inbound requests to SAP Cloud Integration
 
 52.23.1.211
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 \*.us10-001.hana.ondemand.com
-
-
 
 </td>
 <td valign="top">
@@ -287,14 +261,10 @@ Load balancer IPs for inbound requests to SAP Cloud Integration
 
 34.238.1.234
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -302,8 +272,6 @@ Load balancer IPs for inbound requests to SAP Cloud Integration
 <td valign="top">
 
 \*.ap21.hana.ondemand.com
-
-
 
 </td>
 <td valign="top">
@@ -332,14 +300,10 @@ Load balancer IPs for inbound requests to SAP Cloud Integration
 
 20.191.154.193
 
-
-
 </td>
 <td valign="top">
 
 20.184.61.122
-
-
 
 </td>
 </tr>

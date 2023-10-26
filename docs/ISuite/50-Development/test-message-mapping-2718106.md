@@ -23,7 +23,7 @@ When you create message mappings, you need to check whether or not they function
 
 ## Procedure
 
-1.  Choose *Integrations* \> *Design*.
+1.  Choose *Design* \> *Integrations and APIs*.
 
 2.  Open your integration flow and select *Edit*.
 

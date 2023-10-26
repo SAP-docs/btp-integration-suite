@@ -24,14 +24,10 @@ The following patch release information covers the most recent changes made to t
 > 
 > Software Version
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Description
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -40,14 +36,10 @@ The following patch release information covers the most recent changes made to t
 > 
 > 6.20.12
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Bugfix C
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -56,14 +48,10 @@ The following patch release information covers the most recent changes made to t
 > 
 > 6.20.11
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Bugfix B
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -72,14 +60,10 @@ The following patch release information covers the most recent changes made to t
 > 
 > 6.20.10
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Bugfix A
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -104,21 +88,15 @@ The following patch release information covers the most recent changes made to t
 
 Technical Component
 
-
-
 </th>
 <th valign="top">
 
 Software Version
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -127,21 +105,15 @@ Description
 
 Integration Suite
 
-
-
 </td>
 <td valign="top">
 
 3.37.3
 
-
-
 </td>
 <td valign="top">
 
 The SAP Integration Suite landing page \(launchpad\) and provisioning application showed blank page for customers with Japanese as browser language preference. This patch fixes the issue.
-
-
 
 </td>
 </tr>

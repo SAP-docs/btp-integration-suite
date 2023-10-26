@@ -13,28 +13,20 @@ The following table summarizes for each product type the available operations an
 
 Product Type
 
-
-
 </th>
 <th valign="top">
 
 Operation Details
-
-
 
 </th>
 <th valign="top">
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,28 +35,20 @@ Description
 
 Splunk Cloud Platform
 
-
-
 </td>
 <td valign="top" rowspan="4">
 
 Delete
-
-
 
 </td>
 <td valign="top">
 
 Delete Data Model
 
-
-
 </td>
 <td valign="top">
 
 Deletes specific data model.
-
-
 
 </td>
 </tr>
@@ -73,14 +57,10 @@ Deletes specific data model.
 
 Delete Saved Search
 
-
-
 </td>
 <td valign="top">
 
 Deletes saved search by username and search name.
-
-
 
 </td>
 </tr>
@@ -89,14 +69,10 @@ Deletes saved search by username and search name.
 
 Remove Index
 
-
-
 </td>
 <td valign="top">
 
 Removes index by index name.
-
-
 
 </td>
 </tr>
@@ -105,14 +81,10 @@ Removes index by index name.
 
 Remove Input
 
-
-
 </td>
 <td valign="top">
 
 Deletes token based on username and input name.
-
-
 
 </td>
 </tr>
@@ -121,21 +93,15 @@ Deletes token based on username and input name.
 
 Patch
 
-
-
 </td>
 <td valign="top">
 
 Modify Index
 
-
-
 </td>
 <td valign="top">
 
 Modifies index and index properties such like size of the index, size of the buckets, frozen path and frozenTimePeriodInSecs, and so forth.
-
-
 
 </td>
 </tr>
@@ -144,21 +110,15 @@ Modifies index and index properties such like size of the index, size of the buc
 
 Post
 
-
-
 </td>
 <td valign="top">
 
 Create Data Model
 
-
-
 </td>
 <td valign="top">
 
 Creates new data model.
-
-
 
 </td>
 </tr>
@@ -166,8 +126,6 @@ Creates new data model.
 <td valign="top">
 
 Create Index
-
-
 
 </td>
 <td valign="top">
@@ -176,8 +134,6 @@ Creates new index.
 
 The index is the repository for Splunk Cloud Platform data. Splunk Cloud Platform transforms incoming data into events and stores them in indexes. It furthermore processes events in indexes. An index consists of a collection of subdirectories, called buckets.
 
-
-
 </td>
 </tr>
 <tr>
@@ -185,14 +141,10 @@ The index is the repository for Splunk Cloud Platform data. Splunk Cloud Platfor
 
 Create Input
 
-
-
 </td>
 <td valign="top">
 
 Creates input by modifying global configuration.
-
-
 
 </td>
 </tr>
@@ -201,14 +153,10 @@ Creates input by modifying global configuration.
 
 Create Saved Search
 
-
-
 </td>
 <td valign="top">
 
 Saves a search as alert and report in Splunk Cloud Platform.
-
-
 
 </td>
 </tr>
@@ -217,14 +165,10 @@ Saves a search as alert and report in Splunk Cloud Platform.
 
 Edit Saved Search Permissions
 
-
-
 </td>
 <td valign="top">
 
 Sets permissions for named saved search.
-
-
 
 </td>
 </tr>
@@ -233,14 +177,10 @@ Sets permissions for named saved search.
 
 Get Input
 
-
-
 </td>
 <td valign="top">
 
 Gets the details of a specific input by username and input name.
-
-
 
 </td>
 </tr>
@@ -249,14 +189,10 @@ Gets the details of a specific input by username and input name.
 
 Modify Data Model
 
-
-
 </td>
 <td valign="top">
 
 Updates a specific data model.
-
-
 
 </td>
 </tr>
@@ -264,8 +200,6 @@ Updates a specific data model.
 <td valign="top">
 
 Modify Input
-
-
 
 </td>
 <td valign="top">
@@ -274,8 +208,6 @@ Updates token configuration information.
 
 This operation helps you to modify the token Generated \(Enable, Disable\), Change Configurations and returns the attributes of the token.
 
-
-
 </td>
 </tr>
 <tr>
@@ -283,14 +215,10 @@ This operation helps you to modify the token Generated \(Enable, Disable\), Chan
 
 Modify Saved Search Properties
 
-
-
 </td>
 <td valign="top">
 
 Modifies the saved search properties like Report description, Report permissions, Report schedule time, Schedule Priority, Time range, Trigger actions and alert description, alert permissions, alert type, trigger conditions, trigger actions.
-
-
 
 </td>
 </tr>
@@ -299,14 +227,10 @@ Modifies the saved search properties like Report description, Report permissions
 
 Run One Shot Search
 
-
-
 </td>
 <td valign="top">
 
 Starts a new search and returns the search ID \(<sid\>\) by providing username, search query and execution mode.
-
-
 
 </td>
 </tr>
@@ -315,14 +239,10 @@ Starts a new search and returns the search ID \(<sid\>\) by providing username, 
 
 Run Saved Search
 
-
-
 </td>
 <td valign="top">
 
 Runs a saved search using username and search name.
-
-
 
 </td>
 </tr>
@@ -331,21 +251,15 @@ Runs a saved search using username and search name.
 
 Query
 
-
-
 </td>
 <td valign="top">
 
 Get Applications
 
-
-
 </td>
 <td valign="top">
 
 Lists installed apps and properties.
-
-
 
 </td>
 </tr>
@@ -354,14 +268,10 @@ Lists installed apps and properties.
 
 Get Data Model
 
-
-
 </td>
 <td valign="top">
 
 Accesses a specific data model. This method helps you to get the details of a data model using the model name.
-
-
 
 </td>
 </tr>
@@ -370,14 +280,10 @@ Accesses a specific data model. This method helps you to get the details of a da
 
 Get Data Models
 
-
-
 </td>
 <td valign="top">
 
 Lists all data models on the server.
-
-
 
 </td>
 </tr>
@@ -386,14 +292,10 @@ Lists all data models on the server.
 
 Get Index
 
-
-
 </td>
 <td valign="top">
 
 Accesses related information about the index. Provides the details of an index.
-
-
 
 </td>
 </tr>
@@ -402,14 +304,10 @@ Accesses related information about the index. Provides the details of an index.
 
 Get Indexes
 
-
-
 </td>
 <td valign="top">
 
 Gets list of the recognized indexes on the server. Request is Datatype and responds with Data Size, Hot buckets, Cold Buckets, Frozen Buckets, and so forth.
-
-
 
 </td>
 </tr>
@@ -418,14 +316,10 @@ Gets list of the recognized indexes on the server. Request is Datatype and respo
 
 Get Inputs
 
-
-
 </td>
 <td valign="top">
 
 Lists all inputs, including modular inputs.
-
-
 
 </td>
 </tr>
@@ -434,14 +328,10 @@ Lists all inputs, including modular inputs.
 
 Get Jobs
 
-
-
 </td>
 <td valign="top">
 
 Gets details of all current searches.
-
-
 
 </td>
 </tr>
@@ -450,14 +340,10 @@ Gets details of all current searches.
 
 Get Saved Search
 
-
-
 </td>
 <td valign="top">
 
 Gets the details of Saved Searches, Parameters like Earliest Time, Latest Time, Default Arguments, and so forth.
-
-
 
 </td>
 </tr>
@@ -466,14 +352,10 @@ Gets the details of Saved Searches, Parameters like Earliest Time, Latest Time, 
 
 Get Saved Search History
 
-
-
 </td>
 <td valign="top">
 
 Lists available search jobs created from the \{name\} saved search.
-
-
 
 </td>
 </tr>
@@ -482,14 +364,10 @@ Lists available search jobs created from the \{name\} saved search.
 
 Run Blocking Search
 
-
-
 </td>
 <td valign="top">
 
 Gets information about the search job.
-
-
 
 </td>
 </tr>
@@ -498,14 +376,10 @@ Gets information about the search job.
 
 View Named Saved Search
 
-
-
 </td>
 <td valign="top">
 
 Views the saved search properties like Report description, Report permissions, Report schedule time, Schedule Priority, Time range, Trigger actions and alert description, alert permissions, alert type, trigger conditions and trigger actions.
-
-
 
 </td>
 </tr>
@@ -514,28 +388,20 @@ Views the saved search properties like Report description, Report permissions, R
 
 Splunk Enterprise
 
-
-
 </td>
 <td valign="top" rowspan="4">
 
 Delete
-
-
 
 </td>
 <td valign="top">
 
 Delete Data Model
 
-
-
 </td>
 <td valign="top">
 
 Deletes specific data model.
-
-
 
 </td>
 </tr>
@@ -544,14 +410,10 @@ Deletes specific data model.
 
 Delete Saved Search
 
-
-
 </td>
 <td valign="top">
 
 Deletes saved search by username and search name.
-
-
 
 </td>
 </tr>
@@ -560,14 +422,10 @@ Deletes saved search by username and search name.
 
 Remove Index
 
-
-
 </td>
 <td valign="top">
 
 Removes index by index name.
-
-
 
 </td>
 </tr>
@@ -576,14 +434,10 @@ Removes index by index name.
 
 Remove Input
 
-
-
 </td>
 <td valign="top">
 
 Deletes token based on username and input name.
-
-
 
 </td>
 </tr>
@@ -592,21 +446,15 @@ Deletes token based on username and input name.
 
 Post
 
-
-
 </td>
 <td valign="top">
 
 Add Data to Index
 
-
-
 </td>
 <td valign="top">
 
 Adds data to index by providing token and event.
-
-
 
 </td>
 </tr>
@@ -615,14 +463,10 @@ Adds data to index by providing token and event.
 
 Add Data to TCP Input
 
-
-
 </td>
 <td valign="top">
 
 Updates the container for managing data by providing username and port no.
-
-
 
 </td>
 </tr>
@@ -631,14 +475,10 @@ Updates the container for managing data by providing username and port no.
 
 Add Data to UDP Input
 
-
-
 </td>
 <td valign="top">
 
 Edits properties of the named UDP data input by providing username and port no.
-
-
 
 </td>
 </tr>
@@ -647,14 +487,10 @@ Edits properties of the named UDP data input by providing username and port no.
 
 Create Data Model
 
-
-
 </td>
 <td valign="top">
 
 Creates new data model.
-
-
 
 </td>
 </tr>
@@ -663,16 +499,12 @@ Creates new data model.
 
 Create Index
 
-
-
 </td>
 <td valign="top">
 
 Creates new index.
 
 The index is the repository for Splunk Enterprise data. Splunk Enterprise transforms incoming data into events and stores them in indexes. It furthermore processes events in indexes. An index consists of a collection of subdirectories, called buckets.
-
-
 
 </td>
 </tr>
@@ -681,14 +513,10 @@ The index is the repository for Splunk Enterprise data. Splunk Enterprise transf
 
 Create Input
 
-
-
 </td>
 <td valign="top">
 
 Creates input by modifying global configuration.
-
-
 
 </td>
 </tr>
@@ -697,14 +525,10 @@ Creates input by modifying global configuration.
 
 Create Saved Search
 
-
-
 </td>
 <td valign="top">
 
 Saves a search as alert and report in Splunk Enterprise.
-
-
 
 </td>
 </tr>
@@ -713,14 +537,10 @@ Saves a search as alert and report in Splunk Enterprise.
 
 Edit Saved Search Permissions
 
-
-
 </td>
 <td valign="top">
 
 Sets permissions for named saved search.
-
-
 
 </td>
 </tr>
@@ -729,14 +549,10 @@ Sets permissions for named saved search.
 
 Enable Global Settings
 
-
-
 </td>
 <td valign="top">
 
 Enables global settings for inputs. Specify value 0 or 1 to disable or enable it.
-
-
 
 </td>
 </tr>
@@ -745,14 +561,10 @@ Enables global settings for inputs. Specify value 0 or 1 to disable or enable it
 
 Modify Data Model
 
-
-
 </td>
 <td valign="top">
 
 Updates specific data model
-
-
 
 </td>
 </tr>
@@ -761,14 +573,10 @@ Updates specific data model
 
 Modify Index
 
-
-
 </td>
 <td valign="top">
 
 Modifies index and index properties such like size of the index, size of the buckets, frozen path and frozenTimePeriodInSecs, and so forth.
-
-
 
 </td>
 </tr>
@@ -777,14 +585,10 @@ Modifies index and index properties such like size of the index, size of the buc
 
 Modify Input
 
-
-
 </td>
 <td valign="top">
 
 Updates token configuration information. This operation helps you to modify the token Generated \(Enable, Disable\), Change Configurations and returns the attributes of the token.
-
-
 
 </td>
 </tr>
@@ -793,14 +597,10 @@ Updates token configuration information. This operation helps you to modify the 
 
 Modify Saved Search Properties
 
-
-
 </td>
 <td valign="top">
 
 Modifies the saved search properties like Report description, Report permissions, Report schedule time, Schedule Priority, Time range, Trigger actions and alert description, alert permissions, alert type, trigger conditions, trigger actions.
-
-
 
 </td>
 </tr>
@@ -809,14 +609,10 @@ Modifies the saved search properties like Report description, Report permissions
 
 Run One Shot Search
 
-
-
 </td>
 <td valign="top">
 
 Starts a new search and returns the search ID \(<sid\>\) by providing username, search query and execution mode.
-
-
 
 </td>
 </tr>
@@ -825,14 +621,10 @@ Starts a new search and returns the search ID \(<sid\>\) by providing username, 
 
 Run Saved Search
 
-
-
 </td>
 <td valign="top">
 
 Runs a saved search using username and search name.
-
-
 
 </td>
 </tr>
@@ -841,21 +633,15 @@ Runs a saved search using username and search name.
 
 Query
 
-
-
 </td>
 <td valign="top">
 
 Get Applications
 
-
-
 </td>
 <td valign="top">
 
 Lists installed apps and properties.
-
-
 
 </td>
 </tr>
@@ -864,14 +650,10 @@ Lists installed apps and properties.
 
 Get Data Model
 
-
-
 </td>
 <td valign="top">
 
 Accesses a specific data model. This method helps you to get the details of a data model by providing the model name.
-
-
 
 </td>
 </tr>
@@ -880,14 +662,10 @@ Accesses a specific data model. This method helps you to get the details of a da
 
 Get Data Models
 
-
-
 </td>
 <td valign="top">
 
 Lists all data models on the server.
-
-
 
 </td>
 </tr>
@@ -896,14 +674,10 @@ Lists all data models on the server.
 
 Get Index
 
-
-
 </td>
 <td valign="top">
 
 Accesses related information about the index. Provides the details of an index.
-
-
 
 </td>
 </tr>
@@ -912,14 +686,10 @@ Accesses related information about the index. Provides the details of an index.
 
 Get Indexes
 
-
-
 </td>
 <td valign="top">
 
 Gets list of the recognized indexes on the server. Request is Datatype and responds with Data Size, Hot buckets, Cold Buckets, Frozen Buckets, and so forth.
-
-
 
 </td>
 </tr>
@@ -928,14 +698,10 @@ Gets list of the recognized indexes on the server. Request is Datatype and respo
 
 Get Input
 
-
-
 </td>
 <td valign="top">
 
 Gets the details of a specific Input by username and input name.
-
-
 
 </td>
 </tr>
@@ -944,14 +710,10 @@ Gets the details of a specific Input by username and input name.
 
 Get Inputs
 
-
-
 </td>
 <td valign="top">
 
 Lists all inputs, including modular inputs.
-
-
 
 </td>
 </tr>
@@ -960,14 +722,10 @@ Lists all inputs, including modular inputs.
 
 Get Jobs
 
-
-
 </td>
 <td valign="top">
 
 Gets details of all current searches.
-
-
 
 </td>
 </tr>
@@ -976,14 +734,10 @@ Gets details of all current searches.
 
 Get Saved Search
 
-
-
 </td>
 <td valign="top">
 
 Gets the details of Saved Searches, Parameters like Earliest Time, Latest Time, Default Arguments, and so forth.
-
-
 
 </td>
 </tr>
@@ -992,14 +746,10 @@ Gets the details of Saved Searches, Parameters like Earliest Time, Latest Time, 
 
 Get Saved Search History
 
-
-
 </td>
 <td valign="top">
 
 Lists available search jobs created from the \{name\} saved search.
-
-
 
 </td>
 </tr>
@@ -1008,14 +758,10 @@ Lists available search jobs created from the \{name\} saved search.
 
 Run Blocking Search
 
-
-
 </td>
 <td valign="top">
 
 Gets information about the search job.
-
-
 
 </td>
 </tr>
@@ -1024,14 +770,10 @@ Gets information about the search job.
 
 View Named Saved Search
 
-
-
 </td>
 <td valign="top">
 
 Views the saved search properties like Report description, Report permissions, Report schedule time, Schedule Priority, Time range, Trigger actions and alert description, alert permissions, alert type, trigger conditions and trigger actions.
-
-
 
 </td>
 </tr>

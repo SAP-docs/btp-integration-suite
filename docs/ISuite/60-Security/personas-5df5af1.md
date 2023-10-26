@@ -13,21 +13,15 @@ For more information about the available roles to grant permission to accomplish
 
 Persona
 
-
-
 </th>
 <th valign="top">
 
 Role Collection
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,14 +30,10 @@ Description
 
 Business Domain Expert
 
-
-
 </td>
 <td valign="top">
 
 INTAS\_BusinessDomainExpert
-
-
 
 </td>
 <td valign="top">
@@ -64,14 +54,10 @@ INTAS\_BusinessDomainExpert
 
 Integration Architect
 
-
-
 </td>
 <td valign="top">
 
 INTAS\_IntegrationArchitect
-
-
 
 </td>
 <td valign="top">
@@ -92,14 +78,10 @@ INTAS\_IntegrationArchitect
 
 Enterprise Architect
 
-
-
 </td>
 <td valign="top">
 
 INTAS\_EnterpriseArchitect
-
-
 
 </td>
 <td valign="top">
@@ -126,14 +108,10 @@ INTAS\_EnterpriseArchitect
 
 Administrator
 
-
-
 </td>
 <td valign="top">
 
 INTAS\_Administrator
-
-
 
 </td>
 <td valign="top">
@@ -158,14 +136,10 @@ INTAS\_Administrator
 
 View Only
 
-
-
 </td>
 <td valign="top">
 
 INTAS\_ViewOnly
-
-
 
 </td>
 <td valign="top">

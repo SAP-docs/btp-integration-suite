@@ -11,14 +11,10 @@ From API Management, a variety of APIs are offered as services in specific use c
 
 Services
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -27,14 +23,10 @@ Description
 
 API Portal
 
-
-
 </td>
 <td valign="top">
 
 You can browse through this API package for API Admin services with the required resources.
-
-
 
 </td>
 </tr>
@@ -43,14 +35,10 @@ You can browse through this API package for API Admin services with the required
 
 API business hub enterprise 
 
-
-
 </td>
 <td valign="top">
 
 You can browse through this API package for application developer services that are offered.
-
-
 
 </td>
 </tr>
@@ -59,14 +47,10 @@ You can browse through this API package for application developer services that 
 
 Metering
 
-
-
 </td>
 <td valign="top">
 
 You can now browse through this API package to view metering data for APIs, API Products, and applications in API Portal.
-
-
 
 </td>
 </tr>
@@ -74,8 +58,6 @@ You can now browse through this API package to view metering data for APIs, API 
 <td valign="top">
 
 Client SDK
-
-
 
 </td>
 <td valign="top">
@@ -87,8 +69,6 @@ In the API Portal, at the top-right corner, choose *Navigation Links* \(![](imag
 For more information, see [SAP API Management, 1.5.0 Client SDK](https://help.sap.com/doc/sap-api-management-client-sdk/Cloud/en-US/SAP%20API%20Management%20Cloud%20SDK_1.5.0%20.pdf).
 
 You can also download the package from [https://mvnrepository.com/artifact/com.sap.apimgmt.client.sdk/apim-client-sdk](https://mvnrepository.com/artifact/com.sap.apimgmt.client.sdk/apim-client-sdk). On navigating to this link, select the latest version and choose *View All*.
-
-
 
 </td>
 </tr>

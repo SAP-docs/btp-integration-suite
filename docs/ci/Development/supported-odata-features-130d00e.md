@@ -18,14 +18,10 @@ The following operations are supported when developing an OData API in the Cloud
 
 OData Operation
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -34,14 +30,10 @@ Description
 
 Create
 
-
-
 </td>
 <td valign="top">
 
 Maps to HTTP POST method
-
-
 
 </td>
 </tr>
@@ -50,14 +42,10 @@ Maps to HTTP POST method
 
 Read
 
-
-
 </td>
 <td valign="top">
 
 Maps to HTTP GET method
-
-
 
 </td>
 </tr>
@@ -66,14 +54,10 @@ Maps to HTTP GET method
 
 Update
 
-
-
 </td>
 <td valign="top">
 
 Maps to HTTP PUT method
-
-
 
 </td>
 </tr>
@@ -82,14 +66,10 @@ Maps to HTTP PUT method
 
 Delete
 
-
-
 </td>
 <td valign="top">
 
 Maps to HTTP DELETE method
-
-
 
 </td>
 </tr>
@@ -98,14 +78,10 @@ Maps to HTTP DELETE method
 
 Query
 
-
-
 </td>
 <td valign="top">
 
 Maps to HTTP GET method
-
-
 
 </td>
 </tr>
@@ -113,8 +89,6 @@ Maps to HTTP GET method
 <td valign="top">
 
 Function Imports
-
-
 
 </td>
 <td valign="top">
@@ -150,14 +124,10 @@ The following system query options are supported when calling an OData API devel
 
 OData System Query Option
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -166,14 +136,10 @@ Description
 
 $select
 
-
-
 </td>
 <td valign="top">
 
 Specifies a subset of properties to return.
-
-
 
 </td>
 </tr>
@@ -182,14 +148,10 @@ Specifies a subset of properties to return.
 
 $top
 
-
-
 </td>
 <td valign="top">
 
 Determines the maximum number of records to return.
-
-
 
 </td>
 </tr>
@@ -198,14 +160,10 @@ Determines the maximum number of records to return.
 
 $skip
 
-
-
 </td>
 <td valign="top">
 
 Sets the number of records to skip before it retrieves records in a collection.
-
-
 
 </td>
 </tr>
@@ -214,14 +172,10 @@ Sets the number of records to skip before it retrieves records in a collection.
 
 $filter
 
-
-
 </td>
 <td valign="top">
 
 Specifies an expression or function that must evaluate to **true** for a record to be returned in the collection.
-
-
 
 </td>
 </tr>
@@ -230,14 +184,10 @@ Specifies an expression or function that must evaluate to **true** for a record 
 
 $count
 
-
-
 </td>
 <td valign="top">
 
 Returns the number of records in a collection.
-
-
 
 </td>
 </tr>
@@ -246,14 +196,10 @@ Returns the number of records in a collection.
 
 $orderby
 
-
-
 </td>
 <td valign="top">
 
 Determines which values are used to order a collection of records.
-
-
 
 </td>
 </tr>
@@ -262,14 +208,10 @@ Determines which values are used to order a collection of records.
 
 $expand
 
-
-
 </td>
 <td valign="top">
 
 Specifies that related records must be retrieved in line with the record or collection being retrieved. For example, you can use $expand to retrieve a customer and all orders placed by that customer in a single query.
-
-
 
 </td>
 </tr>
@@ -278,16 +220,12 @@ Specifies that related records must be retrieved in line with the record or coll
 
 $inlinecount
 
-
-
 </td>
 <td valign="top">
 
 Specifies that the response must contain a number of records in the collection of entries identified by the resource path section of the URI.
 
 Message property must be an Integer value. This value is returned in the response.
-
-
 
 </td>
 </tr>
@@ -296,14 +234,10 @@ Message property must be an Integer value. This value is returned in the respons
 
 $format
 
-
-
 </td>
 <td valign="top">
 
 Specifies that a response to the request must be in the format specified by this query option.
-
-
 
 </td>
 </tr>

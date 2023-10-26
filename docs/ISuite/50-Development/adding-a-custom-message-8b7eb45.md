@@ -8,7 +8,7 @@
 
 ## Context
 
-You can add a custom message to a custom type system library.
+You can add a custom message or a custom IDoc to a custom type system library.
 
 
 
@@ -18,7 +18,7 @@ You can add a custom message to a custom type system library.
 
 2.  Choose and open the custom type system and navigate to the *Messages* tab.
 
-3.  This tab displays the list of uploaded custom messages. Choose *Add* to upload a custom message.
+3.  This tab displays the list of uploaded custom messages/IDocs. Choose *Add* to upload a custom message/IDoc.
 
 4.  Choose *Browse* and upload the XSD file under the *XSD File* step.
 
@@ -45,4 +45,27 @@ You can add a custom message to a custom type system library.
 ## Results
 
 The custom message is now successfully imported into the system.
+
+<a name="concept_clb_1t5_czb"/>
+
+<!-- concept\_clb\_1t5\_czb -->
+
+## Extend Standard Message for Custom IDoc
+
+The *Add* button has one more option *Extended Standard Message* for the custom IDocs type system. Using this option you can upload an IDoc message using an xsd file and then reference that message to a standard IDoc. Earlier the custom xsd file couldn't carry complex segments such as codelist qualifiers, long text documentation and datetime information which is commonly found in the standard IDoc messages. Now, by referencing the custom message to a standard IDoc, you provide the missing segments \(codelist qualifiers, long text documentation and datetime\) to the custom message.
+
+> ### Note:  
+> You can only reference standard segments from the standard IDoc. Custom segments cannot be referenced.
+
+Follow the procedure below to know how.
+
+1.  Choose *Add* and select *Extended Standard Message*.
+
+2.  Choose *Browse* and upload the XSD file under the *XSD File* step.
+3.  The next step shows you all the messages present in your XSD. Choose the required message from the *Messages* step.
+4.  In the *Standard Type System* step, select the type system from which you want to choose the standard message.
+5.  The *Standard Message* step displays the list of IDoc messages available in the selected type system. Select the required message from the list.
+6.  The next step *Standard Versions* shows the list of versions available for the message that you chose. Select the version that you need to refer to your custom IDoc.
+7.  The next step gives an overview of your selection. You can view a consolidated list of the standard message that you chose. Select *Create*.
+8.  Select and open the newly created custom IDoc to see if the standard segments are available.
 

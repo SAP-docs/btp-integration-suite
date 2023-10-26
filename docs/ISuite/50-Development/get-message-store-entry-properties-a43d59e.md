@@ -15,22 +15,16 @@ To get message store entry properties, you need to perform two subsequent calls:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 <th valign="top">
 
 Purpose
 
-
-
 </th>
 </tr>
 <tr>
@@ -38,21 +32,15 @@ Purpose
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `​/MessageProcessingLogs('{MessageGuid}')​/MessageStoreEntries` 
 
-
-
 </td>
 <td valign="top">
 
 Get all message store entries created during the processing of an integration flow \(for a dedicated `MessageGuid`\).
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Get all message store entries created during the processing of an integration fl
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `​/MessageStoreEntries('{MessageStoreEntryId}')` 
 
-
-
 </td>
 <td valign="top">
 
 Get entry properties for an individual message store entry \(identified by `MessageStoreEntryId`\).
-
-
 
 </td>
 </tr>

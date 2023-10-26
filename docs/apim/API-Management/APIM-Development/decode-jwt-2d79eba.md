@@ -27,14 +27,10 @@ Following table lists the elements and attributes that you can configure on this
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -42,8 +38,6 @@ Following table lists the elements and attributes that you can configure on this
 <td valign="top">
 
 <Source\> \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -71,14 +65,10 @@ The following flow variables are available after the policy is executed:
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -87,14 +77,10 @@ Description
 
 header.algorithm
 
-
-
 </td>
 <td valign="top">
 
 Signing algorithm used on JWT.
-
-
 
 </td>
 </tr>
@@ -103,14 +89,10 @@ Signing algorithm used on JWT.
 
 claim.subject
 
-
-
 </td>
 <td valign="top">
 
 JWT subject claim.
-
-
 
 </td>
 </tr>
@@ -119,14 +101,10 @@ JWT subject claim.
 
 claim.issuer
 
-
-
 </td>
 <td valign="top">
 
 JWT issuer claim.
-
-
 
 </td>
 </tr>
@@ -135,14 +113,10 @@ JWT issuer claim.
 
 claim.audience
 
-
-
 </td>
 <td valign="top">
 
 JWT audience claim. This value may be a string, or an array of strings.
-
-
 
 </td>
 </tr>
@@ -151,14 +125,10 @@ JWT audience claim. This value may be a string, or an array of strings.
 
 claim.expiry
 
-
-
 </td>
 <td valign="top">
 
 Expiration date or time, expressed in seconds.
-
-
 
 </td>
 </tr>
@@ -167,14 +137,10 @@ Expiration date or time, expressed in seconds.
 
 expiry\_formatted
 
-
-
 </td>
 <td valign="top">
 
 Expiration date or time, formatted as a human readable string. Example: 2019-18-28T21:30:45.000+0000
-
-
 
 </td>
 </tr>
@@ -183,14 +149,10 @@ Expiration date or time, formatted as a human readable string. Example: 2019-18-
 
 seconds\_remaining
 
-
-
 </td>
 <td valign="top">
 
 Number of seconds before the token expires. If the token is expired, this number will be negative.
-
-
 
 </td>
 </tr>
@@ -199,14 +161,10 @@ Number of seconds before the token expires. If the token is expired, this number
 
 time\_remaining\_formatted
 
-
-
 </td>
 <td valign="top">
 
 Time remaining before the token expires, formatted as a human-readable string. Example: 00:59:59.926
-
-
 
 </td>
 </tr>
@@ -215,14 +173,10 @@ Time remaining before the token expires, formatted as a human-readable string. E
 
 is\_expired
 
-
-
 </td>
 <td valign="top">
 
 true or false
-
-
 
 </td>
 </tr>
@@ -231,14 +185,10 @@ true or false
 
 claim.issuedat
 
-
-
 </td>
 <td valign="top">
 
 Token issued Date, expressed in seconds since epoch.
-
-
 
 </td>
 </tr>
@@ -247,14 +197,10 @@ Token issued Date, expressed in seconds since epoch.
 
 claim.notbefore
 
-
-
 </td>
 <td valign="top">
 
 If the JWT includes a nbf claim, this variable will contain the value. This is expressed in seconds since epoch.
-
-
 
 </td>
 </tr>
@@ -263,16 +209,12 @@ If the JWT includes a nbf claim, this variable will contain the value. This is e
 
 valid
 
-
-
 </td>
 <td valign="top">
 
 In the case of VerifyJWT, this variable will be true when the signature is verified, and the current time is before the token expiry, and after the token notBefore value, if they are present. Otherwise false.
 
 In the case of DecodeJWT, this variable is not set.
-
-
 
 </td>
 </tr>
@@ -281,14 +223,10 @@ In the case of DecodeJWT, this variable is not set.
 
 claim.name
 
-
-
 </td>
 <td valign="top">
 
 The value of the named claim \(standard or additional\) in the payload. One of these will be set for every claim in the payload.
-
-
 
 </td>
 </tr>
@@ -297,14 +235,10 @@ The value of the named claim \(standard or additional\) in the payload. One of t
 
 header.name
 
-
-
 </td>
 <td valign="top">
 
 The value of the named header \(standard or additional\). One of these will be set for every additional header in the header portion of the JWT.
-
-
 
 </td>
 </tr>
@@ -313,14 +247,10 @@ The value of the named header \(standard or additional\). One of these will be s
 
 header.kid
 
-
-
 </td>
 <td valign="top">
 
 The Key ID, if added when the JWT was generated.
-
-
 
 </td>
 </tr>
@@ -329,14 +259,10 @@ The Key ID, if added when the JWT was generated.
 
 header.type
 
-
-
 </td>
 <td valign="top">
 
 Will be set to JWT.
-
-
 
 </td>
 </tr>
@@ -345,14 +271,10 @@ Will be set to JWT.
 
 payload-claim-names
 
-
-
 </td>
 <td valign="top">
 
 An array of claims supported by the JWT.
-
-
 
 </td>
 </tr>
@@ -361,14 +283,10 @@ An array of claims supported by the JWT.
 
 payload-json
 
-
-
 </td>
 <td valign="top">
 
 Payload in JSON format.
-
-
 
 </td>
 </tr>
@@ -377,14 +295,10 @@ Payload in JSON format.
 
 header-json
 
-
-
 </td>
 <td valign="top">
 
 Header in JSON format.
-
-
 
 </td>
 </tr>
@@ -401,14 +315,10 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -417,14 +327,10 @@ Cause
 
 steps.jwt.FailedToDecode
 
-
-
 </td>
 <td valign="top">
 
 Occurs when the policy is unable to decode the JWT. The JWT may be malformed, invalid or otherwise not decodable.
-
-
 
 </td>
 </tr>
@@ -433,14 +339,10 @@ Occurs when the policy is unable to decode the JWT. The JWT may be malformed, in
 
 steps.jwt.InvalidToken
 
-
-
 </td>
 <td valign="top">
 
 Occurs when the flow variable specified in the <Source\> element of the policy is out of scope or can't be resolved.
-
-
 
 </td>
 </tr>
@@ -457,21 +359,15 @@ The following fault variables are set when the policy triggers an error at runti
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -480,21 +376,15 @@ Example
 
 fault.name="fault\_name"
 
-
-
 </td>
 <td valign="top">
 
 fault\_name is the name of the fault, as listed in the Runtime errors table above. The fault name is the last part of the fault code.
 
-
-
 </td>
 <td valign="top">
 
 fault.name Matches "TokenExpired"
-
-
 
 </td>
 </tr>
@@ -503,21 +393,15 @@ fault.name Matches "TokenExpired"
 
 jwt.policy\_name.failed
 
-
-
 </td>
 <td valign="top">
 
 policy\_name is the user-specified name of the policy that threw the fault.
 
-
-
 </td>
 <td valign="top">
 
 jwt.JWT-Policy.failed = true
-
-
 
 </td>
 </tr>

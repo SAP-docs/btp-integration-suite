@@ -19,28 +19,20 @@ The following table shows what settings are required to ensure guaranteed delive
 
 Boundary Conditions
 
-
-
 </th>
 <th valign="top">
 
 SAP-RM
-
-
 
 </th>
 <th valign="top">
 
 XI
 
-
-
 </th>
 <th valign="top">
 
 IDoc
-
-
 
 </th>
 </tr>
@@ -48,8 +40,6 @@ IDoc
 <td valign="top">
 
 Sender handles retry providing unique message ID
-
-
 
 </td>
 <td valign="top">
@@ -59,8 +49,6 @@ Sender handles retry providing unique message ID
 
 
 See: [Sender and Receiver with SAP RM Protocol](sender-and-receiver-with-sap-rm-protocol-9f3e2b6.md)
-
-
 
 </td>
 <td valign="top">
@@ -72,8 +60,6 @@ See: [Sender and Receiver with SAP RM Protocol](sender-and-receiver-with-sap-rm-
 
 
 See: [XI Receiver Handles Duplicates](xi-receiver-handles-duplicates-fcf026b.md)
-
-
 
 </td>
 <td valign="top">
@@ -89,16 +75,12 @@ See: [XI Receiver Handles Duplicates](xi-receiver-handles-duplicates-fcf026b.md)
 
 See: [IDoc Receiver Handles Duplicates](idoc-receiver-handles-duplicates-8f8feea.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Sender handles retry providing unique ID in payload
-
-
 
 </td>
 <td valign="top">
@@ -109,8 +91,6 @@ Sender handles retry providing unique ID in payload
 
 
 See: [Sender and Receiver with SOAP Protocol](sender-and-receiver-with-soap-protocol-cd4c6e0.md)
-
-
 
 </td>
 <td valign="top">
@@ -123,8 +103,6 @@ See: [Sender and Receiver with SOAP Protocol](sender-and-receiver-with-soap-prot
 
 
 See: [XI Receiver Handles Duplicates \(based on unique ID in payload\)](xi-receiver-handles-duplicates-based-on-unique-id-in-payload-3add2bf.md)
-
-
 
 </td>
 <td valign="top">
@@ -140,16 +118,12 @@ See: [XI Receiver Handles Duplicates \(based on unique ID in payload\)](xi-recei
 
 See:[IDoc Receiver Handles Duplicates \(based on unique ID in payload\)](idoc-receiver-handles-duplicates-based-on-unique-id-in-payload-bb441a9.md) 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Sender cannot retry \(decoupling via JMS queues\)
-
-
 
 </td>
 <td valign="top">
@@ -160,8 +134,6 @@ Sender cannot retry \(decoupling via JMS queues\)
 
 
 See: [Decoupling via JMS Queue](decoupling-via-jms-queue-ecbde19.md)
-
-
 
 </td>
 <td valign="top">
@@ -174,8 +146,6 @@ See: [Decoupling via JMS Queue](decoupling-via-jms-queue-ecbde19.md)
 
 
 See: [XI Receiver Handles Duplicates \(with decoupling via JMS Queue\)](xi-receiver-handles-duplicates-with-decoupling-via-jms-queue-bd19abf.md)
-
-
 
 </td>
 <td valign="top">
@@ -191,16 +161,12 @@ See: [XI Receiver Handles Duplicates \(with decoupling via JMS Queue\)](xi-recei
 
 See: [IDoc Receiver Handles Duplicates \(with decoupling via JMS Queue\)](idoc-receiver-handles-duplicates-with-decoupling-via-jms-queue-776b640.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Splitter scenario where sender handles retry providing unique message ID \(sequential processing\)
-
-
 
 </td>
 <td valign="top">
@@ -216,8 +182,6 @@ Splitter scenario where sender handles retry providing unique message ID \(seque
 
 
 See: [ID Mapping \(with Splitter\)](id-mapping-with-splitter-441e51d.md)
-
-
 
 </td>
 <td valign="top">
@@ -259,8 +223,6 @@ See: [ID Mapping \(with Splitter\)](id-mapping-with-splitter-441e51d.md)
 <td valign="top">
 
 Splitter scenario where sender handles retry providing unique ID in payload \(parallel processing\)
-
-
 
 </td>
 <td valign="top">
@@ -315,8 +277,6 @@ Splitter scenario where sender handles retry providing unique ID in payload \(pa
 <td valign="top">
 
 Splitter scenario where sender cannot retry \(decoupling via JMS queues, splitter with sequential processing\)
-
-
 
 </td>
 <td valign="top">

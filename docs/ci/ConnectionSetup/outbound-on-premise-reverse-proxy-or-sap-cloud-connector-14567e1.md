@@ -22,14 +22,10 @@ To decide which option is the best one for your use case, refer to the following
 
 Advantages When Using Reverse Proxy
 
-
-
 </th>
 <th valign="top">
 
 Advantages When Using SAP Cloud Connector
-
-
 
 </th>
 </tr>
@@ -37,8 +33,6 @@ Advantages When Using SAP Cloud Connector
 <td valign="top">
 
 Existing reverse proxy and demilitarized zone \(DMZ\) infrastructure can be reused for cloud scenarios: No additional components need to be operated on-premise.
-
-
 
 </td>
 <td valign="top">
@@ -59,14 +53,10 @@ Existing reverse proxy and demilitarized zone \(DMZ\) infrastructure can be reus
 
 IT-based, centralized approach with more re-use potential, independent of SAP BTP cockpit or Cloud Integration infrastructure
 
-
-
 </td>
 <td valign="top">
 
 De-central, simple solution that can be administered by LOBs and subsidiaries
-
-
 
 </td>
 </tr>
@@ -75,14 +65,10 @@ De-central, simple solution that can be administered by LOBs and subsidiaries
 
 Usage for other cloud scenarios besides SAP BTP cockpit/Cloud Integration-connectivity of backends
 
-
-
 </td>
 <td valign="top">
 
 Usage for other SAP BTP cockpit-related scenarios, for example, extension apps, possible
-
-
 
 </td>
 </tr>
@@ -91,14 +77,10 @@ Usage for other SAP BTP cockpit-related scenarios, for example, extension apps, 
 
 Additional capabilities might be provided by the reverse proxy \(load balancing, application gateway, rules, and so forth, depending on the used product\).
 
-
-
 </td>
 <td valign="top">
 
 Synchronous native RFC-client call from SAP BTP cockpit supported in addition \(that means, outside Cloud Integration\)
-
-
 
 </td>
 </tr>
@@ -107,14 +89,10 @@ Synchronous native RFC-client call from SAP BTP cockpit supported in addition \(
 
 Several reverse proxy instances per target landscape in one Cloud Integration tenant
 
-
-
 </td>
 <td valign="top">
 
 Propagation of cloud user identity to on-premise system is supported.
-
-
 
 </td>
 </tr>
@@ -123,14 +101,10 @@ Propagation of cloud user identity to on-premise system is supported.
 
 Monitoring and control included in the IT processes, tools and concepts.
 
-
-
 </td>
 <td valign="top">
 
 Monitoring and control native on SAP BTP cockpit \(for example, SAP BTP cockpit, User, Security\)
-
-
 
 </td>
 </tr>
@@ -139,14 +113,10 @@ Monitoring and control native on SAP BTP cockpit \(for example, SAP BTP cockpit,
 
 Re-use of existing license, but separate license needed of a reverse proxy is not used yet.
 
-
-
 </td>
 <td valign="top">
 
 License comes with Cloud Integration Standard/Professional Edition.
-
-
 
 </td>
 </tr>
@@ -155,14 +125,10 @@ License comes with Cloud Integration Standard/Professional Edition.
 
 Third party support needed, except if the SAP Netweaver Web Dispatcher is used as reverse proxy.
 
-
-
 </td>
 <td valign="top">
 
 SAP support in case of issues or feature requests.
-
-
 
 </td>
 </tr>

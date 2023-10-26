@@ -32,15 +32,11 @@ Use the procedure here to create and add custom domains.
     <th valign="top">
 
     URL Elements
-
-
     
     </th>
     <th valign="top">
 
     Where to find it?
-
-
     
     </th>
     </tr>
@@ -48,15 +44,11 @@ Use the procedure here to create and add custom domains.
     <td valign="top">
     
     `<application_name>` 
-
-
     
     </td>
     <td valign="top">
     
     In *Application* \> *Subscriptions* find the subscribed application details.
-
-
     
     </td>
     </tr>
@@ -64,15 +56,11 @@ Use the procedure here to create and add custom domains.
     <td valign="top">
     
     `<provider_subaccount>` 
-
-
     
     </td>
     <td valign="top">
     
     In *Application* \> *Subscriptions* and then choose the relevant *Application*. In the *Subscribed Application - <account ID\> Overview* page, find the *Provider Subaccount* details. For example, Provider Subaccount: myacct **\(wc077ad\)**.
-
-
     
     </td>
     </tr>
@@ -80,15 +68,11 @@ Use the procedure here to create and add custom domains.
     <td valign="top">
     
     `<consumer_subaccount>` 
-
-
     
     </td>
     <td valign="top">
     
     Under the *Subaccount Information* section, use the subaccount *Name*.
-
-
     
     </td>
     </tr>

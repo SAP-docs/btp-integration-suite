@@ -21,14 +21,10 @@ Let's consider the example of EDI to IDoc integration scenario. The various proc
 
 Processing Step
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -37,14 +33,10 @@ Description
 
 Sender channel
 
-
-
 </td>
 <td valign="top">
 
 The sender channel is configured using an AS2 adapter. An EDI message is received by the sender adapter.
-
-
 
 </td>
 </tr>
@@ -53,14 +45,10 @@ The sender channel is configured using an AS2 adapter. An EDI message is receive
 
 Validate and Analyze EDI Interchange
 
-
-
 </td>
 <td valign="top">
 
 The incoming EDI message is validated, and an acknowledgement is generated. The validation of the inbound message is done based on the XSD configured in this step. You've to use the XSD schema located in the `source Message Implementation Guideline (MIG)` folder within the exported zip file generated in SAP Integration Suite \(IA\) – `UN-EDIFACT<MessageType>.xsd`. The payload is forwarded for further processing based on the result of validation.
-
-
 
 </td>
 </tr>
@@ -69,14 +57,10 @@ The incoming EDI message is validated, and an acknowledgement is generated. The 
 
 Router
 
-
-
 </td>
 <td valign="top">
 
 Acknowledgement messages and EDI messages are routed separately.
-
-
 
 </td>
 </tr>
@@ -85,14 +69,10 @@ Acknowledgement messages and EDI messages are routed separately.
 
 EDI to XML Converter
 
-
-
 </td>
 <td valign="top">
 
 The EDI message is converted into XML format using the XSD schema, located in the `source MIG` folder within the exported zip file generated in IA – `UN-EDIFACT_<MessageType>.xsd`.
-
-
 
 </td>
 </tr>
@@ -101,14 +81,10 @@ The EDI message is converted into XML format using the XSD schema, located in th
 
 EDI - Qualifier Pre-Processing
 
-
-
 </td>
 <td valign="top">
 
 The qualifier suffixes are added in the XML based on the source MIG definition to perform a content validation of the message in the next step. The resource `<SourceMIGName>_preproc.xsl`, located in the `source MIG` folder within the exported zip file is used. After this step, the payload validation is executed based on the defined qualifiers and qualifier values.
-
-
 
 </td>
 </tr>
@@ -116,8 +92,6 @@ The qualifier suffixes are added in the XML based on the source MIG definition t
 <td valign="top">
 
 EDI Extended Validation \(optional\)
-
-
 
 </td>
 <td valign="top">
@@ -136,14 +110,10 @@ The result of the qualifier preprocessing step is validated against the Russian 
 
 EDI to SAP IDoc Mapping
 
-
-
 </td>
 <td valign="top">
 
 This step converts the EDI message into SAP IDoc format using the XSLT mapping generated in IA. The resource `<MAGName>.xsl` located in the `MAG` folder within the exported zip file is used.
-
-
 
 </td>
 </tr>
@@ -152,14 +122,10 @@ This step converts the EDI message into SAP IDoc format using the XSLT mapping g
 
 SAP IDoc - Qualifier Post-Processing
 
-
-
 </td>
 <td valign="top">
 
 The qualifiers within the IDoc message are removed using the XSLT mapping as they aren't required in the final payload. The resource `<TargetMIGName>_postproc.xsl` located in the `target MIG` folder within the exported zip file is used.
-
-
 
 </td>
 </tr>
@@ -168,14 +134,10 @@ The qualifiers within the IDoc message are removed using the XSLT mapping as the
 
 SAP IDoc - Prepare EDI\_DC Parameters
 
-
-
 </td>
 <td valign="top">
 
 The IDoc control record is defined.
-
-
 
 </td>
 </tr>
@@ -184,14 +146,10 @@ The IDoc control record is defined.
 
 End Event
 
-
-
 </td>
 <td valign="top">
 
 The End message event is connected to the receiving system.
-
-
 
 </td>
 </tr>
@@ -200,14 +158,10 @@ The End message event is connected to the receiving system.
 
 Receiver channel
 
-
-
 </td>
 <td valign="top">
 
 The receiver channel is configured using an IDoc adapter.
-
-
 
 </td>
 </tr>

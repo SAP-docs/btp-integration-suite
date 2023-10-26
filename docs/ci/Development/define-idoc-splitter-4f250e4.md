@@ -21,14 +21,10 @@ The response from the receiver system contains a number of headers.
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -37,14 +33,10 @@ Description
 
 `SapIDocAssignMap`
 
-
-
 </td>
 <td valign="top">
 
 Contains a list of all `SapIDocTransferId` and `SapIDocDbId` headers that were returned from the IDoc receiver adapter for the splitted IDoc message.
-
-
 
 </td>
 </tr>
@@ -52,8 +44,6 @@ Contains a list of all `SapIDocTransferId` and `SapIDocDbId` headers that were r
 <td valign="top">
 
 `SapIDocTransferId`
-
-
 
 </td>
 <td valign="top">
@@ -64,16 +54,12 @@ This header contains the incoming IDoc number from the sending system \(for exam
 
 It corresponds to the field DOCNUM in the IDoc adapter.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `SapIDocDbId`
-
-
 
 </td>
 <td valign="top">
@@ -83,8 +69,6 @@ Contains db ID of the original IDoc message.
 The IDoc receiver adapter sends a request and gets an XML response.
 
 The adapter parses the XML response and generates this header from it. The header contains the IDoc number from the receiver system \(for example, 0000000000160816\).
-
-
 
 </td>
 </tr>

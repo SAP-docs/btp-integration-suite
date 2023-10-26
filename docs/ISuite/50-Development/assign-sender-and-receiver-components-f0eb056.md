@@ -8,10 +8,6 @@ You use the Sender and Receiver elements to model remote systems that are connec
 
 
 
-## Context
-
-
-
 ## Procedure
 
 1.  Open the integration flow in the editor.

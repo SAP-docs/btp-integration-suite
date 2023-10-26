@@ -57,14 +57,10 @@ The Content Modifier *Set unique ID* stores the booking reference as exchang
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -73,14 +69,10 @@ Value
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 bookingReference
-
-
 
 </td>
 </tr>
@@ -89,14 +81,10 @@ bookingReference
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 </tr>
@@ -105,14 +93,10 @@ XPath
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
-
-
 
 </td>
 </tr>
@@ -121,14 +105,10 @@ java.lang.String
 
 Value
 
-
-
 </td>
 <td valign="top">
 
 ns0:FlightBooking/BookingReference
-
-
 
 </td>
 </tr>
@@ -145,14 +125,10 @@ The *ID Mapping* step is defined in the following way:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -161,16 +137,12 @@ Setting
 
 *Source Message ID*
 
-
-
 </td>
 <td valign="top">
 
 `${property.bookingReference}` 
 
 This value is defined using the property defined in the previous Content Modifier.
-
-
 
 </td>
 </tr>
@@ -179,16 +151,12 @@ This value is defined using the property defined in the previous Content Modifie
 
 *Target Header Name*
 
-
-
 </td>
 <td valign="top">
 
 `SapMessageId`
 
 The header is used for duplicate handling in the backend.
-
-
 
 </td>
 </tr>
@@ -197,16 +165,12 @@ The header is used for duplicate handling in the backend.
 
 *Context*
 
-
-
 </td>
 <td valign="top">
 
 `IDMapperContext_01`
 
 You define a unique context for each* ID Mapping *step within your integration flow. If you need any additional *ID Mapping* \(providing a different target ID\), you can use a different context. In this scenario, there's 1 single *ID Mapping* step only. Therefore, the *Context* name doesn’t really matter.
-
-
 
 </td>
 </tr>
@@ -215,16 +179,12 @@ You define a unique context for each* ID Mapping *step within your integrati
 
 *Visibility*
 
-
-
 </td>
 <td valign="top">
 
 Integration Flow
 
 The generated IDs are unique within the same integration flow model. If your ID Mapping is to be used across different integration flows, you need to select Global.
-
-
 
 </td>
 </tr>
@@ -233,14 +193,10 @@ The generated IDs are unique within the same integration flow model. If your I
 
 *Expiration Period \(in d\)*
 
-
-
 </td>
 <td valign="top">
 
 `30`
-
-
 
 </td>
 </tr>
@@ -264,15 +220,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -280,15 +232,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     OWN
-
-
     
     </td>
     </tr>
@@ -296,15 +244,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     User
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -312,15 +256,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     Password
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

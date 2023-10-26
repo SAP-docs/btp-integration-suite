@@ -63,15 +63,11 @@ The information within a transport mode is independent of other modes.
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -79,15 +75,11 @@ The information within a transport mode is independent of other modes.
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Enter the value `CloudIntegration`. This value is case-sensitive.
-
-
     
     </td>
     </tr>
@@ -95,15 +87,11 @@ The information within a transport mode is independent of other modes.
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     HTTP
-
-
     
     </td>
     </tr>
@@ -111,15 +99,11 @@ The information within a transport mode is independent of other modes.
     <td valign="top">
     
     Description \(optional\)
-
-
     
     </td>
     <td valign="top">
     
     You can provide a description for your reference.
-
-
     
     </td>
     </tr>
@@ -127,8 +111,6 @@ The information within a transport mode is independent of other modes.
     <td valign="top">
     
     URL
-
-
     
     </td>
     <td valign="top">
@@ -136,8 +118,6 @@ The information within a transport mode is independent of other modes.
     Enter the URL of the source tenant \(access URL of Cloud Integration web UI\).
 
     URL format: *<https://<Cloud\_Integration\_tenant\_name\>-tmn.hci.int.<region\>.hana.ondemand.com/itspaces/\>*.
-
-
     
     </td>
     </tr>
@@ -145,15 +125,11 @@ The information within a transport mode is independent of other modes.
     <td valign="top">
     
     Proxy Type
-
-
     
     </td>
     <td valign="top">
     
     Internet
-
-
     
     </td>
     </tr>
@@ -161,8 +137,6 @@ The information within a transport mode is independent of other modes.
     <td valign="top">
     
     Authentication
-
-
     
     </td>
     <td valign="top">
@@ -205,15 +179,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <th valign="top">
 
         Field
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -221,15 +191,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         Name
-
-
         
         </td>
         <td valign="top">
         
         Enter the value `CloudIntegration`. This value is case-sensitive.
-
-
         
         </td>
         </tr>
@@ -237,15 +203,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         Type
-
-
         
         </td>
         <td valign="top">
         
         HTTP
-
-
         
         </td>
         </tr>
@@ -253,15 +215,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         Description \(optional\)
-
-
         
         </td>
         <td valign="top">
         
         You can provide a description for your reference.
-
-
         
         </td>
         </tr>
@@ -269,8 +227,6 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         URL
-
-
         
         </td>
         <td valign="top">
@@ -278,8 +234,6 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         Enter the URL of the source tenant \(access URL of Cloud Integration web UI\).
 
         URL format: *<https://<Cloud\_Integration\_tenant\_name\>-tmn.hci.int.<region\>.hana.ondemand.com/itspaces/\>*.
-
-
         
         </td>
         </tr>
@@ -287,15 +241,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         Proxy Type
-
-
         
         </td>
         <td valign="top">
         
         Internet
-
-
         
         </td>
         </tr>
@@ -303,8 +253,6 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         Authentication
-
-
         
         </td>
         <td valign="top">
@@ -345,15 +293,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <th valign="top">
 
         Field
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -361,15 +305,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         Name
-
-
         
         </td>
         <td valign="top">
         
         Enter the value `TransportSystemCTS`. This value is case-sensitive.
-
-
         
         </td>
         </tr>
@@ -377,15 +317,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         Type
-
-
         
         </td>
         <td valign="top">
         
         HTTP
-
-
         
         </td>
         </tr>
@@ -393,15 +329,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         Description \(optional\)
-
-
         
         </td>
         <td valign="top">
         
         You can provide a description for your reference.
-
-
         
         </td>
         </tr>
@@ -409,15 +341,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         URL
-
-
         
         </td>
         <td valign="top">
         
         Enter the URL that you copied from the WSDL response.
-
-
         
         </td>
         </tr>
@@ -425,15 +353,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         Proxy Type
-
-
         
         </td>
         <td valign="top">
         
         OnPremise
-
-
         
         </td>
         </tr>
@@ -441,15 +365,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         Authentication
-
-
         
         </td>
         <td valign="top">
         
         Basic Authentication
-
-
         
         </td>
         </tr>
@@ -457,8 +377,6 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         *Additional Properties* 
-
-
         
         </td>
         <td valign="top">
@@ -466,8 +384,6 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         Choose *New Property*.
 
         Enter `sourceSystemId` as the key and provide a value of your choice. Reuse the same value as the name of the source non-ABAP system in a later step.
-
-
         
         </td>
         </tr>
@@ -488,15 +404,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <th valign="top">
 
         Field
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -504,15 +416,11 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         *RFC Destination* 
-
-
         
         </td>
         <td valign="top">
         
         Enter a name for the destination. You use the name in a later step.
-
-
         
         </td>
         </tr>
@@ -520,8 +428,6 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         *Technical Settings* 
-
-
         
         </td>
         <td valign="top">
@@ -543,8 +449,6 @@ Create 3 HTTP destinations – 2 in Solutions Lifecycle Management and 1 in CTS+
         <td valign="top">
         
         *Logon & Security* 
-
-
         
         </td>
         <td valign="top">
@@ -648,15 +552,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <th valign="top">
 
         Field
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -664,15 +564,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Name
-
-
         
         </td>
         <td valign="top">
         
         Enter the value `CloudIntegration`. This value is case-sensitive.
-
-
         
         </td>
         </tr>
@@ -680,15 +576,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Type
-
-
         
         </td>
         <td valign="top">
         
         HTTP
-
-
         
         </td>
         </tr>
@@ -696,15 +588,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Description \(optional\)
-
-
         
         </td>
         <td valign="top">
         
         You can provide a description for your reference.
-
-
         
         </td>
         </tr>
@@ -712,8 +600,6 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         URL
-
-
         
         </td>
         <td valign="top">
@@ -721,8 +607,6 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         Enter the URL of the source tenant \(access URL of Cloud Integration web UI\).
 
         URL format: *<https://<Cloud\_Integration\_tenant\_name\>-tmn.hci.int.<region\>.hana.ondemand.com/itspaces/\>*.
-
-
         
         </td>
         </tr>
@@ -730,15 +614,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Proxy Type
-
-
         
         </td>
         <td valign="top">
         
         Internet
-
-
         
         </td>
         </tr>
@@ -746,8 +626,6 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Authentication
-
-
         
         </td>
         <td valign="top">
@@ -780,15 +658,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <th valign="top">
 
         Field
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -796,15 +670,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Name
-
-
         
         </td>
         <td valign="top">
         
         Enter the value `TransportManagementService`. This value is case-sensitive.
-
-
         
         </td>
         </tr>
@@ -812,15 +682,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Type
-
-
         
         </td>
         <td valign="top">
         
         HTTP
-
-
         
         </td>
         </tr>
@@ -828,15 +694,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Description \(optional\)
-
-
         
         </td>
         <td valign="top">
         
         You can provide a description for your reference.
-
-
         
         </td>
         </tr>
@@ -844,15 +706,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         URL
-
-
         
         </td>
         <td valign="top">
         
         Enter the value of `uri` from the service key of your Cloud Transport Management instance.
-
-
         
         </td>
         </tr>
@@ -860,15 +718,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Proxy Type
-
-
         
         </td>
         <td valign="top">
         
         Internet
-
-
         
         </td>
         </tr>
@@ -876,15 +730,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Authentication
-
-
         
         </td>
         <td valign="top">
         
         OAuth2ClientCredentials
-
-
         
         </td>
         </tr>
@@ -892,15 +742,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Client ID
-
-
         
         </td>
         <td valign="top">
         
         Enter the value of `clientid` from the service key of your Cloud Transport Management instance.
-
-
         
         </td>
         </tr>
@@ -908,15 +754,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Client Secret
-
-
         
         </td>
         <td valign="top">
         
         Enter the value of `clientsecret` from the service key of your Cloud Transport Management instance.
-
-
         
         </td>
         </tr>
@@ -924,15 +766,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Token Service URL
-
-
         
         </td>
         <td valign="top">
         
         Enter the value of `url` from the service key of your Cloud Transport Management instance. Append `/oauth/token` at the end of URL fetched from the service key.
-
-
         
         </td>
         </tr>
@@ -940,8 +778,6 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         *Additional Properties* 
-
-
         
         </td>
         <td valign="top">
@@ -949,8 +785,6 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         Choose *New Property*.
 
         Enter `sourceSystemId` as the key and provide a value of your choice. Reuse the same value as the name of the source transport node in a later step.
-
-
         
         </td>
         </tr>
@@ -971,15 +805,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <th valign="top">
 
         Field
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -987,15 +817,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Name
-
-
         
         </td>
         <td valign="top">
         
         Provide a name for the destination.
-
-
         
         </td>
         </tr>
@@ -1003,15 +829,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Type
-
-
         
         </td>
         <td valign="top">
         
         HTTP
-
-
         
         </td>
         </tr>
@@ -1019,15 +841,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Description \(optional\)
-
-
         
         </td>
         <td valign="top">
         
         You can provide a description for your reference.
-
-
         
         </td>
         </tr>
@@ -1035,8 +853,6 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         URL
-
-
         
         </td>
         <td valign="top">
@@ -1044,8 +860,6 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         Enter the URL of the SLM service endpoint in the target subaccount.
 
         URL format: *<https://slservice.<landscape-host\>/slservice/slp/basic/<Technical Name of the Neo subaccount\>/slp\>*.
-
-
         
         </td>
         </tr>
@@ -1053,15 +867,11 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Proxy Type
-
-
         
         </td>
         <td valign="top">
         
         Internet
-
-
         
         </td>
         </tr>
@@ -1069,8 +879,6 @@ Create 4 HTTP destinations – 2 in Solutions Lifecycle Management, 1 each in SA
         <td valign="top">
         
         Authentication
-
-
         
         </td>
         <td valign="top">

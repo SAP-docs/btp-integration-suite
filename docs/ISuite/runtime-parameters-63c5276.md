@@ -19,14 +19,10 @@ Depending on your selected component, the information about runtime parameters c
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 The technical name.
-
-
 
 </td>
 </tr>
@@ -34,8 +30,6 @@ The technical name.
 <td valign="top">
 
 *Category*
-
-
 
 </td>
 <td valign="top">
@@ -54,14 +48,10 @@ The technical name.
 
 *Default*
 
-
-
 </td>
 <td valign="top">
 
 The default value set for this parameter. The default value can be overwritten by the custom value.
-
-
 
 </td>
 </tr>
@@ -70,14 +60,10 @@ The default value set for this parameter. The default value can be overwritten b
 
 *Custom Value*
 
-
-
 </td>
 <td valign="top">
 
 Enter a custom value and change the default value by clicking on :pencil2:. Make your changes and confirm by selecting *Apply*. Select *Save* to run the changes in the back end. A change of a runtime parameter will typically cause a rolling restart of pods in Edge Integration Cell.
-
-
 
 </td>
 </tr>
@@ -95,21 +81,15 @@ For more information on the Edge Integration Cell component configuration, have 
 
 Component
 
-
-
 </th>
 <th valign="top">
 
 Configuration Option
 
-
-
 </th>
 <th valign="top">
 
 Details
-
-
 
 </th>
 </tr>
@@ -118,14 +98,10 @@ Details
 
 *Edge Deploy Controller* 
 
-
-
 </td>
 <td valign="top">
 
 `LOG_LEVEL` 
-
-
 
 </td>
 <td valign="top">
@@ -134,8 +110,6 @@ Sets log level for a component.
 
 Possible values are *error*, *warn*, *info*, *debug*.
 
-
-
 </td>
 </tr>
 <tr>
@@ -143,14 +117,10 @@ Possible values are *error*, *warn*, *info*, *debug*.
 
 `MIN_REPLICAS` 
 
-
-
 </td>
 <td valign="top">
 
 Sets the minimum number of replicas for this Deployment using HorizontalPodAutoscaler \(HPA\).
-
-
 
 </td>
 </tr>
@@ -159,14 +129,10 @@ Sets the minimum number of replicas for this Deployment using HorizontalPodAutos
 
 `MAX_REPLICAS` 
 
-
-
 </td>
 <td valign="top">
 
 Sets the maximum number of replicas for this Deployment using HorizontalPodAutoscaler \(HPA\).
-
-
 
 </td>
 </tr>
@@ -175,14 +141,10 @@ Sets the maximum number of replicas for this Deployment using HorizontalPodAutos
 
 *Edge Event Controller* 
 
-
-
 </td>
 <td valign="top">
 
 `LOG_LEVEL` 
-
-
 
 </td>
 <td valign="top">
@@ -190,8 +152,6 @@ Sets the maximum number of replicas for this Deployment using HorizontalPodAutos
 Sets log level for a component.
 
 Possible values are *error*, *warn*, *info*, *debug*.
-
-
 
 </td>
 </tr>
@@ -200,21 +160,15 @@ Possible values are *error*, *warn*, *info*, *debug*.
 
 *Edge Security Artifact Controller* 
 
-
-
 </td>
 <td valign="top">
 
 `CPU_LIMIT` 
 
-
-
 </td>
 <td valign="top">
 
 Sets CPU limit for this component.
-
-
 
 </td>
 </tr>
@@ -223,14 +177,10 @@ Sets CPU limit for this component.
 
 `MEMORY_LIMIT` 
 
-
-
 </td>
 <td valign="top">
 
 Sets memory limit for this component.
-
-
 
 </td>
 </tr>
@@ -239,14 +189,10 @@ Sets memory limit for this component.
 
 `REPLICAS` 
 
-
-
 </td>
 <td valign="top">
 
 Sets the number of replicas for this component.
-
-
 
 </td>
 </tr>
@@ -255,21 +201,15 @@ Sets the number of replicas for this component.
 
 *Edge API Application* 
 
-
-
 </td>
 <td valign="top">
 
 `CPU_LIMIT` 
 
-
-
 </td>
 <td valign="top">
 
 Sets CPU limit for this component.
-
-
 
 </td>
 </tr>
@@ -278,14 +218,10 @@ Sets CPU limit for this component.
 
 `REPLICAS` 
 
-
-
 </td>
 <td valign="top">
 
 Sets the number of replicas for this component.
-
-
 
 </td>
 </tr>
@@ -294,14 +230,10 @@ Sets the number of replicas for this component.
 
 `JAVA_OPTS` 
 
-
-
 </td>
 <td valign="top">
 
 Additional JVM parameters. Can be set either via env var JAVA\_OPTS in configmap edge-api or Helm value java.opts
-
-
 
 </td>
 </tr>
@@ -310,14 +242,10 @@ Additional JVM parameters. Can be set either via env var JAVA\_OPTS in configmap
 
 *Policy Engine* 
 
-
-
 </td>
 <td valign="top">
 
 `LOG_LEVEL` 
-
-
 
 </td>
 <td valign="top">
@@ -325,8 +253,6 @@ Additional JVM parameters. Can be set either via env var JAVA\_OPTS in configmap
 Sets log level for a component.
 
 Possible values are *error*, *warn*, *info*, *debug*.
-
-
 
 </td>
 </tr>
@@ -335,14 +261,10 @@ Possible values are *error*, *warn*, *info*, *debug*.
 
 `MIN_REPLICAS` 
 
-
-
 </td>
 <td valign="top">
 
 Sets the minimum number of replicas for this Deployment using HorizontalPodAutoscaler \(HPA\).
-
-
 
 </td>
 </tr>
@@ -351,14 +273,10 @@ Sets the minimum number of replicas for this Deployment using HorizontalPodAutos
 
 `MAX_REPLICAS` 
 
-
-
 </td>
 <td valign="top">
 
 Sets the maximum number of replicas for this Deployment using HorizontalPodAutoscaler \(HPA\).
-
-
 
 </td>
 </tr>
@@ -367,21 +285,15 @@ Sets the maximum number of replicas for this Deployment using HorizontalPodAutos
 
 *Worker* 
 
-
-
 </td>
 <td valign="top">
 
 `CPU_LIMIT` 
 
-
-
 </td>
 <td valign="top">
 
 Sets CPU limit for this component.
-
-
 
 </td>
 </tr>
@@ -390,14 +302,10 @@ Sets CPU limit for this component.
 
 `MEMORY_LIMIT` 
 
-
-
 </td>
 <td valign="top">
 
 Sets memory limit for this component.
-
-
 
 </td>
 </tr>
@@ -406,14 +314,10 @@ Sets memory limit for this component.
 
 `REPLICAS` 
 
-
-
 </td>
 <td valign="top">
 
 Sets the number of replicas for this component.
-
-
 
 </td>
 </tr>
@@ -422,16 +326,12 @@ Sets the number of replicas for this component.
 
 `JAVA_OPTS` 
 
-
-
 </td>
 <td valign="top">
 
 Additional JVM parameters for this component\).
 
 Same for the others REPLICAS, MIN\_REPLICAS, etc.
-
-
 
 </td>
 </tr>
@@ -440,14 +340,10 @@ Same for the others REPLICAS, MIN\_REPLICAS, etc.
 
 `JBP_CONFIG_SAPJVM` 
 
-
-
 </td>
 <td valign="top">
 
 Sets parameters for java memory calculator.
-
-
 
 </td>
 </tr>
@@ -456,14 +352,10 @@ Sets parameters for java memory calculator.
 
 *Solops* 
 
-
-
 </td>
 <td valign="top">
 
 `LOG_LEVEL` 
-
-
 
 </td>
 <td valign="top">
@@ -472,8 +364,6 @@ Sets log level for a component.
 
 Possible values are *error*, *warn*, *info*, *debug*.
 
-
-
 </td>
 </tr>
 <tr>
@@ -481,14 +371,10 @@ Possible values are *error*, *warn*, *info*, *debug*.
 
 `MAX_ENDPOINTS` 
 
-
-
 </td>
 <td valign="top">
 
 Sets maximum number of queues and topic endpoints
-
-
 
 </td>
 </tr>
@@ -497,14 +383,10 @@ Sets maximum number of queues and topic endpoints
 
 `MAX_EGRESS_FLOWS` 
 
-
-
 </td>
 <td valign="top">
 
 Sets maximum number of egress \(consumer\) flows.
-
-
 
 </td>
 </tr>
@@ -513,14 +395,10 @@ Sets maximum number of egress \(consumer\) flows.
 
 `MAX_INGRESS_FLOWS` 
 
-
-
 </td>
 <td valign="top">
 
 Sets maximum number of ingress \(publisher\) flows.
-
-
 
 </td>
 </tr>
@@ -529,14 +407,10 @@ Sets maximum number of ingress \(publisher\) flows.
 
 `MAX_TRANSACTED_SESSIONS` 
 
-
-
 </td>
 <td valign="top">
 
 Sets maximum number of simultaneous transacted sessions.
-
-
 
 </td>
 </tr>
@@ -545,14 +419,10 @@ Sets maximum number of simultaneous transacted sessions.
 
 `MAX_TRANSACTIONS` 
 
-
-
 </td>
 <td valign="top">
 
 Sets maximum number of simultaneous transactions.
-
-
 
 </td>
 </tr>
@@ -561,14 +431,10 @@ Sets maximum number of simultaneous transactions.
 
 `MAX_SUBSCRIPTIONS` 
 
-
-
 </td>
 <td valign="top">
 
 Sets maximum number of client subscriptions.
-
-
 
 </td>
 </tr>

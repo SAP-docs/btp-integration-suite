@@ -61,14 +61,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -77,14 +73,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -101,14 +93,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -116,8 +104,6 @@ Description
 <td valign="top">
 
 *Operation* 
-
-
 
 </td>
 <td valign="top">
@@ -150,8 +136,6 @@ The following operations are supported:
 
 *Data Type* 
 
-
-
 </td>
 <td valign="top">
 
@@ -161,16 +145,12 @@ For example, if the value `LStA_2019` is specified, the method *ElsterAnmeldung*
 
 You can also dynamically configure this parameter with an expression such like `${header.datatype}` or `${property.datatype}` to retrieve the data format dynamically at runtime.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Private Key Alias for Encryption* 
-
-
 
 </td>
 <td valign="top">
@@ -181,16 +161,12 @@ Note that X.509 key pair needs to be uploaded to the tenant keystore to set up t
 
 You can also dynamically configure this parameter with an expression such like `${header.encryptionkey}` or `${property.encryptionkey}` to dynamically retrieve its value at runtime.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Private Key Alias for Signing* 
-
-
 
 </td>
 <td valign="top">
@@ -202,8 +178,6 @@ Alias for the key pair \(private part\) to be used for message signing. Note tha
 You can also dynamically configure this parameter with an expression such like `${header.signaturekey}` or `${property.signaturekey}` to dynamically retrieve its value at runtime.
 
 You can also dynamically configure this parameter with an expression such like $\{header.signaturekey\} to dynamically retrieve its value at runtime.
-
-
 
 </td>
 </tr>

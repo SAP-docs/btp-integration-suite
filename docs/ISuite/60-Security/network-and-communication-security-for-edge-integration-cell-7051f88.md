@@ -15,28 +15,20 @@ The following table provides an overview of communication flows between a cloud 
 
 Flow
 
-
-
 </th>
 <th valign="top">
 
 In/Out
-
-
 
 </th>
 <th valign="top">
 
 Protocol
 
-
-
 </th>
 <th valign="top">
 
 Details
-
-
 
 </th>
 </tr>
@@ -45,28 +37,20 @@ Details
 
 Edge Deploy Controller
 
-
-
 </td>
 <td valign="top">
 
 Out
-
-
 
 </td>
 <td valign="top">
 
 HTTPS
 
-
-
 </td>
 <td valign="top">
 
 Used to synchronize content from an object store.
-
-
 
 </td>
 </tr>
@@ -75,28 +59,20 @@ Used to synchronize content from an object store.
 
 Edge Security Artifact Controller
 
-
-
 </td>
 <td valign="top">
 
 Out
-
-
 
 </td>
 <td valign="top">
 
 HTTPS
 
-
-
 </td>
 <td valign="top">
 
 Used to synchronize security material from a secure store.
-
-
 
 </td>
 </tr>
@@ -105,28 +81,20 @@ Used to synchronize security material from a secure store.
 
 Edge Event Controller
 
-
-
 </td>
 <td valign="top">
 
 Out
-
-
 
 </td>
 <td valign="top">
 
 Websocket
 
-
-
 </td>
 <td valign="top">
 
 Used to transfer events.
-
-
 
 </td>
 </tr>
@@ -135,28 +103,20 @@ Used to transfer events.
 
 Policy Engine
 
-
-
 </td>
 <td valign="top">
 
 Out
-
-
 
 </td>
 <td valign="top">
 
 HTTPS
 
-
-
 </td>
 <td valign="top">
 
 Used to authenticate and authorize users via XSUAA.
-
-
 
 </td>
 </tr>
@@ -165,28 +125,20 @@ Used to authenticate and authorize users via XSUAA.
 
 Worker
 
-
-
 </td>
 <td valign="top">
 
 Out
-
-
 
 </td>
 <td valign="top">
 
 HTTPS
 
-
-
 </td>
 <td valign="top">
 
 Used to read configuration from a secure store.
-
-
 
 </td>
 </tr>
@@ -195,28 +147,20 @@ Used to read configuration from a secure store.
 
 API Application
 
-
-
 </td>
 <td valign="top">
 
 In
-
-
 
 </td>
 <td valign="top">
 
 HTTPS
 
-
-
 </td>
 <td valign="top">
 
 Monitoring and operations API calls from the cloud.
-
-
 
 </td>
 </tr>
@@ -225,28 +169,20 @@ Monitoring and operations API calls from the cloud.
 
 XSUAA
 
-
-
 </td>
 <td valign="top">
 
 Out
-
-
 
 </td>
 <td valign="top">
 
 HTTPS
 
-
-
 </td>
 <td valign="top">
 
 Used by all components when accessing cloud services.
-
-
 
 </td>
 </tr>

@@ -20,15 +20,11 @@ The analytics information can be viewed as *Performance Analytics* and *Error An
     <th valign="top">
 
     Chart Name
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -36,15 +32,11 @@ The analytics information can be viewed as *Performance Analytics* and *Error An
     <td valign="top">
     
     Traffic Across all APIs
-
-
     
     </td>
     <td valign="top">
     
     This chart displays total API calls made across all applications.
-
-
     
     </td>
     </tr>
@@ -52,15 +44,11 @@ The analytics information can be viewed as *Performance Analytics* and *Error An
     <td valign="top">
     
     Slowest APIs
-
-
     
     </td>
     <td valign="top">
     
     This chart displays the slowest APIs based on the API response time.
-
-
     
     </td>
     </tr>
@@ -68,15 +56,11 @@ The analytics information can be viewed as *Performance Analytics* and *Error An
     <td valign="top">
     
     Top APIs
-
-
     
     </td>
     <td valign="top">
     
     This chart displays most frequently used APIs.
-
-
     
     </td>
     </tr>
@@ -84,15 +68,11 @@ The analytics information can be viewed as *Performance Analytics* and *Error An
     <td valign="top">
     
     Top Products
-
-
     
     </td>
     <td valign="top">
     
     This chart displays most frequently used products based on the number of calls made to the APIs associated with the product.
-
-
     
     </td>
     </tr>
@@ -100,15 +80,11 @@ The analytics information can be viewed as *Performance Analytics* and *Error An
     <td valign="top">
     
     Top Applications
-
-
     
     </td>
     <td valign="top">
     
     This chart displays most frequently used applications based on the number of calls made to the APIs associated with the application.
-
-
     
     </td>
     </tr>
@@ -124,15 +100,11 @@ The analytics information can be viewed as *Performance Analytics* and *Error An
     <th valign="top">
 
     Chart Name
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -140,15 +112,11 @@ The analytics information can be viewed as *Performance Analytics* and *Error An
     <td valign="top">
     
     Total Errors
-
-
     
     </td>
     <td valign="top">
     
     This chart displays total errors.
-
-
     
     </td>
     </tr>
@@ -156,15 +124,11 @@ The analytics information can be viewed as *Performance Analytics* and *Error An
     <td valign="top">
     
     Error Prone APIs
-
-
     
     </td>
     <td valign="top">
     
     This chart displays number of errors per API.
-
-
     
     </td>
     </tr>
@@ -172,15 +136,11 @@ The analytics information can be viewed as *Performance Analytics* and *Error An
     <td valign="top">
     
     Error Prone Applications
-
-
     
     </td>
     <td valign="top">
     
     This chart displays number of errors per API associated with the application.
-
-
     
     </td>
     </tr>

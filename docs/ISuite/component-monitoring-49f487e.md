@@ -17,14 +17,10 @@ Click on the tile to get a details view. On the screen, you see a table with the
 
 *Component*
 
-
-
 </td>
 <td valign="top">
 
 Name of the component in alphabetical order. The color indicates the status with green indicating *Running* \(:heavy_check_mark:\) and red indicating *Error* \(<span class="SAP-icons"></span> Error\).
-
-
 
 </td>
 </tr>
@@ -33,14 +29,10 @@ Name of the component in alphabetical order. The color indicates the status with
 
 *Pod Name*
 
-
-
 </td>
 <td valign="top">
 
 Technical name of the pod.
-
-
 
 </td>
 </tr>
@@ -49,14 +41,10 @@ Technical name of the pod.
 
 *Ready*
 
-
-
 </td>
 <td valign="top">
 
 Number of resources.
-
-
 
 </td>
 </tr>
@@ -64,8 +52,6 @@ Number of resources.
 <td valign="top">
 
 *Status*
-
-
 
 </td>
 <td valign="top">
@@ -86,14 +72,10 @@ Status of Resources:
 
 *Restarts*
 
-
-
 </td>
 <td valign="top">
 
 Number showing the restarts made.
-
-
 
 </td>
 </tr>

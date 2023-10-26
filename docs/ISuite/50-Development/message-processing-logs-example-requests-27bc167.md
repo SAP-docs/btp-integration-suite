@@ -15,14 +15,10 @@ For more example requests, see:
 
 Logs
 
-
-
 </td>
 <td valign="top">
 
 [Get Message Processing Logs for a Dedicated Time Period](get-message-processing-logs-for-a-dedicated-time-period-71cb264.md) 
-
-
 
 </td>
 </tr>
@@ -31,14 +27,10 @@ Logs
 
 Custom Header Properties
 
-
-
 </td>
 <td valign="top">
 
 [Get Custom Header Properties](get-custom-header-properties-b90b0b5.md) 
-
-
 
 </td>
 </tr>

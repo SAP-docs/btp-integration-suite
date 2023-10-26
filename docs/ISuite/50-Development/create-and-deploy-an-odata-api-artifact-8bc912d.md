@@ -24,7 +24,7 @@ An OData API artifact creates an OData API-based integration scenario with OData
 
 ## Procedure
 
-1.  Choose *Design* \> *Integrations*.
+1.  Choose *Design* \> *Integrations and APIs*.
 
 2.  Choose *Create*.
 
@@ -82,7 +82,7 @@ You can check the status of all your integration artifacts in the *Monitor* view
 
 ## Procedure
 
-1.  Choose *Monitor* \> *Integrations*.
+1.  Choose *Monitor* \> *Integrations and APIs*.
 
 2.  Under *Manage Integration Content*, add a new tile.
 

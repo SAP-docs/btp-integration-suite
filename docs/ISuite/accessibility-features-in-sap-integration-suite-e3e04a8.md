@@ -18,14 +18,10 @@ The SAP Integration Suite home page adheres to the accessibility features for SA
 
 Capability
 
-
-
 </th>
 <th valign="top">
 
 Link
-
-
 
 </th>
 </tr>
@@ -34,14 +30,10 @@ Link
 
 SAP Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 [Accessibility Features in Cloud Integration](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/c7be6b629e4c482c9302895dfae3e9ba.html?version=Cloud)
-
-
 
 </td>
 </tr>
@@ -50,14 +42,10 @@ SAP Cloud Integration
 
 SAP Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 [Accessibility Features in SAP Integration Advisor](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/2b33756e84fc43879405a5e3efe4e520.html?version=Cloud)
-
-
 
 </td>
 </tr>
@@ -66,14 +54,10 @@ SAP Integration Advisor
 
 API Management
 
-
-
 </td>
 <td valign="top">
 
 [Accessibility Features in API Management](https://help.sap.com/docs/SAP_CLOUD_PLATFORM_API_MANAGEMENT/66d066d903c2473f81ec33acfe2ccdb4/479e5b4e0ba44a978acba41e6b80e1d9.html?version=Cloud)
-
-
 
 </td>
 </tr>
@@ -82,14 +66,10 @@ API Management
 
 SAP Trading Partner Management
 
-
-
 </td>
 <td valign="top">
 
 [Accessibility Features in SAP Trading Partner Management](accessibility-features-in-sap-trading-partner-management-c17213a.md)
-
-
 
 </td>
 </tr>

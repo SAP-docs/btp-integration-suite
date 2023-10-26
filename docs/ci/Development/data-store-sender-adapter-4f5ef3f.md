@@ -58,14 +58,10 @@ Go to the *General* tab to configure the following adapter parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -74,14 +70,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -98,14 +90,10 @@ Go to the *Connection* tab to configure the following adapter parameters.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -114,8 +102,6 @@ Description
 
 *Data Store Name*
 
-
-
 </td>
 <td valign="top">
 
@@ -123,16 +109,12 @@ Specifies the name of the data store \(no white spaces\).
 
 The maximum length allowed for the data store name is 40 characters. If you enter a longer string, a validation error is raised. Note that this length restriction applies to the value that is used for this parameter at runtime.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Visibility*
-
-
 
 </td>
 <td valign="top">
@@ -146,16 +128,12 @@ Defines whether the data store is shared by all integration flows \(deployed on 
 
 For more information and guidelines how to use this parameter, see [Anticipate Message Throughput When Choosing a Storage Option](anticipate-message-throughput-when-choosing-a-storage-option-5b38765.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Poll Interval \(in s\)*
-
-
 
 </td>
 <td valign="top">
@@ -178,14 +156,10 @@ The poll interval only becomes effective as soon as the data store doesn't conta
 
 *Retry Interval \(in min\)*
 
-
-
 </td>
 <td valign="top">
 
 Enter a value for the amount of time to wait before retrying message delivery. The default is set to 1 min. The minimum is set to 1 min. The maximum is set to 1440 min \(24 hours\).
-
-
 
 </td>
 </tr>
@@ -194,14 +168,10 @@ Enter a value for the amount of time to wait before retrying message delivery. T
 
 *Exponential Backoff*
 
-
-
 </td>
 <td valign="top">
 
 Select this option to double the retry interval after each unsuccessful retry. By default, this option is deselected.
-
-
 
 </td>
 </tr>
@@ -210,14 +180,10 @@ Select this option to double the retry interval after each unsuccessful retry. B
 
 *Maximum Retry Interval \(in min\)*
 
-
-
 </td>
 <td valign="top">
 
 You can set an upper limit on that value to avoid an endless increase of the retry interval. The default value is 60 minutes. The minimum value is 10 minutes. The maximum is set to 1440 min \(24 hours\).
-
-
 
 </td>
 </tr>
@@ -226,14 +192,10 @@ You can set an upper limit on that value to avoid an endless increase of the ret
 
 *Lock Timeout \(in min\):*
 
-
-
 </td>
 <td valign="top">
 
 Enter a value for the timeout of the in-progress repository. After this time, a message is retried in case of a cluster outage. The default value is 10 minutes. The minimum value is 1 minute. The maximum is set to 300 min \(5 hours\).
-
-
 
 </td>
 </tr>

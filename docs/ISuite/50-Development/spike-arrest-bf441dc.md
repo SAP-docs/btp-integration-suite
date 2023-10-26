@@ -35,14 +35,10 @@ An example payload for the policy is as follows:
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -51,14 +47,10 @@ An example payload for the policy is as follows:
 
 Identifier ref
 
-
-
 </td>
 <td valign="top">
 
 Variable used for uniquely identifying the application or client.
-
-
 
 </td>
 </tr>
@@ -67,16 +59,12 @@ Variable used for uniquely identifying the application or client.
 
 MessageWeight ref
 
-
-
 </td>
 <td valign="top">
 
 Specifies the weight defined for each message.
 
 Message weight is used to modify the impact of a single request on the calculation of the SpikeArrest limit. Message weight can be set by variables based on HTTP headers, query parameters, or message body content. For example, if the SpikeArrest Rate is 10 per minute, and an application submits requests with weight 5, then only 2 messages are permitted per minute from that application.
-
-
 
 </td>
 </tr>
@@ -85,16 +73,12 @@ Message weight is used to modify the impact of a single request on the calculati
 
 Rate
 
-
-
 </td>
 <td valign="top">
 
 Specifies the rate at which to limit the traffic spike \(or burst\).
 
 Valid value: integer per <min\> or <sec\> or <variable\>.
-
-
 
 </td>
 </tr>
@@ -111,28 +95,20 @@ When a Spike Arrest policy executes, the following Flow variable is populated:
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Permission
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -141,28 +117,20 @@ Description
 
 ratelimit.\{policy\_name\}.failed
 
-
-
 </td>
 <td valign="top">
 
 Boolean
-
-
 
 </td>
 <td valign="top">
 
 Read-Only
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether or not the policy failed \(true or false\).
-
-
 
 </td>
 </tr>
@@ -179,21 +147,15 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 HTTP Status
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -202,21 +164,15 @@ Cause
 
 SpikeArrestViolation
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 The rate limit is exceeded.
-
-
 
 </td>
 </tr>
@@ -225,21 +181,15 @@ The rate limit is exceeded.
 
 InvalidMessageWeight
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 The message weight value must be an integer.
-
-
 
 </td>
 </tr>
@@ -248,21 +198,15 @@ The message weight value must be an integer.
 
 FailedToResolveSpikeArrestRate
 
-
-
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 The referenced variable used to specify the rate can't be resolved.
-
-
 
 </td>
 </tr>
@@ -279,21 +223,15 @@ Following fault variables are set when the policy triggers an error at runtime:
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -302,8 +240,6 @@ Example
 
 \[prefix\].\[policy\_name\].failed
 
-
-
 </td>
 <td valign="top">
 
@@ -311,14 +247,10 @@ The fault variable \[prefix\] is ratelimit.
 
 The \[policy\_name\] is the name of the policy that threw the error.
 
-
-
 </td>
 <td valign="top">
 
 ratelimit.SA-SpikeArrestPolicy.failed = true
-
-
 
 </td>
 </tr>
@@ -327,21 +259,15 @@ ratelimit.SA-SpikeArrestPolicy.failed = true
 
 fault.\[error\_name\]
 
-
-
 </td>
 <td valign="top">
 
 \[error\_name\] = The specific error name to check for as listed in the table above.
 
-
-
 </td>
 <td valign="top">
 
 fault.name Matches "SpikeArrestViolation"
-
-
 
 </td>
 </tr>

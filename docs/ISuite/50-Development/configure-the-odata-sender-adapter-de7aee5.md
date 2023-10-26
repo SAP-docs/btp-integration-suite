@@ -29,14 +29,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -45,14 +41,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -69,14 +61,10 @@ Select the *Adapter Specific* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -85,16 +73,12 @@ Description
 
 *Authorization* 
 
-
-
 </td>
 <td valign="top">
 
 Select *User Role* if you want to authorize a user to send OData requests based on the ESBMessaging.send.
 
 Select *Client Certificate* if you want to authorize a user to send OData requests based on a certificate. If you select this option, you've to add and enter the *Subject DN* \(information used to authorize the sender\) and *Issuer DN* \(information about the Certificate Authority who issues the certificate\).
-
-
 
 </td>
 </tr>
@@ -105,16 +89,12 @@ Select *Client Certificate* if you want to authorize a user to send OData reques
 
 \(only if you select *Authorization* as *User Role*\).
 
-
-
 </td>
 <td valign="top">
 
 The user role that you're using for authorization. Choose *Select* to get a list of all the available user roles for your tenant and select the one that you want to use.
 
 For more information on user roles, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
-
-
 
 </td>
 </tr>
@@ -125,14 +105,10 @@ For more information on user roles, see [Tasks and Permissions](https://help.sap
 
 \(only if you select *Authorization* as *Client Certificate*\).
 
-
-
 </td>
 <td valign="top">
 
 The client certificate that you're using for authorization. Choose *Add* to add a new row and then choose *Select* to add the *Subject DN* and *Issuer DN*.
-
-
 
 </td>
 </tr>
@@ -141,14 +117,10 @@ The client certificate that you're using for authorization. Choose *Add* to add 
 
 *EDMX* 
 
-
-
 </td>
 <td valign="top">
 
 Select the EDMX file that contains the OData API definition.
-
-
 
 </td>
 </tr>
@@ -157,14 +129,10 @@ Select the EDMX file that contains the OData API definition.
 
 *Operation* 
 
-
-
 </td>
 <td valign="top">
 
 Select the operation that you want to perform on the selected *Entity Set* in the OData API.
-
-
 
 </td>
 </tr>
@@ -173,14 +141,10 @@ Select the operation that you want to perform on the selected *Entity Set* in th
 
 *Entity Set* 
 
-
-
 </td>
 <td valign="top">
 
 Entity set in the OData API that you want to perform the operation on.
-
-
 
 </td>
 </tr>

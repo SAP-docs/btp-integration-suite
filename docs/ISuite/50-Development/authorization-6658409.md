@@ -15,14 +15,10 @@ Different iFlow sender channels may have different authorizations and roles. For
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Description
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 The internal name of the policy. The value of the name attribute can contain letters, numbers, spaces, hyphens, underscores, and periods. This value cannot exceed 255 characters.
-
-
 
 </td>
 </tr>
@@ -47,16 +39,12 @@ The internal name of the policy. The value of the name attribute can contain let
 
 Claim
 
-
-
 </td>
 <td valign="top">
 
 Claims are assertions that a user or an authorization server makes about itself or another subject. For example, an ID Token will consist of some claims with information about the user, maybe their first and last name, e-mail address, etc.
 
 Enter the claim value as it is expected to appear in the token. For example, user\_name or clientId.
-
-
 
 </td>
 </tr>

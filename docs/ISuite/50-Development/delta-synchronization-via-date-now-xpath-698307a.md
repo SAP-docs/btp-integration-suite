@@ -22,29 +22,21 @@ It works as follows:
     <th valign="top">
 
     Name
-
-
     
     </th>
     <th valign="top">
 
     Type
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     <th valign="top">
 
     Default Value
-
-
     
     </th>
     </tr>
@@ -52,29 +44,21 @@ It works as follows:
     <td valign="top">
     
     lastSync
-
-
     
     </td>
     <td valign="top">
     
     Local Variable
-
-
     
     </td>
     <td valign="top">
     
     timestamp\_DS\_DateNow
-
-
     
     </td>
     <td valign="top">
     
     \{\{defaultDate\}\}
-
-
     
     </td>
     </tr>
@@ -82,29 +66,21 @@ It works as follows:
     <td valign="top">
     
     dateNow
-
-
     
     </td>
     <td valign="top">
     
     Expression
-
-
     
     </td>
     <td valign="top">
     
     $\{date:now:yyyy-MM-dd'T'HH:mm:ss.000\}
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -128,15 +104,11 @@ It works as follows:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -144,15 +116,11 @@ It works as follows:
     <td valign="top">
     
     Operation Details
-
-
     
     </td>
     <td valign="top">
     
     GET
-
-
     
     </td>
     </tr>
@@ -160,15 +128,11 @@ It works as follows:
     <td valign="top">
     
     Resource Path
-
-
     
     </td>
     <td valign="top">
     
     MessageProcessingLogs
-
-
     
     </td>
     </tr>
@@ -176,15 +140,11 @@ It works as follows:
     <td valign="top">
     
     Query Options
-
-
     
     </td>
     <td valign="top">
     
     $select=MessageGuid, Status, LogStart&$filter=LogStart gt datetime'$\{property.lastSync\}' and LogStart lt datetime'$\{property.dateNow\}'
-
-
     
     </td>
     </tr>

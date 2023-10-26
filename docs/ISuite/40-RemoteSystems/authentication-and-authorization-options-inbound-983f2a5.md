@@ -32,14 +32,10 @@ For inbound communication based on HTTPS, the authentication and authorization o
 
 Authentication Option ...
 
-
-
 </th>
 <th valign="top">
 
 Can Be Used with the Following Authorization Option ...
-
-
 
 </th>
 </tr>
@@ -49,8 +45,6 @@ Can Be Used with the Following Authorization Option ...
 Basic authentication
 
 The sender \(client\) authenticates itself against the server based on user credentials \(user name and password\). The HTTP header of the inbound message \(from the sender\) contains the user name and password.
-
-
 
 </td>
 <td valign="top">
@@ -73,16 +67,12 @@ Client-certificate authentication
 
 The sender \(client\) authenticates itself against the server based on a digital client certificate.
 
-
-
 </td>
 <td valign="top">
 
 Subject/Issuer DN authorization check of a certificate
 
 In a subsequent authorization check, the permissions of the sender are checked on the tenant by evaluating the distinguished name \(DN\) of the client certificate of the sender.
-
-
 
 </td>
 </tr>
@@ -102,8 +92,6 @@ Grants access to resources of SAP Cloud Integration without the need to share pa
 <td valign="top">
 
 Role-based authorization
-
-
 
 </td>
 </tr>

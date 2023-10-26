@@ -17,14 +17,10 @@ The following table provides examples of how to use the Script step with this in
 
 Use Case
 
-
-
 </th>
 <th valign="top">
 
 Example Requests / More Information
-
-
 
 </th>
 </tr>
@@ -32,8 +28,6 @@ Example Requests / More Information
 <td valign="top">
 
 Access SOAP headers
-
-
 
 </td>
 <td valign="top">
@@ -128,8 +122,6 @@ The resulting SOAP header is \(as part of an example SOAP message\):
 You can find an example scenario using GroovyScript in this SAP Community blog: [Cloud Integration – Accessing and Setting SOAP Headers in an Integration Flow](https://blogs.sap.com/2019/04/08/cloud-integration-accessing-and-setting-soap-headers-in-an-integration-flow/).
 
 See also: [Setting and Getting SOAP Headers](setting-and-getting-soap-headers-65c70da.md).
-
-
 
 </td>
 </tr>

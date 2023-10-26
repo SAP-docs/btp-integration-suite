@@ -52,5 +52,5 @@ If you want to modify an activated agreement and reactivate it, you can do so by
 
 [Export Data](export-data-c387134.md "")
 
-[Integration Flow Configuration](integration-flow-configuration-0ff6229.md "Configure your integration flows to test the end to end scenario in SAP Integration Suite .")
+[Integration Flow Configuration](integration-flow-configuration-0ff6229.md "Configure your integration flows to test the end to end scenario in SAP Integration Suite.")
 

@@ -15,14 +15,10 @@ The start page is subdivided into the following sections, each covering a specif
 
 Container
 
-
-
 </th>
 <th valign="top">
 
 Allows you to ...
-
-
 
 </th>
 </tr>
@@ -31,8 +27,6 @@ Allows you to ...
 
 *Monitor Message Processing* 
 
-
-
 </td>
 <td valign="top">
 
@@ -40,16 +34,12 @@ Monitor message processing on the tenant.
 
 Tiles in this section show the number and status of processed messages within a specified time window.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Manage Integration Content* 
-
-
 
 </td>
 <td valign="top">
@@ -60,16 +50,12 @@ Tiles in this section show the number and status of integration content artifact
 
 In the Cloud Foundry environment, you can also specifically monitor the *Integration Adapter*.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Manage Security* 
-
-
 
 </td>
 <td valign="top">
@@ -100,16 +86,12 @@ The *User Roles* tile provides an overview of the existing user roles and allows
 
 The *Connectivity Tests* tile allows you to test the connectivity to a receiver system.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Manage Stores* 
-
-
 
 </td>
 <td valign="top">
@@ -127,16 +109,12 @@ The *Message Queues* tile provides an overview of the active queues of a tenant 
 
 The *Number Ranges* tile provides an overview of number ranges that are used in business-to-business scenarios.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Access Logs* 
-
-
 
 </td>
 <td valign="top">
@@ -160,8 +138,6 @@ To access audit logs \(resulting from system changes\)
 
 *Manage Locks* 
 
-
-
 </td>
 <td valign="top">
 
@@ -170,8 +146,6 @@ Manage message lock as well as the design artifact lock entries.
 The *Message Lock* tile provides an overview of the lock entries that are created \(in the in-progress repository\) to avoid the same message being processed several times in parallel, and allows you to manage them.
 
 The *Designtime Artifact Locks* tile provides an overview of the locked design time artifacts and allows you to manage them.
-
-
 
 </td>
 </tr>

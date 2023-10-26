@@ -60,14 +60,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -76,14 +72,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -100,14 +92,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -115,8 +103,6 @@ Description
 <td valign="top">
 
 *Address*
-
-
 
 </td>
 <td valign="top">
@@ -137,14 +123,10 @@ Relative endpoint address on which the integration runtime expects incoming requ
 
 *Use WS-Addressing* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option to accept addressing information from message information headers \(provided by the sender\) during runtime.
-
-
 
 </td>
 </tr>
@@ -152,8 +134,6 @@ Select this option to accept addressing information from message information hea
 <td valign="top">
 
 *URL to WSDL* 
-
-
 
 </td>
 <td valign="top">
@@ -191,8 +171,6 @@ The WSDL download doesn't work for WSDLs with external references because these 
 
 For more information on how to work with WSDL resources, refer to the following blog: [Cloud Integration – Usage of WSDLs in the SOAP Adapter](https://blogs.sap.com/2018/06/28/cloud-integration-usage-of-wsdls-in-the-soap-adapter/)
 
-
-
 </td>
 </tr>
 <tr>
@@ -200,14 +178,10 @@ For more information on how to work with WSDL resources, refer to the following 
 
 *Service* 
 
-
-
 </td>
 <td valign="top">
 
 Name of the selected service contained in the referenced WSDL.
-
-
 
 </td>
 </tr>
@@ -216,14 +190,10 @@ Name of the selected service contained in the referenced WSDL.
 
 *Endpoint* 
 
-
-
 </td>
 <td valign="top">
 
 Name of the selected endpoint of  a selected service \(that you provide in the Service Name field\) contained in the referenced WSDL.
-
-
 
 </td>
 </tr>
@@ -233,8 +203,6 @@ Name of the selected endpoint of  a selected service \(that you provide in the 
 *Processing Settings*
 
 \(only relevant for the one-way exchange pattern\)
-
-
 
 </td>
 <td valign="top">
@@ -293,14 +261,10 @@ Select the *WS-Security* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -308,8 +272,6 @@ Description
 <td valign="top">
 
 *WS-Security Configuration* 
-
-
 
 </td>
 <td valign="top">
@@ -336,8 +298,6 @@ Specifies the way how WS-Security settings are to be configured.
 
 *WS-Security Type*
 
-
-
 </td>
 <td valign="top">
 
@@ -354,8 +314,6 @@ Specifies the combination of message protection methods that are to be applied. 
 
 More information: [WS-Security Configuration for the Sender SOAP 1.x Adapter](ws-security-configuration-for-the-sender-soap-1-x-adapter-e53bb5c.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -363,16 +321,12 @@ More information: [WS-Security Configuration for the Sender SOAP 1.x Adapter](ws
 
 *Private Key Alias for Response Signing*
 
-
-
 </td>
 <td valign="top">
 
 Specify an alias for the private key that is to be used to sign the response message.
 
 The tenant private key is used to sign the response message \(that is sent back to the sender/WS consumer\). The tenant private key has to be part of the tenant keystore.
-
-
 
 </td>
 </tr>
@@ -383,16 +337,12 @@ The tenant private key is used to sign the response message \(that is sent back 
 
 \(only if for *WS-Security Type* the option *Verify and Decrypt Message and Sign and Encrypt Message* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Specify an alias for the public key that is to be used to encrypt the response message \(that is sent back to the sender/WS consumer\)..
 
 The sender public key is used to sign the response message. This key has to be part of the tenant keystore.
-
-
 
 </td>
 </tr>
@@ -402,8 +352,6 @@ The sender public key is used to sign the response message. This key has to be p
 *Signing Order* 
 
 \(only if for *WS-Security Type* the option *Verify and Decrypt Message and Sign and Encrypt Message* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -422,14 +370,10 @@ Defines the order in which signing and encryption must be applied. There are the
 
 *Algorithm Suite Assertion*
 
-
-
 </td>
 <td valign="top">
 
 Specifies which algorithms are to be used by the WS consumer.
-
-
 
 </td>
 </tr>
@@ -438,14 +382,10 @@ Specifies which algorithms are to be used by the WS consumer.
 
 *Save Incoming Signed Message*
 
-
-
 </td>
 <td valign="top">
 
 Select this option if the incoming signed \(and encrypted\) message is to be stored.
-
-
 
 </td>
 </tr>
@@ -454,16 +394,12 @@ Select this option if the incoming signed \(and encrypted\) message is to be sto
 
 *Check Time Stamp*
 
-
-
 </td>
 <td valign="top">
 
 Select this option, if the sender \(WS consumer\) sends a time stamp along with the message.
 
 In case a request-response pattern is configured, a time stamp is added to the response message.
-
-
 
 </td>
 </tr>
@@ -472,8 +408,6 @@ In case a request-response pattern is configured, a time stamp is added to the r
 
 *Sender is Basic Security Profile Compliant*
 
-
-
 </td>
 <td valign="top">
 
@@ -481,16 +415,12 @@ As default setting, select this option.
 
 This option should be selected in case the sender system supports a dedicated security level that is described by the Basic Security Profile \(as assumed to be the case for most systems\). Only in case the sender system doesn't support this security profile, deselect this option.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Initiator Token*
-
-
 
 </td>
 <td valign="top">
@@ -512,8 +442,6 @@ This option should be selected in case the sender system supports a dedicated se
 <td valign="top">
 
 *Recipient Token*
-
-
 
 </td>
 <td valign="top">
@@ -548,14 +476,10 @@ Select the *Conditions* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -563,8 +487,6 @@ Description
 <td valign="top">
 
 Maximum Message Size
-
-
 
 </td>
 <td valign="top">
@@ -579,8 +501,6 @@ To configure the maximum message size, you can specify the following parameters:
 
 
 If a message is rejected because it exceeds the configured limit, the sender receives an error message.
-
-
 
 </td>
 </tr>

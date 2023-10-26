@@ -15,14 +15,10 @@ The following states can be set for an API proxy:
 
 State
 
-
-
 </th>
 <th valign="top">
 
 Information
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Information
 
 `Alpha`
 
-
-
 </td>
 <td valign="top">
 
 A version of an API meant for exploratory purposes.
-
-
 
 </td>
 </tr>
@@ -47,14 +39,10 @@ A version of an API meant for exploratory purposes.
 
 `Beta`
 
-
-
 </td>
 <td valign="top">
 
 A version of an API that isn't meant for productive use.
-
-
 
 </td>
 </tr>
@@ -63,14 +51,10 @@ A version of an API that isn't meant for productive use.
 
 `Active`
 
-
-
 </td>
 <td valign="top">
 
 A version of an API that is meant for productive use.
-
-
 
 </td>
 </tr>
@@ -79,14 +63,10 @@ A version of an API that is meant for productive use.
 
 `Deprecated`
 
-
-
 </td>
 <td valign="top">
 
 When an API is marked as deprecated, the customer is encouraged to use a successor API.
-
-
 
 </td>
 </tr>
@@ -95,14 +75,10 @@ When an API is marked as deprecated, the customer is encouraged to use a success
 
 `Decommissioned`
 
-
-
 </td>
 <td valign="top">
 
 A version of an API where the service is no longer available, and can't be used productively.
-
-
 
 </td>
 </tr>

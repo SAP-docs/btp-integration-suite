@@ -10,7 +10,7 @@ Perform various tasks with the artifacts and the integration package.
 
 ## Procedure
 
-1.  Choose *Design* \> *Integrations* to view the list of integration packages.
+1.  Choose *Design* \> *Integrations and APIs* to view the list of integration packages.
 
 2.  If you want to view the details of an integration package, choose *<integration package name\>*.
 

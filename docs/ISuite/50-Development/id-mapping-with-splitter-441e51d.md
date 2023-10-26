@@ -43,14 +43,10 @@ A *General Splitter* step with the following settings splits a message containin
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -59,14 +55,10 @@ Setting
 
 *Expression Type* 
 
-
-
 </td>
 <td valign="top">
 
 `XPath` 
-
-
 
 </td>
 </tr>
@@ -75,14 +67,10 @@ Setting
 
 *XPath Expression* 
 
-
-
 </td>
 <td valign="top">
 
 `//Item` 
-
-
 
 </td>
 </tr>
@@ -91,14 +79,10 @@ Setting
 
 *Parallel Processing* 
 
-
-
 </td>
 <td valign="top">
 
 Is unselected to ensure sequential processing.
-
-
 
 </td>
 </tr>
@@ -126,14 +110,10 @@ If you check out the *Exchange Property* tab of the Content Modifier *Set unique
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -142,14 +122,10 @@ Setting
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 `SplitMessageID` 
-
-
 
 </td>
 </tr>
@@ -158,14 +134,10 @@ Setting
 
 *Type* 
 
-
-
 </td>
 <td valign="top">
 
 `Expression` 
-
-
 
 </td>
 </tr>
@@ -174,14 +146,10 @@ Setting
 
 *Data Type* 
 
-
-
 </td>
 <td valign="top">
 
 `java.lang.String` 
-
-
 
 </td>
 </tr>
@@ -190,14 +158,10 @@ Setting
 
 *Value* 
 
-
-
 </td>
 <td valign="top">
 
 `${header.SapMessageIdEx}_${header.CamelSplitIndex}` 
-
-
 
 </td>
 </tr>
@@ -214,14 +178,10 @@ The *ID Mapping* step is defined in the following way:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -230,16 +190,12 @@ Setting
 
 *Source Message ID* 
 
-
-
 </td>
 <td valign="top">
 
 `${property.SplitMessageID}`
 
 The source message ID is defined using the property defined in the previous Content Modifier.
-
-
 
 </td>
 </tr>
@@ -248,16 +204,12 @@ The source message ID is defined using the property defined in the previous Cont
 
 *Target Header Name* 
 
-
-
 </td>
 <td valign="top">
 
 `SapMessageIdEx`
 
 For each split item, the header `SapMessageIdEx` is overwritten with a newly generated ID.
-
-
 
 </td>
 </tr>
@@ -266,16 +218,12 @@ For each split item, the header `SapMessageIdEx` is overwritten with a newly gen
 
 *Context* 
 
-
-
 </td>
 <td valign="top">
 
 `IDMapperContext_01`
 
 Background: You define a unique context for each *ID Mapping* step within your integration flow. For any further *ID Mapping* step, you simply increment the number in the context name. In this scenario, there's 1 single *ID Mapping* step anyway. Therefore, we could have omitted the number without any side effect on the scenario.
-
-
 
 </td>
 </tr>
@@ -284,16 +232,12 @@ Background: You define a unique context for each *ID Mapping* step within your i
 
 *Visibility* 
 
-
-
 </td>
 <td valign="top">
 
 *Integration Flow*
 
 The generated IDs are unique within the same integration flow model. If your ID mapping is to be used across different integration flows, you need to select *Global*.
-
-
 
 </td>
 </tr>
@@ -302,14 +246,10 @@ The generated IDs are unique within the same integration flow model. If your ID 
 
 *Expiration Period \(in d\)* 
 
-
-
 </td>
 <td valign="top">
 
 `30` 
-
-
 
 </td>
 </tr>
@@ -335,15 +275,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -351,15 +287,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     `OWN`
-
-
     
     </td>
     </tr>
@@ -367,15 +299,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *User*
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -383,15 +311,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Password*
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

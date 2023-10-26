@@ -38,6 +38,8 @@ You've configured a source system as described in [Add an SAP Process Orchestrat
 
     The data extraction starts. Once the extraction finishes, the new request appears in the list of data extraction requests with status *Completed*.
 
+    If the extraction has status *Completed with warnings* or *Completed with errors*, open the extraction log and review the warnings and errors. Fix errors in your local SAP Process Orchestration system, otherwise they're not included in any scenario evaluations of this data extraction. Once you've fixed the errors, you must create a new data extraction.
+
 5.  Choose *Log* to view the data extraction log, which provides you with details about the data extraction.
 
 

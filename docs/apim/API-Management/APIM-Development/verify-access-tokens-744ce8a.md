@@ -39,14 +39,10 @@ The following optional elements can be used to override the default settings for
 
 **Name**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -54,8 +50,6 @@ The following optional elements can be used to override the default settings for
 <td valign="top">
 
 Scope
-
-
 
 </td>
 <td valign="top">
@@ -80,14 +74,10 @@ A space separated list of scopes that must be present in the access token for ve
 
 AccessToken
 
-
-
 </td>
 <td valign="top">
 
 The variable where the access token is expected to be located. For example, request.queryparam.accesstoken. By default, the access token is expected to be presented by the application in the Authorization HTTP header, according to the OAuth 2.0 specification. Use this setting if the access token is expected to be presented in a nonstandard location. Such location may be a query parameter, or an HTTP header with a name other than Authorization.
-
-
 
 </td>
 </tr>

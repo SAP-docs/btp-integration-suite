@@ -57,14 +57,10 @@ Path expressions are used for matching URI paths, using "\*" to represent a sing
 
 Pattern
 
-
-
 </th>
 <th valign="top">
 
 Sample URI paths matched
-
-
 
 </th>
 </tr>
@@ -73,14 +69,10 @@ Sample URI paths matched
 
 /\*/a/
 
-
-
 </td>
 <td valign="top">
 
 /x/a/ or /y/a/
-
-
 
 </td>
 </tr>
@@ -89,14 +81,10 @@ Sample URI paths matched
 
 /\*/a/\*
 
-
-
 </td>
 <td valign="top">
 
 /x/a/b or /y/a/foo
-
-
 
 </td>
 </tr>
@@ -105,14 +93,10 @@ Sample URI paths matched
 
 /\*/a/\*\*
 
-
-
 </td>
 <td valign="top">
 
 /x/a/b/c/d
-
-
 
 </td>
 </tr>
@@ -121,14 +105,10 @@ Sample URI paths matched
 
 /\*/a/\*/feed/
 
-
-
 </td>
 <td valign="top">
 
 /x/a/b/feed/ or /y/a/foo/feed/
-
-
 
 </td>
 </tr>
@@ -137,14 +117,10 @@ Sample URI paths matched
 
 /a/\*\*/feed/\*\*
 
-
-
 </td>
 <td valign="top">
 
 /a/b/feed/rss/1234
-
-
 
 </td>
 </tr>
@@ -180,21 +156,15 @@ When using operators, observe the following restrictions:
 
 Symbol
 
-
-
 </th>
 <th valign="top">
 
 In words \(case insensitive\)
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -203,21 +173,15 @@ Description
 
 !
 
-
-
 </td>
 <td valign="top">
 
 Not, not
 
-
-
 </td>
 <td valign="top">
 
 Unary operator \(takes a single input\)
-
-
 
 </td>
 </tr>
@@ -226,21 +190,15 @@ Unary operator \(takes a single input\)
 
 =
 
-
-
 </td>
 <td valign="top">
 
 Equals, Is
 
-
-
 </td>
 <td valign="top">
 
 Equals to
-
-
 
 </td>
 </tr>
@@ -249,21 +207,15 @@ Equals to
 
 !=
 
-
-
 </td>
 <td valign="top">
 
 NotEquals, IsNot
 
-
-
 </td>
 <td valign="top">
 
 Not equals
-
-
 
 </td>
 </tr>
@@ -272,21 +224,15 @@ Not equals
 
 :=
 
-
-
 </td>
 <td valign="top">
 
 EqualsCaseInsensitive
 
-
-
 </td>
 <td valign="top">
 
 Equals but is case insensitive
-
-
 
 </td>
 </tr>
@@ -295,21 +241,15 @@ Equals but is case insensitive
 
 \>
 
-
-
 </td>
 <td valign="top">
 
 GreaterThan
 
-
-
 </td>
 <td valign="top">
 
 Greater than
-
-
 
 </td>
 </tr>
@@ -318,21 +258,15 @@ Greater than
 
 \>=
 
-
-
 </td>
 <td valign="top">
 
 GreaterThanOrEquals
 
-
-
 </td>
 <td valign="top">
 
 Greater than or equal to
-
-
 
 </td>
 </tr>
@@ -341,21 +275,15 @@ Greater than or equal to
 
 <
 
-
-
 </td>
 <td valign="top">
 
 LesserThan
 
-
-
 </td>
 <td valign="top">
 
 Lesser than
-
-
 
 </td>
 </tr>
@@ -364,21 +292,15 @@ Lesser than
 
 <=
 
-
-
 </td>
 <td valign="top">
 
 LesserThanOrEquals
 
-
-
 </td>
 <td valign="top">
 
 Lesser than or equal to
-
-
 
 </td>
 </tr>
@@ -387,21 +309,15 @@ Lesser than or equal to
 
 &&
 
-
-
 </td>
 <td valign="top">
 
 And, and
 
-
-
 </td>
 <td valign="top">
 
 And
-
-
 
 </td>
 </tr>
@@ -410,21 +326,15 @@ And
 
 ||
 
-
-
 </td>
 <td valign="top">
 
 Or
 
-
-
 </td>
 <td valign="top">
 
 Or
-
-
 
 </td>
 </tr>
@@ -432,8 +342,6 @@ Or
 <td valign="top">
 
 \(
-
-
 
 </td>
 <td valign="top">
@@ -445,16 +353,12 @@ Or
 
 Groups an expression
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 \)
-
-
 
 </td>
 <td valign="top">
@@ -466,8 +370,6 @@ Groups an expression
 
 Closes an expression group
 
-
-
 </td>
 </tr>
 <tr>
@@ -475,21 +377,15 @@ Closes an expression group
 
 ~~
 
-
-
 </td>
 <td valign="top">
 
 JavaRegex
 
-
-
 </td>
 <td valign="top">
 
 Matches a javax.util.regex compliant regular expression.
-
-
 
 </td>
 </tr>
@@ -498,21 +394,15 @@ Matches a javax.util.regex compliant regular expression.
 
 ~
 
-
-
 </td>
 <td valign="top">
 
 Matches, Like
 
-
-
 </td>
 <td valign="top">
 
 Matches a glob-style pattern using the "\*" wildcard character.
-
-
 
 </td>
 </tr>
@@ -521,21 +411,15 @@ Matches a glob-style pattern using the "\*" wildcard character.
 
 ~/
 
-
-
 </td>
 <td valign="top">
 
 MatchesPath, LikePath
 
-
-
 </td>
 <td valign="top">
 
 Matches a path expression.
-
-
 
 </td>
 </tr>
@@ -544,21 +428,15 @@ Matches a path expression.
 
 =|
 
-
-
 </td>
 <td valign="top">
 
 StartsWith
 
-
-
 </td>
 <td valign="top">
 
 Starts with
-
-
 
 </td>
 </tr>
@@ -577,28 +455,20 @@ The following table shows the behavior when operands evaluate to null:
 
 Operator
 
-
-
 </th>
 <th valign="top">
 
 LHS null
-
-
 
 </th>
 <th valign="top">
 
 RHS null
 
-
-
 </th>
 <th valign="top">
 
 LHS and RHS null
-
-
 
 </th>
 </tr>
@@ -607,21 +477,15 @@ LHS and RHS null
 
 =, ==, :=
 
-
-
 </td>
 <td valign="top">
 
 false
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 <td valign="top">
@@ -635,28 +499,20 @@ false
 
 =|
 
+</td>
+<td valign="top">
 
+false
 
 </td>
 <td valign="top">
 
 false
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
-
-</td>
-<td valign="top">
-
-false
-
-
 
 </td>
 </tr>
@@ -665,28 +521,20 @@ false
 
 !=
 
-
-
 </td>
 <td valign="top">
 
 true
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 </tr>
@@ -695,8 +543,6 @@ false
 
 \>
 
-
-
 </td>
 <td valign="top">
 
@@ -707,14 +553,10 @@ false
 
 false
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 </tr>
@@ -723,21 +565,15 @@ false
 
 \>=
 
-
-
 </td>
 <td valign="top">
 
 false
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -751,8 +587,6 @@ false
 
 <
 
-
-
 </td>
 <td valign="top">
 
@@ -763,14 +597,10 @@ false
 
 false
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 </tr>
@@ -779,8 +609,6 @@ false
 
 <=
 
-
-
 </td>
 <td valign="top">
 
@@ -790,8 +618,6 @@ false
 <td valign="top">
 
 false
-
-
 
 </td>
 <td valign="top">
@@ -805,28 +631,20 @@ false
 
 ~
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 </tr>
@@ -835,28 +653,20 @@ false
 
 ~~
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 </tr>
@@ -865,8 +675,6 @@ false
 
 !~
 
-
-
 </td>
 <td valign="top">
 
@@ -877,14 +685,10 @@ false
 
 false
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 </tr>
@@ -893,28 +697,20 @@ false
 
 ~/
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 </tr>
@@ -944,63 +740,45 @@ In these cases, the system performs the adaptations shown in the following table
 
 RHS LHS
 
-
-
 </th>
 <th valign="top">
 
 Boolean
-
-
 
 </th>
 <th valign="top">
 
 Integer
 
-
-
 </th>
 <th valign="top">
 
 Long
-
-
 
 </th>
 <th valign="top">
 
 Float
 
-
-
 </th>
 <th valign="top">
 
 Double
-
-
 
 </th>
 <th valign="top">
 
 String
 
-
-
 </th>
 <th valign="top">
 
 Comparable
 
-
-
 </th>
 <th valign="top">
 
 Object
-
-
 
 </th>
 </tr>
@@ -1009,63 +787,45 @@ Object
 
 Boolean
 
-
-
 </td>
 <td valign="top">
 
 Boolean
-
-
 
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Long
-
-
 
 </td>
 <td valign="top">
 
 Float
 
-
-
 </td>
 <td valign="top">
 
 Double
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -1074,63 +834,45 @@ String
 
 Integer
 
+</td>
+<td valign="top">
 
+Integer
 
 </td>
 <td valign="top">
 
 Integer
 
-
-
-</td>
-<td valign="top">
-
-Integer
-
-
-
 </td>
 <td valign="top">
 
 Long
-
-
 
 </td>
 <td valign="top">
 
 Float
 
-
-
 </td>
 <td valign="top">
 
 Double
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Comparable
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -1139,63 +881,45 @@ Comparable
 
 Long
 
+</td>
+<td valign="top">
 
+Long
 
 </td>
 <td valign="top">
 
 Long
 
-
-
 </td>
 <td valign="top">
 
 Long
 
-
-
-</td>
-<td valign="top">
-
-Long
-
-
-
 </td>
 <td valign="top">
 
 Float
-
-
 
 </td>
 <td valign="top">
 
 Double
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Comparable
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -1204,63 +928,45 @@ Comparable
 
 Float
 
+</td>
+<td valign="top">
 
+Float
 
 </td>
 <td valign="top">
 
 Float
 
-
-
 </td>
 <td valign="top">
 
 Float
 
-
-
 </td>
 <td valign="top">
 
 Float
-
-
-
-</td>
-<td valign="top">
-
-Float
-
-
 
 </td>
 <td valign="top">
 
 Double
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Comparable
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -1269,63 +975,45 @@ Comparable
 
 Double
 
+</td>
+<td valign="top">
 
+Double
 
 </td>
 <td valign="top">
 
 Double
 
+</td>
+<td valign="top">
 
+Double
 
 </td>
 <td valign="top">
 
 Double
 
-
-
 </td>
 <td valign="top">
 
 Double
-
-
-
-</td>
-<td valign="top">
-
-Double
-
-
-
-</td>
-<td valign="top">
-
-Double
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Comparable
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -1334,63 +1022,45 @@ Comparable
 
 String
 
+</td>
+<td valign="top">
 
+String
 
 </td>
 <td valign="top">
 
 String
 
+</td>
+<td valign="top">
 
+String
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
-
-</td>
-<td valign="top">
-
-String
-
-
-
-</td>
-<td valign="top">
-
-String
-
-
 
 </td>
 <td valign="top">
 
 Comparable
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -1399,63 +1069,45 @@ Comparable
 
 Comparable
 
+</td>
+<td valign="top">
 
+Comparable
 
 </td>
 <td valign="top">
 
 Comparable
 
+</td>
+<td valign="top">
 
+Comparable
 
 </td>
 <td valign="top">
 
 Comparable
 
+</td>
+<td valign="top">
 
+Comparable
 
 </td>
 <td valign="top">
 
 Comparable
 
-
-
 </td>
 <td valign="top">
 
 Comparable
-
-
-
-</td>
-<td valign="top">
-
-Comparable
-
-
-
-</td>
-<td valign="top">
-
-Comparable
-
-
-
-</td>
-<td valign="top">
-
-Comparable
-
-
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -1464,63 +1116,45 @@ Comparable
 
 Object
 
+</td>
+<td valign="top">
 
+\-
 
 </td>
 <td valign="top">
 
 \-
 
+</td>
+<td valign="top">
 
+\-
 
 </td>
 <td valign="top">
 
 \-
 
+</td>
+<td valign="top">
 
+\-
 
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
-
-</td>
-<td valign="top">
-
-\-
-
-
-
-</td>
-<td valign="top">
-
-\-
-
-
-
-</td>
-<td valign="top">
-
-\-
-
-
 
 </td>
 </tr>

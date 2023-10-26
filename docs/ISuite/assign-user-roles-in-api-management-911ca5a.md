@@ -17,14 +17,10 @@ The following predefined roles are shipped with API Portal. These roles by defau
 
 Role Collection
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -33,14 +29,10 @@ Description
 
 `APIPortal.Administrator`
 
-
-
 </td>
 <td valign="top">
 
 Use this role to access the API portal user interface \(UI\) and services, manage the API proxies by adding additional policies. You can also use this role to manage APIs using the API Designer.
-
-
 
 </td>
 </tr>
@@ -49,14 +41,10 @@ Use this role to access the API portal user interface \(UI\) and services, manag
 
 `APIPortal.Service.CatalogIntegratio`n
 
-
-
 </td>
 <td valign="top">
 
 Use this role to establish a connection from the API business hub enterprise to the API portal.
-
-
 
 </td>
 </tr>
@@ -65,14 +53,10 @@ Use this role to establish a connection from the API business hub enterprise to 
 
 `APIManagement.Selfservice.Administrator`
 
-
-
 </td>
 <td valign="top">
 
 Use this role during the onboarding of API Portal and to get access to its settings page.
-
-
 
 </td>
 </tr>
@@ -81,14 +65,10 @@ Use this role during the onboarding of API Portal and to get access to its setti
 
 `APIPortal.Guest`
 
-
-
 </td>
 <td valign="top">
 
 Use this role to access the API portal in read-only mode. You can view all APIs, policies, API providers, and analytics, but can’t edit them.
-
-
 
 </td>
 </tr>
@@ -105,14 +85,10 @@ The following predefined roles are shipped with API business hub enterprise:
 
 Role Collection
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -121,14 +97,10 @@ Description
 
 `AuthGroup.SelfService.Admin`
 
-
-
 </td>
 <td valign="top">
 
 Use this role during the onboarding of API business hub enterprise and to get access to it.
-
-
 
 </td>
 </tr>
@@ -136,8 +108,6 @@ Use this role during the onboarding of API business hub enterprise and to get ac
 <td valign="top">
 
 `AuthGroup.API.Admin` 
-
-
 
 </td>
 <td valign="top">
@@ -162,8 +132,6 @@ Use this role to:
 
 `AuthGroup.ContentAuthor`
 
-
-
 </td>
 <td valign="top">
 
@@ -180,8 +148,6 @@ Use this role to:
 <td valign="top">
 
 `AuthGroup.API.ApplicationDeveloper`
-
-
 
 </td>
 <td valign="top">
@@ -209,8 +175,6 @@ Use this role to:
 
 `AuthGroup.Content.Admin` 
 
-
-
 </td>
 <td valign="top">
 
@@ -226,8 +190,6 @@ Use this role to:
 <td valign="top">
 
 `AuthGroup.Site.Admin` 
-
-
 
 </td>
 <td valign="top">

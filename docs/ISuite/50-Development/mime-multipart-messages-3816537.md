@@ -43,14 +43,10 @@ The following table summarizes how the *Encoder* step transforms the message dep
 
 Add Multipart Header Inline
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -58,8 +54,6 @@ Description
 <td valign="top">
 
 Selected
-
-
 
 </td>
 <td valign="top">
@@ -70,16 +64,12 @@ Body and attachments \(if available\) of the inbound message are added as separa
 
 Note that the message are also always transformed into a MIME multipart message, regardless whether it contains attachments or not.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Deselected
-
-
 
 </td>
 <td valign="top">
@@ -124,14 +114,10 @@ The following table summarizes how the *Decoder* step transforms the message dep
 
 Multipart Headers Inline
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -140,8 +126,6 @@ Description
 
 Selected
 
-
-
 </td>
 <td valign="top">
 
@@ -149,16 +133,12 @@ The Decoder transforms the first part of the multipart message into the message 
 
 In case the inbound message is, other than expected, no MIME multipart message with inline headers, the complete message body is interpreted as a preamble of the MIME multipart, and the resulting message is empty.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Deselected
-
-
 
 </td>
 <td valign="top">

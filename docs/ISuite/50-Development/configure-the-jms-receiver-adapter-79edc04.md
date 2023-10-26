@@ -44,14 +44,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -60,14 +56,10 @@ Description
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -84,14 +76,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -99,8 +87,6 @@ Description
 <td valign="top">
 
 *Queue Name*
-
-
 
 </td>
 <td valign="top">
@@ -123,14 +109,10 @@ You can dynamically configure this field, for instance, by using expressions lik
 
 *Retention Threshold for Alerting \(in d\)*
 
-
-
 </td>
 <td valign="top">
 
 Enter the time period \(in days\) by which the messages have to be fetched. The default value is 2.
-
-
 
 </td>
 </tr>
@@ -139,14 +121,10 @@ Enter the time period \(in days\) by which the messages have to be fetched. The 
 
 *Expiration Period \(in d\)*
 
-
-
 </td>
 <td valign="top">
 
 Enter the time period \(in days\) by which the messages have to be fetched. Specify a time period for *Expiration Period* which is no less than the number of days entered for the *Retention Threshold for Alerting*. The recommendation is to use at least twice the retention threshold. The default is set to 30.
-
-
 
 </td>
 </tr>
@@ -155,14 +133,10 @@ Enter the time period \(in days\) by which the messages have to be fetched. Spec
 
 *Compress Stored Message*
 
-
-
 </td>
 <td valign="top">
 
 Select this option to compress the message in the JMS queue. Compressing the message reduces disk space usage and network traffic.
-
-
 
 </td>
 </tr>
@@ -171,14 +145,10 @@ Select this option to compress the message in the JMS queue. Compressing the mes
 
 *Encrypt Stored Message* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option to encrypt the message in the JMS queue.
-
-
 
 </td>
 </tr>

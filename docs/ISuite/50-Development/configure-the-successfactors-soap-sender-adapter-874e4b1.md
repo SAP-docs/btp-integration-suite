@@ -34,14 +34,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -50,14 +46,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -74,14 +66,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -90,14 +78,10 @@ Description
 
 *Address*
 
-
-
 </td>
 <td valign="top">
 
 URL of the SuccessFactors data center that you want to connect to. You can browse and select the SuccessFactors data center URL by using the *Select* option.
-
-
 
 </td>
 </tr>
@@ -106,14 +90,10 @@ URL of the SuccessFactors data center that you want to connect to. You can brows
 
 *Address Suffix*
 
-
-
 </td>
 <td valign="top">
 
 The system automatically populates this field with */sfapi/v1/soap* as you've selected the SOAP message protocol.
-
-
 
 </td>
 </tr>
@@ -121,8 +101,6 @@ The system automatically populates this field with */sfapi/v1/soap* as you've se
 <td valign="top">
 
 *Authentication*
-
-
 
 </td>
 <td valign="top">
@@ -143,14 +121,10 @@ Select one of the following authentication methods:
 
 *Credential Name*
 
-
-
 </td>
 <td valign="top">
 
 Credential name for your credentials that has been deployed on the tenant.
-
-
 
 </td>
 </tr>
@@ -158,8 +132,6 @@ Credential name for your credentials that has been deployed on the tenant.
 <td valign="top">
 
 *Proxy Type*
-
-
 
 </td>
 <td valign="top">
@@ -172,16 +144,12 @@ If you choose *Manual*, you need to enter values for the fields *Proxy Host* and
 
 *Proxy Port* is the port number that you're using.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Call Type* 
-
-
 
 </td>
 <td valign="top">
@@ -190,8 +158,6 @@ Default value is *Synchronous Query*.
 
 If you want to execute an ad hoc operation, select *Asynchronous/Adhoc Query* from the dropdown list.
 
-
-
 </td>
 </tr>
 <tr>
@@ -199,14 +165,10 @@ If you want to execute an ad hoc operation, select *Asynchronous/Adhoc Query* fr
 
 *Operation* 
 
-
-
 </td>
 <td valign="top">
 
 You can only perform a GET operation to read information from the SuccessFactors system that you're connecting to.
-
-
 
 </td>
 </tr>
@@ -215,16 +177,12 @@ You can only perform a GET operation to read information from the SuccessFactors
 
 *Entity* 
 
-
-
 </td>
 <td valign="top">
 
 Entity that you want to access in the SuccessFactors system.
 
 To select or change the entity, see [Modifying SuccessFactors SOAP Entity and Operation](modifying-successfactors-soap-entity-and-operation-a6ee603.md).
-
-
 
 </td>
 </tr>
@@ -233,14 +191,10 @@ To select or change the entity, see [Modifying SuccessFactors SOAP Entity and Op
 
 *Query* 
 
-
-
 </td>
 <td valign="top">
 
 Provide your query values to look out for the relevant table or field in the SuccessFactors system.
-
-
 
 </td>
 </tr>
@@ -249,14 +203,10 @@ Provide your query values to look out for the relevant table or field in the Suc
 
 *Parameters* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the key-value pairs from the SuccessFactors system to fetch the necessary information.
-
-
 
 </td>
 </tr>
@@ -265,14 +215,10 @@ Enter the key-value pairs from the SuccessFactors system to fetch the necessary 
 
 *Page Size* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum number of records to be fetched in a page of response.
-
-
 
 </td>
 </tr>
@@ -281,14 +227,10 @@ Maximum number of records to be fetched in a page of response.
 
 *Timeout \(in min\)* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum time the system waits for a response.
-
-
 
 </td>
 </tr>
@@ -305,21 +247,15 @@ Select the *Scheduler* tab and provide values in the fields as follows.
 
 Scheduler Option
 
-
-
 </th>
 <th valign="top">
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -328,21 +264,15 @@ Description
 
 *Run Once* 
 
-
-
 </td>
 <td valign="top">
 
 NA
 
-
-
 </td>
 <td valign="top">
 
 Select to execute the operation immediately after deploying the integration content.
-
-
 
 </td>
 </tr>
@@ -351,21 +281,15 @@ Select to execute the operation immediately after deploying the integration cont
 
 *Schedule on Day* 
 
-
-
 </td>
 <td valign="top">
 
 *On Date* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the date on which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -374,14 +298,10 @@ Specify the date on which you want the operation to be executed.
 
 *At Time* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the time at which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -390,14 +310,10 @@ Specify the time at which you want the operation to be executed.
 
 *Every* 
 
-
-
 </td>
 <td valign="top">
 
 Specify the interval at which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -406,14 +322,10 @@ Specify the interval at which you want the operation to be executed.
 
 *Time Zone* 
 
-
-
 </td>
 <td valign="top">
 
 Select the time zone that you want the scheduler to use as a reference for the date and time settings.
-
-
 
 </td>
 </tr>
@@ -422,21 +334,15 @@ Select the time zone that you want the scheduler to use as a reference for the d
 
 *Schedule to Recur* 
 
-
-
 </td>
 <td valign="top">
 
 *Daily* 
 
-
-
 </td>
 <td valign="top">
 
 Select the time or interval and time zone for the schedule to recur.
-
-
 
 </td>
 </tr>
@@ -445,14 +351,10 @@ Select the time or interval and time zone for the schedule to recur.
 
 *Weekly* 
 
-
-
 </td>
 <td valign="top">
 
 Select the checkboxes to indicate the days of the week on which you want the operation to be executed. Also, specify the time or interval for the schedule to recur.
-
-
 
 </td>
 </tr>
@@ -461,14 +363,10 @@ Select the checkboxes to indicate the days of the week on which you want the ope
 
 *Monthly* 
 
-
-
 </td>
 <td valign="top">
 
 Select the day of the month on which you want the operation to be executed. Also indicate the time or the interval for the schedule to recur.
-
-
 
 </td>
 </tr>

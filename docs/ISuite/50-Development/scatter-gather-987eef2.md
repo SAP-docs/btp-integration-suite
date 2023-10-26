@@ -70,14 +70,10 @@ The following Aggregation strategy has been defined for the Aggregator step:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -86,14 +82,10 @@ Value
 
 Incoming Format
 
-
-
 </td>
 <td valign="top">
 
 XML \(Same Format\)
-
-
 
 </td>
 </tr>
@@ -102,14 +94,10 @@ XML \(Same Format\)
 
 Aggregation Algorithm
 
-
-
 </td>
 <td valign="top">
 
 Combine
-
-
 
 </td>
 </tr>
@@ -118,14 +106,10 @@ Combine
 
 Last Message Condition \(XPath\)
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 </tr>
@@ -134,16 +118,12 @@ false
 
 Completion Timeout
 
-
-
 </td>
 <td valign="top">
 
 2 minutes
 
 \(for demo purposes, any time value can be specified\)
-
-
 
 </td>
 </tr>
@@ -160,14 +140,10 @@ Next, a Filter is added which removes the multi-mapping nodes that were added by
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -176,14 +152,10 @@ Value
 
 XPath Expression
 
-
-
 </td>
 <td valign="top">
 
 //sg:BankLoanResponse
-
-
 
 </td>
 </tr>
@@ -192,14 +164,10 @@ XPath Expression
 
 Value
 
-
-
 </td>
 <td valign="top">
 
 Nodelist
-
-
 
 </td>
 </tr>
@@ -224,14 +192,10 @@ A subsequent Data Store Get step is modeled with the following attributes:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -240,14 +204,10 @@ Value
 
 Data Store Name
 
-
-
 </td>
 <td valign="top">
 
 ScatterGather-ActiveBids
-
-
 
 </td>
 </tr>
@@ -256,14 +216,10 @@ ScatterGather-ActiveBids
 
 Entry ID
 
-
-
 </td>
 <td valign="top">
 
 $\{property.requestID\}
-
-
 
 </td>
 </tr>

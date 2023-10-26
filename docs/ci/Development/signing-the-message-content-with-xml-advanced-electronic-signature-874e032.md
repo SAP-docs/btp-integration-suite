@@ -23,14 +23,10 @@ The following XAdES forms are supported:
 
 Form
 
-
-
 </th>
 <th valign="top">
 
 Allows you to ...
-
-
 
 </th>
 </tr>
@@ -41,14 +37,10 @@ Allows you to ...
 
 \(XAdES Basic Electronic Signature\)
 
-
-
 </td>
 <td valign="top">
 
 Create an electronic signature based on *XML Digital Signature* that includes additional properties to further qualify the signature.
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Create an electronic signature based on *XML Digital Signature* that includes ad
 
 \(XAdES Explicit Policy based Electronic Signature\)
 
-
-
 </td>
 <td valign="top">
 
 Create an electronic signature based on *XML Digital Signature* that unambiguously refers to a signature policy agreed between signer and verifier. An electronic signature built in this way enforces the usage of the signature policy for signature validation and thus increases the security level of the usage of the digital signature.
-
-
 
 </td>
 </tr>

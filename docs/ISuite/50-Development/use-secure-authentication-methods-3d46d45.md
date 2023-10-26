@@ -122,16 +122,16 @@ The following SAP Community blogs provide more information:
 
 **Basic Authentication:**
 
--   Inbound: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2c4c2d98e9de4b92a3b3af2ba9483909.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2c4c2d98e9de4b92a3b3af2ba9483909.html)
+-   [Inbound](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2c4c2d98e9de4b92a3b3af2ba9483909.html)
 
--   Outbound: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a5d77b12ff16483c965cce936aa1b698.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a5d77b12ff16483c965cce936aa1b698.html)
+-   [Outbound](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a5d77b12ff16483c965cce936aa1b698.html)
 
 
 **Client Certificate Authentication:**
 
--   Inbound: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c1eeeab4877147ffa6a5997c76eaaaca.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c1eeeab4877147ffa6a5997c76eaaaca.html)
+-   Inbound: [Client Certificate Authentication, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c1eeeab4877147ffa6a5997c76eaaaca.html)
 
--   Outbound: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c4e4a1570d6b4896b7426f67ae053a5e.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c4e4a1570d6b4896b7426f67ae053a5e.html)
+-   Outbound: [Client Certificate Authentication](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c4e4a1570d6b4896b7426f67ae053a5e.html)
 
 -   [How to Setup Secure HTTP Inbound Connection with Client Certificates](https://blogs.sap.com/2017/06/05/cloud-integration-how-to-setup-secure-http-inbound-connection-with-client-certificates/)
 
@@ -142,19 +142,19 @@ The following SAP Community blogs provide more information:
 -   [Setup Secure HTTP Inbound Connection with Client Certificates and Custom Roles in Cloud Foundry](https://blogs.sap.com/2019/08/14/cloud-integration-on-cf-how-to-setup-secure-http-inbound-connection-with-client-certificates/)
 
 
-**OAuth Authentication:** [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/382313443b8d4453b0fd536b82b9e15d.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/382313443b8d4453b0fd536b82b9e15d.html)
+**OAuth Authentication:** [OAuth 2.0](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/382313443b8d4453b0fd536b82b9e15d.html)
 
--   OAuth Client Credentials Grant: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cf611eca57744d29be588b7d4ec900e1.html?q=OAuth](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cf611eca57744d29be588b7d4ec900e1.html?q=OAuth)
+-   [OAuth Client Credentials Grant](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cf611eca57744d29be588b7d4ec900e1.html?q=OAuth)
 
--   Blog: [https://blogs.sap.com/2019/02/14/cloud-integration-inbound-http-connections-using-oauth-client-credentials-grant/](https://blogs.sap.com/2019/02/14/cloud-integration-inbound-http-connections-using-oauth-client-credentials-grant/)
+-   Blog: [Blog: Cloud Integration – Inbound HTTP Connections using OAuth Client Credentials Grant](https://blogs.sap.com/2019/02/14/cloud-integration-inbound-http-connections-using-oauth-client-credentials-grant/)
 
--   [https://oauth.net/2/](https://oauth.net/2/)
+-   [OAuth 2.0 website](https://oauth.net/2/)
 
 
 **SFTP with Public Key Authentication:**
 
--   [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fc8467b6dc7e40479d3d568cd79a3c1c.html?q=%22Public%20Key%20Authentication%22](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fc8467b6dc7e40479d3d568cd79a3c1c.html?q=%22Public%20Key%20Authentication%22)
+-   [How SFTP Works](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fc8467b6dc7e40479d3d568cd79a3c1c.html?q=%22Public%20Key%20Authentication%22)
 
--   Inbound: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/97e2baafd4184e98916f246c373af3bf.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/97e2baafd4184e98916f246c373af3bf.html)
--   Outbound: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d96b2d7720eb469ca39133cc40cff6d7.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d96b2d7720eb469ca39133cc40cff6d7.html)
+-   [Inbound SFTP With Public Key Authentication](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/97e2baafd4184e98916f246c373af3bf.html)
+-   [Outbound SFTP With Public Key Authentication](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d96b2d7720eb469ca39133cc40cff6d7.html)
 

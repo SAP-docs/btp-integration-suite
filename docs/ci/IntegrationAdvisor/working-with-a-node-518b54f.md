@@ -21,29 +21,21 @@ Once you have created a message implementation guideline, you can edit and modif
     <th valign="top">
 
     Section Name
-
-
     
     </th>
     <th valign="top">
 
     Field Name
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     <th valign="top">
 
     Editable
-
-
     
     </th>
     </tr>
@@ -51,29 +43,21 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top" rowspan="8">
     
     Identifier Information
-
-
     
     </td>
     <td valign="top">
     
     Identifier
-
-
     
     </td>
     <td valign="top">
     
     Displays the name of the node
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -81,22 +65,16 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Namespace
-
-
     
     </td>
     <td valign="top">
     
     Displays the namespace of the node
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -104,22 +82,16 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Namespace Prefix
-
-
     
     </td>
     <td valign="top">
     
     Namespace Prefix is only shown if the node comes with a namespace prefix \(XML namespace qualified\). If a default namespace is used, this is indicated through *<default\>*.
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -127,8 +99,6 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     XML Node Name
-
-
     
     </td>
     <td valign="top">
@@ -136,15 +106,11 @@ Once you have created a message implementation guideline, you can edit and modif
     Displays the corresponding XML tag name of the node. This might include a namespace prefix, if required.
 
     The name need not necessarily be identical to the node name.
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -152,22 +118,16 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     ComplexType \(Group node\)
-
-
     
     </td>
     <td valign="top">
     
     Displays the complex data type of the group node
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -175,22 +135,16 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Complex Type Namespace \(Group node\)
-
-
     
     </td>
     <td valign="top">
     
     Displays the complex type namespace of the group node
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -198,22 +152,16 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     SimpleType \(Leaf node\)
-
-
     
     </td>
     <td valign="top">
     
     Displays the data type of the leaf node
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -221,22 +169,16 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Simple Type Namespace \(Leaf node\)
-
-
     
     </td>
     <td valign="top">
     
     Displays the type namespace of the leaf node
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -244,29 +186,21 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top" rowspan="5">
     
     Properties
-
-
     
     </td>
     <td valign="top">
     
     Identifier
-
-
     
     </td>
     <td valign="top">
     
     Displays the name of the node
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -274,22 +208,16 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Cardinality
-
-
     
     </td>
     <td valign="top">
     
     Displays the cardinality of the node with *min* and *max* values
-
-
     
     </td>
     <td valign="top">
     
     Yes
-
-
     
     </td>
     </tr>
@@ -297,15 +225,11 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Qualifier \(Leaf node\)
-
-
     
     </td>
     <td valign="top">
     
     This field appears only when the leaf node is a qualifying node.
-
-
     
     </td>
     <td valign="top">
@@ -315,8 +239,6 @@ Once you have created a message implementation guideline, you can edit and modif
     If you want to delete a qualifier from the list, choose the delete<span class="SAP-icons"></span> icon.
 
     To know about qualifying nodes and how to qualify an instance, see [Qualifying Nodes](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/09be9835e1184603ad796071e0a86b98.html?version=Cloud)
-
-
     
     </td>
     </tr>
@@ -324,8 +246,6 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Fixed Value \(Leaf node\)
-
-
     
     </td>
     <td valign="top">
@@ -333,15 +253,11 @@ Once you have created a message implementation guideline, you can edit and modif
     You can provide a fixed value to a particular node.
 
     You can use this field for a node that can have only one fixed value. This value will be included during XML validation of any payload data.
-
-
     
     </td>
     <td valign="top">
     
     Yes
-
-
     
     </td>
     </tr>
@@ -349,8 +265,6 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Example Values \(Leaf node\)
-
-
     
     </td>
     <td valign="top">
@@ -360,8 +274,6 @@ Once you have created a message implementation guideline, you can edit and modif
     You can set these example values to provide the business user a better understanding of the semantics and expected synatax of the field.
 
     These example values will be also be used during simulation when you choose *Simulate with Example Data*.
-
-
     
     </td>
     <td valign="top">
@@ -375,8 +287,6 @@ Once you have created a message implementation guideline, you can edit and modif
     Choose <span class="SAP-icons"></span> to move a value up the list.
 
     Choose <span class="SAP-icons"></span> to move a value down the list.
-
-
     
     </td>
     </tr>
@@ -384,22 +294,16 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Documentation
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     You can enter a detailed description of the purpose of the node.
-
-
     
     </td>
     <td valign="top">
@@ -407,8 +311,6 @@ Once you have created a message implementation guideline, you can edit and modif
     Yes
 
     If you want to format the entered text, select the checkbox next to *Formatted Text*.
-
-
     
     </td>
     </tr>
@@ -416,15 +318,11 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Complex Type Properties \(Group node\)
-
-
     
     </td>
     <td valign="top">
     
     XSD Assertions
-
-
     
     </td>
     <td valign="top">
@@ -456,8 +354,6 @@ Once you have created a message implementation guideline, you can edit and modif
     Choose <span class="SAP-icons"></span> to move an assertion up the list.
 
     Choose <span class="SAP-icons"></span> to move an assertion down the list.
-
-
     
     </td>
     </tr>
@@ -467,8 +363,6 @@ Once you have created a message implementation guideline, you can edit and modif
     Simple Type Properties
 
     This section is displayed only for leaf nodes
-
-
     
     </td>
     <td valign="top">
@@ -486,8 +380,6 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     You can select a primitive data type for the node
-
-
     
     </td>
     <td valign="top">
@@ -495,8 +387,6 @@ Once you have created a message implementation guideline, you can edit and modif
     Yes
 
     Choose the right data type for the node from the drop-down list.
-
-
     
     </td>
     </tr>
@@ -504,22 +394,16 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Length
-
-
     
     </td>
     <td valign="top">
     
     You can specify the minimum and maximum length of the value for the node
-
-
     
     </td>
     <td valign="top">
     
     Enter the minimum and maximum length of the value in the *min* and *max* fields respectively.
-
-
     
     </td>
     </tr>
@@ -527,8 +411,6 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Format
-
-
     
     </td>
     <td valign="top">
@@ -544,8 +426,6 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Yes
-
-
     
     </td>
     </tr>
@@ -553,22 +433,16 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Date Time Format
-
-
     
     </td>
     <td valign="top">
     
     You can choose one of the predefined Date, Time or DateTime patterns. This will be used when defining a Date Time Conversion in the mapping.
-
-
     
     </td>
     <td valign="top">
     
     Yes
-
-
     
     </td>
     </tr>
@@ -576,8 +450,6 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     XSD-Patterns
-
-
     
     </td>
     <td valign="top">
@@ -609,8 +481,6 @@ Once you have created a message implementation guideline, you can edit and modif
     Choose <span class="SAP-icons"></span> to move a pattern up the list.
 
     Choose <span class="SAP-icons"></span> to move a pattern down the list.
-
-
     
     </td>
     </tr>
@@ -618,29 +488,21 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top" rowspan="4">
     
     Syntax Type Related
-
-
     
     </td>
     <td valign="top">
     
     External Category
-
-
     
     </td>
     <td valign="top">
     
     Displays the external category detail of the node.
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -648,22 +510,16 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Syntax Data Type
-
-
     
     </td>
     <td valign="top">
     
     Displays the data type of the syntax of a leaf node as it is originally defined by the B2B standard.
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -671,8 +527,6 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Position
-
-
     
     </td>
     <td valign="top">
@@ -688,8 +542,6 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -697,8 +549,6 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Level
-
-
     
     </td>
     <td valign="top">
@@ -714,8 +564,6 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>

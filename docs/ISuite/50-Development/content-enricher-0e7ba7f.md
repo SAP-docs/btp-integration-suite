@@ -89,14 +89,10 @@ The following settings are defined in the OData receiver adapter under *Processi
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -105,14 +101,10 @@ Value
 
 Operation Details
 
-
-
 </td>
 <td valign="top">
 
 Query \(GET\)
-
-
 
 </td>
 </tr>
@@ -121,14 +113,10 @@ Query \(GET\)
 
 Resource Path
 
-
-
 </td>
 <td valign="top">
 
 ProductCategories
-
-
 
 </td>
 </tr>
@@ -137,14 +125,10 @@ ProductCategories
 
 Query Options
 
-
-
 </td>
 <td valign="top">
 
 $select=Category,MainCategoryName
-
-
 
 </td>
 </tr>
@@ -163,14 +147,10 @@ Under *ORIGINAL MESSAGE*, the following settings are defined:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -179,14 +159,10 @@ Value
 
 Path to Node
 
-
-
 </td>
 <td valign="top">
 
 PurchaseOrder/Items
-
-
 
 </td>
 </tr>
@@ -195,14 +171,10 @@ PurchaseOrder/Items
 
 Key Element
 
-
-
 </td>
 <td valign="top">
 
 Item/Category
-
-
 
 </td>
 </tr>
@@ -217,14 +189,10 @@ Under *LOOKUP MESSAGE*, the following settings are defined:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -233,14 +201,10 @@ Value
 
 Path to Node
 
-
-
 </td>
 <td valign="top">
 
 ProductCategory
-
-
 
 </td>
 </tr>
@@ -249,14 +213,10 @@ ProductCategory
 
 Key Element
 
-
-
 </td>
 <td valign="top">
 
 Category
-
-
 
 </td>
 </tr>

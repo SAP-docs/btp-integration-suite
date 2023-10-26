@@ -23,14 +23,10 @@ You can attach this policy in the following locations![](images/flow_oauth_a3dea
 
 **Elements & Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -39,14 +35,10 @@ You can attach this policy in the following locations![](images/flow_oauth_a3dea
 
 AccessToken
 
-
-
 </td>
 <td valign="top">
 
 By default, VerifyAccessToken expects the access token to be sent in an Authorization header. You can change that default using this element. For example `request.queryparam.access_token` indicates that the access token should be present as a query parameter.
-
-
 
 </td>
 </tr>
@@ -55,14 +47,10 @@ By default, VerifyAccessToken expects the access token to be sent in an Authoriz
 
 AppEndUser
 
-
-
 </td>
 <td valign="top">
 
 This element lets you specify where API Management should look for the end user ID
-
-
 
 </td>
 </tr>
@@ -71,14 +59,10 @@ This element lets you specify where API Management should look for the end user 
 
 ClientId
 
-
-
 </td>
 <td valign="top">
 
 This element lets you specify where API Management should look for the end user ID
-
-
 
 </td>
 </tr>
@@ -87,14 +71,10 @@ This element lets you specify where API Management should look for the end user 
 
 Code
 
-
-
 </td>
 <td valign="top">
 
 This element lets you specify where API Management should look for the authorization code. For example, it could be sent as a query parameter, HTTP header, or form parameter \(the default\).
-
-
 
 </td>
 </tr>
@@ -103,14 +83,10 @@ This element lets you specify where API Management should look for the authoriza
 
 ExpiresIn
 
-
-
 </td>
 <td valign="top">
 
 Enforces the expiry time of access tokens and authorization codes in milliseconds. \(For refresh tokens, use <RefreshTokenExpiresIn\>.\) The expiry time value is a system generated value plus the `<ExpiresIn>` value. If `<ExpiresIn>` is set to -1, the token or code is given an infinite lifetime. If `<ExpiresIn>` is not specified, the system applies a default value configured at the system level.
-
-
 
 </td>
 </tr>
@@ -119,14 +95,10 @@ Enforces the expiry time of access tokens and authorization codes in millisecond
 
 ExternalAccessToken
 
-
-
 </td>
 <td valign="top">
 
 Tells API Management where to find an external access token
-
-
 
 </td>
 </tr>
@@ -135,14 +107,10 @@ Tells API Management where to find an external access token
 
 GenerateResponse
 
-
-
 </td>
 <td valign="top">
 
 If set to true, the policy generates and returns a response
-
-
 
 </td>
 </tr>
@@ -151,14 +119,10 @@ If set to true, the policy generates and returns a response
 
 GenerateErrorResponse
 
-
-
 </td>
 <td valign="top">
 
 If set to true, the policy generates and returns a response if the ContinueOnError attribute is set to true. If false \(the default\), no response is sent.
-
-
 
 </td>
 </tr>
@@ -167,14 +131,10 @@ If set to true, the policy generates and returns a response if the ContinueOnErr
 
 GrantType
 
-
-
 </td>
 <td valign="top">
 
 Tells the policy where to find the grant type parameter that is passed in a request.
-
-
 
 </td>
 </tr>
@@ -183,14 +143,10 @@ Tells the policy where to find the grant type parameter that is passed in a requ
 
 RedirectUri
 
-
-
 </td>
 <td valign="top">
 
 Specifies where to should look for the `redirect_uri` parameter in the request.
-
-
 
 </td>
 </tr>
@@ -199,14 +155,10 @@ Specifies where to should look for the `redirect_uri` parameter in the request.
 
 RefreshToken
 
-
-
 </td>
 <td valign="top">
 
 When requesting an access token using a refresh token, you must supply the refresh token in the request. This element lets you specify where API Management should look for the refresh token. For example, it could be sent as a query parameter, HTTP header, or form parameter
-
-
 
 </td>
 </tr>
@@ -215,14 +167,10 @@ When requesting an access token using a refresh token, you must supply the refre
 
 RefreshTokenExpiresIn
 
-
-
 </td>
 <td valign="top">
 
 Enforces the expiry time of refresh tokens in milliseconds. The expiry time value is a system generated value plus the <RefreshTokenExpiresIn\> value. If <RefreshTokenExpiresIn\> is set to -1, the refresh token is given an infinite lifetime. If <RefreshTokenExpiresIn\> is not specified, the system applies a default value configured at the system level.
-
-
 
 </td>
 </tr>
@@ -231,14 +179,10 @@ Enforces the expiry time of refresh tokens in milliseconds. The expiry time valu
 
 ResponseType
 
-
-
 </td>
 <td valign="top">
 
 This element informs API Management which grant type the client app is requesting. It is used only with the authorization code and implicit grant type flows.
-
-
 
 </td>
 </tr>
@@ -247,14 +191,10 @@ This element informs API Management which grant type the client app is requestin
 
 ReuseRefreshToken
 
-
-
 </td>
 <td valign="top">
 
 When set to true, the existing refresh token is reused until it expires. If false, a new refresh token is issued by API Management when a valid refresh token is presented.
-
-
 
 </td>
 </tr>
@@ -263,14 +203,10 @@ When set to true, the existing refresh token is reused until it expires. If fals
 
 PassWord
 
-
-
 </td>
 <td valign="top">
 
 This element is used with the password grant type only. With the password grant type, user credentials \(password and username\) must be made available to the OAuthV2 policy. The <PassWord\> and <UserName\> elements are used to specify variables where API Management can find these values. If these elements are not specified, the policy expects to find the values \(by default\) in form parameters named username and password.
-
-
 
 </td>
 </tr>
@@ -279,14 +215,10 @@ This element is used with the password grant type only. With the password grant 
 
 Scope
 
-
-
 </td>
 <td valign="top">
 
 If this element is present in one of the GenerateAccessToken or GenerateAuthorizationCode policies, it is used to specify which scopes to grant the token or code.
-
-
 
 </td>
 </tr>
@@ -295,14 +227,10 @@ If this element is present in one of the GenerateAccessToken or GenerateAuthoriz
 
 State
 
-
-
 </td>
 <td valign="top">
 
 In cases where the client app must send the state information to the authorization server, this element lets you specify where API Management should look for the state values. For example, it could be sent as a query parameter or in an HTTP header.
-
-
 
 </td>
 </tr>
@@ -311,14 +239,10 @@ In cases where the client app must send the state information to the authorizati
 
 StoreToken
 
-
-
 </td>
 <td valign="top">
 
 Set this element to true when the <ExternalAuthorization\> element is true. The <StoreToken\> element tells API Management to store the external access token. Otherwise, it will not be persisted.
-
-
 
 </td>
 </tr>
@@ -335,14 +259,10 @@ Following flow variables are populated when the policy is executed:
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -351,14 +271,10 @@ Description
 
 organization\_name
 
-
-
 </td>
 <td valign="top">
 
 The name of the organization where the proxy is executing.
-
-
 
 </td>
 </tr>
@@ -367,14 +283,10 @@ The name of the organization where the proxy is executing.
 
 developer.id
 
-
-
 </td>
 <td valign="top">
 
 The ID of the developer associated with the registered client app.
-
-
 
 </td>
 </tr>
@@ -383,14 +295,10 @@ The ID of the developer associated with the registered client app.
 
 developer.app.name
 
-
-
 </td>
 <td valign="top">
 
 The name of the developer associated with the registered client app.
-
-
 
 </td>
 </tr>
@@ -399,14 +307,10 @@ The name of the developer associated with the registered client app.
 
 client\_id
 
-
-
 </td>
 <td valign="top">
 
 The client ID of the registered client app.
-
-
 
 </td>
 </tr>
@@ -415,14 +319,10 @@ The client ID of the registered client app.
 
 grant\_type
 
-
-
 </td>
 <td valign="top">
 
 The grant type associated with the request.
-
-
 
 </td>
 </tr>
@@ -431,14 +331,10 @@ The grant type associated with the request.
 
 token\_type
 
-
-
 </td>
 <td valign="top">
 
 The token type associated with the request.
-
-
 
 </td>
 </tr>
@@ -447,14 +343,10 @@ The token type associated with the request.
 
 access\_token
 
-
-
 </td>
 <td valign="top">
 
 The access token that is being verified.
-
-
 
 </td>
 </tr>
@@ -463,14 +355,10 @@ The access token that is being verified.
 
 accesstoken.\{custom\_attribute\}
 
-
-
 </td>
 <td valign="top">
 
 A named custom attribute in the access token.
-
-
 
 </td>
 </tr>
@@ -479,14 +367,10 @@ A named custom attribute in the access token.
 
 issued\_at
 
-
-
 </td>
 <td valign="top">
 
 The date the access token was issued.
-
-
 
 </td>
 </tr>
@@ -495,14 +379,10 @@ The date the access token was issued.
 
 expires\_in
 
-
-
 </td>
 <td valign="top">
 
 The expiration time for the access token
-
-
 
 </td>
 </tr>
@@ -511,14 +391,10 @@ The expiration time for the access token
 
 status
 
-
-
 </td>
 <td valign="top">
 
 The status of the access token \(for example, approved or revoked\).
-
-
 
 </td>
 </tr>
@@ -527,14 +403,10 @@ The status of the access token \(for example, approved or revoked\).
 
 scope
 
-
-
 </td>
 <td valign="top">
 
 The scope \(if any\) associated with the access token
-
-
 
 </td>
 </tr>
@@ -543,14 +415,10 @@ The scope \(if any\) associated with the access token
 
 apiproduct.<custom\_attribute\_name\>
 
-
-
 </td>
 <td valign="top">
 
 A named custom attribute of the API product associated with the registered client app.
-
-
 
 </td>
 </tr>
@@ -559,14 +427,10 @@ A named custom attribute of the API product associated with the registered clien
 
 apiproduct.name
 
-
-
 </td>
 <td valign="top">
 
 The name of the API product associated with the registered client app.
-
-
 
 </td>
 </tr>
@@ -607,14 +471,10 @@ app.last\_modified\_by
 
 app.\{custom\_attributes\}
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -647,14 +507,10 @@ developer.last\_modified\_by
 
 developer.\{custom\_attributes\}
 
-
-
 </td>
 <td valign="top">
 
 Note : If the app.appType is "Developer", then developer attributes are populated.
-
-
 
 </td>
 </tr>
@@ -671,14 +527,10 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -687,16 +539,12 @@ Cause
 
 InvalidClientIdentifier
 
-
-
 </td>
 <td valign="top">
 
 The client identifier sent from the client is invalid or missing. Check to be sure you are using the correct client key and secret values for the Developer App associated with your proxy. Typically, these values are sent as a Base64 encoded Basic Authorization header.
 
 Important: This error name used to be called invalid\_client.
-
-
 
 </td>
 </tr>
@@ -705,14 +553,10 @@ Important: This error name used to be called invalid\_client.
 
 invalid\_client
 
-
-
 </td>
 <td valign="top">
 
 This error name is no longer used. It was replaced by InvalidClientIdentifier.
-
-
 
 </td>
 </tr>
@@ -721,14 +565,10 @@ This error name is no longer used. It was replaced by InvalidClientIdentifier.
 
 invalid\_request
 
-
-
 </td>
 <td valign="top">
 
 This error name is used for multiple different kinds of errors, typically for missing or incorrect parameters sent in the request. If <GenerateResponse\> is set to false, use fault variables \(described below\) to retrieve details about the error, such as the fault name and cause.
-
-
 
 </td>
 </tr>
@@ -737,14 +577,10 @@ This error name is used for multiple different kinds of errors, typically for mi
 
 invalid\_access\_token
 
-
-
 </td>
 <td valign="top">
 
 The access token sent from the client is invalid.
-
-
 
 </td>
 </tr>
@@ -753,14 +589,10 @@ The access token sent from the client is invalid.
 
 FailedToResolveToken
 
-
-
 </td>
 <td valign="top">
 
 The policy expected to find a token in a variable specified in the <Tokens\> element, but the variable could not be resolved.
-
-
 
 </td>
 </tr>
@@ -769,14 +601,10 @@ The policy expected to find a token in a variable specified in the <Tokens\> ele
 
 FailedToResolveClientId
 
-
-
 </td>
 <td valign="top">
 
 The policy expected to find the Client ID in a variable specified in the <ClientId\> element, but the variable could not be resolved.
-
-
 
 </td>
 </tr>
@@ -785,14 +613,10 @@ The policy expected to find the Client ID in a variable specified in the <Client
 
 FailedToResolveAccessToken
 
-
-
 </td>
 <td valign="top">
 
 The policy expected to find an access token in a variable specified in the <AccessToken\> element, but the variable could not be resolved.
-
-
 
 </td>
 </tr>
@@ -801,14 +625,10 @@ The policy expected to find an access token in a variable specified in the <Acce
 
 FailedToResolveRefreshToken
 
-
-
 </td>
 <td valign="top">
 
 The policy expected to find a refresh token in a variable specified in the <RefreshToken\> element, but the variable could not be resolved.
-
-
 
 </td>
 </tr>
@@ -817,14 +637,10 @@ The policy expected to find a refresh token in a variable specified in the <Refr
 
 FailedToResolveAuthorizationCode
 
-
-
 </td>
 <td valign="top">
 
 The policy expected to find an authorization code in a variable specified in the <Code\> element, but the variable could not be resolved.
-
-
 
 </td>
 </tr>
@@ -833,14 +649,10 @@ The policy expected to find an authorization code in a variable specified in the
 
 UnSupportedGrantType
 
-
-
 </td>
 <td valign="top">
 
 The client specified a grant type that is unsupported by the policy
-
-
 
 </td>
 </tr>
@@ -849,14 +661,10 @@ The client specified a grant type that is unsupported by the policy
 
 InvalidTokenType
 
-
-
 </td>
 <td valign="top">
 
 The <Tokens\>/<Token\> element requires you to specify the token type \(for example, refreshtoken\). If the client passes the wrong type, this error is thrown.
-
-
 
 </td>
 </tr>
@@ -865,14 +673,10 @@ The <Tokens\>/<Token\> element requires you to specify the token type \(for exam
 
 InvalidAPICallAsNoApiProductMatchFound
 
-
-
 </td>
 <td valign="top">
 
 The API proxy is not in the Product associated with the access token.
-
-
 
 </td>
 </tr>
@@ -881,14 +685,10 @@ The API proxy is not in the Product associated with the access token.
 
 InsufficientScope
 
-
-
 </td>
 <td valign="top">
 
 The access token presented in the request has a scope that does not match the scope specified in the verify access token policy.
-
-
 
 </td>
 </tr>
@@ -897,14 +697,10 @@ The access token presented in the request has a scope that does not match the sc
 
 InvalidParameter
 
-
-
 </td>
 <td valign="top">
 
 The policy must specify either an access token or an authorization code, but not both.
-
-
 
 </td>
 </tr>
@@ -913,14 +709,10 @@ The policy must specify either an access token or an authorization code, but not
 
 MissingParameter
 
-
-
 </td>
 <td valign="top">
 
 The response type is token, but no grant types are specified.
-
-
 
 </td>
 </tr>
@@ -929,14 +721,10 @@ The response type is token, but no grant types are specified.
 
 InvalidValueForExpiresIn
 
-
-
 </td>
 <td valign="top">
 
 For the <ExpiresIn\> element, valid values are positive integers and -1.
-
-
 
 </td>
 </tr>
@@ -945,14 +733,10 @@ For the <ExpiresIn\> element, valid values are positive integers and -1.
 
 InvalidValueForRefreshTokenExpiresIn
 
-
-
 </td>
 <td valign="top">
 
 For the <RefreshTokenExpiresIn\> element, valid values are positive integers and -1.
-
-
 
 </td>
 </tr>
@@ -961,14 +745,10 @@ For the <RefreshTokenExpiresIn\> element, valid values are positive integers and
 
 InvalidGrantType
 
-
-
 </td>
 <td valign="top">
 
 An invalid grant type is specified in the <SupportedGrantTypes\> element.
-
-
 
 </td>
 </tr>
@@ -977,14 +757,10 @@ An invalid grant type is specified in the <SupportedGrantTypes\> element.
 
 ExpiresInNotApplicableForOperation
 
-
-
 </td>
 <td valign="top">
 
 Be sure that the operations specified in the <Operations\> element support expiration.
-
-
 
 </td>
 </tr>
@@ -993,14 +769,10 @@ Be sure that the operations specified in the <Operations\> element support expir
 
 RefreshTokenExpiresInNotApplicableForOperation
 
-
-
 </td>
 <td valign="top">
 
 Be sure that the operations specified in the <Operations\> element support refresh token expiration.
-
-
 
 </td>
 </tr>
@@ -1009,14 +781,10 @@ Be sure that the operations specified in the <Operations\> element support refre
 
 GrantTypesNotApplicableForOperation
 
-
-
 </td>
 <td valign="top">
 
 Be sure that the grant types specified in <SupportedGrantTypes\> are supported for the specified operation.
-
-
 
 </td>
 </tr>
@@ -1025,14 +793,10 @@ Be sure that the grant types specified in <SupportedGrantTypes\> are supported f
 
 OperationRequired
 
-
-
 </td>
 <td valign="top">
 
 You must specify an operation in this policy using the <Operation\> element.
-
-
 
 </td>
 </tr>
@@ -1041,14 +805,10 @@ You must specify an operation in this policy using the <Operation\> element.
 
 InvalidOperation
 
-
-
 </td>
 <td valign="top">
 
 You must specify a valid operation in this policy using the <Operation\> element.
-
-
 
 </td>
 </tr>
@@ -1057,14 +817,10 @@ You must specify a valid operation in this policy using the <Operation\> element
 
 TokenValueRequired
 
-
-
 </td>
 <td valign="top">
 
 You must specify a token <Token\> value in the <Tokens\> element.
-
-
 
 </td>
 </tr>
@@ -1081,21 +837,15 @@ Following fault variables are set when the policy triggers an error at runtime:
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -1104,21 +854,15 @@ Example
 
 \[prefix\].\[policy\_name\].failed
 
-
-
 </td>
 <td valign="top">
 
 The \[prefix\] is oauthV2. The \[policy\_name\] is the name of the policy that threw the error.
 
-
-
 </td>
 <td valign="top">
 
 oauthV2.GenerateAccesstoken.failed = true
-
-
 
 </td>
 </tr>
@@ -1127,16 +871,12 @@ oauthV2.GenerateAccesstoken.failed = true
 
 \[prefix\].\[policy\_name\].fault.name
 
-
-
 </td>
 <td valign="top">
 
 The \[prefix\] is oauthV2.
 
 The \[policy\_name\] is the name of the policy that threw the error.
-
-
 
 </td>
 <td valign="top">
@@ -1145,16 +885,12 @@ oauthV2.GenerateAccesstoken.fault.name = invalid\_request
 
 Note: For the VerifyAccessToken operation, the fault name includes this suffix: keymanagement.service For example: keymanagement.service.invalid\_access\_token
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 \[prefix\].\[policy\_name\].fault.cause
-
-
 
 </td>
 <td valign="top">
@@ -1163,14 +899,10 @@ The \[prefix\] is oauthV2.
 
 The \[policy\_name\] is the name of the policy that threw the error.
 
-
-
 </td>
 <td valign="top">
 
 oauthV2.GenerateAccesstoken.cause = Required param : grant\_type
-
-
 
 </td>
 </tr>
@@ -1179,21 +911,15 @@ oauthV2.GenerateAccesstoken.cause = Required param : grant\_type
 
 fault.name = \[error\_name\]
 
-
-
 </td>
 <td valign="top">
 
 \[error\_name\] is the specific error name to check for as listed in the table above.
 
-
-
 </td>
 <td valign="top">
 
 fault.name = "invalid\_request"
-
-
 
 </td>
 </tr>

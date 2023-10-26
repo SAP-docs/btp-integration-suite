@@ -19,7 +19,7 @@ To give you an idea of which **kinds of remote systems** can be connected to the
 -   Other systems such as e-mail servers or SOAP clients
 
 
-Depending on the kind of system to connect, a certain communication **protocol** is to be considered, as will be explained below.
+Depending on the kind of system to connect, a certain communication **protocol** is to be considered, as will be explained in the next section.
 
 To support dedicated kinds of systems \(through dedicated communication protocols\), the integration platform provides certain **adapters**. An adapter allows you to configure the details of the technical communication channel between the remote system and the integration platform.
 
@@ -43,36 +43,26 @@ The following table provides more information on the different aspects to consid
 
 Protocol
 
-
-
 </th>
 <th valign="top">
 
 Call Direction
-
-
 
 </th>
 <th valign="top">
 
 On Premise \(Mandatory\)
 
-
-
 </th>
 <th valign="top">
 
 On Premise \(Recommended\)
-
-
 
 </th>
 <th valign="top">
 
 Further Aspects to Consider
 
-
-
 </th>
 </tr>
 <tr>
@@ -80,35 +70,25 @@ Further Aspects to Consider
 
 HTTP, HTTPS
 
-
-
 </td>
 <td valign="top">
 
 Inbound
-
-
 
 </td>
 <td valign="top">
 
 HTTP/S sender system \(for example, SAP ERP Central Component
 
-
-
 </td>
 <td valign="top">
 
 HTTP/S proxy
 
-
-
 </td>
 <td valign="top">
 
 Firewall to set up and configure
-
-
 
 </td>
 </tr>
@@ -117,35 +97,25 @@ Firewall to set up and configure
 
 HTTP, HTTPS
 
-
-
 </td>
 <td valign="top">
 
 Outbound
-
-
 
 </td>
 <td valign="top">
 
 HTTP/S receiver system \(for example, SAP ERP Central Component
 
-
-
 </td>
 <td valign="top">
 
 Web Dispatcher **OR** SAP Cloud Connector
 
-
-
 </td>
 <td valign="top">
 
 Firewall to set up and configure
-
-
 
 </td>
 </tr>
@@ -154,35 +124,25 @@ Firewall to set up and configure
 
 SSH
 
-
-
 </td>
 <td valign="top">
 
 Outbound
-
-
 
 </td>
 <td valign="top">
 
 SFTP server \(to store files\)
 
-
-
 </td>
 <td valign="top">
 
 Tooling for ssh key managment
 
-
-
 </td>
 <td valign="top">
 
 Virus scanner on inbound directory
-
-
 
 </td>
 </tr>
@@ -191,35 +151,25 @@ Virus scanner on inbound directory
 
 SMTP, SMTPS
 
-
-
 </td>
 <td valign="top">
 
 Outbound
-
-
 
 </td>
 <td valign="top">
 
 Mail server
 
-
-
 </td>
 <td valign="top">
 
 SMTPS \(SMTP over SSL/TLS\) support of mail server
 
-
-
 </td>
 <td valign="top">
 
 Virus scanner on inbound mail boxes
-
-
 
 </td>
 </tr>
@@ -250,14 +200,10 @@ The following table lists the available adapters:
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -267,8 +213,6 @@ Description
 *AmazonWebServices* 
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -284,8 +228,6 @@ The adapter supports the following protocols:
 
 See: [AmazonWebServices Sender Adapter](../50-Development/amazonwebservices-sender-adapter-16772e3.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -294,8 +236,6 @@ See: [AmazonWebServices Sender Adapter](../50-Development/amazonwebservices-send
 *AmazonWebServices* 
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -315,8 +255,6 @@ The adapter supports the following protocols:
 
 See: [AmazonWebServices Receiver Adapter](../50-Development/amazonwebservices-receiver-adapter-bc7d1aa.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -325,8 +263,6 @@ See: [AmazonWebServices Receiver Adapter](../50-Development/amazonwebservices-re
 *AMQP*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -339,8 +275,6 @@ Supported transport protocols: TCP, WebSocket
 
 See: [Configure the AMQP Sender Adapter](../50-Development/configure-the-amqp-sender-adapter-99ce674.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -349,8 +283,6 @@ See: [Configure the AMQP Sender Adapter](../50-Development/configure-the-amqp-se
 *AMQP*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -363,8 +295,6 @@ Supported transport protocols: TCP, WebSocket
 
 See: [Configure the AMQP Receiver Adapter](../50-Development/configure-the-amqp-receiver-adapter-d5660c1.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -373,8 +303,6 @@ See: [Configure the AMQP Receiver Adapter](../50-Development/configure-the-amqp-
 *AMQP for SAP Event Mesh*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -387,8 +315,6 @@ Supported transport protocol: WebSocket
 
 See: [AMQP Sender for SAP Event Mesh](../50-Development/amqp-sender-for-sap-event-mesh-7d8a83f.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -397,8 +323,6 @@ See: [AMQP Sender for SAP Event Mesh](../50-Development/amqp-sender-for-sap-even
 *AMQP for SAP Event Mesh*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -411,8 +335,6 @@ Supported transport protocol: WebSocket
 
 See: [AMQP Receiver for SAP Event Mesh](../50-Development/amqp-receiver-for-sap-event-mesh-0b7cc2f.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -421,8 +343,6 @@ See: [AMQP Receiver for SAP Event Mesh](../50-Development/amqp-receiver-for-sap-
 *AMQP for Microsoft Azure Service Bus*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -435,8 +355,6 @@ Supported transport protocol: TCP
 
 See: [AMQP Sender for Microsoft Azure Service Bus](../50-Development/amqp-sender-for-microsoft-azure-service-bus-7384ac3.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -445,8 +363,6 @@ See: [AMQP Sender for Microsoft Azure Service Bus](../50-Development/amqp-sender
 *AMQP for Microsoft Azure Service Bus*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -459,8 +375,6 @@ Supported transport protocol: TCP
 
 See: [AMQP Receiver for Microsoft Azure Service Bus](../50-Development/amqp-receiver-for-microsoft-azure-service-bus-9c64d80.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -469,8 +383,6 @@ See: [AMQP Receiver for Microsoft Azure Service Bus](../50-Development/amqp-rece
 *AMQP for Solace PubSub+*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -483,8 +395,6 @@ Supported transport protocol: TCP
 
 See: [AMQP Sender for Solace PubSub+](../50-Development/amqp-sender-for-solace-pubsub-c9ab47d.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -493,8 +403,6 @@ See: [AMQP Sender for Solace PubSub+](../50-Development/amqp-sender-for-solace-p
 *AMQP for Solace PubSub+*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -507,8 +415,6 @@ Supported transport protocol: TCP
 
 See: [AMQP Receiver for Solace PubSub+](../50-Development/amqp-receiver-for-solace-pubsub-19f18d8.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -517,8 +423,6 @@ See: [AMQP Receiver for Solace PubSub+](../50-Development/amqp-receiver-for-sola
 *AMQP for Apache Qpid Broker-J*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -531,8 +435,6 @@ Supported transport protocol: TCP, WebSocket
 
 See: [AMQP Sender for Apache Qpid Broker-J](../50-Development/amqp-sender-for-apache-qpid-broker-j-b4983f7.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -541,8 +443,6 @@ See: [AMQP Sender for Apache Qpid Broker-J](../50-Development/amqp-sender-for-ap
 *AMQP for Apache Qpid Broker-J*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -555,8 +455,6 @@ Supported transport protocol: TCP, WebSocket
 
 See: [AMQP Receiver for Apache Qpid Broker-J](../50-Development/amqp-receiver-for-apache-qpid-broker-j-622aa1d.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -565,8 +463,6 @@ See: [AMQP Receiver for Apache Qpid Broker-J](../50-Development/amqp-receiver-fo
 *AMQP for Apache ActiveMQ 5 / Apache ActiveMQ Artemis*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -579,8 +475,6 @@ Supported transport protocol: TCP
 
 See: [AMQP Sender for Apache ActiveMQ 5 and Apache ActiveMQ Artemis](../50-Development/amqp-sender-for-apache-activemq-5-and-apache-activemq-artemis-dc4c564.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -589,8 +483,6 @@ See: [AMQP Sender for Apache ActiveMQ 5 and Apache ActiveMQ Artemis](../50-Devel
 *AMQP for Apache ActiveMQ 5 / Apache ActiveMQ Artemis*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -603,8 +495,6 @@ Supported transport protocol: TCP
 
 See: [AMQP Receiver for Apache ActiveMQ 5 and Apache ActiveMQ Artemis](../50-Development/amqp-receiver-for-apache-activemq-5-and-apache-activemq-artemis-76c4dd3.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -613,8 +503,6 @@ See: [AMQP Receiver for Apache ActiveMQ 5 and Apache ActiveMQ Artemis](../50-Dev
 *AMQP for IBM MQ*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -627,8 +515,6 @@ Supported transport protocol: TCP
 
 See: [AMQP Sender for IBM MQ](../50-Development/amqp-sender-for-ibm-mq-f6cc0e4.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -637,8 +523,6 @@ See: [AMQP Sender for IBM MQ](../50-Development/amqp-sender-for-ibm-mq-f6cc0e4.m
 *AMQP for IBM MQ*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -651,8 +535,6 @@ Supported transport protocol: TCP
 
 See: [AMQP Receiver for IBM MQ](../50-Development/amqp-receiver-for-ibm-mq-990fa99.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -661,8 +543,6 @@ See: [AMQP Receiver for IBM MQ](../50-Development/amqp-receiver-for-ibm-mq-990fa
 *Ariba*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -673,8 +553,6 @@ The sender adapter allows you to define a schedule for polling data from Ariba.
 
 See: [Configure the Ariba Sender Adapter](../50-Development/configure-the-ariba-sender-adapter-0629b58.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -684,16 +562,12 @@ See: [Configure the Ariba Sender Adapter](../50-Development/configure-the-ariba-
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Connects SAP Integration Suite to the Ariba network. Using this adapter, SAP and non-SAP cloud applications can send business-specific documents in commerce eXtensible Markup Language \(cXML\) format to the Ariba network.Receiver adapter
 
 See: [Configure the Ariba Receiver Adapter](../50-Development/configure-the-ariba-receiver-adapter-49dffa3.md)
-
-
 
 </td>
 </tr>
@@ -703,8 +577,6 @@ See: [Configure the Ariba Receiver Adapter](../50-Development/configure-the-arib
 *AS2*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -715,8 +587,6 @@ Sender adapter: Can return an electronic receipt to the sender of the AS2 messag
 
 See: [Configure the AS2 Sender Adapter](../50-Development/configure-the-as2-sender-adapter-5d7ee17.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -726,16 +596,12 @@ See: [Configure the AS2 Sender Adapter](../50-Development/configure-the-as2-send
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Enables SAP Integration Suite to exchange business-specific documents with a partner through the Applicability Statement 2 \(AS2\) protocol.
 
 See: [Configure the AS2 Receiver Adapter](../50-Development/configure-the-as2-receiver-adapter-9db62be.md)
-
-
 
 </td>
 </tr>
@@ -745,8 +611,6 @@ See: [Configure the AS2 Receiver Adapter](../50-Development/configure-the-as2-re
 *AS4*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -766,8 +630,6 @@ Enables SAP Integration Suite to securely process incoming AS4 messages using We
 
 See: [AS4 Sender Adapter](../50-Development/as4-sender-adapter-a448605.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -776,8 +638,6 @@ See: [AS4 Sender Adapter](../50-Development/as4-sender-adapter-a448605.md)
 *AS4*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -795,8 +655,6 @@ Receiver adapter:
 
 See: [AS4 Receiver Adapter](../50-Development/as4-receiver-adapter-3a2fde8.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -806,16 +664,12 @@ See: [AS4 Receiver Adapter](../50-Development/as4-receiver-adapter-3a2fde8.md)
 
 Sender adapter
 
-
-
 </td>
 <td valign="top">
 
 Enables SAP Integration Suite to receive files from Azure Storage.
 
 See: [Configure the AzureStorage Sender Adapter](../50-Development/configure-the-azurestorage-sender-adapter-d42134a.md)
-
-
 
 </td>
 </tr>
@@ -826,16 +680,12 @@ See: [Configure the AzureStorage Sender Adapter](../50-Development/configure-the
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Enables SAP Integration Suite to connect to Azure Storage, to manage files, containers, folders, and messages, and to perform *create, read, update and delete* \(CRUD\) operations on objects stored there.
 
 See: [Configure the AzureStorage Receiver Adapter](../50-Development/configure-the-azurestorage-receiver-adapter-30f59b0.md)
-
-
 
 </td>
 </tr>
@@ -846,16 +696,12 @@ See: [Configure the AzureStorage Receiver Adapter](../50-Development/configure-t
 
 Sender adapter
 
-
-
 </td>
 <td valign="top">
 
 Enables SAP Integration Suite to consume messages from a data store.
 
 See: [Data Store Sender Adapter](../50-Development/data-store-sender-adapter-4f5ef3f.md)
-
-
 
 </td>
 </tr>
@@ -866,16 +712,12 @@ See: [Data Store Sender Adapter](../50-Development/data-store-sender-adapter-4f5
 
 Sender adapter
 
-
-
 </td>
 <td valign="top">
 
 Enables SAP Integration Suite to receive files from the Dropbox storage.
 
 See: [Configure the Dropbox Sender Adapter](../50-Development/configure-the-dropbox-sender-adapter-de61991.md)
-
-
 
 </td>
 </tr>
@@ -886,16 +728,12 @@ See: [Configure the Dropbox Sender Adapter](../50-Development/configure-the-drop
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Enables SAP Integration Suite to write files and folders to the Dropbox storage.
 
 See: [Configure the Dropbox Receiver Adapter](../50-Development/configure-the-dropbox-receiver-adapter-16ef7b4.md)
-
-
 
 </td>
 </tr>
@@ -905,8 +743,6 @@ See: [Configure the Dropbox Receiver Adapter](../50-Development/configure-the-dr
 *ELSTER*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -919,8 +755,6 @@ The adapter supports the following operations: Getting the version of the ERiC \
 
 See: [ELSTER Receiver Adapter](../50-Development/elster-receiver-adapter-e374ef7.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -929,8 +763,6 @@ See: [ELSTER Receiver Adapter](../50-Development/elster-receiver-adapter-e374ef7
 *Facebook*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -941,8 +773,6 @@ Using OAuth, the SAP BTP tenant can access resources on Facebook on behalf of a 
 
 See: [Facebook Receiver Adapter](../50-Development/facebook-receiver-adapter-3dcc408.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -951,8 +781,6 @@ See: [Facebook Receiver Adapter](../50-Development/facebook-receiver-adapter-3dc
 *FTP*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -965,8 +793,6 @@ The sender adapter allows you to define a schedule for polling data from the con
 
 See: [Configure the FTP Sender Adapter](../50-Development/configure-the-ftp-sender-adapter-239042f.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -975,8 +801,6 @@ See: [Configure the FTP Sender Adapter](../50-Development/configure-the-ftp-send
 *FTP*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -987,8 +811,6 @@ FTP stands for File Transfer Protocol.
 
 See: [Configure the FTP Receiver Adapter](../50-Development/configure-the-ftp-receiver-adapter-c16d331.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -998,16 +820,12 @@ See: [Configure the FTP Receiver Adapter](../50-Development/configure-the-ftp-re
 
 Sender adapter
 
-
-
 </td>
 <td valign="top">
 
 Establishes an HTTPS connection between SAP Integration Suite and a sender system.
 
 See: [HTTPS Sender Adapter](../50-Development/https-sender-adapter-0ae4a78.md)
-
-
 
 </td>
 </tr>
@@ -1017,8 +835,6 @@ See: [HTTPS Sender Adapter](../50-Development/https-sender-adapter-0ae4a78.md)
 *HTTP*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -1036,8 +852,6 @@ Receiver adapter:
 
 See: [HTTP Receiver Adapter](../50-Development/http-receiver-adapter-2da452e.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1046,8 +860,6 @@ See: [HTTP Receiver Adapter](../50-Development/http-receiver-adapter-2da452e.md)
 *IDoc*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -1058,8 +870,6 @@ A size limit for the inbound message can be configured for the sender adapter.
 
 See: [Configure the IDoc Sender Adapter](../50-Development/configure-the-idoc-sender-adapter-bf769d6.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1069,16 +879,12 @@ See: [Configure the IDoc Sender Adapter](../50-Development/configure-the-idoc-se
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to exchange Intermediate Document \(IDoc\) messages with a receiver system that supports communication via SOAP Web services.
 
 See: [Configure the IDoc Receiver Adapter](../50-Development/configure-the-idoc-receiver-adapter-018aa88.md)
-
-
 
 </td>
 </tr>
@@ -1089,16 +895,12 @@ See: [Configure the IDoc Receiver Adapter](../50-Development/configure-the-idoc-
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to connect to a JDBC \(Java Database Connectivity\) database and to execute SQL commands on the database.
 
 See: [JDBC Receiver Adapter](../50-Development/jdbc-receiver-adapter-88be644.md)
-
-
 
 </td>
 </tr>
@@ -1109,16 +911,12 @@ See: [JDBC Receiver Adapter](../50-Development/jdbc-receiver-adapter-88be644.md)
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to connect to DB2 \(On-Premise\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
 
 See: [JDBC for DB2 \(On-Premise\)](../50-Development/jdbc-for-db2-on-premise-9515cf8.md)
-
-
 
 </td>
 </tr>
@@ -1129,16 +927,12 @@ See: [JDBC for DB2 \(On-Premise\)](../50-Development/jdbc-for-db2-on-premise-951
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to connect to Microsoft SQL Server \(Cloud\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
 
 See: [JDBC for Microsoft SQL Server \(Cloud\)](../50-Development/jdbc-for-microsoft-sql-server-cloud-4173d0a.md)
-
-
 
 </td>
 </tr>
@@ -1149,16 +943,12 @@ See: [JDBC for Microsoft SQL Server \(Cloud\)](../50-Development/jdbc-for-micros
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to connect to Microsoft SQL Server \(On-Premise\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
 
 See: [JDBC for Microsoft SQL Server \(On-Premise\)](../50-Development/jdbc-for-microsoft-sql-server-on-premise-9745e40.md)
-
-
 
 </td>
 </tr>
@@ -1169,16 +959,12 @@ See: [JDBC for Microsoft SQL Server \(On-Premise\)](../50-Development/jdbc-for-m
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to connect to Oracle \(Cloud\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
 
 See: [JDBC for Oracle \(Cloud\)](../50-Development/jdbc-for-oracle-cloud-f868182.md)
-
-
 
 </td>
 </tr>
@@ -1189,16 +975,12 @@ See: [JDBC for Oracle \(Cloud\)](../50-Development/jdbc-for-oracle-cloud-f868182
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to connect to Oracle \(On-Premise\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
 
 See: [JDBC for Oracle \(On-Premise\)](../50-Development/jdbc-for-oracle-on-premise-e6db38a.md)
-
-
 
 </td>
 </tr>
@@ -1209,16 +991,12 @@ See: [JDBC for Oracle \(On-Premise\)](../50-Development/jdbc-for-oracle-on-premi
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to connect to PostgreSQL \(Cloud\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
 
 See: [JDBC for PostgreSQL \(Cloud\)](../50-Development/jdbc-for-postgresql-cloud-4d5b488.md)
-
-
 
 </td>
 </tr>
@@ -1229,16 +1007,12 @@ See: [JDBC for PostgreSQL \(Cloud\)](../50-Development/jdbc-for-postgresql-cloud
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to connect to SAP HANA Cloud using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
 
 See: [JDBC for SAP HANA \(Cloud\)](../50-Development/jdbc-for-sap-hana-cloud-187a8e8.md)
-
-
 
 </td>
 </tr>
@@ -1249,16 +1023,12 @@ See: [JDBC for SAP HANA \(Cloud\)](../50-Development/jdbc-for-sap-hana-cloud-187
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to connect to SAP HANA Platform \(On-Premise\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
 
 See: [JDBC for SAP HANA Platform \(On-Premise\)](../50-Development/jdbc-for-sap-hana-platform-on-premise-ff29388.md)
-
-
 
 </td>
 </tr>
@@ -1268,8 +1038,6 @@ See: [JDBC for SAP HANA Platform \(On-Premise\)](../50-Development/jdbc-for-sap-
 *JMS* 
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -1284,8 +1052,6 @@ Certain constraints apply with regard to the number and capacity of involved que
 
 See: [Configure the JMS Sender Adapter](../50-Development/configure-the-jms-sender-adapter-161791b.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1294,8 +1060,6 @@ See: [Configure the JMS Sender Adapter](../50-Development/configure-the-jms-send
 *JMS*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -1306,8 +1070,6 @@ The receiver adapter stores messages and schedules them for processing in a queu
 
 See: [Configure the JMS Receiver Adapter](../50-Development/configure-the-jms-receiver-adapter-79edc04.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1317,16 +1079,12 @@ See: [Configure the JMS Receiver Adapter](../50-Development/configure-the-jms-re
 
 Sender adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to connect to an external Kafka broker via Kafka protocol and to fetch Kafka records \(messages\).
 
 See: [Configure the Kafka Sender Adapter](../50-Development/configure-the-kafka-sender-adapter-0d849e5.md)
-
-
 
 </td>
 </tr>
@@ -1337,16 +1095,12 @@ See: [Configure the Kafka Sender Adapter](../50-Development/configure-the-kafka-
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to connect to an external Kafka broker via Kafka protocol and to send Kafka records \(messages\).
 
 See: [Configure the Kafka Receiver Adapter](../50-Development/configure-the-kafka-receiver-adapter-fc6ee1f.md)
-
-
 
 </td>
 </tr>
@@ -1356,8 +1110,6 @@ See: [Configure the Kafka Receiver Adapter](../50-Development/configure-the-kafk
 *Mail Sender for IMAP*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -1374,8 +1126,6 @@ For more information on possible threats when processing e-mail content with the
 
 See: [Mail Sender for IMAP](../50-Development/mail-sender-for-imap-5b94e42.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1384,8 +1134,6 @@ See: [Mail Sender for IMAP](../50-Development/mail-sender-for-imap-5b94e42.md)
 *Mail Sender for POP3*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -1402,8 +1150,6 @@ For more information on possible threats when processing e-mail content with the
 
 See: [Mail Sender for POP3](../50-Development/mail-sender-for-pop3-c52a4da.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1412,8 +1158,6 @@ See: [Mail Sender for POP3](../50-Development/mail-sender-for-pop3-c52a4da.md)
 *Mail*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -1429,8 +1173,6 @@ To authenticate against the e-mail server, you can send the user name and passwo
 
 See: [Configure the Mail Receiver Adapter](../50-Development/configure-the-mail-receiver-adapter-f68d5e0.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1440,16 +1182,12 @@ See: [Configure the Mail Receiver Adapter](../50-Development/configure-the-mail-
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 The MDI \(SAP Master Data Integration\) adapter synchronizes your master data from SAP applications like SAP ECC and other third party applications with SAP MDI service.
 
 See: [SAP Master Data Integration Receiver Adapter](../50-Development/sap-master-data-integration-receiver-adapter-e91e373.md)
-
-
 
 </td>
 </tr>
@@ -1460,16 +1198,12 @@ See: [SAP Master Data Integration Receiver Adapter](../50-Development/sap-master
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Connects SAP Integration Suite to Microsoft Dynamics Customer Relationship Management \(CRM\).
 
 See: [Microsoft Dynamics CRM Receiver Adapter](../50-Development/microsoft-dynamics-crm-receiver-adapter-ee724c8.md)
-
-
 
 </td>
 </tr>
@@ -1480,16 +1214,12 @@ See: [Microsoft Dynamics CRM Receiver Adapter](../50-Development/microsoft-dynam
 
 Sender adapter
 
-
-
 </td>
 <td valign="top">
 
 Connects SAP Integration Suite to a remote system using the HTTP/HTTPS protocol to read files from the system.
 
 See: [Configure the Microsoft SharePoint Sender Adapter](../50-Development/configure-the-microsoft-sharepoint-sender-adapter-ce41e85.md)
-
-
 
 </td>
 </tr>
@@ -1500,16 +1230,12 @@ See: [Configure the Microsoft SharePoint Sender Adapter](../50-Development/confi
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Connects SAP Integration Suite to a remote system using the HTTP protocol to write files to the system.
 
 See: [Configure the Microsoft SharePoint Receiver Adapter](../50-Development/configure-the-microsoft-sharepoint-receiver-adapter-b12b33a.md)
-
-
 
 </td>
 </tr>
@@ -1519,8 +1245,6 @@ See: [Configure the Microsoft SharePoint Receiver Adapter](../50-Development/con
 *OData* 
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -1538,8 +1262,6 @@ Supported versions: OData version 2.0
 
 See: [Configure the OData Sender Adapter](../50-Development/configure-the-odata-sender-adapter-de7aee5.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1548,8 +1270,6 @@ See: [Configure the OData Sender Adapter](../50-Development/configure-the-odata-
 *OData*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -1587,8 +1307,6 @@ See:
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -1598,8 +1316,6 @@ Supported operations: Create \(POST\), Delete \(DELETE\), Merge \(MERGE\), Query
 
 See: [ODC Receiver Adapter](../50-Development/odc-receiver-adapter-3cdbc29.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1608,8 +1324,6 @@ See: [ODC Receiver Adapter](../50-Development/odc-receiver-adapter-3cdbc29.md)
 *OpenConnectors*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -1627,8 +1341,6 @@ Connects SAP Integration Suite to more than 150 non-SAP Cloud applications that 
 
 See: [OpenConnectors Receiver Adapter](../50-Development/openconnectors-receiver-adapter-1a27cee.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1637,8 +1349,6 @@ See: [OpenConnectors Receiver Adapter](../50-Development/openconnectors-receiver
 *ProcessDirect*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -1651,8 +1361,6 @@ N:1 cardinality of producer and consumer integration flows is supported.
 
 See: [Configure the ProcessDirect Sender Adapter](../50-Development/configure-the-processdirect-sender-adapter-e340d4c.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1661,8 +1369,6 @@ See: [Configure the ProcessDirect Sender Adapter](../50-Development/configure-th
 *ProcessDirect*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -1675,8 +1381,6 @@ N:1 cardinality of producer and consumer integration flows is supported.
 
 See: [Configure the ProcessDirect Receiver Adapter](../50-Development/configure-the-processdirect-receiver-adapter-5b7327d.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1686,16 +1390,12 @@ See: [Configure the ProcessDirect Receiver Adapter](../50-Development/configure-
 
 Sender adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to consume messages from the RabbitMQ server. In addition, you use the adapter to send acknowledgements to the RabbitMQ server.
 
 See: [Configure the RabbitMQ Sender Adapter](../50-Development/configure-the-rabbitmq-sender-adapter-4e3c554.md)
-
-
 
 </td>
 </tr>
@@ -1706,16 +1406,12 @@ See: [Configure the RabbitMQ Sender Adapter](../50-Development/configure-the-rab
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Allows SAP Integration Suite to send messages to the RabbitMQ server.
 
 See: [Configure the RabbitMQ Receiver Adapter](../50-Development/configure-the-rabbitmq-receiver-adapter-e9dfc37.md)
-
-
 
 </td>
 </tr>
@@ -1725,8 +1421,6 @@ See: [Configure the RabbitMQ Receiver Adapter](../50-Development/configure-the-r
 *RFC*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -1739,8 +1433,6 @@ The adapter supports SAP NetWeaver, version 7.31 or higher.
 
 See: [RFC Receiver Adapter](../50-Development/rfc-receiver-adapter-5c76048.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1750,16 +1442,12 @@ See: [RFC Receiver Adapter](../50-Development/rfc-receiver-adapter-5c76048.md)
 
 Sender adapter
 
-
-
 </td>
 <td valign="top">
 
 Connects SAP Integration Suite to Salesforce.
 
 See: [Salesforce Sender Adapter](../50-Development/salesforce-sender-adapter-ba6420d.md)
-
-
 
 </td>
 </tr>
@@ -1770,16 +1458,12 @@ See: [Salesforce Sender Adapter](../50-Development/salesforce-sender-adapter-ba6
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Connects SAP Integration Suite to Salesforce.
 
 See: [Salesforce Receiver Adapter](../50-Development/salesforce-receiver-adapter-a548be9.md)
-
-
 
 </td>
 </tr>
@@ -1790,16 +1474,12 @@ See: [Salesforce Receiver Adapter](../50-Development/salesforce-receiver-adapter
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Connects SAP Integration Suite to ServiceNow. Supports basic authentication and OAuth.
 
 See: [ServiceNow Receiver Adapter](../50-Development/servicenow-receiver-adapter-1e3bcf4.md)
-
-
 
 </td>
 </tr>
@@ -1809,8 +1489,6 @@ See: [ServiceNow Receiver Adapter](../50-Development/servicenow-receiver-adapter
 *SFTP* 
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -1825,8 +1503,6 @@ The sender adapter allows you to define a schedule for polling data from the con
 
 See: [Configure the SFTP Sender Adapter](../50-Development/configure-the-sftp-sender-adapter-2de9ee5.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1835,8 +1511,6 @@ See: [Configure the SFTP Sender Adapter](../50-Development/configure-the-sftp-se
 *SFTP*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -1849,8 +1523,6 @@ SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture]
 
 See: [Configure the SFTP Receiver Adapter](../50-Development/configure-the-sftp-receiver-adapter-4ef52cf.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1860,16 +1532,12 @@ See: [Configure the SFTP Receiver Adapter](../50-Development/configure-the-sftp-
 
 Sender adapter
 
-
-
 </td>
 <td valign="top">
 
 Enables SAP Integration Suite to receive search-related information from the Slack storage.
 
 See: [Configure the Slack Sender Adapter](../50-Development/configure-the-slack-sender-adapter-1d93850.md)
-
-
 
 </td>
 </tr>
@@ -1880,16 +1548,12 @@ See: [Configure the Slack Sender Adapter](../50-Development/configure-the-slack-
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Enables SAP Integration Suite to get data from the Slack storage or to create, modify, or delete data on the Slack storage.
 
 See: [Configure the Slack Receiver Adapter](../50-Development/configure-the-slack-receiver-adapter-7c2ea64.md)
-
-
 
 </td>
 </tr>
@@ -1899,8 +1563,6 @@ See: [Configure the Slack Receiver Adapter](../50-Development/configure-the-slac
 *SOAP SOAP 1.x* 
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -1915,8 +1577,6 @@ A size limit for the inbound message can be configured for the sender adapter.
 
 See: [Configure the SOAP \(SOAP 1.x\) Sender Adapter](../50-Development/configure-the-soap-soap-1-x-sender-adapter-a178913.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1925,8 +1585,6 @@ See: [Configure the SOAP \(SOAP 1.x\) Sender Adapter](../50-Development/configur
 *SOAP SOAP 1.x*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -1937,8 +1595,6 @@ The adapter supports Web services Security \(WS-Security\).
 
 See: [Configure the SOAP \(SOAP 1.x\) Receiver Adapter](../50-Development/configure-the-soap-soap-1-x-receiver-adapter-57f7b34.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1947,8 +1603,6 @@ See: [Configure the SOAP \(SOAP 1.x\) Receiver Adapter](../50-Development/config
 *SOAP SAP RM* 
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -1959,8 +1613,6 @@ A size limit for the inbound message can be configured for the sender adapter.
 
 See: [Configure the SOAP \(SAP RM\) Sender Adapter](../50-Development/configure-the-soap-sap-rm-sender-adapter-6962234.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -1970,16 +1622,12 @@ See: [Configure the SOAP \(SAP RM\) Sender Adapter](../50-Development/configure-
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Exchanges messages with a receiver system based on the SOAP communication protocol and SAP Reliable Messaging \(SAP RM\) as the message protocol. SAP RM is a simplified communication protocol for asynchronous Web service communication that does not require the use of Web Service Reliable Messaging standards.
 
 See: [Configure the SOAP \(SAP RM\) Receiver Adapter](../50-Development/configure-the-soap-sap-rm-receiver-adapter-8366495.md)
-
-
 
 </td>
 </tr>
@@ -1990,16 +1638,12 @@ See: [Configure the SOAP \(SAP RM\) Receiver Adapter](../50-Development/configur
 
 Sender adapter
 
-
-
 </td>
 <td valign="top">
 
 Enables SAP Integration Suite to receive search-related information from the Splunk storage.
 
 See: [Configure the Splunk Sender Adapter](../50-Development/configure-the-splunk-sender-adapter-271ad20.md)
-
-
 
 </td>
 </tr>
@@ -2010,16 +1654,12 @@ See: [Configure the Splunk Sender Adapter](../50-Development/configure-the-splun
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Enables SAP Integration Suite to get data from the Splunk storage or to create, modify, or delete data on the Splunk storage.
 
 See: [Configure the Splunk Receiver Adapter](../50-Development/configure-the-splunk-receiver-adapter-e8e6ba6.md)
-
-
 
 </td>
 </tr>
@@ -2029,8 +1669,6 @@ See: [Configure the Splunk Receiver Adapter](../50-Development/configure-the-spl
 *SuccessFactors REST*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -2041,8 +1679,6 @@ The adapter supports the following operations: GET
 
 See: [Configure the SuccessFactors REST Sender Adapter](../50-Development/configure-the-successfactors-rest-sender-adapter-9f0646b.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -2051,8 +1687,6 @@ See: [Configure the SuccessFactors REST Sender Adapter](../50-Development/config
 *SuccessFactors REST*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -2063,8 +1697,6 @@ The adapter supports the following operations: GET, POST
 
 See: [Configure the SuccessFactors REST Receiver Adapter](../50-Development/configure-the-successfactors-rest-receiver-adapter-9cff562.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -2073,8 +1705,6 @@ See: [Configure the SuccessFactors REST Receiver Adapter](../50-Development/conf
 *SuccessFactors SOAP*
 
 Sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -2085,8 +1715,6 @@ The adapter supports the following operations: Query
 
 See: [Configure the SuccessFactors \(SOAP\) Sender Adapter](../50-Development/configure-the-successfactors-soap-sender-adapter-874e4b1.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -2095,8 +1723,6 @@ See: [Configure the SuccessFactors \(SOAP\) Sender Adapter](../50-Development/co
 *SuccessFactors SOAP*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -2107,8 +1733,6 @@ The adapter supports the following operations: Insert, Query, Update, Upsert
 
 See: [Configure the SuccessFactors SOAP Receiver Adapter](../50-Development/configure-the-successfactors-soap-receiver-adapter-360ef42.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -2117,8 +1741,6 @@ See: [Configure the SuccessFactors SOAP Receiver Adapter](../50-Development/conf
 *SuccessFactors OData V2*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -2145,8 +1767,6 @@ Features of OData version 2.0 supported by the adapter:
 
 See: [Configure the SuccessFactors OData V2 Receiver Adapter](../50-Development/configure-the-successfactors-odata-v2-receiver-adapter-d16dd12.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -2155,8 +1775,6 @@ See: [Configure the SuccessFactors OData V2 Receiver Adapter](../50-Development/
 *SuccessFactors OData V4*
 
 Receiver adapter
-
-
 
 </td>
 <td valign="top">
@@ -2178,8 +1796,6 @@ Features of OData version 4.0 supported by the adapter:
 
 See: [SuccessFactors OData V4 Receiver Adapter](../50-Development/successfactors-odata-v4-receiver-adapter-cd091fc.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -2189,16 +1805,12 @@ See: [SuccessFactors OData V4 Receiver Adapter](../50-Development/successfactors
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Connects SAP Integration Suite to SugarCRM.
 
 See: [SugarCRM Receiver Adapter](../50-Development/sugarcrm-receiver-adapter-d96ddf7.md)
-
-
 
 </td>
 </tr>
@@ -2209,8 +1821,6 @@ See: [SugarCRM Receiver Adapter](../50-Development/sugarcrm-receiver-adapter-d96
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -2219,8 +1829,6 @@ Enables SAP Integration Suite to access Twitter and read or post tweets.
 Using OAuth, SAP Integration Suite can access resources on Twitter on behalf of a Twitter user.
 
 See: [Twitter Receiver Adapter](../50-Development/twitter-receiver-adapter-453c174.md)
-
-
 
 </td>
 </tr>
@@ -2231,16 +1839,12 @@ See: [Twitter Receiver Adapter](../50-Development/twitter-receiver-adapter-453c1
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Connects SAP Integration Suite to Workday. Supports Workday SOAP API with basic authentication.
 
 See: [Workday Receiver Adapter](../50-Development/workday-receiver-adapter-0c6e670.md)
-
-
 
 </td>
 </tr>
@@ -2251,16 +1855,12 @@ See: [Workday Receiver Adapter](../50-Development/workday-receiver-adapter-0c6e6
 
 Sender adapter
 
-
-
 </td>
 <td valign="top">
 
 Connects SAP Integration Suite to a remote sender system that can process the XI message protocol.
 
 See: [Configure the XI Sender Adapter](../50-Development/configure-the-xi-sender-adapter-41a1a57.md)
-
-
 
 </td>
 </tr>
@@ -2271,16 +1871,12 @@ See: [Configure the XI Sender Adapter](../50-Development/configure-the-xi-sender
 
 Receiver adapter
 
-
-
 </td>
 <td valign="top">
 
 Connects SAP Integration Suite to a remote receiver system that can process the XI message protocol.
 
 See: [Configure the XI Receiver Adapter](../50-Development/configure-the-xi-receiver-adapter-5d2670f.md)
-
-
 
 </td>
 </tr>

@@ -22,14 +22,10 @@ Select the *Connection* tab and provide the sender system information.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,8 +34,6 @@ Description
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
@@ -47,16 +41,12 @@ Specify the relative path of the endpoint URL.
 
 For example, if the URL is `http://<tenant address>/as2/<mdn or as2>/orders`, then enter the value as `/orders`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Authorization*
-
-
 
 </td>
 <td valign="top">
@@ -91,8 +81,6 @@ Specifies the authorization option for the sender.
 
 \(only if you select *User Role* for *Authorization*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -105,8 +93,6 @@ The default value is `ESBMessaging.send`. This role authorizes a sender system t
 
 For more information on user roles, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
 
-
-
 </td>
 </tr>
 <tr>
@@ -116,14 +102,10 @@ For more information on user roles, see [Tasks and Permissions](https://help.sap
 
 \(only if you select *Client Certificate* for *Authorization*\).
 
-
-
 </td>
 <td valign="top">
 
 The client certificates that you are using for inbound authorization. Choose *Add* to add a new row and then choose *Select* to select a certificate stored locally on your computer. You can also delete certificates from the list.
-
-
 
 </td>
 </tr>
@@ -140,14 +122,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -155,8 +133,6 @@ Description
 <td valign="top">
 
 *Source*
-
-
 
 </td>
 <td valign="top">
@@ -180,14 +156,10 @@ Select among the following values to determine the source of Partner ID:
 
 *Partner AS2 ID* 
 
-
-
 </td>
 <td valign="top">
 
 Specify your partner's AS2 ID. Regular expression or '.\*' is allowed.
-
-
 
 </td>
 </tr>
@@ -196,14 +168,10 @@ Specify your partner's AS2 ID. Regular expression or '.\*' is allowed.
 
 *Own AS2 ID* 
 
-
-
 </td>
 <td valign="top">
 
 Specify your own AS2 ID. Regular expression or '.\*' is allowed.
-
-
 
 </td>
 </tr>
@@ -212,14 +180,10 @@ Specify your own AS2 ID. Regular expression or '.\*' is allowed.
 
 *Number of Concurrent Processes* 
 
-
-
 </td>
 <td valign="top">
 
 Define how many processes can run in parallel for each worker node. The value depends on the number of worker nodes, the number of queues on the tenant, and the incoming load, and must be less than 99.
-
-
 
 </td>
 </tr>
@@ -228,14 +192,10 @@ Define how many processes can run in parallel for each worker node. The value de
 
 *Verify Signature* 
 
-
-
 </td>
 <td valign="top">
 
 Enable this option to verify AS2 MDN Signature. You can set the value of this attribute dynamically by specifying `SAP_AS2_Inbound_Mdn_Verify_Signature` parameter in partner directory. The valid values are *<true\>* and *<false\>*.
-
-
 
 </td>
 </tr>
@@ -244,14 +204,10 @@ Enable this option to verify AS2 MDN Signature. You can set the value of this at
 
 *Pulic Key Alias*\(only if you select *Verify Signature*\)
 
-
-
 </td>
 <td valign="top">
 
 Specify Public Key Alias to verify AS2 MDN Signature. To fetch details from partner directory, use pd:xxxx syntax.
-
-
 
 </td>
 </tr>
@@ -260,14 +216,10 @@ Specify Public Key Alias to verify AS2 MDN Signature. To fetch details from part
 
 *Verify MIC*
 
-
-
 </td>
 <td valign="top">
 
 Enable this option to verify Message Integrity Check \(MIC\) from AS2 MDN. You can set the value of this attribute dynamically by specifying `SAP_AS2_Inbound_Mdn_Verify_Mic` parameter in partner directory. The valid values are *<true\>* and *<false\>*.
-
-
 
 </td>
 </tr>
@@ -276,14 +228,10 @@ Enable this option to verify Message Integrity Check \(MIC\) from AS2 MDN. You c
 
 *Message Failure on Negative MDN*
 
-
-
 </td>
 <td valign="top">
 
 Enable this option to set the message status to **Failed** to negative MDN.
-
-
 
 </td>
 </tr>
@@ -300,14 +248,10 @@ Select the *Retry* tab and specify the parameters as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -316,14 +260,10 @@ Description
 
 *Retry Interval \(in min\)* 
 
-
-
 </td>
 <td valign="top">
 
 Define how many minutes to wait before retrying message delivery.
-
-
 
 </td>
 </tr>
@@ -332,14 +272,10 @@ Define how many minutes to wait before retrying message delivery.
 
 *Exponential Backoff* 
 
-
-
 </td>
 <td valign="top">
 
 Select this checkbox to double the retry terval after each unsuccessful retry.
-
-
 
 </td>
 </tr>
@@ -348,14 +284,10 @@ Select this checkbox to double the retry terval after each unsuccessful retry.
 
 *Maximum Retry Interval \(in min\)* \(onlz if zou select *Exponential Backoff*\)
 
-
-
 </td>
 <td valign="top">
 
 Specify the maximum amount of time to wait before retrying message delivery.
-
-
 
 </td>
 </tr>
@@ -364,14 +296,10 @@ Specify the maximum amount of time to wait before retrying message delivery.
 
 *Dead-Letter Queue* 
 
-
-
 </td>
 <td valign="top">
 
 Select this checkbox to store those messages that cannot be successfully processed after the second retry during a tenant crash. This helps you to analyze and resolve the cause of failure.
-
-
 
 </td>
 </tr>
@@ -380,14 +308,10 @@ Select this checkbox to store those messages that cannot be successfully process
 
 *Encrypt Message During Persistence* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option to encrypt the message in the data store.
-
-
 
 </td>
 </tr>

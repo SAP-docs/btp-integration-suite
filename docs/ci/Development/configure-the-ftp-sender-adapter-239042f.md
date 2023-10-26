@@ -45,14 +45,10 @@ Once you have created a sender channel and selected the FTP sender adapter, you 
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -61,14 +57,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the FTP channel.
-
-
 
 </td>
 </tr>
@@ -85,14 +77,10 @@ Select the *Source* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -101,8 +89,6 @@ Description
 
 *Directory*
 
-
-
 </td>
 <td valign="top">
 
@@ -110,16 +96,12 @@ Use the relative path to read the file from a directory.
 
 Example:`parentdirectory/childdirectory`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *File Name*
-
-
 
 </td>
 <td valign="top">
@@ -162,14 +144,10 @@ Name of the file to be read.
 
 *Address*
 
-
-
 </td>
 <td valign="top">
 
 Host name or IP address of the FTP server and an optional port, for example, `wdfd00213123:21`.
-
-
 
 </td>
 </tr>
@@ -177,8 +155,6 @@ Host name or IP address of the FTP server and an optional port, for example, `wd
 <td valign="top">
 
 *Proxy Type*
-
-
 
 </td>
 <td valign="top">
@@ -203,14 +179,10 @@ The type of proxy that you are using to connect to the target system.
 
 \(only if *On-Premise* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration of SAP BTP cockpit.
-
-
 
 </td>
 </tr>
@@ -218,8 +190,6 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <td valign="top">
 
 *Encryption*
-
-
 
 </td>
 <td valign="top">
@@ -242,14 +212,10 @@ Specify the transport encryption. You can choose between the following options:
 
 *Credential Name* 
 
-
-
 </td>
 <td valign="top">
 
 Name of the *User Credentials* artifact that contains the user name and password.
-
-
 
 </td>
 </tr>
@@ -257,8 +223,6 @@ Name of the *User Credentials* artifact that contains the user name and password
 <td valign="top">
 
 *Timeout \(in ms\)*
-
-
 
 </td>
 <td valign="top">
@@ -269,16 +233,12 @@ Default value: `10000`
 
 The timeout should be more than 0, but less than five minutes.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Maximum Reconnect Attempts*
-
-
 
 </td>
 <td valign="top">
@@ -289,16 +249,12 @@ Default value: `3`
 
 Enter `0` to disable this behavior.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Reconnect Delay \(in ms\)*
-
-
 
 </td>
 <td valign="top">
@@ -307,8 +263,6 @@ Time \(in milliseconds\) the system waits before attempting to reconnect to the 
 
 Default Value: `1000`
 
-
-
 </td>
 </tr>
 <tr>
@@ -316,14 +270,10 @@ Default Value: `1000`
 
 *Automatically Disconnect*
 
-
-
 </td>
 <td valign="top">
 
 Disconnect from the FTP server after each message processing.
-
-
 
 </td>
 </tr>
@@ -340,14 +290,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -355,8 +301,6 @@ Description
 <td valign="top">
 
 *Read Lock Strategy*
-
-
 
 </td>
 <td valign="top">
@@ -389,8 +333,6 @@ Select one of the following options based on the capabilities of the FTP server:
 
 *Sorting*
 
-
-
 </td>
 <td valign="top">
 
@@ -418,8 +360,6 @@ Choose between the following options:
 
 \(only if *File Name*, *File Size*, or *File Stamp* is selected for *Sorting*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -438,8 +378,6 @@ Choose from the following options:
 <td valign="top">
 
 *Max. Messages per Poll*
-
-
 
 </td>
 <td valign="top">
@@ -465,14 +403,10 @@ Consider how long it will take to process this number of messages, and make sure
 
 *Lock Timeout \(in min.\)*
 
-
-
 </td>
 <td valign="top">
 
 Specify how long to wait before trying to process the file again in the event of a Cloud Integration outage. If it takes a very long time to process the scenario, you may need to increase the timeout to avoid parallel processing of the same file. This value should be higher than the processing time required for the number of messages specified by *Max. Messages per Poll* in the *Processing* tab. The default is set to 15 minutes.
-
-
 
 </td>
 </tr>
@@ -481,14 +415,10 @@ Specify how long to wait before trying to process the file again in the event of
 
 *Change Directories Stepwise*
 
-
-
 </td>
 <td valign="top">
 
 Select this option to change directory levels step by step.
-
-
 
 </td>
 </tr>
@@ -497,14 +427,10 @@ Select this option to change directory levels step by step.
 
 *Include Subdirectories*
 
-
-
 </td>
 <td valign="top">
 
 Select this option to look for files in all subdirectories of the directory.
-
-
 
 </td>
 </tr>
@@ -515,14 +441,10 @@ Select this option to look for files in all subdirectories of the directory.
 
 \(only if *Include Subdirectories* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Flatten the file path by removing the directory levels so that only the file names are considered.
-
-
 
 </td>
 </tr>
@@ -530,8 +452,6 @@ Flatten the file path by removing the directory levels so that only the file nam
 <td valign="top">
 
 *Post-Processing*
-
-
 
 </td>
 <td valign="top">
@@ -586,8 +506,6 @@ You can select one of the following options from the dropdown list:
 
 \(only if *Keep File and Mark as Processed in Idempotent Repository* is selected for *Post-Processing*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -612,14 +530,10 @@ You can select one of the following idempotent repository options:
 
 \(only if *Move File* is selected for *Post-Processing*\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the target directory where to move the file.
-
-
 
 </td>
 </tr>
@@ -639,21 +553,15 @@ Select the *Scheduler* tab and provide values in the fields as follows.
 
 Scheduler Option
 
-
-
 </th>
 <th valign="top">
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -662,21 +570,15 @@ Description
 
 *Schedule on Day* 
 
-
-
 </td>
 <td valign="top">
 
 On Date
 
-
-
 </td>
 <td valign="top">
 
 Specify the date on which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -685,14 +587,10 @@ Specify the date on which you want the operation to be executed.
 
 At Time
 
-
-
 </td>
 <td valign="top">
 
 Specify the time at which you want the operation to be executed.
-
-
 
 </td>
 </tr>
@@ -701,14 +599,10 @@ Specify the time at which you want the operation to be executed.
 
 Every
 
-
-
 </td>
 <td valign="top">
 
 Specify a time period \(for example, every hour\) in a dedicated time window.
-
-
 
 </td>
 </tr>
@@ -717,14 +611,10 @@ Specify a time period \(for example, every hour\) in a dedicated time window.
 
 Time Zone
 
-
-
 </td>
 <td valign="top">
 
 Select the time zone that you want the scheduler to use as a reference for the date and time settings.
-
-
 
 </td>
 </tr>
@@ -733,21 +623,15 @@ Select the time zone that you want the scheduler to use as a reference for the d
 
 *Schedule to Recur* 
 
-
-
 </td>
 <td valign="top">
 
 Daily
 
-
-
 </td>
 <td valign="top">
 
 Select the time or interval and time zone for the schedule to recur.
-
-
 
 </td>
 </tr>
@@ -756,14 +640,10 @@ Select the time or interval and time zone for the schedule to recur.
 
 Weekly
 
-
-
 </td>
 <td valign="top">
 
 Select the checkboxes to indicate the days of the week on which the operation has to be executed. Also, specify the time or interval for the schedule to recur.
-
-
 
 </td>
 </tr>
@@ -772,14 +652,10 @@ Select the checkboxes to indicate the days of the week on which the operation ha
 
 Monthly
 
-
-
 </td>
 <td valign="top">
 
 Select the day of the month on which the operation has to be executed. Also indicate the time or the interval for the schedule to recur.
-
-
 
 </td>
 </tr>

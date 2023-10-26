@@ -15,84 +15,60 @@
 
 Technical Component
 
-
-
 </th>
 <th valign="top">
 
 Environment
-
-
 
 </th>
 <th valign="top">
 
 Title
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Lifecycle
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Line of Business
-
-
 
 </th>
 <th valign="top">
 
 Modular Business Process
 
-
-
 </th>
 <th valign="top">
 
 Product
-
-
 
 </th>
 <th valign="top">
 
 Latest Revision
 
-
-
 </th>
 <th valign="top">
 
 Available as of
-
-
 
 </th>
 </tr>
@@ -100,8 +76,6 @@ Available as of
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -114,8 +88,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -132,56 +104,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
-
-
 
 </td>
 </tr>
@@ -189,8 +145,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -203,8 +157,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -223,56 +175,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
-
-
 
 </td>
 </tr>
@@ -280,8 +216,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -295,8 +229,6 @@ Cloud Integration
 
 Adjust the Validity Time of Access Token during Instance Creation
 
-
-
 </td>
 <td valign="top">
 
@@ -304,63 +236,45 @@ You can now manually adjust the validity time of your access token during the cr
 
 See: [Creating Service Instance and Service Key for Inbound Authentication](../ConnectionSetup/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
-
-
 
 </td>
 </tr>
@@ -368,8 +282,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -383,8 +295,6 @@ Cloud Integration
 
 Deactivate Pin Certificates Option during Service Instance Creation
 
-
-
 </td>
 <td valign="top">
 
@@ -392,63 +302,45 @@ You can now manually deactivate the pin certificate functionality to be able to 
 
 See: [Creating Service Instance and Service Key for Inbound Authentication](../ConnectionSetup/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
-
-
 
 </td>
 </tr>
@@ -456,8 +348,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -472,70 +362,50 @@ Cloud Integration
 
 Multi Mapping for JSON Schemas
 
-
-
 </td>
 <td valign="top">
 
 In message mapping, you can now design a multi-mapping definition by using JSON schemas.
-
-
 
 </td>
 <td valign="top">
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
-
-
 
 </td>
 </tr>
@@ -543,8 +413,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -558,70 +426,50 @@ Cloud Integration
 
 Move Properties and Headers In A Content Modifier Step
 
-
-
 </td>
 <td valign="top">
 
 You can now move the properties and headers in a content modifier step up and down to decide the order of processing them. See: [Define Content Modifier](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/define-content-modifier?version=Cloud#loio8f04a707843a40bf9f6e07ed55b93034__move).
-
-
 
 </td>
 <td valign="top">
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
-
-
 
 </td>
 </tr>
@@ -629,8 +477,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -644,8 +490,6 @@ Integration Advisor
 <td valign="top">
 
 Mapping Guidelines
-
-
 
 </td>
 <td valign="top">
@@ -666,56 +510,40 @@ Mapping Guidelines
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
-
-
 
 </td>
 </tr>
@@ -723,8 +551,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -739,8 +565,6 @@ Integration Advisor
 
 Export a single MIG/MAG version
 
-
-
 </td>
 <td valign="top">
 
@@ -748,63 +572,45 @@ You can now export a single version of MIG or MAG into a `.zip` file.
 
 See: [Exporting MIG/MAG](../IntegrationAdvisor/exporting-mig-mag-c8bba26.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
-
-
 
 </td>
 </tr>
@@ -812,8 +618,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -828,8 +632,6 @@ Integration Advisor
 
 Code Value Mapping
 
-
-
 </td>
 <td valign="top">
 
@@ -837,63 +639,45 @@ Code value mapping in a MAG now supports N:1 mapping cardinality.
 
 See: [Code Value Mapping](../IntegrationAdvisor/code-value-mapping-eb6dad8.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
 
-
-
 </td>
 <td valign="top">
 
 2023-10-01
-
-
 
 </td>
 </tr>
@@ -901,8 +685,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -915,8 +697,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -933,56 +713,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-08-26
 
-
-
 </td>
 <td valign="top">
 
 2023-08-26
-
-
 
 </td>
 </tr>
@@ -990,8 +754,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -1004,8 +766,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1024,56 +784,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-08-26
 
-
-
 </td>
 <td valign="top">
 
 2023-08-26
-
-
 
 </td>
 </tr>
@@ -1081,8 +825,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -1096,8 +838,6 @@ Cloud Integration
 
 Inspect Usage of Integration Resources Extended by Monitoring Storage Capacity
 
-
-
 </td>
 <td valign="top">
 
@@ -1105,63 +845,45 @@ You can now inspect usage of the monitoring storage database for a given time pe
 
 See: [Inspect Monitoring Storage Usage](../Operations/inspect-monitoring-storage-usage-216dc43.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-08-26
 
-
-
 </td>
 <td valign="top">
 
 2023-08-26
-
-
 
 </td>
 </tr>
@@ -1169,8 +891,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -1185,8 +905,6 @@ Integration Advisor
 
 Migrating a Message Implementation Guideline
 
-
-
 </td>
 <td valign="top">
 
@@ -1194,63 +912,45 @@ You can now migrate a Message Implementation Guideline to a different Message Ty
 
 See: [Migrating a Message Implementation Guideline](../IntegrationAdvisor/migrating-a-message-implementation-guideline-a9b12f3.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-08-26
 
-
-
 </td>
 <td valign="top">
 
 2023-08-26
-
-
 
 </td>
 </tr>
@@ -1258,8 +958,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -1274,8 +972,6 @@ Integration Advisor
 
 DateTime Mapping in a Mapping Guideline
 
-
-
 </td>
 <td valign="top">
 
@@ -1283,63 +979,45 @@ The *DateTime Mapping* now supports N:1 mapping between the source and target ma
 
 See: [Date Time Conversion](../IntegrationAdvisor/date-time-conversion-1c09834.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-08-26
 
-
-
 </td>
 <td valign="top">
 
 2023-08-26
-
-
 
 </td>
 </tr>
@@ -1347,8 +1025,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -1361,8 +1037,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1378,56 +1052,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-07-17
 
-
-
 </td>
 <td valign="top">
 
 2023-07-17
-
-
 
 </td>
 </tr>
@@ -1435,8 +1093,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -1449,8 +1105,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1468,56 +1122,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-07-17
 
-
-
 </td>
 <td valign="top">
 
 2023-07-17
-
-
 
 </td>
 </tr>
@@ -1525,8 +1163,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -1540,8 +1176,6 @@ Cloud Integration
 <td valign="top">
 
 SFTP JSchi Library Update
-
-
 
 </td>
 <td valign="top">
@@ -1564,56 +1198,40 @@ See:
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-07-17
 
-
-
 </td>
 <td valign="top">
 
 2023-07-17
-
-
 
 </td>
 </tr>
@@ -1621,8 +1239,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -1637,8 +1253,6 @@ Cloud Integration
 
 Binary Parameter for Partner Directory
 
-
-
 </td>
 <td valign="top">
 
@@ -1646,63 +1260,45 @@ The maximum size of the binary parameter for the Partner Directory has been incr
 
 See: [Partner Directory](../Development/partner-directory-0fe80dc.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-07-17
 
-
-
 </td>
 <td valign="top">
 
 2023-07-17
-
-
 
 </td>
 </tr>
@@ -1710,8 +1306,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -1724,8 +1318,6 @@ Cloud Integration
 <td valign="top">
 
 System Settings Tab
-
-
 
 </td>
 <td valign="top">
@@ -1741,63 +1333,45 @@ The existing *ES Repository* tab under *Settings* is renamed as *System*. The se
 
 See: [Importing Content from SAP Process Orchestration System](../IntegrationSettings/importing-content-from-sap-process-orchestration-system-53db5fb.md).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-07-17
 
-
-
 </td>
 <td valign="top">
 
 2023-07-17
-
-
 
 </td>
 </tr>
@@ -1805,8 +1379,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -1819,8 +1391,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1839,56 +1409,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
-
-
 
 </td>
 </tr>
@@ -1896,8 +1450,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -1910,8 +1462,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1930,56 +1480,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
-
-
 
 </td>
 </tr>
@@ -1987,8 +1521,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -2002,8 +1534,6 @@ Cloud Integration
 
 Enhanced Cloud Integration OData API
 
-
-
 </td>
 <td valign="top">
 
@@ -2013,63 +1543,45 @@ You can use this resource to create, update, read, and delete *Secure Parameter*
 
 See: [Security Content](../Development/security-content-e01d3f0.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
-
-
 
 </td>
 </tr>
@@ -2077,8 +1589,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -2093,8 +1603,6 @@ Integration Advisor
 
 Extended Namespace Support in MIGs
 
-
-
 </td>
 <td valign="top">
 
@@ -2102,63 +1610,45 @@ There is an update on how Namespace declarations are handled for message root no
 
 See: [Exporting Runtime Artifacts](../IntegrationAdvisor/exporting-runtime-artifacts-5ab4cfe.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
-
-
 
 </td>
 </tr>
@@ -2166,8 +1656,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -2182,8 +1670,6 @@ Integration Advisor
 
 Conditional Mapping in MAGs
 
-
-
 </td>
 <td valign="top">
 
@@ -2191,63 +1677,45 @@ You can now set conditional mapping for nodes with Code Value Mapping in a Mappi
 
 See: [Mapping the Source and Target Nodes](../IntegrationAdvisor/mapping-the-source-and-target-nodes-9ea58d6.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
-
-
 
 </td>
 </tr>
@@ -2255,8 +1723,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -2270,8 +1736,6 @@ Cloud Integration
 <td valign="top">
 
 JMS Queue Name – Maximum Length Increased
-
-
 
 </td>
 <td valign="top">
@@ -2292,56 +1756,40 @@ See:
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
-
-
 
 </td>
 </tr>
@@ -2349,8 +1797,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -2364,8 +1810,6 @@ Cloud Integration
 <td valign="top">
 
 Disable Attachments for Message Processing Failures
-
-
 
 </td>
 <td valign="top">
@@ -2388,56 +1832,40 @@ See:
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
-
-
 
 </td>
 </tr>
@@ -2445,8 +1873,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -2459,8 +1885,6 @@ Cloud Integration
 <td valign="top">
 
 Inspect Usage of Integration Resources Extended and Enabled for SAP Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2482,63 +1906,45 @@ Therefore, this feature now covers the following integration resources:
 
 See: [Inspect](../Operations/inspect-a4d5e49.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
 
-
-
 </td>
 <td valign="top">
 
 2023-06-26
-
-
 
 </td>
 </tr>
@@ -2546,8 +1952,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -2560,8 +1964,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -2579,56 +1981,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
-
-
 
 </td>
 </tr>
@@ -2636,8 +2022,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -2650,8 +2034,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -2671,56 +2053,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
-
-
 
 </td>
 </tr>
@@ -2728,8 +2094,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -2743,8 +2107,6 @@ Cloud Integration
 <td valign="top">
 
 Update Required for Dedicated Adapters
-
-
 
 </td>
 <td valign="top">
@@ -2778,63 +2140,45 @@ Perform this step **as soon as possible, but no later than** **1 November 2023**
 
 For more information on the required steps, see SAP note [3001980](https://me.sap.com/notes/3001980).
 
-
-
 </td>
 <td valign="top">
 
 Required
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-05-15
 
-
-
 </td>
 <td valign="top">
 
 2023-05-15
-
-
 
 </td>
 </tr>
@@ -2842,8 +2186,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -2856,8 +2198,6 @@ Cloud Integration
 <td valign="top">
 
 New Feature Allows You to Inspect Usage of Integration Resources
-
-
 
 </td>
 <td valign="top">
@@ -2877,63 +2217,45 @@ This feature is only available for SAP Cloud Integration, Cloud Foundry environm
 
 See: [Inspect](../Operations/inspect-a4d5e49.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
-
-
 
 </td>
 </tr>
@@ -2941,8 +2263,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -2957,8 +2277,6 @@ Integration Advisor
 
 GS1 XML Type System
 
-
-
 </td>
 <td valign="top">
 
@@ -2966,63 +2284,45 @@ A new type system *GS1 XML* has now been added to the Type System library.
 
 See: [Overview Of B2B Standards](../IntegrationAdvisor/overview-of-b2b-standards-c339707.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
-
-
 
 </td>
 </tr>
@@ -3030,8 +2330,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -3046,8 +2344,6 @@ Integration Advisor
 
 Namespace Prefix in Message Implementation Guideline
 
-
-
 </td>
 <td valign="top">
 
@@ -3055,63 +2351,45 @@ You can now view the *Namespace Prefix* of a XML qualified node in a Message Imp
 
 See: [Working with a Node](../IntegrationAdvisor/working-with-a-node-518b54f.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
-
-
 
 </td>
 </tr>
@@ -3119,8 +2397,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -3135,8 +2411,6 @@ Integration Advisor
 
 Conditional Mapping in Mapping Guidelines
 
-
-
 </td>
 <td valign="top">
 
@@ -3144,63 +2418,45 @@ Conditional Mapping is now extended to support leaf-to-leaf mapping.
 
 See: [Mapping the Source and Target Nodes](../IntegrationAdvisor/mapping-the-source-and-target-nodes-9ea58d6.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
-
-
 
 </td>
 </tr>
@@ -3208,8 +2464,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -3224,8 +2478,6 @@ Integration Advisor
 
 Global Code Value Mapping
 
-
-
 </td>
 <td valign="top">
 
@@ -3233,63 +2485,45 @@ You can now create a Global Code Value Mapping directly from the *Mapping Guidel
 
 See: [Global Code Value Mapping](../IntegrationAdvisor/global-code-value-mapping-fd1d3ff.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
-
-
 
 </td>
 </tr>
@@ -3297,8 +2531,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -3313,70 +2545,50 @@ Cloud Integration
 
 Auto Layout Feature in Integration Flow Editor
 
-
-
 </td>
 <td valign="top">
 
 You can now prettify your complex Integration Process pools in one click using the auto layout feature in the Integration Flow Editor. See: [Overview of Integration Flow Editor](../Development/overview-of-integration-flow-editor-db10beb.md).
-
-
 
 </td>
 <td valign="top">
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
 
-
-
 </td>
 <td valign="top">
 
 2023-05-08
-
-
 
 </td>
 </tr>
@@ -3384,8 +2596,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -3398,8 +2608,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -3415,56 +2623,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-04-08
 
-
-
 </td>
 <td valign="top">
 
 2023-04-08
-
-
 
 </td>
 </tr>
@@ -3472,8 +2664,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -3486,8 +2676,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -3507,56 +2695,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-04-08
 
-
-
 </td>
 <td valign="top">
 
 2023-04-08
-
-
 
 </td>
 </tr>
@@ -3564,8 +2736,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -3580,8 +2750,6 @@ Cloud Integration
 
 *PGP Keys* Monitor Provides Access to All PGP Key-Related Features
 
-
-
 </td>
 <td valign="top">
 
@@ -3589,63 +2757,45 @@ The features for the management of PGP keys has been disabled for the *Security 
 
 See: [Managing PGP Keys](../Operations/managing-pgp-keys-cd478a7.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-04-08
 
-
-
 </td>
 <td valign="top">
 
 2023-04-08
-
-
 
 </td>
 </tr>
@@ -3653,8 +2803,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -3668,8 +2816,6 @@ Cloud Integration
 <td valign="top">
 
 New Parameter *Compress Stored Message* Introduced for XI Sender and Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -3690,56 +2836,40 @@ See:
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-04-08
 
-
-
 </td>
 <td valign="top">
 
 2023-04-08
-
-
 
 </td>
 </tr>
@@ -3747,8 +2877,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -3763,8 +2891,6 @@ Cloud Integration
 
 Renaming Product Profiles
 
-
-
 </td>
 <td valign="top">
 
@@ -3772,63 +2898,45 @@ Product profiles are being renamed as "Runtime Profiles".
 
 See: [Runtime Profiles](../IntegrationSettings/runtime-profiles-8007daa.md).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-04-08
 
-
-
 </td>
 <td valign="top">
 
 2023-04-08
-
-
 
 </td>
 </tr>
@@ -3836,8 +2944,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -3852,8 +2958,6 @@ Cloud Integration
 
 Support for EDIFACT Syntax Version 2
 
-
-
 </td>
 <td valign="top">
 
@@ -3861,63 +2965,45 @@ EDI to XML Converter, XML to EDI Converter, EDI Splitter, EDI Validator now supp
 
 See: [Define EDI to XML Converter](../Development/define-edi-to-xml-converter-6a3d12b.md), [Define XML to EDI Converter](../Development/define-xml-to-edi-converter-707973f.md), [Define Splitter](../Development/define-splitter-dabea9d.md), [Define EDI Validator](../Development/define-edi-validator-9bf3b96.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-04-08
 
-
-
 </td>
 <td valign="top">
 
 2023-04-08
-
-
 
 </td>
 </tr>
@@ -3925,8 +3011,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -3939,8 +3023,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -3956,56 +3038,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
-
-
 
 </td>
 </tr>
@@ -4013,8 +3079,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -4027,8 +3091,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -4045,56 +3107,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
-
-
 
 </td>
 </tr>
@@ -4102,8 +3148,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -4118,8 +3162,6 @@ Cloud Integration
 
 Handling of Duplicate Attachment Names in SOAP SOAP 1.x Sender Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -4127,63 +3169,45 @@ Handling of duplicate attachment names was changed for the SOAP SOAP 1.x sender 
 
 See: [Configure the SOAP \(SOAP 1.x\) Sender Adapter](../Development/configure-the-soap-soap-1-x-sender-adapter-a178913.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
-
-
 
 </td>
 </tr>
@@ -4191,8 +3215,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -4207,8 +3229,6 @@ Cloud Integration
 
 Support to Define Source of Partner ID in AS2 Sender Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -4216,63 +3236,45 @@ You can now specify the source of Partner ID in AS2 Sender adapter.
 
 See: [Configure the AS2 Sender Adapter](../Development/configure-the-as2-sender-adapter-5d7ee17.md) 
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
-
-
 
 </td>
 </tr>
@@ -4280,8 +3282,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -4296,8 +3296,6 @@ Cloud Integration
 
 Support for On-Premise and Cloud SAP ASE Service Databases in JDBC Receiver Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -4305,63 +3303,45 @@ JDBC Receiver adapter now supports SAP ASE Service database on both On-Premise a
 
 See: [JDBC for SAP ASE Platform \(On-Premise\)](../Development/jdbc-for-sap-ase-platform-on-premise-dad011d.md)and [JDBC for SAP ASE Service \(Cloud\)](../Development/jdbc-for-sap-ase-service-cloud-d96c7c5.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
-
-
 
 </td>
 </tr>
@@ -4369,8 +3349,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -4385,8 +3363,6 @@ Cloud Integration
 
 Advanced Scheduler Configuration in the Timer Flow Step
 
-
-
 </td>
 <td valign="top">
 
@@ -4394,63 +3370,45 @@ You can now configure complex and granular schedules using combination of variou
 
 See: [Define a Timer Start Event](../Development/define-a-timer-start-event-ae14ad7.md).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
-
-
 
 </td>
 </tr>
@@ -4458,8 +3416,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -4474,8 +3430,6 @@ Cloud Integration
 
 Transport Owner Propagation
 
-
-
 </td>
 <td valign="top">
 
@@ -4483,63 +3437,45 @@ You can now propagate the logged in user as the owner of the particular transpor
 
 See: [Content Transport Using Cloud Transport Management](../Development/content-transport-using-cloud-transport-management-d458b17.md).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
-
-
 
 </td>
 </tr>
@@ -4547,8 +3483,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -4562,8 +3496,6 @@ Cloud Integration
 <td valign="top">
 
 New Configuration Option for OData Receiver Adapter Variants Allow Reuse of Connections Across HTTP Requests
-
-
 
 </td>
 <td valign="top">
@@ -4588,56 +3520,40 @@ See:
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
-
-
 
 </td>
 </tr>
@@ -4645,8 +3561,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -4661,8 +3575,6 @@ Cloud Integration
 
 New Filter Option for Query in the Model Operation Wizard of OData V2 Receiver Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -4670,63 +3582,45 @@ You can now the filter the *Fields* list when you're trying to choose the right 
 
 See: [Configure the OData V2 Receiver Adapter](../Development/configure-the-odata-v2-receiver-adapter-c5c2e38.md).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
-
-
 
 </td>
 </tr>
@@ -4734,8 +3628,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -4750,8 +3642,6 @@ Cloud Integration
 
 Keyboard Shortcut to Create Artifacts
 
-
-
 </td>
 <td valign="top">
 
@@ -4761,63 +3651,45 @@ See: [Creating an Integration Flow](../Development/creating-an-integration-flow-
 
 The feature is available for creation of Message Mapping, Value Mapping, and Script Collection too.
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
 
-
-
 </td>
 <td valign="top">
 
 2023-03-11
-
-
 
 </td>
 </tr>
@@ -4825,8 +3697,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -4839,8 +3709,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -4856,56 +3724,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
-
-
 
 </td>
 </tr>
@@ -4913,8 +3765,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -4927,8 +3777,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -4945,56 +3793,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
-
-
 
 </td>
 </tr>
@@ -5002,8 +3834,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -5017,8 +3847,6 @@ Cloud Integration
 
 RabbitMQ Adapters Available
 
-
-
 </td>
 <td valign="top">
 
@@ -5026,63 +3854,45 @@ The RabbitMQ sender adapter allows you to consume messages in from queues on the
 
 The RabbitMQ receiver adapter allows you to send messages from to exchanges or queues on the RabbitMQ server.
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-02-28
 
-
-
 </td>
 <td valign="top">
 
 2023-02-28
-
-
 
 </td>
 </tr>
@@ -5090,8 +3900,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -5106,8 +3914,6 @@ Integration Advisor
 
 Update Mapping Guidelines
 
-
-
 </td>
 <td valign="top">
 
@@ -5115,63 +3921,45 @@ The new feature *Update MAGS* now allows you to select and update a group of map
 
 See: [Updating Mapping Guidelines](../IntegrationAdvisor/updating-mapping-guidelines-655ceb1.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
-
-
 
 </td>
 </tr>
@@ -5179,8 +3967,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -5194,8 +3980,6 @@ Cloud Integration
 
 External Logging feature
 
-
-
 </td>
 <td valign="top">
 
@@ -5203,63 +3987,45 @@ The External Logging feature enables customers to send message processing logs t
 
 See: [External Logging Cloud Foundry Environment](../Operations/external-logging-cloud-foundry-environment-ad719c1.md) 
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
-
-
 
 </td>
 </tr>
@@ -5267,8 +4033,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -5283,8 +4047,6 @@ Cloud Integration
 
 New version of Integration Process pool available
 
-
-
 </td>
 <td valign="top">
 
@@ -5292,63 +4054,45 @@ New version of Integration Process pool available
 
 See: [Define Transaction Handling](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/2a5d4bc3b5da46df84b26ac96450587b.html?version=Cloud#loio2a5d4bc3b5da46df84b26ac96450587b__JDBC).
 
-
-
 </td>
 <td valign="top">
 
 Recommended
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
-
-
 
 </td>
 </tr>
@@ -5356,8 +4100,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -5372,8 +4114,6 @@ Cloud Integration
 
 Persisting the cardinality in message mapping
 
-
-
 </td>
 <td valign="top">
 
@@ -5381,63 +4121,45 @@ For multi-mapping schema, the cardinality is persisted if the source or target s
 
 Earlier, the cardinality used to revert to the default value if the schema was replaced.
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
-
-
 
 </td>
 </tr>
@@ -5445,8 +4167,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -5461,8 +4181,6 @@ Cloud Integration
 
 New Option to Update an RSA Key
 
-
-
 </td>
 <td valign="top">
 
@@ -5470,63 +4188,45 @@ You can now update an RSA key in the keystore.
 
 See: [Updating an RSA Key](../Operations/updating-an-rsa-key-ee6bf92.md)
 
-
-
 </td>
 <td valign="top">
 
 Recommended
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Announcement
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
 
-
-
 </td>
 <td valign="top">
 
 2023-02-11
-
-
 
 </td>
 </tr>
@@ -5534,8 +4234,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -5549,70 +4247,50 @@ Cloud Integration
 
 New AzureStorage Adapter Available
 
-
-
 </td>
 <td valign="top">
 
 The new adapter type allows you to exchange data between Azure Storage and .
-
-
 
 </td>
 <td valign="top">
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-02-03
 
-
-
 </td>
 <td valign="top">
 
 2023-02-03
-
-
 
 </td>
 </tr>
@@ -5620,8 +4298,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -5635,8 +4311,6 @@ Cloud Integration
 <td valign="top">
 
 Update Required for Dedicated Adapters
-
-
 
 </td>
 <td valign="top">
@@ -5666,63 +4340,45 @@ For more information on the new adapter versions, see:
 
 Certain integration packages use adapters that are affected by this change. If you're using one of these integration packages, we recommend you to switch to the latest version of the integration package \(see: SAP note [3001980](https://me.sap.com/notes/3001980)\).
 
-
-
 </td>
 <td valign="top">
 
 Recommended
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Announcement
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-17
 
-
-
 </td>
 <td valign="top">
 
 2023-01-17
-
-
 
 </td>
 </tr>
@@ -5730,8 +4386,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -5744,8 +4398,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -5761,56 +4413,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -5818,8 +4454,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -5832,8 +4466,6 @@ Cloud Integration
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -5850,56 +4482,40 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -5907,8 +4523,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -5923,8 +4537,6 @@ Cloud Integration
 
 Support to Define Source of Partner ID in AS2 MDN Sender Adapter.
 
-
-
 </td>
 <td valign="top">
 
@@ -5932,63 +4544,45 @@ You can now specify the source of Partner ID in AS2 MDN sender adapter.
 
 See: [Configure the AS2 MDN Sender Adapter](../Development/configure-the-as2-mdn-sender-adapter-c54effe.md)
 
-
-
 </td>
 <td valign="top">
 
 Recommended
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Announcement
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -5996,8 +4590,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -6012,8 +4604,6 @@ Cloud Integration
 
 New Option to Upload an RSA Key to Keystore
 
-
-
 </td>
 <td valign="top">
 
@@ -6021,63 +4611,45 @@ You can now upload an RSA key to the keystore.
 
 See: [Uploading an RSA Key](../Operations/uploading-an-rsa-key-b8ba4a3.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -6085,8 +4657,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -6101,8 +4671,6 @@ Cloud Integration
 
 New Operations Added to *Script Collections* Resource of *Integration Content* OData API
 
-
-
 </td>
 <td valign="top">
 
@@ -6110,63 +4678,45 @@ You can now navigate to a script collection from an integration package and save
 
 See: [Integration Content](../Development/integration-content-d1679a8.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -6174,8 +4724,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -6189,8 +4737,6 @@ Cloud Integration
 
 Role-Based Protection of Connectivity Test Has Been Changed
 
-
-
 </td>
 <td valign="top">
 
@@ -6200,63 +4746,45 @@ The role templates for the integration developer and tenant administrator person
 
 See: [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -6264,8 +4792,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -6279,8 +4805,6 @@ Cloud Integration
 
 Role-Based Protection of Connectivity Test Has Been Changed
 
-
-
 </td>
 <td valign="top">
 
@@ -6290,63 +4814,45 @@ The role authorization groups for the integration developer and tenant administr
 
 See: [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -6354,8 +4860,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -6369,8 +4873,6 @@ Cloud Integration
 <td valign="top">
 
 AMQP Adapters Support Client Certificate Authentication
-
-
 
 </td>
 <td valign="top">
@@ -6391,56 +4893,40 @@ See:
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -6448,8 +4934,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -6463,71 +4947,51 @@ Cloud Integration
 <td valign="top">
 
 Integration Flow Design Guidelines Changes
-
-
 
 </td>
 <td valign="top">
 
 The integration flow design guideline *EOIO via Aggregator* \(with integration flow*Pattern Quality Of Service - Scenario 08b*\) has been deleted.
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 Deleted
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -6535,8 +4999,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -6550,8 +5012,6 @@ Cloud Integration
 <td valign="top">
 
 Integration Flow Design Guidelines Changes
-
-
 
 </td>
 <td valign="top">
@@ -6570,56 +5030,40 @@ The following new integration flow design guidelines \(including integration flo
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -6627,8 +5071,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -6642,8 +5084,6 @@ Cloud Integration
 <td valign="top">
 
 Integration Flow Design Guidelines Changes
-
-
 
 </td>
 <td valign="top">
@@ -6664,56 +5104,40 @@ The following integration flow design guidelines have been changed:
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -6721,8 +5145,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -6737,8 +5159,6 @@ Cloud Integration
 
 Handling of Duplicate Attachment Names by SOAP SOAP 1.x Sender Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -6746,63 +5166,45 @@ Handling duplicate attachment names has been improved for the SOAP SOAP 1.x send
 
 See: [Configure the SOAP \(SOAP 1.x\) Sender Adapter](../Development/configure-the-soap-soap-1-x-sender-adapter-a178913.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -6810,8 +5212,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -6825,8 +5225,6 @@ Cloud Integration
 <td valign="top">
 
 XI Sender Adapter Sets New Header for Quality of Service
-
-
 
 </td>
 <td valign="top">
@@ -6847,14 +5245,10 @@ See:
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
@@ -6866,35 +5260,25 @@ General Availability
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -6902,8 +5286,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -6918,8 +5300,6 @@ Integration Advisor
 
 Display of XML Tag Name
 
-
-
 </td>
 <td valign="top">
 
@@ -6929,63 +5309,45 @@ You can use this value while maintaining the XSD assertions.
 
 See: [Working with a Node](../IntegrationAdvisor/working-with-a-node-518b54f.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -6993,8 +5355,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -7009,8 +5369,6 @@ Integration Advisor
 
 Custom Type System
 
-
-
 </td>
 <td valign="top">
 
@@ -7018,63 +5376,45 @@ You can now delete the active version of a custom message.
 
 See: [Deleting a Custom Message](../IntegrationAdvisor/deleting-a-custom-message-e6abb6e.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 New
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
-
-
 
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>
@@ -7082,8 +5422,6 @@ SAP Business Technology Platform
 <td valign="top">
 
 Integration Advisor
-
-
 
 </td>
 <td valign="top">
@@ -7097,8 +5435,6 @@ Integration Advisor
 <td valign="top">
 
 Version History of a MIG and MAG
-
-
 
 </td>
 <td valign="top">
@@ -7118,56 +5454,40 @@ See:
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 General Availability
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
 SAP Business Technology Platform
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
 
-
-
 </td>
 <td valign="top">
 
 2023-01-16
-
-
 
 </td>
 </tr>

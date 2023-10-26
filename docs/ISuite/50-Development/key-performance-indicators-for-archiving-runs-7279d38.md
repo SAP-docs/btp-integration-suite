@@ -15,14 +15,10 @@ You can use these indicators, for example, to check for recurring errors, or pot
 
 Key Performance Indicators
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Description
 
 `RunStart`
 
-
-
 </td>
 <td valign="top">
 
 Date and time when the archiving run started.
-
-
 
 </td>
 </tr>
@@ -47,14 +39,10 @@ Date and time when the archiving run started.
 
 `RunDurationInMinutes`
 
-
-
 </td>
 <td valign="top">
 
 Duration of an archiving run \(in minutes\).
-
-
 
 </td>
 </tr>
@@ -63,14 +51,10 @@ Duration of an archiving run \(in minutes\).
 
 `DataCollectionDurationInMinutes`
 
-
-
 </td>
 <td valign="top">
 
 Total time needed to collect the data from relevant data stores \(in minutes\).
-
-
 
 </td>
 </tr>
@@ -79,14 +63,10 @@ Total time needed to collect the data from relevant data stores \(in minutes\).
 
 `DataCompressionDurationInMinutes`
 
-
-
 </td>
 <td valign="top">
 
 Total time needed to compress the uploaded data \(in minutes\).
-
-
 
 </td>
 </tr>
@@ -95,14 +75,10 @@ Total time needed to compress the uploaded data \(in minutes\).
 
 `DataUploadDurationInMinutes`
 
-
-
 </td>
 <td valign="top">
 
 Total time needed to upload the data to the CMS \(in minutes\).
-
-
 
 </td>
 </tr>
@@ -111,14 +87,10 @@ Total time needed to upload the data to the CMS \(in minutes\).
 
 `MplsToBeArchived`
 
-
-
 </td>
 <td valign="top">
 
 Number of archiving relevant message processing logs \(MPLs\).
-
-
 
 </td>
 </tr>
@@ -127,14 +99,10 @@ Number of archiving relevant message processing logs \(MPLs\).
 
 `MplsArchived`
 
-
-
 </td>
 <td valign="top">
 
 Number of archived MPLs. MPLs already uploaded by a previous run, but not yet flagged as archived, are counted as well.
-
-
 
 </td>
 </tr>
@@ -142,8 +110,6 @@ Number of archived MPLs. MPLs already uploaded by a previous run, but not yet fl
 <td valign="top">
 
 `MplsArchivingFailed`
-
-
 
 </td>
 <td valign="top">
@@ -162,14 +128,10 @@ Number of errors that occurred during archiving MPLs. This number includes only 
 
 `MplsArchivedUntilDate`
 
-
-
 </td>
 <td valign="top">
 
 The date until which MPLs are considered as being archiving relevant for this job run. All MPLs matching the date or older are archived.
-
-
 
 </td>
 </tr>
@@ -178,14 +140,10 @@ The date until which MPLs are considered as being archiving relevant for this jo
 
 `DateOfOldestMplToBeArchivedAfterRun`
 
-
-
 </td>
 <td valign="top">
 
 Date of the oldest MPLwhich is still archiving relevant after the run. \(If all MPLs have been archived, this value is `null`\).
-
-
 
 </td>
 </tr>
@@ -194,14 +152,10 @@ Date of the oldest MPLwhich is still archiving relevant after the run. \(If all 
 
 `DataUploadedInMb`
 
-
-
 </td>
 <td valign="top">
 
 Total volume of uploaded data in megabytes
-
-
 
 </td>
 </tr>
@@ -209,8 +163,6 @@ Total volume of uploaded data in megabytes
 <td valign="top">
 
 `RunStatus`
-
-
 
 </td>
 <td valign="top">
@@ -228,8 +180,6 @@ Status of the job run. Possible values are:`COMPLETED` and `FAILED`.
 <td valign="top">
 
 `RunFailedPhase`
-
-
 
 </td>
 <td valign="top">

@@ -60,15 +60,11 @@ You can use this attribute to support the following use cases:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -76,15 +72,11 @@ You can use this attribute to support the following use cases:
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     Enter the name of the verifier.
-
-
     
     </td>
     </tr>
@@ -100,15 +92,11 @@ You can use this attribute to support the following use cases:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -116,8 +104,6 @@ You can use this attribute to support the following use cases:
     <td valign="top">
     
     *Header is Base64 Encoded* 
-
-
     
     </td>
     <td valign="top">
@@ -125,8 +111,6 @@ You can use this attribute to support the following use cases:
     Select this option to verify if the Signed Data encoded in Base64 is included in the header/property `SapCmsSignedData`.
 
     See also [Options to Handle Signed Data](../ConnectionSetup/options-to-handle-signed-data-89f4220.md)
-
-
     
     </td>
     </tr>
@@ -134,8 +118,6 @@ You can use this attribute to support the following use cases:
     <td valign="top">
     
     *Body is Base64 Encoded* 
-
-
     
     </td>
     <td valign="top">
@@ -143,8 +125,6 @@ You can use this attribute to support the following use cases:
     Select this option to verify if the Signed Data encoded in Base64 is included in the message body.
 
     See also [Options to Handle Signed Data](../ConnectionSetup/options-to-handle-signed-data-89f4220.md)
-
-
     
     </td>
     </tr>
@@ -152,8 +132,6 @@ You can use this attribute to support the following use cases:
     <td valign="top">
     
     *Public Key Alias* 
-
-
     
     </td>
     <td valign="top">

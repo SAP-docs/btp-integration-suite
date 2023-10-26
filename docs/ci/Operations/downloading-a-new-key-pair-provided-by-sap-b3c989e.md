@@ -35,15 +35,11 @@ You can download a key, a single certificate, a complete certificate chain or a 
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -51,8 +47,6 @@ You can download a key, a single certificate, a complete certificate chain or a 
     <td valign="top">
     
     *Key Pair* entry
-
-
     
     </td>
     <td valign="top">

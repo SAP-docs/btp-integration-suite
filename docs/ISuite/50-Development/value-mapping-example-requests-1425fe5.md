@@ -19,14 +19,10 @@ To filter all the value mappings based on the source and target value for a spec
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -35,14 +31,10 @@ Resource Path
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `/ValueMappingDesigntimeArtifacts(Id=<Id>,Version=<version>)/ValMapSchema(SrcAgency=<Agency_name>,SrcId=<source_Id,TgtAgency=<Agency_Name>,TgtId=<target_Id>)/ValMaps?$filter=Value/SrcValue eq <Source_Value> and Value/TgtValue eq <target_Value>` 
-
-
 
 </td>
 </tr>
@@ -63,14 +55,10 @@ To create a value mapping using function import *UpsertValMaps*, send the follow
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -79,14 +67,10 @@ Resource Path
 
 POST
 
-
-
 </td>
 <td valign="top">
 
 `/UpsertValMaps?Id=<Id>&Version=<version>&SrcAgency=<Agency_name>&SrcId=<source_Id>&TgtAgency=<Agency_Name>&TgtId=<target_Id>&SrcValue=<value>&TgtValue=<value>&IsConfigured=<true or false>` 
-
-
 
 </td>
 </tr>

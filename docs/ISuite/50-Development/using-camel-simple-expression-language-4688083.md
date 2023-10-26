@@ -15,21 +15,15 @@ You can use Camel Simple Expression Language when configuring the following comp
 
 Component
 
-
-
 </th>
 <th valign="top">
 
 Use Camel Simple Expression to ...
 
-
-
 </th>
 <th valign="top">
 
 More Information
-
-
 
 </th>
 </tr>
@@ -37,8 +31,6 @@ More Information
 <td valign="top">
 
 Content modifier
-
-
 
 </td>
 <td valign="top">
@@ -54,14 +46,10 @@ Define:
 
 \(*Type* parameter set to *Expression*\)
 
-
-
 </td>
 <td valign="top">
 
 [Define Content Modifier](define-content-modifier-8f04a70.md) 
-
-
 
 </td>
 </tr>
@@ -70,8 +58,6 @@ Define:
 
 Write variables
 
-
-
 </td>
 <td valign="top">
 
@@ -79,14 +65,10 @@ Define a variable.
 
 \(*Type* parameter set to *Expression*\)
 
-
-
 </td>
 <td valign="top">
 
 [Define Write Variables](define-write-variables-de04b75.md) 
-
-
 
 </td>
 </tr>
@@ -95,8 +77,6 @@ Define a variable.
 
 Router
 
-
-
 </td>
 <td valign="top">
 
@@ -104,14 +84,10 @@ Define a routing condition.
 
 \(*Expression Type* parameter set to *Non-XML*\)
 
-
-
 </td>
 <td valign="top">
 
 [Define Router](define-router-d7fddbd.md) 
-
-
 
 </td>
 </tr>
@@ -120,23 +96,17 @@ Define a routing condition.
 
 Content filter
 
-
-
 </td>
 <td valign="top">
 
 Define conditions for XPath elements.
 
-To see some examples, see [Examples](examples-eb2e601.md).
-
-
+To review some examples, see [Examples](examples-eb2e601.md).
 
 </td>
 <td valign="top">
 
 [Define Filter](define-filter-733f8dc.md) 
-
-
 
 </td>
 </tr>
@@ -159,21 +129,15 @@ The following table lists the expressions from Camel Simple Expression Language 
 
 Expression
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -182,21 +146,15 @@ Example
 
 `exchangeId` 
 
-
-
 </td>
 <td valign="top">
 
 Exchange Id.
 
-
-
 </td>
 <td valign="top">
 
 `${exchangeId}` 
-
-
 
 </td>
 </tr>
@@ -205,21 +163,15 @@ Exchange Id.
 
 `id` 
 
-
-
 </td>
 <td valign="top">
 
 Message Id
 
-
-
 </td>
 <td valign="top">
 
 `${id}` 
-
-
 
 </td>
 </tr>
@@ -228,21 +180,15 @@ Message Id
 
 `body` 
 
-
-
 </td>
 <td valign="top">
 
 Incoming message body
 
-
-
 </td>
 <td valign="top">
 
 `${body}` 
-
-
 
 </td>
 </tr>
@@ -251,14 +197,10 @@ Incoming message body
 
 `in.body` 
 
-
-
 </td>
 <td valign="top">
 
 Incoming message body
-
-
 
 </td>
 <td valign="top">
@@ -267,8 +209,6 @@ Incoming message body
 
 This expression is deprecated from Apache Camel version 3.12.x.
 
-
-
 </td>
 </tr>
 <tr>
@@ -276,21 +216,15 @@ This expression is deprecated from Apache Camel version 3.12.x.
 
 `bodyAs(<class>` 
 
-
-
 </td>
 <td valign="top">
 
 Message body converted to compatible class
 
-
-
 </td>
 <td valign="top">
 
 `${bodyAs(String)}` 
-
-
 
 </td>
 </tr>
@@ -299,21 +233,15 @@ Message body converted to compatible class
 
 `mandatoryBodyAs(<class>)` 
 
-
-
 </td>
 <td valign="top">
 
 Message body is Mandatory converted to compatible class
 
-
-
 </td>
 <td valign="top">
 
 `${mandatoryBodyAs(String)}` 
-
-
 
 </td>
 </tr>
@@ -322,21 +250,15 @@ Message body is Mandatory converted to compatible class
 
 `in.header.fo` 
 
-
-
 </td>
 <td valign="top">
 
 Refers to foo \(forward declaration\) in header
 
-
-
 </td>
 <td valign="top">
 
 `${in.header.mandatory.length}` 
-
-
 
 </td>
 </tr>
@@ -345,21 +267,15 @@ Refers to foo \(forward declaration\) in header
 
 `in.header.foo.OGNL` 
 
-
-
 </td>
 <td valign="top">
 
 Refers to foo \(forward declaration\) in header with OGNL \(Object-Graph Navigation Language\) expresssion
 
-
-
 </td>
 <td valign="top">
 
 `${in.header.fname.split(',')[0]}` 
-
-
 
 </td>
 </tr>
@@ -368,21 +284,15 @@ Refers to foo \(forward declaration\) in header with OGNL \(Object-Graph Navigat
 
 `headerAs(<key>,<class>` 
 
-
-
 </td>
 <td valign="top">
 
 Refers to header with name `<key>` converted to compatible class
 
-
-
 </td>
 <td valign="top">
 
 `${headerAs(name, String)}` 
-
-
 
 </td>
 </tr>
@@ -391,21 +301,15 @@ Refers to header with name `<key>` converted to compatible class
 
 `property.foo` 
 
-
-
 </td>
 <td valign="top">
 
 Refers to foo \(forward declaration\) in exchange property
 
-
-
 </td>
 <td valign="top">
 
 `${property.token.length}` 
-
-
 
 </td>
 </tr>
@@ -414,21 +318,15 @@ Refers to foo \(forward declaration\) in exchange property
 
 `property.foo.OGNL` 
 
-
-
 </td>
 <td valign="top">
 
 Refers to foo \(forward declaration\) in exchange property with OGNL \(Object-Graph Navigation Language\) expresssion
 
-
-
 </td>
 <td valign="top">
 
 `${property.token.split(',')[0]}` 
-
-
 
 </td>
 </tr>
@@ -437,21 +335,15 @@ Refers to foo \(forward declaration\) in exchange property with OGNL \(Object-Gr
 
 `sys.foo` 
 
-
-
 </td>
 <td valign="top">
 
 Refers to foo \(forward declaration\) in system \(runtime container\)
 
-
-
 </td>
 <td valign="top">
 
 `${sys.file.separator}` 
-
-
 
 </td>
 </tr>
@@ -460,21 +352,15 @@ Refers to foo \(forward declaration\) in system \(runtime container\)
 
 `sysenv.foo` 
 
-
-
 </td>
 <td valign="top">
 
 Refers to foo \(forward declaration\) in system enviroment
 
-
-
 </td>
 <td valign="top">
 
 `${sysenv.property1}` 
-
-
 
 </td>
 </tr>
@@ -483,14 +369,10 @@ Refers to foo \(forward declaration\) in system enviroment
 
 `date:<command>:<pattern>` 
 
-
-
 </td>
 <td valign="top">
 
 Creates date specified in command and uses `SimpleDateFormat` notation
-
-
 
 </td>
 <td valign="top">
@@ -501,8 +383,6 @@ Othe rexample: To write the current timestamp into a message header, define a he
 
 `${date:now:yyyy-MM-dd HH:mm:ss}`
 
-
-
 </td>
 </tr>
 <tr>
@@ -510,28 +390,22 @@ Othe rexample: To write the current timestamp into a message header, define a he
 
 `date-with-timezone:<command>:<timezone>:<pattern>` 
 
-
-
 </td>
 <td valign="top">
 
 Same as `date`, but with timezone
-
-
 
 </td>
 <td valign="top">
 
 `Expires at ${date-with-timezone:now+2h30m:IST:yyyy-MM-dd'T'HH:mm:ss.SSSZ}` 
 
-
-
 </td>
 </tr>
 </table>
 
 > ### Note:  
-> The content modifier Does not process *Equality or Comparison* expressions.
+> The content modifier does not process *Equality or Comparison* expressions.
 > 
 > Example: The following expression is not supported:
 > 

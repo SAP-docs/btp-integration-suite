@@ -27,14 +27,10 @@ A list of security material is displayed in a table. For each artifact, the foll
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Display name of the artifact
-
-
 
 </td>
 </tr>
@@ -58,8 +50,6 @@ Display name of the artifact
 <td valign="top">
 
 *Type* 
-
-
 
 </td>
 <td valign="top">
@@ -88,8 +78,6 @@ Possible values:
 <td valign="top">
 
 *Status* 
-
-
 
 </td>
 <td valign="top">
@@ -121,14 +109,10 @@ Possible values:
 
 *Deployed By* 
 
-
-
 </td>
 <td valign="top">
 
 User who deployed the artifact
-
-
 
 </td>
 </tr>
@@ -137,14 +121,10 @@ User who deployed the artifact
 
 *Deployed On* 
 
-
-
 </td>
 <td valign="top">
 
 Time when the artifact was deployed
-
-
 
 </td>
 </tr>
@@ -168,14 +148,10 @@ To sort and filter the content of the table, choose *Table Settings* \(:gear:\).
 
 *Create*
 
-
-
 </td>
 <td valign="top">
 
 To create/deploy a new artifact, choose *Create* and select the artifact type \(possible for the following artifact types: *User Credentials*, *OAuth2 Client Credentials*, *OAuth2 SAML Bearer Assertion*, *OAuth2 Authorization Code* and *Secure Parameter*\).
-
-
 
 </td>
 </tr>
@@ -184,14 +160,10 @@ To create/deploy a new artifact, choose *Create* and select the artifact type \(
 
 *Upload*
 
-
-
 </td>
 <td valign="top">
 
 To add a *Known Hosts \(SSH\)* file, select *Upload*.
-
-
 
 </td>
 </tr>
@@ -200,14 +172,10 @@ To add a *Known Hosts \(SSH\)* file, select *Upload*.
 
 *Authorize*
 
-
-
 </td>
 <td valign="top">
 
 To authorize an existing artifact, select the artifact in the table and choose *Authorize* \(only supported for OAuth2 Authorization Code\).
-
-
 
 </td>
 </tr>
@@ -216,14 +184,10 @@ To authorize an existing artifact, select the artifact in the table and choose *
 
 *Edit*
 
-
-
 </td>
 <td valign="top">
 
 To edit and redeploy an existing artifact, select the artifact in the table and choose *Edit* \(only supported for Credentials\).
-
-
 
 </td>
 </tr>
@@ -232,14 +196,10 @@ To edit and redeploy an existing artifact, select the artifact in the table and 
 
 *Download*
 
-
-
 </td>
 <td valign="top">
 
 To download an artifact, select the artifact in the table and choose *Download* \(only supported for Known Hosts\).
-
-
 
 </td>
 </tr>
@@ -248,14 +208,10 @@ To download an artifact, select the artifact in the table and choose *Download* 
 
 *Delete*
 
-
-
 </td>
 <td valign="top">
 
 You can also delete an artifact \(supported for all artifact types except *Keystore*\).
-
-
 
 </td>
 </tr>

@@ -35,28 +35,20 @@ There are two personas associated with Integration Advisor: Tenant Administrator
 
 Persona
 
-
-
 </th>
 <th valign="top">
 
 Responsibilities
-
-
 
 </th>
 <th valign="top">
 
 Roles Required in Application
 
-
-
 </th>
 <th valign="top">
 
 Roles Required in SAP BTPAccount
-
-
 
 </th>
 </tr>
@@ -64,8 +56,6 @@ Roles Required in SAP BTPAccount
 <td valign="top">
 
 Tenant Admin
-
-
 
 </td>
 <td valign="top">
@@ -86,14 +76,10 @@ Responsibilities:
 
 None
 
-
-
 </td>
 <td valign="top">
 
 Administrator
-
-
 
 </td>
 </tr>
@@ -101,8 +87,6 @@ Administrator
 <td valign="top">
 
 Content Developer
-
-
 
 </td>
 <td valign="top">
@@ -129,14 +113,10 @@ Typesystem.Read
 
 Guidelines.ReadWrite
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -144,8 +124,6 @@ None
 <td valign="top">
 
 IA Administrator
-
-
 
 </td>
 <td valign="top">
@@ -172,14 +150,10 @@ Guidelines.ReadWrite
 
 Typesystem.Read
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>

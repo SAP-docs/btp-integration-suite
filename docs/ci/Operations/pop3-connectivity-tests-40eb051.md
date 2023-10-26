@@ -16,14 +16,10 @@ When you have chosen the POP3 \(Post-Office\_Protocol\) the test tool checks the
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -32,16 +28,12 @@ Description
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the host name of the receiver.
 
 The host name must **not** contain any path or schema for example, `https://`\). In particular, you must **not** enter a URL as the host name.
-
-
 
 </td>
 </tr>
@@ -50,8 +42,6 @@ The host name must **not** contain any path or schema for example, `https://`\).
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
@@ -59,16 +49,12 @@ Enter the port that is to be used for outbound communication.
 
 Standard port is `110` or `995` 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type*
-
-
 
 </td>
 <td valign="top">
@@ -90,16 +76,12 @@ Select a proxy type from the drop-down list:\(
 
 *Location ID*
 
-
-
 </td>
 <td valign="top">
 
 Only if `On-Premise` is selected as *Proxy Ttype*.
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you 've defined for this instance, in the destination configuration on the cloud side
-
-
 
 </td>
 </tr>
@@ -109,8 +91,6 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 *Protection*
 
 Thi
-
-
 
 </td>
 <td valign="top">
@@ -141,8 +121,6 @@ Select the protection type:
 
 *Authentication* 
 
-
-
 </td>
 <td valign="top">
 
@@ -166,14 +144,10 @@ Choose which mechanism is to be used to authenticate against the server. Possibl
 
 *Credential Name*\(mandatory\)
 
-
-
 </td>
 <td valign="top">
 
 Enter a credential name or select one from the drop-down list.
-
-
 
 </td>
 </tr>
@@ -181,8 +155,6 @@ Enter a credential name or select one from the drop-down list.
 <td valign="top">
 
 *Validate Server Certificate* 
-
-
 
 </td>
 <td valign="top">
@@ -198,8 +170,6 @@ When you have selected the *Validate Server Certificate* option \(which is the d
 
 If it was not successful and there is an error message, you can unselect the *Validate Server Certificate* option.
 
-
-
 </td>
 </tr>
 <tr>
@@ -207,14 +177,10 @@ If it was not successful and there is an error message, you can unselect the *Va
 
 *Check Mailbox Content* 
 
-
-
 </td>
 <td valign="top">
 
 If you check *Check Mailbox Content* the mailbox is checked and the total number of mails in the inbox is displayed.
-
-
 
 </td>
 </tr>

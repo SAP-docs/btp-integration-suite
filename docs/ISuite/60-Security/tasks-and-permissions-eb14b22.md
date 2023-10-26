@@ -13,28 +13,20 @@ The following table provides an overview of which roles are required in order to
 
 Area
 
-
-
 </th>
 <th valign="top">
 
 Task
-
-
 
 </th>
 <th valign="top">
 
 Role Collection
 
-
-
 </th>
 <th valign="top">
 
 Persona
-
-
 
 </th>
 </tr>
@@ -42,8 +34,6 @@ Persona
 <td valign="top">
 
 Design
-
-
 
 </td>
 <td valign="top">
@@ -63,8 +53,6 @@ Design
 
 PI\_Read\_Only
 
-
-
 </td>
 <td valign="top">
 
@@ -72,16 +60,12 @@ Integration Developer
 
 Business Expert
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Design
-
-
 
 </td>
 <td valign="top">
@@ -99,14 +83,10 @@ Design
 
 PI\_Integration\_Developer
 
-
-
 </td>
 <td valign="top">
 
 Integration Developer
-
-
 
 </td>
 </tr>
@@ -114,29 +94,21 @@ Integration Developer
 <td valign="top">
 
 Design
-
-
 
 </td>
 <td valign="top">
 
 Publish trading partner agreement
 
-
-
 </td>
 <td valign="top">
 
 PI\_Integration\_Developer
 
-
-
 </td>
 <td valign="top">
 
 Integration Developer
-
-
 
 </td>
 </tr>
@@ -144,8 +116,6 @@ Integration Developer
 <td valign="top">
 
 Design
-
-
 
 </td>
 <td valign="top">
@@ -154,14 +124,10 @@ Design
 
 Read and write tenant partner directory
 
-
-
 </td>
 <td valign="top">
 
 PI\_Adminstrator
-
-
 
 </td>
 <td valign="top">
@@ -170,16 +136,12 @@ Tenant administrator
 
 Technical user
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Design
-
-
 
 </td>
 <td valign="top">
@@ -188,21 +150,15 @@ Design
 
 Read and deploy credentials in node manager
 
-
-
 </td>
 <td valign="top">
 
 PI\_Integration\_Developer
 
-
-
 </td>
 <td valign="top">
 
 Integration Developer
-
-
 
 </td>
 </tr>
@@ -210,8 +166,6 @@ Integration Developer
 <td valign="top">
 
 Design
-
-
 
 </td>
 <td valign="top">
@@ -229,14 +183,10 @@ Design
 
 PI\_Business\_Expert
 
-
-
 </td>
 <td valign="top">
 
 Business Expert
-
-
 
 </td>
 </tr>
@@ -245,21 +195,15 @@ Business Expert
 
 Monitor
 
-
-
 </td>
 <td valign="top">
 
 Read monitoring data
 
-
-
 </td>
 <td valign="top">
 
 PI\_Read\_Only
-
-
 
 </td>
 <td valign="top">
@@ -268,8 +212,6 @@ Integration Developer
 
 Business Expert
 
-
-
 </td>
 </tr>
 <tr>
@@ -277,28 +219,20 @@ Business Expert
 
 Monitor
 
-
-
 </td>
 <td valign="top">
 
 Read payload data
-
-
 
 </td>
 <td valign="top">
 
 PI\_Business\_Expert
 
-
-
 </td>
 <td valign="top">
 
 Business Expert
-
-
 
 </td>
 </tr>

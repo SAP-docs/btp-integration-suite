@@ -29,14 +29,10 @@ You can also choose <span class="SAP-icons"></span> \(Extended filter\)to fil
 
 Filter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -45,14 +41,10 @@ Description
 
 MIG Name
 
-
-
 </td>
 <td valign="top">
 
 The Name of the MIG provided in the *General Information* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -61,14 +53,10 @@ The Name of the MIG provided in the *General Information* section of the *Overvi
 
 Summary
 
-
-
 </td>
 <td valign="top">
 
 The Summary of the MIG provided in the *Documentation* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -77,14 +65,10 @@ The Summary of the MIG provided in the *Documentation* section of the *Overview*
 
 MIG Version
 
-
-
 </td>
 <td valign="top">
 
 The Version of the MIG provided in the *General Information* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -93,14 +77,10 @@ The Version of the MIG provided in the *General Information* section of the *Ove
 
 Status
 
-
-
 </td>
 <td valign="top">
 
 The Status of the MIG provided in the *General Information* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -109,14 +89,10 @@ The Status of the MIG provided in the *General Information* section of the *Over
 
 Type System
 
-
-
 </td>
 <td valign="top">
 
 The Type System of the MIG provided in the *General Information* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -125,14 +101,10 @@ The Type System of the MIG provided in the *General Information* section of the 
 
 Type System Version
 
-
-
 </td>
 <td valign="top">
 
 The Type System Version of the MIG provided in the *General Information* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -141,14 +113,10 @@ The Type System Version of the MIG provided in the *General Information* section
 
 Message Type
 
-
-
 </td>
 <td valign="top">
 
 The Message Type of the MIG provided in the *General Information* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -157,14 +125,10 @@ The Message Type of the MIG provided in the *General Information* section of the
 
 Created By
 
-
-
 </td>
 <td valign="top">
 
 The unique identifier of the user who created the MIG. It is available in the *Administrative Data* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -173,14 +137,10 @@ The unique identifier of the user who created the MIG. It is available in the *A
 
 Created Between
 
-
-
 </td>
 <td valign="top">
 
 The date range during which the MIG was created.
-
-
 
 </td>
 </tr>
@@ -189,14 +149,10 @@ The date range during which the MIG was created.
 
 Modified By
 
-
-
 </td>
 <td valign="top">
 
 The unique identifier of the user who modified the MIG. It is available in the *Administrative Data* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -205,14 +161,10 @@ The unique identifier of the user who modified the MIG. It is available in the *
 
 Modified Between
 
-
-
 </td>
 <td valign="top">
 
 The date range during which the MIG was modified.
-
-
 
 </td>
 </tr>
@@ -221,14 +173,10 @@ The date range during which the MIG was modified.
 
 Last Imported By
 
-
-
 </td>
 <td valign="top">
 
 The unique identifier of the user who last imported the MIG. It is available in the *Administrative Data* section of the *Overview* tab.
-
-
 
 </td>
 </tr>
@@ -237,14 +185,10 @@ The unique identifier of the user who last imported the MIG. It is available in 
 
 Last Imported Between
 
-
-
 </td>
 <td valign="top">
 
 The date range during which the MIG was imported.
-
-
 
 </td>
 </tr>

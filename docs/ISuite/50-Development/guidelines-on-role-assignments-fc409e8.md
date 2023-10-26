@@ -13,21 +13,15 @@ Assigning these role collections/authorization groups to a user is a good choice
 
 Required on Target Tenant
 
-
-
 </th>
 <th valign="top">
 
 Avoid on Target Tenant
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -35,8 +29,6 @@ Description
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -45,14 +37,10 @@ AuthGroup.IntegrationDeveloper \(Neo\)
 
 PI\_Integration\_Developer \(Cloud Foundry\)
 
-
-
 </td>
 <td valign="top">
 
 Allows user to connect to Cloud Integration and to display, download, and deploy artifacts.
-
-
 
 </td>
 </tr>
@@ -60,8 +48,6 @@ Allows user to connect to Cloud Integration and to display, download, and deploy
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -70,14 +56,10 @@ AuthGroup.BusinessExpert \(Neo\)
 
 PI\_Business\_Expert \(Cloud Foundry\)
 
-
-
 </td>
 <td valign="top">
 
 Allows user to perform business tasks like, for example, examining the payload, monitor integration flows, status of integration artifacts.
-
-
 
 </td>
 </tr>
@@ -85,8 +67,6 @@ Allows user to perform business tasks like, for example, examining the payload, 
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -95,14 +75,10 @@ AuthGroup.Administrator \(Neo\)
 
 PI\_Administrator \(Cloud Foundry\)
 
-
-
 </td>
 <td valign="top">
 
 Allows user to connect to Cloud Integration and to perform administrative tasks.
-
-
 
 </td>
 </tr>
@@ -111,16 +87,12 @@ Allows user to connect to Cloud Integration and to perform administrative tasks.
 
  
 
-
-
 </td>
 <td valign="top">
 
 WebToolingWorkspace.Write \(Neo\)
 
 WorkspacePackagesEdit \(Cloud Foundry\)
-
-
 
 </td>
 <td valign="top">
@@ -139,16 +111,12 @@ Allows user to update a package, create/edit/import/delete a package and its art
 
  
 
-
-
 </td>
 <td valign="top">
 
 TransportModule.write \(Neo\)
 
 WorkspacePackagesTransport \(Cloud Foundry\)
-
-
 
 </td>
 <td valign="top">
@@ -169,14 +137,10 @@ WebToolingWorkspace.Read \(Neo\)
 
 WorkspacePackagesRead \(Cloud Foundry\)
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -197,14 +161,10 @@ WebTooling.IntegrationFlowConfigure \(Neo\)
 
 WorkspacePackagesConfigure \(Cloud Foundry\)
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -225,14 +185,10 @@ NodeManager.read, GenerationAndBuild.generationandbuildcontent, NodeManager.depl
 
 WorkspaceArtifactsDeploy \(Cloud Foundry\)
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -251,16 +207,12 @@ Allows user to deploy artifacts.
 
  
 
-
-
 </td>
 <td valign="top">
 
 WebToolingCatalog.OverviewRead, WebToolingCatalog.DetailsRead, WebToolingWorkspace.Write \(Neo\)
 
 CatalogPackagesRead, CatalogPackageArtifactsRead, CatalogPackagesCopy \(Cloud Foundry\)
-
-
 
 </td>
 <td valign="top">
@@ -279,14 +231,10 @@ Allows user to access SAP Business Accelerator Hub \(*Discover* section\).
 
 All roles related to the *Monitor* area \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\)
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -305,14 +253,10 @@ Allows user to perform tasks associated with monitoring and operations.
 
  
 
-
-
 </td>
 <td valign="top">
 
 WebToolingSettingsProductProfiles.savetenantconfiguration
-
-
 
 </td>
 <td valign="top">

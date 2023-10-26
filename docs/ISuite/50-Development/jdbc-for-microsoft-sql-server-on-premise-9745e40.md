@@ -16,14 +16,10 @@ JDBC receiver adapter supports Microsoft SQL Server On-Premise database provided
 
 Database Provider
 
-
-
 </td>
 <td valign="top">
 
 Microsoft
-
-
 
 </td>
 </tr>
@@ -32,14 +28,10 @@ Microsoft
 
 Infrastructure
 
-
-
 </td>
 <td valign="top">
 
 On-Premise
-
-
 
 </td>
 </tr>
@@ -48,14 +40,10 @@ On-Premise
 
 SAP BTP Environment
 
-
-
 </td>
 <td valign="top">
 
 Neo and Cloud Foundry
-
-
 
 </td>
 </tr>
@@ -64,16 +52,12 @@ Neo and Cloud Foundry
 
 JDBC URL Pattern
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:sqlserver://[serverName[\instanceName][:portNumber]][;property=value[;property=value]]`
 
 You can delimit properties by using semicolon \(;\). You can't duplicate them.
-
-
 
 </td>
 </tr>
@@ -84,8 +68,6 @@ Multi-instance support:
 
 To connect to database, provide the instance name in the URL using property instanceName.
 
-
-
 </td>
 </tr>
 <tr>
@@ -93,14 +75,10 @@ To connect to database, provide the instance name in the URL using property inst
 
 JDBC URL Example
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:sqlserver://testmysql:3333;database=testdb;instanceName=SQLEXPRESS`
-
-
 
 </td>
 </tr>

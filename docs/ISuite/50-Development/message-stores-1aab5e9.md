@@ -100,14 +100,10 @@ Depending on the use case, assign the following role templates \(see [Tasks and 
 
 Resource
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -116,16 +112,12 @@ Description
 
 Entries
 
-
-
 </td>
 <td valign="top">
 
 Represents a message store entry.
 
 A message store entry is created by a Persist step of an integration flow \(see [Persist Messages](persist-messages-8c35f3f.md)\).
-
-
 
 </td>
 </tr>
@@ -134,16 +126,12 @@ A message store entry is created by a Persist step of an integration flow \(see 
 
 Entry Attachments
 
-
-
 </td>
 <td valign="top">
 
 Represents an attachment of a message from the message store
 
 A message store entry is created by a Persist step of an integration flow \(see [Persist Messages](persist-messages-8c35f3f.md)\).
-
-
 
 </td>
 </tr>
@@ -152,16 +140,12 @@ A message store entry is created by a Persist step of an integration flow \(see 
 
 Entry Attachment Properties
 
-
-
 </td>
 <td valign="top">
 
 Represents properties of message attachments from the message store.
 
 A message store entry is created by a Persist step of an integration flow \(see [Persist Messages](persist-messages-8c35f3f.md)\).
-
-
 
 </td>
 </tr>
@@ -170,16 +154,12 @@ A message store entry is created by a Persist step of an integration flow \(see 
 
 Entry Properties
 
-
-
 </td>
 <td valign="top">
 
 Represents a header of a message from the message store.
 
 A message store entry is created by a Persist step of an integration flow \(see [Persist Messages](persist-messages-8c35f3f.md)\).
-
-
 
 </td>
 </tr>
@@ -188,16 +168,12 @@ A message store entry is created by a Persist step of an integration flow \(see 
 
 JMS Resources
 
-
-
 </td>
 <td valign="top">
 
 Represents available resources of the used Java Message Service \(JMS\) queues.
 
 JMS queues are accessed to by integration flows that contain an AS2, a JMS, or anXI adapter \(see [AS2 Adapter](as2-adapter-d3af635.md), [JMS Adapter](jms-adapter-0993f2a.md), and [XI Adapter](xi-adapter-8fedc92.md)\).
-
-
 
 </td>
 </tr>
@@ -206,16 +182,12 @@ JMS queues are accessed to by integration flows that contain an AS2, a JMS, or a
 
 Data Stores
 
-
-
 </td>
 <td valign="top">
 
 Represents a data store.
 
 A data store entry is created by a Data Store Write step of an integration flow \(see [Define Data Store Write Operations](define-data-store-write-operations-46260ee.md)\).
-
-
 
 </td>
 </tr>
@@ -224,16 +196,12 @@ A data store entry is created by a Data Store Write step of an integration flow 
 
 Data Store Entries
 
-
-
 </td>
 <td valign="top">
 
 Represents a data store entry.
 
 A data store entry is created by a Data Store Write step of an integration flow \(see [Define Data Store Write Operations](define-data-store-write-operations-46260ee.md)\).
-
-
 
 </td>
 </tr>
@@ -242,16 +210,12 @@ A data store entry is created by a Data Store Write step of an integration flow 
 
 Variables
 
-
-
 </td>
 <td valign="top">
 
 Represents a variable.
 
 A variable is created by a Write Variables step of an integration flow \(see [Define Write Variables](define-write-variables-de04b75.md)\).
-
-
 
 </td>
 </tr>
@@ -260,16 +224,12 @@ A variable is created by a Write Variables step of an integration flow \(see [De
 
 Number Ranges
 
-
-
 </td>
 <td valign="top">
 
 Represents a Number Ranges object \(see [Managing Number Ranges](managing-number-ranges-b6e17fa.md)\).
 
 While sending out a document when using EDI processing, a unique interchange number must be added to each document. To add such an interchange number, you can use the Number Range object. If EDIFACT is used, the outgoing EDIFACT messages have an Interchange Control Reference with a length of 1 to 9 digits.
-
-
 
 </td>
 </tr>

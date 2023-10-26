@@ -21,14 +21,10 @@ The *Get order ID* content modifier step stores the purchase order number from t
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -37,14 +33,10 @@ Setting
 
 Action
 
-
-
 </td>
 <td valign="top">
 
 Create
-
-
 
 </td>
 </tr>
@@ -53,14 +45,10 @@ Create
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 orderNumber
-
-
 
 </td>
 </tr>
@@ -69,14 +57,10 @@ orderNumber
 
 Type
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 </tr>
@@ -85,14 +69,10 @@ XPath
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
-
-
 
 </td>
 </tr>
@@ -101,14 +81,10 @@ java.lang.String
 
 Value
 
-
-
 </td>
 <td valign="top">
 
 string\(//@PurchaseOrderNumber\)
-
-
 
 </td>
 </tr>
@@ -125,14 +101,10 @@ The *Idempotent Process Call* step sends the message to the local integration pr
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -141,14 +113,10 @@ Setting
 
 Message ID
 
-
-
 </td>
 <td valign="top">
 
 $\{property.orderNumber\}
-
-
 
 </td>
 </tr>
@@ -157,14 +125,10 @@ $\{property.orderNumber\}
 
 Skip Process Call for Duplicates
 
-
-
 </td>
 <td valign="top">
 
 Deselected
-
-
 
 </td>
 </tr>
@@ -210,15 +174,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -226,15 +186,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     `OWN`
-
-
     
     </td>
     </tr>
@@ -242,15 +198,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *User*
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -258,15 +210,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Password*
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

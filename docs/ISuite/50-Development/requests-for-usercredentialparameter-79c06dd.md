@@ -18,14 +18,10 @@
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -36,14 +32,10 @@ POST
 
 PUT
 
-
-
 </td>
 <td valign="top">
 
 `/UserCredentialParameters` 
-
-
 
 </td>
 </tr>
@@ -112,14 +104,10 @@ You can find a new User Credentials artifact in the *Monitor* section \(*Securit
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -128,14 +116,10 @@ Resource Path
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `/UserCredentialParameters` 
-
-
 
 </td>
 </tr>

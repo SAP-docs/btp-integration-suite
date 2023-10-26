@@ -16,28 +16,20 @@ Modify the following to personalize the API business hub enterprise:
 
 You can use the…
 
-
-
 </th>
 <th valign="top">
 
 To…
-
-
 
 </th>
 <th valign="top">
 
 Role that you must be assigned to…
 
-
-
 </th>
 <th valign="top">
 
 For more information, see…
-
-
 
 </th>
 </tr>
@@ -46,14 +38,10 @@ For more information, see…
 
 *Home Page* 
 
-
-
 </td>
 <td valign="top">
 
 View and search the categories, APIs, and products
-
-
 
 </td>
 <td valign="top">
@@ -72,8 +60,6 @@ AuthGroup.API.ApplicationDeveloper
 
 [Register on API business hub enterprise](register-on-api-business-hub-enterprise-c85fafe.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -81,14 +67,10 @@ AuthGroup.API.ApplicationDeveloper
 
 *Site Editor* 
 
-
-
 </td>
 <td valign="top">
 
 Customize the visual layout of the API business hub enterprise
-
-
 
 </td>
 <td valign="top">
@@ -105,8 +87,6 @@ Customize the visual layout of the API business hub enterprise
 
 [Customize the Visual Format of the API business hub enterprise](customize-the-visual-format-of-the-api-business-hub-enterprise-2eacd52.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -114,14 +94,10 @@ Customize the visual layout of the API business hub enterprise
 
 *Enterprise Manager* \> *Manage API Management Connections* 
 
-
-
 </td>
 <td valign="top">
 
 Approve and reject the pending connection requests and update the API portal access credentials
-
-
 
 </td>
 <td valign="top">
@@ -136,8 +112,6 @@ Approve and reject the pending connection requests and update the API portal acc
 
 [Approve the Pending Connection Requests \[New Design\]](approve-the-pending-connection-requests-new-design-e296f80.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -145,21 +119,15 @@ Approve and reject the pending connection requests and update the API portal acc
 
 *Enterprise Manager* \> *Manage Users* 
 
-
-
 </td>
 <td valign="top">
 
 Add and Revoke user access to the API Business Hub Enterprise
 
-
-
 </td>
 <td valign="top">
 
 AuthGroup.API.Admin
-
-
 
 </td>
 <td valign="top">
@@ -168,8 +136,6 @@ AuthGroup.API.Admin
 
 [Revoke Access \[New Design\]](revoke-access-new-design-ce609bb.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -177,14 +143,10 @@ AuthGroup.API.Admin
 
 *Enterprise Manager* \> *Manage Domain Categories* 
 
-
-
 </td>
 <td valign="top">
 
 Create and edit domain specific categories.
-
-
 
 </td>
 <td valign="top">
@@ -203,8 +165,6 @@ Create and edit domain specific categories.
 
 Also, to add the *AuthGroup.Content.Admin* role, see the table in [Manage Domain Categories \[New Design\]](manage-domain-categories-new-design-bd9691d.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -212,14 +172,10 @@ Also, to add the *AuthGroup.Content.Admin* role, see the table in [Manage Domain
 
 *Enterprise Manager* \> *Manage Notifications* 
 
-
-
 </td>
 <td valign="top">
 
 Configure notifications for providing information to the API business hub enterprise end users on any website updates or news items.
-
-
 
 </td>
 <td valign="top">
@@ -234,8 +190,6 @@ Configure notifications for providing information to the API business hub enterp
 
 [Manage Notifications \[New Design\]](manage-notifications-new-design-df32457.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -243,14 +197,10 @@ Configure notifications for providing information to the API business hub enterp
 
 *My Workspace* 
 
-
-
 </td>
 <td valign="top">
 
 Create applications and view your applications, costs and analyze reports.
-
-
 
 </td>
 <td valign="top">
@@ -273,8 +223,6 @@ AuthGroup.API.Admin
 
 [Create an Application \[New Design\]](create-an-application-new-design-a501a6d.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -282,14 +230,10 @@ AuthGroup.API.Admin
 
 *Test Environment* 
 
-
-
 </td>
 <td valign="top">
 
 Test the runtime behaviour of APIs
-
-
 
 </td>
 <td valign="top">
@@ -305,8 +249,6 @@ AuthGroup.API.ApplicationDeveloper
 <td valign="top">
 
 [Test Runtime Behavior of APIs \[New Design\]](test-runtime-behavior-of-apis-new-design-15c7d52.md) 
-
-
 
 </td>
 </tr>

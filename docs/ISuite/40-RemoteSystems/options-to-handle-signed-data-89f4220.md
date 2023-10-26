@@ -28,14 +28,10 @@ Likewise, the *PKCS7 Signature Verifyer* step can handle the Signed Data object 
 
 Option
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -44,14 +40,10 @@ Description
 
 *Header/Property is Base64-Encoded* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option of you expect that the Signed Data object is transferred to the receiver that verifies the message either in a header or a property \(with the name SapCmsSignedData\) and, additionally, the value is base64-encoded.
-
-
 
 </td>
 </tr>
@@ -60,14 +52,10 @@ Select this option of you expect that the Signed Data object is transferred to t
 
 *Body is Base64-Encoded* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option of you expect that the message body contains either the Signed Data object including the content or the content alone base64-encoded.
-
-
 
 </td>
 </tr>

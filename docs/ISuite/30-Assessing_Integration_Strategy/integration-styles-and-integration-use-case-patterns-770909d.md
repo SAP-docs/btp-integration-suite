@@ -15,14 +15,10 @@ The following table shows some integration style examples and associated use cas
 
 Integration Style
 
-
-
 </th>
 <th valign="top">
 
 Use Case Patterns
-
-
 
 </th>
 </tr>
@@ -33,8 +29,6 @@ Process integration
 
 Integrate business processes that span multiple business applications.
 
-
-
 </td>
 <td valign="top">
 
@@ -43,8 +37,6 @@ A2A integration
 B2B integration
 
 Master data integration
-
-
 
 </td>
 </tr>
@@ -55,8 +47,6 @@ Data integration
 
 Synchronize data between business applications.
 
-
-
 </td>
 <td valign="top">
 
@@ -65,8 +55,6 @@ Data replication as required in extract, transform, and load \(ETL\) scenarios
 Data virtualization
 
 Data orchestration
-
-
 
 </td>
 </tr>
@@ -77,16 +65,12 @@ Analytics integration
 
 Derive and expose analytical data for business insights from business applications.
 
-
-
 </td>
 <td valign="top">
 
 Embedded analytics
 
 Cross-application analytics
-
-
 
 </td>
 </tr>
@@ -97,8 +81,6 @@ User integration
 
 Integrate user-centric applications with business applications.
 
-
-
 </td>
 <td valign="top">
 
@@ -107,8 +89,6 @@ UI integration
 Mobile integration
 
 Chatbot integration
-
-
 
 </td>
 </tr>
@@ -119,8 +99,6 @@ Thing integration
 
 Integrate real-world things with business applications.
 
-
-
 </td>
 <td valign="top">
 
@@ -129,8 +107,6 @@ Thing to analytics
 Thing to process
 
 Thing to data lake
-
-
 
 </td>
 </tr>

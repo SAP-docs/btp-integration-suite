@@ -15,21 +15,15 @@ Personas cover the different tasks associated with an integration project. To as
 
 Persona
 
-
-
 </th>
 <th valign="top">
 
 Role Collection
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,14 +32,10 @@ Description
 
 Business expert
 
-
-
 </td>
 <td valign="top">
 
 PI\_Business\_Expert
-
-
 
 </td>
 <td valign="top">
@@ -67,14 +57,10 @@ This includes tasks like:
 
 Integration developer
 
-
-
 </td>
 <td valign="top">
 
 PI\_Integration\_Developer
-
-
 
 </td>
 <td valign="top">

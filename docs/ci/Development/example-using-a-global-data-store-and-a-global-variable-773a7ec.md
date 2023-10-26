@@ -49,15 +49,11 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -65,15 +61,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     timestamp
-
-
     
     </td>
     </tr>
@@ -81,15 +73,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     Expression
-
-
     
     </td>
     </tr>
@@ -97,15 +85,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     Data Type
-
-
     
     </td>
     <td valign="top">
     
     java.lang.String
-
-
     
     </td>
     </tr>
@@ -113,15 +97,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     Value
-
-
     
     </td>
     <td valign="top">
     
     $\{date:now:yyyy-MM-dd HH:mm:ss\}
-
-
     
     </td>
     </tr>
@@ -141,15 +121,11 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -157,15 +133,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     Expression Type
-
-
     
     </td>
     <td valign="top">
     
     XPath
-
-
     
     </td>
     </tr>
@@ -173,15 +145,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     XPath Expression
-
-
     
     </td>
     <td valign="top">
     
     //CustomerReview
-
-
     
     </td>
     </tr>
@@ -199,15 +167,11 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -215,15 +179,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     Data Store Name
-
-
     
     </td>
     <td valign="top">
     
     CustomerReviews
-
-
     
     </td>
     </tr>
@@ -231,15 +191,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     Visibility
-
-
     
     </td>
     <td valign="top">
     
     Global
-
-
     
     </td>
     </tr>
@@ -247,8 +203,6 @@ The integration flow performs the following steps:
     <td valign="top">
     
     Entry ID
-
-
     
     </td>
     <td valign="top">
@@ -256,8 +210,6 @@ The integration flow performs the following steps:
     $\{xpath./CustomerReviews/CustomerReview/CustomerReviewId/text\(\)\}
 
     For the actual customer review, an entry is created in the data store with an ID identical to the `CustomerReviewId` value from the message.
-
-
     
     </td>
     </tr>
@@ -282,15 +234,11 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -298,15 +246,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     Data Store Name
-
-
     
     </td>
     <td valign="top">
     
     CustomerReviews
-
-
     
     </td>
     </tr>
@@ -314,15 +258,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     Visibility
-
-
     
     </td>
     <td valign="top">
     
     Global
-
-
     
     </td>
     </tr>
@@ -330,8 +270,6 @@ The integration flow performs the following steps:
     <td valign="top">
     
     Number of Polled Messages
-
-
     
     </td>
     <td valign="top">
@@ -339,8 +277,6 @@ The integration flow performs the following steps:
     1000
 
     A large number is entered to make sure that all data store entries are retrieved.
-
-
     
     </td>
     </tr>
@@ -356,29 +292,21 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Name
-
-
     
     </th>
     <th valign="top">
 
     Type
-
-
     
     </th>
     <th valign="top">
 
     Data Type
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -386,29 +314,21 @@ The integration flow performs the following steps:
     <td valign="top">
     
     count
-
-
     
     </td>
     <td valign="top">
     
     XPath
-
-
     
     </td>
     <td valign="top">
     
     java.lang.String
-
-
     
     </td>
     <td valign="top">
     
     count\(//message\)
-
-
     
     </td>
     </tr>
@@ -416,29 +336,21 @@ The integration flow performs the following steps:
     <td valign="top">
     
     timestamp
-
-
     
     </td>
     <td valign="top">
     
     Global Variable
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     timestamp
-
-
     
     </td>
     </tr>
@@ -463,14 +375,10 @@ The integration flow performs the following steps:
 > 
 > Parameter
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 >  
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -479,14 +387,10 @@ The integration flow performs the following steps:
 > 
 > Transaction Handling
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Required for JDBC
-> 
-> 
 > 
 > </td>
 > </tr>

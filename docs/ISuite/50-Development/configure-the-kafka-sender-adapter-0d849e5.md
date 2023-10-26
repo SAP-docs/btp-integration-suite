@@ -44,14 +44,10 @@ The following values are displayed in the *General* tab after a channel has been
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -60,14 +56,10 @@ Description
 
 *Name/Adapter Type*
 
-
-
 </td>
 <td valign="top">
 
 Kafka
-
-
 
 </td>
 </tr>
@@ -76,14 +68,10 @@ Kafka
 
 *Transport Protocol*
 
-
-
 </td>
 <td valign="top">
 
 TCP
-
-
 
 </td>
 </tr>
@@ -92,14 +80,10 @@ TCP
 
 *Message Protocol*
 
-
-
 </td>
 <td valign="top">
 
 Kafka
-
-
 
 </td>
 </tr>
@@ -123,14 +107,10 @@ Select the *Connection* tab and provide values in the fields as follows:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -139,14 +119,10 @@ Description
 
 *Host*
 
-
-
 </td>
 <td valign="top">
 
 Enter a bootstrap server \(host:port\). You can add multiple hosts by using a new entry for each bootstrap server.
-
-
 
 </td>
 </tr>
@@ -154,8 +130,6 @@ Enter a bootstrap server \(host:port\). You can add multiple hosts by using a ne
 <td valign="top">
 
 *Authentication*
-
-
 
 </td>
 <td valign="top">
@@ -178,8 +152,6 @@ Select the type of authentication for connecting to the broker. SASL is selected
 
 \(only if *SASL* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -198,8 +170,6 @@ Select this option to switch between `SASL_SSL` and `SASL_PLAINTEXT`.
 *SASL Mechanism*
 
 \(only if *SASL* is selected for *Authentication*\)
-
-
 
 </td>
 <td valign="top">
@@ -222,14 +192,10 @@ Select the SASL mechanism.
 
 \(only if *SASL* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Enter the credential name of the username-password pair specified during the deployment of the user credential on the tenant.
-
-
 
 </td>
 </tr>
@@ -240,14 +206,10 @@ Enter the credential name of the username-password pair specified during the dep
 
 \(only if *Client Certificate* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Enter the Private Key Alias.
-
-
 
 </td>
 </tr>
@@ -276,14 +238,10 @@ Select the *Processing* tab and provide values in the fields as follows:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -291,8 +249,6 @@ Description
 <td valign="top">
 
 *Topic*
-
-
 
 </td>
 <td valign="top">
@@ -318,14 +274,10 @@ If you want to add multiple topics, you can either separate the topic names by c
 
 *Parallel Consumers*
 
-
-
 </td>
 <td valign="top">
 
 Specify how many parallel consumers \(per worker node\) can consume from partitions. This parameter depends on how topics are partitioned. The max. number of parallel consumer is defined as 25 and scales with the number of worker nodes.
-
-
 
 </td>
 </tr>
@@ -333,8 +285,6 @@ Specify how many parallel consumers \(per worker node\) can consume from partiti
 <td valign="top">
 
 *Error Handling*
-
-
 
 </td>
 <td valign="top">
@@ -368,14 +318,10 @@ Select the*Advanced* tab and provide values in the fields as follows:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -383,8 +329,6 @@ Description
 <td valign="top">
 
 *Min. Fetch Size \(in bytes\)*
-
-
 
 </td>
 <td valign="top">
@@ -403,8 +347,6 @@ Define the min. amount of data the server should return for a fetch request.
 
 *Max. Fetch Size \(in bytes\)*
 
-
-
 </td>
 <td valign="top">
 
@@ -421,8 +363,6 @@ Define the max. amount of data the server should return for a fetch request. For
 <td valign="top">
 
 *Max. Partition Fetch Size \(in bytes\)*
-
-
 
 </td>
 <td valign="top">
@@ -441,8 +381,6 @@ Define the max. partition fetch size the server should return for a fetch reques
 
 *Max. Fetch Wait Time \(in ms\)*
 
-
-
 </td>
 <td valign="top">
 
@@ -459,8 +397,6 @@ Define the max. fetch wait time \(in ms\) to wait for the other fetch size-relat
 <td valign="top">
 
 *Max. Number of Polled Records*
-
-
 
 </td>
 <td valign="top">
@@ -479,8 +415,6 @@ Define the max. number of polled records included.
 
 *Request Timeout \(in ms\)*
 
-
-
 </td>
 <td valign="top">
 
@@ -498,8 +432,6 @@ Define the maximum amount of time the client waits for the response of a request
 
 *Max. Retry Backoff \(in ms\)*
 
-
-
 </td>
 <td valign="top">
 
@@ -516,8 +448,6 @@ Define the amount of time to wait before attempting to poll again in a retry cas
 <td valign="top">
 
 *Reconnect Delay \(in ms\)*
-
-
 
 </td>
 <td valign="top">
@@ -539,8 +469,6 @@ Define how long to wait before reattempting to reconnect to a given host.
 
 *Heartbeat Interval \(in ms\)*
 
-
-
 </td>
 <td valign="top">
 
@@ -560,8 +488,6 @@ Define the expected time between heartbeats to the consumer coordinator.
 <td valign="top">
 
 *Session Timeout \(in ms\)*
-
-
 
 </td>
 <td valign="top">

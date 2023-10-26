@@ -21,21 +21,15 @@ The following table lists the options for setting up secure connections for the 
 
 Authentication
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 How to configure \(checklist\) ...
-
-
 
 </th>
 </tr>
@@ -43,8 +37,6 @@ How to configure \(checklist\) ...
 <td valign="top">
 
 Public key
-
-
 
 </td>
 <td valign="top">
@@ -58,8 +50,6 @@ Recommended configuration option for secure communication is public key authenti
 More information:
 
  <?sap-ot O2O class="- topic/xref " href="fc8467b6dc7e40479d3d568cd79a3c1c.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/d8fb95805cca4dc88193d24a887c4f70.xml" ?> 
-
-
 
 </td>
 <td valign="top">
@@ -84,16 +74,12 @@ Tenant administrator:
 
 More information: [Setting Up Inbound SFTP Connections \(Details\)](setting-up-inbound-sftp-connections-details-e72eba4.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 User name/password
-
-
 
 </td>
 <td valign="top">
@@ -105,8 +91,6 @@ Using this authentication option, the user \(performing the file transfer\) is a
 More information:
 
  <?sap-ot O2O class="- topic/xref " href="fc8467b6dc7e40479d3d568cd79a3c1c.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/d8fb95805cca4dc88193d24a887c4f70.xml" ?> 
-
-
 
 </td>
 <td valign="top">
@@ -126,8 +110,6 @@ Tenant administrator:
 
 
 More information: [Setting Up Inbound SFTP Connections \(Details\)](setting-up-inbound-sftp-connections-details-e72eba4.md)
-
-
 
 </td>
 </tr>

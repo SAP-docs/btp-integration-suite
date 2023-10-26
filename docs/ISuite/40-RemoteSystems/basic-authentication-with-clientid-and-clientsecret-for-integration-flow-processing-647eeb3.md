@@ -13,7 +13,7 @@ When you select this option, the user associated with the sender system's reques
 > ### Note:  
 > This option is **not** recommended for productive scenarios.
 
-For more information, check out: [Basic Authentication](basic-authentication-2c4c2d9.md) \(explains the concepts and how this authentication option works\).
+For more information, see: [Basic Authentication](basic-authentication-2c4c2d9.md) \(explains the concepts and how this authentication option works\).
 
 In detail, perform the following steps:
 
@@ -52,15 +52,11 @@ In detail, perform the following steps:
     <th valign="top" colspan="3">
 
     Service Instance
-
-
     
     </th>
     <th valign="top" colspan="4">
 
     Service Key
-
-
     
     </th>
     </tr>
@@ -68,50 +64,36 @@ In detail, perform the following steps:
     <th valign="top">
 
      
-
-
     
     </th>
     <th valign="top">
 
     Roles
-
-
     
     </th>
     <th valign="top">
 
     Grant-types
-
-
     
     </th>
     <th valign="top">
 
      
-
-
     
     </th>
     <th valign="top">
 
     External Certificate
-
-
     
     </th>
     <th valign="top">
 
     Validity
-
-
     
     </th>
     <th valign="top">
 
     Key Size
-
-
     
     </th>
     </tr>
@@ -119,50 +101,36 @@ In detail, perform the following steps:
     <td valign="top">
     
     *integration-flow* 
-
-
     
     </td>
     <td valign="top">
     
     Keep standard role `ESBMessaging.send` or use one or more custom roles.
-
-
     
     </td>
     <td valign="top">
     
     *Client Credentials* 
-
-
     
     </td>
     <td valign="top">
     
     *ClientId/Secret* 
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     <td valign="top">
     
     n.a.
-
-
     
     </td>
     </tr>

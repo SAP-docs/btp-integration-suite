@@ -15,28 +15,20 @@ The audit log retrieval follows the OData 4.0 standard, providing the audit log 
 
 Event grouping
 
-
-
 </th>
 <th valign="top">
 
 What events are logged
-
-
 
 </th>
 <th valign="top">
 
 How to identify related log events
 
-
-
 </th>
 <th valign="top">
 
 Additional information
-
-
 
 </th>
 </tr>
@@ -45,16 +37,12 @@ Additional information
 
 Message implementation guideline \(MIG\)
 
-
-
 </td>
 <td valign="top">
 
 Delete MIG entity
 
 Delete MIG version
-
-
 
 </td>
 <td valign="top">
@@ -82,8 +70,6 @@ When deleting a MIG successfully, the following event is written:
 
 [Message Implementation Guidelines \(MIGs\)](../50-Development/message-implementation-guidelines-migs-f9f2bab.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -91,16 +77,12 @@ When deleting a MIG successfully, the following event is written:
 
 Mapping Guideline \(MAG\)
 
-
-
 </td>
 <td valign="top">
 
 Delete MAG entity
 
 Delete MIG version
-
-
 
 </td>
 <td valign="top">
@@ -117,8 +99,6 @@ Delete MIG version
 
 [Mapping Guidelines \(MAGs\)](../50-Development/mapping-guidelines-mags-42124f4.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -126,14 +106,10 @@ Delete MIG version
 
 Customer message
 
-
-
 </td>
 <td valign="top">
 
 Delete customer message
-
-
 
 </td>
 <td valign="top">
@@ -150,8 +126,6 @@ Delete customer message
 
 [Adding a Custom Message](../50-Development/adding-a-custom-message-8b7eb45.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -159,14 +133,10 @@ Delete customer message
 
 Value mapping
 
-
-
 </td>
 <td valign="top">
 
 Delete global code value mapping
-
-
 
 </td>
 <td valign="top">
@@ -183,8 +153,6 @@ Delete global code value mapping
 
 [Code Value Mapping](../50-Development/code-value-mapping-eb6dad8.md) 
 
-
-
 </td>
 </tr>
 <tr>
@@ -192,14 +160,10 @@ Delete global code value mapping
 
 Licenses
 
-
-
 </td>
 <td valign="top">
 
 Create new license
-
-
 
 </td>
 <td valign="top">
@@ -216,8 +180,6 @@ Create new license
 
 [Managing Licence for Type Systems](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/ed1e961c636f4835aaa7248cf2488112.html "") :arrow_upper_right: 
 
-
-
 </td>
 </tr>
 <tr>
@@ -225,14 +187,10 @@ Create new license
 
 Licenses
 
-
-
 </td>
 <td valign="top">
 
 Delete license
-
-
 
 </td>
 <td valign="top">
@@ -248,8 +206,6 @@ Delete license
 <td valign="top">
 
 [Managing Licence for Type Systems](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/ed1e961c636f4835aaa7248cf2488112.html "") :arrow_upper_right: 
-
-
 
 </td>
 </tr>

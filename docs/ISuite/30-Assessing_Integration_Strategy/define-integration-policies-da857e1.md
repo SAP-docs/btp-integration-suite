@@ -33,15 +33,11 @@ Based on the recommendations provided by the policies for the usage in certain d
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -49,15 +45,11 @@ Based on the recommendations provided by the policies for the usage in certain d
     <td valign="top">
     
     Style
-
-
     
     </td>
     <td valign="top">
     
     Specify the basic integration category or type.
-
-
     
     </td>
     </tr>
@@ -65,15 +57,11 @@ Based on the recommendations provided by the policies for the usage in certain d
     <td valign="top">
     
     Domain
-
-
     
     </td>
     <td valign="top">
     
     Specify the area in a hybrid landscape where integration is needed.
-
-
     
     </td>
     </tr>
@@ -81,15 +69,11 @@ Based on the recommendations provided by the policies for the usage in certain d
     <td valign="top">
     
     Recommendation Degree
-
-
     
     </td>
     <td valign="top">
     
     Specify the degree of recommendation.
-
-
     
     </td>
     </tr>
@@ -97,15 +81,11 @@ Based on the recommendations provided by the policies for the usage in certain d
     <td valign="top">
     
     Rule
-
-
     
     </td>
     <td valign="top">
     
     Specify a description of the scenario of the usage of the technology.
-
-
     
     </td>
     </tr>
@@ -113,15 +93,11 @@ Based on the recommendations provided by the policies for the usage in certain d
     <td valign="top">
     
     Applications
-
-
     
     </td>
     <td valign="top">
     
     Specify the list of supported applications.
-
-
     
     </td>
     </tr>

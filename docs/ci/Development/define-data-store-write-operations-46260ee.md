@@ -46,15 +46,11 @@ This component stores data on your tenant. Note that the tenant space is limited
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -62,8 +58,6 @@ This component stores data on your tenant. Note that the tenant space is limited
     <td valign="top">
     
     *Data Store Name* 
-
-
     
     </td>
     <td valign="top">
@@ -73,8 +67,6 @@ This component stores data on your tenant. Note that the tenant space is limited
     You can dynamically define the data store name based on a header or exchange property. Use the format `${header.headername}` to dynamically read the name from a header, or `${property.propertyname}` to read it from an exchange property.
 
     The maximum length allowed for the data store name is 40 characters. If you enter a longer string, a validation error is raised. Note that this length restriction applies to the value that is used for this parameter at runtime. Therefore, if you configure this parameter dynamically, make sure that the expected header or property value does not exceed this length restriction. Otherwise, a runtime error will be raised.
-
-
     
     </td>
     </tr>
@@ -82,8 +74,6 @@ This component stores data on your tenant. Note that the tenant space is limited
     <td valign="top">
     
     *Visibility* 
-
-
     
     </td>
     <td valign="top">
@@ -96,8 +86,6 @@ This component stores data on your tenant. Note that the tenant space is limited
 
 
     For more information and guidelines how to use this parameter, see [Anticipate Message Throughput When Choosing a Storage Option](anticipate-message-throughput-when-choosing-a-storage-option-5b38765.md).
-
-
     
     </td>
     </tr>
@@ -105,8 +93,6 @@ This component stores data on your tenant. Note that the tenant space is limited
     <td valign="top">
     
     *Entry ID* 
-
-
     
     </td>
     <td valign="top">
@@ -156,8 +142,6 @@ This component stores data on your tenant. Note that the tenant space is limited
     <td valign="top">
     
     *Retention Threshold for Alerting in \(d\)* 
-
-
     
     </td>
     <td valign="top">
@@ -167,8 +151,6 @@ This component stores data on your tenant. Note that the tenant space is limited
     Raising an alert means that the corresponding entry in the data store monitor gets the status *Overdue* \(indicated with red color\).
 
     You can open the data store monitor by selecting the *Data Stores* tile in the *Operations* view of the Web UI under *Manage Stores*.
-
-
     
     </td>
     </tr>
@@ -176,8 +158,6 @@ This component stores data on your tenant. Note that the tenant space is limited
     <td valign="top">
     
     *Expiration Period in \(d\)* 
-
-
     
     </td>
     <td valign="top">
@@ -185,8 +165,6 @@ This component stores data on your tenant. Note that the tenant space is limited
     Number of days after which the stored messages are deleted \(default is 30 days, maximum possible value is 180 days\).
 
     The minimum value of *Expiration Period* should be at least twice that of *Retention Threshold for Alerting*.
-
-
     
     </td>
     </tr>
@@ -194,15 +172,11 @@ This component stores data on your tenant. Note that the tenant space is limited
     <td valign="top">
     
     *Encrypt Stored Message* 
-
-
     
     </td>
     <td valign="top">
     
     Select this option to encrypt the message in the data store.
-
-
     
     </td>
     </tr>
@@ -210,8 +184,6 @@ This component stores data on your tenant. Note that the tenant space is limited
     <td valign="top">
     
     *Overwrite Existing Message* 
-
-
     
     </td>
     <td valign="top">
@@ -219,8 +191,6 @@ This component stores data on your tenant. Note that the tenant space is limited
     Select this option to overwrite an existing message in the data store.
 
     Trying to overwrite an existing entry without having this option selected results in a `DuplicateEntryException`.
-
-
     
     </td>
     </tr>
@@ -228,8 +198,6 @@ This component stores data on your tenant. Note that the tenant space is limited
     <td valign="top">
     
     *Include Message Headers* 
-
-
     
     </td>
     <td valign="top">

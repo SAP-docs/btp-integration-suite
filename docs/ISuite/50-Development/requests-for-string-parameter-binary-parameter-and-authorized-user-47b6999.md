@@ -15,21 +15,15 @@
 
 Purpose
 
-
-
 </th>
 <th valign="top">
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Resource Path
 
 Create authorized user.
 
-
-
 </td>
 <td valign="top">
 
 POST
 
-
-
 </td>
 <td valign="top">
 
 `/AuthorizedUsers` 
-
-
 
 </td>
 </tr>
@@ -106,21 +94,15 @@ As a response, you get a message that contains the following part:
 
 Purpose
 
-
-
 </th>
 <th valign="top">
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -129,21 +111,15 @@ Resource Path
 
 Create String parameter.
 
-
-
 </td>
 <td valign="top">
 
 POST
 
-
-
 </td>
 <td valign="top">
 
 `/StringParameters` 
-
-
 
 </td>
 </tr>
@@ -152,21 +128,15 @@ POST
 
 Get String parameter.
 
-
-
 </td>
 <td valign="top">
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `/StringParameters` 
-
-
 
 </td>
 </tr>
@@ -302,21 +272,15 @@ For more information, check out the following SAP Community blog: [Cloud Integra
 
 Purpose
 
-
-
 </th>
 <th valign="top">
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -325,21 +289,15 @@ Resource Path
 
 Create Binary parameter.
 
-
-
 </td>
 <td valign="top">
 
 POST
 
-
-
 </td>
 <td valign="top">
 
 `/BinaryParameters` 
-
-
 
 </td>
 </tr>
@@ -401,21 +359,15 @@ For more information on Binary parameters, check out the following SAP Community
 
 Purpose
 
-
-
 </th>
 <th valign="top">
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -424,21 +376,15 @@ Resource Path
 
 Update binary parameter.
 
-
-
 </td>
 <td valign="top">
 
 PUT
 
-
-
 </td>
 <td valign="top">
 
 `/BinaryParameters(Pid='partner1',Id='bp1')?user=userXYZ` 
-
-
 
 </td>
 </tr>

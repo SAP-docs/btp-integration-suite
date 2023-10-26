@@ -44,15 +44,11 @@ You use the following procedure to change the entity and modify the operation fo
     <th valign="top">
 
     Fields
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -60,15 +56,11 @@ You use the following procedure to change the entity and modify the operation fo
     <td valign="top">
     
     System
-
-
     
     </td>
     <td valign="top">
     
     Name of the SuccessFactors data center that you're connecting to.
-
-
     
     </td>
     </tr>
@@ -76,8 +68,6 @@ You use the following procedure to change the entity and modify the operation fo
     <td valign="top">
     
     Authentication
-
-
     
     </td>
     <td valign="top">
@@ -97,15 +87,11 @@ You use the following procedure to change the entity and modify the operation fo
     <td valign="top">
     
     Address
-
-
     
     </td>
     <td valign="top">
     
     URL of the SuccessFactors data center that you're connecting to
-
-
     
     </td>
     </tr>
@@ -113,15 +99,11 @@ You use the following procedure to change the entity and modify the operation fo
     <td valign="top">
     
     Address Suffix
-
-
     
     </td>
     <td valign="top">
     
     The field is auto-populated with `/sfapi/v1/soap`. Don't edit the field.
-
-
     
     </td>
     </tr>
@@ -129,15 +111,11 @@ You use the following procedure to change the entity and modify the operation fo
     <td valign="top">
     
     Credential Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the credentials that you've deployed in *Security Material* section in Operations View.
-
-
     
     </td>
     </tr>
@@ -147,15 +125,11 @@ You use the following procedure to change the entity and modify the operation fo
     Company ID
 
     Only if you choose Basic authentication and don't want to use a deployed credential.
-
-
     
     </td>
     <td valign="top">
     
     Company ID for authentication
-
-
     
     </td>
     </tr>
@@ -165,15 +139,11 @@ You use the following procedure to change the entity and modify the operation fo
     User Name
 
     Only if you choose Basic authentication and don't want to use a deployed credential.
-
-
     
     </td>
     <td valign="top">
     
     User name associated with the company ID
-
-
     
     </td>
     </tr>
@@ -183,15 +153,11 @@ You use the following procedure to change the entity and modify the operation fo
     Password
 
     Only if you choose Basic authentication and don't want to use a deployed credential.
-
-
     
     </td>
     <td valign="top">
     
     Relevant password for the specified user name
-
-
     
     </td>
     </tr>

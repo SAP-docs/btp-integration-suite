@@ -42,15 +42,11 @@ Upload a new keystore. You can replace an existing keystore completely or update
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -58,15 +54,11 @@ Upload a new keystore. You can replace an existing keystore completely or update
     <td valign="top">
     
     *Add*
-
-
     
     </td>
     <td valign="top">
     
     Adds the entries from the uploaded keystore so that they are merged with the ones in the existing keystore.
-
-
     
     </td>
     </tr>
@@ -74,8 +66,6 @@ Upload a new keystore. You can replace an existing keystore completely or update
     <td valign="top">
     
     *Replace*
-
-
     
     </td>
     <td valign="top">

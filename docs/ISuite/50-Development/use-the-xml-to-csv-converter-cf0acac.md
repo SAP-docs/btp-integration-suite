@@ -33,35 +33,25 @@ In a content modifier step, an exchange property is defined holding the product 
 
 **Action**
 
-
-
 </td>
 <td valign="top">
 
 **Name**
-
-
 
 </td>
 <td valign="top">
 
 **Type**
 
-
-
 </td>
 <td valign="top">
 
 **Data Type**
 
-
-
 </td>
 <td valign="top">
 
 **Value**
-
-
 
 </td>
 </tr>
@@ -70,35 +60,25 @@ In a content modifier step, an exchange property is defined holding the product 
 
 Create
 
-
-
 </td>
 <td valign="top">
 
 category
-
-
 
 </td>
 <td valign="top">
 
 XPath
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
 
-
-
 </td>
 <td valign="top">
 
 //category
-
-
 
 </td>
 </tr>

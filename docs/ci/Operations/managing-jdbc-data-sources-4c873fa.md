@@ -44,15 +44,11 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -60,8 +56,6 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
@@ -79,15 +73,11 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     <td valign="top">
     
     *Description*
-
-
     
     </td>
     <td valign="top">
     
     Provide a detailed description of the data source.
-
-
     
     </td>
     </tr>
@@ -95,8 +85,6 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     <td valign="top">
     
     *Database Type*
-
-
     
     </td>
     <td valign="top">
@@ -116,15 +104,11 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     <td valign="top">
     
     *User*
-
-
     
     </td>
     <td valign="top">
     
     Enter the username corresponding of the target database.
-
-
     
     </td>
     </tr>
@@ -132,8 +116,6 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     <td valign="top">
     
     *Password*
-
-
     
     </td>
     <td valign="top">
@@ -153,15 +135,11 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     *Database ID*
 
     \(only available for SAP ASE Service \(Neo\), SAP HANA Service \(Neo\) databases that are managed by SAP Managed\)
-
-
     
     </td>
     <td valign="top">
     
     Specify the ID of the target database.
-
-
     
     </td>
     </tr>
@@ -171,15 +149,11 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     *Access Token*
 
     \(only available for SAP ASE Service \(Neo\), SAP HANA Service \(Neo\) databases that are managed by SAP Managed\)
-
-
     
     </td>
     <td valign="top">
     
     Specify the access token generated for this application and that is used to identify the user that accesses the databases. SAP BTP provides the token to access SAP database. For more information for managing access, see [Managing Access to Databases for Other Subaccounts](https://help.sap.com/viewer/d4790b2de2f4429db6f3dff54e4d7b3a/Cloud/en-US/65d582dc5f0f4c5092acc2bedc9f636d.html).
-
-
     
     </td>
     </tr>
@@ -187,8 +161,6 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     <td valign="top">
     
     *JDBC URL*
-
-
     
     </td>
     <td valign="top">
@@ -196,8 +168,6 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     Specify the database connection URL that the JDBC driver uses to connect with the cloud or on-premise database.
 
     For more information, see [JDBC Receiver Adapter](../Development/jdbc-receiver-adapter-88be644.md).
-
-
     
     </td>
     </tr>
@@ -220,14 +190,10 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -236,14 +202,10 @@ Description
 
 :gear:
 
-
-
 </td>
 <td valign="top">
 
 Helps to sort and filter the content of the table. You can define how the table entries are to be sorted \(in ascending or descending order\). You can also filter the table entries for certain attributes.
-
-
 
 </td>
 </tr>
@@ -252,14 +214,10 @@ Helps to sort and filter the content of the table. You can define how the table 
 
 <span class="SAP-icons"></span> \(Reload\)
 
-
-
 </td>
 <td valign="top">
 
 Reloads the table content.
-
-
 
 </td>
 </tr>

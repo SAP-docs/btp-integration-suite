@@ -30,15 +30,11 @@ When you have applied the Tar Splitter on a file archive, SAP Cloud Integration 
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -46,8 +42,6 @@ When you have applied the Tar Splitter on a file archive, SAP Cloud Integration 
     <td valign="top">
     
     *File Name Pattern* 
-
-
     
     </td>
     <td valign="top">
@@ -83,8 +77,6 @@ When you have applied the Tar Splitter on a file archive, SAP Cloud Integration 
     <td valign="top">
     
     *Stop on Exception* 
-
-
     
     </td>
     <td valign="top">
@@ -92,8 +84,6 @@ When you have applied the Tar Splitter on a file archive, SAP Cloud Integration 
     Select this option to stop file processing if an exception occurs.
 
     If you deselect this option, splitting the archive and processing of the individual files continues, even if processing one of them fails.
-
-
     
     </td>
     </tr>

@@ -11,14 +11,10 @@ This section describes how to secure API Management applications.
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -27,14 +23,10 @@ Description
 
 User Authentication
 
-
-
 </td>
 <td valign="top">
 
 To access API Management application one needs to have a valid SCN user registered with API Management solution. The SCN credentials should be used for logon to API Management solution.
-
-
 
 </td>
 </tr>
@@ -43,14 +35,10 @@ To access API Management application one needs to have a valid SCN user register
 
 Authorization
 
-
-
 </td>
 <td valign="top">
 
 In API Management, you provide authorization to users by assigning relevant roles. For more information on how to provide authorizations, see [Assign User Roles in API Management](APIM-Initial-Setup/assign-user-roles-in-api-management-911ca5a.md).
-
-
 
 </td>
 </tr>
@@ -58,8 +46,6 @@ In API Management, you provide authorization to users by assigning relevant role
 <td valign="top">
 
 Securing APIs
-
-
 
 </td>
 <td valign="top">
@@ -82,8 +68,6 @@ Secure your APIs by referring to the following security policies supported by AP
 
 Security Best Practices
 
-
-
 </td>
 <td valign="top">
 
@@ -103,8 +87,6 @@ Security policies provide information on how to control access to your APIs with
 <td valign="top">
 
 Traffic management
-
-
 
 </td>
 <td valign="top">

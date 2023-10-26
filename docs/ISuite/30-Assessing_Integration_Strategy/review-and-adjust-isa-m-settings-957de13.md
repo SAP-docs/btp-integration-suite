@@ -10,7 +10,7 @@ For more information, see:
 
 -   [SAP Integration Solution Advisory Methodology](sap-integration-solution-advisory-methodology-a2e17f3.md)
 
--   [Glossary for Integration Assessment](https://help.sap.com/viewer/70f6fd5a94a14d0f91a40c7d99296144/IAT/en-US/d352b138fddb4da094314eb922b4ba1a.html "") :arrow_upper_right:
+-    <?sap-ot O2O class="- topic/xref " href="d352b138fddb4da094314eb922b4ba1a.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/cdm1692607551357/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/957de135ee4c4d5d9778355d76760572.xml" ?> 
 
 
 Reviewing and adjusting the ISA-M settings is the task of the enterprise architect \(see [Personas](../60-Security/personas-5df5af1.md)\).
@@ -103,14 +103,10 @@ For each key characteristic, the following attributes are displayed:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
  
-
-
 
 </th>
 </tr>
@@ -119,14 +115,10 @@ Attribute
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Name of key characteristic
-
-
 
 </td>
 </tr>
@@ -135,14 +127,10 @@ Name of key characteristic
 
 *Description*
 
-
-
 </td>
 <td valign="top">
 
 Description of key characteristic
-
-
 
 </td>
 </tr>
@@ -150,8 +138,6 @@ Description of key characteristic
 <td valign="top">
 
 *Type*
-
-
 
 </td>
 <td valign="top">
@@ -176,8 +162,6 @@ Possible values are:
 
 *Key Characteristic Group*
 
-
-
 </td>
 <td valign="top">
 
@@ -199,14 +183,10 @@ Logical grouping of Key Characteristics. The possible values are:
 
 *Key Characteristic Values*
 
-
-
 </td>
 <td valign="top">
 
 The basis for predefined answers in a questionnaire.
-
-
 
 </td>
 </tr>
@@ -256,14 +236,10 @@ When you select a questionnaire, under *Properties*, the following metadata is d
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -272,14 +248,10 @@ Value
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Name of the questionnaire
-
-
 
 </td>
 </tr>
@@ -288,14 +260,10 @@ Name of the questionnaire
 
 *Description*
 
-
-
 </td>
 <td valign="top">
 
 Short description of the purpose
-
-
 
 </td>
 </tr>
@@ -304,14 +272,10 @@ Short description of the purpose
 
 *Style*
 
-
-
 </td>
 <td valign="top">
 
 Relevant integration style
-
-
 
 </td>
 </tr>
@@ -320,14 +284,10 @@ Relevant integration style
 
 *Status*
 
-
-
 </td>
 <td valign="top">
 
 Shows whether the questionnaire is active
-
-
 
 </td>
 </tr>
@@ -344,14 +304,10 @@ For each question, the following attributes are displayed:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -360,14 +316,10 @@ Value
 
 *Position*
 
-
-
 </td>
 <td valign="top">
 
 Position of the question in the questionnaire
-
-
 
 </td>
 </tr>
@@ -376,14 +328,10 @@ Position of the question in the questionnaire
 
 *Question*
 
-
-
 </td>
 <td valign="top">
 
 The text of the question
-
-
 
 </td>
 </tr>
@@ -391,8 +339,6 @@ The text of the question
 <td valign="top">
 
 *Type*
-
-
 
 </td>
 <td valign="top">
@@ -417,8 +363,6 @@ Possible values are:
 
 *Answer Source*
 
-
-
 </td>
 <td valign="top">
 
@@ -427,8 +371,6 @@ Source where to retrieve the answer to the question.
 If *Key Characteristic* is shown, the possible answers to the question are given by the definition of the key characteristic.
 
 See: [Key Characteristics](key-characteristics-c16258e.md)
-
-
 
 </td>
 </tr>
@@ -447,14 +389,10 @@ Depending on the *Request Type* parameter, you can define two different types of
 
 Request Type
 
-
-
 </th>
 <th valign="top">
 
 Type of Questionnaire
-
-
 
 </th>
 </tr>
@@ -463,16 +401,12 @@ Type of Questionnaire
 
 *Integration Request*
 
-
-
 </td>
 <td valign="top">
 
 Questionnaire for a specific integration request.
 
 Use this kind of questionnaire to guide the user through the creation of an interface request.
-
-
 
 </td>
 </tr>
@@ -481,16 +415,12 @@ Use this kind of questionnaire to guide the user through the creation of an inte
 
 *Business Solution Request*
 
-
-
 </td>
 <td valign="top">
 
 Questionnaire for a specific business solution request
 
 Use this kind of questionnaire to guide the user through the creation of a business solution request.
-
-
 
 </td>
 </tr>

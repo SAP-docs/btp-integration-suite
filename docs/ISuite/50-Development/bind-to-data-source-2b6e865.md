@@ -40,14 +40,10 @@ To identify the graphical representations of the OData objects and their binding
 
 OData Object
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -56,14 +52,10 @@ Description
 
 ![](images/Entity_Set_7995de1.png)
 
-
-
 </td>
 <td valign="top">
 
 Represents an entity set in an OData model.
-
-
 
 </td>
 </tr>
@@ -72,14 +64,10 @@ Represents an entity set in an OData model.
 
 ![](images/Operation_099d11d.png)
 
-
-
 </td>
 <td valign="top">
 
 Represents an operation associated with an entity set in an OData model.
-
-
 
 </td>
 </tr>
@@ -88,14 +76,10 @@ Represents an operation associated with an entity set in an OData model.
 
 ![](images/Operation_with_Error_0a699e5.png)
 
-
-
 </td>
 <td valign="top">
 
 Represents an operation bound to a data source with errors in the associated integration flow. You cannot deploy the OData API unless the errors are corrected.
-
-
 
 </td>
 </tr>
@@ -104,14 +88,10 @@ Represents an operation bound to a data source with errors in the associated int
 
 ![](images/Operation_with_Warning_01814a4.png)
 
-
-
 </td>
 <td valign="top">
 
 Represents an operation bound to a data source with warnings in the associated integration flow. We recommend that you verify the warnings and take corrective measures where necessary before deploying the OData API.
-
-
 
 </td>
 </tr>
@@ -120,14 +100,10 @@ Represents an operation bound to a data source with warnings in the associated i
 
 ![](images/Operation_Bound_61f57d5.png)
 
-
-
 </td>
 <td valign="top">
 
 Represents an operation bound to a data source with no errors or warnings.
-
-
 
 </td>
 </tr>
@@ -136,14 +112,10 @@ Represents an operation bound to a data source with no errors or warnings.
 
 ![](images/Function_Import_064e190.png)
 
-
-
 </td>
 <td valign="top">
 
 Represents a function import in an OData model.
-
-
 
 </td>
 </tr>
@@ -152,14 +124,10 @@ Represents a function import in an OData model.
 
 ![](images/Function_Import_with_Error_32684a7.png)
 
-
-
 </td>
 <td valign="top">
 
 Represents a function import bound to a data source with errors in the associated integration flow. You cannot deploy the OData API unless the errors are corrected.
-
-
 
 </td>
 </tr>
@@ -168,14 +136,10 @@ Represents a function import bound to a data source with errors in the associate
 
 ![](images/Function_Import_with_Warning_215be30.png)
 
-
-
 </td>
 <td valign="top">
 
 Represents a function import bound to a data source with warnings in the associated integration flow. We recommend that you verify the warnings and take corrective measures where necessary before deploying the OData API.
-
-
 
 </td>
 </tr>
@@ -184,14 +148,10 @@ Represents a function import bound to a data source with warnings in the associa
 
 ![](images/Function_Import_Bound_e1ed11f.png)
 
-
-
 </td>
 <td valign="top">
 
 Represents a function import bound to a data source with no errors or warnings.
-
-
 
 </td>
 </tr>

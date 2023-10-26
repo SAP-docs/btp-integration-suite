@@ -41,21 +41,15 @@ Basic authentication for HTTPS-based outbound calls works the following way:
 
 Keystore
 
-
-
 </th>
 <th valign="top">
 
 Security Element
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -66,21 +60,15 @@ Keystore \(tenant-specific\)
 
 More information: [Keystore](keystore-b163513.md)
 
-
-
 </td>
 <td valign="top">
 
 Receiver server root certificate
 
-
-
 </td>
 <td valign="top">
 
 This certificate is required to identify the root CA that is at the top of the certificate chain that ultimately guarantees the trustability of the receiver server certificate.
-
-
 
 </td>
 </tr>
@@ -89,21 +77,15 @@ This certificate is required to identify the root CA that is at the top of the c
 
 Receiver keystore
 
-
-
 </td>
 <td valign="top">
 
 Receiver server certificate \(signed by CA with which the tenant has a trust relationship\)
 
-
-
 </td>
 <td valign="top">
 
 This certificate is required to identify the receiver \(to which the tenant connects as the client\) as a trusted server.
-
-
 
 </td>
 </tr>
@@ -112,21 +94,15 @@ This certificate is required to identify the receiver \(to which the tenant conn
 
 User credentials artifact
 
-
-
 </td>
 <td valign="top">
 
 User and password
 
-
-
 </td>
 <td valign="top">
 
 With these credentials the tenant authenticates itself as client at the receiver system.
-
-
 
 </td>
 </tr>

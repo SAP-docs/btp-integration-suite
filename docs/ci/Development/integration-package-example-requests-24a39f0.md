@@ -19,14 +19,10 @@ To import an integration package into the *Design* section, send the following c
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -35,14 +31,10 @@ Resource Path
 
 POST
 
-
-
 </td>
 <td valign="top">
 
 `/IntegrationPackages` 
-
-
 
 </td>
 </tr>
@@ -81,14 +73,10 @@ To download an integration package as `.zip` file from the *Design* section, sen
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -97,14 +85,10 @@ Resource Path
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `/IntegrationPackages('{Id}')/$value` 
-
-
 
 </td>
 </tr>

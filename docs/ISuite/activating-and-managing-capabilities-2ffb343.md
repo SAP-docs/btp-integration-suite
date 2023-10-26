@@ -46,7 +46,7 @@ This topic describes how to add and activate relevant capabilities in Integratio
 
 1.  On the Integration Suite home page, under the *Capabilities* section, choose either *Add Capabilities* \(if it's your first time accessing the Integration Suite home page\) or <span class="SAP-icons"></span> *Manage Capabilities*.
 
-2.  On the *Activate Capabilities* screen, under *Select Capabilities*, select the relevant capabilities as shown in the table below and choose *Next* to configure additional functionality for individual capabilities.
+2.  On the *Activate Capabilities* screen, under *Select Capabilities*, select the relevant capabilities as shown in the following table and choose *Next* to configure additional functionality for individual capabilities.
 
 
     <table>
@@ -54,15 +54,11 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <th valign="top">
 
     To Activate...
-
-
     
     </th>
     <th valign="top">
 
     Select...
-
-
     
     </th>
     </tr>
@@ -70,8 +66,6 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <td valign="top">
     
     Cloud Integration
-
-
     
     </td>
     <td valign="top">
@@ -108,8 +102,6 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <td valign="top">
     
     *Manage APIs* 
-
-
     
     </td>
     </tr>
@@ -117,15 +109,11 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <td valign="top">
     
     Open Connectors
-
-
     
     </td>
     <td valign="top">
     
     *Extend Non-SAP Connectivity* 
-
-
     
     </td>
     </tr>
@@ -133,15 +121,11 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <td valign="top">
     
     Integration Advisor
-
-
     
     </td>
     <td valign="top">
     
     *Implement Interfaces and Mapping* 
-
-
     
     </td>
     </tr>
@@ -159,8 +143,6 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <td valign="top">
     
     *Manage Trading Partners* 
-
-
     
     </td>
     </tr>
@@ -168,15 +150,11 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <td valign="top">
     
     Integration Assessment
-
-
     
     </td>
     <td valign="top">
     
     *Manage and Provide Integration Technology Guidance* 
-
-
     
     </td>
     </tr>
@@ -184,15 +162,11 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <td valign="top">
     
     Migration Assessment 
-
-
     
     </td>
     <td valign="top">
     
     *Assess Migration Scenarios* 
-
-
     
     </td>
     </tr>

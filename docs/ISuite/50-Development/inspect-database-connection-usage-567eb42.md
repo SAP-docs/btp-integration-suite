@@ -35,21 +35,15 @@ The level of usage is indicated by the bar height and color \(from green for low
 
 Level of Usage
 
-
-
 </th>
 <th valign="top">
 
 Bar Color
 
-
-
 </th>
 <th valign="top">
 
 Database Connection Usage
-
-
 
 </th>
 </tr>
@@ -58,21 +52,15 @@ Database Connection Usage
 
 Critical
 
-
-
 </td>
 <td valign="top">
 
 Red
 
-
-
 </td>
 <td valign="top">
 
 More than 90%
-
-
 
 </td>
 </tr>
@@ -81,21 +69,15 @@ More than 90%
 
 Warning
 
-
-
 </td>
 <td valign="top">
 
 Orange
 
-
-
 </td>
 <td valign="top">
 
 Between 70% and 90%
-
-
 
 </td>
 </tr>
@@ -104,21 +86,15 @@ Between 70% and 90%
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 Green
 
-
-
 </td>
 <td valign="top">
 
 Less than 70%
-
-
 
 </td>
 </tr>
@@ -165,14 +141,10 @@ On the *Database Connections* screen, you can find more details and functions in
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -181,8 +153,6 @@ Description
 
 *Top Integration Flows by Database Connection Usage* 
 
-
-
 </td>
 <td valign="top">
 
@@ -190,16 +160,12 @@ Shows the database connection usage for those integration flows that are identif
 
 See: [Inspect Top Integration Flows by Database Connection Usage](inspect-top-integration-flows-by-database-connection-usage-79c5a05.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Integration Flows Affected by Unavailable Connections* 
-
-
 
 </td>
 <td valign="top">
@@ -210,8 +176,6 @@ Shows integration flows that cause critical database connection load \(unavailab
 > This section only shows content if the time filter is set so that in the associated time period, critical load situations are associated with at least one integration flow.
 
 See: [Inspect Integration Flows Affected by Unavailable Connections](inspect-integration-flows-affected-by-unavailable-connections-5d9d214.md)
-
-
 
 </td>
 </tr>

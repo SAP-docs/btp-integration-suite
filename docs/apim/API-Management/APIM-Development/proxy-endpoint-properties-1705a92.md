@@ -59,21 +59,15 @@ Properties are set on ProxyEndpoint HTTPProxyConnection elements as follows:
 
 Property Value
 
-
-
 </th>
 <th valign="top">
 
 Default Value
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -82,21 +76,15 @@ Description
 
 X-Forwarded-For
 
-
-
 </td>
 <td valign="top">
 
 false
 
-
-
 </td>
 <td valign="top">
 
 On setting it to true, the virtual host's IP address is added to the outbound request as the value of the HTTP `X-Forwarded-For` header.
-
-
 
 </td>
 </tr>
@@ -105,14 +93,10 @@ On setting it to true, the virtual host's IP address is added to the outbound re
 
 request.streaming.enabled
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 <td valign="top">
@@ -123,8 +107,6 @@ true: HTTP request payloads are not read into a buffer, they are streamed to the
 
 For more information about enabling streaming, see [Enable Streaming of Requests and Responses in an API Proxy](enable-streaming-of-requests-and-responses-in-an-api-proxy-b43d826.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -132,14 +114,10 @@ For more information about enabling streaming, see [Enable Streaming of Requests
 
 response.streaming.enabled
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 <td valign="top">
@@ -150,8 +128,6 @@ true: HTTP response payloads are not read into a buffer, they are streamed to th
 
 For more information about enabling streaming, see [Enable Streaming of Requests and Responses in an API Proxy](enable-streaming-of-requests-and-responses-in-an-api-proxy-b43d826.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -159,14 +135,10 @@ For more information about enabling streaming, see [Enable Streaming of Requests
 
 compression.algorithm
 
-
-
 </td>
 <td valign="top">
 
 N/A
-
-
 
 </td>
 <td valign="top">
@@ -179,8 +151,6 @@ Supported values:
 
 For example, when a client submits a request that uses `gzip` compression, API Management forwards the request to target using `gzip` compression. You can configure compression algorithms to be explicitly applied by setting this property on the TargetEndpoint or ProxyEndpoint.
 
-
-
 </td>
 </tr>
 <tr>
@@ -188,21 +158,15 @@ For example, when a client submits a request that uses `gzip` compression, API M
 
 api.timeout
 
-
-
 </td>
 <td valign="top">
 
 N/A
 
-
-
 </td>
 <td valign="top">
 
 Configure the timeout for individual API proxies.
-
-
 
 </td>
 </tr>

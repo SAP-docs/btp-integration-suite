@@ -25,14 +25,10 @@ You can retrieve the following information from the system log file list:
 
 Attributes
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -41,14 +37,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the log file name
-
-
 
 </td>
 </tr>
@@ -57,14 +49,10 @@ Displays the log file name
 
 *Log Type* 
 
-
-
 </td>
 <td valign="top">
 
 Displays 2 different log types the CP default trace or the HTTP access log
-
-
 
 </td>
 </tr>
@@ -73,14 +61,10 @@ Displays 2 different log types the CP default trace or the HTTP access log
 
 *Updated At* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the date of the last update
-
-
 
 </td>
 </tr>
@@ -89,14 +73,10 @@ Displays the date of the last update
 
 *Size* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the file size
-
-
 
 </td>
 </tr>
@@ -105,14 +85,10 @@ Displays the file size
 
 *Actions* 
 
-
-
 </td>
 <td valign="top">
 
 You can either download the file by selecting <span class="SAP-icons"></span> or get the URL by selecting <span class="SAP-icons"></span>.
-
-
 
 </td>
 </tr>

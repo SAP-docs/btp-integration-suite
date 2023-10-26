@@ -33,15 +33,11 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -49,15 +45,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *Source Encoding*
-
-
     
     </td>
     <td valign="top">
     
     *UTF-8*
-
-
     
     </td>
     </tr>
@@ -65,15 +57,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *Validate Message*
-
-
     
     </td>
     <td valign="top">
     
     Deselected
-
-
     
     </td>
     </tr>
@@ -81,8 +69,6 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *Create Acknowledgement*
-
-
     
     </td>
     <td valign="top">
@@ -100,15 +86,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *Interchange Number*
-
-
     
     </td>
     <td valign="top">
     
     *Use From EDI Message*
-
-
     
     </td>
     </tr>
@@ -116,15 +98,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *CONTRL Message Version*
-
-
     
     </td>
     <td valign="top">
     
     *Version D, Release 3*
-
-
     
     </td>
     </tr>
@@ -132,15 +110,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *Include UNA Segment*
-
-
     
     </td>
     <td valign="top">
     
     Deselected
-
-
     
     </td>
     </tr>
@@ -173,29 +147,21 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Name
-
-
     
     </th>
     <th valign="top">
 
     Type
-
-
     
     </th>
     <th valign="top">
 
     Data Type
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -203,29 +169,21 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *SplitAS2MessageID*
-
-
     
     </td>
     <td valign="top">
     
     *Expression*
-
-
     
     </td>
     <td valign="top">
     
     `java.lang.String`
-
-
     
     </td>
     <td valign="top">
     
     `${header.AS2MessageID}_${header.EDI_Message_Control_Number}` 
-
-
     
     </td>
     </tr>
@@ -241,15 +199,11 @@ The integration flow performs the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -257,8 +211,6 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *Source Message ID*
-
-
     
     </td>
     <td valign="top">
@@ -266,8 +218,6 @@ The integration flow performs the following steps:
     `${property.SplitAS2MessageID}` 
 
     This value is defined using the property defined in the previous Content Modifier.
-
-
     
     </td>
     </tr>
@@ -275,8 +225,6 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *Target Header Name*
-
-
     
     </td>
     <td valign="top">
@@ -284,8 +232,6 @@ The integration flow performs the following steps:
     `SapMessageIdEx` 
 
     You can specify any name. However, using this header has an advantage considering the fact that a SOAP SAP RM receiver channel is used in this integration flow.
-
-
     
     </td>
     </tr>
@@ -293,8 +239,6 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *Context*
-
-
     
     </td>
     <td valign="top">
@@ -302,8 +246,6 @@ The integration flow performs the following steps:
     `IDMapperContext_01` 
 
     You define a unique context for each *ID Mapping* step within your integration flow. If you need any additional *ID Mapping* \(providing a different target ID\), you can use a different context. In this scenario, there's 1 single *ID Mapping* step only. Therefore, the *Context* name doesn’t really matter.
-
-
     
     </td>
     </tr>
@@ -311,8 +253,6 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *Visibility*
-
-
     
     </td>
     <td valign="top">
@@ -320,8 +260,6 @@ The integration flow performs the following steps:
     *Integration Flow* 
 
     The generated IDs are unique within the same integration flow model. If your *ID Mapping* is to be used across different integration flows, you need to select *Global*.
-
-
     
     </td>
     </tr>
@@ -329,15 +267,11 @@ The integration flow performs the following steps:
     <td valign="top">
     
     *Expiration Period \(in d\)*
-
-
     
     </td>
     <td valign="top">
     
     `30`
-
-
     
     </td>
     </tr>
@@ -366,15 +300,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -382,15 +312,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     `OWN`
-
-
     
     </td>
     </tr>
@@ -398,15 +324,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *User*
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -414,15 +336,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Password*
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

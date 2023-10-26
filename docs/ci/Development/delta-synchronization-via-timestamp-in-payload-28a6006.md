@@ -24,29 +24,21 @@ It works as follows:
     <th valign="top">
 
     Name
-
-
     
     </th>
     <th valign="top">
 
     Type
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     <th valign="top">
 
     Default Value
-
-
     
     </th>
     </tr>
@@ -54,29 +46,21 @@ It works as follows:
     <td valign="top">
     
     lastSync
-
-
     
     </td>
     <td valign="top">
     
     Local Variable
-
-
     
     </td>
     <td valign="top">
     
     timestamp\_DS\_TSvPayload
-
-
     
     </td>
     <td valign="top">
     
     \{\{defaultDate\}\}
-
-
     
     </td>
     </tr>
@@ -98,15 +82,11 @@ It works as follows:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -114,15 +94,11 @@ It works as follows:
     <td valign="top">
     
     Operation Details
-
-
     
     </td>
     <td valign="top">
     
     GET
-
-
     
     </td>
     </tr>
@@ -130,15 +106,11 @@ It works as follows:
     <td valign="top">
     
     Resource Path
-
-
     
     </td>
     <td valign="top">
     
     MessageProcessingLogs
-
-
     
     </td>
     </tr>
@@ -146,15 +118,11 @@ It works as follows:
     <td valign="top">
     
     Query Options
-
-
     
     </td>
     <td valign="top">
     
     $select=MessageGuid, Status, LogStart&$filter=LogStart gt datetime'$\{property.lastSync\}'&$orderby=LogStart desc
-
-
     
     </td>
     </tr>

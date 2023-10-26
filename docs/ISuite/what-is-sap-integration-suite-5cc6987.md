@@ -11,9 +11,9 @@ SAP Integration Suite connects and contextualizes processes and data while enabl
 > ### Tip:  
 > The English version of this guide is open for contributions and feedback using GitHub. This allows you to get in contact with responsible authors of SAP Help Portal pages and the development team to discuss documentation-related issues. To contribute to this guide, or to provide feedback, choose the corresponding option on SAP Help Portal:
 > 
-> -   :pencil2:: Contribute to a documentation page. This option opens a pull request on GitHub.
+> -   *Feedback* \> *Create issue*: Provide feedback about a documentation page. This option opens an issue on GitHub.
 > 
-> -   <span class="SAP-icons"></span> Feedback: Provide feedback about a documentation page. This option opens an issue on GitHub.
+> -   *Feedback* \> *Edit page*: Contribute to a documentation page. This option opens a pull request on GitHub.
 > 
 > 
 > You need a GitHub account to use these options.
@@ -27,7 +27,7 @@ SAP Integration Suite connects and contextualizes processes and data while enabl
 > -   [Blog Post: Introducing the Open Documentation Initiative](https://blogs.sap.com/2021/05/20/introducing-the-open-documentation-initiative/)
 
 > ### Tip:  
-> Contextual help is available for some screens of the SAP Integration Suite. To activate this help, from the top toolbar, choose <span class="SAP-icons"></span>. A panel with help topics opens on screen to your right. You will also see green <span style="color:#007833;"><span class="SAP-icons"></span></span> icons on the screen. Choose these icons to know more about the associated element.
+> Contextual help is available for some screens of the SAP Integration Suite. To activate this help, from the top toolbar, choose <span class="SAP-icons"></span> Help. A panel with help topics opens alongside your current screen to your right. You will also find green <span style="color:#007833;"><span class="SAP-icons"></span></span> Help icons on the screen. Choose these icons to know more about the associated element.
 
 
 
@@ -134,14 +134,10 @@ Estimate the migration effort for SAP Process Orchestration scenarios with Migra
 
 Capabilities
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -150,14 +146,10 @@ Description
 
 [Cloud Integration](50-Development/development-de1ae81.md#loiode1ae814218247c6bac4975cb486e431__section_Cloud_Integration)
 
-
-
 </td>
 <td valign="top">
 
 Integrate SAP and non-SAP, cloud, and on-premise applications and process messages in real-time scenarios spanning different companies, organizations, or departments within one organization.
-
-
 
 </td>
 </tr>
@@ -168,16 +160,12 @@ Integrate SAP and non-SAP, cloud, and on-premise applications and process messag
 
 [Graph](https://help.sap.com/docs/graph)
 
-
-
 </td>
 <td valign="top">
 
 Get access to simple, scalable, and secure digital assets through application programming interfaces \(APIs\) and consume these.
 
 Expose all your business data in the form of a semantically connected data graph, accessed via a single unified and powerful API.
-
-
 
 </td>
 </tr>
@@ -186,14 +174,10 @@ Expose all your business data in the form of a semantically connected data graph
 
 [Open Connectors](https://help.openconnectors.ext.hana.ondemand.com/home)
 
-
-
 </td>
 <td valign="top">
 
 Build seamless integrations with over 160 non-SAP applications using prebuilt connectors.
-
-
 
 </td>
 </tr>
@@ -202,14 +186,10 @@ Build seamless integrations with over 160 non-SAP applications using prebuilt co
 
 [Integration Advisor](50-Development/development-de1ae81.md#loiode1ae814218247c6bac4975cb486e431__section_Integration_Advisor)
 
-
-
 </td>
 <td valign="top">
 
 Accelerate the development of business-oriented interfaces and mappings, generate runtime artifacts quickly, and significantly reduce efforts.
-
-
 
 </td>
 </tr>
@@ -218,14 +198,10 @@ Accelerate the development of business-oriented interfaces and mappings, generat
 
 [Trading Partner Management](50-Development/development-de1ae81.md#loiode1ae814218247c6bac4975cb486e431__section_TPM)
 
-
-
 </td>
 <td valign="top">
 
 Manage B2B relationships with multiple trading partners through this easy-to-use user interface that helps simplify the B2B communication between trading partners.
-
-
 
 </td>
 </tr>
@@ -234,14 +210,10 @@ Manage B2B relationships with multiple trading partners through this easy-to-use
 
 [Integration Assessment](https://help.sap.com/viewer/36eacbcb75de48a48717090574ba16d0/Cloud/en-US/)
 
-
-
 </td>
 <td valign="top">
 
 Define integration landscape, based on the Integration Solution Advisor Methodology.
-
-
 
 </td>
 </tr>
@@ -250,14 +222,10 @@ Define integration landscape, based on the Integration Solution Advisor Methodol
 
 [Migration Assessment](migration-assessment-5c5e50e.md)
 
-
-
 </td>
 <td valign="top">
 
 Assess your existing integration scenarios to migrate them to SAP Integration Suite.
-
-
 
 </td>
 </tr>

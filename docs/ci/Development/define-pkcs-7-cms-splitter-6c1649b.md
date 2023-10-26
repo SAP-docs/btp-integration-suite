@@ -28,15 +28,11 @@ Use a PKCS\#7/CMS Splitter if you want to break down a PKCS7 Signed Data message
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -44,15 +40,11 @@ Use a PKCS\#7/CMS Splitter if you want to break down a PKCS7 Signed Data message
     <td valign="top">
     
     *Payload File Name* 
-
-
     
     </td>
     <td valign="top">
     
     Name of the file that will contain the payload after the splitting step
-
-
     
     </td>
     </tr>
@@ -60,15 +52,11 @@ Use a PKCS\#7/CMS Splitter if you want to break down a PKCS7 Signed Data message
     <td valign="top">
     
     *Signature File Name* 
-
-
     
     </td>
     <td valign="top">
     
     Name of the file \(extension `.sig`\) that will contain the signature after the splitting step
-
-
     
     </td>
     </tr>
@@ -76,15 +64,11 @@ Use a PKCS\#7/CMS Splitter if you want to break down a PKCS7 Signed Data message
     <td valign="top">
     
     *Wrap by Content Info* 
-
-
     
     </td>
     <td valign="top">
     
     Select this option if you want to wrap PKCS\#7 signed data containing the signature into PKCS\#7 content.
-
-
     
     </td>
     </tr>
@@ -92,15 +76,11 @@ Use a PKCS\#7/CMS Splitter if you want to break down a PKCS7 Signed Data message
     <td valign="top">
     
     *PayloadFirst* 
-
-
     
     </td>
     <td valign="top">
     
     Select this option if you want the payload to be the first message returned.
-
-
     
     </td>
     </tr>
@@ -108,15 +88,11 @@ Use a PKCS\#7/CMS Splitter if you want to break down a PKCS7 Signed Data message
     <td valign="top">
     
     *BASE64 Payload* 
-
-
     
     </td>
     <td valign="top">
     
     Select this option if you want to encode the payload with the base64 encoding scheme after splitting.
-
-
     
     </td>
     </tr>
@@ -124,15 +100,11 @@ Use a PKCS\#7/CMS Splitter if you want to break down a PKCS7 Signed Data message
     <td valign="top">
     
     *BASE64 Signature* 
-
-
     
     </td>
     <td valign="top">
     
     Select this option if you want to encode the signature using the base64 encoding scheme after splitting.
-
-
     
     </td>
     </tr>

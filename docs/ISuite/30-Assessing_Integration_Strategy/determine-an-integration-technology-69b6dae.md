@@ -22,15 +22,11 @@ By answering configurable questionnaires, you can capture the interface requirem
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -38,15 +34,11 @@ By answering configurable questionnaires, you can capture the interface requirem
     <td valign="top">
     
     Integration content
-
-
     
     </td>
     <td valign="top">
     
     Type of integration scenario
-
-
     
     </td>
     </tr>
@@ -54,15 +46,11 @@ By answering configurable questionnaires, you can capture the interface requirem
     <td valign="top">
     
     Connectivity
-
-
     
     </td>
     <td valign="top">
     
     Provide details of protocols, business applications, technologies, and adapters.
-
-
     
     </td>
     </tr>
@@ -70,15 +58,11 @@ By answering configurable questionnaires, you can capture the interface requirem
     <td valign="top">
     
     API design and management
-
-
     
     </td>
     <td valign="top">
     
     Provide interface structure at the sender and receiver and integration with any other business applications.
-
-
     
     </td>
     </tr>
@@ -86,15 +70,11 @@ By answering configurable questionnaires, you can capture the interface requirem
     <td valign="top">
     
     Data format and validation
-
-
     
     </td>
     <td valign="top">
     
     Provide the data format of your integration scenario exchange with sender and receiver.
-
-
     
     </td>
     </tr>
@@ -102,15 +82,11 @@ By answering configurable questionnaires, you can capture the interface requirem
     <td valign="top">
     
     Data Orchestration
-
-
     
     </td>
     <td valign="top">
     
     Provide details of routing rules, aggregate messages, and sequence.
-
-
     
     </td>
     </tr>
@@ -118,15 +94,11 @@ By answering configurable questionnaires, you can capture the interface requirem
     <td valign="top">
     
     Security
-
-
     
     </td>
     <td valign="top">
     
     Provide details of digital encryption.
-
-
     
     </td>
     </tr>
@@ -134,15 +106,11 @@ By answering configurable questionnaires, you can capture the interface requirem
     <td valign="top">
     
     Monitoring and Operations
-
-
     
     </td>
     <td valign="top">
     
     Provide details on how do message and error processing.
-
-
     
     </td>
     </tr>

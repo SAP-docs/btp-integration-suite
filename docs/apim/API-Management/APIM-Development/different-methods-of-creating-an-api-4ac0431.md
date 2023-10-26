@@ -13,14 +13,10 @@ When you create an API, you can choose from the following options:
 
 *Import API*
 
-
-
 </td>
 <td valign="top">
 
 If you have an API definition, you can reuse it by importing it into the API Management. For more information, see [Import an API](import-an-api-9342a93.md).
-
-
 
 </td>
 </tr>
@@ -29,14 +25,10 @@ If you have an API definition, you can reuse it by importing it into the API Man
 
 *Create*
 
-
-
 </td>
 <td valign="top">
 
 : Create an API proxy from scratch by defining the resources, documentation, and by attaching policies. For more information, see [Create an API](create-an-api-c0842d5.md).
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ If you have an API definition, you can reuse it by importing it into the API Man
 
 *Create in API Designer*
 
-
-
 </td>
 <td valign="top">
 
 Model an API from a specification that contains the single target URL endpoint using the API Designer. For more information, see [Create an API Using the API Designer](create-an-api-using-the-api-designer-26e1bbd.md).
-
-
 
 </td>
 </tr>

@@ -13,14 +13,10 @@ The integration package contains the following Postman collections:
 
 Postman Collection
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Description
 
 \(Not relevant when using SAP Integration Suite; only relevant when using SAP Cloud Integration as standalone service in the Neo environment\)
 
-
-
 </td>
 <td valign="top">
 
 You can use this Postman collection as template to set up a Postman environment to test the example integration flows \(in the Neo environment\).
-
-
 
 </td>
 </tr>
@@ -47,14 +39,10 @@ You can use this Postman collection as template to set up a Postman environment 
 
 *SAP Cloud Integration Tenant Parameters Postman Environment \(CF\)* 
 
-
-
 </td>
 <td valign="top">
 
 You can use this Postman collection as template to set up a Postman environment to test the example integration flows \(in the Cloud Foundry environment\).
-
-
 
 </td>
 </tr>
@@ -63,14 +51,10 @@ You can use this Postman collection as template to set up a Postman environment 
 
 *Partner Directory Example Integration Flows Postman Collection* 
 
-
-
 </td>
 <td valign="top">
 
 You can use this Postman collection to call the Partner Directory OData API and the related example integration flows.
-
-
 
 </td>
 </tr>
@@ -100,21 +84,15 @@ The environments created with these collections have the following parameters \(
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Environment
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -123,8 +101,6 @@ Description
 
 partner\_id
 
-
-
 </td>
 <td valign="top">
 
@@ -132,16 +108,12 @@ Cloud Foundry
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Parameter to define the partner ID
 
 You can flexibly specify different partner IDs with this parameter.
-
-
 
 </td>
 </tr>
@@ -152,21 +124,15 @@ cpi\_username
 
 \(Not relevant when using SAP Integration Suite; only relevant when using SAP Cloud Integration in the Neo environment\)
 
-
-
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Enter the user of the user that is authenticated to call Cloud Integration \(for example, your S user\).
-
-
 
 </td>
 </tr>
@@ -177,21 +143,15 @@ cpi\_password
 
 \(Not relevant when using SAP Integration Suite; only relevant when using SAP Cloud Integration in the Neo environment\)
 
-
-
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Enter the password for the user that is authenticated to call Cloud Integration.
-
-
 
 </td>
 </tr>
@@ -200,21 +160,15 @@ Enter the password for the user that is authenticated to call Cloud Integration.
 
 cpi\_clientId
 
-
-
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Enter the clientid \(from the service key\) from the OAuth client that is authenticated to call Cloud Integration.
-
-
 
 </td>
 </tr>
@@ -223,21 +177,15 @@ Enter the clientid \(from the service key\) from the OAuth client that is authen
 
 cpi\_clientSecret
 
-
-
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Enter the clientid \(from the service key\) from the OAuth client that is authenticated to call Cloud Integration.
-
-
 
 </td>
 </tr>
@@ -246,14 +194,10 @@ Enter the clientid \(from the service key\) from the OAuth client that is authen
 
 cpi\_api\_clientId
 
-
-
 </td>
 <td valign="top">
 
 Cloud Foundry
-
-
 
 </td>
 <td valign="top">
@@ -262,8 +206,6 @@ Cloud Foundry
 
 See: [OAuth with Client Credentials Grant for API Clients](../40-RemoteSystems/oauth-with-client-credentials-grant-for-api-clients-20e26a8.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -271,14 +213,10 @@ See: [OAuth with Client Credentials Grant for API Clients](../40-RemoteSystems/o
 
 cpi\_api\_clientSecret
 
-
-
 </td>
 <td valign="top">
 
 Cloud Foundry
-
-
 
 </td>
 <td valign="top">
@@ -287,8 +225,6 @@ Cloud Foundry
 
 See: [OAuth with Client Credentials Grant for API Clients](../40-RemoteSystems/oauth-with-client-credentials-grant-for-api-clients-20e26a8.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -296,16 +232,12 @@ See: [OAuth with Client Credentials Grant for API Clients](../40-RemoteSystems/o
 
 cpi\_runtime\_url
 
-
-
 </td>
 <td valign="top">
 
 Cloud Foundry
 
 Neo
-
-
 
 </td>
 <td valign="top">
@@ -314,16 +246,12 @@ Enter the base URL of the Cloud Integration runtime. This is the base address of
 
 When you've deployed an integration flow with HTTPS sender adapter, the integration flow endpoint address is: `https://<cpi_runtime_url>/http/<relative adapter address>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 cpi\_designtime\_url
-
-
 
 </td>
 <td valign="top">
@@ -332,16 +260,12 @@ Cloud Foundry
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Enter the base URL of the Cloud Integration host. Note that here you need to enter the address at which you reach the Web UI and the OData API resources.
 
 Note that the Web UI address is: `https://<cpi_designtime_url>/itspaces`
-
-
 
 </td>
 </tr>
@@ -350,14 +274,10 @@ Note that the Web UI address is: `https://<cpi_designtime_url>/itspaces`
 
 cpi\_token\_url
 
-
-
 </td>
 <td valign="top">
 
 Cloud Foundry
-
-
 
 </td>
 <td valign="top">
@@ -370,8 +290,6 @@ Enter the value for `tokenurl` as provided in the service key.
 
 See: [OAuth with Client Credentials Grant for API Clients](../40-RemoteSystems/oauth-with-client-credentials-grant-for-api-clients-20e26a8.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -379,14 +297,10 @@ See: [OAuth with Client Credentials Grant for API Clients](../40-RemoteSystems/o
 
 cpi\_api\_token
 
-
-
 </td>
 <td valign="top">
 
 Cloud Foundry
-
-
 
 </td>
 <td valign="top">
@@ -395,16 +309,12 @@ OAuth access token to access the Partner Directory OData API
 
 See: [OAuth with Client Credentials Grant for API Clients](../40-RemoteSystems/oauth-with-client-credentials-grant-for-api-clients-20e26a8.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 cpi\_x\_csrf\_token
-
-
 
 </td>
 <td valign="top">
@@ -413,14 +323,10 @@ Cloud Foundry
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 CSRF token used for inbound HTTP calls.
-
-
 
 </td>
 </tr>
@@ -429,8 +335,6 @@ CSRF token used for inbound HTTP calls.
 
 cpi\_pd\_x\_csrf\_token
 
-
-
 </td>
 <td valign="top">
 
@@ -438,14 +342,10 @@ Cloud Foundry
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 CSRF token used for inbound HTTP calls.
-
-
 
 </td>
 </tr>
@@ -454,16 +354,12 @@ CSRF token used for inbound HTTP calls.
 
 AS2\_inbound\_decrypt\_message
 
-
-
 </td>
 <td valign="top">
 
 Cloud Foundry
 
 Neo
-
-
 
 </td>
 <td valign="top">
@@ -472,16 +368,12 @@ Specifies parameter *Decrypt Message* of the AS2 sender adapter in scenario [Use
 
 This boolean parameter can have the values `true` or `false`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AS2\_inbound\_verify\_signature
-
-
 
 </td>
 <td valign="top">
@@ -490,14 +382,10 @@ Cloud Foundry
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Specifies parameter *Verify Signature* of the AS2 sender adapter in scenario [Use the AS2 Adapter with Dynamic Encryption and Signature Verification](use-the-as2-adapter-with-dynamic-encryption-and-signature-verification-2cd252c.md).
-
-
 
 </td>
 </tr>
@@ -506,16 +394,12 @@ Specifies parameter *Verify Signature* of the AS2 sender adapter in scenario [Us
 
 AS2\_SenderPublicKey
 
-
-
 </td>
 <td valign="top">
 
 Cloud Foundry
 
 Neo
-
-
 
 </td>
 <td valign="top">
@@ -524,16 +408,12 @@ Public key used to encrypt message
 
 Enter the Base64-encoded *CPIGuidelinesSenderKey* from the Mendelson tool as described under [Install and Configure Mendelson](install-and-configure-mendelson-cfa038e.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AS2\_ReceiverPrivateKey
-
-
 
 </td>
 <td valign="top">
@@ -542,16 +422,12 @@ Cloud Foundry
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Alias of private key used by Cloud Integration to decrypt the message in the integration scenario [Use the AS2 Adapter with Dynamic Encryption and Signature Verification](use-the-as2-adapter-with-dynamic-encryption-and-signature-verification-2cd252c.md)
 
 Enter the alias of the private key from the Cloud Integration keystore.
-
-
 
 </td>
 </tr>
@@ -565,7 +441,7 @@ Enter the alias of the private key from the Cloud Integration keystore.
 
 After you've imported the collection *Partner Directory Example Integration Flows Postman Collection*, it's displayed in the collections area in Postman.
 
-The collection contains 2 folder structures for the different environments \(Cloud Foundry \(Cloud Foundry\) and Neo\).
+The collection contains 2 folder structures for the different environments \(Cloud Foundry and Neo\).
 
 ![](images/696aa291b22443a09bef0e5f11248b5a.xml)
 

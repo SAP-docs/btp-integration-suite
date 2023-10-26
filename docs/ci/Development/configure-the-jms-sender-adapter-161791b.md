@@ -51,14 +51,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -67,14 +63,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -91,21 +83,15 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -114,14 +100,10 @@ Description
 
 *Processing Details* 
 
-
-
 </td>
 <td valign="top">
 
 *Queue Name*
-
-
 
 </td>
 <td valign="top">
@@ -130,16 +112,12 @@ Enter the name of the message queue \(aA-zZ, 0–9, \_\) without white spaces.
 
 A maximum length of 80 characters is allowed.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Number of Concurrent Processes*
-
-
 
 </td>
 <td valign="top">
@@ -158,14 +136,10 @@ Enter the number of concurrent processes for each worker node. The recommended v
 
 *Retry Handling* 
 
-
-
 </td>
 <td valign="top">
 
 *Retry Interval \(in m\)* 
-
-
 
 </td>
 <td valign="top">
@@ -186,14 +160,10 @@ Enter a value for the amount of time to wait before retrying message delivery.
 
 *Exponential Backoff* 
 
-
-
 </td>
 <td valign="top">
 
 Enter a value to double the retry interval after each unsuccessful retry.
-
-
 
 </td>
 </tr>
@@ -204,14 +174,10 @@ Enter a value to double the retry interval after each unsuccessful retry.
 
 \(only configurable when *Exponential Backoff* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Enter a value for the maximum amount of time to wait before retrying message delivery. The minimum value is 10 minutes. The default value is set to 60 minutes.
-
-
 
 </td>
 </tr>
@@ -219,8 +185,6 @@ Enter a value for the maximum amount of time to wait before retrying message del
 <td valign="top">
 
 *Dead-Letter Queue* 
-
-
 
 </td>
 <td valign="top">

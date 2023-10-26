@@ -21,21 +21,15 @@ Note that the following description doesn’t contain aspects that are common in
 
 Authentication Option
 
-
-
 </th>
 <th valign="top">
 
 Configuration \(Summary\)
 
-
-
 </th>
 <th valign="top">
 
 How it Works
-
-
 
 </th>
 </tr>
@@ -43,8 +37,6 @@ How it Works
 <td valign="top">
 
 Client certificate authentication
-
-
 
 </td>
 <td valign="top">
@@ -65,8 +57,6 @@ See:
 
 System checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.
 
-
-
 </td>
 </tr>
 <tr>
@@ -74,16 +64,12 @@ System checks if a service key is available that contains the client certificate
 
 OAuth
 
-
-
 </td>
 <td valign="top">
 
 Go to SAP BTP cockpit and define a service key for the *Process Integration* service and *integration-flow* plan. Specify the role that is to be used to grant access to the integration flow endpoint. The generated service key contains the following properties: `clientid`, `clientsecret`, and `tokenurl`.
 
 See: [OAuth with Client Credentials Grant for Integration Flow Processing](../ConnectionSetup/oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md)
-
-
 
 </td>
 <td valign="top">
@@ -97,16 +83,12 @@ For the client credentials grant variant of OAuth, authentication at runtime com
 
 Other grant types can be configured as well using the service key information\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Basic authentication \(associated with an OAuth client\)
-
-
 
 </td>
 <td valign="top">
@@ -115,14 +97,10 @@ Perform the same steps as for OAuth.
 
 See: [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../ConnectionSetup/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 
-
-
 </td>
 <td valign="top">
 
 In just one request, the sender uses `clientid` and `clientsecret` as user credentials to directly access the integration flow endpoint without the need to request an access token first.
-
-
 
 </td>
 </tr>
@@ -131,8 +109,6 @@ In just one request, the sender uses `clientid` and `clientsecret` as user crede
 
 Basic authentication of a user registered at an identity provider \(IdP\) \(this option isn't considered to be secure enough for productive scenarios\)
 
-
-
 </td>
 <td valign="top">
 
@@ -140,14 +116,10 @@ Register a user at an identity provider \(for example, SAP's default identity pr
 
 See: [Basic Authentication of IdP User for Integration Flow Processing](../ConnectionSetup/basic-authentication-of-idp-user-for-integration-flow-processing-5d46e56.md)
 
-
-
 </td>
 <td valign="top">
 
 With username and password \(known to the identity provider\), the sender can call the integration flow endpoint.
-
-
 
 </td>
 </tr>
@@ -172,21 +144,15 @@ Note that the following description doesn’t contain aspects that are common in
 
 Authentication Option
 
-
-
 </th>
 <th valign="top">
 
 Configuration \(Summary\)
 
-
-
 </th>
 <th valign="top">
 
 How it Works
-
-
 
 </th>
 </tr>
@@ -194,8 +160,6 @@ How it Works
 <td valign="top">
 
 Client certificate authentication with certificate-to-user mapping
-
-
 
 </td>
 <td valign="top">
@@ -218,8 +182,6 @@ See:
 
 System checks if a *Certificate-to-User Mapping* artifact exists that fits to the client certificate provided by the sender. It checks if the associated user has the required permission to call the integration flow.
 
-
-
 </td>
 </tr>
 <tr>
@@ -228,8 +190,6 @@ System checks if a *Certificate-to-User Mapping* artifact exists that fits to th
 Client certificate authentication \(no certificate-to-user mapping\)
 
 This option is secure but, compared to the usage of certificate-to-user mapping, not recommended. The reason: As the certificate is specified as part of the integration flow, each certificate change requires a redeployment of the integration flow. A downtime of the integration flow is the consequence.
-
-
 
 </td>
 <td valign="top">
@@ -252,16 +212,12 @@ System checks if client certificate provided by the sender is associated with in
 
 Furthermore, system checks the permissions of the sender by evaluating the certificate's subject/issuer distinguished name.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OAuth
-
-
 
 </td>
 <td valign="top">
@@ -291,16 +247,12 @@ For the client credentials grant variant of OAuth, authentication at runtime com
 
 Other grant types can be configured as well.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Basic authentication of a user registered at an identity provider \(IdP\) \(this option isn't considered to be secure enough for productive scenarios\)
-
-
 
 </td>
 <td valign="top">
@@ -309,14 +261,10 @@ Register a user at an identity provider \(for example, SAP's default identity pr
 
 See: [Setting Up Inbound HTTP Connections \(with Basic Authentication\), Neo Environment](../ConnectionSetup/setting-up-inbound-http-connections-with-basic-authentication-neo-environment-391c45c.md)
 
-
-
 </td>
 <td valign="top">
 
 With username and password \(known to the identity provider\), the sender can call the integration flow endpoint.
-
-
 
 </td>
 </tr>

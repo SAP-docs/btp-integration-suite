@@ -38,14 +38,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -53,8 +49,6 @@ Description
 <td valign="top">
 
 *Address* 
-
-
 
 </td>
 <td valign="top">
@@ -75,8 +69,6 @@ Relative endpoint address at which the ESB listens to the incoming requests, for
 
 *URL to WSDL*
 
-
-
 </td>
 <td valign="top">
 
@@ -94,16 +86,12 @@ When configuring a SOAP SAP RM sender adapter, there’s no option to specify an
 
 For more information, check out the following SAP Community blog: [Cloud Integration – Usage of WSDLs in the SOAP Adapter](https://blogs.sap.com/2018/06/28/cloud-integration-usage-of-wsdls-in-the-soap-adapter/).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Processing Settings* 
-
-
 
 </td>
 <td valign="top">
@@ -114,8 +102,6 @@ This feature corresponds to an older version of this adapter. The reason why it 
 -   Robust: WSDL provider invokes service synchronously and the processing errors are returned to the consumer.
 
 When you use the up-to-date adapter version, the processing setting Robust is implicit activated.
-
-
 
 </td>
 </tr>
@@ -137,14 +123,10 @@ Select the *Conditions* tab and provide values in the fields as follows.
 > 
 > SOAP \(SAP RM\) Header
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Camel Header
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -153,14 +135,10 @@ Select the *Conditions* tab and provide values in the fields as follows.
 > 
 > MessageId
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > SapMessageIdEx and SapMessageId
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -169,15 +147,11 @@ Select the *Conditions* tab and provide values in the fields as follows.
 > 
 > QualityOfService
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > SapPlainSoapQoS
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
@@ -185,14 +159,10 @@ Select the *Conditions* tab and provide values in the fields as follows.
 > 
 > ExactlyOnce
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > ExactlyOnce
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -201,14 +171,10 @@ Select the *Conditions* tab and provide values in the fields as follows.
 > 
 > ExactlyOnceInOrder
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > ExactlyOnceInOrder
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -217,14 +183,10 @@ Select the *Conditions* tab and provide values in the fields as follows.
 > 
 > QueueId
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > SapPlainSoapQueueId
-> 
-> 
 > 
 > </td>
 > </tr>

@@ -39,12 +39,15 @@ If you're unable to achieve the desired transformation using standard functions,
 
 ## Testing Message Mapping
 
-The mapping editor provides 2 ways of testing message mapping:
+The mapping editor provides two ways of testing message mapping:
 
 1.  Simulate – for testing the entire mapping XML.
 2.  Display Queue – for testing a specific node of the XML.
 
 **1. Simulate:** The mapping simulates option enables you to test the entire mapping structure. The system shows if the mapping contains any errors, giving you a chance to fix these errors before deploying the integration flow. Once you complete the mapping, you can choose *Simulate* to run a simulation of the mapping.
+
+> ### Restriction:  
+> Simulation for message mappings doesn't work if you've activated Edge Integration Cell in your tenants.
 
 **2. Display Queue:** The display queue option enables you to test the mapping of a specific node. In the *Mapping expression* area, provide a *Test Input File* and choose <span class="SAP-icons"></span> \(Display Queue\) to display the simulated output for the provided test input file.
 

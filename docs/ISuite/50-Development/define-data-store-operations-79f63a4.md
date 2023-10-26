@@ -30,14 +30,10 @@ The data store supports four types of operations:
 
 Operation
 
-
-
 </th>
 <th valign="top">
 
 Used to ...
-
-
 
 </th>
 </tr>
@@ -45,8 +41,6 @@ Used to ...
 <td valign="top">
 
 *Write* 
-
-
 
 </td>
 <td valign="top">
@@ -57,16 +51,12 @@ If you use a *Write* operation, you can store the messages in the data store by 
 
 More information: [Define Data Store Write Operations](define-data-store-write-operations-46260ee.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Delete* 
-
-
 
 </td>
 <td valign="top">
@@ -75,16 +65,12 @@ Trigger the deletion of messages in the data store.
 
 More information: [Define Data Store Delete Operations](define-data-store-delete-operations-5efa3ac.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Select* 
-
-
 
 </td>
 <td valign="top">
@@ -95,16 +81,12 @@ You can also specify the maximum number of messages you fetch in each poll.
 
 More information: [Define Data Store Select Operations](define-data-store-select-operations-8cfe004.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Get* 
-
-
 
 </td>
 <td valign="top">
@@ -114,8 +96,6 @@ Fetch a specific message from the data store.
 From component version 1.5 onwards, the *Created At* \(header: `SAP_DataStoreCreatedAt`\) and *Retain Until* \(header: `SAP_DataStoreExpiresAt`\) timestamps of the data store entry are included in the message.
 
 More information: [Define Data Store Get Operations](define-data-store-get-operations-232ac46.md)
-
-
 
 </td>
 </tr>

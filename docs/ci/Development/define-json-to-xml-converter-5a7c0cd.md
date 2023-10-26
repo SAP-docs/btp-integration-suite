@@ -43,22 +43,16 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     <th valign="top">
 
     Tab
-
-
     
     </th>
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -66,22 +60,16 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     <td valign="top">
     
     General
-
-
     
     </td>
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Enter the name of the converter.
-
-
     
     </td>
     </tr>
@@ -89,22 +77,16 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     <td valign="top" rowspan="5">
     
     Processing
-
-
     
     </td>
     <td valign="top">
     
     JSON Prefix \(only if the option *Use Namespace Mapping* is selected\)
-
-
     
     </td>
     <td valign="top">
     
     Enter the mapping of the JSON prefix to the XML namespace. The JSON namespace/prefix must begin with a letter and can contain aA-zZ and 0-9.
-
-
     
     </td>
     </tr>
@@ -112,8 +94,6 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     <td valign="top">
     
     JSON Prefix Separator
-
-
     
     </td>
     <td valign="top">
@@ -121,8 +101,6 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     Enter the JSON prefix separator to be used to separate the JSON prefix from the local part. The value used must not be used in the JSON prefix or local name.
 
     The following characters are allowed: colon\(:\), comma\(,\), dot\(.\), pipe\(|\), semicolon\(;\), and space.
-
-
     
     </td>
     </tr>
@@ -130,15 +108,11 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     <td valign="top">
     
     Add XML Root Element
-
-
     
     </td>
     <td valign="top">
     
     Select this option to convert JSON documents with an XML root element
-
-
     
     </td>
     </tr>
@@ -146,8 +120,6 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     <td valign="top">
     
     Name \(only if the option *Add XML Root Element* is selected\)
-
-
     
     </td>
     <td valign="top">
@@ -171,15 +143,11 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
     <td valign="top">
     
     Namespace Mapping \(only if the option *Add XML Root Element* is selected\)
-
-
     
     </td>
     <td valign="top">
     
     Enter the namespace of the XML root element that you have configured in the integration flow.
-
-
     
     </td>
     </tr>

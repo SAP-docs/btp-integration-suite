@@ -43,15 +43,11 @@ You can then import these runtime artifacts in either of these integration solut
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -59,15 +55,11 @@ You can then import these runtime artifacts in either of these integration solut
     <td valign="top">
     
     *SAP Cloud Integration Runtime Artifacts*
-
-
     
     </td>
     <td valign="top">
     
     The MIG/MAG will be exported in a format where you can directly import them in SAP Cloud Integration.
-
-
     
     </td>
     </tr>
@@ -75,15 +67,11 @@ You can then import these runtime artifacts in either of these integration solut
     <td valign="top">
     
     *SAP Process Integration Runtime Artifacts*
-
-
     
     </td>
     <td valign="top">
     
     The MIG/MAG will be exported in a format where you can directly import them in SAP Process Integration.
-
-
     
     </td>
     </tr>
@@ -119,14 +107,10 @@ There is now an unified naming convention for these Message XSDs for all message
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -134,8 +118,6 @@ Value
 <td valign="top">
 
 New Naming Convention
-
-
 
 </td>
 <td valign="top">
@@ -156,14 +138,10 @@ UN-EDIFACT\_<MessageType\>\_<Version\>\_<AssociationCode\>.xsd
 
 MessageType
 
-
-
 </td>
 <td valign="top">
 
 Type of message on which the MIG is based on. \(Corresponding to UNH \> S009 \> 0065.\)
-
-
 
 </td>
 </tr>
@@ -172,14 +150,10 @@ Type of message on which the MIG is based on. \(Corresponding to UNH \> S009 \> 
 
 Version
 
-
-
 </td>
 <td valign="top">
 
 EDIFACT version. In case of subsets, the version of the parent EDIFACT will be considered. \(Corresponding to UNH \> S009 \> 0052 and 0054.\)
-
-
 
 </td>
 </tr>
@@ -187,8 +161,6 @@ EDIFACT version. In case of subsets, the version of the parent EDIFACT will be c
 <td valign="top">
 
 AssociationCode
-
-
 
 </td>
 <td valign="top">

@@ -35,15 +35,11 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
     <th valign="top">
 
     Header
-
-
     
     </th>
     <th valign="top">
 
     Usage
-
-
     
     </th>
     </tr>
@@ -51,8 +47,6 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
     <td valign="top">
     
     productIdentifier
-
-
     
     </td>
     <td valign="top">
@@ -74,15 +68,11 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
     <td valign="top">
     
     throwExceptionOnFailure
-
-
     
     </td>
     <td valign="top">
     
     Defines how the *Throw Exception on Failure* parameter is set in the HTTP receiver adapter.
-
-
     
     </td>
     </tr>
@@ -115,22 +105,16 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
         <th valign="top">
 
         Route Name
-
-
         
         </th>
         <th valign="top">
 
         Routing Condition
-
-
         
         </th>
         <th valign="top">
 
         Message Processing
-
-
         
         </th>
         </tr>
@@ -138,22 +122,16 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
         <td valign="top">
         
         200 OK
-
-
         
         </td>
         <td valign="top">
         
         $\{header.CamelHttpResponseCode\} = '200'
-
-
         
         </td>
         <td valign="top">
         
         Message processing ends. The integration flow sends back the product details to the HTTP client.
-
-
         
         </td>
         </tr>
@@ -161,15 +139,11 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
         <td valign="top">
         
         400 Bad Request
-
-
         
         </td>
         <td valign="top">
         
         $\{header.CamelHttpResponseCode\} = '400'
-
-
         
         </td>
         <td valign="top">
@@ -177,8 +151,6 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
         The integration flow sends back the following message to the HTTP client:
 
         `Your request was invalid. Have you missed to specify the header productIdentifier with a product code?`
-
-
         
         </td>
         </tr>
@@ -186,15 +158,11 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
         <td valign="top">
         
         404 not found
-
-
         
         </td>
         <td valign="top">
         
         $\{header.CamelHttpResponseCode\} = '404'
-
-
         
         </td>
         <td valign="top">
@@ -202,8 +170,6 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
         The integration flow sends back the following message to the HTTP client:
 
         `The item you were looking for does not exist in the web shop`
-
-
         
         </td>
         </tr>
@@ -211,22 +177,16 @@ Integration flow *Handle Errors - Do Not Throw Error on Failure* performs the fo
         <td valign="top">
         
         other
-
-
         
         </td>
         <td valign="top">
         
         \(default route\)
-
-
         
         </td>
         <td valign="top">
         
         The integration flow finishes message processing with an error end event.
-
-
         
         </td>
         </tr>
@@ -262,15 +222,11 @@ To test the integration scenario, perform the following steps:
     <th valign="top">
 
     Request
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -278,8 +234,6 @@ To test the integration scenario, perform the following steps:
     <td valign="top">
     
     no error, correct identifier
-
-
     
     </td>
     <td valign="top">
@@ -289,8 +243,6 @@ To test the integration scenario, perform the following steps:
     As response you can expect a message with product details for the given product identifier.
 
     The integration flow is ended with status *Completed*:
-
-
     
     </td>
     </tr>
@@ -298,8 +250,6 @@ To test the integration scenario, perform the following steps:
     <td valign="top">
     
     no error, wrong identifier
-
-
     
     </td>
     <td valign="top">
@@ -311,8 +261,6 @@ To test the integration scenario, perform the following steps:
     `The item you were looking for does not exist in the web shop`
 
     The integration flow is ended with status *Completed*:
-
-
     
     </td>
     </tr>
@@ -320,8 +268,6 @@ To test the integration scenario, perform the following steps:
     <td valign="top">
     
     no error, missing identifier
-
-
     
     </td>
     <td valign="top">
@@ -333,8 +279,6 @@ To test the integration scenario, perform the following steps:
     `Your request was invalid. Have you missed to specify the header productIdentifier with a product code?`
 
     The integration flow is ended with status *Completed*:
-
-
     
     </td>
     </tr>
@@ -342,8 +286,6 @@ To test the integration scenario, perform the following steps:
     <td valign="top">
     
     error on Failure, wrong identifier
-
-
     
     </td>
     <td valign="top">
@@ -351,8 +293,6 @@ To test the integration scenario, perform the following steps:
     Request contains a nonvalid product identifier \(`HT-10001`\). Furthermore, header `throwExceptionOnFailure` is set to `true`. This means that the HTTP receiver adapter with parameter *Throw Exception on Failure* enabled is used.
 
     You can expect that the integration flow is ended with status *Failed*:
-
-
     
     </td>
     </tr>
@@ -360,8 +300,6 @@ To test the integration scenario, perform the following steps:
     <td valign="top">
     
     error on Failure, missing identifier
-
-
     
     </td>
     <td valign="top">
@@ -369,8 +307,6 @@ To test the integration scenario, perform the following steps:
     Request doesn't contain any product identifier header. Header `throwExceptionOnFailure` is set to `true`. This means that the HTTP receiver adapter with parameter *Throw Exception on Failure* enabled is used.
 
     You can expect that the integration flow is ended with status *Failed*:
-
-
     
     </td>
     </tr>

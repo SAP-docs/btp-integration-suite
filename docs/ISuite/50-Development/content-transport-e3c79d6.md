@@ -18,14 +18,10 @@ There are 4 content transport options:
 
 Transport Option
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -34,16 +30,12 @@ Description
 
 CTS+
 
-
-
 </td>
 <td valign="top">
 
 With a single click, transport integration content from one tenant to another through the CTS+ system.
 
 For more information, see [Content Transport Using CTS+](content-transport-using-cts-3cdfb51.md).
-
-
 
 </td>
 </tr>
@@ -52,8 +44,6 @@ For more information, see [Content Transport Using CTS+](content-transport-using
 
 Transport Management Service
 
-
-
 </td>
 <td valign="top">
 
@@ -61,16 +51,12 @@ With a single click, transport integration content from one tenant to another th
 
 For more information, see [Content Transport Using Cloud Transport Management](content-transport-using-cloud-transport-management-d458b17.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 MTAR Download
-
-
 
 </td>
 <td valign="top">
@@ -81,8 +67,6 @@ In the Neo environment, you can deploy an MTAR file to a target Cloud Integratio
 
 For more information, see [Content Transport using MTAR Download](content-transport-using-mtar-download-c111710.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -90,16 +74,12 @@ For more information, see [Content Transport using MTAR Download](content-transp
 
 Manual export and import
 
-
-
 </td>
 <td valign="top">
 
 Manually export integration content from the source tenant and manually import this content to the target tenant.
 
 For more information, see [Content Transport using Manual Export and Import](content-transport-using-manual-export-and-import-fd23e14.md).
-
-
 
 </td>
 </tr>

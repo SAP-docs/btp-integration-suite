@@ -13,21 +13,15 @@ To download a single variable, perform the following call:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Purpose
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `​/Variables(VariableName='{VariableName}',IntegrationFlow='{IntegrationFlowName}')/$value` 
 
-
-
 </td>
 <td valign="top">
 
 Downloads a single variable.
-
-
 
 </td>
 </tr>

@@ -17,21 +17,15 @@ You can visualize the endpoint URL and the definition as specified in the follow
 
 Adapter
 
-
-
 </th>
 <th valign="top">
 
 Show Endpoint \(access\) URL
 
-
-
 </th>
 <th valign="top">
 
 Show Definition
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Show Definition
 
 SOAP
 
-
-
 </td>
 <td valign="top">
 
 **X** 
 
-
-
 </td>
 <td valign="top">
 
 **X** 
-
-
 
 </td>
 </tr>
@@ -63,14 +51,10 @@ SOAP
 
 IDOC
 
-
-
 </td>
 <td valign="top">
 
 **X** 
-
-
 
 </td>
 <td valign="top">
@@ -84,14 +68,10 @@ IDOC
 
 HTTP
 
-
-
 </td>
 <td valign="top">
 
 **X** 
-
-
 
 </td>
 <td valign="top">
@@ -105,14 +85,10 @@ HTTP
 
 AS2
 
-
-
 </td>
 <td valign="top">
 
 **X** 
-
-
 
 </td>
 <td valign="top">
@@ -126,21 +102,15 @@ AS2
 
 XI Adapter
 
-
-
 </td>
 <td valign="top">
 
 **X**
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -161,14 +131,10 @@ Depending on the sender adapter type contained in the integration flow, you have
 
 Adapter
 
-
-
 </th>
 <th valign="top">
 
 Download Options
-
-
 
 </th>
 </tr>
@@ -176,8 +142,6 @@ Download Options
 <td valign="top">
 
 SOAP sender adapter
-
-
 
 </td>
 <td valign="top">
@@ -202,8 +166,6 @@ SOAP sender adapter
 <td valign="top">
 
 OData sender adapter
-
-
 
 </td>
 <td valign="top">

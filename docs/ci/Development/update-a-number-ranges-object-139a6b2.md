@@ -13,14 +13,10 @@ Perform the following call:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Resource Path
 
 PUT
 
-
-
 </td>
 <td valign="top">
 
 `/NumberRanges('{objectName}')` 
-
-
 
 </td>
 </tr>

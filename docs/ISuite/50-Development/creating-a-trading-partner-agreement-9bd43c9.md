@@ -28,15 +28,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -44,15 +40,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the agreement
-
-
     
     </td>
     </tr>
@@ -60,15 +52,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     Provide a description of your agreement
-
-
     
     </td>
     </tr>
@@ -76,15 +64,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     Version
-
-
     
     </td>
     <td valign="top">
     
     Enter a version of your agreement
-
-
     
     </td>
     </tr>
@@ -100,15 +84,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -116,15 +96,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     System
-
-
     
     </td>
     <td valign="top">
     
     Select a system from the drop-down list
-
-
     
     </td>
     </tr>
@@ -132,15 +108,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     Type System
-
-
     
     </td>
     <td valign="top">
     
     Select a type system from the drop-down list
-
-
     
     </td>
     </tr>
@@ -150,8 +122,6 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     Contact Person
 
     This field appears only when you choose *GS1 XML* as the type system.
-
-
     
     </td>
     <td valign="top">
@@ -169,15 +139,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     Type System Version
-
-
     
     </td>
     <td valign="top">
     
     Select a type system version from the drop-down list
-
-
     
     </td>
     </tr>
@@ -185,15 +151,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     Identifier
-
-
     
     </td>
     <td valign="top">
     
     Select an identifier using the value help provided. You can also create an identifier using the :heavy_plus_sign: button.
-
-
     
     </td>
     </tr>
@@ -201,15 +163,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     Identifier as Trading Partner
-
-
     
     </td>
     <td valign="top">
     
     Select an identifier from your company that will be the trading partner. You can also create an identifier using the :heavy_plus_sign: button.
-
-
     
     </td>
     </tr>
@@ -225,15 +183,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -241,15 +195,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the trading partner
-
-
     
     </td>
     </tr>
@@ -257,15 +207,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     System
-
-
     
     </td>
     <td valign="top">
     
     Select a system from the drop-down list
-
-
     
     </td>
     </tr>
@@ -273,15 +219,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     Type System
-
-
     
     </td>
     <td valign="top">
     
     Select a type system from the drop-down list
-
-
     
     </td>
     </tr>
@@ -291,8 +233,6 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     Contact Person
 
     This field appears only when you choose *GS1 XML* as the type system.
-
-
     
     </td>
     <td valign="top">
@@ -310,15 +250,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     Type System Version
-
-
     
     </td>
     <td valign="top">
     
     Select a type system version from the drop-down list
-
-
     
     </td>
     </tr>
@@ -326,15 +262,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     Identifier
-
-
     
     </td>
     <td valign="top">
     
     Select an identifier using the value help provided. You can also create an identifier using the :heavy_plus_sign: button.
-
-
     
     </td>
     </tr>
@@ -342,15 +274,11 @@ Creating an agreement is the last step in the design of a B2B transaction and co
     <td valign="top">
     
     Identifier as Company
-
-
     
     </td>
     <td valign="top">
     
     Select an identifier from the trading partner for the company. You can also create an identifier using the :heavy_plus_sign: button.
-
-
     
     </td>
     </tr>
@@ -463,19 +391,7 @@ Creating an agreement is the last step in the design of a B2B transaction and co
 
     -   *Receiver Functional Acknowledgement Channel*: Select a value from the drop-down list
 
-34. Choose *Parameters* if you want to add any paramaters to the template.
-35. In the *Parameters* tab displayed, choose *Add Parameters*. This will display the following options:
-    -   *Extend from Company*: This option allows you to use the dynamic parameters from the company profile used in the agreement template. You can choose either *Request* or *Response* and this will display the list of parameters respectively. Select a parameter from the list and choose *Save*.
-
-        If you want to know how to add dynamic parameters to a company profile, see [Creating a Company Profile](creating-a-company-profile-909d928.md)
-
-    -   *Extend from TP*: This option allows you to use the dynamic parameters from the trading partner profile used in the agreement template. You can choose either *Request* or *Response* and this will display the list of parameters respectively. Select a parameter from the list and choose *Save*.
-
-        If you want to know how to add dynamic parameters to a trading partner profile, see [Creating a Trading Partner Profile](creating-a-trading-partner-profile-542fb11.md) 
-
-    -   *Create Activity Parameters*: You can also create your own activity paramaters using this option. Select this option and choose *Request* or *Response*. Maintain the values of the fields *Parameter Key* and *Value* and choose *Create*.
-
-36. Choose *Save*.
+34. Choose *Save*.
 
 You have now successfully created a trading partner agreement and you can view the agreement details under the *Agreements* tab. You can also view the administrative information under the tab. To enable those fields, choose *Settings* :gear: icon and select the following fields and choose *OK*:
 
@@ -484,6 +400,125 @@ You have now successfully created a trading partner agreement and you can view t
 -   Created Date
 -   Last Modified By
 -   Modified Date
+
+
+
+<a name="loio9bd43c9ae064493286f321551bd0557c__section_dbw_ntb_bzb"/>
+
+## Activity Parameters
+
+If you want to add any activity parameters to your transaction, click anywhere outside the transaction flow to view the generic tabs and select the *Activity Parameters* tab
+
+1.  Choose *Add Parameters*. This will display the following options:
+    -   *Extend from Company*: This option allows you to use the dynamic parameters from the company profile used in the agreement template. You can choose either *Inbound* or *Outbound* and this will display the list of parameters respectively. Select a parameter from the list and choose *Save*.
+
+        If you want to know how to add dynamic parameters to a company profile, see [Creating a Company Profile](creating-a-company-profile-909d928.md)
+
+    -   *Extend from TP*: This option allows you to use the dynamic parameters from the trading partner profile used in the agreement template. You can choose either *Inbound* or *Outbound* and this will display the list of parameters respectively. Select a parameter from the list and choose *Save*.
+
+        If you want to know how to add dynamic parameters to a trading partner profile, see [Creating a Trading Partner Profile](creating-a-trading-partner-profile-542fb11.md) 
+
+    -   *Create Activity Parameters*: You can also create your own activity paramaters using this option. Select this option and choose *Inbound* or *Outbound*. Maintain the values of the fields *Parameter Key* and *Value* and choose *Save*.
+
+
+
+
+<a name="loio9bd43c9ae064493286f321551bd0557c__custom_search_attribute"/>
+
+## Custom Search Attributes
+
+If you want to add custom search attributes to the transaction,
+
+1.  Navigate to the *Custom Search Attributes* tab and choose *Add*.
+
+    > ### Note:  
+    > To know how to create a custom search attribute, see [Configuration Manager](configuration-manager-7daf06c.md).
+
+2.  In the resulting dialog, maintain the following fields:
+
+    **Custom Search Attribute**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Name
+    
+    </td>
+    <td valign="top">
+    
+    Select a value from the list of attributes that you have created.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Source Type
+    
+    </td>
+    <td valign="top">
+    
+    Select whether your source is of type *Parameter* or *XPath*.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Source Value
+    
+    </td>
+    <td valign="top">
+    
+    Enter the source value for the name. If you chose *Source Type* as *Parameter*, you need to enter the parameter here. If you chose *XPath*, then you need to enter the xpath of the source value.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Data Source
+    
+    </td>
+    <td valign="top">
+    
+    Select whether you want the data source in *Sender Interchange* or *Receiver Interchange*.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Business Transaction Activity
+    
+    </td>
+    <td valign="top">
+    
+    Select the direction of the business transaction activity from the drop-down list.
+    
+    </td>
+    </tr>
+    </table>
+    
+3.  Choose *Save*.
+
+    > ### Note:  
+    > You can view these custom search attributes in B2B Monitor tab once the agreement is activated. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+
 
 **Related Information**  
 

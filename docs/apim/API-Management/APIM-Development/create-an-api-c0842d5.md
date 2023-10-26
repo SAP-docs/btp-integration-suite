@@ -58,15 +58,11 @@ Instead of consuming services directly, application developers can access APIs e
     <th valign="top">
 
     Select...
-
-
     
     </th>
     <th valign="top">
 
     To...
-
-
     
     </th>
     </tr>
@@ -74,15 +70,11 @@ Instead of consuming services directly, application developers can access APIs e
     <td valign="top">
     
     *API Provider*
-
-
     
     </td>
     <td valign="top">
     
     [Create an API Proxy by Referring to an API Provider System](create-an-api-proxy-by-referring-to-an-api-provider-system-84628b9.md) 
-
-
     
     </td>
     </tr>
@@ -90,15 +82,11 @@ Instead of consuming services directly, application developers can access APIs e
     <td valign="top">
     
     *API Proxy*
-
-
     
     </td>
     <td valign="top">
     
     [Create an API Proxy Based on an Existing API Proxy](create-an-api-proxy-based-on-an-existing-api-proxy-54831ca.md) 
-
-
     
     </td>
     </tr>
@@ -106,15 +94,11 @@ Instead of consuming services directly, application developers can access APIs e
     <td valign="top">
     
     *URL*
-
-
     
     </td>
     <td valign="top">
     
     [Create an API Proxy by Providing a Direct Target Endpoint URL](create-an-api-proxy-by-providing-a-direct-target-endpoint-url-d0f5087.md) 
-
-
     
     </td>
     </tr>
@@ -128,15 +112,11 @@ Instead of consuming services directly, application developers can access APIs e
     <th valign="top">
 
     Tab
-
-
     
     </th>
     <th valign="top">
 
     Details
-
-
     
     </th>
     </tr>
@@ -144,8 +124,6 @@ Instead of consuming services directly, application developers can access APIs e
     <td valign="top">
     
     Overview
-
-
     
     </td>
     <td valign="top">
@@ -166,15 +144,11 @@ Instead of consuming services directly, application developers can access APIs e
     <td valign="top">
     
     Proxy Endpoint
-
-
     
     </td>
     <td valign="top">
     
     You can add the proxy endpoint and the route rules.
-
-
     
     </td>
     </tr>
@@ -182,15 +156,11 @@ Instead of consuming services directly, application developers can access APIs e
     <td valign="top">
     
     Target Endpoint
-
-
     
     </td>
     <td valign="top">
     
     You can choose URL, API Provider, or API proxy, as the target endpoint as well as enter target endpoint rules.
-
-
     
     </td>
     </tr>
@@ -198,8 +168,6 @@ Instead of consuming services directly, application developers can access APIs e
     <td valign="top">
     
     Resources
-
-
     
     </td>
     <td valign="top">
@@ -207,8 +175,6 @@ Instead of consuming services directly, application developers can access APIs e
     You can add resources.
 
     Resources refer to the individual endpoints or services that are exposed through APIs.
-
-
     
     </td>
     </tr>
@@ -216,15 +182,11 @@ Instead of consuming services directly, application developers can access APIs e
     <td valign="top">
     
     Revision
-
-
     
     </td>
     <td valign="top">
     
     Once an API is created, you can plan subsequent compatible changes to the API by creating a revision.
-
-
     
     </td>
     </tr>
@@ -320,22 +282,16 @@ Instead of consuming services directly, application developers can access APIs e
     <th valign="top">
 
     Action
-
-
     
     </th>
     <th valign="top">
 
     Resulting API State
-
-
     
     </th>
     <th valign="top">
 
     Future Action on API
-
-
     
     </th>
     </tr>
@@ -343,15 +299,11 @@ Instead of consuming services directly, application developers can access APIs e
     <td valign="top">
     
     *Save* 
-
-
     
     </td>
     <td valign="top">
     
     *Not Deployed:*API is available only in the API portal, and isn’t available for product assignments.
-
-
     
     </td>
     <td valign="top">
@@ -359,8 +311,6 @@ Instead of consuming services directly, application developers can access APIs e
     *Deploy*
 
     API is deployed and is ready for product assignments.
-
-
     
     </td>
     </tr>
@@ -368,15 +318,11 @@ Instead of consuming services directly, application developers can access APIs e
     <td valign="top">
     
     *Deploy* 
-
-
     
     </td>
     <td valign="top">
     
     *Deployed*: Only deployed APIs can be selected for product publishing.
-
-
     
     </td>
     <td valign="top">
@@ -384,8 +330,6 @@ Instead of consuming services directly, application developers can access APIs e
     *Undeploy*
 
     If any API is undeployed after being published, it’s removed from the developer portal. When the API is deployed again, the product is updated. You can bring down an API without having to delete it from the product assignment. You can’t undeploy an API if it’s the only one associated with the product.
-
-
     
     </td>
     </tr>

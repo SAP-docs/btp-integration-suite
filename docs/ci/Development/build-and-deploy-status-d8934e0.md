@@ -19,14 +19,10 @@ There are the following status values for the build and deploy status.
 
 Status
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -35,14 +31,10 @@ Description
 
 *Success* 
 
-
-
 </td>
 <td valign="top">
 
 The artifact is deployed on worker node\(s\).
-
-
 
 </td>
 </tr>
@@ -51,14 +43,10 @@ The artifact is deployed on worker node\(s\).
 
 *Fail* 
 
-
-
 </td>
 <td valign="top">
 
 The artifact isn't deployed on worker node\(s\), for example, because of a validation error/CMD checks error in the currently deployed integration flow.
-
-
 
 </td>
 </tr>
@@ -67,14 +55,10 @@ The artifact isn't deployed on worker node\(s\), for example, because of a valid
 
 *Deploying* 
 
-
-
 </td>
 <td valign="top">
 
 The artifact is in the process of being deployed.
-
-
 
 </td>
 </tr>
@@ -83,14 +67,10 @@ The artifact is in the process of being deployed.
 
 *Fail\_On\_License\_Error* 
 
-
-
 </td>
 <td valign="top">
 
 The artifact isn't deployed on worker node\(s\) because the integration flow contains components that require an upgrade to the user’s existing license.
-
-
 
 </td>
 </tr>

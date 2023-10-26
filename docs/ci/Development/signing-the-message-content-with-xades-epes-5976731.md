@@ -34,14 +34,10 @@ Specify the properties of the signature.
 
 Option
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -49,8 +45,6 @@ Description
 <td valign="top">
 
 *Signature Policy*
-
-
 
 </td>
 <td valign="top">
@@ -78,8 +72,6 @@ Specify whether a signature policy is to be added, and, if yes, in which form th
 
 *Identifier* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -105,8 +97,6 @@ You can specify the identifier by one of the following options:
 
 *Identifier Qualifier* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -127,14 +117,10 @@ You can select one of the following values:
 
 *Description* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
 
-
-
 </td>
 <td valign="top">
 
 Enter a description of the signature policy.
-
-
 
 </td>
 </tr>
@@ -143,14 +129,10 @@ Enter a description of the signature policy.
 
 *Documentation Reference* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
 
-
-
 </td>
 <td valign="top">
 
 Provide a reference to further documentation of the signature policy.
-
-
 
 </td>
 </tr>
@@ -159,8 +141,6 @@ Provide a reference to further documentation of the signature policy.
 
 *Digest Algorithm* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -168,16 +148,12 @@ Specify the digest algorithm used to calculate the digest value of the signature
 
 As default, SHA256 is used.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Digest Value* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
-
-
 
 </td>
 <td valign="top">
@@ -206,14 +182,10 @@ To calculate the digest value, you have the following options:
 
 *Policy Qualifier* \(only if the value `Explicit ID` has been selected for *Signature Policy*\)
 
-
-
 </td>
 <td valign="top">
 
 Enter additional information qualifying the signature policy. To do this, enter text or an XML fragment with the root element `SigPolicyQualifier`.
-
-
 
 </td>
 </tr>

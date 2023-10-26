@@ -23,15 +23,11 @@ The integration flow processes the message in the following way:
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -39,15 +35,11 @@ The integration flow processes the message in the following way:
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     XPath
-
-
     
     </td>
     </tr>
@@ -55,15 +47,11 @@ The integration flow processes the message in the following way:
     <td valign="top">
     
     Data Type
-
-
     
     </td>
     <td valign="top">
     
     java.lang.String
-
-
     
     </td>
     </tr>
@@ -71,15 +59,11 @@ The integration flow processes the message in the following way:
     <td valign="top">
     
     Value
-
-
     
     </td>
     <td valign="top">
     
     /ns0:PurchaseOrder/Address/Region\[../../Address\[@Type='Shipping'\]\]
-
-
     
     </td>
     </tr>

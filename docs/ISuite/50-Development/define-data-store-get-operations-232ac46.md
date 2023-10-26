@@ -57,15 +57,11 @@ A data store operations step has to be triggered explicitly, for example, by a T
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -73,8 +69,6 @@ A data store operations step has to be triggered explicitly, for example, by a T
     <td valign="top">
     
     *Data Store Name* 
-
-
     
     </td>
     <td valign="top">
@@ -82,8 +76,6 @@ A data store operations step has to be triggered explicitly, for example, by a T
     Specifies the name of the data store \(no white spaces\).
 
     The maximum length allowed for the data store name is 40 characters. If you enter a longer string, a validation error is raised. Note that this length restriction applies to the value that is used for this parameter at runtime. Therefore, if you configure this parameter dynamically, make sure that the expected header or property value does not exceed this length restriction. Otherwise, a runtime error will be raised.
-
-
     
     </td>
     </tr>
@@ -91,8 +83,6 @@ A data store operations step has to be triggered explicitly, for example, by a T
     <td valign="top">
     
     *Visibility* 
-
-
     
     </td>
     <td valign="top">
@@ -105,8 +95,6 @@ A data store operations step has to be triggered explicitly, for example, by a T
 
 
     For more information and guidelines how to use this parameter, see [Anticipate Message Throughput When Choosing a Storage Option](anticipate-message-throughput-when-choosing-a-storage-option-5b38765.md).
-
-
     
     </td>
     </tr>
@@ -114,8 +102,6 @@ A data store operations step has to be triggered explicitly, for example, by a T
     <td valign="top">
     
     *Entry ID* 
-
-
     
     </td>
     <td valign="top">
@@ -134,8 +120,6 @@ A data store operations step has to be triggered explicitly, for example, by a T
 
 
     You can also set the header `SapDataStoreId` to specify the *Entry ID*, and the corresponding entry is read at runtime.
-
-
     
     </td>
     </tr>
@@ -143,15 +127,11 @@ A data store operations step has to be triggered explicitly, for example, by a T
     <td valign="top">
     
     *Delete on Completion* 
-
-
     
     </td>
     <td valign="top">
     
     Select this option to delete a message from the data store after having successfully processed the message.
-
-
     
     </td>
     </tr>
@@ -159,8 +139,6 @@ A data store operations step has to be triggered explicitly, for example, by a T
     <td valign="top">
     
     *Throw Exception on Missing Entry*
-
-
     
     </td>
     <td valign="top">

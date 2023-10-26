@@ -11,14 +11,10 @@
 
 **Entity** 
 
-
-
 </th>
 <th valign="top">
 
 **Description** 
-
-
 
 </th>
 </tr>
@@ -26,8 +22,6 @@
 <td valign="top">
 
 API Management
-
-
 
 </td>
 <td valign="top">
@@ -53,14 +47,10 @@ API Management
 
 SAP API Management 
 
-
-
 </td>
 <td valign="top">
 
 It lets you publish, promote, and oversee APIs in a secure and scalable environment
-
-
 
 </td>
 </tr>
@@ -69,8 +59,6 @@ It lets you publish, promote, and oversee APIs in a secure and scalable environm
 
 Neo environment
 
-
-
 </td>
 <td valign="top">
 
@@ -78,16 +66,12 @@ SAP BTP, Neo environment contains SAP propriety runtime. Neo is a feature-rich a
 
 The Neo environment uses virtual machines, allowing you to install and maintain your own applications in scenarios that aren’t covered by the platform.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Cloud Foundry environment
-
-
 
 </td>
 <td valign="top">
@@ -98,8 +82,6 @@ Application developers can use the Cloud Foundry environment to enhance SAP prod
 
 The Cloud Foundry environment allows you to use multiple programming languages such as Java, Node.js, and community/bring-your-own language options.
 
-
-
 </td>
 </tr>
 <tr>
@@ -107,14 +89,10 @@ The Cloud Foundry environment allows you to use multiple programming languages s
 
 **API Platform**
 
-
-
 </td>
 <td valign="top">
 
 Provides tools to manage APIs and it facilitates the inclusion of new APIs, configuration of existing APIs, and helps you manage developers and apps. It also helps you create and consume APIs, whether you want to build API proxies as a service provider or use APIs, SDKs, and other convenient services as an app developer.
-
-
 
 </td>
 </tr>
@@ -123,14 +101,10 @@ Provides tools to manage APIs and it facilitates the inclusion of new APIs, conf
 
 API Analytics
 
-
-
 </td>
 <td valign="top">
 
 Provides powerful analytical tools to track your API usage. Use the API analytics to collect information on the IP, URL, user ID for API call information, latency data, and so on.
-
-
 
 </td>
 </tr>
@@ -139,14 +113,10 @@ Provides powerful analytical tools to track your API usage. Use the API analytic
 
 **Developer Services** 
 
-
-
 </td>
 <td valign="top">
 
 Provides tools to manage app developers. Provides the ability to onboard developers and creates a developer portal for publicly available products.
-
-
 
 </td>
 </tr>
@@ -155,14 +125,10 @@ Provides tools to manage app developers. Provides the ability to onboard develop
 
 **API Management Account** 
 
-
-
 </td>
 <td valign="top">
 
 An API Management account is the highest level of data hierarchy. An account is a representation of all components including APIs, products, applications, systems, users, and developers.
-
-
 
 </td>
 </tr>
@@ -171,14 +137,10 @@ An API Management account is the highest level of data hierarchy. An account is 
 
 **System** 
 
-
-
 </td>
 <td valign="top">
 
 In API Management System refers to the API provider systems where the actual backend services reside. The system could either be an ABAP system, SAP Gateway system, Enterprise Services Repository, or systems that host generic REST services or third-party provider systems. API Management allows you to add and manage an API provider system. After you have added a system, you can browse for the APIs in that system.
-
-
 
 </td>
 </tr>
@@ -187,14 +149,10 @@ In API Management System refers to the API provider systems where the actual bac
 
 **User** 
 
-
-
 </td>
 <td valign="top">
 
 API Management can have multiple users. Different users have different roles and privileges assigned. For example, people who create APIs and products or analyze the metrics or the application consumer who can access the APIs provisioned by API Management.
-
-
 
 </td>
 </tr>
@@ -202,8 +160,6 @@ API Management can have multiple users. Different users have different roles and
 <td valign="top">
 
 **API** 
-
-
 
 </td>
 <td valign="top">
@@ -222,14 +178,10 @@ APIs are Application Programming Interfaces. They comprise a set of routines, pr
 
 **Product** 
 
-
-
 </td>
 <td valign="top">
 
 A product is a bundle of APIs. It contains metadata specific to your business for monitoring or analytics. For example, all APIs related to CRM can be bundled as one CRM product. API Management collects data for analyzing the products.
-
-
 
 </td>
 </tr>
@@ -238,16 +190,12 @@ A product is a bundle of APIs. It contains metadata specific to your business fo
 
 **Developer** 
 
-
-
 </td>
 <td valign="top">
 
 One or more developers can create applications in the API Management account. A developer can consume APIs but cannot create APIs.
 
 To create an application, the developer must have registered the account. After having created an application, the developer uses the app \(application\) key to consuming the APIs.
-
-
 
 </td>
 </tr>
@@ -256,14 +204,10 @@ To create an application, the developer must have registered the account. After 
 
 **Application** 
 
-
-
 </td>
 <td valign="top">
 
 Applications include the Web or mobile applications that consume the exposed APIs. When you create an application, you select the product to include in this application. For each application that you create, API Management generates an app key and secret. Use this key to gain access to multiple products. Developers create one or more applications using the APIs you expose.
-
-
 
 </td>
 </tr>
@@ -272,14 +216,10 @@ Applications include the Web or mobile applications that consume the exposed API
 
 **App Key** 
 
-
-
 </td>
 <td valign="top">
 
 Based on the authorization mechanism you define for your APIs; the application passes an app \(application\) key together with every request to your APIs. If that key is valid, the request is permitted. API Management supports different types of authentication, such as a simple API key, OAuth, and so on.
-
-
 
 </td>
 </tr>
@@ -288,14 +228,10 @@ Based on the authorization mechanism you define for your APIs; the application p
 
 **API Portal**
 
-
-
 </td>
 <td valign="top">
 
 You can browse through this API package for API Admin services with the required resources.
-
-
 
 </td>
 </tr>
@@ -304,14 +240,10 @@ You can browse through this API package for API Admin services with the required
 
 **Developer Portal** 
 
-
-
 </td>
 <td valign="top">
 
 You can browse through this API package for application development services that are offered.
-
-
 
 </td>
 </tr>
@@ -320,14 +252,10 @@ You can browse through this API package for application development services tha
 
 **Metering** 
 
-
-
 </td>
 <td valign="top">
 
 You can now browse through this API package to view metering data for APIs, API Products, and applications in API Portal.
-
-
 
 </td>
 </tr>
@@ -336,14 +264,10 @@ You can now browse through this API package to view metering data for APIs, API 
 
 **API Analytics** 
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -352,16 +276,12 @@ You can now browse through this API package to view metering data for APIs, API 
 
 **Client SDK** 
 
-
-
 </td>
 <td valign="top">
 
 A client software development kit \(SDK\) is available for developers through a non-commercial license on open source sites.
 
 On the API Portal home page, choose the Client SDK. On selecting the client SDK, you are navigated to the maven repository, where you can download this package.
-
-
 
 </td>
 </tr>

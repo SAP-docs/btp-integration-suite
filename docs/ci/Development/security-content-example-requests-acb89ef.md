@@ -15,16 +15,12 @@ For more example requests, see:
 
 Certificate
 
-
-
 </td>
 <td valign="top">
 
 [Export Certificate](export-certificate-1133cca.md)
 
 [Import and Update Certificate](import-and-update-certificate-be3a0b9.md)
-
-
 
 </td>
 </tr>
@@ -33,14 +29,10 @@ Certificate
 
 Key Pair
 
-
-
 </td>
 <td valign="top">
 
 [Generate a Key Pair](generate-a-key-pair-4d3dd24.md) 
-
-
 
 </td>
 </tr>
@@ -48,8 +40,6 @@ Key Pair
 <td valign="top">
 
 Keystore Entry
-
-
 
 </td>
 <td valign="top">
@@ -62,16 +52,12 @@ Keystore Entry
 
 [Export Public Key in OpenSSH Format](export-public-key-in-openssh-format-dbf276e.md)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Keystore
-
-
 
 </td>
 <td valign="top">
@@ -82,8 +68,6 @@ Keystore
 
 [Trigger Mass Deletion of Keystore Entries](trigger-mass-deletion-of-keystore-entries-bee2744.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -91,14 +75,10 @@ Keystore
 
 Keystore History
 
-
-
 </td>
 <td valign="top">
 
 [Restore an Entry from the SAP Key History Keystore to the New SAP Keys Keystore](restore-an-entry-from-the-sap-key-history-keystore-to-the-new-sap-keys-keystore-a0bd675.md) 
-
-
 
 </td>
 </tr>
@@ -106,8 +86,6 @@ Keystore History
 <td valign="top">
 
 Certificate-to-User Mapping
-
-
 
 </td>
 <td valign="top">
@@ -117,8 +95,6 @@ Certificate-to-User Mapping
 [Get Certificate-to-User Mappings with Specific User, Neo Environment](get-certificate-to-user-mappings-with-specific-user-neo-environment-14c77c9.md)
 
 [Read Expiration Date of a Client Certificate, Neo Environment](read-expiration-date-of-a-client-certificate-neo-environment-9437957.md)
-
-
 
 </td>
 </tr>

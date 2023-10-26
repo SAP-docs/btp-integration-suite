@@ -25,15 +25,11 @@ Supported modes of the Quota policy:
     <th valign="top">
 
     Time Unit
-
-
     
     </th>
     <th valign="top">
 
     Example of the start time of the next refresh cycle \(UTC\)
-
-
     
     </th>
     </tr>
@@ -41,15 +37,11 @@ Supported modes of the Quota policy:
     <td valign="top">
     
     Second
-
-
     
     </td>
     <td valign="top">
     
     11:55:25 \[21/11/2022\]
-
-
     
     </td>
     </tr>
@@ -57,15 +49,11 @@ Supported modes of the Quota policy:
     <td valign="top">
     
     Minute
-
-
     
     </td>
     <td valign="top">
     
     11:56:00 \[21/11/2022\]
-
-
     
     </td>
     </tr>
@@ -73,15 +61,11 @@ Supported modes of the Quota policy:
     <td valign="top">
     
     Hour
-
-
     
     </td>
     <td valign="top">
     
     12:00:00 \[21/11/2022\]
-
-
     
     </td>
     </tr>
@@ -89,15 +73,11 @@ Supported modes of the Quota policy:
     <td valign="top">
     
     Day
-
-
     
     </td>
     <td valign="top">
     
     00:00:00 \[22/11/2022\]
-
-
     
     </td>
     </tr>
@@ -105,15 +85,11 @@ Supported modes of the Quota policy:
     <td valign="top">
     
     Week
-
-
     
     </td>
     <td valign="top">
     
     00:00:00 \[28/11/2022\] Monday
-
-
     
     </td>
     </tr>
@@ -121,15 +97,11 @@ Supported modes of the Quota policy:
     <td valign="top">
     
     Month
-
-
     
     </td>
     <td valign="top">
     
     00:00:00 \[01/12/2022\] December
-
-
     
     </td>
     </tr>

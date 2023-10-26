@@ -59,22 +59,16 @@ You are updating a rate plan.
             <th valign="top">
 
             API Calls From
-
-
             
             </th>
             <th valign="top">
 
             API Calls To
-
-
             
             </th>
             <th valign="top">
 
             Rate per API Call
-
-
             
             </th>
             </tr>
@@ -82,22 +76,16 @@ You are updating a rate plan.
             <td valign="top">
             
             0
-
-
             
             </td>
             <td valign="top">
             
             5000
-
-
             
             </td>
             <td valign="top">
             
             0.0
-
-
             
             </td>
             </tr>
@@ -105,22 +93,16 @@ You are updating a rate plan.
             <td valign="top">
             
             5001
-
-
             
             </td>
             <td valign="top">
             
             10000
-
-
             
             </td>
             <td valign="top">
             
             0.5
-
-
             
             </td>
             </tr>
@@ -128,8 +110,6 @@ You are updating a rate plan.
             <td valign="top">
             
             10001
-
-
             
             </td>
             <td valign="top">
@@ -140,8 +120,6 @@ You are updating a rate plan.
             <td valign="top">
             
             0.7
-
-
             
             </td>
             </tr>

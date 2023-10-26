@@ -57,14 +57,10 @@ You are interested in filtering the stars for a dedicated spectral class, but in
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -73,14 +69,10 @@ Value
 
 XPath Expression
 
-
-
 </td>
 <td valign="top">
 
 /starCatalogue/star\[\(class le function:simple\('$\{property.class\}'\)\) and \(class ge function:simple\('$\{property.class\}'\)\)\]
-
-
 
 </td>
 </tr>
@@ -89,14 +81,10 @@ XPath Expression
 
 Value Type
 
-
-
 </td>
 <td valign="top">
 
 Nodelist
-
-
 
 </td>
 </tr>
@@ -161,14 +149,10 @@ In this case, configure the Filter step in the following way:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -177,14 +161,10 @@ Value
 
 XPath Expression
 
-
-
 </td>
 <td valign="top">
 
 /starCatalogue/star\[distance = max\(/starCatalogue/star/distance\)\]
-
-
 
 </td>
 </tr>
@@ -193,14 +173,10 @@ XPath Expression
 
 Value Type
 
-
-
 </td>
 <td valign="top">
 
 Node
-
-
 
 </td>
 </tr>

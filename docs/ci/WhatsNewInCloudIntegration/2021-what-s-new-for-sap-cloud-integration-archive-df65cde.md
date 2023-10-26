@@ -15,56 +15,40 @@
 
 Technical Component
 
-
-
 </th>
 <th valign="top">
 
 Capability
-
-
 
 </th>
 <th valign="top">
 
 Environment
 
-
-
 </th>
 <th valign="top">
 
 Title
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Action
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Available as of
-
-
 
 </th>
 </tr>
@@ -73,14 +57,10 @@ Available as of
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -93,8 +73,6 @@ Integration Suite
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -109,21 +87,15 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-12-04
-
-
 
 </td>
 </tr>
@@ -132,14 +104,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -152,8 +120,6 @@ Integration Suite
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -170,21 +136,15 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-12-04
-
-
 
 </td>
 </tr>
@@ -193,14 +153,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -215,35 +171,25 @@ Integration Suite
 
 Billing of Messages Using SAP-to-SAP Content
 
-
-
 </td>
 <td valign="top">
 
 Starting with software increment 2110, all messages processed by modified standard SAP-to-SAP integration content \(from SAP Business Accelerator Hub\) are now charged according to the official metric. For more information, see SAP Note [294234](https://me.sap.com/notes/294234).
-
-
 
 </td>
 <td valign="top">
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-12-04
-
-
 
 </td>
 </tr>
@@ -252,14 +198,10 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -274,8 +216,6 @@ Integration Suite
 
 Creating a Mapping Guideline
 
-
-
 </td>
 <td valign="top">
 
@@ -283,28 +223,20 @@ You can now copy a mapping guideline using two different options.
 
 See: [Creating a New Mapping Guideline](../IntegrationAdvisor/creating-a-new-mapping-guideline-a42920e.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-12-04
-
-
 
 </td>
 </tr>
@@ -313,14 +245,10 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -335,8 +263,6 @@ Integration Suite
 
 Working with a Mapping Guideline
 
-
-
 </td>
 <td valign="top">
 
@@ -344,28 +270,20 @@ Working with a Mapping Guideline
 
 See: [Mapping the Source and Target Nodes](../IntegrationAdvisor/mapping-the-source-and-target-nodes-9ea58d6.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-12-04
-
-
 
 </td>
 </tr>
@@ -374,14 +292,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -396,8 +310,6 @@ Integration Suite
 
 New Parameter for AMQP Sender Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -405,28 +317,20 @@ The mapping type is now indicated by an icon above theThe AMQP sender adapter co
 
 See: [Configure the AMQP Sender Adapter](../Development/configure-the-amqp-sender-adapter-99ce674.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-12-04
-
-
 
 </td>
 </tr>
@@ -435,14 +339,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -456,8 +356,6 @@ Integration Suite
 <td valign="top">
 
 New Integration Flow Design Guideline Content
-
-
 
 </td>
 <td valign="top">
@@ -478,21 +376,15 @@ See:
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-12-04
-
-
 
 </td>
 </tr>
@@ -501,14 +393,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -523,8 +411,6 @@ Integration Suite
 
 Generic Provider for OAuth2 Client Authorization Code
 
-
-
 </td>
 <td valign="top">
 
@@ -532,28 +418,20 @@ You can now use the Generic Provider for OAuth2 Client Authorization Code.
 
 See: [Deploying an OAuth2 Client Authorization Code with Generic Provider](../Operations/deploying-an-oauth2-client-authorization-code-with-generic-provider-72c8fa7.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-12-04
-
-
 
 </td>
 </tr>
@@ -562,14 +440,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -584,8 +458,6 @@ Integration Suite
 
 Batch Mode and Operations in JDBC Receiver Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -593,28 +465,20 @@ You can now perform batch operations like modifying multiple documents in one tr
 
 See: [JDBC Receiver Adapter](../Development/jdbc-receiver-adapter-88be644.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-12-04
-
-
 
 </td>
 </tr>
@@ -623,14 +487,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -645,35 +505,25 @@ Integration Suite
 
 Introducing Community Packages
 
-
-
 </td>
 <td valign="top">
 
 Community Packages are prepackaged, editable, open-source integration content developed by the integration experts in the community. See [Working with Prepackaged Integration Content](../Development/working-with-prepackaged-integration-content-bd2ed3e.md).
-
-
 
 </td>
 <td valign="top">
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-12-04
-
-
 
 </td>
 </tr>
@@ -682,14 +532,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -702,8 +548,6 @@ Integration Suite
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -718,21 +562,15 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-10-16
-
-
 
 </td>
 </tr>
@@ -741,14 +579,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -761,8 +595,6 @@ Integration Suite
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -779,21 +611,15 @@ Software Version Update
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-10-16
-
-
 
 </td>
 </tr>
@@ -802,14 +628,10 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -824,8 +646,6 @@ Integration Suite
 
 Migrating a Message Implementation Guideline
 
-
-
 </td>
 <td valign="top">
 
@@ -833,28 +653,20 @@ You can now successfully migrate a message implementation guideline that is base
 
 See: [Migrating a Message Implementation Guideline](../IntegrationAdvisor/migrating-a-message-implementation-guideline-a9b12f3.md) 
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-10-16
-
-
 
 </td>
 </tr>
@@ -863,14 +675,10 @@ New
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -885,8 +693,6 @@ Integration Suite
 
 Extending a qualification
 
-
-
 </td>
 <td valign="top">
 
@@ -894,28 +700,20 @@ You can now extend an existing qualification of a message implementation guideli
 
 See: [Creating a Qualified Instance](../IntegrationAdvisor/creating-a-qualified-instance-efcf25e.md)
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-10-16
-
-
 
 </td>
 </tr>
@@ -924,14 +722,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -945,8 +739,6 @@ Integration Suite
 <td valign="top">
 
 Validation Step Introduced for JSON-to-XML Converter
-
-
 
 </td>
 <td valign="top">
@@ -965,28 +757,20 @@ See also:
 
 [3112970 - JSON-to-XML Converter Exception Caused by Invalid JSON Member Name](https://launchpad.support.sap.com/#/notes/3112970) \(Knowledge Base Article\)
 
-
-
 </td>
 <td valign="top">
 
 Recommended
-
-
 
 </td>
 <td valign="top">
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-10-16
-
-
 
 </td>
 </tr>
@@ -995,14 +779,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1016,8 +796,6 @@ Integration Suite
 <td valign="top">
 
 Use Fast Exists Check for SFTP Adapter
-
-
 
 </td>
 <td valign="top">
@@ -1040,21 +818,15 @@ See:
 
 Info only
 
-
-
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-10-16
-
-
 
 </td>
 </tr>
@@ -1063,14 +835,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1085,8 +853,6 @@ Integration Suite
 
 New Integration Flow Design Guideline Content
 
-
-
 </td>
 <td valign="top">
 
@@ -1094,28 +860,20 @@ A new integration flow design guideline has been added to the *Integration Flow 
 
 See: [Parse JSON](../Development/parse-json-af0da64.md) 
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-10-16
-
-
 
 </td>
 </tr>
@@ -1124,14 +882,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1144,8 +898,6 @@ Integration Suite
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1165,14 +917,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-09-18
-
-
 
 </td>
 </tr>
@@ -1181,14 +929,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1201,8 +945,6 @@ Integration Suite
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1224,14 +966,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-09-18
-
-
 
 </td>
 </tr>
@@ -1240,14 +978,10 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1262,16 +996,12 @@ Integration Suite
 
 Mapping Guidelines
 
-
-
 </td>
 <td valign="top">
 
 Mapping guideline now supports group to leaf mapping.
 
 See: [Mapping the Source and Target Nodes](../IntegrationAdvisor/mapping-the-source-and-target-nodes-9ea58d6.md) 
-
-
 
 </td>
 <td valign="top">
@@ -1283,14 +1013,10 @@ See: [Mapping the Source and Target Nodes](../IntegrationAdvisor/mapping-the-sou
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-09-18
-
-
 
 </td>
 </tr>
@@ -1299,14 +1025,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1320,8 +1042,6 @@ Integration Suite
 <td valign="top">
 
 Improvements to Access Policies
-
-
 
 </td>
 <td valign="top">
@@ -1352,14 +1072,10 @@ See:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-09-18
-
-
 
 </td>
 </tr>
@@ -1368,14 +1084,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1390,14 +1102,10 @@ Integration Suite
 
 Deployment Error Message in the Integration Flow Editor
 
-
-
 </td>
 <td valign="top">
 
 Deployment error message is now shown in the *Deployment Status* tab of the integration flow editor. See: [Deployment Status View](../Development/deployment-status-view-40add87.md).
-
-
 
 </td>
 <td valign="top">
@@ -1409,14 +1117,10 @@ Deployment error message is now shown in the *Deployment Status* tab of the inte
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-09-18
-
-
 
 </td>
 </tr>
@@ -1425,14 +1129,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1447,14 +1147,10 @@ Integration Suite
 
 Enhancements to Copy and Paste of Integration Flow Steps
 
-
-
 </td>
 <td valign="top">
 
 You can now copy and paste multiple flow steps in one go. See: [Overview of Integration Flow Editor](../Development/overview-of-integration-flow-editor-db10beb.md).
-
-
 
 </td>
 <td valign="top">
@@ -1466,14 +1162,10 @@ You can now copy and paste multiple flow steps in one go. See: [Overview of Inte
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-09-18
-
-
 
 </td>
 </tr>
@@ -1482,14 +1174,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1504,14 +1192,10 @@ Integration Suite
 
 Enhancements to HTTP Receiver Adapter
 
-
-
 </td>
 <td valign="top">
 
 In case of message failures while a HTTP Receiver adapter calls the target system, message processing log attachments are created. HTTP request headers, response headers, and response body are created as unique attachments depending upon the message failure scenario. See: [HTTP Receiver Adapter](../Development/http-receiver-adapter-2da452e.md).
-
-
 
 </td>
 <td valign="top">
@@ -1523,14 +1207,10 @@ In case of message failures while a HTTP Receiver adapter calls the target syste
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-09-18
-
-
 
 </td>
 </tr>
@@ -1539,14 +1219,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -1562,16 +1238,12 @@ Cloud Integration
 
 Kafka Polling Monitor for the Kafka Sender Adapter
 
-
-
 </td>
 <td valign="top">
 
 After deployment of the integration flow with the Kafka Sender adapter, if there's an exception thrown during polling for whichever reason, the corresponding error details are shown in the *Monitor* section.
 
 See: [Configure the Kafka Sender Adapter](../Development/configure-the-kafka-sender-adapter-0d849e5.md) 
-
-
 
 </td>
 <td valign="top">
@@ -1583,14 +1255,10 @@ See: [Configure the Kafka Sender Adapter](../Development/configure-the-kafka-sen
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-09-18
-
-
 
 </td>
 </tr>
@@ -1599,14 +1267,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1622,16 +1286,12 @@ Integration Suite
 
 New *ID Mapping* Step Available
 
-
-
 </td>
 <td valign="top">
 
 You can use the *ID Mapping* step to map a source message ID to a target message ID. You can use this feature to implement scenarios with exactly once processing of messages, for example.
 
 See: [Define ID Mapping](../Development/define-id-mapping-2367101.md) 
-
-
 
 </td>
 <td valign="top">
@@ -1643,14 +1303,10 @@ See: [Define ID Mapping](../Development/define-id-mapping-2367101.md)
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-09-18
-
-
 
 </td>
 </tr>
@@ -1659,14 +1315,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1681,8 +1333,6 @@ Integration Suite
 <td valign="top">
 
 New Integration Flow Design Guideline Content
-
-
 
 </td>
 <td valign="top">
@@ -1706,14 +1356,10 @@ A new integration flow design guideline has been added to the *Integration Flow 
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-09-18
-
-
 
 </td>
 </tr>
@@ -1722,14 +1368,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1742,8 +1384,6 @@ Integration Suite
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1763,14 +1403,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-08-21
-
-
 
 </td>
 </tr>
@@ -1779,14 +1415,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1799,8 +1431,6 @@ Integration Suite
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -1822,14 +1452,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-08-21
-
-
 
 </td>
 </tr>
@@ -1838,14 +1464,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1861,16 +1483,12 @@ Integration Suite
 
 Archiving Data
 
-
-
 </td>
 <td valign="top">
 
 You can connect Cloud Integration to a remote content management system and use this system to archive data.
 
 See: [Archiving Data, Cloud Foundry Environment](../Operations/archiving-data-cloud-foundry-environment-bc71f88.md) 
-
-
 
 </td>
 <td valign="top">
@@ -1882,14 +1500,10 @@ See: [Archiving Data, Cloud Foundry Environment](../Operations/archiving-data-cl
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-08-21
-
-
 
 </td>
 </tr>
@@ -1898,14 +1512,10 @@ New
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1919,16 +1529,12 @@ Integration Suite
 
 Migrating a Message Implementation Guideline
 
-
-
 </td>
 <td valign="top">
 
 Migration of a message implementation guideline will now consider Compound qualified nodes as well.
 
 See: [Migrating a Message Implementation Guideline](../IntegrationAdvisor/migrating-a-message-implementation-guideline-a9b12f3.md) 
-
-
 
 </td>
 <td valign="top">
@@ -1940,14 +1546,10 @@ See: [Migrating a Message Implementation Guideline](../IntegrationAdvisor/migrat
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-08-21
-
-
 
 </td>
 </tr>
@@ -1956,14 +1558,10 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -1979,16 +1577,12 @@ Integration Suite
 
 Simulating a Message Implementation Guideline
 
-
-
 </td>
 <td valign="top">
 
 You now have the option to rerun simulation on a message implementation guideline based on example data or payload data.
 
 See: [Simulating a Message Implementation Guideline](../IntegrationAdvisor/simulating-a-message-implementation-guideline-42b45c5.md) 
-
-
 
 </td>
 <td valign="top">
@@ -2000,14 +1594,10 @@ See: [Simulating a Message Implementation Guideline](../IntegrationAdvisor/simul
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-08-21
-
-
 
 </td>
 </tr>
@@ -2016,14 +1606,10 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2039,16 +1625,12 @@ Integration Suite
 
 Simulating a Mapping Guideline
 
-
-
 </td>
 <td valign="top">
 
 You can now view all the potential instances of a node after simulating a mapping guideline, independent of whether the instances are created or not.
 
 See: [Simulating a Mapping Guideline](../IntegrationAdvisor/simulating-a-mapping-guideline-b18178b.md) 
-
-
 
 </td>
 <td valign="top">
@@ -2060,14 +1642,10 @@ See: [Simulating a Mapping Guideline](../IntegrationAdvisor/simulating-a-mapping
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-08-21
-
-
 
 </td>
 </tr>
@@ -2076,14 +1654,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Cloud Integration
-
-
 
 </td>
 <td valign="top">
@@ -2098,8 +1672,6 @@ Cloud Integration
 
 New Integration Flow Design Guideline Content
 
-
-
 </td>
 <td valign="top">
 
@@ -2111,8 +1683,6 @@ A new integration flow design guideline has been added to the *Integration Flow 
 
 See: [Protect Data Integrity](../Development/protect-data-integrity-e0ef25c.md) 
 
-
-
 </td>
 <td valign="top">
 
@@ -2123,14 +1693,10 @@ See: [Protect Data Integrity](../Development/protect-data-integrity-e0ef25c.md)
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-08-21
-
-
 
 </td>
 </tr>
@@ -2139,14 +1705,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2161,14 +1723,10 @@ Integration Suite
 
 Enhancements to Copy and Paste of Integration Flow Steps
 
-
-
 </td>
 <td valign="top">
 
 You can now copy flow steps and paste them across different integration flows. See: [Overview of Integration Flow Editor](../Development/overview-of-integration-flow-editor-db10beb.md).
-
-
 
 </td>
 <td valign="top">
@@ -2180,14 +1738,10 @@ You can now copy flow steps and paste them across different integration flows. S
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-08-21
-
-
 
 </td>
 </tr>
@@ -2196,14 +1750,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2217,8 +1767,6 @@ Integration Suite
 <td valign="top">
 
 Improvements to Access Policies in Design Time
-
-
 
 </td>
 <td valign="top">
@@ -2242,14 +1790,10 @@ Message mappings and value mappings can also be protected using access policies.
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-08-21
-
-
 
 </td>
 </tr>
@@ -2258,14 +1802,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2280,14 +1820,10 @@ Integration Suite
 
 Change in Delta Sync Range for SuccessFactors SOAP Adapter
 
-
-
 </td>
 <td valign="top">
 
 For SuccessFactors SOAP Receiver adapter, the delta sync time range is changed to a 3-month timeframe. Earlier, the time range was from 01-01-1970. See: [Configure the SuccessFactors SOAP Receiver Adapter](../Development/configure-the-successfactors-soap-receiver-adapter-360ef42.md).
-
-
 
 </td>
 <td valign="top">
@@ -2299,14 +1835,10 @@ For SuccessFactors SOAP Receiver adapter, the delta sync time range is changed t
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-08-21
-
-
 
 </td>
 </tr>
@@ -2315,14 +1847,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2335,8 +1863,6 @@ Integration Suite
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -2356,14 +1882,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-07-26
-
-
 
 </td>
 </tr>
@@ -2372,14 +1894,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2392,8 +1910,6 @@ Integration Suite
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -2415,14 +1931,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-07-26
-
-
 
 </td>
 </tr>
@@ -2431,14 +1943,10 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2453,16 +1961,12 @@ Integration Suite
 
 Conditional Mapping
 
-
-
 </td>
 <td valign="top">
 
 You can now view the details of the input and outcome of a conditional mapping after simulating a mapping guideline.
 
 See: [Simulating a Mapping Guideline](../IntegrationAdvisor/simulating-a-mapping-guideline-b18178b.md) 
-
-
 
 </td>
 <td valign="top">
@@ -2474,14 +1978,10 @@ See: [Simulating a Mapping Guideline](../IntegrationAdvisor/simulating-a-mapping
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-07-26
-
-
 
 </td>
 </tr>
@@ -2490,14 +1990,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2512,16 +2008,12 @@ Integration Suite
 
 New On-Premise Database
 
-
-
 </td>
 <td valign="top">
 
 The JDBC adapter now supports the connection to on-premise HANA databases.
 
 See: [JDBC Receiver Adapter](../Development/jdbc-receiver-adapter-88be644.md).
-
-
 
 </td>
 <td valign="top">
@@ -2533,14 +2025,10 @@ See: [JDBC Receiver Adapter](../Development/jdbc-receiver-adapter-88be644.md).
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-07-26
-
-
 
 </td>
 </tr>
@@ -2549,14 +2037,10 @@ New
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2571,8 +2055,6 @@ Integration Suite
 
 Message Implementation Guideline
 
-
-
 </td>
 <td valign="top">
 
@@ -2582,8 +2064,6 @@ Message Implementation Guideline
 
 
 See: [Simulating a Message Implementation Guideline](../IntegrationAdvisor/simulating-a-message-implementation-guideline-42b45c5.md) 
-
-
 
 </td>
 <td valign="top">
@@ -2595,14 +2075,10 @@ See: [Simulating a Message Implementation Guideline](../IntegrationAdvisor/simul
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-07-26
-
-
 
 </td>
 </tr>
@@ -2611,14 +2087,10 @@ New
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2633,16 +2105,12 @@ Integration Suite
 
 Code Value Mapping
 
-
-
 </td>
 <td valign="top">
 
 You can now delete or change the deprecated values found in the code value mapping in a mapping guideline.
 
 See: [Value Transformations](../IntegrationAdvisor/value-transformations-19f8374.md) 
-
-
 
 </td>
 <td valign="top">
@@ -2654,14 +2122,10 @@ See: [Value Transformations](../IntegrationAdvisor/value-transformations-19f8374
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-07-26
-
-
 
 </td>
 </tr>
@@ -2670,14 +2134,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2692,16 +2152,12 @@ Integration Suite
 
 New Integration Flow Design Guideline Content
 
-
-
 </td>
 <td valign="top">
 
 A new integration flow design guideline has been added to the *Integration Flow Design Guidelines - Handle Errors Gracefully* integration package. Both documentation and a sample integration flow are available.
 
 See: [Handle Errors in Successful Responses](../Development/handle-errors-in-successful-responses-f066020.md) 
-
-
 
 </td>
 <td valign="top">
@@ -2713,14 +2169,10 @@ See: [Handle Errors in Successful Responses](../Development/handle-errors-in-suc
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-07-26
-
-
 
 </td>
 </tr>
@@ -2729,14 +2181,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2751,16 +2199,12 @@ Integration Suite
 
 Throw Exception in Poll Enrich
 
-
-
 </td>
 <td valign="top">
 
 You can now enable the option to throw an exception in the message processing of the Poll Enrich step if no message is found.
 
 See: [Define Poll Enrich](../Development/define-poll-enrich-f8c8c1d.md) 
-
-
 
 </td>
 <td valign="top">
@@ -2772,14 +2216,10 @@ See: [Define Poll Enrich](../Development/define-poll-enrich-f8c8c1d.md)
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-07-26
-
-
 
 </td>
 </tr>
@@ -2788,14 +2228,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2810,14 +2246,10 @@ Integration Suite
 
 *Deployment Status* view in the integration artifact editor
 
-
-
 </td>
 <td valign="top">
 
 *Deployment Status* is now available in the property sheet of the integration artifact editor. See: [Deployment Status View](../Development/deployment-status-view-40add87.md).
-
-
 
 </td>
 <td valign="top">
@@ -2829,14 +2261,10 @@ Integration Suite
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-07-26
-
-
 
 </td>
 </tr>
@@ -2845,14 +2273,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2867,14 +2291,10 @@ Integration Suite
 
 Copy and Paste Integration Flow Steps while Modeling Integration artifacts
 
-
-
 </td>
 <td valign="top">
 
 You can now copy flow steps and paste within the artifact. See: [Overview of Integration Flow Editor](../Development/overview-of-integration-flow-editor-db10beb.md).
-
-
 
 </td>
 <td valign="top">
@@ -2886,14 +2306,10 @@ You can now copy flow steps and paste within the artifact. See: [Overview of Int
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-07-26
-
-
 
 </td>
 </tr>
@@ -2902,14 +2318,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2924,8 +2336,6 @@ Integration Suite
 
 Improvements of LDAP Receiver Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -2938,8 +2348,6 @@ Improvements of LDAP Receiver Adapter
 
 See: [LDAP Receiver Adapter](../Development/ldap-receiver-adapter-06a753f.md).
 
-
-
 </td>
 <td valign="top">
 
@@ -2950,14 +2358,10 @@ See: [LDAP Receiver Adapter](../Development/ldap-receiver-adapter-06a753f.md).
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-07-26
-
-
 
 </td>
 </tr>
@@ -2966,14 +2370,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -2987,8 +2387,6 @@ Integration Suite
 <td valign="top">
 
 Improvements of Access Policies in Design Time
-
-
 
 </td>
 <td valign="top">
@@ -3012,14 +2410,10 @@ OData APIs can also be protected using access policies. See
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-07-26
-
-
 
 </td>
 </tr>
@@ -3028,14 +2422,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3049,8 +2439,6 @@ Integration Suite
 <td valign="top">
 
 Support for OAuth2 SAML Bearer Certificate Authentication in SF Adapters
-
-
 
 </td>
 <td valign="top">
@@ -3076,14 +2464,10 @@ SuccessFactors SOAP Sender Adapter and the Query Modeling wizards of SuccessFact
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-07-26
-
-
 
 </td>
 </tr>
@@ -3092,28 +2476,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -3133,14 +2509,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3149,28 +2521,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -3192,14 +2556,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3208,14 +2568,10 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3230,16 +2586,12 @@ Integration Suite
 
 Compound Qualification
 
-
-
 </td>
 <td valign="top">
 
 You can now qualify a node using more than one qualifying nodes in a message implementation guideline.
 
 See: [Creating a Qualified Instance](../IntegrationAdvisor/creating-a-qualified-instance-efcf25e.md) 
-
-
 
 </td>
 <td valign="top">
@@ -3251,14 +2603,10 @@ See: [Creating a Qualified Instance](../IntegrationAdvisor/creating-a-qualified-
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3267,14 +2615,10 @@ New
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3289,16 +2633,12 @@ Integration Suite
 
 Mapping Guideline
 
-
-
 </td>
 <td valign="top">
 
 You can now view the distinction between nonexisting and empty leaf nodes after simulating the mapping structure of a mapping guideline.
 
 See: [Working with a Mapping Guideline \(MAG\)](../IntegrationAdvisor/working-with-a-mapping-guideline-mag-0803ca6.md) 
-
-
 
 </td>
 <td valign="top">
@@ -3310,14 +2650,10 @@ See: [Working with a Mapping Guideline \(MAG\)](../IntegrationAdvisor/working-wi
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3326,14 +2662,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3347,8 +2679,6 @@ Integration Suite
 <td valign="top">
 
 Poll Interval for XI Adapter
-
-
 
 </td>
 <td valign="top">
@@ -3374,14 +2704,10 @@ See:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3390,14 +2716,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3412,16 +2734,12 @@ Integration Suite
 
 Selective Transport of Integration Artifacts
 
-
-
 </td>
 <td valign="top">
 
 Now you can transport one or more integration artifacts from your integration package to another integration tenant hosted on the same environment.
 
 See: [Content Transport](../Development/content-transport-e3c79d6.md) 
-
-
 
 </td>
 <td valign="top">
@@ -3433,14 +2751,10 @@ See: [Content Transport](../Development/content-transport-e3c79d6.md)
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3449,14 +2763,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3471,16 +2781,12 @@ Integration Suite
 
 Modifying Java User Defined Functions \(UDFs\)
 
-
-
 </td>
 <td valign="top">
 
 You can now view and edit Java UDF mapping content that was imported from ES Repository.
 
 See: [Importing Mapping Content from ES Repository](../IntegrationSettings/importing-mapping-content-from-es-repository-e18fc05.md) 
-
-
 
 </td>
 <td valign="top">
@@ -3492,14 +2798,10 @@ See: [Importing Mapping Content from ES Repository](../IntegrationSettings/impor
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3508,14 +2810,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3530,16 +2828,12 @@ Integration Suite
 
 JDBC Driver
 
-
-
 </td>
 <td valign="top">
 
 Now, you can upload and deploy type-4 compliant IBM DB2 JDBC drivers in runtime to access DB2 database.
 
 See: [Configure JDBC Drivers](../Operations/configure-jdbc-drivers-77c7d95.md) 
-
-
 
 </td>
 <td valign="top">
@@ -3551,14 +2845,10 @@ See: [Configure JDBC Drivers](../Operations/configure-jdbc-drivers-77c7d95.md)
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3567,14 +2857,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3589,16 +2875,12 @@ Integration Suite
 
 New Integration Flow Design Guideline Content
 
-
-
 </td>
 <td valign="top">
 
 A new integration flow design guideline has been added to the *Integration Flow Design Guidelines - Learn the Basics: Message Mapping* integration package. Both documentation and a sample integration flow are available.
 
 See: [Message Mapping](../Development/message-mapping-ec59f97.md) 
-
-
 
 </td>
 <td valign="top">
@@ -3610,14 +2892,10 @@ See: [Message Mapping](../Development/message-mapping-ec59f97.md)
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3626,14 +2904,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3648,16 +2922,12 @@ Integration Suite
 
 Message Mapping as Artifact
 
-
-
 </td>
 <td valign="top">
 
 Now, you can create message mapping artifact and reuse them by reference across different integration flows within the same integration package.
 
 See: [Creating Message Mapping as an Artifact](../Development/creating-message-mapping-as-an-artifact-1d52a7b.md) 
-
-
 
 </td>
 <td valign="top">
@@ -3669,14 +2939,10 @@ See: [Creating Message Mapping as an Artifact](../Development/creating-message-m
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3685,14 +2951,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3706,14 +2968,10 @@ Integration Suite
 
 Improvements to Malware Scanning Capability
 
-
-
 </td>
 <td valign="top">
 
 With this release, script collection artifacts and integration packages are also scanned for malware before upload. See: [Malware Scanner](../IntegrationSettings/malware-scanner-37df657.md).
-
-
 
 </td>
 <td valign="top">
@@ -3725,14 +2983,10 @@ With this release, script collection artifacts and integration packages are also
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3741,14 +2995,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3763,14 +3013,10 @@ Integration Suite
 
 Support for OAuth2 SAML Bearer Certificate Authentication in SF Adapter
 
-
-
 </td>
 <td valign="top">
 
 SuccessFactors SOAP Receiver Adapter now supports OAuth2 credentials. See: [Deploying an OAuth2 SAML Bearer Assertion](../Operations/deploying-an-oauth2-saml-bearer-assertion-3ee6582.md).
-
-
 
 </td>
 <td valign="top">
@@ -3782,14 +3028,10 @@ SuccessFactors SOAP Receiver Adapter now supports OAuth2 credentials. See: [Depl
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3798,14 +3040,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3820,8 +3058,6 @@ Integration Suite
 
 Update related to ELSTER Adapter
 
-
-
 </td>
 <td valign="top">
 
@@ -3833,8 +3069,6 @@ If you use the ELSTER adapter, in particular, together with the data collection 
 
 See: [ELSTER Receiver Adapter](../Development/elster-receiver-adapter-e374ef7.md) 
 
-
-
 </td>
 <td valign="top">
 
@@ -3845,14 +3079,10 @@ See: [ELSTER Receiver Adapter](../Development/elster-receiver-adapter-e374ef7.md
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3861,14 +3091,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3883,16 +3109,12 @@ Integration Suite
 
 Keep File and Process Again option for the SFTP Sender Adapter used with the Poll Enrich Step
 
-
-
 </td>
 <td valign="top">
 
 You can now select the option *Keep File and Process Again* for the SFTP Sender Adapter used with the Poll Enrich Step to allow repeated and parallel access to the same file without moving or deleting it.
 
 See: [Configure the SFTP Sender Adapter Used with the Poll Enrich Step](../Development/configure-the-sftp-sender-adapter-used-with-the-poll-enrich-step-1f15fe2.md) 
-
-
 
 </td>
 <td valign="top">
@@ -3904,14 +3126,10 @@ See: [Configure the SFTP Sender Adapter Used with the Poll Enrich Step](../Devel
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3920,14 +3138,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -3942,16 +3156,12 @@ Integration Suite
 
 Data Store Default Expiry Period
 
-
-
 </td>
 <td valign="top">
 
 The data store default expiry period was changed from 90 to 30 days.
 
 See: [Define Data Store Write Operations](../Development/define-data-store-write-operations-46260ee.md) 
-
-
 
 </td>
 <td valign="top">
@@ -3963,14 +3173,10 @@ See: [Define Data Store Write Operations](../Development/define-data-store-write
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -3979,14 +3185,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -4000,8 +3202,6 @@ Integration Suite
 <td valign="top">
 
 Improvement of Access Policies in Design Time
-
-
 
 </td>
 <td valign="top">
@@ -4025,14 +3225,10 @@ REST and SOAP APIs can also be protected using access policies. See
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-06-26
-
-
 
 </td>
 </tr>
@@ -4041,28 +3237,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -4082,14 +3270,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-05-29
-
-
 
 </td>
 </tr>
@@ -4098,28 +3282,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -4141,14 +3317,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-05-29
-
-
 
 </td>
 </tr>
@@ -4157,14 +3329,10 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -4179,16 +3347,12 @@ Integration Suite
 
 Message Implementation Guideline
 
-
-
 </td>
 <td valign="top">
 
 You can now activate a message implementation guideline that is based on a custom message by activating the custom message first.
 
 See: [Versioning a Message Implementation Guideline](../IntegrationAdvisor/versioning-a-message-implementation-guideline-12784f9.md) 
-
-
 
 </td>
 <td valign="top">
@@ -4200,14 +3364,10 @@ See: [Versioning a Message Implementation Guideline](../IntegrationAdvisor/versi
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-05-29
-
-
 
 </td>
 </tr>
@@ -4216,14 +3376,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -4238,14 +3394,10 @@ Integration Suite
 
 PDF Guides in SAP Cloud Integration 
 
-
-
 </td>
 <td valign="top">
 
 To improve access to information, we’re discontinuing to support all PDF guides, except for the **Feature Scope Description** guide. The PDF guides will no longer be updated, and it will be deleted. Going forward we do not recommend using the existing PDFs.
-
-
 
 </td>
 <td valign="top">
@@ -4257,14 +3409,10 @@ To improve access to information, we’re discontinuing to support all PDF guide
 
 Deleted
 
-
-
 </td>
 <td valign="top">
 
 2021-05-29
-
-
 
 </td>
 </tr>
@@ -4273,14 +3421,10 @@ Deleted
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -4295,16 +3439,12 @@ Integration Suite
 
 Migrating a Message Implementation Guideline
 
-
-
 </td>
 <td valign="top">
 
 Migration of user-defined qualifier markers and qualifications based on newly added global codelists are now supported.
 
 See: [Migrating a Message Implementation Guideline](../IntegrationAdvisor/migrating-a-message-implementation-guideline-a9b12f3.md) 
-
-
 
 </td>
 <td valign="top">
@@ -4316,14 +3456,10 @@ See: [Migrating a Message Implementation Guideline](../IntegrationAdvisor/migrat
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-05-29
-
-
 
 </td>
 </tr>
@@ -4332,14 +3468,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -4354,14 +3486,10 @@ Integration Suite
 
 Introducing Script Collection Artifact
 
-
-
 </td>
 <td valign="top">
 
 You can create script collection artifacts that can contain supported script resources like Groovy script, JavaScripit, and Jar \(archive\) files in it. Script collection comes with benefits like reusable script resources, reduced memory usage, ease of maintenance. See [Developing Script and Script Collection](../Development/developing-script-and-script-collection-e60f706.md).
-
-
 
 </td>
 <td valign="top">
@@ -4373,14 +3501,10 @@ You can create script collection artifacts that can contain supported script res
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-05-29
-
-
 
 </td>
 </tr>
@@ -4389,35 +3513,25 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 JDBC Receiver Adapter
 
-
-
 </td>
 <td valign="top">
 
 You can now use JDBC receiver adapter to connect with HANA 2.0 Database \(DB\) for Cloud Integration tenants hosted on Neo Environment. Existing users can upgrade their HANA DB from 1.0 to 2.0.
-
-
 
 </td>
 <td valign="top">
@@ -4429,14 +3543,10 @@ You can now use JDBC receiver adapter to connect with HANA 2.0 Database \(DB\) f
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-05-29
-
-
 
 </td>
 </tr>
@@ -4445,14 +3555,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -4466,8 +3572,6 @@ Integration Suite
 <td valign="top">
 
 Consuming Access Policies in Design Time
-
-
 
 </td>
 <td valign="top">
@@ -4491,14 +3595,10 @@ As a tenant administrator, you can now apply access policies for the integration
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-05-29
-
-
 
 </td>
 </tr>
@@ -4507,14 +3607,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -4529,16 +3625,12 @@ Integration Suite
 
 Enhanced Cloud Integration OData API
 
-
-
 </td>
 <td valign="top">
 
 The `Idempotent Repository` resource of the `Message Processing Logs` API has been deprecated and replaced by a new one.
 
 See: [Message Processing Logs](../Development/message-processing-logs-827a2d7.md) 
-
-
 
 </td>
 <td valign="top">
@@ -4550,14 +3642,10 @@ See: [Message Processing Logs](../Development/message-processing-logs-827a2d7.md
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-05-29
-
-
 
 </td>
 </tr>
@@ -4566,14 +3654,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -4588,14 +3672,10 @@ Integration Suite
 
 Listing Allowed Headers in the HTTP Receiver Adapter
 
-
-
 </td>
 <td valign="top">
 
 You can now list the request headers that must go from and the response headers that must come to the HTTP Receiver Adapter. Earlier, the adapter exchanged all the headers by default leading to few instances of message processing failure. See [HTTP Receiver Adapter](../Development/http-receiver-adapter-2da452e.md).
-
-
 
 </td>
 <td valign="top">
@@ -4607,14 +3687,10 @@ You can now list the request headers that must go from and the response headers 
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-05-29
-
-
 
 </td>
 </tr>
@@ -4623,14 +3699,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -4644,8 +3716,6 @@ Integration Suite
 <td valign="top">
 
 New Integration Flow Design Guideline Content
-
-
 
 </td>
 <td valign="top">
@@ -4673,14 +3743,10 @@ See:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-05-29
-
-
 
 </td>
 </tr>
@@ -4689,14 +3755,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -4711,8 +3773,6 @@ Integration Suite
 
 New Features Added to SFTP Adapter for Poll Enrich Step
 
-
-
 </td>
 <td valign="top">
 
@@ -4721,8 +3781,6 @@ Additional features are supported when connecting to an external component using
 You can now dynamically configure the *Proxy Type* and *Authentication* parameters.
 
 See: [Configure the SFTP Sender Adapter Used with the Poll Enrich Step](../Development/configure-the-sftp-sender-adapter-used-with-the-poll-enrich-step-1f15fe2.md) 
-
-
 
 </td>
 <td valign="top">
@@ -4734,14 +3792,10 @@ See: [Configure the SFTP Sender Adapter Used with the Poll Enrich Step](../Devel
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-05-29
-
-
 
 </td>
 </tr>
@@ -4750,28 +3804,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -4799,8 +3845,6 @@ Software Version Update
 
 2021-05-01
 
-
-
 </td>
 </tr>
 <tr>
@@ -4808,28 +3852,20 @@ Software Version Update
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -4859,8 +3895,6 @@ Software Version Update
 
 2021-05-01
 
-
-
 </td>
 </tr>
 <tr>
@@ -4868,14 +3902,10 @@ Software Version Update
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -4889,8 +3919,6 @@ Integration Suite
 <td valign="top">
 
 Parameters of PGP Encryptor/Decryptor Dynamically Configurable
-
-
 
 </td>
 <td valign="top">
@@ -4908,8 +3936,6 @@ You can now configure the following parameters dynamically based on headers or p
 
 Assume that you like to send an encrypted and signed message to multiple receivers and use specific keys for each receiver. Furthermore, assume that the receivers are determined at runtime from the content of the inbound message. You can use this feature to dynamically get the required encryption and signing key dynamically at runtime.
 
-
-
 </td>
 <td valign="top">
 
@@ -4920,14 +3946,10 @@ Assume that you like to send an encrypted and signed message to multiple receive
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-05-01
-
-
 
 </td>
 </tr>
@@ -4936,14 +3958,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -4958,16 +3976,12 @@ Integration Suite
 
 New *Poll Enrich* Integration Flow Step Type
 
-
-
 </td>
 <td valign="top">
 
 You can use this step together with the SFTP sender adapter to poll \(read\) content from an external component and to enrich the original message with this content.
 
 See: [Define Poll Enrich](../Development/define-poll-enrich-f8c8c1d.md) 
-
-
 
 </td>
 <td valign="top">
@@ -4979,14 +3993,10 @@ See: [Define Poll Enrich](../Development/define-poll-enrich-f8c8c1d.md)
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-05-01
-
-
 
 </td>
 </tr>
@@ -4995,14 +4005,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5016,16 +4022,12 @@ Integration Suite
 
 Configure the Kafka Sender or Receiver Adapter
 
-
-
 </td>
 <td valign="top">
 
 You can now configure the Kafka Sender Adapter or the Kafka Receiver Adapter to connect to an external Kafka broker via Kafka protocol.
 
 See: [Kafka Adapter](../Development/kafka-adapter-3e7b995.md).
-
-
 
 </td>
 <td valign="top">
@@ -5037,14 +4039,10 @@ See: [Kafka Adapter](../Development/kafka-adapter-3e7b995.md).
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-05-01
-
-
 
 </td>
 </tr>
@@ -5053,14 +4051,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5075,14 +4069,10 @@ Integration Suite
 
 Perform Kafka Adapter Connectivity Tests
 
-
-
 </td>
 <td valign="top">
 
 You can now perform connectivity tests for the Kafka adapter.
-
-
 
 </td>
 <td valign="top">
@@ -5094,14 +4084,10 @@ You can now perform connectivity tests for the Kafka adapter.
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-05-01
-
-
 
 </td>
 </tr>
@@ -5110,14 +4096,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5131,8 +4113,6 @@ Integration Suite
 <td valign="top">
 
 Define the Number of Concurrent Processes for JMS Queues in XI Adapter
-
-
 
 </td>
 <td valign="top">
@@ -5158,14 +4138,10 @@ See:
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-05-01
-
-
 
 </td>
 </tr>
@@ -5174,14 +4150,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5195,14 +4167,10 @@ Integration Suite
 
 Malware Scanning Capability
 
-
-
 </td>
 <td valign="top">
 
 With this release, OData API projects and keystore files are also scanned for malware before upload. See: [Malware Scanner](../IntegrationSettings/malware-scanner-37df657.md).
-
-
 
 </td>
 <td valign="top">
@@ -5214,14 +4182,10 @@ With this release, OData API projects and keystore files are also scanned for ma
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-05-01
-
-
 
 </td>
 </tr>
@@ -5230,14 +4194,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5252,14 +4212,10 @@ Integration Suite
 
 Improvements of Design Time Artifact Locks
 
-
-
 </td>
 <td valign="top">
 
 A tenant administrator can now release a locked design time artifact immediately after a user locked it. Earlier, the tenant admin could unlock the artifact only 24 hours after the user locked it. See: [Designtime Artifact Locks](../Operations/designtime-artifact-locks-5b3ecb8.md).
-
-
 
 </td>
 <td valign="top">
@@ -5271,14 +4227,10 @@ A tenant administrator can now release a locked design time artifact immediately
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-05-01
-
-
 
 </td>
 </tr>
@@ -5287,14 +4239,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5309,14 +4257,10 @@ Integration Suite
 
 Improvements of Timer Start Event
 
-
-
 </td>
 <td valign="top">
 
 Improvements are made to the timer start event to avoid several triggers of the same integration flow at the same time.
-
-
 
 </td>
 <td valign="top">
@@ -5328,14 +4272,10 @@ Improvements are made to the timer start event to avoid several triggers of the 
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-05-01
-
-
 
 </td>
 </tr>
@@ -5344,28 +4284,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -5385,14 +4317,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -5401,28 +4329,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -5444,14 +4364,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -5460,14 +4376,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5481,8 +4393,6 @@ Integration Suite
 <td valign="top">
 
 New Adapters in SAP Cloud Integration 
-
-
 
 </td>
 <td valign="top">
@@ -5508,14 +4418,10 @@ See:
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -5524,28 +4430,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Access Policy Update
-
-
 
 </td>
 <td valign="top">
@@ -5569,14 +4467,10 @@ Access policies now also guard the access to variables.
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -5585,14 +4479,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5607,16 +4497,12 @@ Integration Suite
 
 Message Status
 
-
-
 </td>
 <td valign="top">
 
 The new message status ABANDONED is set in the MPL, when the message processing is interrupted because of a re- or undeployment of an integration flow, or a controlled worker node shutdown. This status is not final and the processing might be resumed if retries are configured.
 
 [Message Status](../Operations/message-status-733a57b.md) 
-
-
 
 </td>
 <td valign="top">
@@ -5628,14 +4514,10 @@ The new message status ABANDONED is set in the MPL, when the message processing 
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -5644,14 +4526,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5666,16 +4544,12 @@ Integration Suite
 
 Feature Update
 
-
-
 </td>
 <td valign="top">
 
 The search of Custom Header Properties is available in the Message Monitor of the Web UI.
 
 See: [Headers and Exchange Properties Provided by the Integration Framework](../Development/headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md) 
-
-
 
 </td>
 <td valign="top">
@@ -5687,14 +4561,10 @@ See: [Headers and Exchange Properties Provided by the Integration Framework](../
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -5703,14 +4573,10 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5725,14 +4591,10 @@ Integration Suite
 
 Automotive Edifact Subsets Supported
 
-
-
 </td>
 <td valign="top">
 
 SAP Integration Advisor now provides the B2B Libraries for the automotive EDIFACT subsets \(JAIF EDIFACT, Odette EDIFACT, and VDA EDIFACT\) and the associated automotive codelists.
-
-
 
 </td>
 <td valign="top">
@@ -5744,14 +4606,10 @@ SAP Integration Advisor now provides the B2B Libraries for the automotive EDIFAC
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -5760,14 +4618,10 @@ New
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5781,8 +4635,6 @@ Integration Suite
 <td valign="top">
 
 Filter MIGs and MAGs based on user identifier and a date range
-
-
 
 </td>
 <td valign="top">
@@ -5799,8 +4651,6 @@ Modified Between
 
 See: [Message Implementation Guidelines \(MIGs\)](../IntegrationAdvisor/message-implementation-guidelines-migs-f9f2bab.md).[Mapping Guidelines \(MAGs\)](../IntegrationAdvisor/mapping-guidelines-mags-42124f4.md).
 
-
-
 </td>
 <td valign="top">
 
@@ -5811,14 +4661,10 @@ See: [Message Implementation Guidelines \(MIGs\)](../IntegrationAdvisor/message-
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -5827,14 +4673,10 @@ New
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5849,14 +4691,10 @@ Integration Suite
 
 Conditional Mapping
 
-
-
 </td>
 <td valign="top">
 
 You can now specify conditions on leaf nodes to control the creation and cardinality of the target group node instances in a group-to-group mapping. See: [Mapping the Source and Target Nodes](../IntegrationAdvisor/mapping-the-source-and-target-nodes-9ea58d6.md).
-
-
 
 </td>
 <td valign="top">
@@ -5868,14 +4706,10 @@ You can now specify conditions on leaf nodes to control the creation and cardina
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -5884,14 +4718,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5905,14 +4735,10 @@ Integration Suite
 
 Malware Scanning Capability
 
-
-
 </td>
 <td valign="top">
 
 As tenant administrators, you can now enable malware scan for the design time files that are uploaded by the tenant users. See: [Malware Scanner](../IntegrationSettings/malware-scanner-37df657.md).
-
-
 
 </td>
 <td valign="top">
@@ -5924,14 +4750,10 @@ As tenant administrators, you can now enable malware scan for the design time fi
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -5940,14 +4762,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -5962,14 +4780,10 @@ Integration Suite
 
 Data Compression for SFSF OData V2 Receiver Adapter
 
-
-
 </td>
 <td valign="top">
 
 SuccesFactors OData V2 Receiver Adapter supports data compression that improves the message processing time. See: [Configure the SuccessFactors OData V2 Receiver Adapter](../Development/configure-the-successfactors-odata-v2-receiver-adapter-d16dd12.md).
-
-
 
 </td>
 <td valign="top">
@@ -5981,14 +4795,10 @@ SuccesFactors OData V2 Receiver Adapter supports data compression that improves 
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -5997,14 +4807,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -6019,14 +4825,10 @@ Integration Suite
 
 Support for OAuth2 SAML Bearer Certificate Authentication in SF OData Adapter
 
-
-
 </td>
 <td valign="top">
 
 SuccessFactors OData V2 Receiver Adapter now supports OAuth2 for technical user propagation. Earlier, only support for principal propagation was available. See: [Deploying an OAuth2 SAML Bearer Assertion](../Operations/deploying-an-oauth2-saml-bearer-assertion-3ee6582.md).
-
-
 
 </td>
 <td valign="top">
@@ -6038,14 +4840,10 @@ SuccessFactors OData V2 Receiver Adapter now supports OAuth2 for technical user 
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -6054,14 +4852,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -6075,14 +4869,10 @@ Integration Suite
 
 Improvements of Message Structure Using JSON in Message Mapping
 
-
-
 </td>
 <td valign="top">
 
 Some of the limitations with message structure while using Swagger/OpenAPI spec JSON file in message mapping are fixed now. You can now use untyped, mixed-type, array-of-arrays type, and array-at-root type structures. See: [Creating Message Mapping as a Flow Step](../Development/creating-message-mapping-as-a-flow-step-3d5cb7f.md).
-
-
 
 </td>
 <td valign="top">
@@ -6094,14 +4884,10 @@ Some of the limitations with message structure while using Swagger/OpenAPI spec 
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -6110,14 +4896,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -6132,16 +4914,12 @@ Integration Suite
 
 Packaging in XI Sender Adapter
 
-
-
 </td>
 <td valign="top">
 
 Packaging is now supported by the XI Sender Adapter.
 
 See: [Configure the XI Sender Adapter](../Development/configure-the-xi-sender-adapter-41a1a57.md).
-
-
 
 </td>
 <td valign="top">
@@ -6153,14 +4931,10 @@ See: [Configure the XI Sender Adapter](../Development/configure-the-xi-sender-ad
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -6169,14 +4943,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -6190,8 +4960,6 @@ Integration Suite
 <td valign="top">
 
 New Integration Flow Design Guideline Content
-
-
 
 </td>
 <td valign="top">
@@ -6223,14 +4991,10 @@ The following new content has been added to the integration flow design guidelin
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -6239,14 +5003,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -6261,16 +5021,12 @@ Integration Suite
 
 Enhanced Cloud Integration OData API
 
-
-
 </td>
 <td valign="top">
 
 You can now access data stores, data store entries, and variables using the OData API.
 
 See: [Message Stores](../Development/message-stores-1aab5e9.md) 
-
-
 
 </td>
 <td valign="top">
@@ -6282,14 +5038,10 @@ See: [Message Stores](../Development/message-stores-1aab5e9.md)
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-04-09
-
-
 
 </td>
 </tr>
@@ -6298,28 +5050,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -6339,14 +5083,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-03-06
-
-
 
 </td>
 </tr>
@@ -6355,28 +5095,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -6398,14 +5130,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-03-06
-
-
 
 </td>
 </tr>
@@ -6414,14 +5142,10 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -6436,16 +5160,12 @@ Integration Suite
 
 Migrating a Message Implementation Guideline
 
-
-
 </td>
 <td valign="top">
 
 You can now migrate your MIG to a different version \(newer or older\) of the same Type System.
 
 See: [Migrating a Message Implementation Guideline](../IntegrationAdvisor/migrating-a-message-implementation-guideline-a9b12f3.md).
-
-
 
 </td>
 <td valign="top">
@@ -6457,14 +5177,10 @@ See: [Migrating a Message Implementation Guideline](../IntegrationAdvisor/migrat
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-02-14
-
-
 
 </td>
 </tr>
@@ -6473,14 +5189,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -6495,16 +5207,12 @@ Integration Suite
 
 Enhanced Cloud Integration OData API
 
-
-
 </td>
 <td valign="top">
 
 The supported system query options for JMS Resources were extended to now allow the query option `$expand`.
 
 See: [Message Stores](../Development/message-stores-1aab5e9.md).
-
-
 
 </td>
 <td valign="top">
@@ -6516,14 +5224,10 @@ See: [Message Stores](../Development/message-stores-1aab5e9.md).
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-03-06
-
-
 
 </td>
 </tr>
@@ -6532,14 +5236,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -6553,8 +5253,6 @@ Integration Suite
 <td valign="top">
 
 Simple Object Access Protocol \(SOAP\) 1.2
-
-
 
 </td>
 <td valign="top">
@@ -6580,14 +5278,10 @@ See:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-03-06
-
-
 
 </td>
 </tr>
@@ -6596,28 +5290,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Subscribing to the Service
-
-
 
 </td>
 <td valign="top">
@@ -6626,8 +5312,6 @@ Now, experience the simplified way to subscribe to Process Integration or Cloud 
 
 See: [Initial Setup](../InitialSetup/initial-setup-0a556d5.md).
 
-
-
 </td>
 <td valign="top">
 
@@ -6638,14 +5322,10 @@ See: [Initial Setup](../InitialSetup/initial-setup-0a556d5.md).
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-03-06
-
-
 
 </td>
 </tr>
@@ -6654,28 +5334,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Configure the Kafka Sender or Receiver Adapter
-
-
 
 </td>
 <td valign="top">
@@ -6684,8 +5356,6 @@ You can now configure the Kafka Sender Adapter or the Kafka Receiver Adapter to 
 
 See: [Kafka Adapter](../Development/kafka-adapter-3e7b995.md).
 
-
-
 </td>
 <td valign="top">
 
@@ -6696,14 +5366,10 @@ See: [Kafka Adapter](../Development/kafka-adapter-3e7b995.md).
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-03-06
-
-
 
 </td>
 </tr>
@@ -6712,28 +5378,20 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 OAuth Inbound Authentication Supports JSON Web Token
-
-
 
 </td>
 <td valign="top">
@@ -6746,8 +5404,6 @@ Therefore, this feature results in a better performance under high load when a t
 
 See: [OAuth Client Credentials Grant](../ConnectionSetup/oauth-client-credentials-grant-cf611ec.md) 
 
-
-
 </td>
 <td valign="top">
 
@@ -6758,14 +5414,10 @@ See: [OAuth Client Credentials Grant](../ConnectionSetup/oauth-client-credential
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-03-06
-
-
 
 </td>
 </tr>
@@ -6774,14 +5426,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -6795,8 +5443,6 @@ Integration Suite
 <td valign="top">
 
 New Content Added for Integration Flow Design Guidelines
-
-
 
 </td>
 <td valign="top">
@@ -6824,14 +5470,10 @@ The integration flow design guidelines have been enhanced in the following way:
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-03-06
-
-
 
 </td>
 </tr>
@@ -6840,14 +5482,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -6862,14 +5500,10 @@ Integration Suite
 
 Self-Service Capability to Unlock Design Time Artifacts
 
-
-
 </td>
 <td valign="top">
 
 As tenant administrators, you can now unlock the design time artifacts that are locked by any user of the tenant. [Designtime Artifact Locks](../Operations/designtime-artifact-locks-5b3ecb8.md).
-
-
 
 </td>
 <td valign="top">
@@ -6881,14 +5515,10 @@ As tenant administrators, you can now unlock the design time artifacts that are 
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-03-06
-
-
 
 </td>
 </tr>
@@ -6897,14 +5527,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -6919,16 +5545,12 @@ Integration Suite
 
 Enhancements for Flow Step Recommendation
 
-
-
 </td>
 <td valign="top">
 
 You can now see flow step recommendations on the sequence connectors between two flow steps. Earlier, the machine learning based recommendation was available only for the flow steps.
 
 See [Using Flow Step Recommendation](../Development/using-flow-step-recommendation-eb00f23.md).
-
-
 
 </td>
 <td valign="top">
@@ -6940,14 +5562,10 @@ See [Using Flow Step Recommendation](../Development/using-flow-step-recommendati
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-03-06
-
-
 
 </td>
 </tr>
@@ -6956,28 +5574,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -6997,14 +5607,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-02-14
-
-
 
 </td>
 </tr>
@@ -7013,28 +5619,20 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
 
 Neo
 
-
-
 </td>
 <td valign="top">
 
 Software Version Update
-
-
 
 </td>
 <td valign="top">
@@ -7056,14 +5654,10 @@ Software Version Update
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-02-14
-
-
 
 </td>
 </tr>
@@ -7072,14 +5666,10 @@ Changed
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -7094,16 +5684,12 @@ Integration Suite
 
 Deleting a Mapping Guideline
 
-
-
 </td>
 <td valign="top">
 
 You can now choose to delete a MAG including its history or only the specific version of a MAG.
 
 See: [Deleting a Mapping Guideline](../IntegrationAdvisor/deleting-a-mapping-guideline-8e3a934.md) 
-
-
 
 </td>
 <td valign="top">
@@ -7115,14 +5701,10 @@ See: [Deleting a Mapping Guideline](../IntegrationAdvisor/deleting-a-mapping-gui
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-02-14
-
-
 
 </td>
 </tr>
@@ -7131,14 +5713,10 @@ Changed
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -7153,16 +5731,12 @@ Integration Suite
 
 AmazonWebServices Sender Adapter
 
-
-
 </td>
 <td valign="top">
 
 The Amazon Web Services \(AWS\) sender adapter enables your tenant to transfer data to AWS cloud platform.
 
 See: [AmazonWebServices Sender Adapter](../Development/amazonwebservices-sender-adapter-16772e3.md).
-
-
 
 </td>
 <td valign="top">
@@ -7174,14 +5748,10 @@ See: [AmazonWebServices Sender Adapter](../Development/amazonwebservices-sender-
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-02-14
-
-
 
 </td>
 </tr>
@@ -7190,14 +5760,10 @@ New
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integration Suite
-
-
 
 </td>
 <td valign="top">
@@ -7212,14 +5778,10 @@ Integration Suite
 
 API-based Integration Artifacts
 
-
-
 </td>
 <td valign="top">
 
 You can now create new integration artifacts of type REST, SOAP, and OData APIs. Certain constraints might apply with regard to the usage of this feature based on your license model. See: [Develop API-Based Integration Artifacts](../Development/develop-api-based-integration-artifacts-997501d.md).
-
-
 
 </td>
 <td valign="top">
@@ -7231,14 +5793,10 @@ You can now create new integration artifacts of type REST, SOAP, and OData APIs.
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-02-14
-
-
 
 </td>
 </tr>

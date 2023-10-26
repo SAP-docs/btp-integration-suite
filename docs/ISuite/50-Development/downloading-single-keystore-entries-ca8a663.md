@@ -33,15 +33,11 @@ You can download a key, a single certificate, a complete certificate chain, a ro
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -49,8 +45,6 @@ You can download a key, a single certificate, a complete certificate chain, a ro
     <td valign="top">
     
     *Key Pair* entry
-
-
     
     </td>
     <td valign="top">
@@ -119,8 +113,6 @@ You can download a key, a single certificate, a complete certificate chain, a ro
     <td valign="top">
     
     *Certificate* entry
-
-
     
     </td>
     <td valign="top">
@@ -130,8 +122,6 @@ You can download a key, a single certificate, a complete certificate chain, a ro
     A file with the name `<alias>.cer` is downloaded.
 
     It contains the base64-encoded certificate.
-
-
     
     </td>
     </tr>

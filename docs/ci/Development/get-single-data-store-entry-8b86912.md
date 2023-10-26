@@ -13,21 +13,15 @@ To get a single data store entry, perform the following call:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Purpose
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `​/DataStoreEntries(Id='{EntryId}',DataStoreName='{DataStoreName}',IntegrationFlow='{IntegrationFlowName}',Type='{Type}')` 
 
-
-
 </td>
 <td valign="top">
 
 Gets a single data store entry.
-
-
 
 </td>
 </tr>

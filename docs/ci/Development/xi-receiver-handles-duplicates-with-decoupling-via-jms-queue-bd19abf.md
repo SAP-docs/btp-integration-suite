@@ -48,14 +48,10 @@ At the receiver side, the scenario uses an XI receiver adapter. On the *Delive
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -64,14 +60,10 @@ Setting
 
 *XI Message ID Determination*
 
-
-
 </td>
 <td valign="top">
 
 Map
-
-
 
 </td>
 </tr>
@@ -80,14 +72,10 @@ Map
 
 *Source for XI Message ID*
 
-
-
 </td>
 <td valign="top">
 
 $\{header. SAP\_MessageProcessingLogID \}
-
-
 
 </td>
 </tr>
@@ -96,14 +84,10 @@ $\{header. SAP\_MessageProcessingLogID \}
 
 *Quality Of Service* 
 
-
-
 </td>
 <td valign="top">
 
 Exactly Once
-
-
 
 </td>
 </tr>
@@ -112,14 +96,10 @@ Exactly Once
 
 *Temporary Storage*
 
-
-
 </td>
 <td valign="top">
 
 JMS Queue
-
-
 
 </td>
 </tr>
@@ -147,15 +127,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -163,15 +139,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     OWN
-
-
     
     </td>
     </tr>
@@ -179,15 +151,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     User
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -195,15 +163,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     Password
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

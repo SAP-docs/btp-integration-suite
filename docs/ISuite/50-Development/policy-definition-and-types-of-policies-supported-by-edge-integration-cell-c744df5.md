@@ -18,28 +18,20 @@ A policy is a program that executes a specific function at runtime. They provide
 
 Policy Types
 
-
-
 </th>
 <th valign="top">
 
 Policy
-
-
 
 </th>
 <th valign="top">
 
 Policy Definition
 
-
-
 </th>
 <th valign="top">
 
 Important Notes
-
-
 
 </th>
 </tr>
@@ -48,21 +40,15 @@ Important Notes
 
 Security Policy
 
-
-
 </td>
 <td valign="top">
 
 Authentication
 
-
-
 </td>
 <td valign="top">
 
 Different API may have various authentication mechanisms. The authentication mechanisms that are currently supported are Basic authentication, Client Certificate, and oAuth. For more information, see [Authentication](authentication-fa6eec4.md).
-
-
 
 </td>
 <td valign="top">
@@ -83,14 +69,10 @@ Different API may have various authentication mechanisms. The authentication mec
 
 Authorization
 
-
-
 </td>
 <td valign="top">
 
 This policy evaluates whether a user should be permitted to access a protected API. For more information, see [Authorization](authorization-6658409.md) 
-
-
 
 </td>
 <td valign="top">
@@ -104,21 +86,15 @@ This policy evaluates whether a user should be permitted to access a protected A
 
 JSON Threat Protection
 
-
-
 </td>
 <td valign="top">
 
 Minimizes the risk posed by content-level attacks by enabling specific limits on various JSON structures, such as arrays and strings. For more information, see [JSON Threat Protection](json-threat-protection-c4991a6.md).
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -127,21 +103,15 @@ Minimizes the risk posed by content-level attacks by enabling specific limits on
 
 Traffic Management Policies
 
-
-
 </td>
 <td valign="top">
 
 Quota Policy
 
-
-
 </td>
 <td valign="top">
 
 The Quota policy defines the number of request messages an application can submit to an API endpoint over a given period of time. For more information, see [Quota Policy](quota-policy-2aecf15.md).
-
-
 
 </td>
 <td valign="top">
@@ -150,8 +120,6 @@ When the quota limit specified in the policy is reached, the subsequent calls to
 
 The quota window opens at 00:00 \(12 AM\) and ends at 00:05 \(12:05 AM\). Let us assume that the quota allotted is 3 requests in the specified period of 5 minutes. At 00:03, if the quota limit is reached, the subsequent requests post 00:03 are rejected until the window is reset at 00:05.
 
-
-
 </td>
 </tr>
 <tr>
@@ -159,21 +127,15 @@ The quota window opens at 00:00 \(12 AM\) and ends at 00:05 \(12:05 AM\). Let us
 
 Surge Protection
 
-
-
 </td>
 <td valign="top">
 
 The surge protection policy protects the backend against sudden traffic spikes. For more information, see [Surge Protection](surge-protection-3d14745.md).
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -182,21 +144,15 @@ The surge protection policy protects the backend against sudden traffic spikes. 
 
 IP Filter
 
-
-
 </td>
 <td valign="top">
 
 The IP filter policy allows or denies calls from specific IP addresses or address ranges. For more information, see [IP Filter](ip-filter-3a8b424.md) 
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

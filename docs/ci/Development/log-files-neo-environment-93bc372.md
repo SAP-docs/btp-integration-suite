@@ -44,14 +44,10 @@ Assign the following roles:
 
 Resource
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -59,8 +55,6 @@ Description
 <td valign="top">
 
 Log File Archives
-
-
 
 </td>
 <td valign="top">
@@ -87,14 +81,10 @@ Two kinds of log files are created during message processing:
 
 Log Files
 
-
-
 </td>
 <td valign="top">
 
 Represent a set of log files in a compressed file \(zip format\).
-
-
 
 </td>
 </tr>

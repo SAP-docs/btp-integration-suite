@@ -8,7 +8,7 @@ Download your integration packages to your local system, so that you can provide
 
 ## Procedure
 
-1.  Choose *Design* \> *Integrations* to view the list of integration packages.
+1.  Choose *Design* \> *Integrations and APIs* \> *s* to view the list of integration packages.
 
 2.  Select the required integration package.
 

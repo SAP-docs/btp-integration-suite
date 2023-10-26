@@ -51,15 +51,11 @@ More information: [Creating a Key Pair](../ConnectionSetup/creating-a-key-pair-b
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -67,8 +63,6 @@ More information: [Creating a Key Pair](../ConnectionSetup/creating-a-key-pair-b
     <td valign="top">
     
     *Add* 
-
-
     
     </td>
     <td valign="top">
@@ -88,8 +82,6 @@ More information: [Creating a Key Pair](../ConnectionSetup/creating-a-key-pair-b
     <td valign="top">
     
     *Replace* 
-
-
     
     </td>
     <td valign="top">
@@ -99,8 +91,6 @@ More information: [Creating a Key Pair](../ConnectionSetup/creating-a-key-pair-b
     Replaces the whole keyring with the uploaded one \(replaces only the keys that are already available\).
 
     You need to confirm the replacement of the existing keys.
-
-
     
     </td>
     </tr>

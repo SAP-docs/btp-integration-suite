@@ -58,14 +58,10 @@ After you’ve specified the runtime view, check the details view list with the 
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Name of the keystore.
-
-
 
 </td>
 </tr>
@@ -74,14 +70,10 @@ Name of the keystore.
 
 *Entries*
 
-
-
 </td>
 <td valign="top">
 
 Number of associated entries within the keystore.
-
-
 
 </td>
 </tr>
@@ -89,8 +81,6 @@ Number of associated entries within the keystore.
 <td valign="top">
 
 *Runtimes*
-
-
 
 </td>
 <td valign="top">
@@ -108,8 +98,6 @@ Number of runtimes associated with the keystore.
 <td valign="top">
 
 *Status*
-
-
 
 </td>
 <td valign="top">
@@ -149,8 +137,6 @@ The following statuses are possible:
 
 *Actions*
 
-
-
 </td>
 <td valign="top">
 
@@ -171,8 +157,6 @@ Choose the *All* view to:
 
 
 For more information, see: [Interact with Keystores from Edge Integration Cell](interact-with-keystores-from-edge-integration-cell-d4972b8.md).
-
-
 
 </td>
 </tr>

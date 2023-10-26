@@ -29,14 +29,10 @@ Each adapter allows you to set up a specific security level based on the underly
 
 Transport Protocol
 
-
-
 </th>
 <th valign="top">
 
 Transport-Level Security
-
-
 
 </th>
 </tr>
@@ -44,8 +40,6 @@ Transport-Level Security
 <td valign="top">
 
 SFTP \(Secure Shell File Transfer Protocol\)
-
-
 
 </td>
 <td valign="top">
@@ -80,8 +74,6 @@ Supported versions:
 <td valign="top">
 
 HTTP\(S\) \(Hypertext Transfer Protocol Secure\)
-
-
 
 </td>
 <td valign="top">
@@ -120,8 +112,6 @@ Various authentication options \(basic authentication using user credentials, cl
 
 SMTP \(Simple Mail Transfer Protocol\)
 
-
-
 </td>
 <td valign="top" rowspan="3">
 
@@ -143,16 +133,12 @@ To authenticate against the e-mail server, you can send user name and password i
 
 POP3 \(Post Office Protocol \)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 IMAP \(Internet Message Access Protocol \)
-
-
 
 </td>
 </tr>
@@ -179,14 +165,10 @@ The following standards and algorithms are supported:
 
 Standard
 
-
-
 </th>
 <th valign="top">
 
 Security Feature
-
-
 
 </th>
 </tr>
@@ -195,14 +177,10 @@ Security Feature
 
 PKCS\#7/CMS Enveloped Data and Signed Data
 
-
-
 </td>
 <td valign="top">
 
 Encryption/decryption of message content
-
-
 
 </td>
 </tr>
@@ -210,8 +188,6 @@ Encryption/decryption of message content
 <td valign="top">
 
 Signing/verification of payload
-
-
 
 </td>
 </tr>
@@ -220,14 +196,10 @@ Signing/verification of payload
 
 PKCS\#7/CMS Enveloped and Signed Data
 
-
-
 </td>
 <td valign="top">
 
 Encryption/decryption and signing/verification of payload
-
-
 
 </td>
 </tr>
@@ -236,14 +208,10 @@ Encryption/decryption and signing/verification of payload
 
 Open Pretty Good Privacy \(PGP\)
 
-
-
 </td>
 <td valign="top">
 
 Encryption/decryption of message content
-
-
 
 </td>
 </tr>
@@ -252,8 +220,6 @@ Encryption/decryption of message content
 
 Encryption/decryption and signing/verification of message
 
-
-
 </td>
 </tr>
 <tr>
@@ -261,14 +227,10 @@ Encryption/decryption and signing/verification of message
 
 XML Signature
 
-
-
 </td>
 <td valign="top">
 
 Signing/verification of payload
-
-
 
 </td>
 </tr>
@@ -277,14 +239,10 @@ Signing/verification of payload
 
 WS-Security
 
-
-
 </td>
 <td valign="top">
 
 Signing/verification of SOAP body
-
-
 
 </td>
 </tr>

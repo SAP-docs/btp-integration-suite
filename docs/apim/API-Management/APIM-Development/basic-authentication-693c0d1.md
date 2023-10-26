@@ -60,14 +60,10 @@ An example payload for the policy is as follows:
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -76,14 +72,10 @@ An example payload for the policy is as follows:
 
 Operation \(Mandatory\)
 
-
-
 </td>
 <td valign="top">
 
 Supports values `Encode` or `Decode`. This setting will enable you to encode credentials to populate an HTTP header on an outbound request, or decode encoded credentials from HTTP header of an inbound request.
-
-
 
 </td>
 </tr>
@@ -92,14 +84,10 @@ Supports values `Encode` or `Decode`. This setting will enable you to encode cre
 
 IgnoreUnresolvedVariables \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 Supports values `true` or `false`. This setting determines whether to throw an error if the variables defined in the policy is not resolved. If set to true, the policy will not throw an error if a variable cannot be resolved. In basic authentication policy, it is recommended to set this value to false, because it is beneficial to throw an error if a username or password cannot be found in the variables specified.
-
-
 
 </td>
 </tr>
@@ -107,8 +95,6 @@ Supports values `true` or `false`. This setting determines whether to throw an e
 <td valign="top">
 
 User ref \(Mandatory\)
-
-
 
 </td>
 <td valign="top">
@@ -119,16 +105,12 @@ For encoding, set a reference attribute to the username to dynamically retrieve 
 
 For decoding, specify the flow variable in which the decoded username is to be placed.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Password ref \(Mandatory\)
-
-
 
 </td>
 <td valign="top">
@@ -139,8 +121,6 @@ For encoding, set a reference attribute to the password to dynamically retrieve 
 
 For decoding, specify the flow variable in which the decoded password is to be placed.
 
-
-
 </td>
 </tr>
 <tr>
@@ -148,14 +128,10 @@ For decoding, specify the flow variable in which the decoded password is to be p
 
 AssignTo
 
-
-
 </td>
 <td valign="top">
 
 Assigns the encoded value of username and password to a variable. Do not use this if the operation is `Decode`.
-
-
 
 </td>
 </tr>
@@ -164,14 +140,10 @@ Assigns the encoded value of username and password to a variable. Do not use thi
 
 Source
 
-
-
 </td>
 <td valign="top">
 
 The encoded value of username and password.is retrieved from Source. Do not use this if the operation is `Encode`.
-
-
 
 </td>
 </tr>
@@ -188,14 +160,10 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -204,14 +172,10 @@ Cause
 
 UnresolvedVariable
 
-
-
 </td>
 <td valign="top">
 
 The required source variables for the decode or encode are not present. This error can only occur if IgnoreUnresolvedVariables is false.
-
-
 
 </td>
 </tr>
@@ -220,14 +184,10 @@ The required source variables for the decode or encode are not present. This err
 
 InvalidBasicAuthenticationSource
 
-
-
 </td>
 <td valign="top">
 
 On a decode when the incoming Base64 encoded string does not contain a valid value or the header is malformed \(for example does not start with "Basic"\).
-
-
 
 </td>
 </tr>
@@ -236,14 +196,10 @@ On a decode when the incoming Base64 encoded string does not contain a valid val
 
 UserNameRequired
 
-
-
 </td>
 <td valign="top">
 
 The <User\> element must be present for the named operation. See the fault string.
-
-
 
 </td>
 </tr>
@@ -252,14 +208,10 @@ The <User\> element must be present for the named operation. See the fault strin
 
 PasswordRequired
 
-
-
 </td>
 <td valign="top">
 
 The <Password\> element must be present for the named operation. See the fault string.
-
-
 
 </td>
 </tr>
@@ -268,14 +220,10 @@ The <Password\> element must be present for the named operation. See the fault s
 
 AssignToRequired
 
-
-
 </td>
 <td valign="top">
 
 The <AssignTo\> element must be present for the named operation. See the fault string.
-
-
 
 </td>
 </tr>
@@ -284,14 +232,10 @@ The <AssignTo\> element must be present for the named operation. See the fault s
 
 SourceRequired
 
-
-
 </td>
 <td valign="top">
 
 The <Source\> element must be present for the named operation. See the fault string.
-
-
 
 </td>
 </tr>
@@ -308,21 +252,15 @@ Following fault variables are set when the policy triggers an error at runtime:
 
 Variable Set
 
-
-
 </th>
 <th valign="top">
 
 Where
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -331,8 +269,6 @@ Example
 
 \[prefix\].\[policy\_name\].failed
 
-
-
 </td>
 <td valign="top">
 
@@ -340,14 +276,10 @@ The \[prefix\] is BasicAuthentication.
 
 The \[policy\_name\] is the name of the policy that threw the error.
 
-
-
 </td>
 <td valign="top">
 
 BasicAuthentication.BA-Authenticate.failed = true
-
-
 
 </td>
 </tr>
@@ -356,21 +288,15 @@ BasicAuthentication.BA-Authenticate.failed = true
 
 fault.\[error\_name\]
 
-
-
 </td>
 <td valign="top">
 
 \[error\_name\] = The specific error name to check for as listed in the table above.
 
-
-
 </td>
 <td valign="top">
 
 fault.name Matches "UnresolvedVariable"
-
-
 
 </td>
 </tr>

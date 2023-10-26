@@ -17,14 +17,10 @@ The main integration flow calls the error handling integration flow if an except
 
 Integration Flow
 
-
-
 </th>
 <th valign="top">
 
 Task
-
-
 
 </th>
 </tr>
@@ -33,14 +29,10 @@ Task
 
 *Handle Errors - Outsource Error Handling - Main Integration Flow with Message End Event*
 
-
-
 </td>
 <td valign="top">
 
 Performs the main business-related steps \(calling WebShop component\).
-
-
 
 </td>
 </tr>
@@ -49,14 +41,10 @@ Performs the main business-related steps \(calling WebShop component\).
 
 *Handle Errors - Outsource Error Handling - Error Handling Flow*
 
-
-
 </td>
 <td valign="top">
 
 Sends an error message to the generic receiver \(error handling-related steps\).
-
-
 
 </td>
 </tr>
@@ -65,14 +53,10 @@ Sends an error message to the generic receiver \(error handling-related steps\).
 
 *Generic Receiver*
 
-
-
 </td>
 <td valign="top">
 
 Creates a Data Store entry to represent the receiver system \(both in success and error cases\).
-
-
 
 </td>
 </tr>

@@ -41,14 +41,10 @@ Depending on the number of OData objects in the model, objects might appear too 
 
 Button
 
-
-
 </th>
 <th valign="top">
 
 Usage
-
-
 
 </th>
 </tr>
@@ -56,8 +52,6 @@ Usage
 <td valign="top">
 
 ![](images/Navigation_Compass_197ecfe.png)
-
-
 
 </td>
 <td valign="top">
@@ -83,8 +77,6 @@ Use the compass to control the perspective of the model:
 <td valign="top">
 
 ![](images/Navigation_Zoom_Level_8ed7584.png)
-
-
 
 </td>
 <td valign="top">

@@ -48,14 +48,10 @@ Once you have created a receiver channel and selected the SFTP receiver adapter,
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -64,14 +60,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the SFTP channel.
-
-
 
 </td>
 </tr>
@@ -86,14 +78,10 @@ Select the *Target* tab. Once you have created a receiver channel and selected t
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -101,8 +89,6 @@ Description
 <td valign="top">
 
 *Directory* 
-
-
 
 </td>
 <td valign="top">
@@ -113,16 +99,12 @@ Example: `parentdirectory/childdirectory`
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *File Name* 
-
-
 
 </td>
 <td valign="top">
@@ -140,16 +122,12 @@ The endpoint URL that is actually used at runtime is displayed in the message pr
 
 *Append Timestamp* and dynamically configuring *File Name* \(through a Camel simple expression\) must not be used together. The reason is that using the *Append Timestamp* option results in generating a simple expression for the date. Both simple expressions result in an invalid expression that cannot be processed correctly.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Append Timestamp* 
-
-
 
 </td>
 <td valign="top">
@@ -179,8 +157,6 @@ The appended timestamp relates to Greenwich Mean Time \(GMT\) time zone.
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
@@ -188,16 +164,12 @@ Host name or IP address of the SFTP server and an optional port, for example, `m
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -228,8 +200,6 @@ The type of proxy that you are using to connect to the target system.
 
 \(only if *On-Premise* or *Dynamic* is selected for *Proxy Type*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -237,16 +207,12 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -298,16 +264,12 @@ You have the following options:
 
 \(only if *User Name/Password*, *Dual*, or *Dynamic* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Name of the *User Credential* artifact that contains the user name and password.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
-
-
 
 </td>
 </tr>
@@ -318,8 +280,6 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 \(only if *Public Key* or *Dynamic* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -328,8 +288,6 @@ ID of the user performing the file transfer.
 Make sure that the user name contains no other characters than `A-z`, `0-9`, `_` \(underscore\), `-` \(hyphen\), `/` \(slash\), `?` \(question mark\), `@` \(at\), `!` \(exclamation mark\), `$` \(dollar sign \), `'` \(apostrophe\), `(`, `)` \(brackets\), `*` \(asterisk\), `+` \(plus sign\), `,` \(comma\), `;` \(semicolon\), `=` \(equality sign\), `.` \(dot\), or `~` \(tilde\). Otherwise, an attempt for anonymous login is made which results in an error.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
-
-
 
 </td>
 </tr>
@@ -340,16 +298,12 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 \(only if *Public Key*, *Dual*, or *Dynamic* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Alias to identify the private key in the keystore used for the communication with the SFTP server.
 
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
-
-
 
 </td>
 </tr>
@@ -358,8 +312,6 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 *Timeout \(in ms\)* 
 
-
-
 </td>
 <td valign="top">
 
@@ -367,16 +319,12 @@ Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted whi
 
 If the property `SAP_FtpTimeout` is defined, its value is used to specify this parameter at runtime and will overrun the timeout specified in the UI.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Maximum Reconnect Attempts* 
-
-
 
 </td>
 <td valign="top">
@@ -388,16 +336,12 @@ Maximum number of attempts allowed to reconnect to the SFTP server before messag
 
 If the property `SAP_FtpMaxReconnect` is defined, its value is used to specify this parameter at runtime.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Reconnect Delay \(in ms\)* 
-
-
 
 </td>
 <td valign="top">
@@ -408,16 +352,12 @@ Default value: `1000`
 
 If the property `SAP_FtpMaxReconDelay` is defined, its value is used to specify this parameter at runtime.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Automatically Disconnect* 
-
-
 
 </td>
 <td valign="top">
@@ -426,8 +366,6 @@ Disconnect from the SFTP server after each message processing.
 
 If the property `SAP_FtpDisconnect` is defined, its value is used to specify this parameter at runtime \(possible values: `true` and `false`\).
 
-
-
 </td>
 </tr>
 <tr>
@@ -435,16 +373,12 @@ If the property `SAP_FtpDisconnect` is defined, its value is used to specify thi
 
 *Enable Support for Deprecated Algorithms* 
 
-
-
 </td>
 <td valign="top">
 
 Select to allow several deprecated key exchange, public key, host key, and encryption algorithms like the ‘diffie-hellman-group1-sha1’ key exchange algorithm or the ‘ssh-rsa’ host key and public key algorithm.
 
 For more information on compatibility and support, see SAP KBA [3079510](https://me.sap.com/notes/3079510).
-
-
 
 </td>
 </tr>
@@ -459,14 +393,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -475,16 +405,12 @@ Description
 
 *Change Directories Stepwise* 
 
-
-
 </td>
 <td valign="top">
 
 If selected, changes directory levels one at a time \(selected by default\).
 
 If the property `SAP_FtpStepwise` is defined, its value is used to specify this parameter at runtime \(possible values: `true` and `false`\).
-
-
 
 </td>
 </tr>
@@ -493,16 +419,12 @@ If the property `SAP_FtpStepwise` is defined, its value is used to specify this 
 
 *Create Directories*
 
-
-
 </td>
 <td valign="top">
 
 If selected, creates missing directory levels as provided in the file's pathname \(selected by default\).
 
 If the property `SAP_FtpCreateDir` is defined, its value is used to specify this parameter at runtime \(possible values: `true` and `false`\).
-
-
 
 </td>
 </tr>
@@ -511,8 +433,6 @@ If the property `SAP_FtpCreateDir` is defined, its value is used to specify this
 
 *Flatten File Names* 
 
-
-
 </td>
 <td valign="top">
 
@@ -520,16 +440,12 @@ Flatten the file path by removing the directory levels so that only the file nam
 
 If the property `SAP_FtpFlattenFileName` is defined, its value is used to specify this parameter at runtime \(possible values: `true` and `false`\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Prevent Directory Traversal* 
-
-
 
 </td>
 <td valign="top">
@@ -548,8 +464,6 @@ If the file contains any backward path traversals such as `\..\` or `/../..`, th
 
 *Use Fast Exists Test*
 
-
-
 </td>
 <td valign="top">
 
@@ -557,16 +471,12 @@ If selected, file exists check is performed on the SFTP server. If your server d
 
 If the property `SAP_FtpFastExistsCheck` is defined, its value is used to specify this parameter at runtime.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Handling for Existing Files*
-
-
 
 </td>
 <td valign="top">
@@ -589,8 +499,6 @@ There are the following options:
 
 If the property `SAP_FtpAfterProc` is defined, its value is used to specify this parameter at runtime \(possible values: `Override`, `Append`, `Fail` and `Ignore`\).
 
-
-
 </td>
 </tr>
 <tr>
@@ -599,8 +507,6 @@ If the property `SAP_FtpAfterProc` is defined, its value is used to specify this
 *Use Temporary File*
 
 \(only if *Fail*, *Ignore*, or *Override* is selected for *Handling for Existing Files*\)
-
-
 
 </td>
 <td valign="top">
@@ -621,16 +527,12 @@ If selected, files are stored temporarily with a temporary file name before bein
 
 \(only if *Use Temporary File* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 Enter a unique temporary file name.
 
 The file name has to be unique so that the temporary file is not overwritten by parallel running messages. This can be achieved by using variable parts in the file name, such as `${file:name}.tmp` or `target_${exchangeId}.temp`.
-
-
 
 </td>
 </tr>

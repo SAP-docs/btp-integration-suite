@@ -57,14 +57,10 @@ These variables are set when the GenerateAuthorizationCode policy operation exec
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -73,14 +69,10 @@ Description
 
 oauthv2authcode.\{policy\_name\}.code
 
-
-
 </td>
 <td valign="top">
 
 The authorization code generated when the policy executes.
-
-
 
 </td>
 </tr>
@@ -89,14 +81,10 @@ The authorization code generated when the policy executes.
 
 oauthv2authcode.\{policy\_name\}.redirect\_uri
 
-
-
 </td>
 <td valign="top">
 
 The redirect URI associated with the registered client app.
-
-
 
 </td>
 </tr>
@@ -105,14 +93,10 @@ The redirect URI associated with the registered client app.
 
 oauthv2authcode.\{policy\_name\}.scope
 
-
-
 </td>
 <td valign="top">
 
 The optional OAuth scope passed in the client request.
-
-
 
 </td>
 </tr>
@@ -121,14 +105,10 @@ The optional OAuth scope passed in the client request.
 
 oauthv2authcode.\{policy\_name\}.client\_id
 
-
-
 </td>
 <td valign="top">
 
 The client ID passed in the client request.
-
-
 
 </td>
 </tr>

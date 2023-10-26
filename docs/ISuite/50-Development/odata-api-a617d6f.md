@@ -8,7 +8,7 @@ The OData API is implemented as a REST API and the technical protocol is Open Da
 
 You can find the OData API on SAP Business Accelerator Hub at:
 
-[https://api.sap.com/package/CloudIntegrationAPI/odata](https://api.sap.com/package/CloudIntegrationAPI/odata)
+[SAP Cloud Integration](https://api.sap.com/package/CloudIntegrationAPI/odata)
 
 A prerequisite for using the OData API is that your user is connected to Cloud Integration and that you have access to an OData client.
 
@@ -25,14 +25,10 @@ The OData API covers the following aspects:
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -41,14 +37,10 @@ Description
 
 [Integration Content](integration-content-d1679a8.md) 
 
-
-
 </td>
 <td valign="top">
 
 Get deployed integration content or deploy/undeploy integration artifacts.
-
-
 
 </td>
 </tr>
@@ -57,14 +49,10 @@ Get deployed integration content or deploy/undeploy integration artifacts.
 
 [Log Files, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/93bc3722533741c7a48eec6a8352f060.html "Access technical system logs written during message processing on the worker/runtime node.") :arrow_upper_right: 
 
-
-
 </td>
 <td valign="top">
 
 Get an overview of HTTP and trace log files.
-
-
 
 </td>
 </tr>
@@ -73,14 +61,10 @@ Get an overview of HTTP and trace log files.
 
 [Message Processing Logs](message-processing-logs-827a2d7.md) 
 
-
-
 </td>
 <td valign="top">
 
 Get an overview of the messages processed on a tenant and get the details for individual messages.
-
-
 
 </td>
 </tr>
@@ -89,14 +73,10 @@ Get an overview of the messages processed on a tenant and get the details for in
 
 [Message Stores](message-stores-1aab5e9.md) 
 
-
-
 </td>
 <td valign="top">
 
 Get data from the Message Store, such as message payloads, headers, properties, or attachments for processed messages.
-
-
 
 </td>
 </tr>
@@ -105,14 +85,10 @@ Get data from the Message Store, such as message payloads, headers, properties, 
 
 [Partner Directory](partner-directory-0fe80dc.md) 
 
-
-
 </td>
 <td valign="top">
 
 Get, write, or delete data of the Partner Directory. This content can be used to parameterize integration flows.
-
-
 
 </td>
 </tr>
@@ -121,20 +97,16 @@ Get, write, or delete data of the Partner Directory. This content can be used to
 
 [Security Content](security-content-e01d3f0.md) 
 
-
-
 </td>
 <td valign="top">
 
 Get, write, or delete security content, for example, keystore entries, user credentials, or certificates to user mappings.
 
-
-
 </td>
 </tr>
 </table>
 
-The OData API is structured by a number of entities, grouped on SAP Business Accelerator Hub according to the sections listed in the table above. Each entity \(resource\) is specified by a number of properties, to which filtering options can also be applied.
+The OData API is structured by a number of entities, grouped on SAP Business Accelerator Hub according to the sections listed in the previous table. Each entity \(resource\) is specified by a number of properties, to which filtering options can also be applied.
 
 You can address the collection of entries or a single entry within a collection.
 
@@ -143,7 +115,7 @@ How the entities are related to each other is described in the entity data model
 This documentation provides an overview of the available resources and summarizes the supported HTTP methods and query options for each resource.
 
 > ### Tip:  
-> For more information about the programming model and how the HTTP methods and query options work, see [http://www.odata.org](http://www.odata.org).
+> For more information about the programming model and how the HTTP methods and query options work, see [OData - the Best Way to REST](http://www.odata.org).
 > 
 > OData specification version 2.0 is supported by the Cloud Integration API.
 

@@ -18,14 +18,10 @@ Similarly, the table illustrates how the same fields might have different identi
 
 Source Field
 
-
-
 </th>
 <th valign="top">
 
 Target Field
-
-
 
 </th>
 </tr>
@@ -34,14 +30,10 @@ Target Field
 
 Employee
 
-
-
 </td>
 <td valign="top">
 
 User
-
-
 
 </td>
 </tr>
@@ -50,14 +42,10 @@ User
 
 Employee ID
 
-
-
 </td>
 <td valign="top">
 
 ID
-
-
 
 </td>
 </tr>
@@ -66,14 +54,10 @@ ID
 
 Employee Name
 
-
-
 </td>
 <td valign="top">
 
 Name
-
-
 
 </td>
 </tr>
@@ -82,14 +66,10 @@ Name
 
 Employee Surname
 
-
-
 </td>
 <td valign="top">
 
 LastName
-
-
 
 </td>
 </tr>
@@ -98,14 +78,10 @@ LastName
 
 Date of Birth
 
-
-
 </td>
 <td valign="top">
 
 DOB
-
-
 
 </td>
 </tr>

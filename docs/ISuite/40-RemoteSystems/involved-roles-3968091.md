@@ -13,14 +13,10 @@ The security artifact renewal process requires that different persons perform a 
 
 Role
 
-
-
 </th>
 <th valign="top">
 
 Tasks
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Tasks
 
 Sender/receiver administrator \(at customer side\)
 
-
-
 </td>
 <td valign="top">
 
 Updates the security artifacts owned by the sender/receiver back-end system \(for example, the keystore\).
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ Updates the security artifacts owned by the sender/receiver back-end system \(fo
 
 Integration developer
 
-
-
 </td>
 <td valign="top">
 
 Updates the integration flow in certain use cases.
-
-
 
 </td>
 </tr>
@@ -61,14 +49,10 @@ Updates the integration flow in certain use cases.
 
 Tenant administrator
 
-
-
 </td>
 <td valign="top">
 
 Updates the security artifacts of the tenant \(relevant for outbound communication\).
-
-
 
 </td>
 </tr>
@@ -77,14 +61,10 @@ Updates the security artifacts of the tenant \(relevant for outbound communicati
 
 Load balancer administrator
 
-
-
 </td>
 <td valign="top">
 
 Updates the security artifacts of the load balancer \(relevant for inbound communication\).
-
-
 
 </td>
 </tr>

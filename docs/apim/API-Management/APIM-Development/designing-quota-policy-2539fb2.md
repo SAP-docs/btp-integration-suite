@@ -33,14 +33,10 @@ An example payload for the policy is as follows:
 
 **Elements & Attributes**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -49,8 +45,6 @@ An example payload for the policy is as follows:
 
 StartTime \(Mandatory\)
 
-
-
 </td>
 <td valign="top">
 
@@ -58,16 +52,12 @@ Use this attribute only for Quota policies of type calendar. Indicates the date 
 
 Valid value: date and time, for example 2015-02-09 00:00:00.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Interval \(Mandatory\)
-
-
 
 
 
@@ -80,16 +70,12 @@ Valid value: integer
 
 The ref attribute identifies the variable that provides the value of the Interval.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 TimeUnit \(Mandatory\)
-
-
 
 </td>
 <td valign="top">
@@ -98,8 +84,6 @@ Valid values: second, minute, hour, day, or month
 
 The ref attribute identifies the variable that provides the value of the TimeUnit.
 
-
-
 </td>
 </tr>
 <tr>
@@ -107,14 +91,10 @@ The ref attribute identifies the variable that provides the value of the TimeUni
 
 Allow \(Mandatory\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the maximum number of inbound requests.
-
-
 
 </td>
 </tr>
@@ -122,8 +102,6 @@ Specifies the maximum number of inbound requests.
 <td valign="top">
 
 count \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -136,16 +114,12 @@ Valid value: integer
 
 Default Value: 2000
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 countRef \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -160,16 +134,12 @@ The element Allow count="2000"
 
 `countRef="request.header.allowed_quota"/> has a count header (countRef="request.header.allowed_quota")` along with the count value of 2000.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Identifier \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -178,16 +148,12 @@ Variable used for uniquely identifying the client application.
 
 The ref attribute identifies the variable that provides the value of the Identifier.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 MessageWeight \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -196,16 +162,12 @@ Specifies the weight defined for each message.
 
 Message weight is used to increase impact of request messages that, for example, consume more computational resources than others. For example, you may want to calculate POST messages as being twice as expensive as GET messages. A value representing MessageWeight can be extracted from HTTP headers, query parameters, or an XML or JSON request payload.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Distributed
-
-
 
 </td>
 <td valign="top">
@@ -214,16 +176,12 @@ When set to true, a central counter is maintained that is continuously updated b
 
 Note: Always set this value to true.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 PreciseAtSecondsLevel
-
-
 
 </td>
 <td valign="top">
@@ -234,16 +192,12 @@ Quota precision is set to record at intervals of one second. Use this setting wh
 
 Valid values: true or false
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Synchronous
-
-
 
 </td>
 <td valign="top">
@@ -254,16 +208,12 @@ API call is quota-checked. When synchronous is set to true, you are guaranteed t
 
 Note: Always set this value to true.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 AsynchronousConfiguration\(Optional\)
-
-
 
 
 

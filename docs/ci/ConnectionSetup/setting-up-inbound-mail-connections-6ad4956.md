@@ -23,21 +23,15 @@ The following table lists the options for setting up secure connections for the 
 
 Authentication
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 How to configure \(checklist\) ...
-
-
 
 </th>
 </tr>
@@ -46,16 +40,12 @@ How to configure \(checklist\) ...
 
 Encrypted user/password
 
-
-
 </td>
 <td valign="top">
 
 The mail sender adapter can download e-mails from an e-mail server and access the e-mail body content as well as attachments.
 
 User name and password are hashed before being sent to the server.
-
-
 
 </td>
 <td valign="top" rowspan="2">
@@ -74,16 +64,12 @@ User name and password are hashed before being sent to the server.
 
 Plain user/password
 
-
-
 </td>
 <td valign="top">
 
 The mail sender adapter can download e-mails from an e-mail server and access the e-mail body content as well as attachments.
 
 User name and password are sent in plain text \(only use together with SSL or TLS\).
-
-
 
 </td>
 </tr>

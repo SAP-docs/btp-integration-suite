@@ -66,5 +66,5 @@ The output message of the decoder would be as follows:
 **Related Information**  
 
 
-[https://blogs.sap.com/2020/05/05/cloud-integration-zip-and-compress-capabilities-encoder-decoder-splitter-aggregate/](https://blogs.sap.com/2020/05/05/cloud-integration-zip-and-compress-capabilities-encoder-decoder-splitter-aggregate/)
+[Blog: Cloud Integration – ZIP and Compress Capabilities: Encoder, Decoder, Splitter, Aggregate](https://blogs.sap.com/2020/05/05/cloud-integration-zip-and-compress-capabilities-encoder-decoder-splitter-aggregate/)
 

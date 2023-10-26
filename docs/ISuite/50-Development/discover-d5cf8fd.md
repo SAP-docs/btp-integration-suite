@@ -13,21 +13,15 @@ The *Discover* section of the Integration Suite allows you to explore the assets
 
 Capability
 
-
-
 </th>
 <th valign="top">
 
 Tab
 
-
-
 </th>
 <th valign="top">
 
 Link
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Link
 
 API Management
 
-
-
 </td>
 <td valign="top">
 
 APIs
 
-
-
 </td>
 <td valign="top">
 
 [Discover API Packages](discover-api-packages-5cb804c.md)
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ APIs
 
 Cloud Integration
 
-
-
 </td>
 <td valign="top">
 
 Integrations
 
-
-
 </td>
 <td valign="top">
 
 [Working with Prepackaged Integration Content](working-with-prepackaged-integration-content-bd2ed3e.md)
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Integrations
 
 Trading Partner Management
 
-
-
 </td>
 <td valign="top">
 
 B2B Scenarios
 
-
-
 </td>
 <td valign="top">
 
 [Integration Flow Configuration](integration-flow-configuration-0ff6229.md)
-
-
 
 </td>
 </tr>
@@ -105,21 +81,15 @@ B2B Scenarios
 
 Integration Advisor
 
-
-
 </td>
 <td valign="top">
 
 Custom messages, MIGs, MAGs
 
-
-
 </td>
 <td valign="top">
 
 [Library of Type Systems](library-of-type-systems-740136b.md)
-
-
 
 </td>
 </tr>

@@ -15,14 +15,10 @@ Integration Assessment comes with the following key characteristic groups:
 
 Key Characteristic Group
 
-
-
 </th>
 <th valign="top">
 
 Key Characteristic Examples
-
-
 
 </th>
 </tr>
@@ -32,8 +28,6 @@ Key Characteristic Examples
 Connectivity
 
 Contains criteria important to implement connections between the systems of the enterprise landscape.
-
-
 
 </td>
 <td valign="top">
@@ -58,14 +52,10 @@ Integration use cases
 
 Contains patterns, or reusable solutions for recurring integration problems, for the data integration and process integration style.
 
-
-
 </td>
 <td valign="top">
 
 Patterns relevant for the data integration style: Common use case patterns \(including relevant cross use cases\) for data integration.
-
-
 
 </td>
 </tr>
@@ -74,14 +64,10 @@ Patterns relevant for the data integration style: Common use case patterns \(inc
 
 Metadata management
 
-
-
 </td>
 <td valign="top">
 
 Data Cataloging: Allows you to discover, classify, and profile data to be stored in one central data catalog.
-
-
 
 </td>
 </tr>
@@ -90,14 +76,10 @@ Data Cataloging: Allows you to discover, classify, and profile data to be stored
 
 Monitoring and operations
 
-
-
 </td>
 <td valign="top">
 
 Business-oriented monitoring: Allows business users to monitor the execution status \(including errors\) of integration scenarios.
-
-
 
 </td>
 </tr>
@@ -106,14 +88,10 @@ Business-oriented monitoring: Allows business users to monitor the execution sta
 
 Transformations
 
-
-
 </td>
 <td valign="top">
 
 Data transformation: Level of data structure transformation \(such as mappings\) and/or data translation that is required for the receiving system to consume the data.
-
-
 
 </td>
 </tr>
@@ -148,7 +126,7 @@ There are two different key characteristic types:
 > 
 > The predefined *Business-Oriented Monitoring* key characteristic has the type *Single*.
 > 
-> You can answer it only with**Yes** or **No** .
+> You can answer it only with **Yes** or **No** .
 > 
 > The associated question is:
 > 

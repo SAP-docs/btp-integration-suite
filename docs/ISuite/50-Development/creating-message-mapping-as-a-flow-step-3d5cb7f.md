@@ -214,14 +214,14 @@ Now that you've defined the mapping, proceed with further actions.
 
         The script editor is launched.
 
-    3.  Enter the script for the custom function you want to create and choose *OK*
+    3.  Enter the script for the custom function you want to create and choose *OK*.
 
     4.  To assign a function library object as an user-defined function, see: [Consuming Function Library in Message Mapping](consuming-function-library-in-message-mapping-d4dcb4a.md).
 
 
 6.  Configure the settings of the message mapping to handle basic data types in the target JSON schema.
 
-    1.  Choose the <span class="SAP-icons"></span> \(Settings\) icon.
+    1.  Choose <span class="SAP-icons"></span> \(Settings\).
 
     2.  In the *Basic Data Type Handling* section, select the target output type that you want.
 
@@ -237,7 +237,7 @@ Now that you've defined the mapping, proceed with further actions.
 
 ## Results
 
-The setup would look similar to this screenshot after following the steps mentioned.
+After following the steps mentioned, the setup would be similar to the next screenshot.
 
 The highlighted sections briefly explain the various features and behaviors of elements in the mapping viewer.
 
@@ -250,14 +250,10 @@ The highlighted sections briefly explain the various features and behaviors of e
 
 Section in Screenshot
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -266,14 +262,10 @@ Description
 
 1
 
-
-
 </td>
 <td valign="top">
 
 Represents the source structure.
-
-
 
 </td>
 </tr>
@@ -282,14 +274,10 @@ Represents the source structure.
 
 2
 
-
-
 </td>
 <td valign="top">
 
 Represents the target structure.
-
-
 
 </td>
 </tr>
@@ -298,14 +286,10 @@ Represents the target structure.
 
 3
 
-
-
 </td>
 <td valign="top">
 
 If any of the entities \(source or target\) not visible, a dotted line indicates the calculated position of the invisible entity.
-
-
 
 </td>
 </tr>
@@ -314,14 +298,10 @@ If any of the entities \(source or target\) not visible, a dotted line indicates
 
 4
 
-
-
 </td>
 <td valign="top">
 
 Solid lines represent visible source and target entities.
-
-
 
 </td>
 </tr>
@@ -330,14 +310,10 @@ Solid lines represent visible source and target entities.
 
 5
 
-
-
 </td>
 <td valign="top">
 
 If you select a line, both source and target entities come to the center in the table, and the line becomes solid.
-
-
 
 </td>
 </tr>
@@ -346,14 +322,10 @@ If you select a line, both source and target entities come to the center in the 
 
 6
 
-
-
 </td>
 <td valign="top">
 
 This section represents the functions of the selected mapping.
-
-
 
 </td>
 </tr>
@@ -361,8 +333,6 @@ This section represents the functions of the selected mapping.
 <td valign="top">
 
 7
-
-
 
 </td>
 <td valign="top">
@@ -373,16 +343,12 @@ The search result highlights the nodes in the structure that match the search te
 
 You can view the other occurrences by clicking the <span class="SAP-icons"></span> \(Up\) or <span class="SAP-icons"></span> \(Down\) button.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 8
-
-
 
 </td>
 <td valign="top">
@@ -412,8 +378,6 @@ You can view the other occurrences by clicking the <span class="SAP-icons"></
 
 9
 
-
-
 </td>
 <td valign="top">
 
@@ -421,16 +385,12 @@ The *Functions* pane lists the standard functions that can be used in the Messag
 
 You can also create a new script <span class="SAP-icons"></span> or assign an existing script <span class="SAP-icons"></span> to the mapping expression.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 10
-
-
 
 </td>
 <td valign="top">

@@ -18,15 +18,11 @@
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Select Option/Enter
-
-
     
     </th>
     </tr>
@@ -34,15 +30,11 @@
     <td valign="top">
     
     *Name* 
-
-
     
     </td>
     <td valign="top">
     
     Enter `original_payload`
-
-
     
     </td>
     </tr>
@@ -50,15 +42,11 @@
     <td valign="top">
     
     *Type* 
-
-
     
     </td>
     <td valign="top">
     
     Select *Expression*
-
-
     
     </td>
     </tr>
@@ -66,15 +54,11 @@
     <td valign="top">
     
     *Value* 
-
-
     
     </td>
     <td valign="top">
     
     Enter `${in.body}`
-
-
     
     </td>
     </tr>

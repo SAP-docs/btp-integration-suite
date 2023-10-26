@@ -37,14 +37,10 @@ Depending on whether the Exception Subprocess in the parent integration flow end
 
 End Message event
 
-
-
 </td>
 <td valign="top">
 
 If an exception occurs, parent integration flow ends with status *Completed*.
-
-
 
 </td>
 </tr>
@@ -53,14 +49,10 @@ If an exception occurs, parent integration flow ends with status *Completed*.
 
 Error End Event
 
-
-
 </td>
 <td valign="top">
 
 If an exception occurs, parent integration flow ends with status *Failed*.
-
-
 
 </td>
 </tr>

@@ -24,14 +24,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,14 +36,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -64,14 +56,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -80,14 +68,10 @@ Description
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 URL of the SuccessFactors data center that you want to connect to.
-
-
 
 </td>
 </tr>
@@ -95,8 +79,6 @@ URL of the SuccessFactors data center that you want to connect to.
 <td valign="top">
 
 *Authentication* 
-
-
 
 </td>
 <td valign="top">
@@ -115,14 +97,10 @@ URL of the SuccessFactors data center that you want to connect to.
 
 *Credential Name* 
 
-
-
 </td>
 <td valign="top">
 
 Name of the deployed security artifact.
-
-
 
 </td>
 </tr>
@@ -131,16 +109,12 @@ Name of the deployed security artifact.
 
 *Proxy Type* 
 
-
-
 </td>
 <td valign="top">
 
 Type of proxy you want to use to connect to the SuccessFactors system.
 
 Currently, you can only choose *Internet* as the proxy type.
-
-
 
 </td>
 </tr>
@@ -149,14 +123,10 @@ Currently, you can only choose *Internet* as the proxy type.
 
 *Reuse Connection*
 
-
-
 </td>
 <td valign="top">
 
 The option is enabled by default. This option enables the reuse of connection objects from the internal connection pool which in turn improves the network turnaround time for multiple communications to a same end point.
-
-
 
 </td>
 </tr>
@@ -173,14 +143,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -188,8 +154,6 @@ Description
 <td valign="top">
 
 *Operation* 
-
-
 
 </td>
 <td valign="top">
@@ -212,14 +176,10 @@ Select the operation that you want to perform from the dropdown list.
 
 *Resource Path* 
 
-
-
 </td>
 <td valign="top">
 
 Provide the resource path of the entity that you want to access.
-
-
 
 </td>
 </tr>
@@ -230,14 +190,10 @@ Provide the resource path of the entity that you want to access.
 
 Relevant only for *Query\(GET\)* operation
 
-
-
 </td>
 <td valign="top">
 
 Query options that you want to send to the OData V4 service with operation details.
-
-
 
 </td>
 </tr>

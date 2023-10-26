@@ -31,14 +31,10 @@ You configure with the AS4 sender adapter with ebMS3 Receipt to support non-repu
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -47,14 +43,10 @@ Description
 
 *Agreement* 
 
-
-
 </td>
 <td valign="top">
 
 Define the message exchange pattern agreed between the MSHs.
-
-
 
 </td>
 </tr>
@@ -62,8 +54,6 @@ Define the message exchange pattern agreed between the MSHs.
 <td valign="top">
 
 *Address* 
-
-
 
 </td>
 <td valign="top">
@@ -84,16 +74,12 @@ Specify the relative endpoint of the receiving MSH. For example, `/orders`.
 
 *Authorization* 
 
-
-
 </td>
 <td valign="top">
 
 Select *User Role* if you want to authorize a user to send message based on the `ESBMessaging.send`.
 
 Select *Client Certificate* if you want to authorize a user to send message based on a certificate. If you select this option, you have to add and enter the Subject DN \(information used to authorize the sender\) and Issuer DN \(information about the Certificate Authority who issues the certificate\).
-
-
 
 </td>
 </tr>
@@ -104,14 +90,10 @@ Select *Client Certificate* if you want to authorize a user to send message base
 
 \(only if you select *User Role* in *Authorization*\)
 
-
-
 </td>
 <td valign="top">
 
 Select a role to authorize the user to access the receiving MSH endpoint.
-
-
 
 </td>
 </tr>
@@ -128,14 +110,10 @@ Select the *Security* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -144,14 +122,10 @@ Description
 
 *Save Incoming Receipt* 
 
-
-
 </td>
 <td valign="top">
 
 Saves the incoming receipt in the message store.
-
-
 
 </td>
 </tr>
@@ -160,14 +134,10 @@ Saves the incoming receipt in the message store.
 
 *Verify the Receipt Signature*
 
-
-
 </td>
 <td valign="top">
 
 Verifies the signature of the incoming receipt.
-
-
 
 </td>
 </tr>
@@ -176,14 +146,10 @@ Verifies the signature of the incoming receipt.
 
 *Public Key Alias* 
 
-
-
 </td>
 <td valign="top">
 
 Define the public key alias or aliases to verify the signature of the AS4 message.
-
-
 
 </td>
 </tr>
@@ -200,14 +166,10 @@ Select the *Delivery Assurance* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -215,8 +177,6 @@ Description
 <td valign="top">
 
 *Quality of Service*
-
-
 
 </td>
 <td valign="top">
@@ -258,8 +218,6 @@ There are the following options:
 *Temporary Storage*
 
 \(only if as *Quality of Service* the option *Exactly Once* or *At Least Once* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -311,14 +269,10 @@ You can choose among the following storage types:
 
 \(only configurable if *Data Store* is selected
 
-
-
 </td>
 <td valign="top">
 
 Enter a value for the retry timeout of the in-progress repository.
-
-
 
 </td>
 </tr>
@@ -327,14 +281,10 @@ Enter a value for the retry timeout of the in-progress repository.
 
 *Retry Interval \(in min\)*
 
-
-
 </td>
 <td valign="top">
 
 Enter a value for the amount of time to wait before retrying message delivery.
-
-
 
 </td>
 </tr>
@@ -343,14 +293,10 @@ Enter a value for the amount of time to wait before retrying message delivery.
 
 *Exponential Backoff*
 
-
-
 </td>
 <td valign="top">
 
 Select this option to double the retry interval after each unsuccessful retry.
-
-
 
 </td>
 </tr>
@@ -361,14 +307,10 @@ Select this option to double the retry interval after each unsuccessful retry.
 
 \(only configurable when *Exponential Backoff* is selected\)
 
-
-
 </td>
 <td valign="top">
 
 You can set an upper limit on that value to avoid an endless increase of the retry interval. The default value is 60 minutes. The minimum value is 10 minutes.
-
-
 
 </td>
 </tr>
@@ -378,8 +320,6 @@ You can set an upper limit on that value to avoid an endless increase of the ret
 *Dead-Letter Queue*
 
 \(only if as *Temporary Storage* the option *JMS Queue* is selected\)
-
-
 
 </td>
 <td valign="top">
@@ -392,8 +332,6 @@ Use this option to avoid out-of-memory situations \(caused in many cases by larg
 
 For more information, read the SAP Community blog [Cloud Integration – Configure Dead Letter Handling in JMS Adapter](https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/).
 
-
-
 </td>
 </tr>
 <tr>
@@ -401,14 +339,10 @@ For more information, read the SAP Community blog [Cloud Integration – Configu
 
 *Encrypt Message During Persistence* 
 
-
-
 </td>
 <td valign="top">
 
 Select this option in case the messages should be stored in an encrypted way during certain processing steps.
-
-
 
 </td>
 </tr>
@@ -425,14 +359,10 @@ Select the *Conditions* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -441,8 +371,6 @@ Description
 
 The parameters in *Maximum Message Size* allow you to set a maximum size limit for processing inbound messages. Any inbound message that exceeds the configured limit is rejected from further processing and the sender receives an error message.
 
-
-
 </td>
 </tr>
 <tr>
@@ -450,14 +378,10 @@ The parameters in *Maximum Message Size* allow you to set a maximum size limit f
 
 *Body Size \(in MB\)* 
 
-
-
 </td>
 <td valign="top">
 
 Define the size limit for processing the message body. Default value is 40 MB.
-
-
 
 </td>
 </tr>
@@ -466,14 +390,10 @@ Define the size limit for processing the message body. Default value is 40 MB.
 
 *Attachment Size \(in MB\)* 
 
-
-
 </td>
 <td valign="top">
 
 Define the size limit for processing the attachment. Default value is 100 MB.
-
-
 
 </td>
 </tr>

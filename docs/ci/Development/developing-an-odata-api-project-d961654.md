@@ -24,14 +24,10 @@ When deciding whether to use OData APIs or integration projects to implement you
 
 OData APIs
 
-
-
 </th>
 <th valign="top">
 
 Integration Projects
-
-
 
 </th>
 </tr>
@@ -40,14 +36,10 @@ Integration Projects
 
 An OData API can expose multiple entities and multiple associated operations at the same time.
 
-
-
 </td>
 <td valign="top">
 
 An integration project can expose only one entity and one associated operation at a time.
-
-
 
 </td>
 </tr>
@@ -56,14 +48,10 @@ An integration project can expose only one entity and one associated operation a
 
 You can configure any application to consume an OData API. As a result, any number of users with access to these applications can consume the OData API.
 
-
-
 </td>
 <td valign="top">
 
 In an integration project, the credentials of a limited set of users are used to authenticate the integration scenario between two systems.
-
-
 
 </td>
 </tr>

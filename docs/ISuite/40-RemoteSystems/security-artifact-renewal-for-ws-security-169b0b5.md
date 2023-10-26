@@ -27,14 +27,10 @@ The table below contains the security renewal use cases:
 
 Use Case
 
-
-
 </th>
 <th valign="top">
 
 More information
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ More information
 
 Tenant verifies inbound request message.
 
-
-
 </td>
 <td valign="top">
 
 [Security Artifact Renewal for WS-Security \(Tenant Verifies Inbound Request\)](security-artifact-renewal-for-ws-security-tenant-verifies-inbound-request-266470d.md)
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Tenant verifies inbound request message.
 
 Tenant decrypts inbound request message.
 
-
-
 </td>
 <td valign="top">
 
 [Security Artifact Renewal for WS-Security \(Tenant Decrypts Inbound Request\)](security-artifact-renewal-for-ws-security-tenant-decrypts-inbound-request-192762b.md)
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Tenant decrypts inbound request message.
 
 Tenant signs inbound response message.
 
-
-
 </td>
 <td valign="top">
 
 [Security Artifact Renewal for WS-Security \(Tenant Signs Inbound Response\)](security-artifact-renewal-for-ws-security-tenant-signs-inbound-response-a6ccced.md)
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ Tenant signs inbound response message.
 
 Tenant encrypts inbound response message.
 
-
-
 </td>
 <td valign="top">
 
 [Security Artifact Renewal for WS-Security \(Tenant Encrypts Inbound Response\)](security-artifact-renewal-for-ws-security-tenant-encrypts-inbound-response-fdea960.md)
-
-
 
 </td>
 </tr>
@@ -128,14 +108,10 @@ The table contains the security renewal use cases:
 
 Use Case
 
-
-
 </th>
 <th valign="top">
 
 More information
-
-
 
 </th>
 </tr>
@@ -144,14 +120,10 @@ More information
 
 Tenant signs outbound request message.
 
-
-
 </td>
 <td valign="top">
 
 [Security Artifact Renewal for WS-Security \(Tenant Signs Outbound Request\)](security-artifact-renewal-for-ws-security-tenant-signs-outbound-request-10c32fe.md)
-
-
 
 </td>
 </tr>
@@ -160,14 +132,10 @@ Tenant signs outbound request message.
 
 Tenant encrypts outbound request message.
 
-
-
 </td>
 <td valign="top">
 
 [Security Artifact Renewal for WS-Security \(Tenant Encrypts Outbound Request\)](security-artifact-renewal-for-ws-security-tenant-encrypts-outbound-request-efb83b3.md)
-
-
 
 </td>
 </tr>
@@ -176,14 +144,10 @@ Tenant encrypts outbound request message.
 
 Tenant verifies outbound response message.
 
-
-
 </td>
 <td valign="top">
 
 [Security Artifact Renewal for WS-Security \(Tenant Verifies Outbound Response\)](security-artifact-renewal-for-ws-security-tenant-verifies-outbound-response-289b653.md)
-
-
 
 </td>
 </tr>
@@ -192,14 +156,10 @@ Tenant verifies outbound response message.
 
 Tenant decrypts outbound response message.
 
-
-
 </td>
 <td valign="top">
 
 [Security Artifact Renewal for WS-Security \(Tenant Decrypts Outbound Response\)](security-artifact-renewal-for-ws-security-tenant-decrypts-outbound-response-90b85ec.md)
-
-
 
 </td>
 </tr>
@@ -208,7 +168,7 @@ Tenant decrypts outbound response message.
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/ccm1691418051317/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/169b0b5b16d2415590bc3ce84cc4a918.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cdm1692607551357/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/169b0b5b16d2415590bc3ce84cc4a918.xml" ?> 
 
 [WS-Security Configuration for the Sender SOAP 1.x Adapter](../50-Development/ws-security-configuration-for-the-sender-soap-1-x-adapter-e53bb5c.md "")
 

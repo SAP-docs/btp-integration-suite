@@ -41,15 +41,11 @@ You use this procedure to configure XML to CSV converter.
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -57,15 +53,11 @@ You use this procedure to configure XML to CSV converter.
     <td valign="top">
     
     Path to Source Element in XSD
-
-
     
     </td>
     <td valign="top">
     
     Path to the source element in the XSD file
-
-
     
     </td>
     </tr>
@@ -73,8 +65,6 @@ You use this procedure to configure XML to CSV converter.
     <td valign="top">
     
     Field Separator in CSV
-
-
     
     </td>
     <td valign="top">
@@ -92,15 +82,11 @@ You use this procedure to configure XML to CSV converter.
     <td valign="top">
     
     Include Field Name as Headers
-
-
     
     </td>
     <td valign="top">
     
     Select this checkbox if you want to use the field names as the headers in CSV file
-
-
     
     </td>
     </tr>
@@ -108,15 +94,11 @@ You use this procedure to configure XML to CSV converter.
     <td valign="top">
     
     Include Parent Element
-
-
     
     </td>
     <td valign="top">
     
     Select this checkbox if you want to include the parent element of the XML file in CSV file
-
-
     
     </td>
     </tr>
@@ -124,15 +106,11 @@ You use this procedure to configure XML to CSV converter.
     <td valign="top">
     
     Include Attribute Values
-
-
     
     </td>
     <td valign="top">
     
     Select this checkbox if you want to include attribute values in the CSV file
-
-
     
     </td>
     </tr>

@@ -20,22 +20,16 @@ Follow the procedure below to configure the integration flow:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Default Value
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -43,22 +37,16 @@ Follow the procedure below to configure the integration flow:
     <td valign="top">
     
     Sender
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     The name of the sender.
-
-
     
     </td>
     </tr>
@@ -66,22 +54,16 @@ Follow the procedure below to configure the integration flow:
     <td valign="top">
     
     Adapter Type
-
-
     
     </td>
     <td valign="top">
     
     JMS
-
-
     
     </td>
     <td valign="top">
     
     The type of the sender adapter which is set to *JM* by default.
-
-
     
     </td>
     </tr>
@@ -89,15 +71,11 @@ Follow the procedure below to configure the integration flow:
     <td valign="top">
     
     Queue Name
-
-
     
     </td>
     <td valign="top">
     
     INBOUND\_Q
-
-
     
     </td>
     <td valign="top">
@@ -123,22 +101,16 @@ Follow the procedure below to configure the integration flow:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Default Value
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -146,22 +118,16 @@ Follow the procedure below to configure the integration flow:
     <td valign="top">
     
     Receiver
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     The name of the receiver.
-
-
     
     </td>
     </tr>
@@ -169,22 +135,16 @@ Follow the procedure below to configure the integration flow:
     <td valign="top">
     
     Adapter Type
-
-
     
     </td>
     <td valign="top">
     
     JMS
-
-
     
     </td>
     <td valign="top">
     
     The type of the sender adapter which is set to *JM* by default.
-
-
     
     </td>
     </tr>
@@ -192,15 +152,11 @@ Follow the procedure below to configure the integration flow:
     <td valign="top">
     
     Queue Name
-
-
     
     </td>
     <td valign="top">
     
     OUTBOUND\_Q
-
-
     
     </td>
     <td valign="top">

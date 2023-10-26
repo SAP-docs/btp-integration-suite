@@ -15,14 +15,10 @@ The start page is subdivided into the following sections, each covering a specif
 
 Container
 
-
-
 </th>
 <th valign="top">
 
 Allows you to ...
-
-
 
 </th>
 </tr>
@@ -31,16 +27,12 @@ Allows you to ...
 
 *Monitor Message Processing* 
 
-
-
 </td>
 <td valign="top">
 
 Monitor message processing on the tenant.
 
 Tiles in this section show the number and status of processed messages within a specified time window.
-
-
 
 </td>
 </tr>
@@ -49,8 +41,6 @@ Tiles in this section show the number and status of processed messages within a 
 
 *Manage Integration Content* 
 
-
-
 </td>
 <td valign="top">
 
@@ -58,16 +48,12 @@ Manage integration content for the tenant.
 
 Tiles in this section show the number and status of integration content artifacts \(such as integration flows\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Manage Security* 
-
-
 
 </td>
 <td valign="top">
@@ -90,16 +76,12 @@ The *User Roles* tile provides an overview of the existing user roles and allows
 
 The *Connectivity Tests* tile allows you to test the connectivity to a receiver system.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Manage Stores* 
-
-
 
 </td>
 <td valign="top">
@@ -117,16 +99,12 @@ The *Message Queues* tile provides an overview of the active queues of a tenant 
 
 The *Number Ranges* tile provides an overview of number ranges that are used in business-to-business scenarios.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Access Logs* 
-
-
 
 </td>
 <td valign="top">
@@ -135,16 +113,12 @@ Access the *System Log Files* and to analyze errors that occurred during inbound
 
 You access the system logs can access the system logs only if the `Cloud Logging Service` is available for your Cloud Integration application. This feature isn't yet enabled on all data centers.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Manage Locks* 
-
-
 
 </td>
 <td valign="top">
@@ -155,15 +129,13 @@ The *Message Lock* tile provides an overview of the lock entries that are create
 
 The *Designtime Artifact Locks* tile provides an overview of the locked design time artifacts and allows you to manage them.
 
-
-
 </td>
 </tr>
 </table>
 
 Each section contains tiles, which show filter settings and the number of messages/artifacts that correspond to the filter settings.
 
-Clicking a tile opens a page with more information.
+Selecting a tile opens a page with more information.
 
 The start page is automatically refreshed every 5 seconds. The autorefresh ends after 5 minutes \(indicated by a message\).
 
@@ -174,7 +146,7 @@ The start page is automatically refreshed every 5 seconds. The autorefresh ends 
 
 ## Managing Tiles
 
-You can customize the start page to fit your personal needs by adding new tiles \(by clicking an empty tile containing a `+` symbol\) or deleting existing ones. You can also rearrange the start page by dragging and dropping tiles to another location. For example, you can customize the start page so that it shows only data related to integration flows that are edited by you.
+You can customize the start page to fit your personal needs by adding new tiles \(by selecting an empty tile containing a `+` symbol\) or deleting existing ones. You can also rearrange the start page by dragging and dropping tiles to another location. For example, you can customize the start page so that it shows only data related to integration flows that are edited by you.
 
 > ### Note:  
 > You can rearrange tiles only within the same section.
@@ -234,7 +206,7 @@ When you add or edit a tile, you can specify the following filter categories:
 
 [Managing Number Ranges](managing-number-ranges-b6e17fa.md "The topic provides an overview of number ranges related artifacts.")
 
-[Access Logs, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d5a4113e6da14a18838898d769261512.html "The Access Logssection allows you to monitor audit logs (resulting from system changes) and to analyze errors that occurred during inbound HTTP processing (and documented in system log files).") :arrow_upper_right:
+[Access Logs, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d5a4113e6da14a18838898d769261512.html "The Access Logs section allows you to monitor audit logs (resulting from system changes) and to analyze errors that occurred during inbound HTTP processing (and documented in system log files).") :arrow_upper_right:
 
 [Monitoring Audit Log, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2d6031ffc1aa4af08a03f0444b979667.html "The audit log contains information on system changes. These events can be for example the deployment of an integration flow as well as a configuration change.") :arrow_upper_right:
 

@@ -26,14 +26,10 @@ Every time a new version of SAP standard content is released, you can choose whi
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Meaning
-
-
 
 </th>
 </tr>
@@ -41,8 +37,6 @@ Meaning
 <td valign="top">
 
 Type
-
-
 
 </td>
 <td valign="top">
@@ -65,14 +59,10 @@ The type of Update. Possible values are:
 
 Mandatory For Update
 
-
-
 </td>
 <td valign="top">
 
 Signifies if the changeset is mandatory if you plan to update it. Possible values are Yes/No.
-
-
 
 </td>
 </tr>
@@ -81,14 +71,10 @@ Signifies if the changeset is mandatory if you plan to update it. Possible value
 
 Available For Update
 
-
-
 </td>
 <td valign="top">
 
 Signifies if the changeset is available for update. Possible values are Yes/No.
-
-
 
 </td>
 </tr>

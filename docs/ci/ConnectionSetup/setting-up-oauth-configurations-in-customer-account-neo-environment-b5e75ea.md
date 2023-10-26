@@ -38,15 +38,11 @@ You can setup OAuth configurations in the customer account for enabling the API 
     <th valign="top">
 
     Destination Property, Value
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -54,8 +50,6 @@ You can setup OAuth configurations in the customer account for enabling the API 
     <td valign="top">
     
     Name, OAuthTokenDestination
-
-
     
     </td>
     <td valign="top">
@@ -68,8 +62,6 @@ You can setup OAuth configurations in the customer account for enabling the API 
     <td valign="top">
     
     Type, HTTP
-
-
     
     </td>
     <td valign="top">
@@ -82,8 +74,6 @@ You can setup OAuth configurations in the customer account for enabling the API 
     <td valign="top">
     
     Url,https://api.\{landscapeHost\}/oauth2/apitoken/v1/?grant\_type=client\_credentials
-
-
     
     </td>
     <td valign="top">
@@ -109,8 +99,6 @@ You can setup OAuth configurations in the customer account for enabling the API 
     For data center Phoenix \(USA - West\)
 
     `https://us2.hana.ondemand.com`
-
-
     
     </td>
     </tr>
@@ -118,8 +106,6 @@ You can setup OAuth configurations in the customer account for enabling the API 
     <td valign="top">
     
     Proxy Type, Internet
-
-
     
     </td>
     <td valign="top">
@@ -132,8 +118,6 @@ You can setup OAuth configurations in the customer account for enabling the API 
     <td valign="top">
     
     Authentication, Basic Authentication
-
-
     
     </td>
     <td valign="top">
@@ -146,15 +130,11 @@ You can setup OAuth configurations in the customer account for enabling the API 
     <td valign="top">
     
     User
-
-
     
     </td>
     <td valign="top">
     
     Client Id of the customer account as obtained in Step 1-E
-
-
     
     </td>
     </tr>
@@ -162,15 +142,11 @@ You can setup OAuth configurations in the customer account for enabling the API 
     <td valign="top">
     
     Password
-
-
     
     </td>
     <td valign="top">
     
     Client secret of the customer account as obtained in Step 1-E
-
-
     
     </td>
     </tr>

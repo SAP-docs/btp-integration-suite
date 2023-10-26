@@ -25,14 +25,10 @@ The OData API covers the following aspects:
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -41,14 +37,10 @@ Description
 
 [Integration Content](integration-content-d1679a8.md) 
 
-
-
 </td>
 <td valign="top">
 
 Get deployed integration content or deploy/undeploy integration artifacts.
-
-
 
 </td>
 </tr>
@@ -57,14 +49,10 @@ Get deployed integration content or deploy/undeploy integration artifacts.
 
 [Log Files, Neo Environment](log-files-neo-environment-93bc372.md) 
 
-
-
 </td>
 <td valign="top">
 
 Get an overview of HTTP and trace log files.
-
-
 
 </td>
 </tr>
@@ -73,14 +61,10 @@ Get an overview of HTTP and trace log files.
 
 [Message Processing Logs](message-processing-logs-827a2d7.md) 
 
-
-
 </td>
 <td valign="top">
 
 Get an overview of the messages processed on a tenant and get the details for individual messages.
-
-
 
 </td>
 </tr>
@@ -89,14 +73,10 @@ Get an overview of the messages processed on a tenant and get the details for in
 
 [Message Stores](message-stores-1aab5e9.md) 
 
-
-
 </td>
 <td valign="top">
 
 Get data from the Message Store, such as message payloads, headers, properties, or attachments for processed messages.
-
-
 
 </td>
 </tr>
@@ -105,14 +85,10 @@ Get data from the Message Store, such as message payloads, headers, properties, 
 
 [Partner Directory](partner-directory-0fe80dc.md) 
 
-
-
 </td>
 <td valign="top">
 
 Get, write, or delete data of the Partner Directory. This content can be used to parameterize integration flows.
-
-
 
 </td>
 </tr>
@@ -121,14 +97,10 @@ Get, write, or delete data of the Partner Directory. This content can be used to
 
 [Security Content](security-content-e01d3f0.md) 
 
-
-
 </td>
 <td valign="top">
 
 Get, write, or delete security content, for example, keystore entries, user credentials, or certificates to user mappings.
-
-
 
 </td>
 </tr>

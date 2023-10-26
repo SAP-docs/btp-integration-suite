@@ -13,14 +13,10 @@ Find below the different error situations and the error messages senr back by th
 
 Error Situation
 
-
-
 </th>
 <th valign="top">
 
 Error Message and Response Body
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Error Message and Response Body
 
 No destination with the name `CloudIntegration_MonitoringDataConsumer` was found in the subaccount's destination configuration.
 
-
-
 </td>
 <td valign="top">
 
 `Retrieving Destination failed. Destination with name CloudIntegration_MonitoringDataConsumer does not exist.` 
-
-
 
 </td>
 </tr>
@@ -44,8 +36,6 @@ No destination with the name `CloudIntegration_MonitoringDataConsumer` was found
 <td valign="top">
 
 An error occured with the configuration of the destination. The error is returned in the `<DESTINATION_ERROR>` element. Common issues are missing mandatory parameters and invalid values in free-form parameters.
-
-
 
 </td>
 <td valign="top">
@@ -79,8 +69,6 @@ An error occured with the configuration of the destination. The error is returne
 <td valign="top">
 
 A problem occurred when connecting to the Splunk system. The error is returned in the`<ERROR_MESSAGE>` element. Common errors include DNS issues, configuration issues with Cloud Connector and firewall configuration problems.
-
-
 
 </td>
 <td valign="top">
@@ -126,8 +114,6 @@ A problem occurred when connecting to the Splunk system. The error is returned i
 <td valign="top">
 
 A problem occurred when sending events to the target Splunk system after a successful configuration. The error message is returned in the `<SPLUNK_ERROR>` element. This message typically indicates a problem with the Splunk target instance or a mismatch of Splunk and destination configuration.
-
-
 
 </td>
 <td valign="top">

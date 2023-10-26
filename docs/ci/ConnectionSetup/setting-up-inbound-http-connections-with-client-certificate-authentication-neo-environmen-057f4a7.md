@@ -29,21 +29,15 @@ The table summarizes the required security artifacts required to set up this inb
 
 Security Artifact
 
-
-
 </th>
 <th valign="top">
 
 Used at runtime to ...
 
-
-
 </th>
 <th valign="top">
 
 Configuration Steps
-
-
 
 </th>
 </tr>
@@ -52,14 +46,10 @@ Configuration Steps
 
 Load balancer server root certificate
 
-
-
 </td>
 <td valign="top">
 
 Make the sender trust the load balancer.
-
-
 
 </td>
 <td valign="top">
@@ -68,8 +58,6 @@ Sender administrator:
 
 Get certificate using the Cloud Integration *Connectivity Test* \(pointing to endpoint address of integration flow\).
 
-
-
 </td>
 </tr>
 <tr>
@@ -77,21 +65,15 @@ Get certificate using the Cloud Integration *Connectivity Test* \(pointing to en
 
 Load balancer server certificate \(including certificate chain\)
 
-
-
 </td>
 <td valign="top">
 
 Qualify load balancer as trusted component \(for senders that like to connect to it\).
 
-
-
 </td>
 <td valign="top">
 
 No action required as this artifact is maintained by the operator of the cloud infrastructure.
-
-
 
 </td>
 </tr>
@@ -102,8 +84,6 @@ Sender client certificate
 
 \(public and private key, including certificate chain\)
 
-
-
 </td>
 <td valign="top">
 
@@ -112,8 +92,6 @@ Authorize sender to call integration flow.
 At runtime, system checks if client certificate provided by the sender is associated with integration flow endpoint.
 
 Furthermore, system checks the permissions of the sender by evaluating the certificate's subject/issuer distinguished name.
-
-
 
 </td>
 <td valign="top">
@@ -124,8 +102,6 @@ Specifies the sender client certificate in the sender channel of the integration
 
 This key pair is to be signed by a CA supported by the load balancer. Only root certificates are being imported into the load balancer keystore. Therefore, the whole certificate chain must be assigned to the certificate to enable the connected component to evaluate the chain of trust.
 
-
-
 </td>
 </tr>
 <tr>
@@ -133,14 +109,10 @@ This key pair is to be signed by a CA supported by the load balancer. Only root 
 
 Sender client root certificate
 
-
-
 </td>
 <td valign="top">
 
 Sign sender client certificate.
-
-
 
 </td>
 <td valign="top">
@@ -148,8 +120,6 @@ Sign sender client certificate.
 Sender administrator:
 
 Get sender client certificate signed by a certificate authority \(CA\) supported by the load balancer. The root certificates supported by the load balancer are listed at [Load Balancer Root Certificates Supported by SAP](load-balancer-root-certificates-supported-by-sap-4509f60.md).
-
-
 
 </td>
 </tr>

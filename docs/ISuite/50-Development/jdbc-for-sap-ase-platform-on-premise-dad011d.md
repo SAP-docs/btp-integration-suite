@@ -13,14 +13,10 @@ JDBC receiver adapter supports SAP ASE Platform On-Premise database provided by 
 
 Database Provider
 
-
-
 </td>
 <td valign="top">
 
 SAP
-
-
 
 </td>
 </tr>
@@ -29,14 +25,10 @@ SAP
 
 Infrastructure
 
-
-
 </td>
 <td valign="top">
 
 On-Premise
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ On-Premise
 
 SAP BTP Environment
 
-
-
 </td>
 <td valign="top">
 
 Neo and Cloud Foundry
-
-
 
 </td>
 </tr>
@@ -61,14 +49,10 @@ Neo and Cloud Foundry
 
 JDBC URL Pattern
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:sybase:Tds:<server>:<port>/<db/schemaName>`
-
-
 
 </td>
 </tr>
@@ -77,14 +61,10 @@ JDBC URL Pattern
 
 JDBC URL Example
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:sybase:Tds:aseonprem:1100/NEO_TEST`
-
-
 
 </td>
 </tr>

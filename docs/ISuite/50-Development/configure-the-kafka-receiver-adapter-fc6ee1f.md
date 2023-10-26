@@ -40,14 +40,10 @@ The following values are displayed in the *General* tab after a channel has been
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -56,14 +52,10 @@ Description
 
 *Name/Adapter Type*
 
-
-
 </td>
 <td valign="top">
 
 Kafka
-
-
 
 </td>
 </tr>
@@ -72,14 +64,10 @@ Kafka
 
 *Transport Protocol*
 
-
-
 </td>
 <td valign="top">
 
 TCP
-
-
 
 </td>
 </tr>
@@ -88,14 +76,10 @@ TCP
 
 *Message Protocol*
 
-
-
 </td>
 <td valign="top">
 
 Kafka
-
-
 
 </td>
 </tr>
@@ -115,14 +99,10 @@ Select the *Connection* tab and provide values in the fields as follows:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -131,14 +111,10 @@ Description
 
 *Host*
 
-
-
 </td>
 <td valign="top">
 
 Enter a bootstrap server \(host:port\). You can add multiple hosts by using a new entry for each bootstrap server.
-
-
 
 </td>
 </tr>
@@ -146,8 +122,6 @@ Enter a bootstrap server \(host:port\). You can add multiple hosts by using a ne
 <td valign="top">
 
 *Authentication*
-
-
 
 </td>
 <td valign="top">
@@ -170,8 +144,6 @@ Select the type of authentication for connecting to the broker. SASL is selected
 
 \(only if *SASL* is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
@@ -190,8 +162,6 @@ Select this option to switch between `SASL_SSL` and `SASL_PLAINTEXT`.
 *SASL Mechanism*
 
 \(only if *SASL* is selected for *Authentication*\)
-
-
 
 </td>
 <td valign="top">
@@ -214,14 +184,10 @@ Select the SASL mechanism.
 
 \(only if *SASL**Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Enter the credential name of the username-password pair specified during the deployment of the user credential on the tenant. is selected for
-
-
 
 </td>
 </tr>
@@ -232,14 +198,10 @@ Enter the credential name of the username-password pair specified during the dep
 
 \(only if *Client Certificate* is selected for is selected for *Authentication*\)
 
-
-
 </td>
 <td valign="top">
 
 Enter the Private Key Alias.
-
-
 
 </td>
 </tr>
@@ -265,14 +227,10 @@ Select the *Processing* tab and provide values in the fields as follows:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -280,8 +238,6 @@ Description
 <td valign="top">
 
 *Topic*
-
-
 
 </td>
 <td valign="top">
@@ -293,16 +249,12 @@ Specify the topic you want to send requests to.
 
 You specify one particular topic or you can configure this parameter dynamically by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Acknowledgment*
-
-
 
 </td>
 <td valign="top">
@@ -334,8 +286,6 @@ Define the type of acknowledgments before a request is considered complete. Sele
 
 *Max. Request Size \(in KB\)*
 
-
-
 </td>
 <td valign="top">
 
@@ -352,8 +302,6 @@ Enter the maximum size of a request in KB \(before compression\). This setting l
 <td valign="top">
 
 *Max. Number of Inflight Request*
-
-
 
 </td>
 <td valign="top">
@@ -372,8 +320,6 @@ Define the maximum number of unacknowledged requests the client sends on a singl
 
 *Max. Number of Retries*
 
-
-
 </td>
 <td valign="top">
 
@@ -391,8 +337,6 @@ Define the max. number of retries, the client attempts to resend any record whic
 
 *Retry Backoff \(in ms\)*
 
-
-
 </td>
 <td valign="top">
 
@@ -409,8 +353,6 @@ Define the amount of time to wait before attempting to send a retry. Choose the 
 <td valign="top">
 
 *Compression*
-
-
 
 </td>
 <td valign="top">
@@ -442,14 +384,10 @@ Choose between the following compression types supported by Kafka:
 
 *Enable Batching* \(recommended\)
 
-
-
 </td>
 <td valign="top">
 
 Select to batch requests and to reduce traffic. If you disable this option, you set this batch size to 0. It’s activated by default.
-
-
 
 </td>
 </tr>
@@ -457,8 +395,6 @@ Select to batch requests and to reduce traffic. If you disable this option, you 
 <td valign="top">
 
 *Batch Size \(in KB\)* only if *Enable Batching* is selected
-
-
 
 </td>
 <td valign="top">
@@ -477,14 +413,10 @@ Define the size of the batches. The producer batches records into fewer requests
 
 *Linger \(in ms\)* only if *Enable Batching* is selected
 
-
-
 </td>
 <td valign="top">
 
 Define the max. amount of time to wait and try to reach the batch size defined in *Batch Size \(in KB\)*. If this time limit has passed, the request is sent out irrespective of whether or not the defined batch size has been reached.
-
-
 
 </td>
 </tr>
@@ -492,8 +424,6 @@ Define the max. amount of time to wait and try to reach the batch size defined i
 <td valign="top">
 
 *Request Timeout \(in s\)*
-
-
 
 </td>
 <td valign="top">
@@ -512,8 +442,6 @@ Define the maximum amount of time the client waits for the response of a request
 
 *Max. Blocking Time \(in s\)*
 
-
-
 </td>
 <td valign="top">
 
@@ -530,8 +458,6 @@ Define how long the KafkaProducer's send\(\), partitionsFor\(\), initTransaction
 <td valign="top">
 
 *Reconnect Delay \(in s\)*
-
-
 
 </td>
 <td valign="top">

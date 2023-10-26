@@ -18,14 +18,10 @@ JDBC connectivity provides a mechanism for integration flows deployed on Cloud I
 > 
 > Driver Name
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Supported Versions
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -33,8 +29,6 @@ JDBC connectivity provides a mechanism for integration flows deployed on Cloud I
 > <td valign="top">
 > 
 > Microsoft JDBC Driver for SQL Server
-> 
-> 
 > 
 > </td>
 > <td valign="top">
@@ -52,8 +46,6 @@ JDBC connectivity provides a mechanism for integration flows deployed on Cloud I
 > <td valign="top">
 > 
 > Oracle JDBC Driver
-> 
-> 
 > 
 > </td>
 > <td valign="top">
@@ -75,8 +67,6 @@ JDBC connectivity provides a mechanism for integration flows deployed on Cloud I
 > <td valign="top">
 > 
 > IBM DB2 JDBC Driver
-> 
-> 
 > 
 > </td>
 > <td valign="top">
@@ -119,15 +109,11 @@ Before consuming the drivers in runtime, you must deploy the uploaded driver as 
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -135,8 +121,6 @@ Before consuming the drivers in runtime, you must deploy the uploaded driver as 
     <td valign="top">
     
     *Database Type*
-
-
     
     </td>
     <td valign="top">
@@ -158,8 +142,6 @@ Before consuming the drivers in runtime, you must deploy the uploaded driver as 
     <td valign="top">
     
     *JDBC Driver File*
-
-
     
     </td>
     <td valign="top">
@@ -191,14 +173,10 @@ Before consuming the drivers in runtime, you must deploy the uploaded driver as 
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -207,14 +185,10 @@ Description
 
 :gear:
 
-
-
 </td>
 <td valign="top">
 
 Helps to sort and filter the content of the table. You can define how the table entries are to be sorted \(in ascending or descending order\). You can also filter the table entries for certain attributes.
-
-
 
 </td>
 </tr>
@@ -223,14 +197,10 @@ Helps to sort and filter the content of the table. You can define how the table 
 
 <span class="SAP-icons"></span> \(Reload\)
 
-
-
 </td>
 <td valign="top">
 
 Reloads the table content.
-
-
 
 </td>
 </tr>

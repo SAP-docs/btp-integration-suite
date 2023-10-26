@@ -23,15 +23,11 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -39,8 +35,6 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
@@ -58,15 +52,11 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
     
     HTTP
-
-
     
     </td>
     </tr>
@@ -74,15 +64,11 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     <td valign="top">
     
     Description
-
-
     
     </td>
     <td valign="top">
     
     You can provide a description for your reference. This field is optional.
-
-
     
     </td>
     </tr>
@@ -90,8 +76,6 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     <td valign="top">
     
     URL
-
-
     
     </td>
     <td valign="top">
@@ -99,8 +83,6 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     For Neo environment, enter the TMN URL of the SAP Cloud Integration tenant.
 
     For CF, copy the url from the service key of the*Process Integration Runtime*service instance and paste it in the *URL* field.
-
-
     
     </td>
     </tr>
@@ -108,15 +90,11 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     <td valign="top">
     
     Proxy Type
-
-
     
     </td>
     <td valign="top">
     
     Internet
-
-
     
     </td>
     </tr>
@@ -124,8 +102,6 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     <td valign="top">
     
     Authentication
-
-
     
     </td>
     <td valign="top">

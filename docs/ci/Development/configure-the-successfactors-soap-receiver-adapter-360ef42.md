@@ -34,14 +34,10 @@ Select the *General* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -50,14 +46,10 @@ Description
 
 *Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the channel.
-
-
 
 </td>
 </tr>
@@ -74,14 +66,10 @@ Select the *Connection* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -90,14 +78,10 @@ Description
 
 *Address* 
 
-
-
 </td>
 <td valign="top">
 
 URL of the SuccessFactors data center that you want to connect to. You can browse to and select the SuccessFactors data center URL by using the *Select* option.
-
-
 
 </td>
 </tr>
@@ -106,14 +90,10 @@ URL of the SuccessFactors data center that you want to connect to. You can brows
 
 *Address Suffix* 
 
-
-
 </td>
 <td valign="top">
 
 The system automatically populates this field with */sfapi/v1/soap* as you've selected the SOAP message protocol.
-
-
 
 </td>
 </tr>
@@ -121,8 +101,6 @@ The system automatically populates this field with */sfapi/v1/soap* as you've se
 <td valign="top">
 
 *Authentication*
-
-
 
 </td>
 <td valign="top">
@@ -145,14 +123,10 @@ Select one of the following authentication methods:
     > 
     > Parameter
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Value
-    > 
-    > 
     > 
     > </th>
     > </tr>
@@ -161,14 +135,10 @@ Select one of the following authentication methods:
     > 
     > Action
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > Create
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -177,14 +147,10 @@ Select one of the following authentication methods:
     > 
     > Name
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > SAP\_SF\_OAuth2SAML\_Auth
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -193,14 +159,10 @@ Select one of the following authentication methods:
     > 
     > Type
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > Constant
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -209,14 +171,10 @@ Select one of the following authentication methods:
     > 
     > Value
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > true
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -232,14 +190,10 @@ Select one of the following authentication methods:
 
 *Credential Name* 
 
-
-
 </td>
 <td valign="top">
 
 Credential name for your credentials that has been deployed on the tenant.
-
-
 
 </td>
 </tr>
@@ -247,8 +201,6 @@ Credential name for your credentials that has been deployed on the tenant.
 <td valign="top">
 
 *Proxy Type* 
-
-
 
 </td>
 <td valign="top">
@@ -260,8 +212,6 @@ If you choose *Manual*, you need to enter values for the fields *Proxy Host* and
 *Proxy Host* is the name of the proxy host you’re using.
 
 *Proxy Port* is the port number that you're using.
-
-
 
 </td>
 </tr>
@@ -278,14 +228,10 @@ Select the *Processing* tab and provide values in the fields as follows.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -294,8 +240,6 @@ Description
 
 *Call Type* 
 
-
-
 </td>
 <td valign="top">
 
@@ -303,16 +247,12 @@ Default value is *Synchronous Query*.
 
 If you want to execute an ad hoc operation, select *Asynchronous/Adhoc Query* from the dropdown list.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Operation* 
-
-
 
 </td>
 <td valign="top">
@@ -339,8 +279,6 @@ Operation that you want to perform on the entity that you're accessing on the Su
 
 *Entity* 
 
-
-
 </td>
 <td valign="top">
 
@@ -348,16 +286,12 @@ Entity that you want to access in the SuccessFactors system. For example, `Compo
 
 If you want to select or change the entity, and modify the query, choose *Select* and follow the steps in [Modifying SuccessFactors SOAP Entity and Operation](modifying-successfactors-soap-entity-and-operation-a6ee603.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Query* 
-
-
 
 </td>
 <td valign="top">
@@ -376,14 +310,10 @@ Query that you want to construct. For example, from the entity `JobPosting`, you
 
 *Parameters* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the parameters.
-
-
 
 </td>
 </tr>
@@ -392,14 +322,10 @@ Enter the parameters.
 
 *Page Size* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum number of records to be fetched in one page of response.
-
-
 
 </td>
 </tr>
@@ -408,14 +334,10 @@ Maximum number of records to be fetched in one page of response.
 
 *Timeout* 
 
-
-
 </td>
 <td valign="top">
 
 Maximum time the system waits for a response.
-
-
 
 </td>
 </tr>
@@ -424,14 +346,10 @@ Maximum time the system waits for a response.
 
 *Retry on Connection Failure* 
 
-
-
 </td>
 <td valign="top">
 
 Select of you want to retry on connection failure.
-
-
 
 </td>
 </tr>
@@ -439,8 +357,6 @@ Select of you want to retry on connection failure.
 <td valign="top">
 
 *Process in Pages* 
-
-
 
 </td>
 <td valign="top">

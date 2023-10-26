@@ -44,14 +44,10 @@ In the *Content Modifier* step, specify the following settings \(under *Message 
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Specify With the Following Entry ...
-
-
 
 </th>
 </tr>
@@ -60,14 +56,10 @@ Specify With the Following Entry ...
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter `XSD_FROM_PD`.
-
-
 
 </td>
 </tr>
@@ -76,14 +68,10 @@ Enter `XSD_FROM_PD`.
 
 *Type* 
 
-
-
 </td>
 <td valign="top">
 
 Select *Expression*.
-
-
 
 </td>
 </tr>
@@ -92,14 +80,10 @@ Select *Expression*.
 
 *Data Type* 
 
-
-
 </td>
 <td valign="top">
 
 Enter `java.lang.string`.
-
-
 
 </td>
 </tr>
@@ -108,16 +92,12 @@ Enter `java.lang.string`.
 
 *Value* 
 
-
-
 </td>
 <td valign="top">
 
 Enter `pd:${property.SENDER}:xsd:Binary`.
 
 The expression `${property.SENDER}` makes sure that the Partner ID is dynamically read from the Partner Directory, the entry `xsd` is the name of the parameter for the XSD file in the Partner Directory, and the expression `Binary` classifies it as a binary parameter.
-
-
 
 </td>
 </tr>

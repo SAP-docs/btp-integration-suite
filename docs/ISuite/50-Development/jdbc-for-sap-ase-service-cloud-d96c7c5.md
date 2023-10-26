@@ -13,14 +13,10 @@ JDBC receiver adapter supports SAP ASE Service cloud database provided by SAP.
 
 Database Provider
 
-
-
 </td>
 <td valign="top">
 
 SAP
-
-
 
 </td>
 </tr>
@@ -29,14 +25,10 @@ SAP
 
 Infrastructure
 
-
-
 </td>
 <td valign="top">
 
 Cloud
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ Cloud
 
 SAP BTP Environment
 
-
-
 </td>
 <td valign="top">
 
 Neo and Cloud Foundry
-
-
 
 </td>
 </tr>
@@ -61,14 +49,10 @@ Neo and Cloud Foundry
 
 JDBC URL Pattern
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:sybase:Tds:[host]:[port]/[dbname]`
-
-
 
 </td>
 </tr>
@@ -77,14 +61,10 @@ JDBC URL Pattern
 
 JDBC URL Example
 
-
-
 </td>
 <td valign="top">
 
 `jdbc:sybase:Tds:aseoncloud:1100/TEST_1`
-
-
 
 </td>
 </tr>

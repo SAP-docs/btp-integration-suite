@@ -14,11 +14,11 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
 
 -   You are familiar with the conversion rules for XML to JSON conversion.
 
-    For more information see  <?sap-ot O2O class="- topic/xref " href="778aed733e3140cea0435f4615d53812.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/ccm1691418051317/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" ?> .
+    For more information see  <?sap-ot O2O class="- topic/xref " href="778aed733e3140cea0435f4615d53812.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/cdm1692607551357/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" ?> .
 
 -   You are familiar with the limitations for XML to JSON conversion.
 
-    For more information see  <?sap-ot O2O class="- topic/xref " href="a5b4641c393f406bb544987497c90a72.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/ccm1691418051317/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" ?> .
+    For more information see  <?sap-ot O2O class="- topic/xref " href="a5b4641c393f406bb544987497c90a72.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/cdm1692607551357/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" ?> .
 
 -   You are familiar with streaming for XML to JSON conversion.
 
@@ -47,15 +47,11 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -63,15 +59,11 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Enter the name of the converter.
-
-
     
     </td>
     </tr>
@@ -79,8 +71,6 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     <td valign="top">
     
     JSON Output Encoding
-
-
     
     </td>
     <td valign="top">
@@ -88,8 +78,6 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     Enter the JSON output encoding. The default value is *from header or property*.
 
     If you select *from header or property*, the converter tries to read the encoding from the message header or exchange property `CamelCharsetName`. If there is no value defined, UTF-8 is used.
-
-
     
     </td>
     </tr>
@@ -97,15 +85,11 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     <td valign="top">
     
     XML Namespace \(only if the option *Namespace Mapping* is selected\)
-
-
     
     </td>
     <td valign="top">
     
     If you select from header or property, the converter tries to read the encoding from the message header or exchange property CamelCharsetName. If there is no value defined, UTF-8 is used.
-
-
     
     </td>
     </tr>
@@ -113,8 +97,6 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     <td valign="top">
     
     JSON Prefix Separator \(only if the option *Namespace Mapping* is selected\)
-
-
     
     </td>
     <td valign="top">
@@ -122,8 +104,6 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     Enter the JSON prefix separator to be used to separate the JSON prefix from the local part. The value used must not be used in the JSON prefix or local name.
 
     The following characters are allowed: colon\(:\), comma\(,\), dot\(.\), pipe\(|\), semicolon\(;\), and space.
-
-
     
     </td>
     </tr>
@@ -139,15 +119,11 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     <td valign="top">
     
     All
-
-
     
     </td>
     <td valign="top">
     
     All elements are presented as JSON arrays.
-
-
     
     </td>
     </tr>
@@ -155,8 +131,6 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     <td valign="top">
     
     Specific Ones
-
-
     
     </td>
     <td valign="top">
@@ -171,8 +145,6 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     Enter the absolute paths to the XML elements to be converted to JSON arrays. Specify all elements with a multiplicity larger than one. Otherwise, it cannot be ensured that streaming will result in a valid JSON document.
 
     Familiarize yourself with streaming in the XML-to-JSON converter, as documented in a separate topic.
-
-
     
     </td>
     </tr>

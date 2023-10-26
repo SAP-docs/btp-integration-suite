@@ -13,22 +13,16 @@ Get information about JMS message queues.
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Resource Path
-
-
 
 </th>
 <th valign="top">
 
 Purpose
 
-
-
 </th>
 </tr>
 <tr>
@@ -36,21 +30,15 @@ Purpose
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `​/JmsBrokers('Broker1')?$expand=QueueStates` 
 
-
-
 </td>
 <td valign="top">
 
 Get the queue status of each message queue \(0 OK, 1 warning, 2 critical\).
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Get the queue status of each message queue \(0 OK, 1 warning, 2 critical\).
 
 GET
 
-
-
 </td>
 <td valign="top">
 
 `​/JmsBrokers('Broker1')?$expand=InactiveQueues` 
 
-
-
 </td>
 <td valign="top">
 
 Get stopped queues.
-
-
 
 </td>
 </tr>

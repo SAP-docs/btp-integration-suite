@@ -62,28 +62,20 @@ An example payload for the policy is as follows:
 
 **Elements and Attributes**
 
-
-
 </th>
 <th valign="top">
 
  
 
-
-
 </th>
 <th valign="top">
 
  
-
-
 
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -91,8 +83,6 @@ Description
 <td valign="top" colspan="3">
 
 Source \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -111,16 +101,12 @@ Contains the message from which information needs to be extracted. Usually this 
 
 OutputVariable \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 A variable that stores the output of the transformation. The OutputVariable cannot be of Message type, that is, it cannot be 'message', 'request', or 'response'. You should set this element to be a custom variable, and then consume that variable.
 
 To replace the message content with the output of the transformation, delete this element.
-
-
 
 </td>
 </tr>
@@ -129,14 +115,10 @@ To replace the message content with the output of the transformation, delete thi
 
 ResourceURL \(Mandatory\)
 
-
-
 </td>
 <td valign="top">
 
 The XSLT file to be used for transforming the message
-
-
 
 </td>
 </tr>
@@ -145,16 +127,12 @@ The XSLT file to be used for transforming the message
 
 Parameters\(Optional\)
 
-
-
 </td>
 <td valign="top" colspan="2">
 
 ignoreUnresolvedVariables
 
 \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -165,8 +143,6 @@ Valid values: true/false
 
 Default value: false
 
-
-
 </td>
 </tr>
 <tr>
@@ -175,8 +151,6 @@ Default value: false
 Parameter
 
 \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -187,14 +161,10 @@ name
 
 
 
-
-
 </td>
 <td valign="top">
 
 Name of a custom parameter. Note that with name you can only use one of the optional parameters listed below.
-
-
 
 </td>
 </tr>
@@ -203,14 +173,10 @@ Name of a custom parameter. Note that with name you can only use one of the opti
 
 ref\(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the reference that sources the value from a variable.
-
-
 
 </td>
 </tr>
@@ -221,14 +187,10 @@ value
 
 \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
 Value of the parameter
-
-
 
 </td>
 </tr>
@@ -245,14 +207,10 @@ During the policy execution, the following errors can occur:
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -261,14 +219,10 @@ Cause
 
 XSLSourceMessageNotAvailable
 
-
-
 </td>
 <td valign="top">
 
 \{0\} message is not available for XSL: \{1\}
-
-
 
 </td>
 </tr>
@@ -277,14 +231,10 @@ XSLSourceMessageNotAvailable
 
 XSLEvaluationFailed
 
-
-
 </td>
 <td valign="top">
 
 Evaluation of XSL \{0\} failed with reason: "\{1\}"
-
-
 
 </td>
 </tr>
@@ -293,14 +243,10 @@ Evaluation of XSL \{0\} failed with reason: "\{1\}"
 
 XSLVariableResolutionFailed
 
-
-
 </td>
 <td valign="top">
 
 Failed to resolve variable \{0\}
-
-
 
 </td>
 </tr>
@@ -309,14 +255,10 @@ Failed to resolve variable \{0\}
 
 XSLInvalidResourceType
 
-
-
 </td>
 <td valign="top">
 
 XSL \{0\}: Resource type must be xsl. Context \{1\}
-
-
 
 </td>
 </tr>
@@ -325,14 +267,10 @@ XSL \{0\}: Resource type must be xsl. Context \{1\}
 
 XSLEmptyResourceUrl
 
-
-
 </td>
 <td valign="top">
 
 Resource Url cannot be empty in XSL \{0\}
-
-
 
 </td>
 </tr>

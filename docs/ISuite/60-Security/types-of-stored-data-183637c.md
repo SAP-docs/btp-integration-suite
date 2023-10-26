@@ -40,3 +40,11 @@ Message content can be stored encrypted. If this security measure is configured,
 
 Data storage encryption uses AES and a key length of 256 bits. The encryption key is not stored in the same location as the encrypted data.
 
+
+
+<a name="loio183637c9cdcf4a2e8b3dbb602d888e0e__section_nfl_ryf_vyb"/>
+
+## Using Edge Integration Cell
+
+Customer data can be stored by dedicated steps during message processing. Edge Integration Cell stores data in the edge environment using persistent volumes. Amazon Web Services \(AWS\) and Microsoft Azure support data encryption at rest. For more information, check the documentation of the related platform.
+

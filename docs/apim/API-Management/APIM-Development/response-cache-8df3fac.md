@@ -36,21 +36,15 @@ An example payload for the policy is as follows:
 
 **Elements & Attributes**
 
-
-
 </th>
 <th valign="top">
 
  
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -58,8 +52,6 @@ An example payload for the policy is as follows:
 <td valign="top" colspan="2">
 
 DisplayName \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -70,16 +62,12 @@ If you omit this element, the value of the name attribute is used.
 
 Syntax: `<DisplayName>Policy Display Name</DisplayName>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" colspan="2">
 
 CacheLookupTimeoutInSeconds \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -88,16 +76,12 @@ This element indicates the number of seconds after which an unsuccessful cache s
 
 Syntax: `<CacheLookupTimeoutInSeconds>60</CacheLookupTimeoutInSeconds>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" colspan="2">
 
 CacheResource \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -108,16 +92,12 @@ To administratively clear entries present in the cache, specify a CacheResource 
 
 Syntax: `<CacheResource>my_cache_reserve</CacheResource>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" colspan="2">
 
 ExcludeErrorResponse \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -128,16 +108,12 @@ The default value is `false`. If you want to exclude caching target responses wi
 
 Syntax: `<ExcludeErrorResponse>true</ExcludeErrorResponse>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" colspan="2">
 
 SkipCacheLookup \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -150,16 +126,12 @@ In the following example, the variable for bypass-cache is set to true, indicati
 
 Example: `<SkipCacheLookup>request.header.bypass-cache = "true"</SkipCacheLookup>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" colspan="2">
 
 SkipCachePopulation \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -172,16 +144,12 @@ In the following example, write to cache is skipped if the response status code 
 
 Example: `<SkipCachePopulation>response.status.code >= 200</SkipCachePopulation>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" colspan="2">
 
 UseAcceptHeader \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -197,16 +165,12 @@ The following request headers are used while calculating the cache key:
 
 Syntax: `<UseAcceptHeader>false</UseAcceptHeader>`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" colspan="2">
 
 UseResponseCacheHeader \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -221,8 +185,6 @@ While setting TTL, the values of the following response headers are considered, 
 
 Syntax: `<UseResponseCacheHeaders>false</UseResponseCacheHeaders>`
 
-
-
 </td>
 </tr>
 <tr>
@@ -230,14 +192,10 @@ Syntax: `<UseResponseCacheHeaders>false</UseResponseCacheHeaders>`
 
 Scope \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -246,14 +204,10 @@ Scope \(Optional\)
 
 CacheKey \(Required\)
 
-
-
 </td>
 <td valign="top">
 
 KeyFragment \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -298,8 +252,6 @@ You can either provide a key \(a static name\) or a value \(a dynamic variable\)
 
 Prefix \(Optional\)
 
-
-
 </td>
 <td valign="top">
 
@@ -331,14 +283,10 @@ If you define a prefix, it prepends the cache key for entries written to the cac
 
 ExpirySettings \(Required\)
 
-
-
 </td>
 <td valign="top">
 
 TimeoutInSec \(Optional\)
-
-
 
 </td>
 <td valign="top">
@@ -367,8 +315,6 @@ The TimeoutInSec element is a variable with timeout value, which indicates the n
 
 TimeOfDay
 
-
-
 </td>
 <td valign="top">
 
@@ -393,8 +339,6 @@ The default time depends on the locale and timezone, which vary according to whe
 <td valign="top">
 
 ExpiryDate
-
-
 
 </td>
 <td valign="top">
@@ -427,28 +371,20 @@ Some predefined flow variables that are populated when a ResponseCache policy is
 
 Variables
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Permission
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -457,28 +393,20 @@ Description
 
 responsecache.\{policy\_name\}.cachename
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Read-Only
 
-
-
 </td>
 <td valign="top">
 
 This variable returns the cache used in the policy.
-
-
 
 </td>
 </tr>
@@ -487,28 +415,20 @@ This variable returns the cache used in the policy.
 
  
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Read-Only
 
-
-
 </td>
 <td valign="top">
 
 This variable returns the cache key used in the policy.
-
-
 
 </td>
 </tr>
@@ -517,28 +437,20 @@ This variable returns the cache key used in the policy.
 
 responsecache.\{policy\_name\}.cachehit
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Read-Only
 
-
-
 </td>
 <td valign="top">
 
 True if the policy is executed successfully
-
-
 
 </td>
 </tr>
@@ -547,28 +459,20 @@ True if the policy is executed successfully
 
 responsecache.\{policy\_name\}.invalidentry
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Read-Only
 
-
-
 </td>
 <td valign="top">
 
 True if the cache entry is invalid
-
-
 
 </td>
 </tr>
@@ -585,14 +489,10 @@ Error messages that are seen when this policy triggers an error are described in
 
 Error Name
 
-
-
 </th>
 <th valign="top">
 
 Cause
-
-
 
 </th>
 </tr>
@@ -601,14 +501,10 @@ Cause
 
 InvalidTimeout
 
-
-
 </td>
 <td valign="top">
 
 A negative number value was specified in the <CacheLookupTimeoutInSeconds\> element.
-
-
 
 </td>
 </tr>
@@ -617,14 +513,10 @@ A negative number value was specified in the <CacheLookupTimeoutInSeconds\> elem
 
 InvalidCacheResourceReference
 
-
-
 </td>
 <td valign="top">
 
 The name specified in the <CacheResource\> element does not exist.
-
-
 
 </td>
 </tr>
@@ -633,14 +525,10 @@ The name specified in the <CacheResource\> element does not exist.
 
 ResponseCacheStepAttachmentNotAllowedReq
 
-
-
 </td>
 <td valign="top">
 
 The ResponseCache policy was attached more than once in the request path or to multiple request paths. For example, you cannot place it in both the Request PreFlow and PostFlow.
-
-
 
 </td>
 </tr>
@@ -649,14 +537,10 @@ The ResponseCache policy was attached more than once in the request path or to m
 
 ResponseCacheStepAttachmentNotAllowedResp
 
-
-
 </td>
 <td valign="top">
 
 The ResponseCache policy was attached to multiple response paths.
-
-
 
 </td>
 </tr>
@@ -665,14 +549,10 @@ The ResponseCache policy was attached to multiple response paths.
 
 InvalidMessagePatternForErrorCode
 
-
-
 </td>
 <td valign="top">
 
 The <SkipCacheLookup\> or the <SkipCachePopulation\> element in a ResponseCache policy contained an invalid condition.
-
-
 
 </td>
 </tr>
@@ -681,14 +561,10 @@ The <SkipCacheLookup\> or the <SkipCachePopulation\> element in a ResponseCache 
 
 CannotDeleteStepDefinition
 
-
-
 </td>
 <td valign="top">
 
 You must detach the policy definition from the proxy flows before you can delete the policy.
-
-
 
 </td>
 </tr>
@@ -697,14 +573,10 @@ You must detach the policy definition from the proxy flows before you can delete
 
 CacheNotFound
 
-
-
 </td>
 <td valign="top">
 
 The cache specified in the <CacheResource\> element does not exist.
-
-
 
 </td>
 </tr>

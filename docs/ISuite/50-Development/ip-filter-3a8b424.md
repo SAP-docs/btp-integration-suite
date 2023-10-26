@@ -18,14 +18,10 @@ This policy is used to selectively allow or deny access for an IP address or gro
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -34,14 +30,10 @@ Description
 
 Name
 
-
-
 </td>
 <td valign="top">
 
 The internal name of the policy. The value of the name attribute can contain letters, numbers, spaces, hyphens, underscores, and periods. This value cannot exceed 255 characters.
-
-
 
 </td>
 </tr>
@@ -50,14 +42,10 @@ The internal name of the policy. The value of the name attribute can contain let
 
 On Error
 
-
-
 </td>
 <td valign="top">
 
 Determines the behaviour when an exception or an error occurs during the policy execution. The default value is abort on error.
-
-
 
 </td>
 </tr>
@@ -65,8 +53,6 @@ Determines the behaviour when an exception or an error occurs during the policy 
 <td valign="top">
 
 Rules
-
-
 
 </td>
 <td valign="top">
@@ -85,8 +71,6 @@ Scroll down to the *Rules* section, select *Add* and provide the rules for the t
 
 Default Rule
 
-
-
 </td>
 <td valign="top">
 
@@ -94,16 +78,12 @@ If the client IP of the incoming calls doesn’t fall within the range of the IP
 
 The default value is set to *Deny*. Select *Allow* to permit calls from specific IP addresses.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Allow Headers
-
-
 
 </td>
 <td valign="top">

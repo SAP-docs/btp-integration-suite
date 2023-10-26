@@ -61,21 +61,15 @@ Further, if you want to transport APIs and its related artifacts from the test t
 
 Steps
 
-
-
 </th>
 <th valign="top">
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Videos
-
-
 
 </th>
 </tr>
@@ -83,8 +77,6 @@ Videos
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
@@ -103,16 +95,12 @@ You can transport the API Management artifacts, such as API products, API proxie
 
 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
@@ -129,8 +117,6 @@ Create a ContentAssemblyService destination in source subaccount to make API cal
 
 
 
-
-
 </td>
 </tr>
 <tr>
@@ -138,19 +124,13 @@ Create a ContentAssemblyService destination in source subaccount to make API cal
 
 3
 
-
-
 </td>
 <td valign="top">
 
 Create an instance of API portal, API Management in your source subaccount and create a service key. See, [Creating an Instance of API portal, API Management](creating-an-instance-of-api-portal-api-management-6129172.md)
 
-
-
 </td>
 <td valign="top">
-
-
 
 
 
@@ -161,19 +141,13 @@ Create an instance of API portal, API Management in your source subaccount and c
 
 4
 
-
-
 </td>
 <td valign="top">
 
 Create destination APIManagement in your source subaccount to make API calls for fetching the API content from the API portal workspace. See, [Creating API Management Destination](creating-api-management-destination-3fd86c7.md)
 
-
-
 </td>
 <td valign="top">
-
-
 
 
 
@@ -184,19 +158,13 @@ Create destination APIManagement in your source subaccount to make API calls for
 
 5
 
-
-
 </td>
 <td valign="top">
 
 Create a service instance and a service key of Transport Management service in your transport subaccount. See, [Creating an Instance of SAP Cloud Transport Management Service](creating-an-instance-of-sap-cloud-transport-management-service-69a41e2.md) 
 
-
-
 </td>
 <td valign="top">
-
-
 
 
 
@@ -207,19 +175,13 @@ Create a service instance and a service key of Transport Management service in y
 
 6
 
-
-
 </td>
 <td valign="top">
 
 Add a *Source* node in Transport Management Applications. See, [Adding a Source Node in Transport Management Applications](adding-a-source-node-in-transport-management-applications-dc24ea2.md)
 
-
-
 </td>
 <td valign="top">
-
-
 
 
 
@@ -230,19 +192,13 @@ Add a *Source* node in Transport Management Applications. See, [Adding a Source 
 
 7
 
-
-
 </td>
 <td valign="top">
 
 Create destination TransportManagement in your source subaccount to make API calls to the Transport Management service \(TMS\). See, [Creating Transport Management Destination](creating-transport-management-destination-6c94d89.md) 
 
-
-
 </td>
 <td valign="top">
-
-
 
 
 
@@ -253,19 +209,13 @@ Create destination TransportManagement in your source subaccount to make API cal
 
 8
 
-
-
 </td>
 <td valign="top">
 
 Create a destination in Transport subaccount for the deploy service. See, [Create a Deploy Service Destination in Cloud Transport Management Service Subaccount](create-a-deploy-service-destination-in-cloud-transport-management-service-subacco-09b1eec.md)
 
-
-
 </td>
 <td valign="top">
-
-
 
 
 
@@ -276,19 +226,13 @@ Create a destination in Transport subaccount for the deploy service. See, [Creat
 
 9
 
-
-
 </td>
 <td valign="top">
 
 Add a Destination node in Transport Management Applications. See, [Adding a Destination Node in Cloud Transport Management Applications](adding-a-destination-node-in-cloud-transport-management-applications-681bb1a.md)
 
-
-
 </td>
 <td valign="top">
-
-
 
 
 
@@ -299,19 +243,13 @@ Add a Destination node in Transport Management Applications. See, [Adding a Dest
 
 10
 
-
-
 </td>
 <td valign="top">
 
 Create a transport route to connect the source tenant to the destination tenant. See, [Connecting the Source and the Destination Nodes](connecting-the-source-and-the-destination-nodes-4840f03.md)
 
-
-
 </td>
 <td valign="top">
-
-
 
 
 

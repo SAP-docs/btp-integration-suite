@@ -63,14 +63,10 @@ A content modifier step right before the data store write step stores the order 
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -79,14 +75,10 @@ Setting
 
 *Action*
 
-
-
 </td>
 <td valign="top">
 
 Create
-
-
 
 </td>
 </tr>
@@ -95,14 +87,10 @@ Create
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 orderNumber
-
-
 
 </td>
 </tr>
@@ -111,14 +99,10 @@ orderNumber
 
 *Source Type*
 
-
-
 </td>
 <td valign="top">
 
 XPath
-
-
 
 </td>
 </tr>
@@ -127,14 +111,10 @@ XPath
 
 *Source Value* 
 
-
-
 </td>
 <td valign="top">
 
 string\(//@PurchaseOrderNumber\)
-
-
 
 </td>
 </tr>
@@ -143,14 +123,10 @@ string\(//@PurchaseOrderNumber\)
 
 *Data Type*
 
-
-
 </td>
 <td valign="top">
 
 java.lang.String
-
-
 
 </td>
 </tr>
@@ -167,14 +143,10 @@ The write data store step is defined as follows \(tab *Processing*\):
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Setting
-
-
 
 </th>
 </tr>
@@ -183,14 +155,10 @@ Setting
 
 *Data Store Name*
 
-
-
 </td>
 <td valign="top">
 
 PatternQoS-03a
-
-
 
 </td>
 </tr>
@@ -199,14 +167,10 @@ PatternQoS-03a
 
 *Visibility*
 
-
-
 </td>
 <td valign="top">
 
 Integration Flow
-
-
 
 </td>
 </tr>
@@ -215,14 +179,10 @@ Integration Flow
 
 *Entry ID* 
 
-
-
 </td>
 <td valign="top">
 
 $\{property.orderNumber\}
-
-
 
 </td>
 </tr>
@@ -231,14 +191,10 @@ $\{property.orderNumber\}
 
 *Retention Threshold for Alerting \(in d\)* 
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -247,14 +203,10 @@ $\{property.orderNumber\}
 
 *Expiration Period \(in d\)* 
 
-
-
 </td>
 <td valign="top">
 
 30
-
-
 
 </td>
 </tr>
@@ -291,15 +243,11 @@ To test the scenario, perform the following steps:
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Setting
-
-
     
     </th>
     </tr>
@@ -307,15 +255,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
     `OWN`
-
-
     
     </td>
     </tr>
@@ -323,15 +267,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *User*
-
-
     
     </td>
     <td valign="top">
     
     Enter the user as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>
@@ -339,15 +279,11 @@ To test the scenario, perform the following steps:
     <td valign="top">
     
     *Password*
-
-
     
     </td>
     <td valign="top">
     
     Enter the password as specified when setting up inbound basic authentication.
-
-
     
     </td>
     </tr>

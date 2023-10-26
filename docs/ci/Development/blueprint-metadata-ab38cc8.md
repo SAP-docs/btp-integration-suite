@@ -19,28 +19,20 @@ This set of tags and attributes allows you to define the metadata.
 
 Attributes
 
-
-
 </th>
 <th valign="top">
 
 Datatype
-
-
 
 </th>
 <th valign="top">
 
 Cardinality
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -49,14 +41,10 @@ Description
 
 createOnce
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
@@ -68,8 +56,6 @@ xsd:string
 
 If you set the string value as “true”, then the bean instantiation in the blueprint generation is done only once. By default the value is 'false'.
 
-
-
 </td>
 </tr>
 <tr>
@@ -77,14 +63,10 @@ If you set the string value as “true”, then the bean instantiation in the bl
 
 createCondition
 
-
-
 </td>
 <td valign="top">
 
 xsd:string
-
-
 
 </td>
 <td valign="top">
@@ -105,8 +87,6 @@ For example:
 
 Here `Someclass.java` is generated in the blueprint only if the UI variable `proxyType` contains the value `onPremise`.
 
-
-
 </td>
 </tr>
 </table>
@@ -118,14 +98,10 @@ Here `Someclass.java` is generated in the blueprint only if the UI variable `pro
 
 Tag
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -134,14 +110,10 @@ Description
 
 `<TransformationTags xmlns:bp=”http://www.adk.gen/xmlns/blueprint/”>` 
 
-
-
 </td>
 <td valign="top">
 
 This is the parent tag for the `<blueprint>` tag. This tag does not contain any generation specific information as part of attribute. The `<blueprint>` tag must be included within this tag.
-
-
 
 </td>
 </tr>
@@ -150,14 +122,10 @@ This is the parent tag for the `<blueprint>` tag. This tag does not contain any 
 
 `<bp:blueprint>` 
 
-
-
 </td>
 <td valign="top">
 
 This tag can be used to specify additional namespaces if needed.
-
-
 
 </td>
 </tr>
@@ -166,14 +134,10 @@ This tag can be used to specify additional namespaces if needed.
 
 `<bp:bean>` 
 
-
-
 </td>
 <td valign="top">
 
 Beans are declared using <bean\> element.
-
-
 
 </td>
 </tr>
@@ -182,14 +146,10 @@ Beans are declared using <bean\> element.
 
 `<bp:reference>` 
 
-
-
 </td>
 <td valign="top">
 
 To generate References this tag can be used. This tag does not contain any new attributes. It is similar to the camel blueprint's reference tag. Refer the XSD above for all supported attributes.
-
-
 
 </td>
 </tr>
@@ -198,14 +158,10 @@ To generate References this tag can be used. This tag does not contain any new a
 
 `<cxfcore:bus xmlns:cxfcore=”http://cxf.apache.org/blueprint/core”>` 
 
-
-
 </td>
 <td valign="top">
 
 Refer `http://cxf.apache.org/schemas/blueprint/core.xsd` for all attributes supported.
-
-
 
 </td>
 </tr>
@@ -214,14 +170,10 @@ Refer `http://cxf.apache.org/schemas/blueprint/core.xsd` for all attributes supp
 
 `<cxf:cxfEndpoint xmlns:cxf=”http://camel.apache.org/schema/blueprint/cxf”>` 
 
-
-
 </td>
 <td valign="top">
 
 Refer `https://camel.apache.org/schema/cxf/camel-cxf.xsd` for all the attributes supported.
-
-
 
 </td>
 </tr>
@@ -230,14 +182,10 @@ Refer `https://camel.apache.org/schema/cxf/camel-cxf.xsd` for all the attributes
 
 `<camel:camelContext xmlns:camel=”http://camel.apache.org/schema/blueprint”>` 
 
-
-
 </td>
 <td valign="top">
 
 This is the root camel context tag just for the reference. This contains all the properties a final blueprint’s camelContext contains as part of g&b generation. The user is not allowed to make any change to this tag. Any changes/additions will simply be ignored.
-
-
 
 </td>
 </tr>
@@ -246,14 +194,10 @@ This is the root camel context tag just for the reference. This contains all the
 
 `<http-conf:conduit xmlns:http-conf="http://cxf.apache.org/transports/http/configuration" >` 
 
-
-
 </td>
 <td valign="top">
 
 This is same as that of Camel Blueprint specification for conduit tag. Refer `http://cxf.apache.org/schemas/configuration/http-conf.xsd`.
-
-
 
 </td>
 </tr>
@@ -262,14 +206,10 @@ This is same as that of Camel Blueprint specification for conduit tag. Refer `ht
 
 `<camel:route xmlns:camel="http://camel.apache.org/schema/blueprint">` 
 
-
-
 </td>
 <td valign="top">
 
 This is same as that of Camel blueprint specification <route\>. Must apear within <camelContext\>.. Refer the XSD for the attributes. Multiple routes are supported.
-
-
 
 </td>
 </tr>
@@ -278,14 +218,10 @@ This is same as that of Camel blueprint specification <route\>. Must apear withi
 
 `<properties>` 
 
-
-
 </td>
 <td valign="top">
 
 Can be contained in the DSL just for reference. This tag must be same as g&b's generated tag. It has no significance. i.e. any modification to this tag can simply be ignored by the DSL processor.
-
-
 
 </td>
 </tr>
@@ -294,14 +230,10 @@ Can be contained in the DSL just for reference. This tag must be same as g&b's g
 
 `<streamCaching>` 
 
-
-
 </td>
 <td valign="top">
 
 Provided just for the reference.
-
-
 
 </td>
 </tr>
