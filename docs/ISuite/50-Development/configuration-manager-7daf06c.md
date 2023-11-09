@@ -22,7 +22,7 @@ After creating your custom attribute, you need to assign these attributes to a t
 
 <a name="loio7daf06ceece84dc09d3ca63fc62d0a61__section_y5v_1rb_bzb"/>
 
-## How are the custom search attirbutes consumed
+## How are the custom search attributes consumed
 
 Once your create and define the custom search attributes, you need to use them in the necessary B2B transacations in an agreement. These attributes are then pushed into the partner directory upon activation of the agreement. The incoming payload consists of the search values in XPath format and when the payload is parsed, the values are read and displayed in the B2B monitor.
 
