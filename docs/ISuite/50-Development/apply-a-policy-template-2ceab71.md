@@ -42,6 +42,9 @@ You are applying a policy template and want to apply it to an API proxy.
 
     You can click a template to view all the policies available and also select the required policies in that template.
 
+    > ### Note:  
+    > When applying the policy template, any default fault rules or a post-client flow available within the policy template will also be appended to the API proxy.
+
 7.  If you want to copy only the policies and not the flows, choose *Copy Only*. Otherwise, choose *Apply* to copy both polices and flows.
 
 

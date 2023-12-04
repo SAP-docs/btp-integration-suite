@@ -9,7 +9,7 @@ If you choose the integration content monitor, only artifacts \(such as integrat
 > ### Restriction:  
 > For details about managing the integration content, see [Manage Integration Content](50-Development/manage-integration-content-09a7223.md).
 > 
-> For the integration flows deployed on the SAP Integration Suite Edge Integration Cell, only the functions described in the following topics are available:
+> For the integration flows deployed on Edge Integration Cell, only the functions described in the following topics are available:
 > 
 > -   [Runtime Status](50-Development/runtime-status-c14a7b1.md)
 > 

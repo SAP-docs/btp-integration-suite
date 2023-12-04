@@ -33,9 +33,11 @@ The following adapters can store messages temporarily in queues or read messages
 
 To open the *Manage Message Queues* screen, perform the following steps:
 
-1.  Go to *Monitor* \> *Integrations*.
+1.  Go to *Monitor* \> *Integrations and APIs*.
 
-2.  Choose the *Message Queues* tile under *Manage Stores*.
+2.  If you have activated Edge Integration Cell, select the target runtime \(*Runtime* parameter\). For more information on how to manage stores for Edge Integration Cell, see [Manage Stores for Edge Integration Cell](../manage-stores-for-edge-integration-cell-ced47da.md) 
+
+3.  Choose the *Message Queues* tile under *Manage Stores*.
 
 
 
@@ -187,7 +189,7 @@ Sort the table entries according to the displayed sorting criteria.
 
 [JMS Adapter](jms-adapter-0993f2a.md "You configure the JMS adapter to enable asynchronous messaging using message queues.")
 
- <?sap-ot O2O class="- topic/link " href="63a96540c8494b578ec657bdfa5be6b8.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/cdm1692607551357/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/cdcce24f484a41c08ab46d12ab666451.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="63a96540c8494b578ec657bdfa5be6b8.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/xui1697777552331/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/cdcce24f484a41c08ab46d12ab666451.xml" ?> 
 
- <?sap-ot O2O class="- topic/link " href="3208eda405674b8b8f14c4e2bfdf22ee.xml" text="" desc="" xtrc="link:5" xtrf="file:/home/builder/src/dita-all/cdm1692607551357/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/cdcce24f484a41c08ab46d12ab666451.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="3208eda405674b8b8f14c4e2bfdf22ee.xml" text="" desc="" xtrc="link:5" xtrf="file:/home/builder/src/dita-all/xui1697777552331/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/cdcce24f484a41c08ab46d12ab666451.xml" ?> 
 

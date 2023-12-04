@@ -8,6 +8,9 @@ This topic describes how to import an existing API definition into the API porta
 
 ## Prerequisites
 
+> ### Note:  
+> If you already have a subscription for Integration Suite, and looking for steps to import an API, get redirected to the Integration Suite documentation by clicking [here](https://help.sap.com/docs/integration-suite/sap-integration-suite/import-api?version=CLOUD&q=Create%20an%20API%20Using%20the%20API%20Designer).
+
 You are assigned with *APIPortal. Administrator* role.
 
 The API proxy content is available as a .zip file and swagger json file. The contents adhere to the API proxy structure as defined in [API Proxy Structure](api-proxy-structure-4dfd54a.md).

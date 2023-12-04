@@ -4,9 +4,9 @@
 
 # Configure JDBC Drivers
 
-Learn how to upload and deploy JDBC type-4 compliant third-party drivers on Cloud Integration service.
+Learn how to upload and deploy JDBC type-4 compliant third-party drivers on SAP Integration Suite.
 
-JDBC connectivity provides a mechanism for integration flows deployed on Cloud Integration tenants in Cloud Foundry environments to connect with Amazon RDS \(SQL Server and Oracle\) and HANA-aaS databases hosted on AWS using JDBC drivers. The tenant administrator configures JDBC drivers on your Cloud Integration tenant to enable you to establish connection to a database managed by a third-party vendor. Your database vendor should provide the driver or download it from their official website. We highly recommend that you work with the latest version of the third-party JDBC driver. All uploaded drivers undergo a security validation before being deployed on a Cloud Integration tenant.
+JDBC connectivity provides a mechanism for integration flows deployed on SAP Integration Suite tenants to connect with Amazon RDS \(SQL Server and Oracle\) and HANA-aaS databases hosted on AWS using JDBC drivers. The tenant administrator configures JDBC drivers to enable you to establish connection to a database managed by a third-party vendor. Your database vendor should provide the driver or download it from their official website. We highly recommend that you work with the latest version of the third-party JDBC driver. All uploaded drivers undergo a security validation before being deployed on a tenant.
 
 > ### Note:  
 > Cloud Services may include features that permit third-party code or tools to be downloaded/uploaded into Customer’s Cloud Service account by \(i\) Customer or \(ii\) by SAP on behalf of and at the request of Customer from a non-SAP service for which Customer has a license, to facilitate the exchange of data or enable or improve other data processing activities. Such third-party code or tools are Customer Data. The code or tools may not be used to connect the Cloud Service or other software/cloud services to a third-party database licensed from SAP under a run-time license for use with specified SAP Applications. Customer must license a full-use license from the applicable database vendor to use such code or tools to replicate data from such database into the Cloud Service.
@@ -97,9 +97,11 @@ Before consuming the drivers in runtime, you must deploy the uploaded driver as 
 
 ## Deploying JDBC Drivers
 
-1.  Choose the *JDBC Driver* tab, and then choose *Add* for uploading a driver from your file system.
+1.  If you have activated Edge Integration Cell, select the target runtime where you want to deploy the JDBC driver.
 
-2.  Specify the following attributes:
+2.  Choose the *JDBC Driver* tab, and then choose *Add* for uploading a driver from your file system.
+
+3.  Specify the following attributes:
 
     **Driver-Specific Parameters**
 
@@ -155,9 +157,21 @@ Before consuming the drivers in runtime, you must deploy the uploaded driver as 
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    *Runtime*
+    
+    </td>
+    <td valign="top">
+    
+    Selected runtime is displayed.
+    
+    </td>
+    </tr>
     </table>
     
-3.  Deploy the driver.
+4.  Deploy the driver.
 
 
 

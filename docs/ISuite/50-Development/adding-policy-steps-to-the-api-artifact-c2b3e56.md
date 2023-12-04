@@ -21,7 +21,7 @@ To enforce security or control API traffic, you can set rules on the API by addi
 
 You're adding policy steps to the API artifact you've created.
 
-You can also add integration-related flow steps to the artifacts. To know more about the available flow steps for Edge Integration Cell, see [Supported Features and Limitations of Edge Integration Cell](../supported-features-and-limitations-of-edge-integration-cell-144c64a.md). To know more about configuring the flow steps, see [Configure Integration Flow Components](https://help.sap.com/docs/integration-suite/sap-integration-suite/configure-integration-flow-components?version=CLOUD&q=Configure%20Integration%20Flow%20Components).
+You can also add integration-related flow steps to the artifacts. To know more about the available flow steps for Edge Integration Cell, see [Edge Integration Cell Runtime Scope](../edge-integration-cell-runtime-scope-144c64a.md). To know more about configuring the flow steps, see [Configure Integration Flow Components](https://help.sap.com/docs/integration-suite/sap-integration-suite/configure-integration-flow-components?version=CLOUD&q=Configure%20Integration%20Flow%20Components).
 
 
 

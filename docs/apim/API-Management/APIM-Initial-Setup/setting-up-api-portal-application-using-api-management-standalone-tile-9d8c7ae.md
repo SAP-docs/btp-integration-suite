@@ -127,13 +127,13 @@ Once API Business Hub Enterprise is set up, navigate to :gear: and choose *Conne
 
 [Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "Cancel your API portal and API business hub enterprise application subscriptions to disable your account from the API Management service.")
 
-[Build APIs](../APIM-Development/build-apis-74c042b.md "API portal provides a common platform for API designers to define and publish APIs. Every API Management customer is provided with their own API portal application on cloud. The API portal offers capabilities to configure systems, build and publish APIs, analyze and test APIs.")
+[Build APIs](../build-apis-74c042b.md "provides a common platform for API designers to define and publish APIs. Every customer is provided with their own application on cloud. The offers capabilities to configure systems, build and publish APIs, analyze and test APIs.")
 
-[Create an API Provider](../APIM-Development/create-an-api-provider-6b263e2.md "Define the details of the host you want an application to reach by creating an API provider.")
+[Create an API Provider](../create-an-api-provider-6b263e2.md "Define the details of the host you want an application to reach by creating an API provider.")
 
-[Different Methods of Creating an API](../APIM-Development/different-methods-of-creating-an-api-4ac0431.md "An API proxy is the data object that contains all the functionality to be executed when an external user wants to access the backend service.")
+[Different Methods of Creating an API](../different-methods-of-creating-an-api-4ac0431.md "An API proxy is the data object that contains all the functionality to be executed when an external user wants to access the backend service.")
 
-[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "A virtual host lets you host multiple domain names on API Management service.")
+[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "A virtual host lets you host multiple domain names on API Management capability within Integration Suite.")
 
 [Request for Two-Way SSL Certificate](request-for-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
 

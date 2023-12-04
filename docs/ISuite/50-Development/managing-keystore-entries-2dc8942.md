@@ -59,9 +59,17 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
 
 ## Procedure
 
-1.  Choose the *Keystore* tile in the *Manage Security* section.
+1.  Choose *Monitor* \> *Integrations and APIs*.
 
-2.  The *Current* tab shows the keystore entries available for the tenant.
+2.  Select the target runtime \(*Runtime* parameter\).
+
+    This information is only relevant for Edge Integration Cell runtime.
+
+    For more information on how to manage the keystore for Edge Integration Cell, see [Manage Keystore for Edge Integration Cell](../manage-keystore-for-edge-integration-cell-39eb101.md).
+
+3.  Choose the *Keystore* tile in the *Manage Security* section.
+
+4.  The *Current* tab shows the keystore entries available for the tenant.
 
     For each keystore, the single entries are displayed \(by alias\).
 
@@ -381,9 +389,9 @@ To update an artifact, see:
 
 [Certificate Management](../40-RemoteSystems/certificate-management-feb9c2f.md "")
 
-[Client Certificate Authentication and Certificate-to-User Mapping (Inbound), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/4b5afdd6bcbd4bc8a3d50d9ad2ef6482.html "This option includes an authentication step based on a digital client certificate and the mapping of the certificate to a user.") :arrow_upper_right:
+[Client Certificate Authentication and Certificate-to-User Mapping (Inbound), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/4b5afdd6bcbd4bc8a3d50d9ad2ef6482.html "This option includes an authentication step based on a digital client certificate and the mapping of the certificate to a user.") :arrow_upper_right:
 
-[Client Certificate Authentication (Inbound), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c1eeeab4877147ffa6a5997c76eaaaca.html "This option includes an authentication step based on a digital client certificate.") :arrow_upper_right:
+[Client Certificate Authentication (Inbound), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/c1eeeab4877147ffa6a5997c76eaaaca.html "This option includes an authentication step based on a digital client certificate.") :arrow_upper_right:
 
 [Client Certificate Authentication \(Outbound\)](../40-RemoteSystems/client-certificate-authentication-outbound-c4e4a15.md "")
 

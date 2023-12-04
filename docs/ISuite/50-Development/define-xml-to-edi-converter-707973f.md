@@ -8,7 +8,9 @@ The XML to EDI converter transforms a XML message in XML format to EDI format.
 
 ## Context
 
-Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 format.
+Use the converter to convert XML message either to EDIFACT, ODETTE, TRADACOMS, or ASC-X12 format.
+
+XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TRADACOMS* tab; available only for dedicated service plans, see [2903776](https://me.sap.com/notes/2903776)\).
 
 
 
@@ -234,6 +236,159 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     > 
     > -   Enter the hexadecimal value for the separator you want to use in the respective field. For example, enter `#x2b` to use *\+* as the separator.
     > -   Enter the header value to fetch the sepatator from header. For example, `${header.HEADER_NAME}`
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+    **TRADACOMS**
+
+    > ### Note:  
+    > This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Source Encoding
+    
+    </td>
+    <td valign="top">
+    
+    Use the appropriate encoding format of the inbound TRADACOMS interchange.
+
+    The following encoding formats are available:
+
+    -   UTF-8
+
+    -   ISO-8859-1
+
+    -   Dynamic
+
+        If selected, the encoding format is set dynamically at runtime using the header `SAP_XMLTOEDI_TRADACOMS_SOURCE_ENCODING` \(possible values: `UTF-8`, `ISO-8859-1`\).
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Conversion Preference
+    
+    </td>
+    <td valign="top">
+    
+    Specify the conversion preference for the TRADACOMS EDI message.
+
+    There are the following options:
+
+    -   No
+
+    -   Yes
+
+    -   Dynamic
+
+        If selected, this parameter is set dynamically at runtime using the header `SAP_XMLTOEDI_TRADACOMS_CONVERSION_PREFERENCE` \(possible values: `No`, `Yes`\).
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    EDI Schema Definition
+    
+    </td>
+    <td valign="top">
+    
+    Validates an EDI interchange against the XSD schema for the conversion.
+
+    To specify the schema definition, there are the following options:
+
+    -   Dynamic
+
+        If selected, this parameter is set dynamically at runtime based on the value of the header `SAP_XMLTOEDI_TRADACOMS_SCHEMA_SOURCE` \(possible values: `Header`, `IntegrationProject`\).
+
+    -   Header
+
+        If selected, the location of the schema definition is set at runtime based on the value of a header \(header name to be defined using the *Header Name* parameter\).
+
+    -   Integration Flow
+
+        If selected, the schema definition is specified from a resource file of the integration flow \(use the parameter *Schemas* to choose the schema\).
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Header Name
+
+    \(only available if for *EDI Schema Definition* the option *Header* is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Define the name of the header that contains the location of the EDI schema definition.
+
+    > ### Note:  
+    > You can define the header in a Script step that is to be added before the EDI Converter step of your integration flow.
+    > 
+    > For example, you can add the following header value:
+    > 
+    > `/xsd/TRADACOMS_ORDHDR_FILE_9.xsd for TRADACOMS`
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Schemas
+
+    \(only available if for *EDI Schema Definition* the option *Integration Flow* is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Select the schema definition from an XSD file added as resource to the integration flow.
+
+    Perform the following steps:
+
+    1.  Choose *Add*.
+
+    2.  Choose *Select* to add a file from the XSD folder found in the same integration project.
+
+        Only XSD files from Integration Advisor are supported.
+
+
+    > ### Note:  
+    > Apply the following naming convention for the file name of the XML schema:
+    > 
+    > `TRADACOMS: TRADACOMS_ORDHDR_FILE_9.xsd`
 
 
     

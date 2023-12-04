@@ -28,6 +28,118 @@ The following mapping cardinalities are supported for Date Time mapping:
 -   If source and target nodes are both Date, Time, or DateTime fields then the *DataTime Conversion* tab is displayed automatically. You see the default DateTime format of the source as well as of the target node which is set while defining the corresponding message implementation guidelines.
 
 
+*Handling Missing DateTime Values*
+
+When you map a source node with a target node of type DateTime with different format, the source node might not contain all the inputs needed for the format on the target side. Say for example, a source node with format *MMDD* is mapped with the target node format *DDMMCCYY*. Here, the values for MM and DD can be picked from the source node value but the values for CC and YY are missing. In such cases, you can set pre-fixed values to the missing fields in the *Date Time Conversion* tab. You can set the value as:
+
+-   *Current Date/Time*: This option will set the current date/time value for the missing part at the time of mapping execution.
+
+-   *Fixed Value*: This option allows you to provide a constant value for the missing parts of the target format.
+
+If no values are mentioned, then *Default Value* is set for the fields with the following default set by the system for the respective missing part.
+
+**DateTime Default Values**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Field
+
+</th>
+<th valign="top">
+
+Default Value
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+YEAR
+
+</td>
+<td valign="top">
+
+1970
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MONTH
+
+</td>
+<td valign="top">
+
+1
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MONTH
+
+</td>
+<td valign="top">
+
+1
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DAY\_OF\_MONTH
+
+</td>
+<td valign="top">
+
+1
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+HOUR, MINUTE, SECOND, MILLISECOND
+
+</td>
+<td valign="top">
+
+0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Timezone-Offset
+
+</td>
+<td valign="top">
+
+0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Century
+
+</td>
+<td valign="top">
+
+Two digit years are interpreted by adjusting dates to be within 80 years before and 20 years after the time of the execution of the mapping.
+
+</td>
+</tr>
+</table>
+
 *Conflict in using N:1 Mapping*
 
 There could be scenarios where multiple source nodes provide the same input to the target node. In such cases, conflict of data could arise. Say for example, you have mapped 2 source nodes with one target node. The source nodes node1 and node2 both contain the format *MMYY* and the target date time format is also *MMYY*. This could result in a conflict. To resolve this, the application displays two seperate fields below the *Target DateTime Format*:

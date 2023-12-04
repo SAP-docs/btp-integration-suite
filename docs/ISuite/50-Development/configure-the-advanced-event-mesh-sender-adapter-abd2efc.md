@@ -15,14 +15,10 @@ The *General* tab displays general information about the adapter itself.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 AdvancedEventMesh
-
-
 
 </td>
 </tr>
@@ -47,14 +39,10 @@ AdvancedEventMesh
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 AdvancedEventMesh
-
-
 
 </td>
 </tr>
@@ -63,14 +51,10 @@ AdvancedEventMesh
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 TCP
-
-
 
 </td>
 </tr>
@@ -79,14 +63,10 @@ TCP
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 SMF
-
-
 
 </td>
 </tr>
@@ -103,14 +83,10 @@ Switch to the *Connection* tab to configure the adapter's connection details.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -119,14 +95,10 @@ Description
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 The host name of the event broker.
-
-
 
 </td>
 </tr>
@@ -135,14 +107,10 @@ The host name of the event broker.
 
 *Message VPN* 
 
-
-
 </td>
 <td valign="top">
 
 The name of the Message VPN to attempt to join when connecting to the event broker.
-
-
 
 </td>
 </tr>
@@ -151,14 +119,10 @@ The name of the Message VPN to attempt to join when connecting to the event brok
 
 *Username* 
 
-
-
 </td>
 <td valign="top">
 
 The client username used for authentication with the event broker.
-
-
 
 </td>
 </tr>
@@ -166,8 +130,6 @@ The client username used for authentication with the event broker.
 <td valign="top">
 
 *Authentication Type* 
-
-
 
 </td>
 <td valign="top">
@@ -190,14 +152,10 @@ The authentication mechanism to be used while connecting to AEM. The available o
 
 *Password Secure Alias\(Only when using Basic authentication\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias which defines the client password used for authentication with the event broker, stored as Secure Parameter.
-
-
 
 </td>
 </tr>
@@ -206,14 +164,10 @@ The alias which defines the client password used for authentication with the eve
 
 *Keystore Alias\(Only when using Client Certificate authentication\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of the private Key Pair in the Integration Suite's Keystore.
-
-
 
 </td>
 </tr>
@@ -222,14 +176,10 @@ The alias of the private Key Pair in the Integration Suite's Keystore.
 
 *Truststore Alias\(Only when using Client Certificate authentication\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of the Certificate in the Integration Suite's Keystore. This is optional and maybe necessary only if event broker host certificate requires to be trusted or not recognized by the JRE.
-
-
 
 </td>
 </tr>
@@ -237,8 +187,6 @@ The alias of the Certificate in the Integration Suite's Keystore. This is option
 <td valign="top">
 
 *OAuth2 Credential Type\(Only when using \`OAuth2\` authentication\)* 
-
-
 
 </td>
 <td valign="top">
@@ -261,14 +209,10 @@ The type of OAuth2 credential type to be used. The available options are:
 
 *Access Token Fetch/Refresh Interval \(in secs\) \(Only when using \`OAuth2\` authentication\)* 
 
-
-
 </td>
 <td valign="top">
 
 The interval in seconds for fetching the access token from the respective Integration Suite's credential store when OAuth2 credential type is *Client Credentials* or *Authorization Code*. When *OAuth2 - Custom* type is selected, it is the interval at which the token is refreshed. By default, the value is 300 secs.
-
-
 
 </td>
 </tr>
@@ -277,14 +221,10 @@ The interval in seconds for fetching the access token from the respective Integr
 
 *OAuth2 Client Credentials Credential Name \(Only when using \`OAuth2\` authentication and \`OAuth2 Client Credentials\` OAuth2 credential type\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of the deployed OAuth2 Client Credentials artifact in the Integrations Suite's Credential Store. See \[Deploying an OAuth2 Client Credentials\]\(https://help.sap.com/docs/cloud-integration/sap-cloud-integration/deploying-oauth2-client-credentials-artifact\) know more.
-
-
 
 </td>
 </tr>
@@ -293,14 +233,10 @@ The alias of the deployed OAuth2 Client Credentials artifact in the Integrations
 
 *OAuth2 Authorization Code Credential Name\(Only when using \`OAuth2\` authentication and \`OAuth2 Authorization Code\` OAuth2 credential type\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of the deployed OAuth2 Authorization Code artifact in the Integrations Suite's Credential Store. See \[Deploying an OAuth2 Authorization Code\]\(https://help.sap.com/docs/cloud-integration/sap-cloud-integration/deploying-oauth2-authorization-code\) know more.
-
-
 
 </td>
 </tr>
@@ -309,14 +245,10 @@ The alias of the deployed OAuth2 Authorization Code artifact in the Integrations
 
 *OAUTH2 Access Token Secure Alias\(Only when using \`OAuth2\` authentication and \`OAuth2 - Custom\` OAuth2 credential type\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of OAuth2 Access token, stored as Secure Parameter.
-
-
 
 </td>
 </tr>
@@ -325,14 +257,10 @@ The alias of OAuth2 Access token, stored as Secure Parameter.
 
 *OAUTH2 Refresh Token Secure Alias\(Only when using \`OAuth2\` authentication and \`OAuth2 - Custom\` OAuth2 credential type\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of the OAuth2 Refresh token, stored as Secure Parameter.
-
-
 
 </td>
 </tr>
@@ -341,14 +269,10 @@ The alias of the OAuth2 Refresh token, stored as Secure Parameter.
 
 *OAUTH2 Client ID Secure Alias\(Only when using \`OAuth2\` authentication and \`OAuth2 - Custom\` OAuth2 credential type\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of the OAuth2 Client ID, stored as Secure Parameter.
-
-
 
 </td>
 </tr>
@@ -357,14 +281,10 @@ The alias of the OAuth2 Client ID, stored as Secure Parameter.
 
 *OAUTH2 Refresh Token URL Secure Alias\(Only when using \`OAuth2\` authentication and \`OAuth2 - Custom\` OAuth2 credential type\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of the OAuth2 Refresh token URL, stored as Secure Parameter.
-
-
 
 </td>
 </tr>
@@ -372,8 +292,6 @@ The alias of the OAuth2 Refresh token URL, stored as Secure Parameter.
 <td valign="top">
 
 *JCSMP Properties* 
-
-
 
 </td>
 <td valign="top">
@@ -404,14 +322,10 @@ Switch to the *Processing* tab to configure the adapter's message processing det
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -419,8 +333,6 @@ Description
 <td valign="top">
 
 *Consumer Mode* 
-
-
 
 </td>
 <td valign="top">
@@ -441,8 +353,6 @@ The adapter's consumer mode. The available options are:
 
 *Topic Subscriptions\(Only when using \`Direct\` consumer mode\)* 
 
-
-
 </td>
 <td valign="top">
 
@@ -459,8 +369,6 @@ The list of AEM topic subscriptions from which messages will be consumed.
 <td valign="top">
 
 *Parallel Consumers\(Only when using \`Guaranteed\` consumer mode\)* 
-
-
 
 </td>
 <td valign="top">
@@ -479,14 +387,10 @@ The number of concurrent consumer flows.
 
 *Selector\(Only when using \`Guaranteed\` consumer mode\)* 
 
-
-
 </td>
 <td valign="top">
 
 A SQL-92 selector to filter messages for consumption.
-
-
 
 </td>
 </tr>
@@ -494,8 +398,6 @@ A SQL-92 selector to filter messages for consumption.
 <td valign="top">
 
 *Acknowledgment Mode\(Only when using \`Guaranteed\` consumer mode\)* 
-
-
 
 </td>
 <td valign="top">
@@ -520,8 +422,6 @@ The strategy to be used when acknowledging messages. The possible options are:
 
 *Settlement Outcome After Maximum Attempts\(Only when using \`Guaranteed\` consumer mode and \`Automatic On Exchange Complete\` acknowledgment mode\)* 
 
-
-
 </td>
 <td valign="top">
 
@@ -541,14 +441,10 @@ Settlement outcome for failed messages after all processing attempts have been e
 
 *Maximum Message Processing Attempts* 
 
-
-
 </td>
 <td valign="top">
 
 The maximum number of attempts to process a message.
-
-
 
 </td>
 </tr>
@@ -557,14 +453,10 @@ The maximum number of attempts to process a message.
 
 *Retry Interval \(in ms\)\(Only when using more than 1 maximum message processing attempts\)* 
 
-
-
 </td>
 <td valign="top">
 
 The initial time interval to delay retrying to process a message.
-
-
 
 </td>
 </tr>
@@ -573,14 +465,10 @@ The initial time interval to delay retrying to process a message.
 
 *Maximum Retry Interval \(in ms\)\(Only when using more than 1 maximum message processing attempts\)* 
 
-
-
 </td>
 <td valign="top">
 
 The maximum time interval to delay retrying to process a message.
-
-
 
 </td>
 </tr>
@@ -589,14 +477,10 @@ The maximum time interval to delay retrying to process a message.
 
 *Exponential Backoff Multiplier\(Only when using more than 1 maximum message processing attempts\)* 
 
-
-
 </td>
 <td valign="top">
 
 The multiplier to apply to the current time interval delay after every subsequent retry of a message. If set to \`1\`, this is equivalent to applying a fixed delay.
-
-
 
 </td>
 </tr>
@@ -605,16 +489,12 @@ The multiplier to apply to the current time interval delay after every subsequen
 
 *Message Headers* 
 
-
-
 </td>
 <td valign="top">
 
 The adapter accepts headers on both Sender and Receiver side.
 
 The Sender adds the following headers: ApplicationMessageId, ApplicationMessageType, CoS, CorrelationId, DeliveryCount, Destination, DestinationEndpointType, Expiration, HttpContentEncoding, HttpContentType, IsDiscardIndication, IsDMQEligible, IsElidingEligible, IsRedelivered, IsReplyMessage, Priority, ReceiveTimestamp, ReplicationGroupMessageId, ReplyToEndpointType, ReplyToDestination, SenderId, SenderTimestamp, SequenceNumber, TimeToLive, UserProperties. When setting up the integration flow, add them to the allowlist via Integration Flow -\> Runtime Configuration -\> Allowed Header\(s\), if required. See [Specify the Runtime Configuration](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/specify-runtime-configuration)
-
-
 
 </td>
 </tr>

@@ -4,7 +4,7 @@
 
 You can monitor messages and integration artifacts by using the monitoring functions of SAP Integration Suite.
 
-To monitor your artifacts deployed on the SAP Integration Suite Edge Integration Cell, you've to:
+To monitor your artifacts deployed on Edge Integration Cell, you've to:
 
 1.  In the SAP Integration Suite menu , choose *Monitor* \> *Integrations and APIs*.
 

@@ -16,7 +16,7 @@ There are two variants of analytics dashboard available for analyzing API report
 
 -   **Advanced API Analytics**
 
-    Advanced API Analytics brings to you the all new analytics dashboard, providing powerful tools and in-depth reports for analyzing your API usage and performance. The reports are categorized across report pages, with each report page providing information about key API metrics, which are relevant for both business users and API developers. For more information, see [Advanced API Analytics](https://help.sap.com/viewer/38c3df3f8da44a809f937220b3579607/Cloud/en-US/eeefd0e49118408a9f97b14ff46fdadf.html "") :arrow_upper_right:.
+    Advanced API Analytics brings to you the all new analytics dashboard, providing powerful tools and in-depth reports for analyzing your API usage and performance. The reports are categorized across report pages, with each report page providing information about key API metrics, which are relevant for both business users and API developers. For more information, see [Advanced API Analytics](https://help.sap.com/viewer/ec9c3ac6441e4b03a59ef82e10471763/Development/en-US/eeefd0e49118408a9f97b14ff46fdadf.html "") :arrow_upper_right:.
 
     > ### Note:  
     > We're calling this new flavor of analytics, Advanced API Analytics. However, for you, as an end-user there will be no direct reference to this title on the user interface. We're sure that the various new features will enable you to make best use of this exciting new analytics dashboard.

@@ -585,7 +585,7 @@ If a message is rejected because it exceeds the configured limit, the sender rec
 **Related Information**  
 
 
-[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
+[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
 
 [Managing Data Stores](managing-data-stores-ac39f1d.md "")
 

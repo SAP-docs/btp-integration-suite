@@ -72,7 +72,7 @@ To authorize an API client to access the OData API:
 
 Perform the steps described in: [Setting Up Inbound HTTP Connections \(for API Clients\)](../40-RemoteSystems/setting-up-inbound-http-connections-for-api-clients-8db3d51.md) 
 
-Depending on the use case, assign the following role templates \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\):
+Depending on the use case, assign the following role templates \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\):
 
 -   To view message store content: `MonitoringDataRead` 
 

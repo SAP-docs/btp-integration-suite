@@ -1744,7 +1744,7 @@ If you are developing an OData API, you can configure a SOAP, OData or HTTP adap
 
 [IDoc Adapter](idoc-adapter-6042250.md "The IDoc adapter enables SAP Integration Suite to exchange Intermediate Document (IDoc) messages with systems that support communication via SOAP Web services.")
 
-[JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md "The JDBC (Java Database Connectivity) adapter enables you to connect SAP Integration Suite to cloud databases.")
+[JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md "The JDBC (Java Database Connectivity) adapter enables you to connect SAP Integration Suite to cloud or on-premise databases.")
 
 [JMS Adapter](jms-adapter-0993f2a.md "You configure the JMS adapter to enable asynchronous messaging using message queues.")
 

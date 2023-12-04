@@ -8,10 +8,9 @@ EDI Extractor enables you to extract EDI headers and transfer to camel headers. 
 
 ## Context
 
-> ### Remember:  
-> This component or some of its features might not be available in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
+EDI Extractor version 2.0 and above supports the TRADACOMS standard \(available only for dedicated service plans, see [2903776](https://me.sap.com/notes/2903776)\).
 
-EDI Extractor supports EDIFACT, EANCOM, ODETTE, and ASC-X12 documents.
+EDI Extractor supports EDIFACT, EANCOM, ODETTE, TRADACOMS, and ASC-X12 documents.
 
 
 
@@ -751,6 +750,216 @@ SAP\_ST\_Control\_Number
 <td valign="top">
 
 
+
+</td>
+</tr>
+</table>
+
+**Value for TRADACOMS Document Standard**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Header Name
+
+</th>
+<th valign="top">
+
+Value
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Application\_Reference
+
+</td>
+<td valign="top">
+
+S\_STX/D\_APRF
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Document\_Standard
+
+</td>
+<td valign="top">
+
+TRADACOMS
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Interchange\_Control\_Number
+
+</td>
+<td valign="top">
+
+STX/SNRF
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Interchange\_Date
+
+</td>
+<td valign="top">
+
+STX/TRDT/TRDT1
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Interchange\_Time
+
+</td>
+<td valign="top">
+
+STX/TRDT/TRDT2
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Message\_Number
+
+</td>
+<td valign="top">
+
+MHD/MSRF
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Message\_Type
+
+</td>
+<td valign="top">
+
+MHD/TYPE/TYPE1
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Message\_Version
+
+</td>
+<td valign="top">
+
+MHD/TYPE/TYPE2
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Processing\_Priority\_Code
+
+</td>
+<td valign="top">
+
+STX/PRCD
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Receiver\_ID
+
+</td>
+<td valign="top">
+
+STX/UNTO/UNTO1
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Receiver\_Interchange\_Control\_Number
+
+</td>
+<td valign="top">
+
+STX/RCRF
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Receiver\_Name
+
+</td>
+<td valign="top">
+
+STX/UNTO/UNTO2
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Sender\_ID
+
+</td>
+<td valign="top">
+
+STX/FROM/FROM1
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Sender\_Name
+
+</td>
+<td valign="top">
+
+STX/FROM/FROM2
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Syntax\_Identifier
+
+</td>
+<td valign="top">
+
+STX/STDS/STDS1
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Syntax\_Version
+
+</td>
+<td valign="top">
+
+STX/STDS/STDS2
 
 </td>
 </tr>

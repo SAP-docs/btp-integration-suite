@@ -10,7 +10,7 @@ Create an instance of API portal, API Management in your source subaccount and c
 
 ## Prerequisites
 
-Create an API portal, API Management subaccount and subscribe to it. Set it as your source subaccount, from where you can start exporting the API Management content. For more information, see [Set Up API Portal Application](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/29c281b4a002404eba44e91c6fad0d34.html "To create APIs, products, import policy templates, and view applications, set up the API portal application.") :arrow_upper_right:.
+Create an API portal, API Management subaccount and subscribe to it. Set it as your source subaccount, from where you can start exporting the API Management content. For more information, see [Set Up API Portal Application](https://help.sap.com/viewer/4425026877144cc2b15505ed30215167/IAT/en-US/29c281b4a002404eba44e91c6fad0d34.html "To create APIs, products, import policy templates, and view applications, set up the API portal application.") :arrow_upper_right:.
 
 
 

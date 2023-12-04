@@ -44,7 +44,7 @@ After you've performed this task, you can start the Postman runner. On the *Coll
 > 
 > [HTTPS Sender Adapter](https-sender-adapter-0ae4a78.md)
 > 
-> [Send the HTTP Request and Process the Integration Flow](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f08cca6af4fd48b687d3f86c329efaed.html "Set up an HTTP client using Postman and send the HTTP request.") :arrow_upper_right:
+> [Send the HTTP Request and Process the Integration Flow](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/f08cca6af4fd48b687d3f86c329efaed.html "Set up an HTTP client using Postman and send the HTTP request.") :arrow_upper_right:
 
 > ### Note:  
 > Some integration flows are triggered by a Timer event. In that case, the body of the message that represents the inbound call is created initially within the integration flow in a Content Modifier step. No HTTP request is required to start the integration flow. The integration flow is started on deployment.

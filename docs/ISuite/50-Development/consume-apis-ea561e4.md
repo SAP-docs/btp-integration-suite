@@ -2,6 +2,8 @@
 
 # Consume APIs
 
+**The classic design will be deprecated soon. The new design of the API business hub enterprise will be set as your default design from March 2023. However, you’ll still be able to toggle between the new and old design until June 2024.** 
+
 Consume APIs via the API business hub enterprise. In the API business hub enterprise, an application developer registers, explores the API exposed by customers, creates applications, and tests APIs.
 
 If you've added API business hub enterprise as a capability with Integration suite, or if you’ve subscribed to the API business hub enterprise as part of the standalone API Management subscription, you have the option to experience the new design of the API business hub enterprise user interface along with the classic design.
@@ -33,7 +35,7 @@ The API business hub enterprise supports the following features:
 **Related Information**  
 
 
-[Configure the API business hub enterprise \[Classic Design\]](configure-the-api-business-hub-enterprise-classic-design-7b71b16.md "You can configure the API business hub enterprise to personalize it for your organization.")
+[Configure the API business hub enterprise \[Classic Design\]](configure-the-api-business-hub-enterprise-classic-design-7b71b16.md "The classic design will be deprecated soon. The new design of the API business hub enterprise will be set as your default design from March 2023. However, you’ll still be able to toggle between the new and old design until June 2024.")
 
 [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md "You can configure the API business hub enterprise to personalize it for your organization.")
 

@@ -41,5 +41,5 @@ As an admin, you can view the subscribed applications from Integration Suite. Yo
 **Related Information**  
 
 
-[Create an Application \[Classic Design\]](create-an-application-classic-design-7b4e71b.md "Create an Application to consume the required APIs.")
+[Create an Application \[Classic Design\]](create-an-application-classic-design-7b4e71b.md "The classic design will be deprecated soon. The new design of the API business hub enterprise will be set as your default design from March 2023. However, you’ll still be able to toggle between the new and old design until June 2024.")
 

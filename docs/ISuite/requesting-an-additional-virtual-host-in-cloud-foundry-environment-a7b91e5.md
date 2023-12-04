@@ -27,6 +27,9 @@ Virtual hosts are the base URLs of an API Proxy. They include the protocol \(htt
 -   You can create a new virtual host.
 -   You can update an alias of an existing virtual host.
 
+> ### Note:  
+> The maximum number of virtual hosts that can be configured for each subaccount through the API portal is 20.
+
 
 
 <a name="loioa7b91e5aca32497ca2b17c671ed2bb42__steps_xzq_hr4_dmb"/>
@@ -183,9 +186,11 @@ Virtual hosts are the base URLs of an API Proxy. They include the protocol \(htt
 
 [Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](region-specific-ip-addresses-available-for-api-management-cloud-foundry-environment-585d639.md "API Management protects your backend services. However, API Management needs to establish connectivity to your backend services during an API call execution.")
 
-[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "A virtual host lets you host multiple domain names on API Management capability within Integration Suite.")
+[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "A virtual host allows you to host multiple domain names on the API Management capability within Integration Suite.")
 
-[Request for Two-Way SSL Certificate](request-for-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
+[Request for a Two-Way SSL Certificate](request-for-a-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
 
 [Assign User Roles in API Management](assign-user-roles-in-api-management-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
+
+[Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "Cancel your API portal and API business hub enterprise application subscriptions to disable your account from the API Management service.")
 

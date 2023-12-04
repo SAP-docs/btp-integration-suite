@@ -6,15 +6,23 @@
 
 ## Context
 
-The *Manage Stores* section provides an overview of storages on the tenant, which are temporarily used to persist data of different kind during message processing.
+The *Manage Stores* section provides an overview of storages that are temporarily used to persist data of different kind during message processing.
 
 
 
 ## Procedure
 
-1.  To open the *Manage Data Stores* view, choose the *Data Stores* tile.
+1.  Choose *Monitor* \> *Integrations and APIs*.
 
-2.  On the left pane of *Manage Data Stores* the the name of the data store is displayed.
+2.  Select the target runtime \(*Runtime* parameter\).
+
+    This information is only relevant for Edge Integration Cell runtime.
+
+    For more information on how to manage stores for Edge Integration Cell, see [Manage Stores for Edge Integration Cell](../manage-stores-for-edge-integration-cell-ced47da.md).
+
+3.  Choose the *Data Stores* tile.
+
+4.  On the left pane of *Manage Data Stores* the the name of the data store is displayed.
 
     Below the data store name the following information is displayed:
 
@@ -23,7 +31,7 @@ The *Manage Stores* section provides an overview of storages on the tenant, whic
 
     Furthermore, the number of entries available in the data store and \(if applicable\) the number of overdue entries is shown for each data store.
 
-3.  On top of the list of data stores, you can access the following functions:
+5.  On top of the list of data stores, you can access the following functions:
 
 
     <table>
@@ -94,7 +102,7 @@ The *Manage Stores* section provides an overview of storages on the tenant, whic
     </tr>
     </table>
     
-4.  On the right side of the screen, details about the data store selected from the left side are shown.
+6.  On the right side of the screen, details about the data store selected from the left side are shown.
 
     The following attributes are displayed for each data store entry:
 
@@ -195,7 +203,7 @@ The *Manage Stores* section provides an overview of storages on the tenant, whic
     </tr>
     </table>
     
-5.  Use the following options available on the header above the table to manage the entries:
+7.  Use the following options available on the header above the table to manage the entries:
 
 
     <table>

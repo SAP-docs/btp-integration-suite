@@ -7,7 +7,7 @@ Inspect usage of the monitoring storage database for a given time period \(as se
 At runtime, monitoring data is written to a database. For each integration flow processed at runtime, a message processing log is written that contains information about the processing steps \(see [Message Processing Log](message-processing-log-b32f8cd.md)\).
 
 > ### Tip:  
-> Each SAP Integration Suite tenant is associated with a physical database that has a limited size. This database is used by certain steps during the runtime of integration flows .
+> Each SAP Integration Suite tenant is associated with a physical database that has a limited size. This database is used by certain steps during the runtime of integration flows.
 
 The usage of database storage is plotted in a bar graph against time.
 

@@ -248,7 +248,13 @@ Follow the next procedure to create a company profile.
     Choose a type system from the drop-down list.
 
     > ### Note:  
-    > For *GS1 XML* type system, you must maintain the contact details in the *Contacts* tab.
+    > -   For *GS1 XML* type system, you must maintain the contact details in the *Contacts* tab.
+    > 
+    > -   For *Tradacoms* type system for the identifier, the field *Identification* is mandatory. If the sender payload contains both *Identification* and *Name*, the integration flow will consider only *Identification* for the computed Partner Directory ID.
+    > 
+    >     The system ASSEMBLY will use Company profile's *Short Name* for the *Identification Name*
+    > 
+    >     Tradacoms is supported only in the 2.0 version of the integration package *Cloud Integration - Trading Partner Management V2*
 
 
     
@@ -1377,27 +1383,9 @@ Follow the next procedure to create a company profile.
 
 
 
-<a name="loio909d9282770e40be8dbc1904948b8627__section_lzw_nkc_bzb"/>
-
-## Security
-
-When you use AS2 adapters in your agreements, you need to maintain few decryption configurations. To do so,
-
-1.  Navigate to the *Security* tab and choose *Create*.
-
-2.  Maintain the following fields:
-    1.  *User Account*: Enter the user account name.
-
-    2.  *Alias*: Maintain an alias for the configuration.
-    3.  *Private Key Alias*: Enter a Private Key Alias for the configuration.
-
-3.  Choose *Save* after maintaining all the fields. These configurations should be activated in order to be used in an Agreement. Select the toggle button after the *Activation Status* header to activate your configuration.
-
-
-
 <a name="loio909d9282770e40be8dbc1904948b8627__section_dtn_hkc_bzb"/>
 
-## Dynamic Parameters
+## Parameters
 
 The application also allows you to maintain Dynamic Parameters selecting the company profile. These parameters can be helpful when
 
@@ -1443,6 +1431,42 @@ You have now successfully created a company profile and you can view the details
 -   Created Date
 -   Last Modified By
 -   Modified Date
+
+
+
+<a name="loio909d9282770e40be8dbc1904948b8627__section_lzw_nkc_bzb"/>
+
+## Security
+
+When you use AS2 adapters in your agreements, you need to maintain few decryption configurations. To do so,
+
+1.  Navigate to the *Security* tab and choose *Create*.
+
+2.  Maintain the following fields:
+    1.  *User Account*: Enter the user account name.
+
+    2.  *Alias*: Maintain an alias for the configuration.
+    3.  *Private Key Alias*: Enter a Private Key Alias for the configuration.
+
+3.  Choose *Save* after maintaining all the fields. These configurations should be activated in order to be used in an Agreement. Select the toggle button after the *Activation Status* header to activate your configuration.
+
+
+
+<a name="loio909d9282770e40be8dbc1904948b8627__section_s1f_cqk_jzb"/>
+
+## Number Ranges
+
+While sending out a document in case of EDI processing, a unique interchange number must be added to each document. In order to add such an interchange number you can use the Number Ranges. The *Number Ranges* tab allows you to create an alias for the existing number ranges created in the *Monitor* tab. To know how to create and define number ranges, see [Managing Number Ranges](https://help.sap.com/docs/integration-suite/sap-integration-suite/managing-number-ranges). Follow the procedure below to create an alias for the number range:
+
+1.  Navigate to the *Number Ranges* tab.
+
+2.  Choose *Add*.
+3.  In the resulting dialog, select a number range from the list for the *Number Ranges* field.
+
+    > ### Note:  
+    > The field displays the number ranges that are created in the *Monitor* tab for integrations. To know more, see [Managing Number Ranges](https://help.sap.com/docs/integration-suite/sap-integration-suite/managing-number-ranges).
+
+4.  Enter an alias name for the number range in the *Name* field and choose *Save*.
 
 **Related Information**  
 

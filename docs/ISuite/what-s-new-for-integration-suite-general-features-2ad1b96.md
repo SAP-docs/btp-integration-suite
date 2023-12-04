@@ -89,6 +89,84 @@ Integration Suite General Features
 </td>
 <td valign="top">
 
+Changes in the User Interface
+
+</td>
+<td valign="top">
+
+The following changes can be seen:
+
+-   Edge Integration Cell is now generally available.
+-   The Integrations tab under the *Design*,*Monitoring*, and *Settings* sections in the left navigation pane has been renamed to *Integrations and APIs* to encompass the fact that APIs specific to Edge Integration Cell can now be added as artifacts when creating integration packages.
+-   An *Engage* section is now available in the left navigation panel and contains content pertaining to products and applications associated with API proxies.
+-   The API tab is no longer available under the *Design* section, the content of this section dealing with API Management has been moved under the *Configure* and*Engage* sections.
+-   If you’ve chosen to activate the Edge Integration Cell, then:
+
+    -   An*Operations* section is available in the left navigation panel.
+    -   A *Runtime* tab is now available in the *Settings* section.
+
+    See [What Is SAP Integration Suite Edge Integration Cell](https://help.sap.com/docs/integration-suite/sap-integration-suite/what-is-sap-integration-suite-edge-integration-cell).
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2023-11-07
+
+</td>
+<td valign="top">
+
+2023-11-07
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Suite General Features
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Contextual Help
 
 </td>

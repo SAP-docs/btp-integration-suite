@@ -65,7 +65,7 @@ Integration Developer
 </td>
 <td valign="top">
 
--   [Execute Integration Flows](https://help.sap.com/viewer/e6328529a26a42eda09edadf8c28725d/CLOUD/en-US/ed08d36c4d2549e2bcdc4e81a9407d77.html "Execute integration flows in your own on-premise runtime location.") :arrow_upper_right:
+-   [Execute Integration Flows](https://help.sap.com/viewer/e6328529a26a42eda09edadf8c28725d/IAT/en-US/ed08d36c4d2549e2bcdc4e81a9407d77.html "Execute integration flows in your own on-premise runtime location.") :arrow_upper_right:
 
 -   [Troubleshooting for Edge Integration Cell](troubleshooting-for-edge-integration-cell-816d9e4.md)
 

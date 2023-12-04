@@ -32,18 +32,7 @@ Instead of consuming services directly, application developers can access APIs e
 
     A list of registered APIs appears in the catalog.
 
-    Alternatively, browse for a service on a specific API provider. To do so, you must configure the required API provider. For more You can view the number of calls made for an API in the current month. The data is visible for each API in the *Calls* column and also on the details screen of the individual API.
-
-    You can click the refresh icon to obtain the latest data.
-
-    > ### Note:  
-    > There’s some delay in reflecting the latest data.
-
-    The notion used to display the data follows metric specifications, for example:
-
-    -   999 shows as 999 and 1000 shows as 1k
-    -   999000 shows as 999 K and 1000000 shows as 1M
-    -   1500000 shows as 1.5M and 1000000000 shows as 1G
+    Alternatively, browse for a service on a specific API provider. To do so, you must configure the required API provider. You can view the number of calls made for an API in the current month. The data is visible for each API in the *Calls* column and also on the details screen of the individual API.
 
 3.  To expose a service as an API, choose *Create*.
 
@@ -252,7 +241,7 @@ Instead of consuming services directly, application developers can access APIs e
     > ### Note:  
     > For a given resource, choose *Open API Designer* and correct the errors in swagger definition, if any. The error message displayed on the screen helps in error detection and correction. Choose *Save* after making the necessary corrections in the swagger file.
     > 
-    > See the example in the following screen: ![](images/Swagger_definition_0fffa2e.png)
+    > See the example in the following screen: ![The example is based on the following error message: "Error in swagger definition, please correct the following errors and re-try missed comma between flow collection entries at line nine, column one." Therefore, you are not only informed by the kind of error, but also at which point in the swagger definition you will find it.](images/Swagger_definition_0fffa2e.png)
 
 7.  To define policies on the API, go to the *Policies* tab. For more information about how to create a policy, see [Create a Policy](create-a-policy-c90b895.md).
 

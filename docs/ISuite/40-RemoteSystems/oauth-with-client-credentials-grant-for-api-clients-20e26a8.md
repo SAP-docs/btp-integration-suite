@@ -35,7 +35,7 @@ To set up this authorization option, perform the following steps.
 
 1.  Look up the role to be used to authorize the API client to access the related Cloud Integration resource using the API.
 
-    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
 
 2.  In SAP BTP cockpit, select the subaccount that hosts your SAP Integration Suite virtual environment and create a service instance and service key.
 
@@ -121,7 +121,7 @@ To set up this authorization option, perform the following steps.
     
     Select role according to the API resource to access.
 
-    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
     
     </td>
     <td valign="top">
@@ -165,7 +165,7 @@ To set up this authorization option, perform the following steps.
     
     Select role according to the API resource to access.
 
-    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
     
     </td>
     <td valign="top">
@@ -209,7 +209,7 @@ To set up this authorization option, perform the following steps.
     
     Select role according to the API resource to access.
 
-    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+    See: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
     
     </td>
     <td valign="top">

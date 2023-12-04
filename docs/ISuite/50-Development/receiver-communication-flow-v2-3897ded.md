@@ -92,3 +92,7 @@ Follow the procedure below to configure the integration flow.
 3.  Choose *Save*
 4.  Choose *Deploy*.
 
+    > ### Note:  
+    > To know how to set maximum retries for failed integration flows, see [Configuration Manager](configuration-manager-7daf06c.md).
+
+

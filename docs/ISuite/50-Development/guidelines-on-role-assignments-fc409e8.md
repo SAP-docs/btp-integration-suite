@@ -2,7 +2,7 @@
 
 # Guidelines on Role Assignments
 
-The combined usage of the following role collections, respectively, authorization groups \(as described under [Persona](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2937e5ca6ef448cfb21451a2461cc2a6.html "When you perform user management tasks using SAP BTP SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.") :arrow_upper_right:\) gives you full control of the tenant in terms of design, monitoring, and administration.
+The combined usage of the following role collections, respectively, authorization groups \(as described under [Persona](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/2937e5ca6ef448cfb21451a2461cc2a6.html "When you perform user management tasks using SAP BTP SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.") :arrow_upper_right:\) gives you full control of the tenant in terms of design, monitoring, and administration.
 
 Assigning these role collections/authorization groups to a user is a good choice for the source tenant \(development system\). However, assigning these role collections/authorization groups to a user on target tenants can lead to undesired behavior and inconsistencies with the transport system. To avoid that a user gets too many permissions in the target system, it's necessary to define permissions on a more detailed level on the target tenant \(test and production\).
 
@@ -229,7 +229,7 @@ Allows user to access SAP Business Accelerator Hub \(*Discover* section\).
 <tr>
 <td valign="top">
 
-All roles related to the *Monitor* area \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\)
+All roles related to the *Monitor* area \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\)
 
 </td>
 <td valign="top">
@@ -272,7 +272,7 @@ Allows user configure the transport option.
 </tr>
 </table>
 
-For more information on the individual roles and tasks, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
+For more information on the individual roles and tasks, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
 
 Certain roles must be assigned also in the transport system to determine the responsibilities of who can do what \(for example, import a transport order into a queue, release an order\).
 

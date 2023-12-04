@@ -5,7 +5,7 @@
 Inspect data store usage of the tenant database for a given time period \(as selected with the *Time* parameter\).
 
 > ### Tip:  
-> Each SAP Integration Suite tenant is associated with a physical database that has a limited size. This database is used by certain steps during the runtime of integration flows .
+> Each SAP Integration Suite tenant is associated with a physical database that has a limited size. This database is used by certain steps during the runtime of integration flows.
 
 The data store is a logical storage that consumes tenant database volume. It can be accessed to by certain integration flows steps \(read and write access\) to read and write the message payload or variables during runtime. There are two kinds of data stores:
 

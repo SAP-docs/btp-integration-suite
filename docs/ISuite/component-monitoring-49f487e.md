@@ -6,7 +6,7 @@
 
 Get information on the components.
 
-The Component Monitoring-tile shows you the most important information regarding your components at a glance. Out of all components for Edge Integration Cell, the tile always shows either those components in status *Error* or the status of the top three components, *Policy Engine*, *Worker*, and *Solace* \(Event Broker\) in status *Ok*.
+The Component Monitoring-tile shows you the most important information regarding your components at a glance. Out of all components for Edge Integration Cell, the tile always shows either those components in status *Error* or the status of the top three components, *Policy Engine*, *Worker*, and *Solace* \(Message Service\) in status *Ok*.
 
 Click on the tile to get a details view. On the screen, you see a table with the following information:
 
@@ -15,12 +15,30 @@ Click on the tile to get a details view. On the screen, you see a table with the
 <tr>
 <td valign="top">
 
-*Component*
+*Name*
 
 </td>
 <td valign="top">
 
 Name of the component in alphabetical order. The color indicates the status with green indicating *Running* \(:heavy_check_mark:\) and red indicating *Error* \(<span class="SAP-icons"></span> Error\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Status*
+
+</td>
+<td valign="top">
+
+Status of Resources:
+
+Error
+
+If the *Pod Status* indicates an error, select *View Pod Events* \(<span class="SAP-icons"></span> View Pod Events \) to show the details of the pod events. For more information about pod events, see [https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/\#Event.](https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/#Event.) 
+
+Running
 
 </td>
 </tr>
@@ -45,25 +63,6 @@ Technical name of the pod.
 <td valign="top">
 
 Number of resources.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Status*
-
-</td>
-<td valign="top">
-
-Status of Resources:
-
--   *Error*
-
--   *Running* 
-
-
-
 
 </td>
 </tr>

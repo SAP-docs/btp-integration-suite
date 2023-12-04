@@ -4,6 +4,8 @@
 
 # Deleting a Custom Message
 
+Delete a custom message from the custom type system.
+
 
 
 ## Context

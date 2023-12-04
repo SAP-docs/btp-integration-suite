@@ -6,7 +6,7 @@
 
 The *JDBC Data Sources* allows you to create and manage a cluster of artifact connections to interact with a database \(DB\). Each data source contains information on database type, and database-specific configuration parameters.
 
-Create a data source to handle a connection setup to a cloud database. For the list of supported databases for Cloud Foundry tenants, see [JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md).
+Create a data source to handle a connection setup to a cloud or on-premise database. For the list of supported databases, see [JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md).
 
 When you select a *JDBC Data Source*, the details are displayed to the right of the pane. The header area provides the following information on:
 
@@ -23,10 +23,29 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
 
 
 
+### Prerequisites to Configure Data Source for On-Premise Database
+
+Note the following when configuring the connection between a cloud application an an on-premise system using SAP Cloud Connector: The internal host and internal port configurations are different compared to virtual host and virtual port.
+
+1.  Log in to your Cloud Connector subaccount, to establish link between your tenant and the on-premise database.
+
+2.  Enable your cloud application to access a back-end system. For more information, see [Configure Access Control](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/f42fe4471d6a4a5fb09b7f3bb83c66a4.html).
+
+3.  Connect your cloud application to an on-premise system. For more information, see [Consuming the Connectivity Service](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/313b215066a8400db461b311e01bd99b.html).
+
+
+If you choose to access SAP HANA Platform database on SAP BTP, see [Configure a Service Channel for an SAP HANA Database](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/3dc28b456bb64fad89084d2d10af602c.html).
+
+After you complete the above configuration, now create a JDBC data source for your on-premise database.
+
+
+
 ### Adding or Editing a JDBC Data Source
 
 1.  Go to the *Monitor* view and choose the tile *JDBC Material*.
-2.  Choose *JDBC Data Sources* tab and perform one of the following steps:
+2.  If you have activated Edge Integration Cell, select the target runtime.
+
+3.  Choose *JDBC Data Sources* tab and perform one of the following steps:
 
     -   Choose *Add* for creating a new data source.
     -   Choose *Edit* to modify an existing data source.
@@ -34,7 +53,7 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     > ### Note:  
     > You need not redeploy an integration flow after editing the data source.
 
-3.  Specify the following attributes:
+4.  Specify the following attributes:
 
     **Database-Specific Configuration Parameters**
 
@@ -103,6 +122,30 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     <tr>
     <td valign="top">
     
+    *Runtime*
+    
+    </td>
+    <td valign="top">
+    
+    Selected runtime is displayed.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *User*
+    
+    </td>
+    <td valign="top">
+    
+    Enter the username corresponding of the target database.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     *Password*
     
     </td>
@@ -114,6 +157,20 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     > Re-enter the same password in the *Repeat Password* field to confirm that the provided password is correct.
 
 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Database ID*
+
+    \(only available for SAP ASE Service \(Neo\), SAP HANA Service \(Neo\) databases that are managed by SAP Managed\)
+    
+    </td>
+    <td valign="top">
+    
+    Specify the ID of the target database.
     
     </td>
     </tr>
@@ -145,9 +202,25 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    *Location ID*
+
+    \(for on-premise database only\)
+    
+    </td>
+    <td valign="top">
+    
+    Identifies the location of this Cloud Connector for a specific subaccount. The location ID must be unique per subaccount and should be an identifier that can be used in a URI. To route requests to a Cloud Connector with a location ID, the location ID must be configured in the respective destinations.
+
+    If you don't specify any value for Location ID, the default is used.
+    
+    </td>
+    </tr>
     </table>
     
-4.  Deploy the data source.
+5.  Deploy the data source.
 
 
 > ### Note:  
@@ -200,5 +273,5 @@ Reloads the table content.
 **Related Information**  
 
 
-[Configure JDBC Drivers](configure-jdbc-drivers-77c7d95.md "Learn how to upload and deploy JDBC type-4 compliant third-party drivers on Cloud Integration service.")
+[Configure JDBC Drivers](configure-jdbc-drivers-77c7d95.md "Learn how to upload and deploy JDBC type-4 compliant third-party drivers on SAP Integration Suite.")
 

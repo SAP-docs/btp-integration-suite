@@ -5,7 +5,7 @@
 > ### Note:  
 > With the following steps, you can easily modify and extend the basic integration flow that was introduced in the Getting Started section of this documentation.
 > 
-> More information: [Getting Started with Integration Flow Development](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/e5724cd84b854719973afe0356ea128b.html "Learn how to develop and run your first integration flow.") :arrow_upper_right:
+> More information: [Getting Started with Integration Flow Development](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/e5724cd84b854719973afe0356ea128b.html "Learn how to develop and run your first integration flow.") :arrow_upper_right:
 
 You can easily modify the integration flow described in the Getting Started section by adding a SOAP client as sender.
 

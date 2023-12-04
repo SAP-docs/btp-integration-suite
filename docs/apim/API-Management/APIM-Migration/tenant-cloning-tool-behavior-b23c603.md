@@ -17,7 +17,7 @@ This topic describes the behavior of the Tenant Cloning Tool with respect to clo
 -   All the API proxies are cloned onto the default virtual host.
 -   Post cloning, the API proxies on the target system are in active and deployed state. You must reapply the desired states to the proxies.
 
-    To know more about API proxy states, see [API Proxy States](../APIM-Development/api-proxy-states-091cda4.md).
+    To know more about API proxy states, see [API Proxy States](../api-proxy-states-091cda4.md).
 
     > ### Note:  
     > If the Tenant Cloning Tool is used to clone an API proxy or a product with more than 100 resources attached to it, you might notice data inconsistency in the target system \(API business hub enterprise or API portal\). It is recommended that you do not add more than 100 resources per proxy or product. For more information, see [Limits](../limits-f70f425.md).

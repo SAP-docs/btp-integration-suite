@@ -26,7 +26,7 @@ You’ve created a subaccount in your assigned global account using the SAP BTP 
 
     Check the status of the submission in subscriptions section on the *Instances and Subscriptions* page. If the subscription is successful, you notice the status of the *Integration Suite* shown as *Subscribed*.
 
-4.  Navigate to the *Security* \> *Users*.
+4.  To assign the roles required to access the Integration Suite navigate to *Security* \> *Users*.
 
 5.  Choose *Create* to add a new user.
 
@@ -34,15 +34,15 @@ You’ve created a subaccount in your assigned global account using the SAP BTP 
 
 6.  Enter the *User Name* and *E-Mail*, and choose *Create*.
 
-7.  Choose the user and select <span class="SAP-icons"></span> Additional Options under *Role Collections* section and choose *Assign Role Collection*.
+7.  Choose the user and under *Role Collections* section select <span class="SAP-icons"></span> Additional Options and choose *Assign Role Collection*.
 
     > ### Note:  
     > For Feature Set B customers, *Integration\_Provisioner* role is assigned automatically.
 
-8.  In the resulting dialog box, select the checkbox of the role collection that you want to assign the user and choose *Assign Role Collection*. Choose the *Integration\_Provisioner* role.
+8.  In the resulting dialog box, choose the checkbox for the *Integration\_Provisioner* role collection and choose *Assign Role Collection*.
 
     > ### Note:  
-    > Clear your web browser cache and cookies before navigating to *Go to Application*.
+    > Clear your web browser cache and cookies before navigating to *Services* \> *Instances and Subscription* and then select the instance of the application.
 
 9.  Choose *Go to Application* to launch the Integration Suite home page. For more information, see [Working with Integration Suite Home](../20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md).
 

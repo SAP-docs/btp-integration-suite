@@ -66,7 +66,7 @@ Edit APIs with an in built API designer
 </td>
 <td valign="top">
 
-You can edit your APIs using the API designer, which is now embedded in the API Portal. For more information, see [Edit an API Proxy](APIM-Development/edit-an-api-proxy-a64b952.md).
+You can edit your APIs using the API designer, which is now embedded in the API Portal. For more information, see [Edit an API Proxy](edit-an-api-proxy-a64b952.md).
 
 </td>
 <td valign="top">
@@ -103,7 +103,7 @@ List externally managed APIs on the APIPortal
 </td>
 <td valign="top">
 
-You can now import and list externally managed APIs on the API Portal. For more information, see [Externally Managed APIs](APIM-Development/externally-managed-apis-848015d.md) 
+You can now import and list externally managed APIs on the API Portal. For more information, see [Externally Managed APIs](externally-managed-apis-848015d.md) 
 
 </td>
 <td valign="top">
@@ -140,7 +140,7 @@ Consume Integration flows more securely with OAuth Client credentials support fo
 </td>
 <td valign="top">
 
-You can now use OAuth2ClientCredentials when creating an API provider. For more informatio see, [Create an API Provider](APIM-Development/create-an-api-provider-6b263e2.md) 
+You can now use OAuth2ClientCredentials when creating an API provider. For more informatio see, [Create an API Provider](create-an-api-provider-6b263e2.md) 
 
 </td>
 <td valign="top">
@@ -177,7 +177,7 @@ API state can be entered during import, and is available during export of an API
 </td>
 <td valign="top">
 
-For more information on the details of the API state to be provided during import, see [Import an API](APIM-Development/import-an-api-9342a93.md).
+For more information on the details of the API state to be provided during import, see [Import an API](import-an-api-9342a93.md).
 
 </td>
 <td valign="top">
@@ -294,7 +294,7 @@ Advanced API Analytics
 </td>
 <td valign="top">
 
-Advanced API Analytics brings to you the all new analytics dashboard, providing handy and powerful analytical reporting tools to track your API performance and usage. Fore more information, see [Advanced API Analytics](APIM-Development/advanced-api-analytics-5973d4a.md).
+Advanced API Analytics brings to you the all new analytics dashboard, providing handy and powerful analytical reporting tools to track your API performance and usage. Fore more information, see [Advanced API Analytics](advanced-api-analytics-5973d4a.md).
 
 </td>
 <td valign="top">
@@ -368,7 +368,7 @@ Versioning
 </td>
 <td valign="top">
 
-You can now version your APIs. For more information, see [API Versioning](APIM-Development/api-versioning-b3cda3b.md)
+You can now version your APIs. For more information, see [API Versioning](api-versioning-b3cda3b.md)
 
 </td>
 <td valign="top">
@@ -479,7 +479,7 @@ Create an API for an Integration Flow
 </td>
 <td valign="top">
 
-Users can discover Integration Flows thought the Cloud Integration API Provider and generate APIs for the same. For more information, see [Creating an API from SAP Cloud Integration API Provider](APIM-Development/creating-an-api-from-sap-cloud-integration-api-provider-aefbd74.md).
+Users can discover Integration Flows thought the Cloud Integration API Provider and generate APIs for the same. For more information, see [Creating an API from SAP Cloud Integration API Provider](creating-an-api-from-sap-cloud-integration-api-provider-aefbd74.md).
 
 </td>
 <td valign="top">
@@ -516,7 +516,7 @@ Create an API Provider of type Cloud Integration
 </td>
 <td valign="top">
 
-Users can now create an API Provider of type “Cloud Integration” to connect to a Cloud Integration system, discover Integration Flows through the API Provider and generate APIs for the same. For more information on creating an API Provider of type Cloud Integration, see [Create an API Provider](APIM-Development/create-an-api-provider-6b263e2.md).
+Users can now create an API Provider of type “Cloud Integration” to connect to a Cloud Integration system, discover Integration Flows through the API Provider and generate APIs for the same. For more information on creating an API Provider of type Cloud Integration, see [Create an API Provider](create-an-api-provider-6b263e2.md).
 
 </td>
 <td valign="top">
@@ -627,7 +627,7 @@ API Proxy States
 </td>
 <td valign="top">
 
-As an API Management administrator, you can set states for an API proxy while creating or updating the API proxy. For more information, see [API Proxy States](APIM-Development/api-proxy-states-091cda4.md).
+As an API Management administrator, you can set states for an API proxy while creating or updating the API proxy. For more information, see [API Proxy States](api-proxy-states-091cda4.md).
 
 </td>
 <td valign="top">
@@ -666,7 +666,7 @@ t
 </td>
 <td valign="top">
 
-API Management now supports OpenAPI Specification \(OAS\) 3.0. For more information, see [OpenAPI Specification 3.0](APIM-Development/openapi-specification-3-0-3ce080d.md).
+API Management now supports OpenAPI Specification \(OAS\) 3.0. For more information, see [OpenAPI Specification 3.0](openapi-specification-3-0-3ce080d.md).
 
 </td>
 <td valign="top">
@@ -853,7 +853,7 @@ API Provider of type *On Premise*
 </td>
 <td valign="top">
 
-Create an API Provider of type *On Premise* to connect to an on-premise system via Cloud Connector. For more information, see [Create an API Provider](APIM-Development/create-an-api-provider-6b263e2.md) 
+Create an API Provider of type *On Premise* to connect to an on-premise system via Cloud Connector. For more information, see [Create an API Provider](create-an-api-provider-6b263e2.md) 
 
 </td>
 <td valign="top">
@@ -927,7 +927,7 @@ API Provider of type Open Connectors
 </td>
 <td valign="top">
 
-You can now create an API Provider of type Open Connectors to connect to third-party APIs. For more details, see [Create an API Provider](APIM-Development/create-an-api-provider-6b263e2.md)
+You can now create an API Provider of type Open Connectors to connect to third-party APIs. For more details, see [Create an API Provider](create-an-api-provider-6b263e2.md)
 
 </td>
 <td valign="top">
@@ -964,7 +964,7 @@ Creating Custom Role
 </td>
 <td valign="top">
 
-You can now create a custom role for API products in API Management. Take a look at [Creating a Custom Role](APIM-Initial-Setup/creating-a-custom-role-9d827cd.md) to know more. You can also assign permission to a product via UI. For more information, see [Assign Permission to a Product via UI](APIM-Development/assign-permission-to-a-product-via-ui-09fb892.md).
+You can now create a custom role for API products in API Management. Take a look at [Creating a Custom Role](APIM-Initial-Setup/creating-a-custom-role-9d827cd.md) to know more. You can also assign permission to a product via UI. For more information, see [Assign Permission to a Product via UI](assign-permission-to-a-product-via-ui-09fb892.md).
 
 </td>
 <td valign="top">

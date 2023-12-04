@@ -33,11 +33,21 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
 
 ## Procedure
 
-1.  In the Operations view, choose *Manage Security* \> *Security Material*.
+1.  Choose *Monitor* \> *Integrations and APIs*.
 
-2.  Choose *Create* \> *OAuth2 SAML Bearer Assertion*.
+2.  Select the target runtime \(*Runtime* parameter\).
 
-3.  Specify the following attributes:
+    This information is only relevant for Edge Integration Cell runtime.
+
+    For more information on how to manage security artifacts for Edge Integration Cell, see [Manage Security for Edge Integration Cell](../manage-security-for-edge-integration-cell-1783cf8.md).
+
+3.  Click the *Security Material* tile in the *Manage Security* section.
+
+4.  Choose *Add*.
+
+5.  As *Type*, select *OAuth2 SAML Bearer Assertion*.
+
+6.  Specify the following attributes:
 
 
     <table>
@@ -262,7 +272,7 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     </table>
     
-4.  Choose *Deploy*.
+7.  Choose *Deploy*.
 
 
 **Related Information**  

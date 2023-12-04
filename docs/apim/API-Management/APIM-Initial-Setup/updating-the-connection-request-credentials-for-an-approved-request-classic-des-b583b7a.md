@@ -12,9 +12,9 @@ There can be instances where you have to update the credentials once the connect
 
 To update the API portal access credentials, you must first generate it. To generate the credentials from the API Portal, you must have the *APIPortal. Administrator* role assigned to you.
 
-1.  Log in to the API portal.
+1.  Log in to the .
 
-2.  Choose the navigation icon on the left and choose *Onboarding Settings*.
+2.  Choose the navigation icon on the left and choose *Settings* \> *APIs*.
 
 3.  Choose the *Connection* tab.
 
@@ -80,5 +80,5 @@ If you encounter one of the following situations after the connection request ha
 
 ## Results
 
-You’ve updated the API portal access credentials successfully.
+You’ve updated the Integration Suite API portal access credentials successfully.
 

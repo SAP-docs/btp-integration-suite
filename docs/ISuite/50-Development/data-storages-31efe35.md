@@ -13,7 +13,7 @@ Cloud Integration comes with the following data storage features.
 > ### Note:  
 > For guidelines how to use these features during integration flow design, check out [Using Data Storage Features When Designing Integration Flows](using-data-storage-features-when-designing-integration-flows-a836b4e.md).
 > 
-> For information on the size limits of each data storages both in the Neo and Cloud Foundry environment, see [What Is SAP Cloud Integration?](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/e12c09cc8e9b4574b092d8964b049ce6.html "Support end-to-end process integration through the exchange of messages.") :arrow_upper_right:.
+> For information on the size limits of each data storages both in the Neo and Cloud Foundry environment, see [What Is SAP Cloud Integration?](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/e12c09cc8e9b4574b092d8964b049ce6.html "Support end-to-end process integration through the exchange of messages.") :arrow_upper_right:.
 
 
 <table>

@@ -83,13 +83,13 @@ You can restrict access to an API product in API Management using a custom role.
 
     **Next Steps**
 
-    After completing the above steps, assign permissions while creating a Product in API Portal application. For more information on the same refer, [here](../APIM-Development/assign-permission-to-a-product-via-ui-09fb892.md).
+    After completing the above steps, assign permissions while creating a Product in API Portal application. For more information on the same refer, [here](../assign-permission-to-a-product-via-ui-09fb892.md).
 
 
 **Related Information**  
 
 
-[Create a Product](../APIM-Development/create-a-product-d769622.md "Explains how to create products to publish a bundle of APIs together.")
+[Create a Product](../create-a-product-d769622.md "Explains how to create products to publish a bundle of APIs together.")
 
 [Assign User Roles in API Management](assign-user-roles-in-api-management-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
 

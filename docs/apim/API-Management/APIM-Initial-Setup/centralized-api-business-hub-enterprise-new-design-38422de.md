@@ -15,7 +15,7 @@ The centralized API business hub enterprise is a central API catalog, allowing a
 Every API Management instance will have an API business hub enterprise application on cloud. One of the various API Business Hub Enterprises is set as a centralized API catalog. This catalog will then receive API proxies, API products, and other assets from each connected API Portal. All the assets published to the centralized API business hub enterprise must be unique.
 
 > ### Remember:  
-> You can define different API Management instances to suit a particular stage in the API lifecycle. So you can have Development, Test, and Productive instances. Transport of APIs between the API Portals of these instances is also possible, see [Transport APIs and Its Related Artifacts](../APIM-Development/transport-apis-and-its-related-artifacts-eb83118.md). However, connecting the API Portals having such a relationship to the same API business hub enterprise will violate the uniquness of the assets.
+> You can define different API Management instances to suit a particular stage in the API lifecycle. So you can have Development, Test, and Productive instances. Transport of APIs between the API Portals of these instances is also possible, see [Transport APIs and Its Related Artifacts](../transport-apis-and-its-related-artifacts-eb83118.md). However, connecting the API Portals having such a relationship to the same API business hub enterprise will violate the uniquness of the assets.
 
 Once the application developers register to centralized API business hub enterprise, they can seamlessly search, explore, and test APIs. They can also create and subscribe to various applications from the API business hub enterprise.
 

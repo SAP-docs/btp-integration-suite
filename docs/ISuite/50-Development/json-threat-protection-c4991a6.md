@@ -128,5 +128,5 @@ Maximum size allowed for a JSON payload in KB. The maximum value is 10 MB.
 
 [Authorization](authorization-6658409.md "This policy evaluates whether a user should be permitted to access a protected API.")
 
-[Authentication](authentication-fa6eec4.md "Different API Proxies may have various authentication mechanisms. The authentication mechanisms that are currently supported are Basic authentication, Client Certificate, and oAuth.")
+[Authentication](authentication-fa6eec4.md "Different API may have various authentication mechanisms. The authentication mechanisms that are currently supported are Basic authentication, Client Certificate, and oAuth.")
 

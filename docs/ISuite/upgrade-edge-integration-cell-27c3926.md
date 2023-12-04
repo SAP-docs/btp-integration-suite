@@ -9,11 +9,11 @@ Edge Integration Cell is updated at cloud speed, which means that updates must b
 Edge Integration Cell only supports a sequential upgrade path. The upgrade can be done only to one version higher than the currently deployed version.
 
 > ### Note:  
-> Note that the compatibility of Edge Integration Cell with SAP Integration Suite Cloud components is maintained only for its latest version and its immediate predecessor. For instance, if the current available version is 8.10, then versions 8.10 and 8.9 are compatible with SAP Integration Suite. Any versions beneath 8.9, such as 8.8 and below, are considered as outdated.
+> The compatibility of Edge Integration Cell with SAP Integration Suite's cloud components is maintained only for the latest version of Edge Integration Cell and its immediate predecessor. For instance, if the current available Edge Integration Cell version is 8.10, then versions 8.10 and 8.9 are compatible with SAP Integration Suite. Any versions beneath 8.9, such as 8.8 and below, are considered as outdated.
 > 
-> As a result, deployment of content is blocked for Edge Integration Cell runtimes operating on these outdated versions. It's essential that you upgrade to the most recent version of Edge Integration Cell to enable all actions.
+> As a result, deployment and undeployment of content is blocked for Edge Integration Cell runtimes operating on these outdated versions. It's essential that you upgrade to the most recent version of Edge Integration Cell to enable all actions.
 > 
-> Do note that content deployed from previously outdated versions will continue to process without any restrictions. Only the deployment of new content is constrained.
+> Do note that content deployed from previously outdated versions will continue to process without any restrictions.
 
 > ### Note:  
 > In some situations, SAP skips the delivery of a new version. This will be considered in the upgrade path support.

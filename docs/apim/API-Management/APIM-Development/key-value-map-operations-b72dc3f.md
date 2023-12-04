@@ -901,7 +901,7 @@ SetVariableFailed
 </td>
 <td valign="top">
 
-Failed to set variable \{0\} in KeyValueMapStepDefinition \{1\}. When getting values in encrypted key value maps, this error occurs if you fail to prefix the assignTo variable with "private". For example:
+This error occurs when you attempt to fetch a value from an encrypted key-value map and assign it to a variable that doesn't have the "private" prefix in its name. This prefix is necessary for basic security measures during debugging, as it prevents the encrypted values from being displayed in API proxy Trace and debug sessions. For example:
 
 > ### Sample Code:  
 > ```

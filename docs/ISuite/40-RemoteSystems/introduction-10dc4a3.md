@@ -1887,9 +1887,9 @@ As well as the *transport-level security* options, you can also secure the commu
 **Related Information**  
 
 
-[Connectivity (Adapters)](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/55325f2a722c4f67bb7752b369b09ff8.html "You have the option to specify which technical protocols should be used to connect a sender or a receiver to the tenant.") :arrow_upper_right:
+[Connectivity (Adapters)](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/55325f2a722c4f67bb7752b369b09ff8.html "You have the option to specify which technical protocols should be used to connect a sender or a receiver to the tenant.") :arrow_upper_right:
 
-[Operating Model](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/72010e61b1d14d58a568b6475030a6ca.html "An operation model clearly defines the separation of tasks between SAP and the customer during all phases of an integration project.") :arrow_upper_right:
+[Operating Model](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/72010e61b1d14d58a568b6475030a6ca.html "An operation model clearly defines the separation of tasks between SAP and the customer during all phases of an integration project.") :arrow_upper_right:
 
 [Connecting to an On-Premise Landscape \(Example Setup\)](connecting-to-an-on-premise-landscape-example-setup-a15af84.md "")
 

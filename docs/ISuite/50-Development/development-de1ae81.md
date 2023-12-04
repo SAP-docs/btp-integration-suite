@@ -107,7 +107,7 @@ Manage your tenant.
 
 ## Development for API Management
 
-Learn the process of designing, publishing, and analyzing APIs in a secure and scalable environment. Also, get information on how to document APIs and search for packages on SAP API Business Hub.
+Learn the process of designing, publishing, and analyzing APIs in a secure and scalable environment. Also, get information on how to document APIs and search for packages on SAP Business Accelerator Hub.
 
 
 <table>
@@ -175,7 +175,7 @@ Test and debug the runtime behaviour of APIs.
 </td>
 <td valign="top">
 
-[Test APIs](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of APIs.") :arrow_upper_right:
+[Test APIs](https://help.sap.com/viewer/4425026877144cc2b15505ed30215167/IAT/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of APIs.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -194,7 +194,7 @@ Create and manage API providers, key value pairs, and certificates.
 </td>
 <td valign="top">
 
-[API Development](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/adcbc07b031b4ac285b22867a1216306.html "SAP Integration Suite provides one experience for managing and monitoring all APIs across various data platforms and is enriched with real-time analytics.") :arrow_upper_right:
+ <?sap-ot O2O class="- topic/xref " href="adcbc07b031b4ac285b22867a1216306.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/xui1697777552331/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/de1ae814218247c6bac4975cb486e431.xml" ?> 
 
 [API Providers](api-providers-42e13b2.md)
 
@@ -259,7 +259,7 @@ Generate revenue from APIs.
 </td>
 <td valign="top">
 
-Set up API Management and test API Business Hub Enterprise connections.
+Set up API Management and test API business hub enterprise connections.
 
 </td>
 <td valign="top">

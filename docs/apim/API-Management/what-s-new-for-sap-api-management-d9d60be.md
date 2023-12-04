@@ -92,7 +92,71 @@ API Revisions
 </td>
 <td valign="top">
 
-Unique namng pattern for Drafts in API Revisions to clearly differentiate between the deployed draft and the working draft and the drafts originating from revisions. For more information, see [Creating API Revisions](APIM-Development/creating-api-revisions-0a0d7d4.md).
+Unique namng pattern for Drafts in API Revisions to clearly differentiate between the deployed draft and the working draft and the drafts originating from revisions. For more information, see [Creating API Revisions](creating-api-revisions-0a0d7d4.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2023-10-30
+
+</td>
+<td valign="top">
+
+2023-10-30
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+API Artifact in Edge Integration Cell
+
+</td>
+<td valign="top">
+
+With the introduction of the API artifact and the general availability of the Edge Integration Cell, a few navigation changes have been made to the Integration Suite API Management capability. The APIs and Policy Templates, previously located under *Design* \> *APIs* in the left navigation, have been moved to *Configure* \> *APIs*. Additionally, the term "APIs" is now referred to as "API Proxies." Furthermore, "Products" and "Applications", which were previously found under *Design* \> *APIs* can now be accessed through a new left navigation item called *Engage*. To know more, see [API Development](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-apis?version=CLOUD).
 
 </td>
 <td valign="top">
@@ -158,7 +222,7 @@ API Revisions
 
 When publishing products, it's important to note that resources are available from the deployed API, rather than from the latest revision or draft of the API. Additionally, if a deployed resource is not available in the latest revision, you won't be able to attach that resource to the product.
 
-The revision name now includes support for parentheses \(\) as an additional special character in the name. For more information, see [Creating API Revisions](APIM-Development/creating-api-revisions-0a0d7d4.md).
+The revision name now includes support for parentheses \(\) as an additional special character in the name. For more information, see [Creating API Revisions](creating-api-revisions-0a0d7d4.md).
 
 </td>
 <td valign="top">
@@ -416,7 +480,7 @@ API Revisions
 
 You can now create a new revision of your API and make necessary changes to the API definitions, policies, and resources without causing any disruption to the already published API.
 
-You can also see all the changes made to the API and restore the API to its previous state. For more information, see [API Revisions](APIM-Development/api-revisions-58097ac.md).
+You can also see all the changes made to the API and restore the API to its previous state. For more information, see [API Revisions](api-revisions-58097ac.md).
 
 </td>
 <td valign="top">
@@ -475,12 +539,76 @@ API Management
 </td>
 <td valign="top">
 
+Graph
+
+</td>
+<td valign="top">
+
+Graph is a new and innovative capability of API Management within SAP Integration Suite.It enables you to expose all your business data in the form of a semantically connected data graph, accessed via a single unified and powerful API. For more information, see [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2023-07-17
+
+</td>
+<td valign="top">
+
+2023-07-17
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 API business hub enterprise: Add Links and Email Addresses Using Markdown
 
 </td>
 <td valign="top">
 
-You can use markdown to add links and email addresses to the title and subtitle fields as part of the banner description in *Site Editor*. For more information, see [Customize the Visual Format of the API business hub enterprise](APIM-Development/customize-the-visual-format-of-the-api-business-hub-enterprise-2eacd52.md).
+You can use markdown to add links and email addresses to the title and subtitle fields as part of the banner description in *Site Editor*. For more information, see [Customize the Visual Format of the API business hub enterprise](customize-the-visual-format-of-the-api-business-hub-enterprise-2eacd52.md).
 
 </td>
 <td valign="top">
@@ -736,7 +864,7 @@ Short text field in API products.
 </td>
 <td valign="top">
 
-In the API portal, a new *Short Text* field is now available for products. You can use this field to add an introductory text to your products. When you add the introductory text in this field and publish the product, this short text appears in the product tile on the corresponding API business hub enterprise page and is also available on the API proxy details page. For more information, see [Create a Product](APIM-Development/create-a-product-d769622.md).
+In the API portal, a new *Short Text* field is now available for products. You can use this field to add an introductory text to your products. When you add the introductory text in this field and publish the product, this short text appears in the product tile on the corresponding API business hub enterprise page and is also available on the API proxy details page. For more information, see [Create a Product](create-a-product-d769622.md).
 
 </td>
 <td valign="top">
@@ -864,7 +992,7 @@ API business hub enterprise
 </td>
 <td valign="top">
 
-\[New DesignThe Manage options \(for example Manage Users, Manage Domain\] Categories, and so on\) on the API business hub enterprise \[New Design\] header are now listed under *\[New DesignEnterprise Manager*. Based on the roles assigned to the users, these options will appear under the *Enterprise Manager* tab. For more information, see [Manage Domain Categories \[New Design\]](APIM-Development/manage-domain-categories-new-design-bd9691d.md).
+\[New DesignThe Manage options \(for example Manage Users, Manage Domain\] Categories, and so on\) on the API business hub enterprise \[New Design\] header are now listed under *\[New DesignEnterprise Manager*. Based on the roles assigned to the users, these options will appear under the *Enterprise Manager* tab. For more information, see [Manage Domain Categories \[New Design\]](manage-domain-categories-new-design-bd9691d.md).
 
 </td>
 <td valign="top">
@@ -928,7 +1056,7 @@ API business hub enterprise \[New Design\]
 </td>
 <td valign="top">
 
-You can now configure notifications for providing information to the API business hub enterprise end users on any website updates, events or news items from the API business hub enterprise new user interface. For more information, see [Manage Notifications \[New Design\]](APIM-Development/manage-notifications-new-design-df32457.md).
+You can now configure notifications for providing information to the API business hub enterprise end users on any website updates, events or news items from the API business hub enterprise new user interface. For more information, see [Manage Notifications \[New Design\]](manage-notifications-new-design-df32457.md).
 
 </td>
 <td valign="top">

@@ -20,9 +20,9 @@ This topic explains how to obtain a service key in order to enable principal pro
 
 ## Prerequisites
 
--   You have subscribed to the *API Management, API portal* tile in the Cloud Foundry environment. For more information, see [Set Up API Portal Application](set-up-api-portal-application-29c281b.md).
+-   You've enabled API Management capability using Integration suite. For more information, refer [Subscribing to Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/8a3c8b7a6b1c4f249bb81d11644ef806.html?version=CLOUD) and [Activating Capabilities](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/2ffb343c163c48a4b3a90f9f3c487328.html?version=CLOUD).
 
--   You have created an API Provider of type *On Premise* and chosen *Principal Propagation* as a mode of authentication to connect to an on-premise system. For more information, see [Create an API Provider](../APIM-Development/create-an-api-provider-6b263e2.md).
+-   You have created an API Provider of type *On Premise* and chosen *Principal Propagation* as a mode of authentication to connect to an on-premise system. For more information, see [Create an API Provider](../create-an-api-provider-6b263e2.md).
 -   You have the `space developer` role assigned to you.
 
 
@@ -296,7 +296,7 @@ After you have created a service instance, proceed with:
 
 You can use the credentials to establish:
 
--   [Principal Propagation from the Neo to the Cloud Foundry Environment](../APIM-Development/principal-propagation-from-the-neo-to-the-cloud-foundry-environment-da0e97b.md): Enable an application in your subaccount in the Neo environment to access an API Management proxy created on a Cloud Foundry based *API Management, API portal* without a user login. For this scenario to work, the Neo subaccount needs to be trusted by the Cloud Foundry subaccount where *API Management, API portal* is enabled. Now, the application on Neo can call API Management proxy using OAuth2SAMLBearer destination.
+-   [Principal Propagation from the Neo to the Cloud Foundry Environment](../principal-propagation-from-the-neo-to-the-cloud-foundry-environment-da0e97b.md): Enable an application in your subaccount in the Neo environment to access an API Management proxy created on a Cloud Foundry based *API Management, API portal* without a user login. For this scenario to work, the Neo subaccount needs to be trusted by the Cloud Foundry subaccount where *API Management, API portal* is enabled. Now, the application on Neo can call API Management proxy using OAuth2SAMLBearer destination.
 
--   [Principal Propagation from the Same Cloud Foundry Subaccount](../APIM-Development/principal-propagation-from-the-same-cloud-foundry-subaccount-0e3d3e7.md): Enable an application in your subaccount in the Cloud Foundry environment to access an API Management proxy created on the same Cloud Foundry based API Management, API portal without a user login. The JWT user token in your application can be exchanged with the API Management token using the service key credentials created for *API Management, API portal*.
+-   [Principal Propagation from the Same Cloud Foundry Subaccount](../principal-propagation-from-the-same-cloud-foundry-subaccount-0e3d3e7.md): Enable an application in your subaccount in the Cloud Foundry environment to access an API Management proxy created on the same Cloud Foundry based API Management, API portal without a user login. The JWT user token in your application can be exchanged with the API Management token using the service key credentials created for *API Management, API portal*.
 

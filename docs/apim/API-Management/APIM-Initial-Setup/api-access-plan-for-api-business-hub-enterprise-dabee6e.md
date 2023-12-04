@@ -20,7 +20,7 @@ This topic explains how to enable API access for API business hub enterprise.
 
 ## Prerequisites
 
--   If you've subscribed to API Management as a standalone service, then you must subcribe to API business hub enterprise in the Cloud Foundry environment. For more information, see [Set Up API business hub enterprise Application Using the Standalone Tile](set-up-api-business-hub-enterprise-application-using-the-standalone-tile-80c0519.md). From the SAP BTP Cockpit, select *Go to Application*for API business hub enterprise subscription to access the API business hub enterprise page.
+-   If you've enabled API Management capability using Integration suite, ensure that you've also enabled API business hub enterprise in Integration suite. For more information, refer [Subscribing to Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/8a3c8b7a6b1c4f249bb81d11644ef806.html?version=CLOUD) and [Activating Capabilities](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/2ffb343c163c48a4b3a90f9f3c487328.html?version=CLOUD). To access API business hub enterprise from Integration Suite, select API business hub enterprise from the *Navigation Links* on the header.
 
     > ### Note:  
     > Please ensure that you can access API business hub enterprise before creating an instance.
@@ -122,8 +122,8 @@ Create a service instance using API Access plan.
     > 
     >     See the section below to know how to obtain your `developerId`.
     > 
-    > -   If you have not registered to the API Management, API business hub enterprise application, follow the steps in [Register on API business hub enterprise](../APIM-Development/register-on-api-business-hub-enterprise-c85fafe.md) and try again.
-    > -   If you are not registered to the API Management, API business hub enterprise application, and require your admin to onboard you, contact your admin. See [Onboard an Application Developer](../APIM-Development/onboard-an-application-developer-786d107.md).
+    > -   If you have not registered to the API Management, API business hub enterprise application, follow the steps in [Register on API business hub enterprise](../register-on-api-business-hub-enterprise-c85fafe.md) and try again.
+    > -   If you are not registered to the API Management, API business hub enterprise application, and require your admin to onboard you, contact your admin. See [Onboard an Application Developer](../onboard-an-application-developer-786d107.md).
     > 
     > **How to obtain the `developerId`**:
     > 

@@ -268,26 +268,6 @@ Command Message pattern triggered via start timer event with 1 XSLT mapping and 
 
 ![](images/CM_ASYNC_0002_3b517b4.png)
 
-<a name="loioba120e7d3c684a56afa46c1103dc7321"/>
-
-<!-- loioba120e7d3c684a56afa46c1103dc7321 -->
-
-## CM\_SYNC\_0001
-
-Command Message pattern triggered via start timer event with 1 message mapping and 1 receiver for delta sync by updating source
-
-![](images/CM_SYNC_0001_3368935.png)
-
-<a name="loiod0da1d48f72b4db3b247f8b425bc1920"/>
-
-<!-- loiod0da1d48f72b4db3b247f8b425bc1920 -->
-
-## CM\_SYNC\_0002
-
-Command Message pattern triggered via start timer event with 1 XSLT mapping and 1 receiver for delta sync by updating source
-
-![](images/CM_SYNC_0002_b7d05da.png)
-
 <a name="loio7979d72f8f094ea28144c68d805f4bae"/>
 
 <!-- loio7979d72f8f094ea28144c68d805f4bae -->
@@ -327,4 +307,20 @@ Recipient List with option to ignore the message if receiver cannot be determine
 Recipient List with option to send message to default receiver in case of receiver not determined
 
 ![](images/RL_ASYNC_0003_5163d0f.png)
+
+<a name="loio57a9d28514574a30a61751409db4cd12"/>
+
+<!-- loio57a9d28514574a30a61751409db4cd12 -->
+
+## RL\_ASYNC\_0004
+
+Recipient List with NO Condition \(Multicast\)​.![](images/RL_ASYNC_0004_1d24205.png)
+
+<a name="loio7dc60062b6aa47d0b6d8282171a8d98f"/>
+
+<!-- loio7dc60062b6aa47d0b6d8282171a8d98f -->
+
+## RL\_ASYNC\_0005
+
+Recipient List with Order at Runtime \(Sequential Multicast\)​![](images/RL_ASYNC_0005_042dbe6.png)
 

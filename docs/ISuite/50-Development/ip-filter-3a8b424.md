@@ -115,5 +115,5 @@ Set of supported headers -
 
 [Quota Policy](quota-policy-2aecf15.md "The Quota policy defines the number of request messages an application can submit to an API endpoint over a given period of time.")
 
-[Surge Protection](surge-protection-3d14745.md "The surge protection policy protects the backend against sudden traffic spikes.")
+[Surge Protection](surge-protection-3d14745.md "The surge protection policy is designed to protect against traffic surges by controlling the rate at which requests are processed by an API during runtime. This policy acts as a safeguard, reducing the likelihood of downtime and performance issues.")
 

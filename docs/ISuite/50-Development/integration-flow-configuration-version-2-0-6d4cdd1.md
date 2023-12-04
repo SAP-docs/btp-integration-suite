@@ -21,7 +21,7 @@ If you want to make your active agreement compatible with this version, follow t
 > 
 > Few pointers to consider while using ProcessDirect sender and receiver adapters:
 > 
-> -   The groovy scripts provided in the integration package is for internal purposes and it is not recommended to apply the groovy code to custom integration flows.
+> -   The groovy scripts provided in the integration package is reserved for *SAP* and it is not recommended to apply the groovy code to custom integration flows.
 > 
 > -   The newly added integration flow *Step 1b - Write Message to Message Queue* is for internal use and not configurable. This integration flow can be called only through *Step 1 - Sender Process Direct Communication Flow V2* and the Step 1 integration flow will pass the actual type system in the camel header **SAP\_EDI\_Document\_Standard** with the following values:
 >     -   UN-EDIFACT
@@ -31,7 +31,7 @@ If you want to make your active agreement compatible with this version, follow t
 >     -   SAP\_S4HANA\_Cloud\_SOA
 >     -   GS1-XML
 > 
-> -   You can handover all the camel header properties that are defined in your custom integration flows to Process Direct Step 1a, and it is recommended not to use camel header property name with prefix *SAP\_* as the property value might get overwritten by generic integration flow.
+> -   You can handover all the camel headers that are defined in your custom integration flows to Process Direct Step 1, and it is recommended not to use camel header property name with prefix *SAP\_* as the property value might get overwritten by generic integration flow.
 > -   The computed Partner Directory ID can be used in both Step 2 Process Direct and Step 3 Process Direct integration flows. You can access the computed PID's content by calling PID *SAP\_TPM\_ACTIVITYPARTNER\_ID* in your groovy scripts.
 
 Follow the steps below to copy the integration package to your *Design* space.

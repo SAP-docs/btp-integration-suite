@@ -7,7 +7,7 @@ Use the API Test Environment to test the runtime behavior of APIs.
 The *Test Environment* enables you to test your APIs. Testing an API is essential to understand the runtime behavior of the APIs. It allows you to explore the resources associated with an API and execute the operations. It also allows you to test OData and REST-based services.
 
 > ### Note:  
-> This document describes the new design of the API business hub enterprise. To view the documentation for the classic design, see [Test APIs](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of APIs.") :arrow_upper_right:.
+> This document describes the new design of the API business hub enterprise. To view the documentation for the classic design, see [Test APIs](https://help.sap.com/viewer/4425026877144cc2b15505ed30215167/IAT/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of APIs.") :arrow_upper_right:.
 
 
 
@@ -69,5 +69,5 @@ The *Test Environment* tab will be visible to you only if you have the *AuthGrou
     -   *Cookies*: View the cookies.
 
 13. If you want to use the response body as an input request, choose *Use as Request* on the *Body \(Raw\)* tab.
-14. To view the transactions based on the testing activity that you did, choose *Launch API Viewer*. For more information on tracing API proxy, see [Debug API](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/fb2c7aa34cdc443294a325ccb7876785.html "You debug an API proxy to troubleshoot and monitor them in SAP API Management, by probing the details of each step through the API proxy flow.") :arrow_upper_right:
+14. To view the transactions based on the testing activity that you did, choose *Launch API Viewer*. For more information on tracing API proxy, see [Debug API](https://help.sap.com/viewer/4425026877144cc2b15505ed30215167/IAT/en-US/fb2c7aa34cdc443294a325ccb7876785.html "You debug an API proxy to troubleshoot and monitor them in SAP API Management, by probing the details of each step through the API proxy flow.") :arrow_upper_right:
 

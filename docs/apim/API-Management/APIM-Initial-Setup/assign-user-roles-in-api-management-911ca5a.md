@@ -164,7 +164,7 @@ Use this role to:
 > 
 > This role is assigned by default to a user who onboards to the API business hub enterprise using the Self-registration process or via Add User flow.
 > 
-> A user must be onboarded to API business hub enterprise only via Self-registration or Add User flow. For more information on registering in API business hub enterprise, see [Register on API business hub enterprise](../APIM-Development/register-on-api-business-hub-enterprise-c85fafe.md). In the Add User flow, the API business hub enterprise admin adds a user who wants to be onboarded to API business hub enterprise. However, the user who is requesting to be onboarded must ensure that the user details provided to the admin matches the user details obtained from the response of <developer portal url\>/api/1.0/users.
+> A user must be onboarded to API business hub enterprise only via Self-registration or Add User flow. For more information on registering in API business hub enterprise, see [Register on API business hub enterprise](../register-on-api-business-hub-enterprise-c85fafe.md). In the Add User flow, the API business hub enterprise admin adds a user who wants to be onboarded to API business hub enterprise. However, the user who is requesting to be onboarded must ensure that the user details provided to the admin matches the user details obtained from the response of <developer portal url\>/api/1.0/users.
 
 
 

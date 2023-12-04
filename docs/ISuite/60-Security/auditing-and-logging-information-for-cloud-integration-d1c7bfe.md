@@ -73,7 +73,7 @@ When importing a package manually, the following events are written:
 </td>
 <td valign="top">
 
-[Working with Integration Packages](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/45423ba590094233a4c82f94390df096.html "") :arrow_upper_right: 
+[Working with Integration Packages](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/45423ba590094233a4c82f94390df096.html "") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -968,7 +968,7 @@ For the creation of an access policy, the following event is written:
 
 [Managing Access Policies](../50-Development/managing-access-policies-7db3c87.md)
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -1009,7 +1009,7 @@ For the update of an access policy, the following event is written:
 
 [Managing Access Policies](../50-Development/managing-access-policies-7db3c87.md)
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -1057,7 +1057,7 @@ If you delete an access policy that includes artifact references, 2 logs are wri
 
 [Managing Access Policies](../50-Development/managing-access-policies-7db3c87.md)
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -1098,7 +1098,7 @@ For the creation of an artifact reference of an access policy, the following eve
 
 [Managing Access Policies](../50-Development/managing-access-policies-7db3c87.md)
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -1141,7 +1141,7 @@ For the update of an artifact reference of an access policy, the following event
 
 [Managing Access Policies](../50-Development/managing-access-policies-7db3c87.md)
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -1170,7 +1170,7 @@ Delete artifact reference \(for access policy\)
 
 [Managing Access Policies](../50-Development/managing-access-policies-7db3c87.md)
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
 
 </td>
 </tr>

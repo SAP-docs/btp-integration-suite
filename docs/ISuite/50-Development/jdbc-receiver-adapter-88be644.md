@@ -2,7 +2,7 @@
 
 # JDBC Receiver Adapter
 
-The JDBC \(Java Database Connectivity\) adapter enables you to connect SAP Integration Suite to cloud databases.
+The JDBC \(Java Database Connectivity\) adapter enables you to connect SAP Integration Suite to cloud or on-premise databases.
 
 Use the JDBC receiver adapter in your integration flow to establish a connection with SAP-managed and third-party databases. Before deploying the integration flow, you’re required to do the following to establish connection with the database:
 
@@ -10,7 +10,9 @@ Use the JDBC receiver adapter in your integration flow to establish a connection
 
 -   Create a Data Source, to access the database, based on the uploaded JDBC driver. For more information, see [Managing JDBC Data Sources](managing-jdbc-data-sources-4c873fa.md).
 
--   -   Configure the JDBC adapter to communicate with your database based on the environment that hosts your tenant.
+-   If you're connecting to on-premise database, then you must validate the connection in the Cloud Connector. For more information, see [Configure Access Control](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/f42fe4471d6a4a5fb09b7f3bb83c66a4.html).
+
+-   Configure the JDBC adapter to communicate with your database based on the environment that hosts your tenant.
 
 
 > ### Note:  
@@ -45,69 +47,22 @@ To try out a simple demo, visit the [blog](https://blogs.sap.com/2019/02/19/clou
 
 ## Supported Databases
 
-The following table lists the databases currently supported for Cloud Foundry tenants.
+The following are the databases that are currently supported.
 
-
-<table>
-<tr>
-<th valign="top">
-
-Database supported for Cloud Foundry
-
-</th>
-<th valign="top">
-
-Database supported for Neo only
-
-</th>
-</tr>
-<tr>
-<td valign="top">
+> ### Note:  
+> If you like to use the JDBC adapter to process integration scenarios in a Edge Integration Cell runtime, choose any database from the below list that is reachable for your Edge Integration Cell node.
 
 -   [DB2](jdbc-for-db2-on-premise-9515cf8.md)
 -   [Microsoft SQL Server \(Cloud\)](jdbc-for-microsoft-sql-server-cloud-4173d0a.md)
+-   [Microsoft SQL Server \(On-Premise\)](jdbc-for-microsoft-sql-server-on-premise-9745e40.md)
 -   [Oracle \(Cloud\)](jdbc-for-oracle-cloud-f868182.md)
+-   [Oracle \(On-Premise\)](jdbc-for-oracle-on-premise-e6db38a.md)
 -   [PostgreSQL \(Cloud\)](jdbc-for-postgresql-cloud-4d5b488.md)
+-   [JDBC for Postgres \(On-Premise\)](jdbc-for-postgres-on-premise-d31edb4.md)
 -   [SAP HANA \(Cloud\)](jdbc-for-sap-hana-cloud-187a8e8.md)
+-   [SAP HANA Platform \(On-Premise\)](jdbc-for-sap-hana-platform-on-premise-ff29388.md)\`
 -   [JDBC for SAP ASE Service \(Cloud\)](jdbc-for-sap-ase-service-cloud-d96c7c5.md)
-
-
-
-</td>
-<td valign="top">
-
-
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio88be64412f1b46d684dfba11f2767c5b__section_qp3_rtw_nnb"/>
-
-## Using the JDBC Adapter, Neo Environment
-
-The following diagram shows how the JDBC adapter communicates with an HANA or ASE database that are managed by SAP.
-
-![](images/JDBC_Receiver_Adapter_96428a8.png)
-
-The following diagram shows the supported the databases for Cloud Integration tenants hosted on Neo Environment:
-
-![](images/DB_Connection_from_Neo_Tenant_JDBC_Adapter_54d53ac.png)
-
-
-
-### Generating Access Token for JDBC Data Source
-
-You need to generate tokens for newly deployed JDBC Data Source artifacts for an HANA or ASE database. If the artifacts already exist, reuse the token until there is at least one artifact deployed for the database and you can’t generate new tokens for an existing JDBC Data Source. In case you undeployed the last artifact, you need to generate a new token for a new artifact for the specific database. Use the following command to list all grants for the specified schema:
-
-> ### Source Code:  
-> ```
-> neo list-schema-access-grants --account owner --host hanatrial.ondemand.com --user myuser --id schema1
-> ```
-
-For more information on allowing access and to generate a one-time access token that permits the requesting application to access your schema from its subaccount, see [Grant Access to Schemas](https://help.sap.com/viewer/d4790b2de2f4429db6f3dff54e4d7b3a/Cloud/en-US/a3142222d2cb40b0b473f53855f571b0.html). To list all current schema access grants for a specified subaccount, see [list-schema-access-grants](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/371711d0c46347429a6aa69147e892fc.html).
+-   [JDBC for SAP ASE Platform \(On-Premise\)](jdbc-for-sap-ase-platform-on-premise-dad011d.md)
 
 
 
@@ -133,9 +88,11 @@ The following diagram shows the supported the databases for Cloud Integration..
 
 
 
+## Connection
 
 
-### Connection
+
+### 
 
 After adding the JDBC receiver adapter step in your integration flow, set up the connection based on the description mentioned in the table:
 

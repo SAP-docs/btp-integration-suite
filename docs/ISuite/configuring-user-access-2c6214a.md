@@ -34,12 +34,9 @@ For more information on role collections, see [Roles and Role Collections](https
 
 3.  Enter the *User Name* and *E-Mail*, and choose *Create*.
 
-4.  Choose the user and select <span class="SAP-icons"></span> Additional Options under *Role Collections* section and choose *Assign Role Collection*.
+4.  Choose the user and under *Role Collections* section select <span class="SAP-icons"></span> Additional Options and choose *Assign Role Collection*.
 
 5.  In the resulting dialog box, select the checkbox of the role collection that you want to assign to the user and choose *Assign Role Collection*.
-
-    > ### Note:  
-    > Clear your web browser cache and cookies before navigating to *Go to Application*.
 
     The following role collections are available for each capability in SAP Integration Suite:
 
@@ -69,7 +66,7 @@ For more information on role collections, see [Roles and Role Collections](https
     
     Cloud Integration
 
-    For detailed list of scope and actions for each role collection, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
+    For detailed list of scope and actions for each role collection, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
     
     </td>
     <td valign="top">
@@ -368,7 +365,7 @@ For more information on role collections, see [Roles and Role Collections](https
     -   Deactivate agreements.
 
 
-    To know more, see  <?sap-ot O2O class="- topic/xref " href="bcf7f21956574a7389f24fd8a2364850.xml" text="" desc="" xtrc="xref:11" xtrf="file:/home/builder/src/dita-all/cdm1692607551357/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/2c6214a3228e4b4cba207f49fda92ed4.xml" ?> 
+    To know more, see [Additional Role for Trading Partner Management](additional-role-for-trading-partner-management-bcf7f21.md)
     
     </td>
     </tr>
@@ -493,4 +490,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </tr>
     </table>
     
+    > ### Note:  
+    > Clear your web browser cache and cookies before accessing to the application, by navigating to *Services* \> *Instances and Subscription* and then select the instance of the application.
+
 

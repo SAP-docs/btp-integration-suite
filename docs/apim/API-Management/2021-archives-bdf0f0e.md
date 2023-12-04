@@ -163,7 +163,7 @@ Applications table on My Workspace
 </td>
 <td valign="top">
 
-The *My Workspace* section in API Business Hub Enterprise has been revamped to provide better performance. The Cost Incurred column has been removed from the Applications table. You can view the cost incurred details in the *Cost* section. For more information,see [Create an Application \[Classic Design\]](APIM-Development/create-an-application-classic-design-7b4e71b.md).
+The *My Workspace* section in API Business Hub Enterprise has been revamped to provide better performance. The Cost Incurred column has been removed from the Applications table. You can view the cost incurred details in the *Cost* section. For more information,see [Create an Application \[Classic Design\]](create-an-application-classic-design-7b4e71b.md).
 
 </td>
 <td valign="top">
@@ -207,7 +207,7 @@ SAP Analytics Cloud for API Management
 </td>
 <td valign="top">
 
-You can use the API Management Reporting Dashboard on SAP Analytics Cloud to monitor API usage and performance through various API metrics and KPIs. For more information see,[SAP Analytics Cloud for API Management](APIM-Development/sap-analytics-cloud-for-api-management-fb3648a.md).
+You can use the API Management Reporting Dashboard on SAP Analytics Cloud to monitor API usage and performance through various API metrics and KPIs. For more information see,[SAP Analytics Cloud for](sap-analytics-cloud-for-fb3648a.md).
 
 </td>
 <td valign="top">
@@ -251,7 +251,7 @@ Overriding the default update operation for API Proxy of Type ODATA
 </td>
 <td valign="top">
 
-When discovering an API from the on-premise SAP Gateway system via OData API Provider, for the entities that are defined as "sap:updatable" in the backend service, you can choose the update operation \("PUT" and "PATCH"\) for OData V2 and OData V4 respectively. For more information, see [Overriding the Default Update Operation for API Proxy of Type OData](APIM-Development/overriding-the-default-update-operation-for-api-proxy-of-type-odata-4a12c59.md).
+When discovering an API from the on-premise SAP Gateway system via OData API Provider, for the entities that are defined as "sap:updatable" in the backend service, you can choose the update operation \("PUT" and "PATCH"\) for OData V2 and OData V4 respectively. For more information, see [Overriding the Default Update Operation for API Proxy of Type OData](overriding-the-default-update-operation-for-api-proxy-of-type-odata-4a12c59.md).
 
 </td>
 <td valign="top">
@@ -295,7 +295,7 @@ Product Transport
 </td>
 <td valign="top">
 
-When transport is triggered for a Product, all the entities of the Product get transported along with the Product. For more information, see [Transporting a Product from Source to Destination](APIM-Development/transporting-a-product-from-source-to-destination-3a4cdd2.md).
+When transport is triggered for a Product, all the entities of the Product get transported along with the Product. For more information, see [Transporting a Product from Source to Destination](transporting-a-product-from-source-to-destination-3a4cdd2.md).
 
 </td>
 <td valign="top">
@@ -339,7 +339,7 @@ API Designer
 </td>
 <td valign="top">
 
-For a given Resource, you can use the API Designer to detect and correct the errors in swagger definition, and save the changes. For more information, see the note in step 14 in [Create an API](APIM-Development/create-an-api-c0842d5.md).
+For a given Resource, you can use the API Designer to detect and correct the errors in swagger definition, and save the changes. For more information, see the note in step 14 in [Create an API](create-an-api-c0842d5.md).
 
 </td>
 <td valign="top">
@@ -385,15 +385,15 @@ Save and Deploy API Proxy
 
 Saving is a design time activity; at this stage, multiple aspects of the proxy might change. Until all the changes made to the proxy are considered and are finally saved, the proxy should not be deployed.
 
-Action: Previously, editing and then saving the changes in an already deployed API, would deploy the changes in runtime. Now, after saving the changes you've made to the API proxy, you have to choose *Deploy* for the latest changes to reflect in runtime. For more information, see [Edit an API Proxy](APIM-Development/edit-an-api-proxy-a64b952.md).
+Action: Previously, editing and then saving the changes in an already deployed API, would deploy the changes in runtime. Now, after saving the changes you've made to the API proxy, you have to choose *Deploy* for the latest changes to reflect in runtime. For more information, see [Edit an API Proxy](edit-an-api-proxy-a64b952.md).
 
 Notes:
 
--   API proxies always get imported to the destination API portal in the deployed state. For more information, see [Transporting an API Proxy from Source to Destination](APIM-Development/transporting-an-api-proxy-from-source-to-destination-2fe1aa2.md). Additionally, APIs attached to the Product get imported to the destination API portal in the deployed state. For more information, see [Transporting a Product from Source to Destination](APIM-Development/transporting-a-product-from-source-to-destination-3a4cdd2.md).
+-   API proxies always get imported to the destination API portal in the deployed state. For more information, see [Transporting an API Proxy from Source to Destination](transporting-an-api-proxy-from-source-to-destination-2fe1aa2.md). Additionally, APIs attached to the Product get imported to the destination API portal in the deployed state. For more information, see [Transporting a Product from Source to Destination](transporting-a-product-from-source-to-destination-3a4cdd2.md).
 
--   When an API proxy is transported or exported individually or as a part of a Product, by default, it gets imported to the target in the deployed state. For more information, see [Import an API](APIM-Development/import-an-api-9342a93.md).
+-   When an API proxy is transported or exported individually or as a part of a Product, by default, it gets imported to the target in the deployed state. For more information, see [Import an API](import-an-api-9342a93.md).
 
--   If you try to publish a Product that has an API with saved changes attached to it, you get a warning message that there are changes in the APIs that aren't deployed yet. Similarly, you'll receive a warning message if you try to publish a Product which has multiple APIs attached to it, and few of these APIs have changes that are saved but not deployed. For more information, refer the note in step 9 in [Create a Product](APIM-Development/create-a-product-d769622.md).
+-   If you try to publish a Product that has an API with saved changes attached to it, you get a warning message that there are changes in the APIs that aren't deployed yet. Similarly, you'll receive a warning message if you try to publish a Product which has multiple APIs attached to it, and few of these APIs have changes that are saved but not deployed. For more information, refer the note in step 9 in [Create a Product](create-a-product-d769622.md).
 
 
 
@@ -711,7 +711,7 @@ Configuring Load Balancing for API Proxy from API Portal.
 </td>
 <td valign="top">
 
-You can now configure the load balancer to distribute the load efficiently across multiple API providers. For more information, see [Configuring Load Balancing](APIM-Development/configuring-load-balancing-503a3aa.md).
+You can now configure the load balancer to distribute the load efficiently across multiple API providers. For more information, see [Configuring Load Balancing](configuring-load-balancing-503a3aa.md).
 
 </td>
 <td valign="top">
@@ -801,7 +801,7 @@ Converting Externally Managed APIs to Internally Managed APIs
 
 You can convert an external API, whose lifecycle isn’t be managed by SAP API Management to an internal API so that management capabilities can be enabled for that API.
 
-Action:To convert an external API to an internal API, see [Converting Externally Managed APIs to Internally Managed APIs](APIM-Development/converting-externally-managed-apis-to-internally-managed-apis-1fc41ac.md).
+Action:To convert an external API to an internal API, see [Converting Externally Managed APIs to Internally Managed APIs](converting-externally-managed-apis-to-internally-managed-apis-1fc41ac.md).
 
 </td>
 <td valign="top">
@@ -885,7 +885,7 @@ Perform Additional Tasks in API Designer
 </td>
 <td valign="top">
 
-To download the API swagger specifications, choose Download and select JSON or YAML format. For more information, see [Perform Additional Tasks in API Designer](APIM-Development/perform-additional-tasks-in-api-designer-a92cf80.md).
+To download the API swagger specifications, choose Download and select JSON or YAML format. For more information, see [Perform Additional Tasks in API Designer](perform-additional-tasks-in-api-designer-a92cf80.md).
 
 </td>
 <td valign="top">
@@ -929,7 +929,7 @@ Transporting API Providers, Certificates, and Key Value Maps
 
 You can now trigger the transport of API Provider, Key Store Certificate, Trust Store, and Key Value Maps individually.
 
-Action: To trigger the transport of API Provider, Key Store Certificate, Trust Store, and Key Value Maps individually, see[Triggering Content Transport Using SAP Cloud Transport Management Service](APIM-Development/triggering-content-transport-using-sap-cloud-transport-management-service-cc36fab.md).
+Action: To trigger the transport of API Provider, Key Store Certificate, Trust Store, and Key Value Maps individually, see[Triggering Content Transport Using SAP Cloud Transport Management Service](triggering-content-transport-using-sap-cloud-transport-management-service-cc36fab.md).
 
 </td>
 <td valign="top">
@@ -1015,7 +1015,7 @@ Content Transport Using Cloud Transport Management Service
 
 You can now use the SAP Cloud Transport Management service for exporting, importing, and shipping the API Management content from the Development or Test environment to Production environment.
 
-Action: To transport API Management content from the Development or Test environment to Production environment, see [Transport APIs and Its Related Artifacts](APIM-Development/transport-apis-and-its-related-artifacts-eb83118.md).
+Action: To transport API Management content from the Development or Test environment to Production environment, see [Transport APIs and Its Related Artifacts](transport-apis-and-its-related-artifacts-eb83118.md).
 
 </td>
 <td valign="top">
@@ -1057,7 +1057,7 @@ Configuring HealthMonitor and Load Balancer for API Proxy using .Zip
 </td>
 <td valign="top">
 
-Configure health monitor and the load balancer to put the active target server in rotation and to distribute the load efficiently across multiple servers. For more information, see [Load Balancing Across API Providers](APIM-Development/load-balancing-across-api-providers-7ac0c09.md).
+Configure health monitor and the load balancer to put the active target server in rotation and to distribute the load efficiently across multiple servers. For more information, see [Load Balancing Across API Providers](load-balancing-across-api-providers-7ac0c09.md).
 
 </td>
 <td valign="top">
@@ -1143,7 +1143,7 @@ API Business Hub Enterprise
 
 You can now maintain a centralized API catalog in one API Business Hub Enterprise that accepts contents like API proxies, API products, and so on, from multiple API portals.
 
-Action: You can select multiple products published from the same portal but you can't select products published from different portals. For more information, see [Centralized API business hub enterprise \[Classic Design\]](APIM-Initial-Setup/centralized-api-business-hub-enterprise-classic-design-33b706f.md) and [Create an Application \[Classic Design\]](APIM-Development/create-an-application-classic-design-7b4e71b.md).
+Action: You can select multiple products published from the same portal but you can't select products published from different portals. For more information, see [Centralized API business hub enterprise \[Classic Design\]](APIM-Initial-Setup/centralized-api-business-hub-enterprise-classic-design-33b706f.md) and [Create an Application \[Classic Design\]](create-an-application-classic-design-7b4e71b.md).
 
 </td>
 <td valign="top">
@@ -1185,7 +1185,7 @@ Discover REST and SOAP APIs
 </td>
 <td valign="top">
 
-Discover REST and SOAP APIs along with OData APIs while creating a proxy for Integration flow. For more information, see [Creating an API from SAP Cloud Integration API Provider](APIM-Development/creating-an-api-from-sap-cloud-integration-api-provider-aefbd74.md).
+Discover REST and SOAP APIs along with OData APIs while creating a proxy for Integration flow. For more information, see [Creating an API from SAP Cloud Integration API Provider](creating-an-api-from-sap-cloud-integration-api-provider-aefbd74.md).
 
 </td>
 <td valign="top">

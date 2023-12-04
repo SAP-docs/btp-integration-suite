@@ -114,7 +114,7 @@ Based on this setup of keys and OAuth credentials, the communication is establis
 **Related Information**  
 
 
-[Using Custom IDP with SAP Cloud Integration](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c59610d483974fcda631af4a2aae586b.html "") :arrow_upper_right:
+[Using Custom IDP with SAP Cloud Integration](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/c59610d483974fcda631af4a2aae586b.html "") :arrow_upper_right:
 
 [Basic Authentication with clientId and clientsecret for Integration Flow Processing](basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md "Use this procedure to connect a sender system to SAP Cloud Integration.")
 

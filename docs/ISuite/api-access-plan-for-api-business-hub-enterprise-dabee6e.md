@@ -89,9 +89,9 @@ Create a service instance using API Access plan.
 5.  Click *Next*.
 6.  In the section *Specify parameters*, provide the details as mentioned below, based on the role you require.
 
-    The roles that support API access in the API business hub enterprise are `AuthGroup.API.Admin` and `AuthGroup.API.ApplicationDeveloper`.
+    The roles that support API access in the API business hub enterprise are `AuthGroup.API.Admin`, `AuthGroup.Content.Admin`, and `AuthGroup.API.ApplicationDeveloper`.
 
-    Create a service instance with the `AuthGroup.API.Admin` role to access the API business hub enterprise APIs \(applications and attributes, API packages, API proxies and products, app developer and metering\), and perform operations like create, update, and delete on various API business hub enterprise entities as specified in the [API Business Hub](https://api.sap.com/package/APIMgmt?section=Artifacts).
+    Create a service instance with the `AuthGroup.API.Admin` role to access the API business hub enterprise APIs \(applications and attributes, API packages, API proxies and products, app developer and metering\), and perform operations like create, update, and delete on various API business hub enterprise entities as specified in the [Business Accelerator Hub](https://api.sap.com/package/APIMgmt?section=Artifacts).
 
     ```
     
@@ -101,7 +101,16 @@ Create a service instance using API Access plan.
     
     ```
 
-    Create a service instance with the `AuthGroup.API.ApplicationDeveloper` role to access the API business hub enterprise APIs \(applications, API packages, and API proxies and products\), and perform operations like create, update, and delete on variousAPI business hub enterprise entities as specified in the [API Business Hub](https://api.sap.com/package/APIMgmt?section=Artifacts).
+    Create a service instance with the `AuthGroup.Content.Admin` role to manage the domain categories in API business hub enterprise and add the related products into relevant categories.
+
+    ```
+    {
+        "role": "AuthGroup.Content.Admin"
+    }
+    
+    ```
+
+    Create a service instance with the `AuthGroup.API.ApplicationDeveloper` role to access the API business hub enterprise APIs \(applications, API packages, and API proxies and products\), and perform operations like create, update, and delete on variousAPI business hub enterprise entities as specified in the [Business Accelerator Hub](https://api.sap.com/package/APIMgmt?section=Artifacts).
 
     ```
     

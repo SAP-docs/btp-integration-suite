@@ -10,6 +10,9 @@ Component metadata specifies the attributes of sender and receiver adapters used
 
 This set of metadata allows you to define components details.
 
+> ### Note:  
+> If you'd like to use the adapter on an Edge Integration Cell runtime, you have to add additional metadata as explained under [Additional Metadata to Support Edge Integration Cell](additional-metadata-to-support-edge-integration-cell-f87349e.md).
+
 **Component Metadata**
 
 

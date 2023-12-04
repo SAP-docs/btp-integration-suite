@@ -5,7 +5,7 @@
 > ### Note:  
 > -   If you are configuring the sender channel to receive asynchronous AS2 MDN, select the AS2 MDN message protocol.
 > -   If you want to call the AS2 MDN sender channel, use http://<host\>:<port\>/as2/mdn .
-> -   You must activate [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) to use this adapter.
+> -   You must activate [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) to use this adapter.
 
 Once you have created a sender channel and selected the AS2 MDN adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
@@ -91,7 +91,7 @@ The default value is `ESBMessaging.send`. This role authorizes a sender system t
 > ### Caution:  
 > The role name must not contain any umlaut characters \(for example, `ä`\).
 
-For more information on user roles, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
+For more information on user roles, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
 
 </td>
 </tr>

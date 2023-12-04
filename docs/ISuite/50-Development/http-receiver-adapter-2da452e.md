@@ -484,64 +484,6 @@ If you're using older versions of the adapter where you don't see the option, de
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-*Retry Failed Requests*
-
-\(Only if *Throw Exception on Failure* is enabled\)
-
-</td>
-<td valign="top">
-
-By default, the option is disabled. This option lets the integration flow to retry requests to the target system, in case of failed HTTP requests.
-
-In case of failed HTTP requests where the target system itself provides Retry-After information, the configurations in the HTTP receiver adapter is overridden with the values coming from the target system.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*HTTP Error Response Codes*
-
-\(Only if *Retry Failed Requests* is enabled\)
-
-</td>
-<td valign="top">
-
-Provide a comma separated list of HTTP error response codes for which the integration flow must retry requests to the target system.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Retry Interval \(in seconds\)*
-
-\(Only if *Retry Failed Requests* is enabled\)
-
-</td>
-<td valign="top">
-
-Select the duration, in seconds, for which the integration flow must wait before retrying a request. The maximum interval between two rety attempts you can configure is 60 seconds.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Retry Iterations*
-
-\(Only if *Retry Failed Requests* is enabled\)
-
-</td>
-<td valign="top">
-
-Select the number of retry attempts that the integration flow must make in case of failed HTTP requests to the target system. The maximum number of retry attempts you can configure is three.
-
-</td>
-</tr>
 </table>
 
 **Header Details**
@@ -580,8 +522,6 @@ The adapter doesn't support regular expressions like `SAP*`.
 All Camel-specific headers \(that starts with `camel` or `org.apache.camel`\) and the below listed HTTP protocol headers are excluded even if you specify them.
 
 -   content-length
-
--   content-type
 
 -   host
 

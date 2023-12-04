@@ -2,7 +2,7 @@
 
 # Surge Protection
 
-The surge protection policy protects the backend against sudden traffic spikes.
+The surge protection policy is designed to protect against traffic surges by controlling the rate at which requests are processed by an API during runtime. This policy acts as a safeguard, reducing the likelihood of downtime and performance issues.
 
 Let us consider a use case where an API admin or a developer wants to allow only 2000 calls per minute from the clients. To do this, the admin/developer needs to configure the surge protection policy on the request flow to restrict the sudden surge in traffic irrespective of the clients. Unlike the quota policy, the surge protection policy is not client specific.
 

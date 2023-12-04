@@ -21,7 +21,7 @@ The mail receiver adapter opens a connection to a mail server and sends messages
 ![](images/Mail_Receiver_8c3073e.png)
 
 > ### Note:  
-> For an example of how to configure the mail receiver adapter in a dedicated demo integration scenario, check out the following topic: [Create the Mail Receiver Channel](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a6966fd46aef4e61ada1dcd11dadfc8b.html "Add a Mail receiver channel to enable the integration flow to send messages to an e-mail account.") :arrow_upper_right:.
+> For an example of how to configure the mail receiver adapter in a dedicated demo integration scenario, check out the following topic: [Create the Mail Receiver Channel](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/a6966fd46aef4e61ada1dcd11dadfc8b.html "Add a Mail receiver channel to enable the integration flow to send messages to an e-mail account.") :arrow_upper_right:.
 > 
 > If you want to learn how to use the mail receiver adapter to send signed and/or encrypted mails, this blog is for you: [Cloud Integration - Sending Signed and/or Encrypted Mails in Mail Receiver Adapter](https://blogs.sap.com/2019/04/09/cloud-integration-sending-signed-andor-encrypted-mails-in-mail-receiver-adapter/)
 

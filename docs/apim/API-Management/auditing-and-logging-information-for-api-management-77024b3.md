@@ -68,7 +68,7 @@ Example:
 </td>
 <td valign="top">
 
-[Different Methods of Creating an API](APIM-Development/different-methods-of-creating-an-api-4ac0431.md) 
+[Different Methods of Creating an API](different-methods-of-creating-an-api-4ac0431.md) 
 
 </td>
 </tr>
@@ -110,7 +110,7 @@ Example:
 </td>
 <td valign="top">
 
-[Edit an API Proxy](APIM-Development/edit-an-api-proxy-a64b952.md) 
+[Edit an API Proxy](edit-an-api-proxy-a64b952.md) 
 
 </td>
 </tr>
@@ -194,7 +194,7 @@ Example:
 </td>
 <td valign="top">
 
-[Create a Product](APIM-Development/create-a-product-d769622.md) 
+[Create a Product](create-a-product-d769622.md) 
 
 </td>
 </tr>
@@ -320,7 +320,7 @@ Example:
 </td>
 <td valign="top">
 
-[Create an Application \[Classic Design\]](APIM-Development/create-an-application-classic-design-7b4e71b.md)
+[Create an Application \[Classic Design\]](create-an-application-classic-design-7b4e71b.md)
 
 </td>
 </tr>
@@ -446,7 +446,7 @@ Example:
 </td>
 <td valign="top">
 
-[Create an API Provider](APIM-Development/create-an-api-provider-6b263e2.md) 
+[Create an API Provider](create-an-api-provider-6b263e2.md) 
 
 </td>
 </tr>
@@ -572,7 +572,7 @@ Example:
 </td>
 <td valign="top">
 
-[Onboard an Application Developer](APIM-Development/onboard-an-application-developer-786d107.md) 
+[Onboard an Application Developer](onboard-an-application-developer-786d107.md) 
 
 </td>
 </tr>
@@ -1164,7 +1164,7 @@ Example:
 </td>
 <td valign="top">
 
-[Key Value Map](APIM-Development/key-value-map-3722a39.md) 
+[Key Value Map](key-value-map-3722a39.md) 
 
 </td>
 </tr>
@@ -1290,7 +1290,7 @@ Example:
 </td>
 <td valign="top">
 
-[Create a Key Value Map](APIM-Development/create-a-key-value-map-90d8d41.md) 
+[Create a Key Value Map](create-a-key-value-map-90d8d41.md) 
 
 </td>
 </tr>
@@ -1332,7 +1332,7 @@ Example:
 </td>
 <td valign="top">
 
-[Update a Key Value Map](APIM-Development/update-a-key-value-map-4961431.md) 
+[Update a Key Value Map](update-a-key-value-map-4961431.md) 
 
 </td>
 </tr>
@@ -1374,7 +1374,7 @@ Example:
 </td>
 <td valign="top">
 
-[Delete a Key Value Map](APIM-Development/delete-a-key-value-map-24fbb01.md) 
+[Delete a Key Value Map](delete-a-key-value-map-24fbb01.md) 
 
 </td>
 </tr>
@@ -1543,7 +1543,7 @@ Example:
 </td>
 <td valign="top">
 
-[Manage Certificates](APIM-Development/manage-certificates-c665875.md) 
+[Manage Certificates](manage-certificates-c665875.md) 
 
 </td>
 </tr>

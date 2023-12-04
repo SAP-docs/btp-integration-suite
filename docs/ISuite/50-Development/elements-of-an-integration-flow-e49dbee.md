@@ -18,7 +18,7 @@ In detail, you define the following aspects in an integration flow:
 
 The following figure provides a simplified and generalized representation of an integration flow.
 
-![](images/HCI_Integration_Flow_Elements_f77edf2.png)
+![Linear graphic descripion from left to right: Sender tile with a Channel arrow to Step 1 which is inside the Integration Flow box. Step 1 is then linked by an arrow to Step 2 which is equally is linked to Step 3. Step 3 branch off three Channel arows out of the Integration Flow box. Each of the arrows has a Receiver tile at the end.](images/HCI_Integration_Flow_Elements_f77edf2.png)
 
 
 

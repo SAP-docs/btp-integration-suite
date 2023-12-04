@@ -2,6 +2,8 @@
 
 # Configure the API business hub enterprise \[Classic Design\]
 
+**The classic design will be deprecated soon. The new design of the API business hub enterprise will be set as your default design from March 2023. However, you’ll still be able to toggle between the new and old design until June 2024.**
+
 You can configure the API business hub enterprise to personalize it for your organization.
 
 > ### Note:  

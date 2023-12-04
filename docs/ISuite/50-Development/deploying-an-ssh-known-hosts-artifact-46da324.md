@@ -14,13 +14,23 @@ The known hosts file contains the public keys and addresses of the trusted SFTP 
 
 ## Procedure
 
-1.  Click the tile in the *Manage Security Material* section.
+1.  Choose *Monitor* \> *Integrations and APIs*.
 
-2.  Choose *Upload* \> *Known Hosts \(SSH\)*.
+2.  Select the target runtime \(*Runtime* parameter\).
 
-3.  Browse to the known hosts file on your computer.
+    This information is only relevant for Edge Integration Cell runtime.
 
-4.  Choose *Deploy*.
+    For more information on how to manage security artifacts for Edge Integration Cell, see [Manage Security for Edge Integration Cell](../manage-security-for-edge-integration-cell-1783cf8.md).
+
+3.  Click the *Security Material* tile in the *Manage Security* section.
+
+4.  Choose *Add*.
+
+5.  As *Type*, select *Known Hosts \(SSH\)*.
+
+6.  Browse to the known hosts file on your computer.
+
+7.  Choose *Deploy*.
 
 
 
@@ -28,6 +38,24 @@ The known hosts file contains the public keys and addresses of the trusted SFTP 
 ## Results
 
 When you refresh the *Manage Security Material* page, the new artifact is displayed in the table.
+
+> ### Note:  
+> Note the following when you have activated Edge Integration Cell:
+> 
+> -   You can assign one *Known Hosts \(SSH\)* artifact exactly to one runtime.
+> 
+> -   Apply the following rules for the artifact name:
+> 
+>     -   The maximum number of characters is 30.
+> 
+>     -   Use only lower-case ASCII alphanumeric characters.
+> 
+>     -   The artifact name must start and end with a letter.
+> 
+> 
+> -   If you leave the *Name* parameter empty, the system sets the artifact name to *known.hosts*.
+> 
+>     If you don't leave the *Name* parameter empty, the system sets the name to *known.hosts-<custom name\>*. In other words, the prefix *known.hosts-* is added by the system.
 
 **Related Information**  
 

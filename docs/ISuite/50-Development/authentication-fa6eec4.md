@@ -2,7 +2,7 @@
 
 # Authentication
 
-Different API Proxies may have various authentication mechanisms. The authentication mechanisms that are currently supported are Basic authentication, Client Certificate, and oAuth.
+Different API may have various authentication mechanisms. The authentication mechanisms that are currently supported are Basic authentication, Client Certificate, and oAuth.
 
 **Policy Settings**
 
@@ -48,9 +48,32 @@ Client Certificate – The user provides a digital certificate consisting of a p
 
 oAuth - Used in situations where third-party services are allowed to exchange your information without you having to give away your password.
 
+> ### Note:  
+> To execute the API with Authentication policy, configure the*Process Integration Runtime* instance, and access the endpoint using the client id/ secret or certificate from that instance.
+
+
+
 </td>
 </tr>
 </table>
+
+To create a *Process Integration Runtime* instance:
+
+1.  In SAP BTP cockpit, choose *Instances and Subscription*.
+
+2.  Fill in the details as shown in the screenshot below and choose *Create*:
+
+    ![](images/5c02dbf8b8e34d83bb728eaed1c940bc.xml)
+
+3.  Create a *Service Key* associated with the *Process Integration Runtime* service instance.
+
+    ![](images/1c63970786464884ad333952a107fc81.xml)
+
+    > ### Note:  
+    > You can also create a certificate-based service key.
+
+
+Now, if you execute the API, the Authentication policy should be able to successfully authenticate the request.
 
 **Related Information**  
 

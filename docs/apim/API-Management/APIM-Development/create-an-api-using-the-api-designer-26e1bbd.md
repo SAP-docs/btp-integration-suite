@@ -8,6 +8,9 @@ Model APIs in the Open API format that is available on the API portal.
 
 ## Prerequisites
 
+> ### Note:  
+> If you already have a subscription for Integration Suite, and looking for steps to create an API using the API designer, get redirected to the Integration Suite documentation by clicking [here](https://help.sap.com/docs/integration-suite/sap-integration-suite/create-api-from-api-designer?version=CLOUD&q=Create%20an%20API%20Using%20the%20API%20Designer).
+
 The *APIPortal.Administrator* role should be assigned to you.
 
 To build APIs, you must have the REST, OData, or SOAP URL of the service that you want to expose as an API.

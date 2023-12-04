@@ -13,7 +13,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
 > ### Note:  
 > Edge Integration Cell exposes API and Integration Flow endpoints for access by clients. The URL to be used is defined by a Virtual Host. A Virtual Host holds all information required to handle \(m\)TLS handshakes, the actual domain name, TLS key, server, and Trust CA certificates. For Edge Integration Cell, a Default Virtual Host name has to be chosen. Additionally, a key pair needs to be provided, referenced via a Default Virtual Host Key Alias. Currently, a predefined list of Trust CAs is supported.
 > 
-> The approach is comparable to the configuring custom domains approach for SAP Cloud Integration. Custom Domains are used if you don't wish to expose the default domain provided by SAP Cloud Integration. In such a scenario, you can construct custom domain names and TLS settings for a specific Cloud Integration instance. For more information, see [Configuring Custom Domains](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/7230b9ff41914cc0969223e6a020104b.html "Allows you to customize the default tenant URL or domain as per your needs and access the tenant using your own the domain.") :arrow_upper_right:.
+> The approach is comparable to the configuring custom domains approach for SAP Cloud Integration. Custom Domains are used if you don't wish to expose the default domain provided by SAP Cloud Integration. In such a scenario, you can construct custom domain names and TLS settings for a specific Cloud Integration instance. For more information, see [Configuring Custom Domains](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/7230b9ff41914cc0969223e6a020104b.html "Allows you to customize the default tenant URL or domain as per your needs and access the tenant using your own the domain.") :arrow_upper_right:.
 > 
 > For Edge Integration Cell, you define exactly your custom domain using the Default Virtual Host.
 
@@ -80,7 +80,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </td>
     <td valign="top">
     
-    Enter storage class for access mode `ReadWriteMany`.
+    Enter storage class for access mode `ReadWriteMany` and binding mode `Immediate`.
     
     </td>
     </tr>
@@ -149,7 +149,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    Event Broker Storage Class
+    Message Service Storage Class
     
     </td>
     <td valign="top">
@@ -165,17 +165,17 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    Event Broker Scaling Tier
+    Message Service Scaling Tier
     
     </td>
     <td valign="top">
     
-    Select Event Broker Scaling Tier.
+    Select Message Service Scaling Tier.
 
     For more information, see [3247839](https://me.sap.com/notes/3247839).
 
     > ### Note:  
-    > Choose the Event Broker Scaling Tier carefully, as it can't be changed after the initial deployment using the Edge LM UI.
+    > Choose the Message Service Scaling Tier carefully, as it can't be changed after the initial deployment using the Edge LM UI.
 
 
     

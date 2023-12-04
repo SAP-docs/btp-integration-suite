@@ -16,13 +16,18 @@ The JMS \(Java Message Service\) sender adapter enables asynchronous decoupling 
 > ### Note:  
 > Note that this adapter works with a message broker provided by SAP \(based on the SAP Event Mesh capability\). It does not support connectivity to any other, customer-provided message brokers. The usage of this adapter is supported by all SAP Integration Suite editions, except the basic edition \(see SAP note [2903776](https://me.sap.com/notes/2903776)\).
 
-To understand the concept of asynchronous decoupling, assume that a sender sends a message to SAP Cloud Integration \(inbound processing\). If there's an error in outbound processing \(for example, a receiver can't be reached temporarily\), the middleware \(SAP Cloud Integration\) retries message processing independently. There's no need that the sender triggers a reprocessing of the message as soon as the error situation has been solved. The sender relies on the middleware to do that. To support this scenario, the message received from the sender is stored in a queue \(using the JMS receiver adapter\). Outbound processing is modeled in an integration flow that initially consumes the message from the queue \(using the JMS sender adapter\). The outbound integration flow retries the message from the queue as long as the error situation lasts.
+To understand the concept of asynchronous decoupling, assume that a sender sends a message to SAP Integration Suite \(inbound processing\). If there's an error in outbound processing \(for example, a receiver can't be reached temporarily\), the middleware \(SAP Integration Suite\) retries message processing independently. There's no need that the sender triggers a reprocessing of the message as soon as the error situation has been solved. The sender relies on the middleware to do that. To support this scenario, the message received from the sender is stored in a queue \(using the JMS receiver adapter\). Outbound processing is modeled in an integration flow that initially consumes the message from the queue \(using the JMS sender adapter\). The outbound integration flow retries the message from the queue as long as the error situation lasts.
 
 The following figure shows the involved components.
 
 ![](images/JMS_Sender_Adapter_6348733.png)
 
 Assuming that you have designed an integration flow with a JMS sender adapter. On deployment of the integration flow, the JMS queue \(as specified in the adapter\) is created and the tenant opens a consumer connection to the message broker. The message broker pushes messages through this connection.
+
+> ### Note:  
+> When you define the queue name with the *Queue Name* parameter of the JMS receiver adapter, the queue is created automatically on deployment of the integration flow that uses the adapter. This is **not** the case when you define the queue name dynamically based on a header or a property.
+> 
+> Therefore, it is recommended to first deploy all integration flows with the JMS sender adapters that are related to your scenario. After this step, all required queues are in place when the JMS receiver adapter comes into play and dynamically determines the related queue names.
 
 > ### Note:  
 > Certain constraints apply with regard to the number and capacity of queues involved, as well as for the headers and exchange properties defined in the integration flow before the message is saved to the queue. See [JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md)
@@ -38,7 +43,7 @@ Assuming that you have designed an integration flow with a JMS sender adapter. O
 > 
 >     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
-Once you've created a sender channel and selected the JMS Sender Adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
+Once you've created a sender channel and selected the JMS sender adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 Select the *General* tab and provide values in the fields as follows.
 
@@ -213,7 +218,7 @@ For more information, check out the following blog: [Cloud Integration – Confi
 
 [Message Locks](message-locks-bce9ae0.md "This section allows you to display and manage lock entries that are created (in the in-progress repository) to avoid the same message being processed several times in parallel (for example, by different runtime nodes).")
 
-[JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md "The JMS messaging instance that is used in asynchronous messaging scenarios with the JMS, AS2, AS4, or XI adapter has limited resources.")
+[JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md "The JMS messaging instance has limited resources. You can increase the capacity of these resources to a certain extend.")
 
 [Cloud Integration - Configure Dead Letter Handling in JMS Adapter](https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/)
 

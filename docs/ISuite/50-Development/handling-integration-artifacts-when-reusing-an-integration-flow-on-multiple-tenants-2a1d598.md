@@ -232,7 +232,7 @@ Certificate-to-User Mapping
 
 Newly create certificate-to-user mapping on target tenant. You can reuse an existing certificate \(by manual upload from your computer\). Make sure that the role specified in the related integration flow \(sender adapter\) is defined on the target tenant and assigned to the user.
 
-More information: [Managing Certificate-to-User Mappings, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/88ea2e5336d445f783c194c8d2780d35.html "The Manage Security area provides an overview of security-related artifacts. It also provides access to all certificate-to-user mappings defined for the tenant.") :arrow_upper_right:
+More information: [Managing Certificate-to-User Mappings, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/88ea2e5336d445f783c194c8d2780d35.html "The Manage Security area provides an overview of security-related artifacts. It also provides access to all certificate-to-user mappings defined for the tenant.") :arrow_upper_right:
 
 </td>
 </tr>

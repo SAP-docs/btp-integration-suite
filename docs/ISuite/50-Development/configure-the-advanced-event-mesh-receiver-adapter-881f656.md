@@ -15,14 +15,10 @@ The *General* tab displays general information about the adapter itself.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Description
 
 *Name* 
 
-
-
 </td>
 <td valign="top">
 
 AdvancedEventMesh
-
-
 
 </td>
 </tr>
@@ -47,14 +39,10 @@ AdvancedEventMesh
 
 *Adapter Type* 
 
-
-
 </td>
 <td valign="top">
 
 AdvancedEventMesh
-
-
 
 </td>
 </tr>
@@ -63,14 +51,10 @@ AdvancedEventMesh
 
 *Transport Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 TCP
-
-
 
 </td>
 </tr>
@@ -79,14 +63,10 @@ TCP
 
 *Message Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 SMF
-
-
 
 </td>
 </tr>
@@ -103,14 +83,10 @@ Switch to the *Connection* tab to configure the adapter's connection details.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -119,14 +95,10 @@ Description
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the host name of the event broker.
-
-
 
 </td>
 </tr>
@@ -135,14 +107,10 @@ Enter the host name of the event broker.
 
 *Message VPN* 
 
-
-
 </td>
 <td valign="top">
 
 Enter name of the Message VPN to attempt to join when connecting to the event broker.
-
-
 
 </td>
 </tr>
@@ -151,14 +119,10 @@ Enter name of the Message VPN to attempt to join when connecting to the event br
 
 *Username* 
 
-
-
 </td>
 <td valign="top">
 
 The client username used for authentication with the event broker.
-
-
 
 </td>
 </tr>
@@ -166,8 +130,6 @@ The client username used for authentication with the event broker.
 <td valign="top">
 
 *Authentication Type* 
-
-
 
 </td>
 <td valign="top">
@@ -188,14 +150,10 @@ The authentication mechanism to be used while connecting to advanced event mesh.
 
 *Password Secure Alias \(Only when using \`Basic\` authentication\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias which defines the client password used for authentication with the event broker, stored as Secure Parameter.
-
-
 
 </td>
 </tr>
@@ -204,14 +162,10 @@ The alias which defines the client password used for authentication with the eve
 
 *Keystore Alias \(Only when using \`Client Certificate\` authentication\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of the private Key Pair in the Integration Suite's Keystore.
-
-
 
 </td>
 </tr>
@@ -222,14 +176,10 @@ The alias of the private Key Pair in the Integration Suite's Keystore.
 
 \(Only if for *Truststore Alias \(Only when using \`Client Certificate\` authentication\)*
 
-
-
 </td>
 <td valign="top">
 
 The alias of the Certificate in the Integration Suite's Keystore. This is optional and maybe necessary only if event broker host certificate requires to be trusted or not recognized by the JRE.
-
-
 
 </td>
 </tr>
@@ -237,8 +187,6 @@ The alias of the Certificate in the Integration Suite's Keystore. This is option
 <td valign="top">
 
 *OAuth2 Credential Type \(Only when using \`OAuth2\` authentication\)* 
-
-
 
 </td>
 <td valign="top">
@@ -261,14 +209,10 @@ The type of OAuth2 credential type to be used. The available options are:
 
 *Access Token Fetch/Refresh Interval \(in secs\) \(Only when using \`OAuth2\` authentication\)* 
 
-
-
 </td>
 <td valign="top">
 
 The interval in seconds for fetching the access token from the respective Integration Suite's credential store when OAuth2 credential type is *Client Credentials* or *Authorization Code*. When *OAuth2 - Custom* type is selected, it is the interval at which the token is refreshed. By default, the value is 300 secs.
-
-
 
 </td>
 </tr>
@@ -277,14 +221,10 @@ The interval in seconds for fetching the access token from the respective Integr
 
 *OAuth2 Client Credentials Credential Name \(Only when using \`OAuth2\` authentication and \`OAuth2 Client Credentials\` OAuth2 credential type\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of the deployed OAuth2 Client Credentials artifact in the Integrations Suite's Credential Store. See [Deploying an OAuth2 Client Credentials](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/deploying-oauth2-client-credentials-artifact) 
-
-
 
 </td>
 </tr>
@@ -293,14 +233,10 @@ The alias of the deployed OAuth2 Client Credentials artifact in the Integrations
 
 *OAUTH2 Access Token Secure Alias \(Only when using \`OAuth2\` authentication and \`OAuth2 - Custom\` OAuth2 credential type\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of OAuth2 Access token, stored as Secure Parameter.
-
-
 
 </td>
 </tr>
@@ -309,14 +245,10 @@ The alias of OAuth2 Access token, stored as Secure Parameter.
 
 *OAUTH2 Refresh Token Secure Alias \(Only when using \`OAuth2\` authentication and \`OAuth2 - Custom\` OAuth2 credential type\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of the OAuth2 Refresh token, stored as Secure Parameter.
-
-
 
 </td>
 </tr>
@@ -325,14 +257,10 @@ The alias of the OAuth2 Refresh token, stored as Secure Parameter.
 
 *OAUTH2 Client ID Secure Alias \(Only when using \`OAuth2\` authentication and \`OAuth2 - Custom\` OAuth2 credential type\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of the OAuth2 Client ID, stored as Secure Parameter.
-
-
 
 </td>
 </tr>
@@ -341,14 +269,10 @@ The alias of the OAuth2 Client ID, stored as Secure Parameter.
 
 *OAUTH2 Refresh Token URL Secure Alias \(Only when using \`OAuth2\` authentication and \`OAuth2 - Custom\` OAuth2 credential type\)* 
 
-
-
 </td>
 <td valign="top">
 
 The alias of the OAuth2 Refresh token URL, stored as Secure Parameter.
-
-
 
 </td>
 </tr>
@@ -356,8 +280,6 @@ The alias of the OAuth2 Refresh token URL, stored as Secure Parameter.
 <td valign="top">
 
 *JCSMP Properties* 
-
-
 
 </td>
 <td valign="top">
@@ -397,14 +319,10 @@ Switch to the *Processing* tab to configure the adapter's message processing det
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -412,8 +330,6 @@ Description
 <td valign="top">
 
 *Delivery Mode* 
-
-
 
 </td>
 <td valign="top">
@@ -433,8 +349,6 @@ The delivery mode for the message being published to the broker. The available o
 <td valign="top">
 
 *Endpoint Type* 
-
-
 
 </td>
 <td valign="top">
@@ -457,8 +371,6 @@ The endpoint/destination type for the message being published. The available opt
 
 \(Only if for *Destination Type* the option *Exchange* is selected\)
 
-
-
 </td>
 <td valign="top">
 
@@ -475,8 +387,6 @@ The name of the endpoint/destination for the message being published. It can the
 <td valign="top">
 
 *Message Type* 
-
-
 
 </td>
 <td valign="top">
@@ -501,14 +411,10 @@ The message type to be used for publishing the message to the broker. The availa
 
 *Synchronous Request Processing Details* 
 
-
-
 </td>
 <td valign="top">
 
 Enable if this is a Request in the Adapter Request/Reply pattern. This will send a Request to the configured Destination, set the ReplyToDestination and CorrelationId, and synchronously wait for a Reply for the duration of the *Reply Timeout\(ms\)* property.
-
-
 
 </td>
 </tr>
@@ -517,14 +423,10 @@ Enable if this is a Request in the Adapter Request/Reply pattern. This will send
 
 *Reply Timeout \(ms\) \(Only when Convert Publish Into Synchronous Requestor? is selected\)* 
 
-
-
 </td>
 <td valign="top">
 
 The timeout for Request-Reply Pattern.
-
-
 
 </td>
 </tr>
@@ -539,14 +441,10 @@ The timeout for Request-Reply Pattern.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -555,14 +453,10 @@ Description
 
 *Time To Live \(ms\)* 
 
-
-
 </td>
 <td valign="top">
 
 The number of milliseconds before the message is discarded or moved to a Dead Message Queue. The message is set to never expire when this is left blank. Explicitly setting this to 0 resets message expiration to 0. Leaving it blank will ensure the Exchange Header is pass-through.
-
-
 
 </td>
 </tr>
@@ -571,14 +465,10 @@ The number of milliseconds before the message is discarded or moved to a Dead Me
 
 *Is DMQ Eligible?* 
 
-
-
 </td>
 <td valign="top">
 
 Set the message to be eligible for moving to a Dead Message Queue. Select *None* if you would like to use Exchange Header as pass-through.
-
-
 
 </td>
 </tr>
@@ -587,14 +477,10 @@ Set the message to be eligible for moving to a Dead Message Queue. Select *None*
 
 *Is Eliding Eligible?* 
 
-
-
 </td>
 <td valign="top">
 
 Sets whether the message is eligible for eliding. Select *None* if you would like to use Exchange Header as pass-through.
-
-
 
 </td>
 </tr>
@@ -603,14 +489,10 @@ Sets whether the message is eligible for eliding. Select *None* if you would lik
 
 *Priority* 
 
-
-
 </td>
 <td valign="top">
 
 The valid priority value range is 0-255 with 0 as the lowest priority and 255 as the highest. Leaving it blank will ensure the Exchange Header is pass-through.
-
-
 
 </td>
 </tr>
@@ -619,14 +501,10 @@ The valid priority value range is 0-255 with 0 as the lowest priority and 255 as
 
 *Sender Timestamp \(ms\)* 
 
-
-
 </td>
 <td valign="top">
 
 Allows the application to set the send timestamp overriding the API's generated value. Value is in milliseconds, from midnight, January 1, 1970 UTC. Leaving it blank will ensure the Exchange Header is pass-through.
-
-
 
 </td>
 </tr>
@@ -635,14 +513,10 @@ Allows the application to set the send timestamp overriding the API's generated 
 
 *Sequence Number* 
 
-
-
 </td>
 <td valign="top">
 
 Sets the sequence number for the message being published. If sequence number generation is enabled, this value overrides the generated value. This field can be set automatically during message publishing, but existing values are not overwritten if set, as when a message is sent multiple times. Leaving it blank will ensure the Exchange Header is pass-through.
-
-
 
 </td>
 </tr>
@@ -651,14 +525,10 @@ Sets the sequence number for the message being published. If sequence number gen
 
 *Application Message ID* 
 
-
-
 </td>
 <td valign="top">
 
 Sets the application message ID \(a string for an application-specific message identifier\).This value can be defined dynamically by using the following expressions: \`$\{header.headerName\}\` or \`$\{property.propertyName\}\`. Leaving it blank will ensure the Exchange Header is pass-through.
-
-
 
 </td>
 </tr>
@@ -667,14 +537,10 @@ Sets the application message ID \(a string for an application-specific message i
 
 *Application Message Type* 
 
-
-
 </td>
 <td valign="top">
 
 Sets the application message-type. <br/\><br/\>This value can be defined dynamically by using the following expressions: \`$\{header.headerName\}\` or \`$\{property.propertyName\}\`. Leaving it blank will ensure the Exchange Header is pass-through.
-
-
 
 </td>
 </tr>
@@ -683,14 +549,10 @@ Sets the application message-type. <br/\><br/\>This value can be defined dynamic
 
 *Sender ID* 
 
-
-
 </td>
 <td valign="top">
 
 Sets the Sender Id for the message to be published.This value can be defined dynamically by using the following expressions: \`$\{header.headerName\}\` or \`$\{property.propertyName\}\`. Leaving it blank will ensure the Exchange Header is pass-through.
-
-
 
 </td>
 </tr>
@@ -699,14 +561,10 @@ Sets the Sender Id for the message to be published.This value can be defined dyn
 
 *Class Of Service* 
 
-
-
 </td>
 <td valign="top">
 
 Sets the Class of Service \(CoS\) value for message to be published. Leaving it blank will ensure the Exchange Header is pass-through.
-
-
 
 </td>
 </tr>
@@ -726,14 +584,10 @@ Sets the Class of Service \(CoS\) value for message to be published. Leaving it 
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -742,14 +596,10 @@ Description
 
 *Is Reply?* 
 
-
-
 </td>
 <td valign="top">
 
 Specify if this is a reply message in a Request-Reply messaging pattern, when the Receiver is used as a Replier. Select 'None' if you would like to use Exchange Header as pass-through.
-
-
 
 </td>
 </tr>
@@ -758,14 +608,10 @@ Specify if this is a reply message in a Request-Reply messaging pattern, when th
 
 *ReplyTo Destination Name* 
 
-
-
 </td>
 <td valign="top">
 
 Use this to set the reply-to Destination Name on the message being published to the broker, in a Request-Reply messaging pattern. This value can be defined dynamically by using the following expressions: \`$\{header.headerName\}\` or \`$\{property.propertyName\}\`. Leaving it blank will ensure the Exchange Header is pass-through.
-
-
 
 </td>
 </tr>
@@ -773,8 +619,6 @@ Use this to set the reply-to Destination Name on the message being published to 
 <td valign="top">
 
 *ReplyTo Endpoint Type* 
-
-
 
 </td>
 <td valign="top">
@@ -788,8 +632,6 @@ Use this to set the reply-to Endpoint type on the message being published to the
 
 Select *None* if you would like to use Exchange Header as pass-through.
 
-
-
 </td>
 </tr>
 <tr>
@@ -797,14 +639,10 @@ Select *None* if you would like to use Exchange Header as pass-through.
 
 *Correlation ID* 
 
-
-
 </td>
 <td valign="top">
 
 Sets the correlation ID for Request-Reply messaging. This value can be defined dynamically by using the following expressions: \`$\{header.headerName\}\` or \`$\{property.propertyName\}\`. The correlation ID is used for correlating a request to a reply. Leaving it blank will ensure the Exchange Header is pass-through.
-
-
 
 </td>
 </tr>
@@ -823,14 +661,10 @@ Sets the correlation ID for Request-Reply messaging. This value can be defined d
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -839,14 +673,10 @@ Description
 
 *Key* 
 
-
-
 </td>
 <td valign="top">
 
 The key/name of the User Property.
-
-
 
 </td>
 </tr>
@@ -855,14 +685,10 @@ The key/name of the User Property.
 
 *Value* 
 
-
-
 </td>
 <td valign="top">
 
 The value of the respective User Property's key/name. The value can be defined dynamically by using the following expressions: \`$\{header.headerName\}\` or \`$\{property.propertyName\}\`.
-
-
 
 </td>
 </tr>

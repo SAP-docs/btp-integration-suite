@@ -229,7 +229,7 @@ To restrict access via access policies, proceed as follows.
 
 6.  To provide users access to artifacts referenced in access policies, you have to follow the steps described in:
 
-    -   [Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right: or
+    -   [Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right: or
 
     -   [Managing Access Policies](managing-access-policies-7db3c87.md)
 

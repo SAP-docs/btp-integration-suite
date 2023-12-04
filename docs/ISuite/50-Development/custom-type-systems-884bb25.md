@@ -4,17 +4,15 @@
 
 # Custom Type Systems
 
-The library of custom type systems allows you to upload custom messages and custom IDocs – this enables you to create MIGs and MAGs based on your own message structures. Use cases for this could be proprietary messages, standard messages extended by you and messages from B2B standards not available in the system. With this feature, you can:
+The library of custom type systems allows you to upload custom messages, IDocs and SOA messages – this enables you to create MIGs and MAGs based on your own message structures. Use cases for this could be proprietary messages, standard messages extended by you and messages from B2B standards not available in the system. Within each custom type system, you can:
 
--   Upload custom interface xsd files
+-   Create custom messages based on xsd and wsdl files
 
--   Upload custom IDocs
 -   Create MIG and MAG
 -   Customize your MIG
 -   View the list of your custom messages
--   View the list of your custom IDocs
 
-To upload and use custom messages or custom IDocs, you need to have a custom type system. Follow the procedure given below to do the same.
+To upload and use custom messages, you need to have a custom type system. Follow the procedure given below to do the same.
 
 
 
@@ -27,7 +25,7 @@ To upload and use custom messages or custom IDocs, you need to have a custom typ
 2.  Choose *Add* to create a custom type system.
 
     > ### Note:  
-    > Currently the application supports only one custom type system each for custom messages and IDocs.
+    > Currently the application supports only one custom type system each for custom messages.
 
 3.  Choose and open the type system. The *Overview* tab provides you with the following details :
     -   General information

@@ -12,7 +12,7 @@ Get to know the list of available B2B standards, the supported message types and
 
 ASC X12 \(also known as ANSI ASC X12\) is an Electronic Data Interchange \(EDI\) standard and the message types are created and maintained by the Accredited Standards Committee \(ASC\) X12.
 
-**Versions List \(36\)**
+**Versions List \(38\)**
 
 
 <table>
@@ -272,6 +272,20 @@ Version
 <td valign="top">
 
 008020
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+008030
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+008040
 
 </td>
 </tr>
@@ -9926,7 +9940,7 @@ The Odette delivery contains 26 different message types. For most of the message
 
 cXML is a streamlined protocol intended for consistent communication of business documents between procurement applications, e-commerce hubs and suppliers.
 
-**Versions List \(17\)**
+**Versions List \(23\)**
 
 
 <table>
@@ -10053,6 +10067,48 @@ Version
 <td valign="top">
 
 1.2.053
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.2.054
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.2.055
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.2.056
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.2.057
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.2.058
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.2.059
 
 </td>
 </tr>
@@ -16644,6 +16700,880 @@ ODETTE EDIFACT \(like many other UN/EDIFACT subsets\) distinguishes between two 
 • Message Guidelines: Specific Guidelines for countries and business processes which are defined in the context of the ODETTE EDIFACT subset.
 
 The application currently provides the ODETTE EDIFACT Message Standard upon which you can build your own Message Implementation Guidelines \(MIGs\).
+
+
+
+<a name="loioc339707982d141efa7c7849d033ca70d__section_unk_vpb_gzb"/>
+
+## Tradacoms
+
+GS1 TRADACOMS was the core UK message standard from the early days of EDI in the UK retail industry. It was widely used by retailers and wholesalers for EDI order and invoice processes between buyers and their mainly UK-based suppliers. However, since 1998, existing users have only received basic TRADACOMS support from GS1 UK for current applications and there has been no development of any new message types. Since 1 July 2017, GS1 UK has no longer provided any support for TRADACOMS. All users have been advised to adopt the recognized GS1 EDI standards EANCOM, GS1 XML and the GS1 UN/CEFACT XML profile.
+
+*Version*
+
+The Tradacoms Message Standard used a different versioning strategy. It did not publish complete release versions like other standards \(see e.g. UN/EDIFACT\). Tradacoms versioned all their messages separately.
+
+Due to this versioning strategy and the fact that no updates to the Tradacoms messages are expected, you will find all definitions together in one version called *All*.
+
+*Message Types*
+
+Tradacoms contains *Transmission Files* which are a predefined combination of single message types. For example, the *ORDHDR\_FILE* Transmission File is the combination of ORDHDR, ORDERS and ORDTLR message types. The Transmission Files are available under the *Messages* tab. The single message types \(such as ORDHDR, ORDERS, ORDTLR\) are not offered as they can’t be used separately by themselves.
+
+The Tradacoms delivery contains 25 different message types. For most of the message types only the newest version is available. For the message types *CORHDR\_FILE, DLCHDR\_FILE, INVFIL\_FILE, ORDHDR\_FILE, SRMHDR\_FILE*and *UTLHDR\_FILE* two versions are available. For example, *ORDHDR\_FILE:9* represents Version 9 of the Order file and *INVFIL\_FILE:8* represents Version 8 of the Invoice file.
+
+The following conventions are used to define Identifier and Version number of the Transmission Files by :
+
+-   The Header Message of the Transmission File determines the Identifier.
+
+    -   This convention was derived from the Tradacoms Codelist 16 and the use of these code values in envelope field STX \> APRF.
+
+
+-   Moreover,*\_FILE* was added to the Identifier to distinguish between the overall Transmission File and its Header Message.
+-   The Version of a Transmission File is consistently derived from the version of the Main Message.
+
+For example: The older transmission file for Order \(Order File\) consists of three single messages: header message *ORDHDR* \(Version 6\), main message *ORDERS* \(Version 8\) and trailer message *ORDTLR* \(Version 4\). Applying the rules mentioned above, this Order File will be *ORDHDR\_FILE:8 – Order File \(Version 8\)*.
+
+> ### Note:  
+> The identifiers and versions of the Transmission Files are not defined by Tradacoms standard \(by GS1 organization\) itself. Different users and data providers have applied different conventions due to which sometimes transmission files are named after the main message and sometimes versions of the transmission files are derived from the version of their respective header message. For example, the older Order File \(see above\) might also be called *ORDERS \(Version 8\)* or *ORDHDR \(Version 6\)*.
+
+**Message Types \(31\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Transmission Files
+
+</th>
+<th valign="top">
+
+Included Single Messages
+
+</th>
+<th valign="top">
+
+Remark
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+ACKHDR\_FILE: 4 - Acknowledgement File \(Version 4\)
+
+</td>
+<td valign="top">
+
+-   ACKHDR \(Version 4\)
+
+-   ACKMNT \(Version 4\)
+
+-   ACKTLR \(Version 4\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AVLHDR\_FILE: 4 - Availability File \(Version 4\)
+
+</td>
+<td valign="top">
+
+-   AVLHDR \(Version 4\)
+
+-   AVLDET \(Version 4\)
+
+-   AVLTLR \(Version 4\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CORHDR\_FILE: 4 - Complex Order File \(Version 4\)
+
+</td>
+<td valign="top">
+
+-   CORHDR \(Version 4\)
+
+-   CORDER \(Version 4\)
+
+-   CORTLR \(Version 4\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CORHDR\_FILE: 6 - Complex Order File \(Version 6\)
+
+</td>
+<td valign="top">
+
+-   CORHDR \(Version 6\)
+
+-   CORDER \(Version 6\)
+
+-   CORTLR \(Version 6\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CRAHDR\_FILE: 3 - Credit Advice File \(Version 3\)
+
+</td>
+<td valign="top">
+
+-   CRAHDR \(Version 3\)
+
+-   CRAINF \(Version 3\)
+
+-   CRATLR \(Version 3\)
+
+-   RSGRSG \(Version 2
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CREHDR\_FILE: 9 - Credit Note File \(Version 9\)
+
+</td>
+<td valign="top">
+
+-   CREHDR \(Version 9\)
+
+-   CREDIT \(Version 9\)
+
+-   VATTLR \(Version 9\)
+
+-   CRETLR \(Version 9\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CUSHDR\_FILE: 8 - Customer Information File \(Version 8\)
+
+</td>
+<td valign="top">
+
+-   CUSHDR \(Version 8\)
+
+-   CUSINF \(Version 8\)
+
+-   CUSTLR \(Version 8\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DELHDR\_FILE: 9 - Delivery File \(Version 9\)
+
+</td>
+<td valign="top">
+
+-   DELHDR \(Version 9\)
+
+-   DELIVR \(Version 9\)
+
+-   DELTLR \(Version 9\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DLCHDR\_FILE: 4 - Delivery Confirmation File \(Version 4\)
+
+</td>
+<td valign="top">
+
+-   DLCHDR \(Version 4\)
+
+-   DLCDET \(Version 4\)
+
+-   DLCTLR \(Version 4\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DLCHDR\_FILE: 5 - Delivery Confirmation File \(Version 5\)
+
+</td>
+<td valign="top">
+
+-   DLCHDR \(Version 5\)
+
+-   DLCDET \(Version 5\)
+
+-   DLCTLR \(Version 5\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DRAHDR\_FILE: 3 - Debit Advice File \(Version 3\)
+
+</td>
+<td valign="top">
+
+-   DRAHDR \(Version 3\)
+
+-   DRAINF \(Version 3\)
+
+-   DRATLR \(Version 3\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EXCHDR\_FILE: 3 - Exception Condition File \(Version 3\)
+
+</td>
+<td valign="top">
+
+-   EXCHDR \(Version 3\)
+
+-   EXCINF \(Version 3\)
+
+-   EXCTLR \(Version 3\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GENHDR\_FILE: 3 - General Communications File \(Version 3\)
+
+</td>
+<td valign="top">
+
+-   GENHDR \(Version 3\)
+
+-   GENRAL \(Version 3\)
+
+-   GENTLR \(Version 3\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INVFIL\_FILE: 8 - Invoice File \(Version 8\)
+
+</td>
+<td valign="top">
+
+-   INVFIL \(Version 6\)
+
+-   INVOIC \(Version 8\)
+
+-   VATTLR \(Version 6\)
+
+-   INVTLR \(Version 5\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+Also known as Version 6 based on version of header message INVFIL.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INVFIL\_FILE: 9 - Invoice File \(Version 9\)
+
+</td>
+<td valign="top">
+
+-   INVFIL \(Version 9\)
+
+-   INVOIC \(Version 9\)
+
+-   VATTLR \(Version 9\)
+
+-   INVTLR \(Version 9\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LPRHDR\_FILE: 2 - Location Planning Report File \(Version 2\)
+
+</td>
+<td valign="top">
+
+-   LPRHDR \(Version 2\)
+
+-   LPRDET \(Version 2\)
+
+-   LPRTLR \(Version 2\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ORDHDR\_FILE: 8 - Order File \(Version 8\)
+
+</td>
+<td valign="top">
+
+-   ORDHDR \(Version 6\)
+
+-   ORDERS \(Version 8\)
+
+-   ORDTLR \(Version 4\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+Also known as Version 6 based on version of header message ORDHDR.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ORDHDR\_FILE: 9 - Order File \(Version 9\)
+
+</td>
+<td valign="top">
+
+-   ORDHDR \(Version 9\)
+
+-   ORDERS \(Version 9\)
+
+-   ORDTLR \(Version 9\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PAYHDR\_FILE: 3 - Payment Order File \(Version 3\)
+
+</td>
+<td valign="top">
+
+-   PAYHDR \(Version 3\)
+
+-   PAYINF \(Version 3\)
+
+-   PAYTLR \(Version 3\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PICHDR\_FILE: 4 - Picking Instructions File \(Version 4\)
+
+</td>
+<td valign="top">
+
+-   PICHDR \(Version 4\)
+
+-   PICKER \(Version 4\)
+
+-   PICTLR \(Version 4\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PPRHDR\_FILE: 2 - Product Planning Report File \(Version 2\)
+
+</td>
+<td valign="top">
+
+-   PPRHDR \(Version 2\)
+
+-   PPRDET \(Version 2\)
+
+-   PPRTLR \(Version 2\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PRIHDR\_FILE: 8 - Price File \(Version 8\)
+
+</td>
+<td valign="top">
+
+-   PRIHDR \(Version 8\)
+
+-   PRIINF \(Version 8\)
+
+-   PRITLR \(Version 8\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PROHDR\_FILE: 8 - Product File \(Version 8\)
+
+</td>
+<td valign="top">
+
+-   PROHDR \(Version 8\)
+
+-   PROINF \(Version 8\)
+
+-   PROTLR \(Version 8\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SADHDR\_FILE: 3 - Stock Adjustment File \(Version 3\)
+
+</td>
+<td valign="top">
+
+-   SADHDR \(Version 3\)
+
+-   SADDET \(Version 3\)
+
+-   SADTLR \(Version 3\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SNPHDR\_FILE: 3 - Stock Snapshot File \(Version 3\)
+
+</td>
+<td valign="top">
+
+-   SNPHDR \(Version 3\)
+
+-   SNPSTS \(Version 3\)
+
+-   SNPTLR \(Version 3\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SRMHDR\_FILE: 7 - Statement/Remittance File \(Version 7\)
+
+</td>
+<td valign="top">
+
+-   SRMHDR \(Version 6\)
+
+-   SRMINF \(Version 7\)
+
+-   SRMTLR \(Version 4\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+Also known as Version 6 based on version of header message SRMHDR.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SRMHDR\_FILE: 9 - Statement/Remittance File \(Version 9\)
+
+</td>
+<td valign="top">
+
+-   SRMHDR \(Version 9\)
+
+-   SRMINF \(Version 9\)
+
+-   SRMTLR \(Version 9\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+UCNHDR\_FILE: 3 - Uplift Confirmation File \(Version 3\)
+
+</td>
+<td valign="top">
+
+-   UCNHDR \(Version 3\)
+
+-   UCNDET \(Version 3\)
+
+-   UCNTLR \(Version 3\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+UPLHDR\_FILE: 4 - Uplift Instruction File \(Version 4\)
+
+</td>
+<td valign="top">
+
+-   UPLHDR \(Version 4\)
+
+-   UPLIFT \(Version 4\)
+
+-   UPLTLR \(Version 4\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+Currently dispalyed as *Uplift Confirmation File \(Version 4\)* in the system.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+UTLHDR\_FILE: 2 - Utility Bill File \(Version 2\)
+
+</td>
+<td valign="top">
+
+-   UTLHDR \(Version 2\)
+
+-   UTLBIL \(Version 2\)
+
+-   UVATLR \(Version 2\)
+
+-   UTLTLR \(Version 2\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+UTLHDR\_FILE: 3 - Utility Bill File \(Version 3\)
+
+</td>
+<td valign="top">
+
+-   UTLHDR \(Version 3\)
+
+-   UTLBIL \(Version 3\)
+
+-   UVATLR \(Version 3\)
+
+-   UTLTLR \(Version 3\)
+
+-   RSGRSG \(Version 2\)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+</table>
 
 
 
@@ -23473,14 +24403,6 @@ Codelist
 </td>
 </tr>
 </table>
-
-
-
-<a name="loioc339707982d141efa7c7849d033ca70d__section_gfn_b4s_rsb"/>
-
-## Other B2B Codelist Standards
-
--   Automotive Codelists \(Error\)
 
 
 

@@ -567,7 +567,7 @@ You can use this attribute to provide stakeholder-specific information. For exam
 > ```
 
 > ### Remember:  
-> Authentication details must not be a part of the x-sap-ext-overview. Add authentication details in the security scheme section. For more information, see [Security Scheme](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Cloud/en-US/9bf4fea2546c4c368b068077ce0ade6c.html "Control access to your business-critical APIs using security schemes. Provide information about these schemes in the securityDefinitions object in an API description file.") :arrow_upper_right:.
+> Authentication details must not be a part of the x-sap-ext-overview. Add authentication details in the security scheme section. For more information, see [Security Scheme](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Dev/en-US/9bf4fea2546c4c368b068077ce0ade6c.html "Control access to your business-critical APIs using security schemes. Provide information about these schemes in the securityDefinitions object in an API description file.") :arrow_upper_right:.
 
 
 
@@ -579,7 +579,7 @@ The Open API specification 2.0 does not support multiple hosts \(and ports\), ne
 
 These features is supported in the `servers` property in the Open API specification v3.0. However, in Open API specification v2.0, the required configuration values can be added via the custom extension `x-servers`.
 
-For more information about how to specify sandbox url and multiple hosts or production servers in OpenAPI 3.0, see the Sandbox and Configure Information sections in [Governance Guidelines for API Packages](https://help.sap.com/viewer/4fb3aee633a84254a48d3f8c3b5c5364/Cloud/en-US/1e1cd898d3984bc79f214202e12ad5b5.html "A checklist to ensure your APIs have been correctly packaged before they are published on the SAP Business Accelerator Hub.") :arrow_upper_right:
+For more information about how to specify sandbox url and multiple hosts or production servers in OpenAPI 3.0, see the Sandbox and Configure Information sections in [Governance Guidelines for API Packages](https://help.sap.com/viewer/4fb3aee633a84254a48d3f8c3b5c5364/Dev/en-US/1e1cd898d3984bc79f214202e12ad5b5.html "A checklist to ensure your APIs have been correctly packaged before they are published on the SAP Business Accelerator Hub.") :arrow_upper_right:
 
 See [here](https://blogs.sap.com/2018/01/05/open-api-spec-2.0-vs-3.0/) to know more information about the differences between OpenAPI 2.0 and Open API 3.0 specifications
 

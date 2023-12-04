@@ -52,5 +52,5 @@ For more information about the supported features and limitations of Edge Integr
 
 [Technical Landscape \(Edge Integration Cell\)](technical-landscape-edge-integration-cell-f60efc1.md "Get to know the system landscape and the components of SAP Integration Suite Edge Integration Cell.")
 
-[Supported Features and Limitations of Edge Integration Cell](supported-features-and-limitations-of-edge-integration-cell-144c64a.md)
+[Edge Integration Cell Runtime Scope](edge-integration-cell-runtime-scope-144c64a.md)
 

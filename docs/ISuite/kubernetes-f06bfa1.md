@@ -8,5 +8,5 @@ Refer to the following security best practices from your Kubernetes provider and
 
 -   [Azure security baseline for Azure Kubernetes Service](https://learn.microsoft.com/en-us/security/benchmark/azure/baselines/aks-security-baseline?context=%2Fazure%2Faks%2Fcontext%2Faks-context)
 
--   [Rancher Security Best Practices](https://ranchermanager.docs.rancher.com/pages-for-subheaders/rancher-hardening-guides)
+-   Rancher Security Best Practices.
 

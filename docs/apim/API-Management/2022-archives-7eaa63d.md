@@ -90,7 +90,7 @@ API Business Hub Enterprise \[New Design\]
 </td>
 <td valign="top">
 
-If you have added API Business Hub Enterprise as a capability with Integration suite, or if you’ve subscribed to API Business Hub Enterprise as part of standalone API Management subscription, we now have a new design of the user interface for you to experience. For more information, see [Consume APIs](APIM-Development/consume-apis-ea561e4.md) and [Configure the API business hub enterprise \[New Design\]](APIM-Development/configure-the-api-business-hub-enterprise-new-design-54b4607.md).
+If you have added API Business Hub Enterprise as a capability with Integration suite, or if you’ve subscribed to API Business Hub Enterprise as part of standalone API Management subscription, we now have a new design of the user interface for you to experience. For more information, see [Consume APIs](consume-apis-ea561e4.md) and [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
 
 </td>
 <td valign="top">
@@ -154,7 +154,7 @@ Decommisioning Concurrent Rate Limit Policy
 </td>
 <td valign="top">
 
-Support for Concurrent Rate Limit policy has been completely decommisioned. You can no longer create or update an API proxy with Concurrent Rate Limit policy. For more information, see [Concurrent Rate Limit](APIM-Development/concurrent-rate-limit-8f22baa.md).
+Support for Concurrent Rate Limit policy has been completely decommisioned. You can no longer create or update an API proxy with Concurrent Rate Limit policy. For more information, see [Concurrent Rate Limit](concurrent-rate-limit-8f22baa.md).
 
 </td>
 <td valign="top">
@@ -218,7 +218,7 @@ Consume APIs Using SAP Business Application Studio
 </td>
 <td valign="top">
 
-The service center in SAP Business Application Studio provides a central entry point to explore products and services from API business hub enterprise. For more information, see [Consume APIs Using SAP Business Application Studio](APIM-Development/consume-apis-using-sap-business-application-studio-15732eb.md).
+The service center in SAP Business Application Studio provides a central entry point to explore products and services from API business hub enterprise. For more information, see [Consume APIs Using SAP Business Application Studio](consume-apis-using-sap-business-application-studio-15732eb.md).
 
 </td>
 <td valign="top">
@@ -346,7 +346,7 @@ Decommissioning of Concurrent Rate Limit
 </td>
 <td valign="top">
 
-The Concurrent Rate Limit policy is being decommissioned. The support for the Concurrent Rate Limit policy will come to an end very soon. If you’re still using the policy and wondering which policy to use to best meet your rate-limiting needs, see [Replace Concurrent Rate Limit Policy with Alternative Policies](APIM-Development/replace-concurrent-rate-limit-policy-with-alternative-policies-b70e0d2.md).
+The Concurrent Rate Limit policy is being decommissioned. The support for the Concurrent Rate Limit policy will come to an end very soon. If you’re still using the policy and wondering which policy to use to best meet your rate-limiting needs, see [Replace Concurrent Rate Limit Policy with Alternative Policies](replace-concurrent-rate-limit-policy-with-alternative-policies-b70e0d2.md).
 
 </td>
 <td valign="top">
@@ -410,7 +410,7 @@ Optimisation of the timeout propagation for API proxies
 </td>
 <td valign="top">
 
-Previously, the connection to the backend was released only after the default timeout. Now, the connection to the backend is released earlier if the "io.timeout.millis" value is set lower than the default value, thereby improving the performance of the API proxy. It's recommended that you redeploy the API proxies created based on the on-premise backend system before July 2022. For more information, see [Target Endpoint Properties](APIM-Development/target-endpoint-properties-edeed6a.md).
+Previously, the connection to the backend was released only after the default timeout. Now, the connection to the backend is released earlier if the "io.timeout.millis" value is set lower than the default value, thereby improving the performance of the API proxy. It's recommended that you redeploy the API proxies created based on the on-premise backend system before July 2022. For more information, see [Target Endpoint Properties](target-endpoint-properties-edeed6a.md).
 
 </td>
 <td valign="top">
@@ -474,7 +474,7 @@ Download Open API specification
 </td>
 <td valign="top">
 
-You can now download the open API specification for the APIs that are part of the API business hub enterprise in JSON format. For more information, see [Consume APIs](APIM-Development/consume-apis-ea561e4.md).
+You can now download the open API specification for the APIs that are part of the API business hub enterprise in JSON format. For more information, see [Consume APIs](consume-apis-ea561e4.md).
 
 </td>
 <td valign="top">
@@ -538,7 +538,7 @@ Service Callout policy
 </td>
 <td valign="top">
 
-You can now use on-premise type of API Provider in the Service Callout policy. For more information, see [Service Callout](APIM-Development/service-callout-6b40873.md).
+You can now use on-premise type of API Provider in the Service Callout policy. For more information, see [Service Callout](service-callout-6b40873.md).
 
 </td>
 <td valign="top">

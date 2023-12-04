@@ -23,13 +23,13 @@ To publish the API portal content on the API business hub enterprise, you must c
 
 -   Generate the access credentials to establish the connection. To generate the credentials from the API Portal, you must have the *APIPortal. Administrator* role assigned to you.
 
-    1.  Log in to the API portal.
+    1.  Log in to the .
 
-    2.  Choose the navigation icon on the left and choose *Onboarding Settings*.
+    2.  Choose the navigation icon on the left and choose *Settings* \> *APIs*.
 
     3.  Choose the *Connection* tab.
 
-    4.  Follow the onscreen instructions under *Connect the API Portal to the centralized API Business Hub Enterprise* to generate the API portal access credentials.
+    4.  Follow the onscreen instructions under *Connect the API Portal to the centralized API Business Hub Enterprise* to generate the Integration Suite API portal access credentials.
 
         ![](images/ABHE_Connection_a5eb276.png)
 

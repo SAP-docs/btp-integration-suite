@@ -5,7 +5,7 @@
 Inspect database connection usage for a given time period and analyze critical situations in which insufficient database connections are available.
 
 > ### Tip:  
-> Each SAP Integration Suite tenant is associated with a physical database that has a limited size. This database is used by certain steps during the runtime of integration flows .
+> Each SAP Integration Suite tenant is associated with a physical database that has a limited size. This database is used by certain steps during the runtime of integration flows.
 
 Every integration flow step that implies access to the tenant database requires a database connection. This number of available database connections is a limited integration resource.
 

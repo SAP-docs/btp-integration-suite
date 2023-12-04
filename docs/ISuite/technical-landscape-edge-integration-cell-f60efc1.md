@@ -2,7 +2,7 @@
 
 # Technical Landscape \(Edge Integration Cell\)
 
-Get to know the system landscape and the components of SAP Integration Suite Edge Integration Cell.
+Get to know the system landscape and the components of Edge Integration Cell.
 
 
 
@@ -214,7 +214,7 @@ Edge Event Controller
 </td>
 <td valign="top">
 
-Distributes events on the edge.
+Distributes system internal events on the edge.
 
 </td>
 </tr>
@@ -257,12 +257,12 @@ Executes integration flow models and services.
 <tr>
 <td valign="top">
 
-Event Broker Operations
+Message Service Operations
 
 </td>
 <td valign="top">
 
-Manages the local Event Broker.
+Manages the local Message Service.
 
 </td>
 </tr>
@@ -274,7 +274,7 @@ Monitoring Data Consumer
 </td>
 <td valign="top">
 
-processes and stores monitoring events.
+Processes and stores monitoring events.
 
 </td>
 </tr>
@@ -289,7 +289,7 @@ Backing Services
 </b></dt>
 <dd>
 
-Edge Integration Cell includes an event broker for handling events.
+Edge Integration Cell includes a Message Service for asynchronous messages and system internal events.
 
 
 
@@ -315,12 +315,12 @@ Description
 <tr>
 <td valign="top">
 
-Event Broker
+Message Service
 
 </td>
 <td valign="top">
 
-Used for asynchronous messaging and event integration.
+Used for asynchronous messaging and system internal event integration.
 
 </td>
 </tr>

@@ -81,7 +81,7 @@ For non-production environments, the built-in deployment options for PostgreSQL 
 
 <a name="loio61cf37b704b3466f990696472f6fdc27__section_ljj_zzh_yyb"/>
 
-## Event Broker Persistence
+## Message Service Persistence
 
-For Event Broker persistence, replication is used to secure persistent data, instead of using backup and restore procedures. Replication is set up as part of the High Availability enablement.
+For message service persistence, replication is used to secure persistent data, instead of using backup and restore procedures. Replication is set up as part of the High Availability enablement.
 

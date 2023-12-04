@@ -30,7 +30,9 @@ Perform the steps described in: [Setting Up Inbound HTTP Connections \(for API C
 
 Assign the following role template:
 
-`MonitoringDataRead` \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\)
+`MonitoringDataRead` \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\)
+
+To access the ID Mapper, assign role template `MessageProcessingLocksRead`.
 
 
 
@@ -138,6 +140,18 @@ More information: [Use Custom Header Properties to Search for Message Processing
 <tr>
 <td valign="top">
 
+Error Information
+
+</td>
+<td valign="top">
+
+Represents error information for message processing logs.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 ID Mapper
 
 </td>
@@ -176,6 +190,20 @@ More information:
 
 
 Certain values \(when indicated as `<hexalias>`\) need to be provided in hexadecimal notation. String characters are stored by the computer as numbers. When the hexadecimal notation is required, the text is to be provided not as decimal number but as a hexadecimal number instead. For example: The string `my alias` is expressed by the following decimal numbers: `109 121 32 97 108 105 97 115` because, according to the American Standard Code for Information Interchange \(ASCII \), the letter `m` is translated to the decimal number `109`, and so forth. If you convert each number to a hexadecimal number, you get: `6D 79 20 61 6C 69 61 73`. Note that `6D` is the hexadecimal representation of `109`, and so forth. If you want to specify `my alias` in an example request, enter `6D7920616C696173`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+External Logging \(only available in the Cloud Foundry environment.\)
+
+</td>
+<td valign="top">
+
+Allows you to activate or deactivate external logging.
+
+More informarion: [External Logging](external-logging-ad719c1.md)
 
 </td>
 </tr>

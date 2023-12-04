@@ -42,5 +42,5 @@ You’re assigned the *AuthGroup.APIPortalRegistration* role.
 
 ## Results
 
-The connection has been set up between the API portal and the API business hub enterprise.
+The connection has been set up between the Integration Suite API portal and the API business hub enterprise.
 

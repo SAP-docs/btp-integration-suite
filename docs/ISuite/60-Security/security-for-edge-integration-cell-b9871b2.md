@@ -21,5 +21,5 @@ For secure runtime parameter configurations and operations, see [Runtime Paramet
 
 [Kubernetes](kubernetes-f06bfa1.md "")
 
-[Technical Landscape \(Edge Integration Cell\)](../technical-landscape-edge-integration-cell-f60efc1.md "Get to know the system landscape and the components of SAP Integration Suite Edge Integration Cell.")
+[Technical Landscape \(Edge Integration Cell\)](../technical-landscape-edge-integration-cell-f60efc1.md "Get to know the system landscape and the components of Edge Integration Cell.")
 

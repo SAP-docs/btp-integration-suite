@@ -25,13 +25,11 @@ You’ve created the required API on the *APIs* tab. For more information about 
 
     You can view the number of calls made for all APIs in a product for the current month. The data is visible for each product in the *Calls* column and also on the details screen of the individual product.
 
-    You can click the refresh icon to get the latest data.
+    You can select the *Refresh* icon to get the latest data.
 
     > ### Note:  
     > -   There may be a short delay before the data is refreshed.
     > -   Number of calls won’t be displayed for externally managed APIs.
-    > 
-    > .
 
     The data is displayed according to metric specifications, for example:
 
@@ -52,7 +50,7 @@ You’ve created the required API on the *APIs* tab. For more information about 
     > ### Note:  
     > To enforce a quota on products, you must define verify API key and quota policies on the API. Setting quota limits on a product doesn’t automatically enforce a quota on the API proxies. The quota set on the product takes precedence over that of the API proxy. It’s a default limit that is referenced in quota policies that stipulate a uniform setting across all API proxies in the product. You can make runtime changes to the quota setting on an API product, and quota policies that reference the value automatically are updated with the new quota. For more information, see [Quota](quota-1f742c1.md).
 
-    You can use the sample payload given below to set **Verify API Key policy** for the required API:
+    You can use the following sample payload given to set **Verify API Key policy** for the required API:
 
     > ### Sample Code:  
     > ```
@@ -65,7 +63,7 @@ You’ve created the required API on the *APIs* tab. For more information about 
     > 
     > ```
 
-    You can use the sample payload below on the same API to create **Quota policy**:
+    You can use the follwing sample payload on the same API to create **Quota policy**:
 
     > ### Sample Code:  
     > ```
@@ -116,7 +114,7 @@ You’ve created the required API on the *APIs* tab. For more information about 
     > 
     >     Now, for your product creation, let’s say you select resources `R1`, `R2` of `API_1` and resource `R3` of `API_2`. Thus, your product consists of resources `R1` and `R2` from `API_1` and `R3` from `API_2`. That is `P1=R1,R2,R3`.
     > 
-    >     With the above resource selection criteria, API Management still allows API calls to be made to the resource `R2` of `API_2` even though you had not explicitly selected the resource under `API_2` during product creation.
+    >     With the preceding resource selection criteria, API Management still allows API calls to be made to the resource `R2` of `API_2` even though you had not explicitly selected the resource under `API_2` during product creation.
     > 
     > -   If you want to publish a product with selective resource paths from multiple API proxies, you must ensure that the API proxies should have a common resource path.
     > 
@@ -151,7 +149,7 @@ You’ve created the required API on the *APIs* tab. For more information about 
     > ### Note:  
     > You can add a maximum of 18 custom attributes.
 
-    For example, you can create a custom attribute named `IsConfidential` with a value of Yes or No. Later, in your API proxy flow, you can check the value of the API product’s `IsConfidential` attribute \(for example, using the `verifyapikey.<policy_name>.apiproduct.IsConfidential` variable, which would be available automatically after you have created the custom attribute\). If the value is `Yes`, you can throw an error, for example as shown below using the Raise Fault policy.
+    For example, you can create a custom attribute named `IsConfidential` with a value of Yes or No. Later, in your API proxy flow, you can check the value of the API product’s `IsConfidential` attribute \(for example, using the `verifyapikey.<policy_name>.apiproduct.IsConfidential` variable, which would be available automatically after you have created the custom attribute\). If the value is `Yes`, you can throw an error, for example as shown next using the Raise Fault policy.
 
     > ### Sample Code:  
     > ```

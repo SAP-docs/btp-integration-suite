@@ -11,7 +11,7 @@ If you navigate to the message monitor, only message processing logs from the ch
 > ### Restriction:  
 > For general monitoring details, see [Monitor](50-Development/monitor-650995c.md) in the SAP Integration Suite.
 > 
-> For the artifacts deployed on the SAP Integration Suite Edge Integration Cell, only the monitoring functions described in the following topics are available:
+> For the artifacts deployed on Edge Integration Cell, only the monitoring functions described in the following topics are available:
 > 
 > -   [Message Status](50-Development/message-status-733a57b.md)
 > 

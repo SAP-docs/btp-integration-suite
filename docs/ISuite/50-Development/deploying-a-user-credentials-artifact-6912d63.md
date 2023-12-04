@@ -17,11 +17,21 @@ To set up a connection using basic authentication or username token authenticati
 
 ## Procedure
 
-1.  Click the *Security Material* tile in the *Manage Security Material* section.
+1.  Choose *Monitor* \> *Integrations and APIs*.
 
-2.  Choose *Create* \> *User Credentials*.
+2.  Select the target runtime \(*Runtime* parameter\).
 
-3.  Specify the following properties:
+    This information is only relevant for Edge Integration Cell runtime.
+
+    For more information on how to manage security artifacts for Edge Integration Cell, see [Manage Security for Edge Integration Cell](../manage-security-for-edge-integration-cell-1783cf8.md).
+
+3.  Click the *Security Material* tile in the *Manage Security* section.
+
+4.  Choose *Add*.
+
+5.  As *Type*, select *User Credentials*.
+
+6.  Specify the following properties:
 
 
     <table>
@@ -114,7 +124,7 @@ To set up a connection using basic authentication or username token authenticati
     </tr>
     </table>
     
-4.  Choose *Deploy*.
+7.  Choose *Deploy*.
 
 
 

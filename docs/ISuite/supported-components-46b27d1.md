@@ -6,7 +6,7 @@ Find out the components that are currently supported for migration.
 
 In the current scope, migration tooling supports the migration of ICOs that contain the following components:
 
--   **Communication Channel**: HTTP, REST, SOAP, IDOC, FTP, SFTP, XI, RFC, JDBC, Mail, and OData adapters
+-   **Communication Channel**: HTTP, REST, SOAP, IDOC, FTP, SFTP, XI, RFC, JDBC, Mail, OData Sender and V2 Receiver, AS2 adapters
 
 -   **Events**: Timer
 

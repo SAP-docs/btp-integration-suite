@@ -94,7 +94,7 @@ Select *Client Certificate* if you want to authorize a user to send OData reques
 
 The user role that you're using for authorization. Choose *Select* to get a list of all the available user roles for your tenant and select the one that you want to use.
 
-For more information on user roles, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
+For more information on user roles, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -159,7 +159,7 @@ To know more about using the adapter from external clients, see:
 
 -   [Use CSRF Protection](use-csrf-protection-a0765d5.md)
 
--   [Setting Up OAuth Inbound Authentication with Client Credentials Grant for API Clients](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/040d8110293d44b1bfaa75674530d395.html "The API is protected by basic authentication and OAuth.") :arrow_upper_right:
+-   [Setting Up OAuth Inbound Authentication with Client Credentials Grant for API Clients](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/040d8110293d44b1bfaa75674530d395.html "The API is protected by basic authentication and OAuth.") :arrow_upper_right:
 
 
 > ### Note:  
@@ -168,5 +168,5 @@ To know more about using the adapter from external clients, see:
 **Related Information**  
 
 
-[Setting Up Inbound HTTP Connections (Integration Flow Processing), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/778c7e7835ff46408aafe0d499720dc7.html "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.") :arrow_upper_right:
+[Setting Up Inbound HTTP Connections (Integration Flow Processing), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/778c7e7835ff46408aafe0d499720dc7.html "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.") :arrow_upper_right:
 

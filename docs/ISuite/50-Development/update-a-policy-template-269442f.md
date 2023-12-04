@@ -46,6 +46,9 @@ You are updating a policy template.
     -   Select the policy template that you want to update, from the *Name* dropdown box.
     -   Choose the required policies from the list of policies available.
 
+    > ### Note:  
+    > If there are any default fault rules or a post-client flow available within the API proxy, they will also be appended to the policy template.
+
 7.  Choose *OK*.
 
 

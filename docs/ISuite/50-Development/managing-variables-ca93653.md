@@ -4,6 +4,10 @@
 
 The *Variables* view allows you to monitor variables used in integration flows.
 
+Choose *Monitor* \> *Integrations and APIs*.
+
+If you have activated Edge Integration Cell, select the target runtime \(*Runtime* parameter\). For more information on how to manage stores for Edge Integration Cell, see [Manage Stores for Edge Integration Cell](../manage-stores-for-edge-integration-cell-ced47da.md) 
+
 Choose the *Variables* tile in the *Manage Store*section. You get an overview of the existing variables, with the following attributes.
 
 ****

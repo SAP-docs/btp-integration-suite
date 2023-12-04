@@ -28,7 +28,7 @@ For demo purposes, the Cloud Integration OData API is used to retrieve the messa
 > 
 > -   [Setting Up Inbound HTTP Connections \(for API Clients\)](../40-RemoteSystems/setting-up-inbound-http-connections-for-api-clients-8db3d51.md)
 > 
-> -   [Setting Up Inbound HTTP Connections (for API Clients), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fbae09c89d9246f88149c5293c96ab5f.html "") :arrow_upper_right:
+> -   [Setting Up Inbound HTTP Connections (for API Clients), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/fbae09c89d9246f88149c5293c96ab5f.html "") :arrow_upper_right:
 
 The following variants are provided:
 
@@ -135,7 +135,7 @@ Date for the first run of the process in following format `yyyy-MM-ddT00:00:00`.
 
 [Setting Up Inbound HTTP Connections \(for API Clients\)](../40-RemoteSystems/setting-up-inbound-http-connections-for-api-clients-8db3d51.md)
 
-[Setting Up Inbound HTTP Connections (for API Clients), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fbae09c89d9246f88149c5293c96ab5f.html "") :arrow_upper_right:
+[Setting Up Inbound HTTP Connections (for API Clients), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/fbae09c89d9246f88149c5293c96ab5f.html "") :arrow_upper_right:
 
 [Message Processing Logs](https://api.sap.com/api/MessageProcessingLogs/overview) \(OData API on SAP Business Accelerator Hub\)
 

@@ -2,7 +2,7 @@
 
 # Requesting a Custom Domain for a Virtual Host
 
-A virtual host lets you host multiple domain names on API Management service.
+A virtual host lets you host multiple domain names on API Management capability within Integration Suite.
 
 
 

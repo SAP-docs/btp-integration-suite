@@ -62,7 +62,7 @@ Depending upon the license you hold, you can use the *API Management, API Busine
 
     You’re navigated to the *API Business Hub Enterprise*.
 
-6.  Log on to the API business hub enterprise application with your IDP user credentials. To register to the API business hub enterprise as an Application developer, see [Register on API business hub enterprise](../APIM-Development/register-on-api-business-hub-enterprise-c85fafe.md).
+6.  Log on to the API business hub enterprise application with your IDP user credentials. To register to the API business hub enterprise as an Application developer, see [Register on API business hub enterprise](../register-on-api-business-hub-enterprise-c85fafe.md).
 
 
 
@@ -78,9 +78,9 @@ You’re registered as an application developer on the API business hub enterpri
 
  <?sap-ot O2O class="- topic/link " href="dd6d58c1586a4a0a8ffca46a1a019d38.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/80c0519ebf1449d9bed37fccf7ba127a.xml" ?> 
 
-[Configure the API business hub enterprise \[Classic Design\]](../APIM-Development/configure-the-api-business-hub-enterprise-classic-design-7b71b16.md "You can configure the API business hub enterprise to personalize it for your organization.")
+[Configure the API business hub enterprise \[Classic Design\]](../configure-the-api-business-hub-enterprise-classic-design-7b71b16.md "You can configure the API business hub enterprise to personalize it for your organization.")
 
-[Create an Application \[Classic Design\]](../APIM-Development/create-an-application-classic-design-7b4e71b.md "Create an Application to consume the required APIs.")
+[Create an Application \[Classic Design\]](../create-an-application-classic-design-7b4e71b.md "Create an Application to consume the required APIs.")
 
 [Assign User Roles in API Management](assign-user-roles-in-api-management-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
 

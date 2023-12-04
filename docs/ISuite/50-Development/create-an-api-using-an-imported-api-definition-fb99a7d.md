@@ -51,9 +51,11 @@ The supported file types for an import are json, and .zip.
 
         You can attach files of type .zip and .json.
 
-        You can include the configurations for health monitor and load balancer in the .zip file. For more information, see [Load Balancing Across API Providers](https://help.sap.com/docs/integration-suite/sap-integration-suite/load-balancing-across-api-providers?version=CLOUD&q=load%20balancer).
+        You can also include the configurations for health monitor and load balancer in the .zip file. For more information, see [Load Balancing Across API Providers](https://help.sap.com/docs/integration-suite/sap-integration-suite/load-balancing-across-api-providers?version=CLOUD&q=load%20balancer).
 
-    2.  Select the runtime node on which the API artifact will be deployed.
+    2.  Once you upload the file, the *Name* and the *ID* field gets prepopulated. However, you can update the name and the ID field from this dialog.
+
+    3.  Select the *Runtime Profile* on which the API artifact will be deployed.
 
 
 7.  Choose *Create*.

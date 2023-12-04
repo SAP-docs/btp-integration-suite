@@ -10,12 +10,13 @@ Validate and split \(into multiple documents\) different inbound EDI document fo
 
 ## Context
 
-You use the EDI splitter to split inbound bulk EDI messages, and configure the splitter to validate and acknowledge the inbound messages. If you choose to acknowledge the EDI message, then the splitter transmits a functional acknowledgement after processing the bulk EDI message. A bulk EDI message can contain one or more EDI formats, such as EDIFACT, ODETTE, EANCOM, and ASC-X12. You can configure the EDI splitter to process different EDI formats depending on the business requirements of the trading partners.
+You use the EDI splitter to split inbound bulk EDI messages, and configure the splitter to validate and acknowledge the inbound messages. If you choose to acknowledge the EDI message, then the splitter transmits a functional acknowledgement after processing the bulk EDI message. A bulk EDI message can contain one or more EDI formats, such as EDIFACT, ODETTE, EANCOM, TRADACOMS, and ASC-X12. You can configure the EDI splitter to process different EDI formats depending on the business requirements of the trading partners.
 
 > ### Note:  
 > -   EDI Splitter version 1.8 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
 > -   EDI Splitter version 1.9 and above supports LS/LE segments.
 > -   Do not connect an EDI Splitter with the Gather or Join step in your integration flow. At present such combination is not supported.
+> -   EDI Splitter version 2.0 and above supports the TRADACOMS standard \(*TRADACOMS* tab; available only for dedicated service plans, see [2903776](https://me.sap.com/notes/2903776)\).
 
 ![](images/EDI_Splitter_e5180a1.png)
 
@@ -614,6 +615,161 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
     -   `true`
     -   `false`
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+    **TRADACOMS**
+
+    > ### Note:  
+    > This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
+    ****
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Source Encoding
+    
+    </td>
+    <td valign="top">
+    
+    Use the appropriate encoding format of the inbound TRADACOMS interchange.
+
+    The following encoding formats are available:
+
+    -   UTF-8
+
+    -   ISO-8859-1
+
+    -   Dynamic
+
+        If selected, the encoding format is set dynamically at runtime using the header `SAP_EDISPLITTER_TRADACOMS_SOURCE_ENCODING` \(possible values: `UTF-8`, `ISO-8859-1`\).
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Split Preference
+    
+    </td>
+    <td valign="top">
+    
+    Specify the split preference for the TRADACOMS message.
+
+    There are the following options:
+
+    -   NoSplit
+
+    -   WithoutValidation
+
+    -   Dynamic
+
+        If selected, this parameter is set dynamically at runtime using the header `SAP_EDISPLITTER_TRADACOMS_SPLIT_PREFERENCE` \(possible values: `NoSplit`, `WithoutValidation`\).
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    EDI Schema Definition
+    
+    </td>
+    <td valign="top">
+    
+    Validates an EDI interchange against the XSD schema for the split.
+
+    To specify the schema definition, there are the following options:
+
+    -   Dynamic
+
+        If selected, this parameter is set dynamically at runtime based on the value of the header `SAP_EDISPLITTER_TRADACOMS_SCHEMA_SOURCE` \(possible values: `Header`, `IntegrationProject`\).
+
+    -   Header
+
+        If selected, the location of the schema definition is set at runtime based on the value of a header \(header name to be defined using the *Header Name* parameter\).
+
+    -   Integration Flow
+
+        If selected, the schema definition is specified from a resource file of the integration flow \(use the parameter *Schemas* to choose the schema\).
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Header Name
+
+    \(only available if for *EDI Schema Definition* the option *Header* is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Define the name of the header that contains the location of the EDI schema definition.
+
+    > ### Note:  
+    > You can define the header in a Script step that is to be added before the EDI Converter step of your integration flow.
+    > 
+    > For example, you can add the following header value:
+    > 
+    > `/xsd/TRADACOMS_ORDHDR_FILE_9.xsd for TRADACOMS`
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Schemas
+
+    \(only available if for *EDI Schema Definition* the option *Integration Flow* is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Select the schema definition from an XSD file added as resource to the integration flow.
+
+    Perform the following steps:
+
+    1.  Choose *Add*.
+
+    2.  Choose *Select* to add a file from the XSD folder found in the same integration project.
+
+        Only XSD files from Integration Advisor are supported.
+
+
+    > ### Note:  
+    > Apply the following naming convention for the file name of the XML schema:
+    > 
+    > `TRADACOMS: TRADACOMS_ORDHDR_FILE_9.xsd`
 
 
     

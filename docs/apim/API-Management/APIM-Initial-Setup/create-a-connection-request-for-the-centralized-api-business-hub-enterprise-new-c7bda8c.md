@@ -2,7 +2,7 @@
 
 # Create a Connection Request for the Centralized API business hub enterprise \[New Design\]
 
-To publish content from different API portals \(available via API Management standalone subscription in Cloud Foundry\) to API business hub enterprise, establish a connection between them by creating a connection request.
+To publish content from different API management systems \(available via Integration Suite based subscription API Management standalone subscription in Cloud Foundry\) to API business hub enterprise, establish a connection between them by creating a connection request.
 
 
 
@@ -23,13 +23,13 @@ To publish content from different API portals \(available via API Management sta
 
 -   Generate the access credentials to establish the connection. To generate the credentials from the API Portal, you must have the *APIPortal. Administrator* role assigned to you.
 
-    1.  Log in to the API portal.
+    1.  Log in to the .
 
-    2.  Choose the navigation icon on the left and choose *Onboarding Settings*.
+    2.  Choose the navigation icon on the left and choose *Settings* \> *APIs*.
 
     3.  Choose the *Connection* tab.
 
-    4.  Follow the onscreen instructions under *Connect the API Portal to the centralized API Business Hub Enterprise* to generate the API portal access credentials.
+    4.  Follow the onscreen instructions under *Connect the API Portal to the centralized API Business Hub Enterprise* to generate the Integration Suite API portal access credentials.
 
 
     > ### Note:  
@@ -45,10 +45,10 @@ To publish content from different API portals \(available via API Management sta
 The API business hub enterprise administrator identifies which existing or new API business hub enterprise application can accept content from multiple API portals.
 
 > ### Note:  
-> Only new API Management, API portal subscriptions are allowed to set up a connection with the centralized API business hub enterprise.
+> Only new Integration Suite subscriptions with API Management capability enabled with the Integration Suite are allowed to set up a connection with the centralized API business hub enterprise.
 
 > ### Note:  
-> You can connect a maximum number of three API portals to the centralized API business hub enterprise.
+> You can connect a maximum number of three Integration Suite API portals to the centralized API business hub enterprise.
 
 Create a new subaccount in Cloud Foundry and set up only the API portal.
 
@@ -169,10 +169,10 @@ To create a request to connect the API portal to the centralized API business hu
 
 ## Results
 
-You've submitted the connection request to the API business hub enterprise administrator. Once the connection request is approved by the administrator, you can start publishing the API portal content to the API business hub enterprise.
+You've submitted the connection request to the API business hub enterprise administrator. Once the connection request is approved by the administrator, you can start publishing the Integration Suite API portal content to the API business hub enterprise.
 
 > ### Note:  
-> You can log on to the API portal and check the connection status. Navigate to *Onboarding Settings* and choose *Connection*.
+> You can log on to the Integration Suite API portal and check the connection status. Navigate to *Settings* \> *APIs* and choose *Connection*.
 > 
 > You can also choose *Test Connection* to get the details about the connectivity status once your connection request is approved. You will get a connection error, if the destination is deleted or configured incorrectly. In case of an error, retry after revalidating the destination configuration.
 

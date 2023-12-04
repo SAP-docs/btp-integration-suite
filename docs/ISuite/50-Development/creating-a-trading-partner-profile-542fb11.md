@@ -250,7 +250,13 @@ Follow the procedure below to create a trading partner profile
     Choose a type system from the drop-down list
 
     > ### Note:  
-    > For *GS1 XML* type system, you must maintain the contact details in the *Contacts* tab.
+    > -   For *GS1 XML* type system, you must maintain the contact details in the *Contacts* tab.
+    > 
+    > -   For *Tradacoms* type system for the identifier, the field *Identification* is mandatory. If the sender payload contains both *Identification* and *Name*, the integration flow will consider only *Identification* for the computed Partner Directory ID.
+    > 
+    >     The system ASSEMBLY will use Company profile's *Short Name* for the *Identification Name*
+    > 
+    >     Tradacoms is supported only in the 2.0 version of the integration package *Cloud Integration - Trading Partner Management V2*
 
 
     
@@ -1788,6 +1794,24 @@ When you use AS2 adapters in your agreements, you need to maintain few decryptio
     </tr>
     </table>
     
+
+
+
+<a name="loio542fb116e71641e3a0d8ddb130447376__section_s1f_cqk_jzb"/>
+
+## Number Ranges
+
+While sending out a document in case of EDI processing, a unique interchange number must be added to each document. In order to add such an interchange number you can use the Number Ranges. The *Number Ranges* tab allows you to create an alias for the existing number ranges created in the *Monitor* tab. To know how to create and define number ranges, see [Managing Number Ranges](https://help.sap.com/docs/integration-suite/sap-integration-suite/managing-number-ranges). Follow the procedure below to create an alias for the number range:
+
+1.  Navigate to the *Number Ranges* tab.
+
+2.  Choose *Add*.
+3.  In the resulting dialog, select a number range from the list for the *Number Ranges* field.
+
+    > ### Note:  
+    > The field displays the number ranges that are created in the *Monitor* tab for integrations. To know more, see [Managing Number Ranges](https://help.sap.com/docs/integration-suite/sap-integration-suite/managing-number-ranges).
+
+4.  Enter an alias name for the number range in the *Name* field and choose *Save*.
 
 
 

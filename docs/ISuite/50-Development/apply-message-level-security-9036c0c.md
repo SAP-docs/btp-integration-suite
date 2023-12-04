@@ -146,7 +146,7 @@ More information: [HCI Encrypt with PGP](https://blogs.sap.com/2018/10/11/hci-en
 
 [Message-Level Security](../40-RemoteSystems/message-level-security-463a908.md "Several standards are supported to protect the message content (message-level security).")
 
-[Security Aspects of Data, Data Flow](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/702ddb59a8564c99aabe81e9d9e4239b.html "All data in transit, either exchanged with remote components or internal, can be protected by methods such as encryption.") :arrow_upper_right:
+[Security Aspects of Data, Data Flow](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/702ddb59a8564c99aabe81e9d9e4239b.html "All data in transit, either exchanged with remote components or internal, can be protected by methods such as encryption.") :arrow_upper_right:
 
 [Security Aspects of Data, Data Flow for Cloud Integration](../60-Security/security-aspects-of-data-data-flow-for-cloud-integration-7895724.md "All data in transit, either exchanged with remote components or internal, can be protected by methods such as encryption.")
 

@@ -54,11 +54,21 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
 
 ## Procedure
 
-1.  Click the tile in the *Manage Security Material* section.
+1.  Choose *Monitor* \> *Integrations and APIs*.
 
-2.  Choose *Create* \> *OAuth2 Authorization Code*.
+2.  Select the target runtime \(*Runtime* parameter\).
 
-3.  Specify the following attributes:
+    This information is only relevant for Edge Integration Cell runtime.
+
+    For more information on how to manage security artifacts for Edge Integration Cell, see [Manage Security for Edge Integration Cell](../manage-security-for-edge-integration-cell-1783cf8.md).
+
+3.  Click the *Security Material* tile in the *Manage Security* section.
+
+4.  Choose *Add*.
+
+5.  As *Type*, select *OAuth2 Authorization Code*.
+
+6.  Specify the following attributes:
 
     ****
 
@@ -231,7 +241,7 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     > ### Note:  
     > Test your new setup regularly in the beginning, to waterproof the functionality of your setup. Especially test the replacement of refresh tokens, whether they expire or the new refresh token invalidates the old refresh token.
 
-4.  Choose *Deploy*.
+7.  Choose *Deploy*.
 
 
 **Related Information**  

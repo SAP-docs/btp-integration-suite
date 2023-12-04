@@ -46,7 +46,7 @@ On Error
 </td>
 <td valign="top">
 
-Determines the behavior when an exception or an error occurs during the policy execution. The default value is abort on error.The internal name of the policy. The value of the name attribute can contain letters, numbers, spaces, hyphens, underscores, and periods. This value can’t exceed 255 characters.
+Determines the behavior when an exception or an error occurs during the policy execution.
 
 </td>
 </tr>
@@ -182,7 +182,7 @@ This expression represents a query parameter in the incoming request message whe
 **Related Information**  
 
 
-[Surge Protection](surge-protection-3d14745.md "The surge protection policy protects the backend against sudden traffic spikes.")
+[Surge Protection](surge-protection-3d14745.md "The surge protection policy is designed to protect against traffic surges by controlling the rate at which requests are processed by an API during runtime. This policy acts as a safeguard, reducing the likelihood of downtime and performance issues.")
 
 [IP Filter](ip-filter-3a8b424.md "The IP filter policy allows or denies calls from specific IP addresses or address ranges.")
 

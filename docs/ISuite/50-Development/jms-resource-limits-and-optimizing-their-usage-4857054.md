@@ -2,79 +2,7 @@
 
 # JMS Resource Limits and Optimizing their Usage
 
-The JMS messaging instance that is used in asynchronous messaging scenarios with the JMS, AS2, AS4, or XI adapter has limited resources.
-
-
-
-<a name="loio4857054e3f194ae6a7ed93a52002d556__section_q1l_g2l_2yb"/>
-
-## Capacity of 1 JMS Queue
-
-Note that 1 JMS queue comes with the following resources in terms of data volume, message volume, and in terms of number of transactions, providers, and consumers:
-
-
-<table>
-<tr>
-<td valign="top">
-
-Queue capacity
-
-</td>
-<td valign="top">
-
-300 MB
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Transactions
-
-</td>
-<td valign="top">
-
-5
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Consumers
-
-</td>
-<td valign="top">
-
-5
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Providers
-
-</td>
-<td valign="top">
-
-5
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Message volume that can be processed by JMS messaging
-
-</td>
-<td valign="top">
-
-5 GB/month
-
-</td>
-</tr>
-</table>
+The JMS messaging instance has limited resources. You can increase the capacity of these resources to a certain extend.
 
 
 
@@ -82,9 +10,13 @@ Message volume that can be processed by JMS messaging
 
 ## Default and Maximum JMS Resources
 
+> ### Note:  
+> The JMS messaging instance is used in asynchronous messaging scenarios with the JMS, AS2, AS4, and XI adapter.
+
 For SAP Integration Suite \(all service plans\) and for existing SAP Cloud Integration \(Enterprise Edition\) licenses, there are the following default and maximum queue capacities.
 
-Note that resources such like number of transactions, message volume, etc, calculate themselves out of the resources associated with a single JMS queue as shown in the table above.
+> ### Note:  
+> To learn more about JMS resources for Edge Integration Cell, see [JMS Resource Limits for Edge Integration Cell](jms-resource-limits-for-edge-integration-cell-17366b3.md).
 
 
 <table>
@@ -209,28 +141,99 @@ Message volume that can be processed by JMS messaging
 </tr>
 </table>
 
-You can increase the capacity up to 100 queues be self-service, as described in the table below.
-
 > ### Note:  
-> Independent of the allocated JMS resources, the following applies:
+> Capacity of one JMS queue:
 > 
-> -   The maximum capacity for one queue is 95% of the total queue capacity.
+> Resources such like number of transactions, message volume, and so forth, can be calculated from the resources associated with one single JMS queue.
 > 
-> -   256 messages can be processed in one transaction.
+> One JMS queue comes with the following resources:
 > 
->     This restriction is relevant when you have designed integration flows that split messages where multiple split messages are executed in the same transaction. If a message is bigger than 5 MB, before storing it in the JMS queue, Cloud Integration splits it internally into smaller chunks.
 > 
->     This means: The maximum message size \(including attachments\) that can be stored in a JMS queue is 1280 MB \(256 \* 5 MB\). This limit is given by the fact that maximum 256 messages can be processed in one transaction \(see note above\).
+> <table>
+> <tr>
+> <td valign="top">
 > 
->     For more guidance and calculation examples, check out the following SAP Community blog: [Cloud Integration – JMS Resource and Size Limits](https://blogs.sap.com/2017/10/04/cloud-integration-jms-resource-and-size-limits-in-cpi-enterprise-edition/) \(section *Numbers of Messages in one Transaction*\).
+> Queue capacity
 > 
-> -   Headers and exchange properties defined in the integration flow before the message is saved to the queue must not exceed 4 MB in total.
+> </td>
+> <td valign="top">
+> 
+> 300 MB
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Transactions
+> 
+> </td>
+> <td valign="top">
+> 
+> 5
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Consumers
+> 
+> </td>
+> <td valign="top">
+> 
+> 5
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Providers
+> 
+> </td>
+> <td valign="top">
+> 
+> 5
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Message volume that can be processed by JMS messaging
+> 
+> </td>
+> <td valign="top">
+> 
+> 5 GB/month
+> 
+> </td>
+> </tr>
+> </table>
+
+Independent of the allocated JMS resources, the following applies:
+
+-   The maximum capacity for one queue is 95% of the total queue capacity.
+
+-   256 messages can be processed in one transaction.
+
+    This restriction is relevant when you have designed integration flows that split messages where multiple split messages are executed in the same transaction. If a message is bigger than 5 MB, before storing it in the JMS queue, Cloud Integration splits it internally into smaller chunks.
+
+    This means: The maximum message size \(including attachments\) that can be stored in a JMS queue is 1280 MB \(256 \* 5 MB\). This limit is given by the fact that maximum 256 messages can be processed in one transaction \(see note above\).
+
+    For more guidance and calculation examples, check out the following SAP Community blog: [Cloud Integration – JMS Resource and Size Limits](https://blogs.sap.com/2017/10/04/cloud-integration-jms-resource-and-size-limits-in-cpi-enterprise-edition/) \(section *Numbers of Messages in one Transaction*\).
+
+-   Headers and exchange properties defined in the integration flow before the message is saved to the queue must not exceed 4 MB in total.
+
 
 
 
 <a name="loio4857054e3f194ae6a7ed93a52002d556__section_oh5_g2l_2yb"/>
 
 ## How to Increase JMS Resources
+
+You can increase the capacity up to 100 queues be self-service, as described in the table below.
 
 
 <table>

@@ -12,7 +12,7 @@ You can find the OData API on SAP Business Accelerator Hub at:
 
 A prerequisite for using the OData API is that your user is connected to Cloud Integration and that you have access to an OData client.
 
-Individual actions that you can perform using the OData API are protected by an authorization concept. To find out the required role for the task that you want to perform with the OData API, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
+Individual actions that you can perform using the OData API are protected by an authorization concept. To find out the required role for the task that you want to perform with the OData API, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
 
 The OData API covers the following aspects:
 
@@ -47,7 +47,7 @@ Get deployed integration content or deploy/undeploy integration artifacts.
 <tr>
 <td valign="top">
 
-[Log Files, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/93bc3722533741c7a48eec6a8352f060.html "Access technical system logs written during message processing on the worker/runtime node.") :arrow_upper_right: 
+[Log Files, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/93bc3722533741c7a48eec6a8352f060.html "Access technical system logs written during message processing on the worker/runtime node.") :arrow_upper_right: 
 
 </td>
 <td valign="top">
@@ -152,7 +152,7 @@ To keep the load on the network manageable, we therefore recommend that you use 
 
 [Integration Content](integration-content-d1679a8.md "Manage integration artifacts for your tenant.")
 
-[Log Files, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/93bc3722533741c7a48eec6a8352f060.html "Access technical system logs written during message processing on the worker/runtime node.") :arrow_upper_right:
+[Log Files, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/93bc3722533741c7a48eec6a8352f060.html "Access technical system logs written during message processing on the worker/runtime node.") :arrow_upper_right:
 
 [Message Processing Logs](message-processing-logs-827a2d7.md "Get an overview of the messages processed on a tenant and get the details for individual messages. The message processing log (MPL) stores data about the messages processed on a tenant. Furthermore, it stores information about the individual processing steps for each processed message.")
 

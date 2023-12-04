@@ -2,7 +2,7 @@
 
 # Requesting a Custom Domain for a Virtual Host
 
-A virtual host lets you host multiple domain names on API Management capability within Integration Suite.
+A virtual host allows you to host multiple domain names on the API Management capability within Integration Suite.
 
 
 
@@ -18,7 +18,7 @@ Another advantage of establishing your own custom domain with a virtual host is 
 
 In addition, you have the option to secure your custom domain with either a one-way or a two-way SSL certificate. A one-way SSL certificate validates only the secure identity of the API Proxy, providing encryption and authentication for the server. On the other hand, a two-way SSL certificate validates the identities of both the API Proxy and the client, providing mutual authentication.
 
-If you want to request a two-way SSL certificate, see [Request for Two-Way SSL Certificate](request-for-two-way-ssl-certificate-9faf7ce.md). This process enables you to establish a more secure connection between your API Proxy and the client, ensuring that both parties can trust each other's identities.
+If you want to request a two-way SSL certificate, see [Request for a Two-Way SSL Certificate](request-for-a-two-way-ssl-certificate-9faf7ce.md). This process enables you to establish a more secure connection between your API Proxy and the client, ensuring that both parties can trust each other's identities.
 
 To request a custom domain with one-way SSL, perform the following steps:
 
@@ -75,9 +75,11 @@ To request a custom domain with one-way SSL, perform the following steps:
 
 [Requesting an Additional Virtual Host in Cloud Foundry Environment](requesting-an-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "Create a new virtual host or update an alias for an existing virtual host in the Cloud Foundry environment.")
 
-[Request for Two-Way SSL Certificate](request-for-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
+[Request for a Two-Way SSL Certificate](request-for-a-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
 
 [Assign User Roles in API Management](assign-user-roles-in-api-management-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
+
+[Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "Cancel your API portal and API business hub enterprise application subscriptions to disable your account from the API Management service.")
 
 [Requesting an Additional Virtual Host in Cloud Foundry Environment](requesting-an-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "Create a new virtual host or update an alias for an existing virtual host in the Cloud Foundry environment.")
 

@@ -35,18 +35,7 @@ Instead of consuming services directly, application developers can access APIs e
 
     A list of registered APIs appears in the catalog.
 
-    Alternatively, browse for a service on a specific API provider. To do so, you must configure the required API provider. For more You can view the number of calls made for an API in the current month. The data is visible for each API in the *Calls* column and also on the details screen of the individual API.
-
-    You can click the refresh icon to obtain the latest data.
-
-    > ### Note:  
-    > There’s some delay in reflecting the latest data.
-
-    The notion used to display the data follows metric specifications, for example:
-
-    -   999 shows as 999 and 1000 shows as 1k
-    -   999000 shows as 999 K and 1000000 shows as 1M
-    -   1500000 shows as 1.5M and 1000000000 shows as 1G
+    Alternatively, browse for a service on a specific API provider. To do so, you must configure the required API provider. You can view the number of calls made for an API in the current month. The data is visible for each API in the *Calls* column and also on the details screen of the individual API.
 
 3.  To expose a service as an API, choose *Create*.
 

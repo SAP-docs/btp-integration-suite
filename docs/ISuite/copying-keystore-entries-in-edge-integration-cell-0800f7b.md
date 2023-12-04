@@ -105,5 +105,5 @@ If you don’t select this option while choosing a name that already exist in yo
 
 ## Working with Security Artifacts
 
-For Edge Integration Cell, there are certain things to consider when working with security artifacts. For more information, see [Supported Features and Limitations of Edge Integration Cell](supported-features-and-limitations-of-edge-integration-cell-144c64a.md).
+For Edge Integration Cell, there are certain things to consider when working with security artifacts. For more information, see [Edge Integration Cell Runtime Scope](edge-integration-cell-runtime-scope-144c64a.md).
 

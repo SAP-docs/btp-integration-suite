@@ -6,8 +6,6 @@ High Availability \(HA\) is a key requirement for production environments. In a 
 
 Kubernetes as a platform offers a number of resiliency features, like restarting failed containers, removing containers that don't respond to defined health checks, already improving availability to a certain level. Additionally, it can take care of scaling and failover of applications, or handle node failures gracefully.
 
-Kubernetes as a platform offers a number of resiliency features, like restarting failed containers, killing containers that don't respond to defined health checks, already improving availability to a certain level. Additionally, it can take care of scaling and failover of applications, or handle node failures gracefully.
-
 
 
 

@@ -31,7 +31,7 @@ Certain constraints apply with regard to the number and capacity of involved que
 > 
 > See: SAP note [3356078](https://me.sap.com/notes/3356078)
 
-Once you've created a receiver channel and selected the JMS Receiver Adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
+Once you've created a receiver channel and selected the JMS receiver adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 Select the *General* tab and provide values in the fields as follows.
 
@@ -100,6 +100,11 @@ You can dynamically configure this field, for instance, by using expressions lik
 > ### Note:  
 > Header or property name must start with a character aA-zZ.
 
+> ### Note:  
+> When you define the queue name with the *Queue Name* parameter of the JMS receiver adapter, the queue is created automatically on deployment of the integration flow that uses the adapter. This is **not** the case when you define the queue name dynamically based on a header or a property.
+> 
+> Therefore, it is recommended to first deploy all integration flows with the JMS sender adapters that are related to your scenario. After this step, all required queues are in place when the JMS receiver adapter comes into play and dynamically determines the related queue names.
+
 
 
 </td>
@@ -157,7 +162,7 @@ Select this option to encrypt the message in the JMS queue.
 **Related Information**  
 
 
-[JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md "The JMS messaging instance that is used in asynchronous messaging scenarios with the JMS, AS2, AS4, or XI adapter has limited resources.")
+[JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md "The JMS messaging instance has limited resources. You can increase the capacity of these resources to a certain extend.")
 
 [Apply the Retry Pattern with JMS Queue](apply-the-retry-pattern-with-jms-queue-da17d2d.md "")
 

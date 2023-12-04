@@ -2,7 +2,7 @@
 
 # Manage External Content \(New Design\)
 
-From this page, you can configure additional content, such as graph BDGs, to be displayed on the API business hub enterprise.
+On this page, you have the option to adjust the visibility of the Graph navigator on the API business hub enterprise. .
 
 
 
@@ -10,7 +10,7 @@ From this page, you can configure additional content, such as graph BDGs, to be 
 
 ## Prerequisites
 
--   *AuthGroup.API.Admin* 
+-   Assign the *AuthGroup.API.Admin* role.
 
     To assign the role, see [Assign User Roles in API Management](../assign-user-roles-in-api-management-911ca5a.md) .
 
@@ -39,6 +39,6 @@ If the graph feature is deactivated in the Integration Suite, the *Configure Gra
 
 3.  Use the slider button to enable/disable the graph feature.
 
-    Choose *Yes/No* in the conformation dialog.
+    Choose *Yes/No* in the confirmation dialog.
 
 
