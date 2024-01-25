@@ -10,7 +10,7 @@ There can be instances where you have to update the credentials once the connect
 
 ## Prerequisites
 
-To update the API portal access credentials, you must first generate it. To generate the credentials from the API Portal, you must have the *APIPortal. Administrator* role assigned to you.
+To update the API Management tenant access credentials, you must first generate it. To generate the credentials from theAPI Management tenants, you must have the *APIPortal. Administrator* role assigned to you.
 
 1.  Log in to the .
 
@@ -18,7 +18,7 @@ To update the API portal access credentials, you must first generate it. To gene
 
 3.  Choose the *Connection* tab.
 
-4.  Choose *Regenerate Credentials* and *Copy* the API portal access credentials.
+4.  Choose *Regenerate Credentials* and *Copy* the access credentials.
 
 
 > ### Note:  
@@ -30,13 +30,13 @@ To update the API portal access credentials, you must first generate it. To gene
 
 ## Context
 
-To establish the connection between the API portal and the API business hub enterprise, the client Id and client secret created for the API Portal is shared during the connection request process.
+To establish the connection between the API Management tenant and the API business hub enterprise, the Client ID and Client Secret created for the API Management tenant is shared during the connection request process.
 
 If you encounter one of the following situations after the connection request has already been approved by the API business hub enterprise admin, you have to update the credentials:
 
--   The service instance, or the service key gets deleted after the connection between the API portal and the API business hub enterprise was established. In this case, the credentials you were using before the service instance or the service key got deleted becomes invalid.
+-   The service instance, or the service key gets deleted after the connection between the API Management tenant and the API business hub enterprise was established. In this case, the credentials you were using before the service instance or the service key got deleted becomes invalid.
 
--   Similarly, if the destination that fetches the API content from the API Portal workspace gets deleted, the credentials you were using before the destination got deleted becomes invalid.
+-   Similarly, if the destination that fetches the API content from theAPI Management tenant workspace gets deleted, the credentials you were using before the destination got deleted becomes invalid.
 
 
 > ### Note:  
@@ -69,7 +69,7 @@ If you encounter one of the following situations after the connection request ha
     ```
 
     > ### Note:  
-    > These credentials will remain valid for a period of 65 days. Please make sure to regenerate them and reestablish the connection within this timeframe.
+    > The credentials required to establish the connection will be valid for 365 days. Please remember to regenerate them and reestablish the connection within this timeframe. However, any credentials generated previously with a validity of 65 days will remain valid for that duration. The 365-day timeframe will apply to all newly generated credentials.
 
 5.  Choose *Save*.
 

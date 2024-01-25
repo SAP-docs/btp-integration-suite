@@ -10,7 +10,7 @@ The following table shows what settings are required to ensure guaranteed delive
 > For the scenarios where the sender handles retry, we assume that the sender passes the header `SapMessageIdEx` to the integration flow.
 
 > ### Note:  
-> Whereas for the SAP RM adapter and the XI adapter you can choose between the three options Generate, Reuse and Map to determine the Message ID, the IDoc adapter implicitly uses the header `SapMessageId` for duplicate handling in the backend.
+> For all adapters, you can choose between the three options *Generate*, *Reuse* and *Map* to determine the message ID. Whereas for the SAP RM adapter and the XI adapter the header `SapMessageIdEx` is used for duplicate handling in the backend, the IDoc adapter uses the header `SapMessageId`.
 
 
 <table>
@@ -64,13 +64,13 @@ See: [XI Receiver Handles Duplicates](xi-receiver-handles-duplicates-fcf026b.md)
 </td>
 <td valign="top">
 
--   Content Modifier Message Header settings
-    -   Name: *SapMessageId* 
-    -   Source Type: *Header* 
-    -   Source Value:*SapMessageIdEx* 
-
 -   Adapter Connection settings
     -   IDoc Content Type:*Application/x-sap.idoc*
+
+-   Adapter Processing settings
+    -   SAP Message ID Determination:*Map*
+    -   Source for SAP Message ID: header *SapMessageIdEx*
+
 
 
 See: [IDoc Receiver Handles Duplicates](idoc-receiver-handles-duplicates-8f8feea.md)
@@ -107,13 +107,13 @@ See: [XI Receiver Handles Duplicates \(based on unique ID in payload\)](xi-recei
 </td>
 <td valign="top">
 
--   ID Mapper with
-    -   Source Message ID: *unique ID* in payload
-    -   Target Header Name:*SapMessageId*
-    -   Context: any
-
 -   Adapter Connection settings
     -   IDoc Content Type:*Application/x-sap.idoc*
+
+-   Adapter Processing settings
+    -   SAP Message ID Determination:*Map*
+    -   Source for SAP Message ID: unique ID in payload
+
 
 
 See:[IDoc Receiver Handles Duplicates \(based on unique ID in payload\)](idoc-receiver-handles-duplicates-based-on-unique-id-in-payload-bb441a9.md) 
@@ -150,13 +150,13 @@ See: [XI Receiver Handles Duplicates \(with decoupling via JMS Queue\)](xi-recei
 </td>
 <td valign="top">
 
--   Content Modifier Message Header settings
-    -   Name: *SapMessageId* 
-    -   Source Type: *Header* 
-    -   Source Value:*SAP\_MessageProcessingLogID* 
-
 -   Adapter Connection settings
     -   IDoc Content Type:*Application/x-sap.idoc*
+
+-   Adapter Processing settings
+    -   SAP Message ID Determination:*Map*
+    -   Source for SAP Message ID: header SAP\_*MessageProcessingLogID*
+
 
 
 See: [IDoc Receiver Handles Duplicates \(with decoupling via JMS Queue\)](idoc-receiver-handles-duplicates-with-decoupling-via-jms-queue-776b640.md)
@@ -214,6 +214,10 @@ See: [ID Mapping \(with Splitter\)](id-mapping-with-splitter-441e51d.md)
 -   Adapter Connection settings
     -   IDoc Content Type:*Application/x-sap.idoc*
 
+-   Adapter Processing settings
+    -   SAP Message ID Determination: *Reuse*
+
+
 
 
 
@@ -268,6 +272,10 @@ Splitter scenario where sender handles retry providing unique ID in payload \(pa
 -   Adapter Connection settings
     -   IDoc Content Type:*Application/x-sap.idoc* 
 
+-   Adapter Processing settings
+    -   SAP Message ID Determination: *Reuse*
+
+
 
 
 
@@ -320,7 +328,13 @@ Splitter scenario where sender cannot retry \(decoupling via JMS queues, splitte
 
 
 -   Adapter Connection settings
+
     -   IDoc Content Type:*Application/x-sap.idoc* 
+
+-   Adapter Processing settings
+
+    -   SAP Message ID Determination: *Reuse*
+
 
 
 

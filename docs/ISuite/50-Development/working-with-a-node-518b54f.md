@@ -183,7 +183,7 @@ Once you have created a message implementation guideline, you can edit and modif
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="5">
+    <td valign="top" rowspan="6">
     
     Properties
     
@@ -218,6 +218,23 @@ Once you have created a message implementation guideline, you can edit and modif
     <td valign="top">
     
     Yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Nillable
+    
+    </td>
+    <td valign="top">
+    
+    Displays if the XML-node is nillable
+    
+    </td>
+    <td valign="top">
+    
+    No
     
     </td>
     </tr>

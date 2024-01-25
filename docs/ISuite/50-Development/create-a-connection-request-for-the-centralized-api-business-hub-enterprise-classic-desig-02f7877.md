@@ -4,7 +4,7 @@
 
 # Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]
 
-To publish the Integration Suite API Management tenant content on the API business hub enterprise, you must create a request to connect the Integration Suite API Management tenant to the API business hub enterprise.
+Create a request to connect the Integration Suite API Management tenant to the API business hub enterprise. You need to establish this connection to publish the content of the Integration Suite API Management tenant on the API business hub enterprise.
 
 
 
@@ -16,10 +16,15 @@ To publish the Integration Suite API Management tenant content on the API busine
 
 -   To establish a connection between an Integration Suite API Management tenant and the centralised API business hub enterprise which is available in a different sub-account, you must ensure that the API business hub enterprise capability is not enabled in the same sub-account as that of the Integration Suite API Management tenant .
 
--   Raise an offline request to the API business hub enterprise administrator for assigning the *AuthGroup.APIPortalRegistration* role to you.
+-   The following role collections should be assigned to you:
+    -   *AuthGroup.API.Admin*
 
-    > ### Note:  
-    > You can't create a connection request, without the *AuthGroup.APIPortalRegistration* role.
+    -   *APIPortal.Administrator*
+
+    -   *AuthGroup.APIPortalRegistration*: You can't create a connection request, without the *AuthGroup.APIPortalRegistration* role.
+
+    -   *APIPortal Service.CatalogIntegration*
+
 
 -   Generate the access credentials to establish the connection. To generate the credentials from the Integration Suite API Management tenant, you must have the *APIPortal. Administrator* role assigned to you.
 

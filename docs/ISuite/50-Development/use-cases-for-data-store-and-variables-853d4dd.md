@@ -16,7 +16,9 @@ In such a case, you can implement a scenario where 2 integration flows are invol
 
 1.  Integration flow 1 stores a message \(received from a connected sender component\) in the data store.
 
-2.  Integration flow 2 \(initiated by an external call\) actively polls the message from the data store.
+2.  Integration flow 2 \(initiated by an external call or a Data Store sender adapter\) actively polls the message from the data store.
+
+    You can use the Data Store sender adapter to allow SAP Integration Suite to consume messages from a data store. This feature helps you to enable asynchronous decoupling of inbound and outbound processing by using the data store as temporary storage. When configuring the Data Store sender adapter, you can specify parameters such as the poll interval that determines the time to wait before consuming messages from the data store. You can also define the retry behavior.
 
 3.  Integration flow 2 gets the message from the data store.
 
@@ -82,7 +84,7 @@ The figure shows a setup where information from the WebShop \(which is the provi
 
 1.  Integration flow 1 requests the information from the provider.
 
-    As an example, think of a scenario where a product price is ready on a daily basis from the WebShop by an integration flow that is triggered by a timer.
+    As an example, think of a scenario where a product price is ready on a daily basis from the WebShop by an integration flow.
 
 2.  As a response, integration flow 1 gets the information.
 
@@ -107,7 +109,7 @@ In the scenario, a global data store is used.
 
 1.  Integration flow 1 receives the message from the sender and stores it in the data store \(using the *Data Store Write* step\).
 
-2.  Integration flow 2 \(triggered by a *Timer* step with a scheduler\) actively polls the message from the data store.
+2.  Integration flow 2 \(using the Data Store sender adapter\) actively polls the message from the data store. Alternatively, this step can also be triggered by a *Timer* step with a scheduler.
 
 3.  Integration flow 2 reads the message from the data store.
 
@@ -137,13 +139,18 @@ In the scenario, a global data store is used.
 
     To handle exceptions, integration flow 1 is designed in such a way that an exception subprocess takes over this step \(see [Handle Exceptions](handle-exceptions-ca95c61.md)\).
 
-3.  Integration flow 2 \(triggered by a *Timer* step with a scheduler\) actively polls the message from the data store.
+3.  Integration flow 2 \(using the Data Store sender adapter\) actively polls the message from the data store. Alternatively, this step can also be triggered by a *Timer* step with a scheduler.
 
 4.  Integration flow 2 reads the message from the data store.
 
 5.  Integration flow 2 sends the message to the receiver.
 
-For more information on the data store steps, see [Define Data Store Operations](define-data-store-operations-79f63a4.md).
+**Related Information**  
 
-For more information on variables, see [Define Write Variables](define-write-variables-de04b75.md).
+
+[Data Store Sender Adapter](data-store-sender-adapter-4f5ef3f.md "This adapter enables Cloud Integration to consume messages from a data store. This feature helps you to enable asynchronous decoupling of inbound and outbound processing by using the data store as temporary storage.")
+
+[Define Data Store Operations](define-data-store-operations-79f63a4.md "You can use the data store to temporarily store messages.")
+
+[Define Write Variables](define-write-variables-de04b75.md "You define variables to share data across different integration flows (deployed on the same tenant).")
 

@@ -136,6 +136,8 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     </table>
     
+    Select the checkbox for *Show Administrative Data* if you want the administrative data of MIGs and MAGs to be displayed in the documentation.
+
     **Back Cover Page**
 
 

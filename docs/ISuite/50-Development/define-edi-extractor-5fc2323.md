@@ -29,9 +29,9 @@ EDI Extractor supports EDIFACT, EANCOM, ODETTE, TRADACOMS, and ASC-X12 documents
 5.  If you want to terminate the creation of package, choose *Cancel* before saving it.
 
     > ### Note:  
-    > -   Any EDIFACT message is an interchange. An interchange can have multiple groups. And each group consists of message types. For EDIFACT message, the EDI elements in SAP Cloud Integration support only 1 message type per interchange but does not support any group segment \(GS\) per interchange segment.
-    > -   Any ASC-X12 message is an interchange. An interchange can have multiple groups. And each group consists of transaction sets. For ASC-X12 message, the EDI elements in SAP Cloud Integration support only 1 group segment \(GS\) per interchange segment and only 1 transaction set \(ST\) per group segment.
-    > -   SAP Cloud Integration does not support repetition characters. Repetition character is a single character which separates the instances of a repeating data element. For example, *^* \(caret sign\) is a repetition character.
+    > -   Any EDIFACT message is an interchange. An interchange can have multiple groups. And each group consists of message types. For EDIFACT message, the EDI elements in Cloud Integration support only 1 message type per interchange but does not support any group segment \(GS\) per interchange segment.
+    > -   Any ASC-X12 message is an interchange. An interchange can have multiple groups. And each group consists of transaction sets. For ASC-X12 message, the EDI elements in Cloud Integration support only 1 group segment \(GS\) per interchange segment and only 1 transaction set \(ST\) per group segment.
+    > -   Cloud Integration does not support repetition characters. Repetition character is a single character which separates the instances of a repeating data element. For example, *^* \(caret sign\) is a repetition character.
     > -   In a ODETTE message payload, provide the value for *SAP\_EDI\_Document\_Standard* header as `ODETTE`.
 
 

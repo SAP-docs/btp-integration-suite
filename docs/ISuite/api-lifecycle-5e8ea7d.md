@@ -11,15 +11,15 @@ API Management in SAP Integration Suite is used to discover, shape, compose, int
 **Related Information**  
 
 
-[Build APIs](50-Development/build-apis-74c042b.md "SAP Integration Suite provides a common platform for API designers to define and publish APIs. Every SAP Integration Suite customer is provided with their own SAP Integration Suite application on cloud. The SAP Integration Suite offers capabilities to configure systems, build and publish APIs, analyze and test APIs.")
+[Build API Proxies](50-Development/build-api-proxies-74c042b.md "SAP Integration Suite provides a common platform for API designers to define and publish APIs. Every SAP Integration Suite customer is provided with their own SAP Integration Suite application on cloud. The SAP Integration Suite offers capabilities to configure systems, build and publish APIs, analyze and test APIs.")
 
-[Test APIs](https://help.sap.com/viewer/4425026877144cc2b15505ed30215167/IAT/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of APIs.") :arrow_upper_right:
+[Test API Proxies](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of the API proxies.") :arrow_upper_right:
 
-[Publish APIs](50-Development/publish-apis-75a4a11.md "You need to publish APIs to make it consumable by external application developers. Publishing enables to expose the APIs in a structured manner in the form of a product. To publish APIs, you need to know how to bundle APIs and publish them together as a product.")
+[Publish API Proxies](50-Development/publish-api-proxies-75a4a11.md "To make your API consumable by external application developers, it is necessary to publish API proxies. Publishing allows you to expose the API proxies in a structured manner, presenting them as a product. To publish API proxies effectively, it is important to understand how to bundle them together and present them as a cohesive product.")
 
 [Monetize APIs](50-Development/monetize-apis-fcdc89b.md "SAP Integration Suite provides monetization feature to all API providers to generate revenue for using the APIs.")
 
-[Consume APIs](50-Development/consume-apis-ea561e4.md "The classic design will be deprecated soon. The new design of the API business hub enterprise will be set as your default design from March 2023. However, you’ll still be able to toggle between the new and old design until June 2024.")
+[Consume API Proxies](50-Development/consume-api-proxies-ea561e4.md "The classic design will be deprecated soon. The new design of the API business hub enterprise will be set as your default design from March 2024. However, you’ll still be able to toggle between the new and old design until June 2024.")
 
 [Analyze APIs](50-Development/analyze-apis-7712c61.md "Use the capabilities of API Analytics to analyze API usage and performance.")
 

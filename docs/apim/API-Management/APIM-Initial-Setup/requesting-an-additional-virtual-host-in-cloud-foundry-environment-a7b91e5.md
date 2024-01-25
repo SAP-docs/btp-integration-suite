@@ -27,6 +27,9 @@ Virtual hosts are the base URLs of an API Proxy. They include the protocol \(htt
 -   You can create a new virtual host.
 -   You can update an alias of an existing virtual host.
 
+> ### Note:  
+> The maximum number of virtual hosts that can be configured for each subaccount through the API portal is 20.
+
 
 
 <a name="loioa7b91e5aca32497ca2b17c671ed2bb42__steps_xzq_hr4_dmb"/>

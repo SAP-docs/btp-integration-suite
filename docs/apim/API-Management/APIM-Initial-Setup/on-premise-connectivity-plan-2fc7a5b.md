@@ -34,11 +34,11 @@ This topic explains how to obtain a service key in order to enable principal pro
 
 Create a service instance to generate a service key that is used to enable the principal propagation.
 
-1.  In your web browser, open the *SAP BTP Cockpit* - [https://eu-access.cockpit.btp.cloud.sap](https://eu-access.cockpit.btp.cloud.sap).
+1.  In your web browser, open the - [SAP BTP Cockpit](https://eu-access.cockpit.btp.cloud.sap).
 2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
 3.  Choose *API Management, API portal* \> *Instances* \> *New Instance*.
 4.  In the *Create Instance* dialog, choose *on-premise-connectivity* plan.
-5.  Click *Next* until you reach the *Confirm* section.
+5.  Select *Next* until you reach the *Confirm* section.
 6.  In the section *Confirm*, enter a unique *Instance Name*, and choose *Finish*.
 
 
@@ -50,7 +50,7 @@ Create a service instance to generate a service key that is used to enable the p
 After you have created a service instance, proceed with:
 
 1.  Choose the created service instance link from the visible list.
-2.  In the left-hand pane, navigate to *Service Keys* \> *Create Service Key*.
+2.  In the left pane, navigate to *Service Keys* \> *Create Service Key*.
 3.  In the *Create Service* dialog, provide a *Name* and *Description* \(optional\).
 
 4.  In the text box enter one of the following payloads as per your requirement:

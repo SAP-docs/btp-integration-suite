@@ -22,7 +22,7 @@ Use the following procedure to delete an API Management service instance on Clou
 1.  In your Web browser, open the SAP BTP Cockpit.
 2.  In the provider account, choose *Services* \> *Service Marketplace* \> *Instances*
 3.  Select the API Management service tile.
-4.  From the list of instances visible, select the instance that you want to delete and choose ![](API-Management/APIM-Initial-Setup/images/delete_instance_8833fbd.png).
+4.  From the list of instances visible, select the instance that you want to delete and choose ![](images/delete_instance_8833fbd.png).
 5.  Choose *OK*.
 
 

@@ -2,7 +2,7 @@
 
 # Manage Updates \[Classic Design\]
 
-**The classic design will be deprecated soon. The new design of the API business hub enterprise will be set as your default design from March 2023. However, you’ll still be able to toggle between the new and old design until June 2024.**
+Configure the updates to be displayed in the *Updates* section on the home page.
 
 
 
@@ -16,7 +16,7 @@ You have the site admin role assigned to you.
 
 ## Context
 
-Configure the updates to be displayed in the *Updates* section on the home page. Use the following procedure to configure updates.
+Use the following procedure to configure updates.
 
 
 

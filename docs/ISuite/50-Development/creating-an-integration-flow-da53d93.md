@@ -52,7 +52,7 @@ An integration flow is a graphical representation of the flow and processing of 
         > ### Tip:  
         > If you don't find a sender or receiver system of your choice, or want to add your own values, type in the *Sender* and *Receiver* fields and press [tab\] button in your keyboard. You can also add multiple values if it's necessary.
 
-    6.  Choose *OK*. Alternatively, you can press the [Enter\]/[Return\] key to create the integration flow.
+    6.  Choose *Add* to just create an integration flow or *Add and Open in Editor* to open the integration flow in its editor. Alternatively, you can press the [Enter\]/[Return\] key to create an integration flow.
 
 
 5.  If you want to upload an integration flow, execute the following substeps:
@@ -66,7 +66,7 @@ An integration flow is a graphical representation of the flow and processing of 
         > 
         > -   However, you can also manually edit the *ID* field and, once it’s modified manually, changing the name of the integration flow doesn’t make any auto-changes to the *ID* field again.
 
-    3.  Choose *OK*. Alternatively, you can press the [Enter\]/[Return\] key to create the integration flow.
+    3.  Choose *Add* to just create an integration flow or *Add and Open in Editor* to open the integration flow in its editor. Alternatively, you can press the [Enter\]/[Return\] key to create an integration flow.
 
         > ### Note:  
         > You can copy an integration flow by choosing <span class="SAP-icons"></span> Actions in the *Action* column, and then *Copy*.

@@ -90,7 +90,7 @@ API Business Hub Enterprise \[New Design\]
 </td>
 <td valign="top">
 
-If you have added API Business Hub Enterprise as a capability with Integration suite, or if you’ve subscribed to API Business Hub Enterprise as part of standalone API Management subscription, we now have a new design of the user interface for you to experience. For more information, see [Consume APIs](consume-apis-ea561e4.md) and [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
+If you have added API Business Hub Enterprise as a capability with Integration suite, or if you’ve subscribed to API Business Hub Enterprise as part of standalone API Management subscription, we now have a new design of the user interface for you to experience. For more information, see [Consume API Proxies](consume-api-proxies-ea561e4.md) and [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
 
 </td>
 <td valign="top">
@@ -218,7 +218,7 @@ Consume APIs Using SAP Business Application Studio
 </td>
 <td valign="top">
 
-The service center in SAP Business Application Studio provides a central entry point to explore products and services from API business hub enterprise. For more information, see [Consume APIs Using SAP Business Application Studio](consume-apis-using-sap-business-application-studio-15732eb.md).
+The service center in SAP Business Application Studio provides a central entry point to explore products and services from API business hub enterprise. For more information, see [Consume API Proxies Using SAP Business Application Studio](consume-api-proxies-using-sap-business-application-studio-15732eb.md).
 
 </td>
 <td valign="top">
@@ -474,7 +474,7 @@ Download Open API specification
 </td>
 <td valign="top">
 
-You can now download the open API specification for the APIs that are part of the API business hub enterprise in JSON format. For more information, see [Consume APIs](consume-apis-ea561e4.md).
+You can now download the open API specification for the APIs that are part of the API business hub enterprise in JSON format. For more information, see [Consume API Proxies](consume-api-proxies-ea561e4.md).
 
 </td>
 <td valign="top">

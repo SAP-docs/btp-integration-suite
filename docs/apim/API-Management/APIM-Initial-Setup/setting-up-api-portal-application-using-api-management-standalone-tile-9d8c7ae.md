@@ -121,19 +121,19 @@ Once API Business Hub Enterprise is set up, navigate to :gear: and choose *Conne
 **Related Information**  
 
 
-[Setting Up API Management Capability from Integration Suite](setting-up-api-management-capability-from-integration-suite-f6eb433.md "You can provision the API Management capability from the Integration Suite launchpad.")
+[Enabling API Management Capability from Integration Suite](enabling-api-management-capability-from-integration-suite-f6eb433.md "You can provision the API Management capability from the Integration Suite launchpad.")
 
-[Assign User Roles in API Management](assign-user-roles-in-api-management-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
+[User Roles in API Management](user-roles-in-api-management-911ca5a.md "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.")
 
-[Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "Cancel your API portal and API business hub enterprise application subscriptions to disable your account from the API Management service.")
+[Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "You can deactivate your API Management capability from Integration Suite to disable your account from the API Management service.")
 
-[Build APIs](../build-apis-74c042b.md "provides a common platform for API designers to define and publish APIs. Every customer is provided with their own application on cloud. The offers capabilities to configure systems, build and publish APIs, analyze and test APIs.")
+[Build API Proxies](../build-api-proxies-74c042b.md "provides a common platform for API designers to define and publish APIs. Every customer is provided with their own application on cloud. The offers capabilities to configure systems, build and publish APIs, analyze and test APIs.")
 
 [Create an API Provider](../create-an-api-provider-6b263e2.md "Define the details of the host you want an application to reach by creating an API provider.")
 
-[Different Methods of Creating an API](../different-methods-of-creating-an-api-4ac0431.md "An API proxy is the data object that contains all the functionality to be executed when an external user wants to access the backend service.")
+[Different Methods of Creating an API Proxy](../different-methods-of-creating-an-api-proxy-4ac0431.md "An API proxy is the data object that contains all the functionality to be executed when an external user wants to access the backend service.")
 
 [Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "A virtual host lets you host multiple domain names on API Management capability within Integration Suite.")
 
-[Request for Two-Way SSL Certificate](request-for-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
+[Request for a Two-Way SSL Certificate](request-for-a-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
 

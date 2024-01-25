@@ -150,28 +150,6 @@ If not, restrict your XSD file before the upload: simply remove the respective e
 <tr>
 <td valign="top">
 
-*xsd:nillable* not supported
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-Remove the **xsd:nillable** declaration from the XSD.
-
-> ### Note:  
-> The result is not fully equivalent. Any **xsi:nil** in your payload is not allowed within semantic validation – that means, either you cannot use **xsi:nil**or you need to skip the validation step. \(Intermediate XSD knowledge recommended.\)
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 No support for advanced XSD features like:
 
 -   xsd:complexContent
@@ -253,12 +231,12 @@ A **wsdl:message** can only refer to one **wsdl:part** declaration. A declaratio
 <tr>
 <td valign="top">
 
-Root element of a *wsdl:message* must be declared within a namespace
+Same global element cannott be referenced by multiple messages
 
 </td>
 <td valign="top">
 
-Root elements without a namespace are not allowed.
+All messages within one WSDL file must refer to different global elements and it is not allowed to reuse a global element in multiple messages.
 
 </td>
 </tr>

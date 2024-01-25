@@ -33,7 +33,7 @@ You are updating a policy template.
 
 2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
-    A list of registered APIs appears in the catalog.
+    A list of APIs appears in the catalog.
 
 3.  In the list, choose the API for which you want to update the policy template.
 

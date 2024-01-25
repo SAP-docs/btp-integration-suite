@@ -379,7 +379,7 @@ Apart from adding resources that are local your integration flow, you can also r
 
 2.  Select one or more integration packages.
 
-    You see a list of available reusable artifacts from the selected packages.
+    You will find a list of available reusable artifacts from the selected packages.
 
 3.  In the *Artifacts* table, select one or more files.
 

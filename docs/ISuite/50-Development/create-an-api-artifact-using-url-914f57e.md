@@ -154,6 +154,18 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Virtual Host URL
+    
+    </td>
+    <td valign="top">
+    
+    You can view the *Virtual Host URL* for the selected Runtime Profile from this page.
+    
+    </td>
+    </tr>
     </table>
     
 7.  Choose *Create*.

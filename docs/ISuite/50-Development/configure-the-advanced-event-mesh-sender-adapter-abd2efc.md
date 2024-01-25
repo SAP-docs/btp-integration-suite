@@ -296,7 +296,7 @@ The alias of the OAuth2 Refresh token URL, stored as Secure Parameter.
 </td>
 <td valign="top">
 
-A map of key-value pairs to configure additional connection properties. See [JCSMP Properties](https://docs.solace.com/API-Developer-Online-Ref-Documentation/java/com/solacesystems/jcsmp/JCSMPProperties.html) and [JCSMP Channel Properties](https://docs.solace.com/API-Developer-Online-Ref-Documentation/java/com/solacesystems/jcsmp/JCSMPChannelProperties.html) for the available options.
+A map of key-value pairs to configure additional connection properties. See `https://docs.solace.com/API-Developer-Online-Ref-Documentation/java/com/solacesystems/jcsmp/JCSMPProperties.html` and `href="https://docs.solace.com/API-Developer-Online-Ref-Documentation/java/com/solacesystems/jcsmp/JCSMPChannelProperties.html` for the available options.
 
 > ### Note:  
 > JCSMP channel property keys must be prepended by \`CLIENT\_CHANNEL\_PROPERTIES.\`. For example:

@@ -75,67 +75,55 @@ The following patch release information covers the most recent changes made to t
 
 
 
-<a name="loio58595b51441942d2bcf6992080a613d2__section_kdc_fqx_2tb"/>
-
-## May 2022
-
-**Software Increment: 2202**
+The following sections contain patch release information on the individual SAP Integration Suite capabilities.
 
 
 <table>
 <tr>
 <th valign="top">
 
-Technical Component
+Capabilities
 
 </th>
 <th valign="top">
 
-Software Version
-
-</th>
-<th valign="top">
-
-Description
+Patch Release Documentation
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-Integration Suite
+Cloud Integration 
+
+Trading Partner Management
+
+Integration Advisor
+
+Integration Assessment
+
+Migration Assessment
+
+Edge Integration Cell
 
 </td>
 <td valign="top">
 
-3.37.3
+[Patch Releases for Cloud Integration and Related Components](patch-releases-for-cloud-integration-and-related-components-023a472.md) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management 
 
 </td>
 <td valign="top">
 
-The SAP Integration Suite landing page \(launchpad\) and provisioning application showed blank page for customers with Japanese as browser language preference. This patch fixes the issue.
+[Patch Releases for API Management](patch-releases-for-api-management-6ddd927.md) 
 
 </td>
 </tr>
 </table>
-
-
-
-The following sections contain patch release information on the individual SAP Integration Suite capabilities.
-
-
-
-<a name="loio58595b51441942d2bcf6992080a613d2__section_amg_hmm_1qb"/>
-
-## Cloud Integration, Integration Advisor, and Integration Assessment
-
-To view the latest updates on hotfixes and patches, see: [Patch Release Updates](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/023a4725bb734f86be8a5625abe54110.html).
-
-
-
-<a name="loio58595b51441942d2bcf6992080a613d2__section_emz_n4r_tqb"/>
-
-## API Management
-
-To view the latest updates on hotfixes and patches, see: [Patch Release Updates](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/6ddd927cbeaa42e384dc903e6002e269.html).
 

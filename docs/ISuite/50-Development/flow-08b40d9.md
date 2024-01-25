@@ -22,7 +22,7 @@ A processing pipeline comprises of a Request and a Response stream. Proxy endpoi
 
     To execute a PostClientFlow, perform the following:
 
-    1.  Export the required API proxy from Integration Suite. For more information, see [Export an API](export-an-api-420abb6.md).
+    1.  Export the required API proxy from Integration Suite. For more information, see [Export an API Definition](export-an-api-definition-420abb6.md).
     2.  Add the below sample payload starting from the line `<postClientFlow>` in the `default.xml` file available under `APIProxyEndPoint` folder of your API proxy. For more information, see [API Proxy Structure](api-proxy-structure-4dfd54a.md).
 
         > ### Sample Code:  
@@ -47,7 +47,7 @@ A processing pipeline comprises of a Request and a Response stream. Proxy endpoi
         > ### Note:  
         > In the payload, ensure that the policy name entered in the `<policy_name>` field is an existing policy that belongs to your API proxy. The `Policy` folder displays all the policies that are currently attached to your API proxy.
 
-    3.  Import the updated API proxy in SAP Integration Suite. For more information, see[Import an API](import-an-api-9342a93.md) 
+    3.  Import the updated API proxy in SAP Integration Suite. For more information, see[Import an API Definition](import-an-api-definition-9342a93.md) 
 
 
 A policy can be assigned to any of the above four flow types. You configure a PreFlow and PostFlow in the proxy endpoint or target endpoint configurations only when you want to enforce a policy.

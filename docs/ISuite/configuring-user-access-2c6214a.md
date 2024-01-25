@@ -57,7 +57,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </th>
     <th valign="top">
 
-    You Can...
+    Tasks
     
     </th>
     </tr>
@@ -66,7 +66,7 @@ For more information on role collections, see [Roles and Role Collections](https
     
     Cloud Integration
 
-    For detailed list of scope and actions for each role collection, see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
+    For detailed list of scope and actions for each role collection, see [Tasks and Permissions](60-Security/tasks-and-permissions-556d557.md).
     
     </td>
     <td valign="top">
@@ -76,22 +76,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    -   Discover and copy pre-shipped standard packages.
-
-    -   Monitor integration flows and the status of integration artifacts.
-
-    -   View packages and package artifacts in *Design* workspace
-
-    -   View data store entries
-
-    -   View access policies
-
-    -   View B2B partner profiles and agreements
-
-    -   View design time artifact locks.
-
-
-
+    Refer to [Read-Only Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__read) for the tasks.
     
     </td>
     </tr>
@@ -103,24 +88,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    -   Discover and copy pre-shipped standard packages
-
-    -   Monitor integration flows and the status of integration artifacts.
-
-    -   Edit trace configuration and change log levels and archiving configuration.
-
-    -   View packages and package artifacts in *Design* workspace.
-
-    -   View data store entries.
-
-    -   View design time artifact locks.
-
-    -   Inspect usage of integration resources.
-
-    -   Edit B2B partner profiles and contact persons.
-
-
-
+    Refer to [Business Expert Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__bus) for the tasks.
     
     </td>
     </tr>
@@ -132,14 +100,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    -   Do *PI\_Read\_Only* and *PI\_Business\_Expert* tasks.
-
-    -   Create, edit, import, export, delete package with its artifacts.
-
-    -   Deploy/undeploy artifacts.
-
-
-
+    Refer to [Integration Developer Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__dev) for the tasks.
     
     </td>
     </tr>
@@ -151,20 +112,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    -   Do *PI\_Integration\_Developer* tasks.
-
-    -   Handle tenant level settings like transport, connection to SAP Process Orchestration systems, manage software updates, and a few more.
-
-    -   Manage access policies to restrict user access of integration content.
-
-    -   Deploy security content.
-
-    -   Delete messages from transient data store.
-
-    -   Delete design time artifact locks.
-
-
-
+    Refer to [Tenant Administrator Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__admin) for the tasks.
     
     </td>
     </tr>
@@ -184,7 +132,7 @@ For more information on role collections, see [Roles and Role Collections](https
     -   Complete the onboarding process
     -   Access the *API Settings* page. See [Setting Up API Management Capability](50-Development/setting-up-api-management-capability-f34e86c.md) 
 
-    For more information on relevant roles, see [Assign User Roles in API Management](assign-user-roles-in-api-management-911ca5a.md).
+    For more information on relevant roles, see [User Roles in API Management](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.") :arrow_upper_right:.
 
     For end-to end instructions on how to set up and configure API Management, refer the tutorial [Set Up API Management from Integration Suite | Tutorials for SAP Developers](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html).
     
@@ -285,10 +233,10 @@ For more information on role collections, see [Roles and Role Collections](https
     
     *OpenConnectors\_User*
 
-    To permit additional users access to Open Connectors, assign the OpenConnectors\_User role collection to the new user.
+    To permit additional users access to Open Connectors, assign the `OpenConnectors_User` role collection to the new user.
 
     > ### Note:  
-    > No additional role collection assignment needed, if the logged in user already has the ‘Integration Provisioner’ role collection assigned which you need for general user management.
+    > No action needed if the logged user already has the `Integration Provisioner` role collection.
 
 
     
@@ -298,9 +246,9 @@ For more information on role collections, see [Roles and Role Collections](https
     Add non-SAP cloud applications to your integration scenarios.
 
     > ### Note:  
-    > Just adding the OpenConnectors\_User role collection in the SAP BTP Trust Configuration cockpit isn't sufficient to access Open Connectors. The newly added user will have to be explicitly added as a **member** by the user who enabled SAP Integration Suite \(or by any other user who already has the **Account Admin** privileges\).
+    > Just adding the `OpenConnectors_User` role collection in the SAP BTP Trust Configuration cockpit isn't sufficient to access Open Connectors. The newly added user will have to be explicitly added as a **member** by the Open Connectors admin users.
     > 
-    > See [Open Connectors](https://help.openconnectors.ext.hana.ondemand.com/home/ac-roles).
+    > See [Grant Users Access to Open Connectors, Capability Within SAP Integration Suite](https://blogs.sap.com/2024/01/08/grant-the-user-to-access-to-open-connectors-capability-of-integration-suite/) .
 
 
     

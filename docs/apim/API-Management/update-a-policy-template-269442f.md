@@ -33,7 +33,7 @@ You are updating a policy template.
 
 2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
-    A list of registered APIs appears in the catalog.
+    A list of APIs appears in the catalog.
 
 3.  In the list, choose the API for which you want to update the policy template.
 
@@ -45,6 +45,9 @@ You are updating a policy template.
 
     -   Select the policy template that you want to update, from the *Name* dropdown box.
     -   Choose the required policies from the list of policies available.
+
+    > ### Note:  
+    > If there are any default fault rules or a post-client flow available within the API proxy, they will also be appended to the policy template.
 
 7.  Choose *OK*.
 

@@ -10,13 +10,13 @@ Perform the following steps to use cloud connector with Cloud Integration adapte
 
 1.  Install SAP Cloud Connector on your on premise system. For more information, see [Installing the Cloud Connector](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/57ae3d62f63440f7952e57bfcef948d3.html).
 
-2.  For SAP BTP, **Cloud Foundry** environment, you need to create a role collection for your subaccout. Follow the below mentioned steps:
+2.  For SAP BTP, **Cloud Foundry** environment, you need to create a role collection for your subaccout. Follow the mentioned steps next:
     1.  From your subaccount, navigate to *Security* \> *Role Collections*.
 
-    2.  Choose :heavy_plus_sign: and enter a value for *Name*\(Example: CloudConnector\) and *Description* and choose *Create*.
+    2.  Choose Add role collection:heavy_plus_sign: and enter a value for *Name*\(Example: CloudConnector\) and *Description* and choose *Create*.
     3.  Open the newly created role collection and choose *Edit*.
-    4.  Under the *Roles* section, choose :heavy_plus_sign: and assign the role *Cloud Connector Administrator* from the drop-down list.
-    5.  Under the *Users* section, choose :heavy_plus_sign: and enter the *ID* and *E-Mail* of the user to whom you need to provide access to connect to the cloud connector. Let the value of the *Identity Provider* be *ldap*.
+    4.  Under the *Roles* section, choose Add role collection:heavy_plus_sign: and assign the role *Cloud Connector Administrator* from the drop-down list.
+    5.  Under the *Users* section, choose Add role collection:heavy_plus_sign: and enter the *ID* and *E-Mail* of the user to whom you need to provide access to connect to the cloud connector. Let the value of the *Identity Provider* be *ldap*.
     6.  Choose *Save*.
 
 3.  Set up mutual authentication between the cloud connector and a backend system. For more information, see [Initial Configuration](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/db9170a7d97610148537d5a84bf79ba2.html) and [Initial Configuration \(HTTP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/3f974eae3cba4dafa274ec59f69daba6.html).

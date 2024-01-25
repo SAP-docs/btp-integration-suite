@@ -31,7 +31,7 @@ Here are a few considerations to be mindful of before you work with MIG:
 1.  Choose *Edit*.
 
     > ### Note:  
-    > Ensure that the MIG you are trying to edit is not locked by other users. The *Locked By* field displays the ID of ths user who's currently editing the MIG. You need to have admin rights to unlock it. To know more about the role, see [Assigning Users for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/b5226b95e11b42cd9e257ae6d2b0ee0a.html "") :arrow_upper_right:
+    > Ensure that the MIG you are trying to edit is not locked by other users. The *Locked By* field displays the ID of ths user who's currently editing the MIG. You need to have admin rights to unlock it. To know more about the role, see [Assigning Users for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b5226b95e11b42cd9e257ae6d2b0ee0a.html "") :arrow_upper_right:
 
 2.  Use <span class="SAP-icons"></span> and <span class="SAP-icons"></span> to expand and collapse nodes.
 
@@ -50,7 +50,7 @@ Here are a few considerations to be mindful of before you work with MIG:
     > 
     > To know more on editing these properties, see [Working with a Node](working-with-a-node-518b54f.md)
     > 
-    > Refer to the [Terminology & Glossary for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/9c221b48799a4ce59367b0e3367f5a8f.html "") :arrow_upper_right: to get an understanding of Qualifier, Notes and Codelist.
+    > Refer to the [Terminology & Glossary for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/9c221b48799a4ce59367b0e3367f5a8f.html "") :arrow_upper_right: to get an understanding of Qualifier, Notes and Codelist.
 
 5.  Review the *Message Implementation Guideline* by setting a review status, or comparing the MIG
 
@@ -58,19 +58,6 @@ Here are a few considerations to be mindful of before you work with MIG:
 
     2.  *Compare the structure*, documentation, properties, code values, status and example values of multiple MIGs
 
-
-    Here are some videos to help you in further understanding the capabilities of MIG editor.
-
-    > ### Note:  
-    > These videos were created before our branding changes related to SAP technology were announced in January 2021.
-
-    **Navigate MIG Structure:** 
-
-    **Customize MIG Structure:**
-
-    **Get MIG Proposal:**
-
-    **Create and Add MIG Codelist:**
 
 
 **Related Information**  

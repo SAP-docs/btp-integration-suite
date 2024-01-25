@@ -183,12 +183,81 @@ Proxy type that you're using to connect to the target system.
 
 -   Select *On-Premise* if you’re connecting to an on-premise SFTP server.
 
+-   Select *Manual* to manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry field\).
+
+    This option is only available if *Edge* has been selected as runtime.
+
 -   Select *Dynamic* to let the system determine at runtime which proxy type to use. The value of property `SAP_FtpProxyType` is used for that purpose \(possible values `internet` or `onPremise`\).
 
     If you've selected this option and if the property isn't defined \(for example, in a preceding step\), an error is raised at runtime.
 
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md). For more information on how to use the *On-Premise* option to connect to an on-premise SFTP server, check out SAP Community blog [Cloud Integration – How to Connect to an On-Premise sftp server via Cloud Connector](https://blogs.sap.com/2018/11/16/cloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector/).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Protocol*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Specify the type of proxy server which is used to communicate to the SFTP server. Choose between the following options:
+
+-   *HTTP*
+
+-   *SOCKS Version 4*
+
+-   *SOCKS Version 5*
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Host*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the name of the proxy host to be used. For example: `proxy.mycompany.com`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Port*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the proxy port number to be used.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Credential Name*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the referenced credential name used for proxy authentication.
 
 </td>
 </tr>

@@ -18,7 +18,7 @@ You can create a versioned API Proxy, from either a previously versioned API or 
 
 2.  From the navigation bar, choose ![](images/develop_4910d07.png) \(Develop\).
 
-    A list of registered APIs appears in the catalog.
+    A list of APIs appears in the catalog.
 
 3.  Select the API from which you want to create a new versioned API. This can be either already versioned API, or a nonversioned API.
 

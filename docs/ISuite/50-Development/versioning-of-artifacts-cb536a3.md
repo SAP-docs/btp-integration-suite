@@ -26,7 +26,7 @@ By default, artifact versions follow the versioning convention of `<major>.<mino
 > 
 > -   If you add a new integration flow step to an existing integration flow, increase the micro version, for example, from version `1.0.1` to `1.0.2`.
 > 
-> -   If you enhance an integration flow with a further integration process or an exception subprocess, increase the minor version,for example, from version `1.0.1` to`1.1.0`.
+> -   If you enhance an integration flow with a further integration process or an exception subprocess, increase the minor version, for example, from version `1.0.1` to`1.1.0`.
 > 
 > -   If you have updated an existing integration flow within an integration package, increase the micro version of the package.
 > 
@@ -35,5 +35,5 @@ By default, artifact versions follow the versioning convention of `<major>.<mino
 By default, you only see the latest version of the artifact in the integration package. However, the older versions of the artifact are available for you in the backend. If you want to switch to a different version of that artifact, you can do that by selecting the version and choosing the <span class="SAP-icons"></span> icon corresponding to the version. This feature allows you to replace integration content of the current version with the selected version.
 
 > ### Example:  
-> You are currently using the `1.2.0` version of the artifact, but you want to switch to version `1.1.8`. You click on the version number `1.2.0`, and in the *Version History* dialog, you choose <span class="SAP-icons"></span> icon next to `1.1.8` to replace the integration content of the `1.2.0` version with `1.1.8` version. You can choose *More* to see comments about each version, if any.
+> You are currently using the `1.2.0` version of the artifact, but you want to switch to version `1.1.8`. You select the version number `1.2.0`, and in the *Version History* dialog, you choose <span class="SAP-icons"></span> icon next to `1.1.8` to replace the integration content of the `1.2.0` version with `1.1.8` version. You can choose *More* to see comments about each version, if any.
 

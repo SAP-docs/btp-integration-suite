@@ -196,5 +196,5 @@ This topic describes how to add and activate relevant capabilities in Integratio
 **Related Information**  
 
 
-[Centralized API business hub enterprise \[New Design\]](50-Development/centralized-api-business-hub-enterprise-new-design-38422de.md "The API business hub enterprise is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
+[Centralized API business hub enterprise \[New Design\]](50-Development/centralized-api-business-hub-enterprise-new-design-38422de.md "The centralized API business hub enterprise is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
 

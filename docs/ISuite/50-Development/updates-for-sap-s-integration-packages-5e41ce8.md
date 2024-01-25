@@ -4,7 +4,7 @@
 
 SAP provides preshipped content to address various integration scenarios. You can copy these integration packages from the *Discover* section to the *Design* space. SAP also publishes updates with new enhancements and bug fixes.
 
-Whenever there's an update \(planned or available\) for the content that you've copied into your workspace, you're informed by a label that is displayed below your corresponding artifact.
+Whenever there's an update \(planned or available\) for the content that you've copied into your workspace, you're informed by a label that is displayed your corresponding artifact along this documentation.
 
 > ### Note:  
 > You see a notification for all updates performed on all standard content packages that have been copied from the *Discover* view to the *Design* view of your tenant. This is even the case if the content isn't deployed on your tenant.
@@ -47,7 +47,7 @@ There are two modes through which the package update is done:
 
 ## Automatic
 
-If the content is set to update automatically , the update of the packages in the Design space happens in one of two ways.
+If the content is set to update automatically, the update of the packages in the Design space happens in one of two ways.
 
 
 
@@ -76,7 +76,7 @@ You can always update the package manually even if the package is set to be upda
 
 ## Post Update
 
-After successful update, the updated packages display the last modified details next to the package names, and the design-time artifacts are replaced with the new updated content.
+After successful update, the updated packages display the last modified details alongside the package names, and the design-time artifacts are replaced with the new updated content.
 
 If the artifacts contain previously deployed content, the update procedure triggers the deployment of the new design-time content. If the deployment of updated design-time content fails, then the system retries the deployment three times with an interval of 1 hour. With every iteration, if the deployment fails, the artifact is rolled back to the previously deployed runtime version.
 

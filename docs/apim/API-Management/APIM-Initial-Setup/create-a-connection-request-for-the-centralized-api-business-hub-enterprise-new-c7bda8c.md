@@ -2,7 +2,7 @@
 
 # Create a Connection Request for the Centralized API business hub enterprise \[New Design\]
 
-To publish content from different API management systems \(available via Integration Suite based subscription API Management standalone subscription in Cloud Foundry\) to API business hub enterprise, establish a connection between them by creating a connection request.
+Create a request to connect the Integration Suite API Management tenant to the API business hub enterprise. You need to establish this connection to publish the content of the Integration Suite API Management tenant on the API business hub enterprise.
 
 
 
@@ -10,18 +10,21 @@ To publish content from different API management systems \(available via Integra
 
 ## Prerequisites
 
--   To establish connections between the API business hub enterprise and API Portals, a Cloud Foundry space should be created in the sub-account from where the API business hub enterprise is hosted.
+-   To establish connections between the API business hub enterprise and Integration Suite API Management tenants, a Cloud Foundry space should be created in the sub-account from where the API business hub enterprise is hosted.
 
--   To establish a connection between an API portal and the centralised API business hub enterprise which is available in a different sub-account, you must ensure that the API business hub enterprise capability is not enabled in the same sub-account as that of the API portal.
+-   To establish a connection between an Integration Suite API Management tenant and the centralised API business hub enterprise which is available in a different sub-account, you must ensure that the API business hub enterprise capability is not enabled in the same sub-account as that of the API portal.
 
--   Raise an offline request to the API business hub enterprise administrator for assigning the *AuthGroup.APIPortalRegistration* role to you.
+-   The following role collections should be assigned to you:
+    -   *AuthGroup.API.Admin*
 
-    > ### Note:  
-    > You can't create a connection request, without the *AuthGroup.APIPortalRegistration* role.
+    -   *APIPortal.Administrator*
 
--   You should also have *AuthGroup.API.Admin* role assigned to you.
+    -   *AuthGroup.APIPortalRegistration*: You can't create a connection request, without the *AuthGroup.APIPortalRegistration* role.
 
--   Generate the access credentials to establish the connection. To generate the credentials from the API Portal, you must have the *APIPortal. Administrator* role assigned to you.
+    -   *APIPortal Service.CatalogIntegration*
+
+
+-   Generate the access credentials to establish the connection. To generate the credentials from the Integration Suite API Management tenant, you must have the *APIPortal. Administrator* role assigned to you.
 
     1.  Log in to the .
 
@@ -29,7 +32,7 @@ To publish content from different API management systems \(available via Integra
 
     3.  Choose the *Connection* tab.
 
-    4.  Follow the onscreen instructions under *Connect the API Portal to the centralized API Business Hub Enterprise* to generate the Integration Suite API portal access credentials.
+    4.  Follow the onscreen instructions under *Connect the API Portal to the centralized API Business Hub Enterprise* to generate the Integration Suite API Management tenant access credentials.
 
 
     > ### Note:  
@@ -42,7 +45,7 @@ To publish content from different API management systems \(available via Integra
 
 ## Context
 
-The API business hub enterprise administrator identifies which existing or new API business hub enterprise application can accept content from multiple API portals.
+The API business hub enterprise administrator identifies which existing or new API business hub enterprise application can accept content from multiple Integration Suite API Management tenants.
 
 > ### Note:  
 > Only new Integration Suite subscriptions with API Management capability enabled with the Integration Suite are allowed to set up a connection with the centralized API business hub enterprise.
@@ -50,17 +53,17 @@ The API business hub enterprise administrator identifies which existing or new A
 > ### Note:  
 > You can connect a maximum number of three Integration Suite API portals to the centralized API business hub enterprise.
 
-Create a new subaccount in Cloud Foundry and set up only the API portal.
+Create a new subaccount in Cloud Foundry and set up only the Integration Suite API Management tenant.
 
-For the newly set up API portal, you can request for the API business hub enterprise connection to be established.
+For the newly set up Integration Suite API Management tenant, you can request for the API business hub enterprise connection to be established.
 
 > ### Note:  
-> The option to disconnect an API portal from an existing API business hub enterprise isn’t supported currently.
+> The option to disconnect an Integration Suite API Management tenant from an existing API business hub enterprise isn’t supported currently.
 
 > ### Note:  
 > Once this connection is set up, you can't place a request to severe this connection and establish a new connection with any other centralized API business hub enterprise.
 
-To create a request to connect the API portal to the centralized API business hub enterprise.
+To create a request to connect the Integration Suite API Management tenant to the centralized API business hub enterprise.
 
 > ### Note:  
 > This document describes the new design of the API business hub enterprise. To view the documentation for the classic design, see [Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](create-a-connection-request-for-the-centralized-api-business-hub-enterprise-cla-02f7877.md).
@@ -101,7 +104,7 @@ To create a request to connect the API portal to the centralized API business hu
     </td>
     <td valign="top">
     
-    Enter the API portal name that gets displayed on the API Business Hub Enterprise. This name is used to distinguish products that are published from the API portal and likewise for applications created for the product.
+    Enter the Integration Suite API Management tenant name that gets displayed on the API Business Hub Enterprise. This name is used to distinguish products that are published from the API portal and likewise for applications created for the product.
     
     </td>
     </tr>
@@ -113,7 +116,7 @@ To create a request to connect the API portal to the centralized API business hu
     </td>
     <td valign="top">
     
-    Enter the API portal access credentials that you generated earlier. These credentials are used by the API Business Hub Enterprise to establish the connection.
+    Enter the Integration Suite API Management tenant access credentials that you generated earlier. These credentials are used by the API business hub enterprise to establish the connection.
 
     Sample credentials:
 
@@ -169,10 +172,10 @@ To create a request to connect the API portal to the centralized API business hu
 
 ## Results
 
-You've submitted the connection request to the API business hub enterprise administrator. Once the connection request is approved by the administrator, you can start publishing the Integration Suite API portal content to the API business hub enterprise.
+You've submitted the connection request to the API business hub enterprise administrator. Once the connection request is approved by the administrator, you can start publishing the Integration Suite API Management tenant content to the API business hub enterprise.
 
 > ### Note:  
-> You can log on to the Integration Suite API portal and check the connection status. Navigate to *Settings* \> *APIs* and choose *Connection*.
+> You can log on to the Integration Suite API Management tenant and check the connection status. Navigate to *Settings* \> *APIs* and choose *Connection*.
 > 
 > You can also choose *Test Connection* to get the details about the connectivity status once your connection request is approved. You will get a connection error, if the destination is deleted or configured incorrectly. In case of an error, retry after revalidating the destination configuration.
 

@@ -6,7 +6,7 @@ ProxyEndpoint HTTPTargetConnection elements define a set of HTTP transport prope
 
 
 
-You can export the proxy endpoint as a zip file and add the ProxyEndpoint properties to the the APIProxyEndPoint subfolder under the APIProxy parent folder. For more information, see [Export an API](export-an-api-420abb6.md).
+You can export the proxy endpoint as a zip file and add the ProxyEndpoint properties to the the APIProxyEndPoint subfolder under the APIProxy parent folder. For more information, see [Export an API Definition](export-an-api-definition-420abb6.md).
 
 Properties are set on ProxyEndpoint HTTPProxyConnection elements as follows:
 

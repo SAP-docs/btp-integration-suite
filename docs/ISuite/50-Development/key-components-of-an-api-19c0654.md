@@ -109,7 +109,7 @@ Describes each API resource in a simple and concise manner.
 **Related Information**  
 
 
-[Different Methods of Creating an API](different-methods-of-creating-an-api-4ac0431.md "An API proxy is the data object that contains all the functionality to be executed when an external user wants to access the backend service.")
+[Different Methods of Creating an API Proxy](different-methods-of-creating-an-api-proxy-4ac0431.md "An API proxy is the data object that contains all the functionality to be executed when an external user wants to access the backend service.")
 
 [Additional Configurations](additional-configurations-de7285c.md " ")
 

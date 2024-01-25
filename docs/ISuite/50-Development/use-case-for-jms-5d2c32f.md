@@ -2,11 +2,11 @@
 
 # Use Case for JMS
 
-Using message queues \(JMS queues\), you can implement asynchronous decoupling of messages in an improved was as compared with using the data store \(see [Use Cases for Data Store and Variables](use-cases-for-data-store-and-variables-853d4dd.md)\).
+Using message queues \(JMS queues\), you can implement asynchronous decoupling of messages in an improved way as compared to using the data store \(see [Use Cases for Data Store and Variables](use-cases-for-data-store-and-variables-853d4dd.md)\).
 
 ![](images/Guidelines_JMS_asynchronous_decoupling_b9dc499.png)
 
-To connect to the JMS queue, you use the JMS sender and receiver adapter like shown in the following process flow.
+To connect to the JMS queue, use the JMS sender and receiver adapter as shown in the following process flow.
 
 1.  Integration flow 1 stores the message \(received from the sender\) in the JMS queue using the JMS receiver adapter.
 
@@ -17,10 +17,10 @@ To connect to the JMS queue, you use the JMS sender and receiver adapter like sh
 
 If there's a transfer failure, the message is retried automatically from the message broker.
 
-Integration flow 2 can process multiple messages in parallel. That way, the performance in high volume scenarios is improved.
+Integration flow 2 can process multiple messages in parallel. This way, the performance in high volume scenarios is improved.
 
 > ### Tip:  
-> If you like to set up a simple example scenario using JMS queues, check out [Apply the Retry Pattern with JMS Queue](apply-the-retry-pattern-with-jms-queue-da17d2d.md).
+> If you'd like to set up a simple example scenario using JMS queues, see [Apply the Retry Pattern with JMS Queue](apply-the-retry-pattern-with-jms-queue-da17d2d.md).
 
 For more information on JMS sender and receiver adapter, see [JMS Adapter](jms-adapter-0993f2a.md).
 

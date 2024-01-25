@@ -18,7 +18,7 @@ Another advantage of establishing your own custom domain with a virtual host is 
 
 In addition, you have the option to secure your custom domain with either a one-way or a two-way SSL certificate. A one-way SSL certificate validates only the secure identity of the API Proxy, providing encryption and authentication for the server. On the other hand, a two-way SSL certificate validates the identities of both the API Proxy and the client, providing mutual authentication.
 
-If you want to request a two-way SSL certificate, see [Request for Two-Way SSL Certificate](request-for-two-way-ssl-certificate-9faf7ce.md). This process enables you to establish a more secure connection between your API Proxy and the client, ensuring that both parties can trust each other's identities.
+If you want to request a two-way SSL certificate, see [Request for a Two-Way SSL Certificate](request-for-a-two-way-ssl-certificate-9faf7ce.md). This process enables you to establish a more secure connection between your API Proxy and the client, ensuring that both parties can trust each other's identities.
 
 To request a custom domain with one-way SSL, perform the following steps:
 

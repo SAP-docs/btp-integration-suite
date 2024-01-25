@@ -2,15 +2,18 @@
 
 # Create a Product
 
-Explains how to create products to publish a bundle of APIs together.
+Explains how to create products to publish a bundle of API proxies together.
 
-You create a product when you want to expose one or more APIs to the Application Developer.
+You create a product when you want to expose one or more API proxies to the Application Developer.
 
 
 
 ## Prerequisites
 
-You’ve created the required API on the *APIs* tab. For more information about how to create APIs, see [Different Methods of Creating an API](different-methods-of-creating-an-api-4ac0431.md).
+-   You have the *APIPortal.Administrator* role assigned to you. For more information, see [User Roles in API Management](https://help.sap.com/docs/integration-suite/sap-integration-suite/assign-user-roles-in-api-management?version=CLOUD).
+
+-   You’ve created the required API proxy on the *APIs* tab. For more information about how to create API proxies, see [Different Methods of Creating an API Proxy](different-methods-of-creating-an-api-proxy-4ac0431.md).
+
 
 
 
@@ -104,7 +107,7 @@ You’ve created the required API on the *APIs* tab. For more information about 
 9.  In the *Add APIs* window, select the required APIs and the corresponding resources.
 
     > ### Note:  
-    > While selecting APIs and its resources for product creation, the following behaviours apply when API calls are made to the selected APIs and resources:
+    > While selecting APIs and its resources for product creation, the following behaviours apply when API calls are made to the selected API proxies and resources:
     > 
     > -   Product creation in API Management provides precedence for product to path \(resource\) mapping over product to API mapping. Let’s understand this behavior with an example:
     > 
@@ -135,11 +138,11 @@ You’ve created the required API on the *APIs* tab. For more information about 
     > ### Note:  
     > Make sure that the API is deployed before attaching it to a product. If you try to publish a product that has an API with saved changes attached to it, the following error message appears: "The API proxy attach to the product has some changes that aren't deployed yet."
     > 
-    > Similarly, if the product has multiple APIs attached to it, and few of the APIs have changes that are saved but not deployed, you'll receive the following message when you try to publish the product: "The following API proxies attached to the product weren't published as they have changes that aren’t yet deployed:"
+    > Similarly, if the product has multiple API proxies attached to it, and few of the API proxies have changes that are saved but not deployed, you'll receive the following message when you try to publish the product: "The following API proxies attached to the product weren't published as they have changes that aren’t yet deployed:"
 
 10. Choose *OK*.
 
-    The selected APIs are listed on the *APIs* tab.
+    The selected API proxies are listed on the *APIs* tab.
 
 11. Provide permissions to user roles to either discover or subscribe to the product.
 12. In the *Rate plans* section, choose *Add*.

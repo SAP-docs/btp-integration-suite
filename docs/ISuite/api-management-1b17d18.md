@@ -97,6 +97,17 @@ Extend solutions with additional SAP BTP capabilities for mobile, offline and in
 
 
 
+</dd><dt><b>
+
+Benefit from multitenancy support 
+
+</b></dt>
+<dd>
+
+Use this service in tenant-aware pplications.
+
+
+
 </dd>
 </dl>
 

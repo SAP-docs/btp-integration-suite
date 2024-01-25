@@ -22,7 +22,9 @@ SAP Cloud Integration provides various options for implementing such a retry pat
 
     With this storage option, a retry mechanism is also in place that works as follows: If message processing fails due to a temporary error when calling an external component, the storage can be used to persist the failed messages. The JMS adapter polls the storage regularly for content, and triggers the reprocessing of the respective messages.
 
--   You can also use the data store to store the messages if there's an error. You can use a looping process call to check the data store for content if there are errors. You can also use a 2nd timer-started integration flow to regularly check the data store for content, and trigger the reprocessing of the respective messages.
+-   You can also use the data store to store the messages if there's an error. You can use a looping process call to check the data store for content if there are errors. You can also use a 2nd integration flow with a Data Store sender adapter to regularly check the data store for content, and trigger the reprocessing of the respective messages.
+
+    See: [Data Store Sender Adapter](data-store-sender-adapter-4f5ef3f.md)
 
 -   In addition, some adapters that pull data from an external component, like the SFTP adapter, natively offer a capability to configure the number of retries for calls to external components.
 

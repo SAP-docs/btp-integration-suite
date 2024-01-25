@@ -224,3 +224,5 @@ For more information, check out the following blog: [Cloud Integration – Confi
 
 [Apply the Retry Pattern with JMS Queue](apply-the-retry-pattern-with-jms-queue-da17d2d.md "")
 
+[Monitoring Scenarios that Include Message Queues](monitoring-scenarios-that-include-message-queues-35c4caf.md "Learn more about how to monitor scenarios that include message queues and possible error situations.")
+

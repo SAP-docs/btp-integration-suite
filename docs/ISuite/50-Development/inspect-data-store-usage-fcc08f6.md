@@ -20,6 +20,13 @@ These integration flows, consequently, use tenant database volume.
 
 The database usage is plotted in a bar graph against time.
 
+> ### Note:  
+> The *Time* filter element allows you to select the time interval \(options: *Past Day*, *Past Week*, *Past Month*, or *Custom*\).
+> 
+> When you've selected the option *Custom* for the *Time* filter, you can select date and time with a graphical element with two components: a calendar element and a circular watch element. To select the date, interact with the calendar element and choose a specific day. To select the time, manipulate two separate circles on the watch element to set the desired hour ante meridiem \(am\) and post meridiem \(pm\), respectively. You can select valid dates only; selection of dates in the future is disabled.
+> 
+> You can select dates up to 30 days in the past.
+
 The bar height shows the data volume \(in MB\) used by data stores for a given time period \(as selected with the *Time* parameter\).
 
 A blue bullet represents the data volume \(in MB\) used specifically by global data stores.

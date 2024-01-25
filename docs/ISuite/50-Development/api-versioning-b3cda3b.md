@@ -98,11 +98,11 @@ For the version, we recommend that you use alphanumeric values. Based on the ver
 
 [Creating a Versioned API](creating-a-versioned-api-57abb00.md "Creating a versioned API Proxy from a deployed, versioned, or nonversioned API Proxy in the API Management, API Portal.")
 
-[Create an API](create-an-api-c0842d5.md "This topic describes the steps to create an API from the Integration Suite.")
+[Create an API Proxy](create-an-api-proxy-c0842d5.md "This topic describes the steps to create an API proxy from the Integration Suite.")
 
-[Create an API Using the API Designer](create-an-api-using-the-api-designer-26e1bbd.md "Model APIs in the Open API format that is available on the Integration Suite.")
+[Create an API Proxy Using the API Designer](create-an-api-proxy-using-the-api-designer-26e1bbd.md "Model APIs in the Open API format that is available on the Integration Suite.")
 
-[Copy an API](copy-an-api-23974d6.md "You can copy an API proxy in the same subscription.")
+[Copy an API Proxy](copy-an-api-proxy-23974d6.md "You can copy an API proxy in the same subscription.")
 
-[Import an API](import-an-api-9342a93.md "This topic describes how to import an existing API definition into the Integration Suite.")
+[Import an API Definition](import-an-api-definition-9342a93.md "This topic describes how to import an existing API definition into the Integration Suite.")
 

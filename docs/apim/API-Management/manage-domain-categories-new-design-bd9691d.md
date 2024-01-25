@@ -20,7 +20,7 @@ You need the following roles to create and update categories:
 
 -   *AuthGroup.API.Admin* 
 
-    To assign the role, see [Assign User Roles in API Management](APIM-Initial-Setup/assign-user-roles-in-api-management-911ca5a.md) .
+    To assign the role, see [User Roles in API Management](APIM-Initial-Setup/user-roles-in-api-management-911ca5a.md) .
 
 
 

@@ -2,7 +2,7 @@
 
 # Manage External Content \(New Design\)
 
-On this page, you have the option to adjust the visibility of the Graph navigator on the API business hub enterprise. .
+On this page, you have the option to adjust the visibility of the Graph navigator on the API business hub enterprise.
 
 
 
@@ -12,7 +12,7 @@ On this page, you have the option to adjust the visibility of the Graph navigato
 
 -   Assign the *AuthGroup.API.Admin* role.
 
-    To assign the role, see [Assign User Roles in API Management](../assign-user-roles-in-api-management-911ca5a.md) .
+    To assign the role, see [User Roles in API Management](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.") :arrow_upper_right: .
 
 -   Enable *Graph* in Integration Suite. For more information, see [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities?version=CLOUD) and [Configuring User Access](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-user-access?version=CLOUD).
 

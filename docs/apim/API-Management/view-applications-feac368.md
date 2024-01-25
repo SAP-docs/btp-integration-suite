@@ -8,9 +8,9 @@ In the context of API Management, an application is the unit of API consumption.
 
 ## Context
 
-As the developer of some external business application if you wish to consume the API proxies exposed through the various products, you must declare your usage of those products by creating an application from API business hub enterprise. For more information, see [Create an Application \[New Design\]](create-an-application-new-design-a501a6d.md).
+API Management enables the creation of secure API proxies for your APIs. These proxies are protected using "Appkey" and "Secret". Application developers are required to acquire these credentials in order to utilize the API proxies exposed through the various products. They need to declare the usage of these products by creating an application from API business hub enterprise.
 
-As an admin, you can view the subscribed applications from . You can view developer details, associated products and AppKey and secret.
+As an admin, you can view the list of applications that the developers have created in the API business hub enterprise, along with the developer details, associated products and AppKey and secret.
 
 
 

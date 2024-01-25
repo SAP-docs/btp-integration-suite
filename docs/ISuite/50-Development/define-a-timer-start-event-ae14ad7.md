@@ -20,7 +20,7 @@ If you want to configure a process to automatically start and run on a particula
 > 
 > -   If the *Timer* is configured to trigger message processing at periodic intervals and the processing isn’t completed before the next scheduled interval, then the *Timer* skips the following interval.
 > 
-> -   If you configure the *Timer* to trigger message processing on a specific time and date, and once this message processing is completed, the integration flow is in error state. You can see the status in the *Manage Integration Content* view in *Monitor* tab. The error occurs because the configured time and date are in the past, and the integration flow can’t process any further messages.
+> -   If you configure the *Timer* to trigger message processing on a specific time and date, and once this message processing is completed, the integration flow is in error state. You can check the status in the *Manage Integration Content* view in *Monitor* tab. The error occurs because the configured time and date are in the past, and the integration flow can’t process any further messages.
 > 
 > -   If there are multiple runtime nodes, the Timer-triggered messages have their *Status* as *Discarded* where there’s no actual execution on the particular runtime node. See [Message Status](message-status-733a57b.md) to know more about the status of the message.
 

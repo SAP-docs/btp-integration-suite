@@ -287,7 +287,7 @@ Select one of the following options to define which operation to perform:
 
 -   *Upload Blob from URL*
 
-    Creates a new Block Blob where the contents of the blob are read from a given URL. The source blob can have any type, including a blob or container, private, or dynamic. The destination blob, however, must be a block blob. You need to provide the below details if you select this operation.
+    Creates a new Block Blob where the contents of the blob are read from a given URL. The source blob can have any type, including a blob or container, private, or dynamic. The destination blob, however, must be a block blob. You need to provide the following details if you select this operation.
 
     The size of the source blob can be up to a maximum length of 256 MB. If the source blob is not public blob, then source blob has to be authenticated using SAS token only.
 
@@ -308,7 +308,7 @@ Select one of the following options to define which operation to perform:
 </td>
 <td valign="top">
 
-Enter the name of the storage account for all the eleven above-mentioned operations.
+Enter the name of the storage account for all the eleven previously-mentioned operations.
 
 > ### Note:  
 > The storage account name has been predefined already in the Azure Storage. If you enter a wrong name, the system displays an error message.
@@ -325,7 +325,7 @@ Enter the name of the storage account for all the eleven above-mentioned operati
 </td>
 <td valign="top">
 
-Enter the name of the container for all the above-mentioned operations except for List Containers.
+Enter the name of the container for all the previously-mentioned operations except for List Containers.
 
 > ### Note:  
 > Follow these rules when defining a container name:

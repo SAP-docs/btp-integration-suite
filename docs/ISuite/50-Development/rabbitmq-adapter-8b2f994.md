@@ -16,7 +16,7 @@ Exchanges, queues and messages can only be monitored by using the RabbitMQ admin
 **Related Information**  
 
 
-[Configure the RabbitMQ Sender Adapter](configure-the-rabbitmq-sender-adapter-4e3c554.md "The RabbitMQ sender adapter allows you to consume messages in SAP Integration Suite from queues on the RabbitMQ server. In addition,you use the adapter to send acknowledgements to the RabbitMQ server.")
+[Configure the RabbitMQ Sender Adapter](configure-the-rabbitmq-sender-adapter-4e3c554.md "The RabbitMQ sender adapter allows you to consume messages in SAP Integration Suite from queues on the RabbitMQ server. In addition, you use the adapter to send acknowledgements to the RabbitMQ server.")
 
 [Configure the RabbitMQ Receiver Adapter](configure-the-rabbitmq-receiver-adapter-e9dfc37.md "You use the RabbitMQ receiver adapter to send messages from SAP Integration Suite to exchanges or queues on the RabbitMQ server.")
 

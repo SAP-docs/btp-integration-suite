@@ -2,7 +2,7 @@
 
 # Configure the AMQP Sender Adapter
 
-You use the Advanced Message Queuing Protocol \(AMQP\) sender adapter to consume messages in SAP Integration Suite from queues or topic subscriptions in an external message broker.
+You use the Advanced Message Queuing Protocol \(AMQP\) sender adapter to consume messages in SAP Integration Suite from queues in an external message broker.
 
 
 
@@ -19,7 +19,7 @@ You use the Advanced Message Queuing Protocol \(AMQP\) sender adapter to consume
 > Queues, topics, and messages can only be monitored by using tools provided by the message broker provider. Those monitors are not integrated into SAP Integration Suite . In SAP Integration Suite , the integration flows using the AMQP adapter are monitored and the messages are sent to or consumed from the message broker.
 
 > ### Note:  
-> To be able to connect to queues or topics, you have to create queues and/or topics in the message broker. This needs to be done in the message broker, with the configuration tools provided by the message broker. In some messaging systems, you need to configure a *Lock Duration* to make sure that the message is not consumed more than once. This timeout must be longer than the expected processing time of the message, otherwise this would lead to duplicate messages.
+> To be able to connect to queues, you have to create queues and/or topics in the message broker. This needs to be done in the message broker, with the configuration tools provided by the message broker. In some messaging systems, you need to configure a *Lock Duration* to make sure that the message is not consumed more than once. This timeout must be longer than the expected processing time of the message, otherwise this would lead to duplicate messages.
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -220,7 +220,7 @@ Select the authentication method the message broker supports. *SASL* is selected
     > ### Note:  
     > This authentication option implies that Transport Layer Security \(TLS\) is used for the connection.
 
-    More information:  <?sap-ot O2O class="- topic/xref " href="ce627b59a3c2492a8f4263c27e8750a8.xml" text="" desc="" xtrc="xref:4" xtrf="file:/home/builder/src/dita-all/xui1697777552331/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/99ce6748400b4dbfbadf633aeb111067.xml" ?> 
+    More information:  <?sap-ot O2O class="- topic/xref " href="ce627b59a3c2492a8f4263c27e8750a8.xml" text="" desc="" xtrc="xref:4" xtrf="file:/home/builder/src/dita-all/fov1701176325794/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/99ce6748400b4dbfbadf633aeb111067.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 -   *None*
 

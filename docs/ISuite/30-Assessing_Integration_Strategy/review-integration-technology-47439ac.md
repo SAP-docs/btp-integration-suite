@@ -12,7 +12,7 @@ You can use SAP standard integration technologies \(for example, SAP Integration
 
 ## Defining Integration Technology
 
-1.  Go to *Configure* \> *Integration Technologies*.In the Technology Profile tab, you will be able to see the list of existing technology profiles. You can either choose from the existing SAP standard content or create and customise your own technology profile.
+1.  Go to *Configure* \> *Integration Technologies*. In the Technology Profile tab, you will be able to see the list of existing technology profiles. You can either choose from the existing SAP standard content or create and customise your own technology profile.
 
     > ### Note:  
     > SAP defined integration technology is visible for all the users whereas, custom technology is displayed only for specific users.
@@ -178,7 +178,7 @@ You can use SAP standard integration technologies \(for example, SAP Integration
 
     A table shows the defined key characteristic values \(vertical axis\) for each key characteristic \(horizontal axis\) in the selected group.
 
-    While defining the key characteristic for a technology, you can click the table cells highlighted as *Not Defined* to define a recommendation degree for the technology selected. Choose *Create Recommendation Degree* and select the relevant recommendation degree from the list.
+    While defining the key characteristic for a technology, you can choose the table cells highlighted as *Not Defined* to define a recommendation degree for the technology selected. Choose *Create Recommendation Degree* and select the relevant recommendation degree from the list.
 
     You can also change or delete the existing recommendation degree by selecting the relevant option for a technology.
 

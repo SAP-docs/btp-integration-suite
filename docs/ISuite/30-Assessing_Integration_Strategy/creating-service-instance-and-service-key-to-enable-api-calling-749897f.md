@@ -4,6 +4,14 @@
 
 
 
+<a name="loio749897fbe3724b40a3dfcaffd4b4c2da__section_q1j_15f_tzb"/>
+
+## Prerequisites
+
+You have created a subaccount in your global account using the SAP BTP cockpit and added the entitlement *integration-assessment* to the subaccount. For more information, see [Setting Up Your Account](../10-InitialSetup/setting-up-your-account-079c68f.md)
+
+
+
 <a name="loio749897fbe3724b40a3dfcaffd4b4c2da__section_c2m_yxk_zsb"/>
 
 ## Creating Service Instance
@@ -56,7 +64,7 @@
     </td>
     <td valign="top">
     
-    You can choose any environment \(for example cloudfoundry/kyma/Kubernetes etc\)
+    You can choose any environment \(for example cloudfoundry/kyma/Kubernetes etc.\)
     
     </td>
     </tr>

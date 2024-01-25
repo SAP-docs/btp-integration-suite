@@ -58,5 +58,3 @@ See also: [3112970 - JSON-to-XML Converter Exception Caused by Invalid JSON Memb
 
 [Conversion Rules for JSON to XML Conversion](conversion-rules-for-json-to-xml-conversion-232a9cf.md "To ensure a successful conversion of you data, you should make yourself familiar with the conversion rules.")
 
- <?sap-ot O2O class="- topic/link " href="a5b4641c393f406bb544987497c90a72.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/xui1697777552331/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/3a02829ea84e4f7dac62bdd10d06b084.xml" ?> 
-

@@ -8,13 +8,13 @@ The API Management infrastructure comprises of five key components:
 
 -   **API Management Runtime**: You can deploy and effectively utilize your APIs. Applications consume the API runtime, request API authentication, and gain access.
 
--   **API Management Design Time**: Serves as a platform for easy API discovery, allowing API administrators to manage, meter, and secure their APIs. Additionally, it enables administrators to define and publish rate plans for their APIs. For more information, see[Build APIs](50-Development/build-apis-74c042b.md), [Publish APIs](50-Development/publish-apis-75a4a11.md) [Monetize APIs](50-Development/monetize-apis-fcdc89b.md) [Analyze APIs](50-Development/analyze-apis-7712c61.md).
+-   **API Management Design Time**: Serves as a platform for easy API discovery, allowing API administrators to manage, meter, and secure their APIs. Additionally, it enables administrators to define and publish rate plans for their APIs. For more information, see[Build API Proxies](50-Development/build-api-proxies-74c042b.md), [Publish API Proxies](50-Development/publish-api-proxies-75a4a11.md) [Monetize APIs](50-Development/monetize-apis-fcdc89b.md) [Analyze APIs](50-Development/analyze-apis-7712c61.md).
 
--   **API business hub enterprise**: It is a self-service portal for application developers. You can discover, browse, and explore APIs. Subscribe to a rate plan and build application. For more information, see [Consume APIs](50-Development/consume-apis-ea561e4.md).
+-   **API business hub enterprise**: It is a self-service portal for application developers. You can discover, browse, and explore APIs. Subscribe to a rate plan and build application. For more information, see [Consume API Proxies](50-Development/consume-api-proxies-ea561e4.md).
 
 -   **API Analytics**: Offers advanced analytical capabilities to track your API usage. Utilize API Analytics to gather data on URL usage, user IDs associated with API calls, latency information, and more. For more information, see [Analyze APIs](50-Development/analyze-apis-7712c61.md).
 
--   **API Designer**: API developers have the ability to define, implement, and document APIs. The API Designer offers support for open APIs and allows for the generation of various outputs. For more information, see [Create an API Using the API Designer](50-Development/create-an-api-using-the-api-designer-26e1bbd.md).
+-   **API Designer**: API developers have the ability to define, implement, and document APIs. The API Designer offers support for open APIs and allows for the generation of various outputs. For more information, see [Create an API Proxy Using the API Designer](50-Development/create-an-api-proxy-using-the-api-designer-26e1bbd.md).
 
 
 The diagram below illustrates the interaction between various stakeholders and the different components of API Management. It also demonstrates how API Management integrates with both cloud and on-premise systems.

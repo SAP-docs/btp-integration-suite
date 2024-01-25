@@ -18,6 +18,9 @@ The following lists common features on the dashboard:
 2.  **Time interval**: Displays data only for the selected period of time. For example, time interval of months, weeks, and so on.
 3.  **Resize charts**: Resize charts from small, medium to large.
 
+> ### Note:  
+> The values on the chart for a particular dimension are shown only up to a certain threshold. Any values beyond this threshold are grouped together and labelled as **Others**. By default, the threshold value for the charts is set to **25**. If you wish to modify the threshold value for the charts, please create a support ticket. To create a support ticket, see [Request to Modify Threshold Value for Charts](request-to-modify-threshold-value-for-charts-b55f89d.md).
+
 **Related Information**  
 
 

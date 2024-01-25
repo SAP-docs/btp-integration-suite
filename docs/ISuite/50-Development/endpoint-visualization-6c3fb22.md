@@ -151,7 +151,7 @@ SOAP sender adapter
     > ### Caution:  
     > In case you want to download the WSDL in Cloud Foundry via a technical client, you need a service instance of the plan `api` assigned with the`MonitoringDataRead` role. It is not possible to use a service instance of plan `integration flow`.
     > 
-    > See: [Creating Service Instance and Service Key for Inbound Authentication](../40-RemoteSystems/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md) and [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:.
+    > See: [Creating Service Instance and Service Key for Inbound Authentication](../40-RemoteSystems/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md) and [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md).
 
 -   *WSDL Policies*
 

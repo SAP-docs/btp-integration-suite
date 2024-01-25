@@ -23,7 +23,11 @@ You can add a custom message to a custom type system library.
 4.  Choose *Browse* and upload the XSD/WSDL file under the *XSD File*/*WSDL File* step.
 
     > ### Note:  
+    > The XSD files are intended for XML and IDoc custom type systems and WSDL file for SOA type system.
+    > 
     > The maximum file size that you can upload is 10MB, with a maximum limit of 20000 nodes.
+    > 
+    > Upload of Custom IDocs requires an XSD in the format as downloaded from Enterprise Service Repository \(ESR\) or from transaction *WE60* of your S/4HANA backend system.
 
 5.  The next step shows you all the messages present in your XSD/WSDL. Choose the required message from the *Messages* step.
 

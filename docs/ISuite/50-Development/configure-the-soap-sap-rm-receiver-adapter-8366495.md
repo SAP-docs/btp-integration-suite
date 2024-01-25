@@ -315,7 +315,12 @@ Definition
 </td>
 <td valign="top">
 
-Select this option to specify how the SAP RM Message ID shall be defined.
+Select this option to specify how a target message ID \(referred to as SAP RM message ID\) shall be defined.
+
+> ### Note:  
+> You can use this feature to implement scenarios that guarantee end-to-end Exactly Once delivery. A receiver can use the target message ID, for example, to make sure that the receiver can process a certain message only once.
+> 
+> See: [Special Use Cases: SAP RM vs XI vs IDoc](special-use-cases-sap-rm-vs-xi-vs-idoc-5f7fa93.md)
 
 You can choose among the following options:
 
@@ -329,8 +334,51 @@ You can choose among the following options:
 
 -   *Map*
 
-    Maps a source message ID to the new SAP RM message ID.
+    Maps a source message ID to the new target message ID.
 
+    This option generates a target message ID that is uniquely associated with the source message ID specified with parameter *Source for SAP RM Message ID*. Precisely spoken, the system sets the value of header `SapMessageIdEx` to a globally unique identifier \(GUID\). This GUID identifies the target message.
+
+    To specify the source message ID, you can use a header or a property. If no header or property is specified, the system generates a source message ID.
+
+
+Note that source-to-target message ID mapping entries are deleted after 90 days. Furthermore, only the first 120 characters from the source message ID are considered by the mapping.
+
+> ### Tip:  
+> As example, let’s assume that you’ve chosen option *Map* for parameter *SAP RM Message ID Determination*, and in field *Source for SAP RM Message ID* you entered `${property.orderNo}`.
+> 
+> Furthermore, let’s assume that at runtime the property `orderNo` has the value `00001`. The SOAP SAP RM receiver adapter generates a unique identifier \(GUID\) for the target message ID, for example, `ABCD1234XYZ`. In the scenario, the receiver system can then associate the target message ID `ABCD1234XYZ` with the source message ID `00001`.
+> 
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> Source Message ID
+> 
+> </th>
+> <th valign="top">
+> 
+> Target Message ID
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Property name: orderNo
+> 
+> Property value: 00001
+> 
+> </td>
+> <td valign="top">
+> 
+> Header name: SapMessageIdEx
+> 
+> Header value: ABCD1234XYZ
+> 
+> </td>
+> </tr>
+> </table>
 
 
 
@@ -364,7 +412,7 @@ To map the source message ID to the SAP RM message ID you can enter the source m
 
 [https://wiki.scn.sap.com/wiki/display/ABAPConn/Plain+SOAP?original\_fqdn=wiki.sdn.sap.com](https://wiki.scn.sap.com/wiki/display/ABAPConn/Plain+SOAP?original_fqdn=wiki.sdn.sap.com)
 
-[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
+[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
 
-[Setting Up Inbound HTTP Connections (Integration Flow Processing), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/778c7e7835ff46408aafe0d499720dc7.html "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.") :arrow_upper_right:
+[Setting Up Inbound HTTP Connections (Integration Flow Processing), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/778c7e7835ff46408aafe0d499720dc7.html "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.") :arrow_upper_right:
 

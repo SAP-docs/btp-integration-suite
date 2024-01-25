@@ -18,9 +18,9 @@
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 > ### Note:  
-> In Neo environment, AS2 Receiver adapter version 1.7 and above can be used without [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) activation.
+> In Neo environment, AS2 Receiver adapter version 1.7 and above can be used without [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) activation.
 > 
-> In Cloud Foundry environment, all versions of the adapter can be used without [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) activation.
+> In Cloud Foundry environment, all versions of the adapter can be used without [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) activation.
 
 Once you have created a receiver channel and selected the AS2 receiver adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 

@@ -1,40 +1,33 @@
 <!-- loio0aef7634df25497896abf18faac8a1ce -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
-
 # What is API Management
 
-Create simple digital experiences for your consumers, partners, and employees. 
+API Management lets you publish, promote, and oversee APIs in a secure and scalable environment. Using API Management, you can create simple digital experiences for your consumers, partners, and employees.
 
-SAP API Management lets you publish, promote, and oversee APIs in a secure and scalable environment.
+The API Management capability in SAP Integration Suite is a complete solution, that addresses all enterprise requirements for API security and governance.
 
-The Cloud Foundry environment gives you the ability to subscribe to the API Management service, while you may choose a public infrastructure to run the API Management service, such as Amazon Web Services or Microsoft Azure.
+With API Management you can:
 
-> ### Tip:  
-> This is the documentation for API Management for Cloud Foundry. If you are looking for information about the Neo environment, see [here](https://help.sap.com/viewer/38c3df3f8da44a809f937220b3579607/Cloud/en-US).
+-   **Proxify your APIs**: Create your own unified and harmonised API presence, using your own domain.
 
-> ### Tip:  
-> The English version of this guide is open for contributions and feedback using GitHub. This allows you to get in contact with responsible authors of SAP Help Portal pages and the development team to discuss documentation-related issues. To contribute to this guide, or to provide feedback, choose the corresponding option on SAP Help Portal:
-> 
-> -   *Feedback* \> *Create issue*: Provide feedback about a documentation page. This option opens an issue on GitHub.
-> 
-> -   *Feedback* \> *Edit page*: Contribute to a documentation page. This option opens a pull request on GitHub.
-> 
-> 
-> You need a GitHub account to use these options.
-> 
-> More information:
-> 
-> -   [Contribution Guidelines](https://help.sap.com/docs/open-documentation-initiative/contribution-guidelines/readme.html)
-> 
-> -   [Introduction Video: Open Documentation Initiative](https://www.youtube.com/watch?v=WJ0oarMlVW4)
-> 
-> -   [Blog Post: Introducing the Open Documentation Initiative](https://blogs.sap.com/2021/05/20/introducing-the-open-documentation-initiative/)
+-   **Secure your APIs**: Secure your APIs against unauthorized access and threats. API management helps organizations define a standardized set of policies to protect APIs and the underlying backends.
 
-> ### Tip:  
-> Contextual help is available for some screens of the SAP Integration Suite. To activate this help, from the top toolbar, choose <span class="SAP-icons"></span> Help. A panel with help topics opens alongside your current screen to your right. You will also find green <span style="color:#007833;"><span class="SAP-icons"></span></span> Help icons on the screen. Choose these icons to know more about the associated element.
+-   **Perform Traffic Management**: Configure cache, and control traffic quotas and spikes, using the traffic management policies.
+
+-   **Govern your APIs**: Discover and document all your APIs, manage the lifecycle of your APIs and govern them using the policies. Over 30 different policy types are available, ranging from traffic management and security policies.
+
+-   **Get Business Insights**: Monitor with usage analytics, logs, events and triggers; use business insights to monetize your APIs.
+
+-   **Transform your APIs**: Apply advance header and payload modifications.
+
+-   **Developer Engagements**: API business hub enterprise is a feature-rich, themed, and customizable portal designed specifically for application developers. It provides comprehensive API documentation, code snippets, and more. With API business hub enterprise, developers can easily engage with the platform, enabling them to discover, subscribe to, and consume APIs directly.
 
 
+![](images/WhatsAPIMBlock_e136868.png)
+
+
+
+<a name="loio0aef7634df25497896abf18faac8a1ce__section_hvq_1p3_nzb"/>
 
 ## Features
 
@@ -106,6 +99,17 @@ Extend solutions with additional SAP BTP capabilities for mobile, offline and in
 
 
 
+</dd><dt><b>
+
+Benefit from multitenancy support 
+
+</b></dt>
+<dd>
+
+Use this service in tenant-aware pplications.
+
+
+
 </dd>
 </dl>
 
@@ -123,5 +127,11 @@ API Management technology helps you to share digital assets and enable developer
 
 API Management facilitates consumer engagement anywhere, any time. It reduces complexity by leveraging a single provisioning platform \(API Platform\) to provide unified access and governance of APIs across a heterogeneous landscape.
 
-Get started by subscribing to API portal and API business hub enterprise applications where you can create APIs and consume them. For setting up the API Portal application, see [here](APIM-Initial-Setup/set-up-api-portal-application-29c281b.md). Once the API portal is setup, see [here](APIM-Initial-Setup/set-up-api-business-hub-enterprise-application-using-the-standalone-tile-80c0519.md) to set up the API business hub enterprise application.
+
+
+<a name="loio0aef7634df25497896abf18faac8a1ce__section_q5k_rh3_nzb"/>
+
+## Getting Started
+
+You can provision the API Management capability from the Integration Suite launchpad. For the detailed steps, see [Setting Up API Management Capability from Integration Suite](https://help.sap.com/docs/sap-api-management/sap-api-management/setting-up-api-management-capability-from-integration-suite?q=certain%20countries&version=Cloud)
 

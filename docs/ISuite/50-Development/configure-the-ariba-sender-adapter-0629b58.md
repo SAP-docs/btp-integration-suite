@@ -156,7 +156,7 @@ Specify the URL to which the cXML requests are posted, or from where the cXMLs a
 </td>
 <td valign="top">
 
-Select one of the options based on the description given below:
+Select one of the options based on the description given next:
 
 -   *Production*: If you select this option, the Ariba Network processes the messages. This connection mode is set as the default deployment mode.
 
@@ -175,7 +175,7 @@ Select one of the options based on the description given below:
 </td>
 <td valign="top">
 
-Select one of the options based on the description given below:
+Select one of the options based on the description given next:
 
 -   *Buyer*: Select this option, if you hold a buyer account on the Ariba Network.
 
@@ -235,7 +235,7 @@ Provide the *System ID* for receiving the requests from a specific ERP system be
 </td>
 <td valign="top">
 
-Select one of the options based on the description given below:
+Select one of the options based on the description given next:
 
 -   *Network ID*: A unique alphanumeric value assigned to every organization registered on Ariba SN; for example, AN01000000001.
 
@@ -254,7 +254,7 @@ Select one of the options based on the description given below:
 </td>
 <td valign="top">
 
-Select one of the options based on the description given below:
+Select one of the options based on the description given next:
 
 -   *Shared Key*: If you have set the shared key in your Ariba account.
 

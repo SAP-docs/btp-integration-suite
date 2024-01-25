@@ -21,7 +21,7 @@
 > -   If you are configuring the sender channel to receive AS2 messages, select the AS2 message protocol.
 > -   If you want to call the AS2 sender channel, then use the pattern `https://<host>:<port>/as2/as2`; to call the AS2 MDN sender channel, use `https://<host>:<port>/as2/mdn` .
 > -   The JMS queue name contains the name of the AS2 sender channel. To analyze a troubleshooting scenario better, it's recommended to specify the name of the AS2 sender channel.
-> -   You must activate [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) to use AS2 Sender adapter version 1.6 and below. From version 1.7 and above, the activation is not required if you select [Quality of Service](configure-the-as2-sender-adapter-5d7ee17.md#loio5d7ee17e554841df8ef355413b88e056__table_m23_m42_n2b) as *Best Effort*.
+> -   You must activate [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) to use AS2 Sender adapter version 1.6 and further. From version 1.7 and before, the activation is not required if you select [Quality of Service](configure-the-as2-sender-adapter-5d7ee17.md#loio5d7ee17e554841df8ef355413b88e056__table_m23_m42_n2b) as *Best Effort*.
 > -   The expiration period for stored messages is 90 days, after which the messages are deleted.
 > -   The retention threshold for alerting is two days, by which the messages have to be fetched before an alert is raised.
 
@@ -109,7 +109,7 @@ The default value is `ESBMessaging.send`. This role authorizes a sender system t
 > ### Caution:  
 > The role name must not contain any umlaut characters \(for example, `ä`\).
 
-For more information on user roles, see[Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right: .
+For more information on user roles, see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md) .
 
 </td>
 </tr>
@@ -744,7 +744,7 @@ Description
 <tr>
 <td valign="top" colspan="2">
 
-The parameters in allowing*Maximum Message Size* you to set a maximum size limit for processing inbound messages. All inbound messages that exceed the configured limit are rejected from further processing and the sender receives an error message.
+The parameters in allowing *Maximum Message Size* you to set a maximum size limit for processing inbound messages. All inbound messages that exceed the configured limit are rejected from further processing and the sender receives an error message.
 
 > ### Note:  
 > The minimum allowable size limit is 1 MB.

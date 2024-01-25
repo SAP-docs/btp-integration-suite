@@ -147,8 +147,6 @@ The type of proxy that you are using to connect to the target system:
 
 -   If you select *Manual*, you can manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry fields\).
 
-    Furthermore, with the parameter *URL to WSDL* you can specify a Web Service Definition Language \(WSDL\) file defining the WS provider endpoint \(of the receiver\). You can specify the WSDL by either uploading a WSDL file from your computer \(option *Upload from File System*\) or by selecting an integration flow resource \(which needs to be uploaded in advance to the *Resources* view of the integration flow\).
-
     This option is only available if you have chosen a *Process Orchestration* product profile.
 
 

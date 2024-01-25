@@ -166,3 +166,5 @@ Select this option to encrypt the message in the JMS queue.
 
 [Apply the Retry Pattern with JMS Queue](apply-the-retry-pattern-with-jms-queue-da17d2d.md "")
 
+[Monitoring Scenarios that Include Message Queues](monitoring-scenarios-that-include-message-queues-35c4caf.md "Learn more about how to monitor scenarios that include message queues and possible error situations.")
+

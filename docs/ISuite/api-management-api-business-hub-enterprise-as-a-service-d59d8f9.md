@@ -15,11 +15,11 @@ The API Management, API business hub enterprise as a service on Cloud Foundry pr
 
 [Requesting an Additional Virtual Host in Cloud Foundry Environment](requesting-an-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "Create a new virtual host or update an alias for an existing virtual host in the Cloud Foundry environment.")
 
-[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "A virtual host allows you to host multiple domain names on the API Management capability within Integration Suite.")
+[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "A virtual host lets you host multiple domain names on API Management capability within Integration Suite.")
 
 [Request for a Two-Way SSL Certificate](request-for-a-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
 
-[Assign User Roles in API Management](assign-user-roles-in-api-management-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
+[User Roles in API Management](user-roles-in-api-management-7010b58.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
 
-[Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "Cancel your API portal and API business hub enterprise application subscriptions to disable your account from the API Management service.")
+[Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "You can deactivate your API Management capability from Integration Suite to disable your account from the API Management service.")
 

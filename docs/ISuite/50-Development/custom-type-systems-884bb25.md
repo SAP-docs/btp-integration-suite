@@ -25,7 +25,7 @@ To upload and use custom messages, you need to have a custom type system. Follow
 2.  Choose *Add* to create a custom type system.
 
     > ### Note:  
-    > Currently the application supports only one custom type system each for custom messages.
+    > Currently the application supports only one custom type system for each kind \(XML/IDoc/SOA\).
 
 3.  Choose and open the type system. The *Overview* tab provides you with the following details :
     -   General information

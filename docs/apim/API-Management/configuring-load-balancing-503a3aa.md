@@ -12,7 +12,7 @@ You can configure load-balancing functionality for an API proxy from the API Man
 
 2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
 
-    A list of registered APIs appears in the catalog.
+    A list of APIs appears in the catalog.
 
 3.  Browse for an API proxy, which is already linked to an API provider.
 

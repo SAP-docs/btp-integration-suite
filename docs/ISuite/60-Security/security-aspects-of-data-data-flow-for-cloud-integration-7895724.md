@@ -66,7 +66,7 @@ Various authentication options \(basic authentication using user credentials, cl
 > ### Caution:  
 > Consider that we do **not** recommend to use basic authentication in productive scenarios because of the following security aspects:
 > 
-> Basic authentication has the risk that authentication credentials, for example, passwords, are sent in clear text. Using TLS \(transport-layer security, also referred to as Secure Sockets Layer\) as transport-level encryption method \(when using HTTPS as protocol\) makes sure that this information is nevertheless encrypted on the transport path. However, the authentication credentials might become visible to SAP-internal administrators at points in the network where the TLS connection is terminated, for example, load balancers. If logging is not done properly at such devices, the authentication credentials might become part of log files. Also network monitoring tools used at such devices might expose the authentication information to administrators. Furthermore, the person to whom the authentication credentials belong \(in the example above, the password owner\) needs to maintain the password in a secure place.
+> Basic authentication has the risk that authentication credentials, for example, passwords, are sent in clear text. Using TLS \(transport-layer security, also referred to as Secure Sockets Layer\) as transport-level encryption method \(when using HTTPS as protocol\) makes sure that this information is nevertheless encrypted on the transport path. However, the authentication credentials might become visible to SAP-internal administrators at points in the network where the TLS connection is terminated, for example, load balancers. If logging is not done properly at such devices, the authentication credentials might become part of log files. Also network monitoring tools used at such devices might expose the authentication information to administrators. Furthermore, the person to whom the authentication credentials belong \(in the previous example, the password owner\) needs to maintain the password in a secure place.
 
 This protocol is supported by all adapter types that allow communication over HTTPS, for example: Ariba, AS2, AS4, ELSTER, Facebook, HTTP, SOAP, IDoc, OData, ODC, OpenConnectors, SAP SuccessFactors, Twitter, XI.
 
@@ -80,7 +80,7 @@ SFTP \(Secure Shell File Transfer Protocol\)
 </td>
 <td valign="top">
 
-Secure Shell \(SSH\) is used to securely transfer files in an open network. SSH is a network protocol that allows you to set up a secure connection to a remote computer, namely an SFTP server
+Secure Shell \(SSH\) is used to securely transfer files in an open network. SSH is a network protocol that allows you to set up a secure connection to a remote computer, namely an SFTP server.
 
 SSH uses a symmetric key length with at least 128 bits to protect FTP communication. Default length of asymmetric keys provided by SAP is 2048 bits.
 
@@ -168,7 +168,7 @@ TCP \(Transmission Control Protocol\)
 </td>
 <td valign="top">
 
-TCP is one of the main communication protocols used on the Internet. TLS, mentioned above, often \(but not always\) runs on top of TCP.
+TCP is one of the main communication protocols used on the Internet. TLS, previously mentioned, often \(but not always\) runs on top of TCP.
 
 This protocol is supported by the AMQP \(TCP\) and the LDAP adapter.
 
@@ -238,7 +238,7 @@ IMAPS \(Internet Message Access Protocol over TLS/SSL\)
 </td>
 <td valign="top">
 
-Internet Message Access Protocol over TLS/SSL \(IMAPS\)
+Internet Message Access Protocol over TLS/SSL \(IMAPS\).
 
 This option enables email clients to retrieve emails from an email server using a TCP/IP connection.
 
@@ -261,7 +261,7 @@ This protocol can be used by the Mail sender adapter.
 
 ## Message-Level Security
 
-On top of the *transport-level security* options, you can also secure the communication at *message level*, where the content of the exchanged messages can also be protected by means of digital encryption and signatures. Various security standards are available to do this, as summarized in the table below.
+On top of the *transport-level security* options, you can also secure the communication at *message level*, where the content of the exchanged messages can also be protected by means of digital encryption and signatures. Various security standards are available to do this, as summarized in the following table.
 
 To configure message-level security options, you use dedicated integration flow steps \(for example, the *Encryptor* and *Signer* step types\).
 
@@ -362,7 +362,7 @@ Signing/verification of SOAP body
 **Related Information**  
 
 
-[Connectivity (Adapters)](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/55325f2a722c4f67bb7752b369b09ff8.html "You have the option to specify which technical protocols should be used to connect a sender or a receiver to the tenant.") :arrow_upper_right:
+[Connectivity (Adapters)](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/55325f2a722c4f67bb7752b369b09ff8.html "You have the option to specify which technical protocols should be used to connect a sender or a receiver to the tenant.") :arrow_upper_right:
 
 [Authentication and Authorization Options \(Inbound\)](../40-RemoteSystems/authentication-and-authorization-options-inbound-983f2a5.md "When a client calls a server using a secure communication channel, two different kinds of checks are performed subsequently.")
 

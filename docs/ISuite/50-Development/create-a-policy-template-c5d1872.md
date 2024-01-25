@@ -22,7 +22,7 @@ Create a policy template add it to an API proxy.
 
 2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
-    A list of registered APIs appears in the catalog.
+    A list of APIs appears in the catalog.
 
 3.  In the list, click the API for which you want to create the policy template.
 

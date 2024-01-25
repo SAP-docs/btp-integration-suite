@@ -36,7 +36,7 @@ You use this element to catch any exceptions thrown in the integration process a
     > -   You can use an *End Message* event to wrap the exception in a fault message and send it back to the sender in the payload.
     > -   You can use an *Error End* event to throw the exception to default exception handlers.
 
-6.  You can also add other flow elements between the start and end events .
+6.  You can also add other flow elements between the start and end events.
 
     > ### Note:  
     > -   For example, you can choose *Add Service Call* from the context menu of a connection within the pool. This enables you to call another system to handle the exception.

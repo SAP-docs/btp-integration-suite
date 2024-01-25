@@ -27,7 +27,7 @@ To export a policy template, proceed as follows:
 
 2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
-    A list of registered APIs appears in the catalog.
+    A list of APIs appears in the catalog.
 
 3.  On the *Configure* \> *APIs* screen, choose *POLICY TEMPLATES*.
 

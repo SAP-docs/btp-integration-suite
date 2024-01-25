@@ -174,10 +174,79 @@ Proxy type that you are using to connect to the target system.
 
 -   Select *Internet* if you are connecting directly to the SFTP server.
 
+-   Select *Manual* to manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry field\).
+
+    This option is only available if *Edge* has been selected as runtime.
+
 -   Select *On-Premise* if you are connecting to an on-premise SFTP server.
 
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md). For more information on how to use the *On-Premise* option to connect to an on-premise SFTP server, check out SAP Community blog [Cloud Integration – How to Connect to an On-Premise sftp server via Cloud Connector](https://blogs.sap.com/2018/11/16/cloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector/).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Protocol*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Specify the type of proxy server which is used to communicate to the SFTP server. Choose between the following options:
+
+-   *HTTP*
+
+-   *SOCKS Version 4*
+
+-   *SOCKS Version 5*
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Host*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the name of the proxy host to be used. For example: `proxy.mycompany.com`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Port*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the proxy port number to be used.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Credential Name*
+
+\(only available if *Manual* is selected for *Proxy Type* and if *HTTP* or *SOCKS Version 5* is selected for *Proxy Protocol*\)
+
+</td>
+<td valign="top">
+
+Enter the referenced credential name used for proxy authentication.
 
 </td>
 </tr>

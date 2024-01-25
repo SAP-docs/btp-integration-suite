@@ -197,7 +197,7 @@ The subsequent Filter step removes the multimapping from the message, using the 
 
 To test the scenario, perform the following steps:
 
-1.  Set up inbound **Basic** authentication for integration flow endpoints. [Setting Up Basic Inbound Authentication with clientId and clientsecret from a Service Key, Cloud Foundry Environment](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md) [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right: 
+1.  Set up inbound **Basic** authentication for integration flow endpoints. [Setting Up Basic Inbound Authentication with clientId and clientsecret from a Service Key, Cloud Foundry Environment](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md) [Setting Up Inbound HTTP Connections (with Basic Authentication), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/391c45cfcd0f4435952ab085283b7f7d.html "") :arrow_upper_right: 
 2.  Deploy the integration flows *Generic Receiver*, and *Pattern Resequencer*.
 3.  In the Postman client, open the *Resequencer* folder of the Postman collection that has been provided with the *Integration Flow Design Guidelines - Enterprise Integration Patterns* package. There, you find four POST requests, each with a unique item number. The requests are sorted in the wrong order.
 4.  Run all four requests.

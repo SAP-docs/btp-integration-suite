@@ -10,7 +10,7 @@ Let’s say you’ve deployed a simple API proxy, wherein the target endpoint is
 
 `https://services.odata.org/V2/Northwind/Northwind.svc`
 
-For more information on creating an API proxy, see [Different Methods of Creating an API](different-methods-of-creating-an-api-4ac0431.md).
+For more information on creating an API proxy, see [Different Methods of Creating an API Proxy](different-methods-of-creating-an-api-proxy-4ac0431.md).
 
 When you click on the API proxy URL, if your browser displays the service URL instead of the proxied URL, it indicates that the service URL that you are trying to access has been moved temporarily or permanently to a new location. When this scenario occurs, doesn’t display the proxied URL. It instead displays the redirected URL of the backend service you provided.
 

@@ -4,6 +4,8 @@
 
 Create an API proxy by discovering or selecting one of the services available on the backend system configured by via the API provider.
 
+**Prerequisite: The role collection *APIPortal.Administrator* should be assigned to you.**
+
 
 
 <a name="loio84628b9a16bd496391c9c26f5d4a4283__section_imc_frp_pyb"/>
@@ -47,7 +49,7 @@ If you want to browse for an OData service for a provider that you’ve already 
 
 11. Choose *Create*.
 
-12. Complete the remaining steps by referring to the [Create an API](create-an-api-c0842d5.md) topic.
+12. Complete the remaining steps by referring to the [Create an API Proxy](create-an-api-proxy-c0842d5.md) topic.
 
 
 
@@ -106,6 +108,6 @@ If you want to create a proxy for an Open Connector instance for a provider that
 
 10. Choose *Create*.
 
-11. Complete the remaining steps by referring to the [Create an API](create-an-api-c0842d5.md) topic.
+11. Complete the remaining steps by referring to the [Create an API Proxy](create-an-api-proxy-c0842d5.md) topic.
 
 

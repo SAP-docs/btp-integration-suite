@@ -117,8 +117,6 @@ The type of proxy that you are using to connect to the target system:
 
 -   If you select *Manual*, you can manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry fields\).
 
-    Furthermore, with the parameter *URL to WSDL* you can specify a Web Service Definition Language \(WSDL\) file defining the WS provider endpoint \(of the receiver\). You can specify the WSDL by either uploading a WSDL file from your computer \(option *Upload from File System*\) or by selecting an integration flow resource \(which needs to be uploaded in advance to the *Resources* view of the integration flow\).
-
     This option is only available if you have chosen a *Process Orchestration* product profile.
 
 
@@ -313,6 +311,120 @@ This feature is disabled by default.
 <td valign="top">
 
 Select this option to clean up the adapter specific- headers after the receiver call.
+
+</td>
+</tr>
+</table>
+
+
+
+Select the *Processing* tab and provide values in the fields as follows.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameters
+
+</th>
+<th valign="top">
+
+Definition
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*SAP Message ID Determination*
+
+</td>
+<td valign="top">
+
+Select this option to specify how a target message ID \(referred to as SAP message ID\) shall be defined.
+
+> ### Note:  
+> You can use this feature to implement scenarios that guarantee end-to-end Exactly Once delivery. A receiver can use the target message ID, for example, to make sure that the receiver can process a certain message only once.
+> 
+> See: [Special Use Cases: SAP RM vs XI vs IDoc](special-use-cases-sap-rm-vs-xi-vs-idoc-5f7fa93.md)
+
+You can choose among the following options:
+
+-   *Generate* 
+
+    Generates a new SAP message ID.
+
+-   *Reuse* \(default\)
+
+    Take over the message ID passed with the header `SapMessageId`. If the header is not available in runtime, a new message ID is generated.
+
+-   *Map*
+
+    Maps a source message ID to the new target message ID.
+
+    This option generates a target message ID that is uniquely associated with the source message ID specified with parameter *Source for SAP Message ID*. Precisely spoken, the system sets the value of header `SapMessageId` to a globally unique identifier \(GUID\). This GUID identifies the target message.
+
+    To specify the source message ID, you can use a header or a property. If no header or property is specified, the system generates a source message ID.
+
+
+Note that source-to-target message ID mapping entries are deleted after 90 days. Furthermore, only the first 120 characters from the source message ID are considered by the mapping.
+
+> ### Tip:  
+> As example, let’s assume that you’ve chosen option *Map* for parameter *SAP Message ID Determination*, and in field *Source for SAP Message ID* you entered `${property.orderNo}`.
+> 
+> Furthermore, let’s assume that at runtime the property `orderNo` has the value `00001`. The IDoc receiver adapter generates a unique identifier \(GUID\) for the target message ID, for example, `ABCD1234XYZ`. In the scenario, the receiver system can then associate the target message ID `ABCD1234XYZ` with the source message ID `00001`.
+> 
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> Source Message ID
+> 
+> </th>
+> <th valign="top">
+> 
+> Target Message ID
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Property name: orderNo
+> 
+> Property value: 00001
+> 
+> </td>
+> <td valign="top">
+> 
+> Header name: SapMessageId
+> 
+> Header value: ABCD1234XYZ
+> 
+> </td>
+> </tr>
+> </table>
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Source for SAP Message ID* \(only in case *Map* is selected for *SAP Message ID Determination*\)
+
+</td>
+<td valign="top">
+
+To map the source message ID to the SAP message ID you can enter the source message ID dynamically by using headers or properties \(`${header.headername}` or `${property.propertyname}`\).
+
+> ### Note:  
+> If no header or property is available at runtime, a new message ID is generated.
+
+
 
 </td>
 </tr>

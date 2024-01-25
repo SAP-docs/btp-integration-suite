@@ -188,8 +188,77 @@ The type of proxy that you are using to connect to the target system.
 
     If you have selected this option and if the property is not defined \(for example, in a preceding step\), an error is raised at runtime.
 
+-   Select *Manual* to manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry field\).
+
+    This option is only available if *Edge* has been selected as runtime.
 
 
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Protocol*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Specify the type of proxy server which is used to communicate to the SFTP server. Choose between the following options:
+
+-   *HTTP*
+
+-   *SOCKS Version 4*
+
+-   *SOCKS Version 5*
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Host*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the name of the proxy host to be used. For example: `proxy.mycompany.com`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Port*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the proxy port number to be used.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Credential Name*
+
+\(only available if *Manual* is selected for *Proxy Type* and if *HTTP* or *SOCKS Version 5* is selected for *Proxy Protocol*\)
+
+</td>
+<td valign="top">
+
+Enter the referenced credential name used for proxy authentication.
 
 </td>
 </tr>
@@ -249,7 +318,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 </td>
 <td valign="top">
 
-Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted while establishing a connection or performing a read operation. Enter a minimum value bigger than `0`, and smaller than or equal to the maximum value of `299999`. The default ist set to `10000`.
+Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted while establishing a connection or performing a read operation. Enter a minimum value bigger than `0`, and smaller than or equal to the maximum value of `299999`. The default is set to `10000`.
 
 If the property `SAP_FtpTimeout` is defined, its value is used to specify this parameter at runtime and will overrun the timeout specified in the UI.
 

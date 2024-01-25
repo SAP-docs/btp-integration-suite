@@ -10,7 +10,7 @@ For more information, see:
 
 -   [SAP Integration Solution Advisory Methodology](sap-integration-solution-advisory-methodology-a2e17f3.md)
 
--    <?sap-ot O2O class="- topic/xref " href="d352b138fddb4da094314eb922b4ba1a.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/xui1697777552331/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/957de135ee4c4d5d9778355d76760572.xml" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="d352b138fddb4da094314eb922b4ba1a.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/fov1701176325794/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/957de135ee4c4d5d9778355d76760572.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 
 Reviewing and adjusting the ISA-M settings is the task of the enterprise architect \(see [Personas](../60-Security/personas-5df5af1.md)\).
@@ -20,7 +20,7 @@ Go to the *Settings* section to inspect the available ISA-M master data predefin
 > ### Note:  
 > When you've finished editing an entity, select *Done*.
 > 
-> You can also define new entities \(for example, a new integration domain\). To do this, select the *\+* icon \(*Create*\).
+> You can also define new entities \(for example, a new integration domain\). To do this, click the *\+* icon \(*Create*\).
 > 
 > You can also delete entities that aren't relevant for you. To do this, select the entity and select :wastebasket: \(*Delete*\).
 
@@ -376,7 +376,7 @@ See: [Key Characteristics](key-characteristics-c16258e.md)
 </tr>
 </table>
 
-Select a question to get more information about the answer options.
+Select a question to see more information about the answer options.
 
 You can also add your own questionnaires.
 

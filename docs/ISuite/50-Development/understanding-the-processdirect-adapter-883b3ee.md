@@ -60,7 +60,7 @@ Consider the following sample code:
 > 
 > def Message processData(Message message) {
 >     def headers = message.getHeaders();
->     def partnerId = headers.get("ACTUAL_PARTNER_ID");
+>     def partnerId = headers.get("SAP_TPM_ACTIVITYPARTNERID");
 >     def service = ITApiFactory.getApi(PartnerDirectoryService.class, null);
 >     def customActivityParams = service.getParameter("SAP_TPM_CustomActivityParams", partnerId, BinaryData.class);
 >     if (customActivityParams != null){
@@ -72,7 +72,7 @@ Consider the following sample code:
 > 
 > ```
 
-Here `"ACTUAL_PARTNER_ID"` is the header that maintains the PID and `"SAP_TPM_CustomActivityParams"` is the ID. Both the values are fixed strings.
+Here `"SAP_TPM_ACTIVITYPARTNERID"` is the header that maintains the PID and `"SAP_TPM_CustomActivityParams"` is the ID. Both the values are fixed strings.
 
 The code contains the dynamic parameter key `”MyTest1”` and the corresponding value `“val23”`. If you want to apply the above groovy script to a custom integration flow, then you can store the value `“val23”` to an exchange property named `“CustomKey”`.
 

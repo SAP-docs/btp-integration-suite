@@ -134,6 +134,69 @@ The following operations are supported:
 <tr>
 <td valign="top">
 
+*Proxy Type* 
+
+</td>
+<td valign="top">
+
+Proxy type to be used to connect to the SFTP server. Choose between the following options:
+
+-   *Internet*
+
+-   *Manual*
+
+    This option is only available if *Edge* has been selected as runtime.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Host*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the name of the proxy host to be used. For example: `proxy.mycompany.com`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Port*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the proxy port number to be used.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Credential Name*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the referenced credential name used for proxy authentication.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Data Type* 
 
 </td>

@@ -180,6 +180,8 @@ Select the SASL mechanism.
 
 -   SCRAM-SHA-256
 
+-   SCRAM-SHA-512
+
 
 
 

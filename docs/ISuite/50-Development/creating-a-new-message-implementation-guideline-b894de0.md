@@ -49,7 +49,7 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
 
     3.  *Summary*: You can provide a text description of the Message Implementation Guideline \(MIG\). This description is visible as short text documentation in the MIG overview list.
 
-    4.  *Business Context*: Select :heavy_plus_sign:, and choose the business context that you want to add. Based on the business context that you add, you're provided with further options in dropdown list. To understand, *Business Context* refer to [Terminology & Glossary for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/9c221b48799a4ce59367b0e3367f5a8f.html "") :arrow_upper_right:.
+    4.  *Business Context*: Select :heavy_plus_sign:, and choose the business context that you want to add. Based on the business context that you add, you're provided with further options in dropdown list. To understand, *Business Context* refer to [Terminology & Glossary for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/9c221b48799a4ce59367b0e3367f5a8f.html "") :arrow_upper_right:.
 
 
 8.  Choose *Create*.
@@ -60,12 +60,5 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
     > -   Select your message and the respective version and choose <span class="SAP-icons"></span> to create the MIG.
     > 
     > -   Alternately, open the message in the required version. The application provides a *Create MIG* button in the message type page that allows you to directly create a message implementation guideline.
-
-    Here are two videos to help you better understand the two options you have to create a MIG.
-
-    > ### Note:  
-    > These videos were created before our branding changes related to SAP technology were announced in January 2021.
-
-
 
 

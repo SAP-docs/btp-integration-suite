@@ -122,7 +122,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
 **Related Information**  
 
 
-[Configure the API business hub enterprise \[Classic Design\]](configure-the-api-business-hub-enterprise-classic-design-7b71b16.md "The classic design will be deprecated soon. The new design of the API business hub enterprise will be set as your default design from March 2023. However, you’ll still be able to toggle between the new and old design until June 2024.")
+[Configure the API business hub enterprise \[Classic Design\]](configure-the-api-business-hub-enterprise-classic-design-7b71b16.md "You can configure the API business hub enterprise to personalize it for your organization.")
 
 [Revoke Access \[Classic Design\]](revoke-access-classic-design-147fb9d.md "Revoke the access of an application developer.")
 

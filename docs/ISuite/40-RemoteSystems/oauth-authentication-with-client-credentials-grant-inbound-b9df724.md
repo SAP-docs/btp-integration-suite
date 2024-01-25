@@ -28,7 +28,7 @@ Using this variant, the authentication workflow is established at runtime in the
     If the access token is accepted and the authorization check is successful, the integration flow can be processed.
 
 
-![](images/CF_Inbound_OAuth_Client_Credentials_ea3899e.png)
+![By providing client credentials or a client certificate, the sender can request an access token. Consequently, the Token Server will provide the access. The sender can now use the access token to call the integration flow endpoint. The inegration flow will be processed, if the access token is accepted and the authorization check was successful.](images/CF_Inbound_OAuth_Client_Credentials_ea3899e.png)
 
 > ### Tip:  
 > For detailed information on how to set up this option, see [OAuth with Client Credentials Grant for Integration Flow Processing](oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md).
@@ -39,7 +39,7 @@ Using this variant, the authentication workflow is established at runtime in the
 > 
 >     When defining the service instance, you specify the role that is to be used to authorize the sender to call integration flow endpoint. You can either specify the predefined role `ESBMessaging.send` or a custom role. Furthermore, the role has to correspond to the one specified in the sender adapter of the integration flow that is addressed by the call.
 > 
-> -   For the service instance, you furthermore create a service key. In the service key, you define how the sender is to be authenticated against the token server \(either using client credentials or a client certificate\)..
+> -   For the service instance, you furthermore create a service key. In the service key, you define how the sender is to be authenticated against the token server \(either using client credentials or a client certificate\).
 > 
 >     Depending on the chosen option, the service key generated for the service instance contains values for various properties. To establish the call from the sender to the token server, the values for the following properties are required:
 > 
@@ -53,7 +53,7 @@ Using this variant, the authentication workflow is established at runtime in the
 >     These values are required in to set up the call to get the access token from the token server.
 > 
 > 
-> When you've configured service instance and service key accordingly, the authorization workflow from above uses the relevant information at runtime in the following way:
+> When you've configured service instance and service key accordingly, the authorization workflow mentioned earlier uses the relevant information at runtime in the following way:
 > 
 > 1.  The sender uses the service key data to call the token server and get the access token.
 > 
@@ -85,7 +85,7 @@ Using this variant, the authentication workflow is established at runtime in the
     If the access token is accepted and the authorization check is successful, the API client can access the Cloud Integration API resource.
 
 
-![](images/CF_Inbound_API_OAuth_cd86bda.png)
+![](images/CF_Inbound_API_OAuth_cd86bda.png)![By providing client credentials or a client certificate, the API client requests an access token from the SAP BTP token server. Consequently, the token server will provide the access. Then, the API client uses the access token to call the Cloud Integration API resource. The API client can access the Cloud Integration API resource, if the access token is accepted and the authorization check was successful.]()![](images/CF_Inbound_API_OAuth_cd86bda.png)
 
 > ### Tip:  
 > For detailed information on how to set up this option, see [OAuth with Client Credentials Grant for API Clients](oauth-with-client-credentials-grant-for-api-clients-20e26a8.md).

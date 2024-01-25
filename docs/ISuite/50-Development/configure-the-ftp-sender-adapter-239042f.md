@@ -501,7 +501,7 @@ You can select one of the following options from the dropdown list:
 
 You can select one of the following idempotent repository options:
 
--   *Database*\(default\): Stores the file names in a database to synchronize between multiple worker nodes and to prevent the files from being read again when the runtime node is restarted. File name entries are deleted by default after 90 days.
+-   *Database* \(default\): Stores the file names in a database to synchronize between multiple worker nodes and to prevent the files from being read again when the runtime node is restarted. File name entries are deleted by default after 90 days.
 
     > ### Note:  
     > The idempotent repository uses the username, host name, and file name as key values to identify files uniquely across integration flows of a tenant.

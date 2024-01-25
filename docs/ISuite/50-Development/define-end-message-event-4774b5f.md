@@ -23,7 +23,7 @@ If an exception occurs during the processing sequence which has been handled in 
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> ** \> *End Message Event*.
+1.  In the palette, choose *Events* <span class="SAP-icons"></span> ** \> *End Message Event*.
 
 2.  Save the changes.
 

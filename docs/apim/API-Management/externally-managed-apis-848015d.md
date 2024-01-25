@@ -19,5 +19,5 @@ You can import an API definition \(Open API Specification 2.0 or 3.0\) of extern
 -   These APIs are represented by the symbol: ![](images/External_API_94e5ac7.png)
 -   If you create a product using only externally managed APIs , your consumers can't view the rate plan for these APIs, nor can they subscribe to the product or use custom attributes for the product in the API business hub enterprise. For more information, see [Create a Product](create-a-product-d769622.md).
 -   You can choose to manage the life cycle of these externally managed APIs after listing them. To do so, from the *Overview* page of the API, choose *Manage*.
--   You can list externally managed APIs by importing them. For more information, see [Import an API](import-an-api-9342a93.md).
+-   You can list externally managed APIs by importing them. For more information, see [Import an API Definition](import-an-api-definition-9342a93.md).
 

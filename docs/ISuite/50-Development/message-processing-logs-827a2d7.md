@@ -30,7 +30,7 @@ Perform the steps described in: [Setting Up Inbound HTTP Connections \(for API C
 
 Assign the following role template:
 
-`MonitoringDataRead` \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\)
+`MonitoringDataRead` \(see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)\)
 
 To access the ID Mapper, assign role template `MessageProcessingLocksRead`.
 
@@ -116,6 +116,11 @@ Attachments
 
 Represents attachments of message processing logs.
 
+> ### Note:  
+> To be able to view attachments, you need the following role in the NEO environment :`esbmessagestorage.read`. In the Cloud Foundry environment, you need the role template `MessagePayloadsRead`\).
+
+
+
 </td>
 </tr>
 <tr>
@@ -174,7 +179,7 @@ Represents the idempotent repository.
 > ### Note:  
 > The `Idempotent Repository` resource of the `Message Processing Logs` API has been deprecated and replaced by a new one.
 
-The idempotent repository contains information about files that have already been consumed from the connected server in scenarios where one or more of the following features are used: Aggregator step, FTP, adapter, JMS adapter, SFTP adapter, or XI adapter. Files that are stored in the idempotent repository can be identified by the file name. When Cloud Integration tries to process the file, the system can detect if the file has already been consumed \(based on its idempotent repository entry\) and that way can prevent it from being consumed a second time from the server.
+The idempotent repository contains information about files that have already been consumed from the connected server in scenarios where one or more of the following features are used: Aggregation step, FTP, adapter, JMS adapter, SFTP adapter, or XI adapter. Files that are stored in the idempotent repository can be identified by the file name. When Cloud Integration tries to process the file, the system can detect if the file has already been consumed \(based on its idempotent repository entry\) and that way can prevent it from being consumed a second time from the server.
 
 More information:
 
@@ -203,7 +208,7 @@ External Logging \(only available in the Cloud Foundry environment.\)
 
 Allows you to activate or deactivate external logging.
 
-More informarion: [External Logging](external-logging-ad719c1.md)
+More information: [External Logging](external-logging-ad719c1.md)
 
 </td>
 </tr>

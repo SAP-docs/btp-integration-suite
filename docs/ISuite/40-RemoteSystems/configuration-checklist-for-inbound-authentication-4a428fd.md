@@ -374,7 +374,7 @@ See: [Client Certificate Authentication for API Clients](client-certificate-auth
 </td>
 <td valign="top" rowspan="5">
 
-Role as described at [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right: 
+Role as described at [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md) 
 
 </td>
 <td valign="top" rowspan="5">

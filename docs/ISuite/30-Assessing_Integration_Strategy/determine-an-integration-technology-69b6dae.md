@@ -10,7 +10,7 @@ By answering configurable questionnaires, you can capture the interface requirem
 
     The interface request created in [Create a Business Solution Request and Interface Request](create-a-business-solution-request-and-interface-request-f3d983a.md) is listed under the project names with the status *Requirement Analysis*.
 
-2.  Click *Requirement Analysis*.
+2.  Select *Requirement Analysis*.
 
     In the following screens, provide answers to the questions, and choose the next step. The following are the sections for which questions have to be answered.
 

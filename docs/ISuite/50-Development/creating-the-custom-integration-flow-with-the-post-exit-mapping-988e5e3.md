@@ -17,8 +17,6 @@ This integration flow is kept very simple.
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="274e4d0ac4774d7792e5812d6aa98041.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/xui1697777552331/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/988e5e3149a045a388d45a5d0027743c.xml" ?> 
-
 [Configuring the ProcessDirect Sender Adapter](configuring-the-processdirect-sender-adapter-4787d80.md "")
 
 [Creating the Custom Mapping](creating-the-custom-mapping-4af8ea7.md "")

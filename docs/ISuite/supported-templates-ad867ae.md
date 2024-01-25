@@ -314,7 +314,7 @@ Recipient List with option to send message to default receiver in case of receiv
 
 ## RL\_ASYNC\_0004
 
-Recipient List with NO Condition \(Multicast\)​.![](images/RL_ASYNC_0004_1d24205.png)
+Recipient List with NO Condition \(Multicast\)​.![](images/1d24205975ec4c41b7d7f5408f187f7d.image)
 
 <a name="loio7dc60062b6aa47d0b6d8282171a8d98f"/>
 
@@ -322,5 +322,5 @@ Recipient List with NO Condition \(Multicast\)​.![](images/RL_ASYNC_0004_1d242
 
 ## RL\_ASYNC\_0005
 
-Recipient List with Order at Runtime \(Sequential Multicast\)​![](images/RL_ASYNC_0005_042dbe6.png)
+Recipient List with Order at Runtime \(Sequential Multicast\)​![](images/042dbe67e5cc489cbd5e82c245433a2e.image)
 

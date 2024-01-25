@@ -2,13 +2,11 @@
 
 # Subscribe to a Product \[Classic Design\]
 
-**The classic design will be deprecated soon. The new design of the API business hub enterprise will be set as your default design from March 2023. However, you’ll still be able to toggle between the new and old design until June 2024.** 
+You can subscribe to a product and add it to an existing application or create a new application.
 
 
 
 ## Context
-
-You can subscribe to a product and add it to an existing application or create a new application.
 
 On the homepage, you can find the list of products. You can also view the various resources that each product has to offer.
 

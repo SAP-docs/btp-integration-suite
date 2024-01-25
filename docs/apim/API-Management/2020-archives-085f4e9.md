@@ -177,7 +177,7 @@ API state can be entered during import, and is available during export of an API
 </td>
 <td valign="top">
 
-For more information on the details of the API state to be provided during import, see [Import an API](import-an-api-9342a93.md).
+For more information on the details of the API state to be provided during import, see [Import an API Definition](import-an-api-definition-9342a93.md).
 
 </td>
 <td valign="top">
@@ -479,7 +479,7 @@ Create an API for an Integration Flow
 </td>
 <td valign="top">
 
-Users can discover Integration Flows thought the Cloud Integration API Provider and generate APIs for the same. For more information, see [Creating an API from SAP Cloud Integration API Provider](creating-an-api-from-sap-cloud-integration-api-provider-aefbd74.md).
+Users can discover Integration Flows thought the Cloud Integration API Provider and generate APIs for the same. For more information, see [Creating an API Proxy using SAP Cloud Integration API Provider](creating-an-api-proxy-using-sap-cloud-integration-api-provider-aefbd74.md).
 
 </td>
 <td valign="top">

@@ -2,7 +2,7 @@
 
 # API Services
 
-From API Management, a variety of APIs are offered as services in specific use cases and workflows. You can explore them and try it out in the SAP API Business Hub in the following url: `http://api.sap.com`.
+From API Management, a variety of APIs are offered as services in specific use cases and workflows. You can explore them and try it out in the SAP Business Accelerator Hub in the following url: `http://api.sap.com`.
 
 
 <table>
@@ -21,12 +21,12 @@ Description
 <tr>
 <td valign="top">
 
-API Portal
+
 
 </td>
 <td valign="top">
 
-You can browse through this API package for API Admin services with the required resources.
+You can browse through this API package for API admin services with the required resources.
 
 </td>
 </tr>
@@ -66,9 +66,9 @@ A client software development kit \(SDK\) is available for developers through a 
 
 In the API Portal, at the top-right corner, choose *Navigation Links* \(![](images/Finalgrid_1a621ca.png)\) and select *Client SDK* \(![](images/clientsdk_f85baa6.png)\). On selecting the client SDK, you are navigated to the maven repository, where you can download this package.
 
-For more information, see [SAP API Management, 1.5.0 Client SDK](https://help.sap.com/doc/sap-api-management-client-sdk/Cloud/en-US/SAP%20API%20Management%20Cloud%20SDK_1.5.0%20.pdf).
+For more information, see [SAP API Management, 1.5.2 Client SDK](https://help.sap.com/doc/sap-api-management-client-sdk/Cloud/en-US/SAP%20API%20Management%20Cloud%20SDK_1.5.2.pdf).
 
-You can also download the package from [https://mvnrepository.com/artifact/com.sap.apimgmt.client.sdk/apim-client-sdk](https://mvnrepository.com/artifact/com.sap.apimgmt.client.sdk/apim-client-sdk). On navigating to this link, select the latest version and choose *View All*.
+You can also download the package from [https://int.repositories.cloud.sap/artifactory/deploy-releases/com/sap/apimgmt/client/sdk/apim-client-sdk/1.5.2/apim-client-sdk-1.5.2.zip](https://int.repositories.cloud.sap/artifactory/deploy-releases/com/sap/apimgmt/client/sdk/apim-client-sdk/1.5.2/apim-client-sdk-1.5.2.zip). On navigating to this link, select the latest version and choose *View All*.
 
 </td>
 </tr>

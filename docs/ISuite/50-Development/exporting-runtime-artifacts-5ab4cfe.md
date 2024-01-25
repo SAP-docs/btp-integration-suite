@@ -22,7 +22,11 @@ By exporting the runtime artifacts, the application automatically generates a nu
 This automatic generation is a particularly enormous time saver because without the application, all these schemes, scripts, or payloads must be created separately and manually.
 
 > ### Note:  
-> In SAP Process Orchestration mode, not all artifacts are relevant and therefore only fewer artifacts are exported.
+> In SAP Process Orchestration mode
+> 
+> -   Not all artifacts are relevant and therefore only fewer artifacts are exported.
+> 
+> -   Exporting MIGs and MAGs based on Tradacoms is not supported \(due to significant structural differences of the Tradacoms message structures\).
 
 You can then import these runtime artifacts in either of these integration solutions and use them to implement your A2A/B2B integration scenario. See [Consuming Artifacts in Integration Flows](consuming-artifacts-in-integration-flows-a33a6c6.md)
 

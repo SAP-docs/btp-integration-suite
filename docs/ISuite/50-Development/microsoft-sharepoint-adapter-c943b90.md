@@ -11,7 +11,7 @@ Use Microsoft SharePoint adapter to encrypt and exchange sensitive business data
 > 
 > The availability of the adapter is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://launchpad.support.sap.com/#/notes/2903776) and [3188446](https://launchpad.support.sap.com/#/notes/3188446).
 
-The Microsoft SharePoint adapter helps to use various product features from SharePoint Online like Sites, Subsites, List, List Items, Files, Folder, Column, Content Type, Permission, Sharing etc.
+The Microsoft SharePoint adapter helps to use various product features from SharePoint Online like Sites, Subsites, List, List Items, Files, Folder, Column, Content Type, Permission, Sharing etc. using v2 REST APIs. See: [SharePoint REST operations via the Microsoft Graph REST API](https://learn.microsoft.com/en-us/sharepoint/dev/apis/sharepoint-rest-graph).
 
 [Configure the Microsoft SharePoint Sender Adapter](configure-the-microsoft-sharepoint-sender-adapter-ce41e85.md "The Microsoft SharePoint sender adapter connects an SAP Integration Suite tenant to a remote system using the HTTP/HTTPS protocol to read files from the system.")
 

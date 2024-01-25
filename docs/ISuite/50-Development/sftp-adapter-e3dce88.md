@@ -12,7 +12,7 @@ Use SFTP adapter to encrypt and exchange sensitive business data between trading
 
 
 
-The SFTP Adapter connects an SAP Cloud Integration tenant to a remote system using the SSH File Transfer protocol to write files to the system.The SFTP adapter uses a certificate and keystore to authenticate the file transfer unlike the standard FTP. The SFTP adapter achieves secure transfer by encrypting sensitive information before transmitting it on the network. It uses SSH protocol to transfer files.
+The SFTP Adapter connects an SAP Cloud Integration tenant to a remote system using the SSH File Transfer protocol to write files to the system. The SFTP adapter uses a certificate and keystore to authenticate the file transfer unlike the standard FTP. The SFTP adapter achieves secure transfer by encrypting sensitive information before transmitting it on the network. It uses SSH protocol to transfer files.
 
 
 

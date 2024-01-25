@@ -24,7 +24,7 @@ Perform the step-by-step instructions in this topic to create custom dimensions 
 
 3.  Choose *OK*.
 
-4.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
+4.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
 
 5.  From the APIs list, choose the required API for which you want to collect data using the custom metric.
 

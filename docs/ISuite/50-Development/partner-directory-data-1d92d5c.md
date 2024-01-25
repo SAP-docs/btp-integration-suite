@@ -18,8 +18,10 @@ It helps you to set up a communication network between many communication partne
 
 *Partner Directory Data* tab helps you in resolving issues faced by the customers by checking the partner directory data.
 
-> ### Note:  
+> ### Caution:  
 > Only Trading Partner related content is visible in the *Partner Directory Data* tab and the information is read-only.
+> 
+> The maximum number of Business Transaction Activities that you can conduct per tenant is 10,000. To know more see, [Partner Directory Information](https://help.sap.com/docs/integration-suite/sap-integration-suite/parameterizing-integration-flows-using-partner-directory?version=CLOUD).
 
 When a trading partner agreement gets activated, the complete agreement information gets pushed into the partner directory. An entry is created in the partner directory for each business transaction activity in the agreement and for each Interchange Envelope extraction \(depending on the adapter type\). The Interchange Extraction is nothing but an XSLT script that extracts the required parameters from the type system headers and writes those details into a camel exchange header object.
 

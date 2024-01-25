@@ -8,6 +8,9 @@ You open the message monitor by clicking a tile in the *Monitor Message Processi
 
 Messages are displayed according to the filter settings of the tile.
 
+> ### Note:  
+> In high-load scenarios, it is possible that the number of messages is still being determined while the list of messages is already being displayed. The determination of the message count is independent of the message search. This ensures that the message monitor does not encounter a timeout situation when determining a long list of messages.
+
 
 
 ## Filter Settings
@@ -55,6 +58,8 @@ Allows you to select from the following predefined time intervals:
 -   *Past Month*
 
 -   *Custom*
+
+    When you've selected the option *Custom*, you can select date and time with a graphical element with two components: a calendar element and a circular watch element. To select the date, interact with the calendar element and choose a specific day. To select the time, manipulate two separate circles on the watch element to set the desired hour and minute, respectively..
 
 
 You can select the start and end time of the interval.
@@ -113,6 +118,8 @@ When you position the cursor on an artifact in the value help list, name and typ
 When you select one of the following entries in the value help list, you can also filter for all artifacts with a dedicated type:
 
 -   *All Integration Flows*
+
+-   *All APIs*
 
 -   *All OData APIs*
 
@@ -225,7 +232,7 @@ Total message processing time.
 
 For a selected message, the details are displayed to the right of the message table. The header area provides the following information about the selected message: *Artifact Name* and *Last Updated at*.
 
-Below the header, the following sections contain detailed information about the selected message:
+After the header, the following sections contain detailed information about the selected message:
 
 -   *Status*
 
@@ -245,7 +252,7 @@ Below the header, the following sections contain detailed information about the 
     -   The *Custom Status*
 
     > ### Note:  
-    > *Sender*, *Receiver*, *Application Message ID*, *Application Message Type*, and *Custom Status* are optional and can be set via the Content Modifier. They’re only visible if they aren’t empty.
+    > *Sender*, *Receiver*, *Application Message ID*, *Application Message Type*, and *Custom Status* are optional and can be set via the Content Modifier. They’re only appear if they aren’t empty.
     > 
     > The *Custom Status* is only visible if it differs from the overall processing status.
 
@@ -257,7 +264,7 @@ Below the header, the following sections contain detailed information about the 
 
 -   *Logs*
 
-    Displays the *Log Level* and the *Runtime Node*. Clicking the log level link takes you to the message processing log displayed in table form. You access the textual representation by selecting *Open Text View*.
+    Displays the *Log Level* and the *Runtime Node*. Choosing the log level link takes you to the message processing log displayed in table form. You access the textual representation by selecting *Open Text View*.
 
     If the processing of an integration flow failed and retry runs were performed, the runs are displayed in a table \(up to 50 retries\) in the *Logs*section.
 
@@ -298,8 +305,66 @@ Below the header, the following sections contain detailed information about the 
 
 -   *Artifact Details*
 
-    This section displays the artifact *Name*, *ID*, *Type*, and *Package*, if available. You can open the integration flow by clicking the *View deployed Artifact* link. To edit the integration flow model, click the *Navigate to Artifact Editor* link. You can also navigate to the Integration Content Monitor by selecting the *Manage Integration Content* link. You will get a list of all artifacts matching the ID-string displayed in the search field.
+    This section displays the artifact *Name*, *ID*, *Type*, and *Package*, if available.
 
+    There are the following hyperlinks:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Hyperlink
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Manage Integration Content* 
+    
+    </td>
+    <td valign="top">
+    
+    Opens the integration content monitor.
+
+    When navigating to the integration content monitor, the active artifact that is currently deployed will be opened.
+
+    See: [Manage Integration Content](manage-integration-content-09a7223.md)
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *View deployed Artifact* 
+    
+    </td>
+    <td valign="top">
+    
+    Opens the deployed artifact \(if it's an integration flow, the model corresponding to the deployed integration flow is shown, but editing is not possible\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Navigate to Artifact Editor* 
+    
+    </td>
+    <td valign="top">
+    
+    Opens the artifact editor and allows you to edit the artifact \(if it's an integration flow, you can edit the integration flow model\).
+    
+    </td>
+    </tr>
+    </table>
+    
 
 **Related Information**  
 

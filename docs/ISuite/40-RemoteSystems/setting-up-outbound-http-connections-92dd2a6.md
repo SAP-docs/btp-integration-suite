@@ -6,7 +6,7 @@ You can use various receiver adapters \(for example, the SOAP adapters, the IDoc
 
 The following figure illustrates the basic setup for HTTP outbound communication:
 
-![](images/Outbound_Communication_306026f.png)
+![The figure shows a simplified setup for HTTP outbound communication. Thanks to the Outbound Communication the Cloud Integration can be set up successfully for the Remote System.](images/Outbound_Communication_306026f.png)
 
 
 
@@ -195,7 +195,7 @@ More information: [OAuth 2.0](oauth-2-0-3823134.md#loio382313443b8d4453b0fd536b8
 > 
 > More information: [Outbound/On-Premise: Reverse Proxy or SAP Cloud Connector](outbound-on-premise-reverse-proxy-or-sap-cloud-connector-14567e1.md)
 
-You can access the following link to see the list of available landscapes and respective IP addresses used by SAP Integration Suite : [Landscape Hosts](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/d722f7cea9ec408b85db4c3dcba07b52.html).
+You can access the following link to see the list of available landscapes and respective IP addresses used by SAP Integration Suite: [Landscape Hosts](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/d722f7cea9ec408b85db4c3dcba07b52.html).
 
 **Related Information**  
 

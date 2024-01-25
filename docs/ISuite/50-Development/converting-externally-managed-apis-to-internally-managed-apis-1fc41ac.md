@@ -53,5 +53,5 @@ You've converted an externally managed API into an internally managed API and ha
 
 ## Next Steps
 
-To import and publish the internally managed APIs, refer the following topics: [Import an API](import-an-api-9342a93.md) and [Publish APIs](publish-apis-75a4a11.md) 
+To import and publish the internally managed APIs, refer the following topics: [Import an API Definition](import-an-api-definition-9342a93.md) and [Publish API Proxies](publish-api-proxies-75a4a11.md) 
 

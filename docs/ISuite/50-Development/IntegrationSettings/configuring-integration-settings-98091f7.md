@@ -55,12 +55,12 @@ After enabling the Cloud Integration capability, you need to configure the servi
     <tr>
     <td valign="top">
     
-    *ES Repository* 
+    *System* 
     
     </td>
     <td valign="top">
     
-    You can fetch content directly from ES repository. This fetch enables you to reuse the integration content that is already there in your ES repository and avoid the overhead of creating that content again in the Cloud Integration application.
+    You can fetch content directly from ES repository. This fetch enables you to reuse the integration content that is already there in your ES repository and avoid the overhead of creating that content again in SAP Integration Suite.
 
     See: [Importing Content from SAP Process Orchestration System](importing-content-from-sap-process-orchestration-system-53db5fb.md).
     

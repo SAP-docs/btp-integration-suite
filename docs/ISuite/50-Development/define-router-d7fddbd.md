@@ -10,7 +10,7 @@
 
 ## Context
 
-You perform this task when you have to specify conditions based on which the messages are routed to a receiver or an interface during runtime. If the message contains XML payload, you form expressions using the XPath-supported operators. If the message contains non-XML payload, you form expressions using the operators shown in the table below:
+You perform this task when you have to specify conditions based on which the messages are routed to a receiver or an interface during runtime. If the message contains XML payload, you form expressions using the XPath-supported operators. If the message contains non-XML payload, you form expressions using the operators shown in the following table:
 
 **Usage of Operators in Non-XML Conditions**
 

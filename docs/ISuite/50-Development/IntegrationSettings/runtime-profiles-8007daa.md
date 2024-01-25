@@ -4,7 +4,7 @@
 
 Cloud Integration allows you to use integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.
 
-A **runtime profile** defines a set of capabilities for Cloud integration content design supported by a specific target integration platform. In particular, a specific runtime profile supports the configuration of a specific set of adapter types and integration flow steps.
+A **runtime profile** defines a set of capabilities for Cloud Integration content design supported by a specific target integration platform. In particular, a specific runtime profile supports the configuration of a specific set of adapter types and integration flow steps.
 
 The following runtime profiles are available:
 
@@ -14,55 +14,37 @@ The following runtime profiles are available:
 
 -   **SAP Process Orchestration \(for specific Process Orchestration release\)** 
 
-    For example: **SAP Process Orchestration 7.5, SP5**
+    For example: **SAP Process Orchestration 7.5, SP05**
 
-    On premise integration runtime of SAP Process Integration \(for the available release\)
+    On-premise integration runtime of SAP Process Integration \(for the available release\)
 
+-   Edge Integration Cell
 
-Prior to start working with Cloud integration content, you need to know on which target integration platform\(s\) the Cloud integration content is to be deployed and executed.
-
-If you encounter use cases where both on premise and Cloud-based integration platforms are involved, you might like to have several options and, accordingly, both runtime profiles are of interest for you.
-
-The following figure illustrates the use case for the runtime profiles SAP Cloud Integration and SAP Process Orchestration 7.5 SP0.
-
-![](images/Product_Profiles_63e6f12.png)
+    Hybrid integration runtime offered as part of SAP Integration Suite.
 
 
+Before working with and designing integration content, you must know on which target runtime you want to deploy the integration content.
 
-When you’ve decided on the runtime profiles in question, the process is as follows:
-
-Based on your choice, you request an account and tenant at SAP.
-
-Under *Settings* \> *Integration*, you choose the default runtime profile. When you create a new integration flow, this choice is applied by default.
-
-All the profiles appear in the *Runtime Profiles* tile. You can enable or disable the availability of the runtime profile in the tenant under the enable option. Only enabled runtime profiles appear in the integration flow under *Runtime Configuration*.
+All the profiles appear in the *Runtime Profiles* tab. You can enable or disable a runtime profile based on your requirements. Only the enabled runtime profiles appear in the *Runtime Configuration* tab of the integration flow editor.
 
 > ### Note:  
-> -   Runtime profiles are shown as enabled under *Settings*.
+> -   At any point of time, there's only one Cloud Integration runtime profile and you can’t disable it. The option to disable this profile is grayed out.
 > 
-> -   Using the switch option, tenant administrator can enable or disable runtime profiles. Users can edit the profile's page and save the settings.
+> -   The Edge Integration Cell runtime profiles can’t be disabled. The *Current Version* column displays the version on which the runtime profile is currently running.
 > 
-> -   The Cloud Integration profile can’t be disabled. The switch option is grayed out.
+> -   The Edge Integration Cell runtime profiles are updated at cloud speed, which means you must upgrade them monthly. If your runtime is outdated, content deployment and undeployment get blocked. For more information, see [Upgrade Edge Integration Cell](../../upgrade-edge-integration-cell-27c3926.md).
 > 
-> -   Tenant administrator can decide to enable or disable the *SAP Process Orchestration* supported packages \(SP's\). They can take the decision based on the availability of SP’s in the on-premise integration platform.
+> -   Tenant administrator can decide to enable or disable the *SAP Process Orchestration* supported packages \(SPs\). They can take the decision based on the availability of SPs in the on-premise integration platform.
 > 
-> -   If you make support packages of *SAP Process Orchestration* profile as a default and disable it, SAP Cloud Integration automatically becomes a default profile.
+> -   If you make an *SAP Process Orchestration* runtime as the default profile and disable it, Cloud Integration automatically becomes the default profile.
 > 
-> -   If you disable the runtime profile already used in the integration flow
-> 
->     -   The palette sends an alert message indicating that the runtime profile set in the integration flow isn’t available; default profile set at the workspace level will be used for loading the palette and validations.
->     -   Disabled runtime profile is grayed out in the integration flow under *Runtime Configuration*.
-
-The integration flow editor displays the options and executes checks based on the chosen runtime profile. The reason for this is that the target integration platform imposes specific restrictions on the Cloud integration content.
-
-You have the option to configure a runtime profile also for an individual integration flow \(under *Runtime Configuration*\).
+> -   If you disable a runtime profile that is already used in an integration flow, the integration flow editor sends an alert message indicating that the runtime profile isn’t available. The default runtime profile is automatically used for validations.
 
 
 
-**Related Information**  
+When you’ve decided on the runtime profile in question, follow the steps mentioned in [Set Default Runtime Profile](set-default-runtime-profile-efebd50.md).
+
+You have the option to configure a runtime profile also for an individual integration flow \(under *Runtime Configuration*\). See: [Configure Runtime Profile for an Integration Flow](configure-runtime-profile-for-an-integration-flow-65cc0bc.md)
 
 
-[Set Default Runtime Profile](set-default-runtime-profile-efebd50.md "The tenant administrator can view and configure a runtime profile, to mark one of them as default for the tenant.")
-
-[Configure Runtime Profile for an Integration Flow](configure-runtime-profile-for-an-integration-flow-65cc0bc.md "You can use runtime profile in an integration flow, to develop content for a particular runtime.")
 

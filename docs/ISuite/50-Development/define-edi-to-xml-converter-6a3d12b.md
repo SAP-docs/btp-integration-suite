@@ -21,14 +21,14 @@ You are editing the integration flow in the editor.
 
 ## Context
 
-Use the procedure here to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format into XML format.
+Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format into XML format.
 
 > ### Note:  
-> -   Any EDIFACT message is an interchange. An interchange can have multiple groups. And each group consists of message types. For EDIFACT message, the EDI elements in SAP Cloud Integration support only 1 message type per interchange but does not support any group segment \(GS\) per interchange segment.
+> -   Any EDIFACT message is an interchange. An interchange can have multiple groups. And each group consists of message types. For EDIFACT messages, the EDI elements in Cloud Integration support only 1 message type per interchange but does not support any group segment \(GS\) per interchange segment.
 > 
 >     EDI to XML converter version 1.5 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
 > 
-> -   Any ASC-X12 message is an interchange. An interchange can have multiple groups. And each group consists of transaction sets. For ASC-X12 message, the EDI elements in SAP Cloud Integration support only 1 group segment \(GS\) per interchange segment and only 1 transaction set \(ST\) per group segment.
+> -   Any ASC-X12 message is an interchange. An interchange can have multiple groups. And each group consists of transaction sets. For ASC-X12 message, the EDI elements in Cloud Integration support only 1 group segment \(GS\) per interchange segment and only 1 transaction set \(ST\) per group segment.
 > -   EDI to XML converter version 1.6 and above supports LS/LE segments.
 > -   Cloud Integration does not support repetition characters. Repetition character is a single character which separates the instances of a repeating data element. For example, *^* \(caret sign\) is a repetition character.
 
@@ -103,7 +103,7 @@ Use the procedure here to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format
     If you select `Integration Flow` as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the conversion will take place.
 
     > ### Note:  
-    > -   You can add XSD files to the integration flow. For more details, please refer to the topic **Validating Message Payload against XML Schema**, in developer's guide.
+    > -   You can add XSD files to the integration flow. For more details, please refer to [Validating Message Payload against XML Schema](validating-message-payload-against-xml-schema-360dc70.md).
     > 
     > -   The file name of the xml schema for **EDIFACT/ODETTE** should have the following format:
     > 
@@ -132,7 +132,7 @@ Use the procedure here to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format
     > 
     > -   The above mentioned values should match with schema content.
     > 
-    > -   During runtime only XSD’s from Integration Advisor \(IA\) are supported.
+    > -   During runtime only XSD’s from Integration Advisor are supported.
 
 
     
@@ -266,6 +266,9 @@ Use the procedure here to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format
 
         If selected, the schema definition is specified from a resource file of the integration flow \(use the parameter *Schemas* to choose the schema\).
 
+
+    > ### Note:  
+    > During runtime only XSD’s from Integration Advisor are supported.
 
 
     

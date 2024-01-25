@@ -112,7 +112,7 @@ Description
 </td>
 <td valign="top">
 
-Base URL of the Splunk server..
+Base URL of the Splunk server.
 
 Example:
 
@@ -349,7 +349,7 @@ Only if for *Method* one of the following options is selected:
 
 -   For Splunk Cloud Platform: *Delete Saved Search*, *Remove Input*, *Modify Input*, *Create Input*, *Run One Shot Search*, *Run Saved Search*, *View Named Saved Search*, *Edit Saved Search Permission* 
 
--   For Splunk Enterprise: *Delete Saved Search*, *Remove Input*, *Modify Input*, *Modify Index*, *Create Input*, *Create Index*, *Run One Shot Search*, *Run Saved Search*, *Get Input*, *View Named Saved Search*, *Add Data to TCP Input*, *Add Data to UDP Input*, *Enable Global Settings* \)
+-   For Splunk Enterprise: *Delete Saved Search*, *Remove Input*, *Modify Input*, *Modify Index*, *Create Input*, *Create Index*, *Run One Shot Search*, *Run Saved Search*, *Get Input*, *View Named Saved Search*, *Add Data to TCP Input*, *Add Data to UDP Input*, *Enable Global Settings*\)
 
 
 

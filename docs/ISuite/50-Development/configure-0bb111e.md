@@ -15,7 +15,7 @@ The following table lists the high level tasks that an API Administrator can per
 <tr>
 <td valign="top">
 
-[Build APIs](build-apis-74c042b.md) 
+[Build API Proxies](build-api-proxies-74c042b.md) 
 
 </td>
 <td valign="top">
@@ -31,7 +31,7 @@ For more information, see:
 
 -   [Key Components of an API](key-components-of-an-api-19c0654.md)
 
--   [Different Methods of Creating an API](different-methods-of-creating-an-api-4ac0431.md)
+-   [Different Methods of Creating an API Proxy](different-methods-of-creating-an-api-proxy-4ac0431.md)
 
 -   [Additional Configurations](additional-configurations-de7285c.md)
 

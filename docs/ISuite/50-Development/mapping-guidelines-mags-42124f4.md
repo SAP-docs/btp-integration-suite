@@ -268,7 +268,7 @@ You can also view the version history of a specific mapping guideline. Choose th
 -   *Imported*: This column lets you know if the MAG is imported or not.
 -   The action <span class="SAP-icons"></span> button allows you to copy, migrate or compare your MAG.
 
-The *Code Value Mapping* tab displays the list of global code value mappings that can be used in your mapping guideline. To know more, see [Global Code Value Mapping](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/fd1d3ff10e0f406f95924d5f77c7f6b1.html "Know more about the Code Value Mapping tab in the Mapping Guidelines page.") :arrow_upper_right:.
+The *Code Value Mapping* tab displays the list of global code value mappings that can be used in your mapping guideline. To know more, see [Global Code Value Mapping](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fd1d3ff10e0f406f95924d5f77c7f6b1.html "Know more about the Code Value Mapping tab in the Mapping Guidelines page.") :arrow_upper_right:.
 
 
 

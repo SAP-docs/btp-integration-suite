@@ -27,9 +27,7 @@ To get the base URL for the API calls, perform the following steps:
 
 1.  Go to SAP Business Technology Platform cockpit and select your subaccount \(for which you like to manage the service instances and service keys\).
 
-2.  On the *Overview* page, go to section *Cloud Foundry Environment*.
-
-    ![](images/BTP_Cockpit_API_ENdpoint_ee6a6ff.png)
+2.  On the *Overview* page, go to section *Cloud Foundry Environment*.![](images/SAP_BTP_Cockpit_915802f.png)
 
     The *API Endpoint* entry is the base URL to use.
 

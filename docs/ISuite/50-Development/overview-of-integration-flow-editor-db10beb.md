@@ -16,7 +16,7 @@ The editor displays and allows you to edit the content of the currently opened i
 
 The palette shows all the options required to model an integration flow. For more information about the using different components during the development, see [Configure Integration Flow Components](configure-integration-flow-components-3171795.md).
 
-![](images/CPI_New_Editor_c6563be.png)
+![See description and links on previous text.](images/CPI_New_Editor_c6563be.png)
 
 
 
@@ -373,7 +373,7 @@ Access the help information of a particular Flow step. It gives direct access to
 </td>
 <td valign="top">
 
-Easy way to search a required flow step. You can either type in the search field or scroll down to select the flow step.
+Easy way to search a required flow step. You can either search it using the search field or scroll down to select the flow step.
 
 </td>
 </tr>
@@ -389,7 +389,7 @@ Easy way to search a required flow step. You can either type in the search field
 
 ### Zoom
 
-You can easily zoom in and out of the editor with your mouse scroll or the '+' and '-' action buttons on the top right of the editor. This feature is helpful when you've to edit large and complex integration flows.
+You can easily zoom in and out of the editor with your mouse scroll or the '+' and '-' action buttons on the top right of the editor. This feature is helpful when you have to edit large and complex integration flows.
 
 
 
@@ -413,7 +413,7 @@ As a best practice, we recommend to save your design changes and configurations 
 
 ### Overview Mode
 
-When you've a large integration flow, you need a visualization that helps you see the entire integration flow and navigate to a specific area in that flow. The overview mode provides you that option. By choosing the dedicated button on the bottom right of the screen, you get a bird's eye view of the integration flow.
+When you have a large integration flow, you need a visualization that helps you see the entire integration flow and navigate to a specific area in that flow. The overview mode provides you that option. By choosing the Show Overview arrow button on the bottom right of the screen, or using the F9 key on your keyboard, you get a bird's eye view of the integration flow.
 
 
 
@@ -427,7 +427,7 @@ The editor also prevents you from adding multiple incoming messages to integrati
 
 ### Search for Steps
 
-You use search step to find the required flow step during the development of an integration scenario. You can search the step with free text. For example, filter, sender, content modifier etc. When you enter a text as a search, the system looks for it and displays the flow step. You can just select and drop it in the modeling area.
+In the edit mode, you can find the required flow step during the development of an integration scenario. You can search the step with free text. For example, filter, sender, content modifier etc. When you enter a text as a search, the system looks for it and displays the flow step. You can just select and drop it in the modeling area. For information about finding an already existing flow step, see [Search Existing Flow Steps](overview-of-integration-flow-editor-db10beb.md#loiodb10bebf11fe4dc48bd97d2c4011485c__search).
 
 
 
@@ -444,7 +444,7 @@ You use double click to open the properties view of a step and integration flow.
 
 ### Auto-Save
 
-Consider a scenario where you’ve exited the integration editor while modeling an integration flow or encountered a session timeout. In both these cases, you'ven’t saved the changes made to the integration flow. To identify an unsaved integration flow artifact, you can find the **Unsaved Changes** text appearing under the name of the artifact.
+Consider a scenario where you’ve exited the integration editor while modeling an integration flow or encountered a session timeout. In both these cases, you haven’t saved the changes made to the integration flow. To identify an unsaved integration flow artifact, you can find the **Unsaved Changes** text appearing under the name of the artifact.
 
 In such scenarios, the Auto-Save functionality helps you recover the unsaved version of the integration flow. The next time when you open the specific integration flow in the WebUI, a popup appears asking if you would like to recover the unsaved integration flow. If you choose *Recover*, the application restores the integration flow you were working on before. If you don’t want to keep a previous version, then choose *Discard*.
 
@@ -462,7 +462,7 @@ You can copy and paste adapter configurations within an integration flow.
 Copy and paste only works between 2 sender adapters and 2 receiver adapters. Copy of a sender adapter details to a receiver adapter \(or vice versa\) isn’t supported.
 
 > ### Example:  
-> To copy and paste the configuration between 2 receiver adapters, navigate to the *Design* tab, and under your integration package, open an artifact in *Edit* mode. Select one of the receiver adapters and choose the **Copy** <span class="SAP-icons"></span> button to copy its configuration details. Choose another receiver adapter and click on **Paste** <span class="SAP-icons"></span>button. The configuration details are copied into this receiver adapter.
+> To copy and paste the configuration between 2 receiver adapters, navigate to the *Design* mode. Select one of the receiver adapters and choose the tab, and under your integration package, open an artifact in *Edit***Copy** <span class="SAP-icons"></span> mode. Select one of the receiver adapters and choose the button to copy its configuration details. Choose another receiver adapter and select the **Paste** <span class="SAP-icons"></span>button. The configuration details are copied into this receiver adapter.
 
 > ### Note:  
 > -   The paste function overwrites any existing configuration on the adapter including its type.
@@ -478,9 +478,9 @@ You can copy and paste flow steps within and across integration flows.
 
 Allows you to paste the copied flow step. Supports 2 pasting options:
 
--   explicit selection – you paste the copied flows step using `CTRL + V` or palette action at a specific point of your choice either within or across integration flows. To paste in a different integration flow, you must first choose a container like Integration Process or Local Integration process and then paste within the chosen container.
+-   explicit selection – you paste the copied flows step using the `CTRL + V` keys on the keyboard or palette action at a specific point of your choice either within or across integration flows. To paste in a different integration flow, you must first choose a container like Integration Process or Local Integration process and then paste within the chosen container.
 
--   without explicit selection – you paste using `CTRL + V` or palette action within the integration flow without moving your mouse to a specific point. The pasted flow step overlaps the source flow step.
+-   without explicit selection – you paste using the `CTRL + V` keys on your keyboard or palette action within the integration flow without moving your mouse to a specific point. The pasted flow step overlaps the source flow step.
 
 
 **Copy and Paste of multiple shapes**: You can copy multiple shapes and paste them in one go. For example, this is helpful when you want to copy a message routing shape like multicast or router and all of its paths. Select multiple shapes and sequence flows using the `Shift` key. Later, paste the copied multiple shapes inside a container. If you copy only the sequence flow step and attempt pasting, the sequence flow step along with the previous and next shapes gets pasted.
@@ -597,11 +597,46 @@ No
 
 Context-sensitive help paves a way for accessing the help information of a particular adapter or flow step, hence reducing the time spent in searching for the information.
 
-Consider a scenario where you need to know more about how to define a script for message processing. Select the *Script* shape in the editor and click *Help* <span class="SAP-icons"></span> icon in the property sheet. Context-specific information in a new window or tab.
+Consider a scenario where you need to know more about how to define a script for message processing. Select the *Script* shape in the editor and choose the *Help* <span class="SAP-icons"></span> icon in the property sheet. Context-specific information in a new window or tab.
 
 > ### Note:  
 > -   The context-sensitive help can be accessed in both read-only and editable mode of an integration flow. This feature is available only for integration flow artifacts and not for OData artifacts.
 > 
 > -   This feature can also be accessed in *Discover* and *Monitor* views.
 > -   This feature isn’t available for custom adapters.
+
+
+
+<a name="loiodb10bebf11fe4dc48bd97d2c4011485c__search"/>
+
+## Search Existing Flow Steps
+
+You can search for an existing flow step in the design time and runtime views of an integration flow.
+
+
+
+### Design Time Search
+
+You can search for a flow step in both edit and read modes of an integration flow using the search field in the palette. In read mode, the search field is labelled *Search Step*.
+
+You can execute a search by:
+
+-   Type of the flow step. For example, Groovy Script or Content Modifier
+
+-   Name of the flow step
+
+-   ID of the flow step
+
+
+As soon as you execute a search, matching flow steps are shown below the search field. If there is an <span class="SAP-icons"></span> icon against a flow step, it means that the flow step is used in the integration flow. Choose the icon to identify where the flow steps are used.
+
+You see the search results at the bottom of the editor. If one or more flow steps are available, you can move across the flow steps using the arrows in the search results.
+
+Additionally, in edit mode, the search field is labelled *Search and Add a Step*. In edit mode, when you execute a search, you can also add the flow step to the integration flow.
+
+
+
+### Runtime Search
+
+You can navigate from the *Monitoring* screen and *Inspect* screen to view the deployed artifact and search for flow steps.
 

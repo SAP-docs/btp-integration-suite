@@ -168,9 +168,9 @@ Tenant decrypts outbound response message.
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="9b619fe82f5e4ba5b7eafde67c1548a9.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/xui1697777552331/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/169b0b5b16d2415590bc3ce84cc4a918.xml" ?> 
-
 [WS-Security Configuration for the Sender SOAP 1.x Adapter](../50-Development/ws-security-configuration-for-the-sender-soap-1-x-adapter-e53bb5c.md "")
 
 [WS-Security Configuration for the Receiver SOAP 1.x Adapter](../50-Development/ws-security-configuration-for-the-receiver-soap-1-x-adapter-e9f42bf.md "")
+
+[SOAP \(SOAP 1.x\) Adapter](../50-Development/soap-soap-1-x-adapter-b847968.md "With this adapter, the tenant can exchange messages with another system that supports Simple Object Access Protocol (SOAP) 1.1 or SOAP 1.2.")
 

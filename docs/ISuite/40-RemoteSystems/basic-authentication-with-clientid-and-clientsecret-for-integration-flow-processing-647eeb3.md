@@ -148,13 +148,13 @@ In detail, perform the following steps:
 
     1.  Go to the SAP Integration Suite *Design* section and edit the relevant integration flow.
 
-    2.  Create a sender channel with the adapter type that supports this authentication option, and click the connection for the associated sender adapter.
+    2.  Create a sender channel with the adapter type that supports this authentication option, and select the connection for the associated sender adapter.
 
     3.  For *Authorization*, choose *User Role* and specify the role. Keep the role name *ESBmessaging.send* pre-entered by default in the *User Role*. You can also select a custom role if you want to use a dedicated role to control authorization to the process the integration flow.
 
     4.  After you have finished configuring the integration flow, including the processing steps for your scenario, deploy the integration flow on the tenant.
 
-        To do this, save the integration flow and click *Deploy*.
+        To do this, save the integration flow and choose *Deploy*.
 
 
 
@@ -163,5 +163,5 @@ In detail, perform the following steps:
 
 [Basic Authentication](basic-authentication-2c4c2d9.md "Basic authentication allows a client to authenticate itself against the server based on user credentials.")
 
-[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
+[Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
 

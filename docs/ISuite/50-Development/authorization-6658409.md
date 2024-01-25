@@ -65,14 +65,14 @@ To create a *Process Integration Runtime* instance:
 
 2.  Fill in the details as shown in the screenshot below and choose *Create*:
 
-    ![](images/ea023ae1360c422cb8e0712e92b5d01e.xml)
+    ![](images/ea023ae1360c422cb8e0712e92b5d01e.image)
 
     > ### Note:  
     > In this example, I have used the "APIArtifactUser" role. Please make sure to enter the custom role that you have configured in the *Integration Suite* \> *Monitor* \> *User Roles* in the *Roles* field.
 
 3.  Create a *Service Key* associated with the *Process Integration Runtime* service instance.
 
-    ![](images/1c63970786464884ad333952a107fc81.xml)
+    ![](images/1c63970786464884ad333952a107fc81.image)
 
     > ### Note:  
     > You can also create a certificate-based service key.

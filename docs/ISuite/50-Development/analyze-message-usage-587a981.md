@@ -50,7 +50,7 @@ The *Message Usage Dashboard* consists of the following screen areas.
         > ### Tip:  
         > The integration flows that were active \(deployed\) at any given time are captured. Accordingly, the messages processed by deployed integration flows are counted.
         > 
-        > On deployment, a unique artifact ID is generated for an integation flow. A new artifact ID is generated with each deployment process. For that reason, integration flows are indicated by an artifact ID, not be the integrtation flow name.
+        > On deployment, a unique artifact ID is generated for an integration flow. A new artifact ID is generated with each deployment process. For that reason, integration flows are indicated by an artifact ID, not be the integration flow name.
 
         On clicking a rectangle, in the *Integration Flow Details* view more details on message usage are shown for the selected integration flow and the date range.
 

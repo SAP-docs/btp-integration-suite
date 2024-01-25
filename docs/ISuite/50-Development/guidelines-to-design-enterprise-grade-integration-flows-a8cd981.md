@@ -9,7 +9,7 @@ An integration flow is enterprise grade when it's designed in such a way that it
 > ### Note:  
 > For example, you can design your integration flows in many different ways to implement a certain integration scenario. However, there are certain guidelines that help you to optimize the performance of your scenario \(see [Optimize Performance](optimize-performance-491c80d.md)\).
 
-In this section, we introduce guidelines for designing enterprise-grade integration flows in SAP Integration Suite .
+In this section, we introduce guidelines for designing enterprise-grade integration flows in SAP Integration Suite.
 
 Enterprise-grade integration flows have the following qualities:
 
@@ -75,7 +75,7 @@ We deliver prepackaged integration content for various business processes. The p
 
 ## Application-Specific Guidelines Related to SAP Integration Suite 
 
-There are application-specific guidelines related to SAP Integration Suite . For more information, see:
+There are application-specific guidelines related to SAP Integration Suite. For more information, see:
 
 
 <table>

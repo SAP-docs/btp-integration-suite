@@ -55,6 +55,11 @@ Follow these general guidelines when using the *Script* step.
 
 -   When adding logs in the script, use a switcher that allows to activate or deactivate them. Use the log level of the integration flow or the externalized parameters as switcher.
 
+    > ### Note:  
+    > To read the actual log level at runtime during integration flow processing, you can use a Groovy script. An example script is given at [Setting Log Levels](setting-log-levels-4e6d3fc.md).
+    > 
+    > If you want to configure a scenario so that a specific log level is set for an integration flow at runtime, follow these steps: Pass the header `SAP_MessageProcessingLogLevel` with the input message and choose the desired log level as the header value. The processing of the integration flow will then be recorded at runtime with the specified log level \(see also [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md)\).
+
 -   Don't use string objects for string literals that are frequently changed. This causes performance issues as several string objects are created in memory that are consecutively concatenated. This can cause problems when processing large payloads, for example:
 
     > ### Sample Code:  
@@ -76,6 +81,8 @@ Follow these general guidelines when using the *Script* step.
     > ```
 
     This pattern can be applied, for example, when you construct the output message payload iteratively and compose it from smaller pieces put together.
+
+    With regards to the differences between StringBuilder and StrinBuffer \(while both are used to create mutable objects that can be further stringified\), StringBuffer's public methods are synchronized, leading to thread safety of StringBuffer objects in a multi-threaded environment; whereas StringBuilder is not thread-safe. Yet, thread safety comes at the cost of performance overhead. As a result, as a user, evaluate and assess if thread safety / synchronization is needed. If so, consider using StringBuffer. If thread safety is not a concern, the performance can be further optimized by using StringBuilder instead.
 
 -   Don't use the script editor in the Cloud Integration *Design* section, if the code isn’t a simple transformation. Use other external tools \(like IntelliJ IDEA, for example\), which enhance the developer experience.
 

@@ -6,6 +6,14 @@ Create an API proxy of the type REST and SOAP using the HTTP endpoint URL.
 
 
 
+<a name="loiod0f50871e0bb49c094129efd3c9ac304__section_kzk_1qh_c1c"/>
+
+## Prerequisite
+
+The role collection *APIPortal.Administrator* should be assigned to you.
+
+
+
 <a name="loiod0f50871e0bb49c094129efd3c9ac304__section_i1n_tvw_pyb"/>
 
 ## Create an API Proxy of the type OData
@@ -31,7 +39,7 @@ Create an API proxy of the type REST and SOAP using the HTTP endpoint URL.
 
 9.  Choose *Create*.
 
-10. Complete the remaining steps by referring to the [Create an API](create-an-api-c0842d5.md) topic.
+10. Complete the remaining steps by referring to the [Create an API Proxy](create-an-api-proxy-c0842d5.md) topic.
 
 
 
@@ -61,7 +69,7 @@ Create an API proxy of the type REST and SOAP using the HTTP endpoint URL.
 
 9.  Choose *Create*.
 
-10. Complete the remaining steps by referring to the [Create an API](create-an-api-c0842d5.md) topic.
+10. Complete the remaining steps by referring to the [Create an API Proxy](create-an-api-proxy-c0842d5.md) topic.
 
 
 
@@ -89,6 +97,6 @@ Create an API proxy of the type REST and SOAP using the HTTP endpoint URL.
 
 9.  Choose *Create*.
 
-10. Complete the remaining steps by referring to the [Create an API](create-an-api-c0842d5.md) topic.
+10. Complete the remaining steps by referring to the [Create an API Proxy](create-an-api-proxy-c0842d5.md) topic.
 
 

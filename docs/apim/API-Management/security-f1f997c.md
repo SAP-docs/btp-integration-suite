@@ -38,7 +38,7 @@ Authorization
 </td>
 <td valign="top">
 
-In API Management, you provide authorization to users by assigning relevant roles. For more information on how to provide authorizations, see [Assign User Roles in API Management](APIM-Initial-Setup/assign-user-roles-in-api-management-911ca5a.md).
+In API Management, you provide authorization to users by assigning relevant roles. For more information on how to provide authorizations, see [User Roles in API Management](APIM-Initial-Setup/user-roles-in-api-management-911ca5a.md).
 
 </td>
 </tr>

@@ -19,7 +19,7 @@ Kyma environment provides a fully managed Kubernetes runtime based on the open-s
     > ### Note:  
     > If you’re using the API Management stand-alone service, ensure that you’ve already subscribed to API Management, API portal and API business hub enterprise.
 
--   Ensure that the Kyma environment has already been enabled. For more information, see [Kyma Environment](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/468c2f3c3ca24c2c8497ef9f83154c44.html?version=Cloud).
+-   Ensure that the Kyma environment has already been enabled. For more information, see [Getting Started in the Kyma Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/getting-started-in-kyma-environment?version=Cloud).
 
     > ### Note:  
     > You can also see the following tutorial for visual instructions to discover and consume APIs from Kyma: [Consume API Management Service Instance from Kyma](https://developers.sap.com/tutorials/api-mgmt-kyma-getting-started.html).

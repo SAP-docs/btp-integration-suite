@@ -21,9 +21,8 @@ An example payload for the policy is as follows
 > contain a element with name "msg" and type string -->
 > 
 > <MessageValidation async="false" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
->     <Element namespace="http://www.webserviceX.NET">string</Element>
->     <SOAPMessage version= "1.1/1.2" />
->     <Source>request</Source>
+>    <Element namespace="http://www.webserviceX.NET">string</Element>
+>     <Source>response</Source>
 >     <ResourceURL>xsd://validation.xsd</ResourceURL>
 > </MessageValidation>
 > 
@@ -33,68 +32,36 @@ An example payload for the policy is as follows
 > </xs:schema>
 > ```
 
-**Attributes of the `<MessageValidation>` element**
-
 
 <table>
 <tr>
 <th valign="top">
 
-Attribute
+**Elements and Attributes**
 
 </th>
 <th valign="top">
 
-Default
-
-</th>
-<th valign="top">
-
-Type
-
-</th>
-<th valign="top">
-
-Description
+**Description**
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-`async`
+Name
 
 </td>
 <td valign="top">
 
-false
-
-</td>
-<td valign="top">
-
-String
-
-</td>
-<td valign="top">
-
-This attribute is deprecated.
+The internal name of the policy. Characters you can use in the name are restricted to: A-Z0-9.\_\\-$ %. Optionally, use the <DisplayName\> element to label the policy in the UI proxy editor with a different, natural-language name.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-`continueOnError`
-
-</td>
-<td valign="top">
-
-false
-
-</td>
-<td valign="top">
-
-String
+continueOnError
 
 </td>
 <td valign="top">
@@ -106,17 +73,7 @@ Set to false to return an error when a policy fails. This is expected behavior f
 <tr>
 <td valign="top">
 
-`enabled`
-
-</td>
-<td valign="top">
-
-true
-
-</td>
-<td valign="top">
-
-String
+enabled
 
 </td>
 <td valign="top">
@@ -125,327 +82,54 @@ Set to true to enforce the policy. Set to false to "turn off" the policy. The po
 
 </td>
 </tr>
-</table>
-
-**`<Element>` element**
-
-
-<table>
 <tr>
-<th valign="top">
+<td valign="top">
 
-Element
+async
 
-</th>
-<th valign="top">
+</td>
+<td valign="top">
 
-Default
+This attribute is deprecated.
 
-</th>
-<th valign="top">
-
-Type
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
+</td>
 </tr>
 <tr>
 <td valign="top">
 
-`Element` \(Mandatory\)
+DisplayName
 
 </td>
 <td valign="top">
 
-N/A
+Use in addition to the name attribute to label the policy in the management UI proxy editor with a different, natural-language name. If you omit this element, then the value of the policy's name attribute is used.
 
 </td>
-<td valign="top">
-
-N/A
-
-</td>
-<td valign="top">
-
-Specifies the root, or parent, element of the messages to be validated.
-
-> ### Sample Code:  
-> ```
-> <Element namespace="http://finance.com/1999">PurchaseOrder</Element> 
-> ```
-
-
-
-</td>
-</tr>
-</table>
-
-**`namespace` attribute of the `<Element>` element**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Attribute
-
-</th>
-<th valign="top">
-
-Default
-
-</th>
-<th valign="top">
-
-Type
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
 </tr>
 <tr>
 <td valign="top">
 
-`namespace`
-
-</td>
-<td valign="top">
-
-http://sample.com
-
-</td>
-<td valign="top">
-
-String
-
-</td>
-<td valign="top">
-
-Provides the namespace of the root, or parent, element of the messages to be validated.
-
-</td>
-</tr>
-</table>
-
-**`<SOAPMessage>` element**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Element
-
-</th>
-<th valign="top">
-
-Default
-
-</th>
-<th valign="top">
-
-Type
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-`SOAPMessage` \(Mandatory\)
-
-</td>
-<td valign="top">
-
-N/A
-
-</td>
-<td valign="top">
-
-N/A
-
-</td>
-<td valign="top">
-
-Provides the SOAP version against which to validate SOAP messages.
-
-> ### Sample Code:  
-> ```
-> <SOAPMessage version= "1.1/1.2" />
-> ```
-
-
-
-</td>
-</tr>
-</table>
-
-**`version` attribute of the `<SOAPMessage>` element**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Attribute
-
-</th>
-<th valign="top">
-
-Default
-
-</th>
-<th valign="top">
-
-Type
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-`version`
-
-</td>
-<td valign="top">
-
-N/A
-
-</td>
-<td valign="top">
-
-N/A
-
-</td>
-<td valign="top">
-
-Identifies the SOAP version against which to validate SOAP messages. Valid values: 1.1, 1.2, 1.1/1.2
-
-</td>
-</tr>
-</table>
-
-**`<Source>` element**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Element
-
-</th>
-<th valign="top">
-
-Default
-
-</th>
-<th valign="top">
-
-Type
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-`Source` 
-
-</td>
-<td valign="top">
-
-N/A
-
-</td>
-<td valign="top">
-
-N/A
+Source
 
 </td>
 <td valign="top">
 
 Identifies the source message to be validated.
 
-If you do not provide a `<Source>` value, a value of message is used.
+If you do not provide a <Source\> value, a value of message is used.
 
-If the `<Source>` variable cannot be resolved, or resolves to a non-message type, then one of the following occurs:
+If the <Source\> variable cannot be resolved, or resolves to a non-message type, then one of the following occurs:
 
-If the `<Source>` variable resolves to a null value in the message flow, a steps.messagevalidation.SourceMessageNotAvailable error code is thrown.
+If the source variable resolves to a null value in the message flow, a steps.messagevalidation.SourceMessageNotAvailable error code is thrown.
 
-If the `<Source>` variable resolves to a non-message value, a steps.messagevalidation.NonMessageVariable error code is thrown.
-
-> ### Sample Code:  
-> ```
-> <Source>request</Source>
-> ```
-
-
+If the source variable resolves to a non-message value, a steps.messagevalidation.NonMessageVariable error code is thrown.
 
 </td>
-</tr>
-</table>
-
-**`<ResourceURL>` element**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Element
-
-</th>
-<th valign="top">
-
-Default
-
-</th>
-<th valign="top">
-
-Type
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
 </tr>
 <tr>
 <td valign="top">
 
-`ResourceURL` \(Optional\)
-
-</td>
-<td valign="top">
-
-wsdl://<name\>
-
-</td>
-<td valign="top">
-
-String
+ResourceURL
 
 </td>
 <td valign="top">
@@ -454,14 +138,65 @@ Identifies the XSD schema or WSDL definition to be used to validate the source m
 
 If the WSDL does not have schemas or if the maximum import depth exceeds 10, message validation will fail.
 
-If a `<ResourceURL>` value is not specified, the message is checked for well-formed JSON or XML if the content-type is application/json or application/xml, respectively.
+If a <ResourceURL\> value is not specified, the message is checked for well-formed JSON or XML if the content-type is application/json or application/xml, respectively.
 
-> ### Sample Code:  
-> ```
-> <ResourceURL>xsd://validation.xsd</ResourceURL>
-> ```
+Default: wsdl://<name\>
 
+Presence: Optional
 
+Type: String
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SOAPMessage
+
+</td>
+<td valign="top">
+
+Provides the SOAP version against which to validate SOAP messages. <SOAPMessage version="1.1/1.2"/\>
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Version
+
+</td>
+<td valign="top">
+
+Identifies the SOAP version against which to validate SOAP messages. Valid values: 1.1, 1.2, 1.1/1.2
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Element
+
+</td>
+<td valign="top">
+
+Specifies the root, or parent, element of the messages to be validated.
+
+<Element namespace="http://finance.com/1999"\>PurchaseOrder</Element\>
+
+<Element namespace="http://finance.com/2000"\>PurchaseOrder</Element\>
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+namespace
+
+</td>
+<td valign="top">
+
+Provides the namespace of the root, or parent, element of the messages to be validated. Default: "http://sample.com"
 
 </td>
 </tr>

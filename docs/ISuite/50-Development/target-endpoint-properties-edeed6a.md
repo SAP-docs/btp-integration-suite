@@ -6,7 +6,7 @@ HTTP transport properties configured in the HTTPTargetConnection element in Targ
 
 
 
-You can export the proxy endpoint as a zip file and add the TargetEndpoint properties to the APITargetEndPoint subfolder under the APIProxy parent folder. For more information, see [Export an API](export-an-api-420abb6.md).
+You can export the proxy endpoint as a zip file and add the TargetEndpoint properties to the APITargetEndPoint subfolder under the APIProxy parent folder. For more information, see [Export an API Definition](export-an-api-definition-420abb6.md).
 
 Configure the properties on TargetEndpoint HTTPTargetConnection elements:
 

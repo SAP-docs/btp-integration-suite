@@ -2,7 +2,7 @@
 
 # Integration Assessment APIs
 
-The following are the list of APIs used in Integration Assessment. For more information, see the [API reference on the SAP Business Accelerator Hub](https://api.sap.com/package/SAPIntegrationAssessment/overview)
+The following are the list of APIs used in Integration Assessment. For more information, see the [API reference on the SAP Business Accelerator Hub](https://api.sap.com/package/SAPIntegrationAssessment/overview).
 
 
 

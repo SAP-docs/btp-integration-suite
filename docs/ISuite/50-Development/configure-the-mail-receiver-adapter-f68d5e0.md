@@ -18,10 +18,10 @@ You use the mail receiver adapter to send encrypted messages by e-mail.
 
 The mail receiver adapter opens a connection to a mail server and sends messages \(as e-mail\) to it.
 
-![](images/Mail_Receiver_8c3073e.png)
+![This graphic offers a simplified overview of a tenant which can send messages to a mail server either via request or data flow.](images/Mail_Receiver_8c3073e.png)
 
 > ### Note:  
-> For an example of how to configure the mail receiver adapter in a dedicated demo integration scenario, check out the following topic: [Create the Mail Receiver Channel](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/a6966fd46aef4e61ada1dcd11dadfc8b.html "Add a Mail receiver channel to enable the integration flow to send messages to an e-mail account.") :arrow_upper_right:.
+> For an example of how to configure the mail receiver adapter in a dedicated demo integration scenario, check out the following topic: [Create the Mail Receiver Channel](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a6966fd46aef4e61ada1dcd11dadfc8b.html "Add a Mail receiver channel to enable the integration flow to send messages to an e-mail account.") :arrow_upper_right:.
 > 
 > If you want to learn how to use the mail receiver adapter to send signed and/or encrypted mails, this blog is for you: [Cloud Integration - Sending Signed and/or Encrypted Mails in Mail Receiver Adapter](https://blogs.sap.com/2019/04/09/cloud-integration-sending-signed-andor-encrypted-mails-in-mail-receiver-adapter/)
 
@@ -661,7 +661,7 @@ Under *Receiver Public Key*, specify one or more certificates \(from the tenant 
 
 To understand the parameters available in the section *ENCRYPTION*, you need to know the following: Message content encryption works as a process where secret keys and a private/public key pair are involved. A simplified process is depicted in the following figure. The figure only shows one receiver system, but note that the tenant can send an email to multiple receivers.
 
-![](images/Encryption_Process_82ee90d.png)
+![The Cloud Integration communicates with a receiver system and sends an encrypted message to the latter one. The figure shows the keys that are required to support this security level: The tenant uses its own private key to encrypt the content of the message and the receiver public key to encrypt the secret key. The receiver uses a private key to decrypt the secret key which it had received from the tenant and, finally, the decrypted secret key decrypts the message content.](images/Encryption_Process_82ee90d.png)
 
 The following steps are accomplished behind the scenes when a message is encrypted:
 

@@ -2,7 +2,7 @@
 
 # Updating the Connection Request Credentials for a Pending Request \[New Design\]
 
-Update the credentials you've used to establish a connection between the API portal and the API business hub enterprise.
+Update the credentials you've used to establish a connection between the Integration Suite API Management tenant and the API business hub enterprise.
 
 
 
@@ -12,7 +12,7 @@ Update the credentials you've used to establish a connection between the API por
 
 -   Only the users who submitted the connection request and has the *AuthGroup.APIPortalRegistration* role assigned to themselves can edit the credentials.
 
--   To update the API portal access credentials, you must first generate it. To generate the credentials from the API Portal, you must have the *APIPortal. Administrator* role assigned to you.
+-   To update the Integration Suite API Management tenant access credentials, you must first generate it. To generate the credentials from the Integration Suite API Management tenant, you must have the *APIPortal. Administrator* role assigned to you.
 
     1.  Log in to the .
 
@@ -20,7 +20,7 @@ Update the credentials you've used to establish a connection between the API por
 
     3.  Choose the *Connection* tab.
 
-    4.  Choose *Generate Credentials* under *Connect the API Portal to the centralized API Business Hub Enterprise* and *Copy* the API portal access credentials.
+    4.  Choose *Generate Credentials* under *Connect the API Portal to the centralized API Business Hub Enterprise* and *Copy* the access credentials.
 
 
     > ### Note:  
@@ -33,7 +33,7 @@ Update the credentials you've used to establish a connection between the API por
 
 ## Context
 
-To establish the connection between the Integration Suite API portal and the API business hub enterprise, the API Portal client Id and the client secret is shared during the connection request process.
+The credentials required to access the Integration Suite API Management tenant are shared during the connection request process.
 
 If you encounter one of the following situations when your connection request is in the pending request state, you have to update the credentials:
 
@@ -57,7 +57,7 @@ If you encounter one of the following situations when your connection request is
 
 3.  Go to the *Actions* column of the connection request that you want to edit and choose *Edit Credentials*.
 
-4.  On the *Edit Credentials for <API Portal Alias Name \>* popup, enter the mandatory *\*API Portal Access Credentials* that you copied earlier from the API portal.
+4.  On the *Edit Credentials for <API Portal Alias Name \>* popup, enter the mandatory *\*API Portal Access Credentials* that you copied earlier from the Integration Suite API Management tenant.
 
     Sample credentials:
 
@@ -72,7 +72,7 @@ If you encounter one of the following situations when your connection request is
     ```
 
     > ### Note:  
-    > These credentials will remain valid for a period of 65 days. Please make sure to regenerate them and reestablish the connection within this timeframe.
+    > The credentials required to establish the connection will be valid for 365 days. Please remember to regenerate them and reestablish the connection within this timeframe. However, any credentials generated previously with a validity of 65 days will remain valid for that duration. The 365-day timeframe will apply to all newly generated credentials.
 
 5.  Choose *Save*.
 

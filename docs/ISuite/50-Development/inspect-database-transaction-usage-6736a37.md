@@ -6,6 +6,13 @@ Inspect database transaction usage for a given time period and analyze critical 
 
 There are no hard limits for the number and duration of database transactions. However, ideally, design your integration scenarios so that transactions are short lived. Long-living transactions can impose a significant load on database resources. A high load on database resources can cause problems in the database management system and impact message processing.
 
+> ### Note:  
+> The *Time* filter element allows you to select the time interval \(options: *Past Day*, *Past Week*, *Past Month*, or *Custom*\).
+> 
+> When you've selected the option *Custom* for the *Time* filter, you can select date and time with a graphical element with two components: a calendar element and a circular watch element. To select the date, interact with the calendar element and choose a specific day. To select the time, manipulate two separate circles on the watch element to set the desired hour ante meridiem \(am\) and post meridiem \(pm\), respectively. You can select valid dates only; selection of dates in the future is disabled.
+> 
+> You can select dates up to 30 days in the past.
+
 The maximum duration of database transactions \(in minutes\) is plotted in a bar graph against time.
 
 The duration covered by a bar is:

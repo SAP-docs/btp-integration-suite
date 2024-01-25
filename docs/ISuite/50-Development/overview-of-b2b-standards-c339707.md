@@ -11362,7 +11362,7 @@ UpdateMigratedSupplierRequest
 
 ## EANCOM
 
-GS1 EANCOM® is a GS1 subset of the UN/EDIFACT standard \(United Nations Electronic Data Interchange for Administration, Commerce and Transport\).It contains the message elements required by business applications especially for domains supported by the GS1 organizations such as retail, consumer products, transport and logistics.
+GS1 EANCOM® is a GS1 subset of the UN/EDIFACT standard \(United Nations Electronic Data Interchange for Administration, Commerce and Transport\). It contains the message elements required by business applications especially for domains supported by the GS1 organizations such as retail, consumer products, transport and logistics.
 
 **Versions List \(10\)**
 
@@ -16228,7 +16228,7 @@ The EANCOM versioning scheme \(as defined by the GS1 organisation\) consists of 
 -   Underlying Standard Edifact Version \(e.g. D.96A S3\)
 -   EANCOM Version Code \(e.g. EAN008\)
 
-For example, above table shows that ORDERS EAN008 can be implemented by either EANCOM Release *1997 S3* or *1997 S3 Edition 1999*. Both are defined on top of the underlying Standard Edifact Release D.96A S3.
+For example, the preceding table shows that ORDERS EAN008 can be implemented by either EANCOM Release *1997 S3* or *1997 S3 Edition 1999*. Both are defined on top of the underlying Standard Edifact Release D.96A S3.
 
 > ### Note:  
 > The EANCOM version code like EAN008 is a message-specific version code. For example, ORDERS EAN008 belongs to EANCOM Release *1997 S3* \(based on Edifact D.96A S3\), while DESADV EAN008 is part of EANCOM Release *2002 S3 Edition 2016* \(based on Edifact D.01B S3\).
@@ -16721,7 +16721,7 @@ Tradacoms contains *Transmission Files* which are a predefined combination of si
 
 The Tradacoms delivery contains 25 different message types. For most of the message types only the newest version is available. For the message types *CORHDR\_FILE, DLCHDR\_FILE, INVFIL\_FILE, ORDHDR\_FILE, SRMHDR\_FILE*and *UTLHDR\_FILE* two versions are available. For example, *ORDHDR\_FILE:9* represents Version 9 of the Order file and *INVFIL\_FILE:8* represents Version 8 of the Invoice file.
 
-The following conventions are used to define Identifier and Version number of the Transmission Files by :
+The following conventions are used to define Identifier and Version number of the Transmission Files by:
 
 -   The Header Message of the Transmission File determines the Identifier.
 
@@ -16731,10 +16731,10 @@ The following conventions are used to define Identifier and Version number of th
 -   Moreover,*\_FILE* was added to the Identifier to distinguish between the overall Transmission File and its Header Message.
 -   The Version of a Transmission File is consistently derived from the version of the Main Message.
 
-For example: The older transmission file for Order \(Order File\) consists of three single messages: header message *ORDHDR* \(Version 6\), main message *ORDERS* \(Version 8\) and trailer message *ORDTLR* \(Version 4\). Applying the rules mentioned above, this Order File will be *ORDHDR\_FILE:8 – Order File \(Version 8\)*.
+For example: The older transmission file for Order \(Order File\) consists of three single messages: header message *ORDHDR* \(Version 6\), main message *ORDERS* \(Version 8\) and trailer message *ORDTLR* \(Version 4\). Applying the rules mentioned before, this Order File will be *ORDHDR\_FILE:8 – Order File \(Version 8\)*.
 
 > ### Note:  
-> The identifiers and versions of the Transmission Files are not defined by Tradacoms standard \(by GS1 organization\) itself. Different users and data providers have applied different conventions due to which sometimes transmission files are named after the main message and sometimes versions of the transmission files are derived from the version of their respective header message. For example, the older Order File \(see above\) might also be called *ORDERS \(Version 8\)* or *ORDHDR \(Version 6\)*.
+> The identifiers and versions of the Transmission Files are not defined by Tradacoms standard \(by GS1 organization\) itself. Different users and data providers have applied different conventions due to which sometimes transmission files are named after the main message and sometimes versions of the transmission files are derived from the version of their respective header message. For example, the older Order File \(see before\) might also be called *ORDERS \(Version 8\)* or *ORDHDR \(Version 6\)*.
 
 **Message Types \(31\)**
 

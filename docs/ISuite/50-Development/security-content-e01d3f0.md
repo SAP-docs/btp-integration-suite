@@ -22,7 +22,7 @@ Perform the steps described in: [Setting Up Inbound HTTP Connections \(for API C
 
 Assign the following role template:
 
-`MonitoringDataRead` \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:\)
+`MonitoringDataRead` \(see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)\)
 
 
 
@@ -178,7 +178,7 @@ Certificate-to-User-Mapping \(Neo environment\)
 </td>
 <td valign="top">
 
-Represents a *Certificate-to-User-Mapping* artifact required for inbound calls based on client certificate authentication and *User Role* authorization \(see [Managing Certificate-to-User Mappings, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/88ea2e5336d445f783c194c8d2780d35.html "The Manage Security area provides an overview of security-related artifacts. It also provides access to all certificate-to-user mappings defined for the tenant.") :arrow_upper_right:\).
+Represents a *Certificate-to-User-Mapping* artifact required for inbound calls based on client certificate authentication and *User Role* authorization \(see [Managing Certificate-to-User Mappings, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/88ea2e5336d445f783c194c8d2780d35.html "The Manage Security area provides an overview of security-related artifacts. It also provides access to all certificate-to-user mappings defined for the tenant.") :arrow_upper_right:\).
 
 > ### Note:  
 > Certificate-to-user mappings are only available when using SAP Cloud Integration in the Neo environment.

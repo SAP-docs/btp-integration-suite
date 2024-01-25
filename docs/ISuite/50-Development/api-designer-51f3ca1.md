@@ -166,7 +166,7 @@ Enter the general information or the metadata of the API:
     > }
     > ```
 
-    For guidelines on how to write helpful descriptions for the metadata of an API, see [API Overview](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Dev/en-US/3edef50b83134b6db51ea6ef3c9fca46.html "The Overview section for each API provides important information to help developers understand its purpose.") :arrow_upper_right: .
+    For guidelines on how to write helpful descriptions for the metadata of an API, see  <?sap-ot O2O class="- topic/xref " href="3edef50b83134b6db51ea6ef3c9fca46.xml" text="" desc="" xtrc="xref:12" xtrf="file:/home/builder/src/dita-all/fov1701176325794/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/51f3ca114ea74d4c87990aafd8e6c778.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  .
 
 
 
@@ -270,7 +270,7 @@ All API paths or endpoints are relative to the root URL, for example, `/products
 
 `GET http://localhost//espm-cloud-web/espm.svc/secure/products`
 
-For guidelines on writing helpful descriptions for API operations, see [Operations](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Dev/en-US/8f57974bc49449549e814f809152ae6e.html "You provide information about resources, and operations on these resources, in the Paths property in the API description file.") :arrow_upper_right:.
+For guidelines on writing helpful descriptions for API operations, see  <?sap-ot O2O class="- topic/xref " href="8f57974bc49449549e814f809152ae6e.xml" text="" desc="" xtrc="xref:15" xtrf="file:/home/builder/src/dita-all/fov1701176325794/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/51f3ca114ea74d4c87990aafd8e6c778.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 
 
@@ -309,7 +309,7 @@ Define the input parameters that you want your API Operation to accept. The info
 
 For a detailed explanation about how to define the input parameters for your API, see [Adding Input Parameters - Headers and Queries](adding-input-parameters-headers-and-queries-d460d43.md)
 
-For guidelines on writing helpful descriptions for input parameters, see [Parameters](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Dev/en-US/31c543a25bf64761a2a44afaace40410.html "You provide information about the request parameters in the Parameters object of each operation in the API description file.") :arrow_upper_right:.
+For guidelines on writing helpful descriptions for input parameters, see  <?sap-ot O2O class="- topic/xref " href="31c543a25bf64761a2a44afaace40410.xml" text="" desc="" xtrc="xref:17" xtrf="file:/home/builder/src/dita-all/fov1701176325794/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/51f3ca114ea74d4c87990aafd8e6c778.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 
 
@@ -376,13 +376,13 @@ For a detailed explanation about how to define responses for your API Operation,
 
 Watch a video tutorial on how to define an API operation and its responses [here](https://uacp2.hana.ondemand.com/viewer/DRAFT/e63fe47de8f84a68b618ed689af9a28b/Dev/en-US/33cce5a5c3ac4f05bc3091e8327646ea.html).
 
-For guidelines on writing helpful descriptions for API responses, see [Responses](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Dev/en-US/cf829106a236487080a77c620ffb11be.html "You provide information about the response statuses and returned data in the Responses object of each operation in the API description file.") :arrow_upper_right:.
+For guidelines on writing helpful descriptions for API responses, see  <?sap-ot O2O class="- topic/xref " href="cf829106a236487080a77c620ffb11be.xml" text="" desc="" xtrc="xref:20" xtrf="file:/home/builder/src/dita-all/fov1701176325794/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/51f3ca114ea74d4c87990aafd8e6c778.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 
 
 ### Add Definitions
 
-If the same data type, parameter or response are used in multiple operations within the same API or service, you can simplify the API definition file by creating a reusable definition for each of them, and reference it where relevant across the API. for more information, see [Components (Definitions)](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Dev/en-US/81aaafffe97d43a0a84583b15ba8fcb9.html "If the same data type, parameter, or response are used in multiple operations within the same API or service, you can create a reusable component for each of them, and reference it where relevant across the API.") :arrow_upper_right:.
+If the same data type, parameter or response are used in multiple operations within the same API or service, you can simplify the API definition file by creating a reusable definition for each of them, and reference it where relevant across the API. for more information, see  <?sap-ot O2O class="- topic/xref " href="81aaafffe97d43a0a84583b15ba8fcb9.xml" text="" desc="" xtrc="xref:21" xtrf="file:/home/builder/src/dita-all/fov1701176325794/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/51f3ca114ea74d4c87990aafd8e6c778.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 
 
@@ -485,7 +485,7 @@ To group related operations by categories, you can define tags to the operations
 > 
 > ```
 
-For more information on writing helpful description for tags, see [Tags](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Dev/en-US/ebbdea3409ed4bc182e0acc274ee3577.html "You can define tags to group related operations by logical categories rather than just by resources.") :arrow_upper_right: .
+For more information on writing helpful description for tags, see  <?sap-ot O2O class="- topic/xref " href="ebbdea3409ed4bc182e0acc274ee3577.xml" text="" desc="" xtrc="xref:23" xtrf="file:/home/builder/src/dita-all/fov1701176325794/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/51f3ca114ea74d4c87990aafd8e6c778.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  .
 
 
 
@@ -514,7 +514,7 @@ Add external links, if any, in your API Definition to provide enhanced user assi
 > }
 > ```
 
-For more information, see [External Documentation](https://help.sap.com/viewer/9c880f03c6084ca4b2573b5605ec7a83/Dev/en-US/5455384f6f1b4d44b83d6e5e7af18478.html "You can enhance your API reference documentation by providing links to external documentation.") :arrow_upper_right:.
+For more information, see  <?sap-ot O2O class="- topic/xref " href="5455384f6f1b4d44b83d6e5e7af18478.xml" text="" desc="" xtrc="xref:24" xtrf="file:/home/builder/src/dita-all/fov1701176325794/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/51f3ca114ea74d4c87990aafd8e6c778.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 Once you have defined all the necessary information of the API, choose *File* \> *Save* in API designer .
 

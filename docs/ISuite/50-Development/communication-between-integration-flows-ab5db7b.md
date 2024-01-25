@@ -106,7 +106,7 @@ You can use the ProcessDirect adapter to synchronously connect 2 integration flo
         > ### Note:  
         > A worker node is the component that processes messages at runtime.
         > 
-        > More information: [Runtime in Detail](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/bdbc3f0224864ad5b163355ec537f6c6.html "For different customers, separate resources (in terms of: memory, CPU, file system) of the cloud-based integration platform are allocated – although all customers share the same hardware. This concept is also referred to as tenant isolation.") :arrow_upper_right:
+        > More information: [Runtime in Detail](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/bdbc3f0224864ad5b163355ec537f6c6.html "For different customers, separate resources (in terms of: memory, CPU, file system) of the cloud-based integration platform are allocated – although all customers share the same hardware. This concept is also referred to as tenant isolation.") :arrow_upper_right:
 
 
 -   Disadvantage

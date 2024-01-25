@@ -53,7 +53,7 @@ To create a new revision, execute the following steps:
 
 4.  Fill in the details in the *Create API**Create*.
 
-    To create an API proxy from scratch, see [Create an API](create-an-api-c0842d5.md).
+    To create an API proxy from scratch, see [Create an API Proxy](create-an-api-proxy-c0842d5.md).
 
 5.  Select the appropriate tabs to edit the API. You can choose from the following:
 
@@ -192,7 +192,7 @@ To create a new revision, execute the following steps:
     > </td>
     > <td valign="top">
     > 
-    > When you create a product, you link it to one or more APIs. Also, the same API can be linked to multiple products. After you’ve linked an API to a product, all attributes of the API such as API resources, and API documentation become an implicit part of the product. Now, if the product has an API proxy that has multiple revisions, and the deployed revision of the API proxy isn’t the latest revision; if you try to publish such a product, the deployed revision of the API proxy gets published. For more information, see [Publish APIs](publish-apis-75a4a11.md).
+    > When you create a product, you link it to one or more APIs. Also, the same API can be linked to multiple products. After you’ve linked an API to a product, all attributes of the API such as API resources, and API documentation become an implicit part of the product. Now, if the product has an API proxy that has multiple revisions, and the deployed revision of the API proxy isn’t the latest revision; if you try to publish such a product, the deployed revision of the API proxy gets published. For more information, see [Publish API Proxies](publish-api-proxies-75a4a11.md).
     > 
     > </td>
     > </tr>
@@ -204,7 +204,7 @@ To create a new revision, execute the following steps:
     > </td>
     > <td valign="top">
     > 
-    > When you import an API, a new revision of the API gets created. If your API has an existing draft, the draft gets replaced by the new revision created during the import. For more information, see [Import an API](import-an-api-9342a93.md).
+    > When you import an API, a new revision of the API gets created. If your API has an existing draft, the draft gets replaced by the new revision created during the import. For more information, see [Import an API Definition](import-an-api-definition-9342a93.md).
     > 
     > </td>
     > </tr>

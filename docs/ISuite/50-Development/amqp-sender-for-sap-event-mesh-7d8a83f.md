@@ -2,7 +2,7 @@
 
 # AMQP Sender for SAP Event Mesh
 
-Enables SAP Integration Suite to consume messages from queues or topic subscriptions in SAP Event Mesh.
+Enables SAP Integration Suite to consume messages from queues in SAP Event Mesh.
 
 
 
@@ -19,7 +19,7 @@ Enables SAP Integration Suite to consume messages from queues or topic subscript
 > Queues, topics, and messages can only be monitored by using tools provided by the message broker provider. Those monitors are not integrated into SAP Integration Suite . In SAP Integration Suite , the integration flows using the AMQP adapter are monitored and the messages are sent to or consumed from the message broker.
 
 > ### Note:  
-> To be able to connect to queues or topics, you have to create queues and/or topics in the message broker. This needs to be done in the message broker, with the configuration tools provided by the message broker. In some messaging systems, you need to configure a *Lock Duration* to make sure that the message is not consumed more than once. This timeout must be longer than the expected processing time of the message, otherwise this would lead to duplicate messages.
+> To be able to connect to queues, you have to create queues and/or topics in the message broker. This needs to be done in the message broker, with the configuration tools provided by the message broker. In some messaging systems, you need to configure a *Lock Duration* to make sure that the message is not consumed more than once. This timeout must be longer than the expected processing time of the message, otherwise this would lead to duplicate messages.
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.

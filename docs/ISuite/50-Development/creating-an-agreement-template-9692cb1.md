@@ -12,13 +12,13 @@ An agreement template is a template of a semantical choreography definition cons
 
 ## Prerequisites
 
-The Agreement Template has a new format. The outdated templates are read-only and must be migrated to this new format to enable editing. The procedure below is for the latest template format. To migrate your outdated templates, see [Migrating an Agreement Template](migrating-an-agreement-template-70c469b.md).
+The Agreement Template has a new format. The outdated templates are read-only and must be migrated to this new format to enable editing. The following procedure is for the latest template format. To migrate your outdated templates, see [Migrating an Agreement Template](migrating-an-agreement-template-70c469b.md).
 
 
 
 ## Context
 
-Follow the procedure below to create an agreement template.
+Follow the next procedure to create an agreement template.
 
 
 
@@ -108,7 +108,7 @@ Follow the procedure below to create an agreement template.
     </td>
     <td valign="top">
     
-    Select a system from the drop-down list
+    Select a system from the drop-down list.
     
     </td>
     </tr>
@@ -120,7 +120,7 @@ Follow the procedure below to create an agreement template.
     </td>
     <td valign="top">
     
-    Select a type system from the drop-down list
+    Select a type system from the drop-down list.
     
     </td>
     </tr>
@@ -151,7 +151,7 @@ Follow the procedure below to create an agreement template.
     </td>
     <td valign="top">
     
-    Select a type system version from the drop-down list
+    Select a type system version from the drop-down list.
     
     </td>
     </tr>
@@ -163,7 +163,7 @@ Follow the procedure below to create an agreement template.
     </td>
     <td valign="top">
     
-    Select an identifier using the value help provided
+    Select an identifier using the value help provided.
     
     </td>
     </tr>
@@ -205,7 +205,7 @@ Follow the procedure below to create an agreement template.
     </td>
     <td valign="top">
     
-    Maintain an alias value for the system
+    Maintain an alias value for the system.
     
     </td>
     </tr>
@@ -217,7 +217,7 @@ Follow the procedure below to create an agreement template.
     </td>
     <td valign="top">
     
-    Select a type system for the trading partner
+    Select a type system for the trading partner.
     
     </td>
     </tr>
@@ -229,7 +229,7 @@ Follow the procedure below to create an agreement template.
     </td>
     <td valign="top">
     
-    Select the version of the type system
+    Select the version of the type system.
     
     </td>
     </tr>
@@ -277,7 +277,7 @@ Follow the procedure below to create an agreement template.
 
 9.  Choose *Create Business Transaction*.
 
-10. Maintain the following details :
+10. Maintain the following details:
 
 
     <table>
@@ -301,7 +301,7 @@ Follow the procedure below to create an agreement template.
     </td>
     <td valign="top">
     
-    Provide a name for your business transaction
+    Provide a name for your business transaction.
     
     </td>
     </tr>
@@ -313,7 +313,7 @@ Follow the procedure below to create an agreement template.
     </td>
     <td valign="top">
     
-    Select a pattern for the business transaction
+    Select a pattern for the business transaction.
     
     </td>
     </tr>
@@ -325,7 +325,7 @@ Follow the procedure below to create an agreement template.
     </td>
     <td valign="top">
     
-    Check the radio button based on whether your company is an *Initiator* or *Reactor*
+    Check the radio button based on whether your company is an *Initiator* or *Reactor*.
     
     </td>
     </tr>
@@ -380,7 +380,7 @@ Follow the procedure below to create an agreement template.
 
 21. Provide the address of your custom integration flow in the *Process Direct Address* field.
 
-    This step is carried out using the ProcessDirect adapter. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
+    This step is carried out using the ProcessDirect adapter. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md).
 
 22. If you want to enable the payload validation, select the checkbox under *Validation Option*.
 

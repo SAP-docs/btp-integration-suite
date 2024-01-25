@@ -1326,5 +1326,5 @@ After the cloning process completes, you must perform the tasks mentioned in the
 
 To know more about what actions you must take, see the **User Actions** section in [Post Cloning Tasks](post-cloning-tasks-49e9716.md).
 
-To know more about the entities that are cloned and the entities that aren’t cloned, see  <?sap-ot O2O class="- topic/xref " href="132e36f10bb54c0da44ca060a2142a69.xml" text="" desc="" xtrc="xref:7" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/2e5d127a13fc4a3cbba26bfd5ae44e69.xml" ?> .
+To know more about the entities that are cloned and the entities that aren’t cloned, see  <?sap-ot O2O class="- topic/xref " href="132e36f10bb54c0da44ca060a2142a69.xml" text="" desc="" xtrc="xref:7" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/2e5d127a13fc4a3cbba26bfd5ae44e69.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 

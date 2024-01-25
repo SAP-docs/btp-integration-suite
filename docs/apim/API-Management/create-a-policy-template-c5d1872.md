@@ -22,7 +22,7 @@ Create a policy template add it to an API proxy.
 
 2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
-    A list of registered APIs appears in the catalog.
+    A list of APIs appears in the catalog.
 
 3.  In the list, click the API for which you want to create the policy template.
 
@@ -38,6 +38,9 @@ Create a policy template add it to an API proxy.
 
         > ### Note:  
         > Please ensure that you don't choose Concurrent Rate Limit policy, as this policy is being decommissioned.
+
+        > ### Note:  
+        > If there are any default fault rules or a post-client flow available within the API proxy, they will also be appended to the policy template.
 
 
 7.  Choose *OK*.

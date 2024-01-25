@@ -154,11 +154,11 @@ Adapters
 
 -   Sender adapters:
 
-    AMQP, Ariba, AS4, Data Store, FTP, HTTPS, IDoc, JMS, Kafka, Mail, OData, ProcessDirect, SFTP, SOAP \(SAP RM\), SOAP \(1.x\), SuccessFactors REST, SuccessFactors SOAP, and XI.
+    AMQP, Ariba, AS2, AS4, Data Store, FTP, HTTPS, IDoc, JMS, Kafka, Mail, OData, ProcessDirect, SFTP, SOAP \(SAP RM\), SOAP \(1.x\), SuccessFactors REST, SuccessFactors SOAP, and XI.
 
 -   Receiver adapters:
 
-    AMQP, Ariba, AS4, ELSTER, Facebook, FTP, HTTP, IDoc, JDBC, JMS, Kafka, LDAP, Mail, OData V2, OData V4, ODC, OpenConnectors, ProcessDirect, SFTP, SOAP \(SAP RM\), SOAP \(1.x\), SuccessFactors OData V2, SuccessFactors OData V4, SuccessFactors REST, SuccessFactors SOAP, Twitter, and XI.
+    AMQP, Ariba, AS2, AS4, ELSTER, Facebook, FTP, HTTP, IDoc, JDBC, JMS, Kafka, LDAP, Mail, OData V2, OData V4, ODC, OpenConnectors, ProcessDirect, SFTP, SOAP \(SAP RM\), SOAP \(1.x\), SuccessFactors OData V2, SuccessFactors OData V4, SuccessFactors REST, SuccessFactors SOAP, Twitter, and XI.
 
 
 More information: [Configure Adapter in Communication Channels](50-Development/configure-adapter-in-communication-channels-1f06633.md).

@@ -40,7 +40,7 @@ For our implementation, let’s consider the following two target endpoints:
 4.  In the *Create API* wizard, choose the *URL* radio button.
 
     > ### Note:  
-    > You can also choose to create an API by choosing the *API Provider* option. For more information, see [Create an API](create-an-api-c0842d5.md) 
+    > You can also choose to create an API by choosing the *API Provider* option. For more information, see [Create an API Proxy](create-an-api-proxy-c0842d5.md) 
 
 5.  In the *URL* field, enter the target URL of your backend service. In this case, URL pointing to Target\_Endpoint\_1 \(default\).
 
@@ -60,7 +60,7 @@ For our implementation, let’s consider the following two target endpoints:
 
 10. Navigate to the *Configure* \> *APIs* tab. From the *APIs* list, choose the API proxy that you deployed.
 
-11. Download the newly deployed API proxy using the *Export* option. For more information, see [Export an API](export-an-api-420abb6.md)
+11. Download the newly deployed API proxy using the *Export* option. For more information, see [Export an API Definition](export-an-api-definition-420abb6.md)
 
     A zip file called `Dynamic_Routing.zip` is downloaded.
 
@@ -299,7 +299,7 @@ For our implementation, let’s consider the following two target endpoints:
 
 22. Compress the `APIProxy` parent folder.
 
-23. Navigate to API portal and import the compressed `APIProxy.zip` file. For more information, see [Import an API](import-an-api-9342a93.md).
+23. Navigate to API portal and import the compressed `APIProxy.zip` file. For more information, see [Import an API Definition](import-an-api-definition-9342a93.md).
 
 24. Choose the imported API proxy.
 

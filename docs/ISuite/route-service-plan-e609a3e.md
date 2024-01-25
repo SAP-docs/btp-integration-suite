@@ -1,5 +1,7 @@
 <!-- loioe609a3efe6d64e1781cbf81ae5592071 -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # Route Service plan
 
 The API Management as route service plan helps you in managing Cloud Foundry applications by including policies like rate limit, quota, and so on.
@@ -33,7 +35,7 @@ Create a service instance in *API Management, API portal* to start managing your
 
 Follow the below procedure to create a service instance on Cloud Foundry:
 
-1.  In your web browser, open the *SAP BTP Cockpit* - [https://eu-access.cockpit.btp.cloud.sap](https://eu-access.cockpit.btp.cloud.sap).
+1.  In your web browser, open the [SAP BTP Cockpit](https://eu-access.cockpit.btp.cloud.sap).
 2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
 3.  Choose *API Management, API portal* \> *Instances* \> *New Instance*.
 4.  In the *Create Instance* dialog, choose *apim-as-route-service* plan.
@@ -61,10 +63,10 @@ Use the following procedure to delete an API Management service instance on Clou
 **Procedure**
 
 1.  In your Web browser, open the*SAP BTP Cockpit*.
-2.  In the provider account, choose *Services* \> *Service Marketplace* \> *Instances*
+2.  In the provider account, choose *Services* \> *Service Marketplace* \> *Instances*.
 3.  Select the*API Management, API portal* tile.
-4.  Choose *Instances* from the left-hand pane.
-5.  From the list of instances visible, select the instance that you want to delete and choose ![](images/delete_instance_8833fbd.png)
+4.  Choose *Instances* from the left pane.
+5.  From the list of instances visible, select the instance that you want to delete and choose :wastebasket: .
 6.  Choose *OK*.
 
 

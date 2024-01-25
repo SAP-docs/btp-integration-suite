@@ -2,7 +2,7 @@
 
 # Configure the RabbitMQ Sender Adapter
 
-The RabbitMQ sender adapter allows you to consume messages in SAP Integration Suite from queues on the RabbitMQ server. In addition,you use the adapter to send acknowledgements to the RabbitMQ server.
+The RabbitMQ sender adapter allows you to consume messages in SAP Integration Suite from queues on the RabbitMQ server. In addition, you use the adapter to send acknowledgements to the RabbitMQ server.
 
 > ### Note:  
 > This adapter is available on SAP Business Accelerator Hub.
@@ -211,7 +211,7 @@ Select authentication option to use to connect to the RabbitMQ server. There are
 
     Connect to the RabbitMQ server using Simple Authentication and Security Layer \(SASL\).
 
-    To use this option, you need to deploy a *User Credentials* artifact in the *Monitor* \> *Integrations*section under *Manage Security* \(*Security Material* tile\). Using the alias name for the Credential, adapter will get username and password to connect to the RabbitMQ server.
+    To use this option, you need to deploy a *User Credentials* artifact in the *Monitor* \> *Integrations* section under *Manage Security* \(*Security Material* tile\). Using the alias name for the Credential, adapter will get username and password to connect to the RabbitMQ server.
 
 
 

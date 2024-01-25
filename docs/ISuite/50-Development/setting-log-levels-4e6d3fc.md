@@ -117,9 +117,56 @@ Specifics for log level `Trace`:
 </table>
 
 > ### Note:  
-> If you update an integration flow, that is, deploy an integration flow without deleting the predecessor version, the log level configuration is kept stable. If you undeploy an integration flow and then deploy a newer version, it's treated as a new integration flow, which is logged with log level `Info` 
+> If you update an integration flow, that is, deploy an integration flow without deleting the predecessor version, the log level configuration is kept stable. If you undeploy an integration flow and then deploy a newer version, it's treated as a new integration flow, which is logged with log level `Info`.
 > 
 > Changes to the log level don't affect messages already in process and only apply to newly created messages after the time of modification.
+
+> ### Note:  
+> In order to conserve resources, you can use a Groovy script \(in a *Script* integration flow step\) that retrieves additional information associated with particular log levels. You can model the scenario in such a way that the information is only determined when it is really needed.
+> 
+> For instance, using the following script, you can limit the inclusion of the payload as an attachment by specifying that the attachment should only be saved if the log level is set to a specific value. For more information about scripts, see [Add Information to the Message Processing Log](add-information-to-the-message-processing-log-e8e9283.md).
+> 
+> > ### Sample Code:  
+> > ```
+> > import com.sap.it.api.msglog.MessageLogFactory
+> >         import com.sap.gateway.ip.core.customdev.util.Message;
+> >         import java.util.MashMap;
+> >         def Message processData(Message message){
+> >             def logLevel = message.getProperty("SAP_MPL_LogLevel_Overall");
+> >             def logLevelInternal = message.getProperty("SAP_MPL_LogLevel_Internal");
+> >             def logLevelExternal = message.getProperty("SAP_MPL_LogLevel_External");
+> > 
+> >             def messageLog = messageLogFactory.getMessageLog(message)
+> >             messageLog.message.addCustomerHeaderProperty("Log Level", logLevel)
+> >             messageLog.message.addCustomerHeaderProperty("Internal Log Level", logLevelInternal)
+> >             messageLog.message.addCustomerHeaderProperty("External Log Level", logLevelExternal)
+> > 
+> >         if(logLevel.equals("DEBUG") || logLevel.equals("TRACE")) {
+> >             def body = message.getBody();
+> >             messageLog.addAttachmentAsString("Payload", body, "text/plain");
+> >             messageLog.addAttachmentAsString("Debugging information"; "data", "text/plain");
+> >         }
+> >         return message;
+> > }
+> > ```
+> 
+> The log level is represented in three different ways:
+> 
+> -   *Internal* log level \(from property `SAP_MPL_LogLevel_Internal`\) refers to the setting that is applicable to the monitoring data accessible through the SAP Integration Suite user interface and the public OData API.
+> 
+> -   *External* log level \(from property `SAP_MPL_LogLevel_External`\) refers to the log level selected for sending logging information to an external logging system. This is only relevant if you have activated the corresponding feature.
+> 
+> -   *Overall* log level \(from property `SAP_MPL_LogLevel_Overall`\) represents the highest log level between *Internal* and *External* log levels, following the order of `None`, `Error`, `Info`, `Debug`, `Trace`. If you are using both logging options, the *Overall* log level allows you to consider only one value for comparison. However, if you are not using external logging, then considering the *Internal* log level alone is sufficient.
+> 
+>     The *Overall* log level serves as a convenience level if you only want to focus on one value that is achieved by at least one of the two log levels.
+> 
+> 
+> Examples:
+> 
+> -   Internal = ERROR, External = INFO =\> Overall = INFO
+> 
+> -   Internal = DEBUG, External = INFO =\> Overall = DEBUG
+> -   Internal = INFO, External = NONE =\> Overall = INFO
 
 **Related Information**  
 

@@ -8,6 +8,24 @@ To create APIs, build API proxies as a service provider, or use APIs and other c
 
 
 
+<a name="loiof34e86cafb274d4bbef725a610ed225d__prereq_cgz_q4r_b1c"/>
+
+## Prerequisites
+
+The following role collections must be assigned to you:
+
+-   To access the *Settings* page, the *APIManagement.Selfservice.Administrator* role collection must be assigned to you
+
+-   You need the following role collections to establish and test the connection betweenAPI business hub enterprise and Integration Suite API Management tenant.
+
+    -   APIPortal.Administrator
+
+    -   AuthGroup.API.Admin
+
+
+
+
+
 <a name="loiof34e86cafb274d4bbef725a610ed225d__context_zzc_psj_ltb"/>
 
 ## Context
@@ -33,7 +51,7 @@ After enabling the API Management capability, you need to configure the service.
 
     Example: https://<virtualHost\>.apimanagement.hana.ondemand.com.
 
-4.  Provide an e-mail ID in the *Notification Contact* field to receive updates. You can also add multiple e-mail IDs. To add more than one e-mail ID, press the `Tab` button on the keyboard.
+4.  Provide an e-mail ID in the *Notification Contact* field to receive updates. You can also add multiple e-mail IDs. To add more than one e-mail ID, use the `Tab` key on your keyboard.
 
 5.  Select the *Make <User ID\> API Portal administrator* checkbox to assign the `APIPortal.Administrator` role to the mentioned user. Assigning administrator role helps the user to access API portal user interface and services.
 

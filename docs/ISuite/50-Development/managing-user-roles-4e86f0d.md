@@ -14,7 +14,7 @@ The user role monitor allows a tenant administrator to manage user roles which t
 
 You open the area with the following action:
 
-In the *Monitor* view, click the *User Roles* tile in the *Manage Security* section. User roles defined by SAP and by the tenant administrator are displayed.
+In the *Monitor* view, select the *User Roles* tile in the *Manage Security* section. User roles defined by SAP and by the tenant administrator are displayed.
 
 
 
@@ -119,7 +119,7 @@ Choose one of the two buttons to perform an action. The available actions are:
 
 To sort and filter the content of the table, choose *Table Settings* \(:gear:\) displayed above the table. On the subsequent screen, you can define how the table entries are to be sorted \(by specifying an attribute and whether the entries are to be sorted for that attribute in ascending or descending order\). You can also filter the table entries for certain attributes.
 
-You also have the option to refresh the table by clicking *Reload content* \(<span class="SAP-icons"></span>\).
+You also have the option to refresh the table by selecting *Reload content* \(<span class="SAP-icons"></span>\).
 
 
 
@@ -131,7 +131,7 @@ The following actions are available:
 
 -   *Add*
 
-    After clicking the button, a subsequent input box appears where you need to specify the role name and the role description. Only the role description is editable afterwards.
+    After you have chosen *Add*, a subsequent input box appears where you need to specify the role name and the role description. Only the role description is editable afterwards.
 
 -   *Download to JSON*
 
@@ -148,7 +148,7 @@ The following actions are available:
     > }
     > ```
 
-    Instead of downloading the JSON file, you can also use the button *Copy selected roles in JSON format to the clipboard* \(<span class="SAP-icons"></span>\) above the table. In the next step, you can use the copied format to create, as an example, a new service instance.
+    Instead of downloading the JSON file, you can also use *Copy selected roles in JSON format to the clipboard* \(<span class="SAP-icons"></span>\) at the beginning of the table. In the next step, you can use the copied format to create, as an example, a new service instance.
 
 
 
@@ -159,7 +159,7 @@ The following actions are available:
 
 For a detailed instruction on how to create a service instance and a service key, visit [Creating Service Instance and Service Key for Inbound Authentication](../40-RemoteSystems/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md).
 
-Watch the below video to see a basic inbound authentication end-to-end scenario.
+Watch the next video to know more about a basic inbound authentication end-to-end scenario.
 
 > ### Note:  
 > This video was created before our branding changes related to SAP technology were announced in January 2021.

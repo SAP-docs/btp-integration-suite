@@ -4,6 +4,8 @@
 
 You can create a new API proxy based on an existing one, while also making any necessary modifications to suit your specific requirements.
 
+**Prerequisite:** The role collection *APIPortal.Administrator* should be assigned to you.
+
 If you want to browse for an existing API proxy, proceed as follows: Create an API Proxy Based on an Existing API Proxy
 
 1.  Log on to the Integration Suite.
@@ -32,6 +34,6 @@ If you want to browse for an existing API proxy, proceed as follows: Create an A
 
 11. Choose *Create*.
 
-12. Complete the remaining steps by referring to the [Create an API](create-an-api-c0842d5.md) topic.
+12. Complete the remaining steps by referring to the [Create an API Proxy](create-an-api-proxy-c0842d5.md) topic.
 
 

@@ -175,6 +175,9 @@ This expression represents a query parameter in the incoming request message whe
 </table>
 
 > ### Note:  
+> If you are using special characters in <headerName\> or <queryParamName\>, please ensure that you use bracket notation. For example, $\{request.header\['X-Forwarded-For'\]\}
+
+> ### Note:  
 > When the quota limit specified in the policy is reached, the subsequent calls to the API proxy are rejected with the response code 429 \( request limit exceeded\). The rejection period lasts until the end of the quota window. Let's illustrate this with the following example:
 > 
 > The quota window opens at 00:00 \(12 AM\) and ends at 00:05 \(12:05 AM\). Let us assume that the quota allotted is three requests in the specified period of 5 minutes. At 00:03, if the quota limit is reached, the subsequent requests post 00:03 are rejected until the window is reset at 00:05.

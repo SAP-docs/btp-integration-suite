@@ -7,7 +7,7 @@ Basic authentication allows a client to authenticate itself against the server b
 > ### Caution:  
 > Consider that we do **not** recommend to use basic authentication in productive scenarios because of the following security aspects:
 > 
-> Basic authentication has the risk that authentication credentials, for example, passwords, are sent in clear text. Using TLS \(transport-layer security, also referred to as Secure Sockets Layer\) as transport-level encryption method \(when using HTTPS as protocol\) makes sure that this information is nevertheless encrypted on the transport path. However, the authentication credentials might become visible to SAP-internal administrators at points in the network where the TLS connection is terminated, for example, load balancers. If logging is not done properly at such devices, the authentication credentials might become part of log files. Also network monitoring tools used at such devices might expose the authentication information to administrators. Furthermore, the person to whom the authentication credentials belong \(in the example above, the password owner\) needs to maintain the password in a secure place.
+> Basic authentication has the risk that authentication credentials, for example, passwords, are sent in clear text. Using TLS \(transport-layer security, also referred to as Secure Sockets Layer\) as transport-level encryption method \(when using HTTPS as protocol\) makes sure that this information is nevertheless encrypted on the transport path. However, the authentication credentials might become visible to SAP-internal administrators at points in the network where the TLS connection is terminated, for example, load balancers. If logging is not done properly at such devices, the authentication credentials might become part of log files. Also network monitoring tools used at such devices might expose the authentication information to administrators. Furthermore, the person to whom the authentication credentials belong \(in the previous example, the password owner\) needs to maintain the password in a secure place.
 
 
 
@@ -114,7 +114,7 @@ Based on this setup of keys and OAuth credentials, the communication is establis
 **Related Information**  
 
 
-[Using Custom IDP with SAP Cloud Integration](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/c59610d483974fcda631af4a2aae586b.html "") :arrow_upper_right:
+[Using Custom IDP with SAP Cloud Integration](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c59610d483974fcda631af4a2aae586b.html "") :arrow_upper_right:
 
 [Basic Authentication with clientId and clientsecret for Integration Flow Processing](basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md "Use this procedure to connect a sender system to SAP Cloud Integration.")
 

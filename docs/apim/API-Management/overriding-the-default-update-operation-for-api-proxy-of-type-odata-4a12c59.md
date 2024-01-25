@@ -41,5 +41,5 @@ Once you have made the changes in the Open API specification, ensure that you *S
 **Related Information**  
 
 
-[Create an API](create-an-api-c0842d5.md "This topic describes the steps to create an API from the .")
+[Create an API Proxy](create-an-api-proxy-c0842d5.md "This topic describes the steps to create an API proxy from the .")
 

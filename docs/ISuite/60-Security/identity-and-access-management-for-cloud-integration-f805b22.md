@@ -56,7 +56,7 @@ Therefore, apply the following measures when designing integration flows for sec
 > ### Tip:  
 > Instead of using the predefined authorization groups, you can tailor the permissions to your own requirements by applying elementary roles that are defined for individual tasks.
 > 
-> More information: [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/556d5575d4b0483e85d4f3251f21d0ec.html "") :arrow_upper_right:
+> More information: [Tasks and Permissions](tasks-and-permissions-556d557.md)
 
 
 
@@ -82,5 +82,5 @@ When a sender system calls the integration platform using HTTPS-based \(inbound\
 
 [Authentication and Authorization Options \(Inbound\)](../40-RemoteSystems/authentication-and-authorization-options-inbound-983f2a5.md "When a client calls a server using a secure communication channel, two different kinds of checks are performed subsequently.")
 
-[Persona](persona-4b4ba1c.md "When you perform user management tasks using SAP BTP SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.")
+[Persona](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/4b4ba1c553474259b5be661f4ef0702c.html "When you perform user management tasks using SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.") :arrow_upper_right:
 

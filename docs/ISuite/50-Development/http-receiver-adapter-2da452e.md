@@ -59,9 +59,9 @@ The HTTP Receiver adapter works well with target systems that supports either ch
 >     -   `application/json` for data in JSON format to be processed by an application that requires this format
 > 
 > 
->     More information on the available types: [https://www.w3.org/Protocols/rfc1341/4\_Content-Type.html](https://www.w3.org/Protocols/rfc1341/4_Content-Type.html)
+>     More information on the available types: [4 The Content-Type Header Field](https://www.w3.org/Protocols/rfc1341/4_Content-Type.html)
 > 
->     The list of available content types is maintained by the Internet Assigned Numbers Authority \(IANA\). For more information, see [http://www.iana.org/assignments/media-types/media-types.xhtml](http://www.iana.org/assignments/media-types/media-types.xhtml).
+>     The list of available content types is maintained by the Internet Assigned Numbers Authority \(IANA\). For more information, see [Media Types](http://www.iana.org/assignments/media-types/media-types.xhtml).
 > 
 > -   **Content-Encoding**
 > 
@@ -71,9 +71,9 @@ The HTTP Receiver adapter works well with target systems that supports either ch
 > 
 >     If this header is not specified, the default value `identity` \(no compression\) is used.
 > 
->     More information: [https://tools.ietf.org/html/rfc2616](https://tools.ietf.org/html/rfc2616) \(section 14.11\)
+>     More information: [Hypertext Transfer Protocol – HTTP/1.1](https://tools.ietf.org/html/rfc2616)
 > 
->     The list of available content types is maintained by the Internet Assigned Numbers Authority \(IANA\). For more information, see:[http://www.iana.org/assignments/http-parameters/http-parameters.xhtml\#content-coding](http://www.iana.org/assignments/http-parameters/http-parameters.xhtml#content-coding).
+>     The list of available content types is maintained by the Internet Assigned Numbers Authority \(IANA\). For more information, see:[HTTP Content Coding Registry](http://www.iana.org/assignments/http-parameters/http-parameters.xhtml#content-coding).
 
 > ### Note:  
 > If transferring `text/*` content types, you can also specify the character encoding in the HTTP header using the `charset` parameter.
@@ -216,9 +216,9 @@ When you specify the *Query* field of the HTTP adapter as `${header.a}`, at runt
 > 
 > Note that %5B , %5D, %2B and %22 are UTF-8 URL encoded values for special characters \[, \], + and " respectively.
 > 
-> Individual parameter-value pairs must be separated with an ”&” and there must be an “=” between the name of a parameter and its value as shown in example above.
+> Individual parameter-value pairs must be separated with an ”&” and there must be an “=” between the name of a parameter and its value as shown in previous example.
 > 
-> Some special characters need URL encoding as shown above and some do not such as &.
+> Some special characters need URL encoding as previously shown and some do not such as &.
 
 
 
@@ -249,8 +249,6 @@ The type of proxy that you are using to connect to the target system:
     > If you select the *On-Premise* option and use the SAP Cloud Connector to connect to your on-premise system, the *Address* field of the adapter references a virtual address, which has to be configured in the SAP Cloud Connector settings.
 
 -   If you select *Manual*, you can manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry fields\).
-
-    Furthermore, with the parameter *URL to WSDL* you can specify a Web Service Definition Language \(WSDL\) file defining the WS provider endpoint \(of the receiver\). You can specify the WSDL by either uploading a WSDL file from your computer \(option *Upload from File System*\) or by selecting an integration flow resource \(which needs to be uploaded in advance to the *Resources* view of the integration flow\).
 
     This option is only available if you have chosen a *Process Orchestration* product profile.
 

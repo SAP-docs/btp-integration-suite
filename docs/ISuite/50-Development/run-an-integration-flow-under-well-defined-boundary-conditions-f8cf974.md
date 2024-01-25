@@ -17,7 +17,7 @@ Developing enterprise-grade integration flows mandates the diligent management o
 > ### Note:  
 > It can be the case that you've applied the integration flow design guidelines described in this section to your best knowledge, but you still face issues during the operation of the scenario. For example, you have applied all design rules with regard to performance but still the performance isn't good enough at runtime. In such cases, you can check out the following page to search for a service that helps you to optimize the implementation of your scenario: [SAP Services and Support](https://www.sap.com/services-support.html).
 
-Resources on a tenant are limited, as you can see in the following table showing the resources of SAP Integration Suite .
+Resources on a tenant are limited, as you can see in the following table showing the resources of SAP Integration Suite.
 
 ****
 
@@ -99,7 +99,7 @@ Message Broker
 </tr>
 </table>
 
-According to the operating model for SAP Integration Suite , SAP is responsible for managing the resources on the tenant. SAP monitors all tenants constantly for resource leaks. If a resource leak is detected, manual intervention by SAP is required to scale the tenant resources. The customer has limited insight on how the resources are provisioned for the tenant.
+According to the operating model for SAP Integration Suite, SAP is responsible for managing the resources on the tenant. SAP monitors all tenants constantly for resource leaks. If a resource leak is detected, manual intervention by SAP is required to scale the tenant resources. The customer has limited insight on how the resources are provisioned for the tenant.
 
 On the other hand, the integration developer on the customer side is expected to design an integration flow in such a way to best suit the resource limits of the tenant. The integration developer needs to estimate the message throughput, required storage space, and many other parameters to determine the resource needs of the tenant.
 

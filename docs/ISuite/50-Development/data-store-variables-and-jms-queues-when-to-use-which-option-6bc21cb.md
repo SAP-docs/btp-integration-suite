@@ -41,6 +41,10 @@ Data store/variable
 
 The data store is used to persist messages on the database of your SAP Integration Suite tenant. You can use the *Data Store Operations* integration flow steps \(*Write*, *Get*, *Select*, and *Delete*\) to do operations on the data store.
 
+You can use the Data Store sender adapter to allow SAP Integration Suite to consume messages from a data store. This feature helps you to enable asynchronous decoupling of inbound and outbound processing by using the data store as temporary storage. When configuring the Data Store sender adapter, you can specify parameters such as the poll interval that determines the time to wait before consuming messages from the data store. You can also define the retry behavior.
+
+This feature allows you to set up scenarios with reliable messaging using asynchronous decoupling.
+
 </td>
 </tr>
 <tr>
@@ -51,7 +55,7 @@ JMS queue
 </td>
 <td valign="top">
 
-You can use the JMS sender adapter to store messages in a JMS queue. One important key characteristic of the Java Message Service \(JMS\) feature is the support of high-speed messaging with high throughput. This is why it offers the optimal solution for reliable messaging using asynchronous decoupling. JMS is a Java-based standard application programming interface \(API\) for sending and receiving messages. It enables efficient asynchronous communication based on a JMS message broker between different components. The JMS message broker is a separate runtime component that ensures that messages in JMS queues in the JMS message broker are treated separately. The JMS adapter is used to store messages in the JMS queue and to consume messages from the JMS queue in the JMS message broker.
+You can use the JMS receiver adapter to store messages in a JMS queue. One important key characteristic of the Java Message Service \(JMS\) feature is the support of high-speed messaging with high throughput. This is why it offers the optimal solution for reliable messaging using asynchronous decoupling. JMS is a Java-based standard application programming interface \(API\) for sending and receiving messages. It enables efficient asynchronous communication based on a JMS message broker between different components. The JMS message broker is a separate runtime component that ensures that messages in JMS queues in the JMS message broker are treated separately. The JMS adapter is used to store messages in the JMS queue and to consume messages from the JMS queue in the JMS message broker.
 
 The processing sequence used by the JMS adapter is first-in, first-out \(FIFO\). However, because of parallel processing and retry handling this does not mean that messages are processed in a guaranteed order.
 
@@ -122,7 +126,7 @@ What is the frequency of consumption?
 </td>
 <td valign="top">
 
-Whenever a message is initiated by a client's call or a timer \(scheduler\)
+Whenever a message is initiated by a client's call, a timer \(scheduler\), or automatically consumed by the integration flow through the Data Store sender adapter
 
 </td>
 <td valign="top">
@@ -190,6 +194,8 @@ Yes
 
 
 [Use Cases for Data Store and Variables](use-cases-for-data-store-and-variables-853d4dd.md "")
+
+[Data Store Sender Adapter](data-store-sender-adapter-4f5ef3f.md "This adapter enables Cloud Integration to consume messages from a data store. This feature helps you to enable asynchronous decoupling of inbound and outbound processing by using the data store as temporary storage.")
 
 [Use Case for JMS](use-case-for-jms-5d2c32f.md "")
 

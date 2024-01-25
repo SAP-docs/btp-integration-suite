@@ -339,7 +339,7 @@ API Designer
 </td>
 <td valign="top">
 
-For a given Resource, you can use the API Designer to detect and correct the errors in swagger definition, and save the changes. For more information, see the note in step 14 in [Create an API](create-an-api-c0842d5.md).
+For a given Resource, you can use the API Designer to detect and correct the errors in swagger definition, and save the changes. For more information, see the note in step 14 in [Create an API Proxy](create-an-api-proxy-c0842d5.md).
 
 </td>
 <td valign="top">
@@ -391,7 +391,7 @@ Notes:
 
 -   API proxies always get imported to the destination API portal in the deployed state. For more information, see [Transporting an API Proxy from Source to Destination](transporting-an-api-proxy-from-source-to-destination-2fe1aa2.md). Additionally, APIs attached to the Product get imported to the destination API portal in the deployed state. For more information, see [Transporting a Product from Source to Destination](transporting-a-product-from-source-to-destination-3a4cdd2.md).
 
--   When an API proxy is transported or exported individually or as a part of a Product, by default, it gets imported to the target in the deployed state. For more information, see [Import an API](import-an-api-9342a93.md).
+-   When an API proxy is transported or exported individually or as a part of a Product, by default, it gets imported to the target in the deployed state. For more information, see [Import an API Definition](import-an-api-definition-9342a93.md).
 
 -   If you try to publish a Product that has an API with saved changes attached to it, you get a warning message that there are changes in the APIs that aren't deployed yet. Similarly, you'll receive a warning message if you try to publish a Product which has multiple APIs attached to it, and few of these APIs have changes that are saved but not deployed. For more information, refer the note in step 9 in [Create a Product](create-a-product-d769622.md).
 
@@ -1185,7 +1185,7 @@ Discover REST and SOAP APIs
 </td>
 <td valign="top">
 
-Discover REST and SOAP APIs along with OData APIs while creating a proxy for Integration flow. For more information, see [Creating an API from SAP Cloud Integration API Provider](creating-an-api-from-sap-cloud-integration-api-provider-aefbd74.md).
+Discover REST and SOAP APIs along with OData APIs while creating a proxy for Integration flow. For more information, see [Creating an API Proxy using SAP Cloud Integration API Provider](creating-an-api-proxy-using-sap-cloud-integration-api-provider-aefbd74.md).
 
 </td>
 <td valign="top">

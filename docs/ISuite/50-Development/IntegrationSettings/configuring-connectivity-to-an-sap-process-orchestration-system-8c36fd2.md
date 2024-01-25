@@ -63,6 +63,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     Provide the URL from Cloud Connector that connects to your PO system.
+
+    > ### Note:  
+    > If the test connection fails, try removing the charcter "`_`" \(underscore\) in the address field, if used. An underscore is a likely candidate for such connection failures.
+
+
     
     </td>
     </tr>
@@ -152,6 +157,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     Provide the URL from Cloud Connector that connects to your PO system.
+
+    > ### Note:  
+    > If the test connection fails, try removing the charcter "`_`" \(underscore\) in the address field, if used. An underscore is a likely candidate for such connection failures.
+
+
     
     </td>
     </tr>

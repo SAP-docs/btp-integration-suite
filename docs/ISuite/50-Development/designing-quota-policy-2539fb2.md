@@ -144,9 +144,7 @@ Identifier \(Optional\)
 </td>
 <td valign="top">
 
-Variable used for uniquely identifying the client application.
-
-The ref attribute identifies the variable that provides the value of the Identifier.
+The variable used to uniquely identify the client application is referred to as the "Identifier". The "ref" attribute is used to specify the variable that contains the value of the Identifier. If the "ref" attribute is not used, the policy will utilize a single counter that is applied to the quota.
 
 </td>
 </tr>

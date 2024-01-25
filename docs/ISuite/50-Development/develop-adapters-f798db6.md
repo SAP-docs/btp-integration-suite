@@ -46,7 +46,7 @@ You use an adapter in an integration flow for outbound and inbound communication
 
     1.  Select *File* \> *New* \> *Project*.
 
-    2.  Choose *Adapter Project* in the *New Project* wizard.
+    2.  Choose *SAP Cloud Integration* \> *Adapter Project* in the *New Project* wizard.
 
     3.  Choose *Next*.
 
@@ -203,7 +203,7 @@ You use an adapter in an integration flow for outbound and inbound communication
 
     1.  Select *File* \> *New* \> *Project*.
 
-    2.  Choose *Adapter Project*in the *New Project* wizard.
+    2.  Choose *SAP Cloud Integration* \> *Adapter Project*in the *New Project* wizard.
 
     3.  Choose *Next*.
 
@@ -219,9 +219,9 @@ You use an adapter in an integration flow for outbound and inbound communication
     7.  Develop camel component.
 
         > ### Note:  
-        > *createProducer\(\)* or *createConsumer\(\)* method, will throw *UnsupportedOperationException*, *RuntimeCamelException*, *OperationNotSupportedException* exceptions. You can prevent the generation of producer or consumer components by throwing *UnsupportedOperationException* exception.
+        > *createProducer\(\)* or *createConsumer\(\)* method, will throw *UnsupportedOperationException*, *RuntimeCamelException*, *OperationNotSupportedException**UnsupportedOperationException* exception.
 
-    8.  Add one \(mandatory\) camel component `.jar` file in `component` folder and other additional \(optional\) dependent `.jar` files in `libs` folder.
+    8.  Add one \(mandatory\) camel component `.jar` file in exceptions. You can prevent the generation of producer or consumer components by throwing `component` folder and other additional \(optional\) dependent `.jar` files in `libs` folder.
 
         > ### Note:  
         > You must add only those jar files that are valid OSGi bundles. Component jar is a camel based component bundle. Dependent jars are the osgi bundles that are required by camel component.
@@ -232,7 +232,7 @@ You use an adapter in an integration flow for outbound and inbound communication
 5.  Right click on the new adapter project or the component folder and select *Generate Metadata* \> *Component Metadata* to generate a sample component metadata.
 
     > ### Note:  
-    > Generate component metadata works only if annotations are marked in the camel bundle on endpoint class variables.
+    > exceptions. You can prevent the generation of producer orGenerate component metadata works only if annotations are marked in the camel bundle on endpoint class variables.
     > 
     > **Annotations**:
     > 
@@ -397,7 +397,7 @@ You use an adapter in an integration flow for outbound and inbound communication
 
 9.  To configure the Operations Server to connect your local Eclipse tooling to the tenant, execute the following substeps:
 
-    1.  Select *Window* \> *Preferences* \> *Operations Server*.
+    1.  Select *Window* \> *Preferences* \> *SAP Cloud Integration* \> *Operations Server*.
 
     2.  Enter the server URL.
 

@@ -382,7 +382,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
 
     2.  Choose *Select* to add a file from the XSD folder found in the same integration project.
 
-        Only XSD files from Integration Advisor are supported.
+        Only XSD files from Integration Advisor are supported at runtime.
 
 
     > ### Note:  

@@ -63,11 +63,11 @@ To create a *Process Integration Runtime* instance:
 
 2.  Fill in the details as shown in the screenshot below and choose *Create*:
 
-    ![](images/5c02dbf8b8e34d83bb728eaed1c940bc.xml)
+    ![](images/5c02dbf8b8e34d83bb728eaed1c940bc.image)
 
 3.  Create a *Service Key* associated with the *Process Integration Runtime* service instance.
 
-    ![](images/1c63970786464884ad333952a107fc81.xml)
+    ![](images/1c63970786464884ad333952a107fc81.image)
 
     > ### Note:  
     > You can also create a certificate-based service key.

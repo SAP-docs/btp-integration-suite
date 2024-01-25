@@ -12,7 +12,7 @@ To activate external logging in the Cloud Foundry Environment on your tenant, yo
 
 -   You've to be tenant Admin with the role `AuthGroup_Administrator`as well as the role `ExternalLoggingActivate`.
 
--   Use `activateExternalLogging` function of the official OData API, see:.
+-   Use `activateExternalLogging` function of the official OData API, see:
 
     [Message Processing Logs](https://api.sap.com/api/MessageProcessingLogs/overview)
 
@@ -23,7 +23,7 @@ To create a destination:
 
 1.  Go to your subaccount, and under *Connectivity*, choose *Destinations.*
 
-2.  Click on *New Destination* and configure the parameters as listed in the following table.
+2.  Choose *New Destination* and configure the parameters as listed in the following table.
 
 
 <table>
@@ -71,7 +71,7 @@ The type HTTP is used for both HTTP and HTTPS connections.
 </td>
 <td valign="top">
 
-Add the destination URL to the Splunk HTTP Event Collector without the endpoint. For a detailed description how the event collector URL is structured, see [https://docs.splunk.com/Documentation/Splunk/9.0.3/Data/UsetheHTTPEventCollector](https://docs.splunk.com/Documentation/Splunk/9.0.3/Data/UsetheHTTPEventCollector).
+Add the destination URL to the Splunk HTTP Event Collector without the endpoint. For a detailed description how the event collector URL is structured, see [https://docs.splunk.com/Documentation/Splunk/9.0.3/Data/UsetheHTTPEventCollector](https://docs.splunk.com/Documentation/Splunk/9.0.3/Data/UsetheHTTPEventCollector)
 
 Example:
 
@@ -139,7 +139,7 @@ For information on how to enable and configure the HTTP Event Collector, see: [h
 </td>
 <td valign="top">
 
-Enter an index name
+Enter an index name.
 
 </td>
 </tr>
@@ -230,7 +230,7 @@ If set to `true`, the source type is set to a value matching one of the followin
 </td>
 <td valign="top">
 
-If *DynamicSourceType* is true, and the *SourceTypePrefix* property is , the property value is prepended to the source type. For example: for a prefix of `Custom` and an MPL run event, the source type is to `CustomRun`.
+If *DynamicSourceType* is true, and the *SourceTypePrefix* property is, the property value is prepended to the source type. For example: for a prefix of `Custom` and an MPL run event, the source type is to `CustomRun`.
 
 </td>
 </tr>
@@ -254,7 +254,7 @@ If the property is set to `true`, values like custom header attributes and adapt
 </td>
 <td valign="top">
 
-If the property is set to `true`, values like custom header attributes and adapter attributes are added as separate stand-alone events, following the base `Run` event. This property. is independent of the `SubValuesInline` property
+If the property is set to `true`, values like custom header attributes and adapter attributes are added as separate stand-alone events, following the base `Run` event. This property is independent of the `SubValuesInline` property.
 
 </td>
 </tr>
@@ -272,7 +272,7 @@ You've to reload the *Monitor* to be able to see the external logging level opti
 
 If external logging is activated,
 
-1.  Go to the *Manage Integration* section,
+1.  Go to the *Manage Integration* section.
 
 2.  Choose the integration flow you want to have the external logging for.
 3.  In the *Log Configuration* section, in addition to the standard *Log Level* you can set the *External Log Level*.

@@ -43,5 +43,5 @@ The connection has been set up between the Integration Suite API portal and the 
 **Related Information**  
 
 
-[Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](create-a-connection-request-for-the-centralized-api-business-hub-enterprise-cla-02f7877.md "To publish the API portal content on the API business hub enterprise, you must create a request to connect the API portal to the API business hub enterprise.")
+[Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](create-a-connection-request-for-the-centralized-api-business-hub-enterprise-cla-02f7877.md "Create a request to connect the Integration Suite API Management tenant to the API business hub enterprise. You need to establish this connection to publish the content of the Integration Suite API Management tenant on the API business hub enterprise.")
 

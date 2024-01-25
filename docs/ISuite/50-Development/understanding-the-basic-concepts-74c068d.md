@@ -27,6 +27,10 @@ A business transaction is an entity in a B2B scenario. It results in a synchroni
 
 These types of business transactions are defined by the provided business transaction patterns.
 
+*Business Transaction Activity*
+
+A Business Transaction Activity \(BTA\) is a concrete interchange between a Company and its trading partner which converts all the necessary configurations for transfering one business document from one side to the other. A two-way Business Transaction contains two Business Transaction Activity, while a one-way Business Transaction only contains one Business Transaction Activity
+
 *Business Transaction Pattern*
 
 A business transaction pattern provides the pattern of one-way or two-way business transactions with its specific business semantic, the use, boundary conditions and especially the specific quality of services related to the pattern. It also considers the involved components that are necessary for a correct processing of the business information within each business transaction steps.

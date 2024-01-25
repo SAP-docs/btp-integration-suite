@@ -57,6 +57,8 @@ The supported file types for an import are json, and .zip.
 
     3.  Select the *Runtime Profile* on which the API artifact will be deployed.
 
+        You can also view the virtual host URL for the runtime profile from this page.
+
 
 7.  Choose *Create*.
 

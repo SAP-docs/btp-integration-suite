@@ -12,13 +12,14 @@ Establish a connection between your SAP Process Orchestration system and Migrati
 
 ## Prerequisites
 
--   You've enabled the Migration Assessment capability in SAP BTP cockpit as described in [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md).
+-   You've enabled the Migration Assessment capability in the SAP BTP cockpit as described in [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md).
 
-    Do you prefer hands-on instructions? Check out the tutorial [Enable Migration Assessment Application](https://developers.sap.com/tutorials/migration-assessment-enablement.html).
+    > ### Note:  
+    > Do you prefer hands-on instructions? Check out the tutorial [Enable Migration Assessment Application](https://developers.sap.com/tutorials/migration-assessment-enablement.html).
 
 -   You've set up the relevant access rights for yourself and your users as described in [Configuring User Access](configuring-user-access-2c6214a.md).
 
--   As API endpoints and subpaths are used to extract data from your SAP Process Orchestration system, make sure that SAP Destination service can access the endpoints listed in the following. See [Destination Service](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/eeb0ec2318fb4dda87830a09ac7a02fa.html).
+-   As API endpoints and subpaths are used to extract data from your SAP Process Orchestration system, make sure that the SAP Destination service can access the endpoints listed in the following. See [Destination Service](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/eeb0ec2318fb4dda87830a09ac7a02fa.html).
 
     -   Directory Content
 
@@ -67,9 +68,11 @@ To connect your SAP Process Orchestration system with the Migration Assessment a
 
 2.  In the table labeled *SAP Process Orchestration Systems*, choose *Add*.
 
-3.  Enter a *System Name* and *Description*.
+3.  Enter a *System Name*.
 
-4.  Enter the following details for *Integration Directory*:
+4.  Select a *System Version*. You can either manually select a version from the dropdown list or choose *Auto-Detect* to automatically recognize the system's version.
+
+5.  Enter the following details for *Integration Directory*:
 
     1.  As *Address*, enter your system URL.
 
@@ -85,7 +88,7 @@ To connect your SAP Process Orchestration system with the Migration Assessment a
     3.  Enter the user's *Password*.
 
 
-5.  Next, enter details for *ES Repository*.
+6.  Next, enter details for *ES Repository*.
 
     -   If you're not using a central Enterprise Services \(ES\) Repository, check the box for *Same as Integration Directory*. The same details are then used for both sections.
 
@@ -106,7 +109,7 @@ To connect your SAP Process Orchestration system with the Migration Assessment a
 
 
 
-6.  Choose *Create*. The new system is now listed under *SAP Process Orchestration Systems*.
+7.  Choose *Create*. The new system is now listed under *SAP Process Orchestration Systems*.
 
     If you want to check that the connection is working correctly, select your system and choose *Test Connection*.
 

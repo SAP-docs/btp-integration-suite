@@ -104,6 +104,11 @@ To set up the API Management capability from Integration Suite, you should first
 
 15. Once the roles are assigned, log on to the *Integration Suite*.
 
+    > ### Note:  
+    > If you are using a trial account, the account will be provisioned automatically. As a result, the option to access *APIs* will not appear under *Settings* in the side-navigation menu once the account is onboarded. During the provisioning process, the system will select the default virtual host for you. You will receive a notification indicating that the account is being provisioned. Once the process is complete, you will be automatically logged out of the Integration Suite. To continue, simply log in again. At this point, you will be able to create APIs, build API proxies as a service provider, and utilize other convenient services provided by the platform.
+    > 
+    > Steps 16 and 17 are not applicable for the trial users.
+
 16. On the *Integration Suite* home page, choose *Settings* \> *APIs* from the left navigation pane.
 
 17. On the *Configure the API Management Service* screen, configure the following and choose *Set Up*:
@@ -147,15 +152,15 @@ After enabling the API Management capability, you need to first set up the servi
 **Related Information**  
 
 
-[Assign User Roles in API Management](assign-user-roles-in-api-management-911ca5a.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
+[User Roles in API Management](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.") :arrow_upper_right:
 
 [Create an API Provider](50-Development/create-an-api-provider-6b263e2.md "Define the details of the host you want an application to reach by creating an API provider.")
 
-[Different Methods of Creating an API](50-Development/different-methods-of-creating-an-api-4ac0431.md "An API proxy is the data object that contains all the functionality to be executed when an external user wants to access the backend service.")
+[Different Methods of Creating an API Proxy](50-Development/different-methods-of-creating-an-api-proxy-4ac0431.md "An API proxy is the data object that contains all the functionality to be executed when an external user wants to access the backend service.")
 
-[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "A virtual host allows you to host multiple domain names on the API Management capability within Integration Suite.")
+[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "A virtual host lets you host multiple domain names on API Management capability within Integration Suite.")
 
 [Request for a Two-Way SSL Certificate](request-for-a-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
 
-[Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "Cancel your API portal and API business hub enterprise application subscriptions to disable your account from the API Management service.")
+[Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "You can deactivate your API Management capability from Integration Suite to disable your account from the API Management service.")
 

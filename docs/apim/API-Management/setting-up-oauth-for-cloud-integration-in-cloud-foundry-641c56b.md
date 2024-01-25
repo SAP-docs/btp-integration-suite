@@ -108,5 +108,5 @@ Now, for the created service instance, generate a service key from the steps giv
 
 ## Context
 
-The service keys provide you with *clientId* and *clientSecret*. The *clientId* can be used as username and secret can be used as password if you would like to connect to your integration flows of Cloud Integration via Basic Authentication. Alternatively, you can leverage the*clientId*, *clientSecret*, and *tokenUrl* from the service keys file to get the OAuth access token and then connect to your integration flow of Cloud Integration via OAuth access token approach. For more information, see [Creating an API from SAP Cloud Integration API Provider](creating-an-api-from-sap-cloud-integration-api-provider-aefbd74.md).
+The service keys provide you with *clientId* and *clientSecret*. The *clientId* can be used as username and secret can be used as password if you would like to connect to your integration flows of Cloud Integration via Basic Authentication. Alternatively, you can leverage the*clientId*, *clientSecret*, and *tokenUrl* from the service keys file to get the OAuth access token and then connect to your integration flow of Cloud Integration via OAuth access token approach. For more information, see [Creating an API Proxy using SAP Cloud Integration API Provider](creating-an-api-proxy-using-sap-cloud-integration-api-provider-aefbd74.md).
 

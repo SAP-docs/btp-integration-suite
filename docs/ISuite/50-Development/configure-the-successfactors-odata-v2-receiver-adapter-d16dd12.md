@@ -477,7 +477,7 @@ Maximum time the system waits for a response before terminating the connection.
 
 If the value \* is entered, **all** the message headers are converted to HTTP request headers and forwarded.
 
-*Response Headers* : Provide the **| \(Pipe\)** separated value list of HTTP response headers. The received header values are converted to message/exchange headers.
+*Response Headers*: Provide the **| \(Pipe\)** separated value list of HTTP response headers. The received header values are converted to message/exchange headers.
 
 If the value \* is entered, **all** the HTTP response header values are converted to message/exchange headers.
 

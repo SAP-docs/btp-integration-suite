@@ -26,7 +26,7 @@ An identifier is used to uniquely identify the trading partner when exchanging m
 
 -   *Scheme Name* and *Scheme Code*
 
-    This constitutes the reference framework within which the trading partners are uniquely identified. In general, a trading partner can be identified in many different ways, for example, by their name, by their identification number or by their employee details. But to be able to identify the trading partner uniquely, we need to have a frame of reference that suggests that the number that is displayed is the identification numer. These are some standard codes that can be used in defining the *Identification* of your identifier.
+    This constitutes the reference framework within which the trading partners are uniquely identified. In general, a trading partner can be identified in many different ways, for example, by their name, by their identification number or by their employee details. But to be able to identify the trading partner uniquely, we need to have a frame of reference that suggests that the number that is displayed is the identification number. These are some standard codes that can be used in defining the *Identification* of your identifier.
 
 -   *Agency Name* and *Agency Code*
 
@@ -71,7 +71,7 @@ Now the agreement overview would look like this:
 
 Now we have set the parameters right for a message exchange between the trading partners in an agreement. When and how are these values picked? The next step after defining your trading partner agreement is to activate the agreement. The activation of the agreement is when the business transaction gets executed leading to the document exchange. In simple words, the mail is being sent from the sender to the receiver. How and where to send it? Here comes the identifier. The identifier values may not exactly be used during runtime but they play a vital role in helping the system execute the business transaction.
 
-Let us take a look at the payload when the message is sent from the Company \(Sender\) to the Trading Partner \(Receiver\) .
+Let us take a look at the payload when the message is sent from the Company \(Sender\) to the Trading Partner \(Receiver\).
 
 *ASC X12 Payload* 
 
@@ -124,7 +124,7 @@ Once you activate the agreement, the communication for the first transaction wou
 > 
 > ```
 
-As you can see, the `<InternalID>` tag picks up and displays the identifier of the sender and receiver under `<SenderParty></SenderParty>` and `<RecipientParty></RecipientParty>` tags respectively. The values are SO-MY221003 and SO-MY221123 respectively.
+The `<InternalID>` tag picks up and displays the identifier of the sender and receiver under `<SenderParty></SenderParty>` and `<RecipientParty></RecipientParty>` tags respectively. The values are SO-MY221003 and SO-MY221123 respectively.
 
 Similarly for the second transaction where the communication is sent from the trading partner to the company using IDOC adapter, the payload would be:
 

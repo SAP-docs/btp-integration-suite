@@ -2,14 +2,14 @@
 
 # API Details
 
-The API details correspond to the details shown in the SAP Business Accelerator Hub for SAP Integration Suite : [SAP Cloud Integration API Package](https://api.sap.com/package/CloudIntegrationAPI?section=Artifacts)
+The API details correspond to the details shown in the SAP Business Accelerator Hub for SAP Integration Suite: [SAP Cloud Integration API Package](https://api.sap.com/package/CloudIntegrationAPI?section=Artifacts)
 
 **Related Information**  
 
 
 [Integration Content](integration-content-d1679a8.md "Manage integration artifacts for your tenant.")
 
-[Log Files, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/IAT/en-US/93bc3722533741c7a48eec6a8352f060.html "Access technical system logs written during message processing on the worker/runtime node.") :arrow_upper_right:
+[Log Files, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/93bc3722533741c7a48eec6a8352f060.html "Access technical system logs written during message processing on the worker/runtime node.") :arrow_upper_right:
 
 [Message Processing Logs](message-processing-logs-827a2d7.md "Get an overview of the messages processed on a tenant and get the details for individual messages. The message processing log (MPL) stores data about the messages processed on a tenant. Furthermore, it stores information about the individual processing steps for each processed message.")
 

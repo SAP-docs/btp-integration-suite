@@ -9,6 +9,13 @@ At runtime, monitoring data is written to a database. For each integration flow 
 > ### Tip:  
 > Each SAP Integration Suite tenant is associated with a physical database that has a limited size. This database is used by certain steps during the runtime of integration flows.
 
+> ### Note:  
+> The *Time* filter element allows you to select the time interval \(options: *Past Day*, *Past Week*, *Past Month*, or *Custom*\).
+> 
+> When you've selected the option *Custom* for the *Time* filter, you can select date and time with a graphical element with two components: a calendar element and a circular watch element. To select the date, interact with the calendar element and choose a specific day. To select the time, manipulate two separate circles on the watch element to set the desired hour ante meridiem \(am\) and post meridiem \(pm\), respectively. You can select valid dates only; selection of dates in the future is disabled.
+> 
+> You can select dates up to 30 days in the past.
+
 The usage of database storage is plotted in a bar graph against time.
 
 The bar height shows the data volume \(in MB\) used by monitoring data for a given time period \(as selected with the *Time* parameter\).
@@ -32,7 +39,7 @@ Bar Color
 </th>
 <th valign="top">
 
-Database Connection Usage
+Monitoring Storage Usage
 
 </th>
 </tr>
