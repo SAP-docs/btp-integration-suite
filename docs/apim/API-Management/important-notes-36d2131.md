@@ -28,5 +28,5 @@ Some important notes and announcements.
 > -   [Blog Post: Introducing the Open Documentation Initiative](https://blogs.sap.com/2021/05/20/introducing-the-open-documentation-initiative/)
 
 > ### Tip:  
-> Contextual help is available for some screens of the SAP Integration Suite. To activate this help, from the top toolbar, choose <span class="SAP-icons"></span> Help. A panel with help topics opens alongside your current screen to your right. You will also find green <span style="color:#007833;"><span class="SAP-icons"></span></span> Help icons on the screen. Choose these icons to know more about the associated element.
+> Contextual help is available for some screens of the SAP Integration Suite. To activate this help, from the top toolbar, choose <span class="SAP-icons-V5"></span> Help. A panel with help topics opens alongside your current screen to your right. You will also find green <span style="color:#007833;"><span class="SAP-icons-V5"></span></span> Help icons on the screen. Choose these icons to know more about the associated element.
 

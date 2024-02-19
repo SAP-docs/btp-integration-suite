@@ -29,7 +29,7 @@ You can restrict access to an API product in API Management using a custom role.
 
 3.  In order to create a custom role, choose the *API Management, API Business Hub Enterprise* tile.
 
-4.  Under *Application Plans* for API BusinessHub Enterprise, choose the <span class="SAP-icons"></span> Action icon and select *Manage Roles*.
+4.  Under *Application Plans* for API BusinessHub Enterprise, choose the <span class="SAP-icons-V5"></span> Action icon and select *Manage Roles*.
 
 5.  To add a new custom role, choose :heavy_plus_sign:.
 
@@ -60,7 +60,7 @@ You can restrict access to an API product in API Management using a custom role.
 
     2.  Choose the newly created *Role Collection* and choose *Edit*.
 
-    3.  To select the custom role, choose the <span class="SAP-icons"></span> icon under the *Roles* tab.
+    3.  To select the custom role, choose the <span class="SAP-icons-V5"></span> icon under the *Roles* tab.
 
     4.  On the *Select: Role* dialog, choose the custom role from the *Role Name* dropdown, select the checkbox under *Roles*, and choose *Add*.
 
@@ -91,5 +91,5 @@ You can restrict access to an API product in API Management using a custom role.
 
 [Create a Product](../create-a-product-d769622.md "Explains how to create products to publish a bundle of API proxies together.")
 
-[User Roles in API Management](user-roles-in-api-management-911ca5a.md "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.")
+[Assign User Roles in API Management](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:
 

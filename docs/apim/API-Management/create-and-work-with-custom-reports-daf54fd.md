@@ -66,11 +66,11 @@ You can create customized charts for API metrics that are critical to your busin
 
 9.  At the top-right corner of the date-range selector, you find options to hide the date-range selector, view a grid representation of all your custom charts, and refresh the reports.
 
-    Click <span class="SAP-icons"></span> to hide or unhide the date-range selector.
+    Click <span class="SAP-icons-V5"></span> to hide or unhide the date-range selector.
 
-    Click <span class="SAP-icons"></span> to view a grid representation of all the charts that are a part of your custom view. Hovering over each chart gives you options to either remove the chart from your custom view or add the chart to your custom view.
+    Click <span class="SAP-icons-V5"></span> to view a grid representation of all the charts that are a part of your custom view. Hovering over each chart gives you options to either remove the chart from your custom view or add the chart to your custom view.
 
-    Click <span class="SAP-icons"></span> to refresh the reports with latest data from API calls.
+    Click <span class="SAP-icons-V5"></span> to refresh the reports with latest data from API calls.
 
     Click to :wastebasket: delete a custom view.
 

@@ -34,6 +34,6 @@ After you've deployed the Edge Integration Cell, perform the following steps:
     > ### Note:  
     > Propagating the domain through the DNS can take some time because, if DNS records are cached, they require time to expire. Wait for several minutes for your DNS records to take effect.
 
-2.  After the domain is propagated through the DNS, Edge Integration Cell is accessible in the browser using the defined Fully Qualified Domain Name \(FQDN\). To verify if FQDN is accessible, in your browser, open `https://<FQDN>`. A valid browser response is: `{"error":{"code":"apiProxyNotFound","message":"API proxy not found for the given host and path"}}`.
+2.  After the domain is propagated through the DNS, Edge Integration Cell is accessible in the browser using the defined Fully Qualified Domain Name \(FQDN\). To verify if FQDN is accessible, in your browser, open `https://<FQDN>`. A valid browser response is: `{"error":{"code":"apiProxyNotFound","message":"No API endpoint registered with this host and path. Please ensure that the respective artifact is successfully deployed"}}`.
 
 

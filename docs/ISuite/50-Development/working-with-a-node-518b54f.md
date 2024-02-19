@@ -253,7 +253,7 @@ Once you have created a message implementation guideline, you can edit and modif
     
     You can add multiple qualifiers using the add :heavy_plus_sign: icon.
 
-    If you want to delete a qualifier from the list, choose the delete<span class="SAP-icons"></span> icon.
+    If you want to delete a qualifier from the list, choose the delete<span class="SAP-icons-V5"></span> icon.
 
     To know about qualifying nodes and how to qualify an instance, see [Qualifying Nodes](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/09be9835e1184603ad796071e0a86b98.html?version=Cloud)
     
@@ -299,11 +299,11 @@ Once you have created a message implementation guideline, you can edit and modif
 
     Choose :pencil2: to edit an example value.
 
-    Choose <span class="SAP-icons"></span> to delete an example value.
+    Choose <span class="SAP-icons-V5"></span> to delete an example value.
 
-    Choose <span class="SAP-icons"></span> to move a value up the list.
+    Choose <span class="SAP-icons-V5"></span> to move a value up the list.
 
-    Choose <span class="SAP-icons"></span> to move a value down the list.
+    Choose <span class="SAP-icons-V5"></span> to move a value down the list.
     
     </td>
     </tr>
@@ -366,11 +366,11 @@ Once you have created a message implementation guideline, you can edit and modif
 
     Select a XSD assertion and choose the edit button :pencil2:to edit the XSD assertion.
 
-    Choose delete button <span class="SAP-icons"></span> to delete a XSD assertion
+    Choose delete button <span class="SAP-icons-V5"></span> to delete a XSD assertion
 
-    Choose <span class="SAP-icons"></span> to move an assertion up the list.
+    Choose <span class="SAP-icons-V5"></span> to move an assertion up the list.
 
-    Choose <span class="SAP-icons"></span> to move an assertion down the list.
+    Choose <span class="SAP-icons-V5"></span> to move an assertion down the list.
     
     </td>
     </tr>
@@ -493,11 +493,11 @@ Once you have created a message implementation guideline, you can edit and modif
 
     Choose the edit button :pencil2:to edit the XSD pattern.
 
-    Choose delete button <span class="SAP-icons"></span> to delete a XSD pattern.
+    Choose delete button <span class="SAP-icons-V5"></span> to delete a XSD pattern.
 
-    Choose <span class="SAP-icons"></span> to move a pattern up the list.
+    Choose <span class="SAP-icons-V5"></span> to move a pattern up the list.
 
-    Choose <span class="SAP-icons"></span> to move a pattern down the list.
+    Choose <span class="SAP-icons-V5"></span> to move a pattern down the list.
     
     </td>
     </tr>
@@ -605,7 +605,7 @@ You can use this tab to enter notes specific to that node.
 
 4.  Enter the text under the *Text* field. If you want to format the text, select the checkbox next to *Formatted Text*.
 5.  Choose *Apply*.
-6.  You can also sort the notes under each category based on the number using the <span class="SAP-icons"></span> button.
+6.  You can also sort the notes under each category based on the number using the <span class="SAP-icons-V5"></span> button.
 
 *Status Tab*
 

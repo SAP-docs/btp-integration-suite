@@ -12,6 +12,11 @@ The PGP Keys monitor allows a tenant administrator to manage the public and priv
 
 ## Overview
 
+> ### Caution:  
+> This information is only relevant for Edge Integration Cell runtime.
+> 
+> All changes you make to a key will affect all runtimes associated with that key.
+
 Select *Monitor* \> *Integrations*.
 
 Under *Manage Security*, select *PGP Keys*.
@@ -199,7 +204,7 @@ Download a single key as file.
 </td>
 <td valign="top">
 
-To download a dedicated key as a file, click the download button \(<span class="SAP-icons"></span>\) at the end of the row of the key.
+To download a dedicated key as a file, click the download button \(<span class="SAP-icons-V5"></span>\) at the end of the row of the key.
 
 When downloading a secret key, you need to specify the key passphrase twice.
 
@@ -214,6 +219,13 @@ Delete
 <td valign="top">
 
 To delete a dedicated key, click the delete button \(:wastebasket:\) at the end of the row of the key.
+
+> ### Caution:  
+> This information is only relevant for Edge Integration Cell runtime.
+> 
+> When you delete a key, it affects all the runtime nodes where that key has been assigned. This means that after deletion, the key is no longer present on any of these nodes.
+
+
 
 </td>
 </tr>

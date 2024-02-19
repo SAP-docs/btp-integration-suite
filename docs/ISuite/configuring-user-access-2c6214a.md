@@ -34,7 +34,7 @@ For more information on role collections, see [Roles and Role Collections](https
 
 3.  Enter the *User Name* and *E-Mail*, and choose *Create*.
 
-4.  Choose the user and under *Role Collections* section select <span class="SAP-icons"></span> Additional Options and choose *Assign Role Collection*.
+4.  Choose the user and under *Role Collections* section select <span class="SAP-icons-V5"></span> Additional Options and choose *Assign Role Collection*.
 
 5.  In the resulting dialog box, select the checkbox of the role collection that you want to assign to the user and choose *Assign Role Collection*.
 
@@ -132,7 +132,7 @@ For more information on role collections, see [Roles and Role Collections](https
     -   Complete the onboarding process
     -   Access the *API Settings* page. See [Setting Up API Management Capability](50-Development/setting-up-api-management-capability-f34e86c.md) 
 
-    For more information on relevant roles, see [User Roles in API Management](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.") :arrow_upper_right:.
+    For more information on relevant roles, see [User Roles in API Management \(New\)](user-roles-in-api-management-new-911ca5a.md).
 
     For end-to end instructions on how to set up and configure API Management, refer the tutorial [Set Up API Management from Integration Suite | Tutorials for SAP Developers](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html).
     
@@ -313,7 +313,7 @@ For more information on role collections, see [Roles and Role Collections](https
     -   Deactivate agreements.
 
 
-    To know more, see [Additional Role for Trading Partner Management](additional-role-for-trading-partner-management-bcf7f21.md)
+    You need to create a new Role Collection and assign this role to it. To know more, see [Define a Role Collection](https://help.sap.com/docs/btp/sap-business-technology-platform/define-role-collection).
     
     </td>
     </tr>

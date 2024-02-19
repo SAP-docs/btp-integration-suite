@@ -12,7 +12,7 @@ You can now import message implementation guidelines \(MIG\) or mapping guidelin
 
 ## Procedure
 
-1.  Login to your application and choose Message Implementation Guidelines <span class="SAP-icons"></span> or Mapping Guidelines:open_book: from the left pane.
+1.  Login to your application and choose Message Implementation Guidelines <span class="SAP-icons-V5"></span> or Mapping Guidelines:open_book: from the left pane.
 
 2.  In the overview page, choose *Import*.
 3.  In the import dialog box, choose *Browse* to upload the MIG/MAG file that you have exported previously from another tenant.

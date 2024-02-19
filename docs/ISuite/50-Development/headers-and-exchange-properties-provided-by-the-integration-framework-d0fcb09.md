@@ -2798,6 +2798,28 @@ The adapter parses the XML response and generates this header from it. The heade
 <tr>
 <td valign="top">
 
+SAP\_IntegrationFlowID
+
+</td>
+<td valign="top">
+
+Property
+
+</td>
+<td valign="top">
+
+JMS Sender adapter
+
+</td>
+<td valign="top">
+
+Contains the ID of the integration flow that sent a message to the JMS queue from which the JMS sender adapter reads it. The property value is set by the JMS receiver adapter that sent the message to the JMS queue. The JMS consumer can use this property to define further steps that depend on the integration flow ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SapQualityOfService
 
 </td>

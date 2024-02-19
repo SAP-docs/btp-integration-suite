@@ -18,7 +18,7 @@ Learn how to connect an SAP Process Orchestration system.
 
 ## Prerequisites
 
-You must have tenant administrator role to configure connectivity to an SAP Process Orchestration system.
+You must have a tenant administrator role to configure connectivity to an SAP Process Orchestration system.
 
 
 
@@ -34,9 +34,17 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
 
 3.  Choose :heavy_plus_sign: to connect an SAP PO system.
 
-4.  Provide a name and description for the PO system that you want to connect to.
+4.  Provide a *System Name* for the PO system that you want to connect to.
 
-5.  Enter values in fields based on description in the following table:
+    The name that you provide here appears at all places in the tenant when integration developers try to fetch content from a PO system. Make sure that you provide a meaningful name.
+
+5.  Select the *Version* of your PO system.
+
+    Before you select the version, make sure you identify the correct version from your PO system. If you don't select a version or select a wrong version, the migration tooling wouldn't be able to establish connection with your PO system.
+
+6.  Optional: Provide a description for the PO system.
+
+7.  Enter values in fields based on description in the following table:
 
     **Integration Directory**
 
@@ -65,7 +73,7 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     Provide the URL from Cloud Connector that connects to your PO system.
 
     > ### Note:  
-    > If the test connection fails, try removing the charcter "`_`" \(underscore\) in the address field, if used. An underscore is a likely candidate for such connection failures.
+    > If the test connection fails, try removing the character "`_`" \(underscore\) in the address field, if used. An underscore is a likely candidate for such connection failures.
 
 
     
@@ -130,7 +138,7 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     </tr>
     </table>
     
-6.  **Optional**: If you're using a central Enterprise Services Repository \(ESR\), uncheck the *Same as Integration Directory* check box. Enter values in fields based on description in the following table:
+8.  **Optional**: If you're using a central Enterprise Services Repository \(ESR\), uncheck the *Same as Integration Directory* check box. Enter values in fields based on description in the following table:
 
     **ES Repository**
 
@@ -159,7 +167,7 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     Provide the URL from Cloud Connector that connects to your PO system.
 
     > ### Note:  
-    > If the test connection fails, try removing the charcter "`_`" \(underscore\) in the address field, if used. An underscore is a likely candidate for such connection failures.
+    > If the test connection fails, try removing the character "`_`" \(underscore\) in the address field, if used. An underscore is a likely candidate for such connection failures.
 
 
     
@@ -224,7 +232,7 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     </tr>
     </table>
     
-7.  Choose *Save*.
+9.  Choose *Save*.
 
 
 <a name="task_jzq_y3z_wxb"/>
@@ -239,7 +247,7 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
 
 ## Context
 
-Execute the following steps in your SAP BTP subaccount. After you create a destination, an entry for that SAP Process Orchestration system is automatically created in the *System*settings tab and it is ready to use.
+Execute the following steps in your SAP BTP subaccount. After you create a destination, an entry for that SAP Process Orchestration system is automatically created in the *System* tab and it's ready to use.
 
 Though creating destinations directly in the SAP BTP subaccount is a valid approach, we recommend you to use the *System* settings tab.
 
@@ -412,7 +420,7 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     </td>
     <td valign="top">
     
-    Add the name of the system you created in Migration Assessment
+    Add the name of the system that you created in Migration Assessment
     
     </td>
     </tr>
@@ -587,7 +595,7 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     </td>
     <td valign="top">
     
-    Add the name of the system you created in Migration Assessment
+    Add the name of the system that you created in Migration Assessment
     
     </td>
     </tr>

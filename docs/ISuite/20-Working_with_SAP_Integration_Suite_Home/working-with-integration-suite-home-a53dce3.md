@@ -8,7 +8,7 @@ Access the various features and resources available on the Integration Suite hom
 
 **Prerequisites**
 
--   You’ve subscribed to the Integration Suite application. For more information, see [Subscribing and Configuring Initial Access to Integration Suite](../10-InitialSetup/subscribing-and-configuring-initial-access-to-integration-suite-8a3c8b7.md).
+-   You’ve subscribed to the Integration Suite application. For more information, see [Subscribing and Configuring Initial Access to SAP Integration Suite](../10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
 -   You have the *Integration\_Provisioner* role or any relevant Integration Suite capability-specific role assigned to your user. For more information, see [Configuring User Access](../configuring-user-access-2c6214a.md).
 
 
@@ -109,27 +109,27 @@ Integration Advisor
 <tr>
 <td valign="top">
 
-Discover <span class="SAP-icons"></span>
+Discover <span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Discover* \> *APIs*
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Discover* \> *APIs*
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Discover* \> *Integrations*
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Discover* \> *Integrations*
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Discover* \> *Type Systems*
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Discover* \> *Type Systems*
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Discover* \> *Type Systems*
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Discover* \> *Type Systems*
 
 </td>
 </tr>
@@ -141,184 +141,184 @@ Design :pencil2:
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Design* \> *Graph*
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Design* \> *Graph*
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Design* \> *Integrations and APIs*
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Design* \> *Integrations and APIs*
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Design* \> *B2B Scenarios*
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Design* \> *B2B Scenarios*
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Design* \> *Custom Messages, MIGs, and MAGs*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Test <span class="SAP-icons"></span>
-
-</td>
-<td valign="top">
-
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Test* \> *APIs*
-
-</td>
-<td valign="top">
-
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
-
-</td>
-<td valign="top">
-
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
-
-</td>
-<td valign="top">
-
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Design* \> *Custom Messages, MIGs, and MAGs*
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Configure <span class="SAP-icons"></span>
+Test <span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Configure* \> *APIs*
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Test* \> *APIs*
 
 </td>
 <td valign="top">
 
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
 
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
 
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Engage <span class="SAP-icons"></span> 
-
-</td>
-<td valign="top">
-
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> 
-
-</td>
-<td valign="top">
-
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
-
-</td>
-<td valign="top">
-
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
-
-</td>
-<td valign="top">
-
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Monitor <span class="SAP-icons"></span>
+Configure <span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Monitor* \> *Analyze APIs*
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Configure* \> *APIs*
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Monitor* \> *Integrations and APIs*
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Monitor* \> *B2B scenarios*
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
 
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Inspect Resource Consumption <span class="SAP-icons"></span> 
-
-</td>
-<td valign="top">
-
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
-
-</td>
-<td valign="top">
-
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> 
-
-</td>
-<td valign="top">
-
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
-
-</td>
-<td valign="top">
-
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Monetize <span class="SAP-icons"></span>
+Engage <span class="SAP-icons-V5"></span> 
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> *Monitor* \> *APIs*
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> 
 
 </td>
 <td valign="top">
 
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
 
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
 
-<span style="color:#BB0000;"><span class="SAP-icons"></span></span>
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor <span class="SAP-icons-V5"></span>
+
+</td>
+<td valign="top">
+
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Monitor* \> *Analyze APIs*
+
+</td>
+<td valign="top">
+
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Monitor* \> *Integrations and APIs*
+
+</td>
+<td valign="top">
+
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Monitor* \> *B2B scenarios*
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Inspect Resource Consumption <span class="SAP-icons-V5"></span> 
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
+
+</td>
+<td valign="top">
+
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> 
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monetize <span class="SAP-icons-V5"></span>
+
+</td>
+<td valign="top">
+
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Monitor* \> *APIs*
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 </tr>
@@ -359,7 +359,7 @@ Settings :gear:
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> 
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> 
 
 *Settings* \> *APIs*
 
@@ -368,7 +368,7 @@ Settings :gear:
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span> 
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> 
 
 *Settings* \> *Integrations*
 
@@ -382,7 +382,7 @@ NA
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons"></span></span>*Settings* \> *MIGs and MAGs*
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span>*Settings* \> *MIGs and MAGs*
 
 </td>
 </tr>
@@ -411,7 +411,7 @@ Description
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> Profile
+<span class="SAP-icons-V5"></span> Profile
 
 </td>
 <td valign="top">
@@ -429,12 +429,12 @@ Your profile. You can:
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> Help
+<span class="SAP-icons-V5"></span> Help
 
 </td>
 <td valign="top">
 
-Contextual help. You can activate contextual help by choosing <span class="SAP-icons"></span> Help.
+Contextual help. You can activate contextual help by choosing <span class="SAP-icons-V5"></span> Help.
 
 > ### Note:  
 > Contextual help is currently available for certain screens only.
@@ -446,7 +446,7 @@ Contextual help. You can activate contextual help by choosing <span class="SAP-i
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> Explore our Ecosystem
+<span class="SAP-icons-V5"></span> Explore our Ecosystem
 
 </td>
 <td valign="top">
@@ -464,7 +464,7 @@ Explore our environment, and navigate to the following portals:
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> News and Announcements
+<span class="SAP-icons-V5"></span> News and Announcements
 
 </td>
 <td valign="top">
@@ -478,7 +478,7 @@ News and Announcement. Lets you know what is new in the Integration Suite.
 **Related Information**  
 
 
-[Subscribing and Configuring Initial Access to Integration Suite](../10-InitialSetup/subscribing-and-configuring-initial-access-to-integration-suite-8a3c8b7.md "Subscribe to the Integration Suite application from the Subscriptions page in the SAP BTP cockpit and assign the Integration_Provisioner role.")
+[Subscribing and Configuring Initial Access to SAP Integration Suite](../10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md "Subscribe to the SAP Integration Suitein SAP BTP cockpit and assign the Integration_Provisioner role to gain access.")
 
 [Configuring User Access](../configuring-user-access-2c6214a.md "Assign the required roles to users for accessing the individual capabilities.")
 

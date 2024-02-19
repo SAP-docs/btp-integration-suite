@@ -16,7 +16,7 @@ You have created an OData API artifact in an integration package. You can use th
 
 1.  If you are creating a new OData APIOData API artifact, proceed to the next step. If you are editing an existing OData API artifact, choose *Edit* on the Service Designer page.
 
-2.  Choose *Import Model Wizard* \(<span class="SAP-icons"></span>\).
+2.  Choose *Import Model Wizard* \(<span class="SAP-icons-V5"></span>\).
 
 3.  In the *Select Data Source Type* page, select *SOAP* as data source type.
 

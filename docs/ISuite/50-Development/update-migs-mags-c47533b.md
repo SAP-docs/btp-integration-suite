@@ -26,7 +26,7 @@ If you chose *Update MIG*,
 1.  Enter a meaningful name in the *Action Name* field.
 
 2.  Provide a description in the *Description* field and choose *Create*.
-3.  In the next step, select the current MIG using the value help <span class="SAP-icons"></span> under the *Current MIG* section.
+3.  In the next step, select the current MIG using the value help <span class="SAP-icons-V5"></span> under the *Current MIG* section.
 4.  The value help allows you to search and filter your MIG based on the name, version and status. After selecting a MIG from the list, choose *Select*.
 5.  Select the version from the drop-down list provided next to the MIG name.
 6.  The *MIG Version* field under the *Target MIG* section gets auto-filled with the MIG name. You need to choose the target MIG version from the drop-down list.
@@ -51,7 +51,7 @@ If you chose *Update MAG*,
 1.  Enter a meaningful name in the *Action Name* field.
 
 2.  Provide a description in the *Description* field and choose *Create*.
-3.  In the next step, select the current MAG using the value help <span class="SAP-icons"></span> under the *Current MAG* section.
+3.  In the next step, select the current MAG using the value help <span class="SAP-icons-V5"></span> under the *Current MAG* section.
 4.  The value help allows you to search and filter your MAG based on the name, version and status. After selecting a MAG from the list, choose *Select*.
 5.  Select the version from the drop-down list provided next to the MAG name.
 6.  The *MAG Version* field under the *Target MAG* section gets auto-filled with the MAG name. You need to choose the target MAG version from the drop-down list.

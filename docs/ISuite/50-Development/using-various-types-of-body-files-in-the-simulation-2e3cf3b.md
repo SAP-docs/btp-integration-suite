@@ -26,7 +26,7 @@ Here's how you can add simulation input while you’re working with integration 
 
 1.  Identify a subset of an integration flow that you would like to simulate.
 
-2.  Choose <span class="SAP-icons"></span> start point of the simulation on identified connection to begin.
+2.  Choose <span class="SAP-icons-V5"></span> start point of the simulation on identified connection to begin.
 
 3.  A dialog opens to add a simulation input. Add the necessary details.
 

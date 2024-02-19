@@ -58,7 +58,7 @@ The messages are persisted along with the Message ID, which you will need in ord
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Persistence\), then *Persist*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Persistence\), then *Persist*.
 
 2.  Place the step in your integration flow model at the location where you want to store the message.
 

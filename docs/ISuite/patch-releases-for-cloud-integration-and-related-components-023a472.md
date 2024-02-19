@@ -16,7 +16,7 @@ The following patch release information covers the most recent changes made to t
 
 ## January 2024
 
-**Software Increment: 2310**
+**Software Increment: 2312**
 
 
 <table>
@@ -40,12 +40,50 @@ Description
 <tr>
 <td valign="top">
 
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.48.22
+
+8.12.2
+
+</td>
+<td valign="top">
+
+The patch addresses performance degradation issues.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.48.20
+
+8.12.1
+
+</td>
+<td valign="top">
+
+There has been an issue with upsert operations when using the JDBC adapter. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Trading Partner Management
 
 </td>
 <td valign="top">
 
-6.48.18
+6.48.19
 
 </td>
 <td valign="top">

@@ -2,7 +2,7 @@
 
 # Create an API Artifact Using URL
 
-Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
+Create an API artifact of the type REST, SOAP, and OData using the HTTP endpoint URL.
 
 
 
@@ -100,7 +100,26 @@ Create an API artifact of the type REST and SOAP using the HTTP endpoint URL.
     </td>
     <td valign="top">
     
-    API Proxies can be exposed as REST and SOAP APIs.
+    API Proxies can be exposed as REST, SOAP, and OData APIs.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    File Name \(Optional\)
+    
+    </td>
+    <td valign="top">
+    
+    This field is only visible when creating an API artifact of type OData.
+
+    > ### Note:  
+    > You can create an OData API artifact by browsing and uploading your .edmx file.
+    > 
+    > If there is an issue while parsing the .edmx file, the OData API artifact will still get created. However, you have the option to add the necessary resources by selecting *Add Resources* in the *Resources* tab. Alternatively, you can choose *Switch to the API Specification* tab and paste a valid .edmx file there.
+
+
     
     </td>
     </tr>

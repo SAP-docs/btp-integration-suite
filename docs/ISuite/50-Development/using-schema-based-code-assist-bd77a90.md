@@ -16,7 +16,7 @@ Follow this procedure to use schema-based code assist in the OData Model Editor.
 
 ## Procedure
 
-1.  Choose *OData Model Editor* \(<span class="SAP-icons"></span>\) on the Service Designer page. The OData Model Editor page opens.
+1.  Choose *OData Model Editor* \(<span class="SAP-icons-V5"></span>\) on the Service Designer page. The OData Model Editor page opens.
 
 2.  Place your cursor in the context where you require assistance, and press [Ctrl\] + [Spacebar\] .
 

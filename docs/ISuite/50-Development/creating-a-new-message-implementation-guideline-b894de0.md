@@ -22,7 +22,7 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
 
 ## Procedure
 
-1.  Choose MIGs <span class="SAP-icons"></span> icon from the left pane.
+1.  Choose MIGs <span class="SAP-icons-V5"></span> icon from the left pane.
 
 2.  Choose *Add* in the resulting screen to create a MIG.
 
@@ -55,9 +55,9 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
 8.  Choose *Create*.
 
     > ### Note:  
-    > You can also create a MIG from the Library of Type Systems. Navigate to the *Type Systems* <span class="SAP-icons"></span> icon from the left pane, choose the type systems based on your requirement and navigate to the *Messages* tab.
+    > You can also create a MIG from the Library of Type Systems. Navigate to the *Type Systems* <span class="SAP-icons-V5"></span> icon from the left pane, choose the type systems based on your requirement and navigate to the *Messages* tab.
     > 
-    > -   Select your message and the respective version and choose <span class="SAP-icons"></span> to create the MIG.
+    > -   Select your message and the respective version and choose <span class="SAP-icons-V5"></span> to create the MIG.
     > 
     > -   Alternately, open the message in the required version. The application provides a *Create MIG* button in the message type page that allows you to directly create a message implementation guideline.
 

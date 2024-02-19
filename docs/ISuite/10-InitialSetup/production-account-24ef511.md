@@ -9,7 +9,7 @@ This account model includes services for you to start working in SAP Integration
 
 [Setting Up Your Account](setting-up-your-account-079c68f.md "Create a subaccount in your assigned global account using the SAP BTP cockpit.")
 
-[Subscribing and Configuring Initial Access to Integration Suite](subscribing-and-configuring-initial-access-to-integration-suite-8a3c8b7.md "Subscribe to the Integration Suite application from the Subscriptions page in the SAP BTP cockpit and assign the Integration_Provisioner role.")
+[Subscribing and Configuring Initial Access to SAP Integration Suite](subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md "Subscribe to the SAP Integration Suitein SAP BTP cockpit and assign the Integration_Provisioner role to gain access.")
 
 [Configuring User Access](../configuring-user-access-2c6214a.md "Assign the required roles to users for accessing the individual capabilities.")
 

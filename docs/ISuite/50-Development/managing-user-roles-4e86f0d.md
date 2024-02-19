@@ -119,7 +119,7 @@ Choose one of the two buttons to perform an action. The available actions are:
 
 To sort and filter the content of the table, choose *Table Settings* \(:gear:\) displayed above the table. On the subsequent screen, you can define how the table entries are to be sorted \(by specifying an attribute and whether the entries are to be sorted for that attribute in ascending or descending order\). You can also filter the table entries for certain attributes.
 
-You also have the option to refresh the table by selecting *Reload content* \(<span class="SAP-icons"></span>\).
+You also have the option to refresh the table by selecting *Reload content* \(<span class="SAP-icons-V5"></span>\).
 
 
 
@@ -148,7 +148,7 @@ The following actions are available:
     > }
     > ```
 
-    Instead of downloading the JSON file, you can also use *Copy selected roles in JSON format to the clipboard* \(<span class="SAP-icons"></span>\) at the beginning of the table. In the next step, you can use the copied format to create, as an example, a new service instance.
+    Instead of downloading the JSON file, you can also use *Copy selected roles in JSON format to the clipboard* \(<span class="SAP-icons-V5"></span>\) at the beginning of the table. In the next step, you can use the copied format to create, as an example, a new service instance.
 
 
 

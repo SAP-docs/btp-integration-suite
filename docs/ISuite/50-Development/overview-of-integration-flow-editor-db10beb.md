@@ -67,7 +67,7 @@ Action
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -84,7 +84,7 @@ Allows you to copy flow steps from your integration flow.
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -108,7 +108,7 @@ Allows you to paste the copied flow steps within and across integration flows. S
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -125,7 +125,7 @@ Specify the end points or sender and receiver participants. For more information
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -142,7 +142,7 @@ Define different processes, which are required to process the message transfer b
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -193,7 +193,7 @@ Delete the selected component or the integration flow step.
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -210,7 +210,7 @@ Define different kinds of mapping, if you want to define an association between 
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -244,7 +244,7 @@ Define various steps that execute a call into a remote \(external\) component or
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -278,7 +278,7 @@ Encrypt, decrypt, sign, and verify messages in the integration flow. For more in
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -295,7 +295,7 @@ Define different steps to access your tenant database. You can share data across
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -329,7 +329,7 @@ Run the simulation once the start and end point have been defined. For more info
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -346,7 +346,7 @@ Remove all the simulation elements such as the start point, end point, and messa
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -403,9 +403,9 @@ All integration flow steps and adapters provide quick action buttons that help y
 
 The editor helps you automatically prettify the flow steps within the Process Pools.
 
-Select an Integration Process pool and choose either <span class="SAP-icons"></span> \(Arrange Horizontally\) or <span class="SAP-icons"></span> \(Arrange Vertically\) to automatically arrange the flow steps inside the process pool.
+Select an Integration Process pool and choose either <span class="SAP-icons-V5"></span> \(Arrange Horizontally\) or <span class="SAP-icons-V5"></span> \(Arrange Vertically\) to automatically arrange the flow steps inside the process pool.
 
-If your choice of adding flow steps within an Integration Process pool is from left to right, then you can use <span class="SAP-icons"></span> \(Arrange Horizontally\). If your choice of adding flow steps within an Integration Process pool is from top to bottom, then you can use <span class="SAP-icons"></span> \(Arrange Vertically\).
+If your choice of adding flow steps within an Integration Process pool is from left to right, then you can use <span class="SAP-icons-V5"></span> \(Arrange Horizontally\). If your choice of adding flow steps within an Integration Process pool is from top to bottom, then you can use <span class="SAP-icons-V5"></span> \(Arrange Vertically\).
 
 As a best practice, we recommend to save your design changes and configurations first and then use the auto layout feature. Such a practice would help you avoid losing your recent changes.
 
@@ -437,7 +437,7 @@ You use double click to open the properties view of a step and integration flow.
 
 -   Use splitter icon located at the bottom of the screen to move properties view up and down.
 
--   Use <span class="SAP-icons"></span> *Restore* button to open properties view.
+-   Use <span class="SAP-icons-V5"></span> *Restore* button to open properties view.
 
 
 
@@ -462,7 +462,7 @@ You can copy and paste adapter configurations within an integration flow.
 Copy and paste only works between 2 sender adapters and 2 receiver adapters. Copy of a sender adapter details to a receiver adapter \(or vice versa\) isn’t supported.
 
 > ### Example:  
-> To copy and paste the configuration between 2 receiver adapters, navigate to the *Design* mode. Select one of the receiver adapters and choose the tab, and under your integration package, open an artifact in *Edit***Copy** <span class="SAP-icons"></span> mode. Select one of the receiver adapters and choose the button to copy its configuration details. Choose another receiver adapter and select the **Paste** <span class="SAP-icons"></span>button. The configuration details are copied into this receiver adapter.
+> To copy and paste the configuration between 2 receiver adapters, navigate to the *Design* mode. Select one of the receiver adapters and choose the tab, and under your integration package, open an artifact in *Edit***Copy** <span class="SAP-icons-V5"></span> mode. Select one of the receiver adapters and choose the button to copy its configuration details. Choose another receiver adapter and select the **Paste** <span class="SAP-icons-V5"></span>button. The configuration details are copied into this receiver adapter.
 
 > ### Note:  
 > -   The paste function overwrites any existing configuration on the adapter including its type.
@@ -597,7 +597,7 @@ No
 
 Context-sensitive help paves a way for accessing the help information of a particular adapter or flow step, hence reducing the time spent in searching for the information.
 
-Consider a scenario where you need to know more about how to define a script for message processing. Select the *Script* shape in the editor and choose the *Help* <span class="SAP-icons"></span> icon in the property sheet. Context-specific information in a new window or tab.
+Consider a scenario where you need to know more about how to define a script for message processing. Select the *Script* shape in the editor and choose the *Help* <span class="SAP-icons-V5"></span> icon in the property sheet. Context-specific information in a new window or tab.
 
 > ### Note:  
 > -   The context-sensitive help can be accessed in both read-only and editable mode of an integration flow. This feature is available only for integration flow artifacts and not for OData artifacts.
@@ -628,7 +628,7 @@ You can execute a search by:
 -   ID of the flow step
 
 
-As soon as you execute a search, matching flow steps are shown below the search field. If there is an <span class="SAP-icons"></span> icon against a flow step, it means that the flow step is used in the integration flow. Choose the icon to identify where the flow steps are used.
+As soon as you execute a search, matching flow steps are shown below the search field. If there is an <span class="SAP-icons-V5"></span> icon against a flow step, it means that the flow step is used in the integration flow. Choose the icon to identify where the flow steps are used.
 
 You see the search results at the bottom of the editor. If one or more flow steps are available, you can move across the flow steps using the arrows in the search results.
 

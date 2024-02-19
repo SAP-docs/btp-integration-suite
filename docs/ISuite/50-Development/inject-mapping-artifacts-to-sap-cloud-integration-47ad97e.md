@@ -147,7 +147,7 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
 
 2.  Select the MAG from which you want to inject the mapping artifacts.
 
-3.  Choose <span class="SAP-icons"></span> and then choose *Inject* \> *SAP Cloud Integration Flow Resources*.
+3.  Choose <span class="SAP-icons-V5"></span> and then choose *Inject* \> *SAP Cloud Integration Flow Resources*.
 
 4.  Choose an SAP Cloud Integration tenant from the *Destinations* list.
 

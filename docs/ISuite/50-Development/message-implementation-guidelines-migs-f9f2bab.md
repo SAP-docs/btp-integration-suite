@@ -16,9 +16,9 @@ The MIG contains all the information for implementing a customized message inter
 
 ## Filtering MIGs
 
-The *Message Implementation Guidelines* screen displays an overview of all the MIGs that you've created. Filters are used to search and display MIGs based on various criteria. You can use the *Free text filter* search or the <span class="SAP-icons"></span> \(Extended filter\)at the top of the screen to specify your search criteria. The *Free text filter* search allows you to filter and display MIGs that match your search text. It can be used as a quick filter to match your search text against multiple attributes of your MIGs.
+The *Message Implementation Guidelines* screen displays an overview of all the MIGs that you've created. Filters are used to search and display MIGs based on various criteria. You can use the *Free text filter* search or the <span class="SAP-icons-V5"></span> \(Extended filter\)at the top of the screen to specify your search criteria. The *Free text filter* search allows you to filter and display MIGs that match your search text. It can be used as a quick filter to match your search text against multiple attributes of your MIGs.
 
-You can also choose <span class="SAP-icons"></span> \(Extended filter\)to filter MIGs based on specific criteria. You can use the required filter fields to list MIGs that match your query. You can also customize the filter bar by choosing *Filters*. You can expand or collapse the filter area using *Show Filter Bar* or *Hide Filter Bar*.
+You can also choose <span class="SAP-icons-V5"></span> \(Extended filter\)to filter MIGs based on specific criteria. You can use the required filter fields to list MIGs that match your query. You can also customize the filter bar by choosing *Filters*. You can expand or collapse the filter area using *Show Filter Bar* or *Hide Filter Bar*.
 
 **Filter Criteria**
 
@@ -210,7 +210,7 @@ You can also view the version history of a specific message implementation guide
 
 -   *Last Imported By*: Displays the unique identifier of the user who imported the MIG.
 -   *Imported*: This column lets you know if the MIG is imported or not.
--   The action <span class="SAP-icons"></span> button allows you to copy, migrate or compare your MIG.
+-   The action <span class="SAP-icons-V5"></span> button allows you to copy, migrate or compare your MIG.
 
 
 

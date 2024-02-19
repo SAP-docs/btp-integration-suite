@@ -186,7 +186,7 @@ More information: [Keystore](../40-RemoteSystems/keystore-b163513.md)
     </td>
     <td valign="top">
     
-    Choose the <span class="SAP-icons"></span> \(Actions\) button for a key pair or certificate to perform an action. The available actions depend on the type of the keystore entry and whether it is owned by SAP.
+    Choose the <span class="SAP-icons-V5"></span> \(Actions\) button for a key pair or certificate to perform an action. The available actions depend on the type of the keystore entry and whether it is owned by SAP.
 
     -   *Rename*
 

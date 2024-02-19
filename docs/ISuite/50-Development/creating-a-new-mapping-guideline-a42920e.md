@@ -36,7 +36,7 @@ A mapping guideline can be used as a source, reference, or guidance, for impleme
 
     You can also create a MAG by copying an existing MAG.
 
-    Choose the action <span class="SAP-icons"></span> button from the overview page and select *Copy*. The copy functionality has two options:
+    Choose the action <span class="SAP-icons-V5"></span> button from the overview page and select *Copy*. The copy functionality has two options:
 
     -   *Copy MAG Only*: This option creates only a copy of the MAG.
 

@@ -37,7 +37,7 @@ If the Edge Integration Cell solution deployment finished successfully, but the 
 
     In addition, verify the existence of the Ingress Gateway , using the following command : `kubectl get gateway -n edge-icell -o yaml`. The response is `default-gateway`, <default virtual host\> listed under hosts, and port 443.
 
-    -   If the `default-gateway` doesn't exist, enter the command `kubectl rollout restart deployment edc -n edge-icell`, to restart the Edge Deploy Controller.
+    -   Next, enter the command `kubectl rollout restart deployment edc -n edge-icell`, to restart Policy Engine.
 
     -   Then recheck the existence of the gateway as described in step 3.
     -   If the gateway `default-gateway` still doesn't exist, open a ticket on component BC-CP-IS-EDG-DPL, and attach the diagnostics file or the Edge Deploy Controller log. You can create the diagnostics file via Edge LM UI.

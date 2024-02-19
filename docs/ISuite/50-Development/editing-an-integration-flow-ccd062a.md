@@ -21,7 +21,7 @@ You can use this procedure to update the predefined integration flow to suit you
 
 ## Procedure
 
-1.  Choose *Navigate to Integration Flow Editor* \(<span class="SAP-icons"></span>\) for an operation or function import that is bound to a data source. The associated integration flow opens in the Integration Flow Editor.
+1.  Choose *Navigate to Integration Flow Editor* \(<span class="SAP-icons-V5"></span>\) for an operation or function import that is bound to a data source. The associated integration flow opens in the Integration Flow Editor.
 
 2.  Edit the integration flow according to your requirements.
 
@@ -53,7 +53,7 @@ You can use this procedure to update the predefined integration flow to suit you
 
 3.  Once you have finished editing the integration flow, choose *OK*.
 
-4.  Choose *Back* \(<span class="SAP-icons"></span>\) to get back to the Service Designer page.
+4.  Choose *Back* \(<span class="SAP-icons-V5"></span>\) to get back to the Service Designer page.
 
 5.  Choose *Save* to save your changes to the OData service artifact.
 

@@ -8,7 +8,7 @@
 
 ## Prerequisites
 
--   You have created a Service Key by creating a service instance using the on-premise connectivity plan. For more details, see [On-Premise Connectivity Plan](APIM-Initial-Setup/on-premise-connectivity-plan-2fc7a5b.md).
+-   You have created a Service Key by creating a service instance using the on-premise connectivity plan. For more details, see [Accessing On-Premise Systems through API Management](APIM-Initial-Setup/accessing-on-premise-systems-through-api-management-2fc7a5b.md).
 
 
 
@@ -178,7 +178,7 @@ Enable an application in your subaccount in the Neo environment to access an API
     <tr>
     <td valign="top" colspan="2">
     
-    If you have not generated the client credentials \(clientId, ClientSecret, tokenUrl and application url\) yet, see [On-Premise Connectivity Plan](APIM-Initial-Setup/on-premise-connectivity-plan-2fc7a5b.md)
+    If you have not generated the client credentials \(clientId, ClientSecret, tokenUrl and application url\) yet, see [Accessing On-Premise Systems through API Management](APIM-Initial-Setup/accessing-on-premise-systems-through-api-management-2fc7a5b.md)
     
     </td>
     </tr>

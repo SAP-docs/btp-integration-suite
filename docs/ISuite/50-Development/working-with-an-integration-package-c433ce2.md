@@ -16,17 +16,17 @@ Perform various tasks with the artifacts and the integration package.
 
 3.  Navigate to the *Artifacts* tab, to work with the available artifacts in the package.
 
-    1.  Choose <span class="SAP-icons"></span>** \> *View metadata* to view the metadata of the artifact.
+    1.  Choose <span class="SAP-icons-V5"></span>** \> *View metadata* to view the metadata of the artifact.
 
-    2.  Choose <span class="SAP-icons"></span>** \> *Deploy* to deploy the artifact.
+    2.  Choose <span class="SAP-icons-V5"></span>** \> *Deploy* to deploy the artifact.
 
         You can only deploy data flows, integration flows, and value mappings. You can deploy multiple value mappings at a time.
 
-    3.  Choose <span class="SAP-icons"></span>** \> *Configure* to configure the artifact.
+    3.  Choose <span class="SAP-icons-V5"></span>** \> *Configure* to configure the artifact.
 
         You can configure only integration flows. For more information, see [Configure Externalized Parameters of an Integration Flow](configure-externalized-parameters-of-an-integration-flow-462a478.md).
 
-    4.  Choose <span class="SAP-icons"></span>** \> *Download* to download an artifact. The download feature allows users to download the integration flow artifact with two options:
+    4.  Choose <span class="SAP-icons-V5"></span>** \> *Download* to download an artifact. The download feature allows users to download the integration flow artifact with two options:
 
         -   **Default Values Only:** Downloads the integration flow with default values only.
 

@@ -16,9 +16,6 @@ The IDoc sender adapter enables SAP Integration Suite to receive Intermediate Do
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
-> ### Note:  
-> The IDoc sender adapter cannot process composite IDoc messages \(bulk messages\).
-
 
 
 <a name="loiobf769d68d95b458d87290dd2d37024b3__section_ef4_zd1_sgb"/>

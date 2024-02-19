@@ -42,7 +42,7 @@ This step selects messages from the data store and provides as output a bulk mes
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Persistence\), then *Data Store Operations* \> *Select*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Persistence\), then *Data Store Operations* \> *Select*.
 
 2.  Place the *Select* element in the integration process and define the message path.
 

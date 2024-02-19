@@ -23,7 +23,7 @@ The Keystore Monitor allows a tenant administrator to manage the tenant keystore
 > ### Caution:  
 > To change the existing assignment of a keystore to a specific runtime, can cause message processing failures.
 
-For Edge Integration Cell, you have the option *Copy to Keystore* that allows you to copy a selected artifact into another keystore. Go to the artifact, in the *Actions* section, select the more icon \(<span class="SAP-icons"></span>\) and click on *Copy to Keystore*.
+For Edge Integration Cell, you have the option *Copy to Keystore* that allows you to copy a selected artifact into another keystore. Go to the artifact, in the *Actions* section, select the more icon \(<span class="SAP-icons-V5"></span>\) and click on *Copy to Keystore*.
 
 Fill in the following information:
 

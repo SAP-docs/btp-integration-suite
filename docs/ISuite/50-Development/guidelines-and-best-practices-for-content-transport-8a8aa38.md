@@ -18,6 +18,8 @@ The mentioned options allow you to transport always complete integration package
 
 -   SOAP APIs
 
+-   API
+
 
 > ### Note:  
 > However, additional artifacts are required to use integration content on a tenant that cannot be transported along with integration content.

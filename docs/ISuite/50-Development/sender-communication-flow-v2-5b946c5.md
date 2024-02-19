@@ -38,7 +38,7 @@ Follow the procedure below to configure these integration flows.
 
 ## Sender AS2 Communication Flow V2
 
-1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons"></span> button of the integration flow *Step 1 - Sender AS2 Communication Flow V2* and select *Configure*.
+1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 1 - Sender AS2 Communication Flow V2* and select *Configure*.
 
 2.  Under the *Sender* tab, maintain the following parameters.
 
@@ -244,7 +244,7 @@ Follow the procedure below to configure these integration flows.
 
 This integration flow is used to capture the Technical Acknowledgement through the AS2 adapter. You can also view the Technical Acknowledgement in the *B2B Monitoring* tab.
 
-1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons"></span> button of the integration flow *Step 1 - Sender AS2 MDN Flow V2* and select *Deploy*.
+1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 1 - Sender AS2 MDN Flow V2* and select *Deploy*.
 
 
 
@@ -253,7 +253,7 @@ This integration flow is used to capture the Technical Acknowledgement through t
 
 ## Sender IDOC Communication Flow V2
 
-1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons"></span> button of the integration flow *Step 1 - Sender IDOC Communication Flow V2* and select *Configure*
+1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 1 - Sender IDOC Communication Flow V2* and select *Configure*
 
 2.  Under the *Sender* tab, maintain the following parameters
 
@@ -435,7 +435,7 @@ This integration flow is used to capture the Technical Acknowledgement through t
 
 ## Sender SOAP Communication Flow V2
 
-1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons"></span> button of the integration flow *Step 1 - Sender IDOC Communication Flow V2* and select *Configure*
+1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 1 - Sender IDOC Communication Flow V2* and select *Configure*
 
 2.  Under the *Sender* tab, maintain the following parameters
 
@@ -617,7 +617,7 @@ This integration flow is used to capture the Technical Acknowledgement through t
 
 ## Sender Process Direct Communication Flow V2
 
-1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons"></span> button of the integration flow *Step 1 - Sender Process Direct Communication Flow V2* and select *Deploy*.
+1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 1 - Sender Process Direct Communication Flow V2* and select *Deploy*.
 
 
 
@@ -628,7 +628,7 @@ This integration flow is used to capture the Technical Acknowledgement through t
 
 This integration flow writes the incoming message into the message queue.
 
-1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons"></span> button of the integration flow *Step 1b - Write Message to Message queue* and select *Configure*.
+1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 1b - Write Message to Message queue* and select *Configure*.
 
 2.  Select the *Receiver* tab and maintain the following parameter
 

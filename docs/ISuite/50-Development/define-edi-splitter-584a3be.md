@@ -24,7 +24,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span>, and then *Splitter* \> *EDI Splitter*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span>, and then *Splitter* \> *EDI Splitter*.
 
 2.  Choose *EDI Splitter* and provide values in property sheet based on the descriptions in the table.
 

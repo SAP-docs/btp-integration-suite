@@ -27,7 +27,7 @@ When a certificate is originally created, it is self-signed. It has to be signed
 
 3.  On the *Current* tab, select a key pair.
 
-4.  Choose the <span class="SAP-icons"></span> \(Actions\)icon, then select *Download Signing Request*. Alternatively, you can click the key pair alias to open the key pair details, and then choose *Download* \> *Signing Request*.
+4.  Choose the <span class="SAP-icons-V5"></span> \(Actions\)icon, then select *Download Signing Request*. Alternatively, you can click the key pair alias to open the key pair details, and then choose *Download* \> *Signing Request*.
 
 5.  A file with the name `<alias>.csr` is downloaded.
 
@@ -49,7 +49,7 @@ You send the CSR to a certification authority, who will provide a signing respon
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="5490ca7917b64ef3803d9f34c542db70.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/fov1701176325794/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/b199dbe8c59e49ac933f29337c853d6e.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+ <?sap-ot O2O class="- topic/link " href="5490ca7917b64ef3803d9f34c542db70.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/esb1704779833497/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/b199dbe8c59e49ac933f29337c853d6e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Updating a Key Pair with a Signing Response](../50-Development/updating-a-key-pair-with-a-signing-response-4242f01.md "Upload a signing response from a certification authority and use it to update the key pair in your keystore, keeping the alias of the keystore entry unchanged.")
 

@@ -6,7 +6,7 @@
 
 This artifact contains the collection of groovy scripts that are used in the integration flows of the package.
 
-The script collection consists of scripts such as event logs, partner directory lookups, number ranges etc that are needed for the integration flows. You can select the Action <span class="SAP-icons"></span> button and select *Download* to download the script files.
+The script collection consists of scripts such as event logs, partner directory lookups, number ranges etc that are needed for the integration flows. You can select the Action <span class="SAP-icons-V5"></span> button and select *Download* to download the script files.
 
 1.  Open the artifact if you want to view the script details.
 

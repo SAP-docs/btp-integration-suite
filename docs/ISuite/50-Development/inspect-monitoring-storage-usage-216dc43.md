@@ -22,7 +22,7 @@ The bar height shows the data volume \(in MB\) used by monitoring data for a giv
 
 A green bullet represents the total count of message processing logs.
 
-The level of usage is indicated by the bar height and color \(from green for low usage, up to red for critical usage\). The thresholds are based on the entitlement for monitoring storage consumption in the monitoring database.
+The level of usage is indicated by the bar height and color \(from green for low usage, up to red for critical usage\). The thresholds are based on the assigned database capacity for monitoring storage consumption in the monitoring database.
 
 
 <table>
@@ -96,9 +96,9 @@ Less than 70%
 </tr>
 </table>
 
-The default value of the entitlement is 35 GB, as documented at [What Is SAP Cloud Integration?](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/what-is-sap-cloud-integration).
+The default value of the assigned database capacity is 35 GB, as documented at [What Is SAP Cloud Integration?](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/what-is-sap-cloud-integration).
 
-If the entitlement is exceeded there is a risk of overloading the database storage, which might eventually cause problems in the database management system.
+When the assigned database capacity for monitoring storage is exceeded, you are advised to use the *Inspect* feature to examine and minimize storage usage. Exceeding the assigned database limit for monitoring storage does not imply that message processing logs can't be persisted anymore. However, in this case SAP can't ensure optimal performance for message monitoring.
 
 The duration covered by a bar represents the average usage during:
 
@@ -143,7 +143,7 @@ See: [Inspect Top Integration Flows by Message Processing Log Count](inspect-top
 
 ## What to Do in Critical Situations
 
-If the entitlement for the monitoring database volume is approached or even exceeded, you can inspect which integration flows are the top contributors \(see [Inspect Top Integration Flows by Message Processing Log Count](inspect-top-integration-flows-by-message-processing-log-count-696b65e.md)\). For the top consuming integration flows you can ensure that the message processing *Log Level* parameter is set to *Info* 
+If the assigned capacity for the monitoring database volume is approached or even exceeded, you can inspect which integration flows are the top contributors \(see [Inspect Top Integration Flows by Message Processing Log Count](inspect-top-integration-flows-by-message-processing-log-count-696b65e.md)\). For the top consuming integration flows you can ensure that the message processing *Log Level* parameter is set to *Info* 
 
 To do that, in the *Monitor* \> *Integrations* section, click a tile in the *Manage Integration Content* section select the integration flow, and configure the *Log Configuration* parameter accordingly.
 

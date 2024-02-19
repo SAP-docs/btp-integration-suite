@@ -6,7 +6,7 @@ Transfer the principal \(user details\) within the same Cloud Foundry subaccount
 
 **Prerequisites**
 
--   You have created a *Service Key* by creating a service instance using the on-premise connectivity plan. For more details, see [On-Premise Connectivity Plan](../on-premise-connectivity-plan-2fc7a5b.md).
+-   You have created a *Service Key* by creating a service instance using the on-premise connectivity plan. For more details, see [Accessing On-Premise Systems through API Management](../accessing-on-premise-systems-through-api-management-2fc7a5b.md).
 
 **Context**
 
@@ -14,7 +14,7 @@ When an application has to communicate with another application in the same suba
 
 **Procedure**
 
-1.  Create a Destination to the API Proxy that you want to call using principal propagation. Enter the following details while configuring a destination of type OAuth2UserTokenExchange. Also, if you have not generated the client credentials \(clientId, ClientSecret, tokenUrl and application url\) yet, see [On-Premise Connectivity Plan](../on-premise-connectivity-plan-2fc7a5b.md).
+1.  Create a Destination to the API Proxy that you want to call using principal propagation. Enter the following details while configuring a destination of type OAuth2UserTokenExchange. Also, if you have not generated the client credentials \(clientId, ClientSecret, tokenUrl and application url\) yet, see [Accessing On-Premise Systems through API Management](../accessing-on-premise-systems-through-api-management-2fc7a5b.md).
 
     > ### Sample Code:  
     > ```

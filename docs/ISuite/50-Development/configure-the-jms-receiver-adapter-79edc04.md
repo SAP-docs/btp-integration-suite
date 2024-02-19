@@ -31,6 +31,8 @@ Certain constraints apply with regard to the number and capacity of involved que
 > 
 > See: SAP note [3356078](https://me.sap.com/notes/3356078)
 
+The adapter stores the ID of the integration flow in property `SAP_IntegrationFlowID`. This property is made available to the connected JMS consumer. More precisely, the property is available during the processing of that integration flow that reads the JMS message from the JMS queue through a JMS sender adapter \(see [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md)\).
+
 Once you've created a receiver channel and selected the JMS receiver adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 Select the *General* tab and provide values in the fields as follows.

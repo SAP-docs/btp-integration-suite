@@ -39,5 +39,5 @@ In API Management the Principal Propagation supports two flows namely:
 **Related Information**  
 
 
-[On-Premise Connectivity Plan](../on-premise-connectivity-plan-2fc7a5b.md "The On-premise connectivity plan helps in achieving principal propagation while connecting to an on-premise backend system.")
+[Accessing On-Premise Systems through API Management](../accessing-on-premise-systems-through-api-management-2fc7a5b.md "The on-premise-connectivity plan helps in achieving principal propagation while connecting to an on-premise backend system.")
 

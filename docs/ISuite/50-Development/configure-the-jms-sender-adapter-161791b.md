@@ -34,14 +34,7 @@ Assuming that you have designed an integration flow with a JMS sender adapter. O
 > 
 > The JMS adapter does not serialize messages. This means that there is no guarantee of the order in which the messages are consumed by SAP Cloud Integration. When the integration flow \(with the JMS sender adapter\) is deployed on multiple worker nodes, the messages are processed in parallel. For additional information, also check out the description of parameter *Number of Concurrent Processes*.
 
-> ### Note:  
-> In the following cases certain features might not be available for your current integration flow:
-> 
-> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
-> 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
-> 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+Property `SAP_IntegrationFlowID` contains the ID of the integration flow that sent the message to the JMS queue \(see [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md)\).
 
 Once you've created a sender channel and selected the JMS sender adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 

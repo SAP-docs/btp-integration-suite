@@ -27,7 +27,7 @@ If you use a Splitter step in a local integration process, the following limitat
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Message Routing\), then *Splitter* \> *Iterating Splitter*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Routing\), then *Splitter* \> *Iterating Splitter*.
 
 2.  Place the *Iterating Splitter* element in the integration process and define the message path.
 

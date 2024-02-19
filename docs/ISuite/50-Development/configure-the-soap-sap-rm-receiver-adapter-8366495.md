@@ -346,7 +346,7 @@ Note that source-to-target message ID mapping entries are deleted after 90 days.
 > ### Tip:  
 > As example, let’s assume that you’ve chosen option *Map* for parameter *SAP RM Message ID Determination*, and in field *Source for SAP RM Message ID* you entered `${property.orderNo}`.
 > 
-> Furthermore, let’s assume that at runtime the property `orderNo` has the value `00001`. The SOAP SAP RM receiver adapter generates a unique identifier \(GUID\) for the target message ID, for example, `ABCD1234XYZ`. In the scenario, the receiver system can then associate the target message ID `ABCD1234XYZ` with the source message ID `00001`.
+> Furthermore, let’s assume that at runtime the property `orderNo` has the value `00001`. The SOAP SAP RM receiver adapter generates a unique identifier \(GUID\) for the target message ID, for example, `12a900b1-08ab-4812-x3ff-4y375b25z290`. In the scenario, the receiver system can then associate the target message ID `12a900b1-08ab-4812-x3ff-4y375b25z290` with the source message ID `00001`.
 > 
 > 
 > <table>
@@ -365,16 +365,16 @@ Note that source-to-target message ID mapping entries are deleted after 90 days.
 > <tr>
 > <td valign="top">
 > 
-> Property name: orderNo
+> Property name: `orderNo`
 > 
-> Property value: 00001
+> Property value: `00001`
 > 
 > </td>
 > <td valign="top">
 > 
-> Header name: SapMessageIdEx
+> Header name: `SapMessageIdEx`
 > 
-> Header value: ABCD1234XYZ
+> Header value: `12a900b1-08ab-4812-x3ff-4y375b25z290`
 > 
 > </td>
 > </tr>

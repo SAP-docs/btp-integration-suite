@@ -37,7 +37,7 @@ A data store operations step has to be triggered explicitly, for example, by a T
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Persistence\), then *Data Store Operations* \> *Delete*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Persistence\), then *Data Store Operations* \> *Delete*.
 
 2.  Place the *Delete* element in the integration process and define the message path.
 

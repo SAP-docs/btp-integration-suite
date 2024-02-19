@@ -14,9 +14,11 @@ To create APIs, build API proxies as a service provider, or use APIs and other c
 
 The following role collections must be assigned to you:
 
+-   The API Management capability must be enabled in Integration Suite. For more information, see [Enable API Management Capability](../enable-api-management-capability-f6eb433.md).
+
 -   To access the *Settings* page, the *APIManagement.Selfservice.Administrator* role collection must be assigned to you
 
--   You need the following role collections to establish and test the connection betweenAPI business hub enterprise and Integration Suite API Management tenant.
+-   You need the following role collections to establish and test the connection between API business hub enterprise and Integration Suite API Management tenant.
 
     -   APIPortal.Administrator
 
@@ -93,5 +95,5 @@ To publish the Integration Suite API portal content on the **API business hub en
 > If you want to connect Integration Suite to a centralized API business hub enterprise, you must create a connection request. For more information, see [Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](create-a-connection-request-for-the-centralized-api-business-hub-enterprise-classic-desig-02f7877.md) or [Create a Connection Request for the Centralized API business hub enterprise \[New Design\]](create-a-connection-request-for-the-centralized-api-business-hub-enterprise-new-design-c7bda8c.md).
 
 > ### Note:  
-> You can navigate to the **API business hub enterprise** by choosing the <span class="SAP-icons"></span> Explore our Ecosystem icon on the header bar.
+> You can navigate to the **API business hub enterprise** by choosing the <span class="SAP-icons-V5"></span> Explore our Ecosystem icon on the header bar.
 

@@ -6,6 +6,76 @@ This topic provides information on patch releases for API Management that are pr
 
 
 
+<a name="loio6ddd927cbeaa42e384dc903e6002e269__section_dgt_12r_g1c"/>
+
+## February 2024
+
+**Software Increment: 2312**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.164
+
+</td>
+<td valign="top">
+
+The metering data for NEO metering is not being reflected in the Cloud Reporting Tool.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.164.2
+
+</td>
+<td valign="top">
+
+The following issues have been identified:
+
+-   When the logo is removed in the API business hub enterprise, the page reloads and redirects to the old user interface if the new user interface is not set as the default.
+
+-   The use of the xsuaa mtls connection for autoscaler metrics publishing was found to be incompatible with the latest library version.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio6ddd927cbeaa42e384dc903e6002e269__section_u3g_xqj_hrb"/>
 
 ## January 2024

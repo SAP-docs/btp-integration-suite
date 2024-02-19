@@ -67,7 +67,7 @@ Perform the step-by-step instructions to set up the API portal application. Howe
     3.  In the resulting dialog box, select the *APIManagement.Selfservice.Administrator* role and choose *Assign Role Collection*.
 
 
-6.  Navigate back to the *Instances and Subscriptions* page, choose *API Management, API portal*, select <span class="SAP-icons"></span> Actions and choose *Go To Application*.
+6.  Navigate back to the *Instances and Subscriptions* page, choose *API Management, API portal*, select <span class="SAP-icons-V5"></span> Actions and choose *Go To Application*.
 
     You’re navigated to the *API Portal*.
 
@@ -121,9 +121,9 @@ Once API Business Hub Enterprise is set up, navigate to :gear: and choose *Conne
 **Related Information**  
 
 
-[Enabling API Management Capability from Integration Suite](enabling-api-management-capability-from-integration-suite-f6eb433.md "You can provision the API Management capability from the Integration Suite launchpad.")
+[Enable API Management Capability](enable-api-management-capability-f6eb433.md "You can provision the API Management capability from the Integration Suite launchpad.")
 
-[User Roles in API Management](user-roles-in-api-management-911ca5a.md "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.")
+[Assign User Roles in API Management](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:
 
 [Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "You can deactivate your API Management capability from Integration Suite to disable your account from the API Management service.")
 

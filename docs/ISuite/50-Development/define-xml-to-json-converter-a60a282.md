@@ -14,11 +14,11 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
 
 -   You are familiar with the conversion rules for XML to JSON conversion.
 
-    For more information see  <?sap-ot O2O class="- topic/xref " href="778aed733e3140cea0435f4615d53812.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/fov1701176325794/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    For more information see  <?sap-ot O2O class="- topic/xref " href="778aed733e3140cea0435f4615d53812.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/esb1704779833497/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 -   You are familiar with the limitations for XML to JSON conversion.
 
-    For more information see  <?sap-ot O2O class="- topic/xref " href="a5b4641c393f406bb544987497c90a72.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/fov1701176325794/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    For more information see  <?sap-ot O2O class="- topic/xref " href="a5b4641c393f406bb544987497c90a72.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/esb1704779833497/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 -   You are familiar with streaming for XML to JSON conversion.
 
@@ -31,7 +31,7 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span>*Transformation* \> *Converter* \> *XML to JSON Converter*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span>*Transformation* \> *Converter* \> *XML to JSON Converter*.
 
 2.  Insert the converter at the desired position in your integration process.
 

@@ -16,7 +16,7 @@ When you have applied the Zip Splitter on a file archive, SAP Cloud Integration 
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Message Routing\), then *Splitter* \> *Zip Splitter*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Routing\), then *Splitter* \> *Zip Splitter*.
 
 2.  Place the *Zip Splitter* element in the integration process and define the message path.
 

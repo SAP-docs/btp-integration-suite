@@ -378,11 +378,11 @@ You can access contextual help for the following screens:
 
 A guided tour is available for the home page. Take this tour to explore the various aspects of the home page.
 
-To activate this help, choose <span class="SAP-icons"></span> from the top tool bar. You will see green <span style="color:#007833;"><span class="SAP-icons"></span></span> icons on the screen. Choose these icons to know about the UI element associated with them.
+To activate this help, choose <span class="SAP-icons-V5"></span> from the top tool bar. You will see green <span style="color:#007833;"><span class="SAP-icons-V5"></span></span> icons on the screen. Choose these icons to know about the UI element associated with them.
 
 To activate the guided tour, from the contextual help panel, choose *Guided Tours* \> *Take A Tour of the Home Screen*. Follow the instructions to take the tour.
 
-You can close the help by again choosing <span class="SAP-icons"></span> .
+You can close the help by again choosing <span class="SAP-icons-V5"></span> .
 
 </td>
 <td valign="top">
@@ -455,7 +455,7 @@ You can access contextual help for the following screens:
 -   *Design* \> *MAGs*
 -   *Settings* \> *MIGs and MAGs*
 
-To activate this help, choose <span class="SAP-icons"></span> from the top tool bar. You will see green <span style="color:#007833;"><span class="SAP-icons"></span></span> icons on the screen. Choose these icons to know about the UI element associated with them. You can close the help by again choosing <span class="SAP-icons"></span> .
+To activate this help, choose <span class="SAP-icons-V5"></span> from the top tool bar. You will see green <span style="color:#007833;"><span class="SAP-icons-V5"></span></span> icons on the screen. Choose these icons to know about the UI element associated with them. You can close the help by again choosing <span class="SAP-icons-V5"></span> .
 
 </td>
 <td valign="top">

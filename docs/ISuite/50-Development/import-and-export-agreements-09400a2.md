@@ -70,7 +70,7 @@ If you chose *Export Agreement*,
 
 8.  The next step allows you to review your choices and the agreement list. Choose *Finish* to execute the export.
 9.  Under the *Action Logs* table, you can see the progress of your export. Choose and open your action log to view the export in detail.
-10. The <span class="SAP-icons"></span> icon next to your action log contains the following options :
+10. The <span class="SAP-icons-V5"></span> icon next to your action log contains the following options :
     -   *Edit*: This option allows you to edit the *Name* and *Description* of the action.
 
     -   *Resubmit*: This option will create a new task with the same set of selections.

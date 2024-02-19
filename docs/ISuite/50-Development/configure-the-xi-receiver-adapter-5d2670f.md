@@ -58,6 +58,9 @@ Consider the following when using the XI adapter.
 > 
 > For the payload, the name `MainDocument` is used in the XI message.
 
+> ### Note:  
+> This adapter doesn't support composite messages \(bulk messages\).
+
 When you have created a receiver channel \(with XI adapter selected\), you can configure the following attributes.
 
 Select the *General* tab and provide values in the field as follows.

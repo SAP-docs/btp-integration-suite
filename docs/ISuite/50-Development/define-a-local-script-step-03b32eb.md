@@ -75,7 +75,7 @@ Cloud Integration provides a Java API to support this use case.
 
 2.  If you want to add a Script step to the integration flow, perform the following substeps:
 
-    1.  In the palette, choose <span class="SAP-icons"></span> \(Message Transformers\)and then choose <span class="SAP-icons"></span> \(Script\).
+    1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Transformers\)and then choose <span class="SAP-icons-V5"></span> \(Script\).
 
     2.  Choose *Groovy Script* or *JavaScript*.
 

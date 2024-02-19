@@ -143,7 +143,7 @@ To create a new revision, execute the following steps:
 
     Choose *Save* after making all the changes.
 
-8.  You can also choose to deploy this draft by selecting the <span class="SAP-icons"></span> icon and choosing the *Deploy* option from the list.
+8.  You can also choose to deploy this draft by selecting the <span class="SAP-icons-V5"></span> icon and choosing the *Deploy* option from the list.
 
 9.  If you want to convert this draft into a revision, select the draft, and choose *Save as Revision* from the inline action.
 

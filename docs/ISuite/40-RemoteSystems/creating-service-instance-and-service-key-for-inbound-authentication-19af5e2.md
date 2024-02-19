@@ -271,7 +271,7 @@ With this step, you create a service key for the instance.
 
 2.  Select the service instance.
 
-3.  Under <span class="SAP-icons"></span> Actions, choose *Create Service Key*.
+3.  Under <span class="SAP-icons-V5"></span> Actions, choose *Create Service Key*.
 
 4.  Enter a name for the service key under *Service Key Name*. You can use up to 32 characters.
 
@@ -605,7 +605,7 @@ You can update an existing service instance. To do that, perform the following s
 
 2.  Select the service instance.
 
-3.  Under <span class="SAP-icons"></span> Actions, choose *Update*.
+3.  Under <span class="SAP-icons-V5"></span> Actions, choose *Update*.
 
 4.  Check out the parameter settings and, if necessary, change them.
 

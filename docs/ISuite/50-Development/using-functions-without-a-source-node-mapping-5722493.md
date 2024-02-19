@@ -23,7 +23,7 @@ Create and assign a function to a target leaf node with no corresponding source 
 
 1.  On the target leaf node, choose *Action Menu* \> *Set Function*.
 
-    A mapping line to the target node with a function icon \(<span class="SAP-icons"></span>\) appears. The *Function* tab of the mapping pane is available with the default code snippet in the *XSLT Code* editor.
+    A mapping line to the target node with a function icon \(<span class="SAP-icons-V5"></span>\) appears. The *Function* tab of the mapping pane is available with the default code snippet in the *XSLT Code* editor.
 
 2.  On the *Function* tab, in the *XSLT Code* editor, edit the code snippet as required. The scope of the function is local by default. You can also create a function to reuse it across the mapping. For more information, see [Creating a Shared Code](creating-a-shared-code-e951f66.md).
 

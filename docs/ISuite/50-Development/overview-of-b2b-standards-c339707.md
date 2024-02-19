@@ -9940,7 +9940,7 @@ The Odette delivery contains 26 different message types. For most of the message
 
 cXML is a streamlined protocol intended for consistent communication of business documents between procurement applications, e-commerce hubs and suppliers.
 
-**Versions List \(23\)**
+**Versions List \(24\)**
 
 
 <table>
@@ -10109,6 +10109,13 @@ Version
 <td valign="top">
 
 1.2.059
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.2.060
 
 </td>
 </tr>
@@ -11364,7 +11371,7 @@ UpdateMigratedSupplierRequest
 
 GS1 EANCOM® is a GS1 subset of the UN/EDIFACT standard \(United Nations Electronic Data Interchange for Administration, Commerce and Transport\). It contains the message elements required by business applications especially for domains supported by the GS1 organizations such as retail, consumer products, transport and logistics.
 
-**Versions List \(10\)**
+**Versions List \(11\)**
 
 
 <table>
@@ -11492,6 +11499,18 @@ D.01B S3
 <td valign="top">
 
 2002 S3 Edition 2016
+
+</td>
+<td valign="top">
+
+D.01B S3
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2002 S3 Edition 2016 Update 2021
 
 </td>
 <td valign="top">
@@ -17583,7 +17602,7 @@ UTLHDR\_FILE: 3 - Utility Bill File \(Version 3\)
 
 GS1 uses XML to create a set of standard messages for the GS1 EDI \(Electronic Data Interchange\). GS1 XML messages can be exchanged using any technical solution or internet transport protocol.
 
-**Versions \(7\)**
+**Versions \(8\)**
 
 
 <table>
@@ -17643,9 +17662,16 @@ Version
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+3.6
+
+</td>
+</tr>
 </table>
 
-**Message Types \(49\)**
+**Message Types \(59\)**
 
 
 <table>
@@ -17839,6 +17865,91 @@ claimsNotificationMessage - Claims Notification Message
 <tr>
 <td valign="top">
 
+clinicalTrialsDespatchAdviceMessage - Clinical Trials Despatch Advice Message
+
+</td>
+<td valign="top">
+
+3.6
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+clinicalTrialsInventoryReportMessage - Clinical Trials Inventory Report Message
+
+</td>
+<td valign="top">
+
+3.6
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+clinicalTrialsKitStatusChangeMessage - Clinical Trials Kit Status Change Message
+
+</td>
+<td valign="top">
+
+3.6
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+clinicalTrialsReceivingAdviceMessage - Clinical Trials Receiving Advice Message
+
+</td>
+<td valign="top">
+
+3.6
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+clinicalTrialsRequestForInventoryReportMessage - Clinical Trials Request For Inventory Report Message
+
+</td>
+<td valign="top">
+
+3.6
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 configureToOrderMessage - Configure To Order Message
 
 </td>
@@ -17907,6 +18018,23 @@ despatchAdviceMessage - Despatch Advice Message
 <tr>
 <td valign="top">
 
+dispensingAdviceMessage - Dispensing Advice Message
+
+</td>
+<td valign="top">
+
+3.6
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 goodsRequirementsMessage - Goods Requirements Message
 
 </td>
@@ -17930,6 +18058,23 @@ goodsRequirementsResponseMessage - Goods Requirements Response Message
 <td valign="top">
 
 3.0
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+inventoryReleaseFileMessage - Inventory Release File Message
+
+</td>
+<td valign="top">
+
+3.6
 
 </td>
 <td valign="top">
@@ -18219,6 +18364,57 @@ settlementMessage - Settlement Message
 <td valign="top">
 
 3.0
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+shipmentConfirmationMessage - Shipment Confirmation Message
+
+</td>
+<td valign="top">
+
+3.6
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+shipmentNotificationMessage - Shipment Notification Message
+
+</td>
+<td valign="top">
+
+3.6
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+shipmentRequestMessage - Shipment Request Message
+
+</td>
+<td valign="top">
+
+3.6
 
 </td>
 <td valign="top">

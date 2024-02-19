@@ -9,7 +9,7 @@
 ## Prerequisites
 
 -   You have requested a test tenant from your existing production tenant. See: [Request New Tenant](request-new-tenant-ac413cc.md)
--   You have enabled the *Integration Suite* service in the new test tenant. See: [Subscribing and Configuring Initial Access to Integration Suite](../../10-InitialSetup/subscribing-and-configuring-initial-access-to-integration-suite-8a3c8b7.md)
+-   You have enabled the *Integration Suite* service in the new test tenant. See: [Subscribing and Configuring Initial Access to SAP Integration Suite](../../10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md)
 
 -   Make necessary modifications in your custom adapters to make them compatible with Apache Camel 3.14 runtime.
 

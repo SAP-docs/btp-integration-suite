@@ -71,7 +71,7 @@ If you encounter one of the following situations after the connection request ha
     ```
 
     > ### Note:  
-    > The credentials required to establish the connection will be valid for 365 days. Please remember to regenerate them and reestablish the connection within this timeframe. However, any credentials generated previously with a validity of 65 days will remain valid for that duration. The 365-day timeframe will apply to all newly generated credentials.
+    > The credentials required to establish the connection will be valid for 365 days. Please remember to regenerate them and reestablish the connection within this timeframe. However, any credentials generated prior to February 2024 with a validity of 65 days will remain valid for that specific duration. The 365-day timeframe will apply to all newly generated credentials.
 
 5.  Choose *Submit*.
 

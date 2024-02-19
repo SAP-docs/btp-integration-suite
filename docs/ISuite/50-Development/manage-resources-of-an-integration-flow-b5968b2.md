@@ -423,7 +423,7 @@ Removes relevant resource file from the integration flow. Before deleting make s
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> \(Download\)
+<span class="SAP-icons-V5"></span> \(Download\)
 
 \(Applicable only for local resources\)
 

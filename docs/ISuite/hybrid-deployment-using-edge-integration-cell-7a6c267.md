@@ -2,6 +2,8 @@
 
 # Hybrid Deployment Using Edge Integration Cell
 
+The Edge Integration Cell enables the processing of data within a private landscape. This allows sender and receiver systems to exchange data without passing through the internet, as the data is hosted exclusively in an on-premise environment. The cloud-based environment of SAP Integration Suite is utilized to design integration content. This content is then deployed within the organization's firewall at a private runtime location. The runtime environment is realized as a Kubernetes container, facilitating secure, internal data exchange
+
 
 
 If you want to process data within your private landscape, you can achieve the same with Edge Integration Cell. For example, consider a case where you want to have sender and receiver systems exchanging data that are exclusively hosted in an on-premise environment. In this case, passing the data through the Internet isn't always the best option.

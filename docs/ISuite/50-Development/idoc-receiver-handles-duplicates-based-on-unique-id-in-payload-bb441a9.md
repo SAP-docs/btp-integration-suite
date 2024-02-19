@@ -40,11 +40,22 @@ To simulate the communication of sender and receiver systems through Cloud Integ
 
 To give an example, we have modified [IDoc Receiver Handles Duplicates](idoc-receiver-handles-duplicates-8f8feea.md): Instead of the sender SAP RM adapter, the scenario uses SOAP 1.x protocol. The *Pattern Quality Of Service - Scenario 02a* integration flow illustrates this simple scenario.
 
-![](images/PatternQualityOfService_Scenario02a_510a92c.png)
+![](images/Example_Scenario_601202b.png)
 
 The scenario contains a SOAP \(SOAP 1.x\) sender adapter that *doesn't* pass on any message ID as part of the message protocol to the integration flow. Instead of a message ID, Cloud Integration uses the booking reference contained as part of the message payload. We assume that the booking reference is unique for this business scenario.
 
-On the receiver side, the scenario uses an IDoc receiver adapter. The IDoc receiver adapter passes on the header `SapMessageId` to the backend which is used to detect duplicates. If the header `SapMessageId` isn't defined, the IDoc receiver adapter automatically generates a unique ID. Otherwise, it reuses the value of the header `SapMessageId`. See [Configure the IDoc Receiver Adapter](configure-the-idoc-receiver-adapter-018aa88.md).
+On the receiver side, the scenario uses an IDoc receiver adapter. The IDoc receiver adapter passes on the header `SapMessageId` to the backend which is used to detect duplicates.
+
+You can choose between three options how to specify the target ID `SapMessageId`:
+
+-   *Generate*
+
+-   *Reuse*
+
+-   *Map*
+
+
+See [Configure the IDoc Receiver Adapter](configure-the-idoc-receiver-adapter-018aa88.md) 
 
 So, we need to ensure that the header `SapMessageId` is set with the unique ID from the payload. If the sender retries the message delivery, the same ID is passed on to the IDoc receiver. In this case, we ensure that duplicate messages are discarded.
 
@@ -114,9 +125,7 @@ ns0:FlightBooking/BookingReference
 </tr>
 </table>
 
-To ensure that a hexadecimal GUID is sent to the IDoc receiver, we use an *ID Mapping* integration flow step to map the booking reference to a target message ID. The ID mapping generates a unique ID for the combination of a source message ID and a context. When processing the ID mapping step with a dedicated combination of parameter settings the first time, Cloud Integration stores the generated ID temporarily in the tenant database. When executed with the same combination again, the ID mapping provides the same previously generated ID.
-
-The *ID Mapping* step is defined in the following way:
+On the *Processing* tab of the IDoc receiver adapter, the following settings are to be configured:
 
 
 <table>
@@ -135,68 +144,24 @@ Setting
 <tr>
 <td valign="top">
 
-*Source Message ID*
+*SapMessageId Determination*
 
 </td>
 <td valign="top">
 
-`${property.bookingReference}` 
-
-This value is defined using the property defined in the previous Content Modifier.
+*Map*
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Target Header Name*
+*Source For SapMessageId*
 
 </td>
 <td valign="top">
 
-`SapMessageId`
-
-The header is used for duplicate handling in the backend.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Context*
-
-</td>
-<td valign="top">
-
-`IDMapperContext_01`
-
-You define a unique context for each* ID Mapping *step within your integration flow. If you need any additional *ID Mapping* \(providing a different target ID\), you can use a different context. In this scenario, there's 1 single *ID Mapping* step only. Therefore, the *Context* name doesn’t really matter.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Visibility*
-
-</td>
-<td valign="top">
-
-Integration Flow
-
-The generated IDs are unique within the same integration flow model. If your ID Mapping is to be used across different integration flows, you need to select Global.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Expiration Period \(in d\)*
-
-</td>
-<td valign="top">
-
-`30`
+`${property.bookingReference}`
 
 </td>
 </tr>

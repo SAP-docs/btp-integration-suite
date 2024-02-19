@@ -259,7 +259,7 @@ Helps to sort and filter the content of the table. You can define how the table 
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> \(Reload\)
+<span class="SAP-icons-V5"></span> \(Reload\)
 
 </td>
 <td valign="top">

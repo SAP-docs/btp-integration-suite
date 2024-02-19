@@ -32,7 +32,7 @@ The steps described here explains the process of running a *Simulation* in both 
 
 3.  Identify subset of an integration flow that you would like to simulate and choose the connection to locate the *Start Point* and the *End Point* for the simulation.
 
-4.  Choose <span class="SAP-icons"></span>as a start point of the simulation on any connection to begin.
+4.  Choose <span class="SAP-icons-V5"></span>as a start point of the simulation on any connection to begin.
 
     1.  Choose the start point at a connection gives an option to provide the input to simulation and trigger it accordingly.
 
@@ -41,7 +41,7 @@ The steps described here explains the process of running a *Simulation* in both 
     3.  Choose *OK* to submit input. For more information, see [Using Various Types of Body Files in the Simulation](using-various-types-of-body-files-in-the-simulation-2e3cf3b.md).
 
 
-5.  Choose <span class="SAP-icons"></span>to end the defined simulation flow step.
+5.  Choose <span class="SAP-icons-V5"></span>to end the defined simulation flow step.
 
     > ### Note:  
     > -   You can’t run simulation if you don't define the end point. In this case *Run Simulation* button grayed out.
@@ -54,7 +54,7 @@ The steps described here explains the process of running a *Simulation* in both 
 
 6.  Choose :arrow_forward: to run the simulation. Once the simulation run is successful, a message :envelope:envelope appears with a tracing information. Choosing the envelope you can see the details.
 
-7.  Choose <span class="SAP-icons"></span>to clear the simulation and you can start with fresh flow steps to begin new set of simulation.
+7.  Choose <span class="SAP-icons-V5"></span>to clear the simulation and you can start with fresh flow steps to begin new set of simulation.
 
     > ### Note:  
     > -   Changing integration flow mode \(Read or Edit\) loses the configuration of an integration flow simulation.

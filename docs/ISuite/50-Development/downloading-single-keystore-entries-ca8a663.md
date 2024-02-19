@@ -23,7 +23,7 @@ You can download a key, a single certificate, a complete certificate chain, a ro
 
 2.  On the *Current* tab, select a keystore entry.
 
-3.  Choose the <span class="SAP-icons"></span> \(Actions\) icon, then select one of the options listed in table below. Alternatively, you can click the keystore entry alias to open the details, and then choose the option under *Download*.
+3.  Choose the <span class="SAP-icons-V5"></span> \(Actions\) icon, then select one of the options listed in table below. Alternatively, you can click the keystore entry alias to open the details, and then choose the option under *Download*.
 
     The options available depend on the type of keystore entry you have selected.
 

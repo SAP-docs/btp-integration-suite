@@ -27,9 +27,9 @@ In the course of this exercise, you execute a simulation tool on an integration 
 
 1.  Choose an Integration flow and keep it in a read-only mode.
 
-2.  Select the connector line between *Timer* and *Content Modifier* and choose *Simulation Start Point* <span class="SAP-icons"></span> .
+2.  Select the connector line between *Timer* and *Content Modifier* and choose *Simulation Start Point* <span class="SAP-icons-V5"></span> .
 
-3.  Select the connection between *XML to JSON Converter* and *End Message* and choose Simulation End Point <span class="SAP-icons"></span> . 
+3.  Select the connection between *XML to JSON Converter* and *End Message* and choose Simulation End Point <span class="SAP-icons-V5"></span> . 
 
     You can see that the first two icons of the simulation tool have been enabled.
 
@@ -49,6 +49,6 @@ In the course of this exercise, you execute a simulation tool on an integration 
 
     You can check that based on the filter criteria, the resulting message has been generated correctly.
 
-9.  Choose <span class="SAP-icons"></span> *Clear Simulation* located in the simulation tool to clear all defined simulation path.
+9.  Choose <span class="SAP-icons-V5"></span> *Clear Simulation* located in the simulation tool to clear all defined simulation path.
 
 

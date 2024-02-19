@@ -20,7 +20,7 @@ Click on the tile to get a details view. On the screen, you see a table with the
 </td>
 <td valign="top">
 
-Name of the component in alphabetical order. The color indicates the status with green indicating *Running* \(:heavy_check_mark:\) and red indicating *Error* \(<span class="SAP-icons"></span> Error\).
+Name of the component in alphabetical order. The color indicates the status with green indicating *Running* \(:heavy_check_mark:\) and red indicating *Error* \(<span class="SAP-icons-V5"></span> Error\).
 
 </td>
 </tr>
@@ -36,7 +36,7 @@ Status of Resources:
 
 Error
 
-If the *Pod Status* indicates an error, select *View Pod Events* \(<span class="SAP-icons"></span> View Pod Events \) to show the details of the pod events. For more information about pod events, see [https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/\#Event.](https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/#Event.) 
+If the *Pod Status* indicates an error, select *View Pod Events* \(<span class="SAP-icons-V5"></span> View Pod Events \) to show the details of the pod events. For more information about pod events, see [https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/\#Event.](https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/#Event.) 
 
 Running
 

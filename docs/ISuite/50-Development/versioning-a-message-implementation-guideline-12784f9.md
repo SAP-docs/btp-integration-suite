@@ -24,7 +24,7 @@ When you activate a message implementation guideline, the *Status* of the MIG is
 > 
 > -   Any new requirements for the MIG can be maintained in a new *Draft* version of the MIG without changing the active MIG version currently in use.
 
-If you want to create the next draft version of an active MIG, open the active MIG version and choose *Edit*. You can also choose *Edit* from the action <span class="SAP-icons"></span> button from the MIG overview. This will prompt you to confirm creating a draft version. Choose *OK*. Now the next version of the MIG gets created with the *Draft* status. For example, if the active version of the MIG is 2.0, then the new draft MIG will have the version set as 3.0
+If you want to create the next draft version of an active MIG, open the active MIG version and choose *Edit*. You can also choose *Edit* from the action <span class="SAP-icons-V5"></span> button from the MIG overview. This will prompt you to confirm creating a draft version. Choose *OK*. Now the next version of the MIG gets created with the *Draft* status. For example, if the active version of the MIG is 2.0, then the new draft MIG will have the version set as 3.0
 
 After the successful activation of a MIG, the previous active version of the MIG gets deprecated and its *Status* field is set to *Deprecated*.
 
@@ -39,7 +39,7 @@ Follow the procedure below to activate a message implementation guideline.
 
 ## Procedure
 
-1.  Navigate to *Message Implementation Guideline* <span class="SAP-icons"></span> from the left pane.
+1.  Navigate to *Message Implementation Guideline* <span class="SAP-icons-V5"></span> from the left pane.
 
 2.  Choose the MIG that you want to activate.
 3.  Choose *Activate* to mark a version of the MIG as a main version.
@@ -62,7 +62,7 @@ If the message implementation guideline is based on a custom message, then the c
 
 ## Activating a Custom Message
 
-1.  In your MIG, choose <span class="SAP-icons"></span> and select *Activate Message*.
+1.  In your MIG, choose <span class="SAP-icons-V5"></span> and select *Activate Message*.
 
 2.  A message is displayed to show the status of the activation.
 

@@ -121,7 +121,7 @@ API Management
 </td>
 <td valign="top">
 
-[Patch Releases for API Management](patch-releases-for-api-management-6ddd927.md) 
+[Patch Releases for API Management](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/6ddd927cbeaa42e384dc903e6002e269.html "This topic provides information on patch releases for API Management that are provided for bug fixes.") :arrow_upper_right: 
 
 </td>
 </tr>

@@ -1444,7 +1444,7 @@ Follow the procedure below to create a trading partner profile
     </tr>
     </table>
     
-3.  Choose Add. The certificate gets added successfully. You can perform other actions on this certificate using the actions <span class="SAP-icons"></span> button
+3.  Choose Add. The certificate gets added successfully. You can perform other actions on this certificate using the actions <span class="SAP-icons-V5"></span> button
 
 
 

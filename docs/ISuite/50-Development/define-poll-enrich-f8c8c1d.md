@@ -25,7 +25,7 @@ You can use the *Poll Enrich* to read \(poll\) messages from an external compone
 
 2.  Add a *Poll Enrich* step to the integration process:
 
-    1.  In the palette, choose ![](images/external_call_bfbf8b0.png) \(Call\) and then choose :envelope: from the menu. From the submenu, choose <span class="SAP-icons"></span> \(Poll Enrich\).
+    1.  In the palette, choose ![](images/external_call_bfbf8b0.png) \(Call\) and then choose :envelope: from the menu. From the submenu, choose <span class="SAP-icons-V5"></span> \(Poll Enrich\).
 
     2.  Place the *Poll Enrich* shape in the integration process.
 

@@ -6,7 +6,7 @@
 
 Simplify and accelerate enterprise integration. 
 
-SAP Integration Suite connects and contextualizes processes and data while enabling new content-rich applications to be assembled faster with less dependence on IT. Pre-built integration packs along with existing investments can be composed to deliver new outcomes with less involvement by integration experts.
+SAP Integration Suite is an industry-leading and enterprise-grade integration platform-as-a-service \(EiPaaS\) that helps businesses seamlessly connect and integrate their applications, data, and processes within their organization and beyond. A starter collection of pre-built, best-practice integration packs helps integration developers achieve faster time to value. Execute the integration content on the Business Technology Platform or within your private landscape.
 
 > ### Tip:  
 > The English version of this guide is open for contributions and feedback using GitHub. This allows you to get in contact with responsible authors of SAP Help Portal pages and the development team to discuss documentation-related issues. To contribute to this guide, or to provide feedback, choose the corresponding option on SAP Help Portal:
@@ -27,7 +27,7 @@ SAP Integration Suite connects and contextualizes processes and data while enabl
 > -   [Blog Post: Introducing the Open Documentation Initiative](https://blogs.sap.com/2021/05/20/introducing-the-open-documentation-initiative/)
 
 > ### Tip:  
-> Contextual help is available for some screens of the SAP Integration Suite. To activate this help, from the top toolbar, choose <span class="SAP-icons"></span> Help. A panel with help topics opens alongside your current screen to your right. You will also find green <span style="color:#007833;"><span class="SAP-icons"></span></span> Help icons on the screen. Choose these icons to know more about the associated element.
+> Contextual help is available for some screens of the SAP Integration Suite. To activate this help, from the top toolbar, choose <span class="SAP-icons-V5"></span> Help. A panel with help topics opens alongside your current screen to your right. You will also find green <span style="color:#007833;"><span class="SAP-icons-V5"></span></span> Help icons on the screen. Choose these icons to know more about the associated element.
 
 
 
@@ -59,7 +59,7 @@ Manage APIs
 </b></dt>
 <dd>
 
-Discover, design, and govern application programming interfaces \(APIs\) for API consumers with API Management incl. Graph.
+Discover, protect, govern, and publish APIs to developers with API Management and Graph. Ensure that your APIs comply with best-practice security policies.
 
 
 
@@ -115,6 +115,17 @@ Assess Migration Scenarios
 <dd>
 
 Estimate the migration effort for SAP Process Orchestration scenarios with Migration Assessment.
+
+
+
+</dd><dt><b>
+
+Run Hybrid Integrations 
+
+</b></dt>
+<dd>
+
+Manage APIs and process integration scenarios within your own private landscapes.
 
 
 

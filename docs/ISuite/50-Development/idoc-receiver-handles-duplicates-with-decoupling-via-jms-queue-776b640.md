@@ -36,53 +36,64 @@ To simulate the communication of sender and receiver systems through Cloud Integ
 
 As an example, we have modified scenario [XI Receiver Handles Duplicates](xi-receiver-handles-duplicates-fcf026b.md) by decoupling sender and receiver using a JMS queue. The Pattern Quality Of Service - Scenario 03b integration flow contains two integration processes.
 
-![](images/PatternQualityOfService_Scenario03b_dacf2cc.png)
+![](images/Example_Scenario_68be585.png)
 
 The integration process **Integration Process Scenario 03b with retry via JMS and IDoc receiver: write to JMS queue** stores the message in a JMS queue after it is received from the sender system. The integration process contains one single JMS receiver channel with no further integration flow steps. Therefore, a JMS transaction handler isn't required. The JMS transaction is committed directly. After storing the message to the JMS queue, the sender receives the technical response. At sender side, the integration process uses a SOAP sender adapter. Because the retry is performed by the second integration process, there's no need that the sender system passes on a message id to the middleware. Instead of this, the scenario uses an ID that is unique to the message exchange.
 
 The second integration process **Integration Process Scenario 03b with retry via JMS and IDoc receiver: read from JMS queue** reads the message from the same JMS queue, and carries out the flow steps. The system automatically initiates a JMS transaction when reading the message from the JMS queue. Therefore, there's no need to explicitly set the transaction behavior.
 
-On the receiver side, the scenario uses an IDoc receiver adapter. The IDoc receiver adapter passes on the header `SapMessageId` to the backend which is used to detect duplicates. If the header `SapMessageId` isn't defined, the IDoc receiver adapter automatically generates a unique ID. Otherwise, it reuses the value of the header `SapMessageId`. See[Configure the IDoc Receiver Adapter](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/configure-idoc-receiver-adapter).
+On the receiver side, the scenario uses an IDoc receiver adapter. The IDoc receiver adapter passes on the header `SapMessageId` to the backend which is used to detect duplicates.
+
+You can choose between three options how to specify the target ID `SapMessageId`:
+
+-   *Generate*
+
+-   *Reuse*
+
+-   *Map*
+
+
+See[Configure the IDoc Receiver Adapter](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/configure-idoc-receiver-adapter)
 
 So, we need to ensure that the header `SapMessageId` is set with an ID that is constant throughout all potential retries from the JMS queue. For this purpose, the message ID of the message processing log is used. At runtime, Cloud Integration gets the actual value for the message ID from the header `SAP_MessageProcessingLogID`.
 
-In the Content Modifier **Set SapMessageId**, check out the Message Header tab to verify the following settings:
-
-****
+On the *Processing* tab of the IDoc receiver adapter, the following settings have to be configured:
 
 
 <table>
 <tr>
 <th valign="top">
 
-Name
+Parameter
 
 </th>
 <th valign="top">
 
-Source Type
-
-</th>
-<th valign="top">
-
-SourceValue
+Setting
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-SapMessageId
+*SapMessageId Determination*
 
 </td>
 <td valign="top">
 
-Header
+*Map*
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Source for SapMessageId*
 
 </td>
 <td valign="top">
 
-SAP\_MessageProcessingLogID
+`${header.SAP_MessageProcessingLogID}`
 
 </td>
 </tr>

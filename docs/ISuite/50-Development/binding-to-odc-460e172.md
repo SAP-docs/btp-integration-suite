@@ -172,15 +172,15 @@ You can use this procedure to bind function imports and operations of entity set
     </tr>
     </table>
     
-4.  Choose *OK*. The Service Designer page appears and the *Action* column for this operation now displays *Navigate to Integration Flow Editor* \(<span class="SAP-icons"></span>\) and *Delete Binding* \(:wastebasket:\) buttons.
+4.  Choose *OK*. The Service Designer page appears and the *Action* column for this operation now displays *Navigate to Integration Flow Editor* \(<span class="SAP-icons-V5"></span>\) and *Delete Binding* \(:wastebasket:\) buttons.
 
     A predefined integration flow with mapping steps is generated for the operation or function import. For more information, see [Predefined Integration Flows for ODC](predefined-integration-flows-for-odc-677fcba.md).
 
-    You can update the integration flow to better suit your business scenario by choosing *Navigate to Integration Flow Editor* \(<span class="SAP-icons"></span>\). For more information, see [Editing an Integration Flow](editing-an-integration-flow-ccd062a.md).
+    You can update the integration flow to better suit your business scenario by choosing *Navigate to Integration Flow Editor* \(<span class="SAP-icons-V5"></span>\). For more information, see [Editing an Integration Flow](editing-an-integration-flow-ccd062a.md).
 
     If you want to update the binding information, you can do it in one of the following ways:
 
-    -   Choose *Navigate to Integration Flow Editor* \(<span class="SAP-icons"></span>\) and update the Endpoint URI information in the receiver channel.
+    -   Choose *Navigate to Integration Flow Editor* \(<span class="SAP-icons-V5"></span>\) and update the Endpoint URI information in the receiver channel.
     -   Choose *Delete Binding* \(:wastebasket:\) and repeat the binding procedure.
 
 5.  Choose *Save* to save your changes to the OData API artifact.

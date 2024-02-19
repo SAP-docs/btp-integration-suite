@@ -2,7 +2,9 @@
 
 # Configure the Advanced Event Mesh Receiver Adapter
 
-The advanced event mesh receiver adapter allows you to send messages to queues or topics on an advanced event mesh broker in SAP Integration Suite using the SMF message protocol.
+The AdvancedEventMesh receiver adapter allows SAP Integration Suite to send messages to queues or topics in SAP Integration Suite, advanced event mesh.
+
+The adapter uses the Solace Message Format \(SMF\) message protocol.
 
 The *General* tab displays general information about the adapter itself.
 

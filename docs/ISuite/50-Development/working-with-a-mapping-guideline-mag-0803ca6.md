@@ -44,7 +44,7 @@ There could be scenarios where there are significant differences between the Mes
 
     If you want to search for all XSLT snippets and XPath expressions for a certain text pattern and want the list of mapping elements to be filtered by those elements that contain the search pattern, you can use the *Search* field provided above the *Mapping List* table. Use the search field to enter the function pattern and select :mag: . This will display the list of mapping elements pertaining to that function pattern.
 
-    You can also search for a particular value in the *Mapping List* tab by selecting the relevant column name and entering the search value in the filter <span class="SAP-icons"></span> field. This filter option is also available for *Code Value Mapping* tab.
+    You can also search for a particular value in the *Mapping List* tab by selecting the relevant column name and entering the search value in the filter <span class="SAP-icons-V5"></span> field. This filter option is also available for *Code Value Mapping* tab.
 
     You can add or manage additional information about each element in the *Properties* tab. You can also view these details by selecting the element.
 

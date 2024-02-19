@@ -27,7 +27,7 @@ You use this procedure to assign XML schema \(XSD files\) to validate the messag
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(List of Validators\), and then choose *XML Validator*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(List of Validators\), and then choose *XML Validator*.
 
 2.  Under the *General* tab, enter an appropriate validator flow step name in the *Name* field.
 

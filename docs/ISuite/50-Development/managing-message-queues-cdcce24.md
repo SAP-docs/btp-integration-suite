@@ -138,7 +138,7 @@ Description
 <tr>
 <td valign="top">
 
-*Check*\(<span class="SAP-icons"></span>\)
+*Check*\(<span class="SAP-icons-V5"></span>\)
 
 </td>
 <td valign="top">
@@ -157,7 +157,7 @@ You can delete queues that aren't needed and generate missing queues by redeploy
 <tr>
 <td valign="top">
 
-*Reload*\(<span class="SAP-icons"></span>\)
+*Reload*\(<span class="SAP-icons-V5"></span>\)
 
 </td>
 <td valign="top">
@@ -169,7 +169,7 @@ Reload the table.
 <tr>
 <td valign="top">
 
-*Sort*\(<span class="SAP-icons"></span>\)
+*Sort*\(<span class="SAP-icons-V5"></span>\)
 
 </td>
 <td valign="top">

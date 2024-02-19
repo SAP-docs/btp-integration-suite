@@ -15,7 +15,7 @@ Both the source and the target system are the system that has your API Managemen
 ### Prerequisites for the source system
 
 -   You must have a valid API Management system \(API portal and API business hub enterprise\) running in the Cloud Foundry environment.
--   The source system must support Oauth client credentials for Cloud Foundry. You need the auth token url and key secret to access the API portal and API business hub enterprise. For more information, refer [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md) and [API Access Plan for API business hub enterprise](../APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md)
+-   The source system must support Oauth client credentials for Cloud Foundry. You need the auth token url and key secret to access the API portal and API business hub enterprise. For more information, refer [Accessing API Management APIs Programmatically](../APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md) and [Accessing API business hub enterprise APIs Programmatically](../APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md)
 -   Make a note of the API portal and API business hub enterprise URLs of the source system and keep handy.
 -   Ensure that API access is enabled for the API portal and API business hub enterprise systems for the following roles:
 
@@ -102,11 +102,11 @@ Both the source and the target system are the system that has your API Managemen
 
     Note the service keys \(`url`, `tokenurl`, `clientId`, and `clientSecret`\) for the given roles, and keep handy.
 
-    To know more about API access plan for API portal, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
+    To know more about API access plan for API portal, see [Accessing API Management APIs Programmatically](../APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md).
 
-    To know more about API access plan for API business hub enterprise, see [API Access Plan for API business hub enterprise](../APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
+    To know more about API access plan for API business hub enterprise, see [Accessing API business hub enterprise APIs Programmatically](../APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md).
 
-    Follow the steps in [API Access Plan for API business hub enterprise](../APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md), without which the cloning of the API business hub enterprise entities might fail.
+    Follow the steps in [Accessing API business hub enterprise APIs Programmatically](../APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md), without which the cloning of the API business hub enterprise entities might fail.
 
 -   When you have API Products protected by the custom roles permission in the source Cloud Foundry system, ensure that custom roles creation and assignments are done in the target Cloud Foundry environment before starting the migration.
 

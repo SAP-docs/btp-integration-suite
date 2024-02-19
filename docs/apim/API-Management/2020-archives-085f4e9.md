@@ -740,7 +740,7 @@ API Access plan for API business hub enterprise
 </td>
 <td valign="top">
 
-Take a look at the newly introduced API Access plan for the API business hub enterprise in the Cloud Foundry environment. Creating a service instance using this plan enables you to use APIs to interact with the API business hub enterprise. For more information, see [API Access Plan for API business hub enterprise](APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
+Take a look at the newly introduced API Access plan for the API business hub enterprise in the Cloud Foundry environment. Creating a service instance using this plan enables you to use APIs to interact with the API business hub enterprise. For more information, see [Accessing API business hub enterprise APIs Programmatically](APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md).
 
 </td>
 <td valign="top">
@@ -777,7 +777,7 @@ API Access plan for API Portal
 </td>
 <td valign="top">
 
-Take a look at the newly introduced API Access plan for the API Portal in the Cloud Foundry environment. Creating a service instance using this plan enables you to use APIs to interact with the API Portal. For more information, see [API Access Plan for API Portal](APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
+Take a look at the newly introduced API Access plan for the API Portal in the Cloud Foundry environment. Creating a service instance using this plan enables you to use APIs to interact with the API Portal. For more information, see [Accessing API Management APIs Programmatically](APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md).
 
 .
 
@@ -816,7 +816,7 @@ On-premise Connectivity plan
 </td>
 <td valign="top">
 
-Introduced On-Premise Connectivity plan in the Cloud Foundry environment. Creating a service instance using this plan helps you to obtain a service key to enable principal propagation. For more information, see [On-Premise Connectivity Plan](APIM-Initial-Setup/on-premise-connectivity-plan-2fc7a5b.md).
+Introduced On-Premise Connectivity plan in the Cloud Foundry environment. Creating a service instance using this plan helps you to obtain a service key to enable principal propagation. For more information, see [Accessing On-Premise Systems through API Management](APIM-Initial-Setup/accessing-on-premise-systems-through-api-management-2fc7a5b.md).
 
 </td>
 <td valign="top">
@@ -890,7 +890,7 @@ API Management as Route Service plan
 </td>
 <td valign="top">
 
-Introduced API Management as Route Service plan in the Cloud Foundry environment. Creating a service instance using this plan helps you in managing the Cloud Foundry applications. For more information, see [Route Service plan](APIM-Initial-Setup/route-service-plan-e609a3e.md).
+Introduced API Management as Route Service plan in the Cloud Foundry environment. Creating a service instance using this plan helps you in managing the Cloud Foundry applications. For more information, see [Managing Cloud Foundry Microservices through API Management](APIM-Initial-Setup/managing-cloud-foundry-microservices-through-api-management-e609a3e.md).
 
 </td>
 <td valign="top">

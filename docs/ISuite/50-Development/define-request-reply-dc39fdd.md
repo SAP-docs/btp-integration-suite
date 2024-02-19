@@ -102,7 +102,7 @@ In the integration flow model, you design the external service as a receiver sha
 
     No further attributes are to be specified for this step type.
 
-3.  In the palette, click *Participants* \(<span class="SAP-icons"></span> icon\), select *Receiver*, and drop it outside the Integration Process pool.
+3.  In the palette, click *Participants* \(<span class="SAP-icons-V5"></span> icon\), select *Receiver*, and drop it outside the Integration Process pool.
 
 4.  Create a connection between the request reply step and the receiver and configure the channel.
 

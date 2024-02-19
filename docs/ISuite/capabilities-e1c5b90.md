@@ -11,7 +11,7 @@ To work with these capabilities, you must:
 -   Add and activate capabilities. See [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md).
 
     > ### Note:  
-    > You must have the Integration\_Provisioner role to add and activate the capabilities. See [Subscribing and Configuring Initial Access to Integration Suite](10-InitialSetup/subscribing-and-configuring-initial-access-to-integration-suite-8a3c8b7.md)
+    > You must have the Integration\_Provisioner role to add and activate the capabilities. See [Subscribing and Configuring Initial Access to SAP Integration Suite](10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md)
 
--   Once the capabilities are activates, configure user access by assigning the appropriate roles and role collections to the users who want to work with the capabilities. See [Configuring User Access](configuring-user-access-2c6214a.md).
+-   Once the capabilities are activated, configure user access by assigning the appropriate roles and role collections to the users who want to work with the capabilities. See [Configuring User Access](configuring-user-access-2c6214a.md).
 

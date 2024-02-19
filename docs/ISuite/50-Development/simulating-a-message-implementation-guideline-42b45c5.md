@@ -14,17 +14,17 @@ This chapter shows you how to simulate a message implementation guideline.
 
     2.  *Simulate with Payload Data...*: This prompts you to upload a sample payload file in the XML format for the MIG simulation.
 
-    You can also re-run the simulation based on the option you chose using the <span class="SAP-icons"></span> button that appears above the MIG structure after simulation.
+    You can also re-run the simulation based on the option you chose using the <span class="SAP-icons-V5"></span> button that appears above the MIG structure after simulation.
 
     In case of a payload data, re-run simulation runs the simulation again with the payload file uploaded earlier. If you want to use a modified or new payload file for simulation, choose *Simulate* and upload the payload file again under *Simulate with Payload data*.
 
 3.  A new column *Simulation Data* appears in the message structure populated with the following details
     -   The rows with values in the structure are the input values from the payload data.
-    -   If there are multiple occurrences of values in the payload, they are denoted by the navigation buttons <span class="SAP-icons"></span> <span class="SAP-icons"></span> . These buttons allow you to navigate to the other occurrences of the payload values.
-    -   The navigation button <span class="SAP-icons"></span> <span class="SAP-icons"></span> is also displayed for a group node if it occurs at least once in the simulation data.
-    -   The <span class="BusinessSuiteInAppSymbols"></span> icon denotes the leaf node exists in the structure but is empty.
+    -   If there are multiple occurrences of values in the payload, they are denoted by the navigation buttons <span class="SAP-icons-V5"></span> <span class="SAP-icons-V5"></span> . These buttons allow you to navigate to the other occurrences of the payload values.
+    -   The navigation button <span class="SAP-icons-V5"></span> <span class="SAP-icons-V5"></span> is also displayed for a group node if it occurs at least once in the simulation data.
+    -   The <span class="BusinessSuiteInAppSymbols-V2"></span> icon denotes the leaf node exists in the structure but is empty.
 
-    -   The <span class="BusinessSuiteInAppSymbols"></span> icon denotes that the leaf node does not exist in the structure.
+    -   The <span class="BusinessSuiteInAppSymbols-V2"></span> icon denotes that the leaf node does not exist in the structure.
 
 
 

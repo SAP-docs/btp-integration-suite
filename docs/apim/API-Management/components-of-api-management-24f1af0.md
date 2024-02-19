@@ -20,7 +20,7 @@ Allows you to deploy and productively use your APIs. Applications consume the AP
 
 ### API Portal
 
-The one-stop-shop to create, secure, and publish API Proxies. This is the place for easy discovery of APIs, and you the API Administrator, can manage, meter, secure your APIs, as well as define and publish rate plans. To know more about using the API Portal see,  <?sap-ot O2O class="- topic/xref " href="adcbc07b031b4ac285b22867a1216306.xml" text="" desc="" xtrc="xref:6" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/24f1af0b2f6041d49d0d65b5defb4eb8.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+The one-stop-shop to create, secure, and publish API Proxies. This is the place for easy discovery of APIs, and you the API Administrator, can manage, meter, secure your APIs, as well as define and publish rate plans. To know more about using the API Portal see,  <?sap-ot O2O class="- topic/xref " href="adcbc07b031b4ac285b22867a1216306.xml" text="" desc="" xtrc="xref:6" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/24f1af0b2f6041d49d0d65b5defb4eb8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 
 

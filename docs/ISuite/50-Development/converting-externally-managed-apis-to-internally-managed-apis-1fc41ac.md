@@ -23,9 +23,9 @@ After the conversion, you can create API proxies for these internally managed AP
 3.  Identify the externally managed API that you want to convert from the list of APIs.
 
     > ### Note:  
-    > The externally managed API is marked with an <span class="SAP-icons-TNT"></span> icon, and the *Status* column dosen't display the status of the API.
+    > The externally managed API is marked with an <span class="SAP-icons-TNT-V3"></span> icon, and the *Status* column dosen't display the status of the API.
 
-4.  Choose the <span class="SAP-icons"></span> Action icon against the required API and then select the *Manage* option. Alternatively, you can open the required API, and then select the option *Manage*.
+4.  Choose the <span class="SAP-icons-V5"></span> Action icon against the required API and then select the *Manage* option. Alternatively, you can open the required API, and then select the option *Manage*.
 
 5.  You can edit the prefilled data of the externally managed API before choosing *Deploy*.
 

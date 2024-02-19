@@ -29,7 +29,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
 
 3.  Choose *View* to read the comments from the requester before approving or rejecting a connection request.
 
-4.  Choose <span class="SAP-icons"></span> Manage Connections icon in the *Actions* column and choose *Approve*.
+4.  Choose <span class="SAP-icons-V5"></span> Manage Connections icon in the *Actions* column and choose *Approve*.
 
 
 

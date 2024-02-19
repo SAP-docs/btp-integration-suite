@@ -40,7 +40,7 @@ To use this step makes only sense in combination with one of the following adapt
 
 2.  In the palette, click *Call* \(![](images/Image_Map_Arrow_Icon_76d790c.png) icon\) and choose *External Call* \> *Send*, and drop it inside the Integration Process pool.
 
-3.  In the palette, click *Participants* \(<span class="SAP-icons"></span> icon\), select *Receiver*, and drop it outside the Integration Process pool.
+3.  In the palette, click *Participants* \(<span class="SAP-icons-V5"></span> icon\), select *Receiver*, and drop it outside the Integration Process pool.
 
 4.  Create a connection between the send step and the receiver and configure the channel \(selecting one of the above mentioned adapter types\).
 

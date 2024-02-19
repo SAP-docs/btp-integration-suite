@@ -288,7 +288,7 @@ Details
 </td>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -305,7 +305,7 @@ Place a Start Point at the beginning of your flow path. It feeds a simulation in
 </td>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -322,7 +322,7 @@ Place an End Point to end the simulation on your connection or the defined path 
 </td>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -355,7 +355,7 @@ For more information, see [Using Various Types of Body Files in the Simulation](
 </td>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -397,7 +397,7 @@ Used to run the simulation once the start and end point have been defined.
 </td>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">

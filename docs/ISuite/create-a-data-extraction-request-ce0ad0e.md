@@ -15,14 +15,10 @@ You've configured a source system as described in [Add an SAP Process Orchestrat
 > ### Note:  
 > Do you prefer hands-on instructions? Check out the tutorial [Use the Migration Assessment Application](https://developers.sap.com/tutorials/migration-assessment.html).
 
-> ### Note:  
-> The following limitations apply when extracting data:
+> ### Restriction:  
+> The total physical disk storage is limited. As each extraction consumes physical disk storage, future extractions can fail with an error message once the limit is reached.
 > 
-> -   You can extract a maximum of 4000 integration scenarios.
-> 
-> -   The total physical disk storage of all extractions can't exceed 2 GB. As each extraction consumes physical disk storage, future extractions fail with an error message once the limit is reached.
-> 
->     Make sure that enough storage space is available before you start an extraction request. If not, delete older extractions or contact support.
+> Before extracting new data, make sure that enough storage space is available. If you've reached the limit, free up space by deleting old extractions.
 
 
 

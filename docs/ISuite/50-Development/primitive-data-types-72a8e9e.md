@@ -73,7 +73,7 @@ Apart from thhe supported formats, the following are the list of *Date Time Form
 -   **X12**: Data Elements based on special X12 data types of a certain length For example, DT6..6 or TM4..6
 -   **IDoc**: Data Elements based on special ABAP built-in data types. For example, DATS or TIMS
 
-The <span class="SAP-icons"></span> button allows you to set examples using *Add Example Values* and also use user-defined format provided in the *Format* field using *Use Format* option. The example values can also be later used in getting proposals during MAG simulation.
+The <span class="SAP-icons-V5"></span> button allows you to set examples using *Add Example Values* and also use user-defined format provided in the *Format* field using *Use Format* option. The example values can also be later used in getting proposals during MAG simulation.
 
 > ### Note:  
 > The input field supports search by both *Format* and *Format Description*. So for example, if you type in 102, you will be directly guided to the date time format corresponding to Edifact code 102.

@@ -71,9 +71,7 @@ Once you have your source and target system ready, you can clone your API Manage
 
     Ensure that you don’t modify the name of the `apim-tct-input.json` file.
 
-    For more information on how to create the service key, refer the [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md) and [API Access Plan for API business hub enterprise](../APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
-
-    **Structure of the apim-tct-input.json file:**
+    For more information on how to create the service key, refer the [Accessing API Management APIs Programmatically](../APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md) and [Accessing API business hub enterprise APIs Programmatically](../APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md).
 
 
     <table>
@@ -105,12 +103,12 @@ Once you have your source and target system ready, you can clone your API Manage
     </th>
     </tr>
     <tr>
-    <td valign="top" rowspan="17">
+    <td valign="top" rowspan="9">
     
     source
     
     </td>
-    <td valign="top" rowspan="8">
+    <td valign="top" rowspan="4">
     
     apiportal
 
@@ -195,7 +193,7 @@ Once you have your source and target system ready, you can clone your API Manage
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
 
-    To know more about creating the service key, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
+    To know more about creating the service key, see [Accessing API Management APIs Programmatically](../APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md).
     
     </td>
     </tr>
@@ -224,100 +222,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     </tr>
     <tr>
-    <td valign="top">
-    
-    `certurl`
-    
-    </td>
     <td valign="top" rowspan="4">
-    
-    X509 mTLS
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Required
-    
-    </td>
-    <td valign="top">
-    
-    Cert URL received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `certificate`
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Required
-    
-    </td>
-    <td valign="top">
-    
-    The content of the certificate received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `clientid`
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Required
-    
-    </td>
-    <td valign="top">
-    
-    Client ID received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `privatekey`
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Required
-    
-    </td>
-    <td valign="top">
-    
-    Private Key received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top" rowspan="8">
     
     devportal
 
@@ -431,99 +336,6 @@ Once you have your source and target system ready, you can clone your API Manage
     <tr>
     <td valign="top">
     
-    `certurl`
-    
-    </td>
-    <td valign="top" rowspan="4">
-    
-    X509 mTLS
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Optional
-    
-    </td>
-    <td valign="top">
-    
-    Certificate URL received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `certificate`
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Optional
-    
-    </td>
-    <td valign="top">
-    
-    The contents of the certificate received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `clientid`
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Optional
-    
-    </td>
-    <td valign="top">
-    
-    Client ID received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `privatekey`
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Optional
-    
-    </td>
-    <td valign="top">
-    
-    Private Key received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     cfSubaccountTenantID
     
     </td>
@@ -554,12 +366,12 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="16">
+    <td valign="top" rowspan="8">
     
     target
     
     </td>
-    <td valign="top" rowspan="8">
+    <td valign="top" rowspan="4">
     
     apiportal
 
@@ -671,100 +483,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     </tr>
     <tr>
-    <td valign="top">
-    
-    `certurl`
-    
-    </td>
     <td valign="top" rowspan="4">
-    
-    X509 mTLS
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Optional
-    
-    </td>
-    <td valign="top">
-    
-    Certificate URL received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `certificate`
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Optional
-    
-    </td>
-    <td valign="top">
-    
-    The contents of the certificate received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `clientid`
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Optional
-    
-    </td>
-    <td valign="top">
-    
-    Client ID received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `privatekey`
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Optional
-    
-    </td>
-    <td valign="top">
-    
-    Private Key received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top" rowspan="8">
     
     devportal
 
@@ -872,99 +591,6 @@ Once you have your source and target system ready, you can clone your API Manage
     The client secret received during creation of the service key for API business hub enterprise API access for the `AuthGroup.API.Admin` role.
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `certurl`
-    
-    </td>
-    <td valign="top" rowspan="4">
-    
-    X509 mTLS
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Optional
-    
-    </td>
-    <td valign="top">
-    
-    Certificate URL received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `certificate`
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Optional
-    
-    </td>
-    <td valign="top">
-    
-    The contents of the certificate received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `clientid`
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Optional
-    
-    </td>
-    <td valign="top">
-    
-    Client ID received during creation of the service key for API portal API access for the APIPortal.Administrator role.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `privatekey`
-    
-    </td>
-    <td valign="top">
-    
-    String
-    
-    </td>
-    <td valign="top">
-    
-    Optional
-    
-    </td>
-    <td valign="top">
-    
-    Private Key received during creation of the service key for API portal API access for the APIPortal.Administrator role.
     
     </td>
     </tr>
@@ -1326,5 +952,5 @@ After the cloning process completes, you must perform the tasks mentioned in the
 
 To know more about what actions you must take, see the **User Actions** section in [Post Cloning Tasks](post-cloning-tasks-49e9716.md).
 
-To know more about the entities that are cloned and the entities that aren’t cloned, see  <?sap-ot O2O class="- topic/xref " href="132e36f10bb54c0da44ca060a2142a69.xml" text="" desc="" xtrc="xref:7" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/2e5d127a13fc4a3cbba26bfd5ae44e69.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+To know more about the entities that are cloned and the entities that aren’t cloned, see  <?sap-ot O2O class="- topic/xref " href="132e36f10bb54c0da44ca060a2142a69.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/2e5d127a13fc4a3cbba26bfd5ae44e69.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 

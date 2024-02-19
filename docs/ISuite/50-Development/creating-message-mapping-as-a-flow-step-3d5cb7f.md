@@ -187,7 +187,7 @@ The supported file types for source and target messages are:
 
 4.  If you want to create a new mapping definition \(mmap file\), perform the following substeps:
 
-    1.  Select the mapping step and choose <span class="SAP-icons"></span> \(Create\).
+    1.  Select the mapping step and choose <span class="SAP-icons-V5"></span> \(Create\).
 
     2.  Specify a name for the mmap file and choose *Create*.
 
@@ -208,7 +208,7 @@ Now that you've defined the mapping, proceed with further actions.
 
 5.  You can create your own custom mapping function. Here's how:
 
-    1.  In the *Mapping Expression* screen area, choose <span class="SAP-icons"></span> \(Create\) .
+    1.  In the *Mapping Expression* screen area, choose <span class="SAP-icons-V5"></span> \(Create\) .
 
     2.  Enter the name of the script, which is the name of the custom function and choose *OK*.
 
@@ -221,7 +221,7 @@ Now that you've defined the mapping, proceed with further actions.
 
 6.  Configure the settings of the message mapping to handle basic data types in the target JSON schema.
 
-    1.  Choose <span class="SAP-icons"></span> \(Settings\).
+    1.  Choose <span class="SAP-icons-V5"></span> \(Settings\).
 
     2.  In the *Basic Data Type Handling* section, select the target output type that you want.
 
@@ -341,7 +341,7 @@ The Search option enables you to search for a particular entity within a source 
 
 The search result highlights the nodes in the structure that match the search text that is in the visible area, and also displays the number of occurrences of that particular entity within the structure.
 
-You can view the other occurrences by clicking the <span class="SAP-icons"></span> \(Up\) or <span class="SAP-icons"></span> \(Down\) button.
+You can view the other occurrences by clicking the <span class="SAP-icons-V5"></span> \(Up\) or <span class="SAP-icons-V5"></span> \(Down\) button.
 
 </td>
 </tr>
@@ -357,14 +357,14 @@ You can view the other occurrences by clicking the <span class="SAP-icons"></
 
 -   ![](images/Clear_Mapping_9e2517b.png): This button clears all the mapping.
 
--   <span class="SAP-icons"></span>: This button enables you to export your mapping as a spreadsheet.
+-   <span class="SAP-icons-V5"></span>: This button enables you to export your mapping as a spreadsheet.
 
     > ### Note:  
     > Order of mappings in the spreadsheet isn't guaranteed as seen in the mapping editor.
 
--   <span class="SAP-icons"></span>: This button expands the entire source or target structure.
+-   <span class="SAP-icons-V5"></span>: This button expands the entire source or target structure.
 
--   <span class="SAP-icons"></span>: This button collapses the whole structure.
+-   <span class="SAP-icons-V5"></span>: This button collapses the whole structure.
 
 -   :pencil2:: This button allows you to edit the entities within the structure.
 
@@ -383,7 +383,7 @@ You can view the other occurrences by clicking the <span class="SAP-icons"></
 
 The *Functions* pane lists the standard functions that can be used in the Message Mapping expression.
 
-You can also create a new script <span class="SAP-icons"></span> or assign an existing script <span class="SAP-icons"></span> to the mapping expression.
+You can also create a new script <span class="SAP-icons-V5"></span> or assign an existing script <span class="SAP-icons-V5"></span> to the mapping expression.
 
 </td>
 </tr>
@@ -395,9 +395,9 @@ You can also create a new script <span class="SAP-icons"></span> or assign an
 </td>
 <td valign="top">
 
--   <span class="SAP-icons"></span>: Copies the chain of elements in the expression without the target element.
+-   <span class="SAP-icons-V5"></span>: Copies the chain of elements in the expression without the target element.
 
--   <span class="SAP-icons"></span>: Use it to paste the copied expression in the editor.
+-   <span class="SAP-icons-V5"></span>: Use it to paste the copied expression in the editor.
 
 
 

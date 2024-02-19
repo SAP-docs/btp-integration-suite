@@ -39,7 +39,7 @@ Subscribe to free tier service plan.
 
     4.  Save the changes.
 
-    5.  Subscribe to the Integration Suite free tier plan. See: [Subscribing and Configuring Initial Access to Integration Suite](subscribing-and-configuring-initial-access-to-integration-suite-8a3c8b7.md).
+    5.  Subscribe to the Integration Suite free tier plan. See: [Subscribing and Configuring Initial Access to SAP Integration Suite](subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
 
         > ### Note:  
         > In the *New Instance or Subscription* dialog box, select the *free* as the plan.

@@ -43,49 +43,53 @@ To simulate the communication of sender and receiver systems through Cloud Integ
 
 The Pattern Quality Of Service - Scenario 01a integration flow maps a web service to an IDoc. As IDoc message type, we simply use FLIGHTBOOKING\_CREATEFROMDAT from the flight booking demo that you may setup in your SAP ECC or SAP S/4HANA system.
 
-![](images/integration_process_01a_f570d13.png)
+![](images/Example_Scenario_a6000b5.png)
 
 The scenario contains a SOAP \(SAP RM\) sender adapter with SAP Reliable Messaging message protocol. This setting ensures that the sender can pass on a protocol-specific message ID to the integration flow. Cloud Integration saves the ID in the header` SapMessageIdEx`. See [Configure the SOAP \(SAP RM\) Sender Adapter](configure-the-soap-sap-rm-sender-adapter-6962234.md).
 
-On the receiver side, the scenario uses an IDoc receiver adapter. The IDoc receiver adapter passes on the header `SapMessageId` to the backend which is used to detect duplicates. If the header `SapMessageId` isn't defined, the IDoc receiver adapter automatically generates a unique ID. Otherwise, it reuses the value of the header `SapMessageId`. See [Configure the IDoc Receiver Adapter](configure-the-idoc-receiver-adapter-018aa88.md).
+On the receiver side, the scenario uses an IDoc receiver adapter. The IDoc receiver adapter passes on the header `SapMessageId` to the backend which is used to detect duplicates.
+
+See [Configure the IDoc Receiver Adapter](configure-the-idoc-receiver-adapter-018aa88.md).
 
 So, we need to ensure that the header `SapMessageId` is set with the unique ID `SapMessageIdEx` sent by the sender adapter. If the sender retries the message delivery, the same ID is passed on to the IDoc receiver. In this case, we ensure that duplicate messages are discarded.
 
-In the Content Modifier *Set SapMessageId*, check out the *Message Header* tab to verify the following settings:
+On the *Processing* tab of the IDoc receiver adapter, specify the following settings:
 
 
 <table>
 <tr>
 <th valign="top">
 
-Name
+Parameter
 
 </th>
 <th valign="top">
 
-Source Type
-
-</th>
-<th valign="top">
-
-Source Value
+Setting
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-SapMessageId
+*SapMessageId Determination*
 
 </td>
 <td valign="top">
 
-Header
+*Map*
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Source for SapMessageId*
 
 </td>
 <td valign="top">
 
-SapMessageIdEx
+`${header.SapMessageIdEx}`
 
 </td>
 </tr>
@@ -124,19 +128,19 @@ To test the scenario, perform the following steps:
     <tr>
     <td valign="top">
     
-    Name
+    *Name*
     
     </td>
     <td valign="top">
     
-    OWN
+    `OWN`
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    User
+    *User*
     
     </td>
     <td valign="top">
@@ -148,7 +152,7 @@ To test the scenario, perform the following steps:
     <tr>
     <td valign="top">
     
-    Password
+    *Password*
     
     </td>
     <td valign="top">

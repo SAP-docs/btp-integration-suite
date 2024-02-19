@@ -37,3 +37,12 @@ The proxy endpoint defines the settings for the inbound connections for an API p
 
 The Target endpoint defines the outbound connections for an API proxy. The main purpose of this object is to manage interactions to the actual backend service endpoint on behalf of consumer applications. An API proxy can contain zero or many target endpoints.
 
+**Related Information**  
+
+
+[Different Methods of Creating an API Proxy](different-methods-of-creating-an-api-proxy-4ac0431.md "An API proxy is the data object that contains all the functionality to be executed when an external user wants to access the backend service.")
+
+[Policies](policies-7e4f3e5.md "Policy definition and types of policies supported by .")
+
+[API Providers](api-providers-42e13b2.md "An API provider defines the connection details for services running on specific hosts whose details you want to access.")
+

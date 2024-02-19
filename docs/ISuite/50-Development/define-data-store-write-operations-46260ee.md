@@ -32,7 +32,7 @@ This component stores data on your tenant. Note that the tenant space is limited
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Persistence\), then *Data Store Operations* \> *Write*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Persistence\), then *Data Store Operations* \> *Write*.
 
 2.  Place the *Write* element in the integration process and define the message path.
 

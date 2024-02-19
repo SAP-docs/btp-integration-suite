@@ -13,7 +13,7 @@ Activate capabilities for the SAP Integration Suite.
 ## Prerequisites
 
 -   You have access to the Integration Suite home page. See [Working with Integration Suite Home](20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md).
--   You have the Integration\_Provisioner role assigned to your user. See [Subscribing and Configuring Initial Access to Integration Suite](10-InitialSetup/subscribing-and-configuring-initial-access-to-integration-suite-8a3c8b7.md).
+-   You have the Integration\_Provisioner role assigned to your user. See [Subscribing and Configuring Initial Access to SAP Integration Suite](10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
 
 
 
@@ -44,7 +44,7 @@ This topic describes how to add and activate relevant capabilities in Integratio
 
 ## Procedure
 
-1.  On the Integration Suite home page, under the *Capabilities* section, choose either *Add Capabilities* \(if it's your first time accessing the Integration Suite home page\) or <span class="SAP-icons"></span> *Manage Capabilities*.
+1.  On the Integration Suite home page, under the *Capabilities* section, choose either *Add Capabilities* \(if it's your first time accessing the Integration Suite home page\) or <span class="SAP-icons-V5"></span> *Manage Capabilities*.
 
 2.  On the *Activate Capabilities* screen, under *Select Capabilities*, select the relevant capabilities as shown in the following table and choose *Next* to configure additional functionality for individual capabilities.
 
@@ -101,7 +101,9 @@ This topic describes how to add and activate relevant capabilities in Integratio
     </td>
     <td valign="top">
     
-    *Manage APIs* 
+    *Manage APIs*
+
+    For end-to end instructions on how to activate the API Management capability, see [Enable API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite). You can also refer to the [Set Up API Management from Integration Suite](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html) tutorial for visual instructions.
     
     </td>
     </tr>

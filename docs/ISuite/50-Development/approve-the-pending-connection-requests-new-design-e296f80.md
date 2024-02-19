@@ -33,7 +33,7 @@ You’re assigned the *AuthGroup.APIPortalRegistration* role.
 
 3.  Choose *View* to read the comments from the requester before approving or rejecting a connection request.
 
-4.  Select the connection that you want to approve, choose the <span class="SAP-icons"></span> Actions icon and select *Approve*.
+4.  Select the connection that you want to approve, choose the <span class="SAP-icons-V5"></span> Actions icon and select *Approve*.
 
 
 

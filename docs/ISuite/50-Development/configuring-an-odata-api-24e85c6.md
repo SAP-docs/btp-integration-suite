@@ -23,7 +23,7 @@ You can use this procedure to modify the parameters that you entered when creati
 
 2.  Choose the integration package that contains the OData artifact for which the details need to be changed.
 
-3.  Choose <span class="SAP-icons"></span> and then choose *View metadata* to view or modify the metadata of the OData API.
+3.  Choose <span class="SAP-icons-V5"></span> and then choose *View metadata* to view or modify the metadata of the OData API.
 
 4.  Edit or modify the parameters listed in the following table, as required.
 

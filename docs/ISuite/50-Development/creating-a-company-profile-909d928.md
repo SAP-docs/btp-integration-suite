@@ -1379,7 +1379,7 @@ Follow the next procedure to create a company profile.
     </tr>
     </table>
     
-3.  Choose *Add*. The certificate gets added successfully. You can perform other actions on this certificate using the <span class="SAP-icons"></span> button.
+3.  Choose *Add*. The certificate gets added successfully. You can perform other actions on this certificate using the <span class="SAP-icons-V5"></span> button.
 
 
 

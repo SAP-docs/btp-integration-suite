@@ -139,7 +139,7 @@ Perform the following steps to remove a keystore from one runtime only.
 
 2.  From the drop-down menu in the upper left corner of your screen, select your respective runtime from which you want to remove the keystore.
 
-3.  From the section *Action*, select the removal icon \(<span class="SAP-icons"></span>\) to remove your keystore.
+3.  From the section *Action*, select the removal icon \(<span class="SAP-icons-V5"></span>\) to remove your keystore.
 
     > ### Caution:  
     > Removing the keystore might cause problems to associated integration flows.

@@ -16,7 +16,7 @@ You’re editing the integration flow in the editor.
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span>, then navigate to *Converter* \> *CSV to XML Converter*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span>, then navigate to *Converter* \> *CSV to XML Converter*.
 
 2.  Place the *CSV to XML converter* shape in the integration process and define the message path.
 

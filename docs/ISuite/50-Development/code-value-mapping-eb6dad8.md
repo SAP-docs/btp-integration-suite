@@ -22,7 +22,7 @@ The *Code Value Mapping* tab appears only if both the source and target elements
 
     The generated default XSLT function is based on `<xsl:choose>`, wherein the source code values are compared against a range of possible values. Each selected source code value is expressed by a `<xsl:when>` clause and the mapped target code value in`<xsl:sequence>`. All source code values that aren’t mapped are written into the output, expressed by `<xsd:otherwise>`. You can change the function according to your requirements.
 
-4.  You can change the code value in the target node by selecting the value help <span class="SAP-icons"></span> and choosing the relevant value from the list.
+4.  You can change the code value in the target node by selecting the value help <span class="SAP-icons-V5"></span> and choosing the relevant value from the list.
 
 You can use the following options only if you have used a standard code list.
 
@@ -36,35 +36,42 @@ You can use the following options only if you have used a standard code list.
 
 <a name="loioeb6dad8fdf6146cb980ee159738d5b16__section_wry_mmf_tyb"/>
 
-## N:1 Local Code Value Mapping
+## N:1 Code Value Mapping
 
-The local code value mapping now supports N:1 mapping cardinality. You can map more than one source node with a target node for the local code value mapping.
+The code value mapping now supports N:1 mapping cardinality. You can map more than one source node with a target node for both local and global code value mapping.
 
 > ### Note:  
-> You cannot create a global code value mapping out of this N:1 local code value mapping.
+> You can create a global code value mapping out of a N:1 local code value mapping.
 > 
-> You cannot assign a global code value mapping to this mapping.
+> You can also assign a global code value mapping to this mapping.
 
 1.  Once the mapping is set, the *Code Value Mapping* tab appears with the following details.
 
-2.  The *Default Value* field allows you to set a default value for the mapping in case no mapping values are matched for the target code value. Select the value help <span class="SAP-icons"></span> and set a default from the list. You can only set a default value from the rules other than the ones mentioned in the table below and you can also select only the target code values for the default value.
+2.  The *Default Value* field allows you to set a default value for the mapping in case no mapping values are matched for the target code value. Select the value help <span class="SAP-icons-V5"></span> and set a default from the list. You can only set a default value from the rules other than the ones mentioned in the table below and you can also select only the target code values for the default value.
 3.  The table displays the source code values from left to right in the top-down order of the source MIG node.The target code values are displayed at the rightmost-end of the table.
 
     Let us take for example, you have mapped the source nodes `AddressTypeCode` and `CountryCode` with the target node `AddressType`. The *Code Value Mapping* tab would display a table with three columns - two for each source node and one for the target node.
 
-4.  You can now start setting the code values using the value help <span class="SAP-icons"></span> button provided for each entry in the table.
+4.  You can now start setting the code values using the value help <span class="SAP-icons-V5"></span> button provided for each entry in the table.
 
     > ### Note:  
-    > You need to ensure that there are no duplicate code value mappings. In such cases, the row entry will be marked as an error.
+    > If the following entries are present in your mapping, the corresponding rows will be marked as an error:
+    > 
+    > -   Duplicate code value mappings
+    > 
+    > -   Empty value mappings
+    > -   No target code value selected
+    > -   None of the source code values selected
 
 5.  Choose the Add :heavy_plus_sign: button provided above the table to add more code values.
-6.  The sort code value mapping <span class="SAP-icons"></span> button automatically reorders the code value mappings to ensure that more specific mappings are applied first thereby increasing the accuracy of mapping each source code value to its corresponding target code value.
-7.  If you had applied the *Proposal* service and then tried 1:1 code value mapping, the proposals are automatically applied to the target code values. In case of N:1 code value mapping, the proposals are not applied automatically. You need to choose the*Proposal* option provided under the *Code Value Mapping* tab to apply proposals on the code values.
+6.  The sort code value mapping <span class="BusinessSuiteInAppSymbols-V2"></span> button reorders the code value mappings to ensure that more specific mappings are applied first thereby increasing the accuracy of mapping each source code value to its corresponding target code value.
+7.  The reorder source codelists <span class="BusinessSuiteInAppSymbols-V2"></span> button allows you to adjust the source code list. Select the button and in the *Reorder Source Codelists* dialog box, select the codelist and adjust the order using the up <span class="SAP-icons-V5"></span> and down <span class="SAP-icons-V5"></span> arrows and choose *OK*.
+8.  If you had applied the *Proposal* service and then tried 1:1 code value mapping, the proposals are automatically applied to the target code values. In case of N:1 code value mapping, the proposals are not applied automatically. You need to choose the*Proposal* option provided under the *Code Value Mapping* tab to apply proposals on the code values.
 
     > ### Note:  
-    > The *Proposal* option appears under the *Code Value Mapping* tab only if you have used the Proposal service on the entire MAG.
+    > The *Proposal* option appears under the *Code Value Mapping* tab only if you have used the Proposal service on the entire MAG and there are value mappings proposed for this code value mapping.
 
-8.  Selecting the *Proposal* button for N:1 mapping displays the list of proposals. You can select the necessary proposals from the list and choose *Add*.
+9.  Selecting the *Proposal* button for N:1 mapping displays the list of proposals. You can select the necessary proposals from the list and choose *Add*.
 
 
 
@@ -72,7 +79,7 @@ The local code value mapping now supports N:1 mapping cardinality. You can map m
 
 ## Deprecated Code Values
 
-The <span class="SAP-icons"></span> icon next to a code value denotes that the code value is deprecated.
+The <span class="SAP-icons-V5"></span> icon next to a code value denotes that the code value is deprecated.
 
 A deprecated code value occurs when
 
@@ -81,11 +88,11 @@ A deprecated code value occurs when
 2.  The value gets removed or replaced from that particular version of the codelist.
 3.  The code value is removed or replaced from the message implementation guideline. In this case, the domain GUID of the missing value is displayed in MAG.
 
-You can distinguish between these values using the tooltip provided under the <span class="SAP-icons"></span> icon.
+You can distinguish between these values using the tooltip provided under the <span class="SAP-icons-V5"></span> icon.
 
 If the deprecated values are found under *Source Code Value*, you can delete them using :wastebasket:provided next to each value.
 
-If the deprecated values are found under *Target Code Value*, you can replace them with an existing value using <span class="SAP-icons"></span>.
+If the deprecated values are found under *Target Code Value*, you can replace them with an existing value using <span class="SAP-icons-V5"></span>.
 
 For the deselected values, you can select them again in the respective message implementation guideline.
 

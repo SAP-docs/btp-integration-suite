@@ -99,11 +99,11 @@ Your target system is the system that has your API Management subscription on th
 
     Note the service keys \(`url`, `tokenurl`, `clientId`, and `clientSecret`\) for the given roles, and keep handy.
 
-    To know more about API access plan for API portal, see [API Access Plan for API Portal](../APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
+    To know more about API access plan for API portal, see [Accessing API Management APIs Programmatically](../APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md).
 
-    To know more about API access plan for Developer Portal, see [API Access Plan for API business hub enterprise](../APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
+    To know more about API access plan for Developer Portal, see [Accessing API business hub enterprise APIs Programmatically](../APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md).
 
-    Follow the steps in [API Access Plan for API business hub enterprise](../APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md), without which the cloning of the Developer portal entities might fail.
+    Follow the steps in [Accessing API business hub enterprise APIs Programmatically](../APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md), without which the cloning of the Developer portal entities might fail.
 
 -   When you have API Products protected by the custom roles permission in the source Neo system, ensure that custom roles creation and assignments are done in the target Cloud Foundry environment before starting the migration.
 

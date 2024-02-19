@@ -26,7 +26,7 @@ You want to combine related individual messages so that they can be processed in
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span>, then choose** \> *Aggregator*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span>, then choose** \> *Aggregator*.
 
 2.  Place *Aggregator* in the integration process and define the message path.
 

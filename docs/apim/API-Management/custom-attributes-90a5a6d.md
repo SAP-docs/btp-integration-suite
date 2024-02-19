@@ -173,7 +173,7 @@ Sample payload to create a custom attribute
     -   Request Header: Authorization:Bearer <Token for API access\>
     -   Response: bearer-token value
 
-    To know how to retrieve this token, see [API Access Plan for API Portal](APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
+    To know how to retrieve this token, see [Accessing API Management APIs Programmatically](APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md).
 
 
 > ### Sample Code:  
@@ -303,7 +303,7 @@ Sample payload to delete a custom attribute \(batch call\)
 
     Request Header: Authorization:Bearer <Token for API access\> \(for Cloud Foundry environment\)
 
-    To know how to retrieve this token, see [API Access Plan for API Portal](APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md).
+    To know how to retrieve this token, see [Accessing API Management APIs Programmatically](APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md).
 
 
 > ### Sample Code:  
@@ -362,7 +362,7 @@ Sample payload to create a custom attribute \(application\)
         -   Request Header: Authorization:Bearer <Token for API access\>
         -   Response: bearer-token value
 
-        To know how to retrieve this token, see [API Access Plan for API business hub enterprise](APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
+        To know how to retrieve this token, see [Accessing API business hub enterprise APIs Programmatically](APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md).
 
 
 
@@ -429,7 +429,7 @@ Sample payload to create a custom attribute via navigation \(application\)
     -   Request Header: Authorization:Bearer <Token for API access\>
     -   Response: bearer-token value
 
-    To know how to retrieve this token, see [API Access Plan for API business hub enterprise](APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md).
+    To know how to retrieve this token, see [Accessing API business hub enterprise APIs Programmatically](APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md).
 
 
 > ### Sample Code:  

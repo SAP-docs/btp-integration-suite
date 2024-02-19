@@ -24,7 +24,7 @@ You can use the document file as a reference to implement the messages and mappi
 1.  Access the Message Implementation Guideline \(MIG\) or the Mapping Guideline \(MAG\) section.
 
 2.  Select the MIG or MAG that you want to export as documentation.
-3.  Choose <span class="SAP-icons"></span> and then choose *Export*.
+3.  Choose <span class="SAP-icons-V5"></span> and then choose *Export*.
 4.  Choose the appropriate option based on your requirement
 
     **Documentation Export**

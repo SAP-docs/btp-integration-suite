@@ -43,7 +43,7 @@ A data store operations step has to be triggered explicitly, for example, by a T
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Persistence\), then *Data Store Operations* \> *Get*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Persistence\), then *Data Store Operations* \> *Get*.
 
 2.  Place the *Get* element in the integration process and define the message path.
 

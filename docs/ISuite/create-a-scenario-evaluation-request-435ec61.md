@@ -37,11 +37,11 @@ You've created at least one data extraction request as described in [Create a Da
 
 6.  The following additional *Actions* can be performed for a scenario evaluation request:
 
-    -   <span style="color:#346187;"><span class="SAP-icons"></span></span> *Open Dashboard*: Access and download an analysis of your scenario evaluation runs with details specific to your integration scenarios, for example, adapters and an overview of the rules used in the evaluation. You can switch between the data of all runs performed for the scenario evaluation request so far.
+    -   <span style="color:#346187;"><span class="SAP-icons-V5"></span></span> *Open Dashboard*: Access and download an analysis of your scenario evaluation runs with details specific to your integration scenarios, for example, adapters and an overview of the rules used in the evaluation. You can switch between the data of all runs performed for the scenario evaluation request so far.
 
-    -   <span style="color:#346187;"><span class="SAP-icons"></span></span> *Trigger Analysis*: Schedule a new evaluation run based on current data.
+    -   <span style="color:#346187;"><span class="SAP-icons-V5"></span></span> *Trigger Analysis*: Schedule a new evaluation run based on current data.
 
-    -   <span style="font-size:16px;"><span style="color:#346187;"><span class="SAP-icons"></span></span></span> *Download*: Download details about the latest evaluation run in one of two formats:
+    -   <span style="font-size:16px;"><span style="color:#346187;"><span class="SAP-icons-V5"></span></span></span> *Download*: Download details about the latest evaluation run in one of two formats:
 
         -   The option *as .xlsx file* lists all integration scenarios that were part of the request with migration effort with their migration status and the rules applied to them during the evalutation.
         -   The option *as .pdf file* features the previously mentioned details about the integration scenarios while also providing a written summary of adapters and the assessment in general, with charts and tables as visual aids. This file is suited as a summarizing report, for example, for management.

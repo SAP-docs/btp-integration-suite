@@ -20,7 +20,7 @@ To upload and use custom messages, you need to have a custom type system. Follow
 
 ## Procedure
 
-1.  Navigate to *Custom Type Systems* <span class="SAP-icons"></span> icon from the left pane of your application.
+1.  Navigate to *Custom Type Systems* <span class="SAP-icons-V5"></span> icon from the left pane of your application.
 
 2.  Choose *Add* to create a custom type system.
 

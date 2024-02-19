@@ -36,7 +36,7 @@ You can use this feature to implement scenarios like the following ones:
 
 2.  If you want to add a *Message Digest* step to the integration flow, perform the following substeps:
 
-    1.  In the palette, choose <span class="SAP-icons"></span> \(Message Transformers\)and then choose <span class="SAP-icons"></span> \(Message Digest\).
+    1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Transformers\)and then choose <span class="SAP-icons-V5"></span> \(Message Digest\).
 
     2.  Place *Content Modifier* step in the integration process.
 

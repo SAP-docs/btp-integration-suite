@@ -66,7 +66,7 @@ The search allows you to filter specific queues by providing parts of their name
 
 ## Actions to Perform on Single Queue
 
-For a dedicated queue, choose *Actions* \(<span class="SAP-icons"></span>\) to perform the following actions:
+For a dedicated queue, choose *Actions* \(<span class="SAP-icons-V5"></span>\) to perform the following actions:
 
 **Actions**
 

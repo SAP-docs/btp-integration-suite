@@ -52,7 +52,7 @@ You create a value mapping artifact to act as a bi-directional look up table. Va
     > 
     > Some of the function names in web UI differ from the ones in Eclipse.
     > 
-    > Editing of the Value Mapping will no longer be possible if it is configured and saved by choosing the *Configure* option from the Actions <span class="SAP-icons"></span> button provided for the Value Mapping under the *Artfiacts* tab.
+    > Editing of the Value Mapping will no longer be possible if it is configured and saved by choosing the *Configure* option from the Actions <span class="SAP-icons-V5"></span> button provided for the Value Mapping under the *Artfiacts* tab.
     > 
     > Deployment of a Value Mapping with configuration details copied from another deployed Value Mapping is not recommended.
 

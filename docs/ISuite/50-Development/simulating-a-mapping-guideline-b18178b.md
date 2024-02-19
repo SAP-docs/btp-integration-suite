@@ -16,11 +16,11 @@ This chapter shows you how to simulate a mapping guideline.
 3.  A new column *Simulation Data* appears in the *Source* and *Target* structure populated with data related to the mapping for each node:
     -   The rows with values on the source structure are the input values from the source MIG.
     -   The values found in the target structure are the transformed input values.
-    -   If there are more than one instance of a leaf node in the simulation data, they are denoted by the navigation buttons <span class="SAP-icons"></span> <span class="SAP-icons"></span>. These buttons allow you to navigate to the other occurences of the payload values.
-    -   The navigation button <span class="SAP-icons"></span><span class="SAP-icons"></span> is also displayed for a group node if it occurs atleast once in the simulation data.
-    -   The <span class="BusinessSuiteInAppSymbols"></span> icon denotes the input value on the source message or the transformed value on the target message is empty.
+    -   If there are more than one instance of a leaf node in the simulation data, they are denoted by the navigation buttons <span class="SAP-icons-V5"></span> <span class="SAP-icons-V5"></span>. These buttons allow you to navigate to the other occurences of the payload values.
+    -   The navigation button <span class="SAP-icons-V5"></span><span class="SAP-icons-V5"></span> is also displayed for a group node if it occurs atleast once in the simulation data.
+    -   The <span class="BusinessSuiteInAppSymbols-V2"></span> icon denotes the input value on the source message or the transformed value on the target message is empty.
 
-    -   The <span class="BusinessSuiteInAppSymbols"></span> icon denotes that the leaf node does not exist in the simulated data.
+    -   The <span class="BusinessSuiteInAppSymbols-V2"></span> icon denotes that the leaf node does not exist in the simulated data.
 
 4.  Choose a mapping entity in the source or the target structure to view the mapping after simulation.
 5.  If you have added any conditions on a source leaf node to control the instances of a target group node, you can view the following details of that conditional mapping under the *Condition* tab of that mapping entity.
@@ -29,11 +29,11 @@ This chapter shows you how to simulate a mapping guideline.
 
     -   The status of the creation of a target node based on the input provided in the mapping.
 
-        The target nodes that are not created due to the conditional mapping are also denoted with the <span class="BusinessSuiteInAppSymbols"></span> icon in the mapping structure.
+        The target nodes that are not created due to the conditional mapping are also denoted with the <span class="BusinessSuiteInAppSymbols-V2"></span> icon in the mapping structure.
 
 
     > ### Note:  
     > Wherever conditional mapping is involved, the creation of the target node instances depends solely on the condition defined under the conditional mapping.
 
-6.  For target group nodes with conditional mapping, the *Simulation Data* column only displays the instances of the node which fulfills the condition criteria. If you want to see all the instances of the node, irrespective of whether they fulfill the condition or not, choose <span class="BusinessSuiteInAppSymbols"></span>
+6.  For target group nodes with conditional mapping, the *Simulation Data* column only displays the instances of the node which fulfills the condition criteria. If you want to see all the instances of the node, irrespective of whether they fulfill the condition or not, choose <span class="BusinessSuiteInAppSymbols-V2"></span>
 

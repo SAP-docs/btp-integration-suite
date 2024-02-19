@@ -24,7 +24,7 @@ Once you have edited the mapping details in an MAG that suits your scenario, you
     > 
     > -   Any new requirements for the MAG can be maintained in a new *Draft* version of the MAG without changing the active MAG version currently in use.
 
-    If you want to create the next draft version of an active MAG, open the active MAG version and choose *Edit*. You can also choose *Edit* from the action <span class="SAP-icons"></span> button of the MAG overview. This will prompt you to confirm creating a draft version. Choose *OK*. Now the next version of the MAG gets created with the *Draft* status. For example, if the active version of the MAG is 2.0, then the new draft MAG will have the version set as 3.0
+    If you want to create the next draft version of an active MAG, open the active MAG version and choose *Edit*. You can also choose *Edit* from the action <span class="SAP-icons-V5"></span> button of the MAG overview. This will prompt you to confirm creating a draft version. Choose *OK*. Now the next version of the MAG gets created with the *Draft* status. For example, if the active version of the MAG is 2.0, then the new draft MAG will have the version set as 3.0
 
 -   *Deprecated*: After activating a MAG, the previous active version of the MAG gets deprecated and its *Status* field is set to *Deprecated*.
 

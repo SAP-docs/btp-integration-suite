@@ -87,14 +87,14 @@ API Management
 </td>
 <td valign="top">
 
-Threshold Value for Charts in API Analytics
+Threshold Value for Charts in Advanced API Analytics
 
 </td>
 <td valign="top">
 
 In the analytics dashboard, the values on the chart for a particular dimension are shown only up to a certain threshold. Any values beyond this threshold are grouped together and labeled as **Others**. By default, the threshold value for the charts is set to 25.
 
-See: [Analytics Dashboard](https://help.sap.com/docs/integration-suite/sap-integration-suite/analytics-dashboard?version=CLOUD) \(SAP API Management customers choose: [Analytics Dashboard](https://help.sap.com/docs/sap-api-management/sap-api-management/analytics-dashboard?version=Cloud)\)
+See: [Find Your Way around Advanced API Analytics Dashboard](https://help.sap.com/docs/integration-suite/sap-integration-suite/find-your-way-around-advanced-api-analytics-dashboard?version=CLOUD#report-pages) \(SAP API Management customers choose: [Find Your Way around Advanced API Analytics Dashboard](https://help.sap.com/docs/sap-api-management/sap-api-management/find-your-way-around-advanced-api-analytics-dashboard?version=Cloud#report-pages)\)
 
 </td>
 <td valign="top">
@@ -228,7 +228,7 @@ Expiration Period for Credentials
 </td>
 <td valign="top">
 
-The expiration period for the credentials needed to establish a connection to the centralized API business hub enterprise has been extended to 365 days from 65 days. Please make sure to regenerate the credentials and reestablish the connection within this timeframe. However, any credentials that were previously generated with a validity of 65 days will still be valid for that duration. The 365-day timeframe will apply to all newly generated credentials.
+The expiration period for the credentials needed to establish a connection to the centralized API business hub enterprise has been extended to 365 days from 65 days. Please make sure to regenerate the credentials and reestablish the connection within this timeframe. However, any credentials generated prior to February 2024 with a validity of 65 days will remain valid for that specific duration. The 365-day timeframe will apply to all newly generated credentials.
 
 See:
 
@@ -1351,7 +1351,7 @@ Secure options to consume APIs
 </td>
 <td valign="top">
 
-We have introduced secure options to consume APIs using the API Access Plan for API portal, API business hub enterprise and on-premise connectivity. You can now create service keys with credential types "binding- secret", "instance- secret" and "x509". For more information, see [API Access Plan for API Portal](APIM-Initial-Setup/api-access-plan-for-api-portal-24a2c37.md), [API Access Plan for API business hub enterprise](APIM-Initial-Setup/api-access-plan-for-api-business-hub-enterprise-dabee6e.md) and [On-Premise Connectivity Plan](APIM-Initial-Setup/on-premise-connectivity-plan-2fc7a5b.md).
+We have introduced secure options to consume APIs using the API Access Plan for API portal, API business hub enterprise and on-premise connectivity. You can now create service keys with credential types "binding- secret", "instance- secret" and "x509". For more information, see [Accessing API Management APIs Programmatically](APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md), [Accessing API business hub enterprise APIs Programmatically](APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md) and [Accessing On-Premise Systems through API Management](APIM-Initial-Setup/accessing-on-premise-systems-through-api-management-2fc7a5b.md).
 
 </td>
 <td valign="top">

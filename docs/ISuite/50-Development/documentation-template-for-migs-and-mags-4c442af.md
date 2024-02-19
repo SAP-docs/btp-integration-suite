@@ -88,7 +88,7 @@ You can maintain a template for documentation export which is later picked by th
     </td>
     <td valign="top">
     
-    Browse <span class="SAP-icons"></span> and add a splash image for the front cover.
+    Browse <span class="SAP-icons-V5"></span> and add a splash image for the front cover.
     
     </td>
     </tr>
@@ -100,7 +100,7 @@ You can maintain a template for documentation export which is later picked by th
     </td>
     <td valign="top">
     
-    Browse <span class="SAP-icons"></span> and add a logo image for the front cover.
+    Browse <span class="SAP-icons-V5"></span> and add a logo image for the front cover.
     
     </td>
     </tr>

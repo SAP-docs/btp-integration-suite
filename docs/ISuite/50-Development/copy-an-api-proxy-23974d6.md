@@ -32,7 +32,7 @@ To copy an API proxy, proceed as follows:
 
 2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
-3.  On the *APIs* tab page, choose the <span class="SAP-icons"></span> Action icon against the required API and then select the *Copy* option. Alternatively, you can open the required API and in the details page select the option *Copy*.
+3.  On the *APIs* tab page, choose the <span class="SAP-icons-V5"></span> Action icon against the required API and then select the *Copy* option. Alternatively, you can open the required API and in the details page select the option *Copy*.
 
 4.  In the *Copy API* dialog box, the details for each attribute is pre filled. *Name* and *API Base Path* fields should be unique. So, it is required to change the API name and basepath values. The values for the remaining fields can either be retained or changed.
 

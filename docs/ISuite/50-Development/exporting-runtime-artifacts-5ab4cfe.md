@@ -38,7 +38,7 @@ You can then import these runtime artifacts in either of these integration solut
 
 1.  Access the Message Implementation Guideline \(MIG\) or the Mapping Guideline \(MAG\) section.
 2.  Select the MIG or MAG in which you want to export the runtime artifacts.
-3.  Choose <span class="SAP-icons"></span> and then choose *Export*.
+3.  Choose <span class="SAP-icons-V5"></span> and then choose *Export*.
 4.  You see two options for exporting the artifacts. Choose the appropriate option based on your needs.
 
 
@@ -187,9 +187,12 @@ Subset-specific code that identifies the Message Guideline. \(Corresponding to U
 
 ## Extended Namespace Support for MIGs
 
-Few pointers to be considered for your MIGs for SAP S/4HANA SOAP type systems and Custom Messages.
+Few pointers to be considered for your MIGs for SAP S/4HANA SOAP type systems and Custom Messages created before June 2023.
 
-The application has now been extended to support namespace handling. Earlier, namespace prefixes were only allowed at the root node level and these prefixes were removed as part of internal processing. The recent addition of GS1 XML to our Type System library has enabled the support of XML elements and attributes which are a part of the namespace and require a namespace declaration.
+> ### Note:  
+> If your MIG is affected, you will see a warning icon for the root node in MIG Editor.
+
+The application was extended in June 2023 to support namespace handling. Earlier, namespace prefixes were only allowed at the root node level and these prefixes were removed as part of internal processing. The recent addition of GS1 XML to our Type System library has enabled the support of XML elements and attributes which are a part of the namespace and require a namespace declaration.
 
 To elaborate on the changes, a node will now carry its namespace prefix in the internal payload format if its required by the message standard. In other words, the namespace prefix will no longer be removed as part of the internal processing.
 
@@ -200,7 +203,7 @@ The change is relevant for the message types of the following type system:
 -   S/4HANA On-Premise SOAP
 -   Custom Messages \(if the message is defined in a namespace\)
 
-This change will come into effect only when you trigger a new Export of Runtime Artifacts and update your integration flow and will influence all new and existing Message Implementation Guidelines. When you update your integration flow, you need to replace all the files using the latest export of runtime artifacts. You cannot update/replace only a few files as a mix of old and updated artifacts will cause compatibility issue.
+In case your MIG is affected by this change, you need to make sure to follow below guidelines \(particularly for the first new Export of Runtime Artifacts after the change date\). When you update your integration flow, you need to replace all the files using the latest export of runtime artifacts. You cannot update/replace only a few files as a mix of old and updated artifacts will cause compatibility issue.
 
 You might come across the following scenarios while trying to update your integration flow:
 

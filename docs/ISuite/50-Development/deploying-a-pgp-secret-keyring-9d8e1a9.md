@@ -101,7 +101,7 @@ More information: [Creating a Key Pair](../40-RemoteSystems/creating-a-key-pair-
 6.  Click *Deploy* to deploy your artifact.
 
     > ### Note:  
-    > After a successful upload, a dialog is displayed showing the summary of the added, removed, changed, and not imported keys, if there are any. If any keys were not uploaded, information is provided to explain why \(for example, the key with the same key id already exists\). The keys in the table refresh automatically. You can also manually refresh the list by clicking the refresh button \(<span class="SAP-icons"></span>\).
+    > After a successful upload, a dialog is displayed showing the summary of the added, removed, changed, and not imported keys, if there are any. If any keys were not uploaded, information is provided to explain why \(for example, the key with the same key id already exists\). The keys in the table refresh automatically. You can also manually refresh the list by clicking the refresh button \(<span class="SAP-icons-V5"></span>\).
 
 
 

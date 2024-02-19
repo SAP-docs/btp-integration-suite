@@ -42,7 +42,7 @@ In the example, these are the URI components:
 
 
 
-For more information about the service root URI, resource path, and query options, see [http://www.odata.org/documentation/odata-version-2-0/uri-conventions](http://www.odata.org/documentation/odata-version-2-0/uri-conventions).
+For more information about the service root URI, resource path, and query options, see [URI Conventions \(OData Version 2.0\)](http://www.odata.org/documentation/odata-version-2-0/uri-conventions).
 
 > ### Caution:  
 > The browser translates space characters to `%20`. If you paste a URL from this documentation to the browser, the OData call therefore works. The string `%20` is left out of the example URLs to make them easier to read.

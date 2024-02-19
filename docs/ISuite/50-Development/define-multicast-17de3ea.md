@@ -14,7 +14,7 @@ You can use the *Multicast* step to send copies of the same message to multiple 
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Message Routing\), then *Multicast*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Routing\), then *Multicast*.
 
 2.  Choose *Parallel Multicast* or *Sequential Multicast* based on your requirement and place the step inside the integration process. Define the message paths based on the scenario.
 

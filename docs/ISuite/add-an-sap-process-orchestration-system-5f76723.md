@@ -64,7 +64,7 @@ To connect your SAP Process Orchestration system with the Migration Assessment a
 
 ## Procedure
 
-1.  In the Migration Assessment application, navigate to <span style="color:#346187;"><span class="SAP-icons"></span></span> Settings.
+1.  In the Migration Assessment application, navigate to <span style="color:#346187;"><span class="SAP-icons-V5"></span></span> Settings.
 
 2.  In the table labeled *SAP Process Orchestration Systems*, choose *Add*.
 

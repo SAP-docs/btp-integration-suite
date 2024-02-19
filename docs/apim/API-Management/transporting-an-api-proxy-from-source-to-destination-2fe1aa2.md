@@ -20,6 +20,20 @@ API proxies always get imported to the destination API portal in the deployed st
 > 
 > If there are multiple revisions of an API, only the latest revision gets transported.
 
+> ### Note:  
+> Consider the following use case for transporting API proxies associated with multiple target endpoints:
+> 
+> -   Case 1- Multiple target endpoints in target endpoint XML
+> 
+>     This customization in the API proxy is achieved by exporting the proxy zip and modifying the target endpoint XML. In such scenarios, when the proxy is transported, the related API providers are automatically created in the target, followed by proxy creation.
+> 
+> -   Case 2- API provider is referenced in some policy of the API proxy
+> 
+>     The above use case is not supported for transport. In such cases, the provider referred to in the policy must be transported first, followed by the API proxy transport.
+> 
+> 
+> In exceptional cases where a proxy with identical Name and Base path is present in both the source and target, but one of them is a versioned API while the other is not versioned, the transfer to the target will fail because conversion between the two is not permitted.
+
 
 
 <a name="loio2fe1aa277c5a460787ed6b9c9e1cb264__steps_cnz_rqq_1pb"/>

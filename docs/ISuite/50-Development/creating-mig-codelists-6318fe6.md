@@ -36,7 +36,7 @@ You’ve opened the MIG in the edit mode.
 
 5.  Optional: Filter code values using *Search*.
 
-6.  Optional: Sort code values using <span class="SAP-icons"></span> \(sort\) icon in ascending or descending order.
+6.  Optional: Sort code values using <span class="SAP-icons-V5"></span> \(sort\) icon in ascending or descending order.
 
 7.  Optional: Delete code values using :wastebasket: icon.
 

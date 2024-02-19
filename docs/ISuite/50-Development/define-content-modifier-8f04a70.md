@@ -39,7 +39,7 @@ Note that data written to the message header during a processing step, for examp
 
 2.  If you want to add *Content Modifier* step to the integration flow, perform the following substeps:
 
-    1.  In the palette, choose <span class="SAP-icons"></span> \(Message Transformers\) and then choose :envelope:
+    1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Transformers\) and then choose :envelope:
 
     2.  Place *Content Modifier* step in the integration process.
 

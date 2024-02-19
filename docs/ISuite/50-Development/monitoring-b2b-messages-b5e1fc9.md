@@ -30,8 +30,8 @@ An interchange is the incoming payload for B2B transactions. It is a bulk messag
     > ### Note:  
     > If you had defined any custom search attributes in your active agreements, they will appear in *Adapt Filters* dialog. Select them if you want to customise your search option.
 
-8.  You can also save your customised filter options using the *Save As* option provided under the down <span class="SAP-icons"></span> icon after the title *Standard\**.
-9.  You can also export the interchanges in Excel format using the <span class="SAP-icons"></span> icon provided proceeding the list.
+8.  You can also save your customised filter options using the *Save As* option provided under the down <span class="SAP-icons-V5"></span> icon after the title *Standard\**.
+9.  You can also export the interchanges in Excel format using the <span class="SAP-icons-V5"></span> icon provided proceeding the list.
 10. Choose and open an interchange from the *Interchanges* list.
 11. The *Error Information* tab provides additional error information for the failed interchanges. Choose *Details* to access more information about the error.
 12. If there are any issues with the agreement configuration, the *Error Information* tab provides a *Check Agreements* option. Select it to review the agreement details.
@@ -64,7 +64,7 @@ An interchange is the incoming payload for B2B transactions. It is a bulk messag
 
 17. Choose the link provided under *Monitoring Reference* for an event. It displays the message processing details of the integration flow involved in the transaction in a new window.
 18. The *Interchange Payload* tab displays the payload file of the interchange. You can choose to open either the sender or receiver payload from the drop-down list provided in the *Version* field.
-19. Choose *Download* <span class="SAP-icons"></span> provided after the *Version* field if you want to download the interchange payload.
+19. Choose *Download* <span class="SAP-icons-V5"></span> provided after the *Version* field if you want to download the interchange payload.
 20. Navigate to the *Unassigned Interchanges* tile after the *Monitor* tab.
 21. This tile displays the interchanges that resulted in an error early during the processing.
 22. You can also filter the unassigned interchanges based on

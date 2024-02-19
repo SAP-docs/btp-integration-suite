@@ -16,7 +16,7 @@ Every page in Analytics dashboard gives you access to notifications, help docume
 
 Click :bell: to know about the latest news and updates for SAP Integration Suite.
 
-Click <span class="SAP-icons"></span> to view the version of SAP Integration Suite, access the online help documentation, and logout of Integration Suite.
+Click <span class="SAP-icons-V5"></span> to view the version of SAP Integration Suite, access the online help documentation, and logout of Integration Suite.
 
 
 
@@ -27,6 +27,9 @@ Click <span class="SAP-icons"></span> to view the version of SAP Integration 
 In the Analytics dashboard, you access all your reports in report pages. The reports are categorized into report pages namely Overview, Health, and Usage. These report pages provide information about key metrics related to your API usage and performance.
 
 You can find a time zone switcher to the right side of the report pages. The time zone switcher allows you to view analytics data based on different time zones. The default time zone shown is UTC. The time zone switcher is available across all the report pages including custom report pages.
+
+> ### Note:  
+> The values on the chart for a particular dimension are shown only up to a certain threshold. Any values beyond this threshold are grouped together and labelled as **Others**. By default, the threshold value for the charts is set to **25**. If you wish to modify the threshold value for the charts, please create a support ticket. To create a support ticket, see [Request to Modify Threshold Value for Charts](request-to-modify-threshold-value-for-charts-b55f89d.md).
 
 > ### Note:  
 > The data retention period for all report types available in the analytics dashboard is 6 months. That is, the analytics dashboard stores and retains data only for a period of 6 months. After the retention period, the data is purged.
@@ -99,7 +102,7 @@ The **Hour** option displays 24 touch points, one for each hour of the day.
 
 The **Minutes** option displays 48 touch points, one for every 30 minutes of the day.
 
-At the top right corner of the Health page, click <span class="SAP-icons"></span> to view advanced filter menu and options. The filter menu and options appear below the date-range selector and you can filter your reports by API, Applications, Products, or Developers. Once you apply the filter options, the applied filters are displayed under *Active Filters*.
+At the top right corner of the Health page, click <span class="SAP-icons-V5"></span> to view advanced filter menu and options. The filter menu and options appear below the date-range selector and you can filter your reports by API, Applications, Products, or Developers. Once you apply the filter options, the applied filters are displayed under *Active Filters*.
 
 The rest of the Health page displays a graphical view of key API metrics, which include the following:
 
@@ -131,7 +134,7 @@ The **Week** option displays one touch point for each week of the last three mon
 
 The **Day** option displays one touch point for each day. The number of touch points displayed here varies depending upon the time range you have selected under Month or Week tabs.
 
-At the top right corner of the Usage page, click <span class="SAP-icons"></span> to view advanced filter menu and options. The filter menu and options appear below the date-range selector and you can filter your reports by API, Applications, Products, or Developers. Once you apply the filter options, the applied filters are displayed under *Active Filters*.
+At the top right corner of the Usage page, click <span class="SAP-icons-V5"></span> to view advanced filter menu and options. The filter menu and options appear below the date-range selector and you can filter your reports by API, Applications, Products, or Developers. Once you apply the filter options, the applied filters are displayed under *Active Filters*.
 
 The rest of the Usage page displays a graphical view of key API metrics, which include the following:
 
@@ -172,9 +175,9 @@ In the **Health** and **Usage** report pages, there is a date-range selector. Th
 
 At the top-right corner of the date-range selector, there is a small action bar with options to hide the date-range selector and refresh the reports.
 
-Click <span class="SAP-icons"></span> to hide or unhide the date-range selector.
+Click <span class="SAP-icons-V5"></span> to hide or unhide the date-range selector.
 
-Click <span class="SAP-icons"></span> to refresh the reports with latest data from API calls.
+Click <span class="SAP-icons-V5"></span> to refresh the reports with latest data from API calls.
 
 While viewing your reports on the Health and Usage page, you can choose to keep the data-range selector always visible. You can do so by clicking on the :pushpin:icon available below the date-range selector.
 
@@ -188,15 +191,15 @@ The Action Bar appears at the top of each report that contains graphical data. T
 
 ![](images/action_bar_0d06946.png)
 
-Click <span class="SAP-icons"></span> to hide and unhide legends for a graph.
+Click <span class="SAP-icons-V5"></span> to hide and unhide legends for a graph.
 
-Click <span class="SAP-icons"></span> <span class="SAP-icons"></span>to view enlarged and diminished image of a graph.
+Click <span class="SAP-icons-V5"></span> <span class="SAP-icons-V5"></span>to view enlarged and diminished image of a graph.
 
-Click <span class="SAP-icons"></span> to switch between full screen view and default screen view.
+Click <span class="SAP-icons-V5"></span> to switch between full screen view and default screen view.
 
-Click <span class="SAP-icons"></span> to select a different chart type. You can select between pie charts, line charts, bar charts, donut charts, or heatmaps. Note that not all chart types might be supported for a specific report.
+Click <span class="SAP-icons-V5"></span> to select a different chart type. You can select between pie charts, line charts, bar charts, donut charts, or heatmaps. Note that not all chart types might be supported for a specific report.
 
-Click <span class="SAP-icons"></span> to switch between a tabular view and graphical view of a report.
+Click <span class="SAP-icons-V5"></span> to switch between a tabular view and graphical view of a report.
 
 **Related Information**  
 

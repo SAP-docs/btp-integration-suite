@@ -33,7 +33,7 @@ After migrating your MIG, you can use the status review section available in the
 
 ## Procedure
 
-1.  On the *Message Implementation Guidelines* screen, choose <span class="SAP-icons"></span> \(More Options\) on the MIG that you want to migrate and then choose *Migrate*.
+1.  On the *Message Implementation Guidelines* screen, choose <span class="SAP-icons-V5"></span> \(More Options\) on the MIG that you want to migrate and then choose *Migrate*.
 
     > ### Tip:  
     > The *Migrate* option is also available on both the *Overview* tab and the *History* link of the MIG that you want to migrate.
@@ -91,11 +91,11 @@ This section contains the recommended follow-up steps for review and verificatio
 
 
     > ### Tip:  
-    > -   On the *Structure* tab, choose *Show Status Comments* <span class="SAP-icons"></span> to hide some of the columns for the prominent visibility of *Status* and *Comment*.
+    > -   On the *Structure* tab, choose *Show Status Comments* <span class="SAP-icons-V5"></span> to hide some of the columns for the prominent visibility of *Status* and *Comment*.
     > 
     > -   On the *Structure* tab, choose *Settings* :gear: to customize column visibility of the properties.
 
-2.  Choose *Show Changes Mode* <span class="SAP-icons"></span> to see differences between the MIG and its underlying message template.
+2.  Choose *Show Changes Mode* <span class="SAP-icons-V5"></span> to see differences between the MIG and its underlying message template.
 
 3.  Choose *Edit* to customize your MIG as per your business needs.
 

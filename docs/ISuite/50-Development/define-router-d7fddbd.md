@@ -214,7 +214,7 @@ $\{header.SenderId\} not regex '1.\*'
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Message Routing\), then *Router*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Routing\), then *Router*.
 
 2.  Place the *Router* element in the integration process and define the message path.
 

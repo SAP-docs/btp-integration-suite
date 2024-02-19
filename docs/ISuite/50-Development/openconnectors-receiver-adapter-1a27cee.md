@@ -16,7 +16,7 @@ You use the OpenConnectors receiver adapter in integration flows to communicate 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
-The OpenConnectors adapter connects with non-SAP cloud applications through REST APIs and is not Cross-Site Request Forgery \(CSRF\) protected. Youcan set the content-type to either JSON or XML format while processing the request or response for a transaction. The adapter also allows you to make calls using common HTTP methods on RESTful API services for outbound transactions.
+The OpenConnectors adapter connects with non-SAP cloud applications through REST APIs and is not Cross-Site Request Forgery \(CSRF\) protected. You can set the content-type to either JSON or XML format while processing the request or response for a transaction. The adapter also allows you to make calls using common HTTP methods on RESTful API services for outbound transactions.
 
 > ### Remember:  
 > OpenConnectors receiver adapter cannot process payloads that have an attachment.

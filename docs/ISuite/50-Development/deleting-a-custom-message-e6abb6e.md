@@ -16,7 +16,7 @@ You can also delete an uploaded custom message from the library.
 
 ## Procedure
 
-1.  Navigate to the *Custom Type Systems* <span class="SAP-icons"></span> from the left pane.
+1.  Navigate to the *Custom Type Systems* <span class="SAP-icons-V5"></span> from the left pane.
 
 2.  Choose and open the custom type system and navigate to the *Messages* tab.
 

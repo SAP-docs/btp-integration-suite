@@ -20,7 +20,7 @@ Cloud Integration allows you to configure an integration flow individually or mu
 
     You see an overview of all the artifacts available in the selected integration package.
 
-3.  In the *Actions* column for the integration flow you want to configure, choose <span class="SAP-icons"></span> and *Configure*.
+3.  In the *Actions* column for the integration flow you want to configure, choose <span class="SAP-icons-V5"></span> and *Configure*.
 
 4.  Select relevant details of externalised components in *Sender, Reciever* or *More*tab.
 

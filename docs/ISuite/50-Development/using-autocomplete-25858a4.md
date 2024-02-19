@@ -16,7 +16,7 @@ Follow this procedure to use the autocomplete feature in the OData Model Editor.
 
 ## Procedure
 
-1.  Choose *OData Model Editor* \(<span class="SAP-icons"></span>\) on the Service Designer page. The OData Model Editor page opens.
+1.  Choose *OData Model Editor* \(<span class="SAP-icons-V5"></span>\) on the Service Designer page. The OData Model Editor page opens.
 
 2.  Place the cursor in the context where you need assistance and start entering letters. Autocomplete suggestions appear next to the letters in context.
 

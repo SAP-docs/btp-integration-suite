@@ -17,7 +17,7 @@ You can choose to delete a MIG including its draft, active, or deprecated versio
 
 ## To Delete a MIG including its Draft, Active, or Deprecated Versions
 
-1.  On the *Message Implementation Guidelines* screen, choose <span class="SAP-icons"></span> \(More Options\) on the MIG that you want to delete and then choose *Delete*.
+1.  On the *Message Implementation Guidelines* screen, choose <span class="SAP-icons-V5"></span> \(More Options\) on the MIG that you want to delete and then choose *Delete*.
 
 2.  In the *Delete Message Implementation Guideline* dialog box, select the *Delete complete Message Implementation Guideline \(including history\)* option.
 
@@ -32,7 +32,7 @@ You can choose to delete a MIG including its draft, active, or deprecated versio
 
 ### Using the Message Implementation Guidelines screen
 
-1.  On the *Message Implementation Guidelines* screen, choose <span class="SAP-icons"></span> \(More Options\) on the MIG that you want to delete and then choose *Delete*.
+1.  On the *Message Implementation Guidelines* screen, choose <span class="SAP-icons-V5"></span> \(More Options\) on the MIG that you want to delete and then choose *Delete*.
 
 2.  In the *Delete Message Implementation Guideline* dialog box, select the *Delete this \(latest\) version* option.
 
@@ -43,7 +43,7 @@ You can choose to delete a MIG including its draft, active, or deprecated versio
 
 1.  On the *Message Implementation Guidelines* screen, choose the specific version of the MIG that you want to delete.
 
-2.  On the *Overview* tab, depending on the screen size, choose *Delete* or choose <span class="SAP-icons"></span> \(More\)and then choose *Delete*.
+2.  On the *Overview* tab, depending on the screen size, choose *Delete* or choose <span class="SAP-icons-V5"></span> \(More\)and then choose *Delete*.
 
 3.  In the *Confirm* dialog box, choose *OK*.
 
@@ -57,7 +57,7 @@ You can choose to delete a MIG including its draft, active, or deprecated versio
 
 1.  On the *Message Implementation Guidelines* screen, choose *History* on the MIG that you want to delete.
 
-2.  From the *Message Implementation Guideline History Versions* table, choose <span class="SAP-icons"></span> \(action menu\) on the version that you want to delete.
+2.  From the *Message Implementation Guideline History Versions* table, choose <span class="SAP-icons-V5"></span> \(action menu\) on the version that you want to delete.
 
 3.  In the *Confirm* dialog box, choose *OK*.
 

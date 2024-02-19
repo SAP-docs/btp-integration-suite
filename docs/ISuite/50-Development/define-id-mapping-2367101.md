@@ -57,7 +57,7 @@ For an example how to use this feature, see [ID Mapping Example](id-mapping-exam
 
 1.  Add an *ID Mapping* step to the integration process:
 
-    1.  In the palette, choose <span class="SAP-icons"></span> \(Mapping\) and then choose <span class="SAP-icons"></span> \(ID Mapping\) from the menu.
+    1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Mapping\) and then choose <span class="SAP-icons-V5"></span> \(ID Mapping\) from the menu.
 
     2.  Place the *ID Mapping* shape in the integration process.
 

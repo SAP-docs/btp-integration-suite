@@ -28,9 +28,9 @@ The mapping editor provides some standard functions like *Arithmetic*, *Boolean*
 
 If you're unable to achieve the desired transformation using standard functions, you can create a custom function in one of the following ways.
 
--   Choose <span class="SAP-icons"></span> \(create script\) to create a custom-mapping function by manually entering the script.
+-   Choose <span class="SAP-icons-V5"></span> \(create script\) to create a custom-mapping function by manually entering the script.
 
--   Choose <span class="SAP-icons"></span> \(add script file\) to upload a script file that contains the custom-mapping function.
+-   Choose <span class="SAP-icons-V5"></span> \(add script file\) to upload a script file that contains the custom-mapping function.
 
 
 
@@ -49,7 +49,7 @@ The mapping editor provides two ways of testing message mapping:
 > ### Restriction:  
 > Simulation for message mappings doesn't work if you've activated Edge Integration Cell in your tenants.
 
-**2. Display Queue:** The display queue option enables you to test the mapping of a specific node. In the *Mapping expression* area, provide a *Test Input File* and choose <span class="SAP-icons"></span> \(Display Queue\) to display the simulated output for the provided test input file.
+**2. Display Queue:** The display queue option enables you to test the mapping of a specific node. In the *Mapping expression* area, provide a *Test Input File* and choose <span class="SAP-icons-V5"></span> \(Display Queue\) to display the simulated output for the provided test input file.
 
 > ### Note:  
 > -   Even if the integration flow isn't in edit mode you can execute simulate and display queue test. You can hence perform the tests for configure only content as well.

@@ -40,7 +40,7 @@ Consuming a mapping artifact is a two-step process in your integration flow:
 
 2.  To reuse mapping artifacts in a message mapping step, perform the following steps:
 
-    1.  Choose the quick action in the *Message Mapping* step, and then choose <span class="SAP-icons"></span> \(Assign\).
+    1.  Choose the quick action in the *Message Mapping* step, and then choose <span class="SAP-icons-V5"></span> \(Assign\).
 
     2.  In the *Select Mapping Resource* dialog box, choose the *Global Resources* tab.
 

@@ -6,7 +6,7 @@
 
 Unsubscribe from the Integration Suite service.
 
-To unsubscribe from the Integration Suite, from your subaccount on the SAP BTP cockpit navigate to *Instances and Subscriptions* \> *Subscriptions* \> *SAP Integration Suite* \> **<span class="SAP-icons"></span> Actions** \> *Delete*.
+To unsubscribe from the Integration Suite, from your subaccount on the SAP BTP cockpit navigate to *Instances and Subscriptions* \> *Subscriptions* \> *SAP Integration Suite* \> **<span class="SAP-icons-V5"></span> Actions** \> *Delete*.
 
 All data related to your subscription in your subaccount will be deleted and cannot be restored.
 

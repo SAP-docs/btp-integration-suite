@@ -12,7 +12,7 @@ You use the Sender and Receiver elements to model remote systems that are connec
 
 1.  Open the integration flow in the editor.
 
-2.  From the palette, choose *Participants* \(<span class="SAP-icons"></span>\) and then *Sender* or *Receiver*.
+2.  From the palette, choose *Participants* \(<span class="SAP-icons-V5"></span>\) and then *Sender* or *Receiver*.
 
 
 

@@ -32,7 +32,7 @@ This option is not available for keystore entries owned by SAP.
 
 2.  On the *Current* tab, select the key pair that the signing response was created for.
 
-3.  Choose the <span class="SAP-icons"></span> \(Actions\) icon, then select *Update Signing Response*. Alternatively, you can click the key pair alias to open the key pair details, and then choose *Update* \> *Signing Response*.
+3.  Choose the <span class="SAP-icons-V5"></span> \(Actions\) icon, then select *Update Signing Response*. Alternatively, you can click the key pair alias to open the key pair details, and then choose *Update* \> *Signing Response*.
 
 4.  Browse to the signing response file that you want to upload.
 

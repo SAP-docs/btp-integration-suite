@@ -36,7 +36,7 @@ In this section, we have described how to delete the API proxy after disassociat
 
 7.  Navigate back to the *Configure* \> *APIs* page and search for the API you removed from the product.
 
-8.  To delete the API, choose the <span class="SAP-icons"></span> Action icon and choose *Delete*.
+8.  To delete the API, choose the <span class="SAP-icons-V5"></span> Action icon and choose *Delete*.
 
 9.  Provide your confirmation on the *Delete API* dialog.
 

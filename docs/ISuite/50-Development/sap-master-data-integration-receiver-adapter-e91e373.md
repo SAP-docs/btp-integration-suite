@@ -27,7 +27,7 @@ Use SAP Master Data Integration \(MDI\) receiver adapter to synchronize your mas
 
 The adapter does two actions: submit change requests to master data objects in SAP MDI \(via Requests API\) and query for changes of the master data objects in SAP MDI \(via Events API\). You can use the adapter for the following scenarios:
 
--   Request changes to your master data in the SAP MDI service
+-   Request changes to your master data in the SAP MDI service.
 
 -   Send queries to SAP MDI to know your master data.
 

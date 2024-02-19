@@ -29,7 +29,7 @@ You use this procedure to configure XML to CSV converter.
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span>, then ** \> *Converter* \> *XML to CSV Converter*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span>, then ** \> *Converter* \> *XML to CSV Converter*.
 
 2.  Place the *XML to CSV converter* in the integration process and define the message path.
 

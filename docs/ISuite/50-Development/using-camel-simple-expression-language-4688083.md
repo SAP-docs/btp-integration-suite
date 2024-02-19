@@ -202,12 +202,19 @@ Incoming message body
 
 Incoming message body
 
+> ### Note:  
+> This expression is deprecated as of version 3.12 of Apache Camel runtime \(even if it still might work in your scenario\).
+> 
+> In particular, it is **not** recommended to use this expression if your Cloud Integration runtime has been upgraded to Apache Camel runtime version 3.14. Use expression `${body}` instead.
+> 
+> See also: [3383659](https://me.sap.com/notes/3383659)
+
+
+
 </td>
 <td valign="top">
 
 `${in.body}`
-
-This expression is deprecated from Apache Camel version 3.12.x.
 
 </td>
 </tr>

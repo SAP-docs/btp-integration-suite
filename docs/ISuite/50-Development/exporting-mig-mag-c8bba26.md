@@ -12,11 +12,11 @@ You can now export a list of message implementation guidelines\(MIG\) or mapping
 
 ## Procedure
 
-1.  Login to your application and choose Message Implementation Guidelines <span class="SAP-icons"></span> or Mapping Guidelines:open_book: from the left pane.
+1.  Login to your application and choose Message Implementation Guidelines <span class="SAP-icons-V5"></span> or Mapping Guidelines:open_book: from the left pane.
 
 2.  In the overview page, choose *Export*.
 
-    This will display the list of MIGs or MAGs available for export. To view more details of a MIG/MAG, choose <span class="SAP-icons"></span> under the *Notes* column.
+    This will display the list of MIGs or MAGs available for export. To view more details of a MIG/MAG, choose <span class="SAP-icons-V5"></span> under the *Notes* column.
 
     > ### Note:  
     > The *Export* dialog also displays the number of MIGs and MAGs along with the number of versions available in the tenant. If you do a complete content move from one tenant to another, you can compare these numbers between the old and new tenant. This will help you verify if all MIGs and MAGs have been moved successfully without missing anything.
@@ -39,6 +39,6 @@ If you want to export only one MIG/MAG, follow the procedure below:
 
 1.  Select and open your MIG/MAG.
 
-2.  Choose <span class="SAP-icons"></span> and select *MAG Version \(ZIP\)*/*MIG Version \(ZIP\)* from the list.
+2.  Choose <span class="SAP-icons-V5"></span> and select *MAG Version \(ZIP\)*/*MIG Version \(ZIP\)* from the list.
 3.  This will download only that specific version of MIG/MAG into a `.zip` file.
 

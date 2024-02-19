@@ -6,7 +6,7 @@
 
 Get information about the runtime parameters of your Edge Integration Cell.
 
-Select *View Runtime Parameters* \(<span class="SAP-icons"></span> Runtime Parameters\) to jump directly to the runtime parameters of the component.
+Select *View Runtime Parameters* \(<span class="SAP-icons-V5"></span> Runtime Parameters\) to jump directly to the runtime parameters of the component.
 
 Depending on your selected component, the information about runtime parameters changes on this screen. Use the drop-down in the upper left corner to change your selection of components. The table offers the following information:
 

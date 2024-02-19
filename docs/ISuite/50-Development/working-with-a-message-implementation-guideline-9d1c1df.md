@@ -33,7 +33,7 @@ Here are a few considerations to be mindful of before you work with MIG:
     > ### Note:  
     > Ensure that the MIG you are trying to edit is not locked by other users. The *Locked By* field displays the ID of ths user who's currently editing the MIG. You need to have admin rights to unlock it. To know more about the role, see [Assigning Users for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b5226b95e11b42cd9e257ae6d2b0ee0a.html "") :arrow_upper_right:
 
-2.  Use <span class="SAP-icons"></span> and <span class="SAP-icons"></span> to expand and collapse nodes.
+2.  Use <span class="SAP-icons-V5"></span> and <span class="SAP-icons-V5"></span> to expand and collapse nodes.
 
     > ### Tip:  
     > -   If you want to search for specific elements in the MIG, select the column header. This activates a *Filter* where you can manually enter your filter criteria.

@@ -52,7 +52,7 @@ The Edge Integration Cell version is up-to-date and no upgrade is necessary.
 </td>
 <td valign="top">
 
-*Critical* \(<span class="SAP-icons"></span> Critical \)
+*Critical* \(<span class="SAP-icons-V5"></span> Critical \)
 
 </td>
 <td valign="top">
@@ -69,7 +69,7 @@ A new version of the Edge Integration Cell is available. Upgrade to this version
 </td>
 <td valign="top">
 
-*Error* \(<span class="SAP-icons"></span> Error\)
+*Error* \(<span class="SAP-icons-V5"></span> Error\)
 
 </td>
 <td valign="top">
@@ -103,7 +103,7 @@ The Default Virtual Host has been configured correctly.
 </td>
 <td valign="top">
 
-*Unavailable* \(<span class="SAP-icons"></span> Unavailable \)
+*Unavailable* \(<span class="SAP-icons-V5"></span> Unavailable \)
 
 </td>
 <td valign="top">

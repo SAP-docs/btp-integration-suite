@@ -567,7 +567,7 @@ You can use this attribute to provide stakeholder-specific information. For exam
 > ```
 
 > ### Remember:  
-> Authentication details must not be a part of the x-sap-ext-overview. Add authentication details in the security scheme section. For more information, see  <?sap-ot O2O class="- topic/xref " href="9bf4fea2546c4c368b068077ce0ade6c.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/fov1701176325794/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/4ab4c8e7a09d4608abf91c04ea51f9e3.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+> Authentication details must not be a part of the x-sap-ext-overview. Add authentication details in the security scheme section. For more information, see  <?sap-ot O2O class="- topic/xref " href="9bf4fea2546c4c368b068077ce0ade6c.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/esb1704779833497/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/4ab4c8e7a09d4608abf91c04ea51f9e3.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 
 
@@ -685,4 +685,81 @@ The value for this field would be one of the following:
 >   },
 > }
 > ```
+
+
+
+<a name="loio4ab4c8e7a09d4608abf91c04ea51f9e3__section_ajz_ykr_31c"/>
+
+## x-targetEndpoint
+
+For an API artifact to be working, you need to specify the target endpoint.
+
+> ### Sample Code:  
+> ```
+> {
+>   "info": {
+>     "title": "SAP Workflow service API",
+>     "description": "Provides functionality to work with SAP Workflow service. You can, for example, start new workflow instances and work with tasks."
+>   },
+>   "x-targetEndpoint": "
+> https://sap.com"
+> }
+> ```
+
+
+
+<a name="loio4ab4c8e7a09d4608abf91c04ea51f9e3__section_lbv_z1r_31c"/>
+
+## Handcrafting your Open API Specification
+
+Handcrafting your Open API Specification to create a valid API artifact.
+
+For an API artifact to be working, you need to have a valid base path, virtual host, and target endpoint.
+
+For example,
+
+> ### Sample Code:  
+> ```
+> {
+>   "info": {
+>     "title": "SAP Workflow service API",
+>     "description": "Provides functionality to work with SAP Workflow service. You can, for example, start new workflow instances and work with tasks."
+>   },
+>   "x-targetEndpoint": "
+> https://sap.com"
+> }
+> ```
+
+Virtual Host and Base Path information can be indicated using different attributes depending on the OpenAPISpecification version.
+
+Here’s an example for OpenAPISpecification 3.0:
+
+> ### Sample Code:  
+> ```
+> {
+> "servers": [
+> 	{
+> 	  "url": "
+> https://vh1.com/apipath1"
+> 	}
+>   ]
+> }
+> ```
+
+Where vh1.com indicates the virtual host and "apipath1" is the base path.
+
+Here’s an example for Swagger 2.0:
+
+> ### Sample Code:  
+> ```
+> 
+> {
+> 	"host": "https://vh1.com:443"
+> 	"basePath": "apipath1"
+> }
+>  
+> 
+> ```
+
+Where vh1.com indicates the VH and "apipath1" is the base path
 

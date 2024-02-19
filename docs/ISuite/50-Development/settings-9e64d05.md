@@ -2,7 +2,9 @@
 
 # Settings
 
-In the *Settings* section you can fine-tune the process of setting up individual capabilities once you've activated them for the Integration Suite. The following tabs are available for each capability:
+In the *Settings* section you can fine-tune the process of setting up individual capabilities once you've activated them for the Integration Suite.
+
+The following tabs are available for each capability:
 
 ****
 
@@ -50,7 +52,7 @@ API Management
 </td>
 <td valign="top">
 
-APIs, Runtime
+APIs
 
 </td>
 <td valign="top">

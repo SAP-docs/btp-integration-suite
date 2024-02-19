@@ -27,7 +27,7 @@ The JSON to XML converter enables you to transform messages in JSON format to XM
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span>, then choose *Transformation* \> *Converter* \> *JSON to XML Converter*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span>, then choose *Transformation* \> *Converter* \> *JSON to XML Converter*.
 
 2.  Insert the converter at the desired position in your integration process.
 

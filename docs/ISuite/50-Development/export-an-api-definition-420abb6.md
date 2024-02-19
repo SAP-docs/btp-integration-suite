@@ -31,7 +31,7 @@ To export an API proxy, proceed as follows:
 
 2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
-3.  On the *APIs* tab page, choose the <span class="SAP-icons"></span> Action icon against the required API and then select the *Export* option.
+3.  On the *APIs* tab page, choose the <span class="SAP-icons-V5"></span> Action icon against the required API and then select the *Export* option.
 
 4.  Alternatively, you can open the required API, choose the breadcrumb and then select the option *Export*.
 

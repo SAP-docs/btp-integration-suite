@@ -33,7 +33,7 @@ With the help of the XML Modifier, users can modify the incoming xml message. Th
 
 2.  If you want to add *XML Modifier* step to the integration flow, perform the following substeps:
 
-    1.  In the palette, choose <span class="SAP-icons"></span> \(Message Transformers\)and then choose :envelope:
+    1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Transformers\)and then choose :envelope:
 
     2.  Place *XML Modifier* step in the integration process.
 

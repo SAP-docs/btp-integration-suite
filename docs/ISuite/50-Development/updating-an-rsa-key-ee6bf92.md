@@ -22,7 +22,7 @@ Update an RSA key.
 
 2.  On the *Current* tab, select the RSA key.
 
-3.  Choose the <span class="SAP-icons"></span> \(Actions\) icon, then select *Update*. Alternatively, you can click the alias to open the RSA key details, and then choose *Update*.
+3.  Choose the <span class="SAP-icons-V5"></span> \(Actions\) icon, then select *Update*. Alternatively, you can click the alias to open the RSA key details, and then choose *Update*.
 
 4.  Browse for the RSA key file on your computer.
 

@@ -82,7 +82,7 @@ You can also add integration-related flow steps to the artifacts. To know more a
     -   JSON Threat Protection
 
 
-    Similarly, select the <span class="BusinessSuiteInAppSymbols"></span> Traffic Management policies icon from the palette and choose from the following options:
+    Similarly, select the <span class="BusinessSuiteInAppSymbols-V2"></span> Traffic Management policies icon from the palette and choose from the following options:
 
     -   Quota Policy
 

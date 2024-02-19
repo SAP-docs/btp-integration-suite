@@ -8,7 +8,7 @@ This integration flow transforms the message sent by the sending partner to the 
 
 Follow the procedure below to configure the integration flow
 
-1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons"></span> button of the integration flow *Step 2 - Interchange Processing Flow* and select *Configure*
+1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 2 - Interchange Processing Flow* and select *Configure*
 
 2.  Under the *Sender* tab, maintain the following parameter.
 

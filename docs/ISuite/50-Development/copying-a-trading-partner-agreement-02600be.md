@@ -27,7 +27,7 @@ There can be scenarios where you might want to reuse an existing agreement . You
 
 3.  Navigate to the *Agreements* tab.
 
-4.  Choose the Copy <span class="SAP-icons"></span> button provided under the *Actions* column of the agreement that you wish to copy.
+4.  Choose the Copy <span class="SAP-icons-V5"></span> button provided under the *Actions* column of the agreement that you wish to copy.
 
     You can also open an agreement and select the *Copy* button.
 

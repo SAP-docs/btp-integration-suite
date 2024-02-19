@@ -20,11 +20,11 @@ If you've enabled the API Management capability via Integration Suite, perform t
 
 2.  Navigate to *Services* \> *Instances and Subscriptions*.
 
-3.  Select *Integration Suite* under *Subscriptions*, choose <span class="SAP-icons"></span> Actions, and choose *Go To Application*.
+3.  Select *Integration Suite* under *Subscriptions*, choose <span class="SAP-icons-V5"></span> Actions, and choose *Go To Application*.
 
     You’re navigated to the *Integration Suite* home page where the *Design, Develop, and Manage APIs* tile is displayed.
 
-4.  On the *Design, Develop, and Manage APIs* tile, choose <span class="SAP-icons"></span> Actions, and choose *Manage Capability*.
+4.  On the *Design, Develop, and Manage APIs* tile, choose <span class="SAP-icons-V5"></span> Actions, and choose *Manage Capability*.
 
     You’re navigated to the *Integration Suite* *Provisioning* page.
 

@@ -22,7 +22,7 @@ This option is not available for keystore entries owned by SAP.
 
 2.  On the *Current* tab, select the certificate.
 
-3.  Choose the <span class="SAP-icons"></span> \(Actions\) icon, then select *Update*. Alternatively, you can click the certificate alias to open the certificate details, and then choose *Update*.
+3.  Choose the <span class="SAP-icons-V5"></span> \(Actions\) icon, then select *Update*. Alternatively, you can click the certificate alias to open the certificate details, and then choose *Update*.
 
 4.  Browse for the certificate file on your computer.
 

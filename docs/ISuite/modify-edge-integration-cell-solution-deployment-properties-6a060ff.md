@@ -10,6 +10,9 @@ Use Edge Lifecycle Management \(Edge LM\) to modify the solution deployment prop
 
 During the upgrade the service keys for connectivity with SAP Integration Suite and BTP services are rotated as needed. For key rotation, the `modify` operation can be used even without changing specific solution properties.
 
+> ### Note:  
+> You must modify the Edge Integration Cell deployment solution properties \(without changing any parameter\) with every new solution release if an upgrade is skipped by SAP or delayed by you. Else, deployment and undeployment of content will be blocked.
+
 To modify the Edge Integration Cell deployment solution properties, proceed as follows:
 
 

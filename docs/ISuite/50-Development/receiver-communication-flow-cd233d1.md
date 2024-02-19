@@ -11,7 +11,7 @@ Follow the procedure below to configure the integration flow.
 > ### Note:  
 > If the receiver side integration flow is calling a custom integration flow, only the computed Partner Directory ID header will be handed over by the receiver integration flow to the custom integration flow.
 
-1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons"></span> button of the integration flow *Step 3 - Receiver Communication Flow* and select *Configure*
+1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 3 - Receiver Communication Flow* and select *Configure*
 
 2.  Under the *Sender* tab, maintain the following parameter.
 
