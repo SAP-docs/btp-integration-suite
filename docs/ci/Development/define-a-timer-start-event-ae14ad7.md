@@ -16,7 +16,7 @@ If you want to configure a process to automatically start and run on a particula
 > ### Remember:  
 > -   When you deploy or undeploy an integration flow with *Scheduler*, the system automatically releases all the scheduler locks.
 > 
-> -   When you deploy small integration flows with *Timer* \(for example, an integration flow with timer, content modifier and mail adapter\), due to fast processing times, multiple schedules are triggered. When you deploy small integration flows with *Timer* \(for example, an integration flow with timer, content modifier and mail adapter\), due to fast processing times, multiple schedules are triggered.
+> -   When you deploy small integration flows with *Timer* \(for example, an integration flow with timer, content modifier and mail adapter\), due to fast processing times, multiple schedules are triggered.
 > 
 > -   If the *Timer* is configured to trigger message processing at periodic intervals and the processing isn’t completed before the next scheduled interval, then the *Timer* skips the following interval.
 > 
