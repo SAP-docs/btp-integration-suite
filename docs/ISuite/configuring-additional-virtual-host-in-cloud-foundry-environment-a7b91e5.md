@@ -1,0 +1,17 @@
+<!-- loioa7b91e5aca32497ca2b17c671ed2bb42 -->
+
+# Configuring Additional Virtual Host in Cloud Foundry Environment
+
+A virtual host allows you to host multiple domain names on the API Management capability within Integration Suite.
+
+Create a new virtual host with default domain or custom domain and update alias, keystore, keyalias, and truststore for an existing virtual host in the Cloud Foundry environment.
+
+**Related Information**  
+
+
+[Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](region-specific-ip-addresses-available-for-api-management-cloud-foundry-environment-585d639.md "API Management protects your backend services. However, API Management needs to establish connectivity to your backend services during an API call execution.")
+
+[User Roles in API Management](user-roles-in-api-management-7010b58.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
+
+[Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "You can deactivate your API Management capability from Integration Suite to disable your account from the API Management service.")
+

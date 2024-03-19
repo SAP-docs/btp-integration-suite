@@ -30,13 +30,26 @@ You've configured a source system as described in [Add an SAP Process Orchestrat
 
 3.  Enter a *Request Name* and select the *System* you want to connect to.
 
-4.  Choose *Create*.
+4.  Choose one of the following options:
 
-    The data extraction starts. Once the extraction finishes, the new request appears in the list of data extraction requests with status *Completed*.
+    -   *Complete Extraction*: You want to extract **all integration scenarios** from the selected system.
 
-    If the extraction has status *Completed with warnings* or *Completed with errors*, open the extraction log and review the warnings and errors. Fix errors in your local SAP Process Orchestration system, otherwise they're not included in any scenario evaluations of this data extraction. Once you've fixed the errors, you must create a new data extraction.
+        Continue with step 5.
 
-5.  Choose *Log* to view the data extraction log, which provides you with details about the data extraction.
+    -   *Custom Extraction*: You want to extract **a subset of integration scenarios** from the selected system. Use this option, for example, if you want to exclude specific integration scenarios or only need to extract a small selection.
+
+        In the list of integration scenarios that were retrieved from the system, all are selected by default. Customize the list by deselecting and selecting integration scenarios to fit your needs. You can use the search function to find specific integration scenarios.
+
+        ![When creating a new data extraction, you can choose between Complete Extraction and Custom Extraction. If you choose Custom Extraction, a list of all integration scenarios available in the selected system is retrieved. Select and deselect integration scenarios in this list to customize the selection of integration scenarios you want to extract.](images/MigAss_CreateDataExtraction_Custom_SUI_1118568.png)
+
+
+5.  Choose *Create*.
+
+    The data extraction starts. Once the extraction finishes, the new request appears in the list of data extraction requests with the status *Completed*.
+
+    If the extraction has the status *Completed with warnings* or *Completed with errors*, open the extraction log and review the warnings and errors. Fix errors in your local SAP Process Orchestration system, otherwise they're not included in any scenario evaluations of this data extraction. Once you've fixed the errors, you must create a new data extraction.
+
+6.  Choose *Log* to view the data extraction log, which provides you with details about the data extraction.
 
 
 

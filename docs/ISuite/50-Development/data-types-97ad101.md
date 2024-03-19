@@ -2,7 +2,7 @@
 
 # Data Types
 
-Cloud Integration allows you to view your imported Data Types.
+Cloud Integration allows you to view and edit your imported Data Types.
 
 Data Type is an object, containing the structure of data that defines the message. A data type is defined using XML Schema Definition Language \(XSDL\).
 
@@ -79,7 +79,7 @@ Occurrence
 </td>
 <td valign="top">
 
-Determines how often elements occur. For attributes the possible value is *Optional* or *Required*.
+Determines how often elements occur.
 
 </td>
 </tr>
@@ -97,16 +97,16 @@ Displays the restriction of the value range of a built-in data type for simple d
 </tr>
 </table>
 
-Choose a row to view the following details:
+Select a row to view the following details. To edit a data type, choose *Edit* and select the node to edit its details:
 
-**Element Details**
+**Element/Attribute Details**
 
 
 <table>
 <tr>
 <th valign="top">
 
-Facet
+Field
 
 </th>
 <th valign="top">
@@ -130,7 +130,12 @@ Name
 </td>
 <td valign="top">
 
-Displays the name of the selected node
+Enter the name of the selected node.
+
+> ### Note:  
+> You can't change the name of the root node.
+
+
 
 </td>
 </tr>
@@ -142,7 +147,7 @@ Category
 </td>
 <td valign="top">
 
-Displays the category of the selected node
+Displays the category of the selected node. The category of a node is not editable.
 
 </td>
 </tr>
@@ -154,7 +159,24 @@ Type
 </td>
 <td valign="top">
 
-Displays a built-in data type \(example string, decimal, or integer\) or reference to an existing data type for an element or attribute.
+Choose a type for an element or attribute:
+
+-   Primitive Type: From the *Value* field, select a built-in data type \(example string, decimal, or integer\)
+
+-   Data Type: Choose *Select* to assign a referenced data type from the existing data types. The structure of the selected data type gets loaded in the tree table.
+
+    > ### Note:  
+    > For root node and for child attribute nodes only Simple Type data types can be assigned. Hence, only Simple Type data types from the selected packages are listed. The data types that are currently being edited are excluded from the list.
+
+
+> ### Note:  
+> -   If no *Type* is assigned to a child node, Primitive type is selected by default with no *Value* assigned to the node.
+> 
+> -   Changing the Type of a parent element node will delete its child attributes.
+> -   Changing the Type of root node will delete all its subelements.
+> -   Assigning a Type to the root node or parent node when no Type is assigned, will delete all its subelements.
+
+
 
 </td>
 </tr>
@@ -166,7 +188,7 @@ Namespace
 </td>
 <td valign="top">
 
-Displays the namespace to which the parent artifact of the selected node belongs to or where it's created.
+Displays the namespace to which the referenced data type belongs to or where it's created.
 
 </td>
 </tr>
@@ -175,12 +197,38 @@ Displays the namespace to which the parent artifact of the selected node belongs
 
 Package Name
 
-\(appears only if the Type is reference to an existing data type\)
+\(appears only if the Type is Data Type\)
 
 </td>
 <td valign="top">
 
-Displays the name of the package for referenced data type.
+Displays the package name of the data type reference assigned to the node.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Default
+
+</td>
+<td valign="top">
+
+Displays the default value defined for the node.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Occurrence
+
+\(appears only if the selected node is an Attribute\)
+
+</td>
+<td valign="top">
+
+Choose *required* or *optional*.
 
 </td>
 </tr>
@@ -189,10 +237,12 @@ Displays the name of the package for referenced data type.
 
 MinOccurs & Maxoccurs
 
+\(appears only if the selected node is an Element\)
+
 </td>
 <td valign="top">
 
-Specify the minimum and maximum occurrence of an an element
+Specify the minimum and maximum occurrence of an element.
 
 </td>
 </tr>
@@ -204,7 +254,7 @@ Description
 </td>
 <td valign="top">
 
-Displays description of the node.
+Enter the description of the selected node.
 
 </td>
 </tr>
@@ -212,6 +262,11 @@ Displays description of the node.
 <td valign="top" colspan="2">
 
 **Restrictions**
+
+> ### Note:  
+> You can restrict the value range of a built-in data type for simple data types, elements or attributes.
+
+
 
 </td>
 </tr>
@@ -223,7 +278,7 @@ enumeration
 </td>
 <td valign="top">
 
-Restricts the value range to a set of individual values.
+Restricts the value range to a set of individual values. The allowed value is 'float'. You can add multiple enumeration.
 
 </td>
 </tr>
@@ -235,7 +290,7 @@ fractionDigits
 </td>
 <td valign="top">
 
-Specifies the number of places permitted after the comma.
+Specify the number of places permitted after the comma. The allowed value is only non negative integer type.
 
 </td>
 </tr>
@@ -247,7 +302,7 @@ length, maxLength, minLength
 </td>
 <td valign="top">
 
-Exact \(length\), maximum \(maxLength\), or minimum \(minLength\) length of a data type.
+Specify the exact \(length\), maximum \(maxLength\), or minimum \(minLength\) length of a string-based data type. The allowed value is only non negative integer type.
 
 </td>
 </tr>
@@ -283,7 +338,7 @@ pattern
 </td>
 <td valign="top">
 
-Specifies a pattern for string-based data types. The pattern has the form of a regular expression that describes a set of appropriate character sequences.
+Specify a pattern for string-based data types. The pattern has the form of a regular expression that describes a set of appropriate character sequences. You can add multiple patterns.
 
 </td>
 </tr>
@@ -295,7 +350,7 @@ totalDigits
 </td>
 <td valign="top">
 
-Specifies the total number of digits in a number. The value is only xsd: positiveInteger type.
+Specify the total number of digits in a number. The allowed value is only positive integer type.
 
 </td>
 </tr>
@@ -307,13 +362,13 @@ whiteSpace
 </td>
 <td valign="top">
 
-Specifies how white-space character \(line feed, tabs, blanks, and carriage returns\) is applied. It has three values:
+Specify how white-space character \(line feed, tabs, blanks, and carriage returns\) is applied. It has three values:
 
 preserve: Retains all white-space characters.
 
 replace: Replaces every line feed, tab, and carriage return with a blank.
 
-collapse: As for replace but subsequent blanks are replaced by a single blank and leading, final blanks are deleted.
+collapse: Similar to replace but subsequent blanks are replaced by a single blank and leading, final blanks are deleted.
 
 </td>
 </tr>
@@ -399,7 +454,7 @@ Created On & Created By
 </td>
 <td valign="top">
 
-User who created the data type and when it's created.
+Displays the identity of the user who imported the data type and the date when it was imported
 
 </td>
 </tr>
@@ -411,7 +466,7 @@ Description
 </td>
 <td valign="top">
 
-Displays the description associated with the data type, if any.
+Displays the description associated with the data type, if any. User who created the data type and when it's created.
 
 </td>
 </tr>
@@ -423,7 +478,7 @@ ES Repository Information
 </td>
 <td valign="top">
 
--   Software Component Version: Displays the software component version from which the data type is referenced.
+-   Software Component Version: Displays the software component version to which the data type belongs to in ES repository.
 -   Classification: Displays the data type classification as:
     -   Free-style data types are based on the primitive data types and they don't need any further parameters to define themselves. For example: Decimal, String, Integer, and so on.
     -   Core and aggregated data types are based on Core Components Technical Specification \(CCTS\) and are the basis for application-specific data types accepted across the businesses.
@@ -443,8 +498,21 @@ ES Repository Information
 
 Displays the XML Schema Definition \(XSD\) that is, the text view of the data type in read-only mode.
 
+
+
+<a name="loio97ad10142fc34269902006e488af1eff__section_dtp_3hm_q1c"/>
+
+## Saving Data Types
+
+Choose *Save* to save the draft. All modifications are refelcted in XSD tab.
+
+Choose*Save as version* to save the Data Type with a new version. All modifications are reflected in XSD tab.
+
+> ### Note:  
+> You can use *Save* and*Save as version* even if you have validation errors in your *Structure* tab.
+
 **Related Information**  
 
 
-[Message Types](message-types-2eb71b8.md "Cloud Integration allows you to view your imported Message Types along with their referenced data types.")
+[Message Types](message-types-2eb71b8.md "Cloud Integration allows you to view and edit your imported Message Types along with their referenced data types.")
 

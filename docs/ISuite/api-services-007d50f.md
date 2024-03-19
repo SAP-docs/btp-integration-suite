@@ -68,7 +68,7 @@ In the API Portal, at the top-right corner, choose *Navigation Links* \(![](imag
 
 For more information, see [SAP API Management, 1.5.2 Client SDK](https://help.sap.com/doc/sap-api-management-client-sdk/Cloud/en-US/SAP%20API%20Management%20Cloud%20SDK_1.5.2.pdf).
 
-You can also download the package from [https://int.repositories.cloud.sap/artifactory/deploy-releases/com/sap/apimgmt/client/sdk/apim-client-sdk/1.5.2/apim-client-sdk-1.5.2.zip](https://int.repositories.cloud.sap/artifactory/deploy-releases/com/sap/apimgmt/client/sdk/apim-client-sdk/1.5.2/apim-client-sdk-1.5.2.zip). On navigating to this link, select the latest version and choose *View All*.
+You can also download the package from [https://int.repositories.cloud.sap/artifactory/deploy-releases/com/sap/apimgmt/client/sdk/apim-client-sdk/1.6.0/apim-client-sdk-1.6.0.zip](https://int.repositories.cloud.sap/artifactory/deploy-releases/com/sap/apimgmt/client/sdk/apim-client-sdk/1.6.0/apim-client-sdk-1.6.0.zip). On navigating to this link, select the latest version and choose *View All*.
 
 </td>
 </tr>

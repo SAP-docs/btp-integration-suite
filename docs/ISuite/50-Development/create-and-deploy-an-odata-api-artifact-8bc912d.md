@@ -10,7 +10,9 @@ Use this procedure to create and deploy an OData API artifact.
 
 ## Context
 
-An OData API artifact creates an OData API-based integration scenario with OData V2 sender adapter.
+We've unified the experience of creating all API artifacts with a single entry point. You now first the select the runtime profile of your choice and then move to appropriate steps to create the API artifacts that the runtime profile supports. For more information, see help
+
+An OData API artifact creates an OData API-based integration scenario with the OData V2 sender adapter.
 
 <a name="task_ytz_gq4_gpb"/>
 
@@ -26,37 +28,35 @@ An OData API artifact creates an OData API-based integration scenario with OData
 
 1.  Choose *Design* \> *Integrations and APIs*.
 
-2.  Choose *Create*.
+2.  Select the integration package where you want to create an SOAP API artifact and choose *Edit*.
 
-3.  Enter the required data for the integration package. See [Creating an Integration Package](creating-an-integration-package-9126d79.md).
+3.  In the *Artifacts* tab, choose *Add* \> *API*.
 
-4.  In the *Artifacts* tab, choose *Add* \> *OData API*.
+    The *Create API* wizard opens.
 
-5.  In the *Add OData API* dialog box, choose *Create Using Template*.
+4.  Select *Cloud Integration* from the list of available runtime profiles. For more information, see [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md). Choose *Next*.
+
+5.  Choose *OData API* \> *Next*.
+
+6.  In the *Select A Method* tab, choose *Create Using Template*.
 
     By choosing *Create Using Wizard* or *Upload*, you start creating an OData API project. See [Developing an OData API Project](developing-an-odata-api-project-d961654.md).
 
-6.  Enter the name and description for the OData API.
+7.  Enter the name and description for the OData API.
 
     ID and Runtime Profile are uneditable fields.
 
-7.  Choose *OK* to create the artifact.
+8.  Choose *Create*.
 
-    The artifact is added to the integration package.
+    The artifact is added to the integration package and the API artifact opens up in the editor.
 
-8.  Save the integration package.
-
-9.  Choose the artifact to open it.
-
-    The integration flow editor opens the default integration flow model.
-
-10. Choose *Edit*.
+9.  Choose *Edit*.
 
     A palette appears on top of the integration flow model that provides access to all integration flow steps that you can add to the model. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
-11. Choose *Save*.
+10. Make your changes and choose *Save*.
 
-12. Choose *Deploy* when your artifact is ready for execution.
+11. Choose *Deploy* when your artifact is ready for execution.
 
     > ### Note:  
     > The URL of the OData API endpoint is derived from the name of the OData API artifact.

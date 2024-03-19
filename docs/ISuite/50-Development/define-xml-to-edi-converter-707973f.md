@@ -23,7 +23,9 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
 2.  Define the parameters to convert the XML data format to EDI data format.
 
     > ### Note:  
-    > Use *EDIFACT* tab to convert XML file to ODETTE document. XML to EDI converter version 1.2 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
+    > -   Use *EDIFACT* tab to convert XML file to ODETTE document. XML to EDI converter version 1.2 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
+    > 
+    > -   For X12 format, XML to EDI converter v1.3.0 and v2.1.0 onwards support same group name with different definition in XSD.
 
 
     <table>

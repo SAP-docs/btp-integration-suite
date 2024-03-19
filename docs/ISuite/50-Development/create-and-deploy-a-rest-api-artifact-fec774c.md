@@ -6,11 +6,19 @@ Use this procedure to create and deploy a REST API artifact.
 
 
 
+<a name="loiofec774cfff994beebf3b94253c2d3723__prereq_fxs_b33_r1c"/>
+
+## Prerequisites
+
+[Creating an Integration Package](creating-an-integration-package-9126d79.md)
+
+
+
 <a name="loiofec774cfff994beebf3b94253c2d3723__context_mn5_tdk_f4b"/>
 
 ## Context
 
-A REST API artifact creates a REST API-based integration scenario with HTTPS sender adapter.
+A REST API artifact creates a REST API-based integration scenario with the HTTPS sender adapter.
 
 <a name="task_uv3_njc_hpb"/>
 
@@ -26,20 +34,24 @@ A REST API artifact creates a REST API-based integration scenario with HTTPS sen
 
 1.  Choose *Design* \> *Integrations and APIs*.
 
-2.  Choose *Create*.
+2.  Select the integration package where you want to create an REST API artifact and choose *Edit*.
 
-3.  Enter the required data for the integration package. See [Creating an Integration Package](creating-an-integration-package-9126d79.md).
+3.  In the *Artifacts* tab, choose *Add* \> *API*.
 
-4.  In the *Artifacts* tab, choose *Add* \> *REST API*.
+    The *Create API* wizard opens.
 
-5.  In the *Add REST API* dialog box, choose one of the following options:
+4.  Select *Cloud Integration* from the list of available runtime profiles. For more information, see [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md). Choose *Next*.
+
+5.  Choose *REST API* \> *Next*.
+
+6.  In the *Select A Method* tab, choose one of the following options:
 
     -   *Create* – to create a REST API artifact.
 
     -   *Upload* – to create a new REST API artifact by uploading the necessary resources from your local file directory.
 
 
-6.  Enter the REST API details as listed in the following table.
+7.  Enter the REST API details as listed in the following table.
 
 
     <table>
@@ -58,24 +70,24 @@ A REST API artifact creates a REST API-based integration scenario with HTTPS sen
     <tr>
     <td valign="top">
     
-    Name
-    
-    </td>
-    <td valign="top">
-    
-    Name of the API.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     REST API \(only for upload\)
     
     </td>
     <td valign="top">
     
     Upload a ZIP file containing the REST API resources.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Name
+    
+    </td>
+    <td valign="top">
+    
+    Name of the API.
     
     </td>
     </tr>
@@ -107,23 +119,17 @@ A REST API artifact creates a REST API-based integration scenario with HTTPS sen
     
     Runtime Profile is an uneditable field.
 
-7.  Choose *OK* to create the artifact.
+8.  Choose *Create*.
 
-    The artifact is added to the integration package.
+    The artifact is added to the integration package and the API artifact opens up in the editor.
 
-8.  Save the integration package.
-
-9.  Choose the artifact to open it.
-
-    The integration flow editor opens the default integration flow model.
-
-10. Choose *Edit*.
+9.  Choose *Edit*.
 
     A palette appears on top of the integration flow model that provides access to all integration flow steps that you can add to the model. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
-11. Choose *Save*.
+10. Make your changes and choose *Save*.
 
-12. Choose *Deploy* when your artifact is ready for execution.
+11. Choose *Deploy* when your artifact is ready for execution.
 
 
 

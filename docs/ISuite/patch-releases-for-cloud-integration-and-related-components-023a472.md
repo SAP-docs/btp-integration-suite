@@ -12,6 +12,149 @@ The following patch release information covers the most recent changes made to t
 
 
 
+<a name="loio023a4725bb734f86be8a5625abe54110__section_bsy_5yb_r1c"/>
+
+## March 2024
+
+**Software Increment: 2312**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_p24_3d4_m1c"/>
+
+## February 2024
+
+**Software Increment: 2312**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.49.27
+
+</td>
+<td valign="top">
+
+This patch ensures that the API returns the details of the artifact version which is available on worker even if the multiple versions are available in CO db after executing regeneration.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.49.25
+
+</td>
+<td valign="top">
+
+There have been partly broken integration flow processes, due to Database Timeouts happening upon degraded encryption/decryption performance. This patch fixes this issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.49.20.
+
+</td>
+<td valign="top">
+
+The trading partner dynamic parameters used by the new migrated agreement could not be exported, and the user with the Read\_Only role is able to operate the cross actions. This patch fixes these issues.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.49.4
+
+</td>
+<td valign="top">
+
+EDI splitter threw an exception in integration flow for the Partners sending the EDIFACT payload without line feed and ?’ \(escape character + segment terminator\) in one segment. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.49.21
+
+</td>
+<td valign="top">
+
+There was a performance degradation for message processing caused by repetitively calling NM functionality to retrieve the tenant name. This patch fixes the issue by caching this single value to avoid redundant calls.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio023a4725bb734f86be8a5625abe54110__section_nyz_rrv_11c"/>
 
 ## January 2024

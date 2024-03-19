@@ -132,7 +132,7 @@ For more information on role collections, see [Roles and Role Collections](https
     -   Complete the onboarding process
     -   Access the *API Settings* page. See [Setting Up API Management Capability](50-Development/setting-up-api-management-capability-f34e86c.md) 
 
-    For more information on relevant roles, see [User Roles in API Management \(New\)](user-roles-in-api-management-new-911ca5a.md).
+    For more information on relevant roles, see [Tasks and Corresponding Role Collections](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/IAT/en-US/911ca5a620e94ab581fa159d76b3b108.html "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.") :arrow_upper_right:.
 
     For end-to end instructions on how to set up and configure API Management, refer the tutorial [Set Up API Management from Integration Suite | Tutorials for SAP Developers](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html).
     

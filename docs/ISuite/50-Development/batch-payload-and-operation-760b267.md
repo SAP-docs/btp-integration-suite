@@ -108,7 +108,7 @@ Batch mode is supported in following ways:
         > > ```
 
 
--   **Update Insert**: This operation lets you to update an existing entry. If it does not exist, a new entry is created.
+-   **Update Insert**: This operation lets you update an existing entry. If it does not exist, a new entry is created.
 
     > ### Note:  
     > -   Multiple *access* tags are not supported.
@@ -176,7 +176,7 @@ Batch mode is supported in following ways:
     > > ```
 
     > ### Sample Code:  
-    > For faliure scenarios:
+    > For failure scenarios:
     > 
     > ```
     > 
@@ -240,40 +240,6 @@ Batch mode is supported in following ways:
     > 
     > > ### Note:  
     > > The above error occurs because the table **test** already contains a record with **221 \(emp\_id\)** as primary key. Hence, the key **229** cannot be updated as **221**, primary key should be unique.
-
--   Stored procedures:
-
-    > ### Sample Code:  
-    > ```
-    > 
-    > <root>
-    >     <StatementName>
-    >         <storedProcedureName action="EXECUTE">
-    >             <table>samplestoredproc</table>
-    >             <emp_id type="INTEGER">3</emp_id>
-    >             <emp_name type="VARCHAR">test</emp_name>
-    >         </storedProcedureName >
-    >     </StatementName>
-    > </root>
-    > 
-    > ```
-    > 
-    > > ### Output Code:  
-    > > ```
-    > > 
-    > > <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    > > <root>
-    > >     <StatementName_response>
-    > >         <response_1>
-    > >             <row>
-    > >                 <emp_id>3</emp_id>
-    > >                 <emp_name>test</emp_name>
-    > >                 <email>test@gmail.com</email>
-    > >             </row>
-    > >         </response_1>
-    > >     </StatementName_response>
-    > > </root>
-    > > ```
 
 -   Native SQL queries are supported with prepared statements only. If you are using batch mode with native SQL queries, ensure:
 

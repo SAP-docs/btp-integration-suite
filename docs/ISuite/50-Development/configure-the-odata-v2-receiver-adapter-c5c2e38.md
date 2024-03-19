@@ -23,19 +23,19 @@ OData receiver adapter supports externalization. To externalize the parameters o
 > ### Note:  
 > -   OData adapter doesn’t support `$format` and `$inlineCount` in query options.
 > 
-> -   OData adapter supports sending error response in exception subprocess. The error response body is part of expression `${in.body}`.
+> -   OData adapter supports sending an error response in the exception subprocess. The error response body is part of expression `${in.body}`.
 > 
 > -   OData API response code is captured in the `camelhttpresponsecode` header.
 > 
-> -   OData adapter doesn’t support incoming payload in JSON format. The adapter only supports payload in XML format.
+> -   OData adapter doesn’t support incoming payload in JSON format. The adapter only supports a payload in XML format.
 > 
 > -   OData adapter doesn't support the word `link` in your payload. The word is reserved for creating reference links.
 > 
-> -   The adapter enables you to use connection pool while connecting to OData backend. For more information, see SAP Note [2863657](https://me.sap.com/notes/2863657).
+> -   The adapter enables you to use the connection pool while connecting to the OData back end. For more information, see SAP Note [2863657](https://me.sap.com/notes/2863657).
 > 
 > -   You can enable tracing for the adapter and analyze its log. For more information, see SAP Note [2852998](https://me.sap.com/notes/2852998).
 
-Select the *General* tab and provide values in the fields as follows.
+Select the *General* tab and provide the values in the fields as follows.
 
 **General**
 
@@ -67,7 +67,7 @@ Enter the name of the channel.
 </tr>
 </table>
 
-Select the *Connection* tab and provide values in the fields as follows.
+Select the *Connection* tab and provide the values in the fields as follows.
 
 **Connection**
 
@@ -105,7 +105,7 @@ URL of the OData V2 service that you want to connect to.
 </td>
 <td valign="top">
 
-The type of proxy you want to use for establishing connection with OData V2 service.
+The type of proxy you want to use for establishing connection with the OData V2 service.
 
 Currently, you can choose between *Internet* \(default\) and *On-Premise*.
 
@@ -168,7 +168,7 @@ The following options are enabled only if you choose *Proxy Type* as *Internet*.
 </td>
 <td valign="top">
 
-Credential name of the credentials that you’ve deployed in *Security Material* section of :eye:.
+Credential name of the credentials that you’ve deployed in the *Security Material* section of :eye:.
 
 </td>
 </tr>
@@ -182,7 +182,7 @@ Credential name of the credentials that you’ve deployed in *Security Material*
 </td>
 <td valign="top">
 
-Enter the private key alias that enables the system to fetch the private key from keystore for authentication.
+Enter the private key alias that enables the system to fetch the private key from the keystore for authentication.
 
 > ### Restriction:  
 > The values `true` and `false` aren’t supported for this field.
@@ -267,11 +267,11 @@ To leverage all operations, always use the latest version of the adapter.
 > ### Note:  
 > For non-GET operations, if the server responds with HTTP 2xx series code, the same response code is accepted for message processing.
 
-For the *POST* operation, the automatic Primary Key generation is handled in 2 different ways based on the implementation in the backend server:
+For the *POST* operation, the automatic Primary Key generation is handled in two different ways based on the implementation in the back end server:
 
--   If the backend supports the primary key entry in the payload and later overwrites the entry value after receiving, you can enter a dummy value for the primary key.
+-   If the back end supports the primary key entry in the payload and later overwrites the entry value after receiving, you can enter a dummy value for the primary key.
 
--   If the primary key entry in the payload isn’t supported by the backend, then the payload must be sent without a primary key value. If mapping step is used, you can disable the entry by performing one of the following steps:
+-   If the primary key entry in the payload isn’t supported by the back end, then the payload must be sent without a primary key value. If the mapping step is used, you can disable the entry by performing one of the following steps:
     -   Disable the primary key value in the mapping.
 
     -   Manually remove the primary key entry from the schema and use that schema in mapping.
@@ -366,11 +366,11 @@ Additional query options that aren’t available in the *Model Operation* wizard
 </td>
 <td valign="top">
 
-Type of content that you’re sending to the OData V2 backend service. The adapter supports following content types:
+Type of content that you’re sending to the OData V2 back end service. The adapter supports the following content types:
 
 -   *Atom* \(default\): Select this option to convert an XML payload to ATOM XML format.
 
--   *JSON*: Select this option to convert XML payload to JSON format.
+-   *JSON*: Select this option to convert the XML payload to JSON format.
 
 
 
@@ -387,7 +387,7 @@ Type of content that you’re sending to the OData V2 backend service. The adapt
 </td>
 <td valign="top">
 
-Encoding type used for sending content to OData API.
+The encoding type used for sending content to the OData API.
 
 </td>
 </tr>
@@ -438,7 +438,7 @@ To use *Process in Pages*, you must use the adapter in a *Local Integration Proc
 This option isn’t enabled for *Content Enricher*.
 
 > ### Note:  
-> You can pass custom HTTP headers to OData receiver if you’ve defined the header in content modifier or script element and the element is placed before OData receiver adapter in an integration flow.
+> You can pass custom HTTP headers to OData receiver if you’ve defined the header in a content modifier or script element and the element is placed before the OData receiver adapter in an integration flow.
 
 
 
@@ -452,7 +452,7 @@ This option isn’t enabled for *Content Enricher*.
 </td>
 <td valign="top">
 
-Maximum time the adapter must wait for receiving a response from the OData V2 service.
+The maximum time the adapter must wait for receiving a response from the OData V2 service.
 
 </td>
 </tr>
@@ -480,11 +480,11 @@ If you're using older versions of the adapter where you don't see the option, de
 </td>
 <td valign="top">
 
-*Request Headers*: Provide the **| \(Pipe\)**separated value list of HTTP request headers that has to be sent to the OData backend.
+*Request Headers*: Provide the **| \(Pipe\)**separated value list of HTTP request headers that has to be sent to the OData back end.
 
 If the value \* is entered, **all** the message headers are converted to HTTP request headers and forwarded.
 
-*Response Headers*: Provide the **| \(Pipe\)** separated value list of HTTP response headers. The received header values will then be converted to message/exchange headers.
+*Response Headers*: Provide a **| \(Pipe\)** separated value list of HTTP response headers. The received header values are then converted to message/exchange headers.
 
 If the value \* is entered, **all** the HTTP response header values are converted to message/exchange headers.
 
@@ -493,17 +493,19 @@ If the value \* is entered, **all** the HTTP response header values are converte
 <tr>
 <td valign="top">
 
-*Metadata Details* 
+*METADATA DETAILS* 
 
 </td>
 <td valign="top">
 
-OData receiver adapter makes a $metadata call, before the actual endpoint call. Not all headers or query parameters are passed to the $metadata call. If your service needs some headers \(for example header `apikey`, which is a customer authorization header to invoke API endpoints\) or parameters then you can provide the same in the request headers and query parameters.
+The adapter makes a $metadata call, before the actual endpoint call. Not all headers or query parameters are passed to the $metadata call. If your service needs some headers \(for example header `apikey`, which is a customer authorization header to invoke API endpoints\) or parameters then you can provide the same in the request headers and query parameters.
 
-Request headers provide comma-separated HTTP request headers to be sent to $metadata call. Custom query parameters enter key value pairs of query parameters, separated by *&* for multiple entries.
+*Request Headers* – provide a pipe-separated \(|\) list of HTTP request headers to be sent to the $metadata call.
+
+*Custom Query Parameters* – provide an ampersand-separated \(&\) list of key-value pairs.
 
 > ### Note:  
-> The adapter stores the metadata cache for 1 hour after which it gets invalidated. The adapter looks out for the metadata again that can cause dips in performance every hour. If you face such dips every hour, you can use the message property `SAP_ODataV2_RefreshCacheOnExpiry` and set the value to `false`. This can be done using a Content Modifier or Script step before the adapter. Upon using this property, the adapter stops invalidating the cache and looking for metadata every hour.
+> The adapter stores the metadata cache for 1 hour after which it gets invalidated. The adapter looks out for the metadata again that can cause dips in performance every hour. If you face such dips every hour, you can use the message property `SAP_ODataV2_RefreshCacheOnExpiry` and set the value to `false`. You can do this using a Content Modifier or Script step before the adapter. Upon using this property, the adapter stops invalidating the cache and looking for metadata every hour.
 
 
 
@@ -520,7 +522,7 @@ This adapter provides a wizard for modeling operations easily. It’s recommende
 There are three main steps in this wizard:
 
 1.  *Connect to System:* In this step, you provide the details required for connecting to the Web Service that you’re accessing.
-2.  *Select Entity and Define Operation:* In this step, you select the operation you want to perform and the entity on which you want to perform the operation on. After selecting the entity, you also select the fields, filtering and sorting conditions.
+2.  *Select Entity and Define Operation:* In this step, you select the operation you want to perform and the entity on which you want to perform the operation. After selecting the entity, you also select the fields, filtering and sorting conditions.
 3.  *Configure Filter & Sorting:* This step is available only for data fetch operations, where you can define the order in which the records are fetched in the response payload and filter for the fields that you require.
 
 **Connect to System**
@@ -549,7 +551,7 @@ Description
 
 You can choose between *Remote* and *EDMX*.
 
-If you choose *Remote*, you’ve to manually specify all the details like address and authentication details.
+If you choose *Remote*, you’ve have to manually specify all the details like address and authentication details.
 
 If you choose *Local EDMX File*, you select the service definition EDMX file that contains all these details that you specified manually when you selected *Remote*.
 
@@ -668,7 +670,7 @@ The adapter supports *Function Import* for the following return types:
 -   Void
 
 
-*Function Import*can also be consumed in the *$batch* mode.
+*The function Import*can also be consumed in the *$batch* mode.
 
 </td>
 </tr>
@@ -730,7 +732,7 @@ Fields associated with the entity that you want to perform the operation on.
 </td>
 <td valign="top">
 
-Type the field name that you are looking for to narrow down your search.
+Type the field name that you're looking for out to narrow down your search.
 
 </td>
 </tr>
@@ -790,7 +792,7 @@ Description
 </td>
 <td valign="top">
 
-Select the field that you want to use as reference for filtering, choose the operation \(ex: *Less Than or Equal*\), and provide a value.
+Select the field that you want to use as a reference for filtering, choose the operation \(ex: *Less Than or Equal*\), and provide a value.
 
 > ### Note:  
 > The *IN* operation is available with filtering when editing the query manually. This operation isn’t available in the Query Modeling wizard.
@@ -814,7 +816,7 @@ Select the field that you want to use as reference for filtering, choose the ope
 </td>
 <td valign="top">
 
-Select the field that you want to use as sorting parameter and choose *Ascending* or *Descending* order.
+Select the field that you want to use as a sorting parameter and choose *Ascending* or *Descending*.
 
 </td>
 </tr>

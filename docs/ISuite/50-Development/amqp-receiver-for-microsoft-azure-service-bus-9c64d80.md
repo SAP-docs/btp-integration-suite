@@ -171,18 +171,6 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 <tr>
 <td valign="top">
 
-*Path* \(only if *WebSocket* is selected as the *Transport Protocol* in the *General* tab\)
-
-</td>
-<td valign="top">
-
-Specify the access path of the message broker.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *Connect with TLS* 
 
 </td>
@@ -219,7 +207,7 @@ Select the authentication method the message broker supports. Make sure that *SA
 <tr>
 <td valign="top">
 
-*Credential Name* \(only if *SASL* or *OAuth2 Client Credentials* is selected for *Authentication*\)
+*Credential Name* \(only if *SASL* is selected for *Authentication*\)
 
 </td>
 <td valign="top">

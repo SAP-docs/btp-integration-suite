@@ -15,5 +15,5 @@ This section provides an overview of the concepts of integration content design.
 
 [Adapting Standard Integration Content to Your Requirements](adapting-standard-integration-content-to-your-requirements-35b53da.md "When you use standard (predefined) integration content published on SAP Business Accelerator Hub, there are two different ways how to adapt such content to meet the requirements of your concrete business scenario.")
 
-[Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md "Cloud Integration allows you to use integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.")
+[Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md "Integration Suite allows you to design integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.")
 

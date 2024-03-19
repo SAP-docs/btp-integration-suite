@@ -289,7 +289,7 @@ Backing Services
 </b></dt>
 <dd>
 
-Edge Integration Cell includes a Message Service for asynchronous messages and system internal events.
+Edge Integration Cell includes a Message Service \(Solace Broker\) for asynchronous messages and system internal events.
 
 
 

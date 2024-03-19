@@ -134,23 +134,36 @@ The type of proxy that you are using to connect to the target system:
 
 There are the following options:
 
-*Application/x-sap.doc*
+-   *Application/x-sap.idoc*
 
--   Allows only single IDoc record for each request.
+    -   Allows only single IDoc record for each request.
 
--   Enables message sequencing.
+        Using this content type, composite IDoc messages aren’t supported. To set up scenarios with composite messages, use content type *Text/XML*.
 
--   Enables Exactly-Once processing.
+    -   Enables message sequencing.
+
+    -   Enables Exactly-Once processing.
+
+        > ### Note:  
+        > The IDoc adapter uses the header `SapMessageId` within the integration flow processing. If header `SapMessageId` isn't defined, the IDoc receiver adapter automatically generates a unique ID. This may lead to duplicates in situations where an already delivered message is retried. If however the header `SapMessageId` is set, the IDoc receiver adapter reuses its value. For `Exactly-Once` processing in the backend, you need to ensure that the header `SapMessageId` remains the same in case that the message is retried.
+        > 
+        > See: [Quality of Service Exactly Once](quality-of-service-exactly-once-f96cf27.md)
+
+
+-   *Text/XML*
+
+    Allows multiple IDoc records for each request.
+
+    > ### Tip:  
+    > You can set up composite IDoc messages using an *Aggregator* step \(see [Define Aggregator](define-aggregator-aa23816.md)\).
+    > 
+    > If composite messages are processed, the the headers `SapIDocTransferId` and `SapIDocDbId` of the response contain the ID of the first IDoc only.
+    > 
+    > You can read all IDs from the response payload or alternatively from header `SapIDocAssignMap`.
 
     > ### Note:  
-    > The IDoc adapter uses the header `SapMessageId` within the integration flow processing. If header `SapMessageId` isn't defined, the IDoc receiver adapter automatically generates a unique ID. This may lead to duplicates in situations where an already delivered message is retried. If however the header `SapMessageId` is set, the IDoc receiver adapter reuses its value. For `Exactly-Once` processing in the backend, you need to ensure that the header `SapMessageId` remains the same in case that the message is retried.
-    > 
-    > See: [Quality of Service Exactly Once](quality-of-service-exactly-once-f96cf27.md)
+    > Using this content type, Exactly-Once processing isn’t supported. To set up scenarios with Exactly-Once processing, use content type *Application/x-sap.idoc*.
 
-
-*Text/XML*
-
--   Allows multiple IDoc records for each request.
 
 
 

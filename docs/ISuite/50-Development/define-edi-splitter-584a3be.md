@@ -399,6 +399,11 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     
     **X12**
 
+    > ### Note:  
+    > EDI Splitter v1.12.0 and v2.2.0 onwards support same group name with different definition in XSD.
+
+    ****
+
 
     <table>
     <tr>
@@ -421,7 +426,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </td>
     <td valign="top">
     
-    .Use the appropriate encoding format of the inbound X12 interchange. The following encoding formats are available in the EDI splitter:
+    Use the appropriate encoding format of the inbound X12 interchange. The following encoding formats are available in the EDI splitter:
 
     -   *UTF-8*
 

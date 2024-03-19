@@ -666,7 +666,7 @@ Skipping the cloning of Application Key and Secret in side by side migration
 </td>
 <td valign="top">
 
-If you want to skip the cloning of Application Key and Secret in side by side migration, then set the `“skipApplicationKeySecretCloning”` flag to true. For more information, see the Procedure section in [Clone API Management Artifacts](APIM-Migration/clone-api-management-artifacts-7abd887.md). Also, a new version of the tenant cloning tool 1.6.2 is now available. For more information, see [Clone API Management Artifacts](APIM-Migration/clone-api-management-artifacts-7abd887.md).
+If you want to skip the cloning of Application Key and Secret in side by side migration, then set the `“skipApplicationKeySecretCloning”` flag to true. For more information, see the Procedure section in [Clone API Management Content](APIM-Migration/clone-api-management-content-7abd887.md). Also, a new version of the tenant cloning tool 1.6.2 is now available. For more information, see [Clone API Management Content](APIM-Migration/clone-api-management-content-7abd887.md).
 
 </td>
 <td valign="top">
@@ -730,7 +730,7 @@ Migrating API Management Subscription Created Using the Starter Plan Service Ins
 </td>
 <td valign="top">
 
-If you have Integration Suite Premium edition license available in a different sub-account, then API Management design time subscription can be migrated to this different sub-account as well. For more information, see [Migrating API Management Subscription Created Using the Starter Plan Service Instance to Different Subaccounts](APIM-Migration/migrating-api-management-subscription-created-using-the-starter-plan-service-instan-1f4ed86.md). Also, a new parameter has been added to the `apim-tct-input.json` file. For more information, see [Clone API Management Artifacts](APIM-Migration/clone-api-management-artifacts-7abd887.md).
+If you have Integration Suite Premium edition license available in a different sub-account, then API Management design time subscription can be migrated to this different sub-account as well. For more information, see [Migrating API Management Subscription Created Using the Starter Plan Service Instance to Different Subaccounts](APIM-Migration/migrating-api-management-subscription-created-using-the-starter-plan-service-instan-1f4ed86.md). Also, a new parameter has been added to the `apim-tct-input.json` file. For more information, see [Clone API Management Content](APIM-Migration/clone-api-management-content-7abd887.md).
 
 </td>
 <td valign="top">

@@ -973,7 +973,7 @@ Security artifacts must be unique in the whole tenant.
 
 Custom roles can be used in runtime during inbound authorization of an integration flow \(User Roles\) or during monitoring to protect the business data of a subset of artifacts \(Access Policies used\).
 
-See: [Managing User Roles](managing-user-roles-4e86f0d.md) and [Managing Access Policies](managing-access-policies-7db3c87.md).
+See: [Managing User Roles](managing-user-roles-4e86f0d.md) and [Creating Custom Roles for Access Policies](creating-custom-roles-for-access-policies-7db3c87.md).
 
 The naming convention is as follows:
 

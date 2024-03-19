@@ -2,9 +2,10 @@
 
 # Consume API Proxies
 
-**The classic design will be deprecated soon. The new design of the API business hub enterprise will be set as your default design from March 2024. However, you’ll still be able to toggle between the new and old design until June 2024.** 
-
 Consume API proxies via the API business hub enterprise. In the API business hub enterprise, an application developer registers, explores the API exposed by customers, creates applications, and tests API proxies.
+
+> ### Caution:  
+> Effective June 2024, the classic design of the API business hub enterprise will be deprecated and will no longer be accessible. The new design of the API business hub enterprise will be set as your default design from March 2024. For more information, see [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
 
 If you've added API business hub enterprise as a capability with Integration suite, or if you’ve subscribed to the API business hub enterprise as part of the standalone API Management subscription, you have the option to experience the new design of the API business hub enterprise user interface along with the classic design.
 

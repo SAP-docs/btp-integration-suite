@@ -41,5 +41,5 @@ The tool enables you to design for multiple runtimes at the same time. You shoul
 **Related Information**  
 
 
-[Runtime Profiles](runtime-profiles-8007daa.md "Cloud Integration allows you to use integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.")
+[Runtime Profiles](runtime-profiles-8007daa.md "Integration Suite allows you to design integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.")
 

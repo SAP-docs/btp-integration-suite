@@ -83,6 +83,8 @@ Description
 
 URL of the SuccessFactors data center that you want to connect to. You can browse to and select the SuccessFactors data center URL by using the *Select* option.
 
+You can also dynamically define the address using a header or property in the message exchange.
+
 </td>
 </tr>
 <tr>
@@ -193,7 +195,9 @@ Select one of the following authentication methods:
 </td>
 <td valign="top">
 
-Credential name for your credentials that has been deployed on the tenant.
+Enter the credential name for the security artifact that has been deployed on the tenant.
+
+You can also dynamically define the credential using a header or property in the message exchange.
 
 </td>
 </tr>

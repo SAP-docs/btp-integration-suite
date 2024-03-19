@@ -250,6 +250,7 @@ After the header, the following sections contain detailed information about the 
     -   The *Application Message ID*
     -   The *Application Message Type*
     -   The *Custom Status*
+    -   The *Retention Periods* for completed and uncompleted messages.
 
     > ### Note:  
     > *Sender*, *Receiver*, *Application Message ID*, *Application Message Type*, and *Custom Status* are optional and can be set via the Content Modifier. They’re only appear if they aren’t empty.

@@ -50,9 +50,11 @@ To know more about OAS 3.0 support in API Management, see [OpenAPI Specification
 
     The *Create API* dialog opens.
 
-5.  To import an API Definition, select *API Specification* from the given options and choose *Next*.
+5.  Select the Edge Integration Cell *Runtime Profile* and choose *Next*. This profile determines the Edge Integration Cell node on which you will create and process your API artifact.
 
-6.  Fill in the following *API Details*:
+6.  To import an API Definition, select *API Specification* from the given options and choose *Next*.
+
+7.  Fill in the following *API Details*:
 
 
     <table>
@@ -175,15 +177,15 @@ To know more about OAS 3.0 support in API Management, see [OpenAPI Specification
     </tr>
     </table>
     
-7.  Choose *Create*.
+8.  Choose *Create*.
 
     The API opens in the *API Specification* editor.
 
-8.  To model an API in Open API format, choose *Edit*. For more information, see [Creating APIs Using OpenAPI Specification](creating-apis-using-openapi-specification-4923e5e.md).
+9.  To model an API in Open API format, choose *Edit*. For more information, see [Creating APIs Using OpenAPI Specification](creating-apis-using-openapi-specification-4923e5e.md).
 
-9.  To add additional attributes, see [Additional Attributes in OpenAPI Specification](additional-attributes-in-openapi-specification-4ab4c8e.md).
+10. To add additional attributes, see [Additional Attributes in OpenAPI Specification](additional-attributes-in-openapi-specification-4ab4c8e.md).
 
-10. Once you’ve modeled the API, you can select one of the following actions for the API:
+11. Once you’ve modeled the API, you can select one of the following actions for the API:
 
 
     <table>

@@ -10,9 +10,11 @@ Learn how to create or update the Domain Name Server \(DNS\).
 
 ## Prerequisites
 
-To determine the external IP address of the deployed solution, run the following command:
+Check the status of the *Default Virtual Host* as described in [Status Information](status-information-732f300.md).
 
-> ### Sample Code:  
+> ### Note:  
+> In case the status information of the *Default Virtual Host* is not available, you can determine the external IP address of the deployed solution, by running the following command:
+> 
 > ```
 > kubectl -n istio-system get service istio-ingressgateway
 > ```

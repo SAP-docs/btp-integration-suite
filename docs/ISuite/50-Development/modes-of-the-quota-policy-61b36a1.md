@@ -119,3 +119,8 @@ Supported modes of the Quota policy:
 
 
 
+**Related Information**  
+
+
+[Adding Quota Policy Step to API Endpoint](adding-quota-policy-step-to-api-endpoint-8d1b56b.md "Adding Quota policy step to an API artifact for traffic management.")
+

@@ -405,7 +405,7 @@ Migration from Neo environment to Cloud Foundry
 </td>
 <td valign="top">
 
-You can now choose to clone the API Portal and API business hub enterprise entities at different times during migration. For more information, see [Clone API Management Artifacts](APIM-Migration/clone-api-management-artifacts-7abd887.md) 
+You can now choose to clone the API Portal and API business hub enterprise entities at different times during migration. For more information, see [Clone API Management Content](APIM-Migration/clone-api-management-content-7abd887.md) 
 
 </td>
 <td valign="top">
@@ -590,7 +590,7 @@ Request for an Additional Virtual Host in Cloud Foundry Environment
 </td>
 <td valign="top">
 
-Create a new virtual host or update an alias for an existing virtual host in the Cloud Foundry environment. For more information, see [Requesting an Additional Virtual Host in Cloud Foundry Environment](APIM-Initial-Setup/requesting-an-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md).
+Create a new virtual host or update an alias for an existing virtual host in the Cloud Foundry environment. For more information, see [Configuring Additional Virtual Host in Cloud Foundry Environment](APIM-Initial-Setup/configuring-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md).
 
 </td>
 <td valign="top">

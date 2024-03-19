@@ -4,12 +4,15 @@
 
 Create an Application to consume the required APIs.
 
+> ### Caution:  
+> Effective June 2024, the classic design of the API business hub enterprise will be deprecated and will no longer be accessible. The new design of the API business hub enterprise will be set as your default design from March 2024. For more information, see [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
+
 > ### Note:  
 > This document describes the classic design of the API business hub enterprise. To view the documentation for the new design, see [Create an Application \[New Design\]](create-an-application-new-design-a501a6d.md).
 
 **Prerequisites**
 
--   You either have the `AuthGroup.API.ApplicationDeveloper` role or `AuthGroup.API.Admin` role assigned to you. For more information on roles, see [User Roles in API Management \(New\)](../user-roles-in-api-management-new-911ca5a.md).
+-   You either have the `AuthGroup.API.ApplicationDeveloper` role or `AuthGroup.API.Admin` role assigned to you. For more information on roles, see [Tasks and Corresponding Role Collections](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/IAT/en-US/911ca5a620e94ab581fa159d76b3b108.html "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.") :arrow_upper_right:.
 
     > ### Note:  
     > The AuthGroup.API.ApplicationDeveloper role must not be assigned manually to a user form the SAP BTP Cockpit and this role must not be a part of any user group assignment.

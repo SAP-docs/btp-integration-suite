@@ -22,10 +22,7 @@ The IDoc sender adapter enables SAP Integration Suite to receive Intermediate Do
 
 ## Supported Headers
 
--   SapAuthenticatedUserName
-
-    Contains the user name of the client that calls the integration flow.
-
+Header `SapAuthenticatedUserName` contains the user name of the client that calls the integration flow.
 
 The following specific headers are set by the IDoc sender adapter and can be used in the subsequent steps of the integration flow.
 
@@ -37,6 +34,13 @@ The following specific headers are set by the IDoc sender adapter and can be use
 
 
 More information: [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md)
+
+
+
+> ### Tip:  
+> The adapter supports processing of composite \(bulk\) messages if the composite message consists of individual messages with the same message type.
+> 
+> If a composite message is processed, the header `SapIDocTransferId` contains the ID of the first IDoc only. If you like to access all transfer IDs, you need to read the payload using an XPath expression \(for example, in a *Content Modifier* step\).
 
 
 

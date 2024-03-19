@@ -1,5 +1,7 @@
 <!-- loio1c0983456eae4b3dbcf314096a9ae52c -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Date Time Conversion
 
 This chapter explains how the Date Time Conversion works.
@@ -151,4 +153,20 @@ There could be scenarios where multiple source nodes provide the same input to t
 You can now choose which of the 2 source nodes will contribute to the MM part and which will contribute to the YY part using the drop-down list provided for the two fields mentioned above.
 
 In other case, if node1 is of type *MM* and node2 is of type *DD* and the target node type is only *MM*, then only the data from node1 is picked and node2 will be ignored.
+
+*Adding Global Parameters for the Source Node*
+
+You can also add global parameters for the source node. Suppose let us say you have created global parameters in the *Global Parameters* tab of your MAG that you wish to use in your datetime conversion. To do so , follow the procedure below:
+
+> ### Note:  
+> To know how to add global parameters in a MAG, see [Defining Global Parameters](defining-global-parameters-62fe053.md).
+
+1.  In the *Date Time Conversion* tab, choose *Add Global Parameter* below the source node detail.
+
+2.  A pop-up dialog opens listing down the global parameters that you defined in your MAG. Select one from the list.
+3.  Set the value for *Date Time Format* field for this newly added parameter.
+
+    Depending on the format set for the source node and this parameter, the values for the corresponding fields in the target node will get adjusted.
+
+4.  To delete the parameter from the date time conversion, select the delete :wastebasket: button next to it.
 

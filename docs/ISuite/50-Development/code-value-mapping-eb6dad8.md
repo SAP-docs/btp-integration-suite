@@ -15,7 +15,7 @@ The *Code Value Mapping* tab appears only if both the source and target elements
 
     The tab displays the code values of the source and target node. The *Source Code Value* displays the list of code values selected for the source node and the *Target Code Value* displays the respective code values by the proposal service.
 
-2.  If you want to copy a value mapping another mapping element, choose *Copy* and select a value mapping from the list.
+2.  If you want to copy a value mapping from another mapping element, choose *Copy* and select a value mapping from the list.
 3.  A code value mapping is usually made at the semantic level and generated into a transformation \(XSLT\) function once the runtime artifacts are generated. But if you need to convert your code value mapping into a function, choose *Switch to Function*. This automatically generates a corresponding XSLT function for the code value mapping, under the *Functions* tab.
 
     This action cannot be reversed. Switching to function will delete the code value mapping.
@@ -66,7 +66,7 @@ The code value mapping now supports N:1 mapping cardinality. You can map more th
 5.  Choose the Add :heavy_plus_sign: button provided above the table to add more code values.
 6.  The sort code value mapping <span class="BusinessSuiteInAppSymbols-V2"></span> button reorders the code value mappings to ensure that more specific mappings are applied first thereby increasing the accuracy of mapping each source code value to its corresponding target code value.
 7.  The reorder source codelists <span class="BusinessSuiteInAppSymbols-V2"></span> button allows you to adjust the source code list. Select the button and in the *Reorder Source Codelists* dialog box, select the codelist and adjust the order using the up <span class="SAP-icons-V5"></span> and down <span class="SAP-icons-V5"></span> arrows and choose *OK*.
-8.  If you had applied the *Proposal* service and then tried 1:1 code value mapping, the proposals are automatically applied to the target code values. In case of N:1 code value mapping, the proposals are not applied automatically. You need to choose the*Proposal* option provided under the *Code Value Mapping* tab to apply proposals on the code values.
+8.  If you had applied the *Proposal* service and then tried 1:1 code value mapping, the proposals are automatically applied to the target code values. In case of N:1 code value mapping, the proposals are not applied automatically. You need to choose the *Proposal* option provided under the *Code Value Mapping* tab to apply proposals on the code values.
 
     > ### Note:  
     > The *Proposal* option appears under the *Code Value Mapping* tab only if you have used the Proposal service on the entire MAG and there are value mappings proposed for this code value mapping.

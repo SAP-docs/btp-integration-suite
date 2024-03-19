@@ -194,7 +194,7 @@ Create and manage API providers, key value pairs, and certificates.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="adcbc07b031b4ac285b22867a1216306.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/esb1704779833497/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/de1ae814218247c6bac4975cb486e431.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Build API Proxies](build-api-proxies-74c042b.md)
 
 [API Providers](api-providers-42e13b2.md)
 

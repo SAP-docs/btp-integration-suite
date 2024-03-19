@@ -197,7 +197,7 @@ Sets the number of replicas for this component.
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="3">
+<td valign="top" rowspan="4">
 
 *Edge API Application* 
 
@@ -234,6 +234,71 @@ Sets the number of replicas for this component.
 <td valign="top">
 
 Additional JVM parameters. Can be set either via env var JAVA\_OPTS in configmap edge-api or Helm value java.opts
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`MEMORY_LIMIT` 
+
+</td>
+<td valign="top">
+
+Sets memory limit for this component.
+
+</td>
+</tr>
+<tr>
+<td valign="top" rowspan="4">
+
+*Monitoring Data Consumer* 
+
+</td>
+<td valign="top">
+
+`CPU_LIMIT` 
+
+</td>
+<td valign="top">
+
+Sets CPU limit for this component.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`MEMORY_LIMIT` 
+
+</td>
+<td valign="top">
+
+Sets memory limit for this component.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ISTIO_TERMINATION_DRAIN_DURATION` 
+
+</td>
+<td valign="top">
+
+Sets the drain duration before istio termination.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`PRESTOP_DRAIN_DURATION` 
+
+</td>
+<td valign="top">
+
+Sets the drain duration before component stop.
 
 </td>
 </tr>
@@ -281,7 +346,7 @@ Sets the maximum number of replicas for this Deployment using HorizontalPodAutos
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="5">
+<td valign="top" rowspan="6">
 
 *Worker* 
 
@@ -344,6 +409,35 @@ Same for the others REPLICAS, MIN\_REPLICAS, etc.
 <td valign="top">
 
 Sets parameters for java memory calculator.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`READINESSPROBE_FAILURE_THRESHOLD` 
+
+</td>
+<td valign="top">
+
+Sets the failure threshold for the readiness probe of the deployment resource.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Solace* 
+
+</td>
+<td valign="top">
+
+`Solace_TIER` 
+
+</td>
+<td valign="top">
+
+Upscales the solace tier.
 
 </td>
 </tr>

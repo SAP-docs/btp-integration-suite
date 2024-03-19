@@ -87,6 +87,204 @@ API Management
 </td>
 <td valign="top">
 
+Self-Service for Administrators to Update Custom Domain Certificate
+
+</td>
+<td valign="top">
+
+The recent update allows for the configuration of additional virtual hosts in the Cloud Foundry environment. This can be done with either a default domain or a custom domain. Additionally, existing virtual hosts can now have their alias, keystore, keyalias, and truststore updated. This eliminates the need for the SAP Operations team to manually upload certificates in order to complete the configuration.
+
+See: [Configuring Additional Virtual Host in Cloud Foundry Environment](https://help.sap.com/docs/integration-suite/sap-integration-suite/requesting-additional-virtual-host-in-cloud-foundry-environment?version=Cloud) \(SAP API Management customers choose: [Configuring Additional Virtual Host in Cloud Foundry Environment](https://help.sap.com/docs/sap-api-management/sap-api-management/requesting-additional-virtual-host-in-cloud-foundry-environment-a7b91e5aca32497ca2b17c671ed2bb42-41?version=Cloud)\)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-03-09
+
+</td>
+<td valign="top">
+
+2024-03-09
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Manage Access in API business hub enterprise 
+
+</td>
+<td valign="top">
+
+As an API business hub enterprise admin, you now have the ability to manage access control checks for users to search, discover, and consume the content.
+
+See: [Manage Access](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-access?version=CLOUD) \(SAP API Management customers choose: [Manage Access](https://help.sap.com/docs/sap-api-management/sap-api-management/manage-access?version=CLOUD)\)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-03-09
+
+</td>
+<td valign="top">
+
+2024-03-09
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Deprecation of Classic Design
+
+</td>
+<td valign="top">
+
+Effective June 2024, the classic design of the API business hub enterprise will be deprecated and will no longer be accessible. The new design of the API business hub enterprise will be set as your default design from March 2024.
+
+See: [Configure the API business hub enterprise \[New Design\]](https://help.sap.com/docs/integration-suite/sap-integration-suite/configure-api-business-hub-enterprise-new-design?version=CLOUD) \(SAP API Management customers choose: [Configure the API business hub enterprise \[New Design\]](https://help.sap.com/docs/sap-api-management/sap-api-management/configure-api-business-hub-enterprise-new-design?version=Cloud)\)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+Restricted Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-03-09
+
+</td>
+<td valign="top">
+
+2024-03-09
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Threshold Value for Charts in Advanced API Analytics
 
 </td>
@@ -896,70 +1094,6 @@ API Management
 </td>
 <td valign="top">
 
-mTLS Authentication
-
-</td>
-<td valign="top">
-
-You can now utilize certificate-based credentials to seamlessly migrate API Management subscriptions from Neo to Cloud Foundry, as well as between same or different Cloud Foundry environments. For more information, see [Clone API Management Artifacts](APIM-Migration/clone-api-management-artifacts-7abd887.md) and [Clone API Management Artifacts During Cloud Foundry to Cloud Foundry Migration](APIM-Migration/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration-2e5d127.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-09-30
-
-</td>
-<td valign="top">
-
-2023-09-30
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
 Client SDK
 
 </td>
@@ -1223,7 +1357,7 @@ Latest Version of the Tenant Cloning Tool
 </td>
 <td valign="top">
 
-The 1.7.2 version of the Tenant Cloning Tool is now available. For more information, see [Clone API Management Artifacts](APIM-Migration/clone-api-management-artifacts-7abd887.md) and [Clone API Management Artifacts During Cloud Foundry to Cloud Foundry Migration](APIM-Migration/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration-2e5d127.md).
+The 1.7.2 version of the Tenant Cloning Tool is now available. For more information, see [Clone API Management Content](APIM-Migration/clone-api-management-content-7abd887.md) and [Clone API Management Content for Cloud Foundry to Cloud Foundry Migration](APIM-Migration/clone-api-management-content-for-cloud-foundry-to-cloud-foundry-migration-2e5d127.md).
 
 </td>
 <td valign="top">
@@ -1287,7 +1421,7 @@ Latest Version of the Tenant Cloning Tool
 </td>
 <td valign="top">
 
-The 1.7.1 version of the Tenant Cloning Tool is now available. For more information, see [Clone API Management Artifacts](APIM-Migration/clone-api-management-artifacts-7abd887.md) and [Clone API Management Artifacts During Cloud Foundry to Cloud Foundry Migration](APIM-Migration/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration-2e5d127.md).
+The 1.7.1 version of the Tenant Cloning Tool is now available. For more information, see [Clone API Management Content](APIM-Migration/clone-api-management-content-7abd887.md) and [Clone API Management Content for Cloud Foundry to Cloud Foundry Migration](APIM-Migration/clone-api-management-content-for-cloud-foundry-to-cloud-foundry-migration-2e5d127.md).
 
 </td>
 <td valign="top">
@@ -1735,7 +1869,7 @@ Migrating API Management Subscription from One Cloud Foundry to Another Cloud Fo
 </td>
 <td valign="top">
 
-You can choose to migrate an existing API Management subscription that you have in the Cloud Foundry environment to another API Management subscription within the Cloud Foundry environment. This can be done to a different tenant within the same data center or to a tenant in a different data center. For more information, see [Migrating API Management Subscription from One Cloud Foundry to Same or Different Cloud Foundry Environment](APIM-Migration/migrating-api-management-subscription-from-one-cloud-foundry-to-same-or-different-c-17f09f3.md).
+You can choose to migrate an existing API Management subscription that you have in the Cloud Foundry environment to another API Management subscription within the Cloud Foundry environment. This can be done to a different tenant within the same data center or to a tenant in a different data center. For more information, see [Migration of API Management Content between Cloud Foundry Environments](APIM-Migration/migration-of-api-management-content-between-cloud-foundry-environments-17f09f3.md).
 
 </td>
 <td valign="top">

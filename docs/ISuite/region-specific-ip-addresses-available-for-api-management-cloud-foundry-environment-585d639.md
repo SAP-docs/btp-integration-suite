@@ -646,7 +646,7 @@ us-central-1
 </td>
 <td valign="top">
 
-35.223.165.172, 34.133.13.45
+35.223.165.172, 34.133.13.45, 34.72.36.170
 
 </td>
 </tr>
@@ -757,7 +757,7 @@ asia-south1
 </td>
 <td valign="top">
 
-34.100.176.82, 34.93.181.26
+34.100.176.82, 34.93.181.26, 35.200.251.32, 34.100.182.244, 34.93.184.71, 34.100.176.113
 
 </td>
 </tr>
@@ -794,7 +794,7 @@ europe-west3
 </td>
 <td valign="top">
 
-34.159.208.178, 34.159.31.39
+34.159.208.178, 34.159.31.39, 34.141.20.163, 34.107.78.67, 34.159.45.83, 35.246.220.63
 
 </td>
 </tr>
@@ -958,16 +958,13 @@ us-east-1
 </tr>
 </table>
 
+> ### Note:  
+> If customers are implementing allow or deny listing based on IPs from their clients to API Management design time applications - API Portal, API Business Hub Enterprise, or other platform services in Cloud Foundry, such as SAP Authorization and Trust Management Service \(XSUAA\) for fetching tokens, they will need to refer to the documentation for SAP Business Technology Platform Cloud Foundry IP addresses, which can be found at the following link: [Regions and API Endpoints Available for the Cloud Foundry Environment | SAP Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud).
+
 **Related Information**  
 
 
-[Requesting an Additional Virtual Host in Cloud Foundry Environment](requesting-an-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "Create a new virtual host or update an alias for an existing virtual host in the Cloud Foundry environment.")
-
-[Requesting a Custom Domain for a Virtual Host](requesting-a-custom-domain-for-a-virtual-host-6b9e5a3.md "A virtual host lets you host multiple domain names on API Management capability within Integration Suite.")
-
-[Request for a Two-Way SSL Certificate](request-for-a-two-way-ssl-certificate-9faf7ce.md "Request a two-way SSL certificate for the default domain of the virtual host of your API Management service.")
-
-[User Roles in API Management \(New\)](user-roles-in-api-management-new-911ca5a.md "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.")
+[Configuring Additional Virtual Host in Cloud Foundry Environment](configuring-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "A virtual host allows you to host multiple domain names on the API Management capability within Integration Suite.")
 
 [User Roles in API Management](user-roles-in-api-management-7010b58.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
 

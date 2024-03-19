@@ -151,7 +151,7 @@ This includes tasks like:
 <tr>
 <td valign="top">
 
-Administrator
+Tenant administrator
 
 </td>
 <td valign="top">

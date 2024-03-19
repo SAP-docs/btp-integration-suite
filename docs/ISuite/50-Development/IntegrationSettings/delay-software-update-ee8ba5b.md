@@ -13,7 +13,7 @@ Configure your tenants to receive monthly updates delayed by a week.
 
 ### What is Delay Software Update
 
-You can now configure your tenants so that you receive the monthly updates and increments from SAP delayed by a week. They delay in update affects only the Cloud Integration runtime. The Cloud Integration design time gets updated without any delay.
+You can now configure your tenants so that you receive the monthly updates and increments from SAP delayed by a week. The delay in update affects only the Cloud Integration runtime. The Cloud Integration design time gets updated without any delay.
 
 > ### Remember:  
 > -   The delay is applicable only for the monthly increments. If there are patch updates during the 1-week delay period, they're always applied on your tenants without any delay. For example, if there's a pending delayed monthly update for your tenant and meanwhile SAP pushes a patch update, then the delayed update is skipped and patch update gets applied without delay. This approach means that your tenant receives the monthly update and the patch update without any delay, as a part of the patch.

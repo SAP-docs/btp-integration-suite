@@ -13,18 +13,18 @@ This topic describes the behavior of the Tenant Cloning Tool with respect to clo
 
     We recommend that you inform your developers about the impending migration and email notifications that they might receive during the process.
 
--   Custom Charts are cloned to the target API portal as many times as you run the Tenant Cloning Tool.
+-   Custom Charts are cloned to the target as many times as you run the Tenant Cloning Tool.
 -   All the API proxies are cloned onto the default virtual host.
 -   Post cloning, the API proxies on the target system are in active and deployed state. You must reapply the desired states to the proxies.
 
     To know more about API proxy states, see [API Proxy States](../api-proxy-states-091cda4.md).
 
     > ### Note:  
-    > If the Tenant Cloning Tool is used to clone an API proxy or a product with more than 100 resources attached to it, you might notice data inconsistency in the target system \(API business hub enterprise or API portal\). It is recommended that you do not add more than 100 resources per proxy or product. For more information, see [Limits in API Management](../limits-in-api-management-f70f425.md).
+    > If the Tenant Cloning Tool is used to clone an API proxy or a product with more than 100 resources attached to it, you might notice data inconsistency in the target system \(API business hub enterprise or \). It is recommended that you do not add more than 100 resources per proxy or product. For more information, see [Limits in API Management](../limits-in-api-management-f70f425.md).
     > 
     > .
 
--   Cloning of Custom chart is now supported for migrating API Management subscription created using the Starter Plan service instance.
+-   Cloning of custom chart is now supported for migrating API Management content created using the Starter Plan service instance.
 
 
 > ### Note:  
@@ -45,8 +45,5 @@ This topic describes the behavior of the Tenant Cloning Tool with respect to clo
 > **Reason for the error**: During migration, the product gets cloned along with the newly revised rate plan in the target tenant. However, while creating the application in the target tenant, the system couldn't locate the revised rate plan ID. The revised rate plan ID was not present in the payload as it belonged to an older subscription, resulting in application creation failure.
 
 > ### Note:  
-> The Tenant Cloning Tool does not support the provider type "Cloud integration flow" with OAuth2ClientCredentials adoption. Therefore, migration fails while cloning such entries from source to target.
-
-> ### Note:  
-> CacheResources cloning is currently not supported via the Tenant Cloning Tool. You must create it manually on the target API portal using the following service: `<apiportal-host>/apiportal/api/1.0/Management.svc/CacheResources`
+> CacheResources cloning is currently not supported via the Tenant Cloning Tool. You must create it manually on the target using the following service: `<apiportal-host>/apiportal/api/1.0/Management.svc/CacheResources`.
 

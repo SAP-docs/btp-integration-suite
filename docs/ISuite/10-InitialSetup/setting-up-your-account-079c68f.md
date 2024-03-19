@@ -57,5 +57,5 @@ After you've received your logon data by email, follow the steps here to create 
 
 ## Results
 
-A new tile appears in the global account page with the subaccount details.
+A new tile appears in the global account page with the subaccount details. The subaccount is also listed in the *System Landscape* page.
 

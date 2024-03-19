@@ -111,7 +111,7 @@ You can select one or more integration artifacts that were modified or updated, 
 > 
 > -   A Function Libraries artifact can't be transported independently. You must transport the package that contains the Function Libraries artifact.
 
-You can't transport those artifacts that are protected with access policies in the source tenant. The constraint is also applicable when you transport an artifact that is already present in the target tenant protected with access policies. For more information in how to manage access policies for cloud environments, see [Managing Access Policies](managing-access-policies-7db3c87.md).
+You can't transport those artifacts that are protected with access policies in the source tenant. The constraint is also applicable when you transport an artifact that is already present in the target tenant protected with access policies. For more information in how to manage access policies for cloud environments, see [Creating Custom Roles for Access Policies](creating-custom-roles-for-access-policies-7db3c87.md).
 
 [Enabling Content Transport, Cloud Foundry Environment](enabling-content-transport-cloud-foundry-environment-452c677.md "All the tasks mentioned here are one-time activities. The tenant administrator performs these tasks to enable content transport.")
 

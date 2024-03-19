@@ -19,7 +19,7 @@ API Management in SAP Integration Suite is used to discover, shape, compose, int
 
 [Monetize APIs](50-Development/monetize-apis-fcdc89b.md "SAP Integration Suite provides monetization feature to all API providers to generate revenue for using the APIs.")
 
-[Consume API Proxies](50-Development/consume-api-proxies-ea561e4.md "The classic design will be deprecated soon. The new design of the API business hub enterprise will be set as your default design from March 2024. However, you’ll still be able to toggle between the new and old design until June 2024.")
+[Consume API Proxies](50-Development/consume-api-proxies-ea561e4.md "Consume API proxies via the API business hub enterprise. In the API business hub enterprise, an application developer registers, explores the API exposed by customers, creates applications, and tests API proxies.")
 
 [Analyze APIs](50-Development/analyze-apis-7712c61.md "Use the capabilities of API Analytics to analyze API usage and performance.")
 

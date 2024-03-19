@@ -22,7 +22,7 @@ The *Mapping Guidelines* tab displays an overview of all the MAGs that you've cr
 
 -   *Export*: You can export your mapping guidelines using this button. To know more, see [Exporting MIG/MAG](exporting-mig-mag-c8bba26.md)
 -   *Import*: You can import mapping guidelines into your tenant using this button. To know more, see [Importing MIG/MAG](importing-mig-mag-7139aad.md)
--   *Update MAGs*: You can filter and update mapping guidelines in bulk using this button. To know more, see
+-   *Update MAGs*: You can filter and update mapping guidelines in bulk using this button. To know more, see [Updating Mapping Guidelines](updating-mapping-guidelines-655ceb1.md)
 
 Filters are used to search and display MAGs based on various criteria. You can use the *Free text filter* search or the <span class="SAP-icons-V5"></span> \(Extended filter\)at the top of the screen to specify your search criteria. The *Free text filter* search allows you to filter and display MAGs that match your search text. It can be used as a quick filter to match your search text against multiple attributes of your MAGs.
 

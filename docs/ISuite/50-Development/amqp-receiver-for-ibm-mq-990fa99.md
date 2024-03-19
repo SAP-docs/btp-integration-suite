@@ -351,7 +351,7 @@ Define the message type to be used for sending the message to the message broker
 
 There are two options for forwarding the message header name:
 
--   *Passtrough* \(default option\):
+-   *Passthrough* \(default option\):
 
     Choose this option to pass the message header without transformation. For example, message-header.1 is forwarded as message-header.1.
 

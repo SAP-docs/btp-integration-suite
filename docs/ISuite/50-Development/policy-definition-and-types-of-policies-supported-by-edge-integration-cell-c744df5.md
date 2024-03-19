@@ -111,7 +111,7 @@ Quota Policy
 </td>
 <td valign="top">
 
-The Quota policy defines the number of request messages an application can submit to an API endpoint over a given period of time. For more information, see [Quota Policy](quota-policy-2aecf15.md).
+The Quota policy defines the number of request messages an application can submit to an API endpoint over a given period of time. For more information, see [Quota](quota-2aecf15.md).
 
 </td>
 <td valign="top">
