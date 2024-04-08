@@ -71,3 +71,12 @@ After the copying process is finished, you will receive a success message instru
 
 You can access the API artifact in view mode, allowing you to download, deploy, and copy the API artifact. If you want to delete the API artifact, simply switch to edit mode by selecting the *Edit* option.
 
+**Related Information**  
+
+
+[Add an API Artifact](add-an-api-artifact-c2fe62c.md "Add an API artifact to an package.")
+
+[Policy Definition and Types of Policies Supported by Edge Integration Cell](policy-definition-and-types-of-policies-supported-by-edge-integration-cell-c744df5.md "You can define the behavior of an API by using policy steps.")
+
+[Deploying an API Artifact](deploying-an-api-artifact-b70e7ec.md "After creating an API artifact, it is necessary to deploy it on the chosen runtime profile in order to make it executable and ready for use.")
+

@@ -406,7 +406,7 @@ Name
 </td>
 <td valign="top">
 
-Name of the Data Type
+Name of the Data Type.
 
 </td>
 </tr>
@@ -454,7 +454,7 @@ Created On & Created By
 </td>
 <td valign="top">
 
-Displays the identity of the user who imported the data type and the date when it was imported
+Displays the identity of the user who imported the data type and the date when it was imported.
 
 </td>
 </tr>

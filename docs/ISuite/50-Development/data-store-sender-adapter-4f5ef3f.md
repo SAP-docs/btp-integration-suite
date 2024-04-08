@@ -4,13 +4,13 @@
 
 This adapter enables Cloud Integration to consume messages from a data store. This feature helps you to enable asynchronous decoupling of inbound and outbound processing by using the data store as temporary storage.
 
-To understand the concept of asynchronous decoupling, assume that a sender sends a message to Cloud Integration \(inbound processing\). If there's an error in outbound processing \(for example, a receiver can't be reached temporarily\), the middleware \(Cloud Integration\) retries message processing independently. There's no need that the sender triggers a reprocessing of the message as soon as the error situation is fixed. The sender relies on the middleware to do that. To support this scenario, Cloud Integration stores the message received from the sender in the data store. To implement this step, you can design a dedicated integration flow that receives the sender's message and uses a *Data Store Write* step to store it in the data store \(see [Define Data Store Write Operations](define-data-store-write-operations-46260ee.md)\).
+To understand the concept of asynchronous decoupling, assume that a sender sends a message to Cloud Integration \(inbound processing\). If there's an error in outbound processing \(for example, a receiver can't be reached temporarily\), the middleware \(Cloud Integration\) retries message processing independently. There's no need that the sender triggers a reprocessing of the message as soon as the error situation is fixed. The sender relies on the middleware to do that. To support this scenario, Cloud Integration stores the message received from the sender in the data store. To implement this step, you can design a dedicated integration flow that receives the sender's message and uses a *Data Store Write* step to store it in the data store, see: [Define Data Store Write Operations](define-data-store-write-operations-46260ee.md).
 
 Furthermore, you model outbound processing in an integration flow that initially consumes the message from the data store \(using the *Data Store* sender adapter\). The outbound integration flow retries the message from the data store as long as the error situation lasts.
 
 The following figure depicts the described example setup.
 
-![](images/Data_Store_Sender_Adapter_96edd76.png)
+![The integration flow receives a message from the sender. It uses a Data Store Step to store the message in the Data Store. Initially, the integration flow consumes the message from the Data Store using the Data Store Sender Adapter. The outbound integration flow retries to send the message from the Data Store if the error situation lasts.](images/Data_Store_Sender_Adapter_96edd76.png)
 
 You can model the steps that write into the data store and those that consume message from it also in the same integration flow.
 
@@ -126,7 +126,7 @@ Defines whether the data store is shared by all integration flows \(deployed on 
 -   *Integration Flow* \(default setting\): Only a single integration flow uses the data store. A data store configured with this setting is also referred to as local data store.
 
 
-For more information and guidelines how to use this parameter, see [Anticipate Message Throughput When Choosing a Storage Option](anticipate-message-throughput-when-choosing-a-storage-option-5b38765.md).
+For more information and guidelines how to use this parameter, see: [Anticipate Message Throughput When Choosing a Storage Option](anticipate-message-throughput-when-choosing-a-storage-option-5b38765.md).
 
 </td>
 </tr>
@@ -138,14 +138,14 @@ For more information and guidelines how to use this parameter, see [Anticipate M
 </td>
 <td valign="top">
 
-Specify the poll interval in seconds to wait before consuming messages from the data store. The default is set to 10 s. The minimum is set to 1 s. The maximum is set to 300 s.
+Specify the poll interval in seconds to wait before consuming messages from the data store. The default is set to 10 seconds. The minimum is set to 1 second. The maximum is set to 300 seconds.
 
 The adapter continuously consumes messages from the data store if the data store contains entries that are ready to be processed.
 
 The poll interval only becomes effective as soon as the data store doesn't contain such entries anymore. From that point in time, the adapter waits for the time specified by the *Poll Interval* parameter and then again tries to consume messages from the data store.
 
 > ### Note:  
-> The smaller the poll interval \(for example, 1 s or less\), the more load is put on the data store.
+> The smaller the poll interval \(for example, 1 second or less\), the more load is put on the data store.
 
 
 
@@ -159,7 +159,7 @@ The poll interval only becomes effective as soon as the data store doesn't conta
 </td>
 <td valign="top">
 
-Enter a value for the amount of time to wait before retrying message delivery. The default is set to 1 min. The minimum is set to 1 min. The maximum is set to 1440 min \(24 hours\).
+Enter a value for the amount of time to wait before retrying message delivery. The default is set to 1 minute. The minimum is set to 1 minute. The maximum is set to 1440 minutes \(24 hours\).
 
 </td>
 </tr>
@@ -183,7 +183,7 @@ Select this option to double the retry interval after each unsuccessful retry. B
 </td>
 <td valign="top">
 
-You can set an upper limit on that value to avoid an endless increase of the retry interval. The default value is 60 minutes. The minimum value is 10 minutes. The maximum is set to 1440 min \(24 hours\).
+You can set an upper limit on that value to avoid an endless increase of the retry interval. The default value is 60 minutes. The minimum value is 10 minutes. The maximum is set to 1440 minutes \(24 hours\).
 
 </td>
 </tr>
@@ -195,7 +195,7 @@ You can set an upper limit on that value to avoid an endless increase of the ret
 </td>
 <td valign="top">
 
-Enter a value for the timeout of the in-progress repository. After this time, a message is retried in case of a cluster outage. The default value is 10 minutes. The minimum value is 1 minute. The maximum is set to 300 min \(5 hours\).
+Enter a value for the timeout of the in-progress repository. After this time, a message is retried in case of a cluster outage. The default value is 10 minutes. The minimum value is 1 minute. The maximum is set to 300 minutes \(5 hours\).
 
 </td>
 </tr>

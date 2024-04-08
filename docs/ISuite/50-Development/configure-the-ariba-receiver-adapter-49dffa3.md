@@ -16,7 +16,7 @@ The Ariva receiver adapter connects SAP Integration Suite to the Ariba network. 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
-Once you have created a receiver channel and selected the Ariba receiver adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
+Once you have created a receiver channel and selected the Ariba receiver adapter, you can configure the following attributes. See: [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 Select the *General* tab and provide values in the fields as follows.
 
@@ -156,7 +156,7 @@ Specify the URL to which the cXML requests are posted, or from where the cXMLs a
 </td>
 <td valign="top">
 
-Select one of the options based on the description given below:
+Select one of the options based on the description given next:
 
 -   *Production*: If you select this option, the Ariba Network processes the messages. This connection mode is set as the default deployment mode.
 
@@ -175,7 +175,7 @@ Select one of the options based on the description given below:
 </td>
 <td valign="top">
 
-Select one of the options based on the description given below:
+Select one of the options based on the description given next:
 
 -   *Buyer*: Select this option, if you hold a buyer account on the Ariba Network.
 
@@ -194,7 +194,7 @@ Select one of the options based on the description given below:
 </td>
 <td valign="top">
 
-Select one of the options based on the description given below:
+Select one of the options based on the description given next:
 
 -   *Network ID*: A unique alphanumeric value assigned to every organization registered on Ariba SN; for example, AN01000000001.
 
@@ -213,7 +213,7 @@ Select one of the options based on the description given below:
 </td>
 <td valign="top">
 
-Select one of the options based on the description given below:
+Select one of the options based on the description given next:
 
 -   *Shared Key*: If you have set the shared key in your Ariba account.
 

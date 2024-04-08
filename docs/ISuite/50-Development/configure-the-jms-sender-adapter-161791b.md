@@ -14,13 +14,13 @@ The JMS \(Java Message Service\) sender adapter enables asynchronous decoupling 
 >     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
-> Note that this adapter works with a message broker provided by SAP \(based on the SAP Event Mesh capability\). It does not support connectivity to any other, customer-provided message brokers. The usage of this adapter is supported by all SAP Integration Suite editions, except the basic edition \(see SAP note [2903776](https://me.sap.com/notes/2903776)\).
+> Note that this adapter works with a message broker provided by SAP \(based on the SAP Event Mesh capability\). It does not support connectivity to any other, customer-provided message brokers. The usage of this adapter is supported by all SAP Integration Suite editions, except the basic edition, see SAP note [2903776](https://me.sap.com/notes/2903776).
 
 To understand the concept of asynchronous decoupling, assume that a sender sends a message to SAP Integration Suite \(inbound processing\). If there's an error in outbound processing \(for example, a receiver can't be reached temporarily\), the middleware \(SAP Integration Suite\) retries message processing independently. There's no need that the sender triggers a reprocessing of the message as soon as the error situation has been solved. The sender relies on the middleware to do that. To support this scenario, the message received from the sender is stored in a queue \(using the JMS receiver adapter\). Outbound processing is modeled in an integration flow that initially consumes the message from the queue \(using the JMS sender adapter\). The outbound integration flow retries the message from the queue as long as the error situation lasts.
 
 The following figure shows the involved components.
 
-![](images/JMS_Sender_Adapter_6348733.png)
+![The tenant opens a connection with the Message Broker. Meanwhile, the message received from the tenant is stored in a queue. The queue is using the JMS receiver adapter. The outbound integration flow retries the message from the queue if the error situation lasts.](images/JMS_Sender_Adapter_6348733.png)
 
 Assuming that you have designed an integration flow with a JMS sender adapter. On deployment of the integration flow, the JMS queue \(as specified in the adapter\) is created and the tenant opens a consumer connection to the message broker. The message broker pushes messages through this connection.
 
@@ -30,13 +30,13 @@ Assuming that you have designed an integration flow with a JMS sender adapter. O
 > Therefore, it is recommended to first deploy all integration flows with the JMS sender adapters that are related to your scenario. After this step, all required queues are in place when the JMS receiver adapter comes into play and dynamically determines the related queue names.
 
 > ### Note:  
-> Certain constraints apply with regard to the number and capacity of queues involved, as well as for the headers and exchange properties defined in the integration flow before the message is saved to the queue. See [JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md)
+> Certain constraints apply with regard to the number and capacity of queues involved, as well as for the headers and exchange properties defined in the integration flow before the message is saved to the queue, see [JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md)
 > 
 > The JMS adapter does not serialize messages. This means that there is no guarantee of the order in which the messages are consumed by SAP Cloud Integration. When the integration flow \(with the JMS sender adapter\) is deployed on multiple worker nodes, the messages are processed in parallel. For additional information, also check out the description of parameter *Number of Concurrent Processes*.
 
-Property `SAP_IntegrationFlowID` contains the ID of the integration flow that sent the message to the JMS queue \(see [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md)\).
+Property `SAP_IntegrationFlowID` contains the ID of the integration flow that sent the message to the JMS queue, see [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md).
 
-Once you've created a sender channel and selected the JMS sender adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
+Once you've created a sender channel and selected the JMS sender adapter, you can configure the following attributes, see [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 Select the *General* tab and provide values in the fields as follows.
 
@@ -120,7 +120,7 @@ A maximum length of 80 characters is allowed.
 </td>
 <td valign="top">
 
-Enter the number of concurrent processes for each worker node. The recommended value depends on the number of worker nodes, the number of queues on the tenant, and the incoming load. Make sure to enter a value that is as small as possible \(1-5\) because JMS resources are limited \(see: [Cloud Integration – JMS Resource and Size Limits](https://blogs.sap.com/2017/10/04/cloud-integration-jms-resource-and-size-limits-in-cpi-enterprise-edition/) and [Cloud Integration – Configure Asynchronous Messaging with Retry Using JMS Adapter](https://blogs.sap.com/2017/06/19/cloud-integration-configure-asynchronous-messaging-with-retry-using-jms-adapter/)\).
+Enter the number of concurrent processes for each worker node. The recommended value depends on the number of worker nodes, the number of queues on the tenant, and the incoming load. Make sure to enter a value that is as small as possible \(1-5\) because JMS resources are limited, see: [Cloud Integration – JMS Resource and Size Limits](https://blogs.sap.com/2017/10/04/cloud-integration-jms-resource-and-size-limits-in-cpi-enterprise-edition/) and [Cloud Integration – Configure Asynchronous Messaging with Retry Using JMS Adapter](https://blogs.sap.com/2017/06/19/cloud-integration-configure-asynchronous-messaging-with-retry-using-jms-adapter/).
 
 > ### Note:  
 > Default number of concurrent processes is `1`. Increase this number only if parallel processing is required for your scenario. However, be aware of the fact that, when processing large messages, a high number of concurrent processes can lead to out of memory problems.
@@ -147,7 +147,7 @@ Enter a value for the amount of time to wait before retrying message delivery.
 > ### Note:  
 > In the JMS sender channel, you can configure the time intervals between retries, but you cannot configure that processing will end after a specific number of retries. If required, you can configure this in an exception subprocess that calls a local process for retry handling using the header `SAPJMSRetries` set by the JMS sender adapter.
 > 
-> For more information about explicit retry configuration, read the SAP Community Blog [Cloud Integration – Configure Asynchronous Messaging with Retry Using JMS Adapter](https://blogs.sap.com/2017/06/19/cloud-integration-configure-asynchronous-messaging-with-retry-using-jms-adapter/)
+> For more information about explicit retry configuration, see the SAP Community Blog [Cloud Integration – Configure Asynchronous Messaging with Retry Using JMS Adapter](https://blogs.sap.com/2017/06/19/cloud-integration-configure-asynchronous-messaging-with-retry-using-jms-adapter/)
 
 
 

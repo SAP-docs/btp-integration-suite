@@ -41,6 +41,9 @@ There are two modes through which the package update is done:
     ![](images/Update_Package_1909_28c53b2.png)
 
 
+> ### Note:  
+> If an artifact is already deployed on the tenant, and you trigger a manual update for that content package, the manual update process also updates the deployed instance of the artifact in addition to the stored instance in the *Design* view.
+
 
 
 <a name="loio5e41ce8d978048ec873d235647285dee__section_bxr_lvv_1jb"/>

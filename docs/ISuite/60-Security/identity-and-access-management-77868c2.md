@@ -14,6 +14,8 @@ SAP Integration Suite is based on authentication and authorization mechanisms pr
 
 [Identity and Access Management for Integration Assessment](identity-and-access-management-for-integration-assessment-9a09cdd.md "")
 
+[Identity and Access Management for Migration Assessment](identity-and-access-management-for-migration-assessment-a2ee575.md "Learn about identity and access management for Migration Assessment, including roles and role collections.")
+
 [Identity and Access Management for API Management](identity-and-access-management-for-api-management-016556f.md "Here you can find information on how to secure API Management applications using user authentication and authorization.")
 
 [Identity and Access Management for Cloud Integration](identity-and-access-management-for-cloud-integration-f805b22.md "Identity and access management features are used during the lifecycle of an integration scenario.")

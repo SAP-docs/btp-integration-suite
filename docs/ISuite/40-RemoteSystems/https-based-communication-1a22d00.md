@@ -4,7 +4,7 @@
 
 Certain adapters support communication based on Hypertext Transfer Protocol Secure \(HTTPS\).
 
-HTTPS uses the Transport Layer Security \(TLS\) protocol
+HTTPS uses the Transport Layer Security \(TLS\) protocol.
 
 > ### Note:  
 > Mutual TLS \(mTLS\) is equivalent to client certificate authentication. While setting up the TLS connection, client and server exchange certificates. With mTLS, not only server certificates, but also client certificates are validated based on the signatures provided by certification authorities. For more information, see [Client Certificate Authentication \(Outbound\)](client-certificate-authentication-outbound-c4e4a15.md) and [Keystore](keystore-b163513.md).

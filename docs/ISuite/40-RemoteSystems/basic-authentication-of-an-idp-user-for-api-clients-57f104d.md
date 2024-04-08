@@ -27,7 +27,7 @@ Using this option, the API client is authenticated based on user credentials ass
 
 The following figure shows the components and the involved security artifacts:
 
-![](images/CF_API_BAsic_IdP_e828f5a.png)
+![API client is authenticated based on user credentials associated with a user registered at an identity provider. You can access the Cloud Integration resource through the API. Thanks to the Cloud Integration resource, you can assign roles to users.](images/CF_API_BAsic_IdP_e828f5a.png)
 
 Using SAP BTP cockpit, assign to the user a role that is to be used to authorize the API client to call the OData API. Which role you assign, depends on the Cloud Integration resource you like to access through the API. For more information, see [API Details](../50-Development/api-details-014d6ad.md).
 
@@ -37,7 +37,7 @@ In detail, perform the following steps.
 
 2.  Go to *Security* \> *Role Collections*.
 
-3.  Click the *\+* icon to create a new role collection.
+3.  Choose *Create \(+\)* to create a new role collection.
 
 4.  Specify a role collection name \(for example, `MonitoringAPI`\).
 
@@ -47,7 +47,7 @@ In detail, perform the following steps.
 
 6.  Select the newly created role collection.
 
-7.  Click *Edit*.
+7.  Select *Edit*.
 
 8.  In the *Role Name* drop down list, select the role you like to assign.
 
@@ -76,7 +76,7 @@ In detail, perform the following steps.
 
 12. Select the user for which you like to grant API access.
 
-13. Under *Role Collections*, select *...* \> *Assign Role Collection*.
+13. Under *Role Collections*, select *Assign Role Collection*.
 
 14. Select the role collection that you've created in the previous steps.
 

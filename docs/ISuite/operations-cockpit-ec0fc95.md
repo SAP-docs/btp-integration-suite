@@ -15,17 +15,9 @@ In the Operations Cockpit, you can get a first overview over the most critical r
 
     For more information, see [Job Management](job-management-4146fa5.md).
 
--   *Component Monitor*: Get information on the components in status *Error* quickly and efficiently.
+-   *Component Monitoring*: Get information on the components in status *Error* quickly and efficiently.
 
-    For more information, see [Component Monitor](component-monitor-49f487e.md).
-
--   *Status Information*: Get status information on the Edge Integration Cell components.
-
-    For more information, see [Status Information](status-information-732f300.md).
-
--   *Solace Monitor*: Monitor Solace Message Broker metrics, keep track of resource utilization, and access information about message VPNs, queues, and clients.
-
-    For more information, see [Solace Monitor](solace-monitor-26a7894.md).
+    For more information, see [Component Monitoring](component-monitoring-49f487e.md).
 
 -   *Quick Links*: Jump direclty to *View Runtime Parameters*, a screen that you can also enter via *Component Monitoring*.
 

@@ -2,7 +2,7 @@
 
 # Configure the AMQP Receiver Adapter
 
-You se the Advanced Message Queuing Protocol \(AMQP\) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.
+You use the Advanced Message Queuing Protocol \(AMQP\) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.
 
 
 
@@ -19,14 +19,14 @@ You se the Advanced Message Queuing Protocol \(AMQP\) receiver adapter to send m
 > To be able to connect to queues or topics, you have to create queues and/or topics in the message broker. This needs to be done in the message broker with the configuration tools provided by the message broker.
 
 > ### Note:  
-> Queues, topics, and messages can only be monitored using tools provided by the message broker. Those monitors are not integrated into SAP Integration Suite . In SAP Integration Suite , the integration flows using the AMQP adapter are monitored and the messages send to or consumed from the message broker.
+> Queues, topics, and messages can only be monitored using tools provided by the message broker. Those monitors are not integrated into SAP Integration Suite. In SAP Integration Suite, the integration flows using the AMQP adapter are monitored and the messages send to or consumed from the message broker.
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 
 
-Once you have created a receiver channel and selected the AMQP receiver adapter \(TCP or WebSocket\), you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
+Once you have created a receiver channel and selected the AMQP receiver adapter \(TCP or WebSocket\), you can configure the following attributes. See: [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 
 
@@ -149,7 +149,7 @@ Select *Internet* if you’re connecting directly to the message broker.
 
 Select *On-Premise* if you’re connecting to an on-premise message broker.
 
-For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
+For more information, see: [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
 </td>
 </tr>
@@ -205,7 +205,7 @@ Select the authentication method the message broker supports. *SASL* is selected
 
     Select to use Simple Authentication and Security Layer \(SASL\).
 
--   *OAuth2 Client Credentials* \(only when *WebSocket* has been selected for *Transport Protocol* while creating the connection\)
+-   *OAuth2 Client Credentials* \(only when *WebSocket* has been selected for *Transport Protocol* while creating the connection\).
 
     Select to use OAuth 2.0 client credentials grant. At runtime, Cloud Integration gets access to the protected resources in two steps: After presenting a set of client credentials, Cloud Integration fetches an access token from a token service. In a subsequent step, Cloud Integration uses the access token to get access to the protected resources in the connected system.
 
@@ -220,7 +220,7 @@ Select the authentication method the message broker supports. *SASL* is selected
     > ### Note:  
     > This authentication option implies that Transport Layer Security \(TLS\) is used for the connection.
 
-    More information:  <?sap-ot O2O class="- topic/xref " href="ce627b59a3c2492a8f4263c27e8750a8.xml" text="" desc="" xtrc="xref:4" xtrf="file:/home/builder/src/dita-all/atv1706604823332/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/d5660c146a93483692335e9d79a8c58f.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+    More information:  <?sap-ot O2O class="- topic/xref " href="ce627b59a3c2492a8f4263c27e8750a8.xml" text="" desc="" xtrc="xref:4" xtrf="file:/home/builder/src/dita-all/bsb1708407494841/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/d5660c146a93483692335e9d79a8c58f.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 -   *None*
 
@@ -352,7 +352,7 @@ Define the message type to be used for sending the message to the message broker
 > ### Note:  
 > Select *Binary* or *Text* only if your application receiving the message requires a specific message type.
 > 
-> Also, if you select *Binary* or *Text*, you can define the character encoding with the help of `CamelCharsetName` \(either header or property\) in the *Content Modifier*. In case you don't set the `CamelCharsetName` header or property, the transformation will use UTF-8 character encoding. See [Content Modifier Basics](content-modifier-basics-b0576a8.md) and [About Headers and Exchange Properties](about-headers-and-exchange-properties-0974c4f.md).
+> Also, if you select *Binary* or *Text*, you can define the character encoding with the help of `CamelCharsetName` \(either header or property\) in the *Content Modifier*. In case you don't set the `CamelCharsetName` header or property, the transformation will use UTF-8 character encoding. See: [Content Modifier Basics](content-modifier-basics-b0576a8.md) and [About Headers and Exchange Properties](about-headers-and-exchange-properties-0974c4f.md).
 
 
 

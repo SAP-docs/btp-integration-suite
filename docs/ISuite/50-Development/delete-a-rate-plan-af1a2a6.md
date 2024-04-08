@@ -45,9 +45,9 @@ You are deleting a rate plan.
 **Related Information**  
 
 
-[Create a Rate Plan](create-a-rate-plan-cfe6a30.md "Create a rate plan using the SAP Integration Suite.")
+[Create a Rate Plan](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/cfe6a30600f148a39a7920dbc7fa1ab2.html "Create a rate plan using the API portal.") :arrow_upper_right:
 
-[Update a Rate Plan](update-a-rate-plan-b8c1e6b.md "Update a rate plan using the SAP Integration Suite.")
+[Update a Rate Plan](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/b8c1e6b68be74ead8700f7f8be9baa8b.html "Update a rate plan using the API portal.") :arrow_upper_right:
 
-[Attach Rate Plan to a Product](attach-rate-plan-to-a-product-cc5c942.md "Attach a rate plan to a product using the SAP Integration Suite.")
+[Attach Rate Plan to a Product](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/cc5c942e32df494785c33ba0fc0346f4.html "Attach a rate plan to a product using the API portal.") :arrow_upper_right:
 

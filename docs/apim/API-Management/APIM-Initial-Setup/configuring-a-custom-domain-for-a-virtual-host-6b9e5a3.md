@@ -42,8 +42,9 @@ To request a custom domain with one-way TLS, perform the following steps:
 
     -   Service URL: https://<url-from-service-key\>/apiportal/operations/1.0/Configuration.svc/VirtualHostRequests
     -   Method: POST
-    -   Request Header: Authentication Bearer <token\>
+    -   Request Header: Authorization: Bearer <token\>
     -   Content Type: application/json
+    -   Accept: application/json
     -   Request Body:
 
         > ### Sample Code:  
@@ -53,8 +54,8 @@ To request a custom domain with one-way TLS, perform the following steps:
         >     "virtualHostUrl": "apis.customdomain.com",
         >     "isDefaultVirtualHostRequest" : false,
         >     "isForCustomDomain": true,
-        >     "keyStoreName": "key store name",
-        >     "keyStoreAlias": "key store alias",
+        >     "keyStoreName": "ref://<reference_name>" or "<key_store_name>",
+        >     "keyStoreAlias": "key_store_alias",
         >     "operation" : "CREATE"
         > }
         > 
@@ -69,7 +70,9 @@ To request a custom domain with one-way TLS, perform the following steps:
         > 
         > -   isForCustomDomain - Ensure that the value is set to "true".
         > 
-        > -   keyStoreName: The keyStoreName parameter refers to the name of the keystore that should contain the custom domain's public and private key. To learn how to create a keystore and upload certificates, see [Manage Certificates](../manage-certificates-c665875.md).
+        > -   keyStoreName: The keyStoreName parameter refers to the name of the keystore that should contain the custom domain's public and private key, or the name of the certificate store reference pointing to the keystore. To learn how to create a keystore and upload certificates, see [Manage Certificates](../manage-certificates-c665875.md). Alternatively, you can use a certificate store reference name that points to the keystore containing the custom domain's public and private keys. For more information, see  <?sap-ot O2O class="- topic/xref " href="6f96b64eade84096b6de0322867a97aa.xml" text="" desc="" xtrc="xref:5" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/6b9e5a3430b84fecaac1c994fff6c3ee.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+        > 
+        > -   keyStoreAlias: The keyStoreAlias parameter refers to the name of the keystore certificate containing the custom domain's public and private key. To learn how to create a keystore certificate and upload certificates, see [Manage Certificates](../manage-certificates-c665875.md).
 
         > ### Note:  
         > To enable client authentication \(mutual TLS\) while configuring the virtual host with custom domain, see [Configuring Mutual TLs for Virtual Host](configuring-mutual-tls-for-virtual-host-9faf7ce.md).
@@ -96,8 +99,8 @@ To request a custom domain with one-way TLS, perform the following steps:
         >         "isForCustomDomain": true,
         >         "isForNonSni": false,
         >         "isTLS": false,
-        >         "keyStoreAlias": "key store alias",
-        >         "keyStoreName": "key store name",
+        >         "keyStoreAlias": "key_store_alias",
+        >         "keyStoreName": "ref://<reference_name>" or "<key_store_name>",
         >         "life_cycle": {
         >             "__metadata": {
         >                 "type": "apimgmtconfiguration.History"
@@ -128,6 +131,7 @@ To request a custom domain with one-way TLS, perform the following steps:
     -   Method: POST
     -   Request Header: Authentication Bearer <token\>
     -   Content Type: application/json
+    -   Accept: application/json
     -   Request Body:
 
         > ### Sample Code:  
@@ -137,8 +141,8 @@ To request a custom domain with one-way TLS, perform the following steps:
         >     "virtualHostUrl": "apisupdated.customdomain.com",
         >     "isDefaultVirtualHostRequest" : false,
         >     "isForCustomDomain": true,
-        >     "keyStoreName": "key store name",
-        >     "keyStoreAlias": "key store alias",
+        >     "keyStoreName": "ref://<reference_name>" or "<key_store_name>",
+        >     "keyStoreAlias": "key_store_alias",
         >     "operation" : "UPDATE",
         >     "virtualHostId":"1F02AD6A-A53C-43F4-BF95-F053A8A1469A"
         > }
@@ -154,7 +158,9 @@ To request a custom domain with one-way TLS, perform the following steps:
         > 
         > -   isForCustomDomain - Ensure that the value is set to "true".
         > 
-        > -   keyStoreName: The keyStoreName parameter refers to the name of the keystore that should contain the custom domain's public and private key. To learn how to create a keystore and upload certificates, see [Manage Certificates](../manage-certificates-c665875.md).
+        > -   keyStoreName: The keyStoreName parameter refers to the name of the keystore that should contain the custom domain's public and private key, or the name of the certificate store reference pointing to the keystore. To learn how to create a keystore and upload certificates, see [Manage Certificates](../manage-certificates-c665875.md). Alternatively, you can use a certificate store reference name that points to the keystore containing the custom domain's public and private keys. For more information, see  <?sap-ot O2O class="- topic/xref " href="6f96b64eade84096b6de0322867a97aa.xml" text="" desc="" xtrc="xref:9" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/6b9e5a3430b84fecaac1c994fff6c3ee.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+        > 
+        > -   keyStoreAlias: The keyStoreAlias parameter refers to the name of the keystore certificate containing the custom domain's public and private key. To learn how to create a keystore certificate and upload certificates, see [Manage Certificates](../manage-certificates-c665875.md).
         > 
         > -   virtualHostId: This is the unique ID of the virtual host you are trying to update.
 
@@ -183,8 +189,8 @@ To request a custom domain with one-way TLS, perform the following steps:
         >         "isForCustomDomain": true,
         >         "isForNonSni": false,
         >         "isTLS": false,
-        >         "keyStoreAlias": "key store alias",
-        >         "keyStoreName": "key store name",
+        >         "keyStoreAlias": "key_store_alias",
+        >         "keyStoreName": "ref://<reference_name>" or "<key_store_name>",
         >         "life_cycle": {
         >             "__metadata": {
         >                 "type": "apimgmtconfiguration.History"
@@ -204,7 +210,8 @@ To request a custom domain with one-way TLS, perform the following steps:
         >  
         > ```
 
-        The "lbHost" field contains the host URL which is required for the custom domain DNS mapping.
+        > ### Note:  
+        > The "lbHost" field contains the host URL that is required for the custom domain DNS mapping. If the "lbHost" field does not display any value, please raise a support ticket through the [SAP Support Portal](https://support.sap.com/en/index.html) using the component OPU-API-OD-OPS.
 
 
     > ### Note:  

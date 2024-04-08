@@ -286,6 +286,11 @@ Note that data written to the message header during a processing step, for examp
     <td valign="top">
     
     The default value is *Expression*. If the payload contains expressions within it, then set the type as *Expression*; if the payload is huge and it has no expressions within it, then it is recommended to use the type *Constant*.
+
+    > ### Remember:  
+    > If the payload size is more than 256 KB, the system doesn't let you use the type expression. If there are actual expressions used and you can't reduce the size of the text, use a groovy script.
+
+
     
     </td>
     </tr>

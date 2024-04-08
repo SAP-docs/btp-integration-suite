@@ -21,7 +21,7 @@ It helps you to set up a communication network between many communication partne
 > ### Caution:  
 > Only Trading Partner related content is visible in the *Partner Directory Data* tab and the information is read-only.
 > 
-> The maximum number of Business Transaction Activities that you can conduct per tenant is 10,000. To know more see, [Partner Directory Information](https://help.sap.com/docs/integration-suite/sap-integration-suite/parameterizing-integration-flows-using-partner-directory?version=CLOUD).
+> The maximum number of Business Transaction Activities that you can conduct per tenant is 10,000. To know more, see [Partner Directory Information](https://help.sap.com/docs/integration-suite/sap-integration-suite/parameterizing-integration-flows-using-partner-directory?version=CLOUD).
 
 When a trading partner agreement gets activated, the complete agreement information gets pushed into the partner directory. An entry is created in the partner directory for each business transaction activity in the agreement and for each Interchange Envelope extraction \(depending on the adapter type\). The Interchange Extraction is nothing but an XSLT script that extracts the required parameters from the type system headers and writes those details into a camel exchange header object.
 
@@ -31,20 +31,20 @@ When a trading partner agreement gets activated, the complete agreement informat
 
 ## Procedure
 
-1.  Log on to your Integration Suite .
+1.  Log on to your Integration Suite.
 
-2.  Choose *Design* \> *B2B Scenarios*
+2.  Choose *Design* \> *B2B Scenarios.*
 
 3.  Navigate to the *Partner Directory Data* tab. The tab displays all the partner directory ID that are created in the system. The partner directory ID starts with the convention *SAP\_TPM*. You can also view the following details:
 
-    -   *Activity Plain ID*: This is the unique activity ID assigned to the business transaction activity in an agreement. The ID is the concatenated value of various head paramaters configured in the agreement. To know more, see [Understanding the Basic Concepts](understanding-the-basic-concepts-74c068d.md)
+    -   *Activity Plain ID*: This is the unique activity ID assigned to the business transaction activity in an agreement. The ID is the concatenated value of various head paramaters configured in the agreement. To know more, see [Understanding the Basic Concepts](understanding-the-basic-concepts-74c068d.md).
 
     -   *Agreement Link*: This column displays the link to the related agreement. Choosing this link will open the corresponding transaction activity in the agreement.
 
         > ### Note:  
         > If you want to navigate back to the Partner Directory tab, choose *View Data* option from the *Inbound* or *Outbound* button provided in the agreement transaction.
 
-    -   *Created Date*: Displays the date when the agreement was activated
+    -   *Created Date*: Displays the date when the agreement was activated.
     -   *Last Modified Date*: Displays the date when the activated agreement was modified.
 
 4.  You can search for a specific partner directory data using the *Search* bar.

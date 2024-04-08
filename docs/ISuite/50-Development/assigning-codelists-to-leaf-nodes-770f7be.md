@@ -36,10 +36,23 @@ You've included the leaf node that you want to assign a codelist to in your MIG 
 
 4.  You can select or deselect the code values as required.
 
-5.  Optional: You can choose to use a code value as an example value by choosing :heavy_plus_sign:icon.
+5.  You can search the code values using the following search options:
 
-6.  Optional: You can switch between codelists by selecting the desired codelist from the *Selected Codelist* drop down box.
+    1.  *Search*: This is a generic search field
 
-7.  Optional: You can disassociate a codelist from a leaf node by selecting *None* in the *Selected Codelist* drop down box.
+    2.  *ID*: Search for a specific code value ID using this field. You need to enter the exact ID value here for the search to work.
+
+    3.  *Name*: Search for a specific code value using their here. You can enter partial/full name of the code value and the search function will provide the results accordingly.
+
+    4.  *Definition*: Search for a specific code value using their definition here. You can enter partial/full definition of the code value and the search function will provide the results accordingly.
+
+
+6.  To clear the search filters, choose *Reset*.
+
+7.  Optional: You can choose to use a code value as an example value by choosing :heavy_plus_sign:icon.
+
+8.  Optional: You can switch between codelists by selecting the desired codelist from the *Selected Codelist* drop down box.
+
+9.  Optional: You can disassociate a codelist from a leaf node by selecting *None* in the *Selected Codelist* drop down box.
 
 

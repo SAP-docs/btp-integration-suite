@@ -2,15 +2,17 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Documentation Template for MIGs and MAGs
+# Documentation Export and Settings
 
 You can maintain a template for documentation export which is later picked by the system whenever you export a Message Implementation Guideline \(MIG\) or a Mapping Guideline \(MAG\).
+
+The admnistrative settings allows you to opt-in/opt out of the Proposal service.
 
 
 
 <a name="loio4c442af844e54848ad66f071ae8233ee__section_cyh_3wj_4tb"/>
 
-## Procedure
+## Documentation Export
 
 1.  Navigate to the *Settings* \> *MIGs and MAGs*.
 
@@ -192,5 +194,28 @@ You can maintain a template for documentation export which is later picked by th
     </tr>
     </table>
     
+3.  Choose *Save*.
+
+
+
+<a name="loio4c442af844e54848ad66f071ae8233ee__section_dfq_hs3_w1c"/>
+
+## Administrative Settings
+
+1.  Navigate to the *Administrative Settings* tab.
+
+2.  Choose *Edit* and enable or disable the *Enable Proposal Service* toggle button.
+
+    This option is provided for users who no longer wish to enable their data to be collected for the proposal service.
+
+    > ### Caution:  
+    > Disabling the proposal service cannot be reversed, and it will lead to the following consequences:
+    > 
+    > -   The proposal service will cease collecting MIG/MAG data.
+    > 
+    > -   MIG and MAG proposals will no longer be accessible to this tenant.
+    > 
+    > The change of this setting will not impact the previously collected data.
+
 3.  Choose *Save*.
 

@@ -38,8 +38,9 @@ To request a custom domain with one-way TLS, perform the following steps:
 
     -   Service URL: https://<url-from-service-key\>/apiportal/operations/1.0/Configuration.svc/VirtualHostRequests
     -   Method: POST
-    -   Request Header: Authentication Bearer <token\>
+    -   Request Header: Authorization: Bearer <token\>
     -   Content Type: application/json
+    -   Accept: application/json
     -   Request Body:
 
         > ### Sample Code:  

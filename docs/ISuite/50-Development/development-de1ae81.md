@@ -247,7 +247,7 @@ Generate revenue from APIs.
 </td>
 <td valign="top">
 
-[Monetize APIs](monetize-apis-fcdc89b.md)
+[Monetize APIs](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/fcdc89b5c4884d5e8cfb32c5914943ab.html "API Management provides monetization feature to all API providers to generate revenue for using the APIs.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -458,7 +458,7 @@ Documentation template for MIGs and MAGs.
 </td>
 <td valign="top">
 
-[Documentation Template for MIGs and MAGs](documentation-template-for-migs-and-mags-4c442af.md)
+[Documentation Export and Settings](documentation-export-and-settings-4c442af.md)
 
 </td>
 </tr>

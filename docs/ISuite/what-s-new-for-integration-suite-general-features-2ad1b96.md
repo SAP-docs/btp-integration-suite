@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# What's New for  General Features
+# What's New for Integration Suite General Features
 
 
 
@@ -73,6 +73,76 @@ Latest Revision
 Available as of
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Suite General Features
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Built-In Support
+
+</td>
+<td valign="top">
+
+A new feature, referred as built-insupport, helps you find solutions to problems you may encounter when using the SAP Integration Suite.
+
+From SAP Integration Suite screens, you can search knowledge base articles that that can help you understand the application behaviour and guide you towards solution.
+
+You can also file an incident and receive assistance with recommended solutions through knowledge base articles or help recommendations.
+
+See: [Working with Integration Suite Home](https://help.sap.com/docs/integration-suite/sap-integration-suite/working-with-integration-suite-home?version=CLOUD)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2024-04-06
+
+</td>
+<td valign="top">
+
+2024-04-06
+
+</td>
 </tr>
 <tr>
 <td valign="top">

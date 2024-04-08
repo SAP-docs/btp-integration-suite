@@ -4,16 +4,14 @@
 
 API Management protects your backend services. However, API Management needs to establish connectivity to your backend services during an API call execution.
 
-In case your backend service is restricting access to certain IPs as part of security measures, you need to add API Management LB and NAT IPs to the list of allowed IPs in your backend services.
+In case your backend service is restricting access to certain IPs as part of security measures, you need to add API Management NAT IPs to the list of allowed IPs in your backend services.
 
 > ### Note:  
-> -   LB \(Load Balancer\) IPs are ingress, for incoming requests.
-> 
 > -   NAT \(Network Address Translation\) IPs are egress IPs for requests from API Management.
 > 
 > -   In the Cloud Foundry environment, IPs are controlled by the respective IaaS provider \(AWS, Azure, Google Cloud, Alibaba Cloud\). IPs may change due to network updates on the provider side. Any planned changes will be announced at least four weeks before they take effect.
 
-To get region-specific ingress \(inbound\) and egress \(outbound\) LB and NAT IP addresses for API Management, see the following table:
+To get region-specific egress \(outbound\) NAT IP addresses for API Management, see the following table:
 
 
 
@@ -45,11 +43,6 @@ Technical Key
 <th valign="top">
 
 Technical Key of IaaS Provider
-
-</th>
-<th valign="top">
-
-LB IPs \(ingress, for incoming requests\)
 
 </th>
 <th valign="top">
@@ -86,11 +79,6 @@ West Europe
 </td>
 <td valign="top">
 
-51.105.226.76, 20.4.203.111
-
-</td>
-<td valign="top">
-
 51.105.226.79, 20.107.78.224, 20.4.205.181
 
 </td>
@@ -119,11 +107,6 @@ cf-ap20
 <td valign="top">
 
 Australia East
-
-</td>
-<td valign="top">
-
-20.53.178.192
 
 </td>
 <td valign="top">
@@ -160,11 +143,6 @@ Southeast Asia
 </td>
 <td valign="top">
 
-20.43.177.215
-
-</td>
-<td valign="top">
-
 20.43.177.113
 
 </td>
@@ -193,11 +171,6 @@ cf-us20
 <td valign="top">
 
 West US 2
-
-</td>
-<td valign="top">
-
-51.143.127.29
 
 </td>
 <td valign="top">
@@ -234,11 +207,6 @@ Japan East
 </td>
 <td valign="top">
 
-52.155.116.209
-
-</td>
-<td valign="top">
-
 52.155.117.53
 
 </td>
@@ -267,11 +235,6 @@ cf-us21
 <td valign="top">
 
 East US
-
-</td>
-<td valign="top">
-
-20.42.26.85, 137.135.94.245
 
 </td>
 <td valign="top">
@@ -308,11 +271,6 @@ sa-east-1
 </td>
 <td valign="top">
 
-18.230.84.42, 54.233.108.69, 177.71.244.1
-
-</td>
-<td valign="top">
-
 18.229.180.216, 18.230.68.32, 18.229.200.51
 
 </td>
@@ -341,11 +299,6 @@ cf-jp10
 <td valign="top">
 
 ap-northeast-1
-
-</td>
-<td valign="top">
-
-13.112.134.183, 54.95.250.60, 54.249.225.157
 
 </td>
 <td valign="top">
@@ -382,11 +335,6 @@ ap-southeast-2
 </td>
 <td valign="top">
 
-3.105.46.220, 13.237.97.179, 3.104.188.200
-
-</td>
-<td valign="top">
-
 3.105.155.212, 13.211.74.25, 13.55.87.26
 
 </td>
@@ -415,11 +363,6 @@ cf-ap11
 <td valign="top">
 
 ap-southeast-1
-
-</td>
-<td valign="top">
-
-175.41.164.167, 18.139.72.206, 54.251.80.143
 
 </td>
 <td valign="top">
@@ -456,11 +399,6 @@ ap-northeast-2
 </td>
 <td valign="top">
 
-52.79.158.48, 3.36.84.59, 15.165.191.243
-
-</td>
-<td valign="top">
-
 3.35.108.250, 54.180.45.228, 3.36.176.209
 
 </td>
@@ -489,11 +427,6 @@ cf-ca10
 <td valign="top">
 
 ca-central-1
-
-</td>
-<td valign="top">
-
-35.182.82.207, 99.79.96.34, 99.79.183.119
 
 </td>
 <td valign="top">
@@ -530,11 +463,6 @@ eu-central-1
 </td>
 <td valign="top">
 
-52.57.227.184, 35.156.111.245, 3.72.121.203, 18.195.254.216, 52.59.65.179, 18.157.127.228, 3.71.212.236, 3.78.133.131, 3.125.67.253, 3.120.18.81, 52.57.122.96, 35.157.72.246, 52.59.9.207, 3.122.187.52, 35.158.244.146
-
-</td>
-<td valign="top">
-
 52.29.48.148, 3.120.95.10, 18.194.144.165, 18.196.191.48, 52.59.78.206, 18.195.138.5, 3.73.160.117, 52.57.130.124, 3.72.189.179
 
 </td>
@@ -563,11 +491,6 @@ cf-eu11
 <td valign="top">
 
 eu-central-1
-
-</td>
-<td valign="top">
-
-3.65.99.47, 3.127.192.196, 3.64.16.82
 
 </td>
 <td valign="top">
@@ -604,11 +527,6 @@ us-east-1
 </td>
 <td valign="top">
 
-54.86.152.69, 3.227.214.88, 3.222.180.54, 54.165.0.197, 18.211.185.170, 54.152.176.132, 3.227.146.112, 54.204.200.84, 3.213.190.155, 3.94.236.44, 52.2.5.170, 34.239.31.28
-
-</td>
-<td valign="top">
-
 3.213.79.219, 3.209.244.202, 3.213.81.148, 54.87.110.53, 54.208.172.140, 54.86.163.159
 
 </td>
@@ -637,11 +555,6 @@ cf-us30
 <td valign="top">
 
 us-central-1
-
-</td>
-<td valign="top">
-
-35.209.91.33
 
 </td>
 <td valign="top">
@@ -678,11 +591,6 @@ cn-shanghai
 </td>
 <td valign="top">
 
-139.224.173.96
-
-</td>
-<td valign="top">
-
 101.132.190.155, 106.14.165.33, 106.14.184.113
 
 </td>
@@ -711,11 +619,6 @@ cf-ch20
 <td valign="top">
 
 Switzerland North
-
-</td>
-<td valign="top">
-
-20.250.176.223, 20.250.113.139
 
 </td>
 <td valign="top">
@@ -752,11 +655,6 @@ asia-south1
 </td>
 <td valign="top">
 
-35.207.228.176, 35.207.205.83
-
-</td>
-<td valign="top">
-
 34.100.176.82, 34.93.181.26, 35.200.251.32, 34.100.182.244, 34.93.184.71, 34.100.176.113
 
 </td>
@@ -789,11 +687,6 @@ europe-west3
 </td>
 <td valign="top">
 
-35.207.154.151, 35.207.169.22
-
-</td>
-<td valign="top">
-
 34.159.208.178, 34.159.31.39, 34.141.20.163, 34.107.78.67, 34.159.45.83, 35.246.220.63
 
 </td>
@@ -802,7 +695,7 @@ europe-west3
 
 
 
-<a name="loio585d639653614d4aaf8818388db1e236__section_ujb_1cg_rwb"/>
+<a name="loio585d639653614d4aaf8818388db1e236__section_zs5_jsb_w1c"/>
 
 ## Regions for Trial Accounts
 
@@ -832,11 +725,6 @@ Technical Key
 <th valign="top">
 
 Technical Key of IaaS Provider
-
-</th>
-<th valign="top">
-
-LB IPs \(ingress, for incoming requests\)
 
 </th>
 <th valign="top">
@@ -873,11 +761,6 @@ Southeast Asia
 </td>
 <td valign="top">
 
-20.195.53.58
-
-</td>
-<td valign="top">
-
 20.195.52.254
 
 </td>
@@ -910,11 +793,6 @@ eu-central-1
 </td>
 <td valign="top">
 
-18.195.249.1, 3.122.154.182, 18.157.222.132
-
-</td>
-<td valign="top">
-
 18.157.223.60, 18.157.143.164, 52.28.147.96
 
 </td>
@@ -943,11 +821,6 @@ cf-us10
 <td valign="top">
 
 us-east-1
-
-</td>
-<td valign="top">
-
-54.160.203.34, 3.219.96.75, 3.222.55.46
 
 </td>
 <td valign="top">

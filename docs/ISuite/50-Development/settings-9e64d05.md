@@ -74,7 +74,7 @@ MIGs and MAGs
 </td>
 <td valign="top">
 
-[Documentation Template for MIGs and MAGs](documentation-template-for-migs-and-mags-4c442af.md)
+[Documentation Export and Settings](documentation-export-and-settings-4c442af.md)
 
 </td>
 </tr>

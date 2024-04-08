@@ -6,7 +6,7 @@ Integration Assessment involves orchestration across different personas.
 
 
 
-Creating a business solution request is the task of the business domain expert \(see [Personas](../60-Security/personas-5df5af1.md)\).
+Creating a business solution request is the task of the business domain expert, see [Personas](../60-Security/personas-5df5af1.md).
 
 Perform the following steps to create a business solution request.
 
@@ -15,12 +15,12 @@ Perform the following steps to create a business solution request.
 2.  Choose the *Business Solution Request* tile.
 3.  Choose *Create* to create a new business solution request.
 
-4.  Provide a name for the request and click *Create*. The status of the request appears as *Draft*.
+4.  Provide a name for the request and select *Create*. The status of the request appears as *Draft*.
 
     > ### Note:  
     > The status of Business Solution Request and Interface Request are maintained seperately.
 
-5.  In the *General* tab, provide the business background in the questionnaire that appears. There might be additional explanations available for some questions. In this case you will see a hint icon next to it. Click on this icon to get help on how to answer the question.
+5.  In the *General* tab, provide the business background in the questionnaire that appears. There might be additional explanations available for some questions. In this case a hint icon will provide further information..
 
 6.  In the *Interface Requests* tab, choose *Create* to add the interface request details.
 
@@ -92,14 +92,14 @@ Perform the following steps to create a business solution request.
     </tr>
     </table>
     
-8.  Click on *Next Step*. In the *Attachments* tab, provide attachments or diagrams. This action is optional.
+8.  Select *Next Step*. In the *Attachments* tab, provide attachments or diagrams. This action is optional.
 
-9.  Click on *Done* to save your settings.
+9.  Select *Done* to save your settings.
 
-10. Click on *Submit*. The status of Business Solution Request changes to *New* after filling all the mandatory fields. The interface request status changes to *Requirement Analysis*.
+10. Select *Submit*. The status of Business Solution Request changes to *New* after filling all the mandatory fields. The interface request status changes to *Requirement Analysis*.
 
     > ### Note:  
-    > If you want to make any changes to the General section of the business solution request, click on *Edit* and perform the operation. You can also create new interface requests, edit or delete the existing ones in the *New* status.
+    > If you want to make any changes to the General section of the business solution request, select *Edit* and perform the operation. You can also create new interface requests, edit or delete the existing ones in the *New* status.
 
     An interface request can have the following status values:
 
@@ -155,22 +155,22 @@ Perform the following steps to create a business solution request.
     </tr>
     </table>
     
-11. Click on the interface request and fill the questionnaire.
+11. Select the interface request and fill the questionnaire.
 
-    Click on *Done* once you provide all the details.
+    Select *Done* once you provide all the details.
 
-12. Click on *Go to Technology Selection*. The status of interface request changs to *Technology Selection*.
-
-    > ### Note:  
-    > To make changes to the questionnaire ,click on *Back to Questionnaire*. In the questionnaire section, click on *Edit* and the status is reset to *Requirement Analysis*.
-
-13. Click on *Select Technology* and choose the instance based on the recommendation. Click on *Select*.
-14. After technology selection is complete, click on *Submit*. The status of Interface Request changes to *Completed*.
+12. Select *Go to Technology Selection*. The status of interface request changs to *Technology Selection*.
 
     > ### Note:  
-    > After completing the Interface Request, if you want to make any changes, select the Interface Request and click on *Reopen*. This will reset the status of Interface Request to *Technology Selection*. You can edit the technology selection by clicking on *Select Technology*. To edit the questionnaire, click on *Back to Questionnaire*. The status is reset to *Technology Selection*. By clicking on *Edit*, the status changes to *Requirement Analysis*. Reopening Interface Request and making changes may impact the Technology Recommendation.
+    > To make changes to the questionnaire, select *Back to Questionnaire*. In the questionnaire section, select *Edit* and the status is reset to *Requirement Analysis*.
 
-15. Go to the Request section and select the Business Solution Request. The status is still *In Progress* whereas the statuses of Interface Requests should be *Completed*. Click on *Complete Request* to complete the Business Solution Request.
+13. Select *Select Technology* and choose the instance based on the recommendation. Choose *Select*.
+14. After technology selection is complete, select *Submit*. The status of Interface Request changes to *Completed*.
+
+    > ### Note:  
+    > After completing the Interface Request, if you want to make any changes, select the Interface Request and select *Reopen*. This will reset the status of Interface Request to *Technology Selection*. You can edit the technology selection by choosing *Select Technology*. To edit the questionnaire, select *Back to Questionnaire*. The status is reset to *Technology Selection*. By selecting *Edit*, the status changes to *Requirement Analysis*. Reopening Interface Request and making changes may impact the Technology Recommendation.
+
+15. Go to the Request section and select the Business Solution Request. The status is still *In Progress* whereas the statuses of Interface Requests should be *Completed*. Select *Complete Request* to complete the Business Solution Request.
 
     > ### Note:  
     > You can only set the Business Solution Request to complete once the involved Interface Requests are completed. There should be at least one Interface Request associated with the Business Solution Request.
@@ -242,7 +242,7 @@ Perform the following steps to create a business solution request.
     </table>
     
     > ### Note:  
-    > After completing the Business Solution Request, if you want to make any changes, select the Business Solution Request and click on *Reopen*. This will reset the status of the Business Solution Request to *In Progress*. You can edit the technology selection by clicking on *Select Technology*. You can edit the questionnaire, or edit the Interface Requests by clicking on *Edit*.
+    > After completing the Business Solution Request, if you want to make any changes, select the Business Solution Request and select *Reopen*. This will reset the status of the Business Solution Request to *In Progress*. You can edit the technology selection by choosing *Select Technology*. You can edit the questionnaire, or edit the Interface Requests by selecting *Edit*.
 
 
 You have now successfully created a Business Solution Request and Interface Requests.

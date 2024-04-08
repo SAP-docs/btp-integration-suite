@@ -18,13 +18,13 @@ A Mapping Guideline \(MAG\) is based on a source and a target message implementa
 
 The *Mapping Guidelines* tab displays an overview of all the MAGs that you've created.
 
--   *Add*: The button allows to create a new MAG. To know more, see [Creating a New Mapping Guideline](creating-a-new-mapping-guideline-a42920e.md)
+-   *Add*: You can create a new MAG. To know more, see [Creating a New Mapping Guideline](creating-a-new-mapping-guideline-a42920e.md)
 
--   *Export*: You can export your mapping guidelines using this button. To know more, see [Exporting MIG/MAG](exporting-mig-mag-c8bba26.md)
--   *Import*: You can import mapping guidelines into your tenant using this button. To know more, see [Importing MIG/MAG](importing-mig-mag-7139aad.md)
--   *Update MAGs*: You can filter and update mapping guidelines in bulk using this button. To know more, see [Updating Mapping Guidelines](updating-mapping-guidelines-655ceb1.md)
+-   *Export*: You can export your mapping guidelines. To know more, see [Exporting MIG/MAG](exporting-mig-mag-c8bba26.md)
+-   *Import*: You can import mapping guidelines into your tenant. To know more, see [Importing MIG/MAG](importing-mig-mag-7139aad.md)
+-   *Update MAGs*: You can filter and update mapping guidelines in bulk. To know more, see
 
-Filters are used to search and display MAGs based on various criteria. You can use the *Free text filter* search or the <span class="SAP-icons-V5"></span> \(Extended filter\)at the top of the screen to specify your search criteria. The *Free text filter* search allows you to filter and display MAGs that match your search text. It can be used as a quick filter to match your search text against multiple attributes of your MAGs.
+Filters are used to search and display MAGs based on various criteria. You can use the *Free text filter* search or the <span class="SAP-icons-V5"></span> \(Extended filter\)at the beginning of the screen to specify your search criteria. The *Free text filter* search allows you to filter and display MAGs that match your search text. It can be used as a quick filter to match your search text against multiple attributes of your MAGs.
 
 You can also choose <span class="SAP-icons-V5"></span> \(Extended filter\)to filter MAGs based on specific criteria. You can use the required filter fields to list MAGs that match your query. You can also customize the filter bar by choosing *Filters*. You can expand or collapse the filter area using *Show Filter Bar* or *Hide Filter Bar*.
 
@@ -250,7 +250,7 @@ The date range during which the MAG was imported.
 </tr>
 </table>
 
-You can also view the version history of a specific mapping guideline. Choose the *History* button provided below the version details of a MAG in the *Mapping Guidelines* page. The resulting screen would display the following version history details of the MAG:
+You can also view the version history of a specific mapping guideline. Choose *History* which you can find after the version details of a MAG in the *Mapping Guidelines* page. The resulting screen would display the following version history details of the MAG:
 
 -   *Version*: This column displays the version numbers of the MAG
 
@@ -266,7 +266,7 @@ You can also view the version history of a specific mapping guideline. Choose th
 
 -   *Last Imported By*: Displays the unique identifier of the user who imported the MAG.
 -   *Imported*: This column lets you know if the MAG is imported or not.
--   The action <span class="SAP-icons-V5"></span> button allows you to copy, migrate or compare your MAG.
+-   <span class="SAP-icons-V5"></span> \(Action\) allows you to copy, migrate or compare your MAG.
 
 The *Code Value Mapping* tab displays the list of global code value mappings that can be used in your mapping guideline. To know more, see [Global Code Value Mapping](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fd1d3ff10e0f406f95924d5f77c7f6b1.html "Know more about the Code Value Mapping tab in the Mapping Guidelines page.") :arrow_upper_right:.
 

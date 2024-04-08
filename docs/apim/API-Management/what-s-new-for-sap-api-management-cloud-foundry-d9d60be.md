@@ -92,9 +92,284 @@ Self-Service for Administrators to Update Custom Domain Certificate
 </td>
 <td valign="top">
 
+When configuring a custom virtual host to support TLS, you can specify a keystore or truststore by using a reference. A reference is a variable that holds the name of the keystore or truststore, instead of directly specifying the name.
+
+See: [Working with References](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-references-to-keystore-and-truststore?version=CLOUD) \(SAP API Management customers choose: [Working with References](https://help.sap.com/docs/sap-api-management/sap-api-management/configuring-references-to-keystore-and-truststore?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-04-12
+
+</td>
+<td valign="top">
+
+2024-04-12
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Flow Variables
+
+</td>
+<td valign="top">
+
+When executing API proxies created using the on-prem API provider, the backend response may contain URLs that include the API Provider's internal host and port values. These values should not be revealed to API consumers and are not usable.
+
+To address this issue, the following flow variables have been added to the on-premise proxy so that the API Provider's internal host and port values can be replaced with the virtual host and port values:
+
+-   onpremise.target.host
+
+-   onpremise.target.port
+
+-   onpremise.target.basepath
+
+
+These variables ensure that API consumers are not exposed to the internal details of the API provider.
+
+See: [FlowVariables](https://help.sap.com/docs/integration-suite/sap-integration-suite/flow-variables?version=CLOUD) \(SAP API Management customers choose: [Flow Variables](https://help.sap.com/docs/sap-api-management/sap-api-management/flow-variables?locale=en-US&version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-12-04
+
+</td>
+<td valign="top">
+
+2024-12-04
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+mTLS Authentication
+
+</td>
+<td valign="top">
+
+You can now utilize certificate-based credentials to seamlessly migrate API Management subscriptions from Neo to Cloud Foundry, as well as between same or different Cloud Foundry environments.
+
+See: [Clone API Management Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts?version=CLOUD) and [Clone API Management Content for Cloud Foundry to Cloud Foundry Migration](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=CLOUD) \(SAP API Management customers choose: [Clone API Management Artifacts](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts?version=Cloud)and [Clone API Management Artifacts During Cloud Foundry to Cloud Foundry Migration](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-04-04
+
+</td>
+<td valign="top">
+
+2024-04-04
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Client SDK version 1.6.0
+
+</td>
+<td valign="top">
+
+The outdated libraries in the Client SDK have been upgraded to the latest version.
+
+See the Client SDK version 1.6.0 in: [API Services](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-services?version=CLOUD) \(SAP API Management customers choose: [API Services](https://help.sap.com/docs/sap-api-management/sap-api-management/api-services?q=certificate&version=Cloud)\)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-03-22
+
+</td>
+<td valign="top">
+
+2024-04-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Self-Service for Administrators to Update Custom Domain Certificate
+
+</td>
+<td valign="top">
+
 The recent update allows for the configuration of additional virtual hosts in the Cloud Foundry environment. This can be done with either a default domain or a custom domain. Additionally, existing virtual hosts can now have their alias, keystore, keyalias, and truststore updated. This eliminates the need for the SAP Operations team to manually upload certificates in order to complete the configuration.
 
-See: [Configuring Additional Virtual Host in Cloud Foundry Environment](https://help.sap.com/docs/integration-suite/sap-integration-suite/requesting-additional-virtual-host-in-cloud-foundry-environment?version=Cloud) \(SAP API Management customers choose: [Configuring Additional Virtual Host in Cloud Foundry Environment](https://help.sap.com/docs/sap-api-management/sap-api-management/requesting-additional-virtual-host-in-cloud-foundry-environment-a7b91e5aca32497ca2b17c671ed2bb42-41?version=Cloud)\)
+See: [Configuring Additional Virtual Host in Cloud Foundry Environment](https://help.sap.com/docs/integration-suite/sap-integration-suite/requesting-additional-virtual-host-in-cloud-foundry-environment?version=CLOUD) \(SAP API Management customers choose: [Configuring Additional Virtual Host in Cloud Foundry Environment](https://help.sap.com/docs/sap-api-management/sap-api-management/configuring-additional-virtual-host-in-cloud-foundry-environment?version=Cloud)\)
 
 </td>
 <td valign="top">
@@ -160,7 +435,7 @@ Manage Access in API business hub enterprise
 
 As an API business hub enterprise admin, you now have the ability to manage access control checks for users to search, discover, and consume the content.
 
-See: [Manage Access](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-access?version=CLOUD) \(SAP API Management customers choose: [Manage Access](https://help.sap.com/docs/sap-api-management/sap-api-management/manage-access?version=CLOUD)\)
+See: [Manage Access](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-access?version=CLOUD) \(SAP API Management customers choose: [Manage Access](https://help.sap.com/docs/sap-api-management/sap-api-management/manage-access?version=Cloud&q=Manage%20Access)
 
 </td>
 <td valign="top">

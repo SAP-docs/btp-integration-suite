@@ -446,6 +446,23 @@ Contextual help. You can activate contextual help by choosing <span class="SAP-i
 <tr>
 <td valign="top">
 
+<span class="SAP-icons-V5"></span> Support
+
+</td>
+<td valign="top">
+
+Built-in support. You can activate built-in support by choosing <span class="SAP-icons-V5"></span> Get Support
+
+> ### Note:  
+> Built-in support is currently available for certain screens only.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 <span class="SAP-icons-V5"></span> Explore our Ecosystem
 
 </td>

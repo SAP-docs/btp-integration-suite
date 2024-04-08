@@ -27,6 +27,7 @@ You can configure mutual TLs for a virtual host, which validates the identities 
     -   Method: POST
     -   Request Header: Authentication Bearer <token\>
     -   Content Type: application/json
+    -   Accept: application/json
     -   Request Body:
 
         Create
@@ -38,7 +39,7 @@ You can configure mutual TLs for a virtual host, which validates the identities 
         >     "virtualHostUrl": "prod-apis",
         >     "isDefaultVirtualHostRequest" : false,
         >     "isClientAuthEnabled": true,
-        >     "trustStore": "trust-store",
+        >     "trustStore": "ref://<reference_name>" or "<trust_store_name>",
         >     "operation" : "CREATE"
         > }
         > 
@@ -53,7 +54,7 @@ You can configure mutual TLs for a virtual host, which validates the identities 
         >     "virtualHostUrl": "prod-apis",
         >     "isDefaultVirtualHostRequest" : false,
         >     "isClientAuthEnabled": true,
-        >     "trustStore": "trust-store",
+        >     "trustStore": "ref://<reference_name>" or "<trust_store_name>",
         >     "virtualHostId":"c269915f-7adc-4f78-bdd0-dd39ffcb079f",
         >     "operation" : "UPDATE"
         > }
@@ -63,7 +64,7 @@ You can configure mutual TLs for a virtual host, which validates the identities 
         > ### Note:  
         > -   isClientAuthEnabled: This field must be set to "true" to enable mutual TLS.
         > 
-        > -   trustStore: This refers to the name of the truststore that holds the client certificate. To learn how to create a truststore and upload certificates, see [Manage Certificates](50-Development/manage-certificates-c665875.md).
+        > -   trustStore: This refers to the name of the truststore that holds the client certificate, or name of the certificate store reference that points to the trust store. To learn how to create a truststore and upload certificates, see [Manage Certificates](50-Development/manage-certificates-c665875.md). Alternatively, you can use a certificate store reference name instead of the truststore name. This reference name points to the truststore that contains the client certificate. For detailed instructions, see [Working with References](50-Development/working-with-references-6f96b64.md).
 
 
     > ### Note:  

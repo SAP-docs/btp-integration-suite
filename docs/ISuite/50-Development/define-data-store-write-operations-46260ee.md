@@ -226,7 +226,7 @@ This component stores data on your tenant. Note that the tenant space is limited
 
 ## Next Steps
 
-Be aware of the following fact when you plan to execute a data store Select operation in a subsequent integration flow step: When retrieving a message body from a data store in a subsequent step, only XML is supported.
+Be aware of the following fact when you plan to execute a data store. Select an operation in a subsequent integration flow step: When retrieving a message body from a data store in a subsequent step, only XML is supported.
 
 The only option to read non-XML data is provided by the data store Get operation.
 

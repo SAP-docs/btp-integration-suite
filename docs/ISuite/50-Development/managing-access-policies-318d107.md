@@ -12,12 +12,16 @@ Define access policies to restrict the access to integration artifacts and data 
 
 In SAP Integration Suite, user permissions are granted in such a way that all tasks can be performed on all artifacts and data. Access policies provide a way to restrict access to selected artifacts and their data.
 
-See: [Access Policies](access-policies-e0009f3.md)
+See: [Access Policies](access-policies-e0009f3.md).
 
 > ### Tip:  
 > To learn more how access policies work, check out some examples at [Access Policies Examples](access-policies-examples-f1dc1a7.md).
 
 
+
+
+
+### Define Access Policies
 
 To define an access policy, you go to *Monitor* \> *Integrations and APIs* \> *Manage Security* and select the *Access Policies* tile.
 
@@ -26,6 +30,10 @@ Here, you define the set of artifacts that are to be protected by the access pol
 An access policy can contain multiple artifact references, each artifact reference defining an artifact type and a condition for the name or ID of the artifacts to be protected.
 
 See: [Defining Access Policies](defining-access-policies-b0d7950.md)
+
+
+
+### Provide User Access
 
 To give dedicated users access to the artifacts protected by the access policy, you define a role and associate it with the access policy \(using SAP Business Technology Platform cockpit\).
 

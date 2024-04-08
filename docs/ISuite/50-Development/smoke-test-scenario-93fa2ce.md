@@ -37,18 +37,18 @@ In the course of this exercise, you execute a simulation tool on an integration 
 
 5.  Choose the *Simulation Start Point*, a dialog opens to *Add Simulation Input*. Provide an input payload in the *Body* section and choose *OK*. The subset of an integration flow now filters the incoming payload based on the XPath provided in the Filter step.
 
-    Use the following payload:-
+    Use the following payload:
 
     `<root><order><orderno>OD100</orderno></order></root>`
 
 6.  Select simulation tool and choose *Run Simulation*:arrow_forward:
 
-7.  You can see a toast message that the simulation completed successfully, the simulation *End Point* turns from black color to green and a message envelope :envelope: appears between start and end point.
+7.  You receive a toast message that the simulation completed successfully, the simulation *End Point* turns from black color to green and a message envelope :envelope: appears between start and end point.
 
 8.  Choose*Message Envelope* located next to *XML to JSON Converter*. A message content opens, check the body section and verify that the input payload has been simulated. Based on the input and the XPath provided, the output message consist of the order details.
 
     You can check that based on the filter criteria, the resulting message has been generated correctly.
 
-9.  Choose <span class="SAP-icons-V5"></span> *Clear Simulation* located in the simulation tool to clear all defined simulation path.
+9.  Choose *Clear Simulation*<span class="SAP-icons-V5"></span> located in the simulation tool to clear all defined simulation path.
 
 

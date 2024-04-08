@@ -10,8 +10,6 @@ Use this procedure to create and deploy an OData API artifact.
 
 ## Context
 
-We've unified the experience of creating all API artifacts with a single entry point. You now first the select the runtime profile of your choice and then move to appropriate steps to create the API artifacts that the runtime profile supports. For more information, see help
-
 An OData API artifact creates an OData API-based integration scenario with the OData V2 sender adapter.
 
 <a name="task_ytz_gq4_gpb"/>

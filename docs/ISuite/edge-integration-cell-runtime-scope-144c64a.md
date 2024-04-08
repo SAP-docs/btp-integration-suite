@@ -47,13 +47,15 @@ Reusable artifacts
 </td>
 <td valign="top">
 
+-   Message Mapping
+
 -   Script Collection
 
 -   Integration Adapter
 
 -   Value Mapping
 
--   Message Mapping
+-   Function Libraries
 
 
 

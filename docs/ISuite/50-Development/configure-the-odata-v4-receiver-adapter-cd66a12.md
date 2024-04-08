@@ -367,7 +367,7 @@ If the value \* is entered, **all** the HTTP response header values are converte
 </td>
 <td valign="top">
 
-The adapter makes a $metadata call, before the actual endpoint call. Not all headers or query parameters are passed to the $metadata call. If your service needs some headers or parameters, provide the same in the request headers and query parameters fields.
+The adapter makes an internal $metadata call during the message processing, before the actual endpoint call. Not all headers or query parameters are passed to the $metadata call. If your service needs some headers or parameters, provide the same in the request headers and query parameters fields.
 
 *Request Headers* – provide a pipe-separated \(|\) list of HTTP request headers to be sent to the $metadata call.
 
@@ -543,6 +543,18 @@ The adapter supports *Function Import* for the following return types:
 <tr>
 <td valign="top">
 
+*Sub Levels* 
+
+</td>
+<td valign="top">
+
+Sub-levels of the entity that you want to access. For example, if you want to access the field *Description* in the entity *Products*, and the field is located at *Category* \> *Products* \> *Description*, you select the *Sub Levels* as `3` since the field you want to access is at the third level.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Select Entity* 
 
 </td>
@@ -575,6 +587,18 @@ There could be a scenario in which you wish to edit or update your modeling. In 
 <td valign="top">
 
 Fields associated with the entity that you want to perform the operation on.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Filter Fields* 
+
+</td>
+<td valign="top">
+
+Type the field name that you're looking for out to narrow down your search.
 
 </td>
 </tr>

@@ -8,7 +8,7 @@
 
 Use the *Externalize* feature to declare a parameter as a variable and reuse it across multiple components in the same integration flow. You can define multiple parameters for each field, but you can only assign a single value for each parameter. If a value contains common strings that can be reused, then you can split the value and assign the strings to different parameters.
 
-The Externalization Parameters value field of an integration flow has been defined as following:-
+The Externalization Parameters value field of an integration flow has been defined as following:
 
 1.  **Default value:**The parameter value defined by editing it in the integration flow is called as the parameter's default value. It's a predefined integration value that can be modified by integration developer.
 
@@ -85,7 +85,7 @@ The integration flow must be in *Edit* mode to perform the steps.
 
 2.  Choose *Externalize* to define a new parameter.
 
-3.  Enter the parameter in curly brackets in the relevant field and press [Tab\].
+3.  Enter the parameter in curly brackets in the relevant field and use [Tab\].
 
     > ### Example:  
     > \{\{Parameter\_1\}\}
@@ -105,14 +105,14 @@ The integration flow must be in *Edit* mode to perform the steps.
 
 ### To create a new parameter for a cell in the table:
 
-1.  In the relevant table cell, enter the parameter in curly brackets and press [Tab\].
+1.  In the relevant table cell, enter the parameter in curly brackets and use [Tab\].
 
 2.  Choose the *<Define Value\>* tag, and provide a default value for the parameter in the dialog box.
 
 3.  Choose *OK* to save the changes.
 
     > ### Note:  
-    > -   If you need to remove the externalization of a parameter click the delete icon.
+    > -   If you need to remove the externalization of a parameter select the delete option.
     > 
     > -   You aren’t allowed to split a value into multiple strings.
 
@@ -125,7 +125,7 @@ The integration flow must be in *Edit* mode to perform the steps.
 
 2.  Choose *Externalize* to define a new parameter and default value for the text area.
 
-3.  Enter the parameter in curly brackets in the text-area field and press [Tab\].
+3.  Enter the parameter in curly brackets in the text-area field and use [Tab\].
 
     > ### Example:  
     > -   \{\{header\_message\}\}
@@ -140,7 +140,7 @@ The integration flow must be in *Edit* mode to perform the steps.
 5.  Choose *OK* to save the changes.
 
     > ### Note:  
-    > You can click on *Preview* under the property sheet to view the resolved value of the parameter.
+    > You can select *Preview* under the property sheet to view the resolved value of the parameter.
     > 
     > The *Preview* button will be enabled only after externalizing a text area attribute.
 
@@ -151,7 +151,7 @@ The integration flow must be in *Edit* mode to perform the steps.
 
 1.  Select an integration flow component.
 
-2.  In the relevant component field define a parameter in curly brackets, and press [Enter\].
+2.  In the relevant component field define a parameter in curly brackets, and use [Enter\].
 
     > ### Example:  
     > \{\{parameter\_1\}\}
@@ -175,7 +175,7 @@ The integration flow must be in *Edit* mode to perform the steps.
     > \{\{Parameter\}\}.
 
     > ### Note:  
-    > By typing `{{` in the parameter field, the auto-suggest displays existing parameters.
+    > By entering `{{` in the parameter field, the auto-suggest displays existing parameters.
 
 4.  To edit the parameter value, choose the *<Define Value\>* tag.
 
@@ -198,7 +198,7 @@ The integration flow must be in *Edit* mode to perform the steps.
 
 ### Configure Externalized Parameters
 
-For more information on configuring externalized parameter, see [Configure Externalized Parameters of an Integration Flow](configure-externalized-parameters-of-an-integration-flow-462a478.md)
+For more information on configuring externalized parameter, see: [Configure Externalized Parameters of an Integration Flow](configure-externalized-parameters-of-an-integration-flow-462a478.md)
 
 > ### Note:  
 > When the integration flow is validated, deployed, and executed the configured value always precedes the default value of the parameter. The default value in the integration flow editor can be updated by the integration developer, however, it won’t take precedence over the configured value.
@@ -207,13 +207,13 @@ For more information on configuring externalized parameter, see [Configure Exter
 
 ### Compare default and configured values
 
-You can use Externalized Parameter view in comparing the default and configured value for the quality assurance purpose. For more information, see [Externalized Parameters View](externalized-parameters-view-27a0216.md)
+You can use Externalized Parameter view in comparing the default and configured value for the quality assurance purpose. For more information, see: [Externalized Parameters View](externalized-parameters-view-27a0216.md)
 
 
 
 ### Download integration flow
 
-For more information on downloading integration flow, see [Working with an Integration Package](working-with-an-integration-package-c433ce2.md) 
+For more information on downloading integration flow, see: [Working with an Integration Package](working-with-an-integration-package-c433ce2.md) 
 
 
 
@@ -247,7 +247,7 @@ Checkbox
 
 You can define a new parameter for the *Checkbox* control in the *Externalization* view. Once you provide name for the parameter value and update the value, it indicates that the checkbox control is externalized.
 
-Choose on token of the checkbox control, it opens a *Parameter value update* dialog, to provide a default value for this newly created parameter. You can update the default value of parameter.
+Choose token of the checkbox control, it opens a *Parameter value update* dialog, to provide a default value for this newly created parameter. You can update the default value of parameter.
 
 > ### Note:  
 > If the parameter isn’t configured from the *Configure* View, the Configured value is flagged as `<No Value Configured>`
@@ -266,11 +266,11 @@ Dropdown
 
 You can define a new parameter for *Dropdown* control in the *Externalization* view. Once you tab out of the parameter column, a token is created on dropdown control. It indicates that control is externalized.
 
-On click of token, parameter update dialog opens which shows the default value of parameter.
+By selecting the token, parameter update dialog opens which shows the default value of parameter.
 
 You can configure dropdown control from the *Configure* view.
 
-Upon configuration from *Configure* view, the configured value shows in the parameter update dialog when you click on dropdown control token.
+Upon configuration from *Configure* view, the configured value shows in the parameter update dialog when you select the dropdown control token.
 
 </td>
 </tr>
@@ -309,7 +309,7 @@ Help Service
 You can select or browse the resource using *Help Service* control.
 
 > ### Note:  
-> If the help service control is externalized, the select button of the corresponding field will be disabled. It's only available to browse the resource if the control isn't externalized.
+> If the help service control is externalized, the select the corresponding field will be disabled. It's only available to browse the resource if the control isn't externalized.
 
 Choose the token of the help service control to define the default value of parameter. When the parameter is configured, you can see in the parameter update dialog.
 
@@ -323,7 +323,7 @@ Scheduler
 </td>
 <td valign="top">
 
-You can define a new parameter for dropdown control in the *Externalization* view. Select *Configure* view to modify the *Scheduler* control. You can find the details of configured value by clicking show button.
+You can define a new parameter for dropdown control in the *Externalization* view. Select *Configure* view to modify the *Scheduler* control. You can find the details of configured value by selecting *Show*.
 
 </td>
 </tr>

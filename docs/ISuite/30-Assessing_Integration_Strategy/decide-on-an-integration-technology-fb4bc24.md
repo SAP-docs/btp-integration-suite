@@ -92,7 +92,7 @@ In [Determine an Integration Technology](determine-an-integration-technology-69b
 
 3.  The list of proposed technologies is adapted to your settings.
 
-    Which you click a technology, a screen opens showing to which extent the relevant key characteristics are covered by the technology.
+    By choosing a technology, a screen opens showing to which extent the relevant key characteristics are covered by the technology.
 
     > ### Tip:  
     > To get an overview of all integration technologies and the supported integration styles, use case patterns, and key characteristics, go to *Analyze* \> *Integration Technologies Overview*.
@@ -168,7 +168,7 @@ The combination is assigned.
 </tr>
 </table>
 
-By clicking an integration pattern with the status *Not Assigned* or *Applied*, you can display the related integration technologies and \(if defined\) interface requests.
+By selecting an integration pattern with the status *Not Assigned* or *Applied*, you can display the related integration technologies and \(if defined\) interface requests.
 
 
 
@@ -260,7 +260,7 @@ Supported applications
 </tr>
 </table>
 
-You can also create a new integration policy by clicking *\+* \(*Create*\).
+You can also create a new integration policy by selectking *\+* \(*Create*\).
 
 
 

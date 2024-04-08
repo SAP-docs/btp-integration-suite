@@ -71,18 +71,6 @@ On-premise integration runtime of SAP Process Integration
 </td>
 <td valign="top">
 
--   Integration Flow
-
--   Value Mapping
-
-
-Within an integration flow, the supported adapters, flow steps, and its technical capabilities differs for each profile. To know the supported components for each profile, do the following steps:
-
-1.  In your tenant, go to *Settings* \> *Integrations* \> *Runtime Profiles*.
-
-2.  Choose a SAP PO profile of your choice to view a list of supported components.
-
-
 
 
 </td>

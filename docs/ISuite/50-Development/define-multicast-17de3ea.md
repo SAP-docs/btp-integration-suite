@@ -30,7 +30,7 @@ You can use the *Multicast* step to send copies of the same message to multiple 
 
     2.  Select the branch which you want to move up or down in the order.
 
-    3.  Use *Move Up* and *Move Down* buttons to change the order.
+    3.  Use *Move Up* and *Move Down* to change the order.
 
 
     The branch name is dependent on the order in which you have defined the message path. If you change the order, the branch name will not change.

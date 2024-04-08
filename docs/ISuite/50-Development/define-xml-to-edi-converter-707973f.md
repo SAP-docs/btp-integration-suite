@@ -64,7 +64,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="5">
+    <td valign="top" rowspan="6">
     
     EDIFACT
     
@@ -77,6 +77,24 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     <td valign="top">
     
     Select encoding format for the incoming payload.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Target Encoding
+    
+    </td>
+    <td valign="top">
+    
+    Select encoding format for the outgoing payload. If you select 'Dynamic', you must define either of the values in SAP\_XMLTOEDI\_EDIFACT\_TARGET\_ENCODING exchange header:
+
+    -   UTF-8
+    -   ISO-8859-1 to ISO-8859-9
+    -   fromIncomingPayload
+
+
     
     </td>
     </tr>

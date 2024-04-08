@@ -2,11 +2,11 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# Component Monitor
+# Component Monitoring
 
 Get information on the components.
 
-The Component Monitor tile shows you the most important information regarding your components at a glance. Out of all components for Edge Integration Cell, the tile always shows either those components in status *Error* or the status of the top three components, *Policy Engine*, *Worker*, and *Solace* \(Message Service\) in status *Ok*.
+The Component Monitoring-tile shows you the most important information regarding your components at a glance. Out of all components for Edge Integration Cell, the tile always shows either those components in status *Error* or the status of the top three components, *Policy Engine*, *Worker*, and *Solace* \(Message Service\) in status *Ok*.
 
 Click on the tile to get a details view. On the screen, you see a table with the following information:
 

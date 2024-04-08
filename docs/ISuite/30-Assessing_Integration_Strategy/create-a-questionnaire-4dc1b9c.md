@@ -4,7 +4,7 @@
 
 To create a new questionnaire under *Settings* tab, do the following:
 
-1.  Select \(*Create*\).
+1.  Select *Create*.
 
 2.  In the *Create new Questionnaire* dialog, specify a name, a description, and a request type \(either *Business Solution Request* or *Interface Request*\).
 
@@ -13,9 +13,9 @@ To create a new questionnaire under *Settings* tab, do the following:
     > ### Note:  
     > The SAP pre-defined questionnaires \(indicated as *Maintained by SAP*\) cannot be customized.
 
-4.  When you select the questionnaire created, the details provided will be displayed. To add a question section to the questionnaire, choose \(*Create*\).
+4.  When you select the questionnaire created, the details provided will be displayed. To add a question section to the questionnaire, choose *Create*.
 
-5.  From the *Create Section*dropdown, select one of the following options:
+5.  From the *Create Section* dropdown, select one of the following options:
 
     ****
 
@@ -73,16 +73,16 @@ To create a new questionnaire under *Settings* tab, do the following:
     </tr>
     </table>
     
-6.  To add questions to a *Questions* section, select the section and choose \(*Create*\).
+6.  To add questions to a *Questions* section, select the section and choose *Create*.
 
     You can either copy existing questions from a predefined questionnaire or create new questions.
 
     To copy pre-defined questions, select *Copy existing Questions*, select from the list of pre-defined questions and choose *Copy*.
 
-    To create a new question, provide the question and answer source and click *Create*.
+    To create a new question, provide the question and answer source and choose *Create*.
 
 7.  Provide the question under the *Question* section.
-8.  Choose an *Answer Source* from the list below and click *Create*. The created question will be displayed under the *Questions* section. Click *Done* once you have created the list of questions. To go back and create new questions, you can click *Edit*.
+8.  Choose an *Answer Source* from the following list and select *Create*. The created question will be displayed under the *Questions* section. Choose *Done* once you have created the list of questions. To go back and create new questions, you can choose *Edit*.
 
     ****
 
@@ -218,7 +218,7 @@ To create a new questionnaire under *Settings* tab, do the following:
     </tr>
     </table>
     
-    -   Below is the list of *Type*selections for different *Answer Source* selected:
+    -   Check out the following list of *Type*selections for different *Answer Source* selected:
 
 
         <table>
@@ -297,10 +297,10 @@ To create a new questionnaire under *Settings* tab, do the following:
         </tr>
         </table>
         
-    -   Under *Answer Options*, you can add answer options to the question by clicking on *Create*. Select from the list of pre-populated table *Add Answer Option*.
+    -   Under *Answer Options*, you can add answer options to the question by choosing *Create*. Select from the list of pre-populated table *Add Answer Option*.
 
 
-10. Go to the questionnaire *Properties* page and select *Activate*, click *Confirm* to activate the questionnaire. The status of the questionnaire created is changed to *Active*.
+10. Go to the questionnaire *Properties* page and select *Activate*, choose *Confirm* to activate the questionnaire. The status of the questionnaire created is changed to *Active*.
 
     > ### Note:  
     > There can be only one questionnaire of one type with status *Active*. While activating a questionnaire, the old questionnaire of the same type is automatically set to status *Deprecated*.

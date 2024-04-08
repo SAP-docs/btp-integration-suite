@@ -92,7 +92,7 @@ The conversion from XML format to JSON format follows the following rules:
 
 [How Streaming in the XML-to-JSON Converter Works](how-streaming-in-the-xml-to-json-converter-works-4e05044.md "During streaming the XML document is processed in parts or segments:")
 
- <?sap-ot O2O class="- topic/link " href="a5b4641c393f406bb544987497c90a72.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/atv1706604823332/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/66d099d0014842299fc91ee5876717a4.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+ <?sap-ot O2O class="- topic/link " href="a5b4641c393f406bb544987497c90a72.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/bsb1708407494841/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/66d099d0014842299fc91ee5876717a4.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
- <?sap-ot O2O class="- topic/link " href="e8e0fff0280c4ddb8359e198a2c20c8c.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/atv1706604823332/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/66d099d0014842299fc91ee5876717a4.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+ <?sap-ot O2O class="- topic/link " href="e8e0fff0280c4ddb8359e198a2c20c8c.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/bsb1708407494841/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/66d099d0014842299fc91ee5876717a4.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
