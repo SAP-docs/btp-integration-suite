@@ -319,12 +319,12 @@ Specify the number of processes used for parallel message processing. Note, that
 <tr>
 <td valign="top">
 
-*Max. Number of Prefechted Messages*
+*Max. Number of Prefetched Messages*
 
 </td>
 <td valign="top">
 
-Enter the max. number of messages that may be prefechted by one worker. The allowed value range is 1 to 100.
+Enter the max. number of messages that may be prefetched by one worker. The allowed value range is 1 to 100.
 
 The prefetch value is the number of messages that the sender adapter fetches in advance from the broker, and then gradually processes. The prefetch reduces the communication overhead and ensures that when a message has been processed, another is already there and is ready for processing.
 
