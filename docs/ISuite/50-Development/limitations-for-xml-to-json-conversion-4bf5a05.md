@@ -27,9 +27,9 @@ The XML to JSON conversion has the following limitations:
 
 [Define XML to JSON Converter](define-xml-to-json-converter-a60a282.md "The XML to JSON converter enables you to transform messages in XML format to JSON format.")
 
- <?sap-ot O2O class="- topic/link " href="778aed733e3140cea0435f4615d53812.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/esb1704779833497/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/4bf5a05cad514218a3a986531ada30b6.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+ <?sap-ot O2O class="- topic/link " href="778aed733e3140cea0435f4615d53812.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/bsb1708407494841/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/4bf5a05cad514218a3a986531ada30b6.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [How Streaming in the XML-to-JSON Converter Works](how-streaming-in-the-xml-to-json-converter-works-4e05044.md "During streaming the XML document is processed in parts or segments:")
 
- <?sap-ot O2O class="- topic/link " href="e8e0fff0280c4ddb8359e198a2c20c8c.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/esb1704779833497/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/4bf5a05cad514218a3a986531ada30b6.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+ <?sap-ot O2O class="- topic/link " href="e8e0fff0280c4ddb8359e198a2c20c8c.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/bsb1708407494841/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/4bf5a05cad514218a3a986531ada30b6.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 

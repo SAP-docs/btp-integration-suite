@@ -48,24 +48,24 @@ Existing reverse proxy and demilitarized zone \(DMZ\) infrastructure can be reus
 <tr>
 <td valign="top">
 
-IT-based, centralized approach with more re-use potential, independent of SAP BTP cockpit or Cloud Integration infrastructure
+IT-based, centralized approach with more re-use potential, independent of SAP BTP cockpit or Cloud Integration infrastructure.
 
 </td>
 <td valign="top">
 
-De-central, simple solution that can be administered by LOBs and subsidiaries
+De-central, simple solution that can be administered by LOBs and subsidiaries.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Usage for other cloud scenarios besides SAP BTP cockpit/Cloud Integration-connectivity of backends
+Usage for other cloud scenarios besides SAP BTP cockpit/Cloud Integration-connectivity of backends.
 
 </td>
 <td valign="top">
 
-Usage for other SAP BTP cockpit-related scenarios, for example, extension apps, possible
+Usage for other SAP BTP cockpit-related scenarios, for example, extension apps, possible.
 
 </td>
 </tr>
@@ -77,14 +77,14 @@ Additional capabilities might be provided by the reverse proxy \(load balancing,
 </td>
 <td valign="top">
 
-Synchronous native RFC-client call from SAP BTP cockpit supported in addition \(that means, outside Cloud Integration\)
+Synchronous native RFC-client call from SAP BTP cockpit supported in addition \(that means, outside Cloud Integration\).
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Several reverse proxy instances per target landscape in one Cloud Integration tenant
+Several reverse proxy instances per target landscape in one Cloud Integration tenant.
 
 </td>
 <td valign="top">
@@ -101,7 +101,7 @@ Monitoring and control included in the IT processes, tools and concepts.
 </td>
 <td valign="top">
 
-Monitoring and control native on SAP BTP cockpit \(for example, SAP BTP cockpit, User, Security\)
+Monitoring and control native on SAP BTP cockpit \(for example, SAP BTP cockpit, User, Security\).
 
 </td>
 </tr>
@@ -135,7 +135,7 @@ SAP support in case of issues or feature requests.
 
 ## Decision Graph
 
-To decide whether to use a reverse proxy or SAP Cloud Connector, you can follow the decision graph as outlined in the following figure and described further below.
+To decide whether to use a reverse proxy or SAP Cloud Connector, you can follow the decision graph as outlined in the following figure and described further next.
 
 ![](images/Decision_Graph_eb6ecd7.png)
 

@@ -12,6 +12,305 @@ The following patch release information covers the most recent changes made to t
 
 
 
+<a name="loio023a4725bb734f86be8a5625abe54110__section_g3d_cvj_51c"/>
+
+## March 2024
+
+**Software Increment: 2401**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.50.23
+
+</td>
+<td valign="top">
+
+There have been outages where scenarios stopped working. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.50.22
+
+8.14.12
+
+</td>
+<td valign="top">
+
+For some customers, scenarios using the SFTP adapter stopped working. Even after already having patched this issue, few customers observed continuation in following error message being raised: `SSH_MSG_DISCONNECT: 2 Failed to read binary`. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.50.22
+
+</td>
+<td valign="top">
+
+There have been issues with the validation of agreements when many B2B transactions were operated. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.50.x
+
+</td>
+<td valign="top">
+
+There were issues when TPM fetches tenant metadata from Cloud Integration-related tables, when Cloud Integration is not activated. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.58.9
+
+7.23.13
+
+</td>
+<td valign="top">
+
+There were multiple timer executions during camel 3x migration. This patch fixes the issue.There were multiple timer executions, during camel 3x migration. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.58.9
+
+7.23.12
+
+</td>
+<td valign="top">
+
+Some customers experienced issues with SFTP scenarios which stopped working and receiving connection errors from servers with message SSH\_MSG\_DISCONNECT: 2 Failed to read binary packet data! this patch fixes the issues.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.23.11
+
+8.14.8
+
+</td>
+<td valign="top">
+
+As the behaviour of Camel 3x has changed, some customers face an execution error in an edge case, when setting and reading the body within the same Groovy script. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_esy_5zq_51c"/>
+
+## March 2024
+
+**Software Increment: 2313**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_p24_3d4_m1c"/>
+
+## February 2024
+
+**Software Increment: 2313**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.49.27
+
+</td>
+<td valign="top">
+
+This patch ensures that the API returns the details of the artifact version which is available on worker even if the multiple versions are available in CO db after executing regeneration.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.49.25
+
+</td>
+<td valign="top">
+
+There have been partly broken integration flow processes, due to Database Timeouts happening upon degraded encryption/decryption performance. This patch fixes this issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.49.20.
+
+</td>
+<td valign="top">
+
+The trading partner dynamic parameters used by the new migrated agreement could not be exported, and the user with the Read\_Only role is able to operate the cross actions. This patch fixes these issues.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.49.4
+
+</td>
+<td valign="top">
+
+EDI splitter threw an exception in integration flow for the Partners sending the EDIFACT payload without line feed and ?’ \(escape character + segment terminator\) in one segment. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.49.21
+
+</td>
+<td valign="top">
+
+There was a performance degradation for message processing caused by repetitively calling NM functionality to retrieve the tenant name. This patch fixes the issue by caching this single value to avoid redundant calls.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio023a4725bb734f86be8a5625abe54110__section_nyz_rrv_11c"/>
 
 ## January 2024

@@ -171,7 +171,7 @@ Specify the runtime properties of the integration flow.
 **Related Information**  
 
 
-[Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md "Cloud Integration allows you to use integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.")
+[Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md "Integration Suite allows you to design integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.")
 
 [Define Content Modifier](define-content-modifier-8f04a70.md "")
 

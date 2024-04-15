@@ -106,5 +106,5 @@ Based on the recommendations provided by the policies for the usage in certain d
 4.  Select *Create*.
 
 > ### Note:  
-> You can see the order of technology preference when clicking on *Select Technology*. It shows you the selected technologies in order of their corresponding integration policies. For more information on technology selection, refer to [Decide on an Integration Technology](decide-on-an-integration-technology-fb4bc24.md)
+> You can see the order of technology preference when selecting *Select Technology*. It shows you the selected technologies in order of their corresponding integration policies. For more information on technology selection, refer to [Decide on an Integration Technology](decide-on-an-integration-technology-fb4bc24.md).
 

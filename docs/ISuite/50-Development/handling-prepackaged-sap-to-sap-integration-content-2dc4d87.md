@@ -42,11 +42,10 @@ If you've requirements to reuse the same prepackaged artifact exceptionally on y
 
 If you've requirements to reuse the same prepackaged artifact on a different tenant, you can follow one of these approaches:
 
+-   Download the artifact from the source tenant and import the same in the target tenant.
+
 -   Manually export and import the content. See: [Content Transport using Manual Export and Import](content-transport-using-manual-export-and-import-fd23e14.md).
 
 -   Use one of the transport mechanisms and reuse content across multiple tenants. See: [Content Transport](content-transport-e3c79d6.md).
 
-
-> ### Remember:  
-> It's possible to manually download the artifacts and upload in the same or different tenants to achieve reusability. But this approach could lead to break in metadata leading to incorrect billing. Hence, SAP doesn't recommend the download option for the purpose of reuse.
 

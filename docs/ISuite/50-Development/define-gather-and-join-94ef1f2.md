@@ -128,7 +128,7 @@ If the incoming payload contains namespace declarations including default namesp
 
     -   *Concatenate* \(can only be selected if for *Incoming Format* you have selected *Plain Text*\)
 
-        Concatenate the information from the different sources one after another
+        Concatenate the information from the different sources one after another.
 
     -   *Zip* 
 

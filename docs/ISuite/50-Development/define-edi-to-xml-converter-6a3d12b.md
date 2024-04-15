@@ -31,6 +31,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
 > -   Any ASC-X12 message is an interchange. An interchange can have multiple groups. And each group consists of transaction sets. For ASC-X12 message, the EDI elements in Cloud Integration support only 1 group segment \(GS\) per interchange segment and only 1 transaction set \(ST\) per group segment.
 > -   EDI to XML converter version 1.6 and above supports LS/LE segments.
 > -   Cloud Integration does not support repetition characters. Repetition character is a single character which separates the instances of a repeating data element. For example, *^* \(caret sign\) is a repetition character.
+> -   For X12 format, EDI to XML converter v1.8.0 and v2.2.0 onwards support same group name with different definition in XSD.
 
 
 
@@ -83,6 +84,18 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
+    Target Encoding
+    
+    </td>
+    <td valign="top">
+    
+    Select encoding format for the outgoing payload. If you select 'Dynamic', you must define the value 'UTF-8' or 'ISO-8859-1' in SAP\_EDITOXML\_EDIFACT\_TARGET\_ENCODING exchange header.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     EDI Schema Definition
     
     </td>
@@ -100,7 +113,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     </td>
     <td valign="top">
     
-    If you select `Integration Flow` as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the conversion will take place.
+    If exchange headeryou select `Integration Flow` as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the conversion will take place.
 
     > ### Note:  
     > -   You can add XSD files to the integration flow. For more details, please refer to [Validating Message Payload against XML Schema](validating-message-payload-against-xml-schema-360dc70.md).

@@ -67,7 +67,9 @@ Migrate supported integration artifacts from your SAP Process Orchestration syst
 
         -   If the selected integration package doesn't contain any message mapping artifacts, the method is set to *Create*.
 
-        -   If the selected integration package contains message mapping artifacts, the method is set to *Reuse*. Based on your requirements, either select an existing message mapping artifact or change the import method to *Create*.
+        -   If the selected integration package already contains message mapping artifacts relevant to the one you're trying to import, the method is automatically set to *Reuse*. Based on your requirements, either select an existing message mapping artifact or change the import method to *Create*.
+
+            The comparison happens based on conditions like name, namespace, and software component version \(SWCV\).
 
 
 

@@ -34,7 +34,7 @@ Supported Header \(Sender Adapter\):
 > ### Caution:  
 > Usage of Different WSDL Binding Styles:
 > 
-> Note that messages that contain RPC-style bindings aren't supported by the SOAP sender channel. Also WSDL files using RPC-style bindings aren'tnot supported. Use document-style payloads and WSDL files.
+> Note that messages that contain RPC-style bindings aren't supported by the SOAP sender channel. Also WSDL files using RPC-style bindings aren't supported. Use document-style payloads and WSDL files.
 > 
 > A WSDL binding describes how the service is bound to a message protocol. For the processing of SOAP messages, you can choose from the following binding types:
 > 
@@ -165,7 +165,7 @@ To select the WSDL from a source, you've the following options:
 > 
 >     We recommend that you don't use blanks in WSDL names or directories, as this can lead to runtime issues.
 
-You can download the WSDL from the Web UI *Monitor* section by selecting the deployed integration flow \(under *Manage Integration Content*\). Under Endpoints, below the integration flow endpoint address, you find download options \(*WSDL* or *WSDL without policies*\).
+You can download the WSDL from the Web UI *Monitor* section by selecting the deployed integration flow \(under *Manage Integration Content*\). Under Endpoints, after the integration flow endpoint address, you find download options \(*WSDL* or *WSDL without policies*\).
 
 The WSDL download doesn't work for WSDLs with external references because these WSDLs can't be parsed.
 
@@ -280,7 +280,7 @@ Specifies the way how WS-Security settings are to be configured.
 
 -   *Via Manual Configuration in Channel*
 
-    The security settings are manually to be configured \(see below listed attributes\).
+    The security settings are manually to be configured \(see listed attributes next\).
 
 -   *None*
 

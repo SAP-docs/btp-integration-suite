@@ -17,9 +17,9 @@ API Management in SAP Integration Suite is used to discover, shape, compose, int
 
 [Publish API Proxies](50-Development/publish-api-proxies-75a4a11.md "To make your API consumable by external application developers, it is necessary to publish API proxies. Publishing allows you to expose the API proxies in a structured manner, presenting them as a product. To publish API proxies effectively, it is important to understand how to bundle them together and present them as a cohesive product.")
 
-[Monetize APIs](50-Development/monetize-apis-fcdc89b.md "SAP Integration Suite provides monetization feature to all API providers to generate revenue for using the APIs.")
+[Monetize APIs](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/fcdc89b5c4884d5e8cfb32c5914943ab.html "API Management provides monetization feature to all API providers to generate revenue for using the APIs.") :arrow_upper_right:
 
-[Consume API Proxies](50-Development/consume-api-proxies-ea561e4.md "The classic design will be deprecated soon. The new design of the API business hub enterprise will be set as your default design from March 2024. However, you’ll still be able to toggle between the new and old design until June 2024.")
+[Consume API Proxies](50-Development/consume-api-proxies-ea561e4.md "Consume API proxies via the API business hub enterprise. In the API business hub enterprise, an application developer registers, explores the API exposed by customers, creates applications, and tests API proxies.")
 
 [Analyze APIs](50-Development/analyze-apis-7712c61.md "Use the capabilities of API Analytics to analyze API usage and performance.")
 

@@ -28,7 +28,7 @@ This blog provides more information on the different message events that you can
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons-V5"></span> \> :radio_button:*Terminate Message*
+1.  In the palette, choose <span class="SAP-icons-V5"> Events</span> \> :radio_button:*Terminate Message*
 
 2.  Place the event icon in the desired location of your integration flow.
 

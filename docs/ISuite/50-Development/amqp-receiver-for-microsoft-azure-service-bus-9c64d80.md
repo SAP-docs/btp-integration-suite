@@ -19,7 +19,7 @@ Enables SAP Integration Suite to send messages to queues or topics in Microsoft 
 > To be able to connect to queues or topics, you have to create queues and/or topics in the message broker. This needs to be done in the message broker with the configuration tools provided by the message broker.
 
 > ### Note:  
-> Queues, topics, and messages can only be monitored using tools provided by the message broker. Those monitors are not integrated into SAP Integration Suite . In SAP Integration Suite , the integration flows using the AMQP adapter are monitored and the messages send to or consumed from the message broker.
+> Queues, topics, and messages can only be monitored using tools provided by the message broker. Those monitors are not integrated into SAP Integration Suite. In SAP Integration Suite, the integration flows using the AMQP adapter are monitored and the messages send to or consumed from the message broker.
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -171,18 +171,6 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 <tr>
 <td valign="top">
 
-*Path* \(only if *WebSocket* is selected as the *Transport Protocol* in the *General* tab\)
-
-</td>
-<td valign="top">
-
-Specify the access path of the message broker.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *Connect with TLS* 
 
 </td>
@@ -219,7 +207,7 @@ Select the authentication method the message broker supports. Make sure that *SA
 <tr>
 <td valign="top">
 
-*Credential Name* \(only if *SASL* or *OAuth2 Client Credentials* is selected for *Authentication*\)
+*Credential Name* \(only if *SASL* is selected for *Authentication*\)
 
 </td>
 <td valign="top">

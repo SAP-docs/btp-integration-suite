@@ -149,7 +149,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    Message Service Storage Class
+    Event Broker Storage Class
     
     </td>
     <td valign="top">
@@ -165,7 +165,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    Message Service Scaling Tier
+    Event Broker Scaling Tier
     
     </td>
     <td valign="top">

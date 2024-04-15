@@ -4,6 +4,11 @@
 
 Consider the following limitations before uploading a Custom Message/IDoc/SOA.
 
+The following limitation applies to all custom messages:
+
+-   The maximum file size of custom message that you can upload is 10MB, with a maximum limit of 20000 nodes.
+
+
 
 
 <a name="loio496a7d9dcdf347398697317704569c52__section_bbd_rkc_lzb"/>
@@ -39,6 +44,25 @@ Only native-XML messages supported
 <td valign="top">
 
 Full support is only given to messages that are natively XML \(all messages are imported with *SyntaxType = XML*.\) You can still import XSDs representing non-XML messages and SAP Integration Suite will support standard XML-handling. But extended special features such as XSD creation for EDI Flow Steps are not supported.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Namespace prefix **ns1** instead of default namespace
+
+</td>
+<td valign="top">
+
+Custom Messages using default namespace \(no namespace prefix\) can be imported.
+
+The system, however, will use a fixed namespace prefix **ns1** instead. As a result, target payloads will be created with prefix **ns1** instead of default namespace.
+
+> ### Note:  
+> Both variants are correct and fully equivalent – this is only a visual difference without consequences for runtime.
+
+
 
 </td>
 </tr>

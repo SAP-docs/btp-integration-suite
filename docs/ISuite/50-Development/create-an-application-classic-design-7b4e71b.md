@@ -4,6 +4,9 @@
 
 Create an Application to consume the required APIs.
 
+> ### Caution:  
+> Effective June 2024, the classic design of the API business hub enterprise will be deprecated and will no longer be accessible. The new design of the API business hub enterprise will be set as your default design from March 2024. For more information, see [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
+
 > ### Note:  
 > This document describes the classic design of the API business hub enterprise. To view the documentation for the new design, see [Create an Application \[New Design\]](create-an-application-new-design-a501a6d.md).
 

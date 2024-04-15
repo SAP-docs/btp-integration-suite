@@ -82,19 +82,19 @@ Cloud Integration provides a Java API to support this use case.
     3.  Place *Script* step in the integration process.
 
 
-3.  To open the script editor, click the *Create* icon next to the Script step shape.
+3.  To open the script editor, select *Create* next to the Script step shape.
 
     ![](images/Script_Step_Create_dd8d09c.png)
 
 4.  In the script editor, specify the script according to the requirements of your scenario.
 
-    For an overview of the classes and interfaces supported by the Script step, see [SDK API](sdk-api-c5c7933.md).
+    For an overview of the classes and interfaces supported by the Script step, see: [SDK API](sdk-api-c5c7933.md).
 
     For more information on how to use the dedicated interfaces and methods for specific use cases, refer to [Script Use Cases](script-use-cases-148851b.md).
 
     You can also check out the design guidelines for using scripts at [Use Scripting Appropriately](use-scripting-appropriately-d4dc13c.md).
 
-5.  When you've finished the definition of your script, click *OK*.
+5.  When you've finished the definition of your script, select *OK*.
 
 6.  Save the integration flow.
 
@@ -129,13 +129,13 @@ To make sure that your scenario meets highest standards with regard to security 
 
 To mention one particular aspect of scripting, note the following:
 
-Any application that parses XML data is prone to the risk of XML External Entity \(XXE\) Processing attacks. More information can be found [here](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing).
+Any application that parses XML data is prone to the risk of XML External Entity \(XXE\) Processing attacks. More information can be found on the webpage [XML External Entity \(XXE\) Processing](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing) .
 
 To overcome this issue, you must take one of the following measures:
 
 -   Don't use XML parsing \(for example, DocumentBuilderFactory\) at all.
 
--   Switch off the processing of external entities as explained [here](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html).
+-   Switch off the processing of external entities as explained on the webpage [XML External Entity Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html).
 
 
 **Related Information**  

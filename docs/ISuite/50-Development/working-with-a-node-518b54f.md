@@ -584,6 +584,49 @@ Once you have created a message implementation guideline, you can edit and modif
     
     </td>
     </tr>
+    <tr>
+    <td valign="top" rowspan="2">
+    
+    XPath Expressions
+    
+    </td>
+    <td valign="top">
+    
+    CI Format
+    
+    </td>
+    <td valign="top">
+    
+    Displays the XPath expression for the node which can be used in Cloud Integration version of the message before pre-processing.
+    
+    </td>
+    <td valign="top">
+    
+    No
+
+    You can copy this XPath expression using the copy <span class="SAP-icons-V5"></span> button provided next to it.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    IA Format
+    
+    </td>
+    <td valign="top">
+    
+    Displays the XPath expression for the node which can be used in Integration Advisor version of the message after pre-processing.
+    
+    </td>
+    <td valign="top">
+    
+    No
+
+    You can copy this XPath expression using the copy <span class="SAP-icons-V5"></span> button provided next to it.
+    
+    </td>
+    </tr>
     </table>
     
 

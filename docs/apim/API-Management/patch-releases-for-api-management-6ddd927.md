@@ -8,9 +8,9 @@ This topic provides information on patch releases for API Management that are pr
 
 <a name="loio6ddd927cbeaa42e384dc903e6002e269__section_dgt_12r_g1c"/>
 
-## February 2024
+## March 2024
 
-**Software Increment: 2312**
+**Software Increment: 2313**
 
 
 <table>
@@ -39,36 +39,12 @@ API Management
 </td>
 <td valign="top">
 
-1.164
+1.165.3
 
 </td>
 <td valign="top">
 
-The metering data for NEO metering is not being reflected in the Cloud Reporting Tool.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
-1.164.2
-
-</td>
-<td valign="top">
-
-The following issues have been identified:
-
--   When the logo is removed in the API business hub enterprise, the page reloads and redirects to the old user interface if the new user interface is not set as the default.
-
--   The use of the xsuaa mtls connection for autoscaler metrics publishing was found to be incompatible with the latest library version.
-
-
-
+The prefix "custom\_" has been added to all custom metrics during creation. Additionally, the Policy Validator for the StatsCollector will check if a custom metric already exists and update it accordingly with the "custom\_" prefix in the StatsCollector.
 
 </td>
 </tr>

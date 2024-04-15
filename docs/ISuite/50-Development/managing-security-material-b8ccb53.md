@@ -8,7 +8,7 @@ The Manage Security Material area provides an overview of security-related artif
 
 You open the *Manage Security Material* area with the following actions:
 
-Click the tile *Security Material*.
+Select the tile *Security Material*.
 
 Security artifacts with the corresponding status \(of the tile\) are displayed.
 

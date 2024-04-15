@@ -93,7 +93,9 @@ Open the command-line interface for Cloud Foundry and enter the following comman
 **Related Information**  
 
 
-[Accessing On-Premise Systems through API Management](accessing-on-premise-systems-through-api-management-2fc7a5b.md "The on-premise-connectivity plan helps in achieving principal propagation while connecting to an on-premise backend system.")
-
 [Accessing API Management APIs Programmatically](accessing-api-management-apis-programmatically-24a2c37.md "The apiportal-apiaccess paln offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the Business Accelerator Hub.")
+
+[Accessing API business hub enterprise APIs Programmatically](accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md "The devportal-apiaccess plan allows you to access the API business hub enterprise APIs to programmatically onboard developers, create applications, and more.")
+
+[Accessing On-Premise Systems through API Management](accessing-on-premise-systems-through-api-management-2fc7a5b.md "The on-premise-connectivity plan helps in achieving principal propagation while connecting to an on-premise backend system.")
 

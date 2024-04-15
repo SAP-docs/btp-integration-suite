@@ -16,7 +16,7 @@ Enables SAP Integration Suite  to consume messages from queues in Microsoft Azur
 >     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
-> Queues, topics, and messages can only be monitored by using tools provided by the message broker provider. Those monitors are not integrated into SAP Integration Suite . In SAP Integration Suite , the integration flows using the AMQP adapter are monitored and the messages are sent to or consumed from the message broker.
+> Queues, topics, and messages can only be monitored by using tools provided by the message broker provider. Those monitors are not integrated into SAP Integration Suite. In SAP Integration Suite, the integration flows using the AMQP adapter are monitored and the messages are sent to or consumed from the message broker.
 
 > ### Note:  
 > To be able to connect to queues, you have to create queues and/or topics in the message broker. This needs to be done in the message broker, with the configuration tools provided by the message broker. In some messaging systems, you need to configure a *Lock Duration* to make sure that the message is not consumed more than once. This timeout must be longer than the expected processing time of the message, otherwise this would lead to duplicate messages.
@@ -196,7 +196,7 @@ Select the authentication method supported by the message broker. Make sure that
 <tr>
 <td valign="top">
 
-*Credential Name* 
+*Credential Name* \(only if *SASL* is selected for *Authentication*\)
 
 </td>
 <td valign="top">

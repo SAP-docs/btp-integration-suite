@@ -23,9 +23,9 @@ The OData V4 receiver adapter supports externalization. To externalize the param
 Once you’ve created a receiver channel and selected the OData V4 Receiver Adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 > ### Note:  
-> If you want to pass on null values to the receiver, your request must contain such null values with the attribute ***xsi:nil="true"***. Also note that the responses from the adapter contains null values represented as ***xsi:nil="true"***.
+> If you want to pass on null values to the receiver, your request must contain such null values with the attribute ***xsi:nil="true"***. Also note that the responses from the adapter contain null values represented as ***xsi:nil="true"***.
 
-Select the *General* tab and provide values in the fields as follows.
+Select the *General* tab and provide the values in the fields as follows.
 
 **General**
 
@@ -57,7 +57,7 @@ Enter the name of the channel.
 </tr>
 </table>
 
-Select the *Connection* tab and provide values in the fields as follows.
+Select the *Connection* tab and provide the values in the fields as follows.
 
 **Connection**
 
@@ -95,7 +95,7 @@ Service root URI of the OData V4 service that you want to connect to.
 </td>
 <td valign="top">
 
-The type of proxy you want to use for establishing connection with OData V4 service. Currently, you can choose between
+The type of proxy you want to use for establishing connection with the OData V4 service. Currently, you can choose between
 
 -   Internet
 
@@ -156,7 +156,7 @@ The following options are enabled only if you choose *Proxy Type* as *Internet*
 </td>
 <td valign="top">
 
-Name of the credentials that you’ve deployed in *Security Material* section of :eye:.
+Name of the credentials that you’ve deployed in the *Security Material* section of :eye:.
 
 </td>
 </tr>
@@ -218,7 +218,7 @@ Enter the time in minutes.
 </td>
 <td valign="top">
 
-The option is enabled by default. This option enables the reuse of connection objects from the internal connection pool which in turn improves the network turnaround time for multiple communications to a same end point.
+The option is enabled by default. This option enables the reuse of connection objects from the internal connection pool that in turn improves the network turnaround time for multiple communications to a same end point.
 
 </td>
 </tr>
@@ -325,7 +325,7 @@ By selecting *Process in Pages*, you enable the adapter to process messages in p
 
 By default, the option is enabled. This option enables the creation of attachments for request header, response headers, and response body when the message processing fails.
 
-Having these attachments during message processing failures can be unneccesary as it leads to persistence of attachments that doesn't help. Especially, if multiple message processing failures occurs, you have attachments piled up for each failure. If you don't require the attachments for failure scenarios, disable the option. Though you disable the creation of attachments, the content of the same are added to the message processing logs.
+Having these attachments during message processing failures can be unnecessary as it leads to persistence of attachments that doesn't help. Especially, if multiple message processing failures occur, you have attachments piled up for each failure. If you don't require the attachments for failure scenarios, disable the option. Though you disable the creation of attachments, the content of the same are added to the message processing logs.
 
 If you're using older versions of the adapter where you don't see the option, define the property `SAP.DisableAttachments.ODataV4` in the message exchange with the value `true`.
 
@@ -339,7 +339,7 @@ If you're using older versions of the adapter where you don't see the option, de
 </td>
 <td valign="top">
 
-*Request Headers*: Provide the **| \(Pipe\)** separated value list of HTTP request headers that has to be sent to the OData backend.
+*Request Headers*: Provide the **| \(Pipe\)** separated value list of HTTP request headers that has to be sent to the OData back end.
 
 If the value \* is entered, **all** the message headers are converted to HTTP request headers and forwarded.
 
@@ -353,9 +353,25 @@ If the value \* is entered, **all** the message headers are converted to HTTP re
 </td>
 <td valign="top">
 
-*Response Headers*: Provide the **| \(Pipe\)** separated value list of HTTP response headers. The received header values will then be converted to message/exchange headers.
+*Response Headers*: Provide the **| \(Pipe\)** separated value list of HTTP response headers. The received header values are then converted to message/exchange headers.
 
 If the value \* is entered, **all** the HTTP response header values are converted to message/exchange headers.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*METADATA DETAILS* 
+
+</td>
+<td valign="top">
+
+The adapter makes an internal $metadata call during the message processing, before the actual endpoint call. Not all headers or query parameters are passed to the $metadata call. If your service needs some headers or parameters, provide the same in the request headers and query parameters fields.
+
+*Request Headers* – provide a pipe-separated \(|\) list of HTTP request headers to be sent to the $metadata call.
+
+*Custom Query Parameters* – provide an ampersand-separated \(&\) list of key-value pairs.
 
 </td>
 </tr>
@@ -372,7 +388,7 @@ This adapter provides a wizard for modeling operations easily. It’s recommende
 There are two main steps in this wizard:
 
 1.  *Connect to System:* In this step, you provide the details required for connecting to the Web Service that you’re accessing.
-2.  *Select Entity and Define Operation:* In this step, you select the operation you want to perform and the entity on which you want to perform the operation on. After selecting the entity, you also select the fields, filtering and sorting conditions.
+2.  *Select Entity and Define Operation:* In this step, you select the operation you want to perform and the entity on which you want to perform the operation. After selecting the entity, you also select the fields, filtering and sorting conditions.
 3.  *Configure Filter & Sorting:* This step is available only for data fetch operations, where you can define the order in which the records are fetched in the response payload and filter for the fields that you require.
 
 **Connect to System**
@@ -401,7 +417,7 @@ Description
 
 You can choose between *Remote* and *EDMX*.
 
-If you choose *Remote*, you’ve to manually specify all the details like address and authentication details.
+If you choose *Remote*, you’ve have to manually specify all the details like address and authentication details.
 
 If you choose *Local EDMX File*, you select the service definition EDMX file that contains all these details that you specified manually when you selected *Remote*.
 
@@ -412,7 +428,7 @@ If you choose *Local EDMX File*, you select the service definition EDMX file tha
 
 *Local EDMX File*
 
-\(only if you select *Connection Source* as *Local EDMX File*\).
+\(only if you select *Connection Source* as *Local EDMX File*\)
 
 </td>
 <td valign="top">
@@ -438,7 +454,7 @@ URL of the service that you want to access. If you’re connecting to an on-prem
 
 *Proxy Type*
 
-\(only if you select *Connection Source* as *Remote*.\)
+\(only if you select *Connection Source* as *Remote*\)
 
 </td>
 <td valign="top">
@@ -452,7 +468,7 @@ Type of proxy that you want to use to connect to the service.
 
 *Location ID*
 
-\(only if you select *Proxy Type* as *On-Premise*\).
+\(only if you select *Proxy Type* as *On-Premise*\)
 
 </td>
 <td valign="top">
@@ -520,7 +536,19 @@ The adapter supports *Function Import* for the following return types:
 -   Void
 
 
-*Function Import*can also be consumed in the *$batch* mode.
+*The function Import*can also be consumed in the *$batch* mode.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Sub Levels* 
+
+</td>
+<td valign="top">
+
+Sub-levels of the entity that you want to access. For example, if you want to access the field *Description* in the entity *Products*, and the field is located at *Category* \> *Products* \> *Description*, you select the *Sub Levels* as `3` since the field you want to access is at the third level.
 
 </td>
 </tr>
@@ -565,6 +593,18 @@ Fields associated with the entity that you want to perform the operation on.
 <tr>
 <td valign="top">
 
+*Filter Fields* 
+
+</td>
+<td valign="top">
+
+Type the field name that you're looking for out to narrow down your search.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Top* 
 
 </td>
@@ -572,7 +612,7 @@ Fields associated with the entity that you want to perform the operation on.
 
 Specifies the top 'n' number of entries to be fetched.
 
-For more information, see **Top System Query Option \($top\)** in [OData V4 URL Conventions](https://docs.oasis-open.org/odata/odata/v4.01/os/part2-url-conventions/odata-v4.01-os-part2-url-conventions.html)
+For more information, see **Top System Query Option \($top\)** in [OData V4 URL Conventions](https://docs.oasis-open.org/odata/odata/v4.01/os/part2-url-conventions/odata-v4.01-os-part2-url-conventions.html).
 
 </td>
 </tr>
@@ -592,7 +632,7 @@ For more information, see **Skip System Query Option \($skip\)** in [OData V4 UR
 </tr>
 </table>
 
-This step is available only for data fetch operations, *Query\(GET\)* and *Read\(GET\)*.
+This step is available only for data fetch operations, Query\(GET\), and *Read\(GET\)*.
 
 **Configure Filter & Sorting**
 
@@ -618,7 +658,7 @@ Description
 </td>
 <td valign="top">
 
-Select the field that you want to use as reference for filtering, choose the operation \(ex: *Less Than or Equal*\), and provide a value.
+Select the field that you want to use as a reference for filtering, choose the operation \(ex: *Less Than or Equal*\), and provide a value.
 
 > ### Note:  
 > The *IN* operation is available with filtering when editing the query manually. This operation isn’t available in the Query Modeling wizard.
@@ -642,7 +682,7 @@ Select the field that you want to use as reference for filtering, choose the ope
 </td>
 <td valign="top">
 
-Select the field that you want to use as sorting parameter and choose *Ascending* or *Descending* order.
+Select the field that you want to use as a sorting parameter and choose *Ascending* or *Descending* order.
 
 </td>
 </tr>

@@ -43,9 +43,11 @@ The supported file types for an import are json, and .zip.
 
     The *Create API* dialog opens.
 
-5.  To import an API Definition, select *Import* from the given options and choose *Next*.
+5.  Select the Edge Integration Cell *Runtime Profile* and choose *Next*. This profile determines the Edge Integration Cell node on which you will create and process your API artifact.
 
-6.  In the *Import API* window:
+6.  To import an API Definition, select *Import* from the given options and choose *Next*.
+
+7.  In the *Import API* window:
 
     1.  Choose *Browse*. Navigate and choose the required API from your local file system.
 
@@ -60,9 +62,9 @@ The supported file types for an import are json, and .zip.
         You can also view the virtual host URL for the runtime profile from this page.
 
 
-7.  Choose *Create*.
+8.  Choose *Create*.
 
-8.  To add a resource to the API artifact, choose *Edit*.
+9.  To add a resource to the API artifact, choose *Edit*.
 
     For a REST service:
 
@@ -95,18 +97,18 @@ The supported file types for an import are json, and .zip.
     5.  Proceed to Step 10.
 
 
-9.  For a given resource, choose *Show/Hide* to view the list of properties and their associated API documentation. You can add descriptions for each resource in the editor.
+10. For a given resource, choose *Show/Hide* to view the list of properties and their associated API documentation. You can add descriptions for each resource in the editor.
 
     > ### Note:  
     > For a given resource, choose *Switch to API Details* and correct the errors in swagger definition, if any. The error message displayed on the screen helps in error detection and correction. Choose *Save* after making the necessary corrections in the swagger file.
 
-10. To define policies on the API, go to the *Policies* tab. For more information about how to add a policy, see [Policy Definition and Types of Policies Supported by Edge Integration Cell](policy-definition-and-types-of-policies-supported-by-edge-integration-cell-c744df5.md).
+11. To define policies on the API, go to the *Policies* tab. For more information about how to add a policy, see [Policy Definition and Types of Policies Supported by Edge Integration Cell](policy-definition-and-types-of-policies-supported-by-edge-integration-cell-c744df5.md).
 
-11. If you want to define multiple proxy endpoints, navigate to *Proxy EndPoint* tab.
+12. If you want to define multiple proxy endpoints, navigate to *Proxy EndPoint* tab.
 
     In the *Proxy Endpoint Properties*section, choose *Add*. Enter the *Property Name* and the *Values*. For the Proxy Endpoint property specifications, see [Proxy Endpoint Properties](https://help.sap.com/docs/integration-suite/sap-integration-suite/proxy-endpoint-properties?version=CLOUD).
 
-12. Once you’ve filled in all the required details of the API, you can select one of the following actions for the API:
+13. Once you’ve filled in all the required details of the API, you can select one of the following actions for the API:
 
 
     <table>
@@ -186,7 +188,7 @@ The supported file types for an import are json, and .zip.
     </tr>
     </table>
     
-13. Once you’ve created an API, you can do the following:
+14. Once you’ve created an API, you can do the following:
 
     Go to the *Resources* tab, use the *Try out* button to test the API resource.
 

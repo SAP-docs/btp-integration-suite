@@ -69,7 +69,7 @@ Integration Developer
 </td>
 <td valign="top">
 
--    <?sap-ot O2O class="- topic/xref " href="ed08d36c4d2549e2bcdc4e81a9407d77.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/esb1704779833497/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/64ac76194462444b8b652d90fd87b1e7.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+-    <?sap-ot O2O class="- topic/xref " href="ed08d36c4d2549e2bcdc4e81a9407d77.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/bsb1708407494841/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/64ac76194462444b8b652d90fd87b1e7.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 -   [Troubleshooting for Edge Integration Cell](troubleshooting-for-edge-integration-cell-816d9e4.md)
 

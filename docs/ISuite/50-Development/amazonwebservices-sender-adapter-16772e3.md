@@ -24,13 +24,13 @@ Use the sender adapter to accelerate the implementation time and reduce the comp
 
 
 > ### Note:  
-> You need to download the adapter from SAP Software Download Center. You can find more information on the download navigation path [here](https://api.sap.com/package/AmazonWebServicesAdapter?section=Overview).
+> You need to download the adapter from SAP Software Download Center. You can find more information on the download navigation path under the folloeing link: [Amazon Web Services Adapter for SAP Integration Suite](https://api.sap.com/package/AmazonWebServicesAdapter/overview).
 > 
 > After you complete the download, uncompress and extract the files to your local system. Then deploy the adapter on your tenant.
 > 
 > -   For more information on deploying the adapter in multicloud environment, see [Importing Custom Integration Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/482286e544014098874fde0da4bcca2c.html).
 > 
-> -   For tenants hosted on Neo environment, you must import the adapter to your Eclipse tool and deploy the adapter project. For more information see, [Develop Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f798db6491424460bb4b43d4a86ed1cf.html).
+> -   For tenants hosted on Neo environment, you must import the adapter to your Eclipse tool and deploy the adapter project. For more information, see [Develop Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f798db6491424460bb4b43d4a86ed1cf.html).
 
 
 
@@ -176,7 +176,7 @@ Specify the location on the S3 bucket where the file is written.
 </td>
 <td valign="top">
 
-Specify the name of the file to be written. If the field is left blank, the filename is created using the Cloud Integration message ID.
+Specify the name of the file to be written. If the field on the left is not filled out, the filename is created using the Cloud Integration message ID.
 
 > ### Example:  
 > `Test.json`

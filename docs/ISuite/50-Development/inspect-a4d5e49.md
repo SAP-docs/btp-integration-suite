@@ -19,7 +19,7 @@ You can inspect consumption of integration resources, identify those integration
 
 Inspect database resource usage caused by your active integration flows.
 
-Click *Inspect* to inspect the usage of integration resources associated with the tenant database and with the database connection pool.
+Select *Inspect* to inspect the usage of integration resources associated with the tenant database and with the database connection pool.
 
 -   Using the *Connections* tile, you can inspect resource usage of the database connections caused by integration flows.
 

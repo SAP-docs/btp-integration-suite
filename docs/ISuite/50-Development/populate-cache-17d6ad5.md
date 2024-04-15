@@ -23,7 +23,7 @@ An example payload for the policy is as follows:
 >     <Scope>Exclusive</Scope>
 >     <ExpirySettings>
 >        <TimeOfDay ref="time_variable">expiration_time</TimeOfDay>
->        <TimeoutInSeconds ref="duration_variable">seconds_until_expiration</TimeoutInSeconds>
+>        <TimeoutInSec ref="duration_variable">seconds_until_expiration</TimeoutInSec>
 >        <ExpiryDate ref="date_variable">expiration_date</ExpiryDate>
 >     </ExpirySettings>
 >     <Source>cache-response</Source>

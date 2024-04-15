@@ -11,16 +11,16 @@ Refer this section for the entities that are cloned and entities that aren’t c
 ## Entities That Are Cloned
 
 > ### Note:  
-> Currently, when a custom role is assigned to a Product, the Application creation using the tenant cloning tool is not supported.
+> Currently, when a custom role is assigned to a product, the application creation using the tenant cloning tool is not supported.
 > 
-> As a work-around, before initiating the cloning process, remove the custom role assigned to the Product in the Source system and proceed with the cloning process.
+> As a work-around, before initiating the cloning process, remove the custom role assigned to the product in the source system and proceed with the cloning process.
 > 
-> After the cloning process is completed, reassign the custom roles to the Product in the Source system. Also, ensure that the custom roles are assigned to the Product in the Target system.
+> After the cloning process is completed, reassign the custom roles to the product in the source system. Also, ensure that the custom roles are assigned to the product in the target system.
 > 
-> In case the custom roles aren’t appearing in the *Permission* tab, as mentioned in the Prerequisite section, ensure that the custom roles are created and assigned to the developers in the target Cloud Foundry environment.
+> In case the custom roles aren’t appearing in the *Permission* tab, as mentioned in the prerequisite section, ensure that the custom roles are created and assigned to the developers in the target Cloud Foundry environment.
 
 > ### Note:  
-> If you have made any customizations to the `HelloWorld` sample proxy, and you want to migrate this proxy to the target, while cloning you might get the following error: `"Unable to import API Proxy from zip file; xml content invalid"`To address this, execute the following steps:
+> If you have made any customizations to the `HelloWorld` sample proxy, and you want to migrate this proxy to the target, while cloning you might get the following error: `"Unable to import API Proxy from zip file; xml content invalid"`. To address this, execute the following steps:
 > 
 > 1.  Export the `HelloWorld` API.
 > 
@@ -40,7 +40,7 @@ Refer this section for the entities that are cloned and entities that aren’t c
 > 
 > 3.  Save the zip file.
 > 
-> 4.  Delete the existing `HelloWorld` proxy from the API portal.
+> 4.  Delete the existing `HelloWorld` proxy from .
 > 
 > 5.  Import this edited zip file.
 > 
@@ -67,9 +67,9 @@ The following list displays the API Management entities that are cloned:
 
 <a name="loiob2b393d3582344dc80004944b393d227__section_bdp_cmd_2mb"/>
 
-## Entities That Are Not Cloned
+## Content That Are Not Cloned
 
-The following list displays the API Management entities that aren’t cloned, including sensitive data like your certificates and credentials.
+The following list displays the API Management content that aren’t cloned, including sensitive data like your certificates and credentials.
 
 -   **Sensitive Data**
 
@@ -96,6 +96,6 @@ The following list displays the API Management entities that aren’t cloned, in
     -   Custom IDP Setup \(if any\)
     -   Existing Route Bindings \(if any\)
 
-    To know about the actions that you must perform for these uncloned entities, see the **Actions required on Configurations** section in [Post Cloning Tasks](post-cloning-tasks-116d82c.md).
+    To know about the actions that you must perform for these uncloned content, see the **Actions required on Configurations** section in [Post Cloning Tasks](post-cloning-tasks-116d82c.md).
 
 

@@ -45,11 +45,11 @@ Supported Header \(Receiver Adapter\):
 > -   Document/literal
 > 
 > 
-> RPC stands for *Remote Procedure Call*. For more information on these options and the meaning of *literal* and *encoded*, see [http://www.w3.org/TR/2001/NOTE-wsdl-20010315](http://www.w3.org/TR/2001/NOTE-wsdl-20010315).
+> RPC stands for *Remote Procedure Call*. For more information on these options and the meaning of *literal* and *encoded*, see: [http://www.w3.org/TR/2001/NOTE-wsdl-20010315](http://www.w3.org/TR/2001/NOTE-wsdl-20010315).
 
 
 
-Once you have created a receiver channel and selected the SOAP \(SOAP 1.x\) receiver Adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
+Once you have created a receiver channel and selected the SOAP \(SOAP 1.x\) receiver Adapter, you can configure the following attributes. See: [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 Select the *General* tab and provide values in the fields as follows.
 
@@ -168,7 +168,7 @@ To select the WSDL from a source, you have the following options:
 
 -   Select a WSDL from your file system.
 
--   Select a WSDL from your integration flow resources \(see [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md)\).
+-   Select a WSDL from your integration flow resources \(see: [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md)\).
 
     In the *Resources* view, you can upload an individual WSDL file or an archive file \(file ending with `.zip`\) that contains multiple WSDLs or XSDs, or both. For example, you can upload a WSDL that contains an imported XSD referenced by an `xsd:import` statement. This means that if you want to upload a WSDL and dependent resources, you need to add the parent file along with its dependencies in a single archive \(`.zip` file\).
 
@@ -395,7 +395,7 @@ Specifies how WS-Security settings are to be configured.
 
 -   *Via Manual Configuration in Channel*
 
-    The security settings are to be configured manually \(see the attributes listed below\).
+    The security settings are to be configured manually \(see the attributes listed next\).
 
 -   *Based on Policies in WSDL*
 
@@ -462,7 +462,7 @@ If you have selected the option *Plain Text Password* or *Hashed Password*, ente
 </td>
 <td valign="top">
 
-Alias that was assigned to the authorized user and password during tenant deployment
+Alias that was assigned to the authorized user and password during tenant deployment.
 
 </td>
 </tr>

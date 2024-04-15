@@ -21,7 +21,10 @@ Apply a policy template to an API.
 You are applying a policy template and want to apply it to an API proxy.
 
 > ### Note:  
-> If you attempt to apply a policy template that includes a Statistic Collector policy with the Statistic name='clientIP' to an API proxy, the application of the policy template will fail because 'clientIP' is a reserved word in Cloud Foundry API Management analytics. To successfully apply the policy template to the API proxy, you must change the Statistic name to something other than the reserved keyword 'clientIP'.
+> If you attempt to apply a policy template that includes a Statistic Collector policy with the Statistic name='clientIP' to an API proxy, the application of the policy template will fail because 'clientIP' is a reserved word in Cloud Foundry API Management analytics. To address this issue, we have introduced a default prefix, "**custom\_**", which will be automatically appended to all custom metric names. For example, if the Statistic name is "clientIP", it will be displayed as "**custom\_clientIP**".
+
+> ### Remember:  
+> If any changes are made to the existing policy, the API proxy must be redeployed.
 
 
 

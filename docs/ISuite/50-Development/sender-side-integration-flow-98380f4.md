@@ -17,7 +17,7 @@ Follow the procedure below to configure these integration flows.
 
 ## Sender AS2 Communication Flow
 
-1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 1 - Sender AS2 Communication Flow* and select *Configure*
+1.  In the *Artifacts* tab, choose *Action* <span class="SAP-icons-V5"></span> of the integration flow *Step 1 - Sender AS2 Communication Flow* and select *Configure*.
 
 2.  Under the *Sender* tab, maintain the following parameters.
 
@@ -163,7 +163,7 @@ Follow the procedure below to configure these integration flows.
     </tr>
     </table>
     
-3.  Select the *Receiver* tab and maintain the following parameter
+3.  Select the *Receiver* tab and maintain the following parameter:
 
     **Receiver Parameter**
 
@@ -214,9 +214,9 @@ Follow the procedure below to configure these integration flows.
 
 ## Sender AS2 MDN Flow
 
-This integration flow is used to capture the Technical Acknowledgement through the AS2 adapter. You can also view the Technical Acknowledgement in the *B2B Monitoring* tab.
+This integration flow is used to capture the Technical Acknowledgement through the AS2 adapter. You can also review the Technical Acknowledgement in the *B2B Monitoring* tab.
 
-1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 1 - Sender AS2 MDN Flow* and select *Deploy*.
+1.  In the *Artifacts* tab, choose *Action* <span class="SAP-icons-V5"></span> of the integration flow *Step 1 - Sender AS2 MDN Flow* and select *Deploy*.
 
 
 
@@ -225,7 +225,7 @@ This integration flow is used to capture the Technical Acknowledgement through t
 
 ## Sender IDOC Communication Flow
 
-1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 1 - Sender IDOC Communication Flow* and select *Configure*
+1.  In the *Artifacts* tab, choose *Action* <span class="SAP-icons-V5"></span> of the integration flow *Step 1 - Sender IDOC Communication Flow* and select *Configure*
 
 2.  Under the *Sender* tab, maintain the following parameters
 
@@ -286,7 +286,7 @@ This integration flow is used to capture the Technical Acknowledgement through t
     </tr>
     </table>
     
-3.  Choose the *Receiver* tab and maintain the following parameter
+3.  Choose the *Receiver* tab and maintain the following parameter:
 
     **Receiver Parameter**
 

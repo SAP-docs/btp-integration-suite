@@ -25,7 +25,7 @@ If you have configured a mail sender adapter, message processing is performed as
 > 
 > [Important Notes on Security Risks and Mailbox Settings](important-notes-on-security-risks-and-mailbox-settings-34aa095.md)
 
-Once you have created a sender channel and selected the mail sender adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
+Once you have created a sender channel and selected the mail sender adapter, you can configure the following attributes. See: [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 Select the *General* tab and provide values in the fields as follows.
 
@@ -118,7 +118,7 @@ Select *Internet* if you’re connecting to a cloud mail server.
 
 Select *On-Premise* if you’re connecting to an on-premise mail server.
 
-For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
+For more information, see: [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
 </td>
 </tr>
@@ -408,7 +408,7 @@ MIME header fields are inserted by the e-mail server at the beginning of the dat
 
 Non-ASCII characters are not allowed in MIME messages. MIME `encoded-word` syntax is used to encode the non-ASCII characters.
 
-For more details, see [MIME \(Multipurpose Internet Mail Extensions\) Part Three: Message Header Extensions for Non-ASCII Text](https://www.rfc-editor.org/rfc/rfc2047) \(RFC-2047\).
+For more details, see: [MIME \(Multipurpose Internet Mail Extensions\) Part Three: Message Header Extensions for Non-ASCII Text](https://www.rfc-editor.org/rfc/rfc2047) \(RFC-2047\).
 
 </td>
 </tr>
@@ -477,7 +477,7 @@ When selected, Cloud Integration disconnects from the e-mail server after each p
 Select the *Scheduler* tab and provide values in the fields as follows.
 
 > ### Caution:  
-> How you specify the *Scheduler* settings depends on the constraints and requirements of your integration scenario. However, make sure to use the *Scheduler* parameters advisedly: Specify the scheduler settings in such a way that messages are not polled with too high frequency. Use intervals below 1 minute only if really required. Otherwise, there’s the risk to overload the mail server.
+> How you specify the *Scheduler* settings depends on the constraints and requirements of your integration scenario. However, make sure to use the *Scheduler* parameters advisedly: Specify the scheduler settings in such a way that messages are not polled with too high frequency. Use the following interval 1 minute only if really required. Otherwise, there’s the risk to overload the mail server.
 
 **Scheduler**
 
@@ -636,7 +636,7 @@ Select the time zone that you want the scheduler to use as a reference for the d
 </tr>
 </table>
 
-Example: With the configuration shown in the figure below, the integration flow are activated every week on Monday to poll e-mails on this day every hour, between 00:00 and 24:00 \(Greenwich Time Zone\).
+Example: With the configuration shown in the next figure, the integration flow are activated every week on Monday to poll e-mails on this day every hour, between 00:00 and 24:00 \(Greenwich Time Zone\).
 
 ![](images/Mail_Adapter_Scheduler_dbf7aee.png)
 
@@ -651,9 +651,9 @@ Example: With the configuration shown in the figure below, the integration flow 
 > 
 > -   To access the mail attributes \(Subject, From, or To\), you have to set them manually as *Allowed Headers* on the *Runtime Configuration* tab. This adds them to an allowlist.
 > 
-> -   The mail sender adapter can decrypt encrypted mails and verifies the signature of a signed message. You can access the results of the verification via headers and Exchange properties. For more information, see [Headers and Exchange Properties Provided by the Integration Framework](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d0fcb0988f034e889f611c6e36d43ad5.html?table_hhg_tbq_f2b=SAP_MAIL).
+> -   The mail sender adapter can decrypt encrypted mails and verifies the signature of a signed message. You can access the results of the verification via headers and Exchange properties. For more information, see: [Headers and Exchange Properties Provided by the Integration Framework](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d0fcb0988f034e889f611c6e36d43ad5.html?table_hhg_tbq_f2b=SAP_MAIL).
 > 
-> -   The property *Include Original Mail* was changed to allow the saving of duplicate attachments.Before this change, duplicate attachments got lost.
+> -   The property *Include Original Mail* was changed to allow the saving of duplicate attachments. Before this change, duplicate attachments got lost.
 
 **Related Information**  
 

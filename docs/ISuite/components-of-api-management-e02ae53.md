@@ -8,7 +8,7 @@ The API Management infrastructure comprises of five key components:
 
 -   **API Management Runtime**: You can deploy and effectively utilize your APIs. Applications consume the API runtime, request API authentication, and gain access.
 
--   **API Management Design Time**: Serves as a platform for easy API discovery, allowing API administrators to manage, meter, and secure their APIs. Additionally, it enables administrators to define and publish rate plans for their APIs. For more information, see[Build API Proxies](50-Development/build-api-proxies-74c042b.md), [Publish API Proxies](50-Development/publish-api-proxies-75a4a11.md) [Monetize APIs](50-Development/monetize-apis-fcdc89b.md) [Analyze APIs](50-Development/analyze-apis-7712c61.md).
+-   **API Management Design Time**: Serves as a platform for easy API discovery, allowing API administrators to manage, meter, and secure their APIs. Additionally, it enables administrators to define and publish rate plans for their APIs. For more information, see[Build API Proxies](50-Development/build-api-proxies-74c042b.md), [Publish API Proxies](50-Development/publish-api-proxies-75a4a11.md) [Monetize APIs](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/fcdc89b5c4884d5e8cfb32c5914943ab.html "API Management provides monetization feature to all API providers to generate revenue for using the APIs.") :arrow_upper_right: [Analyze APIs](50-Development/analyze-apis-7712c61.md).
 
 -   **API business hub enterprise**: It is a self-service portal for application developers. You can discover, browse, and explore APIs. Subscribe to a rate plan and build application. For more information, see [Consume API Proxies](50-Development/consume-api-proxies-ea561e4.md).
 

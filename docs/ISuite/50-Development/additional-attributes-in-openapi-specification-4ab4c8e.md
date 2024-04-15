@@ -32,7 +32,7 @@ The following additional attributes have been introduced for use with API design
 > }
 > ```
 
-You can use this attribute to display the API type in the APIs listing page of SAP Business Accelerator Hub. For example:
+You can use this attribute to display the API type. For example:
 
 The API Type is set according to the following rules of precedence:
 
@@ -88,10 +88,10 @@ The API Type is set according to the following rules of precedence:
 
 ## x-sap-shortText
 
-The `x-sap-shortText` attribute is used to display a short description of your APIs in the APIs listing page of SAP Business Accelerator Hub. This short text description appears below the title in the list of APIs/services on the *Artifacts* page in SAP Business Accelerator Hub.
+The `x-sap-shortText` attribute is used to display a short description of your APIs.
 
 > ### Note:  
-> The `x-sap-shortText` is a mandatory attribute that must be defined in the API definition file to enable publication of your API on the SAP Business Accelerator Hub.
+> The `x-sap-shortText` is a mandatory attribute that must be defined in the API definition file.
 
 > ### Sample Code:  
 > ```
@@ -244,7 +244,7 @@ Please note, though forward slash is not an allowed character to use, it is allo
 
 ## x-sap-stateInfo
 
-You use `x-sap-stateInfo` attribute to display the current status of an API that you want to publish on SAP Business Accelerator Hub.
+You use `x-sap-stateInfo` attribute to display the current status of an API.
 
 > ### Note:  
 > The `x-sap-stateInfo` is an optional attribute. That is, if you do not use this attribute in your API definition file, then by default, the current status of an API is marked as `Active`. However, If you want to publish your API in the `Beta` status or you have decided to transition your API from `Active` to `Deprecated` or `Decommissioned` status, then it is mandatory to use this attribute to indicate the new status of your API.
@@ -567,7 +567,7 @@ You can use this attribute to provide stakeholder-specific information. For exam
 > ```
 
 > ### Remember:  
-> Authentication details must not be a part of the x-sap-ext-overview. Add authentication details in the security scheme section. For more information, see  <?sap-ot O2O class="- topic/xref " href="9bf4fea2546c4c368b068077ce0ade6c.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/esb1704779833497/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/4ab4c8e7a09d4608abf91c04ea51f9e3.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+> Authentication details must not be a part of the x-sap-ext-overview. Add authentication details in the security scheme section.
 
 
 
@@ -598,9 +598,6 @@ If values are supplied for host, schemes, and basepath, then they together form 
 > ```
 
 For more information on how to define schemes, host and basepath in the API specification, see [API Designer](api-designer-51f3ca1.md).
-
-> ### Note:  
-> The *Try it Out!* feature on SAP Business Accelerator Hub can be configured to enable API testing experience either in a sandbox system or in a productive system. To try out the APIs in a sandbox system, the `host` attribute in the OpenAPI specification must be defined and point to the API Sandbox URL. Similarly, to try out the APIs in a productive system, the `x-servers` attribute in the OpenAPI specification must be defined and point to the URL of the productive system. For example, the productive system can be URL to an application/service running on an active SAP BTP account.
 
 `x-servers` attribute is used when you want to specify multiple hosts, for example, to specify values for different servers located across various geographical boundaries. The example below shows how multiple hosts with path templates can be defined using x-servers attribute.
 
@@ -638,8 +635,6 @@ For more information on how to define schemes, host and basepath in the API spec
   ]
 }
 ```
-
-For more information on how `x-servers` attribute is used for enabling API test experience in a productive environment in SAP Business Accelerator Hub, see [here](https://blogs.sap.com/2017/09/09/sap-api-business-hub-support-for-productive-environment/).
 
 
 

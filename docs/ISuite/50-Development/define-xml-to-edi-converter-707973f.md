@@ -23,7 +23,9 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
 2.  Define the parameters to convert the XML data format to EDI data format.
 
     > ### Note:  
-    > Use *EDIFACT* tab to convert XML file to ODETTE document. XML to EDI converter version 1.2 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
+    > -   Use *EDIFACT* tab to convert XML file to ODETTE document. XML to EDI converter version 1.2 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
+    > 
+    > -   For X12 format, XML to EDI converter v1.3.0 and v2.1.0 onwards support same group name with different definition in XSD.
 
 
     <table>
@@ -62,7 +64,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="5">
+    <td valign="top" rowspan="6">
     
     EDIFACT
     
@@ -75,6 +77,24 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     <td valign="top">
     
     Select encoding format for the incoming payload.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Target Encoding
+    
+    </td>
+    <td valign="top">
+    
+    Select encoding format for the outgoing payload. If you select 'Dynamic', you must define either of the values in SAP\_XMLTOEDI\_EDIFACT\_TARGET\_ENCODING exchange header:
+
+    -   UTF-8
+    -   ISO-8859-1 to ISO-8859-9
+    -   fromIncomingPayload
+
+
     
     </td>
     </tr>

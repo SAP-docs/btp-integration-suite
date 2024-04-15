@@ -594,6 +594,87 @@ Read
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+onpremise.target.host
+
+</td>
+<td valign="top">
+
+The onpremise virtual host configured in onpremise APIProvider
+
+</td>
+<td valign="top">
+
+Proxy target endpoint request
+
+</td>
+<td valign="top">
+
+String
+
+</td>
+<td valign="top">
+
+Read
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+onpremise.target.port
+
+</td>
+<td valign="top">
+
+The onpremise virtual port configured in onpremise APIProvider
+
+</td>
+<td valign="top">
+
+Proxy target endpoint request
+
+</td>
+<td valign="top">
+
+String
+
+</td>
+<td valign="top">
+
+Read
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+onpremise.target.basepath
+
+</td>
+<td valign="top">
+
+Determines the actual base path.
+
+</td>
+<td valign="top">
+
+Proxy target endpoint request
+
+</td>
+<td valign="top">
+
+String
+
+</td>
+<td valign="top">
+
+Read
+
+</td>
+</tr>
 </table>
 
 **Error Flow Variables**

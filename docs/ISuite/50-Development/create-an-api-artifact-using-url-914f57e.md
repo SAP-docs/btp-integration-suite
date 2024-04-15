@@ -27,13 +27,15 @@ Create an API artifact of the type REST, SOAP, and OData using the HTTP endpoint
 
 3.  Select the *<integration package\>* where you want to add an API artifact and choose *Edit*.
 
-4.  On the *<integration package\>* details page, choose *Artifacts* and under the *Add* option, select the API: .
+4.  On the *<integration package\>* details page, choose *Artifacts* and under the *Add* option, select the *API*.
 
     The *Create API* wizard opens.
 
-5.  To create an API using the HTTP endpoint URL, select *URL* from the given options and choose *Next*.
+5.  Select the Edge Integration Cell *Runtime Profile* and choose *Next*. This profile determines the Edge Integration Cell node on which you will create and process your API artifact.
 
-6.  Fill in the following *API Details*:
+6.  To create an API using the HTTP endpoint URL, select *URL* from the given options and choose *Next*.
+
+7.  Fill in the following *API Details*:
 
 
     <table>
@@ -187,9 +189,9 @@ Create an API artifact of the type REST, SOAP, and OData using the HTTP endpoint
     </tr>
     </table>
     
-7.  Choose *Create*.
+8.  Choose *Create*.
 
-8.  To add a resource to the API artifact, choose *Edit*.
+9.  To add a resource to the API artifact, choose *Edit*.
 
     -   To add a resource to a REST-based API artifact:
 
@@ -220,11 +222,11 @@ Create an API artifact of the type REST, SOAP, and OData using the HTTP endpoint
 
 
 
-9.  For a given resource, choose *Show/Hide* to view the list of properties and their associated API documentation. You can add descriptions for each resource in the editor.
+10. For a given resource, choose *Show/Hide* to view the list of properties and their associated API documentation. You can add descriptions for each resource in the editor.
 
-10. To define policies on the API, go to the *Policies* tab. For more information about how to add a policy, see [Policy Definition and Types of Policies Supported by Edge Integration Cell](policy-definition-and-types-of-policies-supported-by-edge-integration-cell-c744df5.md).
+11. To define policies on the API, go to the *Policies* tab. For more information about how to add a policy, see [Policy Definition and Types of Policies Supported by Edge Integration Cell](policy-definition-and-types-of-policies-supported-by-edge-integration-cell-c744df5.md).
 
-11. Once you’ve filled in all the required details of the API, you can select one of the following actions for the API:
+12. Once you’ve filled in all the required details of the API, you can select one of the following actions for the API:
 
 
     <table>

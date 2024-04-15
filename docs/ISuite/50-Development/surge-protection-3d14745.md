@@ -96,7 +96,7 @@ Supported units are second, minute, hour, day, week, or month.
 **Related Information**  
 
 
-[Quota Policy](quota-policy-2aecf15.md "The Quota policy defines the number of request messages an application can submit to an API endpoint over a given period of time.")
+[Quota](quota-2aecf15.md "The Quota policy defines the number of request messages an application can submit to an API endpoint over a given period of time.")
 
 [IP Filter](ip-filter-3a8b424.md "The IP filter policy allows or denies calls from specific IP addresses or address ranges.")
 

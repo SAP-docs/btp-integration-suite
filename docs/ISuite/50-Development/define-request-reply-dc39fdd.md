@@ -93,16 +93,16 @@ In the integration flow model, you design the external service as a receiver sha
 
 1.  If you want to add a *Request Reply* step to the integration process, perform the following substeps.
 
-    1.  In the palette, choose ![](images/external_call_bfbf8b0.png) \(Call\) and then choose :envelope:. In the submenu, choose :gear:
+    1.  In the palette, choose ![](images/external_call_bfbf8b0.png) \(Call\) and then choose :envelope:In the submenu, choose :gear:
 
     2.  Place the *Request Reply* shape in the integration process and define message path.
 
 
-2.  To add this shape to the model, click somewhere inside the *Integration Process* box of the integration flow model.
+2.  To add this shape to the model, activate your pointing device somewhere inside the *Integration Process* box of the integration flow model.
 
     No further attributes are to be specified for this step type.
 
-3.  In the palette, click *Participants* \(<span class="SAP-icons-V5"></span> icon\), select *Receiver*, and drop it outside the Integration Process pool.
+3.  In the palette, select *Participants* \(<span class="SAP-icons-V5"></span> icon\), select *Receiver*, and drop it outside the Integration Process pool.
 
 4.  Create a connection between the request reply step and the receiver and configure the channel.
 

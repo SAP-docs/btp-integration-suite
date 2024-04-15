@@ -33,9 +33,9 @@ Perform the following steps:
 
 You can now set up basic authentication for users registered by the custom IdP for the following use cases:
 
--   Sender component calls integration flow endpoint \(see: [Basic Authentication of IdP User for Integration Flow Processing](basic-authentication-of-idp-user-for-integration-flow-processing-5d46e56.md)\).
+-   Sender component calls integration flow endpoint, see: [Basic Authentication of IdP User for Integration Flow Processing](basic-authentication-of-idp-user-for-integration-flow-processing-5d46e56.md).
 
--   API client calls Cloud Integration OData API \(see: [Basic Authentication of an IdP User for API Clients](basic-authentication-of-an-idp-user-for-api-clients-57f104d.md)\).
+-   API client calls Cloud Integration OData API, see: [Basic Authentication of an IdP User for API Clients](basic-authentication-of-an-idp-user-for-api-clients-57f104d.md).
 
 
 

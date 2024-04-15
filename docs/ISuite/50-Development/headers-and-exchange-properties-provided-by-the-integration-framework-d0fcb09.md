@@ -3351,6 +3351,32 @@ Used looping process call modelling.
 <tr>
 <td valign="top">
 
+SAP\_XadesSigningTimeZone
+
+</td>
+<td valign="top">
+
+Property
+
+</td>
+<td valign="top">
+
+XML Signer
+
+</td>
+<td valign="top">
+
+If this exchange property is set, the XML Signer step transforms the value of the XAdES `SigningTime` element into the time zone specified by the property value.
+
+The property shall contain a value of the format `GMT+HH:mm` or `GMT-HH:mm`, where HH are the hours and mm are the minutes after or before Greenwich Mean Time \(GMT\). The GMT zone is used if the given string property value can't be interpreted. If the property contains a non-string value, an exception is thrown. If the property is not set, the time zone GMT is used.
+
+For example, if you set the property value to `GMT+3:00`, the time zone 3 hours ahead Greenwich Mean Time is used.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SAP\_XmlValidationResult
 
 </td>

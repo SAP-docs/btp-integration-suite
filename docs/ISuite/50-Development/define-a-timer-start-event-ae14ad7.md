@@ -16,7 +16,7 @@ If you want to configure a process to automatically start and run on a particula
 > ### Remember:  
 > -   When you deploy or undeploy an integration flow with *Scheduler*, the system automatically releases all the scheduler locks.
 > 
-> -   When you deploy small integration flows with *Timer* \(for example, an integration flow with timer, content modifier and mail adapter\), due to fast processing times, multiple schedules are triggered. When you deploy small integration flows with *Timer* \(for example, an integration flow with timer, content modifier and mail adapter\), due to fast processing times, multiple schedules are triggered.
+> -   When you deploy small integration flows with *Timer* \(for example, an integration flow with timer, content modifier and mail adapter\), due to fast processing times, multiple schedules are triggered.
 > 
 > -   If the *Timer* is configured to trigger message processing at periodic intervals and the processing isn’t completed before the next scheduled interval, then the *Timer* skips the following interval.
 > 
@@ -213,7 +213,7 @@ If you want to configure a process to automatically start and run on a particula
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="3">
+    <td valign="top" rowspan="4">
     
     *Advanced* 
     
@@ -238,6 +238,22 @@ If you want to configure a process to automatically start and run on a particula
     Create a schedule by choosing the different units of time measurement available in seconds, minutes, hours, days, months, and years. The resulting time schedule will be a combined configuration from the multiple options that you choose. The default schedule recurs at every 5th minute starting at the 0th second.
 
     With the *Advanced* scheduler option, you can configure complex and granular schedules using combination of various units of time measurement. For example, last day of the month, last weekday of the week, specific days in a month or year, every few minutes, between certain hours, and so on. For sample usecases, read the [blog](https://blogs.sap.com/2023/03/06/sap-integration-suite-advanced-scheduler-configuration/).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Start and End Date* 
+    
+    </td>
+    <td valign="top">
+    
+    Provide an optional start and end date with time for the schedule. By default, the configured schedule operates without specific start and end dates.
+
+    The start and end date works together with the other configurations created in the *Advanced* section. For example, if you have configured a schedule that recures every 5 minutes, and have provided a start and end dates, then the schedule recurs for every 5 minutes within the mentioned start and end date/time range.
+
+    To clear the selected start and end dates, use the delete key on your keyboard.
     
     </td>
     </tr>

@@ -2,7 +2,7 @@
 
 # Accessing API Management APIs Programmatically
 
-The *apiportal-apiaccess* paln offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the [Business Accelerator Hub](https://api.sap.com/package/APIMgmt/overview).
+The *apiportal-apiaccess* paln offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the [Business Accelerator Hub](https://api.sap.com/package/APIMgmt/odata).
 
 
 
@@ -12,7 +12,7 @@ The *apiportal-apiaccess* paln offers external applications the ability to acces
 
 The *apiportal-apiaccess* plan allows you to programmatically import/export API proxies, create products, key value maps. It is especially useful when integrating API Management with a CI/CD process or when migrating from a Neo to Cloud Foundry environment using the migration tool.
 
-The API Access plan allows you to generate a service key by creating a service instance. By creating a service instance, you can generate a service key that includes the application url, clientId, clientSecret, and tokenUrl is used to generate a bearer token with the help of a REST Console. This Bearer Token, along with the application url and API endpoint are used to trigger the API. Therefore, bearer token acts like a key to access the APIs.
+The API Access plan allows you to generate a service key by creating a service instance. By creating a service instance, you can generate a service key that includes the application url, clientId, clientSecret, and tokenUrl is used tohttps://api.sap.com/package/APIMgmt/odata generate a bearer token with the help of a REST Console. This Bearer Token, along with the application url and API endpoint are used to trigger the API. Therefore, bearer token acts like a key to access the APIs.
 
 
 
@@ -51,7 +51,7 @@ Create a service instance using API Access plan to generate a service key.
 
     The following roles are supported for the current scenario:
 
-    Assign `APIPortal.Administrator` role to access the API portal APIs and perform operations like create, update, delete on various API portal entities as specified in the [API Business Hub](https://api.sap.com/package/APIMgmt?section=Artifacts).
+    Assign `APIPortal.Administrator` role to access the API portal APIs and perform operations like create, update, delete on various API portal entities as specified in the [SAP Business Accelerator Hub](https://api.sap.com/package/APIMgmt?section=Artifacts)
 
     ```
     
@@ -425,6 +425,8 @@ In the REST Console:
 
 **Related Information**  
 
+
+[Accessing API business hub enterprise APIs Programmatically](accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md "The devportal-apiaccess plan allows you to access the API business hub enterprise APIs to programmatically onboard developers, create applications, and more.")
 
 [Managing Cloud Foundry Microservices through API Management](managing-cloud-foundry-microservices-through-api-management-e609a3e.md "The apim-as-route-service plan helps you in managing Cloud Foundry applications by including policies such as rate limit, quota. The service instance you create through this plan allows you to bind to the route service and creates an API Proxy. This API Proxy serves in establishing a secure connection with your Cloud Foundry application and all the calls made to the Cloud Foundry application are routed via API Management, API portal.")
 

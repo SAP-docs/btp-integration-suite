@@ -77,11 +77,18 @@ Depending on the chosen authentication, the following is checked by the test:
     
     Select a proxy type from the drop-down list:
 
-    -   `Internet` 
+    -   *Internet* 
 
         or
 
-    -   `On-Premise`
+    -   *On-Premise*
+
+        This option is only available if *Cloud Integration* has been selected as runtime.
+
+    -   *Manual* 
+
+        This option is only available if *Edge* has been selected as runtime.
+
 
     For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md) 
     
@@ -91,13 +98,78 @@ Depending on the chosen authentication, the following is checked by the test:
     <td valign="top">
     
     *Location ID* 
+
+    \(only available if *On-Premise* is selected for *Proxy Type*\)
     
     </td>
     <td valign="top">
     
-    \(Only if `On-Premise` is selected as *Proxy Type*\)
-
     To connect to a Cloud Connector instance associated with your account, enter the location ID that you 've defined for this instance, in the destination configuration on the cloud side
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Proxy Protocol*
+
+    \(only available if *Manual* is selected for *Proxy Type*\)
+    
+    </td>
+    <td valign="top">
+    
+    Specify the type of proxy server which is used to communicate to the SFTP server. Choose between the following options:
+
+    -   *HTTP*
+
+    -   *SOCKS Version 4*
+
+    -   *SOCKS Version 5*
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Proxy Host*
+
+    \(only available if *Manual* is selected for *Proxy Type*\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the name of the proxy host to be used. For example: `proxy.mycompany.com`.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Proxy Port*
+
+    \(only available if *Manual* is selected for *Proxy Type*\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the proxy port number to be used.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Proxy Credential Name*
+
+    \(only available if *Manual* is selected for *Proxy Type* and if *HTTP* or *SOCKS Version 5* is selected for *Proxy Protocol*\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the referenced credential name used for proxy authentication.
     
     </td>
     </tr>

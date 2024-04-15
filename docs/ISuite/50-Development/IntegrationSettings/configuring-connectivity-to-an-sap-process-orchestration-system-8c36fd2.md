@@ -18,7 +18,7 @@ Learn how to connect an SAP Process Orchestration system.
 
 ## Prerequisites
 
-You must have a tenant administrator role to configure connectivity to an SAP Process Orchestration system.
+You must have tenant administrator role to configure connectivity to an SAP Process Orchestration system.
 
 
 
@@ -40,9 +40,7 @@ You must have a tenant administrator role to configure connectivity to an SAP Pr
 
 5.  Select the *Version* of your PO system.
 
-    Before you select the version, make sure you identify the correct version from your PO system. If you don't select a version or select a wrong version, the migration tooling wouldn't be able to establish connection with your PO system.
-
-6.  Optional: Provide a description for the PO system.
+6.  Optional: Provide a description that explains the PO system.
 
 7.  Enter values in fields based on description in the following table:
 
@@ -73,7 +71,7 @@ You must have a tenant administrator role to configure connectivity to an SAP Pr
     Provide the URL from Cloud Connector that connects to your PO system.
 
     > ### Note:  
-    > If the test connection fails, try removing the character "`_`" \(underscore\) in the address field, if used. An underscore is a likely candidate for such connection failures.
+    > If the test connection fails, try removing the charcter "`_`" \(underscore\) in the address field, if used. An underscore is a likely candidate for such connection failures.
 
 
     
@@ -167,7 +165,7 @@ You must have a tenant administrator role to configure connectivity to an SAP Pr
     Provide the URL from Cloud Connector that connects to your PO system.
 
     > ### Note:  
-    > If the test connection fails, try removing the character "`_`" \(underscore\) in the address field, if used. An underscore is a likely candidate for such connection failures.
+    > If the test connection fails, try removing the charcter "`_`" \(underscore\) in the address field, if used. An underscore is a likely candidate for such connection failures.
 
 
     
@@ -247,7 +245,7 @@ You must have a tenant administrator role to configure connectivity to an SAP Pr
 
 ## Context
 
-Execute the following steps in your SAP BTP subaccount. After you create a destination, an entry for that SAP Process Orchestration system is automatically created in the *System* tab and it's ready to use.
+Execute the following steps in your SAP BTP subaccount. After you create a destination, an entry for that SAP Process Orchestration system is automatically created in the *System*settings tab and it is ready to use.
 
 Though creating destinations directly in the SAP BTP subaccount is a valid approach, we recommend you to use the *System* settings tab.
 
@@ -420,7 +418,7 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     </td>
     <td valign="top">
     
-    Add the name of the system that you created in Migration Assessment
+    Add the name of the system you created in Migration Assessment
     
     </td>
     </tr>
@@ -595,7 +593,7 @@ Though creating destinations directly in the SAP BTP subaccount is a valid appro
     </td>
     <td valign="top">
     
-    Add the name of the system that you created in Migration Assessment
+    Add the name of the system you created in Migration Assessment
     
     </td>
     </tr>

@@ -2,7 +2,7 @@
 
 # SDK API
 
-SDK APIs refer to the overall set of APIs like the Generic API, Adapter API, Script API
+SDK APIs refer to the overall set of APIs like the Generic API, Adapter API, Script API.
 
 Application programming interfaces \(APIs\) are available for the following use cases:
 

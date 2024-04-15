@@ -48,7 +48,7 @@ If you’ve configured a receiver FTP adapter, message processing is performed a
 > 
 > -   You can establish a connection to your on-premise system by using Cloud Connector: [SAP Connectivity Service](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e933fd930039402c907d5afaa75eb0e1.html).
 > 
-> -   This adapter doesn’t support connections to SFTP servers. See [Configure the SFTP Receiver Adapter](configure-the-sftp-receiver-adapter-4ef52cf.md).
+> -   This adapter doesn’t support connections to SFTP servers. See: [Configure the SFTP Receiver Adapter](configure-the-sftp-receiver-adapter-4ef52cf.md).
 
 Once you’ve created a receiver channel and selected the FTP receiver adapter, you can configure the following attributes. Select the *General* tab and provide values in the fields as follows.
 
@@ -152,7 +152,7 @@ If the file has an extension \(for example, .xml\), the timestamp is appended to
 ***myfile20151201170800.xml***
 
 > ### Note:  
-> Be aware of the following behavior if you’ve configured the file name dynamically: Ifyou’ve selected the *Append Timestamp* option, the timestamp overrides the file name defined dynamically via the header \(`CamelFileName`\).
+> Be aware of the following behavior if you’ve configured the file name dynamically: If you’ve selected the *Append Timestamp* option, the timestamp overrides the file name defined dynamically via the header \(`CamelFileName`\).
 > 
 > *Append Timestamp* and dynamically configuring *File Name* \(through a Camel simple expression\) must not be used together. The reason is that using the *Append Timestamp* option results in generating a simple expression for the date. Both simple expressions result in an invalid expression that can’t be processed correctly.
 
@@ -191,7 +191,7 @@ The type of proxy that you’re using to connect to the target system.
 
 -   Select *On-Premise* if you are connecting to an on-premise system.
 
-    For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
+    For more information, see: [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
     For more information on how to use the *On-Premise* option to connect to an on-premise FTP server, check out the SAP Community blog [Cloud Integration – How to Connect to an On-Premise sftp server via Cloud Connector](https://blogs.sap.com/2018/11/16/cloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector/).
 

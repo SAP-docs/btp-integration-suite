@@ -188,9 +188,9 @@ When you add or edit a tile, you can specify the following filter categories:
 
 [Managing Certificate-to-User Mappings, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/88ea2e5336d445f783c194c8d2780d35.html "The Manage Security area provides an overview of security-related artifacts. It also provides access to all certificate-to-user mappings defined for the tenant.") :arrow_upper_right:
 
-[Managing Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Specifics for Access Policies in the Neo Environment.") :arrow_upper_right:
+[Creating Custom Roles for Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Create custom roles to define access policies in the Neo environment.") :arrow_upper_right:
 
-[Managing Access Policies](managing-access-policies-7db3c87.md "Specifics for Access Policies in the Cloud Foundry Environment.")
+[Creating Custom Roles for Access Policies](creating-custom-roles-for-access-policies-7db3c87.md "Define a custom role to be associated with an access policy.")
 
 [Managing User Roles](managing-user-roles-4e86f0d.md "The user role monitor allows a tenant administrator to manage user roles which then can be used during inbound authorization of an integration flow execution.")
 

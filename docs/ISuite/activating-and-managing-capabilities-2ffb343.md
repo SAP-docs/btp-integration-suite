@@ -73,7 +73,15 @@ This topic describes how to add and activate relevant capabilities in Integratio
     *Build Integration Scenarios*
 
     > ### Note:  
-    > To support the usage of Java Message Service \(JMS\) queues as temporary storage, select Message Queues for Cloud Integration capability. Using JMS message queues allow you to configure asynchronous decoupling of sender and receiver message processing to ensure that in case of an error a retry is done from SAP Integration Suite rather than the sender system. You can use the tenant to manage these queues. See [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html).
+    > -   Select the environment based on your operational needs:
+    > 
+    >     -   *Non-Production* for non-critical business activities like performance testing, testing new integration scenarios.
+    >     -   *Production* for critical business activities.
+    > 
+    >     > ### Recommendation:  
+    >     > If you want to activate both API Management and Cloud Integration capabilities within the same tenant, select the same environment for both capabilities. Once you have activated API Management capability, you can set the same environment by using the *Account Type* field on the *Configure the API Management Service* screen. See [Enable API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite).
+    > 
+    > -   To support the usage of Java Message Service \(JMS\) queues as temporary storage, select Message Queues. Using JMS message queues allow you to configure asynchronous decoupling of sender and receiver message processing to ensure that in case of an error a retry is done from SAP Integration Suite rather than the sender system. You can use the tenant to manage these queues. See [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html).
 
 
     
