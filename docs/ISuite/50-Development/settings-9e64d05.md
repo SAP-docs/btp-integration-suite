@@ -2,7 +2,7 @@
 
 # Settings
 
-In the *Settings* section you can fine-tune the process of setting up individual capabilities once you've activated them for the Integration Suite.
+Fine-tune the settings for individual capabilities once activated, in the SAP Integration Suite.
 
 The following tabs are available for each capability:
 

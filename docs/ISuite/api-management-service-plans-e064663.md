@@ -2,7 +2,7 @@
 
 # API Management Service Plans
 
-The functionality of the API Management capability is typically managed using the Integration Suite \(UI\) application, which is the primary focus of this user guide. However, you can also call API Management APIs, manage Cloud Foundry applications, and connect to an on-premise backend sytem by means of service plans.
+The service plans of the API Management Cloud Foundry environment allow you to interact with the services available in Cloud Foundry. By creating a service instance, you can obtain unique credentials to connect with these services.
 
 The API Management services on Cloud Foundry provides different capabilities through the following plans:
 

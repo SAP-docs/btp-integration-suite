@@ -43,7 +43,7 @@ This topic explains how to enable API access for API business hub enterprise.
         The client credentials like url, clientId, and clientSecret details appear for the given service key.
 
 
--   You have created a destination of type `OAuth2Credentials` to the XSUAA APIs by using the credentials you derived from creating the service key.
+-   You have created a destination of type `OAuth2Credentials` to the XSUAA APIs by using the credentials you derived from creating the service key. This is required to access the XSUAA APIs for authorization and trust mangement services.
     1.  From your *Subaccount*, navigate to *Connectivity* \> *Destinations* \> *New Destination*.
     2.  Choose the service instance that you created above.
     3.  In the *Destination Configuration* window, provide the details.

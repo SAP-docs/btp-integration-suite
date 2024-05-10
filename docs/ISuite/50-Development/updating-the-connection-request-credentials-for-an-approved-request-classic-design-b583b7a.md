@@ -10,6 +10,9 @@ There can be instances where you have to update the credentials once the connect
 
 ## Prerequisites
 
+> ### Caution:  
+> Effective June 2024, the classic design of the API business hub enterprise will be deprecated and will no longer be accessible. The new design of the API business hub enterprise will be set as your default design from March 2024. For more information, see [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
+
 To update the API Management tenant access credentials, you must first generate it. To generate the credentials from theAPI Management tenants, you must have the *APIPortal. Administrator* role assigned to you.
 
 1.  Log in to the Integration Suite.

@@ -108,6 +108,92 @@ To request a custom domain with one-way TLS, perform the following steps:
         > ```
 
 
+3.  Service to update a virtual host:
+
+    You can update the virtualHostUrl, trustStore, and the isDefaultVirtualHostRequest flag.
+
+    You can also convert your default domain virtual host to custom domain by refering to the update section \(Step 3\) of the [Configuring a Custom Domain for a Virtual Host](configuring-a-custom-domain-for-a-virtual-host-6b9e5a3.md) topic.
+
+    -   Service URL: https://<url-from-service-key\>/apiportal/operations/1.0/Configuration.svc/VirtualHostRequests
+    -   Method: POST
+    -   Request Header: Authentication Bearer <token\>
+    -   Content Type: application/json
+    -   Request Body:
+
+        > ### Sample Code:  
+        > ```
+        > {
+        >     "accountId" : "subdomain of your subaccount",  
+        >     "virtualHostUrl": "prod-apis-updated",
+        >     "isDefaultVirtualHostRequest" : false,
+        >     "operation" : "UPDATE",
+        >     "virtualHostId":"c269915f-7adc-4f78-bdd0-dd39ffcb079f"
+        > }
+        > <!–– 
+        > -->
+        > 
+        > ```
+
+        > ### Note:  
+        > -   accountId: This is the subdomain of your subaccount.
+        > 
+        > -   virtualHostUrl - This is your virtual host alias, for example, prod-apis, testapi.
+        > 
+        > -   isDefaultVirtualHostRequest -if you want the new virtual host to be the default virtual host, set the value to "true", else set it to "false".
+        > 
+        > -   virtualHostId: This is the unique ID of the virtual host you are trying to update.
+
+        > ### Note:  
+        > To enable client authentication \(mutual TLS\) while configuring the virtual host with default domain, see [Configuring Mutual TLs for Virtual Host](configuring-mutual-tls-for-virtual-host-9faf7ce.md).
+
+
+    -   Response: 201
+
+        > ### Sample Code:  
+        > ```
+        > {
+        >     "d": {
+        >         "__metadata": {
+        >             "id": "https://apiportalurl:443/apiportal/api/1.0/Management.svc/VirtualHostRequests('2F02AD6A-A53C-43F4-BF95-F053A8A1469B')",
+        >             "uri": "https://apiportalurl:443/apiportal/api/1.0/Management.svc/VirtualHostRequests('2F02AD6A-A53C-43F4-BF95-F053A8A1469B')",
+        >             "type": "apimgmtconfiguration.VirtualHostRequest"
+        >         },
+        >         "accountId": "subdomain of your subaccount",
+        >         "allocatedPort": 443,
+        >         "allocationStatus": "COMPLETE",
+        >         "clusterName": "",
+        >         "id": "2F02AD6A-A53C-43F4-BF95-F053A8A1469B",
+        >         "isClientAuthEnabled": false,
+        >         "isDefaultVirtualHostRequest": false,
+        >         "isForCustomDomain": false,
+        >         "isForNonSni": false,
+        >         "isTLS": false,
+        >         "keyStoreAlias": null,
+        >         "keyStoreName": null,
+        >         "life_cycle": {
+        >             "__metadata": {
+        >                 "type": "apimgmtconfiguration.History"
+        >             },
+        >             "changed_at": "/Date(1707380514905)/",
+        >             "changed_by": "sb-apiaccess_1705298659201!b109482|api-portal-xsuaa!b11864",
+        >             "created_at": "/Date(1707380504072)/",
+        >             "created_by": "sb-apiaccess_1705298659201!b109482|api-portal-xsuaa!b11864"
+        >         },
+        >         "operation": "UPDATE",
+        >         "trustStore": null,
+        >         "virtualHostId": "c269915f-7adc-4f78-bdd0-dd39ffcb079f",
+        >         "virtualHostUrl": "prod-apis-updated.sapdefaultdomain",
+        >         "lbHost": null
+        >     }
+        > }
+        >  
+        > ```
+
+    -   Response: 201
+
+    > ### Note:  
+    > After the virtual host is updated, APIs associated to a product using the updated virtual host must be redeployed and republished.
+
 
 **Related Information**  
 

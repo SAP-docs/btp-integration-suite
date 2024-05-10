@@ -13,7 +13,7 @@ Learn more about Migration Assessment.
 
 ## Features
 
--   Extract data from your existing SAP Process Orchestration 7.5 system
+-   Extract data from your existing SAP Process Orchestration system
 
     Migration is currently supported for the following versions of SAP Process Orchestration:
 
@@ -26,7 +26,7 @@ Learn more about Migration Assessment.
 
 -   Evaluate the extracted data
 
--   Estimate the potential effort of migrating your integrated configuration objects from your SAP Process Orchestration 7.5 system to SAP Integration Suite
+-   Estimate the potential effort of migrating your integrated configuration objects from your SAP Process Orchestration system to SAP Integration Suite
 
 
 > ### Note:  
@@ -53,5 +53,5 @@ This service is available in the SAP BTP, Cloud Foundry environment.
 
 [Create a Scenario Evaluation Request](create-a-scenario-evaluation-request-435ec61.md "Assess your integration scenarios using the information from data extraction requests.")
 
-[Tasks and Permissions](60-Security/tasks-and-permissions-2714db1.md "Learn about security-related topics like users and authorizations.")
+[Tasks and Permissions for Migration Assessment](60-Security/tasks-and-permissions-for-migration-assessment-2714db1.md "Learn about security-related topics like users and authorizations.")
 

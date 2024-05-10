@@ -93,6 +93,9 @@ Specify the runtime properties of the integration flow.
     
     Specify the headers to be retained when the incoming message is processed.
 
+    > ### Caution:  
+    > Only include the headers that are truly needed in the further processing of the message. This is the only way to ensure that no headers are processed that may have unwanted side effects or pose a security risk. Entering a wildcard character \(`*`\) bears the risk that you can’t control which headers will be processed by the integration flow.
+
     > ### Note:  
     > Enter one or more names of headers by separating them with the pipe character \(`|`\). Ensure that the header names separated with the pipe character don't have any whitespaces in between.
     > 

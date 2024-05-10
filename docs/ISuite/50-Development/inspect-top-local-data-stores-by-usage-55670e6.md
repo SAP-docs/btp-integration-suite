@@ -16,13 +16,17 @@ Click a cell to get more context information and to get access to the following 
 
     Navigate to the *Monitor Message Processing* screen for the time period covered by the bar \(see [Monitor Message Processing](monitor-message-processing-314df3f.md)\).
 
--   *Show Integration Content*
+-   *Show Data Stores*
 
     Navigate to the *Data Stores* tile, *Manage Stores* screen, to show all data stores of the tenant \(see [Managing Data Stores](managing-data-stores-ac39f1d.md)\).
 
 -   *Show Database Connections* 
 
     Inspect database connection usage \(can correlate with database consumption by data stores\).
+
+-   *Inspect Data Store* 
+
+    Inspect resource consmumption for the selected data store.
 
 -   *Copy Name to Clipboard* 
 

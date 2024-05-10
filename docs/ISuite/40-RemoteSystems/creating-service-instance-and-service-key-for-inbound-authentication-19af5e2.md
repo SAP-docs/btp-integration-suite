@@ -178,7 +178,7 @@ Create a service instance to implement inbound communication. A service instance
 
         These roles define permissions for API clients to access certain SAP Integration Suite resources using the OData API.
 
-        Choose the role depending on the resource you like to access using the OData API \(see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)\).
+        Choose the role depending on the resource you like to access using the OData API \(see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)\).
 
 
 

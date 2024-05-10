@@ -78,7 +78,7 @@ Tenant database
 </td>
 <td valign="top">
 
-During the processing of an integration flow, Cloud IntegrationCloud Integration tenant. The database keeps the data for a restricted amount of time.
+During the processing of an integration flow, Cloud Integration can write data to and read data from a database that comes with the tenant. The database keeps the data for a restricted amount of time.
 
 The database is associated with a subaccount of SAP BTP.
 
@@ -116,7 +116,7 @@ JMS queues
 </td>
 <td valign="top">
 
-To asynchronously decouple inbound and outbound processing, Cloud Integration can store messages in message queues and read from there \(using the JMS adapter\). can write data to and read data from a database that comes with the
+To asynchronously decouple inbound and outbound processing, Cloud Integration can store messages in message queues and read from there \(using the JMS adapter\).
 
 As soon as the message has been consumed successfully, it isn't available anymore in the queue.
 

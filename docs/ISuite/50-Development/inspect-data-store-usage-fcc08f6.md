@@ -55,23 +55,6 @@ Database Connection Usage
 <tr>
 <td valign="top">
 
-Critical
-
-</td>
-<td valign="top">
-
-Red
-
-</td>
-<td valign="top">
-
-More than 90%
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Warning
 
 </td>
@@ -82,7 +65,7 @@ Orange
 </td>
 <td valign="top">
 
-Between 70% and 90%
+100% or more
 
 </td>
 </tr>
@@ -99,7 +82,7 @@ Green
 </td>
 <td valign="top">
 
-Less than 70%
+Less than 100%
 
 </td>
 </tr>

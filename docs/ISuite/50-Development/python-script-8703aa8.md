@@ -13,7 +13,7 @@ Jython version 2.5.2 provides the required python language support. You can find
 > ### Note:  
 > The third-party libraries you add must be implemented in pure python language only.
 
-A Python policy contains no actual code. Instead, a Python policy references a Python 'resource' and defines the Step in the API flow where the Python script executes. The Python Script resource must always have the .py extension.
+The Python Script policy contains no actual code. Instead, it references a Python resource and defines the Step in the API flow where the Python script executes. The Python Script resource must always have the .py extension.
 
 You can attach this policy in the following locations: ![](images/Flow_policy_116062b.png)
 
@@ -32,7 +32,8 @@ An example payload for the policy is as follows:
 > 
 > ```
 > 
-> An example of a mainscript.py script
+> > ### Example:  
+> > mainscript.py
 > 
 > > ### Code Syntax:  
 > > ```
@@ -43,29 +44,46 @@ An example payload for the policy is as follows:
 > >     	print "x is 1."
 > > ```
 
+**`timeLimit` attribute of the `<Script>` element**
+
 
 <table>
 <tr>
 <th valign="top">
 
-**Attribute Name**
+Attribute
 
 </th>
 <th valign="top">
 
-**Description**
+Default
 
 </th>
 <th valign="top">
 
-Required
+Type
+
+</th>
+<th valign="top">
+
+Description
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-`timeLimit`
+`timeLimit` \(Required\)
+
+</td>
+<td valign="top">
+
+N/A
+
+</td>
+<td valign="top">
+
+N/A
 
 </td>
 <td valign="top">
@@ -73,57 +91,134 @@ Required
 Specifies the maximum time \(in milliseconds\) that the script is permitted to execute.
 
 </td>
-<td valign="top">
+</tr>
+</table>
 
-Yes
+**`<IncludeURL>` element**
 
-</td>
+
+<table>
+<tr>
+<th valign="top">
+
+Element
+
+</th>
+<th valign="top">
+
+Default
+
+</th>
+<th valign="top">
+
+Type
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
 </tr>
 <tr>
 <td valign="top">
 
-`IncludeURL`
+`IncludeURL` \(Optional\)
 
 </td>
 <td valign="top">
 
-This attribute specifies the python file to be loaded as dependency to the primary python file specified within the `ResourceURL` attribute. You can store the dependency python file under `APIProxy/FileResources/` in the API proxy bundle.
+N/A
+
+</td>
+<td valign="top">
+
+N/A
+
+</td>
+<td valign="top">
+
+This element specifies the python file to be loaded as dependency to the primary python file specified within the ResourceURL element. You can store the dependency python file under `APIProxy/FileResources/` in the API proxy bundle.
 
 The name of the dependency python file must be of type ‘String’.
 
 > ### Note:  
 > The python libraries you add must be implemented using pure python language only.
 
-You can include multiple dependency python files with additional `IncludeURL` attributes. The scripts are evaluated in the order in which they are listed in the policy.
+You can include multiple dependency python files with additional IncludeURL attributes. The scripts are evaluated in the order in which they are listed in the policy.
+
+> ### Sample Code:  
+> ```
+> <Script timeLimit="200" async="false" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
+>     <IncludeURL>py://dependency_script.py</IncludeURL>
+> </Script>
+> ```
+
+
 
 </td>
-<td valign="top">
+</tr>
+</table>
 
-Optional
+**`<ResourceURL>` element** 
 
-</td>
+
+<table>
+<tr>
+<th valign="top">
+
+Element
+
+</th>
+<th valign="top">
+
+Default
+
+</th>
+<th valign="top">
+
+Type
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
 </tr>
 <tr>
 <td valign="top">
 
-`ResourceURL`
+`ResourceURL` \(Required\)
 
 </td>
 <td valign="top">
 
-This attribute specifies the primary python file that executes in the API flow. You must store this python file under `/APIProxy/FileResources/` in the API proxy bundle.
+N/A
+
+</td>
+<td valign="top">
+
+N/A
+
+</td>
+<td valign="top">
+
+This attribute specifies the primary python file that executes in the API flow. You must store this python file under /APIProxy/FileResources/ in the API proxy bundle.
 
 The name of the primary python file must be of type ‘String’.
 
 > ### Note:  
 > The python libraries you add must be implemented using pure python language only.
 
+> ### Sample Code:  
+> ```
+> <Script timeLimit="200" async="false" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
+>     <ResourceURL>py://mainscript.py</ResourceURL>
+> </Script>
+> ```
 
 
-</td>
-<td valign="top">
-
-Yes
 
 </td>
 </tr>
@@ -169,20 +264,8 @@ This error occurs when the `<ResourceURL>` or the `<IncludeURL>` attributes refe
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-`NoResourceForURL`
-
-</td>
-<td valign="top">
-
-The `<ResourceURL>` and `<IncludeURL>` attributes refer to a Python Script file that doesn't exist.
-
-</td>
-</tr>
 </table>
 
 > ### Note:  
-> For added security API Management python runtime executes in a restricted mode, where import is not allowed for os, sys, and java.lang.
+> Security API Management python runtime executes in a restricted mode, where import is not allowed for os, sys, and java.lang.
 

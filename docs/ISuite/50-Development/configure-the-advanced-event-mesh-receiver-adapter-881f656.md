@@ -4,6 +4,16 @@
 
 The AdvancedEventMesh receiver adapter allows SAP Integration Suite to send messages to queues or topics in SAP Integration Suite, advanced event mesh.
 
+> ### Note:  
+> This adapter is available on SAP Business Accelerator Hub.
+> 
+> For more information, see [Consuming Integration Adapters from SAP Business Accelerator Hub](consuming-integration-adapters-from-sap-business-accelerator-hub-b9250fb.md).
+> 
+> The availability of the adapter is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://launchpad.support.sap.com/#/notes/2903776) and [3188446](https://launchpad.support.sap.com/#/notes/3188446).
+
+> ### Note:  
+> This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
+
 The adapter uses the Solace Message Format \(SMF\) message protocol.
 
 The *General* tab displays general information about the adapter itself.
@@ -142,6 +152,8 @@ The authentication mechanism to be used while connecting to advanced event mesh.
 
 -   *Client Certificate*
 
+-   *OAuth2*
+
 
 
 
@@ -150,7 +162,7 @@ The authentication mechanism to be used while connecting to advanced event mesh.
 <tr>
 <td valign="top">
 
-*Password Secure Alias \(Only when using \`Basic\` authentication\)* 
+*Password Secure Alias* \(Only when using *Basic* authentication\)
 
 </td>
 <td valign="top">
@@ -162,7 +174,7 @@ The alias which defines the client password used for authentication with the eve
 <tr>
 <td valign="top">
 
-*Keystore Alias \(Only when using \`Client Certificate\` authentication\)* 
+*Keystore Alias* \(Only when using *Client Certificate* authentication\)
 
 </td>
 <td valign="top">
@@ -174,9 +186,7 @@ The alias of the private Key Pair in the Integration Suite's Keystore.
 <tr>
 <td valign="top">
 
-*Private Key Alias*
-
-\(Only if for *Truststore Alias \(Only when using \`Client Certificate\` authentication\)*
+*Truststore Alias* \(Only when using *Client Certificate* authentication\)
 
 </td>
 <td valign="top">
@@ -188,7 +198,7 @@ The alias of the Certificate in the Integration Suite's Keystore. This is option
 <tr>
 <td valign="top">
 
-*OAuth2 Credential Type \(Only when using \`OAuth2\` authentication\)* 
+*OAuth2 Credential Type* \(Only when using *OAuth2* authentication\)
 
 </td>
 <td valign="top">
@@ -209,7 +219,7 @@ The type of OAuth2 credential type to be used. The available options are:
 <tr>
 <td valign="top">
 
-*Access Token Fetch/Refresh Interval \(in secs\) \(Only when using \`OAuth2\` authentication\)* 
+*Access Token Fetch/Refresh Interval \(in secs\)* \(Only when using *OAuth2* authentication\)
 
 </td>
 <td valign="top">
@@ -221,7 +231,7 @@ The interval in seconds for fetching the access token from the respective Integr
 <tr>
 <td valign="top">
 
-*OAuth2 Client Credentials Credential Name \(Only when using \`OAuth2\` authentication and \`OAuth2 Client Credentials\` OAuth2 credential type\)* 
+*OAuth2 Client Credentials Credential Name* \(Only when using *OAuth2* authentication and *OAuth2 Client Credentials* OAuth2 credential type\)
 
 </td>
 <td valign="top">
@@ -233,7 +243,21 @@ The alias of the deployed OAuth2 Client Credentials artifact in the Integrations
 <tr>
 <td valign="top">
 
-*OAUTH2 Access Token Secure Alias \(Only when using \`OAuth2\` authentication and \`OAuth2 - Custom\` OAuth2 credential type\)* 
+*OAuth2 Authorization Code Credential Name*
+
+\(Only when using *OAuth2* authentication and *OAuth2 Authorization Code* OAuth2 credential type\)
+
+</td>
+<td valign="top">
+
+The alias of the deployed *OAuth2 Authorization Code* artifact in the Integrations Suite's Credential Store. See [Deploying an OAuth2 Authorization Code](deploying-an-oauth2-authorization-code-081bfd7.md) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OAUTH2 Access Token Secure Alias* \(Only when using *OAuth2* authentication and *OAuth2 - Custom* OAuth2 credential type\)
 
 </td>
 <td valign="top">
@@ -245,7 +269,7 @@ The alias of OAuth2 Access token, stored as Secure Parameter.
 <tr>
 <td valign="top">
 
-*OAUTH2 Refresh Token Secure Alias \(Only when using \`OAuth2\` authentication and \`OAuth2 - Custom\` OAuth2 credential type\)* 
+*OAUTH2 Refresh Token Secure Alias* \(Only when using *OAuth2* authentication and *OAuth2 - Custom* OAuth2 credential type\)
 
 </td>
 <td valign="top">
@@ -257,7 +281,7 @@ The alias of the OAuth2 Refresh token, stored as Secure Parameter.
 <tr>
 <td valign="top">
 
-*OAUTH2 Client ID Secure Alias \(Only when using \`OAuth2\` authentication and \`OAuth2 - Custom\` OAuth2 credential type\)* 
+*OAUTH2 Client ID Secure Alias* \(Only when using *OAuth2* authentication and *OAuth2 - Custom* OAuth2 credential type\)
 
 </td>
 <td valign="top">
@@ -269,7 +293,7 @@ The alias of the OAuth2 Client ID, stored as Secure Parameter.
 <tr>
 <td valign="top">
 
-*OAUTH2 Refresh Token URL Secure Alias \(Only when using \`OAuth2\` authentication and \`OAuth2 - Custom\` OAuth2 credential type\)* 
+*OAUTH2 Refresh Token URL Secure Alias* \(Only when using *OAuth2* authentication and *OAuth2 - Custom* OAuth2 credential type\)
 
 </td>
 <td valign="top">
@@ -286,23 +310,17 @@ The alias of the OAuth2 Refresh token URL, stored as Secure Parameter.
 </td>
 <td valign="top">
 
-A map of key-value pairs to configure additional connection properties. See [JCSMP Properties](https://docs.solace.com/API-Developer-Online-Ref-Documentation/java/com/solacesystems/jcsmp/JCSMPProperties.html) and [JCSMP Channel Properties](https://docs.solace.com/API-Developer-Online-Ref-Documentation/java/com/solacesystems/jcsmp/JCSMPChannelProperties.html)
+A map of key-value pairs to configure additional connection properties. For more information, see the product documentation on Solace PubSub+ Platform.
 
 > ### Note:  
-> JCSMP channel property keys must be prepended by \`CLIENT\_CHANNEL\_PROPERTIES.\`. For example:
-> 
-> -   \`GENERATE\_SENDER\_ID\` \(regular JCSMP property\)
-> 
-> -   \`CLIENT\_CHANNEL\_PROPERTIES.ReconnectRetries\` \(JCSMP channel property\)
-> 
-> A map of key-value pairs to configure additional connection properties. See [JCSMP Properties](https://docs.solace.com/API-Developer-Online-Ref-Documentation/java/com/solacesystems/jcsmp/JCSMPProperties.html) and [JCSMP Channel Properties](https://docs.solace.com/API-Developer-Online-Ref-Documentation/java/com/solacesystems/jcsmp/JCSMPChannelProperties.html) 
+> JCSMP channel property keys must be prepended by `CLIENT_CHANNEL_PROPERTIES`.
 
-> ### Note:  
-> JCSMP channel property keys must be prepended by \`CLIENT\_CHANNEL\_PROPERTIES.\`. For example:
-> 
-> -   \`GENERATE\_SENDER\_ID\` \(regular JCSMP property\)
-> 
-> -   \`CLIENT\_CHANNEL\_PROPERTIES.ReconnectRetries\` \(JCSMP channel property\)
+For example:
+
+-   `GENERATE_SENDER_ID` \(regular JCSMP property\)
+
+-   `CLIENT_CHANNEL_PROPERTIES.ReconnectRetries` \(JCSMP channel property\)
+
 
 
 
@@ -371,8 +389,6 @@ The endpoint/destination type for the message being published. The available opt
 
 *Destination Name* 
 
-\(Only if for *Destination Type* the option *Exchange* is selected\)
-
 </td>
 <td valign="top">
 
@@ -411,7 +427,7 @@ The message type to be used for publishing the message to the broker. The availa
 <tr>
 <td valign="top">
 
-*Synchronous Request Processing Details* 
+*Convert Publish Into Synchronous Requestor* 
 
 </td>
 <td valign="top">
@@ -423,7 +439,7 @@ Enable if this is a Request in the Adapter Request/Reply pattern. This will send
 <tr>
 <td valign="top">
 
-*Reply Timeout \(ms\) \(Only when Convert Publish Into Synchronous Requestor? is selected\)* 
+*Reply Timeout \(ms\)* \(Only when *Convert Publish Into Synchronous Requestor* is selected\)
 
 </td>
 <td valign="top">
@@ -698,7 +714,7 @@ The value of the respective User Property's key/name. The value can be defined d
 
 *Message Headers*
 
-The adapter accepts headers on both Sender and Receiver side.
+The adapter accepts headers on both sender and receiver side.
 
-The Receiver can support the following headers on the message being published to the broker: ApplicationMessageId, ApplicationMessageType, CoS, CorrelationId, DeliveryCount, Destination, DestinationEndpointType, Expiration, HttpContentEncoding, HttpContentType, IsDiscardIndication, IsDMQEligible, IsElidingEligible, IsRedelivered, IsReplyMessage, Priority, ReceiveTimestamp, ReplicationGroupMessageId, ReplyToEndpointType, ReplyToDestination, SenderId, SenderTimestamp, SequenceNumber, TimeToLive, UserProperties. When setting up the integration flow, add them to the allowlist via Integration Flow -\> Runtime Configuration -\> Allowed Header\(s\), if required. See [Specify the Runtime Configuration](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/specify-runtime-configuration). Some of these headers can be defined at design-time via the *Message Properties* tab and the rest could be defined using a Content Modifier.
+The receiver can support the following headers on the message being published to the broker: ApplicationMessageId, ApplicationMessageType, CoS, CorrelationId, DeliveryCount, Destination, DestinationEndpointType, Expiration, HttpContentEncoding, HttpContentType, IsDiscardIndication, IsDMQEligible, IsElidingEligible, IsRedelivered, IsReplyMessage, Priority, ReceiveTimestamp, ReplicationGroupMessageId, ReplyToEndpointType, ReplyToDestination, SenderId, SenderTimestamp, SequenceNumber, TimeToLive, UserProperties. When setting up the integration flow, add them to the allowlist via Integration Flow -\> Runtime Configuration -\> Allowed Header\(s\), if required. See [Specify the Runtime Configuration](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/specify-runtime-configuration). Some of these headers can be defined at design-time via the *Message Properties* tab and the rest could be defined using a Content Modifier.
 

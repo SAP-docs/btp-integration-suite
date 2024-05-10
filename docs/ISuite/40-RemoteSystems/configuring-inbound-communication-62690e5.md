@@ -46,8 +46,6 @@ To enable communication with such a variety of systems, Cloud Integration suppor
 -   Connections to an external message broker using the Advanced Message Queuing Protocol \(AMQP\)
 
 
-For an overview of the communication protocols and the available adapters \(that are based on a certain protocol\), see [Connectivity (Adapters)](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/55325f2a722c4f67bb7752b369b09ff8.html "You have the option to specify which technical protocols should be used to connect a sender or a receiver to the tenant.") :arrow_upper_right:.
-
 > ### Note:  
 > The procedure to set up HTTP connections depends on whether you use Cloud Integration in the Cloud Foundry or in the Neo environment.
 
@@ -55,8 +53,6 @@ For an overview of the communication protocols and the available adapters \(that
 
 
 [Configuring Inbound HTTP Connections](configuring-inbound-http-connections-f568400.md "")
-
-[Configuring Inbound HTTP Connections, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/bd1dbc4ba360426ab2244a9ae441ded6.html "") :arrow_upper_right:
 
 [Setting Up Inbound SFTP Connections](setting-up-inbound-sftp-connections-d8fb958.md "Using the SFTP sender adapter, you connect an SAP Integration Suite tenant with an SFTP server so that the tenant can read data from the SFTP server (in a process referred to as polling).")
 

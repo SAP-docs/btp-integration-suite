@@ -21,13 +21,9 @@
 
 There are certain limitations while importing and consuming the function library object:
 
--   Function library object with user-defined functions of ExecutionType**ALL\_VALUES\_OF\_QUEUE** is not supported.
-
--   Function library object that has references to imported archives is not supported.
-
 -   The combination of the attributes `category` and `title` in a function library's method must be unique. No two methods within a function library class can have the same combination.
 
--   An imported function library object can be consumed in integration flows via message mapping flow steps and message mapping artifacts. For other artifacts like REST API or OData service, you can consume only via message mapping artifacts; not via message mapping flow steps.
+-   An imported function library object can be consumed in integration flows via message-mapping flow steps and message mapping artifacts. For other artifacts like REST API or OData service, you can consume only via message mapping artifacts; not via message-mapping flow steps.
 
 
 
@@ -48,12 +44,16 @@ There are certain limitations while importing and consuming the function library
 
 5.  Choose a function library object of your choice and choose *Select*.
 
-    The selected function library object gets imported to resource pane.
+    The selected function library object gets imported to the resource pane.
 
 6.  Choose the imported object.
 
     A java class containing the user-defined functions as methods opens up in edit mode.
 
 7.  Make necessary changes to the java class as per your requirement and choose *Save*.
+
+    For example, if you want to change the execution type, find the `executionType` key and change its value. The supported values for execution type are: `SINGLE_VALUE`, `ALL_VALUES_OF_QUEUE`, and `ALL_VALUES_OF_CONTEXT`.
+
+8.  Deploy the Function Libraries artifact before consumption.
 
 

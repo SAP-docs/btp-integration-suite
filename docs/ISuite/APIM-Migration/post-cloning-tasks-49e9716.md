@@ -143,7 +143,7 @@ Depending on the configurations you have on your source system, you must configu
 -   Cloud Connector setup
 -   Principal Propagation setup at the subaccount level
 -   Changes to Principal Propagation policy for on-premise connectivity
--   Migration of route service bindings. For more information, see [Migrating Route Service Binding](post-cloning-tasks-116d82c.md#loio116d82c83b6a4665a6f30f21a0e6e0d8__routebinding)
+-   Migration of route service bindings. For more information, see [Migrating Route Service Binding](post-cloning-tasks-49e9716.md#loio49e9716c499d44059907f18c0659cd69__routebinding)
 -   Any integrations with other systems \(like SAP Web IDE\)
 -   Any other configurations that you created for API Management at the subaccount level of your source system
 
@@ -174,7 +174,7 @@ Depending upon the location of your application, and your API Management service
 If your cloud foundry application and the API Management capability are on the same sub account, then use the following steps to migrate the route service binding:
 
 1.  Create an API Management, API portal service instance using the service plan, apim-as-route-service. For more information, see [Creating an API Management, API portal Service Instance](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__CreatingAPIMInstance)
-2.  Unbind your application from the API Management service instance on Cloud Foundry. For more information, see [Unbinding a Cloud Foundry Application from an API Management, API portal Service Instance](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__unbinding) 
+2.  Unbind your application from the API Management service instance on Cloud Foundry. For more information, see [Unbinding a Cloud Foundry Application from an API Management, API portal Service Instance](../unbinding-a-cloud-foundry-application-from-an-api-management-api-portal-service-instance-09fd33a.md) 
 3.  Bind your application to the API Management service instance on Cloud Foundry. For more information, see [Binding a Cloud Foundry Application to an API Management, API portal Service Instance](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__Binding)
 
 
@@ -193,7 +193,7 @@ If your Cloud Foundry application and the API Management capability are on diffe
 
     For more information, see [User Provided Service](https://docs.cloudfoundry.org/services/route-services.html#user-provided)
 
-2.  Unbind your application from the API Management service instance on Cloud Foundry. For more information, see [Unbinding a Cloud Foundry Application from an API Management, API portal Service Instance](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__unbinding) 
+2.  Unbind your application from the API Management service instance on Cloud Foundry. For more information, see [Unbinding a Cloud Foundry Application from an API Management, API portal Service Instance](../unbinding-a-cloud-foundry-application-from-an-api-management-api-portal-service-instance-09fd33a.md) 
 3.  Bind the User Provided Service created in the first step to the Cloud Foundry Application. For this binding, use the following command:
 
     > ### Sample Code:  

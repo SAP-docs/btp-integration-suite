@@ -168,7 +168,7 @@ To select the WSDL from a source, you have the following options:
 
 -   Select a WSDL from your file system.
 
--   Select a WSDL from your integration flow resources \(see: [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md)\).
+-   Select a WSDL from your integration flow resources \(see: [Manage Resources](manage-resources-b5968b2.md)\).
 
     In the *Resources* view, you can upload an individual WSDL file or an archive file \(file ending with `.zip`\) that contains multiple WSDLs or XSDs, or both. For example, you can upload a WSDL that contains an imported XSD referenced by an `xsd:import` statement. This means that if you want to upload a WSDL and dependent resources, you need to add the parent file along with its dependencies in a single archive \(`.zip` file\).
 

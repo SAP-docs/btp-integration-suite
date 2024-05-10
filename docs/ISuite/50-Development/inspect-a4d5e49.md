@@ -9,7 +9,7 @@ Each SAP Integration Suite tenant comes with certain physical resources that are
 You can inspect consumption of integration resources, identify those integration flows that contribute significantly to integration-resource exhaustion, and perform steps to resolve critical situations. Based on the insights, you can, for example, optimize integration flow design to overcome integration resource bottlenecks.
 
 > ### Note:  
-> To use this feature, role collection `MonitoringDataRead` needs to be assigned to your user \(see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)\).
+> To use this feature, role collection `MonitoringDataRead` needs to be assigned to your user \(see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)\).
 
 
 

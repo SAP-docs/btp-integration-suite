@@ -12,7 +12,7 @@ You can find the OData API on SAP Business Accelerator Hub at:
 
 A prerequisite for using the OData API is that your user is connected to Cloud Integration and that you have access to an OData client.
 
-Individual actions that you can perform using the OData API are protected by an authorization concept. To find out the required role for the task that you want to perform with the OData API, see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md).
+Individual actions that you can perform using the OData API are protected by an authorization concept. To find out the required role for the task that you want to perform with the OData API, see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md).
 
 The OData API covers the following aspects:
 

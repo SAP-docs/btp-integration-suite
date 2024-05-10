@@ -4,12 +4,12 @@
 
 # Working with Integration Suite Home
 
-Access the various features and resources available on the Integration Suite home page.
+Access the various features and resources available on theIntegration Suite home page.
 
 **Prerequisites**
 
 -   You’ve subscribed to the Integration Suite application. For more information, see [Subscribing and Configuring Initial Access to SAP Integration Suite](../10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
--   You have the *Integration\_Provisioner* role or any relevant Integration Suite capability-specific role assigned to your user. For more information, see [Configuring User Access](../configuring-user-access-2c6214a.md).
+-   You have the *Integration\_Provisioner* role or any relevant Integration Suite capability-specific role assigned to your user. For more information, see [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md).
 
 
 
@@ -41,13 +41,13 @@ This section displays artifacts you've worked with lately.
 This section, depending on the capabilities provisioned, displays information pertaining to:
 
 -   API usage and calls
--   Integration deployment status
+-   Integration deployment status \(in the case of EIC, this includes artifacts deployed across all active runtime locations\)
 
 
 
 ### Capabilities
 
-The *Capabilities* section displays the tiles of the capabilities activated for you. If you have the Integration\_Provisioner role, you'll be able to add new capabilities, and manage the existing capabilities. To know more about adding and activating capabilities, and providing users access to the functionality, see [Capabilities](../capabilities-e1c5b90.md) .
+The *Capabilities* section displays the tiles of the capabilities activated for you. If you have the Integration\_Provisioner role, you'll be able to add new capabilities, and manage the existing capabilities. To know more about adding and activating capabilities, and providing users access to the functionality, see [Capabilities of SAP Integration Suite](../capabilities-of-sap-integration-suite-e1c5b90.md) .
 
 Each capability tile also displays some quick links to allow you to start working with the capability.
 
@@ -451,7 +451,7 @@ Contextual help. You can activate contextual help by choosing <span class="SAP-i
 </td>
 <td valign="top">
 
-Built-in support. You can activate built-in support by choosing <span class="SAP-icons-V5"></span> Get Support
+Built-in support. You can activate built-in support by choosing<span class="SAP-icons-V5"></span> Get Support
 
 > ### Note:  
 > Built-in support is currently available for certain screens only.
@@ -481,7 +481,7 @@ Explore our environment, and navigate to the following portals:
 <tr>
 <td valign="top">
 
-<span class="SAP-icons-V5"></span> News and Announcements
+<span class="SAP-icons-V5"></span> News and Announcements
 
 </td>
 <td valign="top">
@@ -497,7 +497,7 @@ News and Announcement. Lets you know what is new in the Integration Suite.
 
 [Subscribing and Configuring Initial Access to SAP Integration Suite](../10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md "Subscribe to the SAP Integration Suitein SAP BTP cockpit and assign the Integration_Provisioner role to gain access.")
 
-[Configuring User Access](../configuring-user-access-2c6214a.md "Assign the required roles to users for accessing the individual capabilities.")
+[Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md "Assign the required roles and role collections to users for accessing the individual capabilities.")
 
 [Activating and Managing Capabilities](../activating-and-managing-capabilities-2ffb343.md "Activate capabilities for the SAP Integration Suite.")
 

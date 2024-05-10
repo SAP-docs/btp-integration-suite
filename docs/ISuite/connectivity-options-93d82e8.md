@@ -218,6 +218,46 @@ See: [AMQP Receiver for SAP Event Mesh](50-Development/amqp-receiver-for-sap-eve
 <tr>
 <td valign="top">
 
+*AMQP for SAP Integration Suite, advanced event mesh*
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to consume messages from SAP Integration Suite, advanced event mesh.
+
+Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
+
+Supported transport protocol: TCP
+
+See: [AMQ Sender for SAP Integration Suite, advanced event mesh](50-Development/amq-sender-for-sap-integration-suite-advanced-event-mesh-be1e496.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*AMQP for SAP Integration Suite, advanced event mesh*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to send messages to SAP Integration Suite, advanced event mesh.
+
+Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
+
+Supported transport protocol: TCP
+
+See: [AMQP Receiver for SAP Integration Suite, advanced event mesh](50-Development/amqp-receiver-for-sap-integration-suite-advanced-event-mesh-5f229c0.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *AMQP for Microsoft Azure Service Bus*
 
 Sender adapter
@@ -231,7 +271,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for Microsoft Azure Service Bus](50-Development/amqp-sender-for-microsoft-azure-service-bus-7384ac3.md)
+See: [Configure the AMQP Sender Adapter](50-Development/configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -251,7 +291,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for Microsoft Azure Service Bus](50-Development/amqp-receiver-for-microsoft-azure-service-bus-9c64d80.md)
+See: [Configure the AMQP Receiver Adapter](50-Development/configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -271,7 +311,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for Solace PubSub+](50-Development/amqp-sender-for-solace-pubsub-c9ab47d.md)
+See: [Configure the AMQP Sender Adapter](50-Development/configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -291,7 +331,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for Solace PubSub+](50-Development/amqp-receiver-for-solace-pubsub-19f18d8.md)
+See: [Configure the AMQP Receiver Adapter](50-Development/configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -311,7 +351,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP, WebSocket
 
-See: [AMQP Sender for Apache Qpid Broker-J](50-Development/amqp-sender-for-apache-qpid-broker-j-b4983f7.md)
+See: [Configure the AMQP Sender Adapter](50-Development/configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -331,7 +371,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP, WebSocket
 
-See: [AMQP Receiver for Apache Qpid Broker-J](50-Development/amqp-receiver-for-apache-qpid-broker-j-622aa1d.md)
+See: [Configure the AMQP Receiver Adapter](50-Development/configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -351,7 +391,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for Apache ActiveMQ 5 and Apache ActiveMQ Artemis](50-Development/amqp-sender-for-apache-activemq-5-and-apache-activemq-artemis-dc4c564.md)
+See: [Configure the AMQP Sender Adapter](50-Development/configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -371,7 +411,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for Apache ActiveMQ 5 and Apache ActiveMQ Artemis](50-Development/amqp-receiver-for-apache-activemq-5-and-apache-activemq-artemis-76c4dd3.md)
+See: [Configure the AMQP Receiver Adapter](50-Development/configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -391,7 +431,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for IBM MQ](50-Development/amqp-sender-for-ibm-mq-f6cc0e4.md)
+See: [Configure the AMQP Sender Adapter](50-Development/configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -411,7 +451,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for IBM MQ](50-Development/amqp-receiver-for-ibm-mq-990fa99.md)
+See: [Configure the AMQP Receiver Adapter](50-Development/configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>

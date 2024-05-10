@@ -41,7 +41,10 @@ Follow these simple steps to enable or disable all or a subset of available desi
 4.  Choose *Save*.
 
 
-You can enable or disable a design guideline anytime
+You can enable or disable a design guideline anytime.
+
+> ### Tip:  
+> As a tenant administrator, you can assign a dedicated Integration Lead to enable the applicable design guidelines. You can [define a custom role collection](https://help.sap.com/docs/btp/sap-business-technology-platform/define-role-collection?version=Cloud) in the SAP BTP cockpit and add the role `WorkspaceDesignGuidelinesConfigure` to it. Later, assign this role collection to a user.
 
 
 

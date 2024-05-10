@@ -10,6 +10,9 @@ Update the credentials you've used to establish a connection between the Integra
 
 ## Prerequisites
 
+> ### Caution:  
+> Effective June 2024, the classic design of the API business hub enterprise will be deprecated and will no longer be accessible. The new design of the API business hub enterprise will be set as your default design from March 2024. For more information, see [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
+
 -   Only the users who submitted the connection request and has the *AuthGroup.APIPortalRegistration* role assigned to themselves can edit the credentials.
 
 -   To update the Integration Suite API Management tenant access credentials, you must first generate it. To generate the credentials from the Integration Suite API Management tenant, you must have the *APIPortal. Administrator* role assigned to you.

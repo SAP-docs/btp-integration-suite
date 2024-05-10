@@ -44,7 +44,7 @@ Subscribe to free tier service plan.
         > ### Note:  
         > In the *New Instance or Subscription* dialog box, select the *free* as the plan.
 
-    6.  Assign role collection to access the tenant. See: [Configuring User Access](../configuring-user-access-2c6214a.md).
+    6.  Assign role collection to access the tenant. See: [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md).
 
 
 3.  Go to the Integration Suite home page and provision the capabilities. See: [Working with Integration Suite Home](../20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md).

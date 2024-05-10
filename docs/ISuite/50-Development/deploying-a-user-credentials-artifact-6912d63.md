@@ -25,7 +25,7 @@ To set up a connection using basic authentication or username token authenticati
 
     For more information on how to manage security artifacts for Edge Integration Cell, see [Manage Security for Edge Integration Cell](../manage-security-for-edge-integration-cell-1783cf8.md).
 
-3.  Click the *Security Material* tile in the *Manage Security* section.
+3.  Select the *Security Material* tile in the *Manage Security* section.
 
 4.  Choose *Add*.
 
@@ -55,7 +55,7 @@ To set up a connection using basic authentication or username token authenticati
     </td>
     <td valign="top">
     
-    A name for the artifact
+    A name for the artifact.
 
     The artifact name is used as an alias for the confidential data assigned by this parameter.
     
@@ -69,7 +69,7 @@ To set up a connection using basic authentication or username token authenticati
     </td>
     <td valign="top">
     
-    A description of the artifact \(optional\)
+    A description of the artifact \(optional\).
     
     </td>
     </tr>
@@ -104,7 +104,7 @@ To set up a connection using basic authentication or username token authenticati
     </td>
     <td valign="top">
     
-    The user that calls the receiver system
+    The user that calls the receiver system.
     
     </td>
     </tr>
@@ -116,7 +116,7 @@ To set up a connection using basic authentication or username token authenticati
     </td>
     <td valign="top">
     
-    Password against which the user has to be authenticated
+    Password against which the user has to be authenticated.
 
     This parameter has a maximum length of 255 characters.
     

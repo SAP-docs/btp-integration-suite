@@ -2,7 +2,7 @@
 
 # Configure
 
-From this section, you can create and configure API proxies, API providers, certificates, key-value maps, and policy templates.
+Create, and configure API proxies, API providers, certificates, key-value maps, and policy templates in SAP Integration Suite.
 
 SAP Integration Suite enables consumers to access relevant data directly in a secure manner. Selective data can be exposed while reducing the risk of security breaches. App devlopers access APIs created using SAP Integration Suite rather than app consuming services directly. SAP Integration Suite maps a publicly available HTTP endpoint to backend services and handles the security and authorizations required to protect, analyze, and monitor your services.
 

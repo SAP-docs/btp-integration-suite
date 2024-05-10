@@ -14,7 +14,7 @@ Use the integration-adapter artifact type to import custom integration adapter i
 
 -   You've exported integration adapter content, which is essentially an `*.esa` file in your local file system.
 
--   You’ve assigned the role template *WorkspacePackagesEdit* and *WorkspaceArtifactsDeploy* that are required to accomplish the various tasks when working with custom integration adapter. For more information, see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md).
+-   You’ve assigned the role template *WorkspacePackagesEdit* and *WorkspaceArtifactsDeploy* that are required to accomplish the various tasks when working with custom integration adapter. For more information, see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md).
 
 -   You’ve created an integration package. For more information, see [Create an Integration Package](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/748968a0f43d442f98d93a9a197cdbd2.html).
 

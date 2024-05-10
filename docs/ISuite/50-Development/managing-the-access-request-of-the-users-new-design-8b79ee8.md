@@ -36,6 +36,9 @@ You’re assigned the *AuthGroup.API.Admin* role.
 
 4.  Look for the request and choose *Accept Request* from the *Actions* coulmn. The application developer can now access the API business hub enterprise.
 
+    > ### Note:  
+    > The user will be added to all the IDPs configured in the sub-account, along with the *ApplicationDeveloper* role.
+
     If you don't wish to provide access to the user, choose *Decline Request* from the *Actions* coulmn.
 
     On accepting the request, an approval email is sent to the requester. On rejecting a request, you need to provide a reason for rejection; an email notification is sent to the requester.

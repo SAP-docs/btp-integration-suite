@@ -8,7 +8,150 @@ This topic provides information on patch releases for hotfixes, bugfixes, and co
 
 This topic covers patches for the following capabilities and features of SAP Integration Suite: Cloud Integration, Trading Partner Management, Integration Advisor, Integration Assessment, Migration Assessment, and Edge Integration Cell.
 
-The following patch release information covers the most recent changes made to the latest version of the software. For earlier patch release notes, see [Archive - Patch Release Notes for Cloud Integration](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f4b7126c524e4126b54fc7b4a34cadc0.html "This page contains a historical archive of all patch release notes for Cloud Integration.") :arrow_upper_right:.
+The following patch release information covers the most recent changes made to the latest version of the software.
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_pr1_hzx_3bc"/>
+
+## May 2024
+
+**Software Increment: 2403**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_blr_mdf_cbc"/>
+
+## April 2024
+
+**Software Increment: 2402**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.28
+
+</td>
+<td valign="top">
+
+There have been problems to load *Monitor* page. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.27
+
+</td>
+<td valign="top">
+
+There were some issues with the generation of key-pairs with X.509 certificates using elliptic curve algorithms \(for example, secp192k1, secp256k1, secp192r1, and others\). This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.26
+
+</td>
+<td valign="top">
+
+There has been a performance issue with the Inspect feature. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.25
+
+</td>
+<td valign="top">
+
+There was an issue with a potential negative impact on the deployment and undeployment of integration artifacts. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.23
+
+</td>
+<td valign="top">
+
+System performance has been improved and truncation of value mapping has been fixed by changing the way XML files are read.
+
+</td>
+</tr>
+</table>
 
 
 

@@ -11,7 +11,7 @@ When clicking the area outside the Integration Process shape, you can configure 
 
 [Define Error Configuration](define-error-configuration-77d0041.md "You can define how to handle errors when message processing fails at runtime.")
 
-[Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md "")
+[Manage Resources](manage-resources-b5968b2.md "")
 
 [Externalized Parameters View](externalized-parameters-view-27a0216.md "Use this view to compare the default and configured values of the integration flow. The advantage of this view is that you can see the consolidated view of all parameter values externalized.")
 

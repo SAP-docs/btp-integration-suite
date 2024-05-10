@@ -25,7 +25,7 @@ To discover, consume and monitor API from a centralized API catalog, set up the 
 
 ## Context
 
-Depending upon the license you hold, you can use the *API Management, API Business Hub Enterprise* stand-alone tile to subscribe to the application, or you can set up the API business hub enterprise capability from the **Integration Suite** launchpad. To set up API business hub enterprise from **Integration Suite**, see [Enable API Management Capability](enable-api-management-capability-f6eb433.md).
+Depending upon the license you hold, you can use the *API Management, API Business Hub Enterprise* stand-alone tile to subscribe to the application, or you can set up the API business hub enterprise capability from the **Integration Suite** launchpad. To set up API business hub enterprise from **Integration Suite**, see [Setting Up API Management Capability from Integration Suite](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/f6eb4332cd5144ef91f4a84cc614ba1c.html "You can provision the API Management capability from the Integration Suite launchpad.") :arrow_upper_right:.
 
 > ### Note:  
 > Ensure that you don’t have an instance of a starter plan created in the same subaccount where you plan to create an API business hub enterprise subscription. Also, note that the API Management capabilities from Integration Suite and API Management subscriptions using the stand-alone tile can’t coexist in the same subaccount.

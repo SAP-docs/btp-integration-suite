@@ -25,7 +25,7 @@ The role collection *APIPortal.Administrator* should be assigned to you.
     > ### Note:  
     > Ensure that the service URL you provide doesn’t redirect to a different URL. That is, check if the service URL you’re trying to access is temporarily or permanently moved to a different location. If it does so, then it’s recommended that you provide the new location \(redirected URL, if exists\) of the service. For more information about how to handle URL redirection, see [Handling URL Redirects in an API Proxy Using Policies](handling-url-redirects-in-an-api-proxy-using-policies-9e63c01.md).
 
-3.  Enter a name and description for the API.
+3.  Enter the *Name* and *Title*, and provide an introductory text in the *Short Text* field, for the API.
 
 4.  Optionally, enter a version for your API Proxy.
 
@@ -55,7 +55,7 @@ The role collection *APIPortal.Administrator* should be assigned to you.
     > ### Note:  
     > Ensure that the service URL you provide doesn’t redirect to a different URL. That is, check if the service URL you’re trying to access is temporarily or permanently moved to a different location. If it does so, then it’s recommended that you provide the new location \(redirected URL, if exists\) of the service. For more information about how to handle URL redirection, see [Handling URL Redirects in an API Proxy Using Policies](handling-url-redirects-in-an-api-proxy-using-policies-9e63c01.md).
 
-3.  Enter a name and description for the API.
+3.  Enter the *Name* and *Title*, and provide an introductory text in the *Short Text* field, for the API.
 
 4.  Optionally, enter a version for your API Proxy.
 

@@ -193,6 +193,10 @@ For more information, check out:
     </tr>
     </table>
     
+    If you use an external certificate, the certificate needs to be signed by a certification authority that is supported by the load balancer.
+
+    See: [Load Balancer Root Certificates Supported by SAP](load-balancer-root-certificates-supported-by-sap-4509f60.md)
+
 4.  Configure the sender system.
 
     1.  Make sure that the sender keystore contains the root certificate of the load balancer server certificate.

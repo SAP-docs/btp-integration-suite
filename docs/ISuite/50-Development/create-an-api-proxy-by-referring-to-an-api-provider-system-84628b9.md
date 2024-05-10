@@ -32,24 +32,24 @@ If you want to browse for an OData service for a provider that you’ve already 
 
     Also, since such APIs aren’t linked to any API provider, you can’t use the *Synchronize* option to update the API with the latest version that might be available in the backend.
 
-7.  Select a virtual host alias from the *Host Alias* dropdown.
+7.  The details of the API *Name*, *Title*, *API Base Path*, *API State*, *Host Alias* and *Service Type* are automatically populated.
 
-    The details of the API name, description, API base path, and service type are automatically populated.
+8.  Enter a short introductory text in the *Short Text* field.
 
-8.  Optionally, enter a *Version* for your API proxy.
+9.  Optionally, enter a *Version* for your API proxy.
 
     When you choose to version your API proxy, its name is appended with the version, and its basepath are prepended with the version. For example, if the version you enter is v1, the name is Name\_v1, and the basepath is /v1/SalesOrder. For more information, see [API Versioning](api-versioning-b3cda3b.md).
 
-9.  Choose *Create*.
+10. Choose *Create*.
 
-10. If you want to add SAP documentation annotations to the API documentation, choose *Yes* for *Documentation*.
+11. If you want to add SAP documentation annotations to the API documentation, choose *Yes* for *Documentation*.
 
     > ### Note:  
     > This field is only displayed if you’re fetching services from SAP Gateway Systems. For more information about SAP documentation annotations, see [Extended Support of Long Texts in the Metadata](http://help.sap.com/saphelp_gateway20sp10/helpdata/en/30/6e8c537c8fcc26e10000000a4450e5/frameset.htm).
 
-11. Choose *Create*.
+12. Choose *Create*.
 
-12. Complete the remaining steps by referring to the [Create an API Proxy](create-an-api-proxy-c0842d5.md) topic.
+13. Complete the remaining steps by referring to the [Create an API Proxy](create-an-api-proxy-c0842d5.md) topic.
 
 
 
@@ -78,18 +78,18 @@ If you want to create a proxy for an Open Connector instance for a provider that
 
     Also, since such APIs aren’t linked to any API provider, you can’t use the *Synchronize* option to update the API with the latest version that might be available in the backend.
 
-7.  Select a virtual host alias from the *Host Alias* dropdown.
-
-    The details of the API name, description, API base path, and service type are automatically populated.
+7.  The details of the API *Name*, *Title*, *API Base Path*, *API State*, *Host Alias* and *Service Type* are automatically populated.
 
     > ### Note:  
     > Name and basepath shouldn’t contain spaces.
 
-8.  Optionally, enter a *Version* for your API proxy.
+8.  Enter a short introductory text in the *Short Text* field.
+
+9.  Optionally, enter a *Version* for your API proxy.
 
     When you choose to version your API proxy, its name is appended with the version, and its basepath are prepended with the version. For example, if the version you enter is v1, the name is Name\_v1, and the basepath is /v1/SalesOrder. For more information, see [API Versioning](api-versioning-b3cda3b.md).
 
-9.  Choose *Create*.
+10. Choose *Create*.
 
     On creating the proxy, an encrypted key value map is created with the following name `apim.oc.instance.token` and key name `default`. Also, an open connector policy is attached to the incoming POST flow request of the target endpoint of the APIProxy.
 
@@ -106,8 +106,8 @@ If you want to create a proxy for an Open Connector instance for a provider that
     > 
     > -   On deleting the proxy, the encrypted key value map created above is also deleted. Further, while exporting the API, encrypted key value map created above isn’t exported with the API.
 
-10. Choose *Create*.
+11. Choose *Create*.
 
-11. Complete the remaining steps by referring to the [Create an API Proxy](create-an-api-proxy-c0842d5.md) topic.
+12. Complete the remaining steps by referring to the [Create an API Proxy](create-an-api-proxy-c0842d5.md) topic.
 
 

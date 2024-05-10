@@ -12,7 +12,7 @@ On this page, you have the option to adjust the visibility of the Graph navigato
 
 -   Assign the *AuthGroup.API.Admin* role.
 
-    To assign the role, see [User Roles in API Management \(New\)](../user-roles-in-api-management-new-911ca5a.md) .
+    To assign the role, see [Tasks and Corresponding Role Collections](../tasks-and-corresponding-role-collections-911ca5a.md) .
 
 -   Enable *Graph* in Integration Suite. For more information, see [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities?version=CLOUD) and [Configuring User Access](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-user-access?version=CLOUD).
 

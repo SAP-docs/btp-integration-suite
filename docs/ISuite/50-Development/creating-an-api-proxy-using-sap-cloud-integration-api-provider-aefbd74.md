@@ -90,7 +90,9 @@ Instead of directly consuming API services, application developers can access AP
 
         In the *Create API* dialog, the *API Details* consisting of *Name*, *Title*, *Description*, *Host Alias*, *API Base Path*, and *Service Type* are auto populated.
 
-    7.  Choose *Create*.
+    7.  Enter a short introductory text in the *Short Text* field.
+
+    8.  Choose *Create*.
 
         An API provider is auto-created with the name that is populated in the *Name* field of the *Create API* dialog. This auto-created API provider helps in storing the user credentials provided in the *Authentication* dialog and connects to the API proxy.
 

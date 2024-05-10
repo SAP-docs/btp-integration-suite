@@ -12,6 +12,9 @@ Create a request to connect the Integration Suite API Management tenant to the A
 
 ## Prerequisites
 
+> ### Caution:  
+> Effective June 2024, the classic design of the API business hub enterprise will be deprecated and will no longer be accessible. The new design of the API business hub enterprise will be set as your default design from March 2024. For more information, see [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
+
 -   To establish connections between the API business hub enterprise and Integration Suite API Management tenants, a Cloud Foundry space should be created in the sub-account from where the API business hub enterprise is hosted.
 
 -   To establish a connection between an Integration Suite API Management tenant and the centralised API business hub enterprise which is available in a different sub-account, you must ensure that the API business hub enterprise capability is not enabled in the same sub-account as that of the Integration Suite API Management tenant .

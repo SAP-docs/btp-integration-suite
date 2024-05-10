@@ -114,5 +114,5 @@ More information: [Decide on an Integration Technology](decide-on-an-integration
 
 Personas cover the tasks performed by specific roles associated with an integration project.
 
-More information: [Personas](../60-Security/personas-5df5af1.md)
+More information: [Personas for Integration Assessment](../60-Security/personas-for-integration-assessment-5df5af1.md)
 

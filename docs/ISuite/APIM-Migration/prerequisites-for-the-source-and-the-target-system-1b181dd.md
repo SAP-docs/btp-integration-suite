@@ -25,7 +25,7 @@ Both the source and the target system are the system that has your API Managemen
     The client id, client secret are used while filling in the details of the `apim-tct-input.json` file before running the Tenant Cloning Tool. See [Clone API Management Content](clone-api-management-content-7abd887.md).
 
     > ### Note:  
-    > During Cloud Foundry to Cloud Foundry migration, the default input.json shipped with Tenant Cloning Tool maven zip bundle has username and password as the source field. Please ensure that you change this to token URL, clientId, and client secret as mentioned in the sample configuration in [Clone API Management Content for Cloud Foundry to Cloud Foundry Migration](clone-api-management-content-for-cloud-foundry-to-cloud-foundry-migration-2e5d127.md).
+    > During Cloud Foundry to Cloud Foundry migration, the default input.json shipped with Tenant Cloning Tool maven zip bundle has username and password as the source field. Please ensure that you change this to token URL, clientId, and client secret as mentioned in the sample configuration in [Clone API Management Content between Cloud Foundry Environments](clone-api-management-content-between-cloud-foundry-environments-2e5d127.md).
 
 
 
@@ -105,5 +105,5 @@ Both the source and the target system are the system that has your API Managemen
 -   When you have API products protected by the custom roles permission in the source Cloud Foundry system, ensure that custom roles creation and assignments are done in the target Cloud Foundry environment before starting the migration.
 
 
-Once you complete these checks, you can start cloning the API Management content from the source to the target system. See [Clone API Management Content for Cloud Foundry to Cloud Foundry Migration](clone-api-management-content-for-cloud-foundry-to-cloud-foundry-migration-2e5d127.md).
+Once you complete these checks, you can start cloning the API Management content from the source to the target system. See [Clone API Management Content between Cloud Foundry Environments](clone-api-management-content-between-cloud-foundry-environments-2e5d127.md).
 

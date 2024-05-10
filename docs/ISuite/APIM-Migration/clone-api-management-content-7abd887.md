@@ -95,6 +95,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </th>
     <th valign="top">
 
+    Supported Values
+    
+    </th>
+    <th valign="top">
+
     Required/Optional
     
     </th>
@@ -132,6 +137,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Required
     
     </td>
@@ -161,6 +171,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -181,6 +196,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -219,6 +239,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Required
     
     </td>
@@ -248,6 +273,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -272,6 +302,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -291,7 +326,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
-    Supported values: "guid"
+     
     
     </td>
     <td valign="top">
@@ -302,6 +337,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+    Supported values: "guid"
     
     </td>
     <td valign="top">
@@ -358,6 +398,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Required
     
     </td>
@@ -385,6 +430,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Required
     
     </td>
@@ -403,6 +453,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -427,6 +482,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -460,6 +520,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -478,6 +543,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -504,6 +574,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -522,6 +597,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -563,6 +643,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Required
     
     </td>
@@ -581,6 +666,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -607,6 +697,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -627,6 +722,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -660,6 +760,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -678,6 +783,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -704,6 +814,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -722,6 +837,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -763,6 +883,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Required
     
     </td>
@@ -781,6 +906,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -807,6 +937,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -827,6 +962,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -860,6 +1000,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -878,6 +1023,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -904,6 +1054,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -922,6 +1077,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -948,7 +1108,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
-    Supported values: `true/false`
+     
     
     </td>
     <td valign="top">
@@ -959,6 +1119,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Boolean
+    
+    </td>
+    <td valign="top">
+    
+    Supported values: `true/false`
     
     </td>
     <td valign="top">
@@ -991,7 +1156,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
-    Supported values: `true/false`
+     
     
     </td>
     <td valign="top">
@@ -1002,6 +1167,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Boolean
+    
+    </td>
+    <td valign="top">
+    
+    Supported values: `true/false`
     
     </td>
     <td valign="top">
@@ -1033,7 +1203,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
-    Supported values: `true/false`
+     
     
     </td>
     <td valign="top">
@@ -1044,6 +1214,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Boolean
+    
+    </td>
+    <td valign="top">
+    
+    Supported values: `true/false`
     
     </td>
     <td valign="top">
@@ -1068,7 +1243,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
-    Supported values: `true/false`
+     
     
     </td>
     <td valign="top">
@@ -1079,6 +1254,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Boolean
+    
+    </td>
+    <td valign="top">
+    
+    Supported values: `true/false`
     
     </td>
     <td valign="top">
@@ -1108,7 +1288,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
-    Supported values: `"DEFAULT" | "SWITCHOVER`
+     
     
     </td>
     <td valign="top">
@@ -1119,6 +1299,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     string
+    
+    </td>
+    <td valign="top">
+    
+    Supported values: `"DEFAULT" | "SWITCHOVER`
     
     </td>
     <td valign="top">

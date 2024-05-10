@@ -12,7 +12,10 @@ Procedure to provide or reject access to an Application developer for using the 
 
 ## Prerequisites
 
-You’re assigned the *AuthGroup.API.Admin* role.
+The *AuthGroup.API.Admin* role must be assigned to you.
+
+> ### Caution:  
+> Effective June 2024, the classic design of the API business hub enterprise will be deprecated and will no longer be accessible. The new design of the API business hub enterprise will be set as your default design from March 2024. For more information, see [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
 
 > ### Note:  
 > This document describes the classic design of the API business hub enterprise. To view the documentation for the new design, see [Managing the Access Request of the Users \[New Design\]](managing-the-access-request-of-the-users-new-design-8b79ee8.md).

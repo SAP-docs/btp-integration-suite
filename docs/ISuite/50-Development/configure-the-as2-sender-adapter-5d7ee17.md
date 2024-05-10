@@ -109,7 +109,7 @@ The default value is `ESBMessaging.send`. This role authorizes a sender system t
 > ### Caution:  
 > The role name must not contain any umlaut characters \(for example, `ä`\).
 
-For more information on user roles, see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md) .
+For more information on user roles, see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md) .
 
 </td>
 </tr>

@@ -12,6 +12,9 @@ Revoke the access of an application developer.
 
 You are an API administrator and the role *AuthGroup.API.Admin* is assigned to your user.
 
+> ### Caution:  
+> Effective June 2024, the classic design of the API business hub enterprise will be deprecated and will no longer be accessible. The new design of the API business hub enterprise will be set as your default design from March 2024. For more information, see [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
+
 
 
 ## Context

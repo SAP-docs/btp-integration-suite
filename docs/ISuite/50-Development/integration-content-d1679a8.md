@@ -109,7 +109,7 @@ To authorize an API client to access the OData API, perform the steps as describ
 
 Perform the steps described at: [Setting Up Inbound HTTP Connections \(for API Clients\)](../40-RemoteSystems/setting-up-inbound-http-connections-for-api-clients-8db3d51.md) 
 
-Assign the role template as listed for the desired task \(for example, download deployed integration flow\) under [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md).
+Assign the role template as listed for the desired task \(for example, download deployed integration flow\) under [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md).
 
 To be able to maintain custom tags:
 

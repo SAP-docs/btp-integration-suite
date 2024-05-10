@@ -79,7 +79,7 @@ West Europe
 </td>
 <td valign="top">
 
-51.105.226.79, 20.107.78.224, 20.4.205.181
+51.105.226.79, 20.107.78.224, 20.4.205.181, 108.143.96.175, 172.201.40.15, 20.31.245.126
 
 </td>
 </tr>
@@ -239,7 +239,7 @@ East US
 </td>
 <td valign="top">
 
-20.42.28.32, 20.25.8.237
+20.42.28.32
 
 </td>
 </tr>
@@ -839,11 +839,11 @@ us-east-1
 
 [Configuring Additional Virtual Host in Cloud Foundry Environment](configuring-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "A virtual host allows you to host multiple domain names on the API Management capability within Integration Suite.")
 
-[User Roles in API Management \(New\)](user-roles-in-api-management-new-911ca5a.md "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.")
+[Tasks and Corresponding Role Collections](tasks-and-corresponding-role-collections-911ca5a.md "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.")
 
 [User Roles in API Management](user-roles-in-api-management-7010b58.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
 
 [Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "You can deactivate your API Management capability from Integration Suite to disable your account from the API Management service.")
 
-[](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/CLOUD/en-US/1e88d9cb4e90466cb0ab2c53e33b2e1c.html "") :arrow_upper_right:
+[Setting Up API Management with SAP Cloud Identity Services](setting-up-api-management-with-sap-cloud-identity-services-1e88d9c.md "SAP Cloud Platform allows customers to connect their SAP Cloud Identity Services with the BTP offerings.")
 

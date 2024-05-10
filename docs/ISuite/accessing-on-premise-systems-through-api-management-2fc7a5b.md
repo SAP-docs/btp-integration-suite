@@ -12,6 +12,9 @@ The *on-premise-connectivity* plan helps in achieving principal propagation whil
 
 Let us consider an use case where you want to pass the identity and security context of the logged-in user in the client application \(known as the principal\) from client application to on-premise backend. It ensures that the downstream services have the necessary information to authenticate the client without requiring the client to re-authenticate for each service. When a client makes a request to an API gateway, the gateway authenticates the user. It then propagates the principal information, such as the user's identity, to the backend services that the client's request needs to access. This allows the downstream services to make authorization decisions based on the user's details.
 
+> ### Note:  
+> The API Management platform incorporates the circuit breaker pattern to enhance the resilience of the back-end. For more information, see [Circuit Breaker](circuit-breaker-bd3c2d5.md).
+
 ![](images/On-prem_Connectivity_1067d7f.png)
 
 To accomplish principal propagation, you require a service key. This plan allows you to obtain the token by creating a service instance and generating a service key.

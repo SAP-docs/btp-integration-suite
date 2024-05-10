@@ -59,7 +59,7 @@ Here's how you can do it:
 
     If you can't find the *References* tab, choose the empty space in the integration flow editor. You will find the *References* tab at the end of the integration flow editor.
 
-2.  Choose *Add* and select a supported resource. See the supported sources here: [Manage Resources of an Integration Flow](../manage-resources-of-an-integration-flow-b5968b2.md).
+2.  Choose *Add* and select a supported resource. See the supported sources here: [Manage Resources](../manage-resources-b5968b2.md).
 
 3.  Choose *ES Repository* as the source.
 

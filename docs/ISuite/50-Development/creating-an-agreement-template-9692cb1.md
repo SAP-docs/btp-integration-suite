@@ -137,7 +137,7 @@ Follow the next procedure to create an agreement template.
     Select a contact person from the drop-down list.
 
     > ### Note:  
-    > You need to have the *Business Expert* to assign a contact person. To know more on assigning roles, see [Configuring User Access](../configuring-user-access-2c6214a.md).
+    > You need to have the *Business Expert* to assign a contact person. To know more on assigning roles, see [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md).
 
 
     
@@ -384,32 +384,34 @@ Follow the next procedure to create an agreement template.
 
 22. If you want to enable the payload validation, select the checkbox under *Validation Option*.
 
-23. Similarly, choose the *Communication Channel* on the receiver side and enter a value for the field *Alias for Communication*.
+23. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md)
 
-24. Select a value from the drop-down list for the field *Receiver Functional Acknowledgement Channel*.
+24. Similarly, choose the *Communication Channel* on the receiver side and enter a value for the field *Alias for Communication*.
+
+25. Select a value from the drop-down list for the field *Receiver Functional Acknowledgement Channel*.
 
     This field appears only for AS2 adapter.
 
-25. Select the *Interchange* shape on the receiver side.
+26. Select the *Interchange* shape on the receiver side.
 
-26. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
+27. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
 
     If you want to view the details of the MIG that you chose, you can use the link provided under the *Version* field.
 
-27. Enter an alias value for the field *Number Range Alias*.
+28. Enter an alias value for the field *Number Range Alias*.
 
     > ### Note:  
     > A number range is used to insert unique sequence numbers.
     > 
     > You need to configure this number range in the Cloud Integration tenant. To do so, see [Number Ranges](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b6e17fa17a70491da4a54216db298f84.html).
 
-28. Similar to the Sender, if you want to use custom integration flows for your Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
+29. Similar to the Sender, if you want to use custom integration flows for your Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
 
-29. Provide the address of your custom integration flow in the *Process Direct Address* field.
+30. Provide the address of your custom integration flow in the *Process Direct Address* field.
 
     This step is carried out using the ProcessDirect adapter. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
-30. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgement for the receiver.
+31. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgement for the receiver.
 
     > ### Note:  
     > This option is available only for the following type systems:
@@ -419,19 +421,23 @@ Follow the next procedure to create an agreement template.
 
     You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
 
-31. If you want to enable the payload validation, select the checkbox under *Validation Option*.
+32. If you want to enable the payload validation, select the checkbox under *Validation Option*.
 
-32. Select the *Mapping* step of the transaction.
+33. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
 
-33. Select a mapping guideline and its corresponding version using the value help for the *Mapping Guideline\(MAG\)* field.
+34. If your receiver type system is UN/EDIFACT, you might want to set a target encoding. To do so, under the field *Target Encoding*, select a value from the list.
 
-34. If you want to custom integration flow for the mapping processing, enable the checkbox for the field *Customized Mapping Processing*.
+35. Select the *Mapping* step of the transaction.
 
-35. Provide the address of your integration flow in the *Process Direct Address* field.
+36. Select a mapping guideline and its corresponding version using the value help for the *Mapping Guideline\(MAG\)* field.
 
-36. Choose anywhere outside the transaction and the common properties get displayed below the transaction. Choose the *Activity Parameters* tab if you want to add any paramaters to the template.
+37. If you want to custom integration flow for the mapping processing, enable the checkbox for the field *Customized Mapping Processing*.
 
-37. Choose *Add Parameters*. This will display the following options:
+38. Provide the address of your integration flow in the *Process Direct Address* field.
+
+39. Choose anywhere outside the transaction and the common properties get displayed below the transaction. Choose the *Activity Parameters* tab if you want to add any paramaters to the template.
+
+40. Choose *Add Parameters*. This will display the following options:
 
     -   *Extend from Company*: This option allows you to use the dynamic parameters from the company profile used in the agreement template. If you have created a *two-way* business transaction, you can choose between *Inbound* or *Outbound* parameters. Select a parameter from the list and choose *Save*.
 
@@ -443,11 +449,11 @@ Follow the next procedure to create an agreement template.
 
     -   *Create Activity Parameters*: You can also create your onw activity paramaters using this option. If you have created a *two-way* business transaction, you can choose between *Inbound* or *Outbound* parameters. Maintain the values of the fields *Parameter Key* and *Value* and choose *Save*.
 
-38. Navigate to the *Custom Search Attirbutes* tab if you want to add any custom search values which are picked up for the B2B monitoring.
+41. Navigate to the *Custom Search Attirbutes* tab if you want to add any custom search values which are picked up for the B2B monitoring.
 
     Before adding custom search attributes, you need to maintain them in the *Configuration Manager*. To know more, see [Configuration Manager](configuration-manager-7daf06c.md).
 
-39. Choose *Add* and maintain the following fields:
+42. Choose *Add* and maintain the following fields:
 
 
     <table>
@@ -525,7 +531,7 @@ Follow the next procedure to create an agreement template.
     </tr>
     </table>
     
-40. Choose *Save*.
+43. Choose *Save*.
 
 
 

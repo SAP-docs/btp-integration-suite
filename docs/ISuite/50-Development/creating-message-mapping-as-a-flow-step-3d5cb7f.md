@@ -145,6 +145,8 @@ The supported file types for source and target messages are:
     > 
     >     -   For OpenAPI Spec JSON, you can't use the *Duplicate Subtree* action for a node that is of the type array.
     > 
+    >     -   Outputs are not produced for elements that begin with the character "`@`” and their child elements.
+    > 
     > 
     >     Read the [blog](https://blogs.sap.com/2020/09/16/sap-cloud-integration-swagger-openapi-spec-json-in-message-mapping/) to know more about Swagger/OpenAPI Spec JSON in message mapping.
 
@@ -159,7 +161,7 @@ The supported file types for source and target messages are:
 
 2.  If you want to assign an existing mapping definition \(.mmap file\) which is fixed, do the following substeps:
 
-    1.  From [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md), add or refer existing mapping resources to your integration flow.
+    1.  From [Manage Resources](manage-resources-b5968b2.md), add or refer existing mapping resources to your integration flow.
 
     2.  In the property sheet of the message mapping step, choose the *Processing* tab.
 

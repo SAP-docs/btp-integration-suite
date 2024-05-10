@@ -61,5 +61,5 @@ The API Test Console allows you to test OData and REST-based services.
     -   *Cookies*: View the cookies.
 
 13. If you want to use the response body as an input request, choose *Use as Request* on the *Body \(Raw\)* tab.
-14. To view the transactions based on the testing activity that you did, choose *Launch API Viewer*. For more information on tracing API proxy, see [Debug an API Proxy](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/fb2c7aa34cdc443294a325ccb7876785.html "You debug an API proxy to troubleshoot and monitor them in SAP API Management, by probing the details of each step through the API proxy flow.") :arrow_upper_right:
+14. To view the transactions based on the testing activity that you did, choose *Launch API Viewer*. For more information on tracing API proxy, see [Debug an API Proxy](https://help.sap.com/viewer/4425026877144cc2b15505ed30215167/IAT/en-US/fb2c7aa34cdc443294a325ccb7876785.html "You debug an API proxy to troubleshoot and monitor them in SAP API Management, by probing the details of each step through the API proxy flow.") :arrow_upper_right:
 

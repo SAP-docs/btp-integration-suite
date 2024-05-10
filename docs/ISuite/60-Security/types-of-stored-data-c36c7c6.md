@@ -12,7 +12,7 @@ Such data needs to be considered as sensitive data as it can contain personal in
 
     Trading Partner profiles allows maintaining the contact person details for different trading partners. This information can be subject to local sensitive data regulations like GDPR. Ensure you handle such data according to the applicable laws. The data is owned, maintained & used by the organization owning the tenant. Apart from providing the infrastructure for maintaining such data, SAP does not have direct access to the data itself.
 
-    The read and write access of the contact person details is protected by appropriate roles. To know more, see [Persona](persona-d0c9a80.md).
+    The read and write access of the contact person details is protected by appropriate roles. To know more, see [Personas for Trading Partner Management](personas-for-trading-partner-management-d0c9a80.md).
 
 -   *Cloud Integration Runtime Configuration*
 

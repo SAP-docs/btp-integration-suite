@@ -14,6 +14,9 @@ As an API business hub enterprise administrator, you must approve or reject the 
 
 You’re assigned the *AuthGroup.API.Admin* role.
 
+> ### Caution:  
+> Effective June 2024, the classic design of the API business hub enterprise will be deprecated and will no longer be accessible. The new design of the API business hub enterprise will be set as your default design from March 2024. For more information, see [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
+
 > ### Note:  
 > This document describes the classic design of the API business hub enterprise. To view the documentation for the new design, see [Approve the Pending Connection Requests \[New Design\]](approve-the-pending-connection-requests-new-design-e296f80.md).
 
@@ -38,7 +41,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
 
 ## Results
 
-The connection has been set up between the Integration Suite API portal and the API business hub enterprise.
+The connection has been set up between the Integration Suite API Management tenant and the API business hub enterprise.
 
 **Related Information**  
 

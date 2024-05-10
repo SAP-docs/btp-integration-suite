@@ -39,6 +39,7 @@ API endpoints and subpaths are used to extract data from your SAP Process Orches
     -   `/rep/read/ext`
     -   `/dir/read/ext`
     -   `/rep/support/SimpleQuery`
+    -   `/rep/query/ext`
 
 -   For Message mapping: `/rep/query/`
 

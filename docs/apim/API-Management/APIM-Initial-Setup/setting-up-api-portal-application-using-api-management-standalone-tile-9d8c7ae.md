@@ -121,8 +121,6 @@ Once API Business Hub Enterprise is set up, navigate to :gear: and choose *Conne
 **Related Information**  
 
 
-[Enable API Management Capability](enable-api-management-capability-f6eb433.md "You can provision the API Management capability from the Integration Suite launchpad.")
-
 [Assign User Roles in API Management](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:
 
 [Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "You can deactivate your API Management capability from Integration Suite to disable your account from the API Management service.")

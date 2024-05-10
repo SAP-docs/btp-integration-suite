@@ -6,9 +6,6 @@ Inspect usage of the monitoring storage database for a given time period \(as se
 
 At runtime, monitoring data is written to a database. For each integration flow processed at runtime, a message processing log is written that contains information about the processing steps \(see [Message Processing Log](message-processing-log-b32f8cd.md)\).
 
-> ### Tip:  
-> Each SAP Integration Suite tenant is associated with a physical database that has a limited size. This database is used by certain steps during the runtime of integration flows.
-
 > ### Note:  
 > The *Time* filter element allows you to select the time interval \(options: *Past Day*, *Past Week*, *Past Month*, or *Custom*\).
 > 
@@ -18,9 +15,9 @@ At runtime, monitoring data is written to a database. For each integration flow 
 
 The usage of database storage is plotted in a bar graph against time.
 
-The bar height shows the data volume \(in MB\) used by monitoring data for a given time period \(as selected with the *Time* parameter\).
+The bar height shows the total data volume \(in MB\) stored in the monitoring database for a given time period \(as selected with the *Time* parameter\). For example, the value of a bar at the time period 11:00-12:00 does not represent the amount of monitoring data that was added during 11:00-12:00, but rather the total amount of monitoring data found in the database during 11:00-12:00.
 
-A green bullet represents the total count of message processing logs.
+A blue bullet represents the count of message processing logs. With the *Message Processing Status* parameter, you can filter the count of message processing logs by status. The default value is *All*. That means, the total count of message processing logs is displayed.
 
 The level of usage is indicated by the bar height and color \(from green for low usage, up to red for critical usage\). The thresholds are based on the assigned database capacity for monitoring storage consumption in the monitoring database.
 
@@ -46,23 +43,6 @@ Monitoring Storage Usage
 <tr>
 <td valign="top">
 
-Critical
-
-</td>
-<td valign="top">
-
-Red
-
-</td>
-<td valign="top">
-
-More than 90%
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Warning
 
 </td>
@@ -73,7 +53,7 @@ Orange
 </td>
 <td valign="top">
 
-Between 70% and 90%
+100% and more
 
 </td>
 </tr>
@@ -90,7 +70,7 @@ Green
 </td>
 <td valign="top">
 
-Less than 70%
+Less than 100%
 
 </td>
 </tr>
@@ -150,6 +130,8 @@ To do that, in the *Monitor* \> *Integrations* section, click a tile in the *Man
 See: [Setting Log Levels](setting-log-levels-4e6d3fc.md) 
 
 You can also check if there are integration flows showing many erroneous message processing logs. To filter for such integration flows, set the *Message Processing Status* filter to *Failed*. Check the respective integration flow and fix the root cause for the failures.
+
+You might see a critical status, even though there were not too many message processing logs in the past 24 hours. In this situation you have to extend the time selection to *Past Week* or even *Past Month*, to reveal the point of time when a large amount of message processing logs further in the past could have filled the monitoring storage to a critical level. Note also that monitoring data is removed only through an automated cleanup job, which removes monitoring data for which the retention period has expired \(30 days by default\).
 
 More information:
 

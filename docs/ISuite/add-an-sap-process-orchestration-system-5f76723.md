@@ -17,7 +17,7 @@ Establish a connection between your SAP Process Orchestration system and Migrati
     > ### Note:  
     > Do you prefer hands-on instructions? Check out the tutorial [Enable Migration Assessment Application](https://developers.sap.com/tutorials/migration-assessment-enablement.html).
 
--   You've set up the relevant access rights for yourself and your users as described in [Configuring User Access](configuring-user-access-2c6214a.md).
+-   You've set up the relevant access rights for yourself and your users as described in [Configuring User Access to SAP Integration Suite](configuring-user-access-to-sap-integration-suite-2c6214a.md).
 
 -   As API endpoints and subpaths are used to extract data from your SAP Process Orchestration system, make sure that the SAP Destination service can access the endpoints listed in the following. See [Destination Service](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/eeb0ec2318fb4dda87830a09ac7a02fa.html).
 
@@ -38,6 +38,7 @@ Establish a connection between your SAP Process Orchestration system and Migrati
         -   `/rep/read/ext`
         -   `/dir/read/ext`
         -   `/rep/support/SimpleQuery`
+        -   `/rep/query/ext`
 
     -   Message Monitoring
 

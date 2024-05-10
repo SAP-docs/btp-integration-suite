@@ -155,7 +155,7 @@ Service to view bills :
     
 -   You can also view the bill details in the SAP Integration Suite and API business hub enterprise. For more information see,
 
-    -   [View Bill Details in the API portal](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/2378110c9b23422aa9c7b56afa5c8515.html "View bill details in theAPI portalfor all the applications and products assigned to a particular developer.") :arrow_upper_right:
-    -   [View Bill Details in the API business hub enterprise](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/4ddac6740f344f8d8260bbf2db97d950.html "View the bill details in the API business hub enterprise for all the applications subscribed by a developer.") :arrow_upper_right:
+    -    <?sap-ot O2O class="- topic/xref " href="2378110c9b23422aa9c7b56afa5c8515.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/lze1710737251935/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/a4e2fb8e104240d7a4d95b08616c84ea.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+    -    <?sap-ot O2O class="- topic/xref " href="4ddac6740f344f8d8260bbf2db97d950.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/lze1710737251935/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/a4e2fb8e104240d7a4d95b08616c84ea.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 

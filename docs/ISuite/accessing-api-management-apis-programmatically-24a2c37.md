@@ -2,7 +2,7 @@
 
 # Accessing API Management APIs Programmatically
 
-The *apiportal-apiaccess* paln offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the [Business Accelerator Hub](https://api.sap.com/package/APIMgmt/odata).
+The *apiportal-apiaccess* plan offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the [Business Accelerator Hub](https://api.sap.com/package/APIMgmt/odata).
 
 
 
@@ -12,7 +12,7 @@ The *apiportal-apiaccess* paln offers external applications the ability to acces
 
 The *apiportal-apiaccess* plan allows you to programmatically import/export API proxies, create products, key value maps. It is especially useful when integrating API Management with a CI/CD process or when migrating from a Neo to Cloud Foundry environment using the migration tool.
 
-The API Access plan allows you to generate a service key by creating a service instance. By creating a service instance, you can generate a service key that includes the application url, clientId, clientSecret, and tokenUrl is used tohttps://api.sap.com/package/APIMgmt/odata generate a bearer token with the help of a REST Console. This Bearer Token, along with the application url and API endpoint are used to trigger the API. Therefore, bearer token acts like a key to access the APIs.
+The API Access plan allows you to generate a service key by creating a service instance. By creating a service instance, you can generate a service key that includes the application url, clientId, clientSecret, and tokenUrl is used to generate a bearer token with the help of a REST Console. This Bearer Token, along with the application url and API endpoint are used to trigger the API. Therefore, bearer token acts like a key to access the APIs.
 
 
 
@@ -24,7 +24,7 @@ The API Access plan allows you to generate a service key by creating a service i
 
     OR
 
-    You have subscribed to the standalone *API Management, API portal* tile in the Cloud Foundry environment. For more information, see [Set Up API Portal Application](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/29c281b4a002404eba44e91c6fad0d34.html "To create APIs, products, import policy templates, and view applications, set up the API portal application.") :arrow_upper_right:.
+    You have subscribed to the standalone *API Management, API portal* tile in the Cloud Foundry environment. For more information, see [Set Up API Portal Application](https://help.sap.com/viewer/4425026877144cc2b15505ed30215167/IAT/en-US/29c281b4a002404eba44e91c6fad0d34.html "To create APIs, products, import policy templates, and view applications, set up the API portal application.") :arrow_upper_right:.
 
 -   As a subaccount administrator, you additionally need the role of \(org member\) and *space developer* in the Cloud Foundry space in which the Integration Suite is provisioned.
 
@@ -404,7 +404,7 @@ In the REST Console:
     -   Now, to trigger an API, in the same REST Console, append the API endpoint \(obtained from the API portal APIs that are located in the SAP API Management package of API Business Hub\) to the *url*.
 
         > ### Note:  
-        > Currently, the *apiportal-apiaccess* plan allows you to access only the API portal APIs from the [SAP API Management package](https://api.sap.com/package/APIMgmt?section=Artifacts).
+        > Currently, the *apiportal-apiaccess* plan allows you to access only the API Management APIs from the [SAP API Management package](https://api.sap.com/package/APIMgmt?section=Artifacts).
 
     -   Choose `Bearer Token` as the `Authorization` type and paste the copied Bearer Token in the specified space.
     -   Include payloads, if needed.

@@ -94,7 +94,7 @@ Select *Client Certificate* if you want to authorize a user to send OData reques
 
 The user role that you're using for authorization. Choose *Select* to get a list of all the available user roles for your tenant and select the one that you want to use.
 
-For more information on user roles, see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md).
+For more information on user roles, see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md).
 
 </td>
 </tr>
@@ -159,14 +159,9 @@ To know more about using the adapter from external clients, see:
 
 -   [Use CSRF Protection](use-csrf-protection-a0765d5.md)
 
--   [Setting Up OAuth Inbound Authentication with Client Credentials Grant for API Clients](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/040d8110293d44b1bfaa75674530d395.html "The API is protected by basic authentication and OAuth.") :arrow_upper_right:
+-   [OAuth with Client Credentials Grant for API Clients](../40-RemoteSystems/oauth-with-client-credentials-grant-for-api-clients-20e26a8.md)
 
 
 > ### Note:  
 > Upon deployment, the endpoint of an integration artifact with OData Sender Adapter is derived from the name of the artifact.
-
-**Related Information**  
-
-
-[Setting Up Inbound HTTP Connections (Integration Flow Processing), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/778c7e7835ff46408aafe0d499720dc7.html "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.") :arrow_upper_right:
 

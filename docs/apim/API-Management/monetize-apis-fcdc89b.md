@@ -13,5 +13,5 @@ provides this feature through the following services:
 -   [Rate Plan Service](rate-plan-service-f4537ce.md)
 -   [Billing Service](billing-service-1e20fb5.md)
 
-If you were creating, updating, or reading an application using the APIs and not through the user interface, then you need to switch to Subscription entity from Application entity to use the Monetize feature. For more information see, [Create or Update or Read an Application using Subscription key](create-or-update-or-read-an-application-using-subscription-key-e2645b5.md) 
+If you were creating, updating, or reading an application using the APIs and not through the user interface, then you need to switch to Subscription entity from Application entity to use the Monetize feature. For more information, see [Create or Update or Read an Application using Subscription key](create-or-update-or-read-an-application-using-subscription-key-e2645b5.md) 
 

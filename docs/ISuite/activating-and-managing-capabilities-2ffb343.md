@@ -191,7 +191,7 @@ This topic describes how to add and activate relevant capabilities in Integratio
     > 
     > -   You can choose *Add Capabilities* to activate additional capabilities at a later point in time.
     > 
-    > -   After activation, assign the required roles to users for accessing the individual capabilities. See [Configuring User Access](configuring-user-access-2c6214a.md).
+    > -   After activation, assign the required roles to users for accessing the individual capabilities. See [Configuring User Access](configuring-user-access-to-sap-integration-suite-2c6214a.md).
 
 
 
@@ -200,11 +200,11 @@ This topic describes how to add and activate relevant capabilities in Integratio
 
 ## Results
 
--   Capabilities are displayed on the home page as tiles. To access the functionalities offered by these capabilities, users must have the required roles assigned. See [Configuring User Access](configuring-user-access-2c6214a.md).
+-   Capabilities are displayed on the home page as tiles. To access the functionalities offered by these capabilities, users must have the required roles assigned. See [Configuring User Access to SAP Integration Suite](configuring-user-access-to-sap-integration-suite-2c6214a.md).
 -   The API Management capability needs a few more configuration steps before activation. See [Additional Configurations for API Management](additional-configurations-for-api-management-5ac63ab.md).
 
 **Related Information**  
 
 
-[Centralized API business hub enterprise \[New Design\]](50-Development/centralized-api-business-hub-enterprise-new-design-38422de.md "The centralized API business hub enterprise is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
+[Centralized API business hub enterprise \[New Design\]](50-Development/centralized-api-business-hub-enterprise-new-design-38422de.md "The API business hub enterprise is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
 

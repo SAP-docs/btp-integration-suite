@@ -13,5 +13,5 @@ Migration Assessment helps you estimate the technical effort involved in the mig
 
 [Concepts](concepts-324507c.md "Get to know the most important concepts used in Migration Assessment.")
 
-[Tasks and Permissions](60-Security/tasks-and-permissions-2714db1.md "Learn about security-related topics like users and authorizations.")
+[Tasks and Permissions for Migration Assessment](60-Security/tasks-and-permissions-for-migration-assessment-2714db1.md "Learn about security-related topics like users and authorizations.")
 

@@ -22,7 +22,7 @@ Perform the steps described in: [Setting Up Inbound HTTP Connections \(for API C
 
 Assign the following role template:
 
-`MonitoringDataRead` \(see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)\)
+`MonitoringDataRead` \(see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)\)
 
 
 

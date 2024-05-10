@@ -101,7 +101,7 @@ More information: [Define Data Store Get Operations](define-data-store-get-opera
 </tr>
 </table>
 
-This component stores data on your tenant \(using SAP ASE Platform Edition\). Note that there is an overall DB space limit of 32 GB.
+This component stores data on your tenant using a database. Note that there's an overall database size limit of 32 GB.
 
 **Related Information**  
 

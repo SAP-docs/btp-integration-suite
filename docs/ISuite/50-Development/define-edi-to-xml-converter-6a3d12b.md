@@ -60,18 +60,6 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Name
-    
-    </td>
-    <td valign="top">
-    
-    Enter the name of the converter.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     Source Encoding
     
     </td>
@@ -89,7 +77,19 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     </td>
     <td valign="top">
     
-    Select encoding format for the outgoing payload. If you select 'Dynamic', you must define the value 'UTF-8' or 'ISO-8859-1' in SAP\_EDITOXML\_EDIFACT\_TARGET\_ENCODING exchange header.
+    Select encoding format for the outgoing payload. If you select *Dynamic*, you must define the value 'UTF-8' or 'ISO-8859-1' in SAP\_EDITOXML\_EDIFACT\_TARGET\_ENCODING exchange header.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Target Decimal Character
+    
+    </td>
+    <td valign="top">
+    
+    Select the decimal character of the converted message. If you select *Dynamic*, you must define the value 'dot' or 'fromIncomingPayload' in `SAP_EDITOXML_TARGET_DECIMAL_CHARACTER` header.
     
     </td>
     </tr>
@@ -113,7 +113,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     </td>
     <td valign="top">
     
-    If exchange headeryou select `Integration Flow` as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the conversion will take place.
+    If you select `Integration Flow` as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the conversion will take place.
 
     > ### Note:  
     > -   You can add XSD files to the integration flow. For more details, please refer to [Validating Message Payload against XML Schema](validating-message-payload-against-xml-schema-360dc70.md).

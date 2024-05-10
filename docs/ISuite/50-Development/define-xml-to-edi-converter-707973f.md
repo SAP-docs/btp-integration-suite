@@ -169,7 +169,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     <td valign="top">
     
-    Select this option if you want to specify which separators are to be used in the converted message. You can select the characters available in the dropdown list for each separator.
+    Select this option if you want to specify which separators are to be used in the converted message. You can select the characters available in the dropdown list for each separator type.
 
     > ### Note:  
     > You can also manually specify the custom separator.

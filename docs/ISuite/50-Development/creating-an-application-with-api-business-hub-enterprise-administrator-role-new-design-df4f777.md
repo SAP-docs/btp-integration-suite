@@ -10,7 +10,7 @@ With the API business hub enterprise administrator role you can create an applic
 
 ## Prerequisites
 
-You shoul have the *AuthGroup.API.Admin* role assigned to you. For more information on roles, see [User Roles in API Management \(New\)](../user-roles-in-api-management-new-911ca5a.md).
+You shoul have the *AuthGroup.API.Admin* role assigned to you. For more information on roles, see [Tasks and Corresponding Role Collections](../tasks-and-corresponding-role-collections-911ca5a.md).
 
 
 

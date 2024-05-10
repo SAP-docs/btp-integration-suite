@@ -141,9 +141,9 @@ You are updating a rate plan.
 **Related Information**  
 
 
-[Create a Rate Plan](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/cfe6a30600f148a39a7920dbc7fa1ab2.html "Create a rate plan using the API portal.") :arrow_upper_right:
+ <?sap-ot O2O class="- topic/link " href="cfe6a30600f148a39a7920dbc7fa1ab2.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/lze1710737251935/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5ef271f466034cf9b9c0653a9ea41f88.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
-[Update a Rate Plan](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/b8c1e6b68be74ead8700f7f8be9baa8b.html "Update a rate plan using the API portal.") :arrow_upper_right:
+ <?sap-ot O2O class="- topic/link " href="b8c1e6b68be74ead8700f7f8be9baa8b.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/lze1710737251935/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5ef271f466034cf9b9c0653a9ea41f88.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
-[Delete a Rate Plan](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/d4181ad418e4446e830c498d672204ff.html "Delete a rate plan using the API portal.") :arrow_upper_right:
+ <?sap-ot O2O class="- topic/link " href="d4181ad418e4446e830c498d672204ff.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/lze1710737251935/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5ef271f466034cf9b9c0653a9ea41f88.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 

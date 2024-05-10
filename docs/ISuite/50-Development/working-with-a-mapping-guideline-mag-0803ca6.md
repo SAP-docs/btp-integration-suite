@@ -31,7 +31,7 @@ There could be scenarios where there are significant differences between the Mes
 1.  Choose *Edit*.
 
     > ### Note:  
-    > Ensure that the MAG you are trying to edit is not locked by other users. The *Locked By* field displays the ID of ths user who's currently editing the MAG. You need to have admin rights to unlock it. To know more about the role, see [Assigning Users for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b5226b95e11b42cd9e257ae6d2b0ee0a.html "") :arrow_upper_right:
+    > Ensure that the MAG you are trying to edit is not locked by other users. The *Locked By* field displays the ID of ths user who's currently editing the MAG. You need to have admin rights to unlock it. To know more about the role, see [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md)
 
 2.  Choose *Mapping* tab to edit the mapping details of the MAG. For more information on mapping nodes, see [Mapping the Source and Target Nodes](mapping-the-source-and-target-nodes-9ea58d6.md) 
 

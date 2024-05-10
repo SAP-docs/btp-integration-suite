@@ -6,7 +6,7 @@ Integration Assessment involves orchestration across different personas.
 
 
 
-Creating a business solution request is the task of the business domain expert, see [Personas](../60-Security/personas-5df5af1.md).
+Creating a business solution request is the task of the business domain expert, see [Personas for Integration Assessment](../60-Security/personas-for-integration-assessment-5df5af1.md).
 
 Perform the following steps to create a business solution request.
 

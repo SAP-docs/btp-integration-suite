@@ -323,5 +323,5 @@ Choose between:
 
 [Operations Cockpit](operations-cockpit-ec0fc95.md "The Operations Cockpit is the central control point for operating edge integration cells and allows the Edge Integration Cell administrator to monitor and adjust system configurations and resources.")
 
-[Component Monitoring](component-monitoring-49f487e.md "Get information on the components.")
+[Component Monitor](component-monitor-49f487e.md "Get information on the components.")
 

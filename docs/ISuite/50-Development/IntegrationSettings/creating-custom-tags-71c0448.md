@@ -9,7 +9,7 @@ You can maintain custom attributes in your editable integration packages.
 You can tag your integration package using custom attributes that can be created under the *Settings* tab. The tags can help you identify and track your packages based on attributes, for example, such as Author, Line of Business etc.
 
 > ### Remember:  
-> You must have the tenant administrator role assigned to access the *Custom Tags* settings. See [Tasks and Permissions](../../60-Security/tasks-and-permissions-556d557.md).
+> You must have the tenant administrator role assigned to access the *Custom Tags* settings. See [Tasks and Permissions for Cloud Integration](../../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md).
 
 1.  Navigate to the *Settings* \(:gear:\) in the web UI and choose *Custom Tags*.
 

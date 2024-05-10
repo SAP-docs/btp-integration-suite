@@ -12,6 +12,9 @@ The *on-premise-connectivity* plan helps in achieving principal propagation whil
 
 Let us consider an use case where you want to pass the identity and security context of the logged-in user in the client application \(known as the principal\) from client application to on-premise backend. It ensures that the downstream services have the necessary information to authenticate the client without requiring the client to re-authenticate for each service. When a client makes a request to an API gateway, the gateway authenticates the user. It then propagates the principal information, such as the user's identity, to the backend services that the client's request needs to access. This allows the downstream services to make authorization decisions based on the user's details.
 
+> ### Note:  
+> The API Management platform incorporates the circuit breaker pattern to enhance the resilience of the back-end. For more information, see  <?sap-ot O2O class="- topic/xref " href="bd3c2d5be9ec4051ac6c0295173b4c22.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/2fc7a5b57541459abedfc26eb63f7590.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+
 ![](images/On-prem_Connectivity_1067d7f.png)
 
 To accomplish principal propagation, you require a service key. This plan allows you to obtain the token by creating a service instance and generating a service key.
@@ -310,7 +313,7 @@ You can use the credentials to establish:
 **Related Information**  
 
 
-[Accessing API Management APIs Programmatically](accessing-api-management-apis-programmatically-24a2c37.md "The apiportal-apiaccess paln offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the Business Accelerator Hub.")
+[Accessing API Management APIs Programmatically](accessing-api-management-apis-programmatically-24a2c37.md "The apiportal-apiaccess plan offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the Business Accelerator Hub.")
 
 [Accessing API business hub enterprise APIs Programmatically](accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md "The devportal-apiaccess plan allows you to access the API business hub enterprise APIs to programmatically onboard developers, create applications, and more.")
 

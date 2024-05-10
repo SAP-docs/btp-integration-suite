@@ -42,8 +42,6 @@ These are the basic constituents of the virtual platform:
 
 -   As an alternative deployment option, you can deploy integration content in the private cloud environment managed by the customer. Using this option, messages are processed on a runtime component in the customer landscape. This way of integration is also referred to as ground-to-ground integration. In technical terms, this runtime is realized as set of compute clusters managed by Kubernetes.
 
--   The customer-managed private cloud runtime can operate independent from SAP BTP for a dedicated time \(4 hours\). That means, if the connection between SAP BTP and the customer landscape is interrupted for up to 4 hours, the integration scenarios operated on the Edge runtime continue to operate. Like the integration content also the security-relevant artifacts \(for example, User Credentials artifacts or keystore entries\) are maintained by the SAP Integration Suite user interface on SAP BTP. To make sure that the correct artifact version is used on an Edge runtime, there’s a synchronization mechanism between the Edge runtime and SAP BTP. The synchronization is triggered by the Edge runtime on a regular basis \(pull pattern\).
-
 
 As consequence of this cluster design, the following main communication paths are active during the operation of an integration scenario:
 
@@ -192,8 +190,8 @@ Experts on the customer side access the infrastructure to design and deploy inte
 
 For more information, see:
 
--   [Persona](persona-2937e5c.md)
+-   [Personas for Cloud Integration](personas-for-cloud-integration-2937e5c.md)
 
--   [Tasks and Permissions](tasks-and-permissions-556d557.md)
+-   [Tasks and Permissions for Cloud Integration](tasks-and-permissions-for-cloud-integration-556d557.md)
 
 

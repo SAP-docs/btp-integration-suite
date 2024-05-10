@@ -4,7 +4,7 @@
 
 The library of type systems is a collection of message templates that are provided by agencies that maintain the B2B/A2A/B2G standards. Each of the type system is developed and maintained by the agency that owns it. For example, the type system *SAP IDoc* is developed and maintained by SAP SE. Similarly, the type system ASC X12 is maintained by ANSI ASC X12. This is a very good starting point for implementing your B2B integration provided if you and your business partners are using these industry standards for your business messages.
 
-A typical type system in the library is comprised of a collection of messages, and associated complex types, simple types, and code lists. Refer to [Terminology & Glossary for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/9c221b48799a4ce59367b0e3367f5a8f.html "") :arrow_upper_right: to get an understanding of Messages, Complex Types, Simple Types and Codelists.
+A typical type system in the library is comprised of a collection of messages, and associated complex types, simple types, and code lists. Refer to [Glossary for SAP Integration Advisor](../glossary-for-sap-integration-advisor-9c221b4.md) to get an understanding of Messages, Complex Types, Simple Types and Codelists.
 
 ![The graphic gives an overview of a typical type system in your library.](images/ICA_-_Library_of_Type_Systems_3ea131a.png)
 

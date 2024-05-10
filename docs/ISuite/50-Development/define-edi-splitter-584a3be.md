@@ -180,6 +180,24 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
+    Decimal Character
+    
+    </td>
+    <td valign="top">
+    
+    Choose the decimal character to be used during message validation:
+
+    -   Dot \(.\)
+    -   Dynamic: Define the value 'dot' or 'fromIncomingPayload' in `SAP_EDISPLITTER_DECIMAL_CHARACTER` header.
+    -   From Incoming Payload: The decimal characater is read from the incoming payload.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Transaction Mode
     
     </td>
@@ -498,15 +516,13 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </td>
     <td valign="top">
     
-    Validates an EDI interchange against the XSD schema for conversion. Deploy the schema by selecting it from an integration flow or by defining the location of the schema.
-
     Follow the steps here to add an `*.xsd` file to the integration flow:
 
-    1.  In the *EDI Schema Definition*, select *Integration Flow*.
+    1.  In the *EDI Schema Definition**Integration Flow*.
 
-    2.  Choose *Add* from the *Schemas* table.
+    2.  Choose *Add* from the from the choose the schema\). *Schemas* table.
 
-    3.  Choose *Select* to add an XML Schema file from the XSD folder found in the integration project.
+    3.  Choose *Select* choose the schema\). to add an XML Schema file from the XSD folder found in the integration project.
 
         > ### Note:  
         > -   During runtime only XSD’s from Integration Advisor \(IA\) are supported.
@@ -666,7 +682,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
     -   Dynamic
 
-        If selected, the encoding format is set dynamically at runtime using the header `SAP_EDISPLITTER_TRADACOMS_SOURCE_ENCODING` \(possible values: `UTF-8`, `ISO-8859-1`\).
+        If selected, the encoding format is set dynamically at runtime using the headernullnullnull`SAP_EDISPLITTER_TRADACOMS_SOURCE_ENCODING` \(possible values: `UTF-8`, `ISO-8859-1`\).
 
 
 
@@ -720,7 +736,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
     -   Integration Flow
 
-        If selected, the schema definition is specified from a resource file of the integration flow \(use the parameter *Schemas* to choose the schema\).
+        If selected, the schema definition is specified from a resource file of the integration flow \(use the parameter *Schemas*
 
 
 

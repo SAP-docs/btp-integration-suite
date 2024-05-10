@@ -374,7 +374,7 @@ See: [Client Certificate Authentication for API Clients](client-certificate-auth
 </td>
 <td valign="top" rowspan="5">
 
-Role as described at [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md) 
+Role as described at [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md) 
 
 </td>
 <td valign="top" rowspan="5">

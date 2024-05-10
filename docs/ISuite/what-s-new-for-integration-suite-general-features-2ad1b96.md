@@ -89,18 +89,12 @@ Integration Suite General Features
 </td>
 <td valign="top">
 
-Built-In Support
+New theme for the user interface.
 
 </td>
 <td valign="top">
 
-A new feature, referred as built-insupport, helps you find solutions to problems you may encounter when using the SAP Integration Suite.
-
-From SAP Integration Suite screens, you can search knowledge base articles that that can help you understand the application behaviour and guide you towards solution.
-
-You can also file an incident and receive assistance with recommended solutions through knowledge base articles or help recommendations.
-
-See: [Working with Integration Suite Home](https://help.sap.com/docs/integration-suite/sap-integration-suite/working-with-integration-suite-home?version=CLOUD)
+Our user interface nows follows a new Horizon theme. You will find some changes in the way the icons, buttons, and texts look. There is no change in the functionality of the various features.
 
 </td>
 <td valign="top">
@@ -135,12 +129,82 @@ SAP Business Technology Platform
 </td>
 <td valign="top">
 
-2024-04-06
+2024-05-10
 
 </td>
 <td valign="top">
 
-2024-04-06
+2024-05-10
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Suite General Features
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Built-In Support
+
+</td>
+<td valign="top">
+
+This new feature helps you find solutions to problems you may encounter when using SAP Integration Suite.
+
+From SAP Integration Suite, you can search knowledge base articles that can help you understand the application behavior and guide you towards a solution.
+
+The built-in support feature also lets you file incidents and assists you with recommended solutions through knowledge base articles or help recommendations.
+
+See: [Working with Integration Suite Home](20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2024-05-10
+
+</td>
+<td valign="top">
+
+2024-05-10
 
 </td>
 </tr>
@@ -306,7 +370,7 @@ Graph
 </td>
 <td valign="top">
 
-If you've activated Graph as a capability of API Management, and have assigned the suitable roles to your user, you can access Graph by navigating from *Design* \> *Graph*. For more information, see [What is Graph?](https://help.sap.com/docs/graph) 
+If you've activated Graph as a capability of API Management, and have assigned the suitable roles to your user, you can access Graph by navigating from *Design* \> *Graph*. For more information, see [What is Graph?](https://help.sap.com/docs/graph)
 
 </td>
 <td valign="top">

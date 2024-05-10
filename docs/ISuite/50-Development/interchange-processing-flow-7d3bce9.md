@@ -6,9 +6,9 @@
 
 This integration flow transforms the message sent by the sending partner to the structure expected by the receiving partner.
 
-Follow the procedure below to configure the integration flow
+Follow the procedure below to configure the integration flow:
 
-1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 2 - Interchange Processing Flow* and select *Configure*
+1.  In the *Artifacts* tab, choose *Action* <span class="SAP-icons-V5"></span> of the integration flow *Step 2 - Interchange Processing Flow* and select *Configure*.
 
 2.  Under the *Sender* tab, maintain the following parameter.
 
@@ -57,7 +57,7 @@ Follow the procedure below to configure the integration flow
     </tr>
     </table>
     
-3.  Choose the *Receiver* tab and maintain the following parameter
+3.  Choose the *Receiver* tab and maintain the following parameter.
 
     **Receiver Parameter**
 

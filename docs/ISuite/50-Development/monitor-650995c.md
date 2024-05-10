@@ -57,7 +57,7 @@ APIs
 </td>
 <td valign="top">
 
-[Analyze APIs](analyze-apis-7712c61.md)
+[Analyze API Proxies](analyze-api-proxies-7712c61.md)
 
 </td>
 </tr>

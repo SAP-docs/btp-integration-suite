@@ -53,7 +53,7 @@ In detail, perform the following steps.
 
     Assign a role that grants permission to access certain data through the API. In our example, we want to access monitoring data through the API, so we select the predefined *MonitoringDataRead* role.
 
-    For more information about the available predefined roles, see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md).
+    For more information about the available predefined roles, see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md).
 
     > ### Tip:  
     > Make sure you select a role with an application identifier that starts with `it!`.
