@@ -145,8 +145,6 @@ The supported file types for source and target messages are:
     > 
     >     -   For OpenAPI Spec JSON, you can't use the *Duplicate Subtree* action for a node that is of the type array.
     > 
-    >     -   Outputs are not produced for elements that begin with the character "`@`” and their child elements.
-    > 
     > 
     >     Read the [blog](https://blogs.sap.com/2020/09/16/sap-cloud-integration-swagger-openapi-spec-json-in-message-mapping/) to know more about Swagger/OpenAPI Spec JSON in message mapping.
 

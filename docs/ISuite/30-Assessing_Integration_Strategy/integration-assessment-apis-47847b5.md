@@ -1,8 +1,10 @@
 <!-- loio47847b519d0849a4b9f91f60690d55b1 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Integration Assessment APIs
 
-The following are the list of APIs used in Integration Assessment. For more information, see the [API reference on the SAP Business Accelerator Hub](https://api.sap.com/package/SAPIntegrationAssessment/overview).
+The following is the list of APIs used in Integration Assessment. For more information, see the [API Reference on SAP Business Accelerator Hub](https://hub.sap.com/package/SAPIntegrationAssessment/overview). You can also navigate to the API Reference from the Integration Assessment application. Select <span class="SAP-icons-V5"></span> User Actions from the top toolbar, then choose *API Reference*. Additionally, navigate to the Business Hub by selecting <span class="SAP-icons-V5"></span> Explore our Ecosystem, then choosing *SAP Business Accelerator Hub*.
 
 
 
@@ -64,7 +66,7 @@ Use Case Pattern
 </td>
 <td valign="top">
 
-Integration use case patterns refine the integration styles identified for your organization's integration strategy.
+Integration use-case patterns refine the integration styles identified for your organization's integration strategy.
 
 </td>
 </tr>
@@ -76,7 +78,7 @@ Integration Pattern
 </td>
 <td valign="top">
 
-To derive integration guidelines for complex landscapes, Integration patterns combines integration domains and integration styles to derive integration guidelines.
+To derive integration guidelines for complex landscapes, Integration patterns combine integration domains and integration styles to derive integration guidelines.
 
 You can do an assessment of your integration architecture by adding the integration patterns that are relevant to your organization or that you might want to further evaluate.
 
@@ -90,7 +92,7 @@ Key Characteristic
 </td>
 <td valign="top">
 
-Key Characteristic help enterprise architects and integration architects to map integration styles to relevant capabilities of integration technologies.
+Key Characteristic helps enterprise architects and integration architects to map integration styles to relevant capabilities of integration technologies.
 
 </td>
 </tr>
@@ -102,7 +104,7 @@ Key Characteristic Group
 </td>
 <td valign="top">
 
-Key characteristics group, groups key characteristics and offers an additional layer for structuring for the key characteristcs.
+Key characteristics group groups key characteristics and offers an additional layer for structuring for the key characteristics.
 
 </td>
 </tr>
@@ -284,7 +286,7 @@ Integration Flow
 </td>
 <td valign="top">
 
-An integration flow represents the overall integration of one or more application.
+An integration flow represents the overall integration of one or more applications.
 
 </td>
 </tr>
@@ -331,5 +333,5 @@ This entity describes the decision for a certain technology instance for a speci
 
 [Creating Service Instance and Service Key to enable API calling](creating-service-instance-and-service-key-to-enable-api-calling-749897f.md "")
 
-[https://api.sap.com/api/EntitiesAPI/resource/Domain](https://api.sap.com/api/EntitiesAPI/resource/Domain)
+[Integration Assessment API Reference on SAP Business Accelerator Hub](https://hub.sap.com/package/SAPIntegrationAssessment/overview)
 

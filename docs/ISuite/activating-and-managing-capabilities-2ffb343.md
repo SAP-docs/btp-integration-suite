@@ -13,7 +13,7 @@ Activate capabilities for the SAP Integration Suite.
 ## Prerequisites
 
 -   You have access to the Integration Suite home page. See [Working with Integration Suite Home](20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md).
--   You have the Integration\_Provisioner role assigned to your user. See [Subscribing and Configuring Initial Access to SAP Integration Suite](10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
+-   You have the Integration\_Provisioner role collection assigned to your user. See [Subscribing and Configuring Initial Access to SAP Integration Suite](10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
 
 
 
@@ -28,6 +28,8 @@ This topic describes how to add and activate relevant capabilities in Integratio
 -   API Management
 
     -   Graph
+
+-   Event Mesh
 
 -   Open Connectors
 
@@ -118,6 +120,18 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <tr>
     <td valign="top">
     
+    Event Mesh 
+    
+    </td>
+    <td valign="top">
+    
+    *Manage Business Events* 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Open Connectors
     
     </td>
@@ -187,11 +201,9 @@ This topic describes how to add and activate relevant capabilities in Integratio
     > ### Note:  
     > -   If you face any issues during activation or the activation fails, then refer SAP Note [2904202](https://me.sap.com/notes/2904202) and proceed accordingly.
     > 
-    > -   After activating Cloud Integration, create a service broker instance. See [Creating Service Instances](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/883f025c30a64373b4e4102238a39fd4.html).
+    > -   You can choose *Manage Capabilities* to activate additional capabilities at a later point in time.
     > 
-    > -   You can choose *Add Capabilities* to activate additional capabilities at a later point in time.
-    > 
-    > -   After activation, assign the required roles to users for accessing the individual capabilities. See [Configuring User Access](configuring-user-access-to-sap-integration-suite-2c6214a.md).
+    > -   After activation, assign the required role collections to users for accessing the individual capabilities. See [Configuring User Access](configuring-user-access-to-sap-integration-suite-2c6214a.md).
 
 
 
@@ -200,11 +212,15 @@ This topic describes how to add and activate relevant capabilities in Integratio
 
 ## Results
 
--   Capabilities are displayed on the home page as tiles. To access the functionalities offered by these capabilities, users must have the required roles assigned. See [Configuring User Access to SAP Integration Suite](configuring-user-access-to-sap-integration-suite-2c6214a.md).
+-   Capabilities are displayed on the home page as tiles. To access the functionalities offered by these capabilities, users must have the required role collections assigned. See [Configuring User Access to SAP Integration Suite](configuring-user-access-to-sap-integration-suite-2c6214a.md).
+-   After activating Cloud Integration, create a service broker instance. See [Creating Service Instances](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/883f025c30a64373b4e4102238a39fd4.html).
+
 -   The API Management capability needs a few more configuration steps before activation. See [Additional Configurations for API Management](additional-configurations-for-api-management-5ac63ab.md).
+-   The Event Mesh capability needs an additional configuration step before usage. See: [Initiating the Message Broker](initiating-the-message-broker-61eb5dd.md).
+
 
 **Related Information**  
 
 
-[Centralized API business hub enterprise \[New Design\]](50-Development/centralized-api-business-hub-enterprise-new-design-38422de.md "The API business hub enterprise is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
+[Centralized API business hub enterprise](centralized-api-business-hub-enterprise-38422de.md "The API business hub enterprise is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
 

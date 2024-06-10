@@ -40,7 +40,7 @@ You've configured a source system as described in [Add an SAP Process Orchestrat
 
         In the list of integration scenarios that were retrieved from the system, all are selected by default. Customize the list by deselecting and selecting integration scenarios to fit your needs. You can use the search function to find specific integration scenarios.
 
-        ![When creating a new data extraction, you can choose between Complete Extraction and Custom Extraction. If you choose Custom Extraction, a list of all integration scenarios available in the selected system is retrieved. Select and deselect integration scenarios in this list to customize the selection of integration scenarios you want to extract.](images/MigAss_CreateDataExtraction_Custom_SUI_1118568.png)
+        ![When creating a new data extraction, you can choose between Complete Extraction and Custom Extraction. If you choose Custom Extraction, a list of all integration scenarios available in the selected system is retrieved. Select and deselect integration scenarios in this list to customize the selection of integration scenarios you want to extract.](images/IntegrationSuite_PIMAS_Request_DataExtraction_CustomExtraction_87f8c8d.png)
 
 
 5.  Choose *Create*.

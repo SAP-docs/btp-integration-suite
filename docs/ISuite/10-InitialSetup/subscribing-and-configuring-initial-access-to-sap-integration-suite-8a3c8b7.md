@@ -24,6 +24,9 @@ You’ve created a subaccount in your assigned global account using the SAP BTP 
 
 3.  In the *New Instance or Subscription* dialog box, select the *Plan* and choose *Create*. Wait for the subscription to complete successfully.
 
+    > ### Note:  
+    > For different plans see the SAP Note [2903776](https://help.sap.com/docs/link-disclaimer?site=https://me.sap.com/notes/2903776).
+
     Check the status of the submission in the subscriptions section on the *Instances and Subscriptions* page. If the subscription is successful, you notice the status of the *Integration Suite* shown as *Subscribed*.
 
 4.  You must have specific roles to access theIntegration Suite. To assign these roles navigate to *Security* \> *Users*.

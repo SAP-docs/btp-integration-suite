@@ -170,6 +170,9 @@ In addition to encrypting the message content, you can also sign the content to 
 
         Signature algorithms: MD5/RSA, RIPEMD128/RSA, RIPEMD160/RSA, RIPEMD256/RSA, SHA/RSA, SHA224/RSA, SHA256/RSA, SHA384/RSA, SHA512/RSA.
 
+        > ### Caution:  
+        > Algorithms starting with SHA1, MD2, or MD5 are still supported for compatibility reasons, but they no longer meet today's security requirements. Therefore, we recommend using stronger algorithms where possible. Check with your security experts or authorities like NIST for more detailed security recommendations.
+
     -   *Include Certificates*
 
         If you activate this option \(value `true`\), the certificate chain corresponding to the private key will be added to the SignedAndEnvelopedData element.

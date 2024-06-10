@@ -96,4 +96,33 @@ Follow these general guidelines when using the *Script* step.
 
     To learn what to do instead of using this method, see SAP note [3289679](https://me.sap.com/notes/3289679).
 
+-   Define your script’s import statement so that it consumes native APIs from one of the following APIs:
+
+    -   SDK Groovy API
+
+        See:
+
+        [SDK API](sdk-api-c5c7933.md)
+
+        [Groovy SDK Java doc](https://help.sap.com/doc/a56f52e1a58e4e2bac7f7adbf45b2e26/Cloud/en-US/index.html)
+
+    -   Native Groovy APIs
+
+        See: [Groovy JDK API Documentation](https://groovy-lang.org/gdk.html)
+
+        In particular, all supported APIs up to Groovy runtime version 2.4.21 are supported.
+
+        See also: [Define a Local Script Step](define-a-local-script-step-03b32eb.md)
+
+    -   APIs from the Cloud Integration stack, that means, jar files that are bundled in the Cloud Integration software assembly
+
+
+    We don’t recommend to consume external code \(uploaded as integration flow resource\). If you do so, a warning is raised.
+
+-   Use CodeNarc to analyze your Groovy code for defects, bad practices, inconsistencies, and style issues, for example \(static check\).
+
+    Supported CodeNarc version: 3.4.0
+
+    See: [CodeNarc](https://github.com/CodeNarc/CodeNarc)
+
 

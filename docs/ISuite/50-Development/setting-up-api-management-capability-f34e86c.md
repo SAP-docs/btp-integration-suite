@@ -92,7 +92,7 @@ To publish the Integration Suite API portal content on the **API business hub en
 > ### Note:  
 > If you've activated API business hub enterprise while enabling API Management capability, the connection to API business hub enterprise is established automatically. You can test the connection using *Test Connection*.
 > 
-> If you want to connect Integration Suite to a centralized API business hub enterprise, you must create a connection request. For more information, see [Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](create-a-connection-request-for-the-centralized-api-business-hub-enterprise-classic-desig-02f7877.md) or [Create a Connection Request for the Centralized API business hub enterprise \[New Design\]](create-a-connection-request-for-the-centralized-api-business-hub-enterprise-new-design-c7bda8c.md).
+> If you want to connect Integration Suite to a centralized API business hub enterprise, you must create a connection request. For more information, see [Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/02f7877360a64c6b8d853fed9b2d9cc6.html "To publish the API portal content on the API business hub enterprise, you must create a request to connect the API portal to the API business hub enterprise.") :arrow_upper_right: or [Create a Connection Request for the Centralized API business hub enterprise](../create-a-connection-request-for-the-centralized-api-business-hub-enterprise-c7bda8c.md).
 
 > ### Note:  
 > You can navigate to the **API business hub enterprise** by choosing the <span class="SAP-icons-V5"></span> Explore our Ecosystem icon on the header bar.

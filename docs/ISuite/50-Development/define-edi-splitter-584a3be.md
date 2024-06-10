@@ -364,7 +364,28 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Number range
+    Unique Interchange Number
+    
+    </td>
+    <td valign="top">
+    
+    Following are the options to generate a unique interchange number while generating a acknowledgment message:
+
+    -   *Required*: EDI Splitter can generate a unique interchange number, which is the incremented value from the number range object and does not depend on the interchange number of the incoming payload.
+    -   *Not Required*: Does not generate a unique interchange number.
+    -   *Dynamic*: You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_UNIQUE_INTERCHANGE_NUMBER`. The values for the headers can be one of the following:
+        -   `required`
+        -   `notRequired`
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Number Range
     
     </td>
     <td valign="top">
@@ -603,6 +624,27 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
     -   `useFromEDIMessage`
     -   `numberRange`
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Unique Interchange Number
+    
+    </td>
+    <td valign="top">
+    
+    Following are the options to generate a unique interchange number while generating a acknowledgment message:
+
+    -   *Required*: EDI Splitter can generate a unique interchange number, which is the incremented value from the number range object and does not depend on the interchange number of the incoming payload.
+    -   *Not Required*: Does not generate a unique interchange number.
+    -   *Dynamic*: You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_UNIQUE_INTERCHANGE_NUMBER`. The values for the headers can be one of the following:
+        -   `required`
+        -   `notRequired`
+
 
 
     

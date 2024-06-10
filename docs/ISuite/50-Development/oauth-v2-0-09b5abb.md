@@ -925,59 +925,6 @@ fault.name = "invalid\_request"
 </tr>
 </table>
 
-
-
-<a name="loio09b5abbd3d714ce29ee2366254261170__section_uls_j15_54b"/>
-
-## Non-RFC-compliant Behavior
-
-The OAuthV2 policy returns a token response that contains certain non-RFC-compliant properties. The following table shows the non-compliant properties returned by the OAuthV2 policy and the corresponding compliant properties:
-
-
-<table>
-<tr>
-<th valign="top">
-
-OAuthV2 returns:
-
-</th>
-<th valign="top">
-
-The RFC-compliant property is:
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-`"token_type":"BearerToken"` 
-
-</td>
-<td valign="top">
-
-`"token_type":"Bearer"` 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`"expires_in":"3600"` 
-
-</td>
-<td valign="top">
-
-`"expires_in":3600` 
-
-</td>
-</tr>
-</table>
-
-Also, the error response for an expired refresh token when grant\_type = refresh\_token is:`{"ErrorCode" : "invalid_request", "Error" :"Refresh Token expired"}`. However, the RFC-compliant response is: `{"error" : "invalid_grant", "error_description" :"refresh token expired"}`.
-
-> ### Note:  
-> If you require that these elements be compliant, you can create a policy, such as a JavaScript or AssignMessage policy, to transform the policy output into a compliant format.
-
 **Related Information**  
 
 

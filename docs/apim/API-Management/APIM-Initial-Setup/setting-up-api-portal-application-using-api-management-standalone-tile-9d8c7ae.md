@@ -112,7 +112,7 @@ The API portal is now configured. Log on to the API portal again. You can now cr
 
 ## Next Steps
 
-To start publishing the API portal content, you must enable the API Business Hub Enterprise. To publish the API portal content on the API Business Hub Enterprise located in the same subaccount, see [Set Up API business hub enterprise Application Using the Standalone Tile](set-up-api-business-hub-enterprise-application-using-the-standalone-tile-80c0519.md). To publish the API portal content on the centralized API Business Hub Enterprise, follow the on-screen instructions and see [Centralized API business hub enterprise \[Classic Design\]](centralized-api-business-hub-enterprise-classic-design-33b706f.md).
+To start publishing the API portal content, you must enable the API Business Hub Enterprise. To publish the API portal content on the API Business Hub Enterprise located in the same subaccount, see [Set Up API business hub enterprise Application Using the Standalone Tile](set-up-api-business-hub-enterprise-application-using-the-standalone-tile-80c0519.md). To publish the API portal content on the centralized API Business Hub Enterprise, follow the on-screen instructions and see [Centralized API business hub enterprise \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/33b706f4f2e148ffb1cb9289d5cda27d.html "The centralized API business hub enterprise is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.") :arrow_upper_right:.
 
 Once API Business Hub Enterprise is set up, navigate to :gear: and choose *Connection*.
 

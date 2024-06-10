@@ -18,8 +18,9 @@ Follow the procedure below to create a trading partner profile
 
 1.  Log on to your Integration Suite .
 2.  Choose *Design* \> *B2B Scenarios*.
-3.  Navigate to the *Trading Partners* tab and choose *Create* to add a new trading partner.
-4.  Under the *Overview* tab, maintain the following fields under the *Details* section
+3.  Navigate to the *Partner Profiles* tab.
+4.  Choose *Create* and select *Trading Partner* to add a new trading partner.
+5.  Under the *Overview* tab, maintain the following fields under the *Details* section
 
     **Details**
 
@@ -75,8 +76,8 @@ Follow the procedure below to create a trading partner profile
     </tr>
     </table>
     
-5.  You can also provide the address of your company under the *Address* section.
-6.  Choose *Save* .
+6.  You can also provide the address of your company under the *Address* section.
+7.  Choose *Save* .
 
     > ### Note:  
     > The *Logo* field is disabled initially. You can upload an image after saving the above mentioned entries. To do so, choose *Edit* and select *Browse* to search and upload your company logo.

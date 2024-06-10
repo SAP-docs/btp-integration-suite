@@ -31,14 +31,15 @@ If you chose *Update MIG*,
 5.  Select the version from the drop-down list provided next to the MIG name.
 6.  The *MIG Version* field under the *Target MIG* section gets auto-filled with the MIG name. You need to choose the target MIG version from the drop-down list.
 7.  Choose *Next*.
-8.  The next screen allows you to select the impacted Agreements to be updated. Choose *Go* to view all the impacted agreements.
+8.  In the next screen, select the checkbox of the field *Update MIG information in source templates* if you want to update the MIG information in the corresponding agreement templates.
+9.  Under *Filters* section, choose *Go* button to view all the agreements that use the selected MIG.
 
     > ### Note:  
     > You can also filter the Agreements further by their status, trading partner details and timestamps. After maintaining the necessary filters, choose *Go* to see the results.
 
-9.  In the *Agreements* table, select the Agreements that require the MIG version update and choose *Next*.
-10. The next step displays a summary of your selection. Choose *Finish* to execute the update.
-11. The *Actions Logs* table displays the progress of your task. Choose and open your log to view the task in detail.
+10. In the *Agreements* table, select the Agreements that require the MIG version update and choose *Next*.
+11. The next step displays a summary of your selection. Choose *Finish* to execute the update.
+12. The *Actions Logs* table displays the progress of your task. Choose and open your log to view the task in detail.
 
 
 
@@ -55,14 +56,15 @@ If you chose *Update MAG*,
 4.  The value help allows you to search and filter your MAG based on the name, version and status. After selecting a MAG from the list, choose *Select*.
 5.  Select the version from the drop-down list provided next to the MAG name.
 6.  The *MAG Version* field under the *Target MAG* section gets auto-filled with the MAG name. You need to choose the target MAG version from the drop-down list.
-7.  If the target MAG version that you chose contains a different version of MIG references and if you want to include the MIG references update, select the *Include MIG Versions Update* radio button. Or choose *Keep Current MAG Version*.
+7.  If the target MAG version that you chose contains a different version of MIG references and if you want to include the MIG references update, select the *Include MIG Versions Update* radio button. Or choose *Skip MIG Versions Update*.
 8.  Choose *Next*.
-9.  The next screen allows you to select the impacted Agreements to be updated. Choose *Go* to view all the impacted agreements.
+9.  In the next screen, select the checkbox of the field *Update MAG information in source templates* if you want to update the MAG iinformation in the corresponding agreement templates.
+10. Under the *Filters* section, choose *Go* to view all the agreements that use the selected MAG.
 
     > ### Note:  
     > You can also filter the Agreements further by their status, trading partner details and timestamps. After maintaining the necessary filters, choose *Go* to see the results.
 
-10. In the *Agreements* table, select the Agreements that require the MAG version update and choose *Next*.
-11. The next step displays a summary of your selection. Choose *Finish* to execute the update.
-12. The *Actions Logs* table displays the progress of your task. Choose and open your log to view the task in detail.
+11. In the *Agreements* table, select the Agreements that require the MAG version update and choose *Next*.
+12. The next step displays a summary of your selection. Choose *Finish* to execute the update.
+13. The *Actions Logs* table displays the progress of your task. Choose and open your log to view the task in detail.
 

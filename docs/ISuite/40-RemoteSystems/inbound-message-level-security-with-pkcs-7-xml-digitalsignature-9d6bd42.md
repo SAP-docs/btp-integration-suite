@@ -72,40 +72,6 @@ To implement message-level security for the standards PKCS\#7, WS-Security, and 
 
 ![](images/Certificates_for_Message_Level_Security_Inbound_dbc7998.png)
 
-
-
-## Configuring the Sender
-
-Configure the sender keystore in the following way:
-
--   Generate a key pair \(and get it signed by a CA\).
-
--   Import the tenant public key into the sender keystore.
-
-
-
-
-Provide the tenant administrator with the public key \(is used to verify messages sent to the tenant\).
-
-
-
-## Configuring the Integration Flow Steps for Message-Level Security
-
-Depending on the desired option, configure the security-related integration flow steps.
-
--   Configure the **Verifyer** \(PKCS7 or XML Signature Verifyer\) step.
-
-    Specify the *Public Key Aliases* in order to select the relevant keys from the tenant keystore.
-
--   Configure the **Decryptor** \(PKCS7\) step.
-
-    Make sure that you specify the *Public Key Aliases* for all expected senders \(only if you have specified *Enveloped or Signed and Enveloped Data* or *Signed and Enveloped Data* for *Signatures in PKCS7 Message*\).
-
-    These are the public key aliases corresponding to the private keys \(of the expected senders\) that are used to sign the payload. The public key aliases specified in this step restrict the list of expected senders and, in this way, act as an authorization check.
-
-
-In general, an alias is a reference to an entry in a keystore. A keystore can contain multiple public keys. You can use a public key alias to refer to and select a specific public key from a keystore.
-
 **Related Information**  
 
 
@@ -116,6 +82,4 @@ In general, an alias is a reference to an entry in a keystore. A keystore can co
 [How WS-Security Works](how-ws-security-works-2f9a038.md "Messages can be protected according to the WS-Security standard.")
 
 [Creating Keys for the Usage of PKCS\#7, XML Digital Signature and WS-Security](creating-keys-for-the-usage-of-pkcs-7-xml-digital-signature-and-ws-security-6f43916.md "To set up message level security scenarios based on PKCS#7, XML Digital Signature or WS-Security, the required keys are created in the same way as for transport level security HTTPS.")
-
-[Define PKCS\#7/CMS Decryptor](../50-Development/define-pkcs-7-cms-decryptor-51d903b.md "")
 

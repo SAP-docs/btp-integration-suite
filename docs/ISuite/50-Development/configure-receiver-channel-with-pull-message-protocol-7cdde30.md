@@ -199,48 +199,6 @@ Description
 <tr>
 <td valign="top">
 
-*Username Token*
-
-</td>
-<td valign="top">
-
-Choose the relevant password type to be used when a username token is generated from credentials.
-
--   *Dynamic*: To set the values dynamically using `SAP_AS4_Outbound_Pull_Username_Token` header. The valid values are:
-    -   none
-    -   hashedPasswordWithTimestamp
-    -   plainTextPassword
-    -   plainTextPasswordWithTimestamp
-
-
--   *Not Required*: To skip the username token generation.
--   *With Hashed Password and Timestamp*: The username and password from the token are added to the XML payload as a plain text and hashed value respectively along with the timestamp. This is the most secure way of adding the username to the payload.
--   *With Plain Text Password*: The username and password from the token are added to the XML payload as a plain text.
--   *With Plain Text Password and Timestamp*: The username and password from the token are added to the XML payload as a plain text along with the timestamp.
-
-    > ### Recommendation:  
-    > Transmit such payloads over HTTPS transport layer.
-
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Credential Name* only if *Username Token* isn't selected as *Not Required*
-
-</td>
-<td valign="top">
-
-Enter the credential name of the username-password pair specified during the deployment of the security artifact. You can also enter $\{header.headername\} or $\{property.propertyname\} to read the value dynamically from a header or a property.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *Sign Message* 
 
 </td>
@@ -336,39 +294,6 @@ The valid values are:
 <td valign="top">
 
 Provide the public key alias to verify the signature of the AS4 message.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Verify Username Token*
-
-</td>
-<td valign="top">
-
-Select the relevant option for username token verification:
-
--   Dynamic: You can also set the value of this attribute dynamically by using the header `SAP_AS4_Outbound_Verify_Response_Username_Token`. The valid values are:
-    -   notRequired
-    -   required
-
--   Not Required: To skip the verification of response message.
--   Required
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Credential Name* only if *Verify Username Token* isn't selected as *Not Required*
-
-</td>
-<td valign="top">
-
-Enter the credential name of the username-password pair specified during the deployment of the security artifact. You can also enter $\{header.headername\} or $\{property.propertyname\} to read the value dynamically from a header or a property.
 
 </td>
 </tr>

@@ -6,7 +6,12 @@
 
 Settings include the SAP Integration Solution Advisory Methodology \(ISA-M\) master data. This data acts as the initial setup for completing the integration assessment.
 
-For more information, see: [SAP Integration Solution Advisory Methodology](sap-integration-solution-advisory-methodology-a2e17f3.md)
+For more information, see:
+
+-   [SAP Integration Solution Advisory Methodology](sap-integration-solution-advisory-methodology-a2e17f3.md)
+
+-    <?sap-ot O2O class="- topic/xref " href="d352b138fddb4da094314eb922b4ba1a.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/957de135ee4c4d5d9778355d76760572.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+
 
 Reviewing and adjusting the ISA-M settings is the task of the enterprise architect \(see [Personas for Integration Assessment](../60-Security/personas-for-integration-assessment-5df5af1.md)\).
 

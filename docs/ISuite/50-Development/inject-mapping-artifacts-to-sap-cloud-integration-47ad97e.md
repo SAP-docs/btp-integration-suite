@@ -127,7 +127,9 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     > 
     >     You need to register the client application as the OAuth client in the consumer account using the SAP BTP cockpit with the TMN node details. In the *Security* \> *OAuth* section, go to the *Clients* tab. Under *Subscription*, enter the VM name of the TMN node\(it ends with the node type `.tmn`\).
     > 
-    >     For information on creating OAuth client credentials for Cloud Foundry, see: [Creating OAuth Client Credentials for Cloud Foundry Environment](creating-oauth-client-credentials-for-cloud-foundry-environment-50b63c6.md).
+    >     For information on creating OAuuth client credentials for Neo environment, see: [Creating OAuth Client Credentials for Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/040d8110293d44b1bfaa75674530d395.html "The API is protected by basic authentication and OAuth.") :arrow_upper_right:
+    > 
+    >     For information on creating OAuth client credentials for Cloud Foundry, see: [Creating OAuth Client Credentials for Cloud Foundry Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/50b63c69028643b18016d6795003392d.html "You can create OAuth client credentials to access your SAP Cloud Integration tenant hosted on the Cloud Foundry environment.") :arrow_upper_right:.
 
 
     

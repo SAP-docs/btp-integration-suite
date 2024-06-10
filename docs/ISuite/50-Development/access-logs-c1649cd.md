@@ -7,7 +7,7 @@ The *Access Logs* section allows you to monitor and to analyze errors that occur
 > ### Caution:  
 > This information is relevant only when you use SAP Cloud Integration in the Cloud Foundry environment.
 > 
-> You can access the system logs only if the Cloud Logging Service is available for your Cloud Integration application. This feature is not yet enabled on all data centers.
+> You can access the system logs only if the Cloud Logging Service is available for your Cloud Integration application. This feature ist not yet enabled on all data centers.
 
 **Related Information**  
 

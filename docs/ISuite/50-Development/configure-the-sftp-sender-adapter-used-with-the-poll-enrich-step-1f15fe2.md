@@ -2,7 +2,7 @@
 
 # Configure the SFTP Sender Adapter Used with the Poll Enrich Step
 
-The SFTP sender adapter connects an SAP Integration Suite tenant to a remote system using the SSH File Transfer protocol to read files from the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol \(or SFTP\).
+The SFTP sender adapter connects an SAP Cloud Integration tenant to a remote system using the SSH File Transfer protocol to read files from the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol \(or SFTP\).
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:

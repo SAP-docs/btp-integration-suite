@@ -360,21 +360,22 @@ ES Repository Information
 
 
 
+<a name="loio2eb71b84b55f4269a5379f6efe9a6f3a__section_a1d_cn2_q1c"/>
+
+## Saving Message Type
+
+Choose *Save* to save the draft. Choose*Save as version* to save the message type with a new version. All modifications are reflected in XSD tab.
+
+> ### Note:  
+> You can save te artifact even if you have validation errors in your Structure tab.
+
+
+
 <a name="loio2eb71b84b55f4269a5379f6efe9a6f3a__section_u2d_k4p_mxb"/>
 
 ## XSD
 
 Displays the XML Schema Definition \(XSD\) that is, the text view of the message type in read-only mode.
-
-
-
-<a name="loio2eb71b84b55f4269a5379f6efe9a6f3a__section_a1d_cn2_q1c"/>
-
-## Saving Message Type
-
-Choose *Save* to save the draft. All modifications are refelcted in XSD tab.
-
-Choose*Save as version* to save the Message Type with a new version. All modifications are reflected in XSD tab.
 
 **Related Information**  
 

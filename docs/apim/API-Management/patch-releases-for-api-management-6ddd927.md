@@ -6,6 +6,86 @@ This topic provides information on patch releases for API Management that are pr
 
 
 
+<a name="loio6ddd927cbeaa42e384dc903e6002e269__section_hll_dw1_3bc"/>
+
+## May 2024
+
+**Software Increment: 2403**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.168.4
+
+</td>
+<td valign="top">
+
+The transport of the apiprovider was failing due to a missing KVM. However, this issue has been resolved by creating the necessary KVMs during the provider creation process.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.168.4
+
+</td>
+<td valign="top">
+
+The issue with the key credentials of the Devportal node service broker has been resolved. The correct key credentials are now available to access the application APIs.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.168.3
+
+</td>
+<td valign="top">
+
+UI issues in the policy editor have been resolved. You can now move the splitters around effortlessly, enter the necessary policy details, and edit their flows without any interruptions to the user interface.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio6ddd927cbeaa42e384dc903e6002e269__section_dgt_12r_g1c"/>
 
 ## March 2024

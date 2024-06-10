@@ -87,6 +87,220 @@ API Management
 </td>
 <td valign="top">
 
+Tenant Cloning Tool
+
+</td>
+<td valign="top">
+
+In this release, we have introduced selective entity migration, which allows you to migrate only the desired API proxies by setting the *selectiveEntityMigration* flag to true. These enhancements provide you with greater control and flexibility during the migration process, enabling you to migrate only the necessary API proxies or all API Management entities effortlessly.
+
+See:
+
+-   [Clone API Management Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts?version=CLOUD)
+
+-   [Clone API Management Content between Cloud Foundry Environments](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=CLOUD)
+
+
+SAP API Management customers choose:
+
+-   [Clone API Management Content](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts?version=Cloud)
+
+-   [Clone API Management Content for Cloud Foundry to Cloud Foundry Migration](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=Cloud)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-05-31
+
+</td>
+<td valign="top">
+
+2024-05-31
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+API business hub enterprise Classic Design UI Removed
+
+</td>
+<td valign="top">
+
+The classic design of the API business hub enterprise has been removed and is no longer accessible.
+
+To configure the new design, see [Configure the API business hub enterprise](https://help.sap.com/docs/integration-suite/sap-integration-suite/configure-api-business-hub-enterprise-new-design?version=CLOUD&q=Exyternal%20Content)
+
+SAP API Management customers choose: [Configure the API business hub enterprise](https://help.sap.com/docs/sap-api-management/sap-api-management/configure-api-business-hub-enterprise-new-design?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+Deleted
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-06-10
+
+</td>
+<td valign="top">
+
+2024-06-10
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Anomaly Detection
+
+</td>
+<td valign="top">
+
+Anomaly detection is an AI-based feature of API Management within SAP Integration Suite. It involves the identification of patterns or data points that deviate significantly from normal behaviour or expected patterns. This feature allows you to proactively identify and respond to unusual patterns or deviations in API proxy calls, thereby ensuring the security, reliability, and optimal performance of APIs.
+
+See: [Anomaly Detection](https://help.sap.com/docs/integration-suite/sap-integration-suite/anomaly-detection?version=CLOUD)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-06-10
+
+</td>
+<td valign="top">
+
+2024-06-10
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Short Text
 
 </td>

@@ -51,11 +51,7 @@ If you want to configure the API Management solution to access data from a serve
 
 3.  Choose *Create*.
 
-    ![](images/CreateImage1_3bf6c81.png)
-
-4.  Enter a name and a description for the API provider in the *Overview* section.
-
-    ![](images/OverviewImage2_9550dd7.png)
+4.  Enter a name and a description for the API provider.
 
     > ### Note:  
     > Do not use the names mentioned in following list:
@@ -83,11 +79,7 @@ If you want to configure the API Management solution to access data from a serve
     -   Choose *Open Connectors* to connect third-party APIs via harmonized RESTful APIs.
     -   Choose *Cloud Integration* to access all the service endpoints.
 
-    ![](images/ConnectListImage3_06ef74d.png)
-
     -   *Internet* connection type:
-
-        ![](images/InternetImage4_354b74e.png)
 
         **Internet**
 
@@ -431,8 +423,6 @@ If you want to configure the API Management solution to access data from a serve
 
 6.  In the *CATALOG SERVICE SETTINGS* section, enter the required details.
 
-    ![](images/CatalogImage5_49e100b.png)
-
     **Catalog Service Settings**
 
 
@@ -507,11 +497,9 @@ If you want to configure the API Management solution to access data from a serve
     > ### Note:  
     > Catalog service settings aren’t applicable for Open Connectors type connection and SAP Cloud Integration.
 
-7.  *Save* the changes.
+7.  Save the changes.
 
-    Choose *Configure* \> *API Provider* to view the newly created API provider. Further, you can test the connection of the API provider, by navigating to the API provider's details page and selecting *Test Connection*.
-
-    ![](images/TestConnectionImage6_82dccf5.png)
+    Choose*Configure* \> *API Provider* to view the newly created API provider. Further, you can test the connection of the API provider, by navigating to the API provider's details page and selecting *Test Connection*.
 
     > ### Note:  
     > The following table lists the attributes considered for testing the connection:

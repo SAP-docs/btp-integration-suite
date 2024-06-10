@@ -93,6 +93,11 @@ You sign a message with an XML digital signature to ensure authenticity and data
     Using the private key, the sender encrypts the digest.
 
     Supported signature algorithms: SHA1/DSA, SHA1/RSA, SHA256/RSA, SHA384/RSA, SHA512/RSA, SHA224/ECDSA, SHA256/ECDSA, SHA384/ECDSA, SHA512/ECDSA.
+
+    > ### Caution:  
+    > Algorithms starting with SHA1, MD2, or MD5 are still supported for compatibility reasons, but they no longer meet today's security requirements. Therefore, we recommend using stronger algorithms where possible. Check with your security experts or authorities like NIST for more detailed security recommendations.
+
+
     
     </td>
     </tr>

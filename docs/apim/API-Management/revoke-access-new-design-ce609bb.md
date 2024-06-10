@@ -23,7 +23,7 @@ You are an API administrator and the role *AuthGroup.API.Admin* is assigned to y
 As an API administrator, you use this procedure to revoke an application developer's access for using the API business hub enterprise.
 
 > ### Note:  
-> This document describes the new design of the API business hub enterprise. To view the documentation for the classic design, see [Revoke Access \[Classic Design\]](revoke-access-classic-design-147fb9d.md).
+> This document describes the new design of the API business hub enterprise. To view the documentation for the classic design, see [Revoke Access \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/147fb9dca1414f6a956dd05b4c86d74d.html "Revoke the access of an application developer.") :arrow_upper_right:.
 
 
 

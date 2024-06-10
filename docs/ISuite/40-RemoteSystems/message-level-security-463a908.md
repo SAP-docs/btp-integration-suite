@@ -201,6 +201,9 @@ Strong encryption is supported for the following algorithms:
 
 For these algorithms, the key lengths 192 and 256 are possible.
 
+> ### Caution:  
+> Algorithms starting with SHA1, MD2, or MD5 are still supported for compatibility reasons, but they no longer meet today's security requirements. Therefore, we recommend using stronger algorithms where possible. Check with your security experts or authorities like NIST for more detailed security recommendations.
+
 
 
 ## Recommendations

@@ -78,9 +78,9 @@ You’re registered as an application developer on the API business hub enterpri
 
  <?sap-ot O2O class="- topic/link " href="dd6d58c1586a4a0a8ffca46a1a019d38.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/80c0519ebf1449d9bed37fccf7ba127a.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
-[Configure the API business hub enterprise \[Classic Design\]](../configure-the-api-business-hub-enterprise-classic-design-7b71b16.md "You can configure the API business hub enterprise to personalize it for your organization.")
+[Configure the API business hub enterprise \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/7b71b166d6984e8f81a212568af5ce94.html "You can configure the API business hub enterprise to personalize it for your organization.") :arrow_upper_right:
 
-[Create an Application \[Classic Design\]](../create-an-application-classic-design-7b4e71b.md "Create an Application to consume the required APIs.")
+[Create an Application \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/7b4e71b3887f4396aa22ce3e2ed7e0c3.html "Create an Application to consume the required APIs.") :arrow_upper_right:
 
 [Assign User Roles in API Management](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:
 

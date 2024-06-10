@@ -13,7 +13,7 @@ The *on-premise-connectivity* plan helps in achieving principal propagation whil
 Let us consider an use case where you want to pass the identity and security context of the logged-in user in the client application \(known as the principal\) from client application to on-premise backend. It ensures that the downstream services have the necessary information to authenticate the client without requiring the client to re-authenticate for each service. When a client makes a request to an API gateway, the gateway authenticates the user. It then propagates the principal information, such as the user's identity, to the backend services that the client's request needs to access. This allows the downstream services to make authorization decisions based on the user's details.
 
 > ### Note:  
-> The API Management platform incorporates the circuit breaker pattern to enhance the resilience of the back-end. For more information, see [Circuit Breaker](circuit-breaker-bd3c2d5.md).
+> The API Management platform incorporates the circuit breaker pattern to enhance the resilience of the back-end. For more information, see [Circuit Breaker for On-Premise Provider](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/bd3c2d5be9ec4051ac6c0295173b4c22.html "In the context of an API or service proxy, a circuit breaker is a design pattern used to improve the resilience and fault tolerance of the system. It is typically used to prevent cascading failures when a service or API endpoint becomes unresponsive or starts to exhibit high latency.") :arrow_upper_right:.
 
 ![](images/On-prem_Connectivity_1067d7f.png)
 

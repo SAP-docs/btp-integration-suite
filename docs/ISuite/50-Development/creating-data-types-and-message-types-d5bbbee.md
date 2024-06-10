@@ -29,7 +29,7 @@ You can use the Message Type artifacts in message mapping and integration flows 
 
 3.  Navigate to the *Artifacts* tab and choose *Add* \> *Data Type* or *Add* \> *Message Type* to add a data Type or message Type artifact.
 
-4.  In the dialog box, *ES Repository* appears as the *Source*. You see the details populated in *Name* and *Address* fields.
+4.  In the dialog box, *ES Repository* appears as the *Source*. Choose the ES Repository *Name*. The *Address* is automaticaly populated.
 
 5.  Choose *Connect*. A list of available data types or message types in ES repository appears.
 

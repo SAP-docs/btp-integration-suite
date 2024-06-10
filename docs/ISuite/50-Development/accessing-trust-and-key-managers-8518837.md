@@ -12,27 +12,9 @@ Follow the procedure below to get trust and key managers in an ADK project.
 
 ## Procedure
 
-1.  Download the latest ADK API from the [Adapter Development Kit](https://tools.hana.ondemand.com/#cloudintegration) section.
+1.  Add the `com.sap.it.public` group ID to the `<excludeGroupIds>`.
 
-2.  Add the `com.sap.it.public.generic.api.jar` file to the `resources` folder that is in your ADK project.
-
-3.  Open the `pom.xml` file and add the dependency below:
-
-    > ### Source Code:  
-    > ```xml
-    > <dependency>
-    >  <groupId>com.sap.it.public</groupId>
-    >  <artifactId>api</artifactId>
-    >  <version>2.8.0</version>
-    >  <scope>system</scope>
-    >  <systemPath>${project.basedir}/src/main/resources/com.sap.it.public.generic.api-2.8.0.jar</systemPath>
-    > </dependency>
-    > 
-    > ```
-
-4.  Add the `com.sap.it.public` group ID to the `<excludeGroupIds>`.
-
-5.  Depending on your requirements, add the code below to either the `*Producer.java` \(receiver adapter\) or `*Consumer.java` \(sender adapter\) file. This allows you to import all the trust managers.
+2.  Depending on your requirements, add the code below to either the `*Producer.java` \(receiver adapter\) or `*Consumer.java` \(sender adapter\) file. This allows you to import all the trust managers.
 
     > ### Source Code:  
     > ```java
@@ -55,7 +37,7 @@ Follow the procedure below to get trust and key managers in an ADK project.
     > 
     > ```
 
-6.  To import all the key managers, use the code below:
+3.  To import all the key managers, use the code below:
 
     > ### Source Code:  
     > ```java

@@ -4,7 +4,7 @@
 
 Minimizes the risk posed by content-level attacks by enabling specific limits on various JSON structures, such as arrays and strings.
 
-****
+**Policy Settings**
 
 
 <table>

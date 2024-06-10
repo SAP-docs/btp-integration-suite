@@ -9,13 +9,6 @@ The adapter uses the Solace Message Format \(SMF\) message protocol.
 > ### Note:  
 > Only SMF allowed headers are forwarded on the sender and receiver. To store any custom headers on the receiver, use the UserProperties header.
 
-> ### Note:  
-> This adapter is available on SAP Business Accelerator Hub.
-> 
-> For more information, see [Consuming Integration Adapters from SAP Business Accelerator Hub](consuming-integration-adapters-from-sap-business-accelerator-hub-b9250fb.md).
-> 
-> The availability of the adapter is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://launchpad.support.sap.com/#/notes/2903776) and [3188446](https://launchpad.support.sap.com/#/notes/3188446).
-
 **Related Information**  
 
 

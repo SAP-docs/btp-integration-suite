@@ -27,9 +27,9 @@ Each package has the following details:
 
     You can view the details of an API, a policy template, or an API proxy by choosing the respective artifact. This opens a screen that provides the details of that particular artifact.
 
-    To copy APIs, choose the <span class="SAP-icons-V5"></span> Action icon and choose *Copy*. In the *Copy API* window, provide the necessary information. You can either leave the information displayed for *API Details* as it is, or you can change it. After the action is completed, you can view the copied API by navigating to *Configure* \> *APIs* \> *POLICY TEMPLATES*. Alternatively, you can copy the APIs by choosing the respective artifact and then, on the screen that opens, choosing *Copy*.
+    To copy APIs, choose the <span class="SAP-icons-V5"></span> Action icon and choose *Copy*. In the *Copy API* window, provide the necessary information. You can either leave the information displayed for *API Details* as it is, or you can change it. After the action is completed, you can view the copied API by navigating to *Design* \> *APIs* \> *POLICY TEMPLATES*. Alternatively, you can copy the APIs by choosing the respective artifact and then, on the screen that opens, choosing *Copy*.
 
-    To copy a policy template, choose the <span class="SAP-icons-V5"></span> Action icon and select *Copy*. After the action is completed, you can view the copied policy template by navigating to *Configure* \> *APIs* \> *POLICY TEMPLATES*. Alternatively, you can copy the policy template by choosing the respective artifact and the, on the screen that opens, choosing *Copy*.
+    To copy a policy template, choose the <span class="SAP-icons-V5"></span> Action icon and select *Copy*. After the action is completed, you can view the copied policy template by navigating to *Design* \> *APIs* \> *POLICY TEMPLATES*. Alternatively, you can copy the policy template by choosing the respective artifact and the, on the screen that opens, choosing *Copy*.
 
 -   **Documents**
 

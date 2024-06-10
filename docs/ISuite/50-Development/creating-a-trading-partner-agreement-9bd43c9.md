@@ -363,54 +363,63 @@ The creation modes apply only for the agreements you newly create. The agreement
     > The application now provides you with the *ProcessDirect* adapter that allows you to use your customised integration flow within the generic integration flow. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
 20. The *Enable Payload Validation* checkbox allows the system to validate the incoming payload. Check/Uncheck the option if you want to enable or disable the payload validation.
-21. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
-22. Choose the *Mapping* step.
-23. Select a mapping guideline using the value help provided for the field *Mapping Guideline\(MAG\)*.
+21. The *Enable Syntax Validation* checkbox allows the system to validate the syntax using EDI splitter and this option is selected by default. Check/Uncheck the option if you want to enable or disable the syntax validation.
+
+    > ### Note:  
+    > This option applies only to the following sender type systems:
+    > 
+    > -   ASC X12
+    > 
+    > -   UN/EDIFACT
+
+22. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see  <?sap-ot O2O class="- topic/xref " href="b927e0182df04208ace0f15c66073317.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/9bd43c9ae064493286f321551bd0557c.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+23. Choose the *Mapping* step.
+24. Select a mapping guideline using the value help provided for the field *Mapping Guideline\(MAG\)*.
 
     If you want to view the details of the MAG that you chose, you can use the link provided under the *Version* field.
 
-24. If you want to use custom integration flow for the Mapping process, enable the checkbox for *Customized Mapping Processing* and provide the address of the integration flow under the field *Process Direct Address* field.
+25. If you want to use custom integration flow for the Mapping process, enable the checkbox for *Customized Mapping Processing* and provide the address of the integration flow under the field *Process Direct Address* field.
 
     > ### Note:  
     > Enabling custom message processing will disable the *Mapping Guideline \(MAG\)* field.
     > 
     > The application now provides you with the *ProcessDirect* adapter that allows you to use your customised integration flow within the generic integration flow. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
-25. Choose the *Communication Channel* on the receiver side and select a value from the drop-down list for the field *Communication*.
-26. Select the value for the field *Receiver Functional Acknowledgement Channel*.
+26. Choose the *Communication Channel* on the receiver side and select a value from the drop-down list for the field *Communication*.
+27. Select the value for the field *Receiver Functional Acknowledgement Channel*.
 
     > ### Note:  
     > This field appears only for AS2 adapter.
     > 
     > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
 
-27. Select the *Interchange* shape on the receiver side.
-28. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
+28. Select the *Interchange* shape on the receiver side.
+29. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
 
     > ### Note:  
     > If you want to view the details of the MIG that you chose, you can use the link provided under the *Version* field.
 
-29. Select a value from the drop-down list for the field *Number Range*.
+30. Select a value from the drop-down list for the field *Number Range*.
 
     > ### Note:  
     > A number range is used to insert unique sequence numbers.
     > 
     > You need to configure this number range in the Cloud Integration tenant. To do so, see [Number Ranges](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b6e17fa17a70491da4a54216db298f84.html).
 
-30. Similar to the Sender, if you want to use custom integration flows for your Pre/Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
+31. Similar to the Sender, if you want to use custom integration flows for your Pre/Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
 
     > ### Note:  
     > The application now provides you with the *ProcessDirect* adapter that allows you to use your customised integration flow within the generic integration flow. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
-31. Provide the address path of your custom integration flow in the *Process Direct Address* field.
+32. Provide the address path of your custom integration flow in the *Process Direct Address* field.
 
     > ### Note:  
     > To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
-32. The *Enable Payload Validation* checkbox allows the system to validate the outgoing payload. It is selected by default. Uncheck the option if you want to disable the payload validation.
-33. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
-34. If your receiver type system is UN/EDIFACT, you might want to set a target encoding. To do so, under the field *Target Encoding*, select a value from the list.
-35. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgement for the receiver.
+33. The *Enable Payload Validation* checkbox allows the system to validate the outgoing payload. It is selected by default. Uncheck the option if you want to disable the payload validation.
+34. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see  <?sap-ot O2O class="- topic/xref " href="b927e0182df04208ace0f15c66073317.xml" text="" desc="" xtrc="xref:14" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/9bd43c9ae064493286f321551bd0557c.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+35. If your receiver type system is UN/EDIFACT, you might want to set a target encoding. To do so, under the field *Target Encoding*, select a value from the list.
+36. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgement for the receiver.
 
     > ### Note:  
     > This option is available only for the following type systems:
@@ -421,12 +430,12 @@ The creation modes apply only for the agreements you newly create. The agreement
     > 
     > You also need to maintain the Functional Acknowledgement in the Receiver side.
 
-36. If you have enabled *Receiver Functional Acknowledgement*, choose *Communication* on the receiver side and set the following values:
+37. If you have enabled *Receiver Functional Acknowledgement*, choose *Communication* on the receiver side and set the following values:
     -   *Communication*: It should be of type AS2. This detail has to be maintained in the trading partner profile. To know more, see [Creating a Trading Partner Profile](creating-a-trading-partner-profile-542fb11.md)
 
     -   *Receiver Functional Acknowledgement Channel*: Select a value from the drop-down list
 
-37. If you want to specify which separators to be used in the interchange message payload, select the checkbox for the field *Use Custom Separators*. This will enable the following fields. Set the character from the drop-down list for each of the separator.
+38. If you want to specify which separators to be used in the interchange message payload, select the checkbox for the field *Use Custom Separators*. This will enable the following fields. Set the character from the drop-down list for each of the separator.
 
     -   *Segment Terminator*
 
@@ -437,7 +446,7 @@ The creation modes apply only for the agreements you newly create. The agreement
     > ### Note:  
     > You can also manually specify the custom separator for these fields. Enter the hexadecimal value for the separator you want to use in the respective field. For example, enter `#x2b` to use **\+** as the separator.
 
-38. Choose *Save*.
+39. Choose *Save*.
 
 
 
@@ -795,53 +804,64 @@ The creation modes apply only for the agreements you newly create. The agreement
     > The application now provides you with the *ProcessDirect* adapter that allows you to use your customised integration flow within the generic integration flow. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
 23. The *Enable Payload Validation* checkbox allows the system to validate the incoming payload. Check/Uncheck the option if you want to enable or disable the payload validation.
-24. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md)
-25. Choose the *Mapping* step.
-26. Select a mapping guideline using the value help provided for the field *Mapping Guideline\(MAG\)*.
+24. The *Enable Syntax Validation* checkbox allows the system to validate the syntax using EDI splitter and this option is selected by default. Check/Uncheck the option if you want to enable or disable the syntax validation.
+
+    > ### Note:  
+    > This option applies only to the following sender type systems:
+    > 
+    > -   ASC X12
+    > 
+    > -   UN/EDIFACT
+    > 
+    > This option is not editable if you have created the agreement with reference mode \(created using *Bind with Template* option\).
+
+25. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see  <?sap-ot O2O class="- topic/xref " href="b927e0182df04208ace0f15c66073317.xml" text="" desc="" xtrc="xref:22" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/9bd43c9ae064493286f321551bd0557c.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+26. Choose the *Mapping* step.
+27. Select a mapping guideline using the value help provided for the field *Mapping Guideline\(MAG\)*.
 
     If you want to view the details of the MAG that you chose, you can use the link provided under the *Version* field.
 
-27. If you want to use custom integration flow for the Mapping process, enable the checkbox for *Customized Mapping Processing* and provide the address of the integration flow under the field *Process Direct Address* field.
+28. If you want to use custom integration flow for the Mapping process, enable the checkbox for *Customized Mapping Processing* and provide the address of the integration flow under the field *Process Direct Address* field.
 
     > ### Note:  
     > Enabling custom message processing will disable the *Mapping Guideline \(MAG\)* field.
     > 
     > The application now provides you with the *ProcessDirect* adapter that allows you to use your customised integration flow within the generic integration flow. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
-28. Choose the *Communication Channel* on the receiver side and select a value from the drop-down list for the field *Communication*.
-29. Select the value for the field *Receiver Functional Acknowledgement Channel*.
+29. Choose the *Communication Channel* on the receiver side and select a value from the drop-down list for the field *Communication*.
+30. Select the value for the field *Receiver Functional Acknowledgement Channel*.
 
     > ### Note:  
     > This field appears only for AS2 adapter.
     > 
     > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
 
-30. Select the *Interchange* shape on the receiver side.
-31. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
+31. Select the *Interchange* shape on the receiver side.
+32. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
 
     > ### Note:  
     > If you want to view the details of the MIG that you chose, you can use the link provided under the *Version* field.
 
-32. Select a value from the drop-down list for the field *Number Range*.
+33. Select a value from the drop-down list for the field *Number Range*.
 
     > ### Note:  
     > A number range is used to insert unique sequence numbers.
     > 
     > You need to configure this number range in the Cloud Integration tenant. To do so, see [Number Ranges](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b6e17fa17a70491da4a54216db298f84.html).
 
-33. Similar to the Sender, if you want to use custom integration flows for your Pre/Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
+34. Similar to the Sender, if you want to use custom integration flows for your Pre/Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
 
     > ### Note:  
     > The application now provides you with the *ProcessDirect* adapter that allows you to use your customised integration flow within the generic integration flow. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
-34. Provide the address path of your custom integration flow in the *Process Direct Address* field.
+35. Provide the address path of your custom integration flow in the *Process Direct Address* field.
 
     > ### Note:  
     > To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
-35. The *Enable Payload Validation* checkbox allows the system to validate the outgoing payload. It is selected by default. Uncheck the option if you want to disable the payload validation.
-36. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md)
-37. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgement for the receiver.
+36. The *Enable Payload Validation* checkbox allows the system to validate the outgoing payload. It is selected by default. Uncheck the option if you want to disable the payload validation.
+37. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see  <?sap-ot O2O class="- topic/xref " href="b927e0182df04208ace0f15c66073317.xml" text="" desc="" xtrc="xref:28" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/9bd43c9ae064493286f321551bd0557c.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+38. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgement for the receiver.
 
     > ### Note:  
     > This option is available only for the following type systems:
@@ -852,12 +872,12 @@ The creation modes apply only for the agreements you newly create. The agreement
     > 
     > You also need to maintain the Functional Acknowledgement in the Receiver side.
 
-38. If you have enabled *Receiver Functional Acknowledgement*, choose *Communication* on the receiver side and set the following values:
+39. If you have enabled *Receiver Functional Acknowledgement*, choose *Communication* on the receiver side and set the following values:
     -   *Communication*: It should be of type AS2. This detail has to be maintained in the trading partner profile. To know more, see [Creating a Trading Partner Profile](creating-a-trading-partner-profile-542fb11.md)
 
     -   *Receiver Functional Acknowledgement Channel*: Select a value from the drop-down list
 
-39. If you want to specify which separators to be used in the interchange message payload, select the checkbox for the field *Use Custom Separators*. This will enable the following fields. Set the character from the drop-down list for each of the separator.
+40. If you want to specify which separators to be used in the interchange message payload, select the checkbox for the field *Use Custom Separators*. This will enable the following fields. Set the character from the drop-down list for each of the separator.
 
     -   *Segment Terminator*
 
@@ -868,7 +888,7 @@ The creation modes apply only for the agreements you newly create. The agreement
     > ### Note:  
     > You can also manually specify the custom separator for these fields. Enter the hexadecimal value for the separator you want to use in the respective field. For example, enter `#x2b` to use **\+** as the separator.
 
-40. Choose *Save*.
+41. Choose *Save*.
 
 
 

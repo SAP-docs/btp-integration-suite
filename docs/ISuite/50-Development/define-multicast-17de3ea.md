@@ -10,21 +10,6 @@
 
 You can use the *Multicast* step to send copies of the same message to multiple routes. You can send copies to all routes at once using *Parallel Multicast* or in an order of your choice using *Sequential Multicast*. This allows you to perform multiple operations on the same message in a single integration process. Without *Multicast*, you needed multiple integration processes to perform this task.
 
-There are certain best practices and limitations that you must know when using Multicast:
-
--   The number of outgoing branches using a *Multicast* step must be equal to the number of incoming branches in a *Join* step.
-
--   Use only one *Multicast* step per *Integration Process* pool.
-
-    To handle errors, you must move all inner *Multicast* steps \(Multicast steps within a Multicast step\) along with its branches to a new *Local Integration Process* pool with its own *Exception Subprocess* pool. For more information, see [SAP Note 3028577](https://me.sap.com/notes/3028577).
-
--   Use *Router* and *Multicast* steps in different Integration Process pools.
-
-    Always include the *Router* step in a separate *Local Integration Process* pool and call it from the multicast branch.
-
--   If you like to combine the resulting output from multicast branches, use a *Gather* step immediately after the *Join* step to avoid data loss.
-
-
 
 
 ## Procedure

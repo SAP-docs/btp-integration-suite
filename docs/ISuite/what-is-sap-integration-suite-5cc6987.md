@@ -65,6 +65,17 @@ Discover, protect, govern, and publish APIs to developers with API Management an
 
 </dd><dt><b>
 
+Manage Business Events 
+
+</b></dt>
+<dd>
+
+Publish and consume business events to seamlessly connect applications through event-driven architecture.
+
+
+
+</dd><dt><b>
+
 Extend Non-SAP Connectivity 
 
 </b></dt>

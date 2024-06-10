@@ -38,7 +38,7 @@ Authorization
 </td>
 <td valign="top">
 
-In API Management, you provide authorization to users by assigning relevant roles. For more information on how to provide authorizations, see [Tasks and Corresponding Role Collections](../tasks-and-corresponding-role-collections-911ca5a.md).
+In API Management, you provide authorization to users by assigning relevant roles. For more information on how to provide authorizations, see [User Roles in API Management \(New\)](../user-roles-in-api-management-new-911ca5a.md).
 
 </td>
 </tr>

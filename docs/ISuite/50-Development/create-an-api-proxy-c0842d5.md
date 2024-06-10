@@ -258,7 +258,7 @@ Instead of consuming services directly, application developers can access API pr
     > 
     > For more information on how to define multiple target endpoints using Route Rule, see [Enable Dynamic Routing](enable-dynamic-routing-49cbe91.md).
 
-10. To define target endpoint properties, navigate to the *Target EndPoint* tab and choose *Add*.
+10. To define multiple target endpoints, navigate to the *Target EndPoint* tab and choose *Add*.
 
     Enter the *Property Name* and the *Values*. For the Target Endpoint property specifications, see [Target Endpoint Properties](target-endpoint-properties-edeed6a.md).
 

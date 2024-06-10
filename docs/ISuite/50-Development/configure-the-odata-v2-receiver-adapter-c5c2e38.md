@@ -27,7 +27,7 @@ OData receiver adapter supports externalization. To externalize the parameters o
 > 
 > -   OData API response code is captured in the `camelhttpresponsecode` header.
 > 
-> -   OData adapter doesn’t support incoming payload in JSON format – both the body to be sent and the response from a server. The adapter only supports a payload in XML format.
+> -   OData adapter doesn’t support incoming payload in JSON format. The adapter only supports a payload in XML format.
 > 
 > -   OData adapter doesn't support the word `link` in your payload. The word is reserved for creating reference links.
 > 

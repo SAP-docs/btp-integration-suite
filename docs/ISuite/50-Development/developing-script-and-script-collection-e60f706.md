@@ -45,7 +45,7 @@ A typical workflow to rightly use a script collection is as follows:
 
 4.  [Deploying a Script Collection](deploying-a-script-collection-95cb2d9.md)
 
-5.  Save and deploy the integration flow.
+5.  [Save and Deploy the Integration Flow](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/33a5123e424c431bbe55bcfba971c230.html "Save and deploy the integration flow on the tenant to process it.") :arrow_upper_right:.
 
 
 

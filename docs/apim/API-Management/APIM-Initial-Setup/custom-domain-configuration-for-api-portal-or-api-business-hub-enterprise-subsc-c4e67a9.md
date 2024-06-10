@@ -7,9 +7,9 @@ To complete the process of configuring a custom domain for the API portal or the
 > ### Note:  
 > Custom domain for subscription URLs is available for *API Management, API portal*, *API Management, API business hub enterprise*, and API Management as a capability within the Integration Suite product.
 
-For information on the initial setup of the Custom Domain Service in the Cloud Foundry environment, see [Configuring Custom Domains](https://help.sap.com/viewer/74af813c7ee2457cb5eddca0cc70a0c1/Cloud/en-US/108177aea2a04d1b9006d96173bfa99a.html).
+For information on the initial setup of the Custom Domain Service in the Cloud Foundry environment, see [What Is Custom Domain?](https://help.sap.com/docs/CUSTOM_DOMAINS/6f35a23466ee4df0b19085c9c52f9c29/4f4c3ff62fd2413089dce8a973620167.html?version=Cloud).
 
-To map the custom domain to a SAAS application subscription, see [Map a SaaS Application to a Custom Domain](https://help.sap.com/viewer/74af813c7ee2457cb5eddca0cc70a0c1/Cloud/en-US/9f029c0ba0ab496fa2767b607eae924f.html).
+To map the custom domain to a SAAS application subscription, see [Manage SaaS Routes](https://help.sap.com/docs/custom-domain/custom-domain-manager/manage-saas-routes?version=Cloud).
 
 After mapping a custom domain to a SAAS application subscription using the Custom Domain Service, you need to raise a ticket through the [SAP Support Portal](https://support.sap.com/en/index.html) to complete the SaaS route configuration.
 

@@ -90,7 +90,7 @@ API Business Hub Enterprise \[New Design\]
 </td>
 <td valign="top">
 
-If you have added API Business Hub Enterprise as a capability with Integration suite, or if you’ve subscribed to API Business Hub Enterprise as part of standalone API Management subscription, we now have a new design of the user interface for you to experience. For more information, see [Consume API Proxies](consume-api-proxies-ea561e4.md) and [Configure the API business hub enterprise \[New Design\]](configure-the-api-business-hub-enterprise-new-design-54b4607.md).
+If you have added API Business Hub Enterprise as a capability with Integration suite, or if you’ve subscribed to API Business Hub Enterprise as part of standalone API Management subscription, we now have a new design of the user interface for you to experience. For more information, see [Consume API Proxies](consume-api-proxies-ea561e4.md) and [Configure API business hub enterprise](configure-api-business-hub-enterprise-54b4607.md).
 
 </td>
 <td valign="top">

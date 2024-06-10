@@ -47,7 +47,7 @@ Refer this section for the entities that are cloned and entities that aren’t c
 > 
 > With this the `created_by` will reflect in the API proxy.
 
-The following list displays the API Management entities that can be cloned:
+The following list displays the API Management entities that are cloned:
 
 -   Certificates and Certificate Store
 -   Rate Plans
@@ -62,7 +62,6 @@ The following list displays the API Management entities that can be cloned:
 -   Application Developer
 -   Access Control Permissions for API Product
 -   Custom Metrics and Charts
--   Cache Resources
 
 
 

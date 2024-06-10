@@ -229,7 +229,7 @@ Allows user to access SAP Business Accelerator Hub \(*Discover* section\).
 <tr>
 <td valign="top">
 
-All roles related to the *Monitor* area \(see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)\)
+All roles related to the *Monitor* area \(see [Tasks and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fda781c59e4b46a390ce5b409f60365e.html "") :arrow_upper_right:\)
 
 </td>
 <td valign="top">

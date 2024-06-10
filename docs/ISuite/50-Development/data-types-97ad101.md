@@ -97,7 +97,11 @@ Displays the restriction of the value range of a built-in data type for simple d
 </tr>
 </table>
 
-Select a row to view the following details. To edit a data type, choose *Edit* and select the node to edit its details:
+
+
+### 
+
+Select a row to view the following details. To edit a data type, select the respective node and choose *Edit*.
 
 **Element/Attribute Details**
 
@@ -163,10 +167,10 @@ Choose a type for an element or attribute:
 
 -   Primitive Type: From the *Value* field, select a built-in data type \(example string, decimal, or integer\)
 
--   Data Type: Choose *Select* to assign a referenced data type from the existing data types. The structure of the selected data type gets loaded in the tree table.
+-   Data Type: To assign a user defined data type, choose *Select*. Choose the integration packages from which you wish to list the data type and select the one to be reused. The structure of the selected data type gets loaded in the tree table.
 
     > ### Note:  
-    > For root node and for child attribute nodes only Simple Type data types can be assigned. Hence, only Simple Type data types from the selected packages are listed. The data types that are currently being edited are excluded from the list.
+    > While referencing, only Simple Type data types can be assigned for root node and child attribute nodes. Hence, only Simple Type data types from the selected packages are listed. The data types that are currently being edited are excluded from the list.
 
 
 > ### Note:  
@@ -188,7 +192,7 @@ Namespace
 </td>
 <td valign="top">
 
-Displays the namespace to which the referenced data type belongs to or where it's created.
+Displays the namespace to which the user defined data type belongs to or where it's created.
 
 </td>
 </tr>
@@ -202,7 +206,7 @@ Package Name
 </td>
 <td valign="top">
 
-Displays the package name of the data type reference assigned to the node.
+Displays the package name of the user defined data type assigned to the node.
 
 </td>
 </tr>
@@ -374,6 +378,244 @@ collapse: Similar to replace but subsequent blanks are replaced by a single blan
 </tr>
 </table>
 
+**Adding Child Nodes**
+
+To add elements and attributes while editing the data type, follow these steps:
+
+1.  Select the node where you want to add a child element or attribute.
+2.  Choose *Edit*.
+3.  Choose *Add* and select whether you wish to add Element or Attribute. If you wish to add multiple row of element or attributes, choose *Rows*. Specify the number of rows to be added and choose *Add*. Refer the following table to understand when and where can you add the elements and attributes.
+
+    ****
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Node
+    
+    </th>
+    <th valign="top">
+
+    Category
+    
+    </th>
+    <th valign="top">
+
+    Type
+    
+    </th>
+    <th valign="top">
+
+    Add Element
+    
+    </th>
+    <th valign="top">
+
+    Add Attribute
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Root
+    
+    </td>
+    <td valign="top">
+    
+    Complex
+    
+    </td>
+    <td valign="top">
+    
+    Assigned \(Any\)
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    <td valign="top">
+    
+    Yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Root
+    
+    </td>
+    <td valign="top">
+    
+    Complex
+    
+    </td>
+    <td valign="top">
+    
+    Not Assigned
+    
+    </td>
+    <td valign="top">
+    
+    Yes
+    
+    </td>
+    <td valign="top">
+    
+    Yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Any
+    
+    </td>
+    <td valign="top">
+    
+    Simple
+    
+    </td>
+    <td valign="top">
+    
+    Any
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Child
+    
+    </td>
+    <td valign="top">
+    
+    Element
+    
+    </td>
+    <td valign="top">
+    
+    Primitive or User defined Simple Data Type
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    <td valign="top">
+    
+    Yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Child
+    
+    </td>
+    <td valign="top">
+    
+    Element
+    
+    </td>
+    <td valign="top">
+    
+    User Defined Complex Data Type
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Child
+    
+    </td>
+    <td valign="top">
+    
+    Element
+    
+    </td>
+    <td valign="top">
+    
+    Not Assigned
+    
+    </td>
+    <td valign="top">
+    
+    Yes
+    
+    </td>
+    <td valign="top">
+    
+    Yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Child
+    
+    </td>
+    <td valign="top">
+    
+    Attribute
+    
+    </td>
+    <td valign="top">
+    
+    Any
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    </tr>
+    </table>
+    
+
+**Saving Data Types**
+
+Choose *Save* to save the draft. Choose*Save as version* to save the data type with a new version. All modifications are reflected in XSD tab.
+
+> ### Note:  
+> You can save te artifact even if you have validation errors in your *Structure* tab.
+
 
 
 <a name="loio97ad10142fc34269902006e488af1eff__section_zgr_fnp_mxb"/>
@@ -497,19 +739,6 @@ ES Repository Information
 ## XSD
 
 Displays the XML Schema Definition \(XSD\) that is, the text view of the data type in read-only mode.
-
-
-
-<a name="loio97ad10142fc34269902006e488af1eff__section_dtp_3hm_q1c"/>
-
-## Saving Data Types
-
-Choose *Save* to save the draft. All modifications are refelcted in XSD tab.
-
-Choose*Save as version* to save the Data Type with a new version. All modifications are reflected in XSD tab.
-
-> ### Note:  
-> You can use *Save* and*Save as version* even if you have validation errors in your *Structure* tab.
 
 **Related Information**  
 

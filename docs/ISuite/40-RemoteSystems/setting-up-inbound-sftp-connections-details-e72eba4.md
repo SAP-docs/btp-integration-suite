@@ -52,7 +52,7 @@ Configure the **SFTP sender adapter** to specify the technical details of how th
 
 [Inbound SFTP With Public Key Authentication](inbound-sftp-with-public-key-authentication-97e2baa.md "")
 
-[Configure the SFTP Sender Adapter](../50-Development/configure-the-sftp-sender-adapter-2de9ee5.md "The SFTP sender adapter connects an SAP Integration Suite tenant to a remote system using the SSH File Transfer protocol to read files from the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol (or SFTP).")
+[Configure the SFTP Sender Adapter](../50-Development/configure-the-sftp-sender-adapter-2de9ee5.md "The SFTP sender adapter connects an SAP Cloud Integration tenant to a remote system using the SSH File Transfer protocol to read files from the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol (or SFTP).")
 
 [Blog: Dynamically Configure the SFTP Receiver Adapter](https://blogs.sap.com/2020/05/29/cloud-integration-dynamically-configure-the-sftp-receiver-adapter/)
 

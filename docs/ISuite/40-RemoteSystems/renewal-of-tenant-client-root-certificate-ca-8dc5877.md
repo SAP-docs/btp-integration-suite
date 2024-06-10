@@ -35,17 +35,6 @@ Certificate renewal has to be performed in the following sequence:
 8.  Tenant administrator: Informs the receiver administrator that a new client certificate \(signed by another CA than the old one\) is now used.
 9.  Receiver administrator: Removes the old client certificate and also the old root certificate \(assumed that it is not longer used in any other communication\).
 
-Let us assume, the customer landscape is composed as described under *Connecting a Customer System to Cloud Integration*, section *Technical Landscape for On Premise-On Demand Integration*. In that case, SAP Web Dispatcher is used to receive incoming calls from the cloud. SAP Web Dispatcher \(as reverse proxy\) is the entry point for HTTPS requests into the customer system landscape. The configuration of the receiver \(server\) as indicated in step 2 in the list above comprises the following tasks for that example case:
-
--   Make sure that the reverse proxy trusts the new CA. A restart is required to finalize the related configuration steps.
--   Map the new certificate in AS ABAP back-end for authentication purpose
--   Edit the new CA in Web Dispatcher farm.
-
-    This step is performed by SAP IT.
-
--   Upload the new CA in workcenter under *Edit Certificate Trust List*.
--   Update the communication arrangements credentials such way that the new certificate is mapped to the inbound technical user.
-
 
 
 ## Receiver does not Accept Different Certificates at the same Time

@@ -312,6 +312,10 @@ The alias of the OAuth2 Refresh token URL, stored as Secure Parameter.
 
 A map of key-value pairs to configure additional connection properties. For more information, see the product documentation on Solace PubSub+ Platform.
 
+When using the `client_name` property, the provided value is always appended with a unique 10-character alphanumeric string separated by a `/`.
+
+For example, if the provided value is `iflow_x_sender`, the client\_name is `iflow_x_sender/az077ylyln`.
+
 > ### Note:  
 > JCSMP channel property keys must be prepended by `CLIENT_CHANNEL_PROPERTIES`.
 
@@ -717,4 +721,6 @@ The value of the respective User Property's key/name. The value can be defined d
 The adapter accepts headers on both sender and receiver side.
 
 The receiver can support the following headers on the message being published to the broker: ApplicationMessageId, ApplicationMessageType, CoS, CorrelationId, DeliveryCount, Destination, DestinationEndpointType, Expiration, HttpContentEncoding, HttpContentType, IsDiscardIndication, IsDMQEligible, IsElidingEligible, IsRedelivered, IsReplyMessage, Priority, ReceiveTimestamp, ReplicationGroupMessageId, ReplyToEndpointType, ReplyToDestination, SenderId, SenderTimestamp, SequenceNumber, TimeToLive, UserProperties. When setting up the integration flow, add them to the allowlist via Integration Flow -\> Runtime Configuration -\> Allowed Header\(s\), if required. See [Specify the Runtime Configuration](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/specify-runtime-configuration). Some of these headers can be defined at design-time via the *Message Properties* tab and the rest could be defined using a Content Modifier.
+
+Additionally, the header `SAP_MplCorrelationId` is propagated in every outgoing message as an entry in the UserProperties.
 

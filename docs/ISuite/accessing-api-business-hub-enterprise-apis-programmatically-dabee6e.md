@@ -43,7 +43,7 @@ This topic explains how to enable API access for API business hub enterprise.
         The client credentials like url, clientId, and clientSecret details appear for the given service key.
 
 
--   You have created a destination of type `OAuth2Credentials` to the XSUAA APIs by using the credentials you derived from creating the service key. This is required to access the XSUAA APIs for authorization and trust mangement services.
+-   You have created a destination of type `OAuth2Credentials` to the XSUAA APIs by using the credentials you derived from creating the service key.
     1.  From your *Subaccount*, navigate to *Connectivity* \> *Destinations* \> *New Destination*.
     2.  Choose the service instance that you created above.
     3.  In the *Destination Configuration* window, provide the details.
@@ -131,8 +131,8 @@ Create a service instance using API Access plan.
     > 
     >     See the section below to know how to obtain your `developerId`.
     > 
-    > -   If you have not registered to the API Management, API business hub enterprise application, follow the steps in [Register on API business hub enterprise](50-Development/register-on-api-business-hub-enterprise-c85fafe.md) and try again.
-    > -   If you are not registered to the API Management, API business hub enterprise application, and require your admin to onboard you, contact your admin. See [Onboard an Application Developer](50-Development/onboard-an-application-developer-786d107.md).
+    > -   If you have not registered to the API Management, API business hub enterprise application, follow the steps in [Register on API business hub enterprise](register-on-api-business-hub-enterprise-c85fafe.md) and try again.
+    > -   If you are not registered to the API Management, API business hub enterprise application, and require your admin to onboard you, contact your admin. See [Onboard an Application Developer](onboard-an-application-developer-786d107.md).
     > 
     > **How to obtain the `developerId`**:
     > 

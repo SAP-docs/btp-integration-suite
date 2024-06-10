@@ -16,14 +16,10 @@ Attach a rate plan to a product using the SAP Integration Suite.
 
 
 > ### Note:  
-> A product can only be associated with one rate plan. You can also attach a rate plan to a product during the product creation.
+> You can only attach rate plans to those products that do not have any rate plans associated with them. A product can only be associated with one rate plan. you can also attach a rate plan to a product during the product creation.
 
 > ### Note:  
-> If you change a rate plan or add a new rate plan to a product, all the existing applications of this product will remain unaffected by the changes.
-> 
-> Consider the following scenario, where you have subscribed to a product P1 \(that doesn't have a rate plan attached to it\) through application A1 in the source developer portal. In this case, the API calls associated with product P1 will not get billed.
-> 
-> Now if you add a rate plan to product P1, this rate plan will not impact the current billing of application A1 or any other existing subscription. However, if you create a new subscription to product P1, the associated rate plan charges will be applicable.
+> If you try changing a rate plan or add a new rate plan to a product, all the existing applications of this product will remain unaffected by the changes. For example, if you add a rate plan to a product associated with the application, which has already been subscribed, this will not impact the current billing of the application.
 
 
 
@@ -37,9 +33,9 @@ You are attaching a rate plan to a product.
 
 1.  Log on to the SAP Integration Suite.
 
-2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
 
-3.  On the *Configure* \> *APIs* page, choose *Products*.
+3.  On the *Design* \> *APIs* page, choose *Products*.
 
 4.  From the list of products available, select the product to which you want to add the rate plan.
 
@@ -59,9 +55,9 @@ You are attaching a rate plan to a product.
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="cfe6a30600f148a39a7920dbc7fa1ab2.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/lze1710737251935/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/1980cab180b647da9e550644197afef2.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Create a Rate Plan](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/cfe6a30600f148a39a7920dbc7fa1ab2.html "Create a rate plan using the API portal.") :arrow_upper_right:
 
- <?sap-ot O2O class="- topic/link " href="b8c1e6b68be74ead8700f7f8be9baa8b.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/lze1710737251935/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/1980cab180b647da9e550644197afef2.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Update a Rate Plan](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/b8c1e6b68be74ead8700f7f8be9baa8b.html "Update a rate plan using the API portal.") :arrow_upper_right:
 
- <?sap-ot O2O class="- topic/link " href="d4181ad418e4446e830c498d672204ff.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/lze1710737251935/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/1980cab180b647da9e550644197afef2.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Delete a Rate Plan](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/d4181ad418e4446e830c498d672204ff.html "Delete a rate plan using the API portal.") :arrow_upper_right:
 

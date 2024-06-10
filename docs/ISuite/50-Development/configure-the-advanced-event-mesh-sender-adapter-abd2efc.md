@@ -310,6 +310,10 @@ The alias of the OAuth2 Refresh token URL, stored as Secure Parameter.
 
 A map of key-value pairs to configure additional connection properties. For more information, see the product documentation on Solace PubSub+ Platform.
 
+When using the `client_name` property, the provided value is always appended with a unique 10-character alphanumeric string separated by a `/`.
+
+For example, if the provided value is `iflow_x_sender`, the client\_name is `iflow_x_sender/az077ylyln`.
+
 > ### Note:  
 > JCSMP channel property keys must be prepended by \`CLIENT\_CHANNEL\_PROPERTIES.\`. For example:
 > 
@@ -409,7 +413,7 @@ The list of AEM topic subscriptions from which messages will be consumed.
 The number of concurrent consumer flows.
 
 > ### Note:  
-> If the IFlow is running with more than 1 worker, this will be a multiple of the number of workers. For eg. if you configure this value to 3 and the IFlow is running with 2 workers, in total there will be 6 consumers.
+> If the integration flow is processed with more than 1 worker, this will be a multiple of the number of workers. For example, if you configure this value to 3 and the integration flow is running with 2 workers, in total there will be 6 consumers.
 
 
 
@@ -599,6 +603,8 @@ In addition to the SMF headers there are some non-SMF headers as well that are a
 1.  LocalProcessingAttempt: The count of processing attempts per delivery of a message from the advanced event mesh Queue or Durable Topic Endpoint.
 
 2.  TotalLocalProcessingAttempt: The total processing attempts for all deliveries which includes redelivery of a message from the advanced event mesh. Note: For the count to be accurate, ensure the DeliveryCount feature is enabled on the respective Queue or Durable Topic Endpoint and all the delivery attempts are made within the same integration flow.
+
+3.  The sender supports the propagation of `SAP_MplCorrelationId`. If the incoming message already contains header `SAP_MplCorrelationId`, the same value is propagated to the exchange.
 
 
 When setting up the integration flow, add them to the allowlist. To do that, click the modeling area outside any integration flow shape. Then, choose *Runtime Configuration* \> *Allowed Header\(s\)*, if required.

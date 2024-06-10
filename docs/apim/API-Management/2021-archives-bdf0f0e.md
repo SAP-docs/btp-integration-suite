@@ -163,7 +163,7 @@ Applications table on My Workspace
 </td>
 <td valign="top">
 
-The *My Workspace* section in API Business Hub Enterprise has been revamped to provide better performance. The Cost Incurred column has been removed from the Applications table. You can view the cost incurred details in the *Cost* section. For more information,see [Create an Application \[Classic Design\]](create-an-application-classic-design-7b4e71b.md).
+The *My Workspace* section in API Business Hub Enterprise has been revamped to provide better performance. The Cost Incurred column has been removed from the Applications table. You can view the cost incurred details in the *Cost* section. For more information,see [Create an Application \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/7b4e71b3887f4396aa22ce3e2ed7e0c3.html "Create an Application to consume the required APIs.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -485,7 +485,7 @@ API Business Hub Enterprise
 
 Ypu can now update the credentials used to establish a connection between the API portal and the API Business Hub Enterprise for a submitted request and an approved request.
 
-Action: To update the credentials, see [Updating the Connection Request Credentials for a Submitted Request \[Classic Design\]](APIM-Initial-Setup/updating-the-connection-request-credentials-for-a-submitted-request-classic-des-eb84854.md) and [Updating the Connection Request Credentials for an Approved Request \[Classic Design\]](APIM-Initial-Setup/updating-the-connection-request-credentials-for-an-approved-request-classic-des-b583b7a.md).
+Action: To update the credentials, see [Updating the Connection Request Credentials for a Submitted Request \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/eb84854e31d943b490af77cfb218ddbb.html "Update the credentials you've used to establish a connection between the API portal and the API business hub enterprise.") :arrow_upper_right: and [Updating the Connection Request Credentials for an Approved Request \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/b583b7a62f3c4cfdb50a499250c25c15.html "There can be instances where you have to update the credentials once the connection request is approved by the API business hub enterprise admin.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -667,7 +667,7 @@ Generate client ID and secret from API Portal UI
 
 You can now generate the credentials from the API Portal to establish the connection with centralized API Business Hub Enterprise.
 
-Action: See the Next Steps section in [Set Up API Portal Application](APIM-Initial-Setup/set-up-api-portal-application-29c281b.md). See the Prerequisites section and the Note in the Results section in [Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](APIM-Initial-Setup/create-a-connection-request-for-the-centralized-api-business-hub-enterprise-cla-02f7877.md).
+Action: See the Next Steps section in [Set Up API Portal Application](APIM-Initial-Setup/set-up-api-portal-application-29c281b.md). See the Prerequisites section and the Note in the Results section in [Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/02f7877360a64c6b8d853fed9b2d9cc6.html "To publish the API portal content on the API business hub enterprise, you must create a request to connect the API portal to the API business hub enterprise.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -843,7 +843,7 @@ Updating the Connection Request Credentials
 </td>
 <td valign="top">
 
-There can be instances where you have to update the credentials that you've used to establish a connection between the API portal and the API Business Hub Enterprise. For more information, see [Updating the Connection Request Credentials for a Submitted Request \[Classic Design\]](APIM-Initial-Setup/updating-the-connection-request-credentials-for-a-submitted-request-classic-des-eb84854.md).
+There can be instances where you have to update the credentials that you've used to establish a connection between the API portal and the API Business Hub Enterprise. For more information, see [Updating the Connection Request Credentials for a Submitted Request \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/eb84854e31d943b490af77cfb218ddbb.html "Update the credentials you've used to establish a connection between the API portal and the API business hub enterprise.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -1143,7 +1143,7 @@ API Business Hub Enterprise
 
 You can now maintain a centralized API catalog in one API Business Hub Enterprise that accepts contents like API proxies, API products, and so on, from multiple API portals.
 
-Action: You can select multiple products published from the same portal but you can't select products published from different portals. For more information, see [Centralized API business hub enterprise \[Classic Design\]](APIM-Initial-Setup/centralized-api-business-hub-enterprise-classic-design-33b706f.md) and [Create an Application \[Classic Design\]](create-an-application-classic-design-7b4e71b.md).
+Action: You can select multiple products published from the same portal but you can't select products published from different portals. For more information, see [Centralized API business hub enterprise \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/33b706f4f2e148ffb1cb9289d5cda27d.html "The centralized API business hub enterprise is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.") :arrow_upper_right: and [Create an Application \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/7b4e71b3887f4396aa22ce3e2ed7e0c3.html "Create an Application to consume the required APIs.") :arrow_upper_right:.
 
 </td>
 <td valign="top">

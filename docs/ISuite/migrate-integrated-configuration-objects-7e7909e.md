@@ -14,6 +14,8 @@ Migrate supported integration artifacts from your SAP Process Orchestration syst
 
 -   You've connected your SAP Process Orchestration System with SAP Integration Suite using SAP BTP destinations. See: [Connecting an SAP Process Orchestration System](connecting-an-sap-process-orchestration-system-4120ecb.md).
 
+-   You've understood the [Supported Patterns](supported-patterns-ad867ae.md#loioad867aea1fc749a99abc2cf643c94038) in Migration Tooling.
+
 -   You've created an integration package in Integration Suite for the purpose of migration. See: [Creating an Integration Package](50-Development/creating-an-integration-package-9126d79.md).
 
 
@@ -39,20 +41,33 @@ Migrate supported integration artifacts from your SAP Process Orchestration syst
 
 5.  Choose *Next Step*.
 
-6.  In the *Template* tab, a template that is associated to your ICO is automatically preselected. If there are multiple templates associated, select the template of your choice.
+6.  In the *Pattern* tab, a pattern that is associated to your ICO is automatically preselected. If there are multiple patterns associated, select the pattern of your choice.
 
     > ### Note:  
-    > If there are no associated templates available and yet the ICO is ready for migration, the migration tooling falls back to the default template. The default template creates a point-to-point integration design; this template doesn't contain the integration scenario or the communication channels from the source ICO.
+    > If there are no associated patterns available and yet the ICO is ready for migration, the migration tooling falls back to the default pattern. The default pattern creates a point-to-point integration design; this pattern doesn't contain the integration scenario or the communication channels from the source ICO.
     > 
-    > If a default template was applied, the sender and receiver channels are empty. But the resources from your ICO, like mappings and scripts, are migrated so that you can easily reuse them and create an integration design.
+    > If the default pattern was applied, the sender and receiver channels are empty. But the resources from your ICO, like mappings and scripts, are migrated so that you can easily reuse them and create an integration design.
     > 
-    > The default template is also available for all ICOs that are ready for migration with one or more supported templates.
+    > The default pattern is also available for all ICOs that are ready for migration with one or more supported patterns.
 
-    Based on the template that you select, you see a short description that explains what the template contains.
+    Based on the pattern that you select, you see a short description that explains what the pattern is.
 
-7.  Choose *Next Step*.
 
-8.  In the *Message Mapping from ESR* tab, select the import method for the message mapping objects that are associated to the ICO.
+If the preselected pattern is *Point-to-Point Asynchronous*, there are additional options available to better design your integration flow.
+
+7.  Optional: Enable the following options based on your requirements:
+
+    1.  Enable *Decouple with JMS Queue* if you want to decouple the sender and receiver adapter using a JMS queue. For more information, see [Decoupling via JMS Queue](50-Development/decoupling-via-jms-queue-ecbde19.md).
+
+    2.  Enable *Idempotent Process at Receiver Side* if you want the receiver adapter to identify and ignore any duplicate processing of messages. For more information, see [Define Idempotent Process Call](50-Development/define-idempotent-process-call-84c85d7.md).
+
+
+8.  Choose *Next Step*.
+
+
+Handle the dependent message mapping objects and its resources in an efficient way.
+
+9.  In the *Message Mapping from ESR* tab, select the import method for the message mapping objects that are associated to the ICO.
 
     > ### Note:  
     > By default, the option *Enable Reusable Message Mapping Artifacts* is enabled to so that you import the message mappings objects from ESR as message mapping artifacts to Integration Suite. This approach helps you to benefit from the advantages of reusable artifacts. See: [Creating Message Mapping as an Artifact](50-Development/creating-message-mapping-as-an-artifact-1d52a7b.md).
@@ -76,9 +91,9 @@ Migrate supported integration artifacts from your SAP Process Orchestration syst
         > For ease of reusability, in the *Artifact Package* column, select more or all integration packages so that you can check for the availability of the message mapping object across all selected packages.
 
 
-9.  Choose *Next Step*.
+10. Choose *Next Step*.
 
-10. In the *Message Mapping Resources* tab, identify and appropriately import the dependent resources of the message mapping objects like function library, WSDL, and a few more.
+11. In the *Message Mapping Resources* tab, identify and appropriately import the dependent resources of the message mapping objects like function library, WSDL, and a few more.
 
     This step is applicable only if you're creating at least one message mapping object in the previous step. If you're reusing all associated message mapping objects in the previous step, skip the substeps that follow and move to the [next step](migrate-integrated-configuration-objects-7e7909e.md#loio7e7909e6ebd44365867a6c611d94083a__iflow).
 
@@ -90,21 +105,21 @@ Migrate supported integration artifacts from your SAP Process Orchestration syst
     2.  For the dependent function library objects associated to the message mapping object, select a Function Libraries artifact in Integration Suite.
 
 
-11. Choose *Next Step*.
+12. Choose *Next Step*.
 
-12. In the *Integration Flow* tab, provide a *Name* and *ID* for the integration flow that is about to be created in Integration Suite.
+13. In the *Integration Flow* tab, provide a *Name* and *ID* for the integration flow that is about to be created in Integration Suite.
 
-13. Choose *Review*.
+14. Choose *Review*.
 
-14. In the *Review* tab, check all your entries. If needed, use the *Edit* option for the associated tab to make changes.
+15. In the *Review* tab, check all your entries. If needed, use the *Edit* option for the associated tab to make changes.
 
-15. Choose *Migrate*.
+16. Choose *Migrate*.
 
     An integration flow equivalent to the ICO is created. The sender and receiver channels, other flow steps like mappings, and attributes from the ICO are migrated too.
 
     For the sender and receiver adapter, all their attributes from the ICO are externalized in the newly created integration flow. This design helps you configure the parameters for Integration Suite without having to edit the integration flow.
 
-16. Look out for useful information in the *Migration Success* page.
+17. Look out for useful information in the *Migration Success* page.
 
     In the *Channel Mappings* section, you see the mappings for the sender and receiver channels in this tab. For the sender and receiver adapter types used in the source ICO, you see the equivalent adapter types that the migration tooling creates in the integration flow.
 

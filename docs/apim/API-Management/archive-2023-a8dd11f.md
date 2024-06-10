@@ -619,7 +619,7 @@ Certificate-based Credentials
 </td>
 <td valign="top">
 
-The connection between the centralised API business hub enterprise and the API portal has been secured with certificate-based authentication. For more information, see [Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](APIM-Initial-Setup/create-a-connection-request-for-the-centralized-api-business-hub-enterprise-cla-02f7877.md) and [Create a Connection Request for the Centralized API business hub enterprise \[New Design\]](APIM-Initial-Setup/create-a-connection-request-for-the-centralized-api-business-hub-enterprise-new-c7bda8c.md).
+The connection between the centralised API business hub enterprise and the API portal has been secured with certificate-based authentication. For more information, see [Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/02f7877360a64c6b8d853fed9b2d9cc6.html "To publish the API portal content on the API business hub enterprise, you must create a request to connect the API portal to the API business hub enterprise.") :arrow_upper_right: and [Create a Connection Request for the Centralized API business hub enterprise](APIM-Initial-Setup/create-a-connection-request-for-the-centralized-api-business-hub-enterprise-c7bda8c.md).
 
 </td>
 <td valign="top">
@@ -941,7 +941,7 @@ Latest Version of the Tenant Cloning Tool
 </td>
 <td valign="top">
 
-The 1.7.2 version of the Tenant Cloning Tool is now available. For more information, see [Clone API Management Content](APIM-Migration/clone-api-management-content-7abd887.md) and [Clone API Management Content for Cloud Foundry to Cloud Foundry Migration](APIM-Migration/clone-api-management-content-for-cloud-foundry-to-cloud-foundry-migration-2e5d127.md).
+The 1.7.2 version of the Tenant Cloning Tool is now available. For more information, see [Clone API Management Content](APIM-Migration/clone-api-management-content-7abd887.md) and [Clone API Management Content between Cloud Foundry Environments](APIM-Migration/clone-api-management-content-between-cloud-foundry-environments-2e5d127.md).
 
 </td>
 <td valign="top">
@@ -1005,7 +1005,7 @@ Latest Version of the Tenant Cloning Tool
 </td>
 <td valign="top">
 
-The 1.7.1 version of the Tenant Cloning Tool is now available. For more information, see [Clone API Management Content](APIM-Migration/clone-api-management-content-7abd887.md) and [Clone API Management Content for Cloud Foundry to Cloud Foundry Migration](APIM-Migration/clone-api-management-content-for-cloud-foundry-to-cloud-foundry-migration-2e5d127.md).
+The 1.7.1 version of the Tenant Cloning Tool is now available. For more information, see [Clone API Management Content](APIM-Migration/clone-api-management-content-7abd887.md) and [Clone API Management Content between Cloud Foundry Environments](APIM-Migration/clone-api-management-content-between-cloud-foundry-environments-2e5d127.md).
 
 </td>
 <td valign="top">
@@ -1261,7 +1261,7 @@ API business hub enterprise
 </td>
 <td valign="top">
 
-\[New DesignThe Manage options \(for example Manage Users, Manage Domain\] Categories, and so on\) on the API business hub enterprise \[New Design\] header are now listed under *\[New DesignEnterprise Manager*. Based on the roles assigned to the users, these options will appear under the *Enterprise Manager* tab. For more information, see [Manage Domain Categories \[New Design\]](manage-domain-categories-new-design-bd9691d.md).
+\[New DesignThe Manage options \(for example Manage Users, Manage Domain\] Categories, and so on\) on the API business hub enterprise \[New Design\] header are now listed under *\[New DesignEnterprise Manager*. Based on the roles assigned to the users, these options will appear under the *Enterprise Manager* tab. For more information, see [Manage Domain Categories](manage-domain-categories-bd9691d.md).
 
 </td>
 <td valign="top">
@@ -1325,7 +1325,7 @@ API business hub enterprise \[New Design\]
 </td>
 <td valign="top">
 
-You can now configure notifications for providing information to the API business hub enterprise end users on any website updates, events or news items from the API business hub enterprise new user interface. For more information, see [Manage Notifications \[New Design\]](manage-notifications-new-design-df32457.md).
+You can now configure notifications for providing information to the API business hub enterprise end users on any website updates, events or news items from the API business hub enterprise new user interface. For more information, see [Manage Notifications](manage-notifications-df32457.md).
 
 </td>
 <td valign="top">
@@ -1389,7 +1389,7 @@ API business hub enterprise
 </td>
 <td valign="top">
 
-The mandatory Client ID and Client Secret fields on *Edit Credentials* popup have been replaced with *\*API Portal Access Credentials* field. For more information, see [Updating the Connection Request Credentials for a Pending Request \[New Design\]](APIM-Initial-Setup/updating-the-connection-request-credentials-for-a-pending-request-new-design-dd37a7b.md) and [Updating the Connection Request Credentials for a Submitted Request \[Classic Design\]](APIM-Initial-Setup/updating-the-connection-request-credentials-for-a-submitted-request-classic-des-eb84854.md).
+The mandatory Client ID and Client Secret fields on *Edit Credentials* popup have been replaced with *\*API Portal Access Credentials* field. For more information, see [Updating the Connection Request Credentials for a Pending Request](APIM-Initial-Setup/updating-the-connection-request-credentials-for-a-pending-request-dd37a7b.md) and [Updating the Connection Request Credentials for a Submitted Request \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/eb84854e31d943b490af77cfb218ddbb.html "Update the credentials you've used to establish a connection between the API portal and the API business hub enterprise.") :arrow_upper_right:.
 
 </td>
 <td valign="top">

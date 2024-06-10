@@ -28,11 +28,7 @@ Message Mapping
 </td>
 <td valign="top">
 
-User-defined Functions \(UDFs\) with function libraries, imported archives, or parameters aren't supported when migrating a message mapping.
-
-Importing, viewing, and editing a local Java UDF is supported.
-
-For more information, see: [Importing Mapping Content from ES Repository](50-Development/IntegrationSettings/importing-mapping-content-from-es-repository-e18fc05.md).
+Parameterized message mappings from ES Repository can be imported but the parameters defined in the message mapping object in SAP Process Integration is not available in SAP Integration Suite after the import. For more information, see [Designing and Configuring Parameterized Mapping Programs](https://help.sap.com/docs/SAP_NETWEAVER_750/bbd7c67c5eb14835843976b790024ec6/c47b8d9349e143a2b62e9b747eae4bce.html?version=latest).
 
 </td>
 </tr>
@@ -60,20 +56,11 @@ XML to CSV Converter
 </td>
 <td valign="top">
 
-For the templates that use CSV to XML or XML to CSV converter, the following limitations apply:
+For the patterns that support CSV to XML or XML to CSV converter, the following limitations apply:
 
 -   XSD schema files from the source ICO aren't migrated. As an integration developer, you must manually download the schema files from the Enterprise Services Repository of SAP Process Orchestration and upload the same as resources in the integration flow. Then, configure the converter flow step before you deploy the integration flow.
 
 -   Field Fixed-Length separator isn't supported. You can't directly migrate field fixed length file-based Integrated Configuration Objects \(ICOs\).
-
-
-See:
-
--   [P2P\_ASYNC\_CSV\_0001](supported-templates-ad867ae.md#loio468e43826e1b42549baaf1e0771e3521)
-
--   [P2P\_ASYNC\_CSV\_0002](supported-templates-ad867ae.md#loiod03185fa66674bec8b258de8352325ce)
-
--   [P2P\_ASYNC\_CSV\_0003](supported-templates-ad867ae.md#loio2bb532d7b4b24bb2a34219f6e62e4ede)
 
 
 

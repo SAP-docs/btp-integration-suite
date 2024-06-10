@@ -175,7 +175,7 @@ Test and debug the runtime behaviour of APIs.
 </td>
 <td valign="top">
 
-[Test API Proxies](https://help.sap.com/viewer/4425026877144cc2b15505ed30215167/IAT/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of the API proxies.") :arrow_upper_right:
+[Test API Proxies](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of the API proxies.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -230,7 +230,7 @@ Analyze API usage and performance.
 </td>
 <td valign="top">
 
-[Analyze API Proxies](analyze-api-proxies-7712c61.md)
+[Analyze APIs](analyze-apis-7712c61.md)
 
 </td>
 </tr>
@@ -247,7 +247,7 @@ Generate revenue from APIs.
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="fcdc89b5c4884d5e8cfb32c5914943ab.xml" text="" desc="" xtrc="xref:12" xtrf="file:/home/builder/src/dita-all/lze1710737251935/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/de1ae814218247c6bac4975cb486e431.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Monetize APIs](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/fcdc89b5c4884d5e8cfb32c5914943ab.html "API Management provides monetization feature to all API providers to generate revenue for using the APIs.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -458,7 +458,7 @@ Documentation template for MIGs and MAGs.
 </td>
 <td valign="top">
 
-[Documentation Export and Settings](documentation-export-and-settings-4c442af.md)
+[Settings for MIGs and MAGs](settings-for-migs-and-mags-4c442af.md)
 
 </td>
 </tr>

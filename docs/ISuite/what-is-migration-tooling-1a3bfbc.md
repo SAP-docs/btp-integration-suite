@@ -4,7 +4,7 @@
 
 Learn more about Migration Tooling.
 
-Migration Tooling is a template-based feature in the Cloud Integration capability of the SAP Integration Suite that helps you migrate integration artifacts from SAP Process Orchestration to SAP Integration Suite. Before you migrate an integration artifact, evaluate the migration possibility using the Migration Assessment capability of SAP Integration Suite. For more information, see: [Migration Assessment](migration-assessment-5c5e50e.md).
+Migration Tooling is a pattern-based feature in the Cloud Integration capability of the SAP Integration Suite that helps you migrate integration artifacts from SAP Process Orchestration to SAP Integration Suite. Before you migrate an integration artifact, evaluate the migration possibility using the Migration Assessment capability of SAP Integration Suite. For more information, see: [Migration Assessment](migration-assessment-5c5e50e.md).
 
 > ### Note:  
 > This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
@@ -46,11 +46,11 @@ To get started with migration, you must:
 
 <a name="loio1a3bfbcb4b7d48fbbd394d3e4a09fc62__section_qnb_q5j_dvb"/>
 
-## Usage of Templates
+## Usage of Patterns
 
-Every ICO that can be migrated has an associated template in the migration tooling. It's based on these templates, the migration tooling creates equivalent integration flows in the SAP Integration Suite.
+The migration tooling analyses an migratable ICO and maps it with an integration pattern. It's based on these patterns, the migration tooling creates equivalent integration flows in the SAP Integration Suite.
 
-To know more about templates and the complete list of supported templates, see: [Supported Templates](supported-templates-ad867ae.md#loioad867aea1fc749a99abc2cf643c94038).
+To know more about patterns, see: [Supported Patterns](supported-patterns-ad867ae.md#loioad867aea1fc749a99abc2cf643c94038).
 
 
 

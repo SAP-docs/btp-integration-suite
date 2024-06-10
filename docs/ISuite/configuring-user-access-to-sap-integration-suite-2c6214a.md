@@ -71,7 +71,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    *PI\_Read\_Only* 
+    *PI\_Read\_Only*
     
     </td>
     <td valign="top">
@@ -83,7 +83,7 @@ For more information on role collections, see [Roles and Role Collections](https
     <tr>
     <td valign="top">
     
-    *PI\_Business\_Expert* 
+    *PI\_Business\_Expert*
     
     </td>
     <td valign="top">
@@ -95,7 +95,7 @@ For more information on role collections, see [Roles and Role Collections](https
     <tr>
     <td valign="top">
     
-    *PI\_Integration\_Developer* 
+    *PI\_Integration\_Developer*
     
     </td>
     <td valign="top">
@@ -107,7 +107,7 @@ For more information on role collections, see [Roles and Role Collections](https
     <tr>
     <td valign="top">
     
-    *PI\_Administrator* 
+    *PI\_Administrator*
     
     </td>
     <td valign="top">
@@ -119,7 +119,7 @@ For more information on role collections, see [Roles and Role Collections](https
     <tr>
     <td valign="top" rowspan="4">
     
-    API Management 
+    API Management
     
     </td>
     <td valign="top">
@@ -132,7 +132,7 @@ For more information on role collections, see [Roles and Role Collections](https
     -   Complete the onboarding process
     -   Access the *API Settings* page. See [Setting Up API Management Capability](50-Development/setting-up-api-management-capability-f34e86c.md) 
 
-    For more information on relevant roles, see [Tasks and Corresponding Role Collections](tasks-and-corresponding-role-collections-911ca5a.md).
+    For more information on relevant roles, see [User Roles in API Management \(New\)](user-roles-in-api-management-new-911ca5a.md).
 
     For end-to end instructions on how to set up and configure API Management, refer the tutorial [Set Up API Management from Integration Suite | Tutorials for SAP Developers](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html).
     
@@ -141,7 +141,7 @@ For more information on role collections, see [Roles and Role Collections](https
     <tr>
     <td valign="top">
     
-    Role Collection for API business hub enterprise: *AuthGroup.SelfService.Admin* 
+    Role Collection for API business hub enterprise: *AuthGroup.SelfService.Admin*
     
     </td>
     <td valign="top">
@@ -156,7 +156,7 @@ For more information on role collections, see [Roles and Role Collections](https
     <tr>
     <td valign="top">
     
-    Role Collection for Graph: *Graph.KeyUser* 
+    Role Collection for Graph: *Graph.KeyUser*
     
     </td>
     <td valign="top">
@@ -171,12 +171,67 @@ For more information on role collections, see [Roles and Role Collections](https
     <tr>
     <td valign="top">
     
-    Role Collection for Graph: *GraphNavigator.Viewer* 
+    Role Collection for Graph: *GraphNavigator.Viewer*
     
     </td>
     <td valign="top">
     
     Use the Graph Navigator in SAP API business hub enterprise to inspect business data graphs. See [Define Users](https://help.sap.com/docs/graph/initial-setup#2.-define-users-for-graph).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    -   APIFullAccess.
+
+
+    
+    </td>
+    <td valign="top">
+    
+    -   Provides runtime access to the registered OData services.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="2">
+    
+    Event Mesh
+    
+    </td>
+    <td valign="top">
+    
+    *EventMeshDeveloper*
+    
+    </td>
+    <td valign="top">
+    
+    -   Manage queues and topic subscriptions
+
+    -   Monitor event mesh and queues
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *EvenMeshAdmin*
+    
+    </td>
+    <td valign="top">
+    
+    -   Do *EventMeshDeveloper* tasks.
+
+    -   Manage event mesh lifecycle
+
+
+
     
     </td>
     </tr>

@@ -4,7 +4,7 @@
 
 An OAuth access token is written to the cache using a Populate Cache policy. The OAuth token is retrieved for subsequent requests by a Lookup Cache policy.
 
-At runtime, the Lookup Cache policy retrieves a value from the cache, assigning the value to the variable you specify with the <AssignTo\> element \(if no value is retrieved, the variable will not be set\). It looks for the value based on a cache key created through configuration that combines the <CacheKey\> and <Scope\> elements. In other words, to retrieve a particular value-added to the cache by a Populate Cache policy, your Lookup Cache policy must have cache key related elements configured in the same way as the Populate Cache policy.
+At runtime, the LookupCache policy retrieves a value from the cache, assigning the value to the variable you specify with the AssignTo element \(if no value is retrieved, the variable will not be set\). It looks for the value based on a cache key created through configuration that combines the CacheKey and Scope elements. In other words, to retrieve a particular value-added to the cache by a PopulateCache policy, your LookupCache policy must have cache key-related elements configured in the same way as the PopulateCache policy.
 
 You can retrieve cached values with the Lookup Cache policy.
 
@@ -71,7 +71,7 @@ Scope
 </td>
 <td valign="top">
 
-Enumeration used to construct a prefix for a cache key when a Prefix element is not provided in the <CacheKey\> element.The list of supported values are: Global, Application, Proxy, Target, and Exclusive.
+Enumeration used to construct a prefix for a cache key when a Prefix element is not provided in the CacheKey element.The list of supported values are: Global, Application, Proxy, Target, and Exclusive.
 
 </td>
 </tr>
@@ -114,6 +114,8 @@ Specifies a value that should be included in the cache key, creating a namespace
 </table>
 
 The following predefined Flow variables are available after you customize the behavior of the cache you define in a Lookup Cache policy.
+
+**Flow Variables**
 
 
 <table>

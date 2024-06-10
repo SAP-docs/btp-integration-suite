@@ -40,13 +40,8 @@ Service keys for connectivity to SAP Integration Suite and BTP services are rota
 
 ## Results
 
--   The solution is upgraded based on helm charts of the new version.
+The solution is upgraded based on helm charts of the new version.
 
-    > ### Note:  
-    > Upgrading Istio can lead to traffic disruption during the upgrade process.
-
--   If the upgrade of the Edge Integration Cell solution fails, you can choose to:
-    -   Retry the upgrade but be aware that if failure persists after a retry you can't rollback to the last successfully deployed version.
-    -   Rollback to the last successfully deployed version. For more information see [Rollback Edge Integration Cell Solution](rollback-edge-integration-cell-solution-9eec21b.md).
-
+> ### Note:  
+> Upgrading Istio can lead to traffic disruption during the upgrade process.
 

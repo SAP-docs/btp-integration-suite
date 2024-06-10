@@ -12,7 +12,7 @@ It's important to have a logical system behind the naming patterns applied. This
 
 ### Integration Packages
 
-The Integration Package is the folder containing or organizing your integration content \(integration flows, value mappings, APIs, and so forth\). Right now, an Integration Package is the minimum unit that can be transported. See [Creating an Integration Package](creating-an-integration-package-9126d79.md).
+The Integration Package is the folder containing or organizing your integration content \(integration flows, value mappings, APIs, and so forth\). Right now, an Integration Package is the minimum unit that can be transported. See [Create an Integration Package](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/748968a0f43d442f98d93a9a197cdbd2.html "Create an integration package that contains your integration flows.") :arrow_upper_right:.
 
 The naming convention for custom integration packages is as follows:
 
@@ -890,7 +890,7 @@ Description: Meaningful step description in camelCase
 
 ### Security Artifacts
 
-Security artifacts are the credentials needed to connect to an external system.
+Security artifacts are the credentials needed to connect to an external system. See [Security Elements](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/26e42b1d69304ce39b908fd11882e7ab.html "To set up the secure communication between a tenant and a sender/receiver system, certain security elements have to be created and - in some cases - exchanged between the involved components (the tenant on the one side and the sender/receiver system on the other side of the communication).") :arrow_upper_right:.
 
 The naming convention is as follows:
 

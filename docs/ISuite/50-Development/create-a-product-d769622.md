@@ -101,7 +101,7 @@ You create a product when you want to expose one or more API proxies to the Appl
 
     The OAuth 2.0 policy provides a way to limit the amount of access that is granted to an access token. For example, an access token issued to a client app may be granted READ and WRITE access to protected resources, or just READ access. You can implement your APIs to enforce any scope or combination of scopes you wish. So, if a client receives a token that has READ scope, and it tries to call an API endpoint that requires WRITE access, the call will fail.
 
-    Each product can have zero to many scopes assigned. These scopes can be assigned when the product is created or later. Scopes exist as a list of names and are included in the metadata associated with each product.
+    The maximum character limit for specifying scopes is 4K characters. Each product can have zero or multiple scopes assigned, as long as the total length of all the scopes does not exceed 4K characters. These scopes can be assigned when the product is created or later. Scopes exist as a list of names and are included in the metadata associated with each product.
 
 8.  In the *APIs* section, choose *Add*.
 9.  In the *Add APIs* window, select the required APIs and the corresponding resources.

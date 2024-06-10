@@ -4,7 +4,7 @@
 
 Clone the API Management content using the Tenant Cloning tool.
 
-Once you have your source and target system ready, you can clone your API Management content to the target system by running the Tenant Cloning Tool that you downloaded from [here](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Frepo1.maven.org%2Fmaven2%2Fcom%2Fsap%2Fapimgmt%2Fapim-tct-sdk%2F1.8.2%2Fapim-tct-sdk-1.8.2.zip).
+Once you have your source and target system ready, you can clone your API Management content to the target system by running the Tenant Cloning Tool that you downloaded from [here](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Frepo1.maven.org%2Fmaven2%2Fcom%2Fsap%2Fapimgmt%2Fapim-tct-sdk%2F1.8.3%2Fapim-tct-sdk-1.8.3.zip).
 
 
 
@@ -63,7 +63,38 @@ Once you have your source and target system ready, you can clone your API Manage
 
 
 
-<a name="loio7abd887d54604e699543ef57c618c8d7__section_dnh_4sd_4mb"/>
+<a name="loio7abd887d54604e699543ef57c618c8d7__section_ibv_hf2_2bc"/>
+
+## Context
+
+To migrate all API Management entities, you need to complete the apim-tct-input.json file in the tenant cloning tool by providing all the necessary details.
+
+In case you want to migrate selected API proxies from the source API Management tenant to the target API Management tenant, make the following configurations in the `apim-tct-input.json` file:
+
+-   Set `selectiveEntityMigration` to `true`
+
+-   Provide the names of the API proxies in `selectiveEntities`, separated by commas.
+
+
+For more information, see [selectiveEntityMigration](clone-api-management-content-7abd887.md#loio7abd887d54604e699543ef57c618c8d7__selective_entity_migration) and [selectiveEntities](clone-api-management-content-7abd887.md#loio7abd887d54604e699543ef57c618c8d7__selective_entities).
+
+By enabling this feature, you can explicitly clone the API proxies mentioned in the configuration file from the source to the target tenant. The cloning process will occur in the following sequence:
+
+-   Certificate stores
+
+-   Key value maps entries
+
+-   API providers
+
+-   API proxies
+
+
+> ### Note:  
+> If `selectiveEntityMigration` is set to `true`, only the certificate stores, key-value maps, API providers, and API proxies will be migrated. Other entities such as products and applications will not be migrated. If it is set to `false` or not available in the `apim-tct-input.json` file, all entities will be considered for migration.
+> 
+> The `selectiveEntityMigration` parameter is optional.
+
+
 
 ## Procedure
 
@@ -149,7 +180,7 @@ Once you have your source and target system ready, you can clone your API Manage
     
     URL of the source API management, API portal in the Neo environment
 
-    Example: `https://<application_name><provider_subaccount>-<consumer_subaccount>.<domain>`
+    `https://<application_name><provider_subaccount>-<consumer_subaccount>.<domain>`
     
     </td>
     </tr>
@@ -1317,6 +1348,107 @@ Once you have your source and target system ready, you can clone your API Manage
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    selectiveEntityMigration
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+    Boolean
+    
+    </td>
+    <td valign="top">
+    
+    Supported values: true/false
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+    
+    </td>
+    <td valign="top">
+    
+    If you want to migrate API proxies selectively, please set this flag to 'true'.
+
+    > ### Note:  
+    > Once this flag is set to 'true', please ensure that the *selectiveEntities* parameter is not left empty.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    selectiveEntities
+    
+    </td>
+    <td valign="top">
+    
+    API proxies
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+    Enter the list of API proxy names in a comma-separated manner as shown below.
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+    
+    </td>
+    <td valign="top">
+    
+    Enter the API proxies that you want to migrate.
+
+    > ### Sample Code:  
+    > ```
+    > "selectiveEntityMigration": true, 
+    >     "selectiveEntities": { 
+    >         "APIProxies": [ 
+    >             "SCpayload", "SetTLSPropertiesAsPayload", "newproxy" 
+    >         ] 
+    >       }
+    > ```
+
+
+    
+    </td>
+    </tr>
     </table>
     
     \*\*\* apiportalSelfServiceAdmin This input field is mandatory for Starter Plan migration.
@@ -1385,7 +1517,7 @@ Once you have your source and target system ready, you can clone your API Manage
 2.  Run the following commands from your Java command-line interface to verify the setup and check the version of the tool. This is an optional step.
     -   To verify the setup:
 
-        `java -jar apim-tct-client-<version>.jar verify`
+        `java -jar apim-tct-client-<version>.jar verifyExample:`
 
     -   To check the version of the tenant cloning tool you’re using:
 
@@ -1400,7 +1532,7 @@ Once you have your source and target system ready, you can clone your API Manage
 
     Your API Management entities are now cloned to your target system.
 
-    An excel file named `apimtct-output.xlsx` and a log file named `apimtct-logs.log` are generated in the same folder where the .jar file is present.
+    Example:An excel file named `apimtct-output.xlsx` and a log file named `apimtct-logs.log` are generated in the same folder where the .jar file is present.
 
     The status of each cloned entity is stored in a separate worksheet within the output excel file.
 

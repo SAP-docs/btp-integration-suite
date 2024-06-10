@@ -24,7 +24,7 @@ The API Access plan allows you to generate a service key by creating a service i
 
     OR
 
-    You have subscribed to the standalone *API Management, API portal* tile in the Cloud Foundry environment. For more information, see [Set Up API Portal Application](https://help.sap.com/viewer/4425026877144cc2b15505ed30215167/IAT/en-US/29c281b4a002404eba44e91c6fad0d34.html "To create APIs, products, import policy templates, and view applications, set up the API portal application.") :arrow_upper_right:.
+    You have subscribed to the standalone *API Management, API portal* tile in the Cloud Foundry environment. For more information, see [Set Up API Portal Application](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/29c281b4a002404eba44e91c6fad0d34.html "To create APIs, products, import policy templates, and view applications, set up the API portal application.") :arrow_upper_right:.
 
 -   As a subaccount administrator, you additionally need the role of \(org member\) and *space developer* in the Cloud Foundry space in which the Integration Suite is provisioned.
 

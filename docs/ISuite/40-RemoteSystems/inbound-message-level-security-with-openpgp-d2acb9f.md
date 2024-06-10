@@ -72,37 +72,10 @@ To implement message-level security for OpenPGP, you use PGP keys.
 
 ![](images/Keys_for_Message_Level_Security_PGP_Inbound_0c58adc.png)
 
-
-
-## Configuring the Sender
-
-1.  Generate and configure the PGP keys and the storage locations \(PGP secret and public keyrings\) for the sender system.
-
-2.  Import the related public keys from the tenant into the public PGP keyring of the sender and finish the configuration of the sender system.
-
-
-
-
-Provide the tenant administrator with the public key \(is used to verify messages sent to the tenant\).
-
-
-
-## Configuring the Integration Flow Steps for Message-Level Security
-
-Configure the security-related integration flow steps.
-
-Configure the **Decryptor** \(PGP\) and **Verifyer** \(PGP\) step.
-
-When signatures are expected, make sure that you specify the *Signer User ID of Key\(s\) from Public Keyring* for all expected senders.
-
-Based on the signer user ID of key\(s\) parts, the public key \(for message verification\) is looked up in the PGP public keyring. The signer user ID of key\(s\) key parts specified in this step restrict the list of expected senders and, in this way, act as an authorization check.
-
 **Related Information**  
 
 
 [How OpenPGP Works](how-openpgp-works-29bc188.md "You can use Open Pretty Good Privacy (Open PGP) to digitally sign and encrypt messages.")
 
 [Creating OpenPGP Keys](creating-openpgp-keys-6c5846b.md "You use the tool gpg4win to create the required keys for the usage of OpenPGP.")
-
-[Define PGP Decryptor](../50-Development/define-pgp-decryptor-d0dc511.md "")
 

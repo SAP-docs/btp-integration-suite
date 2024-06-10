@@ -44,3 +44,6 @@ This topic describes the behavior of the Tenant Cloning Tool with respect to clo
 > 
 > **Reason for the error**: During migration, the product gets cloned along with the newly revised rate plan in the target tenant. However, while creating the application in the target tenant, the system couldn't locate the revised rate plan ID. The revised rate plan ID was not present in the payload as it belonged to an older subscription, resulting in application creation failure.
 
+> ### Note:  
+> CacheResources cloning is currently not supported via the Tenant Cloning Tool. You must create it manually on the target Integration Suite using the following service: `<apiportal-host>/apiportal/api/1.0/Management.svc/CacheResources`.
+

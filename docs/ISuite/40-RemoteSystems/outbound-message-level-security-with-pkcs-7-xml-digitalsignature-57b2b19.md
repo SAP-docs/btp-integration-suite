@@ -74,21 +74,6 @@ To implement message-level security for standards PKCS\#7, WS-Security, and XML 
 
 
 
-## Configuring the Receiver
-
-Configure the receiver keystore in the following way:
-
--   Generate a key pair \(and get it signed by a CA\).
-
--   Import the tenant public key into the receiver keystore.
-
-
-
-
-Provide the tenant administrator with the public key \(is used to encrypt messages sent to the receiver\).
-
-
-
 <a name="loio57b2b199a17a49f1844bba06076f4be1__section_sqk_d2t_5bb"/>
 
 ## Configuring the Integration Flow Steps for Message-Level Security
@@ -118,8 +103,4 @@ In general, an alias is a reference to an entry in a keystore. A keystore can co
 [How WS-Security Works](how-ws-security-works-2f9a038.md "Messages can be protected according to the WS-Security standard.")
 
 [Creating Keys for the Usage of PKCS\#7, XML Digital Signature and WS-Security](creating-keys-for-the-usage-of-pkcs-7-xml-digital-signature-and-ws-security-6f43916.md "To set up message level security scenarios based on PKCS#7, XML Digital Signature or WS-Security, the required keys are created in the same way as for transport level security HTTPS.")
-
-[Sign the Message Content with PKCS\#7/CMS Signer](../50-Development/sign-the-message-content-with-pkcs-7-cms-signer-cc09e03.md "")
-
-[Encrypt and Sign the Message Content with PKCS\#7/CMS Encryptor](../50-Development/encrypt-and-sign-the-message-content-with-pkcs-7-cms-encryptor-21fd211.md "")
 

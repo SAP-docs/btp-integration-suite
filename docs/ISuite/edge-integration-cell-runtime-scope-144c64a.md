@@ -181,6 +181,7 @@ Operations
 
 -   Job scheduler
 
+-   Simulation
 
 For more information about restrictions with regard to monitoring, see: [Application Monitoring](application-monitoring-c9863ba.md).
 
