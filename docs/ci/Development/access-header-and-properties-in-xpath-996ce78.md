@@ -100,7 +100,7 @@ XPath
 </td>
 <td valign="top">
 
-java.lang.String
+java.lang.Number
 
 </td>
 <td valign="top">
