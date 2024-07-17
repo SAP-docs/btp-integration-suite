@@ -323,7 +323,7 @@ For more information, see [Configure the OAuth Client for OData Access](https://
 
 ### Prerequisites
 
--   You know the name of the identity provider created in [Configure OAuth Identity Provider in SAP Sales Cloud](https://help.sap.com/viewer/15e49174b4ed461e8d8b071ba13af3de/PROD/en-US/a22152f0f53a48bdbb4385cd438e0324.html "As an administrator for SAP Sales Cloud, you need to establish trust with the SAP BTP subaccount and create destinations..") :arrow_upper_right:.
+-   You know the name of the identity provider created in [Configure OAuth Identity Provider in SAP Sales Cloud](50-Development/sap-sales-cloud-a22152f.md#loioa22152f0f53a48bdbb4385cd438e0324__OAuth_SalesCloud).
 
 
 

@@ -780,7 +780,40 @@ Monitor
 </td>
 <td valign="top">
 
-Create, edit, delete user roles.
+View user roles
+
+</td>
+<td valign="top">
+
+Roles.Read
+
+</td>
+<td valign="top">
+
+MonitoringDataRead
+
+</td>
+<td valign="top">
+
+Integration Developer
+
+Business Expert
+
+Read-Only Persona/System Developer
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
+Create, edit, delete user roles
 
 </td>
 <td valign="top">
@@ -1544,6 +1577,70 @@ Monitor
 </td>
 <td valign="top">
 
+Add, edit, or undeploy number ranges, and undeploy integration flows
+
+</td>
+<td valign="top">
+
+IntegrationOperationServer.read
+
+NodeManager.deploycontent
+
+</td>
+<td valign="top">
+
+MonitoringArtifactsDeploy
+
+</td>
+<td valign="top">
+
+Integration Developer
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
+View number ranges
+
+</td>
+<td valign="top">
+
+IntegrationOperationServer.read
+
+</td>
+<td valign="top">
+
+MonitoringDataRead
+
+</td>
+<td valign="top">
+
+Integration Developer
+
+Business Expert
+
+Read-Only Persona/System Developer
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
 Activate or deactivate queues
 
 </td>
@@ -1560,6 +1657,105 @@ QueuesActivate
 
 </td>
 <td valign="top">
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
+Retry queues
+
+</td>
+<td valign="top">
+
+IntegrationOperationServer.read
+
+ESBDataStore.read
+
+ESBDataStore.retry
+
+</td>
+<td valign="top">
+
+QueuesRetry
+
+</td>
+<td valign="top">
+
+Integration Developer
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
+Delete queues
+
+</td>
+<td valign="top">
+
+IntegrationOperationServer.read
+
+ESBDataStore.read
+
+ESBDataStore.delete
+
+</td>
+<td valign="top">
+
+DataStoresAndQueuesDelete
+
+</td>
+<td valign="top">
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
+View queues
+
+</td>
+<td valign="top">
+
+IntegrationOperationServer.read
+
+ESBDataStore.read
+
+</td>
+<td valign="top">
+
+DataStoresAndQueuesRead
+
+</td>
+<td valign="top">
+
+Integration Developer
+
+Business Expert
+
+Read-Only Persona/System Developer
 
 Tenant Administrator
 
@@ -2176,6 +2372,141 @@ WorkspaceDesignGuidelinesConfigure
 <td valign="top">
 
 Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+General
+
+</td>
+<td valign="top">
+
+Provides permission for the read-only persona \(see [Personas for Cloud Integration](personas-for-cloud-integration-2937e5c.md)\)
+
+</td>
+<td valign="top">
+
+AuthGroup.ReadOnly
+
+</td>
+<td valign="top">
+
+AuthGroup\_ReadOnly
+
+</td>
+<td valign="top">
+
+Read-Only Persona
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+General
+
+</td>
+<td valign="top">
+
+Provides permission for the tenant administrator persona \(see [Personas for Cloud Integration](personas-for-cloud-integration-2937e5c.md)\)
+
+</td>
+<td valign="top">
+
+AuthGroup.Administrator
+
+</td>
+<td valign="top">
+
+AuthGroup\_Administrator
+
+</td>
+<td valign="top">
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+General
+
+</td>
+<td valign="top">
+
+Provides permission for the business expert persona \(see [Personas for Cloud Integration](personas-for-cloud-integration-2937e5c.md)\)
+
+</td>
+<td valign="top">
+
+AuthGroup.BusinessExpert
+
+</td>
+<td valign="top">
+
+AuthGroup\_BusinessExpert
+
+</td>
+<td valign="top">
+
+Business Expert
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+General
+
+</td>
+<td valign="top">
+
+Provides permission for the integration developer persona \(see [Personas for Cloud Integration](personas-for-cloud-integration-2937e5c.md)\)
+
+</td>
+<td valign="top">
+
+AuthGroup.IntegrationDeveloper
+
+</td>
+<td valign="top">
+
+AuthGroup\_IntegrationDeveloper
+
+</td>
+<td valign="top">
+
+Integration Developer
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+General
+
+</td>
+<td valign="top">
+
+This role/role template is only relevant for partners and internal SAP developers developing and publishing content to SAP Business Accelerator Hub. Further details can be found in the partner documentation.
+
+</td>
+<td valign="top">
+
+AuthGroup.ContentPublisher
+
+</td>
+<td valign="top">
+
+AuthGroup\_ContentPublisher
+
+</td>
+<td valign="top">
+
+n.a.
 
 </td>
 </tr>

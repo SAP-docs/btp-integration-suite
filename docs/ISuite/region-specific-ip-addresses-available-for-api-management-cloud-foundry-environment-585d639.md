@@ -79,7 +79,7 @@ West Europe
 </td>
 <td valign="top">
 
-51.105.226.79, 20.107.78.224, 20.4.205.181, 108.143.96.175, 172.201.40.15, 20.31.245.126
+51.105.226.79, 20.4.205.181, 20.31.245.126
 
 </td>
 </tr>
@@ -693,6 +693,9 @@ europe-west3
 </tr>
 </table>
 
+> ### Note:  
+> In case any discrepancies are observed in the IPs, please create a support ticket on the **OPU-API-OD-OPS** component.
+
 
 
 <a name="loio585d639653614d4aaf8818388db1e236__section_zs5_jsb_w1c"/>
@@ -838,8 +841,6 @@ us-east-1
 
 
 [Configuring Additional Virtual Host in Cloud Foundry Environment](configuring-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "A virtual host allows you to host multiple domain names on the API Management capability within Integration Suite.")
-
-[User Roles in API Management \(New\)](user-roles-in-api-management-new-911ca5a.md "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.")
 
 [User Roles in API Management](user-roles-in-api-management-7010b58.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
 

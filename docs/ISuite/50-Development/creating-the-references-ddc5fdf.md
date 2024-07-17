@@ -36,7 +36,7 @@ You can use the CertificateStoreReferences API to create a new certificate store
         > ### Sample Code:  
         > ```
         > {
-        > "name": "reference-name"
+        > "name": "reference-name",
         > "certificateStoreName": "store-name"
         > }								
         > 							

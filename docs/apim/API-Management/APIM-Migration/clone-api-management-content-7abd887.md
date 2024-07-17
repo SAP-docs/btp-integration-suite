@@ -94,6 +94,11 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
 > 
 > The `selectiveEntityMigration` parameter is optional.
 
+> ### Note:  
+> We recommend migrating all API artifacts during the migration activity. While it is possible to selectively migrate API proxies, this should not be the preferred method for migrating API artifacts. It should only be used with careful consideration of dependencies.
+> 
+> If you need to regularly move or migrate API Management artifacts between tenants, it is recommended to use the transport capability instead. For more information, see [Transport APIs and Its Related Artifacts](../transport-apis-and-its-related-artifacts-eb83118.md).
+
 
 
 ## Procedure
@@ -382,15 +387,15 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     </td>
     <td valign="top">
     
-    This is the Tenant ID for your Cloud Foundry sub account where starter plan serivce instance is enabled.
+    This is the Tenant ID for your multi-cloud foundation sub account where starter plan serivce instance is enabled.
 
     > ### Note:  
     > If you are migrating within the same subaccount, you are not required to add this parameter.
     > 
-    > This parameter is mandatory if you are migrating to a Cloud Foundry subaccount, which is different from your existing starter plan subaccount.
+    > This parameter is mandatory if you are migrating to a multi-cloud foundation subaccount, which is different from your existing starter plan subaccount.
 
     > ### Note:  
-    > Navigate to the cockpit to fetch the Cloud Foundry Tenant ID for the subaccount where the starter plan service instance exists.![](images/Tenant_ID_293b582.png)
+    > Navigate to the cockpit to fetch the multi-cloud foundation Tenant ID for the subaccount where the starter plan service instance exists.![](images/Tenant_ID_293b582.png)
 
 
     
@@ -924,7 +929,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     </td>
     <td valign="top">
     
-    URL received during creation of the service key for Developer Portal API access for the `AuthGroup.API.Admin` role.
+    URL received during creation of the service key for developer portal API access for the `AuthGroup.API.Admin` role.
     
     </td>
     </tr>
@@ -978,7 +983,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     </td>
     <td valign="top">
     
-    The client ID received during creation of the service key for Developer Portal API access for the `AuthGroup.API.Admin` role.
+    The client ID received during creation of the service key for developer portal API access for the `AuthGroup.API.Admin` role.
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
     
@@ -1007,7 +1012,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     </td>
     <td valign="top">
     
-    The client secret received during creation of the service key for Developer Portal API access for the `AuthGroup.API.Admin` role.
+    The client secret received during creation of the service key for developer portal API access for the `AuthGroup.API.Admin` role.
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
     
@@ -1477,8 +1482,8 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
                 "url": "<URL of Source (Neo based) Developer Portal>",
                 "username": "<user id having AuthGroup.API.Admin role in above subscription>",
                 "password": "<password of the above user>"
-            },
-            "cfSubaccountTenantID": "1d1b3316-cf22-44b5-973f-d2d8a132444a"
+            }
+            
         },
        
         "target": {
@@ -1503,13 +1508,17 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
             }
         },
     
-       “skipApplicationKeySecretCloning” : <false|true>,
+       "skipApplicationKeySecretCloning" : <false|true>,
                
        "clone": {
                 "skip-apiportal": <false|true> ,
                 "skip-devportal": <false|true> 
             },
        "stage": <"DEFAULT" | "SWITCHOVER">
+       "selectiveEntityMigration": <false|true>, //If you are setting the 'selectiveEntityMigration' parameter to true, please make sure to enter the names of the API proxies in the 'selectiveEntities' field using a comma-separated format.
+       "selectiveEntities": { 
+            "APIProxies": ["Proxy1", "Proxy2", "Proxy3"] 
+          }
     
     }
     ```

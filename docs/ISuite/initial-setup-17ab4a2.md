@@ -117,7 +117,7 @@ Once you enable Graph, you see both Graph role collections in your list.
 
 -   Graph Navigator Viewer
 
-    Graph Navigator is a tool in SAP API business hub enterprise that developers use to inspect business data graphs. For more information, see [Graph Navigator in SAP API Business Hub Enterprise](https://help.sap.com/viewer/15e49174b4ed461e8d8b071ba13af3de/PROD/en-US/8e75d3178a684912a4b28d3b9593539c.html "The Graph Navigator is a tool that you use to inspect business data graphs.") :arrow_upper_right:.
+    Graph Navigator is a tool in SAP API business hub enterprise that developers use to inspect business data graphs. For more information, see [Graph Navigator in SAP API Business Hub Enterprise](50-Development/graph-navigator-in-sap-api-business-hub-enterprise-8e75d31.md).
 
     To assign the *GraphNavigator.Viewer* role collection to a user with the *Graph\_Navigator\_Viewer* role, do the following:
 

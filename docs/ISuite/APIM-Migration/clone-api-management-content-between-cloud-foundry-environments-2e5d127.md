@@ -67,7 +67,7 @@ Once you have your source and target system ready, you can clone your API Manage
 
 ## Context
 
-To migrate all API Management entities, you need to complete the apim-tct-input.json file in the tenant cloning tool by providing all the necessary details. command to make the file executable.
+To migrate all API Management entities, you need to complete the apim-tct-input.json file in the tenant cloning tool by providing all the necessary details.
 
 In case you want to migrate selected API proxies from the source API Management tenant to the target API Management tenant, make the following configurations in the `apim-tct-input.json` file:
 
@@ -93,6 +93,11 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
 > If `selectiveEntityMigration` is set to `true`, only the above entities will be migrated. Other entities such as products and applications will not be migrated. If it is set to `false` or not available in the `apim-tct-input.json` file, all entities will be considered for migration.
 > 
 > The `selectiveEntityMigration` parameter is optional.
+
+> ### Note:  
+> We recommend migrating all API artifacts during the migration activity. While it is possible to selectively migrate API proxies, this should not be the preferred method for migrating API artifacts. It should only be used with careful consideration of dependencies.
+> 
+> If you need to regularly move or migrate API Management artifacts between Integration Suite tenants, it is recommended to use the transport capability instead. For more information, see [Transport APIs and Its Related Artifacts](../50-Development/transport-apis-and-its-related-artifacts-eb83118.md).
 
 
 
@@ -778,7 +783,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     
     The client ID received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
 
-    You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
+    You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the The client secret received during creation of the service key for `apim-tct-input.json` file.
     
     </td>
     </tr>
@@ -805,7 +810,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     </td>
     <td valign="top">
     
-    The client secret received during creation of the service key for API portal API access for the `APIPortal.Administrator` role
+    API portal API access for the `APIPortal.Administrator` role
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
     
@@ -866,7 +871,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     </td>
     <td valign="top">
     
-    The contents of the certificate received during creation of the service key for API portal API access for the APIPortal.Administrator role.
+    The client secret received during creation of the service The contents of the certificate received during creation of the service key for API portal API access for the APIPortal.Administrator role.
     
     </td>
     </tr>
@@ -1475,7 +1480,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
                 "tokenUrl": "<token url received during service key creation for API business hub enterprise's API Access for AuthGroup.API.Admin role. For example, https://<Space name>.authentication.sap.hana.ondemand.com/oauth/token>",
     	        "clientId": "<clientId received during service key creation for API business hub enterprise's API Access for AuthGroup.API.Admin role. For example, sb-apiaccessxxxxxxxx!xxxx|api-portal-xsuaa!bxxxx>",
     	        "clientSecret": "<clientSecret received during service key creation for API business hub enterprise's API Access for AuthGroup.API.Admin role>"
-            },
+            }
             
         },
        
@@ -1495,13 +1500,17 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
             }
         },
     
-       “skipApplicationKeySecretCloning” : <false|true>,
+       "skipApplicationKeySecretCloning" : <false|true>,
                
        "clone": {
                 "skip-apiportal": <false|true> ,
                 "skip-devportal": <false|true> 
             },
-       "stage": <"DEFAULT">
+       "stage": <"DEFAULT">,
+       "selectiveEntityMigration": <false|true>, //If you are setting the 'selectiveEntityMigration' parameter to true, please make sure to enter the names of the API proxies in the 'selectiveEntities' field using a comma-separated format.
+       "selectiveEntities": { 
+            "APIProxies": ["Proxy1", "Proxy2", "Proxy3"] 
+          }
     
     }
     ```

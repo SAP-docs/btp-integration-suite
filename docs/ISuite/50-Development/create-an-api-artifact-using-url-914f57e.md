@@ -222,11 +222,18 @@ Create an API artifact of the type REST, SOAP, and OData using the HTTP endpoint
 
 
 
-10. For a given resource, choose *Show/Hide* to view the list of properties and their associated API documentation. You can add descriptions for each resource in the editor.
+10. For a given OData-based API artifact, you can import an .edmx file to update the API artifact with the latest resources.
 
-11. To define policies on the API, go to the *Policies* tab. For more information about how to add a policy, see [Policy Definition and Types of Policies Supported by Edge Integration Cell](policy-definition-and-types-of-policies-supported-by-edge-integration-cell-c744df5.md).
+    Importing an .edmx file will overwrite the existing list of resources in the API artifact. However, the description for each resource will still be maintained and not be changed.
 
-12. Once you’ve filled in all the required details of the API, you can select one of the following actions for the API:
+    > ### Note:  
+    > Importing the .edmx file will convert the API artifact to OpenAPI Specification 3.0.0. Please review the changes carefully before saving the API artifact.
+
+11. For a given resource, choose *Show/Hide* to view the list of properties and their associated API documentation. You can add descriptions for each resource in the editor.
+
+12. To define policies on the API, go to the *Policies* tab. For more information about how to add a policy, see [Policy Definition and Types of Policies Supported by Edge Integration Cell](policy-definition-and-types-of-policies-supported-by-edge-integration-cell-c744df5.md).
+
+13. Once you’ve filled in all the required details of the API, you can select one of the following actions for the API:
 
 
     <table>

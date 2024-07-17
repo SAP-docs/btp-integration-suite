@@ -13,7 +13,7 @@ Anomaly detection is an AI-based feature that involves the identification of pat
 
 ## How it works
 
-Anomaly detection involves training an AI model to understand the behavior of your API proxies \(“proxified” API endpoints\). It works by comparing a current timeframe \(referred to as a 'window'\) of API proxy calls with the corresponding past time-series data. The AI model will be automatically trained using API data from the previous 3 months. Therefore, a minimum of 3 months' worth of API data on an API proxy is required to train the model and reliably detect anomalies. The detection capability improves over time.
+Anomaly detection involves training an AI model to understand the behavior of your API proxies \(“proxified” API endpoints\). It works by comparing a current timeframe \(referred to as a 'window'\) of API proxy calls with the corresponding past time-series data. The AI model will be trained automatically using all past API data that is available, with a minimum requirement of 3 months' worth of data. Therefore, it is necessary to have at least 3 months' worth of API data on an API proxy to train the model and reliably detect anomalies. The detection capability improves over time.
 
 On average, the training process takes approximately 3 hours to complete.
 
@@ -36,5 +36,5 @@ In addition, you can select up to five individual APIs, and track call behavior 
 
 -   **Active Monitoring**: Enables active monitoring by highlighting potential anomalies, helping address the issues promptly.
 -   **Identification of Irregularities**: Visualizing the data enables quick identification of irregularities or patterns that deviate from normal behavior.
--   **E-mail Alerts**: You have the option to subscribe to the **SAP Alert Notification Service**, which offers automated email notifications whenever an anomaly is detected. This enables immediate action, minimizing the potential impact of the anomaly and ensuring timely resolution of any issues. For more information, see [Subscribing to Email Notification Alerts](subscribing-to-email-notification-alerts-88e96f4.md).
+-   **Notification Alerts**: You now have the option to subscribe to the **SAP Alert Notification Service** and start receiving alerts whenever an anomaly is detected through your preferred communication channel. This enables immediate action, minimizing the potential impact of the anomaly and ensuring timely resolution of any issues. For more information, see [Subscribing to Notification Alerts](subscribing-to-notification-alerts-88e96f4.md).
 

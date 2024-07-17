@@ -28,7 +28,7 @@ Create a Microsoft Azure account.
 </td>
 <td valign="top">
 
-[https://support.microsoft.com/en-us/account-billing/how-to-create-a-new-microsoft-account-a84675c3-3e9e-17cf-2911-3d56b15c0aaf](https://support.microsoft.com/en-us/account-billing/how-to-create-a-new-microsoft-account-a84675c3-3e9e-17cf-2911-3d56b15c0aaf)
+[How to create a new Microsoft account](https://support.microsoft.com/en-us/account-billing/how-to-create-a-new-microsoft-account-a84675c3-3e9e-17cf-2911-3d56b15c0aaf)
 
 </td>
 </tr>
@@ -45,7 +45,7 @@ Subscribe to Microsoft Azure.
 </td>
 <td valign="top">
 
-[https://learn.microsoft.com/en-us/dynamics-nav/how-to--sign-up-for-a-microsoft-azure-subscription](https://learn.microsoft.com/en-us/dynamics-nav/how-to--sign-up-for-a-microsoft-azure-subscription)
+[Sign Up for a Microsoft Azure Subscription](https://learn.microsoft.com/en-us/dynamics-nav/how-to--sign-up-for-a-microsoft-azure-subscription)
 
 </td>
 </tr>
@@ -57,7 +57,7 @@ Sign up for Azure Kubernetes Service \(AKS\).
 </td>
 <td valign="top">
 
-[https://docs.microsoft.com/en-us/azure/aks](https://docs.microsoft.com/en-us/azure/aks)
+[AKS](https://docs.microsoft.com/en-us/azure/aks)
 
 </td>
 </tr>
@@ -73,11 +73,11 @@ The service principal ID and client secret can be used as logon credentials. The
 </td>
 <td valign="top">
 
-[https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal)
+[Create an Azure container registry using the Azure portal](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal)
 
-[https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-service-principal](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-service-principal)
+[Azure Container Registry authentication with service principals](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-service-principal)
 
-[https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks)
+[Authenticate with ACR from AKS](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks)
 
 </td>
 </tr>
@@ -89,7 +89,7 @@ Install the Azure Command-Line Interface \(CLI\).
 </td>
 <td valign="top">
 
-[https://docs.microsoft.com/en-us/cli/azure/install-azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+[How to install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 </td>
 </tr>
@@ -101,7 +101,7 @@ Install the Kubernetes command-line tool `kubectl`.
 </td>
 <td valign="top">
 
-[https://kubernetes.io/docs/tasks/tools/\#kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
+[Install Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
 
 </td>
 </tr>

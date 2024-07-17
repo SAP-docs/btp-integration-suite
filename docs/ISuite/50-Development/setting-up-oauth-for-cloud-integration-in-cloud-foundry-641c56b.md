@@ -15,13 +15,13 @@ Use OAuth2ClientCredentials for connecting requests to the server. This OAuth2Cl
 > ### Note:  
 > The values you provide for the above, are the ones associated with your Cloud Integration tenant.
 > 
-> **Generate *clientId*, *clientSecret*, and *tokenUrl* Associated with Your Cloud Integration Tenant**
+> **Generate *clientId*, *clientSecret*, and *tokenUrl* Associated with Your Cloud Integration Tenant.**
 
 
 
 ## Procedure
 
-1.  In your web browser, open the *SAP BTP Cockpit* - [https://eu-access.cockpit.btp.cloud.sap](https://eu-access.cockpit.btp.cloud.sap).
+1.  In your web browser, open the *SAP BTP Cockpit* - [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap).
 
 2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
 
@@ -38,7 +38,7 @@ Use OAuth2ClientCredentials for connecting requests to the server. This OAuth2Cl
     
     ```
 
-6.  Choose *Next* until you reach the *Confirm* section
+6.  Choose *Next* until you reach the *Confirm* section.
 
 7.  In the *Confirm* section, enter a unique *Instance Name* and choose *Finish*.
 
@@ -57,7 +57,7 @@ The creation of service instance is successful.
 
 ## Next Steps
 
-Now, for the created service instance, generate a service key from the steps given below:
+Now, for the created service instance, generate a service key from the steps given next:
 
 <a name="task_mc5_3n3_zsb"/>
 
@@ -108,5 +108,5 @@ Now, for the created service instance, generate a service key from the steps giv
 
 ## Context
 
-The service keys provide you with *clientId* and *clientSecret*. The *clientId* can be used as username and secret can be used as password if you would like to connect to your integration flows of Cloud Integration via Basic Authentication. Alternatively, you can leverage the*clientId*, *clientSecret*, and *tokenUrl* from the service keys file to get the OAuth access token and then connect to your integration flow of Cloud Integration via OAuth access token approach. For more information, see [Creating an API Proxy using SAP Cloud Integration API Provider](creating-an-api-proxy-using-sap-cloud-integration-api-provider-aefbd74.md).
+The service keys provide you with *clientId* and *clientSecret*. The *clientId* can be used as username and secret can be used as password if you would like to connect to your integration flows of Cloud Integration via Basic Authentication. Alternatively, you can leverage the *clientId*, *clientSecret*, and *tokenUrl* from the service keys file to get the OAuth access token and then connect to your integration flow of Cloud Integration via OAuth access token approach. For more information, see [Creating an API Proxy using SAP Cloud Integration API Provider](creating-an-api-proxy-using-sap-cloud-integration-api-provider-aefbd74.md).
 

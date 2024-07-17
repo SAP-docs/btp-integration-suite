@@ -71,6 +71,165 @@ Latest Revision
 Available as of
 
 </th>
+<th valign="top">
+
+Version
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Multiple Target Endpoints
+
+</td>
+<td valign="top">
+
+Previously, the only way to add multiple target endpoints was through API proxy zip updates, and policies could only be added to the target endpoint that appeared first in the Target EndPoints dropdown menu. Now you have the ability to easily add and manage multiple target endpoints using the user interface. Furthermore, the UI enables you to model policies for all the available target enpoints within an API proxy.
+
+See:
+
+-   [Create an API Proxy](https://help.sap.com/docs/integration-suite/sap-integration-suite/create-api?version=CLOUD&q=create%20an%20api%20proxy)
+
+-   [Edit an API Proxy](https://help.sap.com/docs/integration-suite/sap-integration-suite/edit-api-proxy?version=CLOUD)
+
+
+SAP API Management customers choose:
+
+-   [Create an API Proxy](https://help.sap.com/docs/sap-api-management/sap-api-management/create-api?version=Cloud)
+
+-   [Edit an API Proxy](https://help.sap.com/docs/sap-api-management/sap-api-management/edit-api-proxy?version=Cloud)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+2024-07-14
+
+</td>
+<td valign="top">
+
+2024-07-14
+
+</td>
+<td valign="top">
+
+2405
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+API Management Analytics
+
+</td>
+<td valign="top">
+
+A navigation change has been implemented in the SAP Integration Suite for accessing API Management Analytics. The sub-menu previously named *APIs*, located under *Monitor* has been renamed to *Analyze* and relocated to the same level as *Monitor* in the navigation bar. The functionality remains unchanged, and it should continue to operate as it did before.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-07-14
+
+</td>
+<td valign="top">
+
+2024-07-14
+
+</td>
+<td valign="top">
+
+2405
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -151,6 +310,11 @@ Not applicable
 2024-05-31
 
 </td>
+<td valign="top">
+
+2404
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -219,6 +383,11 @@ Not applicable
 2024-06-10
 
 </td>
+<td valign="top">
+
+2404
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -285,6 +454,11 @@ Not applicable
 2024-06-10
 
 </td>
+<td valign="top">
+
+2404
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -331,6 +505,11 @@ SAP API Management customers choose:
 
 
 
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 <td valign="top">
@@ -439,6 +618,11 @@ Not applicable
 2024-04-06
 
 </td>
+<td valign="top">
+
+ 
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -516,6 +700,11 @@ Not applicable
 2024-04-06
 
 </td>
+<td valign="top">
+
+ 
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -580,6 +769,11 @@ Not applicable
 <td valign="top">
 
 2024-04-04
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -648,6 +842,11 @@ Not applicable
 2024-03-22
 
 </td>
+<td valign="top">
+
+ 
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -712,6 +911,11 @@ Not applicable
 <td valign="top">
 
 2024-03-09
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -780,6 +984,11 @@ Not applicable
 2024-03-09
 
 </td>
+<td valign="top">
+
+ 
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -846,6 +1055,11 @@ Not applicable
 2024-03-09
 
 </td>
+<td valign="top">
+
+ 
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -910,6 +1124,11 @@ Not applicable
 <td valign="top">
 
 2024-01-20
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -980,6 +1199,11 @@ Not applicable
 <td valign="top">
 
 2024-01-20
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1060,6 +1284,11 @@ Not applicable
 <td valign="top">
 
 2024-01-20
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>

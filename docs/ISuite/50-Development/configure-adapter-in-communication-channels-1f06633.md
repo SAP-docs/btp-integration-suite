@@ -32,7 +32,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Allows SAP Integration Suite to consume messages from queues or subscriptions in SAP Integration Suite, advanced event mesh.
+Allows SAP Integration Suite
 
 See: [Configure the Advanced Event Mesh Sender Adapter](configure-the-advanced-event-mesh-sender-adapter-abd2efc.md)
 
@@ -573,6 +573,22 @@ Receiver adapter
 Enables SAP Integration Suite to connect to Azure Storage, to manage files, containers, folders, and messages, and to perform *create, read, update and delete* \(CRUD\) operations on objects stored there.
 
 See: [Configure the AzureStorage Receiver Adapter](configure-the-azurestorage-receiver-adapter-30f59b0.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Coupa*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to exchange data with Coupa. Coupa is a business spending management software.
+
+See: [Coupa Receiver Adapter](coupa-receiver-adapter-648ac01.md)
 
 </td>
 </tr>
@@ -1123,6 +1139,22 @@ Receiver adapter
 Connects SAP Integration Suite to a remote system using the HTTP protocol to write files to the system.
 
 See: [Configure the Microsoft SharePoint Receiver Adapter](configure-the-microsoft-sharepoint-receiver-adapter-b12b33a.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*NetSuite* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to NetSuite. NetSuite is an integrated cloud business software suite, including business accounting, ERP, CRM, and e-commerce software.
+
+See: [NetSuite Receiver Adapter](netsuite-receiver-adapter-618127a.md)
 
 </td>
 </tr>

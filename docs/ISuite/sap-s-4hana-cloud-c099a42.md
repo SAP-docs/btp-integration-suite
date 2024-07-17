@@ -103,7 +103,7 @@ Create a destination to enable the communication between your business system an
 You can define destinations to data sources using two authentication models: identity propagation \(preferred\) and based on a technical user. Both options are described here for each supported business system.
 
 > ### Note:  
-> Graph caches destination settings. If you want to change these settings after the business data graph is created, you need to edit the business data graph configuration and update it. For more information, see [Modify Your Business Data Graph](https://help.sap.com/viewer/15e49174b4ed461e8d8b071ba13af3de/PROD/en-US/0084c4dd85954fc7b3ea6c05ff37d550.html "When you edit your business data graph configuration, it overwrites the existing configuration.") :arrow_upper_right:.
+> Graph caches destination settings. If you want to change these settings after the business data graph is created, you need to edit the business data graph configuration and update it. For more information, see [Modify Your Business Data Graph](50-Development/modify-your-business-data-graph-0084c4d.md).
 
 As the SAP BTP administrator, you must create and configure an HTTP destination that either supports principal propagation or is based on a technical user.
 

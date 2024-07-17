@@ -2,8 +2,6 @@
 
 # What Is Graph?
 
-Extending traditional API Management, Graph enables you to expose all your business data in the form of a semantically connected data graph, accessed via a single unified and powerful API.
-
 Graph is a capability of API Management within SAP Integration Suite. With Graph, developers access your business data as a single semantically connected data graph, spanning the suite of SAP products and beyond. Targeting SAP's ecosystem of partner and customer developers, Graph's powerful API reduces the cost and complexity of creating and deploying reusable extensions and other client applications.
 
 Enterprise landscapes continue to expand in scale and complexity. Each additional system, SaaS, or microservice introduces new protocols, data models, connectivity, and security conventions. Real-world problems often span multiple lines of business, services, and APIs. Consequently, even the most experienced developers struggle to understand all of the technologies and interfaces involved. Developing new business-extending client applications requires an ever-growing range of expertise and skills. The phenomenal adoption of low-code tools by nonprofessional developers further increases the gap.
@@ -27,9 +25,9 @@ As part of SAP Integration Suite, Graph is compatible with SAP's Cloud Applicati
 **Related Information**  
 
 
-[Configure](https://help.sap.com/viewer/15e49174b4ed461e8d8b071ba13af3de/PROD/en-US/1b52dd10f37c45feabaa1949bc80f261.html "Before Graph can be used, the Tenant administrator, needs to configure Graph as a capability of API Management within SAP Integration Suite.") :arrow_upper_right:
+[Configure](50-Development/configure-1b52dd1.md "Before Graph can be used, the Tenant administrator, needs to configure Graph as a capability of API Management within SAP Integration Suite.")
 
-[Model](https://help.sap.com/viewer/15e49174b4ed461e8d8b071ba13af3de/PROD/en-US/31f8c54de9ca4e8799371e7d385cde08.html "It is common knowledge that data-driven software should be modeled on its underlying business processes.") :arrow_upper_right:
+[Model](50-Development/model-31f8c54.md "It is common knowledge that data-driven software should be modeled on its underlying business processes.")
 
-[Develop](https://help.sap.com/viewer/15e49174b4ed461e8d8b071ba13af3de/PROD/en-US/68ce43a3c609468d95721031085007b1.html "As a developer you want to build applications that consume data from business data graphs. This section provides all the information you need to start developing.") :arrow_upper_right:
+[Develop](50-Development/develop-68ce43a.md "As a developer you want to build applications that consume data from business data graphs. This section provides all the information you need to start developing.")
 

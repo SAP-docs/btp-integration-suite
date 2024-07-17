@@ -84,7 +84,7 @@ Maximum number of resources that can be attached to an API proxy
 
 You can attached up to 100 resources to an API proxy. However, it is recommended that you do not add more than 100 resources to an API proxy as it might lead to a timeout while updating or deploying an API proxy.
 
-In case you have a business requirement to attach more than 100 resources to an API proxy, please contact the SAP API Management support team by creating a ticket with component OPU-API-OD-DT. However, the team can support your request up to a maximum of 200 resources per API proxy.
+In case you have a business requirement to attach more than 100 resources to an API proxy, please contact the SAP API Management support team by creating a ticket with component OPU-API-OD-DT.
 
 </td>
 <td valign="top">

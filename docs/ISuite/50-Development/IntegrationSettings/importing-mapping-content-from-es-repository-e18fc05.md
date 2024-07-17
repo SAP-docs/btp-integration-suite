@@ -38,16 +38,11 @@ After you've configured the connection to ES Repository, you can import content 
 >     -   The interfaces contain more than one cardinality.
 >     -   The interfaces are asynchronous in type.
 > 
-> -   The import process fails if the message mapping contains:
-> 
->     -   Imported archives
-> 
->     -   Parameters
-> 
-> 
 > -   Importing, viewing, and editing of Java UDF is supported.
 > 
 > -   Message Mapping containing reference to Value Mapping isn't supported at runtime.
+> 
+> -   Import of a message mapping object fails if it contains a XSD in the source or target message.
 
 Here's how you can do it:
 

@@ -17,3 +17,5 @@ Certificates give you the credentials and the knowledge needed to create an API 
 
 [Different Methods of Creating an API Proxy](different-methods-of-creating-an-api-proxy-4ac0431.md "An API proxy is the data object that contains all the functionality to be executed when an external user wants to access the backend service.")
 
+[Edit an API Proxy](edit-an-api-proxy-a64b952.md "Once you’ve created an API proxy you can further change the proxy, either on the , or by using the embedded API designer.")
+

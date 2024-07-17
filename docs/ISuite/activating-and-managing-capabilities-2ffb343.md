@@ -46,9 +46,9 @@ This topic describes how to add and activate relevant capabilities in Integratio
 
 ## Procedure
 
-1.  On the Integration Suite home page, under the *Capabilities* section, choose either *Add Capabilities* \(if it's your first time accessing the Integration Suite home page\) or <span class="SAP-icons-V5"></span> *Manage Capabilities*.
+1.  On the Integration Suite home page, under the *Capabilities* section, choose either *Add Capabilities* \(if it's your first time accessing the Integration Suite home page\) or <span class="SAP-icons-V5"></span> *Manage Capabilities* ![](images/AddingCapabilities_SUI_16a5ec1.png).
 
-2.  On the *Activate Capabilities* screen, under *Select Capabilities*, select the relevant capabilities as shown in the following table and choose *Next* to configure additional functionality for individual capabilities.
+2.  On the *Activate Capabilities* screen, under *Select Capabilities*, select the relevant capabilities as shown in the following table and choose *Next* to configure additional functionality for individual capabilities. ![](images/SelectCapabilitySUI_43d96ed.png)
 
 
     <table>
@@ -68,6 +68,8 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <td valign="top">
     
     Cloud Integration
+
+    ![](images/CI_SUI_f5734a7.png)
     
     </td>
     <td valign="top">
@@ -106,7 +108,7 @@ This topic describes how to add and activate relevant capabilities in Integratio
 
 
 
-
+    ![](images/SUI_API_e159e2f.png)
     
     </td>
     <td valign="top">
@@ -125,7 +127,12 @@ This topic describes how to add and activate relevant capabilities in Integratio
     </td>
     <td valign="top">
     
-    *Manage Business Events* 
+    *Manage Business Events*
+
+    > ### Remember:  
+    > If you're an exisitng customer of the standalone SAP Event Mesh service \(default plan\), you can't subscribe to the Event Mesh capability in the same subaccount. In such cases, you must subscribe to SAP Integration Suite in a different subaccount.
+
+
     
     </td>
     </tr>
@@ -196,7 +203,7 @@ This topic describes how to add and activate relevant capabilities in Integratio
     </tr>
     </table>
     
-3.  Choose *Activate*.
+3.  Choose *Activate*. ![](images/sui_summary_327220b.png)
 
     > ### Note:  
     > -   If you face any issues during activation or the activation fails, then refer SAP Note [2904202](https://me.sap.com/notes/2904202) and proceed accordingly.

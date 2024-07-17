@@ -94,7 +94,7 @@ Instead of directly consuming API services, application developers can access AP
 
     8.  Choose *Create*.
 
-        An API provider is auto-created with the name that is populated in the *Name* field of the *Create API* dialog. This auto-created API provider helps in storing the user credentials provided in the *Authentication* dialog and connects to the API proxy.
+        An API provider is auto-created with the name that is populated in the *Name* field of the *Create API* dialog. This creates an API provider of type *Cloud Integration Flow*. This auto-created API provider helps in storing the user credentials provided in the *Authentication* dialog and connects to the API proxy.
 
 
 5.  A *Create API* screen opens with the API proxy name on the top. You can edit the API proxy details, if necessary and choose*Save*.

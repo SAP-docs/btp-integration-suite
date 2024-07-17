@@ -100,7 +100,20 @@ Both the source and the target system are the system that has your API Managemen
     -   APIPortal.Administrator
     -   AuthGroup.API.Admin
 
-    Make a note of the service keys \(`url`, `tokenurl`, `clientId`, and `clientSecret`\) for the given roles, and keep handy. To know more about API access plans for API portal, see [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD). To know more about API access plan for API business hub enterprise, see [Accessing API business hub enterprise APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD), without which the cloning of the API business hub enterprise entities might fail.
+    For Integration Suite, see [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD)
+
+    For API business hub enterprise, execute the following mandatory steps:
+
+    -   Make a note of the service keys \(`url`, `tokenurl`, `clientId`, and `clientSecret`\) for the given roles, and keep handy.
+
+    -   Create a service instance under the *Authorization and Trust Management* tile.
+
+    -   Create a destination of type *OAuth2Credentials* to the XSUAA APIs by using the credentials you derived from creating the service key.
+
+    -   Create a service instance with the *AuthGroup.API.Admin* role to access theAPI business hub enterprise APIs.
+
+        To perform the above steps, see [Accessing API business hub enterprise APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD)
+
 
 -   When you have API products protected by the custom roles permission in the source Cloud Foundry system, ensure that custom roles creation and assignments are done in the target Cloud Foundry environment before starting the migration.
 

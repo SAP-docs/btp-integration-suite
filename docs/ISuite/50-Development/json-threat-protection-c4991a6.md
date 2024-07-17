@@ -130,3 +130,5 @@ Maximum size allowed for a JSON payload in KB. The maximum value is 10 MB.
 
 [Authorization](authorization-6658409.md "This policy evaluates whether a user should be permitted to access a protected API.")
 
+[API Validation](api-validation-02ff41b.md "The API validation policy enables you to validate incoming request messages against an OpenAPI 3.0 Specification.")
+

@@ -233,7 +233,7 @@ Integration content
 
 500 MB
 
-Refer to the SAP Community blog:
+Refer to the SAP Community blog: [Content Size Limits](https://blogs.sap.com/2020/08/02/cloud-integration-content-size-limits/)
 
 </td>
 </tr>

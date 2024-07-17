@@ -132,7 +132,7 @@ For more information on role collections, see [Roles and Role Collections](https
     -   Complete the onboarding process
     -   Access the *API Settings* page. See [Setting Up API Management Capability](50-Development/setting-up-api-management-capability-f34e86c.md) 
 
-    For more information on relevant roles, see [User Roles in API Management \(New\)](user-roles-in-api-management-new-911ca5a.md).
+    For more information on relevant roles, see [Assign User Roles in API Management](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:.
 
     For end-to end instructions on how to set up and configure API Management, refer the tutorial [Set Up API Management from Integration Suite | Tutorials for SAP Developers](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html).
     
@@ -221,7 +221,7 @@ For more information on role collections, see [Roles and Role Collections](https
     <tr>
     <td valign="top">
     
-    *EvenMeshAdmin*
+    *EventMeshAdmin*
     
     </td>
     <td valign="top">
@@ -239,8 +239,6 @@ For more information on role collections, see [Roles and Role Collections](https
     <td valign="top" rowspan="2">
     
     Integration Advisor
-
-    For more information on assigning roles, see [Assigning Users](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b5226b95e11b42cd9e257ae6d2b0ee0a.html).
     
     </td>
     <td valign="top">

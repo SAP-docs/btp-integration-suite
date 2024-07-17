@@ -13,7 +13,7 @@ This section allows you to display and manage lock entries that are created \(in
 > 
 > To prevent double processing, a lock entry is written to the in-progress repository each time a file is processed by a runtime node. As long as this lock entry exists, no other component can access the file. After message processing, the lock is removed by the runtime.
 
-In certain situations \(for example, a runtime node crashes because of an out-of-memory error\), the message is retried after the node is restarted until the expiration time is reached. In this case, lock entries could remain in the in-progress repository and block subsequent message processing. You can't use the *Manage Locks* view to analyze the situation and manually delete lock entries, if necessary, to reprocess the message.
+In certain situations \(for example, a runtime node crashes because of an out-of-memory error\), the message is retried after the node is restarted until the expiration time is reached. In this case, lock entries could remain in the in-progress repository and block subsequent message processing. You can use the *Manage Locks* view to analyze the situation and manually delete lock entries, if necessary, to reprocess the message.
 
 If you choose the *Message Locks* tile under *Manage Locks* tile in the *Monitor* application, a list of locks is displayed. Be aware that only the most recent 500 lock entries are displayed.
 

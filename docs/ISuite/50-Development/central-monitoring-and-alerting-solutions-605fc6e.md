@@ -88,10 +88,6 @@ SAP Focused Run is a solution for service providers who want to host all their c
 
 SAP recommends service providers and customers with a large on premise system landscape to consider using SAP Integration Suite with SAP Focused Run.
 
-Monitoring and alerting using SAP Integration Suite with SAP Focused Run supports the following use cases.
-
-\(**should we list use cases here as well like above for CALM? If yes, which ones?**\)
-
 More information:
 
 -   [SAP Focused Run on SAP Help Portal](https://help.sap.com/docs/FRUN?locale=en-US)

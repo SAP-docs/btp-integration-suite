@@ -37,5 +37,5 @@ To upload and use custom messages/codelists, you need to have a custom type syst
 
 To know how to add a message to the custom type system, see: [Adding a Custom Message](adding-a-custom-message-8b7eb45.md).
 
-To know how to add a codelist to the custom type system, see: [Adding a Custom Codelist](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fa0c76f3a3834580be89674c25c5a230.html "Create and add a codelist to the Custom Codelist.") :arrow_upper_right:.
+To know how to add a codelist to the custom type system, see: [Adding a Custom Codelist](adding-a-custom-codelist-fa0c76f.md).
 

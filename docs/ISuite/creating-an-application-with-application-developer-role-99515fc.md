@@ -10,7 +10,7 @@ As an application developer you can create an application, and view the existing
 
 ## Prerequisites
 
--   You have the *AuthGroup.API.ApplicationDeveloper* role assigned to you. For more information on roles, see [User Roles in API Management \(New\)](user-roles-in-api-management-new-911ca5a.md).
+-   You have the *AuthGroup.API.ApplicationDeveloper* role assigned to you. For more information on roles, see [Assign User Roles in API Management](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:.
 
     > ### Note:  
     > The *AuthGroup.API.ApplicationDeveloper* role must not be assigned manually to a user form the SAP BTP Cockpit. Also, this role must not be a part of any user group assignment.
@@ -64,6 +64,6 @@ You are about to create an application and add products to your application. You
     > ### Note:  
     > You can create a maximum of 18 custom attributes per application. You cannot modify the name of a created custom attribute. However, you can modify its value whenever required. You can delete a custom attribute if it is no longer needed.
 
-    For more information on the usage of custom attributes in an application, see [Example: Accessing the Custom Attributes of an Application](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/1cbd94c86c054d66b3826f6cd91e0df8.html "") :arrow_upper_right:.
+    For more information on the usage of custom attributes in an application, see [Example: Accessing the Custom Attributes of an Application](example-accessing-the-custom-attributes-of-an-application-1cbd94c.md).
 
 

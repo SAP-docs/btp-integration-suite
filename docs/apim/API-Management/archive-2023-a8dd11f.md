@@ -222,7 +222,7 @@ Manage external content in API business hub enterprise
 </td>
 <td valign="top">
 
-The new *Manage External Content* option in *Enterprise Manager* enables you to configure additional content, such as Business Data Graphs \(BDGs\), for display on the API business hub enterprise. For more information, see [Manage External Content \(New Design\)](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-external-content-new-design).
+The new *Manage External Content* option in *Enterprise Manager* enables you to configure additional content, such as Business Data Graphs \(BDGs\), for display on the API business hub enterprise.
 
 </td>
 <td valign="top">
@@ -420,7 +420,7 @@ API Revisions
 
 Unique naming pattern for Drafts in API Revisions to clearly differentiate between the deployed draft and the working draft and the drafts originating from revisions.
 
-See: [Creating API Revisions](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-api-revisions) \(SAP API Management customers choose: [Creating API Revisions](https://help.sap.com/docs/sap-api-management/sap-api-management/creating-api-revisions-0a0d7d41222e42e4834b30c89609f400)\)
+See: [Creating API Revisions](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-api-revisions?version=CLOUD) \(SAP API Management customers choose: [Creating API Revisions](https://help.sap.com/docs/sap-api-management/sap-api-management/creating-api-revisions-0a0d7d41222e42e4834b30c89609f400)\)
 
 </td>
 <td valign="top">
@@ -619,7 +619,7 @@ Certificate-based Credentials
 </td>
 <td valign="top">
 
-The connection between the centralised API business hub enterprise and the API portal has been secured with certificate-based authentication. For more information, see [Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/02f7877360a64c6b8d853fed9b2d9cc6.html "To publish the API portal content on the API business hub enterprise, you must create a request to connect the API portal to the API business hub enterprise.") :arrow_upper_right: and [Create a Connection Request for the Centralized API business hub enterprise](APIM-Initial-Setup/create-a-connection-request-for-the-centralized-api-business-hub-enterprise-c7bda8c.md).
+The connection between the centralised API business hub enterprise and the API portal has been secured with certificate-based authentication. For more information, see [Create a Connection Request for the Centralized API business hub enterprise](APIM-Initial-Setup/create-a-connection-request-for-the-centralized-api-business-hub-enterprise-c7bda8c.md).
 
 </td>
 <td valign="top">
@@ -1389,7 +1389,7 @@ API business hub enterprise
 </td>
 <td valign="top">
 
-The mandatory Client ID and Client Secret fields on *Edit Credentials* popup have been replaced with *\*API Portal Access Credentials* field. For more information, see [Updating the Connection Request Credentials for a Pending Request](APIM-Initial-Setup/updating-the-connection-request-credentials-for-a-pending-request-dd37a7b.md) and [Updating the Connection Request Credentials for a Submitted Request \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/eb84854e31d943b490af77cfb218ddbb.html "Update the credentials you've used to establish a connection between the API portal and the API business hub enterprise.") :arrow_upper_right:.
+The mandatory Client ID and Client Secret fields on *Edit Credentials* popup have been replaced with *\*API Portal Access Credentials* field. For more information, see [Updating the Connection Request Credentials for a Pending Request](APIM-Initial-Setup/updating-the-connection-request-credentials-for-a-pending-request-dd37a7b.md).
 
 </td>
 <td valign="top">
@@ -1498,13 +1498,4 @@ API Management
 </td>
 </tr>
 </table>
-
-**Related Information**  
-
-
-[2022 Archives](2022-archives-7eaa63d.md "")
-
-[2021 Archives](2021-archives-bdf0f0e.md "")
-
-[2020 Archives](2020-archives-085f4e9.md "")
 

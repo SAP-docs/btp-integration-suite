@@ -20,7 +20,7 @@ You need the following roles to create and update categories:
 
 -   *AuthGroup.API.Admin* 
 
-    To assign the role, see [User Roles in API Management \(New\)](user-roles-in-api-management-new-911ca5a.md) .
+    To assign the role, see [Assign User Roles in API Management](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right: .
 
 
 

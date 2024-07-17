@@ -8,7 +8,389 @@ This topic provides information on patch releases for hotfixes, bugfixes, and co
 
 This topic covers patches for the following capabilities and features of SAP Integration Suite: Cloud Integration, Trading Partner Management, Integration Advisor, Integration Assessment, Migration Assessment, and Edge Integration Cell.
 
-The following patch release information covers the most recent changes made to the latest version of the software. For earlier patch release notes, see [Archive - Patch Release Notes for Cloud Integration](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f4b7126c524e4126b54fc7b4a34cadc0.html "This page contains a historical archive of all patch release notes for Cloud Integration.") :arrow_upper_right:.
+The following patch release information covers the most recent changes made to the latest version of the software.
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_r1l_g42_sbc"/>
+
+## June 2024
+
+**Software Increment: 2404**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Message processing failures with the message `Too many open files` have been observed after migrating to Camel 3x. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.31
+
+</td>
+<td valign="top">
+
+A null pointer exception was thrown when sending an XI message. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.29
+
+</td>
+<td valign="top">
+
+During software update, a *Timer* step configured with a start date triggered the writing of a message processing log at an unscheduled time.
+
+This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.27
+
+</td>
+<td valign="top">
+
+The JDBC Kafka consumer took too much time in case of an error.
+
+The patch fixes the issue so that processing happens in asynchronous mode now.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.25
+
+</td>
+<td valign="top">
+
+Content transport was impacted by an outdated service key stored in the credential store. The patch fixes this issue and ensures a consistent update of the affected entry in the credential store.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.53.23
+
+</td>
+<td valign="top">
+
+When updating an authorized user ID that contains special characters in the Partner Directory, the user ID was not encoded. This patch fixes the issue
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.23
+
+</td>
+<td valign="top">
+
+There was an issue with the EDI Splitter when processing requests containing attachments in ISO-8859-1 encoded stream. Special characters got converted to invalid characters. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_pr1_hzx_3bc"/>
+
+## May 2024
+
+**Software Increment: 2403**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.52.21
+
+</td>
+<td valign="top">
+
+When activating an AS2 security which is configured with a certificate, the certificate configured for the security wasn’t found. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.52.20
+
+</td>
+<td valign="top">
+
+There have been DNS cache issues with JCo library resulting in the RFC receiver adapter to throw the error `Opening socket to partner failed: error 111 - Connection refused`. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.52.19
+
+</td>
+<td valign="top">
+
+The *Inspect* feature was not available. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.52.18
+
+8.16.7
+
+</td>
+<td valign="top">
+
+The missing DOCNUM field in the request payload was causing an error “Mandatory IDoc SOAP header missing”. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.52.17
+
+</td>
+<td valign="top">
+
+There was an issue with number range redeployment that lead to artifacts getting stuck. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_blr_mdf_cbc"/>
+
+## April 2024
+
+**Software Increment: 2402**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.28
+
+</td>
+<td valign="top">
+
+There have been problems to load *Monitor* page. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.27
+
+</td>
+<td valign="top">
+
+There were some issues with the generation of key-pairs with X.509 certificates using elliptic curve algorithms \(for example, secp192k1, secp256k1, secp192r1, and others\). This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.26
+
+</td>
+<td valign="top">
+
+There has been a performance issue with the Inspect feature. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.25
+
+</td>
+<td valign="top">
+
+There was an issue with a potential negative impact on the deployment and undeployment of integration artifacts. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.23
+
+</td>
+<td valign="top">
+
+System performance has been improved and truncation of value mapping has been fixed by changing the way XML files are read.
+
+</td>
+</tr>
+</table>
 
 
 

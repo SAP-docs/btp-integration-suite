@@ -12,7 +12,7 @@ With Graph, developers use a single API, and the most up-to-date OData V4 and Gr
 
 Graph's data graph is constructed as a projection on these data sources. The nodes of the graph represent entities. Entities are composed of attributes – the data fields. Entity-connecting attributes, the edges of the graph, are referred to as associations. This graph is effectively an abstract data model, whose entities are defined as projections on entities from actual data sources \(back-end applications, systems, and microservices\) with one or more APIs. The data graph is constructed at design time in three steps:
 
-1.  [Mirrored Entities](https://help.sap.com/viewer/15e49174b4ed461e8d8b071ba13af3de/PROD/en-US/720a1d89c0294786b8bef822a4201f5e.html "") :arrow_upper_right:
+1.  [Mirrored Entities](50-Development/mirrored-entities-720a1d8.md)
 
     ![](images/bdg_mirrored_enitites_38ef78c.png)
 
@@ -20,13 +20,13 @@ Graph's data graph is constructed as a projection on these data sources. The nod
 
     Graph distinguishes known data source types \(for example, SAP S/4HANA, SAP SuccessFactors, and SAP C4C\) and unknown data sources. The mirrored entities of supported SAP data sources are added to the data graph under a reserved SAP namespace \(`sap.s4`, `sap.c4c`, and `sap.hcm`\) and then connected to each other by potentially hundreds of additional semantic associations. Entities from unsupported data sources are mirrored under custom namespaces.
 
-2.  [Unified Entities](https://help.sap.com/viewer/15e49174b4ed461e8d8b071ba13af3de/PROD/en-US/1cded7b0394642a6b8c88b20a03f5f21.html "") :arrow_upper_right:
+2.  [Unified Entities](50-Development/unified-entities-1cded7b.md)
 
     ![](images/bdg_unified_entities_23be9b3.png)
 
     Graph then adds additional projections on top of the mirrored entities from supported SAP systems, which we call *unified entities*. Unlike the mirrored entities, these are thoughtfully designed and constructed projections, created by SAP experts under the reserved namespace `sap.graph`. Unified entities follow the SAP One Domain Model compatibility guidelines and are designed to bridge and connect semantically common business concepts from multiple data sources \(for example, `Business Partner`, and `Product`\). This allows client apps to get started with cross-system queries.
 
-3.  [Custom Entities](https://help.sap.com/viewer/15e49174b4ed461e8d8b071ba13af3de/PROD/en-US/b6318bf4cb5f42149470361d70a63a48.html "") :arrow_upper_right:
+3.  [Custom Entities](50-Development/custom-entities-b6318bf.md)
 
     ![](images/bdg_custom_entities_e1829c4.png)
 
@@ -42,7 +42,7 @@ Graph functions as a runtime mediation layer. From the perspective of the API co
 **Related Information**  
 
 
-[Data Locating Policy](https://help.sap.com/viewer/15e49174b4ed461e8d8b071ba13af3de/PROD/en-US/28d2c2cd55454c968661b60c0a829abe.html "Data in the business data graph is connected via key-based references.") :arrow_upper_right:
+[Data Locating Policy](50-Development/data-locating-policy-28d2c2c.md "Data in the business data graph is connected via key-based references.")
 
-[Modeling Guide](https://help.sap.com/viewer/15e49174b4ed461e8d8b071ba13af3de/PROD/en-US/5e0bb49f4d52434bb8377e06dda72c75.html#loio5e0bb49f4d52434bb8377e06dda72c75 "SAP employs a set of best-practice modeling guidelines, known as the SAP One Domain Model guidelines. These guidelines are for the data models of new SAP applications, and are used in this guide as recommendations for creating custom entities.") :arrow_upper_right:
+[Modeling Guide](50-Development/modeling-guide-5e0bb49.md#loio5e0bb49f4d52434bb8377e06dda72c75 "SAP employs a set of best-practice modeling guidelines, known as the SAP One Domain Model guidelines. These guidelines are for the data models of new SAP applications, and are used in this guide as recommendations for creating custom entities.")
 

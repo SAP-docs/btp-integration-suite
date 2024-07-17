@@ -112,6 +112,14 @@ Description
 
 Enter the RFC destination configured in SAP BTP cockpit for your application.
 
+> ### Note:  
+> You can create dynamic destinations by using expressions \(header, property\) in the Content Modifier.
+> 
+> 1.  Select Content Modifier in the integration flow. Then, go to Message Header in Content Modifier properties and set header value as the destination name. For example, abc.
+> 2.  Select your RFC adapter and. In the *Destination* field, assign dynamic destination by using the expression: $\{header/property.header/property name\}. For example $\{header.abc\} or $\{property.abc\} where abc is the value of the header or property.
+
+
+
 </td>
 </tr>
 <tr>
@@ -156,9 +164,6 @@ If you enable this option, the adapter creates a new RFC connection in the backe
 </td>
 </tr>
 </table>
-
-> ### Note:  
-> You can create dynamic destinations by using regular expressions \(header, property\) in the Content Modifier. Select *Content Modifier* in the integration flow. Then go to *Message Header* in *Content Modifier* properties and assign corresponding value to the header name as the destination name. Select your RFC adapter and assign dynamic destination by using the expression: `${header/property`.*<header/property name\>*\}. For example `${header.abc}` or `${property.abc}` where `abc` is the value of the header or property.
 
 **Related Information**  
 

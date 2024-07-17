@@ -384,7 +384,10 @@ Follow the next procedure to create an agreement template.
 
     This step is carried out using the ProcessDirect adapter. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md).
 
-23. If you want to enable the payload validation, select the checkbox under *Validation Option*.
+23. If you want to enable the payload validation, select the checkbox *Enable Payload Validation*under *Validation Option* section.
+
+    1.  If enabled, the generic integration flow will perform a validation check for the sender interchange. And regardless of the outcome, the interchange processing will continue to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
+
 
 24. The *Syntax Validation* checkbox is selected by default to enable syntax validation through the EDI splitter. If you do not want to use this validation, you can disable this option.
 
@@ -394,7 +397,9 @@ Follow the next procedure to create an agreement template.
 
     -   ASC X12
 
-25. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see  <?sap-ot O2O class="- topic/xref " href="b927e0182df04208ace0f15c66073317.xml" text="" desc="" xtrc="xref:5" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/9692cb19768145c7b265c14612a3e046.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+    If the identifier used in the agreement has **Custom Scheme Code**, then this option will be skipped irrespective of the field selection.
+
+25. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md)
 
 26. Similarly, choose the *Communication Channel* on the receiver side and enter a value for the field *Alias for Communication*.
 
@@ -431,9 +436,12 @@ Follow the next procedure to create an agreement template.
 
     You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
 
-34. If you want to enable the payload validation, select the checkbox under *Validation Option*.
+34. If you want to enable the payload validation, select the checkbox for the field *Enable Payload Validation* under *Validation Option*.
 
-35. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see  <?sap-ot O2O class="- topic/xref " href="b927e0182df04208ace0f15c66073317.xml" text="" desc="" xtrc="xref:9" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/9692cb19768145c7b265c14612a3e046.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    1.  If enabled, the generic integration flow will perform a validation check for the receiver interchange. And regardless of the outcome, the interchange processing will continue to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
+
+
+35. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
 
 36. If your receiver type system is UN/EDIFACT, you might want to set a target encoding. To do so, under the field *Target Encoding*, select a value from the list.
 

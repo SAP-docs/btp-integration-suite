@@ -6,7 +6,7 @@ Post the completion of the cloning process, you must perform some actions, check
 
 
 
-The following sections outline the tasks that need to be completed after the cloning of your API Management content from Neo to the Cloud Foundry environment.
+The following sections outline the tasks that need to be completed after the cloning of your API Management content from Neo to the multi-cloud foundation.
 
 
 
@@ -185,7 +185,7 @@ Depending on the configurations you have on your source system, you must configu
 To know more about the entities that are cloned and the entities that aren’t cloned, see [Cloned and Uncloned Entities](cloned-and-uncloned-entities-8973ca0.md).
 
 > ### Note:  
-> For the on-premise APIs, the URL of the target.basepath changes while migrating from Neo to Cloud Foundry. If you’ve customized any of the policies, where the target.basepath is being used, then make sure that you update the content of the policy accordingly in the target Cloud Foundry system. For example, after migration the target.basepath URL in Cloud Foundry might have an additional segment. You need to verify if this additional segment adversely affects the policy execution in target Cloud Foundry system.
+> For the on-premise APIs, the URL of the target.basepath changes while migrating from Neo to multi-cloud foundation. If you’ve customized any of the policies, where the target.basepath is being used, then make sure that you update the content of the policy accordingly in the target multi-cloud foundation system. For example, after migration the target basepath URL in multi-cloud foundation might have an additional segment. You need to verify if this additional segment adversely affects the policy execution in targetmulti-cloud foundation system.
 
 
 
@@ -193,35 +193,35 @@ To know more about the entities that are cloned and the entities that aren’t c
 
 ## Migrating Route Service Binding
 
-If you've used the [Managing Cloud Foundry Microservices through API Management](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md) to manage your Cloud Foundry applications, you can now migrate the existing route service binding, from the API Management instance on Neo to the new API Management instance on Cloud Foundry.
+If you've used the [Managing Cloud Foundry Microservices through API Management](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md) to manage your multi-cloud foundation applications, you can now migrate the existing route service binding, from the API Management instance on Neo to the new API Management instance on multi-cloud foundation.
 
 
 
 ### Prerequisites
 
--   A route service binding exists between your application on Cloud Foundry and the API Management service instance in the Neo environment.
--   You have enabled API Management on your Cloud Foundry sub account
+-   A route service binding exists between your application on multi-cloud foundation and the API Management service instance in the Neo environment.
+-   You have enabled API Management on your multi-cloud foundation subaccount.
 -   You have the space developer role assigned to you.
 
 Depending upon the location of your application, and your API Management service instance, the steps to migrate the route service binding vary.
 
 
 
-### Cloud Foundry Application and API Management capability on the same subaccount
+### Multi-Cloud Foundation Application and API Management capability on the same subaccount
 
 If your cloud foundry application and the API Management capability are on the same sub account, then use the following steps to migrate the route service binding:
 
 1.  Create an API Management, API portal service instance using the service plan, apim-as-route-service. For more information, see [Creating an API Management, API portal Service Instance](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__CreatingAPIMInstance)
-2.  Unbind your application from the API Management service instance on Neo. For more information, see [Unbinding a Cloud Foundry Application from an API Management, API portal Service Instance](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__unbinding) 
-3.  Bind your application to the API Management service instance on Cloud Foundry. For more information, see [Binding a Cloud Foundry Application to an API Management, API portal Service Instance](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__Binding)
+2.  Unbind your application from the API Management service instance on Neo. For more information, see [Unbinding a Multi-Cloud Foundation Application from an API Management, API portal Service Instance](../unbinding-a-multi-cloud-foundation-application-from-an-api-management-api-portal-service-09fd33a.md) 
+3.  Bind your application to the API Management service instance on multi-cloud foundation. For more information, see [Binding a Muti-Cloud Foundation Application to an API Management, API portal Service Instance](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__Binding)
 
 
 
-### Cloud Foundry Application and API Management capability on different sub accounts
+### Multi-Cloud Foundation Application and API Management capability on different sub accounts
 
-If your Cloud Foundry application and the API Management capability are on different sub accounts, then use the following steps to migrate the route service binding:
+If your multi-cloud foundation application and the API Management capability are on different sub accounts, then use the following steps to migrate the route service binding:
 
-1.  Create a User Provided Service in the sub account where your Cloud Foundry application is present, using the proxy URL from the sub account in which your API Management instance is present. In order to create this User Provided Service, open the command prompt and use the following command
+1.  Create a **User Provided Service** in the subaccount where your multi-cloud foundation application is present, using the proxy URL from the sub account in which your API Management instance is present. In order to create this **User Provided Service**, open the command prompt and use the following command
 
     > ### Sample Code:  
     > ```
@@ -231,8 +231,8 @@ If your Cloud Foundry application and the API Management capability are on diffe
 
     For more information, see [User Provided Service](https://docs.cloudfoundry.org/services/route-services.html#user-provided)
 
-2.  Unbind your application from the API Management service instance on Neo. For more information, see [Unbinding a Cloud Foundry Application from an API Management, API portal Service Instance](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__unbinding) 
-3.  Bind the User Provided Service created in the first step to the Cloud Foundry Application. For this binding, use the following command:
+2.  Unbind your application from the API Management service instance on Neo. For more information, see [Unbinding a Multi-Cloud Foundation Application from an API Management, API portal Service Instance](../unbinding-a-multi-cloud-foundation-application-from-an-api-management-api-portal-service-09fd33a.md) 
+3.  Bind the User Provided Service created in the first step to the multi-cloud foundation application. For this binding, use the following command:
 
     > ### Sample Code:  
     > ```

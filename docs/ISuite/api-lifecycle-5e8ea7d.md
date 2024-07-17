@@ -21,5 +21,5 @@ API Management in SAP Integration Suite is used to discover, shape, compose, int
 
 [Consume API Proxies](consume-api-proxies-ea561e4.md "Consume API proxies via the API business hub enterprise. In the API business hub enterprise, an application developer registers, explores the API exposed by customers, creates applications, and tests API proxies.")
 
-[Analyze APIs](50-Development/analyze-apis-7712c61.md "Use the capabilities of API Analytics to analyze API usage and performance.")
+[Analyze API Proxies](50-Development/analyze-api-proxies-7712c61.md "Use the capabilities of API Analytics to analyze API proxy usage and performance.")
 

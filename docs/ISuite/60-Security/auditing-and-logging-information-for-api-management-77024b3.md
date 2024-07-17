@@ -320,7 +320,7 @@ Example:
 </td>
 <td valign="top">
 
-[Create an Application \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/7b4e71b3887f4396aa22ce3e2ed7e0c3.html "Create an Application to consume the required APIs.") :arrow_upper_right:
+[Create an Application](../create-an-application-a501a6d.md) 
 
 </td>
 </tr>

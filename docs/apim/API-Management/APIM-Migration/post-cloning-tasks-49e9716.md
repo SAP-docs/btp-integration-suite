@@ -174,7 +174,7 @@ Depending upon the location of your application, and your API Management service
 If your cloud foundry application and the API Management capability are on the same sub account, then use the following steps to migrate the route service binding:
 
 1.  Create an API Management, API portal service instance using the service plan, apim-as-route-service. For more information, see [Creating an API Management, API portal Service Instance](../APIM-Initial-Setup/managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__CreatingAPIMInstance)
-2.  Unbind your application from the API Management service instance on Cloud Foundry. For more information, see  <?sap-ot O2O class="- topic/xref " href="09fd33ac55e844d28b3deb385cca316a.xml" text="" desc="" xtrc="xref:5" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/49e9716c499d44059907f18c0659cd69.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  
+2.  Unbind your application from the API Management service instance on Cloud Foundry. For more information, see [Unbinding a Multi-Cloud Foundation Application from an API Management, API portal Service Instance](../APIM-Initial-Setup/unbinding-a-multi-cloud-foundation-application-from-an-api-management-api-porta-09fd33a.md) 
 3.  Bind your application to the API Management service instance on Cloud Foundry. For more information, see [Binding a Cloud Foundry Application to an API Management, API portal Service Instance](../APIM-Initial-Setup/managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__Binding)
 
 
@@ -193,7 +193,7 @@ If your Cloud Foundry application and the API Management capability are on diffe
 
     For more information, see [User Provided Service](https://docs.cloudfoundry.org/services/route-services.html#user-provided)
 
-2.  Unbind your application from the API Management service instance on Cloud Foundry. For more information, see  <?sap-ot O2O class="- topic/xref " href="09fd33ac55e844d28b3deb385cca316a.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/djr1548327031813/loiocf0e5a9be9804817aa649f51a84b9f39_en-US/src/content/localization/en-us/49e9716c499d44059907f18c0659cd69.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  
+2.  Unbind your application from the API Management service instance on Cloud Foundry. For more information, see [Unbinding a Multi-Cloud Foundation Application from an API Management, API portal Service Instance](../APIM-Initial-Setup/unbinding-a-multi-cloud-foundation-application-from-an-api-management-api-porta-09fd33a.md) 
 3.  Bind the User Provided Service created in the first step to the Cloud Foundry Application. For this binding, use the following command:
 
     > ### Sample Code:  

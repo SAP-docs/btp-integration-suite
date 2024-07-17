@@ -31,8 +31,6 @@ You should have API Management, API portal subscription to set up the API portal
 > ### Note:  
 > Ensure that you don’t have an instance of a starter plan created in the same subaccount where you plan to create an API Management, API portal subscription. Also, note that API Management capabilities from Integration Suite and API Management subscriptions using the stand-alone tile can’t coexist in the same subaccount.
 
-Perform the step-by-step instructions to set up the API portal application. However, you can also refer the following video for visual instructions: 
-
 
 
 <a name="loio9d8c7ae4849941a9a528f752235c6867__steps_bnm_ft1_stb"/>
@@ -112,11 +110,7 @@ The API portal is now configured. Log on to the API portal again. You can now cr
 
 ## Next Steps
 
-To start publishing the API portal content, you must enable the API Business Hub Enterprise. To publish the API portal content on the API Business Hub Enterprise located in the same subaccount, see [Set Up API business hub enterprise Application Using the Standalone Tile](set-up-api-business-hub-enterprise-application-using-the-standalone-tile-80c0519.md). To publish the API portal content on the centralized API Business Hub Enterprise, follow the on-screen instructions and see [Centralized API business hub enterprise \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/33b706f4f2e148ffb1cb9289d5cda27d.html "The centralized API business hub enterprise is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.") :arrow_upper_right:.
-
-Once API Business Hub Enterprise is set up, navigate to :gear: and choose *Connection*.
-
-![](images/ABHE_Connection_a5eb276.png)
+To start publishing the API portal content, you must enable the API Business Hub Enterprise. To publish the API portal content on the API Business Hub Enterprise located in the same subaccount, see [Set Up API business hub enterprise Application Using the Standalone Tile](set-up-api-business-hub-enterprise-application-using-the-standalone-tile-80c0519.md).
 
 **Related Information**  
 

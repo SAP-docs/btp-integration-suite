@@ -2,7 +2,7 @@
 
 # Migrating API Management Subscription Created Using the Starter Plan Service Instance to Different Subaccounts
 
-Migrate the design-time components from the Neo environment, which was previously set up using Starter Plan instance, to the Cloud Foundry environment, keeping the runtime components as is.
+Migrate the design-time components from the Neo environment, which was previously set up using Starter Plan instance, to the multi-cloud foundation, keeping the runtime components as is.
 
 
 
@@ -17,9 +17,9 @@ With the Integration Suite premium edition license available in a different suba
 > 
 > -   Analytics data can't be retained, as Advanced Analytics gets newly configured in the different subaccount. However, if you come across any analytics data from the previous subaccount, you must ignore the data and consider the analytics data after the migration task is completed.
 > 
-> -   Subscribe to the API portal and the API business hub enterprise in the other Cloud Foundry subaccount. This is the subaccount with the Integration Suite premium edition license.
+> -   Subscribe to the API portal and the API business hub enterprise in the other multi-cloud foundation subaccount. This is the subaccount with the Integration Suite premium edition license.
 > 
-> -   Tenant type \(for example, production and test\) of the newly onboarded API Management on the Cloud Foundry environment must be same as that of the source API Management on the Neo environment.
+> -   Tenant type \(for example, production and test\) of the newly onboarded API Management on the multi-cloud foundation must be same as that of the source API Management on the Neo environment.
 > 
 > -   Ensure that both the source and the target subaccounts are in the same data center for migrating the API Management subscription to a different subaccount.
 > 
@@ -74,7 +74,7 @@ With the Integration Suite premium edition license available in a different suba
 
     -   Provide the Neo account details where API Management is enabled.
 
-    -   Provide the Cloud Foundry account details where starter plan service instance is created.
+    -   Provide the multi-cloud foundation account details where starter plan service instance is created.
 
     -   Provide the details of the target Integration Suite subscription account for migrating the starter plan subscription to a different subaccount. Since you already have the Integration Suite premium license available, you can create the API Management subscription before creating the ticket.
 
@@ -119,5 +119,5 @@ With the Integration Suite premium edition license available in a different suba
 
 ## Results
 
-Migration of API Management subscription \(created using the Starter Plan service instance\) to a different subaccount is complete. There can be downtime for certain API proxies \(having policies that are specific to Neo/ Cloud Foundry environment\) created out of on-premise providers.
+Migration of API Management subscription \(created using the Starter Plan service instance\) to a different subaccount is complete. There can be downtime for certain API proxies \(having policies that are specific to Neo/ multi-cloud foundation\) created out of on-premise providers.
 

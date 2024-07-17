@@ -8,7 +8,7 @@ Checks to be completed before you start migrating your API Management content no
 
 -   Your source system is the system that has your API Management subscription in the Neo environment.
 
--   Your target system is the system that has your API Management content on the hyperscalers-managed infrastructure within the Cloud Foundry environment.
+-   Your target system is the system that has your API Management content on the hyperscalers-managed infrastructure within the multi-cloud foundation.
 
 
 
@@ -78,13 +78,10 @@ Checks to be completed before you start migrating your API Management content no
     </tr>
     </table>
     
-    If you have already enabled API Management on your target system, and want to reuse the same for migration:
+-   If you have already enabled API Management on your target system, and want to reuse the same for migration, it's recommended that you do not have any pre-existing entities such as API proxies or products on this system.
 
-    -   It's recommended that you do not have any pre-existing entities such as API proxies or products on this system.
-
-        > ### Note:  
-        > Any entity, if pre-existing in your target API Management capability, can be over-written during the cloning process.
-
+    > ### Note:  
+    > Any entity, if pre-existing in your target API Management capability, can be over-written during the cloning process.
 
 -   If your target system is connected to a custom IDP, ensure that your IDP is configured correctly, and mapping for the details like your first name, last name, email ID, and user ID is done.
 
@@ -98,9 +95,22 @@ Checks to be completed before you start migrating your API Management content no
     -   APIPortal.Administrator
     -   AuthGroup.API.Admin
 
-    Make a note of the service keys \(`url`, `tokenurl`, `clientId`, and `clientSecret`\) for the given roles, and keep handy. To know more about API access plans for API portal, see [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD). To know more about API access plan for API business hub enterprise, see [Accessing API business hub enterprise APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD), without which the cloning of the API business hub enterprise entities might fail.
+    For Integration Suite, see [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD)
 
--   When you have API products protected by the custom roles permission in the source Neo system, ensure that custom roles creation and assignments are done in the target Cloud Foundry environment before starting the migration.
+    For API business hub enterprise, execute the following mandatory steps:
+
+    -   Make a note of the service keys \(`url`, `tokenurl`, `clientId`, and `clientSecret`\) for the given roles, and keep handy.
+
+    -   Create a service instance under the *Authorization and Trust Management* tile.
+
+    -   Create a destination of type *OAuth2Credentials* to the XSUAA APIs by using the credentials you derived from creating the service key.
+
+    -   Create a service instance with the *AuthGroup.API.Admin* role to access theAPI business hub enterprise APIs.
+
+        To perform the above steps, see [Accessing API business hub enterprise APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD)
+
+
+-   When you have API products protected by the custom roles permission in the source Neo system, ensure that custom roles creation and assignments are done in the target system within the multi-cloud foundation before starting the migration.
 
 
 Once you complete these checks, you can start cloning your API Management content from the source to the target system. See [Clone API Management Content](clone-api-management-content-7abd887.md).

@@ -2,7 +2,7 @@
 
 # Migrating API Management Subscription Created Using the Starter Plan Service Instance
 
-You can choose to migrate the design-time components that you have in the Neo environment, which was previously set up using Starter Plan instance, to the Cloud Foundry environment, keeping the runtime components as is.
+You can choose to migrate the design-time components that you have in the Neo environment, which was previously set up using Starter Plan instance, to the multi-cloud foundation, keeping the runtime components as is.
 
 
 
@@ -10,12 +10,12 @@ You can choose to migrate the design-time components that you have in the Neo en
 
 ## Context
 
-You can also enable the new API Management design time subscription on the same Cloud Foundry subaccount, where you have created the starter plan service instance.
+You can also enable the new API Management design time subscription on the same multi-cloud foundation subaccount, where you have created the starter plan service instance.
 
 > ### Note:  
-> You must subscribe to the API portal and the Developer Portal in the same Cloud Foundry subaccount where the starter plan instance is created.
+> You must subscribe to the API portal and the developer portal in the same multi-cloud foundation subaccount where the starter plan instance is created.
 > 
-> Tenant type \(for example, production and test\) of the newly onboarded API Management on the Cloud Foundry environment must be same as that of the source API Management on the Neo environment.
+> Tenant type \(for example, production and test\) of the newly onboarded API Management on the multi-cloud foundation must be same as that of the source API Management on the Neo environment.
 
 > ### Caution:  
 > The migration of the Starter Plan Service Instance might involve downtime of the API runtime calls.
@@ -66,13 +66,13 @@ You can also enable the new API Management design time subscription on the same 
 
     -   Provide the Neo account details where API Management is enabled.
 
-    -   Provide the Cloud Foundry account details where starter plan service instance is created.
+    -   Provide the multi-cloud foundation account details where starter plan service instance is created.
 
 
     > ### Note:  
     > Once you receive a confirmation from SAP on the ticket, you can resume the migration process from step 2.
 
-2.  Prepare the target system by enabling the API Management subscription on the Cloud Foundry subaccount where your starter plan instance was created.
+2.  Prepare the target system by enabling the API Management subscription on the multi-cloud foundation subaccount where your starter plan instance was created.
 
     To complete the checks, before you start migrating your API Management artifacts nondisruptively from your source system to a target system, see [Prerequisites](prerequisites-c1904bc.md).
 
@@ -111,5 +111,5 @@ You can also enable the new API Management design time subscription on the same 
 
 ## Results
 
-Migration of API Management subscription created using the Starter Plan service instance is complete.There can be downtime for certain API proxies \(having policies that are specific to Neo/ Cloud Foundry environment\) created out of on-premise providers.
+Migration of API Management subscription created using the Starter Plan service instance is complete.There can be downtime for certain API proxies \(having policies that are specific to Neo/ multi-cloud foundation\) created out of on-premise providers.
 

@@ -167,7 +167,12 @@ Create a service instance to implement inbound communication. A service instance
     
     The selection of roles depend on the chosen option for *Plan*.
 
-    -   When as *Plan* you've chosen *integration-flow*, you can either keep the standard role `ESBMessaging.send` or enter a custom role \(see [Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md)\).
+    -   When as *Plan* you've chosen *integration-flow*, you can either keep the standard role `ESBMessaging.send` or enter a custom role.
+
+        The default role `ESBMessaging.send` is already predefined. To define a custom role, go to the *Monitor* view of SAP Integration Suite, and select the *User Roles* tile in the *Manage Security* section \(for more information, see [Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md)\).
+
+        > ### Note:  
+        > Custom roles for this use case are **not** defined using the SAP BTP cockpit.
 
         You're able to add multiple roles by selecting enter after each role. The default is set to the standard role \(`ESBMessaging.send`\).
 
@@ -388,6 +393,11 @@ With this step, you create a service key for the instance.
     > -   multiple certificates with the same subjectDN and issuerDN where pinning is disabled;
     > 
     > -   or one certificate with pinning enabled and another certificate with the same subjectDN and issuerDN where pinning is disabled.
+
+    > ### Note:  
+    > Starting from version 8.18.x, Edge Integration Cell runtimes use a local component to perform inbound certificate authentication. This component categorizes all service keys of type *External Certificate* as pinned, regardless of whether the *Pin Certificate* setting is enabled or disabled.
+    > 
+    > As such, even if you've renewed a client certificate and *Pin Certificate* is disabled, you're still required to create a new service key that includes your updated certificate. For more information, see [Edge Local Authentication and Authorization](../edge-local-authentication-and-authorization-510d447.md).
 
 
     

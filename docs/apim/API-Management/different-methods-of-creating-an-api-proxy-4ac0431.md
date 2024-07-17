@@ -65,5 +65,7 @@ You can also view the applications you’ve subscribed to. To know more, see [Vi
 
 [Key Components of an API](key-components-of-an-api-19c0654.md "This section introduces you to some of the key components of an API that you need to know before building APIs.")
 
+[Edit an API Proxy](edit-an-api-proxy-a64b952.md "Once you’ve created an API proxy you can further change the proxy, either on the , or by using the embedded API designer.")
+
 [Additional Configurations](additional-configurations-de7285c.md " ")
 

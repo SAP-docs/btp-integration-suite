@@ -27,9 +27,9 @@ To enable anomaly detection through the SAP Integration Suite, follow the steps 
 
 ## Procedure
 
-1.  Log on to the SAP Integration Suite.
+1.  Log on to the **SAP Integration Suite**.
 
-2.  Click on the navigation icon on the left and select *Settings* \> *APIs*.
+2.  From the left navigation pane, choose *Settings* \> *APIs*.
 
 3.  Go to the *Anomaly Detection* tab.
 
@@ -56,5 +56,5 @@ Anomaly Detection for API proxy calls is now enabled.
 
 [Working with Detected Anomalies](working-with-detected-anomalies-1c677b2.md "Access and analyze anomalies in the analytics dashboard. Discover details about the various types of anomalies, evaluate and resolve them.")
 
-[Subscribing to Email Notification Alerts](subscribing-to-email-notification-alerts-88e96f4.md "Receive real-time email alerts for anomaly detection services.")
+[Subscribing to Notification Alerts](subscribing-to-notification-alerts-88e96f4.md "Receive real-time alerts for anomaly detection services, delivered to your preferred communication channel.")
 

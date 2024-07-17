@@ -604,7 +604,7 @@ In addition to the SMF headers there are some non-SMF headers as well that are a
 
 2.  TotalLocalProcessingAttempt: The total processing attempts for all deliveries which includes redelivery of a message from the advanced event mesh. Note: For the count to be accurate, ensure the DeliveryCount feature is enabled on the respective Queue or Durable Topic Endpoint and all the delivery attempts are made within the same integration flow.
 
-3.  The sender supports the propagation of `SAP_MplCorrelationId`. If the incoming message already contains header `SAP_MplCorrelationId`, the same value is propagated to the exchange.
+3.  The sender supports the propagation of header `SAP_MplCorrelationId`. If the incoming message already contains a header `SAP_MplCorrelationId`, the same value is propagated into the exchange headers.
 
 
 When setting up the integration flow, add them to the allowlist. To do that, click the modeling area outside any integration flow shape. Then, choose *Runtime Configuration* \> *Allowed Header\(s\)*, if required.

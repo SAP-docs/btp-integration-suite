@@ -113,7 +113,7 @@ Scenario evaluation
 </td>
 <td valign="top">
 
-A process during which the application uses predefined rules to evaluate the data gathered in a previous data extraction regarding the following factors: if the extracted integration scenarios can be migrated, the expected effort of this migration, and what migration templates can be used.
+A process during which the application uses predefined rules to evaluate the data gathered in a previous data extraction. It analyses whether the extracted integration scenarios can be migrated and the migration effort you can expect.
 
 </td>
 </tr>

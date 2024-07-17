@@ -536,5 +536,5 @@ Example of an archiving destination with BasicAuthentication and all additional 
 **Related Information**  
 
 
-[Enable Archiving](enable-archiving-0fbbe93.md "To enable data archiving on a tenant in the Cloud Foundry environment, use the official OData API.")
+[Enable Archiving](enable-archiving-0fbbe93.md "To enable data archiving on a tenant in the Cloud Foundry environment, use the OData API.")
 

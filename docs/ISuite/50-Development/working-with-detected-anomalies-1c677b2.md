@@ -15,13 +15,13 @@ Access and analyze anomalies in the analytics dashboard. Discover details about 
 
 ## Viewing Anomalies
 
-After enabling the anomaly detection setting and configuring the API selection, the system will display the details of any detected anomalies in the Analytics dashboard. Additionally, if you have subscribed to the **SAP Alert Notification Service**, you will receive an automated email alert notifying you of the detected anomaly.
+After enabling the anomaly detection setting and configuring the API selection, the system will display the details of any detected anomalies in the Analytics dashboard. Additionally, if you have subscribed to the **SAP Alert Notification Service**, you will receive an automated alert notifying you of the detected anomaly.
 
 To view the detected anomalies from the Analytics dashboard, you can use the following methods:
 
--   In the analytics dashboard, you can find the anomaly notification bar located at the top of the **Overview** page. Click *View* to quickly navigate to the **API Anomaly** page.
+-   In the analytics dashboard, you can find the anomaly notification bar located at the top of the **Overview** page. Choose *View Anomaly* to quickly navigate to the **API Anomaly** page.
 
--   In the analytics dashboard, click the *API Anomaly* tab to view the detected anomalies.
+-   In the analytics dashboard, go to the *API Anomaly* tab to view the detected anomalies.
 
 
 
@@ -76,7 +76,7 @@ Each anomaly is accompanied by the following details:
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="2">
+    <td valign="top">
     
     API Response Time
     
@@ -84,13 +84,6 @@ Each anomaly is accompanied by the following details:
     <td valign="top">
     
     **API Response Time Increase:** This value is displayed when there is an increase in the total response time for a specific API.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **API Response Time Decrease:** This value is displayed when there is a decrease in the total response time for a specific API.
     
     </td>
     </tr>
@@ -119,7 +112,7 @@ Each anomaly is accompanied by the following details:
 -   Affected Entity: Displays the name of the affected API. If there are multiple affected APIs, it will be shown as **Multiple APIs**.
 -   Details: This field describes the issue detected by the system.
 
-Click on an anomaly to view more in-depth information on the next screen.
+Choose an anomaly to view more in-depth information on the next screen.
 
 
 
@@ -144,7 +137,7 @@ In this screen, you can view the anomaly type that describes the issue, along wi
         -   Select *Yes* if the detected anomaly appears to be abnormal and to confirm it as a true anomaly.
 
         -   Select *No* if the detected anomaly seems to be normal and to confirm it as not an anomaly.
-        -   Click on *Save* to confirm your changes.
+        -   Choose *Save* to confirm your changes.
 
 
     You can also evaluate an anomaly on the next screen by clicking on the *Evaluate* button. Once evaluated, the status will be displayed right below the **Evaluation** field.
@@ -160,7 +153,7 @@ In this screen, you can access the following information:
 
 -   Evaluation: Displays the status of an anomaly whether it has been evaluated or not. To evaluate, click on the *Evaluate* button.
 
--   API Anomaly Type: A red arrow is displayed to indicate a surge or drop, depending on the anomaly type. The possible anomaly types include API Traffic \(Increase or Decrease\), API Response Time \(Increase or Decrease\), or API Error Count Increase \(client or server errors\).
+-   API Anomaly Type: A red arrow is displayed to indicate a surge or drop, depending on the anomaly type. The possible anomaly types include API Traffic \(Increase or Decrease\), API Response Time \(Increase\), or API Error Count Increase \(client or server errors\).
 -   Description: Displays the observed percentage variation.
 -   Time Stamp: Displays the date and time of issue detection.
 -   Details:
@@ -169,10 +162,10 @@ In this screen, you can access the following information:
     -   Affected Target Hosts: Displays the name of the affected API provider.
     -   Developer Details: Displays the name of the developer.
 
--   Suggestions: In this tab, you can view suggestions to help resolve the anomaly. Click *View APIs* to be redirected to the *Configure* \> *APIs* page, where you can review the API that is causing the anomaly and conduct further investigation to resolve it.
+-   Suggestions: In this tab, you can view suggestions to help resolve the anomaly. Choose *View APIs* to be redirected to the *Configure* \> *APIs* page, where you can review the API that is causing the anomaly and conduct further investigation to resolve it.
 
 > ### Note:  
-> Anomaly Detection is an AI-based feature, and there is a possibility of receiving inaccurate responses. If you encounter any discrepancies, please share your valuable feedback by clicking on <span class="SAP-icons-V5"></span> \(**Give feedback**\) icon.
+> Anomaly Detection is an AI-based feature, and there is a possibility of receiving inaccurate responses. If you encounter any discrepancies, please share your valuable feedback by clicking on the <span class="SAP-icons-V5"></span> \(**Give feedback**\) icon.
 
 
 
@@ -180,7 +173,7 @@ In this screen, you can access the following information:
 
 ## Graph: Actual vs. Expected Patterns for API Calls
 
-The graph provides a visualization of actual and expected patterns for different types of API calls over a specified timeframe, focusing on key metrics such as **API Traffic** \(Increase or Decrease\), **API Response Time** \(Increase or Decrease\), and **API Error Count Increase** \(Client or Server errors\). The x-axis represents time intervals, while the y-axis reflects the respective metrics' values.
+The graph provides a visualization of actual and expected patterns for different types of API calls over a specified timeframe, focusing on key metrics such as **API Traffic** \(Increase or Decrease\), **API Response Time** \(Increase\), and **API Error Count Increase** \(Client or Server errors\). The x-axis represents time intervals, while the y-axis reflects the respective metrics' values.
 
 **API Traffic**
 
@@ -188,7 +181,7 @@ The graph provides a visualization of actual and expected patterns for different
 
 **Expected**: The expected pattern is represented by a dotted line on the graph. Deviations from this line may signify anomalies in the API call behavior.
 
-**Action**: A consistent alignment between the actual and expected patterns suggests normal and expected API behavior, while variation, especially sudden spikes or drops, may indicate anomalies that require further investigation.
+**Action**: A consistent alignment between the actual and expected patterns suggests normal and expected API behavior, while variation, especially sudden increase or decrease, may indicate anomalies that require further investigation.
 
 **API Response Time**
 
@@ -196,7 +189,7 @@ The graph provides a visualization of actual and expected patterns for different
 
 **Expected**: The expected pattern is represented by a dotted line on the graph. Deviations from this line may signify anomalies in the API call behavior.
 
-**Action**: A consistent alignment between the actual and expected patterns suggests normal and expected API behavior, while variation, especially sudden increase or decrease, may indicate anomalies that require further investigation.
+**Action**: A consistent alignment between the actual and expected patterns suggests normal and expected API behavior, while variation, especially a sudden increase, may indicate anomalies that require further investigation.
 
 **API Errors \(Client or Server Errors\)**
 
@@ -204,7 +197,7 @@ The graph provides a visualization of actual and expected patterns for different
 
 **Expected**: The expected pattern is represented by a dotted line on the graph. Deviations from this line may signify anomalies in the API call behavior.
 
-**Action**: A consistent alignment between the actual and expected patterns suggests normal and expected API errors, while variation, especially sudden increase or decrease, may indicate anomalies that require further investigation.
+**Action**: A consistent alignment between the actual and expected patterns suggests normal and expected API errors, while variation, especially a sudden increase, may indicate anomalies that require further investigation.
 
 
 
@@ -216,15 +209,15 @@ The graph provides a visualization of actual and expected patterns for different
 
 The Action Bar is located in the top right corner of **Anomalies** window. It provides controls that allow you to interact with the displayed data. These controls enable you to switch between graphical and tabular views, select the time period you wish to analyze for anomalies, and perform other actions as described below:
 
-Click <span class="SAP-icons-V5"></span> to switch between full screen view and default screen view.
+Choose <span class="SAP-icons-V5"></span> to switch between full screen view and default screen view.
 
 Click the drop-down to select the time period. The data can be viewed for a maximum of 6 months.
 
-Click <span class="SAP-icons-V5"></span> for graphical view.
+Choose <span class="SAP-icons-V5"></span> for graphical view.
 
-Click <span class="SAP-icons-V5"></span> for tabular view.
+Choose <span class="SAP-icons-V5"></span> for tabular view.
 
-Click <span class="SAP-icons-V5"></span> or <span class="SAP-icons-V5"></span> to zoom in or out the graph. This option is helpful for accessing the red dot, which indicates an anomaly on the graph.
+Choose <span class="SAP-icons-V5"></span> or <span class="SAP-icons-V5"></span> to zoom in or out the graph. This option is helpful for accessing the red dot, which indicates an anomaly on the graph.
 
 **Related Information**  
 
@@ -233,5 +226,5 @@ Click <span class="SAP-icons-V5"></span> or <span class="SAP-icons-V5"></s
 
 [Configuring APIs for Anomaly Detection](configuring-apis-for-anomaly-detection-9e7e5d1.md "View or configure APIs for anomaly detection.")
 
-[Subscribing to Email Notification Alerts](subscribing-to-email-notification-alerts-88e96f4.md "Receive real-time email alerts for anomaly detection services.")
+[Subscribing to Notification Alerts](subscribing-to-notification-alerts-88e96f4.md "Receive real-time alerts for anomaly detection services, delivered to your preferred communication channel.")
 

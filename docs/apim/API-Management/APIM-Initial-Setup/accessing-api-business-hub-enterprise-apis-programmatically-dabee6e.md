@@ -10,7 +10,7 @@ The *devportal-apiaccess* plan allows you to access the API business hub enterpr
 
 ## About the Plan
 
-The service key, consisting of url \(application url\), clientId, clientSecret, and tokenUrl is used to generate a Bearer Token with the help of a REST client. This Bearer Token, along with the application url and API endpoint, is used to trigger the APIs.
+The service key, consisting of url \(application url\), clientId, clientSecret, and tokenUrl is used to generate a bearer token with the help of a REST client. This bearer token, along with the application url and API endpoint, is used to trigger the APIs.
 
 This topic explains how to enable API access for API business hub enterprise.
 
@@ -27,7 +27,7 @@ This topic explains how to enable API access for API business hub enterprise.
 
 -   You have the `space developer` role assigned to you.
 -   You have created a service instance under the *Authorization and Trust Management* tile.
-    1.  In your web browser, open the *SAP BTP Cockpit* - [https://eu-access.cockpit.btp.cloud.sap](https://eu-access.cockpit.btp.cloud.sap).
+    1.  In your web browser, open the *SAP BTP Cockpit* - [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap).
     2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace*.
     3.  Choose *Authorization and Trust Management* \> *Instances* \> *New Instance*.
     4.  In the *Create Instance* dialog that opens, choose the *apiaccess* plan.
@@ -43,7 +43,7 @@ This topic explains how to enable API access for API business hub enterprise.
         The client credentials like url, clientId, and clientSecret details appear for the given service key.
 
 
--   You have created a destination of type `OAuth2Credentials` to the XSUAA APIs by using the credentials you derived from creating the service key.
+-   You have created a destination of type `OAuth2Credentials` to the XSUAA APIs by using the credentials you derived from creating the service key. This is required to access the XSUAA APIs for authorization and trust mangement services.
     1.  From your *Subaccount*, navigate to *Connectivity* \> *Destinations* \> *New Destination*.
     2.  Choose the service instance that you created above.
     3.  In the *Destination Configuration* window, provide the details.
@@ -80,12 +80,12 @@ This topic explains how to enable API access for API business hub enterprise.
 
 ## Creating a Service Instance in the API Management, API business hub enterprise 
 
-Create a service instance using API Access plan.
+Create a service instance using *devportal-apiaccess* plan.
 
 1.  In your web browser, open the *SAP BTP Cockpit* - [https://account.hana.ondemand.com/cockpit](https://account.hana.ondemand.com/cockpit).
 2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
 3.  Choose *API Management, API Business Hub Enterprise* \> *Instances* \> *New Instance*.
-4.  In the *Create Instance* dialog that opens, choose the plan as *devportal-apiaccess*.
+4.  In the *Create Instance* dialog that opens, choose *devportal-apiaccess*.
 5.  Click *Next*.
 6.  In the section *Specify parameters*, provide the details as mentioned below, based on the role you require.
 
@@ -548,7 +548,7 @@ In the REST client:
 **Related Information**  
 
 
-[Accessing API Management APIs Programmatically](accessing-api-management-apis-programmatically-24a2c37.md "The apiportal-apiaccess plan offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the Business Accelerator Hub.")
+[Accessing API Management APIs Programmatically](accessing-api-management-apis-programmatically-24a2c37.md "The apiportal-apiaccess plan offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the SAP Business Accelerator Hub.")
 
 [Managing Cloud Foundry Microservices through API Management](managing-cloud-foundry-microservices-through-api-management-e609a3e.md "The apim-as-route-service plan helps you in managing Cloud Foundry applications by including policies such as rate limit, quota. The service instance you create through this plan allows you to bind to the route service and creates an API Proxy. This API Proxy serves in establishing a secure connection with your Cloud Foundry application and all the calls made to the Cloud Foundry application are routed via API Management, API portal.")
 

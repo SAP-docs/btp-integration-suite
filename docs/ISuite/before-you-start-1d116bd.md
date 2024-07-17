@@ -11,6 +11,8 @@ To ensure that your system landscape meets the requirements, complete the follow
 
 [Prepare Your Kubernetes Cluster](prepare-your-kubernetes-cluster-46720c5.md "Get to know the requirements for installing Edge Integration Cell on a Kubernetes cluster.")
 
+[Prepare for Deployment on SUSE Rancher Kubernetes Engine \(RKE or RKE2\)](prepare-for-deployment-on-suse-rancher-kubernetes-engine-rke-or-rke2-0359e5c.md "Before deploying your cluster on SUSE Rancher Kubernetes Engine (RKE or RKE2), perform the following tasks.")
+
 [Prepare for Deployment on Amazon Elastic Kubernetes Service \(EKS\)](prepare-for-deployment-on-amazon-elastic-kubernetes-service-eks-6f95afa.md "Before deploying your cluster on Amazon Elastic Kubernetes Service (EKS), perform the following tasks.")
 
 [Prepare for Deployment on Azure Kubernetes Service \(AKS\)](prepare-for-deployment-on-azure-kubernetes-service-aks-a3c3a9c.md "Before deploying your cluster on Azure Kubernetes Service (AKS), perform the following tasks.")

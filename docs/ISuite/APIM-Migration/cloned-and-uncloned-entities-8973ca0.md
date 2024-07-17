@@ -11,13 +11,13 @@ Refer this section for the entities that are cloned and entities that aren’t c
 ## Entities That Are Cloned
 
 > ### Note:  
-> Currently, when a custom role is assigned to a Product, the Application creation using the tenant cloning tool is not supported.
+> Currently, when a custom role is assigned to a product, the application creation using the tenant cloning tool is not supported.
 > 
-> As a work-around, before initiating the cloning process, remove the custom role assigned to the Product in the Source system and proceed with the cloning process.
+> As a work-around, before initiating the cloning process, remove the custom role assigned to the product in the source system and proceed with the cloning process.
 > 
-> After the cloning process is completed, reassign the custom roles to the Product in the Source system. Also, ensure that the custom roles are assigned to the Product in the Target system.
+> After the cloning process is completed, reassign the custom roles to the product in the source system. Also, ensure that the custom roles are assigned to the product in the target system.
 > 
-> In case the custom roles aren’t appearing in the *Permission* tab, as mentioned in the Prerequisite section, ensure that the custom roles are created and assigned to the developers in the target Cloud Foundry environment.
+> In case the custom roles aren’t appearing in the *Permission* tab, as mentioned in the **Prerequisite** section, ensure that the custom roles are created and assigned to the developers in the target multi-cloud foundation.
 
 > ### Note:  
 > If you have made any customizations to the `HelloWorld` sample proxy, and you want to migrate this proxy to the target, while cloning you might get the following error: `"Unable to import API Proxy from zip file; xml content invalid"`To address this, execute the following steps:
@@ -36,7 +36,7 @@ Refer this section for the entities that are cloned and entities that aren’t c
 >     > 
 >     > ```
 > 
->     Please note that your userId is as per your Identity Service configuration. You can find your userId when you open any proxies in the API portal.
+>     Please note that your userId is as per your **Identity Service** configuration. You can find your userId when you open any proxies in the API portal.
 > 
 > 3.  Save the zip file.
 > 
@@ -47,7 +47,7 @@ Refer this section for the entities that are cloned and entities that aren’t c
 > 
 > With this the `created_by` will reflect in the API proxy.
 
-The following list displays the API Management entities that are cloned:
+The following list displays the API Management entities that can be cloned:
 
 -   Certificates and Certificate Store
 -   Rate Plans
@@ -62,6 +62,8 @@ The following list displays the API Management entities that are cloned:
 -   Application Developer
 -   Access Control Permissions for API Product
 -   Custom Metrics and Charts
+-   Cache Resources
+
 
 
 

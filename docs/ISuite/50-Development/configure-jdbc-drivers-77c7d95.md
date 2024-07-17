@@ -28,14 +28,14 @@ JDBC connectivity provides a mechanism for integration flows deployed on SAP Int
 > <tr>
 > <td valign="top">
 > 
-> Microsoft JDBC Driver for SQL Server
+> [Microsoft JDBC Driver for SQL Server](https://learn.microsoft.com/en-us/sql/connect/jdbc/release-notes-for-the-jdbc-driver?view=sql-server-ver15#82) 
 > 
 > </td>
 > <td valign="top">
 > 
-> -   [msSQLDriver8.2.2](https://docs.microsoft.com/en-us/sql/connect/jdbc/release-notes-for-the-jdbc-driver?view=sql-server-ver15#82)
+> -   [msSQLDriver8.2.2](https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/8.2.2.jre8/)
 > 
-> -   [msSQLDriver8.4.1](https://docs.microsoft.com/en-us/sql/connect/jdbc/release-notes-for-the-jdbc-driver?view=sql-server-ver15#84)
+> -   [msSQLDriver8.4.1](https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/8.4.1.jre8/)
 > 
 > 
 > 
@@ -45,18 +45,18 @@ JDBC connectivity provides a mechanism for integration flows deployed on SAP Int
 > <tr>
 > <td valign="top">
 > 
-> Oracle JDBC Driver
+> [Oracle JDBC Driver](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 > 
 > </td>
 > <td valign="top">
 > 
-> -   [oracleDB11.2.0.4](https://www.oracle.com/database/technologies/jdbc-upc-downloads.html)
+> -   [oracleDB11.2.0.4](https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc6/)
 > 
-> -   [oracleDB12.2.0.1](https://www.oracle.com/database/technologies/jdbc-upc-downloads.html)
+> -   [oracleDB12.2.0.1](https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc8/12.2.0.1/)
 > 
-> -   [oracleDB19.11.0.0](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19-11-c-downloads.html)
+> -   [oracleDB19.11.0.0](https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc8/19.11.0.0/)
 > 
-> -   [oracleDB19.16.0.0](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19-11-c-downloads.html)
+> -   [oracleDB19.16.0.0](https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc8/19.16.0.0/)
 > 
 > 
 > 

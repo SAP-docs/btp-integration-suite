@@ -185,7 +185,14 @@ To know more about OAS 3.0 support in API Management, see [OpenAPI Specification
 
 10. To add additional attributes, see [Additional Attributes in OpenAPI Specification](additional-attributes-in-openapi-specification-4ab4c8e.md).
 
-11. Once you’ve modeled the API, you can select one of the following actions for the API:
+11. For a given OData-based API artifact, you can import an .edmx file to update the API artifact with the latest resources.
+
+    Importing an .edmx file will overwrite the existing list of resources in the API artifact. However, the description for each resource will still be maintained and not be changed.
+
+    > ### Note:  
+    > Importing the .edmx file will convert the API artifact to OpenAPI Specification 3.0.0. Please review the changes carefully before saving the API artifact.
+
+12. Once you’ve modeled the API, you can select one of the following actions for the API:
 
 
     <table>

@@ -168,7 +168,7 @@ In addition to encrypting the message content, you can also sign the content to 
 
         Specify the signature \(digest\) algorithm.
 
-        Signature algorithms: MD5/RSA, RIPEMD128/RSA, RIPEMD160/RSA, RIPEMD256/RSA, SHA/RSA, SHA224/RSA, SHA256/RSA, SHA384/RSA, SHA512/RSA.
+        Signature algorithms: AES/GCM/NoPadding, AES/CCM/NoPadding, MD5/RSA, RIPEMD128/RSA, RIPEMD160/RSA, RIPEMD256/RSA, SHA/RSA, SHA224/RSA, SHA256/RSA, SHA384/RSA, SHA512/RSA.
 
         > ### Caution:  
         > Algorithms starting with SHA1, MD2, or MD5 are still supported for compatibility reasons, but they no longer meet today's security requirements. Therefore, we recommend using stronger algorithms where possible. Check with your security experts or authorities like NIST for more detailed security recommendations.

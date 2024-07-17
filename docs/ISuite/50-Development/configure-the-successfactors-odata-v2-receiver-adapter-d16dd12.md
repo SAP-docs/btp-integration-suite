@@ -461,7 +461,7 @@ This option isn’t enabled for *Content Enricher*.
 </td>
 <td valign="top">
 
-Maximum time the system waits for a response before terminating the connection.
+Maximum time the system waits for a response before terminating the connection. For more information about the supported session duration, see SAP Note [3063733](https://me.sap.com/notes/3063733).
 
 </td>
 </tr>

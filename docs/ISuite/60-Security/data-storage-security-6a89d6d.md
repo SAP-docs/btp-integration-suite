@@ -2,7 +2,7 @@
 
 # Data Storage Security
 
-Customer data can be stored by dedicated steps during message processing. Edge Integration Cell stores data in the edge environment using persistent volumes. Amazon Web Services \(AWS\) and Microsoft Azure support data encryption at rest. The storage provider used for SUSE Rancher, needs to support encryption at rest. For more information, check the documentation of the related platform.
+Customer data can be stored by dedicated steps during message processing. Edge Integration Cell stores data in the edge environment using persistent volumes. Amazon Web Services \(AWS\) and Microsoft Azure support data encryption at rest Storage providers used for SUSE Rancher or Red Hat OpenShift need to support encryption at rest. For more information, check the documentation of the related platform.
 
 For certain use cases, you can configure that data at rest is encrypted.
 

@@ -65,6 +65,6 @@ An API business hub enterprise administrator can perform the following tasks:
     > ### Note:  
     > You can create a maximum of 18 custom attributes per application. You cannot modify the name of a created custom attribute. However, you can modify its value whenever required. You can delete a custom attribute if it is no longer needed.
 
-    For more information on the usage of custom attributes in an application, see [Example: Accessing the Custom Attributes of an Application](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/1cbd94c86c054d66b3826f6cd91e0df8.html "") :arrow_upper_right:.
+    For more information on the usage of custom attributes in an application, see [Example: Accessing the Custom Attributes of an Application](example-accessing-the-custom-attributes-of-an-application-1cbd94c.md).
 
 

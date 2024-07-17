@@ -6,6 +6,115 @@ This topic provides information on patch releases for API Management that are pr
 
 
 
+<a name="loio6ddd927cbeaa42e384dc903e6002e269__section_afk_kzm_1cc"/>
+
+## July 2024
+
+**Software Increment: 2405**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.170.4
+
+</td>
+<td valign="top">
+
+Users were unable to discover resources for a few EDMX files. However, this issue has now been resolved.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio6ddd927cbeaa42e384dc903e6002e269__section_rkm_1sd_sbc"/>
+
+## June 2024
+
+**Software Increment: 2404**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.169.5
+
+</td>
+<td valign="top">
+
+The import of the apiproxy with multiple target endpoints having the same on-premise provider as the target was previously failing. However, this issue has been resolved.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.169.5
+
+</td>
+<td valign="top">
+
+The issue of API Discovery including resources that were marked as false in the service metadata has been resolved.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio6ddd927cbeaa42e384dc903e6002e269__section_hll_dw1_3bc"/>
 
 ## May 2024

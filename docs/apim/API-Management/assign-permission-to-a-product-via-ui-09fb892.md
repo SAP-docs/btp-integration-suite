@@ -22,7 +22,7 @@ Whenever you create a product or edit a draft product, permissions can be added 
 > ### Note:  
 > Currently, we do not support assigning of permissions to the products defined in the remote API portals that are connected to a centralised API business hub enterprise.
 > 
-> \*Remote API portals are those that are not in the same subaccount as the centralised API business hub enterprise and are configured via the manage connections. For more information, [Centralized API business hub enterprise](APIM-Initial-Setup/centralized-api-business-hub-enterprise-38422de.md) and [Centralized API business hub enterprise \[Classic Design\]](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/33b706f4f2e148ffb1cb9289d5cda27d.html "The centralized API business hub enterprise is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.") :arrow_upper_right:.
+> \*Remote API portals are those that are not in the same subaccount as the centralised API business hub enterprise and are configured via the manage connections. For more information, [Centralized API business hub enterprise](APIM-Initial-Setup/centralized-api-business-hub-enterprise-38422de.md).
 
 
 

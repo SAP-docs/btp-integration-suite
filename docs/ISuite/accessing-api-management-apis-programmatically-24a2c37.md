@@ -2,7 +2,7 @@
 
 # Accessing API Management APIs Programmatically
 
-The *apiportal-apiaccess* plan offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the [Business Accelerator Hub](https://api.sap.com/package/APIMgmt/odata).
+The *apiportal-apiaccess* plan offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the SAP Business Accelerator Hub.
 
 
 
@@ -22,7 +22,7 @@ The API Access plan allows you to generate a service key by creating a service i
 
 -   You've enabled API Management capability using Integration suite. For more information, refer [Subscribing to Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/8a3c8b7a6b1c4f249bb81d11644ef806.html?version=CLOUD) and [Activating Capabilities](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/2ffb343c163c48a4b3a90f9f3c487328.html?version=CLOUD).
 
-    OR
+    **OR**
 
     You have subscribed to the standalone *API Management, API portal* tile in the Cloud Foundry environment. For more information, see [Set Up API Portal Application](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/29c281b4a002404eba44e91c6fad0d34.html "To create APIs, products, import policy templates, and view applications, set up the API portal application.") :arrow_upper_right:.
 
@@ -39,19 +39,20 @@ To enable API access for API Management, API portal execute the steps in the sec
 
 Create a service instance using API Access plan to generate a service key.
 
-1.  In your web browser, open the *SAP BTP Cockpit* - [https://eu-access.cockpit.btp.cloud.sap](https://eu-access.cockpit.btp.cloud.sap).
-2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
-3.  Choose *API Management, API portal* \> *Instances* \> *New Instance*.
+1.  In your web browser, open the *SAP BTP Cockpit* - .
+2.  [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap)
+3.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
+4.  Choose *API Management, API portal* \> *Instances* \> *New Instance*.
 
     > ### Note:  
     > If you are unable to view the *API Management, API Portal* tile, please check your entitlements. For more information, see [Managing Entitlements and Quotas Using the Cockpit](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/c8248745dde24afb91479361de336111.html).
 
-4.  In the *Create Instance* dialog that opens, choose the *apiportal-apiaccess* plan.
-5.  In the section *Specify parameters*, paste one of the following JSON codes, to assign a specific role.
+5.  In the *Create Instance* dialog that opens, choose the *apiportal-apiaccess* plan.
+6.  In the section *Specify parameters*, paste one of the following JSON codes, to assign a specific role.
 
     The following roles are supported for the current scenario:
 
-    Assign `APIPortal.Administrator` role to access the API portal APIs and perform operations like create, update, delete on various API portal entities as specified in the [SAP Business Accelerator Hub](https://api.sap.com/package/APIMgmt?section=Artifacts)
+    Assign `APIPortal.Administrator` role to access the API portal APIs and perform operations like create, update, delete on various API portal entities as specified in the SAP Business Accelerator Hub.
 
     ```
     
@@ -79,8 +80,8 @@ Create a service instance using API Access plan to generate a service key.
     }
     ```
 
-6.  Click *Next* until you reach the *Confirm* section
-7.  In the section *Confirm*, enter a unique *Instance Name* and choose *Finish*.
+7.  Click *Next* until you reach the *Confirm* section
+8.  In the section *Confirm*, enter a unique *Instance Name* and choose *Finish*.
 
 The creation of service instance is successful.
 
@@ -401,10 +402,10 @@ In the REST Console:
 3.  Similarly, paste the *clientId* and *clientSecret* in the place of `Username` and `Password`.
 4.  Make a POST Call.
 5.  Obtain the Bearer Token from the output and copy it in a notepad.
-    -   Now, to trigger an API, in the same REST Console, append the API endpoint \(obtained from the API portal APIs that are located in the SAP API Management package of API Business Hub\) to the *url*.
+    -   Now, to trigger an API, in the same REST Console, append the API endpoint \(obtained from the API portal APIs that are located in the SAP API Management package in SAP Business Accelerator Hub\) to the *url*.
 
         > ### Note:  
-        > Currently, the *apiportal-apiaccess* plan allows you to access only the API Management APIs from the [SAP API Management package](https://api.sap.com/package/APIMgmt?section=Artifacts).
+        > Currently, the *apiportal-apiaccess* plan allows you to access only the API Management APIs from the SAP API Management package in SAP Business Accelerator Hub.
 
     -   Choose `Bearer Token` as the `Authorization` type and paste the copied Bearer Token in the specified space.
     -   Include payloads, if needed.

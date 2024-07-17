@@ -30,13 +30,17 @@ Once your create and define the custom search attributes, you need to use them i
 
 <a name="loio7daf06ceece84dc09d3ca63fc62d0a61__section_y5v_1rb_bzb"/>
 
-## Maximum Retry Count
+## Retry Configuration
 
-The integration flows once deployed, run the transaction activity and try to deliver the message. Sometimes, they fail due to unknown errors. In such cases, you can provide an option to re-trigger the integration flows. With *Maximum Retry Count*, you can now define the maximum number of retries for failed integration flows. This is applicable for *Step 2 - Interchange Processing Flow* and *Step 3 - Receiver Communication Flow*. Follow the procedure below to know how to maintain the retry entries.
+The integration flows once deployed, run the transaction activity and try to deliver the message. Sometimes, they fail due to unknown errors. In such cases, you can provide an option to re-trigger the integration flows. With *Retry Configuration*, you can now define the maximum number of retries for failed integration flows. This is applicable for *Step 2 - Interchange Processing Flow* and *Step 3 - Receiver Communication Flow*. Follow the procedure below to know how to maintain the retry entries.
 
 1.  Navigate to the *Configuration Manager* in your application.
 
-2.  In the *Maximum Retry Count* section, choose *Edit*.
+2.  In the *Retry Configuration* section, choose *Edit*.
 3.  Set the *Maximum Retry* count for the fields *Interchange Processing Flow* and *Receiver Communication Flow*.
-4.  Choose *Save*. Saving the values will immediately push the data into Partner Directory. Choose *OK*.
+4.  There could be messages that end up failing even after reaching the maximum retry count. These messages are then removed from the JMS queue. If you choose to keep them, you can do so by enabling the **Dead Letter Queue** where these messages will be maintained after getting removed from the JMS queue.
+
+    To enable the dead letter queue, select the checkbox of the field *Dead-Letter Queue* for the fields *Interchange Processing Flow* and *Receiver Communication Flow*.
+
+5.  Choose *Save*. Saving the values will immediately push the data into Partner Directory. Choose *OK*.
 

@@ -44,7 +44,7 @@ This topic explains how to obtain a service key in order to enable principal pro
 
 Create a service instance to generate a service key that is used to enable the principal propagation.
 
-1.  In your web browser, open the *SAP BTP Cockpit* - [https://eu-access.cockpit.btp.cloud.sap](https://eu-access.cockpit.btp.cloud.sap).
+1.  In your web browser, open the *SAP BTP Cockpit* - [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap).
 2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
 3.  Choose *API Management, API portal* \> *Instances* \> *New Instance*.
 4.  In the *Create Instance* dialog, choose *on-premise-connectivity* plan.
@@ -313,7 +313,7 @@ You can use the credentials to establish:
 **Related Information**  
 
 
-[Accessing API Management APIs Programmatically](accessing-api-management-apis-programmatically-24a2c37.md "The apiportal-apiaccess plan offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the Business Accelerator Hub.")
+[Accessing API Management APIs Programmatically](accessing-api-management-apis-programmatically-24a2c37.md "The apiportal-apiaccess plan offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the SAP Business Accelerator Hub.")
 
 [Accessing API business hub enterprise APIs Programmatically](accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md "The devportal-apiaccess plan allows you to access the API business hub enterprise APIs to programmatically onboard developers, create applications, and more.")
 

@@ -363,6 +363,8 @@ The creation modes apply only for the agreements you newly create. The agreement
     > The application now provides you with the *ProcessDirect* adapter that allows you to use your customised integration flow within the generic integration flow. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
 20. The *Enable Payload Validation* checkbox allows the system to validate the incoming payload. Check/Uncheck the option if you want to enable or disable the payload validation.
+    -   If enabled, the generic integration flow will perform a validation check for the sender interchange. And regardless of the outcome, the interchange processing will continue to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
+
 21. The *Enable Syntax Validation* checkbox allows the system to validate the syntax using EDI splitter and this option is selected by default. Check/Uncheck the option if you want to enable or disable the syntax validation.
 
     > ### Note:  
@@ -371,8 +373,10 @@ The creation modes apply only for the agreements you newly create. The agreement
     > -   ASC X12
     > 
     > -   UN/EDIFACT
+    > 
+    > If the identifier used in the agreement has **Custom Scheme Code**, then this option will be skipped irrespective of the field selection.
 
-22. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see  <?sap-ot O2O class="- topic/xref " href="b927e0182df04208ace0f15c66073317.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/9bd43c9ae064493286f321551bd0557c.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+22. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
 23. Choose the *Mapping* step.
 24. Select a mapping guideline using the value help provided for the field *Mapping Guideline\(MAG\)*.
 
@@ -417,7 +421,9 @@ The creation modes apply only for the agreements you newly create. The agreement
     > To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
 33. The *Enable Payload Validation* checkbox allows the system to validate the outgoing payload. It is selected by default. Uncheck the option if you want to disable the payload validation.
-34. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see  <?sap-ot O2O class="- topic/xref " href="b927e0182df04208ace0f15c66073317.xml" text="" desc="" xtrc="xref:14" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/9bd43c9ae064493286f321551bd0557c.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    -   If enabled, the generic integration flow will perform a validation check for the receiver interchange. And regardless of the outcome, the interchange processing will continue to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
+
+34. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
 35. If your receiver type system is UN/EDIFACT, you might want to set a target encoding. To do so, under the field *Target Encoding*, select a value from the list.
 36. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgement for the receiver.
 
@@ -804,6 +810,8 @@ The creation modes apply only for the agreements you newly create. The agreement
     > The application now provides you with the *ProcessDirect* adapter that allows you to use your customised integration flow within the generic integration flow. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
 23. The *Enable Payload Validation* checkbox allows the system to validate the incoming payload. Check/Uncheck the option if you want to enable or disable the payload validation.
+    -   If enabled, the generic integration flow will perform a validation check for the sender interchange. And regardless of the outcome, the interchange processing will continue to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
+
 24. The *Enable Syntax Validation* checkbox allows the system to validate the syntax using EDI splitter and this option is selected by default. Check/Uncheck the option if you want to enable or disable the syntax validation.
 
     > ### Note:  
@@ -813,9 +821,11 @@ The creation modes apply only for the agreements you newly create. The agreement
     > 
     > -   UN/EDIFACT
     > 
+    > If the identifier used in the agreement has **Custom Scheme Code**, then this option will be skipped irrespective of the field selection.
+    > 
     > This option is not editable if you have created the agreement with reference mode \(created using *Bind with Template* option\).
 
-25. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see  <?sap-ot O2O class="- topic/xref " href="b927e0182df04208ace0f15c66073317.xml" text="" desc="" xtrc="xref:22" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/9bd43c9ae064493286f321551bd0557c.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+25. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md)
 26. Choose the *Mapping* step.
 27. Select a mapping guideline using the value help provided for the field *Mapping Guideline\(MAG\)*.
 
@@ -860,7 +870,9 @@ The creation modes apply only for the agreements you newly create. The agreement
     > To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
 36. The *Enable Payload Validation* checkbox allows the system to validate the outgoing payload. It is selected by default. Uncheck the option if you want to disable the payload validation.
-37. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see  <?sap-ot O2O class="- topic/xref " href="b927e0182df04208ace0f15c66073317.xml" text="" desc="" xtrc="xref:28" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/9bd43c9ae064493286f321551bd0557c.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+    -   If enabled, the generic integration flow will perform a validation check for the receiver interchange. And regardless of the outcome, the interchange processing will continue to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
+
+37. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md)
 38. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgement for the receiver.
 
     > ### Note:  

@@ -90,12 +90,59 @@ Consider the following examples:
     <tr>
     <td valign="top">
     
-    Target Endpoint
+    Target EndPoint
     
     </td>
     <td valign="top">
     
     You can choose URL, API Provider, or API proxy, as the target endpoint as well as enter target endpoint rules.
+
+    To define multiple-target endpoints, choose *Add* next to the *Target EndPoint* dropdown menu.
+
+    In the *Add Target EndPoint* dialog, fill in the target endpoint *Name*, select the *API Provider*, where you want the target endpoint to point to, and specify the *Relative URL*, then choose *Add*.
+
+    > ### Note:  
+    > If you have an API proxy with a multi-target endpoint, it is recommended that the name of the target endpoint should be between 2 and 255 characters. If you enter a single character in the name field for the provider types OpenConnector or Cloud Integration Flow, the API proxy cannot be deployed to the runtime.
+
+    > ### Note:  
+    > Only target endpoints of the type API provider can be added in this dialog.
+
+    Once added, the target endpoint will appear in the *Target EndPoint*dropdown menu. You can also change the type of the target endpoint from API provider to API proxy or URL.
+
+    To add policies to the target endpoint, choose *Policies* from the top-right corner of the page. You can then view the target endpoint flow and the policies applied to it in the *Policy Editor*. To view the policies associated with a different target endpoint, you can navigate back to the *Target EndPoint* tab on the proxy details page. Select the desired target endpoint and return to the *Policy Editor*.
+
+    > ### Note:  
+    > If you wish to establish a connection with the Cloud Integration system, you must select an API provider of type *Cloud Integration Flow*. For more information on *Cloud Integration Flow*, see [Creating an API Proxy using SAP Cloud Integration API Provider](creating-an-api-proxy-using-sap-cloud-integration-api-provider-aefbd74.md).
+    > 
+    > If you want to select an API provider of the type *Open Connector*, please make sure that the tenant has a Key Value Map with the "kvm-map-name" that includes the "instance token" for the Open Connector. If this Key Value Map is not already present, you can use the following sample information to create it:
+    > 
+    > URL : https://<apiportalbaseurl\>/apiportal/api/1.0/Management.svc/GenericKeyMapEntries
+    > 
+    > Method : POST
+    > 
+    > > ### Sample Code:  
+    > > ```
+    > > {
+    > >   "name": "apim.oc.instance.token",
+    > >   "scopeId": "<apiProxyName> ",
+    > >   "scope": "APIPROXY",
+    > >   "isEncrypted": true,
+    > >   "genericKeyMapEntryValues": [
+    > >     {
+    > >       "name": "default",
+    > >       "mapName": "apim.oc.instance.token",
+    > >       "value": "<instancesecret>",
+    > >       "scopeId": ""<apiProxyName>",
+    > >       "scope": "APIPROXY"
+    > >     }
+    > >   ]
+    > > }
+    > > 
+    > > ```
+    > 
+    > Here, the <apiProxyName\> refers to the name of the API Proxy, and \`default\` is the name of the Target Endpoint. The <instancesecret\> is the secret key associated with the Open Connector instance that you wish to establish a connection with.
+
+
     
     </td>
     </tr>
@@ -144,4 +191,13 @@ Consider the following examples:
 ## Results
 
 The changes you've made to the API are saved and deployed successfully.
+
+**Related Information**  
+
+
+[Key Components of an API](key-components-of-an-api-19c0654.md "This section introduces you to some of the key components of an API that you need to know before building APIs.")
+
+[Different Methods of Creating an API Proxy](different-methods-of-creating-an-api-proxy-4ac0431.md "An API proxy is the data object that contains all the functionality to be executed when an external user wants to access the backend service.")
+
+[Additional Configurations](additional-configurations-de7285c.md " ")
 

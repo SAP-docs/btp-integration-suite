@@ -26,7 +26,7 @@ Create an AWS account \(mandatory\).
 </td>
 <td valign="top">
 
-[https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
+[Create a standalone AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
 
 </td>
 </tr>
@@ -38,7 +38,7 @@ Create a Kubernetes cluster on Amazon Elastic Kubernetes Service \(mandatory\).
 </td>
 <td valign="top">
 
-[https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html)
+[Getting started with Amazon EKS](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html)
 
 </td>
 </tr>
@@ -50,7 +50,7 @@ Sign up for the Amazon Elastic Container Registry \(Amazon ECR\) service \(recom
 </td>
 <td valign="top">
 
-[https://docs.aws.amazon.com/eks/latest/userguide/IAM\_policies.html](https://docs.aws.amazon.com/eks/latest/userguide/IAM_policies.html)
+[IAM for Amazon EKS](https://docs.aws.amazon.com/eks/latest/userguide/IAM_policies.html)
 
 </td>
 </tr>
@@ -62,7 +62,7 @@ Create at least one storage class and a dynamic provisioner for it in your clust
 </td>
 <td valign="top">
 
-[https://docs.aws.amazon.com/eks/latest/userguide/storage-classes.html](https://docs.aws.amazon.com/eks/latest/userguide/storage-classes.html)
+[Storage classes](https://docs.aws.amazon.com/eks/latest/userguide/storage.html)
 
 </td>
 </tr>
@@ -74,7 +74,7 @@ Install Amazon Elastic File System \(EFS\) Container Storage Interface \(CSI\) d
 </td>
 <td valign="top">
 
-[https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html)
+[Amazon EFS CSI driver](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html)
 
 </td>
 </tr>
@@ -86,7 +86,7 @@ Install AWS Command Line Interface \(CLI\).
 </td>
 <td valign="top">
 
-[https://aws.amazon.com/cli](https://aws.amazon.com/cli)
+[AWS Command Line Interface](https://aws.amazon.com/cli)
 
 </td>
 </tr>
@@ -98,7 +98,7 @@ Install the Kubernetes command-line tool `kubectl`.
 </td>
 <td valign="top">
 
-[https://kubernetes.io/docs/tasks/tools/\#kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
+[Install Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
 
 </td>
 </tr>

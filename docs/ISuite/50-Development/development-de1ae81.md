@@ -220,7 +220,7 @@ Create products and view application details as they’re the key components use
 <tr>
 <td valign="top">
 
-*Monitor* \> *Analyze APIs* 
+*Analyze* 
 
 </td>
 <td valign="top">
@@ -230,7 +230,7 @@ Analyze API usage and performance.
 </td>
 <td valign="top">
 
-[Analyze APIs](analyze-apis-7712c61.md)
+[Analyze API Proxies](analyze-api-proxies-7712c61.md)
 
 </td>
 </tr>

@@ -35,23 +35,27 @@ Establish a connection between your SAP Process Orchestration system and Migrati
 
     -   ESR Content
 
-        -   `/rep/read/ext`
         -   `/dir/read/ext`
+        -   `/dir/query/ext`
         -   `/rep/support/SimpleQuery`
+        -   `/rep/read/ext`
         -   `/rep/query/ext`
+        -   `/rep/query/int`
 
     -   Message Monitoring
-
         -   `/mdt`
 
 
-
-    The endpoints are constructed according to the pattern `<protocol>://<hostname>:<port><endpoint>`, for example, `https://po75-systema.sap:443/AlertRuleInService`.
+    The endpoints are constructed according to the pattern `<protocol>://<hostname>:<port><endpoint>`, for example, `https://po75-systema.sap:443/CommunicationChannelInService`.
 
     You can use Cloud Connector to securely expose these endpoints:
 
     -   Ensure that your Cloud Connector is connected to your subaccount. See [Establish Connections to SAP BTP](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/db9170a7d97610148537d5a84bf79ba2.html?locale=en-US&version=Cloud#establish-connections-to-sap-btp).
     -   Create a new HTTP destination \(cloud to on-premise\) with back-end type *SAP Process Integration*. See [Configure Access Control \(HTTP\)](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/e7d4927dbb571014af7ef6ebd6cc3511.html?locale=en-US&version=Cloud).
+
+        > ### Note:  
+        > To avoid potential issues during the connection process, don't use the character `_` \(underscore\) in the address name.
+
     -   Limit access to the previously mentioned endpoints and subpaths by changing *Access Policy* to *Path And All Sub-Paths*.
 
 
@@ -69,7 +73,7 @@ To connect your SAP Process Orchestration system with the Migration Assessment a
 
 2.  In the table labeled *SAP Process Orchestration Systems*, choose *Add*.
 
-    ![](images/IntegrationSuite_PIMAS_AddPOSystem_4420a65.png)
+    ![](images/IntegrationSuite_PIMAS_AddPOSystem_ac47311.png)
 
 3.  Enter a *System Name*.
 

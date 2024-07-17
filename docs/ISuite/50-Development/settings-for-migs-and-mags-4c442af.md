@@ -208,14 +208,14 @@ The admnistrative settings allows you to opt-in/opt out of the Proposal service.
 
     This option is provided for users who no longer wish to enable their data to be collected for the proposal service.
 
-    > ### Caution:  
-    > Disabling the proposal service cannot be reversed, and it will lead to the following consequences:
+    > ### Remember:  
+    > Disabling the proposal service will lead to the following consequences:
     > 
-    > -   The proposal service will cease collecting MIG/MAG data.
+    > -   The proposal service will cease collecting Integration Advisor data, such as MIG and MAG data.
     > 
     > -   MIG and MAG proposals will no longer be accessible to this tenant.
     > 
-    > The change of this setting will not impact the previously collected data.
+    > The change to this setting will take effect in the future, but it won't have any impact on previously collected data.
 
 3.  Choose *Save*.
 

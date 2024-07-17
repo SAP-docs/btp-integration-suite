@@ -79,7 +79,7 @@ West Europe
 </td>
 <td valign="top">
 
-51.105.226.79, 20.107.78.224, 20.4.205.181, 108.143.96.175, 172.201.40.15, 20.31.245.126
+51.105.226.79, 20.4.205.181, 20.31.245.126
 
 </td>
 </tr>
@@ -692,6 +692,9 @@ europe-west3
 </td>
 </tr>
 </table>
+
+> ### Note:  
+> In case any discrepancies are observed in the IPs, please create a support ticket on the **OPU-API-OD-OPS** component.
 
 
 

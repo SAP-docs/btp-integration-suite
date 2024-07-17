@@ -46,3 +46,11 @@ For example:
 
 ## Recipient List Asynchronous
 
+Recipient list-based integration scenarios and content-based routing integration scenarios can be migrated using the pattern Recipient List Asynchronous.
+
+For example, if your ICO is designed with a recipient list where the message is sent to the default receiver in case the receiver is not determined, the following pattern applies.![](images/RL_ASYNC_0003_5163d0f.png)
+
+If your ICO is designed with 1 router and a receiver for each router branch sending message to default receiver in case of receiver not determined, the following pattern applies. ![](images/CBR_ASYNC_0003_b742101.png)
+
+Similarly, based on other receipient list integration scenarios and content-based routing integration scenarios, the migration tooling applies the Recipient List Asynchronous pattern and dynamically adds the flow steps.
+

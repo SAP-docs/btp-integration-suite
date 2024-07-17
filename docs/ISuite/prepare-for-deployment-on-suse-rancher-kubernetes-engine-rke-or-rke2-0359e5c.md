@@ -30,11 +30,7 @@ Create a Kubernetes cluster \(mandatory\)
 </td>
 <td valign="top">
 
-RKE: [https://rke.docs.rancher.com/](https://rke.docs.rancher.com/) 
-
-or
-
-RKE2: [https://docs.rke2.io/](https://docs.rke2.io/) 
+[RKE](https://rke.docs.rancher.com/) or [RKE2](https://docs.rke2.io/) 
 
 </td>
 </tr>
@@ -46,9 +42,9 @@ Set up a private container registry for replicating container images \(recommend
 </td>
 <td valign="top">
 
-Example Harbor: [https://goharbor.io/](https://goharbor.io/) \(recommended\)
+Example: [Harbor](https://goharbor.io/) \(recommended\)
 
-Harbor is a widely used open source registry. It's one example for a container registry that can be used together with Edge Lifecycle Management.
+Harbor is a widely used open source registry. It's an example of a container registry that you can use together with Edge Lifecycle Management.
 
 </td>
 </tr>
@@ -62,21 +58,21 @@ Storage classes should support dynamic provisioning for access modes `ReadWriteO
 </td>
 <td valign="top">
 
-Example Longhorn: [https://longhorn.io/docs/](https://longhorn.io/docs/).
+Example: [Longhorn](https://longhorn.io/docs/)
 
-Longhorn is a cloud native distributed block storage that can be used as storage backend. For other options, refer to Rancher documentation.
+Longhorn is a cloud native distributed block storage that you can use as storage backend. For other options, refer to the [Rancher](https://ranchermanager.docs.rancher.com/) documentation.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Install the Kubernetes command-line tool `kubect l` 
+Install the Kubernetes command-line tool `kubectl` 
 
 </td>
 <td valign="top">
 
-[https://kubernetes.io/docs/tasks/tools/\#kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl) 
+[Install Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl) 
 
 </td>
 </tr>

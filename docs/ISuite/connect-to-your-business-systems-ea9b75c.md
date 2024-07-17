@@ -76,7 +76,7 @@ A destination is ignored during Graph configuration, generation, and activation.
 **Related Information**  
 
 
-[Create a Business Data Graph in Integration Suite](https://help.sap.com/viewer/15e49174b4ed461e8d8b071ba13af3de/PROD/en-US/42daf3bfd4f04e60b8967d730c502670.html "As Tenant administrator in the SAP Integration Suite, you can create a new business data graph. You can also use an existing configuration file to create a business data graph.") :arrow_upper_right:
+[Create a Business Data Graph in Integration Suite](50-Development/create-a-business-data-graph-in-integration-suite-42daf3b.md "As Tenant administrator in the SAP Integration Suite, you can create a new business data graph. You can also use an existing configuration file to create a business data graph.")
 
-[Actions and Functions](https://help.sap.com/viewer/15e49174b4ed461e8d8b071ba13af3de/PROD/en-US/3572dfb79f30498d8bd4e5d356efee8c.html "Actions and functions provide a way to introduce server-side behaviors into the otherwise data-centric model. Graph mirrors actions and functions as provided by connected business systems.") :arrow_upper_right:
+[Actions and Functions](50-Development/actions-and-functions-3572dfb.md "Actions and functions provide a way to introduce server-side behaviors into the otherwise data-centric model. Graph mirrors actions and functions as provided by connected business systems.")
 

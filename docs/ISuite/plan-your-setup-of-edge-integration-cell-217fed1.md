@@ -35,7 +35,7 @@ For a production environment, you need to provide a PostgreSQL database and a Re
 
 For test and demo purposes, you can deploy an internal PostgreSQL database and a Redis data store as part of Edge Integration Cell, but these built-in services aren't highly available, nor scalable as required for a production environment.
 
-You require a load balancer to expose Edge Integration Cell endpoints and load balance traffic across K8s nodes and services. On cloud platforms, you can choose between using an external load balancer exposed to Internet or an internal load balancer for private networks. For more information, see
+You require a load balancer integrated with your Kubernetes infrastructure to expose Edge Integration Cell endpoints and load balance traffic across K8s nodes and services. On cloud platforms, you can choose between using an external load balancer exposed to Internet or an internal load balancer for private networks. For more information, see
 
 [https://learn.microsoft.com/en-us/azure/aks/internal-lb%20\(Azure\)](https://learn.microsoft.com/en-us/azure/aks/internal-lb%20(Azure)) or
 

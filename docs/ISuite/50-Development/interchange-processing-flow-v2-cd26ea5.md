@@ -122,7 +122,11 @@ Follow the procedure below to configure the integration flow:
     </td>
     <td valign="top">
     
-     
+    JMS-Receiver-Q
+
+    If you want to use dead letter queue to collect messages that failed after retries, select the drop-down <span class="SAP-icons-V5"></span> button in this field and choose *Step2-DeadLetterQueue*.
+
+    To enable the dead letter queue for this integration flow, you need to make changes to the retry configuration. To know more, see [Configuration Manager](configuration-manager-7daf06c.md) .
     
     </td>
     <td valign="top">
@@ -156,7 +160,9 @@ Follow the procedure below to configure the integration flow:
     </td>
     <td valign="top">
     
-    OUTBOUND\_Q
+    *OUTBOUND\_Q* is the standard value.
+
+    The value **COM\_PROCESSING\_OUTBOUND\_DEAD\_LETTER\_Q** is displayed if you chose dead letter queue for the *Receiver* field.
     
     </td>
     <td valign="top">

@@ -15,6 +15,9 @@ This documentation provides additional information.
 > ### Note:  
 > There's also a Java API to access the Partner Directory using a programming language like Java Script or Groovy. For more information, check out the JavaDoc linked to at [SDK API](sdk-api-c5c7933.md) \(for example, check out the package `com.sap.it.api.pd`\).
 
+> ### Caution:  
+> The data is stored unencrypted in the Partner Directory. Therefore, make sure that the data does not contain any sensitive information \(for example, passwords or personal information\).
+
 There's no dedicated user interface to access the Partner Directory. You can access its content only based on APIs.
 
 

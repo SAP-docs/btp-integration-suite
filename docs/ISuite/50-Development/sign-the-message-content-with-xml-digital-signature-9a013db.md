@@ -111,6 +111,10 @@ You sign a message with an XML digital signature to ensure authenticity and data
     
     Digest algorithm that is used to calculate a digest from the canonicalized XML document
 
+    Supported digest algorithms:
+
+    From Signature Algorithm \(uses digest algorithm from signature algorithm\), SHA1, SHA256, SHA384, SHA512.
+
     Note that if the digest algorithm is not specified, the digest algorithm of the signature algorithm is used by default.
     
     </td>

@@ -19,21 +19,26 @@ To view or modify the APIs for anomaly detection, follow the steps below:
 
 ## Procedure
 
-1.  Log on to the SAP Integration Suite.
+1.  Log on to the **SAP Integration Suite**.
 
-2.  Click on the navigation icon on the left and select *Settings* \> *APIs*.
+2.  From the left navigation pane, choose *Settings* \> *APIs*.
 
 3.  Go to the *Anomaly Detection* tab.
 
-4.  If anomaly detection is not already enabled, switch the radio button to the *ON* position. This will display the **API Selection** section.
+4.  Toggle the radio button to the *ON* position if anomaly detection is not already enabled, .
 
-5.  In the **API Selection** section, when you enable anomaly detection for the first time, by default, the system will automatically select and display the top 5 APIs that have received the highest amount of traffic in the past 6 months.
+    Under *API Selection*, you will see the top 5 APIs that have received the highest amount of traffic in the past 6 months.
 
-6.  To make changes to the selection of APIs, click *Modify*.
+5.  To modify the list of preselected APIs, choose *Modify*.
 
-7.  The *Modify APIs* window displays a list of APIs that meet the minimum data requirement \(at least 3 months\) and are available for training. Currently, you can select up to five individual APIs for anomaly detection. Use the checkboxes to select or deselect the desired APIs, and then click on *Modify*.
+6.  Check or uncheck the desired APIs, and then choose *Modify* in the **Modify APIs** dialog.
 
-8.  In the dialog box that appears, click on *Confirm* to save your changes.
+    The *Modify APIs* dialog will display the list of APIs that meet the minimum data requirement \(at least 3 months' worth of API data\) and are available for AI model training.
+
+    > ### Note:  
+    > Currently, you can select up to five individual APIs for anomaly detection.
+
+7.  Choose *Confirm* to save your changes.
 
     > ### Note:  
     > Each time you modify the configuration, the AI model needs to be retrained to effectively detect anomalies. On average, the training process takes approximately 3 hours to complete. Therefore, it is not recommended to make frequent configuration changes.
@@ -46,5 +51,5 @@ To view or modify the APIs for anomaly detection, follow the steps below:
 
 [Working with Detected Anomalies](working-with-detected-anomalies-1c677b2.md "Access and analyze anomalies in the analytics dashboard. Discover details about the various types of anomalies, evaluate and resolve them.")
 
-[Subscribing to Email Notification Alerts](subscribing-to-email-notification-alerts-88e96f4.md "Receive real-time email alerts for anomaly detection services.")
+[Subscribing to Notification Alerts](subscribing-to-notification-alerts-88e96f4.md "Receive real-time alerts for anomaly detection services, delivered to your preferred communication channel.")
 

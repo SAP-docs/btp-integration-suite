@@ -190,6 +190,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Select this option for production environments.
+
+    > ### Note:  
+    > You need to provide a new, empty database schema for each new deployment.
+
+
     
     </td>
     </tr>
@@ -277,7 +282,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </td>
     <td valign="top">
     
-    Upload Trust CA certificate to connect to PostgreSQL database using TLS.
+    Upload Trust CA certificate to connect to PostgreSQL database using TLS. CA certificate in PEM format \(Base64 ASCII\), should include only Root CAs required to connect \(size limit 5kB\).
     
     </td>
     </tr>
@@ -389,7 +394,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </td>
     <td valign="top">
     
-    Upload Trust CA certificate to connect to external Redis using TLS.
+    Upload Trust CA certificate to connect to external Redis using TLS.CA certificate in PEM format \(Base64 ASCII\), should include only Root CAs required to connect \(size limit 5kB\).
     
     </td>
     </tr>
