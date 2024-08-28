@@ -134,6 +134,8 @@ You can use this feature to implement scenarios like the following ones:
     -   *SHA384* 
     -   *SHA512* 
 
+    Default value: SHA512
+
     > ### Caution:  
     > Algorithms starting with SHA1, MD2, or MD5 are still supported for compatibility reasons, but they no longer meet today's security requirements. Therefore, we recommend using stronger algorithms where possible. Check with your security experts or authorities like NIST for more detailed security recommendations.
 

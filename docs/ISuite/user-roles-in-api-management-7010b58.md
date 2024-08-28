@@ -40,7 +40,7 @@ Use this role to access the API portal user interface \(UI\) and services, manag
 </td>
 <td valign="top">
 
-Use this role to establish a connection from the API business hub enterprise to the API portal.
+You need this role assigned to you because the client credentials, which are necessary for establishing a connection between the Integration Suite API Management tenant and API business hub enterprise, are generated for this role.
 
 </td>
 </tr>
@@ -190,6 +190,18 @@ Use this role to:
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+`AuthGroup.APIPortalRegistration`
+
+</td>
+<td valign="top">
+
+This role is necessary for creating a connection request between the Integration Suite API Management tenant and the API business hub enterprise. It's also used to update the connection request credentials.
+
+</td>
+</tr>
 </table>
 
 **Related Information**  
@@ -197,7 +209,7 @@ Use this role to:
 
 [Configuring Additional Virtual Host in Cloud Foundry Environment](configuring-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "A virtual host allows you to host multiple domain names on the API Management capability within Integration Suite.")
 
-[Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](region-specific-ip-addresses-available-for-api-management-cloud-foundry-environment-585d639.md "API Management protects your backend services. However, API Management needs to establish connectivity to your backend services during an API call execution.")
+[Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](region-specific-ip-addresses-available-for-api-management-cloud-foundry-environment-683a97c.md "API Management protects your backend services. However, API Management needs to establish connectivity to your backend services during an API call execution.")
 
 [Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "You can deactivate your API Management capability from Integration Suite to disable your account from the API Management service.")
 

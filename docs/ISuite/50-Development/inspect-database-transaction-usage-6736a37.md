@@ -2,39 +2,33 @@
 
 # Inspect Database Transaction Usage
 
-Inspect database transaction usage for a given time period and analyze critical situations in which long-running transactions occur.
+Inspect database transaction duration for a given time period and analyze critical situations in which long-running transactions occur.
 
 There are no hard limits for the number and duration of database transactions. However, ideally, design your integration scenarios so that transactions are short lived. Long-living transactions can impose a significant load on database resources. A high load on database resources can cause problems in the database management system and impact message processing.
 
+
+
+<a name="loio6736a3726760451bab9b07017df65616__section_rvw_5tx_dcc"/>
+
+## Screen Components
+
+The bar chart shows the maximum transaction duration of the tenant database for a defined time period.
+
+You can change the displayed time period by selecting a different option in the dropdown box under **Time**. You can select **Past Day**, **Past Week**,**Past Month**, or **Custom** for a custom time interval.
+
 > ### Note:  
-> The *Time* filter element allows you to select the time interval \(options: *Past Day*, *Past Week*, *Past Month*, or *Custom*\).
-> 
-> When you've selected the option *Custom* for the *Time* filter, you can select date and time with a graphical element with two components. You can select valid dates only; selection of dates in the future is disabled.
-> 
-> You can select dates up to 30 days in the past.
+> When you select the option *Custom* for the *Time* filter, you can adjust the date and time intervals with the calendar and watch elements. You can select dates up to 30 days in the past. However, selection of dates in the future is disabled.
 
-The maximum duration of database transactions \(in minutes\) is plotted in a bar graph against time.
+The maximum duration of database transactions is plotted in a bar graph against time. The horizontal axis shows the time window, and the vertical axis shows the duration of database transactions in minutes.
 
-The duration covered by a bar is:
-
--   One hour when *Past Day* is selected as *Time* 
-
--   One day when *Past Week* or *Past Month* is selected as *Time* 
-
-
-The level of usage is indicated by the bar height and color \(from green for low usage, up to red for critical usage\).
+The duration level is represented by the following elements:
 
 
 <table>
 <tr>
 <th valign="top">
 
-Level of Usage
-
-</th>
-<th valign="top">
-
-Bar Color
+Graphical Element
 
 </th>
 <th valign="top">
@@ -42,50 +36,50 @@ Bar Color
 Database Transaction Usage
 
 </th>
+<th valign="top">
+
+Meaning
+
+</th>
 </tr>
 <tr>
 <td valign="top">
 
-Critical
+Red Bar
 
 </td>
 <td valign="top">
 
-Red
+Maximum duration: more than 60 minutes
 
 </td>
 <td valign="top">
 
-Maximum duration: more than 30 minutes
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Warning
-
-</td>
-<td valign="top">
-
-Orange
-
-</td>
-<td valign="top">
-
-Maximum duration: between 5 minutes and 30 minutes
+Critical: long running transactions can cause issues with the system database.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-OK
+Orange Bar
 
 </td>
 <td valign="top">
 
-Green
+Maximum duration: between 5 minutes and 60 minutes
+
+</td>
+<td valign="top">
+
+Warning: transactions are running for longer than expected.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Green Bar
 
 </td>
 <td valign="top">
@@ -93,19 +87,40 @@ Green
 Maximum duration: less than 5 minutes
 
 </td>
+<td valign="top">
+
+OK
+
+</td>
 </tr>
 </table>
 
-On the *Database Transactions* screen, you can find more details.
-
-Section *Top Integration Flows by Usage* shows the maximum duration of database transactions for those integration flows that are identified as using the longest running transactions of the tenant database for a specific time period \(as selected by the *Time* parameter\).
-
-Click a cell to display more context information for the selected integration flow \(result filtered according to the setting of the *Time* parameter\).
-
-See: [Inspect Top Integration Flows by Maximum Transaction Duration](inspect-top-integration-flows-by-maximum-transaction-duration-ab67942.md)
-
 > ### Note:  
-> The system reads the resource consumption once per hour. That means, that there can be a maximum lag of 1 hour between the processing of an integration flow with a certain transaction setting and the *Inspect* feature to show the impact of this integration flow.
+> The system reads the resource consumption every hour. This means there can be a maximum lag of 1 hour between processing an integration flow with a certain transaction setting and displaying the latest integration flow usage in the *Inspect* feature.
+
+
+
+<a name="loio6736a3726760451bab9b07017df65616__section_czs_yvx_dcc"/>
+
+## Functions
+
+Choose a bar to get more context information and access the following functions:
+
+-   *Show Messages*
+
+    Navigate to the **Monitor Message Processing** screen and inspect the message processing log for the selected time interval. For more information, see [Monitor Message Processing](monitor-message-processing-314df3f.md).
+
+-   *Inspect Usage*
+
+    Navigate to the *Top Integration Flows* screen and inspect those integration flows that are identified as using the longest running transactions of the tenant database for a specific time period \(as selected by the *Time* parameter\).
+
+    For more information, see [Inspect Top Integration Flows by Maximum Transaction Duration](inspect-top-integration-flows-by-maximum-transaction-duration-ab67942.md).
+
+-   *Show Message With Max. Duration*
+
+    Navigate to the **Monitor Message Processing** screen and inspect the message processing log with the maximum duration for the selected time interval. For more information, see [Monitor Message Processing](monitor-message-processing-314df3f.md).
+
+-   **Zoom Out** and **Zoom In** to extend/reduce the selected time period.
 
 
 
@@ -113,7 +128,7 @@ See: [Inspect Top Integration Flows by Maximum Transaction Duration](inspect-top
 
 ## What to Do in Critical Situations
 
-If there are integration flows exhibiting transaction durations at warning or even critical level, check your top consuming integration flows. In particular, check the *Transaction Handling* parameter \(when the *Integration Process* or *Local Integration Process* shape is selected in the integration flow model\). Check if *Required for JDBC* is selected and, if it is, check if you can choose another option.
+If there are integration flows exhibiting transaction durations at warning or even critical level, check your top consuming integration flows. In particular, check the *Transaction Handling* parameter \(when the *Integration Process* or *Local Integration Process* shape is selected in the integration flow model\). Check if *Required for JDBC* is selected and, if it's, check if you can choose another option.
 
 More information:
 

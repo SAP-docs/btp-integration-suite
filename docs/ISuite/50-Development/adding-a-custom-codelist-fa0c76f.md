@@ -63,7 +63,7 @@ Follow the procedure to add a codelist to a custom codelist.
     <tr>
     <td valign="top">
     
-    **Description**
+    **Definition**
     
     </td>
     <td valign="top">
@@ -74,26 +74,49 @@ Follow the procedure to add a codelist to a custom codelist.
     </tr>
     </table>
     
-4.  Choose *Create*. This will create and open the codelist.
+4.  Select the checkbox for *Copy code values from Codelist* if you want to copy existing code values to your custom codelist.
 
-5.  In the *Code Values* tab of the codelist, you can start adding the code values by choosing :
+    1.  If selected, you have to maintain the following fields that appear:
 
-    1.  *Add* to manually add entries or
+        1.  *Type System*: Select the value help <span class="SAP-icons-V5"></span> button to select the type system. You can switch between *Standard* and *Custom* type systems in the resulting dialog and select a type system from the list.
 
-    2.  *Upload* to upload a csv file.
+        2.  *Codelist*: Select a codelist from the list using the drop-down <span class="SAP-icons-V5"></span> button. The drop-down list displays the codelists pertaining to the type system you selected.
 
-        If you do not have a csv file but need to know how to create and upload a csv file, refer the section **Creating codelists using a csv file** below.enter the values in a file, in the *Code Value Upload* dialog, choose *How to...* \> *Download the template\(\*.csv\)* option. This will download the csv file template locally with the name `CodeValueDownload.csv`. Edit the downloaded template file CodeValueDownload.csv to enter the required values and save.
-
-        Ensure you do not change or remove the header of the template.
-
-        Once done, you can choose *Select* to upload the updated file containing code values.
+        3.  *Version*: Select a codelist version from the list using the drop-down <span class="SAP-icons-V5"></span> button.
 
 
-6.  Choose *Save* to save your changes.
+    2.  The available code values of the selected codelist gets displayed in the table below these fields. Use the checkbox to select the required code values.
 
-7.  Choose *Activate* to activate your codelist. Once activated, the codelist becomes read-only. You need to create a new draft version of the codelist to edit further.
+    3.  You can also use the **Search** option to search for specific code values. If you want to select all the values, use the *Select All* checkbox.
 
-8.  To delete a codelist, see [Deleting a Custom Codelist](deleting-a-custom-codelist-01ad9ee.md).
+
+5.  Choose *Create*. This will create and open the codelist.
+
+6.  In the *Code Values* tab of the codelist, you can start adding the code values by choosing *Add an Entry*. This will add an entry in the table with no values. You can then maintain the necessary detail.
+
+7.  The drop-down <span class="SAP-icons-V5"></span> button next to *Add an Entry* provides other means of adding codelists:
+
+    1.  *Add from CSV file* allows you to upload code values using a csv file. Choose this option and in the resulting dialog, choose *Select* to browse and upload your csv file.
+
+        If you do not have a csv file but need to know how to create and upload a csv file, refer the section **Creating codelists using a csv file** below.
+
+    2.  *Add from other codelists* allows you to add code values from existing codelists in the system. Select this option and in the resulting dialog, maintain the following:
+
+        1.  *Type System*: Select the value help <span class="SAP-icons-V5"></span> button to select the type system. You can switch between *Standard* and *Custom* type systems in the resulting dialog and select a type system from the list.
+
+        2.  *Codelist*: Select a codelist from the list using the value help <span class="SAP-icons-V5"></span> button.
+
+        3.  *Version*: Select a codelist version from the list using the drop-down <span class="SAP-icons-V5"></span> button.
+
+        4.  Choose *Next*. The next step displays all the code values pertaining to the codelist you selected. All the values are selected by default.
+        5.  Select the required code values from the list and choose *Add Code Values*.
+
+
+8.  Choose *Save* to save your changes.
+
+9.  Choose *Activate* to activate your codelist. Once activated, the codelist becomes read-only. You need to create a new draft version of the codelist to edit further.
+
+10. To delete a codelist, see [Deleting a Custom Codelist](deleting-a-custom-codelist-01ad9ee.md).
 
 
 <a name="task_w4b_4l5_tbc"/>
@@ -110,7 +133,7 @@ Create a codelist using a csv file.
 
 ## Procedure
 
-1.  In the *Code Values* tab of the codelist, choose *Upload* to upload a csv file.
+1.  In the *Code Values* tab of the codelist, choose the <span class="SAP-icons-V5"></span>next to *Add an Entry* and choose *Add from CSV file* to upload a csv file.
 
 2.  In the *Code Value Upload* dialog, choose *How to...* \> *Download the template\(\*.csv\)* option. This will download the csv file template locally with the name `CodeValueDownload.csv`
 

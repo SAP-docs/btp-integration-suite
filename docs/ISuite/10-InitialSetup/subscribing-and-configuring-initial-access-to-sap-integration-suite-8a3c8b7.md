@@ -29,7 +29,7 @@ You’ve created a subaccount in your assigned global account using the SAP BTP 
 
     Check the status of the submission in the subscriptions section on the *Instances and Subscriptions* page. If the subscription is successful, you notice the status of the *Integration Suite* shown as *Subscribed*.
 
-4.  You must have specific roles to access theIntegration Suite. To assign these roles navigate to *Security* \> *Users*.
+4.  You must have specific roles to access the Integration Suite. To assign these roles navigate to *Security* \> *Users*.
 
 5.  Choose *Create* to add a new user.
 

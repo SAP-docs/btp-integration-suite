@@ -50,7 +50,7 @@ Activate API business hub enterprise
 Add and activate API business hub enterprise in Integration Suite. For more information, see [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md).
 
 > ### Note:  
-> The API business hub enterprise checkbox is selected by default if you've subscribed to the premium/standard plan and have activated API Management.
+> The API business hub enterprise checkbox is selected by default if you've subscribed to the premium/standard service plan and have activated API Management.
 
 
 

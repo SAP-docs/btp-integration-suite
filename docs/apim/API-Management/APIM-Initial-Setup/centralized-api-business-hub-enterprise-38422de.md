@@ -4,12 +4,6 @@
 
 The API business hub enterprise is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.
 
-> ### Note:  
-> By default, the site administrator has the option to switch from the classic design to the new design and set the new design as the default user interface \(UI\) using the *Site Editor*. The site administrator also has the authority to enable a configuration that allows all other users to switch between the old and new designs.
-
-> ### Example:  
-> By default, the site administrator has the option to switch from the classic design to the new design and set the new design as the default user interface \(UI\) using the *Site Editor*. The site administrator also has the authority to enable a configuration that allows all other users to switch between the old and new designs.
-
 If you have enabled API business hub enterprise and API Management tenant in the same Integration Suite sub-account, they will automatically connect to each other.
 
 > ### Note:  

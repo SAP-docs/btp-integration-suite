@@ -128,23 +128,23 @@ Specifics for log level `Trace`:
 > 
 > > ### Sample Code:  
 > > ```
-> > import com.sap.it.api.msglog.MessageLogFactory
-> >         import com.sap.gateway.ip.core.customdev.util.Message;
-> >         import java.util.MashMap;
+> > import com.sap.it.api.msglog.MessageLogFactory;
+> > import com.sap.gateway.ip.core.customdev.util.Message;
+> > import java.util.HashMap;
 > >         def Message processData(Message message){
 > >             def logLevel = message.getProperty("SAP_MPL_LogLevel_Overall");
 > >             def logLevelInternal = message.getProperty("SAP_MPL_LogLevel_Internal");
 > >             def logLevelExternal = message.getProperty("SAP_MPL_LogLevel_External");
 > > 
-> >             def messageLog = messageLogFactory.getMessageLog(message)
-> >             messageLog.message.addCustomerHeaderProperty("Log Level", logLevel)
-> >             messageLog.message.addCustomerHeaderProperty("Internal Log Level", logLevelInternal)
-> >             messageLog.message.addCustomerHeaderProperty("External Log Level", logLevelExternal)
+> >             def messageLog = messageLogFactory.getMessageLog(message);
+> >             messageLog.addCustomHeaderProperty("Log Level", logLevel);
+> >             messageLog.addCustomHeaderProperty("Internal Log Level", logLevelInternal);
+> >             messageLog.addCustomHeaderProperty("External Log Level", logLevelExternal);
 > > 
 > >         if(logLevel.equals("DEBUG") || logLevel.equals("TRACE")) {
 > >             def body = message.getBody();
 > >             messageLog.addAttachmentAsString("Payload", body, "text/plain");
-> >             messageLog.addAttachmentAsString("Debugging information"; "data", "text/plain");
+> >             messageLog.addAttachmentAsString("Debugging information", "data", "text/plain");
 > >         }
 > >         return message;
 > > }

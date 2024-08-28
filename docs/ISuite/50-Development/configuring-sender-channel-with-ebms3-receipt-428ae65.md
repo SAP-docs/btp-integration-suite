@@ -120,6 +120,39 @@ Description
 <tr>
 <td valign="top">
 
+*Verify Username Token*
+
+</td>
+<td valign="top">
+
+Select the relevant option for username token verification in the AS4 message:
+
+-   Dynamic: You can also set the value of this attribute dynamically by using `SAP_AS4_Inbound _Receipt_Verify_Username_Token` parameter of partner directory. The valid values are:
+    -   notRequired
+    -   required
+
+-   Not Required: To skip the verification of response message.
+-   Required
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Credential Name* only if *Verify Username Token* isn't selected as *Not Required*
+
+</td>
+<td valign="top">
+
+Define the credential name of the username-password pair specified during the deployment of the security artifact.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Save Incoming Receipt* 
 
 </td>
@@ -319,12 +352,12 @@ You can set an upper limit on that value to avoid an endless increase of the ret
 
 *Dead-Letter Queue*
 
-\(only if as *Temporary Storage* the option *JMS Queue* is selected\)
+\(only if as *Temporary Storage**JMS Queue* is selected\)
 
 </td>
 <td valign="top">
 
-Select this option to place the message in the dead-letter queue if it cannot be processed after three retries caused by an out-of-memory. Processing of the message is stopped then.
+Select this option to place the message in the dead-letter queue if it cannot be processed after three retries caused by an out-of-memory. Processing of the message is stopped then. the option
 
 In such cases, a lock entry is created which you can view and release in the *Monitor* section of the Web UI under *Managing Locks*.
 
@@ -348,7 +381,7 @@ Select this option in case the messages should be stored in an encrypted way dur
 </tr>
 </table>
 
-Select the *Conditions* tab and provide values in the fields as follows.
+Select the *Conditions* the option tab and provide values in the fields as follows.
 
 **Conditions**
 

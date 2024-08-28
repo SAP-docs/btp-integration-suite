@@ -20,6 +20,12 @@ Click a cell to get more context information and to get access to the following 
 
     Navigate to the *Data Stores* tile, *Manage Stores* screen, to show all data stores of the tenant \(see [Managing Data Stores](managing-data-stores-ac39f1d.md)\).
 
+-   *Inspect Data Stores*
 
-*Zoom Out* and *Zoom In* to extend/reduce the selected time period.
+    Inspect the usage of the selected data store in more detail.
+
+-   *Zoom Out* and *Zoom In* to extend/reduce the selected time period.
+
+-   *Copy Name To Clipboard*
+
 

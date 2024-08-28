@@ -8,6 +8,8 @@ Enterprise landscapes continue to expand in scale and complexity. Each additiona
 
 Enterprises use API Management to partially address this gap: APIs can be renamed, authentication can be streamlined, APIs can be protected against unauthorized access or threats. But this doesn't address the deeper problem: separate, disconnected APIs from different data sources and systems.
 
+![](images/Graph_Diagram_ea6848a.png)
+
 Graph is a solution to unify your business APIs in the form of a semantically connected data graph, accessed via a single powerful API. Out of the box, it provides developers a single connected and unified view of your SAP-managed business data. Graph consolidates thousands of data entities from SAP systems likeSAP S/4HANA, SAP Sales Cloud, and SAP SuccessFactors, into one curated, semantically connected, data model. We call this connected graph a *Business Data Graph*.
 
 The out-of-the-box data graph of SAP-managed data is the baseline, the starting point to your own data graph. You can expand it by adding your own data sources and your own data models, projections, and compositions, creating a unique data model of your business.

@@ -194,6 +194,18 @@ Expose all your business data in the form of a semantically connected data graph
 <tr>
 <td valign="top">
 
+[Event Mesh](event-mesh-3129673.md)
+
+</td>
+<td valign="top">
+
+Publish and consume business events across applications.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 [Open Connectors](https://help.openconnectors.ext.hana.ondemand.com/home)
 
 </td>
@@ -259,6 +271,14 @@ For more information on the connectivity options, see [Connectivity Options](con
 > Read the SAP Note [2903776](https://me.sap.com/notes/2903776) to understand the service plans offered for SAP Integration Suite. You also find information on the supported feature sets for each service plans.
 
 For SAP Integration Suite, the free service plan is available. For more information, see [Using Free Service Plans](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/524e1081d8dc4b0f9d055a6bec383ec3.html?locale=en-US&q=trial).
+
+
+
+<a name="loio5cc6987511104c418b7cb4c25f3d9cb0__section_vl2_jrm_jcc"/>
+
+## System Scope
+
+More information: [System Scope for Cloud Integration](system-scope-for-cloud-integration-8ea3822.md)
 
 
 

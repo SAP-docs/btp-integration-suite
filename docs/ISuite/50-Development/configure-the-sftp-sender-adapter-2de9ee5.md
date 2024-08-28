@@ -2,7 +2,7 @@
 
 # Configure the SFTP Sender Adapter
 
-The SFTP sender adapter connects an SAP Cloud Integration tenant to a remote system using the SSH File Transfer protocol to read files from the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol \(or SFTP\).
+The SFTP sender adapter connects an SAP Integration Suite tenant to a remote system using the SSH File Transfer protocol to read files from the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol \(or SFTP\).
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
@@ -403,6 +403,44 @@ Prevents files that are in the process of being written from being read from the
 <tr>
 <td valign="top">
 
+*Poll on one worker only* 
+
+</td>
+<td valign="top">
+
+In case the integration flow is deployed on multiple runtime nodes, each worker node is connected as separate consumer to the SFTP server.
+
+When this option is selected, the polling process is performed on a single worker node at a time. This feature is important in scenarios when either the processing order of files is relevant or if you want to restrict the number of parallel connections to the SFTP server.
+
+> ### Note:  
+> This parameter determines how the parameters *Sorting* and *Max. Messages per Poll* influence message processing at runtime in the following way:
+> 
+> It is important to know that:
+> 
+> -   The SFTP server provides the files in an order that is not controlled by Cloud Integration.
+> 
+> -   The order of messages is only maintained per worker.
+> 
+> -   The technical communication between workers prevents processing of the same file on multiple workers.
+> 
+> 
+> Therefore, the setting of this parameter has the following impact on how the two other parameters behave at runtime:
+> 
+> -   If *Poll on one worker only* is **not** selected, before evaluating the *Sorting* setting, the system determines the maximum number of messages to be read from the SFTP server per poll \(as configured by the *Max. Messages per Poll* parameter\).
+> 
+>     For example, if there are 1000 files on the SFTP server and for *Max. Messages per Poll* you've specified `500`, the SFTP adapter reads the first 500 files from the SFTP server and, after this step, sorts these files according to the Sorting settings.
+> 
+>     If you don’t restrict the polling to one worker, files are processed in parallel. As consequence, you can run into a situation in which messages that are later in the sorting order can overtake other messages which are currently being processed on a different worker. This disturbs the sequence of messages.
+> 
+> -   If *Poll on one worker only* is selected, all files will first be sorted and then the messages according to the setting of parameter *Max. Messages per Poll* are selected.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Sorting* 
 
 </td>
@@ -415,14 +453,6 @@ Select the type of sorting to use to poll files from the SFTP server:
 -   *File Name*: Files are polled sorted by file name.
 -   *File Size*: Files are polled sorted by file size.
 -   *Time Stamp*: Files are polled sorted by the modification time stamp of the file.
-
-> ### Note:  
-> In this context, it is important to know that the SFTP server provides the files in an order that is not controlled by Cloud Integration. Before evaluating the *Sorting* setting, the system determines the maximum number of messages to be read from the SFTP server per poll \(as configured by the *Max. Messages per Poll* parameter\). For example, if there are 1000 files on the SFTP server and for *Max. Messages per Poll* you have specified `500`, the SFTP adapter reads the first 500 files from the SFTP server and, after this step, sorts these files according to the *Sorting* settings.
-
-> ### Caution:  
-> Be aware that a definitive, controlled sequence of messages cannot be achieved even if the processing parameters have been configured correctly because, usually in scenarios, multiple worker nodes are polling and processing messages in parallel and independently of each other.
-> 
-> Since the order of messages is only maintained per worker and the only communication between workers occurs to prevent the processing the same file on multiple workers, users can run into a situation in which messages that are later in the sorting order can overtake other messages which are currently being processed on a different worker. This disturbs the sequence of messages.
 
 
 
@@ -465,6 +495,9 @@ The system uses locks to ensure that each file from the SFTP server is only proc
 > If you are using the sender SFTP adapter in combination with an Aggregator step and you expect a high message load, consider the following recommendation:
 > 
 > Set the value for *Max. Messages per Poll* to a small number larger than `0` \(for example, `20`\). This ensures proper logging of the message processing status at runtime.
+
+> ### Note:  
+> If there’s an error during message processing, the system continues to process the next messages in the same polling batch \(see option *Max. Messages per Poll*\). After the batch is completed, the erroneous message may be processed again. Therefore, processing is not achieved in the original order anymore. If you rely on strict “in order” processing, you need to set *Max. Messages per Poll* to `1`. However, note that this comes with a negative performance impact, in particular, if there’s a large numbers of files on the SFTP server.
 
 
 

@@ -32,6 +32,7 @@ Establish a connection between your SAP Process Orchestration system and Migrati
         -   `/ConfigurationScenarioInService`
         -   `/BPMFacadeBeanImplService`
         -   `/ReceiverAgreementInService`
+        -   `/ReceiverRuleInService`
 
     -   ESR Content
 

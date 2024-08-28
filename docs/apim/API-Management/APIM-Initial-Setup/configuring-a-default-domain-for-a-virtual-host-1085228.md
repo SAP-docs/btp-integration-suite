@@ -59,6 +59,9 @@ To request a custom domain with one-way TLS, perform the following steps:
         > 
         > -   virtualHostUrl - This is your virtual host alias, for example, prod-apis, testapi.
         > 
+        >     > ### Note:  
+        >     > The virtual host alias allows a maximum of 63 characters.
+        > 
         > -   isDefaultVirtualHostRequest -if you want the new virtual host to be the default virtual host, set the value to "true", else set it to "false".
 
         > ### Note:  
@@ -138,6 +141,9 @@ To request a custom domain with one-way TLS, perform the following steps:
         > -   accountId: This is the subdomain of your subaccount.
         > 
         > -   virtualHostUrl - This is your virtual host alias, for example, prod-apis, testapi.
+        > 
+        >     > ### Note:  
+        >     > The virtual host alias allows a maximum of 63 characters.
         > 
         > -   isDefaultVirtualHostRequest -if you want the new virtual host to be the default virtual host, set the value to "true", else set it to "false".
         > 

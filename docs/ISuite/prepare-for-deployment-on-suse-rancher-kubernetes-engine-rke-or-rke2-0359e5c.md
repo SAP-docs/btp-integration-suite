@@ -6,6 +6,9 @@ Before deploying your cluster on SUSE Rancher Kubernetes Engine \(RKE or RKE2\),
 
 Rancher Kubernetes Engine doesn't have a predefined storage provisioner. For information about supported storage, see [3247839](https://me.sap.com/notes/3247839).
 
+> ### Note:  
+> For information about how to prepare your infrastructure for the installation of Edge Integration Cell on Rancher Kubernetes Engine 2 using Rancher Prime, see [SAP Edge Integration Cell on SUSE](https://documentation.suse.com/sbp/sap-other/html/SAP-EIC/index.html).
+
 ****
 
 

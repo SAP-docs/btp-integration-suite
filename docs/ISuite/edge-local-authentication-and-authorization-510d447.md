@@ -17,8 +17,10 @@ Edge Local Authentication and Authorization provides inbound local authenticatio
 
 Edge Local Authentication and Authorization is designed to operate during periods of temporary connectivity loss to SAP BTP. It operates seamlessly by using real-time service instance and service key data from SAP BTP, and doesn't require additional configuration.
 
+Changes made to service instances and service keys in SAP BTP \(such as *Create*, *Modify*, or *Delete*\) are synchronized to the Edge Runtime Location. This process usually takes a few minutes, but in some cases, for example when there are connectivity issues, it can take up to 170 minutes.
+
 > ### Note:  
-> Changes made to service instances and service keys in SAP BTP \(such as *Create*, *Modify*, or *Delete*\) are synchronized to the Edge Runtime Location. This process usually takes a few minutes, but in some cases, for example when there are connectivity issues, it can take up to 170 minutes.
+> Edge Local Authentication and Authorization doesn't work for Integration flows and API Artifacts running on Edge Integration Cell for service keys of type *Certificate* created before May 17, 2024 \(release 2404\). To resolve this issue, please regenerate those service keys. For more information, see [3472645](https://me.sap.com/notes/3472645).
 
 > ### Caution:  
 > During connectivity loss, changes made to service instances and service keys in SAP BTP can't be synchronized to the Edge Runtime Location. Therefore, if you delete a service key or modify/delete a service instance to offboard a partner, the partner can still operate integration flows and API proxies until the changes synchronize to the Edge Runtime Location.

@@ -18,7 +18,7 @@ You can create heap and thread dumps using the `jvmmon` SAPJVM tool.
 
 2.  To connect to a worker pod, use `kubectl exec -it <pod name> -n edge-icell -- bash`.
 
-3.  Run `jvmon`.
+3.  Run `jvmmon`.
 
     -   To create a thread dump, use `dump stacktrace`.
 

@@ -10,7 +10,7 @@ Update the credentials you've used to establish a connection between the Integra
 
 ## Prerequisites
 
--   Only the users who submitted the connection request and has the *AuthGroup.APIPortalRegistration* role assigned to themselves can edit the credentials.
+-   Only users who have submitted a connection request and have the AuthGroup.APIPortalRegistration role assigned to them can edit the credentials.
 
 -   To update the Integration Suite API Management tenant access credentials, you must first generate it. To generate the credentials from the Integration Suite API Management tenant, you must have the *APIPortal. Administrator* role assigned to you.
 

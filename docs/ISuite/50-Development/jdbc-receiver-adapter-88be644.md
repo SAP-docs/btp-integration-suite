@@ -58,11 +58,12 @@ The following are the databases that are currently supported.
 -   [Oracle \(Cloud\)](jdbc-for-oracle-cloud-f868182.md)
 -   [Oracle \(On-Premise\)](jdbc-for-oracle-on-premise-e6db38a.md)
 -   [PostgreSQL \(Cloud\)](jdbc-for-postgresql-cloud-4d5b488.md)
--   [JDBC for Postgres \(On-Premise\)](jdbc-for-postgres-on-premise-d31edb4.md)
+-   [Postgres \(On-Premise\)](jdbc-for-postgres-on-premise-d31edb4.md)
 -   [SAP HANA \(Cloud\)](jdbc-for-sap-hana-cloud-187a8e8.md)
 -   [SAP HANA Platform \(On-Premise\)](jdbc-for-sap-hana-platform-on-premise-ff29388.md)\`
--   [JDBC for SAP ASE Service \(Cloud\)](jdbc-for-sap-ase-service-cloud-d96c7c5.md)
--   [JDBC for SAP ASE Platform \(On-Premise\)](jdbc-for-sap-ase-platform-on-premise-dad011d.md)
+-   [SAP ASE Service \(Cloud\)](jdbc-for-sap-ase-service-cloud-d96c7c5.md)
+-   [SAP ASE Platform \(On-Premise\)](jdbc-for-sap-ase-platform-on-premise-dad011d.md)
+-   [MariaDB](jdbc-for-mariadb-cloud-1d320d6.md)
 
 
 

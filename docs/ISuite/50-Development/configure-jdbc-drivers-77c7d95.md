@@ -80,6 +80,18 @@ JDBC connectivity provides a mechanism for integration flows deployed on SAP Int
 > 
 > </td>
 > </tr>
+> <tr>
+> <td valign="top">
+> 
+> [MariaDB Connector](https://www.mariadb.com/docs/server/release-notes/mariadb-connector-j-3-3/3-3-3/) 
+> 
+> </td>
+> <td valign="top">
+> 
+> [mariadb-connector-j-3.3.3](https://dlm.mariadb.com/browse/java8_connector/293/1970/) 
+> 
+> </td>
+> </tr>
 > </table>
 
 You can create Amazon Relational Database Service \(Amazon RDS\) based data source that supports the following database engines:
@@ -135,6 +147,7 @@ Before consuming the drivers in runtime, you must deploy the uploaded driver as 
 
     -   DB2
 
+    -   MariaDB
 
 
     

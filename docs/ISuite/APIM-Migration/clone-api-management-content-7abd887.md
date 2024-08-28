@@ -4,7 +4,7 @@
 
 Clone the API Management content using the Tenant Cloning tool.
 
-Once you have your source and target system ready, you can clone your API Management content to the target system by running the Tenant Cloning Tool that you downloaded from [here](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Frepo1.maven.org%2Fmaven2%2Fcom%2Fsap%2Fapimgmt%2Fapim-tct-sdk%2F1.8.3%2Fapim-tct-sdk-1.8.3.zip).
+Once you have your source and target system ready, you can clone your API Management content to the target system by running the Tenant Cloning Tool that you downloaded from [here](https://repo1.maven.org/maven2/com/sap/apimgmt/apim-tct-sdk/1.9.2/apim-tct-sdk-1.9.2.zip).
 
 
 

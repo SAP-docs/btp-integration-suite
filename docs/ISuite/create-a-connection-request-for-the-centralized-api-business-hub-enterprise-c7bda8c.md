@@ -15,16 +15,16 @@ Create a request to connect the Integration Suite API Management tenant to the A
 -   To establish a connection between an Integration Suite API Management tenant and the centralised API business hub enterprise which is available in a different sub-account, you must ensure that the API business hub enterprise capability is not enabled in the same sub-account as that of the API portal.
 
 -   The following role collections should be assigned to you:
-    -   *AuthGroup.API.Admin*
+    -   AuthGroup.API.Admin
 
-    -   *APIPortal.Administrator*
+    -   APIPortal.Administrator: To generate the access credentials from the Integration Suite API Management tenant, you must have the *APIPortal. Administrator* role assigned to you.
 
-    -   *AuthGroup.APIPortalRegistration*: You can't create a connection request, without the *AuthGroup.APIPortalRegistration* role.
+    -   AuthGroup.APIPortalRegistration: You need this role to create a connection request and update the connection request credentials.
 
-    -   *APIPortal Service.CatalogIntegration*
+    -   APIPortal Service.CatalogIntegration: You need to have this role assigned to you as the client credentials is generated for this role.
 
 
--   Generate the access credentials to establish the connection. To generate the credentials from the Integration Suite API Management tenant, you must have the *APIPortal. Administrator* role assigned to you.
+-   Generate the access credentials to establish the connection.
 
     1.  Log in to the Integration Suite.
 

@@ -12,7 +12,7 @@ Graph, in turn, communicates securely with data sources in the landscape on beha
 
 ![](images/Token-Based_Authentication_6207efc.png)
 
-For all of this to work, trust must be established. The client application, Graph, and the data sources \(the business systems\) must trust a common security service, which is responsible for authenticating users and clients, and issuing tokens identifying them. This trust is technically established by an administrator in the context of an SAP BTP subaccount and uses SAP Extended Services for User Authentication and Authorization \(XSUAA\) as the security service.
+For all of this to work, trust must be established. The client application, Graph, and the data sources \(the business systems\) must trust a common security service, which is responsible for authenticating users and clients, and issuing tokens identifying them. This trust is technically established by an administrator in the context of an SAP BTP subaccount and uses SAP Authorization and Trust Management service as the security service.
 
 The administrator addresses the following configuration topics \(the order may vary\):
 
@@ -20,7 +20,7 @@ The administrator addresses the following configuration topics \(the order may v
 
 -   Setting up connectivity to data sources in landscapes by setting up destinations.
 
--   Approving client applications to access Graph by creating Graph instances.
+-   Approving client applications to access Graph by creating instances.
 
 -   Enabling users by establishing an Identity Provider.
 

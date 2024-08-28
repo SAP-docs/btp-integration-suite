@@ -166,5 +166,5 @@ INTAS\_ViewOnly
 **Related Information**  
 
 
-[Integration Assessment Process](../30-Assessing_Integration_Strategy/integration-assessment-process-5769fcd.md "Define, document, and govern your integration technology strategy.")
+[Integration Assessment Process](../integration-assessment-process-5769fcd.md "Define, document, and govern your integration technology strategy.")
 

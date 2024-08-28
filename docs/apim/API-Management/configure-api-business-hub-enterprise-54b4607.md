@@ -32,7 +32,7 @@ For more information, see…
 <tr>
 <td valign="top" rowspan="6">
 
-An *API Admin*, you already have the *AuthGroup.API.Admin* role assigned to you.
+An *API Admin*, you already have the *AuthGroup.API.Admin* role collection assigned to you.
 
 </td>
 <td valign="top">
@@ -130,7 +130,7 @@ An *API Admin*, you already have the *AuthGroup.API.Admin* role assigned to you.
 <tr>
 <td valign="top" rowspan="2">
 
-A *Site Admin* you already have the *AuthGroup.Site.Admin* role assigned to you.
+A *Site Admin* you already have the *AuthGroup.Site.Admin* role collection assigned to you.
 
 </td>
 <td valign="top">
@@ -159,7 +159,7 @@ A *Site Admin* you already have the *AuthGroup.Site.Admin* role assigned to you.
 <tr>
 <td valign="top">
 
-A *Content Admin* you already have the *AuthGroup.Content.Admin* role assigned to you.
+A *Content Admin* you already have the *AuthGroup.Content.Admin* role collection assigned to you.
 
 </td>
 <td valign="top">
@@ -208,10 +208,10 @@ For more information, see…
 <tr>
 <td valign="top" rowspan="2">
 
-An *Application Developer* you already have the *AuthGroup.API.ApplicationDeveloper* role assigned to you.
+An *Application Developer* you already have the *AuthGroup.API.ApplicationDeveloper* role collection assigned to you.
 
 > ### Note:  
-> The *AuthGroup.API.ApplicationDeveloper* role is assigned by default to a user who onboards to the API business hub enterprise using the Self-registration process or via *Add User* flow.
+> The *AuthGroup.API.ApplicationDeveloper* role collection is assigned by default to a user who onboards to the API business hub enterprise using the Self-registration process or via *Add User* flow.
 
 
 

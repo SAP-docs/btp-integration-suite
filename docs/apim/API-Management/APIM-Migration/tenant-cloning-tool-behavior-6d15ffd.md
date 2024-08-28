@@ -27,20 +27,3 @@ This topic describes the behavior of the Tenant Cloning Tool with respect to clo
 -   Cloning of custom chart is now supported for migrating API Management content created using the Starter Plan service instance.
 
 
-> ### Note:  
-> Known constraints of migrating applications:
-> 
-> **Use Case 1**:
-> 
-> You are migrating application A1, subscribed to a product P1 with no rate plans. You associate product P1 with a rate plan later in the source.
-> 
-> Now if you attempt to migrate application A1 from the source developer portal to the target developer portal, the application created in the target fails with an error.
-> 
-> **Reason for the error**: During migration, the product gets cloned along with the newly added rate plan in the target tenant. However, while creating the application in the target tenant, the system couldn't locate the rate plan ID. The rate plan ID was not present in the payload as it belonged to an older subscription, resulting in application creation failure.
-> 
-> **Use Case 2**:
-> 
-> You already have a rate plan attached to a product P1 while creating application A1. However, you decide to add a revised rate plan to product P1 after application A1 gets created. In such a scenario, application A1 will continue to have a rate plan that was present during the creation of the application. If you migrate application A1 from the source developer portal to the target developer portal, application creation will fail, and the same error as Use Case 1 will get generated.
-> 
-> **Reason for the error**: During migration, the product gets cloned along with the newly revised rate plan in the target tenant. However, while creating the application in the target tenant, the system couldn't locate the revised rate plan ID. The revised rate plan ID was not present in the payload as it belonged to an older subscription, resulting in application creation failure.
-

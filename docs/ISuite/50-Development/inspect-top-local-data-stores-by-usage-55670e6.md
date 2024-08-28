@@ -10,7 +10,7 @@ Data stores are sorted top-down according to the extent of database volume usage
 
 The color shade of a cell reflects the level of database volume usage in percentage of the maximum usage.
 
-Click a cell to get more context information and to get access to the following functions \(results are filtered according to the setting of the *Time* parameter\):
+Choose a cell to get more context information and to get access to the following functions \(results are filtered according to the setting of the *Time* parameter\):
 
 -   *Show Messages*
 
@@ -28,8 +28,8 @@ Click a cell to get more context information and to get access to the following 
 
     Inspect resource consmumption for the selected data store.
 
+-   *Zoom Out* and *Zoom In* to extend/reduce the selected time period. 
+
 -   *Copy Name to Clipboard* 
 
-
-*Zoom Out* and *Zoom In* to extend/reduce the selected time period. 
 

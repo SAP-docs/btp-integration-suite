@@ -107,6 +107,9 @@ You create a product when you want to expose one or more API proxies to the Appl
 9.  In the *Add APIs* window, select the required APIs and the corresponding resources.
 
     > ### Note:  
+    > If you try to publish an API product that includes API proxies with over 100 resources, the product's publishing might not succeed. For more information, see [Limits in API Management](../limits-in-api-management-f70f425.md).
+
+    > ### Note:  
     > While selecting APIs and its resources for product creation, the following behaviours apply when API calls are made to the selected API proxies and resources:
     > 
     > -   Product creation in API Management provides precedence for product to path \(resource\) mapping over product to API mapping. Let’s understand this behavior with an example:

@@ -40,7 +40,7 @@ Use this role to access the API portal user interface \(UI\) and services, manag
 </td>
 <td valign="top">
 
-Use this role to establish a connection from the API business hub enterprise to the API portal.
+You need this role assigned to you because the client credentials, which are necessary for establishing a connection between the Integration Suite API Management tenant and API business hub enterprise, are generated for this role.
 
 </td>
 </tr>
@@ -187,6 +187,18 @@ Use this role to:
 -   Perform portal changes like uploading logo, changing the name and description, and changing the footer links.
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`AuthGroup.APIPortalRegistration`
+
+</td>
+<td valign="top">
+
+This role is necessary for creating a connection request between the Integration Suite API Management tenant and the API business hub enterprise. It's also used to update the connection request credentials.
 
 </td>
 </tr>

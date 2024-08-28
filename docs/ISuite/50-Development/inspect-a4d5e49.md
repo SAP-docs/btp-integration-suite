@@ -50,3 +50,15 @@ Using the *Memory* tile, you can inspect resource usage of system memory caused 
 
 See: [Inspect System Memory Usage](inspect-system-memory-usage-e9617dd.md)
 
+
+
+<a name="loioa4d5e49e24f54a7a81b31eb07f1714ac__section_jhm_m1k_dcc"/>
+
+## Inspect Content Resources
+
+Inspect content resource usage caused by your integration artifacts.
+
+Using the *Content Size* tile, you can inspect the file size that integration artifacts occupy.
+
+See: [Inspect Content Size](inspect-content-size-f72b7ff.md)
+

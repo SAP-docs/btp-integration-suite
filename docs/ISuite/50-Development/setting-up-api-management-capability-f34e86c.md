@@ -49,6 +49,9 @@ After enabling the API Management capability, you need to configure the service.
 
 3.  In the *Virtual Host* section, enter the *Host Alias*.
 
+    > ### Note:  
+    > The Virtual Host alias allows a maximum of 63 characters.
+
     Virtual hosts are the base URLs of an API Proxy that identifies your organization. Once you enter the host alias, your API Proxy would appear in the default API Management domain as shown here:
 
     Example: https://<virtualHost\>.apimanagement.hana.ondemand.com.

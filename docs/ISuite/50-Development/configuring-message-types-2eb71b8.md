@@ -231,7 +231,7 @@ Choose *Save* to save the draft. Choose *Save as version* to save the message ty
 > ### Note:  
 > You can save the artifact even if you have validation errors in your structure tab.
 
-The displayed value range [restrictions](configuring-data-types-97ad101.md#loio97ad10142fc34269902006e488af1eff__table_xtn_yqp_l5b) can't be edited for Message Types.
+The displayed value range [restrictions](editing-data-type-7136a31.md#loio7136a3141d294a8a86884a3b03aad5b4__table_xtn_yqp_l5b) can't be edited for Message Types.
 
 
 
@@ -239,7 +239,7 @@ The displayed value range [restrictions](configuring-data-types-97ad101.md#loio9
 
 ## Overview
 
-From Cloud Integration Web UI you can view the following general details of a Message Type. To edit the referenced data type, choose *Edit*.
+From Cloud Integration Web UI you can view the following general details of a Message Type. To edit the referenced data type or namespace, choose *Edit*.
 
 ****
 
@@ -290,6 +290,8 @@ XML Namespace
 <td valign="top">
 
 Displays the namespace to which Message Type belongs to or where it's created.
+
+You can edit the existing namespace or define a new one if it's not already created.
 
 </td>
 </tr>

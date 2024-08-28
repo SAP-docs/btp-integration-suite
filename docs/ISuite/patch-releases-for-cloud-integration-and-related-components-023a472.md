@@ -12,6 +12,225 @@ The following patch release information covers the most recent changes made to t
 
 
 
+<a name="loio023a4725bb734f86be8a5625abe54110__section_oy3_prr_ncc"/>
+
+## August 2024
+
+**Software Increment: 2407**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.90.2
+
+</td>
+<td valign="top">
+
+Issues were reported when activating a MAG with target MIG based on a custom message. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_td5_gcw_hcc"/>
+
+## August 2024
+
+**Software Increment: 2406**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.89.3
+
+</td>
+<td valign="top">
+
+Issues were reported when activating a MAG with target MIG based on a custom message. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.55.21
+
+8.19.14
+
+</td>
+<td valign="top">
+
+A recent security fix for GHAS/CodeQL message mapping runtime, which blocked XML payloads containing Document Type Declarations \(DTDs\), has been reverted due to customer impact. This patch withdraws the security fix.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.55.15
+
+</td>
+<td valign="top">
+
+There was an issue with agreement activation.
+
+Sending requests to an AS2 sender caused the issue of a partner Id not found. This patch fixes this issue. For more information, see SAP note [3506468](https://me.sap.com/notes/3506468).
+
+There was a gateway timeout issue which resulted in the situation that loading the agreements failed. This patch mitigates this issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.55.13
+
+</td>
+<td valign="top">
+
+The following issues have been fixed with this patch:
+
+-   The conversion from property to exchangeProperty was not properly implemented for the generation step, thus preventing the initiation of integration flows.
+
+-   The default to use breadcrumb has been changed with Camel 3.x from `true` to `false`. As some customers rely on that header, the value has been reverted back to `true`
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.55.12
+
+</td>
+<td valign="top">
+
+OEM adapters will be upgraded to Apache Camel version 3.x during the migration to Camel 3.x. This patch provides a change that makes this step transparent on the user interface.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_vyv_klk_2cc"/>
+
+## July 2024
+
+**Software Increment: 2405**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.54.31
+
+</td>
+<td valign="top">
+
+Message imports were failing due to the addition of an excess parameter in the **zip** file. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio023a4725bb734f86be8a5625abe54110__section_r1l_g42_sbc"/>
 
 ## June 2024
@@ -36,23 +255,6 @@ Software Version
 Description
 
 </th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-Message processing failures with the message `Too many open files` have been observed after migrating to Camel 3x. This patch fixes the issue.
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -296,7 +498,7 @@ Technical Component
 </th>
 <th valign="top">
 
-Software Version
+
 
 </th>
 <th valign="top">
@@ -862,9 +1064,7 @@ The following issues have been fixed with this patch:
 
 -   Some security material artifacts were deactivated after being associated with one or more runtimes \(and the system returned an error message\).
 
--   There have been issues with XSLT transformations that blocked customers from using Integration Assessment.
-
-
+-   
 Furthermore, the consumption logic for Kafka acknowledgment messages has been improved.
 
 </td>
@@ -882,7 +1082,7 @@ Cloud Integration
 </td>
 <td valign="top">
 
-Issues have been observed when two EDI to XML converter steps were executed with different values for the *Exclude Interchange and Group envelopes* parameter. This patch fixes the issues.
+Issues have been observed when two EDI to XML converter steps were executed with different values for the *Exclude Interchange and Group envelopes*null parameter. This patch fixes the issues.
 
 </td>
 </tr>

@@ -219,7 +219,7 @@ Generate a service key for the service instance that you created above:
     <tr>
     <td valign="top">
     
-    `“instance-secret”`\(without payload\)
+    `"binding-secret"`\(without payload\)
     
     </td>
     <td valign="top">
@@ -229,71 +229,12 @@ Generate a service key for the service instance that you created above:
     </td>
     <td valign="top">
     
-    Low
+    Medium
     
     </td>
     <td valign="top">
     
-    For instance-secret, the clientSecret generated is same for all the keys.
-    
-    </td>
-    <td valign="top">
-    
-    For admin role:
-
-    ```
-    {
-    	"url": "https://developer-portal-application-url",
-    	"tokenUrl": "https://token-enpoint-url/oauth/token",
-    	"clientId": "your-admin-client-id",	
-    	"clientSecret": "xxxxxxxxxxxxxxxxxxxxxxx="
-    }
-    ```
-
-    For developer role:
-
-    ```
-    {
-    	"url": "https://developer-portal-application-url",
-    	"tokenUrl": "https://token-enpoint-url/oauth/token",
-    	"developerId": "developerID-associated-with-the-current-instance",
-    	"clientId": "your-dev-client-id",     	
-    	"clientSecret": "xxxxxxxxxxxxxxxxxxxxxxx="
-    }
-    ```
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `“instance-secret”`\(with payload\)
-    
-    </td>
-    <td valign="top">
-    
-    ```
-    {
-       "xsuaa":{
-          "credential-type":"instance-secret"
-       }
-    }
-    
-    ```
-
-
-    
-    </td>
-    <td valign="top">
-    
-    Low
-    
-    </td>
-    <td valign="top">
-    
-    For instance-secret, the clientSecret generated is same for all the keys.
+    For binding-secret, the clientSecret generated for every key is unique.
     
     </td>
     <td valign="top">
@@ -305,7 +246,7 @@ Generate a service key for the service instance that you created above:
     	"url": "https://developer-portal-application-url",
     	"tokenUrl": "https://token-enpoint-url/oauth/token",
     	"clientId": "your-admin-client-id",	
-    	"clientSecret": "xxxxxxxxxxxxxxxxxxx="
+    	"clientSecret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx="
     }
     ```
 
@@ -317,7 +258,7 @@ Generate a service key for the service instance that you created above:
     	"tokenUrl": "https://token-enpoint-url/oauth/token",
     	"developerId": "developerID-associated-with-the-current-instance",
     	"clientId": "your-dev-client-id",     	
-    	"clientSecret": "xxxxxxxxxxxxxxxxxxx="
+    	"clientSecret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx="
     }
     ```
 
@@ -328,7 +269,7 @@ Generate a service key for the service instance that you created above:
     <tr>
     <td valign="top">
     
-    `"binding-secret"` 
+    `"binding-secret"`\(with payload\)
     
     </td>
     <td valign="top">

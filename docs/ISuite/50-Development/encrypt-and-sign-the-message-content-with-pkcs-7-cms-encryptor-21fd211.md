@@ -109,7 +109,9 @@ In addition to encrypting the message content, you can also sign the content to 
     
     Specify the algorithm that is to be used to encrypt the payload.
 
-    Supported algorithms \(by the symmetric key\) for content encryption \(format Cipher/Operation Mode/Padding Scheme\): AES/CBC/PKCS5Padding, ARCFOUR/ECB/NoPadding, Camellia/CBC/PKCS5Padding, CAST5/CBC/PKCS5Padding, DES/CBC/PKCS5Padding, DESede/CBC/PKCS5Padding, RC2/CBC/PKCS5Padding.
+    Supported algorithms \(by the symmetric key\) for content encryption \(format Cipher/Operation Mode/Padding Scheme\): AES/GCM/NoPadding, AES/CCM/NoPadding, AES/CBC/PKCS5Padding, ARCFOUR/ECB/NoPadding, Camellia/CBC/PKCS5Padding, CAST5/CBC/PKCS5Padding, DES/CBC/PKCS5Padding, DESede/CBC/PKCS5Padding, RC2/CBC/PKCS5Padding.
+
+    The following options are available when for *Signatures* the option *Enveloped Data Only* is selected: AES/GCM/NoPadding, AES/CCM/NoPadding,AES/CCM/NoPadding, AES/GCM/NoPadding.
     
     </td>
     </tr>

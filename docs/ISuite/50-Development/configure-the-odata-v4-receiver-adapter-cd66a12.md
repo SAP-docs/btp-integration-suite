@@ -156,7 +156,7 @@ The following options are enabled only if you choose *Proxy Type* as *Internet*
 </td>
 <td valign="top">
 
-Name of the credentials that you’ve deployed in the *Security Material* section of :eye:.
+Name of the credentials that you’ve deployed in the *Security Material* section of :eye: 
 
 </td>
 </tr>
@@ -264,6 +264,8 @@ The operation that you want to perform on the selected OData entity or resource.
 -   Update\(PUT\)
 
 -   Delete\(DELETE\)
+
+-   Patch\(PATCH\)
 
 
 To leverage all operations, always use the latest version of the adapter.

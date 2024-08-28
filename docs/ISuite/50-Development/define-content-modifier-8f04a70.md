@@ -285,7 +285,7 @@ Note that data written to the message header during a processing step, for examp
     </td>
     <td valign="top">
     
-    The default value is *Expression*. If the payload contains expressions within it, then set the type as *Expression*; if the payload is huge and it has no expressions within it, then it is recommended to use the type *Constant*.
+    The default value is *Constant*. If the payload contains expressions within it, then set the type as *Expression*; if the payload is huge and it has no expressions within it, then it is recommended to use the type *Constant*.
 
     > ### Remember:  
     > If the payload size is more than 256 KB, the system doesn't let you use the type expression. If there are actual expressions used and you can't reduce the size of the text, use a groovy script.
@@ -442,4 +442,8 @@ As a result, the final message \(after the 2 content modifiers\) has the followi
 [Avoiding Encoding Issues](avoiding-encoding-issues-3018480.md "The integration runtime supports the following two kinds of (internal) data representations: binary data and string (sequence of characters). Conversions between these representations may cause issues that can result in erroneous message processing.")
 
 [Content Modifier Basics](content-modifier-basics-b0576a8.md "")
+
+[Smoke Test Scenario](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/8c83fcf4a72241af9f05e26b3f866aa5.html "") :arrow_upper_right:
+
+[Smoke Test Scenario with External Data Source](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/e4bef7446ad14c5a815b93ff20efebec.html "") :arrow_upper_right:
 

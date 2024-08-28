@@ -63,7 +63,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Allows SAP Integration Suite
+Allows SAP Integration Suite to consume messages from queues or subscriptions in SAP Integration Suite, advanced event mesh.
 
 See: [Configure the Advanced Event Mesh Sender Adapter](50-Development/configure-the-advanced-event-mesh-sender-adapter-abd2efc.md)
 
@@ -82,6 +82,22 @@ Receiver adapter
 Allows SAP Integration Suite to send messages to queues or topics in SAP Integration Suite, advanced event mesh.
 
 See: [Configure the Advanced Event Mesh Receiver Adapter](50-Development/configure-the-advanced-event-mesh-receiver-adapter-881f656.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Amazon DynamoDB* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to Amazon DynamoDB.
+
+See: [Amazon DynamoDB Receiver Adapter](50-Development/amazon-dynamodb-receiver-adapter-36620d5.md)
 
 </td>
 </tr>
@@ -1234,7 +1250,7 @@ Supported versions:
 
 -   OData version 4.0
 
-    Supported operations: Create \(POST\), Query \(GET\), Update \(PUT\)
+    Supported operations: Create \(POST\), Query \(GET\), Delete \(DELETE\), Update \(PUT\), and Patch \(PATCH\)
 
 -   The outgoing request payload must be in XML format.
 
@@ -1504,6 +1520,22 @@ Receiver adapter
 Enables SAP Integration Suite to get data from the Slack storage or to create, modify, or delete data on the Slack storage.
 
 See: [Configure the Slack Receiver Adapter](50-Development/configure-the-slack-receiver-adapter-7c2ea64.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Snowflake* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to Snowflake. Snowflake is a cloud computing-based data company that provides cloud-based data storage and analytics services.
+
+See: [Snowflake Receiver Adapter](50-Development/snowflake-receiver-adapter-1299e68.md)
 
 </td>
 </tr>

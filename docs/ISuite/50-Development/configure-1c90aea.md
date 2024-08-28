@@ -4,7 +4,7 @@
 
 In this section, you can:
 
--   Create, and configure API proxies, API providers, certificates, key-value maps, and policy templates in SAP Integration Suite. See: [Configure APIs](configure-apis-0bb111e.md).
+-   Create, and configure API proxies, API providers, certificates, key-value maps, and policy templates in SAP Integration Suite. See: [Configure API Proxies](configure-api-proxies-0bb111e.md).
 
 -   Create queues, topics, and topic subscriptions for your event-driven integration requirements. See: [Configure Event Mesh](configure-event-mesh-77e213c.md).
 

@@ -64,6 +64,8 @@ The following list displays the API Management entities that can be cloned:
 -   Custom Metrics and Charts
 -   Cache Resources
 
+-   CertificateStoreReferences
+
 
 
 

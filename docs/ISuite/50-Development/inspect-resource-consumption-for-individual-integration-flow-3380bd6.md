@@ -14,8 +14,9 @@ You can navigate to this dashboard from the following screens for a selected int
 
 -   *Memory Usage* \> *Top Integration Flows* \(see [Inspect Integration Flows By System Memory Usage](inspect-integration-flows-by-system-memory-usage-2a2e1f2.md)\)
 
+-   *Content Size* \(see [Inspect Content Size](inspect-content-size-f72b7ff.md)\)
 
-Select the time interval for which you want to display resource consumption. If you have selected resource type *Monitoring Storage* or *Memory Usage*, you can further filter the display by monitoring status.
+Select the time interval for which you want to display resource consumption. If you've selected the resource type *Monitoring Storage* or *Memory Usage*, you can further filter the display by monitoring status.
 
 You can select the resource type for which you want to display the consumption in a dropdown list.
 
@@ -122,9 +123,32 @@ The message throughput is plotted in two charts against time.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Content Size*
+
+</td>
+<td valign="top">
+
+The file size allocated to the selected artifact \(in MB\) is plotted in a bar graph against time.
+
+The bar height shows the total content size that the artifact occupies in the defined time period.
+
+</td>
+</tr>
 </table>
 
-Clicking a bar or bullet in a diagram allows you to navigate to the message monitor \(selecting *Show Messages*\).
+You can choose a bar or a bullet to get more context information and access the following functions:
 
-See also: [Monitor Message Processing](monitor-message-processing-314df3f.md)
+-   **Show Messages**
+
+    Navigate to the **Monitor Message Processing** screen. For more information, see [Monitor Message Processing](monitor-message-processing-314df3f.md).
+
+-   *Show Integration Content*
+
+    Navigate to the **Manage Integration Content** screen for the related integration flow. For more information, see [Manage Integration Content](manage-integration-content-09a7223.md).
+
+-   **Zoom Out** and **Zoom In** to extend/reduce the selected time period.
+
 

@@ -346,7 +346,7 @@ Sets the maximum number of replicas for this Deployment using HorizontalPodAutos
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="6">
+<td valign="top" rowspan="8">
 
 *Worker* 
 
@@ -371,6 +371,18 @@ Sets CPU limit for this component.
 <td valign="top">
 
 Sets memory limit for this component.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`NZDM_ENABLED` 
+
+</td>
+<td valign="top">
+
+Enables Near Zero Downtime \(NZDM\) startup behavior for workers.
 
 </td>
 </tr>
@@ -427,6 +439,18 @@ Sets the failure threshold for the readiness probe of the deployment resource.
 <tr>
 <td valign="top">
 
+`EPHEMERAL_STORAGE_LIMIT` 
+
+</td>
+<td valign="top">
+
+Sets ephemeral storage limit for this component. Default value: 10 Gi
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Solace* 
 
 </td>
@@ -437,7 +461,9 @@ Sets the failure threshold for the readiness probe of the deployment resource.
 </td>
 <td valign="top">
 
-Upscales the solace tier.
+Upscales the Message Service Tier.
+
+For more information on Message Service Tiers, see [3247839](https://me.sap.com/notes/3247839).
 
 </td>
 </tr>
@@ -469,6 +495,11 @@ Possible values are *error*, *warn*, *info*, *debug*.
 <td valign="top">
 
 Sets maximum number of queues and topic endpoints
+
+> ### Note:  
+> Note that the configuration parameters for Solops' MAX my be limited by the chosen Solace Tier. The Solace Tier sets system boundaries for configuration parameters such as Max Endpoints \(which includes Max Queues, with the JMS Adapter requiring three internal queues for each JMS Queue\), Max Egress Flows, Max Ingress Flows, Max Transacted Sessions \(which shares the same system limit value as Max Connections\) and Max Transactions \(which is five times the system limit value of Max Connections\).
+
+
 
 </td>
 </tr>

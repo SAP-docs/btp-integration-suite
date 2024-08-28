@@ -32,9 +32,13 @@ You can design the following integration artifact types with the Cloud Integrati
 
     A set of scripts that can be used in a Script integration flow step \(see [Creating a Script Collection](creating-a-script-collection-824bff0.md)\).
 
--   Function libraries
+-   Function Libraries
 
-    Contains functions that can be used in a mapping \(see [Working with Function Libraries](working-with-function-libraries-dd8c30d.md)\).
+    Contains functions from ESR that can be used in a mapping \(see [Working with Function Libraries](working-with-function-libraries-dd8c30d.md)\).
+
+-   Imported Archives
+
+    Contains imported archives from ESR that can be used in a mapping \(see [Working with Imported Archives](working-with-imported-archives-e00e81d.md)\).
 
 -   Integration adapter
 

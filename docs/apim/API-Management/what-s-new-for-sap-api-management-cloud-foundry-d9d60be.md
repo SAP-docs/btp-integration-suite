@@ -92,6 +92,321 @@ API Management
 </td>
 <td valign="top">
 
+Default Credential type for Service Key
+
+</td>
+<td valign="top">
+
+In the API business hub enterprise, we've updated the default credential type for the service key. It's now 'binding-secret' instead of 'instance-secret'. We made this change because xsuaa has deprecated the credential type 'instance-secret'.
+
+See: [Accessing API business hub enterprise APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD)
+
+SAP API Management customers choose: [Accessing API business hub enterprise APIs Programmatically](https://help.sap.com/docs/sap-api-management/sap-api-management/api-access-plan-for-api-business-hub-enterprise?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-08-24
+
+</td>
+<td valign="top">
+
+2024-08-24
+
+</td>
+<td valign="top">
+
+2407
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Manage Content from API business hub enterprise 
+
+</td>
+<td valign="top">
+
+You can now expose APIs from SAP systems in the API business hub enterprise catalog. To accomplish this, your Global Account Administrator needs to register these systems in your system landscape. This action establishes a connection between the SAP system and SAP BTP.
+
+Following system registration, these systems appear on the API business hub enterprise. Here, you can directly discover and publish the APIs from these systems. This can be done from the Manage Content page in the API business hub enterprise.
+
+See: [Manage Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-business-hub-enterprise-developer-edition?version=CLOUD)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-08-24
+
+</td>
+<td valign="top">
+
+2024-08-24
+
+</td>
+<td valign="top">
+
+2407
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Latest Version of the Tenant Cloning Tool
+
+</td>
+<td valign="top">
+
+The 1.9.2 version of the Tenant Cloning Tool is now available.
+
+See:
+
+-   [Clone API Management Content \(Neo to Cloud Foundry\)](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts?version=CLOUD)
+
+-   [Clone API Management Content between Cloud Foundry Environments](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=CLOUD)
+
+
+SAP API Management customers choose:
+
+-   [Cloned and Uncloned Entities \(Neo to Cloud Foundry\)](https://help.sap.com/docs/sap-api-management/sap-api-management/cloned-and-uncloned-entities?version=Cloud)
+
+-   [Clone API Management Content between Cloud Foundry Environments](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=Cloud)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-08-06
+
+</td>
+<td valign="top">
+
+2024-08-04
+
+</td>
+<td valign="top">
+
+2406
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Virtual Host
+
+</td>
+<td valign="top">
+
+The virtual host alias allows a maximum of 63 characters.
+
+See:
+
+-   [Configuring a Default Domain for a Virtual Host](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-default-domain-for-virtual-host-1085228c10814bc5b1ab135814459538?version=CLOUD)
+
+-   [Setting Up API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/setting-up-api-management-service?version=CLOUD)
+
+
+SAP API Management customers choose:
+
+-   [Configuring a Default Domain for a Virtual Host](https://help.sap.com/docs/sap-api-management/sap-api-management/configuring-default-domain-for-virtual-host?version=Cloud)
+
+-   [Setting Up API Portal Application Using API Management Standalone Tile](https://help.sap.com/docs/sap-api-management/sap-api-management/setting-up-api-portal-application-using-api-management-standalone-tile?version=Cloud)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-08-06
+
+</td>
+<td valign="top">
+
+2024-08-04
+
+</td>
+<td valign="top">
+
+2406
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Multiple Target Endpoints
 
 </td>
@@ -118,11 +433,6 @@ SAP API Management customers choose:
 </td>
 <td valign="top">
 
- 
-
-</td>
-<td valign="top">
-
 Info only
 
 </td>
@@ -144,6 +454,11 @@ Technology
 <td valign="top">
 
 Not applicable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 <td valign="top">

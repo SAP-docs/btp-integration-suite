@@ -48,7 +48,7 @@ Encryption/decryption of message content
 </td>
 <td valign="top">
 
-Supported algorithms \(by the symmetric key\) for content encryption \(format Cipher/Operation Mode/Padding Scheme\): AES/CBC/PKCS5Padding, ARCFOUR/ECB/NoPadding, Camellia/CBC/PKCS5Padding, CAST5/CBC/PKCS5Padding, DES/CBC/PKCS5Padding, DESede/CBC/PKCS5Padding, RC2/CBC/PKCS5Padding.
+Supported algorithms \(by the symmetric key\) for content encryption \(format Cipher/Operation Mode/Padding Scheme\): AES/GCM/NoPadding, AES/CCM/NoPadding, AES/CBC/PKCS5Padding, ARCFOUR/ECB/NoPadding, Camellia/CBC/PKCS5Padding, CAST5/CBC/PKCS5Padding, DES/CBC/PKCS5Padding, DESede/CBC/PKCS5Padding, RC2/CBC/PKCS5Padding.
 
 </td>
 </tr>

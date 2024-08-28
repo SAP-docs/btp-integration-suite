@@ -48,6 +48,40 @@ Users were unable to discover resources for a few EDMX files. However, this issu
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.171
+
+</td>
+<td valign="top">
+
+The current status of the existing credentials in the credstore didn't match the expected status outlined in the v3 docs. This issue has now been resolved.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.172
+
+</td>
+<td valign="top">
+
+The on-premise API was returning an error when making a POST request with a body. However, we've resolved this issue.
+
+</td>
+</tr>
 </table>
 
 

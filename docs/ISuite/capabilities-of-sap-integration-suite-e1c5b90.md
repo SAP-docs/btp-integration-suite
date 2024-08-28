@@ -4,7 +4,7 @@
 
 Working with SAP Integration Suite capabilities.
 
-SAP Integration Suite brings together the features and functionality of various capabilities such as Cloud Integration, API Management, Graph, , Event Mesh, Trading Partner Management, Integration Advisor, Open Connectors, Integration Assessment, and Migration Assessment.
+SAP Integration Suite brings together the features and functionality of various capabilities such as Cloud Integration, API Management, Graph, , Event Mesh, Integration Advisor, Trading Partner Management, Open Connectors, Integration Assessment, and Migration Assessment.
 
 To work with these capabilities, you must:
 

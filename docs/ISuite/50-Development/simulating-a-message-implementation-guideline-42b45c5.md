@@ -12,7 +12,11 @@ This chapter shows you how to simulate a message implementation guideline.
 
     1.  *Simulate with MIG Example Data*: This simulates the message implementation guideline with the existing sample MIG data.
 
-    2.  *Simulate with Payload Data...*: This prompts you to upload a sample payload file in the XML format for the MIG simulation.
+    2.  *Simulate with Payload Data...*: This prompts you to upload a sample payload file \(XML or EDI Flat file\) for the MIG simulation.
+
+        > ### Note:  
+        > The EDI flat file is supported only for EDI based type systems such as ASC X12, Odette, TRADACOMS, and UN/EDIFACT and its subsets.
+
 
     You can also re-run the simulation based on the option you chose using the <span class="SAP-icons-V5"></span> button that appears above the MIG structure after simulation.
 
@@ -80,12 +84,10 @@ The data corresponding to each leaf node is fetched in the following order:
 
 Choosing this option allows you to browse and upload a payload data from your local system.
 
-The payload data should be uploaded in the XML format. The payload you are trying to import might contain additional nodes, or nodes that are not defined in the MIG. These nodes will not be considered during simulation and their details are displayed in a dialog box after importing the payload data. Choose *OK*.
+The payload data should be uploaded in the XML or a flat file \(EDI text files such as EDIFACT and X12\) format. The payload you are trying to import might contain additional nodes, or nodes that are not defined in the MIG. These nodes will not be considered during simulation and their details are displayed in a dialog box after importing the payload data. Choose *OK*.
 
 > ### Note:  
-> -   The payload XML file should not have any qualifiers added to it. MIG simulation will convert your payload file automatically into the ICA format including those qualifiers.
-> 
-> -   Uploading EDI text files such as Edifact and X12 are not supported. You can convert these files into their XML representation using the*EDI to XML Converter* flow step in Cloud Integration and use the converted XML files for simulation. To know how this works, see [Define EDI to XML Converter](define-edi-to-xml-converter-6a3d12b.md)
+> -   The payload file should not have any qualifiers added to it. MIG simulation will convert your payload file automatically into the ICA format including those qualifiers.
 
 
 

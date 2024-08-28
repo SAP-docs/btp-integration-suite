@@ -22,7 +22,7 @@ You’ve created an integration package and opened it in edit mode. For more inf
 
 ## Procedure
 
-1.  Navigate to the *Artifacts* tab and choose *Add* \> *Data Type* or *Add* \> *Message Type* to add a data Type or message Type artifact.
+1.  Navigate to the *Artifacts* tab and choose *Add* \> *Data Type* or *Add* \> *Message Type* to add a data type or message type artifact.
 
 2.  In the dialog box, choose *Create*.
 
@@ -35,7 +35,7 @@ You’ve created an integration package and opened it in edit mode. For more inf
 
 <!-- import\_mt\_dt -->
 
-## Import Data Type and Message Type Artifacts from Enterprise Service Repsository
+## Import Data Type and Message Type Artifacts from Enterprise Service Repository
 
 
 

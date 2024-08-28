@@ -160,10 +160,10 @@ Select among the following values to determine the source of Partner ID:
 -   *AS2 Partner ID Header*: to use the AS2 Partner ID header as partner ID.
 -   *Authorized User*: to fetch the partner ID from values specified in partner directory.
 
--   *Dynamic*: if you select dynamic, you must specify `authorizedUser` or `as2PartnerID` value in `SAP_AS2_Pid_Resolution_Mode` parameter of partner directory.
+-   *Dynamic*: If you select dynamic, you must specify `authorizedUser` or `as2PartnerID` value in `SAP_AS2_Pid_Resolution_Mode` parameter of partner directory with pid of authorized user. To learn more, see [Parameterizing Integration Flows Using the Partner Directory](parameterizing-integration-flows-using-the-partner-directory-b7812a5.md).
 
 > ### Note:  
-> This field will have no impact on any *Private Key Alias* fields.
+> This field does not impact any *Private Key Alias* fields.
 
 
 

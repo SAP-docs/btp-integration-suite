@@ -255,6 +255,20 @@ Alias to identify the private key in the keystore used for client certificate au
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Disable Reply-To* 
+
+</td>
+<td valign="top">
+
+Specifies whether the Cloud Integration AMQP channel ignores the reply-to header in messages. If selected, Cloud Integration doesn’t send a reply back to the queue specified in the reply-to header of a received message.
+
+This parameter is deselected by default.
+
+</td>
+</tr>
 </table>
 
 Select the *Processing* tab and provide values in the fields as follows.

@@ -105,7 +105,7 @@ If you chose *Import Agreement*,
 
         -   *Create Only* if you want to create the identifiers in the system.
 
-        -   *Create or Overwrite* if you want to import the values or, overwrite them in the system if the alias matches. To know more about aliases, see [Understanding the Basic Concepts](understanding-the-basic-concepts-74c068d.md).
+        -   *Create or Overwrite* if you want to import the values or, overwrite them in the system if the alias matches. To know more about aliases, see [Understanding the Basic Concepts](../understanding-the-basic-concepts-74c068d.md).
         -   *Skip* if you want to skip the import of the identifiers.
 
     -   Similary, set the values for the field *Identifier Groups*.
@@ -117,7 +117,7 @@ If you chose *Import Agreement*,
 
     -   Set the values for the field *System Communication Channels* similar to the identifiers field.
     -   For the fields *Parameters*, *Activity Paramaters* and *Security*, choose:
-        -   *Create or Overwrite* if you want to import the values or, overwrite them in the system if the alias matches. To know more about aliases, see [Understanding the Basic Concepts](understanding-the-basic-concepts-74c068d.md).
+        -   *Create or Overwrite* if you want to import the values or, overwrite them in the system if the alias matches. To know more about aliases, see [Understanding the Basic Concepts](../understanding-the-basic-concepts-74c068d.md).
         -   *Skip* if you want to skip the import of the identifiers.
 
     -   For the fields *MIG References* and *MAG References*, choose:

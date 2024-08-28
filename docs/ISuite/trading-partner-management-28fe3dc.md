@@ -26,5 +26,5 @@ The application helps you to:
 -   Push the auto-generated runtime artefacts of the B2B scenarios as defined in the agreements into the Partner Directory of SAP Cloud Integration. This will ensure that the B2B messages get processed individually by a single integration flow at runtime.
 -   Deploy and run integration flows to conduct end-to-end business transactions.
 
-To get started, see [Getting Started with B2B Scenarios in SAP Integration Suite](50-Development/getting-started-with-b2b-scenarios-in-sap-integration-suite-ba066bb.md).
+To get started, see  <?sap-ot O2O class="- topic/xref " href="ba066bbe0f214056a033454a0df918de.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/28fe3dc6fea84728af95e37f6acf1052.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 

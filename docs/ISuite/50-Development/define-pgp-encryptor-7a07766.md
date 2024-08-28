@@ -182,6 +182,8 @@ You use the PGP Encryptor to encrypt or sign and encrypt the payload using OpenP
 
     Supported signature algorithms for PGP signing: MD5, RIPE-MD/160, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512.
 
+    Default value: SHA-512.
+
     > ### Caution:  
     > Algorithms starting with SHA1, MD2, or MD5 are still supported for compatibility reasons, but they no longer meet today's security requirements. Therefore, we recommend using stronger algorithms where possible. Check with your security experts or authorities like NIST for more detailed security recommendations.
 

@@ -12,9 +12,12 @@ As an API business hub enterprise administrator, you must approve or reject the 
 
 ## Prerequisites
 
-You’re assigned the *AuthGroup.API.Admin* role.
+The following roles must be assigned to you:
 
-You’re assigned the *AuthGroup.APIPortalRegistration* role.
+-   AuthGroup.API.Admin
+
+-   AuthGroup.APIPortalRegistration
+
 
 
 

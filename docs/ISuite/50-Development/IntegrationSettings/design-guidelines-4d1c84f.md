@@ -22,7 +22,7 @@ Each design guideline acts as a rule that helps integration developers design an
 
 The design guidelines are logically grouped. For example, all transaction handling related guidelines are grouped under a single category. Some of the logical groupings are: *Handle errors gracefully* and *Run an integration flow under well-defined boundary conditions*.
 
-The diagram shows a typical workflow that helps you benefit from using design guidelines:![](images/Design_Guidelines_0ff1e13.png)
+The diagram shows a typical workflow that helps you benefit from using design guidelines:![](images/Design_Guidelines_ae944cf.png)
 
 
 

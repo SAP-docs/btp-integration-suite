@@ -7,6 +7,17 @@ As a tenant administrator, learn and activate the feature for AI-based generatio
 > ### Note:  
 > This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
+> ### Remember:  
+> Currently, the feature is available only on few BTP regions. If your SAP Integration Suite tenant is hosted on one of these regions, you can use the feature:
+> 
+> -   Amazon Web Services – Japan \(Tokyo\)
+> 
+> -   Amazon Web Services – Europe \(Frankfurt\)
+> 
+> -   Amazon Web Services – Australia \(Sydney\)
+> 
+> -   Amazon Web Services – U.S. East \(VA\)
+
 
 
 <a name="loio0c93c1713188448caa536bc99d175c2f__section_wc2_q2c_wbc"/>
@@ -21,9 +32,9 @@ SAP Integration Suite, specifically the Cloud Integration capability, provides a
 
 ## Prerequisites
 
-For the Generative AI tool to create integration flows, you must first enable connectivity between your system landscape in SAP BTP cockpit and SAP Integration Suite. By doing so, your registered SAP applications can expose APIs and events to SAP Integration Suite, which in turn, the Generative AI tool use to create integrations. For more information on how to achieve this, see [Enabling System Landscape in SAP BTP Cockpit for SAP Integration Suite](https://help.sap.com/viewer/54e467e3bd2148deb837d34d1ec66a78/IAT/en-US/88bac3b622854484a1d1e4353aa8ac73.html "Learn to include various SAP systems into a formation and thus combine diverse SAP solutions for extended business scenarios.") :arrow_upper_right: .
+For the Generative AI tool to create integration flows, you must first enable connectivity between your system landscape in the SAP BTP cockpit and SAP Integration Suite. By doing so, your registered SAP applications can expose APIs and events to SAP Integration Suite, which in turn, the Generative AI tool use to create integrations. For more information on how to achieve this, see [Enabling System Landscape for SAP Integration Suite](https://help.sap.com/docs/btp/sap-business-technology-platform/enabling-system-landscape-for-sap-integration-suite?version=Cloud).
 
-The Generative AI tool can create integration flows without the system landscape in place too. But in such cases, the tool creates an integration flow with HTTP adapters on sender and receiver sides. You must still manually enter most of the parameters which would otherwise be automatically populated by the Generative AI tool.
+The Generative AI tool can create integration flows without the system landscape in place too. But in such cases, the tool creates an integration flow with HTTP adapters on the sender and receiver sides. You must still manually enter most of the parameters that would otherwise be automatically populated by the Generative AI tool.
 
 
 
@@ -33,7 +44,7 @@ The Generative AI tool can create integration flows without the system landscape
 
 Follow these steps to enable or disable AI-based generation of integrations:
 
-1.  Go to *Settings* \> *Integrations* \> *Design Guidelines*.
+1.  Go to *Settings* \> *Integrations* \> *Generative AI*.
 
 2.  Choose *Edit*.
 

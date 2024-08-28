@@ -78,6 +78,9 @@ You should have API Management, API portal subscription to set up the API portal
 
     -   In the *Virtual Host* section, enter the *Host Alias*.
 
+        > ### Note:  
+        > The virtual host alias allows a maximum of 63 characters.
+
     -   Provide an email ID in the *Notification Contact* field to receive updates.
 
 

@@ -4,7 +4,7 @@
 
 SAP business systems implement their own mechanisms to set up trust, manage users, and validate their identities. For Graph to communicate with these systems as data sources, two steps are required:
 
-1.  The data sources in the landscape must trust Graph as a consumer. Graph relies on SAP BTP; the SAP BTP subaccount, with its SAP XSUAA instance, is a central point of trust for the data sources.
+1.  The data sources in the landscape must trust Graph as a consumer. Graph relies on SAP BTP; the SAP BTP subaccount, with its SAP Authorization and Trust Management instance, is a central point of trust for the data sources.
 
     Each data source has a different way of establishing this trust. For example, SAP S/4HANA Cloud, extended edition requires setting up corresponding communication systems by the administrator of the system where theSAP BTP subaccount certificate is uploaded. For more information, see [Connect to Your Business Systems](connect-to-your-business-systems-1a0dd22.md).
 

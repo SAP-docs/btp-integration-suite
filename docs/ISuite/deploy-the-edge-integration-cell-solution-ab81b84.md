@@ -149,7 +149,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    Event Broker Storage Class
+    Message Service Storage Class
     
     </td>
     <td valign="top">
@@ -165,7 +165,21 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    Event Broker Scaling Tier
+    Enable Message Service Pod Initializer
+    
+    </td>
+    <td valign="top">
+    
+    Option to use a Mutating Webhook that optimizes resource usage for the Message Service in a HA environment.
+
+    The monitoring pod \(Pod 2 in the Stateful Set\) requires less CPU and memory.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Message Service Scaling Tier
     
     </td>
     <td valign="top">

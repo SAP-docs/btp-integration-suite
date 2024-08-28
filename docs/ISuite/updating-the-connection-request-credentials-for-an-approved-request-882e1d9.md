@@ -10,7 +10,7 @@ There can be instances where you have to update the credentials once the connect
 
 ## Prerequisites
 
-To update the API portal access credentials, you must first generate it. To generate the credentials from the Integration Suite API Management tenant , you must have the *APIPortal. Administrator* role assigned to you.
+To update the API portal access credentials, you must first generate it. To generate the credentials from the Integration Suite API Management tenant , you must have the APIPortal.Administrator role assigned to you.
 
 1.  Log in to the Integration Suite.
 

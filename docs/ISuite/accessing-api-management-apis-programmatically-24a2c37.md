@@ -39,16 +39,15 @@ To enable API access for API Management, API portal execute the steps in the sec
 
 Create a service instance using API Access plan to generate a service key.
 
-1.  In your web browser, open the *SAP BTP Cockpit* - .
-2.  [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap)
-3.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
-4.  Choose *API Management, API portal* \> *Instances* \> *New Instance*.
+1.  In your web browser, open the *SAP BTP Cockpit* - [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap).
+2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
+3.  Choose *API Management, API portal* \> *Instances* \> *New Instance*.
 
     > ### Note:  
     > If you are unable to view the *API Management, API Portal* tile, please check your entitlements. For more information, see [Managing Entitlements and Quotas Using the Cockpit](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/c8248745dde24afb91479361de336111.html).
 
-5.  In the *Create Instance* dialog that opens, choose the *apiportal-apiaccess* plan.
-6.  In the section *Specify parameters*, paste one of the following JSON codes, to assign a specific role.
+4.  In the *Create Instance* dialog that opens, choose the *apiportal-apiaccess* plan.
+5.  In the section *Specify parameters*, paste one of the following JSON codes, to assign a specific role.
 
     The following roles are supported for the current scenario:
 
@@ -80,8 +79,8 @@ Create a service instance using API Access plan to generate a service key.
     }
     ```
 
-7.  Click *Next* until you reach the *Confirm* section
-8.  In the section *Confirm*, enter a unique *Instance Name* and choose *Finish*.
+6.  Click *Next* until you reach the *Confirm* section
+7.  In the section *Confirm*, enter a unique *Instance Name* and choose *Finish*.
 
 The creation of service instance is successful.
 

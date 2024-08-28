@@ -92,6 +92,8 @@ This entity is required for the authorization of the partner sender system when 
 
 An authorized user has a `user` property \(name of the authorized user\) and a `Pid` property \(internal identifier of the associated partner\).
 
+The Pid may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
+
 </td>
 </tr>
 <tr>
@@ -105,6 +107,8 @@ Binary Parameters
 The API allows you to access \(read, write, delete\) a binary parameter of the Partner Directory \(for example, for an XSD document\).
 
 A Partner Directory parameter has a value and a type. The currently supported predefined types are `Binary` and `String`.
+
+The ID of this entity may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
 
 A binary parameter has a maximum size of 1,5 MB.
 
@@ -128,7 +132,11 @@ The API allows you to read all partners or delete a partner from the Partner Dir
 
 A partner is identified by an internal identifier \(referred to as `Pid`\) \(which is unique within the tenant partner directory and has a maximum length of 60 characters\).
 
+The Pid may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
+
 A partner can have parameters \(StringParameter, BinaryParameter, or UserCredentialParameter\). The parameter is uniquely identified by the Pid of the partner to which the parameter belongs and its Id.
+
+The ID of this entity may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
 
 </td>
 </tr>
@@ -143,6 +151,8 @@ String Parameters
 The API allows you to access \(read, write, delete\) a string parameter of the Partner Directory.
 
 A Partner Directory parameter has a value and a type. The currently supported predefined types are Binary and String.
+
+The ID of this entity may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
 
 A string parameter has a maximum length of 4000 characters.
 
@@ -163,6 +173,8 @@ The API allows you to access \(read, write, delete\) a *User Credentials* artifa
 You use this parameter to configure and deploy *User Credentials* artifacts.
 
 The *User Credentials* parameter contains a user and a password \(both maximum length of 200 characters\).
+
+The ID of this entity may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
 
 Note that the user credentials \(user and password\) relate to the receiver \(partner\) system that is targeted by an outbound call \(where these credentials are used for basic authentication\).
 

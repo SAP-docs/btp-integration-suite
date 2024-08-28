@@ -12,7 +12,14 @@ Assign the required roles and role collections to users for accessing the indivi
 
 ## Prerequisites
 
-You have the **Integration\_Provisioner** role assigned to you.
+You have the *Integration\_Provisioner* role assigned to you.
+
+The *Integration\_Provisioner* role:
+
+-   Gives you initial access to the SAP Integration Suite.
+-   Lets you add and manage capabilities. See [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md)
+
+Once these steps are completed, you add users and assign the various roles associated with the respective capabilities. This process allows different users to access the necessary functionalities.
 
 
 
@@ -181,22 +188,6 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     </tr>
     <tr>
-    <td valign="top">
-    
-    -   APIFullAccess.
-
-
-    
-    </td>
-    <td valign="top">
-    
-    -   Provides runtime access to the registered OData services.
-
-
-    
-    </td>
-    </tr>
-    <tr>
     <td valign="top" rowspan="2">
     
     Event Mesh
@@ -264,7 +255,7 @@ For more information on role collections, see [Roles and Role Collections](https
     <tr>
     <td valign="top">
     
-    *iacd-content-administrator*
+    *iadv-content-administrator*
     
     </td>
     <td valign="top">
@@ -367,6 +358,22 @@ For more information on role collections, see [Roles and Role Collections](https
 
 
     You need to create a new Role Collection and assign this role to it. To know more, see [Define a Role Collection](https://help.sap.com/docs/btp/sap-business-technology-platform/define-role-collection).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    -   *APIFullAccess*
+
+
+    
+    </td>
+    <td valign="top">
+    
+    -   Get runtime access to the registered OData services.
+
+
     
     </td>
     </tr>
