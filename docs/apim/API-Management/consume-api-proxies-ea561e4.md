@@ -5,7 +5,7 @@
 Consume API proxies via the API business hub enterprise. In the API business hub enterprise, an application developer registers, explores the API exposed by customers, creates applications, and tests API proxies.
 
 > ### Caution:  
-> Effective June 2024, the classic design of the API business hub enterprise will be deprecated and will no longer be accessible. The new design of the API business hub enterprise will be set as your default design from March 2024. For more information, see [Configure API business hub enterprise](configure-api-business-hub-enterprise-54b4607.md).
+> Effective June 2024, the classic design of the API business hub enterprise will be deprecated and will no longer be accessible. The new design of the API business hub enterprise will be set as your default design from March 2024. For more information, see [User Roles and Responsibilities in API business hub enterprise](user-roles-and-responsibilities-in-api-business-hub-enterprise-54b4607.md).
 
 If you've added API business hub enterprise as a capability with Integration suite, or if you’ve subscribed to the API business hub enterprise as part of the standalone API Management subscription, you have the option to experience the new design of the API business hub enterprise user interface along with the classic design.
 
@@ -34,5 +34,5 @@ The API business hub enterprise supports the following features:
 **Related Information**  
 
 
-[Configure API business hub enterprise](configure-api-business-hub-enterprise-54b4607.md "You can configure and customize the API business hub enterprise to suit your organization's needs.")
+[User Roles and Responsibilities in API business hub enterprise](user-roles-and-responsibilities-in-api-business-hub-enterprise-54b4607.md "After activating the API business hub enterprise in the Integration Suite, you need to assign users the necessary roles and role collections to access the various features and functionalities of API business hub enterprise.")
 

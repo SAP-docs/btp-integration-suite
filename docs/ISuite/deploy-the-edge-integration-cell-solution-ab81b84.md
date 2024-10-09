@@ -110,6 +110,37 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    **Enable Default Virtual Host HTTP**
+    
+    </td>
+    <td valign="top">
+    
+    By default, Edge Integration Cell endpoints are exposed via Ingress Gateway on port 443 \(HTTPS\). If needed, you can also enable port 80 \(HTTP\) for unencrypted communication.
+
+    > ### Caution:  
+    > -   HTTP-based communication doesn't have built-in transport layer security and doesn't protect secrets in transit. For more information, see [Security Considerations](https://www.rfc-editor.org/rfc/rfc9110.html#name-security-considerations) 
+    > 
+    > -   The authentication method is limited to HTTP Basic Authentication.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Enable Worker based on JDK8**
+    
+    </td>
+    <td valign="top">
+    
+    By default, the *Worker* component is now based on JDK 17. In cases of compatibility issues, you can also enable the *Worker* component based on JDK 8 as a fallback.
+    
+    </td>
+    </tr>
     </table>
     
 7.  Choose *Next Step*.

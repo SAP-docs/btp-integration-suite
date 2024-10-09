@@ -12,6 +12,9 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, TRADACOMS, o
 
 XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TRADACOMS* tab; available only for dedicated service plans, see [2903776](https://me.sap.com/notes/2903776)\).
 
+> ### Note:  
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
 
 
 <a name="loio707973f9bfb1419eb80628755494b962__steps_i3z_mpn_35"/>
@@ -306,7 +309,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     **TRADACOMS**
 
     > ### Note:  
-    > This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+    > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 
     <table>

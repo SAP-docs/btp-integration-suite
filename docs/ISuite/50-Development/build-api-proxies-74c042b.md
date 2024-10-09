@@ -33,6 +33,6 @@ To build an API, you need to perform the following tasks:
 4.  [Test APIs using the API Test Console](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of the API proxies.") :arrow_upper_right:.
 
     > ### Note:  
-    > In order to achieve an effortless navigation to the API business hub enterprise, choose *Navigation Links*\(![](../images/Finalgrid_1a621ca.png)\) from the SAP Integration Suite and select *API Business Hub Enterprise*.
+    > In order to achieve an effortless navigation to the API business hub enterprise, choose *Navigation Links*\(![](../images/Finalgrid_1a621ca.png)\) from the SAP Integration Suite and select **API business hub enterprise**.
 
 

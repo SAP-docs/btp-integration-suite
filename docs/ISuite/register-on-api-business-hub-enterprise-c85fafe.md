@@ -29,7 +29,7 @@ Procedure to register as an application developer on the API business hub enterp
     -   The admin has assigned the *AuthGroup.API.Admin* role to all the users.
 
         > ### Note:  
-        > While onboarding multiple users, it is recommended that you don't assign the *AuthGroup.API.Admin* role to all the users as this will enable the developers to take on the admin role. Instead you can automate the process of onboarding multiple users by using the API "[API Business Hub Enterprise - Registering Users\(CF\)](https://api.sap.com/api/DevPortal_RegisteringUsers_CF/resource)".
+        > While onboarding multiple users, it is recommended that you don't assign the *AuthGroup.API.Admin* role to all the users as this will enable the developers to take on the admin role. Instead you can automate the process of onboarding multiple users by using the API "[Developer Hub - Registering Users\(CF\)](https://api.sap.com/api/DevPortal_RegisteringUsers_CF/resource)".
 
 
     In this case, admin approval is not required. When the user logs in and chooses the *Register* button, they get auto registered as developers.

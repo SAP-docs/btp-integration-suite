@@ -46,7 +46,7 @@ To maintain privacy and security, you can grant access to**Authorized Users** wh
 
 ## Procedure
 
-1.  Log on to the API business hub enterprise.
+1.  Log on to the **API business hub enterprise**.
 
 2.  Choose *Enterprise Manager* \> *Manage Access* from the top navigation bar.
 

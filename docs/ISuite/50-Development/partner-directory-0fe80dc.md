@@ -68,7 +68,7 @@ Alternative Partners
 
 Represents an alternative partner.
 
-The API allows you to access \(read, write, delete\) an alternative partner.
+You can access \(read, write, delete\) an alternative partner.
 
 A partner can be identified by different identifiers. For example, a bank can be identified by the German bank code number \(Bankleitzahl or: BLZ\) or the international Bank Identifier Code \(BIC\).
 
@@ -86,7 +86,7 @@ Authorized Users
 
 Represents the user with which a partner sender system can log in into SAP Cloud Integration.
 
-The API allows you to access \(read, write, delete\) an authorized user.
+You can access \(read, write, delete\) an authorized user.
 
 This entity is required for the authorization of the partner sender system when calling Cloud Integration. If the partner uses HTTPS with client certificate authentication to connect to Cloud Integration, a certificate-to-user-mapping is required \(in the Neo environment\).
 
@@ -104,7 +104,7 @@ Binary Parameters
 </td>
 <td valign="top">
 
-The API allows you to access \(read, write, delete\) a binary parameter of the Partner Directory \(for example, for an XSD document\).
+You can access \(read, write, delete\) a binary parameter of the Partner Directory \(for example, for an XSD document\).
 
 A Partner Directory parameter has a value and a type. The currently supported predefined types are `Binary` and `String`.
 
@@ -128,7 +128,7 @@ Partners
 </td>
 <td valign="top">
 
-The API allows you to read all partners or delete a partner from the Partner Directory.
+You can read all partners or delete a partner from the Partner Directory.
 
 A partner is identified by an internal identifier \(referred to as `Pid`\) \(which is unique within the tenant partner directory and has a maximum length of 60 characters\).
 
@@ -148,7 +148,7 @@ String Parameters
 </td>
 <td valign="top">
 
-The API allows you to access \(read, write, delete\) a string parameter of the Partner Directory.
+You can access \(read, write, delete\) a string parameter of the Partner Directory.
 
 A Partner Directory parameter has a value and a type. The currently supported predefined types are Binary and String.
 
@@ -168,7 +168,7 @@ User Credential Parameters
 
 Represents a *User Credentials* artifact \(that is to be used for outbound calls to a partner system\).
 
-The API allows you to access \(read, write, delete\) a *User Credentials* artifact.
+You can access \(read, write, delete\) a *User Credentials* artifact.
 
 You use this parameter to configure and deploy *User Credentials* artifacts.
 
@@ -198,9 +198,9 @@ For general information about query options, see [Query Options](query-options-9
 
 
 
-<a name="loio0fe80dc9d3be4dfbbb89ee4c791d326e__section_ssw_lzr_r2b"/>
+<a name="loio0fe80dc9d3be4dfbbb89ee4c791d326e__AlternativePartner"/>
 
-## More Information on AlternativePartner
+## Alternative Partner
 
 Each alternative partner has the following properties:
 

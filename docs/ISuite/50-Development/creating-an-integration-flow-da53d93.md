@@ -51,7 +51,7 @@ You can create an integration flow in different ways:
 ## Context
 
 > ### Note:  
-> This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 
 
@@ -148,14 +148,6 @@ An integration flow with the following shapes is created:
         > -   However, you can also manually edit the *ID* field and, once it’s modified manually, changing the name of the integration flow doesn’t make any auto-changes to the *ID* field again.
 
     3.  Choose *Add* to just create an integration flow or *Add and Open in Editor* to open the integration flow in its editor. Alternatively, you can press the [Enter\]/[Return\] key to create an integration flow.
-
-        > ### Note:  
-        > You can copy an integration flow by choosing <span class="SAP-icons-V5"></span> Actions in the *Action* column, and then *Copy*.
-        > 
-        > -   An integration flow can be copied within the same package or to a different package.
-        > -   The copied integration flow has the same version as the source.
-        > -   An integration flow can be copied from a configure-only package to a non-configure-only package.
-        > -   An integration flow can’t be copied from a non-configure-only package to a configure-only package.
 
 
 

@@ -1495,6 +1495,54 @@ See: [Configure the Slack Receiver Adapter](configure-the-slack-receiver-adapter
 <tr>
 <td valign="top">
 
+*SMB*
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to a remote SMB Server using TCP \(Transmission Control Protocol\) to perform a read operation on the system. SMB stands for Server Message Block.
+
+Supported Versions:
+
+-   SMB 2.0.2
+-   SMB 2.1
+-   SMB 3.0
+-   SMB 3.0.2
+-   SMB 3.1.1
+
+See: [Configure the SMB Sender Adapter](configure-the-smb-sender-adapter-95bf6e9.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*SMB*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to a remote SMB Server using TCP \(Transmission Control Protocol\) to perform a file or folder operation on the system. SMB stands for Server Message Block.
+
+Supported Versions:
+
+-   SMB 2.0.2
+-   SMB 2.1
+-   SMB 3.0
+-   SMB 3.0.2
+-   SMB 3.1.1
+
+See: [Configure the SMB Receiver Adapter](configure-the-smb-receiver-adapter-ddd0d59.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Snowflake* 
 
 Receiver adapter

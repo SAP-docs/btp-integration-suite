@@ -16,7 +16,7 @@ You need the following roles to create and update categories:
 
 -   *AuthGroup.Content.Admin* 
 
-    To assign the role, see [Managing the Access Request of the Users \[New Design\]](managing-the-access-request-of-the-users-new-design-8b79ee8.md).
+    To assign the role, see [Managing the Access Request of the Users](managing-the-access-request-of-the-users-8b79ee8.md).
 
 -   *AuthGroup.API.Admin* 
 
@@ -42,7 +42,7 @@ Use the following procedure to configure navigation categories.
 
 ## Procedure
 
-1.  Log on to the API business hub enterprise.
+1.  Log on to the **API business hub enterprise**.
 
 2.  Choose *Enterprise Manager* \> *Manage Domain Categories* from the top navigation bar.
 

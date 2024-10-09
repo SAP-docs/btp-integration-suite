@@ -4,9 +4,6 @@
 
 The following table provides an overview of which roles are required in order to accomplish the various tasks related to Cloud Integration. It's also indicated in how far the tasks and roles are relevant for the main persona defined for Cloud Integration.
 
-> ### Note:  
-> This topic contains also information that is related to SAP BTP, Neo environment. Note that SAP Integration Suite is available only in the SAP BTP, Cloud Foundry environment, not in the Neo environment. However, many customers know SAP Cloud Integration as standalone service. The additional information should help those customers to relate the Neo-related information they know to the information relevant in the context of SAP Integration Suite.
-
 In the different environments, these persona are mapped to different objects.
 
 -   In the Neo environment, a persona is realized by an authorization group \(beginning with the string *AuthGroup*\).

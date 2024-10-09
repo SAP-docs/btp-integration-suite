@@ -27,7 +27,7 @@ You can restrict access to an API product in API Management using a custom role.
 
 2.  Choose *Service Marketplace* in the left-hand pane.
 
-3.  In order to create a custom role, choose the *API Management, API Business Hub Enterprise* tile.
+3.  In order to create a custom role, choose **API Management, API business hub enterprise** tile.
 
 4.  Under *Application Plans* for API BusinessHub Enterprise, choose the <span class="SAP-icons-V5"></span> Action icon and select *Manage Roles*.
 

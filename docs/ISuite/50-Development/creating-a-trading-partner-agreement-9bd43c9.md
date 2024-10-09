@@ -320,7 +320,7 @@ The creation modes apply only for the agreements you newly create. The agreement
     > ### Note:  
     > This field appears only for AS2 adapter.
     > 
-    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md)
 
 15. Select the *Interchange* step on the sender side.
 16. Set the target decimal value of the incoming payload in the *Target Decimal Character* field.
@@ -359,7 +359,7 @@ The creation modes apply only for the agreements you newly create. The agreement
     > 
     > -   ASC X12
     > 
-    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md)
 
 19. If you are planning to use custom integration flows for Pre-Processing of your interchange step, then enable the checkbox for the field *Customized Pre-Processing*.
 20. Provide the address of your custom integration flow in the *Process Direct Address* field.
@@ -400,7 +400,7 @@ The creation modes apply only for the agreements you newly create. The agreement
     > ### Note:  
     > This field appears only for AS2 adapter.
     > 
-    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md)
 
 29. Select the *Interchange* shape on the receiver side.
 30. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
@@ -790,7 +790,7 @@ The creation modes apply only for the agreements you newly create. The agreement
     > ### Note:  
     > This field appears only for AS2 adapter.
     > 
-    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md)
 
 20. Select the *Interchange* step on the sender side.
 21. Set the target decimal value of the incoming payload in the *Target Decimal Character* field.
@@ -829,7 +829,7 @@ The creation modes apply only for the agreements you newly create. The agreement
     > 
     > -   ASC X12
     > 
-    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md)
 
 24. If you are planning to use custom integration flows for Pre-Processing of your interchange step, then enable the checkbox for the field *Customized Pre-Processing*.
 25. Provide the address of your custom integration flow in the *Process Direct Address* field.
@@ -872,7 +872,7 @@ The creation modes apply only for the agreements you newly create. The agreement
     > ### Note:  
     > This field appears only for AS2 adapter.
     > 
-    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md)
 
 34. Select the *Interchange* shape on the receiver side.
 35. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
@@ -1057,7 +1057,7 @@ If you want to add custom search attributes to the transaction,
 3.  Choose *Save*.
 
     > ### Note:  
-    > You can view these custom search attributes in B2B Monitor tab once the agreement is activated. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+    > You can view these custom search attributes in B2B Monitor tab once the agreement is activated. To know more, see [Update Agreements](update-agreements-b5e1fc9.md)
 
 
 

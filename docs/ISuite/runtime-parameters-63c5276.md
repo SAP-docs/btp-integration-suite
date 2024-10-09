@@ -4,11 +4,13 @@
 
 # Runtime Parameters
 
-Get information about the runtime parameters of your Edge Integration Cell.
+Get information about the runtime parameters of the components of your Edge Integration Cell.
 
-Select *View Runtime Parameters* \(<span class="SAP-icons-V5"></span> Runtime Parameters\) to jump directly to the runtime parameters of the component.
+You can navigate to *View Runtime Parameters* \(<span class="SAP-icons-V5"></span> Runtime Parameters\) through the *Quick Links* card in the Operations Cockpit, or via *Component Monitor*.
 
-Depending on your selected component, the information about runtime parameters changes on this screen. Use the drop-down in the upper left corner to change your selection of components. The table offers the following information:
+You can use the *Component* dropdown in the upper left corner to select the specific component you want information about. Depending on the component you select, the respective information about its runtime parameters displays.
+
+The table offers the following information:
 
 **Runtime Parameters**
 
@@ -51,7 +53,7 @@ The technical name.
 </td>
 <td valign="top">
 
-The default value set for this parameter. The default value can be overwritten by the custom value.
+The default value set for this parameter. The default value can be overwritten by adding a custom value.
 
 </td>
 </tr>
@@ -63,14 +65,16 @@ The default value set for this parameter. The default value can be overwritten b
 </td>
 <td valign="top">
 
-Enter a custom value and change the default value by clicking on :pencil2:. Make your changes and confirm by selecting *Apply*. Select *Save* to run the changes in the back end. A change of a runtime parameter will typically cause a rolling restart of pods in Edge Integration Cell.
+Enter a custom value and change the default value by choosing :pencil2:. Make your changes and confirm by selecting *Apply*. Choose *Save* to run the changes in the back end. A change of a runtime parameter typically causes a rolling restart of pods in Edge Integration Cell.
+
+> ### Note:  
+> You can't decrease the default values of certain parameters. If you attempt to make such changes, an error message informs you of this restriction.
+
+
 
 </td>
 </tr>
 </table>
-
-> ### Note:  
-> Not all parameters can be decreased by a custom value. If you attempt to make such a change, an error is thrown and you're informed accordingly.
 
 For more information on the Edge Integration Cell component configuration, have a look at the following table:
 
@@ -497,7 +501,7 @@ Possible values are *error*, *warn*, *info*, *debug*.
 Sets maximum number of queues and topic endpoints
 
 > ### Note:  
-> Note that the configuration parameters for Solops' MAX my be limited by the chosen Solace Tier. The Solace Tier sets system boundaries for configuration parameters such as Max Endpoints \(which includes Max Queues, with the JMS Adapter requiring three internal queues for each JMS Queue\), Max Egress Flows, Max Ingress Flows, Max Transacted Sessions \(which shares the same system limit value as Max Connections\) and Max Transactions \(which is five times the system limit value of Max Connections\).
+> Note that the configuration parameters for Solops' MAX may be limited by the chosen Solace Tier. The Solace Tier sets system boundaries for configuration parameters such as Max Endpoints \(which includes Max Queues, with the JMS Adapter requiring three internal queues for each JMS Queue\), Max Egress Flows, Max Ingress Flows, Max Transacted Sessions \(which shares the same system limit value as Max Connections\) and Max Transactions \(which is five times the system limit value of Max Connections\).
 
 
 

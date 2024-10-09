@@ -73,5 +73,17 @@ SAP Trading Partner Management
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Data Space Integration
+
+</td>
+<td valign="top">
+
+[Accessibility Features in Data Space Integration](accessibility-features-in-data-space-integration-dc5c2ee.md)
+
+</td>
+</tr>
 </table>
 

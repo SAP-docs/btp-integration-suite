@@ -39,7 +39,7 @@ You use the value mapping artifact to represent multiple values for a single obj
 5.  If you want to import a value mapping from your Integration Directory in a PI landscape, perform the following substeps:
 
     > ### Note:  
-    > This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+    > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
     > ### Note:  
     > The supported service packs for importing a value mapping are SAP Process Orchestration 7.5 SP22 and onwards.

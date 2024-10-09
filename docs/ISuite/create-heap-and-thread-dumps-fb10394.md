@@ -8,7 +8,7 @@ Learn how to create heap and thread dumps.
 
 ## Context
 
-You can create heap and thread dumps using the `jvmmon` SAPJVM tool.
+You can create heap and thread dumps using the `jcmd` tool.
 
 
 
@@ -18,20 +18,13 @@ You can create heap and thread dumps using the `jvmmon` SAPJVM tool.
 
 2.  To connect to a worker pod, use `kubectl exec -it <pod name> -n edge-icell -- bash`.
 
-3.  Run `jvmmon`.
+3.  To create a thread dump, use `jcmd org.apache.karaf.main.Main Thread.print > <path/file name>`.
 
-    -   To create a thread dump, use `dump stacktrace`.
+4.  To create a heap dump, use `jcmd org.apache.karaf.main.Main GC.heap_dump <path/file name>`.
 
-        Thread dumps are written to directory `/opt/karaf/ or /var/lib/worker/data` \(if external storage is enabled\).
+    > ### Note:  
+    > If external storage is enabled, the shared file system is mounted on `/var/lib/worker/data` on worker pods.
 
-    -   To create a heap dump, use `dump heap`.
-
-        Heap dumps are stored in directory `/opt/karaf or /var/lib/worker/data` \(if external storage is enabled\).
-
-        > ### Note:  
-        > If external storage is enabled, the dumps for all pods are available under `/var/lib/worker/dumps` on the worker pods.
-
-        You can copy heap dump files using `kubectl cp <pod name>:/opt/karaf/<file name> <dest file name>`.
-
+    You can copy files using `kubectl -n edge-icell cp <pod name>:<path>/<file name> <dest file name>`.
 
 

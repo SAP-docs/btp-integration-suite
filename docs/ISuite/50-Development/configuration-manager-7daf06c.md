@@ -44,3 +44,19 @@ The integration flows once deployed, run the transaction activity and try to del
 
 5.  Choose *Save*. Saving the values will immediately push the data into Partner Directory. Choose *OK*.
 
+
+
+<a name="loio7daf06ceece84dc09d3ca63fc62d0a61__section_oxc_bhw_wcc"/>
+
+## Acknowledgement Configuration
+
+When the messages are processed in a transaction, the Functional Acknowledgements and Technical Acknowledgements could take time to be received depending on various factors. The *Maximum Waiting Time* feature enables users to set a customizable timeout threshold for receiving functional and technical acknowledgments. In the event that functional or technical acknowledgments are not received within the specified waiting time, the system will automatically update the message processing status to *Acknowledgment Overdue*. This status change can be viewed in detail in the Monitor tab \(See [Monitor Interchanges](monitor-interchanges-42c1199.md)\).
+
+Follow the procedure below to set the maximum waiting time for the acknowledgements.
+
+1.  Navigate to the *Configuration Manager* in your application.
+
+2.  In the *Acknowledgement Configuration* section, choose *Edit*.
+3.  Set the maximum waiting time for the fields *Technical Acknowledgement* and *Functional Acknowledgement*. The waiting time is recorded in minutes.
+4.  Choose *Save*. Saving the data will push it to the Partner Directory. In the *Save Acknowledgement Configuration* dialog, choose *OK*.
+

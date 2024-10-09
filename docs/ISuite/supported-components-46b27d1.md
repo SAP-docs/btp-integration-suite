@@ -76,7 +76,7 @@ RFC and IDoc
 </td>
 <td valign="top">
 
-Message mapping, XSLT mapping, Function Library, Imported archive
+Message mapping, Java mapping, XSLT mapping, Function Library, Imported archive
 
 </td>
 </tr>

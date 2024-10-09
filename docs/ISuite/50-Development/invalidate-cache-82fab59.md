@@ -291,5 +291,5 @@ The cache specified in the <CacheResource\> element does not exist.
 
 [Lookup Cache](lookup-cache-dcb1507.md "An OAuth access token is written to the cache using a Populate Cache policy. The OAuth token is retrieved for subsequent requests by a Lookup Cache policy.")
 
-[Response Cache](response-cache-8df3fac.md)
+[Response Cache](response-cache-8df3fac.md "")
 

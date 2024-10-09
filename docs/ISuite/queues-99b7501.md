@@ -24,3 +24,8 @@ Queues work like queues in all message queuing systems:
 4.  Event Mesh removes the message from the queue.
 
 
+**Related Information**  
+
+
+[Create A Queue](50-Development/create-a-queue-95357fa.md "Understand how to create queues.")
+

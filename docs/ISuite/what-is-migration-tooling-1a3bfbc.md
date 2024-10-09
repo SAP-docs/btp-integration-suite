@@ -7,7 +7,7 @@ Learn more about Migration Tooling.
 Migration Tooling is a pattern-based feature in the Cloud Integration capability of the SAP Integration Suite that helps you migrate integration artifacts from SAP Process Orchestration to SAP Integration Suite. Before you migrate an integration artifact, evaluate the migration possibility using the Migration Assessment capability of SAP Integration Suite. For more information, see: [Migration Assessment](migration-assessment-5c5e50e.md).
 
 > ### Note:  
-> This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 
 

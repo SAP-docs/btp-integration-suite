@@ -23,7 +23,7 @@ An example payload for the policy is as follows:
 >     <Scope>Exclusive</Scope>
 >     <ExpirySettings>
 >        <TimeOfDay ref="time_variable">expiration_time</TimeOfDay>
->        <TimeoutInSec ref="duration_variable">seconds_until_expiration</TimeoutInSec>
+>        <TimeoutInSeconds ref="duration_variable">seconds_until_expiration</TimeoutInSeconds>
 >        <ExpiryDate ref="date_variable">expiration_date</ExpiryDate>
 >     </ExpirySettings>
 >     <Source>cache-response</Source>
@@ -32,6 +32,8 @@ An example payload for the policy is as follows:
 > ```
 
 > ### Note:  
+> The element "TimeoutInSec" has been deprecated. It's now been replaced with "TimeoutInSeconds". Additionally, the use of the reference variable `ref="duration_variable"` is not supported with "TimeoutInSec" but works with "TimeoutInSeconds".
+> 
 > The ExpirySettings specifies when a cache entry should expire. When present, <TimeoutInSeconds\> overrides both <TimeOfDay\> and <ExpiryDate\>.
 
 Populate cache policy defines the following elements:
@@ -109,7 +111,7 @@ ExpirySettings
 
 -   TimeOfDay
 
--   TimeoutInSec
+-   TimeoutInSeconds
 
 
 
@@ -123,7 +125,7 @@ Specifies when the cached value should expire.
 
 -   TimeOfDay: The time of day at which a cache entry should expire. Use the format hh:mm:ss.
 
--   TimeoutInSec: The number of seconds after which a cache entry should expire.
+-   TimeoutInSeconds: The number of seconds after which a cache entry should expire.
 
 
 
@@ -266,5 +268,5 @@ fault.name Matches "EntryCannotBeCached"
 
 [Invalidate Cache](invalidate-cache-82fab59.md "The cache can be invalidated explicitly by specifying an HTTP header. When a request that contains the specified HTTP header is received, the cache will be flushed.")
 
-[Response Cache](response-cache-8df3fac.md)
+[Response Cache](response-cache-8df3fac.md "")
 

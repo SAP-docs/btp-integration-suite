@@ -12,6 +12,78 @@ The following patch release information covers the most recent changes made to t
 
 
 
+<a name="loio023a4725bb734f86be8a5625abe54110__section_gv4_42n_vcc"/>
+
+## September 2024
+
+**Software Increment: 2408**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.57.28
+
+</td>
+<td valign="top">
+
+Fix for content deployment failures caused by authentication issue between the underlying microservices.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.91.6
+
+</td>
+<td valign="top">
+
+The following issues have been fixed with this patch:
+
+-   Display problems with mapping lines in MAG when an invalid mapping element is present.
+
+-   MIG Simulation not working correctly with EDI Flat files.
+
+-   EDI Flat files not being accepted for the customization of MIG during its creation.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio023a4725bb734f86be8a5625abe54110__section_oy3_prr_ncc"/>
 
 ## August 2024
@@ -51,6 +123,25 @@ Integration Advisor
 <td valign="top">
 
 Issues were reported when activating a MAG with target MIG based on a custom message. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.56.33
+
+</td>
+<td valign="top">
+
+In the tenants using Apache Camel 3.14 runtime the integration flows utilizing AS2 and AS4 adapters experience frequent retries during message processing failures. For more details and solution, see [3516264](https://me.sap.com/notes/3516264)
+
+This patch fixes the issue.
 
 </td>
 </tr>

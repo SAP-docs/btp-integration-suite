@@ -83,7 +83,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    Refer to [Read-Only Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__read) for the tasks.
+    Refer to [Read-Only Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__read_suite) for the tasks.
     
     </td>
     </tr>
@@ -95,7 +95,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    Refer to [Business Expert Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__bus) for the tasks.
+    Refer to [Business Expert Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__bus_suite) for the tasks.
     
     </td>
     </tr>
@@ -107,7 +107,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    Refer to [Integration Developer Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__dev) for the tasks.
+    Refer to [Integration Developer Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__dev_suite) for the tasks.
     
     </td>
     </tr>
@@ -119,7 +119,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    Refer to [Tenant Administrator Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__admin) for the tasks.
+    Refer to [Tenant Administrator Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__admin_suite) for the tasks.
     
     </td>
     </tr>
@@ -153,7 +153,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    -   Onboard to API business hub enterprise
+    -   Onboard to API business hub enterprise.
     -   Gain access to API business hub enterprise. See [Setting Up API Management Capability](50-Development/setting-up-api-management-capability-f34e86c.md)
 
 
@@ -227,7 +227,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="2">
+    <td valign="top" rowspan="3">
     
     Integration Advisor
     
@@ -262,6 +262,35 @@ For more information on role collections, see [Roles and Role Collections](https
     
     -   iadv-content-developer tasks
     -   Unlock MIGs and MAGs locked by other users
+    -   Disable Proposal service
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *iadv-content-read*
+    
+    </td>
+    <td valign="top">
+    
+    -   Read-only access to view the following artefacts:
+
+        -   Type system library
+
+        -   MIGs
+        -   MAGs
+        -   Custom Type Systems
+
+    -   Simulate MIGs and MAGs
+    -   Export artefacts
+
+    > ### Note:  
+    > Users with this role can view and browse these objects, but cannot edit or modify them in any way.
+    > 
+    > This role does not include importing artefacts \(MIGs/MAGs\).
 
 
     

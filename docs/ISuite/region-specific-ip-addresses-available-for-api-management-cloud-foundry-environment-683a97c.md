@@ -4,7 +4,7 @@
 
 API Management protects your backend services. However, API Management needs to establish connectivity to your backend services during an API call execution.
 
-In case your backend service is restricting access to certain IPs as part of security measures, you need to add API Management LB and NAT IPs to the list of allowed IPs in your backend services.
+In case you are restricting access to certain IPs for security reasons, you need to add API Management LB and NAT IPs to the list of allowed IPs on your client \(Ingress\) or backend \(Egress\) as appropriate.
 
 > ### Note:  
 > -   LB \(Load Balancer\) IPs are ingress, for incoming requests.
@@ -88,7 +88,7 @@ West Europe
 </td>
 <td valign="top">
 
-51.105.226.76, 20.4.203.111
+51.105.226.76, 20.4.203.111, 20.31.245.142
 
 </td>
 <td valign="top">
@@ -125,12 +125,12 @@ Australia East
 </td>
 <td valign="top">
 
-20.53.178.192
+20.53.178.192, 20.191.255.210
 
 </td>
 <td valign="top">
 
-20.53.178.190
+20.53.178.190, 52.187.215.7
 
 </td>
 </tr>
@@ -162,12 +162,12 @@ Southeast Asia
 </td>
 <td valign="top">
 
-20.43.177.215
+20.43.177.215, 20.188.97.45
 
 </td>
 <td valign="top">
 
-20.43.177.113
+20.43.177.113, 20.188.109.228
 
 </td>
 </tr>
@@ -199,12 +199,12 @@ West US 2
 </td>
 <td valign="top">
 
-51.143.127.29
+51.143.127.29, 52.148.182.6
 
 </td>
 <td valign="top">
 
-51.143.126.237
+51.143.126.237, 20.191.81.230
 
 </td>
 </tr>
@@ -273,7 +273,7 @@ East US
 </td>
 <td valign="top">
 
-20.42.26.85, 137.135.94.245
+20.42.26.85
 
 </td>
 <td valign="top">
@@ -532,12 +532,12 @@ eu-central-1
 </td>
 <td valign="top">
 
-52.57.227.184, 35.156.111.245, 3.72.121.203, 18.195.254.216, 52.59.65.179, 18.157.127.228, 3.71.212.236, 3.78.133.131, 3.125.67.253, 3.120.18.81, 52.57.122.96, 35.157.72.246, 52.59.9.207, 3.122.187.52, 35.158.244.146
+52.57.227.184, 35.156.111.245, 3.72.121.203, 3.120.18.81, 52.57.122.96, 35.157.72.246, 52.59.9.207, 3.122.187.52, 35.158.244.146, 3.123.77.184, 18.159.171.255, 18.185.226.25
 
 </td>
 <td valign="top">
 
-52.29.48.148, 3.120.95.10, 18.194.144.165, 18.196.191.48, 52.59.78.206, 18.195.138.5, 3.73.160.117, 52.57.130.124, 3.72.189.179
+52.29.48.148, 3.120.95.10, 18.194.144.165, 18.196.191.48, 52.59.78.206, 18.195.138.5, 3.73.160.117, 52.57.130.124, 3.72.189.179, 35.158.6.36, 18.193.41.16, 18.153.185.186
 
 </td>
 </tr>
@@ -606,7 +606,7 @@ us-east-1
 </td>
 <td valign="top">
 
-54.86.152.69, 3.227.214.88, 3.222.180.54, 54.165.0.197, 18.211.185.170, 54.152.176.132, 3.227.146.112, 54.204.200.84, 3.213.190.155, 3.94.236.44, 52.2.5.170, 34.239.31.28
+54.86.152.69, 3.227.214.88, 3.222.180.54, 3.227.146.112, 54.204.200.84, 3.213.190.155
 
 </td>
 <td valign="top">
@@ -643,7 +643,7 @@ us-central-1
 </td>
 <td valign="top">
 
-35.209.91.33
+34.172.191.154
 
 </td>
 <td valign="top">
@@ -754,7 +754,7 @@ asia-south1
 </td>
 <td valign="top">
 
-35.207.228.176, 35.207.205.83
+34.93.242.91, 34.47.144.45
 
 </td>
 <td valign="top">
@@ -791,7 +791,7 @@ europe-west3
 </td>
 <td valign="top">
 
-35.207.154.151, 35.207.169.22
+34.159.53.41, 35.198.177.136
 
 </td>
 <td valign="top">
@@ -813,7 +813,7 @@ il30
 </td>
 <td valign="top">
 
-Israel GCP
+Israel \(Tel Aviv\) GCP
 
 </td>
 <td valign="top">
@@ -850,7 +850,7 @@ sa30
 </td>
 <td valign="top">
 
-Saudi Arabia GCP
+KSA \(Dammam\) GCP public sector
 
 </td>
 <td valign="top">
@@ -1001,7 +1001,7 @@ us-east-1
 </table>
 
 > ### Note:  
-> If customers are implementing allow or deny listing based on IPs from their clients to API Management design time applications - API Portal, API Business Hub Enterprise, or other platform services in Cloud Foundry, such as SAP Authorization and Trust Management Service \(XSUAA\) for fetching tokens, they will need to refer to the documentation for SAP Business Technology Platform Cloud Foundry IP addresses, which can be found at the following link: [Regions and API Endpoints Available for the Cloud Foundry Environment | SAP Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud).
+> If customers are implementing allow or deny listing based on IPs from their clients to API Management design time applications - API Portal, API business hub enterprise, or other platform services in Cloud Foundry, such as SAP Authorization and Trust Management Service \(XSUAA\) for fetching tokens, they will need to refer to the documentation for SAP Business Technology Platform Cloud Foundry IP addresses, which can be found at the following link: [Regions and API Endpoints Available for the Cloud Foundry Environment | SAP Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud).
 
 **Related Information**  
 

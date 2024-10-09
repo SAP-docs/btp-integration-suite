@@ -173,5 +173,5 @@ This router checks if the maximum number of retries is reached.
 **Related Information**  
 
 
-[Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md "The Business to Business (B2B) Monitoring view allows you to check the processing status of your B2B interchanges.")
+[Update Agreements](update-agreements-b5e1fc9.md "Update Agreement properties and MIG/MAG information.")
 

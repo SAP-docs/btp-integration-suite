@@ -68,12 +68,13 @@ Your global account administrator is responsible for configuring the Graph entit
 2.  On the *Activate Capabilities* dialog, under *Select Capabilities*, choose *Design, Develop, and Manage APIs* and choose *Next*.
 3.  To activate *Graph*, select the following, and choose *Next*:
 
-    1.  *Enable SAP API Business Hub Enterprise*
+    1.  **Enable API business hub enterprise**
 
     2.  *Graph*
 
+
     > ### Note:  
-    > If you have already set up API Management, choose *Edit*, and select *Graph*. You must select *SAP API Business Hub Enterprise* to activate *Graph*.
+    > If you have already set up API Management, choose *Edit*, and select *Graph*. You must select **Enable API business hub enterprise** to activate *Graph*.
 
 4.  Choose *Activate* and once the status on the *Summary* changes from *In Progress* to *Active*, choose *OK*.
 
@@ -83,7 +84,7 @@ Your global account administrator is responsible for configuring the Graph entit
 
 ## 3. Define Users for Graph
 
-Graph doesn't manage user identities and it can't directly authenticate clients. Instead, it relies on XSUAA, the SAP Authorization and Trust Management Service.
+Graph doesn't manage user identities and it can't directly authenticate clients. Instead, it relies on the SAP Authorization and Trust Management service.
 
 There are two ways to define users:
 
@@ -94,7 +95,7 @@ There are two ways to define users:
     For more information, see [Trust and Federation with Identity Providers](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/cb1bc8f1bd5c482e891063960d7acd78.html).
 
 
-Once you enable Graph, you see both Graph role collections in your list.
+Once you enable Graph, you see all of the Graph role collections in your list.
 
 
 
@@ -117,7 +118,7 @@ Once you enable Graph, you see both Graph role collections in your list.
 
 -   Graph Navigator Viewer
 
-    Graph Navigator is a tool in SAP API business hub enterprise that developers use to inspect business data graphs. For more information, see [Graph Navigator in SAP API Business Hub Enterprise](50-Development/graph-navigator-in-sap-api-business-hub-enterprise-8e75d31.md).
+    Graph Navigator is a tool in API business hub enterprise that developers use to inspect business data graphs. For more information, see [Graph Navigator in API business hub enterprise](50-Development/graph-navigator-in-api-business-hub-enterprise-8e75d31.md).
 
     To assign the *GraphNavigator.Viewer* role collection to a user with the *Graph\_Navigator\_Viewer* role, do the following:
 
@@ -126,6 +127,19 @@ Once you enable Graph, you see both Graph role collections in your list.
     2.  Select the relevant user. Under *Role Collections*, choose *Assign Role Collection*.
 
     3.  Search for *GraphNavigator.Viewer*, select the role collection, and choose *Assign Role Collection*.
+
+    4.  To apply the role, go back to the Integration Suite home page.
+
+
+-   Graph Guest
+
+    There are cases where you need users to have read-only access to Graph. Assign the *Graph\_Guest* authorization role to one or more users so that they have read-only access to Graph and the Graph Configuration API.
+
+    1.  In the SAP BTP cockpit, go to *Security* \> *Users*.
+
+    2.  Select the relevant user. Under *Role Collections*, choose *Assign Role Collection*.
+
+    3.  Search for *Graph.Guest*, select the role collection, and choose *Assign Role Collection*.
 
     4.  To apply the role, go back to the Integration Suite home page.
 

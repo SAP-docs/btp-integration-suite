@@ -46,3 +46,8 @@ If we think of topics as destinations, then Event Mesh can be thought of as the 
 -   Consumers are consuming applications that connect to Event Mesh. Any of the consumers that have been configured with topic subscriptions receive messages with matching topics.
 
 
+**Related Information**  
+
+
+[Create A Topic Subscription](50-Development/create-a-topic-subscription-6fe6358.md "Understand how to create a topic subsciption from a queue.")
+

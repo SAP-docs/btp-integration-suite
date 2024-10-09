@@ -92,6 +92,308 @@ API Management
 </td>
 <td valign="top">
 
+Region-Specific IP Addresses Available for API Management Cloud Foundry Environment
+
+</td>
+<td valign="top">
+
+The region-specific load balancer IP addresses \(ingress, for incoming requests\) are now updated and available in the help document.
+
+See: [Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](https://help.sap.com/docs/integration-suite/sap-integration-suite/region-specific-ip-addresses-available-for-api-management-cloud-foundry-environment-683a97ce038a40e097524619e47d9a10?version=CLOUD)
+
+SAP API Management customers choose: [Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](https://help.sap.com/docs/sap-api-management/sap-api-management/region-specific-ip-addresses-available-for-api-management-cloud-foundry-environment-683a97ce038a40e097524619e47d9a10?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2408
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Create a Product by Importing an API Specification
+
+</td>
+<td valign="top">
+
+As a content administrator, you can discover APIs from various business systems and publish them as products in the API business hub enterprise catalog. However, even if you have an API specification from an external gateway, you can still make it available in the catalog.
+
+See: [Creating a Product by Importing an API Specification](https://help.sap.com/docs/integration-suite/sap-integration-suite/registering-api-manually?version=CLOUD)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2408
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Default Credential type for Service Key
+
+</td>
+<td valign="top">
+
+The default credential type for API Management service key has been updated. It's now 'binding-secret' instead of 'instance-secret'. We made this change because xsuaa has deprecated the credential type 'instance-secret'.
+
+See: [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD)
+
+SAP API Management customers choose: [Accessing API Management APIs Programmatically](https://help.sap.com/docs/sap-api-management/sap-api-management/api-access-plan-for-api-portal?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2408
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Deprication of the element "TimeoutInSec"
+
+</td>
+<td valign="top">
+
+The "TimeoutInSec" element in Populate Cache and Response Cache policies has been deprecated. It's now been replaced with "TimeoutInSeconds".
+
+See:
+
+-   [Populate Cache](https://help.sap.com/docs/integration-suite/sap-integration-suite/populate-cache?version=CLOUD)
+
+-   [Response Cache](https://help.sap.com/docs/integration-suite/sap-integration-suite/response-cache?version=CLOUD)
+
+
+SAP API Management customers choose:
+
+-   [Populate Cache](https://help.sap.com/docs/sap-api-management/sap-api-management/populate-cache?version=Cloud)
+
+-   [Response Cache](https://help.sap.com/docs/sap-api-management/sap-api-management/response-cache?version=Cloud)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+Deprecated
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2408
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Default Credential type for Service Key
 
 </td>

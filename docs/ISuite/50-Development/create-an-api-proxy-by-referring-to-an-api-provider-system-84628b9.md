@@ -32,6 +32,9 @@ If you want to browse for an OData service for a provider that you’ve already 
 
     Also, since such APIs aren’t linked to any API provider, you can’t use the *Synchronize* option to update the API with the latest version that might be available in the backend.
 
+    > ### Note:  
+    > When you discover an API provider, the fetched metadata for an API doesn't include the HEAD method for any resource. If your backend supports the HEAD method, you can include it by updating the API proxy specification in the API Designer.
+
 7.  The details of the API *Name*, *Title*, *API Base Path*, *API State*, *Host Alias* and *Service Type* are automatically populated.
 
 8.  Enter a short introductory text in the *Short Text* field.

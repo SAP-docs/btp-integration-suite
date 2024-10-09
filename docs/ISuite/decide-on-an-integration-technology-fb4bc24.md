@@ -99,6 +99,8 @@ In [Determine an Integration Technology](determine-an-integration-technology-69b
 
 4.  Choose *Submit*. The status of the request changes to *Completed*.
 
+    To export the completed interface request as a PDF file, open the request and choose *Download*.
+
 
 
 

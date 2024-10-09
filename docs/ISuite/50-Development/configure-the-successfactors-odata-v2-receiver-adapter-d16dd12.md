@@ -285,6 +285,11 @@ The fields in the entity that you want to modify. You can add this using the [Mo
 
 Additional options that you want to add to the query like `$top` or how to order the results using *orderby*. You can add this using the Model Operation Wizard.
 
+> ### Remember:  
+> While forming queries, either using the wizard or manually, you must follow the query structure recommended by SuccessFactors. For example, if you want to query records effective on a defined date, you must use the `asOfDate` parameter as recommended by SuccessFactors [documentation](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/fce067c46f5d4d4f85a21fc9bb9b21c3.html). If a query that you form doesn't follow the recommended structure, the adapter won't be able to show errors during the design time, in turn, leading to unexpected results at runtime. This is a known limitation of the adapter.
+
+
+
 </td>
 </tr>
 <tr>

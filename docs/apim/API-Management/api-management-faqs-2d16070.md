@@ -285,7 +285,7 @@ For detailed information regarding policy types, see [Policy Types](https://help
 <tr>
 <td valign="top">
 
-How to onboard an application developer on the developer portal?
+How to onboard an application developer on the API business hub enterprise?
 
 </td>
 <td valign="top">

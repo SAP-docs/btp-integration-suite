@@ -5,7 +5,7 @@
 Imported Archives is a collection of multiple imported archive objects from ESR.
 
 > ### Note:  
-> This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 Imported Archives are custom-implemented user-defined functions \(UDFs\) and saved as archives in the Enterprise Services Repository \(ESR\). For more information about what is an imported archive object and how it's created in an ESR, see [Imported Archives](https://help.sap.com/docs/SAP_NETWEAVER_750/0b9668e854374d8fa3fc8ec327ff3693/4bf40f29c0c33de4e10000000a42189e.html?version=latest).
 

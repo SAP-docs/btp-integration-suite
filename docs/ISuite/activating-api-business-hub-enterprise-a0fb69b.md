@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# Activating API Business Hub Enterprise
+# Activating API business hub enterprise 
 
 Steps to activate API business hub enterprise in SAP Integration Suite. API business hub enterprise is one of the the sub-capabilities of API Management with SAP Integration Suite
 
@@ -50,7 +50,7 @@ Activate API business hub enterprise
 Add and activate API business hub enterprise in Integration Suite. For more information, see [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md).
 
 > ### Note:  
-> The API business hub enterprise checkbox is selected by default if you've subscribed to the premium/standard service plan and have activated API Management.
+> The API business hub enterprise checkbox is **not** selected by default if you've subscribed to the premium/standard service plan and have activated API Management.
 
 
 

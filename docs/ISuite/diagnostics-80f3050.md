@@ -1,7 +1,5 @@
 <!-- loio80f3050fb26e42a6b09dfcdb06f8cd50 -->
 
-<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
-
 # Diagnostics
 
 Run diagnostic tasks and collect the necessary information for troubleshooting your Edge Integration Cell.
@@ -69,6 +67,12 @@ The type of diagnostic task. It can be any of the following:
 
 -   *Custom Logging*. Temporarily increase the log level for a list of log locations and collect the required debug information for diagnosing your issue.
 
+-   *Thread Dump*. Use thread dumps to diagnose unequal resource usage that may cause system slowness. You can configure the number of thread dumps to create for a component and specify the intervals between them.
+-   *Heap Dump*
+
+    > ### Note:  
+    > You can only create a heap dump for one pod per component at a time, as this operation is resource-intensive.. Use heap dumps to diagnose issues related to memory consumption.
+
 
 
 
@@ -131,34 +135,14 @@ To create a new diagnostic task, perform the following steps:
 3.  While the diagnostic session is running, reproduce the problem you want to diagnose in parallel. This action writes debugging information to the log files on the file system, allowing *Diagnostics* to collect the relevant data for troubleshooting.
 4.  When you're done, choose *Stop* to finish the session. The status changes to *Completed*, and the download button becomes available.
 
-    > ### Note:  
-    > If you don't stop the session manually, it stops automatically after 10 minutes.
+    If you don't stop the session manually, it stops automatically after 10 minutes.
 
-5.  You can now download the results of your diagnostic task. The results save as a zip file on your computer.
+5.  . Use heap dumps to diagnose issues related to memoryYou can now download the results of your diagnostic task. The results save as a zip file on your computer.
+
+    > ### Note:  
+    > In the case of heap dumps, you can't download the results directly from the UI due to the large file size. When you choose *Download*, a popup appears with the path to the file's location on the file share. You can download the results file using your preferred Kubernetes tooling. The corresponding command is the following: `kubectl -n edge-icell cp <pod name>:<path> <destination path name>`
 
 
 > ### Tip:  
 > Delete old diagnostic tasks regularly to save space on the file system. You can select one or multiple items from the*Diagnostic Task* list and choose the *Delete* icon.
-
-
-
-<a name="loio80f3050fb26e42a6b09dfcdb06f8cd50__section_xds_1jp_hcc"/>
-
-## Custom Loggers
-
-You can add custom loggers when creating a new custom logging task. You can either add them individually or mass import a list of loggers.
-
-To add them individually, follow these steps:
-
-1.  Choose the add \(:heavy_plus_sign:\) icon in the popup window that opens when you create a new logging task.
-2.  Specify the *Component* and *Log Level*, and provide the *Log Location*.
-3.  Choose the *Add* button to add the custom logger. You can repeat the previous steps to add all the custom loggers you need.
-4.  When you're done, you can choose *Run* to initiate the diagnosis.
-
-To mass import a list of loggers, choose the import \(<span class="SAP-icons-V5"></span>\) icon in the popup window that opens when you create a new logging task. Paste your list of loggers in the *Custom Logger* field. Make sure that you enter one log location per line and that the data follows this format: <Component\>,<Log Location\>,<Log Level\>. T The system adds each new location to the custom logger and overwrites any matching existing locations.
-
-> ### Note:  
-> For mass import, the component should have an internal name, such as edge-api. The supported log levels are *TRACE*, *DEBUG*, *INFO*, *WARNING*, *ERROR*, and *OFF*.
-
-You can edit and delete your custom loggers later by choosing the respective icons next to the logger you want to modify.
 

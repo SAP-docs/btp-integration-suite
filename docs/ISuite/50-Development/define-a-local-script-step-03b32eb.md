@@ -50,7 +50,9 @@ JavaScript Engine \(Rhino\)
 </td>
 <td valign="top">
 
-1.7 R4
+1.7.14
+
+Also supports ECMAScript standards.
 
 </td>
 </tr>

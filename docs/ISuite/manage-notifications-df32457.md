@@ -12,7 +12,7 @@ As a site administrator you can configure notifications for providing informatio
 
 ## Prerequisites
 
-You’re assigned the *AuthGroup.Site.Admin* role. To assign the role, see [Managing the Access Request of the Users \[New Design\]](managing-the-access-request-of-the-users-new-design-8b79ee8.md).
+You’re assigned the *AuthGroup.Site.Admin* role. To assign the role, see [Managing the Access Request of the Users](managing-the-access-request-of-the-users-8b79ee8.md).
 
 
 

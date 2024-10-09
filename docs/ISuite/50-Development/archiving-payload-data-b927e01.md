@@ -21,7 +21,7 @@ The feature *Archive Sender/Receiver Payload Data* allows you to archive your in
 -   There is no retry mechanism for the failed archived interchanges. These interchanges have to wait for the next archiving schedule job execution.
 -   Once the archiving job is completed, you need to check your CMIS system to check the archived data as the tenant does not display this information.
 -   The archiving feature is supported by the generic integration flow from version 2.3.0 and above.
--   Once the interchange arhive is completed, the monitor backend database will store the data for 90 days post which the data will be deleted automatically. To monitor the archiving status, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+-   Once the interchange arhive is completed, the monitor backend database will store the data for 90 days post which the data will be deleted automatically. To monitor the archiving status, see [Update Agreements](update-agreements-b5e1fc9.md)
 
 .
 

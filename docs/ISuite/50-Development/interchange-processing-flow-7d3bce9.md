@@ -124,5 +124,5 @@ After conversion, the process flow assembles the payload as an evelope and and s
 
 [Receiver Communication Flow](receiver-communication-flow-cd233d1.md "This integration flow gets the final message from the queue and sends it to the receiver.")
 
-[Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md "The Business to Business (B2B) Monitoring view allows you to check the processing status of your B2B interchanges.")
+[Update Agreements](update-agreements-b5e1fc9.md "Update Agreement properties and MIG/MAG information.")
 

@@ -32,7 +32,7 @@ Your Kubernetes cluster must meet certain requirements before you can set up Edg
 > ### Note:  
 > For information about Kubernetes versions, see SAP Note [3247839](https://me.sap.com/notes/3247839).
 > 
-> You can install Edge Integration Cell on Kubernetes clusters on cloud platforms such as Amazon Web Services \(Amazon Elastic Kubernetes Service, Amazon EKS\), Microsoft Azure \(Azure Kubernetes Service, AKS\), SUSE Rancher \(Rancher Kubernetes Engine, RKE, or RKE2\) and Red Hat OpenShift \(OpenShift Kubernetes Engine, OKE\).
+> You can install Edge Integration Cell on Kubernetes clusters on cloud platforms such as Amazon Web Services \(Amazon Elastic Kubernetes Service, Amazon EKS\), Microsoft Azure \(Azure Kubernetes Service, AKS\), SUSE Rancher \(Rancher Kubernetes Engine, RKE2\) and Red Hat OpenShift \(OpenShift Kubernetes Engine, OKE\).
 
 -   The Kubernetes cluster must have role-based access control \(RBAC\) enabled.
 

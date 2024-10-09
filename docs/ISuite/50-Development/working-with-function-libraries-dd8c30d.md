@@ -5,7 +5,7 @@
 Function Libraries is a collection of multiple Function Library objects.
 
 > ### Note:  
-> This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 In addition to the standard functions, as mapping developers, you can create your own user-defined functions \(UDF\) that are local to a message mapping step.
 

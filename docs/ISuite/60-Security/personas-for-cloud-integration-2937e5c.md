@@ -6,10 +6,7 @@ When you perform user management tasks using SAP BTP cockpit, you find a set of 
 
 Personas cover the different tasks associated with an integration project. To assign roles that are application-based, see [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md).
 
-> ### Note:  
-> This topic contains also information that is related to SAP BTP, Neo environment. Note that SAP Integration Suite is available only in the SAP BTP, Cloud Foundry environment, not in the Neo environment. However, many customers know SAP Cloud Integration as standalone service. The additional information should help those customers to relate the Neo-related information they know to the information relevant in the context of SAP Integration Suite.
-
-**Authorization Groups**
+**Personas**
 
 
 <table>
@@ -21,12 +18,7 @@ Persona
 </th>
 <th valign="top">
 
-Authorization Group \(Neo\)
-
-</th>
-<th valign="top">
-
-Role Collection \(Cloud Foundry\)
+Role Collection
 
 </th>
 <th valign="top">
@@ -43,11 +35,6 @@ Read-only persona
 </td>
 <td valign="top">
 
-AuthGroup.ReadOnly
-
-</td>
-<td valign="top">
-
 PI\_Read\_Only
 
 </td>
@@ -55,15 +42,13 @@ PI\_Read\_Only
 
 Enables you to connect to a tenant and to monitor messages.
 
-This authorization group enables you to access \(read-only\) artifacts in the Monitoring area, as well as to download integration flow artifacts and WSDL.
+This persona enables you to access \(read-only\) artifacts in the Monitoring area, as well as to download integration flow artifacts and WSDL.
 
-This includes tasks like:
-
--   Discover and copy pre-shipped standard packages
+This persona includes authorization to tasks like:
 
 -   Monitor integration flows and the status of integration artifacts
 
--   Read the message payload and attachments
+-   View pre-shipped standard packages in the *Discover* view
 
 -   View packages and their artifacts in *Design* workspace
 
@@ -82,34 +67,28 @@ Business expert
 </td>
 <td valign="top">
 
-AuthGroup.BusinessExpert
-
-</td>
-<td valign="top">
-
 PI\_Business\_Expert
 
 </td>
 <td valign="top">
 
-Enables a business expert to perform business tasks like, for example, examining the payload.
+Enables a business expert to read data which might contain sensitive business content \(like message payloads or attachments\).
 
-This includes tasks like:
-
--   Discover and copy pre-shipped standard packages
+This persona includes authorization to tasks like:
 
 -   Monitor integration flows and the status of integration artifacts
 
--   Read the message payload and attachments
+-   Read the message payload and attachments, design time artifact locks
 
--   View packages and their artifacts in *Design* workspace
+-   View and edit trace configurations
 
--   View data store entries, access policies, and design time artifact locks
+-   View data store entries, variables and its content
 
--   Inspect usage of integration resources
+-   Edit contact persons for company profile and trading partner profile
 
--   Edit B2B partner profiles and contact persons, trace configuration, log levels, and archiving configuration
 
+> ### Note:  
+> This is an add-on role collection, which can be assigned in addition to other personas like *PI\_Integration\_Developer* or *PI\_Read\_Only* to enhance them with the authorization to view business content.
 
 
 
@@ -123,11 +102,6 @@ Integration developer
 </td>
 <td valign="top">
 
-AuthGroup.IntegrationDeveloper
-
-</td>
-<td valign="top">
-
 PI\_Integration\_Developer
 
 </td>
@@ -135,13 +109,17 @@ PI\_Integration\_Developer
 
 Enables an integration developer to discover, design, and deploy integration artifacts.
 
-This includes tasks like:
+This persona includes authorization to tasks like:
 
--   Execute the tasks of *PI\_Read\_Only* and *PI\_Business\_Expert* role collections.
+-   View and copy pre-shipped standard packages in the *Discover* view
 
--   Create, edit, import, export, delete package with its artifacts.
+-   Create, edit, import, export, delete package with its artifacts in the *Design* workspace.
 
 -   Deploy/undeploy integration artifacts
+
+-   View message processing details
+
+-   Create company profile, partner profile, agreement templates. Create and publish trading partner agreements
 
 
 
@@ -156,19 +134,14 @@ Tenant administrator
 </td>
 <td valign="top">
 
-AuthGroup.Administrator
-
-</td>
-<td valign="top">
-
 PI\_Administrator
 
 </td>
 <td valign="top">
 
-Enables the administrator of the tenant cluster \(also referred to as the *tenant administrator*\) to connect to a cluster and to perform administrative tasks on the cluster.
+Enables the administrator to perform administrative tasks on the tenant.
 
-This includes tasks like:
+This persona includes authorization to tasks like:
 
 -   Handling tenant level settings like transport, connection to SAP Process Orchestration systems, manage software updates, and a few more.
 
@@ -193,11 +166,6 @@ This includes tasks like:
 <td valign="top">
 
 Partner Directory configurator
-
-</td>
-<td valign="top">
-
-AuthGroup.TenantPartnerDirectoryConfigurator
 
 </td>
 <td valign="top">

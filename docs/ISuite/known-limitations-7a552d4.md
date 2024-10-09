@@ -40,7 +40,7 @@ XSLT Mapping
 </td>
 <td valign="top">
 
-Extensions aren't supported in the XSLT mapping. The recommendation is to remove all such references in your resources to avoid errors. For example, the usage of `xmlns:ext` reference.
+Extensions are not imported automatically during the migration. You must manually import them. For example, the usage of `xmlns:ext` reference.
 
 ![Example of a reference that can be removed in the XSLT mapping.](images/XSLT-mapping-limitation_91615b8.png)
 

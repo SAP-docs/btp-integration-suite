@@ -17,7 +17,7 @@ Checks to be completed before you start migrating your API Management content no
 
 ### Prerequisites for the source system
 
--   You must have a valid API Management system \(API portal and Developer Portal\) running in the Neo environment.
+-   You must have a valid API Management system \(API portal and API business hub enterprise\) running in the Neo environment.
 -   The source system must support basic authentication for API access on Integration Suite and API business hub enterprise\(which is the developer portal\).
 -   Make a note of the Integration Suite and API business hub enterprise\(developer portal\) URLs of the source system and keep it handy.
 -   You must have identified a user with the following roles assigned in your source systems:
@@ -107,7 +107,7 @@ Checks to be completed before you start migrating your API Management content no
 
     -   Create a service instance with the *AuthGroup.API.Admin* role to access theAPI business hub enterprise APIs.
 
-        To perform the above steps, see [Accessing API business hub enterprise APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD)
+        To perform the above steps, see [Accessing API business hub enterprise APIs Programmatically](../accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md).
 
 
 -   When you have API products protected by the custom roles permission in the source Neo system, ensure that custom roles creation and assignments are done in the target system within the multi-cloud foundation before starting the migration.

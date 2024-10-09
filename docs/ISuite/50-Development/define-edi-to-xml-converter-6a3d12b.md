@@ -11,7 +11,7 @@ The EDI to XML converter enables you to transform single incoming EDI messages f
 ## Prerequisites
 
 > ### Note:  
-> This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 EDI to XML Converter version 2.0 and above supports the TRADACOMS standard \(*TRADACOMS* tab; available only for dedicated service plans, see [2903776](https://me.sap.com/notes/2903776)\).
 
@@ -58,6 +58,32 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     </th>
     </tr>
     <tr>
+    <td valign="top" colspan="2">
+    
+    **General**
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Name
+    
+    </td>
+    <td valign="top">
+    
+    Enter a name for the flow step.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" colspan="2">
+    
+    **EDIFACT** 
+    
+    </td>
+    </tr>
+    <tr>
     <td valign="top">
     
     Source Encoding
@@ -65,7 +91,12 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     </td>
     <td valign="top">
     
-    Select encoding format for the incoming payload.
+    Select encoding format for the incoming payload. The following encoding formats are available:
+
+    -   UTF-8
+    -   ISO-8859-1
+
+
     
     </td>
     </tr>
@@ -113,7 +144,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     </td>
     <td valign="top">
     
-    If you select `Integration Flow` as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the conversion will take place.
+    If you select `Integration Flow` as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Choose *Add* \> *Select* to select the valid schemas against which the conversion will take place.
 
     > ### Note:  
     > -   You can add XSD files to the integration flow. For more details, please refer to [Validating Message Payload against XML Schema](validating-message-payload-against-xml-schema-360dc70.md).
@@ -133,16 +164,6 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     >     -   Second part "ORDERS" refers to the message type.
     >     -   Third part "D96A" refers to the version .
     > 
-    > -   The file name of the xml schema for **ASC-X12** should have the following format:
-    > 
-    >     `ASC-X12_810_004010.xsd`
-    > 
-    >     The file name comprises of following three parts separated by '\_':
-    > 
-    >     -   First part "ASC-X12" refers to the ASC-X12 standard with organization name. This value is fixed and cannot be customised.
-    >     -   Second part "810" refers to the message type.
-    >     -   Third part "004010" refers to the version .
-    > 
     > -   The above mentioned values should match with schema content.
     > 
     > -   During runtime only XSD’s from Integration Advisor are supported.
@@ -159,7 +180,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     </td>
     <td valign="top">
     
-    If you select `Header` as *EDI Schema Definition*, then you can see the field *HeaderName*, in *Properties* view. Enter a valid header name for the field.
+    If you select `Header` as *EDI Schema Definition*, then you can see the field *HeaderName*. Enter a valid header name for the field.
 
     > ### Note:  
     > This header name is fetched from camel header. The header is added in script element. This script element is added before converter element. You can add value for this header in the script element.
@@ -184,12 +205,108 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     
     </td>
     </tr>
+    <tr>
+    <td valign="top" colspan="2">
+    
+    **X12**
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Source Encoding
+    
+    </td>
+    <td valign="top">
+    
+    Select encoding format for the incoming payload. The following encoding formats are available:
+
+    -   UTF-8
+    -   ISO-8859-1
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    EDI Schema Definition
+    
+    </td>
+    <td valign="top">
+    
+    Select the source of schema definition. To specify the schema definition, there are the following options:
+
+    -   Integration Flow
+    -   Header
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Schemas
+    
+    </td>
+    <td valign="top">
+    
+    If you select Integration Flow as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Choose *Add* \> *Select* to select the valid schemas against which the conversion will take place.
+
+    > ### Note:  
+    > -   You can add XSD files to the integration flow. For more details, please refer to the topic *Validating Message Payload against XML Schema*, in developer's guide.
+    > -   The file name of the xml schema for ASC-X12 should have the format, *ASC-X12\_810\_004010.xsd*. It contains three parts separated by *\_*:
+    >     -   First part *ASC-X12* refers to the ASC-X12 standard with organization name. This value is fixed and cannot be customised.
+    >     -   Second part *810* refers to the message type.
+    >     -   Third part *004010* refers to the version.
+    > 
+    > -   The aforementioned values should match with the schema content.
+    > -   During runtime only XSD’s from Integration Advisor \(IA\) are supported.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Header Name
+    
+    </td>
+    <td valign="top">
+    
+    If you select Header as *EDI Schema Definition*, then you can see the field *HeaderName*. Enter a valid header name for the field.
+
+    > ### Note:  
+    > This header name is fetched from camel header. The header is added in script element. This script element is added before converter element. You can add value for this header in the script element.
+    > 
+    > For example, you can add the value, `/xsd/ASC-X12_810_004010.xsd`.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Exclude Interchange and Group envelopes
+    
+    </td>
+    <td valign="top">
+    
+    If selected the feature notifies the converter to exclude the interchange and group envelopes found in an EDI document.
+    
+    </td>
+    </tr>
     </table>
     
     **TRADACOMS**
 
     > ### Note:  
-    > This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+    > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 
     <table>

@@ -20,7 +20,7 @@ Update the credentials you've used to establish a connection between the Integra
 
     3.  Choose the *Connection* tab.
 
-    4.  Choose *Generate Credentials* under *Connect the API Portal to the centralized API Business Hub Enterprise* and *Copy* the access credentials.
+    4.  Choose *Generate Credentials* under **Connect the API Portal to the centralized API business hub enterprise** and *Copy* the access credentials.
 
 
     > ### Note:  
@@ -48,7 +48,7 @@ If you encounter one of the following situations when your connection request is
 
 ## Procedure
 
-1.  Log on to the *API Business Hub Enterprise*.
+1.  Log on to the **API business hub enterprise**.
 
 2.  Navigate to the *Enterprise Manager* \> *Manage Connections* and choose *Pending Requests*.
 

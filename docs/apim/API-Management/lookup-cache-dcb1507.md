@@ -292,5 +292,5 @@ The cache specified in the <CacheResource\> element does not exist.
 
 [Invalidate Cache](invalidate-cache-82fab59.md "The cache can be invalidated explicitly by specifying an HTTP header. When a request that contains the specified HTTP header is received, the cache will be flushed.")
 
-[Response Cache](response-cache-8df3fac.md)
+[Response Cache](response-cache-8df3fac.md "")
 

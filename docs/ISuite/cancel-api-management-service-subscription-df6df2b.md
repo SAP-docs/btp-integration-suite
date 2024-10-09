@@ -32,7 +32,7 @@ If you've enabled the API Management capability via Integration Suite, perform t
 
     The *Deactivate API Management* confirmation dialog appears.
 
-6.  Once you choose *Deactivate*, the *API Management, API Portal* and *API Management, API Business Hub Enterprise* applications are deactivated.
+6.  Once you choose *Deactivate*, the *API Management, API Portal* and **API Management, API business hub enterprise** applications are deactivated.
 
 
 **Related Information**  

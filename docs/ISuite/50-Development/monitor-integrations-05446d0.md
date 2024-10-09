@@ -25,6 +25,18 @@ Allows you to ...
 <tr>
 <td valign="top">
 
+*Monitor Status Overview* 
+
+</td>
+<td valign="top">
+
+Monitor the status overview of your messages according to your custom filters.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Monitor Message Processing* 
 
 </td>

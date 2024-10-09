@@ -6,12 +6,24 @@
 
 Get information on the components.
 
-The Component Monitor tile shows you the most important information regarding your components at a glance. Out of all components for Edge Integration Cell, the tile always shows either those components in status *Error* or the status of the top three components, *Policy Engine*, *Worker*, and *Solace* \(Message Service\) in status *Ok*.
+The *Component Monitor* tile shows you the most important information regarding your components at a glance. Out of all components for Edge Integration Cell, the tile always shows either those components in status *Error* or the status of the top three components, *Policy Engine*, *Worker*, and *Solace* \(Message Service\) in status *OK*.
 
-Click on the tile to get a details view. On the screen, you see a table with the following information:
+Choose the tile to view the full list of your deployed components and learn more about them. On the *Component Monitor* overview page, you can see a table with the following information:
 
 
 <table>
+<tr>
+<th valign="top">
+
+Field
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
 <tr>
 <td valign="top">
 
@@ -20,7 +32,7 @@ Click on the tile to get a details view. On the screen, you see a table with the
 </td>
 <td valign="top">
 
-Name of the component in alphabetical order. The color indicates the status with green indicating *Running* \(:heavy_check_mark:\) and red indicating *Error* \(<span class="SAP-icons-V5"></span> Error\).
+The name of the component \(the list is in alphabetical order\).
 
 </td>
 </tr>
@@ -32,11 +44,9 @@ Name of the component in alphabetical order. The color indicates the status with
 </td>
 <td valign="top">
 
-Status of Resources:
+The status of the component's resources: *OK*, *Error* or *Warning*
 
-Error
-
-OK
+This column shows the combined state of all pods and is calculated based on the **Ready** and **Pod Status** information. For the Status to be **OK** all pods'**Pod Status** must be **Running**, and their current value must equal the expected value in the **Ready** column.
 
 </td>
 </tr>
@@ -48,7 +58,7 @@ OK
 </td>
 <td valign="top">
 
-Technical name of the pod.
+The technical name of the pod.
 
 </td>
 </tr>
@@ -60,7 +70,9 @@ Technical name of the pod.
 </td>
 <td valign="top">
 
-Number of resources.
+The number of resources for each component.
+
+The values \(<number\> of <max. number\>\) indicate how many containers are ready in a pod out of the configured target number of containers.
 
 </td>
 </tr>
@@ -72,13 +84,22 @@ Number of resources.
 </td>
 <td valign="top">
 
-Status of Pods:
+The status of the component's recent pod events. It can be any of the following:
 
-Error
+-   *Evicted* 
 
-Running
+-   *Running*
 
-If the *Pod Status* indicates an error, select *View Pod Events* \(<span class="SAP-icons-V5"></span> View Pod Events \) to show the details of the pod events. For more information about pod events, see [https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/\#Event.](https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/#Event.) 
+-   *CrashLoopBackOff* 
+
+    *Completed* 
+
+-   *Pending*
+
+-   *Terminating*
+
+
+
 
 </td>
 </tr>
@@ -90,14 +111,20 @@ If the *Pod Status* indicates an error, select *View Pod Events* \(<span class="
 </td>
 <td valign="top">
 
-Number showing the restarts made.
+The number of times a pod has restarted after it was initialized.
+
+> ### Note:  
+> These restarts are common in Kubernetes and are nothing to worry about. However, a high number of restarts indicate that a component has a problem.
+
+
 
 </td>
 </tr>
 </table>
 
-> ### Note:  
-> For more information on runtime parameters, see: [Runtime Parameters](runtime-parameters-63c5276.md).
+If the pod status indicates an error for one of the components, you can view the specific details of the pod events. To do so, select the component in the table and the option **View Pod Events** \(<span class="SAP-icons-V5"></span> View Pod Events\) becomes available. There's no exhaustive list of all pod events, but the Kubernetes documentation provides some examples. For more information, see [https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/\#Event.](https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/#Event.) 
+
+When you select an individual component, the grayed-out option **View Runtime Parameters** also becomes available. This leads you to the screen **Runtime Parameters** \(also accessible through the **Quick Links** card in the **Operations Cockpit**\), which provides more detailed information on the runtime parameters of the selected component. For more information, see: [Runtime Parameters](runtime-parameters-63c5276.md).
 
 **Related Information**  
 
@@ -106,5 +133,5 @@ Number showing the restarts made.
 
 [Job Management](job-management-4146fa5.md "Organize and schedule your existing system jobs, such as data store entries cleanup or trace entries cleanup, or add jobs manually.")
 
-[Runtime Parameters](runtime-parameters-63c5276.md "Get information about the runtime parameters of your Edge Integration Cell.")
+[Runtime Parameters](runtime-parameters-63c5276.md "Get information about the runtime parameters of the components of your Edge Integration Cell.")
 

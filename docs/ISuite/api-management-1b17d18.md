@@ -71,7 +71,7 @@ Engage developers and partners
 </b></dt>
 <dd>
 
-API Business Hub Enterprise simplifies sharing managed APIs and collaborations with customers, partners, and developers.
+Developer Hub simplifies sharing managed APIs and collaborations with customers, partners, and developers.
 
 
 
@@ -104,7 +104,7 @@ Benefit from multitenancy support
 </b></dt>
 <dd>
 
-Use this service in tenant-aware pplications.
+Use this service in tenant-aware applications.
 
 
 

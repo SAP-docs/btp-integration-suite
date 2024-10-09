@@ -15,6 +15,8 @@ You can navigate to this dashboard from the following screens for a selected int
 -   *Memory Usage* \> *Top Integration Flows* \(see [Inspect Integration Flows By System Memory Usage](inspect-integration-flows-by-system-memory-usage-2a2e1f2.md)\)
 
 -   *Content Size* \(see [Inspect Content Size](inspect-content-size-f72b7ff.md)\)
+-   *Temporary Storage* \> *Top Integration Flows* \(see [Inspect Top Integration Flows by Storage Usage](inspect-top-integration-flows-by-storage-usage-9183e3b.md)\)
+
 
 Select the time interval for which you want to display resource consumption. If you've selected the resource type *Monitoring Storage* or *Memory Usage*, you can further filter the display by monitoring status.
 
@@ -112,11 +114,30 @@ A blue bullet represents the total count of message processing logs.
 
 The message throughput is plotted in two charts against time.
 
--   The total count of message processing logs \(MPLs\) for a given time period \(as selected with the *Time* parameter\) is plotted in a bar chart.
+-   The total count of message processing logs \(MPLs\) for a given time period iis plotted in a bar chart.
 
     The number of MPLs is identical to the number of messages processed during the selected time period.
 
 -   The maximum message size within this time period is plotted in a line chart with a green bullet.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Temporary Storage* 
+
+</td>
+<td valign="top">
+
+The total storage usage that temporary files allocate in the database against time.
+
+-   The total storage usage \(in MB\) is plotted in a bar graph against time.
+
+-   Each bar also has a bullet that indicates the size of the file that uses the maximum storage.
 
 
 

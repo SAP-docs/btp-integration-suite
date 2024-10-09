@@ -344,7 +344,7 @@ Observe the status of your B2B interchanges.
 </td>
 <td valign="top">
 
-[Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+[Update Agreements](update-agreements-b5e1fc9.md)
 
 </td>
 </tr>

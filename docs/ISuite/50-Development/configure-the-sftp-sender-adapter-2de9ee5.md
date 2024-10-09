@@ -403,12 +403,12 @@ Prevents files that are in the process of being written from being read from the
 <tr>
 <td valign="top">
 
-*Poll on one worker only* 
+*Poll on One Worker Only* 
 
 </td>
 <td valign="top">
 
-In case the integration flow is deployed on multiple runtime nodes, each worker node is connected as separate consumer to the SFTP server.
+In case the integration flow is deployed on multiple worker nodes, each worker node is connected as separate consumer to the SFTP server.
 
 When this option is selected, the polling process is performed on a single worker node at a time. This feature is important in scenarios when either the processing order of files is relevant or if you want to restrict the number of parallel connections to the SFTP server.
 
@@ -424,15 +424,7 @@ When this option is selected, the polling process is performed on a single worke
 > -   The technical communication between workers prevents processing of the same file on multiple workers.
 > 
 > 
-> Therefore, the setting of this parameter has the following impact on how the two other parameters behave at runtime:
-> 
-> -   If *Poll on one worker only* is **not** selected, before evaluating the *Sorting* setting, the system determines the maximum number of messages to be read from the SFTP server per poll \(as configured by the *Max. Messages per Poll* parameter\).
-> 
->     For example, if there are 1000 files on the SFTP server and for *Max. Messages per Poll* you've specified `500`, the SFTP adapter reads the first 500 files from the SFTP server and, after this step, sorts these files according to the Sorting settings.
-> 
->     If you don’t restrict the polling to one worker, files are processed in parallel. As consequence, you can run into a situation in which messages that are later in the sorting order can overtake other messages which are currently being processed on a different worker. This disturbs the sequence of messages.
-> 
-> -   If *Poll on one worker only* is selected, all files will first be sorted and then the messages according to the setting of parameter *Max. Messages per Poll* are selected.
+> Therefore, the setting of this parameter has the following impact on how the two other parameters behave at runtime, as explained under [Integration Flow Deployed on Multiple Worker Nodes](integration-flow-deployed-on-multiple-worker-nodes-95bb34a.md).
 
 
 
@@ -647,6 +639,54 @@ You can select one of the following idempotent repository options:
 Specifies the target directory where to move the file.
 
 Make sure that you specify a relative file path for the target directory. Note that the specified file path is defined relative to the directory specified with the *Directory* parameter. If you specify an absolute file path, it may occur that the file cannot be stored correctly at runtime. You can also specify the target directory dynamically, for example, using the timestamp of the message. The following example uses backup folders with timestamps and replaces the file extension with `bak: backup/${date:now:yyyyMMdd}/${file:name.noext}.bak`.
+
+</td>
+</tr>
+</table>
+
+Select the *Conditions* tab and provide values in the field as follows.
+
+**Conditions**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Maximum File Size
+
+</td>
+<td valign="top">
+
+This parameter allows you to configure the maximum allowed file size in megabytes \(MB\).
+
+> ### Note:  
+> This feature is supported in SFTP Sender Adapter Version 1.15 and above.
+
+The file size limit :
+
+-   Default Value: 40 MB
+
+-   Minimum Value: 0 MB
+-   Maximum Value: 2,147,483,647 MB
+
+**Polling Criteria:**
+
+File size must be less than or equal to the configured Maximum File Size. Files exceeding the maximum size will be ignored.
+
+If a file is ignored due to exceeding the Maximum File Size limit, use the Connectivity Test feature to verify the actual file size on the server. Refer to SAP Note [3519063](https://me.sap.com/notes/3519063) for more information.
 
 </td>
 </tr>

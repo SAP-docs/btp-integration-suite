@@ -10,7 +10,7 @@ Learn how to set log levels for Java-based solution components.
 
 There are different methods to set log levels depending on your requirements:
 
--   f you need to change log levels only temporarily, you can create a diagnostic task. Open *Diagnostics* through the *Quick Links* tile and create a *Custom Logging* task. You can edit the log levels of existing custom loggers or create new ones.
+-   If you need to change log levels only temporarily, you can create a diagnostic task. Open *Diagnostics* through the *Quick Links* tile and create a *Custom Logging* task. You can edit the log levels of existing custom loggers or create new ones.
 
     > ### Remember:  
     > Make sure that *Diagnostics* fulfills your requirements.

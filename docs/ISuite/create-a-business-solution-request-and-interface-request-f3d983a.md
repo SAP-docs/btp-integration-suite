@@ -173,6 +173,8 @@ Integration Assessment involves orchestration across different personas. Creatin
 
 14. After the technology selection is complete, select *Submit*. The status of the interface request changes to *Completed*.
 
+    To export the completed interface request as a PDF file, open the request and choose *Download*.
+
     > ### Note:  
     > After completing the interface request, if you want to make any changes, select the interface request and select *Reopen*. This resets the status of the request to *Technology Selection*. You can edit the technology selection by choosing *Select Technology*.
     > 

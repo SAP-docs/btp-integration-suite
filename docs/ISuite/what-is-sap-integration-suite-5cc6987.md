@@ -140,6 +140,17 @@ Manage APIs and process integration scenarios within your own private landscapes
 
 
 
+</dd><dt><b>
+
+Exchange Data Within Data Spaces 
+
+</b></dt>
+<dd>
+
+Offer, consume, and maintain data space assets with Data Space Integration.
+
+
+
 </dd>
 </dl>
 
@@ -236,6 +247,18 @@ Accelerate the development of business-oriented interfaces and mappings, generat
 <td valign="top">
 
 Manage B2B relationships with multiple trading partners through this easy-to-use user interface that helps simplify the B2B communication between trading partners.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[Data Space Integration](data-space-integration-8bb6972.md)
+
+</td>
+<td valign="top">
+
+Offer, consume, and maintain assets in a data space.
 
 </td>
 </tr>

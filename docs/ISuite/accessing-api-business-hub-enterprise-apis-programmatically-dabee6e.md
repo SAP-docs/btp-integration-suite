@@ -84,7 +84,7 @@ Create a service instance using *devportal-apiaccess* plan.
 
 1.  In your web browser, open the *SAP BTP Cockpit* - [https://account.hana.ondemand.com/cockpit](https://account.hana.ondemand.com/cockpit).
 2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
-3.  Choose *API Management, API Business Hub Enterprise* \> *Instances* \> *New Instance*.
+3.  Choose **API Management, API business hub enterprise**, *Instances* \> *New Instance*.
 4.  In the *Create Instance* dialog that opens, choose *devportal-apiaccess*.
 5.  Click *Next*.
 6.  In the section *Specify parameters*, provide the details as mentioned below, based on the role you require.
@@ -168,7 +168,7 @@ Create a service instance using *devportal-apiaccess* plan.
     >     ```
     > 
     > 
-    > **Limitation**: Self-service onboarding request is not supported for a developer. So, the POST operation under the *API Business Hub Enterprise - Registering Users* tile in the [API Business Hub](https://api.sap.com/api/DevPortal_RegisteringUsers/resource) cannot be made by the application developer service key. As an alternative, you can invoke this API using the admin service key.
+    > **Limitation**: Self-service onboarding request is not supported for a developer. So, the POST operation under the **API business hub enterprise- Registering Users** tile in the [API Business Hub](https://api.sap.com/api/DevPortal_RegisteringUsers/resource) cannot be made by the application developer service key. As an alternative, you can invoke this API using the admin service key.
 
 7.  In the section *Confirm*, enter a unique *Instance Name*, and choose *Finish*.
 
@@ -479,7 +479,7 @@ In the REST client:
 3.  Similarly, paste the *clientId* and *clientSecret* in the place of `Username` and `Password`.
 4.  Make a POST Call.
 5.  Obtain the Bearer Token from the output and copy it in a notepad.
-    -   Now, to trigger an API, in the same REST client, append the API endpoint \(obtained from the API business hub enterprise APIs that are located in the SAP API Management package of API Business Hub\) to the *url*.
+    -   Now, to trigger an API, in the same REST client, append the API endpoint \(obtained from the API business hub enterprise APIs that are located in the SAP API Management package of SAP Business Hub Acclerator\) to the *url*.
 
     -   Choose `Bearer Token` as the `Authorization` type and paste the copied Bearer Token in the specified space.
     -   Include payloads, if needed.

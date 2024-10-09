@@ -43,7 +43,7 @@ AuthGroup.API.Admin
 </td>
 <td valign="top">
 
-API Business Hub Enterprise
+API business hub enterprise
 
 </td>
 <td valign="top">

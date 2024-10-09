@@ -32,7 +32,7 @@ Create a request to connect the Integration Suite API Management tenant to the A
 
     3.  Choose the *Connection* tab.
 
-    4.  Follow the onscreen instructions under *Connect the API Portal to the centralized API Business Hub Enterprise* to generate the Integration Suite API Management tenant access credentials.
+    4.  Follow the onscreen instructions under **Connect the API Portal to the centralized API business hub enterprise** to generate the Integration Suite API Management tenant access credentials.
 
 
     > ### Note:  
@@ -71,9 +71,9 @@ To create a request to connect the Integration Suite API Management tenant to th
 
 ## Procedure
 
-1.  Log on to the *API Business Hub Enterprise*.
+1.  Log on to the **API business hub enterprise**.
 
-2.  Navigate to the *Enterprise Manager* \> *Manage Connections* and choose *Approved Requests*.
+2.  Navigate to the *Admin Center* \> *Manage Connections* and choose *Approved Requests*.
 
 3.  Choose *Add New Connection*.
 
@@ -101,7 +101,7 @@ To create a request to connect the Integration Suite API Management tenant to th
     </td>
     <td valign="top">
     
-    Enter the Integration Suite API Management tenant name that gets displayed on the API Business Hub Enterprise. This name is used to distinguish products that are published from the API portal and likewise for applications created for the product.
+    Enter the Integration Suite API Management tenant name that gets displayed on the API business hub enterprise. This name is used to distinguish products that are published from the API portal and likewise for applications created for the product.
     
     </td>
     </tr>

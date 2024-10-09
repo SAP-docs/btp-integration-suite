@@ -116,6 +116,10 @@ The following operations are supported:
 
     The response contains the major, minor, and micro ERiC version \(for example, `29.6.2`\).
 
+-   *Receive from OTTER*
+
+    Downloads objects from an object store \(OTTER\) provided by the financial authorities.
+
 -   *Validate*
 
     Validates the tax document.
@@ -197,7 +201,9 @@ Enter the referenced credential name used for proxy authentication.
 <tr>
 <td valign="top">
 
-*Data Type* 
+*Data Type*
+
+\(only available if *Validate* or *Validate and Send* is selected for *Operation*\)
 
 </td>
 <td valign="top">
@@ -213,7 +219,41 @@ You can also dynamically configure this parameter with an expression such like `
 <tr>
 <td valign="top">
 
-*Private Key Alias for Encryption* 
+*Object ID*
+
+\(only available if *Receive from OTTER* is selected for *Operation*\)
+
+</td>
+<td valign="top">
+
+ID for the object to retrieve.
+
+You can dynamically configure this parameter with an expression such like `${header.objectid}` or `${property.objectid}` to retrieve the data format dynamically at runtime.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Vendor ID*
+
+\(only available if *Receive from OTTER* is selected for *Operation*\)
+
+</td>
+<td valign="top">
+
+ID for software vendor for data retrieval.
+
+You can also dynamically configure this parameter with an expression such like `${header.vendorid}` or `${property.vendorid}` to retrieve the data format dynamically at runtime.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key Alias for Encryption*
+
+\(only available if *Validate and Send* or *Receive from OTTER* is selected for *Operation*\)
 
 </td>
 <td valign="top">
@@ -229,7 +269,9 @@ You can also dynamically configure this parameter with an expression such like `
 <tr>
 <td valign="top">
 
-*Private Key Alias for Signing* 
+*Private Key Alias for Signing*
+
+\(only available if *Validate and Send* or *Receive from OTTER* is selected for *Operation*\)
 
 </td>
 <td valign="top">

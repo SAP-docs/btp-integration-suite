@@ -45,7 +45,7 @@ If you encounter one of the following situations after the connection request ha
 
 ## Procedure
 
-1.  Log on to the *API Business Hub Enterprise*.
+1.  Log on to the **API business hub enterprise**.
 
 2.  Navigate to the *Enterprise Manager* \> *API Management Connections* and choose *Approved Requests*.
 

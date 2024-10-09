@@ -129,7 +129,7 @@ Now, with the help of the created service instance, generate a service key from 
     <tr>
     <td valign="top">
     
-    `“instance-secret”`\(without payload\)
+    "binding-secret"\(without payload\)
     
     </td>
     <td valign="top">
@@ -139,12 +139,12 @@ Now, with the help of the created service instance, generate a service key from 
     </td>
     <td valign="top">
     
-    Low
+    Medium
     
     </td>
     <td valign="top">
     
-    For instance-secret, the clientSecret generated is same for all the keys.
+    For binding-secret, the clientSecret generated for every key is unique.
     
     </td>
     <td valign="top">
@@ -167,54 +167,7 @@ Now, with the help of the created service instance, generate a service key from 
     <tr>
     <td valign="top">
     
-    `“instance-secret”`\(with payload\)
-    
-    </td>
-    <td valign="top">
-    
-    ```
-    {
-       "xsuaa":{
-          "credential-type":"instance-secret"
-       }
-    }
-    
-    ```
-
-
-    
-    </td>
-    <td valign="top">
-    
-    Low
-    
-    </td>
-    <td valign="top">
-    
-    For instance-secret, the clientSecret generated is same for all the keys.
-    
-    </td>
-    <td valign="top">
-    
-    For admin role:
-
-    ```
-    {
-        "url": "https://apiportal-application-url",
-        "tokenUrl": "https://token-enpoint-url/oauth/token",
-    	"clientId": "your-client-id",	
-    	"clientSecret": "xxxxxxxxxxxxxxxxxxxxxxx="
-    
-    ```
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `"binding-secret"` 
+    `"binding-secret"(with payload)` 
     
     </td>
     <td valign="top">

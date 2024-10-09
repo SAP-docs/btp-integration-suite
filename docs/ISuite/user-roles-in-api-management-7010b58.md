@@ -52,7 +52,7 @@ You need this role assigned to you because the client credentials, which are nec
 </td>
 <td valign="top">
 
-Use this role during the onboarding of API Portal and to get access to its settings page.
+Use this role during the onboarding of API portal and to get access to its settings page.
 
 </td>
 </tr>

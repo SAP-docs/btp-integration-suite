@@ -16,5 +16,5 @@ The *B2B Scenarios* tab allows you to manage all your B2B related transactions a
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="ba066bbe0f214056a033454a0df918de.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/c55eb4df4d8f4905aa5029e12f76d2c0.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Update Properties](update-properties-ba066bb.md "Update the Type System version in your agreements.")
 

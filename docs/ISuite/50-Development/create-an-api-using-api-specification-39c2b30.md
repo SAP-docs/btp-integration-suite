@@ -133,7 +133,7 @@ To know more about OAS 3.0 support in API Management, see [OpenAPI Specification
     </td>
     <td valign="top">
     
-    Provide an intuitive name in lowercase. Avoid usingEnter the path prefix for the API. For example, `v1/SFlight`.
+    Enter the path prefix for the API. For example, `v1/SFlight`.
     
     </td>
     </tr>

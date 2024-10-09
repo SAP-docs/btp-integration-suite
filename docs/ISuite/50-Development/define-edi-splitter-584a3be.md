@@ -13,9 +13,13 @@ Validate and split \(into multiple documents\) different inbound EDI document fo
 You use the EDI splitter to split inbound bulk EDI messages, and configure the splitter to validate and acknowledge the inbound messages. If you choose to acknowledge the EDI message, then the splitter transmits a functional acknowledgement after processing the bulk EDI message. A bulk EDI message can contain one or more EDI formats, such as EDIFACT, ODETTE, EANCOM, TRADACOMS, and ASC-X12. You can configure the EDI splitter to process different EDI formats depending on the business requirements of the trading partners.
 
 > ### Note:  
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
+> ### Note:  
+> -   Any EDIFACT message is an interchange. An interchange can have functional group, which in-turn can have messages. The EDI Splitter supports only one functional group with multiple homogeneous messages.
 > -   EDI Splitter version 1.8 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
 > -   EDI Splitter version 1.9 and above supports LS/LE segments.
-> -   Do not connect an EDI Splitter with the Gather or Join step in your integration flow. At present such combination is not supported.
+> -   Using the EDI Splitter in combination with the Gather, Join, or Aggregator steps in the integration flow is not supported.
 > -   EDI Splitter version 2.0 and above supports the TRADACOMS standard \(*TRADACOMS* tab; available only for dedicated service plans, see [2903776](https://me.sap.com/notes/2903776)\).
 
 ![](images/EDI_Splitter_e5180a1.png)
@@ -199,11 +203,13 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Transaction Mode
+
+    \(Only if *Validate* is selected as *Envelope and Message*
     
     </td>
     <td valign="top">
     
-    This feature is available only in *Envelope and Message* validation mode. The following two options are available:
+    Choose how to validate the EDI message transaction. The following two options are available:
 
     -   *Interchange*
 
@@ -267,6 +273,8 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Process Invalid Messages
+
+    \(Only if *Transaction Mode* is selected as *Mesaage*\)
     
     </td>
     <td valign="top">
@@ -345,6 +353,31 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
+    Customize Envelope
+
+    \(Only if *Create Acknowledgment* is selected anything except *Not Required*\)
+    
+    </td>
+    <td valign="top">
+    
+    You can choose either of the following options to specify the modification in the envelope of CONTRL acknowledgement message.
+
+    -   *From Incoming Payload*: It retains the same envelope format and values as the incoming payload.
+    -   *Dynamic*: Use the `SAP_EDISPLITTER_EDIFACT_CUSTOMIZE_ENVELOPE` header to set either of the values dynamically:
+        -   `fromIncomingPayload`
+        -   `overwriteWithExchangeHeaders`
+        -   `removeOptionalTrailingField`
+
+    -   *Overwrite with Exchange Headers*: The acknowledgement message is generated with all values retrieved from the exchange headers. You must provide following headers: SAP\_EDI\_CONTRL\_Service\_Code\_Directory\_Version, SAP\_EDI\_CONTRL\_Character\_Encoding, SAP\_EDI\_CONTRL\_Syntax\_Release\_Number, SAP\_EDI\_CONTRL\_Recipient\_Reference\_Password, SAP\_EDI\_CONTRL\_Recipient\_Reference\_Qualifier, SAP\_EDI\_CONTRL\_Application\_Reference, SAP\_EDI\_CONTRL\_Processing\_Priority\_Code, SAP\_EDI\_CONTRL\_Communications\_Agreement\_Id, SAP\_EDI\_CONTRL\_Test\_Indicator
+    -   *Remove Optional Trailing Field*: It will remove the additional optional fields available in the incoming payload while generatiing envelope of the acknowledgmenet message.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Interchange Number
     
     </td>
@@ -365,6 +398,8 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <td valign="top">
     
     Unique Interchange Number
+
+    \(Only if you select *Interchange Number* as *Number Range*\)
     
     </td>
     <td valign="top">
@@ -439,7 +474,8 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     **X12**
 
     > ### Note:  
-    > EDI Splitter v1.12.0 and v2.2.0 onwards support same group name with different definition in XSD.
+    > -   Any X12 message is an interchange. An interchange can have functional group, which in-turn can have transactional sets. The EDI Splitter supports only one functional group with multiple homogeneous transactional sets.
+    > -   EDI Splitter v1.12.0 and v2.2.0 onwards support same group name with different definition in XSD.
 
     ****
 
@@ -537,7 +573,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     </td>
     <td valign="top">
     
-    Follow the steps here to add an `*.xsd` file to the integration flow:
+    Follow the steps here to add an `*.xsd` file to the integration flow: You can also set this field using the header
 
     1.  In the *EDI Schema Definition**Integration Flow*.
 
@@ -546,12 +582,12 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     3.  Choose *Select* choose the schema\). to add an XML Schema file from the XSD folder found in the integration project.
 
         > ### Note:  
-        > -   During runtime only XSD’s from Integration Advisor \(IA\) are supported.
+        > -   You can also set this field using the headerDuring runtime only XSD’s from Integration Advisor \(IA\) are supported.
         > 
         > -   If you wish to remove an XSD file from the project, then select the relevant XSD file and choose *Remove*.
 
 
-    You can also set this field using the header `SAP_EDISPLITTER_X12_SCHEMA_SOURCE`. The values for the headers can be one of the following:
+    `SAP_EDISPLITTER_X12_SCHEMA_SOURCE`. The values for the headers can be one of the following:
 
     -   `Header`
     -   `IntegrationProject`
@@ -613,6 +649,29 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
+    Customize Envelope
+
+    Only if *Create Acknowledgment* is selected anything except *Not Required*,
+    
+    </td>
+    <td valign="top">
+    
+    You can choose either of the following options to specify the modification in the envelope of 997 acknowledgement message.
+
+    -   *From Incoming Payload*: It retains the same envelope format and values as the incoming payload.
+    -   *Dynamic*: Use the `SAP_EDISPLITTER_X12_CUSTOMIZE_ENVELOPE` header to set either of the values dynamically:
+        -   `fromIncomingPayload`
+        -   `overwriteWithExchangeHeaders`
+
+    -   *Overwrite with Exchange Headers*: The acknowledgement message is generated with all values retrieved from the exchange headers. You must provide `SAP_EDI_997_Usage_Indicator` header.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Interchange Number
     
     </td>
@@ -641,7 +700,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
     -   *Required*: EDI Splitter can generate a unique interchange number, which is the incremented value from the number range object and does not depend on the interchange number of the incoming payload.
     -   *Not Required*: Does not generate a unique interchange number.
-    -   *Dynamic*: You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_UNIQUE_INTERCHANGE_NUMBER`. The values for the headers can be one of the following:
+    -   *Dynamic*: You can also set this field using the header `SAP_EDISPLITTER_X12_UNIQUE_INTERCHANGE_NUMBER`. The values for the headers can be one of the following:
         -   `required`
         -   `notRequired`
 
@@ -688,7 +747,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     **TRADACOMS**
 
     > ### Note:  
-    > This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+    > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
     ****
 

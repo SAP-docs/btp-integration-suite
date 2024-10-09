@@ -42,7 +42,7 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
 
 8.  Set the format of the payload in the *Data Format* field. The supported formats of the payload are:
 
-    1.  EDI Flat File: You can use this format only for type systems ASC X12, Odette, TRADACOMS, and UN/EDIFACT and its subsets.
+    1.  EDI Flat File: You can use this format only for type systems ASC X12, Odette, TRADACOMS, and UN/EDIFACT and its subsets. For more information, refer to the blog [Direct Support of EDI Payloads](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-direct-support-of-edi-payloads/ba-p/13779418).
 
         > ### Note:  
         > The flat files might contain envelope segments outside the message structure. Integration Advisor will automatically consider the messages inside this envelope.
