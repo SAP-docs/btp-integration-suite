@@ -10,14 +10,14 @@ Learn how to set log levels for Java-based solution components.
 
 There are different methods to set log levels depending on your requirements:
 
--   If you need to change log levels only temporarily, you can create a diagnostic task. Open *Diagnostics* through the *Quick Links* tile and create a *Custom Logging* task. You can edit the log levels of existing custom loggers or create new ones.
+-   If you need to change log levels only temporarily, you can create a diagnostic task. Open *Diagnostics* through the *Quick Links* card in the Operations Cockpit and create a *Custom Logging* task. You can edit the log levels of existing custom loggers or create new ones.
 
     > ### Remember:  
     > Make sure that *Diagnostics* fulfills your requirements.
 
     For more information, see [Diagnostics](diagnostics-80f3050.md).
 
--   You can use the *Edge Nodes* tab in Edge Lifecycle Management. Perform the following procedure to set log levels in Edge Lifecycle Management:
+-   If you want to change log levels permanently of for a longer time period, you can use the *Edge Nodes* tab in Edge Lifecycle Management. Perform the following procedure to set log levels in Edge Lifecycle Management:
 
 
 

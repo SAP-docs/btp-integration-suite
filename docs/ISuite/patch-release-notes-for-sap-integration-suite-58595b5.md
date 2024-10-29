@@ -106,6 +106,8 @@ Migration Assessment
 
 Edge Integration Cell
 
+Data Space Integration
+
 </td>
 <td valign="top">
 

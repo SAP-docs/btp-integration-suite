@@ -8,7 +8,14 @@ Learn how to create heap and thread dumps.
 
 ## Context
 
-You can create heap and thread dumps using the `jcmd` tool.
+You can create heap and thread dumps either by:
+
+-   Creating a diagnostic task. Open *Diagnostics* through the *Quick Links* card in the Operations Cockpit and create a *Heap* or *Thread Dump* task.
+
+    For more information, see [Diagnostics](diagnostics-80f3050.md).
+
+-   Using the `jcmd` tool. To do so, perform the following procedure:
+
 
 
 

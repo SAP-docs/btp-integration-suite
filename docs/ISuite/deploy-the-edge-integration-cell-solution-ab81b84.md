@@ -129,18 +129,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     
     </td>
     </tr>
-    <tr>
-    <td valign="top">
-    
-    **Enable Worker based on JDK8**
-    
-    </td>
-    <td valign="top">
-    
-    By default, the *Worker* component is now based on JDK 17. In cases of compatibility issues, you can also enable the *Worker* component based on JDK 8 as a fallback.
-    
-    </td>
-    </tr>
     </table>
     
 7.  Choose *Next Step*.

@@ -92,7 +92,7 @@ Follow the procedure below to configure the integration flow.
 3.  Choose the *Receiver* tab and maintain the following:
 
     > ### Note:  
-    > You only need to maintain this tab if you have enabled dead letter queue in your agreement for the receiver interchange. To know more, see [Creating a Trading Partner Agreement](creating-a-trading-partner-agreement-9bd43c9.md).
+    > You only need to maintain this tab if you have enabled dead letter queue in your agreement for the receiver interchange. To know more, see [Trading Partner Agreement](trading-partner-agreement-9bd43c9.md).
 
     :
 

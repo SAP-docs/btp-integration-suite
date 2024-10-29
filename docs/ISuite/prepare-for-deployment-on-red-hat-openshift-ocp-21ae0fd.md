@@ -2,7 +2,10 @@
 
 # Prepare for Deployment on Red Hat OpenShift \(OCP\)
 
-OCP storage configuration depends on the underlying storage infrastructure. For information about supported storage, see [3247839](https://me.sap.com/notes/3247839), and for storage infrastructure, see [https://docs.openshift.com/container-platform/4.14/storage/index.html](https://docs.openshift.com/container-platform/4.14/storage/index.html).
+OCP storage configuration depends on the underlying storage infrastructure. For information about supported storage, see [3247839](https://me.sap.com/notes/3247839), and for storage infrastructure, see [OpenShift Container Platform storage overview](https://docs.openshift.com/container-platform/4.14/storage/index.html).
+
+> ### Note:  
+> For information about how to prepare your infrastructure for the installation of Edge Integration Cell on OpenShift, see [Installation Guidance: SAP Edge Integration Cell on OpenShift](https://access.redhat.com/articles/7085063).
 
 
 <table>

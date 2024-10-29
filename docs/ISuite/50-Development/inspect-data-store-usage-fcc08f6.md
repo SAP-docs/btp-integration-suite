@@ -25,7 +25,7 @@ The default value of the entitlement is 35 GB, as documented at [What Is SAP Clo
 
 ## Screen Components
 
-The bar chart shows the data store usage of the tenant database for a defined time period.
+The bar chart indicates the data store usage of the tenant database for a defined time period, as shown in the image below:
 
 You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*, *Past Month*, or *Custom* for a custom time interval.
 

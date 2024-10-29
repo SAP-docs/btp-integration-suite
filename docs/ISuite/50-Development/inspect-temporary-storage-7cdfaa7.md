@@ -17,7 +17,7 @@ Temporary files become especially relevant when integration flows process large 
 
 ## Screen Components
 
-The bar chart shows the total storage used by temporary files for a defined time period.
+The bar chart shows the total storage used by temporary files for a defined time period, as shown in the image below:![](images/Inspect_Temporary_Storage_f48af1c.png)
 
 You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*, *Past Month*, or *Custom* for a custom time interval.
 

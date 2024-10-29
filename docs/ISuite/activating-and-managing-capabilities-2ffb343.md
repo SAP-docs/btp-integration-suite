@@ -37,6 +37,8 @@ This topic describes how to add and activate relevant capabilities in Integratio
 
 -   Trading Partner Management
 
+-   Data Space Integration
+
 -   Integration Assessment
 
 -   Migration Assessment
@@ -96,15 +98,15 @@ This topic describes how to add and activate relevant capabilities in Integratio
     
     API Management
 
-    -   API business hub enterprise
+    -   Developer Hub
 
         > ### Note:  
-        > You can activate API business hub enterprise by selecting the checkbox.
+        > You can activate Developer Hub by selecting the checkbox.
 
         -   Graph
 
             > ### Note:  
-            > You must select API business hub enterprise to activate Graph.
+            > You must select Developer Hub to activate Graph.
 
 
 
@@ -180,6 +182,18 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <tr>
     <td valign="top">
     
+    Data Space Integration 
+    
+    </td>
+    <td valign="top">
+    
+    *Exchange Data Within Data Spaces* 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Integration Assessment
     
     </td>
@@ -225,9 +239,10 @@ This topic describes how to add and activate relevant capabilities in Integratio
 -   The API Management capability needs a few more configuration steps before activation. See [Additional Configurations for API Management](additional-configurations-for-api-management-5ac63ab.md).
 -   The Event Mesh capability needs an additional configuration step before usage. See: [Initiating the Message Broker](initiating-the-message-broker-61eb5dd.md).
 
+-   After activating Data Space Integration, continue with the additional preparatory steps. See [Preparatory Steps](preparatory-steps-95366b2.md).
 
 **Related Information**  
 
 
-[Centralized API business hub enterprise](centralized-api-business-hub-enterprise-38422de.md "The API business hub enterprise is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
+[Centralized Developer Hub](centralized-developer-hub-38422de.md "The Developer Hub is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
 

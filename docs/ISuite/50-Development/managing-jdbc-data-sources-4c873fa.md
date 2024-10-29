@@ -164,8 +164,6 @@ After you complete the above configuration, now create a JDBC data source for yo
     <td valign="top">
     
     *Database ID*
-
-    \(only available for SAP ASE Service \(Neo\), SAP HANA Service \(Neo\) databases that are managed by SAP Managed\)
     
     </td>
     <td valign="top">
@@ -178,8 +176,6 @@ After you complete the above configuration, now create a JDBC data source for yo
     <td valign="top">
     
     *Access Token*
-
-    \(only available for SAP ASE Service \(Neo\), SAP HANA Service \(Neo\) databases that are managed by SAP Managed\)
     
     </td>
     <td valign="top">

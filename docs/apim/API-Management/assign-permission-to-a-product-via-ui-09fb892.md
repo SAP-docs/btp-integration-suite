@@ -17,12 +17,12 @@ Assign permission to a product in the .
 
 ## Context
 
-Whenever you create a product or edit a draft product, permissions can be added to product. Use this procedure to grant permission to user roles for discovering and subscribing to the product in the API business hub enterprise. Only users who are assigned the required role can discover and subscribe to the product.
+Whenever you create a product or edit a draft product, permissions can be added to product. Use this procedure to grant permission to user roles for discovering and subscribing to the product in the Developer Hub. Only users who are assigned the required role can discover and subscribe to the product.
 
 > ### Note:  
-> Currently, we do not support assigning of permissions to the products defined in the remote API portals that are connected to a centralised API business hub enterprise.
+> Currently, we do not support assigning of permissions to the products defined in the remote API portals that are connected to a centralised Developer Hub.
 > 
-> \*Remote API portals are those that are not in the same subaccount as the centralised API business hub enterprise and are configured via the manage connections. For more information, [Centralized API business hub enterprise](APIM-Initial-Setup/centralized-api-business-hub-enterprise-38422de.md).
+> \*Remote API portals are those that are not in the same subaccount as the centralised Developer Hub and are configured via the manage connections. For more information, [Centralized Developer Hub](APIM-Initial-Setup/centralized-developer-hub-38422de.md).
 
 
 
@@ -36,9 +36,9 @@ Whenever you create a product or edit a draft product, permissions can be added 
 
     Here, whenever a product is created or a draft product is edited, permissions can be added to product.
 
-4.  Select a role from the *Discovery* dropdown list. Only users who are assigned the selected role can discover this product in the API business hub enterprise.
+4.  Select a role from the *Discovery* dropdown list. Only users who are assigned the selected role can discover this product in the Developer Hub.
 
-5.  Select a role from the *Subscription* dropdown list. Only users who are assigned the selected role can subscribe to this product in the API business hub enterprise.
+5.  Select a role from the *Subscription* dropdown list. Only users who are assigned the selected role can subscribe to this product in the Developer Hub.
 
     -   You can change the roles selected for *Discovery* and *Subscription* by choosing *Edit*.
 

@@ -16,7 +16,7 @@ On the homepage, you can find the list of products under various categories. You
 
 ## Procedure
 
-1.  Log on to the API business hub enterprise.
+1.  Log on to the Developer Hub.
 
 2.  You can either look for the product under various categories, or use the search bar to search for the product.
 

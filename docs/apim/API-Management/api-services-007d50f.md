@@ -33,7 +33,7 @@ You can browse through this API package for API admin services with the required
 <tr>
 <td valign="top">
 
-API business hub enterprise 
+Developer Hub 
 
 </td>
 <td valign="top">

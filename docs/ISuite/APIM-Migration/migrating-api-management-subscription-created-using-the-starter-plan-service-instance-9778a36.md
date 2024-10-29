@@ -13,7 +13,7 @@ You can choose to migrate the design-time components that you have in the Neo en
 You can also enable the new API Management design time subscription on the same multi-cloud foundation subaccount, where you have created the starter plan service instance.
 
 > ### Note:  
-> You must subscribe to the API portal and the API business hub enterprise in the same multi-cloud foundation subaccount where the starter plan instance is created.
+> You must subscribe to the API portal and the Developer Hub in the same multi-cloud foundation subaccount where the starter plan instance is created.
 > 
 > Tenant type \(for example, production and test\) of the newly onboarded API Management on the multi-cloud foundation must be same as that of the source API Management on the Neo environment.
 
@@ -92,7 +92,7 @@ You can also enable the new API Management design time subscription on the same 
 5.  Run the Tenant Cloning Tool in the SWITCHOVER stage. For more information, see [Clone API Management Content](clone-api-management-content-7abd887.md).
 
     > ### Note:  
-    > If applicable, API business hub enterprise entities are cloned in this step.
+    > If applicable, Developer Hub entities are cloned in this step.
 
 6.  After the SWITCHOVER, if you have any API Provider of the type onpremise, provide the Basic Auth password in the target system. For more information, see "API Provider Credentials" under *User Actions* in [Post Cloning Tasks](post-cloning-tasks-116d82c.md).
 

@@ -2,7 +2,7 @@
 
 # Initial Setup
 
-The two applications that are provisioned are the API portal and API business hub enterprise.
+The two applications that are provisioned are the API portal and Developer Hub.
 
 > ### Note:  
 > -   All activities in this section are performed by the tenant \(customer\) administrator.
@@ -14,7 +14,7 @@ The two applications that are provisioned are the API portal and API business hu
 This section covers the following activities:
 
 -   [Set Up API Portal Application](set-up-api-portal-application-29c281b.md)
--   [Set Up API business hub enterprise Application Using the Standalone Tile](set-up-api-business-hub-enterprise-application-using-the-standalone-tile-80c0519.md)
+-   [Set Up Developer Hub Application Using the Standalone Tile](set-up-developer-hub-application-using-the-standalone-tile-80c0519.md)
 -   [Account Members](account-members-66a7bc8.md)
 -   [User Roles in API Management](https://help.sap.com/docs/sap-api-management/sap-api-management/roles-collections-in-api-management-draft?version=Cloud)
 

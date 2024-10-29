@@ -985,6 +985,22 @@ See: [JDBC for SAP HANA Platform \(On-Premise\)](50-Development/jdbc-for-sap-han
 <tr>
 <td valign="top">
 
+*Jira*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to connect to Jira.
+
+See: [Jira Receiver Adapter](50-Development/jira-receiver-adapter-d15b560.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *JMS* 
 
 Sender adapter

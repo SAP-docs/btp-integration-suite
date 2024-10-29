@@ -522,7 +522,7 @@ To add elements and attributes while editing the data type, follow these steps:
 
 You can also delete nodes from the data type. To do so follow these steps:
 
-1.  Use the checkboxes to select the rows that you want to delete.
+1.  Use the checkboxes to select the nodes that you want to delete.
 
     > ### Note:  
     > -   You can't delete a root node.

@@ -2,9 +2,18 @@
 
 # Trading Partner Management
 
-SAP Trading Partner Management \(TPM\) is a microservice that meets the needs of your B2B data exchange such as individual definition and configuration of specific electronic exchange of business data between you and your trading partners. B2B users have different levels of requirements for data exchange starting from the different kind of communication protocols such as AS2, SFTP, etc. to the usage of different types of B2B standards or APIs. TPM helps you manage B2B relationships with multiple trading partners. The easy-to-use user interface helps you cope with the complexity of B2B communication between trading partners.
+SAP Trading Partner Management \(TPM\) is a powerful capability within Integration Suite that streamlines the management and governance of business-to-business \(B2B\) relationships, agreements, and interactions with external trading partners. TPM empowers organizations to tailor their B2B data exchange to meet specific needs, defining and configuring electronic data interchange protocols, standards, and APIs for each trading partner.
 
-TPM, just like Cloud Integration and Integration Advisor, is a capability of SAP Integration Suite. This application achieves the goal by using the entities and artifacts provided by the other capabilities of SAP Integration Suite such as:
+With TPM, organizations can accommodate diverse B2B requirements, including:
+
+-   Multiple communication protocols \(AS2, SFTP, FTP, etc.\)
+
+-   Various B2B standards \(EDI, XML, JSON, etc.\)
+-   APIs for seamless integration
+
+The intuitive user interface simplifies the complexity of B2B communication, enabling efficient management of trading partner relationships, agreements, and data exchange configurations.
+
+This application achieves the goal by using the entities and artifacts provided by the other capabilities of SAP Integration Suite such as:
 
 -   SAP Integration Advisor
 
@@ -26,5 +35,5 @@ The application helps you to:
 -   Push the auto-generated runtime artefacts of the B2B scenarios as defined in the agreements into the Partner Directory of SAP Cloud Integration. This will ensure that the B2B messages get processed individually by a single integration flow at runtime.
 -   Deploy and run integration flows to conduct end-to-end business transactions.
 
-To get started, see [Update Properties](50-Development/update-properties-ba066bb.md).
+To get started, see [B2B Scenarios](https://help.sap.com/docs/integration-suite/sap-integration-suite/b2b-scenarios).
 

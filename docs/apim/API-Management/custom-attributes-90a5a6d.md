@@ -43,7 +43,7 @@ AuthGroup.API.Admin
 </td>
 <td valign="top">
 
-API business hub enterprise
+Developer Hub
 
 </td>
 <td valign="top">
@@ -362,7 +362,7 @@ Sample payload to create a custom attribute \(application\)
         -   Request Header: Authorization:Bearer <Token for API access\>
         -   Response: bearer-token value
 
-        To know how to retrieve this token, see [Accessing API business hub enterprise APIs Programmatically](APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md).
+        To know how to retrieve this token, see [Accessing Developer Hub APIs Programmatically](APIM-Initial-Setup/accessing-developer-hub-apis-programmatically-dabee6e.md).
 
 
 
@@ -429,7 +429,7 @@ Sample payload to create a custom attribute via navigation \(application\)
     -   Request Header: Authorization:Bearer <Token for API access\>
     -   Response: bearer-token value
 
-    To know how to retrieve this token, see [Accessing API business hub enterprise APIs Programmatically](APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md).
+    To know how to retrieve this token, see [Accessing Developer Hub APIs Programmatically](APIM-Initial-Setup/accessing-developer-hub-apis-programmatically-dabee6e.md).
 
 
 > ### Sample Code:  

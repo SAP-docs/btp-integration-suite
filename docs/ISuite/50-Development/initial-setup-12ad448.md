@@ -68,13 +68,13 @@ Your global account administrator is responsible for configuring the Graph entit
 2.  On the *Activate Capabilities* dialog, under *Select Capabilities*, choose *Design, Develop, and Manage APIs* and choose *Next*.
 3.  To activate *Graph*, select the following, and choose *Next*:
 
-    1.  **Enable API business hub enterprise**
+    1.  **Enable Developer Hub**
 
     2.  *Graph*
 
 
     > ### Note:  
-    > If you have already set up API Management, choose *Edit*, and select *Graph*. You must select **Enable API business hub enterprise** to activate *Graph*.
+    > If you have already set up API Management, choose *Edit*, and select *Graph*. You must select **Enable Developer Hub** to activate *Graph*.
 
 4.  Choose *Activate* and once the status on the *Summary* changes from *In Progress* to *Active*, choose *OK*.
 
@@ -118,7 +118,7 @@ Once you enable Graph, you see all of the Graph role collections in your list.
 
 -   Graph Navigator Viewer
 
-    Graph Navigator is a tool in API business hub enterprise that developers use to inspect business data graphs. For more information, see [Graph Navigator in API business hub enterprise](graph-navigator-in-api-business-hub-enterprise-8e75d31.md).
+    Graph Navigator is a tool in Developer Hub that developers use to inspect business data graphs. For more information, see [Graph Navigator in Developer Hub](graph-navigator-in-developer-hub-8e75d31.md).
 
     To assign the *GraphNavigator.Viewer* role collection to a user with the *Graph\_Navigator\_Viewer* role, do the following:
 

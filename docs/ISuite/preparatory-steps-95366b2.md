@@ -35,7 +35,7 @@ Before you can continue with the onboarding steps that are specific to Data Spac
 
 ## Results
 
-You've enabled Beta features and are onboarded to SAP Integration Suite with Cloud Integration enabled.
+You're onboarded to SAP Integration Suite with Cloud Integration enabled.
 
 
 

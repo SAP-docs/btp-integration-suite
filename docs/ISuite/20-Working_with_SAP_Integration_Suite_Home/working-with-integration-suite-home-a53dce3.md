@@ -87,12 +87,17 @@ Tab
 </th>
 <th valign="top">
 
+Cloud Integration
+
+</th>
+<th valign="top">
+
 API Management
 
 </th>
 <th valign="top">
 
-Cloud Integration
+Event Mesh
 
 </th>
 <th valign="top">
@@ -114,12 +119,17 @@ Discover <span class="SAP-icons-V5"></span>
 </td>
 <td valign="top">
 
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Discover* \> *Integrations*
+
+</td>
+<td valign="top">
+
 <span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Discover* \> *APIs*
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Discover* \> *Integrations*
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
@@ -141,12 +151,17 @@ Design :pencil2:
 </td>
 <td valign="top">
 
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Design* \> *Integrations and APIs*
+
+</td>
+<td valign="top">
+
 <span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Design* \> *Graph*
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Design* \> *Integrations and APIs*
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
@@ -164,6 +179,11 @@ Design :pencil2:
 <td valign="top">
 
 Test <span class="SAP-icons-V5"></span>
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
@@ -195,12 +215,17 @@ Configure <span class="SAP-icons-V5"></span>
 </td>
 <td valign="top">
 
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
+
+</td>
+<td valign="top">
+
 <span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Configure* \> *APIs*
 
 </td>
 <td valign="top">
 
-<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Configure* \> *Event Mesh*
 
 </td>
 <td valign="top">
@@ -218,6 +243,11 @@ Configure <span class="SAP-icons-V5"></span>
 <td valign="top">
 
 Engage <span class="SAP-icons-V5"></span> 
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
@@ -249,12 +279,17 @@ Monitor <span class="SAP-icons-V5"></span>
 </td>
 <td valign="top">
 
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Monitor* \> *Integrations and APIs*
+
+</td>
+<td valign="top">
+
 <span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Monitor* \> *Analyze APIs*
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Monitor* \> *Integrations and APIs*
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Monitor* \> *Event Mesh*
 
 </td>
 <td valign="top">
@@ -276,12 +311,17 @@ Inspect Resource Consumption <span class="SAP-icons-V5"></span>
 </td>
 <td valign="top">
 
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> 
+
+</td>
+<td valign="top">
+
 <span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> 
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
@@ -299,6 +339,11 @@ Inspect Resource Consumption <span class="SAP-icons-V5"></span>
 <td valign="top">
 
 Monetize <span class="SAP-icons-V5"></span>
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
@@ -350,11 +395,25 @@ NA
 NA
 
 </td>
+<td valign="top">
+
+NA
+
+</td>
 </tr>
 <tr>
 <td valign="top">
 
 Settings :gear:
+
+</td>
+<td valign="top">
+
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> 
+
+*Settings* \> *Integrations*
+
+*Settings* \> *Runtime*
 
 </td>
 <td valign="top">
@@ -368,11 +427,7 @@ Settings :gear:
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> 
-
-*Settings* \> *Integrations*
-
-*Settings* \> *Runtime*
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
@@ -471,7 +526,7 @@ Built-in support. You can activate built-in support by choosing<span class="SAP-
 Explore our environment, and navigate to the following portals:
 
 -   SAP Business Accelerator Hub
--   API Business Hub Enterprise \(if you've chosen the API Management capability\)
+-   Developer Hub \(If you've activated the API Management capability and chosen Developer Hub as a sub-capability.\)
 -   BTP Cockpit
 
 

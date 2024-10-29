@@ -17,7 +17,7 @@ With the Integration Suite premium edition license available in a different suba
 > 
 > -   Analytics data can't be retained, as Advanced Analytics gets newly configured in the different subaccount. However, if you come across any analytics data from the previous subaccount, you must ignore the data and consider the analytics data after the migration task is completed.
 > 
-> -   Subscribe to the API portal and the API business hub enterprise in the other multi-cloud foundation subaccount. This is the subaccount with the Integration Suite premium edition license.
+> -   Subscribe to the API portal and the Developer Hub in the other multi-cloud foundation subaccount. This is the subaccount with the Integration Suite premium edition license.
 > 
 > -   Tenant type \(for example, production and test\) of the newly onboarded API Management on the multi-cloud foundation must be same as that of the source API Management on the Neo environment.
 > 
@@ -100,7 +100,7 @@ With the Integration Suite premium edition license available in a different suba
 5.  Run the Tenant Cloning Tool in the SWITCHOVER stage. For more information, see [Clone API Management Content](clone-api-management-content-7abd887.md).
 
     > ### Note:  
-    > If applicable, API business hub enterprise entities are cloned in this step.
+    > If applicable, Developer Hub entities are cloned in this step.
 
 6.  After the SWITCHOVER, if you have any API Provider of the type onpremise, provide the Basic Auth password in the target system. For more information, see "API Provider Credentials" under *User Actions* in [Post Cloning Tasks](post-cloning-tasks-116d82c.md).
 

@@ -148,13 +148,13 @@ For more information on role collections, see [Roles and Role Collections](https
     <tr>
     <td valign="top">
     
-    Role Collection for API business hub enterprise: *AuthGroup.SelfService.Admin*
+    Role Collection for Developer Hub: *AuthGroup.SelfService.Admin*
     
     </td>
     <td valign="top">
     
-    -   Onboard to API business hub enterprise.
-    -   Gain access to API business hub enterprise. See [Setting Up API Management Capability](50-Development/setting-up-api-management-capability-f34e86c.md)
+    -   Onboard to Developer Hub.
+    -   Gain access to Developer Hub. See [Setting Up API Management Capability](50-Development/setting-up-api-management-capability-f34e86c.md)
 
 
     
@@ -183,7 +183,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    Use the Graph Navigator in SAP API business hub enterprise to inspect business data graphs. See [Define Users](https://help.sap.com/docs/graph/initial-setup#2.-define-users-for-graph).
+    Use the Graph Navigator in SAP Developer Hub to inspect business data graphs. See [Define Users](https://help.sap.com/docs/graph/initial-setup#2.-define-users-for-graph).
     
     </td>
     </tr>
@@ -401,6 +401,100 @@ For more information on role collections, see [Roles and Role Collections](https
     <td valign="top">
     
     -   Get runtime access to the registered OData services.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="5">
+    
+    Data Space Integration
+    
+    </td>
+    <td valign="top">
+    
+    DataspaceReadOnly
+    
+    </td>
+    <td valign="top">
+    
+    -   See the assets, policies, and contract definitions that were created.
+
+    -   See the negotiated agreements.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    DataspaceConsumer
+    
+    </td>
+    <td valign="top">
+    
+    -   Initiate contract negotiations.
+
+    -   Initiate transfer of assets.
+
+    -   Use the Data Management API to request data via Data Space Integration.
+
+    -   Use the EDR Management API to request data via Data Space Integration.
+
+    -   Read the negotiated agreements.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    DataspaceProvider
+    
+    </td>
+    <td valign="top">
+    
+    -   Create assets, policies, and contract definitions.
+
+    -   See the negotiated agreements.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    DataspaceTechnicalAdmin
+    
+    </td>
+    <td valign="top">
+    
+    -   Onboard Data Space Integration to a data space.
+
+    -   Assign company policies to use cases.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    DataspaceBusinessAdmin
+    
+    </td>
+    <td valign="top">
+    
+    -   Create and edit company policies.
+
 
 
     

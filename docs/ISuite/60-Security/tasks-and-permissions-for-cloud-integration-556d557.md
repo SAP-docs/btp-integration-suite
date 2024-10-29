@@ -825,6 +825,8 @@ UserRolesEdit
 </td>
 <td valign="top">
 
+Integration Developer
+
 Tenant Administrator
 
 </td>

@@ -37,7 +37,7 @@ To add an externally managed API, you must import the API definition of an exter
 
     This API will only be listed in SAP Integration Suite, and it's lifecycle will not be managed.
 
-    In order to access externally managed APIs in the API business hub enterprise, you need to add these APIs to a product and then publish the product. For more information on how to create a product, see [Create a Product](https://help.sap.com/docs/integration-suite/sap-integration-suite/create-product?q=import%20an%20APi&version=CLOUD).
+    In order to access externally managed APIs in the Developer Hub, you need to add these APIs to a product and then publish the product. For more information on how to create a product, see [Create a Product](https://help.sap.com/docs/integration-suite/sap-integration-suite/create-product?q=import%20an%20APi&version=CLOUD).
 
     > ### Note:  
     > While you can add externally managed APIs to a product, you will not be able to include rate plans or add custom attributes for them.

@@ -16,9 +16,9 @@ The *AuthGroup.Content.Admin* role collection should be assigned to you.
 
 ## Procedure
 
-1.  Log on to the API business hub enterprise.
+1.  Log on to the Developer Hub.
 
-2.  Navigate to the *Enterprise Manager* \> *Manage* \> *Content*.
+2.  Navigate to the *Admin Center* \> *Manage* \> *Content*.
 
     A list of all business systems is displayed.
 
@@ -60,7 +60,7 @@ The *AuthGroup.Content.Admin* role collection should be assigned to you.
 **Related Information**  
 
 
-[Make APIs Available in the Catalog](make-apis-available-in-the-catalog-f148690.md "As a content administrator, make your APIs available to developers in your organization by publishing them on API business hub enterprise.")
+[Make APIs Available in the Catalog](make-apis-available-in-the-catalog-f148690.md "As a content administrator, make your APIs available to developers in your organization by publishing them on Developer Hub.")
 
 [Manage Products](manage-products-4dd3d90.md "As a content administrator, you have the ability to manage a product once it has been created.")
 

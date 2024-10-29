@@ -4,7 +4,7 @@
 
 # Manage Notifications
 
-As a site administrator you can configure notifications for providing information to the API business hub enterprise end users on any website updates, events or news items.
+As a site administrator you can configure notifications for providing information to the Developer Hub end users on any website updates, events or news items.
 
 
 
@@ -20,9 +20,9 @@ You’re assigned the *AuthGroup.Site.Admin* role. To assign the role, see [Mana
 
 ## Procedure
 
-1.  Log on to the API business hub enterprise.
+1.  Log on to the Developer Hub.
 
-2.  Choose *Enterprise Manager* \> *Notifications* from the top navigation bar.
+2.  Choose *Admin Center* \> *Notifications* from the top navigation bar.
 
 3.  Choose *Add Notification*.
 
@@ -40,7 +40,7 @@ You’re assigned the *AuthGroup.Site.Admin* role. To assign the role, see [Mana
     
     Enter a name for the notification entity.
 
-    **Example**: Experience the new design of the API business hub enterprise!
+    **Example**: Experience the new design of the Developer Hub!
     
     </td>
     </tr>
@@ -54,7 +54,7 @@ You’re assigned the *AuthGroup.Site.Admin* role. To assign the role, see [Mana
     
     Enter a description for the notification entity.
 
-    **Example**: If you’ve subscribed to API business hub enterprise as part of Integration Suite subscription , we now have a new design of the user interface for you to experience.
+    **Example**: If you’ve subscribed to Developer Hub as part of Integration Suite subscription , we now have a new design of the user interface for you to experience.
     
     </td>
     </tr>

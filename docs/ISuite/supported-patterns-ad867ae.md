@@ -51,11 +51,17 @@ For example:
 
 ## Recipient List Asynchronous
 
-Recipient list-based integration scenarios and content-based routing integration scenarios can be migrated using the pattern Recipient List Asynchronous.
+Recipient List Asynchronous pattern is used to migrate multi-casted integration pattern between a sender and multiple receiver systems via multiple routes. Based on the scenario, the migration tooling applies the Recipient List Asynchronous pattern and dynamically adds the flow steps. The pattern implements JMS queues to store the message after it is received from the sender and decouple the sender and the multiple receivers.
 
-For example, if your ICO is designed with a recipient list where the message is sent to the default receiver in case the receiver is not determined, the following pattern applies.![](images/RL_ASYNC_0003_5163d0f.png)
+SAP recommends using this pattern for conditions based scenarios where you know that more than one condition can be true at runtime. That is, multiple receivers receives the message or payload based on the conditions.
 
-If your ICO is designed with 1 router and a receiver for each router branch sending message to default receiver in case of receiver not determined, the following pattern applies. ![](images/CBR_ASYNC_0003_b742101.png)
+<a name="loio3d95082f12ad4020b2157bf8e1e88254"/>
 
-Similarly, based on other receipient list integration scenarios and content-based routing integration scenarios, the migration tooling applies the Recipient List Asynchronous pattern and dynamically adds the flow steps.
+<!-- loio3d95082f12ad4020b2157bf8e1e88254 -->
+
+## Content-Based Routing
+
+Content-Based Routing pattern is used to migrate condition-based integration scenarios where messages are routed to a single receiver. Based on the scenario, the migration tooling applies the Content-Based Routing pattern and dynamically adds the flow steps.
+
+SAP recommends using this pattern for conditions based scenarios where you know that only one of the conditions can be true at runtime. That is, only one receiver receives the message or payload.
 

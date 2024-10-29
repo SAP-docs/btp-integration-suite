@@ -315,7 +315,5 @@ You can use the credentials to establish:
 
 [Accessing API Management APIs Programmatically](accessing-api-management-apis-programmatically-24a2c37.md "The apiportal-apiaccess plan offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the SAP Business Accelerator Hub.")
 
-[Accessing API business hub enterprise APIs Programmatically](accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md "The devportal-apiaccess plan allows you to access the API business hub enterprise APIs to programmatically onboard developers, create applications, and more.")
-
 [Managing Cloud Foundry Microservices through API Management](managing-cloud-foundry-microservices-through-api-management-e609a3e.md "The apim-as-route-service plan helps you in managing Cloud Foundry applications by including policies such as rate limit, quota. The service instance you create through this plan allows you to bind to the route service and creates an API Proxy. This API Proxy serves in establishing a secure connection with your Cloud Foundry application and all the calls made to the Cloud Foundry application are routed via API Management, API portal.")
 

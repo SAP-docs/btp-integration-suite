@@ -614,5 +614,5 @@ You have now successfully created an agreement template and you can view the tem
 **Related Information**  
 
 
-[Creating a Trading Partner Agreement](creating-a-trading-partner-agreement-9bd43c9.md "A trading partner agreement is an agreement of a contract defined by two trading parties that have decided to exchange certain business data or items using a B2B scenario for fullfilling the agreed trading/business process in a given business context.")
+[Trading Partner Agreement](trading-partner-agreement-9bd43c9.md "Explore and create trading partner agreements.")
 

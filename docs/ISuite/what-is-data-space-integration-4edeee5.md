@@ -31,6 +31,8 @@ The International Data Spaces \(IDS\) initiative aims to establish a uniform sta
 > Currently, Data Space Integration supports connections to the following data spaces:
 > 
 > -   [Catena-X](https://catena-x.net)
+> 
+>     See also the [Release Notes](https://catenax-ev.github.io/release-notes) of Catena-X.
 
 
 

@@ -2,7 +2,7 @@
 
 # User Roles in API Management
 
-Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.
+Use role collections to group together different roles that can be assigned to API Portal and Developer Hub users.
 
 **API Portal Roles**
 
@@ -40,7 +40,7 @@ Use this role to access the API portal user interface \(UI\) and services, manag
 </td>
 <td valign="top">
 
-You need this role assigned to you because the client credentials, which are necessary for establishing a connection between the Integration Suite API Management tenant and API business hub enterprise, are generated for this role.
+You need this role assigned to you because the client credentials, which are necessary for establishing a connection between the Integration Suite API Management tenant and Developer Hub, are generated for this role.
 
 </td>
 </tr>
@@ -70,7 +70,7 @@ Use this role to access the API portal in read-only mode. You can view all APIs,
 </tr>
 </table>
 
-**API business hub enterprise Roles**
+**Developer Hub Roles**
 
 
 <table>
@@ -94,7 +94,7 @@ Description
 </td>
 <td valign="top">
 
-Use this role during the onboarding of API business hub enterprise and to get access to it.
+Use this role during the onboarding of Developer Hub and to get access to it.
 
 </td>
 </tr>
@@ -131,8 +131,8 @@ Use this role to:
 
 Use this role to:
 
--   Publish content to the API business hub enterprise.
--   Establish a connection from the API portal to the API business hub enterprise.
+-   Publish content to the Developer Hub.
+-   Establish a connection from the API portal to the Developer Hub.
 
 
 
@@ -148,7 +148,7 @@ Use this role to:
 
 Use this role to:
 
--   Access the API business hub enterprise.
+-   Access the Developer Hub.
 -   Create, update, and delete applications.
 -   View analytics information on application usage, performance, and error count.
 -   View and download bills for subscribed applications.
@@ -198,7 +198,7 @@ Use this role to:
 </td>
 <td valign="top">
 
-This role is necessary for creating a connection request between the Integration Suite API Management tenant and the API business hub enterprise. It's also used to update the connection request credentials.
+This role is necessary for creating a connection request between the Integration Suite API Management tenant and the Developer Hub. It's also used to update the connection request credentials.
 
 </td>
 </tr>

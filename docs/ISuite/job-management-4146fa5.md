@@ -4,18 +4,27 @@
 
 # Job Management
 
-Organize and schedule your existing system jobs, such as data store entries cleanup or trace entries cleanup, or add jobs manually.
-
-Per default, this screen shows three scheduled jobs related to the system. These are defined as *Actions*:
-
--   *Cleanup Data Store Entries*
-
--   *Cleanup Monitoring Data*
-
--   *Cleanup Trace Entries*
+Organize and schedule your existing system jobs, and add new jobs manually.
 
 
-For each of the jobs, the following information is available:
+
+<a name="loio4146fa5f2d094ea9820e82c53790fe86__section_ezf_zpb_ycc"/>
+
+## Context
+
+You can perform the following types of jobs, also refereed to as *Actions*:
+
+-   *Cleanup Data Store Entries*. Delete data store entries that have reached the retention time.
+
+-   *Cleanup Monitoring Data*. Clean up monitoring data by deleting message processing log \(MPL\) data for messages in their final state. You can also delete the aggregated data of tenants if the creation date is within the specified number of days from the command's execution date.
+
+-   *Cleanup Trace Entries*. Delete trace messages that have reached the retention time.
+
+-   *Cleanup Diagnostic Data*. Delete manually created diagnostic tasks and automatically generated heap dumps. This job also deletes empty working directories that were created by the Worker component on the shared file system but are no longer in use.
+
+Per default, *Cleanup Data Store Entries*, *Cleanup Monitoring Data*, and *Cleanup Trace Entries* are scheduled during the installation time. However, you must schedule *Cleanup Diagnostic Data* manually.
+
+The overview screen shows a list of all your existing jobs. For each of the jobs, the following information is available:
 
 **Table Overview**
 
@@ -29,7 +38,7 @@ Parameter
 </th>
 <th valign="top">
 
-Information
+Description
 
 </th>
 </tr>
@@ -41,7 +50,7 @@ Information
 </td>
 <td valign="top">
 
-Name of the system job.
+The name of the system job.
 
 </td>
 </tr>
@@ -55,7 +64,10 @@ Name of the system job.
 
 Information on which user last edited the job.
 
-Per default, `SYSTEM_USER` is set.
+> ### Note:  
+> `SYSTEM_USER` is the default user for the jobs scheduled at installation.
+
+
 
 </td>
 </tr>
@@ -67,7 +79,7 @@ Per default, `SYSTEM_USER` is set.
 </td>
 <td valign="top">
 
-Information on when this job was last edited. The format specifies date and time down to minutes.
+Information on when this job was last edited. The format specifies the date and time down to minutes.
 
 </td>
 </tr>
@@ -104,7 +116,7 @@ Information on whether or not this job has run successfully.
 </td>
 <td valign="top">
 
-Information on when this job was last executed. The format specifies date and time down to minutes.
+Information on when this job was last executed. The format specifies the date and time down to minutes.
 
 </td>
 </tr>
@@ -116,44 +128,112 @@ Information on when this job was last executed. The format specifies date and ti
 </td>
 <td valign="top">
 
-Information on when this job is to be executed next. The format specifies date and time down to minutes. The date is calculated based on defined schedule settings.
+Information on when this job is to be executed next. The format specifies the date and time down to minutes. The date is calculated based on defined schedule settings.
 
 </td>
 </tr>
 </table>
 
-For more information, for instance on the schedule pattern for each job, select one of the jobs from the list by clicking on it. A details view opens. Select *Delete* to delete an existing job. Select *Edit* to make changes to an existing job. Depending on the job, *Parameters* and / or *Schedule* can be edited. The general information, such as *Name* and *Actions*, that is, the type of job, can't be edited.
+For more information on the parameters and schedule pattern for each job, select one job from the list and the details view opens. You can choose **Delete** to delete an existing job and **Edit** to make changes to an existing job.
 
-Enter the following information for *Parameters*:
+> ### Note:  
+> Depending on the job, you can edit **Parameters** and/or **Schedule**. The general information, such as **Name** and **Actions**, can't be changed.
 
-**Parameters**
+
+
+<a name="loio4146fa5f2d094ea9820e82c53790fe86__section_nhn_dqb_ycc"/>
+
+## Procedure
+
+To add a new job, select :heavy_plus_sign: \(Add\). Depending on the **Action** you select, you need to define different parameters:
 
 
 <table>
 <tr>
+<th valign="top">
+
+*Action*
+
+</th>
+<th valign="top">
+
+*Parameters*
+
+</th>
+<th valign="top">
+
+*Description*
+
+</th>
+</tr>
+<tr>
 <td valign="top">
 
-Only available for *Cleanup Monitoring Data*
+*Cleanup Monitoring Data*
 
 </td>
 <td valign="top">
 
--   *Delete COMPLETED Message Processing Log Data Older Than \(Days\)*: Enter a number representing days.
--   *Delete Monitoring Data Older Than \(Days\)*\(mandatory\): Enter a number representing days. The default is set to `30`.
+-   *Delete Processing Log Data for Completed Messages Older Than \(Days\)*
+-   *Delete Monitoring Data Older Than \(Days\)*
 
 
+
+</td>
+<td valign="top">
+
+Enter the number of days.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Only available for *Cleanup Trace Entries*
+*Cleanup Trace Entries*
 
 </td>
 <td valign="top">
 
-*Delete Data Trace From Trace Table Older than \(Minutes\)*: Enter a number representing minutes. The default is set to `60`.
+*Delete Trace Data Older Than \(Minutes\)* 
+
+</td>
+<td valign="top">
+
+Enter the number of days. The default is set to `60`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Cleanup Data Store Entries*
+
+</td>
+<td valign="top">
+
+No parameters.
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Cleanup Diagnostic Data*
+
+</td>
+<td valign="top">
+
+*Delete Data Older Than \(Days\)* :
+
+</td>
+<td valign="top">
+
+Enter the number of days. The default is set to `30`.
 
 </td>
 </tr>
@@ -165,6 +245,18 @@ Enter the following information for *Schedule*:
 
 
 <table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
 <tr>
 <td valign="top">
 
@@ -198,9 +290,9 @@ The following options are available:
 
 The following options are available:
 
--   Fixed Time
+-   Fixed Time. The job executes at the specific time you select.
 
--   Recurrence
+-   Recurrence. The job executes regularly at the time interval you select.
 
 
 
@@ -212,37 +304,12 @@ The following options are available:
 
 *Every* 
 
-\(only available if for *Schedule Time* *Recurrence* is set\)
+\(only available if *Schedule Type* *Recurrence* is set\)
 
 </td>
 <td valign="top">
 
-The following options are available:
-
--   1 min
-
--   5 min
-
--   10 min
-
--   15 min
-
--   20 min
-
--   30 min
-
--   1 h
-
--   2 h
-
--   4 h
-
--   6 h
-
--   12 h
-
-
-
+Select a time period.
 
 </td>
 </tr>
@@ -251,7 +318,7 @@ The following options are available:
 
 *Between*
 
-\(only available if for *Schedule Time* *Recurrence* is set\)
+\(only available if *Schedule Type* *Recurrence* is set\)
 
 </td>
 <td valign="top">
@@ -265,54 +332,12 @@ Specify the hours in which this job is to run between `00:00` and `24:00`.
 
 *Schedule Time*
 
-\(only available if for *Schedule Time* *Once* is set\)
+\(only available if *Schedule Type Fixed Time* is set\)
 
 </td>
 <td valign="top">
 
-Define the time when the job is supposed to run.
-
-</td>
-</tr>
-</table>
-
-Depending on your use cases, you can add or delete jobs. To add an additional job, select :heavy_plus_sign: \(Add\). In *Create Job*, enter the following details.
-
-
-<table>
-<tr>
-<td valign="top">
-
-*Name*
-
-</td>
-<td valign="top">
-
-Enter a unique name.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Actions*
-
-</td>
-<td valign="top">
-
-Choose between:
-
--   *Cleanup Data Store Entries*
-
--   *Cleanup Monitoring Data*
-
--   *Cleanup Trace Entries*
-
-
-> ### Note:  
-> Depending on the type you choose, you have different options for *Parameters* and *Schedule*.
-
-
+Define the time when the job is to run.
 
 </td>
 </tr>
@@ -323,5 +348,5 @@ Choose between:
 
 [Operations Cockpit](operations-cockpit-ec0fc95.md "The Operations Cockpit is the central control point for operating edge integration cells and allows the Edge Integration Cell administrator to monitor and adjust system configurations and resources.")
 
-[Component Monitor](component-monitor-49f487e.md "Get information on the components.")
+[Component Monitor](component-monitor-49f487e.md "Get information on your components.")
 

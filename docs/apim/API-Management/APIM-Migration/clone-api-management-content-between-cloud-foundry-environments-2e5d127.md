@@ -107,7 +107,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
 
     Ensure that you don’t modify the name of the `apim-tct-input.json` file.
 
-    For more information on how to create the service key, refer the [Accessing API Management APIs Programmatically](../APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md) and [Accessing API business hub enterprise APIs Programmatically](../APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md).
+    For more information on how to create the service key, refer the [Accessing API Management APIs Programmatically](../APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md) and [Accessing Developer Hub APIs Programmatically](../APIM-Initial-Setup/accessing-developer-hub-apis-programmatically-dabee6e.md).
 
     **Structure of the apim-tct-input.json file:**
 
@@ -967,7 +967,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     </td>
     <td valign="top">
     
-    URL received during creation of the service key for API business hub enterprise API access for the `AuthGroup.API.Admin` role.
+    URL received during creation of the service key for Developer Hub API access for the `AuthGroup.API.Admin` role.
     
     </td>
     </tr>
@@ -999,7 +999,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     </td>
     <td valign="top">
     
-    Token url received during creation of the service key for API business hub enterprise API access for the `AuthGroup.API.Admin` role.
+    Token url received during creation of the service key for Developer Hub API access for the `AuthGroup.API.Admin` role.
     
     </td>
     </tr>
@@ -1026,7 +1026,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     </td>
     <td valign="top">
     
-    The client ID received during creation of the service key for API business hub enterprise API access for the `AuthGroup.API.Admin` role.
+    The client ID received during creation of the service key for Developer Hub API access for the `AuthGroup.API.Admin` role.
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
     
@@ -1055,7 +1055,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     </td>
     <td valign="top">
     
-    The client secret received during creation of the service key for API business hub enterprise API access for the `AuthGroup.API.Admin` role.
+    The client secret received during creation of the service key for Developer Hub API access for the `AuthGroup.API.Admin` role.
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
     
@@ -1302,8 +1302,8 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     </td>
     <td valign="top">
     
-    -   The default value for skip-devportal is false, and API business hub enterprise entities are cloned.
-    -   If you set the value for skip-devportal to true, no cloning of the API business hub enterprise entities takes place.
+    -   The default value for skip-devportal is false, and Developer Hub entities are cloned.
+    -   If you set the value for skip-devportal to true, no cloning of the Developer Hub entities takes place.
 
 
     
@@ -1459,10 +1459,10 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     > ### Remember:  
     > For the clone input attribute:
     > 
-    > -   Both skip-apiportal and skip-devportal are set to false by default, so, API portal entities are cloned first, followed by API business hub enterprise entities.
+    > -   Both skip-apiportal and skip-devportal are set to false by default, so, API portal entities are cloned first, followed by Developer Hub entities.
     > -   If both skip-apiportal and skip-devportal are set to true, no cloning takes place.
     > -   If skip-apiportal is set to false, but skip-devportal is set to true, then only the API portal entities are cloned.
-    > -   If skip-apiportal is set to true, but skip-devportal to false, then only API business hub enterprise entities are cloned and cloning for entities \(like applications\) may fail, pertaining to nonavailability of dependent entity \(like API Product\) in API business hub enterprise.
+    > -   If skip-apiportal is set to true, but skip-devportal to false, then only Developer Hub entities are cloned and cloning for entities \(like applications\) may fail, pertaining to nonavailability of dependent entity \(like API Product\) in Developer Hub.
 
     Sample configuration:
 
@@ -1476,10 +1476,10 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
     	        "clientSecret": "<clientSecret received during service key creation for API Portal's API Access for APIPortal.Administrator role>"
             },
             "devportal": {
-                "url": "<URL of Source (Cloud Foundry based) API business hub enterprise>",
-                "tokenUrl": "<token url received during service key creation for API business hub enterprise's API Access for AuthGroup.API.Admin role. For example, https://<Space name>.authentication.sap.hana.ondemand.com/oauth/token>",
-    	        "clientId": "<clientId received during service key creation for API business hub enterprise's API Access for AuthGroup.API.Admin role. For example, sb-apiaccessxxxxxxxx!xxxx|api-portal-xsuaa!bxxxx>",
-    	        "clientSecret": "<clientSecret received during service key creation for API business hub enterprise's API Access for AuthGroup.API.Admin role>"
+                "url": "<URL of Source (Cloud Foundry based) Developer Hub>",
+                "tokenUrl": "<token url received during service key creation for Developer Hub's API Access for AuthGroup.API.Admin role. For example, https://<Space name>.authentication.sap.hana.ondemand.com/oauth/token>",
+    	        "clientId": "<clientId received during service key creation for Developer Hub's API Access for AuthGroup.API.Admin role. For example, sb-apiaccessxxxxxxxx!xxxx|api-portal-xsuaa!bxxxx>",
+    	        "clientSecret": "<clientSecret received during service key creation for Developer Hub's API Access for AuthGroup.API.Admin role>"
             }
             
         },
@@ -1493,10 +1493,10 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
             },
      
             "devportal": {
-                "url": "<URL of Source (Cloud Foundry based) API business hub enterprise>",
-                "tokenUrl": "<token url received during service key creation for API business hub enterprise's API Access for AuthGroup.API.Admin role>",
-                "clientId": "<clientId received during service key creation for API business hub enterprise's API Access for AuthGroup.API.Admin role>",
-                "clientSecret": "<clientSecret received during service key creation for API business hub enterprise's API Access for AuthGroup.API.Admin role>"
+                "url": "<URL of Source (Cloud Foundry based) Developer Hub>",
+                "tokenUrl": "<token url received during service key creation for Developer Hub's API Access for AuthGroup.API.Admin role>",
+                "clientId": "<clientId received during service key creation for Developer Hub's API Access for AuthGroup.API.Admin role>",
+                "clientSecret": "<clientSecret received during service key creation for Developer Hub's API Access for AuthGroup.API.Admin role>"
             }
         },
     

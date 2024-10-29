@@ -33,6 +33,6 @@ To build an API, you need to perform the following tasks:
 4.  [Test APIs using the API Test Console](test-api-proxies-3ba6151.md).
 
     > ### Note:  
-    > In order to achieve an effortless navigation to the API business hub enterprise, choose *Navigation Links*\(![](images/Finalgrid_1a621ca.png)\) from the and select **API business hub enterprise**.
+    > In order to achieve an effortless navigation to the Developer Hub, choose *Navigation Links*\(![](images/Finalgrid_1a621ca.png)\) from the and select **Developer Hub**.
 
 

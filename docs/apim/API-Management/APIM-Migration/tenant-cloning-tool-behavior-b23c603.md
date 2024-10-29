@@ -20,7 +20,7 @@ This topic describes the behavior of the Tenant Cloning Tool with respect to clo
     To know more about API proxy states, see [API Proxy States](../api-proxy-states-091cda4.md).
 
     > ### Note:  
-    > If the Tenant Cloning Tool is used to clone an API proxy or a product with more than 100 resources attached to it, you might notice data inconsistency in the target system \(API business hub enterprise or \). It is recommended that you do not add more than 100 resources per proxy or product. For more information, see [Limits in API Management](../limits-in-api-management-f70f425.md).
+    > If the Tenant Cloning Tool is used to clone an API proxy or a product with more than 100 resources attached to it, you might notice data inconsistency in the target system \(Developer Hub or \). It is recommended that you do not add more than 100 resources per proxy or product. For more information, see [Limits in API Management](../limits-in-api-management-f70f425.md).
     > 
     > .
 

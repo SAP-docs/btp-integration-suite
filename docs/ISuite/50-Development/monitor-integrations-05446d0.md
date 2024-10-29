@@ -198,10 +198,6 @@ When you add or edit a tile, you can specify the following filter categories:
 
 [Managing PGP Keys](managing-pgp-keys-cd478a7.md "The PGP Keys monitor allows a tenant administrator to manage the public and private PGP keys.")
 
-[Managing Certificate-to-User Mappings, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/88ea2e5336d445f783c194c8d2780d35.html "The Manage Security area provides an overview of security-related artifacts. It also provides access to all certificate-to-user mappings defined for the tenant.") :arrow_upper_right:
-
-[Creating Custom Roles for Access Policies, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/18f06d4c8c5244d8927c0e2c5dc1c706.html "Create custom roles to define access policies in the Neo environment.") :arrow_upper_right:
-
 [Creating Custom Roles for Access Policies](creating-custom-roles-for-access-policies-7db3c87.md "Define a custom role to be associated with an access policy.")
 
 [Managing User Roles](managing-user-roles-4e86f0d.md "The user role monitor allows a tenant administrator to manage user roles which then can be used during inbound authorization of an integration flow execution.")
@@ -217,10 +213,6 @@ When you add or edit a tile, you can specify the following filter categories:
 [Managing Variables](managing-variables-ca93653.md "The Variables view allows you to monitor variables used in integration flows.")
 
 [Managing Number Ranges](managing-number-ranges-b6e17fa.md "The topic provides an overview of number ranges related artifacts.")
-
-[Access Logs, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d5a4113e6da14a18838898d769261512.html "The Access Logs section allows you to monitor audit logs (resulting from system changes) and to analyze errors that occurred during inbound HTTP processing (and documented in system log files).") :arrow_upper_right:
-
-[Monitoring Audit Log, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2d6031ffc1aa4af08a03f0444b979667.html "The audit log contains information on system changes. These events can be for example the deployment of an integration flow as well as a configuration change.") :arrow_upper_right:
 
 [Access Logs](access-logs-c1649cd.md "The Access Logs section allows you to monitor and to analyze errors that occurred during inbound HTTP processing (and documented in system log files)")
 

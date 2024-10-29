@@ -38,12 +38,9 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 
 1.  First, create credentials to access Data Space Integration. The service instance and key your create in this step help you retrieve the connector URL for Data Space Integration.
 
-    1.  Go to the SAP BTP cockpitand navigate to your subaccount that has SAP Integration Suite enabled. From there, go to *Cloud Foundry* \> *Spaces* \> *Your space* \> *Services* \> *Instances*.
+    1.  Go to the SAP BTP cockpit and navigate to your subaccount that has SAP Integration Suite enabled. From there, go to *Cloud Foundry* \> *Spaces* \> *Your space* \> *Services* \> *Instances*.
 
     2.  Select *Create* to create a new service instance and select `Data Space Integration API Access`. In the *Plan* field, enter `api`, and add an instance name. Then, choose *Next*.
-
-        > ### Remember:  
-        > If `Data Space Integration API Access` isn't available to you, check whether you've enabled beta features for your SAP BTP subaccount. See [Initial Setup](https://help.sap.com/viewer/fd99f220bba84308b411ea62c86ff31e/CLOUD/en-US/e8539cf283184169a71fe45be6719bff.html "Learn how to set up the Data Space Integration capability within SAP Integration Suite.") :arrow_upper_right:.
 
     3.  Next, select the applicable roles to enforce user authorization. For this specific process, any role works, even `AuthGroup_DataspaceReadOnly`. For an overview of all roles, see [Personas and Roles](https://help.sap.com/viewer/fd99f220bba84308b411ea62c86ff31e/CLOUD/en-US/bb8cd79bd90e4b70ae424d7ff3f8c1e8.html "Get an overview of the personas and roles in Data Space Integration and the tasks they can accomplish.") :arrow_upper_right:.
 

@@ -4,14 +4,62 @@
 
 The Partner Directory is a tenant-specific storage option that allows you to store information on business partners that are connected to the tenant in the context of a larger business network.
 
-You can use the information stored in the Partner Directory to parameterize integration flows. Parameterizing works in such a way that partner-specific information can be read from the Partner Directory by certain integration flow steps and processed during runtime. Partner-specific information is read from the Partner Directory at runtime based on partner-specific values contained in the incoming request or the payload of the inbound message. We also refer to this behavior as *dynamic* usage of integration flow parameters.
+The Partner Directory facilitates the management of integration scenarios encompassing communication networks with numerous partners. In these scenarios, integration flows are parameterized with partner-specific parameters that are centrally stored in the Partner Directory. At runtime, integration flows can read information from the Partner Directory, based on the partner-specific values contained in the incoming request or the payload of the inbound message. This *dynamic* usage of integration flow parameters provides the advantage of adding new partners to the network without the need to edit and redeploy any integration flow, allowing for the extension of the business partner network without any downtime of the scenario.
 
 > ### Note:  
 > Partner-specific information comprises information such as endpoints, XSLT mappings, XSD definitions, or certificates \(to mention some examples\).
 
 The Partner Directory doesn’t come with a dedicated user interface. You can access \(read/write\) its content through the OData API as well as during message processing through certain \(parameterized\) integration flow steps.
 
-Storing partner-specific information in the Partner Directory has the advantage that you can add new partners to the network without the need to edit and redeploy any integration flow. Therefore, it provides a convenient option to extend your business partner network without any downtime of your scenario.
+
+
+To display and maintain Partner Directory entries, there are the following options:
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Option
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+User interface access
+
+</td>
+<td valign="top">
+
+In the *Monitor* section, you can access the Partner Directory, display existing entries and create new ones.
+
+See: [Managing Partner Directory Entries](managing-partner-directory-entries-3d6eee7.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API access
+
+</td>
+<td valign="top">
+
+You can access \(read/write\) its content through the OData API as well as during message processing through certain \(parameterized\) integration flow steps.
+
+See: [Partner Directory](partner-directory-0fe80dc.md)
+
+</td>
+</tr>
+</table>
 
 
 

@@ -20,7 +20,7 @@ The *B2B Scenarios* tab under the *Monitor* section allows you to monitor the in
 3.  Enter a meaningful name in the *Name* field and provide a description in the *Description* field.
 4.  Choose *Save*. The custom search attribute has been created successfully.
 
-After creating your custom attribute, you need to assign these attributes to a transaction for it to reflect in the B2B monitor. To know more, see [Creating a Trading Partner Agreement](creating-a-trading-partner-agreement-9bd43c9.md).
+After creating your custom attribute, you need to assign these attributes to a transaction for it to reflect in the B2B monitor. To know more, see [Trading Partner Agreement](trading-partner-agreement-9bd43c9.md).
 
 *How are the custom search attributes consumed*
 

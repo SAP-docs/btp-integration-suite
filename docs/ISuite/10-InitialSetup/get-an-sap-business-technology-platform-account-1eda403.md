@@ -10,7 +10,7 @@ To enable SAP Integration Suite functionality, you must purchase an SAP Business
 
 ## Purchase a Customer Account
 
-A customer account is an entitlement that allows you to host the capabilities of SAP Business Technology Platform on your landscape, with round the clock [Support](../70-Support/support-6abc874.md). To purchase an account, contact an SAP sales representative or visit us on [SAP Business Technology Platform](https://www.sap.com/sea/products/business-technology-platform.html) .
+A customer account is an entitlement that allows you to host the capabilities of SAP Business Technology Platform on your landscape, with round the clock  <?sap-ot O2O class="- topic/xref " href="6abc8746df294fe4ac5877e39683dee6.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/1eda4034514f4c3aa262b112656f867f.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> . To purchase an account, contact an SAP sales representative or visit us on [SAP Business Technology Platform](https://www.sap.com/sea/products/business-technology-platform.html) .
 
 General information about SAP Integration Suite is available [here](https://www.sap.com/sea/products/integration-suite.html). Before making the purchase, you can use the estimator [tool](https://www.sap.com/products/business-technology-platform/price-list/estimator-tool.html) to derive the Pricing information for your business use case.
 

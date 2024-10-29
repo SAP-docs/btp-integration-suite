@@ -2,9 +2,9 @@
 
 # Make APIs Available in the Catalog
 
-As a content administrator, make your APIs available to developers in your organization by publishing them on API business hub enterprise.
+As a content administrator, make your APIs available to developers in your organization by publishing them on Developer Hub.
 
-The API business hub enterprise catalog acts as a centralized repository where content administrators can showcase their APIs, and provide corresponding API documentation.
+The Developer Hub catalog acts as a centralized repository where content administrators can showcase their APIs, and provide corresponding API documentation.
 
 To effectively publish an API, it is crucial to understand how to bundle them together and present them as a cohesive product. A product is essentially a collection of APIs, which includes metadata specific to your business for monitoring or analytics. For instance, you can bundle all CRM-related APIs into a CRM product. Once the required API are included in a product, it can be published to the catalog, allowing application developers to browse through and access it.
 

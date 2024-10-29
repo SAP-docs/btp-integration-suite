@@ -64,7 +64,19 @@ Your PostgreSQL database must meet certain requirements before you can set up Ed
 
 -   Server must provide a single endpoint \(host and port pair\).
 
--   Using a connection proxy for failover such as `pgBouncer`, `HAProxy`, `Pgpool-II`.
+    -   Using a connection proxy for failover such as `pgBouncer`, `HAProxy`, `Pgpool-II`.
+
+        > ### Note:  
+        > If you use `pgBouncer` as a connection proxy for PostgreSQL, the following parameters must be set:
+        > 
+        > -   pgbouncer.pool\_mode = transaction
+        > 
+        > -   pgbouncer.max\_prepared\_statements \> 0
+        > 
+        > -   pgbouncer.ignore\_startup\_parameters = extra\_float\_digits
+
+
+    -   Alternatively, in case PostgreSQL HA is deployed in K8s, the PostgreSQL K8s service should always point to the PostgreSQL read-write pod.
 
 
 The requirements are fulfilled when using cloud platform offerings like Azure Database for PostgreSQL, or Amazon RDS for PostgreSQL.

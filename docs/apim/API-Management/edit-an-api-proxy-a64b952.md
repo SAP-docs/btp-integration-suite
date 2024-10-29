@@ -8,7 +8,7 @@ Once you’ve created an API proxy you can further change the proxy, either on t
 
 ## Context
 
-When you edit an API proxy either on the or using the API designer, ensure that you save and deploy the API proxy once the changes are made. Saving the API proxy is a design time activity, the changes you've made get pushed to the runtime only when you deploy the changes. Therefore, when you choose *Save* after making the changes, the changes are saved locally and don’t get published on the API business hub enterprise. Choose *Deploy* to perform an explicit deployment to bring in the new changes in the runtime during the API proxy execution.
+When you edit an API proxy either on the or using the API designer, ensure that you save and deploy the API proxy once the changes are made. Saving the API proxy is a design time activity, the changes you've made get pushed to the runtime only when you deploy the changes. Therefore, when you choose *Save* after making the changes, the changes are saved locally and don’t get published on the Developer Hub. Choose *Deploy* to perform an explicit deployment to bring in the new changes in the runtime during the API proxy execution.
 
 Consider the following examples:
 
@@ -181,7 +181,7 @@ Consider the following examples:
     > ### Note:  
     > When you’re editing the swagger structure in the API designer, editing the same from the tabs is disabled.
 
-    If the API proxy is already in the deployed state, then saving the changes after editing the API doesn’t deploy the latest changes. Similarly, if the API proxy is already published on the API business hub enterprise, the save action doesn’t publish the latest changes. In both cases, a message appears on the *View API* page that the changes you've made aren't deployed. For the changes to reflect during API proxy runtime flow, choose *Click to Deploy* and provide your confirmation on the popup window.
+    If the API proxy is already in the deployed state, then saving the changes after editing the API doesn’t deploy the latest changes. Similarly, if the API proxy is already published on the Developer Hub, the save action doesn’t publish the latest changes. In both cases, a message appears on the *View API* page that the changes you've made aren't deployed. For the changes to reflect during API proxy runtime flow, choose *Click to Deploy* and provide your confirmation on the popup window.
 
 
 

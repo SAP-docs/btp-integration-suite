@@ -22,7 +22,7 @@ For the migration assistance, you must have an Integration Suite subscription wi
 After completing the prerequisites mentioned in the steps below, you can clone your API Management artifacts nondisruptively from the source to the target system. Post cloning, you must complete some user actions and validate your target system.
 
 > ### Note:  
-> The developer portal is renamed to API business hub enterprise within the multi-cloud foundation. In this document API business hub enterprise is referred to as developer portal even within the multi-cloud foundation.
+> The developer portal is renamed to Developer Hub within the multi-cloud foundation. In this document Developer Hub is referred to as developer portal even within the multi-cloud foundation.
 
 The steps assisting the migration of your API Management from your source system to a target system are:
 

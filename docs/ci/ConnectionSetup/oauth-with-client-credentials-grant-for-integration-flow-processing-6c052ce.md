@@ -35,7 +35,7 @@ Simply spoken, this authentication is established using the following sequent st
         > ### Tip:  
         > For a step-by-step description of how to set up this use case, check out the following tutorial:
         > 
-        > [Set Up Inbound OAuth Client Credentials Grant Authentication for Senders Calling Integration Flows with SAP-Generated Certificate](https://developers.sap.com/tutorials/btp-integration-suite-oauth-integration-flow.html)
+        > [Set Up Inbound OAuth Client Credentials Grant Authentication for Senders Calling Integration Flows with SAP-Generated Certificate](https://developers-qa-blue.wcms-nonprod.c.eu-de-2.cloud.sap/tutorials/btp-integration-suite-oauth-integration-flow.html)
 
 
 2.  Token server issues access token.

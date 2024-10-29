@@ -4,9 +4,9 @@
 
 provides monetization feature to all API providers to generate revenue for using the APIs.
 
-As an API Admin, you can create a rate plan, attach it to a product in the , and publish the product in the API business hub enterprise. You can also view bill details of each developer in the .
+As an API Admin, you can create a rate plan, attach it to a product in the , and publish the product in the Developer Hub. You can also view bill details of each developer in the .
 
-As an application developer, in the API business hub enterprise you can create an application and add products to the application. Based on the product usage, you can view the corresponding bill details.
+As an application developer, in the Developer Hub you can create an application and add products to the application. Based on the product usage, you can view the corresponding bill details.
 
 provides this feature through the following services:
 

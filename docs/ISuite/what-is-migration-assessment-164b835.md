@@ -15,24 +15,30 @@ Learn more about Migration Assessment.
 
 -   Extract data from your existing SAP Process Orchestration system
 
-    Migration is currently supported for the following versions of SAP Process Orchestration:
+    -   Supported integration scenarios:
 
-    -   7.31 SP28 and above
+        -   Integrated configurations
+        -   Dual-stack scenarios
 
-    -   7.40 SP23 and above
+    -   Supported SAP Process Orchestration system versions:
 
-    -   7.50 SP06 and above
+        -   7.31 SP28 and above
+
+        -   7.40 SP23 and above
+
+        -   7.50 SP06 and above
+
 
 
 -   Evaluate the extracted data
 
--   Estimate the potential effort of migrating your integrated configuration objects from your SAP Process Orchestration system to SAP Integration Suite
+-   Estimate the potential effort of migrating your integration scenarios objects from your SAP Process Orchestration system to SAP Integration Suite
 
 
 > ### Note:  
 > Migration Assessment focuses on the extraction and assessment of your data.
 > 
-> The actual migration tooling, which migrates your integrated configuration objects from SAP Process Orchestration to integration flows in SAP Integration Suite, is part of the Cloud Integration capability. See [Migration Tooling](migration-tooling-6061016.md).
+> The actual migration tooling, which migrates your integration scenarios objects from SAP Process Orchestration to integration flows in SAP Integration Suite, is part of the Cloud Integration capability. See [Migration Tooling](migration-tooling-6061016.md).
 
 
 

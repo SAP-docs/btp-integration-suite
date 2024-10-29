@@ -12,7 +12,7 @@ There are no hard limits for the number and duration of database transactions. H
 
 ## Screen Components
 
-The bar chart shows the maximum transaction duration of the tenant database for a defined time period.
+The bar chart shows the maximum transaction duration of the tenant database for a defined time period, as shown in the image below.![](images/Database_Transaction_Usage_ac04ede.png)
 
 You can change the displayed time period by selecting a different option in the dropdown box under **Time**. You can select **Past Day**, **Past Week**,**Past Month**, or **Custom** for a custom time interval.
 

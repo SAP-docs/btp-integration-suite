@@ -120,19 +120,17 @@ You can configure this parameter by entering a dynamic expression such like `${p
 </td>
 <td valign="top">
 
-Name of the file to be read.
+Name of the file to be read. If you do not enter a file name and the parameter remains blank, all the files in the specified directory are read. When you use an expression to include files from subdirectories, the relative path from the root directory of the user and the actual file name are evaluated. For more information, see [3529367](https://me.sap.com/notes/3529367)
 
 > ### Note:  
-> **Usage of expressions and file name patterns:**
+> For simple expressions:
 > 
-> Expressions, such as `ab*`, `a.*`, `*a*`, `*a`, `?b`, and so on, are supported.
+> -   Expressions, such as `ab*`, `a.*`, `*a*`, `*a`, `?b`, and so on, are supported.
 > 
-> -   The expression `*` replaces no character or an arbitrary number of characters.
+> -   The expression \* replaces no character or an arbitrary number of characters.
 > 
-> -   The expression `?` replaces exactly one arbitrary character.
+> -   The expression ? replaces exactly one arbitrary character.
 > 
-> 
-> When you use an expression to include files from subdirectories, the relative path from the root directory of the user and the actual file name are evaluated.
 > 
 > Examples:
 > 

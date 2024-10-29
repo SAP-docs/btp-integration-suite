@@ -2,7 +2,7 @@
 
 # Billing Service
 
-Billing service is available in both SAP Integration Suite and API business hub enterprise.
+Billing service is available in both SAP Integration Suite and Developer Hub.
 
 Using billing service, you can view the bill details and download bill details for a specific developer and for a specific month.
 
@@ -29,7 +29,7 @@ Service to view bills :
     </th>
     <th valign="top">
 
-    Required in API business hub enterprise 
+    Required in Developer Hub 
     
     </th>
     <th valign="top">
@@ -153,9 +153,9 @@ Service to view bills :
     </tr>
     </table>
     
--   You can also view the bill details in the SAP Integration Suite and API business hub enterprise. For more information see,
+-   You can also view the bill details in the SAP Integration Suite and Developer Hub. For more information see,
 
     -   [View Bill Details in the API portal](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/2378110c9b23422aa9c7b56afa5c8515.html "View bill details in theAPI portalfor all the applications and products assigned to a particular developer.") :arrow_upper_right:
-    -   [View Bill Details in the API business hub enterprise](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/4ddac6740f344f8d8260bbf2db97d950.html "View the bill details in the API business hub enterprise for all the applications subscribed by a developer.") :arrow_upper_right:
+    -   [View Bill Details in the Developer Hub](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/4ddac6740f344f8d8260bbf2db97d950.html "View the bill details in the Developer Hub for all the applications subscribed by a developer.") :arrow_upper_right:
 
 

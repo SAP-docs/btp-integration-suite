@@ -40,7 +40,7 @@ Components of API Management
 </td>
 <td valign="top">
 
-The API Management components collaborate to offer a comprehensive solution, allowing organizations to securely expose, manage, and monetize their APIs. This empowers developers to effectively build applications that utilize these APIs. It comprises of five key components: API Management Runtime, API Management Design Time, API business hub enterprise, API Analytics and API Designer. For more information, see [Components of API Management](components-of-api-management-e02ae53.md).
+The API Management components collaborate to offer a comprehensive solution, allowing organizations to securely expose, manage, and monetize their APIs. This empowers developers to effectively build applications that utilize these APIs. It comprises of five key components: API Management Runtime, API Management Design Time, Developer Hub, API Analytics and API Designer. For more information, see [Components of API Management](components-of-api-management-e02ae53.md).
 
 </td>
 </tr>

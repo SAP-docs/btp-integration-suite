@@ -10,7 +10,7 @@ You can consume Graph APIs using one of the following:
 
     A public listing of all supported entities from SAP business systems in a business data graph. You can try out theGraph APIs using the provided sandbox system.
 
--   Graph Navigator on API business hub enterprise.
+-   Graph Navigator on Developer Hub.
 
     This tool is available in Graph on the SAP Integration Suite home page. You can inspect your configured business data graphs and try them out on your own system, including custom services, model extensions, and more.
 

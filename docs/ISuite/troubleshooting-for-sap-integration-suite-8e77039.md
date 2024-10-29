@@ -8,5 +8,6 @@ In this section you will find:
 
 -   [Troubleshooting for API Management](troubleshooting-for-api-management-e765066.md)
 -   [Troubleshooting for Graph](troubleshooting-for-graph-2cfb06c.md)
+-   [Troubleshooting for Data Space Integration](troubleshooting-for-data-space-integration-166fa88.md)
 -   [Troubleshooting for Edge Integration Cell](troubleshooting-for-edge-integration-cell-816d9e4.md)
 

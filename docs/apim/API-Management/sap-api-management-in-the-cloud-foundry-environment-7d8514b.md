@@ -111,5 +111,5 @@ API Management technology helps you to share digital assets and enable developer
 
 The Cloud Foundry environment gives you the ability to subscribe to the API Management service, while you may choose a public infrastructure to run the API Management service, such as Amazon Web Services or microsoft Azure.
 
-Get started by subscribing to API portal and API business hub enterprise applications where you can create APIs and consume them. For setting up the API Portal application, see [here](APIM-Initial-Setup/set-up-api-portal-application-29c281b.md). Once the API portal is setup, see [here](APIM-Initial-Setup/set-up-api-business-hub-enterprise-application-using-the-standalone-tile-80c0519.md) to set up the API business hub enterprise application.
+Get started by subscribing to API portal and Developer Hub applications where you can create APIs and consume them. For setting up the API Portal application, see [here](APIM-Initial-Setup/set-up-api-portal-application-29c281b.md). Once the API portal is setup, see [here](APIM-Initial-Setup/set-up-developer-hub-application-using-the-standalone-tile-80c0519.md) to set up the Developer Hub application.
 

@@ -14,7 +14,7 @@ You can deactivate your API Management capability from Integration Suite to disa
 
 **Prequisite**: The *Integration\_Provisioner* role must be assigned to you.
 
-If you've enabled the API Management capability via Integration Suite, perform the following steps to cancel the API portal and the API business hub enterprise subscriptions:
+If you've enabled the API Management capability via Integration Suite, perform the following steps to cancel the API portal and the Developer Hub subscriptions:
 
 1.  Log on to SAP BTP Cockpit and navigate to your subaccount.
 
@@ -32,7 +32,7 @@ If you've enabled the API Management capability via Integration Suite, perform t
 
     The *Deactivate API Management* confirmation dialog appears.
 
-6.  Once you choose *Deactivate*, the *API Management, API Portal* and **API Management, API business hub enterprise** applications are deactivated.
+6.  Once you choose *Deactivate*, the *API Management, API Portal* and **API Management, Developer Hub** applications are deactivated.
 
 
 **Related Information**  
@@ -42,7 +42,7 @@ If you've enabled the API Management capability via Integration Suite, perform t
 
 [Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](region-specific-ip-addresses-available-for-api-management-cloud-foundry-environment-683a97c.md "API Management protects your backend services. However, API Management needs to establish connectivity to your backend services during an API call execution.")
 
-[User Roles in API Management](user-roles-in-api-management-7010b58.md "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.")
+[User Roles in API Management](user-roles-in-api-management-7010b58.md "Use role collections to group together different roles that can be assigned to API Portal and Developer Hub users.")
 
 [Setting Up API Management with SAP Cloud Identity Services](setting-up-api-management-with-sap-cloud-identity-services-1e88d9c.md "SAP Cloud Platform allows customers to connect their SAP Cloud Identity Services with the BTP offerings.")
 

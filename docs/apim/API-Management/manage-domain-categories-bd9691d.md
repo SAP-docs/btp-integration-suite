@@ -4,7 +4,7 @@
 
 # Manage Domain Categories
 
-Domain categories are displayed on the API business hub enterprise home page.
+Domain categories are displayed on the Developer Hub home page.
 
 
 
@@ -32,7 +32,7 @@ You need the following roles to create and update categories:
 Content administrators can use *Manage Content* to create domain categories and add the related products into relevant categories. They can also configure the order in which these categories and the contained products get displayed in the home page.
 
 > ### Note:  
-> If you've configured the API business hub enterprise to connect to multiple API portals then you can add products from different API portals under one category. Whereas in classic design, you can only add products from one API portal under a category.
+> If you've configured the Developer Hub to connect to multiple API portals then you can add products from different API portals under one category. Whereas in classic design, you can only add products from one API portal under a category.
 
 Use the following procedure to configure navigation categories.
 
@@ -42,9 +42,9 @@ Use the following procedure to configure navigation categories.
 
 ## Procedure
 
-1.  Log on to the **API business hub enterprise**.
+1.  Log on to the **Developer Hub**.
 
-2.  Choose *Enterprise Manager* \> *Manage Domain Categories* from the top navigation bar.
+2.  Choose *Admin Center* \> *Manage Domain Categories* from the top navigation bar.
 
 3.  To add a category, choose *Add New Domain Category*.
 

@@ -20,7 +20,7 @@ With API Management you can:
 
 -   **Transform your APIs**: Apply advance header and payload modifications.
 
--   **Developer Engagements**: API business hub enterprise is a feature-rich, themed, and customizable portal designed specifically for application developers. It provides comprehensive API documentation, code snippets, and more. With API business hub enterprise, developers can easily engage with the platform, enabling them to discover, subscribe to, and consume APIs directly.
+-   **Developer Engagements**: Developer Hub is a feature-rich, themed, and customizable portal designed specifically for application developers. It provides comprehensive API documentation, code snippets, and more. With Developer Hub, developers can easily engage with the platform, enabling them to discover, subscribe to, and consume APIs directly.
 
 
 ![](images/WhatsAPIMBlock_e136868.png)

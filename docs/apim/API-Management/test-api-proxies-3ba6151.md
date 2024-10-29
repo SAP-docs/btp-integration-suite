@@ -12,7 +12,7 @@ The API Test Console allows you to test OData and REST-based services.
 
 ## Procedure
 
-**Context**: You have logged on to the API portal or API business hub enterprise.
+**Context**: You have logged on to the API portal or Developer Hub.
 
 1.  Log on to the .
 

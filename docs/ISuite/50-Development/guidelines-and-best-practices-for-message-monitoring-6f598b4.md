@@ -13,8 +13,6 @@ To efficiently monitor message processing and analyze runtime errors, you can fo
 
 [Tracing the Execution of an Integration Flow](tracing-the-execution-of-an-integration-flow-4ec27d3.md "If you like to find out in detail how a message is processed and transformed at runtime, you can run the related integration flow with the Trace log level.")
 
-[Checking the Default Trace (in the Neo Environment)](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/69a8b9b430dc48209125ce17431635e6.html "To analyze runtime errors, you can check the default trace.") :arrow_upper_right:
-
 [Blog: Monitoring Tools for Cloud Integration capability of SAP Integration Suite](https://blogs.sap.com/2021/10/28/monitoring-tools-for-cloud-integration-capability-of-sap-integration-suite/)
 
 [Blog: Alerting for Cloud Integration, Capability of SAP Integration Suite](https://blogs.sap.com/2021/12/12/alerting-for-cloud-integration-capability-of-sap-integration-suite/)

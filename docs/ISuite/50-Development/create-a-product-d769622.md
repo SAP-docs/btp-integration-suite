@@ -46,7 +46,7 @@ You create a product when you want to expose one or more API proxies to the Appl
 5.  For the product, enter a *Name* and *Title*, provide an introductory text in the *Short Text* field, and a brief description in the *Description* field.
 
     > ### Note:  
-    > If you publish a product with a short introductory text, the short text appears on the corresponding API business hub enterprise pages. It appears on the product tiles on the API business hub enterprise landing page, and on the product details page. It also appears on the search result page for the searched products.
+    > If you publish a product with a short introductory text, the short text appears on the corresponding Developer Hub pages. It appears on the product tiles on the Developer Hub landing page, and on the product details page. It also appears on the search result page for the searched products.
     > 
     > If you leave the short text field empty, the product description is displayed instead of the short text in the product tile.
 

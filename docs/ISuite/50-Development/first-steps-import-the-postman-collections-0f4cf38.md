@@ -23,20 +23,6 @@ Description
 <tr>
 <td valign="top">
 
-*SAP Cloud Integration Tenant Parameters Postman Environment \(*Neo*\)*
-
-\(Not relevant when using SAP Integration Suite; only relevant when using SAP Cloud Integration as standalone service in the Neo environment\)
-
-</td>
-<td valign="top">
-
-You can use this Postman collection as template to set up a Postman environment to test the example integration flows \(in the Neo environment\).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *SAP Cloud Integration Tenant Parameters Postman Environment \(CF\)* 
 
 </td>

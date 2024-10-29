@@ -11,7 +11,7 @@ The *B2B Scenarios* tab allows you to manage all your B2B related transactions a
 2.  [Creating a Trading Partner Profile](creating-a-trading-partner-profile-542fb11.md)
 3.  [Creating a Communication Partner Profile](creating-a-communication-partner-profile-49a6b02.md)
 4.  [Creating an Agreement Template](creating-an-agreement-template-9692cb1.md)
-5.  [Creating a Trading Partner Agreement](creating-a-trading-partner-agreement-9bd43c9.md)
+5.  [Trading Partner Agreement](trading-partner-agreement-9bd43c9.md)
 
 **Related Information**  
 

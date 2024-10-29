@@ -343,6 +343,20 @@ A very high number of HTTP threads are currently processing requests.
 <tr>
 <td valign="top">
 
+Java Memory usage of the Worker Pod exceeds 95%
+
+</td>
+<td valign="top">
+
+The Java Memory usage of the Worker Pod is significantly high.
+
+The Java Memory limit is determined by the Worker's Runtime Parameter.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Worker has stuck artifacts
 
 </td>

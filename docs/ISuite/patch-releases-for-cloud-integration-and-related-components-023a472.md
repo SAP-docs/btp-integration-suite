@@ -12,6 +12,52 @@ The following patch release information covers the most recent changes made to t
 
 
 
+<a name="loio023a4725bb734f86be8a5625abe54110__section_gp4_42n_vcc"/>
+
+## October 2024
+
+**Software Increment: 2409**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.58.24
+
+</td>
+<td valign="top">
+
+The JDBC Adapter version 1.5 was unavailable in Camel 3x tenants due to the command version difference between the Camel 2x and 3x branches. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio023a4725bb734f86be8a5625abe54110__section_gv4_42n_vcc"/>
 
 ## September 2024

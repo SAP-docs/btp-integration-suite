@@ -217,12 +217,12 @@ API Management
 </td>
 <td valign="top">
 
-Manage external content in API business hub enterprise 
+Manage external content in Developer Hub 
 
 </td>
 <td valign="top">
 
-The new *Manage External Content* option in *Enterprise Manager* enables you to configure additional content, such as Business Data Graphs \(BDGs\), for display on the API business hub enterprise.
+The new *Manage External Content* option in *Enterprise Manager* enables you to configure additional content, such as Business Data Graphs \(BDGs\), for display on the Developer Hub.
 
 </td>
 <td valign="top">
@@ -281,12 +281,12 @@ API Management
 </td>
 <td valign="top">
 
-Deprecation of Classic Design of API business hub enterprise 
+Deprecation of Classic Design of Developer Hub 
 
 </td>
 <td valign="top">
 
-The classic design of the API business hub enterprise will be deprecated soon. Starting from March 2024, the new design of the API business hub enterprise will become the default design. However, you’ll still be able to toggle between the new and old design until June 2024 using the *Set Default Design* feature in *Site Editor*. For more information, see
+The classic design of the Developer Hub will be deprecated soon. Starting from March 2024, the new design of the Developer Hub will become the default design. However, you’ll still be able to toggle between the new and old design until June 2024 using the *Set Default Design* feature in *Site Editor*. For more information, see
 
 See: [Customize the Visual Format of the API business hub enterprise](https://help.sap.com/docs/integration-suite/sap-integration-suite/customize-visual-format-of-api-business-hub-enterprise)\(SAP API Management customers choose: [Customize the Visual Format of the API business hub enterprise](https://help.sap.com/docs/sap-api-management/sap-api-management/customize-visual-format-of-api-business-hub-enterprise)\)
 
@@ -347,14 +347,14 @@ API Management
 </td>
 <td valign="top">
 
-Auto-Registration of developers in API business hub enterprise 
+Auto-Registration of developers in Developer Hub 
 
 </td>
 <td valign="top">
 
 If the AuthGroup.API.ApplicationDeveloper role is already assigned to you by the SAP BTP admin or via the IDP Role Collection mapping, you will get automatically registered as an application developer in API business hub enterprise when you logon for the first time.
 
-See: [Register on API business hub enterprise](register-on-api-business-hub-enterprise-c85fafe.md) \(SAP API Management customers choose: [Register on API business hub enterprise](https://help.sap.com/docs/sap-api-management/sap-api-management/register-on-api-business-hub-enterprise)\)
+See: [Register on API business hub enterprise](register-on-developer-hub-c85fafe.md) \(SAP API Management customers choose: [Register on API business hub enterprise](https://help.sap.com/docs/sap-api-management/sap-api-management/register-on-api-business-hub-enterprise)\)
 
 </td>
 <td valign="top">
@@ -619,7 +619,7 @@ Certificate-based Credentials
 </td>
 <td valign="top">
 
-The connection between the centralised API business hub enterprise and the API portal has been secured with certificate-based authentication. For more information, see [Create a Connection Request for the Centralized API business hub enterprise](APIM-Initial-Setup/create-a-connection-request-for-the-centralized-api-business-hub-enterprise-c7bda8c.md).
+The connection between the centralised Developer Hub and the API portal has been secured with certificate-based authentication. For more information, see [Create a Connection Request for the Centralized Developer Hub](APIM-Initial-Setup/create-a-connection-request-for-the-centralized-developer-hub-c7bda8c.md).
 
 </td>
 <td valign="top">
@@ -872,12 +872,12 @@ API Management
 </td>
 <td valign="top">
 
-API business hub enterprise: Add Links and Email Addresses Using Markdown
+Developer Hub: Add Links and Email Addresses Using Markdown
 
 </td>
 <td valign="top">
 
-You can use markdown to add links and email addresses to the title and subtitle fields as part of the banner description in *Site Editor*. For more information, see [Customize the Visual Format of the API business hub enterprise](customize-the-visual-format-of-the-api-business-hub-enterprise-2eacd52.md).
+You can use markdown to add links and email addresses to the title and subtitle fields as part of the banner description in *Site Editor*. For more information, see [Customize the Visual Format of the Developer Hub](customize-the-visual-format-of-the-developer-hub-2eacd52.md).
 
 </td>
 <td valign="top">
@@ -1069,7 +1069,7 @@ Secure options to consume APIs
 </td>
 <td valign="top">
 
-We have introduced secure options to consume APIs using the API Access Plan for API portal, API business hub enterprise and on-premise connectivity. You can now create service keys with credential types "binding- secret", "instance- secret" and "x509". For more information, see [Accessing API Management APIs Programmatically](APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md), [Accessing API business hub enterprise APIs Programmatically](APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md) and [Accessing On-Premise Systems through API Management](APIM-Initial-Setup/accessing-on-premise-systems-through-api-management-2fc7a5b.md).
+We have introduced secure options to consume APIs using the API Access Plan for API portal, API business hub enterprise and on-premise connectivity. You can now create service keys with credential types "binding- secret", "instance- secret" and "x509". For more information, see [Accessing API Management APIs Programmatically](APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md), [Accessing Developer Hub APIs Programmatically](APIM-Initial-Setup/accessing-developer-hub-apis-programmatically-dabee6e.md) and [Accessing On-Premise Systems through API Management](APIM-Initial-Setup/accessing-on-premise-systems-through-api-management-2fc7a5b.md).
 
 </td>
 <td valign="top">
@@ -1133,7 +1133,7 @@ Short text field in API products.
 </td>
 <td valign="top">
 
-In the API portal, a new *Short Text* field is now available for products. You can use this field to add an introductory text to your products. When you add the introductory text in this field and publish the product, this short text appears in the product tile on the corresponding API business hub enterprise page and is also available on the API proxy details page. For more information, see [Create a Product](create-a-product-d769622.md).
+In the API portal, a new *Short Text* field is now available for products. You can use this field to add an introductory text to your products. When you add the introductory text in this field and publish the product, this short text appears in the product tile on the corresponding Developer Hub page and is also available on the API proxy details page. For more information, see [Create a Product](create-a-product-d769622.md).
 
 </td>
 <td valign="top">
@@ -1192,7 +1192,7 @@ API Management
 </td>
 <td valign="top">
 
-API business hub enterprise \[New Design\] and \[Classic Design\]
+Developer Hub \[New Design\] and \[Classic Design\]
 
 </td>
 <td valign="top">
@@ -1256,12 +1256,12 @@ API Management
 </td>
 <td valign="top">
 
-API business hub enterprise 
+Developer Hub 
 
 </td>
 <td valign="top">
 
-\[New DesignThe Manage options \(for example Manage Users, Manage Domain\] Categories, and so on\) on the API business hub enterprise \[New Design\] header are now listed under *\[New DesignEnterprise Manager*. Based on the roles assigned to the users, these options will appear under the *Enterprise Manager* tab. For more information, see [Manage Domain Categories](manage-domain-categories-bd9691d.md).
+\[New DesignThe Manage options \(for example Manage Users, Manage Domain\] Categories, and so on\) on the Developer Hub \[New Design\] header are now listed under *\[New DesignEnterprise Manager*. Based on the roles assigned to the users, these options will appear under the *Enterprise Manager* tab. For more information, see [Manage Domain Categories](manage-domain-categories-bd9691d.md).
 
 </td>
 <td valign="top">
@@ -1320,12 +1320,12 @@ API Management
 </td>
 <td valign="top">
 
-API business hub enterprise \[New Design\]
+Developer Hub \[New Design\]
 
 </td>
 <td valign="top">
 
-You can now configure notifications for providing information to the API business hub enterprise end users on any website updates, events or news items from the API business hub enterprise new user interface. For more information, see [Manage Notifications](manage-notifications-df32457.md).
+You can now configure notifications for providing information to the Developer Hub end users on any website updates, events or news items from the Developer Hub new user interface. For more information, see [Manage Notifications](manage-notifications-df32457.md).
 
 </td>
 <td valign="top">
@@ -1384,7 +1384,7 @@ API Management
 </td>
 <td valign="top">
 
-API business hub enterprise 
+Developer Hub 
 
 </td>
 <td valign="top">

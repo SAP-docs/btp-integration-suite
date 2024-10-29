@@ -431,11 +431,11 @@ The following issues have been identified:
 
 -   In the event of an onboarding failure after successfully creating a keystore for opproxy, the same step was being executed again.
 
--   When navigating to product details from the product list in the Application details page, particularly when the product has a different name and title in API business hub enterprise the following issues were observed:
+-   When navigating to product details from the product list in the Application details page, particularly when the product has a different name and title in Developer Hub the following issues were observed:
 
     -   Users are unable to navigate to the product details from the product list if the product has a different name and title.
 
-    -   The APIProduct uses the name as the primary key in API business hub enterprise, but the Application details page uses the title to navigate, which resulted in an error.
+    -   The APIProduct uses the name as the primary key in Developer Hub, but the Application details page uses the title to navigate, which resulted in an error.
 
 
 -   The rate limiting for the SAP PKI Certificate Service on all Public & Private Cloud landscapes went live on November 16, 2023, according to the certificate service team. So adjustments need to be made to accommodate the rate limiting.

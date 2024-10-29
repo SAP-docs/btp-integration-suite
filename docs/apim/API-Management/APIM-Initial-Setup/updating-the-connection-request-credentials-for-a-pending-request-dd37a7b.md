@@ -2,7 +2,7 @@
 
 # Updating the Connection Request Credentials for a Pending Request
 
-Update the credentials you've used to establish a connection between the Integration Suite API Management tenant and the API business hub enterprise.
+Update the credentials you've used to establish a connection between the Integration Suite API Management tenant and the Developer Hub.
 
 
 
@@ -20,7 +20,7 @@ Update the credentials you've used to establish a connection between the Integra
 
     3.  Choose the *Connection* tab.
 
-    4.  Choose *Generate Credentials* under **Connect the API Portal to the centralized API business hub enterprise** and *Copy* the access credentials.
+    4.  Choose *Generate Credentials* under **Connect the API Portal to the centralized Developer Hub** and *Copy* the access credentials.
 
 
     > ### Note:  
@@ -48,9 +48,9 @@ If you encounter one of the following situations when your connection request is
 
 ## Procedure
 
-1.  Log on to the **API business hub enterprise**.
+1.  Log on to the **Developer Hub**.
 
-2.  Navigate to the *Enterprise Manager* \> *Manage Connections* and choose *Pending Requests*.
+2.  Navigate to the *Admin Center* \> *Manage Connections* and choose *Pending Requests*.
 
 3.  Go to the *Actions* column of the connection request that you want to edit and choose *Edit Credentials*.
 

@@ -14,6 +14,16 @@ Subscribe to the SAP Integration Suitein SAP BTP cockpit and assign the Integrat
 
 -   You’ve created a subaccount in your assigned global account using the SAP BTP cockpit and added the desired service plans for Integration Suite to the subaccount. For more information on service plans, see [SAP Discovery Center - Integration Suite](https://discovery-center.cloud.sap/serviceCatalog/integration-suite?region=all).
 
+-   If you want to use Integration Suite with the **Starter** service plan, additionally assign the entitlement *integration\_flows* to your subaccount. This entitlement along with the appropriate quota assignment is a prerequiste to create custom integration flows. For more information about the service plans, see SAP Note [2903776](https://me.sap.com/notes/2903776).
+
+    > ### Note:  
+    > If you are unable to assign the *integration\_flows* entitlement, contact the administrator of your subaccount or global account.
+
+
+> ### Tip:  
+> We recommend you clear your browser cookies and cache after subscribing to the application and assigning roles. If you still can't access the application with the correct roles, log out and log back in to resolve the issue.
+
+You can watch a short video to learn about subscribing and configuring initial access here: 
 
 
 

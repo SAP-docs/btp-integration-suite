@@ -20,7 +20,7 @@ You are an API administrator and the role *AuthGroup.API.Admin* is assigned to y
 
 ## Context
 
-As an API administrator, you use this procedure to revoke an application developer's access for using the API business hub enterprise.
+As an API administrator, you use this procedure to revoke an application developer's access for using the Developer Hub.
 
 
 
@@ -28,9 +28,9 @@ As an API administrator, you use this procedure to revoke an application develop
 
 ## Procedure
 
-1.  Log on to the **API business hub enterprise**.
+1.  Log on to the **Developer Hub**.
 
-2.  Choose *Enterprise Manager* \> *Manage Users* \> *Registered Users*.
+2.  Choose *Admin Center* \> *Manage Users* \> *Registered Users*.
 
 3.  From the list of application developers, select the application developer whose access you want to revoke and choose the <span class="SAP-icons-V5"></span> Revoke Usericon under the *Actions* column.
 
@@ -46,5 +46,5 @@ As an API administrator, you use this procedure to revoke an application develop
 
 ## Results
 
-You have revoked the access of the user from using API business hub enterprise successfully.
+You have revoked the access of the user from using Developer Hub successfully.
 

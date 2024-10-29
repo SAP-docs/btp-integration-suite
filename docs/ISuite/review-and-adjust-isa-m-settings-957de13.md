@@ -434,7 +434,7 @@ Use this kind of questionnaire to guide the user through the creation of a busin
 
 The Content Life Cycle update gives you the ability to incorporate relevant changes to the latest standard content, delivered by SAP, into your existing SAP standard content. You can select/deselect the listed updates based on your requirements and apply them as the latest version of your dataset.
 
-See: [Content Life Cycle](content-life-cycle-06581f4.md)
+See: [Update Content Maintained by SAP](update-content-maintained-by-sap-06581f4.md)
 
 **Related Information**  
 

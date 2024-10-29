@@ -2,7 +2,7 @@
 
 # Managing the Access Request of the Users
 
-As an API administrator, you can approve or reject the access request made by an application developer to use the API business hub enterprise.
+As an API administrator, you can approve or reject the access request made by an application developer to use the Developer Hub.
 
 
 
@@ -18,11 +18,11 @@ You’re assigned the *AuthGroup.API.Admin* role.
 
 ## Procedure
 
-1.  Log on to the **API business hub enterprise**.
+1.  Log on to the **Developer Hub**.
 
     Use the *Manage Users* page to approve or reject the developer's registration requests and manage the roles of the registered users. For assigning roles to the users, use the SAP BTP Cockpit.
 
-2.  Choose *Enterprise Manager* \> *Manage Users* \> *E-mail Configuration* and add the administrator’s email in the *E-mail Configuration* textbox.
+2.  Choose *Admin Center* \> *Manage Users* \> *E-mail Configuration* and add the administrator’s email in the *E-mail Configuration* textbox.
 
     The administrator receives email notification of the pending developer registration requests on this email id. Also, the e-mail notifications to the developers or users are sent from this e-mail id.
 
@@ -31,7 +31,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
 
 3.  To view the pending requests, navigate to *Manage Users* \> *New Requests*.
 
-4.  Look for the request and choose *Accept Request* from the *Actions* coulmn. The application developer can now access the API business hub enterprise.
+4.  Look for the request and choose *Accept Request* from the *Actions* coulmn. The application developer can now access the Developer Hub.
 
     > ### Note:  
     > The user will be added to all the IDPs configured in the sub-account, along with the *ApplicationDeveloper* role.
@@ -47,7 +47,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
     -   Register a new user by choosing *Add User*.
 
         > ### Note:  
-        > A user must be onboarded to API business hub enterprise only via Self-registration or **Add User** flow.
+        > A user must be onboarded to Developer Hub only via Self-registration or **Add User** flow.
 
         In the *Add User* dialog:
 
@@ -77,7 +77,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
             </td>
             <td valign="top">
             
-            Manages user registration. Create and delete applications on behalf of application developers. In addition, create custom attributes and import the app key.
+            Manages user registration. Creates and deletes applications on behalf of application developers. In addition, creates custom attributes and imports the app key.
             
             </td>
             </tr>
@@ -89,7 +89,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
             </td>
             <td valign="top">
             
-            Create applications and check billing and metering data. Test APIs and view analytics data.
+            Creates applications and checks billing and metering data, tests APIs, and views analytics data.
             
             </td>
             </tr>
@@ -101,7 +101,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
             </td>
             <td valign="top">
             
-            Configure updates, and perform portal changes like uploading the logo, changing the name and the description, and changing the footer links for the site.
+            Configures, updates, and performs portal changes such as uploading the logo, changing the name and description, and modifying the footer links for the site.
             
             </td>
             </tr>
@@ -113,7 +113,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
             </td>
             <td valign="top">
             
-            Manages content categories.
+            Creates products that include APIs from different business systems and manages the content that application developers can view in the catalog.
             
             </td>
             </tr>

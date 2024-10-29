@@ -502,7 +502,7 @@ Last Version \(if discontinued\)
 <tr>
 <td valign="top">
 
-111 - Individual Insurance Policy and Client Information
+ 
 
 </td>
 <td valign="top">
@@ -553,7 +553,7 @@ Last Version \(if discontinued\)
 <tr>
 <td valign="top">
 
-114 - Air Shipment Status Message
+114 - Air Shipment Status Message111 - Individual Insurance Policy and Client Information
 
 </td>
 <td valign="top">
@@ -723,7 +723,7 @@ Last Version \(if discontinued\)
 <tr>
 <td valign="top">
 
-131 - Student Educational Record \(Transcript\) Acknowledgment
+111 - Individual Insurance Policy and Client131 - Student Educational Record \(Transcript\) Acknowledgment
 
 </td>
 <td valign="top">
@@ -5854,6 +5854,28 @@ Last Version \(if discontinued\)
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Envelope – Envelope with Functional Groups of Messages
+
+> ### Note:  
+> This message is applicable for all automotive EDIFACTS \(JAIF/VDA/Odette\).
+
+
+
+</td>
+<td valign="top">
+
+002001
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
 </table>
 
 
@@ -7602,6 +7624,66 @@ ENTREC - Accounting entries message
 <td valign="top">
 
 D.98A S3
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EnvelopeForMessagesS3 – Envelope for Messages \(Syntax Versions 1/2/3\)
+
+> ### Note:  
+> This message is specifically designed to capture and define the envelope structure.
+> 
+> This message is applicable for all automotive EDIFACTS \(JAIF/VDA/Odette\).
+
+
+
+</td>
+<td valign="top">
+
+-   UN/EDIFACT: 92.1 S3
+-   JAIF: D.03A S3
+
+-   VDA: D.96A S3
+-   Odette: D.96A
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EnvelopeWithFunctionalGroupsS3 – Envelope with Functional Groups of Messages \(Syntax Versions 1/2/3\)
+
+> ### Note:  
+> This message is specifically designed to capture and define the envelope structure.
+> 
+> This message is applicable for all automotive EDIFACTS \(JAIF/VDA/Odette\).
+
+
+
+</td>
+<td valign="top">
+
+-   UN/EDIFACT: 92.1 S3
+-   JAIF: D.03A S3
+
+-   VDA: D.96A S3
+-   Odette: D.96A
+
+
 
 </td>
 <td valign="top">
@@ -9735,6 +9817,13 @@ Message Type
 <tr>
 <td valign="top">
 
+AVIEXP:3 - Despatch Advice \(Version 3\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 AVIEXP:4 - Despatch Advice
 
 </td>
@@ -9806,6 +9895,18 @@ ENGDAT:1 - Engineering Data Message
 <td valign="top">
 
 ENQIRY:2 - Enquiry
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EnvelopeForMessagesS3 - Envelope for Messages \(Syntax Versions 1/2/3\)
+
+> ### Note:  
+> This message is specifically designed to capture and define the envelope structure.
+
+
 
 </td>
 </tr>
@@ -9931,6 +10032,9 @@ SYNPAC:2 - Sequenced Packaged Delivery
 </table>
 
 The Odette delivery contains 26 different message types. For most of the message types only the newest version is provided. For example, INVOIC:3 represents Version 3 of the Invoice message. For the message types CONTRL and ORDERR both versions 1 and 2 are available.
+
+> ### Note:  
+> Despatch Advice message structure remains unchanged between AVIEXP Versions 3 and 4. However, several nodes' requirements were updated from mandatory to conditional. Despite these changes, Odette did not revise segment version numbers. Consequently, segments display AVIEXP:4 configurations for AVIEXP:3. You can optionally update these fields to mandatory in your Message Implementation Guideline \(MIG\), if necessary.
 
 
 
@@ -10116,6 +10220,20 @@ Version
 <td valign="top">
 
 1.2.060
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.2.061
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.2.062
 
 </td>
 </tr>
@@ -11738,6 +11856,50 @@ DIRDEB - Direct debit message
 <td valign="top">
 
 1997 S3 Edition 1999
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EnvelopeForMessagesS3 - Envelope for Messages \(Syntax Versions 1/2/3\)
+
+> ### Note:  
+> This message is specifically designed to capture and define the envelope structure.
+
+
+
+</td>
+<td valign="top">
+
+1995 S3
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EnvelopeWithFunctionalGroupsS3 – Envelope with Functional Groups of Messages \(Syntax Versions 1/2/3\)
+
+> ### Note:  
+> This message is specifically designed to capture and define the envelope structure.
+
+
+
+</td>
+<td valign="top">
+
+1995 S3
 
 </td>
 <td valign="top">

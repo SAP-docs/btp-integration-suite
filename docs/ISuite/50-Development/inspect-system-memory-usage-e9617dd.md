@@ -21,14 +21,14 @@ Messages processed by integration flows at runtime consume system memory. Memory
 
 ## Screen Components
 
-The bar chart shows the message load of the system memory for a defined time period.
+The bar chart shows the message load of the system memory for a defined time period, as shown in the image below.![](images/Inspect_Memory_Usage_21a01f3.png)
 
 You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*, *Past Month*, or *Custom* for a custom time interval.
 
 > ### Note:  
 > When you select the option *Custom* for the *Time* filter, you can adjust the date and time intervals with the calendar and watch elements. You can select dates up to 30 days in the past. However, selection of dates in the future is disabled.
 
-The message load is plotted in two charts against time.
+The message load is plotted in two charts against time:
 
 -   The total count of message processing logs \(MPLs\) for a given time period \(as selected with the *Time* parameter\) is plotted in a bar chart.
 

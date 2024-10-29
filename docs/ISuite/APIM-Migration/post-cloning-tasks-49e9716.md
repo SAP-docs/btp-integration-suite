@@ -309,7 +309,7 @@ If you have multiple virtual hosts configured on your source system subscription
 
 
 
-### Switching Over Design time URLs of API portal and API business hub enterprise portals
+### Switching Over Design time URLs of API portal and Developer Hub portals
 
 -   Domains managed by SAP can't be switched over.
 -   To switch over a custom domain, create an incident on the component OPU-API-OD-OPS through the [SAP Support Portal](https://support.sap.com/en/index.html).

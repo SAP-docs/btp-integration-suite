@@ -14,10 +14,10 @@ Both the source and the target system are the system that has your API Managemen
 
 ### Prerequisites for the source system
 
--   You must have a valid API Management system \( and API business hub enterprise\) running in the Cloud Foundry environment.
--   The source system must support Oauth client credentials for Cloud Foundry. You need the auth token url and key secret to access the and API business hub enterprise. For more information, refer [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD)[Accessing API business hub enterprise APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD).
--   Make a note of the API portal and API business hub enterprise URLs of the source system and keep handy.
--   Ensure that API access is enabled for the and API business hub enterprise systems for the following roles:
+-   You must have a valid API Management system \( and Developer Hub\) running in the Cloud Foundry environment.
+-   The source system must support Oauth client credentials for Cloud Foundry. You need the auth token url and key secret to access the and Developer Hub. For more information, refer [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD)[Accessing Developer Hub APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD).
+-   Make a note of the API portal and Developer Hub URLs of the source system and keep handy.
+-   Ensure that API access is enabled for the and Developer Hub systems for the following roles:
 
     -   APIPortal.Administrator
     -   AuthGroup.API.Admin
@@ -95,14 +95,14 @@ Both the source and the target system are the system that has your API Managemen
     > 
     > Consider the following example: During cloning, the email address `john.smith@abc.com` in the source becomes `John.Smith@abc.com` in target due to the change in configurations in Custom IDP. This mismatch might lead to data discrepancy during application creation and metering in the target after cloning.
 
--   Ensure that API access is enabled for the and the API business hub enterprise for the following roles:
+-   Ensure that API access is enabled for the and the Developer Hub for the following roles:
 
     -   APIPortal.Administrator
     -   AuthGroup.API.Admin
 
     For , see [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD)
 
-    For API business hub enterprise, execute the following mandatory steps:
+    For Developer Hub, execute the following mandatory steps:
 
     -   Make a note of the service keys \(`url`, `tokenurl`, `clientId`, and `clientSecret`\) for the given roles, and keep handy.
 
@@ -110,9 +110,9 @@ Both the source and the target system are the system that has your API Managemen
 
     -   Create a destination of type *OAuth2Credentials* to the XSUAA APIs by using the credentials you derived from creating the service key.
 
-    -   Create a service instance with the *AuthGroup.API.Admin* role to access theAPI business hub enterprise APIs.
+    -   Create a service instance with the *AuthGroup.API.Admin* role to access theDeveloper Hub APIs.
 
-        To perform the above steps, see [Accessing API business hub enterprise APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD)
+        To perform the above steps, see [Accessing Developer Hub APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD)
 
 
 -   When you have API products protected by the custom roles permission in the source Cloud Foundry system, ensure that custom roles creation and assignments are done in the target Cloud Foundry environment before starting the migration.

@@ -2,7 +2,7 @@
 
 # Create Products by Importing API Specifications
 
-As a content administrator, you can discover APIs from various business systems and publish them as products in the API business hub enterprise catalog. However, if you have an API specification from an external gateway, you can still create a product and make it available in the catalog.
+As a content administrator, you can discover APIs from various business systems and publish them as products in the Developer Hub catalog. However, if you have an API specification from an external gateway, you can still create a product and make it available in the catalog.
 
 
 
@@ -22,9 +22,9 @@ To import an API specification, you must first create a product. Then, use the *
 
 ## Procedure
 
-1.  Log on to the **API business hub enterprise**.
+1.  Log on to the **Developer Hub**.
 
-2.  Navigate to the *Enterprise Manager* \> *Manage* \> *Content*.
+2.  Navigate to the *Admin Center* \> *Manage* \> *Content*.
 
 3.  Choose the *Products**Create*
 

@@ -112,7 +112,7 @@ API Management Account
 </td>
 <td valign="top">
 
-An API Management account is the highest level of data hierarchy. This account hosts the API platform, which is a combination of API and API business hub enterprise.
+An API Management account is the highest level of data hierarchy. This account hosts the API platform, which is a combination of API and Developer Hub.
 
 </td>
 </tr>
@@ -234,7 +234,7 @@ Consume API
 </td>
 <td valign="top">
 
-Consume or use APIs via the API business hub enterprise. In the API business hub enterprise, an application developer registers, explores the API exposed by customers, creates applications, and tests APIs.
+Consume or use APIs via the Developer Hub. In the Developer Hub, an application developer registers, explores the API exposed by customers, creates applications, and tests APIs.
 
 </td>
 </tr>
@@ -253,7 +253,7 @@ SAP BTP Cloud Foundry environment contains the Cloud Foundry Application Runtime
 <tr>
 <td valign="top">
 
-API business hub enterprise 
+Developer Hub 
 
 </td>
 <td valign="top">
@@ -270,7 +270,7 @@ Developer Services
 </td>
 <td valign="top">
 
-Services that provide tools to manage app developers. Also, provide the ability to onboard developers and creates a API business hub enterprise for publicly available products.
+Services that provide tools to manage app developers. Also, provide the ability to onboard developers and creates a Developer Hub for publicly available products.
 
 </td>
 </tr>

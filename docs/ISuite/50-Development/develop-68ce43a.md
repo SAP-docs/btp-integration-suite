@@ -14,7 +14,7 @@ This guide gets you started and provides all of the conceptual information you n
 
 ## Developer Reference
 
-This reference provides information about how to connect to the *Graph Navigator* in SAP Business Accelerator Hub Enterprise and on the public SAP Business Accelerator Hub.
+This reference provides information about how to connect to the *Graph Navigator* in Developer Hub and on the public SAP Business Accelerator Hub.
 
 This reference also contains the *Graph Syntax* diagrams that give you a graphical representation of the APIs.
 

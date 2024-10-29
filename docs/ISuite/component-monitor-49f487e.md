@@ -4,11 +4,11 @@
 
 # Component Monitor
 
-Get information on the components.
+Get information on your components.
 
-The *Component Monitor* tile shows you the most important information regarding your components at a glance. Out of all components for Edge Integration Cell, the tile always shows either those components in status *Error* or the status of the top three components, *Policy Engine*, *Worker*, and *Solace* \(Message Service\) in status *OK*.
+The *Component Monitor* card in the **Operations Cockpit** shows you the most important information regarding your components at a glance. Out of all components for Edge Integration Cell, the card always shows either those components in status *Error* or the status of the top three components, *Policy Engine*, *Worker*, and *Solace* \(Message Service\) in status *OK*.
 
-Choose the tile to view the full list of your deployed components and learn more about them. On the *Component Monitor* overview page, you can see a table with the following information:
+Choose the card to view the full list of your deployed components and learn more about them. On the *Component Monitor* overview page, you can see a table with the following information:
 
 
 <table>
@@ -47,6 +47,11 @@ The name of the component \(the list is in alphabetical order\).
 The status of the component's resources: *OK*, *Error* or *Warning*
 
 This column shows the combined state of all pods and is calculated based on the **Ready** and **Pod Status** information. For the Status to be **OK** all pods'**Pod Status** must be **Running**, and their current value must equal the expected value in the **Ready** column.
+
+> ### Note:  
+> If the pod status indicates an error for one of the components, you can view the specific details of the pod events by selecting **View Pod Events**<span class="SAP-icons-V5"></span> from the *Actions* menu.
+
+
 
 </td>
 </tr>
@@ -120,18 +125,39 @@ The number of times a pod has restarted after it was initialized.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Actions*
+
+</td>
+<td valign="top">
+
+You can perform the following actions on the selected component. Depending on the component only some actions are available:
+
+-   **View Pod Events** <span class="SAP-icons-V5"></span>. Examine the pod events associated with the selected component.
+
+    There's no exhaustive list of all pod events, but the Kubernetes documentation provides some examples. For more information, see [https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/\#Event.](https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/#Event.) 
+
+-   **View Runtime Parameters <span class="SAP-icons-V5"></span>**. Navigate to the screen **Runtime Parameters** \(also accessible through the **Quick Links** card in the **Operations Cockpit**\), which provides more detailed information on the runtime parameters of the selected component. For more information, see: [Runtime Parameters](runtime-parameters-63c5276.md).
+-   *Create Heap Dump Diagnostic Task*. Diagnose issues related to memory consumption for the selected pod. For more information, see [Diagnostics](diagnostics-80f3050.md).
+-   *Create Thread Dump Diagnostic Task*. Diagnose unequal resource usage that may cause system slowness for the selected pod. For more information, see [Diagnostics](diagnostics-80f3050.md).
+
+> ### Note:  
+> The **Create Heap** and *Thread Dump Diagnostic Tasks* actions become available for components that support *Diagnostics* \(*Edge API App*, *Monitoring Data Consumer*, and *Edge Security Artifact Controller*\). The menu is enabled when the pod is in the *Running* status and when the number of target containers matches the number in the *Ready* column.
+
+
+
+</td>
+</tr>
 </table>
-
-If the pod status indicates an error for one of the components, you can view the specific details of the pod events. To do so, select the component in the table and the option **View Pod Events** \(<span class="SAP-icons-V5"></span> View Pod Events\) becomes available. There's no exhaustive list of all pod events, but the Kubernetes documentation provides some examples. For more information, see [https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/\#Event.](https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/#Event.) 
-
-When you select an individual component, the grayed-out option **View Runtime Parameters** also becomes available. This leads you to the screen **Runtime Parameters** \(also accessible through the **Quick Links** card in the **Operations Cockpit**\), which provides more detailed information on the runtime parameters of the selected component. For more information, see: [Runtime Parameters](runtime-parameters-63c5276.md).
 
 **Related Information**  
 
 
 [Operations Cockpit](operations-cockpit-ec0fc95.md "The Operations Cockpit is the central control point for operating edge integration cells and allows the Edge Integration Cell administrator to monitor and adjust system configurations and resources.")
 
-[Job Management](job-management-4146fa5.md "Organize and schedule your existing system jobs, such as data store entries cleanup or trace entries cleanup, or add jobs manually.")
+[Job Management](job-management-4146fa5.md "Organize and schedule your existing system jobs, and add new jobs manually.")
 
 [Runtime Parameters](runtime-parameters-63c5276.md "Get information about the runtime parameters of the components of your Edge Integration Cell.")
 

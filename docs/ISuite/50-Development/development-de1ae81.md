@@ -259,7 +259,7 @@ Generate revenue from APIs.
 </td>
 <td valign="top">
 
-Set up API Management and test API business hub enterprise connections.
+Set up API Management and test Developer Hub connections.
 
 </td>
 <td valign="top">

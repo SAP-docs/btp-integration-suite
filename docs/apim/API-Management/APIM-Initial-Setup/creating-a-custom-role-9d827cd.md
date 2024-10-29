@@ -27,7 +27,7 @@ You can restrict access to an API product in API Management using a custom role.
 
 2.  Choose *Service Marketplace* in the left-hand pane.
 
-3.  In order to create a custom role, choose **API Management, API business hub enterprise** tile.
+3.  In order to create a custom role, choose **API Management, Developer Hub** tile.
 
 4.  Under *Application Plans* for API BusinessHub Enterprise, choose the <span class="SAP-icons-V5"></span> Action icon and select *Manage Roles*.
 
@@ -79,7 +79,7 @@ You can restrict access to an API product in API Management using a custom role.
 
 
     > ### Remember:  
-    > Application Developers who are already onboarded in the API business hub enterprise should have the custom role. If any user has been assigned a custom role but hasn’t been onboarded as an application developer in the API business hub enterprise, the application creation fails. In this case, Authgroup.API.Admin can onboard the user as an Application Developer in the portal.
+    > Application Developers who are already onboarded in the Developer Hub should have the custom role. If any user has been assigned a custom role but hasn’t been onboarded as an application developer in the Developer Hub, the application creation fails. In this case, Authgroup.API.Admin can onboard the user as an Application Developer in the portal.
 
     **Next Steps**
 

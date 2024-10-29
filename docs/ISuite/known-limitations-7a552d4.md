@@ -28,7 +28,7 @@ Message Mapping
 </td>
 <td valign="top">
 
-Parameterized message mappings from ES Repository can be imported but the parameters defined in the message mapping object in SAP Process Integration is not available in SAP Integration Suite after the import. For more information, see [Designing and Configuring Parameterized Mapping Programs](https://help.sap.com/docs/SAP_NETWEAVER_750/bbd7c67c5eb14835843976b790024ec6/c47b8d9349e143a2b62e9b747eae4bce.html?version=latest).
+Parameterized message mappings from ES Repository can be imported with certain limitations. Only msessage mapping objects with *Simple Type* parameter category of the type *Import* are supported during migration. For more information, see [Designing and Configuring Parameterized Mapping Programs](https://help.sap.com/docs/SAP_NETWEAVER_750/bbd7c67c5eb14835843976b790024ec6/c47b8d9349e143a2b62e9b747eae4bce.html?version=latest).
 
 </td>
 </tr>

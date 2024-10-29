@@ -16,16 +16,14 @@ Database connection usage depends on the integration flow design and on the volu
 
 ## Screen Components
 
-The bar chart shows the data store usage of the tenant database for a defined time period.
+The bar chart shows the data store usage of the tenant database for a defined time period, as shown in the image below.![](images/Database_Connection_Usage_cddfbbd.png)
 
 You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*,*Past Month*, or *Custom* for a custom time interval.
 
 > ### Note:  
 > When you select the option *Custom* for the *Time* filter, you can adjust the date and time intervals with the calendar and watch elements. You can select dates up to 30 days in the past. However, selection of dates in the future is disabled.
 
-The database connection usage is plotted in a bar graph against time. The horizontal axis shows the time window, and the vertical axis shows the percentage of database connection usage in relation to the maximum usage.
-
-Maximum usage corresponds to the situation where all database connections are used.
+The database connection usage is plotted in a bar graph against time. The horizontal axis shows the time window, and the vertical axis shows the percentage of database connection usage in relation to the maximum usage. The maximum usage corresponds to the situation where all database connections are used.
 
 The usage level is represented by the following elements:
 

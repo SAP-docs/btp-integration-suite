@@ -89,7 +89,7 @@ Maximum number of resources that can be attached to an API proxy
     > ### Note:  
     > By selectively choosing resources, we mean avoiding the attempt to select specific resources from the *Add API* dialog while adding an API proxy to a product on the *Create Product* page.
 
--   If you are using API business hub enterprise OData APIs to retrieve resources from an API proxy, please note that the retrieved result may not include all the resources available in the API proxy.
+-   If you are using Developer Hub OData APIs to retrieve resources from an API proxy, please note that the retrieved result may not include all the resources available in the API proxy.
 
 
 

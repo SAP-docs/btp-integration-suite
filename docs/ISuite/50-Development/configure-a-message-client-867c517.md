@@ -41,4 +41,6 @@ Create a service binding:
 
     A binding of the service instance is created to the Event Mesh capability.
 
+    You can also view the message client in the Integration Suite UI. Navigate to *Configure* \> *Event Mesh* to view all the associated message clients.
+
 

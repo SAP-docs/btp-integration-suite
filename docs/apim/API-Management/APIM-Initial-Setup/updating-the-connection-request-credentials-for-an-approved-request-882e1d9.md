@@ -2,7 +2,7 @@
 
 # Updating the Connection Request Credentials for an Approved Request
 
-There can be instances where you have to update the credentials once the connection request is approved by the API business hub enterprise admin.
+There can be instances where you have to update the credentials once the connection request is approved by the Developer Hub admin.
 
 
 
@@ -30,11 +30,11 @@ To update the API portal access credentials, you must first generate it. To gene
 
 ## Context
 
-To establish the connection between the Integration Suite API Management tenant and the API business hub enterprise, the client Id and client secret created for the Integration Suite API Management tenant is shared during the connection request process.
+To establish the connection between the Integration Suite API Management tenant and the Developer Hub, the client Id and client secret created for the Integration Suite API Management tenant is shared during the connection request process.
 
-If you encounter one of the following situations after the connection request has already been approved by the API business hub enterprise admin, you have to update the credentials:
+If you encounter one of the following situations after the connection request has already been approved by the Developer Hub admin, you have to update the credentials:
 
--   The service instance, or the service key gets deleted after the connection between the Integration Suite API Management tenant and the API business hub enterprise was established. In this case, the credentials you were using before the service instance or the service key got deleted becomes invalid.
+-   The service instance, or the service key gets deleted after the connection between the Integration Suite API Management tenant and the Developer Hub was established. In this case, the credentials you were using before the service instance or the service key got deleted becomes invalid.
 
 -   Similarly, if the destination that fetches the API content from the Integration Suite API Management tenant workspace gets deleted, the credentials you were using before the destination got deleted becomes invalid.
 
@@ -45,9 +45,9 @@ If you encounter one of the following situations after the connection request ha
 
 ## Procedure
 
-1.  Log on to the **API business hub enterprise**.
+1.  Log on to the **Developer Hub**.
 
-2.  Navigate to the *Enterprise Manager* \> *API Management Connections* and choose *Approved Requests*.
+2.  Navigate to the *Admin Center* \> *API Management Connections* and choose *Approved Requests*.
 
     The connection requests that are pending for approval are listed on the *Approved Requests* page.
 

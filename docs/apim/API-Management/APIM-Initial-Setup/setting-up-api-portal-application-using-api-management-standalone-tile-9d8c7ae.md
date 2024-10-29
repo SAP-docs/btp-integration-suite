@@ -113,7 +113,7 @@ The API portal is now configured. Log on to the API portal again. You can now cr
 
 ## Next Steps
 
-To start publishing the API portal content, you must enable the API Business Hub Enterprise. To publish the API portal content on the API Business Hub Enterprise located in the same subaccount, see [Set Up API business hub enterprise Application Using the Standalone Tile](set-up-api-business-hub-enterprise-application-using-the-standalone-tile-80c0519.md).
+To start publishing the API portal content, you must enable the API Business Hub Enterprise. To publish the API portal content on the API Business Hub Enterprise located in the same subaccount, see [Set Up Developer Hub Application Using the Standalone Tile](set-up-developer-hub-application-using-the-standalone-tile-80c0519.md).
 
 **Related Information**  
 

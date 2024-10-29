@@ -15,3 +15,5 @@ The Manage Stores section allows you to manage various temporary data storages o
 
 [Managing Number Ranges](managing-number-ranges-b6e17fa.md "The topic provides an overview of number ranges related artifacts.")
 
+[Managing Partner Directory Entries](managing-partner-directory-entries-3d6eee7.md "Manage Partner Directory entries that can be used to parameterize integration flows.")
+

@@ -59,6 +59,39 @@ See [Integration Artifact Types](../integration-artifact-types-bf932e0.md)
 <tr>
 <td valign="top">
 
+**Cloud Integration – Starter** 
+
+</td>
+<td valign="top">
+
+Cloud-based integration runtime of Cloud Integration for the **Starter** service plan.
+
+</td>
+<td valign="top">
+
+-   Integration Flow
+
+-   Message Mapping
+
+-   Script Collection
+
+-   Value Mapping
+
+-   Integration Adapter \(only for prepackaged standard content\)
+
+
+
+
+</td>
+<td valign="top">
+
+See SAP Note [2903776](https://me.sap.com/notes/2903776) for more information on the scope of the runtime profile.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 **SAP Process Orchestration** 
 
 \(for a specific Process Orchestration release, for example: **SAP Process Orchestration 7.5, SP05**\)

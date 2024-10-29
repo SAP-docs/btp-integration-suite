@@ -28,6 +28,8 @@ SAP Integration Suite is an industry-leading and enterprise-grade integration pl
 
 > ### Tip:  
 > Contextual help is available for some screens of the SAP Integration Suite. To activate this help, from the top toolbar, choose <span class="SAP-icons-V5"></span> Help. A panel with help topics opens alongside your current screen to your right. You will also find green <span style="color:#007833;"><span class="SAP-icons-V5"></span></span> Help icons on the screen. Choose these icons to know more about the associated element.
+> 
+> The following GIF shows how you can interact with the contextual help:![](images/SAP_Companion_GIF_8122beb.gif)
 
 
 
@@ -148,6 +150,17 @@ Exchange Data Within Data Spaces
 <dd>
 
 Offer, consume, and maintain data space assets with Data Space Integration.
+
+
+
+</dd><dt><b>
+
+Access Data In SAP Business Suite 
+
+</b></dt>
+<dd>
+
+Access business data in the SAP Business Suite with OData Provisioning.
 
 
 

@@ -92,6 +92,79 @@ API Management
 </td>
 <td valign="top">
 
+API business hub enterprise rebranded as Developer Hub
+
+</td>
+<td valign="top">
+
+If you have enabled API business hub enterprise as part of the API Mangement capability within Integration Suite, note that it's now been relaunched as Developer Hub with enhanced features. In addition to providing a central, managed, and curated catalog of APIs for developers, the Developer Hub now allows content administrators to discover APIs from various business systems and publish them as products in the catalog. Furthermore, they can manually import additional API specifications and make them accessible in the same catalog. These new features will enhance the experience for both developers and content administrators.
+
+See: [Developer Hub](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-business-hub-enterprise?version=CLOUD) and [Manage Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-content?version=CLOUD)
+
+If you have an API business hub enterprise standalone subscription, note that it's now rebranded as Developer Hub. This new name better represents the focus and goals of the solution. For more information, see [Developer Hub](https://help.sap.com/docs/sap-api-management/sap-api-management/api-business-hub-enterprise?&version=Cloud).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-10-26
+
+</td>
+<td valign="top">
+
+2024-10-26
+
+</td>
+<td valign="top">
+
+2409
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Region-Specific IP Addresses Available for API Management Cloud Foundry Environment
 
 </td>
@@ -170,7 +243,7 @@ Create a Product by Importing an API Specification
 </td>
 <td valign="top">
 
-As a content administrator, you can discover APIs from various business systems and publish them as products in the API business hub enterprise catalog. However, even if you have an API specification from an external gateway, you can still make it available in the catalog.
+As a content administrator, you can discover APIs from various business systems and publish them as products in the Developer Hub catalog. However, even if you have an API specification from an external gateway, you can still make it available in the catalog.
 
 See: [Creating a Product by Importing an API Specification](https://help.sap.com/docs/integration-suite/sap-integration-suite/registering-api-manually?version=CLOUD)
 
@@ -399,7 +472,7 @@ Default Credential type for Service Key
 </td>
 <td valign="top">
 
-In the API business hub enterprise, we've updated the default credential type for the service key. It's now 'binding-secret' instead of 'instance-secret'. We made this change because xsuaa has deprecated the credential type 'instance-secret'.
+In the Developer Hub, we've updated the default credential type for the service key. It's now 'binding-secret' instead of 'instance-secret'. We made this change because xsuaa has deprecated the credential type 'instance-secret'.
 
 See: [Accessing API business hub enterprise APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD)
 
@@ -467,7 +540,7 @@ API Management
 </td>
 <td valign="top">
 
-Manage Content from API business hub enterprise 
+Manage Content from Developer Hub 
 
 </td>
 <td valign="top">
@@ -476,7 +549,7 @@ You can now expose APIs from SAP systems in the API business hub enterprise cata
 
 Following system registration, these systems appear on the API business hub enterprise. Here, you can directly discover and publish the APIs from these systems. This can be done from the Manage Content page in the API business hub enterprise.
 
-See: [Manage Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-business-hub-enterprise-developer-edition?version=CLOUD)
+See: [Manage Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-content?version=CLOUD)
 
 </td>
 <td valign="top">
@@ -948,12 +1021,12 @@ API Management
 </td>
 <td valign="top">
 
-API business hub enterprise Classic Design UI Removed
+Developer Hub Classic Design UI Removed
 
 </td>
 <td valign="top">
 
-The classic design of the API business hub enterprise has been removed and is no longer accessible.
+The classic design of the Developer Hub has been removed and is no longer accessible.
 
 To configure the new design, see [Configure the API business hub enterprise](https://help.sap.com/docs/integration-suite/sap-integration-suite/configure-api-business-hub-enterprise-new-design?version=CLOUD&q=Exyternal%20Content)
 
@@ -1097,7 +1170,7 @@ Short Text
 </td>
 <td valign="top">
 
-As an API portal administrator, you now have the ability to include a short introductory text in the *Short Text* field when creating an API proxy. This text will be displayed on the details page of the API proxy once you publish it to the API business hub enterprise. Furthermore, this field will also appear when you copy an API. However, during the copy action, the *Short Text* field will be pre-filled along with all other fields.
+As an API portal administrator, you now have the ability to include a short introductory text in the *Short Text* field when creating an API proxy. This text will be displayed on the details page of the API proxy once you publish it to the Developer Hub. Furthermore, this field will also appear when you copy an API. However, during the copy action, the *Short Text* field will be pre-filled along with all other fields.
 
 See:
 
@@ -1551,12 +1624,12 @@ API Management
 </td>
 <td valign="top">
 
-Manage Access in API business hub enterprise 
+Manage Access in Developer Hub 
 
 </td>
 <td valign="top">
 
-As an API business hub enterprise admin, you now have the ability to manage access control checks for users to search, discover, and consume the content.
+As an Developer Hub admin, you now have the ability to manage access control checks for users to search, discover, and consume the content.
 
 See: [Manage Access](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-access?version=CLOUD) \(SAP API Management customers choose: [Manage Access](https://help.sap.com/docs/sap-api-management/sap-api-management/manage-access?version=Cloud&q=Manage%20Access)
 

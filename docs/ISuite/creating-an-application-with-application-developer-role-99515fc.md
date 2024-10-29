@@ -15,9 +15,9 @@ As an application developer you can create an application, and view the existing
     > ### Note:  
     > The *AuthGroup.API.ApplicationDeveloper* role must not be assigned manually to a user form the SAP BTP Cockpit. Also, this role must not be a part of any user group assignment.
     > 
-    > The *AuthGroup.API.ApplicationDeveloper* role is assigned by default to a user who onboards to the API business hub enterprise using the self-registration process or via*Add User* flow. For more information on registering in API business hub enterprise, see [Register on API business hub enterprise](register-on-api-business-hub-enterprise-c85fafe.md).
+    > The *AuthGroup.API.ApplicationDeveloper* role is assigned by default to a user who onboards to the Developer Hub using the self-registration process or via*Add User* flow. For more information on registering in Developer Hub, see [Register on Developer Hub](register-on-developer-hub-c85fafe.md).
     > 
-    > In the Add User flow, the API business hub enterprise admin adds a user who wants to be onboarded to API business hub enterprise. However, the user who is requesting to be onboarded must ensure that the user details provided to the admin matches the user details obtained from the response of <developer portal url\>/api/1.0/users.
+    > In the Add User flow, the Developer Hub admin adds a user who wants to be onboarded to Developer Hub. However, the user who is requesting to be onboarded must ensure that the user details provided to the admin matches the user details obtained from the response of <developer portal url\>/api/1.0/users.
 
 
 
@@ -30,7 +30,7 @@ You are about to create an application and add products to your application. You
 
 ## Procedure
 
-1.  Log on to the API business hub enterprise and navigate to *My Workspace*.
+1.  Log on to the Developer Hub and navigate to *My Workspace*.
 
     The applications you created earlier, are displayed under the *Applications* tab. For an existing application, you can view the total number of calls made in the current month on the *Applications* page.
 

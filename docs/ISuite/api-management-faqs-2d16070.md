@@ -119,14 +119,14 @@ Answers
 <tr>
 <td valign="top">
 
-What is the difference between SAP API business hub enterprise and SAP API Management?
+What is the difference between SAP Developer Hub and SAP API Management?
 
 </td>
 <td valign="top">
 
 SAP API Management is a solution that helps customers to secure, manage, transform and publish APIs from both SAP and non-SAP systems. The published APIs can be consumed within mobile or web applications on any platform. Application developers who want to use a published API need to subscribe to the respective API. Usage of the published APIs can be monitored and analyzed from SAP API Management.
 
-SAP API business hub enterprise provides a central catalog of SAP and selected partner APIs allowing developers to search, discover, experience and consume the services they need to build new applications, app extensions or process integrations.
+SAP Developer Hub provides a central catalog of SAP and selected partner APIs allowing developers to search, discover, experience and consume the services they need to build new applications, app extensions or process integrations.
 
 </td>
 </tr>
@@ -285,7 +285,7 @@ For detailed information regarding policy types, see [Policy Types](https://help
 <tr>
 <td valign="top">
 
-How to onboard an application developer on the API business hub enterprise?
+How to onboard an application developer on the Developer Hub?
 
 </td>
 <td valign="top">

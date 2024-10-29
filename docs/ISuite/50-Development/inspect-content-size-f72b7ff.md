@@ -17,7 +17,7 @@ The default value of the entitlement is 500 MB, as documented at [What Is SAP Cl
 
 ## Screen Components
 
-The bar chart shows the artifacts that put the highest load on the file system for a given time period, each represented by a different color.
+The bar chart shows the artifacts that put the highest load on the file system for a given time period, each represented by a different color as shown below:![](images/Inspect_Content_Size_f9e2357.png)
 
 You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*, *Past Month*, or *Custom* for a custom time interval.
 
@@ -39,9 +39,13 @@ The legend lists the top consuming integration artifacts and associates a color 
 
 Choose a bar to get more context information and access the following functions:
 
--   *Inspect Artifact*. Navigate to the more detailed *Inspect Artifact* screen to inspect the selected artifact further. For more information, see [Inspect Resource Consumption for Individual Integration Flow](inspect-resource-consumption-for-individual-integration-flow-3380bd6.md).
+-   *Inspect Artifact*
 
--   *Show Integration Content*. Navigate to *Manage Integration Content* to monitor the specific artifact you've selected. For more information, see [Manage Integration Content](manage-integration-content-09a7223.md).
+    Navigate to the more detailed *Inspect Artifact* screen to inspect the selected artifact further. For more information, see [Inspect Resource Consumption for Individual Integration Flow](inspect-resource-consumption-for-individual-integration-flow-3380bd6.md).
+
+-   *Show Integration Content*
+
+    Navigate to *Manage Integration Content* to monitor the specific artifact you've selected. For more information, see [Manage Integration Content](manage-integration-content-09a7223.md).
 
     > ### Note:  
     > You can use this function to inspect an artifact and its uncompressed references. In the *Manage Integration Content* screen, go to *Artifact Details* \> *View Deployed Artifact* \>*Integration Flow* \> *References*. You can find all the uncompressed archives, schemas, and scripts of your selected artifact there.

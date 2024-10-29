@@ -16,7 +16,7 @@ A file system is required in order to use *Diagnostics*. This is because the inf
 
 <a name="loio80f3050fb26e42a6b09dfcdb06f8cd50__section_nh4_hhp_hcc"/>
 
-## Diagnostic Tasks
+## Context
 
 You can access *Diagnostics* through the *Quick Links* card on the Operations Cockpit.
 
@@ -67,11 +67,22 @@ The type of diagnostic task. It can be any of the following:
 
 -   *Custom Logging*. Temporarily increase the log level for a list of log locations and collect the required debug information for diagnosing your issue.
 
+    To learn more about custom loggers, see [Custom Loggers](custom-loggers-7e52a49.md).
+
 -   *Thread Dump*. Use thread dumps to diagnose unequal resource usage that may cause system slowness. You can configure the number of thread dumps to create for a component and specify the intervals between them.
--   *Heap Dump*
+-   *Heap Dump*. Use heap dumps to diagnose issues related to memory consumption.
 
     > ### Note:  
-    > You can only create a heap dump for one pod per component at a time, as this operation is resource-intensive.. Use heap dumps to diagnose issues related to memory consumption.
+    > You can only create a heap dump for one pod per component at a time, as this operation is resource-intensive.
+
+-   *Message Processing Log \(MPL\)*. Diagnose problems related to storage and access to message processing logs. Select one of the following scopes according to your issue:
+
+    -   *Create and collect Message Processing Log*. Select if you experience issues with collecting MPL data from workers, aggregation, and storing in the database.
+    -   *Access Message Processing Log*. Select if you experience issues with retrieving MPL from the database.
+    -   *Database Logging*. Select if you require extra information on database operations.
+
+    > ### Note:  
+    > If you're unsure about the correct scope of your issue, you can choose all of them.
 
 
 
@@ -128,6 +139,13 @@ Depending on the status of the diagnostic task, you can either *Download* the di
 </tr>
 </table>
 
+> ### Note:  
+> In some *Heap Dump* tasks, the *Name* and *Started By* columns indicate that they are automatically generated. This is because the Worker component is configured to automatically create a heap dump when an `OutOfMemory` situation occurs and the Java VM crashes. These heap dumps are then automatically written into the shared file system.
+
+
+
+## Procedure
+
 To create a new diagnostic task, perform the following steps:
 
 1.  Choose *Create Diagnostic Task* and select the required diagnostic type from the dropdown list.
@@ -137,7 +155,7 @@ To create a new diagnostic task, perform the following steps:
 
     If you don't stop the session manually, it stops automatically after 10 minutes.
 
-5.  . Use heap dumps to diagnose issues related to memoryYou can now download the results of your diagnostic task. The results save as a zip file on your computer.
+5.  You can now download the results of your diagnostic task. The results save as a zip file on your computer.
 
     > ### Note:  
     > In the case of heap dumps, you can't download the results directly from the UI due to the large file size. When you choose *Download*, a popup appears with the path to the file's location on the file share. You can download the results file using your preferred Kubernetes tooling. The corresponding command is the following: `kubectl -n edge-icell cp <pod name>:<path> <destination path name>`

@@ -521,24 +521,23 @@ Description
 
 Select the operation that you want to perform.
 
-The adapter supports *Function Import* for the following return types:
+-   Batch Processing \($batch\)
 
--   Entity
+    > ### Remember:  
+    > For the Batch Processing operation, the maximum XML payload size supported is 2 MB. If your payload is more than 2 MB, message processing fails.
 
--   Collection of entities
+-   Create\(POST\)
 
--   Complex types
+-   Query\(GET\)
 
--   Collection of complex types
+-   Update\(PUT\)
 
--   Simple types
+-   Delete\(DELETE\)
 
--   Collection of simple types
-
--   Void
+-   Patch\(PATCH\)
 
 
-*The function Import*can also be consumed in the *$batch* mode.
+To leverage all operations, always use the latest version of the adapter.
 
 </td>
 </tr>

@@ -14,14 +14,14 @@ The *Integration Flows* feature allows you to analyze and compare the integratio
 
 The bar chart shows the five integration flows with the highest resource consumption for the defined time period.
 
+Each flow displays different colored bars representing the levels of consumption of the different resources within the individual integration flows, as shown in the image below.![](images/Inspect_Top_Consuming_Iflows_63461d0.png)
+
 You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*, *Past Month*, or *Custom* for a custom time interval.
 
 > ### Note:  
 > When you select the option *Custom* for the *Time* filter, you can adjust the date and time intervals with the calendar and watch elements. You can select dates up to 30 days in the past. However, selection of dates in the future is disabled.
 
 The total resource consumption is presented in a bar graph. The horizontal axis displays the names of the integration flows, while the vertical axis shows the percentage of total resource consumption over the selected time period.
-
-Each flow displays different colored bars representing the levels of consumption of the different resources within the individual integration flows.
 
 > ### Note:  
 > The system reads the resource consumption every hour. This means that there can be a maximum lag of one hour between processing an integration flow with a certain transaction setting and displaying the latest integration flow usage in the *Inspect* feature.

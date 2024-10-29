@@ -4,7 +4,7 @@
 
 # Approve the Pending Connection Requests
 
-As an API business hub enterprise administrator, you must approve or reject the connection request after you receive them.
+As an Developer Hub administrator, you must approve or reject the connection request after you receive them.
 
 
 
@@ -25,9 +25,9 @@ The following roles must be assigned to you:
 
 ## Procedure
 
-1.  Log on to the **API business hub enterprise**.
+1.  Log on to the **Developer Hub**.
 
-2.  Navigate to the *Enterprise Manager* \> *API Management Connections* and choose *Pending Requests*.
+2.  Navigate to the *Admin Center* \> *API Management Connections* and choose *Pending Requests*.
 
     The connection requests that are pending for approval are listed on the *Pending Requests* page.
 
@@ -42,5 +42,5 @@ The following roles must be assigned to you:
 
 ## Results
 
-The connection has been set up between the Integration Suite API Management tenant and the API business hub enterprise.
+The connection has been set up between the Integration Suite API Management tenant and the Developer Hub.
 

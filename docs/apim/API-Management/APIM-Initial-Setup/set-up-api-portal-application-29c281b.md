@@ -10,7 +10,7 @@ To create APIs, products, import policy templates, and view applications, set up
 
 ## Context
 
-Depending upon the license you hold, you can set up the *API Management, API Portal* capability from the **Integration Suite** launchpad. For more information, see [Enable API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite?version=CLOUD). You can also use the standalone tile for **API Management, API Portal** to subscribe to the API Portal application. See, [Set Up API business hub enterprise Application Using the Standalone Tile](set-up-api-business-hub-enterprise-application-using-the-standalone-tile-80c0519.md).
+Depending upon the license you hold, you can set up the *API Management, API Portal* capability from the **Integration Suite** launchpad. For more information, see [Enable API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite?version=CLOUD). You can also use the standalone tile for **API Management, API Portal** to subscribe to the API Portal application. See, [Set Up Developer Hub Application Using the Standalone Tile](set-up-developer-hub-application-using-the-standalone-tile-80c0519.md).
 
 > ### Note:  
 > -   You should either have **Integration Suite** subscription or **API Management, API Portal** tile visibility to set up the API Portal application.

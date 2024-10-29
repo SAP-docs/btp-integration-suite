@@ -80,7 +80,7 @@ To configure and establish trust between SAP HANA Cloud Platform and SAP Cloud I
     </tr>
     </table>
     
-7.  Now, you can navigate to the API portal or API business hub enterprise, and login using your SAP Cloud IDP users.
+7.  Now, you can navigate to the API portal or Developer Hub, and login using your SAP Cloud IDP users.
 
 
 **Related Information**  

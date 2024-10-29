@@ -37,7 +37,7 @@ To configure and establish trust between SAP Cloud Identity and BTP offerings, f
 
 7.  In the *Define from Metadata* tab, click *Browse* and upload the SAML metadata downloaded from Step 2, and then choose *Save*.
 
-8.  Navigate to *Assertion Attributes* of the SAML 2.0 configurations, and then provide the mapping between the SAML Assertion values. The developer needs these configurations for onboarding on the API business hub enterprise.
+8.  Navigate to *Assertion Attributes* of the SAML 2.0 configurations, and then provide the mapping between the SAML Assertion values. The developer needs these configurations for onboarding on the Developer Hub.
 
     The following table contains the mapping between the user attribute and the assertion attribute fields:
 
