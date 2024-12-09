@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Copy an API Artifact
+# Copying an API Artifact
 
 You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API but with some modifications or variations. The copy feature allows you to quickly duplicate the API artifact and make the necessary changes without starting from scratch.You can create a duplicate of an API artifact by copying it within the same package or in a different integration package within the same Integration Suite subscription.
 
@@ -74,7 +74,7 @@ You can access the API artifact in view mode, allowing you to download, deploy, 
 **Related Information**  
 
 
-[Add an API Artifact](add-an-api-artifact-c2fe62c.md "Add an API artifact to an package.")
+[Adding an API Artifact](adding-an-api-artifact-c2fe62c.md "Add an API artifact to an package.")
 
 [Policy Definition and Types of Policies Supported by Edge Integration Cell](policy-definition-and-types-of-policies-supported-by-edge-integration-cell-c744df5.md "You can define the behavior of an API by using policy steps.")
 

@@ -1,8 +1,15 @@
 <!-- loio93d82e8ff860450da10ad2c16bf5e971 -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # Connectivity Options
 
 SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.
+
+> ### Note:  
+> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
+> 
+> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
 
 This set comprises:
 
@@ -98,6 +105,22 @@ Receiver adapter
 Connects SAP Integration Suite to Amazon DynamoDB.
 
 See: [Amazon DynamoDB Receiver Adapter](50-Development/amazon-dynamodb-receiver-adapter-36620d5.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Amazon EventBridge*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to Amazon EventBridge.
+
+See: [AmazonEventBridge Receiver Adapter](50-Development/amazoneventbridge-receiver-adapter-ff3f9ed.md)
 
 </td>
 </tr>
@@ -474,6 +497,22 @@ See: [Configure the AMQP Receiver Adapter](50-Development/configure-the-amqp-rec
 <tr>
 <td valign="top">
 
+*Anaplan*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to Anaplan.
+
+See: [Anaplan Receiver Adapter](50-Development/anaplan-receiver-adapter-364ab57.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Ariba*
 
 Sender adapter
@@ -801,6 +840,22 @@ Receiver adapter:
 
 
 See: [HTTP Receiver Adapter](50-Development/http-receiver-adapter-2da452e.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*HubSpot*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Allows SAP Integration Suite to connect to HubSpot.
+
+See: [HubSpot Receiver Adapter](50-Development/hubspot-receiver-adapter-48cfaa8.md)
 
 </td>
 </tr>
@@ -1215,7 +1270,7 @@ Receiver adapter
 </td>
 <td valign="top">
 
-Connects SAP Integration Suite to NetSuite. NetSuite is an integrated cloud business software suite, including business accounting, ERP, CRM, and e-commerce software.
+Connects SAP Integration Suite to NetSuite.
 
 See: [NetSuite Receiver Adapter](50-Development/netsuite-receiver-adapter-618127a.md)
 
@@ -1549,7 +1604,7 @@ Sender adapter
 </td>
 <td valign="top">
 
-Connects SAP Integration Suite to a remote SMB Server using TCP \(Transmission Control Protocol\) to perform a read operation on the system. SMB stands for Server Message Block.
+Allows SAP Integration Suite to connect to a remote SMB Server using TCP \(Transmission Control Protocol\) to perform a read operation on the system. SMB stands for Server Message Block.
 
 Supported Versions:
 

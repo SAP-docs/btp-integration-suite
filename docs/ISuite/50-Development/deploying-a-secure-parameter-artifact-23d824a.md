@@ -80,8 +80,6 @@ You can deploy the artifact on the tenant by following the procedure below.
     > The possible length of the secure parameter varies:
     > 
     > -   for **Cloud Foundry: 4096 characters max. \(including spaces\)
-    > 
-    > -   for **Neo: 255 characters max. \(including spaces\)
 
 
     

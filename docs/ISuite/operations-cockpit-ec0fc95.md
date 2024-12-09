@@ -6,6 +6,10 @@ The Operations Cockpit is the central control point for operating edge integrati
 
 To navigate to the Operations Cockpit from the SAP Integration Suite homepage, select *Operate* from the navigation bar.
 
+Watch the following overview video to learn how to use the Operations Cockpit:
+
+
+
 > ### Note:  
 > The Operations Cockpit only becomes available when Edge Integration Cell is enabled.
 

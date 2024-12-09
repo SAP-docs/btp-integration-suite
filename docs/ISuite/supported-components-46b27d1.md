@@ -4,7 +4,7 @@
 
 Find out the components that are currently supported for migration.
 
-In the current scope, migration tooling supports the migration of ICOs that contain the following components:
+In the current scope, migration tooling supports the migration of objects that contain the following components:
 
 
 <table>
@@ -28,7 +28,7 @@ Supported Objects
 </td>
 <td valign="top">
 
-HTTP, REST, SOAP, IDOC, FTP, SFTP, XI, RFC, JDBC, Mail, OData Sender, OData V2 Receiver, AS2 adapters
+HTTP, REST, SOAP, IDOC, Java Web Service, FTP, SFTP, XI, RFC, JDBC, Mail, OData Sender, OData V2 Receiver, AS2 adapters
 
 </td>
 </tr>
@@ -52,7 +52,7 @@ Timer
 </td>
 <td valign="top">
 
-Service interface, Message type, Data type, Context object
+Service interface \(one or multiple operations\), Message type, Data type, Context object
 
 </td>
 </tr>
@@ -94,7 +94,7 @@ XML to JSON Conversion, JSON to XML Conversion, and Routing
 </tr>
 </table>
 
-If your ICOs contain components that aren't mentioned here, you would require additional effort for the migration. Hence, the migration of such integration scenarios isn't supported in the current scope.
+If your objects contain components that aren't mentioned here, you would require additional effort for the migration. Hence, the migration of such integration scenarios isn't supported in the current scope.
 
-Also, refer to the list of [Known Limitations](known-limitations-7a552d4.md) before you get started with the migration.
+Also, refer to the list of [Known Limitations of Migration Tooling](known-limitations-of-migration-tooling-7a552d4.md) before you get started with the migration.
 

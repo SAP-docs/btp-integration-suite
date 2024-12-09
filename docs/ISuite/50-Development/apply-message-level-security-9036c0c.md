@@ -27,7 +27,7 @@ For more information how this process works \(when using standard OpenPGP\), see
 
 ## Implementation
 
-In a real-live scenario that uses encryption and signing, key pairs owned by the tenant administrator and key pairs owned by the administrator of the connected receiver system are involved.
+In a real-life scenario that uses encryption and signing, key pairs owned by the tenant administrator and key pairs owned by the administrator of the connected receiver system are involved.
 
 -   To encrypt a message \(to be sent to a receiver\), an integration flow needs the public key of the external party. This key needs to be imported into the SAP Cloud Integration keystore.
 

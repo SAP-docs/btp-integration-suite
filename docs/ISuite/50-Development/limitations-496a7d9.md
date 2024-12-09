@@ -50,25 +50,6 @@ Full support is only given to messages that are natively XML \(all messages are 
 <tr>
 <td valign="top">
 
-Namespace prefix **ns1** instead of default namespace
-
-</td>
-<td valign="top">
-
-Custom Messages using default namespace \(no namespace prefix\) can be imported.
-
-The system, however, will use a fixed namespace prefix **ns1** instead. As a result, target payloads will be created with prefix **ns1** instead of default namespace.
-
-> ### Note:  
-> Both variants are correct and fully equivalent – this is only a visual difference without consequences for runtime.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Recursion \(limited support\)
 
 </td>

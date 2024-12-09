@@ -2,7 +2,7 @@
 
 # Register on Developer Hub
 
-Procedure to register as an application developer on the Developer Hub to view the products available in the catalog store. The Developer Hub also enables you to explore the APIs, read the associated API documentation, and view resources.
+Procedure to register as an application developer on Developer Hub to view the products available in the catalog store. Developer Hub also enables you to explore the APIs, read the associated API documentation, and view resources.
 
 
 
@@ -16,11 +16,11 @@ Procedure to register as an application developer on the Developer Hub to view t
 
 
     > ### Note:  
-    > If the *AuthGroup.API.ApplicationDeveloper* role is already assigned to you by the SAP BTP admin or via the IDP Role Collection mapping, you will get automatically registered as an application developer in Developer Hub when you logon for the first time.
+    > If the *AuthGroup.API.ApplicationDeveloper* role is already assigned to you by the SAP BTP admin or via the IDP Role Collection mapping, you will get automatically registered as an application developer in Developer Hub when you log on for the first time.
     > 
     > If you don't have the *AuthGroup.API.ApplicationDeveloper* role assigned to you in SAP BTP cockpit, complete the self-registration process to access all the funtionalities and features of Developer Hub.
     > 
-    > Please note that the *AuthGroup.API.ApplicationDeveloper* role that has been assigned to you will only take effect if you login to Developer Hub. Only relevant for New Design of the Developer Hub.
+    > Please note that the *AuthGroup.API.ApplicationDeveloper* role that has been assigned to you will only take effect if you login to Developer Hub. Only relevant for New Design of Developer Hub.
 
 -   As an Admin you're trying to onboard multiple users:
 
@@ -39,11 +39,11 @@ Procedure to register as an application developer on the Developer Hub to view t
     > 
     > -   **Use Case 1: User is no longer in the organization:**
     > 
-    >     If the *AuthGroup.API.ApplicationDeveloper* role is removed from either the SAP BTP cockpit or the IDP Role Collection mapping, as an admin, you should also ensure that the *AuthGroup.API.ApplicationDeveloper* role is removed from the Developer Hub, or vice versa. Failing to do so may lead to confusion and discrepancies.
+    >     If the *AuthGroup.API.ApplicationDeveloper* role is removed from either the SAP BTP cockpit or the IDP Role Collection mapping, as an admin, you should also ensure that the *AuthGroup.API.ApplicationDeveloper* role is removed from Developer Hub, or vice versa. Failing to do so may lead to confusion and discrepancies.
     > 
     > -   **Use Case 2: User is still in the organization:**
     > 
-    >     If a user is still part of the organization, the role removal in BTP will take effect in the Developer Hub once the user logs in. If this user wishes to access the Developer Hub, they must either follow the self-registration process or have this role assigned to them from the SAP BTP Cockpit.
+    >     If a user is still part of the organization, the role removal in BTP will take effect in Developer Hub once the user logs in. If this user wishes to access Developer Hub, they must either follow the self-registration process or have this role assigned to them from the SAP BTP Cockpit.
 
 
 
@@ -60,17 +60,17 @@ The procedure below describes the sequence of steps when as a developer you're t
 
 1.  Log on to the Developer Hub application with your IDP user credentials.
 
-2.  To register to the Developer Hub as an Application developer, choose *Register*.
+2.  To register to Developer Hub as an Application developer, choose *Register*.
 
     A dialog box with the prepopulated data such as, your first name, last name, and e-mail address appears.
 
-3.  Enter the country/region and reason for requesting access to the Developer Hub.
+3.  Enter the country/region and reason for requesting access to Developer Hub.
 
 4.  Choose *OK*.
 
     The request is sent to the administrator with the AuthGroup.API.Admin role.
 
-    -   If the administrator approves your request, you’ll receive an e-mail notification. You can log in to the Developer Hub via the link provided in the e-mail.
+    -   If the administrator approves your request, you’ll receive an e-mail notification. You can log in toDeveloper Hub via the link provided in the e-mail.
 
     -   If the administrator rejects the request, you’ll receive an e-mail notification with the reason for the rejection. When you log on to the application, you’ll see the reason for request rejection on the display page.
 

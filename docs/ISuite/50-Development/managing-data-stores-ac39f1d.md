@@ -8,6 +8,11 @@
 
 The *Manage Stores* section provides an overview of storages that are temporarily used to persist data of different kind during message processing.
 
+> ### Caution:  
+> The monitor displays a maximum of 100000 data store entries per data store. If the data store contains more than this limit, search results may be incomplete, and not all relevant entries may be displayed. Keep this limitation in mind when interpreting search results.
+> 
+> If you need to search through more than 100000 records, we recommend using the [Message Stores API's](https://api.sap.com/api/MessageStore/overview) *Data Stores* resource for efficient querying and retrieval \(see also [Message Stores](message-stores-1aab5e9.md)\).
+
 
 
 ## Procedure
@@ -22,7 +27,7 @@ The *Manage Stores* section provides an overview of storages that are temporaril
 
 3.  Choose the *Data Stores* tile.
 
-4.  On the left pane of *Manage Data Stores* the the name of the data store is displayed.
+4.  On the left pane of *Manage Data Stores* the name of the data store is displayed.
 
     Below the data store name the following information is displayed:
 

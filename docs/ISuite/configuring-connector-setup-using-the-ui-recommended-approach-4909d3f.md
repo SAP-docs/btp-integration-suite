@@ -10,9 +10,6 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 
 ## Prerequisites
 
-> ### Note:  
-> We want your feedback! Let us know what you think about this documentation by completing this two-minute survey: [SAP Documentation User Experience Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_bJ9iYJuEJNrZNUq).
-
 -   You've completed the steps described in [Preparatory Steps](https://help.sap.com/viewer/fd99f220bba84308b411ea62c86ff31e/CLOUD/en-US/247522607cdc4dbebe6dbf09068aaa7e.html "Before you can perform the onboarding steps that are specific to Data Space Integration, you must be onboarded to SAP Integration Suite and have enabled Cloud Integration.") :arrow_upper_right: where you activate SAP Integration Suite and the Cloud Integration capability.
 
 -   You've completed the steps described in [Activating the Capability](https://help.sap.com/viewer/fd99f220bba84308b411ea62c86ff31e/CLOUD/en-US/be375cb46b4a4fada37e62b90efcf0d8.html "Learn how to activate the Data Space Integration capability within SAP Integration Suite.") :arrow_upper_right: where you add Data Space Integration to your list of active capabilities of SAP Integration Suite.
@@ -54,12 +51,10 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 
     7.  Choose *Save*.
 
-    8.  Wait for about 5 minutes to let the registration finish, even after the section reached the status *Successful*. Otherwise, you can get an error.
+        You can now move on to the next tab, *Prepare Connection to Cloud Integration*.
 
 
-2.  After waiting for 5 minutes for the registration of the data space to finish, refresh the page, and move on to the next tab, *Prepare Connection to Cloud Integration*.
-
-3.  In the *Prepare Connection to Cloud Integration* tab, you're preparing the connection to Cloud Integration, for which you need to enter two service keys.
+2.  In the *Prepare Connection to Cloud Integration* tab, you're preparing the connection to Cloud Integration, for which you need to enter two service keys.
 
     1.  Enter the required *API Parameters* from the Cloud Integration service key *Process Integration Runtime*, plan `api`. You can enter the parameters manually or choose *Paste Service Key* to paste the data.
 
@@ -69,7 +64,7 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
     3.  Choose *Save*.
 
 
-4.  Finally, continue to the tab *Onboard the Data Plane*.
+3.  Finally, continue to the tab *Onboard the Data Plane*.
 
     Simply choose *Onboard*. Data Space Integration then starts deploying the integration package in Cloud Integration using the parameters that you provided in the previous steps.
 

@@ -27,7 +27,9 @@ When you experience a problem with your system, SAP Support requires diagnostic 
 > ### Note:  
 > You can only run one diagnostic task at a time. Make sure to stop any currently running tasks before starting a new one.
 
-The main table displays a list of previous diagnostic tasks, and shows the following information:
+The main table shows a list of previous diagnostic tasks. You can filter the list to quickly locate specific tasks. Use *Adapt Filters* to choose which filters are displayed.
+
+The following information is available for each diagnostic task:
 
 
 <table>
@@ -84,6 +86,7 @@ The type of diagnostic task. It can be any of the following:
     > ### Note:  
     > If you're unsure about the correct scope of your issue, you can choose all of them.
 
+-   *Garbage Collection Logging*. Diagnose memory management issues for specific pods. Unlike other logging tasks, when you create a new *Garbage Collection Logging* task, it gathers all the logs that are already on the file system. Once it's done, the task stops by itself, and you can download the results.
 
 
 

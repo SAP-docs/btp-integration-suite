@@ -2,11 +2,11 @@
 
 # User Roles and Responsibilities in Developer Hub 
 
-After activating the Developer Hub in the Integration Suite, you need to assign users the necessary roles and role collections to access the various features and functionalities of Developer Hub.
+After activating Developer Hub in SAP Integration Suite, you need to assign users the necessary roles and role collections to access the various features and functionalities of .
 
-Once the appropriate roles have been assigned, you can configure and customize the Developer Hub to align with your organization's needs.
+Once the appropriate roles have been assigned, you can configure and customize Developer Hub to align with your organization's needs.
 
-Your access to various features on the Developer Hub will depend on the service plan you have subscribed to.
+Your access to various features on Developer Hub will depend on the service plan you have subscribed to.
 
 
 
@@ -29,11 +29,6 @@ The roles and features offered in the Standard and Premium service plans include
     </th>
     <th valign="top">
 
-    Important Notes
-    
-    </th>
-    <th valign="top">
-
     For more information, see…
     
     </th>
@@ -47,11 +42,6 @@ The roles and features offered in the Standard and Premium service plans include
     <td valign="top">
     
     *Home Page* to browse and search through the various categories, APIs, and products available on the .
-    
-    </td>
-    <td valign="top">
-    
-     
     
     </td>
     <td valign="top">
@@ -82,11 +72,6 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    The availability of this feature is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://me.sap.com/notes/2903776).
-    
-    </td>
-    <td valign="top">
-    
     [Creating an Application with Developer Hub Administrator Role](creating-an-application-with-developer-hub-administrator-role-df4f777.md) 
     
     </td>
@@ -94,29 +79,19 @@ The roles and features offered in the Standard and Premium service plans include
     <tr>
     <td valign="top">
     
-    *Admin Center* \> *Manage External Content* to adjust the visibility of the Graph navigator on the Developer Hub.
+    *Admin Center* \> *Manage Content* \> *Configurations* to adjust the visibility of the Graph navigator on the Developer Hub.
     
     </td>
     <td valign="top">
     
-    The availability of this feature is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://me.sap.com/notes/2903776).
-    
-    </td>
-    <td valign="top">
-    
-    [Manage External Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-external-content-new-design?version=CLOUD&q=Exyternal%20Content) 
+    [Configure the Visibility of Graph Navigator](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-external-content-new-design?version=CLOUD&q=Exyternal%20Content) 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    *Admin Center* \> *Manage Access* to control the level of access for your users, allowing them to search, discover, and access the content available on the Developer Hub.
-    
-    </td>
-    <td valign="top">
-    
-     
+    *Admin Center* \> *Manage Access* to control the level of access for your users, allowing them to search, discover, and access the content available on Developer Hub.
     
     </td>
     <td valign="top">
@@ -128,12 +103,7 @@ The roles and features offered in the Standard and Premium service plans include
     <tr>
     <td valign="top">
     
-    *Admin Center* \> *Manage Users* to add and revoke user access to the Developer Hub.
-    
-    </td>
-    <td valign="top">
-    
-     
+    *Admin Center* \> *Manage Users* to add and revoke user access to Developer Hub.
     
     </td>
     <td valign="top">
@@ -157,11 +127,6 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-     
-    
-    </td>
-    <td valign="top">
-    
     [Approve the Pending Connection Requests](approve-the-pending-connection-requests-e296f80.md) 
     
     </td>
@@ -179,24 +144,14 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-     
-    
-    </td>
-    <td valign="top">
-    
-    [Customize the Visual Format of the Developer Hub](customize-the-visual-format-of-the-developer-hub-2eacd52.md) 
+    [Customize the Visual Format of Developer Hub](customize-the-visual-format-of-developer-hub-2eacd52.md) 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    *Admin Center* \> *Manage Notifications* to configure notifications to keep the end users of the Developer Hub informed about website updates and news items.
-    
-    </td>
-    <td valign="top">
-    
-     
+    *Admin Center* \> *Manage Notifications* to configure notifications to keep the end users of Developer Hub informed about website updates and news items.
     
     </td>
     <td valign="top">
@@ -206,7 +161,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     </tr>
     <tr>
-    <td valign="top">
+    <td valign="top" rowspan="3">
     
     A *Content Admin* you already have the *AuthGroup.Content.Admin* role collection assigned to you.
     
@@ -216,14 +171,9 @@ The roles and features offered in the Standard and Premium service plans include
     *Admin Center* \> *Manage Domain Categories* to create domain categories and add the related products into relevant categories.
 
     > ### Note:  
-    > Additinally, the *AuthGroup.API.Admin* role must be assigned to you to perform the above actions.
+    > Additinally, the *AuthGroup.API.Admin*
 
 
-    
-    </td>
-    <td valign="top">
-    
-     
     
     </td>
     <td valign="top">
@@ -235,17 +185,7 @@ The roles and features offered in the Standard and Premium service plans include
     <tr>
     <td valign="top">
     
-     
-    
-    </td>
-    <td valign="top">
-    
     *Admin Center* \> *Manage Content* to create products that includes APIs from different business systems and manage the content that application developers can view on the catalog.
-    
-    </td>
-    <td valign="top">
-    
-     
     
     </td>
     <td valign="top">
@@ -257,17 +197,7 @@ The roles and features offered in the Standard and Premium service plans include
     <tr>
     <td valign="top">
     
-     
-    
-    </td>
-    <td valign="top">
-    
     *Admin Center* \> *Manage Content* to monitor and manage all requests for product creation and updates.
-    
-    </td>
-    <td valign="top">
-    
-     
     
     </td>
     <td valign="top">
@@ -295,11 +225,6 @@ The roles and features offered in the Standard and Premium service plans include
     </th>
     <th valign="top">
 
-    Important Notes
-    
-    </th>
-    <th valign="top">
-
     For more information, see…
     
     </th>
@@ -310,7 +235,7 @@ The roles and features offered in the Standard and Premium service plans include
     An *Application Developer* you already have the *AuthGroup.API.ApplicationDeveloper* role collection assigned to you.
 
     > ### Note:  
-    > The *AuthGroup.API.ApplicationDeveloper* role collection is assigned by default to a user who onboards to the Developer Hub using the Self-registration process or via *Add User* flow.
+    > The *AuthGroup.API.ApplicationDeveloper* role collection is assigned by default to a user who onboards to Developer Hub using the Self-registration process or via *Add User* flow.
 
 
     
@@ -318,11 +243,6 @@ The roles and features offered in the Standard and Premium service plans include
     <td valign="top">
     
     The *Home page* to explore the product created on Developer Hub and view the APIs within the products, but you can't subscribe to them.
-    
-    </td>
-    <td valign="top">
-    
-
     
     </td>
     <td valign="top">
@@ -339,11 +259,6 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    The availability of this feature is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://me.sap.com/notes/2903776).
-    
-    </td>
-    <td valign="top">
-    
     [Creating an Application with Application Developer Role](creating-an-application-with-application-developer-role-99515fc.md) 
     
     </td>
@@ -352,11 +267,6 @@ The roles and features offered in the Standard and Premium service plans include
     <td valign="top">
     
     *Test Environment* to test the runtime behaviour of APIs.
-    
-    </td>
-    <td valign="top">
-    
-    The availability of this feature is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://me.sap.com/notes/2903776).
     
     </td>
     <td valign="top">

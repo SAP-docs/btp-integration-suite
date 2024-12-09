@@ -7,7 +7,7 @@ Inspect relative memory allocation per integration flow for a given time period 
 The chart shows memory allocation and allows you to do a relative comparison of integration flows with regard to memory consumption.
 
 > ### Note:  
-> Memory is continuously allocated for processing messages, and it's automatically reclaimed by garbage collection when it’s no longer used. If the allocated memory is high and can't be reclaimed by the garbage collector for a longer time, you can expect memory issues.
+> Heap memory is continuously allocated for processing messages, and it's automatically reclaimed by garbage collection when it’s no longer used. If the allocated memory is high and can't be reclaimed by the garbage collector for a longer time, you can expect memory issues.
 > 
 > However, it's usual for an integration flow to have high throughput and allocate a lot of memory, as long as the memory is reclaimed fast enough. This is the normal mode of operation for high-throughput scenarios.
 

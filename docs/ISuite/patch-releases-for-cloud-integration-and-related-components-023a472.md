@@ -12,6 +12,151 @@ The following patch release information covers the most recent changes made to t
 
 
 
+<a name="loio023a4725bb734f86be8a5625abe54110__section_i5x_kr5_4dc"/>
+
+## December 2024
+
+Software Increment: 2409
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.22.17
+
+</td>
+<td valign="top">
+
+Internal properties in Exchange were not being propogated when using ProcessDirect adapter in Camel 3x migration. This patch resolves the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.58.40
+
+8.22.15
+
+</td>
+<td valign="top">
+
+On Cloud Foundry, the Cloud Integration worker application failed to connect to the Credential Store Service due to network issues, causing the keystore to be unavailable. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_h4k_drs_ldc"/>
+
+## November 2024
+
+Software Increment: 2409
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.58.34
+
+</td>
+<td valign="top">
+
+Users are unable to select the newly created number range in the B2B scenario receiver interchange number range dropdown when the number of number ranges defined under profiles exceeds 255. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.58.31
+
+</td>
+<td valign="top">
+
+Users are unable to add a certificate when the length of some fields exceeds 255 characters. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.58.31
+
+</td>
+<td valign="top">
+
+The JDBC Adapter version 1.5 is currently not available in Camel 3.x tenants due to a version difference in the command \(cmd\) between the Camel 2.x and 3.x branches. This patch resolves the issue.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio023a4725bb734f86be8a5625abe54110__section_gp4_42n_vcc"/>
 
 ## October 2024
@@ -36,6 +181,23 @@ Software Version
 Description
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.22.9
+
+</td>
+<td valign="top">
+
+The Process Direct Adapter with Camel 3.x software was stuck in the processing state when called for Dynamic Address Resolution for the process direct consumer. This patch resolves the issue.
+
+</td>
 </tr>
 <tr>
 <td valign="top">

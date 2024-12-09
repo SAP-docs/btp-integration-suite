@@ -4,7 +4,7 @@
 
 # Approve the Pending Connection Requests
 
-As an Developer Hub administrator, you must approve or reject the connection request after you receive them.
+As a Developer Hub administrator, you must approve or reject the connection requests after you receive them.
 
 
 
@@ -25,7 +25,7 @@ The following roles must be assigned to you:
 
 ## Procedure
 
-1.  Log on to the **Developer Hub**.
+1.  Log on to **Developer Hub**.
 
 2.  Navigate to the *Admin Center* \> *API Management Connections* and choose *Pending Requests*.
 
@@ -42,5 +42,5 @@ The following roles must be assigned to you:
 
 ## Results
 
-The connection has been set up between the Integration Suite API Management tenant and the Developer Hub.
+The connection has been set up between the Integration Suite API Management tenant and Developer Hub.
 

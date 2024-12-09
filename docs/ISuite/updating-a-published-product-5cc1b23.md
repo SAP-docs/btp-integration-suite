@@ -26,7 +26,7 @@ Additionally, you can remove and add APIs to the product. Once done you can publ
 
 ## Procedure
 
-1.  Log on to the Developer Hub.
+1.  Log on to Developer Hub.
 
 2.  Navigate to the *Admin Center* \> *Manage* \> *Content*.
 

@@ -6,6 +6,11 @@
 
 Simplify and accelerate enterprise integration. 
 
+> ### Note:  
+> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
+> 
+> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
+
 SAP Integration Suite is an industry-leading and enterprise-grade integration platform-as-a-service that helps businesses seamlessly connect and integrate their applications, data, and processes within their organization and beyond. A starter collection of pre-built, best-practice integration packs helps integration developers achieve faster time to value. Execute the integration content on the Business Technology Platform or within your private landscape.
 
 > ### Tip:  
@@ -153,17 +158,6 @@ Offer, consume, and maintain data space assets with Data Space Integration.
 
 
 
-</dd><dt><b>
-
-Access Data In SAP Business Suite 
-
-</b></dt>
-<dd>
-
-Access business data in the SAP Business Suite with OData Provisioning.
-
-
-
 </dd>
 </dl>
 
@@ -266,6 +260,18 @@ Manage B2B relationships with multiple trading partners through this easy-to-use
 <tr>
 <td valign="top">
 
+[OData Provisioning](odata-provisioning-d257fc3.md) 
+
+</td>
+<td valign="top">
+
+Access data from SAP Business Suite using OData services.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 [Data Space Integration](data-space-integration-8bb6972.md)
 
 </td>
@@ -278,7 +284,7 @@ Offer, consume, and maintain assets in a data space.
 <tr>
 <td valign="top">
 
-[Integration Assessment](https://help.sap.com/viewer/36eacbcb75de48a48717090574ba16d0/Cloud/en-US/)
+[Integration Assessment](integration-assessment-310067e.md)
 
 </td>
 <td valign="top">
@@ -307,6 +313,14 @@ For more information on the connectivity options, see [Connectivity Options](con
 > Read the SAP Note [2903776](https://me.sap.com/notes/2903776) to understand the service plans offered for SAP Integration Suite. You also find information on the supported feature sets for each service plans.
 
 For SAP Integration Suite, the free service plan is available. For more information, see [Using Free Service Plans](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/524e1081d8dc4b0f9d055a6bec383ec3.html?locale=en-US&q=trial).
+
+
+
+<a name="loio5cc6987511104c418b7cb4c25f3d9cb0__section_lbn_wpv_hdc"/>
+
+## Connectivity Options
+
+More information: [Connectivity Options](connectivity-options-93d82e8.md)
 
 
 

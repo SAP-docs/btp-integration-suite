@@ -19,15 +19,19 @@ The certificate management features of the Web UI support the key renewal proces
 > 
 > We provide an example of a renewal process in a separate topic.
 
-1.  SAP prepares the new key pair 90 days before a key expires. The new key pair is imported into the customer tenant by SAP.
+1.  SAP prepares the new key pair 60 days before a key expires. The new key pair is imported into the customer tenant by SAP.
 
     The new key pair has the same alias as the key pair that is due to expire.
 
-2.  The tenant administrator can access the content of this keystore \(Web UI Monitoring under *Manage Keystore* \> *New SAP Keys*\).
+2.  The tenant administrator can access the content of this keystore.
+
+    To do this, go to section *Monitor* \> *Integrations and APIs* and select *Keystore* \(under *Manage Security*\). Then, select *New SAP Keys*.
 
 3.  SAP informs the tenant administrator about the new key.
 
-4.  Shortly before the key expires, the tenant administrator downloads the X.509 certificate and certificate chain of the new key pair from the New SAP Keys keystore \(Web UI Monitoring under *Manage Keystore* \> *New SAP Keys*\).
+4.  Shortly before the key expires, the tenant administrator downloads the X.509 certificate and certificate chain of the new key pair from the New SAP Keys keystore.
+
+    To do this, go to section *Monitor* \> *Integrations and APIs* and select *Keystore* \(under *Manage Security*\). Then, select *New SAP Keys*.
 
 5.  The tenant administrator informs the administrators of the connected sender and receiver systems that keys need to be renewed. If required, the administrators of the sender and receiver systems and the tenant administrator agree on a downtime during which the affected keys can be exchanged both in the sender and receiver systems and on the tenant.
 

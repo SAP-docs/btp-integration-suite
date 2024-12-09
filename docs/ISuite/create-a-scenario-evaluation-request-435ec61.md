@@ -43,10 +43,27 @@ You've created at least one data extraction request as described in [Create a Da
 
     -   <span style="color:#346187;"><span class="SAP-icons-V5"></span></span> *Trigger Analysis*: Schedule a new evaluation run based on current data.
 
-    -   <span style="font-size:16px;"><span style="color:#346187;"><span class="SAP-icons-V5"></span></span></span> *Download*: Download details about the latest evaluation run in one of two formats:
+    -   <span style="font-size:16px;"><span style="color:#346187;"><span class="SAP-icons-V5"></span></span></span> *Download*: Create a report to access the latest evaluation run details in one of the following two formats:
 
-        -   The option *as .xlsx file* lists all integration scenarios that were part of the request. It includes details such as migration effort, migration status, modernization recommendations, and the rules applied to the integration scenarios during the evaluation. For more information, see [Modernization Recommendations](https://help.sap.com/docs/help/90c8ad90cb684ee5979856093efe7462/d337a6f0d324405f9ef0c410fd0d3739.html). 
-        -   The option *as .pdf file* features the previously mentioned details about the integration scenarios while also providing a written summary of adapters and the assessment in general, with charts and tables as visual aids. It also features a section on modernization recommendations for your scenarios. This file is suited as a summarizing report, for example, for management.
+        -   *As .xlsx file*: Use this option to download an in-depth analysis report. This option lists all integration scenarios that were part of the request. It includes comprehensive details necessary for migration, such as:
+            -   Migration assessment category and effort estimation
+            -   Modernization recommendations
+            -   Rules applied to the integration scenarios
+            -   Sender and receiver adapters \(both standard and custom\)
+            -   Message throughput and mappings types
+
+        -   *As .pdf file*: Select this option to download a summarized overview of the evaluation, which includes the following:
+            -   A summary of the evaluation with charts and tables as visual aids
+            -   Number of integration scenarios per category, size, modernization recommendation, etc.
+            -   The top 10 most active scenarios in terms of processed messages
+            -   Standard adapter usage
+            -   Migration effort estimation
+            -   Modernization recommendations for your scenarios
+
+                > ### Note:  
+                > Custom adapters details are only included in the .xlsx file.
+
+
 
 
     ![Screenshot of the Scenario Evaluation interface. It shows the options to download the details on the latest evaluation run either As .xlsx fileor As .pdf file. These options are displayed after navigating through Additional Options \> Download on the respective scenario evaluation listed item.](images/IntegrationSuite_PIMAS_Request_ScenarioEvaluation_Download_d394c4f.png)

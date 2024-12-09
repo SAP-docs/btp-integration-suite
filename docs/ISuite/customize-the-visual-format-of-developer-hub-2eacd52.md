@@ -1,8 +1,8 @@
 <!-- loio2eacd52b914c41f6aa10909fd5bced98 -->
 
-# Customize the Visual Format of the Developer Hub 
+# Customize the Visual Format of Developer Hub 
 
-As a Site Administrator, you can customize the visual layout of the Developer Hub using the Site Editor. The customizations you make using the Site Editor appear to the other users in the system.
+As a Site Administrator, you can customize the visual layout of Developer Hub using the Site Editor. The customizations you make using the Site Editor appear to the other users in the system.
 
 
 

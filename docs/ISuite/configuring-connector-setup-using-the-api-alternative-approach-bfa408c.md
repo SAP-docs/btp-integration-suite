@@ -12,9 +12,6 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 
 ## Prerequisites
 
-> ### Note:  
-> We want your feedback! Let us know what you think about this documentation by completing this two-minute survey: [SAP Documentation User Experience Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_bJ9iYJuEJNrZNUq).
-
 -   You've completed the steps described in [Preparatory Steps](https://help.sap.com/viewer/fd99f220bba84308b411ea62c86ff31e/CLOUD/en-US/247522607cdc4dbebe6dbf09068aaa7e.html "Before you can perform the onboarding steps that are specific to Data Space Integration, you must be onboarded to SAP Integration Suite and have enabled Cloud Integration.") :arrow_upper_right: where you activate SAP Integration Suite and the Cloud Integration capability.
 
 -   You've completed the steps described in [Activating the Capability](https://help.sap.com/viewer/fd99f220bba84308b411ea62c86ff31e/CLOUD/en-US/be375cb46b4a4fada37e62b90efcf0d8.html "Learn how to activate the Data Space Integration capability within SAP Integration Suite.") :arrow_upper_right: where you add Data Space Integration to your list of active capabilities of SAP Integration Suite.

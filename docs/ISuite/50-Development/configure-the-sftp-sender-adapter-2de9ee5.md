@@ -108,6 +108,22 @@ Relative path to read the file from a directory. Example: `parentdirectory/child
 <tr>
 <td valign="top">
 
+*Regex Filtering*
+
+\(Supported for adapter version 1.17 and above\)
+
+</td>
+<td valign="top">
+
+Select to evaluate the entered filename as a real[regular expression](configure-the-sftp-sender-adapter-2de9ee5.md#loio2de9ee58737247969eb7dc9e68b1b121__sftp_regex).
+
+Else, the file name will be evaluated as a [simple expression](configure-the-sftp-sender-adapter-2de9ee5.md#loio2de9ee58737247969eb7dc9e68b1b121__sftpsender_filename2).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *File Name* 
 
 </td>
@@ -132,6 +148,12 @@ Name of the file to be read. If you do not enter a file name and the parameter r
 > -   If you specify `file*.txt` as the *File Name*, the following files are polled by the adapter: `file1.txt`, `file2.txt`, as well as `file.txt` and `file1234.txt`, and so on.
 > 
 > -   If you specify `file?.txt` as the *File Name*, the following files are polled by the adapter: `file1.txt`, `file2.txt`, and so on, but **not** the files `file.txt` or `file1234.txt`.
+
+> ### Note:  
+> For regular expressions:
+> 
+> -   Ensure that too complex regex patterns are not entered. A default value of 5 seconds is set for evaluation of regex expression.
+> -   Regex pattern must be valid; invalid patterns may lead to unexpected results or errors.
 
 > ### Caution:  
 > Files with file names longer than 100 characters are processed as follows:

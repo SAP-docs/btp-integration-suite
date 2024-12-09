@@ -141,6 +141,9 @@ Create a service instance to implement inbound communication. A service instance
 
     We recommend choosing *Form* as the more convenient option.
 
+    > ### Note:  
+    > Selecting *JSON*, you can also pass these parameters in a valid JSON object that contains service-specific configuration parameters, provided either in-line or in a file \(see [Specifying Service Instance and Service Key Parameters in JSON Format](specifying-service-instance-and-service-key-parameters-in-json-format-ae419b6.md)\).
+
     Specify the following parameters.
 
 
@@ -243,7 +246,7 @@ Create a service instance to implement inbound communication. A service instance
 
     The following values have been set as default:
 
-    -   for plan `api`: `4300` \(12 hours\)
+    -   for plan `api`: `43200` \(12 hours\)
 
     -   for plan `integration-flow`: `3600` \(1 hour\)
 
@@ -254,9 +257,6 @@ Create a service instance to implement inbound communication. A service instance
     </tr>
     </table>
     
-    > ### Note:  
-    > Selecting *JSON*, you can also pass these parameters in a valid JSON object that contains service-specific configuration parameters, provided either in-line or in a file \(see [Specifying Service Instance and Service Key Parameters in JSON Format](specifying-service-instance-and-service-key-parameters-in-json-format-ae419b6.md)\).
-
 9.  Optional: Choose *Next* to review and verify the instance details.
 
 10. Choose *Create*.

@@ -110,6 +110,11 @@ Trading Partner Management
 Integration Advisor
 
 </th>
+<th valign="top">
+
+OData Provisioning
+
+</th>
 </tr>
 <tr>
 <td valign="top">
@@ -140,6 +145,11 @@ Discover <span class="SAP-icons-V5"></span>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Discover* \> *Type Systems*
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 </tr>
@@ -174,6 +184,11 @@ Design :pencil2:
 <span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Design* \> *Custom Messages, MIGs, and MAGs*
 
 </td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -189,6 +204,11 @@ Test <span class="SAP-icons-V5"></span>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Test* \> *APIs*
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
@@ -238,6 +258,11 @@ Configure <span class="SAP-icons-V5"></span>
 <span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
+<td valign="top">
+
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Configure* \> *OData Services*
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -253,6 +278,11 @@ Engage <span class="SAP-icons-V5"></span>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> 
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
@@ -302,6 +332,11 @@ Monitor <span class="SAP-icons-V5"></span>
 <span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
+<td valign="top">
+
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Monitor* \> *OData Services*
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -312,6 +347,11 @@ Inspect Resource Consumption <span class="SAP-icons-V5"></span>
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> 
+
+</td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
 <td valign="top">
@@ -366,6 +406,11 @@ Monetize <span class="SAP-icons-V5"></span>
 <span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
 
 </td>
+<td valign="top">
+
+<span style="color:#BB0000;"><span class="SAP-icons-V5"></span></span>
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -373,6 +418,11 @@ Monetize <span class="SAP-icons-V5"></span>
 Administrate and Operate Edge Integrations Cell :wrench:
 
 Operate the different active Edge Integration Cells.
+
+</td>
+<td valign="top">
+
+NA
 
 </td>
 <td valign="top">
@@ -438,6 +488,13 @@ NA
 <td valign="top">
 
 <span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span>*Settings* \> *MIGs and MAGs*
+
+</td>
+<td valign="top">
+
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> 
+
+*Settings* \> *OData Services*
 
 </td>
 </tr>
@@ -550,7 +607,7 @@ News and Announcement. Lets you know what is new in the Integration Suite.
 **Related Information**  
 
 
-[Subscribing and Configuring Initial Access to SAP Integration Suite](../10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md "Subscribe to the SAP Integration Suitein SAP BTP cockpit and assign the Integration_Provisioner role to gain access.")
+[Subscribing and Configuring Initial Access to SAP Integration Suite](../10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md "Subscribe to the SAP Integration Suite in SAP BTP cockpit and assign the Integration_Provisioner role to gain access.")
 
 [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md "Assign the required roles and role collections to users for accessing the individual capabilities.")
 

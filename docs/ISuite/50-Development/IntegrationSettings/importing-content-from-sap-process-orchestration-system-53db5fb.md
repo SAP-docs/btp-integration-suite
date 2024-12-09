@@ -33,12 +33,15 @@ API endpoints and subpaths are used to extract data from your SAP Process Orches
     -   `/ConfigurationScenarioInService`
     -   `/BPMFacadeBeanImplService`
     -   `/ReceiverAgreementInService`
+    -   `/InterfaceDeterminationInService`
+    -   `/ReceiverDeterminationInService`
 
 -   Enterprise Services Repository \(ESR\) Content
 
     -   `/rep/read/ext`
     -   `/dir/read/ext`
     -   `/rep/support/SimpleQuery`
+    -   `/rep/query/ext`
 
 -   For Message mapping: `/rep/query/`
 

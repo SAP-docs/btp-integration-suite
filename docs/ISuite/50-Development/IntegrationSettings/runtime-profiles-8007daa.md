@@ -131,11 +131,16 @@ See [Edge Integration Cell Runtime Scope](../../edge-integration-cell-runtime-sc
 </td>
 <td valign="top">
 
-[Add an API Artifact](../add-an-api-artifact-c2fe62c.md) 
+[Adding an API Artifact](../adding-an-api-artifact-c2fe62c.md) 
 
 </td>
 </tr>
 </table>
+
+> ### Tip:  
+> To display and manage runtime profiles, choose *Settings* \> *Integrations*. When you select a runtime profile, the features enabled and supported by that profile are displayed. That way, you can find out which component versions \(for example, which version of a dedicated adapter\) are supported by the selected runtime profile.
+> 
+> If you apply a runtime profile to an integration flow, the integration flow editor restricts you to configuring only the supported features.
 
 Before start working with and designing integration content, you must know on which target runtime you want to deploy the integration content.
 

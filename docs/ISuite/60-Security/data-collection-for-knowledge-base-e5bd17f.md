@@ -6,6 +6,9 @@ Information about the data that is collected by the knowledge base for generatin
 
 To generate and provide better proposals, SAP Integration Advisor collects some data respective to each artifact for its knowledge base. To know more about the contract information, refer to the section **SAP Integration Suite** here: [SAP Cloud Service Description Guide](https://cloudplatform.sap.com/support/service-description.html#section_11).
 
+> ### Note:  
+> To avoid the data collection for proposal service, you can opt out of proposal service completely. You can use this opt-out feature if you don’t want to use the proposal service and don’t want your content to be collected. To know more, see [Settings for MIGs and MAGs](../50-Development/settings-for-migs-and-mags-4c442af.md).
+
 The sections below pertaining to each artifact mention the details of the data which will and which will not be a part of the knowledge base.
 
 
@@ -75,4 +78,22 @@ All other information including the following will be a part of the knowledge ba
 -   Identification of all nodes and types
 -   Identification of code values
 -   Node properties, such as cardinality and length
+
+
+
+<a name="loioe5bd17fbb36242e0bf621a9e0953f9a0__section_h3p_2yq_ndc"/>
+
+## Custom Codelists
+
+The following information of custom codelists will not be part of the knowledge base:
+
+-   Textual documentation \(names, definitions, notes\) of all components, such as codelist and code values
+
+-   Administrative data such as Created By, Modified By
+
+All other information including the following will be a part of the knowledge base:
+
+-   Identification of the custom codelist
+
+-   Identification of code values
 

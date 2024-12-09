@@ -24,7 +24,7 @@ The *Code Value Mapping* tab appears only if both the source and target elements
 
 4.  You can change the code value in the target node by selecting the value help <span class="SAP-icons-V5"></span> and choosing the relevant value from the list.
 
-You can use the following options only if you have used a standard code list.
+You can use the following options only if you have used a standard code list or a global code value mapping created out of a custom codelist.
 
 1.  Choose *Assign Global Mapping* if you want to reference a global mapping to that particular code value.
 

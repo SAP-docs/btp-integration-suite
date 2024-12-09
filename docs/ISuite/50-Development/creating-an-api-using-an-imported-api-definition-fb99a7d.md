@@ -1,6 +1,6 @@
 <!-- loiofb99a7d787334598a44d5b12db210511 -->
 
-# Create an API Using an Imported API Definition
+# Creating an API Using an Imported API Definition
 
 Import an API definition and use it to build your API.
 

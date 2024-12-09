@@ -2,7 +2,7 @@
 
 # Before You Start
 
-To ensure that your system landscape meets the requirements, complete the following steps when getting started with Edge Integration Cell for the first time.
+To ensure that your system landscape meets the requirements, complete the following steps when getting started withEdge Integration Cell for the first time.
 
 **Related Information**  
 

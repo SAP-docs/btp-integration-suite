@@ -399,14 +399,14 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
 
 
     > ### Tip:  
-    > If you want to cancel interchanges with a specific set of status, you can do so by filtering them by that status and select all the interchanges by selecting the checkbox next to *Status* column header and choose *Cancel*.
+    > If you want to cancel interchanges with a specific set of status, you can do so by filtering them by that status and select all the interchanges by selecting the checkbox next to *Status* column header and choose *Actions* \> *Cancel*.
     > 
     > To cancel multiple interchanges with a specific status, follow these steps:
     > 
     > 1.  Filter the interchanges by the desired status.
     > 
     > 2.  Select all the filtered interchanges by checking the box next to the *Status* column header.
-    > 3.  Choose *Cancel*.
+    > 3.  Choose *Actions* \> *Cancel*.
     > 
     >     > ### Note:  
     >     > Filtered results containing a large number of interchanges may prolong cancelation processing time.
@@ -417,7 +417,15 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
 
 9.  You can also export the interchanges in Excel format using the <span class="SAP-icons-V5"></span> icon provided proceeding the list.
 
-10. Select an interchange from the table to view it in detail. The interchange information is displayed to the right of the interchange table. The header area provides the following information about the interchange: *Status*, *Receiver Functional Acknowledgment Status*\(appears only if it applies to the interchange\), *Receiver Functional Acknowledgment Status* \(appears only if it applies to the interchange\), *Processing Status*, *Interchange Creation Time*.
+10. Select an interchange from the table to view it in detail. The interchange information is displayed to the right of the interchange table. The header area provides the following information about the interchange:
+
+    -   *Status*
+
+    -   *Processing Status*
+    -   *Sender Technical Acknowledgment Status*\(appears only if it applies to the interchange\)
+    -   *Sender Functional Acknowledgment Status*\(appears only if it applies to the interchange\)
+    -   *Receiver Functional Acknowledgment Status*\(appears only if it applies to the interchange\)
+    -   *Interchange Creation Time*
 
 11. After the header section, the following sections are displayed:
 
@@ -455,5 +463,7 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
         -   The timestamp of when the cancellation occurred
         -   A link to the associated event \(for further reference\)
 
+
+12. If you want to resend or restart failed interchanges, see [Resend/Retry Interchanges](resend-retry-interchanges-8626727.md).
 
 

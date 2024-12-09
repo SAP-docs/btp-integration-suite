@@ -119,7 +119,7 @@ Default
 </td>
 <td valign="top">
 
-Displays the default value defined for the node.
+Enter the default value for the selected node.
 
 </td>
 </tr>
@@ -140,7 +140,7 @@ Choose *required* or *optional*.
 <tr>
 <td valign="top">
 
-MinOccurs & Maxoccurs
+MinOccurs & MaxOccurs
 
 \(appears only if the selected node is an Element\)
 

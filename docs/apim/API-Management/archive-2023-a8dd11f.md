@@ -877,7 +877,7 @@ Developer Hub: Add Links and Email Addresses Using Markdown
 </td>
 <td valign="top">
 
-You can use markdown to add links and email addresses to the title and subtitle fields as part of the banner description in *Site Editor*. For more information, see [Customize the Visual Format of the Developer Hub](customize-the-visual-format-of-the-developer-hub-2eacd52.md).
+You can use markdown to add links and email addresses to the title and subtitle fields as part of the banner description in *Site Editor*. For more information, see [Customize the Visual Format of Developer Hub](customize-the-visual-format-of-developer-hub-2eacd52.md).
 
 </td>
 <td valign="top">

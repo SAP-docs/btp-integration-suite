@@ -1,8 +1,15 @@
 <!-- loioaee74bb3ccd943a0837087d705e1ebc9 -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # What Is Edge Integration Cell
 
 Edge Integration Cell is an optional hybrid integration runtime offered as part of SAP Integration Suite, which enables you to manage APIs and run integration scenarios within your private landscape.
+
+> ### Note:  
+> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
+> 
+> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
 
 
 
@@ -48,7 +55,7 @@ For more information about the supported features and limitations of Edge Integr
 
 [Standard Deployment in the Cloud](standard-deployment-in-the-cloud-ca5b233.md "")
 
-[Hybrid Deployment Using Edge Integration Cell](hybrid-deployment-using-edge-integration-cell-7a6c267.md "The Edge Integration Cell enables the processing of data within a private landscape. This allows sender and receiver systems to exchange data without passing through the internet, as the data is hosted exclusively in an on-premise environment. The cloud-based environment of SAP Integration Suite is utilized to design integration content. This content is then deployed within the organization's firewall at a private runtime location. The runtime environment is realized as a Kubernetes container, facilitating secure, internal data exchange")
+[Hybrid Deployment Using Edge Integration Cell](hybrid-deployment-using-edge-integration-cell-7a6c267.md "The Edge Integration Cell enables the processing of data within a private landscape. This allows sender and receiver systems to exchange data without passing through the internet, as the data is hosted exclusively in an on-premise environment. The cloud-based environment of SAP Integration Suitee is utilized to design integration content. This content is then deployed within the organization's firewall at a private runtime location. The runtime environment is realized as a Kubernetes container, facilitating secure, internal data exchange")
 
 [Technical Landscape \(Edge Integration Cell\)](technical-landscape-edge-integration-cell-f60efc1.md "Get to know the system landscape and the components of Edge Integration Cell.")
 

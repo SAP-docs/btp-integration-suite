@@ -20,28 +20,25 @@ This topic explains how to enable API access for Developer Hub.
 
 ## Prerequisites
 
--   If you've enabled API Management capability using Integration suite, ensure that you've also enabled Developer Hub in Integration suite. For more information, refer [Subscribing to Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/8a3c8b7a6b1c4f249bb81d11644ef806.html?version=CLOUD) and [Activating Capabilities](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/2ffb343c163c48a4b3a90f9f3c487328.html?version=CLOUD). To access Developer Hub from Integration Suite, select Developer Hub from the *Navigation Links* on the header.
+-   If you've enabled API Management capability using Integration suite, ensure that you've also enabled Developer Hub in SAP Integration Suite. For more information, refer [Subscribing to Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/8a3c8b7a6b1c4f249bb81d11644ef806.html?version=CLOUD) and [Activating Capabilities](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/2ffb343c163c48a4b3a90f9f3c487328.html?version=CLOUD). To access Developer Hub from SAP Integration Suite, select Developer Hub from the *Navigation Links* on the header.
 
     > ### Note:  
     > Please ensure that you can access Developer Hub before creating an instance.
 
 -   You have the `space developer` role assigned to you.
--   You have created a service instance under the *Authorization and Trust Management* tile.
-    1.  In your web browser, open the *SAP BTP Cockpit* - [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap).
-    2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace*.
-    3.  Choose *Authorization and Trust Management* \> *Instances* \> *New Instance*.
-    4.  In the *Create Instance* dialog that opens, choose the *apiaccess* plan.
-    5.  Click *Next* until you reach the *Confirm* section.
-    6.  In the section *Confirm*, enter a unique *Instance Name* and choose *Finish*.
+-   To get access to the APIs of the SAP Authorization and Trust Management service, see [Get Access to the APIs](https://help.sap.com/docs/btp/sap-business-technology-platform/get-access-to-apis).
+-   Create a service key for the service instance above by executing the following steps:
 
--   You have created a service key for the service instance above.
     1.  Choose the service instance that you created above.
+
     2.  In the left-hand pane, navigate to *Service Keys* \> *Create Service Key*.
     3.  In the *Create Service Key* dialog that opens, provide a name.
     4.  Click *Save*.
 
         The client credentials like url, clientId, and clientSecret details appear for the given service key.
 
+
+    .
 
 -   You have created a destination of type `OAuth2Credentials` to the XSUAA APIs by using the credentials you derived from creating the service key. This is required to access the XSUAA APIs for authorization and trust mangement services.
     1.  From your *Subaccount*, navigate to *Connectivity* \> *Destinations* \> *New Destination*.
@@ -89,7 +86,7 @@ Create a service instance using *devportal-apiaccess* plan.
 5.  Click *Next*.
 6.  In the section *Specify parameters*, provide the details as mentioned below, based on the role you require.
 
-    The roles that support API access in the Developer Hub are `AuthGroup.API.Admin`, `AuthGroup.Content.Admin`, and `AuthGroup.API.ApplicationDeveloper`.
+    The roles that support API access in Developer Hub are `AuthGroup.API.Admin`, `AuthGroup.Content.Admin`, and `AuthGroup.API.ApplicationDeveloper`.
 
     Create a service instance with the `AuthGroup.API.Admin` role to access the Developer Hub APIs \(applications and attributes, API packages, API proxies and products, app developer and metering\), and perform operations like create, update, and delete on various Developer Hub entities as specified in the [Business Accelerator Hub](https://api.sap.com/package/APIMgmt?section=Artifacts).
 
@@ -125,7 +122,7 @@ Create a service instance using *devportal-apiaccess* plan.
     > 
     > Providing an invalid or an empty `developerId` throws an error in the service instance creation process.
     > 
-    > To successfully create an application via the Developer Hub, you must provide a valid `developerId`. This means that you must have already registered as an application developer to the API Management, Developer Hub service or you must have been onboarded by your adminstrator.
+    > To successfully create an application via Developer Hub, you must provide a valid `developerId`. This means that you must have already registered as an application developer to the API Management, Developer Hub service or you must have been onboarded by your adminstrator.
     > 
     > -   If you have registered to the API Management, Developer Hub application, provide your `developerId`.
     > 
@@ -136,7 +133,7 @@ Create a service instance using *devportal-apiaccess* plan.
     > 
     > **How to obtain the `developerId`**:
     > 
-    > -   If you are a registered developer in the Developer Hub, access the following URL in your browser to obtain your `developerId`:
+    > -   If you are a registered developer in Developer Hub, access the following URL in your browser to obtain your `developerId`:
     > 
     >     ```
     >     https://devportal-url/api/1.0/user

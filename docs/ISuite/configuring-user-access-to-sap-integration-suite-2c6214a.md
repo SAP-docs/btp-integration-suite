@@ -12,6 +12,11 @@ Assign the required roles and role collections to users for accessing the indivi
 
 ## Prerequisites
 
+> ### Note:  
+> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
+> 
+> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
+
 You have the *Integration\_Provisioner* role assigned to you.
 
 The *Integration\_Provisioner* role:
@@ -391,6 +396,29 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     </tr>
     <tr>
+    <td valign="top" rowspan="3">
+    
+    OData Provisioning
+
+    Create a role collection and add the roles described here to that role collection before assigning it to the user who will work with this capability. See [Define a Role Collection](https://help.sap.com/docs/btp/sap-business-technology-platform/define-role-collection) 
+    
+    </td>
+    <td valign="top">
+    
+    -   *ODPManage* 
+
+
+    
+    </td>
+    <td valign="top">
+    
+    -   View and register OData services
+
+
+    
+    </td>
+    </tr>
+    <tr>
     <td valign="top">
     
     -   *APIFullAccess*
@@ -401,6 +429,22 @@ For more information on role collections, see [Roles and Role Collections](https
     <td valign="top">
     
     -   Get runtime access to the registered OData services.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    -   *ODPAPIAccess*
+
+
+    
+    </td>
+    <td valign="top">
+    
+    -   Access the service document.
 
 
     

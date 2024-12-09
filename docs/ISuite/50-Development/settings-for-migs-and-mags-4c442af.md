@@ -206,7 +206,7 @@ The admnistrative settings allows you to opt-in/opt out of the Proposal service.
 
 2.  Choose *Edit* and enable or disable the *Enable Proposal Service* toggle button.
 
-    This option is provided for users who no longer wish to enable their data to be collected for the proposal service.
+    Users who wish to revoke consent for data collection related to proposal services may select this option to discontinue data sharing.
 
     > ### Remember:  
     > Disabling the proposal service will lead to the following consequences:

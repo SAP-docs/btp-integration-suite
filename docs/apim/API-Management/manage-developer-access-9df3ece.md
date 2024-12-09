@@ -2,7 +2,7 @@
 
 # Manage Developer Access
 
-As an Developer Hub admin, you have the authority to control the level of access for your users, allowing them to search, discover, and access the content available on the Developer Hub.
+As a Developer Hub admin, you have the authority to control the level of access for your users, allowing them to search, discover, and access the content available on Developer Hub.
 
 
 
@@ -18,7 +18,7 @@ You need the following role to configure the access control checks:
 
 
 > ### Note:  
-> The **Manage Access** feature is available only in the new design of the Developer Hub on the Cloud Foundry environment.
+> The **Manage Access** feature is available only in the new design of Developer Hub on the Cloud Foundry environment.
 
 
 
@@ -30,7 +30,7 @@ In Developer Hub, managing access for different users is important for several r
 
 User productivity is enhanced by granting users the appropriate access to carry out their tasks efficiently, without being overwhelmed by unnecessary information or resources. In this context, the **All Visitors** option allows anyone, whether logged in or not, to utilize the APIs without requiring authentication. However, the ability to consume the APIs still depends on obtaining the necessary developer role.
 
-Moreover, by managing access, you can provide access to **Authenticated Users** who do not have a designated role, allowing them to access different pages of the Developer Hub based on their specific needs. This facilitates broader exploration and enables users to familiarize themselves with the available resources. Nevertheless, the ability to consume the APIs still relies on obtaining the necessary developer role.
+Moreover, by managing access, you can provide access to **Authenticated Users** who do not have a designated role, allowing them to access different pages of Developer Hub based on their specific needs. This facilitates broader exploration and enables users to familiarize themselves with the available resources. Nevertheless, the ability to consume the APIs still relies on obtaining the necessary developer role.
 
 To maintain privacy and security, you can grant access to**Authorized Users** who are logged in and possess the required developer role. This ensures that only authorized individuals can seamlessly access and consume the APIs while upholding privacy and security measures.
 
@@ -38,7 +38,7 @@ To maintain privacy and security, you can grant access to**Authorized Users** wh
 > Access to the Developer Hub content using the API access plan is not affected by these permissions.
 
 > ### Note:  
-> As an administrator of Developer Hub, please note that when you update these permissions, it may take up to 5 minutes for the changes to be applied for other users of the Developer Hub.
+> As an administrator of Developer Hub, please note that when you update these permissions, it may take up to 5 minutes for the changes to be applied for other users of Developer Hub.
 
 
 
@@ -46,7 +46,7 @@ To maintain privacy and security, you can grant access to**Authorized Users** wh
 
 ## Procedure
 
-1.  Log on to the **Developer Hub**.
+1.  Log on to **Developer Hub**.
 
 2.  Choose *Admin Center* \> *Manage Access* from the top navigation bar.
 

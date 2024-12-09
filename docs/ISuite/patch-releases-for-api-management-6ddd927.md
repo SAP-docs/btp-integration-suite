@@ -6,6 +6,50 @@ This topic provides information on patch releases for API Management that are pr
 
 
 
+<a name="loio6ddd927cbeaa42e384dc903e6002e269__section_g1l_fv4_4dc"/>
+
+## December 2024
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.174.4
+
+</td>
+<td valign="top">
+
+The credential type "instance-secret" is deprecated in the oauth2-configuration of the security descriptor. This patch fixes the changes in the XSUAA security descriptor for the deprecated configurations.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio6ddd927cbeaa42e384dc903e6002e269__section_x33_ssd_zcc"/>
 
 ## October 2024

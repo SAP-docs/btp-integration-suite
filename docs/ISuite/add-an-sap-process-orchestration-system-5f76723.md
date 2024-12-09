@@ -33,6 +33,8 @@ Establish a connection between your SAP Process Orchestration system and Migrati
         -   `/BPMFacadeBeanImplService`
         -   `/ReceiverAgreementInService`
         -   `/ReceiverRuleInService`
+        -   `/ReceiverDeterminationInService`
+        -   `/InterfaceDeterminationInService`
 
     -   ESR Content
 
@@ -119,11 +121,11 @@ To connect your SAP Process Orchestration system with the Migration Assessment a
 
 7.  Choose *Create*. The new system is now listed under *SAP Process Orchestration Systems*.
 
-8.  To check if the connection is working properly, select your system and choose*Test Connection*.
+8.  To check if the connection is working properly, select your system and choose *Test Connection*.
 
-    This test verifies that the main resources needed for the SAP Process Orchestration implementation are reachable. Perform this test even if previous Cloud Connector and destination connection tests were successful, as those don't check for resource accessibility.
+    This test verifies that the main resources needed for the SAP Process Orchestration extraction are reachable. Perform this test even if previous Cloud Connector and destination connection tests were successful, as those don't check for resource accessibility.
 
-    If you get an error during this step, please check the  <?sap-ot O2O class="- topic/xref " href="63430e2bee434c17858331f109777a3a.xml" text="Troubleshooting for Migration Assessment" desc="" xtrc="xref:7" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5f7672334ca74f90843d38375220d757.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    If you get an error during this step, please check the [Troubleshooting for Migration Assessment](troubleshooting-for-migration-assessment-63430e2.md).
 
 
 

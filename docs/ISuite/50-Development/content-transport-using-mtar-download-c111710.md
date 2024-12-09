@@ -10,7 +10,7 @@
 
 -   You have selected *MTAR Download* as your *Transport Mode*. For more information, see [Enabling Content Transport, Cloud Foundry Environment](enabling-content-transport-cloud-foundry-environment-452c677.md).
 
--   You've the role *WorkspacePackagesTransport* for CF or *IntegrationContent.Transport* for Neo assigned.
+-   You've the role *WorkspacePackagesTransport* for CF or assigned.
 
 
 
@@ -29,7 +29,7 @@ You can use the *MTAR Download* option to download a MTAR file/s of the integrat
 
 2.  Choose *Transport*.
 
-    If you don't see the *Transport* button, contact your tenant administrator to enable transport option in the tenant settings. For more information on the roles, see [Configuring User Access to Cloud Integration](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/ed6033b2eabe4a64a20cce1e6076bacf.html "Create and modify application roles and assign users to these roles.") :arrow_upper_right: and [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md).
+    If you don't see the *Transport* button, contact your tenant administrator to enable transport option in the tenant settings. For more information on the roles, see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md).
 
 3.  In the *Transport Comments* prompt, you can see the type of transport under the *Mode* field configured by the tenant administrator. Provide comments under the *Comments* section and choose *Transport*.
 

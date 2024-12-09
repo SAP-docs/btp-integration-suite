@@ -78,5 +78,5 @@ You’re registered as an application developer on the Developer Hub. You can no
 
 [Assign User Roles in API Management](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:
 
-[Consume API Proxies](../consume-api-proxies-ea561e4.md "Consume API proxies via the Developer Hub. In the Developer Hub, an application developer registers, explores the API exposed by customers, creates applications, and tests API proxies.")
+[Consume API Proxies](../consume-api-proxies-ea561e4.md "Consume API proxies via Developer Hub. In Developer Hub, an application developer registers, explores the API exposed by customers, creates applications, and tests API proxies.")
 

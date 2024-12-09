@@ -4,7 +4,7 @@
 
 
 
-When SAP first provides a tenant to a customer, it delivers an X.509 certificate chain, which has to be renewed every 2 years.
+When SAP first provides a tenant to a customer, it delivers an X.509 certificate chain, which has to be renewed every 1 year.
 
 SAP key pairs delivered with the tenant have the following aliases: sap\_cloudintegrationcertificate, hcicertificate, or hcicertificate1.
 

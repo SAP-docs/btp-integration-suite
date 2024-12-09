@@ -813,7 +813,7 @@ Email address that the message comes from.
 <tr>
 <td valign="top">
 
-JMSCorrellationID
+JMSCorrelationID
 
 </td>
 <td valign="top">
@@ -2735,6 +2735,115 @@ EDI Splitter
 <td valign="top">
 
 Performs validation on incoming ASC X12 message against the XSD scheme.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDISPLITTER\_997\_GROUP\_CONTROL\_NUMBER
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+EDI Splitter
+
+</td>
+<td valign="top">
+
+Use it to set the group segmnet number in the fucntional acknowledgement message. The values for the headers can be:
+
+-   numberRange
+-   useFromEDIMessage
+-   predefined
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDISPLITTER\_997\_UNIQUE\_GROUP\_CONTROL\_NUMBER
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+EDI Splitter
+
+</td>
+<td valign="top">
+
+Use it to generate a group segment set number while generating an acknowledgment message:
+
+-   required
+-   notrequired
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDISPLITTER\_997\_TRANSACTION\_SET\_NUMBER
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+EDI Splitter
+
+</td>
+<td valign="top">
+
+Use it to set the transaction set number in the fucntional acknowledgement message. The values for the headers can be:
+
+-   numberRange
+-   predefined
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDISPLITTER\_997\_UNIQUE\_TRANSACTION\_SET\_NUMBER
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+EDI Splitter
+
+</td>
+<td valign="top">
+
+Use it to generate a unique transaction set number while generating an acknowledgment message:
+
+-   required
+-   notrequired
+
+
 
 </td>
 </tr>

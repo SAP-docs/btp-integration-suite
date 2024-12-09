@@ -1,8 +1,6 @@
 <!-- loio7a552d40e1144af78d6ee0981ff2a54c -->
 
-# Known Limitations
-
-Know about the limitations of the migration tool.
+# Known Limitations of Migration Tooling
 
 The following table describes the limitations when using the migration tool:
 
@@ -28,7 +26,7 @@ Message Mapping
 </td>
 <td valign="top">
 
-Parameterized message mappings from ES Repository can be imported with certain limitations. Only msessage mapping objects with *Simple Type* parameter category of the type *Import* are supported during migration. For more information, see [Designing and Configuring Parameterized Mapping Programs](https://help.sap.com/docs/SAP_NETWEAVER_750/bbd7c67c5eb14835843976b790024ec6/c47b8d9349e143a2b62e9b747eae4bce.html?version=latest).
+Parameterized message mappings from ES Repository can be imported with certain limitations. Only message mapping objects with *Simple Type* parameter category of the type *Import* are supported during migration. For more information, see [Designing and Configuring Parameterized Mapping Programs](https://help.sap.com/docs/SAP_NETWEAVER_750/bbd7c67c5eb14835843976b790024ec6/c47b8d9349e143a2b62e9b747eae4bce.html?version=latest).
 
 </td>
 </tr>
@@ -58,28 +56,12 @@ XML to CSV Converter
 
 For the patterns that support CSV to XML or XML to CSV converter, the following limitations apply:
 
--   XSD schema files from the source ICO aren't migrated. As an integration developer, you must manually download the schema files from the Enterprise Services Repository of SAP Process Orchestration and upload the same as resources in the integration flow. Then, configure the converter flow step before you deploy the integration flow.
+-   XSD schema files from the source integration object aren't migrated. As an integration developer, you must manually download the schema files from the Enterprise Services Repository of SAP Process Orchestration and upload the same as resources in the integration flow. Then, configure the converter flow step before you deploy the integration flow.
 
--   Field Fixed-Length separator isn't supported. You can't directly migrate field fixed length file-based Integrated Configuration Objects \(ICOs\).
-
-
+-   Field Fixed-Length separator isn't supported. You can't directly migrate field fixed length file-based integration objects.
 
 
-</td>
-</tr>
-<tr>
-<td valign="top">
 
-Multiple Operations on service instance
-
-</td>
-<td valign="top">
-
-Interfaces that use multiple operations aren't supported.
-
-![Screenshot of the Operations page. In the Operation Create section, the attributes selected are Normal Operation and Asynchronous Mode.](images/Multiple_Operations_on_Service_Instance_ab9bbd7.jpg)
-
-You must redesign your interface using an integration pattern to properly identify and handle the multiple operations. You could insert a router step to identify the correct operation and redirect the message to the proper message mapping and receiver.
 
 </td>
 </tr>

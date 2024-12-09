@@ -2,7 +2,7 @@
 
 # Configure the Visibility of Graph Navigator
 
-On this page, you have the option to adjust the visibility of the Graph navigator on the Developer Hub.
+On this page, you have the option to adjust the visibility of the Graph navigator on Developer Hub.
 
 
 
@@ -33,9 +33,9 @@ If the graph feature is deactivated in the Integration Suite, the *Configure Gra
 
 ## Procedure
 
-1.  Log on to the Developer Hub.
+1.  Log on to Developer Hub.
 
-2.  Choose *Admin Center* \> *Manage External Content* from the top navigation bar.
+2.  Choose *Admin Center* \> *Manage Content* \> *Configurations* from the top navigation bar.
 
 3.  Use the slider button to enable/disable the graph feature.
 

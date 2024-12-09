@@ -143,8 +143,14 @@ You can perform the following actions on the selected component. Depending on th
 -   *Create Heap Dump Diagnostic Task*. Diagnose issues related to memory consumption for the selected pod. For more information, see [Diagnostics](diagnostics-80f3050.md).
 -   *Create Thread Dump Diagnostic Task*. Diagnose unequal resource usage that may cause system slowness for the selected pod. For more information, see [Diagnostics](diagnostics-80f3050.md).
 
-> ### Note:  
-> The **Create Heap** and *Thread Dump Diagnostic Tasks* actions become available for components that support *Diagnostics* \(*Edge API App*, *Monitoring Data Consumer*, and *Edge Security Artifact Controller*\). The menu is enabled when the pod is in the *Running* status and when the number of target containers matches the number in the *Ready* column.
+    > ### Note:  
+    > The **Create Heap** and *Thread Dump Diagnostic Tasks* actions become available for components that support *Diagnostics* \(*Edge API App*, *Monitoring Data Consumer*, and *Edge Security Artifact Controller*\). The menu is enabled when the pod is in the *Running* status and when the number of target containers matches the number in the *Ready* column.
+
+-   *Invalidate Access Token Cache*. Manually invalidate access tokens to streamline authorization changes. By invalidating access tokens, you ensure that the system doesn't reuse old tokens from the cache when you change role assignments. Instead, it generates new tokens accordingly. This way, the authorization changes become effective without delay.
+
+    > ### Note:  
+    > This action is enabled in the menu of the Policy Engine component.
+
 
 
 

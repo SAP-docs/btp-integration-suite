@@ -12,7 +12,7 @@ There can be instances where you have to update the credentials once the connect
 
 To update the API portal access credentials, you must first generate it. To generate the credentials from the Integration Suite API Management tenant , you must have the APIPortal.Administrator role assigned to you.
 
-1.  Log in to the .
+1.  Log on to .
 
 2.  Choose the navigation icon on the left and choose *Settings* \> *APIs*.
 
@@ -30,11 +30,11 @@ To update the API portal access credentials, you must first generate it. To gene
 
 ## Context
 
-To establish the connection between the Integration Suite API Management tenant and the Developer Hub, the client Id and client secret created for the Integration Suite API Management tenant is shared during the connection request process.
+To establish the connection between the Integration Suite API Management tenant and Developer Hub, the client Id and client secret created for the Integration Suite API Management tenant is shared during the connection request process.
 
 If you encounter one of the following situations after the connection request has already been approved by the Developer Hub admin, you have to update the credentials:
 
--   The service instance, or the service key gets deleted after the connection between the Integration Suite API Management tenant and the Developer Hub was established. In this case, the credentials you were using before the service instance or the service key got deleted becomes invalid.
+-   The service instance, or the service key gets deleted after the connection between the Integration Suite API Management tenant and Developer Hub was established. In this case, the credentials you were using before the service instance or the service key got deleted becomes invalid.
 
 -   Similarly, if the destination that fetches the API content from the Integration Suite API Management tenant workspace gets deleted, the credentials you were using before the destination got deleted becomes invalid.
 
@@ -45,7 +45,7 @@ If you encounter one of the following situations after the connection request ha
 
 ## Procedure
 
-1.  Log on to the **Developer Hub**.
+1.  Log on to **Developer Hub**.
 
 2.  Navigate to the *Admin Center* \> *API Management Connections* and choose *Approved Requests*.
 

@@ -2,7 +2,7 @@
 
 # Migration of API Management Content
 
-You can choose to clone the API Management content from Neo to Cloud Foundry or between different Cloud Foundry environments.
+You can choose to clone the API Management content from Neo environment to multi-cloud foundation or between different Cloud Foundry environments.
 
 This table summarizes the migration strategy that we currently support:
 
@@ -33,7 +33,7 @@ More Details
 <tr>
 <td valign="top" rowspan="3">
 
-Migration of API Management content from Neo to Cloud Foundry
+Migration of API Management content from Neo to multi-cloud foundation
 
 </td>
 <td valign="top">

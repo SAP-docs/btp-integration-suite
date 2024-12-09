@@ -4,13 +4,18 @@
 
 # Subscribing and Configuring Initial Access to SAP Integration Suite
 
-Subscribe to the SAP Integration Suitein SAP BTP cockpit and assign the Integration\_Provisioner role to gain access.
+Subscribe to the SAP Integration Suite in SAP BTP cockpit and assign the Integration\_Provisioner role to gain access.
 
 
 
 <a name="loio8a3c8b7a6b1c4f249bb81d11644ef806__prereq_nbs_lth_vlb"/>
 
 ## Prerequisites
+
+> ### Note:  
+> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
+> 
+> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
 
 -   You’ve created a subaccount in your assigned global account using the SAP BTP cockpit and added the desired service plans for Integration Suite to the subaccount. For more information on service plans, see [SAP Discovery Center - Integration Suite](https://discovery-center.cloud.sap/serviceCatalog/integration-suite?region=all).
 

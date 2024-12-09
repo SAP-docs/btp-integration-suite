@@ -137,7 +137,7 @@ To process the integration flow, perform the following steps:
 
 2.  Start the Postman Runner and select collection *CPI Partner Directory Example Flows*.
 
-3.  Select folder *Authorized User* in the folder structure for the relevant cloud environment \(under *Neo Environment* \> *Integration Flows \(Neo\)* or *CF Environment* \> *Integration Flows \(CF\)*\).
+3.  Select folder *Authorized User* in the folder structure for the relevant cloud environment *CF Environment* \> *Integration Flows \(CF\)*\).
 
 4.  Start the Postman runner for this folder.
 

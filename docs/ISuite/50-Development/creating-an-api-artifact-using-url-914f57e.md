@@ -1,6 +1,6 @@
 <!-- loio914f57e52c8945f5b3ef97a79548aeec -->
 
-# Create an API Artifact Using URL
+# Creating an API Artifact Using URL
 
 Create an API artifact of the type REST, SOAP, and OData using the HTTP endpoint URL.
 

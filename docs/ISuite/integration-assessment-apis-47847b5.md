@@ -262,7 +262,15 @@ Request
 </td>
 <td valign="top">
 
-Business solution requests and interface requests represent the integration requirements. While a business solution request focuses on the business or project perspective, an interface request represents the technical view of integration scenarios.
+A request is the entry point for a business solution request within the request workflow. One request can include multiple interface requests. A business solution request has different statuses. Some statuses are set implicitly, while others can be set explicitly by user action or through API. Here are the supported actions with the associated statuses:
+
+-   *Create*: *Draft* \(implicit\)
+-   *Submit*: *New* \(explicit\)
+-   *Assess Interface Requests*: *In Progress* \(implicit\)
+-   *Complete*: *Completed* \(explicit\)
+-   *Reopen*: *In Progress* \(explicit\)
+
+
 
 </td>
 </tr>
@@ -274,7 +282,7 @@ Request Line Item
 </td>
 <td valign="top">
 
-A request line item is the representation of an integration flow within the request workflow.
+A request line item is the entry point for an interface request within the request workflow. It links integration and message flows to the respective request.
 
 </td>
 </tr>
@@ -286,7 +294,7 @@ Integration Flow
 </td>
 <td valign="top">
 
-An integration flow represents the overall integration of one or more applications.
+The set of one or more message flows that make up the intended integration scenario.
 
 </td>
 </tr>
@@ -298,7 +306,7 @@ Message Flow
 </td>
 <td valign="top">
 
- 
+It represents a specific integration scenario between a source and target applications that are part of the integration flow.
 
 </td>
 </tr>

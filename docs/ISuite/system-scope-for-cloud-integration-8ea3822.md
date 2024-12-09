@@ -2,7 +2,7 @@
 
 # System Scope for Cloud Integration 
 
-This section describes the system scope for Cloud Integration tenants that are deployed in the Cloud Foundry environment. Read the recommendations to know how to optimize the resources when exceeding the scope.
+This section describes the system scope for the Cloud Integration capability. Read the recommendations to know how to optimize the resources when exceeding the scope.
 
 
 <table>

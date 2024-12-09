@@ -13,9 +13,6 @@ To consume assets, you must agree with the provider on the conditions. This proc
 -   You've completed the steps described in [Discovering Offers Through a Catalog](discovering-offers-through-a-catalog-90f3619.md), in which you successfully discovered assets in the catalog.
 -   The role collection `DataspaceConsumer` and the role `credentialWrite` are assigned to your user.
 
-> ### Caution:  
-> If your business partner wants to consume your assets using the EDR Management APIs, they must use Data Space Integration, too. If they use a different Eclipse Dataspace Connector, they can't consume the asset. Instead, they must follow the alternative negotiation process described in [Consuming S3 Assets](consuming-s3-assets-4afdf5c.md).
-
 
 
 ## Context
@@ -23,15 +20,6 @@ To consume assets, you must agree with the provider on the conditions. This proc
 This topic describes the recommended process for triggering a contract negotiation and transferring HTTP assets using EDR \(Endpoint Data Reference\) Management APIs. We recommend this option for frequently used assets, however, it also creates a lot of traffic.
 
 If you want to work with S3 assets, see [Consuming S3 Assets](consuming-s3-assets-4afdf5c.md).
-
-> ### Note:  
-> When you use EDR Management APIs, EDRs are stored. Once they're about to expire, the Transfer Process is triggered automatically to get a fresh EDR token. This ultimately results in more traffic between the provider and the consumer. Therefore, consider the following before using this method:
-> 
-> -   To avoid unnecessary traffic, we recommend only using this API for assets that are frequently used.
-> 
-> -   Always check for your given assets whether the transfer process has already started before initiating another request \(see Step 4\). This avoids duplicate effort, meaning less traffic, and less load.
-> 
-> -   Delete EDR tokens if you do no need them anymore to reduce traffic \(see Step 6\).
 
 
 
@@ -43,151 +31,122 @@ If you want to work with S3 assets, see [Consuming S3 Assets](consuming-s3-asset
     > ```
     > POST /api/management/v2/edrs
     > 								
-    > 								{
-    > 								"@context": [
-    > 								"https://w3id.org/tractusx/policy/v1.0.0",
-    > 								{
-    > 								"@vocab": "https://w3id.org/edc/v0.0.1/ns/"
-    > 								}
-    > 								],
-    > 								"@type": "ContractRequest",
-    > 								"counterPartyAddress": "{{providerControlPlaneDsp}}",
-    > 								"counterPartyId": "{{providerBPN}}",
-    > 								"protocol": "dataspace-protocol-http",
-    > 								"policy": {
-    > 								"@context": "http://www.w3.org/ns/odrl.jsonld",
-    > 								"@type": "Offer",
-    > 								"@id": "{{offerId}}",
-    > 								"assigner": "{{providerBPN}}",
-    > 								"target": "{{assetId}}",
-    > 								"permission": "{{permission}}",
-    > 								"prohibition": [],
-    > 								"obligation": []
-    > 								}
-    > 								}
+    > {
+    >     "@context": {
+    >       "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+    >       "edc": "https://w3id.org/edc/v0.0.1/ns/",
+    >       "odrl": "http://www.w3.org/ns/odrl/2/",
+    >       "cx-policy": "https://w3id.org/catenax/policy/"
+    >     },   
+    >     "@type": "edc:ContractRequest",
+    >     "edc:counterPartyAddress": "{{providerControlPlaneDsp}}",
+    >     "edc:counterPartyId": "{{providerBPN}}",
+    >     "edc:protocol": "dataspace-protocol-http",
+    >     "edc:policy": {       
+    >         "@type": "odrl:Offer",
+    >         "@id": "{{offerId}}",
+    >         "odrl:assigner": "{{providerBPN}}",
+    >         "odrl:target": "{{assetId}}",
+    >         "odrl:permission": "{{permission}}",
+    >         "odrl:prohibition": [],
+    >         "odrl:obligation": []
+    >     }
+    > }					
     > ```
 
     The response includes the `ContractNegotiationId`.
 
-2.  Use the following API to request the state of the contract negotiation:
+2.  Optionally, you can use the following API to request the state of the contract negotiation:
 
     > ### Sample Code:  
     > ```
     > GET /api/management/v3/contractnegotiations/{{negotiationId}}/state
     > ```
 
-3.  Once the contract negotiation has reached the state **FINALIZED**, the contract agreement can be retrieved by using the following call:
+3.  Optionally, once the contract negotiation has reached the state **FINALIZED**, you can retrieve it by using the following call:
 
     > ### Sample Code:  
     > ```
     > GET /api/management/v3/contractnegotiations/{{negotiationId}}/agreement
     > ```
 
-4.  To retrieve the cached EDRs, first get the Transfer Process Id.
+4.  To retrieve the cached EDRs, perform one of the following calls. You can use an asset query, an agreement query, or a negotiation query.
+
+    -   Asset query:
+
+        ```
+        POST/api/management/v2/edrs/request
+        
+        {
+            "@context": {
+                "@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+            },
+            "@type": "edc:QuerySpec",
+            "edc:filterExpression": {
+                "@type": "edc:Criterion",
+                "edc:operandLeft": "assetId",
+                "edc:operator": "=",
+                "edc:operandRight": "{{assetId}}"
+            },
+            "edc:sortOrder": "ASC",
+            "edc:offset": 0,
+            "edc:limit": 100
+        }
+        ```
+
+    -   Agreement query:
+
+        ```
+        POST /api/management/v2/edrs/request 
+        
+        {
+            "@context": {
+                "@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+            },
+            "@type": "edc:QuerySpec",
+            "edc:filterExpression": {
+                "@type": "edc:Criterion",
+                "edc:operandLeft": "agreementId",
+                "edc:operator": "=",
+                "edc:operandRight": "{{agreementId}}"
+            },
+            "edc:sortOrder": "ASC",
+            "edc:offset": 0,
+            "edc:limit": 100
+        }
+        ```
+
+    -   Negotiation query:
+
+        ```
+        POST /api/management/v2/edrs/request
+        
+        {
+            "@context": {
+                "@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+            },
+            "@type": "edc:QuerySpec",
+            "edc:filterExpression": {
+                "@type": "edc:Criterion",
+                "edc:operandLeft": "contractNegotiationId",
+                "edc:operator": "=",
+                "edc:operandRight": "{{negotiationId}}"
+            },
+            "edc:sortOrder": "ASC",
+            "edc:offset": 0,
+            "edc:limit": 100
+        }
+        ```
+
+
+5.  After performing one of the API calls from the previous step, you can now get the EDR details by performing the following call and adding the transfer process ID:
 
     > ### Sample Code:  
     > ```
-    > GET /api/management/v3/edrs?assetId={{assetId}}&agreementId={{agreementId}}
+    > GET/api/management/v2/edrs/{{transferprocessId}}/dataaddress
     > ```
 
-    The API returns both the `assetId` and the `agreementId`, or each of them individually. If you return a combination of both, you ensure a single `transferProcessId`. If only one is provided, this can result in an array of transfer process details.
-
-    This is the response for a single EDR:
-
-    > ### Sample Code:  
-    > ```
-    > [
-    > 								{
-    > 								"@type": "tx:EndpointDataReferenceEntry",
-    > 								"edc:agreementId": "<<contract-agreement-id>>",
-    > 								"edc:transferProcessId": "<<transfer-process-id>>",
-    > 								"edc:assetId": "<<asset-id>>",
-    > 								"edc:providerId": "<<providerBPN>>",
-    > 								"tx:edrState": "NEGOTIATED",
-    > 								"tx:expirationDate": 1704908278000,
-    > 								"@context": {
-    > 								"dct": "https://purl.org/dc/terms/",
-    > 								"tx": "https://w3id.org/tractusx/v0.0.1/ns/",
-    > 								"edc": "https://w3id.org/edc/v0.0.1/ns/",
-    > 								"dcat": "https://www.w3.org/ns/dcat/",
-    > 								"odrl": "http://www.w3.org/ns/odrl/2/",
-    > 								"dspace": "https://w3id.org/dspace/v0.8/"
-    > 								}
-    > 								}
-    > 								]
-    > ```
-
-    This is the response for multiple EDRs \(when either the assetId or agreementId is given, and when there are multiple transferProcess combinations\):
-
-    > ### Sample Code:  
-    > ```
-    > [
-    > 								{
-    > 								"@type": "tx:EndpointDataReferenceEntry",
-    > 								"edc:agreementId": "<<contract-agreement-id1>>",
-    > 								"edc:transferProcessId": "<<transfer-process-id1>>",
-    > 								"edc:assetId": "<<asset-id>>",
-    > 								"edc:providerId": "<<providerBPN>>",
-    > 								"tx:edrState": "NEGOTIATED",
-    > 								"tx:expirationDate": 1704908278000,
-    > 								"@context": {
-    > 								"dct": "https://purl.org/dc/terms/",
-    > 								"tx": "https://w3id.org/tractusx/v0.0.1/ns/",
-    > 								"edc": "https://w3id.org/edc/v0.0.1/ns/",
-    > 								"dcat": "https://www.w3.org/ns/dcat/",
-    > 								"odrl": "http://www.w3.org/ns/odrl/2/",
-    > 								"dspace": "https://w3id.org/dspace/v0.8/"
-    > 								}
-    > 								},
-    > 								{
-    > 								"@type": "tx:EndpointDataReferenceEntry",
-    > 								"edc:agreementId": "<<contract-agreement-id2>>",
-    > 								"edc:transferProcessId": "<<transfer-process-id2>>",
-    > 								"edc:assetId": "<<asset-id>>",
-    > 								"edc:providerId": "<<providerBPN>>",
-    > 								"tx:edrState": "NEGOTIATED",
-    > 								"tx:expirationDate": 1704808278000,
-    > 								"@context": {
-    > 								"dct": "https://purl.org/dc/terms/",
-    > 								"tx": "https://w3id.org/tractusx/v0.0.1/ns/",
-    > 								"edc": "https://w3id.org/edc/v0.0.1/ns/",
-    > 								"dcat": "https://www.w3.org/ns/dcat/",
-    > 								"odrl": "http://www.w3.org/ns/odrl/2/",
-    > 								"dspace": "https://w3id.org/dspace/v0.8/"
-    > 								}
-    > 								}
-    > 								]
-    > ```
-
-5.  To get the EDR details, add the transferProcessId from the response to the following call:
-
-    > ### Sample Code:  
-    > ```
-    > GET /api/management/v2/edrs/{{transferprocessId}}
-    > ```
-
-    > ### Sample Code:  
-    > ```
-    > {
-    > 								"@type": "edc:DataAddress",
-    > 								"edc:cid": "<<contract-agreement-id>>",
-    > 								"edc:type": "EDR",
-    > 								"edc:authCode": "<<Bearer Authorization token>>",
-    > 								"edc:endpoint": "<<dataplane endpoint url>>>>",
-    > 								"edc:id": "<<Id>>",
-    > 								"edc:authKey": "Authorization",
-    > 								"@context": {
-    > 								"dct": "https://purl.org/dc/terms/",
-    > 								"tx": "https://w3id.org/tractusx/v0.0.1/ns/",
-    > 								"edc": "https://w3id.org/edc/v0.0.1/ns/",
-    > 								"dcat": "https://www.w3.org/ns/dcat/",
-    > 								"odrl": "http://www.w3.org/ns/odrl/2/",
-    > 								"dspace": "https://w3id.org/dspace/v0.8/"
-    > 								}
-    > 								}
-    > ```
-
-    With the response details, you can make a call to the data plane provider and to get all of the asset's details.
+    With the response details, you can call the data plane provider and to get the asset's details.
 
 6.  The stored EDR's token has an expiration time of 70 mins.
 
@@ -196,13 +155,13 @@ If you want to work with S3 assets, see [Consuming S3 Assets](consuming-s3-asset
     For the automatic refresh of the EDRS token, perform the following call:
 
     ```
-    GET /api/management/v2/edrs/"transferprocessId"/dataaddress?auto_refresh=true
+    GET /api/management/v2/edrs/{{transferprocessId}}/dataaddress?auto_refresh=true
     ```
 
     If you want to refresh the EDR manually, perform the call:
 
     ```
-    POST/api/management/v2/edrs/"transferprocessId"/refresh
+    POST/api/management/v2/edrs/{{transferprocessId}}/refresh
     ```
 
     When you don't require an EDR anymore, you need to delete it using the API. This way, you avoid unnecessary traffic between the consumer and the provider. Use the following call:

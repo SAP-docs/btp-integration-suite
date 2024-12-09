@@ -125,5 +125,5 @@ Import the Postman collection provided with the integration package and select t
 
 [Access Header and Properties in Message Mapping](access-header-and-properties-in-message-mapping-4f2a8c9.md "Learn how to access header and exchange properties in a message mapping.")
 
-[Define a Local Script Step](define-a-local-script-step-03b32eb.md "You can create a script step that is specific to an integration artifact to execute custom scripts (JavaScript or Groovy Script).")
+[Define a Local Script Step](define-a-local-script-step-03b32eb.md "Learn how to use a script step that’s specific to an integration artifact to create custom scripts (JavaScript or Groovy Script).")
 

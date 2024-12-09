@@ -2,7 +2,7 @@
 
 # Managing the Access Request of the Users
 
-As an API administrator, you can approve or reject the access request made by an application developer to use the Developer Hub.
+As an API administrator, you can approve or reject the access request made by an application developer to use Developer Hub.
 
 
 
@@ -18,7 +18,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
 
 ## Procedure
 
-1.  Log on to the **Developer Hub**.
+1.  Log on to **Developer Hub**.
 
     Use the *Manage Users* page to approve or reject the developer's registration requests and manage the roles of the registered users. For assigning roles to the users, use the SAP BTP Cockpit.
 
@@ -31,7 +31,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
 
 3.  To view the pending requests, navigate to *Manage Users* \> *New Requests*.
 
-4.  Look for the request and choose *Accept Request* from the *Actions* coulmn. The application developer can now access the Developer Hub.
+4.  Look for the request and choose *Accept Request* from the *Actions* coulmn. The application developer can now access Developer Hub.
 
     > ### Note:  
     > The user will be added to all the IDPs configured in the sub-account, along with the *ApplicationDeveloper* role.

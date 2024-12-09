@@ -152,9 +152,9 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
 
 3.  Choose <span class="SAP-icons-V5"></span> and then choose *Inject* \> *SAP Cloud Integration Flow Resources*.
 
-4.  Choose an SAP Cloud Integration tenant from the *Destinations* list.
+4.  Choose an SAP Cloud Integration tenant from the *Connections* list.
 
-    The *Destinations* table displays two sections:
+    The *Connections* table displays two sections:
 
     1.  *Built-In*: Displays the Cloud Integration tenant associated with your Integration Suite subscription.
 
@@ -166,7 +166,7 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
 
 6.  On selecting the package, the next step displays the list of integration flows available under that package. Select an integration flow from the list into which you want to inject the resources and choose *Inject*.
 
-7.  The *Summary* step provides the following information:
+7.  The *Result* step provides the following information:
 
     1.  *Status* to show if the injection was successful
 

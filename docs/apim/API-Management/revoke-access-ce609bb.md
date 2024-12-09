@@ -20,7 +20,7 @@ You are an API administrator and the role *AuthGroup.API.Admin* is assigned to y
 
 ## Context
 
-As an API administrator, you use this procedure to revoke an application developer's access for using the Developer Hub.
+As an API administrator, you use this procedure to revoke an application developer's access for using Developer Hub.
 
 
 
@@ -28,7 +28,7 @@ As an API administrator, you use this procedure to revoke an application develop
 
 ## Procedure
 
-1.  Log on to the **Developer Hub**.
+1.  Log on to **Developer Hub**.
 
 2.  Choose *Admin Center* \> *Manage Users* \> *Registered Users*.
 

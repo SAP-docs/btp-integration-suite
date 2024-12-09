@@ -11,6 +11,8 @@ You can inspect consumption of integration resources, identify those integration
 > ### Note:  
 > To use this feature, role collection `MonitoringDataRead` needs to be assigned to your user \(see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)\).
 
+Watch the following video to learn how to use *Inspect* and for an overview of a typical workflow. The video uses database connection usage as an example, but the workflow also applies to any other resources.
+
 
 
 <a name="loioa4d5e49e24f54a7a81b31eb07f1714ac__section_a4l_sct_2xb"/>

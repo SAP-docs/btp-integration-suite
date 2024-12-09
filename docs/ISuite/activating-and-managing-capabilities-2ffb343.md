@@ -12,6 +12,11 @@ Activate capabilities for the SAP Integration Suite.
 
 ## Prerequisites
 
+> ### Note:  
+> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
+> 
+> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
+
 -   You have access to the Integration Suite home page. See [Working with Integration Suite Home](20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md).
 -   You have the Integration\_Provisioner role collection assigned to your user. See [Subscribing and Configuring Initial Access to SAP Integration Suite](10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
 
@@ -36,6 +41,8 @@ This topic describes how to add and activate relevant capabilities in Integratio
 -   Integration Advisor
 
 -   Trading Partner Management
+
+-   OData Provisioning
 
 -   Data Space Integration
 
@@ -141,6 +148,25 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <tr>
     <td valign="top">
     
+    OData Provisioning
+
+    > ### Remember:  
+    > To register OData services from the SAP Business Suite you need to install a Cloud Connector and perform the necessary configurations for connecting to the on-premise back-end system. For more information, see [Cloud Connector](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector?version=Cloud).
+
+
+    
+    </td>
+    <td valign="top">
+    
+    *Access data in SAP Business Suite*
+
+    For end-to-end instructions on activating the OData Provisioning capability, see [Runtime Access and Role Assignment for OData Provisioning](runtime-access-and-role-assignment-for-odata-provisioning-b46816c.md)
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Open Connectors
     
     </td>
@@ -220,6 +246,8 @@ This topic describes how to add and activate relevant capabilities in Integratio
 3.  Choose *Activate*. ![](images/sui_summary_327220b.png)
 
     > ### Note:  
+    > -   The availability of capabilities for activation is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://me.sap.com/notes/2903776).
+    > 
     > -   If you face any issues during activation or the activation fails, then refer SAP Note [2904202](https://me.sap.com/notes/2904202) and proceed accordingly.
     > 
     > -   You can choose *Manage Capabilities* to activate additional capabilities at a later point in time.
@@ -244,5 +272,5 @@ This topic describes how to add and activate relevant capabilities in Integratio
 **Related Information**  
 
 
-[Centralized Developer Hub](centralized-developer-hub-38422de.md "The Developer Hub is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
+[Centralized Developer Hub](centralized-developer-hub-38422de.md "Developer Hub is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
 

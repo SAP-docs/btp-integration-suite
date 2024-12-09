@@ -2,9 +2,9 @@
 
 # Inspect System Memory Usage
 
-Inspect the usage of the system memory for a given time period \(as selected with the *Time* parameter\).
+Inspect the usage of the system heap memory for a given time period \(as selected with the *Time* parameter\).
 
-Messages processed by integration flows at runtime consume system memory. Memory consumption depends on several factors:
+Messages processed by integration flows at runtime consume system heap memory. Consumption of heap memory depends on several factors:
 
 -   Message throughput
 
@@ -21,7 +21,7 @@ Messages processed by integration flows at runtime consume system memory. Memory
 
 ## Screen Components
 
-The bar chart shows the message load of the system memory for a defined time period, as shown in the image below.![](images/Inspect_Memory_Usage_21a01f3.png)
+The bar chart shows the message load for a defined time period, as shown in the image below.![](images/Inspect_Memory_Usage_21a01f3.png)
 
 You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*, *Past Month*, or *Custom* for a custom time interval.
 
@@ -36,7 +36,7 @@ The message load is plotted in two charts against time:
 
 -   The maximum message size within this time period is plotted in a line chart with a blue bullet.
 
--   In addition, time periods during which a memory exhaustion was observed are marked in red on the horizontal axis.
+-   In addition, time periods during which an exhaustion of heap memory was observed are marked in red on the horizontal axis.
 
 
 > ### Note:  

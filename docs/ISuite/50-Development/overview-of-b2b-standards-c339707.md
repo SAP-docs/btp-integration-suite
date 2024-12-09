@@ -5860,7 +5860,7 @@ Last Version \(if discontinued\)
 Envelope – Envelope with Functional Groups of Messages
 
 > ### Note:  
-> This message is applicable for all automotive EDIFACTS \(JAIF/VDA/Odette\).
+> This message is specifically designed to capture and define the envelope structure.
 
 
 
@@ -7639,21 +7639,13 @@ EnvelopeForMessagesS3 – Envelope for Messages \(Syntax Versions 1/2/3\)
 
 > ### Note:  
 > This message is specifically designed to capture and define the envelope structure.
-> 
-> This message is applicable for all automotive EDIFACTS \(JAIF/VDA/Odette\).
 
 
 
 </td>
 <td valign="top">
 
--   UN/EDIFACT: 92.1 S3
--   JAIF: D.03A S3
-
--   VDA: D.96A S3
--   Odette: D.96A
-
-
+92.1 S3
 
 </td>
 <td valign="top">
@@ -7669,21 +7661,13 @@ EnvelopeWithFunctionalGroupsS3 – Envelope with Functional Groups of Messages \
 
 > ### Note:  
 > This message is specifically designed to capture and define the envelope structure.
-> 
-> This message is applicable for all automotive EDIFACTS \(JAIF/VDA/Odette\).
 
 
 
 </td>
 <td valign="top">
 
--   UN/EDIFACT: 92.1 S3
--   JAIF: D.03A S3
-
--   VDA: D.96A S3
--   Odette: D.96A
-
-
+92.1 S3
 
 </td>
 <td valign="top">
@@ -10234,6 +10218,20 @@ Version
 <td valign="top">
 
 1.2.062
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.2.063
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.2.064
 
 </td>
 </tr>
@@ -18861,6 +18859,2369 @@ warehousingOutboundNotificationMessage - Warehousing Outbound Notification Messa
 
 
 
+<a name="loioc339707982d141efa7c7849d033ca70d__section_brl_jv4_kdc"/>
+
+## xCBL
+
+**Versions \(3\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Version
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+</table>
+
+**Message Types \(135\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Message Type
+
+</th>
+<th valign="top">
+
+Namespace
+
+</th>
+<th valign="top">
+
+Version
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+AccountCheckRequest - Account Check Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/applicationintegration/v1\_0/applicationintegration.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AdvanceShipmentNotice - Advance Shipment Notice
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AdvanceShipmentNotice - Advance Shipment Notice
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AdvanceShipmentNotice - Advance Shipment Notice
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/materialsmanagement/v1\_0/materialsmanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ApplicationResponse - Application Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ApplicationResponse - Application Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/messagemanagement/v1\_0/messagemanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AuctionCreate - Auction Create
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AuctionCreate - Auction Create
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AuctionCreateResponse - Auction Create Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AuctionCreateResponse - Auction Create Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AuctionResult - Auction Result
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AuctionResult - Auction Result
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AuctionResultResponse - Auction Result Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AuctionResultResponse - Auction Result Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AvailabilityCheckRequest - Availability Check Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AvailabilityCheckRequest - Availability Check Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AvailabilityCheckRequest - Availability Check Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/preordermanagement/v1\_0/preordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AvailabilityCheckResult - Availability Check Result
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AvailabilityCheckResult - Availability Check Result
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AvailabilityCheckResult - Availability Check Result
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/preordermanagement/v1\_0/preordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AvailabilityToPromise - Availability To Promise
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AvailabilityToPromise - Availability To Promise
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AvailabilityToPromise - Availability To Promise
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/preordermanagement/v1\_0/preordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AvailabilityToPromiseResponse - Availability To Promise Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AvailabilityToPromiseResponse - Availability To Promise Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AvailabilityToPromiseResponse - Availability To Promise Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/preordermanagement/v1\_0/preordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ChangeOrder - Change Order
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ChangeOrder–Change Order
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ChangeOrder - Change Order
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/ordermanagement/v1\_0/ordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ErrorResponse - Error Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/messagemanagement/v1\_0/messagemanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FXRateRequest - FX Rate Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FXRateRequest - FX Rate Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FXRateRequest - FX Rate Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/financial/v1\_0/financial.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FXRateResponse - FX Rate Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FXRateResponse - FX Rate Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FXRateResponse - FX Rate Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/financial/v1\_0/financial.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GetERPData - Get ERP Data
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/applicationintegration/v1\_0/applicationintegration.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GetERPDataResponse - Get ERP Data Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/applicationintegration/v1\_0/applicationintegration.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GetOrder - Get Order
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/applicationintegration/v1\_0/applicationintegration.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GoodsReceipt - Goods Receipt
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GoodsReceipt - Goods Receipt
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/materialsmanagement/v1\_0/materialsmanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InventoryReport - Inventory Report
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/materialsmanagement/v1\_0/materialsmanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Invoice
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Invoice
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Invoice
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/financial/v1\_0/financial.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InvoiceResponse - Invoice Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+InvoiceResponse - Invoice Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/financial/v1\_0/financial.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MessageAcknowledgement - Message Acknowledgement
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MessageAcknowledgement - Message Acknowledgement
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MessageAcknowledgement - Message Acknowledgement
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/messagemanagement/v1\_0/messagemanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Order
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Order
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Order
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/ordermanagement/v1\_0/ordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderConfirmation - Order Confirmation
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderConfirmation - Order Confirmation
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/ordermanagement/v1\_0/ordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderConfirmationResponse - Order Confirmation Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderConfirmationResponse - Order Confirmation Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/ordermanagement/v1\_0/ordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderRequest - Order Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderRequest - Order Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderRequest - Order Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/ordermanagement/v1\_0/ordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderResponse - Order Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderResponse - Order Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderResponse - Order Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/ordermanagement/v1\_0/ordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderStatusRequest - Order Status Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderStatusRequest - Order Status Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderStatusRequest - Order Status Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/ordermanagement/v1\_0/ordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderStatusResult - Order Status Result
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderStatusResult - Order Status Result
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OrderStatusResult - Order Status Result
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/ordermanagement/v1\_0/ordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentRequest - Payment Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentRequest - Payment Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentRequest - Payment Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/financial/v1\_0/financial.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentRequestAcknowledgment - Payment Request Acknowledgment
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentRequestAcknowledgment - Payment Request Acknowledgment
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentRequestAcknowledgment - Payment Request Acknowledgment
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/financial/v1\_0/financial.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentStatusRequest - Payment Status Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentStatusRequest - Payment Status Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentStatusRequest - Payment Status Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/financial/v1\_0/financial.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentStatusResponse - Payment Status Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentStatusResponse - Payment Status Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PaymentStatusResponse - Payment Status Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/financial/v1\_0/financial.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PlanningSchedule - Planning Schedule
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PlanningSchedule - Planning Schedule
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PlanningSchedule - Planning Schedule
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/materialsmanagement/v1\_0/materialsmanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PlanningScheduleResponse - Planning Schedule Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PlanningScheduleResponse - Planning Schedule Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PlanningScheduleResponse - Planning Schedule Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/materialsmanagement/v1\_0/materialsmanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PriceCheckRequest - Price Check Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PriceCheckRequest - Price Check Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PriceCheckRequest - Price Check Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/preordermanagement/v1\_0/preordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PriceCheckResult - Price Check Result
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PriceCheckResult - Price Check Result
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PriceCheckResult - Price Check Result
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/preordermanagement/v1\_0/preordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ProductCatalog - Product Catalog
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ProductCatalog - Product Catalog
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ProductCatalog - Product Catalog
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/catalog/v1\_0/catalog.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Quote
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Quote
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Quote
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/preordermanagement/v1\_0/preordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RemittanceAdvice - Remittance Advice
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RemittanceAdvice - Remittance Advice
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RemittanceAdvice - Remittance Advice
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/financial/v1\_0/financial.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RequestForQuotation - Request For Quotation
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RequestForQuotation - Request For Quotation
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RequestForQuotation - Request For Quotation
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/preordermanagement/v1\_0/preordermanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Requisition
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/applicationintegration/v1\_0/applicationintegration.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ShippingSchedule - Shipping Schedule
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ShippingSchedule - Shipping Schedule
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ShippingSchedule - Shipping Schedule
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/materialsmanagement/v1\_0/materialsmanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ShippingScheduleResponse - Shipping Schedule Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ShippingScheduleResponse - Shipping Schedule Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ShippingScheduleResponse - Shipping Schedule Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/materialsmanagement/v1\_0/materialsmanagement.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SourcingCreate - Sourcing Create
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SourcingCreateResponse - Sourcing Create Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SourcingResult - Sourcing Result
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SourcingResultResponse - Sourcing Result Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TimeSeries - Time Series
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TimeSeries - Time Series
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TimeSeries - Time Series
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/statisticsandforecasting/v1\_0/statisticsandforecasting.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TimeSeriesRequest - Time Series Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TimeSeriesRequest - Time Series Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TimeSeriesRequest - Time Series Request
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/statisticsandforecasting/v1\_0/statisticsandforecasting.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TimeSeriesResponse - Time Series Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TimeSeriesResponse - Time Series Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TimeSeriesResponse - Time Series Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v4\_0/statisticsandforecasting/v1\_0/statisticsandforecasting.xsd
+
+</td>
+<td valign="top">
+
+4.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TradingPartnerOrganizationDelete - Trading Partner Organization Delete
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TradingPartnerOrganizationDelete - Trading Partner Organization Delete
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TradingPartnerOrganizationInformation - Trading Partner Organization Information
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TradingPartnerOrganizationInformation - Trading Partner Organization Information
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TradingPartnerResponse - Trading Partner Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TradingPartnerResponse–Trading Partner Response
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TradingPartnerUserDelete - Trading Partner User Delete
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TradingPartnerUserDelete - Trading Partner User Delete
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TradingPartnerUserInformation - Trading Partner User Information
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_0/xcbl30.xsd
+
+</td>
+<td valign="top">
+
+3.0
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TradingPartnerUserInformation - Trading Partner User Information
+
+</td>
+<td valign="top">
+
+rrn:org.xcbl:schemas/xcbl/v3\_5/xcbl35.xsd
+
+</td>
+<td valign="top">
+
+3.5
+
+</td>
+</tr>
+</table>
+
+The standard organization **xCBL.org** has used a design where the namespace is specific to a version. As a result, each Message Type is applicable to 1 version only \(because a Message Type is always identified by Identifier + Namespace\).
+
+> ### Note:  
+> Message Types with same Identifier \(like Order\) are nevertheless considered as logical predecessors.
+
+
+
 <a name="loioc339707982d141efa7c7849d033ca70d__section_qr1_mdv_b5b"/>
 
 ## ISO Codelists
@@ -24768,10 +27129,13 @@ Codelist
 
 ## Further Reading
 
--   [GS1 EANCOM Library in Integration Advisor](https://blogs.sap.com/2020/04/09/integration-advisor-now-gs1-eancom-library-available/)
+-   [GS1 EANCOM Library in Integration Advisor](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-now-gs1-eancom-library-available/ba-p/13427011)
 
--   [Automotive Edifact Subsets](https://blogs.sap.com/2021/04/06/integration-advisor-automotive-edifact-subsets-jaif-odette-vda-now-available/)
--   [Odette Message Standard](https://blogs.sap.com/2020/12/21/integration-advisor-odette-message-standard/)
--   [https://blogs.sap.com/2022/03/09/integration-advisor-new-versions-for-b2b-libraries-cxml-asc-x12-and-un-edifact/](https://blogs.sap.com/2022/03/09/integration-advisor-new-versions-for-b2b-libraries-cxml-asc-x12-and-un-edifact/)
--   [GS1 Codelists](https://blogs.sap.com/2022/10/20/integration-advisor-now-gs1-global-codelists-library-available/)
+-   [Automotive Edifact Subsets](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-automotive-edifact-subsets-jaif-odette-vda-now/ba-p/13501082)
+-   [Odette Message Standard](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-odette-message-standard/ba-p/13478984)
+-   [GS1 XML Messages](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-gs1-xml-messages-and-namespace-support/ba-p/13570459)
+-   [GS1 Codelists](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-now-gs1-global-codelists-library-available/ba-p/13534622)
+-   [Tradacoms Message Standard](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-tradacoms-message-standard/ba-p/13574197)
+-   [EDI Envelopes in Integration Advisor](https://community.sap.com/t5/technology-blogs-by-sap/using-edi-envelopes-in-integration-advisor/ba-p/13915328)
+-   [xCBL Messages](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-support-of-xcbl-messages/ba-p/13945779)
 

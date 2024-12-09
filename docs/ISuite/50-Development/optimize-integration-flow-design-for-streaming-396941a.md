@@ -697,8 +697,6 @@ Parameter *Quality of Service* set to *Exactly Once*
 
 Parameter *Temporary Storage* set to *Data Store*
 
-Environment: Neo
-
 </td>
 <td valign="top">
 
@@ -1607,7 +1605,7 @@ Persist
 </td>
 <td valign="top">
 
-Environment: Neo
+
 
 </td>
 <td valign="top">
@@ -1651,7 +1649,7 @@ Data Store Write
 </td>
 <td valign="top">
 
-Environment: Neo
+
 
 </td>
 <td valign="top">

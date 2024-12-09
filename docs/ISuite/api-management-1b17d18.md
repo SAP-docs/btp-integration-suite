@@ -1,8 +1,15 @@
 <!-- loio1b17d18006d2472e81aa2f7af066a1b2 -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # API Management
 
 The API Management capability in SAP Integration Suite is a complete solution, that addresses all enterprise requirements for API security and governance. It lets you publish, promote, and oversee APIs in a secure and scalable environment.
+
+> ### Note:  
+> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
+> 
+> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
 
 With API Management you can perform the following tasks:
 
@@ -122,5 +129,9 @@ You can provision the API Management capability from the Integration Suite launc
 **Related Information**  
 
 
+[Working with API Management](working-with-api-management-321fb4d.md "Get an understanding of API Management within SAP Integration Suite and leverage its capabilities effectively.")
+
 [API Lifecycle](api-lifecycle-5e8ea7d.md "The API lifecycle, starts from API planning, creation and implementation by company developers and other API creators and composers, to the consumption of these APIs by other employees, partners or users of the company’s products and services.")
+
+[Developer Hub](developer-hub-41f7c45.md "Developer Hub is a web-based platform designed for developers to discover, explore, and utilize APIs offered by an organization.")
 

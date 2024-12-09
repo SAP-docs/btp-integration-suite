@@ -16,25 +16,6 @@ You use this task to encode messages using an encoding scheme to secure any sens
 
 3.  Select one of the following encoding schemes:
 
-    -   *Base64 Encode*
-
-        Encodes the message content using base64.
-
-    -   *GZIP Compress*: Compresses the message content using GNU zip \(GZIP\).
-
-    -   *ZIP Compress*: Compresses the message content using zip \(only zip archives with a single entry supported\).
-
-    -   *MIME Multipart Encode*: Transforms the message content into a MIME multipart message.
-
-        A Multipurpose Internet Mail Extensions \(MIME\) multipart message allows you to combine different kinds of content in one message \(for example, plain text and attachments\).
-
-        If you want to send a message with attachments, but the protocol \(for example, HTTP or SFTP\) does not support attachments, you can send the message as a MIME multipart instead.
-
-        > ### Note:  
-        > Note that SAP Cloud Integration does not support the processing of MIME multipart messages that contain multiple attachments with the same file name.
-
-        More information: [Define a MIME Multipart Encoder](define-a-mime-multipart-encoder-8c12a8e.md)
-
 
 4.  Save the changes.
 

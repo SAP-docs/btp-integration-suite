@@ -26,7 +26,7 @@ You should have at least one Edge Integration Cell runtime provisioned.
 
 3.  Select the *<integration package\>* where you want to create your API artifact.
 
-4.  To expose a service as an API artifact, choose *Edit* and navigate to the *Artifacts* tab. For detailed steps on how to add an API artifact, see [Add an API Artifact](add-an-api-artifact-c2fe62c.md).
+4.  To expose a service as an API artifact, choose *Edit* and navigate to the *Artifacts* tab. For detailed steps on how to add an API artifact, see [Adding an API Artifact](adding-an-api-artifact-c2fe62c.md).
 
     If you wish to deploy an API artifact that has already been created, select the *<integration package\>* where you created the API artifact.
 
@@ -60,9 +60,9 @@ After deploying the API artifact, you can check the runtime logs and the status 
 **Related Information**  
 
 
-[Add an API Artifact](add-an-api-artifact-c2fe62c.md "Add an API artifact to an package.")
+[Adding an API Artifact](adding-an-api-artifact-c2fe62c.md "Add an API artifact to an package.")
 
-[Copy an API Artifact](copy-an-api-artifact-820c9e8.md "You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API but with some modifications or variations. The copy feature allows you to quickly duplicate the API artifact and make the necessary changes without starting from scratch.You can create a duplicate of an API artifact by copying it within the same package or in a different integration package within the same Integration Suite subscription.")
+[Copying an API Artifact](copying-an-api-artifact-820c9e8.md "You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API but with some modifications or variations. The copy feature allows you to quickly duplicate the API artifact and make the necessary changes without starting from scratch.You can create a duplicate of an API artifact by copying it within the same package or in a different integration package within the same Integration Suite subscription.")
 
 [Policy Definition and Types of Policies Supported by Edge Integration Cell](policy-definition-and-types-of-policies-supported-by-edge-integration-cell-c744df5.md "You can define the behavior of an API by using policy steps.")
 

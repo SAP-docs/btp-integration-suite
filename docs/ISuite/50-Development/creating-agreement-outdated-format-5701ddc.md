@@ -348,7 +348,7 @@ You are creating an agreement using the outdated template format. This template 
     > 
     > -   ASC X12
     > 
-    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md).
+    > You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Monitor Interchanges](monitor-interchanges-42c1199.md).
 
 19. If you are planning to use custom integration flows for Pre-Processing of your interchange step, then enable the checkbox for the field *Customized Pre-Processing*.
 

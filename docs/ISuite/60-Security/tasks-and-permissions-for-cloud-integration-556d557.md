@@ -4,20 +4,6 @@
 
 The following table provides an overview of which roles are required in order to accomplish the various tasks related to Cloud Integration. It's also indicated in how far the tasks and roles are relevant for the main persona defined for Cloud Integration.
 
-In the different environments, these persona are mapped to different objects.
-
--   In the Neo environment, a persona is realized by an authorization group \(beginning with the string *AuthGroup*\).
-
--   In the Cloud Foundry environment, a persona ia realized by a role collection.
-
-
-The mapping of the persona to the authorization groups \(Neo\) or role collections \(Cloud Foundry\) is described under [Personas for Cloud Integration](personas-for-cloud-integration-2937e5c.md).
-
-In the different environments, the permissions to execute certain tasks are given by different objects.
-
--   In the Neo environment, a permission to execute a task is given by a role.
-
--   In the Cloud Foundry environment, a permission to execute a task is given by a role template.
 
 
 **Tasks and Permissions**

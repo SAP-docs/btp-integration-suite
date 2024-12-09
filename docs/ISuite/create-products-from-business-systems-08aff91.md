@@ -16,7 +16,7 @@ The *AuthGroup.Content.Admin* role collection should be assigned to you.
 
 ## Procedure
 
-1.  Log on to the Developer Hub.
+1.  Log on to Developer Hub.
 
 2.  Navigate to the *Admin Center* \> *Manage* \> *Content*.
 

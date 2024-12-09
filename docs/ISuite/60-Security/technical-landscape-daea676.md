@@ -42,8 +42,6 @@ These are the basic constituents of the virtual platform:
 
 -   As an alternative deployment option, you can deploy integration content in the private cloud environment managed by the customer. Using this option, messages are processed on a runtime component in the customer landscape. This way of integration is also referred to as ground-to-ground integration. In technical terms, this runtime is realized as set of compute clusters managed by Kubernetes.
 
--   The customer-managed private cloud runtime can operate independent from SAP BTP for a dedicated time \(4 hours\). That means, if the connection between SAP BTP and the customer landscape is interrupted for up to 4 hours, the integration scenarios operated on the Edge runtime continue to operate. Like the integration content also the security-relevant artifacts \(for example, User Credentials artifacts or keystore entries\) are maintained by the SAP Integration Suite user interface on SAP BTP. To make sure that the correct artifact version is used on an Edge runtime, there’s a synchronization mechanism between the Edge runtime and SAP BTP. The synchronization is triggered by the Edge runtime on a regular basis \(pull pattern\).
-
 
 As consequence of this cluster design, the following main communication paths are active during the operation of an integration scenario:
 
@@ -66,7 +64,7 @@ As consequence of this cluster design, the following main communication paths ar
 
     For more information about XSUAA, see [What Is the SAP Authorization and Trust Management Service?](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/649961f8d4ad463daca33b3a20deba4c.html).
 
--   Communication of Edge runtime \(Kubernetes cluster in customer’s private cloud environment\) and remote components \(when Edge Integration Cell use case is applied\)
+-   Communication of Edge runtime \(Kubernetes cluster in customer’s private cloud environment\) and remote components \(when Edge Integration Celll use case is applied\)
 
 
 Various secure technical protocols can be used for these communication paths. Depending on the adapter type, the following protocols are available.

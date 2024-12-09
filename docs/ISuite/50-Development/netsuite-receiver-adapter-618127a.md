@@ -30,15 +30,23 @@ For Example, SAP S4/HANA generates and pushes the list of Business Partners to b
 
 
 
+The adapter supports the following variants:
+
+-   SOAP
+
+-   RESTlet
+
+
+
 <a name="loio618127afc04e43179a34452d28780e50__section_ndv_2s4_tbc"/>
 
 ## Configuring the NetSuite Receiver Adapter
 
-Once you have created a receiver channel and selected the NetSuite receiver adapter, you can configure the attributes in the *Connection* and *Processing* tabs.
+The following tables describe the parameters that you need to configuration for a selected adapter variant.
 
-Select the *Connection* tab.
 
-The *Connection* tab contains the connection and the authentication parameters for connecting to NetSuite. The adapter employs a based Authentication \(TBA\) mechanism.
+
+### SOAP
 
 **Connection**
 
@@ -136,10 +144,6 @@ Example: `6000`
 </tr>
 </table>
 
-Select the *Processing* tab.
-
-The *Processing* tab contains all operational-related configurations for the NetSuite adapter.
-
 **Processing**
 
 
@@ -224,7 +228,9 @@ Enable this property to create the body from the properties.
 <tr>
 <td valign="top">
 
-*Id Type* 
+*Id Type*
+
+\(Only available if parameter *Create Request from Properties* is selected\)
 
 </td>
 <td valign="top">
@@ -238,7 +244,9 @@ Example: *InternalID*
 <tr>
 <td valign="top">
 
-*Id Value* 
+*Id Value*
+
+\(Only available if parameter *Create Request from Properties* is selected\)
 
 </td>
 <td valign="top">
@@ -290,7 +298,7 @@ Enable to change the handling of custom fields that are configured in the UI to 
 <tr>
 <td valign="top">
 
-*Disable System Notes For CustomFields*
+*Disable System Notes For Custom Fields*
 
 \(Only available if parameter *Enable Request Level Preferences* is selected\)
 
@@ -304,7 +312,7 @@ Enable to prevent the creation of system notes for modifications to custom field
 <tr>
 <td valign="top">
 
-*Ignore ReadOnly Fields*
+*Ignore Read Only Fields*
 
 \(Only available if parameter *Enable Request Level Preferences* is selected\)
 
@@ -392,8 +400,6 @@ Enable to control SuiteScript and trigger workflows per request. If not selected
 
 *Request Headers*
 
-\(Only available if parameter *Enable Request Level Preferences* is selected\)
-
 </td>
 <td valign="top">
 
@@ -406,12 +412,281 @@ Enter a list of custom headers, separated by a pipe `|`, to send to the target s
 
 *Response Headers*
 
-\(Only available if parameter *Enable Request Level Preferences* is selected\)
-
 </td>
 <td valign="top">
 
 Enter a list of headers coming from the target system's response, separated by a pipe `|`, to be received in the message. Use an asterisk `*` to receive all the headers from the target system, which is also the default value.
+
+</td>
+</tr>
+</table>
+
+
+
+### RESTlet
+
+**Connection**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Address* 
+
+</td>
+<td valign="top">
+
+Specify the address of the NetSuite tenant to be used for the connection. This address typically includes your NetSuite Account ID. NetSuite URLs often follow the pattern: `https://<ACCOUNT_ID>.suitetalk.api.netsuite.com`.
+
+Example: `https://12345-sb1.suitetalk.api.netsuite.com`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Account ID* 
+
+</td>
+<td valign="top">
+
+Specify the Account ID to be used for the connection.
+
+Example: `1112711_SB1`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication* 
+
+</td>
+<td valign="top">
+
+Select the Authentication Mechanism. Currently, only the Token-Based Authentication \(TBA\) is supported.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Consumer Credentials Alias* 
+
+</td>
+<td valign="top">
+
+Specify the name of the *User Credentials* artifact \(to be deployed in the *Monitor* \> *Integrations and APIs* section under *Security Material*\). The *User Credentials* artifact includes both Consumer Key \(as username\) and Consumer Secret \(as password\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Token Credentials Alias* 
+
+</td>
+<td valign="top">
+
+Specify the name of the *User Credentials* artifact \(to be deployed in the *Monitor* \> *Integrations and APIs* section under *Security Material*\). The *User Credentials* artifact includes both Token ID \(as username\) and Token Secret \(as password\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Reuse HTTP Connection*
+
+</td>
+<td valign="top">
+
+Enable if the connection needs to be reused.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Connection Timeout \(in ms\)*
+
+</td>
+<td valign="top">
+
+Specify the maximum waiting time \(in milliseconds\) for the connection to be established.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Response Timeout \(in ms\)*
+
+</td>
+<td valign="top">
+
+Specify the maximum waiting time \(in milliseconds\) for a response message to be received.
+
+</td>
+</tr>
+</table>
+
+**Processing**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Operation Type*
+
+</td>
+<td valign="top">
+
+Select the operation type:
+
+-   *Basic* to use the dropdowns and parameter text fields.
+
+-   *Advanced* to provide the relative URI.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Method*
+
+</td>
+<td valign="top">
+
+Select the required method for the above operation:
+
+-   *POST*
+-   *PUT*
+-   *GET*
+-   *DELETE*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Script ID*
+
+</td>
+<td valign="top">
+
+Specify the ID value of the deployed script.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Deployment ID*
+
+</td>
+<td valign="top">
+
+Specify the deployment number corresponding to the script.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Relative URI*
+
+</td>
+<td valign="top">
+
+Specify the relative path.
+
+Example: `app/site/hosting/restlet.nl?script=7&deploy=1&id=3`
+
+> ### Note:  
+> The relative path is a part of the request URL after the instance URL and must start with /
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Query Parameters*
+
+</td>
+<td valign="top">
+
+Specify the comma-separated query parameters that need to be added to the URL.
+
+Example: `key1=value1,key2=value2`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Content-Type*
+
+</td>
+<td valign="top">
+
+Select the type of content for the RESTlet script.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Request Headers*
+
+</td>
+<td valign="top">
+
+Enter a list of custom headers, separated by a pipe \(|\), to send to the target system. By default, no custom headers are sent. Use an asterisk\(\*\) to send all custom headers to the target system. Alternatively, you can dynamically pass on the values by defining a property that includes a list of headers.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Response Headers*
+
+</td>
+<td valign="top">
+
+Enter a list of headers coming from the target system's response, separated by a pipe \(|\), to be received in the message. Use an asterisk \(\*\) to receive all the headers from the target system, which is also the default value.
 
 </td>
 </tr>

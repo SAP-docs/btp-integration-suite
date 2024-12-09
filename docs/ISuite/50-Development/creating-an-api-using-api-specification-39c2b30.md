@@ -1,6 +1,6 @@
 <!-- loio39c2b30f5bbc45ca9b3396a188650b7d -->
 
-# Create an API Using API Specification
+# Creating an API Using API Specification
 
 Create an API from a specification that contains the single target URL endpoint.
 

@@ -4,7 +4,7 @@
 
 # Manage Notifications
 
-As a site administrator you can configure notifications for providing information to the Developer Hub end users on any website updates, events or news items.
+As a site administrator you can configure notifications to provide information to the Developer Hub end users on any website updates, events or news items.
 
 
 
@@ -20,7 +20,7 @@ You’re assigned the *AuthGroup.Site.Admin* role. To assign the role, see [Mana
 
 ## Procedure
 
-1.  Log on to the Developer Hub.
+1.  Log on to Developer Hub.
 
 2.  Choose *Admin Center* \> *Notifications* from the top navigation bar.
 
@@ -40,7 +40,7 @@ You’re assigned the *AuthGroup.Site.Admin* role. To assign the role, see [Mana
     
     Enter a name for the notification entity.
 
-    **Example**: Experience the new design of the Developer Hub!
+    **Example**: Experience the new design of Developer Hub!
     
     </td>
     </tr>

@@ -19,7 +19,7 @@ You should have the *AuthGroup.API.Admin* role assigned to you. For more informa
 
 ## Context
 
-An Developer Hub administrator can perform the following tasks:
+A Developer Hub administrator can perform the following tasks:
 
 -   Create an application on behalf of a user \(Application Developer\) and handover the application key and secret to that user.
 -   Create new applications in different landscapes\(example: production, nonproduction\) by maintaining the same application key and secret.
@@ -31,7 +31,7 @@ An Developer Hub administrator can perform the following tasks:
 
 ## Procedure
 
-1.  Log on to the **Developer Hub** and navigate to *My Workspace*.
+1.  Log on to **Developer Hub** and navigate to *My Workspace*.
 
     If you or other application developers have created applications earlier, they’re displayed under the Applications section. For a created application, you can view the total number of calls made in the current month.
 
@@ -39,6 +39,8 @@ An Developer Hub administrator can perform the following tasks:
     > For Developer Hub administrators, analytics data is unavailable for those applications that they created on behalf of other users or application developers.
 
 2.  To create an application, choose *Create New Application* in the *Applications* section.
+
+    Alternatively, you can select a product from the home page, choose the *Subscribe* button within the product and choose *Create New Application*.
 
 3.  In the *Create an Application* dialog, enter a *Title*, a *Description* \(optional\), and a *Callback URL* \(optional\) for the application.
 

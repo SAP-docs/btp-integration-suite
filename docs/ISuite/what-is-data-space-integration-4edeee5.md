@@ -4,9 +4,6 @@
 
 Learn more about the Data Space Integration capability within SAP Integration Suite.
 
-> ### Note:  
-> We want your feedback! Let us know what you think about this documentation by completing this two-minute survey: [SAP Documentation User Experience Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_bJ9iYJuEJNrZNUq).
-
 The Data Space Integration capability within SAP Integration Suite allows data space participants to exchange data with other participants of the same data space \(for example, Catena-X\) in a reliable, secure, and sovereign manner. It offers a simple integration of SAP and non-SAP applications as well as a harmonized and intuitive way to configure and monitor the data exchange within a data space leveraging SAP Integration Suite.
 
 

@@ -7,7 +7,7 @@ Use the API Test Environment to test the runtime behavior of APIs.
 The *Test Environment* enables you to test your APIs. Testing an API is essential to understand the runtime behavior of the APIs. It allows you to explore the resources associated with an API and execute the operations. It also allows you to test OData and REST-based services.
 
 > ### Note:  
-> This document describes the new design of the Developer Hub. To view the documentation for the classic design, see [Test API Proxies](test-api-proxies-3ba6151.md).
+> This document describes the new design of Developer Hub. To view the documentation for the classic design, see [Test API Proxies](test-api-proxies-3ba6151.md).
 
 
 
@@ -15,7 +15,7 @@ The *Test Environment* enables you to test your APIs. Testing an API is essentia
 
 ## Pre-requisite
 
-The *Test Environment* tab will be visible to you only if you have the *AuthGroup.API.ApplicationDeveloper*role
+The *Test Environment* tab will be visible to you only if you have the *AuthGroup.API.ApplicationDeveloper* role.
 
 
 
@@ -23,7 +23,7 @@ The *Test Environment* tab will be visible to you only if you have the *AuthGrou
 
 ## Procedure
 
-1.  Log on to the Developer Hub.
+1.  Log on to Developer Hub.
 
 2.  Navigate to the *Test Environment*.
 
@@ -69,5 +69,5 @@ The *Test Environment* tab will be visible to you only if you have the *AuthGrou
     -   *Cookies*: View the cookies.
 
 13. If you want to use the response body as an input request, choose *Use as Request* on the *Body \(Raw\)* tab.
-14. To view the transactions based on the testing activity that you did, choose *Launch API Viewer*. For more information on tracing API proxy, see [Debug an API Proxy](debug-an-api-proxy-fb2c7aa.md)
+14. To view the transactions based on the testing activity that you did, choose *Launch API Viewer*. For more information on tracing API proxy, see [Debug an API Proxy](debug-an-api-proxy-fb2c7aa.md).
 

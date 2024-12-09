@@ -82,7 +82,7 @@ Your PostgreSQL database must meet certain requirements before you can set up Ed
 The requirements are fulfilled when using cloud platform offerings like Azure Database for PostgreSQL, or Amazon RDS for PostgreSQL.
 
 > ### Note:  
-> For more information about PostgreSQL, see [3247839.](https://me.sap.com/notes/3247839.)
+> For more information about PostgreSQL, see [3247839](https://me.sap.com/notes/3247839).
 
 
 
@@ -99,5 +99,5 @@ Your Redis data store must meet certain requirements before you can set up Edge 
 -   Using client certificates is currently not supported.
 
 > ### Note:  
-> For more information about Redis, see [3247839.](https://me.sap.com/notes/3247839.)
+> For more information about Redis, see [3247839](https://me.sap.com/notes/3247839).
 

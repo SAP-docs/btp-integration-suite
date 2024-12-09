@@ -8,7 +8,7 @@ Patterns are modularized to ease the creation of additional flow steps.
 
 -   A pattern is modularized to ease the creation of additional flow steps to the integration flow:
 
-    -   A Local Integration Process pool is available to contain the mapping files from the source ICO. With such a design, readability of the mapping steps is better and becomes convenient to add more mapping steps or maintain the sequence of message mappings and XSLT mappings.
+    -   A Local Integration Process pool is available to contain the mapping files from the source integration object. With such a design, readability of the mapping steps is better and becomes convenient to add more mapping steps or maintain the sequence of message mappings and XSLT mappings.
 
     -   An Exception Subprocess pool is available for you to set up your own exception handling.
 

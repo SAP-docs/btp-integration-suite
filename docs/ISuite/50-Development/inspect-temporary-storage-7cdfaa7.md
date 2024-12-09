@@ -2,9 +2,9 @@
 
 # Inspect Temporary Storage
 
-You can inspect the total storage usage that temporary files allocate in the database for a given time period.
+You can inspect the total storage usage that temporary files allocate in the file system for a given time period.
 
-At runtime, the system caches certain integration flows in temporary files. The *Temporary Storage* feature calculates the database volume these temporary files use and shows the maximum file size detected over the selected time period.
+At runtime, the system caches certain integration flows in temporary files. The *Temporary Storage* feature calculates the storage volume these temporary files use and shows the maximum file size detected over the selected time period.
 
 Temporary files become especially relevant when integration flows process large messages.
 

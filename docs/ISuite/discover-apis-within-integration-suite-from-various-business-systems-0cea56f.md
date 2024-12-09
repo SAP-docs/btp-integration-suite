@@ -2,15 +2,15 @@
 
 # Discover APIs within Integration Suite from Various Business Systems
 
-As a content administrator, you can make your APIs available on the Developer Hub catalog by discovering and publishing them from various business systems.
+As a content administrator, you can make your APIs available on Developer Hub catalog by discovering and publishing them from various business systems.
 
 
 
 <a name="loio0cea56f28514435ab3d61c2416ca9170__section_ccw_5tx_gbc"/>
 
-## How to discover business systems in Developer Hub?
+## How to discover APIs from business systems in Developer Hub?
 
-To discover the APIs from various business systems in the Developer Hub, you first need to ask the *Global Account Administrator* to register these systems in the SAP BTP Cockpit.
+To discover the APIs from various business systems in Developer Hub, you first need to ask the *Global Account Administrator* to register these systems in the SAP BTP Cockpit.
 
 The Global Account Administrator organizes SAP systems into groups so that they can be extended in a business scenario at one go. To accomplish this, the administrator creates a formation containing one or more different systems assigned to a common subaccount. For the Integration Suite to recognize these systems, they need to be part of the group. See [Enabling System Landscape for SAP Integration Suite](https://help.sap.com/docs/btp/sap-business-technology-platform/enabling-system-landscape-for-sap-integration-suite) topic for step-by-step instructions on how to register and connect the SAP Integration Suite business system with your global account.
 
@@ -18,7 +18,7 @@ The Global Account Administrator organizes SAP systems into groups so that they 
 
 <a name="loio0cea56f28514435ab3d61c2416ca9170__section_kcb_k5x_gbc"/>
 
-## How do you discover and publish products from business systems?
+## How do you discover APIs and publish products from business systems?
 
 You need to have the*AuthGroup.Content.Admin* role collection assigned to you. After the business systems are successfully registered and linked, you, as a content administrator, can perform the following actions:
 

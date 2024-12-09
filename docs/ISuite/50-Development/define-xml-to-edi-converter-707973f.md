@@ -2,7 +2,7 @@
 
 # Define XML to EDI Converter
 
-The XML to EDI converter transforms a XML message in XML format to EDI format.
+The XML to EDI converter transforms a single XML message from XML format to EDI format.
 
 
 

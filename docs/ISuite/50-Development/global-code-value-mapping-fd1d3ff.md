@@ -41,11 +41,6 @@ The *Code Value Mapping* tab displays the list of global code value mappings tha
 11. Choose *Save* after making the necessary changes.
 12. The *Overview* tab of the code value mapping provides an overview of the source and target codelists. The *References* section displays the list of MAGs wherever the codelist is used.
 13. You can also edit the *Name* of the code value mapping.
-14. After making the necessary changes, select *Activate* to activate the code value mapping. In the *Confirm* dialog, choose *Confirm*.
-
-    > ### Note:  
-    > Activating a global code value mapping will render it read-only. To make further edits, you need to create a new draft version of the mapping.
-
 
 
 
@@ -58,4 +53,8 @@ If you want to create a code value mapping from an existing code value mapping:
 -   You can open the existing code value mapping and choose *Copy*.
 
 -   In the main *Code Value Mapping* tab, you can select the more options <span class="SAP-icons-V5"></span> button and choose *Copy*.
+
+    > ### Note:  
+    > Copying a global code value mapping will create a new *Draft* global code value mapping with version set to 1.0.
+
 

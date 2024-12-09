@@ -70,9 +70,9 @@ Click on the<span class="SAP-icons-V5"></span> product switcher icon and sele
 > If you have an SAP Build subscription, the Developer Hub tile appears on the home page under*Quick Links* section. Select the tile to navigate to the Developer Hub web page. Alternatively, you can click on the<span class="SAP-icons-V5"></span> product switcher icon on the page header and select Developer Hub.
 
 > ### Note:  
-> To onboard Developer Hub web page, the *AuthGroup.SelfService.Admin* role must me assigned to you. This is an one time activity.
+> To onboard the Developer Hub web page, the *AuthGroup.SelfService.Admin* role must me assigned to you. This is an one time activity.
 > 
-> Please be aware that the *Authgroup.API.Admin* role is required for onboarding into the Developer Hub. This role will be automatically assigned to your scope once you have been assigned the *AuthGroup.SelfService.Admin* role. After the onboarding process is completed, it is necessary for an admin to assign the *Content Administrator* role to a user in order to access and discover the APIs from different business systems in theDeveloper Hub.
+> Please be aware that the *Authgroup.API.Admin* role is required for onboarding into Developer Hub. This role will be automatically assigned to your scope once you have been assigned the *AuthGroup.SelfService.Admin* role. After the onboarding process is completed, it is necessary for an admin to assign the *Content Administrator* role to a user in order to access and discover the APIs from different business systems in Developer Hub.
 
 
 

@@ -110,7 +110,30 @@ Description
 </td>
 <td valign="top">
 
-Enter the host name of the event broker.
+The IP address \(or host name\) to connect to. Multiple host entries separated by commas \(up to four\) are allowed for redundancy and failover. With multiple entries, each is tried in turn until one succeeds. Host contains one or more host entries \(up to four\).
+
+A host entry has the form:
+
+`[Protocol:]Host[:Port]`
+
+Protocol is the protocol used for the transport channel. The valid values are:
+
+-   `tcp` - use a TCP channel for communications between the application and its peers. If no protocol is set, tcp is used as a default.
+
+-   `tcps` - use a SSL channel over TCP for communications between the application and its peers. The encryption with compression is not supported.
+
+
+Host is the IP address \(or host name\) to connect to for a connection.
+
+Port is the port to connect to for a connection. A value is only required when using a port other than the automatically assigned default port number. The default port for TCP is 55555 when compression is not in use, or 55003 when compression is in use. The default port for SSL is 55443.
+
+For example, a valid entry looks like:
+
+`tcps://192.168.1.50:55443,192.168.1.51:55443`
+
+This specifies two hosts using SSL over TCP on port 55443.
+
+The secured SMF host name of the event broker can be copied by navigating to the AEM service *Connect* \> *Solace Messaging* \> *Connection Details*. Copy the *Secured SMF Host* using the copy icon.
 
 </td>
 </tr>

@@ -23,11 +23,23 @@ The table shows the individual list names, and the status filters you selected. 
 
 ![](images/MSO-2_39f295f.png)
 
-By default, the inline items of the table are sorted by the total number of messages in descending order. You can change this under Table *Settings* \> *Sort*.
+By default, the inline items are displayed in table format and sorted by the total number of messages in descending order. You can change this by selecting *Settings* \> *Sort*.
 
-![](images/MSO-3_d875fb4.png)![](images/MSO-4_459ded7.png)
+![](images/MSO-3_d875fb4.png)
+
+You can also choose to display your data as a pie chart or column chart by selecting *Pie Chart* or *Column Chart* respectively.
+
+![](images/MSO-8_d5f92c6.png)
+
+Once you switch to the pie or column chart, you can choose for example for which artifact, sender, or receiver \(according to your previously selected data under *Overview By*\) you want to see the data. To do so, use the dropdown menu above the chart. By default, the chart displays the combined data of the first row of the table.
+
+The statuses shown in the charts correspond to the statuses in the table. You can change the selection and order the same way you would for the table version. For more information, see Status below.
+
+**Navigation to and from Message Monitor**
 
 You can navigate to the *Message Monitor* page by clicking any non-zero value in the table. The settings for the filters *Time*, *Status* and *Overview By* are then used on the *Message Monitor* page.
+
+If you display your data in pie or column form, you can click on the respective parts or bars, which will take you to the *Message Monitor* page in the same way.
 
 If you navigate back to *Message Status Overview* from the *Message Monitor* with the button *Message Status Overview*, the filters *Time* and *Overview By* you previously selected on the *Message Status Overview* page remain in place.
 
@@ -77,8 +89,6 @@ Specify your selection by showing only messages processed in a specific time spa
 
 Filter your messages according to their status. You can select multiple statuses which will be shown as columns in the table.
 
-Table Settings
-
 By default, five of the eight statuses are selected. You can adjust these under *Table Settings* \> *Columns* and choose additional statuses to display.
 
 ![](images/MSO-6_6a3094e.png)
@@ -88,4 +98,16 @@ To change the order of the status columns, simply drag the status up or down in 
 ![](images/MSO-7_e1ce106.png)
 
 For more information on the different message statuses, see [Message Status](message-status-733a57b.md).
+
+
+
+<a name="loio0cde046d97de4e89bd88c86ef878cfae__section_n45_qmf_jdc"/>
+
+## Export Your Data
+
+You can export your data as an Excel .xlsx file. This will take into account your current filter settings and order of columns. To do so, simply select *Export* and it will automatically download the file for you.
+
+![](images/MSO-9_f16cbf5.png)
+
+Note that this option is only available if you display your data in table form.
 

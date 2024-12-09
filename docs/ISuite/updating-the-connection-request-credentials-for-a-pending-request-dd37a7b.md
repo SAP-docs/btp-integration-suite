@@ -2,7 +2,7 @@
 
 # Updating the Connection Request Credentials for a Pending Request
 
-Update the credentials you've used to establish a connection between the Integration Suite API Management tenant and the Developer Hub.
+Update the credentials you've used to establish a connection between the Integration Suite API Management tenant and Developer Hub.
 
 
 
@@ -14,7 +14,7 @@ Update the credentials you've used to establish a connection between the Integra
 
 -   To update the Integration Suite API Management tenant access credentials, you must first generate it. To generate the credentials from the Integration Suite API Management tenant, you must have the *APIPortal. Administrator* role assigned to you.
 
-    1.  Log in to the Integration Suite.
+    1.  Log on to Integration Suite.
 
     2.  Choose the navigation icon on the left and choose *Settings* \> *APIs*.
 
@@ -48,7 +48,7 @@ If you encounter one of the following situations when your connection request is
 
 ## Procedure
 
-1.  Log on to the **Developer Hub**.
+1.  Log on to **Developer Hub**.
 
 2.  Navigate to the *Admin Center* \> *Manage Connections* and choose *Pending Requests*.
 
