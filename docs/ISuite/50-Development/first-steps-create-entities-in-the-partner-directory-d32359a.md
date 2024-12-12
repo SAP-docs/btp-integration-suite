@@ -5,7 +5,7 @@
 > ### Note:  
 > As prerequisite to create entities in the Partner Directory, you need to configure secure inbound authentication for the API client to call the OData API.
 > 
-> The detailed procedure depends on the cloud environment \(Cloud Foundry or Neo\) and on the desired authentication option.
+> The detailed procedure depends on the cloud environment \(Cloud Foundry \) and on the desired authentication option.
 > 
 > For more information, check out the links under *Related Information*.
 
@@ -212,9 +212,9 @@ Perform the following initial steps with Postman.
 
 2.  Start the Postman Runner and select collection *CPI Partner Directory Example Flows*.
 
-3.  Depending on the Cloud environment, select folder *Update PD \(CF\)* or *Update PD \(Neo\)*. This folder contains a request that automatically creates the sample partner `PartnerA` with the entities listed in table above.
+3.  Select folder *Update PD \(CF\)*. This folder contains a request that automatically creates the sample partner `PartnerA` with the entities listed in table above.
 
-4.  Start the Postman runner for folder *Update PD \(CF\)* or *Update PD \(Neo\)*.
+4.  Start the Postman runner for folder *Update PD \(CF\)*.
 
 
 **Related Information**  

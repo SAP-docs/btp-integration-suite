@@ -46,7 +46,7 @@ You create a product when you want to expose one or more API proxies to the Appl
 5.  For the product, enter a *Name* and *Title*, provide an introductory text in the *Short Text* field, and a brief description in the *Description* field.
 
     > ### Note:  
-    > If you publish a product with a short introductory text, the short text appears on the corresponding API business hub enterprise pages. It appears on the product tiles on the API business hub enterprise landing page, and on the product details page. It also appears on the search result page for the searched products.
+    > If you publish a product with a short introductory text, the short text appears on the corresponding Developer Hub pages. It appears on the product tiles on the Developer Hub landing page, and on the product details page. It also appears on the search result page for the searched products.
     > 
     > If you leave the short text field empty, the product description is displayed instead of the short text in the product tile.
 
@@ -101,10 +101,13 @@ You create a product when you want to expose one or more API proxies to the Appl
 
     The OAuth 2.0 policy provides a way to limit the amount of access that is granted to an access token. For example, an access token issued to a client app may be granted READ and WRITE access to protected resources, or just READ access. You can implement your APIs to enforce any scope or combination of scopes you wish. So, if a client receives a token that has READ scope, and it tries to call an API endpoint that requires WRITE access, the call will fail.
 
-    Each product can have zero to many scopes assigned. These scopes can be assigned when the product is created or later. Scopes exist as a list of names and are included in the metadata associated with each product.
+    The maximum character limit for specifying scopes is 4K characters. Each product can have zero or multiple scopes assigned, as long as the total length of all the scopes does not exceed 4K characters. These scopes can be assigned when the product is created or later. Scopes exist as a list of names and are included in the metadata associated with each product.
 
 8.  In the *APIs* section, choose *Add*.
 9.  In the *Add APIs* window, select the required APIs and the corresponding resources.
+
+    > ### Note:  
+    > If you try to publish an API product that includes API proxies with over 100 resources, the product's publishing might not succeed. For more information, see [Limits in API Management](limits-in-api-management-f70f425.md).
 
     > ### Note:  
     > While selecting APIs and its resources for product creation, the following behaviours apply when API calls are made to the selected API proxies and resources:

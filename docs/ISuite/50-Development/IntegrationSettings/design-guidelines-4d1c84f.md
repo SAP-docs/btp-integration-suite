@@ -22,7 +22,7 @@ Each design guideline acts as a rule that helps integration developers design an
 
 The design guidelines are logically grouped. For example, all transaction handling related guidelines are grouped under a single category. Some of the logical groupings are: *Handle errors gracefully* and *Run an integration flow under well-defined boundary conditions*.
 
-The diagram shows a typical workflow that helps you benefit from using design guidelines:![](images/Design_Guidelines_0ff1e13.png)
+The diagram shows a typical workflow that helps you benefit from using design guidelines:![](images/Design_Guidelines_ae944cf.png)
 
 
 
@@ -41,7 +41,10 @@ Follow these simple steps to enable or disable all or a subset of available desi
 4.  Choose *Save*.
 
 
-You can enable or disable a design guideline anytime
+You can enable or disable a design guideline anytime.
+
+> ### Tip:  
+> As a tenant administrator, you can assign a dedicated Integration Lead to enable the applicable design guidelines. You can [define a custom role collection](https://help.sap.com/docs/btp/sap-business-technology-platform/define-role-collection?version=Cloud) in the SAP BTP cockpit and add the role `WorkspaceDesignGuidelinesConfigure` to it. Later, assign this role collection to a user.
 
 
 

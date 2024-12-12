@@ -89,8 +89,91 @@ Follow the procedure below to configure the integration flow.
     </tr>
     </table>
     
-3.  Choose *Save*
-4.  Choose *Deploy*.
+3.  Choose the *Receiver* tab and maintain the following:
+
+    > ### Note:  
+    > You only need to maintain this tab if you have enabled dead letter queue in your agreement for the receiver interchange. To know more, see [Trading Partner Agreement](trading-partner-agreement-9bd43c9.md).
+
+    :
+
+    **Parameters for Configuration**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Parameter
+    
+    </th>
+    <th valign="top">
+
+    Default Value
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Receiver
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+    The name of the sender.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Adapter Type
+    
+    </td>
+    <td valign="top">
+    
+    JMS
+    
+    </td>
+    <td valign="top">
+    
+    The type of the sender adapter which is set to *JMS* by default.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Queue Name
+    
+    </td>
+    <td valign="top">
+    
+    COM\_RECEIVER\_OUTOUND\_DEAD\_LETTER\_Q
+    
+    </td>
+    <td valign="top">
+    
+    Dead letter queue where the failed messages after retries are collected.
+
+    To enable the dead letter queue for this integration flow, you need to make changes to the retry configuration. To know more, see [Configuration Manager](configuration-manager-7daf06c.md) .
+    
+    </td>
+    </tr>
+    </table>
+    
+4.  Choose *Save*
+5.  Choose *Deploy*.
 
     > ### Note:  
     > To know how to set maximum retries for failed integration flows, see [Configuration Manager](configuration-manager-7daf06c.md).

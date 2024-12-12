@@ -15,6 +15,9 @@ This documentation provides additional information.
 > ### Note:  
 > There's also a Java API to access the Partner Directory using a programming language like Java Script or Groovy. For more information, check out the JavaDoc linked to at [SDK API](sdk-api-c5c7933.md) \(for example, check out the package `com.sap.it.api.pd`\).
 
+> ### Caution:  
+> The data is stored unencrypted in the Partner Directory. Therefore, make sure that the data does not contain any sensitive information \(for example, passwords or personal information\).
+
 There's no dedicated user interface to access the Partner Directory. You can access its content only based on APIs.
 
 
@@ -65,7 +68,7 @@ Alternative Partners
 
 Represents an alternative partner.
 
-The API allows you to access \(read, write, delete\) an alternative partner.
+You can access \(read, write, delete\) an alternative partner.
 
 A partner can be identified by different identifiers. For example, a bank can be identified by the German bank code number \(Bankleitzahl or: BLZ\) or the international Bank Identifier Code \(BIC\).
 
@@ -83,11 +86,13 @@ Authorized Users
 
 Represents the user with which a partner sender system can log in into SAP Cloud Integration.
 
-The API allows you to access \(read, write, delete\) an authorized user.
+You can access \(read, write, delete\) an authorized user.
 
 This entity is required for the authorization of the partner sender system when calling Cloud Integration. If the partner uses HTTPS with client certificate authentication to connect to Cloud Integration, a certificate-to-user-mapping is required \(in the Neo environment\).
 
 An authorized user has a `user` property \(name of the authorized user\) and a `Pid` property \(internal identifier of the associated partner\).
+
+The Pid may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
 
 </td>
 </tr>
@@ -99,9 +104,11 @@ Binary Parameters
 </td>
 <td valign="top">
 
-The API allows you to access \(read, write, delete\) a binary parameter of the Partner Directory \(for example, for an XSD document\).
+You can access \(read, write, delete\) a binary parameter of the Partner Directory \(for example, for an XSD document\).
 
 A Partner Directory parameter has a value and a type. The currently supported predefined types are `Binary` and `String`.
+
+The ID of this entity may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
 
 A binary parameter has a maximum size of 1,5 MB.
 
@@ -121,11 +128,15 @@ Partners
 </td>
 <td valign="top">
 
-The API allows you to read all partners or delete a partner from the Partner Directory.
+You can read all partners or delete a partner from the Partner Directory.
 
 A partner is identified by an internal identifier \(referred to as `Pid`\) \(which is unique within the tenant partner directory and has a maximum length of 60 characters\).
 
+The Pid may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
+
 A partner can have parameters \(StringParameter, BinaryParameter, or UserCredentialParameter\). The parameter is uniquely identified by the Pid of the partner to which the parameter belongs and its Id.
+
+The ID of this entity may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
 
 </td>
 </tr>
@@ -137,9 +148,11 @@ String Parameters
 </td>
 <td valign="top">
 
-The API allows you to access \(read, write, delete\) a string parameter of the Partner Directory.
+You can access \(read, write, delete\) a string parameter of the Partner Directory.
 
 A Partner Directory parameter has a value and a type. The currently supported predefined types are Binary and String.
+
+The ID of this entity may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
 
 A string parameter has a maximum length of 4000 characters.
 
@@ -155,11 +168,13 @@ User Credential Parameters
 
 Represents a *User Credentials* artifact \(that is to be used for outbound calls to a partner system\).
 
-The API allows you to access \(read, write, delete\) a *User Credentials* artifact.
+You can access \(read, write, delete\) a *User Credentials* artifact.
 
 You use this parameter to configure and deploy *User Credentials* artifacts.
 
 The *User Credentials* parameter contains a user and a password \(both maximum length of 200 characters\).
+
+The ID of this entity may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
 
 Note that the user credentials \(user and password\) relate to the receiver \(partner\) system that is targeted by an outbound call \(where these credentials are used for basic authentication\).
 
@@ -183,9 +198,9 @@ For general information about query options, see [Query Options](query-options-9
 
 
 
-<a name="loio0fe80dc9d3be4dfbbb89ee4c791d326e__section_ssw_lzr_r2b"/>
+<a name="loio0fe80dc9d3be4dfbbb89ee4c791d326e__AlternativePartner"/>
 
-## More Information on AlternativePartner
+## Alternative Partner
 
 Each alternative partner has the following properties:
 

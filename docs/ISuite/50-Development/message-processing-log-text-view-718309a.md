@@ -332,7 +332,7 @@ You can create attachments to the message processing log by using the `Script AP
 
 [Monitor Message Processing](monitor-message-processing-314df3f.md "The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.")
 
-[Define a Local Script Step](define-a-local-script-step-03b32eb.md "You can create a script step that is specific to an integration artifact to execute custom scripts (JavaScript or Groovy Script).")
+[Define a Local Script Step](define-a-local-script-step-03b32eb.md "Learn how to use a script step that’s specific to an integration artifact to create custom scripts (JavaScript or Groovy Script).")
 
 [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md "")
 

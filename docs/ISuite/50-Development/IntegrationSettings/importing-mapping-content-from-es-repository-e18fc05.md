@@ -38,16 +38,11 @@ After you've configured the connection to ES Repository, you can import content 
 >     -   The interfaces contain more than one cardinality.
 >     -   The interfaces are asynchronous in type.
 > 
-> -   The import process fails if the message mapping contains:
-> 
->     -   Imported archives
-> 
->     -   Parameters
-> 
-> 
 > -   Importing, viewing, and editing of Java UDF is supported.
 > 
 > -   Message Mapping containing reference to Value Mapping isn't supported at runtime.
+> 
+> -   Import of a message mapping object fails if it contains a XSD in the source or target message.
 
 Here's how you can do it:
 
@@ -59,7 +54,7 @@ Here's how you can do it:
 
     If you can't find the *References* tab, choose the empty space in the integration flow editor. You will find the *References* tab at the end of the integration flow editor.
 
-2.  Choose *Add* and select a supported resource. See the supported sources here: [Manage Resources of an Integration Flow](../manage-resources-of-an-integration-flow-b5968b2.md).
+2.  Choose *Add* and select a supported resource. See the supported sources here: [Manage Resources](../manage-resources-b5968b2.md).
 
 3.  Choose *ES Repository* as the source.
 

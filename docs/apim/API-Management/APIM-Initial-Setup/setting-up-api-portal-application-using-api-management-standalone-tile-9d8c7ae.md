@@ -31,8 +31,6 @@ You should have API Management, API portal subscription to set up the API portal
 > ### Note:  
 > Ensure that you don’t have an instance of a starter plan created in the same subaccount where you plan to create an API Management, API portal subscription. Also, note that API Management capabilities from Integration Suite and API Management subscriptions using the stand-alone tile can’t coexist in the same subaccount.
 
-Perform the step-by-step instructions to set up the API portal application. However, you can also refer the following video for visual instructions: 
-
 
 
 <a name="loio9d8c7ae4849941a9a528f752235c6867__steps_bnm_ft1_stb"/>
@@ -80,6 +78,9 @@ Perform the step-by-step instructions to set up the API portal application. Howe
 
     -   In the *Virtual Host* section, enter the *Host Alias*.
 
+        > ### Note:  
+        > The virtual host alias allows a maximum of 63 characters.
+
     -   Provide an email ID in the *Notification Contact* field to receive updates.
 
 
@@ -112,16 +113,10 @@ The API portal is now configured. Log on to the API portal again. You can now cr
 
 ## Next Steps
 
-To start publishing the API portal content, you must enable the API Business Hub Enterprise. To publish the API portal content on the API Business Hub Enterprise located in the same subaccount, see [Set Up API business hub enterprise Application Using the Standalone Tile](set-up-api-business-hub-enterprise-application-using-the-standalone-tile-80c0519.md). To publish the API portal content on the centralized API Business Hub Enterprise, follow the on-screen instructions and see [Centralized API business hub enterprise \[Classic Design\]](centralized-api-business-hub-enterprise-classic-design-33b706f.md).
-
-Once API Business Hub Enterprise is set up, navigate to :gear: and choose *Connection*.
-
-![](images/ABHE_Connection_a5eb276.png)
+To start publishing the API portal content, you must enable the API Business Hub Enterprise. To publish the API portal content on the API Business Hub Enterprise located in the same subaccount, see [Set Up Developer Hub Application Using the Standalone Tile](set-up-developer-hub-application-using-the-standalone-tile-80c0519.md).
 
 **Related Information**  
 
-
-[Enable API Management Capability](enable-api-management-capability-f6eb433.md "You can provision the API Management capability from the Integration Suite launchpad.")
 
 [Assign User Roles in API Management](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:
 

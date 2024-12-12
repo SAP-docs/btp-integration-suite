@@ -39,7 +39,7 @@ Example: For attachments, the structure is: a folder named after the step-id in 
 
 [Configuring Destination](configuring-destination-c1ac580.md "To configure a connection to your CMS system for data archiving, you've to define a destination in the subscriber account of your tenant and follow the steps described in &quot;Enable Archiving in the Cloud Foundry Environment&quot;.")
 
-[Enable Archiving](enable-archiving-0fbbe93.md "To enable data archiving on a tenant in the Cloud Foundry environment, use the official OData API.")
+[Enable Archiving](enable-archiving-0fbbe93.md "To enable data archiving on a tenant in the Cloud Foundry environment, use the OData API.")
 
 [Configuring Archiving Settings](configuring-archiving-settings-c38760d.md "You can configure the archiving settings via the Integration Content Monitor for each integration flow.")
 

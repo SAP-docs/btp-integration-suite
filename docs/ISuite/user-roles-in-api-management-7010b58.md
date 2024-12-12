@@ -2,7 +2,7 @@
 
 # User Roles in API Management
 
-Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.
+Use role collections to group together different roles that can be assigned to API Portal and Developer Hub users.
 
 **API Portal Roles**
 
@@ -40,7 +40,7 @@ Use this role to access the API portal user interface \(UI\) and services, manag
 </td>
 <td valign="top">
 
-Use this role to establish a connection from the API business hub enterprise to the API portal.
+You need this role assigned to you because the client credentials, which are necessary for establishing a connection between the Integration Suite API Management tenant and Developer Hub, are generated for this role.
 
 </td>
 </tr>
@@ -52,7 +52,7 @@ Use this role to establish a connection from the API business hub enterprise to 
 </td>
 <td valign="top">
 
-Use this role during the onboarding of API Portal and to get access to its settings page.
+Use this role during the onboarding of API portal and to get access to its settings page.
 
 </td>
 </tr>
@@ -70,7 +70,7 @@ Use this role to access the API portal in read-only mode. You can view all APIs,
 </tr>
 </table>
 
-**API business hub enterprise Roles**
+**Developer Hub Roles**
 
 
 <table>
@@ -94,7 +94,7 @@ Description
 </td>
 <td valign="top">
 
-Use this role during the onboarding of API business hub enterprise and to get access to it.
+Use this role during the onboarding of Developer Hub and to get access to it.
 
 </td>
 </tr>
@@ -131,8 +131,8 @@ Use this role to:
 
 Use this role to:
 
--   Publish content to the API business hub enterprise.
--   Establish a connection from the API portal to the API business hub enterprise.
+-   Publish content to the Developer Hub.
+-   Establish a connection from the API portal to the Developer Hub.
 
 
 
@@ -148,7 +148,7 @@ Use this role to:
 
 Use this role to:
 
--   Access the API business hub enterprise.
+-   Access the Developer Hub.
 -   Create, update, and delete applications.
 -   View analytics information on application usage, performance, and error count.
 -   View and download bills for subscribed applications.
@@ -190,6 +190,18 @@ Use this role to:
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+`AuthGroup.APIPortalRegistration`
+
+</td>
+<td valign="top">
+
+This role is necessary for creating a connection request between the Integration Suite API Management tenant and the Developer Hub. It's also used to update the connection request credentials.
+
+</td>
+</tr>
 </table>
 
 **Related Information**  
@@ -197,11 +209,9 @@ Use this role to:
 
 [Configuring Additional Virtual Host in Cloud Foundry Environment](configuring-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "A virtual host allows you to host multiple domain names on the API Management capability within Integration Suite.")
 
-[Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](region-specific-ip-addresses-available-for-api-management-cloud-foundry-environment-585d639.md "API Management protects your backend services. However, API Management needs to establish connectivity to your backend services during an API call execution.")
-
-[User Roles in API Management \(New\)](user-roles-in-api-management-new-911ca5a.md "Similar to other capabilities of the SAP Integration Suite, the API Management capability defines a set of technical roles that grant specific permissions to users. Users can be assigned roles through SAP BTP's role collection concept. While users have the option to create their own role collections, a set of predefined role collections is automatically created when the API Management capability is provisioned.")
+[Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](region-specific-ip-addresses-available-for-api-management-cloud-foundry-environment-683a97c.md "API Management protects your backend services. However, API Management needs to establish connectivity to your backend services during an API call execution.")
 
 [Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "You can deactivate your API Management capability from Integration Suite to disable your account from the API Management service.")
 
-[](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/CLOUD/en-US/1e88d9cb4e90466cb0ab2c53e33b2e1c.html "") :arrow_upper_right:
+[Setting Up API Management with SAP Cloud Identity Services](setting-up-api-management-with-sap-cloud-identity-services-1e88d9c.md "SAP Cloud Platform allows customers to connect their SAP Cloud Identity Services with the BTP offerings.")
 

@@ -117,7 +117,7 @@ CI-PI currently supports the following ciphers for SSH \(SFTP\) communication: b
 **Related Information**  
 
 
-[Configure the SFTP Sender Adapter](configure-the-sftp-sender-adapter-2de9ee5.md "The SFTP sender adapter connects an SAP Cloud Integration tenant to a remote system using the SSH File Transfer protocol to read files from the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol (or SFTP).")
+[Configure the SFTP Sender Adapter](configure-the-sftp-sender-adapter-2de9ee5.md "The SFTP sender adapter connects an SAP Integration Suite tenant to a remote system using the SSH File Transfer protocol to read files from the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol (or SFTP).")
 
 [Configure the SFTP Receiver Adapter](configure-the-sftp-receiver-adapter-4ef52cf.md "The SFTP receiver adapter connects an SAP Cloud Integration tenant to a remote system using the SSH File Transfer protocol to write files to the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol (or SFTP).")
 

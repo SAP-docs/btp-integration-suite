@@ -24,10 +24,11 @@ You've included the leaf node that you want to assign a codelist to in your MIG 
 
 2.  Choose the *Codelist* tab in the resulting panel.
 
-3.  Choose *Add* to select a codelist through one of the following options.
+3.  Choose the add :heavy_plus_sign: icon to select a codelist through one of the following options.
 
     -   Choose *MIG Codelists*, if you want to assign a MIG codelist to the leaf node.
     -   Choose *From Type System* and select the desired codelist from the drop-down box, if you want to assign a type system-based codelist to the leaf node.
+    -   Choose *From Custom Type System* and select the desired custom type system from the drop-down field nearby. On selecting the custom codelists, the list of available codelists will be displayed in the table below. Choose the relevant codelist from the list.
 
     The *Selected Codelist* drop down box shows the list of codelists assigned to the leaf node.
 

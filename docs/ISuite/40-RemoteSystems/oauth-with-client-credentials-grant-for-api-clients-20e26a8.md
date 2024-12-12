@@ -35,7 +35,7 @@ To set up this authorization option, perform the following steps.
 
 1.  Look up the role to be used to authorize the API client to access the related Cloud Integration resource using the API.
 
-    See: [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)
+    See: [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)
 
 2.  In SAP BTP cockpit, select the subaccount that hosts your SAP Integration Suite virtual environment and create a service instance and service key.
 
@@ -121,7 +121,7 @@ To set up this authorization option, perform the following steps.
     
     Select role according to the API resource to access.
 
-    See: [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)
+    See: [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)
     
     </td>
     <td valign="top">
@@ -165,7 +165,7 @@ To set up this authorization option, perform the following steps.
     
     Select role according to the API resource to access.
 
-    See: [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)
+    See: [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)
     
     </td>
     <td valign="top">
@@ -209,7 +209,7 @@ To set up this authorization option, perform the following steps.
     
     Select role according to the API resource to access.
 
-    See: [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)
+    See: [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)
     
     </td>
     <td valign="top">

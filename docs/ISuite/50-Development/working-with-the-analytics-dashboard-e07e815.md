@@ -22,9 +22,9 @@ You can use the analytics dashboard to:
 
 ## Procedure
 
-1.  Log on to the SAP Integration Suite.
+1.  Log on to the ******SAP Integration Suite**.
 
-2.  Choose the navigation icon on the left and choose *Analyze* \> *APIs*.
+2.  From the left navigation pane, choose *Analyze*.
 
     The *Analytics* dashboard appears.
 

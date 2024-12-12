@@ -13,7 +13,7 @@ OData system query options are provided by the OData framework and documented in
 This section provides a summary of the supported query options.
 
 > ### Caution:  
-> Not all quer options listed below are always supported by each entity type of the Cloud Integration OData API.
+> Not all query options listed below are always supported by each entity type of the Cloud Integration OData API.
 > 
 > For more information on the supported query options, check out the description of the individual resources on SAP Business Accelerator Hub.
 
@@ -67,7 +67,7 @@ For example, adding the query `$expand=AdapterAttributes` to an OData request ad
 </td>
 <td valign="top">
 
-Returns a subset of records according to the resource path section of the URI\) and to the filter expression.
+Returns a subset of records according to the resource path section of the URI and to the filter expression.
 
 </td>
 </tr>
@@ -186,11 +186,29 @@ Examples for the `$filter` query option:
 
     Addresses all message processing logs with the ApplicationMessageId `applicationID`.
 
+-   `https://<tmn>/api/v1/MessageProcessingLogs?$filter=ApplicationMessageType eq 'application-message-type'`
+
+    Adresses all message processing logs with the ApplicationMessageType `application-message-type`
+
 -   `https://<tmn>/api/v1/MessageProcessingLogs?$filter=LogEnd gt datetime'2014-09-01T00:00:00' and LogEnd lt datetime'2014-09-02T00:00:00'`
 
     Addresses all message processing logs with log end time between the two datetime literals `2014-09-01T00:00:00Z` and `2014-09-02T00:00:00`.
 
+    You can also use `https://<tmn>/api/v1/MessageProcessingLogs?$filter=LogEnd gt datetime'2014-09-01T00:00:00' and LogStart lt datetime'2014-09-02T00:00:00'` to get all Message Processing Logs inside the chosen time interval.
+
     Currently, parsing of time zone information in datetime literals is not supported. All datetime literals are interpreted as UTC \(Universal Time Coordinated\). Therefore, a zone offset cannot be interpreted. For example, a call with the following syntax will not be interpreted correctly: `https://<tmn>/api/v1/MessageProcessingLogs?$filter=LogEnd gt datetime'2014-09-01T00:00:00Z' and LogEnd lt datetime'2014-09-02T00:00:00Z'`.
+
+-   `https://<tmn>/api/v1/MessageProcessingLogs?$filter=Sender eq 'sender'`
+
+    Returns all message processing logs, where the associated messages were sent by `sender`.
+
+-   `https://<tmn>/api/v1/MessageProcessingLogs?$filter=Receiver eq 'receiver'`
+
+    Returns all message processing logs, where the associated messages were addressed to `receiver`.
+
+-   `https://<tmn>/api/v1/MessageProcessingLogs?$filter=CustomStatus eq 'ERROR'`
+
+    Returns all message processing logs, where the associated messages are in CustomStatus, here ERROR.
 
 -   `https://<tmn>/api/v1/MessageProcessingLogs?$filter=Status eq 'ERROR'`
 
@@ -200,6 +218,9 @@ Examples for the `$filter` query option:
 
     Returns all messages that are correlated by the CorrelationId `AbCd-jshkdgsz23jds-T`.
 
+
+> ### Tip:  
+> You can combine other filters into one OData request, but it is recommended to use filters containing MessageGuid, CorrelationID and ApplicationMessageID separately from other filters.
 
 
 

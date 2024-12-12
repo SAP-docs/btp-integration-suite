@@ -143,7 +143,7 @@ Depending on the configurations you have on your source system, you must configu
 -   Cloud Connector setup
 -   Principal Propagation setup at the subaccount level
 -   Changes to Principal Propagation policy for on-premise connectivity
--   Migration of route service bindings. For more information, see [Migrating Route Service Binding](post-cloning-tasks-116d82c.md#loio116d82c83b6a4665a6f30f21a0e6e0d8__routebinding)
+-   Migration of route service bindings. For more information, see [Migrating Route Service Binding](post-cloning-tasks-49e9716.md#loio49e9716c499d44059907f18c0659cd69__routebinding)
 -   Any integrations with other systems \(like SAP Web IDE\)
 -   Any other configurations that you created for API Management at the subaccount level of your source system
 
@@ -174,7 +174,7 @@ Depending upon the location of your application, and your API Management service
 If your cloud foundry application and the API Management capability are on the same sub account, then use the following steps to migrate the route service binding:
 
 1.  Create an API Management, API portal service instance using the service plan, apim-as-route-service. For more information, see [Creating an API Management, API portal Service Instance](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__CreatingAPIMInstance)
-2.  Unbind your application from the API Management service instance on Cloud Foundry. For more information, see [Unbinding a Cloud Foundry Application from an API Management, API portal Service Instance](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__unbinding) 
+2.  Unbind your application from the API Management service instance on Cloud Foundry. For more information, see [Unbinding a Multi-Cloud Foundation Application from an API Management, API portal Service Instance](../unbinding-a-multi-cloud-foundation-application-from-an-api-management-api-portal-service-09fd33a.md) 
 3.  Bind your application to the API Management service instance on Cloud Foundry. For more information, see [Binding a Cloud Foundry Application to an API Management, API portal Service Instance](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__Binding)
 
 
@@ -193,7 +193,7 @@ If your Cloud Foundry application and the API Management capability are on diffe
 
     For more information, see [User Provided Service](https://docs.cloudfoundry.org/services/route-services.html#user-provided)
 
-2.  Unbind your application from the API Management service instance on Cloud Foundry. For more information, see [Unbinding a Cloud Foundry Application from an API Management, API portal Service Instance](../managing-cloud-foundry-microservices-through-api-management-e609a3e.md#loioe609a3efe6d64e1781cbf81ae5592071__unbinding) 
+2.  Unbind your application from the API Management service instance on Cloud Foundry. For more information, see [Unbinding a Multi-Cloud Foundation Application from an API Management, API portal Service Instance](../unbinding-a-multi-cloud-foundation-application-from-an-api-management-api-portal-service-09fd33a.md) 
 3.  Bind the User Provided Service created in the first step to the Cloud Foundry Application. For this binding, use the following command:
 
     > ### Sample Code:  
@@ -303,13 +303,13 @@ If you have multiple virtual hosts configured on your source system subscription
 > ### Note:  
 > If your source and target belongs to the same data center and your source has a custom domain virtual host, and if you are planning to carry forward the same custom domain virtual host to target, please ensure that the following aspects are considered:
 > 
-> 1.  Since custom domain virtual host URL and port should be unique in a data center accross tenants. It is not possible to have the same virual host URL in both source and target at the same time. Therefore, delete the custom domain virtual host from source and then create the same custom domain virtual host in the target. To do this, you must create an incident on the component OPU-API-OD-OPS through the SAP Support Portal. For details, refer [Configuring Additional Virtual Host in Cloud Foundry Environment](../configuring-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md).
+> 1.  Since custom domain virtual host URL and port should be unique in a data center accross tenants. It is not possible to have the same virual host URL in both source and target at the same time. Therefore, delete the custom domain virtual host from source and then create the same custom domain virtual host in the target. See, [Configuring Additional Virtual Host in Cloud Foundry Environment](../configuring-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md).
 > 
 > 2.  When virtual host gets deleted in the source tenant, there will be downtime for all the APIs in the source account. The downtime will continue untill the virtual host configuration gets completed. This configuration activity will require manual intervention by the API Mangement Operations team and also your DNS service provider for DNS cutover. We recommend that you plan this activity during your planned maintenance window.
 
 
 
-### Switching Over Design time URLs of API portal and API business hub enterprise portals
+### Switching Over Design time URLs of API portal and Developer Hub portals
 
 -   Domains managed by SAP can't be switched over.
 -   To switch over a custom domain, create an incident on the component OPU-API-OD-OPS through the [SAP Support Portal](https://support.sap.com/en/index.html).

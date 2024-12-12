@@ -5,6 +5,13 @@
 Workday receiver adapter enables SAP Cloud Integration and SAP Integration Suite to accelerate the implementation time and reduce the complexity of connecting to Workday.
 
 > ### Note:  
+> This adapter is available on SAP Business Accelerator Hub.
+> 
+> For more information, see [Consuming Integration Adapters from SAP Business Accelerator Hub](consuming-integration-adapters-from-sap-business-accelerator-hub-b9250fb.md).
+> 
+> The availability of the adapter is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://launchpad.support.sap.com/#/notes/2903776) and [3188446](https://launchpad.support.sap.com/#/notes/3188446).
+
+> ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
 > 
 > -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
@@ -17,17 +24,6 @@ Workday receiver adapter enables SAP Cloud Integration and SAP Integration Suite
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 The Workday adapter supports the Workday SOAP API with basic authentication. Once you've created a receiver channel and selected the Workday adapter, you can configure its attributes.
-
-> ### Note:  
-> You need to download the adapter from SAP Software Download Center. You can find more information on the download navigation path [here](https://api.sap.com/package/WorkdayAdapter?section=Overview).
-> 
-> Workday adapter is supported only in the Standard and Premium editions of SAP Integration Suite. SAP does not support this adapter on any other editions offered by SAP Cloud Integration or SAP Integration Suite.
-> 
-> After you complete the download, uncompress and extract the files to your local system. Then deploy the adapter on your tenant.
-> 
-> -   For more information on deploying the adapter in multicloud environment, see [Importing Custom Integration Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/482286e544014098874fde0da4bcca2c.html).
-> 
-> -   For tenants hosted on Neo environment, you must import the adapter to your Eclipse tool and deploy the adapter project. For more information, see [Develop Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f798db6491424460bb4b43d4a86ed1cf.html).
 
 The General tab shows general information such as the adapter type, its direction \(receiver\), the transport protocol, and the message protocol.
 

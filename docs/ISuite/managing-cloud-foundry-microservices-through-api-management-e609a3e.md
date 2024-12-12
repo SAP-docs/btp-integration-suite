@@ -37,7 +37,7 @@ Create a service instance in *API Management, API portal* to start managing your
 
 Follow the below procedure to create a service instance on Cloud Foundry:
 
-1.  In your web browser, open the *SAP BTP Cockpit* - [https://eu-access.cockpit.btp.cloud.sap](https://eu-access.cockpit.btp.cloud.sap).
+1.  In your web browser, open the *SAP BTP Cockpit* - [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap).
 2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
 3.  Choose *API Management, API portal* \> *Instances* \> *New Instance*.
 4.  In the *Create Instance* dialog, choose *apim-as-route-service* plan.
@@ -51,7 +51,7 @@ Follow the below procedure to create a service instance on Cloud Foundry:
 
 <a name="loioe609a3efe6d64e1781cbf81ae5592071__Binding"/>
 
-## Binding a Cloud Foundry Application to an API Management, API portal Service Instance
+## Binding a Multi-Cloud Foundation Application to an API Management, API Portal Service Instance
 
 Create a service instance and bind the Cloud Foundry application to *API management, API portal* service. When you bind an application, an API proxy is created and a new route is added to the application. The route initially redirects all calls to the proxy URL and then to the application.
 

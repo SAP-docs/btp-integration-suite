@@ -4,7 +4,7 @@
 
 Minimizes the risk posed by content-level attacks by enabling specific limits on various JSON structures, such as arrays and strings.
 
-****
+**Policy Settings**
 
 
 <table>
@@ -129,4 +129,6 @@ Maximum size allowed for a JSON payload in KB. The maximum value is 10 MB.
 [Authentication](authentication-fa6eec4.md "Different API may have various authentication mechanisms. The authentication mechanisms that are currently supported are Basic authentication, Client Certificate, and oAuth.")
 
 [Authorization](authorization-6658409.md "This policy evaluates whether a user should be permitted to access a protected API.")
+
+[API Validation](api-validation-02ff41b.md "The API validation policy enables you to validate incoming request messages against an OpenAPI 3.0 Specification.")
 

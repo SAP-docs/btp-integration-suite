@@ -12,6 +12,11 @@ You can inject mapping artifacts from Integration Advisor to your SAP Cloud Inte
 
 You need to maintain the SAP Cloud Integration tenant details into which you need to inject the resources under the *Destinations* tab of your subaccount in SAP BTP cockpit.
 
+> ### Note:  
+> Users leveraging Integration Advisor within Integration Suite do not need to manually maintain destination details, as the capability automatically discovers the target Cloud Integration tenant.
+> 
+> However, if you plan to inject resources into a Cloud Integration tenant outside your Integration Suite subscription, you must manually configure the destination details. For such cases, follow the procedure below.
+
 1.  Login to SAP BTP cockpit and navigate to your subaccount.
 
 2.  Choose *Destinations* \> *New Destination*.
@@ -127,9 +132,7 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
     > 
     >     You need to register the client application as the OAuth client in the consumer account using the SAP BTP cockpit with the TMN node details. In the *Security* \> *OAuth* section, go to the *Clients* tab. Under *Subscription*, enter the VM name of the TMN node\(it ends with the node type `.tmn`\).
     > 
-    >     For information on creating OAuuth client credentials for Neo environment, see: [Creating OAuth Client Credentials for Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/040d8110293d44b1bfaa75674530d395.html "The API is protected by basic authentication and OAuth.") :arrow_upper_right:
-    > 
-    >     For information on creating OAuth client credentials for Cloud Foundry, see: [Creating OAuth Client Credentials for Cloud Foundry Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/50b63c69028643b18016d6795003392d.html "You can create OAuth client credentials to access your SAP Cloud Integration tenant hosted on the Cloud Foundry environment.") :arrow_upper_right:.
+    >     For information on creating OAuth client credentials for Cloud Foundry, see: [Creating OAuth Client Credentials for Cloud Foundry Environment](creating-oauth-client-credentials-for-cloud-foundry-environment-50b63c6.md).
 
 
     
@@ -149,7 +152,13 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
 
 3.  Choose <span class="SAP-icons-V5"></span> and then choose *Inject* \> *SAP Cloud Integration Flow Resources*.
 
-4.  Choose an SAP Cloud Integration tenant from the *Destinations* list.
+4.  Choose an SAP Cloud Integration tenant from the *Connections* list.
+
+    The *Connections* table displays two sections:
+
+    1.  *Built-In*: Displays the Cloud Integration tenant associated with your Integration Suite subscription.
+
+    2.  *User-Defined*: Displays manually created destinations by the user, typically used for external Cloud Integration tenants or custom integrations.
 
 5.  The next step *2 Integration Package* lists down the integration packages available under the tenant that you chose in the previous step. Choose the desired integration package from the list.
 
@@ -157,7 +166,7 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
 
 6.  On selecting the package, the next step displays the list of integration flows available under that package. Select an integration flow from the list into which you want to inject the resources and choose *Inject*.
 
-7.  The *Summary* step provides the following information:
+7.  The *Result* step provides the following information:
 
     1.  *Status* to show if the injection was successful
 

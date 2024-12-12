@@ -5,7 +5,7 @@
 All the tasks mentioned here are one-time activities. The tenant administrator performs these tasks to enable content transport.
 
 > ### Note:  
-> To use the automatic transport options \(CTS+ or Cloud Transport Management\), you must enable an additional service – *Content Agent Service*. This service is responsible for packaging the integration content objects \(integration packages with their artifacts\) into MTAR files and handing them over to the transport mechanism. This service is always needed independently of the transport mechanism, whether CTS+ or Cloud Transport Management.
+> To use the automatic transport options \(CTS+ or Cloud Transport Management\), you must enable an additional service – *Content Agent Service*. This service is responsible for packaging the integration content objects \(integration packages with their artifacts\) into MTAR files and handing them over to the transport mechanism. This service is always needed independently of the transport mechanism, whether CTS+ or.
 
 Enabling Content Transport involves the following major steps:
 

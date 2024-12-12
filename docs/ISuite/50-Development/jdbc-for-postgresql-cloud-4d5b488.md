@@ -48,7 +48,7 @@ SAP BTP Environment
 </td>
 <td valign="top" colspan="2">
 
-Neo and Cloud Foundry
+Cloud Foundry
 
 </td>
 </tr>

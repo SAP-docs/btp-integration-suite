@@ -126,7 +126,7 @@ Use this option to upload a message mapping artifact stored on your computer. On
 
 <!-- task\_hcc\_c3j\_syb -->
 
-## Import a Message Mapping from ES Repository
+## Import a Message Mapping from Enterprise Services Repository \(ESR\)
 
 
 
@@ -134,18 +134,10 @@ Use this option to upload a message mapping artifact stored on your computer. On
 
 ## Prerequisites
 
--   You've created an integration package and opened it in edit mode.
-
 -   You've established connection to your SAP Process Orchestration system. See: [Configuring Connectivity to an SAP Process Orchestration System](IntegrationSettings/configuring-connectivity-to-an-sap-process-orchestration-system-8c36fd2.md).
 
+-   You've created an integration package and opened it in edit mode.
 
-
-
-<a name="task_hcc_c3j_syb__context_yty_d3j_syb"/>
-
-## Context
-
-Use this option to import a message mapping object from the Enterprise Services Repository \(ES Repository\).
 
 
 
@@ -167,21 +159,47 @@ Use this option to import a message mapping object from the Enterprise Services 
 
 5.  Select a message mapping object that you want to import. Choose *Next*.
 
-6.  In the *Dependent Resources* tab, provide a name, ID, and an optional description for the message mapping artifact. You also see a list of dependent files of the message mapping object like function library objects and WSDL files that are to be imported too. Choose *Next*.
+6.  In the *Dependent Resources* tab, provide a name, ID, and an optional description for the message mapping artifact. You also see a list of dependent objects like function library, message type, archives, andWSDL files that are to be imported too. Choose *Next*.
 
-7.  Optional, only if the source message mapping object has function library objects: Select one or more Function Libraries artifacts to contain all dependent function library objects of the source mapping object.
+    1.  Optional: If there are dependent message type objects, choose *Import Message Types as WDSLs* to convert the message type objects as WSDL files during the import.
+
+        > ### Note:  
+        > Until the May 2024 release of SAP Integration Suite, message types were automatically converted as WSDL files. The checkbox helps you maintain backward compatibility and avoid any regressions.
+
+        > ### Remember:  
+        > It is possible for multiple dependent Message Type objects to have the same name but different namespaces. When you import such message type objects as WSDL files, only one WSDL file gets uploaded as the uniqueness is dependent on the filename. Make sure that you keep the same name only for one WSDL file in the ES Repository and rename the other files. This makes sure that individual WSDL files are created in SAP Integration Suite for each Message Type. If you don't do this, the nodes where the WSDL files are used become empty and eventually the message mapping artifact goes into an erroneous state.
+
+
+7.  Optional, only if the source message mapping object has dependent function library objects: In the *Import Function Libraries* tab, select one or more Function Libraries artifacts to contain all dependent function library objects of the source mapping object.
 
     In SAP Integration Suite, a function library object from ES Repository must be imported to a Function Libraries artifact. You can't add a function library object directly to a message mapping or an integration package. See: [Working with Function Libraries](working-with-function-libraries-dd8c30d.md).
 
-8.  Choose *Add*.
+    > ### Remember:  
+    > The dependent archive objects of the function library object are not imported. You must manually import the archive object and refer the same in the Function Libraries artifact. For more information, see: [Consuming Imported Archives](consuming-imported-archives-e7562a7.md).
+
+8.  Optional, only if the source message mapping object has dependent message type objects: In the *Import Message Types* tab, see a list of message type objects and understand their metadata. Choose *Next*.
+
+    1.  Choose *Include Dependent Data Types* if you would like to import the associated data type objects as well.
+
+
+9.  Optional, only if the source message mapping object has dependent message type objects: In the *Import DT Dependencies* tab, see the import status of the message type and data type objects. Choose *Next*.
+
+10. Choose *Submit*.
 
     A message mapping artifact is created.
 
-    If there are dependent function library objects, they are imported to the selected Function Libraries artifact. References to the dependent function library objects are also created.
+    If there are dependent objects, they are imported appropriately. References to the dependent objects are also created.
 
-9.  Open the message mapping artifact and choose *Edit* to change the source and target messages, create mappings, and perform operations. Choose *Save*.
+    Cloud Integration supports the import of PI/PO message mapping objects with simple type parameters of the kind import. The imported parameters are used as message properties and are automatically pre-filled in the standard built-in functions wherever they are defined in the PI/PO message mapping object. For more information, see [Parameterized Mapping Programs](https://help.sap.com/docs/SAP_NETWEAVER_750/0b9668e854374d8fa3fc8ec327ff3693/4bf4190deaca4c86e10000000a42189e.html).
 
-10. Choose *Deploy*.
+    > ### Note:  
+    > Import type parameters are now supported and are used or rendered in the expression editor for built-in functions. Although export and adapter \(channel\) type parameters are shown, they are not used or rendered within the message mapping expression editor in Integration Suite.
+    > 
+    > The import functionality for message mapping with parameters is not supported for local message mappings in integration flows.
+
+11. Open the message mapping artifact and choose *Edit* to change the source and target messages, create mappings, and perform operations. Choose *Save*.
+
+12. Choose *Deploy*.
 
     Before consuming a message mapping artifact, you must first deploy it.
 

@@ -39,11 +39,11 @@ You can also add integration-related flow steps to the artifacts. To know more a
 
     Create an API artifact using one of the following methods:
 
-    -   [Create an API Artifact Using URL](create-an-api-artifact-using-url-914f57e.md) 
+    -   [Creating an API Artifact Using URL](creating-an-api-artifact-using-url-914f57e.md) 
 
-    -   [Create an API Using an Imported API Definition](create-an-api-using-an-imported-api-definition-fb99a7d.md)
+    -   [Creating an API Using an Imported API Definition](creating-an-api-using-an-imported-api-definition-fb99a7d.md)
 
-    -   [Create an API Using API Specification](create-an-api-using-api-specification-39c2b30.md)
+    -   [Creating an API Using API Specification](creating-an-api-using-api-specification-39c2b30.md)
 
 
 6.  To define the policy steps for the API artifact, navigate to *Policies* tab on the details screen.

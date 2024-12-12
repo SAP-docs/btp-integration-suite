@@ -6,7 +6,7 @@ You can create applications on behalf of other application developers, add custo
 
 The custom attributes at application level have values assigned to them. These values help in configuring and accessing them on runtime easily. Here, when admin creates an application on behalf of developer at application level, custom attributes can be assigned by the admin. Therefore, this helps you in enhancing the functionality and performing attribute specific runtime enforcements for your API.
 
-**Role of a API business hub enterprise Administrator**:
+**Role of a Developer Hub Administrator**:
 
 -   Create an application on behalf of a user and handover the application key and secret to that user.
 -   Create new applications in different landscapes\(example: production, non-production\) by maintaining the same application key and secret.
@@ -14,7 +14,7 @@ The custom attributes at application level have values assigned to them. These v
 
 **Visibility of List of Applications**
 
-When a user has permission, "ManageAllAPISubscriptions" or is a API business hub enterprise admin, they can view *My Workspace* tab on the home page of the API business hub enterprise. After choosing *My Workspace* tab, they can view the following changes:
+When a user has permission, "ManageAllAPISubscriptions" or is a Developer Hub admin, they can view *My Workspace* tab on the home page of the Developer Hub. After choosing *My Workspace* tab, they can view the following changes:
 
 -   A list of all the applications created for the tenant by all the developers.
 -   Navigate to the application details screen by selecting one of the applications. Hence, *My Workspace* tab also helps in managing all the applications.

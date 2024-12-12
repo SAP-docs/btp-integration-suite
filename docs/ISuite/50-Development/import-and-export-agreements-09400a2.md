@@ -65,6 +65,11 @@ If you chose *Export Agreement*,
 
         -   *Skip* to skip the export of all parameters.
 
+    -   *Security*: Choose
+        -   *Export All* to export all security configurations except the certificate aliases.
+
+        -   *Skip* to skip the export of all security information.
+
 
     Choose *Next* after maintaining the field values.
 
@@ -96,19 +101,31 @@ If you chose *Import Agreement*,
     > The maximum number of agreements allowed per import is 300.
 
 5.  Under the *Configure Import Options*, maintain the following fields:
-    -   *Identifiers*: Choose
+    -   *Single Identifiers*: Choose
 
         -   *Create Only* if you want to create the identifiers in the system.
 
-        -   *Create or Overwrite* if you want to import the values or, overwrite them in the system if the alias matches. To know more about aliases, see [Understanding the Basic Concepts](understanding-the-basic-concepts-74c068d.md).
+        -   *Create or Overwrite* if you want to import the values or, overwrite them in the system if the alias matches. To know more about aliases, see [Understanding the Basic Concepts](../understanding-the-basic-concepts-74c068d.md).
         -   *Skip* if you want to skip the import of the identifiers.
 
-    -   Similary, set the values for the field *System Communication Channels*.
-    -   For the fields *Parameters* and *Activity Paramaters*, choose:
-        -   *Create or Overwrite* if you want to import the values or, overwrite them in the system if the alias matches. To know more about aliases, see [Understanding the Basic Concepts](understanding-the-basic-concepts-74c068d.md).
+    -   Similary, set the values for the field *Identifier Groups*.
+    -   For the field *Identifiers in Groups*, select:
+        -   *Import Empty Groups*: If you want to import just the identifier groups without the identifiers within them, choose this option.
+
+        -   *Import Identifiers in Groups \(exclude conflicting Identifiers\)*: If you want to import the groups and the identifers within them, choose this option. This will however exclude the identifiers than conflict with identifiers already existing in the system.
+        -   *Import Identifiers in Groups \(include conflicting Identifiers\)*: If you want to import the groups and the identifiers within them, including even the ones that conflict with the identifiers existing already in the system, choose this option.
+
+    -   Set the values for the field *System Communication Channels* similar to the identifiers field.
+    -   For the fields *Parameters*, *Activity Paramaters* and *Security*, choose:
+        -   *Create or Overwrite* if you want to import the values or, overwrite them in the system if the alias matches. To know more about aliases, see [Understanding the Basic Concepts](../understanding-the-basic-concepts-74c068d.md).
         -   *Skip* if you want to skip the import of the identifiers.
 
-    -   Select if you want to import or skip the *MIG References* and *MAG References* using the radio button. The *Import* button is selected by default. The *Remove* button removes all MIG and MAG references from the agreements. You need to reassign the MIGs and MAGs to the imported agreements.
+    -   For the fields *MIG References* and *MAG References*, choose:
+
+        -   *Import* if you want to import all MIG/MAG references. This will work only if the exact version of the referenced MIG/MAG exists in the importing system. If not, the import will throw an error.
+
+        -   *Update to the latest version* when there is a higher version of the MIG/MAG in the importing system and you want to update your MIG/MAG references to that version. However, if there is no corresponding MIG/MAG available in the system, an error will be thrown.
+        -   *Skip* to skip importing MIG/MAG references of your agreements.
 
         To know how to export and import MIGs/MAGs seperately, see [Import and Export](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/import-and-export?version=Cloud).
 

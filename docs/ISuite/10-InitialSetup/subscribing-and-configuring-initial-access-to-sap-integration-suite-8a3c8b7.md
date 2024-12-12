@@ -4,7 +4,7 @@
 
 # Subscribing and Configuring Initial Access to SAP Integration Suite
 
-Subscribe to the SAP Integration Suitein SAP BTP cockpit and assign the Integration\_Provisioner role to gain access.
+Subscribe to the SAP Integration Suite in SAP BTP cockpit and assign the Integration\_Provisioner role to gain access.
 
 
 
@@ -12,7 +12,23 @@ Subscribe to the SAP Integration Suitein SAP BTP cockpit and assign the Integrat
 
 ## Prerequisites
 
-You’ve created a subaccount in your assigned global account using the SAP BTP cockpit and added the desired service plans for Integration Suite to the subaccount. For more information on service plans, see [SAP Discovery Center - Integration Suite](https://discovery-center.cloud.sap/serviceCatalog/integration-suite?region=all).
+> ### Note:  
+> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
+> 
+> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
+
+-   You’ve created a subaccount in your assigned global account using the SAP BTP cockpit and added the desired service plans for Integration Suite to the subaccount. For more information on service plans, see [SAP Discovery Center - Integration Suite](https://discovery-center.cloud.sap/serviceCatalog/integration-suite?region=all).
+
+-   If you want to use Integration Suite with the **Starter** service plan, additionally assign the entitlement *integration\_flows* to your subaccount. This entitlement along with the appropriate quota assignment is a prerequiste to create custom integration flows. For more information about the service plans, see SAP Note [2903776](https://me.sap.com/notes/2903776).
+
+    > ### Note:  
+    > If you are unable to assign the *integration\_flows* entitlement, contact the administrator of your subaccount or global account.
+
+
+> ### Tip:  
+> We recommend you clear your browser cookies and cache after subscribing to the application and assigning roles. If you still can't access the application with the correct roles, log out and log back in to resolve the issue.
+
+You can watch a short video to learn about subscribing and configuring initial access here: 
 
 
 
@@ -24,9 +40,12 @@ You’ve created a subaccount in your assigned global account using the SAP BTP 
 
 3.  In the *New Instance or Subscription* dialog box, select the *Plan* and choose *Create*. Wait for the subscription to complete successfully.
 
+    > ### Note:  
+    > For different plans see the SAP Note [2903776](https://me.sap.com/notes/2903776).
+
     Check the status of the submission in the subscriptions section on the *Instances and Subscriptions* page. If the subscription is successful, you notice the status of the *Integration Suite* shown as *Subscribed*.
 
-4.  You must have specific roles to access theIntegration Suite. To assign these roles navigate to *Security* \> *Users*.
+4.  You must have specific roles to access the Integration Suite. To assign these roles navigate to *Security* \> *Users*.
 
 5.  Choose *Create* to add a new user.
 
@@ -51,7 +70,7 @@ You’ve created a subaccount in your assigned global account using the SAP BTP 
 12. Choose *Go to Application* to launch the Integration Suite home page. For more information, see [Working with Integration Suite Home](../20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md).
 
     > ### Tip:  
-    > To access the application, you'll need the correct authorization. If you try to enter without it, you'll be asked to assign the necessary role. If you're still unable to access the application after role assignment, simply log out and then log back into the SAP BTP cockpit. This should grant you access to the application.
+    > Clear your web browser cache and cookies before navigating to *Go to Application*.To access the application, you'll need the correct authorization. If you try to enter without it, you'll be asked to assign the necessary role. If you're still unable to access the application after role assignment, simply log out and then log back into the SAP BTP cockpit. This should grant you access to the application.
 
     > ### Tip:  
     > To remain informed and receive timely notifications about planned and unplanned downtime, customer communications, and maintenance announcements, we recommend you maintain your contact information via Cloud System Notification Subscriptions \(CSNS\). For more information, see [Cloud Availability Center & Cloud System Notification Subscriptions](https://support.sap.com/en/my-support/systems-installations/cac.html).

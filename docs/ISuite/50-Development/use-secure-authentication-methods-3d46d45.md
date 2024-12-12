@@ -21,9 +21,24 @@ SAP Integration Suite offers a range of authentication methods when accessing in
 
 Just as it’s recommended to always prefer secure transport protocols, this guideline suggests preferring the more secure authentication methods wherever possible. Be aware of the pros and cons of each authentication method.
 
-**No authentication** is the most insecure method and is to be avoided. Anybody can send messages to the endpoint, e.g. faking messages or overloading the endpoint processing for denial of service. If authentication isn't possible, consider other means for securing your communication – e.g. via signatures and encryption on message level \(see guide for Message Level Security\).
+> ### Note:  
+> SAP Integration Suite recommends to avoid using generic user roles for sender-side authorization of an integration flow execution. You must create a custom role for inbound communication. For more information, see [Managing User Roles](managing-user-roles-4e86f0d.md).
 
-Note that *inbound* communication to CPI must always be authenticated, so this option is currently only available for *outbound* receiver adapters.
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_u4t_jnk_bcc"/>
+
+## No Authentication
+
+No authentication is the most insecure method and is to be avoided. Anybody can send messages to the endpoint, e.g. faking messages or overloading the endpoint processing for denial of service. If authentication isn't possible, consider other means for securing your communication – e.g. via signatures and encryption on message level \(see guide for Message Level Security\).
+
+Note that inbound communication to CPI must always be authenticated, so this option is currently only available for outbound receiver adapters.
+
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_mzm_nnk_bcc"/>
+
+## Basic Authentication
 
 The standard **Basic Authentication** is supported by all sender and receiver channels, whenever it’s appropriate for the chosen transport protocol. Basic authentication has several drawbacks:
 
@@ -36,9 +51,27 @@ The standard **Basic Authentication** is supported by all sender and receiver ch
 
 For these reasons, always consider using more secure authentication methods, if available.
 
-**Principal Propagation** uses SAML assertions to forward existing login information from another Identity Provider to CPI \(or from CPI to another receiver\). The authentication depends on a trust relation to the issuing Identity Provider.
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_o1j_pnk_bcc"/>
+
+## Principal Propagation
+
+Principal Propagation uses SAML assertions to forward existing login information from another Identity Provider to CPI \(or from CPI to another receiver\). The authentication depends on a trust relation to the issuing Identity Provider.
+
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_h2s_qnk_bcc"/>
+
+## SASL
 
 **SASL** \(Simple Authentication and Security Layer\) is a framework that includes multiple authentication mechanisms and also allows for data encryption and integrity-checking.
+
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_a5t_qnk_bcc"/>
+
+## OAuth
 
 **OAuth Authentication** flows are based on tokens, which allow a resource owner to grant restricted access to clients. These flows are designed to support technical communications. Some benefits of OAuth compared to basic authentication:
 
@@ -54,6 +87,12 @@ OAuth authentication is supported for the following adapters:
 -   Receiver channel: OData, AMQP, HTTP, SuccessFactors, Twitter, and Facebook adapters
 
 
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_b35_qnk_bcc"/>
+
+## Client Certificate
+
 **Client Certificate Authentication** is based on a public/private key cryptography. It therefore does not require a shared secret, which could be guessed or unveiled by brute-force attacks. Client Certificate Authentication is supported by the following HTTP transport protocol-based adapters:
 
 -   SOAP, IDoc, HTTP, SuccessFactors, SAP XI, AS2, OData
@@ -61,11 +100,17 @@ OAuth authentication is supported for the following adapters:
 
 How to setup client certificate authentication is described in more detail in this guideline and illustrated by an example integration flow.
 
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_tdw_qnk_bcc"/>
+
+## Public Key
+
 **Public Key Authentication** is currently supported exclusively by the SFTP adapter \(sender and receiver channel\). The security of Public Key Authentication is comparable to client certificate authentication.
 
 
 
-<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_mxt_nbc_xkb"/>
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_xqg_ynk_bcc"/>
 
 ## Implementation Example with Client Certificate Authentication
 
@@ -114,7 +159,7 @@ The example integration flow can be used without further effort because a certif
 
 
 
-<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_q2q_vkc_xkb"/>
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_crg_ynk_bcc"/>
 
 ## More Information
 

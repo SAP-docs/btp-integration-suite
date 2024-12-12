@@ -30,8 +30,6 @@ Use the JDBC receiver adapter in your integration flow to establish a connection
 The JDBC receiver adapter uses XML SQL Format message protocol. The adapter performs operations such as read, write, update, or delete database entries. For more information on modifying or structuring the content of the message payload, see [Defining XML Documents for Message Protocol XML SQL Format](https://help.sap.com/viewer/5cf7d2de571a45cc81f91261668b7361/7.5.4/en-US/2e96fd3f2d14e869e10000000a155106.html).
 
 > ### Note:  
-> -   UPSERT operation is currently not supported for XML SQL format. It’s recommended to use stored procedure to update an existing record. If the record doesn’t exist, then use INSERT.
-> 
 > -   Currently, only TCP connections are supported.
 > -   Deploy the public certificate in the keystore of your Cloud Integration tenant for verifying the response.
 > 
@@ -58,11 +56,13 @@ The following are the databases that are currently supported.
 -   [Oracle \(Cloud\)](jdbc-for-oracle-cloud-f868182.md)
 -   [Oracle \(On-Premise\)](jdbc-for-oracle-on-premise-e6db38a.md)
 -   [PostgreSQL \(Cloud\)](jdbc-for-postgresql-cloud-4d5b488.md)
--   [JDBC for Postgres \(On-Premise\)](jdbc-for-postgres-on-premise-d31edb4.md)
+-   [Postgres \(On-Premise\)](jdbc-for-postgres-on-premise-d31edb4.md)
 -   [SAP HANA \(Cloud\)](jdbc-for-sap-hana-cloud-187a8e8.md)
 -   [SAP HANA Platform \(On-Premise\)](jdbc-for-sap-hana-platform-on-premise-ff29388.md)\`
--   [JDBC for SAP ASE Service \(Cloud\)](jdbc-for-sap-ase-service-cloud-d96c7c5.md)
--   [JDBC for SAP ASE Platform \(On-Premise\)](jdbc-for-sap-ase-platform-on-premise-dad011d.md)
+-   [SAP ASE Service \(Cloud\)](jdbc-for-sap-ase-service-cloud-d96c7c5.md)
+-   [SAP ASE Platform \(On-Premise\)](jdbc-for-sap-ase-platform-on-premise-dad011d.md)
+-   [MariaDB \(Cloud\)](jdbc-for-mariadb-cloud-1d320d6.md)
+-   [MariaDB \(On-Premise\)](jdbc-for-mariadb-on-premise-1cfb512.md)
 
 
 

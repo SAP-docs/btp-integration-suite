@@ -115,7 +115,7 @@ Source and target subscriptions must be in same environment. Both the source and
 You can clone your API Management content non-disruptively from the source to the target system only after completing the steps in the prerequisites section. Post cloning, you must complete some user actions and validate your target system.
 
 > ### Note:  
-> The developer portal is renamed to API business hub enterprise in Cloud Foundry environment. In this document API business hub enterprise is referred to as developer portal even in Cloud Foundry environment.
+> The developer portal is renamed to Developer Hub in Cloud Foundry environment. In this document Developer Hub is referred to as developer portal even in Cloud Foundry environment.
 
 The steps assisting the migration of your API Management from your source system to a target system are:
 

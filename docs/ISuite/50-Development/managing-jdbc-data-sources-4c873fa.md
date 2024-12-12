@@ -164,8 +164,6 @@ After you complete the above configuration, now create a JDBC data source for yo
     <td valign="top">
     
     *Database ID*
-
-    \(only available for SAP ASE Service \(Neo\), SAP HANA Service \(Neo\) databases that are managed by SAP Managed\)
     
     </td>
     <td valign="top">
@@ -178,8 +176,6 @@ After you complete the above configuration, now create a JDBC data source for yo
     <td valign="top">
     
     *Access Token*
-
-    \(only available for SAP ASE Service \(Neo\), SAP HANA Service \(Neo\) databases that are managed by SAP Managed\)
     
     </td>
     <td valign="top">
@@ -222,6 +218,9 @@ After you complete the above configuration, now create a JDBC data source for yo
     
 5.  Deploy the data source.
 
+
+> ### Recommendation:  
+> Limit the number of deployed data sources to 49 at any point of time to avoid any business process disruption.
 
 > ### Note:  
 > To undeploy a data source, select it from the list and choose *Undeploy*. The system displays a warning and requires you to confirm the task. After confirmation the data source is undeployed and removed from the list.

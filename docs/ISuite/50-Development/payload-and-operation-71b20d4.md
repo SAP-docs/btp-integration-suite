@@ -86,7 +86,17 @@ Payload is the data that you are sending through the JDBC receiver adapter. You 
 
 > ### Sample Code:  
 > ```
+> 
+> ```
+
+> ### Output Code:  
+> ```
+> <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 > <root>
+>     <Delete_Statement1_response>
+>         <delete_count>1</delete_count>
+>     </Delete_Statement1_response>
+> </root><root>
 >     <Delete_Statement1>
 >         <dbTableName action="DELETE">
 >             <table>TEST</table>
@@ -98,31 +108,46 @@ Payload is the data that you are sending through the JDBC receiver adapter. You 
 > </root>
 > ```
 
-> ### Output Code:  
-> ```
-> <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-> <root>
->     <Delete_Statement1_response>
->         <delete_count>1</delete_count>
->     </Delete_Statement1_response>
-> </root>
-> ```
-
 
 
 ### SELECT
 
 > ### Sample Code:  
 > ```
-> <root>
+> <<root>
 >     <Select_Statement1>
 >         <dbTableName action="SELECT">
 >             <table>TEST</table>
->             <key>
->                 <emp_id>122</emp_id>
->             </key>
+>             <access>
+>             </access>
+>                 <key>
+>                    <emp_id>122</emp_id>
+>                 </key>
 >         </dbTableName>
 >     </Select_Statement1>
+> </root>
+> ```
+
+> ### Sample Code:  
+> ```
+> <root>
+>  <Select_Statement1>
+>         <dbTableName action="SELECT">
+>             <table>TESTCOL</table>
+>             <access>
+>                 <col1/>
+>                 <col2/>
+>                 <col3/>
+>             </access>
+>             <key1>
+>                 <col2>val2old</col2>
+>                 <col4>val4</col4>
+>             </key1>
+>             <key2>
+>                 <col2>val2old2</col2>
+>             </key2>
+>         </dbTableName>
+>  </Select_Statement1>
 > </root>
 > ```
 

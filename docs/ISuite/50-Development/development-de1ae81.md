@@ -1,8 +1,15 @@
 <!-- loiode1ae814218247c6bac4975cb486e431 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Development
 
 This section provides an overview of all the development-related aspects for the different capabilities of the SAP Integration Suite.
+
+> ### Note:  
+> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
+> 
+> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
 
 
 
@@ -220,7 +227,7 @@ Create products and view application details as they’re the key components use
 <tr>
 <td valign="top">
 
-*Monitor* \> *Analyze APIs* 
+*Analyze* 
 
 </td>
 <td valign="top">
@@ -230,7 +237,7 @@ Analyze API usage and performance.
 </td>
 <td valign="top">
 
-[Analyze APIs](analyze-apis-7712c61.md)
+[Analyze API Proxies](analyze-api-proxies-7712c61.md)
 
 </td>
 </tr>
@@ -259,7 +266,7 @@ Generate revenue from APIs.
 </td>
 <td valign="top">
 
-Set up API Management and test API business hub enterprise connections.
+Set up API Management and test Developer Hub connections.
 
 </td>
 <td valign="top">
@@ -344,7 +351,7 @@ Observe the status of your B2B interchanges.
 </td>
 <td valign="top">
 
-[Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+[Update Agreements](update-agreements-b5e1fc9.md)
 
 </td>
 </tr>
@@ -458,7 +465,87 @@ Documentation template for MIGs and MAGs.
 </td>
 <td valign="top">
 
-[Documentation Export and Settings](documentation-export-and-settings-4c442af.md)
+[Settings for MIGs and MAGs](settings-for-migs-and-mags-4c442af.md)
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loiode1ae814218247c6bac4975cb486e431__section_zbg_yyp_pdc"/>
+
+## Development for OData Provisioning
+
+Access business data and logic from SAP Business Suite.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Choose…
+
+</th>
+<th valign="top">
+
+To learn how to…
+
+</th>
+<th valign="top">
+
+For more information, see...
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Configure* \> *OData Services* 
+
+</td>
+<td valign="top">
+
+Register OData Services
+
+</td>
+<td valign="top">
+
+ <?sap-ot O2O class="- topic/xref " href="9dfa56ab7337457b8b97bc175a7bfaa3.xml" text="" desc="" xtrc="xref:24" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/de1ae814218247c6bac4975cb486e431.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Monitor* \> *OData Services* 
+
+</td>
+<td valign="top">
+
+Analyze the root cause for errors and where they originated.
+
+</td>
+<td valign="top">
+
+[Monitor Errors from OData Provisioning](monitor-errors-from-odata-provisioning-e0aeecf.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Settings* \> *OData Services* 
+
+</td>
+<td valign="top">
+
+Manage metadata validation and cache settings.
+
+</td>
+<td valign="top">
+
+[Manage Metadata Validation and Cache Settings for OData Services](manage-metadata-validation-and-cache-settings-for-odata-services-dd4df7a.md)
 
 </td>
 </tr>

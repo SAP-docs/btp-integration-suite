@@ -70,7 +70,7 @@ Integration domains are technology-agnostic and therefore help to create a bluep
 
 You can do an assessment of your integration architecture by specifying the integration domains that are relevant for your organization or that you want to further evaluate.
 
-See: [Integration Domains](30-Assessing_Integration_Strategy/integration-domains-e8360d2.md)
+See: [Integration Domains](integration-domains-e8360d2.md)
 
 </td>
 </tr>
@@ -116,7 +116,7 @@ Basic integration category or type, for example, process integration or the inte
 
 Integration styles are the key pillar of ISA-M. Each integration style has specific characteristics and can be refined with use case patterns. All integration styles are technology-agnostic and are applicable within multiple integration domains. You can do an assessment of your integration architecture by adding the integration styles that are relevant for your organization or that you like to evaluate further.
 
-See: [Integration Styles and Integration Use Case Patterns](30-Assessing_Integration_Strategy/integration-styles-and-integration-use-case-patterns-770909d.md)
+See: [Integration Styles and Integration Use Case Patterns](integration-styles-and-integration-use-case-patterns-770909d.md)
 
 </td>
 </tr>
@@ -148,7 +148,7 @@ Integration use case patterns refine the integration styles identified for your 
 
 You can do an assessment of your integration architecture by adding the integration use case patterns that are relevant for your organization or that you want to evaluate. You can also remove integration use case patterns that are not relevant in your organization.
 
-See: [Integration Styles and Integration Use Case Patterns](30-Assessing_Integration_Strategy/integration-styles-and-integration-use-case-patterns-770909d.md)
+See: [Integration Styles and Integration Use Case Patterns](integration-styles-and-integration-use-case-patterns-770909d.md)
 
 </td>
 </tr>
@@ -176,7 +176,7 @@ Help enterprise architects and integration architects to map integration styles 
 
 You can use the listed criteria as a starting point for discussion. You can further refine these criteria in your specific context.
 
-See: [Key Characteristics](30-Assessing_Integration_Strategy/key-characteristics-c16258e.md)
+See: [Key Characteristics](key-characteristics-c16258e.md)
 
 </td>
 </tr>
@@ -194,7 +194,7 @@ Methodology that helps you to blueprint an integration reference architecture fo
 
 ISA-M provides you with a structured approach that helps you to assess your integration strategy.
 
-See: [SAP Integration Solution Advisory Methodology](30-Assessing_Integration_Strategy/sap-integration-solution-advisory-methodology-a2e17f3.md)
+See: [SAP Integration Solution Advisory Methodology](sap-integration-solution-advisory-methodology-a2e17f3.md)
 
 </td>
 </tr>

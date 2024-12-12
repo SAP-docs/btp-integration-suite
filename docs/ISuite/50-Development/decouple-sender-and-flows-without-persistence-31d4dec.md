@@ -45,7 +45,15 @@ The integration flow consists of 2 integration processes:
 
 
 > ### Note:  
-> For connecting the two integration processes, it is recommended using the ProcessDirect adapter. In our case however, the One-Way message exchange pattern is required which is supported by the SOAP adapter only. Hence, in this case the SOAP adapter is used.
+> For connecting the two integration processes, it is recommended using the ProcessDirect adapter.
+> 
+> In our case however, the One-Way message exchange pattern is required which is supported by the SOAP adapter only. Therefore, in this case the SOAP adapter is used.
+> 
+> When using the SOAP adapter, the *Integration Process - Sender* integration process \(short: Sender\) calls the *Integration Process - Receiver* integration process \(short: Receiver\) using the HTTP protocol. Although Sender and Receiver are running on the same tenant in this case, the load balancer is interposed in this call. The Sender calls the load balancer *from the outside*, which forwards the request to the Receiver \(on the same tenant\).
+> 
+> In scenarios where integration flows communicate using the ProcessDirect adapter, the call isn't bypassed through the load balancer.
+> 
+> See: [Decouple Sender and Flows Without Persistence](decouple-sender-and-flows-without-persistence-31d4dec.md)
 
 **Receiver integration process**
 

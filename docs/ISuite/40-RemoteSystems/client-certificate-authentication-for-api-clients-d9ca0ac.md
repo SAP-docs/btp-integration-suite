@@ -25,7 +25,7 @@ For more information, check out [Client Certificate Authentication \(Inbound\)](
 
 1.  Look up the role to be used to authorize the API client to access the related Cloud Integration resource using the API.
 
-    See: [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)
+    See: [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)
 
 2.  In SAP BTP cockpit, select the subaccount that hosts your SAP Integration Suite virtual environment and create a service instance and service key.
 
@@ -111,7 +111,7 @@ For more information, check out [Client Certificate Authentication \(Inbound\)](
     
     Select role according to the API resource to access.
 
-    See: [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)
+    See: [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)
     
     </td>
     <td valign="top">
@@ -155,7 +155,7 @@ For more information, check out [Client Certificate Authentication \(Inbound\)](
     
     Select role according to the API resource to access.
 
-    See: [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)
+    See: [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)
     
     </td>
     <td valign="top">

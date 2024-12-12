@@ -12,7 +12,7 @@ The the role template `AuthGroup_TenantPartnerDirectoryConfigurator` grants perm
 
 More information:
 
-[Persona](../60-Security/persona-2937e5c.md)
+[Personas for Cloud Integration](../60-Security/personas-for-cloud-integration-2937e5c.md)
 
-[Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)
+[Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)
 

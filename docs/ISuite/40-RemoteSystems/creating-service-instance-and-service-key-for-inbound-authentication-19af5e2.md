@@ -141,6 +141,9 @@ Create a service instance to implement inbound communication. A service instance
 
     We recommend choosing *Form* as the more convenient option.
 
+    > ### Note:  
+    > Selecting *JSON*, you can also pass these parameters in a valid JSON object that contains service-specific configuration parameters, provided either in-line or in a file \(see [Specifying Service Instance and Service Key Parameters in JSON Format](specifying-service-instance-and-service-key-parameters-in-json-format-ae419b6.md)\).
+
     Specify the following parameters.
 
 
@@ -167,7 +170,12 @@ Create a service instance to implement inbound communication. A service instance
     
     The selection of roles depend on the chosen option for *Plan*.
 
-    -   When as *Plan* you've chosen *integration-flow*, you can either keep the standard role `ESBMessaging.send` or enter a custom role \(see [Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md)\).
+    -   When as *Plan* you've chosen *integration-flow*, you can either keep the standard role `ESBMessaging.send` or enter a custom role.
+
+        The default role `ESBMessaging.send` is already predefined. To define a custom role, go to the *Monitor* view of SAP Integration Suite, and select the *User Roles* tile in the *Manage Security* section \(for more information, see [Managing User Roles](../50-Development/managing-user-roles-4e86f0d.md)\).
+
+        > ### Note:  
+        > Custom roles for this use case are **not** defined using the SAP BTP cockpit.
 
         You're able to add multiple roles by selecting enter after each role. The default is set to the standard role \(`ESBMessaging.send`\).
 
@@ -178,7 +186,7 @@ Create a service instance to implement inbound communication. A service instance
 
         These roles define permissions for API clients to access certain SAP Integration Suite resources using the OData API.
 
-        Choose the role depending on the resource you like to access using the OData API \(see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)\).
+        Choose the role depending on the resource you like to access using the OData API \(see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)\).
 
 
 
@@ -238,7 +246,7 @@ Create a service instance to implement inbound communication. A service instance
 
     The following values have been set as default:
 
-    -   for plan `api`: `4300` \(12 hours\)
+    -   for plan `api`: `43200` \(12 hours\)
 
     -   for plan `integration-flow`: `3600` \(1 hour\)
 
@@ -249,9 +257,6 @@ Create a service instance to implement inbound communication. A service instance
     </tr>
     </table>
     
-    > ### Note:  
-    > Selecting *JSON*, you can also pass these parameters in a valid JSON object that contains service-specific configuration parameters, provided either in-line or in a file \(see [Specifying Service Instance and Service Key Parameters in JSON Format](specifying-service-instance-and-service-key-parameters-in-json-format-ae419b6.md)\).
-
 9.  Optional: Choose *Next* to review and verify the instance details.
 
 10. Choose *Create*.
@@ -388,6 +393,11 @@ With this step, you create a service key for the instance.
     > -   multiple certificates with the same subjectDN and issuerDN where pinning is disabled;
     > 
     > -   or one certificate with pinning enabled and another certificate with the same subjectDN and issuerDN where pinning is disabled.
+
+    > ### Note:  
+    > Starting from version 8.18.x, Edge Integration Cell runtimes use a local component to perform inbound certificate authentication. This component categorizes all service keys of type *External Certificate* as pinned, regardless of whether the *Pin Certificate* setting is enabled or disabled.
+    > 
+    > As such, even if you've renewed a client certificate and *Pin Certificate* is disabled, you're still required to create a new service key that includes your updated certificate. For more information, see [Edge Local Authentication and Authorization](../edge-local-authentication-and-authorization-510d447.md).
 
 
     

@@ -12,8 +12,13 @@ Activate capabilities for the SAP Integration Suite.
 
 ## Prerequisites
 
+> ### Note:  
+> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
+> 
+> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
+
 -   You have access to the Integration Suite home page. See [Working with Integration Suite Home](20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md).
--   You have the Integration\_Provisioner role assigned to your user. See [Subscribing and Configuring Initial Access to SAP Integration Suite](10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
+-   You have the Integration\_Provisioner role collection assigned to your user. See [Subscribing and Configuring Initial Access to SAP Integration Suite](10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
 
 
 
@@ -29,11 +34,17 @@ This topic describes how to add and activate relevant capabilities in Integratio
 
     -   Graph
 
+-   Event Mesh
+
 -   Open Connectors
 
 -   Integration Advisor
 
 -   Trading Partner Management
+
+-   OData Provisioning
+
+-   Data Space Integration
 
 -   Integration Assessment
 
@@ -44,9 +55,9 @@ This topic describes how to add and activate relevant capabilities in Integratio
 
 ## Procedure
 
-1.  On the Integration Suite home page, under the *Capabilities* section, choose either *Add Capabilities* \(if it's your first time accessing the Integration Suite home page\) or <span class="SAP-icons-V5"></span> *Manage Capabilities*.
+1.  On the Integration Suite home page, under the *Capabilities* section, choose either *Add Capabilities* \(if it's your first time accessing the Integration Suite home page\) or <span class="SAP-icons-V5"></span> *Manage Capabilities* ![](images/AddingCapabilities_SUI_16a5ec1.png).
 
-2.  On the *Activate Capabilities* screen, under *Select Capabilities*, select the relevant capabilities as shown in the following table and choose *Next* to configure additional functionality for individual capabilities.
+2.  On the *Activate Capabilities* screen, under *Select Capabilities*, select the relevant capabilities as shown in the following table and choose *Next* to configure additional functionality for individual capabilities. ![](images/SelectCapabilitySUI_43d96ed.png)
 
 
     <table>
@@ -66,6 +77,8 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <td valign="top">
     
     Cloud Integration
+
+    ![](images/CI_SUI_f5734a7.png)
     
     </td>
     <td valign="top">
@@ -92,19 +105,19 @@ This topic describes how to add and activate relevant capabilities in Integratio
     
     API Management
 
-    -   API business hub enterprise
+    -   Developer Hub
 
         > ### Note:  
-        > You can activate API business hub enterprise by selecting the checkbox.
+        > You can activate Developer Hub by selecting the checkbox.
 
         -   Graph
 
             > ### Note:  
-            > You must select API business hub enterprise to activate Graph.
+            > You must select Developer Hub to activate Graph.
 
 
 
-
+    ![](images/SUI_API_e159e2f.png)
     
     </td>
     <td valign="top">
@@ -112,6 +125,42 @@ This topic describes how to add and activate relevant capabilities in Integratio
     *Manage APIs*
 
     For end-to end instructions on how to activate the API Management capability, see [Enable API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite). You can also refer to the [Set Up API Management from Integration Suite](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html) tutorial for visual instructions.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Event Mesh 
+    
+    </td>
+    <td valign="top">
+    
+    *Manage Business Events*
+
+    > ### Remember:  
+    > If you're an exisitng customer of the standalone SAP Event Mesh service \(default plan\), you can't subscribe to the Event Mesh capability in the same subaccount. In such cases, you must subscribe to SAP Integration Suite in a different subaccount.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    OData Provisioning
+
+    > ### Remember:  
+    > To register OData services from the SAP Business Suite you need to install a Cloud Connector and perform the necessary configurations for connecting to the on-premise back-end system. For more information, see [Cloud Connector](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector?version=Cloud).
+
+
+    
+    </td>
+    <td valign="top">
+    
+    *Access data in SAP Business Suite*
+
+    For end-to-end instructions on activating the OData Provisioning capability, see [Runtime Access and Role Assignment for OData Provisioning](runtime-access-and-role-assignment-for-odata-provisioning-b46816c.md)
     
     </td>
     </tr>
@@ -159,6 +208,18 @@ This topic describes how to add and activate relevant capabilities in Integratio
     <tr>
     <td valign="top">
     
+    Data Space Integration 
+    
+    </td>
+    <td valign="top">
+    
+    *Exchange Data Within Data Spaces* 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Integration Assessment
     
     </td>
@@ -182,16 +243,16 @@ This topic describes how to add and activate relevant capabilities in Integratio
     </tr>
     </table>
     
-3.  Choose *Activate*.
+3.  Choose *Activate*. ![](images/sui_summary_327220b.png)
 
     > ### Note:  
+    > -   The availability of capabilities for activation is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://me.sap.com/notes/2903776).
+    > 
     > -   If you face any issues during activation or the activation fails, then refer SAP Note [2904202](https://me.sap.com/notes/2904202) and proceed accordingly.
     > 
-    > -   After activating Cloud Integration, create a service broker instance. See [Creating Service Instances](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/883f025c30a64373b4e4102238a39fd4.html).
+    > -   You can choose *Manage Capabilities* to activate additional capabilities at a later point in time.
     > 
-    > -   You can choose *Add Capabilities* to activate additional capabilities at a later point in time.
-    > 
-    > -   After activation, assign the required roles to users for accessing the individual capabilities. See [Configuring User Access](configuring-user-access-2c6214a.md).
+    > -   After activation, assign the required role collections to users for accessing the individual capabilities. See [Configuring User Access](configuring-user-access-to-sap-integration-suite-2c6214a.md).
 
 
 
@@ -200,11 +261,16 @@ This topic describes how to add and activate relevant capabilities in Integratio
 
 ## Results
 
--   Capabilities are displayed on the home page as tiles. To access the functionalities offered by these capabilities, users must have the required roles assigned. See [Configuring User Access](configuring-user-access-2c6214a.md).
+-   Capabilities are displayed on the home page as tiles. To access the functionalities offered by these capabilities, users must have the required role collections assigned. See [Configuring User Access to SAP Integration Suite](configuring-user-access-to-sap-integration-suite-2c6214a.md).
+-   After activating Cloud Integration, create a service broker instance. See [Creating Service Instance and Service Key for Inbound Authentication](40-RemoteSystems/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md).
+
 -   The API Management capability needs a few more configuration steps before activation. See [Additional Configurations for API Management](additional-configurations-for-api-management-5ac63ab.md).
+-   The Event Mesh capability needs an additional configuration step before usage. See: [Initiating the Message Broker](initiating-the-message-broker-61eb5dd.md).
+
+-   After activating Data Space Integration, continue with the additional preparatory steps. See [Preparatory Steps](preparatory-steps-95366b2.md).
 
 **Related Information**  
 
 
-[Centralized API business hub enterprise \[New Design\]](50-Development/centralized-api-business-hub-enterprise-new-design-38422de.md "The centralized API business hub enterprise is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
+[Centralized Developer Hub](centralized-developer-hub-38422de.md "Developer Hub is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
 

@@ -17,13 +17,11 @@ The Salesforce sender adapter enables Cloud Integration to accelerate the implem
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 > ### Note:  
-> You need to download the adapter from SAP Software Download Center. You can find more information on the download navigation path [here](https://api.sap.com/package/SalesforceAdapter?section=Overview).
+> You need to download the adapter from SAP Software Download Center. You can find more information on the download navigation path on the following website: [Salesforce Adapter for SAP Integration Suite](https://api.sap.com/package/SalesforceAdapter/overview).
 > 
 > After you complete the download, uncompress and extract the files to your local system. Then deploy the adapter on your tenant.
 > 
 > -   For more information on deploying the adapter in multicloud environment, see [Importing Custom Integration Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/482286e544014098874fde0da4bcca2c.html).
-> 
-> -   For tenants hosted on Neo environment, you must import the adapter to your Eclipse tool and deploy the adapter project. For more information, see [Develop Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f798db6491424460bb4b43d4a86ed1cf.html).
 
 Once you have created a sender channel and selected the *Salesforce* adapter, you can configure its attributes.
 
@@ -363,7 +361,7 @@ Specifies the version of the API to be used for retrieving data from Salesforce.
 </td>
 <td valign="top">
 
-Specifies the format of the request message to be sent to and the response to be returned from Salesforce. Possible values include *Application/XML* and *Application/JSON*. Note that the default value is *Application/XML* 
+Specifies the format of the request message to be sent to and the response to be returned from Salesforce. Possible values include *Application/XML* and *Application/JSON*. Note that the default value is *Application/XML*.
 
 </td>
 </tr>

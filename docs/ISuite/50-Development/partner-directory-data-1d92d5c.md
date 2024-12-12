@@ -37,7 +37,7 @@ When a trading partner agreement gets activated, the complete agreement informat
 
 3.  Navigate to the *Partner Directory Data* tab. The tab displays all the partner directory ID that are created in the system. The partner directory ID starts with the convention *SAP\_TPM*. You can also view the following details:
 
-    -   *Activity Plain ID*: This is the unique activity ID assigned to the business transaction activity in an agreement. The ID is the concatenated value of various head paramaters configured in the agreement. To know more, see [Understanding the Basic Concepts](understanding-the-basic-concepts-74c068d.md).
+    -   *Activity Plain ID*: This is the unique activity ID assigned to the business transaction activity in an agreement. The ID is the concatenated value of various head paramaters configured in the agreement. To know more, see [Understanding the Basic Concepts](../understanding-the-basic-concepts-74c068d.md).
 
     -   *Agreement Link*: This column displays the link to the related agreement. Choosing this link will open the corresponding transaction activity in the agreement.
 

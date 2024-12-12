@@ -186,9 +186,9 @@ API Management does not store any sensitive personal data.
 
 The only personal data of data subjects stored in API Management is the user ID. This user ID is stored whenever a user creates an API artifact, for example an API proxy or API product, and this user ID can be obtained \(read\) only from that artifact.
 
-To enable data subjects to obtain information about their personal data in the API Business Hub Enterprise, we provide the following service to retrieve their personal information:
+To enable data subjects to obtain information about their personal data in the Developer Hub, we provide the following service to retrieve their personal information:
 
--   [Service to View User Details on API business hub enterprise](service-to-view-user-details-on-api-business-hub-enterprise-a49c05f.md)
+-   [Service to View User Details on Developer Hub](service-to-view-user-details-on-developer-hub-a49c05f.md)
 
 
 
@@ -202,9 +202,9 @@ Personal data can also include referenced data. The challenge for deletion and b
 
 API Management stores the API portal administrator’s user ID. Storing the user ID is a business requirement and the user ID is deleted when the resources created by the API portal administrator are removed.
 
-API Management stores personal information such as first name, last name, user ID, and e-mail ID of users who have logged on to the Developer Portal. All the personal information stored in the application is deleted when the access for the corresponding user is revoked.
+API Management stores personal information such as first name, last name, user ID, and e-mail ID of users who have logged on to the Developer Hub. All the personal information stored in the application is deleted when the access for the corresponding user is revoked.
 
-In API Management, application developers can contact their developer portal administrators to have their personal data erased and access revoked. For more information, see [Revoke Access \[Classic Design\]](../50-Development/revoke-access-classic-design-147fb9d.md) and [Delete Data of Unregistered Users](../50-Development/delete-data-of-unregistered-users-d548233.md).
+In API Management, application developers can contact their Developer Hub administrators to have their personal data erased and access revoked. For more information, see [Revoke Access](../revoke-access-ce609bb.md) and [Delete Data of Unregistered Users](../delete-data-of-unregistered-users-d548233.md).
 
 
 

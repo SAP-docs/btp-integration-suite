@@ -94,7 +94,7 @@ Select *Client Certificate* if you want to authorize a user to send OData reques
 
 The user role that you're using for authorization. Choose *Select* to get a list of all the available user roles for your tenant and select the one that you want to use.
 
-For more information on user roles, see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md).
+For more information on user roles, see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md).
 
 </td>
 </tr>

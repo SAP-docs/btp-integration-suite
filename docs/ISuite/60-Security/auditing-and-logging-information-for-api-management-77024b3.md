@@ -320,7 +320,7 @@ Example:
 </td>
 <td valign="top">
 
-[Create an Application \[Classic Design\]](../50-Development/create-an-application-classic-design-7b4e71b.md)
+[Create an Application](../create-an-application-a501a6d.md) 
 
 </td>
 </tr>
@@ -572,7 +572,7 @@ Example:
 </td>
 <td valign="top">
 
-[Onboard an Application Developer](../50-Development/onboard-an-application-developer-786d107.md) 
+[Onboard an Application Developer](../onboard-an-application-developer-786d107.md) 
 
 </td>
 </tr>

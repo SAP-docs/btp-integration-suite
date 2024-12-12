@@ -1,8 +1,15 @@
 <!-- loio1b17d18006d2472e81aa2f7af066a1b2 -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # API Management
 
 The API Management capability in SAP Integration Suite is a complete solution, that addresses all enterprise requirements for API security and governance. It lets you publish, promote, and oversee APIs in a secure and scalable environment.
+
+> ### Note:  
+> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
+> 
+> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
 
 With API Management you can perform the following tasks:
 
@@ -18,7 +25,7 @@ With API Management you can perform the following tasks:
 
 -   **Transform your APIs**: Apply advance header and payload modifications.
 
--   **Developer Engagements**: API business hub enterprise is a feature-rich, themed, and customizable portal designed specifically for application developers. It provides comprehensive API documentation, code snippets, and more. With API business hub enterprise, developers can easily engage with the platform, enabling them to discover, subscribe to, and consume APIs directly.
+-   **Developer Engagements**: Developer Hub is a feature-rich, themed, and customizable portal designed specifically for application developers. It provides comprehensive API documentation, code snippets, and more. With Developer Hub, developers can easily engage with the platform, enabling them to discover, subscribe to, and consume APIs directly.
 
 
 ![](images/WhatsAPIMBlock_e136868.png)
@@ -71,7 +78,7 @@ Engage developers and partners
 </b></dt>
 <dd>
 
-API Business Hub Enterprise simplifies sharing managed APIs and collaborations with customers, partners, and developers.
+Developer Hub simplifies sharing managed APIs and collaborations with customers, partners, and developers.
 
 
 
@@ -104,7 +111,7 @@ Benefit from multitenancy support
 </b></dt>
 <dd>
 
-Use this service in tenant-aware pplications.
+Use this service in tenant-aware applications.
 
 
 
@@ -117,10 +124,14 @@ Use this service in tenant-aware pplications.
 
 ## Getting Started
 
-You can provision the API Management capability from the Integration Suite launchpad. For the detailed steps, see [Enable API Management Capability](enable-api-management-capability-f6eb433.md).
+You can provision the API Management capability from the Integration Suite launchpad. For the detailed steps, see [Activate and Configure API Management Capability](activate-and-configure-api-management-capability-f6eb433.md).
 
 **Related Information**  
 
 
+[Working with API Management](working-with-api-management-321fb4d.md "Get an understanding of API Management within SAP Integration Suite and leverage its capabilities effectively.")
+
 [API Lifecycle](api-lifecycle-5e8ea7d.md "The API lifecycle, starts from API planning, creation and implementation by company developers and other API creators and composers, to the consumption of these APIs by other employees, partners or users of the company’s products and services.")
+
+[Developer Hub](developer-hub-41f7c45.md "Developer Hub is a web-based platform designed for developers to discover, explore, and utilize APIs offered by an organization.")
 

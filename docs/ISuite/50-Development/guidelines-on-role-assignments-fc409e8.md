@@ -2,7 +2,7 @@
 
 # Guidelines on Role Assignments
 
-The combined usage of the following role collections, respectively, authorization groups \(as described under [Persona](../60-Security/persona-2937e5c.md)\) gives you full control of the tenant in terms of design, monitoring, and administration.
+The combined usage of the following role collections, respectively, authorization groups \(as described under [Personas for Cloud Integration](../60-Security/personas-for-cloud-integration-2937e5c.md)\) gives you full control of the tenant in terms of design, monitoring, and administration.
 
 Assigning these role collections/authorization groups to a user is a good choice for the source tenant \(development system\). However, assigning these role collections/authorization groups to a user on target tenants can lead to undesired behavior and inconsistencies with the transport system. To avoid that a user gets too many permissions in the target system, it's necessary to define permissions on a more detailed level on the target tenant \(test and production\).
 
@@ -272,7 +272,7 @@ Allows user configure the transport option.
 </tr>
 </table>
 
-For more information on the individual roles and tasks, see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md).
+For more information on the individual roles and tasks, see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md).
 
 Certain roles must be assigned also in the transport system to determine the responsibilities of who can do what \(for example, import a transport order into a queue, release an order\).
 

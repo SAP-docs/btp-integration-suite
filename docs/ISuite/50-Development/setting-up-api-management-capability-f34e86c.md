@@ -14,11 +14,11 @@ To create APIs, build API proxies as a service provider, or use APIs and other c
 
 The following role collections must be assigned to you:
 
--   The API Management capability must be enabled in Integration Suite. For more information, see [Enable API Management Capability](../enable-api-management-capability-f6eb433.md).
+-   The API Management capability must be enabled in Integration Suite. For more information, see [Activate and Configure API Management Capability](../activate-and-configure-api-management-capability-f6eb433.md).
 
 -   To access the *Settings* page, the *APIManagement.Selfservice.Administrator* role collection must be assigned to you
 
--   You need the following role collections to establish and test the connection between API business hub enterprise and Integration Suite API Management tenant.
+-   You need the following role collections to establish and test the connection between Developer Hub and Integration Suite API Management tenant.
 
     -   APIPortal.Administrator
 
@@ -48,6 +48,9 @@ After enabling the API Management capability, you need to configure the service.
     -   Select *Production* account type for business critical usage, integrating production systems, and productive APIs.
 
 3.  In the *Virtual Host* section, enter the *Host Alias*.
+
+    > ### Note:  
+    > The Virtual Host alias allows a maximum of 63 characters.
 
     Virtual hosts are the base URLs of an API Proxy that identifies your organization. Once you enter the host alias, your API Proxy would appear in the default API Management domain as shown here:
 
@@ -87,13 +90,13 @@ API Management Service is now configured. You can now create APIs, build API pro
 
 After completing the setup, logout of the Integration Suite application and login again. The *Connections* tab appears on the *Settings* page.
 
-To publish the Integration Suite API portal content on the **API business hub enterprise**, Integration Suite should be connected to API business hub enterprise. Choose *Test Connection* and see the *Connection Status* change to *Success*.
+To publish the Integration Suite API portal content on the **Developer Hub**, Integration Suite should be connected to Developer Hub. Choose *Test Connection* and see the *Connection Status* change to *Success*.
 
 > ### Note:  
-> If you've activated API business hub enterprise while enabling API Management capability, the connection to API business hub enterprise is established automatically. You can test the connection using *Test Connection*.
+> If you've activated Developer Hub while enabling API Management capability, the connection to Developer Hub is established automatically. You can test the connection using *Test Connection*.
 > 
-> If you want to connect Integration Suite to a centralized API business hub enterprise, you must create a connection request. For more information, see [Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](create-a-connection-request-for-the-centralized-api-business-hub-enterprise-classic-desig-02f7877.md) or [Create a Connection Request for the Centralized API business hub enterprise \[New Design\]](create-a-connection-request-for-the-centralized-api-business-hub-enterprise-new-design-c7bda8c.md).
+> If you want to connect Integration Suite to a centralized Developer Hub, you must create a connection request. For more information, see [Create a Connection Request for the Centralized Developer Hub](../create-a-connection-request-for-the-centralized-developer-hub-c7bda8c.md).
 
 > ### Note:  
-> You can navigate to the **API business hub enterprise** by choosing the <span class="SAP-icons-V5"></span> Explore our Ecosystem icon on the header bar.
+> You can navigate to the **Developer Hub** by choosing the <span class="SAP-icons-V5"></span> Explore our Ecosystem icon on the header bar.
 

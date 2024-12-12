@@ -59,6 +59,39 @@ See [Integration Artifact Types](../integration-artifact-types-bf932e0.md)
 <tr>
 <td valign="top">
 
+**Cloud Integration – Starter** 
+
+</td>
+<td valign="top">
+
+Cloud-based integration runtime of Cloud Integration for the **Starter** service plan.
+
+</td>
+<td valign="top">
+
+-   Integration Flow
+
+-   Message Mapping
+
+-   Script Collection
+
+-   Value Mapping
+
+-   Integration Adapter \(only for prepackaged standard content\)
+
+
+
+
+</td>
+<td valign="top">
+
+See SAP Note [2903776](https://me.sap.com/notes/2903776) for more information on the scope of the runtime profile.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 **SAP Process Orchestration** 
 
 \(for a specific Process Orchestration release, for example: **SAP Process Orchestration 7.5, SP05**\)
@@ -98,11 +131,16 @@ See [Edge Integration Cell Runtime Scope](../../edge-integration-cell-runtime-sc
 </td>
 <td valign="top">
 
-[Add an API Artifact](../add-an-api-artifact-c2fe62c.md) 
+[Adding an API Artifact](../adding-an-api-artifact-c2fe62c.md) 
 
 </td>
 </tr>
 </table>
+
+> ### Tip:  
+> To display and manage runtime profiles, choose *Settings* \> *Integrations*. When you select a runtime profile, the features enabled and supported by that profile are displayed. That way, you can find out which component versions \(for example, which version of a dedicated adapter\) are supported by the selected runtime profile.
+> 
+> If you apply a runtime profile to an integration flow, the integration flow editor restricts you to configuring only the supported features.
 
 Before start working with and designing integration content, you must know on which target runtime you want to deploy the integration content.
 

@@ -8,6 +8,9 @@ EDI Extractor enables you to extract EDI headers and transfer to camel headers. 
 
 ## Context
 
+> ### Note:  
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
 EDI Extractor version 2.0 and above supports the TRADACOMS standard \(available only for dedicated service plans, see [2903776](https://me.sap.com/notes/2903776)\).
 
 EDI Extractor supports EDIFACT, EANCOM, ODETTE, TRADACOMS, and ASC-X12 documents.

@@ -45,8 +45,6 @@ Dynamics 365 Sales is an adaptive selling solution that helps your sales team 
 > After you complete the download, uncompress and extract the files to your local system. Then deploy the adapter on your tenant.
 > 
 > -   For more information on deploying the adapter in multicloud environment, see [Importing Custom Integration Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/482286e544014098874fde0da4bcca2c.html).
-> 
-> -   For tenants hosted on Neo environment, you must import the adapter to your Eclipse tool and deploy the adapter project. For more information see, [Develop Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f798db6491424460bb4b43d4a86ed1cf.html).
 
 Once you’ve created a receiver channel and selected the Microsoft Dynamics CRM adapter, you can configure its parameters by referring the following description:
 

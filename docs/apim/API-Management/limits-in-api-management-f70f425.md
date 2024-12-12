@@ -82,14 +82,63 @@ Maximum number of resources that can be attached to an API proxy
 </td>
 <td valign="top">
 
-You can attached up to 100 resources to an API proxy. However, it is recommended that you do not add more than 100 resources to an API proxy as it might lead to a timeout while updating or deploying an API proxy.
+-   You can attach up to 100 resources to an API proxy. However, it is recommended that you do not add more than 100 resources to an API proxy as it might lead to a timeout while updating or deploying an API proxy.
 
-In case you have a business requirement to attach more than 100 resources to an API proxy, please contact the SAP API Management support team by creating a ticket with component OPU-API-OD-DT. However, the team can support your request up to a maximum of 200 resources per API proxy.
+    If your API product includes API proxies with more than 100 resources, and you haven't yet published any products by selectively choosing resources, please contact the SAP API Management support team. You can accomplish this by creating a ticket with the component OPU-API-OD-DT.
+
+    > ### Note:  
+    > By selectively choosing resources, we mean avoiding the attempt to select specific resources from the *Add API* dialog while adding an API proxy to a product on the *Create Product* page.
+
+-   If you are using Developer Hub OData APIs to retrieve resources from an API proxy, please note that the retrieved result may not include all the resources available in the API proxy.
+
+
+
 
 </td>
 <td valign="top">
 
 Yes
+
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="3">
+
+Certificates
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Certificate expiry and Credential Rotation
+
+</td>
+<td valign="top">
+
+When your certificate expires or you need to rotate your credentials, create a new Keystore and upload the updated certificate to this new store.
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Certificate name length in Keystore
+
+</td>
+<td valign="top">
+
+It is recommended that you keep your certificate name in a Keystore to no more than 25 characters.
+
+</td>
+<td valign="top">
+
+No
 
 </td>
 </tr>
@@ -109,6 +158,10 @@ Additional virtual host in Cloud Foundry
 <td valign="top">
 
 By default, only 3 virtual hosts can be configured per tenant. In case you have a business requirement to have more than 3 virtual hosts within a tenant, please raise a support ticket through the [SAP Support Portal](https://support.sap.com/en/index.html) using the component OPU-API-OD-OPS.
+
+> ### Note:  
+
+
 
 </td>
 <td valign="top">

@@ -117,6 +117,11 @@ You’re editing the integration flow in the editor.
     </tr>
     </table>
     
+    > ### Note:  
+    > The CSV to XML flow step, version 1.4 and above, supports dynamic configurations for fields such as XML Schema, Path to Target Element in XSD, and Record Marker in CSV. For a header or property, the accepted format is "$\{header.<headername\>\}" or "$\{property.<propertyname\>\}". For the partner directory, the accepted format is "pd:<partnerId\>:<parameterId\>".
+    > 
+    > In addition to the above, for XML Schema, you now have the ability to consume an XSD file from the partner directory in binary form. For this, the accepted format for the partner directory is "pd:<partnerId\>:<parameterId\>:binary".
+
 4.  Save or deploy the configuration.
 
 

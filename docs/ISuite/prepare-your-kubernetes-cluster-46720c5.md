@@ -32,7 +32,7 @@ Your Kubernetes cluster must meet certain requirements before you can set up Edg
 > ### Note:  
 > For information about Kubernetes versions, see SAP Note [3247839](https://me.sap.com/notes/3247839).
 > 
-> You can install Edge Integration Cell on Kubernetes clusters on cloud platforms such as Amazon Web Services \(Amazon Elastic Kubernetes Service, Amazon EKS\), Microsoft Azure \(Azure Kubernetes Service, AKS\) and SUSE Rancher \(Rancher Kubernetes Engine, RKE, or RKE2\).
+> You can install Edge Integration Cell on Kubernetes clusters on cloud platforms such as Amazon Web Services \(Amazon Elastic Kubernetes Service, Amazon EKS\), Microsoft Azure \(Azure Kubernetes Service, AKS\), SUSE Rancher \(Rancher Kubernetes Engine, RKE2\) and Red Hat OpenShift \(OpenShift Kubernetes Engine, OKE\).
 
 -   The Kubernetes cluster must have role-based access control \(RBAC\) enabled.
 
@@ -64,13 +64,25 @@ Your PostgreSQL database must meet certain requirements before you can set up Ed
 
 -   Server must provide a single endpoint \(host and port pair\).
 
--   Using a connection proxy for failover such as `pgBouncer`, `HAProxy`, `Pgpool-II`.
+    -   Using a connection proxy for failover such as `pgBouncer`, `HAProxy`, `Pgpool-II`.
+
+        > ### Note:  
+        > If you use `pgBouncer` as a connection proxy for PostgreSQL, the following parameters must be set:
+        > 
+        > -   pgbouncer.pool\_mode = transaction
+        > 
+        > -   pgbouncer.max\_prepared\_statements \> 0
+        > 
+        > -   pgbouncer.ignore\_startup\_parameters = extra\_float\_digits
+
+
+    -   Alternatively, in case PostgreSQL HA is deployed in K8s, the PostgreSQL K8s service should always point to the PostgreSQL read-write pod.
 
 
 The requirements are fulfilled when using cloud platform offerings like Azure Database for PostgreSQL, or Amazon RDS for PostgreSQL.
 
 > ### Note:  
-> For more information about PostgreSQL, see [3247839.](https://me.sap.com/notes/3247839.)
+> For more information about PostgreSQL, see [3247839](https://me.sap.com/notes/3247839).
 
 
 
@@ -87,5 +99,5 @@ Your Redis data store must meet certain requirements before you can set up Edge 
 -   Using client certificates is currently not supported.
 
 > ### Note:  
-> For more information about Redis, see [3247839.](https://me.sap.com/notes/3247839.)
+> For more information about Redis, see [3247839](https://me.sap.com/notes/3247839).
 

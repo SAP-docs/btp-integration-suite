@@ -6,6 +6,11 @@
 
 Simplify and accelerate enterprise integration. 
 
+> ### Note:  
+> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
+> 
+> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
+
 SAP Integration Suite is an industry-leading and enterprise-grade integration platform-as-a-service that helps businesses seamlessly connect and integrate their applications, data, and processes within their organization and beyond. A starter collection of pre-built, best-practice integration packs helps integration developers achieve faster time to value. Execute the integration content on the Business Technology Platform or within your private landscape.
 
 > ### Tip:  
@@ -28,6 +33,8 @@ SAP Integration Suite is an industry-leading and enterprise-grade integration pl
 
 > ### Tip:  
 > Contextual help is available for some screens of the SAP Integration Suite. To activate this help, from the top toolbar, choose <span class="SAP-icons-V5"></span> Help. A panel with help topics opens alongside your current screen to your right. You will also find green <span style="color:#007833;"><span class="SAP-icons-V5"></span></span> Help icons on the screen. Choose these icons to know more about the associated element.
+> 
+> The following GIF shows how you can interact with the contextual help:![](images/SAP_Companion_GIF_8122beb.gif)
 
 
 
@@ -60,6 +67,17 @@ Manage APIs
 <dd>
 
 Discover, protect, govern, and publish APIs to developers with API Management and Graph. Ensure that your APIs comply with best-practice security policies.
+
+
+
+</dd><dt><b>
+
+Manage Business Events 
+
+</b></dt>
+<dd>
+
+Publish and consume business events to seamlessly connect applications through event-driven architecture.
 
 
 
@@ -129,6 +147,17 @@ Manage APIs and process integration scenarios within your own private landscapes
 
 
 
+</dd><dt><b>
+
+Exchange Data Within Data Spaces 
+
+</b></dt>
+<dd>
+
+Offer, consume, and maintain data space assets with Data Space Integration.
+
+
+
 </dd>
 </dl>
 
@@ -183,6 +212,18 @@ Expose all your business data in the form of a semantically connected data graph
 <tr>
 <td valign="top">
 
+[Event Mesh](event-mesh-3129673.md)
+
+</td>
+<td valign="top">
+
+Publish and consume business events across applications.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 [Open Connectors](https://help.openconnectors.ext.hana.ondemand.com/home)
 
 </td>
@@ -219,7 +260,31 @@ Manage B2B relationships with multiple trading partners through this easy-to-use
 <tr>
 <td valign="top">
 
-[Integration Assessment](https://help.sap.com/viewer/36eacbcb75de48a48717090574ba16d0/Cloud/en-US/)
+[OData Provisioning](odata-provisioning-d257fc3.md) 
+
+</td>
+<td valign="top">
+
+Access data from SAP Business Suite using OData services.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[Data Space Integration](data-space-integration-8bb6972.md)
+
+</td>
+<td valign="top">
+
+Offer, consume, and maintain assets in a data space.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[Integration Assessment](integration-assessment-310067e.md)
 
 </td>
 <td valign="top">
@@ -248,6 +313,22 @@ For more information on the connectivity options, see [Connectivity Options](con
 > Read the SAP Note [2903776](https://me.sap.com/notes/2903776) to understand the service plans offered for SAP Integration Suite. You also find information on the supported feature sets for each service plans.
 
 For SAP Integration Suite, the free service plan is available. For more information, see [Using Free Service Plans](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/524e1081d8dc4b0f9d055a6bec383ec3.html?locale=en-US&q=trial).
+
+
+
+<a name="loio5cc6987511104c418b7cb4c25f3d9cb0__section_lbn_wpv_hdc"/>
+
+## Connectivity Options
+
+More information: [Connectivity Options](connectivity-options-93d82e8.md)
+
+
+
+<a name="loio5cc6987511104c418b7cb4c25f3d9cb0__section_vl2_jrm_jcc"/>
+
+## System Scope
+
+More information: [System Scope for Cloud Integration](system-scope-for-cloud-integration-8ea3822.md)
 
 
 

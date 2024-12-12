@@ -4,7 +4,7 @@
 
 # Define a Local Script Step
 
-You can create a script step that is specific to an integration artifact to execute custom scripts \(JavaScript or Groovy Script\).
+Learn how to use a script step that’s specific to an integration artifact to create custom scripts \(JavaScript or Groovy Script\).
 
 
 
@@ -50,7 +50,9 @@ JavaScript Engine \(Rhino\)
 </td>
 <td valign="top">
 
-1.7 R4
+1.7.14
+
+Supports ECMAScript standards.
 
 </td>
 </tr>
@@ -60,7 +62,7 @@ JavaScript Engine \(Rhino\)
 
 ## Context
 
-Cloud Integration provides a Java API to support this use case.
+Cloud Integration provides a Java API to support scripting.
 
 > ### Note:  
 > The Java standard libraries of Java 8 can be used.
@@ -82,34 +84,49 @@ Cloud Integration provides a Java API to support this use case.
     3.  Place *Script* step in the integration process.
 
 
-3.  To open the script editor, select *Create* next to the Script step shape.
 
-    ![](images/Script_Step_Create_dd8d09c.png)
+You can write the code manually or upload a script.
 
-4.  In the script editor, specify the script according to the requirements of your scenario.
+3.  To write your code manually, do the following:
 
-    For an overview of the classes and interfaces supported by the Script step, see: [SDK API](sdk-api-c5c7933.md).
+    1.  To open the script editor, select *Create* next to the Script step shape.
 
-    For more information on how to use the dedicated interfaces and methods for specific use cases, refer to [Script Use Cases](script-use-cases-148851b.md).
+        ![](images/Script_Step_Create_dd8d09c.png)
 
-    You can also check out the design guidelines for using scripts at [Use Scripting Appropriately](use-scripting-appropriately-d4dc13c.md).
+    2.  In the script editor, write the script according to the requirements of your scenario.
 
-5.  When you've finished the definition of your script, select *OK*.
 
-6.  Save the integration flow.
+4.  To upload a script from your computer, do the following:
 
-    > ### Note:  
-    > When having selected the Script step shape in the integration flow model, you can do the following in the property sheet:
-    > 
-    > -   In the *General* tab, you can edit the name of the Script step shape.
-    > 
-    > -   In the *Processing* tab, choose *Select* to browse and upload a script file.
-    > 
-    >     You can add external jar files using the *Resource* view. You can then invoke functions from these external jar files in the script. You can also upload a script from your computer using *Upload from File System*.
-    > 
-    > -   In the *Script Function* field, enter the name of the function that you want to call from the script by default. Make sure that you enter the function name without any arguments.
-    > 
-    >     The field helps you define a default function when there are multiple functions defined in the script file. However, if the script contains the function *processData*, which is the default function created in the script, you can leave the field empty.
+    1.  Double-click the script step to launch the properties sheet.
+
+    2.  In the *Processing* tab, choose *Select*.
+
+    3.  In the *Local Resources* tab, upload a script file from your file system.
+
+        Alternatively, in the *Global Resources* tab, you can refer to an already existing script in a Script Collection artifact. By doing so, any changes to the source script are made available for all referencing script steps.
+
+    4.  Choose the script file to launch it in the script editor.
+
+    5.  In the script editor, edit the script according to the requirements of your scenario.
+
+
+5.  Improve the script with the available tools in the editor:
+
+    -   Include the recommendations provided in the *Problems* view. For more information, see:  <?sap-ot O2O class="- topic/xref " href="7397c42f0fea40eeb64a35d0d099af6e.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/03b32eb2c5c249f0a59bcd27c44d1e4e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    -   Use *Optimize* to enhance the script with AI. For more information, see:  <?sap-ot O2O class="- topic/xref " href="3b7a5a1258ea469b963dc047c3f443a0.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/03b32eb2c5c249f0a59bcd27c44d1e4e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+
+        > ### Note:  
+        > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
+
+6.  When you've finished the definition of your script, choose *Apply*.
+
+7.  Optional: In the *Script Function* field, enter the name of the function that you want to call by default from the script. Make sure that you enter the function name without any arguments
+
+    The field helps you define a default function when there are multiple functions defined in the script file. However, if the script contains the function *processData*, which is the default function created in the script, you can leave the field empty.
+
+8.  Save the integration flow.
 
 
 
@@ -120,7 +137,7 @@ Cloud Integration provides a Java API to support this use case.
 
 When using the Script step, make sure that you follow guidelines about secure usage of the related script programming language.
 
-To make sure that your scenario meets highest standards with regard to security and other aspects, follow the design guidelines, in particular, the following ones:
+To make sure that your scenario meets the highest standards with regard to security and other aspects, follow the design guidelines, in particular, the following ones:
 
 -   [Apply the Highest Security Standards](apply-the-highest-security-standards-201fd43.md)
 

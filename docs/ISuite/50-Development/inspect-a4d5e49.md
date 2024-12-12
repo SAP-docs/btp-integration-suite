@@ -9,7 +9,9 @@ Each SAP Integration Suite tenant comes with certain physical resources that are
 You can inspect consumption of integration resources, identify those integration flows that contribute significantly to integration-resource exhaustion, and perform steps to resolve critical situations. Based on the insights, you can, for example, optimize integration flow design to overcome integration resource bottlenecks.
 
 > ### Note:  
-> To use this feature, role collection `MonitoringDataRead` needs to be assigned to your user \(see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)\).
+> To use this feature, role collection `MonitoringDataRead` needs to be assigned to your user \(see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)\).
+
+Watch the following video to learn how to use *Inspect* and for an overview of a typical workflow. The video uses database connection usage as an example, but the workflow also applies to any other resources.
 
 
 
@@ -46,7 +48,32 @@ Select *Inspect* to inspect the usage of integration resources associated with t
 
 Inspect system resource usage caused by your active integration flows.
 
-Using the *Memory* tile, you can inspect resource usage of system memory caused by integration flows.
+-   Using the *Memory* tile, you can inspect resource usage of system memory caused by integration flows.
 
-See: [Inspect System Memory Usage](inspect-system-memory-usage-e9617dd.md)
+    See: [Inspect System Memory Usage](inspect-system-memory-usage-e9617dd.md)
+
+-   Using the *Temporary Storage* tile, you can inspect the storage usage of temporary files.
+
+    See: [Inspect Temporary Storage](inspect-temporary-storage-7cdfaa7.md)
+
+
+
+
+<a name="loioa4d5e49e24f54a7a81b31eb07f1714ac__section_jhm_m1k_dcc"/>
+
+## Inspect Content Resources
+
+Inspect content resource usage caused by your integration artifacts.
+
+-   Using the *Content Size* tile, you can inspect the file size that integration artifacts occupy.
+
+    See: [Inspect Content Size](inspect-content-size-f72b7ff.md)
+
+-   Using the *Integration Flows* tile, you can inspect the integration flows with the highest resource consumption.
+
+    See: [Inspect Top Consuming Integration Flows](inspect-top-consuming-integration-flows-c8fd522.md)
+
+
+> ### Tip:  
+> When resource usage exceeds a critical value, a link appears on the respective tile. You can use this link to open an info panel, which contains information on how to resolve the critical situation.
 

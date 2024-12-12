@@ -30,7 +30,19 @@ Follow the next procedure to create an agreement template.
 
 3.  Navigate to the *Agreement Templates* tab and choose *Create*.
 
-4.  In the *Overview* tab, enter the following details under the *Details* section:
+4.  In the *Create Agreement Template* dialog, enable *Create with Company Subsidiary* toggle button if you want to create the template using the subsidiary.
+
+    1.  If selected, the field *Company Subsidiary* gets enabled. Select a subsidiary from the drop-down list..
+
+
+5.  In the same dialog, enable *Include Communication Partner* toggle button if you want to include a communication partner in the agreement template.
+
+    1.  If the *Include Communication Partner* is selected, the field *Communication Partners* gets enabled. Select a communication partner from the drop-down list.
+
+
+6.  Choose *Create*.
+
+7.  In the *Overview* tab, enter the following details under the *Details* section:
 
 
     <table>
@@ -84,7 +96,10 @@ Follow the next procedure to create an agreement template.
     </tr>
     </table>
     
-5.  Maintain the following fields under *My Company Details* section
+8.  Maintain the following fields under *My Company Details* section. The field *Company Name* is autofilled by default.
+
+    > ### Note:  
+    > If you selected a Subsidiary during the Template creation step \(refer Step 4\), the *Company Name* field will display the respective Subsidiary's name. Otherwise, it will default to the Company Profile name.
 
 
     <table>
@@ -137,7 +152,7 @@ Follow the next procedure to create an agreement template.
     Select a contact person from the drop-down list.
 
     > ### Note:  
-    > You need to have the *Business Expert* to assign a contact person. To know more on assigning roles, see [Configuring User Access](../configuring-user-access-2c6214a.md).
+    > You need to have the *Business Expert* to assign a contact person. To know more on assigning roles, see [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md).
 
 
     
@@ -181,7 +196,10 @@ Follow the next procedure to create an agreement template.
     </tr>
     </table>
     
-6.  Under *Common Trading Partner Details* fill in the following details:
+9.  Under *Common Details* fill in the following details:
+
+    > ### Note:  
+    > If you had opted for a communication partner during template creation \(refer Step 5\), then the *Name* field will be populated with the communication partner name.
 
 
     <table>
@@ -200,12 +218,24 @@ Follow the next procedure to create an agreement template.
     <tr>
     <td valign="top">
     
-    **Alias for System**
+    **System \(displayed if you chose a communication partner during template creation\)**
     
     </td>
     <td valign="top">
     
-    Maintain an alias value for the system.
+    Select a system for the communication partner.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **System Alias**
+    
+    </td>
+    <td valign="top">
+    
+    Enter an alias for the trading partner.
     
     </td>
     </tr>
@@ -217,7 +247,7 @@ Follow the next procedure to create an agreement template.
     </td>
     <td valign="top">
     
-    Select a type system for the trading partner.
+    Select a type system for the partner.
     
     </td>
     </tr>
@@ -271,13 +301,11 @@ Follow the next procedure to create an agreement template.
     </tr>
     </table>
     
-7.  Choose *Save*. Once you save the agreement template, the template also displays the *Purpose* of the type system you chose.
+10. Choose *Save*. Once you save the agreement template, the template also displays the *Purpose* of the type system you chose.
 
-8.  Navigate to the *B2B Scenarios* tab and choose *Edit*.
+11. Navigate to the *B2B Scenarios* tab and choose *Create Business Transaction*.
 
-9.  Choose *Create Business Transaction*.
-
-10. Maintain the following details:
+12. In the *Create Business Transaction* dialog, maintain the following details:
 
 
     <table>
@@ -331,21 +359,27 @@ Follow the next procedure to create an agreement template.
     </tr>
     </table>
     
-11. Choose *Save*. A new entry gets created.
+13. Choose *Save*. A new entry gets created.
 
-12. In the newly created transaction, choose the *Communication Channel* step on the sender side.
+14. In the newly created transaction, choose the *Communication* step on the sender side.
 
-13. Select a value from the drop-down list for the field *Communication*.
+15. Select a value from the drop-down list for the field *Communication*.
 
-14. Select a value from the drop-down list for the field *Communication for Sender Functional Acknowledgement*.
+16. Select a value from the drop-down list for the field *Communication for Sender Functional Acknowledgement*.
 
     This field appears only for AS2 adapter.
 
-15. Select the *Interchange* step on the sender side.
+17. Select the *Interchange* step on the sender side.
 
-16. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field.
+18. Set the target decimal value of the incoming payload in the *Target Decimal Character* field.
 
-17. Select a MIG from the list along with the required version and select *Choose*.
+    This field appears only for the **UN/EDIFACT** type system.
+
+19. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field.
+
+20. In the *Select MIG* dialog, the list of MIGs available in the system is displayed in a table. Use the fields provided \(MIG Name, Version, Status etc.\) to search for a specific MIG.
+
+21. Select a MIG from the list along with the required version and select *Choose*.
 
     If you want to view the details of the MIG that you chose, you can use the link provided under the *Version* field. You can also directly view the message type used in the MIG displayed under the *Message Type* field.
 
@@ -364,9 +398,9 @@ Follow the next procedure to create an agreement template.
     > 
     >         Tradacoms is supported only in the 2.0 version of the integration package *Cloud Integration - Trading Partner Management V2*
 
-18. For Type Systems *ASC X12* and *UN/EDIFACT*, you can edit their version numbers in the *Type System Version* field.
+22. For Type Systems *ASC X12* and *UN/EDIFACT*, you can edit their version numbers in the *Type System Version* field.
 
-19. Select a value from the drop-down list for the field *Create Functional Acknowledgement*.
+23. Select a value from the drop-down list for the field *Create Functional Acknowledgement*.
 
     This field appears only for the following type systems:
 
@@ -374,42 +408,57 @@ Follow the next procedure to create an agreement template.
 
     -   ASC X12
 
-    You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+    You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md)
 
-20. If you are planning to use custom integration flows for Pre-Processing of your interchange step, then enable the checkbox under *Custom Integration Flow*.
+24. If you are planning to use custom integration flows for Pre-Processing of your interchange step, then enable the checkbox under *Custom Integration Flow*.
 
-21. Provide the address of your custom integration flow in the *Process Direct Address* field.
+25. Provide the address of your custom integration flow in the *Process Direct Address* field.
 
     This step is carried out using the ProcessDirect adapter. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md).
 
-22. If you want to enable the payload validation, select the checkbox under *Validation Option*.
+26. If you want to enable the payload validation, select the checkbox *Enable Payload Validation*under *Validation Option* section.
 
-23. Similarly, choose the *Communication Channel* on the receiver side and enter a value for the field *Alias for Communication*.
+    1.  If enabled, the generic integration flow will perform a validation check for the sender interchange. And regardless of the outcome, the interchange processing will continue to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
 
-24. Select a value from the drop-down list for the field *Receiver Functional Acknowledgement Channel*.
+
+27. The *Syntax Validation* checkbox is selected by default to enable syntax validation through the EDI splitter. If you do not want to use this validation, you can disable this option.
+
+    This field appears only for the following type systems:
+
+    -   UN/EDIFACT
+
+    -   ASC X12
+
+    If the identifier used in the agreement has **Custom Scheme Code**, then this option will be skipped irrespective of the field selection.
+
+28. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md)
+
+29. Similarly, choose the *Communication Channel* on the receiver side and enter a value for the field *Communication*.
+
+30. Select a value from the drop-down list for the field *Receiver Functional Acknowledgement Channel*.
 
     This field appears only for AS2 adapter.
 
-25. Select the *Interchange* shape on the receiver side.
+31. Select the *Interchange* shape on the receiver side.
 
-26. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
+32. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
 
     If you want to view the details of the MIG that you chose, you can use the link provided under the *Version* field.
 
-27. Enter an alias value for the field *Number Range Alias*.
+33. Enter an alias value for the field *Number Range Alias*.
 
     > ### Note:  
     > A number range is used to insert unique sequence numbers.
     > 
     > You need to configure this number range in the Cloud Integration tenant. To do so, see [Number Ranges](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b6e17fa17a70491da4a54216db298f84.html).
 
-28. Similar to the Sender, if you want to use custom integration flows for your Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
+34. Similar to the Sender, if you want to use custom integration flows for your Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
 
-29. Provide the address of your custom integration flow in the *Process Direct Address* field.
+35. Provide the address of your custom integration flow in the *Process Direct Address* field.
 
     This step is carried out using the ProcessDirect adapter. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
-30. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgement for the receiver.
+36. Select the *Enable Receiver Functional Acknowledgement* checkbox if you want to enable the functional acknowledgement for the receiver.
 
     > ### Note:  
     > This option is available only for the following type systems:
@@ -417,25 +466,45 @@ Follow the next procedure to create an agreement template.
     > -   UN/EDIFACT
     > -   ASC X12
 
-    You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+    You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md)
 
-31. If you want to enable the payload validation, select the checkbox under *Validation Option*.
+37. If you want to use custom seperators for your payload, enable the *Use Custom Seperators* checkbox and maintain the values for the following fields:
 
-32. Select the *Mapping* step of the transaction.
+    This option is available only for UN/EDIFACT and ASC X12 type systems.
 
-33. Select a mapping guideline and its corresponding version using the value help for the *Mapping Guideline\(MAG\)* field.
+    1.  Segment Terminator
 
-34. If you want to custom integration flow for the mapping processing, enable the checkbox for the field *Customized Mapping Processing*.
+    2.  Composite Sperator
 
-35. Provide the address of your integration flow in the *Process Direct Address* field.
+    3.  Data Element Seperator
 
-36. Choose anywhere outside the transaction and the common properties get displayed below the transaction. Choose the *Activity Parameters* tab if you want to add any paramaters to the template.
+    4.  Escape Character
 
-37. Choose *Add Parameters*. This will display the following options:
+
+38. If you want to enable the payload validation, select the checkbox for the field *Enable Payload Validation* under *Validation Option*.
+
+    1.  If enabled, the generic integration flow will perform a validation check for the receiver interchange. And regardless of the outcome, the interchange processing will continue to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
+
+
+39. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
+
+40. If your receiver type system is UN/EDIFACT, you might want to set a target encoding. To do so, under the field *Target Encoding*, select a value from the list.
+
+41. Select the *Mapping* step of the transaction.
+
+42. Select a mapping guideline and its corresponding version using the value help for the *Mapping Guideline\(MAG\)* field.
+
+43. If you want to custom integration flow for the mapping processing, enable the checkbox for the field *Customized Mapping Processing*.
+
+44. Provide the address of your integration flow in the *Process Direct Address* field.
+
+45. Choose anywhere outside the transaction and the common properties get displayed below the transaction. Choose the *Activity Parameters* tab if you want to add any paramaters to the template.
+
+46. Choose *Add Parameters*. This will display the following options:
 
     -   *Extend from Company*: This option allows you to use the dynamic parameters from the company profile used in the agreement template. If you have created a *two-way* business transaction, you can choose between *Inbound* or *Outbound* parameters. Select a parameter from the list and choose *Save*.
 
-        If you want to know how to add dynamic parameters to a company profile, see [Creating a Company Profile](creating-a-company-profile-909d928.md)
+        If you want to know how to add dynamic parameters to a company profile, see [Creating a Company Profile and a Subsidiary](creating-a-company-profile-and-a-subsidiary-909d928.md)
 
     -   *Create Trading Partner Parameters*: This option allows you to create dynamic parameters for the trading partner profile used in the agreement template.If you have created a *two-way* business transaction, you can choose between *Inbound* or *Outbound* parameters. A dialog box with the *Parameter Key* field is displayed. Enter a value for the field and choose *Save*.
 
@@ -443,11 +512,11 @@ Follow the next procedure to create an agreement template.
 
     -   *Create Activity Parameters*: You can also create your onw activity paramaters using this option. If you have created a *two-way* business transaction, you can choose between *Inbound* or *Outbound* parameters. Maintain the values of the fields *Parameter Key* and *Value* and choose *Save*.
 
-38. Navigate to the *Custom Search Attirbutes* tab if you want to add any custom search values which are picked up for the B2B monitoring.
+47. Navigate to the *Custom Search Attirbutes* tab if you want to add any custom search values which are picked up for the B2B monitoring.
 
     Before adding custom search attributes, you need to maintain them in the *Configuration Manager*. To know more, see [Configuration Manager](configuration-manager-7daf06c.md).
 
-39. Choose *Add* and maintain the following fields:
+48. Choose *Add* and maintain the following fields:
 
 
     <table>
@@ -525,7 +594,7 @@ Follow the next procedure to create an agreement template.
     </tr>
     </table>
     
-40. Choose *Save*.
+49. Choose *Save*.
 
 
 
@@ -545,5 +614,5 @@ You have now successfully created an agreement template and you can view the tem
 **Related Information**  
 
 
-[Creating a Trading Partner Agreement](creating-a-trading-partner-agreement-9bd43c9.md "A trading partner agreement is an agreement of a contract defined by two trading parties that have decided to exchange certain business data or items using a B2B scenario for fullfilling the agreed trading/business process in a given business context.")
+[Trading Partner Agreement](trading-partner-agreement-9bd43c9.md "Explore and create trading partner agreements.")
 

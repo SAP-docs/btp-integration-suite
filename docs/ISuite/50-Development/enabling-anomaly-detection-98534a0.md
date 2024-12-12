@@ -2,7 +2,18 @@
 
 # Enabling Anomaly Detection
 
-To detect anomalies in API calls and analyze the detected anomalies in the analytics dashboard, you need to enable the anomaly detection setting.
+To detect anomalies for API proxy calls, you need to enable the anomaly detection setting.
+
+
+
+<a name="loio98534a0f8d1d4c4d98bea4b84e762787__prereq_pkk_gsy_31c"/>
+
+## Prerequisites
+
+The role collection *APIPortal.Administrator* should be assigned to you.
+
+> ### Note:  
+> The availability of the anomaly detection feature is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620).
 
 
 
@@ -10,19 +21,24 @@ To detect anomalies in API calls and analyze the detected anomalies in the analy
 
 ## Context
 
-To enable anomaly detection through the API portal, follow the steps below:
+To enable anomaly detection through the SAP Integration Suite, follow the steps below:
 
 
 
 ## Procedure
 
-1.  Log in to the API portal.
+1.  Log on to the **SAP Integration Suite**.
 
-2.  Click on the navigation icon on the left and select *Settings*.
+2.  From the left navigation pane, choose *Settings* \> *APIs*.
 
 3.  Go to the *Anomaly Detection* tab.
 
-4.  Toggle the radio button to the *ON* position to enable anomaly detection.
+4.  Toggle the radio button to the *ON* position.
+
+    ![](images/EnablingAD_e6005c2.png)
+
+    > ### Note:  
+    > Disabling the Anomaly Detection feature will delete all associated anomaly data.
 
 
 
@@ -31,12 +47,14 @@ To enable anomaly detection through the API portal, follow the steps below:
 
 ## Results
 
-Anomaly Detection for API calls is now enabled.
+Anomaly Detection for API proxy calls is now enabled.
 
 **Related Information**  
 
 
-[Enabling APIs for Anomaly Detection](enabling-apis-for-anomaly-detection-9e7e5d1.md "The System Level Anomaly check is performed by default in the backend. However, for an API Level Anomaly check, specific APIs need to be selected.")
+[Configuring APIs for Anomaly Detection](configuring-apis-for-anomaly-detection-9e7e5d1.md "View or configure APIs for anomaly detection.")
 
-[](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/CLOUD/en-US/1c677b2472f94aa28ea4fc4ecc4e4bef.html "") :arrow_upper_right:
+[Working with Detected Anomalies](working-with-detected-anomalies-1c677b2.md "Access and analyze anomalies in the analytics dashboard. Discover details about the various types of anomalies, evaluate and resolve them.")
+
+[Subscribing to Notification Alerts](subscribing-to-notification-alerts-88e96f4.md "Receive real-time alerts for anomaly detection services, delivered to your preferred communication channel.")
 

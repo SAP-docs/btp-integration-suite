@@ -2,7 +2,7 @@
 
 # Accessing API Management APIs Programmatically
 
-The *apiportal-apiaccess* paln offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the [Business Accelerator Hub](https://api.sap.com/package/APIMgmt/odata).
+The *apiportal-apiaccess* plan offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the SAP Business Accelerator Hub.
 
 
 
@@ -12,7 +12,7 @@ The *apiportal-apiaccess* paln offers external applications the ability to acces
 
 The *apiportal-apiaccess* plan allows you to programmatically import/export API proxies, create products, key value maps. It is especially useful when integrating API Management with a CI/CD process or when migrating from a Neo to Cloud Foundry environment using the migration tool.
 
-The API Access plan allows you to generate a service key by creating a service instance. By creating a service instance, you can generate a service key that includes the application url, clientId, clientSecret, and tokenUrl is used tohttps://api.sap.com/package/APIMgmt/odata generate a bearer token with the help of a REST Console. This Bearer Token, along with the application url and API endpoint are used to trigger the API. Therefore, bearer token acts like a key to access the APIs.
+The API Access plan allows you to generate a service key by creating a service instance. By creating a service instance, you can generate a service key that includes the application url, clientId, clientSecret, and tokenUrl is used to generate a bearer token with the help of a REST Console. This Bearer Token, along with the application url and API endpoint are used to trigger the API. Therefore, bearer token acts like a key to access the APIs.
 
 
 
@@ -22,7 +22,7 @@ The API Access plan allows you to generate a service key by creating a service i
 
 -   You've enabled API Management capability using Integration suite. For more information, refer [Subscribing to Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/8a3c8b7a6b1c4f249bb81d11644ef806.html?version=CLOUD) and [Activating Capabilities](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/2ffb343c163c48a4b3a90f9f3c487328.html?version=CLOUD).
 
-    OR
+    **OR**
 
     You have subscribed to the standalone *API Management, API portal* tile in the Cloud Foundry environment. For more information, see [Set Up API Portal Application](set-up-api-portal-application-29c281b.md).
 
@@ -39,7 +39,7 @@ To enable API access for API Management, API portal execute the steps in the sec
 
 Create a service instance using API Access plan to generate a service key.
 
-1.  In your web browser, open the *SAP BTP Cockpit* - [https://eu-access.cockpit.btp.cloud.sap](https://eu-access.cockpit.btp.cloud.sap).
+1.  In your web browser, open the *SAP BTP Cockpit* - [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap).
 2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
 3.  Choose *API Management, API portal* \> *Instances* \> *New Instance*.
 
@@ -51,7 +51,7 @@ Create a service instance using API Access plan to generate a service key.
 
     The following roles are supported for the current scenario:
 
-    Assign `APIPortal.Administrator` role to access the API portal APIs and perform operations like create, update, delete on various API portal entities as specified in the [SAP Business Accelerator Hub](https://api.sap.com/package/APIMgmt?section=Artifacts)
+    Assign `APIPortal.Administrator` role to access the API portal APIs and perform operations like create, update, delete on various API portal entities as specified in the SAP Business Accelerator Hub.
 
     ```
     
@@ -129,7 +129,7 @@ Now, with the help of the created service instance, generate a service key from 
     <tr>
     <td valign="top">
     
-    `“instance-secret”`\(without payload\)
+    "binding-secret"\(without payload\)
     
     </td>
     <td valign="top">
@@ -139,12 +139,12 @@ Now, with the help of the created service instance, generate a service key from 
     </td>
     <td valign="top">
     
-    Low
+    Medium
     
     </td>
     <td valign="top">
     
-    For instance-secret, the clientSecret generated is same for all the keys.
+    For binding-secret, the clientSecret generated for every key is unique.
     
     </td>
     <td valign="top">
@@ -167,54 +167,7 @@ Now, with the help of the created service instance, generate a service key from 
     <tr>
     <td valign="top">
     
-    `“instance-secret”`\(with payload\)
-    
-    </td>
-    <td valign="top">
-    
-    ```
-    {
-       "xsuaa":{
-          "credential-type":"instance-secret"
-       }
-    }
-    
-    ```
-
-
-    
-    </td>
-    <td valign="top">
-    
-    Low
-    
-    </td>
-    <td valign="top">
-    
-    For instance-secret, the clientSecret generated is same for all the keys.
-    
-    </td>
-    <td valign="top">
-    
-    For admin role:
-
-    ```
-    {
-        "url": "https://apiportal-application-url",
-        "tokenUrl": "https://token-enpoint-url/oauth/token",
-    	"clientId": "your-client-id",	
-    	"clientSecret": "xxxxxxxxxxxxxxxxxxxxxxx="
-    
-    ```
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `"binding-secret"` 
+    `"binding-secret"(with payload)` 
     
     </td>
     <td valign="top">
@@ -401,10 +354,10 @@ In the REST Console:
 3.  Similarly, paste the *clientId* and *clientSecret* in the place of `Username` and `Password`.
 4.  Make a POST Call.
 5.  Obtain the Bearer Token from the output and copy it in a notepad.
-    -   Now, to trigger an API, in the same REST Console, append the API endpoint \(obtained from the API portal APIs that are located in the SAP API Management package of API Business Hub\) to the *url*.
+    -   Now, to trigger an API, in the same REST Console, append the API endpoint \(obtained from the API portal APIs that are located in the SAP API Management package in SAP Business Accelerator Hub\) to the *url*.
 
         > ### Note:  
-        > Currently, the *apiportal-apiaccess* plan allows you to access only the API portal APIs from the [SAP API Management package](https://api.sap.com/package/APIMgmt?section=Artifacts).
+        > Currently, the *apiportal-apiaccess* plan allows you to access only the API Management APIs from the SAP API Management package in SAP Business Accelerator Hub.
 
     -   Choose `Bearer Token` as the `Authorization` type and paste the copied Bearer Token in the specified space.
     -   Include payloads, if needed.
@@ -425,8 +378,6 @@ In the REST Console:
 
 **Related Information**  
 
-
-[Accessing API business hub enterprise APIs Programmatically](accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md "The devportal-apiaccess plan allows you to access the API business hub enterprise APIs to programmatically onboard developers, create applications, and more.")
 
 [Managing Cloud Foundry Microservices through API Management](managing-cloud-foundry-microservices-through-api-management-e609a3e.md "The apim-as-route-service plan helps you in managing Cloud Foundry applications by including policies such as rate limit, quota. The service instance you create through this plan allows you to bind to the route service and creates an API Proxy. This API Proxy serves in establishing a secure connection with your Cloud Foundry application and all the calls made to the Cloud Foundry application are routed via API Management, API portal.")
 

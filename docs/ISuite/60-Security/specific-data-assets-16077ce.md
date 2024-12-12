@@ -10,5 +10,5 @@ The following are the primary assets that are stored as part of Trading Partner 
 3.  Trading Partner Agreement Templates
 4.  Trading Partner Agreements
 
-There are several other configurations required and maintained as part of these primary data assets. Refer to [Getting Started with B2B Scenarios in SAP Integration Suite](../50-Development/getting-started-with-b2b-scenarios-in-sap-integration-suite-ba066bb.md) for more details.
+There are several other configurations required and maintained as part of these primary data assets. Refer to [Update Properties](../50-Development/update-properties-ba066bb.md) for more details.
 

@@ -378,6 +378,18 @@ Name of property: `SAP_RabbitMQ_Outbound_Message_DeliveryMode`
 <tr>
 <td valign="top">
 
+*Generate Message ID* 
+
+</td>
+<td valign="top">
+
+This is an optional field. Enable only if you want to generate an arbitrary message ID that would be added to the property in the message exchange. This ID is useful when you are developing integration scenarios with applications that specifically look for a message ID during interactions.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Key* 
 
 </td>

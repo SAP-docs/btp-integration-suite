@@ -2,11 +2,9 @@
 
 # Solace Monitor
 
-Monitor Solace Message Broker metrics, keep track of resource utilization, and access information about message VPNs, queues, and clients.
+Monitor Solace Broker metrics, keep track of resource utilization, and access information about message VPNs, queues, and clients.
 
-The Solace Monitor card provides status updates on the *Kubernetes Custom Resource*`SolaceSoftwareBroker`, the *Guaranteed Messaging* capability and the *Config-Sync* feature. The status of the Kubernetes Custom Resource indicates the operational state of the Solace Message Broker, which is used as a messaging service by the Edge Integration Cell, installed on your Kubernetes cluster. The Guaranteed Messaging capability signifies the reliability of message delivery, even in the face of network failures or downtime with the receiving application. Config-Sync is an internal Solace feature which ensures configurations remain in sync, allowing the system to continue functioning in the event of a failover. Config-Sync status is available only in a high-availability setup.
-
-> ### Note:  
+The Solace Monitor card provides status updates on the *Kubernetes Custom Resource*`SolaceSoftwareBroker`, the *Guaranteed Messaging* capability and the *Config-Sync* feature. The status of the Kubernetes Custom Resource indicates the operational state of the Solace Broker, which is used as a messaging service by the Edge Integration Cell, installed on your Kubernetes cluster. The Guaranteed Messaging capability signifies the reliability of message delivery, even in the face of network failures or downtime with the receiving application. Config-Sync is an internal Solace feature which ensures configurations remain in sync, allowing the system to continue functioning in the event of a failover. Config-Sync status is available only in a high-availability setup.
 
 Choose the card to monitor the current state, track resource utilization, and view detailed information about message VPNs, queues, and messaging clients in real-time. On the screen, you see the following information:
 

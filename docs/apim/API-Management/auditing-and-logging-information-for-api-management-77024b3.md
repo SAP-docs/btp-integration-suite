@@ -320,7 +320,7 @@ Example:
 </td>
 <td valign="top">
 
-[Create an Application \[Classic Design\]](create-an-application-classic-design-7b4e71b.md)
+[Create an Application](create-an-application-a501a6d.md) 
 
 </td>
 </tr>

@@ -8,7 +8,890 @@ This topic provides information on patch releases for hotfixes, bugfixes, and co
 
 This topic covers patches for the following capabilities and features of SAP Integration Suite: Cloud Integration, Trading Partner Management, Integration Advisor, Integration Assessment, Migration Assessment, and Edge Integration Cell.
 
-The following patch release information covers the most recent changes made to the latest version of the software. For earlier patch release notes, see [Archive - Patch Release Notes for Cloud Integration](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f4b7126c524e4126b54fc7b4a34cadc0.html "This page contains a historical archive of all patch release notes for Cloud Integration.") :arrow_upper_right:.
+The following patch release information covers the most recent changes made to the latest version of the software.
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_i5x_kr5_4dc"/>
+
+## December 2024
+
+Software Increment: 2409
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.22.17
+
+</td>
+<td valign="top">
+
+Internal properties in Exchange were not being propogated when using ProcessDirect adapter in Camel 3x migration. This patch resolves the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.58.40
+
+8.22.15
+
+</td>
+<td valign="top">
+
+On Cloud Foundry, the Cloud Integration worker application failed to connect to the Credential Store Service due to network issues, causing the keystore to be unavailable. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_h4k_drs_ldc"/>
+
+## November 2024
+
+Software Increment: 2409
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.58.34
+
+</td>
+<td valign="top">
+
+Users are unable to select the newly created number range in the B2B scenario receiver interchange number range dropdown when the number of number ranges defined under profiles exceeds 255. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.58.31
+
+</td>
+<td valign="top">
+
+Users are unable to add a certificate when the length of some fields exceeds 255 characters. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.58.31
+
+</td>
+<td valign="top">
+
+The JDBC Adapter version 1.5 is currently not available in Camel 3.x tenants due to a version difference in the command \(cmd\) between the Camel 2.x and 3.x branches. This patch resolves the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_gp4_42n_vcc"/>
+
+## October 2024
+
+**Software Increment: 2409**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.22.9
+
+</td>
+<td valign="top">
+
+The Process Direct Adapter with Camel 3.x software was stuck in the processing state when called for Dynamic Address Resolution for the process direct consumer. This patch resolves the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.58.24
+
+</td>
+<td valign="top">
+
+The JDBC Adapter version 1.5 was unavailable in Camel 3x tenants due to the command version difference between the Camel 2x and 3x branches. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_gv4_42n_vcc"/>
+
+## September 2024
+
+**Software Increment: 2408**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.57.28
+
+</td>
+<td valign="top">
+
+Fix for content deployment failures caused by authentication issue between the underlying microservices.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.91.6
+
+</td>
+<td valign="top">
+
+The following issues have been fixed with this patch:
+
+-   Display problems with mapping lines in MAG when an invalid mapping element is present.
+
+-   MIG Simulation not working correctly with EDI Flat files.
+
+-   EDI Flat files not being accepted for the customization of MIG during its creation.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_oy3_prr_ncc"/>
+
+## August 2024
+
+**Software Increment: 2407**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.90.2
+
+</td>
+<td valign="top">
+
+Issues were reported when activating a MAG with target MIG based on a custom message. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.56.33
+
+</td>
+<td valign="top">
+
+In the tenants using Apache Camel 3.14 runtime the integration flows utilizing AS2 and AS4 adapters experience frequent retries during message processing failures. For more details and solution, see [3516264](https://me.sap.com/notes/3516264)
+
+This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_td5_gcw_hcc"/>
+
+## August 2024
+
+**Software Increment: 2406**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.89.3
+
+</td>
+<td valign="top">
+
+Issues were reported when activating a MAG with target MIG based on a custom message. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.55.21
+
+8.19.14
+
+</td>
+<td valign="top">
+
+A recent security fix for GHAS/CodeQL message mapping runtime, which blocked XML payloads containing Document Type Declarations \(DTDs\), has been reverted due to customer impact. This patch withdraws the security fix.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.55.15
+
+</td>
+<td valign="top">
+
+There was an issue with agreement activation.
+
+Sending requests to an AS2 sender caused the issue of a partner Id not found. This patch fixes this issue. For more information, see SAP note [3506468](https://me.sap.com/notes/3506468).
+
+There was a gateway timeout issue which resulted in the situation that loading the agreements failed. This patch mitigates this issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.55.13
+
+</td>
+<td valign="top">
+
+The following issues have been fixed with this patch:
+
+-   The conversion from property to exchangeProperty was not properly implemented for the generation step, thus preventing the initiation of integration flows.
+
+-   The default to use breadcrumb has been changed with Camel 3.x from `true` to `false`. As some customers rely on that header, the value has been reverted back to `true`
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.55.12
+
+</td>
+<td valign="top">
+
+OEM adapters will be upgraded to Apache Camel version 3.x during the migration to Camel 3.x. This patch provides a change that makes this step transparent on the user interface.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_vyv_klk_2cc"/>
+
+## July 2024
+
+**Software Increment: 2405**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.54.31
+
+</td>
+<td valign="top">
+
+Message imports were failing due to the addition of an excess parameter in the **zip** file. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_r1l_g42_sbc"/>
+
+## June 2024
+
+**Software Increment: 2404**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.31
+
+</td>
+<td valign="top">
+
+A null pointer exception was thrown when sending an XI message. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.29
+
+</td>
+<td valign="top">
+
+During software update, a *Timer* step configured with a start date triggered the writing of a message processing log at an unscheduled time.
+
+This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.27
+
+</td>
+<td valign="top">
+
+The JDBC Kafka consumer took too much time in case of an error.
+
+The patch fixes the issue so that processing happens in asynchronous mode now.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.25
+
+</td>
+<td valign="top">
+
+Content transport was impacted by an outdated service key stored in the credential store. The patch fixes this issue and ensures a consistent update of the affected entry in the credential store.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.53.23
+
+</td>
+<td valign="top">
+
+When updating an authorized user ID that contains special characters in the Partner Directory, the user ID was not encoded. This patch fixes the issue
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.23
+
+</td>
+<td valign="top">
+
+There was an issue with the EDI Splitter when processing requests containing attachments in ISO-8859-1 encoded stream. Special characters got converted to invalid characters. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_pr1_hzx_3bc"/>
+
+## May 2024
+
+**Software Increment: 2403**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.52.21
+
+</td>
+<td valign="top">
+
+When activating an AS2 security which is configured with a certificate, the certificate configured for the security wasn’t found. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.52.20
+
+</td>
+<td valign="top">
+
+There have been DNS cache issues with JCo library resulting in the RFC receiver adapter to throw the error `Opening socket to partner failed: error 111 - Connection refused`. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.52.19
+
+</td>
+<td valign="top">
+
+The *Inspect* feature was not available. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.52.18
+
+8.16.7
+
+</td>
+<td valign="top">
+
+The missing DOCNUM field in the request payload was causing an error “Mandatory IDoc SOAP header missing”. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.52.17
+
+</td>
+<td valign="top">
+
+There was an issue with number range redeployment that lead to artifacts getting stuck. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_blr_mdf_cbc"/>
+
+## April 2024
+
+**Software Increment: 2402**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.28
+
+</td>
+<td valign="top">
+
+There have been problems to load *Monitor* page. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.27
+
+</td>
+<td valign="top">
+
+There were some issues with the generation of key-pairs with X.509 certificates using elliptic curve algorithms \(for example, secp192k1, secp256k1, secp192r1, and others\). This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.26
+
+</td>
+<td valign="top">
+
+There has been a performance issue with the Inspect feature. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.25
+
+</td>
+<td valign="top">
+
+There was an issue with a potential negative impact on the deployment and undeployment of integration artifacts. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.23
+
+</td>
+<td valign="top">
+
+System performance has been improved and truncation of value mapping has been fixed by changing the way XML files are read.
+
+</td>
+</tr>
+</table>
 
 
 
@@ -480,9 +1363,7 @@ The following issues have been fixed with this patch:
 
 -   Some security material artifacts were deactivated after being associated with one or more runtimes \(and the system returned an error message\).
 
--   There have been issues with XSLT transformations that blocked customers from using Integration Assessment.
-
-
+-   
 Furthermore, the consumption logic for Kafka acknowledgment messages has been improved.
 
 </td>
@@ -500,7 +1381,7 @@ Cloud Integration
 </td>
 <td valign="top">
 
-Issues have been observed when two EDI to XML converter steps were executed with different values for the *Exclude Interchange and Group envelopes* parameter. This patch fixes the issues.
+Issues have been observed when two EDI to XML converter steps were executed with different values for the *Exclude Interchange and Group envelopes*null parameter. This patch fixes the issues.
 
 </td>
 </tr>

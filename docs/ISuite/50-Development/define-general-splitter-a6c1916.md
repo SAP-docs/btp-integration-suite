@@ -243,7 +243,7 @@ If you use a Splitter step in a local integration process, the following limitat
 
 ## Next Steps
 
-When a message is split \(as configured in a Splitter step of an integration flow\), the Camel headers listed below are generated every time the runtime finishes splitting an Exchange. You have several options for accessing these Camel headers at runtime. For example, suppose that you are configuring an integration flow with a Splitter step before an SFTP receiver adapter. If you enter the string `split_${exchangeId}_Index${header.CamelSplitIndex}` for *File Name*, the file name of the generated file on the SFTP server contains the Camel header `CamelSplitIndex`. In other words, the information on the number of split Exchanges induced by the Splitter step.
+When a message is split \(as configured in a Splitter step of an integration flow\), the Camel headers listed below are generated every time the runtime finishes splitting an Exchange. You have several options for accessing these Camel headers at runtime. For example, suppose that you are configuring an integration flow with a Splitter step before an SFTP receiver adapter. If you enter the string `split_${exchangeId}_Index${property.CamelSplitIndex}` for *File Name*, the file name of the generated file on the SFTP server contains the property `CamelSplitIndex`. This property contains the information on the number of split Exchanges induced by the Splitter step.
 
 -   CamelSplitIndex
 

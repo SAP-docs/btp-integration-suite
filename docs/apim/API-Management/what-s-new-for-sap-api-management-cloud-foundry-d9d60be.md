@@ -6,7 +6,7 @@
 
 
 
-**2023**
+**2024**
 
 
 <table>
@@ -71,6 +71,1177 @@ Latest Revision
 Available as of
 
 </th>
+<th valign="top">
+
+Version
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+API business hub enterprise rebranded as Developer Hub
+
+</td>
+<td valign="top">
+
+If you have enabled API business hub enterprise as part of the API Mangement capability within Integration Suite, note that it's now been relaunched as Developer Hub with enhanced features. In addition to providing a central, managed, and curated catalog of APIs for developers, the Developer Hub now allows content administrators to discover APIs from various business systems and publish them as products in the catalog. Furthermore, they can manually import additional API specifications and make them accessible in the same catalog. These new features will enhance the experience for both developers and content administrators.
+
+See: [Developer Hub](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-business-hub-enterprise?version=CLOUD) and [Manage Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-content?version=CLOUD)
+
+If you have an API business hub enterprise standalone subscription, note that it's now rebranded as Developer Hub. This new name better represents the focus and goals of the solution. For more information, see [Developer Hub](https://help.sap.com/docs/sap-api-management/sap-api-management/api-business-hub-enterprise?&version=Cloud).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-10-26
+
+</td>
+<td valign="top">
+
+2024-10-26
+
+</td>
+<td valign="top">
+
+2409
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Region-Specific IP Addresses Available for API Management Cloud Foundry Environment
+
+</td>
+<td valign="top">
+
+The region-specific load balancer IP addresses \(ingress, for incoming requests\) are now updated and available in the help document.
+
+See: [Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](https://help.sap.com/docs/integration-suite/sap-integration-suite/region-specific-ip-addresses-available-for-api-management-cloud-foundry-environment-683a97ce038a40e097524619e47d9a10?version=CLOUD)
+
+SAP API Management customers choose: [Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](https://help.sap.com/docs/sap-api-management/sap-api-management/region-specific-ip-addresses-available-for-api-management-cloud-foundry-environment-683a97ce038a40e097524619e47d9a10?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2408
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Create a Product by Importing an API Specification
+
+</td>
+<td valign="top">
+
+As a content administrator, you can discover APIs from various business systems and publish them as products in the Developer Hub catalog. However, even if you have an API specification from an external gateway, you can still make it available in the catalog.
+
+See: [Creating a Product by Importing an API Specification](https://help.sap.com/docs/integration-suite/sap-integration-suite/registering-api-manually?version=CLOUD)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2408
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Default Credential type for Service Key
+
+</td>
+<td valign="top">
+
+The default credential type for API Management service key has been updated. It's now 'binding-secret' instead of 'instance-secret'. We made this change because xsuaa has deprecated the credential type 'instance-secret'.
+
+See: [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD)
+
+SAP API Management customers choose: [Accessing API Management APIs Programmatically](https://help.sap.com/docs/sap-api-management/sap-api-management/api-access-plan-for-api-portal?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2408
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Deprication of the element "TimeoutInSec"
+
+</td>
+<td valign="top">
+
+The "TimeoutInSec" element in Populate Cache and Response Cache policies has been deprecated. It's now been replaced with "TimeoutInSeconds".
+
+See:
+
+-   [Populate Cache](https://help.sap.com/docs/integration-suite/sap-integration-suite/populate-cache?version=CLOUD)
+
+-   [Response Cache](https://help.sap.com/docs/integration-suite/sap-integration-suite/response-cache?version=CLOUD)
+
+
+SAP API Management customers choose:
+
+-   [Populate Cache](https://help.sap.com/docs/sap-api-management/sap-api-management/populate-cache?version=Cloud)
+
+-   [Response Cache](https://help.sap.com/docs/sap-api-management/sap-api-management/response-cache?version=Cloud)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+Deprecated
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2024-09-21
+
+</td>
+<td valign="top">
+
+2408
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Default Credential type for Service Key
+
+</td>
+<td valign="top">
+
+In the Developer Hub, we've updated the default credential type for the service key. It's now 'binding-secret' instead of 'instance-secret'. We made this change because xsuaa has deprecated the credential type 'instance-secret'.
+
+See: [Accessing API business hub enterprise APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD)
+
+SAP API Management customers choose: [Accessing API business hub enterprise APIs Programmatically](https://help.sap.com/docs/sap-api-management/sap-api-management/api-access-plan-for-api-business-hub-enterprise?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-08-24
+
+</td>
+<td valign="top">
+
+2024-08-24
+
+</td>
+<td valign="top">
+
+2407
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Manage Content from Developer Hub 
+
+</td>
+<td valign="top">
+
+You can now expose APIs from SAP systems in the API business hub enterprise catalog. To accomplish this, your Global Account Administrator needs to register these systems in your system landscape. This action establishes a connection between the SAP system and SAP BTP.
+
+Following system registration, these systems appear on the API business hub enterprise. Here, you can directly discover and publish the APIs from these systems. This can be done from the Manage Content page in the API business hub enterprise.
+
+See: [Manage Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-content?version=CLOUD)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-08-24
+
+</td>
+<td valign="top">
+
+2024-08-24
+
+</td>
+<td valign="top">
+
+2407
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Latest Version of the Tenant Cloning Tool
+
+</td>
+<td valign="top">
+
+The 1.9.2 version of the Tenant Cloning Tool is now available.
+
+See:
+
+-   [Clone API Management Content \(Neo to Cloud Foundry\)](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts?version=CLOUD)
+
+-   [Clone API Management Content between Cloud Foundry Environments](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=CLOUD)
+
+
+SAP API Management customers choose:
+
+-   [Cloned and Uncloned Entities \(Neo to Cloud Foundry\)](https://help.sap.com/docs/sap-api-management/sap-api-management/cloned-and-uncloned-entities?version=Cloud)
+
+-   [Clone API Management Content between Cloud Foundry Environments](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=Cloud)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-08-06
+
+</td>
+<td valign="top">
+
+2024-08-04
+
+</td>
+<td valign="top">
+
+2406
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Virtual Host
+
+</td>
+<td valign="top">
+
+The virtual host alias allows a maximum of 63 characters.
+
+See:
+
+-   [Configuring a Default Domain for a Virtual Host](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-default-domain-for-virtual-host-1085228c10814bc5b1ab135814459538?version=CLOUD)
+
+-   [Setting Up API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/setting-up-api-management-service?version=CLOUD)
+
+
+SAP API Management customers choose:
+
+-   [Configuring a Default Domain for a Virtual Host](https://help.sap.com/docs/sap-api-management/sap-api-management/configuring-default-domain-for-virtual-host?version=Cloud)
+
+-   [Setting Up API Portal Application Using API Management Standalone Tile](https://help.sap.com/docs/sap-api-management/sap-api-management/setting-up-api-portal-application-using-api-management-standalone-tile?version=Cloud)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-08-06
+
+</td>
+<td valign="top">
+
+2024-08-04
+
+</td>
+<td valign="top">
+
+2406
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Multiple Target Endpoints
+
+</td>
+<td valign="top">
+
+Previously, the only way to add multiple target endpoints was through API proxy zip updates, and policies could only be added to the target endpoint that appeared first in the Target EndPoints dropdown menu. Now you have the ability to easily add and manage multiple target endpoints using the user interface. Furthermore, the UI enables you to model policies for all the available target enpoints within an API proxy.
+
+See:
+
+-   [Create an API Proxy](https://help.sap.com/docs/integration-suite/sap-integration-suite/create-api?version=CLOUD&q=create%20an%20api%20proxy)
+
+-   [Edit an API Proxy](https://help.sap.com/docs/integration-suite/sap-integration-suite/edit-api-proxy?version=CLOUD)
+
+
+SAP API Management customers choose:
+
+-   [Create an API Proxy](https://help.sap.com/docs/sap-api-management/sap-api-management/create-api?version=Cloud)
+
+-   [Edit an API Proxy](https://help.sap.com/docs/sap-api-management/sap-api-management/edit-api-proxy?version=Cloud)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-07-14
+
+</td>
+<td valign="top">
+
+2024-07-14
+
+</td>
+<td valign="top">
+
+2405
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+API Management Analytics
+
+</td>
+<td valign="top">
+
+A navigation change has been implemented in the SAP Integration Suite for accessing API Management Analytics. The sub-menu previously named *APIs*, located under *Monitor* has been renamed to *Analyze* and relocated to the same level as *Monitor* in the navigation bar. The functionality remains unchanged, and it should continue to operate as it did before.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-07-14
+
+</td>
+<td valign="top">
+
+2024-07-14
+
+</td>
+<td valign="top">
+
+2405
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Tenant Cloning Tool
+
+</td>
+<td valign="top">
+
+In this release, we have introduced selective entity migration, which allows you to migrate only the desired API proxies by setting the *selectiveEntityMigration* flag to true. These enhancements provide you with greater control and flexibility during the migration process, enabling you to migrate only the necessary API proxies or all API Management entities effortlessly.
+
+See:
+
+-   [Clone API Management Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts?version=CLOUD)
+
+-   [Clone API Management Content between Cloud Foundry Environments](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=CLOUD)
+
+
+SAP API Management customers choose:
+
+-   [Clone API Management Content](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts?version=Cloud)
+
+-   [Clone API Management Content for Cloud Foundry to Cloud Foundry Migration](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=Cloud)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-05-31
+
+</td>
+<td valign="top">
+
+2024-05-31
+
+</td>
+<td valign="top">
+
+2404
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Developer Hub Classic Design UI Removed
+
+</td>
+<td valign="top">
+
+The classic design of the Developer Hub has been removed and is no longer accessible.
+
+To configure the new design, see [Configure the API business hub enterprise](https://help.sap.com/docs/integration-suite/sap-integration-suite/configure-api-business-hub-enterprise-new-design?version=CLOUD&q=Exyternal%20Content)
+
+SAP API Management customers choose: [Configure the API business hub enterprise](https://help.sap.com/docs/sap-api-management/sap-api-management/configure-api-business-hub-enterprise-new-design?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+Deleted
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-06-10
+
+</td>
+<td valign="top">
+
+2024-06-10
+
+</td>
+<td valign="top">
+
+2404
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Anomaly Detection
+
+</td>
+<td valign="top">
+
+Anomaly detection is an AI-based feature of API Management within SAP Integration Suite. It involves the identification of patterns or data points that deviate significantly from normal behaviour or expected patterns. This feature allows you to proactively identify and respond to unusual patterns or deviations in API proxy calls, thereby ensuring the security, reliability, and optimal performance of APIs.
+
+See: [Anomaly Detection](https://help.sap.com/docs/integration-suite/sap-integration-suite/anomaly-detection?version=CLOUD)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-06-10
+
+</td>
+<td valign="top">
+
+2024-06-10
+
+</td>
+<td valign="top">
+
+2404
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Short Text
+
+</td>
+<td valign="top">
+
+As an API portal administrator, you now have the ability to include a short introductory text in the *Short Text* field when creating an API proxy. This text will be displayed on the details page of the API proxy once you publish it to the Developer Hub. Furthermore, this field will also appear when you copy an API. However, during the copy action, the *Short Text* field will be pre-filled along with all other fields.
+
+See:
+
+-   [Create an API Proxy by Referring to an API Provider System](https://help.sap.com/docs/integration-suite/sap-integration-suite/create-api-proxy-by-referring-to-api-provider-system?version=CLOUD)
+
+-   [Create an API Proxy Based on an Existing API Proxy](https://help.sap.com/docs/integration-suite/sap-integration-suite/create-api-proxy-based-on-existing-api-proxy?version=CLOUD)
+
+-   [Create an API Proxy by Providing a Direct Target Endpoint URL](https://help.sap.com/docs/integration-suite/sap-integration-suite/create-api-proxy-by-providing-direct-target-endpoint-url?version=CLOUD)
+
+-   [Copy an API Proxy](https://help.sap.com/docs/integration-suite/sap-integration-suite/copy-api?version=CLOUD)
+
+
+SAP API Management customers choose:
+
+-   [Create an API Proxy by Referring to an API Provider System](https://help.sap.com/docs/sap-api-management/sap-api-management/create-api-proxy-by-referring-to-api-provider-system?version=Cloud)
+
+-   [Create an API Proxy Based on an Existing API Proxy](https://help.sap.com/docs/sap-api-management/sap-api-management/create-api-proxy-based-on-existing-api-proxy?version=Cloud)
+
+-   [Create an API Proxy by Providing a Direct Target Endpoint URL](https://help.sap.com/docs/sap-api-management/sap-api-management/create-api-proxy-by-providing-direct-target-endpoint-url?version=Cloud)
+
+-   [Copy an API Proxy](https://help.sap.com/docs/sap-api-management/sap-api-management/copy-api?version=Cloud)
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-05-06
+
+</td>
+<td valign="top">
+
+2024-05-06
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -129,12 +1300,17 @@ Not applicable
 </td>
 <td valign="top">
 
-2024-04-12
+2024-04-06
 
 </td>
 <td valign="top">
 
-2024-04-12
+2024-04-06
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -171,7 +1347,7 @@ To address this issue, the following flow variables have been added to the on-pr
 
 These variables ensure that API consumers are not exposed to the internal details of the API provider.
 
-See: [FlowVariables](https://help.sap.com/docs/integration-suite/sap-integration-suite/flow-variables?version=CLOUD) \(SAP API Management customers choose: [Flow Variables](https://help.sap.com/docs/sap-api-management/sap-api-management/flow-variables?locale=en-US&version=Cloud)
+See: [Flow Variables](https://help.sap.com/docs/integration-suite/sap-integration-suite/flow-variables?version=CLOUD) \(SAP API Management customers choose: [Flow Variables](https://help.sap.com/docs/sap-api-management/sap-api-management/flow-variables?locale=en-US&version=Cloud)\)
 
 </td>
 <td valign="top">
@@ -206,12 +1382,17 @@ Not applicable
 </td>
 <td valign="top">
 
-2024-12-04
+2024-04-06
 
 </td>
 <td valign="top">
 
-2024-12-04
+2024-04-06
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -237,7 +1418,7 @@ mTLS Authentication
 
 You can now utilize certificate-based credentials to seamlessly migrate API Management subscriptions from Neo to Cloud Foundry, as well as between same or different Cloud Foundry environments.
 
-See: [Clone API Management Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts?version=CLOUD) and [Clone API Management Content for Cloud Foundry to Cloud Foundry Migration](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=CLOUD) \(SAP API Management customers choose: [Clone API Management Artifacts](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts?version=Cloud)and [Clone API Management Artifacts During Cloud Foundry to Cloud Foundry Migration](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=Cloud)
+See: [Clone API Management Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts?version=CLOUD) and [Clone API Management Content for Cloud Foundry to Cloud Foundry Migration](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=CLOUD) \(SAP API Management customers choose: [Clone API Management Artifacts](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts?version=Cloud)and [Clone API Management Artifacts During Cloud Foundry to Cloud Foundry Migration](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=Cloud)\)
 
 </td>
 <td valign="top">
@@ -278,6 +1459,11 @@ Not applicable
 <td valign="top">
 
 2024-04-04
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -343,7 +1529,12 @@ Not applicable
 </td>
 <td valign="top">
 
-2024-04-22
+2024-03-22
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -412,6 +1603,11 @@ Not applicable
 2024-03-09
 
 </td>
+<td valign="top">
+
+ 
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -428,12 +1624,12 @@ API Management
 </td>
 <td valign="top">
 
-Manage Access in API business hub enterprise 
+Manage Access in Developer Hub 
 
 </td>
 <td valign="top">
 
-As an API business hub enterprise admin, you now have the ability to manage access control checks for users to search, discover, and consume the content.
+As an Developer Hub admin, you now have the ability to manage access control checks for users to search, discover, and consume the content.
 
 See: [Manage Access](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-access?version=CLOUD) \(SAP API Management customers choose: [Manage Access](https://help.sap.com/docs/sap-api-management/sap-api-management/manage-access?version=Cloud&q=Manage%20Access)
 
@@ -476,6 +1672,11 @@ Not applicable
 <td valign="top">
 
 2024-03-09
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -544,6 +1745,11 @@ Not applicable
 2024-03-09
 
 </td>
+<td valign="top">
+
+ 
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -608,6 +1814,11 @@ Not applicable
 <td valign="top">
 
 2024-01-20
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -678,6 +1889,11 @@ Not applicable
 <td valign="top">
 
 2024-01-20
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -760,1431 +1976,9 @@ Not applicable
 2024-01-20
 
 </td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Client SDK version 1.5.2
-
-</td>
-<td valign="top">
-
-In Cloud Foundry, authentication using X509 certificates and keys is now supported. Instead of using clientid, clientsecret, and tokenurl, you should now use certificate, privateKey, certUrl, and clientid. Additionally, security vulnerabilities reported in the SAP NOTE [https://me.sap.com/notes/3411067](https://me.sap.com/notes/3411067) have been fixed. For more information, please refer to :
-
-See the Client SDK version 1.5.2 in: [API Services](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-services?version=CLOUD) \(SAP API Management customers choose: [API Services](https://help.sap.com/docs/sap-api-management/sap-api-management/api-services?q=certificate&version=Cloud)\)
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
 <td valign="top">
 
  
-
-</td>
-<td valign="top">
-
-2023-12-13
-
-</td>
-<td valign="top">
-
-2023-12-13
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Policy Template
-
-</td>
-<td valign="top">
-
-If there are any default fault rules or a post-client flow available within the API proxy, they will also be appended to the policy template.
-
-See: [Apply a Policy Template](https://help.sap.com/docs/integration-suite/sap-integration-suite/apply-policy-template) \(SAP API Management customers choose: [Apply a Policy Template](https://help.sap.com/docs/sap-api-management/sap-api-management/apply-policy-template)\)
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-Changed
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-12-04
-
-</td>
-<td valign="top">
-
-2023-12-04
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Manage external content in API business hub enterprise 
-
-</td>
-<td valign="top">
-
-The new *Manage External Content* option in *Enterprise Manager* enables you to configure additional content, such as Business Data Graphs \(BDGs\), for display on the API business hub enterprise. For more information, see [Manage External Content \(New Design\)](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-external-content-new-design).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-12-04
-
-</td>
-<td valign="top">
-
-2023-12-04
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Deprecation of Classic Design of API business hub enterprise 
-
-</td>
-<td valign="top">
-
-The classic design of the API business hub enterprise will be deprecated soon. Starting from March 2024, the new design of the API business hub enterprise will become the default design. However, you’ll still be able to toggle between the new and old design until June 2024 using the *Set Default Design* feature in *Site Editor*. For more information, see
-
-See: [Customize the Visual Format of the API business hub enterprise](https://help.sap.com/docs/integration-suite/sap-integration-suite/customize-visual-format-of-api-business-hub-enterprise)\(SAP API Management customers choose: [Customize the Visual Format of the API business hub enterprise](https://help.sap.com/docs/sap-api-management/sap-api-management/customize-visual-format-of-api-business-hub-enterprise)\)
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-Deprecated
-
-</td>
-<td valign="top">
-
-Announcement
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-12-04
-
-</td>
-<td valign="top">
-
-2023-12-04
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Auto-Registration of developers in API business hub enterprise 
-
-</td>
-<td valign="top">
-
-If the AuthGroup.API.ApplicationDeveloper role is already assigned to you by the SAP BTP admin or via the IDP Role Collection mapping, you will get automatically registered as an application developer in API business hub enterprise when you logon for the first time.
-
-See: [Register on API business hub enterprise](register-on-api-business-hub-enterprise-c85fafe.md) \(SAP API Management customers choose: [Register on API business hub enterprise](https://help.sap.com/docs/sap-api-management/sap-api-management/register-on-api-business-hub-enterprise)\)
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-12-04
-
-</td>
-<td valign="top">
-
-2023-12-04
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-API Revisions
-
-</td>
-<td valign="top">
-
-Unique naming pattern for Drafts in API Revisions to clearly differentiate between the deployed draft and the working draft and the drafts originating from revisions.
-
-See: [Creating API Revisions](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-api-revisions) \(SAP API Management customers choose: [Creating API Revisions](https://help.sap.com/docs/sap-api-management/sap-api-management/creating-api-revisions-0a0d7d41222e42e4834b30c89609f400)\)
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-10-30
-
-</td>
-<td valign="top">
-
-2023-10-30
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-API Artifact in Edge Integration Cell
-
-</td>
-<td valign="top">
-
-With the introduction of the API artifact and the general availability of the Edge Integration Cell, a few navigation changes have been made to the Integration Suite API Management capability. The APIs and Policy Templates, previously located under *Design* \> *APIs* in the left navigation, have been moved to *Configure* \> *APIs*. Additionally, the term "APIs" is now referred to as "API Proxies." Furthermore, "Products" and "Applications", which were previously found under *Design* \> *APIs* can now be accessed through a new left navigation item called *Engage*. To know more, see [API Development](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-apis?version=CLOUD).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-10-30
-
-</td>
-<td valign="top">
-
-2023-10-30
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-API Revisions
-
-</td>
-<td valign="top">
-
-When publishing products, it's important to note that resources are available from the deployed API, rather than from the latest revision or draft of the API. Additionally, if a deployed resource is not available in the latest revision, you won't be able to attach that resource to the product.
-
-The revision name now includes support for parentheses \(\) as an additional special character in the name. For more information, see .
-
--   : [API Revisions](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-revisions)
--   API Management standalone service: [API Revisions](https://help.sap.com/docs/sap-api-management/sap-api-management/api-revisions) 
-
-
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-09-30
-
-</td>
-<td valign="top">
-
-2023-09-30
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Certificate-based Credentials
-
-</td>
-<td valign="top">
-
-The connection between the centralised API business hub enterprise and the API portal has been secured with certificate-based authentication. For more information, see [Create a Connection Request for the Centralized API business hub enterprise \[Classic Design\]](APIM-Initial-Setup/create-a-connection-request-for-the-centralized-api-business-hub-enterprise-cla-02f7877.md) and [Create a Connection Request for the Centralized API business hub enterprise \[New Design\]](APIM-Initial-Setup/create-a-connection-request-for-the-centralized-api-business-hub-enterprise-new-c7bda8c.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-09-30
-
-</td>
-<td valign="top">
-
-2023-09-30
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Client SDK
-
-</td>
-<td valign="top">
-
-In Cloud Foundry, Authentication using the X509 certificate and key is now supported. Instead of clientid, clientsecret and tokenurl, use certificate, privateKey, certUrl and clientid. For more information, refer to the Client SDK version 1.5.0 in [API Services](api-services-007d50f.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-09-13
-
-</td>
-<td valign="top">
-
-2023-09-13
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-API Revisions
-
-</td>
-<td valign="top">
-
-You can now create a new revision of your API and make necessary changes to the API definitions, policies, and resources without causing any disruption to the already published API.
-
-You can also see all the changes made to the API and restore the API to its previous state. For more information, see [API Revisions](api-revisions-58097ac.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-08-28
-
-</td>
-<td valign="top">
-
-2023-08-28
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Graph
-
-</td>
-<td valign="top">
-
-Graph is a new and innovative capability of API Management within SAP Integration Suite.It enables you to expose all your business data in the form of a semantically connected data graph, accessed via a single unified and powerful API. For more information, see [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities?version=CLOUD).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-07-17
-
-</td>
-<td valign="top">
-
-2023-07-17
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-API business hub enterprise: Add Links and Email Addresses Using Markdown
-
-</td>
-<td valign="top">
-
-You can use markdown to add links and email addresses to the title and subtitle fields as part of the banner description in *Site Editor*. For more information, see [Customize the Visual Format of the API business hub enterprise](customize-the-visual-format-of-the-api-business-hub-enterprise-2eacd52.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-07-17
-
-</td>
-<td valign="top">
-
-2023-07-17
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Latest Version of the Tenant Cloning Tool
-
-</td>
-<td valign="top">
-
-The 1.7.2 version of the Tenant Cloning Tool is now available. For more information, see [Clone API Management Content](APIM-Migration/clone-api-management-content-7abd887.md) and [Clone API Management Content for Cloud Foundry to Cloud Foundry Migration](APIM-Migration/clone-api-management-content-for-cloud-foundry-to-cloud-foundry-migration-2e5d127.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-06-23
-
-</td>
-<td valign="top">
-
-2023-06-23
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Latest Version of the Tenant Cloning Tool
-
-</td>
-<td valign="top">
-
-The 1.7.1 version of the Tenant Cloning Tool is now available. For more information, see [Clone API Management Content](APIM-Migration/clone-api-management-content-7abd887.md) and [Clone API Management Content for Cloud Foundry to Cloud Foundry Migration](APIM-Migration/clone-api-management-content-for-cloud-foundry-to-cloud-foundry-migration-2e5d127.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-05-22
-
-</td>
-<td valign="top">
-
-2023-05-22
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Secure options to consume APIs
-
-</td>
-<td valign="top">
-
-We have introduced secure options to consume APIs using the API Access Plan for API portal, API business hub enterprise and on-premise connectivity. You can now create service keys with credential types "binding- secret", "instance- secret" and "x509". For more information, see [Accessing API Management APIs Programmatically](APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md), [Accessing API business hub enterprise APIs Programmatically](APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md) and [Accessing On-Premise Systems through API Management](APIM-Initial-Setup/accessing-on-premise-systems-through-api-management-2fc7a5b.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-05-08
-
-</td>
-<td valign="top">
-
-2023-05-08
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Short text field in API products.
-
-</td>
-<td valign="top">
-
-In the API portal, a new *Short Text* field is now available for products. You can use this field to add an introductory text to your products. When you add the introductory text in this field and publish the product, this short text appears in the product tile on the corresponding API business hub enterprise page and is also available on the API proxy details page. For more information, see [Create a Product](create-a-product-d769622.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-05-08
-
-</td>
-<td valign="top">
-
-2023-05-08
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-API business hub enterprise \[New Design\] and \[Classic Design\]
-
-</td>
-<td valign="top">
-
-If you have defined the external documentation information for an API in the OpenAPI specification, you can access this information under the *Documentation* section in the API details page under the *Overview* tab.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-04-10
-
-</td>
-<td valign="top">
-
-2023-04-10
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-API business hub enterprise 
-
-</td>
-<td valign="top">
-
-\[New DesignThe Manage options \(for example Manage Users, Manage Domain\] Categories, and so on\) on the API business hub enterprise \[New Design\] header are now listed under *\[New DesignEnterprise Manager*. Based on the roles assigned to the users, these options will appear under the *Enterprise Manager* tab. For more information, see [Manage Domain Categories \[New Design\]](manage-domain-categories-new-design-bd9691d.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-02-20
-
-</td>
-<td valign="top">
-
-2023-02-20
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-API business hub enterprise \[New Design\]
-
-</td>
-<td valign="top">
-
-You can now configure notifications for providing information to the API business hub enterprise end users on any website updates, events or news items from the API business hub enterprise new user interface. For more information, see [Manage Notifications \[New Design\]](manage-notifications-new-design-df32457.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-02-20
-
-</td>
-<td valign="top">
-
-2023-02-20
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-API business hub enterprise 
-
-</td>
-<td valign="top">
-
-The mandatory Client ID and Client Secret fields on *Edit Credentials* popup have been replaced with *\*API Portal Access Credentials* field. For more information, see [Updating the Connection Request Credentials for a Pending Request \[New Design\]](APIM-Initial-Setup/updating-the-connection-request-credentials-for-a-pending-request-new-design-dd37a7b.md) and [Updating the Connection Request Credentials for a Submitted Request \[Classic Design\]](APIM-Initial-Setup/updating-the-connection-request-credentials-for-a-submitted-request-classic-des-eb84854.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2023-01-17
-
-</td>
-<td valign="top">
-
-2023-01-17
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Migrating API Management Subscription from One Cloud Foundry to Another Cloud Foundry Environment
-
-</td>
-<td valign="top">
-
-You can choose to migrate an existing API Management subscription that you have in the Cloud Foundry environment to another API Management subscription within the Cloud Foundry environment. This can be done to a different tenant within the same data center or to a tenant in a different data center. For more information, see [Migration of API Management Content between Cloud Foundry Environments](APIM-Migration/migration-of-api-management-content-between-cloud-foundry-environments-17f09f3.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-API Management
-
-</td>
-<td valign="top">
-
-2023-01-04
-
-</td>
-<td valign="top">
-
-2023-01-04
 
 </td>
 </tr>

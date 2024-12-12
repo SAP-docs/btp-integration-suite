@@ -8,7 +8,7 @@ Checks to be completed before you start migrating your API Management content no
 
 -   Your source system is the system that has your API Management subscription in the Neo environment.
 
--   Your target system is the system that has your API Management content on the hyperscalers-managed infrastructure within the Cloud Foundry environment.
+-   Your target system is the system that has your API Management content on the hyperscalers-managed infrastructure within the multi-cloud foundation.
 
 
 
@@ -17,9 +17,9 @@ Checks to be completed before you start migrating your API Management content no
 
 ### Prerequisites for the source system
 
--   You must have a valid API Management system \(API portal and Developer Portal\) running in the Neo environment.
--   The source system must support basic authentication for API access on Integration Suite and API business hub enterprise\(which is the developer portal\).
--   Make a note of the Integration Suite and API business hub enterprise\(developer portal\) URLs of the source system and keep it handy.
+-   You must have a valid API Management system \(API portal and Developer Hub\) running in the Neo environment.
+-   The source system must support basic authentication for API access on Integration Suite and Developer Hub\(which is the developer portal\).
+-   Make a note of the Integration Suite and Developer Hub\(developer portal\) URLs of the source system and keep it handy.
 -   You must have identified a user with the following roles assigned in your source systems:
 
     -   APIPortal.Administrator
@@ -78,13 +78,10 @@ Checks to be completed before you start migrating your API Management content no
     </tr>
     </table>
     
-    If you have already enabled API Management on your target system, and want to reuse the same for migration:
+-   If you have already enabled API Management on your target system, and want to reuse the same for migration, it's recommended that you do not have any pre-existing entities such as API proxies or products on this system.
 
-    -   It's recommended that you do not have any pre-existing entities such as API proxies or products on this system.
-
-        > ### Note:  
-        > Any entity, if pre-existing in your target API Management capability, can be over-written during the cloning process.
-
+    > ### Note:  
+    > Any entity, if pre-existing in your target API Management capability, can be over-written during the cloning process.
 
 -   If your target system is connected to a custom IDP, ensure that your IDP is configured correctly, and mapping for the details like your first name, last name, email ID, and user ID is done.
 
@@ -93,14 +90,27 @@ Checks to be completed before you start migrating your API Management content no
     > 
     > Consider the following example: During cloning, the email address `john.smith@abc.com` in the source becomes `John.Smith@abc.com` in target due to the change in configurations in Custom IDP. This mismatch might lead to data discrepancy during application creation and metering in the target after cloning.
 
--   Ensure that API access is enabled for the Integration Suite and the API business hub enterprise\(developer portal\) for the following roles:
+-   Ensure that API access is enabled for the Integration Suite and the Developer Hub\(developer portal\) for the following roles:
 
     -   APIPortal.Administrator
     -   AuthGroup.API.Admin
 
-    Make a note of the service keys \(`url`, `tokenurl`, `clientId`, and `clientSecret`\) for the given roles, and keep handy. To know more about API access plans for API portal, see [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD). To know more about API access plan for API business hub enterprise, see [Accessing API business hub enterprise APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD), without which the cloning of the API business hub enterprise entities might fail.
+    For Integration Suite, see [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD)
 
--   When you have API products protected by the custom roles permission in the source Neo system, ensure that custom roles creation and assignments are done in the target Cloud Foundry environment before starting the migration.
+    For Developer Hub, execute the following mandatory steps:
+
+    -   Make a note of the service keys \(`url`, `tokenurl`, `clientId`, and `clientSecret`\) for the given roles, and keep handy.
+
+    -   Create a service instance under the *Authorization and Trust Management* tile.
+
+    -   Create a destination of type *OAuth2Credentials* to the XSUAA APIs by using the credentials you derived from creating the service key.
+
+    -   Create a service instance with the *AuthGroup.API.Admin* role to access theDeveloper Hub APIs.
+
+        To perform the above steps, see [Accessing Developer Hub APIs Programmatically](../accessing-developer-hub-apis-programmatically-dabee6e.md).
+
+
+-   When you have API products protected by the custom roles permission in the source Neo system, ensure that custom roles creation and assignments are done in the target system within the multi-cloud foundation before starting the migration.
 
 
 Once you complete these checks, you can start cloning your API Management content from the source to the target system. See [Clone API Management Content](clone-api-management-content-7abd887.md).

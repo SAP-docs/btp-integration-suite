@@ -13,9 +13,13 @@ Validate and split \(into multiple documents\) different inbound EDI document fo
 You use the EDI splitter to split inbound bulk EDI messages, and configure the splitter to validate and acknowledge the inbound messages. If you choose to acknowledge the EDI message, then the splitter transmits a functional acknowledgement after processing the bulk EDI message. A bulk EDI message can contain one or more EDI formats, such as EDIFACT, ODETTE, EANCOM, TRADACOMS, and ASC-X12. You can configure the EDI splitter to process different EDI formats depending on the business requirements of the trading partners.
 
 > ### Note:  
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
+> ### Note:  
+> -   Any EDIFACT message is an interchange. An interchange can have functional group, which in-turn can have messages. The EDI Splitter supports only one functional group with multiple homogeneous messages.
 > -   EDI Splitter version 1.8 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
 > -   EDI Splitter version 1.9 and above supports LS/LE segments.
-> -   Do not connect an EDI Splitter with the Gather or Join step in your integration flow. At present such combination is not supported.
+> -   Using the EDI Splitter in combination with the Gather, Join, or Aggregator steps in the integration flow is not supported.
 > -   EDI Splitter version 2.0 and above supports the TRADACOMS standard \(*TRADACOMS* tab; available only for dedicated service plans, see [2903776](https://me.sap.com/notes/2903776)\).
 
 ![](images/EDI_Splitter_e5180a1.png)
@@ -119,7 +123,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Source Encoding
+    *Source Encoding* 
     
     </td>
     <td valign="top">
@@ -142,7 +146,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Validate Message
+    *Validate Message* 
     
     </td>
     <td valign="top">
@@ -161,7 +165,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Validate
+    *Validate* 
     
     </td>
     <td valign="top">
@@ -180,12 +184,32 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Transaction Mode
+    *Decimal Character*
     
     </td>
     <td valign="top">
     
-    This feature is available only in *Envelope and Message* validation mode. The following two options are available:
+    Choose the decimal character to be used during message validation:
+
+    -   Dot \(.\)
+    -   Dynamic: Define the value 'dot' or 'fromIncomingPayload' in `SAP_EDISPLITTER_DECIMAL_CHARACTER` header.
+    -   From Incoming Payload: The decimal characater is read from the incoming payload.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Transaction Mode*
+
+    \(Only if *Validate* is selected as *Envelope and Message*
+    
+    </td>
+    <td valign="top">
+    
+    Choose how to validate the EDI message transaction. The following two options are available:
 
     -   *Interchange*
 
@@ -206,7 +230,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    EDI Schema Definition
+    *EDI Schema Definition* 
     
     </td>
     <td valign="top">
@@ -248,7 +272,9 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Process Invalid Messages
+    *Process Invalid Messages*
+
+    \(Only if *Transaction Mode* is selected as *Mesaage*\)
     
     </td>
     <td valign="top">
@@ -269,7 +295,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Header Name
+    *Header Name* 
     
     </td>
     <td valign="top">
@@ -290,7 +316,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Create Acknowledgement
+    *Create Acknowledgement* 
     
     </td>
     <td valign="top">
@@ -327,17 +353,23 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Interchange Number
+    *Customize Envelope*
+
+    \(Only if *Create Acknowledgment* is selected anything except *Not Required*\)
     
     </td>
     <td valign="top">
     
-    The splitter uses the interchange number of an EDI message in the functional acknowledgment. It allows the splitter to read the interchange number either from the EDI message or from an assigned set of number ranges.
+    You can choose either of the following options to specify the modification in the envelope of CONTRL acknowledgement message.
 
-    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_INTERCHANGE_NUMBER`. The values for the headers can be one of the following:
+    -   *From Incoming Payload*: It retains the same envelope format and values as the incoming payload.
+    -   *Dynamic*: Use the `SAP_EDISPLITTER_EDIFACT_CUSTOMIZE_ENVELOPE` header to set either of the values dynamically:
+        -   `fromIncomingPayload`
+        -   `overwriteWithExchangeHeaders`
+        -   `removeOptionalTrailingField`
 
-    -   `useFromEDIMessage`
-    -   `numberRange`
+    -   *Overwrite with Exchange Headers*: The acknowledgement message is generated with all values retrieved from the exchange headers. You must provide following headers: SAP\_EDI\_CONTRL\_Service\_Code\_Directory\_Version, SAP\_EDI\_CONTRL\_Character\_Encoding, SAP\_EDI\_CONTRL\_Syntax\_Release\_Number, SAP\_EDI\_CONTRL\_Recipient\_Reference\_Password, SAP\_EDI\_CONTRL\_Recipient\_Reference\_Qualifier, SAP\_EDI\_CONTRL\_Application\_Reference, SAP\_EDI\_CONTRL\_Processing\_Priority\_Code, SAP\_EDI\_CONTRL\_Communications\_Agreement\_Id, SAP\_EDI\_CONTRL\_Test\_Indicator
+    -   *Remove Optional Trailing Field*: It will remove the additional optional fields available in the incoming payload while generatiing envelope of the acknowledgmenet message.
 
 
     
@@ -346,21 +378,72 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Number range
+    *Interchange Number* 
+    
+    </td>
+    <td valign="top">
+    
+    The splitter added the interchange number in the fucntional acknowledgmenet of an EDImessage. It can be set in either of these ways:
+
+    -   *Dynamic*: You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_INTERCHANGE_NUMBER`. The values for the headers can be one of the following:
+        -   `useFromEDIMessage`
+        -   `numberRange`
+
+    -   *Number Range*: Redas the interchange number from an assigned set of number ranges.
+    -   *Use from EDI Message*: Reads the interchange number either from the EDI message
+
+    .
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Unique Interchange Number*
+
+    \(Only if you select *Interchange Number* as *Number Range*\)
+    
+    </td>
+    <td valign="top">
+    
+    Following are the options to generate a unique interchange number while generating a acknowledgment message:
+
+    -   *Required*: EDI Splitter can generate a unique interchange number, which is the incremented value from the number range object and does not depend on the interchange number of the incoming payload.
+    -   *Not Required*: Does not generate a unique interchange number.
+    -   *Dynamic*: You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_UNIQUE_INTERCHANGE_NUMBER`. The values for the headers can be one of the following:
+        -   `required`
+        -   `notRequired`
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Number Range* 
     
     </td>
     <td valign="top">
     
     Define the number range assigned to an interchange number in the functional acknowledgement.
 
-    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_NUMBER_RANGE`. A unique interchange number is generated for every unique incoming message. A duplicate incoming message is assigned with same interchange number for 30 days.
+    If *Unique Interchange Number* is set as:
+
+    -   *Required*: A new interchange number is generated for every incoming message.
+
+    -   *Not Required*: A new interchange number is generated only for unique incoming message. A duplicate incoming message is assigned with same interchange number for 30 days.
+
+
+    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_NUMBER_RANGE`.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    CONTRL Message Version
+    *CONTRL Message Version*
     
     </td>
     <td valign="top">
@@ -379,7 +462,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Include UNA Segment
+    *Include UNA Segment*
     
     </td>
     <td valign="top">
@@ -400,7 +483,8 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     **X12**
 
     > ### Note:  
-    > EDI Splitter v1.12.0 and v2.2.0 onwards support same group name with different definition in XSD.
+    > -   Any X12 message is an interchange. An interchange can have functional group, which in-turn can have transactional sets. The EDI Splitter supports only one functional group with multiple homogeneous transactional sets.
+    > -   EDI Splitter v1.12.0 and v2.2.0 onwards support same group name with different definition in XSD.
 
     ****
 
@@ -421,7 +505,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Source Encoding
+    *Source Encoding* 
     
     </td>
     <td valign="top">
@@ -445,7 +529,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Validate Message
+    *Validate Message* 
     
     </td>
     <td valign="top">
@@ -469,7 +553,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Transaction Mode
+    *Transaction Mode* 
     
     </td>
     <td valign="top">
@@ -493,28 +577,26 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    EDI Schema Definition
+    *EDI Schema Definition* 
     
     </td>
     <td valign="top">
     
-    Validates an EDI interchange against the XSD schema for conversion. Deploy the schema by selecting it from an integration flow or by defining the location of the schema.
+    Follow the steps here to add an `*.xsd` file to the integration flow: You can also set this field using the header
 
-    Follow the steps here to add an `*.xsd` file to the integration flow:
+    1.  In the *EDI Schema Definition**Integration Flow*.
 
-    1.  In the *EDI Schema Definition*, select *Integration Flow*.
+    2.  Choose *Add* from the from the choose the schema\). *Schemas* table.
 
-    2.  Choose *Add* from the *Schemas* table.
-
-    3.  Choose *Select* to add an XML Schema file from the XSD folder found in the integration project.
+    3.  Choose *Select* choose the schema\). to add an XML Schema file from the XSD folder found in the integration project.
 
         > ### Note:  
-        > -   During runtime only XSD’s from Integration Advisor \(IA\) are supported.
+        > -   You can also set this field using the headerDuring runtime only XSD’s from Integration Advisor \(IA\) are supported.
         > 
         > -   If you wish to remove an XSD file from the project, then select the relevant XSD file and choose *Remove*.
 
 
-    You can also set this field using the header `SAP_EDISPLITTER_X12_SCHEMA_SOURCE`. The values for the headers can be one of the following:
+    `SAP_EDISPLITTER_X12_SCHEMA_SOURCE`. The values for the headers can be one of the following:
 
     -   `Header`
     -   `IntegrationProject`
@@ -526,7 +608,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Header Name
+    *Header Name* 
     
     </td>
     <td valign="top">
@@ -547,7 +629,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Create Acknowledgement
+    *Create Acknowledgement* 
     
     </td>
     <td valign="top">
@@ -576,40 +658,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Interchange Number
-    
-    </td>
-    <td valign="top">
-    
-    The splitter uses the interchange number of an EDI message in the functional acknowledgment. It allows the splitter to read the interchange number either from the EDI message or from an assigned set of number ranges.
-
-    You can also set this field using the header `SAP_EDISPLITTER_X12_INTERCHANGE_NUMBER`. The values for the headers can be one of the following:
-
-    -   `useFromEDIMessage`
-    -   `numberRange`
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Number Range
-    
-    </td>
-    <td valign="top">
-    
-    Define the number range assigned to an interchange number in the functional acknowledgement. A unique interchange number is generated for every unique incoming message. A duplicate incoming message is assigned with same interchange number for 30 days.
-
-    You can also set this field using the header `SAP_EDISPLITTER_X12_NUMBER_RANGE`. The value for the header should be the number range artifact name.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Exclude AK3 and AK4
+    *Exclude AK3 and AK4* 
     
     </td>
     <td valign="top">
@@ -625,12 +674,234 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    *Customize Envelope*
+
+    Only if *Create Acknowledgment* is selected anything except *Not Required* 
+    
+    </td>
+    <td valign="top">
+    
+    You can choose either of the following options to specify the modification in the envelope of 997 acknowledgement message.
+
+    -   *From Incoming Payload*: It retains the same envelope format and values as the incoming payload.
+    -   *Dynamic*: Use the `SAP_EDISPLITTER_X12_CUSTOMIZE_ENVELOPE` header to set either of the values dynamically:
+        -   `fromIncomingPayload`
+        -   `overwriteWithExchangeHeaders`
+
+    -   *Overwrite with Exchange Headers*: The acknowledgement message is generated with all values retrieved from the exchange headers. You must provide `SAP_EDI_997_Usage_Indicator` header.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Interchange Number* 
+    
+    </td>
+    <td valign="top">
+    
+    The splitter adds the interchange number in the functional acknowledgment of an EDI message. The interchange number can be read in either of these ways:
+
+    -   *Use from EDI Message*: Reads the interchange number from the incoming payload
+    -   *Number Range*: Reads the interchange number from an assigned set of number ranges.
+    -   *Dynamic*: You can also set this field using the header `SAP_EDISPLITTER_X12_INTERCHANGE_NUMBER`. The value of the header can be one of the following:
+        -   `useFromEDIMessage`
+        -   `numberRange`
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Unique Interchange Number*
+
+    Only if *Interchange Number* is selected as anything except *Use from EDI Message*.
+    
+    </td>
+    <td valign="top">
+    
+    Following are the options to generate a unique interchange number while generating an acknowledgment message:
+
+    -   *Required*: EDI Splitter can generate a unique interchange number, which is the incremented value from the defined *Number Range* object and does not depend on the interchange number of the incoming payload.
+    -   *Not Required*: Does not generate a unique interchange number.
+    -   *Dynamic*: You can also set this field using the header `SAP_EDISPLITTER_X12_UNIQUE_INTERCHANGE_NUMBER`. The value of the headers can be one of the following:
+        -   `required`
+        -   `notRequired`
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Number Range* 
+    
+    </td>
+    <td valign="top">
+    
+    Define the number range assigned to an interchange number in the functional acknowledgement.
+
+    If *Unique Interchange Number* is set as:
+
+    -   *Required*: A new interchange number is generated for every incoming message.
+
+    -   *Not Required* A new interchange number is generated only for unique incoming message. A duplicate incoming message is assigned with same interchange number for 30 days.
+
+
+    You can also set this field using the header `SAP_EDISPLITTER_X12_NUMBER_RANGE`. The value for the header should be the number range artifact name.
+
+    You can also set this field using the header or property. The syntax is `${header.<header-name>}` and `${property.<property-name>`.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Group Number*
+    
+    </td>
+    <td valign="top">
+    
+    The splitter adds the group segment number in the functional acknowledgment of an EDI message. This number can be set in either of these ways:
+
+    -   *Dynamic*: You can set this field using the header `SAP_EDISPLITTER_997_GROUP_CONTROL_NUMBER`. The values for the headers can be:
+        -   numberRange
+        -   useFromEDIMessage
+        -   predefined
+
+    -   *Predefined \(1\)*: Sets the group segment number to 1 irrespective of the number in incoming payload.
+    -   *Number Range*: Reads from the assigned set of number ranges.
+    -   *Use from EDI Message*: Uses the same group segment number from the incoming payload.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Unique Group Number*
+
+    Only if *Group Number* is selected as *Dynamic* or *Number Range*.
+    
+    </td>
+    <td valign="top">
+    
+    Following are the options to generate a unique group segment number while generating a acknowledgment message:
+
+    -   *Required*: EDI Splitter can generate a unique group segment number, which is the incremented value from the number range object and does not depend on the number of the incoming payload.
+    -   *Not Required*: Does not generate a unique group segment number.
+    -   *Dynamic*: You can also set this field using the header `SAP_EDISPLITTER_997_UNIQUE_GROUP_CONTROL_NUMBER`. The values for the headers can be one of the following:
+        -   `required`
+        -   `notRequired`
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Group Number Range*
+    
+    </td>
+    <td valign="top">
+    
+    Define the number range assigned to an group segment number in the functional acknowledgement.
+
+    If *Unique Group Number* is set as:
+
+    -   *Required*: A new group number is generated for every incoming message.
+
+    -   *Not Required* A new group number is generated only for unique incoming message. A duplicate incoming message is assigned with same group number for 30 days.
+
+
+    You can also set this field using the header or property. The syntax is `${header.<header-name>}` and `${property.<property-name>`.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Transaction Set Number*
+    
+    </td>
+    <td valign="top">
+    
+    The splitter adds the transaction segment number in the functional acknowledgment of an EDI message. This number can be set in either of these ways:
+
+    -   *Dynamic*: You can set this field using the header`SAP_EDISPLITTER_997_TRANSACTION_SET_NUMBER`. The values for the headers can be::
+        -   numberRange
+        -   predefined
+
+    -   *Predefined \(0001\)*: Sets the transaction set number to 0001 irrespective of the number in incoming payload.
+    -   *Number Range*: Reads from the assigned set of number ranges.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Unique Transaction Set Number*
+
+    Only if *Transaction Set Number* is selected as *Dynamic* or *Number Range*.
+    
+    </td>
+    <td valign="top">
+    
+    Following are the options to generate a unique transaction set number while generating an acknowledgment message:
+
+    -   *Required*: EDI Splitter can generate a unique transaction set number, which is the incremented value from the *Number Range* object and does not depend on the number of the incoming payload.
+    -   *Not Required*: Does not generate a unique transaction set number.
+    -   *Dynamic*: You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_UNIQUE_TRANSACTION_SET_NUMBER`. The values for the headers can be one of the following:
+        -   `required`
+        -   `notRequired`
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Transaction Set Number Range*
+    
+    </td>
+    <td valign="top">
+    
+    Define the number range assigned to an transaction set number in the functional acknowledgement.
+
+    If *Unique Transaction Set Number* is set as:
+
+    -   *Required*: A new transaction set number is generated for every incoming message.
+
+    -   *Not Required* A new transaction set number is generated only for unique incoming message. A duplicate incoming message is assigned with same transaction set number for 30 days.
+
+
+    You can also set this field using the header or property. The syntax is `${header.<header-name>}` and `${property.<property-name>`.
+    
+    </td>
+    </tr>
     </table>
     
     **TRADACOMS**
 
     > ### Note:  
-    > This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+    > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
     ****
 
@@ -651,7 +922,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Source Encoding
+    *Source Encoding* 
     
     </td>
     <td valign="top">
@@ -666,7 +937,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
     -   Dynamic
 
-        If selected, the encoding format is set dynamically at runtime using the header `SAP_EDISPLITTER_TRADACOMS_SOURCE_ENCODING` \(possible values: `UTF-8`, `ISO-8859-1`\).
+        If selected, the encoding format is set dynamically at runtime using the headernullnullnull`SAP_EDISPLITTER_TRADACOMS_SOURCE_ENCODING` \(possible values: `UTF-8`, `ISO-8859-1`\).
 
 
 
@@ -676,7 +947,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Split Preference
+    *Split Preference* 
     
     </td>
     <td valign="top">
@@ -701,7 +972,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    EDI Schema Definition
+    *EDI Schema Definition* 
     
     </td>
     <td valign="top">
@@ -720,7 +991,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
     -   Integration Flow
 
-        If selected, the schema definition is specified from a resource file of the integration flow \(use the parameter *Schemas* to choose the schema\).
+        If selected, the schema definition is specified from a resource file of the integration flow \(use the parameter *Schemas*
 
 
 
@@ -730,7 +1001,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Header Name
+    *Header Name*
 
     \(only available if for *EDI Schema Definition* the option *Header* is selected\)
     
@@ -753,7 +1024,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     <tr>
     <td valign="top">
     
-    Schemas
+    *Schemas*
 
     \(only available if for *EDI Schema Definition* the option *Integration Flow* is selected\)
     

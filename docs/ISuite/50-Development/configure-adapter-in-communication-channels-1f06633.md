@@ -57,6 +57,38 @@ See: [Configure the Advanced Event Mesh Receiver Adapter](configure-the-advanced
 <tr>
 <td valign="top">
 
+*Amazon DynamoDB* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to Amazon DynamoDB.
+
+See: [Amazon DynamoDB Receiver Adapter](amazon-dynamodb-receiver-adapter-36620d5.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Amazon EventBridge*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to Amazon EventBridge.
+
+See: [AmazonEventBridge Receiver Adapter](amazoneventbridge-receiver-adapter-ff3f9ed.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *AmazonWebServices* 
 
 Sender adapter
@@ -187,6 +219,46 @@ See: [AMQP Receiver for SAP Event Mesh](amqp-receiver-for-sap-event-mesh-0b7cc2f
 <tr>
 <td valign="top">
 
+*AMQP for SAP Integration Suite, advanced event mesh*
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to consume messages from SAP Integration Suite, advanced event mesh.
+
+Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
+
+Supported transport protocol: TCP
+
+See: [AMQ Sender for SAP Integration Suite, advanced event mesh](amq-sender-for-sap-integration-suite-advanced-event-mesh-be1e496.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*AMQP for SAP Integration Suite, advanced event mesh*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to send messages to SAP Integration Suite, advanced event mesh.
+
+Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
+
+Supported transport protocol: TCP
+
+See: [AMQP Receiver for SAP Integration Suite, advanced event mesh](amqp-receiver-for-sap-integration-suite-advanced-event-mesh-5f229c0.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *AMQP for Microsoft Azure Service Bus*
 
 Sender adapter
@@ -200,7 +272,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for Microsoft Azure Service Bus](amqp-sender-for-microsoft-azure-service-bus-7384ac3.md)
+See: [Configure the AMQP Sender Adapter](configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -220,7 +292,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for Microsoft Azure Service Bus](amqp-receiver-for-microsoft-azure-service-bus-9c64d80.md)
+See: [Configure the AMQP Receiver Adapter](configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -240,7 +312,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for Solace PubSub+](amqp-sender-for-solace-pubsub-c9ab47d.md)
+See: [Configure the AMQP Sender Adapter](configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -260,7 +332,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for Solace PubSub+](amqp-receiver-for-solace-pubsub-19f18d8.md)
+See: [Configure the AMQP Receiver Adapter](configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -280,7 +352,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP, WebSocket
 
-See: [AMQP Sender for Apache Qpid Broker-J](amqp-sender-for-apache-qpid-broker-j-b4983f7.md)
+See: [Configure the AMQP Sender Adapter](configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -300,7 +372,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP, WebSocket
 
-See: [AMQP Receiver for Apache Qpid Broker-J](amqp-receiver-for-apache-qpid-broker-j-622aa1d.md)
+See: [Configure the AMQP Receiver Adapter](configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -320,7 +392,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for Apache ActiveMQ 5 and Apache ActiveMQ Artemis](amqp-sender-for-apache-activemq-5-and-apache-activemq-artemis-dc4c564.md)
+See: [Configure the AMQP Sender Adapter](configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -340,7 +412,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for Apache ActiveMQ 5 and Apache ActiveMQ Artemis](amqp-receiver-for-apache-activemq-5-and-apache-activemq-artemis-76c4dd3.md)
+See: [Configure the AMQP Receiver Adapter](configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -360,7 +432,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for IBM MQ](amqp-sender-for-ibm-mq-f6cc0e4.md)
+See: [Configure the AMQP Sender Adapter](configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -380,7 +452,23 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for IBM MQ](amqp-receiver-for-ibm-mq-990fa99.md)
+See: [Configure the AMQP Receiver Adapter](configure-the-amqp-receiver-adapter-d5660c1.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Anaplan*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to Anaplan.
+
+See: [Anaplan Receiver Adapter](anaplan-receiver-adapter-364ab57.md)
 
 </td>
 </tr>
@@ -533,6 +621,22 @@ Receiver adapter
 Enables SAP Integration Suite to connect to Azure Storage, to manage files, containers, folders, and messages, and to perform *create, read, update and delete* \(CRUD\) operations on objects stored there.
 
 See: [Configure the AzureStorage Receiver Adapter](configure-the-azurestorage-receiver-adapter-30f59b0.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Coupa*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to exchange data with Coupa. Coupa is a business spending management software.
+
+See: [Coupa Receiver Adapter](coupa-receiver-adapter-648ac01.md)
 
 </td>
 </tr>
@@ -698,6 +802,22 @@ Receiver adapter:
 
 
 See: [HTTP Receiver Adapter](http-receiver-adapter-2da452e.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*HubSpot*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Allows SAP Integration Suite to connect to HubSpot.
+
+See: [HubSpot Receiver Adapter](hubspot-receiver-adapter-48cfaa8.md)
 
 </td>
 </tr>
@@ -876,6 +996,22 @@ Receiver adapter
 Allows SAP Integration Suite to connect to SAP HANA Platform \(On-Premise\) using JDBC \(Java Database Connectivity\) and to execute SQL commands on the database.
 
 See: [JDBC for SAP HANA Platform \(On-Premise\)](jdbc-for-sap-hana-platform-on-premise-ff29388.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Jira*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to connect to Jira.
+
+See: [Jira Receiver Adapter](jira-receiver-adapter-d15b560.md)
 
 </td>
 </tr>
@@ -1089,6 +1225,22 @@ See: [Configure the Microsoft SharePoint Receiver Adapter](configure-the-microso
 <tr>
 <td valign="top">
 
+*NetSuite* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to NetSuite.
+
+See: [NetSuite Receiver Adapter](netsuite-receiver-adapter-618127a.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *OData* 
 
 Sender adapter
@@ -1131,7 +1283,7 @@ Supported versions:
 
 -   OData version 4.0
 
-    Supported operations: Create \(POST\), Query \(GET\), Update \(PUT\)
+    Supported operations: Create \(POST\), Query \(GET\), Delete \(DELETE\), Update \(PUT\), and Patch \(PATCH\)
 
 -   The outgoing request payload must be in XML format.
 
@@ -1401,6 +1553,70 @@ Receiver adapter
 Enables SAP Integration Suite to get data from the Slack storage or to create, modify, or delete data on the Slack storage.
 
 See: [Configure the Slack Receiver Adapter](configure-the-slack-receiver-adapter-7c2ea64.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*SMB*
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Allows SAP Integration Suite to connect to a remote SMB Server using TCP \(Transmission Control Protocol\) to perform a read operation on the system. SMB stands for Server Message Block.
+
+Supported Versions:
+
+-   SMB 2.0.2
+-   SMB 2.1
+-   SMB 3.0
+-   SMB 3.0.2
+-   SMB 3.1.1
+
+See: [Configure the SMB Sender Adapter](configure-the-smb-sender-adapter-95bf6e9.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*SMB*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to a remote SMB Server using TCP \(Transmission Control Protocol\) to perform a file or folder operation on the system. SMB stands for Server Message Block.
+
+Supported Versions:
+
+-   SMB 2.0.2
+-   SMB 2.1
+-   SMB 3.0
+-   SMB 3.0.2
+-   SMB 3.1.1
+
+See: [Configure the SMB Receiver Adapter](configure-the-smb-receiver-adapter-ddd0d59.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Snowflake* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to Snowflake. Snowflake is a cloud computing-based data company that provides cloud-based data storage and analytics services.
+
+See: [Snowflake Receiver Adapter](snowflake-receiver-adapter-1299e68.md)
 
 </td>
 </tr>

@@ -12,3 +12,6 @@ A key value map lets you create and manage collections of arbitrary key value pa
 > ### Caution:  
 > Don’t use Key Value Maps to store your logs as this can impact API proxy runtime flow. Instead, use the message logging policy to write your logs to external endpoints.
 
+> ### Note:  
+> Key names in Key Value Maps don't allow trailing spaces. When you create key names, always check that you haven't included unintended spaces at the end.
+

@@ -69,7 +69,7 @@ Follow the steps below to copy the integration package to your *Design* space.
     </th>
     </tr>
     <tr>
-    <td valign="top" rowspan="6">
+    <td valign="top" rowspan="7">
     
     Sender
     
@@ -81,7 +81,7 @@ Follow the steps below to copy the integration package to your *Design* space.
     </td>
     <td valign="top">
     
-    This integration flow receives and extracts messages sent using AS2 adapter
+    Receives and extracts messages sent using AS2 adapter
     
     </td>
     </tr>
@@ -93,7 +93,7 @@ Follow the steps below to copy the integration package to your *Design* space.
     </td>
     <td valign="top">
     
-    This integration flow receives and extracts messages sent using AS2 MDN adapter
+    Receives and extracts messages sent using AS2 MDN adapter
     
     </td>
     </tr>
@@ -105,7 +105,7 @@ Follow the steps below to copy the integration package to your *Design* space.
     </td>
     <td valign="top">
     
-    This integration flow receives and extracts messages sent using IDOC adapter.
+    Receives and extracts messages sent using IDOC adapter.
     
     </td>
     </tr>
@@ -117,7 +117,7 @@ Follow the steps below to copy the integration package to your *Design* space.
     </td>
     <td valign="top">
     
-    This integration flow receives and extracts messages sent using SOAP adapter.
+    Receives and extracts messages sent using SOAP adapter.
     
     </td>
     </tr>
@@ -129,7 +129,24 @@ Follow the steps below to copy the integration package to your *Design* space.
     </td>
     <td valign="top">
     
-    This integration flow receives and extracts messages sent using ProcessDirect adapter.
+    Receives and extracts messages sent using ProcessDirect adapter.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Step 1a - Sender Communication Flow V2 \(Internal\)
+    
+    </td>
+    <td valign="top">
+    
+    Receives Restart and Retry messages via HTTP protocol.
+
+    > ### Note:  
+    > This flow step is for internal purposes only. Do not configure or send payloads to this step.
+
+
     
     </td>
     </tr>
@@ -141,7 +158,7 @@ Follow the steps below to copy the integration package to your *Design* space.
     </td>
     <td valign="top">
     
-    This integration flow helps write the incoming message to the message queue.
+    Helps write the incoming message to the message queue.
     
     </td>
     </tr>
@@ -158,7 +175,7 @@ Follow the steps below to copy the integration package to your *Design* space.
     </td>
     <td valign="top">
     
-    This integration flow transforms the message sent by the sender to the structure expected by the receiver.
+    Transforms the message sent by the sender to the structure expected by the receiver.
     
     </td>
     </tr>
@@ -175,7 +192,7 @@ Follow the steps below to copy the integration package to your *Design* space.
     </td>
     <td valign="top">
     
-    This integration flow gets the final message from the queue and sends it to the receiver
+    Receives the final message from the queue and sends it to the receiver
     
     </td>
     </tr>
@@ -192,7 +209,7 @@ Follow the steps below to copy the integration package to your *Design* space.
     </td>
     <td valign="top">
     
-    This is the collection of scripts used in the integration flows of the package.
+    Collection of scripts used in the integration flows of the package.
     
     </td>
     </tr>

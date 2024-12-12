@@ -74,12 +74,36 @@ BC-CP-IS-EDG-BCS
 <tr>
 <td valign="top">
 
-Provisioning of Edge Integration Cell.
+Issues with the Provisioning of the Edge Integration Cell.
 
 </td>
 <td valign="top">
 
 LOD-HCI-PI-PRV
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Issues with the Operations Cockpit.
+
+</td>
+<td valign="top">
+
+BC-CP-IS-EDG-OPI
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Issues with Edge Local Authentication and Authorization.
+
+</td>
+<td valign="top">
+
+BC-CP-IS-EDG-ELA
 
 </td>
 </tr>

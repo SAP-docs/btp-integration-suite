@@ -115,7 +115,5 @@ You can't transport those artifacts that are protected with access policies in t
 
 [Enabling Content Transport, Cloud Foundry Environment](enabling-content-transport-cloud-foundry-environment-452c677.md "All the tasks mentioned here are one-time activities. The tenant administrator performs these tasks to enable content transport.")
 
-[Enabling Content Transport, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/425db2bb73e74783801df7a1d81cacfc.html "") :arrow_upper_right:
-
 [Guidelines and Best Practices for Content Transport](guidelines-and-best-practices-for-content-transport-8a8aa38.md "Cloud Integration offers different options to transport integration content. There are certain criteria that help you to decide which option to choose for your integration project.")
 

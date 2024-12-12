@@ -4,6 +4,10 @@
 
 You use the ProcessDirect receiver adapter to establish fast and direct communication between integration flows by reducing latency and network overhead provided both of them are available within a same tenant.
 
+Two integration flows, a producer integration flow, and a consumer integration flow, can be directly connected using the ProcessDirect adapter. As shown in the figure, the producer integration flow utilizes a ProcessDirect receiver adapter to send a message to the consumer integration flow, which, in turn, uses a ProcessDirect sender adapter to receive the message.
+
+![](images/ProcessDirect_47d56c7.png)
+
 Once you have created a receiver channel and selected the ProcessDirect receiver adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 Select the *General* tab and provide values in the fields as follows.
@@ -64,7 +68,11 @@ Address
 </td>
 <td valign="top">
 
-URL of the target system that you are connecting to. For example, /localiprequiresnew.
+Address of the ProcessDirect sender adapter in the consumer integration flow you like to connect to.
+
+Example:
+
+`/myConsumerIntegrationFlow`
 
 > ### Note:  
 > It may or may not start with "/". It can contain alphanumeric characters and special characters such as underscore "\_" or hyphen "-". You can also use simple expressions, for example, $\{header.address\}.

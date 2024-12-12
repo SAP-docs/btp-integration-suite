@@ -10,9 +10,7 @@ Check and fix the Edge Integration Cell solution upgrade issues.
 
 During solution upgrade, you encounter the following error:
 
-Action \[Create or Update Helm Custom Resource \(Solace, Edge Integration Cell Services\)\] failed:
-
-Custom Resource such as `HelmRelease]` reached FAILED state, when performing `[UpdateFailed]`, due to `[failed to update release: post-upgrade hooks failed: 1 error occurred: * job failed: BackoffLimitExceeded]`
+`Action [Create or Update Helm Custom Resource (Solace)] failed: Custom Resource from kind [HelmRelease] reached FAILED state when performing [UpdateFailed], due to [post-upgrade hook failed, lastHookErrMsg: 'Failed status for monitored CR 'edge-icell-services/solace' with group/version/kind 'xbem.sap.com/v1/SolaceSoftwareBroker'']`
 
 To resolve the upgrade error, perform the following steps:
 

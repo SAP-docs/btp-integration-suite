@@ -606,6 +606,23 @@ Under *Signer Parameters*, add the reference to one or multiple private keys tha
 
     Specifies the algorithm used to sign the content using the private key.
 
+    You can choose the following algorithms:
+
+    -   *SHA/RSA*
+
+    -   *SHA1withRSAandMFG1/RSA-PSS*
+
+    -   *SHA223/RSA*
+
+    -   *SHA256/RSA*
+
+    -   *SHA256withRSAandMFG1/RSA-PSS*
+
+    -   *SHA384/RSA*
+
+    -   *SHA512withRSAandMFG1/RSA-PSS*
+
+
 -   *Include Certificates*
 
     Specifies whether you allow recipients to send encrypted and signed messages to you. To allow that, make sure that this field is set to *true*, so that your signing certificates are selected.
@@ -629,7 +646,18 @@ You can specify the following parameters for the secret key \(used to encrypt th
 
 -   *Content Encryption Algorithm*
 
-    Specifies the symmetric \(block\) cipher. Choose *DESede* only if the destination system or mail client doesn’t support AES.
+    Specifies the symmetric \(block\) cipher.
+
+    You can choose the following algorithms:
+
+    -   *AES/CBC/PKCS5Padding*
+
+    -   *AES/GCM/NoPadding*
+
+    -   *DESede/CBC/PKCS5Padding*
+
+        Choose this option only if the destination system or mail client doesn’t support AES.
+
 
 -   *Secret Key Length*
 

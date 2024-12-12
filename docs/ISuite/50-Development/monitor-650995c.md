@@ -6,8 +6,6 @@ Analyze the usage and performance of the artifacts available on the SAP Integrat
 
 The following tabs are available for each capability:
 
-****
-
 
 <table>
 <tr>
@@ -23,7 +21,7 @@ Tab
 </th>
 <th valign="top">
 
-Document Link
+Help Link
 
 </th>
 </tr>
@@ -35,7 +33,7 @@ Cloud Integration
 </td>
 <td valign="top">
 
-Integrations
+*Monitor* \> *Integrations and APIs*
 
 </td>
 <td valign="top">
@@ -52,12 +50,29 @@ API Management
 </td>
 <td valign="top">
 
-APIs
+*Monitor* \> *Integrations and APIs* 
 
 </td>
 <td valign="top">
 
-[Analyze APIs](analyze-apis-7712c61.md)
+[Monitor APIs](monitor-apis-399b6c6.md) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Event Mesh
+
+</td>
+<td valign="top">
+
+*Monitor* \> *Event Mesh* 
+
+</td>
+<td valign="top">
+
+[Monitor Event Mesh](monitor-event-mesh-d975934.md) 
 
 </td>
 </tr>
@@ -69,12 +84,12 @@ Trading Partner Management
 </td>
 <td valign="top">
 
-B2B Messages
+*Monitor* \> *B2B Scenarios* 
 
 </td>
 <td valign="top">
 
-[Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md)
+[Update Agreements](update-agreements-b5e1fc9.md)
 
 </td>
 </tr>

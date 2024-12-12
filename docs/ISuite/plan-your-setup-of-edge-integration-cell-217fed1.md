@@ -35,7 +35,7 @@ For a production environment, you need to provide a PostgreSQL database and a Re
 
 For test and demo purposes, you can deploy an internal PostgreSQL database and a Redis data store as part of Edge Integration Cell, but these built-in services aren't highly available, nor scalable as required for a production environment.
 
-You require a load balancer to expose Edge Integration Cell endpoints and load balance traffic across K8s nodes and services. On cloud platforms, you can choose between using an external load balancer exposed to Internet or an internal load balancer for private networks. For more information, see
+You require a load balancer integrated with your Kubernetes infrastructure to expose Edge Integration Cell endpoints and load balance traffic across K8s nodes and services. On cloud platforms, you can choose between using an external load balancer exposed to Internet or an internal load balancer for private networks. For more information, see
 
 [https://learn.microsoft.com/en-us/azure/aks/internal-lb%20\(Azure\)](https://learn.microsoft.com/en-us/azure/aks/internal-lb%20(Azure)) or
 
@@ -69,7 +69,7 @@ On AWS, you can configure cluster endpoint access to enable private access to th
 
 Each Edge Integration Cell solution must be deployed on a K8s cluster. For future productive setups, we strongly recommend using this K8s cluster exclusively for this purpose. Don't coinstall any other applications with higher resource requirements on this cluster. Do joint deployment only be done if mechanisms are used to ensure that the Edge Integration Cell is carefully isolated from other applications in terms of resources \(for example, by using dedicated node pools for each application\). A shared usage can be problematic, as Edge Lifecycle Management requires high-privileged Kubernetes access for deploying custom resource definitions and shared resources like Istio. You can deploy the required PostgreSQL database and Redis data store into the same Kubernetes cluster \(as explained in the external services section\).
 
-It'sis possible to deploy the required PostgreSQL database and Redis data store into the same Kubernetes cluster \(see external services before\).
+It's possible to deploy the required PostgreSQL database and Redis data store into the same Kubernetes cluster \(see external services before\).
 
 
 

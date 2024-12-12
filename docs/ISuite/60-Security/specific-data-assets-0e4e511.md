@@ -201,7 +201,7 @@ Business data
 </td>
 <td valign="top">
 
-Can be defined by integration developer \(default value: 30 days\)
+Can be defined by integration developer \(default value: 30 days, maximum possible value is 180 days\)
 
 </td>
 </tr>
@@ -231,6 +231,33 @@ Business data
 <td valign="top">
 
 90 days
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Message content stored by JMS adapter
+
+</td>
+<td valign="top">
+
+Message content stored in JMS message queues
+
+</td>
+<td valign="top">
+
+JMS queue
+
+</td>
+<td valign="top">
+
+Business data
+
+</td>
+<td valign="top">
+
+Can be defined by integration developer \(default value: 30 days, maximum possible value is 180 days\)
 
 </td>
 </tr>

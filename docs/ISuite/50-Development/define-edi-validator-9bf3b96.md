@@ -14,6 +14,9 @@ The EDI validator validates the message payload in EDI flat file format against 
 EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use this procedure to assign XSD files to validate the message payload in a process step. The validator checks the message payload against configured XSD schema, and throws an exception in case of discrepancy.
 
 > ### Note:  
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
+> ### Note:  
 > -   EDI Validator version 1.4 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
 > -   Contact the Cloud Integration Team to obtain EDI related XSD files.
 > -   EDI Validator version 1.5 and above supports LS/LE segments.

@@ -109,7 +109,9 @@ In addition to encrypting the message content, you can also sign the content to 
     
     Specify the algorithm that is to be used to encrypt the payload.
 
-    Supported algorithms \(by the symmetric key\) for content encryption \(format Cipher/Operation Mode/Padding Scheme\): AES/CBC/PKCS5Padding, ARCFOUR/ECB/NoPadding, Camellia/CBC/PKCS5Padding, CAST5/CBC/PKCS5Padding, DES/CBC/PKCS5Padding, DESede/CBC/PKCS5Padding, RC2/CBC/PKCS5Padding.
+    Supported algorithms \(by the symmetric key\) for content encryption \(format Cipher/Operation Mode/Padding Scheme\): AES/GCM/NoPadding, AES/CCM/NoPadding, AES/CBC/PKCS5Padding, ARCFOUR/ECB/NoPadding, Camellia/CBC/PKCS5Padding, CAST5/CBC/PKCS5Padding, DES/CBC/PKCS5Padding, DESede/CBC/PKCS5Padding, RC2/CBC/PKCS5Padding.
+
+    The following options are available when for *Signatures* the option *Enveloped Data Only* is selected: AES/GCM/NoPadding, AES/CCM/NoPadding,AES/CCM/NoPadding, AES/GCM/NoPadding.
     
     </td>
     </tr>
@@ -168,7 +170,10 @@ In addition to encrypting the message content, you can also sign the content to 
 
         Specify the signature \(digest\) algorithm.
 
-        Signature algorithms: MD5/RSA, RIPEMD128/RSA, RIPEMD160/RSA, RIPEMD256/RSA, SHA/RSA, SHA224/RSA, SHA256/RSA, SHA384/RSA, SHA512/RSA.
+        Signature algorithms: AES/GCM/NoPadding, AES/CCM/NoPadding, MD5/RSA, RIPEMD128/RSA, RIPEMD160/RSA, RIPEMD256/RSA, SHA/RSA, SHA224/RSA, SHA256/RSA, SHA384/RSA, SHA512/RSA.
+
+        > ### Caution:  
+        > Algorithms starting with SHA1, MD2, or MD5 are still supported for compatibility reasons, but they no longer meet today's security requirements. Therefore, we recommend using stronger algorithms where possible. Check with your security experts or authorities like NIST for more detailed security recommendations.
 
     -   *Include Certificates*
 

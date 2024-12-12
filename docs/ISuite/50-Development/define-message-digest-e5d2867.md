@@ -101,6 +101,14 @@ You can use this feature to implement scenarios like the following ones:
 
         More information: [http://www.w3.org/2001/10/xml-exc-c14n\#WithComments](http://www.w3.org/2001/10/xml-exc-c14n#WithComments)
 
+    -   *XML Canonicalization Version 1.1*
+
+        More information: [http://www.w3.org/2006/12/xml-c14n11](http://www.w3.org/2006/12/xml-c14n11)
+
+    -   *XML Canonicalization with Comments Version 1.1*
+
+        More information: [http://www.w3.org/2006/12/xml-c14n11\#WithComments](http://www.w3.org/2006/12/xml-c14n11#WithComments)
+
     -   *None*
 
 
@@ -121,10 +129,15 @@ You can use this feature to implement scenarios like the following ones:
     You can choose between the following hash algorithms:
 
     -   *MD5*
-    -   *SHA-1* 
-    -   *SHA-256* 
-    -   *SHA-384* 
-    -   *SHA-512* 
+    -   *SHA1* 
+    -   *SHA256* 
+    -   *SHA384* 
+    -   *SHA512* 
+
+    Default value: SHA512
+
+    > ### Caution:  
+    > Algorithms starting with SHA1, MD2, or MD5 are still supported for compatibility reasons, but they no longer meet today's security requirements. Therefore, we recommend using stronger algorithms where possible. Check with your security experts or authorities like NIST for more detailed security recommendations.
 
 
     

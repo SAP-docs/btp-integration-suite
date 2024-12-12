@@ -40,14 +40,14 @@ Refer this section for the entities that are cloned and entities that aren’t c
 > 
 > 3.  Save the zip file.
 > 
-> 4.  Delete the existing `HelloWorld` proxy from Integration Suite .
+> 4.  Delete the existing `HelloWorld` proxy from Integration Suite.
 > 
 > 5.  Import this edited zip file.
 > 
 > 
 > With this the `created_by` will reflect in the API proxy.
 
-The following list displays the API Management entities that are cloned:
+The following list displays the API Management entities that can be cloned:
 
 -   Certificates and Certificate Store
 -   Rate Plans
@@ -56,12 +56,11 @@ The following list displays the API Management entities that are cloned:
 -   Policy Templates
 -   API Proxies
 -   API Products
--   Measure Codes for Custom Measures
--   Dimension Codes for Custom Dimensions
 -   Application
 -   Application Developer
 -   Access Control Permissions for API Product
--   Custom Metrics and Charts
+-   Cache Resources
+-   CertificateStoreReferences
 
 
 
@@ -70,6 +69,17 @@ The following list displays the API Management entities that are cloned:
 ## Content That Are Not Cloned
 
 The following list displays the API Management content that aren’t cloned, including sensitive data like your certificates and credentials.
+
+-   **Analytics Data**
+    -   Measure Codes for Custom Measures
+
+    -   Dimension Codes for Custom Dimensions
+
+    -   Custom Metrics and Charts
+
+        > ### Note:  
+        > These entities are not cloned via the cloning tool. You have to create them manually in Integration Suite target system under *Analytics*. For more information, see [Advanced API Analytics](../50-Development/advanced-api-analytics-5973d4a.md).
+
 
 -   **Sensitive Data**
 

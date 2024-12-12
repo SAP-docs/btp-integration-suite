@@ -65,7 +65,7 @@ Consider the following sample code:
 >     def customActivityParams = service.getParameter("SAP_TPM_CustomActivityParams", partnerId, BinaryData.class);
 >     if (customActivityParams != null){
 >         def jsonRoot = new JsonSlurper().parseText(new String(customActivityParams.getData()));
->         setProperty("CustomKey", jsonRoot.MyTest1);
+>         message.setProperty("CustomKey", jsonRoot.MyTest1);
 >     }
 >     return message;
 > }

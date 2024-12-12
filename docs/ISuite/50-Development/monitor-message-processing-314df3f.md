@@ -104,29 +104,55 @@ See: [Message Status](message-status-733a57b.md)
 <tr>
 <td valign="top">
 
+*Type* 
+
+</td>
+<td valign="top">
+
+Allows you to filter for all artifacts with a dedicated type. The following filter options are available:
+
+-   *All*
+
+-   *Integration Flow*
+
+-   *API \(Edge runtimes only\)*
+
+-   *OData API*
+
+-   *SOAP API*
+
+-   *REST API*
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Package* 
+
+</td>
+<td valign="top">
+
+Allows you to display all messages belonging to a specific package .
+
+If you select a package, you can also filter for the different types or artifacts belonging to that package. If you change the package or type selected in the filter, however, the artifact selection is cleared as well.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Artifact* 
 
 </td>
 <td valign="top">
 
-Allows you to display messages associated with specific artifacts \(integration flows\).
+Allows you to display messages associated with specific artifacts. You can select multiple artifacts for which you want to display messages. By default, all artifacts are shown.
 
-The value help list contains all artifacts and packages for which message processing logs exist.
-
-When you position the cursor on an artifact in the value help list, name and type are displayed and the tooltip shows additional information.
-
-When you select one of the following entries in the value help list, you can also filter for all artifacts with a dedicated type:
-
--   *All Integration Flows*
-
--   *All APIs*
-
--   *All OData APIs*
-
--   *All SOAP APIs*
-
--   *All REST APIs*
-
+The list contains all artifacts for which message processing logs exist. When you position the cursor on an artifact in the list, the tooltip shows the artifact ID.
 
 You can filter for artifacts with a specific sequence of characters in their name or ID. The search is case insensitive.
 
@@ -250,9 +276,10 @@ After the header, the following sections contain detailed information about the 
     -   The *Application Message ID*
     -   The *Application Message Type*
     -   The *Custom Status*
+    -   The *Retention Periods* for completed and uncompleted messages.
 
     > ### Note:  
-    > *Sender*, *Receiver*, *Application Message ID*, *Application Message Type*, and *Custom Status* are optional and can be set via the Content Modifier. They’re only appear if they aren’t empty.
+    > *Sender*, *Receiver*, *Application Message ID*, *Application Message Type*, and *Custom Status* are optional and can be set via the Content Modifier. They're only shown if they aren’t empty.
     > 
     > The *Custom Status* is only visible if it differs from the overall processing status.
 
@@ -365,6 +392,16 @@ After the header, the following sections contain detailed information about the 
     </tr>
     </table>
     
+
+
+
+<a name="loio314df3f8f4334dd8829c62e865cc6d02__section_jkv_4xd_5cc"/>
+
+## Message Status Overview
+
+You can quickly navigate to the Message Status Overview page with the button *Message Status Overview*.
+
+![](images/Message_Status_Overview_Button_782b507.png)
 
 **Related Information**  
 

@@ -6,20 +6,23 @@ The naming conventions defined in the following chapter are meant as a recommend
 
 
 
-It's important to have a logical system behind the naming patterns applied. This system helps you to quickly organize and identify all the numerous objects related in an integration environment. In the following guidelines, the case for an organization with multiple subsidiaries is considered. In case some objects depend on a specific subcompany, the placeholder `<Business Unit>` is used. However, when the objects don't specify a business unit but a whole group, then use the constant `<Global>` instead. The multicompany use case can be extrapolated to other distributions, like divisions, countries/regions, areas, and so forth. If this classification isn't needed, it can be omitted. Also, a good practice is to use CamelNotation in any of the placeholders used.
+It's important to have a logical system behind the naming patterns applied. This system helps you to quickly organize and identify all the numerous objects related in an integration environment. In the following guidelines, the case for an organization with multiple subsidiaries is considered. In case some objects depend on a specific subcompany, the placeholder `<Business Unit>` is used. However, when the objects don't specify a business unit but a whole group, then use the constant `<Global>` instead. The multicompany use case can be extrapolated to other distributions, like divisions, countries/regions, areas, and so forth. If this classification isn't needed, it can be omitted. Also, a good practice is to use CamelNotation in any of the placeholders used. The square brackets indicate an optional part of the naming convention, which may not be required in all use cases.
 
 
 
 ### Integration Packages
 
-The Integration Package is the folder containing or organizing your integration content \(integration flows, value mappings, APIs, and so forth\). Right now, an Integration Package is the minimum unit that can be transported. See [Create an Integration Package](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/748968a0f43d442f98d93a9a197cdbd2.html "Create an integration package that contains your integration flows.") :arrow_upper_right:.
+The Integration Package is the folder containing or organizing your integration content \(integration flows, value mappings, APIs, and so forth\). Right now, an integration package is the minimum unit that can be transported. See [Creating an Integration Package](creating-an-integration-package-9126d79.md).
 
 The naming convention for custom integration packages is as follows:
 
--   `<Business Unit>_<BusinessProcess>_<AdditionalInformation>`
+`[<CompanyPrefix>]_<BusinessUnit|Global> _<IntegrationScenario>_[<InvolvedSystems>]_[<AdditionalInformation>]` 
 
--   `Global_<BusinessProcess>_<AdditionalInformation>`
+Packages that contain reusable objects across different integration packages should be named by a standardized identifier, for example, COMMON, REUSE.
 
+Example:
+
+`[<CompanyPrefix>]_<BusinessUnit|Global>_<IntegrationScenario>_COMMON`
 
 **Naming Guidelines for Custom Integration Package**
 
@@ -47,13 +50,17 @@ The Integration Package is the uppermost unit in Cloud Integration. The name mus
 </td>
 <td valign="top">
 
--   *Business Unit*: Business Unit to which the package belongs to \(Example: SubsidiaryA\)
+-   *Company Prefix \(Optional\)*: 3 or 4 letter prefix for your company. Ease distinction between own custom-built content and pre-packaged content from SAP and partners.
+
+-   *Business Unit*: Business Unit to which the package belongs to \(example: SubsidiaryA\)
 
 -   *Global*: Constant used if the package isn't bound to a specific business unit, but to the entire group.
 
--   *BusinessProcess*: Business process where all the objects of the package can be classified \(Example: Purchasing, HumanResources, MM, OrderToCash or any other possible area\)
+-   *Integration Scenario*: The integration scenario groups the objects of the package by end-to-end scenarios or business processes \(example: OrderIntegration, E-Invoicing, HR\).
 
--   *Additional Information*: Country key \(2-digit\), Object \(in CamelCase notation\), or any other description not included in the BusinessProcess, which is needed to specify the package \(Example: DE/GB/CH, Payroll, and so forth\)
+-   *Involved Systems \(Optional\)*: In some cases, it's helpful to have information about the systems involved. However, never use technical nor environment-dependent names, but generic names \(example: Ariba, SuccessFactors\).
+
+-   *Additional Information \(Optional\)*: Country key \(2-digit\), Object \(in CamelCase notation\), or any other description not included in the integration scenario, which is needed to specify the package \(example: DE/GB/CH, Payroll, and so forth\)
 
 -   *Integrated Products*: Two or more products between which the integration takes place.
 
@@ -70,17 +77,15 @@ In case, an integration package is to be copied, then follow the next rules: Use
 </td>
 <td valign="top">
 
--   `SubsidiaryA_Procurement`
+-   `XYZ_Global_CentralSourcing_Ariba` 
 
--   `SubsidiaryA_Learning_DE`
+-   `XYZ_SubsidiaryB_PayrollReplication` 
 
--   `Global_HR`
+-   `Global_HR_SuccessFactors` 
 
--   `RecruitToRetire_Payroll`
+-   `SubsidiaryA_CustomerInformation_CRM` 
 
--   `Global_HR_SuccessFactorsToERP`
-
--   `SubsidiaryA_Sales_CustomerInformation_CRMToCloudForCustomer`
+-   `Global_ErrorHandling_COMMON` 
 
 
 
@@ -102,14 +107,11 @@ In case, an integration package is to be copied, then follow the next rules: Use
 
 ### Integration Flow
 
-An Integration Flow allows you to specify how a message is processed on a tenant.
+An integration flow allows you to specify how a message is processed on a tenant.
 
 The naming convention is as follows:
 
--   `<Business Unit>_<BusinessProcess>_[<Sender/Receiver>_]<InterfaceDescription>`
-
--   `Global_<BusinessProcess>_[<Sender/Receiver>_]<InterfaceDescription>`
-
+`BusinessUnit|Global>_<BusinessObject>_[<Sender>_to_<Receiver>]_[<AdditionalInformation>]`
 
 **Naming Guidelines for Integration Flow**
 
@@ -139,13 +141,13 @@ Integration flows are organized in integration packages. However, the ID must be
 
 -   *Business Unit*: Business Unit to which the package belongs to \(Example: SubsidiaryA\)
 
--   *Global*: Constant used if the package isn't bound to a specific business unit, but to the entire group.
+-   *Global*: Constant used if the package isn't bound to a specific business unit, but to the entire group
 
--   *BusinessProcess*: Business process where all the objects of the package can be classified \(Example: Purchasing, HumanResources, MM, OrderToCash or any other possible area\)
+-   *Sender\_to\_Receiver \(Optional\)*: In some cases, it's helpful to have information of the sender and receiver of an integration flow. However, never use technical nor environment-dependent names, but generic names \(example: S4\_to\_SuccessFactors\).
 
--   *Sender/Receiver*: In some cases, it's helpful to have information of the sender or receiver of an integration flow. However, never use technical nor environment-dependent names, but generic names \(Example: SAP S/4HANA, SAP SuccessFactors, BW\)
+-   *Sender/Receiver*: In some cases, it's helpful to have information of the sender or receiver of an integration flow. However, never use technical nor environment-dependent names, but generic names \(example: SAP S/4HANA, SAP SuccessFactors, BW\).
 
--   *InterfaceDescription*: Use a meaningful name in camel notation, including object/business case and operation \(Examples: PurchaseOrderCreation, PlanningDataRead, EmployeeAbsenceSend, PayrollReplication\). In case additional information is still needed to identify the Integration Flow, add it here \(e.g. Country, Interface Id, …\)
+-   *Additional Information \(Optional\)*: Country key \(2-digit\), Identifier or any other additional information relevant for the integration flow
 
 
 
@@ -160,13 +162,77 @@ Integration flows are organized in integration packages. However, the ID must be
 </td>
 <td valign="top">
 
--   `SubsidiaryA_MM_PurchaseOrderReplication`
+-   `SubsidiaryA_PurchaseOrderReplication_S4_to_Ariba_US`
 
--   `SubsidiaryA_PM_PlanningDataReadID00123`
+-   `Global_PlanningData_ID00312`
 
--   `BusinessUnitA_FI_SuccessFactors_PayrollReplicationDE`
+-   `BusinessUnitA_PayrollReplication_SuccessFactors_to_ERP`
 
--   `Global_MM_Ariba_PurchaseOrderReplication`
+Standard integration flows maintain their original names.
+
+</td>
+</tr>
+</table>
+
+
+
+### Script Collection
+
+A Script Collection contains a bundle of scripts. Create a script collection within an integration package so that you create scripts in it and then reuse the bundle of scripts across any number of integration artifacts in your tenant. See [Creating a Script Collection](creating-a-script-collection-824bff0.md)
+
+The naming convention is as follows:
+
+`SC_<BusinessUnit|Global>_<Description>`
+
+**Naming Guidelines for Integration Flow**
+
+
+<table>
+<tr>
+<td valign="top">
+
+*Scope*
+
+</td>
+<td valign="top">
+
+Integration Package
+
+The script collections are organized in integration packages. The id must be unique for the entire tenant.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Definition*
+
+</td>
+<td valign="top">
+
+-   *Business Unit*: Business Unit to which the script collection belongs \(example: SubsidiaryA\)
+
+-   *Global*: Constant used if the script collection isn't bound to a specific business unit, but to the entire group
+
+-   *Description*: Meaningful description of the intended use of the script collection
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Example*
+
+</td>
+<td valign="top">
+
+-   `SC_SubsidiaryA_ErrorHandling`
+
+-   `SC_Global_MappingUtils`
+
 
 Standard Integration Flows maintain their original names.
 
@@ -182,10 +248,7 @@ Cloud Integration supports API-based integration development exposing integratio
 
 The naming convention is as follows:
 
--   `<Business Unit>_<BusinessProcess>_[<Sender/Receiver>_]<InterfaceDescription>`
-
--   `Global_<BusinessProcess>_[<Sender/Receiver>_]<InterfaceDescription>`
-
+`<BusinessUnit|Global>_<Resource>_<SourceSystem>_[<AdditionalDescription>]` 
 
 **Naming Guidelines for API-Based Integration Development**
 
@@ -213,15 +276,15 @@ The APIs are organized in integration packages. However, the ID must be unique f
 </td>
 <td valign="top">
 
--   *Business Unit*: Business Unit to which the package belongs to \(Example: SubsidiaryA\)
+-   *Business Unit*: Business Unit to which the package belongs to \(example: SubsidiaryA\)
 
--   *Global*: Constant used if the package isn't bound to a specific business unit, but to the entire group.
+-   *Global*: Constant used if the package isn't bound to a specific business unit, but to the entire group
 
--   *BusinessProcess*: Business process where all the objects of the package can be classified \(Example: Purchasing, HumanResources, MM, OrderToCash or any other possible area\)
+-   *BusinessProcess*: Business process where all the objects of the package can be classified \(example: Purchasing, HumanResources, MM, OrderToCash or any other possible area\)
 
--   *Sender/Receiver*: In some cases, it's helpful to have information of the sender or receiver of an integration flow. However, never use technical nor environment-dependent names, but generic names \(Example: SAP S/4HANA, SAP SuccessFactors, BW\)
+-   *Sender/Receiver*: In some cases, it's helpful to have information of the sender or receiver of an integration flow. However, never use technical nor environment-dependent names, but generic names \(example: SAP S/4HANA, SAP SuccessFactors, BW\).
 
--   *InterfaceDescription*: Use a meaningful name in camel notation, including object/business case. As OData usually include several operations, it is not needed to include the operation \(Ex. PurchaseOrder, PlanningData, EmployeeAbsence, Payroll\). In case additional information is still needed to identify the Integration Flow, add it here \(for example, Country, Interface Id, …\)
+-   *InterfaceDescription*: Use a meaningful name in camel notation, including object/business case. As OData usually include several operations, it is not needed to include the operation \(example: PurchaseOrder, PlanningData, EmployeeAbsence, Payroll\). In case additional information is still needed to identify the Integration Flow, add it here \(for example, Country, Interface Id, …\).
 
 
 
@@ -363,7 +426,7 @@ Channels of different integration flows can have the same name.
 
 -   *Direction*: SND or RCV
 
--   *OperationDefinition*: Use a meaningful name in camel notation, including object/business case and operation \(Examples: PurchaseOrderCreation, PlanningDataRead, EmployeeAbsenceSend, PayrollReplication\)
+-   *OperationDefinition*: Use a meaningful name in camel notation, including object/business case and operation \(examples: PurchaseOrderCreation, PlanningDataRead, EmployeeAbsenceSend, PayrollReplication\)
 
 
 
@@ -478,10 +541,7 @@ A value mapping is an artifact that acts as a bidirectional lookup table. See [C
 
 The naming convention is as follows:
 
--   `VM_<Business Unit>_<BusinessProcess>_<AdditionalInformation>`
-
--   `VM_Global_<BusinessProcess>_<AdditionalInformation>`
-
+`VM_<BusinessUnit|Global>_<Object>_[<AdditionalInformation>]`
 
 **Naming Guidelines for Value Mappings**
 
@@ -509,13 +569,13 @@ The value mappings are organized in integration packages. The id must be unique 
 </td>
 <td valign="top">
 
--   *Business Unit*: Business Unit to which the package belongs to \(Example: SubsidiaryA\)
+-   *Business Unit*: Business Unit to which the value mapping belongs \(example: SubsidiaryA\)
 
--   *Global*: Constant used if the package isn't bound to a specific business unit, but to the entire group.
+-   *Global*: Constant used if the package isn't bound to a specific business unit, but to the entire group
 
--   *BusinessProcess*: Business process where all the objects of the package can be classified \(Example: Purchasing, HumanResources, MM, OrderToCash or any other possible area\)
+-   *Object*: Refers to the specific object or set of data of the value mapping, \(example: CountryKeys, UnitOfMeasurement, CurrencyConversion\)
 
--   *Additional Information*: Meaningful description if needed to split the value mapping.
+-   *Additional Information*: Meaningful description if needed to split the value mapping
 
 
 
@@ -530,11 +590,11 @@ The value mappings are organized in integration packages. The id must be unique 
 </td>
 <td valign="top">
 
--   `SubsidiaryA_MM_UnitConversions`
+-   `VM_SubsidiaryA_UnitConversions`
 
--   `SubsidiaryA_CountryKeys`
+-   `VM_SubsidiaryA_CountryKeys`
 
--   `Global_UnitConversions`
+-   `VM_Global_CurrencyConversions`
 
 
 
@@ -622,10 +682,7 @@ Endpoints are the Url to trigger a specific integration flow.
 
 The naming convention is as follows:
 
--   `/<Business Unit>/<BusinessProcess>/<InterfaceDescription>`
-
--   `/Global/<BusinessProcess>/<InterfaceDescription>`
-
+`/<BusinessUnit|Global>/<BusinessProcess>/<InterfaceDescription>`
 
 **Naming Guidelines for Endpoints: Generic Integration Flow**
 
@@ -653,13 +710,13 @@ Endpoints must be unique for the entire tenant. The address entered as url can b
 </td>
 <td valign="top">
 
--   *Business Unit*: Business Unit to which the package belongs to \(Example: SubsidiaryA\)
+-   *Business Unit*: Business Unit to which the integration flow belongs to \(Example: SubsidiaryA\)
 
--   *Global*: Constant used if the package isn't bound to a specific business unit, but to the entire group.
+-   *Global*: Constant used if the integration flow isn't bound to a specific business unit, but to the entire group
 
--   *BusinessProcess*: Business process where all the objects of the package can be classified \(Example: Purchasing, HumanResources, MM, OrderToCash or any other possible area\)
+-   *BusinessProcess*: Business process where all the objects of the package can be classified \(example: Purchasing, HumanResources, MM, OrderToCash or any other possible area\)
 
--   *InterfaceDescription*: Use a meaningful name in camel notation, including object/business case and operation \(Examples: PurchaseOrderCreation, PlanningDataRead, EmployeeAbsenceSend, PayrollReplication\). In case additional information is still needed to identify the Integration Flow, then add it here \(e.g. Country, Interface Id…\)
+-   *InterfaceDescription*: Use a meaningful name in camel notation, including object/business case and operation \(examples: PurchaseOrderCreation, PlanningDataRead, EmployeeAbsenceSend, PayrollReplication\). In case additional information is still needed to identify the Integration Flow, then add it here \(examples:. Country, Interface Id…\).
 
 
 
@@ -693,10 +750,7 @@ Endpoints are the Url to trigger a specific integration flow.
 
 The naming convention is as follows:
 
--   `/<Business Unit>/<Partner>/<BusinessProcess>/<InterfaceDescription>`
-
--   `/Global/<Partner>/<BusinessProcess>/<InterfaceDescription>`
-
+`/<BusinessUnit|Global>/<Partner>/<BusinessProcess>/<InterfaceDescription>`
 
 **Naming Guidelines for Partner Integration Flow**
 
@@ -724,17 +778,17 @@ Endpoints must be unique for the entire tenant.
 </td>
 <td valign="top">
 
-This can be used when different partners should call different Integration Flows for the same functionality.
+This can be used when different partners should call different integration 2flows for the same functionality.
 
--   *Business Unit*: Business Unit to which the package belongs to \(Example: SubsidiaryA\)
+-   *Business Unit*: Business Unit to which the integration flow belongs to \(Example: SubsidiaryA\)
 
--   *Global*: Constant used if the package isn't bound to a specific business unit, but to the entire group.
+-   *Global*: Constant used if the integration flow isn't bound to a specific business unit, but to the entire group
 
 -   *Partner*: Partner identification
 
--   *BusinessProcess*: Business process where all the objects of the package can be classified \(Example: Purchasing, HumanResources, MM, OrderToCash or any other possible area\)
+-   *BusinessProcess*: Business process where all the objects of the package can be classified \(examples: Purchasing, HumanResources, MM, OrderToCash or any other possible area\)
 
--   *InterfaceDescription*: Use a meaningful name in camel notation, including object/business case and operation \(Ex. PurchaseOrderCreation, PlanningDataRead, EmployeeAbsenceSend, PayrollReplication\). In case additional information is still needed to identify the Integration Flow, add it here \(e.g. Country, Interface Id, …\)
+-   *InterfaceDescription*: Use a meaningful name in camel notation, including object/business case and operation \(examples: PurchaseOrderCreation, PlanningDataRead, EmployeeAbsenceSend, PayrollReplication\). In case additional information is still needed to identify the integration flow, add it here \(examples: Country, Interface Id, …\).
 
 
 
@@ -890,13 +944,11 @@ Description: Meaningful step description in camelCase
 
 ### Security Artifacts
 
-Security artifacts are the credentials needed to connect to an external system. See [Security Elements](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/26e42b1d69304ce39b908fd11882e7ab.html "To set up the secure communication between a tenant and a sender/receiver system, certain security elements have to be created and - in some cases - exchanged between the involved components (the tenant on the one side and the sender/receiver system on the other side of the communication).") :arrow_upper_right:.
+Security artifacts are the credentials needed to connect to an external system.
 
 The naming convention is as follows:
 
--   `<Business Unit>_<SystemIdentifier>_<AdapterType>_<TypeOfMaterial>`
-
--   `Global_<SystemIdentifier>_<AdapterType>_<TypeOfMaterial>`
+-   `<BusinessUnit|Global>_<SystemIdentifier>_<AdapterType>_<TypeOfMaterial>`
 
 -   Business Partner System: `<System>_<Partner>_<AdapterType>_<TypeOfMaterial>`
 
@@ -927,11 +979,11 @@ Security artifacts must be unique in the whole tenant.
 </td>
 <td valign="top">
 
--   *Business Unit*: Business Unit to which the package belongs to \(Example: SubsidiaryA\)
+-   *Business Unit*: Business unit to which the artifact belongs to \(Example: SubsidiaryA\)
 
--   *Global*: Constant used if the package isn't bound to a specific business unit, but to the entire group.
+-   *Global*: Constant used if the artifact isn't bound to a specific business unit, but to the entire group
 
--   *System Identifier*: As the security artifacts are environment-dependent \(no transportable objects\), it helpful to use some kind of technical system id \(like SAPSID\)
+-   *System Identifier*: As the security artifacts are environment-dependent \(no transportable objects\), it is helpful to use some kind of technical system id \(like SAPSID\).
 
 -   *Adapter Type*: HTTP, SOAP, OData
 
@@ -1045,10 +1097,7 @@ Messaging Queues enable persistence and asynchronous messaging in integration fl
 
 The naming convention is as follows:
 
--   `<AdapterType>_<IntegrationFlowID>`
-
--   `<AdapterType>.<IntegrationFlowID>`
-
+`<AdapterType>_<IntegrationFlowID>`
 
 **Naming Guidelines for Message Queues**
 
@@ -1094,8 +1143,6 @@ Message Queues must be unique for the entire tenant.
 
 </td>
 <td valign="top">
-
--   `XI.BusinessUnitA_MM_PurchaseOrderReplication.XI.a06f9a3046fb32c48371214aa1d7494d`
 
 -   `AS2_BusinessUnitA_MM_PurchaseOrderReplication_AS2_5b790cac_0cb0_3643_ad87_ba1a0fe1df53`
 

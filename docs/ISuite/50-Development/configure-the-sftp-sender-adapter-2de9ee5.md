@@ -2,7 +2,7 @@
 
 # Configure the SFTP Sender Adapter
 
-The SFTP sender adapter connects an SAP Cloud Integration tenant to a remote system using the SSH File Transfer protocol to read files from the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol \(or SFTP\).
+The SFTP sender adapter connects an SAP Integration Suite tenant to a remote system using the SSH File Transfer protocol to read files from the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol \(or SFTP\).
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
@@ -108,26 +108,38 @@ Relative path to read the file from a directory. Example: `parentdirectory/child
 <tr>
 <td valign="top">
 
+*Regex Filtering*
+
+\(Supported for adapter version 1.17 and above\)
+
+</td>
+<td valign="top">
+
+Select to evaluate the entered filename as a real[regular expression](configure-the-sftp-sender-adapter-2de9ee5.md#loio2de9ee58737247969eb7dc9e68b1b121__sftp_regex).
+
+Else, the file name will be evaluated as a [simple expression](configure-the-sftp-sender-adapter-2de9ee5.md#loio2de9ee58737247969eb7dc9e68b1b121__sftpsender_filename2).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *File Name* 
 
 </td>
 <td valign="top">
 
-Name of the file to be read.
-
-If you do not enter a file name and the parameter remains blank, all the files in the specified directory are read.
+Name of the file to be read. If you do not enter a file name and the parameter remains blank, all the files in the specified directory are read. When you use an expression to include files from subdirectories, the relative path from the root directory of the user and the actual file name are evaluated. For more information, see [3529367](https://me.sap.com/notes/3529367)
 
 > ### Note:  
-> **Usage of expressions and file name patterns:**
+> For simple expressions:
 > 
-> Expressions, such as `ab*`, `a.*`, `*a*`, `*a`, `?b`, and so on, are supported.
+> -   Expressions, such as `ab*`, `a.*`, `*a*`, `*a`, `?b`, and so on, are supported.
 > 
-> -   The expression `*` replaces no character or an arbitrary number of characters.
+> -   The expression \* replaces no character or an arbitrary number of characters.
 > 
-> -   The expression `?` replaces exactly one arbitrary character.
+> -   The expression ? replaces exactly one arbitrary character.
 > 
-> 
-> When you use an expression to include files from subdirectories, the relative path from the root directory of the user and the actual file name are evaluated.
 > 
 > Examples:
 > 
@@ -136,6 +148,12 @@ If you do not enter a file name and the parameter remains blank, all the files i
 > -   If you specify `file*.txt` as the *File Name*, the following files are polled by the adapter: `file1.txt`, `file2.txt`, as well as `file.txt` and `file1234.txt`, and so on.
 > 
 > -   If you specify `file?.txt` as the *File Name*, the following files are polled by the adapter: `file1.txt`, `file2.txt`, and so on, but **not** the files `file.txt` or `file1234.txt`.
+
+> ### Note:  
+> For regular expressions:
+> 
+> -   Ensure that too complex regex patterns are not entered. A default value of 5 seconds is set for evaluation of regex expression.
+> -   Regex pattern must be valid; invalid patterns may lead to unexpected results or errors.
 
 > ### Caution:  
 > Files with file names longer than 100 characters are processed as follows:
@@ -403,7 +421,44 @@ Prevents files that are in the process of being written from being read from the
 <tr>
 <td valign="top">
 
-*Sorting* 
+*Poll on One Worker Only* 
+
+</td>
+<td valign="top">
+
+In case the integration flow is deployed on multiple worker nodes, each worker node is connected as separate consumer to the SFTP server.
+
+When this option is selected, the polling process is performed on a single worker node at a time. This feature is important in scenarios when either the processing order of files is relevant or if you want to restrict the number of parallel connections to the SFTP server.
+
+> ### Note:  
+> This parameter determines how the parameters *Sorting* and *Max. Messages per Poll* influence message processing at runtime in the following way:
+> 
+> It is important to know that:
+> 
+> -   The SFTP server provides the files in an order that is not controlled by Cloud Integration.
+> 
+> -   The order of messages is only maintained per worker.
+> 
+> -   The technical communication between workers prevents processing of the same file on multiple workers.
+> 
+> 
+> Therefore, the setting of this parameter has the following impact on how the two other parameters behave at runtime, as explained under [Integration Flow Deployed on Multiple Worker Nodes](integration-flow-deployed-on-multiple-worker-nodes-95bb34a.md).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Sorting*
+
+This field is enabled only if *Poll on One Worker Only* is checked.
+
+> ### Note:  
+> From adpater version 1.16 onwards, the *Sorting* field is accessible only when *Poll on One Worker Only* is enabled.
+
+
 
 </td>
 <td valign="top">
@@ -415,14 +470,6 @@ Select the type of sorting to use to poll files from the SFTP server:
 -   *File Name*: Files are polled sorted by file name.
 -   *File Size*: Files are polled sorted by file size.
 -   *Time Stamp*: Files are polled sorted by the modification time stamp of the file.
-
-> ### Note:  
-> In this context, it is important to know that the SFTP server provides the files in an order that is not controlled by Cloud Integration. Before evaluating the *Sorting* setting, the system determines the maximum number of messages to be read from the SFTP server per poll \(as configured by the *Max. Messages per Poll* parameter\). For example, if there are 1000 files on the SFTP server and for *Max. Messages per Poll* you have specified `500`, the SFTP adapter reads the first 500 files from the SFTP server and, after this step, sorts these files according to the *Sorting* settings.
-
-> ### Caution:  
-> Be aware that a definitive, controlled sequence of messages cannot be achieved even if the processing parameters have been configured correctly because, usually in scenarios, multiple worker nodes are polling and processing messages in parallel and independently of each other.
-> 
-> Since the order of messages is only maintained per worker and the only communication between workers occurs to prevent the processing the same file on multiple workers, users can run into a situation in which messages that are later in the sorting order can overtake other messages which are currently being processed on a different worker. This disturbs the sequence of messages.
 
 
 
@@ -465,6 +512,9 @@ The system uses locks to ensure that each file from the SFTP server is only proc
 > If you are using the sender SFTP adapter in combination with an Aggregator step and you expect a high message load, consider the following recommendation:
 > 
 > Set the value for *Max. Messages per Poll* to a small number larger than `0` \(for example, `20`\). This ensures proper logging of the message processing status at runtime.
+
+> ### Note:  
+> If there’s an error during message processing, the system continues to process the next messages in the same polling batch \(see option *Max. Messages per Poll*\). After the batch is completed, the erroneous message may be processed again. Therefore, processing is not achieved in the original order anymore. If you rely on strict “in order” processing, you need to set *Max. Messages per Poll* to `1`. However, note that this comes with a negative performance impact, in particular, if there’s a large numbers of files on the SFTP server.
 
 
 
@@ -614,6 +664,54 @@ You can select one of the following idempotent repository options:
 Specifies the target directory where to move the file.
 
 Make sure that you specify a relative file path for the target directory. Note that the specified file path is defined relative to the directory specified with the *Directory* parameter. If you specify an absolute file path, it may occur that the file cannot be stored correctly at runtime. You can also specify the target directory dynamically, for example, using the timestamp of the message. The following example uses backup folders with timestamps and replaces the file extension with `bak: backup/${date:now:yyyyMMdd}/${file:name.noext}.bak`.
+
+</td>
+</tr>
+</table>
+
+Select the *Conditions* tab and provide values in the field as follows.
+
+**Conditions**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Maximum File Size
+
+</td>
+<td valign="top">
+
+This parameter allows you to configure the maximum allowed file size in megabytes \(MB\).
+
+> ### Note:  
+> This feature is supported in SFTP Sender Adapter Version 1.15 and above.
+
+The file size limit :
+
+-   Default Value: 40 MB
+
+-   Minimum Value: 0 MB
+-   Maximum Value: 2,147,483,647 MB
+
+**Polling Criteria:**
+
+File size must be less than or equal to the configured Maximum File Size. Files exceeding the maximum size will be ignored.
+
+If a file is ignored due to exceeding the Maximum File Size limit, use the Connectivity Test feature to verify the actual file size on the server. Refer to SAP Note [3519063](https://me.sap.com/notes/3519063) for more information.
 
 </td>
 </tr>

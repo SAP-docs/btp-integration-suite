@@ -2,7 +2,7 @@
 
 # Billing Service
 
-Billing service is available in both and API business hub enterprise.
+Billing service is available in both and Developer Hub.
 
 Using billing service, you can view the bill details and download bill details for a specific developer and for a specific month.
 
@@ -29,7 +29,7 @@ Service to view bills :
     </th>
     <th valign="top">
 
-    Required in API business hub enterprise 
+    Required in Developer Hub 
     
     </th>
     <th valign="top">
@@ -153,9 +153,9 @@ Service to view bills :
     </tr>
     </table>
     
--   You can also view the bill details in the and API business hub enterprise. For more information see,
+-   You can also view the bill details in the and Developer Hub. For more information see,
 
     -   [View Bill Details in the](view-bill-details-in-the-2378110.md)
-    -   [View Bill Details in the API business hub enterprise](view-bill-details-in-the-api-business-hub-enterprise-4ddac67.md)
+    -   [View Bill Details in the Developer Hub](view-bill-details-in-the-developer-hub-4ddac67.md)
 
 

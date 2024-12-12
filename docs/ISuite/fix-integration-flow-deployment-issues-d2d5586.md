@@ -28,7 +28,7 @@ Integration flow deployment/ undeployment failed with error code 403 \(forbidden
 </td>
 <td valign="top">
 
-If an upgrade has been skipped by SAP or delayed by you, you must at least modify the Edge Integration Cell deployment solution properties to allow key rotation and continue using the object stores, and deployed content. See: [Modify Edge Integration Cell Solution Deployment Properties](modify-edge-integration-cell-solution-deployment-properties-6a060ff.md).
+Modify the Edge Integration Cell deployment solution properties to allow key rotation and continue using the object stores and deployed content. See: [Modify Edge Integration Cell Solution Deployment Properties](modify-edge-integration-cell-solution-deployment-properties-6a060ff.md).
 
 </td>
 </tr>

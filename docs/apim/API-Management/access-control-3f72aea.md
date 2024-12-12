@@ -182,6 +182,38 @@ The default value is `ALLOW`.
 <tr>
 <td valign="top">
 
+ValidateBasedOn \(Optional\)
+
+</td>
+<td valign="top">
+
+To determine which IP addresses should be evaluated, utilize the ValidateBasedOn element when the X-Forwarded-For HTTP header contains multiple IP addresses.
+
+Valid value: X\_FORWARDED\_FOR\_ALL\_IP, X\_FORWARDED\_FOR\_FIRST\_IP, X\_FORWARDED\_FOR\_LAST\_IP
+
+The default value is `X_FORWARDED_FOR_FIRST_IP`.
+
+> ### Sample Code:  
+> ```
+> <IPRules noRuleMatchAction = "ALLOW">
+>     <MatchRule action = "ALLOW">
+>         <SourceAddress mask="32">120.75.68.75</SourceAddress>
+>     </MatchRule>
+>     <MatchRule action = "DENY">
+>         <SourceAddress mask="24">120.75.68.75</SourceAddress>
+>     </MatchRule>
+> </IPRules>
+> <ValidateBasedOn>X_FORWARDED_FOR_ALL_IP</ValidateBasedOn>
+> 
+> ```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SourceAddress \(Optional\)
 
 </td>

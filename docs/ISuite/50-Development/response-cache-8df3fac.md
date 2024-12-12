@@ -4,6 +4,9 @@
 
 This policy helps in caching data from a backend resource, thus reducing the number of requests to the resource. When applications make requests to the same URI, use this policy to return cached responses instead of forwarding all the requests to the backend server. This results in improving your API's performance through reduced latency and network traffic.
 
+> ### Note:  
+> To cache data from a backend resource, you must add the Response Cache policy twice in the processing pipeline: once in the PreFlow and once in the PostFlow. There is a restriction that allows attaching it only once in each of these flows.
+
 ResponseCache is useful in cases where the backend data used by your API is updated only periodically.
 
 The maximum size for each cached object is 512 kb. You can configure the ResponseCache policy to include HTTP response headers in setting cache entry expiration and cache keys.
@@ -21,13 +24,16 @@ An example payload for the policy is as follows:
 >                 </CacheKey>
 > 				  <Scope>Exclusive</Scope>
 >                 <ExpirySettings><ExpiryDate/><TimeOfDay/>
->                 	<TimeoutInSec ref="">60</TimeoutInSec>
+>                 	<TimeoutInSeconds ref="">60</TimeoutInSeconds>
 >                 </ExpirySettings>
 >                 <SkipCacheLookup>request.header.bypass-cache = \"true\"</SkipCacheLookup>
 >                 <SkipCachePopulation/>
 > </ResponseCache>
 > 
 > ```
+
+> ### Note:  
+> The element "TimeoutInSec" has been deprecated. It's now been replaced with "TimeoutInSeconds". Additionally, the use of the reference variable `ref="duration_variable"` is not supported with "TimeoutInSec" but works with "TimeoutInSeconds".
 
 
 <table>
@@ -286,23 +292,23 @@ ExpirySettings \(Required\)
 </td>
 <td valign="top">
 
-TimeoutInSec \(Optional\)
+TimeoutInSeconds \(Optional\)
 
 </td>
 <td valign="top">
 
-This element indicates when a cache entry should expire. It includes the TimeoutInSec, TimeOfDay, and ExpiryDate elements.
+This element indicates when a cache entry should expire. It includes the TimeoutInSeconds, TimeOfDay, and ExpiryDate elements.
 
-When present, TimeoutInSec overrides both TimeOfDay and ExpiryDate.
+When present, "TimeoutInSeconds" overrides both TimeOfDay and ExpiryDate.
 
-The TimeoutInSec element is a variable with timeout value, which indicates the number of seconds after which a cache entry should expire.
+The "TimeoutInSeconds" element is a variable with timeout value, which indicates the number of seconds after which a cache entry should expire.
 
 > ### Sample Code:  
 > Syntax
 > 
 > ```
 > <ExpirySettings>
->     <TimeoutInSec ref="duration_variable">seconds_to_expire</TimeoutInSec>
+>     <TimeoutInSeconds ref="duration_variable">seconds_to_expire</TimeoutInSeconds>
 > </ExpirySettings>
 > ```
 

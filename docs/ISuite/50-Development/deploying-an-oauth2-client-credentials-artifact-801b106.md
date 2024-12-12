@@ -15,6 +15,9 @@ You can edit and deploy an OAuth2 Client Credentials artifact.
 > 
 > -   Every time you edit an OAuth2 Client Credentials artifact, you must re-enter the Client Secret.
 
+> ### Note:  
+> Read [SAP Cloud Integration – Principal Propagation with SuccessFactors OData V2](https://blogs.sap.com/2018/07/30/sap-cloud-platform-integration-principal-propagation-with-successfactors-odata-v2/), to design and deploy an integration flow that talks to SuccessFactors OData V2 endpoint with OAuth2 authentication.
+
 More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.ietf.org/html/rfc6749)
 
 
@@ -60,23 +63,6 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     <td valign="top">
     
     Name for the credentials. This name is also called as "alias" when using in an adapter.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Grant Type
-    
-    </td>
-    <td valign="top">
-    
-    The relevant type of grant for authorizing the client to interact with the server. By default, the value is *Client Credentials* which you can't change.
-
-    > ### Note:  
-    > Read [SAP Cloud Integration – Principal Propagation with SuccessFactors OData V2](https://blogs.sap.com/2018/07/30/sap-cloud-platform-integration-principal-propagation-with-successfactors-odata-v2/), to design and deploy an integration flow that talks to SuccessFactors OData V2 endpoint with OAuth2 authentication.
-
-
     
     </td>
     </tr>
@@ -196,6 +182,23 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     </table>
     
+    **Custom Parameter**
+
+    Add or delete additional parameters in the custom parameter table, which includes three columns: *Key*, *Value*, and *Send as Part of*.
+
+    Each custom parameter can be sent in the request body, request header, or request URL, depending on specific requirements.
+
+    > ### Note:  
+    > -   Duplicate combinations of *Key*, *Value*, and *Send as Part of* fields are not allowed.
+    > 
+    > -   The *Key* cannot be "client\_id," "client\_secret," or "grant\_type".
+    > 
+    > -   Fields cannot be empty or consist only of whitespace.
+    > 
+    > -   The maximum length of the fields can be 1024 characters.
+    > 
+    > -   You can add a maximum of 20 key-value pairs.
+
 7.  Choose *Deploy*.
 
 

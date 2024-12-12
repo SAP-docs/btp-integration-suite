@@ -91,5 +91,5 @@ When you deprecate or decommission an API proxy, you must provide a deprecation 
 The API state is to be used only for demarcation, and doesn’t play a role in the governance or lifecycle of the API.
 
 > ### Note:  
-> An application developer can view the states of the deprecated and decommissioned API proxies \(if published in the Integration Suite\) in the API details screen of the API business hub enterprise.
+> An application developer can view the states of the deprecated and decommissioned API proxies \(if published in the Integration Suite\) in the API details screen of the Developer Hub.
 

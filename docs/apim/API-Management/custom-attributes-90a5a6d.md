@@ -43,7 +43,7 @@ AuthGroup.API.Admin
 </td>
 <td valign="top">
 
-API Business Hub Enterprise
+Developer Hub
 
 </td>
 <td valign="top">
@@ -159,14 +159,7 @@ Sample payload to create a custom attribute
 -   Url: https://<consumer API-Portal host\>:<port\>/apiportal/api/1.0/Management.svc/APIProducts HTTP/1.1
 -   Method: POST
 -   Content type: application/JSON
--   If you are in the Neo environment, fetch the x-csrf -token:
-
-    -   Service url: https://<consumer API-Portal host\>:<port\>/apiportal/api/1.0/Management.svc/APIProducts HTTP/1.1
-    -   Method: HEAD
-    -   Request Header: x-csrf-token: fetch
-    -   Response: x-csrf-token value.
-
-    If you are in the Cloud Foundry environment, fetch the bearer token:
+-   If you are in the Cloud Foundry environment, fetch the bearer token:
 
     -   Service url: https://<consumer API-Portal host\>/apiportal/api/1.0/Management.svc/APIProducts HTTP/1.1
     -   Method: HEAD
@@ -299,9 +292,7 @@ Sample payload to delete a custom attribute \(batch call\)
 -   Url: https://<consumer API-Portal host\>:<port\>/apiportal/api/1.0/Management.svc/$batch HTTP/1.1
 -   Method: POST
 -   Content type: application/JSON
--   Request Header: x-csrf-token: fetch \(for Neo environment\)
-
-    Request Header: Authorization:Bearer <Token for API access\> \(for Cloud Foundry environment\)
+-   Request Header: Authorization:Bearer <Token for API access\> \(for Cloud Foundry environment\)
 
     To know how to retrieve this token, see [Accessing API Management APIs Programmatically](APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md).
 
@@ -349,21 +340,14 @@ Sample payload to create a custom attribute \(application\)
 -   Url: https://<consumer Dev-Portal host\>:<port\>/odata/1.0/data.svc/APIMgmt.Applications HTTP/1.1
 -   Method: POST
 -   Content type: application/JSON
--   If you are in the Neo environment, fetch the x-csrf -token:
-    -   Service url: https://<consumer Dev-Portal host\>:<port\>/odata/1.0/data.svc/APIMgmt.Applications HTTP/1.1
+-   If you are in the Cloud Foundry environment, fetch the bearer token:
+
+    -   Service url: https://<consumer Dev-Portal host\>/odata/1.0/data.svc/APIMgmt.Applications HTTP/1.1
     -   Method: HEAD
-    -   Request Header: x-csrf-token: fetch
-    -   Response: x-csrf-token value
+    -   Request Header: Authorization:Bearer <Token for API access\>
+    -   Response: bearer-token value
 
-        If you are in the Cloud Foundry environment, fetch the bearer token:
-
-        -   Service url: https://<consumer Dev-Portal host\>/odata/1.0/data.svc/APIMgmt.Applications HTTP/1.1
-        -   Method: HEAD
-        -   Request Header: Authorization:Bearer <Token for API access\>
-        -   Response: bearer-token value
-
-        To know how to retrieve this token, see [Accessing API business hub enterprise APIs Programmatically](APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md).
-
+    To know how to retrieve this token, see [Accessing Developer Hub APIs Programmatically](APIM-Initial-Setup/accessing-developer-hub-apis-programmatically-dabee6e.md).
 
 
 > ### Sample Code:  
@@ -415,21 +399,14 @@ Sample payload to create a custom attribute via navigation \(application\)
 -   Url: https://<consumer Dev-Portal host\>:<port\>/odata/1.0/data.svc/APIMgmt.Applications\(<application\_id\>\)/ToAttributes
 -   Method: POST
 -   Content type: application/JSON
--   If you are in the Neo environment, fetch the x-csrf -token:
-
-    -   Service url: https://<consumer Dev-Portal host\>:<port\>/odata/1.0/data.svc/APIMgmt.Applications\(<application\_id\>\)/ToAttributes
-    -   Method: HEAD
-    -   Request Header: x-csrf-token: fetch
-    -   Response: x-csrf-token value
-
-    If you are in the Cloud Foundry environment, fetch the bearer token:
+-   If you are in the Cloud Foundry environment, fetch the bearer token:
 
     -   Service url: https://<consumer Dev-Portal host\>/odata/1.0/data.svc/APIMgmt.Applications\(<application\_id\>\)/ToAttributes
     -   Method: HEAD
     -   Request Header: Authorization:Bearer <Token for API access\>
     -   Response: bearer-token value
 
-    To know how to retrieve this token, see [Accessing API business hub enterprise APIs Programmatically](APIM-Initial-Setup/accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md).
+    To know how to retrieve this token, see [Accessing Developer Hub APIs Programmatically](APIM-Initial-Setup/accessing-developer-hub-apis-programmatically-dabee6e.md).
 
 
 > ### Sample Code:  

@@ -4,7 +4,12 @@
 
 # Exporting Runtime Artifacts
 
-Once you have created the Message Implementation Guidelines \(MIG\) and Mapping Guidelines \(MAG\), the next step is to use these artifacts in the integration solution to enable integrations with your business partner/s. Currently, SAP Integration Suite supports exporting runtime artifacts for and SAP Process Orchestration.
+Exporting Runtime Artifacts for Integration Solutions.
+
+> ### Note:  
+> Currently, SAP Integration Suite supports exporting runtime artifacts for and SAP Process Orchestration.
+> 
+> To know more about these runtime artifacts, refer to the blog [The Mapping Artifacts and their Purpose](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-the-mapping-runtime-artifacts-and-their-purpose/ba-p/13426356).
 
 By exporting the runtime artifacts, the application automatically generates a number of schemes, scripts, and examples from a mapping guideline, including:
 

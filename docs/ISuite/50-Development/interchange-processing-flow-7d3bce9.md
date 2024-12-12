@@ -6,9 +6,9 @@
 
 This integration flow transforms the message sent by the sending partner to the structure expected by the receiving partner.
 
-Follow the procedure below to configure the integration flow
+Follow the procedure below to configure the integration flow:
 
-1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 2 - Interchange Processing Flow* and select *Configure*
+1.  In the *Artifacts* tab, choose *Action* <span class="SAP-icons-V5"></span> of the integration flow *Step 2 - Interchange Processing Flow* and select *Configure*.
 
 2.  Under the *Sender* tab, maintain the following parameter.
 
@@ -57,7 +57,7 @@ Follow the procedure below to configure the integration flow
     </tr>
     </table>
     
-3.  Choose the *Receiver* tab and maintain the following parameter
+3.  Choose the *Receiver* tab and maintain the following parameter.
 
     **Receiver Parameter**
 
@@ -124,5 +124,5 @@ After conversion, the process flow assembles the payload as an evelope and and s
 
 [Receiver Communication Flow](receiver-communication-flow-cd233d1.md "This integration flow gets the final message from the queue and sends it to the receiver.")
 
-[Monitoring B2B Messages](monitoring-b2b-messages-b5e1fc9.md "The Business to Business (B2B) Monitoring view allows you to check the processing status of your B2B interchanges.")
+[Update Agreements](update-agreements-b5e1fc9.md "Update Agreement properties and MIG/MAG information.")
 

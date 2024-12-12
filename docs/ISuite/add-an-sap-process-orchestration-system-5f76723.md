@@ -17,7 +17,7 @@ Establish a connection between your SAP Process Orchestration system and Migrati
     > ### Note:  
     > Do you prefer hands-on instructions? Check out the tutorial [Enable Migration Assessment Application](https://developers.sap.com/tutorials/migration-assessment-enablement.html).
 
--   You've set up the relevant access rights for yourself and your users as described in [Configuring User Access](configuring-user-access-2c6214a.md).
+-   You've set up the relevant access rights for yourself and your users as described in [Configuring User Access to SAP Integration Suite](configuring-user-access-to-sap-integration-suite-2c6214a.md).
 
 -   As API endpoints and subpaths are used to extract data from your SAP Process Orchestration system, make sure that the SAP Destination service can access the endpoints listed in the following. See [Destination Service](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/eeb0ec2318fb4dda87830a09ac7a02fa.html).
 
@@ -32,25 +32,33 @@ Establish a connection between your SAP Process Orchestration system and Migrati
         -   `/ConfigurationScenarioInService`
         -   `/BPMFacadeBeanImplService`
         -   `/ReceiverAgreementInService`
+        -   `/ReceiverRuleInService`
+        -   `/ReceiverDeterminationInService`
+        -   `/InterfaceDeterminationInService`
 
     -   ESR Content
 
-        -   `/rep/read/ext`
         -   `/dir/read/ext`
+        -   `/dir/query/ext`
         -   `/rep/support/SimpleQuery`
+        -   `/rep/read/ext`
+        -   `/rep/query/ext`
+        -   `/rep/query/int`
 
     -   Message Monitoring
-
         -   `/mdt`
 
 
-
-    The endpoints are constructed according to the pattern `<protocol>://<hostname>:<port><endpoint>`, for example, `https://po75-systema.sap:443/AlertRuleInService`.
+    The endpoints are constructed according to the pattern `<protocol>://<hostname>:<port><endpoint>`, for example, `https://po75-systema.sap:443/CommunicationChannelInService`.
 
     You can use Cloud Connector to securely expose these endpoints:
 
     -   Ensure that your Cloud Connector is connected to your subaccount. See [Establish Connections to SAP BTP](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/db9170a7d97610148537d5a84bf79ba2.html?locale=en-US&version=Cloud#establish-connections-to-sap-btp).
     -   Create a new HTTP destination \(cloud to on-premise\) with back-end type *SAP Process Integration*. See [Configure Access Control \(HTTP\)](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/e7d4927dbb571014af7ef6ebd6cc3511.html?locale=en-US&version=Cloud).
+
+        > ### Note:  
+        > To avoid potential issues during the connection process, don't use the character `_` \(underscore\) in the address name.
+
     -   Limit access to the previously mentioned endpoints and subpaths by changing *Access Policy* to *Path And All Sub-Paths*.
 
 
@@ -58,7 +66,7 @@ Establish a connection between your SAP Process Orchestration system and Migrati
 
 ## Context
 
-To connect your SAP Process Orchestration system with the Migration Assessment application, execute the following steps.
+To connect your SAP Process Orchestration system with the Migration Assessment application, perform the following steps.
 
 
 
@@ -68,7 +76,7 @@ To connect your SAP Process Orchestration system with the Migration Assessment a
 
 2.  In the table labeled *SAP Process Orchestration Systems*, choose *Add*.
 
-    ![](images/IntegrationSuite_PIMAS_AddPOSystem_4420a65.png)
+    ![](images/IntegrationSuite_PIMAS_AddPOSystem_ac47311.png)
 
 3.  Enter a *System Name*.
 
@@ -113,7 +121,11 @@ To connect your SAP Process Orchestration system with the Migration Assessment a
 
 7.  Choose *Create*. The new system is now listed under *SAP Process Orchestration Systems*.
 
-    If you want to check that the connection is working correctly, select your system and choose *Test Connection*.
+8.  To check if the connection is working properly, select your system and choose *Test Connection*.
+
+    This test verifies that the main resources needed for the SAP Process Orchestration extraction are reachable. Perform this test even if previous Cloud Connector and destination connection tests were successful, as those don't check for resource accessibility.
+
+    If you get an error during this step, please check the [Troubleshooting for Migration Assessment](troubleshooting-for-migration-assessment-63430e2.md).
 
 
 

@@ -17,6 +17,9 @@ Runtime and monitoring data are stored in PostgreSQL database and Redis data sto
 > ### Caution:  
 > Restoring PostgreSQL database or Redis data store leads to service interruption for Edge Integration Cell.
 
+> ### Note:  
+> In some environments, such as Azure or AWS, when you use platform provided services, a restore may result in a new PostgreSQL DB or Redis instance. In these cases, you can change the connection properties using Edge Lifecycle Management and there's no need to follow the manual procedures described below. For more information, see [Modify Edge Integration Cell Solution Deployment Properties](modify-edge-integration-cell-solution-deployment-properties-6a060ff.md).
+
 
 
 ### Restore PostgreSQL Procedure

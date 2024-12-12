@@ -41,7 +41,7 @@ You can use the *Poll Enrich* to read \(poll\) messages from an external compone
     > 
     > See: [Configure the SFTP Sender Adapter Used with the Poll Enrich Step](configure-the-sftp-sender-adapter-used-with-the-poll-enrich-step-1f15fe2.md).
 
-5.  Click on the connection line between the *Sender* shape and the *Poll Enrich* step and specify the settings of the SFTP sender adapter.
+5.  Select the connection line between the *Sender* shape and the *Poll Enrich* step and specify the settings of the SFTP sender adapter.
 
     See: [Configure the SFTP Sender Adapter](configure-the-sftp-sender-adapter-2de9ee5.md).
 

@@ -30,6 +30,13 @@ The options also differ according to the phase in which components can consume t
 > 
 > -   Custom header properties for the message processing log \(see [Use Custom Header Properties to Search for Message Processing Logs](use-custom-header-properties-to-search-for-message-processing-logs-d4b5839.md)\)
 
+> ### Note:  
+> To be more precise from a technical perspective, the following assets are stored in the SAP BTP object store:
+> 
+> -   Message processing log attachments
+> 
+> -   Message store content
+
 
 
 <a name="loioa836b4e38d1a45f6be7071b9b697c2a3__section_yn4_wtl_hrb"/>

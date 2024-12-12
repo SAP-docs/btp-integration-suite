@@ -8,7 +8,7 @@ Only those integration flows that are identified as top consumers of database co
 
 The color shade of a cell reflects the level of database connection usage. The darkest shade reflects the highest usage observed during the selected time period.
 
-Click a cell to display the percent value of connection usage and to access one of the following functions for the selected integration flow \(results are filtered according to the setting of the *Time* parameter\):
+Choose a cell to display the percent value of connection usage and to access one of the following functions for the selected integration flow \(results are filtered according to the setting of the *Time* parameter\):
 
 -   *Show Messages*
 
@@ -18,6 +18,12 @@ Click a cell to display the percent value of connection usage and to access one 
 
     Navigate to the *Manage Integration Content* screen for the related integration flow \(see [Manage Integration Content](manage-integration-content-09a7223.md)\).
 
+-   *Inspect Integration Flow*
 
-*Zoom Out* and *Zoom In* to extend/reduce the selected time period.
+    Inspect the database connection usage of the selected integration flow \(see: [Inspect Resource Consumption for Individual Integration Flow](inspect-resource-consumption-for-individual-integration-flow-3380bd6.md)\).
+
+-   *Zoom Out* and *Zoom In* to extend/reduce the selected time period.
+
+-   *Copy Name to Clipboard*
+
 

@@ -4,7 +4,7 @@
 
 Clone the API Management content using the Tenant Cloning tool.
 
-Once you have your source and target system ready, you can clone your API Management content to the target system by running the Tenant Cloning Tool that you downloaded from [here](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Frepo1.maven.org%2Fmaven2%2Fcom%2Fsap%2Fapimgmt%2Fapim-tct-sdk%2F1.8.2%2Fapim-tct-sdk-1.8.2.zip).
+Once you have your source and target system ready, you can clone your API Management content to the target system by running the Tenant Cloning Tool that you downloaded from [here](https://repo1.maven.org/maven2/com/sap/apimgmt/apim-tct-sdk/1.9.2/apim-tct-sdk-1.9.2.zip).
 
 
 
@@ -63,7 +63,43 @@ Once you have your source and target system ready, you can clone your API Manage
 
 
 
-<a name="loio7abd887d54604e699543ef57c618c8d7__section_dnh_4sd_4mb"/>
+<a name="loio7abd887d54604e699543ef57c618c8d7__section_ibv_hf2_2bc"/>
+
+## Context
+
+To migrate all API Management entities, you need to complete the apim-tct-input.json file in the tenant cloning tool by providing all the necessary details.
+
+In case you want to migrate selected API proxies from the source API Management tenant to the target API Management tenant, make the following configurations in the `apim-tct-input.json` file:
+
+-   Set `selectiveEntityMigration` to `true`
+
+-   Provide the names of the API proxies in `selectiveEntities`, separated by commas.
+
+
+For more information, see [selectiveEntityMigration](clone-api-management-content-7abd887.md#loio7abd887d54604e699543ef57c618c8d7__selective_entity_migration) and [selectiveEntities](clone-api-management-content-7abd887.md#loio7abd887d54604e699543ef57c618c8d7__selective_entities).
+
+By enabling this feature, you can explicitly clone the API proxies mentioned in the configuration file from the source to the target tenant. The cloning process will occur in the following sequence:
+
+-   Certificate stores
+
+-   Key value maps entries
+
+-   API providers
+
+-   API proxies
+
+
+> ### Note:  
+> If `selectiveEntityMigration` is set to `true`, only the certificate stores, key-value maps, API providers, and API proxies will be migrated. Other entities such as products and applications will not be migrated. If it is set to `false` or not available in the `apim-tct-input.json` file, all entities will be considered for migration.
+> 
+> The `selectiveEntityMigration` parameter is optional.
+
+> ### Note:  
+> We recommend migrating all API artifacts during the migration activity. While it is possible to selectively migrate API proxies, this should not be the preferred method for migrating API artifacts. It should only be used with careful consideration of dependencies.
+> 
+> If you need to regularly move or migrate API Management artifacts between Integration Suite tenants, it is recommended to use the transport capability instead. For more information, see [Transport APIs and Its Related Artifacts](../50-Development/transport-apis-and-its-related-artifacts-eb83118.md).
+
+
 
 ## Procedure
 
@@ -71,7 +107,7 @@ Once you have your source and target system ready, you can clone your API Manage
 
     Ensure that you don’t modify the name of the `apim-tct-input.json` file.
 
-    For more information on how to create the service key, refer the [Accessing API Management APIs Programmatically](../accessing-api-management-apis-programmatically-24a2c37.md) and [Accessing API business hub enterprise APIs Programmatically](../accessing-api-business-hub-enterprise-apis-programmatically-dabee6e.md).
+    For more information on how to create the service key, refer the [Accessing API Management APIs Programmatically](../accessing-api-management-apis-programmatically-24a2c37.md) and [Accessing Developer Hub APIs Programmatically](../accessing-developer-hub-apis-programmatically-dabee6e.md).
 
     **Structure of the apim-tct-input.json file:**
 
@@ -91,6 +127,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <th valign="top">
 
     Data Type
+    
+    </th>
+    <th valign="top">
+
+    Supported Values
     
     </th>
     <th valign="top">
@@ -132,6 +173,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Required
     
     </td>
@@ -139,7 +185,7 @@ Once you have your source and target system ready, you can clone your API Manage
     
     URL of the source API management, API portal in the Neo environment
 
-    Example: `https://<application_name><provider_subaccount>-<consumer_subaccount>.<domain>`
+    `https://<application_name><provider_subaccount>-<consumer_subaccount>.<domain>`
     
     </td>
     </tr>
@@ -157,6 +203,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -181,6 +232,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -219,6 +275,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Required
     
     </td>
@@ -248,6 +309,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -272,6 +338,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -291,7 +362,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
-    Supported values: "guid"
+     
     
     </td>
     <td valign="top">
@@ -306,20 +377,25 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+    Supported values: "guid"
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
     <td valign="top">
     
-    This is the Tenant ID for your Cloud Foundry sub account where starter plan serivce instance is enabled.
+    This is the Tenant ID for your multi-cloud foundation sub account where starter plan serivce instance is enabled.
 
     > ### Note:  
     > If you are migrating within the same subaccount, you are not required to add this parameter.
     > 
-    > This parameter is mandatory if you are migrating to a Cloud Foundry subaccount, which is different from your existing starter plan subaccount.
+    > This parameter is mandatory if you are migrating to a multi-cloud foundation subaccount, which is different from your existing starter plan subaccount.
 
     > ### Note:  
-    > Navigate to the cockpit to fetch the Cloud Foundry Tenant ID for the subaccount where the starter plan service instance exists.![](images/Tenant_ID_293b582.png)
+    > Navigate to the cockpit to fetch the multi-cloud foundation Tenant ID for the subaccount where the starter plan service instance exists.![](images/Tenant_ID_293b582.png)
 
 
     
@@ -358,6 +434,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Required
     
     </td>
@@ -385,6 +466,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Required
     
     </td>
@@ -403,6 +489,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -427,6 +518,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -460,6 +556,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -478,6 +579,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -504,6 +610,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -522,6 +633,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -563,6 +679,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Required
     
     </td>
@@ -581,6 +702,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -607,6 +733,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -627,6 +758,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -660,6 +796,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -678,6 +819,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -704,6 +850,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -722,6 +873,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -763,12 +919,17 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Required
     
     </td>
     <td valign="top">
     
-    URL received during creation of the service key for Developer Portal API access for the `AuthGroup.API.Admin` role.
+    URL received during creation of the service key for developer portal API access for the `AuthGroup.API.Admin` role.
     
     </td>
     </tr>
@@ -785,12 +946,17 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Required
     
     </td>
     <td valign="top">
     
-    Token url received during creation of the service key for API business hub enterprise API access for the `AuthGroup.API.Admin` role.
+    Token url received during creation of the service key for Developer Hub API access for the `AuthGroup.API.Admin` role.
     
     </td>
     </tr>
@@ -807,12 +973,17 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
     <td valign="top">
     
-    The client ID received during creation of the service key for Developer Portal API access for the `AuthGroup.API.Admin` role.
+    The client ID received during creation of the service key for developer portal API access for the `AuthGroup.API.Admin` role.
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
     
@@ -831,12 +1002,17 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
     <td valign="top">
     
-    The client secret received during creation of the service key for Developer Portal API access for the `AuthGroup.API.Admin` role.
+    The client secret received during creation of the service key for developer portal API access for the `AuthGroup.API.Admin` role.
 
     You’re prompted to enter these values while running the command in Step 3 if you haven’t already provided these details in the `apim-tct-input.json` file.
     
@@ -856,6 +1032,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -882,6 +1063,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -900,6 +1086,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     String
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     <td valign="top">
@@ -926,6 +1117,11 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
@@ -948,7 +1144,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
-    Supported values: `true/false`
+     
     
     </td>
     <td valign="top">
@@ -959,6 +1155,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Boolean
+    
+    </td>
+    <td valign="top">
+    
+    Supported values: `true/false`
     
     </td>
     <td valign="top">
@@ -991,7 +1192,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
-    Supported values: `true/false`
+     
     
     </td>
     <td valign="top">
@@ -1002,6 +1203,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Boolean
+    
+    </td>
+    <td valign="top">
+    
+    Supported values: `true/false`
     
     </td>
     <td valign="top">
@@ -1033,7 +1239,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
-    Supported values: `true/false`
+     
     
     </td>
     <td valign="top">
@@ -1044,6 +1250,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Boolean
+    
+    </td>
+    <td valign="top">
+    
+    Supported values: `true/false`
     
     </td>
     <td valign="top">
@@ -1068,7 +1279,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
-    Supported values: `true/false`
+     
     
     </td>
     <td valign="top">
@@ -1079,6 +1290,11 @@ Once you have your source and target system ready, you can clone your API Manage
     <td valign="top">
     
     Boolean
+    
+    </td>
+    <td valign="top">
+    
+    Supported values: `true/false`
     
     </td>
     <td valign="top">
@@ -1108,7 +1324,7 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
-    Supported values: `"DEFAULT" | "SWITCHOVER`
+     
     
     </td>
     <td valign="top">
@@ -1123,12 +1339,118 @@ Once you have your source and target system ready, you can clone your API Manage
     </td>
     <td valign="top">
     
+    Supported values: `"DEFAULT" | "SWITCHOVER`
+    
+    </td>
+    <td valign="top">
+    
     Optional
     
     </td>
     <td valign="top">
     
     The supported values for this parameter is either default or switchover.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    selectiveEntityMigration
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+    Boolean
+    
+    </td>
+    <td valign="top">
+    
+    Supported values: true/false
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+    
+    </td>
+    <td valign="top">
+    
+    If you want to migrate API proxies selectively, please set this flag to 'true'.
+
+    > ### Note:  
+    > Once this flag is set to 'true', please ensure that the *selectiveEntities* parameter is not left empty.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    selectiveEntities
+    
+    </td>
+    <td valign="top">
+    
+    API proxies
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+    Enter the list of API proxy names in a comma-separated manner as shown below.
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+    Optional
+    
+    </td>
+    <td valign="top">
+    
+    Enter the API proxies that you want to migrate.
+
+    > ### Sample Code:  
+    > ```
+    > "selectiveEntityMigration": true, 
+    >     "selectiveEntities": { 
+    >         "APIProxies": [ 
+    >             "SCpayload", "SetTLSPropertiesAsPayload", "newproxy" 
+    >         ] 
+    >       }
+    > ```
+
+
     
     </td>
     </tr>
@@ -1160,8 +1482,8 @@ Once you have your source and target system ready, you can clone your API Manage
                 "url": "<URL of Source (Neo based) Developer Portal>",
                 "username": "<user id having AuthGroup.API.Admin role in above subscription>",
                 "password": "<password of the above user>"
-            },
-            "cfSubaccountTenantID": "1d1b3316-cf22-44b5-973f-d2d8a132444a"
+            }
+            
         },
        
         "target": {
@@ -1186,13 +1508,17 @@ Once you have your source and target system ready, you can clone your API Manage
             }
         },
     
-       “skipApplicationKeySecretCloning” : <false|true>,
+       "skipApplicationKeySecretCloning" : <false|true>,
                
        "clone": {
                 "skip-apiportal": <false|true> ,
                 "skip-devportal": <false|true> 
             },
        "stage": <"DEFAULT" | "SWITCHOVER">
+       "selectiveEntityMigration": <false|true>, //If you are setting the 'selectiveEntityMigration' parameter to true, please make sure to enter the names of the API proxies in the 'selectiveEntities' field using a comma-separated format.
+       "selectiveEntities": { 
+            "APIProxies": ["Proxy1", "Proxy2", "Proxy3"] 
+          }
     
     }
     ```
@@ -1200,7 +1526,7 @@ Once you have your source and target system ready, you can clone your API Manage
 2.  Run the following commands from your Java command-line interface to verify the setup and check the version of the tool. This is an optional step.
     -   To verify the setup:
 
-        `java -jar apim-tct-client-<version>.jar verify`
+        `java -jar apim-tct-client-<version>.jar verifyExample:`
 
     -   To check the version of the tenant cloning tool you’re using:
 
@@ -1215,7 +1541,7 @@ Once you have your source and target system ready, you can clone your API Manage
 
     Your API Management entities are now cloned to your target system.
 
-    An excel file named `apimtct-output.xlsx` and a log file named `apimtct-logs.log` are generated in the same folder where the .jar file is present.
+    Example:An excel file named `apimtct-output.xlsx` and a log file named `apimtct-logs.log` are generated in the same folder where the .jar file is present.
 
     The status of each cloned entity is stored in a separate worksheet within the output excel file.
 

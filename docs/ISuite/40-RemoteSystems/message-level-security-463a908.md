@@ -48,7 +48,7 @@ Encryption/decryption of message content
 </td>
 <td valign="top">
 
-Supported algorithms \(by the symmetric key\) for content encryption \(format Cipher/Operation Mode/Padding Scheme\): AES/CBC/PKCS5Padding, ARCFOUR/ECB/NoPadding, Camellia/CBC/PKCS5Padding, CAST5/CBC/PKCS5Padding, DES/CBC/PKCS5Padding, DESede/CBC/PKCS5Padding, RC2/CBC/PKCS5Padding.
+Supported algorithms \(by the symmetric key\) for content encryption \(format Cipher/Operation Mode/Padding Scheme\): AES/GCM/NoPadding, AES/CCM/NoPadding, AES/CBC/PKCS5Padding, ARCFOUR/ECB/NoPadding, Camellia/CBC/PKCS5Padding, CAST5/CBC/PKCS5Padding, DES/CBC/PKCS5Padding, DESede/CBC/PKCS5Padding, RC2/CBC/PKCS5Padding.
 
 </td>
 </tr>
@@ -79,9 +79,7 @@ Encryption/decryption and signing/verification of payload
 </td>
 <td valign="top">
 
-Supported algorithms \(by the symmetric key\) for content encryption \(format Cipher/Operation Mode/Padding Scheme\): AES/CBC/PKCS5Padding, ARCFOUR/ECB/NoPadding, Camellia/CBC/PKCS5Padding, CAST5/CBC/PKCS5Padding, DES/CBC/PKCS5Padding, DESede/CBC/PKCS5Padding, RC2/CBC/PKCS5Padding.
-
-Signature algorithms: MD5/RSA, RIPEMD128/RSA, RIPEMD160/RSA, RIPEMD256/RSA, SHA/RSA, SHA224/RSA, SHA256/RSA, SHA384/RSA, SHA512/RSA.
+Signature algorithms: AES/GCM/NoPadding, AES/CCM/NoPadding, MD5/RSA, RIPEMD128/RSA, RIPEMD160/RSA, RIPEMD256/RSA, SHA/RSA, SHA224/RSA, SHA256/RSA, SHA384/RSA, SHA512/RSA.
 
 This is a subset of the algorithms that are supported for PKCS\#7/CMS Enveloped Data and Signed Data.
 
@@ -131,7 +129,7 @@ Encryption/decryption and signing/verification of the message
 </td>
 <td valign="top">
 
-Supported signature algorithms for PGP signing: MD5, RIPE-MD/160, SHA-1, SHA224, SHA256, SHA384, SHA512.
+Supported signature algorithms for PGP signing: MD5, RIPE-MD/160, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512.
 
 </td>
 </tr>
@@ -200,6 +198,9 @@ Strong encryption is supported for the following algorithms:
 -   Camellia/CBC/PKCS5Padding
 
 For these algorithms, the key lengths 192 and 256 are possible.
+
+> ### Caution:  
+> Algorithms starting with SHA1, MD2, or MD5 are still supported for compatibility reasons, but they no longer meet today's security requirements. Therefore, we recommend using stronger algorithms where possible. Check with your security experts or authorities like NIST for more detailed security recommendations.
 
 
 

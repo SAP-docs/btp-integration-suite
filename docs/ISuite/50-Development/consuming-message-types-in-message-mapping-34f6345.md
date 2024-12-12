@@ -26,7 +26,7 @@ Understand how to consume a message type artifact in a message mapping flow step
 
 1.  Open the integration flow that contains the message mapping flow step in edit mode.
 
-2.  In the property sheet of the integration flow, under the *References* tab, create a reference to a Message Type artifact. See: [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md).
+2.  In the property sheet of the integration flow, under the *References* tab, create a reference to a Message Type artifact. See: [Manage Resources](manage-resources-b5968b2.md).
 
 3.  In the property sheet of the message mapping step, choose the *Processing* tab.
 

@@ -18,7 +18,10 @@ Learn how to connect an SAP Process Orchestration system.
 
 ## Prerequisites
 
-You must have tenant administrator role to configure connectivity to an SAP Process Orchestration system.
+-   You must have tenant administrator role to configure connectivity to an SAP Process Orchestration system.
+
+-   You have completed the tasks mentioned in [Importing Content from SAP Process Orchestration System](importing-content-from-sap-process-orchestration-system-53db5fb.md).
+
 
 
 
@@ -71,7 +74,7 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     Provide the URL from Cloud Connector that connects to your PO system.
 
     > ### Note:  
-    > If the test connection fails, try removing the charcter "`_`" \(underscore\) in the address field, if used. An underscore is a likely candidate for such connection failures.
+    > If the test connection fails, try removing the charcter "`_`" \(underscore\) in the address field in your Cloud Connector. Then, provide the updated URL. An underscore is a likely candidate for such connection failures.
 
 
     
@@ -165,7 +168,7 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     Provide the URL from Cloud Connector that connects to your PO system.
 
     > ### Note:  
-    > If the test connection fails, try removing the charcter "`_`" \(underscore\) in the address field, if used. An underscore is a likely candidate for such connection failures.
+    > If the test connection fails, try removing the charcter "`_`" \(underscore\) in the address field in your Cloud Connector. Then, provide the updated URL. An underscore is a likely candidate for such connection failures.
 
 
     
@@ -238,6 +241,17 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
 <!-- task\_jzq\_y3z\_wxb -->
 
 ## Alternative Approach: Creating Destinations in SAP BTP Subaccount
+
+
+
+<a name="task_jzq_y3z_wxb__prereq_chm_cjx_3dc"/>
+
+## Prerequisites
+
+-   You must have tenant administrator role to configure connectivity to an SAP Process Orchestration system.
+
+-   You have completed the tasks mentioned in [Importing Content from SAP Process Orchestration System](importing-content-from-sap-process-orchestration-system-53db5fb.md).
+
 
 
 

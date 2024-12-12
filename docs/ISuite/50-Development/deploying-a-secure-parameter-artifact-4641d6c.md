@@ -84,8 +84,6 @@ You can store secure data like passwords in a secure store and use an alias name
     > The possible length of the secure parameter varies:
     > 
     > -   for **Cloud Foundry: 4096 characters max. \(including spaces\)
-    > 
-    > -   for **Neo: 255 characters max. \(including spaces\)
 
 
     

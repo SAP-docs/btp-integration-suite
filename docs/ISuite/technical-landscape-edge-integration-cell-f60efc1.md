@@ -39,7 +39,7 @@ Edge Lifecycle Management \(Edge LM\) is used as the foundation for software lif
 Software shipment is based on the SAP Repository-Based Shipment Channel \(RBSC\). Edge LM also supports container image replication to a local container registry for offline consumption. Edge Integration Cell will be defined as an Edge LM solution with the different components based on Helm charts.
 
 > ### Note:  
-> Edge Integration Cell delivery consists of images retrieved from SAP Repository-Based Shipment Channel \(RBSC\), deployed using Edge LM. The images for Edge LM are also contained in the same repository.
+> Edge Integration Celll delivery consists of images retrieved from SAP Repository-Based Shipment Channel \(RBSC\), deployed using Edge LM. The images for Edge LM are also contained in the same repository.
 
 
 
@@ -142,12 +142,14 @@ Runtime and Operations
 
 In addition to runtime components for executing integration scenarios and API proxies, Edge Integration Cell also includes management components for edge operations.
 
-Components require connectivity to certain SAP Integration Suite and Business Technology Platform \(BTP\) services. Service keys are used to share the connectivity information with Edge Integration Cell \(Beta\) components. For security reason, these service keys also need to be rotated as part of the software upgrade. Depending on the service type, keys have different validity timelines.
+Components require connectivity to certain SAP Integration Suite and SAP Business Technology Platform services. Service keys are used to share the connectivity information withEdge Integration Cell components. For security reason, these service keys also need to be rotated as part of the software upgrade. Depending on the service type, keys have different validity timelines.
 
-Edge Deploy Controller accesses the platform’s object store where credentials have a validity of 86 days. In general, service keys need to be rotated after 120 days. Key rotation is integrated in Edge Integration Cell \(Beta\) lifecycle operations.
+Edge Deploy Controller accesses the platform’s object store where credentials have a validity of 86 days. In general, service keys need to be rotated after 120 days. Key rotation is integrated in Edge Integration Cell lifecycle operations.
 
 > ### Caution:  
 > If service key rotation is not performed then connectivity to the respective Cloud services stops working. This will impact functionality like content synchronization or specific runtime features.
+
+Edge Local Authentication and Authorization provides inbound local authentication and authorization for Integration Flows and API proxies. It removes the real-time dependency on SAP Business Technology Platform for inbound authentication and authorization. Currently only ervice keys of type Certificate/External Certificate are supported for local authentication and authorization. For more information, see [Edge Local Authentication and Authorization](edge-local-authentication-and-authorization-510d447.md).
 
 
 
@@ -203,6 +205,18 @@ Edge Security Artifact Controller
 <td valign="top">
 
 Manages security material on the edge.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Local Authentication and Authorization
+
+</td>
+<td valign="top">
+
+Performs inbound local authentication and authorization for integration flow models and API proxies.
 
 </td>
 </tr>
@@ -326,7 +340,7 @@ Used for asynchronous messaging and system internal event integration.
 </tr>
 </table>
 
-Edge Integration Cell requires external services for managing persistence and policies.
+Edge Integration Cell requires external services for managing persistence and policies.A Load Balancer is required to expose Edge Integration Cell endpoints and load balance traffic across K8s nodes and services.
 
 ****
 
@@ -365,6 +379,18 @@ Redis
 <td valign="top">
 
 An in-memory data store used for caching.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Load Balancer
+
+</td>
+<td valign="top">
+
+External Load Balancer integrated with K8s infrastructure.
 
 </td>
 </tr>

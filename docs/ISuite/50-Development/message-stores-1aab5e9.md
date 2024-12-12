@@ -72,7 +72,7 @@ To authorize an API client to access the OData API:
 
 Perform the steps described in: [Setting Up Inbound HTTP Connections \(for API Clients\)](../40-RemoteSystems/setting-up-inbound-http-connections-for-api-clients-8db3d51.md) 
 
-Depending on the use case, assign the following role templates \(see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md)\):
+Depending on the use case, assign the following role templates \(see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)\):
 
 -   To view message store content: `MonitoringDataRead` 
 

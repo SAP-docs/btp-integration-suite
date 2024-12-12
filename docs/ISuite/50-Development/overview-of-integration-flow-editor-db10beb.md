@@ -34,7 +34,7 @@ The editor comes with a simplified approach and provides you the following benef
 
 -   Availability of simulation tool in the palette helps you to simulate the integration flow during any phase of the development.
 
--   The search field in the palette helps you to search or choose the flow steps. It reduces your development time.
+-   The search field in the palette helps you to search or choose the flow steps and message flows \(adapters\). It reduces your development time.
 
 
 
@@ -373,7 +373,7 @@ Access the help information of a particular Flow step. It gives direct access to
 </td>
 <td valign="top">
 
-Easy way to search a required flow step. You can either search it using the search field or scroll down to select the flow step.
+Easy way to search a required flow step and message flow \(adapter\). You can either search it using the search field or scroll down to select the flow step.
 
 </td>
 </tr>
@@ -427,7 +427,7 @@ The editor also prevents you from adding multiple incoming messages to integrati
 
 ### Search for Steps
 
-In the edit mode, you can find the required flow step during the development of an integration scenario. You can search the step with free text. For example, filter, sender, content modifier etc. When you enter a text as a search, the system looks for it and displays the flow step. You can just select and drop it in the modeling area. For information about finding an already existing flow step, see [Search Existing Flow Steps](overview-of-integration-flow-editor-db10beb.md#loiodb10bebf11fe4dc48bd97d2c4011485c__search).
+In the edit mode, you can find the required flow step and message flow \(adapter\) during the development of an integration scenario. You can search the step and adapter with free text. For example, filter, sender, content modifier, HTTP etc. When you enter a text as a search, the system looks for it and displays the flow step and message flow. You can just select and drop it in the modeling area. For information about finding an already existing flow step, see [Search Existing Flow Steps](overview-of-integration-flow-editor-db10beb.md#loiodb10bebf11fe4dc48bd97d2c4011485c__search).
 
 
 
@@ -609,34 +609,34 @@ Consider a scenario where you need to know more about how to define a script for
 
 <a name="loiodb10bebf11fe4dc48bd97d2c4011485c__search"/>
 
-## Search Existing Flow Steps
+## Search Existing Flow Steps and Message Flows
 
-You can search for an existing flow step in the design time and runtime views of an integration flow.
+You can search for an existing flow step and message flow in the design time and runtime views of an integration flow.
 
 
 
 ### Design Time Search
 
-You can search for a flow step in both edit and read modes of an integration flow using the search field in the palette. In read mode, the search field is labelled *Search Step*.
+You can search for a flow step and message flow \(adapter\) in both edit and read modes of an integration flow using the search field in the palette. In read mode, the search field is labelled *Search Step*.
 
 You can execute a search by:
 
--   Type of the flow step. For example, Groovy Script or Content Modifier
+-   Type of the flow step and message flow. For example, Groovy Script, Content Modifier, or HTTP
 
--   Name of the flow step
+-   Name \(applicable only for flow step\)
 
--   ID of the flow step
+-   ID of the flow step and message flow
 
 
-As soon as you execute a search, matching flow steps are shown below the search field. If there is an <span class="SAP-icons-V5"></span> icon against a flow step, it means that the flow step is used in the integration flow. Choose the icon to identify where the flow steps are used.
+As soon as you execute a search, matching flow steps and message flows are shown below the search field. If there is an <span class="SAP-icons-V5"></span> icon against a flow step, it means that the flow step is used in the integration flow. Choose the icon to identify where the flow steps are used.
 
-You see the search results at the bottom of the editor. If one or more flow steps are available, you can move across the flow steps using the arrows in the search results.
+You see the search results at the bottom of the editor. If one or more flow steps and message flows are available, you can move across the flow steps using the arrows in the search results.
 
-Additionally, in edit mode, the search field is labelled *Search and Add a Step*. In edit mode, when you execute a search, you can also add the flow step to the integration flow.
+Additionally, in edit mode, the search field is labelled *Search and Add a Step*. In edit mode, when you execute a search, you can also add a flow step to the integration flow.
 
 
 
 ### Runtime Search
 
-You can navigate from the *Monitoring* screen and *Inspect* screen to view the deployed artifact and search for flow steps.
+You can navigate from the *Monitoring* screen and *Inspect* screen to view the deployed artifact and search for flow steps and message flow.
 

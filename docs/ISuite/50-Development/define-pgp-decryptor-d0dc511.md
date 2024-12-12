@@ -76,11 +76,11 @@ To make sure that the right private key is used for decryption, the encrypted me
     </td>
     <td valign="top">
     
-    -   *None Expected*: Select if you do not expect a signature in the inbound message.
+    -   *None Expected*: If selected, no inbound messages must contain any signature\(s\) at all.
 
-    -   *Optional*: Select if you are not sure of the inbound message containing a signature. This feature enables the decryptor to decrypt messages that contain signature and do not contain signature.
+    -   *Optional*: A signature is optional. If signature\(s\) is/are available, at least one of them must be verifiable.
 
-    -   *Required*: Select if you're sure of the inbound message containing a signature.
+    -   *Required*: If selected, inbound messages must contain at least one signature. One of the signatures must be verifiable.
 
 
 
@@ -97,7 +97,7 @@ To make sure that the right private key is used for decryption, the encrypted me
     </td>
     <td valign="top">
     
-    Enter the public key user IDs \(or parts of them\) from all expected senders. The system picks all public keys associated with User IDs that contains this value from PGP public keyring and use them for verifying the signatures. \(see [Inbound: Message-Level Security with OpenPGP](../40-RemoteSystems/inbound-message-level-security-with-openpgp-d2acb9f.md)\).
+    Enter the public key user IDs \(or parts of them\) from all expected senders. The system picks up all public keys associated with User IDs containing this value from PGP public keyring and uses them for verifying the signatures \(see [Inbound: Message-Level Security with OpenPGP](../40-RemoteSystems/inbound-message-level-security-with-openpgp-d2acb9f.md)\).
 
     You can enter `${header.headername`\} or `${property.propertyname}` to read the signer user ID dynamically from a header or exchange property.
 

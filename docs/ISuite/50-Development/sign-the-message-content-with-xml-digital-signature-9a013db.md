@@ -93,6 +93,13 @@ You sign a message with an XML digital signature to ensure authenticity and data
     Using the private key, the sender encrypts the digest.
 
     Supported signature algorithms: SHA1/DSA, SHA1/RSA, SHA256/RSA, SHA384/RSA, SHA512/RSA, SHA224/ECDSA, SHA256/ECDSA, SHA384/ECDSA, SHA512/ECDSA.
+
+    Default value: SHA1/DSA.
+
+    > ### Caution:  
+    > Algorithms starting with SHA1, MD2, or MD5 are still supported for compatibility reasons, but they no longer meet today's security requirements. Therefore, we recommend using stronger algorithms where possible. Check with your security experts or authorities like NIST for more detailed security recommendations.
+
+
     
     </td>
     </tr>
@@ -105,6 +112,12 @@ You sign a message with an XML digital signature to ensure authenticity and data
     <td valign="top">
     
     Digest algorithm that is used to calculate a digest from the canonicalized XML document
+
+    Supported digest algorithms:
+
+    From Signature Algorithm \(uses digest algorithm from signature algorithm\), SHA1, SHA256, SHA384, SHA512.
+
+    Default value: SHA1512.
 
     Note that if the digest algorithm is not specified, the digest algorithm of the signature algorithm is used by default.
     

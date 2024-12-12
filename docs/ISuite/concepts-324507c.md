@@ -64,7 +64,7 @@ Extraction status
 </td>
 <td valign="top">
 
-A state that designates if issues occurred during a data extraction that could impact the scenario evaluation. The followings extraction statuses exist:
+A state that designates if issues occurred during a data extraction that could impact the scenario evaluation. The following extraction statuses exist:
 
 -   *Completed*: Your data was extracted without issues and is ready for evaluation.
 
@@ -74,6 +74,20 @@ A state that designates if issues occurred during a data extraction that could i
 
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Modernization recommendation
+
+</td>
+<td valign="top">
+
+A suggestion aimed at improving your integration practices, for example, regarding scalability, maintenance, flexibility, and responsiveness. The modernization recommendations often include transitioning from custom legacy content to predelivered packages or modern integration styles, as well as open and standardized protocols like SOAP, REST, and OData. For a list of all recommendations, see [Modernization Recommendations](https://help.sap.com/docs/help/90c8ad90cb684ee5979856093efe7462/d337a6f0d324405f9ef0c410fd0d3739.html).
+
+Once you've completed a scenario evaluation, you can find the modernization recommendations for your scenarios in the downloadable reports or the dashboard. Be aware that based on your data and the current ruleset of the application, you might not receive any modernization recommendations. See [Create a Scenario Evaluation Request](create-a-scenario-evaluation-request-435ec61.md).
 
 </td>
 </tr>
@@ -99,7 +113,7 @@ Scenario evaluation
 </td>
 <td valign="top">
 
-A process during which the application uses predefined rules to evaluate the data gathered in a previous data extraction regarding the following factors: if the extracted integration scenarios can be migrated, the expected effort of this migration, and what migration templates can be used.
+A process during which the application uses predefined rules to evaluate the data gathered in a previous data extraction. It analyses whether the extracted integration scenarios can be migrated and the migration effort you can expect.
 
 </td>
 </tr>

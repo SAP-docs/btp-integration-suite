@@ -2,7 +2,7 @@
 
 # Define XML to EDI Converter
 
-The XML to EDI converter transforms a XML message in XML format to EDI format.
+The XML to EDI converter transforms a single XML message from XML format to EDI format.
 
 
 
@@ -11,6 +11,9 @@ The XML to EDI converter transforms a XML message in XML format to EDI format.
 Use the converter to convert XML message either to EDIFACT, ODETTE, TRADACOMS, or ASC-X12 format.
 
 XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TRADACOMS* tab; available only for dedicated service plans, see [2903776](https://me.sap.com/notes/2903776)\).
+
+> ### Note:  
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 
 
@@ -32,11 +35,6 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     <tr>
     <th valign="top">
 
-    Tab
-    
-    </th>
-    <th valign="top">
-
     Field
     
     </th>
@@ -47,11 +45,13 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </th>
     </tr>
     <tr>
-    <td valign="top">
+    <td valign="top" colspan="2">
     
-    General
+    **General**
     
     </td>
+    </tr>
+    <tr>
     <td valign="top">
     
     Name
@@ -64,11 +64,13 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="6">
+    <td valign="top" colspan="2">
     
-    EDIFACT
+    **EDIFACT**
     
     </td>
+    </tr>
+    <tr>
     <td valign="top">
     
     Source Encoding
@@ -76,7 +78,12 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     <td valign="top">
     
-    Select encoding format for the incoming payload.
+    Select encoding format for the incoming payload. The following encoding formats are available:
+
+    -   UTF-8
+    -   ISO-8859-1
+
+
     
     </td>
     </tr>
@@ -88,7 +95,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     <td valign="top">
     
-    Select encoding format for the outgoing payload. If you select 'Dynamic', you must define either of the values in SAP\_XMLTOEDI\_EDIFACT\_TARGET\_ENCODING exchange header:
+    Select encoding format for the outgoing payload. If you select 'Dynamic', you must define either of the following values in SAP\_XMLTOEDI\_EDIFACT\_TARGET\_ENCODING exchange header:
 
     -   UTF-8
     -   ISO-8859-1 to ISO-8859-9
@@ -106,7 +113,13 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     <td valign="top">
     
-    Select the source of schema definition.
+    Select the source of schema definition. To specify the schema definition, there are the following options:
+
+    -   Integration Flow
+
+    -   Header
+
+
     
     </td>
     </tr>
@@ -118,7 +131,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     <td valign="top">
     
-    If you select `Integration Flow` as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the conversion will take place.
+    If you select `Integration Flow` as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Choose *Add* \> *Select* to select the valid schemas against which the conversion will take place.
 
     > ### Note:  
     > -   You can add XSD files to the integration flow. For more details, please refer to the topic **Validating Message Payload against XML Schema**, in developer's guide.
@@ -150,7 +163,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     <td valign="top">
     
-    If you select Header as *EDI Schema Definition*, then you can see the field *HeaderName*, in *Properties* view. Enter a valid header name for the field.
+    If you select Header as *EDI Schema Definition*, then you can see the field *HeaderName*. Enter a valid header name for the field.
 
     > ### Note:  
     > This header name is fetched from Camel header. The header is added in script element. This script element is added before the converter element. You can add value for this header in the script element.
@@ -169,7 +182,13 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     <td valign="top">
     
-    Select this option if you want to specify which separators are to be used in the converted message. You can select the characters available in the dropdown list for each separator.
+    Select this option if you want to specify which separators are to be used in the converted message. You can select the characters available in the dropdown list for each separator type:
+
+    -   *Segment Terminator*: This character is used to indicate the end of a segment.
+    -   *Composite Separator*: This is a separator between component data elements within a composite data element.
+    -   *Data Element Separator*: This is a separator between two simple or composite data element.
+    -   *Escape Character*: This is used when one of the separator characters is to be used within a data element or to restore separator and terminator signs to their normal meaning.
+    -   *Decimal Character*: This is used to determine decimal character of outgoing payload. You can choose the value as *Comma \(,\)*, *Dot \(.\)* or *Dynamic* for the converted message. If you select 'Dynamic', you must define the hexadecimal value ‘\#x2e’ for dot or ‘\#x2c’ for comma in `SAP_XMLTOEDI_DECIMAL_CHARACTER` header.
 
     > ### Note:  
     > You can also manually specify the custom separator.
@@ -182,11 +201,13 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="4">
+    <td valign="top" colspan="2">
     
-    X12
+    **X12**
     
     </td>
+    </tr>
+    <tr>
     <td valign="top">
     
     Source Encoding
@@ -194,7 +215,12 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     <td valign="top">
     
-    Select encoding format for the incoming payload.
+    Select encoding format for the incoming payload. The following encoding formats are available:
+
+    -   UTF-8
+    -   ISO-8859-1
+
+
     
     </td>
     </tr>
@@ -206,7 +232,24 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     <td valign="top">
     
-    If you select Integration Flow as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Select the valid schemas against which the conversion will take place.
+    Select the source of schema definition. To specify the schema definition, there are the following options:
+
+    -   Integration Flow
+    -   Header
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Schemas
+    
+    </td>
+    <td valign="top">
+    
+    If you select Integration Flow as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Choose *Add* \> *Select* to select the valid schemas against which the conversion will take place.
 
     > ### Note:  
     > -   You can add XSD files to the integration flow. For more details, please refer to the topic *Validating Message Payload against XML Schema*, in developer's guide.
@@ -230,7 +273,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </td>
     <td valign="top">
     
-    If you select Header as *EDI Schema Definition*, then you can see the field *HeaderName*, in *Properties* view. Enter a valid header name for the field.
+    If you select Header as *EDI Schema Definition*, then you can see the field *HeaderName*. Enter a valid header name for the field.
 
     > ### Note:  
     > This header name is fetched from camel header. The header is added in script element. This script element is added before converter element. You can add value for this header in the script element.
@@ -266,7 +309,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     **TRADACOMS**
 
     > ### Note:  
-    > This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+    > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 
     <table>

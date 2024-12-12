@@ -8,13 +8,22 @@ Learn how to set log levels for Java-based solution components.
 
 ## Context
 
-To set the log levels for Java-based solution components, follow the steps described in [Changing Logging Severity Levels](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/1ce54d8bd96340c9b018ac80494a06af.html?q=Changing%20Logging%20Severity%20Levels) of the Edge Lifecyle Management guide. As a preparation, you've to retrieve the initial logging configuration.
+There are different methods to set log levels depending on your requirements:
+
+-   If you need to change log levels only temporarily, you can create a diagnostic task. Open *Diagnostics* through the *Quick Links* card in the Operations Cockpit and create a *Custom Logging* task. You can edit the log levels of existing custom loggers or create new ones.
+
+    > ### Remember:  
+    > Make sure that *Diagnostics* fulfills your requirements.
+
+    For more information, see [Diagnostics](diagnostics-80f3050.md).
+
+-   If you want to change log levels permanently of for a longer time period, you can use the *Edge Nodes* tab in Edge Lifecycle Management. Perform the following procedure to set log levels in Edge Lifecycle Management:
 
 
 
 ## Procedure
 
-1.  To retrieve the logging configuration, use the command: `kubectl get cm -n egde-icell edge-icell-loggers -o yaml >edge-icell-loggers.yaml`, to create a file: `edge-icell-loggers.yaml`.
+1.  First you need to retrieve the initial logging configuration. To do so, use the command: `kubectl get cm -n edge-icell edge-icell-loggers -o yaml >edge-icell-loggers.yaml`, to create a file: `edge-icell-loggers.yaml`.
 
 2.  Open this file and edit log levels as needed or requested by SAP support
 
@@ -46,4 +55,6 @@ To set the log levels for Java-based solution components, follow the steps descr
 ## Results
 
 Log settings are changed. You can always revert log severity levels to default.
+
+For more information, see [Changing Logging Severity Levels](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/1ce54d8bd96340c9b018ac80494a06af.html?q=Changing%20Logging%20Severity%20Levels)
 

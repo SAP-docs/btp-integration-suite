@@ -16,7 +16,7 @@ In this procedure, we assume that you’re aware of the process of creating cert
 
 You need to create key store and trust store certificates to configure 2-way SSL \(Secure Sockets Layer\). SSL is the standard security technology for establishing an encrypted link between a web server and a web client, such as a browser or an app. An encrypted link ensures that all data passing between the server and the client remains private. To use SSL, a client makes a secure request to the server by using the encrypted https:// protocol, instead of the unencrypted http:// protocol. In Integration Suite, you can associate the certificates with the API Provider at the time of API provider registration. This process provides more secure way to access API provider.
 
-Whenever the existing certificate expires, you can upload a new certificate and associate the same with the API provider. You can’t upload an expired certificate.
+Whenever the existing certificate expires, create a new Keystore and upload the new certificate. Make sure to refer to the newly created Keystore in your API providers, API proxies, and references.
 
 The following are the supported file format for certificates: .cer, .jar \(signed jar\), .der, .pem, .p12, .pkcs
 
@@ -29,7 +29,7 @@ The following are the supported file format for certificates: .cer, .jar \(signe
 
 1.  Log on to Integration Suite .
 
-2.  Choose the navigation icon on the top-left and choose *Configure* \> *APIs*. .
+2.  Choose the navigation icon on the top-left and choose *Configure* \> *APIs*.
 
 3.  Select the *Certificates* tab.
 
@@ -40,7 +40,7 @@ The following are the supported file format for certificates: .cer, .jar \(signe
     -   *Trust Store* - A truststore contains certificates used to verify certificates received as part of SSL handshaking. If the certificate received by an SSL client is signed by a valid certificate authority \(CA\), then the client makes a request to the CA to authenticate the certificate else self-signed certificate can be uploaded in the truststore.
 
         > ### Note:  
-        > Since client certificate chains are used in the authentication process to establish the identity of clients accessing the API Management service, it is important to ensure that these chains have sufficient security measures in place. Weak client certificate chains lack the necessary security measures and are therefore vulnerable to attacks. As a result, weak client certificate chains have been deprecated. For more detailed information, please[3418201 - Deprecation of Weak Client Certificate Chains in API Management \(sap.corp\)](https://i7p.wdf.sap.corp/sap(bD1lbiZjPTAwMQ==)/bc/bsp/sno/ui_entry/entry.htm?param=69765F6D6F64653D3030312669765F7361706E6F7465735F6E756D6265723D3334313832303126).
+        > Since client certificate chains are used in the authentication process to establish the identity of clients accessing the API Management service, it is important to ensure that these chains have sufficient security measures in place. Weak client certificate chains lack the necessary security measures and are therefore vulnerable to attacks. As a result, weak client certificate chains have been deprecated. For more detailed information, please [3418201 - Deprecation of Weak Client Certificate Chains in API Management \(sap.corp\)](https://i7p.wdf.sap.corp/sap(bD1lbiZjPTAwMQ==)/bc/bsp/sno/ui_entry/entry.htm?param=69765F6D6F64653D3030312669765F7361706E6F7465735F6E756D6265723D3334313832303126).
 
     -   *Key Store* - A keystore contains an SSL certificate and private key used to validate the server during SSL handshaking.
 
@@ -59,6 +59,9 @@ The following are the supported file format for certificates: .cer, .jar \(signe
 6.  You can either choose to use an existing store or create a new store and then add a new certificate in that store.
 
 7.  If you choose to create a new store, then enter the following details: store name, certificate name and appropriate description.
+
+    > ### Note:  
+    > It is recommended that you keep your certificate name in a Keystore to no more than 25 characters.
 
 8.  If you have chosen to create a key store, then execute the sub-steps below:
 
@@ -83,5 +86,8 @@ The following are the supported file format for certificates: .cer, .jar \(signe
 10. Choose *Create*.
 
     Once you create a certificate, you can then associate it with the API provider at the time of API provider registration.
+
+    > ### Note:  
+    > When your certificate expires or you need to rotate your credentials, create a new Keystore and upload the updated certificate to this new store.
 
 

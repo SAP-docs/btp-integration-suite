@@ -5,7 +5,7 @@
 Learn more about Migration Assessment.
 
 > ### Note:  
-> This information is relevant only when you use the Cloud Integration capability as a part of SAP Integration Suite. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 
 
@@ -13,26 +13,32 @@ Learn more about Migration Assessment.
 
 ## Features
 
--   Extract data from your existing SAP Process Orchestration 7.5 system
+-   Extract data from your existing SAP Process Orchestration system
 
-    Migration is currently supported for the following versions of SAP Process Orchestration:
+    -   Supported integration scenarios:
 
-    -   7.31 SP28 and above
+        -   Integrated configurations
+        -   Dual-stack scenarios
 
-    -   7.40 SP23 and above
+    -   Supported SAP Process Orchestration system versions:
 
-    -   7.50 SP06 and above
+        -   7.31 SP28 and above
+
+        -   7.40 SP23 and above
+
+        -   7.50 SP06 and above
+
 
 
 -   Evaluate the extracted data
 
--   Estimate the potential effort of migrating your integrated configuration objects from your SAP Process Orchestration 7.5 system to SAP Integration Suite
+-   Estimate the potential effort of migrating your integration scenarios from your SAP Process Orchestration system to SAP Integration Suite
 
 
 > ### Note:  
 > Migration Assessment focuses on the extraction and assessment of your data.
 > 
-> The actual migration tooling, which migrates your integrated configuration objects from SAP Process Orchestration to integration flows in SAP Integration Suite, is part of the Cloud Integration capability. See [Migration Tooling](migration-tooling-6061016.md).
+> The actual migration tooling, which migrates your integration scenarios from SAP Process Orchestration to integration flows in SAP Integration Suite, is part of the Cloud Integration capability. See [Migration Tooling](migration-tooling-6061016.md).
 
 
 
@@ -53,5 +59,5 @@ This service is available in the SAP BTP, Cloud Foundry environment.
 
 [Create a Scenario Evaluation Request](create-a-scenario-evaluation-request-435ec61.md "Assess your integration scenarios using the information from data extraction requests.")
 
-[Tasks and Permissions](60-Security/tasks-and-permissions-2714db1.md "Learn about security-related topics like users and authorizations.")
+[Tasks and Permissions for Migration Assessment](60-Security/tasks-and-permissions-for-migration-assessment-2714db1.md "Learn about security-related topics like users and authorizations.")
 

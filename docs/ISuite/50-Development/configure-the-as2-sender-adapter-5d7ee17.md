@@ -109,7 +109,7 @@ The default value is `ESBMessaging.send`. This role authorizes a sender system t
 > ### Caution:  
 > The role name must not contain any umlaut characters \(for example, `ä`\).
 
-For more information on user roles, see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md) .
+For more information on user roles, see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md) .
 
 </td>
 </tr>
@@ -160,10 +160,10 @@ Select among the following values to determine the source of Partner ID:
 -   *AS2 Partner ID Header*: to use the AS2 Partner ID header as partner ID.
 -   *Authorized User*: to fetch the partner ID from values specified in partner directory.
 
--   *Dynamic*: if you select dynamic, you must specify `authorizedUser` or `as2PartnerID` value in `SAP_AS2_Pid_Resolution_Mode` parameter of partner directory.
+-   *Dynamic*: If you select dynamic, you must specify `authorizedUser` or `as2PartnerID` value in `SAP_AS2_Pid_Resolution_Mode` parameter of partner directory with pid of authorized user. To learn more, see [Parameterizing Integration Flows Using the Partner Directory](parameterizing-integration-flows-using-the-partner-directory-b7812a5.md).
 
 > ### Note:  
-> This field will have no impact on any *Private Key Alias* fields.
+> This field does not impact any *Private Key Alias* fields.
 
 
 

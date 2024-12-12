@@ -110,6 +110,25 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    **Enable Default Virtual Host HTTP**
+    
+    </td>
+    <td valign="top">
+    
+    By default, Edge Integration Cell endpoints are exposed via Ingress Gateway on port 443 \(HTTPS\). If needed, you can also enable port 80 \(HTTP\) for unencrypted communication.
+
+    > ### Caution:  
+    > -   HTTP-based communication doesn't have built-in transport layer security and doesn't protect secrets in transit. For more information, see [Security Considerations](https://www.rfc-editor.org/rfc/rfc9110.html#name-security-considerations) 
+    > 
+    > -   The authentication method is limited to HTTP Basic Authentication.
+
+
+    
+    </td>
+    </tr>
     </table>
     
 7.  Choose *Next Step*.
@@ -149,7 +168,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    Event Broker Storage Class
+    Message Service Storage Class
     
     </td>
     <td valign="top">
@@ -165,7 +184,21 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    Event Broker Scaling Tier
+    Enable Message Service Pod Initializer
+    
+    </td>
+    <td valign="top">
+    
+    Option to use a Mutating Webhook that optimizes resource usage for the Message Service in a HA environment.
+
+    The monitoring pod \(Pod 2 in the Stateful Set\) requires less CPU and memory.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Message Service Scaling Tier
     
     </td>
     <td valign="top">
@@ -190,6 +223,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Select this option for production environments.
+
+    > ### Note:  
+    > You need to provide a new, empty database schema for each new deployment.
+
+
     
     </td>
     </tr>
@@ -277,7 +315,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </td>
     <td valign="top">
     
-    Upload Trust CA certificate to connect to PostgreSQL database using TLS.
+    Upload Trust CA certificate to connect to PostgreSQL database using TLS. CA certificate in PEM format \(Base64 ASCII\), should include only Root CAs required to connect \(size limit 5kB\).
     
     </td>
     </tr>
@@ -389,7 +427,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </td>
     <td valign="top">
     
-    Upload Trust CA certificate to connect to external Redis using TLS.
+    Upload Trust CA certificate to connect to external Redis using TLS.CA certificate in PEM format \(Base64 ASCII\), should include only Root CAs required to connect \(size limit 5kB\).
     
     </td>
     </tr>

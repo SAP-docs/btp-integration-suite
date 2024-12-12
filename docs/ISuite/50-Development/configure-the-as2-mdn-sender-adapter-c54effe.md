@@ -5,7 +5,7 @@
 > ### Note:  
 > -   If you are configuring the sender channel to receive asynchronous AS2 MDN, select the AS2 MDN message protocol.
 > -   If you want to call the AS2 MDN sender channel, use http://<host\>:<port\>/as2/mdn .
-> -   You must activate [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) to use this adapter.
+> -   You must [Activate Enterprise Messaging](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/activating-enterprise-messaging?locale=en-US&version=Cloud)/ [Message Queue](managing-message-queues-cdcce24.md) to use this adapter.
 
 Once you have created a sender channel and selected the AS2 MDN adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
@@ -91,7 +91,7 @@ The default value is `ESBMessaging.send`. This role authorizes a sender system t
 > ### Caution:  
 > The role name must not contain any umlaut characters \(for example, `ä`\).
 
-For more information on user roles, see [Tasks and Permissions](../60-Security/tasks-and-permissions-556d557.md).
+For more information on user roles, see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md).
 
 </td>
 </tr>
@@ -142,7 +142,7 @@ Select among the following values to determine the source of Partner ID:
 -   *AS2 Partner ID Header*: to use the AS2 Partner ID header as partner ID.
 -   *Authorized User*: to fetch the partner ID from values specified in partner directory.
 
--   *Dynamic*: if you select dynamic, you must specify `authorizedUser` or `as2PartnerID` value in `SAP_AS2_MDN_Inbound_Pid_Resolution_Mode` parameter of partner directory.
+-   *Dynamic*: If you select dynamic, you must specify `authorizedUser` or `as2PartnerID` value in `SAP_AS2_MDN_Inbound_Pid_Resolution_Mode` parameter of partner directory with pid of authorized user. To learn more, see [Parameterizing Integration Flows Using the Partner Directory](parameterizing-integration-flows-using-the-partner-directory-b7812a5.md).
 
 > ### Note:  
 > The source of partner ID determines the behaviour of other dynamic supported fields of AS2 MDN Sender adapter like *Verify Signature*, *Verify MIC* and *Public Key Alias*.

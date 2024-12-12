@@ -93,19 +93,30 @@ Description
 </td>
 <td valign="top">
 
-Enter the URL of the HTTP system to connect to.
+Enter a relative path to address the integration flow.
+
+When deploying the integration flow, the path is appended to the address of the service instance, completed with `/http`. This results in the endpoint address through which a sending system can reach the integration flow.
+
+When as *Address* you enter `/myIntegrationFlow`, the endpoint address of the integration flow will finally be:
+
+`<service instance URL>/http/myIntegrationFlow`
+
+Example:
+
+`https://abcd-1234-efg-5678.it-xyz001-rt.cfapps.eu12.hana.ondemand.com/http/myIntegrationFlow`
+
+The service instance URL is also displayed in the *url* field of the service key created for the corresponding service instance \([Creating Service Instance and Service Key for Inbound Authentication](../40-RemoteSystems/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md)\).
 
 > ### Note:  
-> -   Use the following pattern: `http://<host>:<port>/http` . This should be appended by the unique address specified in the channel.
 > -   The field value supports these characters **~, -, . , $** and **\*** .
 > -   The *Address* field should start with '/ ' and can contain alphanumeric values, '\_' and '/ '. For example a valid address is */test/123*.
 > -   In the example mentioned above, you can use **~** only for the address part which succeeds */test/*
 > -   You can use **$** only at the beginning of the address after **/**.
 > -   You cannot begin address with**.**, **\-** or **~**. Alphanumeric value or**\_** must succeed these characters.
 > -   You can use **\*** only at the extreme end of the address and no characters are allowed after **\***. A **\*** can only be preceded with**/**.
-> -   If you are using **/\***, it implies that URI containing the prefix preceding the **/\*** is supported. For example. if the address is */Customer/\** then URIs supported are *http://<host\>:<port\>/http/Customer/<Any-url\>*.
+> -   If you are using **/\***, it implies that URI containing the prefix preceding the **/\*** is supported. For example. if the address is */Customer/\** then URIs supported are `<service instance URLt>/http/Customer/<Any-url>`.
 > -   If you are using **/path /\***, then no other integration flows with the addresses `/path/any-URL` or `/path/any-URL/text` can be deployed across the tenant.
-> -   URIs are case insensitive. So, *http://<host\>:<port\>/http/test* and *http://<host\>:<port\>/http/Test* is treated as same.
+> -   URIs are case insensitive. So, `<service instance URLt>/http/test` and `<service instance URLt>/http/Test` are treated as same.
 
 
 

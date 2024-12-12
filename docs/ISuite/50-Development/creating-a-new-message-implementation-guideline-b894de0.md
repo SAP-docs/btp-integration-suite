@@ -24,17 +24,37 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
 
 1.  Choose MIGs <span class="SAP-icons-V5"></span> icon from the left pane.
 
-2.  Choose *Add* in the resulting screen to create a MIG.
+2.  Choose *Create* in the resulting screen to create a MIG.
 
 3.  The *Create Message Implementation Guideline* wizard opens. Choose a type system from the list displayed under *Type System*step.
+
+    By default, all standard type systems are listed. If you want to select a custom type system, select the *Custom* button.
 
 4.  The list of messages under the selected type system is displayed under the *Messages* step. Choose a message from the list.
 
 5.  The *Versions* step displays the available versions of the message. Choose the desired version from the list.
 
-6.  \(Optional\) In the Sample XML step, you can browse and upload an XML payload file. When the MIG is created, any elements/attributes in the message structure get auto-selected when they're present in the sample payload file. You can additionally select *Use file content as example values* to use payload values as example values. Choose *Next* or *Skip*.
+6.  In the *Envelope* step, select an envelope for the type system from the list. If you want to continue without any envelope, choose *None*.
 
-7.  In the MIG Creation step, maintain the following fields:
+7.  \(Optional\) In the *Sample Payload* step, you can browse and upload a payload file using the *Browse* button.
+
+    If you want to skip this step, choose *Skip*.
+
+8.  Set the format of the payload in the *Data Format* field. The supported formats of the payload are:
+
+    1.  EDI Flat File: You can use this format only for type systems ASC X12, Odette, TRADACOMS, and UN/EDIFACT and its subsets. For more information, refer to the blog [Direct Support of EDI Payloads](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-direct-support-of-edi-payloads/ba-p/13779418).
+
+        > ### Note:  
+        > The flat files might contain envelope segments outside the message structure. Integration Advisor will automatically consider the messages inside this envelope.
+
+    2.  SAP Cloud Integration \(XML\)
+
+    3.  SAP Process Integration \(XML\)
+
+
+9.  When the MIG is created, any elements/attributes in the message structure get auto-selected when they're present in the sample payload file. You can additionally select *Use file content as example values* to use payload values as example values. Choose *Next*.
+
+10. In the MIG Creation step, maintain the following fields:
 
     1.  *Name*: Name of the MIG
 
@@ -52,7 +72,7 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
     4.  *Business Context*: Select :heavy_plus_sign:, and choose the business context that you want to add. Based on the business context that you add, you're provided with further options in dropdown list. To understand, *Business Context* refer to [Terminology & Glossary for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/9c221b48799a4ce59367b0e3367f5a8f.html "") :arrow_upper_right:.
 
 
-8.  Choose *Create*.
+11. Choose *Create*.
 
     > ### Note:  
     > You can also create a MIG from the Library of Type Systems. Navigate to the *Type Systems* <span class="SAP-icons-V5"></span> icon from the left pane, choose the type systems based on your requirement and navigate to the *Messages* tab.
