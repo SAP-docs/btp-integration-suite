@@ -41,50 +41,49 @@ Create a service instance using API Access plan to generate a service key.
 
 1.  In your web browser, open the *SAP BTP Cockpit* - [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap).
 2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
-3.  Choose *API Management, API portal* \> *Instances* \> *New Instance*.
+3.  Select the *API Management, API portal* tile, and in the details section, choose *Create*.
 
     > ### Note:  
     > If you are unable to view the *API Management, API Portal* tile, please check your entitlements. For more information, see [Managing Entitlements and Quotas Using the Cockpit](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/c8248745dde24afb91479361de336111.html).
 
-4.  In the *Create Instance* dialog that opens, choose the *apiportal-apiaccess* plan.
-5.  In the section *Specify parameters*, paste one of the following JSON codes, to assign a specific role.
+4.  In the *New Instance or Subscription* dialog that opens, choose the *apiportal-apiaccess* plan.
+5.  Enter a name for your instance in the *Instance Name* field and choose *Next*.
+6.  Under *Parameters*, paste one of the following JSON codes, to assign a specific role and choose *Next* :
 
     The following roles are supported for the current scenario:
 
-    Assign `APIPortal.Administrator` role to access the API portal APIs and perform operations like create, update, delete on various API portal entities as specified in the SAP Business Accelerator Hub.
+    -   Assign `APIPortal.Administrator` role to access the API portal APIs and perform operations like create, update, delete on various API portal entities as specified in the SAP Business Accelerator Hub.
 
-    ```
-    
-    {
-        "role": "APIPortal.Administrator"
-    }
-    
-    ```
+        ```
+        
+        {
+            "role": "APIPortal.Administrator"
+        }
+        
+        ```
 
-    Assign `APIPortal.Guest` role to access the API portal APIs in read-only mode. You can view the API portal entities as specified in the API Business Hub.
+    -   Assign `APIPortal.Guest` role to access the API portal APIs in read-only mode. You can view the API portal entities as specified in the API Business Hub.
 
-    ```
-    
-    {
-        "role": "APIPortal.Guest"
-    }
-    ```
+        ```
+        
+        {
+            "role": "APIPortal.Guest"
+        }
+        ```
 
-    Assign `APIManagement.SelfService.Administrator` role to configure additional virtual hosts.
+    -   Assign `APIManagement.SelfService.Administrator` role to configure additional virtual hosts.
 
-    ```
-    
-    {
-        "role": "APIManagement.SelfService.Administrator"
-    }
-    ```
+        ```
+        
+        {
+            "role": "APIManagement.SelfService.Administrator"
+        }
+        ```
 
-6.  Click *Next* until you reach the *Confirm* section
-7.  In the section *Confirm*, enter a unique *Instance Name* and choose *Finish*.
 
-The creation of service instance is successful.
+7.  Review and verify the instance details and choose *Create*.
 
-Now, with the help of the created service instance, generate a service key from the steps given below:
+Once the service instance is created successfully, generate a service key from the steps given below:
 
 
 

@@ -41,7 +41,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    *Home Page* to browse and search through the various categories, APIs, and products available on the .
+    *Home Page* to browse and search through the various categories, APIs, and products available on the Developer Hub.
     
     </td>
     <td valign="top">

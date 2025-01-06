@@ -307,9 +307,17 @@ Prevents files that are in the process of being written from being read from the
 
 Select one of the following options based on the capabilities of the FTP server:
 
--   *None* \(default\): Does not use a read lock, which means that the endpoint can immediately read the file. *None* is the simplest option if the FTP server guarantees that a file only becomes visible on the server once the process of writing it to the server has been finished.
-
 -   *Content Change*: Monitors changes in the file length/modification timestamp to determine if the write operation on the file is complete and the file is ready to be read. If you have selected this option, the system waits for at least one second until there are no more file changes. Therefore, if you select this option, files cannot be read as quickly as with the other two options.
+
+-   *Done File Expected*: Uses a specific file to signal that the file to be processed is ready for consumption.
+
+    If you have selected this option, enter the name of the done file. The done file signals that the file to be processed is ready for consumption. This file must be in the same folder as the file to be processed. Placeholders are allowed.
+
+    Default:
+
+    `${file:name}.done`
+
+-   *None* \(default\): Does not use a read lock, which means that the endpoint can immediately read the file. *None* is the simplest option if the FTP server guarantees that a file only becomes visible on the server once the process of writing it to the server has been finished.
 
 -   *Rename*: Renames the file on the FTP server before reading it.
 

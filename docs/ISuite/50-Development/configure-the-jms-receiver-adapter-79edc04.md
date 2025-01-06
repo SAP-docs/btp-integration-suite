@@ -158,6 +158,20 @@ Select this option to encrypt the message in the JMS queue.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Transfer Exchange Properties* 
+
+</td>
+<td valign="top">
+
+You can select this option to also transfer the exchange properties to the JMS queue.
+
+However, we don't recommend using this option because headers and exchange properties are subject to size restrictions, which can result in problems or errors.
+
+</td>
+</tr>
 </table>
 
 **Related Information**  

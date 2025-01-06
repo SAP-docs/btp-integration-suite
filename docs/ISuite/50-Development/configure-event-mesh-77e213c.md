@@ -2,5 +2,5 @@
 
 # Configure Event Mesh
 
-Learn how to configure message clients, queues, and topic subscriptions.
+Learn how to configure queues, topic subscriptions, webhook subscriptions, and publish and consume events.
 

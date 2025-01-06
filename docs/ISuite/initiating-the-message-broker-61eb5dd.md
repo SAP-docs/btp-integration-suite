@@ -44,5 +44,5 @@ This task is a one-time activity. Before getting started with the actions associ
 
 ## Next Steps
 
-[Configure Event Mesh](50-Development/configure-event-mesh-77e213c.md)
+[Configure A Message Client](configure-a-message-client-867c517.md)
 

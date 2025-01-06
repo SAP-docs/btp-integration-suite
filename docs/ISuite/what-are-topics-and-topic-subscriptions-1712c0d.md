@@ -49,5 +49,7 @@ If we think of topics as destinations, then Event Mesh can be thought of as the 
 **Related Information**  
 
 
+[Topic Naming Syntax](topic-naming-syntax-62460b8.md "Rules to be followed while naming a topic.")
+
 [Create A Topic Subscription](50-Development/create-a-topic-subscription-6fe6358.md "Understand how to create a topic subsciption from a queue.")
 

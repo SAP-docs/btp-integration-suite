@@ -1,6 +1,6 @@
 <!-- loio9a5bf905e0d3436b9256ea952c9cde8b -->
 
-# What Are Events
+# What Are Events?
 
 To understand event-driven architecture \(EDA\), you must first understand events.
 

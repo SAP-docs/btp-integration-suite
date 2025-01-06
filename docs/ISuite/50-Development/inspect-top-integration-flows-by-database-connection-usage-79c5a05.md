@@ -4,7 +4,7 @@
 
 Inspect database connection usage per integration flow for a given time period \(as selected with the *Time* parameter\).
 
-Only those integration flows that are identified as top consumers of database connections are shown \(sorted top-down by average usage\).
+The chart shows those integration flows identified as the top consumers of database connections. They're sorted top-down based on either average or maximum usage, as selected with the *Database Connection Usage* filter.
 
 The color shade of a cell reflects the level of database connection usage. The darkest shade reflects the highest usage observed during the selected time period.
 

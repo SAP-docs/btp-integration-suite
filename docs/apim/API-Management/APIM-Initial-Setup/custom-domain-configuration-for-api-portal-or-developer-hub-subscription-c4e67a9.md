@@ -5,7 +5,7 @@
 To complete the process of configuring a custom domain for the API portal or the Developer Hub application using the Custom Domain Service in the SAP BTP Cloud Foundry environment, you need to contact the SAP API Management operations team.
 
 > ### Note:  
-> Custom domain for subscription URLs is available for *API Management, API portal*, *API Management, API business hub enterprise*, and API Management as a capability within the Integration Suite product.
+> Custom domain for subscription URLs is available for *API Management, API portal*, *API Management, Developer Hub*, and API Management as a capability within the Integration Suite product.
 
 For information on the initial setup of the Custom Domain Service in the Cloud Foundry environment, see [What Is Custom Domain?](https://help.sap.com/docs/CUSTOM_DOMAINS/6f35a23466ee4df0b19085c9c52f9c29/4f4c3ff62fd2413089dce8a973620167.html?version=Cloud).
 

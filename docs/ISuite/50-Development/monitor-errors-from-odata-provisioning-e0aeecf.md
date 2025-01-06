@@ -33,9 +33,9 @@ You can view the errors logged for the technical and registered OData services c
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="9dfa56ab7337457b8b97bc175a7bfaa3.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/e0aeecf5888d4ba7bc86f630b166c2fd.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Register OData Services](register-odata-services-9dfa56a.md "You can register OData services in the SAP Integration Suite to access back-end services from SAP Business Suite .")
 
 [Manage Metadata Validation and Cache Settings for OData Services](manage-metadata-validation-and-cache-settings-for-odata-services-dd4df7a.md "Enable or disable metadata validation for a registered OData service. You can also allow caching of metadata, which significantly improves performance of the OData service calls. Additionally, you can view the list of services which has cached metadata. You can clear the metadata cache of the selected service or all the services.")
 
- <?sap-ot O2O class="- topic/link " href="cdcbaa28860d402bbe59f5ffd773fcb7.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/e0aeecf5888d4ba7bc86f630b166c2fd.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Troubleshooting for OData Provisioning](../troubleshooting-for-odata-provisioning-cdcbaa2.md "Access information about troubleshooting for OData Provisioning.")
 

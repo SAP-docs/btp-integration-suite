@@ -29,7 +29,7 @@ This capability streamlines the way in which SAP Gateway OData services are expo
 > -   If your SAP back end is based on SAP NetWeaver 7.40, and the SAP\_GWFND component is on SP 02 or lesser, implement the note [1816779](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Flaunchpad.support.sap.com%2F%23%2Fnotes%2F1816779) Information published on SAP site.
 > -   To register OData services from the SAP Business Suite you need to install a Cloud Connector and perform the necessary configurations for connecting to the on-premise back-end system. For more information, see [Cloud Connector](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector?version=Cloud).
 
-OData Provisioning functionality has previously been offered as a service on Neo and as part of SAP BTP, serverless runtime. If you would like to continue using this functionality, this feature is now available as a capability of SAP Integration Suite. To know about transitioning from either the service on Neo or SAP BTP, serverless runtime to SAP Integration Suite, see the [Transitioning Guide](https://help.sap.com/docs/integration-suite/transitioning-to-odata-provisioning-capability-on-sap-integration-suite/transitioning-to-odata-capability-on-sap-integration-suite).
+OData Provisioning functionality has previously been offered as a service on Neo and as part of SAP BTP, serverless runtime. If you would like to continue using this functionality, this feature is now available as a capability of SAP Integration Suite. To know about transitioning from either the service on Neo or SAP BTP, serverless runtime to SAP Integration Suite, see the [Transitioning Guide](https://help.sap.com/docs/integration-suite/transitioning-to-odata-provisioning-capability-in-sap-integration-suite/transitioning-to-odata-provisioning-capability-in-sap-integration-suite?version=CLOUD).
 
 > ### Note:  
 > Once you have transitioned from SAP BTP, serverless runtime to SAP Integration Suite, you can no longer access that service interface. If you transition to the SAP Integration Suite and then deactivate the OData Provisioning capability, you can no longer access your data on the previously existing service.
@@ -43,7 +43,7 @@ OData Provisioning functionality has previously been offered as a service on Neo
 
 [Feature Matrix for OData Provisioning](feature-matrix-for-odata-provisioning-f184bf1.md "Information on the feature matrix for OData Provisioning capability.")
 
- <?sap-ot O2O class="- topic/link " href="9dfa56ab7337457b8b97bc175a7bfaa3.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/d257fc3a8cc2494cbafce8b2789939de.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Register OData Services](50-Development/register-odata-services-9dfa56a.md "You can register OData services in the SAP Integration Suite to access back-end services from SAP Business Suite .")
 
 [Monitor Errors from OData Provisioning](50-Development/monitor-errors-from-odata-provisioning-e0aeecf.md "Analyze the root cause for errors and where they originated.")
 

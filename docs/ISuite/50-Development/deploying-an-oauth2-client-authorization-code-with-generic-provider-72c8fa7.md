@@ -16,6 +16,8 @@ Cloud Integration supports OAuth Clients with various update processes for their
 
     Example: OAuth Client of GoToWebinar;
 
+-   *Refresh Tokens that expire but aren't invalidated*: There are some OAuth Clients that create a new refresh token, however, the old refresh token is still valid until its expiry date. In this case, a refresh token is valid during the whole expiry period, that is from creation time to creation time + expiry period.
+
 -   *Refresh Tokens that don't expire*: There are OAuth clients whose refresh token don't expire. In this case the refresh token doesn’t need to be updated at all.
 
 
@@ -36,6 +38,8 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
 
 
 > ### Caution:  
+> -   The Refresh Token expiry period must be at least 3 days.
+> 
 > -   The update of the Refresh Token must occur at least 2 days before the Refresh Token expires.
 > 
 > -   Refresh Tokens that are invalidated after their first usage are not supported.
@@ -147,6 +151,20 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     Provide the URL that generates the OAuth2 access and refresh token for the registered OAuth2 client and the provided user.
 
     You can add also additional query parameters, as described at the beginning of this chapter. The scope attribute \(see below\) is added as query parameter automatically in case of the "authorization\_code" grant type request; the scope attribute is not added in case of the "refresh\_token" grant type request.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Refresh Token Expiry
+    
+    </td>
+    <td valign="top">
+    
+    Provide an amount of time \(in days\) after which the refresh token expires. The minimum value is 3 days.
+
+    You can also leave this attribute blank \(don't type in anything\), in case your refresh token doesn't expire \(see: Supported OAuth Client Types in this chapter\). The default value is blank.
     
     </td>
     </tr>

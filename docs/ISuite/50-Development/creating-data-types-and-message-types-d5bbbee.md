@@ -4,6 +4,9 @@
 
 Create new Data Type and Message Type artifacts or import from the Enterprise Services \(ES\) Repository.
 
+> ### Note:  
+> For visual instructions on how to create data types, refer the tutorial [Creating data types and message types.](https://developers.sap.com/tutorials/btp-integration-suite-creatingdatatype-messagetype.html)
+
 <a name="create_mt_dt"/>
 
 <!-- create\_mt\_dt -->

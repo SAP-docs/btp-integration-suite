@@ -4,6 +4,9 @@
 
 To edit a data type, choose *Edit*. Select the node to be edited. The editable details are populated in the right-hand side panel.
 
+> ### Note:  
+> For visual instructions on how to edit data types, refer the tutorial [Editing data types.](https://developers.sap.com/tutorials/btp-integration-suite-editingdatatype-messagetype.html) 
+
 **Element/Attribute Details**
 
 

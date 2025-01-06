@@ -2,7 +2,7 @@
 
 # Configure A Message Client
 
-Understand how to create a message client.
+Understand how to create a message client to communicate with the message broker.
 
 
 
@@ -43,4 +43,12 @@ Create a service binding:
 
     You can also view the message client in the Integration Suite UI. Navigate to *Configure* \> *Event Mesh* to view all the associated message clients.
 
+
+
+
+<a name="loio867c517256d74cc2ad9eab3dd22eb916__postreq_pgt_y1z_sdc"/>
+
+## Next Steps
+
+[Configure Event Mesh](50-Development/configure-event-mesh-77e213c.md)
 

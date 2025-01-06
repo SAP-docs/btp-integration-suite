@@ -6,10 +6,12 @@ Inspect the usage of integration resources caused by your active integration flo
 
 Each SAP Integration Suite tenant comes with certain physical resources that are consumed by integration flows at runtime. Examples of such integration resources are the available database connections.
 
-You can inspect consumption of integration resources, identify those integration flows that contribute significantly to integration-resource exhaustion, and perform steps to resolve critical situations. Based on the insights, you can, for example, optimize integration flow design to overcome integration resource bottlenecks.
+*Inspect* allows you to inspect the consumption of integration resources, identify those integration flows that contribute significantly to integration-resource exhaustion, and perform steps to resolve critical situations. Based on the insights, you can, for example, optimize integration flow design to overcome integration resource bottlenecks.
 
 > ### Note:  
 > To use this feature, role collection `MonitoringDataRead` needs to be assigned to your user \(see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md)\).
+
+The *Inspect* overview page displays various tiles that represent the consumption levels of different resources in your tenant. Each tile shows the overall consumption of a resource over the past 24 hours.
 
 Watch the following video to learn how to use *Inspect* and for an overview of a typical workflow. The video uses database connection usage as an example, but the workflow also applies to any other resources.
 
@@ -19,9 +21,7 @@ Watch the following video to learn how to use *Inspect* and for an overview of a
 
 ## Inspect Database Resources
 
-Inspect database resource usage caused by your active integration flows.
-
-Select *Inspect* to inspect the usage of integration resources associated with the tenant database and with the database connection pool.
+Inspect the usage of integration resources associated with the tenant database and with the database connection pool.
 
 -   Using the *Connections* tile, you can inspect resource usage of the database connections caused by integration flows.
 
@@ -75,5 +75,5 @@ Inspect content resource usage caused by your integration artifacts.
 
 
 > ### Tip:  
-> When resource usage exceeds a critical value, a link appears on the respective tile. You can use this link to open an info panel, which contains information on how to resolve the critical situation.
+> When resource consumption becomes critical, a *Recommendations* button becomes available. You can choose this button to receive tailored suggestions and assistance. These recommendations help resolve potential issues when usage levels reach warning or critical stages.
 

@@ -10,7 +10,7 @@ Learn how to authenticate the API requests that you make from your applications.
 
 ## Prerequisites
 
--   [Configure A Message Client](configure-a-message-client-867c517.md)
+-   You have configured a message client. See [Configure A Message Client](../configure-a-message-client-867c517.md)
 
 -   You have created a queue. See [Create A Queue](create-a-queue-95357fa.md).
 

@@ -103,7 +103,7 @@ Message Processing Log Count
 </td>
 <td valign="top">
 
-The count of message processing logs. In the *Message Processing Status* screen, you can filter the count of message processing logs by status. The default value is *All*. That means, the total count of message processing logs is displayed.
+The count of message processing logs. You can filter the count of message processing logs by status with the *Message Processing Status* filter. The default value is *All*, which means that the total count of message processing logs is displayed.
 
 </td>
 </tr>

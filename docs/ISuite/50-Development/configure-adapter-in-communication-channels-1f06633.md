@@ -627,6 +627,22 @@ See: [Configure the AzureStorage Receiver Adapter](configure-the-azurestorage-re
 <tr>
 <td valign="top">
 
+*Azure CosmosDB*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to exchange data with Microsoft Azure CosmosDB. Azure CosmosDB database is a platform as a service and a cloud-based NoSQL database by Azure.
+
+See: [Azure CosmosDB Receiver Adapter](azure-cosmosdb-receiver-adapter-aa8222e.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Coupa*
 
 Receiver adapter

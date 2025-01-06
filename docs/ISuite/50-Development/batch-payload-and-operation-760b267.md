@@ -4,6 +4,9 @@
 
 Use this option to modify multiple records in a single payload either using INSERT, UPDATE or DELETE modes. This enables you to process collection queries in a single request.
 
+> ### Note:  
+> For visual instructions on how to execute batch payload operations, refer the tutorial [Execute Batch Payload Operations Using Java Database Connectivity \(JDBC\) Receiver Adapter.](https://developers.sap.com/tutorials/btp-integration-suite-execute-batch-payload.html)
+
 
 
 ## Batch Payload

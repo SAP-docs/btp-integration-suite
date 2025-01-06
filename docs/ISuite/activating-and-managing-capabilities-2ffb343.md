@@ -51,6 +51,10 @@ This topic describes how to add and activate relevant capabilities in Integratio
 -   Migration Assessment
 
 
+You can watch a short video about activating capabilities, and getting access to functionality here:
+
+
+
 
 
 ## Procedure

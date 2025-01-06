@@ -33,7 +33,7 @@ When you send a message via AMQP 1.0 over WebSocket, it can be published to a qu
 
 4.  Select an access type:
 
-    -   *NON EXCLUSIVE* – any number of consumers can receive messages at any time from the queue.
+    -   *NON EXCLUSIVE* – any number of consumers can receive messages at any time from the queue in a round-robin schedule.
 
     -   *EXCLUSIVE* – only one consumer can receive messages at any time from the queue.
 
@@ -44,14 +44,14 @@ When you send a message via AMQP 1.0 over WebSocket, it can be published to a qu
 
 7.  Define the *Max Unacknowledged Messages Per Consumer* which is the threshold for the number of unacknowledged messages. If there are more unacknowledged messages than the threshold, all subsequent messages are not delivered.
 
-8.  Define the *Max Redelivery Count* which is the maximum number of times the queue attempts redelivery of a message before discarding it. If you define a dead message queue, then the queue moves the undelivered messages to the same. By default, the value is set to zero. The maximum value that you can define is 255.
+8.  Define the *Max Redelivery Count* which is the maximum number of times the queue attempts redelivery of a message before purging \(removing\) it. If you define a dead message queue, then the queue moves the undelivered messages to it. By default, the value is set to zero. The maximum value that you can define is 255.
 
 9.  Select a *Dead Message Queue*. Unacknowledged messages that have either reached maximum redelivery count or maximum time-to-live in the queue are moved to the dead message queue.
 
     > ### Note:  
     > You must first create a queue to use it as a dead message queue.
 
-10. Define the *Max Time-to-live* in seconds which is the duration that a message can stay in the queue without being consumed. The default and maximum supported duration are 7 days \(in seconds\).
+10. Define the *Max Time-to-live* in seconds which is the duration that a message can stay in the queue without being consumed. The default and maximum supported duration are 7 days \(in seconds\). After the defined duration, the queue purges the message. If you like to persist the message even after the duration, define a dead message queue.
 
 11. Choose *Create*.
 

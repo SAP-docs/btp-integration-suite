@@ -12,6 +12,71 @@ The following patch release information covers the most recent changes made to t
 
 
 
+<a name="loio023a4725bb734f86be8a5625abe54110__section_nwm_jf5_qdc"/>
+
+## December 2024
+
+Software Increment: 2410
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.59.39
+
+</td>
+<td valign="top">
+
+In the Camel 3.x migration, internal properties in Exchange weren't being propagated when using the Process Direct Adapter.
+
+This patch enables the selective migration of certain properties based on an environment variable. If the environment variable is turned ON, only specific properties migrate. If the environment variable is absent or turned OFF, the default behavior allows the migration of all properties, both internal and external.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.93.4
+
+</td>
+<td valign="top">
+
+This patch resolves issues with the Pre, Post, and Mag XSLTs generated during the MAG runtime export, when the MIG contains a default namespace with unqualified nodes. Before, the default namespace was incorrectly assigned to certain nodes.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio023a4725bb734f86be8a5625abe54110__section_i5x_kr5_4dc"/>
 
 ## December 2024

@@ -42,6 +42,10 @@ After subscribing to the SAP Integration Suite, and activating the OData Provisi
 5.  Enter an instance name, then choose *Next*.
 6.  Choose *Create*.
 
+    > ### Note:  
+    > The service does not support any parameters.
+
+
 
 
 ### Service Key Creation
@@ -101,11 +105,76 @@ To create the service key, do the following:
     > ```
     > {
     >     "credentials": {
-    >         "xsappname": "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx!xxxxxxx|xfsrt-service-broker!xxxxxxx",
-    >         "client_id": "xx-xxxx-xxxx-xxxx-xxxx-xxxxxxxxxx!xxxxxxx|xfsrt-service-broker!xxxxxxx",
+    >         "xsappname": "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx!xxxxxxx|xxx-service-broker!xxxxxxx",
+    >         "client_id": "xx-xxxx-xxxx-xxxx-xxxx-xxxxxxxxxx!xxxxxxx|xxx-service-broker!xxxxxxx",
     >         "client_secret": "xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx=",
     >         "grant_type": "client_credentials",
-    >         "token_url": "https://aws-eu12-odp-dev-xx.authentication.euxx.hana.ondemand.com/oauth/token"
+    >         "token_url": "https://<sub account>.authentication.<region>.hana.ondemand.com/oauth/token"
+    >     },
+    >     "uri": "https://services.odp.cfapps.<region>.hana.ondemand.com"
+    > }
+    > ```
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    MTLS
+    
+    </td>
+    <td valign="top">
+    
+    ```
+    	{
+        "xsuaa": {
+            "credential-type": "x509",
+            "x509": {
+                "key-length": 2048,
+                "validity": 65,
+                "validity-type": "DAYS"
+            }
+        }
+    }
+    ```
+
+    > ### Note:  
+    > The validity of the service key depends on the number of days mentioned in the payload. You must rotate the credentials just before the validity of the key expires, by creating a new service key.
+
+    > ### Note:  
+    > If the x509 based service key creation fails, you see the following error:
+    > 
+    > > ### Sample Code:  
+    > > ```
+    > > "Service" broker xxxx-broker-xxxxxxx-xxxx-xxx-xxx-xxxxxx failed with: "Failed" to obtain UAA cloning binding information. Status code: "400". Body: {
+    > >   "error": "Unsupported credential type"
+    > > }
+    > > ```
+    > 
+    > Please raise a support ticket to resolve this issue. Provide the service instance ID for the Serverless Runtime instance which can be obtained from the Instances section of the BTP Cockpit. See [Troubleshooting for OData Provisioning](troubleshooting-for-odata-provisioning-cdcbaa2.md) 
+
+
+    
+    </td>
+    <td valign="top">
+    
+    High
+    
+    </td>
+    <td valign="top">
+    
+    > ### Sample Code:  
+    > ```
+    > 
+    > {
+    >     "credentials": {
+    >         "xsappname": "xxxx-xxxx-xxxx-xxxx-xxxxxxxx!xxxx|xxx-service-broker!xxxx",
+    >         "certificate": "-----BEGIN CERTIFICATE-----\nxxxx\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nxxxx\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nxxxx\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nxxxx\n-----END CERTIFICATE-----\n",
+    >         "certurl": "https://xxxx.authentication.cert.xxxx.hana.ondemand.com",
+    >         "client_id": "sb-xxxx-xxxx-xxxx-xxxx-xxxxxxxx!xxxx|xxx-service-broker!xxxx",
+    >         "privateKey": "-----BEGIN RSA PRIVATE KEY-----\nxxxx\n-----END RSA PRIVATE KEY-----\n"
     >     },
     >     "uri": "https://services.odp.cfapps.<region>.hana.ondemand.com"
     > }
@@ -118,6 +187,44 @@ To create the service key, do the following:
     </table>
     
 5.  Click *Save*. The credentials generated as part of the service key creation can be used for the runtime access of the registered OData services.
+
+    Make a note of these credentials as you will need them in the next steps to obtain a bearer token, in order to access the registered OData services.
+
+    > ### Note:  
+    > Once your client is setup you can use it to authenticate against the x509 endpoint by providing the client certificate and key.
+    > 
+    > Create the certificate.cer and certificate.key files based on the public and private keys obtained from the x509 credentials respectively.
+    > 
+    > For certificate.cer file:
+    > 
+    > 1.  Copy the "certificate" value starting from `-----BEGIN CERTIFICATE----- all the way to -----END CERTIFICATE-----\n` \(the certificate value might contain multiple certificates\). Make sure you copy all the certificates.
+    > 
+    > 2.  Paste it in a text editor. Find and replace all the occurrences of \\\\n by \\n.
+    > 
+    > 3.  Save the file as `certificate.cer`.
+    > 
+    > 
+    > For certificate.key file:
+    > 
+    > 1.  Copy the "certificate" value starting from `-----BEGIN RSA PRIVATE KEY-----\n... all the way to ....-----END RSA PRIVATE KEY-----\n`
+    > 
+    > 2.  Paste it in a text editor. Find and replace all the occurrences of \\\\n by \\n.
+    > 
+    > 3.  Save the file as `certificate.key`.
+    > 
+    > 
+    > Open a command prompt/terminal in the folder where you have saved the certificate files and execute the following curl command to get the response in the `my-oauth-response.json` file in the same folder. From this file, you can fetch the bearer token from the value of "access\_token".
+    > 
+    > ```
+    > curl --cert certficate.cer --key certificate.key --location --request POST <https://<sub account>.authentication.cert.<region>.hana.ondemand.com">
+    > --header 'Content-Type: application/x-www-form-urlencoded' \
+    > --data-urlencode 'client_id=<clientId from the servicekey x509 credentials>' \
+    > --cert certificate.cer \
+    > --key certificate.key \
+    >   > my-oauth-response.json
+    > 
+    > ```
+
 
 
 

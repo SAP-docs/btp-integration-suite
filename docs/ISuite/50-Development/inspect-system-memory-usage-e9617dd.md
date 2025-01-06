@@ -32,6 +32,8 @@ The message load is plotted in two charts against time:
 
 -   The total count of message processing logs \(MPLs\) for a given time period \(as selected with the *Time* parameter\) is plotted in a bar chart.
 
+    You can filter the count of message processing logs by status with the **Message Processing Status** filter. The default value is **All**, which means that the total count of message processing logs is displayed.
+
     The number of MPLs is identical to the number of messages processed during the selected time period.
 
 -   The maximum message size within this time period is plotted in a line chart with a blue bullet.

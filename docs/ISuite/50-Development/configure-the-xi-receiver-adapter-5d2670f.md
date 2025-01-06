@@ -481,6 +481,21 @@ There are the following options:
 
     If you choose this option, the message needs to be temporarily stored on the tenant \(in the storage configured under **\). As soon as the message is successfully stored there, the sender receives a successful status message. If an error occurs, the message is retried from the temporary storage.
 
+-   *Handled by Integration Flow*
+
+    Quality of service is managed within the integration flow itself, and the XI adapter doesn't add any quality of service handling \(such as retry storage or duplicate checks\).
+
+    The XI sender channel sets the headers `SapQualityOfService` and `SapQueueId` for the XI quality of service and queue ID of the incoming message. These headers can also be used to set the quality of service and queue ID for the message to be processed by the XI receiver channel.
+
+    `SapQualityOfService` can have the following values:
+
+    -   `BestEffort`
+    -   `ExactlyOnce`
+    -   `ExactlyOnceInOrder`
+
+    > ### Note:  
+    > *Handled by Integration Flow* is currently not supported when using the XI adapter with Request/Reply and Send steps.
+
 
 
 

@@ -8,6 +8,7 @@ Following are the guidelines that you need to understand and follow while develo
 
 -   **Camel Component Scheme** – Make sure that you use a unique camel component scheme to avoid runtime collisions with other registered schemes. For example, the camel component scheme can be sap-dropbox.
 
+-   This is the new content.
 -   **Secure Programming** – Store secure parameters in runtime secure store and accessed through alias configured in adapter.
 -   **Security Aspects** –
 
@@ -31,7 +32,7 @@ Following are the guidelines that you need to understand and follow while develo
     -   To consume the APIs, you need to use the code snippet `ITApiFactory.getApi(apiType, context);` wherein, apiType is the class of the requested API interface. The camel context can be null if it isn’t required for a particular API. For Example: For accessing KeystoreService, use ITApiFactory.getApi\(KeystoreService.class, context\)
 
     > ### Note:  
-    > The Java standard libraries of Java 8 can be used.
+    > The Java standard libraries of Java 17 can be used.
     > 
     > Cloud Integration supports the XML Document Object Model \(DOM\) to process XML documents.
 

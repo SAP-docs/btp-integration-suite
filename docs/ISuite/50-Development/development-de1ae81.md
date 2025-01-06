@@ -511,7 +511,7 @@ Register OData Services
 </td>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="9dfa56ab7337457b8b97bc175a7bfaa3.xml" text="" desc="" xtrc="xref:24" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/de1ae814218247c6bac4975cb486e431.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Register OData Services](register-odata-services-9dfa56a.md)
 
 </td>
 </tr>

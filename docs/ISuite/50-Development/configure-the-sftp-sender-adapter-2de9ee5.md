@@ -411,6 +411,19 @@ Prevents files that are in the process of being written from being read from the
 
 -   *Content Change*: Monitors changes in the file length/modification timestamp to determine if the write operation on the file is complete and the file is ready to be read. If you have selected this option, the system waits for at least one second until there are no more file changes. Therefore, if you select this option, files cannot be read as quickly as with the other two options.
 
+-   *Done File Expected*: Uses a specific file to signal that the file to be processed is ready for consumption.
+
+    If you have selected this option, enter the name of the .done-file. The .done-file signals that the file to be processed is ready for consumption. This file must be in the same folder as the file to be processed.
+
+    Default naming pattern: `${file:name}.done`
+
+    > ### Caution:  
+    > Avoid using static file names in combination with recursive flags and/or file name wildcard patterns, but please stick to the default naming pattern to avoid running into errors. It's recommended to always pair an incoming file with a .done-file.
+    > 
+    > Example:
+    > 
+    > `hello.txt` is the file to be consumed, `hello.txt.done` is the associated .done-file.
+
 -   *Rename*: Renames the file on the SFTP server before reading it.
 
 
@@ -445,6 +458,22 @@ When this option is selected, the polling process is performed on a single worke
 > Therefore, the setting of this parameter has the following impact on how the two other parameters behave at runtime, as explained under [Integration Flow Deployed on Multiple Worker Nodes](integration-flow-deployed-on-multiple-worker-nodes-95bb34a.md).
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Stop on Exception*
+
+Only if *Poll on One Worker Only* is enabled
+
+</td>
+<td valign="top">
+
+Select to stop the processing of the current file batch if any exception or error is encountered. The polling will be resumed in the next polling cycle.
+
+If you use an [Exception Subprocess](define-exception-subprocess-690e078.md) with *Stop on Exception* enabled, ensure to end it with an *Error End* event. This is to ensure that the exceptions are not suppressed, in-turn disabling *Stop on Exception*.
 
 </td>
 </tr>

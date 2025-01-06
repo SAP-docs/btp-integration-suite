@@ -1,6 +1,6 @@
 <!-- loiof72428ff67db467ab1673e85a9b61927 -->
 
-# What Are Event Brokers
+# What Are Event Brokers?
 
 An event broker is middleware that mediates the communication of event messages between producers and consumers using the various message exchange patterns
 

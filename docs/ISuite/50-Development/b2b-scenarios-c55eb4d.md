@@ -16,5 +16,5 @@ The *B2B Scenarios* tab allows you to manage all your B2B related transactions a
 **Related Information**  
 
 
-[Update Properties](update-properties-ba066bb.md "Update the Type System version in your agreements.")
+[Update Properties](update-properties-ba066bb.md "Update the properties in your agreements.")
 

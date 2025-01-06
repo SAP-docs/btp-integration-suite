@@ -116,6 +116,17 @@ Design and operate business-to-business scenarios with Trading Partner Managemen
 
 </dd><dt><b>
 
+Access Data in SAP Business Suite 
+
+</b></dt>
+<dd>
+
+Access business data in the SAP Business Suite with OData Provisioning.
+
+
+
+</dd><dt><b>
+
 Provide Integration Technology Guidance 
 
 </b></dt>

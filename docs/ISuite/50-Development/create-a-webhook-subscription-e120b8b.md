@@ -10,7 +10,7 @@ Understand how to create webhook subscriptions.
 
 ## Prerequisites
 
--   You've created a message client. See: [Configure A Message Client](configure-a-message-client-867c517.md).
+-   You've created a message client. See: [Configure A Message Client](../configure-a-message-client-867c517.md).
 
 -   You've created a queue. See: [Create A Queue](create-a-queue-95357fa.md).
 
@@ -42,18 +42,45 @@ Understand how to create webhook subscriptions.
 
     The supported values are:
 
-    -   *0* – When you choose Quality of Service *0*, Event Mesh attempts only once to deliver the messages to your webhook. Event Mesh doesn't wait for acknowledgement from your webhook and deletes the messages from the queue after attempting to deliver.
-
-    -   *1* – When you choose QoS 1, Event Mesh attempts to deliver the messages to your to your webhook at least once, that is, waits for an acknowledgement from your webhook. If your webhook responds with a 2XX HTTP response code, the messages are deleted from the queue. If your webhook responds with other codes, Event Mesh keeps trying to redeliver the message until your webhook responds with a 2XX response code.
-
-        The retry mechanism works in such a way that with every new unackowledged retry, the wait time between the retries get exponentially longer. The retry starts with redelivering after 15 minutes and gets longer until it eventually becomes once per day.
-
-        > ### Remember:  
-        > -   If there are 18 unacknowledged messages \(that is, there is no 2XX response code\), Event Mesh won't attempt to consume more messages from the queue until the first 18 messages are acknowledged by your webhook. If any unacknowledged message is successfully redelivered, next message in the queue is consumed.
-        > 
-        > -   If Event Mesh stops delivering messages to the webhook, the messages are persisted for a maximum time-to-live as per the configuration of the queue. After maximum time-to-live, the messages are purged. For more information, see [Create A Queue](create-a-queue-95357fa.md).
+    ****
 
 
+    <table>
+    <tr>
+    <td valign="top">
+    
+    *0*
+    
+    </td>
+    <td valign="top">
+    
+    When you choose Quality of Service \(QoS\) *0*, Event Mesh attempts only once to deliver the messages to your webhook. Event Mesh doesn't wait for acknowledgement from your webhook and deletes the messages from the queue after attempting to deliver.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *1*
+    
+    </td>
+    <td valign="top">
+    
+    When you choose Quality of Service 1, Event Mesh attempts to deliver the messages to your to your webhook at least once, that is, waits for an acknowledgement from your webhook. If your webhook responds with a 2XX HTTP response code, the messages are deleted from the queue. If your webhook responds with other codes, Event Mesh keeps trying to redeliver the message until your webhook responds with a 2XX response code.
+
+    The retry mechanism works in such a way that with every new unackowledged retry, the wait time between the retries get exponentially longer. The retry starts with redelivering after 15 minutes and gets longer until it eventually becomes once per day.
+
+    > ### Remember:  
+    > -   If there are 18 unacknowledged messages \(that is, there is no 2XX response code\), Event Mesh won't attempt to consume more messages from the queue until the first 18 messages are acknowledged by your webhook. If any unacknowledged message is successfully redelivered, the next message in the queue is consumed.
+    > 
+    > -   If Event Mesh stops delivering messages to the webhook, the messages are persisted for a maximum time-to-live as per the configuration of the queue. After maximum time-to-live, the messages are purged. For more information, see [Create A Queue](create-a-queue-95357fa.md).
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
 6.  Enable *Exempt Handshake* only if you don't want Event Mesh to make a handshake request with your webhook before relaying messages.
 
     For more information about handshake, see [Handshake and Its Status](handshake-and-its-status-a65d213.md).
@@ -65,7 +92,7 @@ Understand how to create webhook subscriptions.
 
 8.  Enter the URL of your webhook.
 
-9.  Enter a *Contet Type* you want to assign to the messages that are relayed from a queue to your webhook.
+9.  Enter a *Content Type* you want to assign to the messages that are relayed from a queue to your webhook.
 
     By default, if an event and its message contain the content type header, Event Mesh passes on the same to your webhook. Only in cases of messages without a defined content type, Event Mesh consideres the value you provide here.
 

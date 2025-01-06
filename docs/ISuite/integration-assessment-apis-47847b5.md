@@ -262,13 +262,15 @@ Request
 </td>
 <td valign="top">
 
-A request is the entry point for a business solution request within the request workflow. One request can include multiple interface requests. A business solution request has different statuses. Some statuses are set implicitly, while others can be set explicitly by user action or through API. Here are the supported actions with the associated statuses:
+A request is the entry point for a business solution request within the request workflow. One request can include multiple interface requests.
 
--   *Create*: *Draft* \(implicit\)
--   *Submit*: *New* \(explicit\)
--   *Assess Interface Requests*: *In Progress* \(implicit\)
--   *Complete*: *Completed* \(explicit\)
--   *Reopen*: *In Progress* \(explicit\)
+A business solution request can have different statuses. Some statuses are set automatically, while others can be updated by the user via UI or through API. Here are the supported actions and their corresponding statuses:
+
+-   *Create*: The initial status of the request is `draft` \(set automatically\).
+-   *Submit*: Changes the status to `new` \(updated by the user\).
+-   *Assess Interface Requests*: The status shifts to `in progress` \(set automatically\).
+-   *Complete*: Updates the status to `completed` \(updated by the user\).
+-   *Reopen*: Switches the status back to `in progress` \(updated by the user\).
 
 
 

@@ -24,7 +24,7 @@ Perform the step-by-step instructions in this topic to create custom dimensions 
 
 3.  Choose *OK*.
 
-4.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+4.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
 5.  From the APIs list, choose the required API for which you want to collect data using the custom metric.
 
@@ -69,6 +69,9 @@ Perform the step-by-step instructions in this topic to create custom dimensions 
 
     > ### Note:  
     > After creating a chart with custom dimension or custom measure, you'll experience a delay of 20-30 minutes before data starts appearing in the charts.
+
+    > ### Remember:  
+    > You can't recreate a custom metric with the same name once you have deleted it.
 
 
 **Related Information**  

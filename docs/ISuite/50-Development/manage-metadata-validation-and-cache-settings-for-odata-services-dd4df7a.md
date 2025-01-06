@@ -126,7 +126,7 @@ Enable or disable metadata validation for a registered OData service. You can al
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="9dfa56ab7337457b8b97bc175a7bfaa3.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/dd4df7aa89174b539a9f35ac81de4c14.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Register OData Services](register-odata-services-9dfa56a.md "You can register OData services in the SAP Integration Suite to access back-end services from SAP Business Suite .")
 
 [Monitor Errors from OData Provisioning](monitor-errors-from-odata-provisioning-e0aeecf.md "Analyze the root cause for errors and where they originated.")
 

@@ -42,7 +42,12 @@ API Management
 </td>
 <td valign="top">
 
-The credential type "instance-secret" is deprecated in the oauth2-configuration of the security descriptor. This patch fixes the changes in the XSUAA security descriptor for the deprecated configurations.
+-   The credential type "instance-secret" is deprecated in the oauth2-configuration of the security descriptor. This patch fixes the changes in the XSUAA security descriptor for the deprecated configurations.
+
+-   The SAPUI5 version in Developer Hub has been upgraded from 1.117.1 to the latest version, 1.130.2.
+
+
+
 
 </td>
 </tr>

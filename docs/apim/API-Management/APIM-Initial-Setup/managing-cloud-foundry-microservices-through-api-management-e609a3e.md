@@ -39,10 +39,14 @@ Follow the below procedure to create a service instance on Cloud Foundry:
 
 1.  In your web browser, open the *SAP BTP Cockpit* - [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap).
 2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
-3.  Choose *API Management, API portal* \> *Instances* \> *New Instance*.
-4.  In the *Create Instance* dialog, choose *apim-as-route-service* plan.
-5.  Choose *Next* until you reach the *Confirm* section.
-6.  In the section *Confirm*, enter a unique *Instance Name* and choose *Finish*.
+3.  Select the *API Management, API portal* tile, and in the details section, choose *Create*.
+
+    > ### Note:  
+    > If you are unable to view the *API Management, API Portal* tile, please check your entitlements. For more information, see [Managing Entitlements and Quotas Using the Cockpit](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/c8248745dde24afb91479361de336111.html).
+
+4.  In the *New Instance or Subscription* dialog that opens, choose the *apim-as-route-service* plan.
+5.  Enter a name for your instance in the *Instance Name* field and choose *Next*.
+6.  Review and verify the instance details and choose *Create*.
 
 > ### Note:  
 > The *apim-as-route-service* plan allows you to create multiple service instances and connect to many Cloud Foundry applications using the same Subaccount.

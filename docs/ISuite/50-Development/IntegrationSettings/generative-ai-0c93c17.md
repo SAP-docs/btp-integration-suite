@@ -49,6 +49,6 @@ Follow these steps to enable or disable Generative AI features:
 
 -   [AI-Based Generation of Integrations](ai-based-generation-of-integrations-96948c6.md)
 
--    <?sap-ot O2O class="- topic/xref " href="3b7a5a1258ea469b963dc047c3f443a0.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/0c93c1713188448caa536bc99d175c2f.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+-   [Optimize Groovy Scripts](../optimize-groovy-scripts-3b7a5a1.md)
 
 

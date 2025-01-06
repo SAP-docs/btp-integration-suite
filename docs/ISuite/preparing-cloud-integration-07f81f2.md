@@ -10,11 +10,11 @@ Data Space Integration interacts with Cloud Integration, so you must perform a f
 
 ## Prerequisites
 
--   You've completed the steps described in [Preparatory Steps](https://help.sap.com/viewer/fd99f220bba84308b411ea62c86ff31e/CLOUD/en-US/247522607cdc4dbebe6dbf09068aaa7e.html "Before you can perform the onboarding steps that are specific to Data Space Integration, you must be onboarded to SAP Integration Suite and have enabled Cloud Integration.") :arrow_upper_right: where you activate SAP Integration Suite and the Cloud Integration capability.
+-   You've completed the steps described in  <?sap-ot O2O class="- topic/xref " href="247522607cdc4dbebe6dbf09068aaa7e.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/07f81f2b6c3742ae8880016911cdc757.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  where you activate SAP Integration Suite and the Cloud Integration capability.
 
--   You've completed the steps described in [Activating the Capability](https://help.sap.com/viewer/fd99f220bba84308b411ea62c86ff31e/CLOUD/en-US/be375cb46b4a4fada37e62b90efcf0d8.html "Learn how to activate the Data Space Integration capability within SAP Integration Suite.") :arrow_upper_right: where you add Data Space Integration to your list of active capabilities of SAP Integration Suite.
+-   You've completed the steps described in  <?sap-ot O2O class="- topic/xref " href="be375cb46b4a4fada37e62b90efcf0d8.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/07f81f2b6c3742ae8880016911cdc757.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  where you add Data Space Integration to your list of active capabilities of SAP Integration Suite.
 
--   You've completed the steps described in [Configuring User Access](https://help.sap.com/viewer/fd99f220bba84308b411ea62c86ff31e/CLOUD/en-US/cc811d8612d64ede9ccf7edcb390ecc2.html "Before users can access the application, you need to assign the relevant role collections to them.") :arrow_upper_right: where you define user roles for Data Space Integration.
+-   You've completed the steps described in  <?sap-ot O2O class="- topic/xref " href="cc811d8612d64ede9ccf7edcb390ecc2.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/07f81f2b6c3742ae8880016911cdc757.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  where you define user roles for Data Space Integration.
 
 
 > ### Caution:  
@@ -117,7 +117,7 @@ Data Space Integration relies on Cloud Integration and thus Cloud Foundry for da
 6.  Select the `api` plan.
 
     > ### Note:  
-    > If you can't select this plan, check that the correct entitlements are assigned to your subaccount in the SAP BTP cockpit as described in [Preparatory Steps](https://help.sap.com/viewer/fd99f220bba84308b411ea62c86ff31e/CLOUD/en-US/247522607cdc4dbebe6dbf09068aaa7e.html "Before you can perform the onboarding steps that are specific to Data Space Integration, you must be onboarded to SAP Integration Suite and have enabled Cloud Integration.") :arrow_upper_right:.
+    > If you can't select this plan, check that the correct entitlements are assigned to your subaccount in the SAP BTP cockpit as described in  <?sap-ot O2O class="- topic/xref " href="247522607cdc4dbebe6dbf09068aaa7e.xml" text="" desc="" xtrc="xref:7" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/07f81f2b6c3742ae8880016911cdc757.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 7.  In the next step, specify the following parameters:
 
