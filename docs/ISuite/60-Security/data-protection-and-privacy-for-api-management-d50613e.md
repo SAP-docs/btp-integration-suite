@@ -204,7 +204,7 @@ API Management stores the API portal administrator’s user ID. Storing the user
 
 API Management stores personal information such as first name, last name, user ID, and e-mail ID of users who have logged on to the Developer Hub. All the personal information stored in the application is deleted when the access for the corresponding user is revoked.
 
-In API Management, application developers can contact their Developer Hub administrators to have their personal data erased and access revoked. For more information, see [Revoke Access](../revoke-access-ce609bb.md) and [Delete Data of Unregistered Users](../delete-data-of-unregistered-users-d548233.md).
+In API Management, application developers can contact their Developer Hub administrators to have their personal data erased and access revoked. For more information, see [Revoke Access](../50-Development/revoke-access-ce609bb.md) and [Delete Data of Unregistered Users](../50-Development/delete-data-of-unregistered-users-d548233.md).
 
 
 

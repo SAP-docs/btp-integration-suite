@@ -354,7 +354,7 @@ Auto-Registration of developers in Developer Hub
 
 If the AuthGroup.API.ApplicationDeveloper role is already assigned to you by the SAP BTP admin or via the IDP Role Collection mapping, you will get automatically registered as an application developer in API business hub enterprise when you logon for the first time.
 
-See: [Register on API business hub enterprise](register-on-developer-hub-c85fafe.md) \(SAP API Management customers choose: [Register on API business hub enterprise](https://help.sap.com/docs/sap-api-management/sap-api-management/register-on-api-business-hub-enterprise)\)
+See: [Register on API business hub enterprise](registering-on-developer-hub-c85fafe.md) \(SAP API Management customers choose: [Register on API business hub enterprise](https://help.sap.com/docs/sap-api-management/sap-api-management/register-on-api-business-hub-enterprise)\)
 
 </td>
 <td valign="top">

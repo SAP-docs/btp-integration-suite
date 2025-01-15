@@ -12,6 +12,54 @@ The following patch release information covers the most recent changes made to t
 
 
 
+<a name="loio023a4725bb734f86be8a5625abe54110__section_ctb_2cq_ydc"/>
+
+## January 2025
+
+Software Increment: 2410
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.59.53
+
+</td>
+<td valign="top">
+
+JDBC exceptions and file descriptor overflow were reported due to too many open files.
+
+This patch resolves the issue by advising the user to keep the Datasource limit at 49, as recommended.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio023a4725bb734f86be8a5625abe54110__section_nwm_jf5_qdc"/>
 
 ## December 2024

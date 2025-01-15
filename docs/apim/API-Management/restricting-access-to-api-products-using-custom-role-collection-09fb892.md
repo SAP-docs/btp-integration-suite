@@ -1,8 +1,8 @@
 <!-- loio09fb892458c54952a1c9abcef141ef97 -->
 
-# Assign Permission to a Product via UI
+# Restricting Access to API Products Using Custom Role Collection
 
-Assign permission to a product in the SAP Integration Suite .
+You can control access to an API product using a custom role. During product creation, you can define a custom role to restrict product access. By assigning permissions to products through roles, you control which users can discover and subscribe to specific API products.
 
 
 
@@ -10,8 +10,8 @@ Assign permission to a product in the SAP Integration Suite .
 
 ## Prerequisites
 
--   You are assigned the `APIPortal.Administrator` role.
--   You must have created a custom role on the SAP BTP Cockpit Cloud Foundry environment. For more information on creating a custom role, refer [here](../creating-a-custom-role-9d827cd.md).
+-   The `APIPortal.Administrator` role collection is assigned to you.
+-   Create a custom role collection in the SAP BTP Cockpit. To create a custom role collection, see [Creating and Assigning a Custom Role Collection](APIM-Initial-Setup/creating-and-assigning-a-custom-role-collection-9d827cd.md).
 
 
 
@@ -22,13 +22,13 @@ Whenever you create a product or edit a draft product, permissions can be added 
 > ### Note:  
 > Currently, we do not support assigning of permissions to the products defined in the remote API portals that are connected to a centralised Developer Hub.
 > 
-> \*Remote API portals are those that are not in the same subaccount as the centralised Developer Hub and are configured via the manage connections. For more information, [Centralized Developer Hub](../centralized-developer-hub-38422de.md).
+> \*Remote API portals are those that are not in the same subaccount as the centralised Developer Hub and are configured via the manage connections. For more information, [Centralized Developer Hub](APIM-Initial-Setup/centralized-developer-hub-38422de.md).
 
 
 
 ## Procedure
 
-1.  Log on to the SAP Integration Suite .
+1.  Log on to the .
 
 2.  Choose the navigation icon on the left and choose *Engage*.
 

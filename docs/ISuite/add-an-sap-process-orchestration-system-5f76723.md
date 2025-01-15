@@ -19,6 +19,8 @@ Establish a connection between your SAP Process Orchestration system and Migrati
 
 -   You've set up the relevant access rights for yourself and your users as described in [Configuring User Access to SAP Integration Suite](configuring-user-access-to-sap-integration-suite-2c6214a.md).
 
+-   To include performance details such as message size and processing time in your data extraction, ensure that performance data collection is enabled as described in [Monitoring Performance](https://help.sap.com/docs/SAP_NETWEAVER_750/5cf7d2de571a45cc81f91261668b7361/48b2dfe86b156ff4e10000000a42189b.html).
+
 -   As API endpoints and subpaths are used to extract data from your SAP Process Orchestration system, make sure that the SAP Destination service can access the endpoints listed in the following. See [Destination Service](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/eeb0ec2318fb4dda87830a09ac7a02fa.html).
 
     -   Directory Content

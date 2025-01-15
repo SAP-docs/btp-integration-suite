@@ -43,29 +43,5 @@ You've created at least one data extraction request as described in [Create a Da
 
     -   <span style="color:#346187;"><span class="SAP-icons-V5"></span></span> *Trigger Analysis*: Schedule a new evaluation run based on current data.
 
-    -   <span style="font-size:16px;"><span style="color:#346187;"><span class="SAP-icons-V5"></span></span></span> *Download*: Create a report to access the latest evaluation run details in one of the following two formats:
-
-        -   *As .xlsx file*: Use this option to download an in-depth analysis report. This option lists all integration scenarios that were part of the request. It includes comprehensive details necessary for migration, such as:
-            -   Migration assessment category and effort estimation
-            -   Modernization recommendations
-            -   Rules applied to the integration scenarios
-            -   Sender and receiver adapters \(both standard and custom\)
-            -   Message throughput and mappings types
-
-        -   *As .pdf file*: Select this option to download a summarized overview of the evaluation, which includes the following:
-            -   A summary of the evaluation with charts and tables as visual aids
-            -   Number of integration scenarios per category, size, modernization recommendation, etc.
-            -   The top 10 most active scenarios in terms of processed messages
-            -   Standard adapter usage
-            -   Migration effort estimation
-            -   Modernization recommendations for your scenarios
-
-                > ### Note:  
-                > Custom adapters details are only included in the .xlsx file.
-
-
-
-
-    ![Screenshot of the Scenario Evaluation interface. It shows the options to download the details on the latest evaluation run either As .xlsx fileor As .pdf file. These options are displayed after navigating through Additional Options \> Download on the respective scenario evaluation listed item.](images/IntegrationSuite_PIMAS_Request_ScenarioEvaluation_Download_d394c4f.png)
 
 

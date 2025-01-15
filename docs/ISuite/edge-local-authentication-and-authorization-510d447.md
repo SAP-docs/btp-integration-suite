@@ -7,7 +7,7 @@ Edge Local Authentication and Authorization enables operations of integration fl
 Edge Local Authentication and Authorization provides inbound local authentication and authorization for integration flow scenarios and API proxies, removing the real-time dependency on SAP Business Technology Platform. It supports offline authentication and authorization without SAP BTP dependency for client certificate authentication during integration flow processing, and API artifacts invocations.
 
 > ### Note:  
-> Edge Local Authentication and Authorization treats all service keys of type *External Certificate* as pinned, regardless of the value of the *Pin Certificate* option. In this case, renewal of client certificates requires re-generating the associated service key. For more information on *Pin Certificates*, see [Creating Service Instance and Service Key for Inbound Authentication](40-RemoteSystems/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md).
+> Edge Local Authentication and Authorization takes the certificate pinning configuration into account. However, disabling pinning still allows both current and previously used certificates \(with older issue dates\) to authenticate successfully. To fully revoke a previous certificate, delete the old service key containing the certificate and create a new one with only the updated certificate. For more information, see [Creating Service Instance and Service Key for Inbound Authentication](40-RemoteSystems/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md).
 
 
 

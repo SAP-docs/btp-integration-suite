@@ -1,6 +1,6 @@
 <!-- loioc85fafe4ff5b4463924e0ccf5b4e0e41 -->
 
-# Register on Developer Hub
+# Registering on Developer Hub
 
 Procedure to register as an application developer on Developer Hub to view the products available in the catalog store. Developer Hub also enables you to explore the APIs, read the associated API documentation, and view resources.
 

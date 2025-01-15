@@ -219,7 +219,7 @@ ES Repository Information
 
 ## XSD
 
-Displays the XML Schema Definition \(XSD\) that is, the text view of the data type in read-only mode.
+Displays the XML Schema Definition \(XSD\) that is, the text view of the data type in read-only mode. To download this XML schema to a file, choose *Export*.
 
 **Related Information**  
 

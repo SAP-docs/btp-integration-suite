@@ -87,6 +87,7 @@ The type of diagnostic task. It can be any of the following:
     > If you're unsure about the correct scope of your issue, you can choose all of them.
 
 -   *Garbage Collection Logging*. Diagnose memory management issues for specific pods. Unlike other logging tasks, when you create a new *Garbage Collection Logging* task, it gathers all the logs that are already on the file system. Once it's done, the task stops by itself, and you can download the results.
+-   *Artifact*. Diagnose issues within the artifact lifecycle, such as deployment, undeployment, and component restart. This also includes the calculation of the artifact state or simulations.
 
 
 

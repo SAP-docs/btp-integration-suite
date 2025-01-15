@@ -2,7 +2,7 @@
 
 # Custom Attributes
 
-This topic describes custom attributes and services. It is also used to create, delete, and update custom attributes for application and product entities.
+This topic covers custom attributes and services, and guides you through creating, deleting, and updating custom attributes for application and products.
 
 Custom attributes can be leveraged to influence the runtime behavior of the API proxy execution. It can be set at a product level or at an application level \(when application is created by admin on behalf of developer\). Custom attributes provide the flexibility to extend the functionality based on attribute value which can be set or read during the API proxy execution flow. These attributes can be accessed during an API call via the following policies: Verify API key, Access token, and Access entity.
 
@@ -55,29 +55,12 @@ User assigned with this role can read, create, delete, and update custom attribu
 <tr>
 <td valign="top">
 
-APIPortal.Service.Catalog.Integration
-
-</td>
-<td valign="top">
-
-API Portal
-
-</td>
-<td valign="top">
-
-User assigned with this role can read, create, delete, and update custom attributes for application.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 APIPortal.Administrator
 
 </td>
 <td valign="top">
 
-API Portal
+API portal
 
 </td>
 <td valign="top">

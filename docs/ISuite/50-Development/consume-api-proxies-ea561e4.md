@@ -5,7 +5,7 @@
 Consume API proxies via Developer Hub. In Developer Hub, an application developer registers, explores the API exposed by customers, creates applications, and tests API proxies.
 
 > ### Caution:  
-> Effective June 2024, the classic design of Developer Hub will be deprecated and will no longer be accessible. The new design of Developer Hub will be set as your default design from March 2024. For more information, see [User Roles and Responsibilities in Developer Hub](user-roles-and-responsibilities-in-developer-hub-54b4607.md).
+> Effective June 2024, the classic design of Developer Hub will be deprecated and will no longer be accessible. The new design of Developer Hub will be set as your default design from March 2024. For more information, see [User Roles and Responsibilities in Developer Hub](../user-roles-and-responsibilities-in-developer-hub-54b4607.md).
 
 If you've added Developer Hub as a capability with Integration suite, or if you’ve subscribed to Developer Hub as part of the standalone API Management subscription, you have the option to experience the new design of the Developer Hub user interface along with the classic design.
 
@@ -34,5 +34,5 @@ Developer Hub supports the following features:
 **Related Information**  
 
 
-[User Roles and Responsibilities in Developer Hub](user-roles-and-responsibilities-in-developer-hub-54b4607.md "After activating Developer Hub in SAP Integration Suite, you need to assign users the necessary roles and role collections to access the various features and functionalities of .")
+[User Roles and Responsibilities in Developer Hub](../user-roles-and-responsibilities-in-developer-hub-54b4607.md "After activating Developer Hub, assign users the necessary roles and role collections to access its various features and functionalities. Once you've assigned the appropriate roles, you can configure and customize Developer Hub to align with your organization's needs.")
 

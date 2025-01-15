@@ -311,6 +311,9 @@ There are the following options:
 
     The XI sender channel sets the headers `SapQualityOfService` and `SapQueueId` for the XI quality of service and queue ID of the incoming message. These headers can also be used to set the quality of service and queue ID for the message to be processed by the XI receiver channel.
 
+    > ### Remember:  
+    > Add the headers `SapQualityOfService` and `SapQueueId` to the list of allowed headers. Otherwise, they won't get propagated to the receiver channel.
+
     `SapQualityOfService` can have the following values:
 
     -   `BestEffort`

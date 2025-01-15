@@ -48,7 +48,7 @@ Create a service instance using API Access plan to generate a service key.
 
 4.  In the *New Instance or Subscription* dialog that opens, choose the *apiportal-apiaccess* plan.
 5.  Enter a name for your instance in the *Instance Name* field and choose *Next*.
-6.  Under *Parameters*, paste one of the following JSON codes, to assign a specific role and choose *Next* :
+6.  Under *Parameters*, paste one of the following JSON codes, to assign a specific role and choose *Next*.
 
     The following roles are supported for the current scenario:
 
@@ -82,6 +82,19 @@ Create a service instance using API Access plan to generate a service key.
 
 
 7.  Review and verify the instance details and choose *Create*.
+
+You'll receive a success message that your service instance is created.
+
+> ### Note:  
+> If the service instance creation fails, you may encounter the following errors:
+> 
+> -   Service instance provision failed with error: "Could not find credentials service."
+> 
+>     Solution: Retry after some time. If the issue persists, report the issue by creating an incident in the [SAP Support Portal](https://support.sap.com/en/index.html). Please use the component OPU-API-OD-DT for reporting..
+> 
+> -   "An error occurred during the clone creation due to invalid role creation"
+> 
+>     Solution: Ensure the roles are entered in the correct JSON format as shown in Step 6.
 
 Once the service instance is created successfully, generate a service key from the steps given below:
 

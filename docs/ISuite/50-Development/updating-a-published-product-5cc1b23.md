@@ -1,6 +1,6 @@
 <!-- loio5cc1b23cfb2143208dfc91adb3964d5e -->
 
-<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
 # Updating a Published Product
 

@@ -9,6 +9,7 @@ This chapter shows you how to simulate a mapping guideline.
 1.  Open your mapping guideline and navigate to the *Mapping* tab.
 
 2.  Expand all nodes to see if the mapping is finalized and choose *Simulate* to perform an embedded simulation in the MAG itself. There are two different ways to simulate the MAG:
+
     1.  *Simulate with MIG Example Data*: This simulates the MAG with the existing sample MIG data.
 
     2.  *Simulate with Payload Data...*: This prompts you to upload a sample payload file \(XML or EDI flat file\) for the MAG simulation.
@@ -16,6 +17,9 @@ This chapter shows you how to simulate a mapping guideline.
         > ### Note:  
         > The EDI flat file is supported only for EDI based type systems such as ASC X12, Odette, TRADACOMS, and UN/EDIFACT and its subsets.
 
+
+    > ### Note:  
+    > If there are errors in the simulation, the *Error* dialog displays the error with the specific node and a direct link to access the node for easy resolution.
 
 3.  A new field *Simulation Data* appears above the source structure displaying the type of simulation that was carried out.
 

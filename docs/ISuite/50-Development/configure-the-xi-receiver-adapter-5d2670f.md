@@ -146,19 +146,7 @@ The endpoint URL that has been used at runtime is displayed in the message proce
 
 The type of proxy that you are using to connect to the target system:
 
--   Select *Internet* if you are connecting to a cloud system.
-
--   Select *On-Premise* if you are connecting to an on-premise system.
-
-    > ### Note:  
-    > If you select the *On-Premise* option, the following restrictions apply to other parameter values:
-    > 
-    > -   Do not use a HTTPS address for *Address* as it leads to errors when performing consistency checks or during deployment.
-    > 
-    > -   Do not use the option *Client Certificate* for the *Authentication* parameter as it leads to errors when performing consistency checks or during deployment.
-
-    > ### Note:  
-    > If you select the *On-Premise* option and use the SAP Cloud Connector to connect to your on-premise system, the *Address* field of the adapter references a virtual address, which has to be configured in the SAP Cloud Connector settings.
+-   Select ** if you are connecting to a cloud system.
 
 -   If you select *Manual*, you can manually specify the *Proxy Host* and the *Proxy Port* \(by using the corresponding entry fields\).
 
@@ -479,13 +467,16 @@ There are the following options:
 
     The message is sent asynchronously. This means that the tenant does not wait for a response before continuing processing. It is expected that the receiver guarantees that the message is processed exactly once.
 
-    If you choose this option, the message needs to be temporarily stored on the tenant \(in the storage configured under **\). As soon as the message is successfully stored there, the sender receives a successful status message. If an error occurs, the message is retried from the temporary storage.
+    If you choose this option, the message needs to be temporarily stored on the tenant \(in the storage configured under *Temporary Storage*\). As soon as the message is successfully stored there, the sender receives a successful status message. If an error occurs, the message is retried from the temporary storage.
 
 -   *Handled by Integration Flow*
 
     Quality of service is managed within the integration flow itself, and the XI adapter doesn't add any quality of service handling \(such as retry storage or duplicate checks\).
 
     The XI sender channel sets the headers `SapQualityOfService` and `SapQueueId` for the XI quality of service and queue ID of the incoming message. These headers can also be used to set the quality of service and queue ID for the message to be processed by the XI receiver channel.
+
+    > ### Remember:  
+    > Add the headers `SapQualityOfService` and `SapQueueId` to the list of allowed headers. Otherwise, they won't get propagated to the receiver channel.
 
     `SapQualityOfService` can have the following values:
 

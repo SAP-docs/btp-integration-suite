@@ -9,5 +9,5 @@ You are an application developer, you can use this service center to develop you
 **Related Information**  
 
 
-[Creating Destinations and Adding System and Consumption Bundle Properties](https://help.sap.com/viewer/54e467e3bd2148deb837d34d1ec66a78/IAT/en-US/c80ff2875e08440c8429fda79461c161.html "You are a content administrator, you want to ensure that the SAP Build developers have access to products published in Developer Hub.") :arrow_upper_right:
+ <?sap-ot O2O class="- topic/link " href="c80ff2875e08440c8429fda79461c161.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/15732eb5d1a2488fa52561d61bdb938a.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 

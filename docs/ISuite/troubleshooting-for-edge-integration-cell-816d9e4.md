@@ -230,5 +230,5 @@ OPU-API-OD-PE
 </table>
 
 > ### Note:  
-> For issues with other SAP Integration Suite features, open a ticket on the respective component from the SAP Integration Suite hierarchy. See [Support](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/6abc8746df294fe4ac5877e39683dee6.html?version=CLOUD).
+> For issues with other SAP Integration Suite features, open a ticket on the respective component from the SAP Integration Suite hierarchy. See [Troubleshooting for SAP Integration Suite](troubleshooting-for-sap-integration-suite-8e77039.md).
 

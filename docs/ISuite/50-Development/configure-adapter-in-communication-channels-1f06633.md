@@ -840,6 +840,38 @@ See: [HubSpot Receiver Adapter](hubspot-receiver-adapter-48cfaa8.md)
 <tr>
 <td valign="top">
 
+*IBM MQ*
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Allows SAP Integration Suite to consume messages from IBM MQ.
+
+See: [Configure the IBM MQ Sender Adapter](configure-the-ibm-mq-sender-adapter-35cd02d.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IBM MQ*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Allows SAP Integration Suite to publish messages to IBM MQ.
+
+See: [Configure the IBM MQ Receiver Adapter](configure-the-ibm-mq-receiver-adapter-45610e7.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *IDoc*
 
 Sender adapter
@@ -1632,7 +1664,7 @@ Receiver adapter
 
 Connects SAP Integration Suite to Snowflake. Snowflake is a cloud computing-based data company that provides cloud-based data storage and analytics services.
 
-See: [Snowflake Receiver Adapter](snowflake-receiver-adapter-1299e68.md)
+See: [Snowflake Receiver Adapter](https://help.sap.com/viewer/54e467e3bd2148deb837d34d1ec66a78/IAT/en-US/1299e684c3464a0b82626c8ebee79e25.html "The Snowflake receiver adapter connects SAP Integration Suite to Snowflake.") :arrow_upper_right:
 
 </td>
 </tr>

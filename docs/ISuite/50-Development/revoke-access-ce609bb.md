@@ -1,6 +1,6 @@
 <!-- loioce609bb2392d496ab5da321a1a3c2cfb -->
 
-<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
 # Revoke Access
 

@@ -128,8 +128,8 @@ Create a service instance using *devportal-apiaccess* plan.
     > 
     >     See the section below to know how to obtain your `developerId`.
     > 
-    > -   If you have not registered to the API Management, Developer Hub application, follow the steps in [Register on Developer Hub](../register-on-developer-hub-c85fafe.md) and try again.
-    > -   If you are not registered to the API Management, Developer Hub application, and require your admin to onboard you, contact your admin. See [Onboard an Application Developer](../onboard-an-application-developer-786d107.md).
+    > -   If you have not registered to the API Management, Developer Hub application, follow the steps in [Registering on Developer Hub](../registering-on-developer-hub-c85fafe.md) and try again.
+    > -   If you are not registered to the API Management, Developer Hub application, and require your admin to onboard you, contact your admin. See [Onboarding an Application Developer](../onboarding-an-application-developer-786d107.md).
     > 
     > **How to obtain the `developerId`**:
     > 

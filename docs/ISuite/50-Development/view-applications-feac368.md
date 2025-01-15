@@ -41,5 +41,5 @@ As an admin, you can view the list of applications that the application develope
 **Related Information**  
 
 
-[Create an Application](../create-an-application-a501a6d.md "Create an Application to consume the required APIs.")
+[Create an Application](create-an-application-a501a6d.md "Create an Application to consume the required APIs.")
 

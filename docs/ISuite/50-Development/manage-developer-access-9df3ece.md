@@ -14,7 +14,7 @@ You need the following role to configure the access control checks:
 
 -   *AuthGroup.API.Admin* 
 
-    To assign this role, see [Assigning Role Collections to Users](assigning-role-collections-to-users-80bb02e.md) .
+    To assign this role, see [Assigning Role Collections to Users](../assigning-role-collections-to-users-80bb02e.md) .
 
 
 > ### Note:  
@@ -28,7 +28,7 @@ You need the following role to configure the access control checks:
 
 In Developer Hub, managing access for different users is important for several reasons like improving user productivity, resource optimization, privacy, and security.
 
-User productivity is enhanced by granting users the appropriate access to carry out their tasks efficiently, without being overwhelmed by unnecessary information or resources. In this context, the **All Visitors** option allows anyone, whether logged in or not, to utilize the APIs without requiring authentication. However, the ability to consume the APIs still depends on obtaining the necessary developer role.
+User productivity is enhanced by granting users the appropriate access to carry out their tasks efficiently, without being overwhelmed by unnecessary information or resources. In this context, the **All Visitors** option allows anyone, whether logged in or not, to view the APIs without requiring authentication. However, the ability to consume the APIs still depends on obtaining the necessary developer role.
 
 Moreover, by managing access, you can provide access to **Authenticated Users** who do not have a designated role, allowing them to access different pages of Developer Hub based on their specific needs. This facilitates broader exploration and enables users to familiarize themselves with the available resources. Nevertheless, the ability to consume the APIs still relies on obtaining the necessary developer role.
 

@@ -15,7 +15,7 @@ As an application developer you can create an application, and view the existing
     > ### Note:  
     > The *AuthGroup.API.ApplicationDeveloper* role must not be assigned manually to a user form the SAP BTP Cockpit. Also, this role must not be a part of any user group assignment.
     > 
-    > The *AuthGroup.API.ApplicationDeveloper* role is assigned by default to a user who onboards to Developer Hub using the self-registration process or via*Add User* flow. For more information on registering in Developer Hub, see [Register on Developer Hub](register-on-developer-hub-c85fafe.md).
+    > The *AuthGroup.API.ApplicationDeveloper* role is assigned by default to a user who onboards to Developer Hub using the self-registration process or via*Add User* flow. For more information on registering in Developer Hub, see [Registering on Developer Hub](registering-on-developer-hub-c85fafe.md).
     > 
     > In the Add User flow, the Developer Hub admin adds a user who wants to be onboarded to Developer Hub. However, the user who is requesting to be onboarded must ensure that the user details provided to the admin matches the user details obtained from the response of <developer portal url\>/api/1.0/users.
 
@@ -24,7 +24,7 @@ As an application developer you can create an application, and view the existing
 
 ## Context
 
-You are about to create an application and add products to your application. You can also select an existing application and view its details under the *Application Details* tab. Navigate to the *Products* tab to view the products and the rate plan associated with this application. You can add custom attributes to your applications, and manage them from the *Custom Attributes* tab. For more information, see [Add Custom Attributes to an Application](50-Development/add-custom-attributes-to-an-application-39c3cbd.md). Navigate to the *Analytics* tab to analyze application usage, performance, and error count. For more information, see [Analyze Applications](analyze-applications-deb57dd.md).
+You are about to create an application and add products to your application. You can also select an existing application and view its details under the *Application Details* tab. Navigate to the *Products* tab to view the products and the rate plan associated with this application. You can add custom attributes to your applications, and manage them from the *Custom Attributes* tab. For more information, see [Add Custom Attributes to an Application](add-custom-attributes-to-an-application-39c3cbd.md). Navigate to the *Analytics* tab to analyze application usage, performance, and error count. For more information, see [Analyze Applications](analyze-applications-deb57dd.md).
 
 
 

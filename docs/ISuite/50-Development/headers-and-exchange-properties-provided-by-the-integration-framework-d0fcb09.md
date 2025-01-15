@@ -2214,6 +2214,28 @@ You can use this header to capture the number of retries performed by the data s
 <tr>
 <td valign="top">
 
+SAP\_DataStoreRetries
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+Data Store
+
+</td>
+<td valign="top">
+
+Indicates the number of retry attempts made by the message. Created by `DataStore` consumers, with a value of 0 on the initial attempt to process the message.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SAP\_DataStoreExpiresAt
 
 </td>

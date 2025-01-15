@@ -178,7 +178,7 @@ By selecting an integration pattern with the status *Not Assigned* or *Applied*,
 
 ## Analyze and Edit Integration Policies
 
-To inspect and edit the supported integration policies, go to *Analyze* \> *Integration Policies*.
+To inspect and edit the supported integration policies, go to *Configure* \> *Integration Policies*.
 
 You can define integration guidelines for your organization including default recommendations, reasonable alternatives, possible exceptions or techniques that you would like to avoid in your organization.
 

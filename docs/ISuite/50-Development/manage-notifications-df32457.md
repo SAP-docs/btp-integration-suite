@@ -1,6 +1,6 @@
 <!-- loiodf32457136764d9490476342691156f9 -->
 
-<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
 # Manage Notifications
 

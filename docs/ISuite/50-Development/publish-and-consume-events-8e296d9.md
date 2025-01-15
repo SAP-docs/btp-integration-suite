@@ -26,7 +26,7 @@ Hypertext Transfer Protocol \(HTTP\) is a fundamental protocol of the Internet, 
 
 Use a REST client tool to leverage the supported REST APIs to publish and consume messages.
 
--   To know about the available REST APIs, see:[SAP Business Accelerator Hub](https://api.sap.com/).
+-   To know about the available REST APIs, see:[SAP Business Accelerator Hub](https://api.sap.com/api/RestGatewayAPI/overview).
 
 -   The REST APIs are protected with an OAuth bearer token. You must first authenticate your applications to be able to publish and consume messages. See [Authenticate Your REST API Requests](authenticate-your-rest-api-requests-027e47a.md) to know more.
 

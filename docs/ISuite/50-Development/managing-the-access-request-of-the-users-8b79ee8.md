@@ -44,7 +44,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
 
     On the *Registered Users* page, you can:
 
-    -   Register a new user by choosing *Add User*.
+    -   <sub>Register a new user by choosing *Add User*</sub>.
 
         > ### Note:  
         > A user must be onboarded to Developer Hub only via Self-registration or **Add User** flow.

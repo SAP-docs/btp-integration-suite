@@ -21,9 +21,6 @@ In version 8.18.x of the Edge Integration Cell, a shift was made from the inboun
 > 
 > ```
 
-> ### Note:  
-> Currently, with Edge Local Authentication and Authorization, all service keys of type External Certificate are treated as pinned, regardless of whether *Pin Certificate* is enabled or disabled. Therefore you won’t be able to use renewed client certificates for authentication without regenerating the service key. When encountering such a situation, an authentication error will occur.
-
 To resolve the authentication error, perform the following steps:
 
 
@@ -83,7 +80,7 @@ To resolve the authentication error, perform the following steps:
     </td>
     <td valign="top">
     
-    For service keys of type *External Certificate*, check if the client certificate has been renewed. If the client certificate has been renewed, you must recreate the service key of type *External Certificate*, using the newly renewed certificate. You need to do this even if the *Pin Certificate* for the old service key was disabled.
+    For service keys of the *External Certificate* type, check whether the external client certificate has been renewed. Edge Local Authentication and Authorization takes the certificate pinning configuration into account. However, disabling pinning still allows both current and previously used certificates \(with older issue dates\) to authenticate successfully. To fully revoke a previous certificate, delete the old service key containing the certificate and create a new one with only the updated certificate.
 
     Your newly created service key should synchronize with the Edge Local Authentication and Authorization component within a matter of minutes. However, in rarer instances, this synchronization process might extend up to about 170 minutes. Once synchronization is complete, attempt to run the integration integration flow/API artefact function again. This time, though, make sure to use the certificate and key from your new service key.
 

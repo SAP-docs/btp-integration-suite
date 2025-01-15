@@ -1,6 +1,6 @@
 <!-- loiobd9691d178b442c9870f930a6bdda3ee -->
 
-<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
 # Manage Domain Categories
 

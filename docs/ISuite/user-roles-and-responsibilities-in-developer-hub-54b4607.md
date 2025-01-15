@@ -2,11 +2,9 @@
 
 # User Roles and Responsibilities in Developer Hub 
 
-After activating Developer Hub in SAP Integration Suite, you need to assign users the necessary roles and role collections to access the various features and functionalities of .
+After activating Developer Hub, assign users the necessary roles and role collections to access its various features and functionalities. Once you've assigned the appropriate roles, you can configure and customize Developer Hub to align with your organization's needs.
 
-Once the appropriate roles have been assigned, you can configure and customize Developer Hub to align with your organization's needs.
-
-Your access to various features on Developer Hub will depend on the service plan you have subscribed to.
+Access to different features on Developer Hub depends on the service plan you've subscribed to.
 
 
 
@@ -46,7 +44,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    [Register on Developer Hub](register-on-developer-hub-c85fafe.md) 
+    [Registering on Developer Hub](50-Development/registering-on-developer-hub-c85fafe.md) 
     
     </td>
     </tr>
@@ -72,7 +70,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    [Creating an Application with Developer Hub Administrator Role](creating-an-application-with-developer-hub-administrator-role-df4f777.md) 
+    [Creating an Application with Developer Hub Administrator Role](50-Development/creating-an-application-with-developer-hub-administrator-role-df4f777.md) 
     
     </td>
     </tr>
@@ -96,7 +94,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    [Manage Developer Access](manage-developer-access-9df3ece.md) 
+    [Manage Developer Access](50-Development/manage-developer-access-9df3ece.md) 
     
     </td>
     </tr>
@@ -108,9 +106,9 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    [Managing the Access Request of the Users](managing-the-access-request-of-the-users-8b79ee8.md)
+    [Managing the Access Request of the Users](50-Development/managing-the-access-request-of-the-users-8b79ee8.md)
 
-    [Revoke Access](revoke-access-ce609bb.md)
+    [Revoke Access](50-Development/revoke-access-ce609bb.md)
     
     </td>
     </tr>
@@ -144,7 +142,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    [Customize the Visual Format of Developer Hub](customize-the-visual-format-of-developer-hub-2eacd52.md) 
+    [Customize the Visual Format of Developer Hub](50-Development/customize-the-visual-format-of-developer-hub-2eacd52.md) 
     
     </td>
     </tr>
@@ -156,7 +154,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    [Manage Notifications](manage-notifications-df32457.md) 
+    [Manage Notifications](50-Development/manage-notifications-df32457.md) 
     
     </td>
     </tr>
@@ -178,7 +176,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    [Manage Domain Categories](manage-domain-categories-bd9691d.md) 
+    [Manage Domain Categories](50-Development/manage-domain-categories-bd9691d.md) 
     
     </td>
     </tr>
@@ -202,7 +200,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    [Manage Scheduled Requests](manage-scheduled-requests-7236981.md) 
+    [Manage Scheduled Requests](50-Development/manage-scheduled-requests-7236981.md) 
     
     </td>
     </tr>
@@ -259,7 +257,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    [Creating an Application with Application Developer Role](creating-an-application-with-application-developer-role-99515fc.md) 
+    [Creating an Application with Application Developer Role](50-Development/creating-an-application-with-application-developer-role-99515fc.md) 
     
     </td>
     </tr>
@@ -271,7 +269,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    [Test Runtime Behavior of APIs](test-runtime-behavior-of-apis-15c7d52.md) 
+    [Test Runtime Behavior of APIs](50-Development/test-runtime-behavior-of-apis-15c7d52.md) 
     
     </td>
     </tr>

@@ -39,7 +39,24 @@ You can add a custom message to a custom type system library.
     > -   You can create multiple versions for a message with the same *Identifier* and *Namespace*.
     > -   If you upload a message with already existing *Identifier*, *Namespace* and *Version*, a new *Revision* of the message gets created. And, only the latest revision of the message gets displayed in the *Messages* list.
 
-7.  Choose *Create*.
+7.  For custom IDoc creation, the *Message Creation* step displays the following additional fields:
+
+    1.  *Message Type*: This is a mandatory field which is auto-filled by the proposals picked from the xsd file. If not, you need to enter a meaningful text.
+
+    2.  *IDoc Type*: This is a mandatory field which is auto-filled by the proposals picked from the xsd file. If not, you need to enter a meaningful text.
+
+    3.  *Extension Type*: This is an optional field which is auto-filled by the proposals picked from the xsd file.
+
+
+    The *Identifier* field is read-only and auto-populated using the values provided in the above fields. The format is as follows: **Message Type.IDoc Type.Extension Type**. For instance, if the value are:
+
+    -   *Message Type*: `INVOIC`
+    -   *IDoc Type*: `INVOIC02`
+    -   *Extension Type*: `ZINVOIC02`
+
+    Then the *Identifier* field will be populated as **INVOIC.INVOIC02.ZINVOIC02**.
+
+8.  Choose *Create*.
 
 
 

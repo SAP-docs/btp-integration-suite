@@ -2,11 +2,9 @@
 
 # User Roles and Responsibilities in Developer Hub 
 
-After activating Developer Hub in , you need to assign users the necessary roles and role collections to access the various features and functionalities of .
+After activating Developer Hub, assign users the necessary roles and role collections to access its various features and functionalities. Once you've assigned the appropriate roles, you can configure and customize Developer Hub to align with your organization's needs.
 
-Once the appropriate roles have been assigned, you can configure and customize Developer Hub to align with your organization's needs.
-
-Your access to various features on Developer Hub will depend on the service plan you have subscribed to.
+Access to different features on Developer Hub depends on the service plan you've subscribed to.
 
 
 
@@ -46,7 +44,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    [Register on Developer Hub](../register-on-developer-hub-c85fafe.md) 
+    [Registering on Developer Hub](../registering-on-developer-hub-c85fafe.md) 
     
     </td>
     </tr>

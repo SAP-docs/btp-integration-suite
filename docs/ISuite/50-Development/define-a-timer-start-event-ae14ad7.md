@@ -42,6 +42,9 @@ If you want to configure a process to automatically start and run on a particula
 
     1.  If you're using the timer flow step with version 1.4 or higher, do the following:
 
+        > ### Note:  
+        > Configuring the externalized timer using the [Externalized Parameters View](externalized-parameters-view-27a0216.md) is not supported.
+
         **Timer Flow Step Version 1.4 and Higher**
 
 
@@ -177,6 +180,11 @@ If you want to configure a process to automatically start and run on a particula
         <td valign="top">
         
         *Multiple Schedule* – configure multiple fixed schedules so that your integration flow can be deployed at random timestamps.
+
+        > ### Note:  
+        > The option to *Externalize* parameters is not enabled.
+
+
         
         </td>
         <td valign="top">
@@ -284,6 +292,8 @@ If you want to configure a process to automatically start and run on a particula
     2.  If you're using the timer flow step with version 1.3 or lower, do the following:
 
         **Timer Flow Step Version 1.3 and Lower**
+
+        ****
 
 
         <table>

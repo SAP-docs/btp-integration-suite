@@ -34,5 +34,5 @@ Developer Hub supports the following features:
 **Related Information**  
 
 
-[User Roles and Responsibilities in Developer Hub](APIM-Initial-Setup/user-roles-and-responsibilities-in-developer-hub-54b4607.md "After activating Developer Hub in , you need to assign users the necessary roles and role collections to access the various features and functionalities of .")
+[User Roles and Responsibilities in Developer Hub](APIM-Initial-Setup/user-roles-and-responsibilities-in-developer-hub-54b4607.md "After activating Developer Hub, assign users the necessary roles and role collections to access its various features and functionalities. Once you've assigned the appropriate roles, you can configure and customize Developer Hub to align with your organization's needs.")
 

@@ -129,6 +129,24 @@ Enter the default value for the selected node.
 <tr>
 <td valign="top">
 
+Qualify Schema
+
+</td>
+<td valign="top">
+
+1.  Choose the root node to enable qualify schema.
+2.  Choose *Element* or *Attribute* or both to add form="qualified"\(in the generated XSD tab\) to all the child elements or attributes or both respectively.
+
+> ### Note:  
+> The selection has no impact on simple type data type or when there are no elements or attributes in complex type data type.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Occurrence
 
 \(appears only if the selected node is an Attribute\)

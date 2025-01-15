@@ -54,7 +54,14 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
 
 9.  When the MIG is created, any elements/attributes in the message structure get auto-selected when they're present in the sample payload file. You can additionally select *Use file content as example values* to use payload values as example values. Choose *Next*.
 
-10. In the MIG Creation step, maintain the following fields:
+10. In the *Node Selection* step, a table listing down the nodes in the payload is displayed. Select the nodes that you want to qualify.
+
+    > ### Note:  
+    > This works only if required qualifying values are available in the payload. If available, the nodes selected for qualification are automatically qualified with the qualifier values contained in the payload thereby simplifying the qualification process.
+    > 
+    > Nodes that do not have a unique qualification marker are disabled for selection.
+
+11. In the MIG Creation step, maintain the following fields:
 
     1.  *Name*: Name of the MIG
 
@@ -72,7 +79,7 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
     4.  *Business Context*: Select :heavy_plus_sign:, and choose the business context that you want to add. Based on the business context that you add, you're provided with further options in dropdown list. To understand, *Business Context* refer to [Terminology & Glossary for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/9c221b48799a4ce59367b0e3367f5a8f.html "") :arrow_upper_right:.
 
 
-11. Choose *Create*.
+12. Choose *Create*.
 
     > ### Note:  
     > You can also create a MIG from the Library of Type Systems. Navigate to the *Type Systems* <span class="SAP-icons-V5"></span> icon from the left pane, choose the type systems based on your requirement and navigate to the *Messages* tab.

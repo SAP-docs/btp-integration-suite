@@ -10,10 +10,14 @@ Configure an API proxy to enable HTTP request and response streaming.
 
 By default, disables streaming of request and response payloads. The payloads are stored directly into a buffer before API proxy pipeline picks them for processing. With streaming disabled, the policies that operate on the payloads work as expected. You can alter this behavior by enabling streaming. When you have enabled streaming, the API proxy pipeline processes the request and response payloads as-is and streams them without any modifications to the client application and to the target endpoint.
 
-You can enable streaming if your API proxy handles large request and response payloads. In , message payload size is restricted to 10 MB for non-streamed HTTP requests and responses. For streamed requests and responses, the message payload size is restricted to 500 MB.
+You can enable streaming if your API proxy handles large request and response payloads. In , message payload size is restricted to 10 MB for non-streamed HTTP requests and responses.
 
 > ### Note:  
-> When you have enabled streaming, recommends that you don't attach policies that require access to the request and response payloads. These policies can cause errors or initiate buffering, which limits the payload size and hence defeats the purpose of enabling streaming for handling large payloads. You can attach policies such as Authentication or message logging policies since these policies don't interact with the request and response payloads.
+> If your API requests or returns a large amount of data, you may see the following HTTP error: `{"fault":"{\"detail\":{\"errorcode\":\"protocol.http.TooBigBody\"},\"faultstring\":\"Body buffer overflow\"}"}`
+> 
+> If you encounter this error, we recommend enabling streaming. If the error persists after enabling streaming, consider removing any policies that require access to the request or response payloads.
+> 
+> When you have enabled streaming, we recommend that you don't attach policies that require access to the request and response payloads. These policies can cause errors or initiate buffering, which limits the payload size and hence defeats the purpose of enabling streaming for handling large payloads. You can attach policies such as Authentication or message logging policies since these policies don't interact with the request and response payloads.
 
 
 

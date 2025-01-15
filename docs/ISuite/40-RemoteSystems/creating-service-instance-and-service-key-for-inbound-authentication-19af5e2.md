@@ -9,7 +9,7 @@ With a service instance, you define how to access a certain SAP BTP service. In 
 Create a service instance to implement inbound communication. A service instance is an OAuth client \(with grant type `Client Credentials`\).
 
 > ### Note:  
-> How to specify the parameters, depends on the plan and authentication option.
+> How to specify the parameters depends on the plan and authentication option.
 > 
 > For more information on the inbound authentication options for senders calling integration flow endpoints \(*integration-flow* plan\):
 > 
@@ -39,7 +39,7 @@ Create a service instance to implement inbound communication. A service instance
 3.  Choose your subaccount, navigate to *Services* \> *Service Marketplace*, and select *Process Integration Runtime*.
 
     > ### Note:  
-    > The Process Integration Runtime tile is only displayed when you've created a runtime instance.
+    > The Process Integration Runtime tile is only displayed when you've created a runtime instance and a space.
 
     ![Screenshot: Process Integration Runtime tile in the subaccount service marketplace](images/2101_Instance-Creation_1b8a322.png)
 
@@ -395,9 +395,9 @@ With this step, you create a service key for the instance.
     > -   or one certificate with pinning enabled and another certificate with the same subjectDN and issuerDN where pinning is disabled.
 
     > ### Note:  
-    > Starting from version 8.18.x, Edge Integration Cell runtimes use a local component to perform inbound certificate authentication. This component categorizes all service keys of type *External Certificate* as pinned, regardless of whether the *Pin Certificate* setting is enabled or disabled.
+    > The Edge Integration Cell runtime uses a local component for inbound certificate authentication. Edge Integration Cell allows you to disable certificate pinning. However, even with pinning disabled, both current and previously used certificates \(those with older issue dates\) will still authenticate successfully.
     > 
-    > As such, even if you've renewed a client certificate and *Pin Certificate* is disabled, you're still required to create a new service key that includes your updated certificate. For more information, see [Edge Local Authentication and Authorization](../edge-local-authentication-and-authorization-510d447.md).
+    > To fully revoke a previous certificate, you must delete the old service key associated with it and create a new key containing only the updated certificate. For more information, see [Edge Local Authentication and Authorization](../edge-local-authentication-and-authorization-510d447.md).
 
 
     

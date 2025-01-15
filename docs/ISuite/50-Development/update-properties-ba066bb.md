@@ -21,7 +21,7 @@ Update the properties in your agreements.
 
 1.  To update properties, see [Update Type System Version](update-type-system-version-586ddc4.md).
 
-2.  To update the payload archive settings, see  <?sap-ot O2O class="- topic/xref " href="5e0ddbb03c604513a6c3189cdd8d0724.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/ba066bbe0f214056a033454a0df918de.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+2.  To update the payload archive settings, see [Update Payload Archive Settings](update-payload-archive-settings-5e0ddbb.md).
 
 
 **Related Information**  

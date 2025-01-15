@@ -62,7 +62,7 @@ Depending upon the license you hold, you can use the *API Management, API Busine
 
     You’re navigated to the *API Business Hub Enterprise*.
 
-6.  Log on to the Developer Hub application with your IDP user credentials. To register to the Developer Hub as an Application developer, see [Register on Developer Hub](../register-on-developer-hub-c85fafe.md).
+6.  Log on to the Developer Hub application with your IDP user credentials. To register to the Developer Hub as an Application developer, see [Registering on Developer Hub](../registering-on-developer-hub-c85fafe.md).
 
 
 
