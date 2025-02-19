@@ -15,6 +15,9 @@ Assess your integration scenarios using the information from data extraction req
 You've created at least one data extraction request as described in [Create a Data Extraction Request](create-a-data-extraction-request-ce0ad0e.md).
 
 > ### Note:  
+> Data extraction requests may occasionally become outdated due to the implementation of new rules. To fully benefit from these updates, you may need to perform a new data extraction before conducting a scenario evaluation, as previous extractions may not encompass the latest rule sets.
+
+> ### Tip:  
 > Do you prefer hands-on instructions? Check out the tutorial [Use the Migration Assessment Application](https://developers.sap.com/tutorials/migration-assessment.html).
 
 
@@ -43,5 +46,30 @@ You've created at least one data extraction request as described in [Create a Da
 
     -   <span style="color:#346187;"><span class="SAP-icons-V5"></span></span> *Trigger Analysis*: Schedule a new evaluation run based on current data.
 
+    -   Create a report to access the latest evaluation run details by using one of the following two options:
+
+        -   <span style="font-size:16px;"><span style="color:#346187;"><span class="SAP-icons-V5"></span></span></span> *Export*: Use this option to download an in-depth analysis report. This option lists all integration scenarios that were part of the request. It includes comprehensive details necessary for migration, such as:
+            -   Migration assessment category and effort estimation
+            -   Modernization recommendations
+            -   Rules applied to the integration scenarios
+            -   Sender and receiver adapters \(both standard and custom\)
+            -   Message throughput and mappings usage
+            -   Performance data: Message size and processing time
+
+        -   <span style="font-size:16px;"><span style="color:#346187;"><span class="SAP-icons-V5"></span></span></span> *Generate Report*: Select this option to download a summarized overview of the evaluation, which includes the following:
+            -   A summary of the evaluation with charts and tables as visual aids
+            -   Number of integration scenarios per category, size, modernization recommendation, etc.
+            -   The top 10 most active scenarios in terms of processed messages
+            -   Standard adapter usage
+            -   Migration effort estimation
+            -   Modernization recommendations for your scenarios
+
+                > ### Note:  
+                > Custom adapters details are only included in the *Export* file.
+
+
+
+
+    ![Screenshot of the Scenario Evaluation interface. It shows the options to download the details on the latest evaluation run either as an Excel file withExportor as a PDF file with Generate Report. These options are displayed after navigating to Additional Options on the respective scenario evaluation listed item.](images/PIMAS_scenarioevaluation_additionaloptions_39d256b.png)
 
 

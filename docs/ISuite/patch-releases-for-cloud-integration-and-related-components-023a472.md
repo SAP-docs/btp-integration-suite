@@ -12,6 +12,352 @@ The following patch release information covers the most recent changes made to t
 
 
 
+## February 2025
+
+Software Increment: 2413
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.62.46
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Thread blocking in the design service that causes crashes.
+-   Message processing failure on Camel 3.x due to a stricter length check on XML attribute size compared to Camel 2.x.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_ctb_2cq_yyc"/>
+
+## January 2025
+
+Software Increment: 2412
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.41
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Skip regeneration for artifacts that are deployed in Cloud Integration runtime location will.
+-   Credential rotation is optimized for unused keys.
+-   Data conversion affecting the interpretation of search results in the PI/PO system.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.61.38
+
+</td>
+<td valign="top">
+
+Trading Partner Management deployment fails due to an issue in the Kafka binding. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.37
+
+</td>
+<td valign="top">
+
+This patch fixes:
+
+-   The issue that occurs while editing a datasource in the JDBC adapter.
+-   The issue with process direct adapter that occurs while identifying addresses with spaces along with their respective integration flow names.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.36
+
+</td>
+<td valign="top">
+
+This patch fixes the issue of excessive file descriptors usage detected in camel stream cache.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.35
+
+</td>
+<td valign="top">
+
+This patch fixes the issue of message mapping script functions.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.34
+
+</td>
+<td valign="top">
+
+This patch fixes the blocking issue caused by the codenarc scans for groovy scripts during deployment.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.32
+
+</td>
+<td valign="top">
+
+This patch fixes login related issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.30
+
+</td>
+<td valign="top">
+
+This patch fixes the loading issue of the Capabilities section on the Home Page.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.29
+
+</td>
+<td valign="top">
+
+This patch fixes the billing related issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.95.4
+
+</td>
+<td valign="top">
+
+MAG Simulation and export of runtime artifacts suddenly started failing while looking-up for some codelist after the release of 1.95.3. This patch fixes this issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.28
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with creating and rendering design time artifacts.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.27
+
+</td>
+<td valign="top">
+
+With this patch, for FTP Sender adapter, *Streaming* is enabled only if *Change Directory Stepwise* is disabled.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.27
+
+</td>
+<td valign="top">
+
+With this patch, for FTP Sender adapter, *Streaming* is enabled only if *Change Directory Stepwise* is disabled.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.25
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with integration flows when using Process Direct Adapter.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.24
+
+</td>
+<td valign="top">
+
+This patch restores the download option for PGP Keys.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio023a4725bb734f86be8a5625abe54110__section_ctb_2cq_ydc"/>
 
 ## January 2025

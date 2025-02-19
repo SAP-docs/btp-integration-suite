@@ -6,11 +6,6 @@
 
 Simplify and accelerate enterprise integration. 
 
-> ### Note:  
-> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
-> 
-> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
-
 SAP Integration Suite is an industry-leading and enterprise-grade integration platform-as-a-service that helps businesses seamlessly connect and integrate their applications, data, and processes within their organization and beyond. A starter collection of pre-built, best-practice integration packs helps integration developers achieve faster time to value. Execute the integration content on the Business Technology Platform or within your private landscape.
 
 > ### Tip:  

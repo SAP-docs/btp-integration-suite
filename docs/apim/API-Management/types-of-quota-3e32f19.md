@@ -31,6 +31,144 @@ Quota type is an attribute of the Quota policy that you define while configuring
     `flexi`: Flexible Quota enforcement causes the counter to begin when the first request message is received from an app. Under flexible Quota enforcement, StartTime is dynamic; every app has its own StartTime based on the time when the first request is received. This enables you to provide Quotas that support one week, one month, or 6 months access to your API, customized for each app.
 
 
+Each quota type defines when the quota counter starts and when it resets, as shown in the following table:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Time Unit
+
+</th>
+<th valign="top">
+
+Default \(or null\) reset
+
+</th>
+<th valign="top">
+
+Calendar reset
+
+</th>
+<th valign="top">
+
+Flexi reset
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+minute
+
+</td>
+<td valign="top">
+
+Start of next minute
+
+</td>
+<td valign="top">
+
+One minute after `<StartTime>` 
+
+</td>
+<td valign="top">
+
+One minute after first request
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+hour
+
+</td>
+<td valign="top">
+
+Top of next hour
+
+</td>
+<td valign="top">
+
+One hour after `<StartTime>` 
+
+</td>
+<td valign="top">
+
+One hour after first request
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+day
+
+</td>
+<td valign="top">
+
+Midnight GMT of the current day
+
+</td>
+<td valign="top">
+
+24 hours after `<StartTime>` 
+
+</td>
+<td valign="top">
+
+24 hours after first request
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+week
+
+</td>
+<td valign="top">
+
+Midnight GMT Sunday at the end of the week
+
+</td>
+<td valign="top">
+
+One week after `<StartTime>` 
+
+</td>
+<td valign="top">
+
+One week after first request
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+month
+
+</td>
+<td valign="top">
+
+Midnight GMT of the last day of the month
+
+</td>
+<td valign="top">
+
+One month \(28 days\) after `<StartTime>` 
+
+</td>
+<td valign="top">
+
+One month \(28 days\) after first request
+
+</td>
+</tr>
+</table>
+
 **Related Information**  
 
 

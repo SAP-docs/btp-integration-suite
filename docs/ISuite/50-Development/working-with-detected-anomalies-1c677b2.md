@@ -7,7 +7,7 @@
 Access and analyze anomalies in the analytics dashboard. Discover details about the various types of anomalies, evaluate and resolve them.
 
 > ### Note:  
-> The availability of the anomaly detection feature is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620).
+> The availability of the anomaly detection and prediction features depends on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620).
 
 
 
@@ -19,18 +19,18 @@ After enabling the anomaly detection setting and configuring the API selection, 
 
 To view the detected anomalies from the Analytics dashboard, you can use the following methods:
 
--   In the analytics dashboard, you can find the anomaly notification bar located at the top of the **Overview** page. Choose *View Anomaly* to quickly navigate to the **API Anomaly** page.
+-   In the analytics dashboard, you can find the anomaly notification bar located at the top of the **Overview** page. Choose *View Anomaly* to quickly navigate to the **Anomalies** page.
 
--   In the analytics dashboard, go to the *API Anomaly* tab to view the detected anomalies.
+-   In the analytics dashboard, go to the *Anomalies* tab to view the detected anomalies.
 
 
 
 
 <a name="loio1c677b2472f94aa28ea4fc4ecc4e4bef__section_ah3_bvr_g1c"/>
 
-## API Anomaly Page
+## Anomalies Page
 
-The **API Anomaly** page provides detailed information about any anomalies that have been detected. The information is displayed across screens:
+The **Anomalies** page provides detailed information about any anomalies that have been detected. The information is displayed across screens:
 
 
 
@@ -137,6 +137,7 @@ In this screen, you can view the anomaly type that describes the issue, along wi
         -   Select *Yes* if the detected anomaly appears to be abnormal and to confirm it as a true anomaly.
 
         -   Select *No* if the detected anomaly seems to be normal and to confirm it as not an anomaly.
+        -   In the *Comment* box, you can provide the reason for your evaluation. This information will be stored to help determine whether the anomaly has been assessed or not, along with other details such as the user who conducted the evaluation, and the date and time of the evaluation.
         -   Choose *Save* to confirm your changes.
 
 
@@ -222,7 +223,7 @@ Choose <span class="SAP-icons-V5"></span> or <span class="SAP-icons-V5"></
 **Related Information**  
 
 
-[Enabling Anomaly Detection](enabling-anomaly-detection-98534a0.md "To detect anomalies for API proxy calls, you need to enable the anomaly detection setting.")
+[Enabling Anomaly Detection and Predictions](enabling-anomaly-detection-and-predictions-98534a0.md "Activate the anomaly detection and prediction features for API proxy calls to enhance monitoring and forecasting capabilities.")
 
 [Configuring APIs for Anomaly Detection](configuring-apis-for-anomaly-detection-9e7e5d1.md "View or configure APIs for anomaly detection.")
 

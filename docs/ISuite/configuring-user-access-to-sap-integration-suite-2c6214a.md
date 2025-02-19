@@ -12,11 +12,6 @@ Assign the required roles and role collections to users for accessing the indivi
 
 ## Prerequisites
 
-> ### Note:  
-> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
-> 
-> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
-
 You have the *Integration\_Provisioner* role assigned to you.
 
 The *Integration\_Provisioner* role:
@@ -129,9 +124,9 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="4">
+    <td valign="top" rowspan="5">
     
-    API Management
+    API Management 
     
     </td>
     <td valign="top">
@@ -176,7 +171,7 @@ For more information on role collections, see [Roles and Role Collections](https
     -   Create business data graphs
     -   Activate business data graphs
 
-    See [Define Users](https://help.sap.com/docs/graph/initial-setup#2.-define-users-for-graph).
+    See [Define Users](https://help.sap.com/docs/integration-suite/sap-integration-suite/initial-setup-12ad448225ac47049982d9faab7978a3?version=CLOUD#3-define-users-for-graph).
     
     </td>
     </tr>
@@ -188,7 +183,19 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    Use the Graph Navigator in SAP Developer Hub to inspect business data graphs. See [Define Users](https://help.sap.com/docs/graph/initial-setup#2.-define-users-for-graph).
+    Use the Graph Navigator in SAP Developer Hub to inspect business data graphs. See [Define Users](https://help.sap.com/docs/integration-suite/sap-integration-suite/initial-setup-12ad448225ac47049982d9faab7978a3?version=CLOUD#3-define-users-for-graph).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Role Collection for Graph: *Graph.Guest* 
+    
+    </td>
+    <td valign="top">
+    
+    Assign the Graph\_Guest authorization role to one or more users so that they have read-only access to Graph and the Graph Configuration API. See [Define Users](https://help.sap.com/docs/integration-suite/sap-integration-suite/initial-setup-12ad448225ac47049982d9faab7978a3?version=CLOUD#3-define-users-for-graph).
     
     </td>
     </tr>
@@ -539,6 +546,7 @@ For more information on role collections, see [Roles and Role Collections](https
     
     -   Create and edit company policies.
 
+    -   Assign company policies to use cases.
 
 
     

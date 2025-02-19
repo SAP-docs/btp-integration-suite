@@ -6,3 +6,6 @@ A virtual host allows you to host multiple domain names on the API Management ca
 
 Create a new virtual host with default domain or custom domain and update alias, keystore, keyalias, and truststore for an existing virtual host in the Cloud Foundry environment.
 
+> ### Note:  
+> When updating the truststore or keystore during certificate renewal, ensure you also update the associated virtual host.
+

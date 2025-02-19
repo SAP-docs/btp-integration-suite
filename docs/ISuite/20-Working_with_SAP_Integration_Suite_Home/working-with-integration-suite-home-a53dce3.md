@@ -4,7 +4,7 @@
 
 # Working with Integration Suite Home
 
-Access the various features and resources available on theIntegration Suite home page.
+Access the various features and resources available on the Integration Suite home page.
 
 **Prerequisites**
 

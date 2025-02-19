@@ -211,7 +211,7 @@ Select the authentication method the message broker supports. *SASL* is selected
 
     More information: [OAuth 2.0 Client Credentials Grant](../40-RemoteSystems/oauth-2-0-3823134.md#loio6316af5a7f2c4f3e870a997fd2d3e04e)
 
--   *Client Certificate* \(only when *TCP* has been selected for *Transport Protocol* while creating the connection and if *Internet* is selected for *Proxy Type*\)
+-   *Client Certificate* \(only when *TCP* has been selected for *Transport Protocol* while creating the connection\).
 
     At runtime, Cloud Integration authenticates itself against the connected system using a client certificate.
 
@@ -219,8 +219,6 @@ Select the authentication method the message broker supports. *SASL* is selected
 
     > ### Note:  
     > This authentication option implies that Transport Layer Security \(TLS\) is used for the connection.
-
-    More information:  <?sap-ot O2O class="- topic/xref " href="ce627b59a3c2492a8f4263c27e8750a8.xml" text="" desc="" xtrc="xref:4" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/99ce6748400b4dbfbadf633aeb111067.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 -   *None*
 
@@ -333,12 +331,12 @@ Specify the number of processes used for parallel message processing. Note, that
 <tr>
 <td valign="top">
 
-*Max. Number of Prefechted Messages*
+*Max. Number of Prefetched Messages*
 
 </td>
 <td valign="top">
 
-Enter the max. number of messages that may be prefechted by one worker. The allowed value range is 1 to 100.
+Enter the max. number of messages that may be prefetched by one worker. The allowed value range is 1 to 100.
 
 The prefetch value is the number of messages that the sender adapter fetches in advance from the broker, and then gradually processes. The prefetch reduces the communication overhead and ensures that when a message has been processed, another is already there and is ready for processing.
 

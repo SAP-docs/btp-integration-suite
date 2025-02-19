@@ -150,7 +150,7 @@ Choose a bar or a bullet to get more context information and access the followin
 
     Navigate to the *Monitor Message Processing* screen and inspect the message processing log for the selected time interval. For more information, see [Monitor Message Processing](monitor-message-processing-314df3f.md).
 
--   *Inspect Usage*
+-   *Inspect Top Consumers*
 
     Inspect database connection usage per integration flow.
 
@@ -176,7 +176,7 @@ Choose a bar or a bullet to get more context information and access the followin
 
 <a name="loio567eb42ef7c349e78c8c814dfeecd696__section_vgy_pw5_ywb"/>
 
-## What to Do in Critical Situations
+## Troubleshooting
 
 If there are not enough database connections, check your top consuming integration flows. In particular, check the *Transaction Handling* parameter \(when the Integration Process or Local Integration Process shape is selected in an integration flow model\). Check if *Required for JDBC* is selected and, if it is, check if you can choose another option.
 

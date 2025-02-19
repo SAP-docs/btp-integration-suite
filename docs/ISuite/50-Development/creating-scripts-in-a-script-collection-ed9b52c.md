@@ -77,3 +77,18 @@
 
 
 
+<a name="task_mvq_vyz_c2c"/>
+
+<!-- task\_mvq\_vyz\_c2c -->
+
+## Improve a Script
+
+
+
+## Procedure
+
+1.  Choose the script you want to improve from the resource pane.
+
+2.  To improve the script, include the recommendations provided in the *Problems* view. For more information, see: [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md).
+
+

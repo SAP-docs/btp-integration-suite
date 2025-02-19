@@ -5,7 +5,7 @@
 Receive real-time alerts for anomaly detection services, delivered to your preferred communication channel.
 
 > ### Note:  
-> The availability of the anomaly detection feature is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620).
+> The availability of the anomaly detection and prediction features depends on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620).
 
 Subscribe to the **SAP Alert Notification Service** and start receiving automated alerts for anomaly detection.
 
@@ -21,7 +21,7 @@ Once the **SAP Alert Notification Service** is setup or configured successfully,
 **Related Information**  
 
 
-[Enabling Anomaly Detection](enabling-anomaly-detection-98534a0.md "To detect anomalies for API proxy calls, you need to enable the anomaly detection setting.")
+[Enabling Anomaly Detection and Predictions](enabling-anomaly-detection-and-predictions-98534a0.md "Activate the anomaly detection and prediction features for API proxy calls to enhance monitoring and forecasting capabilities.")
 
 [Configuring APIs for Anomaly Detection](configuring-apis-for-anomaly-detection-9e7e5d1.md "View or configure APIs for anomaly detection.")
 

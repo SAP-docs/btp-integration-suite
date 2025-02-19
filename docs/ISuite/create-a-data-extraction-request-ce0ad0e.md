@@ -60,3 +60,6 @@ You've configured a source system as described in [Add an SAP Process Orchestrat
 
 After extracting the necessary data from your system, you can assess the integration scenarios associated with your data using scenario evaluation requests. See [Create a Scenario Evaluation Request](create-a-scenario-evaluation-request-435ec61.md).
 
+> ### Note:  
+> Data extraction requests may occasionally become outdated due to the implementation of new rules. To fully benefit from these updates, you may need to perform a new data extraction before conducting a scenario evaluation, as previous extractions may not encompass the latest rule sets.
+

@@ -4,7 +4,7 @@
 
 # Creating a New Mapping Guideline
 
-Creating a New Mapping Guideline: Use SAP Integration Advisor to create a mapping guideline for implementing mapping between systems that adhere to B2B type system standards. Choose MAGs, select source and target MIGs, and review and modify details before creating the guideline.
+Creating a New Mapping Guideline: Use SAP Integration Advisor to create a standard mapping guideline for implementing mapping between systems that adhere to B2B type system standards. Choose MAGs, select source and target MIGs, and review and modify details before creating the guideline.
 
 
 
@@ -20,7 +20,7 @@ Creating a New Mapping Guideline: Use SAP Integration Advisor to create a mappin
 
 ## Context
 
-A mapping guideline can be used as a source, reference, or guidance, for implementing mapping between systems that adhere to B2B type system standards. You use this procedure to create a new mapping guideline.
+A mapping guideline can be used as a source, reference, or guidance, for implementing mapping between systems that adhere to B2B type system standards. You use this procedure to create a new standard mapping guideline.
 
 
 
@@ -46,6 +46,8 @@ A mapping guideline can be used as a source, reference, or guidance, for impleme
     -   *Target Business Context*: Displays the business context details maintained in the target MIG. You can modify this information.
 
 6.  Choose *Create* after reviewing your choices.
+
+7.  Once created, the newly created MAG will have the label *Base* below its name to distinguish it from the overlay MAGs.
 
 
 <a name="task_s25_mgn_tcc"/>

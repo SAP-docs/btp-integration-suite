@@ -32,6 +32,7 @@ A processing pipeline comprises of a Request and a Response stream. Proxy endpoi
         > 	<postClientFlow>
         > 	        <name>PostClientFlow</name>
         > 	        <response>
+        >                  <isRequest>false</isRequest>
         > 	            <steps>
         > 	                <step>
         > 	                    <policy_name>clientflowMessagePolicy</policy_name>
@@ -43,6 +44,9 @@ A processing pipeline comprises of a Request and a Response stream. Proxy endpoi
         > 	    </postClientFlow>
         > 	
         > ```
+
+        > ### Note:  
+        > isRequest : needs to be marked false in the response section of PostClient Flow.
 
         > ### Note:  
         > In the payload, ensure that the policy name entered in the `<policy_name>` field is an existing policy that belongs to your API proxy. The `Policy` folder displays all the policies that are currently attached to your API proxy.

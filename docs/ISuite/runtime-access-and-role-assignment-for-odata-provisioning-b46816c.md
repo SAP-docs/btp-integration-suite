@@ -38,7 +38,7 @@ After subscribing to the SAP Integration Suite, and activating the OData Provisi
 1.  Navigate to your subaccount in the SAP BTP cockpit.
 2.  From the left navigation panel, navigate to *Services* \> *Instances and Subscriptions*.
 3.  Choose *Create*.
-4.  Choose *Serverless Runtime* \(xfs-runtime\) as the service, and then choose the default plan and Cloud Foundry space.
+4.  Choose *Serverless Runtime* \(xfs-runtime\) as the service, and then choose the odpruntime plan and Cloud Foundry space.
 5.  Enter an instance name, then choose *Next*.
 6.  Choose *Create*.
 

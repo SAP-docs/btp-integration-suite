@@ -110,7 +110,7 @@ Choose a bar to get more context information and access the following functions:
 
     Navigate to the **Monitor Message Processing** screen and inspect the message processing log for the selected time interval. For more information, see [Monitor Message Processing](monitor-message-processing-314df3f.md).
 
--   *Inspect Usage*
+-   *Inspect Top Consumers*
 
     Navigate to the *Top Integration Flows* screen and inspect those integration flows that are identified as using the longest running transactions of the tenant database for a specific time period \(as selected by the *Time* parameter\).
 
@@ -126,7 +126,7 @@ Choose a bar to get more context information and access the following functions:
 
 <a name="loio6736a3726760451bab9b07017df65616__section_dfd_lqt_4xb"/>
 
-## What to Do in Critical Situations
+## Troubleshooting
 
 If there are integration flows exhibiting transaction durations at warning or even critical level, check your top consuming integration flows. In particular, check the *Transaction Handling* parameter \(when the *Integration Process* or *Local Integration Process* shape is selected in the integration flow model\). Check if *Required for JDBC* is selected and, if it's, check if you can choose another option.
 

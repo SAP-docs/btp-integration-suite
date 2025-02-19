@@ -71,7 +71,7 @@ Source
 
 Indicates the message that needs to be screened for XML payload attacks. If it is set to request, you must validate the inbound requests from client apps. If it is set to message, the element automatically evaluates the request or response message when the message is attached to a request flow or a response flow respectively.
 
-`<Source>response</Source>`
+`<Source>request</Source>`
 
 </td>
 </tr>
@@ -181,9 +181,9 @@ If you do not specify a limit, the policy applies a default value of -1, which d
 > ### Sample Code:  
 > Example
 > 
-> For the following example XML: `<ns1:myelem xmlns:abc="http://abc.com"/>`
+> For the following example XML: `<ns1:myelem xmlns:ns1="http://abc.com"/>`
 > 
-> The policy snippet below validates that the namespace prefix `abc` does not exceed the specified character limit.
+> The policy snippet below validates that the namespace prefix `ns1` does not exceed the specified character limit.
 > 
 > ```
 > 

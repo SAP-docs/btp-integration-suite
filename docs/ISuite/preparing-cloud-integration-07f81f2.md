@@ -10,11 +10,11 @@ Data Space Integration interacts with Cloud Integration, so you must perform a f
 
 ## Prerequisites
 
--   You've completed the steps described in  <?sap-ot O2O class="- topic/xref " href="247522607cdc4dbebe6dbf09068aaa7e.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/07f81f2b6c3742ae8880016911cdc757.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  where you activate SAP Integration Suite and the Cloud Integration capability.
+-   You've completed the steps described in [Preparatory Steps](preparatory-steps-95366b2.md) where you activate SAP Integration Suite and the Cloud Integration capability.
 
--   You've completed the steps described in  <?sap-ot O2O class="- topic/xref " href="be375cb46b4a4fada37e62b90efcf0d8.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/07f81f2b6c3742ae8880016911cdc757.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  where you add Data Space Integration to your list of active capabilities of SAP Integration Suite.
+-   You've completed the steps described in [Activating the Capability](activating-the-capability-b49ad35.md) where you add Data Space Integration to your list of active capabilities of SAP Integration Suite.
 
--   You've completed the steps described in  <?sap-ot O2O class="- topic/xref " href="cc811d8612d64ede9ccf7edcb390ecc2.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/07f81f2b6c3742ae8880016911cdc757.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  where you define user roles for Data Space Integration.
+-   You've completed the steps described in [Configuring User Access](configuring-user-access-6ae0ff7.md) where you define user roles for Data Space Integration.
 
 
 > ### Caution:  
@@ -117,7 +117,7 @@ Data Space Integration relies on Cloud Integration and thus Cloud Foundry for da
 6.  Select the `api` plan.
 
     > ### Note:  
-    > If you can't select this plan, check that the correct entitlements are assigned to your subaccount in the SAP BTP cockpit as described in  <?sap-ot O2O class="- topic/xref " href="247522607cdc4dbebe6dbf09068aaa7e.xml" text="" desc="" xtrc="xref:7" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/07f81f2b6c3742ae8880016911cdc757.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    > If you can't select this plan, check that the correct entitlements are assigned to your subaccount in the SAP BTP cockpit as described in [Preparatory Steps](preparatory-steps-95366b2.md).
 
 7.  In the next step, specify the following parameters:
 

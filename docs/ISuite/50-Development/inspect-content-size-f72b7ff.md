@@ -53,8 +53,11 @@ Choose a bar to get more context information and access the following functions:
 -   *Zoom In*/*Zoom Out*. Extend/reduce the selected time period.
 
 
-**Related Information**  
 
 
-[Limit Size of Deployed Integration Content](limit-size-of-deployed-integration-content-417f82b.md "Limit size of deployed integration content to avoid avoid exceeding the storage capacity of the system.")
+<a name="loiof72b7ffed5f344af8c1064b074199403__section_idz_s5t_22c"/>
+
+## Troubleshooting
+
+If the total file size of the artifacts exceeds the system's storage, limit the size of the deployed integration contents. For more information, see [Limit Size of Deployed Integration Content](limit-size-of-deployed-integration-content-417f82b.md).
 

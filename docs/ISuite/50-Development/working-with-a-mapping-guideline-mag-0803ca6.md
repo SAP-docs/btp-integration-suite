@@ -31,26 +31,37 @@ There could be scenarios where there are significant differences between the Mes
 1.  Choose *Edit*.
 
     > ### Note:  
-    > Ensure that the MAG you are trying to edit is not locked by other users. The *Locked By* field displays the ID of ths user who's currently editing the MAG. You need to have admin rights to unlock it. To know more about the role, see [Assigning Users for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b5226b95e11b42cd9e257ae6d2b0ee0a.html "") :arrow_upper_right:
+    > Ensure that the MAG you are trying to edit is not locked by other users. The *Locked By* field displays the ID of ths user who's currently editing the MAG. You need to have admin rights to unlock it. To know more about the role, see [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md)
 
-2.  Choose *Mapping* tab to edit the mapping details of the MAG. For more information on mapping nodes, see [Mapping the Source and Target Nodes](mapping-the-source-and-target-nodes-9ea58d6.md) 
+2.  The *Overview* tab displays the general information you provided at the time of creation such as the name, version, source and target MIGs used in the MAG.
 
-3.  Drag the field from *Source* to the field on *Target* that you want to map to or use the *Proposal Service*.
+3.  Choose *Mapping* tab to edit the mapping details of the MAG. For more information on mapping nodes, see [Mapping the Source and Target Nodes](mapping-the-source-and-target-nodes-9ea58d6.md) 
+
+4.  Drag the field from *Source* to the field on *Target* that you want to map to.
+
+5.  You can also use the *Proposal Service* to get a proposal on fields that might be most relevant for you.
 
     1.  Choose Proposals: Get Proposals to activate a proposal indicator that displays which fields might be most relevant for you. This is calculated based on the other available MAGs.
 
     2.  Choose Proposals: Select *Best Proposal* to automatically select all proposed mapping entities or select single proposed mapping entities by clicking on the checkboxes within the mapping list.
 
 
-    The mapping list displays all the relevant information of the source and target nodes such as source nodes, target nodes, their cardinality etc. The *Type* column displays the type of each entry in the mapping list. You can filter and view the mappings that are erroneous and mappings that have proposals using the drop-down filter available above the mapping list table. If you want to search for all XSLT snippets and XPath expressions for a certain text pattern and want the list of mapping elements to be filtered by those elements that contain the search pattern, you can use the *Search* field provided above the *Mapping List* table. Use the search field to enter the function pattern and select :mag: . This will display the list of mapping elements pertaining to that function pattern.
+    The mapping list displays all the relevant information of the source and target nodes such as source nodes, target nodes, their cardinality etc. The *Type* column displays the type of each entry in the mapping list. You can filter and view the mappings that are erroneous and mappings that have proposals using the drop-down filter available above the mapping list table.
 
-    You can also search for a particular value in the *Mapping List* tab by selecting the relevant column name and entering the search value in the filter <span class="SAP-icons-V5"></span> field. This filter option is also available for *Code Value Mapping* tab.
+6.  You can also search for a particular value in the *Mapping List* tab by selecting the following column headers and entering the search value in the filter <span class="SAP-icons-V5"></span> field.
 
-    You can add or manage additional information about each element in the *Properties* tab. You can also view these details by selecting the element.
+    -   Source
+    -   Source Name
+    -   Target
+    -   Target Node Name
+
+    This filter option is also available for *Code Value Mapping* tab.
+
+7.  If you want to search for all XSLT snippets and XPath expressions for a certain text pattern and want the list of mapping elements to be filtered by those elements that contain the search pattern, you can use the *Search* field provided above the *Mapping List* table. Use the search field to enter the function pattern and select :mag: . This will display the list of mapping elements pertaining to that function pattern.
+
+8.  You can add or manage additional information or functions about each element by selecting the mapping entity line.
 
     The mapping also supports various value transformations. To know about these features, see [Value Transformations](value-transformations-19f8374.md)
-
-4.  You can add or manage additional information or functions about each element by selecting the mapping entity line.
 
 
 **Related Information**  

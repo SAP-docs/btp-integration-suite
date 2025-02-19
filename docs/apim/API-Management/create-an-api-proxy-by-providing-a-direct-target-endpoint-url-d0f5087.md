@@ -27,6 +27,9 @@ The role collection *APIPortal.Administrator* should be assigned to you.
 
 3.  Enter the *Name* and *Title*, and provide an introductory text in the *Short Text* field, for the API.
 
+    > ### Note:  
+    > For API names, use only alphanumeric characters, underscores \(\_\), and hyphens \(-\). Don't start names with a hyphen.
+
 4.  Optionally, enter a version for your API Proxy.
 
 5.  When you choose to version your API Proxy, its name is appended with the version, and its basepath is prepended with the version. For example, if the version you enter is v1, the name is Name\_v1, and the basepath is /v1/SalesOrder. For more information, see [API Versioning](api-versioning-b3cda3b.md).
@@ -56,6 +59,9 @@ The role collection *APIPortal.Administrator* should be assigned to you.
     > Ensure that the service URL you provide doesn’t redirect to a different URL. That is, check if the service URL you’re trying to access is temporarily or permanently moved to a different location. If it does so, then it’s recommended that you provide the new location \(redirected URL, if exists\) of the service. For more information about how to handle URL redirection, see [Handling URL Redirects in an API Proxy Using Policies](handling-url-redirects-in-an-api-proxy-using-policies-9e63c01.md).
 
 3.  Enter the *Name* and *Title*, and provide an introductory text in the *Short Text* field, for the API.
+
+    > ### Note:  
+    > For API names, use only alphanumeric characters, underscores \(\_\), and hyphens \(-\). Don't start names with a hyphen.
 
 4.  Optionally, enter a version for your API Proxy.
 

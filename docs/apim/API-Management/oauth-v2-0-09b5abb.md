@@ -6,6 +6,9 @@ OAuth 2.0 defines an authorization protocol for protected API resources.
 
 To ensure that applications are allowed to act on behalf of users, OAuth 2.0 relies on 'access tokens'. To access protected resources, consumer applications must obtain 'access tokens'. The OAuth 2.0 specification defines the various ways that applications can request and use access tokens. API Management provides a policy type that enables you to configure OAuth 2.0 authorization for your APIs.
 
+> ### Note:  
+> The OAuthV2 policy returns certain non-RFC-compliant response elements. For example, the policy returns a token property, **"token\_type":"BearerToken"**, where the compliant token property is **"token\_type":"Bearer"**. For details on these non-compliant response elements, see [Non-RFC\_compliant Behaviour](non-rfc-compliant-behaviour-7a98cc9.md).
+
 Setting up OAuth 2.0 authorization for your API is a three step process:
 
 1.  Configure a token endpoint: An OAuth token endpoint defines a URI on API Management. The token endpoint is configured with a policy of type OAuthV2. In the OAuthV2 policy, the GenerateAccessToken operation is specified. When this operation is specified, you have the option of configuring one or more grant types. For each grant type specified, an additional set of configuration elements are exposed, providing flexibility in the way that APIs exposed through API Management manage OAuth-based authorization.
@@ -13,6 +16,9 @@ Setting up OAuth 2.0 authorization for your API is a three step process:
 3.  Configure one or more API products: The VerifyAccessToken operation resolves the access token to an API product for which the application has been approved. The request URI is verified against the list of URIs defined in the API product. If the request URI is included in the list defined by the approved API product, then the request is forwarded to the protected resource.
 
 You can attach this policy in the following locations![](images/flow_oauth_a3dea91.png):
+
+> ### Note:  
+> The elements and attributes in this table should be used in the following order:
 
 **Element and Attribute Descriptions**
 
@@ -81,36 +87,12 @@ This element lets you specify where API Management should look for the authoriza
 <tr>
 <td valign="top">
 
-ExpiresIn
+Attributes
 
 </td>
 <td valign="top">
 
-Enforces the expiry time of access tokens and authorization codes in milliseconds. \(For refresh tokens, use <RefreshTokenExpiresIn\>.\) The expiry time value is a system generated value plus the `<ExpiresIn>` value. If `<ExpiresIn>` is set to -1, the token or code is given an infinite lifetime. If `<ExpiresIn>` is not specified, the system applies a default value configured at the system level.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-ExternalAccessToken
-
-</td>
-<td valign="top">
-
-Tells API Management where to find an external access token
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-GenerateResponse
-
-</td>
-<td valign="top">
-
-If set to true, the policy generates and returns a response
+Use this element to include custom attributes to an access token or authorization code. For instance, you might want to embed a user ID or session identifier in the access token, which can later be extracted and verified at runtime.
 
 </td>
 </tr>
@@ -129,12 +111,102 @@ If set to true, the policy generates and returns a response if the ContinueOnErr
 <tr>
 <td valign="top">
 
+ExpiresIn
+
+</td>
+<td valign="top">
+
+Enforces the expiry time of access tokens and authorization codes in milliseconds. \(For refresh tokens, use <RefreshTokenExpiresIn\>.\) The expiry time value is a system generated value plus the `<ExpiresIn>` value. If `<ExpiresIn>` is set to -1, the token or code is given an infinite lifetime. If `<ExpiresIn>` is not specified, the system applies a default value configured at the system level.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ExternalAccessToken
+
+</td>
+<td valign="top">
+
+Tells API Management where to find an external access token.
+
+The variable `request.queryparam.external_access_token` indicates that the external access token should be present as a query parameter, as, for example, `?external_access_token=12345678`. To require the external access token in an HTTP header, for example, set this value to`request.header.external_access_token`. For more information, see [Third-Party OAuth Token Usage](third-party-oauth-token-usage-cccc881.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ExternalAuthorization
+
+</td>
+<td valign="top">
+
+If this element is set to false or is not included, API Management will validate the client\_id and client\_secret as usual against the API Management authorization store. Use this element when working with third-party OAuth tokens. For more information on how to use this element, [Third-Party OAuth Token Usage](third-party-oauth-token-usage-cccc881.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ExternalAuthorizationCode
+
+</td>
+<td valign="top">
+
+Tells API Management where to find an external auth code \(an auth code not generated by API Management\).
+
+The variable `request.queryparam.external_auth_code` indicates that the external auth code should be present as a query parameter, as, for example, `?external_auth_code=12345678`. To require the external auth code in an HTTP header, for example, set this value to`request.header.external_auth_code`. For more information on how to use this element, [Third-Party OAuth Token Usage](third-party-oauth-token-usage-cccc881.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ExternalRefreshToken
+
+</td>
+<td valign="top">
+
+Tells API Management where to find an external refresh token \(a refresh token not generated by API Management\).
+
+The variable `request.queryparam.external_refresh_token` indicates that the external refresh token should be present as a query parameter, as, for example, `?external_refresh_token=12345678`. To require the external refresh token in an HTTP header, for example, set this value to`request.header.external_refresh_token`. For more information on how to use this element, [Third-Party OAuth Token Usage](third-party-oauth-token-usage-cccc881.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 GrantType
 
 </td>
 <td valign="top">
 
 Tells the policy where to find the grant type parameter that is passed in a request.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Operation
+
+</td>
+<td valign="top">
+
+The OAuth 2.0 operation executed by the policy.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PassWord
+
+</td>
+<td valign="top">
+
+This element is used with the password grant type only. With the password grant type, user credentials \(password and username\) must be made available to the OAuthV2 policy. The <PassWord\> and <UserName\> elements are used to specify variables where API Management can find these values. If these elements are not specified, the policy expects to find the values \(by default\) in form parameters named username and password.
 
 </td>
 </tr>
@@ -158,7 +230,7 @@ RefreshToken
 </td>
 <td valign="top">
 
-When requesting an access token using a refresh token, you must supply the refresh token in the request. This element lets you specify where API Management should look for the refresh token. For example, it could be sent as a query parameter, HTTP header, or form parameter
+When requesting an access token using a refresh token, you must supply the refresh token in the request. This element lets you specify where API Management should look for the refresh token. For example, it could be sent as a query parameter, HTTP header, or form parameter.
 
 </td>
 </tr>
@@ -171,6 +243,18 @@ RefreshTokenExpiresIn
 <td valign="top">
 
 Enforces the expiry time of refresh tokens in milliseconds. The expiry time value is a system generated value plus the <RefreshTokenExpiresIn\> value. If <RefreshTokenExpiresIn\> is set to -1, the refresh token is given an infinite lifetime. If <RefreshTokenExpiresIn\> is not specified, the system applies a default value configured at the system level.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GenerateResponse
+
+</td>
+<td valign="top">
+
+If set to true, the policy generates and returns a response.
 
 </td>
 </tr>
@@ -195,18 +279,6 @@ ReuseRefreshToken
 <td valign="top">
 
 When set to true, the existing refresh token is reused until it expires. If false, a new refresh token is issued by API Management when a valid refresh token is presented.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-PassWord
-
-</td>
-<td valign="top">
-
-This element is used with the password grant type only. With the password grant type, user credentials \(password and username\) must be made available to the OAuthV2 policy. The <PassWord\> and <UserName\> elements are used to specify variables where API Management can find these values. If these elements are not specified, the policy expects to find the values \(by default\) in form parameters named username and password.
 
 </td>
 </tr>
@@ -243,6 +315,130 @@ StoreToken
 <td valign="top">
 
 Set this element to true when the <ExternalAuthorization\> element is true. The <StoreToken\> element tells API Management to store the external access token. Otherwise, it will not be persisted.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SupportedGrantTypes
+
+</td>
+<td valign="top">
+
+Specifies the grant types supported by an OAuth token endpoint on API Management. An endpoint may support multiple grant types \(that is, a single endpoint can be configured to distribute access tokens for multiple grant types.\) The grant type is passed in token requests in a `grant_type` parameter.
+
+If no supported grant types are specified, then the only allowed grant types are `authorization_code` and `implicit`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Tokens
+
+</td>
+<td valign="top">
+
+Used with the `ValidateToken` and `InvalidateToken` operations, the element specifies the flow variable that defines the source of the token to be revoked. For example, if developers are expected to submit access tokens as query parameters named `access_token`, use `request.queryparam.access_token`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+UserName
+
+</td>
+<td valign="top">
+
+This element is used exclusively with the password grant type. With this grant type, user credentials \(username and password\) must be provided to the OAuthV2 policy. The <PassWord\> and <UserName\> elements specify the variables where API Management can retrieve these values.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AccessTokenPrefix
+
+</td>
+<td valign="top">
+
+```
+<AccessTokenPrefix>Bearer</AccessTokenPrefix>
+```
+
+By default, VerifyAccessToken expects the access token to be sent in an Authorization header as a Bearer token. For example:
+
+```
+-H "Authorization: Bearer Rft3dqrs56Blirls56a"
+```
+
+
+<table>
+<tr>
+<td valign="top">
+
+Default:
+
+</td>
+<td valign="top">
+
+Bearer
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Presence:
+
+</td>
+<td valign="top">
+
+Optional
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Type:
+
+</td>
+<td valign="top">
+
+String
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Valid values:
+
+</td>
+<td valign="top">
+
+Bearer
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Used with operations:
+
+</td>
+<td valign="top">
+
+VerifyAccessToken
+
+</td>
+</tr>
+</table>
+
+
 
 </td>
 </tr>
@@ -924,6 +1120,59 @@ fault.name = "invalid\_request"
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio09b5abbd3d714ce29ee2366254261170__section_uls_j15_54b"/>
+
+## Non-RFC-compliant Behavior
+
+The OAuthV2 policy returns a token response that contains certain non-RFC-compliant properties. The following table shows the non-compliant properties returned by the OAuthV2 policy and the corresponding compliant properties:
+
+
+<table>
+<tr>
+<th valign="top">
+
+OAuthV2 returns:
+
+</th>
+<th valign="top">
+
+The RFC-compliant property is:
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`"token_type":"BearerToken"` 
+
+</td>
+<td valign="top">
+
+`"token_type":"Bearer"` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`"expires_in":"3600"` 
+
+</td>
+<td valign="top">
+
+`"expires_in":3600` 
+
+</td>
+</tr>
+</table>
+
+Also, the error response for an expired refresh token when grant\_type = refresh\_token is:`{"ErrorCode" : "invalid_request", "Error" :"Refresh Token expired"}`. However, the RFC-compliant response is: `{"error" : "invalid_grant", "error_description" :"refresh token expired"}`.
+
+> ### Note:  
+> If you require that these elements be compliant, you can create a policy, such as a JavaScript or AssignMessage policy, to transform the policy output into a compliant format.
 
 **Related Information**  
 

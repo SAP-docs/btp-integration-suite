@@ -2,28 +2,7 @@
 
 # Salesforce Receiver Adapter
 
-The Salesforce receiver adapter enables an SAP Cloud Integration tenant to accelerate the implementation time and reduce the complexity of connecting to Salesforce.
-
-> ### Note:  
-> In the following cases certain features might not be available for your current integration flow:
-> 
-> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
-> 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
-> 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
-
-> ### Note:  
-> This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
-
 You configure the receiver channel with the Salesforce adapter to enable your tenant to send data to Salesforce customer relationship management \(CRM\) platform.
-
-> ### Note:  
-> You need to download the adapter from SAP Software Download Center. You can find more information on the download navigation path on the following web page: [Legal Disclaimer for Links](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fapi.sap.com%2Fpackage%2FSalesforceAdapter%3Fsection%3DOverview).
-> 
-> After you complete the download, uncompress and extract the files to your local system. Then deploy the adapter on your tenant.
-> 
-> -   For more information on deploying the adapter in multicloud environment, see [Importing Custom Integration Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/482286e544014098874fde0da4bcca2c.html).
 
 Once you’ve created a receiver channel and selected the Salesforce receiver adapter, you can configure its parameters by referring the following description:
 

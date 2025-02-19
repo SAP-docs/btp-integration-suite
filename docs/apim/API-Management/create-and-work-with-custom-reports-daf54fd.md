@@ -42,7 +42,7 @@ You can create customized charts for API metrics that are critical to your busin
 
 6.  Choose *OK* and then save the chart by choosing *Save*.
 
-    The newly created custom view appears as a new report page next to the default report pages. To view all your custom charts and reports, choose the created custom view report page. You can create a maximum of three custom views.
+    The newly created custom view appears as a new report page next to the default report pages. To view all your custom charts and reports, choose the created custom view report page. You can create up to thirty custom views.
 
     To edit the name of a custom view, select the required custom view and click on the :pencil2: icon displayed next to the custom view name.
 

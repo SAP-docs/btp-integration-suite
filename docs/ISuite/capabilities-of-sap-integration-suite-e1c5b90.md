@@ -1,15 +1,8 @@
 <!-- loioe1c5b90d6023465c908c94e525aade04 -->
 
-<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
-
 # Capabilities of SAP Integration Suite
 
 Working with SAP Integration Suite capabilities.
-
-> ### Note:  
-> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
-> 
-> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
 
 SAP Integration Suite brings together the features and functionality of various capabilities such as Cloud Integration, API Management, Graph, Event Mesh, Integration Advisor, Trading Partner Management, OData Provisioning,Data Space Integration, Open Connectors, Integration Assessment, and Migration Assessment.
 

@@ -305,5 +305,5 @@ fault.name Matches "UnresolvedVariable"
 **Related Information**  
 
 
-[Key Value Map Operations](key-value-map-operations-b72dc3f.md "The Key Value Map Operations policy allows you to create a key value map and perform update, read, and delete operations on the map.")
+[Key Value Map Operations](key-value-map-operations-b72dc3f.md "The key value map operations policy allows you to create a key value map and perform update, read, and delete operations on the map.")
 

@@ -17,7 +17,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
 > ### Note:  
 > -   Any EDIFACT message is an interchange. An interchange can have functional group, which in-turn can have messages. The EDI Splitter supports only one functional group with multiple homogeneous messages.
-> -   EDI Splitter version 1.8 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
+> -   EDI Splitter version 1.8 and above supports EDIFACT Syntax versions 2, 3, and 4, while version 2.8 and above additionally supports EDIFACT Syntax versions 1 and x.
 > -   EDI Splitter version 1.9 and above supports LS/LE segments.
 > -   Using the EDI Splitter in combination with the Gather, Join, or Aggregator steps in the integration flow is not supported.
 > -   EDI Splitter version 2.0 and above supports the TRADACOMS standard \(*TRADACOMS* tab; available only for dedicated service plans, see [2903776](https://me.sap.com/notes/2903776)\).

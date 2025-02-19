@@ -8,9 +8,7 @@ Access to different features on Developer Hub depends on the service plan you've
 
 
 
-The roles and features offered in the Standard and Premium service plans include:
-
--   Key Actions for Admins in Developer Hub
+-   Key Actions for **Admins** in Developer Hub
 
 
     <table>
@@ -77,12 +75,12 @@ The roles and features offered in the Standard and Premium service plans include
     <tr>
     <td valign="top">
     
-    *Admin Center* \> *Manage Content* \> *Configurations* to adjust the visibility of the Graph navigator on the Developer Hub.
+    *Admin Center* \> *Manage Content* to adjust the visibility of the Graph navigator on Developer Hub.
     
     </td>
     <td valign="top">
     
-    [Configure the Visibility of Graph Navigator](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-external-content-new-design?version=CLOUD&q=Exyternal%20Content) 
+    [Manage Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-external-content-new-design?version=CLOUD&q=Exyternal%20Content) 
     
     </td>
     </tr>
@@ -137,7 +135,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-    *Site Editor* to customize the visual layout of the Developer Hub.
+    *Site Editor* to customize the visual layout of Developer Hub.
     
     </td>
     <td valign="top">
@@ -159,7 +157,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="3">
+    <td valign="top">
     
     A *Content Admin* you already have the *AuthGroup.Content.Admin* role collection assigned to you.
     
@@ -169,7 +167,7 @@ The roles and features offered in the Standard and Premium service plans include
     *Admin Center* \> *Manage Domain Categories* to create domain categories and add the related products into relevant categories.
 
     > ### Note:  
-    > Additinally, the *AuthGroup.API.Admin*
+    > Additinally, the *AuthGroup.API.Admin* role must be assigned to you to perform the above actions.
 
 
     
@@ -181,6 +179,11 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     </tr>
     <tr>
+    <td valign="top" rowspan="2">
+    
+    A *Content Admin* you already have the *AuthGroup.Content.Admin* role collection assigned to you.
+    
+    </td>
     <td valign="top">
     
     *Admin Center* \> *Manage Content* to create products that includes APIs from different business systems and manage the content that application developers can view on the catalog.
@@ -188,7 +191,7 @@ The roles and features offered in the Standard and Premium service plans include
     </td>
     <td valign="top">
     
-     <?sap-ot O2O class="- topic/xref " href="cdf0fabfc91a4cdab97643e7b6e5069a.xml" text="" desc="" xtrc="xref:11" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/54b4607902a446e39d8a6ba45ce63d6b.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  
+    [Manage Content](50-Development/manage-content-4b89a8b.md) 
     
     </td>
     </tr>
@@ -206,7 +209,7 @@ The roles and features offered in the Standard and Premium service plans include
     </tr>
     </table>
     
--   Key Actions for Application Developers in Developer Hub
+-   Key Actions for **Application Developers** in Developer Hub
 
 
     <table>

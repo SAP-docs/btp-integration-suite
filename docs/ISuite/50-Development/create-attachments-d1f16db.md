@@ -35,6 +35,7 @@ The *Create attachment* Groovy script performs the following steps:
 ```
 import com.sap.gateway.ip.core.customdev.util.Message
 import org.apache.camel.impl.DefaultAttachment
+import com.sap.gateway.ip.core.customdev.util.AttachmentWrapper
 import javax.mail.util.ByteArrayDataSource
 
 def Message processData(Message message) {
@@ -56,7 +57,7 @@ def Message processData(Message message) {
     def dataSource = new ByteArrayDataSource(body, contentType)
 
     // Construct a DefaultAttachment object
-    def attachment = new DefaultAttachment(dataSource)
+    def attachment = new AttachmentWrapper(dataSource)
 
     // Add the attachment to the message
     message.addAttachmentObject('attachment.' + suffix, attachment)

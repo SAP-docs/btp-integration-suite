@@ -168,6 +168,8 @@ Application
 
 Application is a software solution \(SaaS or on-premise\) used in the integration landscape. Integration assessment differentiates between application profile, which indicates the software group, and application instance, which is the actual runtime component.
 
+The maximum number of applications is 20000.
+
 </td>
 </tr>
 <tr>
@@ -179,6 +181,8 @@ Application Instance
 <td valign="top">
 
 Application instances are concrete instances of an application having a concrete deployment model.
+
+The maximum number of application instances is 20000.
 
 </td>
 </tr>
@@ -192,6 +196,8 @@ Technology
 
 Middleware component that helps you solve your integration challenge. Integration technologies are the representative middleware components that are independent of the deployment model, namely on-premise or cloud. Integration Assessment differentiates between integration technology profile, which indicates the software group, and integration technology instance, which is the actual runtime instance.
 
+The maximum number of technologies is 50.
+
 </td>
 </tr>
 <tr>
@@ -203,6 +209,8 @@ Technology Instance
 <td valign="top">
 
 Technology instances are concrete instances of a technology having a concrete deployment model.
+
+The maximum number of technology instances is 150.
 
 </td>
 </tr>
@@ -251,6 +259,8 @@ Vendor
 <td valign="top">
 
 A vendor is a company that develops and sells software. You can choose an existing vendor or create a new vendor for an application or an integration technology.
+
+The maximum number of vendors is 10000.
 
 </td>
 </tr>

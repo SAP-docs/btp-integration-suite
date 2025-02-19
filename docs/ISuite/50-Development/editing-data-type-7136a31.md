@@ -558,6 +558,20 @@ You can also delete nodes from the data type. To do so follow these steps:
 
 
 
+<a name="loio7136a3141d294a8a86884a3b03aad5b4__section_alx_rpj_bdc"/>
+
+## Moving Nodes
+
+Use the checkboxes to perform actions like cut, copy, paste, change positions to up or down, drag, and drop on the nodes. The XSD tab is updated simultaneously.
+
+> ### Note:  
+> -   All these actions are disabled for the root node.
+> -   All these actions are disabled if multiple nodes are selected at once.
+> -   For pasting the cut or copied nodes, all the rules of [adding a node](editing-data-type-7136a31.md#loio7136a3141d294a8a86884a3b03aad5b4__section_pcq_smc_gcc) will apply.
+> -   If you cut a parent node, all its child node are also cut.
+
+
+
 <a name="loio7136a3141d294a8a86884a3b03aad5b4__section_pcp_smc_gcc"/>
 
 ## Saving Data Types

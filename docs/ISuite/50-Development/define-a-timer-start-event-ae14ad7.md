@@ -43,7 +43,8 @@ If you want to configure a process to automatically start and run on a particula
     1.  If you're using the timer flow step with version 1.4 or higher, do the following:
 
         > ### Note:  
-        > Configuring the externalized timer using the [Externalized Parameters View](externalized-parameters-view-27a0216.md) is not supported.
+        > -   Configuring the externalized timer using the [Externalized Parameters View](externalized-parameters-view-27a0216.md) is not supported.
+        > -   Auto-suggest of keys during externalization is not supported.
 
         **Timer Flow Step Version 1.4 and Higher**
 

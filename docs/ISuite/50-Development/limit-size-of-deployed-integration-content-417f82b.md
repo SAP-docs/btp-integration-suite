@@ -2,7 +2,7 @@
 
 # Limit Size of Deployed Integration Content
 
-Limit size of deployed integration content to avoid avoid exceeding the storage capacity of the system.
+Limit size of deployed integration content to avoid exceeding the storage capacity of the system.
 
 With each integration artifact that you deploy on the tenant, you consume a portion of the limited storage capacity. All deployed artifacts \(for example, integration flows\) as well as the objects they use \(for example, scripts\) contribute to the percentage of claimed storage space. Model your integration content in a way that minimizes the impact on this capacity. In this way, you can avoid exceeding this storage capacity.
 

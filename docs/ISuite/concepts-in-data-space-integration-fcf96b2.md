@@ -91,6 +91,18 @@ Offer put out by a provider containing data that can be requested by one or mult
 <tr>
 <td valign="top">
 
+*Contract Reference*
+
+</td>
+<td valign="top">
+
+Identifier used to keep a manual list of the contracts that exist for your company, with the respective business partners and potential use cases. After defining a contract reference, business admins can use them to define both policies and company policies and restrict who can work with you.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Company Policy*
 
 </td>

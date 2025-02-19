@@ -74,7 +74,62 @@ Description
 </td>
 <td valign="top">
 
-Specifies the recipient's endpoint URL. This value can also be specified dynamically. ​
+Specifies the recipient's endpoint URL. This URL connects to the Microsoft Dynamics CRM tenant. This value can also be specified dynamically. ​
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication*
+
+</td>
+<td valign="top">
+
+Select the Authentication type to be used. Possible options include:
+
+-   *OAuth - Password Credentials:* This approach requires a username/password pair \(Credential Name\), a Login URL, a Client ID, and an optional Client Secret.
+-   *OAuth – Client Credentials Secret:*This approach does not require a username/password pair \(Credential Name\). It only needs a Login URL Directory \(tenant\) ID, Client ID, and an optional Client Secret. This Authentication type can also be used in case the account used in the Connection Tab requires Federated authentication.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Login URL*
+
+</td>
+<td valign="top">
+
+Specify the login URL.
+
+Example: `https://login.windows.net`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Directory \(tenant\) ID*
+
+</td>
+<td valign="top">
+
+Specify the ID of the Directory or Tenant.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Credential Name*
+
+</td>
+<td valign="top">
+
+Specify the credential name used to authenticate against the server. This represents the Microsoft Dynamics CRM credential name \(username-password pair stored as Security Material\).
 
 </td>
 </tr>
@@ -93,12 +148,12 @@ Specifies the client ID for the endpoint. This value can be retrieved from Azure
 <tr>
 <td valign="top">
 
-*Credential Name*
+*Client Secret Alias*
 
 </td>
 <td valign="top">
 
-Specifies the name of the User Credentials artifact that contains the credentials for basic authentication.
+Specifies the alias for Client Secret stored in Security Material.
 
 </td>
 </tr>

@@ -47,3 +47,5 @@ OData Provisioning functionality has previously been offered as a service on Neo
 
 [Monitor Errors from OData Provisioning](50-Development/monitor-errors-from-odata-provisioning-e0aeecf.md "Analyze the root cause for errors and where they originated.")
 
+[Transitioning Guide](https://help.sap.com/docs/integration-suite/transitioning-to-odata-provisioning-capability-in-sap-integration-suite/transitioning-to-odata-provisioning-capability-in-sap-integration-suite?version=CLOUD)
+

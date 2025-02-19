@@ -13,7 +13,7 @@ This account model includes services for you to start working in SAP Integration
 
 [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md "Assign the required roles and role collections to users for accessing the individual capabilities.")
 
-[Working with Integration Suite Home](../20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md "Access the various features and resources available on theIntegration Suite home page.")
+[Working with Integration Suite Home](../20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md "Access the various features and resources available on the Integration Suite home page.")
 
 [Activating and Managing Capabilities](../activating-and-managing-capabilities-2ffb343.md "Activate capabilities for the SAP Integration Suite.")
 

@@ -237,6 +237,7 @@ When you deploy and run the integration flow once, the received message looks li
 >     </Product>
 >   </Products>
 > </message>
+> </messages>
 > ```
 
 In the data store Select step, specify a value bigger than `1` for the parameter *Number of Polled Messages*. Then, in the first content modifier \(on the *Body* tab\), specify a different value for the element `productIdentifier` than for the first message processing run. When you deploy and run the integration flow again, the resulting message \(after the integration flow has been processed\) should look like this:

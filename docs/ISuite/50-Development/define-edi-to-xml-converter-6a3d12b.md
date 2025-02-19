@@ -26,7 +26,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
 > ### Note:  
 > -   Any EDIFACT message is an interchange. An interchange can have multiple groups. And each group consists of message types. For EDIFACT messages, the EDI elements in Cloud Integration support only 1 message type per interchange but does not support any group segment \(GS\) per interchange segment.
 > 
->     EDI to XML converter version 1.5 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
+>     EDI to XML Converter version 1.5 and above supports EDIFACT Syntax versions 2, 3, and 4, while version 2.5 and above additionally supports EDIFACT Syntax versions 1 and x.
 > 
 > -   Any ASC-X12 message is an interchange. An interchange can have multiple groups. And each group consists of transaction sets. For ASC-X12 message, the EDI elements in Cloud Integration support only 1 group segment \(GS\) per interchange segment and only 1 transaction set \(ST\) per group segment.
 > -   EDI to XML converter version 1.6 and above supports LS/LE segments.
@@ -37,7 +37,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
 
 ## Procedure
 
-1.  In the graphical editor of integration flow, choose the *EDI to XML Converter* element..
+1.  In the graphical editor of integration flow, choose the *EDI to XML Converter* element.
 
 2.  Define the parameters to convert the EDI data format to XML data format.
 

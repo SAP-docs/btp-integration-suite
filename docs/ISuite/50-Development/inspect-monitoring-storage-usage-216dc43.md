@@ -124,7 +124,7 @@ Choose a bar or a bullet to get more context information and access the followin
 
     Navigate to the *Monitor Message Processing* screen for the selected time period. For more information, see [Monitor Message Processing](monitor-message-processing-314df3f.md).
 
--   *Inspect Usage*
+-   *Inspect Top Consumers*
 
     Navigate to the *Top Integration Flows* screen that allows you to inspect those integration flows that write the most message processing logs for a specific time period. For more information, see: [Inspect Top Integration Flows by Message Processing Log Count](inspect-top-integration-flows-by-message-processing-log-count-696b65e.md).
 
@@ -135,7 +135,7 @@ Choose a bar or a bullet to get more context information and access the followin
 
 <a name="loio216dc43e45b7423eb670e6e1e7bd05e0__section_vgy_pw5_ywb"/>
 
-## What to Do in Critical Situations
+## Troubleshooting
 
 If the assigned capacity for the monitoring database volume is approached or even exceeded, you can inspect which integration flows are the top contributors \(see [Inspect Top Integration Flows by Message Processing Log Count](inspect-top-integration-flows-by-message-processing-log-count-696b65e.md)\). For the top consuming integration flows you can ensure that the message processing *Log Level* parameter is set to *Info* 
 

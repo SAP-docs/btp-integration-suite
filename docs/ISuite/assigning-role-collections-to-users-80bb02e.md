@@ -32,5 +32,5 @@ Role collections enable you to group together the roles you create. The role col
 
 [Set Up Developer Hub Application Using the Standalone Tile](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/80c0519ebf1449d9bed37fccf7ba127a.html "To discover, consume and monitor API from a centralized API catalog, set up the Developer Hub application.") :arrow_upper_right:
 
-[Shadow Users](https://help.sap.com/viewer/38c3df3f8da44a809f937220b3579607/Cloud/en-US/a0f5fe580ed846ca95f8601678509add.html "Whenever a user authenticates at an application in your subaccount using any identity provider, it’s essential that user-related data provided by the identity provider is stored in the form of shadow users.") :arrow_upper_right:
+[Shadow Users](shadow-users-a0f5fe5.md "Whenever a user authenticates at an application in your subaccount using any identity provider, it’s essential that user-related data provided by the identity provider is stored in the form of shadow users.")
 

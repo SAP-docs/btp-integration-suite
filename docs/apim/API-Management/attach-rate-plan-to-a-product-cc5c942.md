@@ -16,10 +16,14 @@ Attach a rate plan to a product using the .
 
 
 > ### Note:  
-> You can only attach rate plans to those products that do not have any rate plans associated with them. A product can only be associated with one rate plan. you can also attach a rate plan to a product during the product creation.
+> A product can only be associated with one rate plan. You can also attach a rate plan to a product during the product creation.
 
 > ### Note:  
-> If you try changing a rate plan or add a new rate plan to a product, all the existing applications of this product will remain unaffected by the changes. For example, if you add a rate plan to a product associated with the application, which has already been subscribed, this will not impact the current billing of the application.
+> If you change a rate plan or add a new rate plan to a product, all the existing applications of this product will remain unaffected by the changes.
+> 
+> Consider the following scenario, where you have subscribed to a product P1 \(that doesn't have a rate plan attached to it\) through application A1 in the source developer portal. In this case, the API calls associated with product P1 will not get billed.
+> 
+> Now if you add a rate plan to product P1, this rate plan will not impact the current billing of application A1 or any other existing subscription. However, if you create a new subscription to product P1, the associated rate plan charges will be applicable.
 
 
 
@@ -33,9 +37,9 @@ You are attaching a rate plan to a product.
 
 1.  Log on to the .
 
-2.  Choose the navigation icon on the left and choose *Design* \> *APIs*.
+2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
-3.  On the *Design* \> *APIs* page, choose *Products*.
+3.  On the *Configure* \> *APIs* page, choose *Products*.
 
 4.  From the list of products available, select the product to which you want to add the rate plan.
 

@@ -26,4 +26,10 @@ This topic describes the behavior of the Tenant Cloning Tool with respect to clo
 
 -   Cloning of custom chart is now supported for migrating API Management content created using the Starter Plan service instance.
 
+-   During migration, the product state from the source system, which reflects the number of API proxies linked to the product, overrides the product state in the target system. For instance, if Product P1 has API proxies A1 and A2, and in the target system, Product P1 only has API proxy A1, then after migrating, Product P1 will have API proxies A1 and A2 in the target state.
+
+-   When migrating, consider bills from both the source and target systems when computing the developer's product usage. For instance, if the migration took place from the source system on the 10th of a particular month, you must take into account the billing in the source system from the 1st to the 10th, and the billing in the target system from the 11th to the end of the month \(either the 30th or 31st, depending on the month\).
+
+-   During migration, the Key Value Map keys and values from the source override those in the target.
+
 

@@ -117,12 +117,12 @@ Some company policies are **predelivered by SAP**, as signified in the *Created 
         </td>
         <td valign="top">
         
-        `is`, `is any of`
+        `is`, `is all of`
         
         </td>
         <td valign="top">
         
-        Enter or select one \(`is`\) or multiple \(`is any of`\) usage purposes.
+        Enter or select one \(`is`\) or multiple \(`is all of`\) usage purposes.
         
         </td>
         </tr>
@@ -134,12 +134,12 @@ Some company policies are **predelivered by SAP**, as signified in the *Created 
         </td>
         <td valign="top">
         
-        `is`, `is any of`
+        `is`, `is all of`
         
         </td>
         <td valign="top">
         
-        Enter one \(`is`\) or multiple \(`is any of`\) contract references.
+        Enter one \(`is`\) or multiple \(`is all of`\) contract references.
         
         </td>
         </tr>

@@ -821,7 +821,7 @@ Receiver adapter
 
 Enables SAP Integration Suite to exchange data with Microsoft Azure CosmosDB. Azure CosmosDB database is a platform as a service and a cloud-based NoSQL database by Azure.
 
-See: [Azure CosmosDB Receiver Adapter](../50-Development/azure-cosmosdb-receiver-adapter-aa8222e.md)
+See: [Azure Cosmos DB Receiver Adapter](../50-Development/azure-cosmos-db-receiver-adapter-aa8222e.md)
 
 </td>
 </tr>
@@ -962,6 +962,38 @@ Enables SAP Integration Suite to connect to a remote system using TCP \(Transmis
 FTP stands for File Transfer Protocol.
 
 See: [Configure the FTP Receiver Adapter](../50-Development/configure-the-ftp-receiver-adapter-c16d331.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Google Pub/Sub* 
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to consume messages from Google Pub/Sub.
+
+See: [Configure the Google Pub/Sub Sender Adapter](../50-Development/configure-the-google-pub-sub-sender-adapter-845ec21.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Google Pub/Sub* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to publish messages to Google Pub/Sub.
+
+See: [Configure the Google Pub/Sub Receiver Adapter](../50-Development/configure-the-google-pub-sub-receiver-adapter-30df22d.md)
 
 </td>
 </tr>
@@ -1702,6 +1734,38 @@ See: [Salesforce Receiver Adapter](../50-Development/salesforce-receiver-adapter
 <tr>
 <td valign="top">
 
+*Salesforce Pub/Sub* 
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to consume messages from Salesforce Pub/Sub API.
+
+See: [Configure the Salesforce Pub/Sub Sender Adapter](../50-Development/configure-the-salesforce-pub-sub-sender-adapter-fdb114c.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Salesforce Pub/Sub* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to publish messages to Salesforce Pub/Sub API.
+
+See: [Configure the Salesforce Pub/Sub Receiver Adapter](../50-Development/configure-the-salesforce-pub-sub-receiver-adapter-6862ff5.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *ServiceNow* 
 
 Receiver adapter
@@ -1849,7 +1913,7 @@ Receiver adapter
 
 Connects SAP Integration Suite to Snowflake. Snowflake is a cloud computing-based data company that provides cloud-based data storage and analytics services.
 
-See: [Snowflake Receiver Adapter](https://help.sap.com/viewer/54e467e3bd2148deb837d34d1ec66a78/IAT/en-US/1299e684c3464a0b82626c8ebee79e25.html "The Snowflake receiver adapter connects SAP Integration Suite to Snowflake.") :arrow_upper_right:
+See: [Snowflake Receiver Adapter](../50-Development/snowflake-receiver-adapter-1299e68.md)
 
 </td>
 </tr>

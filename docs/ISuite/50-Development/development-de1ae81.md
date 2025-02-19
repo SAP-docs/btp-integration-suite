@@ -1,15 +1,8 @@
 <!-- loiode1ae814218247c6bac4975cb486e431 -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
-
 # Development
 
 This section provides an overview of all the development-related aspects for the different capabilities of the SAP Integration Suite.
-
-> ### Note:  
-> [SAP Integration Suite Documentation Survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6) <span class="SAP-icons-V5"></span>
-> 
-> You can help us improve the SAP Integration Suite documentation by sharing your experience. Please take a moment to complete this short [survey](https://sapinsights.eu.qualtrics.com/jfe/form/SV_9WxzBXTWeQe5nq6).
 
 
 
@@ -254,7 +247,7 @@ Generate revenue from APIs.
 </td>
 <td valign="top">
 
-[Monetize APIs](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/fcdc89b5c4884d5e8cfb32c5914943ab.html "API Management provides monetization feature to all API providers to generate revenue for using the APIs.") :arrow_upper_right:
+[Monetize APIs](monetize-apis-fcdc89b.md)
 
 </td>
 </tr>

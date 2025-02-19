@@ -6,8 +6,6 @@ When designing business-to-business scenarios, you can use the Partner Directory
 
 The Partner Directory contains information on partners that are connected to a tenant in the context of a larger business partner network. The information stored in the Partner Directory can be used to parameterize integration flows.
 
-There's no dedicated user interface to access the Partner Directory. You can access its content only based on APIs.
-
 > ### Note:  
 > You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP Business Accelerator Hub:
 > 
@@ -51,4 +49,9 @@ To apply this design guideline, consider the following rules:
 
 -   [Use the AS2 Adapter with Dynamic Encryption and Signature Verification](use-the-as2-adapter-with-dynamic-encryption-and-signature-verification-2cd252c.md)
 
+
+**Related Information**  
+
+
+[Managing Partner Directory Entries](managing-partner-directory-entries-3d6eee7.md "Manage Partner Directory entries that can be used to parameterize integration flows.")
 

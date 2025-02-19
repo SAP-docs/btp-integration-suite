@@ -25,7 +25,7 @@ The default value of the entitlement is 35 GB, as documented at [What Is SAP Clo
 
 ## Screen Components
 
-The bar chart indicates the data store usage of the tenant database for a defined time period, as shown in the image below:
+The bar chart indicates the data store usage of the tenant database for a defined time period, as shown in the image below: ![](images/Inspect_Dara_Store_Image_94bf3b3.png)
 
 You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*, *Past Month*, or *Custom* for a custom time interval.
 
@@ -133,7 +133,7 @@ Choose a bar or a bullet to get more context information and access the followin
 
     Navigate to the *Monitor Message Processing* screen for the selected time period. For more information, see [Monitor Message Processing](monitor-message-processing-314df3f.md).
 
--   *Inspect Usage*
+-   *Inspect Top Consumers*
 
     Navigate to the *Top Data Stores* screen that allows you to inspect tenant database usage by data stores in more detail.
 
@@ -161,7 +161,7 @@ Choose a bar or a bullet to get more context information and access the followin
 
 <a name="loiofcc08f6a450543b7bbed16e7de81e70e__section_vgy_pw5_ywb"/>
 
-## What to Do In Critical Situations
+## Troubleshooting
 
 If there's a critical situation with a data store, check if the data store is used at all in any integration scenario. Also check if you can reduce the setting for *Expiration Time*.
 

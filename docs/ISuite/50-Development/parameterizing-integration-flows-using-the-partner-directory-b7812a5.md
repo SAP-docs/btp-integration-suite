@@ -9,7 +9,7 @@ The Partner Directory facilitates the management of integration scenarios encomp
 > ### Note:  
 > Partner-specific information comprises information such as endpoints, XSLT mappings, XSD definitions, or certificates \(to mention some examples\).
 
-The Partner Directory doesn’t come with a dedicated user interface. You can access \(read/write\) its content through the OData API as well as during message processing through certain \(parameterized\) integration flow steps.
+You can access \(read/write\) the content of the partner directory through the OData API as well as during message processing through certain \(parameterized\) integration flow steps.
 
 
 

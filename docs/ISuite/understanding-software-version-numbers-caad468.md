@@ -71,7 +71,7 @@ Trading Partner Management
 <tr>
 <td valign="top">
 
-Integration Advisor 
+Integration Advisor
 
 </td>
 <td valign="top">

@@ -144,13 +144,20 @@ The endpoint URL that has been used at runtime is displayed in the message proce
 </td>
 <td valign="top">
 
-The type of proxy that you are using to connect to the target system:
+The type of proxy that you are using to connect to the target system.
 
--   Select ** if you are connecting to a cloud system.
+If you are using Edge Integration Cell or Process Orchestration runtime profile:
+
+-   Select *Internet* if you are connecting to a cloud system.
 
 -   If you select *Manual*, you can manually specify the *Proxy Host* and the *Proxy Port* \(by using the corresponding entry fields\).
 
-    This option is only available if you have chosen a *Process Orchestration* product profile.
+
+If you are using Cloud Integration runtime profile:
+
+-   Select *Internet* if you are connecting to a cloud system.
+
+-   Select *On Premise* if you are connecting via Cloud Connector, and use the parameter `Location ID`.
 
 
 

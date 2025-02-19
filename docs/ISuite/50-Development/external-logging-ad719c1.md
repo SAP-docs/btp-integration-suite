@@ -4,20 +4,20 @@
 
 The external logging feature enables customers to send message processing logs to an external system, independently of available database storage. This section describes how to enable it on your tenant.
 
-The major customer use cases for the external logging feature are the integration into existing monitoring solutions \(such as Splunk\), or the consolidation of logs of multiple tenants. You can use it for high-throughput scenarios \(currently limited by our systems and databases\) and high volume queries. And it also suitable for advanced analysis, as well as for correlation with business data and long-term archiving.
+The major customer use cases for the external logging feature are the integration into existing monitoring solutions in Splunk, or the consolidation of logs of multiple tenants. You can use it for high-throughput scenarios \(currently limited by our systems and databases\) and high volume queries. And it also suitable for advanced analysis, as well as for correlation with business data and long-term archiving.
 
 If you've already set up Splunk as your external logging destination, you can enable the external logging feature.
 
-To activate external logging in the Cloud Foundry Environment on your tenant, you've to fulfill following prerequisites:
+To activate external logging in the Cloud Foundry Environment on your tenant, you have to fulfill the following prerequisites:
 
--   You've to be tenant Admin with the role `AuthGroup_Administrator`as well as the role `ExternalLoggingActivate`.
+-   You've to be tenant Admin with the role `AuthGroup_Administrator` as well as the role `ExternalLoggingActivate`.
 
 -   Use `activateExternalLogging` function of the official OData API, see:
 
     [Message Processing Logs](https://api.sap.com/api/MessageProcessingLogs/overview)
 
 
-To access APIs clients, see [Setting Up Inbound HTTP connections \(for API Clients\)](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/8db3d5141cd644019f0cf244e2a6763f.html?locale=en-US). Create a new role collection and inlcude the following roles: `ExternalLoggingActivationRead` and `ExternalLoggingActivate`.
+To access APIs clients, see [Setting Up Inbound HTTP connections \(for API Clients\)](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/8db3d5141cd644019f0cf244e2a6763f.html?locale=en-US). Create a new role collection and include the following roles: `ExternalLoggingActivationRead` and `ExternalLoggingActivate`.
 
 To create a destination:
 
@@ -77,7 +77,7 @@ Example:
 
 For a Splunk Cloud Platform host `myhost`, use
 
-`http://http-inputs-myhost.splunkcloud.com`
+`https://http-inputs-myhost.splunkcloud.com`
 
 </td>
 </tr>
@@ -270,7 +270,7 @@ Send a `GET` call to the URL: `https://path-to-odata-api/api/v1/ExternalLoggingA
 
 You've to reload the *Monitor* to be able to see the external logging level options for your integration flows. If the enablement isn't successful, the system throws an error code as well as an error message.
 
-If external logging is activated,
+If the external logging is activated,
 
 1.  Go to the *Manage Integration* section.
 

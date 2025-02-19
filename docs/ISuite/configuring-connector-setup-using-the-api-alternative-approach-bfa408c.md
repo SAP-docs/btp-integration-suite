@@ -12,20 +12,20 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 
 ## Prerequisites
 
--   You've completed the steps described in  <?sap-ot O2O class="- topic/xref " href="247522607cdc4dbebe6dbf09068aaa7e.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/bfa408ca806d4b9f9a891b37901d75aa.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  where you activate SAP Integration Suite and the Cloud Integration capability.
+-   You've completed the steps described in [Preparatory Steps](preparatory-steps-95366b2.md) where you activate SAP Integration Suite and the Cloud Integration capability.
 
--   You've completed the steps described in  <?sap-ot O2O class="- topic/xref " href="be375cb46b4a4fada37e62b90efcf0d8.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/bfa408ca806d4b9f9a891b37901d75aa.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  where you add Data Space Integration to your list of active capabilities of SAP Integration Suite.
--   You've completed the steps described in  <?sap-ot O2O class="- topic/xref " href="cc811d8612d64ede9ccf7edcb390ecc2.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/bfa408ca806d4b9f9a891b37901d75aa.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  where you define user roles for Data Space Integration.
+-   You've completed the steps described in [Activating the Capability](activating-the-capability-b49ad35.md) where you add Data Space Integration to your list of active capabilities of SAP Integration Suite.
+-   You've completed the steps described in [Configuring User Access](configuring-user-access-6ae0ff7.md) where you define user roles for Data Space Integration.
 
--   You've completed the steps described in  <?sap-ot O2O class="- topic/xref " href="7014b7d65f2d479d9328d302e5ec0499.xml" text="" desc="" xtrc="xref:4" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/bfa408ca806d4b9f9a891b37901d75aa.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  where you create Cloud Integration service keys.
+-   You've completed the steps described in [Preparing Cloud Integration](preparing-cloud-integration-07f81f2.md) where you create Cloud Integration service keys.
 
--   You've completed the steps described in  <?sap-ot O2O class="- topic/xref " href="fb8d9abc5a35406c8565701ddcc7d217.xml" text="" desc="" xtrc="xref:5" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/bfa408ca806d4b9f9a891b37901d75aa.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  where you create two technical users in the landscape portal of your chosen data space.
+-   You've completed the steps described in [Creating Technical Users in Landscape Portal](creating-technical-users-in-landscape-portal-b95f0ef.md) where you create two technical users in the landscape portal of your chosen data space.
 
 
 > ### Note:  
 > The steps here describe the process for configuring the connector setup using an API.
 > 
-> If you want to do the configuration using the user interface of Data Space Integration, see  <?sap-ot O2O class="- topic/xref " href="802257f4a72642ad80812009e4bd3c54.xml" text="" desc="" xtrc="xref:6" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/bfa408ca806d4b9f9a891b37901d75aa.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+> If you want to do the configuration using the user interface of Data Space Integration, see [Configuring Connector Setup Using the UI \(Recommended Approach\)](configuring-connector-setup-using-the-ui-recommended-approach-4909d3f.md).
 
 
 
@@ -39,7 +39,7 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 
     2.  Select *Create* to create a new service instance and select `Data Space Integration API Access`. In the *Plan* field, enter `api`, and add an instance name. Then, choose *Next*.
 
-    3.  Next, select the applicable roles to enforce user authorization. For this specific process, any role works, even `AuthGroup_DataspaceReadOnly`. For an overview of all roles, see  <?sap-ot O2O class="- topic/xref " href="bb8cd79bd90e4b70ae424d7ff3f8c1e8.xml" text="" desc="" xtrc="xref:7" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/bfa408ca806d4b9f9a891b37901d75aa.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    3.  Next, select the applicable roles to enforce user authorization. For this specific process, any role works, even `AuthGroup_DataspaceReadOnly`. For an overview of all roles, see [Personas and Roles](60-Security/identity-and-access-management-for-data-space-integration-211c66a.md#loio211c66a2f65e4bf0ad0e93e68cfff984__section_cxz_vsk_pcc).
 
         Once the roles are selected, select `client_credentials` as the grant type and choose *Next*.
 
@@ -62,25 +62,24 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 3.  To register your connector and connect to the data space, make the following POST call filled with your specific details:
 
     ```
-    POST	/api/v1/dsi/registration
-    						
-    						{
-    						"BPN": "<business partner number>",
-    						"location": "<location code>",
-    						"connectorName": "<name of the connector>",
-    						"connectorUrl": "<URL of the connector>",
-    						"connectorUserClientId": "<client ID of the offer management user>",
-    						"connectorUserClientSecret": "<client secret of the offer management user>",
-    						"centralIdpTokenUrl": "<central IDP token URL>",
-    						"backendPortalUrl": "<backend portal URL>",
-    						"bdrsServerUrl":"<BDRS server URL>",
-    						"did":"<decentral identifier>",
-    						"trustedIssuers":["<trusted issuers>"], 
-    						"stsDimClientId": "<client ID of the identity wallet management user>",
-    						"stsDimClientSecret": "<client secret of the identity wallet management user>",
-    						"stsDimTokenUrl": "<IATP STS OAuth token URL>",
-    						"stsDimUrl": "<IATP STS decentral identity management URL>"
-    						}
+    POST	/api/v1/dsi/registration				
+    	{
+    	"BPN": "<business partner number>",
+    	"location": "<location code>",
+    	"connectorName": "<name of the connector>",
+    	"connectorUrl": "<URL of the connector>",
+    	"connectorUserClientId": "<client ID of the offer management user>",
+    	"connectorUserClientSecret": "<client secret of the offer management user>",
+    	"centralIdpTokenUrl": "<central IDP token URL>",
+    	"backendPortalUrl": "<backend portal URL>",
+    	"bdrsServerUrl":"<BDRS server URL>",
+    	"did":"<decentral identifier>",
+    	"trustedIssuers":["<trusted issuers>"], 
+    	"stsDimClientId": "<client ID of the identity wallet management user>",
+    	"stsDimClientSecret": "<client secret of the identity wallet management user>",
+    	"stsDimTokenUrl": "<IATP STS OAuth token URL>",
+    	"stsDimUrl": "<IATP STS decentral identity management URL>"
+    	}
     ```
 
 4.  Now, register Cloud Integration using the Data Space Integration onboarding API.
@@ -92,25 +91,25 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 
     2.  The credentials open. Copy the URL, and save it for later.
 
-    3.  In the Data Space Integration connector URL, call the following endpoint with the API parameters \(ciapi\) and runtime parameters \(cirt\) from the Cloud Integration service keys. To get these parameters, access the SAP BTP cockpit, go to *Instances and Subscriptions*, and open the details view of the service keys. See:  <?sap-ot O2O class="- topic/xref " href="7014b7d65f2d479d9328d302e5ec0499.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/bfa408ca806d4b9f9a891b37901d75aa.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    3.  In the Data Space Integration connector URL, call the following endpoint with the API parameters \(ciapi\) and runtime parameters \(cirt\) from the Cloud Integration service keys. To get these parameters, access the SAP BTP cockpit, go to *Instances and Subscriptions*, and open the details view of the service keys. See [Preparing Cloud Integration](preparing-cloud-integration-07f81f2.md).
 
         ```
         PUT	/api/v1/dsi/credentials/dataplane
         									
-        									[     
-        									{
-        									"clientid": "<clientid>",
-        									"clientsecret":"<clientsecret>",
-        									"url": "<URL>",
-        									"tokenurl": "<tokenurl>"
-        									},
-        									{
-        									"clientid": "<clientid>",
-        									"clientsecret": "<clientsecret>",
-        									"url": "<URL>",
-        									"tokenurl": "<tokenurl>"
-        									}
-        									]
+        	[     
+        	{
+        	"clientid": "<clientid>",
+        	"clientsecret":"<clientsecret>",
+        	"url": "<URL>",
+        	"tokenurl": "<tokenurl>"
+        	},
+        	{
+        	"clientid": "<clientid>",
+        	"clientsecret": "<clientsecret>",
+        	"url": "<URL>",
+        	"tokenurl": "<tokenurl>"
+        	}
+        	]
         ```
 
         > ### Note:  
@@ -143,12 +142,12 @@ You can now use Data Space Integration.
 
 Depending on your role, you can now get started with one of the following tasks:
 
--   Learn how to work with assets, policies, and contract definitions as a provider. See  <?sap-ot O2O class="- topic/xref " href="e438274e254449429a1d9752b24a3c78.xml" text="" desc="" xtrc="xref:9" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/bfa408ca806d4b9f9a891b37901d75aa.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+-   Learn how to work with assets, policies, and contract definitions as a provider. See [Data Spaces - Providing Assets, Policies, and Contract Definitions](50-Development/data-spaces-providing-assets-policies-and-contract-definitions-079b342.md).
 
--   Learn how to discover offers and consume assets provided by other participants of a data space. See  <?sap-ot O2O class="- topic/xref " href="32a37405e68246669bb3b4c1a8995e7c.xml" text="" desc="" xtrc="xref:10" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/bfa408ca806d4b9f9a891b37901d75aa.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+-   Learn how to discover offers and consume assets provided by other participants of a data space. See [Consuming Data Space Assets](consuming-data-space-assets-5c0cdb8.md).
 
--   Monitor your active contract agreements. See  <?sap-ot O2O class="- topic/xref " href="b0169176b43b4e02a03b3b24c5adf8b6.xml" text="" desc="" xtrc="xref:11" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/bfa408ca806d4b9f9a891b37901d75aa.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+-   Monitor your active contract agreements. See [Monitoring Agreements](50-Development/monitoring-agreements-a247cc4.md).
 
--   Discover the APIs Data Space Integration provides on the SAP Business Accelerator Hub and how to work with them. See  <?sap-ot O2O class="- topic/xref " href="17544cc377394d2885662fbda0bdd00b.xml" text="" desc="" xtrc="xref:12" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/bfa408ca806d4b9f9a891b37901d75aa.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+-   Discover the APIs Data Space Integration provides on the SAP Business Accelerator Hub and how to work with them. See [Using APIs to Work With Data Space Integration](using-apis-to-work-with-data-space-integration-411fd1e.md).
 
 

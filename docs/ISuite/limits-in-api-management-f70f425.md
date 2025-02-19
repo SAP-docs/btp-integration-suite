@@ -77,19 +77,14 @@ Yes
 <tr>
 <td valign="top">
 
-Maximum number of resources that can be attached to an API proxy
+Maximum number of resources in an API product
 
 </td>
 <td valign="top">
 
--   You can attach up to 100 resources to an API proxy. However, it is recommended that you do not add more than 100 resources to an API proxy as it might lead to a timeout while updating or deploying an API proxy.
+-   An API product with more than 100 resources may experience timeouts when updating, deploying an API proxy, or publishing the product.
 
-    If your API product includes API proxies with more than 100 resources, and you haven't yet published any products by selectively choosing resources, please contact the SAP API Management support team. You can accomplish this by creating a ticket with the component OPU-API-OD-DT.
-
-    > ### Note:  
-    > By selectively choosing resources, we mean avoiding the attempt to select specific resources from the *Add API* dialog while adding an API proxy to a product on the *Create Product* page.
-
--   If you are using Developer Hub OData APIs to retrieve resources from an API proxy, please note that the retrieved result may not include all the resources available in the API proxy.
+    If your API product includes API proxies with more than 100 resources, please raise a support ticket through the [SAP Support Portal](https://support.sap.com/en/index.html) using the component OPU-API-OD-DT.
 
 
 

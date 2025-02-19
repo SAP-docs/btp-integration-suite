@@ -2,7 +2,7 @@
 
 # Configure in Data Spaces
 
-Learn how to create, edit, and assign company policies in Data Space Integration.
+Learn how to work with company policies and contract references in Data Space Integration.
 
 
 
@@ -22,9 +22,7 @@ SAP predelivers company policies, but you can also create your own company polic
 
 
 
-<a name="loio7b65115a941143bf85e011f909b713a7__section_hht_1jg_qcc"/>
-
-## Authorizations
+### Authorizations
 
 To work with company policies, you require the following roles in your SAP BTP subaccount:
 
@@ -35,6 +33,22 @@ To work with company policies, you require the following roles in your SAP BTP s
 
 See also [Personas and Roles](../60-Security/identity-and-access-management-for-data-space-integration-211c66a.md#loio211c66a2f65e4bf0ad0e93e68cfff984__section_cxz_vsk_pcc).
 
+
+
+<a name="loio7b65115a941143bf85e011f909b713a7__section_hht_1jg_qcc"/>
+
+## About Contract References
+
+With contract references, you can keep a manual list of the contracts that exist for your company, with the respective business partners and potential use cases.
+
+After defining contract references, you can use them to define both policies and company policies and restrict who can work with you.
+
+
+
+### Authorizations
+
+To work with contract references, you require the role collection `DataspaceBusinessAdmin`.
+
 **Related Information**  
 
 
@@ -43,4 +57,6 @@ See also [Personas and Roles](../60-Security/identity-and-access-management-for-
 [Assign Company Policies](assign-company-policies-b4c9e0b.md "Learn how to assign company policies in Data Space Integration.")
 
 [Identity and Access Management for Data Space Integration](../60-Security/identity-and-access-management-for-data-space-integration-211c66a.md "Learn about the personas and roles in Data Space Integration, as well as their typical tasks and permissions.")
+
+[Create Contract References](create-contract-references-1b73cdc.md "Maintain contract references to keep an overview of the contracts you have with other business partners in a data space.")
 

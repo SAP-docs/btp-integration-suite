@@ -12,7 +12,7 @@ Application programming interfaces \(APIs\) are available for the following use 
 
 
 > ### Note:  
-> The Java standard libraries of Java 17 can be used.
+> The Java standard libraries of Java 8 can be used.
 > 
 > Cloud Integration supports the XML Document Object Model \(DOM\) to process XML documents.
 > 

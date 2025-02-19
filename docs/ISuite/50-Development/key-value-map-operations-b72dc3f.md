@@ -2,11 +2,14 @@
 
 # Key Value Map Operations
 
-The Key Value Map Operations policy allows you to create a key value map and perform update, read, and delete operations on the map.
+The key value map operations policy allows you to create a key value map and perform update, read, and delete operations on the map.
 
 Key Value Map Operations are typically used to store or retrieve long-lived information that needs to be reused over multiple request or response transactions.
 
-KeyValue refers to any arbitrary data in the format key=value, for example localhost=127.0.0.1,zip\_code=94110, or first\_name=Philip.
+> ### Note:  
+> The policy doesn't currently support creating encrypted key value maps. You can use the UI or API for this purpose. However, you can update encrypted key value maps with the policy.
+
+Key value refers to any arbitrary data in the format key=value, for example localhost=127.0.0.1,zip\_code=94110, or first\_name=Philip.
 
 In the first example, localhost is a key, and 127.0.0.1 is a value.
 
@@ -153,7 +156,7 @@ String
 </td>
 <td valign="top">
 
-Defines the boundary of accessibility for Key Value Maps.
+Defines the boundary of accessibility for key value maps..
 
 The default value is environment. That is, by default, maps entries are shared by all API proxies running in an environment.
 
@@ -286,9 +289,9 @@ N/A
 </td>
 <td valign="top">
 
-Seed values for key value maps, which are populated in the key value map when it’s initialized. Make sure to specify the name of the KVM with the mapIdentifier attribute on the parent element.
+Seed values for key value maps, which are populated in the key value map when it’s initialized. Make sure to specify the name of the key value map with the mapIdentifier attribute on the parent element.
 
-When using this element, when you save the policy on a deployed version of the proxy, or deploy the API proxy bundle containing the policy with this element, the key\(s\) are automatically created in the KVM \(as unencrypted\). If the values in the policy are different than the values in the KVM, the values in the KVM are overwritten when the proxy is deployed. Any new keys/values are added to the existing KVM alongside the existing keys/values.
+When using this element, when you save the policy on a deployed version of the proxy, or deploy the API proxy bundle containing the policy with this element, the key\(s\) are automatically created in the key value map \(as unencrypted\). If the values in the policy are different than the values in the key value map, the values in the key value map are overwritten when the proxy is deployed. Any new keys/values are added to the existing key value map alongside the existing keys/values.
 
 > ### Sample Code:  
 > ```
@@ -464,7 +467,7 @@ Specifies the key in a key/value pair. This element specifies the name when crea
     > ```
 
 
-When the Key element includes multiple Parameter elements, the effective key string is the concatenation of the values of each parameter, joined with a double underscore. For example, in the above example, if the api\_proxy.name variable has the value "def23", then the effective key will be targetendpoint\_\_def23\_\_size.
+When the key element includes multiple Parameter elements, the effective key string is the concatenation of the values of each parameter, joined with a double underscore. For example, in the above example, if the api\_proxy.name variable has the value "def23", then the effective key will be targetendpoint\_\_def23\_\_size.
 
 > ### Note:  
 > Whether you're retrieving, updating, or deleting a key/value entry, the key name must match the name of the key in the key value map.
@@ -857,7 +860,7 @@ N/A
 
 Deletes the specified key/value pair. At least one of <Get\>, <Put\>, or <Delete\> must be used.
 
-Make sure to specify the name of the KVM with the ‘mapIdentifier’ attribute on the parent element.
+Make sure to specify the name of the key value map with the ‘mapIdentifier’ attribute on the parent element.
 
 > ### Sample Code:  
 > ```

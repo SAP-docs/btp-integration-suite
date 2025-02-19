@@ -19,6 +19,9 @@ Use the HTTP receiver adapter to communicate with target systems using HTTP mess
 The HTTP Receiver adapter works well with target systems that supports either chunked transfer encoding or rely on the existence of the HTTP Content-Length header.
 
 > ### Note:  
+> The adapter automatically decompresses the received '.gzip' response, so the HTTP Content-Length header reflects the uncompressed size.
+
+> ### Note:  
 > -   For versions 1.10 and lower, the adapter works only with target systems that support chunked transfer encoding and may not rely on the existence of the HTTP Content-Length header.
 > 
 > -   SAP recommends you add content-type header that indicates type of payload before you make an HTTP outbound call.

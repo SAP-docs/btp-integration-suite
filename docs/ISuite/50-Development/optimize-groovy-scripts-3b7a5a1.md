@@ -54,9 +54,7 @@ Ensure that Generative AI features are enabled in your SAP Integration Suite ten
     > Don't expose sensitive information in your scripts when using *Optimize*. For more information, see SAP Note [3542713](https://me.sap.com/notes/3542713).
 
     > ### Restriction:  
-    > -   This feature is only available for local script step and not script collection.
-    > 
-    > -   This feature is only available for the Premium service plan of the SAP Integration Suite. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+    > This feature is only available for the Premium service plan of the SAP Integration Suite. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 
 

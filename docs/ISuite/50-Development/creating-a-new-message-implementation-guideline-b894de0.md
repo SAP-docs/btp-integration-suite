@@ -61,6 +61,8 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
     > 
     > Nodes that do not have a unique qualification marker are disabled for selection.
 
+    To know more, see this [blog](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-payload-based-qualification-at-time-of-mig-creation/ba-p/13990599).
+
 11. In the MIG Creation step, maintain the following fields:
 
     1.  *Name*: Name of the MIG

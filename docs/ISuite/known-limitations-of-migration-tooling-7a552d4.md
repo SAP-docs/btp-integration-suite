@@ -69,6 +69,17 @@ For the patterns that support CSV to XML or XML to CSV converter, the following 
 
 
 
+<a name="loio7a552d40e1144af78d6ee0981ff2a54c__section_ej4_4hp_k2c"/>
+
+## Limitations of Receiver Determination Object
+
+-   You cannot extract the scenarios that don’t involve Receiver Determination object.
+-   A sender agreement is mandatory. If it is absent in a particular scenario, an error stating "Couldn't find Sender Agreement \(Inbound processing details\)" may occur. Without a configured sender sgreement, the details of the Sender Communication Channel cannot be retrieved.
+-   A receiver agreement is mandatory. If it is absent in a particular scenario, an error stating "Couldn't find Receiver Agreement \(Outbound processing details\)" may occur. Without a configured receiver agreement, the details of the Receiver Communication Channel cannot be retrieved.
+-   Extended Receiver Determination type \(Dynamic Receiver\) is not supported.
+
+
+
 <a name="loio7a552d40e1144af78d6ee0981ff2a54c__section_fb2_qng_tzb"/>
 
 ## Limitations of CSV to XML Converter

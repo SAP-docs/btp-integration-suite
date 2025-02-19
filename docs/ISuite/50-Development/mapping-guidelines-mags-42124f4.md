@@ -18,7 +18,9 @@ A Mapping Guideline \(MAG\) is based on a source and a target message implementa
 
 The *Mapping Guidelines* tab displays an overview of all the MAGs that you've created.
 
--   *Add*: You can create a new MAG. To know more, see [Creating a New Mapping Guideline](creating-a-new-mapping-guideline-a42920e.md)
+The following buttons are provided in *Mapping Guidelines* tab.
+
+-   *Create*: You can create a new MAG. To know more, see [Creating a New Mapping Guideline](creating-a-new-mapping-guideline-a42920e.md)
 
 -   *Export*: You can export your mapping guidelines. To know more, see [Exporting MIG/MAG](exporting-mig-mag-c8bba26.md)
 -   *Import*: You can import mapping guidelines into your tenant. To know more, see [Importing MIG/MAG](importing-mig-mag-7139aad.md)

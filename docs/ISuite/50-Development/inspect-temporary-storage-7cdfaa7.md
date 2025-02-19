@@ -43,10 +43,23 @@ Choose a bar or a bullet to get more context information and access the followin
 
     Navigate to the *Monitor Message Processing* screen for the selected time period. For more information, see [Monitor Message Processing](monitor-message-processing-314df3f.md).
 
--   *Inspect Usage*
+-   *Inspect Top Consumers*
 
     Navigate to the *Top Integration Flows* screen that allows you to inspect those integration flows that occupy the most storage in more detail. For more information, see [Inspect Top Integration Flows by Storage Usage](inspect-top-integration-flows-by-storage-usage-9183e3b.md).
 
 -   *Zoom Out* and *Zoom In* to extend/reduce the selected time period. 
 
+
+
+
+<a name="loio7cdfaa73d9fd47c08acf27a9d9b2b2a1__section_lry_4jt_22c"/>
+
+## Troubleshooting
+
+If temporary files show storage usage at a warning or critical level, consider the following:
+
+-   Check if the maximum file size is very large, such as hundreds of MB or even GB. If it is, consider processing smaller messages. For more information, see Disk Space in [System Scope for Cloud Integration](../system-scope-for-cloud-integration-8ea3822.md) .
+-   Check for delays in message processing when temporary storage reached a critical level. Message processing delays can cause temporary files to accumulate in storage.
+
+If these recommendations don't resolve the issue, consider adjusting the integration flow design and message payload so that the system processes smaller messages with less latency.
 

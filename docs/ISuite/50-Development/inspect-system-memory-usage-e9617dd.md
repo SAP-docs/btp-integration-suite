@@ -56,7 +56,7 @@ Choose a bar or a bullet to get more context information and to access to the fo
 
     Navigate to the *Monitor Message Processing* screen for the selected time period For more information, see [Monitor Message Processing](monitor-message-processing-314df3f.md).
 
--   *Inspect Usage*
+-   *Inspect Top Consumers*
 
     Navigate to the *Top Integration Flows* screen that allows you to inspect memory allocation by integration flows in more detail. For more information, see: [Inspect Integration Flows By System Memory Usage](inspect-integration-flows-by-system-memory-usage-2a2e1f2.md).
 
@@ -71,7 +71,7 @@ Choose a bar or a bullet to get more context information and to access to the fo
 
 <a name="loioe9617dd737384100b96194d37badbb80__section_vgy_pw5_ywb"/>
 
-## What to Do in Critical Situations
+## Troubleshooting
 
 If memory exhaustion have been detected, you can identify the corresponding integration flow and flow step on the *Top Flows by Memory Allocation* screen.
 

@@ -4,6 +4,23 @@
 
 Edge Integration Cell only uses encrypted communication. Internal communication is secured using mutual Transport Layer Security \(mTLS\), enabled via Istio, following a zero-trust paradigm. For more information, see [Security](https://istio.io/latest/docs/concepts/security/).
 
+For all communication flows listed in the table below, except for the Edge Deploy Controller, the domain `*.hana.ondemand.com` is used as the standard endpoint. For the Edge Deploy Controller, specific domains are used depending on the deployment environment:
+
+BTP on Azure:
+
+-   `*.blob.storage.azure.net`
+
+-   `*.blob.core.windows.net` \(previously used as the BTP Object Store Service Endpoint URL\)
+
+
+BTP on AWS:
+
+-   `*.amazonaws.com`
+
+BTP on GCP:
+
+-   `*.storage.googleapis.com`
+
 The following table provides an overview of communication flows between a cloud and an edge environment.
 
 ****

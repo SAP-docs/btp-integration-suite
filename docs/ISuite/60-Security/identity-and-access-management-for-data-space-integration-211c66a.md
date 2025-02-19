@@ -55,9 +55,9 @@ You Can...
 
 -   Initiate transfer of assets.
 
--   Use the Data Management API to request data via Data Space Integration.
+-   Use the Data Management API to request data with Data Space Integration.
 
--   Use the EDR Management API to request data via Data Space Integration.
+-   Use the EDR Management API to request data with Data Space Integration.
 
 -   Read the negotiated agreements.
 
@@ -109,6 +109,8 @@ You Can...
 <td valign="top">
 
 -   Create and edit company policies.
+
+-   Work with contract references.
 
 
 

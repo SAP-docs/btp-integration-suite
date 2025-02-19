@@ -16,7 +16,7 @@ You've set up your global account and at least one subaccount on SAP BTP. For an
 
 ## Context
 
-Before you can continue with the onboarding steps that are specific to Data Space Integration, check that you've completed the following steps. Depending on your experience with SAP Integration Suite and Cloud Integration, you might have already completed them and can continue with  <?sap-ot O2O class="- topic/xref " href="be375cb46b4a4fada37e62b90efcf0d8.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/95366b2757d64a89aaa4efa6027a8fb4.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> . Still, to avoid complications later on, check that you meet the following conditions.
+Before you can continue with the onboarding steps that are specific to Data Space Integration, check that you've completed the following steps. Depending on your experience with SAP Integration Suite and Cloud Integration, you might have already completed them and can continue with [Activating the Capability](activating-the-capability-b49ad35.md). Still, to avoid complications later on, check that you meet the following conditions.
 
 
 
@@ -43,5 +43,5 @@ You're onboarded to SAP Integration Suite with Cloud Integration enabled.
 
 ## Next Steps
 
-Now that you meet all conditions outlined here, continue with  <?sap-ot O2O class="- topic/xref " href="be375cb46b4a4fada37e62b90efcf0d8.xml" text="" desc="" xtrc="xref:5" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/95366b2757d64a89aaa4efa6027a8fb4.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+Now that you meet all conditions outlined here, continue with [Activating the Capability](activating-the-capability-b49ad35.md).
 

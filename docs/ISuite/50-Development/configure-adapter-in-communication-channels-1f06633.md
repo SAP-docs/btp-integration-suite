@@ -636,7 +636,7 @@ Receiver adapter
 
 Enables SAP Integration Suite to exchange data with Microsoft Azure CosmosDB. Azure CosmosDB database is a platform as a service and a cloud-based NoSQL database by Azure.
 
-See: [Azure CosmosDB Receiver Adapter](azure-cosmosdb-receiver-adapter-aa8222e.md)
+See: [Azure Cosmos DB Receiver Adapter](azure-cosmos-db-receiver-adapter-aa8222e.md)
 
 </td>
 </tr>
@@ -777,6 +777,38 @@ Enables SAP Integration Suite to connect to a remote system using TCP \(Transmis
 FTP stands for File Transfer Protocol.
 
 See: [Configure the FTP Receiver Adapter](configure-the-ftp-receiver-adapter-c16d331.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Google Pub/Sub* 
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to consume messages from Google Pub/Sub.
+
+See: [Configure the Google Pub/Sub Sender Adapter](configure-the-google-pub-sub-sender-adapter-845ec21.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Google Pub/Sub* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to publish messages to Google Pub/Sub.
+
+See: [Configure the Google Pub/Sub Receiver Adapter](configure-the-google-pub-sub-receiver-adapter-30df22d.md)
 
 </td>
 </tr>
@@ -1517,6 +1549,38 @@ See: [Salesforce Receiver Adapter](salesforce-receiver-adapter-a548be9.md)
 <tr>
 <td valign="top">
 
+*Salesforce Pub/Sub* 
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to consume messages from Salesforce Pub/Sub API.
+
+See: [Configure the Salesforce Pub/Sub Sender Adapter](configure-the-salesforce-pub-sub-sender-adapter-fdb114c.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Salesforce Pub/Sub* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to publish messages to Salesforce Pub/Sub API.
+
+See: [Configure the Salesforce Pub/Sub Receiver Adapter](configure-the-salesforce-pub-sub-receiver-adapter-6862ff5.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *ServiceNow* 
 
 Receiver adapter
@@ -1664,7 +1728,7 @@ Receiver adapter
 
 Connects SAP Integration Suite to Snowflake. Snowflake is a cloud computing-based data company that provides cloud-based data storage and analytics services.
 
-See: [Snowflake Receiver Adapter](https://help.sap.com/viewer/54e467e3bd2148deb837d34d1ec66a78/IAT/en-US/1299e684c3464a0b82626c8ebee79e25.html "The Snowflake receiver adapter connects SAP Integration Suite to Snowflake.") :arrow_upper_right:
+See: [Snowflake Receiver Adapter](snowflake-receiver-adapter-1299e68.md)
 
 </td>
 </tr>
@@ -2024,9 +2088,9 @@ If you are developing an OData API, you can configure a SOAP, OData or HTTP adap
 
 [AS4 Receiver Adapter](as4-receiver-adapter-3a2fde8.md "Provides basic insights on how the AS4 messaging protocol enables message exchange between message service handlers (MSHs).")
 
-[AmazonWebServices Sender Adapter](amazonwebservices-sender-adapter-16772e3.md "Amazon Web Services (AWS) sender adapter enables SAP Integration Suite to do transfer of data with AWS cloud platform.")
+[AmazonWebServices Sender Adapter](amazonwebservices-sender-adapter-16772e3.md)
 
-[AmazonWebServices Receiver Adapter](amazonwebservices-receiver-adapter-bc7d1aa.md "Amazon Web Services (AWS) receiver adapter enables SAP Integration Suite to transfer of data with AWS cloud platform.")
+[AmazonWebServices Receiver Adapter](amazonwebservices-receiver-adapter-bc7d1aa.md)
 
 [ELSTER Receiver Adapter](elster-receiver-adapter-e374ef7.md "This adapter enables an SAP BTP tenant to send a tax document to the ELSTER server.")
 
@@ -2062,7 +2126,7 @@ If you are developing an OData API, you can configure a SOAP, OData or HTTP adap
 
 [RFC Receiver Adapter](rfc-receiver-adapter-5c76048.md "Connects an SAP Cloud Integration tenant to a remote receiver system using Remote Function Call (RFC).")
 
-[Salesforce Receiver Adapter](salesforce-receiver-adapter-a548be9.md "The Salesforce receiver adapter enables an SAP Cloud Integration tenant to accelerate the implementation time and reduce the complexity of connecting to Salesforce.")
+[Salesforce Receiver Adapter](salesforce-receiver-adapter-a548be9.md)
 
 [ServiceNow Receiver Adapter](servicenow-receiver-adapter-1e3bcf4.md "ServiceNow receiver adapter enables SAP Cloud Integration and SAP Integration Suite to accelerate the implementation time and reduce the complexity of connecting to ServiceNow.")
 

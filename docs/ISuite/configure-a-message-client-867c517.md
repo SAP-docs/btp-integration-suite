@@ -10,7 +10,7 @@ Understand how to create a message client to communicate with the message broker
 
 The service instance *SAP Integration Suite, Event Mesh* on the SAP BTP cockpit provides access to the message client of Event Mesh's capability.
 
-By creating a service instance on the SAP BTP cockpit, you trigger the creation of a message client and bind it to the Event Mesh capability. By binding the service instance, you enable the automatic delivery of credentials needed to access the service instance from the Event Mesh capability. Later, all the events publishing and consuming applications are authenticated via OAuth client credentials for all technical commnications.
+By creating a service instance on the SAP BTP cockpit, you trigger the creation of a message client and bind it to the Event Mesh capability. By binding the service instance, you enable the automatic delivery of credentials needed to access the service instance from the Event Mesh capability. Later, all the events publishing and consuming applications are authenticated via OAuth client credentials for all technical communications.
 
 Configuring a message client is a two-step process. First, you create a service instance and then create a binding to the Event Mesh capability.
 

@@ -236,12 +236,12 @@ Japan East
 </td>
 <td valign="top">
 
-52.155.116.209
+52.155.116.209, 74.226.171.139
 
 </td>
 <td valign="top">
 
-52.155.117.53
+52.155.117.53, 74.226.171.98
 
 </td>
 </tr>
@@ -279,6 +279,43 @@ East US
 <td valign="top">
 
 20.42.28.32, 172.172.138.223
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+br20
+
+</td>
+<td valign="top">
+
+Brazil \(São Paulo\)
+
+</td>
+<td valign="top">
+
+cf-br20
+
+</td>
+<td valign="top">
+
+Brazil South
+
+</td>
+<td valign="top">
+
+4.201.169.164, 191.235.235.12
+
+</td>
+<td valign="top">
+
+4.201.170.128, 191.232.172.61
 
 </td>
 </tr>
@@ -347,12 +384,12 @@ ap-northeast-1
 </td>
 <td valign="top">
 
-13.112.134.183, 54.95.250.60, 54.249.225.157
+13.112.134.183, 54.95.250.60, 54.249.225.157, 3.115.241.36, 13.231.63.102, 57.180.232.216
 
 </td>
 <td valign="top">
 
-52.69.140.122, 18.181.69.241, 18.182.245.202
+52.69.140.122, 18.181.69.241, 18.182.245.202, 57.182.97.71, 54.95.121.1, 52.192.248.246
 
 </td>
 </tr>
@@ -384,12 +421,12 @@ ap-southeast-2
 </td>
 <td valign="top">
 
-3.105.46.220, 13.237.97.179, 3.104.188.200
+3.105.46.220, 13.237.97.179, 3.104.188.200, 54.79.76.85, 52.65.179.71, 52.65.224.8
 
 </td>
 <td valign="top">
 
-3.105.155.212, 13.211.74.25, 13.55.87.26
+3.105.155.212, 13.211.74.25, 13.55.87.26, 13.55.92.44, 13.55.155.224, 52.62.117.94
 
 </td>
 </tr>
@@ -495,12 +532,12 @@ ca-central-1
 </td>
 <td valign="top">
 
-35.182.82.207, 99.79.96.34, 99.79.183.119
+35.182.82.207, 99.79.96.34, 99.79.183.119, 3.98.11.222, 3.98.34.130, 3.96.232.194
 
 </td>
 <td valign="top">
 
-3.96.232.61, 3.96.230.37, 15.222.204.174
+3.96.232.61, 3.96.230.37, 15.222.204.174, 3.97.51.169, 15.157.233.2, 3.96.251.174
 
 </td>
 </tr>
@@ -828,12 +865,12 @@ me-west1
 </td>
 <td valign="top">
 
-34.165.125.123, 34.165.194.207
+34.165.86.22, 34.165.8.207
 
 </td>
 <td valign="top">
 
-34.165.118.98, 34.165.112.191, 34.165.248.77, 34.165.101.134, 34.165.34.61, 34.165.18.227
+34.165.228.53, 34.165.36.68, 34.165.22.213, 34.165.65.70, 34.165.40.115, 34.165.55.44
 
 </td>
 </tr>
@@ -865,12 +902,12 @@ me-central2
 </td>
 <td valign="top">
 
-34.166.73.136, 34.166.63.230
+34.166.106.77, 34.166.125.42
 
 </td>
 <td valign="top">
 
-34.166.47.150, 34.166.52.146, 34.166.73.249, 34.166.68.32, 34.166.56.42, 34.166.55.182
+34.166.118.185, 34.166.84.100, 34.166.141.246, 34.166.98.103, 34.166.97.210, 34.166.124.16
 
 </td>
 </tr>
@@ -1007,6 +1044,8 @@ us-east-1
 
 
 [Configuring Additional Virtual Host in Cloud Foundry Environment](configuring-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "A virtual host allows you to host multiple domain names on the API Management capability within Integration Suite.")
+
+[Shadow Users](shadow-users-a0f5fe5.md "Whenever a user authenticates at an application in your subaccount using any identity provider, it’s essential that user-related data provided by the identity provider is stored in the form of shadow users.")
 
 [User Roles in API Management](user-roles-in-api-management-7010b58.md "Use role collections to group together different roles that can be assigned to API Portal and Developer Hub users.")
 

@@ -23,8 +23,6 @@ The script editor categorizes the incompatibilities and further groups into erro
 > ### Note:  
 > -   The category *Clean Code Checks* is available now. This category includes incompatibilities like unused and duplicate import statements in your scripts.
 > 
-> -   Currently, the feature is avilable only for local scripts. The feature is not yet available for Script Collection artifact.
-> 
 > -   The automatic suggestions are only supported for Groovy-based scripts.
 
 
