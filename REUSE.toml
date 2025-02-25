@@ -1,0 +1,10 @@
+version = 1
+SPDX-PackageName = "btp-integration-suite"
+SPDX-PackageSupplier = "srutisagaram@sap.com"
+SPDX-PackageDownloadLocation = "https://github.com/sap-docs/btp-integration-suite"
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022-2023 SAP SE or an SAP affiliate company and btp-integration-suite contributors"
+SPDX-License-Identifier = "CC-BY-4.0"
