@@ -2,22 +2,18 @@
 
 # Inspect Data Store Usage
 
-Inspect data store usage of the tenant database for a given time period \(as selected with the *Time* parameter\).
+Inspect the data store usage and message size of the tenant database for a given time period.
 
-Each SAP Integration Suite tenant is associated with a physical database that has a limited size. This database is used by certain steps during the runtime of integration flows.
+Each SAP Integration Suite tenant is associated with a physical database that has a limited size. The data store is a logical storage that consumes tenant database volume. It can be accessed to by certain integration flows steps \(read and write access\) to read and write the message payload or variables during runtime. There are two kinds of data stores:
 
-The data store is a logical storage that consumes tenant database volume. It can be accessed to by certain integration flows steps \(read and write access\) to read and write the message payload or variables during runtime. There are two kinds of data stores:
+-   Local data store. It can be accessed explicitly by a single integration flow.
 
--   Local data store: Can be accessed explicitly by a single integration flow
-
--   Global data store: Can be accessed by all integration flows deployed on a tenant
+-   Global data store. It can be accessed by all integration flows deployed on a tenant.
 
 
-There are certain integration flow steps that allow you to write data to the data store and to read the data from it \(see [Define Data Store Operations](define-data-store-operations-79f63a4.md)\).
+This database is used by certain steps during the runtime of integration flows. These steps allow you to write data to the data store and to read the data from it \(see [Define Data Store Operations](define-data-store-operations-79f63a4.md)\). These integration flows, consequently, use tenant database volume.
 
-These integration flows, consequently, use tenant database volume.
-
-The default value of the entitlement is 35 GB, as documented at [What Is SAP Cloud Integration?](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/what-is-sap-cloud-integration). If the entitlement is exceeded there's a risk of overloading the database storage, which might eventually cause problems in the database management system and impact message processing.
+The default value of the entitlement for the total data store space usage is 35 GB, as documented at [What Is SAP Cloud Integration?](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/what-is-sap-cloud-integration). If the entitlement is exceeded there's a risk of overloading the database storage, which might eventually cause problems in the database management system and impact message processing.
 
 
 
@@ -25,7 +21,15 @@ The default value of the entitlement is 35 GB, as documented at [What Is SAP Clo
 
 ## Screen Components
 
-The bar chart indicates the data store usage of the tenant database for a defined time period, as shown in the image below: ![](images/Inspect_Dara_Store_Image_94bf3b3.png)
+You can choose to display either the *Total Data Store Space Usage* or the *Data Store Message Size* in a graphical format using the *Resource* dropdown menu.
+
+
+
+### *Total Data Store Space Usage*
+
+The bar chart indicates the tenant database's data store usage over a defined period, as shown in the image below:
+
+![](images/Data_Store_Usage_a5e3f55.png)
 
 You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*, *Past Month*, or *Custom* for a custom time interval.
 
@@ -60,66 +64,89 @@ Meaning
 <tr>
 <td valign="top">
 
-Blue bullet
+Dark Green Bar
 
 </td>
 <td valign="top">
 
-Global
+Global \(OK\)
 
 </td>
 <td valign="top">
 
-Data volume \(in MB\) used specifically by global data stores.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Orange bar
-
-</td>
-<td valign="top">
-
-Entitlement exceeded
-
-</td>
-<td valign="top">
-
-Data store usage exceeds the given limit.
-
-The bar height shows the data volume \(in MB\) used by data stores.
-
-The thresholds are based on the entitlement for storage consumption in the tenant database.
+Global data store usage is within the given limit.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Green bar
+Light Green Bar
 
 </td>
 <td valign="top">
 
-Ok
+Local \(OK\)
 
 </td>
 <td valign="top">
 
-Data store usage is within the given limit.
+Local data store usage is within the given limit.
 
-The bar height shows the data volume \(in MB\) used by data stores.
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Dark Orange Bar
+
+</td>
+<td valign="top">
+
+Global \(Entitlement Exceeded\)
+
+</td>
+<td valign="top">
+
+Global data store usage exceeds the given limit.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Light Orange Bar
+
+</td>
+<td valign="top">
+
+Local \(Entitlement Exceeded\)
+
+</td>
+<td valign="top">
+
+Local data store usage exceeds the given limit.
 
 </td>
 </tr>
 </table>
 
-The duration covered by a bar represents the average usage during the selected time period.
+The bar height represents the average data volume \(in MB\) used by data stores, whether global or local. The threshold is based on the storage consumption entitlement for the tenant database.
 
 > ### Note:  
-> The system reads the resource consumption every hour. This means there can be a maximum lag of 1 hour between processing an integration flow with a certain transaction setting and displaying the latest integration flow usage in the *Inspect* feature.
+> The system reads the resource consumption every hour. This means that there can be a maximum lag of 1 hour between processing an integration flow with a certain transaction setting and displaying the latest integration flow usage in the *Inspect* feature.
+
+
+
+### **Data Store Message Size**
+
+The line chart for *Data Store Message Size* displays the size of messages stored in the data stores over a specific time period, as shown in the image below:
+
+![](images/Data_Store_Message_Size_ae2a3d5.png)
+
+The line height indicates the size that messages reached at different points in time. Select one of the bullet points to view the exact message size at the chosen time.
+
+You can use the **Message Size** filter to choose between displaying the **Average** or **Maximum** message size. The average is calculated over hourly or daily intervals, depending on the time period you select in the **Time** filter. While the average usage of data stores might seem uncritical, usage could reach warning or critical levels for short periods. To inspect this situation, select **Maximum** in the **Message Size** filter.
 
 
 
@@ -146,9 +173,9 @@ Choose a bar or a bullet to get more context information and access the followin
 
     See:
 
-    [Inspect Top Local Data Stores by Usage](inspect-top-local-data-stores-by-usage-55670e6.md)
+    [Inspect Top Data Stores by Usage](inspect-top-data-stores-by-usage-55670e6.md)
 
-    [Inspect Top Global Data Stores by Usage](inspect-top-global-data-stores-by-usage-00431bf.md)
+    [Inspect Top Data Stores by Message Size](inspect-top-data-stores-by-message-size-00431bf.md)
 
 -   *Show Data Stores*
 

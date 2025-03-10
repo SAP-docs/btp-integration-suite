@@ -42,11 +42,14 @@ Type
 
 Select the appropriate authentication mechanism for your API.
 
-Basic - Used in situations where simple userid/password-based authentication is sufficient.
+*Basic* - Used in situations where simple userid/password-based authentication is sufficient.
 
-Client Certificate – The user provides a digital certificate consisting of a public and private key, which the server verifies to provide access.
+*Client Certificate* – The user provides a digital certificate consisting of a public and private key, which the server verifies to provide access.
 
-oAuth - Used in situations where third-party services are allowed to exchange your information without you having to give away your password.
+*OAuth* - Used in situations where third-party services are allowed to exchange your information without you having to give away your password.
+
+> ### Caution:  
+> If you select the *Enable Default Virtual Host HTTP* option while deploying the Edge Integration Cell solution, the Client Certificate authentication type won't work for HTTP-based calls. However, the *Basic* and *OAuth* authentication types will still function. It's important to note that the authorization header for *Basic* and *OAuth* is transmitted in plaintext format. Therefore, without HTTPS, it's vulnerable to interception attacks.
 
 > ### Note:  
 > To execute the API with Authentication policy, configure the*Process Integration Runtime* instance, and access the endpoint using the client id/ secret or certificate from that instance.

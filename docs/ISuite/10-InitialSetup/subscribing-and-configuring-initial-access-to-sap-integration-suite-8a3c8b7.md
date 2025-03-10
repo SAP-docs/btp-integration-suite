@@ -62,7 +62,7 @@ You can watch a short video to learn about subscribing and configuring initial a
 
 11. Navigate to *Services* \> *Instances and Subscription* and then select the instance of the application.
 
-12. Choose *Go to Application* to launch the Integration Suite home page. For more information, see [Working with Integration Suite Home](../20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md).
+12. Choose *Go to Application* to launch the Integration Suite home page. For more information, see [Working with SAP Integration Suite Home](../20-Working_with_SAP_Integration_Suite_Home/working-with-sap-integration-suite-home-a53dce3.md).
 
     > ### Tip:  
     > Clear your web browser cache and cookies before navigating to *Go to Application*.To access the application, you'll need the correct authorization. If you try to enter without it, you'll be asked to assign the necessary role. If you're still unable to access the application after role assignment, simply log out and then log back into the SAP BTP cockpit. This should grant you access to the application.

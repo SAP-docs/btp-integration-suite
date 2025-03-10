@@ -16,83 +16,142 @@ Use the HTTP receiver adapter to communicate with target systems using HTTP mess
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
-The HTTP Receiver adapter works well with target systems that supports either chunked transfer encoding or rely on the existence of the HTTP Content-Length header.
-
 > ### Note:  
-> The adapter automatically decompresses the received '.gzip' response, so the HTTP Content-Length header reflects the uncompressed size.
-
-> ### Note:  
-> -   For versions 1.10 and lower, the adapter works only with target systems that support chunked transfer encoding and may not rely on the existence of the HTTP Content-Length header.
+> -   If you want to dynamically override the configuration of the adapter, you can set the following headers before calling the HTTP adapter:
 > 
-> -   SAP recommends you add content-type header that indicates type of payload before you make an HTTP outbound call.
-> 
-> -   The adapter can process payloads having an attachment or MIME multipart messages that are converted to byte array via script steps. For target systems that supports chunked transfer, you need not convert the payload to a byte array.
-
-> ### Note:  
-> If you want to dynamically override the configuration of the adapter, you can set the following headers before calling the HTTP adapter:
-> 
-> -   **CamelHttpUri**
-> 
->     Overrides the existing URI set directly in the endpoint.
-> 
->     This header can be used to dynamically change the URI to be called.
-> 
-> -   **CamelHttpQuery**
-> 
->     Refers to the query string that is contained in the request URL.
-> 
->     In the context of a receiver adapter, this header can be used to dynamically change the URI to be called.
-> 
->     For example, `CamelHttpQuery=abcd=1234`.
-> 
-> -   Content-Type
-> 
->     HTTP content type that fits to the body of the request.
-> 
->     The content type is composed of two parts: a type and a subtype.For example, `image/jpeg` \(where `image` is the type and `jpeg` is the subtype\).
-> 
->     Examples:
-> 
->     -   `text/plain` for unformatted text
-> 
->     -   `text/html` for text formatted with HTML syntax
-> 
->     -   `image/jpeg` for a jpeg image file
-> 
->     -   `application/json` for data in JSON format to be processed by an application that requires this format
+>     ****
 > 
 > 
->     More information on the available types: [4 The Content-Type Header Field](https://www.w3.org/Protocols/rfc1341/4_Content-Type.html)
+>     <table>
+>     <tr>
+>     <th valign="top">
 > 
->     The list of available content types is maintained by the Internet Assigned Numbers Authority \(IANA\). For more information, see [Media Types](http://www.iana.org/assignments/media-types/media-types.xhtml).
+>     Header Name
+>     
+>     </th>
+>     <th valign="top">
 > 
-> -   **Content-Encoding**
+>     Description
+>     
+>     </th>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     **HTTP Content-Length header**
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   The HTTP Receiver adapter works well with target systems that supports either chunked transfer encoding or rely on the existence of the HTTP Content-Length header.
+>     -   The adapter automatically decompresses the received '.gzip' response, so the HTTP Content-Length header reflects the uncompressed size.
+>     -   For versions 1.10 and lower, the adapter works only with target systems that support chunked transfer encoding and may not rely on the existence of the HTTP Content-Length header.
 > 
->     HTTP content encoding that indicates the encoding used during message transport \(for example, `gzip` for GZIP file compression\).
 > 
->     This information is used by the receiver to retrieve the media type that is referenced by the `content-type` header.
+>     
+>     </td>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     **CamelHttpUri**
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   Overrides the existing URI set directly in the endpoint.
+>     -   This header can be used to dynamically change the URI to be called.
 > 
->     If this header is not specified, the default value `identity` \(no compression\) is used.
+> 
+>     
+>     </td>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     **CamelHttpQuery**
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   Refers to the query string that is contained in the request URL.
+>     -   In the context of a receiver adapter, this header can be used to dynamically change the URI to be called.
+> 
+>         > ### Example:  
+>         > `CamelHttpQuery=abcd=1234`
+> 
+> 
+> 
+>     
+>     </td>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     **Content-Type**
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   SAP recommends you add content-type header that indicates type of payload before you make an HTTP outbound call.
+>     -   HTTP content type that fits to the body of the request.
+>     -   The content type is composed of two parts: a type and a subtype.
+> 
+>         For example, `image/jpeg` \(where `image` is the type and `jpeg` is the subtype\).
+> 
+>         > ### Example:  
+>         > -   `text/plain` for unformatted text
+>         > -   `text/html` for text formatted with HTML syntax
+>         > -   `image/jpeg` for a jpeg image file
+>         > -   `application/json` for data in JSON format to be processed by an application that requires this format
+> 
+>         More information on the available types: [4 The Content-Type Header Field](https://www.w3.org/Protocols/rfc1341/4_Content-Type.html)
+> 
+>         The list of available content types is maintained by the Internet Assigned Numbers Authority \(IANA\). For more information, see [Media Types](http://www.iana.org/assignments/media-types/media-types.xhtml).
+> 
+>     -   If transferring text/\* content types, you can also specify the character encoding in the HTTP header using the charset parameter.
+> 
+>         > ### Example:  
+>         > `Content-Type: text/html; charset=utf-8`
+> 
+>     -   The default character encoding that will be applied for `text/*` content types depends on the HTTP version: `us-ascii` for HTTP 1.0 and `iso-8859-1` for HTTP 1.1.
+> 
+>     -   If you want to override the character encoding and avoid encoding issues when you use special characters, you can use the Content Modifier step and specify the `CamelCharsetName` Exchange property.
+> 
+>         > ### Example:  
+>         > If you want to send `iso-8859-1`-encoded data to a receiver, make sure that you specify the `CamelCharsetName` Exchange property \(either header or property\) as `iso-8859-1`.
+> 
+> 
+> 
+>     
+>     </td>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     **Content-Encoding**
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   HTTP content encoding that indicates the encoding used during message transport.
+> 
+>         > ### Example:  
+>         > `gzip` for GZIP file compression.
+> 
+>     -   This information is used by the receiver to retrieve the media type that is referenced by the `content-type` header.
+>     -   If this header is not specified, the default value `identity` \(no compression\) is used.
 > 
 >     More information: [Hypertext Transfer Protocol – HTTP/1.1](https://tools.ietf.org/html/rfc2616)
 > 
 >     The list of available content types is maintained by the Internet Assigned Numbers Authority \(IANA\). For more information, see:[HTTP Content Coding Registry](http://www.iana.org/assignments/http-parameters/http-parameters.xhtml#content-coding).
-
-> ### Note:  
-> If transferring `text/*` content types, you can also specify the character encoding in the HTTP header using the `charset` parameter.
-> 
-> Here is an example of such a header:
-> 
-> `Content-Type: text/html; charset=utf-8`
-> 
-> The default character encoding that will be applied for `text/*` content types depends on the HTTP version: `us-ascii` for HTTP 1.0 and `iso-8859-1` for HTTP 1.1.
-> 
-> If you want to override the character encoding and avoid encoding issues when you use special characters, you can use the Content Modifier step and specify the `CamelCharsetName` Exchange property. Consider the following example configuration:
-> 
-> If you want to send `iso-8859-1`-encoded data to a receiver, make sure that you specify the `CamelCharsetName` Exchange property \(either header or property\) as `iso-8859-1`.
-
-> ### Note:  
-> Adapter tracing is supported for HTTP adapter. For more information, see [Message Processing Log - Adapter Tracing](message-processing-log-adapter-tracing-a9db4ea.md).
+>     
+>     </td>
+>     </tr>
+>     </table>
+>     
+> -   The adapter can process payloads having an attachment or MIME multipart messages that are converted to byte array via script steps. For target systems that supports chunked transfer, you need not convert the payload to a byte array.
+> -   Adapter tracing is supported for HTTP adapter. For more information, see [Message Processing Log - Adapter Tracing](message-processing-log-adapter-tracing-a9db4ea.md).
 
 Once you've created a receiver channel and selected the HTTP receiver adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 

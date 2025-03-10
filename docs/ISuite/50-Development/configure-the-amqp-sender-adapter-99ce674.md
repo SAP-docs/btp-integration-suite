@@ -319,7 +319,7 @@ Note that topics are not supported in the sender adapter, only queues and topic 
 </td>
 <td valign="top">
 
-Specify the number of processes used for parallel message processing. Note, that these processes are started from each worker node.
+Specify the number of processes used for parallel message processing. Note that these processes are started from each worker node.
 
 > ### Note:  
 > The maximum number of parallel processes cannot exceed 99. The default is set to 1.
@@ -340,12 +340,12 @@ Enter the max. number of messages that may be prefetched by one worker. The allo
 
 The prefetch value is the number of messages that the sender adapter fetches in advance from the broker, and then gradually processes. The prefetch reduces the communication overhead and ensures that when a message has been processed, another is already there and is ready for processing.
 
-If the integration flows that are triggered by the AMQP sender adapter run for longer than a few seconds, it makes sense to set a lower prefetch value. In particular, if the integration flow runs for more than a minute, you should consider setting the value to 1. You can expect then a performance deterioration in the two-digit millisecond range, per message. On the other hand, load balancing between several nodes works better even with short backlogs.
+If the integration flows that are triggered by the AMQP sender adapter run for longer than a few seconds, it makes sense to set a lower prefetch value. In particular, if the integration flow runs for more than a minute, you should consider setting the value to 1. You can expect then a performance deterioration in the two-digit millisecond range per message. On the other hand, load balancing between several nodes works better even with short backlogs.
 
 If you need to process a large number of messages with the integration flow, and the processing of the individual message only runs for a few milliseconds, it can be useful to increase the prefetch value.
 
 > ### Note:  
-> If you increase the value, this can lead to lock timeouts and the load balancing between the nodes deteriorates. In return, you can expect performance gains in the three-digit microsecond range, per message. For example, with a prefetch value of 100, 10000 messages process approximately a second or two faster.
+> If you increase the value, this can lead to lock timeouts and the load balancing between the nodes deteriorates. In return, you can expect performance gains in the three-digit microsecond range per message. For example, with a prefetch value of 100, 10000 messages process approximately a second or two faster.
 
 
 
@@ -378,13 +378,15 @@ Define the number of retries to be executed before a different delivery status i
 Default value is set to `5`, maximum value is `99`.
 
 > ### Note:  
+> If this parameter is left empty, endless retries are executed. Ensure to specify a value to prevent this behavior.
+> 
 > If this parameter is set to \(`0`\), any message that is marked as a retried message is directly returning the outcome configured in *Delivery Status After Max. Retries* to the message broker and does not even start processing the message. Be aware of the fact that any delivery attempt by the message broker, even a failed one \(for example, due to network issues\), increases the delivery counter of the message sent by the message broker.
 > 
 > If the value is set to a number bigger than `0`, the AMQP adapter returns the outcome configured in *Delivery Status After Max. Retries* to the message broker if the delivery count of the message exceeds the configured value. Otherwise, it processes the message and returns a released outcome in case of an error and an accepted outcome in case of a successful message processing.
 > 
 > The consequences of the provided outcome depend on the message broker and the queue configuration on the message broker. An accepted outcome usually removes the message from the queue. A released outcome usually triggers a redelivery. A rejected outcome may trigger a redelivery or move the message to a dead letter queue \(maybe only if the message was rejected for a configured number of times\). The same applies to a modified outcome with the undeliverable flag set, which also might transit the message on the message broker to some undeliverable state.
 > 
-> If the message broker is not configured properly, this behavior can lead to unwanted side effects. For example, the messaging system constantly re-sends the message, no other messages are being processed, and no additional message processing logs are written. As consequence, this can result in an unplanned high load of your tenant and message broker.
+> If the message broker is not configured properly, this behavior can lead to unwanted side effects. For example, the messaging system constantly re-sends the message, no other messages are being processed, and no additional message processing logs are written. As a consequence, this can result in an unplanned high load of your tenant and message broker.
 
 
 

@@ -4,7 +4,7 @@
 
 # Activating and Managing Capabilities
 
-Activate capabilities for the SAP Integration Suite.
+Activate capabilities for SAP Integration Suite.
 
 
 
@@ -12,7 +12,7 @@ Activate capabilities for the SAP Integration Suite.
 
 ## Prerequisites
 
--   You have access to the Integration Suite home page. See [Working with Integration Suite Home](20-Working_with_SAP_Integration_Suite_Home/working-with-integration-suite-home-a53dce3.md).
+-   You have access to the SAP Integration Suite home page. See [Working with SAP Integration Suite Home](20-Working_with_SAP_Integration_Suite_Home/working-with-sap-integration-suite-home-a53dce3.md).
 -   You have the Integration\_Provisioner role collection assigned to your user. See [Subscribing and Configuring Initial Access to SAP Integration Suite](10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
 
 
@@ -21,7 +21,7 @@ Activate capabilities for the SAP Integration Suite.
 
 ## Context
 
-This topic describes how to add and activate relevant capabilities in Integration Suite. The following capabilities are available:
+This topic describes how to add and activate relevant capabilities in SAP Integration Suite. The following capabilities are available:
 
 -   Cloud Integration
 
@@ -54,7 +54,7 @@ You can watch a short video about activating capabilities, and getting access to
 
 ## Procedure
 
-1.  On the Integration Suite home page, under the *Capabilities* section, choose either *Add Capabilities* \(if it's your first time accessing the Integration Suite home page\) or <span class="SAP-icons-V5"></span> *Manage Capabilities* ![](images/AddingCapabilities_SUI_16a5ec1.png).
+1.  On the SAP Integration Suite home page, under the *Capabilities* section, choose either *Add Capabilities* \(if it's your first time accessing the SAP Integration Suite home page\) or <span class="SAP-icons-V5"></span> *Manage Capabilities* ![](images/AddingCapabilities_SUI_16a5ec1.png).
 
 2.  On the *Activate Capabilities* screen, under *Select Capabilities*, select the relevant capabilities as shown in the following table and choose *Next* to configure additional functionality for individual capabilities. ![](images/SelectCapabilitySUI_43d96ed.png)
 

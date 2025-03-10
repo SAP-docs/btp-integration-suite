@@ -47,9 +47,9 @@ Your global account administrator is responsible for configuring the Graph entit
 
     1.  Choose one or more of the following plans:
 
-        -   *api* for business data graph consumption
+        -   *Process Integration Runtime* for business data graph consumption
 
-        -   *configuration* to configure business data graphs using the Graph Configuration API.
+        -   *configuration* to configure business data graphs using the Graph Configuration API
 
 
     2.  Choose *Add Service Plan*.
@@ -58,17 +58,19 @@ Your global account administrator is responsible for configuring the Graph entit
 
 
 
+For more information on how to create a *Process Integration Runtime* instance, see [Authentication](https://help.sap.com/docs/integration-suite/sap-integration-suite/authentication-fa6eec4f9ffc45aa89f8a2155b855ca4).
+
 
 
 <a name="loio12ad448225ac47049982d9faab7978a3__section_AddGraph_APIM"/>
 
-## 2. Configure Graph
+## 2. Activate Graph on Integration Suite 
 
 1.  Go to the *Integration Suite* home page, and under *Capabilities*, choose *Add Capabilities*.
 2.  On the *Activate Capabilities* dialog, under *Select Capabilities*, choose *Design, Develop, and Manage APIs* and choose *Next*.
 3.  To activate *Graph*, select the following, and choose *Next*:
 
-    1.  **Enable Developer Hub**
+    1.  *Enable Developer Hub*
 
     2.  *Graph*
 
@@ -118,7 +120,7 @@ Once you enable Graph, you see all of the Graph role collections in your list.
 
 -   Graph Navigator Viewer
 
-    Graph Navigator is a tool in Developer Hub that developers use to inspect business data graphs. For more information, see [Graph Navigator in Developer Hub](graph-navigator-in-developer-hub-8e75d31.md).
+    Graph Navigator is a tool in Developer Hub that developers use to inspect business data graphs. For more information, see [Graph Navigator on Developer Hub](graph-navigator-on-developer-hub-8e75d31.md).
 
     To assign the *GraphNavigator.Viewer* role collection to a user with the *Graph\_Navigator\_Viewer* role, do the following:
 

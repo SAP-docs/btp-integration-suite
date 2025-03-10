@@ -14,7 +14,7 @@ Learn about identity and access management for Event Mesh.
 
 ### Authentication
 
-Users who access Event Mesh related features in SAP Integration Suite are authenticated against an identity provider. SAP Identity Service \(ID Service\) is used by default. SAP ID Service is the central service for the process of managing identities and their lifecycles.
+Users who access Event Mesh-related features in SAP Integration Suite are authenticated against an identity provider. SAP Identity Service \(ID Service\) is used by default. SAP ID Service is the central service for the process of managing identities and their life cycles.
 
 User authentication is provided by the authentication methods supported by SAP BTP, which uses the Security Assertion Markup Language \(SAML\) 2.0 protocol for both authentication and single sign-on.
 
@@ -52,7 +52,7 @@ Messaging gateways
 </td>
 <td valign="top">
 
-The consumer application, for example SAP S/4 HANA, calls the messaging gateways with the OAuth token of the OAuth client. The OAuth token is created when you create a service instance of *Event Mesh Message Client* in the SAP Business Technology Platform cockpit.
+The consumer application, for example SAP S/4 HANA, calls the messaging gateways with the OAuth token of the OAuth client. The OAuth token is created when you create a service instance of the *Event Mesh Message Client* in the SAP Business Technology Platform cockpit.
 
 </td>
 </tr>
@@ -64,7 +64,7 @@ Integration Suite user interface
 </td>
 <td valign="top">
 
-An integration developer or administrator of the Event Mesh capability accesses the Integration Suite user interface. While doing so, the user initiates an OAuth-based login and forwards the OAuth token to the Event Mesh backend. The backend component validates the token and checks for appropriate scope.
+An integration developer or administrator of the Event Mesh capability accesses the Integration Suite user interface. While doing so, the user initiates an OAuth-based login and forwards the OAuth token to the Event Mesh back end. The back-end component validates the token and checks for the appropriate scope.
 
 </td>
 </tr>

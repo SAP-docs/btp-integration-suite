@@ -508,6 +508,18 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
+    Enable Port 80
+    
+    </td>
+    <td valign="top">
+    
+    Choose this option to enable port 80 on the Istio Ingress Gateway, necessary when the *Enable Default Virtual Host HTTP* setting is enabled.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Internal Load Balancer \(only visible if Load Balancer Provider AWS or Azure is selected\)
     
     </td>

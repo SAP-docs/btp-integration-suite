@@ -4160,6 +4160,11 @@ JMS Consumer
 
 Specifies the time when an alert needs to be sent.
 
+> ### Note:  
+> This header is only set for non-exclusive queues.
+
+
+
 </td>
 </tr>
 <tr>
@@ -4183,6 +4188,9 @@ JMS Consumer
 Number of retries of a JMS message.
 
 The JMS sender adapter sets this header.
+
+> ### Note:  
+> This is only the case if the *Non-Exclusive* access type is selected.
 
 You can use this header to specify that the behavior of the integration flow changes depending on the number of retries that are actually performed. For example, you can configure a scenario where a mail is sent to an administrator with the message as an attachment and the integration flow is terminated successfully after a specified number of retries.
 
@@ -4208,7 +4216,7 @@ JMS Consumer
 </td>
 <td valign="top">
 
-
+This header is set for queues with non-exclusive access type.
 
 </td>
 </tr>

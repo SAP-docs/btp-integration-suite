@@ -27,5 +27,5 @@ A product is a bundle of API proxies. It contains metadata specific to your busi
 
 When you create a product, you link it to one or more APIs. Also, the same API can be linked to multiple products. After you have linked an API to a product, all attributes of the API such as API resources and API documentation are implicitly part of the product.
 
-A product is a vehicle that lets the application developer know which APIs are exposed on the . When you create an application, you select the product to include in the application. For each application that you create, generates an Application key and secret. Use this key to gain access to multiple products.
+A product is a vehicle that lets the application developer know which APIs are exposed on . When you create an application, you select the product to include in the application. For each application that you create, generates an Application key and secret. Use this key to gain access to multiple products.
 

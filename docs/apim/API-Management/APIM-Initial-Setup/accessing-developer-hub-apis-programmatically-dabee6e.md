@@ -20,14 +20,30 @@ This topic explains how to enable API access for Developer Hub.
 
 ## Prerequisites
 
--   If you've enabled API Management capability using Integration suite, ensure that you've also enabled Developer Hub in . For more information, refer [Subscribing to Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/8a3c8b7a6b1c4f249bb81d11644ef806.html?version=CLOUD) and [Activating Capabilities](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/2ffb343c163c48a4b3a90f9f3c487328.html?version=CLOUD). To access Developer Hub from , select Developer Hub from the *Navigation Links* on the header.
+-   If you've enabled API Management capability using , ensure that you've also enabled Developer Hub in . For more information, refer [Subscribing to Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/8a3c8b7a6b1c4f249bb81d11644ef806.html?version=CLOUD) and [Activating Capabilities](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/2ffb343c163c48a4b3a90f9f3c487328.html?version=CLOUD). To access Developer Hub from , select Developer Hub from the *Navigation Links* on the header.
 
     > ### Note:  
     > Please ensure that you can access Developer Hub before creating an instance.
 
 -   You have the `space developer` role assigned to you.
+
+
+
+<a name="loiodabee6e347f645a6805ec5b29f5d578c__section_mvm_2bw_m2c"/>
+
+## Accessing the SAP Authorization and Trust Management service \(XSUAA\) APIs
+
 -   To get access to the APIs of the SAP Authorization and Trust Management service, see [Get Access to the APIs](https://help.sap.com/docs/btp/sap-business-technology-platform/get-access-to-apis).
--   Create a service key for the service instance above by executing the following steps:
+-   Create a XSUAA service instance:
+
+    1.  In your web browser, open the *SAP BTP Cockpit* - [https://account.hana.ondemand.com/cockpit](https://account.hana.ondemand.com/cockpit).
+    2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
+    3.  Choose *Authorization & Trust Management \(xsuaa \)*.
+    4.  Choose *Instances* \> *New Instance*.
+    5.  In *Create Instance* dialog that opens, select *Authorization & Trust Management Service,* choose *apiaccess* plan, provide an instance name, and choose *Next*.
+    6.  Choose *Create.*
+
+-   Create the service key by executing the following steps:
 
     1.  Choose the service instance that you created above.
 
@@ -37,10 +53,11 @@ This topic explains how to enable API access for Developer Hub.
 
         The client credentials like url, clientId, and clientSecret details appear for the given service key.
 
+        > ### Note:  
+        > Use this service key to create the destination as mentioned below.
 
-    .
 
--   You have created a destination of type `OAuth2Credentials` to the XSUAA APIs by using the credentials you derived from creating the service key. This is required to access the XSUAA APIs for authorization and trust mangement services.
+-   Create a destination of type `OAuth2Credentials` for the XSUAA APIs using the credentials obtained from the service key you generated. This is required to access the XSUAA APIs for authorization and trust mangement services.
     1.  From your *Subaccount*, navigate to *Connectivity* \> *Destinations* \> *New Destination*.
     2.  Choose the service instance that you created above.
     3.  In the *Destination Configuration* window, provide the details.
@@ -438,28 +455,6 @@ Make a note of these credentials as you will need them in the next steps to obta
 >   > my-oauth-response.json
 > 
 > ```
-
-
-
-<a name="loiodabee6e347f645a6805ec5b29f5d578c__section_ccb_vxj_fmb"/>
-
-## Updating a Service Instance in the API Management, Developer Hub
-
-You can update an already provisioned service instance of an API access plan by performing the following steps:
-
-**Prerequisite:**
-
-You must have the Cloud Foundry CLI installed.
-
-1.  Log in to the Cloud Foundry CLI by running the `cf login` command.
-2.  Select *Org*.
-3.  Run the following command to update your service instance. `cf update-service <service-instance-name> -c <empty-json-file>.json`.
-
-    > ### Sample Code:  
-    > ```
-    > Sample json: {}
-    > ```
-
 
 
 

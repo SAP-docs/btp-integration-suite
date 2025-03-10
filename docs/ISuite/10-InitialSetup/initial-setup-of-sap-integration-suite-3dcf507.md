@@ -92,7 +92,7 @@ How can you purchase an account?
 </td>
 <td valign="top">
 
-To purchase an account, contact an SAP sales representative or visit us on SAP Business Technology Platform page of SAP.com..
+To purchase an account, contact an SAP sales representative or visit us on SAP Business Technology Platform page of SAP.com.
 
 </td>
 <td valign="top">

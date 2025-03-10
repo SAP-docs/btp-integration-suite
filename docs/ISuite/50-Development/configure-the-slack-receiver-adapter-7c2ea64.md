@@ -2649,7 +2649,7 @@ visibility
 
 Various operations, their APIs and pagination types have been tabulated below.
 
-**Pagination Suppor**
+**Pagination Support**
 
 
 <table>

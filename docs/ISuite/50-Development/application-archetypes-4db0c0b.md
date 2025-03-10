@@ -17,7 +17,7 @@ The illustration shows three archetypical ways of creating client applications t
 The *Task* architecture shows a simple web client application, often implemented as a Single Page Application \(SPA\) interacting directly with Graph, without any server-side component. The application accesses the data on behalf of a corporate business user, who must first be authenticated. Such applications can be developed with low-code/no-code tools, focusing on simple workflow tasks that typically interact with one or more data sources. Simple mobile or Fiori applications fall into this category as well.
 
 > ### Note:  
-> Applications based on the *Task* architecture must use an extended form of the OAuth protocol called Proof Key for Code Exchange \(PKCE\) that supports user authentication without storing a secret. Since SAP Authorization and Trust Management Service does not handle PKCE, this archetype is not yet supported by Graph.
+> Applications based on the *Task* architecture must use an extended form of the OAuth protocol called Proof Key for Code Exchange \(PKCE\) that supports user authentication without storing a secret. Since the SAP Authorization and Trust Management service does not handle PKCE, this archetype is not yet supported by Graph.
 
 
 

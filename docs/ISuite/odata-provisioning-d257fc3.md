@@ -37,7 +37,7 @@ OData Provisioning functionality has previously been offered as a service on Neo
 **Related Information**  
 
 
-[Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md "Activate capabilities for the SAP Integration Suite.")
+[Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md "Activate capabilities for SAP Integration Suite.")
 
 [Runtime Access and Role Assignment for OData Provisioning](runtime-access-and-role-assignment-for-odata-provisioning-b46816c.md "Steps to complete the activation of the OData Provisioning capability by providing runtime access and assigning roles.")
 

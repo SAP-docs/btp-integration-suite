@@ -123,7 +123,7 @@ Date when the message was stored in the queue.
 <tr>
 <td valign="top">
 
-*Retry Count* 
+*Retry Count* \(for non-exclusive queues\)
 
 </td>
 <td valign="top">
@@ -135,7 +135,7 @@ Number of retries of the message.
 <tr>
 <td valign="top">
 
-*Next Retry On* 
+*Next Retry On* \(for non-exclusive queues\)
 
 </td>
 <td valign="top">
@@ -147,7 +147,7 @@ Date when next retry is scheduled.
 <tr>
 <td valign="top">
 
-*Retain Until* 
+*Retain Until* \(for non-exclusive queues\)
 
 </td>
 <td valign="top">
@@ -177,7 +177,7 @@ Description
 <tr>
 <td valign="top">
 
-*Retry* 
+*Retry* \(for non-exclusive queues\)
 
 </td>
 <td valign="top">

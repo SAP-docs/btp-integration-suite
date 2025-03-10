@@ -53,5 +53,5 @@ The assessment process is composed of the following main steps:
 
 [Integration Architecture Guide for Cloud and Hybrid Landscapes Based on SAP Integration Solution Advisory Methodology](https://www.sap.com/documents/2020/11/400ae14b-bf7d-0010-87a3-c30de2ffd8ff.html)
 
-[SAP Integration Solution Advisory Methodology](https://www.sap.com/services/integration-solution-advisory-methodology.html)
+[SAP Integration Solution Advisory Methodology](https://www.sap.com/services-support/integration-solution-advisory-methodology.html?url_id=text-glo-404-reclink)
 

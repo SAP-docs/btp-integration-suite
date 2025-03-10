@@ -1,5 +1,7 @@
 <!-- loio80f3050fb26e42a6b09dfcdb06f8cd50 -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # Diagnostics
 
 Run diagnostic tasks and collect the necessary information for troubleshooting your Edge Integration Cell.
@@ -10,7 +12,7 @@ Run diagnostic tasks and collect the necessary information for troubleshooting y
 
 ## Prerequisites
 
-A file system is required in order to use *Diagnostics*. This is because the information collected by the diagnostic tasks is stored in the file system. If you didn't enable the file system during the installation of your Edge Integration Cell , you need to reinstall it and choose the *Enable Shared File System*option. For more information, see [Deploy the Edge Integration Cell Solution](deploy-the-edge-integration-cell-solution-ab81b84.md).
+A file system is required in order to use *Diagnostics*. This is because the information collected by the diagnostic tasks is stored in the file system. If you didn't enable the file system during the installation of your Edge Integration Cell you need to reinstall it and choose the *Enable Shared File System*option. For more information, see [Deploy the Edge Integration Cell Solution](deploy-the-edge-integration-cell-solution-ab81b84.md).
 
 
 
@@ -69,10 +71,12 @@ The type of diagnostic task. It can be any of the following:
 
 -   *Custom Logging*. Temporarily increase the log level for a list of log locations and collect the required debug information for diagnosing your issue.
 
-    To learn more about custom loggers, see [Custom Loggers](custom-loggers-7e52a49.md).
+    See [Custom Loggers](custom-loggers-7e52a49.md) for more information.
 
 -   *Thread Dump*. Use thread dumps to diagnose unequal resource usage that may cause system slowness. You can configure the number of thread dumps to create for a component and specify the intervals between them.
 -   *Heap Dump*. Use heap dumps to diagnose issues related to memory consumption.
+
+    See [Heap Dumps](heap-dumps-5ce5ce5.md) for more information.
 
     > ### Note:  
     > You can only create a heap dump for one pod per component at a time, as this operation is resource-intensive.
@@ -115,6 +119,8 @@ The name of the diagnostic task.
 
 The status of the diagnostic session. It can be either *Completed* or *Running*.
 
+See [Heap Dumps](heap-dumps-5ce5ce5.md) to learn about heap dump-specific statuses.
+
 </td>
 </tr>
 <tr>
@@ -139,12 +145,28 @@ The user who ran the diagnostic task.
 
 Depending on the status of the diagnostic task, you can either *Download* the diagnostic results or *Stop* running the diagnostic session.
 
+Choose the three dots to access *Details*. This opens a dialog that shows information about the task. Where applicable, it also shows details about the component that initiated the task, including any settings like the selected pod or custom logger.
+
+See [Heap Dumps](heap-dumps-5ce5ce5.md) to learn about heap dump-specific actions.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Component*
+
+</td>
+<td valign="top">
+
+By default, this column is hidden. You can enable it by selecting :gear:*Table Settings*. It displays content only for tasks where customers explicitly choose a component. Otherwise, it shows an empty value.
+
 </td>
 </tr>
 </table>
 
 > ### Note:  
-> In some *Heap Dump* tasks, the *Name* and *Started By* columns indicate that they are automatically generated. This is because the Worker component is configured to automatically create a heap dump when an `OutOfMemory` situation occurs and the Java VM crashes. These heap dumps are then automatically written into the shared file system.
+> Use the :gear: *Table Settings* option to show or hide additional columns. You can also change the order of the columns in the table.
 
 
 
@@ -160,9 +182,6 @@ To create a new diagnostic task, perform the following steps:
     If you don't stop the session manually, it stops automatically after 10 minutes.
 
 5.  You can now download the results of your diagnostic task. The results save as a zip file on your computer.
-
-    > ### Note:  
-    > In the case of heap dumps, you can't download the results directly from the UI due to the large file size. When you choose *Download*, a popup appears with the path to the file's location on the file share. You can download the results file using your preferred Kubernetes tooling. The corresponding command is the following: `kubectl -n edge-icell cp <pod name>:<path> <destination path name>`
 
 
 > ### Tip:  

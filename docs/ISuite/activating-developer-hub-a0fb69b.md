@@ -28,12 +28,12 @@ Subscribe to SAP Integration Suite
 </td>
 <td valign="top">
 
-To set up the API Management capability from Integration Suite, you should first have an Integration Suite subscription.
+To set up the API Management capability from SAP Integration Suite, you should first have SAP Integration Suite subscription.
 
-Subscribe to the SAP Integration Suite in SAP BTP cockpit and assign the *Integration\_Provisioner* role to gain access. For more information, see [Initial Setup of SAP Integration Suite](10-InitialSetup/initial-setup-of-sap-integration-suite-3dcf507.md).
+Subscribe to SAP Integration Suite in SAP BTP cockpit and assign the *Integration\_Provisioner* role to gain access. For more information, see [Initial Setup of SAP Integration Suite](10-InitialSetup/initial-setup-of-sap-integration-suite-3dcf507.md).
 
 > ### Note:  
-> Please make sure that you do not have a starter plan instance created in the same subaccount where you intend to create an Integration Suite subscription. Additionally, please note that API Management capabilities from Integration Suite and API Management subscriptions using the stand-alone tile cannot coexist in the same subaccount.
+> Please make sure that you do not have a starter plan instance created in the same subaccount where you intend to create an SAP Integration Suite subscription. Additionally, please note that API Management capabilities from SAP Integration Suite and API Management subscriptions using the stand-alone tile cannot coexist in the same subaccount.
 
 
 
@@ -47,7 +47,7 @@ Activate Developer Hub
 </td>
 <td valign="top">
 
-Add and activate Developer Hub in Integration Suite. For more information, see [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md).
+Add and activate Developer Hub in SAP Integration Suite. For more information, see [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md).
 
 > ### Note:  
 > The Developer Hub checkbox is **not** selected by default if you've subscribed to the premium/standard service plan and have activated API Management.

@@ -20,6 +20,9 @@ You use AS4 message exchange protocol to securely process incoming business docu
 >     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
+> For Edge Integration Cell runtime fetching the values dynamically from partner directory is not supported.
+
+> ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 **Connection**
@@ -241,12 +244,12 @@ Description
 
 Select the relevant option for username token verification in the AS4 message:
 
--   Dynamic: You can also set the value of this attribute dynamically by using `SAP_AS4_Inbound_Verify_Username_Token` parameter of partner directory. The valid values are:
+-   *Dynamic*: You can also set the value of this attribute dynamically by using `SAP_AS4_Inbound_Verify_Username_Token` parameter of partner directory. The valid values are:
     -   notRequired
     -   required
 
--   Not Required: To skip the verification of response message.
--   Required
+-   *Not Required*: To skip the verification of response message.
+-   *Required* 
 
 
 
@@ -255,7 +258,9 @@ Select the relevant option for username token verification in the AS4 message:
 <tr>
 <td valign="top">
 
-*Credential Name* only if *Verify Username Token* isn't selected as *Not Required*
+*Credential Name* 
+
+\(only if *Verify Username Token* isn't selected as *Not Required*\)
 
 </td>
 <td valign="top">
@@ -317,7 +322,7 @@ Determine the private key alias to decrypt the AS4 message.
 
 *Public Key Alias*
 
-\(only if you select *Trusted Certificate*.\)
+\(only if you select *Trusted Certificate*\)
 
 </td>
 <td valign="top" rowspan="2">
@@ -331,7 +336,7 @@ Define the public key alias or aliases to verify the signature of the AS4 messag
 
 *Public Key Aliases*
 
-\(only if you select *Trusted Root Certificate*.\)
+\(only if you select *Trusted Root Certificate*\)
 
 </td>
 </tr>
@@ -388,7 +393,9 @@ Choose the relevant password type to be used when a username token is generated 
 <tr>
 <td valign="top">
 
-*Credential Name* only if *Username Token* isn't selected as *Not Required*
+*Credential Name* \(
+
+only if *Username Token* isn't selected as *Not Required*\)
 
 </td>
 <td valign="top">
@@ -414,7 +421,7 @@ Ensures that the outgoing AS4 message is signed.
 
 *Private Key Alias*
 
-\(only if you select *Required* in *Signing*.\)
+\(only if you select *Required* in *Signing*\)
 
 </td>
 <td valign="top">
@@ -428,7 +435,7 @@ Specify the private key alias to sign the AS4 message.
 
 *Signature Algorithm*
 
-\(only if you select *Required* in *Signing*.\)
+\(only if you select *Required* in *Signing*\)
 
 </td>
 <td valign="top">
@@ -465,7 +472,18 @@ Description
 </td>
 <td valign="top">
 
-Specify the response type.
+Select the response type:
+
+-   *Dynamic*: To set the values dynamically using `SAP_AS4_Inbound_Response_Option` parameter of partner directory. The valid values are:
+    -   `noresponse`
+    -   `pushAndPush`
+    -   `twoWaySync`
+
+-   *No Response*: To not send a response to the receiver.
+-   *Push and Push*: To use asynchronous communication pattern for message exchange.
+-   *Two Way Sync*: To use the same request channel for responding\(with a user message\) to the incoming user message from exchange.
+
+
 
 </td>
 </tr>
@@ -512,35 +530,27 @@ Defines the tenant authenticates itself against the sender.
 
 There are the following options:
 
--   *None*
+-   *None*: No authentication is configured.
 
-    No authentication is configured.
-
--   *Basic Authentication*
-
-    The tenant authenticates itself against the sender based on user credentials \(user and password\).
+-   *Basic Authentication*: The tenant authenticates itself against the sender based on user credentials \(user and password\).
 
     > ### Note:  
     > When this authentication option is selected, the required security artifact \(User Credentials\) has to be deployed on the tenant.
 
--   *Client Certificate*
-
-    The sender authenticates itself \(as trusted server\) against the tenant when the connection is being set up.
+-   *Client Certificate*: The sender authenticates itself \(as trusted server\) against the tenant when the connection is being set up.
 
     > ### Note:  
     > As prerequisite for this authentication process, the client root certificate of the tenant has to be imported into the senders keystore \(prior to the connection set up\).
 
 
-
+You can set the values dynamically using `SAP_AS4_Inbound_Response_Authentication_Type` parameter of partner directory. The valid values are:
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Credential Name*
-
-\(only if you select *Basic Authentication*.\)
+*Credential Name* 
 
 </td>
 <td valign="top">
@@ -554,7 +564,7 @@ Provide the alias you used while deploying basic authentication credentials.
 
 *Private Key Alias*
 
-\(only if you select *Client Certificate*.\)
+\(only if you select *Authentication Type* as *Client Certificate*\)
 
 </td>
 <td valign="top">
@@ -566,12 +576,80 @@ Specify the private key alias, used to sign the incoming AS4 message.
 <tr>
 <td valign="top">
 
-*Compress Message* 
+*Compress Message*
 
 </td>
 <td valign="top">
 
-Compresses the AS4 message.
+Compresses the AS4 message. You can set the values dynamically using `SAP_AS4_Inbound_Response_Compress_Message` parameter of partner directory. The valid values are:
+
+-   `true`
+-   `false`
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Save Receipt* 
+
+</td>
+<td valign="top">
+
+Check to save the receipt in the message store. You can also set the values dynamically using `SAP_AS4_Inbound_Response_Receipt_Save` parameter of partner directory. The valid values are:
+
+-   `true`
+-   `false`
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+
+*Message Security* \(for Push and Push or Two Way Sync\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Username Token* 
+
+</td>
+<td valign="top">
+
+Choose the relevant option to be used while generarting username token from credential.
+
+-   *Dynamic*: To set the values dynamically using `SAP_AS4_Inbound_Response_Username_Token` parameter of partner directory. The valid values are:
+    -   `notRequired`
+    -   `withhashedpasswordandtimestamp`
+    -   `withplaintextpassword`
+    -   `withplaintextpasswordandtimestamp`
+
+-   *Not Required*: To skip the username token generation.
+-   *With Hashed Password and Timestamp*: The username and password from the token are added to the XML payload as a plain text and hashed value respectively along with the timestamp. This is the most secure way of adding the username to the payload.
+-   *With Plain Text Password*: The username and password from the token are added to the XML payload as a plain text.
+-   *With Plain Text Password and Timestamp*: The username and password from the token are added to the XML payload as a plain text along with the timestamp.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Credential Name* 
+
+\(only if you select *Username Token* as *Dynamic* or *With Hashed Password and Timestamp* or *With Plain Text Password* or *With Plain Text Password and Timestamp*\)
+
+</td>
+<td valign="top">
+
+Enter the credential name specified during the deployment of the security artifact.
 
 </td>
 </tr>
@@ -583,7 +661,7 @@ Compresses the AS4 message.
 </td>
 <td valign="top">
 
-Specify either of the folllowing WS-Security type to protect message integrity and confidentiality:
+Specify either of the following WS-Security type to protect message integrity and confidentiality:
 
 -   *None*
 
@@ -595,6 +673,12 @@ Specify either of the folllowing WS-Security type to protect message integrity a
 > ### Note:  
 > For exchange of message specific communication rules apply as been agreed between the administrators of the Web service client and Web service provider \(for example, if certificates are to be sent with the message\).
 
+You can also set the values dynamically using `SAP_AS4_Inbound_Response_WS_Security` parameter of partner directory. The valid values are:
+
+-   `sign`
+-   `none`
+-   `signAndEncrypt`
+
 
 
 </td>
@@ -603,6 +687,8 @@ Specify either of the folllowing WS-Security type to protect message integrity a
 <td valign="top">
 
 *Private Key Alias for Signing* 
+
+\(only if you select *WS-Security Type* as *Sign and Encrypt Message* or *Sign Message*\)
 
 </td>
 <td valign="top">
@@ -619,7 +705,15 @@ Specify the private key alias to sign the AS4 message.
 </td>
 <td valign="top">
 
-Use the relevant algorithm to sign the AS4 message.
+Select the relevant algorithm to sign the AS4 message.
+
+You can also set the value of this attribute dynamically by using `SAP_AS4_Inbound_Response_Signing_Algorithm` parameter of the partner directory. The valid values are:
+
+-   `SHA256/RSA`
+-   `SHA384/RSA`
+-   `SHA512/RSA`
+
+
 
 </td>
 </tr>
@@ -628,7 +722,7 @@ Use the relevant algorithm to sign the AS4 message.
 
 *Public Key Alias for Encryption*
 
-\(only if you select *Sign and Encrypt Message*.\)
+\(only if you select *WS-Security Type* as *Sign and Encrypt Message*\)
 
 </td>
 <td valign="top">
@@ -642,12 +736,20 @@ Specify the public key alias to sign the AS4 message.
 
 *Encryption Algorithm*
 
-\(only if you select *Sign and Encrypt Message*.\)
+\(only if you select *WS-Security Type* as *Sign and Encrypt Message*\)
 
 </td>
 <td valign="top">
 
 Select the algorithm you want to use to encrypt the payload.
+
+You can also set the value of this attribute dynamically by using `SAP_AS4_Inbound_Response_Encryption_Algorithm` parameter of the partner directory. The valid values are:
+
+-   `3DES`
+-   `AE128`
+-   `AE256`
+
+
 
 </td>
 </tr>
@@ -656,24 +758,49 @@ Select the algorithm you want to use to encrypt the payload.
 
 *Key Encryption Algorithm*
 
-\(only if you select *Sign and Encrypt Message*.\)
+\(only if you select *WS-Security Type* as *Sign and Encrypt Message*\)
 
 </td>
 <td valign="top">
 
 Select the key encryption algorithm and the system uses the related mask generation functions \(MGFs\) to encrypt the payload.
 
+You can also set the value of this attribute dynamically by using `SAP_AS4_Inbound_Response_Key_Encryption_Algorithm` parameter of the partner directory. The valid values are:
+
+-   `RSA-OAEP [SHA256]`
+-   `RSA-OAEP [SHA384]`
+-   `RSA-OAEP [SHA512]`
+-   `RSA-OAEP-MGF1P`
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+
+*Two Way Payload Processing* \(only if you select *Type* as *Dynamic* or *Two Way Sync*\)
+
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Save Receipt* 
+*Compress Message*
 
 </td>
 <td valign="top">
 
-Check to save the receipt in the message store.
+Select to compress the AS4 message.
+
+-   *Dynamic*: You can set the values dynamically using `SAP_AS4_Inbound_Response_Compress_Message`. The valid values are:
+    -   `notRequired`
+    -   `required`
+
+-   *Not Required*: To send an uncompressed AS4 message to the receiver.
+-   *Required*: To compress the AS4 message sent to the receiver.
+
+
 
 </td>
 </tr>

@@ -28,11 +28,6 @@ The SuccessFactors OData V2 receiver adapter supports externalization. To extern
 > -   Retry for *Upsert* operation is now enabled for inner error code 412. Retry will be executed once and after 1 minute only.
 > -   Learn how to construct the required payload for SuccessFactors OData V2 Upsert operation from the [blog](https://blogs.sap.com/2019/09/15/payload-structure-for-successfactors-upsert-in-sap-cloud-platform-integration/).
 
-> ### Remember:  
-> You must enable *HTTP Session Reuse*, either *On Exchange* level or *On Integration Flow* level.
-> 
-> For more information, refer to [Specify the Runtime Configuration](specify-the-runtime-configuration-0c1c96e.md).
-
 Select the *General* tab and provide information as described as follows:
 
 
@@ -380,7 +375,9 @@ By default the value is set to *Server Snapshot-Based* which is the recommended 
 
 
 > ### Remember:  
-> For server-side pagination, session reuse must be set to **Mandatory**. If it set to **None**, deployment fails with a validation error. For more information, see [Pagination](https://help.sap.com/viewer/d599f15995d348a1b45ba5603e2aba9b/latest/en-US/93ef8631b93b4d58be235b047dae2b57.html).
+> You must enable *HTTP Session Reuse*, either *On Exchange* level or *On Integration Flow* level.
+> 
+> For more information, refer to [Specify the Runtime Configuration](specify-the-runtime-configuration-0c1c96e.md).
 
 
 

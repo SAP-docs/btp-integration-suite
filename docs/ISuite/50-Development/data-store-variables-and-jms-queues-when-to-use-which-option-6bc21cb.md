@@ -57,7 +57,7 @@ JMS queue
 
 You can use the JMS receiver adapter to store messages in a JMS queue. One important key characteristic of the Java Message Service \(JMS\) feature is the support of high-speed messaging with high throughput. This is why it offers the optimal solution for reliable messaging using asynchronous decoupling. JMS is a Java-based standard application programming interface \(API\) for sending and receiving messages. It enables efficient asynchronous communication based on a JMS message broker between different components. The JMS message broker is a separate runtime component that ensures that messages in JMS queues in the JMS message broker are treated separately. The JMS adapter is used to store messages in the JMS queue and to consume messages from the JMS queue in the JMS message broker.
 
-The processing sequence used by the JMS adapter is first-in, first-out \(FIFO\). However, because of parallel processing and retry handling this does not mean that messages are processed in a guaranteed order.
+The processing sequence used by the JMS adapter is first-in, first-out \(FIFO\). Regarding message processing order, the JMS adapter offers two main access types that influence message handling: *Non-Exclusive* and *Exclusive*. The non-exclusive access type allows for parallel processing, where messages may not be processed in a guaranteed order due to concurrent consumption and retry handling. Conversely, the exlusive access type ensures messages are handled sequentially as received..
 
 </td>
 </tr>

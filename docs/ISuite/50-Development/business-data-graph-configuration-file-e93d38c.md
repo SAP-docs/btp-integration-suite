@@ -575,7 +575,7 @@ For example, `sap.s4.A_Product`. These expressions can contain an asterisk `*` a
 **Related Information**  
 
 
-[Create a Business Data Graph in Integration Suite](create-a-business-data-graph-in-integration-suite-42daf3b.md "As Tenant administrator in the SAP Integration Suite, you can create a new business data graph. You can also use an existing configuration file to create a business data graph.")
+[Create a Business Data Graph in Integration Suite](create-a-business-data-graph-in-integration-suite-42daf3b.md "As a Graph Key User, you can create a new business data graph. You can also use an existing configuration file to create a business data graph.")
 
 [Extend Your Business Data Graph](extend-your-business-data-graph-bb4f072.md "To extend your business data graph, you can create model extensions that describe your custom entity projections.")
 

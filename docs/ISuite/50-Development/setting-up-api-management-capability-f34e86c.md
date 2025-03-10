@@ -14,7 +14,7 @@ To create APIs, build API proxies as a service provider, or use APIs and other c
 
 The following role collections must be assigned to you:
 
--   The API Management capability must be enabled in Integration Suite. For more information, see [Activate and Configure API Management Capability](../activate-and-configure-api-management-capability-f6eb433.md).
+-   The API Management capability must be enabled in Integration Suite. For more information, see [Activating and Configuring API Management Capability](../activating-and-configuring-api-management-capability-f6eb433.md).
 
 -   To access the *Settings* page, the *APIManagement.Selfservice.Administrator* role collection must be assigned to you
 

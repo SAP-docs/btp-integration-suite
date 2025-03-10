@@ -1,6 +1,6 @@
 <!-- loioa717c7bf9ea74619a564ef0a344d97d2 -->
 
-# Make Events Imported as AsyncAPI Specification Available in Developer Hub 
+# Import Events as AsyncAPI Specification on Developer Hub 
 
 Organize and categorize events by creating dedicated products in the catalog. Import events using an AsyncAPI specification, add them to products, and make them publicly available by publishing the associated products in the catalog.
 
@@ -19,6 +19,9 @@ The *AuthGroup.Content.Admin* role collection should be assigned to you.
 ## Context
 
 To import an AsyncAPI specification, you must first create a product. Then, use the *Add Event* option to import and add an AsyncAPI specification to the product. When you publish the product, the event becomes available in the catalog. Once it's available in the catalog, application developers can view the details of this event.
+
+> ### Note:  
+> The supported AsyncAPI versions are 2.0.0 and 2.5.0.
 
 
 

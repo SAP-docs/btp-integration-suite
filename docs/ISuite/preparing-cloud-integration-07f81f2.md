@@ -22,7 +22,7 @@ Data Space Integration interacts with Cloud Integration, so you must perform a f
 > 
 > Therefore, before you proceed, check if your Cloud Integration tenant uses any access policies that would block activities for the artifacts of Data Space Integration. All Data Space Integration artifacts start with `com.sap.integration.dsi`. If it does, you must modify your regular expression to add an exception for Data Space Integration as follows:
 > 
-> 1.  In the Integration Suite, go to *Monitor* \> *Integrations and APIs*. Choose the *Access Policies* tile.
+> 1.  In the SAP Integration Suite, go to *Monitor* \> *Integrations and APIs*. Choose the *Access Policies* tile.
 > 
 > 2.  Select the relevant access policy to open its references. Choose *Edit* the reference that would block the onboarding of Data Space Integration.
 > 

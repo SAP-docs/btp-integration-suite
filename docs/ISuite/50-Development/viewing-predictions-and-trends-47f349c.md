@@ -30,15 +30,15 @@ The *Predictions* page provides a visualization of expected traffic patterns for
 
 Analyze future API call traffic, customizable for specific timeframes such as daily, weekly, monthly, or custom periods.
 
-**Duration**: By default, the API call predictions and trends data is displayed for a maximum of 90 days, i.e., up to three months. To make changes to the duration, choose <span class="SAP-icons-V5"></span> Calendar and select your preferred duration for the next three months.
+**Duration**: By default, the API call predictions are displayed for 30 days. To make changes to the duration, choose <span class="SAP-icons-V5"></span> Calendar and select your preferred duration within the next three months.
 
 **Frequency**: By default, the frequency is set to daily. You have the following options to set the frequency:
 
 1.  *Every Day*: Choose this option to view daily API call predictions. This option is selected by default.
 2.  *Every 7 Days*: Choose this option to get a weekly overview, showing expected traffic at seven-day intervals.
 3.  *Every 4 Weeks*: Choose this option for a broader view, displaying expected traffic every four weeks.
-4.  *Custom*: This option allows you to choose recurring days for which you want to view predictions. To set custom days, do the below:
-    -   Choose *Custom* from the drop-down list.
+4.  *Custom*: This option allows you to choose recurring days for which you want to view predictions. To set custom days, perform the below:
+    -   Choose *Custom* from the drop-down menu.
     -   In the *Custom* dialog, choose your preferred days starting from Monday to Sunday.
     -   Choose *Apply* to save your changes.
     -   Choose *Cancel* to discard your changes and return to the application.

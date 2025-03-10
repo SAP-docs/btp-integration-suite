@@ -19,7 +19,7 @@ To consume assets, you must agree with the provider on the conditions. This proc
 
 This topic describes the recommended process for triggering a contract negotiation and transferring HTTP assets using EDR \(Endpoint Data Reference\) Management APIs. We recommend this option for frequently used assets, however, it also creates a lot of traffic.
 
-If you want to work with S3 assets, see [Consuming S3 Assets](consuming-s3-assets-4afdf5c.md).
+If you want to work with S3 assets, see [Consuming S3 and Azure Assets](consuming-s3-and-azure-assets-4afdf5c.md).
 
 
 

@@ -25,7 +25,7 @@ Once these steps are completed, you add users and assign the various roles assoc
 
 ## Context
 
-Once you’ve activated capabilities in the Integration Suite, you must assign users the required roles and role collections to access the functionality of these capabilities.
+Once you’ve activated capabilities in SAP Integration Suite, you must assign users the required roles and role collections to access the functionality of these capabilities.
 
 For more information on role collections, see [Roles and Role Collections](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/14a877c6e2f14832999df500ffa6e05e.html).
 
@@ -124,7 +124,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     </tr>
     <tr>
-    <td valign="top" rowspan="5">
+    <td valign="top" rowspan="9">
     
     API Management 
     
@@ -136,10 +136,8 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    -   Complete the onboarding process
+    -   Complete the onboarding process.
     -   Access the *API Settings* page. See [Setting Up API Management Capability](50-Development/setting-up-api-management-capability-f34e86c.md) 
-
-    For more information on relevant roles, see [Assign User Roles in API Management](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:.
 
     For end-to end instructions on how to set up and configure API Management, refer the tutorial [Set Up API Management from Integration Suite | Tutorials for SAP Developers](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html).
     
@@ -148,7 +146,32 @@ For more information on role collections, see [Roles and Role Collections](https
     <tr>
     <td valign="top">
     
-    Role Collection for Developer Hub: *AuthGroup.SelfService.Admin*
+    *APIPortal.Administrator* 
+    
+    </td>
+    <td valign="top">
+    
+    > ### Caution:  
+    > If you haven’t completed the onboarding process and have been assigned the APIPortal.Administrator role collection, the *Manage APIs* tile will not be displayed on the homepage, and you won't be able to work with APIs.
+
+    -   Access the *Manage APIs* tile on the home page.
+    -   Manage the API proxies by adding additional policies, and create products.
+
+    For more information on relevant roles, see [User Roles in API Management](user-roles-in-api-management-7010b58.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" colspan="2">
+    
+    Role collection for **Developer Hub**:
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *AuthGroup.SelfService.Admin* 
     
     </td>
     <td valign="top">
@@ -157,6 +180,32 @@ For more information on role collections, see [Roles and Role Collections](https
     -   Gain access to Developer Hub. See [Setting Up API Management Capability](50-Development/setting-up-api-management-capability-f34e86c.md)
 
 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    AuthGroup.APIPortalRegistration
+    
+    </td>
+    <td valign="top">
+    
+    Create a connection request between SAP Integration Suite API Management tenant and Developer Hub. It's also used to update the connection request credentials.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    AuthGroup.API.Admin
+    
+    </td>
+    <td valign="top">
+    
+    Manage an application developer’s access to the portal by either accepting or rejecting an application developer’s request.
+
+    For more information on relevant roles, see [User Roles and Responsibilities in Developer Hub](user-roles-and-responsibilities-in-developer-hub-54b4607.md).
     
     </td>
     </tr>
@@ -412,9 +461,7 @@ For more information on role collections, see [Roles and Role Collections](https
     </td>
     <td valign="top">
     
-    -   *ODPManage* 
-
-
+    *ODPManage* 
     
     </td>
     <td valign="top">
@@ -428,9 +475,7 @@ For more information on role collections, see [Roles and Role Collections](https
     <tr>
     <td valign="top">
     
-    -   *APIFullAccess*
-
-
+    *APIFullAccess*
     
     </td>
     <td valign="top">
@@ -444,9 +489,7 @@ For more information on role collections, see [Roles and Role Collections](https
     <tr>
     <td valign="top">
     
-    -   *ODPAPIAccess*
-
-
+    *ODPAPIAccess*
     
     </td>
     <td valign="top">

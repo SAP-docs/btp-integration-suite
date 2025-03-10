@@ -14,7 +14,7 @@ The B2B monitoring system consists of two primary components:
 
 Follow the procedure below to access your B2B monitoring:
 
-1.  Log on to your Integration Suite .
+1.  Log on to SAP Integration Suite .
 2.  Choose *Monitor* \> *B2B Scenarios*
 3.  The monitoring section opens with two tiles
 

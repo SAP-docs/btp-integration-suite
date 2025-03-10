@@ -5,7 +5,7 @@
 SAP Integration Suite offers storage to persist data in transit during message processing, namely the message queue storage used by the JMS adapter. Use this storage to persist the message at the beginning of the processing sequence. That way, processing is executed faster for the sender, who immediately receives a response with HTTP code 202 \(Accepted\), and the subsequent processing steps are executed asynchronously.
 
 > ### Note:  
-> Note that this option is only available if you have purchased the Enterprise Edition.
+> This option is supported by all SAP Integration Suite editions, except the basic edition, see SAP note [2903776](https://me.sap.com/notes/2903776).
 
 With this storage option, a retry mechanism is also in place that works as follows: If message processing fails due to a temporary error when calling an external component, the storage can be used to persist the failed messages. The JMS adapter polls the storage regularly for content, and triggers the reprocessing of the respective messages.
 
@@ -77,6 +77,9 @@ To configure the retry behavior, the JMS sender adapter provides a set of attrib
 -   *Dead-Letter Queue* 
 
     Enables Cloud Integration to take a message out of processing and mark it as *Blocked* in the queue if the respective message caused two worker node crashes.
+
+    > ### Note:  
+    > This attribute is only available when the *Non-Exclusive* access type is selected.
 
 
 ![](images/JMS_Sender_Adapter_Retry_6934cb9.png)

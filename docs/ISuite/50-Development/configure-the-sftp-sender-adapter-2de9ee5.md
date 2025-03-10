@@ -573,6 +573,8 @@ Default: `15`
 
 Select this option to change directory levels one at a time.
 
+To learn more, refer to [Stepwise changing directories](https://camel.apache.org/components/4.8.x/ftp-component.html#_stepwise_changing_directories).
+
 </td>
 </tr>
 <tr>

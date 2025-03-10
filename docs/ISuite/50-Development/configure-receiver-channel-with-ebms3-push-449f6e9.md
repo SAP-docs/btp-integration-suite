@@ -37,7 +37,7 @@ Use the *ebMS3 Push* message protocol to transmit AS4 message.
 
 ### Connection
 
-Select the *Connection*tab and provide values in the fields as follows.
+Select the *Connection* tab and provide values in the fields as follows.
 
 **Configure the Connection Details of the Receiving MSH**
 
@@ -98,7 +98,7 @@ Select the authentication type to process the outbound message:
 -   *SAML Authentication*
 
 
-You can also set the value of this attribute dynamically using the header `SAP_AS4_Outbound_Authentication_Type`.
+You can also set the value of this attribute dynamically using the `SAP_AS4_Outbound_Authentication_Type` header.
 
 The valid values are:
 
@@ -165,7 +165,7 @@ Enable if you want to compress the message.
 </tr>
 </table>
 
-Select the *Processing*tab and provide values in the fields as follows.
+Select the *Processing* tab and provide values in the fields as follows.
 
 **Processing**
 
@@ -306,24 +306,50 @@ Define the type of action that the user message is intended to invoke. For examp
 <tr>
 <td valign="top">
 
-*Attachment Name* 
+*Additional Properties* 
 
 </td>
 <td valign="top">
 
-Define the name for the payload attached to the AS4 message.
+Choose to add the Key, Type, and Value attributes to modify an existing parameter in the property sheet. For example, if you want to modify the MSH details, you must define a key and its value. The *Type* attribute is used in AS4 message in order to identify the payload.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Additional Properties* 
+*Attachment* 
 
 </td>
 <td valign="top">
 
-Specify the Key, Kype, and Value attributes to modify an existing parameter in the property sheet. For example, if you want to modify the MSH details, you must define a key and its value. The *Type* attribute is used in AS4 message in order to identify the payload.
+Select whether to add the attachment to the exchange payload of the AS4 message.
+
+-   *Dynamic*: To set the values dynamically using `SAP_AS4_Outbound_Processing_Attachment` header.
+
+    The valid values are:
+
+    -   `notRequired`
+    -   `required`
+
+-   *Not Required*: To skip adding the attachment to the exchange payload of the AS4 message.
+-   *Required*: To add the attachment to the exchange payload of the AS4 message.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Attachment Name* 
+
+\(only if you select *Attachment* as *Dynamic* or *Required*\)
+
+</td>
+<td valign="top">
+
+Define the name for the attachment of the AS4 message. You can also enter $\{header.headername\} or $\{property.propertyname\} to read the value dynamically from a header or a property.
 
 </td>
 </tr>
@@ -335,7 +361,16 @@ Specify the Key, Kype, and Value attributes to modify an existing parameter in t
 </td>
 <td valign="top">
 
-Define a key and value to modify the payload attached to AS4 message.
+Choose *Add* to define the key and value to modify the payload attached to AS4 message.
+
+From adapter version 1.6 onwards, following default properties \(Keys\) are not added in the payload. You must add those explicitly, if required.
+
+-   DocumentType \(value: BULK\)
+-   DocumentName \(value: PAYEVNT\)
+-   MimeType \(value: text/plain\)
+-   PartID \(value: 1\)
+
+
 
 </td>
 </tr>
@@ -392,7 +427,9 @@ Choose the relevant password type to be used when a username token is generated 
 <tr>
 <td valign="top">
 
-*Credential Name* only if *Username Token* isn't selected as *Not Required*
+*Credential Name* 
+
+\(only if *Username Token* isn't selected as *Not Required*\)
 
 </td>
 <td valign="top">
@@ -423,7 +460,7 @@ Ensures security implemented in web services for SOAP based messages.
 
 Used to sign and encrypt the payload.
 
-You can also set the value of this attribute dynamically by using the header `SAP_AS4_Outbound_Security_Type`.
+You can also set the value of this attribute dynamically by using `SAP_AS4_Outbound_Security_Type` header.
 
 The valid values are:
 
@@ -448,7 +485,7 @@ The valid values are:
 
 Ensures that the outgoing AS4 message is signed.
 
-You can also set the value of this attribute dynamically by using the header `SAP_AS4_Outbound_Sign_Message`.
+You can also set the value of this attribute dynamically by using `SAP_AS4_Outbound_Sign_Message` header.
 
 The valid values are:
 
@@ -483,15 +520,15 @@ Specify an alias for the tenant private key that is to be used to sign the messa
 
 Use the relevant algorithm to sign the AS4 message.
 
-You can also set the value of this attribute dynamically by using the header `SAP_AS4_Outbound_Signing_Algorithm`.
+You can also set the value of this attribute dynamically by using `SAP_AS4_Outbound_Signing_Algorithm` header.
 
 The valid values are:
 
--   *SHA256/RSA*
+-   `SHA256/RSA`
 
--   *SHA384/RSA*
+-   `SHA384/RSA`
 
--   *SHA512/RSA*
+-   `SHA512/RSA`
 
 
 
@@ -512,7 +549,7 @@ Specify an alias for the public key that is to be used to encrypt the message.
 
 The receiver \(WS provider\) public key is used to encrypt the request message \(that is sent to the receiver\). This key has to be part of the tenant keystore.
 
-You can also set the value of this attribute dynamically by using the header `SAP_AS4_Outbound_Encryption_Cert`. Use this header to set the certificate value to X509 certificate object.
+You can also set the value of this attribute dynamically by using `SAP_AS4_Outbound_Encryption_Cert` header. Use this header to set the certificate value to X509 certificate object.
 
 </td>
 </tr>
@@ -528,15 +565,15 @@ You can also set the value of this attribute dynamically by using the header `SA
 
 Specify a encryption algorithm to be applied when encrypting the message.
 
-You can also set the value of this attribute dynamically using the header `SAP_AS4_Outbound_Encryption_Algorithm`.
+You can also set the value of this attribute dynamically using `SAP_AS4_Outbound_Encryption_Algorithm` header.
 
 The valid values are:
 
--   *3DES*
+-   `3DES`
 
--   *AES128*
+-   `AES128`
 
--   *AES256*
+-   `AES256`
 
 
 
@@ -545,9 +582,12 @@ The valid values are:
 </tr>
 </table>
 
-Select the *Receipt* tab and provide values in the fields as follows.
+Select the *Response* tab and provide values in the fields as follows.
 
-**Receipt**
+> ### Note:  
+> For this adapter, version 1.6 onwards all received compressed response messages will be decompressed before sending to the exchange.
+
+**Response**
 
 
 <table>
@@ -566,6 +606,34 @@ Description
 <tr>
 <td valign="top">
 
+*Response Type* 
+
+</td>
+<td valign="top">
+
+Select the type of expected response.
+
+-   *Dynamic*: To set the values dynamically using `SAP_AS4_Outbound_Response_Type` header. The valid values are:
+    -   `receipt`
+    -   `userMessage`
+
+-   *Receipt*: To receive a response as a signal message.
+-   *User Message*: To receive a response as user message.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+
+*Receipt Configuration* \(only if you select *Receipt* in the *Response Type*\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Save Incoming Receipt* 
 
 </td>
@@ -573,9 +641,7 @@ Description
 
 Saves incoming receipt in the *Message Store* for 90 days. You can refer these receipts for auditing purposes.
 
-You can also set the value of this attribute dynamically using the header `SAP_AS4_Outbound_Save_Receipt`.
-
-The valid values are:
+You can also set the value of this attribute dynamically using `SAP_AS4_Outbound_Save_Receipt` header. The valid values are:
 
 -   `true`
 
@@ -594,14 +660,14 @@ The valid values are:
 </td>
 <td valign="top">
 
-Select the relevant option for username token verification in AS4 receipt:
+Select the relevant option for username token verification in AS4 receipt.
 
--   Dynamic: You can also set the value of this attribute dynamically by using the header `SAP_AS4_Outbound_Verify_Receipt_Username_Token`. The valid values are:
-    -   notRequired
-    -   required
+-   *Dynamic*: You can also set the value of this attribute dynamically by using `SAP_AS4_Outbound_Verify_Receipt_Username_Token` header. The valid values are:
+    -   `notRequired`
+    -   `required`
 
--   Not Required: To skip the verification of response message.
--   Required
+-   *Not Required*: To skip username token verification.
+-   *Required*: To verify the username token for the receipt configuration response obtained from the receiver system.
 
 
 
@@ -610,7 +676,9 @@ Select the relevant option for username token verification in AS4 receipt:
 <tr>
 <td valign="top">
 
-*Credential Name* only if *Verify Username Token* isn't selected as *Not Required*
+*Credential Name* 
+
+\(only if you select *Verify Username Token* as *Dynamic* or *Required*\)
 
 </td>
 <td valign="top">
@@ -622,14 +690,14 @@ Enter the credential name of the username-password pair specified during the dep
 <tr>
 <td valign="top">
 
-*Verify Receipt Signature* 
+*Verify the Receipt Signature* 
 
 </td>
 <td valign="top">
 
-Verifies the incoming receipt signature against the public key alias.
+Choose to verify the incoming receipt signature against the public key alias.
 
-You can also set the value of this attribute dynamically using the header `SAP_AS4_Outbound_Verify_Receipt`.
+You can also set the value of this attribute dynamically using `SAP_AS4_Outbound_Verify_Receipt` header. The valid values are:
 
 -   `true`
 
@@ -648,10 +716,124 @@ You can also set the value of this attribute dynamically using the header `SAP_A
 
 *Public Key Alias* 
 
+\(Only if you select *Verify the Receipt Signature*\)
+
 </td>
 <td valign="top">
 
 Enter an alias name to select a public key and corresponding certificate.
+
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+
+*User Message Configuration* \(only if you select *User Message* as *Response Type*\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Verify Username Token*
+
+</td>
+<td valign="top">
+
+Select the relevant option for username token verification in AS4 message.
+
+-   *Dynamic*: You can also set the value of this attribute dynamically by using `SAP_AS4_Outbound_Push_Verify__User_Message_ Receipt_Username_Token` header. The valid values are:
+    -   `notRequired`
+    -   `required` 
+
+-   *Not Required*: To skip username token verification.
+-   *Required*: To verify username token in AS4 message.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Credential Name* 
+
+\(only if you select *Verify Username Token* as *Dynamic* or *Required*\)
+
+</td>
+<td valign="top">
+
+Enter the credential name of the username-password pair specified during the deployment of the security artifact. You can also enter $\{header.headername\} or $\{property.propertyname\} to read the value dynamically from a header or a property.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Verify Signature* 
+
+</td>
+<td valign="top">
+
+Select to verify the user message signature.
+
+-   *Dynamic*: You can set the value of this attribute dynamically using `SAP_AS4_ Outbound_Push_Verify_User_Message_Signature` header. The valid values are:
+    -   `notRequired`
+    -   `trustedCertificate`
+
+-   *Not Required*: To skip verifying the user message signature.
+-   *Trusted Certificate*: To verify the signature for the user message response obtained from the receiver system.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Public Key Alias* 
+
+\(Only if you select *Verify Signature* as *Dynamic* or *Trusted Certificate*\)
+
+</td>
+<td valign="top">
+
+Enter an alias name to select a public key and corresponding certificate.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Decrypt Message* 
+
+</td>
+<td valign="top">
+
+Select an alias to decyrpt the message.
+
+-   *Dynamic*: You can set the value of this attribute dynamically using `SAP_AS4_Outbound_Push_Decrypt_Message` header. The valid values are:
+    -   `notRequired`
+    -   `required`
+
+-   *Not Required*: To skip the message decryption.
+-   *Required*: To decrypt the message.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key Alias* 
+
+\(Only if you select *Decrypt Message* as *Dynamic* or *Required*\)
+
+</td>
+<td valign="top">
+
+Enter an alias name to select a private key and corresponding certificate.
 
 </td>
 </tr>

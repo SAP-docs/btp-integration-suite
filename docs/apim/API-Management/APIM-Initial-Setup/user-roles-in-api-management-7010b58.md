@@ -40,7 +40,7 @@ Use this role to access the API portal user interface \(UI\) and services, manag
 </td>
 <td valign="top">
 
-You need this role assigned to you because the client credentials, which are necessary for establishing a connection between the Integration Suite API Management tenant and Developer Hub, are generated for this role.
+You need this role assigned to you because the client credentials, which are necessary for establishing a connection between the SAP Integration Suite API Management tenant and Developer Hub, are generated for this role.
 
 </td>
 </tr>
@@ -198,7 +198,7 @@ Use this role to:
 </td>
 <td valign="top">
 
-This role is necessary for creating a connection request between the Integration Suite API Management tenant and the Developer Hub. It's also used to update the connection request credentials.
+This role is necessary for creating a connection request between the SAP Integration Suite API Management tenant and the Developer Hub. It's also used to update the connection request credentials.
 
 </td>
 </tr>

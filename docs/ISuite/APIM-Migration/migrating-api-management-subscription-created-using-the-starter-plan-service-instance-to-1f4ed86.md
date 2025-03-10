@@ -10,14 +10,14 @@ Migrate the design-time components from the Neo environment, which was previousl
 
 ## Context
 
-With the Integration Suite premium edition license available in a different subaccount, you can migrate the API Management design time subscription to this subaccount as well.
+With SAP Integration Suite premium edition license available in a different subaccount, you can migrate the API Management design time subscription to this subaccount as well.
 
 > ### Note:  
 > Make a note of the following:
 > 
 > -   Analytics data can't be retained, as Advanced Analytics gets newly configured in the different subaccount. However, if you come across any analytics data from the previous subaccount, you must ignore the data and consider the analytics data after the migration task is completed.
 > 
-> -   Subscribe to the API portal and the Developer Hub in the other multi-cloud foundation subaccount. This is the subaccount with the Integration Suite premium edition license.
+> -   Subscribe to the API portal and the Developer Hub in the other multi-cloud foundation subaccount. This is the subaccount with SAP Integration Suite premium edition license.
 > 
 > -   Tenant type \(for example, production and test\) of the newly onboarded API Management on the multi-cloud foundation must be same as that of the source API Management on the Neo environment.
 > 
@@ -76,7 +76,7 @@ With the Integration Suite premium edition license available in a different suba
 
     -   Provide the multi-cloud foundation account details where starter plan service instance is created.
 
-    -   Provide the details of the target Integration Suite subscription account for migrating the starter plan subscription to a different subaccount. Since you already have the Integration Suite premium license available, you can create the API Management subscription before creating the ticket.
+    -   Provide the details of the target SAP Integration Suite subscription account for migrating the starter plan subscription to a different subaccount. Since you already have SAP Integration Suite premium license available, you can create the API Management subscription before creating the ticket.
 
 
     > ### Note:  

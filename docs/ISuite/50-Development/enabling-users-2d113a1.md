@@ -38,7 +38,7 @@ If someone needs to review and understand how a business data graph is configure
 
 [Initial Setup](initial-setup-12ad448.md "As a Subaccount or Tenant Administrator, you need to add Graph as a capability of API Management within SAP Integration Suite.")
 
-[Create a Business Data Graph in Integration Suite](create-a-business-data-graph-in-integration-suite-42daf3b.md "As Tenant administrator in the SAP Integration Suite, you can create a new business data graph. You can also use an existing configuration file to create a business data graph.")
+[Create a Business Data Graph in Integration Suite](create-a-business-data-graph-in-integration-suite-42daf3b.md "As a Graph Key User, you can create a new business data graph. You can also use an existing configuration file to create a business data graph.")
 
 [Define Users](initial-setup-12ad448.md#loio12ad448225ac47049982d9faab7978a3__section_DefineUsers)
 

@@ -28,7 +28,7 @@ Whenever you create a product or edit a draft product, permissions can be added 
 
 ## Procedure
 
-1.  Log on to the SAP Integration Suite .
+1.  Log on to SAP Integration Suite .
 
 2.  Choose the navigation icon on the left and choose *Engage*.
 

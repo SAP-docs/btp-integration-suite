@@ -24,6 +24,8 @@ Troubleshooting an integration flow requires that you understand its integration
 
     You can find an example integration scenario illustrating this rule at [Outsource Integration Logic into Separate Integration Flows](outsource-integration-logic-into-separate-integration-flows-0bcf78d.md).
 
+-   Using more than 8 nested routes within an integration process can lead to deployment delays and failures due to exponential increases in complexity. To mitigate this issue, consider utilizing local integration processes or other integration flows with process direct adapters to reduce the complexity.
+
 -   Increasing reuse by making sure that an integration flow can be called through different ways \(for example, using different protocols\)
 
     You can find an example integration scenario illustrating this rule at [Expose an Endpoint for a Scheduled Integration Flow](expose-an-endpoint-for-a-scheduled-integration-flow-d4bb40c.md).

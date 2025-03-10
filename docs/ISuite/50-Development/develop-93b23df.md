@@ -1,8 +1,26 @@
 <!-- loio93b23dfa78fa4927ab99fcfa9ef090b4 -->
 
-# Developer Guide
+# Develop
 
-This guide provides the conceptual information you need to use the Graph API in your applications.
+As a developer, you want to build applications that consume data from business data graphs. This guide provides all the information you need to start developing.
+
+This section provides:
+
+-   Conceptual information you need to connect Graph APIs to your applications.
+
+-   Information about how to connect and use:
+
+    -   [Graph Navigator on Developer Hub](graph-navigator-on-developer-hub-8e75d31.md).
+
+        This tool is available in Graph on the SAP Integration Suite home page. You can inspect your configured business data graphs and try them out on your own system, including custom services, model extensions, and more.
+
+    -   [Graph Navigator](https://api.sap.com/graph) on SAP Business Accelerator Hub.
+
+        A public listing of all supported entities from SAP business systems in a business data graph. You can try out the [Graph APIs](https://api.sap.com/api/Graph_ConfigurationAPI/overview) using the provided sandbox system.
+
+    -   [Graph Syntax Diagrams](graph-syntax-diagrams-86101be.md) that give you a graphical representation of the APIs.
+
+
 
 SAP is famous for its ERP software, but today SAP customers have increasingly complex requirements and are managing intricate and hybrid on-premise and cloud solutions. Customers want to become intelligent enterprises. To support their journey, SAP has augmented its ERP-centric business suite with substantial additional functions through the acquisition of cloud solutions like SAP SuccessFactors, SAP Concur, SAP Ariba, and SAP Customer Experience \(SAP CX\). SAP’s Intelligent Suite portfolio now supports all key business processes and spans all enterprise functions, but this expanded role and diversity of solutions has introduced some complexity and heterogeneity.
 

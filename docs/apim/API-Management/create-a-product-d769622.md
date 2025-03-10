@@ -19,7 +19,7 @@ You create a product when you want to expose one or more API proxies to the Appl
 
 ## Procedure
 
-1.  Log on to the .
+1.  Log on to .
 
 2.  Choose the navigation icon on the left and choose *Engage*.
 3.  Go to the *Products* tab.

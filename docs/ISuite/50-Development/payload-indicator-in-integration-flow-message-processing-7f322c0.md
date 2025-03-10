@@ -6,7 +6,7 @@ Monitor the message processing of the integration flows.
 
 The *Monitor* tab of the Cloud Integration tenant allows you to monitor the message processing of the integration flows. To know more, see [Monitoring](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/05446d0616d44e1daf821c273b69fcc6.html).
 
-1.  Log on to your Integration Suite.
+1.  Log on to SAP Integration Suite.
 2.  Choose *Monitor* \> *Integrations*.
 3.  Choose *All Integration Flows* tile under the *Monitor Message Processing* section.
 

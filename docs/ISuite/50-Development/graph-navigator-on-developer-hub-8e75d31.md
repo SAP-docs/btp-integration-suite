@@ -1,6 +1,6 @@
 <!-- loio8e75d3178a684912a4b28d3b9593539c -->
 
-# Graph Navigator in Developer Hub
+# Graph Navigator on Developer Hub
 
 The Graph Navigator is a tool that you use to inspect business data graphs.
 

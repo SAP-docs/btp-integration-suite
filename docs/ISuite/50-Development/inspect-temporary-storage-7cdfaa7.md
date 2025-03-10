@@ -4,7 +4,7 @@
 
 You can inspect the total storage usage that temporary files allocate in the file system for a given time period.
 
-At runtime, the system caches certain integration flows in temporary files. The *Temporary Storage* feature calculates the storage volume these temporary files use and shows the maximum file size detected over the selected time period.
+At runtime, the system can cache messages in temporary files. The *Temporary Storage* feature calculates the storage volume these temporary files use and shows the maximum file size detected over the selected time period.
 
 Temporary files become especially relevant when integration flows process large messages.
 
@@ -17,7 +17,9 @@ Temporary files become especially relevant when integration flows process large 
 
 ## Screen Components
 
-The bar chart shows the total storage used by temporary files for a defined time period, as shown in the image below:![](images/Inspect_Temporary_Storage_f48af1c.png)
+The bar chart shows the total storage used by temporary files for a defined time period, as shown in the image below:
+
+![](images/Inspect_Temporary_Storage_f48af1c.png)
 
 You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*, *Past Month*, or *Custom* for a custom time interval.
 
@@ -26,7 +28,81 @@ You can change the displayed time period by selecting a different option in the 
 
 The total storage usage is plotted in a bar graph against time. The horizontal axis shows the time window, and the vertical axis shows the storage usage level in MB.
 
-Each bar also has a bullet that indicates the size of the file that uses the maximum storage.
+The usage level is represented by the following elements:
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Graphical Element
+
+</th>
+<th valign="top">
+
+Temporary Storage Usage
+
+</th>
+<th valign="top">
+
+Meaning
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Green Bar
+
+</td>
+<td valign="top">
+
+OK
+
+</td>
+<td valign="top">
+
+Temporary storage usage is within the recommended limit of 2.5 GB.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Orange Bar
+
+</td>
+<td valign="top">
+
+Entitlement Exceeded
+
+</td>
+<td valign="top">
+
+Temporary storage usage exceeds the recommended limit of 2.5 GB.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Blue Bullet
+
+</td>
+<td valign="top">
+
+Max. File Size
+
+</td>
+<td valign="top">
+
+The maximum size that temporary files reach at the defined time period.
+
+</td>
+</tr>
+</table>
 
 > ### Note:  
 > The system reads the resource consumption every hour. This means that there can be a maximum lag of 1 hour between processing an integration flow with a certain transaction setting and displaying the latest integration flow usage in the Inspect feature.

@@ -2,23 +2,23 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Working with Integration Suite Home
+# Working with SAP Integration Suite Home
 
-Access the various features and resources available on the Integration Suite home page.
+Access the various features and resources available on the SAP Integration Suite home page.
 
 **Prerequisites**
 
--   You’ve subscribed to the Integration Suite application. For more information, see [Subscribing and Configuring Initial Access to SAP Integration Suite](../10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
--   You have the *Integration\_Provisioner* role or any relevant Integration Suite capability-specific role assigned to your user. For more information, see [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md).
+-   You’ve subscribed to the SAP Integration Suite application. For more information, see [Subscribing and Configuring Initial Access to SAP Integration Suite](../10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
+-   You have the *Integration\_Provisioner* role or any relevant SAP Integration Suite capability-specific role assigned to your user. For more information, see [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md).
 
 
 
-The Integration Suite home page is your first entry point to the Integration Suite.
+The Integration Suite home page is your first entry point to SAP Integration Suite.
 
 > ### Note:  
-> If you've subscribed to an older version of the Integration Suite, when you choose *Go To Application* from the *Instances and Subscriptions*page on the BTP cockpit, you will be navigated to the provisioning window. To navigate to the new home page, just choose *Integration Suite* from the top left corner of the toolbar.
+> If you've subscribed to an older version of SAP Integration Suite, when you choose *Go To Application* from the *Instances and Subscriptions*page on the BTP cockpit, you will be navigated to the provisioning window. To navigate to the new home page, just choose *Integration Suite* from the top left corner of the toolbar.
 
-You find see the following sections on the Integration Suite home page:
+You can see the following sections on the SAP Integration Suite home page:
 
 
 
@@ -55,19 +55,19 @@ Each capability tile also displays some quick links to allow you to start workin
 > If you're working with APIs, and have activated the API Management capability, then the first thing displayed is the *Settings* tab. Choose *Settings* \> *API* to configure the service. For more information, see [Setting Up API Management Capability](../50-Development/setting-up-api-management-capability-f34e86c.md).
 
 > ### Note:  
-> For Open Connectors, Integration Assessment, and Migration Assessment, you will be navigated out of the Integration Suite to the respective capability.
+> For Open Connectors, Integration Assessment, and Migration Assessment, you will be navigated out of SAP Integration Suite to the respective capability.
 
 
 
 ### Overview
 
-This section highlights the salient features of the SAP Integration Suite. You can choose *Explore Videos* to browse though a rich set of How-To videos that showcase various integration scenarios. You can also choose *Explore*SAP Business Accelerator Hub to discover various APIs, and integration flows that are available to kickstart your integration journey.
+This section highlights the salient features of SAP Integration Suite. You can choose *Explore Videos* to browse though a rich set of How-To videos that showcase various integration scenarios. You can also choose *Explore*SAP Business Accelerator Hub to discover various APIs, and integration flows that are available to kickstart your integration journey.
 
 
 
 ### Resources
 
-In this section, you can choose links pointing to various Integration Suite resources ranging from product documentation, feature updates, Learning Journeys, to community pages.
+In this section, you can choose links pointing to various SAP Integration Suite resources ranging from product documentation, feature updates, Learning Journeys, to community pages.
 
 If you want to request for new features, choose *Tell Us What You Want* to navigate to the SAP Integration Suite Influence Channel.
 
@@ -530,7 +530,7 @@ Description
 
 Your profile. You can:
 
--   Log out of Integration Suite
+-   Log out of SAP Integration Suite
 -   Access online and troubleshooting guides
 -   Check details such as the build number and tenant
 
@@ -598,7 +598,7 @@ Explore our environment, and navigate to the following portals:
 </td>
 <td valign="top">
 
-News and Announcement. Lets you know what is new in the Integration Suite.
+News and Announcement. Lets you know what is new in SAP Integration Suite.
 
 </td>
 </tr>
@@ -611,5 +611,5 @@ News and Announcement. Lets you know what is new in the Integration Suite.
 
 [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md "Assign the required roles and role collections to users for accessing the individual capabilities.")
 
-[Activating and Managing Capabilities](../activating-and-managing-capabilities-2ffb343.md "Activate capabilities for the SAP Integration Suite.")
+[Activating and Managing Capabilities](../activating-and-managing-capabilities-2ffb343.md "Activate capabilities for SAP Integration Suite.")
 

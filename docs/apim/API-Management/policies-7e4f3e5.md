@@ -22,5 +22,5 @@ There are few policies that work as expected only when associated with multiple 
 
 For example, Response Cache policy must be attached to both request and response Flow of an API proxy. In such cases, you can add Response Cache policy to a request flow & then attach the same to the response flow.
 
-To attach a policy to multiple flows, select Add "+" against the required policy in the *Created Policies* area.
+To attach a policy to multiple flows, click "+" against the required policy in the *Created Policies* area.
 

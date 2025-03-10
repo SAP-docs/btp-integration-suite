@@ -29,7 +29,7 @@ Each adapter that’s available in the SAP Business Accelerator Hub in contained
 > 
 >     The adapter gets auto-deployed to the runtime profile configured in the integration flow. See: [Specify the Runtime Configuration](specify-the-runtime-configuration-0c1c96e.md). If you want to deploy the adapter to more than one runtime profile, you must manually deploy to each one of them. For more information, see [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
-> -   Alternatively, you can copy the package that contains the adapter from the *Discover* view like you do for standard prepackaged content. This way, you need not import from SAP Business Accelerator Hub during design time. In this case, you must first deploy the adapter to a runtime profile of your choice.
+> -   Alternatively, you can copy the package that contains the adapter from the *Discover* view like you do for standard prepackaged content. This way, you need not import from SAP Business Accelerator Hub during design time. You must first deploy the adapter to a runtime profile of your choice before using it in an integration flow.
 > 
 >     In this case too, if you want to deploy the adapter to more than one runtime profile, you must manually deploy to each one of them.
 > 

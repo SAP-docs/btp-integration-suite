@@ -23,9 +23,11 @@ You use the HTTPS sender adapter to communicate with receiver systems using HTTP
 Supported Header:
 
 > ### Remember:  
-> The adapter adds the headers that follow and you can't add them manually. The adapter removes any custom header that you send with the prefix `camel` even if you add them as *Allowed Headers* in the *Runtime Configuration* of the integration flow.
+> -   The adapter adds the headers that follow and you can't add them manually. The adapter removes any custom header that you send with the prefix `camel` even if you add them as *Allowed Headers* in the *Runtime Configuration* of the integration flow.
 > 
-> Also, any query parameter \(with a key and value\) that you send to the adapter is automatically converted to a header. So, if you send a query and a header with same name, the adapter appends the query to the header.
+> -   Any query parameter \(with a key and value\) that you send to the adapter is automatically converted to a header. So, if you send a query and a header with same name, the adapter appends the query to the header.
+> 
+> -   All request and response header names and its values should be a string without whitespace. For more information, refer to [HTTP Specifications](https://datatracker.ietf.org/doc/html/rfc7230#section-3.2).
 
 -   SapAuthenticatedUserName
 

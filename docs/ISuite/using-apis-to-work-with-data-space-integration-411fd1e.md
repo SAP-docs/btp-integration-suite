@@ -73,7 +73,7 @@ Now that you've created a new service key, you can start interacting with Data S
 
 [Discovering Offers Through a Catalog](discovering-offers-through-a-catalog-90f3619.md "Before you can consume an asset of another data space participant, you must discover their catalog and decide on an offer.")
 
-[Consuming S3 Assets](consuming-s3-assets-4afdf5c.md "To consume assets, you must agree with the provider on the conditions. This process happens in a contract negotiation, after which you can transfer your assets.")
+[Consuming S3 and Azure Assets](consuming-s3-and-azure-assets-4afdf5c.md "Learn how to trigger a contract negotiation, agree with a provider on the conditions for using their assets, and transfer assets to your desired location.")
 
 [Consuming HTTP Assets](consuming-http-assets-735300c.md "Learn how to initiate contract negotiations and transfer HTTP assets from a provider's catalog.")
 
