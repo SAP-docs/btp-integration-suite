@@ -13,7 +13,7 @@ Migration Assistant for asset migration includes the tools and utilities that en
 
 Your source system is the system that has your API Management content in the Cloud Foundry environment.
 
-Your target system is the system that has your API Management content within the Cloud Foundry environment. Here Cloud Foundry environment can be your native standalone API Management subscription or API Management capability within Integration Suite.
+Your target system is the system that has your API Management content within the Cloud Foundry environment. Here Cloud Foundry environment can be your native standalone API Management subscription or API Management capability within SAP Integration Suite.
 
 **Possible Migration Paths**
 
@@ -61,7 +61,7 @@ Standalone
 </td>
 <td valign="top">
 
-Integration Suite
+SAP Integration Suite 
 
 </td>
 <td valign="top">
@@ -73,7 +73,7 @@ Yes
 <tr>
 <td valign="top">
 
-Integration Suite
+SAP Integration Suite 
 
 </td>
 <td valign="top">
@@ -90,12 +90,12 @@ No
 <tr>
 <td valign="top">
 
-Integration Suite
+SAP Integration Suite 
 
 </td>
 <td valign="top">
 
-Integration Suite
+SAP Integration Suite 
 
 </td>
 <td valign="top">

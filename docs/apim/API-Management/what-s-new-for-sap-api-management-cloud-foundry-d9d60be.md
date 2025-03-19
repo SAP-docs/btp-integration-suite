@@ -92,6 +92,75 @@ API Management
 </td>
 <td valign="top">
 
+Supported AsyncAPI Versions
+
+</td>
+<td valign="top">
+
+You can now import events more efficiently with enhanced support for AsyncAPI versions 2.5.0 and 2.6.0. For more information, see [Import Events as AsyncAPI on Developer Hub](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-products-by-importing-asyncapi-specifications?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-03-09
+
+</td>
+<td valign="top">
+
+2025-03-09
+
+</td>
+<td valign="top">
+
+2501
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Tenant Cloning Tool
 
 </td>
@@ -247,14 +316,14 @@ API Management
 </td>
 <td valign="top">
 
-Developer Hub 
+Developer Hub
 
 </td>
 <td valign="top">
 
 As a content administrator, you can import events using an AsyncAPI specification, add them to products, and make them publicly available by publishing the associated products in the catalog.
 
-See: [Make Events Imported as AsyncAPI Specification Available in the Developer Hub](https://help.sap.com/docs/integration-suite/sap-integration-suite-54e467e3bd2148deb837d34d1ec66a78/creating-products-by-importing-events-via-asyncapi-specifications?version=Cloud)
+See: [Import Events as AsyncAPI Specification on Developer Hub](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-products-by-importing-asyncapi-specifications?version=CLOUD)
 
 </td>
 <td valign="top">
@@ -289,12 +358,12 @@ Not applicable
 </td>
 <td valign="top">
 
-2025-01-13
+2025-01-16
 
 </td>
 <td valign="top">
 
-2025-01-13
+2025-01-16
 
 </td>
 <td valign="top">

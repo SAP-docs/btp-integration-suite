@@ -1,8 +1,8 @@
 <!-- loio4afdf5c06302482fb2fff87ed94f3896 -->
 
-# Consuming S3 Assets
+# Consuming S3 and Azure Assets
 
-To consume assets, you must agree with the provider on the conditions. This process happens in a contract negotiation, after which you can transfer your assets.
+Learn how to trigger a contract negotiation, agree with a provider on the conditions for using their assets, and transfer assets to your desired location.
 
 
 
@@ -16,7 +16,7 @@ You've completed the steps described in [Discovering Offers Through a Catalog](d
 
 ## Context
 
-This topic describes the recommended process to trigger a contract negotiation and transfer Amazon S3 assets. For the process for HTTP assets, see [Consuming HTTP Assets](consuming-http-assets-735300c.md).
+This topic describes the recommended process to trigger a contract negotiation and transfer Amazon S3 assets and Azure assets. For the process for HTTP assets, see [Consuming HTTP Assets](consuming-http-assets-735300c.md).
 
 
 
@@ -111,8 +111,8 @@ This topic describes the recommended process to trigger a contract negotiation a
 
     > ### Sample Code:  
     > ```
-    > {
-    >     "@context": {
+    > {    
+    > "@context": {
     >             "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
     >             "edc": "https://w3id.org/edc/v0.0.1/ns/",
     >             "odrl": "http://www.w3.org/ns/odrl/2/"
@@ -168,12 +168,13 @@ This topic describes the recommended process to trigger a contract negotiation a
     > {{managementURL}}/api/management/v3/contractnegotiations/{{negotiationId}/agreement
     > ```
 
-5.  You can now transfer your assets. Since you're using the S3 data plane, your request must include a data destination. This section is designated for your bucket details, which is where relevant objects are transferred to from the provider EDC.
+5.  You can now transfer your assets.
 
-    > ### Note:  
-    > If you want to transfer S3 files that are bigger than 5 GB, open a ticket on `LOD-HCI-PI-OPS` before initiating the transfer process.
+    If you want to consume **Azure** assets, skip this step and continue with step 6.
 
-    You have two options for using credentials in your call: you can either use a **permanent access key ID and access key secret**, or generate an **alias** using the AWS Secret Token Service \(STS\).
+    For **S3** assets, your request must include a data destination, which is the location to which the provider transfers the asset.
+
+    You have two options for using credentials in your call: you can either enter a **permanent access key ID and access key secret** directly into the payload, or you can generate an **alias** beforehand using the AWS Secret Token Service \(STS\) and then refer to it in the payload.
 
     -   If you're using a **permanent access key ID and access key secret**, start the transfer process with the following POST call and body:
 
@@ -231,17 +232,15 @@ This topic describes the recommended process to trigger a contract negotiation a
         2.  To store your credentials in the vault of Data Space Integration, perform the following API call:
 
             ```
-            POST /api/v1/dsi/credentials/token
-            									
-            									{
-            									"alias": "{{aliasName}}",
-            									"credentials": {
-            									"accessKeyId": "{{awsTemporaryAccessKeyId}}",
-            									"secretAccessKey": "{{awsTemporarySecretAccessKey}}",
-            									"sessionToken": "{{sessionToken}}",
-            									"expiration": "{{expiration}}"
-            									}
-            									}
+            POST /api/v1/dsi/credentials/token																		{
+              "alias": "{{aliasName}}",
+              "credentials": {
+              "accessKeyId": "{{awsTemporaryAccessKeyId}}",
+              "secretAccessKey": "{{awsTemporarySecretAccessKey}}",
+              "sessionToken": "{{sessionToken}}",
+              "expiration": "{{expiration}}"
+            }
+            }
             ```
 
             You can either enter your own alias, or omit the field and have an alias be generated for you.
@@ -265,51 +264,78 @@ This topic describes the recommended process to trigger a contract negotiation a
 
             ```
             POST /api/management/v3/transferprocesses
-            										
-            										{
-            										"@context": [
-            										{
-            										"@vocab": "https://w3id.org/edc/v0.0.1/ns/"
-            										},
-            										{
-            										"edc": "https://w3id.org/edc/v0.0.1/ns/"
-            										}
-            										],
-            										"@type": "edc:TransferRequest",
-            										"edc:protocol": "dataspace-protocol-http",
-            										"edc:counterPartyAddress": "{{providerControlPlaneDsp}}",
-            										"edc:contractId": "{{agreementId}}",
-            										"edc:assetId": "{{assetId}}",
-            										"edc:transferType": "AmazonS3-PUSH",
-            										"edc:dataDestination": {
-            										"edc:type": "AmazonS3",
-            										"edc:bucketName": "dsibucket-dev-consumer-001",
-            										"edc:region": "eu-central-1",
-            										"edc:folderName": "testConsumerFolder",
-            										"edc:objectName": "testfilename_10mb.txt",
-            										"edc:keyName": "{{aliasName}}"
-            										},
-            										"edc:privateProperties": {
-            										"private-key": "private-value"
-            										}
-            										}
+            																				{
+            	"@context": [
+            	{
+            	"@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+            	},
+            	{
+            	"edc": "https://w3id.org/edc/v0.0.1/ns/"
+            	}
+            	],
+            	"@type": "edc:TransferRequest",
+            	"edc:protocol": "dataspace-protocol-http",
+            	"edc:counterPartyAddress": "{{providerControlPlaneDsp}}",
+            	"edc:contractId": "{{agreementId}}",
+            	"edc:assetId": "{{assetId}}",
+            	"edc:transferType": "AmazonS3-PUSH",
+            	"edc:dataDestination": {
+            	"edc:type": "AmazonS3",
+            	"edc:bucketName": "dsibucket-dev-consumer-001",
+            	"edc:region": "eu-central-1",
+            	"edc:folderName": "testConsumerFolder",
+            	"edc:objectName": "testfilename_10mb.txt",
+            	"edc:keyName": "{{aliasName}}"
+            	},
+            	"edc:privateProperties": {
+            	"private-key": "private-value"
+            	}
+            }
             ```
 
 
 
-6.  Once you've triggered the transfer process, you can check its status with the following GET call:
+6.  For **Azure** assets, complete the following steps after getting your contract agreement ID:
+
+    1.  Create credentials for yourself as a consumer of Data Space Integration using the [token API](https://int.api.hana.ondemand.com/api/DSIAPI/resource/STS_Credentials_Alias). Your credentials alias must follow the pattern `accountName-key1`, with `accountName` being your Azure accsount name.
+
+        > ### Caution:  
+        > Make sure that the credentials are valid for the account. Since the credentials are cached in the control plane, it must be restarted to reflect any changes you make. In this case, please get in touch with support. See [Troubleshooting for Data Space Integration](troubleshooting-for-data-space-integration-166fa88.md).
+
+    2.  Next, trigger the transfer process using the following payload. For Azure assets, the payload differs slightly from the S3 payload to account for the differing data destination. For more details, refer to the [Transfer Process API](https://hub.sap.com/api/DSIAPI/resource/initiateTransferprocessHttp) and select an example for Azure.
+
+        ```
+        {
+           "@context": {
+               "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+               "edc": "https://w3id.org/edc/v0.0.1/ns/"
+           },
+           "@type": "edc:TransferRequest",
+           "edc:protocol": "dataspace-protocol-http",
+           "edc:counterPartyAddress": "{{providerControlPlaneDsp}}",
+           "edc:contractId": "{{agreementId}}",
+           "edc:transferType": "AzureStorage-PUSH",
+           "edc:dataDestination": {
+               "type": "AzureStorage",
+               "account": "{{accountName}}",
+               "container": "{{container}}"
+           },
+           "edc:privateProperties": {
+               "private-key": "private-value"
+           }
+        
+        }
+        ```
+
+
+7.  Once you've triggered the transfer process, you can check its status with the following GET call:
 
     > ### Code Syntax:  
     > ```
     > {{managementURL}}/api/management/v3/transferprocesses/{id}/state
     > ```
 
-    You can also receive general information about your transfer process with the following GET call:
-
-    > ### Code Syntax:  
-    > ```
-    > {{managementURL}}/api/management/v3/transferprocesses/{id}
-    > ```
+    Once the status reaches *successful*, you can find the asset in the bucket you defined in the transfer process payload.
 
 
 
@@ -318,5 +344,5 @@ This topic describes the recommended process to trigger a contract negotiation a
 
 ## Results
 
-You've successfully closed a contract negotiation, received the contract agreement ID, and transferred an asset.
+You've successfully closed a contract negotiation, received the contract agreement ID, and the provider transferred an asset into your bucket.
 

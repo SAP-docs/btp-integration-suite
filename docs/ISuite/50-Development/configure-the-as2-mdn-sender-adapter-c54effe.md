@@ -7,6 +7,9 @@
 > -   If you want to call the AS2 MDN sender channel, use http://<host\>:<port\>/as2/mdn .
 > -   You must [Activate Enterprise Messaging](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/activating-enterprise-messaging?locale=en-US&version=Cloud)/ [Message Queue](managing-message-queues-cdcce24.md) to use this adapter.
 
+> ### Note:  
+> For Edge Integration Cell runtime fetching the values dynamically from partner directory is not supported.
+
 Once you have created a sender channel and selected the AS2 MDN adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 The General tab shows general information such as the adapter type, its direction \(sender or receiver\), the transport protocol, and the message protocol.

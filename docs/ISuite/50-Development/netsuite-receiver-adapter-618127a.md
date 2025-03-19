@@ -664,6 +664,14 @@ Example: `key1=value1,key2=value2`
 
 Select the type of content for the RESTlet script.
 
+-   *Application/JSON*
+
+-   *Application/XML*
+
+-   *TEXT/Plain*
+
+
+
 </td>
 </tr>
 <tr>

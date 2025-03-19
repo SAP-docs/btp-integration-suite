@@ -10,6 +10,9 @@ Use Edge Lifecycle Management \(Edge LM\) to modify the solution deployment prop
 
 During the upgrade the service keys for connectivity with SAP Integration Suite and BTP services are rotated as needed. For key rotation, the `modify` operation can be used even without changing specific solution properties.
 
+> ### Note:  
+> When you modify the Istio solution property for *Client IP Preservation*, it is necessary to subsequently modify the Edge Integration Cell solution. This ensures that the changes are reflected in the Policy Engine.
+
 To modify the Edge Integration Cell deployment solution properties, proceed as follows:
 
 

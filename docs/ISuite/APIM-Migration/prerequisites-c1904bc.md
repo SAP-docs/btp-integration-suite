@@ -18,8 +18,8 @@ Checks to be completed before you start migrating your API Management content no
 ### Prerequisites for the source system
 
 -   You must have a valid API Management system \(API portal and Developer Hub\) running in the Neo environment.
--   The source system must support basic authentication for API access on Integration Suite and Developer Hub\(which is the developer portal\).
--   Make a note of the Integration Suite and Developer Hub\(developer portal\) URLs of the source system and keep it handy.
+-   The source system must support basic authentication for API access on SAP Integration Suite and Developer Hub\(which is the developer portal\).
+-   Make a note of the SAP Integration Suite and Developer Hub\(developer portal\) URLs of the source system and keep it handy.
 -   You must have identified a user with the following roles assigned in your source systems:
 
     -   APIPortal.Administrator
@@ -90,12 +90,12 @@ Checks to be completed before you start migrating your API Management content no
     > 
     > Consider the following example: During cloning, the email address `john.smith@abc.com` in the source becomes `John.Smith@abc.com` in target due to the change in configurations in Custom IDP. This mismatch might lead to data discrepancy during application creation and metering in the target after cloning.
 
--   Ensure that API access is enabled for the Integration Suite and the Developer Hub\(developer portal\) for the following roles:
+-   Ensure that API access is enabled for the SAP Integration Suite and the Developer Hub\(developer portal\) for the following roles:
 
     -   APIPortal.Administrator
     -   AuthGroup.API.Admin
 
-    For Integration Suite, see [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD)
+    For SAP Integration Suite, see [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD)
 
     For Developer Hub, execute the following mandatory steps:
 

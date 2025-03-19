@@ -1,6 +1,6 @@
 <!-- loiof6eb4332cd5144ef91f4a84cc614ba1c -->
 
-# Activate and Configure API Management Capability
+# Activating and Configuring API Management Capability
 
 Steps to activate and configure API Management capability in SAP Integration Suite.
 
@@ -26,12 +26,12 @@ Subscribe to SAP Integration Suite
 </td>
 <td valign="top">
 
-To set up the API Management capability from Integration Suite, you should first have an Integration Suite subscription.
+To set up the API Management capability from SAP Integration Suite, you should first have an Integration Suite subscription.
 
-Subscribe to the SAP Integration Suite in SAP BTP cockpit and assign the *Integration\_Provisioner* role to gain access. For more information, see [Initial Setup of SAP Integration Suite](10-InitialSetup/initial-setup-of-sap-integration-suite-3dcf507.md).
+Subscribe to SAP Integration Suite in SAP BTP cockpit and assign the *Integration\_Provisioner* role to gain access. For more information, see [Initial Setup of SAP Integration Suite](10-InitialSetup/initial-setup-of-sap-integration-suite-3dcf507.md).
 
 > ### Note:  
-> Please make sure that you do not have a starter plan instance created in the same subaccount where you intend to create an Integration Suite subscription. Additionally, please note that API Management capabilities from Integration Suite and API Management subscriptions using the stand-alone tile cannot coexist in the same subaccount.
+> Please make sure that you do not have a starter plan instance created in the same subaccount where you intend to create an Integration Suite subscription. Additionally, please note that API Management capabilities from SAP Integration Suite and API Management subscriptions using the stand-alone tile cannot coexist in the same subaccount.
 
 
 
@@ -45,7 +45,7 @@ Activate the API Management capability
 </td>
 <td valign="top">
 
-Add and activate API Management capability in Integration Suite. For more information, see [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md).
+Add and activate API Management capability in SAP Integration Suite. For more information, see [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md).
 
 </td>
 </tr>
@@ -59,10 +59,10 @@ Configure the API Management capability
 
 Access the *API Settings* page, and complete the onboarding process. For more information, see [Setting Up API Management Capability](50-Development/setting-up-api-management-capability-f34e86c.md).
 
-To access the *API Settings*, the *APIManagement.Selfservice.Administrator* role must me assigned to you.
+To access the *API Settings*, the *APIManagement.Selfservice.Administrator* role must be assigned to you.
 
 > ### Note:  
-> If you are using a trial account, your account will be automatically provisioned once you select the *APIs* option in the *Settings* menu. During the provisioning process, the system will assign a default virtual host for you. You will receive a notification when the provisioning is complete. At this point, the *APIs* option will no longer be visible in the side-navigation menu under *Settings*. You will be logged out of the Integration Suite automatically. To continue, simply log in again. After logging in, you will have the ability to create APIs, build API proxies as a service provider, and utilize other convenient services offered by the platform.
+> If you are using a trial account, your account will be automatically provisioned once you select the *APIs* option in the *Settings* menu. During the provisioning process, the system will assign a default virtual host for you. You will receive a notification when the provisioning is complete. At this point, the *APIs* option will no longer be visible in the side-navigation menu under *Settings*. You will be logged out of SAP Integration Suite automatically. To continue, simply log in again. After logging in, you will have the ability to create APIs, build API proxies as a service provider, and utilize other convenient services offered by the platform.
 
 
 
@@ -71,7 +71,7 @@ To access the *API Settings*, the *APIManagement.Selfservice.Administrator* role
 </table>
 
 > ### Note:  
-> For visual intructions on how to activate and configure API Management capability from Integration Suite, refer the tutorial [Set Up API Management from Integration Suite | Tutorials for SAP Developers](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html).
+> For visual intructions on how to activate and configure API Management capability from SAP Integration Suite, refer the tutorial [Set Up API Management from Integration Suite | Tutorials for SAP Developers](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html).
 
 **Related Information**  
 
@@ -86,5 +86,5 @@ To access the *API Settings*, the *APIManagement.Selfservice.Administrator* role
 
 [Configuring Mutual TLs for Virtual Host](configuring-mutual-tls-for-virtual-host-9faf7ce.md "You can configure mutual TLs for a virtual host, which validates the identities of both the web server and the web client.")
 
-[Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "You can deactivate your API Management capability from Integration Suite to disable your account from the API Management service.")
+[Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "You can deactivate your API Management capability from SAP Integration Suite to disable your account from the API Management service.")
 

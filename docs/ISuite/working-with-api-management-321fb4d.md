@@ -28,7 +28,7 @@ Enable API Management Capability
 </td>
 <td valign="top">
 
-Set up the API Management capability from Integration Suite. For more information, see [Activate and Configure API Management Capability](activate-and-configure-api-management-capability-f6eb433.md).
+Set up the API Management capability from SAP Integration Suite. For more information, see [Activating and Configuring API Management Capability](activating-and-configuring-api-management-capability-f6eb433.md).
 
 </td>
 </tr>
@@ -52,7 +52,7 @@ Important Concepts of API Management
 </td>
 <td valign="top">
 
-The structure of the API Management capability within Integration Suite revolves around APIs, products, applications, users, developers, and accounts. Understanding this structure is crucial for effectively managing and organizing APIs within API Management. For more information, see [Important Concepts of API Management](important-concepts-of-api-management-414808b.md).
+The structure of the API Management capability within SAP Integration Suite revolves around APIs, products, applications, users, developers, and accounts. Understanding this structure is crucial for effectively managing and organizing APIs within API Management. For more information, see [Important Concepts of API Management](important-concepts-of-api-management-414808b.md).
 
 </td>
 </tr>
@@ -106,7 +106,7 @@ API Management Service Plans
 </td>
 <td valign="top">
 
-The functionality of the API Management capability is typically managed using the Integration Suite \(UI\) application. However, there are certain service plans that allows you to call API Management APIs, manage Cloud Foundry applications, and connect to an on-premise backend system. For more information, see [API Management Service Plans](api-management-service-plans-e064663.md).
+The functionality of the API Management capability is typically managed using the SAP Integration Suite \(UI\) application. However, there are certain service plans that allows you to call API Management APIs, manage Cloud Foundry applications, and connect to an on-premise backend system. For more information, see [API Management Service Plans](api-management-service-plans-e064663.md).
 
 </td>
 </tr>
@@ -119,6 +119,18 @@ Additional Configurations for API Management
 <td valign="top">
 
 In this section, you can find information about configuring additional virtual host, region-specific IP addresses for API Management, managing user roles in API Management, cancelling your API Management service subscription, and integrating API Management with SAP Cloud Identity Services. For more information, see [Additional Configurations for API Management](additional-configurations-for-api-management-5ac63ab.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Developer Hub
+
+</td>
+<td valign="top">
+
+Discover, explore, and utilize APIs offered by an organization. For more information, [Developer Hub](developer-hub-41f7c45.md).
 
 </td>
 </tr>

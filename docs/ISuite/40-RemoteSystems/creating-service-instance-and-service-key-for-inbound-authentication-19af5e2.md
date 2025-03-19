@@ -77,7 +77,7 @@ Create a service instance to implement inbound communication. A service instance
 
         To define inbound authentication of senders calling integration flow endpoint \(on an SAP Cloud Integration worker node\).
 
-        See: [Set Up Integration Suite](https://developers.sap.com/tutorials/cp-starter-isuite-onboard-subscribe.html)
+        See: [Set Up SAP Integration Suite](https://developers.sap.com/tutorials/cp-starter-isuite-onboard-subscribe.html)
 
     -   *api*
 

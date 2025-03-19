@@ -15,7 +15,7 @@ To register OData services, see [Register OData Services](register-odata-service
 
 [Multiple-Origin Composition](multiple-origin-composition-d16fd96.md "Multiple-Origin Composition (MOC) is the ability to collect data from different back-end systems, aggregate them in a single service, and update different back-end systems, while using the same user. You can also execute a $batch request with MOC.")
 
-[Activating and Managing Capabilities](../activating-and-managing-capabilities-2ffb343.md "Activate capabilities for the SAP Integration Suite.")
+[Activating and Managing Capabilities](../activating-and-managing-capabilities-2ffb343.md "Activate capabilities for SAP Integration Suite.")
 
 [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md "Assign the required roles and role collections to users for accessing the individual capabilities.")
 

@@ -4,7 +4,7 @@
 
 Inspect database connection usage for a given time period and analyze critical situations in which insufficient database connections are available.
 
-Each SAP Integration Suite tenant is associated with a physical database that has a limited size. This database is used by certain steps during the runtime of integration flows.
+Each SAP Integration Suite tenant is associated with a physical database that has a limited size. The data store is a logical storage that consumes tenant database volume. It can be accessed to by certain integration flows steps \(read and write access\) to read and write the message payload or variables during runtime. There are two kinds of data stores:
 
 Every integration flow step that implies access to the tenant database requires a database connection. This number of available database connections is a limited integration resource.
 

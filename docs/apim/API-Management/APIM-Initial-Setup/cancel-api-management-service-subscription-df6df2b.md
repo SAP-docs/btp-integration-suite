@@ -4,17 +4,17 @@
 
 # Cancel API Management Service Subscription
 
-You can deactivate your API Management capability from Integration Suite to disable your account from the API Management service.
+You can deactivate your API Management capability from to disable your account from the API Management service.
 
 
 
 <a name="loiodf6df2b90c354ca7b83c4e7045b2279c__section_avg_shr_b1c"/>
 
-## Deactivate the API Management Capability from Integration Suite
+## Deactivate the API Management Capability from
 
 **Prequisite**: The *Integration\_Provisioner* role must be assigned to you.
 
-If you've enabled the API Management capability via Integration Suite, perform the following steps to cancel the API portal and the Developer Hub subscriptions:
+If you've enabled the API Management capability via , perform the following steps to cancel the API portal and the Developer Hub subscriptions:
 
 1.  Log on to SAP BTP Cockpit and navigate to your subaccount.
 

@@ -40,7 +40,7 @@ Refer this section for the entities that are cloned and entities that aren’t c
 > 
 > 3.  Save the zip file.
 > 
-> 4.  Delete the existing `HelloWorld` proxy from Integration Suite.
+> 4.  Delete the existing `HelloWorld` proxy from SAP Integration Suite.
 > 
 > 5.  Import this edited zip file.
 > 
@@ -78,7 +78,7 @@ The following list displays the API Management content that aren’t cloned, inc
     -   Custom Metrics and Charts
 
         > ### Note:  
-        > These entities are not cloned via the cloning tool. You have to create them manually in Integration Suite target system under *Analytics*. For more information, see [Advanced API Analytics](../50-Development/advanced-api-analytics-5973d4a.md).
+        > These entities are not cloned via the cloning tool. You have to create them manually in SAP Integration Suite target system under *Analytics*. For more information, see [Advanced API Analytics](../50-Development/advanced-api-analytics-5973d4a.md).
 
 
 -   **Sensitive Data**

@@ -17,7 +17,7 @@ Both the source and the target system are the system that has your API Managemen
 -   You must have a valid API Management system \( and Developer Hub\) running in the Cloud Foundry environment.
 -   The source system must support Oauth client credentials for Cloud Foundry. You need the auth token url and key secret to access the and Developer Hub. For more information, refer [Accessing API Management APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-portal?version=CLOUD)[Accessing Developer Hub APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-api-business-hub-enterprise?version=CLOUD).
 -   Make a note of the API portal and Developer Hub URLs of the source system and keep handy.
--   Ensure that API access is enabled for the and Developer Hub systems for the following roles:
+-   Ensure that API access is enabled for and Developer Hub systems for the following roles:
 
     -   APIPortal.Administrator
     -   AuthGroup.API.Admin

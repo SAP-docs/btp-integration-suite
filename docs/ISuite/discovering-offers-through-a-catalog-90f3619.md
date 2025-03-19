@@ -224,7 +224,7 @@ You initiate a negotiation by contacting your partner/a provider. Once you've fo
 
 Now that you've decided on an offer, you can start a contract negotiation with the provider. Depending on the type of asset you're working with, continue with one of the following:
 
--   [Consuming S3 Assets](consuming-s3-assets-4afdf5c.md)
+-   [Consuming S3 and Azure Assets](consuming-s3-and-azure-assets-4afdf5c.md)
 
 -   [Consuming HTTP Assets](consuming-http-assets-735300c.md)
 

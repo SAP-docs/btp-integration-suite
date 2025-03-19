@@ -15,9 +15,9 @@ Migration Assistant for asset migration includes the tools and utilities that en
 
 Your source system is the system that contains your API Management content in the Neo environment.
 
-Your target system refers to the infrastructure that hosts your API Management content on a hyperscaler-managed infrastructure within a multi-cloud foundation. This multi-cloud foundation can either be your native standalone API Management subscription or the API Management capability within the Integration Suite.
+Your target system refers to the infrastructure that hosts your API Management content on a hyperscaler-managed infrastructure within a multi-cloud foundation. This multi-cloud foundation can either be your native standalone API Management subscription or the API Management capability within SAP Integration Suite.
 
-For the migration assistance, you must have an Integration Suite subscription with API Management capability enabled within Integration Suite.
+For the migration assistance, you must have an Integration Suite subscription with API Management capability enabled within SAP Integration Suite.
 
 After completing the prerequisites mentioned in the steps below, you can clone your API Management artifacts nondisruptively from the source to the target system. Post cloning, you must complete some user actions and validate your target system.
 

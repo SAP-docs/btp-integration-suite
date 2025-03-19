@@ -19,7 +19,7 @@ Learn how to activate the Data Space Integration capability within SAP Integrati
 
 1.  In your subaccount in SAP BTP cockpit, navigate to *Services* \> *Instances and Subscriptions*.
 
-2.  Under *Subscriptions*, choose *Integration Suite* to launch the Integration Suite application.
+2.  Under *Subscriptions*, choose **SAP Integration Suite** to launch the SAP Integration Suite application.
 
 3.  In the *Capabilities* section, choose *Manage Capabilities* or *Add Capabilities*.
 
@@ -38,7 +38,7 @@ Learn how to activate the Data Space Integration capability within SAP Integrati
 
 ## Results
 
-You've enabled the capability in Integration Suite.
+You've enabled the capability in SAP Integration Suite.
 
 
 

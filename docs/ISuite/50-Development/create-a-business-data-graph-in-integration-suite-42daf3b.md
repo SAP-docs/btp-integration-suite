@@ -2,7 +2,7 @@
 
 # Create a Business Data Graph in Integration Suite
 
-As Tenant administrator in the SAP Integration Suite, you can create a new business data graph. You can also use an existing configuration file to create a business data graph.
+As a Graph Key User, you can create a new business data graph. You can also use an existing configuration file to create a business data graph.
 
 
 

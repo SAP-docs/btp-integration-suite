@@ -45,6 +45,18 @@ Name of JMS queue.
 <tr>
 <td valign="top">
 
+*Access Type* 
+
+</td>
+<td valign="top">
+
+Type of access to the JMS queue which can be exclusive or non-exclusive.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Entries* 
 
 </td>
@@ -66,7 +78,7 @@ The search allows you to filter specific queues by providing parts of their name
 
 ## Actions to Perform on Single Queue
 
-For a dedicated queue, choose *Actions* \(<span class="SAP-icons-V5"></span>\) to perform the following actions:
+For a dedicated queue, choose <span class="SAP-icons-V5"></span> Actions to perform the following actions:
 
 **Actions**
 
@@ -87,7 +99,7 @@ Description
 <tr>
 <td valign="top">
 
-*Retry*
+*Retry* \(only for non-exclusive queues\)
 
 </td>
 <td valign="top">
@@ -117,13 +129,13 @@ There are the following sub queues:
 
     Processes the messages \(as, for example, are stored by a JMS receiver and consumed by a JMS sender adapter\).
 
--   *Error Queue* 
+-   *Error Queue* \(only for non-exclusive queues\)
 
     Temporarily stores messages in an error state until the next configured retry. No messages are consumed from this queue. Instead of this, the messages are taken back to the processing queue when the configured retry interval has been reached.
 
 -   *Chunking Queue* 
 
-    Messages with a size larger than 5 MB are split into one parent message of 5 MB size and multiple chunks. The parent message is stored in the processing queue while the multiple chunks are stored in the chunking queue \(see also [JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md)\).
+    Messages with a size larger than 5 MB are split into one parent message of 5-MB size and multiple chunks. The parent message is stored in the processing queue while the multiple chunks are stored in the chunking queue \(see also [JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md)\).
 
 
 This screen provides the following functions:
@@ -178,7 +190,7 @@ During the operation of your scenarios, you may find that messages are piling up
 <tr>
 <td valign="top">
 
-*Move*
+*Move* \(only for non-exclusive queues\)
 
 </td>
 <td valign="top">
@@ -188,7 +200,7 @@ Use to manually trigger the process of moving all messages from the source queue
 > ### Caution:  
 > If new messages are written to the source queue during the moving process, these new messages will also be moved to the selected target queue – even if they weren't part of the queue when the move process was triggered manually. This function can lead to an endless loop in which the messages are constantly moved to the target queue.
 > 
-> Once triggered, the move process is only stopped, if no new messages are written to the queue for a certain amount of time.
+> Once triggered, the move process is only stopped if no new messages are written to the queue for a certain amount of time.
 
 
 

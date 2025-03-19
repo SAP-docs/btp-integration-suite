@@ -6,7 +6,7 @@
 
 Incorporate new versions of standard content into your dataset.
 
-At the time of onboarding, the latest SAP standard content will be available for usage. When a new version of SAP standard content is released, you get a notification. If you have the required privileges, you can choose to update to the latest version depending on your business needs.
+At the time of onboarding, the latest SAP standard content is available for usage. When a new version of SAP standard content is released, you get a notification. If you have the required privileges, you can choose to update to the latest version depending on your business needs.
 
 
 
@@ -16,7 +16,7 @@ At the time of onboarding, the latest SAP standard content will be available for
 
 The *Content Life Cycle* page is only visible to users who have the right to update the content. This privilege is granted to the following personas:
 
--   Integration Architect
+-   Enterprise Architect
 -   Administrator
 
 For more information on personas, see: [Personas for Migration Assessment](60-Security/personas-for-integration-assessment-5df5af1.md).
@@ -25,7 +25,7 @@ For more information on personas, see: [Personas for Migration Assessment](60-Se
 
 <a name="loio06581f4409814723823ed4bb03218fa3__section_agc_rwy_ddc"/>
 
-## Notification for new content
+## Notification for New Content
 
 Once there are content updates delivered by SAP, you get a notification directly in the tool via the notification icon :bell: in the shell bar. If you have the required privileges to update content as described in the previous section, the notification will have the *View Updates* button. Selecting the button takes you to the *Content Life Cycle* page where new content is visible for update.
 
@@ -122,7 +122,7 @@ Signifies whether the changeset is available for update.
 
 Whenever you're trying to update a parent node, the child node should also be considered. Under one parent node, there can be multiple child nodes. The two types of child nodes are as follows:
 
--   Mandatory child node:
+-   Mandatory child node
 
     For a mandatory child node, if the parent node is deselected, the child nodes are deselected by default.
 
@@ -131,7 +131,7 @@ Whenever you're trying to update a parent node, the child node should also be co
     For a non-mandatory child node, if the parent node is deselected, you have the control to select or deselect the child nodes. Sufficient details about what all content is going to be updated as part of this selection/deselection is shown.
 
 
-Select *Update* once you are done.
+Select *Update* once you're done.
 
 > ### Note:  
 > If there's any error during the update, the entire content update fails. An error marker is placed at the respective position. By selecting it, error details including the reason are shown.

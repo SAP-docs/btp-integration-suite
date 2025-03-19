@@ -968,6 +968,38 @@ See: [Configure the FTP Receiver Adapter](../50-Development/configure-the-ftp-re
 <tr>
 <td valign="top">
 
+*Google Cloud Storage* 
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to read from different storage entities in Google Cloud Storage.
+
+See: [Configure the Google Cloud Storage Sender Adapter](../50-Development/configure-the-google-cloud-storage-sender-adapter-ec213ce.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Google Cloud Storage* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to access and manage different storage entities in Google Cloud Storage.
+
+See: [Configure the Google Cloud Storage Receiver Adapter](../50-Development/configure-the-google-cloud-storage-receiver-adapter-5a8ddef.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Google Pub/Sub* 
 
 Sender adapter

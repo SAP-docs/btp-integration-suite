@@ -41,7 +41,9 @@ There is also no option to access a message store entry during the execution of 
 > 
 >     An alternative is writing message processing log \(MPL\) attachments in this case: [Message Processing Log](message-processing-log-b32f8cd.md).
 > 
->     If you use *Message Processing Log Attachments*: In case an error is thrown and you have integration flows that will write Message Processing Log \(MPL\) attachments with a short retry interval, your overall disk space limit might be reached quickly. The amount of MPL attachments which can be written is limited to 1 GB per 24 hours. If the limit is reached, MPL attachments will no longer be stored until the amount of MPL attachments written in the last 24 hours is again below 1 GB. In this case, SAP Cloud Integration opens the circuit breaker to prevent filling up your disk space. See: [MPL Attachment is not writing because Circuit Breaker is open](https://apps.support.sap.com/sap/support/knowledge/en/2593825).
+>     If you use *Message Processing Log Attachments*: In case an error is thrown and you have integration flows that will write MPL attachments with a short retry interval, your overall disk space limit might be reached quickly.
+> 
+>     MPL attachments and message store content are stored in the SAP BTP object store. There’s a limit of 1 GB quota per 24 hours for object store usage. If you need to increase the object store size, refer to SAP note [3380591](https://me.sap.com/notes/3380591).
 > 
 > -   In case the processing ends with an escalation end event, whether or not messages are persisted depends on the scenario:
 > 

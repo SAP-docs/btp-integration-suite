@@ -14,9 +14,18 @@ The JMS \(Java Message Service\) sender adapter enables asynchronous decoupling 
 >     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
-> Note that this adapter works with a message broker provided by SAP \(based on the SAP Event Mesh capability\). It does not support connectivity to any other, customer-provided message brokers. The usage of this adapter is supported by all SAP Integration Suite editions, except the basic edition, see SAP note [2903776](https://me.sap.com/notes/2903776).
+> Note that this adapter works with a message broker provided by SAP \(based on the SAP Event Mesh capability\). It does not support connectivity to any other, customer-provided message brokers. The usage of this adapter is supported by all SAP Integration Suite editions, except the basic edition. See SAP Note [2903776](https://me.sap.com/notes/2903776).
 
 To understand the concept of asynchronous decoupling, assume that a sender sends a message to SAP Integration Suite \(inbound processing\). If there's an error in outbound processing \(for example, a receiver can't be reached temporarily\), the middleware \(SAP Integration Suite\) retries message processing independently. There's no need that the sender triggers a reprocessing of the message as soon as the error situation has been solved. The sender relies on the middleware to do that. To support this scenario, the message received from the sender is stored in a queue \(using the JMS receiver adapter\). Outbound processing is modeled in an integration flow that initially consumes the message from the queue \(using the JMS sender adapter\). The outbound integration flow retries the message from the queue as long as the error situation lasts.
+
+When using the JMS adapter, you can choose how messages are processed based on your integration needs.
+
+-   With the *Non-Exclusive* access type, messages can be processed in parallel across multiple worker nodes, which is suitable for scenarios where message order is not essential. The JMS adapter will not serialize messages, which means that there is no guarantee of the order in which the messages are consumed by SAP Cloud Integration. For additional information, also check out the description of parameter *Number of Concurrent Processes*.
+-   For cases where preserving the order of message processing is crucial, you can select the *Exclusive* access type. This setting guarantees that messages are processed in the exact order they are received by allowing only one consumer access to the queue at any time.
+
+    > ### Note:  
+    > When using exclusive access, note that it processes messages sequentially which may limit scalability and reduce throughput compared to non-exclusive access. Additionally, if a message encounters an error, it will block all subsequent messages in the queue.
+
 
 The following figure shows the involved components.
 
@@ -30,11 +39,9 @@ Assuming that you have designed an integration flow with a JMS sender adapter. O
 > Therefore, it is recommended to first deploy all integration flows with the JMS sender adapters that are related to your scenario. After this step, all required queues are in place when the JMS receiver adapter comes into play and dynamically determines the related queue names.
 
 > ### Note:  
-> Certain constraints apply with regard to the number and capacity of queues involved, as well as for the headers and exchange properties defined in the integration flow before the message is saved to the queue, see [JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md)
-> 
-> The JMS adapter does not serialize messages. This means that there is no guarantee of the order in which the messages are consumed by SAP Cloud Integration. When the integration flow \(with the JMS sender adapter\) is deployed on multiple worker nodes, the messages are processed in parallel. For additional information, also check out the description of parameter *Number of Concurrent Processes*.
+> Certain constraints apply with regard to the number and capacity of queues involved, as well as for the headers and exchange properties defined in the integration flow before the message is saved to the queue, see [JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md).
 
-Property `SAP_IntegrationFlowID` contains the ID of the integration flow that sent the message to the JMS queue, see [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md).
+Property `SAP_IntegrationFlowID` contains the ID of the integration flow that sent the message to the JMS queue, see .
 
 Once you've created a sender channel and selected the JMS sender adapter, you can configure the following attributes, see [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
@@ -94,7 +101,7 @@ Description
 </th>
 </tr>
 <tr>
-<td valign="top" rowspan="2">
+<td valign="top" rowspan="3">
 
 *Processing Details* 
 
@@ -115,7 +122,30 @@ A maximum length of 80 characters is allowed.
 <tr>
 <td valign="top">
 
-*Number of Concurrent Processes*
+*Access Type*
+
+</td>
+<td valign="top">
+
+Select between the two types of access to the JMS queue:
+
+-   *Non-Exclusive*: Allows multiple consumers/workers to process messages from the queue in parallel. This is suitable for scenarios where message order is not critical and parallel processing is beneficial.
+-   *Exclusive*: Ensures that only one consumer/worker has access to the queue at a time. This is useful for scenarios requiring messages to be processed in the order they were received.
+
+> ### Note:  
+> The access type in the sender adapter must match the access type in the receiver adapter for the same queue.
+
+> ### Remember:  
+> The access type cannot be changed after the queue is created. If you want to change the access type, undeploy the IFlows, delete the queue, and then redeploy with the new access type.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Number of Concurrent Processes* \(only if *Non-Exclusive* is selected for *Access Type*\)
 
 </td>
 <td valign="top">
@@ -137,7 +167,7 @@ Enter the number of concurrent processes for each worker node. The recommended v
 </td>
 <td valign="top">
 
-*Retry Interval \(in m\)* 
+*Retry Interval* 
 
 </td>
 <td valign="top">
@@ -145,7 +175,7 @@ Enter the number of concurrent processes for each worker node. The recommended v
 Enter a value for the amount of time to wait before retrying message delivery.
 
 > ### Note:  
-> In the JMS sender channel, you can configure the time intervals between retries, but you cannot configure that processing will end after a specific number of retries. If required, you can configure this in an exception subprocess that calls a local process for retry handling using the header `SAPJMSRetries` set by the JMS sender adapter.
+> In the JMS sender channel, you can configure the time intervals between retries, but you cannot configure that processing will end after a specific number of retries. For non-exclusive queues, if required, you can configure this in an exception subprocess that calls a local process for retry handling using the header `SAPJMSRetries` set by the JMS sender adapter.
 > 
 > For more information about explicit retry configuration, see the SAP Community Blog [Cloud Integration – Configure Asynchronous Messaging with Retry Using JMS Adapter](https://blogs.sap.com/2017/06/19/cloud-integration-configure-asynchronous-messaging-with-retry-using-jms-adapter/)
 
@@ -161,7 +191,7 @@ Enter a value for the amount of time to wait before retrying message delivery.
 </td>
 <td valign="top">
 
-Enter a value to double the retry interval after each unsuccessful retry.
+Check the box to double the retry interval after each unsuccessful retry.
 
 </td>
 </tr>
@@ -182,7 +212,7 @@ Enter a value for the maximum amount of time to wait before retrying message del
 <tr>
 <td valign="top">
 
-*Dead-Letter Queue* 
+*Dead-Letter Queue* \(only if *Non-Exclusive* is selected for *Access Type*\)
 
 </td>
 <td valign="top">

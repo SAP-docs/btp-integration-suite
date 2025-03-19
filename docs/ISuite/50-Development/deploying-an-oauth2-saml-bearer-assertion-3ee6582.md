@@ -25,6 +25,9 @@ You can design your OAuth2 credential either via principal propagation or techni
 -   Using technical user propagation, you propagate a dedicated technical user profile mentioned in the key-pair common name as the principal to your target system. Currently, this method works with SuccesFactors OData V2 Receiver, SuccesFactors SOAP Sender, and SuccesFactors SOAP Receiver Adapters. Especially, in the query modeler, use technical user propagation. To know more about how to implement technical user propagation, read the [blog](https://blogs.sap.com/2021/03/26/sap-cloud-integration-oauth2-saml-bearer-x.509-certificate-authentication-support-in-successfactors-connector/).
 
 
+> ### Note:  
+> Read [SAP Cloud Integration – Principal Propagation with SuccessFactors OData V2](https://blogs.sap.com/2018/07/30/sap-cloud-platform-integration-principal-propagation-with-successfactors-odata-v2/), to understand how to design, and deploy an integration flow that communicates to SuccessFactors OData V2 endpoint with OAuth2 authentication.
+
 More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.ietf.org/html/rfc6749).
 
 
@@ -72,23 +75,6 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     <td valign="top">
     
     Name for the artifact that you want to deploy on the tenant.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Grant Type
-    
-    </td>
-    <td valign="top">
-    
-    The grant type is *OAuth2SAMLBearerAssertion* that is uneditable.
-
-    > ### Note:  
-    > Read [SAP Cloud Integration – Principal Propagation with SuccessFactors OData V2](https://blogs.sap.com/2018/07/30/sap-cloud-platform-integration-principal-propagation-with-successfactors-odata-v2/), to understand how to design, and deploy an integration flow that communicates to SuccessFactors OData V2 endpoint with OAuth2 authentication.
-
-
     
     </td>
     </tr>

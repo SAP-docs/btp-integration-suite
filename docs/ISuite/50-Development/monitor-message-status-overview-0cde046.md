@@ -105,7 +105,7 @@ For more information on the different message statuses, see [Message Status](mes
 
 ## Export Your Data
 
-You can export your data as an Excel .xlsx file. This will take into account your current filter settings and order of columns. To do so, simply select *Export* and it will ask you whether you want to download the file.
+You can export your data as an Excel .xlsx file. This will take into account your current filter settings and order of columns. To do so, simply select *Export* and you will be asked whether you want to download the file.
 
 You can choose a custom name for the file. The default name is determined by your *OverviewBy* filter settings.
 

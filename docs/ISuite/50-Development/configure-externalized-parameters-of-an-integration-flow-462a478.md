@@ -1,7 +1,5 @@
 <!-- loio462a4782db7b485b94ffce5b6fe22c31 -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
-
 # Configure Externalized Parameters of an Integration Flow
 
 
@@ -10,24 +8,23 @@
 
 Cloud Integration allows you to configure an integration flow individually or multiple integration flows at once. You can configure the runtime, error configuration and also provide a description about the integration flow.
 
+> ### Remember:  
+> When you configure an externalized parameter, it is possible that you are allowed to provide a value for another dependent parameter which isn't externalized. In such cases, don't configure the dependent parameter. Configuration is supported only for externalized parameters. Even if you provide a value for an unexternalized parameter, it is ignored after you save your changes.
+
 
 
 ## Procedure
 
-1.  Select the integration package that contains the integration flow you want to configure.
+1.  Open the integration flow..
 
-2.  Choose *Package content*.
+2.  Choose *Configure*.
 
-    You see an overview of all the artifacts available in the selected integration package.
-
-3.  In the *Actions* column for the integration flow you want to configure, choose <span class="SAP-icons-V5"></span> and *Configure*.
-
-4.  Select relevant details of externalised components in *Sender, Reciever* or *More*tab.
+3.  Select relevant details of externalised components in *Sender, Reciever* or *More*tab.
 
     > ### Note:  
     > For more information, see [Configure Adapter in Communication Channels](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/1f066330e8314324bf3ebe3b6adc21b2.html).
 
-5.  To view and modify externalised values for integration flow configuration or integration flow steps or local integration process or integration process.
+4.  To view and modify externalised values for integration flow configuration or integration flow steps or local integration process or integration process.
 
     1.  Select *Type* of component.
 
@@ -39,9 +36,9 @@ Cloud Integration allows you to configure an integration flow individually or mu
         You cannot select name for integration flow configuration.
 
 
-6.  If you want to save this configured integration flow as a version, choose *Save as version* and specify the version details.
+5.  If you want to save this configured integration flow as a version, choose *Save as version* and specify the version details.
 
-7.  If you want to save or deploy this integration flow, choose the appropriate option.
+6.  If you want to save or deploy this integration flow, choose the appropriate option.
 
     > ### Note:  
     > You can use error configuration to handle errors when message processing fails at runtime. You select an error handling strategy based on the descriptions below:

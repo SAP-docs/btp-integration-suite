@@ -65,7 +65,7 @@ Open the related integration flow and configure the **SFTP receiver adapter** to
 
 [Creating SFTP Keys](creating-sftp-keys-3485a75.md "You can set up reliable file transfer based on SSH File Transfer Protocol (SFTP). SFTP is an enhancement of the Secure Shell (SSH) network protocol.")
 
-[Configure the SFTP Receiver Adapter](../50-Development/configure-the-sftp-receiver-adapter-4ef52cf.md "The SFTP receiver adapter connects an SAP Cloud Integration tenant to a remote system using the SSH File Transfer protocol to write files to the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol (or SFTP).")
+[Configure the SFTP Receiver Adapter](../50-Development/configure-the-sftp-receiver-adapter-4ef52cf.md "The SFTP receiver adapter connects an SAP Integration Suite tenant to a remote system using the SSH File Transfer protocol to write files to the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol (or SFTP).")
 
 [Outbound SFTP With Public Key Authentication](outbound-sftp-with-public-key-authentication-d96b2d7.md "")
 

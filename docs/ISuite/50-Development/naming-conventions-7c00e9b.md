@@ -92,6 +92,18 @@ In case, an integration package is to be copied, then follow the next rules: Use
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Maximum Character Length* 
+
+</td>
+<td valign="top">
+
+The maximum character length for this parameter is 255.
+
+</td>
+</tr>
 </table>
 
 > ### Note:  
@@ -172,6 +184,18 @@ Standard integration flows maintain their original names.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Maximum Character Length* 
+
+</td>
+<td valign="top">
+
+The maximum character length for this parameter is 120.
+
+</td>
+</tr>
 </table>
 
 
@@ -184,7 +208,7 @@ The naming convention is as follows:
 
 `SC_<BusinessUnit|Global>_<Description>`
 
-**Naming Guidelines for Integration Flow**
+**Naming Guidelines for Script Collection**
 
 
 <table>
@@ -235,6 +259,18 @@ The script collections are organized in integration packages. The id must be uni
 
 
 Standard Integration Flows maintain their original names.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Maximum Character Length* 
+
+</td>
+<td valign="top">
+
+The maximum character length for this parameter is 120.
 
 </td>
 </tr>
@@ -308,6 +344,18 @@ The APIs are organized in integration packages. However, the ID must be unique f
 -   `Global_MM_PurchaseOrder`
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Maximum Character Length* 
+
+</td>
+<td valign="top">
+
+The maximum character length for this parameter is 120.
 
 </td>
 </tr>
@@ -531,6 +579,18 @@ Mappings of different integration flows can have the same name.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Maximum Character Length* 
+
+</td>
+<td valign="top">
+
+The maximum character length for this parameter is 120.
+
+</td>
+</tr>
 </table>
 
 
@@ -598,6 +658,18 @@ The value mappings are organized in integration packages. The id must be unique 
 
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Maximum Character Length* 
+
+</td>
+<td valign="top">
+
+The maximum character length for this parameter is 120.
 
 </td>
 </tr>
@@ -669,6 +741,18 @@ Scripts of different integration flows can have the same name.
 
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Maximum Character Length* 
+
+</td>
+<td valign="top">
+
+The maximum character length for this parameter is 120.
 
 </td>
 </tr>
@@ -1014,6 +1098,18 @@ Security artifacts must be unique in the whole tenant.
 
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Maximum Character Length* 
+
+</td>
+<td valign="top">
+
+The maximum character length for this parameter is 150.
 
 </td>
 </tr>

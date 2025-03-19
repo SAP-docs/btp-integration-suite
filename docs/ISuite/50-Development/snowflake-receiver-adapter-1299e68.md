@@ -194,7 +194,60 @@ Description
 </td>
 <td valign="top">
 
-Specify the type of operation to be executed in Snowflake.
+Specify the type of operation to be executed in Snowflake. Sample payloads for Insert and Update operation is given below.
+
+> ### Example:  
+> -   Insert Payload
+>     -   It is mandatory to include datatype attribute for fieldname in the INSERT payload. metadata/row tags are case sensitive and must be in lower case.
+> 
+>         ```
+>         <root>
+>         	<metadata>
+>         		<fieldname datatype="NUMBER">ID</fieldname>
+>         		<fieldname datatype="VARCHAR">FIRST_NAME</fieldname>
+>         		<fieldname datatype="VARCHAR">LAST_NAME</fieldname>
+>         		<fieldname datatype="VARIANT">EMAIL</fieldname>
+>         	</metadata>
+>         	<row>
+>         		<ID>10002</ID>
+>         		<FIRST_NAME>Mark</FIRST_NAME>
+>         		<LAST_NAME>Adams<LAST_NAME>
+>         		<EMAIL>{"subject":"Message","emailContent":"Old Content"}<EMAIL>
+>         	</row>
+>                <row>
+>         		<ID>10003</ID>
+>         		<FIRST_NAME>James</FIRST_NAME>
+>         		<LAST_NAME>Castor<LAST_NAME>
+>         		<EMAIL>{"subject":"Message","emailContent":"New Content"}<EMAIL>
+>         	</row>
+>         </root>
+>         
+>         ```
+> 
+> 
+> -   Insert Payload
+>     -   The metadata/row tags are case sensitive and must be in lower case.
+> 
+>     -   For Update, ensure metadata fieldname exists for your row data entry. In case your payload does not contain row entry for a metadata fieldname, update will still work. However, the opposite is not true, without specifying metadata fieldname for a column, you cannot update a row entry
+> 
+>         ```
+>         <root>
+>         	<metadata>
+>         		<fieldname datatype="NUMBER">ID</fieldname>
+>         		<fieldname datatype="VARCHAR">FIRST_NAME</fieldname>
+>         		<fieldname datatype="VARCHAR">LAST_NAME</fieldname>
+>         		<fieldname datatype="VARIANT">EMAIL</fieldname>
+>         	</metadata>
+>         	<row>
+>         		<ID>10002</ID>
+>         		<LAST_NAME>Adams<LAST_NAME>
+>         		<EMAIL>{"subject":"Message","emailContent":"New Content"}<EMAIL>
+>         		<where>ID=10001</where>
+>         	</row>
+>         </root>
+>         ```
+
+
 
 </td>
 </tr>
@@ -401,13 +454,13 @@ Example for *Bulk Upsert*:
 
 `FORCE = TRUE MATCH_BY_COLUMN_NAME = CASE_INSENSITIVE FILE_FORMAT = (TYPE = JSON)`
 
-For information on valid options usage, see [https://docs.snowflake.com/en/sql-reference/sql/copy-into-table](https://docs.snowflake.com/en/sql-reference/sql/copy-into-table)
+For information on valid options usage, see [Copy into table](https://docs.snowflake.com/en/sql-reference/sql/copy-into-table)
 
 Example for *Unload*:
 
 `OVERWRITE = TRUE FILE_FORMAT = (TYPE = JSON, COMPRESSION = NONE)`
 
-For information on valid options usage, see [https://docs.snowflake.com/en/sql-reference/sql/copy-into-location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location)
+For information on valid options usage, see [copy into location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location)
 
 </td>
 </tr>

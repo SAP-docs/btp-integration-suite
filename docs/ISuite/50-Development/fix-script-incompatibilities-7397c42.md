@@ -16,7 +16,7 @@ Fix the incompatibilities in the scripts that are automatically identified by th
 
 ## Context
 
-The script editor helps you keep your custom scripts clean by highlighting the incompatibilities and suggesting ways to fix them. It is important to consider these recommendations so that your custom scripts are future-ready. Also, the scripts become independent of the changes triggered owing to dependency with open source library upgrades.
+The script editor helps you keep your custom scripts clean by highlighting the incompatibilities and suggesting ways to fix them. It is important to consider these guidelines so that your custom scripts are future-ready. Also, the scripts become independent of the changes triggered owing to dependency with open source library upgrades.
 
 The script editor categorizes the incompatibilities and further groups into errors, warnings, and information.
 

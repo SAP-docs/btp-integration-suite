@@ -52,7 +52,7 @@ You use this procedure to configure XML to CSV converter.
     <tr>
     <td valign="top">
     
-    Path to Source Element in XSD
+    *Path to Source Element in XSD*
     
     </td>
     <td valign="top">
@@ -64,7 +64,7 @@ You use this procedure to configure XML to CSV converter.
     <tr>
     <td valign="top">
     
-    Field Separator in CSV
+    *Field Separator in CSV*
     
     </td>
     <td valign="top">
@@ -81,19 +81,57 @@ You use this procedure to configure XML to CSV converter.
     <tr>
     <td valign="top">
     
-    Include Field Name as Headers
+    *CSV Header*
     
     </td>
     <td valign="top">
     
-    Select this checkbox if you want to use the field names as the headers in CSV file
+    Select how to include the field names as headers in the converted CSV file.
+
+    -   *None*: To skip adding headers
+    -   *XML based*: To use an XML element for header name.
+    -   *XSD annotation based*: To use <xsd:documentation\> tag inside xsd element's <xsd:annotation\> tag for header name.
+
+        > ### Note:  
+        > The text in the documentation tag is considered for conversion to a header. Hence, it must follow the XML element naming conventions to avoid conversions into unsupported header format.
+        > 
+        > > ### Example:  
+        > > > ### Sample Code:  
+        > > > ```
+        > > > <xsd:annotation>
+        > > >  <xsd:documentation source="Name"> Sample payload, explaining comma (,) constraints </xsd:documentation>
+        > > >  </xsd:annotation>
+        > > > ```
+        > > 
+        > > In the above example, headers are separated on encountering commas. Header conversion output:
+        > > 
+        > > ***Sample payload | explaining comma \(|\) constraints***
+
+
+
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    Include Parent Element
+    *XML Schema* 
+
+    \(only if you select *CSV Header* as *XSD annotation based*\)
+    
+    </td>
+    <td valign="top">
+    
+    Define the XML schema path or choose *Select* to upload the XML schema from your local file system by choosing *Upload from File System*.
+
+    You can also enter $\{header.headername\} or $\{property.propertyname\} to read the path dynamically from a header or a property. To fetch details from partner directory, use syntax pd: <header\_name\>.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Include Parent Element*
     
     </td>
     <td valign="top">
@@ -105,7 +143,7 @@ You use this procedure to configure XML to CSV converter.
     <tr>
     <td valign="top">
     
-    Include Attribute Values
+    *Include Attribute Values*
     
     </td>
     <td valign="top">

@@ -2,7 +2,7 @@
 
 # Accessing API Management APIs Programmatically
 
-The *apiportal-apiaccess* plan offers external applications the ability to access the public APIs of the Integration Suite API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the SAP Business Accelerator Hub.
+The *apiportal-apiaccess* plan offers external applications the ability to access the public APIs of the API Management capability. These APIs are used by the external applications to perform CRUD operations on API Management features like API proxies or products. These APIs are built on REST and OData principles and are extensively documented on the SAP Business Accelerator Hub.
 
 
 
@@ -20,13 +20,13 @@ The API Access plan allows you to generate a service key by creating a service i
 
 ## Prerequisites
 
--   You've enabled API Management capability using Integration suite. For more information, refer [Subscribing to Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/8a3c8b7a6b1c4f249bb81d11644ef806.html?version=CLOUD) and [Activating Capabilities](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/2ffb343c163c48a4b3a90f9f3c487328.html?version=CLOUD).
+-   You've enabled API Management capability using . For more information, refer [Subscribing to Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/8a3c8b7a6b1c4f249bb81d11644ef806.html?version=CLOUD) and [Activating Capabilities](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/2ffb343c163c48a4b3a90f9f3c487328.html?version=CLOUD).
 
     **OR**
 
     You have subscribed to the standalone *API Management, API portal* tile in the Cloud Foundry environment. For more information, see [Set Up API Portal Application](set-up-api-portal-application-29c281b.md).
 
--   As a subaccount administrator, you additionally need the role of \(org member\) and *space developer* in the Cloud Foundry space in which the Integration Suite is provisioned.
+-   As a subaccount administrator, you additionally need the role of \(org member\) and *space developer* in the Cloud Foundry space in which the  is provisioned.
 
 
 To enable API access for API Management, API portal execute the steps in the sections below:

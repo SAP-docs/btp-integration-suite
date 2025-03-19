@@ -29,7 +29,7 @@ Add an Edge Node that contains a Kubernetes cluster.
 
 2.  Choose *Add Edge Node* to start the configuration wizard, where you go through several steps to add an Edge Node that contains a Kubernetes cluster.
 
-3.  Follow the Edge Lifecycle Management procedure [Adding an Edge Node](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/0a222b9c99d94f56abdcfe27f5be0afa.html?q=get%20the%20kubeconfig%20file%20of%20a%20cluster%20via%20command%20line%20interfaces). Enable High Availability Mode if you want to use the Edge Integration Cell with an HA configuration.
+3.  Follow the Edge Lifecycle Management procedure [Adding an Edge Node](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/0a222b9c99d94f56abdcfe27f5be0afa.html). Enable High Availability Mode if you want to use the Edge Integration Cell with an HA configuration.
 
 
 

@@ -18,9 +18,9 @@
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 > ### Note:  
-> In Neo environment, AS2 Receiver adapter version 1.7 and above can be used without [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) activation.
+> In Neo environment, AS2 Receiver adapter version 1.7 and above can be used without [Enterprise Messaging](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/activating-enterprise-messaging?locale=en-US&version=Cloud)/ [Message Queue](managing-message-queues-cdcce24.md) activation.
 > 
-> In Cloud Foundry environment, all versions of the adapter can be used without [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) activation.
+> In Cloud Foundry environment, all versions of the adapter can be used without [Enterprise Messaging](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/activating-enterprise-messaging?locale=en-US&version=Cloud)/ [Message Queue](managing-message-queues-cdcce24.md) activation.
 
 Once you have created a receiver channel and selected the AS2 receiver adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
@@ -76,25 +76,65 @@ Define query parameters that are attached to the end of recipient URL.
 </td>
 <td valign="top">
 
-Select the type of proxy you want to use for connecting to receiver system.
+In the *Cloud Integration* runtime, select the type of proxy you want to use for connecting to receiver system.
 
--   *Internet*
--   *On-Premise*
--   *Dynamic*
+-   *Dynamic*: To set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Proxy_Type`. The valid values are *<sapcc\>* and *<default\>*
+-   *Internet*: To connect to a cloud system.
+-   *On-Premise*: To connect to an on-premise system.
 
-You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Proxy_Type`. The allowed values are *<sapcc\>* and *<default\>*.
+If you have activated *Edge Integration Cell* runtime, select the type of proxy you want to use for connecting to receiver system.
+
+-   *Dynamic*: If you select Dynamic, you must define *<default\>* or *<manual\>* value in `SAP_AS2_Inbound_Proxy_Type` key in partner directory.
+-   *Internet*: To connect to a cloud system.
+-   *Manual*: You can manually specify Proxy Host and Proxy Port \(using the corresponding entry fields\).
+
+
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Location ID*\(only if *On-Premise* is selected for *Proxy Type*.\)
+*Location ID*
+
+\(for *Cloud Integration* runtime, if *On-Premise* is selected for *Proxy Type*\)
 
 </td>
 <td valign="top">
 
 Enter the location ID to identify a specific Cloud Connector that is unique to your subaccount.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Host* 
+
+\(only if *Edge Integration Cell* runtime is activated and *Proxy Type* is selected as *Manual* and *Dynamic*\)
+
+</td>
+<td valign="top">
+
+Enter the name of the proxy host you are using to connect to a receiver system.
+
+You can also enter $\{header.headername\} or $\{property.propertyname\} to read the value dynamically from a header or a property.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Port* 
+
+\(only if *Edge Integration Cell* runtime is activated and *Proxy Type* is selected as *Manual* and *Dynamic*\)
+
+</td>
+<td valign="top">
+
+Enter the port number you are using to connect to a receiver system.
+
+You can also enter $\{header.headername\} or $\{property.propertyname\} to read the value dynamically from a header or a property.
 
 </td>
 </tr>
@@ -108,19 +148,21 @@ Enter the location ID to identify a specific Cloud Connector that is unique to y
 
 Select one of the following authentication methods:
 
--   *None*
--   *Basic authentication*
--   *Client Certificate*\(only if *Internet* is selected for *Proxy Type*.\)
--   *Dynamic*
+-   *None*: To skip authentication method.
+-   *Basic authentication*: To use alias of deployed user credentials for this authentication.
+-   *Client Certificate*\(only if *Internet* is selected for *Proxy Type*.\): To use private key alias of deployed keyStore for this authentication.
+-   *Dynamic*: You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Authentication_Type`. The valid values are *<None\>*, *<BasicAuthentication\>*, and *<ClientCertificate\>*
 
-You can also set the value of this attribute dynamically using the header `SAP_AS2_Outbound_Authentication_Type`. The allowed values are *<None\>*, *<BasicAuthentication\>*, and *<ClientCertificate\>*.
+
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Private Key Alias*\(only if you select *Client Certificate*.\)
+*Private Key Alias*
+
+\(only if you select *Client Certificate*\)
 
 </td>
 <td valign="top">
@@ -132,7 +174,9 @@ Enter the private key alias that enables the system to fetch the private key fro
 <tr>
 <td valign="top">
 
-*Credential Name*\(only if you select *Basic authentication*.\)
+*Credential Name*
+
+\(only if you select *Basic authentication*\)
 
 </td>
 <td valign="top">
@@ -144,7 +188,7 @@ Provide the name of the *User Credentials* artifact that contains the credential
 <tr>
 <td valign="top">
 
-*Timeout \(in ms\)* 
+*Timeout \(in ms\)*
 
 </td>
 <td valign="top">

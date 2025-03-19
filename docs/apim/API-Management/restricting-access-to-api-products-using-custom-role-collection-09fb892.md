@@ -28,7 +28,7 @@ Whenever you create a product or edit a draft product, permissions can be added 
 
 ## Procedure
 
-1.  Log on to the .
+1.  Log on to .
 
 2.  Choose the navigation icon on the left and choose *Engage*.
 

@@ -16,13 +16,13 @@ As an admin, you can view the list of applications that the application develope
 
 ## Procedure
 
-1.  Log on to the .
+1.  Log on to .
 
 2.  Choose the navigation icon on the left and choose *Engage*.
 
 3.  Navigate to the *Applications* tab page.
 
-    A list of Applications appears. If you have logged on to the with the role APIPortal.Administrator, then you can view the Application key and secret.
+    A list of Applications appears. If you have logged on to with the role APIPortal.Administrator, then you can view the Application key and secret.
 
     You can view the number of calls made for all APIs in an application for the current month. The data is visible for each application in the *Calls* column and also in the details screen of individual application.
 

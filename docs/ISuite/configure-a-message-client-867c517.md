@@ -26,22 +26,58 @@ Create a service instance:
 
 3.  Provide a name for the instance.
 
-4.  Choose *Create*.
+4.  Choose *Next*
+
+5.  Specify parameters using a JSON file. You can provide additional parameters such as the namespace and connection rules for a message client. Follow the [Service Descriptor Syntax](service-descriptor-syntax-b70eaad.md).
+
+    > ### Sample Code:  
+    > ```
+    > {
+    >     
+    >     "rules": {
+    >         "topicRules": {
+    >             "publishFilter": [
+    >                 "${namespace}/*"
+    >             ],
+    >             "subscribeFilter": [
+    >                 "${namespace}/*"
+    >             ]
+    >         },
+    >         "queueRules": {
+    >             "publishFilter": [
+    >                 "${namespace}/*"
+    >             ],
+    >             "subscribeFilter": [
+    >                 "${namespace}/*"
+    >             ]
+    >         }
+    >     },
+    >     "version": "1.1.0",
+    >     "emname": "em-healthcheck",
+    >     "namespace": "sap/em/opshealthcheck"
+    > }
+    > ```
+
+    > ### Note:  
+    > -   Refer to [Service Descriptor Syntax](service-descriptor-syntax-b70eaad.md) to understand the different parameters that you can provide in the example.
+    > -   We recommend that you use the same value for `service instance name` and `emname`.
+
+6.  Choose *Create*.
 
     A service instance with the name you provided is created under the section *Instances*.
 
 
 Create a service binding:
 
-5.  From the context menu of the created service instance, choose *Create Service Binding*.
+7.  From the context menu of the created service instance, choose *Create Service Binding*.
 
-6.  Provide a name for the service binding.
+8.  Provide a name for the service binding.
 
-7.  Choose *Create*.
+9.  Choose *Create*.
 
     A binding of the service instance is created to the Event Mesh capability.
 
-    You can also view the message client in the Integration Suite UI. Navigate to *Configure* \> *Event Mesh* to view all the associated message clients.
+    You can also view the message client in the SAP Integration Suite UI. Navigate to *Configure* \> *Event Mesh* to view all the associated message clients.
 
 
 

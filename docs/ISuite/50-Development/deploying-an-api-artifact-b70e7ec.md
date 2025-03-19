@@ -66,3 +66,5 @@ After deploying the API artifact, you can check the runtime logs and the status 
 
 [Policy Definition and Types of Policies Supported by Edge Integration Cell](policy-definition-and-types-of-policies-supported-by-edge-integration-cell-c744df5.md "You can define the behavior of an API by using policy steps.")
 
+[Request Reply Step for API Artifact](request-reply-step-for-api-artifact-a0b3712.md "You can use this step to call an external receiver system in a synchronous step and get back a response.")
+

@@ -2,13 +2,13 @@
 
 # Important Concepts of API Management
 
-The structure of the API Management capability within Integration Suite revolves around APIs, products, applications, users, developers, and accounts. APIs are grouped into products, which are accessed by applications created by developers.
+The structure of the API Management capability within SAP Integration Suite revolves around APIs, products, applications, users, developers, and accounts. APIs are grouped into products, which are accessed by applications created by developers.
 
 Users interact with APIs through applications, and accounts are used to manage access and permissions. Understanding this structure is crucial for effectively managing and organizing APIs within API Management.
 
 ![](images/concept_api_platform_f46a956.png)
 
-To effectively utilize the API portal within the Integration suite, it is important to grasp the following concepts:
+To effectively utilize the API portal within SAP Integration Suite, it is important to grasp the following concepts:
 
 
 <table>

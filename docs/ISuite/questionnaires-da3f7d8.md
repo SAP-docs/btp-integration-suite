@@ -13,11 +13,16 @@ Questionnaires are the basis for the interface request process. They are based o
 By using configurable questionnaires, you can capture the interface requirements in a structured way. The system uses the results for intelligent technology recommendations.
 
 > ### Example:  
-> The following question predefined by SAP is related to the *Business-Oriented Monitoring* key characteristic:
+> The following question predefined by SAP is related to the *Data Transformation* key characteristic:
 > 
-> *Do you also want business users to be able to monitor your integration scenario at runtime?*
+> *Which level of transformation \(of messages, interfaces, values\) does your integration scenario require for allowing the receiver to properly consume the data?*
 > 
-> The *Type* is *Single Select* because you can only answer the question with Yes or No.
+> The answer options *No Transformation*, *Simple Transformation* and *Advanced Transformation* correspond to related key characteristic values.
+> 
+> The *Type* is *Single Select* because the answer options do not allow for multiple selections.
 
 Depending on the answers to all of the questions, the technology mapping determines the suitable integration technology.
+
+> ### Note:  
+> The SAP pre-defined questionnaires \(indicated as *Maintained by SAP*\) cannot be customized.
 

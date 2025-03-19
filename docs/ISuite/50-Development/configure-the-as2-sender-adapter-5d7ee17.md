@@ -15,6 +15,9 @@
 >     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
+> For Edge Integration Cell runtime fetching the values dynamically from partner directory is not supported.
+
+> ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 > ### Note:  
@@ -523,12 +526,18 @@ To define this attribute dynamically, set *<required\>* or *<notRequired\>* valu
 </td>
 <td valign="top">
 
-Select the type of proxy you want to use to connect asynchronously to an AS2 sender system.
+In the *Cloud Integration* runtime, select the type of proxy you want to use to connect asynchronously to an AS2 sender system.
 
 -   Select *Internet* if you are connecting to a cloud system.
 
 -   If you select *Dynamic*, you must define *<default\>* or *<sapcc\>* value in `SAP_AS2_Inbound_Proxy_Type` key in partner directory.
 
+
+If you have activated *Edge Integration Cell* runtime, select the type of proxy you want to use for connecting to receiver system.
+
+-   *Dynamic*: If you select *Dynamic*, you must define *<default\>* or *<manual\>* value in `SAP_AS2_Inbound_Proxy_Type` key in partner directory.
+-   *Internet*: To connect to a cloud system.
+-   *Manual*: You can manually specify Proxy Host and Proxy Port \(using the corresponding entry fields\).
 
 
 
@@ -539,12 +548,40 @@ Select the type of proxy you want to use to connect asynchronously to an AS2 sen
 
 *Location ID*
 
-\(only if *Proxy Type* is *On-Premise* or *Dynamic*\)
+\(for *Cloud Integration* rutime, if *Proxy Type* is *On-Premise* or *Dynamic*\)
 
 </td>
 <td valign="top">
 
 If you use the SAP Cloud Connector to connect to your on-premise system, specify the virtual address that is configured in the SAP Cloud Connector settings. To fetch details from partner directory, use `pd:xxxx` syntax.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Host* 
+
+\(only if *Edge Integration Cell* runtime is activated and *Proxy Type* is selected as *Manual* and *Dynamic*\)
+
+</td>
+<td valign="top">
+
+Enter the name of the proxy host you are using to connect to a receiver system.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Port* 
+
+\(only if *Edge Integration Cell* runtime is activated and *Proxy Type* is selected as *Manual* and *Dynamic*\)
+
+</td>
+<td valign="top">
+
+Enter the port number you are using to connect to a receiver system.
 
 </td>
 </tr>

@@ -4,17 +4,17 @@
 
 # Cancel API Management Service Subscription
 
-You can deactivate your API Management capability from Integration Suite to disable your account from the API Management service.
+You can deactivate your API Management capability from SAP Integration Suite to disable your account from the API Management service.
 
 
 
 <a name="loiodf6df2b90c354ca7b83c4e7045b2279c__section_avg_shr_b1c"/>
 
-## Deactivate the API Management Capability from Integration Suite
+## Deactivate the API Management Capability from SAP Integration Suite
 
 **Prequisite**: The *Integration\_Provisioner* role must be assigned to you.
 
-If you've enabled the API Management capability via Integration Suite, perform the following steps to cancel the API portal and the Developer Hub subscriptions:
+If you've enabled the API Management capability via SAP Integration Suite, perform the following steps to cancel the API portal and the Developer Hub subscriptions:
 
 1.  Log on to SAP BTP Cockpit and navigate to your subaccount.
 
@@ -38,7 +38,7 @@ If you've enabled the API Management capability via Integration Suite, perform t
 **Related Information**  
 
 
-[Configuring Additional Virtual Host in Cloud Foundry Environment](configuring-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "A virtual host allows you to host multiple domain names on the API Management capability within Integration Suite.")
+[Configuring Additional Virtual Host in Cloud Foundry Environment](configuring-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "A virtual host allows you to host multiple domain names on the API Management capability within SAP Integration Suite.")
 
 [Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](region-specific-ip-addresses-available-for-api-management-cloud-foundry-environment-683a97c.md "API Management protects your backend services. However, API Management needs to establish connectivity to your backend services during an API call execution.")
 

@@ -323,13 +323,15 @@ By default, this option is deactivated.
 Define the number of retries to be executed before a different delivery status is sent to the message broker.
 
 > ### Note:  
+> If this parameter is left empty, endless retries are executed. Ensure to specify a value to prevent this behavior.
+> 
 > If this parameter is set to \(`0`\), any message that is marked as a retried message is directly returning the outcome configured in *Delivery Status After Max. Retries* to the message broker and does not even start processing the message. Be aware of the fact that any delivery attempt by the message broker, even a failed one \(for example, due to network issues\), increases the delivery counter of the message sent by the message broker.
 > 
 > If the value is set to a number bigger than `0`, the AMQP adapter returns the outcome configured in *Delivery Status After Max. Retries* to the message broker if the delivery count of the message exceeds the configured value. Otherwise, it processes the message and returns a released outcome in case of an error and an accepted outcome in case of a successful message processing.
 > 
 > The consequences of the provided outcome depend on the message broker and the queue configuration on the message broker. An accepted outcome usually removes the message from the queue. A released outcome usually triggers a redelivery. A rejected outcome may trigger a redelivery or move the message to a dead letter queue \(maybe only if the message was rejected for a configured number of times\). The same applies to a modified outcome with the undeliverable flag set, which also might transit the message on the message broker to some undeliverable state.
 > 
-> If the message broker is not configured properly, this behavior can lead to unwanted side effects. For example, the messaging system constantly re-sends the message, no other messages are being processed, and no additional message processing logs are written. As consequence, this can result in an unplanned high load of your tenant and message broker.
+> If the message broker is not configured properly, this behavior can lead to unwanted side effects. For example, the messaging system constantly re-sends the message, no other messages are being processed, and no additional message processing logs are written. As a consequence, this can result in an unplanned high load of your tenant and message broker.
 
 
 

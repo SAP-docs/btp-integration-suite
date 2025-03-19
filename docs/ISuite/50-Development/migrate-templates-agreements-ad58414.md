@@ -8,7 +8,7 @@ Migrate a group of outdated agreements and templates.
 
 ## Context
 
-If you want to update a group of agreements or templates together, follow the procedure below.
+There is a new format for agreements and templates that allows alias-based configurations. This feature helps reduce redundant configurations while creating agreements thereby reducing your time and effort. The outdated templates, and agreements using these outdated templates are no longer editable. To continue working with them, you need to update them to the latest format. When you have a group of agreements or templates that are outdated, updating them individually can be cumbersome. The *Cross Actions* tab provides you with an option to update them all together seamlessly. To know more, follow the procedure below.
 
 
 

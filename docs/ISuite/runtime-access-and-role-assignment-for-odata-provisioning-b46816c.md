@@ -10,9 +10,9 @@ Steps to complete the activation of the OData Provisioning capability by providi
 
 ### Before you begin:
 
--   You've subscribed to SAP Integration Suite. You have the*Integration\_Provisioner*role and can access the Integration Suite. See [Subscribing and Configuring Initial Access to SAP Integration Suite](10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
+-   You've subscribed to SAP Integration Suite. You have the*Integration\_Provisioner*role and can access the SAP Integration Suite. See [Subscribing and Configuring Initial Access to SAP Integration Suite](10-InitialSetup/subscribing-and-configuring-initial-access-to-sap-integration-suite-8a3c8b7.md).
 -   You've activated the OData Provisioning capability. See [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md).
--   You additionally need the role of org member and space developer in the Cloud Foundry space in which the Integration Suite is provisioned.
+-   You additionally need the role of org member and space developer in the Cloud Foundry space in which SAP Integration Suite is provisioned.
 
 After you activate the OData Provisioning capability, you need to:
 
@@ -234,7 +234,7 @@ To create the service key, do the following:
 
 You create a role collection and add roles for OData Provisioning, see [Define a Role Collection](https://help.sap.com/docs/btp/sap-business-technology-platform/define-role-collection). Then assign this role collection to the users who have to access and work with the OData Provisioning capability.
 
-1.  Navigate to the subaccount where you've subscribed to Integration Suite on the SAP BTP Cockpit and add the following roles to a role collection:
+1.  Navigate to the subaccount where you've subscribed to SAP Integration Suite on the SAP BTP Cockpit and add the following roles to a role collection:
     -   *ODPManage*: View and register OData services. Monitor errors, manage metadata validation and cache settings.
     -   *ODPAPIAccess*: Provides access to the service document. You can access the service document from a link against each of the registered OData services.
     -   *APIFullAccess*: Provides runtime access to the registered OData services.

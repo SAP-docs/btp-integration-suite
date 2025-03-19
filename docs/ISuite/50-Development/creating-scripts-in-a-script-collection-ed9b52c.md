@@ -89,6 +89,6 @@
 
 1.  Choose the script you want to improve from the resource pane.
 
-2.  To improve the script, include the recommendations provided in the *Problems* view. For more information, see: [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md).
+2.  To improve the script, include the guidelines provided in the *Problems* view. For more information, see: [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md).
 
 

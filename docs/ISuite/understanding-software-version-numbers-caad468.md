@@ -37,7 +37,24 @@ Software Version Example
 <tr>
 <td valign="top">
 
-Cloud Integration \(Cloud Foundry environment\)
+Cloud Integration \(Cloud Foundry environment; runtime based on Apache Camel version 3.\*\)
+
+</td>
+<td valign="top">
+
+8
+
+</td>
+<td valign="top">
+
+8.24.13
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration \(Cloud Foundry environment; runtime based on Apache Camel version 2.\*\)
 
 </td>
 <td valign="top">

@@ -26,7 +26,7 @@ Scope
 </td>
 <td valign="top">
 
-500 MB
+2 GB
 
 Refer to the blog on [Content Size Limits](https://blogs.sap.com/2020/08/02/cloud-integration-content-size-limits/) learn how to reduce your integration content size.
 
@@ -84,7 +84,7 @@ See: [Optimize Performance](50-Development/optimize-performance-491c80d.md)
 </td>
 <td valign="top">
 
-4 GB
+10 GB
 
 Refer to SAP Note [2648415](https://me.sap.com/notes/2648415) to learn how to optimize the integration flow development to prevent the integration flow from running into the “No More Space left on Disk” error.
 

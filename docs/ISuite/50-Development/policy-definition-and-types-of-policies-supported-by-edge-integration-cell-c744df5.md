@@ -165,6 +165,8 @@ The IP filter policy allows or denies calls from specific IP addresses or addres
 
 [Copying an API Artifact](copying-an-api-artifact-820c9e8.md "You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API but with some modifications or variations. The copy feature allows you to quickly duplicate the API artifact and make the necessary changes without starting from scratch.You can create a duplicate of an API artifact by copying it within the same package or in a different integration package within the same Integration Suite subscription.")
 
+[Request Reply Step for API Artifact](request-reply-step-for-api-artifact-a0b3712.md "You can use this step to call an external receiver system in a synchronous step and get back a response.")
+
 [Deploying an API Artifact](deploying-an-api-artifact-b70e7ec.md "After creating an API artifact, it is necessary to deploy it on the chosen runtime profile in order to make it executable and ready for use.")
 
 [Adding Policy Steps to the API Artifact](adding-policy-steps-to-the-api-artifact-c2b3e56.md "To enforce security or control API traffic, you can set rules on the API by adding policy steps and integration steps to the API artifact.")
