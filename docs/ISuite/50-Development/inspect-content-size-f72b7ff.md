@@ -9,7 +9,7 @@ Integration flows and other content artifacts get deployed to the file system ra
 > ### Note:  
 > *Content Size* displays the compressed size of the content artifacts \(the size of the deployed `.jar` file\). In order to see the uncompressed references of your integration flows, navigate to **Manage Integration Content** as described in the *Functions* section of this page. For more information, see [Manage Integration Content](manage-integration-content-09a7223.md).
 
-The default value of the entitlement is 500 MB, as documented at [What Is SAP Cloud Integration?](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/e12c09cc8e9b4574b092d8964b049ce6.html "Support end-to-end process integration through the exchange of messages.") :arrow_upper_right:.
+The default value of the entitlement is 2GB, as documented at [What Is SAP Cloud Integration?](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/e12c09cc8e9b4574b092d8964b049ce6.html "Support end-to-end process integration through the exchange of messages.") :arrow_upper_right:.
 
 
 

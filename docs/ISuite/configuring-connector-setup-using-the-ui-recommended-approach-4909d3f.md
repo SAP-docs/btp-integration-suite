@@ -47,7 +47,18 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 
     5.  Fill in the *Offer Management User* information. You can retrieve these details from the *Offer Management* user that you created in the landscape portal.
 
-    6.  Fill in the *Decentral Identity Verification* information. Enter the *IATP STS OAuth Token URL* and the corresponding *Client ID* and *Client Secret*. You can retrieve the client details from the *Identity Wallet Management* user you created in the landscape portal. The other information in this section is filled in automatically.
+    6.  Fill in the *Decentral Identity Verification* information with your *IATP STS OAuth Token URL* and the corresponding *Client ID* and *Client Secret*. you can retrieve the client details from the *Identity Wallet Management* user you created in the landscape portal.
+
+        You can find the *IATP STS OAuth Token URL* in the landscape portal:
+
+        1.  For Catena-X, go to *Your Profile* \> ** \> *Connector Management*and choose your connector configuration details to view a dialog with all your details. Copy the *iatp.sts.oauth.token\_url*.
+
+        2.  For Cofinity-X, go to *Technical Setup* \> *Connector Registration* and choose your connector configuration details to view a dialog with all your details. Copy the *iatp.sts.oauth.token\_url*.
+
+
+
+
+        The other information in this section is filled in automatically.
 
     7.  Choose *Save*.
 

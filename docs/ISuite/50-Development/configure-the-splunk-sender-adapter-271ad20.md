@@ -343,7 +343,7 @@ Ending point of time range or exact timestamp where you want to end the search. 
 
 Condition to filter out the results in the required format, for example: `| stats count | where count > 1000`.
 
-You can implement scheduled alerts from Cloud Integration using this parameter.
+You can implement scheduled alerts from SAP Cloud Integration using this parameter.
 
 </td>
 </tr>

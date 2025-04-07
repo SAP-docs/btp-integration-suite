@@ -10,7 +10,7 @@ CORS \(Cross-origin resource sharing\) allows JavaScript XMLHttpRequest \(XHR\) 
 
 ## Procedure
 
-1.  Log on to the Integration Suite.
+1.  Log on to SAP Integration Suite.
 
 2.  From the left navigation pane, choose *Design* \> *Integrations and APIs* to view the list of integration packages.
 

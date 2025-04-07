@@ -2,7 +2,7 @@
 
 # Trading Partner Management
 
-SAP Trading Partner Management \(TPM\) is a powerful capability within Integration Suite that streamlines the management and governance of business-to-business \(B2B\) relationships, agreements, and interactions with external trading partners. TPM empowers organizations to tailor their B2B data exchange to meet specific needs, defining and configuring electronic data interchange protocols, standards, and APIs for each trading partner.
+SAP Trading Partner Management \(TPM\) is a powerful capability within SAP Integration Suite that streamlines the management and governance of business-to-business \(B2B\) relationships, agreements, and interactions with external trading partners. TPM empowers organizations to tailor their B2B data exchange to meet specific needs, defining and configuring electronic data interchange protocols, standards, and APIs for each trading partner.
 
 With TPM, organizations can accommodate diverse B2B requirements, including:
 

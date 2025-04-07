@@ -21,7 +21,7 @@ There can be scenarios where you might want to reuse an existing agreement . You
 
 ## Procedure
 
-1.  Log on to your Integration Suite .
+1.  Log on to SAP Integration Suite .
 
 2.  Choose *Design* \> *B2B Scenarios*.
 

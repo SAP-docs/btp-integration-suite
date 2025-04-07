@@ -153,7 +153,7 @@ If you are using Edge Integration Cell or Process Orchestration runtime profile:
 -   If you select *Manual*, you can manually specify the *Proxy Host* and the *Proxy Port* \(by using the corresponding entry fields\).
 
 
-If you are using Cloud Integration runtime profile:
+If you are using SAP Cloud Integration runtime profile:
 
 -   Select *Internet* if you are connecting to a cloud system.
 

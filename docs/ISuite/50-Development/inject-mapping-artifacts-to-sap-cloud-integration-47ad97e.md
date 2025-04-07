@@ -13,9 +13,9 @@ You can inject mapping artifacts from Integration Advisor to your SAP Cloud Inte
 You need to maintain the SAP Cloud Integration tenant details into which you need to inject the resources under the *Destinations* tab of your subaccount in SAP BTP cockpit.
 
 > ### Note:  
-> Users leveraging Integration Advisor within Integration Suite do not need to manually maintain destination details, as the capability automatically discovers the target Cloud Integration tenant.
+> Users leveraging Integration Advisor within SAP Integration Suite do not need to manually maintain destination details, as the capability automatically discovers the target Cloud Integration tenant.
 > 
-> However, if you plan to inject resources into a Cloud Integration tenant outside your Integration Suite subscription, you must manually configure the destination details. For such cases, follow the procedure below.
+> However, if you plan to inject resources into a Cloud Integration tenant outside your SAP Integration Suite subscription, you must manually configure the destination details. For such cases, follow the procedure below.
 
 1.  Login to SAP BTP cockpit and navigate to your subaccount.
 
@@ -156,7 +156,7 @@ You need to maintain the SAP Cloud Integration tenant details into which you nee
 
     The *Connections* table displays two sections:
 
-    1.  *Built-In*: Displays the Cloud Integration tenant associated with your Integration Suite subscription.
+    1.  *Built-In*: Displays the Cloud Integration tenant associated with your SAP Integration Suite subscription.
 
     2.  *User-Defined*: Displays manually created destinations by the user, typically used for external Cloud Integration tenants or custom integrations.
 

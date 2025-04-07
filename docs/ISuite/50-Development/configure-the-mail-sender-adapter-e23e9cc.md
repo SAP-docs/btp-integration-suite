@@ -422,7 +422,7 @@ For more details, see: [MIME \(Multipurpose Internet Mail Extensions\) Part Thre
 </td>
 <td valign="top">
 
-When selected, Cloud Integration disconnects from the e-mail server after each poll.
+When selected, SAP Cloud Integration disconnects from the e-mail server after each poll.
 
 </td>
 </tr>

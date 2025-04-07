@@ -146,5 +146,5 @@ Use this procedure to create an integration package that contains an OData API a
 **Related Information**  
 
 
-[Packaging Integration Content in Integration Suite](packaging-integration-content-in-integration-suite-89da0a2.md "")
+[Packaging Integration Content in SAP Integration Suite](packaging-integration-content-in-sap-integration-suite-89da0a2.md "")
 

@@ -12,9 +12,9 @@ When using the mail sender adapter, be aware of the following in order to avoid 
 
 **It is not possible to authenticate the sender of an e-mail**
 
-Unlike with other adapters, if you are using the sender mail adapter, the Cloud Integration system cannot authenticate the sender of an e-mail.
+Unlike with other adapters, if you are using the sender mail adapter, the SAP Cloud Integration system cannot authenticate the sender of an e-mail.
 
-Therefore, if someone is sending you malware, for example, it is not possible to identify and block this sender in the Cloud Integration system.
+Therefore, if someone is sending you malware, for example, it is not possible to identify and block this sender in the SAP Cloud Integration system.
 
 To minimize this danger, you can use the authentication mechanism of your mailbox. Bear in mind, however, that this mechanism might not be sufficient to protect against such attacks.
 
@@ -24,15 +24,15 @@ There are three possible threats when processing e-mail content:
 
     E-mails can contain malware, such as viruses or Trojan horses.
 
-    These will not affect the Cloud Integration system, but they can cause damage to a receiver system if it doesn't have sufficient protection strategies.
+    These will not affect the SAP Cloud Integration system, but they can cause damage to a receiver system if it doesn't have sufficient protection strategies.
 
--   Danger to the Cloud Integration system
+-   Danger to the SAP Cloud Integration system
 
     E-mail content can be designed to affect the processing runtime of a system.
 
     Processing this content overloads the system and prevents requests from being fulfilled \(denial of service\).
 
-    The Cloud Integration system is then unavailable until the problem is fixed.
+    The SAP Cloud Integration system is then unavailable until the problem is fixed.
 
 -   Reliability of data
 

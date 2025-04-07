@@ -7,9 +7,9 @@ To optimize your experience of SAP Business Technology Platform \(SAP BTP\), SAP
 
 
 > ### Note:  
-> Integration Suite is based on SAP UI5. For this reason, accessibility features for SAP UI5 also apply. See the accessibility documentation for SAP UI5 on SAP Help Portal at [Accessibility for End Users](https://help.sap.com/docs/SAPUI5/bc5a64aac808463baa95b4230f221716/f562835d0b4e44129aa24a17551a0baa.html).
+> SAP Integration Suite is based on SAP UI5. For this reason, accessibility features for SAP UI5 also apply. See the accessibility documentation for SAP UI5 on SAP Help Portal at [Accessibility for End Users](https://help.sap.com/docs/SAPUI5/bc5a64aac808463baa95b4230f221716/f562835d0b4e44129aa24a17551a0baa.html).
 
-The SAP Integration Suite home page adheres to the accessibility features for SAP UI5. Since the Integration Suite has several capabilities, each complies to the accessibility features for SAP UI5 to a different extent. To know more about the accessibility feature for each individual capability, see:
+The SAP Integration Suite home page adheres to the accessibility features for SAP UI5. Since SAP Integration Suite has several capabilities, each complies to the accessibility features for SAP UI5 to a different extent. To know more about the accessibility feature for each individual capability, see:
 
 
 <table>

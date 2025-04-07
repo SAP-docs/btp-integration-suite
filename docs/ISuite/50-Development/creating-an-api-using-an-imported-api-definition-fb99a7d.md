@@ -33,7 +33,7 @@ The supported file types for an import are json, and .zip.
 
 ## Procedure
 
-1.  Log on to the Integration Suite.
+1.  Log on to SAP Integration Suite.
 
 2.  From the left navigation pane, choose *Design* \> *Integrations and APIs* to view the list of integration packages.
 
@@ -43,7 +43,7 @@ The supported file types for an import are json, and .zip.
 
     The *Create API* dialog opens.
 
-5.  Select the Edge Integration Cell *Runtime Profile* and choose *Next*. This profile determines the Edge Integration Cell node on which you will create and process your API artifact.
+5.  Select the *Runtime Profile* and choose *Next*. This profile determines the runtime on which you will create and process your API artifact.
 
 6.  To import an API Definition, select *Import* from the given options and choose *Next*.
 
@@ -102,7 +102,7 @@ The supported file types for an import are json, and .zip.
     > ### Note:  
     > For a given resource, choose *Switch to API Details* and correct the errors in swagger definition, if any. The error message displayed on the screen helps in error detection and correction. Choose *Save* after making the necessary corrections in the swagger file.
 
-11. To define policies on the API, go to the *Policies* tab. For more information about how to add a policy, see [Policy Definition and Types of Policies Supported by Edge Integration Cell](policy-definition-and-types-of-policies-supported-by-edge-integration-cell-c744df5.md).
+11. To define policies on the API, go to the *Policies* tab. For more information about how to add a policy, see [Policy Definition and Types of Policies](policy-definition-and-types-of-policies-c744df5.md).
 
 12. If you want to define multiple proxy endpoints, navigate to *Proxy EndPoint* tab.
 

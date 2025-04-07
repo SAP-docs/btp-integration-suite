@@ -12,7 +12,7 @@ You are editing an integration flow.
 
 ## Context
 
-You must create a communication channel between Cloud Integration and the sender/receiver system to facilitate communication between them.
+You must create a communication channel between SAP Cloud Integration and the sender/receiver system to facilitate communication between them.
 
 > ### Note:  
 > You must select on the participant’s name of sender and receiver elements, to access the header and property information. Also, you must drag and drop message flow over the participant's name, to assign communication channels.

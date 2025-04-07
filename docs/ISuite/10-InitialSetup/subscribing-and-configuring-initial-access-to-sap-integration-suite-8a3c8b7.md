@@ -65,7 +65,7 @@ You can watch a short video to learn about subscribing and configuring initial a
 12. Choose *Go to Application* to launch the Integration Suite home page. For more information, see [Working with SAP Integration Suite Home](../20-Working_with_SAP_Integration_Suite_Home/working-with-sap-integration-suite-home-a53dce3.md).
 
     > ### Tip:  
-    > Clear your web browser cache and cookies before navigating to *Go to Application*.To access the application, you'll need the correct authorization. If you try to enter without it, you'll be asked to assign the necessary role. If you're still unable to access the application after role assignment, simply log out and then log back into the SAP BTP cockpit. This should grant you access to the application.
+    > Clear your web browser cache and cookies before navigating to *Go to Application*. To access the application, you'll need the correct authorization. If you try to enter without it, you'll be asked to assign the necessary role. If you're still unable to access the application after role assignment, simply log out and then log back into the SAP BTP cockpit. This should grant you access to the application.
 
     > ### Tip:  
     > To remain informed and receive timely notifications about planned and unplanned downtime, customer communications, and maintenance announcements, we recommend you maintain your contact information via Cloud System Notification Subscriptions \(CSNS\). For more information, see [Cloud Availability Center & Cloud System Notification Subscriptions](https://support.sap.com/en/my-support/systems-installations/cac.html).

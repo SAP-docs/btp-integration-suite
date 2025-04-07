@@ -33,7 +33,18 @@ If you want to consume assets provided by another member of a data space, you mu
 
 ## Consuming Data Space Assets
 
-To consume assets using the consumer API, perform the following steps for **S3 assets**:
+Depending on the asset that you want to consume or provide, there are two different approaches to consuming assets:
+
+-   The **provider pushes** the asset to a location that the consumer specifies.
+
+    This approach applies to **S3 assets** and **Azure assets**.
+
+-   The **consumer pulls** the asset from a location that the provider discloses to them.
+
+    This approach applies to **HTTP assets**.
+
+
+To consume assets using the consumer API, perform the following steps for **S3 assets** and **Azure assets**:
 
 1.  [Discovering Offers Through a Catalog](discovering-offers-through-a-catalog-90f3619.md)
 

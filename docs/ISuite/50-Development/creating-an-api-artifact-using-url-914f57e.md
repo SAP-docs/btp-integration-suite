@@ -21,7 +21,7 @@ Create an API artifact of the type REST, SOAP, and OData using the HTTP endpoint
 
 ## Procedure
 
-1.  Log on to the Integration Suite.
+1.  Log on to SAP Integration Suite.
 
 2.  From the left navigation pane, choose *Design* \> *Integrations and APIs* to view the list of integration packages.
 
@@ -31,7 +31,7 @@ Create an API artifact of the type REST, SOAP, and OData using the HTTP endpoint
 
     The *Create API* wizard opens.
 
-5.  Select the Edge Integration Cell *Runtime Profile* and choose *Next*. This profile determines the Edge Integration Cell node on which you will create and process your API artifact.
+5.  Select the *Runtime Profile* and choose *Next*. This profile determines the runtime on which you will create and process your API artifact.
 
 6.  To create an API using the HTTP endpoint URL, select *URL* from the given options and choose *Next*.
 
@@ -231,7 +231,7 @@ Create an API artifact of the type REST, SOAP, and OData using the HTTP endpoint
 
 11. For a given resource, choose *Show/Hide* to view the list of properties and their associated API documentation. You can add descriptions for each resource in the editor.
 
-12. To define policies on the API, go to the *Policies* tab. For more information about how to add a policy, see [Policy Definition and Types of Policies Supported by Edge Integration Cell](policy-definition-and-types-of-policies-supported-by-edge-integration-cell-c744df5.md).
+12. To define policies on the API, go to the *Policies* tab. For more information about how to add a policy, see [Policy Definition and Types of Policies](policy-definition-and-types-of-policies-c744df5.md).
 
 13. Once you’ve filled in all the required details of the API, you can select one of the following actions for the API:
 

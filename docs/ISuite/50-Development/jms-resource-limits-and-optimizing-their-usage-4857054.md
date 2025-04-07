@@ -122,23 +122,6 @@ Number of providers
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-Message volume that can be processed by JMS messaging
-
-</td>
-<td valign="top">
-
-150 GB/month
-
-</td>
-<td valign="top">
-
-500 GB/month
-
-</td>
-</tr>
 </table>
 
 > ### Note:  
@@ -195,18 +178,6 @@ Message volume that can be processed by JMS messaging
 > <td valign="top">
 > 
 > 5
-> 
-> </td>
-> </tr>
-> <tr>
-> <td valign="top">
-> 
-> Message volume that can be processed by JMS messaging
-> 
-> </td>
-> <td valign="top">
-> 
-> 5 GB/month
 > 
 > </td>
 > </tr>

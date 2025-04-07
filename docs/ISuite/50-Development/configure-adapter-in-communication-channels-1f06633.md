@@ -1202,6 +1202,22 @@ See: [Configure the Kafka Receiver Adapter](configure-the-kafka-receiver-adapter
 <tr>
 <td valign="top">
 
+*LeanIX*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to connect to SAP LeanIX.
+
+See: [LeanIX Receiver Adapter](leanix-receiver-adapter-e49c1de.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Mail Sender for IMAP*
 
 Sender adapter
@@ -1299,6 +1315,38 @@ Receiver adapter
 Connects SAP Integration Suite to Microsoft Dynamics Customer Relationship Management \(CRM\).
 
 See: [Microsoft Dynamics CRM Receiver Adapter](microsoft-dynamics-crm-receiver-adapter-ee724c8.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft OneDrive* 
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to a remote system using HTTP protocol.
+
+See: [Configure the Microsoft OneDrive Sender Adapter](configure-the-microsoft-onedrive-sender-adapter-0724136.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft OneDrive* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to a remote system using HTTP protocol.
+
+See: [Configure the Microsoft OneDrive Receiver Adapter](configure-the-microsoft-onedrive-receiver-adapter-4158749.md)
 
 </td>
 </tr>
@@ -2110,7 +2158,7 @@ If you are developing an OData API, you can configure a SOAP, OData or HTTP adap
 **Related Information**  
 
 
-[AMQP Adapter](amqp-adapter-5cc1a71.md "In many integration scenarios, messages or events have to be exchanged between applications or systems via message brokers. With the Advanced Message Queuing Protocol (AMQP) adapter, SAP Cloud Integration can be used as a provider or a consumer of such messages or events. Cloud Integration can connect to external message brokers using the AMQP protocol, consume messages or events using the AMQP sender adapter, or store messages or events in the message broker using the AMQP receiver adapter.")
+[AMQP Adapter](amqp-adapter-5cc1a71.md "In many integration scenarios, messages or events have to be exchanged between applications or systems via message brokers. With the Advanced Message Queuing Protocol (AMQP) adapter, SAP Cloud Integration can be used as a provider or a consumer of such messages or events. SAP Cloud Integration can connect to external message brokers using the AMQP protocol, consume messages or events using the AMQP sender adapter, or store messages or events in the message broker using the AMQP receiver adapter.")
 
 [Ariba Adapter](ariba-adapter-98da76c.md "You use this procedure to configure a sender and receiver channel of an integration flow with the Ariba Network adapter. These channels enable the SAP and non-SAP cloud applications to send and receive business-specific documents in cXML format to and from the Ariba Network. Examples of business documents are purchase orders and invoices.")
 

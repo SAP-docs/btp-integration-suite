@@ -193,13 +193,60 @@ Save the settings.
 > -   Address URLs for http endpoints across integration flow must be unique. If it is not unique then the integration flow does not start.
 > -   Adapter returns the following HTTP response code:
 > 
->     -   200 - Processing is successful
+>     **HTTP Response Code**
 > 
->     -   503 - Service is not available
+> 
+>     <table>
+>     <tr>
+>     <th valign="top">
+> 
+>     Runtime Version
+>     
+>     </th>
+>     <th valign="top">
+> 
+>     Response Code
+>     
+>     </th>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     For Cloud Integration version 6.\*, runtime based on Apache Camel version 2.\*
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   200 - Processing successful
+> 
+>     -   503 - Service not available
 > 
 >     -   500 - Exception during integration flow processing
 > 
 > 
+> 
+>     
+>     </td>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     Form Cloud Integration version 8.\*, runtime based on Apache Camel version 3.\*
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   200 - Processing successful
+> 
+>     -   204 - Processing successful but no content to return
+> 
+> 
+> 
+>     
+>     </td>
+>     </tr>
+>     </table>
+>     
 >     Also, you can set the header *CamelHttpResponseCode* to customize the response code.
 > 
 > -   You can invoke the HTTP endpoints using the syntax **<Base URI\>/http/<Value of address field\>**. You can get *Base URI* value from *Services* tab in *Properties* view of a worker node.

@@ -6,10 +6,14 @@ Use streaming to process large messages.
 
 Processing large messages can lead to high processing times and high memory consumption. In the worst case, processing large messages leads to out of memory errors and hence a downtime of the SAP Integration Suite runtime components. To avoid such situations, streaming can help. In addition to decreasing memory consumption, this feature also improves runtime performance.
 
-If you just pass a message through SAP Integration Suite from sender to receiver without modifying the payload, streaming is automatically supported if the involved adapters support streaming. As the payload isn't parsed, also larger messages can be transferred. However, in most integration scenarios a modification of the message is required. Note that not all integration flow steps support streaming. Therefore, check and, if necessary, redesign your integration scenario using streaming-enabled integration flow components. This can help avoiding splitting of the payload into chunks. In table below, all steps and their streaming capability are listed.
+If you just pass a message through SAP Integration Suite from sender to receiver without modifying the payload, streaming is automatically supported if the involved adapters support streaming. As the payload isn't parsed, also larger messages can be transferred. However, in most integration scenarios a modification of the message is required. Note that not all integration flow steps support streaming. Therefore, check and, if necessary, redesign your integration scenario using streaming-enabled integration flow components. This can help avoid splitting of the payload into chunks. In the table below, all steps and their streaming capability are listed.
 
 > ### Note:  
-> **Even when using streaming, there are limits in terms of message size because a temporary file is used that is stored in the tenant's file system. The size of the temporary storage limits the maximum file size that can be transferred.**
+> Even when using streaming, there are limits in terms of message size because a temporary file is used that is stored in the tenant's file system. The size of the temporary storage limits the maximum file size that can be transferred.
+
+For an overview of the available resources of tenants deployed in the Cloud Foundry environment, see[System Scope for Cloud Integration in the Cloud Foundry Environment](../system-scope-for-cloud-integration-8ea3822.md).
+
+To monitor the total storage used by temporary files, see [Inspect Temporary Storage](inspect-temporary-storage-7cdfaa7.md).
 
 If you cannot avoid using a non-streaming integration flow component, you have to apply the following approach to process a large message: Split it into chunks and process each chunk individually.
 

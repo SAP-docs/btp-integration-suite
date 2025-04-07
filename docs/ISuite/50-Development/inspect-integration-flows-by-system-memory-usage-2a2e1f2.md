@@ -29,11 +29,11 @@ Choose a cell to display the degree of memory allocation and to access one of th
 
     Inspect the system memory usage of the selected integration flow. For more information, see [Inspect Resource Consumption for Individual Integration Flow](inspect-resource-consumption-for-individual-integration-flow-3380bd6.md).
 
--   **Zoom Out** and **Zoom In** to extend/reduce the selected time period.
+-   *Show Flow Step*
 
--   *Copy Name to Clipboard* 
+    Choose this function to navigate to the *Integration Designer*. The specific flow step identified as the main memory consumer is highlighted in the integration flow.
 
-    Copy the integration flow name to the clipboard. This is useful when you use other screens where you can paste the name for filtering by integration flow.
+    ![](images/Show_Flos_Step_GIF_f361e80.gif)
 
 -   *Copy Flow Step to Clipboard*
 
@@ -41,5 +41,11 @@ Choose a cell to display the degree of memory allocation and to access one of th
 
     > ### Tip:  
     > On the *Manage Integration Content* screen, you can select *View Deployed Artifact* to navigate to the integration flow editor for the deployed artifact. Alternatively, you can select *Navigate to Artifact Editor* to navigate to the integration flow editor in the *Design* section.
+
+-   *Copy Fow ID to Clipboard* 
+
+    Copy the integration flow identifier to the clipboard. This is useful on screens where you can filter by integration flow using the artifact ID.
+
+-   **Zoom Out** and **Zoom In** to extend/reduce the selected time period.
 
 

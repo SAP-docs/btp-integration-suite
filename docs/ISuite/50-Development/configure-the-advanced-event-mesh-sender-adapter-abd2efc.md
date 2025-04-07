@@ -14,6 +14,10 @@ The AdvancedEventMesh sender adapter allows SAP Integration Suite to consume mes
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
+> ### Note:  
+> -   If your current adapter version is 1.3.3 or lower, check SAP Note [3582690](https://me.sap.com/notes/3582690) before upgrading the adapter.
+> -   If you run the intergration flow associated with the AEM adapter using *Run on a single worker node* configuration, there might be integration flow failures. To ensure smooth processing check SAP Note [3577865](https://me.sap.com/notes/3577865).
+
 The adapter uses the Solace Message Format \(SMF\) message protocol.
 
 The *General* tab displays general information about the adapter itself.
@@ -202,7 +206,7 @@ The alias which defines the client password used for authentication with the eve
 </td>
 <td valign="top">
 
-The alias of the private Key Pair in the Integration Suite's Keystore.
+The alias of the private Key Pair in SAP Integration Suite's Keystore.
 
 </td>
 </tr>
@@ -214,7 +218,7 @@ The alias of the private Key Pair in the Integration Suite's Keystore.
 </td>
 <td valign="top">
 
-The alias of the Certificate in the Integration Suite's Keystore. This is optional and maybe necessary only if event broker host certificate requires to be trusted or not recognized by the JRE.
+The alias of the Certificate in SAP Integration Suite's Keystore. This is optional and maybe necessary only if event broker host certificate requires to be trusted or not recognized by the JRE.
 
 </td>
 </tr>
@@ -228,9 +232,9 @@ The alias of the Certificate in the Integration Suite's Keystore. This is option
 
 The type of OAuth2 credential type to be used. The available options are:
 
--   OAuth2 Client Credentials \(Integration Suite managed OAuth2 credential store\)
+-   OAuth2 Client Credentials \(SAP Integration Suite managed OAuth2 credential store\)
 
--   OAuth2 Authorization Code \(Integration Suite managed OAuth2 credential store\)
+-   OAuth2 Authorization Code \(SAP Integration Suite managed OAuth2 credential store\)
 
 -   OAuth2 - Custom \(Adapter managed OAuth2 credential store\)
 
@@ -247,7 +251,7 @@ The type of OAuth2 credential type to be used. The available options are:
 </td>
 <td valign="top">
 
-The interval in seconds for fetching the access token from the respective Integration Suite's credential store when OAuth2 credential type is *Client Credentials* or *Authorization Code*. When *OAuth2 - Custom* type is selected, it is the interval at which the token is refreshed. By default, the value is 300 secs.
+The interval in seconds for fetching the access token from the respective SAP Integration Suitee's credential store when OAuth2 credential type is *Client Credentials* or *Authorization Code*. When *OAuth2 - Custom* type is selected, it is the interval at which the token is refreshed. By default, the value is 300 secs.
 
 </td>
 </tr>
@@ -259,7 +263,7 @@ The interval in seconds for fetching the access token from the respective Integr
 </td>
 <td valign="top">
 
-The alias of the deployed OAuth2 Client Credentials artifact in the Integrations Suite's Credential Store. See \[Deploying an OAuth2 Client Credentials\]\(https://help.sap.com/docs/cloud-integration/sap-cloud-integration/deploying-oauth2-client-credentials-artifact\) know more.
+The alias of the deployed OAuth2 Client Credentials artifact in SAP Integration Suite's Credential Store. See \[Deploying an OAuth2 Client Credentials\]\(https://help.sap.com/docs/cloud-integration/sap-cloud-integration/deploying-oauth2-client-credentials-artifact\) know more.
 
 </td>
 </tr>
@@ -271,7 +275,7 @@ The alias of the deployed OAuth2 Client Credentials artifact in the Integrations
 </td>
 <td valign="top">
 
-The alias of the deployed OAuth2 Authorization Code artifact in the Integrations Suite's Credential Store. See \[Deploying an OAuth2 Authorization Code\]\(https://help.sap.com/docs/cloud-integration/sap-cloud-integration/deploying-oauth2-authorization-code\) know more.
+The alias of the deployed OAuth2 Authorization Code artifact inSAP Integration Suite's Credential Store. See \[Deploying an OAuth2 Authorization Code\]\(https://help.sap.com/docs/cloud-integration/sap-cloud-integration/deploying-oauth2-authorization-code\) know more.
 
 </td>
 </tr>

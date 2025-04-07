@@ -8,7 +8,7 @@ The Partner Directory is a tenant-specific storage option that allows you to sto
 
 Follow the procedure below to activate your trading partner agreement
 
-1.  Log on to your Integration Suite .
+1.  Log on to SAP Integration Suite .
 2.  Choose *Design* \> *B2B Scenarios*.
 3.  Navigate to *Agreements* tab. The tab displays the list of agreements created in the system. The *Status* column displays the activation status of the agreements.
 

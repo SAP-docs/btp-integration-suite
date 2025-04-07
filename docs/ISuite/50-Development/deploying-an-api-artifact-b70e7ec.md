@@ -12,7 +12,7 @@ After creating an API artifact, it is necessary to deploy it on the chosen runti
 
 ## Prerequisites
 
-You should have at least one Edge Integration Cell runtime provisioned.
+You should have at least one runtime provisioned.
 
 
 
@@ -20,7 +20,7 @@ You should have at least one Edge Integration Cell runtime provisioned.
 
 ## Procedure
 
-1.  Log on to the Integration Suite.
+1.  Log on to SAP Integration Suite.
 
 2.  Choose the navigation icon on the left and choose *Design* \> *Integrations and APIs*.
 
@@ -35,7 +35,7 @@ You should have at least one Edge Integration Cell runtime provisioned.
     > ### Note:  
     > Alternatively, you can deploy an API artifact from its details page. First, select the *<integration package\>* in which you created the API artifact. Then, select the API to open its *Details* page. On the API details page, you will find the option to deploy the API. Simply select *Deploy* to proceed with the deployment.
 
-6.  On the *Confirmation* dialog, the Edge Integration Cell runtime that you chose while creating the API artifact will be selected by default. However, you can choose another valid Edge Integration Cell runtime profile from the dropdown menu while deploying the artifact.
+6.  On the *Confirmation* dialog, the runtime you chose while creating the API artifact will be selected by default. However, you can choose another valid runtime profile from the dropdown menu while deploying the artifact.
 
     > ### Note:  
     > The associated virtual host URL will be automatically updated when you select the runtime profile of your choice. Additionally, your API URL will be updated accordingly.
@@ -62,9 +62,9 @@ After deploying the API artifact, you can check the runtime logs and the status 
 
 [Adding an API Artifact](adding-an-api-artifact-c2fe62c.md "Add an API artifact to an package.")
 
-[Copying an API Artifact](copying-an-api-artifact-820c9e8.md "You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API but with some modifications or variations. The copy feature allows you to quickly duplicate the API artifact and make the necessary changes without starting from scratch.You can create a duplicate of an API artifact by copying it within the same package or in a different integration package within the same Integration Suite subscription.")
+[Copying an API Artifact](copying-an-api-artifact-820c9e8.md "You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API but with some modifications or variations. The copy feature allows you to quickly duplicate the API artifact and make the necessary changes without starting from scratch.You can create a duplicate of an API artifact by copying it within the same package or in a different integration package within the same SAP Integration Suite subscription.")
 
-[Policy Definition and Types of Policies Supported by Edge Integration Cell](policy-definition-and-types-of-policies-supported-by-edge-integration-cell-c744df5.md "You can define the behavior of an API by using policy steps.")
+[Policy Definition and Types of Policies](policy-definition-and-types-of-policies-c744df5.md "You can define the behavior of an API by using policy steps.")
 
 [Request Reply Step for API Artifact](request-reply-step-for-api-artifact-a0b3712.md "You can use this step to call an external receiver system in a synchronous step and get back a response.")
 

@@ -40,7 +40,7 @@ To know more about OAS 3.0 support in API Management, see [OpenAPI Specification
 
 ## Procedure
 
-1.  Log on to the Integration Suite.
+1.  Log on to SAP Integration Suite.
 
 2.  From the left navigation pane, choose *Design* \> *Integrations and APIs* to view the list of integration packages.
 
@@ -50,7 +50,7 @@ To know more about OAS 3.0 support in API Management, see [OpenAPI Specification
 
     The *Create API* dialog opens.
 
-5.  Select the Edge Integration Cell *Runtime Profile* and choose *Next*. This profile determines the Edge Integration Cell node on which you will create and process your API artifact.
+5.  Select the *Runtime Profile* and choose *Next*. This profile determines the runtime on which you will create and process your API artifact.
 
 6.  To import an API Definition, select *API Specification* from the given options and choose *Next*.
 

@@ -20,7 +20,7 @@ These details will be downloaded as a JSON file.
 
 ## Procedure
 
-1.  Log on to your Integration Suite .
+1.  Log on to SAP Integration Suite .
 
 2.  Choose *Design* \> *B2B Scenarios*
 

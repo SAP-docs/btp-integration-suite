@@ -42,7 +42,7 @@ The RFC destination configuration settings are used by the SAP JAVA Connector \(
 > ### Remember:  
 > -   The RFC adapter supports SAP NetWeaver 7.31 and higher.
 > 
-> -   The RFC adapter supports Synchronous RFC \(sRFC\) and Transactional RFC \(tRFC\).
+> -   The RFC adapter supports Synchronous RFC \(sRFC\) and transactional execution of function module \(can execute BAPI\_TRANSACTION\_COMMIT/BAPI\_TRANSACTION\_ROLLBACK\). tRFC is not supported in Cloud Foundry environment.
 > 
 > -   From RFC adapter version 1.2.0, function modules that contains "/" in their names are also supported. For these function modules you need to replace "/" with "\_-" \(underscore and hyphen\) in the input XML.
 > 

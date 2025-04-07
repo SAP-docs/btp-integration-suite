@@ -29,6 +29,6 @@ You need to have the*AuthGroup.Content.Admin* role collection assigned to you. A
     > ### Note:  
     > The APIs are located within the *Consumption Bundles*. A consumption bundle groups together a set of related APIs that can be accessed with the same credentials. You can select the consumption bundles to view the APIs contained within them. Furthermore, you can select individual APIs to access their details and documentation.
 
--   To create products, start by selecting a system from the *Business Systems* page. Then, choose the consumption bundle\(s\) that contain the APIs that you want to publish to the catalog. These consumption bundles can be published as products to make the APIs available in the catalog. You can easily view and manage the products you have created from the *Products* tab. For more information, see [Make APIs from Business Systems Available in Developer Hub](make-apis-from-business-systems-available-in-developer-hub-08aff91.md).
+-   To create products, start by selecting a system from the *Business Systems* page. Then, choose the consumption bundle\(s\) that contain the APIs that you want to publish to the catalog. These consumption bundles can be published as products to make the APIs available in the catalog. You can easily view and manage the products you have created from the *Products* tab. For more information, see [Discover and Publish APIs from Business Systems on Developer Hub](discover-and-publish-apis-from-business-systems-on-developer-hub-08aff91.md).
 
 

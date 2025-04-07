@@ -92,6 +92,75 @@ API Management
 </td>
 <td valign="top">
 
+Discover and Publish Events from Business Systems on Developer Hub 
+
+</td>
+<td valign="top">
+
+You can now add events discovered from business systems to products and make them publicly available by publishing the associated products on Developer Hub. For more information, see [Discover and Publish Events from Business Systems on Developer Hub](https://help.sap.com/docs/integration-suite/sap-integration-suite/discovering-events-from-business-systems-and-publishing-them-in-catalog?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-04-06
+
+</td>
+<td valign="top">
+
+2025-04-06
+
+</td>
+<td valign="top">
+
+2502
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Supported AsyncAPI Versions
 
 </td>

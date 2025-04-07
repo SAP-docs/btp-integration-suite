@@ -20,9 +20,9 @@ Configuring a message client is a two-step process. First, you create a service 
 
 Create a service instance:
 
-1.  In the SAP BTP cockpit, choose *Instances and Subscriptions* \> *Create*.
+1.  In the SAP BTP cockpit, in your subaccount, from the left panel, navigate to *Services*, then choose *Instances and Subscriptions* \> *Create*.
 
-2.  Select the service plan *SAP Integration Suite, Event Mesh*.
+2.  In the *New Instance or Subscription*dialog box, select the service plan *SAP Integration Suite, Event Mesh*.
 
 3.  Provide a name for the instance.
 

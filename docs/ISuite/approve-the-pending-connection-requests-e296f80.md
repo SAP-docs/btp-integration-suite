@@ -42,5 +42,5 @@ The following roles must be assigned to you:
 
 ## Results
 
-The connection has been set up between the Integration Suite API Management tenant and Developer Hub.
+The connection has been set up between the SAP Integration Suite API Management tenant and Developer Hub.
 

@@ -17,15 +17,15 @@ Enabling Content Transport involves the following major steps:
 
 You can follow one of the approaches to use the Content Agent Service:
 
--   Create a service instance of Content Agent Service – using which you trigger the transport from Integration Suite but you must create an additional destination in SAP BTP cockpit. See [Create Instance](https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/1f45ddc3d6194886802924068724b59f.html) and [Create Service Key](https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/c0ec2ba3016644a19cd6322fbc72ea2a.html).
+-   Create a service instance of Content Agent Service – using which you trigger the transport from SAP Integration Suite but you must create an additional destination in SAP BTP cockpit. See [Create Instance](https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/1f45ddc3d6194886802924068724b59f.html) and [Create Service Key](https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/c0ec2ba3016644a19cd6322fbc72ea2a.html).
 
--   Create a subscription of Content Agent Service – using which you trigger the transport from Content Agent Service web UI \(instead of Integration Suite UI\) while there's one less destination to be created. See [Subscribe to Content Agent Service](https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/fe2599a57535408ebf1596854fbe6043.html).
+-   Create a subscription of Content Agent Service – using which you trigger the transport from Content Agent Service web UI \(instead of SAP Integration Suite UI\) while there's one less destination to be created. See [Subscribe to Content Agent Service](https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/fe2599a57535408ebf1596854fbe6043.html).
 
     > ### Note:  
     > The Content Agent Service UI method works only if you use Cloud Transport Management as the transport mechanism.
 
 
-Irrespective of what choice you make, this action must be done in the SAP BTP subaccount where the source Integration Suite tenant is hosted.
+Irrespective of what choice you make, this action must be done in the SAP BTP subaccount where the source SAP Integration Suite tenant is hosted.
 
 
 

@@ -79,6 +79,169 @@ Patches for different components are associated with different major software ve
 
 
 
+## April 2025
+
+Software Increment: 2501
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.27.21
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Truncated message after GZIP flow step.
+-   Groovy metadata cache clearance.
+-   Integration flows failing during worker instance restart due to network issues impacting Audit Logger activation. The dependency causing errors has been removed to ensure smoother operations.
+-   Feature to cache the `KeyManagerin` OData V2 Receiver is reverted.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.63.45
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Truncated message after GZIP flow step.
+-   MPL Status for asynchronous messages.
+-   Exclusive queue-related fixes:
+    -   Reordering on reload.
+    -   Duplicate entries in the move messages dialog.
+    -   Issue with route generation when *Quality Of Service* type *Handled By Integration Flow* is selected.
+    -   An error message was added for long loading times.
+
+-   Deployment and staging of application `it-op-eic-admincockpit` on Ali Cloud tenants.
+-   Groovy metadata cache clearance.
+-   Integration flows failing during worker instance restart due to network issues impacting Audit Logger activation. The dependency causing errors has been removed to ensure smoother operations.
+-   Feature to cache the `KeyManagerin` OData V2 Receiver is reverted.
+-   Wrong claims in LLM-generated Script Optimization Report.
+-   Redacted strings showing in script optimization proposals.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+## March 2025
+
+Software Increment: 2501
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.27.16
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Security enhancements.
+-   Exchange headers are retained during exceptions, aligning functionality with Camel 2.x.
+-   Attachment content is consistently of type String in Camel 3, maintaining compatibility with Camel 2.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.63.39
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Retrieval of MPL Attachments through MPL OData APIs to 1000 items per request, ensuring more efficient data handling with the endpoint `/MessageProcessingLogs(<MPL ID>)/Attachments`.
+-   Security enhancements.
+-   Exchange headers are retained during exceptions, aligning functionality with Camel 2.x.
+-   Attachment content is consistently of type String in Camel 3, maintaining compatibility with Camel 2.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 ## March 2025
 
 Software Increment: 2413
@@ -120,7 +283,7 @@ Cloud Integration
 This patch fixes the following issues:
 
 -   PD usage in the mail receiver adapter for encryption.
--   Message Mapping, Value Mapping, Function Library, and Imported Archive remaining in the starting state by providing exception handling and ensuring accurate artifact status updates in the UI.
+-   Message Mapping, Value Mapping, Function Library, and Imported Archive stuck in the starting state by providing exception handling and ensuring accurate artifact status updates in the UI.
 
 
 
@@ -134,7 +297,7 @@ Cloud Integration
 </td>
 <td valign="top">
 
-6.62.56
+6.62.57
 
 </td>
 <td valign="top">
@@ -143,7 +306,7 @@ This patch fixes the following issues:
 
 -   PD usage in the mail receiver adapter for encryption.
 -   Frequent crashing issue of the IT-CO application caused by low disk space.
--   Message Mapping, Value Mapping, Function Library, and Imported Archive remaining in the starting state by providing exception handling and ensuring accurate artifact status updates in the UI.
+-   Message Mapping, Value Mapping, Function Library, and Imported Archive stuck in the starting state by providing exception handling and ensuring accurate artifact status updates in the UI.
 
 
 

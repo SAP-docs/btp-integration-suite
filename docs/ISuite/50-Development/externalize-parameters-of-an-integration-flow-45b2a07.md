@@ -14,6 +14,8 @@ The Externalization Parameters value field of an integration flow has been defin
 
 2.  **Configured Value:**The value configured from the configuration view is defined as the configured value of a parameter.
 
+3.  **Description:**The information about the parameter provided by the integration developer.
+
 
 > ### Note:  
 > Don't use the following characters while defining an externalization parameter:

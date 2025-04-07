@@ -2,9 +2,9 @@
 
 # Design
 
-Create artifacts in the SAP Integration Suite to fulfill your varied integration needs.
+Create artifacts in SAP Integration Suite to fulfill your varied integration needs.
 
-The *Design* section allows you create artifacts associated with the different capabilities of the SAP Integration Suite that you've chosen to activate. You can create the following artifacts:
+The *Design* section allows you create artifacts associated with the different capabilities of SAP Integration Suite that you've chosen to activate. You can create the following artifacts:
 
 
 <table>

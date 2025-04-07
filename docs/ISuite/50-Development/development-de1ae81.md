@@ -8,7 +8,7 @@ This section provides an overview of all the development-related aspects for the
 
 <a name="loiode1ae814218247c6bac4975cb486e431__section_Cloud_Integration"/>
 
-## Development for Cloud Integration
+## Development forCloud Integration
 
 Get an overview of roles, working environment, and tasks involved in managing integration content. Cloud Integration provides a set of tools and applications that help you perform end-to-end tasks on development and deployment, packaging and publishing, accessing, and editing the integration content.
 
@@ -354,9 +354,9 @@ Observe the status of your B2B interchanges.
 
 <a name="loiode1ae814218247c6bac4975cb486e431__section_Integration_Advisor"/>
 
-## Development for Integration Advisor
+## Development for SAP Integration Advisor
 
-Get information on how to use Integration Advisor. This includes information on how to manage licenses for type systems, message implementation guidelines, and mapping guidelines among others.
+Get information on how to use SAP Integration Advisor. This includes information on how to manage licenses for type systems, message implementation guidelines, and mapping guidelines among others.
 
 
 <table>

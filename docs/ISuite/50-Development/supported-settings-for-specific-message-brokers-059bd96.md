@@ -4,9 +4,9 @@
 
 Learn how to connect external message brokers using the AMQP adapter.
 
-You can use the AMQP sender and receiver adapter to connect Cloud Integration with various message brokers.
+You can use the AMQP sender and receiver adapter to connect SAP Cloud Integration with various message brokers.
 
-For more information on how to connect Cloud Integration with SAP message brokers, see:
+For more information on how to connect SAP Cloud Integration with SAP message brokers, see:
 
 -   [AMQP Sender for SAP Event Mesh](amqp-sender-for-sap-event-mesh-7d8a83f.md)
 

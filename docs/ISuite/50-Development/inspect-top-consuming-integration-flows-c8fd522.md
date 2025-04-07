@@ -23,6 +23,14 @@ You can change the displayed time period by selecting a different option in the 
 
 The total resource consumption is presented in a bar graph. The horizontal axis displays the names of the integration flows, while the vertical axis shows the percentage of total resource consumption over the selected time period.
 
+You can choose one of the bars to learn more about the consumption level of a specific resource. Depending on the resource type, you can see:
+
+-   **Usage relative to the entitlement.** This shows the maximum resource usage based on the resource's own entitlement.
+
+-   **Usage relative to other integration flows.**This indicates the usage level based on the total consumption of all integration flows.
+
+-   Maximum detected usage, duration, or time of the selected resource within the integration flow. The color of the value indicates whether the resource's entitlement was exceeded. If the consumption is at a critical level, it appears in orange or red. If the usage is within the given limit, it appears in green. If the value is in black, despite being high, it means there's no critical risk.
+
 > ### Note:  
 > The system reads the resource consumption every hour. This means that there can be a maximum lag of one hour between processing an integration flow with a certain transaction setting and displaying the latest integration flow usage in the *Inspect* feature.
 

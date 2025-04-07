@@ -369,7 +369,7 @@ If the value \* is entered, **all** the HTTP response header values are converte
 </td>
 <td valign="top">
 
-The adapter makes an internal $metadata call during the message processing, before the actual endpoint call. Not all headers or query parameters are passed to the $metadata call. If your service needs some headers or parameters, provide the same in the request headers and query parameters fields.
+The adapter makes an internal $metadata call during the message processing, before the actual endpoint call. Not all headers or query parameters are passed to the $metadata call. If your service needs some headers or parameters, provide the same in the request headers and query parameters fields. However, the custom parameters configured for $metadata call will also be appended to the service document call.
 
 *Request Headers* – provide a pipe-separated \(|\) list of HTTP request headers to be sent to the $metadata call.
 

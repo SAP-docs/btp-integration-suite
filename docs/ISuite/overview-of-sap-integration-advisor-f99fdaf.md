@@ -4,7 +4,7 @@
 
 Get an overview of SAP Integration Advisor and its components.
 
-Integration Advisor is a cloud application that simplifies and streamlines the implementation flow of your B2B/A2A and B2G integration process. The crowd-based machine learning approach helps you create integration content easily. Tests indicate that you can speed up the content creation to deployment process by almost 60% using Integration Advisor. You can also manage and share your content, and leverage the content shared by other users of the application with similar business needs.
+SAP Integration Advisor is a cloud application that simplifies and streamlines the implementation flow of your B2B/A2A and B2G integration process. The crowd-based machine learning approach helps you create integration content easily. Tests indicate that you can speed up the content creation to deployment process by almost 60% using SAP Integration Advisor. You can also manage and share your content, and leverage the content shared by other users of the application with similar business needs.
 
 This is the landing page of the application:
 
@@ -30,7 +30,7 @@ To know more, see [Library of Type Systems](50-Development/library-of-type-syste
 
 ## Custom Type Systems
 
-The library of custom type systems allows you to upload custom messages – this enables you to create MIGs and MAGs based on your own message structures. Use cases for this could be proprietary messages, standard messages extended by you and messages from B2B standards not available in the Integration Advisor. With this feature, you can:
+The library of custom type systems allows you to upload custom messages – this enables you to create MIGs and MAGs based on your own message structures. Use cases for this could be proprietary messages, standard messages extended by you and messages from B2B standards not available in the SAP Integration Advisor. With this feature, you can:
 
 -   Upload custom interface xsd files
 
@@ -48,7 +48,7 @@ To know more, see [Custom Type Systems](50-Development/custom-type-systems-884bb
 
 Message implementation guideline, also referred to as MIG, is used as the source or target in a mapping guideline \(MAG\) of SAP Integration Advisor. This is created using one of the messages in the type system that is relevant to your scenario as the template.
 
-The MIG contains all the information for implementing a customized message interface. Integration Advisor uses the message in a type system as a starting point to ensure that you don't have to refer to any additional documents to implement the interface. By providing a MIG, you ensure that all users who are involved in the process of implementing the interface have a clear understanding of the guidelines.
+The MIG contains all the information for implementing a customized message interface. SAP Integration Advisor uses the message in a type system as a starting point to ensure that you don't have to refer to any additional documents to implement the interface. By providing a MIG, you ensure that all users who are involved in the process of implementing the interface have a clear understanding of the guidelines.
 
 Here are the next steps for you:
 

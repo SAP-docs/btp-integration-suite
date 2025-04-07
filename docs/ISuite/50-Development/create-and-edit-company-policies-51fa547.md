@@ -134,12 +134,12 @@ Some company policies are **predelivered by SAP**, as signified in the *Created 
         </td>
         <td valign="top">
         
-        `is`, `is all of`
+        `is`, `is all of`, `exists`
         
         </td>
         <td valign="top">
         
-        Enter one \(`is`\) or multiple \(`is all of`\) contract references.
+        Enter one \(`is`\) or multiple \(`is all of`\) contract references. If you're using the operator `exists`, the value is left empty to show that a contract reference must be present, no matter which.
         
         </td>
         </tr>

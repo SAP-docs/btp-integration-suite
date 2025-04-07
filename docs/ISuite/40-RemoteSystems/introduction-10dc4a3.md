@@ -1387,6 +1387,22 @@ See: [Configure the Kafka Receiver Adapter](../50-Development/configure-the-kafk
 <tr>
 <td valign="top">
 
+*LeanIX*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to connect to SAP LeanIX.
+
+See: [LeanIX Receiver Adapter](../50-Development/leanix-receiver-adapter-e49c1de.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Mail Sender for IMAP*
 
 Sender adapter
@@ -1484,6 +1500,38 @@ Receiver adapter
 Connects SAP Integration Suite to Microsoft Dynamics Customer Relationship Management \(CRM\).
 
 See: [Microsoft Dynamics CRM Receiver Adapter](../50-Development/microsoft-dynamics-crm-receiver-adapter-ee724c8.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft OneDrive* 
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to a remote system using HTTP protocol.
+
+See: [Configure the Microsoft OneDrive Sender Adapter](../50-Development/configure-the-microsoft-onedrive-sender-adapter-0724136.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft OneDrive* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to a remote system using HTTP protocol.
+
+See: [Configure the Microsoft OneDrive Receiver Adapter](../50-Development/configure-the-microsoft-onedrive-receiver-adapter-4158749.md)
 
 </td>
 </tr>

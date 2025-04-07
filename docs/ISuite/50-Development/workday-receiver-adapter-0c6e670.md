@@ -75,7 +75,7 @@ Specify the ID of your Workday Tenant. For example: myTenant1.
 </td>
 <td valign="top">
 
-Specify the name of the **User Credentials** artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Workday. This property enables the system to fetch the User Credential security material deployed in your Cloud Integration tenant.
+Specify the name of the **User Credentials** artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Workday. This property enables the system to fetch the User Credential security material deployed in your SAP Cloud Integration tenant.
 
 </td>
 </tr>

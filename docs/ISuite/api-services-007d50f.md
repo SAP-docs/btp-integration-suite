@@ -2,7 +2,7 @@
 
 # API Services
 
-From API Management, a variety of APIs are offered as services in specific use cases and workflows. You can explore them and try it out in the SAP Business Accelerator Hub in the following url: `http://api.sap.com`.
+From API Management, a variety of APIs are offered as services in specific use cases and workflows. You can explore them and try it out in theSAP Business Accelerator Hub in the following url: `http://api.sap.com`.
 
 
 <table>
@@ -21,7 +21,7 @@ Description
 <tr>
 <td valign="top">
 
-Integration Suite 
+SAP Integration Suite 
 
 </td>
 <td valign="top">
@@ -69,6 +69,11 @@ In the API Portal, at the top-right corner, choose *Navigation Links* \(![](imag
 For more information, see [SAP API Management, 1.6.0 Client SDK.](https://help.sap.com/doc/sap-api-management-client-sdk/Cloud/en-US/ClientSDK_1_6_0.pdf).
 
 You can also download the package from [https://int.repositories.cloud.sap/artifactory/deploy-releases/com/sap/apimgmt/client/sdk/apim-client-sdk/1.6.0/apim-client-sdk-1.6.0.zip](https://int.repositories.cloud.sap/artifactory/deploy-releases/com/sap/apimgmt/client/sdk/apim-client-sdk/1.6.0/apim-client-sdk-1.6.0.zip). On navigating to this link, select the latest version and choose *View All*.
+
+> ### Note:  
+> We will always offer support for the latest version of the SDK.
+
+
 
 </td>
 </tr>

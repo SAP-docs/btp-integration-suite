@@ -39,6 +39,10 @@ After subscribing to the SAP Integration Suite, and activating the OData Provisi
 2.  From the left navigation panel, navigate to *Services* \> *Instances and Subscriptions*.
 3.  Choose *Create*.
 4.  Choose *Serverless Runtime* \(xfs-runtime\) as the service, and then choose the odpruntime plan and Cloud Foundry space.
+
+    > ### Remember:  
+    > If you already have a service instance of the Serverless Runtime \(xfs-runtime\) created under the default plan, please continue to use that same instance.
+
 5.  Enter an instance name, then choose *Next*.
 6.  Choose *Create*.
 

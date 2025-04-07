@@ -22,7 +22,7 @@ API proxies are the fundamental components of the API Management feature in SAP 
 
 There are two ways to create an API proxy for an existing system or service API:
 
--   You can directly provide the complete service URL when creating the API proxy. For more information, see[Create an API Proxy by Providing a Direct Target Endpoint URL](50-Development/create-an-api-proxy-by-providing-a-direct-target-endpoint-url-d0f5087.md).
+-   You can directly provide the complete service URL when creating the API proxy. For more information, see [Create an API Proxy by Providing a Direct Target Endpoint URL](50-Development/create-an-api-proxy-by-providing-a-direct-target-endpoint-url-d0f5087.md).
 
 -   Alternatively, you can first set up a system descriptor \(host, port\) as an API provider and then provide the service path when creating the API proxy. For more information, see [Create an API Proxy by Referring to an API Provider System](50-Development/create-an-api-proxy-by-referring-to-an-api-provider-system-84628b9.md)
 
@@ -69,7 +69,7 @@ These steps and variations allow for the effective implementation of an API prox
 
 ### Creating an API Proxy with principal propagation to an on-premise SAP \(OData\) system
 
-The ability to create an API proxy for an on-premise SAP endpoint and to propagate the identity of the caller \(principal propagation\) to this on-premise system is an important feature of API Managementin Integration Suite. To address this challenge, the following steps need to be taken:
+The ability to create an API proxy for an on-premise SAP endpoint and to propagate the identity of the caller \(principal propagation\) to this on-premise system is an important feature of API Management SAP Integration Suite. To address this challenge, the following steps need to be taken:
 
 1.  Set up a cloud connector from your account to the on-premise system, using either "X.509 certificate" or "certificate" as the principal type.
 

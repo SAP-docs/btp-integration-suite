@@ -2,7 +2,20 @@
 
 # Service Descriptor Syntax
 
-You can maintain a JSON file with parameters describing the attributes of the service instance. The JSON file is called service descriptor. In the service descriptor, you need to enter your message client name, the namespace, and maintain the options to define the access channel and rules for your message client.
+The guidelines and syntax for the service descriptor JSON file that can be used to describe the attributes of the service instance created for Event Mesh.
+
+
+
+<a name="loiob70eaadbc5aa4660ac79ca7f9d0c9a04__section_dnm_bnr_s2c"/>
+
+## Context
+
+Service instance creation in Event Mesh is needed for access to the message client. Creation can happen:
+
+-   In SAP BTP cockpit. See [Configure A Message Client](configure-a-message-client-867c517.md)
+-   Using the Cloud Foundry Command Line Interface. See [Creating an Event Mesh Message Client Using the Cloud Foundry Command Line Interface](creating-an-event-mesh-message-client-using-the-cloud-foundry-command-line-interface-23df43b.md)
+
+You can maintain a JSON file with parameters describing the attributes of this service instance. The JSON file is called service descriptor. In the service descriptor, you need to enter your message client name, the namespace, and maintain the options to define the access channel and rules for your message client.
 
 
 
@@ -25,7 +38,6 @@ You can use the following attributes in your service descriptor:
 > ### Sample Code:  
 > ```
 > {
->     
 >     "rules": {
 >         "topicRules": {
 >             "publishFilter": [
@@ -43,14 +55,15 @@ You can use the following attributes in your service descriptor:
 >                 "${namespace}/*"
 >             ]
 >         }
->     }, "resources" : {
->     "units" : "10"
->   }
-> },
+>     },
+>     "resources": {
+>         "units": "10"
+>     },
 >     "version": "1.1.0",
 >     "emname": "em-healthcheck",
 >     "namespace": "sap/em/opshealthcheck"
 > }
+> 
 > ```
 
 

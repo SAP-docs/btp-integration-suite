@@ -6,6 +6,67 @@ This topic provides information on patch releases for API Management that are pr
 
 
 
+<a name="loio6ddd927cbeaa42e384dc903e6002e269__section_swg_3z2_q2c"/>
+
+## March 2025
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.179.4
+
+</td>
+<td valign="top">
+
+Newly onboarded application developers on Neo could not create applications due to an issue with the property file loading in API portal. This patch restores the ability for developers to create applications.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.180
+
+</td>
+<td valign="top">
+
+Customers on the Neo platform encountered a problem where virtual host requests were not being processed. This was due to the PUT call, which is used to mark the status of these requests as "COMPLETE," taking an indefinite amount of time to execute. We have identified and resolved the issue with the PUT call that was causing delays in marking virtual host requests as completed.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio6ddd927cbeaa42e384dc903e6002e269__section_g1l_fv4_4dc"/>
 
 ## December 2024

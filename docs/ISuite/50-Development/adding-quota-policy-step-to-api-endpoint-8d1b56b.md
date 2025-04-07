@@ -21,9 +21,7 @@ Adding Quota policy step to an API artifact for traffic management.
 
 ## Context
 
-After you have setup [Edge Integration Cell](https://help.sap.com/docs/integration-suite/sap-integration-suite/setting-up-and-managing-edge-integration-cell) and enabled both the capabilities mentioned above, you will have option to [Add an API Artifact](https://help.sap.com/docs/integration-suite/sap-integration-suite/add-api-artifact).
-
-You can define the number of request messages an application can submit to an API endpoint over a given period of time by adding a quota policy to the API artifact.
+Define the number of request messages an application can submit to an API endpoint over a given period of time by adding a quota policy to the API artifact.
 
 
 
@@ -31,7 +29,7 @@ You can define the number of request messages an application can submit to an AP
 
 ## Procedure
 
-1.  Log on to the Integration Suite.
+1.  Log on to SAP Integration Suite.
 
 2.  From the left navigation pane, choose *Design* \> *Integrations and APIs* to view the list of integration packages.
 

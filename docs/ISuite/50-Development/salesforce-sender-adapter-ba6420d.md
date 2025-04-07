@@ -69,7 +69,7 @@ Specifies the recipient's endpoint URL, the Salesforce login base URL, for user 
 </td>
 <td valign="top">
 
-Specifies the name of the *User Credentials* artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Salesforce. This property enables the system to fetch the *User Credentials* security material deployed on Cloud Integration.
+Specifies the name of the *User Credentials* artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Salesforce. This property enables the system to fetch the *User Credentials* security material deployed on SAP Cloud Integration.
 
 </td>
 </tr>
@@ -83,7 +83,7 @@ Specifies the name of the *User Credentials* artifact that contains the credenti
 </td>
 <td valign="top">
 
-Specifies the name of the *Secure Parameter* artifact that contains the security token needed to connect to Salesforce. This property enables the system to fetch the Security Token from the security material deployed on Cloud Integration. This field can be omitted if your IP has been whitelisted on Salesforce
+Specifies the name of the *Secure Parameter* artifact that contains the security token needed to connect to Salesforce. This property enables the system to fetch the Security Token from the security material deployed on SAP Cloud Integration. This field can be omitted if your IP has been whitelisted on Salesforce
 
 </td>
 </tr>
@@ -99,7 +99,7 @@ Specifies the name of the *Secure Parameter* artifact that contains the security
 
 ​
 
-Specifies the name of the *OAuth Client Credentials* artifact that contains the Salesforce’s OAuth consumer key-client secret pair. This property enables the system to retrieve the OAuth security material deployed on Cloud Integration.
+Specifies the name of the *OAuth Client Credentials* artifact that contains the Salesforce’s OAuth consumer key-client secret pair. This property enables the system to retrieve the OAuth security material deployed on SAP Cloud Integration.
 
 </td>
 </tr>
@@ -206,7 +206,7 @@ Specifies the polling interval expressed in milliseconds. The polling interval a
 
 Select this option to treat errors while connecting to Salesforce as events.
 
-*Process Errors as an Event* creates message exceptions in Cloud Integration for each connection error during Salesforce Streaming. Errors that prevent Cloud Integration from picking up events via streaming are raised as a message exception in Cloud Integration. An example exception message during streaming is `Organization concurrent user limit exceeded`.
+*Process Errors as an Event* creates message exceptions in SAP Cloud Integration for each connection error during Salesforce Streaming. Errors that prevent Cloud Integration from picking up events via streaming are raised as a message exception in Cloud Integration. An example exception message during streaming is `Organization concurrent user limit exceeded`.
 
 </td>
 </tr>
@@ -269,15 +269,15 @@ There are 3 possible settings:
 
 -   *Events from latest position \(-1\)* 
 
-    Enables Cloud Integration to receive any new events. It represents `Replay ID` value `-1`. Note that the integration flow needs to be deployed and running for any new event to be received. Any event generated while the integration flow is not available will be missed.
+    Enables SAP Cloud Integration to receive any new events. It represents `Replay ID` value `-1`. Note that the integration flow needs to be deployed and running for any new event to be received. Any event generated while the integration flow is not available will be missed.
 
 -   *Events from earliest position \(-2\)*
 
-    Enables Cloud Integration to receive all events that have not yet expired. It represents `Replay ID` value `-2`.
+    Enables SAP Cloud Integration to receive all events that have not yet expired. It represents `Replay ID` value `-2`.
 
 -   *Events from a specific position*
 
-    This option gives the possibility to specify any `Replay ID`. If chosen, Cloud Integration receives all events that were created after the specified Replay ID. If the `Replay ID` is `5`, a message containing Replay Id 6, 7, 8, and so forth, is retrieved.
+    This option gives the possibility to specify any `Replay ID`. If chosen, SAP Cloud Integration receives all events that were created after the specified Replay ID. If the `Replay ID` is `5`, a message containing Replay Id 6, 7, 8, and so forth, is retrieved.
 
 
 

@@ -37,6 +37,20 @@ You can then import these runtime artifacts in either of these integration solut
 
 
 
+<a name="loio5ab4cfe5ec724adda074c9773ea6b895__section_kzc_1zj_32c"/>
+
+## How to Export XSD File from EDI Type System
+
+You can now directly export Message Types of EDI Type Systems as an XSD file, eliminating the need to create a Message Implementation Guideline \(MIG\). This streamlined process saves time and effort. Follow the procedure below to know more:
+
+1.  Login to your application.
+2.  Navigate to the *Type Systems* tab from the left pane.
+3.  Open the Type System containing the Message Type you want to export as an XSD file.
+4.  Navigate to the *Messages* tab and open the specific version of the message type you want to export .
+5.  Choose *Download XSD*. This will now download this message type in an XSD file format.
+
+
+
 <a name="loio5ab4cfe5ec724adda074c9773ea6b895__section_ggv_f2f_zhb"/>
 
 ## How to Export Runtime Artifacts?

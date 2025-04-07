@@ -1,6 +1,6 @@
 <!-- loio08aff917402e4abd8dba2d03e369c12e -->
 
-# Make APIs from Business Systems Available in Developer Hub
+# Discover and Publish APIs from Business Systems on Developer Hub
 
 To make APIs publicly available in the catalog, organize and categorize them by creating dedicated products. First, discover the APIs from various business systems. Then, add these discovered APIs to a product and publish the associated product in the catalog.
 

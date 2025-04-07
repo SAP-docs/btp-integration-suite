@@ -1,6 +1,6 @@
 <!-- loioc744df5a043f49059e8c224240eb51e5 -->
 
-# Policy Definition and Types of Policies Supported by Edge Integration Cell
+# Policy Definition and Types of Policies
 
 You can define the behavior of an API by using policy steps.
 
@@ -36,7 +36,7 @@ Important Notes
 </th>
 </tr>
 <tr>
-<td valign="top" rowspan="3">
+<td valign="top" rowspan="4">
 
 Security Policy
 
@@ -90,6 +90,23 @@ JSON Threat Protection
 <td valign="top">
 
 Minimizes the risk posed by content-level attacks by enabling specific limits on various JSON structures, such as arrays and strings. For more information, see [JSON Threat Protection](json-threat-protection-c4991a6.md).
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Validation
+
+</td>
+<td valign="top">
+
+The API validation policy enables you to validate incoming request messages against an OpenAPI 3.0 Specification. For more information, see [API Validation](api-validation-02ff41b.md).
 
 </td>
 <td valign="top">
@@ -163,7 +180,7 @@ The IP filter policy allows or denies calls from specific IP addresses or addres
 
 [Adding an API Artifact](adding-an-api-artifact-c2fe62c.md "Add an API artifact to an package.")
 
-[Copying an API Artifact](copying-an-api-artifact-820c9e8.md "You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API but with some modifications or variations. The copy feature allows you to quickly duplicate the API artifact and make the necessary changes without starting from scratch.You can create a duplicate of an API artifact by copying it within the same package or in a different integration package within the same Integration Suite subscription.")
+[Copying an API Artifact](copying-an-api-artifact-820c9e8.md "You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API but with some modifications or variations. The copy feature allows you to quickly duplicate the API artifact and make the necessary changes without starting from scratch.You can create a duplicate of an API artifact by copying it within the same package or in a different integration package within the same SAP Integration Suite subscription.")
 
 [Request Reply Step for API Artifact](request-reply-step-for-api-artifact-a0b3712.md "You can use this step to call an external receiver system in a synchronous step and get back a response.")
 

@@ -429,8 +429,6 @@ After you've imported the collection *Partner Directory Example Integration Flow
 
 The collection contains 2 folder structures for the different environments \(Cloud Foundry and Neo\).
 
-![](images/696aa291b22443a09bef0e5f11248b5a.image)
-
 Each environment-specific folder contains the following sub folders.
 
 -   Folders to initially create Partner Directory entities

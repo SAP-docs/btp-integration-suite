@@ -17,6 +17,13 @@ Use SAP Master Data Integration \(MDI\) receiver adapter to synchronize your mas
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 > ### Note:  
+> This adapter is available on SAP Business Accelerator Hub.
+> 
+> For more information, see [Consuming Integration Adapters from SAP Business Accelerator Hub](consuming-integration-adapters-from-sap-business-accelerator-hub-b9250fb.md).
+> 
+> The availability of the adapter is dependent on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://launchpad.support.sap.com/#/notes/2903776) and [3188446](https://launchpad.support.sap.com/#/notes/3188446).
+
+> ### Note:  
 > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 
@@ -31,7 +38,7 @@ The adapter does two actions: submit change requests to master data objects in S
 
 -   Send queries to SAP MDI to know your master data.
 
--   Leverage message mapping in Cloud Integration to map data from third-party applications to ODM equivalent data and send the same to SAP MDI.
+-   Leverage message mapping in SAP Cloud Integration to map data from third-party applications to ODM equivalent data and send the same to SAP MDI.
 
 
 > ### Remember:  
@@ -172,7 +179,7 @@ Select one of the following values:
     > ### Remember:  
     > The delta token is specific to the MDI service instance. After executing the integration flow for MDI service instance A, if you change the *Address* to connect MDI service B, the events API fails. This failure happens because the persisted delta token to specific to MDI service instance A and invalid for service instance B.
     > 
-    > In such cases, you must first delete the persisted delta token using Cloud Integration's [public API](https://api.sap.com/api/IntegrationContent/resource/MDI_Delta_Token) for MDI.
+    > In such cases, you must first delete the persisted delta token using SAP Cloud Integration's [public API](https://api.sap.com/api/IntegrationContent/resource/MDI_Delta_Token) for MDI.
 
 
 

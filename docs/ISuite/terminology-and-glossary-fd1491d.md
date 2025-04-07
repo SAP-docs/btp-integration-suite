@@ -5,7 +5,7 @@
 **Related Information**  
 
 
-[Terminology & Glossary for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/9c221b48799a4ce59367b0e3367f5a8f.html "") :arrow_upper_right:
+[Terminology & Glossary for SAP Integration Advisor](terminology-glossary-for-sap-integration-advisor-9c221b4.md "")
 
 [Glossary for SAP Trading Partner Management](glossary-for-sap-trading-partner-management-81860a4.md "")
 

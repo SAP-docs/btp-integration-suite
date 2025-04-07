@@ -6,7 +6,7 @@
 
 Simplify and accelerate enterprise integration. 
 
-SAP Integration Suite is an industry-leading and enterprise-grade integration platform-as-a-service that helps businesses seamlessly connect and integrate their applications, data, and processes within their organization and beyond. A starter collection of pre-built, best-practice integration packs helps integration developers achieve faster time to value. Execute the integration content on the Business Technology Platform or within your private landscape.
+SAP Integration Suite is an industry-leading and enterprise-grade integration platform-as-a-service that helps businesses seamlessly connect and integrate their applications, data, and processes within their organization and beyond. A starter collection of pre-built, best-practice integration packs helps integration developers achieve faster time to value. Execute the integration content on the SAP Business Technology Platform or within your private landscape.
 
 > ### Tip:  
 > The English version of this guide is open for contributions and feedback using GitHub. This allows you to get in contact with responsible authors of SAP Help Portal pages and the development team to discuss documentation-related issues. To contribute to this guide, or to provide feedback, choose the corresponding option on SAP Help Portal:

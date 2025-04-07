@@ -448,7 +448,7 @@ When this option is selected, the polling process is performed on a single worke
 > 
 > It is important to know that:
 > 
-> -   The SFTP server provides the files in an order that is not controlled by Cloud Integration.
+> -   The SFTP server provides the files in an order that is not controlled by SAP Cloud Integration.
 > 
 > -   The order of messages is only maintained per worker.
 > 
@@ -557,7 +557,7 @@ The system uses locks to ensure that each file from the SFTP server is only proc
 </td>
 <td valign="top">
 
-Specify how long to wait before trying to process the file again in the event of a Cloud Integration outage. If it takes a very long time to process the scenario, you may need to increase the timeout to avoid parallel processing of the same file. This value should be higher than the processing time required for the number of messages specified by *Max. Messages per Poll*.
+Specify how long to wait before trying to process the file again in the event of SAP Cloud Integration outage. If it takes a very long time to process the scenario, you may need to increase the timeout to avoid parallel processing of the same file. This value should be higher than the processing time required for the number of messages specified by *Max. Messages per Poll*.
 
 Default: `15`
 
@@ -635,7 +635,7 @@ You can select one of the following options:
 
 -   *Keep File and Mark as Processed in Idempotent Repository*: Prevents a file from being consumed twice. For that purpose, an idempotent repository is activated.
 
-    The idempotent repository contains information about files already been consumed from the SFTP server. Being stored in the idempotent repository, a file can be identified by the file name. When Cloud Integration tries to process the file, the system can detect if the file has already been consumed \(based on its idempotent repository entry\) and that way can prevent it from being consumed a second time from the SFTP server.
+    The idempotent repository contains information about files already been consumed from the SFTP server. Being stored in the idempotent repository, a file can be identified by the file name. When SAP Cloud Integration tries to process the file, the system can detect if the file has already been consumed \(based on its idempotent repository entry\) and that way can prevent it from being consumed a second time from the SFTP server.
 
     Select this option for SFTP servers that do not allow deletion or moving of files, but the files are to be read only once.
 

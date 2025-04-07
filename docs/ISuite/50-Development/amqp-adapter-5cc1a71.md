@@ -2,13 +2,13 @@
 
 # AMQP Adapter
 
-In many integration scenarios, messages or events have to be exchanged between applications or systems via message brokers. With the Advanced Message Queuing Protocol \(AMQP\) adapter, SAP Cloud Integration can be used as a provider or a consumer of such messages or events. Cloud Integration can connect to external message brokers using the AMQP protocol, consume messages or events using the AMQP sender adapter, or store messages or events in the message broker using the AMQP receiver adapter.
+In many integration scenarios, messages or events have to be exchanged between applications or systems via message brokers. With the Advanced Message Queuing Protocol \(AMQP\) adapter, SAP Cloud Integration can be used as a provider or a consumer of such messages or events. SAP Cloud Integration can connect to external message brokers using the AMQP protocol, consume messages or events using the AMQP sender adapter, or store messages or events in the message broker using the AMQP receiver adapter.
 
 > ### Note:  
 > Note that customer-specific headers with prefix JMS aren’t allowed. These headers aren’t forwarded by the message brokers.
 
 > ### Note:  
-> Queues, topics, and messages can only be created and monitored by using tools provided by the message broker provider. Those monitors aren’t integrated into Cloud Integration. In Cloud Integration, the integration flows using the AMQP adapter are monitored and the messages are sent to or consumed from the message broker.
+> Queues, topics, and messages can only be created and monitored by using tools provided by the message broker provider. Those monitors aren’t integrated into SAP Cloud Integration. In SAP Cloud Integration, the integration flows using the AMQP adapter are monitored and the messages are sent to or consumed from the message broker.
 
 **Related Information**  
 

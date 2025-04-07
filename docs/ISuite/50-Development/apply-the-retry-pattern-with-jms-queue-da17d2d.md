@@ -82,7 +82,7 @@ To configure the retry behavior, the JMS sender adapter provides a set of attrib
     > This attribute is only available when the *Non-Exclusive* access type is selected.
 
 
-![](images/JMS_Sender_Adapter_Retry_6934cb9.png)
+![Screenshot of the attribute options screen under Connection.](images/JMS_connection_configuration_128756b.png)
 
 **Related Information**  
 

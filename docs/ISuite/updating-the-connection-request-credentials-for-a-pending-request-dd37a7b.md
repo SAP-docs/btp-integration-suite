@@ -2,7 +2,7 @@
 
 # Updating the Connection Request Credentials for a Pending Request
 
-Update the credentials you've used to establish a connection between the Integration Suite API Management tenant and Developer Hub.
+Update the credentials you've used to establish a connection between the SAP Integration Suite API Management tenant and Developer Hub.
 
 
 
@@ -12,9 +12,9 @@ Update the credentials you've used to establish a connection between the Integra
 
 -   Only users who have submitted a connection request and have the AuthGroup.APIPortalRegistration role assigned to them can edit the credentials.
 
--   To update the Integration Suite API Management tenant access credentials, you must first generate it. To generate the credentials from the Integration Suite API Management tenant, you must have the *APIPortal. Administrator* role assigned to you.
+-   To update the SAP Integration Suite API Management tenant access credentials, you must first generate it. To generate the credentials from the SAP Integration Suite API Management tenant, you must have the *APIPortal. Administrator* role assigned to you.
 
-    1.  Log on to Integration Suite.
+    1.  Log on to SAP Integration Suite.
 
     2.  Choose the navigation icon on the left and choose *Settings* \> *APIs*.
 
@@ -33,7 +33,7 @@ Update the credentials you've used to establish a connection between the Integra
 
 ## Context
 
-The credentials required to access the Integration Suite API Management tenant are shared during the connection request process.
+The credentials required to access the SAP Integration Suite API Management tenant are shared during the connection request process.
 
 If you encounter one of the following situations when your connection request is in the pending request state, you have to update the credentials:
 
@@ -54,7 +54,7 @@ If you encounter one of the following situations when your connection request is
 
 3.  Go to the *Actions* column of the connection request that you want to edit and choose *Edit Credentials*.
 
-4.  On the *Edit Credentials for <API Portal Alias Name \>* popup, enter the mandatory *\*API Portal Access Credentials* that you copied earlier from the Integration Suite API Management tenant.
+4.  On the *Edit Credentials for <API Portal Alias Name \>* popup, enter the mandatory *\*API Portal Access Credentials* that you copied earlier from the SAP Integration Suite API Management tenant.
 
     Sample credentials:
 

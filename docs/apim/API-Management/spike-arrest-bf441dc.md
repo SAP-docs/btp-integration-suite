@@ -354,7 +354,7 @@ Boolean
 </td>
 <td valign="top">
 
-Distributes your Spike Arrest count across Message Processors \(MPs\) when using auto-scalin groups.
+Distributes your Spike Arrest count across Message Processors \(MPs\) when using auto-scaling groups.
 
 > ### Sample Code:  
 > ```

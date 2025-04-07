@@ -47,9 +47,9 @@ Your global account administrator is responsible for configuring the Graph entit
 
     1.  Choose one or more of the following plans:
 
-        -   *Process Integration Runtime* for business data graph consumption
+        -   *api* for business data graph consumption
 
-        -   *configuration* to configure business data graphs using the Graph Configuration API
+        -   *configuration* to configure business data graphs using the Graph Configuration API.
 
 
     2.  Choose *Add Service Plan*.
@@ -57,8 +57,6 @@ Your global account administrator is responsible for configuring the Graph entit
     3.  Choose *Save*.
 
 
-
-For more information on how to create a *Process Integration Runtime* instance, see [Authentication](https://help.sap.com/docs/integration-suite/sap-integration-suite/authentication-fa6eec4f9ffc45aa89f8a2155b855ca4).
 
 
 

@@ -19,7 +19,7 @@ Create new Data Type and Message Type artifacts or import from the Enterprise Se
 
 ## Prerequisites
 
-You’ve created an integration package and opened it in edit mode. For more information, see [Packaging Integration Content in Integration Suite](packaging-integration-content-in-integration-suite-89da0a2.md).
+You’ve created an integration package and opened it in edit mode. For more information, see [Packaging Integration Content in SAP Integration Suite](packaging-integration-content-in-sap-integration-suite-89da0a2.md).
 
 
 
@@ -46,7 +46,7 @@ You’ve created an integration package and opened it in edit mode. For more inf
 
 ## Prerequisites
 
--   You’ve created an integration package and opened it in edit mode. For more information, see [Packaging Integration Content in Integration Suite](packaging-integration-content-in-integration-suite-89da0a2.md).
+-   You’ve created an integration package and opened it in edit mode. For more information, see [Packaging Integration Content in SAP Integration Suite](packaging-integration-content-in-sap-integration-suite-89da0a2.md).
 -   You've configured connection to ES Repository. For more information, see [Configuring Connectivity to an SAP Process Orchestration System](IntegrationSettings/configuring-connectivity-to-an-sap-process-orchestration-system-8c36fd2.md).
 
 

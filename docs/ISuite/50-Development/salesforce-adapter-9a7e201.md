@@ -2,7 +2,7 @@
 
 # Salesforce Adapter
 
-The Salesforce sender adapter enables a Cloud Integration tenant to accelerate the implementation time and reduce the complexity of connecting and retrieving events from Salesforce.
+The Salesforce sender adapter enables a SAP Cloud Integration tenant to accelerate the implementation time and reduce the complexity of connecting and retrieving events from Salesforce.
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:

@@ -207,13 +207,13 @@ Select the authentication method the message broker supports. *SASL* is selected
 
 -   *OAuth2 Client Credentials* \(only when *WebSocket* has been selected for *Transport Protocol* while creating the connection\)
 
-    Select to use OAuth 2.0 client credentials grant. At runtime, Cloud Integration gets access to the protected resources in two steps: After presenting a set of client credentials, Cloud Integration fetches an access token from a token service. In a subsequent step, Cloud Integration uses the access token to get access to the protected resources in the connected system.
+    Select to use OAuth 2.0 client credentials grant. At runtime, SAP Cloud Integration gets access to the protected resources in two steps: After presenting a set of client credentials, SAP Cloud Integration fetches an access token from a token service. In a subsequent step, SAP Cloud Integration uses the access token to get access to the protected resources in the connected system.
 
     More information: [OAuth 2.0 Client Credentials Grant](../40-RemoteSystems/oauth-2-0-3823134.md#loio6316af5a7f2c4f3e870a997fd2d3e04e)
 
 -   *Client Certificate* \(only when *TCP* has been selected for *Transport Protocol* while creating the connection\).
 
-    At runtime, Cloud Integration authenticates itself against the connected system using a client certificate.
+    At runtime, SAP Cloud Integration authenticates itself against the connected system using a client certificate.
 
     It's a prerequisite that the required key pair is installed and added to a keystore. This keystore has to be deployed on the related tenant. The receiver side has to be configured appropriately.
 
@@ -261,7 +261,7 @@ Alias to identify the private key in the keystore used for client certificate au
 </td>
 <td valign="top">
 
-Specifies whether the Cloud Integration AMQP channel ignores the reply-to header in messages. If selected, Cloud Integration doesn’t send a reply back to the queue specified in the reply-to header of a received message.
+Specifies whether the SAP Cloud Integration AMQP channel ignores the reply-to header in messages. If selected, SAP Cloud Integration doesn’t send a reply back to the queue specified in the reply-to header of a received message.
 
 This parameter is deselected by default.
 

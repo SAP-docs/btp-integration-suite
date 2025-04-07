@@ -2,9 +2,9 @@
 
 # OpenAPI Specification 3.0
 
-Integration Suite supports creation and import of API definitions in OpenAPI Specification\(OAS\) 3.0.
+SAP Integration Suite supports creation and import of API definitions in OpenAPI Specification\(OAS\) 3.0.
 
-The OAS 3.0 API definitions can be created using API designer or existing ones can be imported using SAP Integration Suite import functionality. For the created or imported API definition, API proxy is created on which user can apply policies to bring in SAP Integration Suite capabilities.
+The OAS 3.0 API definitions can be created using API designer or existing ones can be imported using the SAP Integration Suite import functionality. For the created or imported API definition, API proxy is created on which user can apply policies to bring in SAP Integration Suite capabilities.
 
 
 

@@ -8,7 +8,7 @@ A webhook is a method used by web applications to communicate with each other au
 
 You use webhooks whenever you want an event on one application to automatically trigger an event in other application. As there is no polling, webhooks consume lesser resources. As soon as a message reaches the queue, a webhook triggers a near real time delivery of the message. On contrary, in an API paradigm, a receiver application must manually ask the provider application for information, which in turn, consumes more resources.
 
-A **webhook subscription** in the Event Mesh capability of Integration Suite creates a connection to your webhook and associates the same to a queue. When messages reach a queue, a webhook subscription lets you automatically send those messages to your webhook in near real time.
+A **webhook subscription** in the Event Mesh capability of SAP Integration Suite creates a connection to your webhook and associates the same to a queue. When messages reach a queue, a webhook subscription lets you automatically send those messages to your webhook in near real time.
 
 **Related Information**  
 

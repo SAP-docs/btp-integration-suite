@@ -44,7 +44,7 @@ Specify the recipient's endpoint URL, the Salesforce login base URL, for user au
 </td>
 <td valign="top">
 
-Specify the name of the **User Credentials** artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Salesforce. This property enables the system to fetch the User Credential security material deployed in your Cloud Integration tenant.
+Specify the name of the **User Credentials** artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Salesforce. This property enables the system to fetch the User Credential security material deployed in your SAP Cloud Integration tenant.
 
 </td>
 </tr>
@@ -56,7 +56,7 @@ Specify the name of the **User Credentials** artifact that contains the cred
 </td>
 <td valign="top">
 
-Specify the name of the Secure Parameter artifact that contains the security token needed to connect to the Salesforce. This property enables the system to fetch the Security Token from the security material deployed in your Cloud Integration tenant. This field can be omitted if your IP is allow listed on Salesforce.
+Specify the name of the Secure Parameter artifact that contains the security token needed to connect to the Salesforce. This property enables the system to fetch the Security Token from the security material deployed in your SAP Cloud Integration tenant. This field can be omitted if your IP is allow listed on Salesforce.
 
 </td>
 </tr>
@@ -68,7 +68,7 @@ Specify the name of the Secure Parameter artifact that contains the security tok
 </td>
 <td valign="top">
 
-Specify the name of the OAuth Credentials artifact that contains the Salesforce’s OAuth Consumer key-client secret pair. This property enables the system to retrieve the OAuth security material deployed in your Cloud Integration tenant.
+Specify the name of the OAuth Credentials artifact that contains the Salesforce’s OAuth Consumer key-client secret pair. This property enables the system to retrieve the OAuth security material deployed in your SAP Cloud Integration tenant.
 
 </td>
 </tr>

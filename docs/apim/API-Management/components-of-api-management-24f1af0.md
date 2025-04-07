@@ -26,7 +26,7 @@ The one-stop-shop to create, secure, and publish API Proxies. This is the place 
 
 ### API Business Hub Enterprise
 
-Self-service for application developers to discover, browse, and explore APIs, subscribe to rate plans, and build apps. To know more about using the Developer Hub, see [Consume API Proxies](consume-api-proxies-ea561e4.md).
+Self-service for application developers to discover, browse, and explore APIs, subscribe to rate plans, and build apps. To know more about using the Developer Hub, see [Consume APIs](consume-apis-ea561e4.md).
 
 
 

@@ -26,7 +26,7 @@ Enables SAP Integration Suite to send messages to queues or topics in SAP Integr
 
 
 
-To connect Cloud Integration to SAP Event Mesh, make sure to specify the following parameters in the described way.
+To connect SAP Cloud Integration to SAP Event Mesh, make sure to specify the following parameters in the described way.
 
 When creating the channel \(see [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md)\), select adapter type *AMQP* \> *TCP*.
 

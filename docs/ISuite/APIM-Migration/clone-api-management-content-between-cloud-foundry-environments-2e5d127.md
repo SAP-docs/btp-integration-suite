@@ -97,7 +97,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
 > ### Note:  
 > We recommend migrating all API artifacts during the migration activity. While it is possible to selectively migrate API proxies, this should not be the preferred method for migrating API artifacts. It should only be used with careful consideration of dependencies.
 > 
-> If you need to regularly move or migrate API Management artifacts between Integration Suite tenants, it is recommended to use the transport capability instead. For more information, see [Transport APIs and Its Related Artifacts](../50-Development/transport-apis-and-its-related-artifacts-eb83118.md).
+> If you need to regularly move or migrate API Management artifacts between SAP Integration Suite tenants, it is recommended to use the transport capability instead. For more information, see [Transport APIs and Its Related Artifacts](../50-Development/transport-apis-and-its-related-artifacts-eb83118.md).
 
 
 

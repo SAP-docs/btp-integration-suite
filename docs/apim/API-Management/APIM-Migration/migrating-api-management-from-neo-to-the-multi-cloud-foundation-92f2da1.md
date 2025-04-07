@@ -17,7 +17,7 @@ Your source system is the system that contains your API Management content in th
 
 Your target system refers to the infrastructure that hosts your API Management content on a hyperscaler-managed infrastructure within a multi-cloud foundation. This multi-cloud foundation can either be your native standalone API Management subscription or the API Management capability within .
 
-For the migration assistance, you must have an Integration Suite subscription with API Management capability enabled within .
+For the migration assistance, you must have an subscription with API Management capability enabled within .
 
 After completing the prerequisites mentioned in the steps below, you can clone your API Management artifacts nondisruptively from the source to the target system. Post cloning, you must complete some user actions and validate your target system.
 

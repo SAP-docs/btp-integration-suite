@@ -169,13 +169,13 @@ You can select one of the following authentication methods:
 
 -   *Basic*
 
-    Cloud Integration authenticates itself against the receiver using user credentials \(user name and password\).
+    SAP Cloud Integration authenticates itself against the receiver using user credentials \(user name and password\).
 
     It is a prerequisite that user credentials are specified in a Basic Authentication artifact and deployed on the related tenant.
 
 -   *Client Certificate*
 
-    Cloud Integration authenticates itself against the receiver using a client certificate.
+    SAP Cloud Integration authenticates itself against the receiver using a client certificate.
 
     It is a prerequisite that the required key pair is installed and added to a keystore. This keystore has to be deployed on the related tenant. The receiver side has to be configured appropriately.
 

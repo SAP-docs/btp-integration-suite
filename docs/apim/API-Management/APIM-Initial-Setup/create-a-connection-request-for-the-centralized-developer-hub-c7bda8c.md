@@ -2,7 +2,7 @@
 
 # Create a Connection Request for the Centralized Developer Hub
 
-Create a request to connect the Integration Suite API Management tenant to Developer Hub. You need to establish this connection to publish the content of the Integration Suite API Management tenant on Developer Hub.
+Create a request to connect the API Management tenant to Developer Hub. You need to establish this connection to publish the content of the API Management tenant on Developer Hub.
 
 
 
@@ -10,14 +10,14 @@ Create a request to connect the Integration Suite API Management tenant to Devel
 
 ## Prerequisites
 
--   To establish connections between the Developer Hub and Integration Suite API Management tenants, a Cloud Foundry space should be created in the sub-account from where Developer Hub is hosted.
+-   To establish connections between the Developer Hub and API Management tenants, a Cloud Foundry space should be created in the sub-account from where Developer Hub is hosted.
 
--   To establish a connection between an Integration Suite API Management tenant and the centralised Developer Hub which is available in a different sub-account, you must ensure that the Developer Hub capability is not enabled in the same sub-account as that of the API portal.
+-   To establish a connection between an API Management tenant and the centralised Developer Hub which is available in a different sub-account, you must ensure that the Developer Hub capability is not enabled in the same sub-account as that of the API portal.
 
 -   The following role collections should be assigned to you:
     -   AuthGroup.API.Admin
 
-    -   APIPortal.Administrator: To generate the access credentials from the Integration Suite API Management tenant, you must have the *APIPortal. Administrator* role assigned to you.
+    -   APIPortal.Administrator: To generate the access credentials from the API Management tenant, you must have the *APIPortal. Administrator* role assigned to you.
 
     -   AuthGroup.APIPortalRegistration: You need this role to create a connection request and update the connection request credentials.
 
@@ -26,13 +26,13 @@ Create a request to connect the Integration Suite API Management tenant to Devel
 
 -   Generate the access credentials to establish the connection.
 
-    1.  Log in to the .
+    1.  Log on to .
 
     2.  Choose the navigation icon on the left and choose *Settings* \> *APIs*.
 
     3.  Choose the *Connection* tab.
 
-    4.  Follow the onscreen instructions under **Connect the API Portal to the centralized Developer Hub** to generate the Integration Suite API Management tenant access credentials.
+    4.  Follow the onscreen instructions under **Connect the API Portal to the centralized Developer Hub** to generate the API Management tenant access credentials.
 
 
     > ### Note:  
@@ -45,25 +45,25 @@ Create a request to connect the Integration Suite API Management tenant to Devel
 
 ## Context
 
-The Developer Hub administrator identifies which existing or new Developer Hub application can accept content from multiple Integration Suite API Management tenants.
+The Developer Hub administrator identifies which existing or new Developer Hub application can accept content from multiple API Management tenants.
 
 > ### Note:  
-> Only new Integration Suite subscriptions with API Management capability enabled with the Integration Suite are allowed to set up a connection with the centralized Developer Hub.
+> Only new subscriptions with API Management capability enabled with the are allowed to set up a connection with the centralized Developer Hub.
 
 > ### Note:  
-> You can connect a maximum number of three Integration Suite API portals to the centralized Developer Hub.
+> You can connect a maximum number of three API portals to the centralized Developer Hub.
 
-Create a new subaccount in Cloud Foundry and set up only the Integration Suite API Management tenant.
+Create a new subaccount in Cloud Foundry and set up only the API Management tenant.
 
-For the newly set up Integration Suite API Management tenant, you can request for the Developer Hub connection to be established.
+For the newly set up API Management tenant, you can request for the Developer Hub connection to be established.
 
 > ### Note:  
-> The option to disconnect an Integration Suite API Management tenant from an existing Developer Hub isn’t supported currently.
+> The option to disconnect an API Management tenant from an existing Developer Hub isn’t supported currently.
 
 > ### Note:  
 > Once this connection is set up, you can't place a request to severe this connection and establish a new connection with any other centralized Developer Hub.
 
-To create a request to connect the Integration Suite API Management tenant to the centralized Developer Hub.
+To create a request to connect the API Management tenant to the centralized Developer Hub.
 
 
 
@@ -101,7 +101,7 @@ To create a request to connect the Integration Suite API Management tenant to th
     </td>
     <td valign="top">
     
-    Enter the Integration Suite API Management tenant name that gets displayed on Developer Hub. This name is used to distinguish products that are published from the API portal and likewise for applications created for the product.
+    Enter the API Management tenant name that gets displayed on Developer Hub. This name is used to distinguish products that are published from the API portal and likewise for applications created for the product.
     
     </td>
     </tr>
@@ -113,7 +113,7 @@ To create a request to connect the Integration Suite API Management tenant to th
     </td>
     <td valign="top">
     
-    Enter the Integration Suite API Management tenant access credentials that you generated earlier. These credentials are used by Developer Hub to establish the connection.
+    Enter the API Management tenant access credentials that you generated earlier. These credentials are used by Developer Hub to establish the connection.
 
     Sample credentials:
 
@@ -169,10 +169,10 @@ To create a request to connect the Integration Suite API Management tenant to th
 
 ## Results
 
-You've submitted the connection request to the Developer Hub administrator. Once the connection request is approved by the administrator, you can start publishing the Integration Suite API Management tenant content to Developer Hub.
+You've submitted the connection request to the Developer Hub administrator. Once the connection request is approved by the administrator, you can start publishing the API Management tenant content to Developer Hub.
 
 > ### Note:  
-> You can log on to the Integration Suite API Management tenant and check the connection status. Navigate to *Settings* \> *APIs* and choose *Connection*.
+> You can log on to the API Management tenant and check the connection status. Navigate to *Settings* \> *APIs* and choose *Connection*.
 > 
 > You can also choose *Test Connection* to get the details about the connectivity status once your connection request is approved. You will get a connection error, if the destination is deleted or configured incorrectly. In case of an error, retry after revalidating the destination configuration.
 

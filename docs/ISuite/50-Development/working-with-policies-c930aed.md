@@ -29,19 +29,10 @@ Depending on your use case, you interact with assets in different ways:
 
 ## Policy Overview
 
-You can access all of your policies by going to *Design* \> *Data Spaces* \> *Policies*. The following details are available from the table view:
-
--   *Name*
-
--   *Description*
-
--   *Created By*
-
--   *Created At*
-
+You can access all of your policies by going to *Design* \> *Data Spaces* \> *Policies*.
 
 > ### Tip:  
-> Use the search functionality to find your policies. You can search for \(parts of\) *Name* and *Description*.
+> Use the search functionality to find your policies. You can search for \(parts of\) *Name*, *ID*, and *Description*.
 
 Select a policy to open a more detailed view next to the table view:
 

@@ -8,7 +8,7 @@ The SuccessFactors adapter enables you to communicate with the SuccessFactors sy
 > You can now pass filter conditions via a header or property while performing an asynchronous or ad hoc operation.
 
 > ### Restriction:  
-> If you deploy an integration flow in Cloud Integration, it deploys in multiple tenants. Polling is triggered from only one of these tenants. The message monitor displays the process status for the tenants where the *Scheduler* has not started. As a result, the message monitor displays messages of less than a few milliseconds, where the scheduler was not triggered. These entries contain *firenow=true* in the log. You can ignore these entries.
+> If you deploy an integration flow in SAP Cloud Integration, it deploys in multiple tenants. Polling is triggered from only one of these tenants. The message monitor displays the process status for the tenants where the *Scheduler* has not started. As a result, the message monitor displays messages of less than a few milliseconds, where the scheduler was not triggered. These entries contain *firenow=true* in the log. You can ignore these entries.
 
 > ### Remember:  
 > You must enable *HTTP Session Reuse* with either the *On Exchange* or *On Integration Flow* level.

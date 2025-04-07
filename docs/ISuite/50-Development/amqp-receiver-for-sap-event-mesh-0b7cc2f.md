@@ -26,7 +26,7 @@ Enables SAP Integration Suite to send messages to queues or topics in SAP Event 
 
 
 
-To connect Cloud Integration to SAP Event Mesh, make sure to specify the following parameters in the described way:
+To connect SAP Cloud Integration to SAP Event Mesh, make sure to specify the following parameters in the described way:
 
 When creating the channel \(see [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md)\), select adapter type *AMQP* \> *WebSocket*.
 
@@ -363,7 +363,7 @@ There are two options for forwarding the message header name:
 
 ## Further Constraints
 
-The following constraints and limitations apply when using the AMQP adapter to connect Cloud Integration to SAP Event Mesh:
+The following constraints and limitations apply when using the AMQP adapter to connect SAP Cloud Integration to SAP Event Mesh:
 
 -   Exclusive queues are supported.
 

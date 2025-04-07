@@ -53,6 +53,7 @@ You've created at least one data extraction request as described in [Create a Da
             -   Modernization recommendations
             -   Rules applied to the integration scenarios
             -   Sender and receiver adapters \(both standard and custom\)
+            -   Request and response message types
             -   Message throughput and mappings usage
             -   Performance data: Message size and processing time
 

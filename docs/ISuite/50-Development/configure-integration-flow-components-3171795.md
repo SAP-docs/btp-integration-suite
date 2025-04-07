@@ -2,5 +2,5 @@
 
 # Configure Integration Flow Components
 
-Cloud Integration allows you to configure integration flow components in an editor.
+SAP Cloud Integration allows you to configure integration flow components in an editor.
 

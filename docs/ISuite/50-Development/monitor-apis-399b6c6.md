@@ -6,7 +6,7 @@
 
 Check the runtime logs and the status of an API artifact.
 
-To monitor an API artifact created on the Edge Integration Cell, select the "Edge Integration Cell" node from the *Runtime* dropdown menu.
+To monitor an API artifact, log on to SAP Integration Suite, go to *Monitor* \> *Integrations and APIs*, and select the runtime from the *Runtime* drop-down menu under *Overview*.
 
 In the *Manage Integration Content* area, a set of tiles is displayed that show the number of deployed APIs.
 

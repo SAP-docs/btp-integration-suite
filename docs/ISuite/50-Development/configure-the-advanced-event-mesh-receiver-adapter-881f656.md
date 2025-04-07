@@ -14,6 +14,10 @@ The AdvancedEventMesh receiver adapter allows SAP Integration Suite to send mess
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
+> ### Note:  
+> -   If your current adapter version is 1.3.3 or lower, check SAP Note [3582690](https://me.sap.com/notes/3582690) before upgrading the adapter.
+> -   If you run the intergration flow associated with the AEM adapter using *Run on a single worker node* configuration, there might be integration flow failures. To ensure smooth processing check SAP Note [3577865](https://me.sap.com/notes/3577865).
+
 The adapter uses the Solace Message Format \(SMF\) message protocol.
 
 The *General* tab displays general information about the adapter itself.

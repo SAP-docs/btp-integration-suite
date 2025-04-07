@@ -31,7 +31,7 @@ When a trading partner agreement gets activated, the complete agreement informat
 
 ## Procedure
 
-1.  Log on to your Integration Suite.
+1.  Log on to SAP Integration Suite.
 
 2.  Choose *Design* \> *B2B Scenarios.*
 

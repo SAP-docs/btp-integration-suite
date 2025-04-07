@@ -10,9 +10,9 @@ There can be instances where you have to update the credentials once the connect
 
 ## Prerequisites
 
-To update the API portal access credentials, you must first generate it. To generate the credentials from the Integration Suite API Management tenant , you must have the APIPortal.Administrator role assigned to you.
+To update the API portal access credentials, you must first generate it. To generate the credentials from the SAP Integration Suite API Management tenant , you must have the APIPortal.Administrator role assigned to you.
 
-1.  Log on to Integration Suite.
+1.  Log on to SAP Integration Suite.
 
 2.  Choose the navigation icon on the left and choose *Settings* \> *APIs*.
 
@@ -30,13 +30,13 @@ To update the API portal access credentials, you must first generate it. To gene
 
 ## Context
 
-To establish the connection between the Integration Suite API Management tenant and Developer Hub, the client Id and client secret created for the Integration Suite API Management tenant is shared during the connection request process.
+To establish the connection between the SAP Integration Suite API Management tenant and Developer Hub, the client Id and client secret created for the SAP Integration Suite API Management tenant is shared during the connection request process.
 
 If you encounter one of the following situations after the connection request has already been approved by the Developer Hub admin, you have to update the credentials:
 
--   The service instance, or the service key gets deleted after the connection between the Integration Suite API Management tenant and Developer Hub was established. In this case, the credentials you were using before the service instance or the service key got deleted becomes invalid.
+-   The service instance, or the service key gets deleted after the connection between the SAP Integration Suite API Management tenant and Developer Hub was established. In this case, the credentials you were using before the service instance or the service key got deleted becomes invalid.
 
--   Similarly, if the destination that fetches the API content from the Integration Suite API Management tenant workspace gets deleted, the credentials you were using before the destination got deleted becomes invalid.
+-   Similarly, if the destination that fetches the API content from the SAP Integration Suite API Management tenant workspace gets deleted, the credentials you were using before the destination got deleted becomes invalid.
 
 
 
@@ -53,7 +53,7 @@ If you encounter one of the following situations after the connection request ha
 
 3.  Go to the *Actions* column and select the approved connection request that you want to edit and choose *Re-establish Connection*.
 
-4.  On the *Re-establish Connection* page, enter the access credentials that you copied earlier from the Integration Suite API Management tenant in the *\*API Portal Access Credentials :* text box.
+4.  On the *Re-establish Connection* page, enter the access credentials that you copied earlier from the SAP Integration Suite API Management tenant in the *\*API Portal Access Credentials :* text box.
 
     Sample credentials:
 
@@ -79,5 +79,5 @@ If you encounter one of the following situations after the connection request ha
 
 ## Results
 
-You’ve updated the Integration Suite API Management tenant access credentials successfully.
+You’ve updated the SAP Integration Suite API Management tenant access credentials successfully.
 

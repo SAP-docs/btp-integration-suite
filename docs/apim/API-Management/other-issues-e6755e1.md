@@ -30,7 +30,7 @@ If yes, please make sure that you have:
 
     -   Subscribed to API Management \(plan: default\). See:
 
-        Integration Suite: [Activate and Configure API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite?version=CLOUD).
+        : [Activate and Configure API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite?version=CLOUD).
 
         Standalone: [Setting Up API Portal Application Using API Management Standalone Tile](https://help.sap.com/docs/sap-api-management/sap-api-management/setting-up-api-portal-application-using-api-management-standalone-tile?version=Cloud).
 
