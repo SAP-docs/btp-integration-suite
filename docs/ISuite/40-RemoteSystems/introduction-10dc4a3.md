@@ -366,8 +366,6 @@ See: [Configure the AMQP Receiver Adapter](../50-Development/configure-the-amqp-
 
 *AMQP for SAP Event Mesh*
 
-Sender adapter
-
 </td>
 <td valign="top">
 
@@ -577,7 +575,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [Configure the AMQP Sender Adapter](../50-Development/configure-the-amqp-sender-adapter-99ce674.md)
+See: 
 
 </td>
 </tr>
@@ -930,7 +928,7 @@ See: [Facebook Receiver Adapter](../50-Development/facebook-receiver-adapter-3dc
 <tr>
 <td valign="top">
 
-*FTP*
+**
 
 Sender adapter
 
@@ -1098,7 +1096,7 @@ Sender adapter
 
 Allows SAP Integration Suite to consume messages from IBM MQ.
 
-See: [Configure the IBM MQ Sender Adapter](../50-Development/configure-the-ibm-mq-sender-adapter-35cd02d.md)
+See: [Configure the IBM MQ \(REST\) Sender Adapter](../50-Development/configure-the-ibm-mq-rest-sender-adapter-35cd02d.md)
 
 </td>
 </tr>
@@ -1114,7 +1112,7 @@ Receiver adapter
 
 Allows SAP Integration Suite to publish messages to IBM MQ.
 
-See: [Configure the IBM MQ Receiver Adapter](../50-Development/configure-the-ibm-mq-receiver-adapter-45610e7.md)
+See: [Configure the IBM MQ \(REST\) Receiver Adapter](../50-Development/configure-the-ibm-mq-rest-receiver-adapter-45610e7.md)
 
 </td>
 </tr>
@@ -1164,7 +1162,7 @@ Receiver adapter
 
 Allows SAP Integration Suite to connect to a JDBC \(Java Database Connectivity\) database and to execute SQL commands on the database.
 
-See: [JDBC Receiver Adapter](../50-Development/jdbc-receiver-adapter-88be644.md)
+See: 
 
 </td>
 </tr>
@@ -1564,6 +1562,22 @@ Receiver adapter
 Connects SAP Integration Suite to a remote system using the HTTP protocol to write files to the system.
 
 See: [Configure the Microsoft SharePoint Receiver Adapter](../50-Development/configure-the-microsoft-sharepoint-receiver-adapter-b12b33a.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft Teams* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to Microsoft Teams.
+
+See: [Microsoft Teams Receiver Adapter](../50-Development/microsoft-teams-receiver-adapter-1f333c3.md)
 
 </td>
 </tr>

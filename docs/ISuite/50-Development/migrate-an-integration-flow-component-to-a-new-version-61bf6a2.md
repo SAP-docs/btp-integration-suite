@@ -2,7 +2,7 @@
 
 # Migrate an Integration Flow Component to a New Version
 
-New features are introduced through new versions of integration flow components. To consume new features, you need to migrate the component to the new version.
+New features are introduced through new versions of integration flow components. To consume
 
 
 
@@ -19,9 +19,10 @@ Migration feature is available for the following components:
 -   Integration process
 -   Local integration process
 
+> ### Note:  
+> Components with incompatible features won't be migrated. You need to remove and add the component while maintaining its properties manually.
+
 > ### Caution:  
-> Note relevant for the case when the integration flow contains an older adapter versions that does not support yet HTTP session handling:
-> 
 > The integration flow configuration version 1.1 and above supports HTTP session handling and if your original integration flow \(to be migrated\) contains an earlier version of a receiver adapter that doesn’t support HTTP session handling yet, you might run into a version conflict. In that case, the following error is displayed:
 > 
 > `Version <adapter component version> is not supported with integration flow version <target version of integration flow>, remodel the adapter with new version.`
@@ -44,18 +45,18 @@ For additional information on version migration of integration flow components, 
 
 1.  Select an integration flow component.
 
-2.  Click on the *Migrate* button.
+2.  Choose *Migrate*.
 
     > ### Note:  
-    > Migration option will be available only if the selected component has the highest version in the component.
+    > -   Migration option will be available only if the selected component has the latest version in your selected runtime profile.
 
-3.  Click on *OK* for confirmation.
+3.  Choose *OK*.
 
     > ### Note:  
     > You can revert to previous version after migrating also, by executing the following steps:
     > 
     > 1.  Go to package view.
-    > 2.  Click on *Draft* version.
-    > 3.  Click on the timer icon to revert back to previous version.
+    > 2.  Choose *Draft* version.
+    > 3.  From the Version History, select the version you wish to revert to.
 
 

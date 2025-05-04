@@ -866,7 +866,7 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
     -   *Required*: EDI Splitter can generate a unique transaction set number, which is the incremented value from the *Number Range* object and does not depend on the number of the incoming payload.
     -   *Not Required*: Does not generate a unique transaction set number.
-    -   *Dynamic*: You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_UNIQUE_TRANSACTION_SET_NUMBER`. The values for the headers can be one of the following:
+    -   *Dynamic*: You can also set this field using the header `SAP_EDISPLITTER_997_UNIQUE_TRANSACTION_SET_NUMBER`. The values for the headers can be one of the following:
         -   `required`
         -   `notRequired`
 

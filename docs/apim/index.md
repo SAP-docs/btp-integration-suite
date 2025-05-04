@@ -26,6 +26,7 @@ How to use SAP API Management
             -   [Account Members](API-Management/APIM-Initial-Setup/account-members-66a7bc8.md)
             -   [User Roles in API Management](API-Management/APIM-Initial-Setup/user-roles-in-api-management-7010b58.md)
                 -   [Assigning Role Collections to Users](API-Management/APIM-Initial-Setup/assigning-role-collections-to-users-80bb02e.md)
+            -   [Assigning Role Collections to Users](API-Management/APIM-Initial-Setup/assigning-role-collections-to-users-80bb02e.md)
         -   [Custom Domain Configuration for API Portal or Developer Hub Subscription](API-Management/APIM-Initial-Setup/custom-domain-configuration-for-api-portal-or-developer-hub-subscription-c4e67a9.md)
         -   [Region-Specific IP Addresses Available for API Management Cloud Foundry Environment](API-Management/APIM-Initial-Setup/region-specific-ip-addresses-available-for-api-management-cloud-foundry-environ-683a97c.md)
         -   [Configuring Additional Virtual Host in Cloud Foundry Environment](API-Management/APIM-Initial-Setup/configuring-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md)

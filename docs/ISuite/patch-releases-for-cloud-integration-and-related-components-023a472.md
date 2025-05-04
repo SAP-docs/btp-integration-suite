@@ -81,6 +81,178 @@ Patches for different components are associated with different major software ve
 
 ## April 2025
 
+Software Increment: 2502
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.64.31
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Hanging issues and facilitates a smooth Camel 3x migration with transaction-enabled XSLT Mapping Components.
+-   Intermittent access issue affecting over 10 customers in Integration Suite, following the "@sap/approuter" update to version 19.0.0 to address a vulnerability identified by Blackduck.
+-   Failure of MTMS Software Update on `it-rc-web` in larger systems.
+-   Non-functional learn more banners and learning journey links.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.28.10
+
+</td>
+<td valign="top">
+
+This patch fixes the hanging issues and facilitates a smooth Camel 3x migration with transaction-enabled XSLT Mapping Components.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.64.28
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Improved handling of migrated message mappings, enabling the opening of expanded recursive nodes with duplicate subtrees.
+-   Splitter component by setting a default value to the SapGroup header when it is empty.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.28.9
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with the Kafka Sender Adapter, restoring full functionality to the "Retry Failed Messages" feature.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.64.26
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Deployment failure for `cp_it_resource_cockpit` due to revoked admin privileges from the Postgres user.
+-   Kafka Sender Adapter where the "Retry Failed Messages" functionality is not working.
+-   Customers to deploy Message Mappings containing JSON schemas.
+-   Queue monitor not loading messages due to multiple JMS broker connection requests.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.98.4
+
+</td>
+<td valign="top">
+
+This patch fixes the issue where Push to Partner Directory or Export of runtime artifacts of a MAG was taking considerably longer time.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.64.21
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Temp store accumulation by cleaning up ZIP files.
+-   Critical CPU usage in Inspect's dedicated Postgres `it-db-rc`, suspected to be caused by Azure hyperscaler, observed exclusively in `eu20-001`.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+## April 2025
+
 Software Increment: 2501
 
 ****
@@ -103,6 +275,50 @@ Software Version
 Description
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.27.23
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Splitter issue in Camel by enabling rollback capability.
+-   The 'Handled By Integration Flow' option in an XI sender channel causes errors due to the absence of a payload in synchronous responses when sending XI messages with Quality of Service BestEffort.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.63.47
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Splitter issue in Camel by enabling rollback capability.
+-   The 'Handled By Integration Flow' option in an XI sender channel causes errors due to the absence of a payload in synchronous responses when sending XI messages with Quality of Service BestEffort.
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">

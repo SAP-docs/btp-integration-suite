@@ -176,10 +176,10 @@ This topic describes the recommended process to trigger a contract negotiation a
 
     You have two options for using credentials in your call: you can either enter a **permanent access key ID and access key secret** directly into the payload, or you can generate an **alias** beforehand using the AWS Secret Token Service \(STS\) and then refer to it in the payload.
 
-    > ### Remember:  
-    > Also, make sure to assign the permission to delete roles to your Amazon S3 user. Since Data Space Integration temporarily shares the access with the provider, the permission allows Data Space Integration to remove the access again after the exchange.
+    -   If you're using a **permanent access key ID and access key secret**, start the transfer process with the following POST call and body.
 
-    -   If you're using a **permanent access key ID and access key secret**, start the transfer process with the following POST call and body:
+        > ### Remember:  
+        > Make sure to assign the permission to delete roles to your Amazon S3 user. Since Data Space Integration temporarily shares the access with the provider, the permission allows Data Space Integration to remove the access again after the exchange.
 
         > ### Sample Code:  
         > ```
@@ -215,7 +215,10 @@ This topic describes the recommended process to trigger a contract negotiation a
         > }			
         > ```
 
-    -   As an alternative to using the permanent accessKeyId an secretAccessKey, you can also use an **alias**. The AWS Secure Token Service \(STS\) enables you to use temporary security credentials for AWS services. You can generate STS credentials, use these temporary credentials to receive an alias, and use this alias when initiating a transfer for S3 assets as a consumer.
+    -   As an alternative to using the permanent accessKeyId and secretAccessKey, you can also create an **alias** instead, using temporary security credentials created with the AWS Secure Token Service \(STS\). After you've generated STS credentials, use these temporary credentials to receive an alias, and use this alias when initiating a transfer for S3 assets as a consumer.
+
+        > ### Note:  
+        > To upload the token in Data Space Integration, you need the role `CredentialsWrite`. This role is included in the role collection `DataspaceTechnicalAdmin`, but you can also assign the role to your user individually in the SAP BTP cockpit.
 
         To use an STS alias, perform the following steps:
 
@@ -283,12 +286,12 @@ This topic describes the recommended process to trigger a contract negotiation a
                 "edc:assetId": "{{assetId}}",
                 "edc:transferType": "AmazonS3-PUSH",
                 "edc:dataDestination": {
-                    "edc:type": "AmazonS3",
+                     "edc:type": "AmazonS3",
                 	"edc:bucketName": "dsibucket-dev-consumer-001",
-            	"edc:region": "eu-central-1",
-            	"edc:folderName": "testConsumerFolder",
-            	"edc:objectName": "testfilename_10mb.txt",
-            	"edc:keyName": "{{aliasName}}"
+            	    "edc:region": "eu-central-1",
+            	    "edc:folderName": "testConsumerFolder",
+            	    "edc:objectName": "testfilename_10mb.txt",
+            	    "edc:keyName": "{{aliasName}}"
                 },
                 "edc:privateProperties": {
                     "private-key": "private-value"
@@ -298,14 +301,17 @@ This topic describes the recommended process to trigger a contract negotiation a
 
 
 
-6.  For **Azure** assets, complete the following steps after getting your contract agreement ID:
+6.  For **Azure** assets, complete the following steps after getting your contract agreement ID.
 
-    1.  Create credentials for yourself as a consumer of Data Space Integration using the [token API](https://int.api.hana.ondemand.com/api/DSIAPI/resource/STS_Credentials_Alias). Your credentials alias must follow the pattern `accountName-key1`, with `accountName` being your Azure account name.
+    1.  Create credentials for your Azure access as a consumer of Data Space Integration using the [token API](https://int.api.hana.ondemand.com/api/DSIAPI/resource/STS_Credentials_Alias). Your credentials alias must follow the pattern `accountName-key1`, with `accountName` being your Azure account name.
+
+        > ### Note:  
+        > To create credentials in Data Space Integration, you need the role `CredentialsWrite`. This role is included in the role collection `DataspaceTechnicalAdmin`, but you can also assign the role to your user individually in the SAP BTP cockpit.
 
         > ### Caution:  
         > Make sure that the credentials are valid for the account. Since the credentials are cached in the control plane, it must be restarted to reflect any changes you make. In this case, please get in touch with support. See [Troubleshooting for Data Space Integration](troubleshooting-for-data-space-integration-166fa88.md).
 
-    2.  Next, trigger the transfer process using the following payload. For Azure assets, the payload differs slightly from the S3 payload to account for the differing data destination. For more details, refer to the [Transfer Process API](https://hub.sap.com/api/DSIAPI/resource/initiateTransferprocessHttp) and select an example for Azure.
+    2.  Next, trigger the transfer process using the following payload. For Azure assets, the payload differs slightly from the S3 payload to account for the differing data destination. For more details, refer to the Transfer Process API and select an example for Azure.
 
         > ### Note:  
         > While the Eclipse Dataspace Connector supports the use of `blobName` and `keyName` in the data destination, Data Space Integration doesn't support these parameters. Please only use the parameters listed used in the following example payload.

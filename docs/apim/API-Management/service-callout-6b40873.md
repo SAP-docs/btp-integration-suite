@@ -24,11 +24,68 @@ An example payload for the policy is as follows:
 > ```
 > 
 > 1. <!-- This policy will call the url api.exampleAPI.com and put the response in variable callOutResponse.
->   -- For examples refer the Flow Variables Table.-->
-> 
-> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+>   -- For examples refer the Flow Variables Table.--><?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 > <ServiceCallout async="true" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
->     <Request/>
+>     <Request clearPayload="true" variable="myRequest">
+>         <Copy source="{source}">
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>             <Verb>{boolean_value}</Verb>
+>             <Version>{boolean_value}</Version>
+>             <Path>{boolean_value}</Path>
+>             <StatusCode>{boolean_value}</StatusCode>
+>             <ReasonPhrase>{boolean_value}</ReasonPhrase>
+>         </Copy>
+>         <Remove>
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>         </Remove>
+>         <Add>
+>             <Headers>
+>                 <Header name=" {header_name }">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name }">{value}</QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>         </Add>
+>         <Set>
+>             <Headers>
+>                 <Header name="{header_name}">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}">{value} </QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>             <Payload/>
+>             <Verb>{verb}</Verb>
+>             <Version>{version}</Version>
+>             <Path>{path}</Path>
+>             <StatusCode>{status_code}</StatusCode>
+>             <ReasonPhrase>{reason_phrase}</ReasonPhrase>
+>         </Set>
+>         <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+>     </Request>
 >     <Response>callOutResponse</Response>
 >     <Timeout>30000</Timeout>
 >     <HTTPTargetConnection>
@@ -36,37 +93,152 @@ An example payload for the policy is as follows:
 >     </HTTPTargetConnection>
 > </ServiceCallout>
 > 
+> 
 > 2. <!-- This policy will call a dynamic url which is set in the previous step via policies like javascript or assign variable..
 >   -- For examples refer the Flow Variables Table.-->
 > 
 > <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 > <ServiceCallout async="true" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
->     <Request/>
+>     <Request clearPayload="true" variable="myRequest">
+>         <Copy source="{source}">
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>             <Verb>{boolean_value}</Verb>
+>             <Version>{boolean_value}</Version>
+>             <Path>{boolean_value}</Path>
+>             <StatusCode>{boolean_value}</StatusCode>
+>             <ReasonPhrase>{boolean_value}</ReasonPhrase>
+>         </Copy>
+>         <Remove>
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>         </Remove>
+>         <Add>
+>             <Headers>
+>                 <Header name=" {header_name }">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name }">{value}</QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>         </Add>
+>         <Set>
+>             <Headers>
+>                 <Header name="{header_name}">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}">{value} </QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>             <Payload/>
+>             <Verb>{verb}</Verb>
+>             <Version>{version}</Version>
+>             <Path>{path}</Path>
+>             <StatusCode>{status_code}</StatusCode>
+>             <ReasonPhrase>{reason_phrase}</ReasonPhrase>
+>         </Set>
+>         <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+>     </Request>
 >     <Response>callOutResponse</Response>
 >     <Timeout>30000</Timeout>
 >     <HTTPTargetConnection>
 >         <URL>http://{URL_path}</URL>
 >     </HTTPTargetConnection>
 > </ServiceCallout>
-> 
 > Note: The protocol example http, https can't be set dynamically.
 > 
 > 
 > 3. <!-- This policy below refers to an existing API Provider. -->
 > 	You can use on-premise, and internet type of API Provider in the Service Callout policy.   	
-> 
 > <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 > <ServiceCallout async="true" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
->     <Request/>
+>     <Request clearPayload="true" variable="myRequest">
+>         <Copy source="{source}">
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>             <Verb>{boolean_value}</Verb>
+>             <Version>{boolean_value}</Version>
+>             <Path>{boolean_value}</Path>
+>             <StatusCode>{boolean_value}</StatusCode>
+>             <ReasonPhrase>{boolean_value}</ReasonPhrase>
+>         </Copy>
+>         <Remove>
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>         </Remove>
+>         <Add>
+>             <Headers>
+>                 <Header name=" {header_name }">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name }">{value}</QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>         </Add>
+>         <Set>
+>             <Headers>
+>                 <Header name="{header_name}">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}">{value} </QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>             <Payload/>
+>             <Verb>{verb}</Verb>
+>             <Version>{version}</Version>
+>             <Path>{path}</Path>
+>             <StatusCode>{status_code}</StatusCode>
+>             <ReasonPhrase>{reason_phrase}</ReasonPhrase>
+>         </Set>
+>         <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+>     </Request>
 >     <Response>callOutResponse</Response>
 >     <Timeout>30000</Timeout>
 >     <HTTPTargetConnection>
 >         <APIProvider>API Provider Name</APIProvider>
-> 		 <Path>/sap/opu/odata/iwfnd/RMTSAMPLEFLIGHT</Path>
+>         <Path>/sap/opu/odata/iwfnd/RMTSAMPLEFLIGHT</Path>
 >     </HTTPTargetConnection>
 > </ServiceCallout>
-> 
-> 
 > 
 > 
 > 4 (a). <!–- This policy briefs about SSL Info. SSL stands for Secure Socket Layer. It helps in encrypting the link between a web server and a web client, such as a browser or an app.
@@ -74,70 +246,306 @@ An example payload for the policy is as follows:
 > Provider is added to HTTPTargetConnection.  
 > Henceforth, there can never be a case where API Provider-SSL Configuration conflicts with SSL Info present in the Service Callout Policy.  
 > 
-> If enabled = "true" in the code;follow the below code. -->
->    
-> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+> If enabled = "true" in the code;follow the below code. --><?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 > <ServiceCallout async="true" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
->     <Request/>
+>     <Request clearPayload="true" variable="myRequest">
+>         <Copy source="{source}">
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>             <Verb>{boolean_value}</Verb>
+>             <Version>{boolean_value}</Version>
+>             <Path>{boolean_value}</Path>
+>             <StatusCode>{boolean_value}</StatusCode>
+>             <ReasonPhrase>{boolean_value}</ReasonPhrase>
+>         </Copy>
+>         <Remove>
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>         </Remove>
+>         <Add>
+>             <Headers>
+>                 <Header name=" {header_name }">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name }">{value}</QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>         </Add>
+>         <Set>
+>             <Headers>
+>                 <Header name="{header_name}">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}">{value} </QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>             <Payload/>
+>             <Verb>{verb}</Verb>
+>             <Version>{version}</Version>
+>             <Path>{path}</Path>
+>             <StatusCode>{status_code}</StatusCode>
+>             <ReasonPhrase>{reason_phrase}</ReasonPhrase>
+>         </Set>
+>         <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+>     </Request>
 >     <Response>callOutResponse</Response>
 >     <Timeout>30000</Timeout>
-> 	   <HTTPTargetConnection>
->             <URL>https://maps.googleapis.com/maps/api/geocode/json/</URL>
->           <SSLInfo>
->              <Enabled>true</Enabled>
->              <ClientAuthEnabled>true</ClientAuthEnabled>
->              <KeyStore>SapKeystore</KeyStore>
->              <KeyAlias>SAPKey</KeyAlias>
->              <TrustStore>SAPTruststore</TrustStore>
->              <Ciphers/>
->              <Protocols/>
->          </SSLInfo>
->        </HTTPTargetConnection>
+>     <HTTPTargetConnection>
+>         <URL>https://maps.googleapis.com/maps/api/geocode/json/</URL>
+>         <SSLInfo>
+>             <Enabled>true</Enabled>
+>             <ClientAuthEnabled>true</ClientAuthEnabled>
+>             <KeyStore>SapKeystore</KeyStore>
+>             <KeyAlias>SAPKey</KeyAlias>
+>             <TrustStore>SAPTruststore</TrustStore>
+>             <Ciphers/>
+>             <Protocols/>
+>         </SSLInfo>
+>     </HTTPTargetConnection>
 > </ServiceCallout>
+>  
 > 
 > 4 (b).Use the SSL Info code below, If enabled is set to false.
 > 
 > <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 > <ServiceCallout async="true" continueOnError="false" enabled="false" xmlns="http://www.sap.com/apimgmt">
->     <Request/>
+>     <Request clearPayload="true" variable="myRequest">
+>         <Copy source="{source}">
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>             <Verb>{boolean_value}</Verb>
+>             <Version>{boolean_value}</Version>
+>             <Path>{boolean_value}</Path>
+>             <StatusCode>{boolean_value}</StatusCode>
+>             <ReasonPhrase>{boolean_value}</ReasonPhrase>
+>         </Copy>
+>         <Remove>
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>         </Remove>
+>         <Add>
+>             <Headers>
+>                 <Header name=" {header_name }">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name }">{value}</QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>         </Add>
+>         <Set>
+>             <Headers>
+>                 <Header name="{header_name}">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}">{value} </QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>             <Payload/>
+>             <Verb>{verb}</Verb>
+>             <Version>{version}</Version>
+>             <Path>{path}</Path>
+>             <StatusCode>{status_code}</StatusCode>
+>             <ReasonPhrase>{reason_phrase}</ReasonPhrase>
+>         </Set>
+>         <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+>     </Request>
 >     <Response>callOutResponse</Response>
 >     <Timeout>30000</Timeout>
-> 	   <HTTPTargetConnection>
->             <URL>https://maps.googleapis.com/maps/api/geocode/json/</URL>
->        </HTTPTargetConnection>
+>     <HTTPTargetConnection>
+>         <URL>https://maps.googleapis.com/maps/api/geocode/json/</URL>
+>     </HTTPTargetConnection>
 > </ServiceCallout>
 > 
 > 
 > 
 > 5. In this Service callout policy, you call a local API Proxy in 2 ways;
+> 
 > 	
 > 5 (a). Using local <APIProxy> and <ProxyEndpoint>
-> 
-> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>	
+> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 > <ServiceCallout async="true" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
->     <Request/>
+>     <Request clearPayload="true" variable="myRequest">
+>         <Copy source="{source}">
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>             <Verb>{boolean_value}</Verb>
+>             <Version>{boolean_value}</Version>
+>             <Path>{boolean_value}</Path>
+>             <StatusCode>{boolean_value}</StatusCode>
+>             <ReasonPhrase>{boolean_value}</ReasonPhrase>
+>         </Copy>
+>         <Remove>
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>         </Remove>
+>         <Add>
+>             <Headers>
+>                 <Header name=" {header_name }">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name }">{value}</QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>         </Add>
+>         <Set>
+>             <Headers>
+>                 <Header name="{header_name}">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}">{value} </QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>             <Payload/>
+>             <Verb>{verb}</Verb>
+>             <Version>{version}</Version>
+>             <Path>{path}</Path>
+>             <StatusCode>{status_code}</StatusCode>
+>             <ReasonPhrase>{reason_phrase}</ReasonPhrase>
+>         </Set>
+>         <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+>     </Request>
 >     <Response>callOutResponse</Response>
 >     <Timeout>30000</Timeout>
->        <LocalTargetConnection>
->    	    <APIProxy>api-admin</APIProxy>
->     	   <ProxyEndpoint>default</ProxyEndpoint>
->        </LocalTargetConnection>
+>     <LocalTargetConnection>
+>         <APIProxy>api-admin</APIProxy>
+>         <ProxyEndpoint>default</ProxyEndpoint>
+>     </LocalTargetConnection>
 > </ServiceCallout>
 > 
-> In th above code,'api-admin' is an example for local API Proxy.
+> 
+> In the above code,'api-admin' is an example for local API Proxy.
 > 
 > 
 > 5 (b). Using the path parameter.
 > This can also help in calling a local API Proxy since the path parameter could be a consistent target.
 >  
-> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>	
+> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 > <ServiceCallout async="true" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
->     <Request/>
+>     <Request clearPayload="true" variable="myRequest">
+>         <Copy source="{source}">
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>             <Verb>{boolean_value}</Verb>
+>             <Version>{boolean_value}</Version>
+>             <Path>{boolean_value}</Path>
+>             <StatusCode>{boolean_value}</StatusCode>
+>             <ReasonPhrase>{boolean_value}</ReasonPhrase>
+>         </Copy>
+>         <Remove>
+>             <Headers>
+>                 <Header name="{header_name}"></Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}"></QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}"></FormParam>
+>             </FormParams>
+>             <Payload>{boolean_value}</Payload>
+>         </Remove>
+>         <Add>
+>             <Headers>
+>                 <Header name=" {header_name }">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name }">{value}</QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>         </Add>
+>         <Set>
+>             <Headers>
+>                 <Header name="{header_name}">{value}</Header>
+>             </Headers>
+>             <QueryParams>
+>                 <QueryParam name="{query_param_name}">{value} </QueryParam>
+>             </QueryParams>
+>             <FormParams>
+>                 <FormParam name="{form_param_name}">{value}</FormParam>
+>             </FormParams>
+>             <Payload/>
+>             <Verb>{verb}</Verb>
+>             <Version>{version}</Version>
+>             <Path>{path}</Path>
+>             <StatusCode>{status_code}</StatusCode>
+>             <ReasonPhrase>{reason_phrase}</ReasonPhrase>
+>         </Set>
+>         <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+>     </Request>
 >     <Response>callOutResponse</Response>
 >     <Timeout>30000</Timeout>
->        <LocalTargetConnection>
->    	    <Path><"API Basepath"></Path>
->        </LocalTargetConnection>
+>     <LocalTargetConnection>
+>         <Path><"API Basepath"></Path>
+>     </LocalTargetConnection>
 > </ServiceCallout>
 > 			
 > 

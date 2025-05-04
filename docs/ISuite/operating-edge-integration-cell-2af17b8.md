@@ -12,7 +12,7 @@ You can operate Edge Integration Cells from the Operations Cockpit, where you ca
 **Related Information**  
 
 
-[System Monitoring](system-monitoring-689a9a1.md "Access system monitoring and logging if it's enabled.")
+[System Monitoring](system-monitoring-689a9a1.md "Access specific monitoring and logging dashboards for Edge Integration Cell.")
 
 [Application Monitoring](application-monitoring-c9863ba.md "You can monitor messages and integration artifacts by using the monitoring functions of SAP Integration Suite.")
 

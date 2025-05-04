@@ -44,4 +44,8 @@ After making your selection, the dashboard displays the most critical resources 
         For more information, see [Diagnostics](diagnostics-80f3050.md).
 
 
+-   *RFC Adapter*: Monitor the underlying JCo entities of the integration flows deployed with the RFC adapter.
+
+    For more information, see [RFC Adapter Monitor](rfc-adapter-monitor-42d84a1.md).
+
 

@@ -31,7 +31,7 @@ The JDBC receiver adapter uses XML SQL Format message protocol. The adapter perf
 
 > ### Note:  
 > -   Currently, only TCP connections are supported.
-> -   Deploy the public certificate in the keystore of your Cloud Integration tenant for verifying the response.
+> -   Deploy the public certificate in the keystore of your SAP Cloud Integration tenant for verifying the response.
 > 
 > -   While executing direct SQL queries, it’s recommended to use standard stored procedure method to read XML files.
 > 

@@ -15,7 +15,7 @@ You can develop custom adapters using Adapter SDK in Cloud Integration.
 -   You have Java 8 version.
 -   You are familiar with using Apache Camel and Java.
 -   You have the Camel component and its dependencies as OSGi bundles.
--   You have the camel core runtime version 2.24.2.
+-   You have the camel core runtime version 3.14.
 -   You have the simple logging facade for java \(SLF4J\).
 
 

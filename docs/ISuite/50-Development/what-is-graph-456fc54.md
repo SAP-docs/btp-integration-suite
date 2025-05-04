@@ -27,9 +27,9 @@ As part of SAP Integration Suite, Graph is compatible with SAP's Cloud Applicati
 **Related Information**  
 
 
-[Configure](configure-1b52dd1.md "Before Graph can be used, the Tenant administrator, needs to configure Graph as a capability of API Management within SAP Integration Suite.")
+[Configure](configure-1b52dd1.md "An introduction to the configuration topics of Graph.")
 
 [Model](model-31f8c54.md "It is common knowledge that data-driven software should be modeled on its underlying business processes.")
 
-[Develop](develop-68ce43a.md "As a developer you want to build applications that consume data from business data graphs. This section provides all the information you need to start developing.")
+[Develop](develop-93b23df.md "As a developer, you want to build applications that consume data from business data graphs. This guide provides all the information you need to start developing.")
 

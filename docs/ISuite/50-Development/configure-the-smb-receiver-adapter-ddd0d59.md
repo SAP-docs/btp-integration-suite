@@ -348,6 +348,10 @@ Example: If the file name is`myfile.xml`, the Append MessageId \(for instance, `
 Select to specify behaviour in case the file to be created already exists.
 
 -   *Append* adds the payload to an existing file.
+
+    > ### Note:  
+    > Don't use the *Append* mode if more than one process is appending to an existing file in parallel as this might cause inconsistencies.
+
 -   *Fail* sends an error message in case the file already exists.
 -   *Ignore* disregards the file creation operation without sending any error message.
 -   *Override* replaces existing file by overwriting content with new payload.

@@ -1,6 +1,6 @@
 <!-- loio45610e7b33144b7e9ea81e6cd536519e -->
 
-# Configure the IBM MQ Receiver Adapter
+# Configure the IBM MQ \(REST\) Receiver Adapter
 
 IBM MQ Receiver Adapter allows reliable and convenient publishing of messages to IBM MQ.
 

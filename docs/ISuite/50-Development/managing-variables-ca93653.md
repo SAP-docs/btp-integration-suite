@@ -4,9 +4,12 @@
 
 The *Variables* view allows you to monitor variables used in integration flows.
 
+> ### Tip:  
+> To check which roles have permission to monitor variables, see [Tasks and Permissions for Cloud Integration](../60-Security/tasks-and-permissions-for-cloud-integration-556d557.md).
+
 Choose *Monitor* \> *Integrations and APIs*.
 
-If you have activated Edge Integration Cell, select the target runtime \(*Runtime* parameter\). For more information on how to manage stores for Edge Integration Cell, see [Manage Stores for Edge Integration Cell](../manage-stores-for-edge-integration-cell-ced47da.md) 
+If you have activated Edge Integration Cell, select the target runtime \(*Runtime* parameter\). For more information on how to manage stores for Edge Integration Cell, see [Manage Stores for Edge Integration Cell](../manage-stores-for-edge-integration-cell-ced47da.md).
 
 Choose the *Variables* tile in the *Manage Store*section. You get an overview of the existing variables, with the following attributes.
 
@@ -101,9 +104,6 @@ You can download the variable content or delete the variable.
 </table>
 
 You can filter in the table either by variable name or integration flow.
-
-> ### Note:  
-> To view or download variables you need the authorization `ESBDataStore.readPayload`.
 
 By clicking on the variable name in the table, you can see its content. If the variable content is not defined as a string value, its content cannot be displayed and a message is shown. You can also download the variable by choosing *Download*. If you choose to save the variable, the system creates a `.zip`file, containing the header properties file.
 

@@ -142,14 +142,14 @@ Runtime and Operations
 
 In addition to runtime components for executing integration scenarios and API proxies, Edge Integration Cell also includes management components for edge operations.
 
-Components require connectivity to certain SAP Integration Suite and SAP Business Technology Platform services. Service keys are used to share the connectivity information withEdge Integration Cell components. For security reason, these service keys also need to be rotated as part of the software upgrade. Depending on the service type, keys have different validity timelines.
+Components require connectivity to certain SAP Integration Suite and SAP Business Technology Platform services. Service keys are used to share the connectivity information with Edge Integration Cell components. For security reason, these service keys also need to be rotated as part of the software upgrade. Depending on the service type, keys have different validity timelines.
 
 Edge Deploy Controller accesses the platform’s object store where credentials have a validity of 86 days. In general, service keys need to be rotated after 120 days. Key rotation is integrated in Edge Integration Cell lifecycle operations.
 
 > ### Caution:  
 > If service key rotation is not performed then connectivity to the respective Cloud services stops working. This will impact functionality like content synchronization or specific runtime features.
 
-Edge Local Authentication and Authorization provides inbound local authentication and authorization for Integration Flows and API proxies. It removes the real-time dependency on SAP Business Technology Platform for inbound authentication and authorization. Currently only ervice keys of type Certificate/External Certificate are supported for local authentication and authorization. For more information, see [Edge Local Authentication and Authorization](edge-local-authentication-and-authorization-510d447.md).
+Edge Local Authentication and Authorization provides inbound local authentication and authorization for Integration Flows and API proxies. It removes the real-time dependency on SAP Business Technology Platform for inbound authentication and authorization. Currently only service keys of type Certificate/External Certificate are supported for local authentication and authorization. For more information, see [Edge Local Authentication and Authorization](edge-local-authentication-and-authorization-510d447.md).
 
 
 

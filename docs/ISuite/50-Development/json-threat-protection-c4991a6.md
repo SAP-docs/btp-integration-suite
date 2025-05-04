@@ -42,11 +42,6 @@ On Error
 
 Determines the behavior when an exception or an error occurs during the policy execution. The default value is abort on error.
 
-> ### Note:  
-> The setting *On Error: Continue* will not be obeyed if the size of the incoming request payload is more than 10MB. In such a case, the JSON Threat Protection policy execution will fail with an error.
-
-
-
 </td>
 </tr>
 <tr>

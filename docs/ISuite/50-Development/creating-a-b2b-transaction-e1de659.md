@@ -131,7 +131,86 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
 
     -   ASC X12
 
-    You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md)
+
+    To configure the **interchange number**, maintain the following properties:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Interchange Number*
+
+    \(only configurable if you select *Create Functional Acknowledgement*, either with the option *Check EDI Envelop* or *Required*\)
+    
+    </td>
+    <td valign="top">
+    
+    Trading Partner Management adds the interchange number in the functional acknowledgement of an EDI message. Select one of the following options:
+
+    -   *Use from EDI Message*: Reads the interchange number from the EDI message
+
+    -   *Number Range*: Reads the interchange number from an assigned set of number ranges
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Unique Interchange Number*
+
+    \(only configurable if you selected *Number Range* as the value for field *Interchange Number*\)
+    
+    </td>
+    <td valign="top">
+    
+    Select your desired behavior for generating a unique interchange number while generating an acknowledgement message:
+
+    -   *Required*: The EDI Splitter can generate a unique interchange number, which is the incremented value from the number range object and doesn't depend on the interchange number of the incoming payload.
+
+    -   *Not Required*: Doesn't generate a unique interchange number.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Number Range*
+
+    \(only configurable if you selected *Number Range* as the value for field *Interchange Number*\)
+    
+    </td>
+    <td valign="top">
+    
+    Select the number range assigned to an interchange number in the functional acknowledgement. Number ranges are defined in the corresponding profile.
+
+    If *Unique Interchange Number* is set as *Required*, a new interchange number is generated for every incoming message.
+
+    If *Unique Interchange Number* is set as *Not Required*, a new interchange number is generated only for unique incoming messages. Duplicate incoming messages are assigned the same interchange number for 30 days.
+    
+    </td>
+    </tr>
+    </table>
+    
+    You can view the status of the Functional Acknowledgement through the *Monitor* tab. To learn more, see [Update Agreements](update-agreements-b5e1fc9.md).
 
 14. If you are planning to use custom integration flows for Pre-Processing of your interchange step, then enable the checkbox under *Custom Integration Flow*.
 
@@ -139,7 +218,7 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
 
     This step is carried out using the ProcessDirect adapter. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md).
 
-16. If you want to enable the payload validation, select the checkbox *Enable Payload Validation*under *Validation Option* section.
+16. If you want to enable the payload validation, select the checkbox *Enable Payload Validation* under *Validation Option* section.
 
     1.  If enabled, the generic integration flow will perform a validation check for the sender interchange. And regardless of the outcome, the interchange processing will continue to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
 
@@ -154,7 +233,7 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
 
     If the identifier used in the agreement has **Custom Scheme Code**, then this option will be skipped irrespective of the field selection.
 
-18. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md)
+18. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
 
 19. Similarly, choose the *Communication Channel* on the receiver side and enter a value for the field *Communication*.
 
@@ -191,15 +270,15 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
 
     You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md)
 
-27. If you want to use custom seperators for your payload, enable the *Use Custom Seperators* checkbox and maintain the values for the following fields:
+27. If you want to use custom separators for your payload, enable the *Use Custom Separators* checkbox and maintain the values for the following fields:
 
     This option is available only for UN/EDIFACT and ASC X12 type systems.
 
     1.  Segment Terminator
 
-    2.  Composite Sperator
+    2.  Composite Separator
 
-    3.  Data Element Seperator
+    3.  Data Element Separator
 
     4.  Escape Character
 
@@ -215,13 +294,13 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
 
 31. Select the *Mapping* step of the transaction.
 
-32. Select a mapping guideline and its corresponding version using the value help for the *Mapping Guideline\(MAG\)* field.
+32. Select a mapping guideline and its corresponding version using the value help for the *Mapping Guideline \(MAG\)* field.
 
 33. If you want to custom integration flow for the mapping processing, enable the checkbox for the field *Customized Mapping Processing*.
 
 34. Provide the address of your integration flow in the *Process Direct Address* field.
 
-35. Choose anywhere outside the transaction and the common properties get displayed below the transaction. Choose the *Activity Parameters* tab if you want to add any paramaters to the template.
+35. Choose anywhere outside the transaction and the common properties get displayed below the transaction. Choose the *Activity Parameters* tab if you want to add any parameters to the template.
 
 36. Choose *Add Parameters*. This will display the following options:
 
@@ -229,13 +308,13 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
 
         If you want to know how to add dynamic parameters to a company profile, see [Creating a Company Profile and a Subsidiary](creating-a-company-profile-and-a-subsidiary-909d928.md)
 
-    -   *Create Trading Partner Parameters*: This option allows you to create dynamic parameters for the trading partner profile used in the agreement template.If you have created a *two-way* business transaction, you can choose between *Inbound* or *Outbound* parameters. A dialog box with the *Parameter Key* field is displayed. Enter a value for the field and choose *Save*.
+    -   *Create Trading Partner Parameters*: This option allows you to create dynamic parameters for the trading partner profile used in the agreement template. If you have created a *two-way* business transaction, you can choose between *Inbound* or *Outbound* parameters. A dialog box with the *Parameter Key* field is displayed. Enter a value for the field and choose *Save*.
 
         If you want to know how to add dynamic parameters to a trading partner profile, see [Creating a Trading Partner Profile](creating-a-trading-partner-profile-542fb11.md) 
 
-    -   *Create Activity Parameters*: You can also create your onw activity paramaters using this option. If you have created a *two-way* business transaction, you can choose between *Inbound* or *Outbound* parameters. Maintain the values of the fields *Parameter Key* and *Value* and choose *Save*.
+    -   *Create Activity Parameters*: You can also create your own activity parameters using this option. If you have created a *two-way* business transaction, you can choose between *Inbound* or *Outbound* parameters. Maintain the values of the fields *Parameter Key* and *Value* and choose *Save*.
 
-37. Navigate to the *Custom Search Attirbutes* tab if you want to add any custom search values which are picked up for the B2B monitoring.
+37. Navigate to the *Custom Search Attributes* tab if you want to add any custom search values which are picked up for the B2B monitoring.
 
     Before adding custom search attributes, you need to maintain them in the *Configuration Manager*. To know more, see [Configuration Manager](configuration-manager-7daf06c.md).
 
@@ -326,7 +405,7 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
 
 ## Results
 
-You have now successfully created an agreement template and you can view the template details under the *Agreement Templates* tab. You can also view the administrative information under the tab. To enable those fields, choose *Settings* :gear: icon and select the following fields and choose *OK*:
+You have now successfully created an agreement template and you can view the template details under the *Agreement Templates* tab. You can also view the administrative information under the tab. To enable those fields, choose *Settings* :gear: and select the following fields and choose *OK*:
 
 -   Created By
 

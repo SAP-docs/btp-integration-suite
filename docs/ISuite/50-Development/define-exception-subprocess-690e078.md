@@ -64,6 +64,8 @@ You use this element to catch any exceptions thrown in the integration process a
     > 
     >     -   *Router*
     > 
+    >     -   *Aggregator*
+    > 
     > 
     > -   If a Data Store Write step fails because the entry already exists \(duplicate key exception\), this exception cannot be handled by an Exception subprocess. The reason is that the database transaction is rolled back even if an Exception subprocess is used.
 

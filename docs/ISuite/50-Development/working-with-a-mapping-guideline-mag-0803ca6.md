@@ -59,7 +59,9 @@ There could be scenarios where there are significant differences between the Mes
 
 7.  If you want to search for all XSLT snippets and XPath expressions for a certain text pattern and want the list of mapping elements to be filtered by those elements that contain the search pattern, you can use the *Search* field provided above the *Mapping List* table. Use the search field to enter the function pattern and select :mag: . This will display the list of mapping elements pertaining to that function pattern.
 
-8.  You can add or manage additional information or functions about each element by selecting the mapping entity line.
+8.  To mass validate all mapping elements that include an XSLT snippet, choose *Validate XSLT Snippets* in the header of the mapping list table. Any mapping element with invalid XSLT snippets is then marked as erroneous in the mapping list. The validation applies to the whole mapping list, independent of any active selection. For more details on the error, check the tool tip in the *Status* column or navigate to the details of the erroneous mapping element.
+
+9.  You can add or manage additional information or functions about each element by selecting the mapping entity line.
 
     The mapping also supports various value transformations. To know about these features, see [Value Transformations](value-transformations-19f8374.md)
 

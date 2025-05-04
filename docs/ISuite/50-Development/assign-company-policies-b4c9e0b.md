@@ -26,7 +26,9 @@ Some company policies are **predelivered by SAP**, as signified in the *Created 
 
 1.  Navigate to *Configure* \> *Data Spaces*.
 
-2.  Choose the company policy that you want to assign, then choose *Edit*.
+    In the *Company Policies* tab, you can see a list of company policies, with the column *Assignees* showing the current number of clients a specific company policy is assigned to.
+
+2.  Select the company policy that you want to assign, then choose *Edit*.
 
     Some company policies are **predelivered by SAP**, as signified in the *Created By* column. You can still assign them as they are.
 

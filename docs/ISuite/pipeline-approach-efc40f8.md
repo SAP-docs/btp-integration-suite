@@ -140,11 +140,12 @@ Migrate your integration scenarios from SAP Process Integration and SAP Process 
         > ### Caution:  
         > Deleting a partner or alternative partner may inadvertently affect other scenarios. Ensure to review all dependencies and assess potential impacts before proceeding with the deletion.
 
-    -   **Inbound Processing Integration Flow**: For the JMS receiver adapter, enter a prefix to add to the JMS queue name. The JMS inbound queue for the Integrated Messaging Runtime pipeline is preset to `PIPX01`, with `PIP` being the prefix.
+    -   For the JMS receiver adapter, enter a *JMS Queue Name*. The JMS inbound queue for the Integrated Messaging Runtime pipeline is preset to default pipeline `PIPX01`.
 
         > ### Recommendation:  
         > Use the default pipeline for migration. After the migration, you can update the queue name in your integration flows if you prefer to use another pipeline. See, [JMS Adapter](50-Development/jms-adapter-0993f2a.md).
 
+    -   **Inbound Conversion Integration Flow**: This section appears if the integration flow includes message conversion and mapping steps and uses ProcessDirect as both the sender and receiver adapters. Define an endpoint that the preceding integration flow uses to invoke this integration flow.
     -   **Outbound Processing Integration Flow**: An integration flow is created for each combination of receiver and interface. For each combination, define an endpoint that the preceding integration flow uses to invoke the outbound integration flows. Refer [pipeline concept](https://help.sap.com/docs/migration-guide-po/migration-guide-for-sap-process-orchestration/pipeline-concept) for more details.
 
         > ### Remember:  

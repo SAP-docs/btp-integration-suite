@@ -189,6 +189,11 @@ This component stores data on your tenant. Note that the tenant space is limited
     Select this option to overwrite an existing message in the data store.
 
     Trying to overwrite an existing entry without having this option selected results in a `DuplicateEntryException`.
+
+    > ### Caution:  
+    > In rare cases, selecting this option may still lead to a `DuplicateEntryException`. For more information, see [2982524](https://me.sap.com/notes/2982524).
+
+
     
     </td>
     </tr>

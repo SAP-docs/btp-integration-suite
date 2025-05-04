@@ -1,6 +1,6 @@
 <!-- loio35cd02d2004948fe891f77fdd6480daa -->
 
-# Configure the IBM MQ Sender Adapter
+# Configure the IBM MQ \(REST\) Sender Adapter
 
 IBM MQ Sender Adapter provides the ability to consume messages seamlessly from IBM MQ.
 

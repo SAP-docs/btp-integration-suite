@@ -4,45 +4,43 @@
 
 Connects an SAP Cloud Integration tenant to a remote receiver system using Remote Function Call \(RFC\).
 
-> ### Note:  
-> In the following cases certain features might not be available for your current integration flow:
-> 
-> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
-> 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
-> 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
-
-> ### Note:  
-> This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
-
 You can use Remote Function Call \(RFC\) to integrate on-premise ABAP systems with the systems hosted on the cloud using the Cloud connector, and also with S/4 HANA Cloud system available in public internet.
-
-> ### Note:  
-> Before you can deploy your integration flow, you need to have defined the required RFC destination for your application.
-> 
-> To create destinations you need to either have administrator or developer role in SAP BTP cockpit. For more information on how to create RFC destinations, see [Creating an RFC Destination](creating-an-rfc-destination-3b55fa7.md). Also you need to have the remote function module XSD file. For more information on how to generate XSD file, see [Generating XSD/WSDL for Function Modules Using ESR \(Process Integration\)](generating-xsd-wsdl-for-function-modules-using-esr-process-integration-57a6b6e.md).
-> 
-> Follow the steps to generate WSDL function modules for those who don’t have access to on-premise \(Process Integration\) system:
-> 
-> 1.  Identify the required function module and the backend system to where the function module is called.
-> 
-> 2.  Login to the backend system and start SICF transaction to maintain services for HTTP communication.
-> 
-> 3.  Activate the Internet Communication Framework \(ICF\) service to make it accessible.
-> 
-> 4.  Access the backend application to generate and fetch the WSDL for the desired function module.
-> 
->     `https://<backend_host>:<backend_https_port>/sap/bc/soap/wsdl11?services=<function_module_name>`
 
 RFC executes the function call using synchronous communication, which means that both systems must be available at the time the call is made. When the call is made for the function module using the RFC interface, the calling program must specify the parameters of the connection in the form of an RFC destination. RFC destinations provide the configuration needed to communicate with an on-premise ABAP and S/4 HANA cloud systems through an RFC interface.
 
-The RFC destination configuration settings are used by the SAP JAVA Connector \(SAP JCo\) to establish and manage the connection with on-premise and S/4 HANA cloud system available in public internet. To further understand the destination configuration properties, see [Creating an RFC Destination](creating-an-rfc-destination-3b55fa7.md). While you configure a destination make sure to select `internet` as the proxy type to establish connection with an application over the internet.
+**Prerequisites**
+
+-   Define the required RFC destination for your application.
+
+    To create destinations you need to either have administrator or developer role in SAP BTP cockpit. For more information on how to create RFC destinations, see [Creating an RFC Destination](creating-an-rfc-destination-3b55fa7.md).
+
+    The RFC destination configuration settings are used by the SAP JAVA Connector \(SAP JCo\) to establish and manage the connection with on-premise and S/4 HANA cloud system available in public internet. While you configure a destination make sure to select internet as the proxy type to establish connection with an application over the internet.
+
+-   You must have the remote function module XSD file.
+
+    > ### Tip:  
+    > Follow the steps to generate WSDL function modules for those who don’t have access to on-premise \(Process Integration\) system:
+    > 
+    > 1.  Identify the required function module and the backend system to where the function module is called.
+    > 
+    > 2.  Login to the backend system and start SICF transaction to maintain services for HTTP communication.
+    > 
+    > 3.  Activate the Internet Communication Framework \(ICF\) service to make it accessible.
+    > 
+    > 4.  Access the backend application to generate and fetch the WSDL for the desired function module.
+    > 
+    >     `https://<backend_host>:<backend_https_port>/sap/bc/soap/wsdl11?services=<function_module_name>`
+
+
+**Prerequisites for using adapter on Edge Integration Cell runtime**
+
+-   Create a new RFC destination with Proxy Type Local in BTP Destinations environment. For more information, see [Creating an RFC Destination](creating-an-rfc-destination-3b55fa7.md)
+-   Set up SNC on Edge Integration Cell for productive use of the RFC Adapter. For more information, see [Set Up SNC on Edge Integration Cell](../60-Security/set-up-snc-on-edge-integration-cell-c2315d3.md)
 
 > ### Remember:  
 > -   The RFC adapter supports SAP NetWeaver 7.31 and higher.
 > 
-> -   The RFC adapter supports Synchronous RFC \(sRFC\) and transactional execution of function module \(can execute BAPI\_TRANSACTION\_COMMIT/BAPI\_TRANSACTION\_ROLLBACK\). tRFC is not supported in Cloud Foundry environment.
+> -   The RFC adapter supports Synchronous RFC \(sRFC\) and transactional execution of function module \(can execute BAPI\_TRANSACTION\_COMMIT/BAPI\_TRANSACTION\_ROLLBACK\). tRFC is not supported in Cloud Foundry environment and Edge Integration Cell runtime.
 > 
 > -   From RFC adapter version 1.2.0, function modules that contains "/" in their names are also supported. For these function modules you need to replace "/" with "\_-" \(underscore and hyphen\) in the input XML.
 > 

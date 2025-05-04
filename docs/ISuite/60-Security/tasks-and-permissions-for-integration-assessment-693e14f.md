@@ -137,11 +137,7 @@ Edit/delete Questionnaire
 </td>
 <td valign="top">
 
-IntasQuestionnaire.Read
-
-IntasQuestionnaire.Write
-
-IntasQuestionnaire.Delete
+IntasContentUpdate.Write
 
 </td>
 <td valign="top">

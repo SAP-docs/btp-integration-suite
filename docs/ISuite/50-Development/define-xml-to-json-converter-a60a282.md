@@ -14,11 +14,11 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
 
 -   You are familiar with the conversion rules for XML to JSON conversion.
 
-    For more information see  <?sap-ot O2O class="- topic/xref " href="778aed733e3140cea0435f4615d53812.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    For more information see [Conversion Rules for XML to JSON Conversion](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/778aed733e3140cea0435f4615d53812.html "To ensure a successful conversion from XML format to JSON format, you should make yourself familiar with the conversion rules.") :arrow_upper_right:.
 
 -   You are familiar with the limitations for XML to JSON conversion.
 
-    For more information see  <?sap-ot O2O class="- topic/xref " href="a5b4641c393f406bb544987497c90a72.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    For more information see [Limitations for XML-to-JSON Conversion](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a5b4641c393f406bb544987497c90a72.html "To ensure a successful conversion form XML to JSON format you have to know the limitations for this conversion.") :arrow_upper_right:.
 
 -   You are familiar with streaming for XML to JSON conversion.
 

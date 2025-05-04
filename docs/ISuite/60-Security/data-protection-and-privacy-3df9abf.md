@@ -54,7 +54,7 @@ For more information on the retention times for the various kinds of data stored
 
 -   [Types of Stored Data](types-of-stored-data-183637c.md) and [Specific Data Assets](specific-data-assets-0e4e511.md) \(for Cloud Integration\)
 
--   [\(for Integration Advisor\)](specific-data-assets-a6491d2.md)
+-   [Specific Data Assets](specific-data-assets-a6491d2.md) \(for Integration Advisor\)
 
 -   [Types of Stored Data](types-of-stored-data-c36c7c6.md) and [Specific Data Assets](specific-data-assets-16077ce.md) \(for Trading Partner Management\)
 

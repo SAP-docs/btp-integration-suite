@@ -145,6 +145,8 @@ The supported file types for source and target messages are:
     > 
     >     -   For OpenAPI Spec JSON, you can't use the *Duplicate Subtree* action for a node that is of the type array.
     > 
+    >     -   Outputs are not produced for elements that begin with the character "`@`” and their child elements.
+    > 
     > 
     >     Read the [blog](https://blogs.sap.com/2020/09/16/sap-cloud-integration-swagger-openapi-spec-json-in-message-mapping/) to know more about Swagger/OpenAPI Spec JSON in message mapping.
 
@@ -219,15 +221,24 @@ Now that you've defined the mapping, proceed with further actions.
     4.  To assign a function library object as an user-defined function, see: [Consuming Function Library in Message Mapping](consuming-function-library-in-message-mapping-d4dcb4a.md).
 
 
-6.  Configure the settings of the message mapping to handle basic data types in the target JSON schema.
+6.  Configure the settings of the message mapping to handle basic data type and externally referenced schema in the target JSON schema.
 
     1.  Choose <span class="SAP-icons-V5"></span> \(Settings\).
 
-    2.  In the *Basic Data Type Handling* section, select the target output type that you want.
+    2.  Select the relevant mapping settings that you want.
 
-        If you select *\{“myDataTypeExample” : "true"\}* for an XML source schema, data type in the target value remains as a string. If source schema is JSON, the value is passed on as it is.
+        -   In the *Basic Data Type Handling* section, select the target output type that you want.
 
-        If you select *\{“myDataTypeExample” : true\}*, data type in the target value is parsed as per the basic data type defined in the target JSON schema. In this example, it remains as a boolean.
+            If you select *\{“myDataTypeExample” : "true"\}* for an XML source schema, data type in the target value remains as a string. If source schema is JSON, the value is passed on as it is.
+
+            If you select *\{“myDataTypeExample” : true\}*, data type in the target value is parsed as per the basic data type defined in the target JSON schema. In this example, it remains as a boolean.
+
+        -   In the *External Namespace Handling* section, select how to configure the namespace and prefixes for externally referenced schema.
+
+            If you select *Exclude namespace of referenced schema* for referenced schemas, namespace prefixes are excluded in the message mapping definition and the resulting output. In this scenario, all schema content must be combined into a single file schema.
+
+            If you select *Include namespace of reference schema*, namespace prefixes are included as defined, in the message mapping definition.
+
 
 
 
@@ -241,7 +252,7 @@ After following the steps mentioned, the setup would be similar to the next scre
 
 The highlighted sections briefly explain the various features and behaviors of elements in the mapping viewer.
 
-![](images/Message_Mapping_Editor_343dc18.png)
+![](images/Message_mapping_51f8b72.png)
 
 
 <table>
@@ -367,6 +378,8 @@ You can view the other occurrences by clicking the <span class="SAP-icons-V5">�
 -   <span class="SAP-icons-V5"></span>: This button collapses the whole structure.
 
 -   :pencil2:: This button allows you to edit the entities within the structure.
+
+-   <span class="SAP-icons-V5"></span> : This button allows you to change the relevant mapping settings.
 
 
 

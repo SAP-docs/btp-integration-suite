@@ -44,5 +44,5 @@ Graph functions as a runtime mediation layer. From the perspective of the API co
 
 [Data Locating Policy](50-Development/data-locating-policy-28d2c2c.md "Data in the business data graph is connected via key-based references.")
 
-[Modeling Guide](50-Development/modeling-guide-5e0bb49.md#loio5e0bb49f4d52434bb8377e06dda72c75 "SAP employs a set of best-practice modeling guidelines, known as the SAP One Domain Model guidelines. These guidelines are for the data models of new SAP applications, and are used in this guide as recommendations for creating custom entities.")
+[Model](50-Development/model-31f8c54.md "It is common knowledge that data-driven software should be modeled on its underlying business processes.")
 

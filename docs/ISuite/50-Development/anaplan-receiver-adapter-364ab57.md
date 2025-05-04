@@ -63,6 +63,23 @@ Example: `https://api.anaplan.com`
 <tr>
 <td valign="top">
 
+*Authentication*
+
+</td>
+<td valign="top">
+
+Select the required mode of authentication:
+
+-   *Basic Auth*: Authentication token is obtained via username and password credentials.
+-   *Authorization Code:* OAuth2 Authorization Code to authenticate connection to Anaplan.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Authentication Host*
 
 </td>
@@ -77,7 +94,7 @@ Example: `https://auth.anaplan.com`
 <tr>
 <td valign="top">
 
-*Credential Alias*
+*Credential Name*
 
 </td>
 <td valign="top">

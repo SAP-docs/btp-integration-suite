@@ -10,6 +10,10 @@ You can either add custom loggers individually or mass import a list of loggers.
 
 1.  Choose the add \(:heavy_plus_sign:\) icon in the popup window that opens when you create a new logging task.
 2.  Specify the *Component* and *Log Level*, and provide the *Log Location*.
+
+    > ### Note:  
+    > When creating a new custom logger for the component *Edge Deploy Controller*, you can't edit the log location. That's because Go components don't support fine-granular logging, so the log level applies to the entire component. Therefore, if you import an *Edge Deploy Controller* custom logger, leave the log location empty.
+
 3.  Choose *Add* add the new custom logger. You can repeat the previous steps to add all the custom loggers you need.
 4.  When you're done, you can choose *Run* to initiate the diagnosis.
 

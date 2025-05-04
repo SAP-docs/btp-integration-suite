@@ -239,9 +239,13 @@ To create the service key, do the following:
 You create a role collection and add roles for OData Provisioning, see [Define a Role Collection](https://help.sap.com/docs/btp/sap-business-technology-platform/define-role-collection). Then assign this role collection to the users who have to access and work with the OData Provisioning capability.
 
 1.  Navigate to the subaccount where you've subscribed to SAP Integration Suite on the SAP BTP Cockpit and add the following roles to a role collection:
+
     -   *ODPManage*: View and register OData services. Monitor errors, manage metadata validation and cache settings.
     -   *ODPAPIAccess*: Provides access to the service document. You can access the service document from a link against each of the registered OData services.
     -   *APIFullAccess*: Provides runtime access to the registered OData services.
+
+    > ### Note:  
+    > When you subscribe to the OData Provisioning capability, you can assign several associated roles. However, for the SAP Integration Suite, only the following roles should be assigned:*ODPManage*, *ODPAPIAccess*, *APIFullAccess*.
 
 2.  To assign these roles:
 

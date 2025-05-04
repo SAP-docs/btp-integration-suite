@@ -449,7 +449,10 @@ This is a role that needs to be assigned to a role collection in order to
 
 ### OData Provisioning
 
-Create a role collection and add the roles described here to that role collection before assigning it to the user who will work with this capability. See [Define a Role Collection](https://help.sap.com/docs/btp/sap-business-technology-platform/define-role-collection) 
+Create a role collection and add the roles described here to that role collection before assigning it to the user who will work with this capability. See [Define a Role Collection](https://help.sap.com/docs/btp/sap-business-technology-platform/define-role-collection).
+
+> ### Note:  
+> When you subscribe to the OData Provisioning capability, you can assign several associated roles. However, for the SAP Integration Suite, only the following roles should be assigned:*ODPManage*, *ODPAPIAccess*, *APIFullAccess*.
 
 
 <table>

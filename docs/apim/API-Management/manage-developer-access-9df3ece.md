@@ -50,7 +50,7 @@ To maintain privacy and security, you can grant access to**Authorized Users** wh
 
 2.  Choose *Admin Center* \> *Manage Access* from the top navigation bar.
 
-    ![](images/Manage_Access_SUI_492ece2.png)
+    ![](images/96aa36f2cf404c70b3f1f5189cba5f97.image)
 
 3.  Choose *Edit Access* to manage the level of access for different kinds of users.
 

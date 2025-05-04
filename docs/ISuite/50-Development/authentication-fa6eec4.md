@@ -66,6 +66,9 @@ To create a *Process Integration Runtime* instance:
 
 2.  Fill in the details as shown in the screenshot below and choose *Create*:
 
+    > ### Note:  
+    > The default role assigned is ESBMessaging.send. However, as illustrated in the screenshot below, you can create a custom role and assign it to the instance.
+
     ![](images/Authentication_Policy_5c02dbf.jpg)
 
 3.  Create a *Service Key* associated with the *Process Integration Runtime* service instance.

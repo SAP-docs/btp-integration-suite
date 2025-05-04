@@ -92,7 +92,7 @@ The conversion from XML format to JSON format follows the following rules:
 
 [How Streaming in the XML-to-JSON Converter Works](how-streaming-in-the-xml-to-json-converter-works-4e05044.md "During streaming the XML document is processed in parts or segments:")
 
- <?sap-ot O2O class="- topic/link " href="a5b4641c393f406bb544987497c90a72.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/66d099d0014842299fc91ee5876717a4.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Limitations for XML-to-JSON Conversion](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a5b4641c393f406bb544987497c90a72.html "To ensure a successful conversion form XML to JSON format you have to know the limitations for this conversion.") :arrow_upper_right:
 
  <?sap-ot O2O class="- topic/link " href="e8e0fff0280c4ddb8359e198a2c20c8c.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/66d099d0014842299fc91ee5876717a4.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 

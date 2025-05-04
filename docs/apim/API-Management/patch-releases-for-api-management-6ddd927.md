@@ -6,6 +6,69 @@ This topic provides information on patch releases for API Management that are pr
 
 
 
+<a name="loio6ddd927cbeaa42e384dc903e6002e269__section_v44_jkx_y2c"/>
+
+## April 2025
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.180.3
+
+</td>
+<td valign="top">
+
+This patch resolves issues with updating and transporting APIs that have resource titles exceeding 255 characters.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+1.180.1
+
+</td>
+<td valign="top">
+
+The export functionality was failing for certain tenants due to caching inconsistencies related to the Spring Boot version. Additionally, prediction training was getting stuck in customer environments as a result of large datasets, and API predictions were not returning results for specific models due to incorrect input feature settings in the autoregressive inference logic.
+
+All identified issues have been addressed and resolved to ensure consistent, stable, and accurate system behaviour.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio6ddd927cbeaa42e384dc903e6002e269__section_swg_3z2_q2c"/>
 
 ## March 2025

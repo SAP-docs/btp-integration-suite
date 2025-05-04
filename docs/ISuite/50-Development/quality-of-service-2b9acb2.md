@@ -70,5 +70,31 @@ See: [Quality of Service Exactly Once](quality-of-service-exactly-once-f96cf27.m
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Exactly Once In Order \(EOIO\)
+
+</td>
+<td valign="top">
+
+Guarantees that messages are delivered only once and in the same sequence in which they were sent from the sender system.
+
+See: [Quality of Service Exactly Once In Order](quality-of-service-exactly-once-in-order-e1ef22e.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Handled by Integration Flow
+
+</td>
+<td valign="top">
+
+Quality of service is managed within the integration flow itself, and the adapter doesn't add any quality of service handling \(such as retry storage or duplicate checks\).
+
+</td>
+</tr>
 </table>
 

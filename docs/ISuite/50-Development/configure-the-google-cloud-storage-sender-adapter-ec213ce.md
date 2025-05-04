@@ -16,7 +16,7 @@ If you have configured the Google Cloud Storage Sender Adapter, data exchange is
 
 <a name="loioec213ce5e195424fb68a2bb42b0a4a8b__section_k23_rnh_h2c"/>
 
-## Configure the Google Pub/Sub Sender Adapter
+## Configure the GoogleCloud Storage Sender Adapter
 
 **Connection**
 
@@ -46,6 +46,13 @@ Specify the hostname pointing to the Google Cloud Storage service.
 
 Default: `https://storage.googleapis.com`
 
+> ### Note:  
+> When *Proxy Type* is set to *On-Premise*, you must use virtual
+> 
+> host and port from cloud connector.
+
+
+
 </td>
 </tr>
 <tr>
@@ -65,6 +72,8 @@ Select the method for authentication to Google Cloud Storage. Currently *OAuth2 
 
 *OAuth2 Token URL*
 
+\(only when *Authentication Type* is set to *OAuth2 Service Account*\)
+
 </td>
 <td valign="top">
 
@@ -78,6 +87,8 @@ Example: `https://www.googleapis.com/oauth2/v4/token`
 <td valign="top">
 
 *Client Email*
+
+\(only when *Authentication Type* is set to *OAuth2 Service Account*\)
 
 </td>
 <td valign="top">
@@ -93,6 +104,8 @@ Example: `limited-svc-account@192843.iam.gserviceaccount.com`
 
 *Private Key Alias*
 
+\(only when *Authentication Type* is set to *OAuth2 Service Account*\)
+
 </td>
 <td valign="top">
 
@@ -105,12 +118,157 @@ Specify the Google Service Account Private Key for authentication.
 
 *Scope*
 
+\(only when *Authentication Type* is set to *OAuth2 Service Account*\)
+
 </td>
 <td valign="top">
 
 Specify the scope of the connection to Google Cloud Storage service.
 
-Default: `devstorage.full_control`
+Default: `https://storage.googleapis.com/auth/devstorage.full_control`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft Entra ID Credential Name*
+
+\(only when *Authentication Type* is set to *Workload Identity Federation*\)
+
+</td>
+<td valign="top">
+
+Specify the Oauth2 Client Credentials security artifact created for Microsoft Entra ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*STS Token URL*
+
+\(only when *Authentication Type* is set to *Workload Identity Federation*\)
+
+</td>
+<td valign="top">
+
+Specify the Security Token Service URL.
+
+Example: `https://sts.googleapis.com/v1/token`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*STS Audience*
+
+\(only when *Authentication Type* is set to *Workload Identity Federation*\)
+
+</td>
+<td valign="top">
+
+Specify the audience i.e. the full resource name of the identity provider.
+
+Example: `//iam.googleapis.com/projects/<project-number>/locations/global/workloadIdentityPools/<pool-id>/providers/<provider-id>`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*STS Scopes*
+
+\(only when *Authentication Type* is set to *Workload Identity Federation*\)
+
+</td>
+<td valign="top">
+
+Specify the OAuth 2.0 scopes to include on the resulting access token, formatted as a list of space-delimited, case-sensitive strings.
+
+Example: `https://www.googleapis.com/auth/cloud-platform`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*STS Options*
+
+\(only when *Authentication Type* is set to *Workload Identity Federation*\)
+
+</td>
+<td valign="top">
+
+Specify the additional options to use in the STS token call.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Use Service Account Impersonation*
+
+\(only when *Authentication Type* is set to *Workload Identity Federation*\)
+
+</td>
+<td valign="top">
+
+Enable to use Service Account Impersonation.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Access Token URL*
+
+\(only when *Use Service Account Impersonation* is enabled\).
+
+</td>
+<td valign="top">
+
+Specify the URL for generating access token with Service Account Impersonation.
+
+Example: `https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}:generateAccessToken`
+
+> ### Note:  
+> The - wildcard character is required; replacing it with a project ID is invalid.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Service Account Impersonation Scopes*
+
+\(only when *Use Service Account Impersonation* is enabled\).
+
+</td>
+<td valign="top">
+
+Specify the comma-separated scopes to be included in the resulting OAuth 2.0 access token.
+
+Example: `https://www.googleapis.com/auth/pubsub,https://www.googleapis.com/auth/cloud-platform`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Delegates*
+
+\(only when *Use Service Account Impersonation* is enabled\).
+
+</td>
+<td valign="top">
+
+Specify the comma-separated sequence of service accounts in a delegation chain.
+
+`Example: projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`
 
 </td>
 </tr>
@@ -129,12 +287,29 @@ Specify the Polling Interval \(in ms\).
 <tr>
 <td valign="top">
 
+*Proxy*
+
+</td>
+<td valign="top">
+
+Specify the proxy type:
+
+-   *Internet*
+-   *On-Premise*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Reuse Connection*
 
 </td>
 <td valign="top">
 
-Enable the reuse of connection objects from the internal connection pool which in turn improves the network turnaround time for multiple communications to a same end point.
+Enable the reuse of connection objects from the internal connection pool which in turn improves the network turnaround time for multiple communications to the same end point.
 
 </td>
 </tr>
@@ -238,14 +413,12 @@ Enable to search all subdirectories under the directory.
 </td>
 <td valign="top">
 
-Specify the key value pairs \(comma separated\) to be used as query parameters.
+Specify the key value pairs \(& separated\) to be used as query parameters.
 
 Example: `prefix=test&delimiter=/`
 
 > ### Note:  
-> -   For *Create* operation for *Folders*, avoid using query parameter as it conflicts with *Create Parent Folders* option.
-> 
-> -   Don’t use alt query parameter as it conflicts with the adapter’s response.
+> Don’t use alt query parameter as it conflicts with the adapter’s response.
 
 
 

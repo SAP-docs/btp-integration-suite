@@ -41,7 +41,7 @@ Assuming that you have designed an integration flow with a JMS sender adapter. O
 > ### Note:  
 > Certain constraints apply with regard to the number and capacity of queues involved, as well as for the headers and exchange properties defined in the integration flow before the message is saved to the queue, see [JMS Resource Limits and Optimizing their Usage](jms-resource-limits-and-optimizing-their-usage-4857054.md).
 
-Property `SAP_IntegrationFlowID` contains the ID of the integration flow that sent the message to the JMS queue, see .
+Property `SAP_IntegrationFlowID` contains the ID of the integration flow that sent the message to the JMS queue.
 
 Once you've created a sender channel and selected the JMS sender adapter, you can configure the following attributes, see [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 

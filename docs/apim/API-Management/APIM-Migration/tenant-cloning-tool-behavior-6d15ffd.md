@@ -32,4 +32,9 @@ This topic describes the behavior of the Tenant Cloning Tool with respect to clo
 
 -   During migration, the Key Value Map keys and values from the source override those in the target.
 
+-   In Neo environment, API Management APIs are accessed programmatically using basic authentication. While on Cloud Foundry, these APIs are accessed programmatically using the API access plan. For more info, see [Accessing API Management APIs Programmatically](../APIM-Initial-Setup/accessing-api-management-apis-programmatically-24a2c37.md).
+
+
+> ### Note:  
+> Non-SNI clients are not supported in Cloud Foundry.
 

@@ -92,6 +92,77 @@ API Management
 </td>
 <td valign="top">
 
+Displaying Security Definitions from OpenAPI Specifications on the API References Page
+
+</td>
+<td valign="top">
+
+In the Developer Hub, security definitions defined in the OpenAPI Specifications can now be rendered on the API references page. This enhancement not only streamlines API documentation but also makes it easier for developers to understand and integrate APIs into their applications. For more details, see [Consume APIs](https://help.sap.com/docs/integration-suite/sap-integration-suite/consume-apis?version=CLOUD).
+
+SAP API Management customers choose: [Consume APIs](https://help.sap.com/docs/sap-api-management/sap-api-management/consume-apis?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-05-04
+
+</td>
+<td valign="top">
+
+2025-05-04
+
+</td>
+<td valign="top">
+
+2503
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Discover and Publish Events from Business Systems on Developer Hub 
 
 </td>

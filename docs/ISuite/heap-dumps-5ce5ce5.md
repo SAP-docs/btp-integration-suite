@@ -32,6 +32,10 @@ You can also run the analysis subsequently when creating a new heap dump diagnos
 1.  Choose *Create Diagnostic Task* and select *Heap Dump* from the dropdown list.
 2.  In the new dialog box, add the relevant information that SAP Support provided for your diagnosis.
 3.  Use the *Subsequent Heap Dump Analysis* switch to decide whether to run an analysis automatically after the dump. By default, this switch is *on*. You can switch off the subsequent analysis and still have the option to run it later.
+
+    > ### Note:  
+    > Subsequent heap dump analysis isn't available for Go components. Therefore, a heap dump task for *Edge Deploy Controller* moves directly into status *Completed* and you can't start any analysis for it.
+
 4.  Choose *Run*.
 5.  A new diagnostic session starts in your Edge Integration Cell, and a Kubernetes job creates in the background. The new task appears in the *Diagnostics* table with the status *Analysis Starting* .
 6.  The analysis is running, with the status *Analysing* .

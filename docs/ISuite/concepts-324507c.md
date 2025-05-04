@@ -66,11 +66,11 @@ Extraction status
 
 A state that designates if issues occurred during a data extraction that could impact the scenario evaluation. The following extraction statuses exist:
 
--   *Completed*: Your data was extracted without issues and is ready for evaluation.
+-   *Extracted*: Your data was extracted without issues and is ready for evaluation.
 
--   *Completed with warnings*: Parts of your data weren't extracted correctly, but can still be evaluated. For details, see the extraction log.
+-   *Extracted with warnings*: Parts of your data weren't extracted correctly, but can still be evaluated. For details, see the extraction log.
 
--   *Completed with errors*: Parts of your data weren't extracted and can't be evaluated. If you trigger a scenario evaluation for this data extraction, it leaves out the erroneous data. You can fix the issues described in the extraction log in your SAP Process Orchestration system and create a new data extraction afterwards.
+-   *Extracted with errors*: Parts of your data weren't extracted and can't be evaluated. If you trigger a scenario evaluation for this data extraction, it leaves out the erroneous data. You can fix the issues described in the extraction log in your SAP Process Orchestration system and create a new data extraction afterwards.
 
 
 

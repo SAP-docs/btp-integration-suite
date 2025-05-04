@@ -165,7 +165,9 @@ Data Space Integration relies on Cloud Integration and thus Cloud Foundry for da
 
 8.  Create a service key for this service instance as described in [Creating Service Key](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/creating-service-instance-and-service-key-for-inbound-authentication#creating-service-key).
 
-9.  Now, you can proceed by creating the second service instance with the `integration-flow` plan. Make sure to specify the following parameters and leave all other parameters unchanged:
+9.  Now, you can proceed by creating the second service instance with the `integration-flow` plan.
+
+    In the second step, remove the predefined role *ESBMessaging.send*, and instead specify the following parameters:
 
 
     <table>

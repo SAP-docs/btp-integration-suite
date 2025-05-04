@@ -138,6 +138,10 @@ Value mapping
 
 Delete global code value mapping
 
+Delete global code value mapping entity
+
+Delete global code value mapping version
+
 </td>
 <td valign="top">
 
@@ -206,6 +210,33 @@ Delete license
 <td valign="top">
 
 [Managing Licence for Type Systems](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/ed1e961c636f4835aaa7248cf2488112.html "") :arrow_upper_right: 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Customer Codelist
+
+</td>
+<td valign="top">
+
+Delete customer codelist entity
+
+Delete customer codelist version
+
+</td>
+<td valign="top">
+
+-   Customer Codelist
+-   deleted successfully/deletion failed
+
+
+
+</td>
+<td valign="top">
+
+[Deleting a Custom Codelist](../50-Development/deleting-a-custom-codelist-01ad9ee.md)
 
 </td>
 </tr>

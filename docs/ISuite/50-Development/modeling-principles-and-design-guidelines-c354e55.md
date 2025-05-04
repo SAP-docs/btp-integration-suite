@@ -1,14 +1,6 @@
-<!-- loio5e0bb49f4d52434bb8377e06dda72c75 -->
-
-# Modeling Guide
-
-SAP employs a set of best-practice modeling guidelines, known as the SAP One Domain Model guidelines. These guidelines are for the data models of new SAP applications, and are used in this guide as recommendations for creating custom entities.
-
-<a name="loioc354e55333e8433ab67ea6a02010f396"/>
-
 <!-- loioc354e55333e8433ab67ea6a02010f396 -->
 
-## Modeling Principles and Design Guidelines
+# Modeling Principles and Design Guidelines
 
 
 

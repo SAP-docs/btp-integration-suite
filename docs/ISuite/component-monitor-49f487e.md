@@ -144,12 +144,17 @@ You can perform the following actions on the selected component. Depending on th
 -   *Create Thread Dump Diagnostic Task*. Diagnose unequal resource usage that may cause system slowness for the selected pod. For more information, see [Diagnostics](diagnostics-80f3050.md).
 
     > ### Note:  
-    > The **Create Heap** and *Thread Dump Diagnostic Tasks* actions become available for components that support *Diagnostics* \(*Edge API App*, *Monitoring Data Consumer*, and *Edge Security Artifact Controller*\). The menu is enabled when the pod is in the *Running* status and when the number of target containers matches the number in the *Ready* column.
+    > The **Create Heap** and *Thread Dump Diagnostic Tasks* actions become available for components that support *Diagnostics* \(*Edge API App*, *Monitoring Data Consumer*, *Edge Deploy Controller*, and *Edge Security Artifact Controller*\). The menu is enabled when the pod is in the *Running* status and when the number of target containers matches the number in the *Ready* column.
 
 -   *Invalidate Access Token Cache*. Manually invalidate access tokens to streamline authorization changes. By invalidating access tokens, you ensure that the system doesn't reuse old tokens from the cache when you change role assignments. Instead, it generates new tokens accordingly. This way, the authorization changes become effective without delay.
 
     > ### Note:  
     > This action is enabled in the menu of the Policy Engine component.
+
+-   *Rotate Signing Key*.View the names and validity dates of both the currently active and previous \(deprecated\) keys for the*Edge Local Authentication and Authorization* component. You can choose *Rotate* to deprecate the current key and generate a new one. To preserve active requests, the deprecated key can still verify already issued tokens. However, after a 10-minute grace period following the signing key rotation, it can't sign new tokens anymore. For more information, see [Manually Rotate Signing Keys of Access Tokens](60-Security/manually-rotate-signing-keys-of-access-tokens-0e38815.md).
+
+    > ### Caution:  
+    > In the confirmation popup, there's an option to purge the key. This means that a new *Active* signing key is created and it can be used for signing and verifying access tokens without any grace period. Use this option only in exceptional cases, like when a private key is compromised. This operation might cause active requests to fail, as tokens can't be verified anymore.
 
 
 

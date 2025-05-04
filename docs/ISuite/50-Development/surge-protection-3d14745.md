@@ -87,7 +87,7 @@ Duration Unit
 
 Represents the unit of time used along with interval.
 
-Supported units are second, minute, hour, day, week, or month.
+Supported units are seconds, and milliseconds.
 
 </td>
 </tr>
