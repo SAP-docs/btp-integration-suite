@@ -55,6 +55,11 @@ Specify the hostname pointing to the Google Pub/Sub service.
 
 Example: `https://pubsub.googleapis.com`
 
+> ### Note:  
+> When *Proxy Type* is set to *On-Premise*, you must use virtual host and port from cloud connector.
+
+
+
 </td>
 </tr>
 <tr>
@@ -65,7 +70,12 @@ Example: `https://pubsub.googleapis.com`
 </td>
 <td valign="top">
 
-Select the method for authentication to Google Pub/Sub. Currently *Currently OAuth2 Service Account* is supported.
+Select the method for authentication to Google Pub/Sub:
+
+-   *OAuth2 Service Account*
+-   *Workload Identity Federation*
+
+
 
 </td>
 </tr>
@@ -73,6 +83,8 @@ Select the method for authentication to Google Pub/Sub. Currently *Currently OAu
 <td valign="top">
 
 *OAuth2 Token URL*
+
+\(only available when *Authentication Type* is set to *OAuth2 Service Account*\)
 
 </td>
 <td valign="top">
@@ -88,6 +100,8 @@ Example: `https://www.googleapis.com/oauth2/v4/token`
 
 *Client Email*
 
+\(only available when *Authentication Type* is set to *OAuth2 Service Account*\)
+
 </td>
 <td valign="top">
 
@@ -102,6 +116,8 @@ Example: `limited-svcaccount@192843.iam.gserviceaccount`
 
 *Private Key Alias*
 
+\(only available when *Authentication Type* is set to *OAuth2 Service Account*\)
+
 </td>
 <td valign="top">
 
@@ -114,12 +130,157 @@ Specify the alias for Google Service Account Private Key for authentication.
 
 *Scope*
 
+\(only available when *Authentication Type* is set to *OAuth2 Service Account*\)
+
 </td>
 <td valign="top">
 
 Specify the scope of the connection to Google Pub/Sub service.
 
 Default: `https://www/googleapis/auth/pubsub`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft Entra ID Credential Name*
+
+\(only available when *Authentication Type* is set to *Workload Identity Federation*\)
+
+</td>
+<td valign="top">
+
+Specify the Oauth2 Client Credentials security artifact created for Microsoft Entra ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*STS Token URL*
+
+\(only available when *Authentication Type* is set to *Workload Identity Federation*\)
+
+</td>
+<td valign="top">
+
+Specify the Security Token Service URL.
+
+Example: `https://sts.googleapis.com/v1/token`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*STS Audience*
+
+\(only available when *Authentication Type* is set to *Workload Identity Federation*\)
+
+</td>
+<td valign="top">
+
+Specify the audience i.e. the full resource name of the identity provider.
+
+Example: `//iam.googleapis.com/projects/<project-number>/locations/global/workloadIdentityPools/<pool-id>/providers/<provider-id>`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*STS Scopes*
+
+\(only available when *Authentication Type* is set to *Workload Identity Federation*\)
+
+</td>
+<td valign="top">
+
+Specify the OAuth 2.0 scopes to include on the resulting access token, formatted as a list of space-delimited, case-sensitive strings.
+
+Example: `https://www.googleapis.com/auth/pubsub`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*STS Options*
+
+\(only available when *Authentication Type* is set to *Workload Identity Federation*\)
+
+</td>
+<td valign="top">
+
+Specify the additional options to use in the STS token call.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Use Service Account Impersonation*
+
+\(only available when *Authentication Type* is set to *Workload Identity Federation*\)
+
+</td>
+<td valign="top">
+
+Enable to use Service Account Impersonation.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Access Token URL*
+
+\(only available when *Use Service Account Impersonation* is enabled\).
+
+</td>
+<td valign="top">
+
+Specify the URL for generating access token with Service Account Impersonation.
+
+Example: `https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}:generateAccessToken`
+
+> ### Note:  
+> The - wildcard character is required; replacing it with a project ID is invalid.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Service Account Impersonation Scopes*
+
+\(only available when *Use Service Account Impersonation* is enabled\).
+
+</td>
+<td valign="top">
+
+Specify the comma-separated scopes to be included in the resulting OAuth 2.0 access token.
+
+Example: `https://www.googleapis.com/auth/pubsub,https://www.googleapis.com/auth/cloud-platform`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Delegates*
+
+\(only available when *Use Service Account Impersonation* is enabled\).
+
+</td>
+<td valign="top">
+
+Specify the comma-separated sequence of service accounts in a delegation chain.
+
+`Example: projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`
 
 </td>
 </tr>
@@ -191,6 +352,9 @@ Select the action to be performed after polling a message:
 -   *Acknowledge Immediately*
 -   *Do not Acknowledge*
 
+> ### Note:  
+> For gRPC, *Do not Acknowledge* is only meant for testing and is not recommended for a production scenario.
+
 
 
 </td>
@@ -207,6 +371,11 @@ Specify the expiry time in milliseconds while handling the Duplicate check.
 
 The default value is 300000.
 
+> ### Note:  
+> Duplicate Check uses the Google PubSub message id to suppress the duplicates. This is only valid for success scenarios.
+
+
+
 </td>
 </tr>
 </table>
@@ -222,12 +391,12 @@ The default value is 300000.
 <tr>
 <th valign="top">
 
- 
+Parameter
 
 </th>
 <th valign="top">
 
- 
+Description
 
 </th>
 </tr>
@@ -243,6 +412,11 @@ Specify the hostname pointing to the Google Pub/Sub service.
 
 Example: `https://pubsub.googleapis.com`
 
+> ### Note:  
+> When *Proxy Type* is set to *On-Premise*, you must use virtual host and port from cloud connector.
+
+
+
 </td>
 </tr>
 <tr>
@@ -253,7 +427,12 @@ Example: `https://pubsub.googleapis.com`
 </td>
 <td valign="top">
 
-Select the method for authentication to Google Pub/Sub. Currently *Currently OAuth2 Service Account* is supported.
+Select the method for authentication to Google Pub/Sub:
+
+-   *OAuth2 Service Account*
+-   *Workload Identity Federation*
+
+
 
 </td>
 </tr>
@@ -261,6 +440,8 @@ Select the method for authentication to Google Pub/Sub. Currently *Currently OAu
 <td valign="top">
 
 *OAuth2 Token URL*
+
+\(only available when *Authentication Type* is set to *OAuth2 Service Account*\)
 
 </td>
 <td valign="top">
@@ -276,6 +457,8 @@ Example: `https://www.googleapis.com/oauth2/v4/token`
 
 *Client Email*
 
+\(only available when *Authentication Type* is set to *OAuth2 Service Account*\)
+
 </td>
 <td valign="top">
 
@@ -290,6 +473,8 @@ Example: `limited-svcaccount@192843.iam.gserviceaccount`
 
 *Private Key Alias*
 
+\(only available when *Authentication Type* is set to *OAuth2 Service Account*\)
+
 </td>
 <td valign="top">
 
@@ -301,6 +486,8 @@ Specify the alias for Google Service Account Private Key for authentication.
 <td valign="top">
 
 *Scope*
+
+\(only available when *Authentication Type* is set to *OAuth2 Service Account*\)
 
 </td>
 <td valign="top">
@@ -320,6 +507,37 @@ Default: `https://www/googleapis/auth/pubsub`
 <td valign="top">
 
 Enable to reuse this connection.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy*
+
+</td>
+<td valign="top">
+
+Specify the proxy type:
+
+-   *Internet*
+-   *On-Premise*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Location ID*
+
+\(only available when *Proxy* is set to *On-Premise*\)
+
+</td>
+<td valign="top">
+
+Specify the Location ID from Cloud Connector.
 
 </td>
 </tr>
@@ -452,6 +670,11 @@ Select the action to be performed after polling a message:
 Specify the expiry time in milliseconds while handling the Duplicate check.
 
 The default value is 300000.
+
+> ### Note:  
+> Duplicate Check uses the Google PubSub message id to suppress the duplicates. This is only valid for success scenarios.
+
+
 
 </td>
 </tr>

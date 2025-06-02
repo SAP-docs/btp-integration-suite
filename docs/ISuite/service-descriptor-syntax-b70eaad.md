@@ -57,7 +57,7 @@ You can use the following attributes in your service descriptor:
 >         }
 >     },
 >     "resources": {
->         "units": "10"
+>         "units": 10
 >     },
 >     "version": "1.1.0",
 >     "emname": "em-healthcheck",

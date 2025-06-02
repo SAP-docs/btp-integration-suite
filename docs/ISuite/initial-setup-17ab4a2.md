@@ -10,15 +10,17 @@ As a Subaccount or Tenant Administrator, you need to add Graph as a capability o
 
 ## Prerequisites
 
-1.  Your SAP BTP Global Account administrator has already created a subaccount. For more information, see [Create a Subaccount.](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/05280a123d3044ae97457a25b3013918.html)
+1.  Your SAP BTP Global Account administrator has already created a subaccount. For more information, see [Create a Subaccount](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/05280a123d3044ae97457a25b3013918.html).
 
-2.  An SAP Integration Suite entitlement has been created for your subaccount. For more information, see [Configure Entitlements](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).
+2.  The subaccount is in SAP BTP, Cloud Foundry environment with enabled Cloud Foundry.
 
-3.  You have subscribed to the SAP Integration Suite and assigned the *Integration\_Provisioner* role collection to yourself. You must assign this role to add capabilities, such as API Management and Graph, on the Integration Suite home page.
+3.  An SAP Integration Suite entitlement has been created for your subaccount. For more information, see [Configure Entitlements](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).
+
+4.  You have subscribed to the SAP Integration Suite and assigned the *Integration\_Provisioner* role collection to yourself. You must assign this role to add capabilities, such as API Management and Graph, on the SAP Integration Suite home page.
 
     For more information, see [Set Up API Management from Integration Suite](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html#0bc64de0-ed01-4d11-a675-6dd6942f909e)\(Steps 1–3\).
 
-4.  You have activated Graph on the Integration Suite home page and assigned yourself to the following Graph role collection:
+5.  You have activated Graph on the SAP Integration Suite home page and assigned yourself to the following Graph role collection:
 
     -   *Graph.KeyUser*
 
@@ -41,28 +43,33 @@ Your global account administrator is responsible for configuring the Graph entit
 
 1.  Go to *Entitlements* in the SAP BTP cockpit.
 
-2.  Choose *Configure Entitlements* \> *Add Service Plans*.
+2.  Choose *Edit* \> *Add Service Plans*.
 
 3.  Search for and choose *SAP Graph* and do the following:
 
-    1.  Choose one or more of the following plans:
+    > ### Note:  
+    > Some services are only available in the Cloud Foundry environment, so your subaccount must be Cloud Foundry-enabled.
 
-        -   *api* for business data graph consumption
+    1.  *configuration* to configure business data graphs using the Graph Configuration API.
 
-        -   *configuration* to configure business data graphs using the Graph Configuration API.
+4.  Search for *Process Integration Runtime* and choose the following plan:
+
+    1.  *integration-flow* under the Process Integration Runtime service for business data graph consumption.
+
+        > ### Note:  
+        > Do not choose the *api* service plan.
 
 
-    2.  Choose *Add Service Plan*.
-
-    3.  Choose *Save*.
+5.  Choose *Add Service Plan* \> *Save*.
 
 
+For more information on how to create a *Process Integration Runtime* instance, see [Authentication](50-Development/authentication-79aabda.md).
 
 
 
 <a name="copy17ab4a2364e84370bc8dfb042de9f3a1__section_AddGraph_APIM"/>
 
-## 2. Activate Graph on Integration Suite 
+## 2. Activate Graph on SAP Integration Suite 
 
 1.  Go to the *Integration Suite* home page, and under *Capabilities*, choose *Add Capabilities*.
 2.  On the *Activate Capabilities* dialog, under *Select Capabilities*, choose *Design, Develop, and Manage APIs* and choose *Next*.
@@ -113,7 +120,7 @@ Once you enable Graph, you see all of the Graph role collections in your list.
 
     3.  Search for *Graph.KeyUser*, select the role collection, and choose *Assign Role Collection*.
 
-    4.  To apply the role, go back to the Integration Suite home page.
+    4.  To apply the role, go back to the SAP Integration Suite home page.
 
 
 -   Graph Navigator Viewer
@@ -128,7 +135,7 @@ Once you enable Graph, you see all of the Graph role collections in your list.
 
     3.  Search for *GraphNavigator.Viewer*, select the role collection, and choose *Assign Role Collection*.
 
-    4.  To apply the role, go back to the Integration Suite home page.
+    4.  To apply the role, go back to the SAP Integration Suite home page.
 
 
 -   Graph Guest
@@ -141,7 +148,7 @@ Once you enable Graph, you see all of the Graph role collections in your list.
 
     3.  Search for *Graph.Guest*, select the role collection, and choose *Assign Role Collection*.
 
-    4.  To apply the role, go back to the Integration Suite home page.
+    4.  To apply the role, go back to the SAP Integration Suite home page.
 
 
 

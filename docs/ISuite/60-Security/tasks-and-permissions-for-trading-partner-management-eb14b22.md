@@ -236,6 +236,34 @@ Business Expert
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
+Execute operational tasks for interchanges:
+
+-   Retry
+-   Restart
+-   Cancel
+
+
+
+</td>
+<td valign="top">
+
+PI\_Business\_Expert
+
+</td>
+<td valign="top">
+
+Business Expert
+
+</td>
+</tr>
 </table>
 
 To know more about the tasks and permissions involved in Cloud Integration, see [Task and Permissions](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fda781c59e4b46a390ce5b409f60365e.html).

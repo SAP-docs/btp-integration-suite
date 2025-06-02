@@ -4,6 +4,8 @@
 
 In addition to anomaly detection, we have now introduced *Predictions*, an AI-based feature that can forecast future API call volumes based on past call data. With this new feature, you can identify trends in API traffic and view predictions for upcoming API call volumes. Predictions are available for all API proxies that meet the minimum data requirement of at least 3 months of API call volume data. Additionally, it offers customizable options, allowing you to select specific API proxies, choose the prediction duration, and set the frequency according to your preferences.
 
+The **Predictions** feature is associated with Anomaly Detection. To activate it, see [Enabling Anomaly Detection and Predictions](enabling-anomaly-detection-and-predictions-98534a0.md).
+
 > ### Note:  
 > The availability of the anomaly detection and prediction features depends on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620).
 
@@ -20,4 +22,11 @@ Here, the frequency is set to **Every Hour of the Day**. As you can see, the exp
 ![](images/TrendsGraphHourExample_ff8fc08.png)
 
 These insights can help to optimize resource allocation, manage system load, and make informed decisions about your API strategy.
+
+**Related Information**  
+
+
+[Enabling Anomaly Detection and Predictions](enabling-anomaly-detection-and-predictions-98534a0.md "Activate the anomaly detection and prediction features for API proxy calls to enhance monitoring and forecasting capabilities.")
+
+[Viewing Predictions and Trends](viewing-predictions-and-trends-47f349c.md "Analyze potential API call traffic and identify trends.")
 

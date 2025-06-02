@@ -192,6 +192,21 @@ There are the following options:
 
     Note that when this authentication option is selected, the required security artifact \(**Private Key in Keystore**\) has to be deployed on the tenant.
 
+-   *Principal Propagation* 
+
+    The tenant authenticates itself against the receiver by forwarding the principal of the inbound user to the cloud connector, and from there to the back end of the relevant on-premise system. You can only use principal propagation if you have selected *On Premise* as *Proxy-Type* and *Best Effort* as the *Quality of Service*.
+
+    > ### Remember:  
+    > When you want to use Principal Propagation as the authentication method to connect with an on-premise system, don't pass any authorization headers. Follow the approach recommended by SAP BTP Connectivity. See: [Authentication to the On-Premise System](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/67b0b94f09f2446598787eea0855e56b.html).
+
+    > ### Note:  
+    > This authentication method can only be used with the following sender adapters: HTTP, SOAP, IDoc, XI sender \(and Quality-of-Service Best Effort\).
+
+    > ### Note:  
+    > The token for principal propagation expires after 30 minutes.
+    > 
+    > If it takes longer than 30 minutes to process the data between the sender and receiver channel, the token for principal propagation expires, which leads to errors in message processing.
+
 
 
 

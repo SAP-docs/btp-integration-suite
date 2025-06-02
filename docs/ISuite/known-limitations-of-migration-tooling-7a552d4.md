@@ -33,20 +33,6 @@ Parameterized message mappings from ES Repository can be imported with certain l
 <tr>
 <td valign="top">
 
-XSLT Mapping
-
-</td>
-<td valign="top">
-
-Extensions are not imported automatically during the migration. You must manually import them. For example, the usage of `xmlns:ext` reference.
-
-![Example of a reference that can be removed in the XSLT mapping.](images/XSLT-mapping-limitation_91615b8.png)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 CSV to XML Converter
 
 XML to CSV Converter

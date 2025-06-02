@@ -74,7 +74,7 @@ Tasks
 </td>
 <td valign="top">
 
-Refer to [Read-Only Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__read_suite) for the tasks.
+Refer to [Read-Only Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/persona-2937e5ca6ef448cfb21451a2461cc2a6?q=persona&state=DRAFT&version=DEV) for the tasks.
 
 </td>
 </tr>
@@ -86,7 +86,7 @@ Refer to [Read-Only Persona](https://help.sap.com/docs/integration-suite/sap-int
 </td>
 <td valign="top">
 
-Refer to [Business Expert Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__bus_suite) for the tasks.
+Refer to [Business Expert Persona](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fhelp.sap.com%2Fdocs%2Fintegration-suite%2Fsap-integration-suite%2Fpersona-2937e5ca6ef448cfb21451a2461cc2a6%3Flocale%3Den-US%26q%3Dpersona%26state%3DDRAFT%26version%3DDEV) for the tasks.
 
 </td>
 </tr>
@@ -98,7 +98,7 @@ Refer to [Business Expert Persona](https://help.sap.com/docs/integration-suite/s
 </td>
 <td valign="top">
 
-Refer to [Integration Developer Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__dev_suite) for the tasks.
+Refer to [Integration Developer Persona](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fhelp.sap.com%2Fdocs%2Fintegration-suite%2Fsap-integration-suite%2Fpersona-2937e5ca6ef448cfb21451a2461cc2a6%3Flocale%3Den-US%26q%3Dpersona%26state%3DDRAFT%26version%3DDEV) for the tasks.
 
 </td>
 </tr>
@@ -110,7 +110,7 @@ Refer to [Integration Developer Persona](https://help.sap.com/docs/integration-s
 </td>
 <td valign="top">
 
-Refer to [Tenant Administrator Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/cloud-integration-persona#loio4b4ba1c553474259b5be661f4ef0702c__admin_suite) for the tasks.
+Refer to [Tenant Administrator Persona](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fhelp.sap.com%2Fdocs%2Fintegration-suite%2Fsap-integration-suite%2Fpersona-2937e5ca6ef448cfb21451a2461cc2a6%3Flocale%3Den-US%26q%3Dpersona%26state%3DDRAFT%26version%3DDEV) for the tasks.
 
 </td>
 </tr>

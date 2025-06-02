@@ -8,7 +8,7 @@
 
 ## Example for General Splitter and Iterating \(Non-XML Message\)
 
-If you expect a non-XML file as the input message and, as a result, select*Line Break* in the *Expression Type* field, General Splitter and Iterative Splitter process the message differently, as shown for the following example.
+If you expect a non-XML file as the input message and, as a result, select *Line Break* in the *Expression Type* field, General Splitter and Iterative Splitter process the message differently, as shown for the following example.
 
 Let's assume the input message has the following content:
 
@@ -66,6 +66,17 @@ The *Iterating Splitter* transforms the inbound message into the following **fou
 > ### Note:  
 > The *Iterating Splitter* handles the first line of the inbound message in the same way like the other lines. The first line is not interpreted as a root element.
 
+A line break can also be defined by an escape character \(`\n` or `\r`\).
+
+Let's assume the input message has the following content:
+
+> ### Sample Code:  
+> ```
+> "Customer Number", "No of Ordered Articles", "Price"\n"0001", "100", "1000 EUR"\n"0009", "1", "10000 EUR"\n"0011", "20", "999 EUR"
+> ```
+
+The *General Splitter* and the *Iterating Splitter* transforms the inbound message into the same messages like in the example above.
+
 
 
 <a name="loio698e594132b144178a4eb4795316947a__SplitterExamplesXPathGeneralSplitter"/>
@@ -97,11 +108,9 @@ Assume you expect an XML message and like to address elements with *Expression T
 
 To split this message, you need to define a namespace mapping \(of a prefix and a namespace\) for the integration flow \(under *Runtime Configuration*\), for example: `xmlns:n1=http://myCustomer.com`.
 
-When configuring the *General Splitter* and wanting to address the message element with an XPath expression, make sure that you refer to the namespace prefix.
+When configuring the *General Splitter* and wanting to address the message element with an XPath expression, make sure that you refer to the namespace prefix by using the following XPath expression: `/n1:customer/n1:order`.
 
-Use the following XPath expression:
-
-`/n1:customer/n1:order`
+Aditonally, you can also use a reference to a header or property instead of a fixed value for XPath Expression, for example: `${header.expression}`.
 
 > ### Note:  
 > Namespaces are inherited from parent to child element. This is why you need to indicate the namespace explicitly in the XPath expression.
@@ -160,9 +169,7 @@ This is an example for an input message representing orders from different custo
 
 To split this message, you need to define a namespace mapping \(of a prefix and a namespace\) for the integration flow \(under *Runtime Configuration*\), for example: `xmlns:n2=http://myCustomer.com`.
 
-Use the following XPath expression:
-
-`/n2:customerList/n2:customers`
+Use the following XPath expression: `/n2:customerList/n2:customers`, or enter a reference to a header or property instead of a fixed value for XPath Expression.
 
 The *Iterating Splitter* splits the message into the following two chunks:
 

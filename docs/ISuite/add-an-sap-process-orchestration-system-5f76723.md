@@ -125,7 +125,10 @@ To connect your SAP Process Orchestration system with the Migration Assessment a
 
 8.  To check if the connection is working properly, select your system and choose *Test Connection*.
 
-    This test verifies that the main resources needed for the SAP Process Orchestration extraction are reachable. Perform this test even if previous Cloud Connector and destination connection tests were successful, as those don't check for resource accessibility.
+    This test verifies that the main resources needed for the SAP Process Orchestration extraction are reachable.
+
+    > ### Remember:  
+    > Perform this test even if previous Cloud Connector and destination connection tests were successful, as those don't check for resource accessibility.
 
     If you get an error during this step, please check the [Troubleshooting for Migration Assessment](troubleshooting-for-migration-assessment-63430e2.md).
 

@@ -8,7 +8,7 @@ With access policies, you can protect access to certain sets of artifacts. You c
 
 -   A package – by which all artifacts of the integration package and the package actions are protected.
 
--   A specific artifact type – for example, script collection or integrtion flow.
+-   A specific artifact type – for example, script collection or integration flow.
 
 
 If access to at least one artifact of an integration package is restricted, you can't export, publish, or delete the integration package.

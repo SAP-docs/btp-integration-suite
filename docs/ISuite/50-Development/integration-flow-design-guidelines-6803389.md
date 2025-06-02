@@ -68,3 +68,10 @@ The integration flows are designed to meet the following requirements:
 
 [How to Work with the Example Integration Flows](how-to-work-with-the-example-integration-flows-03e6959.md) contains information about how to use and execute the reference integration flows on your own tenant.
 
+**Related Information**  
+
+
+[Design Guidelines](IntegrationSettings/design-guidelines-4d1c84f.md "As the integration lead for your organization, help your integration developers design enterprise-grade integration flows.")
+
+[Design Guidelines View](design-guidelines-view-d62dfe0.md "Use this view to validate your integration flow against the design guidelines enabled by the integration leads of your organization.")
+

@@ -888,7 +888,7 @@ Access Key and Secret Key
 </td>
 <td valign="top">
 
-[AmazonEventBridge Receiver Adapter](../50-Development/amazoneventbridge-receiver-adapter-ff3f9ed.md) 
+[Amazon EventBridge Receiver Adapter](../50-Development/amazon-eventbridge-receiver-adapter-ff3f9ed.md) 
 
 </td>
 </tr>

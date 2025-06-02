@@ -50,7 +50,7 @@ The integration flows once deployed, run the transaction activity and try to del
 
 ## Acknowledgement Configuration
 
-When the messages are processed in a transaction, the Functional Acknowledgements and Technical Acknowledgements could take time to be received depending on various factors. The *Maximum Waiting Time* feature enables users to set a customizable timeout threshold for receiving functional and technical acknowledgments. In the event that functional or technical acknowledgments are not received within the specified waiting time, the system will automatically update the message processing status to *Acknowledgment Overdue*. This status change can be viewed in detail in the Monitor tab \(See [Monitor Interchanges](monitor-interchanges-42c1199.md)\).
+When the messages are processed in a transaction, the Functional Acknowledgements and Technical Acknowledgements could take time to be received depending on various factors. The *Maximum Waiting Time* feature enables users to set a customizable timeout threshold for receiving functional and technical acknowledgments. In the event that functional or technical acknowledgments are not received within the specified waiting time, the system will automatically update the message processing status to *Acknowledgment Overdue*. This status change can be viewed in detail in the Monitor tab \(see [Monitor Interchanges](monitor-interchanges-42c1199.md)\).
 
 Follow the procedure below to set the maximum waiting time for the acknowledgements.
 

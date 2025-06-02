@@ -434,6 +434,29 @@ Prevents files that are in the process of being written from being read from the
 <tr>
 <td valign="top">
 
+*Empty File Handling* 
+
+</td>
+<td valign="top">
+
+Specify the protocol for managing empty files i.e., files with 0 bytes.
+
+-   *Process Empty File*: Processes the empty files through the integration flow like any other files.
+
+-   *Skip Empty File*: Bypasses the empty files, without generating [Message Processing Log](message-processing-log-b32f8cd.md) or executing any post-processing.
+-   *MPL With Post Processing Only*: Excludes the files from primary processing while still generating a [Message Processing Log](message-processing-log-b32f8cd.md) and executing post-processing tasks, such as moving, archiving, or deleting the files, as selected from the [*Post-Processing*](configure-the-sftp-sender-adapter-2de9ee5.md#loio2de9ee58737247969eb7dc9e68b1b121__sftp_sender_postprocessing) options.
+
+    > ### Note:  
+    > Use *MPL With Post Processing Only* when you want to maintain traceability of empty files without triggering the main integration logic making it ideal for audit or archival purposes.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Poll on One Worker Only* 
 
 </td>

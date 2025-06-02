@@ -81,3 +81,8 @@ For more information on how integration developers can validate their integratio
 > ### Remember:  
 > You can use design guidelines to validate not only your custom integration content but also the prepackaged integration content that is shipped by SAP.
 
+**Related Information**  
+
+
+[Integration Flow Design Guidelines](../integration-flow-design-guidelines-6803389.md "As an integration developer, you need to make sure that you design integration flows in a robust fashion in order to safeguard your company's mission-critical business processes.")
+

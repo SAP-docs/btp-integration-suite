@@ -9,6 +9,8 @@ This policy is used to selectively allow or deny access for an IP address or gro
 > ### Note:  
 > For the IP filter policy to work correctly, the *Client IP Preservation* feature needs to be enabled on the Edge Lifecycle Management. For more information, see [Deploy the Edge Integration Cell Solution](../deploy-the-edge-integration-cell-solution-ab81b84.md).
 
+See the following video for visual instructions on how to add and configure the IP filter policy:
+
 
 
 <a name="loio3a8b424f685c44f18ef727a8df843882__section_msg_cjt_c2c"/>

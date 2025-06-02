@@ -1,8 +1,8 @@
 <!-- loioff3f9edc07344fa8a497dc4445ef7820 -->
 
-# AmazonEventBridge Receiver Adapter
+# Amazon EventBridge Receiver Adapter
 
-The AmazonEventBridge Receiver Adapter connects SAP Integration Suite to Amazon EventBridge. Amazon EventBridge is a serverless service that uses events to connect application components together.
+The Amazon EventBridge Receiver Adapter connects SAP Integration Suite to Amazon EventBridge. Amazon EventBridge is a serverless service that uses events to connect application components together.
 
 > ### Note:  
 > This adapter is available on SAP Business Accelerator Hub.
@@ -18,15 +18,15 @@ The AmazonEventBridge Receiver Adapter connects SAP Integration Suite to Amazon 
 
 <a name="loioff3f9edc07344fa8a497dc4445ef7820__section_qty_z21_tcc"/>
 
-## How the AmazonEventBridge Receiver Adapter Works
+## How the Amazon EventBridge Receiver Adapter Works
 
-If you have configured a AmazonEventBridge receiver adapter, the data exchange is performed as follows at runtime: SAP sends the request to Amazon EventBridge \(this is a receiver system\) through SAP Integration Suite. Amazon EventBridge works on the request and sends back the data to SAP.
+If you have configured a Amazon EventBridge receiver adapter, the data exchange is performed as follows at runtime: SAP sends the request to Amazon EventBridge \(this is a receiver system\) through SAP Integration Suite. Amazon EventBridge works on the request and sends back the data to SAP.
 
 
 
 <a name="loioff3f9edc07344fa8a497dc4445ef7820__section_ddl_ch1_tcc"/>
 
-## Configuring the AmazonEventBridge Receiver Adapter
+## Configuring the Amazon EventBridge Receiver Adapter
 
 **Connection**
 

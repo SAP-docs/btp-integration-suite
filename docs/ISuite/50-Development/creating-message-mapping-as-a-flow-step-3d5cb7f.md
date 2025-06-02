@@ -30,47 +30,45 @@ The supported file types for source and target messages are:
 -   WSDL
 
     > ### Note:  
-    > -   External reference in WSDL and schema is now supported in Message Mapping with resources. The namespaces on the external references are not considered in mapping. For more information, see: [SAP Note 2888381](https://launchpad.support.sap.com/#/notes/2888381).
+    > Reference to the remote resources isn't supported.
     > 
-    > -   Reference to the remote resources isn't supported.
-    > 
-    >     > ### Sample Code:  
-    >     > ```
-    >     > <?xml version="1.0" encoding="UTF-8"?>
-    >     > <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:bs="http://B.com" xmlns:ds="http://D.com" xmlns:emp="http://Employee.com" xmlns:p1="http://demoDisplayQueue" name="EmployeeDetails" targetNamespace="http://com.sap.copy.com">
-    >     >    <wsdl:documentation />
-    >     >    <wsdl:types>
-    >     >       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://com.sap.copy.com" targetNamespace="http://com.sap.copy.com">
-    >     >          <xsd:import namespace="http://Employee.com" schemaLocation="../../empWsdl/Employee.wsdl" />
-    >     >          <xsd:import namespace="http://B.com" schemaLocation="./mySchema/B.xsd" />
-    >     >          <xsd:import namespace="http://D.com" schemaLocation="mySchema/D.xsd" />
-    >     >          <xsd:complexType name="Employee">
-    >     >             <xsd:annotation>
-    >     >                <xsd:appinfo source="http://sap.com/xi/VersionID">abaed5bfea7111e4c82400000cbe4342</xsd:appinfo>
-    >     >             </xsd:annotation>
-    >     >             <xsd:sequence>
-    >     >                <xsd:element maxOccurs="unbounded" minOccurs="1" name="EmpAddress" type="Address" />
-    >     >                <xsd:element name="Id" type="emp:Employee" />
-    >     >                <xsd:element name="Name" type="bs:B" />
-    >     >                <xsd:element name="Dept" type="ds:D" />
-    >     >             </xsd:sequence>
-    >     >          </xsd:complexType>
-    >     >          <xsd:complexType name="Address">
-    >     >             <xsd:sequence>
-    >     >                <xsd:element maxOccurs="unbounded" minOccurs="1" name="Line" type="LineText" />
-    >     >             </xsd:sequence>
-    >     >             <xsd:attribute name="shelly" type="xsd:string" use="optional" />
-    >     >          </xsd:complexType>
-    >     >          <xsd:complexType name="LineText">
-    >     >             <xsd:sequence>
-    >     >                <!-- <xsd:element name="Text" type ="p2:Source_Person" />-->
-    >     >             </xsd:sequence>
-    >     >          </xsd:complexType>
-    >     >          <xsd:element name="EmployeeDetails" type="Employee" />
-    >     >       </xsd:schema>
-    >     >    </wsdl:types>
-    >     > </wsdl:definitions>
-    >     > ```
+    > > ### Sample Code:  
+    > > ```
+    > > <?xml version="1.0" encoding="UTF-8"?>
+    > > <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:bs="http://B.com" xmlns:ds="http://D.com" xmlns:emp="http://Employee.com" xmlns:p1="http://demoDisplayQueue" name="EmployeeDetails" targetNamespace="http://com.sap.copy.com">
+    > >    <wsdl:documentation />
+    > >    <wsdl:types>
+    > >       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://com.sap.copy.com" targetNamespace="http://com.sap.copy.com">
+    > >          <xsd:import namespace="http://Employee.com" schemaLocation="../../empWsdl/Employee.wsdl" />
+    > >          <xsd:import namespace="http://B.com" schemaLocation="./mySchema/B.xsd" />
+    > >          <xsd:import namespace="http://D.com" schemaLocation="mySchema/D.xsd" />
+    > >          <xsd:complexType name="Employee">
+    > >             <xsd:annotation>
+    > >                <xsd:appinfo source="http://sap.com/xi/VersionID">abaed5bfea7111e4c82400000cbe4342</xsd:appinfo>
+    > >             </xsd:annotation>
+    > >             <xsd:sequence>
+    > >                <xsd:element maxOccurs="unbounded" minOccurs="1" name="EmpAddress" type="Address" />
+    > >                <xsd:element name="Id" type="emp:Employee" />
+    > >                <xsd:element name="Name" type="bs:B" />
+    > >                <xsd:element name="Dept" type="ds:D" />
+    > >             </xsd:sequence>
+    > >          </xsd:complexType>
+    > >          <xsd:complexType name="Address">
+    > >             <xsd:sequence>
+    > >                <xsd:element maxOccurs="unbounded" minOccurs="1" name="Line" type="LineText" />
+    > >             </xsd:sequence>
+    > >             <xsd:attribute name="shelly" type="xsd:string" use="optional" />
+    > >          </xsd:complexType>
+    > >          <xsd:complexType name="LineText">
+    > >             <xsd:sequence>
+    > >                <!-- <xsd:element name="Text" type ="p2:Source_Person" />-->
+    > >             </xsd:sequence>
+    > >          </xsd:complexType>
+    > >          <xsd:element name="EmployeeDetails" type="Employee" />
+    > >       </xsd:schema>
+    > >    </wsdl:types>
+    > > </wsdl:definitions>
+    > > ```
 
 -   Swagger/OpenAPI Spec JSON file
 

@@ -43,7 +43,9 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 
     3.  Enter the *Business Partner Number* of the company account.
 
-    4.  Choose a *Connector Name* under which you want the connector to be registered in the portal. The *Connector URL* is prefilled automatically. You can still edit it in case you want to use a custom domain or protect it using API management.
+    4.  Choose a *Connector Name* under which you want the connector to be registered in the portal. The *Default Connector URL* is prefilled automatically. You can still edit it in case you want to use a custom domain or protect it using API management.
+
+        If you want to overwrite the *Default Connector URL*, you can enter a *Custom Connector URL*. This URL then replaces the default connector externally. If you don't require a custom connector URL, leave this field empty.
 
     5.  Fill in the *Offer Management User* information. You can retrieve these details from the *Offer Management* user that you created in the landscape portal.
 
@@ -58,7 +60,7 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 
 
 
-        The other information in this section is filled in automatically.
+        The other information in this section is filled in automatically. If you're using a custom landscape, you must enter these details manually as well.
 
     7.  Choose *Save*.
 

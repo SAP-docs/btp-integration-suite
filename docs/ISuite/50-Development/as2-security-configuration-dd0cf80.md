@@ -165,10 +165,10 @@ The above generic behavior of AS2 Sender Adapter is used in Trading Partner Mana
 
     1.  This also necessitates that the AS2 Partner IDs across trading partners must be unique to avoid accidental overwriting of PD data.
 
-    2.  As of today, this limitation means that VAN \(Value Added Network\) scenarios are not directly supported since the AS2 Partner ID in such cases are same for all Trading Partners.
+    2.  To support Value Added Network \(VAN\) scenarios, you can define a communication partner profile and define the AS2 Partner ID under this profile. Then, you can reuse this ID in multiple agreements across trading partners.
 
         > ### Tip:  
-        > Consider the Process Direct Sender in TPM to build such scenarios.
+        > To build such scenarios, use the Process Direct Sender in Trading Partner Management.
 
 
 

@@ -1,6 +1,6 @@
 <!-- loio98091f710e534120a71b436e9be4e6bf -->
 
-# Configuring Integration Settings
+# Integration
 
 After enabling the Cloud Integration capability, you need to configure the service. For a first-time user, only the *Configure* tab appears on the *Settings* page.
 

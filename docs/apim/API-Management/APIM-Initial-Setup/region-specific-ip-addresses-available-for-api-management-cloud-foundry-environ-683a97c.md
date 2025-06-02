@@ -322,6 +322,43 @@ Brazil South
 <tr>
 <td valign="top">
 
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+cn20
+
+</td>
+<td valign="top">
+
+China North
+
+</td>
+<td valign="top">
+
+cf-cn20
+
+</td>
+<td valign="top">
+
+China North 3
+
+</td>
+<td valign="top">
+
+40.162.84.8, 40.162.22.238
+
+</td>
+<td valign="top">
+
+40.162.18.201, 40.162.87.191
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Amazon Web Services
 
 </td>
@@ -655,6 +692,43 @@ us-east-1
 <tr>
 <td valign="top">
 
+Amazon Web Services
+
+</td>
+<td valign="top">
+
+us11
+
+</td>
+<td valign="top">
+
+United States \(Oregon\)
+
+</td>
+<td valign="top">
+
+cf-us11
+
+</td>
+<td valign="top">
+
+us-west-2
+
+</td>
+<td valign="top">
+
+54.148.73.252, 35.81.237.247, 52.35.10.163, 35.81.194.19, 52.38.122.4, 54.202.160.125
+
+</td>
+<td valign="top">
+
+44.229.238.5, 52.26.207.125, 34.214.93.228, 52.11.99.88, 54.149.2.74, 44.226.123.133
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Google Cloud
 
 </td>
@@ -908,6 +982,43 @@ me-central2
 <td valign="top">
 
 34.166.118.185, 34.166.84.100, 34.166.141.246, 34.166.98.103, 34.166.97.210, 34.166.124.16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
+sa31
+
+</td>
+<td valign="top">
+
+KSA \(Dammam\) GCP
+
+</td>
+<td valign="top">
+
+cf-sa31
+
+</td>
+<td valign="top">
+
+me-central2
+
+</td>
+<td valign="top">
+
+34.166.143.67, 34.166.104.175
+
+</td>
+<td valign="top">
+
+34.166.154.51, 34.166.88.99, 34.166.28.71, 34.166.124.42, 34.166.21.81, 34.166.53.136
 
 </td>
 </tr>

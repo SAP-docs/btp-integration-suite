@@ -29,6 +29,10 @@ Migrate supported integration objects from your on-premise system to SAP Integra
 
 Migrate your integration scenarios from SAP Process Integration and SAP Process Orchestration to Cloud Integration using the [pipeline concept](https://help.sap.com/docs/migration-guide-po/migration-guide-for-sap-process-orchestration/pipeline-concept). For more information, see [Introducing the new pipeline concept in SAP Cloud Integration](https://community.sap.com/t5/technology-blogs-by-sap/introducing-the-new-pipeline-concept-in-cloud-integration/ba-p/13639651) \(SAP Community Blog\).
 
+You can watch a short video to understand the pipeline approach in a nutshell:
+
+
+
 
 
 ## Procedure
@@ -125,13 +129,11 @@ Migrate your integration scenarios from SAP Process Integration and SAP Process 
 
 15. In the *Scenario* tab, enter the *Name* for the scenario you are migrating.
 
-    > ### Tip:  
-
     Following details are automatically populated:
 
     -   *ID* based on the scenario name.
     -   The Runtime is preset as Cloud Integration.
-    -   **Sender Details**: The combination of Sender Component and Sender Interface is used to create the Alternative Partner in the Partner Directory. The former maps to *Agency* and latter to the *ID* of the Alternative Partner of the partner directory. For more information, see [Managing Partner Directory Entries](50-Development/managing-partner-directory-entries-3d6eee7.md).
+    -   **Sender Details**: Enter the combination of *Sender Component* and *Sender Interface* to be used to create the Alternative Partner in the Partner Directory. The former maps to *Agency* and latter to the *ID* of the Alternative Partner of the partner directory. For more information, see [Managing Partner Directory Entries](50-Development/managing-partner-directory-entries-3d6eee7.md).
 
         > ### Remember:  
         > -   Scenario name is used to create a partner in the partner directory. If a partner with an identical name already exists, you will need to either rename the scenario or consider deleting the existing partner from the Partner Directory. See: [Managing Partner Directory Entries](50-Development/managing-partner-directory-entries-3d6eee7.md)
@@ -143,7 +145,7 @@ Migrate your integration scenarios from SAP Process Integration and SAP Process 
     -   For the JMS receiver adapter, enter a *JMS Queue Name*. The JMS inbound queue for the Integrated Messaging Runtime pipeline is preset to default pipeline `PIPX01`.
 
         > ### Recommendation:  
-        > Use the default pipeline for migration. After the migration, you can update the queue name in your integration flows if you prefer to use another pipeline. See, [JMS Adapter](50-Development/jms-adapter-0993f2a.md).
+        > Use the default pipeline for migration. After the migration, you can update the queue name in your integration flows if you prefer to use another pipeline. See, .
 
     -   **Inbound Conversion Integration Flow**: This section appears if the integration flow includes message conversion and mapping steps and uses ProcessDirect as both the sender and receiver adapters. Define an endpoint that the preceding integration flow uses to invoke this integration flow.
     -   **Outbound Processing Integration Flow**: An integration flow is created for each combination of receiver and interface. For each combination, define an endpoint that the preceding integration flow uses to invoke the outbound integration flows. Refer [pipeline concept](https://help.sap.com/docs/migration-guide-po/migration-guide-for-sap-process-orchestration/pipeline-concept) for more details.
@@ -161,7 +163,7 @@ Migrate your integration scenarios from SAP Process Integration and SAP Process 
 
     Multiple integration flows equivalent to the source object are created. The sender and receiver channels, other flow steps like mappings, and attributes from the source object are migrated too.
 
-    For the sender and receiver adapter, all their attributes from the source object are externalized in the newly created integration flows. This design helps you configure the parameters for SAP Integration Suite without having to edit the integration flow.
+    For the sender and receiver adapter, only necessary attributes from the source object are externalized in the newly created integration flows. This design helps you configure the parameters for SAP Integration Suite without having to edit the integration flow.
 
 19. Look out for useful information in the *Migration Success* page. Choose *Report* at the top-right corner to download the migration report in PDF format. Also, review the [Known Limitations](known-limitations-of-migration-tooling-7a552d4.md) to understand any potential restrictions.
 
@@ -171,8 +173,6 @@ Migrate your integration scenarios from SAP Process Integration and SAP Process 
 
 
 
-
-<a name="loioefc40f8409e9444e8f566591c3aa1d3f__postreq_xdk_3rn_y5b"/>
 
 ## Next Steps
 

@@ -76,8 +76,6 @@ You can watch a short video about activating capabilities, and getting access to
     <td valign="top">
     
     Cloud Integration
-
-    ![](images/CI_SUI_f5734a7.png)
     
     </td>
     <td valign="top">
@@ -91,11 +89,11 @@ You can watch a short video about activating capabilities, and getting access to
     >     -   *Production* for critical business activities.
     > 
     >     > ### Recommendation:  
-    >     > If you want to activate both API Management and Cloud Integration capabilities within the same tenant, select the same environment for both capabilities. Once you have activated API Management capability, you can set the same environment by using the *Account Type* field on the *Configure the API Management Service* screen. See [Enable API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite).
+    >     > If you want to activate both API Management and Cloud Integration capabilities within the same tenant, select the same environment for both capabilities. Once you have activated API Management capability, you can align the environment by setting the *Account Type* field \(Production or Non-Production\) on the *Settings* \> *Runtimes* \> *API Management* section. See [Enable API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite).
     > 
     > -   To support the usage of Java Message Service \(JMS\) queues as temporary storage, select Message Queues. Using JMS message queues allow you to configure asynchronous decoupling of sender and receiver message processing to ensure that in case of an error a retry is done from SAP Integration Suite rather than the sender system. You can use the tenant to manage these queues. See [Managing Message Queues](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cdcce24f484a41c08ab46d12ab666451.html).
 
-
+    ![](images/CI_SUI_f5734a7.png)
     
     </td>
     </tr>
@@ -103,25 +101,18 @@ You can watch a short video about activating capabilities, and getting access to
     <td valign="top">
     
     API Management
-
-    -   Developer Hub
-
-        > ### Note:  
-        > You can activate Developer Hub by selecting the checkbox.
-
-        -   Graph
-
-            > ### Note:  
-            > You must select Developer Hub to activate Graph.
-
-
-
-    ![](images/SUI_API_e159e2f.png)
     
     </td>
     <td valign="top">
     
     *Manage APIs*
+
+    If you want to consume APIs and events published on Developer Hub—a web-based platform that allows organizations to publish their APIs and events for developers to discover, explore, and use—you need to select the *Developer Hub* checkbox.
+
+    To expose your business data as a semantically connected data graph, select the *Graph* checkbox.
+
+    > ### Note:  
+    > The Developer Hub checkbox must be selected in order to activate Graph.
 
     For end-to end instructions on how to activate the API Management capability, see [Enable API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite). You can also refer to the [Set Up API Management from Integration Suite](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html) tutorial for visual instructions.
     

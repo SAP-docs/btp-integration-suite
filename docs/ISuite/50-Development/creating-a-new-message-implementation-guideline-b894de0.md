@@ -10,7 +10,7 @@
 
 ## Prerequisites
 
--   You've logged into SAP Integration Suite.
+You've logged into SAP Integration Suite.
 
 
 
@@ -34,25 +34,34 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
 
 5.  The *Versions* step displays the available versions of the message. Choose the desired version from the list.
 
-6.  In the *Envelope* step, select an envelope for the type system from the list. If you want to continue without any envelope, choose *None*.
+6.  In the *Envelopes* step, select an envelope for the type system from the list. If you want to continue without any envelope, choose *None*.
 
-7.  \(Optional\) In the *Sample Payload* step, you can browse and upload a payload file using the *Browse* button.
+7.  \(Optional\) In the *Sample Payload* step, `choose` *Browse* to browse and upload either a single payload file or a ZIP file with multiple payload files.
 
     If you want to skip this step, choose *Skip*.
 
-8.  Set the format of the payload in the *Data Format* field. The supported formats of the payload are:
+8.  Set the format of the payload in the *Data Format* field. The following formats are supported:
 
-    1.  EDI Flat File: You can use this format only for type systems ASC X12, Odette, TRADACOMS, and UN/EDIFACT and its subsets. For more information, refer to the blog [Direct Support of EDI Payloads](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-direct-support-of-edi-payloads/ba-p/13779418).
+    -   SAP Cloud Integration \(XML\)
+
+    -   SAP Process Integration \(XML\)
+
+    -   EDI Flat File: You can use this format only for type systems ASC X12, Odette, TRADACOMS, and UN/EDIFACT and its subsets. For more information, refer to the blog [Direct Support of EDI Payloads](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-direct-support-of-edi-payloads/ba-p/13779418).
 
         > ### Note:  
         > The flat files might contain envelope segments outside the message structure. Integration Advisor will automatically consider the messages inside this envelope.
 
-    2.  SAP Cloud Integration \(XML\)
+    -   Multiple Payloads SAP Cloud Integration \(ZIP\)
 
-    3.  SAP Process Integration \(XML\)
+    -   Multiple Payloads SAP Process Integration \(ZIP\)
+
+    -   Multiple Payloads EDI Flat File \(ZIP\)
 
 
-9.  When the MIG is created, any elements/attributes in the message structure get auto-selected when they're present in the sample payload file. You can additionally select *Use file content as example values* to use payload values as example values. Choose *Next*.
+    > ### Note:  
+    > For multiple payload files \(ZIP\), the upload is limited to 25 payload files and an overall size of 10MB for the zip archive.
+
+9.  When the MIG is created, any elements or attributes in the message structure are auto-selected when they're present in a sample payload file. For single payloads files, you can additionally select *Use file content as example values* to use payload values as example values. Choose *Next*.
 
 10. In the *Node Selection* step, a table listing down the nodes in the payload is displayed. Select the nodes that you want to qualify.
 
@@ -61,9 +70,9 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
     > 
     > Nodes that do not have a unique qualification marker are disabled for selection.
 
-    To know more, see this [blog](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-payload-based-qualification-at-time-of-mig-creation/ba-p/13990599).
+    To learn more, see the blog [Integration Advisor – payload-based qualification at time of MIG creation](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-payload-based-qualification-at-time-of-mig-creation/ba-p/13990599).
 
-11. In the MIG Creation step, maintain the following fields:
+11. In the MIG creation step, maintain the following fields:
 
     1.  *Name*: Name of the MIG
 

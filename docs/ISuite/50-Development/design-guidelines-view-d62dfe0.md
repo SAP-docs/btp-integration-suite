@@ -62,3 +62,8 @@ You can download the report multiple times. You can download the report with com
 
 As a best practice, you can share the report with your integration leads to assess your integration flow before deployment.
 
+**Related Information**  
+
+
+[Integration Flow Design Guidelines](integration-flow-design-guidelines-6803389.md "As an integration developer, you need to make sure that you design integration flows in a robust fashion in order to safeguard your company's mission-critical business processes.")
+

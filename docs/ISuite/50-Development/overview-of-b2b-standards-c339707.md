@@ -12,7 +12,7 @@ Get to know the list of available B2B standards, the supported message types and
 
 ASC X12 \(also known as ANSI ASC X12\) is an Electronic Data Interchange \(EDI\) standard and the message types are created and maintained by the Accredited Standards Committee \(ASC\) X12.
 
-**Versions List \(38\)**
+**Versions List \(40\)**
 
 
 <table>
@@ -286,6 +286,20 @@ Version
 <td valign="top">
 
 008040
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+008050
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+008060
 
 </td>
 </tr>
@@ -10028,7 +10042,7 @@ The Odette delivery contains 26 different message types. For most of the message
 
 cXML is a streamlined protocol intended for consistent communication of business documents between procurement applications, e-commerce hubs and suppliers.
 
-**Versions List \(24\)**
+**Versions List \(30\)**
 
 
 <table>
@@ -10232,6 +10246,20 @@ Version
 <td valign="top">
 
 1.2.064
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.2.065
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.2.066
 
 </td>
 </tr>

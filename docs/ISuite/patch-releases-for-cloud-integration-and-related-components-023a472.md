@@ -79,6 +79,166 @@ Patches for different components are associated with different major software ve
 
 
 
+<a name="loio023a4725bb734f86be8a5625abe54110__section_emj_r1k_3fc"/>
+
+## May 2025
+
+Software Increment: 2503
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.29.17
+
+</td>
+<td valign="top">
+
+This patch includes security enhancements.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.65.36
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Queue monitor failing issues to load messages due to multiple JMS broker connection requests.
+-   Security Enhancements.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.29.16
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Gather issue with ZipAggregationStrategy.
+-   In camel-3.x runtime, when multiple calls are made to MDI using the MDI receiver adapter in a single message processing, the local ID sent to the MDI service was incorrect.
+-   Kafka sender adapter where the "Retry Failed Messages" functionality is not working.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.65.34
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Unable to set the MPLL log level due to a redirection issue from the config service to TRM. The redirection URL formation has been updated to resolve this issue.
+-   Gather issue with ZipAggregationStrateggy.
+-   In camel-3.x runtime, when multiple calls are made to MDI using the MDI receiver adapter in a single message processing, the local ID sent to the MDI service was incorrect.
+-   An update for the Apache HTTP Client is required to fix CVE-2025-27820.
+-   Kafka sender adapter where the "Retry Failed Messages" functionality is not working
+-   Input validation for old service instances improved.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.99.6
+
+</td>
+<td valign="top">
+
+This patch fixes the issue where MAG simulation fails if one of the MIGs uses a custom codelist.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.99.5
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Pretransformation fail due to the use of wrong ArtifactValue.
+
+-   Incorrect SAP telemetry destination name in the code.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 ## April 2025
 
 Software Increment: 2502

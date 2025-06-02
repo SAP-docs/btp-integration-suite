@@ -46,9 +46,24 @@ You can create an integration flow in different ways:
 
 
 
+<a name="task_sny_cxl_wbc__prereq_q4x_32w_hfc"/>
+
+## Prerequisites
+
+For the Generative AI tool to create integration flows, you must first enable connectivity between your system landscape in the SAP BTP cockpit and SAP Integration Suite. By doing so, your registered SAP applications can expose APIs and events to SAP Integration Suite, which in turn, the Generative AI tool use to create integrations. For more information on how to achieve this, see Enabling System Landscape for SAP Integration Suite.
+
+The Generative AI tool can create integration flows without the system landscape in place too. But in such cases, the tool creates an integration flow with HTTP adapters on the sender and receiver sides. You must still manually enter most of the parameters that would otherwise be automatically populated by the Generative AI tool.
+
+
+
 <a name="task_sny_cxl_wbc__context_tdj_vxl_wbc"/>
 
 ## Context
+
+SAP Integration Suite, specifically the Cloud Integration capability, provides a feature to create integration flows using Generative AI. After you activate the feature, an integration developer has a choice to generate integrations with the assistance from AI. The integration developer must describe the integration scenario when asked. Based on the descriptions and inputs, the Generative AI tool creates an integration flow.
+
+> ### Caution:  
+> SAP does not take any responsibility for quality of the content in the input to or output of the underlying generative AI models, including but not limited to, bias, hallucinations, or inaccuracies. The user is responsible for verifying the content.
 
 > ### Note:  
 > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).

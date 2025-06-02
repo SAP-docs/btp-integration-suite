@@ -6,6 +6,50 @@ This topic provides information on patch releases for API Management that are pr
 
 
 
+<a name="loio6ddd927cbeaa42e384dc903e6002e269__section_gph_kdr_kfc"/>
+
+## May 2025
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+2.0.5
+
+</td>
+<td valign="top">
+
+This patch addresses a compatibility issue encountered during the Jakarta migration. The module, which had been removed as part of the Jakarta migration, has now been reinstated and properly migrated.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio6ddd927cbeaa42e384dc903e6002e269__section_v44_jkx_y2c"/>
 
 ## April 2025

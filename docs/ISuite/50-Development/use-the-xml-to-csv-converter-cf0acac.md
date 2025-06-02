@@ -157,13 +157,13 @@ For each product, a row in the CSV file is to be added. So, as *Path to Source E
 
 As *Field Separator in CSV* we select *Semicolon \(;\)*.
 
-In addition, we like to add the XML field names as a header row. So, we select the *Include Field Name as Headers* check box.
+Select the character that you want to use as the field separator in CSV file from dropdown list.
 
 Furthermore, the meta data information of the products, that is, category, type, and source, is to be added to the CSV file. So, we select the *Include Parent Element*check box, and set the *Path to Parent* Element as *root*.
 
 Since the Category is defined as attribute of the root node, we need to select the *Include Attribute Values* check box.
 
-![](images/XML_to_CSV_Converter_Processing_b46cdab.png)
+![](images/41058b73084d4c3e83a47a2d4f5bbb77.image)
 
 After the conversion, the message body looks as follows:
 

@@ -29,13 +29,18 @@ To enable anomaly detection and predictions through the SAP Integration Suite, f
 
 1.  Log on to the **SAP Integration Suite**.
 
-2.  From the left navigation pane, choose *Settings* \> *APIs*.
+2.  Choose *Settings* \> *Artificial Intelligence* from the left navigation pane.
 
-3.  Go to the *Analyze* tab.
+3.  Locate the following AI features and switch the toggle button to the *ON* position:
 
-4.  Toggle the radio button to the *ON* position.
+    -   Anomaly Detection
+    -   API Traffic Prediction
 
-    > ### Note:  
+        > ### Note:  
+        > A single toggle button controls both the anomaly detection and prediction features simultaneously.
+
+
+    > ### Caution:  
     > Disabling the Anomaly Detection feature will delete all associated anomaly data.
 
 

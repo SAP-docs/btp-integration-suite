@@ -33,6 +33,8 @@ JDBC connectivity provides a mechanism for integration flows deployed on SAP Int
 > </td>
 > <td valign="top">
 > 
+> -   [msSQLDriver12.4.0](https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/12.4.0.jre8)
+> -   [msSQLDriver11.2.3](https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/11.2.3.jre8)
 > -   [msSQLDriver8.2.2](https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/8.2.2.jre8/)
 > 
 > -   [msSQLDriver8.4.1](https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/8.4.1.jre8/)

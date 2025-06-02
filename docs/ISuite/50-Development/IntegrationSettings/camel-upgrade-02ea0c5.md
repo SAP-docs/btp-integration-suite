@@ -1,6 +1,6 @@
 <!-- loio02ea0c585869489f893359c8bb552a30 -->
 
-# Apache Camel 3.14 Upgrade
+# Camel Upgrade
 
 Apache Camel runtime will be updated from version 2.24 to 3.14.7.
 

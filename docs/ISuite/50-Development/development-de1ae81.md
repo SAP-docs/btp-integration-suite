@@ -95,7 +95,7 @@ Manage your tenant.
 </td>
 <td valign="top">
 
-[Configuring Integration Settings](IntegrationSettings/configuring-integration-settings-98091f7.md)
+[Integration](IntegrationSettings/integration-98091f7.md)
 
 </td>
 </tr>
@@ -458,7 +458,7 @@ Documentation template for MIGs and MAGs.
 </td>
 <td valign="top">
 
-[Settings for MIGs and MAGs](settings-for-migs-and-mags-4c442af.md)
+[MIGs and MAGs](migs-and-mags-4c442af.md)
 
 </td>
 </tr>

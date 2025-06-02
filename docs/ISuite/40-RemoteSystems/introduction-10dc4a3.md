@@ -267,7 +267,7 @@ Receiver adapter
 
 Connects SAP Integration Suite to Amazon EventBridge.
 
-See: [AmazonEventBridge Receiver Adapter](../50-Development/amazoneventbridge-receiver-adapter-ff3f9ed.md)
+See: [Amazon EventBridge Receiver Adapter](../50-Development/amazon-eventbridge-receiver-adapter-ff3f9ed.md)
 
 </td>
 </tr>
@@ -365,6 +365,8 @@ See: [Configure the AMQP Receiver Adapter](../50-Development/configure-the-amqp-
 <td valign="top">
 
 *AMQP for SAP Event Mesh*
+
+Sender adapter
 
 </td>
 <td valign="top">
@@ -575,7 +577,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: 
+See: [Configure the AMQP Sender Adapter](../50-Development/configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -928,7 +930,7 @@ See: [Facebook Receiver Adapter](../50-Development/facebook-receiver-adapter-3dc
 <tr>
 <td valign="top">
 
-**
+*FTP*
 
 Sender adapter
 
@@ -1087,14 +1089,14 @@ See: [HubSpot Receiver Adapter](../50-Development/hubspot-receiver-adapter-48cfa
 <tr>
 <td valign="top">
 
-*IBM MQ*
+*IBM MQ \(REST\)*
 
 Sender adapter
 
 </td>
 <td valign="top">
 
-Allows SAP Integration Suite to consume messages from IBM MQ.
+Allows SAP Integration Suite to consume messages from IBM MQ using the REST message protocol.
 
 See: [Configure the IBM MQ \(REST\) Sender Adapter](../50-Development/configure-the-ibm-mq-rest-sender-adapter-35cd02d.md)
 
@@ -1103,16 +1105,48 @@ See: [Configure the IBM MQ \(REST\) Sender Adapter](../50-Development/configure-
 <tr>
 <td valign="top">
 
-*IBM MQ*
+*IBM MQ \(REST\)*
 
 Receiver adapter
 
 </td>
 <td valign="top">
 
-Allows SAP Integration Suite to publish messages to IBM MQ.
+Allows SAP Integration Suite to publish messages to IBM MQ using the REST message protocol.
 
 See: [Configure the IBM MQ \(REST\) Receiver Adapter](../50-Development/configure-the-ibm-mq-rest-receiver-adapter-45610e7.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IBM MQ JMS*
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Allows SAP Integration Suite to consume messages from IBM MQ via JMS message protocol.
+
+See: [Configure the IBM MQ JMS Sender Adapter](../50-Development/configure-the-ibm-mq-jms-sender-adapter-d655ab4.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IBM MQ JMS*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Allows SAP Integration Suite to publish messages to IBM MQ via JMS message protocol.
+
+See: [Configure the IBM MQ JMS Receiver Adapter](../50-Development/configure-the-ibm-mq-jms-receiver-adapter-029bc1b.md)
 
 </td>
 </tr>
@@ -1162,7 +1196,7 @@ Receiver adapter
 
 Allows SAP Integration Suite to connect to a JDBC \(Java Database Connectivity\) database and to execute SQL commands on the database.
 
-See: 
+See: [JDBC Receiver Adapter](../50-Development/jdbc-receiver-adapter-88be644.md)
 
 </td>
 </tr>

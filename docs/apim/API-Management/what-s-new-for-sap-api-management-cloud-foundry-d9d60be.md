@@ -92,6 +92,230 @@ API Management
 </td>
 <td valign="top">
 
+Change in Navigation for Enabling Analytics AI features
+
+</td>
+<td valign="top">
+
+A navigation change has been implemented in the SAP Integration Suite for enabling the Analytics AI features. Previously, you had to select *Settings* \> *APIs* and go to the *Analyze* tab.
+
+Now, to enable the AI features, such as Anomaly Detection and Predictions:
+
+-   Navigate to *Settings* \> *Artificial Intelligence*.
+-   Locate the AI features and switch the toggle button to the *ON* position.
+
+For more information, see [Enabling Anomaly Detection and Predictions](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-anomaly-detection?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-06-01
+
+</td>
+<td valign="top">
+
+2025-06-01
+
+</td>
+<td valign="top">
+
+2504
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for API Artifacts Added to Access Policies
+
+</td>
+<td valign="top">
+
+Support for API artifacts has now been added to access policies. With access policies, unauthorized users can view protected resources—such as integration flows—but cannot perform actions like editing, copying, downloading, deleting, simulating the flow, or monitoring its message content. For more information, see [Access Policies for API Artifact](https://help.sap.com/docs/integration-suite/sap-integration-suite/access-policies-for-api-artifact?version=CLOUD) and [Defining Access Policies](https://help.sap.com/docs/integration-suite/sap-integration-suite/define-artifacts-to-be-protected?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-06-01
+
+</td>
+<td valign="top">
+
+2025-06-01
+
+</td>
+<td valign="top">
+
+2504
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+New Role Collections in API Management
+
+</td>
+<td valign="top">
+
+To provide more flexibility and control in managing API Management entities, we have introduced three new granular role collections:
+
+-   APIPortal.Configurator
+-   APIPortal.Developer
+-   APIPortal.Tester
+
+Additionally, to restrict a user to managing only API proxies and products—without granting access to policy templates—you can now assign the APIProxy.Developer role.
+
+For more information, see [Role Collections in API Management](https://help.sap.com/docs/integration-suite/sap-integration-suite/roles-collections-in-api-management-draft?version=CLOUD) and [Comprehensive Breakdown of Role Collections in API Management](https://help.sap.com/docs/integration-suite/sap-integration-suite/comprehensive-breakdown-of-role-collections-in-api-management?version=CLOUD)
+
+SAP API Management customers choose: [Role Collections in API Management](https://help.sap.com/docs/sap-api-management/sap-api-management/roles-collections-in-api-management-draft?version=Cloud) and [Comprehensive Breakdown of Role Collections in API Management](https://help.sap.com/docs/sap-api-management/sap-api-management/comprehensive-breakdown-of-role-collections-in-api-management?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-06-01
+
+</td>
+<td valign="top">
+
+2025-06-01
+
+</td>
+<td valign="top">
+
+2504
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Displaying Security Definitions from OpenAPI Specifications on the API References Page
 
 </td>
@@ -134,12 +358,12 @@ Not applicable
 </td>
 <td valign="top">
 
-2025-05-04
+2025-05-11
 
 </td>
 <td valign="top">
 
-2025-05-04
+2025-05-11
 
 </td>
 <td valign="top">

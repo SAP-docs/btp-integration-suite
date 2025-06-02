@@ -16,7 +16,7 @@ The AdvancedEventMesh sender adapter allows SAP Integration Suite to consume mes
 
 > ### Note:  
 > -   If your current adapter version is 1.3.3 or lower, check SAP Note [3582690](https://me.sap.com/notes/3582690) before upgrading the adapter.
-> -   If you run the intergration flow associated with the AEM adapter using *Run on a single worker node* configuration, there might be integration flow failures. To ensure smooth processing check SAP Note [3577865](https://me.sap.com/notes/3577865).
+> -   If you run the intergration flow associated with the AEM adapter using *Run on a single worker node* configuration, any lifecycle change to the node, such as software updates, out-of-memory exceptions, etc. may cause a brief delay in message consumption due to the switchover to a new node. To ensure smooth processing check SAP Note [3603502](https://me.sap.com/notes/3603502). We recommended upgrading to v1.3.5 for the fix.
 
 The adapter uses the Solace Message Format \(SMF\) message protocol.
 

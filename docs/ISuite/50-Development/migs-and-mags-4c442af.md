@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Settings for MIGs and MAGs
+# MIGs and MAGs
 
 You can maintain a template for documentation export which is later picked by the system whenever you export a Message Implementation Guideline \(MIG\) or a Mapping Guideline \(MAG\).
 
@@ -216,6 +216,12 @@ The admnistrative settings allows you to opt-in/opt out of the Proposal service.
     > -   MIG and MAG proposals will no longer be accessible to this tenant.
     > 
     > The change to this setting will take effect in the future, but it won't have any impact on previously collected data.
+    > 
+    > Enabling the proposal service will have the following impact:
+    > 
+    > -   The proposal service will gather Integration Advisor data, such as MIGs and MAGs from both past and future sources.
+    > 
+    > -   MIG and MAG proposals will be accessible to this tenant.
 
 3.  Choose *Save*.
 

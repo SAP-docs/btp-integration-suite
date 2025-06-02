@@ -35,12 +35,12 @@ Cloud Integration
 </td>
 <td valign="top">
 
-Integrations, Runtime
+Integrations, Runtime, Artificial Intelligence
 
 </td>
 <td valign="top">
 
-[Configuring Integration Settings](IntegrationSettings/configuring-integration-settings-98091f7.md)
+[Integration](IntegrationSettings/integration-98091f7.md), [Artificial Intelligence](artificial-intelligence-6a6727c.md)
 
 </td>
 </tr>
@@ -52,12 +52,12 @@ API Management
 </td>
 <td valign="top">
 
-APIs
+APIs, Artificial Intelligence
 
 </td>
 <td valign="top">
 
-[Setting Up API Management Capability](setting-up-api-management-capability-f34e86c.md)
+[Setting Up API Management Capability](setting-up-api-management-capability-f34e86c.md), [Artificial Intelligence](artificial-intelligence-6a6727c.md)
 
 </td>
 </tr>
@@ -69,12 +69,12 @@ Integration Advisor
 </td>
 <td valign="top">
 
-MIGs and MAGs
+MIGs and MAGs, Artificial Intelligence
 
 </td>
 <td valign="top">
 
-[Settings for MIGs and MAGs](settings-for-migs-and-mags-4c442af.md)
+[MIGs and MAGs](migs-and-mags-4c442af.md), [Artificial Intelligence](artificial-intelligence-6a6727c.md)
 
 </td>
 </tr>

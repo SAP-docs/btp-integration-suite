@@ -8,6 +8,88 @@ Monitor your processed interchanges.
 
 
 
+<a name="loio42c119995c0542d6b367200bddc215c5__prereq_mdv_bnq_kfc"/>
+
+## Prerequisites
+
+To work with interchanges, your user must have the correct authorizations. Depending on your needs, you can the correct assign role collections to your user in the SAP BTP cockpit under *Security*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Role Template
+
+</th>
+<th valign="top">
+
+Role Collection
+
+</th>
+<th valign="top">
+
+Actions
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`B2bInterchangeRead`
+
+</td>
+<td valign="top">
+
+`PI_Integration_Developer`, `PI_Read_Only`
+
+</td>
+<td valign="top">
+
+Read interchanges without payloads
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`B2bInterchangePayloadRead`
+
+</td>
+<td valign="top">
+
+Not included in a role collection
+
+</td>
+<td valign="top">
+
+Read interchange payloads
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`B2bInterchangeOperate`
+
+</td>
+<td valign="top">
+
+`PI_Business_Expert`
+
+</td>
+<td valign="top">
+
+Execute operational tasks on interchanges, such as retry, restart, or cancel
+
+</td>
+</tr>
+</table>
+
+For details about roles and the tasks and permissions for the different personas, see [Identity and Access Management for Trading Partner Management](../60-Security/identity-and-access-management-for-trading-partner-management-5979108.md).
+
+
+
 ## Context
 
 An interchange is the incoming payload for B2B transactions. They facilitate the electronic sharing of data such as orders and invoices between trading partners. The **Monitor** tab allows you to:

@@ -89,6 +89,13 @@
 
 1.  Choose the script you want to improve from the resource pane.
 
-2.  To improve the script, include the guidelines provided in the *Problems* view. For more information, see: [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md).
+2.  Improve the script with the available tools in the editor:
+
+    -   Include the guidelines provided in the *Problems* view. For more information, see [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md).
+    -   Use *Optimize* to enhance the script with AI. For more information, see [Optimize Groovy Scripts](optimize-groovy-scripts-3b7a5a1.md).
+
+        > ### Note:  
+        > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://me.sap.com/notes/2903776).
+
 
 

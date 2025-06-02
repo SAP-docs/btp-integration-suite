@@ -47,6 +47,7 @@ This includes tasks like:
 -   Monitoring integration flows and the status of integration artifacts
 
 -   Reading the message payload and attachments
+-   Executing operational tasks like retrying, restarting, or cancelling B2B messages
 
 
 
@@ -65,7 +66,7 @@ PI\_Integration\_Developer
 </td>
 <td valign="top">
 
-Enables an integration developer to :
+Enables an integration developer to:
 
 -   Perform all configurations related to trading partner such as creating and maintaining partner profiles, company profile, agreement templates and agreements, and activating partner agreements.
 

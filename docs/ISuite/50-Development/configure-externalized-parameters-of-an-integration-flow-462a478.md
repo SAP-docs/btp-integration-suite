@@ -19,6 +19,9 @@ Cloud Integration allows you to configure an integration flow individually or mu
 
 2.  Choose *Configure*.
 
+    > ### Note:  
+    > You can also view the additional information added during parameter externalization, see [Externalized Parameters View](externalized-parameters-view-27a0216.md).
+
 3.  Select relevant details of externalised components in *Sender, Reciever* or *More*tab.
 
     > ### Note:  

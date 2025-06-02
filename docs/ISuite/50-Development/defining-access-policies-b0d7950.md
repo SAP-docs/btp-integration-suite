@@ -8,15 +8,27 @@ Define an access policy to specify which artifacts are to be protected.
 
 
 
+<a name="loiob0d79501fc374254a0dc7f78d39c6d56__AccessPolicies_generic"/>
+
+## Context
+
 To create and edit access policies, your user must be assigned the role collection *PI\_Administrator*.
 
-For more information about access policies, see [Access Policies](access-policies-e0009f3.md).
+To view and define access policies, go to **Monitor** **\>** **Integrations and APIs** **\>** **Manage Security** and select the **Access Policies** tile.
 
-Perform the following steps:
+You can use the *Runtime* dropdown to view a list of all available policies in specific runtimes. For more information about access policies, see [Access Policies](access-policies-e0009f3.md).
 
-1.  Go to the *Manage Security* section and choose the *Access Policies* tile. The list of existing access policies is displayed.
+To create new access policies, perform the following procedure:
 
-2.  To create a new access policy, choose :heavy_plus_sign: and provide the details as follows:
+
+
+## Procedure
+
+1.  Select *All* from the *Runtime* dropdown menu.
+
+2.  On the *Access Policies* table, choose *Create*.
+
+3.  Provide the following details:
 
     **Create Access Policy**
 
@@ -60,15 +72,29 @@ Perform the following steps:
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    *Runtimes*
+    
+    </td>
+    <td valign="top">
+    
+    Select the runtime where you want to create a new access policy.
+    
+    </td>
+    </tr>
     </table>
     
-    The access policy is added to the list.
+4.  Choose *Create*. The access policy is added to the list.
 
-    You can filter the list by searching in role names and descriptions and sort the list by role name.
+    You can filter the list by searching role names and descriptions, and sort the list by role name. To *Edit* or *Delete* an access policy, choose the corresponding icon on the *Actions* column.
 
-3.  Select the access policy from the list, and next to *Artifact References* choose :heavy_plus_sign:.
+5.  Select the access policy from the list to manage the policy’s artifact references.
 
-    Specify the following parameter follows:
+6.  On the *References* table, choose *Create*.
+
+7.  Provide the following parameters:
 
     **Create Artifact Reference**
 
@@ -130,9 +156,14 @@ Perform the following steps:
 
         Select to protect all artifacts of a certain integration package \(by selecting the *Integration Package* artifact type\). If you define an artifact reference for a specific integration package, all artifact types are covered.
 
-        Access policies for integration packages and for specific artifact types \(such like integration flows and script collections, for example\) co-exist as described under [Access Policies](access-policies-e0009f3.md).
+        Access policies for integration packages and for specific artifact types \(such as integration flows and script collections\) co-exist as described under [Access Policies](access-policies-e0009f3.md).
+
+        > ### Note:  
+        > Some artifacts in a package can have pre-existing access policies at the artifact level. To ensure continuity of service, the current action doesn't affect these pre-existing access policy protections. Consider manually cleaning up any existing access policies before creating a new one at the package level.
 
     -   *Integration Flow*
+
+    -   *API*
 
     -   *OData API*
 
@@ -239,12 +270,42 @@ Perform the following steps:
     </tr>
     </table>
     
-    You can create additional artifact references if you like to protect additional artifact types.
+8.  Once the configuration is completed, choose *Create*. You can create additional artifact references if you want to protect additional artifact types.
 
-4.  Once you have completed the configuration of the artifact references, select *Create*.
+    To *Edit* or *Delete* an artifact reference, choose the corresponding icon on the *Actions* column.
 
 
-To *Edit* or *Delete* an access policy, choose the corresponding item from the *Actions* menu of the respective row.
+<a name="task_kdw_flm_lfc"/>
 
-To *Edit* or *Delete* an artifact reference, choose the corresponding action button of the respective row.
+<!-- task\_kdw\_flm\_lfc -->
+
+## Replicating Access Policies
+
+
+
+## Context
+
+You can replicate access policies across runtimes, allowing them to coexist in multiple runtimes simultaneously.
+
+To replicate policies, follow these steps:
+
+
+
+## Procedure
+
+1.  Select *All* from the *Runtime* dropdown menu.
+
+2.  In the *Access Policies* table, search for the access policy you want to copy into different runtimes.
+
+3.  Choose the :pencil2: edit icon from the policy's *Actions* colunm.
+
+4.  In the dialog box that appears, open the *Runtimes* dropdown and select one or more runtimes where you want to copy the access policy.
+
+5.  Choose *Update*. In the *Access Policies* table, the *Runtimes* column updates to show the number of runtimes assigned to the policy.
+
+6.  Choose the icon on the *Runtimes* column to check the reconciliation status of your policies. The status can be *Fail*, *Success*, or *Pending*.
+
+    > ### Note:  
+    > If the runtime location where you want to replicate access policies is offline, the newly defined access policies are temporarily held back, and only apply to design time artifacts. Once the designated runtime comes back online, the access policies are automatically copied to it. Until this reconciliation at the runtime location is complete, the status in the reconciliation column remains as *Pending*.
+
 

@@ -1,10 +1,10 @@
 <!-- loio7010b58f57494a71a6a02c475a3548e8 -->
 
-# User Roles in API Management
+# Role Collections in API Management
 
-Use role collections to group together different roles that can be assigned to API Portal and Developer Hub users.
+Use role collections to group together different roles that can be assigned to API management users. In API Management, a role collection is a grouping mechanism that allows you to manage and assign multiple roles to users more efficiently.
 
-**API Portal Roles**
+The table below outlines the role collections used in SAP Integration Suite API Management tenant:
 
 
 <table>
@@ -23,43 +23,79 @@ Description
 <tr>
 <td valign="top">
 
-`APIPortal.Administrator`
+APIManagement.Selfservice.Administrator
 
 </td>
 <td valign="top">
 
-Use this role to access the API portal user interface \(UI\) and services, manage the API proxies by adding additional policies, and create products. You can also use this role to manage APIs using the API Designer.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`APIPortal.Service.CatalogIntegratio`n
-
-</td>
-<td valign="top">
-
-You need this role assigned to you because the client credentials, which are necessary for establishing a connection between the SAP Integration Suite API Management tenant and Developer Hub, are generated for this role.
+This role is used during the on-boarding process of the SAP Integration Suite API Management tenant, granting access to the portal's settings page.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-`APIManagement.Selfservice.Administrator`
+APIPortal.Administrator
 
 </td>
 <td valign="top">
 
-Use this role during the onboarding of API portal and to get access to its settings page.
+This role provides access to the API portal user interface \(UI\) and services. It allows you to manage API proxies by adding additional policies, create products, and manage APIs through the API Designer.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-`APIPortal.Guest`
+APIPortal.Service.CatalogIntegration
+
+</td>
+<td valign="top">
+
+The client credentials, which are necessary for establishing a connection between the SAP Integration Suite API Management tenant and Developer Hub, are generated for this role.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+APIPortal.Configurator
+
+</td>
+<td valign="top">
+
+This role allows you to view and edit entities such as API providers, certificates, and rate plans.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+APIPortal.Developer
+
+</td>
+<td valign="top">
+
+This role allows you to view and edit entities such as API proxies, policy templates and products with read-only access to all other entities.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+APIPortal.Tester
+
+</td>
+<td valign="top">
+
+This role allows you to test and debug API proxies.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+APIPortal.Guest
 
 </td>
 <td valign="top">
@@ -70,7 +106,13 @@ Use this role to access the API portal in read-only mode. You can view all APIs,
 </tr>
 </table>
 
-**Developer Hub Roles**
+The role collections **APIPortalAdministrator, APIPortal.Configurator, APIPortal.Developer, and APIPortal.Tester** enable enhanced governance and a clearer separation of responsibilities within API Management. By assigning roles based on specific job functions, you can improve both security and operational efficiency. For a detailed breakdown of the permissions and responsibilities associated with each role, see [Comprehensive Breakdown of Role Collections in API Management](comprehensive-breakdown-of-role-collections-in-api-management-f3049e2.md).
+
+
+
+The table below outlines the role collections used in Developer Hub:
+
+****
 
 
 <table>
@@ -89,7 +131,7 @@ Description
 <tr>
 <td valign="top">
 
-`AuthGroup.SelfService.Admin`
+AuthGroup.SelfService.Admin
 
 </td>
 <td valign="top">
@@ -101,7 +143,7 @@ Use this role during the onboarding of Developer Hub and to get access to it.
 <tr>
 <td valign="top">
 
-`AuthGroup.API.Admin` 
+AuthGroup.API.Admin
 
 </td>
 <td valign="top">
@@ -124,7 +166,7 @@ Use this role to:
 <tr>
 <td valign="top">
 
-`AuthGroup.ContentAuthor`
+AuthGroup.ContentAuthor
 
 </td>
 <td valign="top">
@@ -141,7 +183,7 @@ Use this role to:
 <tr>
 <td valign="top">
 
-`AuthGroup.API.ApplicationDeveloper`
+AuthGroup.API.ApplicationDeveloper
 
 </td>
 <td valign="top">
@@ -160,7 +202,7 @@ Use this role to:
 <tr>
 <td valign="top">
 
-`AuthGroup.Content.Admin` 
+AuthGroup.Content.Admin
 
 </td>
 <td valign="top">
@@ -176,7 +218,7 @@ Use this role to:
 <tr>
 <td valign="top">
 
-`AuthGroup.Site.Admin` 
+AuthGroup.Site.Admin
 
 </td>
 <td valign="top">
@@ -193,7 +235,7 @@ Use this role to:
 <tr>
 <td valign="top">
 
-`AuthGroup.APIPortalRegistration`
+AuthGroup.APIPortalRegistration
 
 </td>
 <td valign="top">

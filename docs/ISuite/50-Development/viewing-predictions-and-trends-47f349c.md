@@ -72,7 +72,7 @@ By default, the API call predictions and trends data is displayed for all API pr
 
 To view API call predictions and trends for specific APIs, follow the steps below:
 
--   In the *Filters* section, choose the *APIs* drop-down list. A list of APIs that meet the minimum data requirement of at least 3 months of API call volume data will be displayed.
+-   In the *Filters* section, choose the *APIs* drop-down menu. A list of APIs that meet the minimum data requirement of at least 3 months of API call volume data will be displayed.
 -   Select the desired APIs for which you want predictions and trends.
 -   To remove certain APIs from the selected APIs, choose the API from the *APIs* field and choose :x:.
 -   To clear the selection of APIs, simply choose :x: at the end of the *Active Filters* field.
@@ -98,5 +98,7 @@ Choose <span class="SAP-icons-V5"></span> for tabular view.
 **Related Information**  
 
 
-[Enabling Predictions](enabling-predictions-0d98ac5.md "The Predictions feature is associated with anomaly detection. The toggle button on the Analyze page activates both Anomaly Detection and Predictions for API calls. See Enabling Anomaly Detection and Predictions.")
+[Enabling Anomaly Detection and Predictions](enabling-anomaly-detection-and-predictions-98534a0.md "Activate the anomaly detection and prediction features for API proxy calls to enhance monitoring and forecasting capabilities.")
+
+[Predictions](predictions-823bcd7.md "In addition to anomaly detection, we have now introduced Predictions, an AI-based feature that can forecast future API call volumes based on past call data. With this new feature, you can identify trends in API traffic and view predictions for upcoming API call volumes. Predictions are available for all API proxies that meet the minimum data requirement of at least 3 months of API call volume data. Additionally, it offers customizable options, allowing you to select specific API proxies, choose the prediction duration, and set the frequency according to your preferences.")
 

@@ -86,7 +86,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Source Encoding
+    *Source Encoding* 
     
     </td>
     <td valign="top">
@@ -103,7 +103,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Target Encoding
+    *Target Encoding*
     
     </td>
     <td valign="top">
@@ -115,7 +115,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Target Decimal Character
+    *Target Decimal Character*
     
     </td>
     <td valign="top">
@@ -127,7 +127,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    EDI Schema Definition
+    *EDI Schema Definition*
     
     </td>
     <td valign="top">
@@ -139,7 +139,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Schemas
+    *Schemas*
     
     </td>
     <td valign="top">
@@ -175,7 +175,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    HeaderName
+    *HeaderName*
     
     </td>
     <td valign="top">
@@ -196,12 +196,34 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Exclude Interchange and Group envelopes
+    *Exclude Interchange and Group envelopes* 
     
     </td>
     <td valign="top">
     
-    If selected the feature notifies the converter to exclude the interchange and group envelopes found in an EDI document.
+    If selected, the feature notifies the converter to exclude the interchange and group envelopes found in an EDI document.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Target Root Element*
+
+    \(only available if *Exclude Interchange and Group envelopes* is not selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Select to determine the target root element of the outgoing payload.
+
+    These are the following options:
+
+    -   Dynamic: If you select Dynamic, you must define the value for `interchange` or `fromIncomingPayload` in `SAP_EDITOXML_EDIFACT_TARGET_ROOT_ELEMENT` header.
+    -   Interchange: Select to use the root element from the incoming interchange.
+    -   Message Specification from Incoming Payload: Select to use the same root element as the incoming payload in the outgoing payload.
+
+
     
     </td>
     </tr>
@@ -215,7 +237,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Source Encoding
+    *Source Encoding* 
     
     </td>
     <td valign="top">
@@ -232,7 +254,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    EDI Schema Definition
+    *EDI Schema Definition*
     
     </td>
     <td valign="top">
@@ -249,7 +271,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Schemas
+    *Schemas* 
     
     </td>
     <td valign="top">
@@ -273,7 +295,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Header Name
+    *Header Name* 
     
     </td>
     <td valign="top">
@@ -292,7 +314,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Exclude Interchange and Group envelopes
+    *Exclude Interchange and Group envelopes*
     
     </td>
     <td valign="top">
@@ -325,7 +347,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Source Encoding
+    *Source Encoding* 
     
     </td>
     <td valign="top">
@@ -350,7 +372,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Conversion Preference
+    *Conversion Preference* 
     
     </td>
     <td valign="top">
@@ -375,7 +397,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    EDI Schema Definition
+    *EDI Schema Definition* 
     
     </td>
     <td valign="top">
@@ -407,7 +429,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Header Name
+    *Header Name*
 
     \(only available if for *EDI Schema Definition* the option *Header* is selected\)
     
@@ -430,7 +452,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <tr>
     <td valign="top">
     
-    Schemas
+    *Schemas*
 
     \(only available if for *EDI Schema Definition* the option *Integration Flow* is selected\)
     
@@ -459,7 +481,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     </tr>
     </table>
     
-3.  If you want to continue editing the integration package without exiting, choose *Save*.
+3.  If you want to continue editing the integration package without exiting, choose *Save*
 
 4.  Choose *Save as version* to retain a copy of the current artifact.
 
@@ -498,56 +520,65 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
 
     ```
     
-    <?xml version="1.0" encoding="UTF-8"?><Interchange>
+    <
+                ><Interchange>
         <S_UNA>:+.? '</S_UNA>
         <S_UNB>
             <C_S001>
-                <D_0001>UNOC</D_0001>
-                <D_0002>3</D_0002>
-            </C_S001>
+                <D_0001>UNOC</D_0001></D_67D_0002
+                </S_N1>
+            </G_N1>
+            
             <C_S002>
-                <D_0004>SENDERABC</D_0004>
-                <D_0007>14</D_0007>
-                <D_0008>XXXX</D_0008>
-            </C_S002>
+                <D_0004
+                    SENDERABC</D_0004></D_350D_0007>14D_330>17</D_330>
+                    <D_355>>
+            /D_355/C_S002
+                    
             <C_S003>
-                <D_0010>ReceiverXYZ</D_0010>
+                <D_0010>ReceiverXYZD_639/D_0010>
                 <D_0007>14</D_0007>
-                <D_0014>YYYYY</D_0014>
-            </C_S003>
-            <C_S004>
+                /D_235_1>
+                    <D_0014D_234_1>2112910003</D_234_1>
+                    <D_235_2>PD>
                 <D_0017>150831</D_0017>
-                <D_0019>1530</D_0019>
-            </C_S004>
-            <D_0020>1</D_0020>
-            <C_S005>
-                <D_0022>HELLO WORLD</D_0022>
-            </C_S005>
-            <D_0029>A</D_0029>
-            <D_0035>1</D_0035>
-        </S_UNB>
-        <M_ORDERS>
-            <S_UNH>
-                <D_0062>1</D_0062>
-                <C_S009>
-                    <D_0065>ORDERS</D_0065>
-                    <D_0052>D</D_0052>
-                    <D_0054>96A</D_0054>
-                    <D_0051>UN</D_0051>
+                <>><S_LIN>
+                    <D_235_1>MF
+            <D_0020/D_235_1>
+                    <D_234_1>2109308</D_234_1>
+                </S_LIN>
+                <G_SCH>
+                    <S_SCH>
+                        <D_380<>17</D_380>
+                        <D_355>EA</D_355>
+                        <D_374_1>002</D_374_1>
+                        <D_373_1>20060401</D_373_1>
+                    </S_SCH>
+                </G_SCH>
+            </G_PO1>
+            <G_CTT>
+                <S_CTT>
+                    <D_354>1</D_354>
+                >/S_CTT<
+            <
+                    <D_0051>UND_96/D_005110</D_96>
                 </C_S009>
                 <C_S010>
                     <D_0070>2</D_0070>
                 </C_S010>
             </S_UNH>
             <S_BGM>
-                <C_C002>
-                    <D_1001>220</D_1001>
-                </C_C002>
-                <D_1004>MY_ID</D_1004>
-                <D_1225>9</D_1225>
-                <D_4343>NA</D_4343>
-            </S_BGM>
-            <S_DTM>
+                >
+                    >1</D_28>
+        </S_GE>
+        <S_IEA>
+            <D_I16>1</D_I16>
+            <D_I12>000000001</D_I12>
+        </S_IEA>
+    </ns0:Interchange
+    
+    
+    S_DTM>
                 <C_C507>
                     <D_2005>137</D_2005>
                     <D_2380>201507311500</D_2380>
@@ -609,115 +640,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     Output sample ASC-X12 XML Message
 
     ```
-    
-    <?xml version="1.0" encoding="UTF-8"?><ns0:Interchange xmlns:ns0="urn:sap.com:typesystem:b2b:116:asc-x12:850:004010">
-        <S_ISA>
-            <D_I01>00</D_I01>
-            <D_I02>          </D_I02>
-            <D_I03>00</D_I03>
-            <D_I04>          </D_I04>
-            <D_I05_1>01</D_I05_1>
-            <D_I06>784849291      </D_I06>
-            <D_I05_2>01</D_I05_2>
-            <D_I07>315029991      </D_I07>
-            <D_I08>051007</D_I08>
-            <D_I09>0928</D_I09>
-            <D_I10>/</D_I10>
-            <D_I11>4010 </D_I11>
-            <D_I12>000000001</D_I12>
-            <D_I13>0</D_I13>
-            <D_I14>P</D_I14>
-            <D_I15>^</D_I15>
-        </S_ISA>
-        <S_GS>
-            <D_479>PO</D_479>
-            <D_142>784849291</D_142>
-            <D_124>315029991</D_124>
-            <D_373>20051007</D_373>
-            <D_337>0928</D_337>
-            <D_28>1</D_28>
-            <D_455>U</D_455>
-            <D_480>004010</D_480>
-        </S_GS>
-        <M_850>
-            <S_ST>
-                <D_143>850</D_143>
-                <D_329>10001</D_329>
-            </S_ST>
-            <S_BEG>
-                <D_353>00</D_353>
-                <D_92>NE</D_92>
-                <D_324>228914</D_324>
-                <D_373>20051006</D_373>
-            </S_BEG>
-            <S_CUR>
-                <D_98_1>BY</D_98_1>
-                <D_100_1>EUR</D_100_1>
-                <D_280>0100</D_280>
-            </S_CUR>
-            <G_N1>
-                <S_N1>
-                    <D_98_1>SF</D_98_1>
-                    <D_93>BEHR SERVICE GMBH</D_93>
-                    <D_66>92</D_66>
-                    <D_67>1939</D_67>
-                </S_N1>
-            </G_N1>
-            <G_N1>
-                <S_N1>
-                    <D_98_1>ST</D_98_1>
-                    <D_93>BEHR SERVICE AMERICA</D_93>
-                    <D_66>92</D_66>
-                    <D_67>1939</D_67>
-                </S_N1>
-            </G_N1>
-            <G_PO1>
-                <S_PO1>
-                    <D_350>10000</D_350>
-                    <D_330>17</D_330>
-                    <D_355>EA</D_355>
-                    <D_212>91.8074</D_212>
-                    <D_639>EA</D_639>
-                    <D_235_1>BP</D_235_1>
-                    <D_234_1>2112910003</D_234_1>
-                    <D_235_2>PD</D_235_2>
-                    <D_234_2>Radiator</D_234_2>
-                </S_PO1>
-                <S_LIN>
-                    <D_235_1>MF</D_235_1>
-                    <D_234_1>2109308</D_234_1>
-                </S_LIN>
-                <G_SCH>
-                    <S_SCH>
-                        <D_380>17</D_380>
-                        <D_355>EA</D_355>
-                        <D_374_1>002</D_374_1>
-                        <D_373_1>20060401</D_373_1>
-                    </S_SCH>
-                </G_SCH>
-            </G_PO1>
-            <G_CTT>
-                <S_CTT>
-                    <D_354>1</D_354>
-                </S_CTT>
-            </G_CTT>
-            <S_SE>
-                <D_96>10</D_96>
-                <D_329>10001</D_329>
-            </S_SE>
-        </M_850>
-        <S_GE>
-            <D_97>1</D_97>
-            <D_28>1</D_28>
-        </S_GE>
-        <S_IEA>
-            <D_I16>1</D_I16>
-            <D_I12>000000001</D_I12>
-        </S_IEA>
-    </ns0:Interchange>
-    
-    
-    
+
     ```
 
 

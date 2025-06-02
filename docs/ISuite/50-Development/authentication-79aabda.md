@@ -21,7 +21,7 @@ Client applications follow the OAuth 2.0 protocol to obtain an access token. Gra
 
 User authentication is used by Task or Workflow applications, which are required to authenticate \(human\) enterprise users. A typical use case might be an app that lets employees use their own identity to check their vacation quota.
 
-It requires two steps, involving browser redirects. The first step is to receive an authorization code via a callback, and the second step exchanges the received authorization code for the access token. Applications that use this authentication method must be approved \(added to an allowlist\) by the SAP BTP administrator. For more information, see [Enable Client Applications](enable-client-applications-09d7783.md).
+It requires two steps, involving browser redirects. The first step is to receive an authorization code via a callback, and the second step exchanges the received authorization code for the access token. Applications that use this authentication method must be approved \(added to an allowlist\) by the SAP BTP administrator. For more information, see [Enable Client Applications](enable-client-applications-e904119.md).
 
 In the first step, a `GET` call is made to the *security-service*`/oauth/authorize` endpoint with the following query parameters:
 
@@ -77,5 +77,5 @@ The authentication code of the client applications must use the following parame
 -   Authentication credentials: `client id` and `client secret`
 -   The Graph API URL
 
-To acquire these parameters, the Graph service instance and service binding must be created. For more information, see [Enable Client Applications](enable-client-applications-09d7783.md).
+To acquire these parameters, the *Process Integration Runtime* service instance and service binding must be created. For more information, see [Enable Client Applications](enable-client-applications-e904119.md).
 

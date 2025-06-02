@@ -69,9 +69,9 @@ If you use a Splitter step in a local integration process, the following limitat
     </td>
     <td valign="top">
     
-    XPath to the split term
+    XPath to the split term.
 
-    You can specify the absolute or relative path.
+    You can specify the absolute or relative path or a reference to a header property.
 
     > ### Note:  
     > Note that only the following types of XPath expressions are supported:
@@ -120,7 +120,7 @@ If you use a Splitter step in a local integration process, the following limitat
     </td>
     <td valign="top">
     
-    The size of the groups into which the composite message is to be split.
+    The size of the groups into which the composite message is to be split. You can also enter a reference to a header or property instead of a fixed value for Grouping.
 
     For example, if a message has 10 nodes and grouping is defined as 2, the message is split into 5 messages with 2 nodes each.
     

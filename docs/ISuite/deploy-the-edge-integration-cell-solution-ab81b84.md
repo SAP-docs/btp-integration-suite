@@ -129,6 +129,30 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    **Enable SNC for RFC Adapter**
+    
+    </td>
+    <td valign="top">
+    
+    Choose this option to set up SNC for secure communication over the RFC protocol. It is strongly recommended to enable this option if using the RFC adapter productively. For more information, see [Set Up SNC on Edge Integration Cell](60-Security/set-up-snc-on-edge-integration-cell-c2315d3.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **SNC File System Storage Class \(only visible if SNC for RFC Adapter is enabled\)**
+    
+    </td>
+    <td valign="top">
+    
+    Enter the storage class for the access mode `ReadWriteMany` and the binding mode `Immediate`.
+    
+    </td>
+    </tr>
     </table>
     
 7.  Choose *Next Step*.
@@ -234,6 +258,18 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
+    Database Type
+    
+    </td>
+    <td valign="top">
+    
+    Database Type will be implicitly defined by selecting External DB.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     PostgreSQL Storage Class \(only visible if External DB isn't enabled\)
     
     </td>
@@ -328,6 +364,18 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Select this option for production environments.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Datastore Type
+    
+    </td>
+    <td valign="top">
+    
+    Datastore Type will be implicitly defined by selecting External Redis.
     
     </td>
     </tr>

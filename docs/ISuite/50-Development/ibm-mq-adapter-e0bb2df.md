@@ -17,7 +17,7 @@ The IBM MQ adapter connects SAP Integration Suite to IBM MQ. IBM MQ is a secure 
 **Related Information**  
 
 
-[Configure the IBM MQ \(REST\) Receiver Adapter](configure-the-ibm-mq-rest-receiver-adapter-45610e7.md "")
+[IBM MQ Sender Adapter](ibm-mq-sender-adapter-95f259b.md "IBM MQ Sender Adapter provides the ability to consume messages seamlessly from IBM MQ. There are two variants available for JMS and REST based messaging.")
 
-[Configure the IBM MQ \(REST\) Sender Adapter](configure-the-ibm-mq-rest-sender-adapter-35cd02d.md "")
+[IBM MQ Receiver Adapter](ibm-mq-receiver-adapter-8c17acf.md "IBM MQ Receiver Adapter allows reliable and convenient publishing of messages to IBM MQ. There are two variants available for JMS and REST based messaging.")
 

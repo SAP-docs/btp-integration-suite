@@ -126,7 +126,7 @@ Handle the dependent message mapping objects and its resources in an efficient w
 
     An integration flow that is equivalent to the source object is created. The sender and receiver channels, other flow steps like mappings, and attributes from the source object are migrated too.
 
-    For the sender and receiver adapter, all their attributes from the source object are externalized in the newly created integration flow. This design helps you configure the parameters for SAP Integration Suite without having to edit the integration flow.
+    For the sender and receiver adapter, only necessary attributes from the source object are externalized in the newly created integration flow. This design helps you configure the parameters for SAP Integration Suite without having to edit the integration flow.
 
 18. Look out for useful information in the *Migration Success* page. Choose *Report* at the top-right corner to download the migration report in PDF format. Also, review the [Known Limitations](known-limitations-of-migration-tooling-7a552d4.md) to understand any potential restrictions.
 

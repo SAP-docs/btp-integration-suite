@@ -22,171 +22,90 @@ Access to dedicated functions of the platform is controlled and protected by aut
 
 
 
-<a name="loioed50e648bfea4ca08c9be8d64abc5bed__section_r1z_kdt_ngb"/>
+<a name="loioed50e648bfea4ca08c9be8d64abc5bed__section_f55_kxm_gfc"/>
 
-## Personas and Roles
+## Role Collections in SAP BTP Cockpit
 
-There are two personas associated with Integration Advisor: Tenant Administrator and Content Developer. Here’s a brief description of the responsibilities of each role and the roles required for those personas.
+To work with Integration Advisor, assign the relevant role collection to your user. See [Configuring User Access to SAP Integration Suite](../configuring-user-access-to-sap-integration-suite-2c6214a.md).
+
+The following table outlines the available role collections and what tasks they enable you to perform.
 
 
 <table>
 <tr>
 <th valign="top">
 
-Persona
+Role Collection
 
 </th>
 <th valign="top">
 
-Responsibilities
-
-</th>
-<th valign="top">
-
-Roles Required in Application
-
-</th>
-<th valign="top">
-
-Roles Required in SAP BTPAccount
+Task
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-Tenant Admin
+*iadv-content-developer*
 
 </td>
 <td valign="top">
 
-Manage Consumer accounts and subscriptions
+-   Discover the different Type systems enabled for the B2B standards
+-   Design your own custom type system
+-   Create Message Implementation Guidelines \(MIGs\) using the type systems
+-   Simulate and activate your MIGs
+-   Create interfaces and mappings from these MIGs using Mapping Guidelines \(MAGs\)
+-   Simulate and activate your MAGs
+-   Inject or export these data as Runtime Artifacts
+-   Export and import your MIGs and MAGs
 
-Responsibilities:
 
--   Enable IA Subscription.
-
--   Manage users and roles in consumer account
-
-
-
-
-</td>
-<td valign="top">
-
-None
-
-</td>
-<td valign="top">
-
-Administrator
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Content Developer
+*iadv-content-administrator*
 
 </td>
 <td valign="top">
 
-Develops and maintains customer content
-
-Responsibilities:
-
--   Read & consume type systems
-
--   Create & maintain Message Guidelines
-
--   Create & maintain Mapping Guidelines
-
--   Refresh B2B license entitlements.
+-   iadv-content-developer tasks
+-   Unlock MIGs and MAGs locked by other users
+-   Disable Proposal service
 
 
-
-
-</td>
-<td valign="top">
-
-Typesystem.Read
-
-Guidelines.ReadWrite
-
-</td>
-<td valign="top">
-
-None
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-IA Administrator
+*iadv-content-read*
 
 </td>
 <td valign="top">
 
-Develops and maintains customer content
+-   Read-only access to view the following artefacts:
 
-Responsibilities:
+    -   Type system library
 
--   Read & consume type systems
+    -   MIGs
+    -   MAGs
+    -   Custom Type Systems
 
--   Create & maintain Message Implementation Guidelines
--   Create & maintain Mapping Guidelines
--   Refresh B2B license entitlements
--   Unlock Message Guidelines & Mapping Guidelines locked by other users
+-   Simulate MIGs and MAGs
+-   Export artefacts
 
-
-
-</td>
-<td valign="top">
-
-Guidelines.Administrator
-
-Guidelines.ReadWrite
-
-Typesystem.Read
-
-</td>
-<td valign="top">
-
-None
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Content Read
-
-</td>
-<td valign="top">
-
-View and browse customer content
-
--   Read type system libraries, message implementation guidelines, mapping guidelines, and custom type systems
-
--   Simulate message implementation guidelines and mapping guidelines
-
--   Export artifacts
+> ### Note:  
+> Users with this role can view and browse these objects, but cannot edit or modify them in any way.
+> 
+> This role does not include importing artefacts \(MIGs/MAGs\).
 
 
-
-
-</td>
-<td valign="top">
-
-Typesystem.Read
-
-Guidelines.Read
-
-</td>
-<td valign="top">
-
-None
 
 </td>
 </tr>

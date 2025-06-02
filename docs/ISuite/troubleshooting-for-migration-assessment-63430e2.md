@@ -16,10 +16,15 @@ This section covers the following errors on Migration Assessment:
 
 -   Connection test errors:
 
+    > ### Remember:  
+    > Connection tests verify whether the main resources needed for the SAP Process Orchestration extraction are reachable. You can get a connection test error even if previous Cloud Connector and destination connection tests were successful, as those don't check for resource accessibility.
+
     -   [503 Service Unavailable](troubleshooting-for-migration-assessment-63430e2.md#loio63430e2bee434c17858331f109777a3a__section_twg_wvt_jcc)
     -   [403 Forbidden](troubleshooting-for-migration-assessment-63430e2.md#loio63430e2bee434c17858331f109777a3a__section_ib4_p15_jcc)
     -   [401 Unauthorized](troubleshooting-for-migration-assessment-63430e2.md#loio63430e2bee434c17858331f109777a3a__section_zrl_fc5_jcc)
+    -   [404 Not Found](troubleshooting-for-migration-assessment-63430e2.md#loio63430e2bee434c17858331f109777a3a__section_knt_fry_ffc)
 
+-   [ICO List Empty](troubleshooting-for-migration-assessment-63430e2.md#loio63430e2bee434c17858331f109777a3a__section_fby_gqy_ffc)
 -   [Technical Error with Unique ID](troubleshooting-for-migration-assessment-63430e2.md#loio63430e2bee434c17858331f109777a3a__section_vl2_jc5_jcc)
 -   [Network Issue Between Cloud Connector and SAP Process Orchestration](troubleshooting-for-migration-assessment-63430e2.md#loio63430e2bee434c17858331f109777a3a__section_vn4_lc5_jcc)
 
@@ -110,6 +115,33 @@ Reasons for the error:
 -   User and password don't exist on the SAP Process Orchestration system.
 
 -   Firewall is blocking the request with 401.
+
+
+
+<a name="loio63430e2bee434c17858331f109777a3a__section_knt_fry_ffc"/>
+
+## 404 Not Found
+
+A possible reason for this error could be a wrong SAP Process Orchestration system address configuration.
+
+Make sure you maintain `<host_url>:<port>` in the system configuration address field.
+
+
+
+<a name="loio63430e2bee434c17858331f109777a3a__section_fby_gqy_ffc"/>
+
+## ICO List Empty
+
+If you get this error in your extraction logs, perform the following steps:
+
+1.  Test the system connection on *Settings* \> *Test Connection*.
+
+    If the test connection fails, your system is incorrectly configured. Pease, validate your Cloud Connector configuration and system setting properties.
+
+    If your connection test is successful, there could be an issue with the API call to extract the ICO list from your SAP Process Orchestration system. In this case, proceed to the next step.
+
+2.  Check your SAP Process Orchestration system logs for any exceptions that occurred during the POST call to the endpoint `/IntegratedConfiguration750InService/IntegratedConfiguration750InImplBean`. When you raise a support ticket, please share this log.
+
 
 
 

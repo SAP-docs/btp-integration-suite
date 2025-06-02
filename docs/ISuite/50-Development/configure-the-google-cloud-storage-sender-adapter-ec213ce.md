@@ -63,7 +63,12 @@ Default: `https://storage.googleapis.com`
 </td>
 <td valign="top">
 
-Select the method for authentication to Google Cloud Storage. Currently *OAuth2 Service Account* is supported.
+Select the method for authentication to Google Cloud Storage:
+
+-   *OAuth2 Service Account*
+-   *Workload Identity Federation*
+
+
 
 </td>
 </tr>
