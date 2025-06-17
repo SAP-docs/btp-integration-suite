@@ -11,6 +11,7 @@
 -   You've set the *Transport Mode* as *Transport Management Service* in the tenant *Transport* settings. For more information, see [Enabling Content Transport, Cloud Foundry Environment](enabling-content-transport-cloud-foundry-environment-452c677.md).
 -   You've created necessary HTTP destinations and transport routes. For more information, see [Creating HTTP Destinations and Transport Route](creating-http-destinations-and-transport-route-94057be.md).
 -   You've the role *WorkspacePackagesTransport* for CF or *IntegrationContent.Transport* for Neo assigned.
+-   The "Process Integration Runtime" service (plan: "API") *entitlement* is provisioned for all subaccounts targeted for imports.
 
 
 
