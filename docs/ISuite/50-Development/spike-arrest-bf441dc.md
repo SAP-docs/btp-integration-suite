@@ -514,7 +514,7 @@ If the spike arrest rate specified in the `<Rate>` element of the Spike Arrest P
 </tr>
 </table>
 
-The folFlowing fault variables are set when the policy triggers an error at runtime:
+The following fault variables are set when the policy triggers an error at runtime:
 
 **Fault Variables**
 
