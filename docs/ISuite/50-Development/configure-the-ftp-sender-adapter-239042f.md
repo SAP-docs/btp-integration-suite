@@ -11,7 +11,7 @@ The FTP \(File Transfer Protocol\) sender adapter connects SAP Integration Suite
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -654,6 +654,52 @@ Monthly
 <td valign="top">
 
 Select the day of the month on which the operation has to be executed. Also indicate the time or the interval for the schedule to recur.
+
+</td>
+</tr>
+<tr>
+<td valign="top" rowspan="2">
+
+*Advanced*
+
+\(Option is available for adapter version 1.4 and above\)
+
+</td>
+<td valign="top">
+
+-   *Seconds*
+
+-   *Minutes*
+
+-   *Hours*
+
+-   *Days*
+
+-   *Months*
+
+-   *Years*
+
+
+
+
+</td>
+<td valign="top">
+
+Create a schedule by choosing the different units of time measurement available in seconds, minutes, hours, days, months, and years. The resulting time schedule is a combined configuration from the multiple options that you choose. The default schedule recurs at every 5th minute starting at the 0th second.
+
+With the *Advanced* scheduler option, you can configure complex and granular schedules using a combination of various units of time measurement. For example, the last day of the month, the last weekday of the week, specific days in a month or year, every few minutes, between certain hours, and so on. For sample use cases, read the [blog](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-integration-suite-advanced-scheduler-configuration/ba-p/13564143).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Time Zone*
+
+</td>
+<td valign="top">
+
+The time zone that you want to use as a reference for the configured date and time.
 
 </td>
 </tr>

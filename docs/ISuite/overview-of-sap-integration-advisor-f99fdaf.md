@@ -70,7 +70,7 @@ Here are the next steps for you:
 
 -   [Creating a New Mapping Guideline](50-Development/creating-a-new-mapping-guideline-a42920e.md)
 
--   [Working with a Mapping Guideline \(MAG\)](50-Development/working-with-a-mapping-guideline-mag-0803ca6.md)
+-   [Working with Mapping Guidelines \(MAGs\)](50-Development/working-with-mapping-guidelines-mags-0803ca6.md)
 
 **Related Information**  
 

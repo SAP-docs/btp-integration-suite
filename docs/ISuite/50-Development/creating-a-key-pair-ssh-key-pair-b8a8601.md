@@ -16,7 +16,7 @@ You create an SSH key pair to connect to the SFTP server.
 
 ## Procedure
 
-1.  In the Operations view, choose *Manage Security* \> *Keystore*.
+1.  In the Monitor view, choose *Manage Security* \> *Keystore*.
 
 2.  In the *Current* tab, choose *Create* \> *Key Pair* or *Create* \> *SSH Key* depending upon your requirement.
 
@@ -210,6 +210,8 @@ You create an SSH key pair to connect to the SFTP server.
 
 **Related Information**  
 
+
+[Creating SFTP Keys](../40-RemoteSystems/creating-sftp-keys-3485a75.md "You can set up reliable file transfer based on SSH File Transfer Protocol (SFTP). SFTP is an enhancement of the Secure Shell (SSH) network protocol.")
 
 [Uploading a Key Pair](uploading-a-key-pair-083911e.md "Upload a private/public key pair to the tenant keystore.")
 

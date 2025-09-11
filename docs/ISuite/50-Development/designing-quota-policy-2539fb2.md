@@ -248,6 +248,663 @@ Alternatively, you can use the SyncMessageCount option instead, but you cannot u
 </tr>
 </table>
 
+
+
+<a name="loio2539fb236c444c24b70df8db8cd732a3__section_jpt_gf1_fgc"/>
+
+## Flow variables
+
+The following predefined flow variables are automatically populated when a Quota policy executes. For more information, see [Flow Variables](flow-variables-47f27da.md).
+
+
+<table>
+<tr>
+<th valign="top">
+
+Variables
+
+</th>
+<th valign="top">
+
+Type
+
+</th>
+<th valign="top">
+
+Permissions
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.allowed.count\>* 
+
+</td>
+<td valign="top">
+
+Long
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Returns the allowed quota count.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.used.count\>* 
+
+</td>
+<td valign="top">
+
+Long
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Returns the current quota used within a quota interval.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.available.count\>* 
+
+</td>
+<td valign="top">
+
+Long
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Returns the available quota count in the quota interval.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.exceed.count\>* 
+
+</td>
+<td valign="top">
+
+Long
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Returns 1 after the quota is exceeded.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.total.exceed.count\>* 
+
+</td>
+<td valign="top">
+
+Long
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Returns 1 after the quota is exceeded.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.expiry.time\>* 
+
+</td>
+<td valign="top">
+
+Long
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Returns the UTC time in milliseconds which determines when the quota expires and new quota interval starts.
+
+When the Quota policy type is rollingwindow, this value is not valid because the quota interval never expires.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.identifier\>* 
+
+</td>
+<td valign="top">
+
+String
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Returns the \(client\) identifier reference attached to the policy.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.class\>* 
+
+</td>
+<td valign="top">
+
+String
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Returns the class associated with the client identifier.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.class.allowed.count\>* 
+
+</td>
+<td valign="top">
+
+Long
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Returns the allowed quota count defined in the class.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.class.used.count\>* 
+
+</td>
+<td valign="top">
+
+Long
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Returns the used quota within a class.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.class.available.count\>* 
+
+</td>
+<td valign="top">
+
+Long
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Returns the available quota count in the class.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.class.exceed.count\>* 
+
+</td>
+<td valign="top">
+
+Long
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Returns the count of requests that exceeds the limit in the class in the current quota interval.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.class.total.exceed.count\>* 
+
+</td>
+<td valign="top">
+
+Long
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Returns the total count of requests that exceeds the limit in the class across all quota intervals, so it is the sum of **class.exceed.count** for all quota intervals.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.\{policy\_name\}.failed\>* 
+
+</td>
+<td valign="top">
+
+Boolean
+
+</td>
+<td valign="top">
+
+Read-only
+
+</td>
+<td valign="top">
+
+Indicates whether or not the policy failed \(true or false\).
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio2539fb236c444c24b70df8db8cd732a3__section_d2l_ch1_fgc"/>
+
+## Error reference
+
+This section explains the fault codes and error messages that are returned, and fault variables set by API Management when this policy triggers an error. This information is essential for developing fault rules to handle faults.
+
+
+
+### Runtime errors
+
+The table below lists the errors that may occur during policy execution:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Fault code
+
+</th>
+<th valign="top">
+
+HTTP status
+
+</th>
+<th valign="top">
+
+Cause
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`policies.ratelimit.FailedToResolveQuotaIntervalReference` 
+
+</td>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+Occurs if the `<Interval>` element is not defined within the Quota policy. This element is mandatory and used to specify the interval of time applicable to the quota. The time interval can be minutes, hours, days, weeks, or months as defined with the `<TimeUnit>` element.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`policies.ratelimit.FailedToResolveQuotaIntervalTimeUnitReference` 
+
+</td>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+Occurs if the `<TimeUnit>` element is not defined within the Quota policy. This element is mandatory and used to specify the unit of time applicable to the quota. The time interval can be in minutes, hours, days, weeks, or months.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`policies.ratelimit.InvalidMessageWeight` 
+
+</td>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+Occurs if the value of the `<MessageWeight>` element specified through a flow variable is invalid \(a non-integer value\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`policies.ratelimit.QuotaViolation` 
+
+</td>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+The quota limit was exceeded.
+
+</td>
+</tr>
+</table>
+
+
+
+### Deployment errors
+
+
+<table>
+<tr>
+<th valign="top">
+
+Error name
+
+</th>
+<th valign="top">
+
+Cause
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`InvalidQuotaInterval` 
+
+</td>
+<td valign="top">
+
+If the quota interval specified in the `<Interval>` element is not an integer, then the deployment of the API proxy fails. For example, if the quota interval specified is 0.1 in the `<Interval>` element, then the deployment of the API proxy fails.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`InvalidQuotaTimeUnit` 
+
+</td>
+<td valign="top">
+
+If the time unit specified in the `<TimeUnit>` element is unsupported, then the deployment of the API proxy fails. The supported time units are **minute**, **hour**, **day**, **week**, and **month**.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`InvalidQuotaType` 
+
+</td>
+<td valign="top">
+
+If the type of the quota specified by the **type** attribute in the `<Quota>` element is invalid, then the deployment of the API proxy fails. The supported quota types are **default**, **calendar**, **flexi**, and **rollingwindow**.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`InvalidStartTime` 
+
+</td>
+<td valign="top">
+
+If the format of the time specified in the `<StartTime>` element is invalid, then the deployment of the API proxy fails. The valid format is **yyyy-MM-dd HH:mm:ss**, which is the ISO 8601 date and time format. For example, if the time specified in the `<StartTime>` element is **8-15-2024 12:00:00**, then the deployment of the API proxy fails.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`StartTimeNotSupported` 
+
+</td>
+<td valign="top">
+
+If the `<StartTime>` element is specified whose quota type is not **calendar** type, then the deployment of the API proxy fails. The `<StartTime>` element is supported only for the **calendar** quota type. For example, if the type attribute is set to **flexi** or **rolling window** in the `<Quota>` element, then the deployment of the API proxy fails.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`InvalidTimeUnitForDistributedQuota` 
+
+</td>
+<td valign="top">
+
+If the `<Distributed>` element is set to **true** and the **<TimeUnit\>** element is set to **second**, then the deployment of the API proxy fails. The timeunit **second** is invalid for a distributed quota.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`InvalidSynchronizeIntervalForAsyncConfiguration` 
+
+</td>
+<td valign="top">
+
+If the value specified for the `<SyncIntervalInSeconds>` element within the `<AsynchronousConfiguration>` element in a Quota policy is less than zero, then the deployment of the API proxy fails.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`InvalidAsynchronizeConfigurationForSynchronousQuota` 
+
+</td>
+<td valign="top">
+
+If the value of the `<AsynchronousConfiguration>` element is set to **true** in a Quota policy, which also has asynchronous configuration defined using the `<AsynchronousConfiguration>` element, then the deployment of the API proxy fails.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio2539fb236c444c24b70df8db8cd732a3__section_jwn_jk1_fgc"/>
+
+## Fault variables
+
+The table below outlines the variables that are set when this policy triggers an error:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Variables
+
+</th>
+<th valign="top">
+
+Where
+
+</th>
+<th valign="top">
+
+Example
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*<fault.name="fault\_name"\>* 
+
+</td>
+<td valign="top">
+
+*<fault\_name\>* is the name of the fault, as listed in the **Runtime errors** table above. The fault name is the last part of the fault code.
+
+</td>
+<td valign="top">
+
+`fault.name Matches "QuotaViolation"` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*<ratelimit.policy\_name.failed\>* 
+
+</td>
+<td valign="top">
+
+*<policy\_name\>* is the user-specified name of the policy that threw the fault.
+
+</td>
+<td valign="top">
+
+`ratelimit.QT-QuotaPolicy.failed = true` 
+
+</td>
+</tr>
+</table>
+
+
+
+### Error response example:
+
+```
+{  
+   "fault":{  
+      "detail":{  
+         "errorcode":"policies.ratelimit.QuotaViolation"
+      },
+      "faultstring":"Rate limit quota violation. Quota limit  exceeded. Identifier : _default"
+   }
+}
+```
+
+
+
+### Fault rule example:
+
+```
+<FaultRules>
+    <FaultRule name="Quota Errors">
+        <Step>
+            <Name>JavaScript-1</Name>
+            <Condition>(fault.name Matches "QuotaViolation") </Condition>
+        </Step>
+        <Condition>ratelimit.Quota-1.failed=true</Condition>
+    </FaultRule>
+</FaultRules>
+```
+
 **Related Information**  
 
 

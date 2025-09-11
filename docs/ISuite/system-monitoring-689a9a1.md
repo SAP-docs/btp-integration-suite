@@ -337,12 +337,12 @@ Actual network traffic
 <tr>
 <td valign="top">
 
-**Solace Publish Failure Count**
+**Message Service Publish Failure Count**
 
 </td>
 <td valign="top">
 
-The number of failed attempts by policyengine to publish messages to the Solace broker.
+The number of failed attempts by policyengine to publish messages to the Message Service.
 
 </td>
 <td valign="top">
@@ -359,12 +359,12 @@ The number of failed attempts by policyengine to publish messages to the Solace 
 <tr>
 <td valign="top">
 
-**Solace Connection Status**
+**Message Service Connection Status**
 
 </td>
 <td valign="top">
 
-The status of the connection between policyengine and the Solace broker.
+The status of the connection between policyengine and the Message Service.
 
 </td>
 <td valign="top">
@@ -690,12 +690,12 @@ Connected
 <tr>
 <td valign="top">
 
-**Solace Connection Status**
+**Message Service Connection Status**
 
 </td>
 <td valign="top">
 
-The status of the connection between the edge-event-controller pod and Solace.
+The status of the connection between the edge-event-controller pod and the Message Service.
 
 </td>
 <td valign="top">
@@ -735,7 +735,7 @@ Connected
 </td>
 <td valign="top">
 
-Number of messages received by edge-event-controller from Cloud or Solace.
+Number of messages received by edge-event-controller from Cloud or Message Service.
 
 </td>
 <td valign="top">
@@ -752,7 +752,7 @@ An increasing or horizontal graph
 </td>
 <td valign="top">
 
-Number of messages sent by edge-event-controller to Solace or Cloud.
+Number of messages sent by edge-event-controller to Message Service or Cloud.
 
 </td>
 <td valign="top">
@@ -769,7 +769,7 @@ An increasing or horizontal graph
 </td>
 <td valign="top">
 
-Number of acknowledgments received from destination \(Cloud or Solace\) by edge-event-controller for sent messages.
+Number of acknowledgments received from destination \(Cloud or Message Service\) by edge-event-controller for sent messages.
 
 </td>
 <td valign="top">
@@ -820,7 +820,7 @@ Should have no data or be a flat horizontal graph. If this graph is increasing f
 
 ## Message Service
 
-**Message Service Solace Metrics**
+**Message Service Metrics**
 
 
 <table>
@@ -864,7 +864,7 @@ The operational status of Message Service
 </td>
 <td valign="top">
 
-*AD-Active*. Message service is operational and Guaranteed Messaging is active.
+*AD-Active*. Message service is operational and Guaranteed Message is active.
 
 </td>
 </tr>
@@ -1480,4 +1480,148 @@ The analysis of Message Service's load/traffic
 
 > ### Note:  
 > You can download a PostgreSQL metrics dashboard from note [3312134](https://me.sap.com/notes/3312134) and import it into Grafana manually. However, this only works for internal PostgreSQL deployments.
+
+
+
+<a name="loio689a9a126580475c9d0b810a813a60d6__section_qgq_qd4_xfc"/>
+
+## Edge Deploy Controller
+
+**Deployment Metrics**
+
+
+<table>
+<tr>
+<th valign="top">
+
+**Metric**
+
+</th>
+<th valign="top">
+
+**Description**
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Deployed Artifacts Count
+
+</td>
+<td valign="top">
+
+The number of artifacts deployed. The count is divided by ARTIFACT\_TYPE.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Snapshot Failure Count
+
+</td>
+<td valign="top">
+
+The number of snapshot failures. This includes an aggregated count of generation and publish failures.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Runtime Communication Failure Count
+
+</td>
+<td valign="top">
+
+The number of communication failures from EDC to runtime. The count is divided by RUNTIME\_TYPE \(worker/policy engine\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Object Store Connectivity
+
+</td>
+<td valign="top">
+
+The status of the connection between EDC and the object store.
+
+</td>
+</tr>
+</table>
+
+**Database Metrics**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Metric
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Database Connections
+
+</td>
+<td valign="top">
+
+The number of maximum, idle, and used connections in the same panel.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Waiting Connections
+
+</td>
+<td valign="top">
+
+The number of waiting connections.
+
+</td>
+</tr>
+</table>
+
+**Message Service Metrics**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Metric
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Message Service Connectivity
+
+</td>
+<td valign="top">
+
+The status of the connection between EDC and Message Service.
+
+</td>
+</tr>
+</table>
 

@@ -107,6 +107,8 @@ You can watch a short video about activating capabilities, and getting access to
     
     *Manage APIs*
 
+    On the next screen, the *API Modelling* checkbox appears, and is enabled by default.
+
     If you want to consume APIs and events published on Developer Hub—a web-based platform that allows organizations to publish their APIs and events for developers to discover, explore, and use—you need to select the *Developer Hub* checkbox.
 
     To expose your business data as a semantically connected data graph, select the *Graph* checkbox.
@@ -114,7 +116,9 @@ You can watch a short video about activating capabilities, and getting access to
     > ### Note:  
     > The Developer Hub checkbox must be selected in order to activate Graph.
 
-    For end-to end instructions on how to activate the API Management capability, see [Enable API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite). You can also refer to the [Set Up API Management from Integration Suite](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html) tutorial for visual instructions.
+    For end-to end instructions on how to activate the API Management capability, see [Activating and Configuring API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite). You can also refer to the [Set Up API Management from Integration Suite](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html) tutorial for visual instructions.
+
+    ![](images/SUI_API_e159e2f.png)
     
     </td>
     </tr>

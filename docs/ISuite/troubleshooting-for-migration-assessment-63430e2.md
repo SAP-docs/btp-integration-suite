@@ -38,7 +38,14 @@ Use the following component to allow the correct ticket routing: `BC-CP-IS-PIMAS
 
 ## 503 Service Unavailable
 
-503 Service Unavailable is a connection test error that can occur for multiple reasons. Perform the following steps to solve it:
+503 Service Unavailable error means that BTP is not able to reach the SAP Process Orchestration system. Possible reasons for this error include the following:
+
+-   Wrong host name or use of virtual host in the system configuration.
+
+-   Two cloud connectors are configured for the same subaccount and the *Location Id* field is not maintained in the system configuration.
+
+
+Perform the following steps to solve this error:
 
 1.  Make sure that Cloud Connector is configured for the same SAP BTP subaccount on which you're using Migration Assessment.
 
@@ -67,7 +74,7 @@ Use the following component to allow the correct ticket routing: `BC-CP-IS-PIMAS
 
     You may move to the next step if the responses of the previous two API calls are empty and the response code is 200. Otherwise, raise a support ticket with screenshots of the error response of the call.
 
-5.  To ensure bidirectional firewall configurations for the SAP Process Orchestration system and Cloud Connector for traffic initiated by the Migration Assessment app, make sure the Migration Assessment app URL is allowlisted in the Firewall/Web Dispatcher. Additionally, check if any additional IPs need to be allowlisted based on the data center of your BTP subaccount. For more details, see [Cloud Connector Installation Network Prerequisites](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/prerequisites#loioe23f776e4d594fdbaeeb1196d47bbcc0__cf).
+5.  To ensure bidirectional firewall configurations for the SAP Process Orchestration system and Cloud Connector for traffic initiated by the Migration Assessment app, make you allow the Migration Assessment app domain URL or IP in outbound and inbound proxy/firewall on the SAP Process Orchestration and Cloud Connector servers. For more details, see [Cloud Connector Installation Network Prerequisites](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/prerequisites#loioe23f776e4d594fdbaeeb1196d47bbcc0__cf).
 
 6.  Check if Cloud connector and JVM versions are outdated as per the SAP Note [3302250](https://me.sap.com/notes/3302250).
 

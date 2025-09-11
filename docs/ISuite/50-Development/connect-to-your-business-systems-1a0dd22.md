@@ -31,7 +31,7 @@ To create a business data graph, you must have data sources \(business systems\)
 
 Graph supports custom annotations for SAP BTP destinations.
 
-In the SAP BTP cockpit, you can add *Additional Properties* to destinations. The properties provide additional configuration options. You can add predefined properties forSAP BTP or add freestyle properties using any name and value.
+In the SAP BTP cockpit, you can add *Additional Properties* to destinations. The properties provide additional configuration options. You can add predefined properties for SAP BTP or add freestyle properties using any name and value.
 
 The following table provides an overview of the custom annotations that Graph supports for SAP BTP destinations:
 
@@ -68,6 +68,23 @@ true
 <td valign="top">
 
 A destination is ignored during Graph configuration, generation, and activation.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`URL.ConnectionTimeoutInSeconds` 
+
+</td>
+<td valign="top">
+
+integer
+
+</td>
+<td valign="top">
+
+A configurable timeout per destination.
 
 </td>
 </tr>

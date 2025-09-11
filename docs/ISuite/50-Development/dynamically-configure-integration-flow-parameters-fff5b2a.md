@@ -10,11 +10,14 @@ For certain integration flow parameters you can enter a reference to a header or
 
 ## Prerequisites
 
+> ### Note:  
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
 -   The parameter supports dynamic configuration.
 
     More information: [Parameters That Support Dynamic Configuration](parameters-that-support-dynamic-configuration-c9bba0e.md)
 
--   There is a header or property that you can use for dynamic configuration of the parameter. Either the header/property is defined by a preceding component in the integration flow or it is provided by the integratrion framework.
+-   There is a header or property that you can use for dynamic configuration of the parameter. Either the header/property is defined by a preceding component in the integration flow or it is provided by the integration framework.
 
 
 
@@ -25,15 +28,11 @@ The following kinds of headers and properties can be used to dynamically configu
 
 -   Headers or properties defined by a content modifier step \(preceding the step or adapter for which you like to define a dynamic parameter\)
 
-    More information:
-
-    [Define Content Modifier](define-content-modifier-8f04a70.md)
+    More information: [Define Content Modifier](define-content-modifier-8f04a70.md)
 
 -   Predefined headers or properties that are provided by the integration framework.
 
-    More information:
-
-    [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md)
+    More information: [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md)
 
 
 > ### Note:  

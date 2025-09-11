@@ -64,8 +64,7 @@ Runtime and monitoring data are stored in PostgreSQL database and Redis data sto
 
     `policyengine` can be stopped using : `kubectl scale deployment policyengine --replicas=0 -n edge-icell`.
 
--   Restore PostgreSQL database.
-
+-   Restore Redis data store.
 -   Start Edge Integration Cell component `policyengine`.
 
     `policyengine` can be started using : `kubectl scale deployment policyengine --replicas=<n> -n edge-icell`.

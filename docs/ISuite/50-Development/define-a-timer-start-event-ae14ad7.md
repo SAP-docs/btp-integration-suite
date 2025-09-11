@@ -13,7 +13,7 @@ You can configure an integration flow to automatically start and run on a partic
 If you want to configure a process to automatically start and run on a particular schedule, you can use this procedure to set the date and time on which the process must run once or repetitively. The day and time combinations allow you to configure the schedule the process requires. For example, you can set the trigger once on a specific date or repetitively on that date. You can periodically trigger the timer every day, specific days in a week, or specific days in a month.
 
 > ### Caution:  
-> Don’t model a Timer start event and a start message event \(sender channel\) in the same integration flow. Such a design results in different possible errors. The timer only triggers the business logic \(integration flow\) and has no other role. To decouple the timer start event from the actual integration flow, refer to the SAP Note [2905759](https://launchpad.support.sap.com/#/notes/2905759).
+> Don’t model a Timer start event and a start message event \(sender channel\) in the same integration flow. Such a design results in different possible errors. The timer only triggers the business logic \(integration flow\) and has no other role.
 
 > ### Remember:  
 > -   When you deploy or undeploy an integration flow with *Scheduler*, the system automatically releases all the scheduler locks.
@@ -43,8 +43,7 @@ If you want to configure a process to automatically start and run on a particula
     1.  If you're using the timer flow step with version 1.4 or higher, do the following:
 
         > ### Note:  
-        > -   Configuring the externalized timer using the [Externalized Parameters View](externalized-parameters-view-27a0216.md) is not supported.
-        > -   Auto-suggest of keys during externalization is not supported.
+        > Auto-suggest of keys during externalization is not supported.
 
         **Timer Flow Step Version 1.4 and Higher**
 

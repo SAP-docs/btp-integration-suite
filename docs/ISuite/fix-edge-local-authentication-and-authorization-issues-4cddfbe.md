@@ -6,9 +6,11 @@ Check and fix issues related to local authentication and authorization.
 
 
 
+<a name="loio4cddfbecd3084c2c9d9ad7df7db64767__context_cn2_43b_1fc"/>
+
 ## Context
 
-In version 8.18.x of the Edge Integration Cell, a shift was made from the inbound certificate authentication to local authentication. This removes the real-time dependency on the SAP Business Technology Platform SAP BTP for inbound authentication and authorization. Currently, only certificate authentication is supported. Authentication and authorization errors may occur after the solution is upgraded, or after a new service instance of the Process Integration Runtime type is created/modified. Additionally, creating a service key for an existing Process Integration Runtime service instance may also lead to authentication and authorization errors. The following errors occur upon invocation of integration flow or API artefact.
+Local authentication and authorization removes the real-time dependency on the SAP Business Technology Platform SAP BTP for inbound authentication and authorization. Currently, only certificate authentication is supported. Authentication and authorization errors may occur after the solution is upgraded, or after a new service instance of the Process Integration Runtime type is created/modified. Additionally, creating a service key for an existing Process Integration Runtime service instance may also lead to authentication and authorization errors. The following errors occur upon invocation of integration flow or API artefact.
 
 > ### Output Code:  
 > ```
@@ -52,19 +54,17 @@ To resolve the authentication error, perform the following steps:
     <tr>
     <td valign="top">
     
-    **\#Error: Unable to find credentials**
+    **\#Error: unable to find stored credentials matching the authentication request certificate**
     
     </td>
     <td valign="top">
     
-    First, confirm the creation time of the specific key, which could be of the *Certificate* or *External Certificate* type. The proper operation of the Edge Local Authorization feature depends on these keys being recreated after the implementation of release 2404.
-
     If you're unsure if a certain key has been recreated, create a new one. Once that's done, you'll need to use this new certificate/key to run the iFlow/API artefact function.
 
     > ### Note:  
     > If your service key is of the *External Certificate* type, you don't need to start from scratch - you can use your old certificate when making a new service key.
 
-    Your newly created service key should synchronize with the Edge Local Authentication and Authorization component within a matter of minutes. However, in rarer instances, this synchronization process might extend up to about 170 minutes. Once synchronization is complete, attempt to run the integration flow/API artefact function again. Make sure to use the certificate and key from your new service key.
+    Your newly created service key synchronizes with the Edge Local Authentication and Authorization component within a matter of minutes. Additionally, every 170 minutes, a snapshot synchronization job runs to ensure the consistency of the security material between cloud and Edge Integration Cell. Once the synchronization is complete, try running the integration flow/API artefact function again. Make sure to use the certificate and key from your new service key.
 
     If you still encounter the error, create a support ticket on the component *BC-CP-IS-EDG-ELA*.
     
@@ -73,53 +73,16 @@ To resolve the authentication error, perform the following steps:
     <tr>
     <td valign="top">
     
-    \#Error: Unable to find credentials
-
-    \(for Service Keys of type External Certificate\)
+    \#error: unable to find stored credentials matching the authentication request certificate \(for Service Keys of type External Certificate\)
     
     </td>
     <td valign="top">
     
-    For service keys of the *External Certificate* type, check whether the external client certificate has been renewed. Edge Local Authentication and Authorization takes the certificate pinning configuration into account. However, disabling pinning still allows both current and previously used certificates \(with older issue dates\) to authenticate successfully. To fully revoke a previous certificate, delete the old service key containing the certificate and create a new one with only the updated certificate.
+    For service keys of type *External Certificate*, where the *Pin Certificate* setting is disabled, check whether the external client certificate is renewed. After using a renewed certificate for authentication purposes, the system no longer accepts the previously used certificate with an older issue date.
 
-    Your newly created service key should synchronize with the Edge Local Authentication and Authorization component within a matter of minutes. However, in rarer instances, this synchronization process might extend up to about 170 minutes. Once synchronization is complete, attempt to run the integration integration flow/API artefact function again. This time, though, make sure to use the certificate and key from your new service key.
+    Your newly created service key should synchronize with the Edge Local Authentication and Authorization component within a matter of minutes. Additionally, every 170 minutes a snapshot synchronization job runs, to ensure the consistency of the security material between the cloud and Edge Integration Cell. Once synchronization is complete, attempt to run the integration flow/API artefact function again. Make sure to use the certificate and key from your new service key.
 
     If you still encounter the error, create a support ticket on the component *BC-CP-IS-EDG-ELA*
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    \#Error: Unable to lookup Service Instance Metadata
-
-    \#Error: Unable to build JWT Metadata
-    
-    </td>
-    <td valign="top">
-    
-    Ensure that the service instance data has been synced to the Edge Local Authentication and Authorization component by following these steps:
-
-    1.  Navigate to the SAP BTP Cockpit. Select the *Process Integration Runtime* service instance associated with the failed authentication.
-
-    2.  Copy the Instance ID
-    3.  In a kubectl tool, run the following command: `kubectl get secret ci-k.x.<Instance_ID> -n edge-icell-ela`. .
-
-        For example: `kubectl get secret ci-k.x.817215ee-e40f-476d-bb8d-cd64681493b8 -n edge-icell-ela`
-
-        The output is a secret corresponding to the service instance.
-
-        If the secret is not found, initiate a synchronization operation:
-
-    4.  To start synchronizing the service instance data, perform an update operation on the specific service instance in the SAP BTP cockpit, You don't need to change any part of the service instance configuration for this.
-
-        > ### Note:  
-        > The synchronization of your service instance data with the Edge Local Authentication and Authorization component typically begins promptly, often within just a few minutes. However, please note that in certain cases, this process could take up to 170 minutes.
-
-    5.  To check on the synchronization status of your service instance data, repeat step *c*.
-
-
-
     
     </td>
     </tr>

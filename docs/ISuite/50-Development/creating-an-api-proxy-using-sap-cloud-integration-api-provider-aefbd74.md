@@ -20,8 +20,6 @@ Create an API proxy from list of APIs that is deployed in a SAP Cloud Integratio
 
 Instead of consuming the API services directly, application developers can access APIs exposed via API Management. You do so, by creating an API proxy that covers the service you want to expose. The API maps a publicly available HTTP endpoint backend service. Creating this API proxy lets , from the API Management handle the security and authorizations required to protect, analyze, and monitor your services. Here, you can see how to create an API proxy using an Integration Flow or an API from the list of artifacts deployed in SAP Cloud Integration tenant.
 
-Instead of directly consuming API services, application developers can access APIs throughAPI Management. This is done by creating an API proxy that acts as a gateway for the service you want to expose. The API proxy maps a publicly available HTTP endpoint to a backend service. By creating this API proxy, API Management can handle the security and authorizations needed to protect, analyze, and monitor your services. In this guide, you will learn how to create an API proxy using either an Integration Flow or an API from the list of artifacts deployed in your Cloud Integration tenant.
-
 
 
 ## Procedure
@@ -32,7 +30,7 @@ Instead of directly consuming API services, application developers can access AP
 
 3.  To expose a service as an API, choose *Create*.
 
-4.  In order to choose an API of the type OData, REST, or SOAP and create an API Proxy, proceed as follows:
+4.  In order to choose an API of the type OData, REST, or SOAP and create an API proxy, proceed as follows:
 
     1.  In the *Create API* dialog, select the *API Provider* radio button.
 

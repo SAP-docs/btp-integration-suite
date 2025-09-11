@@ -292,6 +292,30 @@ Processes and stores monitoring events.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Destination Service
+
+</td>
+<td valign="top">
+
+Manages destinations on the edge.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Auditlog Agent
+
+</td>
+<td valign="top">
+
+Provides audit logging for edge components.
+
+</td>
+</tr>
 </table>
 
 
@@ -303,7 +327,7 @@ Backing Services
 </b></dt>
 <dd>
 
-Edge Integration Cell includes a Message Service \(Solace Broker\) for asynchronous messages and system internal events.
+Edge Integration Cell includes a Message Service for asynchronous messages and system internal events.
 
 
 

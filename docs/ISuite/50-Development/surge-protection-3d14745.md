@@ -30,7 +30,7 @@ Name\*
 </td>
 <td valign="top">
 
-The internal name of the policy. The value of the name attribute can contain letters, numbers, spaces, hyphens, underscores, and periods. This value cannot exceed 255 characters.
+The unique name of the policy within the API artifact. Each policy in an API artifact must have a unique name to prevent naming conflicts.
 
 </td>
 </tr>
@@ -96,7 +96,7 @@ Supported units are seconds, and milliseconds.
 **Related Information**  
 
 
-[Quota](quota-2aecf15.md "The Quota policy defines the number of request messages an application can submit to an API endpoint over a given period of time.")
+[Quota](quota-2aecf15.md "The Quota policy defines the number of requests an application can submit to an API endpoint over a given period of time.")
 
 [IP Filter](ip-filter-3a8b424.md "The IP filter policy allows or denies calls from specific IP addresses or address ranges.")
 

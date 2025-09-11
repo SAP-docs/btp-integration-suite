@@ -54,5 +54,5 @@ To know more about OAS 3.0 support in API Management, see [OpenAPI Specification
 **Related Information**  
 
 
-[Create an API Proxy](create-an-api-proxy-c0842d5.md "This topic describes the steps to create an API proxy from the Integration Suite.")
+[Create an API Proxy](create-an-api-proxy-c0842d5.md "This topic describes the steps to create an API proxy from the SAP Integration Suite.")
 

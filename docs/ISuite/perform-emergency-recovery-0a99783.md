@@ -14,7 +14,7 @@ As a foundational step, ensure you have Kubernetes backups available to facilita
 > Create a K8s backup always after you upgrade or modify a solution \(Edge LM or Edge Integration Cell\) to reflect the latest K8s environment state.
 
 > ### Caution:  
-> An emergency recovery cannot recover Message Service data as Solace does not support persistent volume recovery. Messages stored in JMS queues or temporarily stored MPL events will be lost.
+> An emergency recovery cannot recover Message Service data as the Message Service does not support persistent volume recovery. Messages stored in JMS queues or temporarily stored MPL events will be lost.
 
 
 

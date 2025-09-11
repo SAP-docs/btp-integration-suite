@@ -4,7 +4,7 @@
 
 # Creating a B2B Transaction
 
-Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it to initiate B2B transactions efficiently and accurately.
+Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B transactions efficiently and accurately.
 
 
 
@@ -82,7 +82,12 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
     </tr>
     </table>
     
-3.  Choose *Save*. A new entry gets created.
+3.  Choose *Save*. A new entry is created.
+
+    > ### Note:  
+    > If you're working with multiple business transactions, you can reorder them for an aligned visual representation: Choose *Change Order*, then use *Move Up* and *Move Down* to rearrange the transactions. The new order is applied as soon as you save.
+    > 
+    > Reordering the transactions has no effect on functionality or outcomes and is for visual alignment only.
 
 4.  In the newly created transaction, choose the *Communication* step on the sender side.
 
@@ -112,6 +117,9 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
     > -   Trading Partner Management only supports the following type systems:
     >     -   Edifact
     > 
+    >     -   GS1 EANCOM
+    >     -   Odette EDIFACT
+    >     -   VDA EDIFACT
     >     -   X12
     >     -   SAP IDoc
     >     -   SAP SOAP On-Premise
@@ -121,13 +129,19 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
     > 
     >         Tradacoms is supported only in the 2.0 version of the integration package *Cloud Integration - Trading Partner Management V2*
 
-12. For Type Systems *ASC X12* and *UN/EDIFACT*, you can edit their version numbers in the *Type System Version* field.
+12. For Type Systems *ASC X12*, *UN/EDIFACT*, *GS1 EANCOM*, *Odette EDIFACT*, and *VDA EDIFACT*, you can edit their version numbers in the *Type System Version* field.
 
 13. Select a value from the drop-down list for the field *Create Functional Acknowledgement*.
 
     This field appears only for the following type systems:
 
     -   UN/EDIFACT
+
+    -   GS1 EANCOM
+
+    -   Odette EDIFACT
+
+    -   VDA EDIFACT
 
     -   ASC X12
 
@@ -229,50 +243,66 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
 
     -   UN/EDIFACT
 
+    -   GS1 EANCOM
+
+    -   Odette EDIFACT
+
+    -   VDA EDIFACT
+
     -   ASC X12
+
 
     If the identifier used in the agreement has **Custom Scheme Code**, then this option will be skipped irrespective of the field selection.
 
-18. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
+18. For sender type systems *UN/EDIFACT*, *GS1 EANCOM*, *Odette EDIFACT*, *VDA EDIFACT*, *ASC X12*, or *TRADACOMS*: use the field *Source Encoding* to let the generic integration flow know the source encoding so it can convert the sender payload to UTF-8 correctly.
 
-19. Similarly, choose the *Communication Channel* on the receiver side and enter a value for the field *Communication*.
+    To do so, under the field *Source Encoding*, select a value from the list.
 
-20. Select a value from the drop-down list for the field *Receiver Functional Acknowledgement Channel*.
+19. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
+
+20. Similarly, choose the *Communication Channel* on the receiver side and enter a value for the field *Communication*.
+
+21. Select a value from the drop-down list for the field *Receiver Functional Acknowledgement Channel*.
 
     This field appears only for AS2 adapter.
 
-21. Select the *Interchange* shape on the receiver side.
+22. Select the *Interchange* shape on the receiver side.
 
-22. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
+23. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
 
     If you want to view the details of the MIG that you chose, you can use the link provided under the *Version* field.
 
-23. Enter an alias value for the field *Number Range Alias*.
+24. Enter an alias value for the field *Number Range Alias*.
 
     > ### Note:  
     > A number range is used to insert unique sequence numbers.
     > 
     > You need to configure this number range in the Cloud Integration tenant. To do so, see [Number Ranges](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b6e17fa17a70491da4a54216db298f84.html).
 
-24. Similar to the Sender, if you want to use custom integration flows for your Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
+25. Similar to the Sender, if you want to use custom integration flows for your Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
 
-25. Provide the address of your custom integration flow in the *Process Direct Address* field.
+26. Provide the address of your custom integration flow in the *Process Direct Address* field.
 
     This step is carried out using the ProcessDirect adapter. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
-26. Select the *Enable Receiver Functional Acknowledgement* checkbox if you want to enable the functional acknowledgement for the receiver.
+27. Select the *Enable Receiver Functional Acknowledgement* checkbox if you want to enable the functional acknowledgement for the receiver.
+
+    Once it's enabled, use the drop-down list of *Mark Partially Accepted Acknowledgement* to indicate whether the interchange should be marked as *Failed* or *Completed* upon receiving a partially accepted acknowledgement.
 
     > ### Note:  
     > This option is available only for the following type systems:
     > 
     > -   UN/EDIFACT
+    > -   GS1 EANCOM
+    > -   Odette EDIFACT
+    > -   VDA EDIFACT
     > -   ASC X12
 
-    You can view the status of the Functional Acknowledgement through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md)
+    You can view the status of the functional acknowledgement through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md)
 
-27. If you want to use custom separators for your payload, enable the *Use Custom Separators* checkbox and maintain the values for the following fields:
+28. If you want to use custom separators for your payload, enable the *Use Custom Separators* checkbox and maintain the values for the following fields:
 
-    This option is available only for UN/EDIFACT and ASC X12 type systems.
+    This option is available only for UN/EDIFACT, GS1 EANCOM, Odette EDIFACT, VDA EDIFACT, and ASC X12 type systems.
 
     1.  Segment Terminator
 
@@ -283,26 +313,26 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
     4.  Escape Character
 
 
-28. If you want to enable the payload validation, select the checkbox for the field *Enable Payload Validation* under *Validation Option*.
+29. If you want to enable the payload validation, select the checkbox for the field *Enable Payload Validation* under *Validation Option*.
 
     1.  If enabled, the generic integration flow will perform a validation check for the receiver interchange. And regardless of the outcome, the interchange processing will continue to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
 
 
-29. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
+30. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
 
-30. If your receiver type system is UN/EDIFACT, you might want to set a target encoding. To do so, under the field *Target Encoding*, select a value from the list.
+31. If your receiver type system is UN/EDIFACT, GS1 EANCOM, Odette EDIFACT, VDA EDIFACT, ASC X12, or TRADACOMS, you can set a target encoding. To do so, under the field *Target Encoding*, select a value from the list.
 
-31. Select the *Mapping* step of the transaction.
+32. Select the *Mapping* step of the transaction.
 
-32. Select a mapping guideline and its corresponding version using the value help for the *Mapping Guideline \(MAG\)* field.
+33. Select a mapping guideline and its corresponding version using the value help for the *Mapping Guideline \(MAG\)* field.
 
-33. If you want to custom integration flow for the mapping processing, enable the checkbox for the field *Customized Mapping Processing*.
+34. If you want to custom integration flow for the mapping processing, enable the checkbox for the field *Customized Mapping Processing*.
 
-34. Provide the address of your integration flow in the *Process Direct Address* field.
+35. Provide the address of your integration flow in the *Process Direct Address* field.
 
-35. Choose anywhere outside the transaction and the common properties get displayed below the transaction. Choose the *Activity Parameters* tab if you want to add any parameters to the template.
+36. Choose anywhere outside the transaction and the common properties get displayed below the transaction. Choose the *Activity Parameters* tab if you want to add any parameters to the template.
 
-36. Choose *Add Parameters*. This will display the following options:
+37. Choose *Add Parameters*. This will display the following options:
 
     -   *Extend from Company*: This option allows you to use the dynamic parameters from the company profile used in the agreement template. If you have created a *two-way* business transaction, you can choose between *Inbound* or *Outbound* parameters. Select a parameter from the list and choose *Save*.
 
@@ -314,11 +344,11 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
 
     -   *Create Activity Parameters*: You can also create your own activity parameters using this option. If you have created a *two-way* business transaction, you can choose between *Inbound* or *Outbound* parameters. Maintain the values of the fields *Parameter Key* and *Value* and choose *Save*.
 
-37. Navigate to the *Custom Search Attributes* tab if you want to add any custom search values which are picked up for the B2B monitoring.
+38. Navigate to the *Custom Search Attributes* tab if you want to add any custom search values which are picked up for the B2B monitoring.
 
     Before adding custom search attributes, you need to maintain them in the *Configuration Manager*. To know more, see [Configuration Manager](configuration-manager-7daf06c.md).
 
-38. Choose *Add* and maintain the following fields:
+39. Choose *Add* and maintain the following fields:
 
 
     <table>
@@ -396,7 +426,7 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
     </tr>
     </table>
     
-39. Choose *Save*.
+40. Choose *Save*.
 
 
 
@@ -405,7 +435,7 @@ Navigate to the B2B Scenarios tab and choose Create Business Transaction. Use it
 
 ## Results
 
-You have now successfully created an agreement template and you can view the template details under the *Agreement Templates* tab. You can also view the administrative information under the tab. To enable those fields, choose *Settings* :gear: and select the following fields and choose *OK*:
+You have now successfully created an agreement template and you can view the template details under the *Agreement Templates* tab. You can also view the administrative information under the tab. To enable those fields, choose :gear: and select the following fields and choose *OK*:
 
 -   Created By
 

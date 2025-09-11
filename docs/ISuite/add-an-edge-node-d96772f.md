@@ -10,15 +10,15 @@ Add an Edge Node that contains a Kubernetes cluster.
 
 ## Prerequisites
 
--   Create a technical user in SAP Repositories Management at [https://ui.repositories.cloud.sap/](https://ui.repositories.cloud.sap/), log in with your S-User and choose *Add New User*. For more information, see [Manage Technical Users in SAP Repositories Management](https://help.sap.com/docs/RBSC/0a64be17478d4f5ba45d14ab62b0d74c/7e83dfc309834942b441fc2106c5b7f5.html).
+-   Create a technical user in SAP Repositories Management at [https://ui.repositories.cloud.sap/](https://ui.repositories.cloud.sap/), log in with your S-User and choose *Add New User*. For more information, see [Manage Technical Users in SAP Repositories Management](https://help.sap.com/docs/RBSC/0a64be17478d4f5ba45d14ab62b0d74c/7e83dfc309834942b441fc2106c5b7f5.html?locale=en-US&state=PRODUCTION&version=Cloud).
 
--   You have created a technical user \(P-User\) to automatically manage Cloud Connector. For more information, see [Creating a Technical User \(P-User\) Account](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/edcd1a455afb4cb0b6b1b3d148256468.html).
+-   You have created a technical user \(P-User\) to automatically manage Cloud Connector. For more information, see [Creating a Technical User \(P-User\) Account](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/edcd1a455afb4cb0b6b1b3d148256468.html?locale=en-US&state=PRODUCTION&version=SHIP).
 
--   \(optional step\) To enable central system monitoring, set up your Identity Authentication Service \(IAS\) tenant . For more information, see [Configuring Single Sign-On for your Identity Authentication Tenant](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/2c4e91eb250a45819086b6c2a956f72f.html).
+-   \(optional step\) To enable central system monitoring, set up your Identity Authentication Service \(IAS\) tenant . For more information, see [Configuring Single Sign-On for your Identity Authentication Tenant](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/2c4e91eb250a45819086b6c2a956f72f.html?locale=en-US&state=PRODUCTION&version=SHIP).
 
--   Get the `kubeconfig` file of a cluster via the command-line interfaces. You need to upload this file as one step in the configuration wizard.
+-   Get the `kubeconfig` file of a cluster via the command-line interfaces. You need to upload this file in the configuration wizard.
 
--   To check that the required prerequisites for adding an Edge Node are configured properly, see [Prerequisite Validation Procedures](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/b71d5ab83a454ff9a5ed95c1ee8408e2.html).
+-   To check that the required prerequisites for adding an Edge Node are configured properly, see [Prerequisite Validation Procedures](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/b71d5ab83a454ff9a5ed95c1ee8408e2.html?locale=en-US&state=PRODUCTION&version=SHIP).
 
 
 
@@ -29,7 +29,7 @@ Add an Edge Node that contains a Kubernetes cluster.
 
 2.  Choose *Add Edge Node* to start the configuration wizard, where you go through several steps to add an Edge Node that contains a Kubernetes cluster.
 
-3.  Follow the Edge Lifecycle Management procedure [Adding an Edge Node](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/0a222b9c99d94f56abdcfe27f5be0afa.html). Enable High Availability Mode if you want to use the Edge Integration Cell with an HA configuration.
+3.  Follow the Edge Lifecycle Management procedure [Adding an Edge Node](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/0a222b9c99d94f56abdcfe27f5be0afa.html?locale=en-US&state=PRODUCTION&version=SHIP). Enable High Availability Mode if you want to use the Edge Integration Cell with an HA configuration.
 
 
 

@@ -82,8 +82,8 @@ Specify your selection by showing only messages processed in a specific time spa
 
 ![](images/MSO-5_b571f6c.png)
 
-> ### Note:  
-> The options available depend on your selected runtime and your database usage. It might not be possible to collect statistics for larger periods of time due to high database usage.
+> ### Restriction:  
+> Typically, all time periods are available regardless of database usage. However, for technical reasons, the collected data can be slightly incomplete and might not cover the entire period specified by the user. For example, when there's been a recent update to the software for collecting data.
 
 **Status**
 

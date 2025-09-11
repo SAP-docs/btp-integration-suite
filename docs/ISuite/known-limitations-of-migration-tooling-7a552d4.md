@@ -21,18 +21,6 @@ Limitations
 <tr>
 <td valign="top">
 
-Message Mapping
-
-</td>
-<td valign="top">
-
-Parameterized message mappings from ES Repository can be imported with certain limitations. Only message mapping objects with *Simple Type* parameter category of the type *Import* are supported during migration. For more information, see [Designing and Configuring Parameterized Mapping Programs](https://help.sap.com/docs/SAP_NETWEAVER_750/bbd7c67c5eb14835843976b790024ec6/c47b8d9349e143a2b62e9b747eae4bce.html?version=latest).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 CSV to XML Converter
 
 XML to CSV Converter
@@ -63,6 +51,173 @@ For File-based adapter scenarios in Process Integration/Process Orchestration th
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+SuccessFactors Adapter
+
+</td>
+<td valign="top">
+
+For integration scenarios in Process Integration/Process Orchestration that use SFSF adapter channels, the migration tool does not automatically map the SuccessFactors adapter in SAP Integration Suite. You must manually add it.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Standard Adapter Module
+
+</td>
+<td valign="top">
+
+Migration tool does not import the standard adapter modules automatically. For more information how to migrate them manually, see [Adapter Modules](https://help.sap.com/docs/migration-guide-po/migration-guide-for-sap-process-orchestration/adapter-modules).
+
+As alternative, you can also use the released community package [Message Transformation Utilities](https://api.sap.com/package/com.sap.integration.cloud.utilities.MessageTransformations/overview) to make some of these adapter modules available in groovy script.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Custom Adapter Module
+
+</td>
+<td valign="top">
+
+Migration tool does not import custom adapter modules automatically. You can consider use the standard Cloud Integration functionalities to re-implement it using JavaScript or Groovy script.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JDBC transaction handling
+
+</td>
+<td valign="top">
+
+The use of JDBC Sender scenarios, where data is selected and later updated within the same transaction, is not supported in SAP Cloud Integration. This behaviour is also not handled by the migration tool when moving from SAP PI.
+
+Even if you try to replicate the logic using a Timer and Request-Reply pattern, there is the possibility that the records selected at the beginning may not match those updated at the end, potentially leading to data inconsistencies. To prevent inconsistent data or failed updates, a redesign is needed — typically involving stored procedures and intermediate status flags at the database layer.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Message Mapping
+
+</td>
+<td valign="top">
+
+-   Parameterized message mappings from ES Repository can be imported with certain limitations. Only message mapping objects with *Simple Type* parameter category of the type *Import* are supported during migration. For more information, see [Designing and Configuring Parameterized Mapping Programs](https://help.sap.com/docs/SAP_NETWEAVER_750/bbd7c67c5eb14835843976b790024ec6/c47b8d9349e143a2b62e9b747eae4bce.html?version=latest).
+
+-   Multi-message: scenarios involving multiple source or target messages \(1:N, N:1, or M:N\) are not supported by the migration tool. These cases require additional enhancements in the Integration Flow to replicate the behaviour in Cloud Integration.
+
+-   JDBC lookup: Migration of message mappings using the standard JDBC lookup function is not supported. In Cloud Integration, JDBC lookups must be implemented using either XSLT mapping or Process Direct. For more information, see [JDBC Lookup Tutorial](https://developers.sap.com/tutorials/ci-jdbc-lookup.html)
+-   RFC lookup: Message mappings using the standard RFC lookup function are not supported by the migration tool. In Cloud Integration, this functionality must be recreated using Groovy scripts or user-defined functions. For more information, see [RFC Lookup Tutorial](https://developers.sap.com/tutorials/ci-rfclookup.html).
+-   Sender and Receiver standard node functions: Sender and Receiver node functions in message mappings are not supported in Cloud Integration. After migration, message mappings must be reviewed and redesigned using Integration Flow logic or additional mapping steps.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Value Mapping
+
+</td>
+<td valign="top">
+
+Migration tool does not migrate value mapping automatically. It needs to be imported as a standalone artifact and assigned in appropriate message mapping.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Java Mapping
+
+</td>
+<td valign="top">
+
+Java mapping with supported functions and methods on Cloud Integration are migrated directly using groovy script wrapper. More complex Java mappings might not be supported using groovy script wrapper approach. For more information, see [Migrating Java Mappings](https://help.sap.com/docs/migration-guide-po/migration-guide-for-sap-process-orchestration/migrating-java-mappings?locale=en-US).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+XSLT Mapping with Java class
+
+</td>
+<td valign="top">
+
+The Migration tool migrates XSLT mappings that use Java classes, but manual syntax adjustments in the XSL file are necessary. Specifically, the value in the ‘xmlns:ext’ tag should be updated to include 'java:com.' to reference the Java class implementation correctly.
+
+![](images/A_screen_shot_of_a_computer_AI-generated_content_may_be_incorrect_Picture_36fe7a7.octet-stream)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Function Library
+
+</td>
+<td valign="top">
+
+Migration tool does not support importing function libraries in the following cases:
+
+-   User‑Defined Functions \(UDFs\) use arguments of type Channel
+-   The init method uses arguments of type Parameter
+-   The function library name and class name are not identical
+-   Attribute category and title combinations are not unique within the function library class
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Maintain Order at Runtime
+
+</td>
+<td valign="top">
+
+Migration of scenarios with Maintain Order at Runtime is partially supported in Migration Tool. Scenarios with a single receiver will be migrated, but any XPath-based interface conditions will be skipped and must be manually added.
+
+Scenarios with multiple receivers are not supported and require additional enhancements.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Sender agreement with wildcard
+
+</td>
+<td valign="top">
+
+Sender agreements using wildcards are not supported. The migration tool transfers message processing and receiver configuration but skips the sender adapter, as sender agreements are not available in Cloud Integration. Sender handling must be added manually, potentially using Process Direct or JMS queues
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Receiver agreement with wildcard
+
+</td>
+<td valign="top">
+
+Receiver agreements with wildcards involving conditional routing using extended values \(i.e., XPath and Context Object\) and extended receiver determination with single or multiple operations is not supported. These scenarios need to be redesigned using flow steps to determine and route to the appropriate receiver within Cloud Integration.
+
+</td>
+</tr>
 </table>
 
 
@@ -74,7 +229,6 @@ For File-based adapter scenarios in Process Integration/Process Orchestration th
 -   You cannot extract the scenarios that don’t involve Receiver Determination object.
 -   A sender agreement is mandatory. If it is absent in a particular scenario, an error stating "Couldn't find Sender Agreement \(Inbound processing details\)" may occur. Without a configured sender sgreement, the details of the Sender Communication Channel cannot be retrieved.
 -   A receiver agreement is mandatory. If it is absent in a particular scenario, an error stating "Couldn't find Receiver Agreement \(Outbound processing details\)" may occur. Without a configured receiver agreement, the details of the Receiver Communication Channel cannot be retrieved.
--   Extended Receiver Determination type \(Dynamic Receiver\) is not supported.
 
 
 

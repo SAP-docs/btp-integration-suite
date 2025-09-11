@@ -636,9 +636,9 @@ When uploading an X.509 Certificate, the `objectType` parameter is `X.509 Certif
 > ### Output Code:  
 > ```
 > "{"action":"Create","objectType":"X.509 Certificate","objectId":"mycertificate1",
-> "attributes":{"Issuer CN":"OU\u003dSender,C\u003dDE","Subject CN":"OU\u003dSender,C\u003dDE",
-> "Serial Number":"6818011987146590924"},"changedAttributes":{}}" on 2021-06-25T17:30:19.687Z. 
-> Security event was related to user "SAP".
+>                                         "attributes":{"Issuer CN":"OU\u003dSender,C\u003dDE","Subject CN":"OU\u003dSender,C\u003dDE",
+>                                         "Serial Number":"6818011987146590924"},"changedAttributes":{}}" on 2021-06-25T17:30:19.687Z. 
+>                                         Security event was related to user "SAP".
 > ```
 
 
@@ -651,6 +651,149 @@ Covers the following kinds of keystore entry: X.509 or SSH key pair, X.509, or S
 More information on the keystore:
 
 [Managing Keystore Entries](../50-Development/managing-keystore-entries-2dc8942.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Manage security
+
+</td>
+<td valign="top">
+
+Export PGP Keyring
+
+</td>
+<td valign="top">
+
+-   action: Read
+
+-   objectType: Public Keyring or Secret Keyring
+
+
+Exporting PGP public keyring example:
+
+> ### Output Code:  
+> ```
+> {action=Read, objType=Public Keyring | Secret Keyring, nodeType="Keymanagement Subsystem", isCustomerVisible=true, objName=pubring | secring }
+> ```
+
+
+
+</td>
+<td valign="top">
+
+Covers the following kinds of keystore entry: X.509 or SSH key pair, X.509, or SSH key pair.
+
+More information on the keystore:
+
+[Managing Keystore Entries](../50-Development/managing-keystore-entries-2dc8942.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Manage security
+
+</td>
+<td valign="top">
+
+Download PGP Key
+
+</td>
+<td valign="top">
+
+-   action: Read
+-   objectType: Public Keyring or Secret Keyring
+-   objName: 3A7A899C3435D45C
+
+Example:
+
+Download a specific PGP public key entry output code:
+
+> ### Output Code:  
+> ```
+> {action=Read, objType=PGP Public Key | PGP Secret Key, nodeType="Keymanagement Subsystem", isCustomerVisible=true, objName=3A7A899C3435D45C}
+> ```
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Manage security
+
+</td>
+<td valign="top">
+
+Import PGP Key\(s\)
+
+</td>
+<td valign="top">
+
+-   action: Change
+-   objectType: Public Keyring or Secret Keyring
+-   objName: 3A7A899C3435D45C, 2DDE8A220E3D26B4
+
+Example:
+
+Import a PGP Public Keyring output code:
+
+> ### Output Code:  
+> ```
+> {action=Change, objType=PGP Public Keys | PGP Secret Keys, nodeType="Keymanagement Subsystem", isCustomerVisible=true, objName=3A7A899C3435D45C, 2DDE8A220E3D26B4}
+> ```
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Manage security
+
+</td>
+<td valign="top">
+
+Delete PGP Key
+
+</td>
+<td valign="top">
+
+-   action: Delete
+-   objectType: Public Keyring or Secret Keyring
+-   objName: 3A7A899C3435D45C
+
+Example:
+
+Deleting a PGP Public Key entry output code:
+
+> ### Output Code:  
+> ```
+> {action=Delete, objType=PGP Public Key | PGP Secret Key, nodeType="Keymanagement Subsystem", isCustomerVisible=true, objName=3A7A899C3435D45C}
+> ```
+
+
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>

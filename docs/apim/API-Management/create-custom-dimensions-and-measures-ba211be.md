@@ -32,7 +32,7 @@ Perform the step-by-step instructions in this topic to create custom dimensions 
 
 7.  Attach the [Statistics Collector Policy](statistics-collector-policy-1dee3c9.md) to the PreFlow of your ProxyEndpoint. For more information about how to add policies to API proxy, see [Policies](policies-7e4f3e5.md).
 
-8.  Open the payload of Statistics Collector policy that you attached to the API Proxy.
+8.  Open the payload of Statistics Collector policy that you attached to the API proxy.
 
     > ### Note:  
     > By default, the payload of Statistics Collector policy displays all the custom dimensions and measures that you've created. It displays them in a commented state with xml indicators `<!-- -->` as shown in the below sample payload:

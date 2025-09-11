@@ -220,12 +220,14 @@ To create the service key, do the following:
     > Open a command prompt/terminal in the folder where you have saved the certificate files and execute the following curl command to get the response in the `my-oauth-response.json` file in the same folder. From this file, you can fetch the bearer token from the value of "access\_token".
     > 
     > ```
-    > curl --cert certficate.cer --key certificate.key --location --request POST <https://<sub account>.authentication.cert.<region>.hana.ondemand.com">
-    > --header 'Content-Type: application/x-www-form-urlencoded' \
-    > --data-urlencode 'client_id=<clientId from the servicekey x509 credentials>' \
-    > --cert certificate.cer \
-    > --key certificate.key \
-    >   > my-oauth-response.json
+    > 
+    > curl --request POST 'https://<certurl_from_the_servicekey_x509_credentials>/oauth/token?grant_type=client_credentials' \
+    >      --header 'Content-Type: application/x-www-form-urlencoded' \
+    >      --data-urlencode 'client_id=<clientId_from_the_servicekey_x509_credentials>' \
+    >      --cert certificate.cer \
+    >      --key certificate.key \
+    >      > my-oauth-response.json
+    > 
     > 
     > ```
 
@@ -236,21 +238,85 @@ To create the service key, do the following:
 
 ## Assign Roles
 
-You create a role collection and add roles for OData Provisioning, see [Define a Role Collection](https://help.sap.com/docs/btp/sap-business-technology-platform/define-role-collection). Then assign this role collection to the users who have to access and work with the OData Provisioning capability.
+There are three roles available when you activate the OData Provisioning capability:
 
-1.  Navigate to the subaccount where you've subscribed to SAP Integration Suite on the SAP BTP Cockpit and add the following roles to a role collection:
+-   *ODPManage*: View and register OData services. Monitor errors, manage metadata validation and cache settings.
+-   *ODPAPIAccess*: Access the service document from a link against each of the registered OData services.
+-   *APIFullAccess*: Access the registered OData services via the runtime.
 
-    -   *ODPManage*: View and register OData services. Monitor errors, manage metadata validation and cache settings.
-    -   *ODPAPIAccess*: Provides access to the service document. You can access the service document from a link against each of the registered OData services.
-    -   *APIFullAccess*: Provides runtime access to the registered OData services.
+Create a role collection and add roles for OData Provisioning based on the authorizations needed by users.
 
-    > ### Note:  
-    > When you subscribe to the OData Provisioning capability, you can assign several associated roles. However, for the SAP Integration Suite, only the following roles should be assigned:*ODPManage*, *ODPAPIAccess*, *APIFullAccess*.
+> ### Note:  
+> When you subscribe to the OData Provisioning capability, you can assign several associated roles. However, for the SAP Integration Suite, only the following roles should be assigned:*ODPManage*, *ODPAPIAccess*, *APIFullAccess*.
 
+Now assign these role collections to the users working with the OData Provisioning capability. See [Define a Role Collection](https://help.sap.com/docs/btp/sap-business-technology-platform/define-role-collection).
+
+We recommend creating two role collections:
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Role Collection \(Created by You\)
+
+</th>
+<th valign="top">
+
+User Type
+
+</th>
+<th valign="top">
+
+Roles Added to Role Collection
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+ODPAdmin
+
+</td>
+<td valign="top">
+
+Administrator
+
+</td>
+<td valign="top">
+
+*ODPManage* and *ODPAPIAcess*
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODPUser
+
+</td>
+<td valign="top">
+
+Application User
+
+</td>
+<td valign="top">
+
+*APIFullAccess*
+
+</td>
+</tr>
+</table>
+
+To assign these role collections:
+
+1.  Navigate to the subaccount where you've subscribed to SAP Integration Suite on the SAP BTP Cockpit.
 2.  To assign these roles:
 
     1.  Choose *Security* \> *Users* from the left navigation pane.
     2.  Select the username, and under the *Role Collections* section, choose *Assign Role Collection*.
-    3.  In the dialog box that opens, select the role collection that you created, and choose *Assign Role Collection*.
+    3.  In the dialog box that opens, select the appropriate role collection that you created, and choose *Assign Role Collection*.
 
 

@@ -54,20 +54,5 @@ Duplicate Target Nodes
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-Pretransformation
-
-</td>
-<td valign="top">
-
--   Pretransformations defined in the Base MAG are not automatically propagated to the Overlay MAG.
--   As a workaround, you can manually redefine the same Pretransformation in your Overlay MAG to achieve the desired outcome.
-
-
-
-</td>
-</tr>
 </table>
 

@@ -18,7 +18,7 @@ To resolve the upgrade error, perform the following steps:
 
 ## Procedure
 
-1.  To check the custom resource status, enter the command `kubectl get SolaceSoftwareBroker solace -n edge-icell-services` in the kubectl tool..
+1.  To check the custom resource status, enter the command `kubectl get SolaceSoftwareBroker solace -n edge-icell-services` in the kubectl tool.
 
 
     <table>

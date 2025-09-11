@@ -32,6 +32,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
 > -   EDI to XML converter version 1.6 and above supports LS/LE segments.
 > -   Cloud Integration does not support repetition characters. Repetition character is a single character which separates the instances of a repeating data element. For example, *^* \(caret sign\) is a repetition character.
 > -   For X12 format, EDI to XML converter v1.8.0 and v2.2.0 onwards support same group name with different definition in XSD.
+> -   For X12 format, the Target Root Element is available for EDI to XML converter version 2.7 and above.
 
 
 
@@ -320,6 +321,28 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     <td valign="top">
     
     If selected the feature notifies the converter to exclude the interchange and group envelopes found in an EDI document.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Target Root Element*
+
+    \(only available if *Exclude Interchange and Group envelopes* is not selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Select to determine the target root element of the outgoing payload.
+
+    These are the following options:
+
+    -   Dynamic: If you select Dynamic, you must define the value for `interchange` or `fromIncomingPayload` in `SAP_EDITOXML_X12_TARGET_ROOT_ELEMENT` header.
+    -   Interchange: Select to use the root element from the incoming interchange.
+    -   Message Specification from Incoming Payload: Select to use the same root element as the incoming payload in the outgoing payload.
+
+
     
     </td>
     </tr>

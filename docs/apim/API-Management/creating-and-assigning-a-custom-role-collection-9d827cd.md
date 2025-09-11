@@ -96,5 +96,5 @@ In this section, we will guide you through the following:
 **Related Information**  
 
 
-[Create a Product](create-a-product-d769622.md "Explains how to create products to publish a bundle of API proxies together.")
+[Create a Product](create-a-product-d769622.md "Create products to publish a bundle of API proxies together.")
 

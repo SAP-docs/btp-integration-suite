@@ -2,13 +2,13 @@
 
 # Creating a Versioned API
 
-Creating a versioned API Proxy from a deployed, versioned, or nonversioned API Proxy in the API Management, API Portal.
+Creating a versioned API proxy from a deployed, versioned, or nonversioned API proxy in the API Management, API Portal.
 
 
 
 ## Context
 
-You can create a versioned API Proxy, from either a previously versioned API or a nonversioned API that have been deployed, from the API Portal. To know more about creating a versioned API Proxy when creating it from scratch in the API Portal, see [API Versioning](api-versioning-b3cda3b.md).
+You can create a versioned API proxy from either a previously versioned API or a nonversioned API that have been deployed, from the API portal. To know more about creating a versioned API proxy when creating it from scratch in the API portal, see [API Versioning](api-versioning-b3cda3b.md).
 
 
 
@@ -24,10 +24,10 @@ You can create a versioned API Proxy, from either a previously versioned API or 
 
 4.  From the top-right corner of the *Overview* screen, choose *...* \> *New Version*.
 
-5.  In the *Create New Version* screen, in the *Version* field, enter a new version and choose *Create*. You can’t edit the name and the base path. However, once you enter a new version, the version is appended to the name and prepended to the base path to create a unique API Proxy version.
+5.  In the *Create New Version* screen, in the *Version* field, enter a new version and choose *Create*. You can’t edit the name and the base path. However, once you enter a new version, the version is appended to the name and prepended to the base path to create a unique API proxy version.
 
     If the version you enter is v1, the name will be Name\_v1, and the basepath will /v1/SalesOrder.
 
-6.  You can then choose to *Save* or *Deploy* the new version of this API Proxy.
+6.  You can then choose to *Save* or *Deploy* the new version of this API proxy.
 
 

@@ -534,50 +534,14 @@ Yes
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="4">
+<td valign="top">
 
 Security Protocol
 
 </td>
 <td valign="top">
 
-TLSv 1.2 only \( on Hyperscalers \)
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-TLSv 1.2 & TLSv1.1 \( on SAP DC \)
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-TLSv1.1 \(deprecated, planned to be removed by end of 2019\)
-
-</td>
-<td valign="top">
-
-No
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-TLSv1.0 \(Unsupported\)
+TLS 1.3 and TLS 1.2
 
 </td>
 <td valign="top">
@@ -599,35 +563,6 @@ In API Management, the client is expected to pass a SNI extension \(server\_name
 For Client which doesn't support SNI extension, APIM would send a default certificate which is provided by SAP.
 
 For Reference on SNI : [https://en.wikipedia.org/wiki/Server\_Name\_Indication](https://en.wikipedia.org/wiki/Server_Name_Indication)
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-</tr>
-<tr>
-<td valign="top" rowspan="2">
-
-Security Protocol applicable for API Management Runtime
-
-</td>
-<td valign="top">
-
-TLSv 1.2 only \( on Hyperscalers & SAP DC \)
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-TLSv1.0 & TLS 1.1 \(Unsupported\)
 
 </td>
 <td valign="top">
@@ -785,7 +720,7 @@ Numeric
 **Related Information**  
 
 
-[Monitor the Health of Custom Domain Virtual Host Certificates Using SAP Cloud ALM](monitor-the-health-of-custom-domain-virtual-host-certificates-using-sap-cloud-alm-7bd9d9f.md "You can use SAP Cloud Application Lifecycle Management (ALM) application to proactively detect issues and monitor the health of custom domain virtual host certificates in API Management.")
+[Monitor the Health of Certificates Using SAP Cloud ALM](monitor-the-health-of-certificates-using-sap-cloud-alm-7bd9d9f.md "You can use SAP Cloud Application Lifecycle Management (ALM) application to proactively detect issues and monitor the health of certificates in API Management.")
 
 [API Management FAQs](api-management-faqs-2d16070.md "Frequently asked questions for SAP API Management.")
 

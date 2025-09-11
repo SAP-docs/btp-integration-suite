@@ -49,6 +49,31 @@ Choosing a particular queue will enable you to see the following usage informati
 -   Destination: Destination of the message
 -   DMQ Eligible: Indicates whether the message is eligible for the Dead Message Queue \(DMQ\).
 
+Select a message to see the following:
+
+Under *Headers* you see:
+
+-   Identifiers: There are two identifiers for the message:
+    -   Message ID and Correlation ID
+
+-   Delivery Information:
+    -   Time Sent: Time the message was sent
+    -   Redelivered: Indicates if redelivery of the message was ever attempted.
+    -   Undelivered: Indicates if the message was never delivered.
+    -   Delivery Count: The number of times the message has been redelivered.
+    -   Delivery Mode: The mode which is used for message delivery.
+
+-   Routing Information:
+    -   Destination: The destination of the message
+    -   Reply To: The address or topic to which the recipient should send the response, when a message that requires a reply or acknowledgment, is published.
+    -   DMQ Elgible: Indicates whether the message is eligible for the Dead Message Queue \(DMQ\)
+
+-   Additional Information: Message size in bytes.
+
+Under *Properties* you can view the properties defined for the message. These are usually unique to the message and can be used to filter for the message from the several in the queue.
+
+If you have the *EventMeshBusinessExpert* role assigned to you, you can view custom properties for the message, view and download the message payload from the *Payload* section before consuming the message, and delete the messages.
+
 > ### Note:  
 > -   The number of messages displayed for a a queue is a specific value that is recorded at a particular point in time, and can change rapidly depending on the consumers and producers accessing the system.
 > -   The Message ID and Correlation ID could be empty depending on the message client behavior.

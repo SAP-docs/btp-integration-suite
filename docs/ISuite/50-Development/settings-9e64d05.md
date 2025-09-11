@@ -57,7 +57,7 @@ APIs, Artificial Intelligence
 </td>
 <td valign="top">
 
-[Setting Up API Management Capability](setting-up-api-management-capability-f34e86c.md), [Artificial Intelligence](artificial-intelligence-6a6727c.md)
+[Setting Up API Management](setting-up-api-management-f34e86c.md), [Artificial Intelligence](artificial-intelligence-6a6727c.md)
 
 </td>
 </tr>

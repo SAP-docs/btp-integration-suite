@@ -43,5 +43,5 @@ Follow these steps to manually rotate the signing keys:
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="8cb10332523e4a2a85b4204701a26a43.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/0e38815915554144ba19e13155d02a6b.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Fix Signing key Rotation Issues](../fix-signing-key-rotation-issues-8cb1033.md "Troubleshoot errors related to manual signing key rotation for access tokens issued by Edge Local Authentication and Authorization.")
 

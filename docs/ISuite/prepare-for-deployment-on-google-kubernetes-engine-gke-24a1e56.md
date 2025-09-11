@@ -83,12 +83,24 @@ Install Google Cloud Command Line Interface \(CLI\).
 <tr>
 <td valign="top">
 
-Install the Kubernetes command-line tool kubectl.
+Install the Kubernetes command-line tool `kubectl`.
 
 </td>
 <td valign="top">
 
 [Install Kubectl](https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Install the Istio command-line tool `istioctl` \(recommended\).
+
+</td>
+<td valign="top">
+
+[Install Istioctl](https://istio.io/latest/docs/ops/diagnostic-tools/istioctl/)
 
 </td>
 </tr>

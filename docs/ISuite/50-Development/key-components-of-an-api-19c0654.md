@@ -64,7 +64,7 @@ API Resource
 </td>
 <td valign="top">
 
-Individual business entities that an API proxy contains. For example: BusinessPartnerCollection is an API resource that the API administrator would like to present via an API Proxy entity.
+Individual business entities that an API proxy contains. For example: BusinessPartnerCollection is an API resource that the API administrator would like to present via an API proxy entity.
 
 </td>
 </tr>

@@ -31,7 +31,7 @@ Multiple versions of the API, can coexist at both runtime and design time.
 
 
 
-The pattern for the name and base path for an API Proxy, when you’re using the version attribute, and have chosen, for example, v1 as the version is:
+The pattern for the name and base path for an API proxy, when you’re using the version attribute, and have chosen, for example, v1 as the version is:
 
 
 <table>
@@ -90,12 +90,12 @@ In case you don’t provide name and base path in this required pattern, the sys
 For the version, we recommend that you use alphanumeric values. Based on the version you’ve provided, the system appends the version value to the API proxy name and base path, creating a unique version.
 
 > ### Remember:  
-> Once you've versioned an API Proxy, you can’t edit the version or the base path.
+> Once you've versioned an API proxy, you can’t edit the version or the base path.
 
 **Related Information**  
 
 
-[Creating a Versioned API](creating-a-versioned-api-57abb00.md "Creating a versioned API Proxy from a deployed, versioned, or nonversioned API Proxy in the API Management, API Portal.")
+[Creating a Versioned API](creating-a-versioned-api-57abb00.md "Creating a versioned API proxy from a deployed, versioned, or nonversioned API proxy in the API Management, API Portal.")
 
 [Create an API Proxy](create-an-api-proxy-c0842d5.md "This topic describes the steps to create an API proxy from the .")
 

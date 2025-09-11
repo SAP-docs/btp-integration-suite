@@ -2,12 +2,12 @@
 
 # Policy Definition and Types of Policies
 
-You can define the behavior of an API by using policy steps.
+You can define the behavior of an API by using policies.
 
 > ### Note:  
 > This feature and the information is relevant only if you have activated Edge Integration Cell in your SAP Integration Suite tenant. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
-A policy is a program that executes a specific function at runtime. They provide the flexibility to add common functionalities on an API without having to code them individually each time. Policies provide features to secure APIs, and control the API traffic. You can also customize the behavior of an API by adding scripts and attaching them to policies.
+A policy is a program that executes a specific function at runtime. They provide the flexibility to add common functionalities on an API without having to code them individually each time. Policies provide features to secure APIs, and control the API traffic.
 
 ****
 
@@ -48,14 +48,14 @@ Authentication
 </td>
 <td valign="top">
 
-Different API may have various authentication mechanisms. The authentication mechanisms that are currently supported are Basic authentication, Client Certificate, and oAuth. For more information, see [Authentication](authentication-fa6eec4.md).
+API may have various authentication mechanisms. The authentication mechanisms that are currently supported are Basic authentication, Client Certificate, and OAuth. For more information, see [Authentication](authentication-fa6eec4.md).
 
 </td>
 <td valign="top">
 
--   The position of the authentication policy step on the flow is immutable and it’s the first policy on the flow.
+-   The position of the authentication policy on the flow is immutable and it’s the first policy on the flow.
 
--   Authentication policy step is a mandatory policy step and is added to request flow by default. Neither you can remove this step, nor you can add another authentication policy step to the flow.
+-   Authentication policy is a mandatory policy and is added to request flow by default. Neither you can remove this policy, nor you can add another authentication policy to the flow.
 
 -   Authentication policy can be added to the request flow only once. All other policies can be added to the flow multiple times.
 
@@ -133,9 +133,7 @@ The Quota policy defines the number of request messages an application can submi
 </td>
 <td valign="top">
 
-When the quota limit specified in the policy is reached, the subsequent calls to the API proxy are rejected with the response code 429 \( request limit exceeded\). The rejection period lasts until the end of the quota window. Let's illustrate this with the following example:
-
-The quota window opens at 00:00 \(12 AM\) and ends at 00:05 \(12:05 AM\). Let us assume that the quota allotted is 3 requests in the specified period of 5 minutes. At 00:03, if the quota limit is reached, the subsequent requests post 00:03 are rejected until the window is reset at 00:05.
+ 
 
 </td>
 </tr>
@@ -147,7 +145,7 @@ Surge Protection
 </td>
 <td valign="top">
 
-The surge protection policy protects the backend against sudden traffic spikes. For more information, see [Surge Protection](surge-protection-3d14745.md).
+The surge protection policy protects the backend service against sudden traffic spikes. For more information, see [Surge Protection](surge-protection-3d14745.md).
 
 </td>
 <td valign="top">
@@ -178,13 +176,15 @@ The IP filter policy allows or denies calls from specific IP addresses or addres
 **Related Information**  
 
 
-[Adding an API Artifact](adding-an-api-artifact-c2fe62c.md "Add an API artifact to an package.")
+[Create an API Artifact](create-an-api-artifact-c2fe62c.md "Create an API artifact to securely expose backend services, apply consistent governance by adding security and traffic management policies, and gain better visibility and control over how your APIs are accessed and used.")
 
-[Copying an API Artifact](copying-an-api-artifact-820c9e8.md "You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API but with some modifications or variations. The copy feature allows you to quickly duplicate the API artifact and make the necessary changes without starting from scratch.You can create a duplicate of an API artifact by copying it within the same package or in a different integration package within the same SAP Integration Suite subscription.")
+[Add Resources to an API Artifact](add-resources-to-an-api-artifact-b5d0e4c.md "Add a resource to refer to individual endpoints or services.")
 
-[Request Reply Step for API Artifact](request-reply-step-for-api-artifact-a0b3712.md "You can use this step to call an external receiver system in a synchronous step and get back a response.")
+[Copy an API Artifact](copy-an-api-artifact-820c9e8.md "You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API artifact but with some modifications or variations.")
 
-[Deploying an API Artifact](deploying-an-api-artifact-b70e7ec.md "After creating an API artifact, it is necessary to deploy it on the chosen runtime profile in order to make it executable and ready for use.")
+[Deploy an API Artifact](deploy-an-api-artifact-b70e7ec.md "After creating an API artifact, it is necessary to deploy it on the chosen runtime in order to make it executable and ready for use.")
 
-[Adding Policy Steps to the API Artifact](adding-policy-steps-to-the-api-artifact-c2b3e56.md "To enforce security or control API traffic, you can set rules on the API by adding policy steps and integration steps to the API artifact.")
+[Externalize Parameter for API Artifact](externalize-parameter-for-api-artifact-ce0a468.md "You can use the externalization feature to define API policies and integration flows that can retrieve externalized configuration values during runtime. These parameters can be utilized later without modifying the standard API artifact.")
+
+[Add Policies to the API Artifact](add-policies-to-the-api-artifact-c2b3e56.md "To enforce security or control API traffic, you can set rules on the API by adding policies and integration steps to the API artifact.")
 

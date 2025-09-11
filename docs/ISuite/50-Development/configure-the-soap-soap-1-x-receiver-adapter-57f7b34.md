@@ -11,7 +11,7 @@ The SOAP \(SOAP 1.x\) receiver adapter enables a SAP BTP tenant to exchange mess
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -109,7 +109,7 @@ Description
 </td>
 <td valign="top">
 
-Endpoint address at which Cloud Integration posts the outgoing message, for example, `http://<host>:<port>/payment`.
+Endpoint address at which SAP Cloud Integration posts the outgoing message, for example, `http://<host>:<port>/payment`.
 
 You can dynamically configure the address field of the SOAP \(SOAP 1.x\) adapter.
 
@@ -436,6 +436,9 @@ If you have selected *Via Manual Configuration in Channel*, you have the followi
 
 
 If you have selected the option *Plain Text Password* or *Hashed Password*, enter the *Credential Name*, that is, the alias that was assigned to the authorized user and password during tenant deployment.
+
+> ### Note:  
+> When you use the *Username Token* in the SOAP receiver channel's WS Security Configuration, it is no longer possible to trace the message payload using the MPL log level trace, for security reasons. You can still set the log level and trace payloads from other steps, but the message payload sent by this channel will not be visible.
 
 > ### Note:  
 > It depends on additional adapter settings how the token is treated during runtime \(in particular, whether the token is encrypted or not\).

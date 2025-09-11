@@ -277,5 +277,5 @@ The *Code Value Mapping* tab displays the list of global code value mappings tha
 You can:
 
 -   [Creating a New Mapping Guideline](creating-a-new-mapping-guideline-a42920e.md)
--   [Working with a Mapping Guideline \(MAG\)](working-with-a-mapping-guideline-mag-0803ca6.md)
+-   [Working with Mapping Guidelines \(MAGs\)](working-with-mapping-guidelines-mags-0803ca6.md)
 

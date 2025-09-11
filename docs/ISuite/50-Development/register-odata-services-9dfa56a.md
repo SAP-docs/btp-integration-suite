@@ -54,7 +54,7 @@ You can register OData services in the SAP Integration Suite to access back-end 
 **Related Information**  
 
 
-[Create a Destination](https://help.sap.com/docs/btp/sap-business-technology-platform/create-destination)
+[Create a Destination](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-destinations-from-scratch?version=Cloud)
 
 [Multiple-Origin Composition](multiple-origin-composition-d16fd96.md "Multiple-Origin Composition (MOC) is the ability to collect data from different back-end systems, aggregate them in a single service, and update different back-end systems, while using the same user. You can also execute a $batch request with MOC.")
 

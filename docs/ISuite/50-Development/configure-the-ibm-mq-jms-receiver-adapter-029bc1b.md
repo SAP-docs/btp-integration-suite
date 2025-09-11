@@ -68,7 +68,29 @@ Specify the port number to connect to IBM MQ.
 </td>
 <td valign="top">
 
-Select the type of authentication for connecting to IBM MQ. Currently only *Basic* authentication is supported.
+Select the type of authentication for connecting to IBM MQ:
+
+-   *Basic*: Provides authentication using User Credentials.
+-   *Client Certificate*: The server authenticates the client by receiving the client's certificate during the SSL handshake and verifying the certificate is valid.
+-   *None*: Direct connection can be made without User Credentials.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key Alias*
+
+\(only available when *Client Certificate* is selected\)
+
+</td>
+<td valign="top">
+
+Specify the alias that stores the private key to communicate with IBM MQ servers.
+
+Example: `IBM_MQ_KeyAlias`
 
 </td>
 </tr>
@@ -82,6 +104,51 @@ Select the type of authentication for connecting to IBM MQ. Currently only *Basi
 
 Specify the User Credential artifact that stores the username-password pair.
 
+Example: `IBM_MQ_54`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Type*
+
+</td>
+<td valign="top">
+
+Select the proxy type:
+
+-   *Internet*
+-   *On-Premise*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Location ID* 
+
+</td>
+<td valign="top">
+
+Specify the location ID from the Cloud Connector.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*SSL Cipher Suite* 
+
+</td>
+<td valign="top">
+
+Specify the Cipher Suite name.
+
+Example: `*TLS12HIGHER`
+
 </td>
 </tr>
 <tr>
@@ -94,17 +161,21 @@ Specify the User Credential artifact that stores the username-password pair.
 
 Specify the name of the queue manager to connect for messaging.
 
+Example: `MQD`
+
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Cipher Suite Name* 
+*Channel Name*
 
 </td>
 <td valign="top">
 
-Specify the Cipher Suite name.
+Specify the Channel Name in IBM MQ.
+
+Example: `CLOUD.APP.SVRCONN`
 
 </td>
 </tr>
@@ -117,6 +188,8 @@ Specify the Cipher Suite name.
 <td valign="top">
 
 Specify the Application Name for the connection.
+
+Example: `MainApplication`
 
 </td>
 </tr>
@@ -134,20 +207,6 @@ Select the type of protocol for connecting to IBM MQ:
 -   *WebSphereMQ*
 
 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Channel Name*
-
-</td>
-<td valign="top">
-
-Specify the Channel Name in IBM MQ.
-
-Example: `CLOUD.ADMIN.SVRCOS`
 
 </td>
 </tr>
@@ -205,6 +264,8 @@ Select the Message Destination Type for which operation needs to be performed:
 
 *Queue Name*
 
+\(only available when *Message Destination Type* is set to *Queue*\)
+
 </td>
 <td valign="top">
 
@@ -223,6 +284,20 @@ Specify the name of the queue from where the message is read.
 <td valign="top">
 
 Specify the name or string of the Topic from which the message will be read.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Client ID*
+
+\(only available when *Message Destination Type* is set to *Topic*\)
+
+</td>
+<td valign="top">
+
+Specify the Client ID for the connection.
 
 </td>
 </tr>

@@ -19,13 +19,10 @@ Cloud Integration allows you to configure an integration flow individually or mu
 
 2.  Choose *Configure*.
 
-    > ### Note:  
-    > You can also view the additional information added during parameter externalization, see [Externalized Parameters View](externalized-parameters-view-27a0216.md).
-
-3.  Select relevant details of externalised components in *Sender, Reciever* or *More*tab.
+3.  Select relevant details of externalised components in *Sender, Reciever* or *More* tab. See [Configure Adapter in Communication Channels](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/1f066330e8314324bf3ebe3b6adc21b2.html).
 
     > ### Note:  
-    > For more information, see [Configure Adapter in Communication Channels](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/1f066330e8314324bf3ebe3b6adc21b2.html).
+    > You can also view the parameter details for each field that were added during the parameter externalization.
 
 4.  To view and modify externalised values for integration flow configuration or integration flow steps or local integration process or integration process.
 

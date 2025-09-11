@@ -94,7 +94,7 @@ To raise custom HTTP codes and/or messages, the[Raise Fault](raise-fault-c7f2e8d
 
 ## FaultRules and DefaultFaultRule
 
-When an API proxy encounters an error, it deviates from the normal processing pipeline and enters an error state. In this error state, the API Proxy follows a specific order to execute FaultRules and DefaultFaultRule.
+When an API proxy encounters an error, it deviates from the normal processing pipeline and enters an error state. In this error state, the API proxy follows a specific order to execute FaultRules and DefaultFaultRule.
 
 -   **FaultRules**: Contains the necessary logic to trigger custom error messages and other policies based on specific conditions.
 

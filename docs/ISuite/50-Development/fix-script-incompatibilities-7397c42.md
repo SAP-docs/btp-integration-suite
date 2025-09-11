@@ -21,8 +21,6 @@ The script editor helps you keep your custom scripts clean by highlighting the i
 The script editor categorizes the incompatibilities and further groups into errors, warnings, and information.
 
 > ### Note:  
-> -   The category *Clean Code Checks* is available now. This category includes incompatibilities like unused and duplicate import statements in your scripts.
-> 
 > -   The automatic suggestions are only supported for Groovy-based scripts.
 
 
@@ -33,21 +31,22 @@ The script editor categorizes the incompatibilities and further groups into erro
 
 2.  In the *Problems* view, look out for different categories of checks.
 
-3.  In the *Clean Code Checks* category, check if there are incompatibilities found in any of the grouping.
+    -   Upgrade Readiness Check: This category includes incompatibilities like unused and duplicate import statements, unsupported classes in your scripts. See [Groovy Script](https://help.sap.com/docs/integration-suite/sap-integration-suite/groovy-script?state)
+    -   General Script Check: This category includes general script checks. See [Use Scripting Appropriately](https://help.sap.com/docs/integration-suite/sap-integration-suite/use-scripting-appropriately?state)
 
-4.  Navigate to each incompatibility check and understand the problem.
+3.  Navigate to each tab and find the incompatibilities or issues in the script.
 
-5.  Choose *Fix* to let the script editor resolve the problem for you.
+4.  Choose *Fix* to let the script editor resolve the problem for you. If an automatic fix is not available, choose *Show More* to view the details of the incompatibility or issue.
 
-6.  In the *Fix Incompatibility* dialog, read about the improvisation the editor makes. Choose *Fix* to resolve all occurences of the problem.
+5.  In the subsequent dialog box, read about the improvement the editor makes. Choose *Fix* to resolve all occurrences of the problem. After a successful fix, the incompatibility is removed from the Problems view.
 
-7.  Choose *Apply*.
+6.  Choose *Apply*.
 
     > ### Note:  
     > If you choose not to fix the problems, you can still deploy the integration flow.
 
-8.  To navigate back to the integration flow, choose *Close*.
+7.  To navigate back to the integration flow, choose *Close*.
 
-9.  Save the integration flow
+8.  Save the integration flow.
 
 

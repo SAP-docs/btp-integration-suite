@@ -92,7 +92,7 @@ The following list displays the API Management content that aren’t cloned, inc
 
 -   **Runtime data**
     -   Quota Counters
-    -   OAuth Tokens for API Proxy runtime calls
+    -   OAuth Tokens for API proxy runtime calls
     -   Runtime states of any API Management entity
 
 -   **Configurations**

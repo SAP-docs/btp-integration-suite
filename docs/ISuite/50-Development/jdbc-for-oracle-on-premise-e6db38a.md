@@ -75,7 +75,13 @@ jdbc:oracle:thin:@myoracle:1521:my\_sid
 </tr>
 </table>
 
-Before connecting to this database, you must upload the drivers and then, add the Data Source. For more details, see [Configure JDBC Drivers](configure-jdbc-drivers-77c7d95.md) and [Managing JDBC Data Sources](managing-jdbc-data-sources-4c873fa.md).
+> ### Note:  
+> When using Oracle Database with SAP Integration Suite :
+> 
+> -   For JDBC access, the Oracle database must be licensed directly from Oracle with a Full-Use license.
+> -   If the Oracle database is licensed through SAP with an Application-Specific Full Use license, JDBC access is**not covered** by SAP’s Oracle reseller license. See SAP note [581312](https://me.sap.com/notes/581312)
+
+Before connecting to this database, you must upload the drivers and then, add the Data Source. For more details, see [Configure JDBC Drivers](configure-jdbc-drivers-77c7d95.md) and [Managing JDBC Data Sources](managing-jdbc-data-sources-4c873fa.md)
 
 > ### Note:  
 > Oracle RAC setup is not supported.

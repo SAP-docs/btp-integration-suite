@@ -2,10 +2,13 @@
 
 # Delay Software Update
 
-Configure your tenants to receive monthly updates delayed by a week.
+Configure your tenants to receive monthly updates delayed by a week. However, you can't delay or cancel major upgrade windows.
 
 > ### Note:  
 > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
+> ### Note:  
+> Delayed updates are not supported in the Beta release of Integration Cell. While you may still be able to use the feature, the behaviour is not guaranteed as Cloud Integration capability is out of scope for the Beta release.
 
 
 

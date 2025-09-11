@@ -145,7 +145,19 @@ With this step, you create a service key for the instance.
     </td>
     <td valign="top">
     
-    Base URL for accessing API’s.
+    Base URL for accessing the Entities APIs.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *management* 
+    
+    </td>
+    <td valign="top">
+    
+    Base URL for accessing the Management APIs.
     
     </td>
     </tr>

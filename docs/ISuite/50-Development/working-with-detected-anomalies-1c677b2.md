@@ -110,6 +110,10 @@ Each anomaly is accompanied by the following details:
     
 -   Time Stamp: Displays the date and time of the issue detection.
 -   Affected Entity: Displays the name of the affected API. If there are multiple affected APIs, it will be shown as **Multiple APIs**.
+-   Scope: Indicates whether the anomaly is detected at the system level or the API level.
+    -   **System Level Anomaly**: System level anomaly detection for API calls monitors and analyzes unusual or abnormal behavior across all APIs collectively within the entire tenant, rather than focusing on individual APIs. This check is enabled by default in the backend.
+    -   **API Level Anomaly**: API level anomaly checks focus on monitoring and analyzing specific APIs for unexpected or abnormal behavior. Unlike system level detection, API level checks require selecting the particular APIs to be monitored for anomalies.
+
 -   Details: This field describes the issue detected by the system.
 
 Choose an anomaly to view more in-depth information on the next screen.
@@ -158,10 +162,10 @@ In this screen, you can access the following information:
 -   Description: Displays the observed percentage variation.
 -   Time Stamp: Displays the date and time of issue detection.
 -   Details:
-    -   API causing this anomaly: Displays the name of the API that is causing the anomaly.
+    -   API\(s\) causing this anomaly: Lists the names of the APIs responsible for the anomaly.
 
-    -   Affected Target Hosts: Displays the name of the affected API provider.
-    -   Developer Details: Displays the name of the developer.
+    -   Associated Target: Lists the name of the affected target host.
+    -   Associated Developers: Lists the names of the developers.
 
 -   Suggestions: In this tab, you can view suggestions to help resolve the anomaly. Choose *View APIs* to be redirected to the *Configure* \> *APIs* page, where you can review the API that is causing the anomaly and conduct further investigation to resolve it.
 
@@ -223,7 +227,7 @@ Choose <span class="SAP-icons-V5"></span> or <span class="SAP-icons-V5"></
 **Related Information**  
 
 
-[Enabling Anomaly Detection and Predictions](enabling-anomaly-detection-and-predictions-98534a0.md "Activate the anomaly detection and prediction features for API proxy calls to enhance monitoring and forecasting capabilities.")
+[Enabling Anomaly Detection and Predictions](enabling-anomaly-detection-and-predictions-98534a0.md "Activate the anomaly detection and prediction features for API calls to enhance monitoring and forecasting capabilities.")
 
 [Configuring APIs for Anomaly Detection](configuring-apis-for-anomaly-detection-9e7e5d1.md "View or configure APIs for anomaly detection.")
 

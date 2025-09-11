@@ -40,7 +40,7 @@ Integration Packages
 
 [Integration Development](integration-development-b18936e.md)
 
-[API Development](api-development-94957bc.md)
+[Design APIs](design-apis-94957bc.md)
 
 </td>
 </tr>

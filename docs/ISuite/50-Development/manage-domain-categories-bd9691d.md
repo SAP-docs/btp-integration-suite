@@ -31,9 +31,6 @@ You need the following roles to create and update categories:
 
 Content administrators can use *Manage Content* to create domain categories and add the related products into relevant categories. They can also configure the order in which these categories and the contained products get displayed in the home page.
 
-> ### Note:  
-> If you've configured Developer Hub to connect to multiple API portals then you can add products from different API portals under one category. Whereas in classic design, you can only add products from one API portal under a category.
-
 Use the following procedure to configure navigation categories.
 
 

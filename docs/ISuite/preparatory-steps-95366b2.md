@@ -22,13 +22,11 @@ Before you can continue with the onboarding steps that are specific to Data Spac
 
 ## Procedure
 
--   You must add the entitlement from the global account to your subaccount. In SAP BTP cockpit, go to *Entitlements*, choose *Add Service Plans*, and assign an entitlement with *service* `di-api` and *plan* `api`. Don't forget to save your changes. Note that you must be **global account administrator** to edit entitlements.
+-   You must add the entitlement from the global account to your subaccount. In SAP BTP cockpit, go to *Entitlements*, choose *Edit* \> *Add Service Plans*, and assign an entitlement with *service* `di-api` and *plan* `api`. Don't forget to save your changes. Note that you must be **global account administrator** to edit entitlements.
 
--   Data Space Integration is a capability within SAP Integration Suite. Therefore, you first need to **activate SAP Integration Suite** on your SAP Business Technology Platform account. For an overview of the required steps, see [Initial Setup of SAP Integration Suite](10-InitialSetup/initial-setup-of-sap-integration-suite-3dcf507.md) of SAP Integration Suite.
+-   Data Space Integration is a capability within SAP Integration Suite. Therefore, you first need to **activate SAP Integration Suite** on your SAP Business Technology Platform account. For an overview of the required steps, see [Getting Started with SAP Integration Suite](10-InitialSetup/getting-started-with-sap-integration-suite-3dcf507.md).
 
 -   Data Space Integration leverages functionalities of SAP Integration Suite's **Cloud Integration capability**. Activate the capability by following the instructions at [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities) for Cloud Integration.
-
-    Make sure to also enable Cloud Integration's **message queues** functionality since Data Space Integration relies on it. See also [Managing Message Queues](50-Development/managing-message-queues-cdcce24.md).
 
 
 

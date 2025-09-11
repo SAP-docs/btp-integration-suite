@@ -64,7 +64,7 @@ An *API Admin*, you already have the *AuthGroup.API.Admin* role collection assig
 </td>
 <td valign="top">
 
-[Creating an Application with Developer Hub Administrator Role](../creating-an-application-with-developer-hub-administrator-role-df4f777.md) 
+[Creating a Subscription with Developer Hub Administrator Role](../creating-a-subscription-with-developer-hub-administrator-role-df4f777.md) 
 
 </td>
 </tr>
@@ -76,7 +76,7 @@ An *API Admin*, you already have the *AuthGroup.API.Admin* role collection assig
 </td>
 <td valign="top">
 
-[Manage Developer Access](../manage-developer-access-9df3ece.md) 
+[Manage Access](../manage-access-9df3ece.md) 
 
 </td>
 </tr>
@@ -215,7 +215,7 @@ The *Home page* to explore the product created on Developer Hub and view the API
 </td>
 <td valign="top">
 
-[Creating an Application with Application Developer Role](../creating-an-application-with-application-developer-role-99515fc.md) 
+[Creating a Subscription for Application with Application Developer Role](../creating-a-subscription-for-application-with-application-developer-role-99515fc.md) 
 
 </td>
 </tr>

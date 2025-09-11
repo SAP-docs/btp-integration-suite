@@ -2,7 +2,7 @@
 
 # Enabling Anomaly Detection and Predictions
 
-Activate the anomaly detection and prediction features for API proxy calls to enhance monitoring and forecasting capabilities.
+Activate the anomaly detection and prediction features for API calls to enhance monitoring and forecasting capabilities.
 
 
 
@@ -50,7 +50,7 @@ To enable anomaly detection and predictions through the SAP Integration Suite, f
 
 ## Results
 
-Anomaly Detection and Predictions for API proxy calls is now enabled.
+Anomaly Detection and Predictions for API calls is now enabled.
 
 **Related Information**  
 

@@ -203,6 +203,50 @@ Used by all components when accessing cloud services.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Destination Service
+
+</td>
+<td valign="top">
+
+Out
+
+</td>
+<td valign="top">
+
+HTTPS
+
+</td>
+<td valign="top">
+
+Used to synchronize destinations from cloud.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Auditlog Agent
+
+</td>
+<td valign="top">
+
+Out
+
+</td>
+<td valign="top">
+
+HTTPS
+
+</td>
+<td valign="top">
+
+Used to synchronize audit logs to cloud.
+
+</td>
+</tr>
 </table>
 
 For more information, see [Network and Communication Security](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/91e43a0f8ef44b8e8f543f544d646f30.html).

@@ -12,7 +12,7 @@ Creating a New Mapping Guideline: Use SAP Integration Advisor to create a standa
 
 ## Prerequisites
 
--   You have accessed SAP Integration Suite.
+-   You've accessed SAP Integration Suite.
 
 
 
@@ -28,9 +28,9 @@ A mapping guideline can be used as a source, reference, or guidance, for impleme
 
 ## Procedure
 
-1.  Choose *MAGs* from the left pane of the application.
+1.  Navigate to *Design* \> *MAGs*.
 
-2.  In the *Mapping Guidelines* page, Choose *Create*.
+2.  In the *Mapping Guidelines* page, choose *Create* \> *Standard MAG*.
 
 3.  Select the MIG that you want to use as the source in your MAG in the *Source MIG* step.
 
@@ -47,7 +47,7 @@ A mapping guideline can be used as a source, reference, or guidance, for impleme
 
 6.  Choose *Create* after reviewing your choices.
 
-7.  Once created, the newly created MAG will have the label *Base* below its name to distinguish it from the overlay MAGs.
+7.  Once created, the newly created MAG has the label *Base* below its name to distinguish it from the overlay MAGs.
 
 
 <a name="task_s25_mgn_tcc"/>
@@ -68,7 +68,7 @@ Create a new Mapping Guideline by copying an existing Mapping Guideline.
 
 2.  The copy functionality has two options:
 
-    1.  *Copy MAG Only*: This option creates only a copy of the MAG.
+    1.  *Copy MAG Only*: This option creates only a copy of the MAG, reusing the MIGs from the copied MAG.
 
     2.  *Copy MAG and Referenced MIGs*: This option creates a copy of both the MAG and the MIGs referenced in it.
 
@@ -82,5 +82,5 @@ Create a new Mapping Guideline by copying an existing Mapping Guideline.
 
 ## Results
 
-You have successfully created a mapping guideline. For more information on how you can work with a MAG, see [Working with a Mapping Guideline \(MAG\)](working-with-a-mapping-guideline-mag-0803ca6.md).
+You have successfully created a mapping guideline. For more information on how you can work with a MAG, see [Working with Mapping Guidelines \(MAGs\)](working-with-mapping-guidelines-mags-0803ca6.md).
 

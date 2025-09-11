@@ -92,7 +92,10 @@ The type of diagnostic task. It can be any of the following:
 
 -   *Garbage Collection Logging*. Diagnose memory management issues for specific pods. Unlike other logging tasks, when you create a new *Garbage Collection Logging* task, it gathers all the logs that are already on the file system. Once it's done, the task stops by itself, and you can download the results.
 -   *Artifact*. Diagnose issues within the artifact lifecycle, such as deployment, undeployment, and component restart. This also includes the calculation of the artifact state or simulations.
--   *Adapter*. Diagnose issues during adapter processing in the integration flow. Currently, only the RFC adapter with the sender direction is supported. The adapter task for the RFC adapter allows you to create logs for underlying layers like JCo and RFC infrastructure. You can also set the JCo trace level \(default is *Error*\) and the RFC trace level \(default is *None*\), in addition to adapter traces, in the dialog.
+-   *Adapter*. Diagnose issues during adapter processing in the integration flow.
+
+    Currently, the RFC adapter with both sender and receiver directions is supported. The adapter task for the RFC adapter allows you to create logs for underlying layers like JCo and RFC infrastructure. You can also set the JCo trace level \(default is *Error*\) in the dialog.
+
 
 
 

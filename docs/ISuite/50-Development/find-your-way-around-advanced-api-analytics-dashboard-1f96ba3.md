@@ -57,25 +57,229 @@ Hovering over each tile shows data for the current week, last week, and the diff
 
 Just below the key API metrics tiles, you can filter and check for the number of calls for each of your APIs using the **API Calls** dropdown menu. By default, it shows the total number of success and failure calls for all the APIs, combined.
 
-The rest of the Overview page provides a graphical view of other key API metrics, which include the following:
+The rest of the Overview page displays a graphical view of key API metrics, as outlined in the table below:
 
--   Top APIs of the Week
--   Top Products of the Week
--   Top Applications of the Week
--   Top API Providers of the Week
--   Top Developers of the Week
--   Top APIs
--   Top Applications
--   Top Products
--   Top API Providers
--   Top Developers
--   Top Response Codes
--   API Errors
--   API Response Time
--   Developer Engagement
--   Top Backend Errors
--   Top Proxy Errors
--   Slowest APIs
+**Overview**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Chart Name
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Top APIs of the Week
+
+</td>
+<td valign="top">
+
+Displays the top 5 APIs of the week based on the number of calls made to each API.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Products of the Week
+
+</td>
+<td valign="top">
+
+Displays the top 5 products of the week based on the number of calls received for each product.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Applications of the Week
+
+</td>
+<td valign="top">
+
+Displays the top 5 applications based on the number of calls made during the week.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top API Providers of the Week
+
+</td>
+<td valign="top">
+
+Displays the top 5 API providers of the week based on the number of calls made to each provider.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Developers of the Week
+
+</td>
+<td valign="top">
+
+Displays the top 5 developers of the week based on the number of API calls made.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top APIs
+
+</td>
+<td valign="top">
+
+Displays the daily call frequency for each API, highlighting the most frequently accessed APIs.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Applications
+
+</td>
+<td valign="top">
+
+Displays the daily average number of API calls per application, highlighting the top applications.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Products
+
+</td>
+<td valign="top">
+
+Displays the daily call volume for each product, highlighting the top-performing products based on call volume.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top API Providers
+
+</td>
+<td valign="top">
+
+Displays the daily number of calls made to each API provider, highlighting the top providers based on call volume.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Developers
+
+</td>
+<td valign="top">
+
+Displays the daily average number of API calls made by each developer, highlighting the most active developers.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Response Codes
+
+</td>
+<td valign="top">
+
+Displays the frequency of calls categorized by different response codes.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Errors
+
+</td>
+<td valign="top">
+
+Displays the number of errors encountered for each API.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Response Time
+
+</td>
+<td valign="top">
+
+Displays the average response time, measured in milliseconds, for each API on a daily basis.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Developer Engagement
+
+</td>
+<td valign="top">
+
+Displays the average number of calls made per application by each developer, indicating their level of engagement.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Backend Errors
+
+</td>
+<td valign="top">
+
+Displays the frequency of backend call errors categorized by URL.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Proxy Errors
+
+</td>
+<td valign="top">
+
+Displays the daily count of error calls for each proxy, highlighting the most frequent proxy errors.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Slowest APIs
+
+</td>
+<td valign="top">
+
+Displays the slowest APIs based on the average daily response time.
+
+</td>
+</tr>
+</table>
 
 > ### Note:  
 > In any of the key API metrics, if you observe an entity in the chart marked as `Unidentified`, it indicates the following:
@@ -102,19 +306,135 @@ The **Hour** option displays 24 touch points, one for each hour of the day.
 
 The **Minutes** option displays 48 touch points, one for every 30 minutes of the day.
 
-At the top right corner of the Health page, click <span class="SAP-icons-V5"></span> to view advanced filter menu and options. The filter menu and options appear below the date-range selector and you can filter your reports by API, Applications, Products, or Developers. Once you apply the filter options, the applied filters are displayed under *Active Filters*.
+At the top right corner of the Health page, click <span class="SAP-icons-V5"></span> to view advanced filter menu and options. The filter menu and options appear below the date-range selector and you can filter your reports by API, Applications, Products and Developers. Once you apply the filter options, the applied filters are displayed under *Active Filters*.
 
-The rest of the Health page displays a graphical view of key API metrics, which include the following:
+The rest of the Health page displays a graphical view of key API metrics, as outlined in the table below:
 
--   API Calls
--   Response Code Count
--   Cache Responses
--   Backend Error Call Count
--   Backend Response Time
--   API Error Calls
--   API Response Time
--   Error Count per Response Code
--   Average Response Time
+**Health**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Chart Name
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Calls
+
+</td>
+<td valign="top">
+
+Displays the daily count of API calls made.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response Code Count
+
+</td>
+<td valign="top">
+
+Displays the number of calls categorized by each response code.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cache Responses
+
+</td>
+<td valign="top">
+
+Displays the number of API calls that successfully hit the cache versus those that missed it.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Backend Error Call Count
+
+</td>
+<td valign="top">
+
+Displays the count of backend call errors categorized by URL.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Backend Response Time
+
+</td>
+<td valign="top">
+
+Displays the average response time of the backend.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Error Calls
+
+</td>
+<td valign="top">
+
+Displays the count of error calls for each API.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Response Time
+
+</td>
+<td valign="top">
+
+Displays the average response time of an API.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Error Count per Response Code
+
+</td>
+<td valign="top">
+
+Displays the number of call errors categorized by each response code.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Average Response Time
+
+</td>
+<td valign="top">
+
+Displays the average response time for cache operations.
+
+</td>
+</tr>
+</table>
 
 
 
@@ -134,23 +454,183 @@ The **Week** option displays one touch point for each week of the last three mon
 
 The **Day** option displays one touch point for each day. The number of touch points displayed here varies depending upon the time range you have selected under Month or Week tabs.
 
-At the top right corner of the Usage page, click <span class="SAP-icons-V5"></span> to view advanced filter menu and options. The filter menu and options appear below the date-range selector and you can filter your reports by API, Applications, Products, or Developers. Once you apply the filter options, the applied filters are displayed under *Active Filters*.
+At the top right corner of the Usage page, click <span class="SAP-icons-V5"></span> to view advanced filter menu and options. The filter menu and options appear below the date-range selector and you can filter your reports by API, Applications, Products and Developers. Once you apply the filter options, the applied filters are displayed under *Active Filters*.
 
-The rest of the Usage page displays a graphical view of key API metrics, which include the following:
+The rest of the Usage page displays a graphical view of key API metrics, as outlined in the table below:
 
--   API Calls
--   Developer Engagement Status
--   New Developers
--   New Applications
--   Top Browsers
--   Top Agents
--   Top Operating Systems
--   Top Device Types
--   Browser Call Count
--   Agent Call Count
--   Operating Systems Call Count
--   Device Types Call Count
--   Request Verb Call Count
+**Usage**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Chart Name
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Calls
+
+</td>
+<td valign="top">
+
+Displays the daily count of API calls made.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Developer Engagement Status
+
+</td>
+<td valign="top">
+
+Displays the number of calls made by each developer, indicating their level of engagement.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+New Developers
+
+</td>
+<td valign="top">
+
+Lists the developers who have recently joined the team, including their names and the dates they were added.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+New Applications
+
+</td>
+<td valign="top">
+
+Displays newly created applications.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Browsers
+
+</td>
+<td valign="top">
+
+Displays the most used web browsers for API calls.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Agents
+
+</td>
+<td valign="top">
+
+Displays the most used agents for API calls.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Operating Systems
+
+</td>
+<td valign="top">
+
+Displays the most used operating systems, highlighting the top operating systems based on usage statistics.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Device Types
+
+</td>
+<td valign="top">
+
+Displays the most used device types, highlighting the top devices based on usage frequency.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Browser Call Count
+
+</td>
+<td valign="top">
+
+Displays the number of calls made using different web browsers.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Agent Call Count
+
+</td>
+<td valign="top">
+
+Displays the total number of calls handled by each agent.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Operating Systems Call Count
+
+</td>
+<td valign="top">
+
+Displays the number of calls made per operating system, categorized by the operating system type.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Device Types Call Count
+
+</td>
+<td valign="top">
+
+Displays the call count for various device types, highlighting the most frequently used devices.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request Verb Call Count
+
+</td>
+<td valign="top">
+
+Displays the count of API calls categorized by request verb \(e.g., GET, POST, PUT, DELETE\).
+
+</td>
+</tr>
+</table>
 
 > ### Note:  
 > In any of the key API metrics, if you observe an entity in the chart marked as `Unidentified`, it indicates the following:
@@ -197,7 +677,7 @@ Click <span class="SAP-icons-V5"></span> <span class="SAP-icons-V5"></span
 
 Click <span class="SAP-icons-V5"></span> to switch between full screen view and default screen view.
 
-Click <span class="SAP-icons-V5"></span> to select a different chart type. You can select between pie charts, line charts, bar charts, donut charts, or heatmaps. Note that not all chart types might be supported for a specific report.
+Click <span class="SAP-icons-V5"></span> to select a different chart type. You can select from line charts, bar charts, column charts, pie charts, donut charts, stacked bar charts or heatmaps. Note that not all chart types might be supported for a specific report.
 
 Click <span class="SAP-icons-V5"></span> to switch between a tabular view and graphical view of a report.
 

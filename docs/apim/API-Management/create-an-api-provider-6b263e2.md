@@ -17,7 +17,7 @@ Define the details of the host you want an application to reach by creating an A
 -   For *Open Connectors* type provider, fetch the *Organization Secret*and *User Secret* from the Open Connectors page.
 
     > ### Note:  
-    > Open Connectors is now a part of SAP Integration Suite. To activate the capability, choose *Add Capabilities* and choose *Extend Non-SAP Connectivity* in the *Activate Capabilities* screen. For more information, see [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities?state=DRAFT&version=CLOUD) and [Configuring User Access](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-user-access?state=DRAFT&version=CLOUD&q=the%20Organization%20Secret%20and%20User%20Secret). Once the capability is activated, navigate back to the home page and choose the :pencil2: icon on the *Extend Non-SAP Connectivity* tile. On the *Integration Suite Open Connectors* page, choose the :gear: icon at the bottom left of the screen and note down the *Organization Secret*and *User Secret*.
+    > Open Connectors is now a part of . To activate the capability, choose *Add Capabilities* and choose *Extend Non-SAP Connectivity* in the *Activate Capabilities* screen. For more information, see [Activating and Managing Capabilities](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/activating-and-managing-capabilities?locale=en-US&state=PRODUCTION&version=CLOUD) and [Configuring User Access to SAP Integration Suite](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-user-access?version=CLOUD). Once the capability is activated, navigate back to the home page and choose the :pencil2: icon on the *Extend Non-SAP Connectivity* tile. On the *Integration Suite Open Connectors* page, choose the :gear: icon at the bottom left of the screen and note down the *Organization Secret*and *User Secret*.
     > 
     > You’re navigated to *Integration Suite* homepage. At first, you have to activate the Open Connectors capability.
 
@@ -51,7 +51,11 @@ If you want to configure the API Management solution to access data from a serve
 
 3.  Choose *Create*.
 
-4.  Enter a name and a description for the API provider.
+    ![](images/CreateImage1_3bf6c81.png)
+
+4.  Enter a name and a description for the API provider in the *Overview* section.
+
+    ![](images/OverviewImage2_9550dd7.png)
 
     > ### Note:  
     > Do not use the names mentioned in following list:
@@ -79,7 +83,11 @@ If you want to configure the API Management solution to access data from a serve
     -   Choose *Open Connectors* to connect third-party APIs via harmonized RESTful APIs.
     -   Choose *Cloud Integration* to access all the service endpoints.
 
+    ![](images/ConnectListImage3_06ef74d.png)
+
     -   *Internet* connection type:
+
+        ![](images/InternetImage4_354b74e.png)
 
         **Internet**
 
@@ -423,6 +431,8 @@ If you want to configure the API Management solution to access data from a serve
 
 6.  In the *CATALOG SERVICE SETTINGS* section, enter the required details.
 
+    ![](images/CatalogImage5_49e100b.png)
+
     **Catalog Service Settings**
 
 
@@ -497,9 +507,11 @@ If you want to configure the API Management solution to access data from a serve
     > ### Note:  
     > Catalog service settings aren’t applicable for Open Connectors type connection and SAP Cloud Integration.
 
-7.  Save the changes.
+7.  *Save* the changes.
 
-    Choose*Configure* \> *API Provider* to view the newly created API provider. Further, you can test the connection of the API provider, by navigating to the API provider's details page and selecting *Test Connection*.
+    Choose *Configure* \> *API Provider* to view the newly created API provider. Further, you can test the connection of the API provider, by navigating to the API provider's details page and selecting *Test Connection*.
+
+    ![](images/TestConnectionImage6_82dccf5.png)
 
     > ### Note:  
     > The following table lists the attributes considered for testing the connection:

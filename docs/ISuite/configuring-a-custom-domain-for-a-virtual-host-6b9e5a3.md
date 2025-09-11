@@ -24,9 +24,12 @@ The API Management capability enables you to personalize the virtual host URL by
 
 The advantage of establishing your own custom domain with a virtual host is that it protects you from future changes, such as those that may occur when rehosting your APIs.
 
-In addition, you have the option to secure your custom domain with a default one-way TLS or a mutual TLS. A one-way TLS validates only the secure identity of the API Proxy, providing encryption and authentication for the server. On the other hand, a mutual TLS validates the identities of both the API Proxy and the client, providing mutual authentication.
+In addition, you have the option to secure your custom domain with a default one-way TLS or a mutual TLS. A one-way TLS validates only the secure identity of the API proxy, providing encryption and authentication for the server. On the other hand, a mutual TLS validates the identities of both the API proxy and the client, providing mutual authentication.
 
-If you want to configure a mutual TLS, see [Configuring Mutual TLs for Virtual Host](configuring-mutual-tls-for-virtual-host-9faf7ce.md). This process enables you to establish a more secure connection between your API Proxy and the client, ensuring that both parties can trust each other's identities.
+If you want to configure a mutual TLS, see [Configuring Mutual TLS for Default Domain Virtual Host](configuring-mutual-tls-for-default-domain-virtual-host-9faf7ce.md). This process enables you to establish a more secure connection between your API proxy and the client, ensuring that both parties can trust each other's identities.
+
+> ### Note:  
+> You cannot use the SAP Custom Domain Manager described in this [document](https://help.sap.com/docs/custom-domain/custom-domain-service/configuring-custom-domains) to create or update custom domains for virtual hosts.
 
 To request a custom domain with one-way TLS, perform the following steps:
 
@@ -36,9 +39,20 @@ To request a custom domain with one-way TLS, perform the following steps:
 
 ## Procedure
 
-1.  Run the services using a standard REST console.
+1.  Run the service using a standard REST client or test console.
 
-2.  Service to create a new virtual host:
+    To create a new virtual host:
+
+    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+
+    2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
+
+    3.  Create a service key for the instance.
+
+    4.  From the service key, retrieve the base URL and append the following path to it:`/apiportal/operations/1.0/Configuration.svc/VirtualHostRequests`
+
+
+    You can now use this full URL along with the below details to invoke the service using a standard REST client. For detailed instructions on how to create a service instance and a service key, see [Accessing API Management APIs Programmatically](accessing-api-management-apis-programmatically-24a2c37.md).
 
     -   Service URL: https://<url-from-service-key\>/apiportal/operations/1.0/Configuration.svc/VirtualHostRequests
     -   Method: POST
@@ -75,8 +89,7 @@ To request a custom domain with one-way TLS, perform the following steps:
         > -   keyStoreAlias: The keyStoreAlias parameter refers to the name of the keystore certificate containing the custom domain's public and private key. To learn how to create a keystore certificate and upload certificates, see [Manage Certificates](50-Development/manage-certificates-c665875.md).
 
         > ### Note:  
-        > To enable client authentication \(mutual TLS\) while configuring the virtual host with custom domain, see [Configuring Mutual TLs for Virtual Host](configuring-mutual-tls-for-virtual-host-9faf7ce.md).
-
+        > To enable client authentication \(mutual TLS\) while configuring the virtual host with custom domain, see [Configuring Mutual TLS for Default Domain Virtual Host](configuring-mutual-tls-for-default-domain-virtual-host-9faf7ce.md).
 
     -   Response: 201
 
@@ -123,9 +136,20 @@ To request a custom domain with one-way TLS, perform the following steps:
         The "lbHost" field contains the host URL which is required for the custom domain DNS mapping.
 
 
-3.  Service to update a virtual host:
+2.  Service to update a virtual host:
 
-    You can update the virtualHostUrl, keyStoreName, keyStoreAlias, trustStore, and the isDefaultVirtualHostRequest flag
+    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+
+    2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
+
+    3.  Create a service key for the instance.
+
+    4.  From the service key, retrieve the base URL and append the following path to it:`/apiportal/operations/1.0/Configuration.svc/VirtualHostRequests`
+
+
+    You can now use this full URL along with the below details to invoke the service using a standard REST client. For detailed instructions on how to create a service instance and a service key, see [Accessing API Management APIs Programmatically](accessing-api-management-apis-programmatically-24a2c37.md).
+
+    You can update the virtualHostUrl, keyStoreName, keyStoreAlias, trustStore, and the isDefaultVirtualHostRequest flag.
 
     -   Service URL: https://<url-from-service-key\>/apiportal/operations/1.0/Configuration.svc/VirtualHostRequests
     -   Method: POST
@@ -165,7 +189,7 @@ To request a custom domain with one-way TLS, perform the following steps:
         > -   virtualHostId: This is the unique ID of the virtual host you are trying to update.
 
         > ### Note:  
-        > To enable client authentication \(mutual TLS\) while configuring the virtual host with custom domain, see [Configuring Mutual TLs for Virtual Host](configuring-mutual-tls-for-virtual-host-9faf7ce.md).
+        > To enable client authentication \(mutual TLS\) while configuring the virtual host with custom domain, see [Configuring Mutual TLS for Default Domain Virtual Host](configuring-mutual-tls-for-default-domain-virtual-host-9faf7ce.md).
 
 
     -   Response: 201
@@ -223,7 +247,9 @@ To request a custom domain with one-way TLS, perform the following steps:
 
 [Configuring a Default Domain for a Virtual Host](configuring-a-default-domain-for-a-virtual-host-1085228.md "After successful onboarding, API proxies are assigned a default virtual host URL. Currently, this URL uses the domain &quot;ondemand.com,&quot; which is the common domain for the Business Technology Platform. It’s prefixed with the subdomain consisting of the subaccount name and the data center where the SAP Integration Suite tenant is onboarded. For example, the default host alias could be https://myaccount....eu10.hana.ondemand.com.")
 
-[Configuring Mutual TLs for Virtual Host](configuring-mutual-tls-for-virtual-host-9faf7ce.md "You can configure mutual TLs for a virtual host, which validates the identities of both the web server and the web client.")
+[Configuring Mutual TLS for Default Domain Virtual Host](configuring-mutual-tls-for-default-domain-virtual-host-9faf7ce.md "You can configure mutual TLS (mTLS) for default domain virtual host, which validates the identities of both the web server and the web client.")
+
+[Configuring Mutual TLS for Custom Domain Virtual Host](configuring-mutual-tls-for-custom-domain-virtual-host-2453233.md "You can configure mutual TLS (mTLS) for a custom domain virtual host, which validates the identities of both the web server and the web client.")
 
 [Configuring Additional Virtual Host in Cloud Foundry Environment](configuring-additional-virtual-host-in-cloud-foundry-environment-a7b91e5.md "A virtual host allows you to host multiple domain names on the API Management capability within SAP Integration Suite.")
 

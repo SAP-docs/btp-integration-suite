@@ -402,7 +402,7 @@ Evaluation Request
 </td>
 <td valign="top">
 
-Download of Excel
+Export full evaluation results to spreadsheet
 
 </td>
 <td valign="top">
@@ -429,7 +429,7 @@ Evaluation Request
 </td>
 <td valign="top">
 
-Download of PDF
+Generate evaluation summary report as PDF
 
 </td>
 <td valign="top">

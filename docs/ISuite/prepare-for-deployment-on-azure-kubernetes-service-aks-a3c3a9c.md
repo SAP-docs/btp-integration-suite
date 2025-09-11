@@ -105,5 +105,17 @@ Install the Kubernetes command-line tool `kubectl`.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Install the Istio command-line tool `istioctl` \(recommended\).
+
+</td>
+<td valign="top">
+
+[Install Istioctl](https://istio.io/latest/docs/ops/diagnostic-tools/istioctl/)
+
+</td>
+</tr>
 </table>
 

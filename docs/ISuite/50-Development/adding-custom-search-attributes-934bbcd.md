@@ -4,7 +4,7 @@
 
 # Adding Custom Search Attributes
 
-Add Custom Search Attributes to your agreement.
+Add custom search attributes to your agreement.
 
 
 
@@ -12,13 +12,13 @@ Add Custom Search Attributes to your agreement.
 
 ## Prerequisites
 
-You have defined custom search attributes in the *Configuration Manager* tab. See [Configuration Manager](configuration-manager-7daf06c.md).
+You've defined custom search attributes in the *Configuration Manager* tab. See [Configuration Manager](configuration-manager-7daf06c.md).
 
 
 
 ## Context
 
-Custom search attributes allow you to search for interchanges based on the user-defined filters in the **Monitor** section. To add custom search attributes to the transaction, perform the steps below:
+Custom search attributes allow you to search for interchanges based on the user-defined filters in the **Monitor** section. To add custom search attributes to the transaction, perform the following steps:
 
 
 
@@ -67,7 +67,7 @@ Custom search attributes allow you to search for interchanges based on the user-
     </td>
     <td valign="top">
     
-    Select whether your source is of type *Parameter* or *XPath*.
+    Select whether your source is of type *Header*, *Parameter* or *XPath*.
     
     </td>
     </tr>
@@ -79,7 +79,13 @@ Custom search attributes allow you to search for interchanges based on the user-
     </td>
     <td valign="top">
     
-    Enter the source value for the name. If you chose *Source Type* as *Parameter*, you need to enter the parameter here. If you chose *XPath*, then you need to enter the xpath of the source value.
+    Enter the source value for the name, depending on your choice for *Source Type*:
+
+    -   *Header*: Enter the camel header.
+    -   *Parameter*: Enter the parameter.
+    -   *XPath*: Enter the XPath of the source value.
+
+
     
     </td>
     </tr>
@@ -92,6 +98,8 @@ Custom search attributes allow you to search for interchanges based on the user-
     <td valign="top">
     
     Select whether you want the data source in *Sender Interchange* or *Receiver Interchange*.
+
+    If you *Header* as your source type, this field is disabled.
     
     </td>
     </tr>
@@ -112,7 +120,7 @@ Custom search attributes allow you to search for interchanges based on the user-
 3.  Choose *Save*.
 
     > ### Note:  
-    > You can view these custom search attributes in B2B Monitor tab once the agreement is activated. To know more, see [Update Agreements](update-agreements-b5e1fc9.md).
+    > Once the agreement is activated, you can view these custom search attributes in the B2B Monitor tab. For more information, see [Update Agreements](update-agreements-b5e1fc9.md).
 
 
 
@@ -121,11 +129,14 @@ Custom search attributes allow you to search for interchanges based on the user-
 
 ## Results
 
-With this, you have now successfully created a trading partner agreement and you can view the agreement details under the *Agreements* tab. You can also view the administrative information under the tab. To enable those fields, choose *Settings* :gear: icon and select the following fields and choose *OK*:
+You've now successfully created a trading partner agreement and you can view the agreement details under the *Agreements* tab. You can also view the administrative information there. To enable those fields, choose :gear:, select the following fields, and choose *OK*:
 
 -   Created By
 
 -   Created Date
+
 -   Last Modified By
+
 -   Modified Date
+
 

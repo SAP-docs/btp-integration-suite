@@ -117,7 +117,7 @@ Use this service in tenant-aware applications.
 
 ## Getting Started
 
-You can provision the API Management capability from theSAP Integration Suite launchpad. For the detailed steps, see [Activating and Configuring API Management Capability](activating-and-configuring-api-management-capability-f6eb433.md).
+You can provision the API Management capability from theSAP Integration Suite launchpad. For the detailed steps, see [Activate and Configure the API Management Capability and Access Developer Hub](activate-and-configure-the-api-management-capability-and-access-developer-hub-f6eb433.md).
 
 **Related Information**  
 

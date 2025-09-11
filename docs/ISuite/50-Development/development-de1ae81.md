@@ -264,7 +264,7 @@ Set up API Management and test Developer Hub connections.
 </td>
 <td valign="top">
 
-[Setting Up API Management Capability](setting-up-api-management-capability-f34e86c.md)
+[Setting Up API Management](setting-up-api-management-f34e86c.md)
 
 </td>
 </tr>

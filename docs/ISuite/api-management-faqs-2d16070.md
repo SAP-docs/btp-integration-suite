@@ -325,5 +325,5 @@ API Management offers many out-of-the-box API security best practices which can 
 
 [Limits in API Management](limits-in-api-management-f70f425.md "This topic describes the product configuration and the naming conventions for API Management.")
 
-[Monitor the Health of Custom Domain Virtual Host Certificates Using SAP Cloud ALM](monitor-the-health-of-custom-domain-virtual-host-certificates-using-sap-cloud-alm-7bd9d9f.md "You can use SAP Cloud Application Lifecycle Management (ALM) application to proactively detect issues and monitor the health of custom domain virtual host certificates in API Management.")
+[Monitor the Health of Certificates Using SAP Cloud ALM](monitor-the-health-of-certificates-using-sap-cloud-alm-7bd9d9f.md "You can use SAP Cloud Application Lifecycle Management (ALM) application to proactively detect issues and monitor the health of certificates in API Management.")
 

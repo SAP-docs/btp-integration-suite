@@ -2,7 +2,7 @@
 
 # Create a Product
 
-Explains how to create products to publish a bundle of API proxies together.
+Create products to publish a bundle of API proxies together.
 
 You create a product when you want to expose one or more API proxies to the Application Developer.
 
@@ -217,6 +217,22 @@ You create a product when you want to expose one or more API proxies to the Appl
 
         > ### Note:  
         > When you’re selectively publishing the resources of an API proxy associated with a product, please make sure that the API resources shouldn’t contain any special characters. For example, you can use “/Employee” and not “/Employee\('\{test\}'\)” as it contains special characters.
+
+        > ### Note:  
+        > When you selectively add a resource to a product—such as /BookingCollection—resources with parameterized paths that directly extend from it are automatically included.
+        > 
+        > For example:
+        > 
+        > -   Resource1:`/BookingCollection`
+        > -   Resource2:`/BookingCollection(carrid='{carrid}', connid='{connid}', fldate=datetimeoffset'{fldate}', bookid='{bookid}')`
+        > 
+        >     In this case, when you add Resource1, Resource2 is automatically selected as it shares the same base path.
+        > 
+        > 
+        > However, deeper nested paths such as Resource3 and Resource4 shown below are not selected automatically and must be added manually.
+        > 
+        > -   Resource3:`/BookingCollection(carrid='{carrid}', connid='{connid}', fldate=datetimeoffset'{fldate}', bookid='{bookid}')/bookedFlight`
+        > -   Resource4: `/BookingCollection(carrid='{carrid}', connid='{connid}', fldate=datetimeoffset'{fldate}', bookid='{bookid}')/bookedCarrier`
 
 
 16. If you want to delete a product, select the required product from the catalog and choose *Delete*. if it is being used in an application.

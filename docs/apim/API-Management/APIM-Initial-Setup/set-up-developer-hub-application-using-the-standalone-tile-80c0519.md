@@ -14,7 +14,7 @@ To discover, consume and monitor API from a centralized API catalog, set up the 
 
 -   You already have a subaccount and have enable the Cloud Foundry environment in this subaccount.
 
--   An *API Management, API Business Hub Enterprise* entitlement has been created for your subaccount.
+-   An *API Management, Developer Hub* entitlement has been created for your subaccount.
 
 -   You have already set up and configured API portal. For instructions, see [Setting Up API Portal Application Using API Management Standalone Tile](setting-up-api-portal-application-using-api-management-standalone-tile-9d8c7ae.md).
 
@@ -25,7 +25,7 @@ To discover, consume and monitor API from a centralized API catalog, set up the 
 
 ## Context
 
-Depending upon the license you hold, you can use the *API Management, API Business Hub Enterprise* stand-alone tile to subscribe to the application.
+Depending upon the license you hold, you can use the *API Management, Developer Hub* stand-alone tile to subscribe to the application.
 
 > ### Note:  
 > Ensure that you don’t have an instance of a starter plan created in the same subaccount where you plan to create an Developer Hub subscription. Also, note that the API Management capabilities from Integration Suite and API Management subscriptions using the stand-alone tile can’t coexist in the same subaccount.
@@ -40,7 +40,7 @@ Depending upon the license you hold, you can use the *API Management, API Busine
 
 2.  Navigate to *Services* \> *Instances and Subscriptions*, and choose *Create*.
 
-3.  On the *New Instances and Subscriptions* dialog, choose *API Management, API Business Hub Enterprise* as the *Service*, select the *Plan* from the dropdown list, and choose *Create*.
+3.  On the *New Instances and Subscriptions* dialog, choose *API Management, Developer Hub* as the *Service*, select the *Plan* from the dropdown list, and choose *Create*.
 
     Wait for the subscription to complete successfully.
 
@@ -58,9 +58,9 @@ Depending upon the license you hold, you can use the *API Management, API Busine
     3.  In the resulting dialog box, select the *AuthGroup.SelfService.Admin* role and choose *Assign Role Collection*.
 
 
-5.  Navigate back to the *Instances and Subscriptions* page, choose *API Management, API Business Hub Enterprise*, select <span class="SAP-icons-V5"></span> Actions , and choose *Go To Application*.
+5.  Navigate back to the *Instances and Subscriptions* page, choose *API Management, Developer Hub*, select <span class="SAP-icons-V5"></span> Actions , and choose *Go To Application*.
 
-    You’re navigated to the *API Business Hub Enterprise*.
+    You’re navigated to the *Developer Hub*.
 
 6.  Log on to the Developer Hub application with your IDP user credentials. To register to the Developer Hub as an Application developer, see [Registering on Developer Hub](../registering-on-developer-hub-c85fafe.md).
 

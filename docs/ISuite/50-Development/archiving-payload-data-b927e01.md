@@ -23,7 +23,25 @@ The feature *Archive Sender/Receiver Payload Data* allows you to archive your in
 -   The archiving feature is supported by the generic integration flow from version 2.3.0 and above.
 -   Once the interchange arhive is completed, the monitor backend database will store the data for 90 days post which the data will be deleted automatically. To monitor the archiving status, see [Update Agreements](update-agreements-b5e1fc9.md)
 
-.
+
+
+<a name="loiob927e0182df04208ace0f15c66073317__section_vst_t1l_bgc"/>
+
+## CMIS Repository for B2B Archiving
+
+By default, B2B archiving uses the **same CMIS repository and destination as MPL archiving** to store payload archives. This means that if you choose to use the same repository, no additional destination configuration is required.
+
+If you'd prefer to use a **separate CMIS repository for B2B archiving**, you must create a dedicated destination in Cloud Integration, with the following specifications:
+
+-   *Destination Name*: `CloudIntegration_B2BArchive`
+-   *Repository ID*: Use a different repository ID from the one you use for MPL archiving
+
+If this dedicated destination is not configured, B2B archiving continues using the MPL archiving destination by default.
+
+For detailed setup instructions, see [Configuring Destination](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-destination). Note that the following differences apply for B2B archiving:
+
+-   Set the *Destination Name* to `CloudIntegration_B2BArchive`.
+-   Use a *Repository ID* that points to your dedicated B2B archiving repository.
 
 
 

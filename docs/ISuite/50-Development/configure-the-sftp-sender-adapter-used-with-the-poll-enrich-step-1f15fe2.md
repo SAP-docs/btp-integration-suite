@@ -11,7 +11,7 @@ The SFTP sender adapter connects an SAP Integration Suite tenant to a remote sys
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -34,21 +34,6 @@ If you have configured a **sender** SFTP adapter, message processing is performe
 **SFTP Sender Adapter: Tenant reads files from SFTP server**
 
 ![](images/SFTP_Sender_Adapter_-_Tenat_reads_from_server_2081741.png "SFTP Sender Adapter: Tenant reads files from SFTP server")
-
-
-
-### 
-
-> ### Note:  
-> This adapter does **not** support connections to FTP servers.
-> 
-> See: [FTP Adapter](ftp-adapter-4464f89.md).
-
-As a prerequisite to use this adapter, you need to set up a connection to an SFTP server as described under: [Setting Up Inbound SFTP Connections \(Details\)](../40-RemoteSystems/setting-up-inbound-sftp-connections-details-e72eba4.md).
-
-[Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
-
-Once you have created a sender channel and selected the SFTP sender adapter, you can configure the following attributes.
 
 **General**
 
@@ -115,6 +100,22 @@ You can configure this parameter by entering a dynamic expression such like `${p
 <tr>
 <td valign="top">
 
+*Regex Filtering*
+
+\(Supported for adapter version 1.8 and above\)
+
+</td>
+<td valign="top">
+
+Select to evaluate the entered filename as a real [regular expression](configure-the-sftp-sender-adapter-used-with-the-poll-enrich-step-1f15fe2.md#loio1f15fe2e8ccc4c078f099ee609f65185__regex).
+
+Else, the file name will be evaluated as a [simple expression](configure-the-sftp-sender-adapter-used-with-the-poll-enrich-step-1f15fe2.md#loio1f15fe2e8ccc4c078f099ee609f65185__simple).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *File Name* 
 
 </td>
@@ -139,6 +140,13 @@ Name of the file to be read. If you do not enter a file name and the parameter r
 > -   If you specify `file*.txt` as the *File Name*, the following files are polled by the adapter: `file1.txt`, `file2.txt`, as well as `file.txt` and `file1234.txt`, and so on.
 > 
 > -   If you specify `file?.txt` as the *File Name*, the following files are polled by the adapter: `file1.txt`, `file2.txt`, and so on, but **not** the files `file.txt` or `file1234.txt`.
+
+> ### Note:  
+> For regular expressions:
+> 
+> -   Ensure that too complex regex patterns are not entered. A default value of 5 seconds is set for evaluation of regex expression.
+> -   Regex pattern must be valid; invalid patterns may lead to unexpected results or errors.
+> -   In the JSch library, the characters `?` and `*` and `%` are used as wild card symbols for pattern matching. File names containing these characters are treated as wild cards, which means they might not be processed as literal file names. Hence, avoid using ? and \* and % in file names.
 
 > ### Caution:  
 > Files with file names longer than 100 characters are processed as follows:

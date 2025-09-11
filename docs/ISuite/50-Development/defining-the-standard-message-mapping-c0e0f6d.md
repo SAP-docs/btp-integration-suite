@@ -134,7 +134,7 @@ To upload the WSDL files, perform the following steps:
 
     The namespace mapped to the prefix `p2` relates to the final merged message.
 
-4.  In the integration flow editor, click somewhere outside the *Integration Process* shape and select *Resources*.
+4.  In the integration flow editor, click somewhere outside the *Integration Process* shape and select *References*.
 
 5.  Choose *Add* \> *Schema* \> *WSDL* and browse to the `A.wsdl` file.
 
@@ -145,19 +145,27 @@ To upload the WSDL files, perform the following steps:
 
 Now you can define the mapping step.
 
-1.  In the integration flow model, select the *Message Mapping* shape from the palette \(under *Mapping*\) and place it in the model after the second Content Modifier.
+1.  In the integration flow model, select the *Message Mapping* shape from the palette \(under *Mapping*\) and place it in the model after the Content Modifier.
 
-    ![](images/Custom_Extensions_Mapping_1_de78129.png)![](images/Custom_Extensions_Mapping_2_1cd0db8.png)
+    ![](images/Custom_Extensions_Mapping_1_de78129.png)![](images/Create_Icon_selection_649669c.png)
 
-2.  Choose the *\+* icon next to the message mapping shape and enter a name for the message mapping \(for example, `standardmapping`\).
+    > ### Note:  
+    > To add message mapping shape in an alternate method, choose *Connector line* \> *Add flow step* \> *Mapping* \> *Message mapping*.
+
+2.  Choose *Create* icon next to the message mapping shape.
+
+3.  Enter a name \(for example, `standardmapping`\) and choose *Create* to submit the message mapping name.
 
     ![](images/Custom_Extensions_Mapping_3_99ebf07.png)
 
-3.  Choose *Create*.
-
 4.  The graphical mapping editor is opened.
 
-5.  Choose *Add source message* and browse to the WSDL file of the source message \(in our example, the file `A.wsdl`\). Choose *Upload from file system*.
+5.  Choose *Add source message* and browse to the WSDL file of the source message \(in our example, the file `A.wsdl`\).
+
+    > ### Note:  
+    > You can also choose *Upload from file system* and browse a different WSDL file.
+    > 
+    > The WSDL file uploaded from here will not be saved in the *References*.
 
     ![](images/Custom_Extensions_Mapping_4_ee38ace.png)
 

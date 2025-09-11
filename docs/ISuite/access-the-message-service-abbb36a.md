@@ -8,7 +8,7 @@ Learn how to access the Message Service.
 
 ## Context
 
-The message service provides a *Service Manager* UI. To use the Service Manager, follow these steps.
+The Message Service provides a *Service Manager* UI. To use the Service Manager, follow these steps.
 
 
 

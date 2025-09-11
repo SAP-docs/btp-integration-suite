@@ -79,6 +79,745 @@ Patches for different components are associated with different major software ve
 
 
 
+<a name="loio023a4725bb734f86be8a5625abe54110__section_epj_r1i_3fa"/>
+
+## August 2025
+
+Software Increment: 2506
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.32.10
+
+</td>
+<td valign="top">
+
+This patch provides MPL enhancements for sporadic token fetch errors.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.32.11
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with artifact deployments timeouts and incorrect status displayed on the monitoring page, due to a race condition caused by frequent deployments of Number Range Objects. Artifacts now show the correct status, and deployments complete successfully in the latest software version.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.68.24
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with artifact deployments timeouts and incorrect status displayed on the monitoring page, due to a race condition caused by frequent deployments of Number Range Objects. Artifacts now show the correct status, and deployments complete successfully in the latest software version.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.32.10
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   During concurrent message processing, following the startup of workers—often triggered by a system restart or software update—a surge of simultaneous token requests is sent to the XSUAA server. This sudden burst can exceed the server’s rate limit of 60 requests per second. As a result, the message flow may fail.
+
+-   When splitter is used as part of exception subprocess.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.68.22
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   This patch makes the job scheduler initialization asynchronous. This change reduces the startup time of the it-design-service and minimizes potential crashes.
+
+-   During concurrent message processing, following the startup of workers—often triggered by a system restart or software update—a surge of simultaneous token requests is sent to the XSUAA server. This sudden burst can exceed the server’s rate limit of 60 requests per second. As a result, the message flow may fail.
+
+-   When splitter is used as part of exception subprocess.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+2.2.4
+
+</td>
+<td valign="top">
+
+This patch resolves the issue about MIG Migration deleting segments which follow qualified nodes.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.32.9
+
+</td>
+<td valign="top">
+
+This patch fixes issues with proxy handling.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.68.16
+
+</td>
+<td valign="top">
+
+This patch enhances the check for Trading Partner Management enablement to avoid issues during dedicated database creation.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.68.15
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Adds improvements to the Zip Splitter, ensuring better stability and efficiency across multiple tenants and data centers.
+
+-   Enables dynamic log level adjustment through a new MBean \(LogLevelManager\). If unavailable, the system now falls back to the default Logback JMXConfigurator MBean.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Trading Partner Management
+
+</td>
+<td valign="top">
+
+6.68.15
+
+</td>
+<td valign="top">
+
+This patch resolves the indexing issue with agreements having only one transaction.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.32.7
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Adds improvements to the Zip Splitter, ensuring better stability and efficiency across multiple tenants and data centers.
+
+-   Enables dynamic log level adjustment through a new MBean \(LogLevelManager\). If unavailable, the system now falls back to the default Logback JMXConfigurator MBean.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_emj_r1i_3fa"/>
+
+## August 2025
+
+Software Increment: 2505
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.67.36
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Improvements to the Zip Splitter, ensuring better stability and efficiency across multiple tenants and data centers.
+-   Optimizes memory usage during design time with the latest version of the Saxon library \(12x\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.31.18
+
+</td>
+<td valign="top">
+
+This patch ensures optimized memory usage during design time with the latest version of the Saxon library \(12x\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.31.18
+
+</td>
+<td valign="top">
+
+The patch introduces retry and backoff mechanism to prevent occurrence of sporadic errors from XSUAA while fetching tokens.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.31.17
+
+</td>
+<td valign="top">
+
+This patch fixes issues with proxy handling.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_c3k_mqb_1gc"/>
+
+## July 2025
+
+Software Increment: 2505
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.67.34
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   JDBC adapter has been updated to a stable version with enhanced logging to help identify problematic JDBC URLs.
+-   Supports the message mappings that contain recursive nodes within duplicate nodes, ensuring they are correctly generated in the mapping output..
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.31.17
+
+</td>
+<td valign="top">
+
+With this patch, the JDBC component has been updated to a stable version with enhanced logging to help identify problematic JDBC URLs.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.67.33
+
+</td>
+<td valign="top">
+
+This patch improves logic for rendering nodes in message mapping that were created using a combination of recursive and duplicate operations. This improved logic makes the nodes accessible ensuring resolution.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.31.14
+
+</td>
+<td valign="top">
+
+This patch enhances the Edge Deploy Controller log.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.31.16
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Fixes to the liquibase script execution avoiding app crashes during startup.
+-   Enabled stream download for Poll Enrich to support large file processing with SFTP sender.
+-   Support for upcoming HTTP feature updates.
+-   Enhanced support for on-premise connections enabled within the starter edition runtime profile.
+-   Resolved `StackOverflowError` by integrating Camel patch \(CAMEL-22147\) for transactions split that could cause deep stack frames.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.67.32
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Fixes to the liquibase script execution avoiding app crashes during startup.
+-   Enhanced logging capabilities to track when credentials are retrieved after a recent software update.
+-   Enabling of the G1 Garbage Collector \(G1GC\).
+-   Support for upcoming HTTP feature updates.
+-   Enhanced support for on-premise connections enabled within the starter edition runtime profile.
+-   Resolved `StackOverflowError` by integrating Camel patch \(CAMEL-22147\) for transactions split that could cause deep stack frames.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_emj_r1k_3fa"/>
+
+## July 2025
+
+Software Increment: 2504
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.30.17
+
+</td>
+<td valign="top">
+
+This patch fixes a bug in Camel that receives the file size as integer instead of long. Files with sizes greater than 2.3 GB aren't processed properly, and the application throws an out of memory exception.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.66.47
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Customers of a specific tenant might see or modify Security Artifacts or view Data Store/JMS entries belonging to another customer's tenant. This issue can occur when there is a high load on the Key Management microservice or the Runtime API.
+-   A bug in Camel that receives the file size as integer instead of long. Files with sizes greater than 2.3 GB aren't processed properly, and the application throws an out of memory exception..
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_i2v_s5f_qfc"/>
+
+## June 2025
+
+Software Increment: 2504
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.30.15
+
+</td>
+<td valign="top">
+
+This patch fixes the permission issues with sapgenpse that prevented SNC enablement.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.66.44
+
+</td>
+<td valign="top">
+
+This patch fixes issues with Role Check modifications in the Script Collection Deploy scenario.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.30.16
+
+</td>
+<td valign="top">
+
+This patch adds an additional logs to facilitate detailed analysis of customer incidents.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.30.14
+
+</td>
+<td valign="top">
+
+This patch fixes the permission issues with sapgenpse that prevented SNC enablement.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.30.13
+
+</td>
+<td valign="top">
+
+This patch fixes theissue with ID field size in the endpoint poll info table within the EDC database.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.66.41
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Compatibility issues with main XSDs that reference types from external XSDs within mappings.
+-   Incorporates an additional logs to facilitate detailed analysis of customer incidents.
+-   Mitigates CVE-2025-49146 by deploying an updated version of the PostgreSQL library
+-   Regeneration failures during artifact deployment by resolving a database insert error.
+-   Migration mapping that have names exceeding 60 characters.
+-   Security enhancements.
+-   Validation for the undeployment activity in the OData DELETE API.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.66.37
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Memory usage issue in `it-co`.
+-   Regeneration failures during artifact deployment by resolving a database insert error.
+-   Validation for the undeployment activity in the OData DELETE API.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio023a4725bb734f86be8a5625abe54110__section_emj_r1k_3fc"/>
 
 ## May 2025
@@ -105,6 +844,49 @@ Software Version
 Description
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.29.18
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with the Kafka Sender Adapter, restoring full functionality to the "Retry Failed Messages" feature.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.65.40
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Memory usage issue in `it-co`.
+-   Management of suspended tenants, ensuring effective xsuaa key rotation within the configuration service.
+-   Kafka Sender Adapter where the "Retry Failed Messages" functionality is not working.
+-   Enabling tenant-specific configuration service for xsuaa key rotation.
+-   Security enhancements.
+-   Retention of archival settings in integration flow monitoring during a Camel upgrade.
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -165,6 +947,40 @@ This patch fixes the following items:
 -   Kafka sender adapter where the "Retry Failed Messages" functionality is not working.
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.29.11
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with the Kafka Sender Adapter, restoring full functionality to the "Retry Failed Messages" feature.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.29.8
+
+</td>
+<td valign="top">
+
+This patch fixes the issue of diagnostics - file handle.
 
 </td>
 </tr>
@@ -336,6 +1152,23 @@ Cloud Integration
 <td valign="top">
 
 8.28.9
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with the Kafka Sender Adapter, restoring full functionality to the "Retry Failed Messages" feature.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.28.6
 
 </td>
 <td valign="top">

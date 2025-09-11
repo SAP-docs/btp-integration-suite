@@ -375,7 +375,7 @@ message.queryparam.\{queryparam\_name\}.values.count
 </td>
 <td valign="top">
 
-The total count of a specified query parameter associated with the request sent to the ProxyEndpoint from the client app
+The total count of a specified query parameter associated with the request sent to the ProxyEndpoint from the client app.
 
 </td>
 <td valign="top">
@@ -898,7 +898,7 @@ request.header.\{header\_name\}.values
 </td>
 <td valign="top">
 
-All the values of a particular header in the request
+All the values of a particular header in the request.
 
 </td>
 <td valign="top">
@@ -1149,7 +1149,7 @@ request.transportid
 </td>
 <td valign="top">
 
-ID of the request as type TransportMessage which is a contextual object
+ID of the request as type TransportMessage which is a contextual object.
 
 </td>
 <td valign="top">
@@ -1176,7 +1176,7 @@ request.transport.message
 </td>
 <td valign="top">
 
-Request of type TransportMessage which is a contextual object
+Request of type TransportMessage which is a contextual object.
 
 </td>
 <td valign="top">
@@ -1511,7 +1511,7 @@ target.basepath
 </td>
 <td valign="top">
 
-Returns basepath of TargetEndpoint
+Returns basepath of TargetEndpoint.
 
 </td>
 <td valign="top">
@@ -1646,7 +1646,7 @@ target.name
 </td>
 <td valign="top">
 
-Target to which message is reaching from targetendpoint
+Target to which message is reaching from TargetEndpoint.
 
 </td>
 <td valign="top">
@@ -1785,7 +1785,7 @@ target.ssl.enabled
 </td>
 <td valign="top">
 
-Whether TargetEndpoint is running on TLS/SSL
+Whether TargetEndpoint is running on TLS/SSL.
 
 </td>
 <td valign="top">
@@ -1839,7 +1839,7 @@ variable.expectedcn
 </td>
 <td valign="top">
 
-Variable exposed for the common name if it's running on TLS/SSL
+Variable exposed for the common name if it's running on TLS/SSL.
 
 </td>
 <td valign="top">
@@ -1861,12 +1861,12 @@ Read/Write
 <tr>
 <td valign="top">
 
-virtualhost.aliases
+virtualhost.aliases.values
 
 </td>
 <td valign="top">
 
-Host aliases of the virtual host that is hit during a particular request
+Host aliases of the virtual host that is hit during a particular request.
 
 </td>
 <td valign="top">
@@ -1893,7 +1893,7 @@ virtualhost.name
 </td>
 <td valign="top">
 
-Name of the virtual host that serves the originating client request
+Name of the virtual host that serves the originating client request.
 
 </td>
 <td valign="top">
@@ -1920,7 +1920,7 @@ virtualhost.ssl.enabled
 </td>
 <td valign="top">
 
-Returns true if TLS/SSL is enabled in the virtual host configuration
+Returns "true" if TLS/SSL is enabled in the virtual host configuration.
 
 </td>
 <td valign="top">

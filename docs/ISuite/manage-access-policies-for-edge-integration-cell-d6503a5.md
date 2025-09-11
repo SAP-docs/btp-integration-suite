@@ -43,6 +43,8 @@ You can use the *Runtime* dropdown to view a list of all available policies in y
     > ### Note:  
     > When creating the associated custom role in your subaccount, make sure that you specify the same string under Values. For more information, see [Creating Custom Roles for Access Policies](50-Development/creating-custom-roles-for-access-policies-7db3c87.md).
 
+    ![](images/Create_Access_Policies_81b8c97.png)
+
 4.  Select the runtimes where you want to create the new access policy.
 
 5.  Choose *Create* to confirm the creation of the new access policy. The new policy is automatically added to the list.
@@ -70,7 +72,7 @@ You can use the *Runtime* dropdown to view a list of all available policies in y
 
 1.  To specify the protection of your artifacts, select the newly created access policy from the *Access Policies* list.
 
-2.  In the *References* table that opens, choose *Create*.
+2.  In the *References* table that opens, choose *Create*.![](images/Artifact_reference_8e5370d.gif)
 
 3.  Configure the following parameters:
 
@@ -159,7 +161,7 @@ You can use the *Runtime* dropdown to view a list of all available policies in y
     <tr>
     <td valign="top">
     
-    Operator
+    *Operator*
     
     </td>
     <td valign="top">
@@ -227,6 +229,8 @@ You can use the *Runtime* dropdown to view a list of all available policies in y
 You can replicate access policies across runtimes, allowing them to coexist in multiple runtimes simultaneously.
 
 To replicate policies, follow these steps:
+
+![](images/Access_Policies_GIF_70544d2.gif)
 
 
 

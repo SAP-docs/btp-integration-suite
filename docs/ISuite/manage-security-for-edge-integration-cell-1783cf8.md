@@ -43,7 +43,10 @@ Runtime-specific View
 
 -   You can see all the security-related artifacts for all runtimes.
 
--   You can create, edit, upload, and undeploy security artifacts. During creation or updating, you can assign security artifacts to specific runtimes \(including Cloud Integration\), in the corresponding dialog boxes.
+-   You can **create** new security artifacts. During creation, you can assign security artifacts to specific runtimes, including Cloud Integration, in the corresponding dialog boxes.
+-   Upload *Known Hosts \(SSH\)* files from your local file system.
+-   You can **edit** existing artifacts. The **Edit** dialog lets you reassign security artifacts to specific runtimes, redeploy the artifact, and upload a *Known Hosts \(SSH\)*file to overwrite the current file. The updated artifact is then used for all assigned runtimes simultaneously.
+-   You can **undeploy** security artifacts.
 
     > ### Caution:  
     > If you undeploy a security-related artifact in the *All* view, it's undeployed from all the runtimes, with all related data.
@@ -56,13 +59,13 @@ The number displayed in the *Runtime* column indicates the different runtimes th
 
 -   You can see all security-related artifacts deployed on the selected runtime.
 
--   You can add a security-related artifact to the specific runtime, or remove it.
+-   You can **add** a security-related artifact to the specific runtime, or remove it.
 
 -   You can see the deployment status of the security-related artifacts.
 
 
 > ### Note:  
-> If a security-related artifact is deployed on one runtime only, you can't remove it from the runtime using the *Runtime-specific* view. You've to switch to the *All* view, to undeploy the artifact.
+> If a security-related artifact is deployed on one runtime only, you can't remove it from the runtime using the *Runtime-specific* view. You've to switch to the *All* view to undeploy the artifact.
 
 
 

@@ -10,7 +10,7 @@ You can design the following integration artifact types with the Cloud Integrati
 
 -   Value mapping
 
-    Maps two ways of representing the same object with each other. You use value mappings when you need to exchange messages between two systems that represent the same object in different ways \(see [Configuring Value Mappings](configuring-value-mappings-6c8847f.md)\).
+    Maps two ways of representing the same object with each other. You use value mappings when you need to exchange messages between two systems that represent the same object in different ways \(see [Editing Value Mapping](editing-value-mapping-6c8847f.md)\).
 
 -   SOAP API
 

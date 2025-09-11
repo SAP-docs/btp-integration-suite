@@ -18,9 +18,15 @@ You require the role collection `DataspaceBusinessAdmin`. See [Personas and Role
 
 ## Context
 
-Use company policies to define the regulations for requesting and accepting an offer. For example, you can exclude offers with references to unknown contracts or usage purposes.
+Use company policies to define the regulations for requesting and accepting an offer for the consumer applications. For example, you can exclude offers with references to unknown contracts or usage purposes.
 
-Some company policies are **predelivered by SAP**, as signified in the *Created By* column. You cannot edit or delete company policies created by SAP, but you can copy them and edit the copy. Users with the role collection `DataspaceTechnicalAdmin` can also assign company policies created by SAP.
+Some company policies are **predelivered by SAP**, as signified in the *Created By* column. You can't edit or delete company policies created by SAP, but you can copy them and edit the copy.
+
+Some providers offer data **without a usage policy**. If your user is only assigned to company policies that contain at least one constraint, these offers won't be visible to them. If you want to see such offers without policies, your user must be assigned to an **empty company policy**. Simply create a company policy without defining any rules and assign it to the relevant clients and users.
+
+Check out the following video to learn how to work with company policies:
+
+
 
 
 
@@ -31,9 +37,8 @@ Some company policies are **predelivered by SAP**, as signified in the *Created 
 -   **Create a Company Policy**
 
     1.  In *Configure* \> *Data Spaces*, choose *Create*.
-
     2.  Enter a name and description.
-    3.  Add rules to define your company policy. All rules you want to apply to one offer must belong to one company policy. You cannot split the constraints of an offer over multiple company policies.
+    3.  Add rules to define your company policy. All rules you want to apply to one offer must belong to one company policy. You can't split the constraints of an offer over multiple company policies.
 
         For more information, see the **example** section at the bottom of this page.
 
@@ -145,9 +150,9 @@ Some company policies are **predelivered by SAP**, as signified in the *Created 
         </tr>
         </table>
         
-    4.  Some rules are more important than others. If a rule must absolutely appear in the usage policy of the provider, enable the switch in the column *Required*. If a required rule is not fulfilled by the provider offer, that is, the rule isn't defined in their usage policy, you cannot accept their offer. For example, if you set a rule with a specific usage purpose to *required*, the company policy restricts you to only accept offers with that usage purpose in their usage policy.
+    4.  Some rules are more important than others. If a rule must absolutely appear in the usage policy of the provider, enable the switch in the column *Required*. If a required rule isn't fulfilled by the provider offer, that is, the rule isn't defined in their usage policy, you can't accept their offer. For example, if you set a rule with a specific usage purpose to *required*, the company policy restricts you to only accept offers with that usage purpose in their usage policy.
 
-        All other rules are considered **optional**: Optional rules are a collection of constraints that may appear in an offer, but don't have to. This means that if they don't appear in the offer, then the offer can still be consumed, provided that the remaining offer usage policy constraints are listed in the company policy. If the offer contains anything that is not listed as a company policy rule, the offer is not consumable.
+        All other rules are considered **optional**: Optional rules are a collection of constraints that may appear in an offer, but don't have to. This means that if they don't appear in the offer, then the offer can still be consumed, provided that the remaining offer usage policy constraints are listed in the company policy. If the offer contains anything that isn't listed as a company policy rule, the offer isn't consumable.
 
     5.  Optionally, if you also have the role collection `DataspaceTechnicalAdmin`, you can also add assignees. See also [Assign Company Policies](assign-company-policies-b4c9e0b.md).
 
@@ -234,7 +239,7 @@ is
 </td>
 <td valign="top">
 
-DataExchangeGovernance:1.0
+`DataExchangeGovernance:1.0`
 
 </td>
 <td valign="top">
@@ -256,7 +261,7 @@ is
 </td>
 <td valign="top">
 
-contract123
+`contract123`
 
 </td>
 <td valign="top">
@@ -278,7 +283,7 @@ is
 </td>
 <td valign="top">
 
-contract456
+`contract456`
 
 </td>
 <td valign="top">
@@ -300,7 +305,7 @@ is
 </td>
 <td valign="top">
 
-cx.base.pcf:1
+`cx.base.pcf:1`
 
 </td>
 <td valign="top">
@@ -322,7 +327,7 @@ is
 </td>
 <td valign="top">
 
-cx.notifications.push:1
+`cx.notifications.push:1`
 
 </td>
 <td valign="top">
@@ -337,7 +342,7 @@ This company policy defines the following rules for an acceptable offer:
 
 -   it **must** contain the framework agreement `DataExchangeGovernance:1.0`
 -   it **can** contain the contract references `contract123` or `contract456`, and the usage purposes `cx.base.pcf:1` or `cx.notifications.push:1`
--   it **must not** contain anything else that is not listed in the company policy
+-   it **must not** contain anything else that isn't listed in the company policy
 
 There are three **offers** available, one by company B, company C, and company D each.
 
@@ -554,7 +559,7 @@ is
 
 If you check the offer rules of companies B, C, and D against the company policy of company A, you notice the following:
 
--   **Company B**'s offer fulfills the required rule, but it contains a usage purpose, **hacker.evil**, that is not contained in company A's usage policy.
+-   **Company B**'s offer fulfills the required rule, but it contains a usage purpose, **hacker.evil**, that isn't contained in company A's usage policy.
 
     This means that the offer by company B **cannot be accepted** by company A.
 

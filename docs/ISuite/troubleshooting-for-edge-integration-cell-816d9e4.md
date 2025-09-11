@@ -62,7 +62,7 @@ BC-CP-IS-EDG-SMN
 
 Backing Services
 
-The component covers OEM Software such as Solace, Postgres, and Redis.
+The component covers OEM Software such as Message Service, Postgres, and Redis.
 
 </td>
 <td valign="top">

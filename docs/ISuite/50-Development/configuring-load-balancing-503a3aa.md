@@ -18,6 +18,9 @@ You can configure load-balancing functionality for an API proxy from the API Man
 
 4.  Choose the slide button to enable the *Load-Balancing* functionality.
 
+    > ### Note:  
+    > This does not apply to API providers of the On-Premise type.
+
 5.  Select additional API providers from the *API Provider* dropdown menu.
 
     The *FallBack Server* field appears once the additional API providers are selected.

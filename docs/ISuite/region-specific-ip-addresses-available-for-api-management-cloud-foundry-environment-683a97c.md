@@ -359,6 +359,43 @@ China North 3
 <tr>
 <td valign="top">
 
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+ca20
+
+</td>
+<td valign="top">
+
+Canada Central
+
+</td>
+<td valign="top">
+
+cf-ca20
+
+</td>
+<td valign="top">
+
+Canada Central
+
+</td>
+<td valign="top">
+
+52.228.78.217, 20.63.12.130
+
+</td>
+<td valign="top">
+
+52.139.30.96, 4.206.77.227
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Amazon Web Services
 
 </td>
@@ -643,12 +680,12 @@ eu-central-1
 </td>
 <td valign="top">
 
-3.65.99.47, 3.127.192.196, 3.64.16.82
+3.65.99.47, 3.127.192.196, 3.64.16.82, 3.120.95.51, 3.125.168.108, 63.177.7.155
 
 </td>
 <td valign="top">
 
-18.156.85.8, 3.65.144.116, 3.121.107.212
+18.156.85.8, 3.65.144.116, 3.121.107.212, 63.177.188.199, 3.121.92.162, 3.124.112.53
 
 </td>
 </tr>
@@ -1019,6 +1056,43 @@ me-central2
 <td valign="top">
 
 34.166.154.51, 34.166.88.99, 34.166.28.71, 34.166.124.42, 34.166.21.81, 34.166.53.136
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
+ap30
+
+</td>
+<td valign="top">
+
+Australia \(Sydney\)
+
+</td>
+<td valign="top">
+
+cf-ap30
+
+</td>
+<td valign="top">
+
+australia-southeast1
+
+</td>
+<td valign="top">
+
+34.87.211.65, 34.116.121.107
+
+</td>
+<td valign="top">
+
+34.87.238.13, 34.151.87.48, 34.87.248.147, 34.116.100.136, 34.116.127.74, 34.40.130.125
 
 </td>
 </tr>

@@ -27,7 +27,7 @@ Principal propagation is a process that provides a secure way of forwarding the 
 
 ## Context
 
-A principal forwarded to the API Proxy is validated with the IDP connected to the user's subaccount on Cloud Foundry where is enabled. To obtain an OAuth token, which is validated, the user has to create credentials using on-premise-connectivity plan in the Cloud Foundry environment.
+A principal forwarded to the API proxy is validated with the IDP connected to the user's subaccount on Cloud Foundry where is enabled. To obtain an OAuth token, which is validated, the user has to create credentials using on-premise-connectivity plan in the Cloud Foundry environment.
 
 
 

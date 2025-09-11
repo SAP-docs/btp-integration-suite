@@ -15,6 +15,6 @@ To complete the initial setup and activate Data Space Integration, perform the f
 4.  [Preparing Cloud Integration](preparing-cloud-integration-07f81f2.md)
 
 5.  [Creating Technical Users in Landscape Portal](creating-technical-users-in-landscape-portal-b95f0ef.md)
-6.  [Configuring Connector Setup Using the UI \(Recommended Approach\)](configuring-connector-setup-using-the-ui-recommended-approach-4909d3f.md) or [Configuring Connector Setup Using the API \(Alternative Approach\)](configuring-connector-setup-using-the-api-alternative-approach-bfa408c.md)
+6.  [Configuring Connector Setup Using the UI](configuring-connector-setup-using-the-ui-4909d3f.md)
 
 

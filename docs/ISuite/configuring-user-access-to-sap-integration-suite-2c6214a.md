@@ -19,6 +19,8 @@ The *Integration\_Provisioner* role:
 -   Gives you initial access to the SAP Integration Suite.
 -   Lets you add and manage capabilities. See [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md)
 
+You can assign this role by following steps 1-5 described in the [Procedure](configuring-user-access-to-sap-integration-suite-2c6214a.md#loio2c6214a3228e4b4cba207f49fda92ed4__section_xbf_glz_l2c) and choosing the role *Integration\_Provisioner*.
+
 
 
 <a name="loio2c6214a3228e4b4cba207f49fda92ed4__section_vcs_wvn_m2c"/>
@@ -41,7 +43,7 @@ For more information on role collections, see [Roles and Role Collections](https
     If the user details already exist in the subaccount, you can skip step 2 and 3 and continue from step 4.
 
 3.  Enter the *User Name* and *E-Mail*, and choose *Create*.
-4.  Choose the user and under *Role Collections* section select <span class="SAP-icons-V5"></span> Additional Options Additional Options and choose *Assign Role Collection*.
+4.  Choose the user and under *Role Collections* section select <span class="SAP-icons-V5"></span> Additional Options and choose *Assign Role Collection*.
 5.  In the resulting dialog box, select the checkbox of the role collection that you want to assign to the user and choose *Assign Role Collection*.
 
 Expand the following sections to learn about the role collections available for that capability of SAP Integration Suite.
@@ -74,7 +76,7 @@ Tasks
 </td>
 <td valign="top">
 
-Refer to [Read-Only Persona](https://help.sap.com/docs/integration-suite/sap-integration-suite/persona-2937e5ca6ef448cfb21451a2461cc2a6?q=persona&state=DRAFT&version=DEV) for the tasks.
+Refer to [Read-Only Persona](60-Security/personas-for-cloud-integration-2937e5c.md#loio2937e5ca6ef448cfb21451a2461cc2a6__read) for the tasks.
 
 </td>
 </tr>
@@ -86,7 +88,7 @@ Refer to [Read-Only Persona](https://help.sap.com/docs/integration-suite/sap-int
 </td>
 <td valign="top">
 
-Refer to [Business Expert Persona](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fhelp.sap.com%2Fdocs%2Fintegration-suite%2Fsap-integration-suite%2Fpersona-2937e5ca6ef448cfb21451a2461cc2a6%3Flocale%3Den-US%26q%3Dpersona%26state%3DDRAFT%26version%3DDEV) for the tasks.
+Refer to [Business Expert Persona](60-Security/personas-for-cloud-integration-2937e5c.md#loio2937e5ca6ef448cfb21451a2461cc2a6__business) for the tasks.
 
 </td>
 </tr>
@@ -98,7 +100,7 @@ Refer to [Business Expert Persona](https://help.sap.com/docs/link-disclaimer?sit
 </td>
 <td valign="top">
 
-Refer to [Integration Developer Persona](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fhelp.sap.com%2Fdocs%2Fintegration-suite%2Fsap-integration-suite%2Fpersona-2937e5ca6ef448cfb21451a2461cc2a6%3Flocale%3Den-US%26q%3Dpersona%26state%3DDRAFT%26version%3DDEV) for the tasks.
+Refer to [Integration Developer Persona](60-Security/personas-for-cloud-integration-2937e5c.md#loio2937e5ca6ef448cfb21451a2461cc2a6__int_dev) for the tasks.
 
 </td>
 </tr>
@@ -110,7 +112,7 @@ Refer to [Integration Developer Persona](https://help.sap.com/docs/link-disclaim
 </td>
 <td valign="top">
 
-Refer to [Tenant Administrator Persona](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fhelp.sap.com%2Fdocs%2Fintegration-suite%2Fsap-integration-suite%2Fpersona-2937e5ca6ef448cfb21451a2461cc2a6%3Flocale%3Den-US%26q%3Dpersona%26state%3DDRAFT%26version%3DDEV) for the tasks.
+Refer to [Tenant Administrator Persona](60-Security/personas-for-cloud-integration-2937e5c.md#loio2937e5ca6ef448cfb21451a2461cc2a6__ten_admin) for the tasks.
 
 </td>
 </tr>
@@ -143,9 +145,9 @@ Task
 <td valign="top">
 
 -   Complete the onboarding process
--   Access the *API Settings* page. See [Setting Up API Management Capability](50-Development/setting-up-api-management-capability-f34e86c.md) 
+-   Access the *API Settings* page. See [Setting Up API Management](50-Development/setting-up-api-management-f34e86c.md) 
 
-For more information on relevant roles, see [Assign User Roles in API Management](https://help.sap.com/viewer/de4066bb3f9240e3bfbcd5614e18c2f9/Cloud/en-US/911ca5a620e94ab581fa159d76b3b108.html "Use role collections to group together different roles that can be assigned to API Portal and API business hub enterprise users.") :arrow_upper_right:.
+For more information on relevant roles, see [Role Collections in API Management](role-collections-in-api-management-7010b58.md).
 
 For end-to end instructions on how to set up and configure API Management, refer the tutorial [Set Up API Management from Integration Suite | Tutorials for SAP Developers](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html).
 
@@ -160,7 +162,7 @@ Role Collection for Developer Hub: *AuthGroup.SelfService.Admin*
 <td valign="top">
 
 -   Onboard to Developer Hub.
--   Gain access to Developer Hub. See [Setting Up API Management Capability](50-Development/setting-up-api-management-capability-f34e86c.md)
+-   Gain access to Developer Hub. See [Setting Up API Management](50-Development/setting-up-api-management-f34e86c.md)
 
 
 
@@ -252,7 +254,7 @@ Task
 
 -   Do *EventMeshDeveloper* tasks.
 
--   Manage event mesh lifecycle
+-   Manage event mesh life cycle
 
 
 
@@ -789,9 +791,6 @@ PIMAS\_Admin
 <td valign="top">
 
 -   Read and maintain system data, rule data, and effort data.
-
-> ### Note:  
-> The role collection PIMAS\_Admin is superordinate to all other role collections available for Migration Assessment.
 
 
 

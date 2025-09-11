@@ -50,9 +50,7 @@ You can create an integration flow in different ways:
 
 ## Prerequisites
 
-For the Generative AI tool to create integration flows, you must first enable connectivity between your system landscape in the SAP BTP cockpit and SAP Integration Suite. By doing so, your registered SAP applications can expose APIs and events to SAP Integration Suite, which in turn, the Generative AI tool use to create integrations. For more information on how to achieve this, see Enabling System Landscape for SAP Integration Suite.
-
-The Generative AI tool can create integration flows without the system landscape in place too. But in such cases, the tool creates an integration flow with HTTP adapters on the sender and receiver sides. You must still manually enter most of the parameters that would otherwise be automatically populated by the Generative AI tool.
+You have activated the AI feature, Generation of Integrations for your SAP Integration Suite tenant. See [Artificial Intelligence](artificial-intelligence-6a6727c.md)
 
 
 
@@ -60,7 +58,7 @@ The Generative AI tool can create integration flows without the system landscape
 
 ## Context
 
-SAP Integration Suite, specifically the Cloud Integration capability, provides a feature to create integration flows using Generative AI. After you activate the feature, an integration developer has a choice to generate integrations with the assistance from AI. The integration developer must describe the integration scenario when asked. Based on the descriptions and inputs, the Generative AI tool creates an integration flow.
+SAP Integration Suite, specifically the Cloud Integration capability, provides a feature to create integration flows using Generative AI. After you activate the feature, an integration developer has a choice to generate integrations with the assistance from AI. The integration developer must describe the integration scenario when asked. Based on the descriptions and inputs, the Generative AI tool creates an integration flow. To use this feature, see the blog on [SAP Integration Suite – Generative AI based Integration Flow Generation with Mediation Steps](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-integration-suite-generative-ai-based-integration-flow-generation-with/ba-p/14196606)
 
 > ### Caution:  
 > SAP does not take any responsibility for quality of the content in the input to or output of the underlying generative AI models, including but not limited to, bias, hallucinations, or inaccuracies. The user is responsible for verifying the content.
@@ -76,7 +74,7 @@ SAP Integration Suite, specifically the Cloud Integration capability, provides a
 
 1.  In the *Add Integration Flow* dialog, choose the method *Generate Integrations with assistance from AI*.
 
-2.  Describe your integration scenario for which you want to generate an integration flow.
+2.  Describe your integration scenario \(in English language\) for which you want to generate an integration flow.
 
 3.  Choose <span class="SAP-icons-V5"></span> \(Send\).
 
@@ -105,11 +103,18 @@ SAP Integration Suite, specifically the Cloud Integration capability, provides a
 
 An integration flow with the following shapes is created:
 
+> ### Note:  
+> -   When multiple adapters are identified, Generative AI may not always map the selected source system to the corresponding adapter. As a result, configurations may not be automatically filled.
+> -   If you have enabled the connectivity between your system landscape in the SAP BTP cockpit and SAP Integration Suite, your registered SAP applications can expose APIs and events to SAP Integration Suite, which Generative AI tool uses to create integrations.
+
 -   *Sender*: Represents your source system auto-filled with the details of the same in the adapter channel.
 
 -   *Receiver*: Represents your target system auto-filled with the details of the same in the adapter channel.
 
--   *Integration Process*: The shape where you add all the steps that define how a message is processed in the tenant.
+-   *Integration Process*: The shape with all the intermediary steps as mentioned in the integration scenario descritpion are added. These steps would define how a message is processed in the tenant.
+
+    > ### Remember:  
+    > These flow steps are not yet configured. You must manually configure according to the requirement.
 
 
 <a name="task_ik5_5wl_wbc"/>

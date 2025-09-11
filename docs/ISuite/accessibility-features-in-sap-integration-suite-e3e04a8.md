@@ -33,19 +33,19 @@ SAP Cloud Integration
 </td>
 <td valign="top">
 
-[Accessibility Features in Cloud Integration](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/c7be6b629e4c482c9302895dfae3e9ba.html?version=Cloud)
+[Accessibility Features in Cloud Integration](accessibility-features-in-cloud-integration-c7be6b6.md)
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-SAP Integration Advisor
+Integration Advisor
 
 </td>
 <td valign="top">
 
-[Accessibility Features in SAP Integration Advisor](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/2b33756e84fc43879405a5e3efe4e520.html?version=Cloud)
+[Accessibility Features in Integration Advisor](accessibility-features-in-integration-advisor-2b33756.md)
 
 </td>
 </tr>

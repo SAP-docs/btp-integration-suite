@@ -6,6 +6,9 @@ This policy enables you to collect statistics for data in a message, such as pro
 
 The data comes from flow variables predefined by API Management or custom variables that you define. The statistics data is passed to the analytics server, which analyzes the statistics and generates reports. This can be viewed by creating custom charts.
 
+> ### Note:  
+> To use the Statistics Collector policy, you must create custom dimensions and measures. For more information, see [Create Custom Dimensions and Measures](create-custom-dimensions-and-measures-ba211be.md).
+
 Only one Statistics Collector policy should be attached to a single API proxy. If there are multiple Statistics Collector policies in a proxy, then the last one to execute determines the data written to the analytics server. You can attach the policy in one of the following locations:
 
 ![](images/Flow_policy_116062b.png)

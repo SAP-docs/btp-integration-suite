@@ -7,7 +7,7 @@ The IP filter policy allows or denies calls from specific IP addresses or addres
 This policy is used to selectively allow or deny access for an IP address or group of IP addresses. Use this policy when you want to limit access to APIs to only a specific IP address or group of IP addresses. For example, if you only want systems \(computers, mobile, etc\) under the control of your enterprise to access the APIs exposed in your test environment, you can allow \(allowlist\) the IP address range for your internal network. Developers working from home can access these APIs using VPN.
 
 > ### Note:  
-> For the IP filter policy to work correctly, the *Client IP Preservation* feature needs to be enabled on the Edge Lifecycle Management. For more information, see [Deploy the Edge Integration Cell Solution](../deploy-the-edge-integration-cell-solution-ab81b84.md).
+> For the IP filter policy to work correctly, the *Client IP Preservation* feature needs to be enabled on the Edge Lifecycle Management. For more information, see [Deploy the Edge Integration Cell Solution](../deploy-the-edge-integration-cell-solution-ab81b84.md). Please note that this property is part of a dependent Istion solution.Therefore, if this property is updated a subsequent modification of the Edge Integration Cell solution needs to be triggered. For more information, see [Modify Edge Integration Cell Solution Deployment Properties](../modify-edge-integration-cell-solution-deployment-properties-6a060ff.md).
 
 See the following video for visual instructions on how to add and configure the IP filter policy:
 
@@ -144,7 +144,7 @@ Name
 </td>
 <td valign="top">
 
-The internal name of the policy. The value of the name attribute can contain letters, numbers, spaces, hyphens, underscores, and periods. This value cannot exceed 255 characters.
+The unique name of the policy within the API artifact. Each policy in an API artifact must have a unique name to prevent naming conflicts.
 
 </td>
 </tr>
@@ -268,7 +268,7 @@ Set of supported headers -
 **Related Information**  
 
 
-[Quota](quota-2aecf15.md "The Quota policy defines the number of request messages an application can submit to an API endpoint over a given period of time.")
+[Quota](quota-2aecf15.md "The Quota policy defines the number of requests an application can submit to an API endpoint over a given period of time.")
 
 [Surge Protection](surge-protection-3d14745.md "The surge protection policy is designed to protect against traffic surges by controlling the rate at which requests are processed by an API during runtime. This policy acts as a safeguard, reducing the likelihood of downtime and performance issues.")
 

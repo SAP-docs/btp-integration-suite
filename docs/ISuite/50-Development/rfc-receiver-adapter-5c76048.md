@@ -12,7 +12,7 @@ RFC executes the function call using synchronous communication, which means that
 
 -   Define the required RFC destination for your application.
 
-    To create destinations you need to either have administrator or developer role in SAP BTP cockpit. For more information on how to create RFC destinations, see [Creating an RFC Destination](creating-an-rfc-destination-3b55fa7.md).
+    To create destinations you need to either have administrator or developer role in SAP BTP cockpit. For more information on how to create RFC destinations, see [Creating and Modifying RFC Destination](creating-and-modifying-rfc-destination-3b55fa7.md).
 
     The RFC destination configuration settings are used by the SAP JAVA Connector \(SAP JCo\) to establish and manage the connection with on-premise and S/4 HANA cloud system available in public internet. While you configure a destination make sure to select internet as the proxy type to establish connection with an application over the internet.
 
@@ -34,7 +34,7 @@ RFC executes the function call using synchronous communication, which means that
 
 **Prerequisites for using adapter on Edge Integration Cell runtime**
 
--   Create a new RFC destination with Proxy Type Local in BTP Destinations environment. For more information, see [Creating an RFC Destination](creating-an-rfc-destination-3b55fa7.md)
+-   Create a new RFC destination with Proxy Type Local in BTP Destinations environment. For more information, see [Creating and Modifying RFC Destination](creating-and-modifying-rfc-destination-3b55fa7.md)
 -   Set up SNC on Edge Integration Cell for productive use of the RFC Adapter. For more information, see [Set Up SNC on Edge Integration Cell](../60-Security/set-up-snc-on-edge-integration-cell-c2315d3.md)
 
 > ### Remember:  
@@ -168,5 +168,5 @@ If you enable this option, the adapter creates a new RFC connection in the backe
 
 [Generating XSD/WSDL for Function Modules Using ESR \(Process Integration\)](generating-xsd-wsdl-for-function-modules-using-esr-process-integration-57a6b6e.md "Generate an XSD/WSDL file for a function module using the Enterprise Services Repository (ESR).")
 
-[Creating an RFC Destination](creating-an-rfc-destination-3b55fa7.md "Create an RFC destination by adding necessary properties before using it in the integration flow of RFC adapter.")
+[Creating and Modifying RFC Destination](creating-and-modifying-rfc-destination-3b55fa7.md "Create an RFC destination by adding necessary properties before using it in the integration flow of RFC adapter.")
 

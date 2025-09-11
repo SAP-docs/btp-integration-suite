@@ -201,7 +201,7 @@ Integration Advisor
 
 Benefit from message detail proposals for MIGs and mapping entity proposals for MAGs.
 
-Upon deactivation of this service, MIG and MG proposals will not be accessible to the tenant, although this will only impact future data collection, leaving previously collected data unaffected.
+Upon deactivation of this service, MIG and MAG proposals will not be accessible to the tenant, and data won’t be collected from this tenant anymore \(although this will only impact future data collection, leaving previously collected data unaffected\).
 
 </td>
 <td valign="top">

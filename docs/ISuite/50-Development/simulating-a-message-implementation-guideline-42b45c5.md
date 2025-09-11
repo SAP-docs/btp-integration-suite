@@ -8,14 +8,14 @@ This chapter shows you how to simulate a message implementation guideline.
 
 1.  Open your message implementation guideline and navigate to the *Structure* tab.
 
-2.  Choose *Simulate* to perform en embedded simulation. There are two different ways to simulate the MIG:
+2.  Choose *Simulate* to perform an embedded simulation. There are two different ways to simulate the MIG:
 
-    1.  *Simulate with MIG Example Data*: This simulates the message implementation guideline with the existing sample MIG data.
+    1.  *Simulate with MIG Example Data*: Simulates the message implementation guideline with the existing sample MIG data.
 
-    2.  *Simulate with Payload Data...*: This prompts you to upload a sample payload file \(XML or EDI Flat file\) for the MIG simulation.
+    2.  *Simulate with Payload Data...*: Prompts you to upload a sample payload file \(XML or EDI Flat file\) for the MIG simulation.
 
         > ### Note:  
-        > The EDI flat file is supported only for EDI based type systems such as ASC X12, Odette, TRADACOMS, and UN/EDIFACT and its subsets.
+        > The EDI flat file is supported onEDI-based type systems such as ASC X12, Odette, TRADACOMS, and UN/EDIFACT and its subsets.
 
 
     You can also re-run the simulation based on the option you chose using the <span class="SAP-icons-V5"></span> button that appears above the MIG structure after simulation.
@@ -67,9 +67,9 @@ The data corresponding to each leaf node is fetched in the following order:
 
     If there is neither an example value nor a fixed value for a particular leaf node, the simulation then considers the data from the code values assigned to a leaf node. To know more about creating and assigning a code list to a leaf node, see [Codelists](codelists-a7a84b0.md).
 
-    If there are any selected code values, only those values will be fetched.
+    If there are any selected code values, only those values are fetched.
 
-    If no code values are selected, then all the code values will be used.
+    If no code values are selected, then all the code values are used.
 
     Similar to example values, each value from the code value list in the given order gets assigned to a particular occurrence of a leaf node. When the last value in the list is reached, then the first value is fetched again for the next occurrence.
 
@@ -87,7 +87,7 @@ Choosing this option allows you to browse and upload a payload data from your lo
 The payload data should be uploaded in the XML or a flat file \(EDI text files such as EDIFACT and X12\) format. The payload you are trying to import might contain additional nodes, or nodes that are not defined in the MIG. These nodes will not be considered during simulation and their details are displayed in a dialog box after importing the payload data. Choose *OK*.
 
 > ### Note:  
-> -   The payload file should not have any qualifiers added to it. MIG simulation will convert your payload file automatically into the ICA format including those qualifiers.
+> -   The payload file should not have any qualifiers added to it. MIG simulation converts your payload file automatically into the ICA format including those qualifiers.
 
 
 

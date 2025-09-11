@@ -13,7 +13,7 @@ Enables SAP Integration Suite to consume messages from queues in SAP Event Mesh.
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > Queues, topics, and messages can only be monitored by using tools provided by the message broker provider. Those monitors are not integrated into SAP Integration Suite . Using SAP Integration Suite , you can only monitor the integration flows using the AMQP adapter and the messages that are sent to or consumed from the message broker.
@@ -356,7 +356,7 @@ Don't select *MODIFIED\_FAILED\_UNDELIVERABLE*.
 > ### Note:  
 > See this [general information on AMQP](http://docs.oasis-open.org/amqp/core/v1.0/amqp-core-complete-v1.0.pdf) on delivery statuses and their meaning.
 > 
-> You can use the following headers to configure a delay in retry processing: `JMSRedelivered` and `JMSXDeliveryCount`. For more information, see the SAP Community blog [Cloud Integration – Connecting to Messaging Systems using the AMQP Adapter](https://community.sap.com/t5/technology-blogs-by-sap/cloud-integration-connecting-to-messaging-systems-using-the-amqp-adapter/ba-p/13419906).
+> You can use the `JMSRedelivered` header to configure a delay in retry processing. For more information, see the SAP Community blog [Cloud Integration – Connecting to Messaging Systems using the AMQP Adapter](https://community.sap.com/t5/technology-blogs-by-sap/cloud-integration-connecting-to-messaging-systems-using-the-amqp-adapter/ba-p/13419906).
 > 
 > This blog also contains an overview of the recommended settings for different message brokers.
 

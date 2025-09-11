@@ -12,12 +12,12 @@ When you edit an API proxy either on the or using the API designer, ensure that 
 
 Consider the following examples:
 
--   If you just save and not deploy the change you've made to the Target Endpoint of an API proxy, and then try to debug the API proxy and use the trace capability in runtime to trace the API call, the call points to the old Target Endpoint. Only when you save and then explicitly deploy the changes, the API call points to the new Target Endpoint.
+-   If you just save and not deploy the change you've made to the target endpoint of an API proxy, and then try to debug the API proxy and use the trace capability in runtime to trace the API call, the call points to the old target endpoint. Only when you save and then explicitly deploy the changes, the API call points to the new target endpoint.
 
     > ### Note:  
     > Saving the changes puts the API proxy in the local intermediate save state, only deploying it publishes the changes in runtime.
 
--   Similarly, if you attach new Policies or add new Resources to an API proxy, ensure that you save the changes and then explicitly deploy the proxy for the latest changes to reflect during API Proxy execution in the runtime.
+-   Similarly, if you attach new Policies or add new Resources to an API proxy, ensure that you save the changes and then explicitly deploy the proxy for the latest changes to reflect during API proxy execution in the runtime.
 
 -   If an API proxy \(that is already part of a published Product and is being consumed via an Application\) is changed and those changes are saved and not deployed, then the application runtime doesn't reflect the saved changes.
 
@@ -95,7 +95,7 @@ Consider the following examples:
     </td>
     <td valign="top">
     
-    You can choose URL, API Provider, or API proxy, as the target endpoint as well as enter target endpoint rules.
+    You can choose URL, API provider, or API proxy, as the target endpoint as well as enter target endpoint rules.
 
     To define multiple-target endpoints, choose *Add* next to the *Target EndPoint* dropdown menu.
 
@@ -140,7 +140,7 @@ Consider the following examples:
     > > 
     > > ```
     > 
-    > Here, the <apiProxyName\> refers to the name of the API Proxy, and \`default\` is the name of the Target Endpoint. The <instancesecret\> is the secret key associated with the Open Connector instance that you wish to establish a connection with.
+    > Here, the <apiProxyName\> refers to the name of the API proxy, and \`default\` is the name of the target endpoint. The <instancesecret\> is the secret key associated with the Open Connector instance that you wish to establish a connection with.
 
 
     

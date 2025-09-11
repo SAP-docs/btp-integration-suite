@@ -38,3 +38,10 @@ This topic describes the behavior of the Tenant Cloning Tool with respect to clo
 > ### Note:  
 > Non-SNI clients are not supported in Cloud Foundry.
 
+> ### Note:  
+> As part of SAP’s ongoing commitment to enhanced cloud security, the root Certificate Authority \(CA\) used for HTTPS communication in SAP API Management \(both design-time and runtime\) is being updated to DigiCert TLS RSA4096 Root G5.
+> 
+> This change may affect your integration scenarios if your client systems do not trust the new root certificate. To avoid SSL-related connection errors, please ensure that the DigiCert TLS RSA4096 Root G5 certificate is imported into your client systems’ trust stores before August 1, 2025.
+> 
+> You can download the certificate [here](https://cacerts.digicert.com/DigiCertTLSRSA4096RootG5.crt).
+

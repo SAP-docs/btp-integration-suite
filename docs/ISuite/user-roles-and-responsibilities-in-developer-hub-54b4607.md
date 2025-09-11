@@ -68,7 +68,7 @@ Access to different features on Developer Hub depends on the service plan you've
     </td>
     <td valign="top">
     
-    [Creating an Application with Developer Hub Administrator Role](50-Development/creating-an-application-with-developer-hub-administrator-role-df4f777.md) 
+    [Creating a Subscription with Developer Hub Administrator Role](50-Development/creating-a-subscription-with-developer-hub-administrator-role-df4f777.md) 
     
     </td>
     </tr>
@@ -92,7 +92,7 @@ Access to different features on Developer Hub depends on the service plan you've
     </td>
     <td valign="top">
     
-    [Manage Developer Access](50-Development/manage-developer-access-9df3ece.md) 
+    [Manage Access](50-Development/manage-access-9df3ece.md) 
     
     </td>
     </tr>
@@ -260,7 +260,7 @@ Access to different features on Developer Hub depends on the service plan you've
     </td>
     <td valign="top">
     
-    [Creating an Application with Application Developer Role](50-Development/creating-an-application-with-application-developer-role-99515fc.md) 
+    [Creating a Subscription for Application with Application Developer Role](50-Development/creating-a-subscription-for-application-with-application-developer-role-99515fc.md) 
     
     </td>
     </tr>

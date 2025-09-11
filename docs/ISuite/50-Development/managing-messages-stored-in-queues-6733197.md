@@ -140,7 +140,7 @@ Number of retries of the message.
 </td>
 <td valign="top">
 
-Date when next retry is scheduled.
+Date when the next retry is scheduled.
 
 </td>
 </tr>
@@ -158,7 +158,7 @@ Date until which the message is retained. Once this date is reached, the message
 </tr>
 </table>
 
-You can perform the following actions for a selected message:
+You can perform the following actions for the messages you select:
 
 
 <table>
@@ -173,6 +173,26 @@ Action
 Description
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+*Move* 
+
+</td>
+<td valign="top">
+
+Move up to 100 selected messages to any Exclusive or Non-Exclusive queue.
+
+> ### Note:  
+> When you select more than 100 messages, only the first 100 messages are moved.
+
+> ### Note:  
+> The message order won't be maintained when moving messages from an Exclusive queue.
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">

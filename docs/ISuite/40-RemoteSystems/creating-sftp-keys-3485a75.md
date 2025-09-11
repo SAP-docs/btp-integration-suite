@@ -25,7 +25,7 @@ This section covers all steps to generate the required security artifacts for a 
     > ### Note:  
     > The recommended Key Size is 4096 bit.
 
-5.  Press *Deploy* to create the SSH key pair.
+5.  Choose *Create* to add the SSH key pair to the keystore.
 
 
 

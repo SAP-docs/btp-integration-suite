@@ -29,15 +29,11 @@ After making your selection, the dashboard displays the most critical resources 
 
     For more information, see [Status Information](status-information-732f300.md).
 
--   *Solace Monitor*: Monitor Solace Message Broker metrics, track resource utilization, and access information about message VPNs, queues, and clients.
+-   *Message Service Monitor*: Monitor Message Service metrics, track resource utilization, and access information about message VPNs, queues, and clients.
 
-    For more information, see [Solace Monitor](solace-monitor-26a7894.md).
+    For more information, see [Message Service Monitor](message-service-monitor-26a7894.md).
 
--   *Quick Links*: Navigate directly to *Runtime Parameters* and *Diagnostics*.
-
-    -   *Runtime Parameters*: Get information about the runtime parameters of specific Edge Integration Cell components. You can also enter this screen via *Component Monitoring*.
-
-        For more information, see [Runtime Parameters](runtime-parameters-63c5276.md).
+-   *Quick Links*: Navigate directly to *Diagnostics*.
 
     -   *Diagnostics*: Run diagnostic tasks and get the necessary information for troubleshooting your Edge Integration Cell.
 

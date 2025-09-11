@@ -6,6 +6,96 @@ This topic provides information on patch releases for API Management that are pr
 
 
 
+<a name="loio6ddd927cbeaa42e384dc903e6002e269__section_wz4_hd1_hgc"/>
+
+## August 2025
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+2.3.5
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with the functionality to add or remove products in new or existing applications, which is now supported only in the Neo environment.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio6ddd927cbeaa42e384dc903e6002e269__section_o4c_q2c_1gc"/>
+
+## July 2025
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+2.2.3
+
+</td>
+<td valign="top">
+
+Application instances were being marked as unhealthy and forcefully terminated by Cloud Foundry OS when the /healthcheck API took longer than 1 second to respond. This behavior was often triggered during events like garbage collection, which can briefly delay the API response.
+
+To prevent these unnecessary restarts, the health check timeout threshold has been increased from 1 second to 10 seconds for both API Portal and DevPortal application instances. This change ensures more robust and resilient application behavior during transient delays.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio6ddd927cbeaa42e384dc903e6002e269__section_gph_kdr_kfc"/>
 
 ## May 2025

@@ -106,7 +106,7 @@ Once the questionnaire is answered, you perform the following tasks:
     The technology mapping is performed by the system.
 
 
-More information: [Decide on an Integration Technology](decide-on-an-integration-technology-fb4bc24.md)
+More information:  <?sap-ot O2O class="- topic/xref " href="fb4bc24faec44bdb9cdc1d02d9b5ca99.xml" text="" desc="" xtrc="xref:14" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5769fcd4209b470ba85d2aa5ad32b397.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 
 

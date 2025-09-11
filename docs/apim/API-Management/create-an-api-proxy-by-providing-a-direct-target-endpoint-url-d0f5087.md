@@ -30,9 +30,9 @@ The role collection *APIPortal.Administrator* should be assigned to you.
     > ### Note:  
     > For API names, use only alphanumeric characters, underscores \(\_\), and hyphens \(-\). Don't start names with a hyphen.
 
-4.  Optionally, enter a version for your API Proxy.
+4.  Optionally, enter a version for your API proxy.
 
-5.  When you choose to version your API Proxy, its name is appended with the version, and its basepath is prepended with the version. For example, if the version you enter is v1, the name is Name\_v1, and the basepath is /v1/SalesOrder. For more information, see [API Versioning](api-versioning-b3cda3b.md).
+5.  When you choose to version your API proxy, its name is appended with the version, and its basepath is prepended with the version. For example, if the version you enter is v1, the name is Name\_v1, and the basepath is /v1/SalesOrder. For more information, see [API Versioning](api-versioning-b3cda3b.md).
 
 6.  Select a virtual host alias from the *Host Alias* dropdown.
 
@@ -63,9 +63,9 @@ The role collection *APIPortal.Administrator* should be assigned to you.
     > ### Note:  
     > For API names, use only alphanumeric characters, underscores \(\_\), and hyphens \(-\). Don't start names with a hyphen.
 
-4.  Optionally, enter a version for your API Proxy.
+4.  Optionally, enter a version for your API proxy.
 
-5.  When you choose to version your API Proxy, its name is appended with the version, and its basepath is prepended with the version. For example, if the version you enter is v1, the name is Name\_v1, and the basepath is /v1/SalesOrder. For more information, see [API Versioning](api-versioning-b3cda3b.md).
+5.  When you choose to version your API proxy, its name is appended with the version, and its basepath is prepended with the version. For example, if the version you enter is v1, the name is Name\_v1, and the basepath is /v1/SalesOrder. For more information, see [API Versioning](api-versioning-b3cda3b.md).
 
 6.  Select a virtual host alias from the *Host Alias* dropdown.
 
@@ -91,9 +91,9 @@ The role collection *APIPortal.Administrator* should be assigned to you.
 
 3.  Enter a name and description for the API.
 
-4.  Optionally, enter a version for your API Proxy.
+4.  Optionally, enter a version for your API proxy.
 
-5.  When you choose to version your API Proxy, its name is appended with the version, and its basepath is prepended with the version. For example, if the version you enter is v1, the name is Name\_v1, and the basepath is /v1/SalesOrder. For more information, see [API Versioning](api-versioning-b3cda3b.md).
+5.  When you choose to version your API proxy, its name is appended with the version, and its basepath is prepended with the version. For example, if the version you enter is v1, the name is Name\_v1, and the basepath is /v1/SalesOrder. For more information, see [API Versioning](api-versioning-b3cda3b.md).
 
 6.  Select a virtual host alias from the *Host Alias* dropdown.
 

@@ -229,6 +229,19 @@ Policy Processing:
 -   The policy validates the XML digital signature, using the values of TrustStore and ValidateSigner as described above. If validation fails, it raises a fault.
 -   The policy checks the current timestamp \(if present\) against the NotBefore and NotOnOrAfter elements in the assertion.
 
+> ### Note:  
+> The `KeyName` element within the `KeyInfo` tag, as shown below, is not supported in SAML Assertion Validation:
+> 
+> ```
+> <dsig:KeyInfo>
+>     <dsig:KeyName>Ff8yZthfV_</dsig:KeyName>  
+>            <dsig:X509Data>
+>                   <dsig:X509Certificate>+7/AhvT6EN4WWMzl7ALFN4BAyt+Z</dsig:X509Certificate>
+>      </dsig:X509Data>
+> </dsig:KeyInfo>
+> 
+> ```
+
 Successful completion of the policy ensures the following:
 
 -   The digital signature on the assertion is valid and was signed by a trusted CA.
@@ -555,4 +568,171 @@ AuthnStatement Session Index
 </td>
 </tr>
 </table>
+
+The following errors can occur when you deploy a proxy containing this policy:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Error Name
+
+</th>
+<th valign="top">
+
+Cause
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+SourceNotConfigured
+
+</td>
+<td valign="top">
+
+One or more of the following elements of the **ValidateSAMLAssertion** policy is not defined or empty: **<Source\>**, **<XPath\>**, **<Namespaces\>**, **<Namespace\>**.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TrustStoreNotConfigured
+
+</td>
+<td valign="top">
+
+If the **<TrustStore\>** element is empty or not specified in the **ValidateSAMLAssertion** policy, then the deployment of the API proxy fails. A valid truststore is required.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+NullKeyStoreAlias
+
+</td>
+<td valign="top">
+
+If the child element **<Alias\>** is empty or not specified in the **<Keystore\>** element of **GenerateSAMLAssertion** policy, then the deployment of the API proxy fails. A valid keystore alias is required.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+NullKeyStore
+
+</td>
+<td valign="top">
+
+If the child element **<Name\>** is empty or not specified in the **<Keystore\>** element of **GenerateSAMLAssertion** policy, then the deployment of the API proxy fails. A valid keystore name is required.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+NullIssuer
+
+</td>
+<td valign="top">
+
+If the **<Issuer\>** element is empty or not specified in the **GenerateSAMLAssertion** policy, then the deployment of the API proxy fails. A valid **<Issuer\>** value is required.
+
+</td>
+</tr>
+</table>
+
+Following fault variables are set when the policy triggers an error at runtime:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Variable Set
+
+</th>
+<th valign="top">
+
+Where
+
+</th>
+<th valign="top">
+
+Example
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+fault.name=\[fault\_name\]
+
+</td>
+<td valign="top">
+
+\[fault\_name\] is the name of the fault. The fault name is the last part of the fault code.
+
+</td>
+<td valign="top">
+
+fault.name = "InvalidMediaTpe"
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GenerateSAMLAssertion.failed
+
+</td>
+<td valign="top">
+
+For a validate SAML assertion policy configuration, the error prefix is **ValidateSAMLAssertion**.
+
+</td>
+<td valign="top">
+
+GenerateSAMLAssertion.failed = true
+
+</td>
+</tr>
+</table>
+
+Following is an example of an error response:
+
+> ### Sample Code:  
+> Example
+> 
+> ```
+> {
+>   "fault": {
+>     "faultstring": "GenerateSAMLAssertion[GenSAMLAssert]: Invalid media type",
+>     "detail": {
+>       "errorcode": "steps.saml.generate.InvalidMediaTpe"
+>     }
+>   }
+> }
+> ```
+
+Following is an example of a fault rule:
+
+> ### Sample Code:  
+> Example
+> 
+> ```
+> <FaultRules>
+>     <FaultRule name="invalid_saml_rule">
+>         <Step>
+>             <Name>invalid-saml</Name>
+>         </Step>
+>         <Condition>(GenerateSAMLAssertion.failed = "true")</Condition>
+>     </FaultRule>
+> </FaultRules>
+> ```
 

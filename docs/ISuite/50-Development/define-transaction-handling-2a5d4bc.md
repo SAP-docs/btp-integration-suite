@@ -22,7 +22,7 @@ For example, consider a process with a Data Store Write operation. If transactio
 > 
 > With the 1.1 version or higher of Integration Process and Local Integration Process, you can configure transaction handling explicitly. If not needed, you can disable transaction handling to improve the processing performance.
 > 
-> If your integration flow still contains the old version of Integration Process pool, migrate it to a new version to be able to disable transactional behavior. For more information, see [Migrate an Integration Flow Component to a New Version](migrate-an-integration-flow-component-to-a-new-version-61bf6a2.md).
+> If your integration flow still contains the old version of Integration Process pool, migrate it to a new version to be able to disable transactional behavior. For more information, see [Update Version of an Integration Flow Component](update-version-of-an-integration-flow-component-61bf6a2.md).
 
 > ### Remember:  
 > From 1.2 version of Integration Process, the default value for *Transaction Handling* is set to *Not Required*. This design in turn, improves the processing performance. If necessary for your integration use case, you can change the value as mentioned in the following table.

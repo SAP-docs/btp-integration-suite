@@ -22,16 +22,20 @@ CORS \(Cross-origin resource sharing\) allows JavaScript XMLHttpRequest \(XHR\) 
 
     Create an API artifact using one of the following methods:
 
-    -   [Creating an API Artifact Using URL](creating-an-api-artifact-using-url-914f57e.md) 
+    -   [Create an API Artifact Using a Target URL](create-an-api-artifact-using-a-target-url-914f57e.md) 
 
-    -   [Creating an API Using an Imported API Definition](creating-an-api-using-an-imported-api-definition-fb99a7d.md)
+    -   [Create an API Artifact by Importing an OpenAPI Specification](create-an-api-artifact-by-importing-an-openapi-specification-fb99a7d.md)
 
-    -   [Creating an API Using API Specification](creating-an-api-using-api-specification-39c2b30.md)
+    -   [Create an API Artifact Using an API Specification](create-an-api-artifact-using-an-api-specification-39c2b30.md)
 
 
 6.  To enable the CORS supports for the API artifact, navigate to *Policies* tab on the details screen and choose *Edit*.
 
-7.  Scroll down to the API properties section, choose *CORS*, and fill in the following details.
+7.  Double-click on the white space within the *Policy Model* to open the *API* pane, where you’ll find *CORS* as one of the tabs.
+
+    ![](images/CORS_GIF_9cefe2d.gif)
+
+8.  Choose *CORS*, and fill in the following details:
 
 
     <table>
@@ -55,7 +59,7 @@ CORS \(Cross-origin resource sharing\) allows JavaScript XMLHttpRequest \(XHR\) 
     </td>
     <td valign="top">
     
-    Select the checkbox to enable the CORS settings at the API level.
+    Select the checkbox to enable the CORS settings at the API artifact level.
     
     </td>
     </tr>
@@ -133,7 +137,7 @@ CORS \(Cross-origin resource sharing\) allows JavaScript XMLHttpRequest \(XHR\) 
     </tr>
     </table>
     
-8.  Once you’ve added and configured all the required policy steps for the API, you can select one of the following actions for the API:
+9.  Once you’ve added and configured all the required policies for the API artifact, you can select one of the following actions:
 
 
     <table>

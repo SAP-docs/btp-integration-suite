@@ -11,7 +11,7 @@ Use the HTTP receiver adapter to communicate with target systems using HTTP mess
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -322,6 +322,20 @@ The type of proxy that you are using to connect to the target system:
 <tr>
 <td valign="top">
 
+*Location ID*
+
+\(only if you select *On-Premise* for *Proxy Type*.\)
+
+</td>
+<td valign="top">
+
+To connect to a cloud connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side. You can also enter `${header.headername}` or `${property.propertyname}` to dynamically read the value from a header or a property.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Method* 
 
 </td>
@@ -332,6 +346,10 @@ Action that the HTTP request must perform.
 -   *POST*
 
     Requests that the receiver accepts the data enclosed in the request body.
+
+-   *Delete*
+
+    Requests that the origin server delete the resource identified by the Request-URl.
 
 -   *Dynamic*
 
@@ -344,6 +362,10 @@ Action that the HTTP request must perform.
 -   *HEAD*
 
     Sends a HEAD request that is similar to a GET request but doesn't return a message body.
+
+-   *PUT*
+
+    Updates or creates the enclosed data on the receiver side.
 
 -   *PATCH*
 
@@ -415,9 +437,7 @@ You can select one of the following authentication methods:
 
     It's a prerequisite that user credentials are specified in a Basic Authentication artifact and deployed on the related tenant.
 
--   *Principal Propagation* – only if the *Proxy Type* is *On-premise*.
-
-    The tenant authenticates itself against the receiver by forwarding the principal of the inbound user to the cloud connector, and from there to the back end of the relevant on-premise system.
+-   *Principal Propagation* – only if the *Proxy Type* is *On-premise*.The tenant authenticates itself against the receiver by forwarding the principal of the inbound user to the cloud connector, and from there to the back end of the relevant on-premise system.
 
     Follow the steps to configure technical user in Cloud Foundry:
 
@@ -499,7 +519,7 @@ Although you can configure this feature, it is not supported when using the corr
 
 *Private Key Alias*
 
-\(only if you select *Client Certificate* for authentication\)
+\(only if you select *Client Certificate*
 
 </td>
 <td valign="top">
@@ -526,6 +546,22 @@ Maximum time that the tenant waits for a response before terminating message pro
 The default value is 60000 milliseconds \(1 minute\).
 
 Note that the timeout setting has no influence on the Transmission Control Protocol \(TCP\) timeout if the receiver or any additional component interconnected between the Cloud Integration tenant and the receiver has a lower timeout. For example, consider that you have configured a receiver channel timeout of 10 minutes and there is another component involved with a timeout of 5 minutes. If nothing is transferred for a period of time, the connection will be closed after the fifth minute. In HTTP communication spanning multiple components \(for example, from a sender, through the load balancer, to a Cloud Integration tenant, and from there to a receiver\), the actual timeout period is influenced by each of the timeout settings of the individual components that are interconnected between the sender and receiver \(to be more exact, of those components that can control the TCP session\). The component or device with the lowest number set for the idle session timeout will determine the timeout that will be used.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Streaming* 
+
+</td>
+<td valign="top">
+
+When streaming is enabled, the adapter uses disk space to process the payload once the system memory usage exceeds defined thresholds. This reduces memory usage and helps handle very large messages.
+
+When streaming is disabled, the entire payload is loaded into memory before processing. This can increase memory consumption and may cause message processing to fail if the response size exceeds 2 GB.
+
+See [Optimize Integration Flow Design for Streaming](optimize-integration-flow-design-for-streaming-396941a.md)
 
 </td>
 </tr>
@@ -565,6 +601,72 @@ By default, the option is enabled. This option enables the creation of attachmen
 Having these attachments during message processing failures can be unneccesary as it leads to persistence of attachments that doesn't help. Especially, if multiple message processing failures occurs, you have attachments piled up for each failure. If you don't require the attachments for failure scenarios, disable the option. Though you disable the creation of attachments, the content of the same are added to the message processing logs.
 
 If you're using older versions of the adapter where you don't see the option, define the property `SAP.DisableAttachments.HTTP` in the message exchange with the value `true`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Retry Failed Requests*
+
+\(Only if *Throw Exception on Failure* is enabled\)
+
+</td>
+<td valign="top">
+
+By default, the option is disabled. This option lets the integration flow to retry requests to the target system, in case of failed HTTP requests.
+
+In case of failed HTTP requests where the target system itself provides Retry-After information, the configurations in the HTTP receiver adapter is overridden with the values coming from the target system.
+
+> ### Note:  
+> If you use a exception subprocess, the same is invoked only after all retry iterations are over and an connection error continues to persist.
+
+> ### Remember:  
+> The feature is available from software version 8.x \(Cloud Foundry environment\).
+
+For detailed information, read this blog.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*HTTP Error Response Codes*
+
+\(Only if *Retry Failed Requests* is enabled\)
+
+</td>
+<td valign="top">
+
+Provide a comma separated list of HTTP error response codes for which the integration flow must retry requests to the target system.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Retry Interval \(in seconds\)*
+
+\(Only if *Retry Failed Requests* is enabled\)
+
+</td>
+<td valign="top">
+
+Select the duration, in seconds, for which the integration flow must wait before retrying a request. The maximum interval between two rety attempts you can configure is 60 seconds.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Retry Iterations*
+
+\(Only if *Retry Failed Requests* is enabled\)
+
+</td>
+<td valign="top">
+
+Select the number of retry attempts that the integration flow must make in case of failed HTTP requests to the target system. The maximum number of retry attempts you can configure is three.
 
 </td>
 </tr>

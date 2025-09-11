@@ -200,7 +200,7 @@ The following inbound message contains the declaration of a default namespace th
 
 If you want to split the message at the `customerReview` element, make sure to enter the following XPath expression when defining the *Splitter* step:
 
-`/ns1:root/ns1:shop/ns1:customerReview xmlns:ns1="demo.sap.com"`
+`/ns1:root/shop/customerReview xmlns:ns1="demo.sap.com"`
 
 Note that if you enter the following XPath expression, you get an error when saving the integration flow:
 

@@ -11,6 +11,9 @@ Many web servers use OAuth 2.0 for authorization purposes. If you want to connec
 You can edit and deploy an OAuth2 Client Credentials artifact.
 
 > ### Note:  
+> Set the token expiry to at least 10 minutes. Otherwise, since the token is refreshed 5 minutes before its expiry, it can create a continuous refresh loop and trigger rate limits from the token server.
+
+> ### Note:  
 > -   The adapter using the OAuth 2 Client Credentials accesses the OAuth token and caches it against the name of the credential. The adapter uses the same token until it expires. Also, if you use the same credential in another adapter simultaneously, the token is reused.
 > 
 > -   Every time you edit an OAuth2 Client Credentials artifact, you must re-enter the Client Secret.

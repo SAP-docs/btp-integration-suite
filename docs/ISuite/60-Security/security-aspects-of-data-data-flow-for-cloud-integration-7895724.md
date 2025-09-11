@@ -52,7 +52,7 @@ You can protect communication using Transport Layer Security \(TLS\). In this ca
 > 
 > -   For inbound communication: TLS 1.2 and 1.3
 > 
-> -   For outbound communication: TLS 1.1, 1.2, and 1.3
+> -   For outbound communication: TLS 1.2, and 1.3
 
 > ### Note:  
 > The HTTP receiver adapter also allows you to use HTTP URLs. However, we do not recommend using this option when transferring confidential data \(including the password for basic authentication\).

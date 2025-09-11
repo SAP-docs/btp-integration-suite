@@ -37,7 +37,7 @@ Download all artifacts
 
 To upload the downloaded artifacts in another package or tenant, continue with the below steps.
 
-6.  Choose *Design* \> *Integrations*.
+6.  Choose *Design* \> *Integrations and APIs*.
 
 7.  Choose *Import*.
 

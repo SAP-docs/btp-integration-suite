@@ -11,7 +11,7 @@ The XI sender adapter allows you to connect a tenant to a local Integration Engi
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -57,7 +57,7 @@ Consider the following when using the XI adapter.
 > ### Note:  
 > -   The XI adapter doesn't support acknowledgments.
 > 
-> -   The XI adapter doesn't support ExactlyOnceInOrder \(EOIO\).
+> -   The XI adapter does not support the Exactly Once In Order \(EOIO\) delivery assurance option by default. However, you can model Exactly Once In Order by selecting the *Handled by Integration Flow* delivery assurance option. See: [Sender with XI Protocol and Receiver with SAP RM Protocol](sender-with-xi-protocol-and-receiver-with-sap-rm-protocol-090abf3.md).
 > 
 > -   For XI packaging, the incoming package message appears in the MPL.
 

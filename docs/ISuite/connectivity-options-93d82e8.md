@@ -88,6 +88,22 @@ See: [Configure the Advanced Event Mesh Receiver Adapter](50-Development/configu
 <tr>
 <td valign="top">
 
+*AI* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to Generative AI Hub \(SAP AI Core\) and other AI providers.
+
+See: [AI Receiver Adapter](50-Development/ai-receiver-adapter-66e89d2.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Amazon DynamoDB* 
 
 Receiver adapter
@@ -674,6 +690,38 @@ See: [Azure Cosmos DB Receiver Adapter](50-Development/azure-cosmos-db-receiver-
 <tr>
 <td valign="top">
 
+*BigCommerce GraphQL*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite tenant to a BigCommerce GraphQL Admin APIs using the GraphQL message protocol. The GraphQL message protocol is used to connect to the GraphQL-based Admin APIs of a BigCommerce store.
+
+See [BigCommerce Receiver GraphQL Adapter](50-Development/bigcommerce-receiver-graphql-adapter-3dbf284.md) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*BigCommerce REST*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite tenant to a BigCommerce REST Admin APIs, using the REST message protocol. The REST message protocol is used to connect to the REST-based Admin APIs of a BigCommerce store.
+
+See [BigCommerce Receiver REST Adapter](50-Development/bigcommerce-receiver-rest-adapter-f36aab9.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Coupa*
 
 Receiver adapter
@@ -700,6 +748,22 @@ Sender adapter
 Enables SAP Integration Suite to consume messages from a data store.
 
 See: [Data Store Sender Adapter](50-Development/data-store-sender-adapter-4f5ef3f.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Docusign*
+
+Receiver Adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to manage and configure Docusign objects to integrate features like embedded sending, e-signatures, etc into your applications.
+
+See: [Docusign Receiver Adapter](50-Development/docusign-receiver-adapter-8f3c523.md) 
 
 </td>
 </tr>
@@ -808,6 +872,22 @@ Enables SAP Integration Suite to connect to a remote system using TCP \(Transmis
 FTP stands for File Transfer Protocol.
 
 See: [Configure the FTP Receiver Adapter](50-Development/configure-the-ftp-receiver-adapter-c16d331.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Google BigQuery* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to access data residing on Google BigQuery..
+
+See: [Google BigQuery Receiver Adapter](50-Development/google-bigquery-receiver-adapter-722ed6c.md)
 
 </td>
 </tr>
@@ -1767,7 +1847,7 @@ Connects SAP Integration Suite to a remote system using the SSH File Transfer pr
 
 Supported versions:
 
-SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher
+SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher.
 
 The sender adapter allows you to define a schedule for polling data from the connected system.
 
@@ -1789,9 +1869,41 @@ Connects SAP Integration Suite to a remote system using the SSH File Transfer pr
 
 Supported versions:
 
-SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher
+SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher.
 
 See: [Configure the SFTP Receiver Adapter](50-Development/configure-the-sftp-receiver-adapter-4ef52cf.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Shopify GraphQL*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to a Shopify GraphQL Admin APIs and accelerates the implementation time and reduces complexity of connecting to Shopify. The GraphQL message protocol is used to connect to the GraphQL-based Admin APIs of a Shopify store.
+
+See: [Shopify GraphQL Receiver Adapter](50-Development/shopify-graphql-receiver-adapter-484c676.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Shopify REST* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to a Shopify REST Admin APIs, accelerates the implementation time and reduces complexity of connecting to Shopify. The REST message protocol is used to connect to the REST-based Admin APIs of a Shopify store.
+
+See: [Shopify REST Receiver Adapter](50-Development/shopify-rest-receiver-adapter-34865bc.md)
 
 </td>
 </tr>

@@ -14,7 +14,7 @@ When an application has to communicate with another application in the same suba
 
 **Procedure**
 
-1.  Create a Destination to the API Proxy that you want to call using principal propagation. Enter the following details while configuring a destination of type OAuth2UserTokenExchange. Also, if you have not generated the client credentials \(clientId, ClientSecret, tokenUrl and application url\) yet, see [Accessing On-Premise Systems through API Management](APIM-Initial-Setup/accessing-on-premise-systems-through-api-management-2fc7a5b.md).
+1.  Create a Destination to the API proxy that you want to call using principal propagation. Enter the following details while configuring a destination of type OAuth2UserTokenExchange. Also, if you have not generated the client credentials \(clientId, ClientSecret, tokenUrl and application url\) yet, see [Accessing On-Premise Systems through API Management](APIM-Initial-Setup/accessing-on-premise-systems-through-api-management-2fc7a5b.md).
 
     > ### Sample Code:  
     > ```
@@ -35,5 +35,5 @@ When an application has to communicate with another application in the same suba
 
 **Next Step**:
 
-Use the token received from the `OAuthUserTokenExchange` to call an API Proxy and consume the above -created destination from your application.
+Use the token received from the `OAuthUserTokenExchange` to call an API proxy and consume the above -created destination from your application.
 

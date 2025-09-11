@@ -8,13 +8,13 @@ Create and maintain your identifiers.
 
 ## Context
 
-Identifiers are unique values that help identify entities in a business transaction. They follow definitions defined by the EDI standards/type systems. There are multiple agencies and schemes under these type systems that are used to define their identifiers, and when maintaing a type system in the agreement, you need to also mention the corresponding identifer. To do so, you need to create identifiers in your company profile/subsidiary.
+Identifiers are unique values that help identify entities in a business transaction. They follow definitions defined by the EDI standards/type systems. There are multiple agencies and schemes under these type systems that are used to define their identifiers, and when maintaining a type system in the agreement, you need to also mention the corresponding identifier. To do so, you need to create identifiers in your company profile/subsidiary.
 
-The *Identifiers* ta consists of two types of identifiers:
+The *Identifiers* tab consists of two types of identifiers:
 
--   **Single Identifiers**: These are individual identifiers that have their own type system, scheme and organization etc.
+-   **Single Identifiers** are individual identifiers that have their own type system, scheme and organization.
 
--   **Group Identifiers**: These are group of identifiers that share a common Alias, Type System, Agency and Scheme.
+-   **Group Identifiers** are group of identifiers that share a common alias, type system, agency, and scheme.
 
 
 
@@ -22,9 +22,9 @@ The *Identifiers* ta consists of two types of identifiers:
 
 1.  Navigate to the *Identifiers* tab. The tab consists of two sections:
 
-    -   *Single Identifiers*: If you want to create a single identifier, choose *Create* provided above the *Single Identifiers* table and proceed from Step 2 below.
+    -   *Single Identifiers*: If you want to create a single identifier, choose *Create* provided above the *Single Identifiers* table and proceed with step 2.
 
-    -   *Identifier Groups*: If you want to create an identifier group, choose *Create* provided above the *Identifier Groups* table and follow the instructions from Step 4 below.
+    -   *Identifier Groups*: If you want to create an identifier group, choose *Create* provided above the *Identifier Groups* table and proceed with step 4.
 
 2.  For **Single Identifier**, enter the following details:
 
@@ -322,13 +322,13 @@ The *Identifiers* ta consists of two types of identifiers:
     </tr>
     </table>
     
-5.  Choose *Save*. The identifier group is created successfully. You need to now add identifiers to it.
+5.  Choose *Save*. The identifier group is created successfully and you can now add identifiers to it.
 
 6.  Open the identifier group from the *Identifier Groups* table.
 
 7.  Choose *Edit* to edit the details of the group.
 
-8.  Select *Add* above the *Identifiers in Group* to add idenifiers to this group.
+8.  Select *Add* above the *Identifiers in Group* to add identifiers to this group.
 
 9.  Maintain the values for *Identification* and *Sub-Organization* fields and choose *Save*.
 

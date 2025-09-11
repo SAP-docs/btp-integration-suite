@@ -52,7 +52,7 @@ The *Capabilities* section displays the tiles of the capabilities activated for 
 Each capability tile also displays some quick links to allow you to start working with the capability.
 
 > ### Note:  
-> If you're working with APIs, and have activated the API Management capability, then the first thing displayed is the *Settings* tab. Choose *Settings* \> *API* to configure the service. For more information, see [Setting Up API Management Capability](../50-Development/setting-up-api-management-capability-f34e86c.md).
+> If you're working with APIs, and have activated the API Management capability, then the first thing displayed is the *Settings* tab. Choose *Settings* \> *API* to configure the service. For more information, see [Setting Up API Management](../50-Development/setting-up-api-management-f34e86c.md).
 
 > ### Note:  
 > For Open Connectors, Integration Assessment, and Migration Assessment, you will be navigated out of SAP Integration Suite to the respective capability.

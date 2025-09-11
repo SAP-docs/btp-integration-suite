@@ -287,6 +287,18 @@ There are 3 possible settings:
 <tr>
 <td valign="top">
 
+*Replay Id*
+
+</td>
+<td valign="top">
+
+Refers to the position of the event in the event stream. The *Replay Id* is populated by Salesforce and refers to the position of the event in the event stream. Note that the *Replay Id* values are not guaranteed to be continuous for consecutive events. By specifying the value of the *Replay Id*, the integration flow retrieves events that are within the retention window and that have followed the specified *Replay Id*. Example: If *Replay Id* 6 is specified, the integration flow receives all messages with a *Replay Id* greater than 6.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Operation*
 
 </td>
@@ -311,12 +323,17 @@ Made of a Topic name preceded with a prefix. For instance, a PushTopic can be pr
 <tr>
 <td valign="top">
 
-*Replay Id*
+*Max Buffer Size \(in bytes\)*
 
 </td>
 <td valign="top">
 
-Refers to the position of the event in the event stream. The *Replay Id* is populated by Salesforce and refers to the position of the event in the event stream. Note that the *Replay Id* values are not guaranteed to be continuous for consecutive events. By specifying the value of the *Replay Id*, the integration flow retrieves events that are within the retention window and that have followed the specified *Replay Id*. Example: If *Replay Id* 6 is specified, the integration flow receives all messages with a *Replay Id* greater than 6.
+Specify the maximum permissible capacity \(in bytes\) of the response content, which may contain many messages.
+
+> ### Note:  
+> It is recommended to keep a minimum value of 10 MB \(which is the default value\) as suggested by Salesforce and only increase it for a high volume scenario.
+
+
 
 </td>
 </tr>

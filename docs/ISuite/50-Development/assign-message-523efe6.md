@@ -6,7 +6,7 @@ This policy allows you to create new or modify an existing HTTP request or respo
 
 Assign Message policy allows you to add, change, or remove properties of the request/response. It can also be leveraged to create a custom request or response message. This custom request/response message can be used in different policies like [Service Callout](service-callout-6b40873.md) policy.
 
-This policy is so named because you need to assign a message to a variable. To use the Assign Message policy, you must select a variable name and specify the message content to assign to it. If you choose to use the standards names such as request or response, the value will be assigned to the request or response flows. If you use any other name, it will refer to a custom variable that can exist within the API Proxy execution flow.
+This policy is so named because you need to assign a message to a variable. To use the **Assign Message** policy, you must select a variable name and specify the message content to assign to it. If you choose to use the standards names such as request or response, the value will be assigned to the request or response flows. If you use any other name, it will refer to a custom variable that can exist within the API proxy execution flow.
 
 You can attach this policy in the following locations: ![](images/Flow_policy_116062b.png)
 
@@ -1229,7 +1229,7 @@ Following are the attributes \(optional\) of <Payload\>:
 > ### Note:  
 > If the payload content is of the type XML, and gets changed unexpectedly during API proxy execution, please wrap it in <!\[CDATA\[`…` \]\]\> element.
 > 
-> This way, you can ensure that the payload content is treated as a string and thereby it is not getting processed by the API Proxy back-end system as XML.
+> This way, you can ensure that the payload content is treated as a string and thereby it is not getting processed by the API proxy back-end system as XML.
 > 
 > You can still process the dynamic data like query parameters or variables within the content wrapped in CDATA.
 > 

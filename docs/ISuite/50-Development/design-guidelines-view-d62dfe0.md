@@ -10,7 +10,7 @@ Use this view to validate your integration flow against the design guidelines en
 
 ### What Are Design Guidelines
 
-Design guidelines are checks that help you design robust integration flows. Your tenant administrators or integration leads have enabled all or a subset of available design guidelines that they think are appropriate for your organization's business needs. For more information, see [Design Guidelines](IntegrationSettings/design-guidelines-4d1c84f.md).
+Design guidelines are checks that help you design robust integration flows. Your tenant administrators or integration leads have enabled all or a subset of available design guidelines that they think are appropriate for your organization's business needs. For more information, see [Design Guidelines](IntegrationSettings/design-guidelines-4d1c84f.md)
 
 
 
@@ -30,17 +30,19 @@ Follow these simple steps to run the design guidelines and validate your integra
 
     You see the result across these columns:
 
+    In the *Severity* column - you get to know the importance of the guideline, indicating how strongly it should be followed.
+
     In the *Applicability* column – you get to know the applicable design guidelines against which your integration flow is validated.
 
     In the *Compliance* column – you find if your integration flow is compliant with all the applicable design guidelines.
 
     In the *Skipped Status* column – you get to know the skipped status of the non-compliant design guidelines.
 
-    In the *Action* column – for every non-compliant design guideline, you find the analysis of what are the expected and actual configurations.
+    In the *Action* column – for every non-compliant design guideline, choose *Analyse* to find the analysis of what are the expected and actual configurations.
 
 2.  Based on the analysis, do one of the following:
 
-    -   Update your integration flow and resolve the non-compliant design guidelines.
+    -   Update your integration flow and resolve the non-compliant design guidelines. To resolve non-compliant guidelines of the script, see [Fix Script Incompatibilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/fix-script-incompatibilities?state)
 
     -   Skip the non-compliant design guidelines – You can skip a non-compliant design guideline by providing a reason and consent to this operation. You can revert any skipped guidelines at any time and reapply them.
 

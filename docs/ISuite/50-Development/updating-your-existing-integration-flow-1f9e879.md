@@ -4,15 +4,14 @@
 
 Some new features might not be available for your current integration flow due to the following reason:
 
-A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
+-   The feature is not available for the selected rutime profile. See [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md)
+-   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow. You have the following options:
+    -   You can use the new integration flow shape \(adapter or step\).
 
-You have the following options:
+        To do this, select the integration flow component and choose *Update Version* from the property sheet. See [Update Version of an Integration Flow Component](update-version-of-an-integration-flow-component-61bf6a2.md).
 
--   You can continue using the older version of the integration flow shape \(adapter or step\).
+    -   You can continue using the older version of the integration flow shape \(adapter or step\).
 
--   You can use the new integration flow shape \(adapter or step\).
-
-    To do this, you first have to delete the old flow step or channel and then create it again.
 
 
 > ### Caution:  

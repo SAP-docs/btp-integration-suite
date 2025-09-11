@@ -21,8 +21,10 @@ You can perform the following types of jobs, also refereed to as *Actions*:
 -   *Cleanup Trace Entries*. Delete trace messages that have reached the retention time.
 
 -   *Cleanup Diagnostic Data*. Delete manually created diagnostic tasks and automatically generated heap dumps. This job also deletes empty working directories that were created by the Worker component on the shared file system but are no longer in use.
+-   *Consolidate MPL Aggregation Data*. Consolidate the statistics data used to display the *Message Status Overview* page. This helps preserve the database quota. The system adjusts data within the timeframe specified in the job parameter to eliminate unnecessary detail.
 
-Per default, *Cleanup Data Store Entries*, *Cleanup Monitoring Data*, and *Cleanup Trace Entries* are scheduled during the installation time. However, you must schedule *Cleanup Diagnostic Data* manually.
+> ### Note:  
+> Per default, *Cleanup Data Store Entries*, *Cleanup Monitoring Data*, and *Cleanup Trace Entries* are scheduled during the installation time. However, you must schedule *Cleanup Diagnostic Data* manually.
 
 The overview screen shows a list of all your existing jobs. For each of the jobs, the following information is available:
 
@@ -174,15 +176,18 @@ To add a new job, select :heavy_plus_sign: \(Add\). Depending on the **Action** 
 </td>
 <td valign="top">
 
--   *Delete Processing Log Data for Completed Messages Older Than \(Days\)*
--   *Delete Monitoring Data Older Than \(Days\)*
+-   *Retention Period for Completed Message Log \(Days\)* 
+-   *Retention Period for Monitoring Data \(Days\)*
 
 
 
 </td>
 <td valign="top">
 
-Enter the number of days.
+-   Enter the number of days after which the system deletes completed MPL data.
+-   Enter the number of days after which the system deletes monitoring data.
+
+
 
 </td>
 </tr>
@@ -194,12 +199,12 @@ Enter the number of days.
 </td>
 <td valign="top">
 
-*Delete Trace Data Older Than \(Minutes\)* 
+*Retention Period for Trace Data \(Minutes\)* 
 
 </td>
 <td valign="top">
 
-Enter the number of days. The default is set to `60`.
+Enter the number of minutes after which the system deletes trace data. The default is set to `60`.
 
 </td>
 </tr>
@@ -228,12 +233,29 @@ No parameters.
 </td>
 <td valign="top">
 
-*Delete Data Older Than \(Days\)* :
+*Retention Period for Diagnostic Data and Heap Dumps \(Days\)* 
 
 </td>
 <td valign="top">
 
-Enter the number of days. The default is set to `30`.
+Enter the number of days after which the system deletes diagnostic data and heap dumps. The default is set to `30`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Consolidate MPL Aggregation Data*
+
+</td>
+<td valign="top">
+
+*Consolidate MPL Aggregation Data Newer Than \(ISO-8601\)*
+
+</td>
+<td valign="top">
+
+Enter a specific timeframe. The default is set to PT6H, which corresponds to a 6-hour timeframe.
 
 </td>
 </tr>

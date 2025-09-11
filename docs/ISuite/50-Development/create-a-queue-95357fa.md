@@ -44,7 +44,10 @@ When you send a message via AMQP 1.0 over WebSocket, it can be published to a qu
 
 7.  Define the *Max Unacknowledged Messages Per Consumer* which is the threshold for the number of unacknowledged messages. If there are more unacknowledged messages than the threshold, all subsequent messages are not delivered.
 
-8.  Define the *Max Redelivery Count* which is the maximum number of times the queue attempts redelivery of a message before purging \(removing\) it. If you define a dead message queue, then the queue moves the undelivered messages to it. By default, the value is set to zero. The maximum value that you can define is 255.
+8.  Define the *Max Redelivery Count* which is the maximum number of times the queue attempts redelivery of a message before purging \(removing\) it. If you define a dead message queue, then the queue moves the undelivered messages to it. By default, the value for the maximum redelivery count is set to zero. The maximum value that you can define is 255.
+
+    > ### Note:  
+    > When the maximum redelivery count is set by default to 0, redelivery will be attempted until maximum time-to-live is reached for the messages in the queue.
 
 9.  Select a *Dead Message Queue*. Unacknowledged messages that have either reached maximum redelivery count or maximum time-to-live in the queue are moved to the dead message queue.
 

@@ -41,5 +41,5 @@ As an admin, you can view the list of applications that the application develope
 **Related Information**  
 
 
-[Create an Application](create-an-application-a501a6d.md "Create an Application to consume the required APIs.")
+[Create New Product Subscription for Application](create-new-product-subscription-for-application-a501a6d.md "To manage API consumption, create a new product subscription for application. This will provide you with the credentials needed for secure access and allow you to catogorize and analyze data for APIs used by applications.")
 

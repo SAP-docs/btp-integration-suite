@@ -969,3 +969,138 @@ Value element is missing in KeyValueMapStepDefinition \{0\}
 </tr>
 </table>
 
+
+
+<a name="loiob72dc3f262c1441587e76d0e808a12fe__section_hxq_2ng_2gc"/>
+
+## Flow variables
+
+Create a KVM, use a KVM policy to retrieve its value, and inject that value into the API request using flow variables. For more information, see [Flow Variables](flow-variables-47f27da.md).
+
+
+
+<a name="loiob72dc3f262c1441587e76d0e808a12fe__section_gjt_24g_2gc"/>
+
+## Error reference
+
+This section explains the fault codes and error messages that are returned, and fault variables set by API Management when this policy triggers an error. This information is essential for developing fault rules to handle faults.
+
+
+
+### Runtime errors
+
+The table below lists the errors that may occur during policy execution:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Fault code
+
+</th>
+<th valign="top">
+
+HTTP status
+
+</th>
+<th valign="top">
+
+Cause
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`steps.keyvaluemapoperations.SetVariableFailed` 
+
+</td>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+This error occurs when you retrieve a value from an encrypted key-value map and assign it to a variable name that does not begin with the required private prefix. The private prefix is necessary for basic security during debugging, as it prevents encrypted values from being exposed in API proxy Trace and debug sessions.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`steps.keyvaluemapoperations.UnsupportedOperationException` 
+
+</td>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+This error occurs if the `mapIdentifier` attribute is set to empty string in the Key Value Map Operations policy.
+
+</td>
+</tr>
+</table>
+
+
+
+### Deployment errors
+
+The table below lists the errors that may occur when deploying a proxy with this policy:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Error name
+
+</th>
+<th valign="top">
+
+Cause
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`InvalidIndex` 
+
+</td>
+<td valign="top">
+
+If the index attribute specified in the `<Get>` element of Key Value Map Operations policy is zero or a negative number, then the deployment of the API proxy fails. The index starts from 1, so an index of zero or negative integer is considered as invalid.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+KeyIsMissing
+
+</td>
+<td valign="top">
+
+This error occurs if the `<Key>` element is completely missing or `<Parameter>` element is missing within `<Key>` element underneath the `<Entry>` of the `<InitialEntries>` element of the Key Value Map Operations policy.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ValueIsMissing` 
+
+</td>
+<td valign="top">
+
+This error occurs if the `<Value>` element is missing underneath the `<Entry>` element of the `<InitialEntries>` element of the Key Value Map Operations policy.
+
+</td>
+</tr>
+</table>
+

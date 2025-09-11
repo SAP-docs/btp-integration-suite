@@ -479,6 +479,8 @@ In this tab, you will create a system and each system will have Type System to d
     <td valign="top">
     
     Specify the AS2 file name.
+
+    The file name can be composed of string constants and simple expressions like `${header.}`, `${property.}`, the predefined placeholder `${TIMESTAMP}` \(current timestamp\), and `${TIMESTAMP_WITH_MS}` \(current timestamp with milliseconds\).
     
     </td>
     </tr>
@@ -491,6 +493,11 @@ In this tab, you will create a system and each system will have Type System to d
     <td valign="top">
     
     Appends a timestamp at the end of the file name.
+
+    > ### Note:  
+    > This feature is deprecated and will be removed soon.
+
+
     
     </td>
     </tr>
@@ -503,6 +510,11 @@ In this tab, you will create a system and each system will have Type System to d
     <td valign="top">
     
     Select this checkbox if you want milliseconds to be included the AS2 timestamp \(yyyyMMddHHmmssSSS\).
+
+    > ### Note:  
+    > This feature is deprecated and will be removed soon.
+
+
     
     </td>
     </tr>

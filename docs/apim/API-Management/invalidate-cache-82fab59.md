@@ -284,6 +284,9 @@ The cache specified in the <CacheResource\> element does not exist.
 </tr>
 </table>
 
+> ### Note:  
+> An Invalidate Cache policy without a condition string is not allowed. Please ensure that you add a valid expression.
+
 **Related Information**  
 
 

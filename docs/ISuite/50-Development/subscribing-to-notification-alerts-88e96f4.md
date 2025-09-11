@@ -21,7 +21,7 @@ Once the **SAP Alert Notification Service** is setup or configured successfully,
 **Related Information**  
 
 
-[Enabling Anomaly Detection and Predictions](enabling-anomaly-detection-and-predictions-98534a0.md "Activate the anomaly detection and prediction features for API proxy calls to enhance monitoring and forecasting capabilities.")
+[Enabling Anomaly Detection and Predictions](enabling-anomaly-detection-and-predictions-98534a0.md "Activate the anomaly detection and prediction features for API calls to enhance monitoring and forecasting capabilities.")
 
 [Configuring APIs for Anomaly Detection](configuring-apis-for-anomaly-detection-9e7e5d1.md "View or configure APIs for anomaly detection.")
 

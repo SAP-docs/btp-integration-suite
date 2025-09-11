@@ -56,7 +56,7 @@ Harbor is a widely used open source registry. It's an example of a container reg
 
 Create at least one storage class and a dynamic provisioner for it in your cluster.
 
-Storage classes should support dynamic provisioning for access modes `ReadWriteOnce` and`ReadWriteMany`.
+Storage classes should support dynamic provisioning for access modes `ReadWriteOnce` \(mandatory\) and`ReadWriteMany` \(optional\).
 
 </td>
 <td valign="top">
@@ -76,6 +76,18 @@ Install the Kubernetes command-line tool `kubectl`
 <td valign="top">
 
 [Install Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Install the Istio command-line tool `istioctl` \(recommended\).
+
+</td>
+<td valign="top">
+
+[Install Istioctl](https://istio.io/latest/docs/ops/diagnostic-tools/istioctl/)
 
 </td>
 </tr>

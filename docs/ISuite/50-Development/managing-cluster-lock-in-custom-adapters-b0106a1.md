@@ -271,7 +271,7 @@ The `LockManager` interface offers following methods to acquire, release, and ma
     </td>
     <td valign="top">
     
-    Release the lock from monitoring manually. See [Manage Locks](../manage-locks-8871b61.md).
+    Release the lock from monitoring manually. See [Manage Locks for Edge Integration Cell](../manage-locks-for-edge-integration-cell-8871b61.md).
     
     </td>
     </tr>
@@ -288,7 +288,7 @@ The `LockManager` interface offers following methods to acquire, release, and ma
     </td>
     <td valign="top">
     
-    Release the lock from monitoring manually. See [Manage Locks](../manage-locks-8871b61.md).
+    Release the lock from monitoring manually. See [Manage Locks for Edge Integration Cell](../manage-locks-for-edge-integration-cell-8871b61.md).
     
     </td>
     </tr>

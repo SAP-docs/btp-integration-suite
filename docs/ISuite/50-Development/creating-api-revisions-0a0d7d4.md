@@ -117,7 +117,7 @@ To create a new revision, execute the following steps:
     </td>
     <td valign="top">
     
-    You can choose URL, API Provider, or API Proxy, as the target endpoint as well as enter target endpoint rules.
+    You can choose URL, API provider, or API proxy, as the target endpoint as well as enter target endpoint rules.
     
     </td>
     </tr>

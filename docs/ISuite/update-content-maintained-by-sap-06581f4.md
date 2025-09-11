@@ -14,10 +14,10 @@ At the time of onboarding, the latest SAP standard content is available for usag
 
 Check [What's New for SAP Business Technology Platform](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Integration+Assessment;Migration+Assessment&locale=en-US) to stay informed on new content releases and a description of what they include.
 
-Once there are content updates delivered by SAP, you also get a notification directly in the tool. The notification has the *View Updates* button. Selecting the button takes you to the *Content Life Cycle* page where new content is visible for update.
+Once there are content updates delivered by SAP, you also get a notification directly in the tool. The notification has the *View Updates* button. Selecting the button takes you to the *Content Management* page where new content is visible for update.
 
 > ### Note:  
-> Alternatively, you can navigate to *Settings* \> *Content Life Cycle* to view the updates available.
+> Alternatively, you can navigate to *Settings* \> *Content Management* to view the updates available.
 
 
 
@@ -25,7 +25,7 @@ Once there are content updates delivered by SAP, you also get a notification dir
 
 ## Required Privileges
 
-The *Content Life Cycle* page is only visible to users who have the right to update the content. This privilege is granted to the following personas:
+The *Content Management* page is only visible to users who have the right to update the content. This privilege is granted to the following personas:
 
 -   Enterprise Architect
 -   Administrator
@@ -38,7 +38,7 @@ For more information on personas, see: [Personas for Integration Assessment](60-
 
 ## Content Update Process
 
-To start the process, either select the button in the notification or use the navigation *Settings* \> *Content Life Cycle*.
+To start the process, either select the button in the notification or use the navigation *Settings* \> *Content Management*.
 
 Every time a new version of SAP standard content is released, you can choose which data to update.
 
@@ -48,19 +48,19 @@ Every time a new version of SAP standard content is released, you can choose whi
 > > ### Example:  
 > > If the current version is 1.1, update version is 1.2 and the latest version is 1.3, you can only update first to 1.2 and then to 1.3. You can't update directly to the latest version.
 
-The possible types of updates are the following:
+The possible operations are the following:
 
 
 <table>
 <tr>
 <td valign="top">
 
-New
+Add
 
 </td>
 <td valign="top">
 
-New Content
+Add new content
 
 </td>
 </tr>
@@ -92,7 +92,7 @@ Remove existing content
 
 Selecting a change set includes it in the update. When you don't select it, the change set is removed and potential cleanup actions are initiated.
 
-The change sets can be either *Mandatory for Update* or *Available for Update* as described in the following table.
+The change sets can be *Mandatory* or *Applicable* as described in the following table.
 
 
 <table>
@@ -111,24 +111,24 @@ Meaning
 <tr>
 <td valign="top">
 
-Mandatory For Update
+Mandatory
 
 </td>
 <td valign="top">
 
-Signifies whether the change set is mandatory for the planned update.
+Signifies whether the change set must be applied. Mandatory change sets cannot be excluded from the update.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Available For Update
+Applicable
 
 </td>
 <td valign="top">
 
-Signifies whether the change set is available for update.
+Signifies whether the change set can be applied.
 
 </td>
 </tr>

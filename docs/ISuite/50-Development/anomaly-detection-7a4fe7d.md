@@ -2,7 +2,7 @@
 
 # Anomaly Detection
 
-Anomaly detection is an AI-based feature that involves the identification of patterns or data points that deviate significantly from normal behavior or expected patterns. This feature allows you to proactively identify and respond to unusual patterns or deviations in API proxy calls, thereby ensuring the security, reliability, and optimal performance of APIs.
+Anomaly detection is an AI-based feature that involves the identification of patterns or data points that deviate significantly from normal behavior or expected patterns. This feature allows you to proactively identify and respond to unusual patterns or deviations in API traffic, thereby ensuring the security, reliability, and optimal performance of APIs.
 
 > ### Note:  
 > The availability of the anomaly detection and prediction features depends on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620).
@@ -13,7 +13,7 @@ Anomaly detection is an AI-based feature that involves the identification of pat
 
 ## How it works
 
-Anomaly detection involves training an AI model to understand the behavior of your API proxies \(“proxified” API endpoints\). It works by comparing a current timeframe \(referred to as a 'window'\) of API proxy calls with the corresponding past time-series data. The AI model will be trained automatically using all past API data that is available, with a minimum requirement of 3 months' worth of data. Therefore, it is necessary to have at least 3 months' worth of API data on an API proxy to train the model and reliably detect anomalies. The detection capability improves over time.
+Anomaly detection involves training an AI model to understand the behavior of your API calls. It works by comparing a current timeframe \(referred to as a 'window'\) of API calls with the corresponding past time-series data. The AI model will be trained automatically using all past API data that is available, with a minimum requirement of 3 months' worth of data. Therefore, it is necessary to have at least 3 months' worth of API data on an API to train the model and reliably detect anomalies. The detection capability improves over time.
 
 On average, the training process takes approximately 3 hours to complete.
 
@@ -24,7 +24,7 @@ Anomaly detection is currently offered for the following behaviors:
 -   Latency \(Total Response Time\)
 -   API Error Count \(4XX and 5XX Error Count\)
 
-Once activated, the anomaly detection feature automatically collects a time series of the aggregate set of API proxy calls in the tenant that have a sufficient amount of past API call data. This enables it to identify anomalies in the aggregate set of all configured API proxies.
+Once activated, the anomaly detection feature automatically collects a time series of the aggregate set of API calls in the tenant that have a sufficient amount of past API call data. This enables it to identify anomalies in the aggregate set of all configured APIs.
 
 In addition, you can select up to five individual APIs, and track call behavior for these APIs. For instance, you may be interested in tracking client errors to a specific, sensitive API, in addition to the number of errors in total for the tenant.
 

@@ -10,13 +10,15 @@ Migrate supported integration objects from your on-premise system to SAP Integra
 
 ## Prerequisites
 
--   You've connected your SAP Process Orchestration or SAP Process Integration system with SAP Integration Suite using SAP BTP destinations. See: [Configuring Connectivity to an SAP Process Orchestration System](50-Development/IntegrationSettings/configuring-connectivity-to-an-sap-process-orchestration-system-8c36fd2.md).
+-   You've connected your SAP Process Orchestration or SAP Process Integration system with SAP Integration Suite using SAP BTP destinations. See [Configuring Connectivity to an SAP Process Orchestration System](50-Development/IntegrationSettings/configuring-connectivity-to-an-sap-process-orchestration-system-8c36fd2.md).
 
--   You've evaluated the migration feasibility for your integration object using Migration Assessment. See: [Create a Scenario Evaluation Request](create-a-scenario-evaluation-request-435ec61.md).
+-   The roles **AuthGroup\_IntegrationDeveloper** and **AuthGroup\_TenantPartnerDirectoryConfigurator** are assigned to your user. See [Personas for Cloud Integration](60-Security/personas-for-cloud-integration-2937e5c.md).
 
--   Message queues are activated. See: [Managing Message Queues](50-Development/managing-message-queues-cdcce24.md). For more information, see [Run an Integration Flow Under Well-Defined Boundary Conditions](50-Development/run-an-integration-flow-under-well-defined-boundary-conditions-f8cf974.md) 
--   You've discovered, copied, and deployed the relevant prepackaged generic integration flows in your design time. See: [Working with Prepackaged Integration Content](50-Development/working-with-prepackaged-integration-content-bd2ed3e.md)
--   You've created an integration package in Integration Suite for the purpose of migration. See: [Creating an Integration Package](50-Development/creating-an-integration-package-9126d79.md).
+-   You've evaluated the migration feasibility for your integration object using Migration Assessment. See [Create a Scenario Evaluation Request](create-a-scenario-evaluation-request-435ec61.md).
+
+-   Message queues are activated. See [Managing Message Queues](50-Development/managing-message-queues-cdcce24.md) and [Run an Integration Flow Under Well-Defined Boundary Conditions](50-Development/run-an-integration-flow-under-well-defined-boundary-conditions-f8cf974.md).
+-   You've discovered, copied, and deployed the relevant prepackaged generic integration flows in your design time. See [Working with Prepackaged Integration Content](50-Development/working-with-prepackaged-integration-content-bd2ed3e.md).
+-   You've created an integration package in Integration Suite for the purpose of migration. See [Creating an Integration Package](50-Development/creating-an-integration-package-9126d79.md).
 
 -   You've understood the [Supported Patterns](supported-patterns-ad867ae.md#loioad867aea1fc749a99abc2cf643c94038) in Migration Tooling.
 
@@ -46,6 +48,9 @@ You can watch a short video to understand the pipeline approach in a nutshell:
     All the systems that are added as a part of [Configuring Connectivity to an SAP Process Orchestration System](50-Development/IntegrationSettings/configuring-connectivity-to-an-sap-process-orchestration-system-8c36fd2.md) are listed here.
 
     Based on your configuration, you see the address of the Integration Directory and ES Repository for the system that you select.
+
+    > ### Note:  
+    > When an error occurs, you can download the error log. Include this log when raising a [ticket](http://support.sap.com) on the component LOD-HCI-PI-WT-IFL to get a faster and more accurate resolution.
 
 3.  Choose *Next Step*.
 
@@ -81,9 +86,6 @@ You can watch a short video to understand the pipeline approach in a nutshell:
     > You can select the Pipeline approach for Point-to-Point Asynchronous, Content-Based Routing, and Recipient List Asynchronous patterns.
 
 9.  Enable *Idempotent Process at Receiver Side* if you want the receiver adapter to identify and ignore any duplicate processing of messages. For more information, see [Define Idempotent Process Call](50-Development/define-idempotent-process-call-84c85d7.md).
-
-    > ### Note:  
-    > This is only available if the selected *Pattern* is *Point-to-Point Asynchronous*.
 
 10. Choose *Next Step*.
 
@@ -136,7 +138,7 @@ You can watch a short video to understand the pipeline approach in a nutshell:
     -   **Sender Details**: Enter the combination of *Sender Component* and *Sender Interface* to be used to create the Alternative Partner in the Partner Directory. The former maps to *Agency* and latter to the *ID* of the Alternative Partner of the partner directory. For more information, see [Managing Partner Directory Entries](50-Development/managing-partner-directory-entries-3d6eee7.md).
 
         > ### Remember:  
-        > -   Scenario name is used to create a partner in the partner directory. If a partner with an identical name already exists, you will need to either rename the scenario or consider deleting the existing partner from the Partner Directory. See: [Managing Partner Directory Entries](50-Development/managing-partner-directory-entries-3d6eee7.md)
+        > -   Scenario name is used to create a partner in the partner directory. If a partner with an identical name already exists, you will need to either rename the scenario or consider deleting the existing partner from the Partner Directory. See [Managing Partner Directory Entries](50-Development/managing-partner-directory-entries-3d6eee7.md).
         > -   If an alternative partner already exists with the same Sender Component and Sender Interface combination, it indicates that the selected scenario has already been migrated. If you still wish to proceed, you must delete the alternative partner.
 
         > ### Caution:  
@@ -145,7 +147,7 @@ You can watch a short video to understand the pipeline approach in a nutshell:
     -   For the JMS receiver adapter, enter a *JMS Queue Name*. The JMS inbound queue for the Integrated Messaging Runtime pipeline is preset to default pipeline `PIPX01`.
 
         > ### Recommendation:  
-        > Use the default pipeline for migration. After the migration, you can update the queue name in your integration flows if you prefer to use another pipeline. See, .
+        > Use the default pipeline for migration. After the migration, you can update the queue name in your integration flows if you prefer to use another pipeline. See [Configure the JMS Receiver Adapter](50-Development/configure-the-jms-receiver-adapter-79edc04.md).
 
     -   **Inbound Conversion Integration Flow**: This section appears if the integration flow includes message conversion and mapping steps and uses ProcessDirect as both the sender and receiver adapters. Define an endpoint that the preceding integration flow uses to invoke this integration flow.
     -   **Outbound Processing Integration Flow**: An integration flow is created for each combination of receiver and interface. For each combination, define an endpoint that the preceding integration flow uses to invoke the outbound integration flows. Refer [pipeline concept](https://help.sap.com/docs/migration-guide-po/migration-guide-for-sap-process-orchestration/pipeline-concept) for more details.
@@ -180,7 +182,7 @@ You can watch a short video to understand the pipeline approach in a nutshell:
 
 -   If needed, use the *Configure* option in read-only mode to change the externalized parameters of the sender and receiver adapters.
 
--   If your source object contains an RFC receiver adapter, make sure that you’ve configured the RFC destination in your SAP BTP cockpit. See [Creating an RFC Destination](50-Development/creating-an-rfc-destination-3b55fa7.md).
+-   If your source object contains an RFC receiver adapter, make sure that you’ve configured the RFC destination in your SAP BTP cockpit. See [Creating and Modifying RFC Destination](50-Development/creating-and-modifying-rfc-destination-3b55fa7.md).
 
 -   If your source object contains a JDBC receiver adapter, make sure that you’ve added the JDBC data source. See [Managing JDBC Data Sources](50-Development/managing-jdbc-data-sources-4c873fa.md).
 

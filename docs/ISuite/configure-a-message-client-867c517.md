@@ -1,8 +1,20 @@
 <!-- loio867c517256d74cc2ad9eab3dd22eb916 -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # Configure A Message Client
 
 Understand how to create a message client to communicate with the message broker.
+
+
+
+<a name="loio867c517256d74cc2ad9eab3dd22eb916__prereq_iq3_4nd_yfc"/>
+
+## Prerequisites
+
+-   You've subscribed to the SAP Integration Suite, and activated the Event Mesh capability.
+-   You've initiated the message broker. See [Initiating the Message Broker](https://help.sap.com/docs/integration-suite/sap-integration-suite/initiating-event-mesh?version=CLOUD)
+-   The entitlements for the message-client plan have been added to your subaccount in the SAP BTP cockpit.
 
 
 
@@ -54,8 +66,6 @@ Create a service instance:
     >             ]
     >         }
     >     },
-    >     "version": "1.1.0",
-    >     "emname": "em-healthcheck",
     >     "namespace": "sap/em/opshealthcheck"
     > }
     > ```
@@ -63,6 +73,7 @@ Create a service instance:
     > ### Note:  
     > -   Refer to [Service Descriptor Syntax](service-descriptor-syntax-b70eaad.md) to understand the different parameters that you can provide in the example.
     > -   We recommend that you use the same value for `service instance name` and `emname`.
+    > -   If you create a message client without a `namespace` it can observe, publish to, and consume from the queues of other clients. We recommend creating a `namespace` for each message client you create.
 
 7.  Choose *Create*.
 
@@ -80,6 +91,14 @@ Create a service binding:
     A binding of the service instance is created to the Event Mesh capability.
 
     You can also view the message client in the SAP Integration Suite UI. Navigate to *Configure* \> *Event Mesh* to view all the associated message clients.
+
+    > ### Remember:  
+    > -   If you delete a message client, the associated webhook subscriptions are deleted, but the associated queues are not. You must manually delete each queue. You can do this by:
+    > 
+    >     -   Before deleting the message client, navigate to *Configure* \> *Event Mesh* \> *Overview* \> *Message Client* \> *Queues*. For each queue, choose<span class="SAP-icons-V5"></span> Actions and then choose :wastebasket: .
+    >     -   After deleting the message client, navigate to*Configure* \> *Event Mesh* \> *Queues*. Search for the queue, and for each queue, choose<span class="SAP-icons-V5"></span> Actions and then choose :wastebasket: .
+    > 
+    > -   If you deactivate the Event Mesh capability in SAP Integration Suite, the associated message clients are not automatically deleted. You must delete the service instances created in BTP cockpit.
 
 
 

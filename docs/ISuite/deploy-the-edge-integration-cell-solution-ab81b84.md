@@ -11,7 +11,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
 ## Prerequisites
 
 > ### Note:  
-> Edge Integration Cell exposes API and Integration Flow endpoints for access by clients. The URL to be used is defined by a Virtual Host. A Virtual Host holds all information required to handle \(m\)TLS handshakes, the actual domain name, TLS key, server, and Trust CA certificates. For Edge Integration Cell, a Default Virtual Host name has to be chosen. Additionally, a key pair needs to be provided, referenced via a Default Virtual Host Key Alias. Currently, a predefined list of Trust CAs is supported.
+> Edge Integration Cell exposes API and Integration Flow endpoints for access by clients. The URL to be used is defined by a Virtual Host. A Virtual Host holds all information required to handle \(m\)TLS handshakes, the actual domain name, TLS key, server, and Trust CA certificates. For Edge Integration Cell, a Default Virtual Host name has to be chosen. Additionally, a key pair needs to be provided, referenced via a Default Virtual Host Key Alias. Currently, a predefined list of Trust CAs is supported. For more information on extending the list of supported CAs, see [3396200/E](https://me.sap.com/notes/3396200/E).
 > 
 > The approach is comparable to the configuring custom domains approach for SAP Cloud Integration. Custom Domains are used if you don't wish to expose the default domain provided by SAP Cloud Integration. In such a scenario, you can construct custom domain names and TLS settings for a specific Cloud Integration instance. For more information, see [Configuring Custom Domains](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/7230b9ff41914cc0969223e6a020104b.html "Allows you to customize the default tenant URL or domain as per your needs and access the tenant using your own the domain.") :arrow_upper_right:.
 > 
@@ -23,7 +23,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
 
 -   You have a valid key pair for the domain name to enable TLS for the Istio gateway configuration. For more information, see [Managing Keystore Entries](50-Development/managing-keystore-entries-2dc8942.md).
 
--   You've a load balancer to be used for exposing the Edge Integration Cell endpoints. On cloud platforms, a load balancer is an infrastructure service, which is available out of the box. For other environments, it has to be be part of your Kubernetes infrastructure.
+-   You've a load balancer to be used for exposing the Edge Integration Cell endpoints. On cloud platforms, a load balancer is an infrastructure service, which is available out of the box. For other environments, it has to be part of your Kubernetes infrastructure.
 
 -   For production environments, you've set up external services for PostgreSQL and Redis.
 
@@ -69,6 +69,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     A shared file system can be enabled to preserve traces or dumps. This option is recommended especially for production environments.
+
+    > ### Note:  
+    > You can't change this property after the initial deployment.
+
+
     
     </td>
     </tr>
@@ -81,6 +86,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Enter storage class for access mode `ReadWriteMany` and binding mode `Immediate`.
+
+    > ### Note:  
+    > You can't change this property after the initial deployment.
+
+
     
     </td>
     </tr>
@@ -150,6 +160,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Enter the storage class for the access mode `ReadWriteMany` and the binding mode `Immediate`.
+
+    > ### Note:  
+    > You can't change this property after the initial deployment.
+
+
     
     </td>
     </tr>
@@ -186,6 +201,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     If your Kubernetes cluster nodes are distributed across availability zones, you can enable this property for your deployment. It has no effect otherwise.
 
     On cloud platforms, multiple availability zones are available.
+
+    > ### Note:  
+    > You can't change this property after the initial deployment.
+
+
     
     </td>
     </tr>
@@ -246,10 +266,10 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </td>
     <td valign="top">
     
-    Select this option for production environments.
+    Select this option for production environments. You need to provide a new, empty database schema for each new deployment.
 
     > ### Note:  
-    > You need to provide a new, empty database schema for each new deployment.
+    > You can't change this property after the initial deployment.
 
 
     
@@ -278,6 +298,9 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     Option to use a dedicated storage class \(access mode `ReadWriteOnce`\).
 
     If this field is left empty, the default storage class is used.
+
+    > ### Note:  
+    > You can't change this property after the initial deployment.
 
     For more information, see [3247839](https://me.sap.com/notes/3247839).
     

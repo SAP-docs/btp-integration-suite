@@ -97,9 +97,9 @@ If you want to create a proxy for an Open Connector instance for a provider that
     On creating the proxy, an encrypted key value map is created with the following name `apim.oc.instance.token` and key name `default`. Also, an open connector policy is attached to the incoming POST flow request of the target endpoint of the APIProxy.
 
     > ### Note:  
-    > -   For an API Proxy, you can have only one open connector policy attached and the content of the open connector policy can’t be modified.
+    > -   For an API proxy, you can have only one open connector policy attached and the content of the open connector policy can’t be modified.
     > 
-    > -   An API Proxy consists of a virtual host and a base path. The base path can be identical for multiple API proxies, provided the API proxies have different virtual hosts. This means, for an API Proxy, the combination of the virtual host and base path should be unique.
+    > -   An API proxy consists of a virtual host and a base path. The base path can be identical for multiple API proxies, provided the API proxies have different virtual hosts. This means, for an API proxy, the combination of the virtual host and base path should be unique.
     > 
     >     The example below explains the same, where AP1 is proxy 1, AP2 is proxy 2, VH1 is Virtual Host 1, VH2 is the Virtual Host 2, and BP\(A\) is the base path.
     > 

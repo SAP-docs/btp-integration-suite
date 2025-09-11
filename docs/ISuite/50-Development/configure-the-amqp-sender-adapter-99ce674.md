@@ -13,7 +13,7 @@ You use the Advanced Message Queuing Protocol \(AMQP\) sender adapter to consume
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > Queues, topics, and messages can only be monitored by using tools provided by the message broker provider. Those monitors are not integrated into SAP Integration Suite . Using SAP Integration Suite , you can only monitor the integration flows using the AMQP adapter and the messages that are sent to or consumed from the message broker.
@@ -314,12 +314,12 @@ Note that topics are not supported in the sender adapter, only queues and topic 
 <tr>
 <td valign="top">
 
-*Number of Current Processes* 
+*Number of Concurrent Processes* 
 
 </td>
 <td valign="top">
 
-Specify the number of processes used for parallel message processing. Note that these processes are started from each worker node.
+Specify the number of processes used for parallel message processing. This value applies per worker instance, allowing multiple messages to be processed in parallel on each instance.
 
 > ### Note:  
 > The maximum number of parallel processes cannot exceed 99. The default is set to 1.
@@ -410,7 +410,7 @@ Define one delivery status that is to be sent to the message broker after the ma
 > ### Note:  
 > See this [general information on AMQP](http://docs.oasis-open.org/amqp/core/v1.0/amqp-core-complete-v1.0.pdf) on delivery statuses and their meaning.
 > 
-> You can use the following headers to configure a delay in retry processing: `JMSRedelivered` and `JMSXDeliveryCount`. For more information, see the SAP Community blog [Cloud Integration – Connecting to Messaging Systems using the AMQP Adapter](https://community.sap.com/t5/technology-blogs-by-sap/cloud-integration-connecting-to-messaging-systems-using-the-amqp-adapter/ba-p/13419906).
+> You can use the `JMSRedelivered` header to configure a delay in retry processing. For more information, see the SAP Community blog [Cloud Integration – Connecting to Messaging Systems using the AMQP Adapter](https://community.sap.com/t5/technology-blogs-by-sap/cloud-integration-connecting-to-messaging-systems-using-the-amqp-adapter/ba-p/13419906).
 > 
 > This blog also contains an overview of the recommended settings for different message brokers.
 

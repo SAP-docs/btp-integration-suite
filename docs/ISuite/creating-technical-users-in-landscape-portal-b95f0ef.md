@@ -81,5 +81,5 @@ You've created two technical users in the landscape portal of your data space, o
 
 ## Next Steps
 
-Now, you can continue with [Configuring Connector Setup Using the UI \(Recommended Approach\)](configuring-connector-setup-using-the-ui-recommended-approach-4909d3f.md) or [Configuring Connector Setup Using the API \(Alternative Approach\)](configuring-connector-setup-using-the-api-alternative-approach-bfa408c.md).
+Now, you can continue with [Configuring Connector Setup Using the UI](configuring-connector-setup-using-the-ui-4909d3f.md).
 

@@ -8,16 +8,20 @@ Supported modes of the Quota policy:
 
 -   *Calendar*:
 
-    In calendar mode, the reset time for the first quota refresh cycle is synchronized with the clock. The quota counter is refreshed according to the duration and time unit specified by the user.
+    In calendar mode, quota reset aligns with the clock based on the specified duration and unit.
+
+    For hourly quotas, resets happen at the top of the hour \(e.g., 9:00 am, 10:00 am, etc.\), regardless of when the first call was made.
+
+    For monthly quotas, resets always occur on the first day of each month, not a month from the initial request.
 
     Consider the following examples:
 
-    -   For instance, if you configure a calendar-based quota to start counting at 8:30 am and set the duration to 60 minutes, the initial quota reset will occur at 9:00 am. Subsequently, in each subsequent cycle, the reset will take place every 60 minutes, from 9:00 am to 10:00 am, 10:00 am to 11:00 am, and so on.
+    -   **Minutes/Hours**: If you set a 60-minute quota starting at 8:15 AM, the first quota period will end at the next top of the hour, which is 9:00 AM. Subsequent resets will occur every hour on the hour: 10:00 AM, 11:00 AM, and so on.
 
-    -   If the duration is specified in months, the counter will reset on the first day of the following month. For example, if the counting begins at 8:30 am on June 26 and the duration is set as 1 month, then the counter will reset on July 1st. Subsequently, the counter will reset on August 1st, September 1st, and so on, with each refresh cycle.
+    -   **Months**: : If a quota begins on June 26th with a duration of "1 month", it will reset at the beginning of the next calendar month, which is midnight on July 1st. The next resets will be on August 1st, September 1st, and so on..
 
 
-    The start time for the next refresh cycle will be calculated as follows:
+    **Reset Timing Summary**: The following table shows when the next reset would occur based on the chosen time unit, assuming the current time is 11:55:25 on Monday, November 21, 2022.
 
 
     <table>
@@ -29,7 +33,7 @@ Supported modes of the Quota policy:
     </th>
     <th valign="top">
 
-    Example of the start time of the next refresh cycle \(UTC\)
+    Next Reset Time \(UTC\)
     
     </th>
     </tr>
@@ -107,20 +111,24 @@ Supported modes of the Quota policy:
     </tr>
     </table>
     
--   *Dynamic*: Dynamic Quota enforcement causes the count to start when the first request message is received from an app. Under flexible Quota enforcement, the start time varies; each app has its own start time based on when the first request is received. This enables you to provide quotas that support access periods of 1 week, 1 month, or 6 months, customized for each app.
+-   *Dynamic*: In dynamic mode, the quota period starts when an application makes its first request.
 
--   *Fixed*: Even in Fixed mode, the counter starts counting from the specified start time. However, it is not aligned with the clock and resets after the specified duration for which the quota is allotted has been reached. It considers 28 days as equivalent to 1 month.
+    Each application has its own independent quota window, based on its start time. This allows flexible, personalized quota durations like 1 week or 1 month per application.
 
-    Consider the following examples:
+-   *Fixed*: In fixed mode, the quota starts at a specified time and resets strictly after the configured duration, not aligned to the clock.
 
-    -   If the counting begins at 8:30 am on June 26, and the duration is set as 60 minutes, then the counter will reset at 9:30 am on June 26.
+    A "month" is treated as a fixed 28-day period, not a calendar month. For example, a 1-month quota starting on June 26 at 8:30 am will reset on July 24 at 8:30 am.
 
-        Similarly, if the counting begins at 8:30 am on June 26 and the duration is set as 1 month, then the counter will reset after 28 days, which is July 24th.
+    Examples:
+
+    -   **Minutes/Hours**: If the count starts at 8:30 AM with a duration of 60 minutes, it will reset exactly at 9:30 AM \(8:30 AM + 60 minutes\). This differs from Calendar mode, which would reset at 9:00 AM.
+
+    -   **Months**: If counting begins at 8:30 AM on June 26th with a 1-month duration, the counter will reset 28 days later, on July 24th. This is different from Calendar mode, which would have reset on July 1st
 
 
 
 **Related Information**  
 
 
-[Adding Quota Policy Step to API Endpoint](adding-quota-policy-step-to-api-endpoint-8d1b56b.md "Adding Quota policy step to an API artifact for traffic management.")
+[Add Quota Policy to API Endpoint](add-quota-policy-to-api-endpoint-8d1b56b.md "Adding quota policy to an API artifact for traffic management.")
 

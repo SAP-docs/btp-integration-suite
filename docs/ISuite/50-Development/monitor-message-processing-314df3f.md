@@ -166,7 +166,7 @@ You can filter for artifacts with a specific sequence of characters in their nam
 </td>
 <td valign="top">
 
-Allows you to filter for messages using different of IDs.
+Allows you to filter for messages using different IDs.
 
 See: [Using IDs to Filter Messages](using-ids-to-filter-messages-a820752.md)
 
@@ -268,7 +268,7 @@ After the header, the following sections contain detailed information about the 
 
     Contains
 
-    -   The *Message ID*
+    -   The **Message ID**
 
     -   The *Correlation ID*
     -   The *Sender*

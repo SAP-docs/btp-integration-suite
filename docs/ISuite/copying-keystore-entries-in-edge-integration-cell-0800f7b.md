@@ -19,6 +19,7 @@ The Keystore Monitor allows a tenant administrator to manage the tenant keystore
 > -   The maximum number of keystores is limited to 20 per tenant.
 > 
 > -   You can assign up to 20 runtimes to a keystore.
+> -   The maximum number of Edge Integration Cell instances is 20 per tenant.
 
 > ### Caution:  
 > To change the existing assignment of a keystore to a specific runtime, can cause message processing failures.

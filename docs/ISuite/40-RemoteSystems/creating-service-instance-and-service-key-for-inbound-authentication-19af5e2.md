@@ -394,11 +394,6 @@ With this step, you create a service key for the instance.
     > 
     > -   or one certificate with pinning enabled and another certificate with the same subjectDN and issuerDN where pinning is disabled.
 
-    > ### Note:  
-    > The Edge Integration Cell runtime uses a local component for inbound certificate authentication. Edge Integration Cell allows you to disable certificate pinning. However, even with pinning disabled, both current and previously used certificates \(those with older issue dates\) will still authenticate successfully.
-    > 
-    > To fully revoke a previous certificate, you must delete the old service key associated with it and create a new key containing only the updated certificate. For more information, see [Edge Local Authentication and Authorization](../edge-local-authentication-and-authorization-510d447.md).
-
 
     
     </td>

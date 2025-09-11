@@ -2,7 +2,7 @@
 
 # Managing Cloud Foundry Microservices through API Management
 
-The *apim-as-route-service* plan helps you in managing Cloud Foundry applications by including policies such as rate limit, quota. The service instance you create through this plan allows you to bind to the route service and creates an API Proxy. This API Proxy serves in establishing a secure connection with your Cloud Foundry application and all the calls made to the Cloud Foundry application are routed via*API Management, API portal*.
+The *apim-as-route-service* plan helps you in managing Cloud Foundry applications by including policies such as rate limit, quota. The service instance you create through this plan allows you to bind to the route service and creates an API proxy. This API proxy serves in establishing a secure connection with your Cloud Foundry application and all the calls made to the Cloud Foundry application are routed via*API Management, API portal*.
 
 
 
@@ -14,7 +14,7 @@ This service plan is necessary if you have a microservice built and deployed on 
 
 ![](images/Route_Service_Plan_e26cd92.png)
 
-The service instance you create through this plan allows you to bind to the route service and creates an API Proxy. This API Proxy serves in establishing a secure connection with your Cloud Foundry application and all the calls made to the Cloud Foundry application are routed via*API Management, API portal*.
+The service instance you create through this plan allows you to bind to the route service and creates an API proxy. This API proxy serves in establishing a secure connection with your Cloud Foundry application and all the calls made to the Cloud Foundry application are routed via*API Management, API portal*.
 
 
 

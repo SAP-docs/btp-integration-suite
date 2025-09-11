@@ -61,6 +61,8 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
     > ### Note:  
     > For multiple payload files \(ZIP\), the upload is limited to 25 payload files and an overall size of 10MB for the zip archive.
 
+    To learn more, see the blog [Integration Advisor - multi-payload support for MIG creation](https://community.sap.com/t5/integration-blog-posts/integration-advisor-multi-payload-support-for-mig-creation/ba-p/14151474).
+
 9.  When the MIG is created, any elements or attributes in the message structure are auto-selected when they're present in a sample payload file. For single payloads files, you can additionally select *Use file content as example values* to use payload values as example values. Choose *Next*.
 
 10. In the *Node Selection* step, a table listing down the nodes in the payload is displayed. Select the nodes that you want to qualify.

@@ -218,7 +218,7 @@ SAP Passports are defined data structures that carry correlation information alo
 To configure the RFC sender adapter, you must:
 
 -   Create a new destination of TCP/IP type in the ABAP system to establish a connection in the sender system. Note that this prerequisite step is only applicable to ABAP systems and doesn't apply to non-ABAP systems. For more information, see [Setting Up an RFC Destination for the RFC Adapter](https://help.sap.com/docs/SAP_NETWEAVER_750/5cf7d2de571a45cc81f91261668b7361/448f8cc0c5a43672e10000000a114a6b.html?q=Setting+Up+an+RFC+Destination+for+the+RFC+Adapter).
--   Create a new RFC destination with Proxy Type *Local* in BTP Destinations environment. For more information, see [Creating an RFC Destination](creating-an-rfc-destination-3b55fa7.md).
+-   Create a new RFC destination with Proxy Type *Local* in BTP Destinations environment. For more information, see [Creating and Modifying RFC Destination](creating-and-modifying-rfc-destination-3b55fa7.md).
 -   Set up SNC on Edge Integration Cell for productive use of the RFC sender adapter. For more information, see [Set Up SNC on Edge Integration Cell](../60-Security/set-up-snc-on-edge-integration-cell-c2315d3.md).
 -   When you enable SNC, you should also activate it in the TCP/IP destinations. For more information, see [RFC: TCP/IP Connection](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-us/4d/a8410336831f8de10000000a15822b/frameset.htm).
 

@@ -11,7 +11,7 @@ The JMS \(Java Message Service\) sender adapter enables asynchronous decoupling 
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > Note that this adapter works with a message broker provided by SAP \(based on the SAP Event Mesh capability\). It does not support connectivity to any other, customer-provided message brokers. The usage of this adapter is supported by all SAP Integration Suite editions, except the basic edition. See SAP Note [2903776](https://me.sap.com/notes/2903776).
@@ -174,6 +174,8 @@ Enter the number of concurrent processes for each worker node. The recommended v
 
 Enter a value for the amount of time to wait before retrying message delivery.
 
+For exclusive queues, enter a value between 1 to 60 minutes, inclusive.
+
 > ### Note:  
 > In the JMS sender channel, you can configure the time intervals between retries, but you cannot configure that processing will end after a specific number of retries. For non-exclusive queues, if required, you can configure this in an exception subprocess that calls a local process for retry handling using the header `SAPJMSRetries` set by the JMS sender adapter.
 > 
@@ -198,7 +200,7 @@ Check the box to double the retry interval after each unsuccessful retry.
 <tr>
 <td valign="top">
 
-*Maximum Retry Interval \(in m\)\**
+*Maximum Retry Interval \(in min\)\**
 
 \(only configurable when *Exponential Backoff* is selected\)
 
@@ -206,6 +208,8 @@ Check the box to double the retry interval after each unsuccessful retry.
 <td valign="top">
 
 Enter a value for the maximum amount of time to wait before retrying message delivery. The minimum value is 10 minutes. The default value is set to 60 minutes.
+
+For exclusive queues, enter a value between 1 to 180 minutes, inclusive.
 
 </td>
 </tr>

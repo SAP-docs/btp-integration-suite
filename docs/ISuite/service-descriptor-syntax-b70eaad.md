@@ -38,61 +38,31 @@ You can use the following attributes in your service descriptor:
 > ### Sample Code:  
 > ```
 > {
->     "rules": {
->         "topicRules": {
->             "publishFilter": [
->                 "${namespace}/*"
->             ],
->             "subscribeFilter": [
->                 "${namespace}/*"
->             ]
->         },
->         "queueRules": {
->             "publishFilter": [
->                 "${namespace}/*"
->             ],
->             "subscribeFilter": [
->                 "${namespace}/*"
->             ]
->         }
+>   "rules": {
+>     "topicRules": {
+>       "publishFilter": [
+>         "${namespace}/*"
+>       ],
+>       "subscribeFilter": [
+>         "${namespace}/*"
+>       ]
 >     },
->     "resources": {
->         "units": 10
->     },
->     "version": "1.1.0",
->     "emname": "em-healthcheck",
->     "namespace": "sap/em/opshealthcheck"
+>     "queueRules": {
+>       "publishFilter": [
+>         "${namespace}/*"
+>       ],
+>       "subscribeFilter": [
+>         "${namespace}/*"
+>       ]
+>     }
+>   },
+>   "resources": {
+>     "units": 10
+>   },
+>   "namespace": "sap/em/opshealthcheck"
 > }
 > 
 > ```
-
-
-
-### emname
-
-Specifies the name of the message client and is used to easily identify message clients. It must be unique for a subaccount. It's recommended that you use the same value for service instance name and emname.
-
-The syntax for emname is:
-
--   Type: attribute
--   Allowed characters: \[a-zA-Z0-9\_-\]
--   Max Length: 100
--   Required: true
-
-
-
-### version
-
-It specifies the version of the service descriptor.
-
-The syntax for the version is:
-
--   Type: attribute
--   Allowed versions: 1.1.0
--   Required: true
-
-> ### Note:  
-> If you're using the new syntax for rules, the field `"version": 1.1.0` is required. The version field is optional when you use the deprecated syntax.
 
 
 

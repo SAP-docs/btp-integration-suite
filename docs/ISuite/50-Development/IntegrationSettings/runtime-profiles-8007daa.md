@@ -131,7 +131,7 @@ See [Edge Integration Cell Runtime Scope](../../edge-integration-cell-runtime-sc
 </td>
 <td valign="top">
 
-[Adding an API Artifact](../adding-an-api-artifact-c2fe62c.md) 
+[Create an API Artifact](../create-an-api-artifact-c2fe62c.md) 
 
 </td>
 </tr>

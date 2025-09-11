@@ -105,9 +105,9 @@ To create a new questionnaire go to *Settings* \> *Questionnaires* and do the fo
 
 <a name="loio4dc1b9cbe4af4715b53ba944f59344c3__section_rj4_zkp_42c"/>
 
-## Parameters
+## Properties
 
-The following parameters can be defined for your questions.
+The following properties can be defined for your questions.
 
 ****
 

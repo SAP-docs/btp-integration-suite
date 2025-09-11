@@ -66,6 +66,18 @@ Example for SFTP: `user_sftp@ld1234.mycompany.corp`
 <tr>
 <td valign="top">
 
+*Name* 
+
+</td>
+<td valign="top">
+
+Name of the Lock
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Entry* 
 
 </td>

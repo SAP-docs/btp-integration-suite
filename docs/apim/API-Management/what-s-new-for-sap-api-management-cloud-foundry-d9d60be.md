@@ -92,6 +92,650 @@ API Management
 </td>
 <td valign="top">
 
+XML Threat Protection Policy
+
+</td>
+<td valign="top">
+
+The XML Threat Protection policy has been introduced to safeguard XML-based applications and APIs from malicious attacks. This policy enforces strict rules on XML data to prevent common threats such as recursive payloads, excessive node depth, and oversized payloads. For more infornation, see [XML Threat Protection Policy](https://help.sap.com/docs/integration-suite/sap-integration-suite/xml-threat-protection-2e04b9373d7e4908936a6c219e012d3c?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-09-07
+
+</td>
+<td valign="top">
+
+2025-09-07
+
+</td>
+<td valign="top">
+
+2507
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Reusable API Artifact
+
+</td>
+<td valign="top">
+
+A reusable API artifact can now be created, allowing its components, endpoints, and services to be leveraged across multiple applications, projects, or contexts—without the need for significant rewrites or modifications. This enhances consistency, accelerates development, and promotes reuse within your integration landscape. For more information, see [Reusable API Artifact](https://help.sap.com/docs/integration-suite/sap-integration-suite/reusable-api-artifact?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-09-07
+
+</td>
+<td valign="top">
+
+2025-09-07
+
+</td>
+<td valign="top">
+
+2507
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Integration of API Management with SAP Cloud ALM for Centralized Developer Hub Certificate Expiry Monitoring
+
+</td>
+<td valign="top">
+
+You can now integrate API Management with SAP Cloud Application Lifecycle Management \(CALM\). By leveraging CALM's health monitoring capabilities, you can configure automated email notifications to be sent when centralized Developer Hub certificates approach their expiry date. This enables proactive certificate management and helps prevent unexpected disruptions. For more information, see [Monitor the Health of Certificates Using SAP Cloud ALM](https://help.sap.com/docs/integration-suite/sap-integration-suite/monitor-health-of-custom-domain-virtual-host-certificates-using-sap-cloud-alm?q=Cloud+ALM&version=CLOUD)
+
+SAP API Management customers choose: [Monitor the Health of Certificates Using SAP Cloud ALM](https://help.sap.com/docs/sap-api-management/sap-api-management/monitor-health-of-custom-domain-virtual-host-certificates-using-sap-cloud-alm?version=Cloud) 
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-07-27
+
+</td>
+<td valign="top">
+
+2025-07-27
+
+</td>
+<td valign="top">
+
+2506
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Introduction of New API Modeling Checkbox
+
+</td>
+<td valign="top">
+
+A new checkbox, *API Modelling*, has been introduced in the activation process for API Management. Previously, after selecting the *Manage APIs* checkbox, it was noted that the API portal was enabled by default on the next screen. Now, instead of this note, the *API Modelling* checkbox will be displayed, which will also be enabled by default.
+
+This change provides a more intuitive way to activate the API Management capabilities during setup. For more information, see [Activating and Configuring API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-07-06
+
+</td>
+<td valign="top">
+
+2025-07-06
+
+</td>
+<td valign="top">
+
+2505
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Improved Navigation for API Management Onboarding
+
+</td>
+<td valign="top">
+
+The navigation for onboarding the API Management capability has been updated. Previously, you could begin by selecting the *Set Up* button under *Settings* \> *APIs*. Now, to activate the API Management runtime and initiate onboarding, navigate to *Settings* \> *Runtimes*, scroll down to the *API Management* section and choose *Set Up*. For more information, see [Setting Up API Management](https://help.sap.com/docs/integration-suite/sap-integration-suite/setting-up-api-management-service?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-07-06
+
+</td>
+<td valign="top">
+
+2025-07-06
+
+</td>
+<td valign="top">
+
+2505
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Security Schemes for API Artifact on
+
+</td>
+<td valign="top">
+
+With this enhancement, API artifacts now automatically include built-in authentication mechanisms upon creation and publication, enabling application developers to securely access and test the APIs.
+
+This configuration is reflected in the API specification—under the securitySchemes section for OpenAPI 3.0, and under securityDefinitions for version 2.0. For more information, see [Security Specification for API Artifact](https://help.sap.com/docs/integration-suite/sap-integration-suite/security-specification-for-api-artifact?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-07-06
+
+</td>
+<td valign="top">
+
+2025-07-06
+
+</td>
+<td valign="top">
+
+2505
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Availibility of the Externalization feature on
+
+</td>
+<td valign="top">
+
+You can now use the externalization feature to define API policies that can retrieve externalized configuration values during runtime. These parameters can be utilized later without modifying the standard API artifact. For more information, see [Externalize Parameter for API Artifact](https://help.sap.com/docs/integration-suite/sap-integration-suite/externalize-parameter-for-api-artifact?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-07-06
+
+</td>
+<td valign="top">
+
+2025-07-06
+
+</td>
+<td valign="top">
+
+2505
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Tenant Cloning Tool version 2.0.1
+
+</td>
+<td valign="top">
+
+The 2.0.1 version of the Tenant Cloning Tool is now available.
+
+See: [Tenant Cloning Tool Behavior](https://help.sap.com/docs/integration-suite/sap-integration-suite/tenant-cloning-tool-behavior?version=CLOUD)
+
+-   [Clone API Management Content \(Neo to Cloud Foundry\)](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts?version=CLOUD)
+
+-   [Clone API Management Content between Cloud Foundry Environments](https://help.sap.com/docs/integration-suite/sap-integration-suite/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=CLOUD)
+
+
+SAP API Management customers choose: [Tenant Cloning Tool Behavior](https://help.sap.com/docs/sap-api-management/sap-api-management/tenant-cloning-tool-behavior?version=Cloud)
+
+-   [Clone API Management Content \(Neo to Cloud Foundry\)](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts?version=Cloud)
+
+-   [Clone API Management Content between Cloud Foundry Environments](https://help.sap.com/docs/sap-api-management/sap-api-management/clone-api-management-artifacts-during-cloud-foundry-to-cloud-foundry-migration?version=Cloud)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-06-29
+
+</td>
+<td valign="top">
+
+2025-06-29
+
+</td>
+<td valign="top">
+
+2505
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Client SDK version 2.0.0
+
+</td>
+<td valign="top">
+
+The outdated libraries in the Client SDK have been upgraded to the latest version. For more information, see [API Services](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-services?version=CLOUD).
+
+SAP API Management customers choose: [API Services](https://help.sap.com/docs/sap-api-management/sap-api-management/api-services?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-06-15
+
+</td>
+<td valign="top">
+
+2025-06-15
+
+</td>
+<td valign="top">
+
+2504
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Change in Navigation for Enabling Analytics AI features
 
 </td>

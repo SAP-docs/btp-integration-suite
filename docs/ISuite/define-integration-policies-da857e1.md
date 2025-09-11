@@ -106,5 +106,5 @@ Based on the recommendations provided by the policies for the usage in certain d
 4.  Select *Create*.
 
 > ### Note:  
-> You can see the order of technology preference when selecting *Select Technology*. It shows you the selected technologies in order of their corresponding integration policies. For more information on technology selection, refer to [Decide on an Integration Technology](decide-on-an-integration-technology-fb4bc24.md).
+> You can see the order of technology preference when selecting *Select Technology*. It shows you the selected technologies in order of their corresponding integration policies. For more information on technology selection, refer to  <?sap-ot O2O class="- topic/xref " href="fb4bc24faec44bdb9cdc1d02d9b5ca99.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/da857e1df2b7464983ec7e16398fd0c4.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 

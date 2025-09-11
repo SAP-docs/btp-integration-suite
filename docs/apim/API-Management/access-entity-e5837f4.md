@@ -511,5 +511,5 @@ verifier
 
 [Assign Message](assign-message-523efe6.md "This policy allows you to create new or modify an existing HTTP request or response message.")
 
-[Extract Variables](extract-variables-dad6ef6.md "The Extract variables policy can be used to extract content from the HTTP request or response messages of the API Proxy and assign that content to specific variables that can be accessed during the execution of the API Proxy.")
+[Extract Variables](extract-variables-dad6ef6.md "The Extract variables policy can be used to extract content from the HTTP request or response messages of the API proxy and assign that content to specific variables that can be accessed during the execution of the API proxy.")
 

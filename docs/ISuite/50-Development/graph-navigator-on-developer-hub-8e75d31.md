@@ -10,9 +10,11 @@ The Graph Navigator is a tool that you use to inspect business data graphs.
 
 ## Prerequisites
 
--   You are assigned the role of *Graph\_Navigator\_Viewer*. For more information, see [Define Users for Graph](initial-setup-12ad448.md#loio12ad448225ac47049982d9faab7978a3__section_DefineUsers).
+-   You are assigned the role of *GraphNavigator.Viewer*. For more information, see [Define Users for Graph](initial-setup-12ad448.md#loio12ad448225ac47049982d9faab7978a3__section_DefineUsers).
 
--   You have already created a business data graph in Graph on the Integration Suite home page. For more information, see:
+-   You are optionally assigned the role of *GraphNavigator.Tryout* which allows you to explore business data graphs. For more information, see [Define Users for Graph](initial-setup-12ad448.md#loio12ad448225ac47049982d9faab7978a3__section_DefineUsers).
+
+-   You have already created a business data graph in Graph on the SAP Integration Suite home page. For more information, see:
 
     -   [Create a Business Data Graph in Integration Suite](create-a-business-data-graph-in-integration-suite-42daf3b.md)
 

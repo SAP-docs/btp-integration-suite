@@ -64,7 +64,7 @@ OK
 </td>
 <td valign="top">
 
-Temporary storage usage is within the recommended limit of 2.5 GB.
+Temporary storage usage is within the recommended limit of 6 GB.
 
 </td>
 </tr>
@@ -81,7 +81,7 @@ Entitlement Exceeded
 </td>
 <td valign="top">
 
-Temporary storage usage exceeds the recommended limit of 2.5 GB.
+Temporary storage usage exceeds the recommended limit of 6 GB.
 
 </td>
 </tr>

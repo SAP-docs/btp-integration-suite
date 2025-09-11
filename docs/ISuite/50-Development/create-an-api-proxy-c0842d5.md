@@ -2,7 +2,7 @@
 
 # Create an API Proxy
 
-This topic describes the steps to create an API proxy from the Integration Suite.
+This topic describes the steps to create an API proxy from the SAP Integration Suite.
 
 
 
@@ -14,7 +14,7 @@ To build APIs, you must do the following:
 
 -   Make sure that you have the REST, OData, or SOAP URL of the service that you want to expose as an API.
 -   Browse for a service on a specific API provider. To do so, you must configure the required API provider on the *Configure* tab.
--   You’ve created an instance against ORG/USER secret for creating an API Proxy from an Open Connector type API Provider.
+-   You’ve created an instance against ORG/USER secret for creating an API proxy from an Open Connector type API provider.
 
 
 
@@ -148,7 +148,7 @@ Instead of consuming services directly, application developers can access API pr
     </td>
     <td valign="top">
     
-    You can choose URL, API Provider, or API proxy, as the target endpoint as well as enter target endpoint rules.
+    You can choose URL, API provider, or API proxy, as the target endpoint as well as enter target endpoint rules.
     
     </td>
     </tr>
@@ -188,7 +188,7 @@ Instead of consuming services directly, application developers can access API pr
     > -   For a SOAP- and REST-based service, the *Resources* tab appears. Add the resources manually.
 
     > ### Note:  
-    > In case you want to restrict your users from accessing all the resources associated with the API Proxy, you need to create a new Product, add the required API to the Product, and select the resources for which you want to provide access. For more information, see [Create a Product](create-a-product-d769622.md).![](images/Add_Resources_6351be2.png)
+    > In case you want to restrict your users from accessing all the resources associated with the API proxy, you need to create a new Product, add the required API to the Product, and select the resources for which you want to provide access. For more information, see [Create a Product](create-a-product-d769622.md).![](images/Add_Resources_6351be2.png)
 
     -   For a *REST* service, add a resource as follows:
 
@@ -230,7 +230,7 @@ Instead of consuming services directly, application developers can access API pr
     -   *Put*: Update an entity.
 
         > ### Note:  
-        > API Management generates PUT operation as the default update operation. However, you can override the default update operation for API Proxy of type OData. For more information, see [Overriding the Default Update Operation for API Proxy of Type OData](overriding-the-default-update-operation-for-api-proxy-of-type-odata-4a12c59.md).
+        > API Management generates PUT operation as the default update operation. However, you can override the default update operation for API proxy of type OData. For more information, see [Overriding the Default Update Operation for API Proxy of Type OData](overriding-the-default-update-operation-for-api-proxy-of-type-odata-4a12c59.md).
 
     -   *Delete*: Delete an entity.
 

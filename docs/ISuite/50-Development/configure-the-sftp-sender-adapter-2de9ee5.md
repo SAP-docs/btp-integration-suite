@@ -11,7 +11,7 @@ The SFTP sender adapter connects an SAP Integration Suite tenant to a remote sys
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -30,18 +30,34 @@ If you have configured a **sender** SFTP adapter, message processing is performe
 
 ![](images/SFTP_Sender_Adapter_-_Tenat_reads_from_server_2081741.png "SFTP Sender Adapter: Tenant reads files from SFTP server")
 
-
-
-### 
-
 > ### Note:  
 > This adapter does **not** support connections to FTP servers.
 > 
-> See: [FTP Adapter](ftp-adapter-4464f89.md).
+> See [FTP Adapter](ftp-adapter-4464f89.md)
 
-As a prerequisite to use this adapter, you need to set up a connection to an SFTP server as described under: [Setting Up Inbound SFTP Connections \(Details\)](../40-RemoteSystems/setting-up-inbound-sftp-connections-details-e72eba4.md).
 
-[Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
+
+
+
+### Prerequisite
+
+-   Set up a connection to an SFTP server as described in [Setting Up Inbound SFTP Connections \(Details\)](../40-RemoteSystems/setting-up-inbound-sftp-connections-details-e72eba4.md).
+-   To develop an integraion scenario in the integration flow editor, see [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
+
+
+
+### Authentication Backoff
+
+Upon three consecutive authentication failures during polling, the system initiates a backoff mechanism to prevent excessive failed attempts and reduce server load.
+
+It will skip the next five polling attempts or wait for 15 minutes before the next poll, whichever is longer. Following these skipped polls, another authentication attempt is triggered. If this attempt fails, the system will skip twice as many polls as the previous skip count. This exponential backoff continues until a successful authentication. If the next polling attempt \(after skipped attempts\) fails due to a reason other than authentication, the backoff mechanism is reset and is initiated again only after three consecutive authentication failures.
+
+> ### Note:  
+> -   **Maximum Poll Interval**: If the poll skip interval reaches 24 hours, the system ensures that at least one poll occurs every 24 hours.
+> -   Exclusion: The skipping process does not apply to integration flows with a polling frequency greater than 24 hours.
+> -   **Credential** Update: If credentials are updated, you must:
+>     -   Use the [*connectivity test*](performing-connectivity-tests-d5b2fae.md) to verify new credentials after updating the [*security material*](managing-security-material-b8ccb53.md).
+>     -   Either [*restart*](manage-integration-content-09a7223.md) the integration flow or wait until the system reaches the skip threshold to resume polling. Note that restarting the integration flow resets the backoff mechanism.
 
 Once you have created a sender channel and selected the SFTP sender adapter, you can configure the following attributes.
 
@@ -154,6 +170,7 @@ Name of the file to be read. If you do not enter a file name and the parameter r
 > 
 > -   Ensure that too complex regex patterns are not entered. A default value of 5 seconds is set for evaluation of regex expression.
 > -   Regex pattern must be valid; invalid patterns may lead to unexpected results or errors.
+> -   In the JSch library, the characters `?` and `*` and `%` are used as wild card symbols for pattern matching. File names containing these characters are treated as wild cards, which means they might not be processed as literal file names. Hence, avoid using ? and \* and % in file names.
 
 > ### Caution:  
 > Files with file names longer than 100 characters are processed as follows:
@@ -434,6 +451,28 @@ Prevents files that are in the process of being written from being read from the
 <tr>
 <td valign="top">
 
+*Read Lock Check Interval*\(in ms\)
+
+</td>
+<td valign="top">
+
+Specify the interval value \(in milliseconds\) used for pausing between attempts to acquire the read lock.
+
+The timeout value for this **Read Lock** is four times the interval value. This timeout defines the maximum waiting time to acquire a read lock on a file before skipping it, ensuring that the file is not consumed while being written. If the lock cannot be acquired within this timeout, file processing is skipped and attempted again during the next polling cycle.
+
+> ### Caution:  
+> Avoid setting the interval value:
+> 
+> -   Too high as it can result in longer times to acquire the read lock and may also delay subsequent polling cycles.
+> -   Too low as it may cause files to be skipped during polling. The recommended minimum value is **100 ms**.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Empty File Handling* 
 
 </td>
@@ -662,7 +701,7 @@ You can select one of the following options:
 
     Select this option for SFTP servers that do not allow deletion or moving of files, but the files are to be read only once.
 
-    Note that when you choose this option, the system only takes into account the file name to decide whether it is the same file or not. Attributes such like file size, timestamp, hash value, for example, are ignored.
+    \(default\): Stores the file names in a database to synchronize between multiple worker nodes and to prevent the files from being read again when the runtime node is restarted. File name entries are deleted by default after 90 days.Note that when you choose this option, the system only takes into account the file name to decide whether it is the same file or not. Attributes such like file size, timestamp, hash value, for example, are ignored. \(default\): Stores the file names in a database to synchronize between multiple worker nodes and to prevent the files from being read again when the runtime node is restarted. File name entries are deleted by default after 90 days.
 
     If you have also selected *Done File Expected* as *Read Lock Strategy*, an entry will be created in the idempotent repository; the done file will not be deleted.
 
@@ -759,7 +798,7 @@ The file size limit :
 -   Default Value: 40 MB
 
 -   Minimum Value: 0 MB
--   Maximum Value: 2,147,483,647 MB
+-   Maximum Value: 2024 MB
 
 **Polling Criteria:**
 
@@ -888,6 +927,52 @@ Monthly
 <td valign="top">
 
 Select the day of the month on which the operation has to be executed. Also indicate the time or the interval for the schedule to recur.
+
+</td>
+</tr>
+<tr>
+<td valign="top" rowspan="2">
+
+*Advanced*
+
+\(Option is available for adapter version 1.20 and above\)
+
+</td>
+<td valign="top">
+
+-   *Seconds*
+
+-   *Minutes*
+
+-   *Hours*
+
+-   *Days*
+
+-   *Months*
+
+-   *Years*
+
+
+
+
+</td>
+<td valign="top">
+
+Create a schedule by choosing the different units of time measurement available in seconds, minutes, hours, days, months, and years. The resulting time schedule is a combined configuration from the multiple options that you choose. The default schedule recurs at every 5th minute starting at the 0th second.
+
+With the *Advanced* scheduler option, you can configure complex and granular schedules using a combination of various units of time measurement. For example, the last day of the month, the last weekday of the week, specific days in a month or year, every few minutes, between certain hours, and so on. For sample use cases, read the [blog](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-integration-suite-advanced-scheduler-configuration/ba-p/13564143).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Time Zone*
+
+</td>
+<td valign="top">
+
+The time zone that you want to use as a reference for the configured date and time.
 
 </td>
 </tr>

@@ -32,7 +32,7 @@ Integration content
 </td>
 <td valign="top">
 
-500 MB
+2 GB
 
 Refer to the SAP Community blog: [Content Size Limits](https://blogs.sap.com/2020/08/02/cloud-integration-content-size-limits/)
 

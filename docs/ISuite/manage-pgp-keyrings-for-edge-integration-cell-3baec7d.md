@@ -27,6 +27,7 @@ For more general information on keyring functionalities, see [PGP Keys](40-Remot
 > -   The maximum number of keyrings is limited to 20 per tenant.
 > 
 > -   You can assign up to 20 runtimes to a keyring.
+> -   The maximum number of Edge Integration Cell instances is 20 per tenant.
 
 > ### Caution:  
 > To change the existing assignment of a keyring to a specific runtime, can cause message processing failures.

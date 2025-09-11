@@ -27,6 +27,7 @@ For more general information on keystore functionalities, see [Keystore](40-Remo
 > -   The maximum number of keystores is limited to 20 per tenant.
 > 
 > -   You can assign up to 20 runtimes to a keystore.
+> -   The maximum number of Edge Integration Cell instances is 20 per tenant.
 
 > ### Caution:  
 > To change the existing assignment of a keystore to a specific runtime, can cause message processing failures.

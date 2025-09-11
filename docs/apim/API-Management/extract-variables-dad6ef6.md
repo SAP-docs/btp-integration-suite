@@ -2,7 +2,7 @@
 
 # Extract Variables
 
-The Extract variables policy can be used to extract content from the HTTP request or response messages of the API Proxy and assign that content to specific variables that can be accessed during the execution of the API Proxy.
+The Extract variables policy can be used to extract content from the HTTP request or response messages of the API proxy and assign that content to specific variables that can be accessed during the execution of the API proxy.
 
 For more information on how to extract different variables, see [Examples](examples-6f56308.md).
 

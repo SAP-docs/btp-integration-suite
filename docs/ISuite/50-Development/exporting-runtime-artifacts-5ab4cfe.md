@@ -4,7 +4,7 @@
 
 # Exporting Runtime Artifacts
 
-Exporting Runtime Artifacts for Integration Solutions.
+Export runtime artifacts for integration solutions.
 
 > ### Note:  
 > Currently, SAP Integration Suite supports exporting runtime artifacts for and SAP Process Orchestration.
@@ -43,9 +43,9 @@ You can then import these runtime artifacts in either of these integration solut
 
 You can now directly export Message Types of EDI Type Systems as an XSD file, eliminating the need to create a Message Implementation Guideline \(MIG\). This streamlined process saves time and effort. Follow the following procedure to know more:
 
-1.  Login to your application.
+1.  Log in to your application.
 2.  Navigate to the *Type Systems* tab from the left pane.
-3.  Open the Type System containing the Message Type you want to export as an XSD file.
+3.  Open the Type System containing the Message Type that you want to export as an XSD file.
 4.  Navigate to the *Messages* tab and open the specific version of the message type you want to export .
 5.  Choose *Download XSD* to download this message type in an XSD file format.
 
@@ -58,7 +58,7 @@ You can now directly export Message Types of EDI Type Systems as an XSD file, el
 1.  Access the Message Implementation Guideline \(MIG\) or the Mapping Guideline \(MAG\) section.
 2.  Select the MIG or MAG in which you want to export the runtime artifacts.
 3.  Choose <span class="SAP-icons-V5"></span> and then choose *Export*.
-4.  You see two options for exporting the artifacts. Choose the appropriate option based on your needs.
+4.  You see the following options for exporting the artifacts. Choose the appropriate option based on your needs.
 
 
     <table>
@@ -107,7 +107,7 @@ You can now directly export Message Types of EDI Type Systems as an XSD file, el
 
 ## How to consume Runtime Artifacts?
 
-The SAP Integration Suite works with any kind of interface/API format; its automatically generated artifacts can be used in a variety of runtimes or implementations. Each different runtime has specific approaches, formats, pre-conditions, and implementation instructions. These must be considered, if the generated runtime artifacts are implemented into these runtimes and if the involved applications will be connected. SAP’s intention is to provide templates and mechanisms that accelerate the onboarding of the runtime artifacts into the diverse supported runtime systems such as
+The SAP Integration Suite works with any kind of interface/API format; its automatically generated artifacts can be used in a variety of runtimes or implementations. Each different runtime has specific approaches, formats, pre-conditions, and implementation instructions. These must be considered, if the generated runtime artifacts are implemented into these runtimes and if the involved applications are connected. SAP’s intention is to provide templates and mechanisms that accelerate the onboarding of the runtime artifacts into the diverse supported runtime systems such as
 
 -   SAP Process Orchestration
 
@@ -117,7 +117,7 @@ The SAP Integration Suite works with any kind of interface/API format; its autom
 
 ## Change of XSD file name for EANCOM
 
-There's now a unified naming convention for these Message XSDs for all messages from EDIFACT and EDIFACT subsets. Therefore, Message XSDs for an EANCOM MIG will have a new file name which will comply to this naming convention. The details of this naming convention is:
+There's now a unified naming convention for these Message XSDs for all messages from EDIFACT and EDIFACT subsets. Therefore, Message XSDs for an EANCOM MIG have a new file name which will comply to this naming convention. The details of this naming convention is:
 
 
 <table>
@@ -187,9 +187,9 @@ AssociationCode
 Subset-specific code that identifies the Message Guideline. \(Corresponding to UNH \> S009 \> 0057.\)
 
 > ### Note:  
-> -   This is an optional part. It's included into the XSD file name if the field *0057* contains either a *Fixed Value* or a single code value. Preference will be given to the *Fixed Value* set in the field.
+> -   This is an optional part. It's included into the XSD file name if the field *0057* contains either a *Fixed Value* or a single code value. Preference is given to the *Fixed Value* set in the field.
 > 
-> -   If no unique value for *AssociationCode* is found in the MIG, the standard EDIFACT file name convention will be applied.
+> -   If no unique value for *AssociationCode* is found in the MIG, the standard EDIFACT file name convention is applied.
 
 
 
@@ -217,9 +217,9 @@ To elaborate on the changes, a node now carries its namespace prefix in the inte
 
 The change is relevant for the message types of the following type system:
 
--   S/4HANA Cloud SOAP
+-   SAP S/4HANA Cloud SOAP
 
--   S/4HANA On-Premise SOAP
+-   SAP S/4HANA On-Premise SOAP
 -   Custom Messages \(if the message is defined in a namespace\)
 
 In case your MIG is affected by this change, you need to make sure to follow the following guidelines \(particularly for the first new Export of Runtime Artifacts after the change date\). When you update your integration flow, you need to replace all the files using the latest export of runtime artifacts. You can't update/replace only a few files as a mix of old and updated artifacts causes compatibility issues.
@@ -271,4 +271,30 @@ You can decide if you want to use the full or the reduced message XSD file in ou
     > However, for compatibility reasons, all message implementation guidelines created before May 2025 receive the value *false*.
 
 3.  Save your changes.
+
+
+
+<a name="loio5ab4cfe5ec724adda074c9773ea6b895__section_srj_gp3_hgc"/>
+
+## Set UN/EDIFACT Message Version \(Field 0052\) for Older UN/EDIFACT Versions
+
+In your MIG, you can define the expected value for message version \(field UNH \> S009 \> 0052\). The default value `D` is automatically applied, but you can change it to a different value if needed, like `1` or `2`. This setting influences the file name of the message XSD used in the EDI flow steps of Cloud Integration.
+
+> ### Note:  
+> This property only applies to type systems UN/EDIFACT and its subsets, like GS1 EANCOM or Odette EDIFACT.
+
+In all **releases since 1993**, UN/EDIFACT has been using the value `D` for field 0052. As a result, the EDI flow steps expect a file name like <code>UN-EDIFACT_ORDERS_<b>D</b>96A.xsd</code>. But for **releases before 1993**, other values \(like `1` or `2`\) were used for field 0052. In those cases, the EDI flow steps expect a file name like <code>UN-EDIFACT_ORDERS_<b>2</b>911.xsd</code>.
+
+To change this value for older UN/EDIFACT releases, perform the following steps:
+
+1.  Open your message implementation guideline and go to the tab *Runtime Context*.
+2.  Choose *Edit*.
+3.  In the section *EDI Flat File*, you can choose between the following options for the property *Configure EDIFACT Message Version*:
+
+    `1`, `2`, `88`, `89`, `90`, `D (Default)`, and `S`
+
+    > ### Note:  
+    > For all new message implementation guidelines, the default value of this property is `D`. Value D is also used for all message implementation guidelines created before September 2025.
+
+4.  Save your changes.
 

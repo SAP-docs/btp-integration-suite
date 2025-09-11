@@ -52,9 +52,14 @@ Description
 </td>
 <td valign="top">
 
-Specify the hostname of the SMB Server.
+Specify the hostname or IP address of the SMB Server.
 
-Example: `smb1.servershare.com:445`
+Example:
+
+-   `51.21.73.311:445`
+-   `fileserver:445`
+
+
 
 </td>
 </tr>
@@ -72,6 +77,37 @@ If required, specify the domain used for authentication.
 > This is an optional field.
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Type*
+
+</td>
+<td valign="top">
+
+Select the proxy type:
+
+-   *Internet*
+-   *On-Premise*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Location ID* \(Only available when *Proxy Type* is set to *On-Premise*\).
+
+</td>
+<td valign="top">
+
+Specify the Location ID from Cloud Connector.
+
+To learn more about Cloud Connector Connectivity, see [Configure Access Control.](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/configure-access-control-tcp)
 
 </td>
 </tr>

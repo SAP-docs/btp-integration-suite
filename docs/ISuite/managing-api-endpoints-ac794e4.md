@@ -47,5 +47,5 @@ Unmanaged or externally managed APIs, are endpoints that do not require an API p
 
 ## API Artifacts on Edge Integration Cell
 
-The Edge Integration Cell introduces a new type of proxified integration flow, referred to as an API artifact. The API artifacts allowsusers to easily add and configure policies and integration flow steps in a unified manner using the Integration Flow Editor. This type of integration flow conveniently embeds the policies of an API proxy, which can be specified during the design of the integration flow. For more information, see [API Development](50-Development/api-development-94957bc.md).
+The Edge Integration Cell introduces a new type of proxified integration flow, referred to as an API artifact. The API artifacts allowsusers to easily add and configure policies and integration flow steps in a unified manner using the Integration Flow Editor. This type of integration flow conveniently embeds the policies of an API proxy, which can be specified during the design of the integration flow. For more information, see [Design APIs](50-Development/design-apis-94957bc.md).
 

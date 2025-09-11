@@ -24,7 +24,7 @@ Before users can access the application, you need to assign the relevant role co
 
 2.  Select the role collection that you want to assign and choose *Edit*.
 
-    To perform the connector setup, you require the role `DataspaceTechnicalAdmin`. See [Configuring Connector Setup Using the UI \(Recommended Approach\)](configuring-connector-setup-using-the-ui-recommended-approach-4909d3f.md).
+    To perform the connector setup, you require the role `DataspaceTechnicalAdmin`. See [Configuring Connector Setup Using the UI](configuring-connector-setup-using-the-ui-4909d3f.md).
 
     For consumer or provider roles, select either `DataspaceConsumer` or `DataspaceProvider`, or both, depending on your needs.
 

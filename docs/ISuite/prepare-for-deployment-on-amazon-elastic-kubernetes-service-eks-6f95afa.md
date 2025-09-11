@@ -69,7 +69,7 @@ Create at least one storage class and a dynamic provisioner for it in your clust
 <tr>
 <td valign="top">
 
-Install Amazon Elastic File System \(EFS\) Container Storage Interface \(CSI\) driver to support dynamic provisioning of Amazon EFS file systems. Create a storage class and a dynamic provisioner for it.
+Install Amazon Elastic File System \(EFS\) Container Storage Interface \(CSI\) driver to support dynamic provisioning of Amazon EFS file systems. Create a storage class and a dynamic provisioner for it \(recommended but not mandatory\).
 
 </td>
 <td valign="top">
@@ -99,6 +99,18 @@ Install the Kubernetes command-line tool `kubectl`.
 <td valign="top">
 
 [Install Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Install the Istio command-line tool `istioctl` \(recommended\).
+
+</td>
+<td valign="top">
+
+[Install Istioctl](https://istio.io/latest/docs/ops/diagnostic-tools/istioctl/)
 
 </td>
 </tr>

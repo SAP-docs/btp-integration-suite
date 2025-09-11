@@ -31,7 +31,7 @@ You’ve created an integration package and opened it in edit mode. For more inf
 
 3.  Enter all the mandatory information in the fields.
 
-4.  Choose *Add* to just add the artifact or *Add and Open in Editor* to open the artifact in its editor. To further define the structure of a data type, see [Configuring Data Types](configuring-data-types-97ad101.md).
+4.  Choose *Add* to just add the artifact or *Add and Open in Editor* to open the artifact in its editor. To further define the structure of a data type, see [Consuming Data Types](consuming-data-types-97ad101.md).
 
 
 <a name="import_mt_dt"/>
@@ -74,6 +74,6 @@ You’ve created an integration package and opened it in edit mode. For more inf
 
 8.  Choose *Add*. Import results with the details of created, skipped, failed artifacts appear.
 
-    The artifact is added to the *Artifacts* tab. To further edit the data type, open the artifact in its editor and see [Configuring Data Types](configuring-data-types-97ad101.md).
+    The artifact is added to the *Artifacts* tab. To further edit the data type, open the artifact in its editor and see [Consuming Data Types](consuming-data-types-97ad101.md).
 
 

@@ -37,7 +37,7 @@ Name\*
 </td>
 <td valign="top">
 
-The internal name of the policy. The value of the name attribute can contain letters, numbers, spaces, hyphens, underscores, and periods. This value can’t exceed 255 characters.
+The unique name of the policy within the API artifact. Each policy in an API artifact must have a unique name to prevent naming conflicts.
 
 </td>
 </tr>
@@ -102,6 +102,9 @@ Determines whether the headers need to be validated against the provided API spe
 > ### Note:  
 > OpenAPI Specification version 2.0 is not supported by the API validation policy.
 
+> ### Note:  
+> When the API validation policy is modeled inside a reusable API, the schema validation is performed against the API specification of the consuming API. This applies if you intend to deploy the API artifact with the validation policy on the Edge Integration Cell runtime.
+
 **Related Information**  
 
 
@@ -110,4 +113,6 @@ Determines whether the headers need to be validated against the provided API spe
 [Authorization](authorization-6658409.md "This policy evaluates whether a user should be permitted to access a protected API.")
 
 [JSON Threat Protection](json-threat-protection-c4991a6.md "Minimizes the risk posed by content-level attacks by enabling specific limits on various JSON structures, such as arrays and strings.")
+
+[XML Threat Protection](xml-threat-protection-2e04b93.md "An XML Threat Protection policy safeguards XML-based applications and APIs from malicious attacks. It enforces rules on XML data to prevent threats such as recursive payloads, excessive node depth, and oversized payloads.")
 

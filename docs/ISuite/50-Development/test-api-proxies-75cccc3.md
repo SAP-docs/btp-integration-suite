@@ -12,7 +12,7 @@ The API Test Console allows you to test OData and REST-based services.
 
 ## Procedure
 
-1.  Log on to the Integration Suite.
+1.  Log on to the SAP Integration Suite.
 
 2.  From the navigation bar on the left choose the *Test* \> *APIs*.
 3.  A list of APIs appears on the left.

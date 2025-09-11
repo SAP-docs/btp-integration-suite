@@ -10,9 +10,7 @@ Access policies enable you to manage:
 
 -   API artifact operations in design time
 
--   API artifact operations after deployment
-
--   Data stored and processed by the artifact at runtime
+-   API artifact operations after deployment, such as changing the log-level or un-deploying the API artifact
 
 
 For more information, see [Access Policies](access-policies-e0009f3.md) and [Defining Access Policies](defining-access-policies-b0d7950.md).

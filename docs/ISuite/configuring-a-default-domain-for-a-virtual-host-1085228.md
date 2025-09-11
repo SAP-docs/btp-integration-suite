@@ -22,7 +22,7 @@ After successful onboarding, API proxies are assigned a default virtual host URL
 
 ## Context
 
-If you want to configure a mutual TLS, see [Configuring Mutual TLs for Virtual Host](configuring-mutual-tls-for-virtual-host-9faf7ce.md). This process enables you to establish a more secure connection between your API Proxy and the client, ensuring that both parties can trust each other's identities.
+If you want to configure a mutual TLS, see [Configuring Mutual TLS for Default Domain Virtual Host](configuring-mutual-tls-for-default-domain-virtual-host-9faf7ce.md). This process enables you to establish a more secure connection between your API proxy and the client, ensuring that both parties can trust each other's identities.
 
 To request a custom domain with one-way TLS, perform the following steps:
 
@@ -32,9 +32,20 @@ To request a custom domain with one-way TLS, perform the following steps:
 
 ## Procedure
 
-1.  Run the services using a standard REST console.
+1.  Run the service using a standard REST client or test console.
 
-2.  Service to create a new virtual host:
+    Execute the following steps to create a new virtual host:
+
+    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+
+    2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
+
+    3.  Create a service key for the instance.
+
+    4.  From the service key, retrieve the base URL and append the following path to it:`/apiportal/operations/1.0/Configuration.svc/VirtualHostRequests`
+
+
+    You can now use this full URL along with the below details to invoke the service using a standard REST client. For detailed instructions on how to create a service instance and a service key, see [Accessing API Management APIs Programmatically](accessing-api-management-apis-programmatically-24a2c37.md).
 
     -   Service URL: https://<url-from-service-key\>/apiportal/operations/1.0/Configuration.svc/VirtualHostRequests
     -   Method: POST
@@ -65,7 +76,7 @@ To request a custom domain with one-way TLS, perform the following steps:
         > -   isDefaultVirtualHostRequest -if you want the new virtual host to be the default virtual host, set the value to "true", else set it to "false".
 
         > ### Note:  
-        > To enable client authentication \(mutual TLS\) while configuring the virtual host with default domain, see [Configuring Mutual TLs for Virtual Host](configuring-mutual-tls-for-virtual-host-9faf7ce.md).
+        > To enable client authentication \(mutual TLS\) while configuring the virtual host with default domain, see [Configuring Mutual TLS for Default Domain Virtual Host](configuring-mutual-tls-for-default-domain-virtual-host-9faf7ce.md).
 
 
     -   Response: 201
@@ -111,11 +122,24 @@ To request a custom domain with one-way TLS, perform the following steps:
         > ```
 
 
-3.  Service to update a virtual host:
+2.  Run the service using a standard REST client or test console.
+
+    Execute the following steps to update a virtual host:
+
+    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+
+    2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
+
+    3.  Create a service key for the instance.
+
+    4.  From the service key, retrieve the base URL and append the following path to it:`/apiportal/operations/1.0/Configuration.svc/VirtualHostRequests`
+
+
+    You can now use this full URL along with the below details to invoke the service using a standard REST client. For detailed instructions on how to create a service instance and a service key, see[Accessing API Management APIs Programmatically](accessing-api-management-apis-programmatically-24a2c37.md).
 
     You can update the virtualHostUrl, trustStore, and the isDefaultVirtualHostRequest flag.
 
-    You can also convert your default domain virtual host to custom domain by refering to the update section \(Step 3\) of the [Configuring a Custom Domain for a Virtual Host](configuring-a-custom-domain-for-a-virtual-host-6b9e5a3.md) topic.
+    You can also convert your default domain virtual host to custom domain by refering to the update section of the [Configuring a Custom Domain for a Virtual Host](configuring-a-custom-domain-for-a-virtual-host-6b9e5a3.md) topic.
 
     -   Service URL: https://<url-from-service-key\>/apiportal/operations/1.0/Configuration.svc/VirtualHostRequests
     -   Method: POST
@@ -150,7 +174,7 @@ To request a custom domain with one-way TLS, perform the following steps:
         > -   virtualHostId: This is the unique ID of the virtual host you are trying to update.
 
         > ### Note:  
-        > To enable client authentication \(mutual TLS\) while configuring the virtual host with default domain, see [Configuring Mutual TLs for Virtual Host](configuring-mutual-tls-for-virtual-host-9faf7ce.md).
+        > To enable client authentication \(mutual TLS\) while configuring the virtual host with default domain, see [Configuring Mutual TLS for Default Domain Virtual Host](configuring-mutual-tls-for-default-domain-virtual-host-9faf7ce.md).
 
 
     -   Response: 201
@@ -206,5 +230,7 @@ To request a custom domain with one-way TLS, perform the following steps:
 
 [Configuring a Custom Domain for a Virtual Host](configuring-a-custom-domain-for-a-virtual-host-6b9e5a3.md "The API Management capability enables you to personalize the virtual host URL by configuring a custom domain of your choice. This means that you can have all your APIs displayed as &quot;https://api.bestrun.com/...&quot; if desired. Additionally, you have the option to set up multiple virtual hosts using the same custom domain, such as &quot;https://api1.bestrun.com,&quot; &quot;https://api2.bestrun.com,&quot; and so on.")
 
-[Configuring Mutual TLs for Virtual Host](configuring-mutual-tls-for-virtual-host-9faf7ce.md "You can configure mutual TLs for a virtual host, which validates the identities of both the web server and the web client.")
+[Configuring Mutual TLS for Default Domain Virtual Host](configuring-mutual-tls-for-default-domain-virtual-host-9faf7ce.md "You can configure mutual TLS (mTLS) for default domain virtual host, which validates the identities of both the web server and the web client.")
+
+[Configuring Mutual TLS for Custom Domain Virtual Host](configuring-mutual-tls-for-custom-domain-virtual-host-2453233.md "You can configure mutual TLS (mTLS) for a custom domain virtual host, which validates the identities of both the web server and the web client.")
 

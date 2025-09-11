@@ -33,6 +33,9 @@ Migrate supported integration objects from your on-premise system to SAP Integra
 
     Based on your configuration, you see the address of the Integration Directory and ES Repository for the system that you select.
 
+    > ### Note:  
+    > When an error occurs, you can download the error log. Include this log when raising a [ticket](http://support.sap.com) on the component LOD-HCI-PI-WT-IFL to get a faster and more accurate resolution.
+
 3.  Choose *Next Step*.
 
 4.  In the *Process Orchestration Artifacts* tab, select an *Object Type*. You can use *Show Filters* to drill down to the correct object that you want to select.
@@ -145,7 +148,7 @@ Handle the dependent message mapping objects and its resources in an efficient w
 
 -   If needed, use the *Configure* option in read-only mode to change the externalized parameters of the sender and receiver adapters.
 
--   If your source object contains an RFC receiver adapter, make sure that you’ve configured the RFC destination in your SAP BTP cockpit. See [Creating an RFC Destination](50-Development/creating-an-rfc-destination-3b55fa7.md).
+-   If your source object contains an RFC receiver adapter, make sure that you’ve configured the RFC destination in your SAP BTP cockpit. See [Creating and Modifying RFC Destination](50-Development/creating-and-modifying-rfc-destination-3b55fa7.md).
 
 -   If your source object contains a JDBC receiver adapter, make sure that you’ve added the JDBC data source. See [Managing JDBC Data Sources](50-Development/managing-jdbc-data-sources-4c873fa.md).
 

@@ -30,7 +30,7 @@ Subscribe to SAP Integration Suite
 
 To set up the API Management capability from SAP Integration Suite, you should first have SAP Integration Suite subscription.
 
-Subscribe to SAP Integration Suite in SAP BTP cockpit and assign the *Integration\_Provisioner* role to gain access. For more information, see [Initial Setup of SAP Integration Suite](10-InitialSetup/initial-setup-of-sap-integration-suite-3dcf507.md).
+Subscribe to SAP Integration Suite in SAP BTP cockpit and assign the *Integration\_Provisioner* role to gain access. For more information, see [Getting Started with SAP Integration Suite](10-InitialSetup/getting-started-with-sap-integration-suite-3dcf507.md).
 
 > ### Note:  
 > Please make sure that you do not have a starter plan instance created in the same subaccount where you intend to create an SAP Integration Suite subscription. Additionally, please note that API Management capabilities from SAP Integration Suite and API Management subscriptions using the stand-alone tile cannot coexist in the same subaccount.

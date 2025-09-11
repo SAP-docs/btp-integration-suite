@@ -10,7 +10,7 @@ Create destination **TransportManagement** in your source subaccount to make API
 
 ## Prerequisites
 
-Create an instance of SAP Cloud Transport Management service and fetch the service keys from the service instance as shown in the sample code. For more information, see[Creating an Instance of SAP Cloud Transport Management Service](creating-an-instance-of-sap-cloud-transport-management-service-69a41e2.md).
+Create an instance of SAP Cloud Transport Management service and fetch the service keys from the service instance as shown in the sample code. For more information, see [Creating an Instance of SAP Cloud Transport Management Service](creating-an-instance-of-sap-cloud-transport-management-service-69a41e2.md).
 
 > ### Sample Code:  
 > ```
@@ -43,11 +43,11 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
 
 1.  In your web browser, log on to SAP BTP Cockpit and navigate to your source subaccount.
 
-2.  Choose the *Destinations* tab in the left-hand pane.
+2.  Choose the *Connectivity* \> *Destinations* tab in the left-hand pane.
 
-3.  Choose *New Destination*.
+3.  Choose *Create* and in the *Create New Destination* popup, select *From Scratch* to create a new destination manually.
 
-4.  In *Destination Configuration* section, provide values in fields based on description in table.
+4.  In *Destination Details* section, fill in all the required details according to the descriptions provided in the table.
 
     > ### Note:  
     > Use the Client ID, Client Secret, and the Token Service URL from the Prerequisite section.
@@ -185,7 +185,7 @@ Create an instance of SAP Cloud Transport Management service and fetch the servi
 
     Enter the source node that you created in the Transport Management Applications in the second text box. See [Adding a Source Node in Transport Management Applications](adding-a-source-node-in-transport-management-applications-dc24ea2.md) for the steps on how to add a Source node.
 
-6.  Choose *Save*.
+6.  Choose *Create*.
 
     You can also do a *Check Connection* to verify whether you've added the destination correctly. Once you perform a check connection, the following pop-up message appears: `Connection to "TransportManagementService" is established.`
 

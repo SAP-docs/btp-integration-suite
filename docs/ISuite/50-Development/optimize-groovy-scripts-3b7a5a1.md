@@ -10,7 +10,7 @@ Enhance your Groovy scripts using Generative AI.
 
 ## Prerequisites
 
-Ensure that Generative AI features are enabled in your SAP Integration Suite tenant. For more information, see [Generative AI](IntegrationSettings/generative-ai-0c93c17.md).
+Ensure that Script Optimization feature is enabled in your SAP Integration Suite tenant. For more information, see [Artificial Intelligence](artificial-intelligence-6a6727c.md).
 
 
 
@@ -65,7 +65,7 @@ Ensure that Generative AI features are enabled in your SAP Integration Suite ten
 
 If you can't see the *Optimize* button, please check the following criteria:
 
--   AI features are enabled as described in [Generative AI](IntegrationSettings/generative-ai-0c93c17.md).
+-   AI features are enabled as described in [Artificial Intelligence](artificial-intelligence-6a6727c.md).
 
 -   You're using the script editor in edit mode.
 
@@ -100,7 +100,7 @@ Generative AI feature not enabled.
 </td>
 <td valign="top">
 
-You haven't enabled the AI features as described in [Generative AI](IntegrationSettings/generative-ai-0c93c17.md).
+You haven't enabled the AI features as described in [Artificial Intelligence](artificial-intelligence-6a6727c.md).
 
 </td>
 </tr>

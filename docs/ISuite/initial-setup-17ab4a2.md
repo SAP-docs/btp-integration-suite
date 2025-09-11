@@ -138,6 +138,19 @@ Once you enable Graph, you see all of the Graph role collections in your list.
     4.  To apply the role, go back to the SAP Integration Suite home page.
 
 
+-   Graph Navigator Tryout
+
+    To enable a user to explore business data graphs in the Graph Navigator on the Developr Hub, assign the *GraphNavigator.Tryout* role as follows:
+
+    1.  In the SAP BTP cockpit, go to *Security* \> *Users*.
+
+    2.  Select the relevant user. Under *Role Collections*, choose *Assign Role Collection*.
+
+    3.  Search for *GraphNavigator.Tryout*, select the role collection, and choose *Assign Role Collection*.
+
+    4.  To apply the role, go back to the SAP Integration Suite home page.
+
+
 -   Graph Guest
 
     There are cases where you need users to have read-only access to Graph. Assign the *Graph\_Guest* authorization role to one or more users so that they have read-only access to Graph and the Graph Configuration API.

@@ -4,7 +4,7 @@
 
 JavaScript Policy is used to configure the JavaScript code to execute within the context of an API proxy flow.
 
-A JavaScript policy contains no actual code. Instead, a JavaScript policy references a JavaScript resource and defines the step in the API flow where the JavaScript executes. The JavaScript resource that is referenced by the JavaScript policy can be stored in the API Proxy bundle. The JavaScript resource always has a .js extension.
+A JavaScript policy contains no actual code. Instead, a JavaScript policy references a JavaScript resource and defines the step in the API flow where the JavaScript executes. The JavaScript resource that is referenced by the JavaScript policy can be stored in the API proxy bundle. The JavaScript resource always has a **.js** extension.
 
 You can attach this policy in the following locations: ![](images/Flow_policy_116062b.png)
 

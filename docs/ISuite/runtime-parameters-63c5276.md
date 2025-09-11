@@ -4,11 +4,9 @@
 
 # Runtime Parameters
 
-Get information about the runtime parameters of the components of your Edge Integration Cell.
+View the runtime parameters of the components of your Edge Integration Cell.
 
-You can navigate to *View Runtime Parameters* \(<span class="SAP-icons-V5"></span> Runtime Parameters\) through the *Quick Links* card in the Operations Cockpit, or via *Component Monitor*.
-
-You can use the *Component* dropdown in the upper left corner to select the specific component you want information about. Depending on the component you select, the respective information about its runtime parameters displays.
+On *Component Monitor*, select a component from the list to display information about its runtime parameters.
 
 The table offers the following information:
 
@@ -302,7 +300,7 @@ Sets the drain duration before istio termination.
 </td>
 <td valign="top">
 
-Sets the drain duration before component stop.
+Sets the drain duration before the component stops.
 
 </td>
 </tr>
@@ -412,7 +410,7 @@ Sets the number of replicas for this component.
 
 Additional JVM parameters for this component\).
 
-Same for the others REPLICAS, MIN\_REPLICAS, etc.
+Same for the other REPLICAS, MIN\_REPLICAS, etc.
 
 </td>
 </tr>
@@ -455,7 +453,7 @@ Sets ephemeral storage limit for this component. Default value: 10 Gi
 <tr>
 <td valign="top">
 
-*Solace* 
+*Message Service* 
 
 </td>
 <td valign="top">
@@ -467,7 +465,7 @@ Sets ephemeral storage limit for this component. Default value: 10 Gi
 
 Upscales the Message Service Tier.
 
-For more information on Message Service Tiers, see [3247839](https://me.sap.com/notes/3247839).
+For more information on Message Service Tiers, see [Message Service Tiers](runtime-parameters-63c5276.md#loio63c52764cb58458aba7e58bbf678d453__section_nht_rwb_hgc).
 
 </td>
 </tr>
@@ -501,7 +499,7 @@ Possible values are *error*, *warn*, *info*, *debug*.
 Sets maximum number of queues and topic endpoints
 
 > ### Note:  
-> Note that the configuration parameters for Solops' MAX may be limited by the chosen Solace Tier. The Solace Tier sets system boundaries for configuration parameters such as Max Endpoints \(which includes Max Queues, with the JMS Adapter requiring three internal queues for each JMS Queue\), Max Egress Flows, Max Ingress Flows, Max Transacted Sessions \(which shares the same system limit value as Max Connections\) and Max Transactions \(which is five times the system limit value of Max Connections\).
+> Note that the configuration parameters for Solops' MAX may be limited by the chosen Message Service Tier. The Message Service Tier sets system boundaries for configuration parameters such as Max Endpoints \(which includes Max Queues, with the JMS Adapter requiring three internal queues for each JMS Queue\), Max Egress Flows, Max Ingress Flows, Max Transacted Sessions \(which shares the same system limit value as Max Connections\) and Max Transactions \(which is five times the system limit value of Max Connections\).
 
 
 
@@ -564,6 +562,281 @@ Sets maximum number of simultaneous transactions.
 <td valign="top">
 
 Sets maximum number of client subscriptions.
+
+</td>
+</tr>
+<tr>
+<td valign="top" rowspan="3">
+
+Auditlog Agent
+
+</td>
+<td valign="top">
+
+`CPU_LIMIT`
+
+</td>
+<td valign="top">
+
+Sets CPU limit for this component.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`MEMORY_LIMIT`
+
+</td>
+<td valign="top">
+
+Sets memory limit for this component.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`REPLICAS`
+
+</td>
+<td valign="top">
+
+Sets the number of replicas for this component.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio63c52764cb58458aba7e58bbf678d453__section_nht_rwb_hgc"/>
+
+## Message Service Tiers
+
+
+<table>
+<tr>
+<th valign="top">
+
+Service Tier
+
+</th>
+<th valign="top">
+
+Max. Connections
+
+</th>
+<th valign="top">
+
+Max. Queue Messages \[millions\]
+
+</th>
+<th valign="top">
+
+CPU Limit
+
+</th>
+<th valign="top">
+
+Memory Limit \[GiB\]
+
+</th>
+<th valign="top">
+
+Persistent Volume \[GiB\]
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+100
+
+</td>
+<td valign="top">
+
+100
+
+</td>
+<td valign="top">
+
+100
+
+</td>
+<td valign="top">
+
+2
+
+</td>
+<td valign="top">
+
+3.4
+
+</td>
+<td valign="top">
+
+100
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+250
+
+</td>
+<td valign="top">
+
+250 \(VPN\) / 1000 \(System\)
+
+</td>
+<td valign="top">
+
+100
+
+</td>
+<td valign="top">
+
+2
+
+</td>
+<td valign="top">
+
+6.5
+
+</td>
+<td valign="top">
+
+100
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1K
+
+</td>
+<td valign="top">
+
+1000
+
+</td>
+<td valign="top">
+
+240
+
+</td>
+<td valign="top">
+
+2
+
+</td>
+<td valign="top">
+
+6.5
+
+</td>
+<td valign="top">
+
+350
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+10K
+
+</td>
+<td valign="top">
+
+10000
+
+</td>
+<td valign="top">
+
+240
+
+</td>
+<td valign="top">
+
+4
+
+</td>
+<td valign="top">
+
+13.9
+
+</td>
+<td valign="top">
+
+350
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+100K
+
+</td>
+<td valign="top">
+
+100000
+
+</td>
+<td valign="top">
+
+240
+
+</td>
+<td valign="top">
+
+8
+
+</td>
+<td valign="top">
+
+30.3
+
+</td>
+<td valign="top">
+
+500
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+200K
+
+</td>
+<td valign="top">
+
+200000
+
+</td>
+<td valign="top">
+
+240
+
+</td>
+<td valign="top">
+
+12
+
+</td>
+<td valign="top">
+
+53.5
+
+</td>
+<td valign="top">
+
+500
 
 </td>
 </tr>

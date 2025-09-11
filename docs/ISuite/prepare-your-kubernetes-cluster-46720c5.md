@@ -34,11 +34,12 @@ Your Kubernetes cluster must meet certain requirements before you can set up Edg
 > 
 > You can install Edge Integration Cell on Kubernetes clusters on cloud platforms such as Amazon Web Services \(Amazon Elastic Kubernetes Service, Amazon EKS\), Microsoft Azure \(Azure Kubernetes Service, AKS\), SUSE Rancher \(Rancher Kubernetes Engine, RKE2\) and Red Hat OpenShift \(OpenShift Kubernetes Engine, OKE\).
 
+-   The nodes of the Kubernetes cluster must have their time synchronized with Coordinated Universal Time \(UTC\).
 -   The Kubernetes cluster must have role-based access control \(RBAC\) enabled.
 
 -   The Kubernetes cluster must have at least one worker node. The worker nodes must have the same version as the Kubernetes API server.
 
--   The Kubernetes cluster must be able to dynamically provision persistent volumes for access modes `ReadWriteOnce`,`ReadWriteMany`. There must be at least one storage class - the default storage class. You can configure additional storage classes during initial deployment. Storage class for access mode `ReadWriteMany` requires volume binding mode`Immediate`. Storage classes should allow volume expansion in general.
+-   The Kubernetes cluster must be able to dynamically provision persistent volumes for access modes `ReadWriteOnce` \(mandatory\),`ReadWriteMany`\(optional\). There must be at least one storage class - the default storage class. You can configure additional storage classes during initial deployment. Storage class for access mode `ReadWriteMany` requires volume binding mode`Immediate`. Storage classes should allow volume expansion in general.
 
 -   The container registry must be accessible \(with read, write permissions\) from the Kubernetes cluster, when used for image replication \(optional\). The Kubernetes cluster must trust the registry. That means that Image Replication Service needs access to the trust chain of the registry. Client authentication is required.
 
@@ -46,7 +47,7 @@ Your Kubernetes cluster must meet certain requirements before you can set up Edg
 
 
 > ### Note:  
-> Using a policy controller like Azure Policy, Gatekeeper or Open Policy Agent \(OPA\) is currently not supported.
+> For information on using a policy controller like Azure Policy, Gatekeeper, or Open Policy Agent \(OPA\), see [Pod Security Standards](60-Security/pod-security-standards-2557e81.md).
 
 
 
@@ -100,4 +101,17 @@ Your Redis data store must meet certain requirements before you can set up Edge 
 
 > ### Note:  
 > For more information about Redis, see [3247839](https://me.sap.com/notes/3247839).
+
+**Related Information**  
+
+
+[Prepare for Deployment on SUSE Rancher Kubernetes Engine \(RKE2\)](prepare-for-deployment-on-suse-rancher-kubernetes-engine-rke2-0359e5c.md "Before deploying your cluster on SUSE Rancher Kubernetes Engine (RKE2), perform the following tasks.")
+
+[Prepare for Deployment on Red Hat OpenShift \(OCP\)](prepare-for-deployment-on-red-hat-openshift-ocp-21ae0fd.md "")
+
+[Prepare for Deployment on Google Kubernetes Engine \(GKE\)](prepare-for-deployment-on-google-kubernetes-engine-gke-24a1e56.md "")
+
+[Prepare for Deployment on Azure Kubernetes Service \(AKS\)](prepare-for-deployment-on-azure-kubernetes-service-aks-a3c3a9c.md "Before deploying your cluster on Azure Kubernetes Service (AKS), perform the following tasks.")
+
+[Prepare for Deployment on Amazon Elastic Kubernetes Service \(EKS\)](prepare-for-deployment-on-amazon-elastic-kubernetes-service-eks-6f95afa.md "Before deploying your cluster on Amazon Elastic Kubernetes Service (EKS), perform the following tasks.")
 

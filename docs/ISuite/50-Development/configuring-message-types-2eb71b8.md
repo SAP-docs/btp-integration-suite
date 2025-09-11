@@ -2,7 +2,7 @@
 
 # Configuring Message Types
 
-A message type comprises a [data type](configuring-data-types-97ad101.md) that describes the structure of a message. For technical reasons, a data type alone is not sufficient to describe the instance of a message. Data types are defined in XML Schema as abstract types that aren't yet tied to an element. You can only describe an instance of a message when you've specified a data type. Therefore, a message type defines the root element of a message.
+A message type comprises a [data type](consuming-data-types-97ad101.md) that describes the structure of a message. For technical reasons, a data type alone is not sufficient to describe the instance of a message. Data types are defined in XML Schema as abstract types that aren't yet tied to an element. You can only describe an instance of a message when you've specified a data type. Therefore, a message type defines the root element of a message.
 
 Cloud Integration allows you to view and edit your message types along with its referenced data types.
 
@@ -72,7 +72,7 @@ Type
 </td>
 <td valign="top">
 
-Displays the referenced [Configuring Data Types](configuring-data-types-97ad101.md) assigned to the root node and built-in data type \(decimal, string, or integer\) of the child nodes.
+Displays the referenced [Consuming Data Types](consuming-data-types-97ad101.md) assigned to the root node and built-in data type \(decimal, string, or integer\) of the child nodes.
 
 </td>
 </tr>

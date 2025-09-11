@@ -59,16 +59,16 @@ Analyze the frequency of API calls within set timeframes, such as hourly or dail
 
 ### Graph: API Call Predictions and Trends
 
-The graph offers a visualization of the anticipated traffic patterns for either all API proxies or the selected ones over a specified timeframe. The x-axis represents time intervals, while the y-axis indicates the expected volume of API calls.
+The graph offers a visualization of the anticipated traffic patterns for either all APIs or the selected ones over a specified timeframe. The x-axis represents time intervals, while the y-axis indicates the expected volume of API calls.
 
--   **Expected Call Traffic**: The expected pattern is represented by a blue dotted line on the graph, with the expected volume shown in numbers for each proxy.
--   **Action**: Hover over the values on the chart and click on the corresponding dot to view more information such as API name, volume etc. If multiple API proxies are selected, they will be distinguished by different colors.
+-   **Expected Call Traffic**: The expected pattern is represented by a blue dotted line on the graph, with the expected volume shown in numbers for each API.
+-   **Action**: Hover over the values on the chart and click on the corresponding dot to view more information such as API name, volume etc. If multiple APIs are selected, they will be distinguished by different colors.
 
 
 
 ### Using Filters
 
-By default, the API call predictions and trends data is displayed for all API proxies.
+By default, the API call predictions and trends data is displayed for all APIs.
 
 To view API call predictions and trends for specific APIs, follow the steps below:
 
@@ -98,7 +98,7 @@ Choose <span class="SAP-icons-V5"></span> for tabular view.
 **Related Information**  
 
 
-[Enabling Anomaly Detection and Predictions](enabling-anomaly-detection-and-predictions-98534a0.md "Activate the anomaly detection and prediction features for API proxy calls to enhance monitoring and forecasting capabilities.")
+[Enabling Anomaly Detection and Predictions](enabling-anomaly-detection-and-predictions-98534a0.md "Activate the anomaly detection and prediction features for API calls to enhance monitoring and forecasting capabilities.")
 
-[Predictions](predictions-823bcd7.md "In addition to anomaly detection, we have now introduced Predictions, an AI-based feature that can forecast future API call volumes based on past call data. With this new feature, you can identify trends in API traffic and view predictions for upcoming API call volumes. Predictions are available for all API proxies that meet the minimum data requirement of at least 3 months of API call volume data. Additionally, it offers customizable options, allowing you to select specific API proxies, choose the prediction duration, and set the frequency according to your preferences.")
+[Predictions](predictions-823bcd7.md "In addition to anomaly detection, we have now introduced Predictions, an AI-based feature that can forecast future API call volumes based on past call data. With this new feature, you can identify trends in API traffic and view predictions for upcoming API call volumes. Predictions are available for all APIs that meet the minimum data requirement of at least 3 months of API call volume data. Additionally, it offers customizable options, allowing you to select specific APIs, choose the prediction duration, and set the frequency according to your preferences.")
 

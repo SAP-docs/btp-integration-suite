@@ -14,10 +14,10 @@ The configuration file consists of five parts:
 
 4.  Locating policy
 
-5.  Extensions
+5.  Exclude mirror entities
 
 
-Each of these parts can be modified before the configuration file is activated. You don't need to write this file from scratch. You can generate a defaultGraph configuration file after selecting destinations in your landscape from Graph on the Integration Suite home page.
+Each of these parts can be modified before the configuration file is activated. You don't need to write this file from scratch. You can generate a default Graph configuration file after selecting destinations in your landscape from Graph on the Integration Suite home page.
 
 
 
