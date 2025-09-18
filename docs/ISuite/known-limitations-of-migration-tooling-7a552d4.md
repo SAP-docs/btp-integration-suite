@@ -30,7 +30,7 @@ XML to CSV Converter
 
 For the patterns that support CSV to XML or XML to CSV converter, the following limitations apply:
 
--   XSD schema files from the source integration object aren't migrated. As an integration developer, you must manually download the schema files from the Enterprise Services Repository of SAP Process Orchestration and upload the same as resources in the integration flow. Then, configure the converter flow step before you deploy the integration flow.
+-   XSD schema files from the source integration object aren't migrated. As an integration developer, you must manually download the schema files from the Enterprise Services Repository of SAP Process Integration/SAP Process Orchestration and upload the same as resources in the integration flow. Then, configure the converter flow step before you deploy the integration flow.
 
 -   Field Fixed-Length separator isn't supported. You can't directly migrate field fixed length file-based integration objects.
 
@@ -47,7 +47,7 @@ File-based adapters with encryption/decryption
 </td>
 <td valign="top">
 
-For File-based adapter scenarios in Process Integration/Process Orchestration that require decryption, the migration tool does not automatically map the adapter module properties to the corresponding encryptor/decryptor step in the integration flow. You must manually add the PGP Encryptor/PGP Decryptor flow step in the migrated integration flow to maintain the same configuration as in the respective adapter's communication channel.
+For File-based adapter scenarios in SAP Process Integration/SAP Process Orchestration that require decryption, the migration tool does not automatically map the adapter module properties to the corresponding encryptor/decryptor step in the integration flow. You must manually add the PGP Encryptor/PGP Decryptor flow step in the migrated integration flow to maintain the same configuration as in the respective adapter's communication channel.
 
 </td>
 </tr>
@@ -59,7 +59,7 @@ SuccessFactors Adapter
 </td>
 <td valign="top">
 
-For integration scenarios in Process Integration/Process Orchestration that use SFSF adapter channels, the migration tool does not automatically map the SuccessFactors adapter in SAP Integration Suite. You must manually add it.
+For integration scenarios in SAP Process Integration/SAP Process Orchestration that use SFSF adapter channels, the migration tool does not automatically map the SuccessFactors adapter in SAP Integration Suite. You must manually add it.
 
 </td>
 </tr>
@@ -97,7 +97,7 @@ JDBC transaction handling
 </td>
 <td valign="top">
 
-The use of JDBC Sender scenarios, where data is selected and later updated within the same transaction, is not supported in SAP Cloud Integration. This behaviour is also not handled by the migration tool when moving from SAP PI.
+The use of JDBC Sender scenarios, where data is selected and later updated within the same transaction, is not supported in SAP Cloud Integration. This behaviour is also not handled by the migration tool when moving from SAP Process Integration/SAP Process Orchestration.
 
 Even if you try to replicate the logic using a Timer and Request-Reply pattern, there is the possibility that the records selected at the beginning may not match those updated at the end, potentially leading to data inconsistencies. To prevent inconsistent data or failed updates, a redesign is needed — typically involving stored procedures and intermediate status flags at the database layer.
 

@@ -365,7 +365,7 @@ Check out the following resources:
 
 -   Get access to SAP Integration Suite community, Pricing models and all the technical resources, tutorials, blogs, and support you need: [Integration Platform as a Service](https://www.sap.com/products/integration-suite.html).
 
--   For more information on how usage information is recorded for billing and other cost assessments, see SAP Note [2942344](https://me.sap.com/notes/2942344).
+-   For more information on how a tenant is defined, usage information is recorded for billing and other cost assessments, see SAP Note [3654389](https://me.sap.com/notes/3654389).
 
 
 **Related Information**  

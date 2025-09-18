@@ -19,6 +19,8 @@ Let us consider the example of replicating employee details from system A to sys
 
 In the same scenario, let us assume that the date of birth in system A is in YYYY-MM-DD format. You want to change the format to DD-MM-YYYY, the format in system B. In this case, you can use a mapping function that transforms the data into the format that you want, which in this case is DD-MM-YYYY.
 
+For more details on using 'AND' standard fucntion see, [0003653876](https://me.sap.com/notes/0003653876)
+
 ![](images/mapping_function_8ea50e9.png)
 
 The mapping editor provides some standard functions like *Arithmetic*, *Boolean*, *Constants*, *Conversions*, and *Date*.

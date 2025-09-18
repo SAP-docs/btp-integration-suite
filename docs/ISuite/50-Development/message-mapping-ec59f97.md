@@ -12,3 +12,8 @@ To apply this design guideline, consider the following rules:
 
 [Use a Message Mapping to Map XML to JSON](use-a-message-mapping-to-map-xml-to-json-fb7c1df.md)
 
+**Related Information**  
+
+
+[SAP Note 0003653876](https://me.sap.com/notes/0003653876)
+

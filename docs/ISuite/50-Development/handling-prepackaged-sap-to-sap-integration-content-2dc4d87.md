@@ -4,7 +4,7 @@
 
 Learn the SAP recommendations for reusing SAP-to-SAP prepackaged content within and across tenants.
 
-If you deploy and process an integration flow from a predefined content package, it's metered. You can edit such prepackaged content or use them as is. For more information on the metering metrics, see SAP Note [2942344](https://launchpad.support.sap.com/#/notes/2942344).
+If you deploy and process an integration flow from a predefined content package, it's metered. You can edit such prepackaged content or use them as is. For more information on how tenant is defined and metered, see SAP Note [3654389](https://launchpad.support.sap.com/#/notes/3654389).
 
 
 

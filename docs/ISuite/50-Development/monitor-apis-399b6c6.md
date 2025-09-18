@@ -123,6 +123,11 @@ The header area also provides certain functions:
 
     Allows you to download the API to your computer.
 
+    > ### Note:  
+    > Importing an API using the ZIP file downloaded from *Monitor* \> *Integrations and APIs* \> *Integration Content Details* is not supported. These ZIP files may contain runtime-specific or system-generated artifacts that are not intended for design-time import.
+    > 
+    > Always export APIs directly from *Design* by opening the content package, selecting the API artifact, and choosing *Export*. Avoid using the *Download* option under *Integration Content Details* for this purpose.
+
 
 Below the header, the following sections contain detailed information about the selected artifact:
 

@@ -46,6 +46,9 @@ Choosing a particular queue will enable you to see the following usage informati
 -   Time Sent: Time the message was sent.
 -   Message size: The size of the message content, in bytes.
 -   Redelivered: Indicates if the message was redelivered or not.
+-   Delivery Count: The number of times a message has been delivered. Each time the message remains unacknowledged or unprocessed, the broker retries delivery. This count reflects the number of delivery attempts.
+-   Spool Time: The timestamp marking when the message was first stored in the queue. This indicates when the message began waiting in the spool before being consumed.
+-   Expiration: The timestamp marking when the message will expire in the queue. After this time, the message is no longer eligible for delivery and may be purged or sent to a DMQ.
 -   Destination: Destination of the message
 -   DMQ Eligible: Indicates whether the message is eligible for the Dead Message Queue \(DMQ\).
 

@@ -32,7 +32,6 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
 > -   EDI to XML converter version 1.6 and above supports LS/LE segments.
 > -   Cloud Integration does not support repetition characters. Repetition character is a single character which separates the instances of a repeating data element. For example, *^* \(caret sign\) is a repetition character.
 > -   For X12 format, EDI to XML converter v1.8.0 and v2.2.0 onwards support same group name with different definition in XSD.
-> -   For X12 format, the Target Root Element is available for EDI to XML converter version 2.7 and above.
 
 
 
@@ -330,6 +329,8 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     *Target Root Element*
 
     \(only available if *Exclude Interchange and Group envelopes* is not selected\)
+
+    \(Available from version 2.7 and above\)
     
     </td>
     <td valign="top">

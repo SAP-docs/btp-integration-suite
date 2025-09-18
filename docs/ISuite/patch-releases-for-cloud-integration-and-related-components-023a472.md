@@ -79,6 +79,159 @@ Patches for different components are associated with different major software ve
 
 
 
+<a name="loio023a4725bb734f86be8a5625abe54110__section_bwm_psr_pgc"/>
+
+## September 2025
+
+Software Increment: 2507
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.69.45
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   When the syntax version is null, the UI incorrectly displays "Release undefined." The UI now shows this field as empty.
+-   The patch addresses an internal dependency update to align with Jakarta-compliant libraries identified during DTS consumption. This change is internal and has no customer-facing impact. It doesn't affect performance, database, or memory.
+-   Basic Auth was failing for API Management capability + Integration Cell use cases due to credential store separation for Integration Cell specific scenarios. The patch fixes this by creating the key in the generic secure store.
+-   The patch addresses issues related to the Design Page during API Management capability and Integration Cell reactivation.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.69.49
+
+</td>
+<td valign="top">
+
+This patch icludes the following items:
+
+-   JDBC adapter moved to a stable version.
+
+-   Enhancements related to load distribution.
+
+-   Updates related to Message Processing Log Attachment view on Monitor Message Processing screen.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.33.18
+
+</td>
+<td valign="top">
+
+This patch icludes the following items:
+
+-   JDBC adapter moved to a stable version.
+
+-   Enhancements related to load distribution.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_hhl_pqr_pgc"/>
+
+## September 2025
+
+Software Increment: 2506
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.68.26
+
+</td>
+<td valign="top">
+
+This patch fixes issues with Unicode characters parsing in extracted XML files.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio023a4725bb734f86be8a5625abe54110__section_epj_r1i_3fa"/>
 
 ## August 2025

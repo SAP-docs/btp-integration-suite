@@ -34,7 +34,103 @@ Integration content
 
 2 GB
 
-Refer to the SAP Community blog: [Content Size Limits](https://blogs.sap.com/2020/08/02/cloud-integration-content-size-limits/)
+For more information, refer to the SAP Community blog: [Content Size Limits](https://blogs.sap.com/2020/08/02/cloud-integration-content-size-limits/)
+
+> ### Note:  
+> When the content size exceeds 250 MB, the metaspace increases accordingly. See the table below for more details:
+> 
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> Content Size
+> 
+> </th>
+> <th valign="top">
+> 
+> Container Size
+> 
+> </th>
+> <th valign="top">
+> 
+> Metaspace
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Up to 250 MB
+> 
+> </td>
+> <td valign="top">
+> 
+> 8 GB
+> 
+> </td>
+> <td valign="top">
+> 
+> 500 MB \(default\)
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> 250-500 MB
+> 
+> </td>
+> <td valign="top">
+> 
+> 12 GB
+> 
+> </td>
+> <td valign="top">
+> 
+> 750 MB
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> 500 MB- 1 GB
+> 
+> </td>
+> <td valign="top">
+> 
+> 16 GB
+> 
+> </td>
+> <td valign="top">
+> 
+> 1250 MB
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> 1-2 GB
+> 
+> </td>
+> <td valign="top">
+> 
+> 20 GB
+> 
+> </td>
+> <td valign="top">
+> 
+> 1750 MB
+> 
+> </td>
+> </tr>
+> </table>
+> 
+> Use the `JBP_CONFIG_JAVA_OPTS` parameter configuration to update the metaspace size. See: [Runtime Parameters](runtime-parameters-63c5276.md).
+
+
 
 </td>
 </tr>
