@@ -16,6 +16,45 @@ You can model the steps that write into the data store and those that consume me
 
 If multiple worker nodes are set up, there's no parallel processing of the same data store entry by these multiple worker nodes.
 
+## Default Headers
+Each time an Iflow is triggered via this Adapter the following Headers are present:
+
+*Headers have to be listed in Allowed Header(s) for Iflow*
+<table>
+<tr>
+<th valign="top">
+
+Header
+
+</th>
+<th valign="top">
+
+Description
+
+</th></tr>
+<tr>
+<td valign="top">
+
+*SAP_DataStoreRetries*
+
+</td>
+<td valign="top">
+The count of how often the Message is retried. First Read has Count 0.
+</td>
+</tr>
+<td valign="top">
+
+*SAP_MessageProcessingLogID*
+
+</td>
+<td valign="top">
+
+The ID of the entry. Can be used for update or delete actions. See: [Define Data Store Operations](define-data-store-operations-79f63a4.md)
+
+</td>
+</tr>
+</table>
+
 > ### Tip:  
 > You can use this feature to implement scenarios with quality of service Exactly Once for cases when the sender hasn't any mechanism in place to retry messages.
 > 
@@ -200,4 +239,5 @@ Enter a value for the timeout of the in-progress repository. After this time, a 
 </td>
 </tr>
 </table>
+
 
