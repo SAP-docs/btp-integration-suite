@@ -17,7 +17,7 @@
 > 
 >     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
-The *General Splitter* splits a composite message comprising N messages into N individual messages, each containing 1 message with the enveloping elements of the composite message. The term *enveloping elements* refers to these elements including the split point. Note elements that follow the one that is indicated as split point in the original message \(but on the same level\), are'nt counted as enveloping elements. They won't be part of the resulting messages.
+The *General Splitter* splits a composite message comprising N messages into N individual messages, each containing 1 message with the enveloping elements of the composite message. The term *enveloping elements* refers to these elements including the split point. Note elements that follow the one that is indicated as split point in the original message \(but on the same level\), aren't counted as enveloping elements. They won't be part of the resulting messages.
 
 More information: [General and Iterating Splitter](general-and-iterating-splitter-b49d088.md)
 
@@ -285,7 +285,7 @@ If you use a Splitter step in a local integration process, the following limitat
     > 
     > -   Processing of the 10 elements that are currently in processing continues until processing is finished.
     > 
-    >     However, these 10 messages are used in the *Gather* step.
+    >     However, these 10 messages are not used in the *Gather* step.
     > 
     > -   The remaining 80 messages are ignored.
 
