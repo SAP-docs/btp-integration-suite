@@ -2,8 +2,49 @@
 
 # Configure the AMQP Sender Adapter
 
-You use the Advanced Message Queuing Protocol \(AMQP\) sender adapter to consume messages in SAP Cloud Integration from queues or topic subscriptions in an external message broker.
+You use the Advanced Message Queuing Protocol \(AMQP\) sender adapter to consume messages in SAP Cloud Integration from queues or topic subscriptions in an external message broker or from the SAP Event Mesh.
 
+## Default Headers
+
+Each time an Iflow is triggered via this Adapter the following Headers are present:
+
+*Headers have to be listed in Allowed Header(s) for Iflow*
+<table>
+<tr>
+<th valign="top">
+
+Header
+
+</th>
+<th valign="top">
+
+Description
+
+</th></tr>
+<tr>
+<td valign="top">
+
+*JMSRedelivered*
+
+</td>
+<td valign="top">
+
+Indicates if the message is retried. Values: true/false
+
+</td>
+</tr>
+<td valign="top">
+
+*JMSXDeliveryCount*
+
+</td>
+<td valign="top">
+
+The count of how often the Message is retried. First Read has Count 0.
+
+</td>
+</tr>
+</table>
 
 
 > ### Note:  
@@ -23,6 +64,9 @@ You use the Advanced Message Queuing Protocol \(AMQP\) sender adapter to consume
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
+
+> ### Note:
+> There is no option to configure a delay in retry processing in the AMQP adapter because this is not supported by the AMQP protocol. 
 
 
 
