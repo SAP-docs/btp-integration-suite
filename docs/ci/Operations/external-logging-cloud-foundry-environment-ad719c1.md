@@ -261,6 +261,18 @@ If the property is set to `true`, values like custom header attributes and adapt
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*CompressData*
+
+</td>
+<td valign="top">
+
+In some cases you need to disable compression `false`. E.g. error "Splunk Error (6): Invalid data format"
+
+</td>
+</tr>
 </table>
 
 Then, to enable external logging, send a `POST` call to the following URL: `https://path-to-odata-api/api/v1/activateExternalLogging[?defaultLogLevel=(NONE|INFO|ERROR)]`, where the `path-to-odata-api` is specific to your environment. The optional parameter `defaultLogLevel` specifies the external logging level applied to existing and newly deployed integration flows. If this parameter is omitted or is *NONE*, then external logging doesn't take place, unless explicitly activated for a specific integration flow. If the log level is set to *INFO* or *ERROR* instead, MPLs for existing integration flows and newly deployed integration flows are immediately sent to the external system, unless the setting is explicitly changed for a specific Integration flow. You can change the default setting anytime by calling the activation API again. If external logging is already active, it takes up to 5 minutes for the new default level to take effect.
