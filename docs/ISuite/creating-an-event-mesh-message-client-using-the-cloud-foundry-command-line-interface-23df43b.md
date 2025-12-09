@@ -32,42 +32,31 @@ If you want to work outside of the SAP BTP cockpit, you can create an Event Mesh
 
         > ### Example:  
         > ```
-        > cf create-service event-mesh-message-client message-client <yourmessageclientname> -c 
-        > '{
-        >     "emname": "<yourmessageclientname>",
-        >     "namespace": "<yourorgname>/<yourmessageclientname>/<uniqueID>",
-        >     "version": "1.1.0",
-        >    
-        >     "rules": {
-        >         "queueRules": {
-        >             "publishFilter": [
-        >                 "${namespace}/*"
-        >             ],
-        >             "subscribeFilter": [
-        >                 "${namespace}/*"
-        >             ]
-        >         },
-        >         "topicRules": {
-        >             "publishFilter": [
-        >                 "${namespace}/*"
-        >             ],
-        >             "subscribeFilter": [
-        >                 "${namespace}/*"
-        >             ]
-        >         }
+        > cf create-service event-mesh-message-client message-client <your-message-client-name> -c '{
+        >   "namespace": "<your-org-name>/<your-message-client-name>/<uniqueID>",
+        >   "rules": {
+        >     "queueRules": {
+        >       "publishFilter": [
+        >         "${namespace}/*"
+        >       ],
+        >       "subscribeFilter": [
+        >         "${namespace}/*"
+        >       ]
         >     },
-        >     "resources" : {
-        >     "units" : "10"
-        >   },
-        >     "xs-security": { //optional//
-        >         "oauth2-configuration": { 
-        >         "credential-types": [
-        >         "binding-secret",
-        >         "x509"
+        >     "topicRules": {
+        >       "publishFilter": [
+        >         "${namespace}/*"
+        >       ],
+        >       "subscribeFilter": [
+        >         "${namespace}/*"
         >       ]
         >     }
+        >   },
+        >   "resources": {
+        >     "units": 10
         >   }
         > }'
+        > 
         > ```
 
         > ### Note:  
@@ -77,43 +66,31 @@ If you want to work outside of the SAP BTP cockpit, you can create an Event Mesh
 
         > ### Example:  
         > ```
-        > cf update-service <yourmessageclientname> -c 
-        > '{
-        >     "emname": "<yourmessageclientname>",
-        >     "namespace": "<yourorgname>/<yourmessageclientname>/<uniqueID>",
-        >     "version": "1.1.0",
-        >    
+        > cf update-service <your-message-client-name> -c '{
+        >   "namespace": "<your-org-name>/<your-message-client-name>/<uniqueID>",
+        >   "rules": {
+        >     "queueRules": {
+        >       "publishFilter": [
+        >         "${namespace}/*"
+        >       ],
+        >       "subscribeFilter": [
+        >         "${namespace}/*"
+        >       ]
         >     },
-        >      "rules": {
-        >         "queueRules": {
-        >             "publishFilter": [
-        >                 "${namespace}/*"
-        >             ],
-        >             "subscribeFilter": [
-        >                 "${namespace}/*"
-        >             ]
-        >         },
-        >         "topicRules": {
-        >             "publishFilter": [
-        >                 "${namespace}/*"
-        >             ],
-        >             "subscribeFilter": [
-        >                 "${namespace}/*"
-        >             ]
-        >         }
-        >     },
-        >     "resources" : {
-        >     "units" : "25"
-        >   },
-        >     "xs-security": { //optional//
-        >         "oauth2-configuration": { 
-        >         "credential-types": [
-        >         "binding-secret",
-        >         "x509"
+        >     "topicRules": {
+        >       "publishFilter": [
+        >         "${namespace}/*"
+        >       ],
+        >       "subscribeFilter": [
+        >         "${namespace}/*"
         >       ]
         >     }
+        >   },
+        >   "resources": {
+        >     "units": 25
         >   }
         > }'
+        > 
         > ```
 
 

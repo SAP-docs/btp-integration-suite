@@ -38,7 +38,10 @@ Groovy Runtime
 </td>
 <td valign="top">
 
-2.4.21
+-   2.4.21 for Groovy script step version 1.1
+-   4.0.29 for Groovy script step version 2.0
+
+
 
 </td>
 </tr>

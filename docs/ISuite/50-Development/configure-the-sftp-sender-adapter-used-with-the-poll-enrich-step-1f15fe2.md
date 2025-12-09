@@ -93,7 +93,7 @@ Description
 
 Relative path to read the file from a directory. Example: `parentdirectory/childdirectory`
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -157,7 +157,7 @@ Name of the file to be read. If you do not enter a file name and the parameter r
 > 
 > -   The option *Keep File and Mark as Processed in Idempotent Repository* \(for sender channels under *Processing*\) will not work for these files.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -171,7 +171,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Host name or IP address of the SFTP server and an optional port, for example, `wdfd00213123:22`.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -279,7 +279,7 @@ Enter the referenced credential name used for proxy authentication.
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration of SAP BTP cockpit.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -295,7 +295,7 @@ ID of the user performing the file transfer.
 
 Make sure that the user name contains no other characters than `A-z`, `0-9`, `_` \(underscore\), `-` \(hyphen\), `/` \(slash\), `?` \(question mark\), `@` \(at\), `!` \(exclamation mark\), `$` \(dollar sign \), `'` \(apostrophe\), `(`, `)` \(brackets\), `*` \(asterisk\), `+` \(plus sign\), `,` \(comma\), `;` \(semicolon\), `=` \(equality sign\), `.` \(dot\), or `~` \(tilde\). Otherwise, an attempt for anonymous login is made which results in an error.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -311,7 +311,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Alias to identify the private key in the keystore used for the communication with the SFTP server.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -407,6 +407,93 @@ Parameters
 Description
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+*Processing Mode*
+
+\(Supported for adapter version 1.9 and above\)
+
+</td>
+<td valign="top">
+
+Retrieves list of files from an SFTP server without reading its contents.
+
+Select one of the following based on how you want to process the files.
+
+-   *Process File*: Follows the default behaviour of poll enrich where a single file is processed.
+
+-   *List Files Only*: Lists the files from the source directory. The fields *Read Lock Strategy*, *Use Fast Exists Check* and *Post-Processing* are not relevant hence disabled.
+
+    The file list, along with associated metadata such as name, size, timestamps, and permissions, is placed directly into the Camel message body, enabling subsequent steps in the integration flow to access and act on this information. It also supports including subdirectories in the search and applies the same default filtering logic used in the poll enrich option, ensuring consistency in file selection.
+
+    The output of this feature is an xml structure
+
+    The FileList XML structure is designed to encapsulate detailed information about files in a directory. It comprises a collection of <file\> elements under a root <files\> element. Each <file\> element contains metadata about an individual file, including its path, name, modification details, size, and permissions.
+
+    Default sort is not applied to the list of files, they are dependent on the file system.
+
+
+> ### Sample Code:  
+> Output
+> 
+> ```
+> <fileList>
+>     <files>
+>         <file>
+>             <absoluteFilePath>teal/user/noopTests/filenoop2.txt</absoluteFilePath>
+>             <endpointPath>teal/user/noopTests</endpointPath>
+>             <relativeFilePath>filenoop2.txt</relativeFilePath>
+>             <parent>teal/user/noopTests</parent>
+>             <fileNameOnly>filenoop2.txt</fileNameOnly>
+>             <lastModified>1753257921000</lastModified>
+>             <lastModifiedInString>Wed Jul 23 08:05:21 UTC 2025</lastModifiedInString>
+>             <fileSeparator>/</fileSeparator>
+>             <fileLength>0</fileLength> <permissionString>-rw-r-r--</permissionString>
+>         </file>
+>         <file>
+>             <absoluteFilePath>teal/user/noopTests/subdir1/file3subdir.txt</absoluteFilePath>
+>             <endpointPath>teal/user/noopTests</endpointPath>
+>             <relativeFilePath>subdir1/file3subdir.txt</relativeFilePath>
+>             <parent>teal/user/noopTests/subdir1</parent>
+>             <fileNameOnly>file3subdir.txt</fileNameOnly>
+>             <lastModified>1753257952000</lastModified>
+>             <lastModifiedInString>Wed Jul 23 08:05:52 UTC 2025</lastModifiedInString>
+>             <fileSeparator>/</fileSeparator>
+>             <fileLength>0</fileLength> <permissionString>-rw-r-r--</permissionString>
+>         </file>
+>     </files>
+> </fileList>
+> 
+> ```
+
+Tag Description:
+
+-   <absoluteFilePath\>: Full path of the file as per the system directory from the home directory of the user.
+
+-   <endpointPath\>: Directory path of the designated endpoint.
+
+-   <relativeFilePath\>: File path relative to the endpoint location.
+
+-   <parent\>: Parent directory of the file.
+
+-   <fileNameOnly\>: File name with extension.
+
+-   <lastModified\>: Timestamp indicating last modification \(milliseconds since epoch\).
+
+-   <lastModifiedInString\>: Human-readable format of modification time in UTC.
+
+-   <fileSeparator\>: Character used for separating file path components.
+
+-   <fileLength\>: File size in bytes.
+
+-   <permissionString\>: File permissions in UNIX format.
+
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">

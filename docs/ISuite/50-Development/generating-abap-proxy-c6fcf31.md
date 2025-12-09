@@ -11,10 +11,7 @@ Proxy generation converts non-language-specific interface descriptions in Web Se
 ## Prerequisites
 
 -   All service interface artifacts must already be imported in SAP Integration Suite tenant. An integration package must not contain duplicate artifacts relevant for proxy generation.
--   You've the `AuthGroup_IntegrationDeveloper` role assigned.
-
-    > ### Tip:  
-    > As a tenant administrator, you can assign a dedicated integration developer to generate the ABAP proxies. You can  <?sap-ot O2O class="- topic/xref " href="4b20383efab341f181becf0a947a5498.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/c6fcf31776ff42f98ac45734b00aadf6.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  in the SAP BTP cockpit and add the role `AuthGroup_IntegrationDeveloper` to it. Later, assign this role collection to a user. See [Managing User Roles](https://help.sap.com/docs/integration-suite/sap-integration-suite/managing-user-roles?version) and [Tasks and Permissions for Cloud Integration](https://help.sap.com/docs/integration-suite/sap-integration-suite/tasks-and-permissions-556d5575d4b0483e85d4f3251f21d0ec?)
+-   You've the `PI_Integration_Developer` role collection assigned. This role collection already has the required `AuthGroup_IntegrationDeveloper` role. See [Managing User Roles](https://help.sap.com/docs/integration-suite/sap-integration-suite/managing-user-roles?version) and [Tasks and Permissions for Cloud Integration](https://help.sap.com/docs/integration-suite/sap-integration-suite/tasks-and-permissions-556d5575d4b0483e85d4f3251f21d0ec?)
 
 
 
@@ -105,7 +102,7 @@ The procedure to generate ABAP proxies is essentially the same for each type of 
         > ### Note:  
         > For SAP Integration Suite you can find it from BTP Cockpit.
         > 
-        > 1.  Navigate to *BTP Cockpit* \> *Instances and Subscriptions* \> *< your instance\>* \> *View Credentials \(in JSON format\)*
+        > 1.  Navigate to *BTP Cockpit* \> *Instances and Subscriptions* \> *< your instance with api-plan \>* \> *View Credentials \(in JSON format\)*. See [Creating Service Instance and Service Key for Inbound Authentication](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-service-instance-and-service-key-for-inbound-authentication?version=CLOUD)
         > 2.  Use this URL as the host URL.
 
 

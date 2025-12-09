@@ -129,5 +129,22 @@ MAGs
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Data Spaces
+
+</td>
+<td valign="top">
+
+Assets, policies, and contract definitions
+
+</td>
+<td valign="top">
+
+[Data Spaces](data-spaces-079b342.md)
+
+</td>
+</tr>
 </table>
 

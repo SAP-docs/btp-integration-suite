@@ -13,7 +13,7 @@ Once you have created and saved your global code value mapping, you can activate
 -   *Draft*: When you create a new global code value mapping, the newly created code value mapping has the *Status* field set to *Draft* and the *Version* set as *1.0*. These details can be viewed in the *Overview* tab of your code value mapping. You can modify this new version according to your business requirements.
 
     > ### Note:  
-    > You can also copy an existing code value mapping. The copied code value mapping will have the *Version* set as *1.0* and also the term *Copy* suffixed to its name. To know more, see [Global Code Value Mapping](global-code-value-mapping-fd1d3ff.md).
+    > You can also copy an existing code value mapping. The copied code value mapping will have the *Version* set as *1.0* and also the term *Copy* suffixed to its name. To know more, see [Global Code Value Mappings](global-code-value-mappings-fd1d3ff.md).
 
 -   *Active*: After activating a global code value mapping, the *Status* is set to *Active*. Once activated, this version of the global code value mapping will be finalised and it cannot be edited thereafter.
 

@@ -2,10 +2,6 @@
 
 # Deploy Edge Integration Cell on a Kubernetes Cluster
 
-Watch the following video to see all the necessary steps for the deployment of the Edge Integration Cell.
-
-
-
 **Related Information**  
 
 

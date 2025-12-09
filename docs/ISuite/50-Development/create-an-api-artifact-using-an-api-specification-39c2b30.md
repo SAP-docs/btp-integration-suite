@@ -104,10 +104,10 @@ To know more about OAS 3.0 support in API Management, see [OpenAPI Specification
     </td>
     <td valign="top">
     
-    The HTTP endpoint URL of the service. For example, HTTP\(s\): //<host\>:<port\>/SFlight..
+    The HTTPS endpoint URL of the service. For example, https://<host\>:<port\>/SFlight..
 
     > ### Note:  
-    > In a REST API, it is recommended not to include query parameters in the URL field. For example, the URL should be in the format `https://httpbing.org/anything` instead of `https://httpbing.org/anything?$format=json`. Including query parameters in the URL can cause the validation of the artifact to fail during deployment.
+    > In a REST API, it is recommended not to include query parameters in the URL field. For example, the URL should be in the format `https://abc.org/anything` instead of `https://abc.org/anything?$format=json`. Including query parameters in the URL can cause the validation of the artifact to fail during deployment.
     > 
     > If you need to use query parameters, it is best to append them during the execution of the API rather than including them in the URL field.
 

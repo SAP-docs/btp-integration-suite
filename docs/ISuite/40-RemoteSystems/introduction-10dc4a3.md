@@ -290,6 +290,22 @@ See: [Amazon EventBridge Receiver Adapter](../50-Development/amazon-eventbridge-
 <tr>
 <td valign="top">
 
+*Amazon Kinesis*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to Amazon Kinesis.
+
+See: [Amazon Kinesis Adapter](../50-Development/amazon-kinesis-adapter-986f02f.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *AmazonWebServices* 
 
 Sender adapter
@@ -844,6 +860,38 @@ See: [Azure Cosmos DB Receiver Adapter](../50-Development/azure-cosmos-db-receiv
 <tr>
 <td valign="top">
 
+*Azure Service Bus*
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to consume messages from Azure Service Bus.
+
+See: [Azure Service Bus Sender Adapter](../50-Development/azure-service-bus-sender-adapter-e80310f.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Azure Service Bus*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to publish messages to Azure Service Bus
+
+See: [Azure Service Bus Receiver Adapter](../50-Development/azure-service-bus-receiver-adapter-e67db82.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *BigCommerce GraphQL*
 
 Receiver adapter
@@ -870,6 +918,22 @@ Receiver adapter
 Connects SAP Integration Suite tenant to a BigCommerce REST Admin APIs, using the REST message protocol. The REST message protocol is used to connect to the REST-based Admin APIs of a BigCommerce store.
 
 See [BigCommerce Receiver REST Adapter](../50-Development/bigcommerce-receiver-rest-adapter-f36aab9.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Box*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to exchange data with Box. The Box adapter enables you to manage and configure Box components to enable collaboration and management for various types of content.
+
+See [Box Receiver Adapter](../50-Development/box-receiver-adapter-172dfbf.md)
 
 </td>
 </tr>
@@ -1692,6 +1756,22 @@ Receiver adapter
 Connects SAP Integration Suite to Microsoft Teams.
 
 See: [Microsoft Teams Receiver Adapter](../50-Development/microsoft-teams-receiver-adapter-1f333c3.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*MongoDB* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to MongoDB.
+
+See: [MongoDB Receiver Adapter](../50-Development/mongodb-receiver-adapter-58b75fc.md)
 
 </td>
 </tr>

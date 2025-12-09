@@ -42,7 +42,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
 
 4.  Choose *Deploy Solution*. The system opens a dialog box in which you can select the solution that you want to deploy, select its version, and provide the solution properties.
 
-5.  Select *Edge Integration Cell* as the solution name. The version of the solution is selected automatically. Dependent solutions EdgeIntegration Cell Services and Istio are deployed as part of Edge Integration Cell.
+5.  Select *Edge Integration Cell* as the solution name. The version of the solution is selected automatically. Dependent solutions like Edge Integration Cell Services are deployed as part of Edge Integration Cell.
 
 6.  Enter the following properties:
 
@@ -114,9 +114,9 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </td>
     <td valign="top">
     
-    Key pair alias used for TLS enablement.
+    Enter the alias of the key pair used to enable TLS.
 
-    You've to create the virtual host key alias and choose a name for it. The chosen name is needed to upload the virtual host key alias to the keystore.
+    You must create the virtual host key alias and assign a name to it. This name is required when uploading the key alias to the keystore.
     
     </td>
     </tr>
@@ -136,6 +136,35 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     > -   The authentication method is limited to HTTP Basic Authentication.
 
 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **API Virtual Host**
+    
+    </td>
+    <td valign="top">
+    
+    Enter the custom domain name used to expose local API endpoints \(Public OData API\).
+
+    > ### Note:  
+    > Enter a unique hostname for the API Virtual Host, it must not be the same as the Default Virtual Host.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **API Virtual Host Key Alias**
+    
+    </td>
+    <td valign="top">
+    
+    Enter the alias of the key pair used to enable TLS. You must create the virtual host key alias and assign a name for it. This name is required when uploading the key alias to the keystore.
     
     </td>
     </tr>
@@ -278,18 +307,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    Database Type
-    
-    </td>
-    <td valign="top">
-    
-    Database Type will be implicitly defined by selecting External DB.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     PostgreSQL Storage Class \(only visible if External DB isn't enabled\)
     
     </td>
@@ -309,7 +326,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External DB Hostname \(visible if External DB is enabled\)
+    PostgreSQL Hostname \(visible if PostgreSQL is selected\)
     
     </td>
     <td valign="top">
@@ -321,7 +338,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External DB Port \(visible if External DB is enabled\)
+    PostgreSQL Port \(visible if PostgreSQL is selected\)
     
     </td>
     <td valign="top">
@@ -333,7 +350,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External DB Name \(visible if External DB is enabled\)
+    PostgreSQL DB Name \(visible if PostgreSQL is selected\)
     
     </td>
     <td valign="top">
@@ -345,7 +362,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External DB Username \(visible if External DB is enabled\)
+    PostgreSQL Username \(visible if PostgreSQL is selected\)
     
     </td>
     <td valign="top">
@@ -357,7 +374,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External DB Password \(visible if External DB isnullnullnull
+    PostgreSQL Password \(visible if PostgreSQL is selected\)
     
     </td>
     <td valign="top">
@@ -369,12 +386,74 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External DB TLS Root Certificate Password \(visible if External DB is enabled\)
+    PostgreSQL TLS Root Certificate \(visible if PostgreSQL is selected\)
     
     </td>
     <td valign="top">
     
     Upload Trust CA certificate to connect to PostgreSQL database using TLS. CA certificate in PEM format \(Base64 ASCII\), should include only Root CAs required to connect \(size limit 5kB\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    HANA DB Node \(visible if HANA DB is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the SAP HANA database node in the format hostname:port.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    HANA DB Name \(visible if HANA DB is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the name of the SAP HANA database.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    HANA DB Username \(visible if HANA DB is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the username to connect to the SAP HANA database.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    HANA DB Password \(visible if HANA DB is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the password to connect to the SAP HANA database.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    HANA DB TLS Root Certificate \(visible if HANA DB is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Upload Trust CA certificate to connect to the SAP HANA database using TLS.
+
+    A CA certificate in PEM format \(Base64 ASCII\) should include only the necessary Root CAs for connection, with a size limit of 5 kB.
     
     </td>
     </tr>
@@ -398,7 +477,22 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </td>
     <td valign="top">
     
-    Datastore Type will be implicitly defined by selecting External Redis.
+    Select the datastore type:
+
+    -   Internal
+    -   Redis
+    -   Reuse HANA DB
+    -   HANA DB
+
+    > ### Note:  
+    > The Internal option is for non-production environments only. Redis and HANA DB refer to external datastores.
+    > 
+    > If you select *Reuse HANA DB*, the same connection details as for the Database Type will be used. Otherwise, a different HANA DB instance can be specified.
+
+    > ### Note:  
+    > For production workloads that demand consistent and scalable performance, particularly when implementing Quota and Surge protection policies on your API artifact, it is recommended you use Redis as the backing datastore to achieve optimal performance. See, [Policy Definition and Types of Policies](50-Development/policy-definition-and-types-of-policies-c744df5.md).
+
+
     
     </td>
     </tr>
@@ -421,7 +515,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External Redis Addresses \(only visible if External Redis is enabled\)
+    Redis Addresses \(only visible if Redis is selected\)
     
     </td>
     <td valign="top">
@@ -433,7 +527,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External Redis Mode \(only visible if External Redis is enabled\)
+    Redis Mode \(only visible if Redis is selected\)
     
     </td>
     <td valign="top">
@@ -445,7 +539,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External Redis Username \(only visible if External Redis is enabled\)
+    Redis Username \(only visible if Redis is selected\)
     
     </td>
     <td valign="top">
@@ -457,7 +551,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External Redis Password \(only visible if External Redis is enabled\)
+    Redis Password \(only visible if Redis is selected\)
     
     </td>
     <td valign="top">
@@ -469,7 +563,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External Redis Sentinel Username \(only visible if External Redis is enabled\)
+    Redis Sentinel Username \(only visible if Redis is selected\)
     
     </td>
     <td valign="top">
@@ -481,7 +575,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External Redis Sentinel Password \(only visible if External Redis is enabled\)
+    Redis Sentinel Password \(only visible if Redis is selected\)
     
     </td>
     <td valign="top">
@@ -493,7 +587,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External Redis TLS Certificate \(only visible if External Redis is enabled\)
+    Redis TLS Certificate \(only visible if Redis is selected\)
     
     </td>
     <td valign="top">
@@ -505,12 +599,74 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    External Redis Server Name \(only visible if External Redis is enabled\)
+    Redis Server Name \(only visible if Redis is selected\)
     
     </td>
     <td valign="top">
     
     Enter server name, required only if the server’s certificate doesn't have IP Subject Alternative Names \(SAN\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    HANA DB Node \(visible if HANA DB is selected as Datastore\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the SAP HANA database node in the format hostname:port.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    HANA DB Name \(visible if HANA DB is selected as Datastore\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the name of the SAP HANA database.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    HANA DB Username \(visible if HANA DB is selected as Datastore\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the username to connect to the SAP HANA database.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    HANA DB Password \(visible if HANA DB is selected as Datastore\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the password to connect to the SAP HANA database.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    HANA DB TLS Root Certificate \(visible if HANA DB is selected as Datastore\)
+    
+    </td>
+    <td valign="top">
+    
+    Upload Trust CA certificate to connect to the SAP HANA database using TLS.
+
+    A CA certificate in PEM format \(Base64 ASCII\) should include only the necessary Root CAs for connection, with a size limit of 5 kB.
     
     </td>
     </tr>
@@ -604,7 +760,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     
 11. Choose *Deploy*.
 
-    The deployment of the solution starts with the deployment of the dependent solutions Istio and Edge Integration Cell Services. Once the deployment of independent solutions is complete, the deployment of Edge Integration Cell starts automatically. Edge Lifecycle Management deploys solutions based on helm charts.
+    The deployment of the solution starts with the deployment of dependent solutions like Edge Integration Cell Services. Once the deployment of independent solutions is complete, the deployment of Edge Integration Cell starts automatically. Edge Lifecycle Management deploys solutions based on helm charts.
 
 12. After the successful deployment of the solution, assign the new runtime to a new or existing keystore. For more information see, [Interact with Keystores from Edge Integration Cell](interact-with-keystores-from-edge-integration-cell-d4972b8.md).
 

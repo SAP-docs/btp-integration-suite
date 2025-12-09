@@ -11,6 +11,12 @@ As an integration developer, design your integration artifacts to be clean, cons
 
 The Cloud Integration capability of SAP Integration Suite currently provides the checks and fixes to keep the script step in your integration flows ready for such upgrades.
 
+
+
+## Implications
+
+While [executing](design-guidelines-view-d62dfe0.md) the design guidelines from your integration flow, unlike other [design guidelines](IntegrationSettings/design-guidelines-4d1c84f.md) this guidelines can't be skipped. If the non-compliace is highlighted regarding the underlying [Groovy Script](groovy-script-fa29f02.md) guidelines, you must navigate to the respective Groovy Script and [fix the incompatibilities](fix-script-incompatibilities-7397c42.md). To help compatibility with future runtime and software upgrades, and receive resolution support for violations, you should also upgrade your Groovy Script step to the latest version, which utilizes Groovy runtime 4.0.29. See [Upgrading Groovy Script](upgrading-groovy-script-917e014.md)
+
 **Related Information**  
 
 

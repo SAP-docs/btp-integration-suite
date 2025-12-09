@@ -4,13 +4,13 @@
 
 # Systems
 
-Create and maintain system related configuration for your partner profile.
+Create and maintain system-related configurations for your partner profile.
 
 
 
 ## Context
 
-*Systems* tab allows you to maintain the B2B standard details. You need this information to create agreements. Each agreement contains a specific B2B standard and conducts transactions based on the protocols provided by this B2B standard. In order to maintain the type systems in you agreement, you need to create and define them in the partner profile.
+*Systems* tab allows you to maintain the B2B standard details. You need this information to create agreements. Each agreement contains a specific B2B standard and conducts transactions based on the protocols provided by this B2B standard. In order to maintain the type systems in your agreement, you need to create and define them in the partner profile.
 
 
 
@@ -128,7 +128,7 @@ Create and maintain system related configuration for your partner profile.
 6.  In the *Create Type System* dialog, select the *Name* and *Version* of the type system from the drop-down list.
 
     > ### Note:  
-    > For **SOAP** and **IDOC** type systems, you can enter versions manually by selecting the checkbox *Input Version Manually* and maintaing the *Version* field.
+    > For **SOAP** and **IDOC** type systems, you can enter versions manually by selecting the checkbox *Input Version Manually* and maintaining the *Version* field.
 
 7.  Choose *Save*. The type system is added successfully. Choose *Save* to update the system.
 
@@ -246,7 +246,7 @@ Create and maintain system related configuration for your partner profile.
     </td>
     <td valign="top">
     
-    Enter the user account that you have configured in Cloud Integration tenant for authorisation.
+    Enter the user account that you have configured in Cloud Integration tenant for authorization.
 
     To know more, see [Partner Authorization](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/c0c9950003674d198e9e7ceda098053d.html).
     
@@ -365,7 +365,7 @@ Create and maintain system related configuration for your partner profile.
     <tr>
     <td valign="top">
     
-    Receipient URL
+    Recipient URL
     
     </td>
     <td valign="top">
@@ -382,7 +382,7 @@ Create and maintain system related configuration for your partner profile.
     </td>
     <td valign="top">
     
-    Select the type of proxy you want to use for connecting to receiver system.
+    Select the type of proxy that you want to use for connecting to receiver system.
 
     -   Internet
 
@@ -432,7 +432,7 @@ Create and maintain system related configuration for your partner profile.
     
     Private Key Alias
 
-    Only if you choose *Client Certificate* for aunthentication
+    Only if you choose *Client Certificate* for authentication
     
     </td>
     <td valign="top">
@@ -922,7 +922,7 @@ Create and maintain system related configuration for your partner profile.
     Specify the public key alias\(in case of *Trusted Certificate*\) or public key aliases\(in case of *Trusted Root Certificate*\) to verify the signature of the AS2 message.
 
     > ### Note:  
-    > You need to first maintain the certicates under the *Certificates* tab of the trading partner profile.
+    > You need to first maintain the certificates under the *Certificates* tab of the trading partner profile.
 
 
     
@@ -1044,6 +1044,6 @@ Create and maintain system related configuration for your partner profile.
     > 
     > After maintaining the necessary details, the *Status* of the System is set to *Completed*.
 
-15. For the next step, see [Certificates](certificates-5c4a01a.md).
+15. Next, you need to maintain the certificates. See [Certificates](certificates-5c4a01a.md).
 
 

@@ -48,7 +48,7 @@ To view or modify the APIs for anomaly detection, follow the steps below:
 **Related Information**  
 
 
-[Enabling Anomaly Detection and Predictions](enabling-anomaly-detection-and-predictions-98534a0.md "Activate the anomaly detection and prediction features for API calls to enhance monitoring and forecasting capabilities.")
+[Enabling Anomaly Detection, Intelligent Recommendations, and API Call Predictions](enabling-anomaly-detection-intelligent-recommendations-and-api-call-predictions-98534a0.md "Activate anomaly detection, intelligent recommendations, and API call prediction to enhance monitoring and forecasting capabilities for API calls.")
 
 [Working with Detected Anomalies](working-with-detected-anomalies-1c677b2.md "Access and analyze anomalies in the analytics dashboard. Discover details about the various types of anomalies, evaluate and resolve them.")
 

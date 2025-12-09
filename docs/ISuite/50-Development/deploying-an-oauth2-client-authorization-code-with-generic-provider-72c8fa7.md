@@ -14,7 +14,7 @@ Cloud Integration supports OAuth Clients with various update processes for their
 
 -   *Refresh Tokens that expire and are invalidated*: There are some OAuth clients that create a new refresh token that automatically and immediately invalidates the old refresh token. This means, the old refresh token can no longer be used as soon the new refresh token is available.
 
-    Example: OAuth Client of GoToWebinar;
+    Example: OAuth Client of GoToWebinar.
 
 -   *Refresh Tokens that expire but aren't invalidated*: There are some OAuth Clients that create a new refresh token, however, the old refresh token is still valid until its expiry date. In this case, a refresh token is valid during the whole expiry period, that is from creation time to creation time + expiry period.
 

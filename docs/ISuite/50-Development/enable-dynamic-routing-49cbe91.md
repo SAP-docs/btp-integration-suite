@@ -55,277 +55,49 @@ For our implementation, let’s consider the following two target endpoints:
     > ### Note:  
     > When the API proxy is created, the default route rule is set. It points to the default target endpoint and no rule is attached to it.
 
-
-**Steps for defining new target endpoint**
-
 10. Navigate to the *Configure* \> *APIs* tab. From the *APIs* list, choose the API proxy that you deployed.
 
-11. Download the newly deployed API proxy using the *Export* option. For more information, see [Export an API Definition](export-an-api-definition-420abb6.md)
 
-    A zip file called `Dynamic_Routing.zip` is downloaded.
+**Steps for defining new target endpoint manually**
 
-12. Unzip the `Dynamic_Routing.zip` file.
+11. Choose *Target Endpoint* and choose *Edit*.
 
-    A parent folder called `APIProxy` is created. The `APIProxy` folder consists of various subfolders and files. For more information, see [API Proxy Structure](api-proxy-structure-4dfd54a.md).
+12. Choose *Add* and in the *Add Target Endpoint* dialog, :
 
-13. Open the `APITargetEndPoint` subfolder.
+13. Enter the *Name*, select the *API Provider* from the dropdown and provide a *Relative URL* and choose *Add*.
 
-    You see a file named `default.xml`. The `default.xml` file contains the URL of the default target endpoint.
-
-14. Create a new XML file named `Target_EndPoint_2.xml` with the following content. In the `Target_EndPoint_2.xml file`, you need to enter a name and the URL of the new target endpoint to which the request must be routed dynamically.
+    ![](images/Dynamic_Routing_0e7f09c.png)
 
     > ### Note:  
-    > The `<isDefault>` attribute must be set to `false` for all the new target endpoints that you define. Whereas, for the default target endpoint the `<isDefault>` attribute would by default be set to `true`.
-
-    > ### Sample Code:  
-    > ```
-    > <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-    > <TargetEndPoint>
-    >     <name>Target_EndPoint_2</name>
-    >     <url>https://services.odata.org/V2/OData/OData.svc/</url>
-    >     <provider_id>NONE</provider_id>
-    >     <isDefault>false</isDefault>
-    >     <properties/>
-    >     <faultRules/>
-    >     <preFlow>
-    >         <name>PreFlow</name>
-    >     </preFlow>
-    >     <postFlow>
-    >         <name>PostFlow</name>
-    >     </postFlow>
-    >     <conditionalFlows/>
-    > </TargetEndPoint>
+    > In the *Add Target Endpoint* dialog, you can only add a target endpoint that is accessible via an API provider. Once the target endpoint is added, you can choose how you want to access it—either through an API Proxy or a URL.
     > 
-    > ```
+    > -   If you select *API Proxy*, choose *Discover* and choose the desired API proxy.
+    > -   If you select *URL*, you must manually enter the target URL in the textbox.
 
-    You see two files named `default.xml` and `Target_EndPoint_2.xml` in the `APITargetEndPoint` subfolder.
+14. You can also choose to define the *Target Endpoint Properties* by choosing *Add*. See [Target Endpoint Properties](target-endpoint-properties-edeed6a.md) for the property name and the default values.
 
+15. Now choose *Save* and navigate to the *Proxy Endpoint* tab.
 
-**Steps for defining conditions using Route Rule**
+16. Choose *Edit* and choose *Add* below the *Route Rules* section.
 
-15. Open the `APIProxyEndPoint` subfolder.
+17. Provide a name for the route rule, select the target endpoint you created from the dropdown menu, and enter the route rule condition.
 
-    You see a file named `default.xml` file.
-
-16. Open the `default.xml` file.
-
-    The default.xml file contains information about your API proxy such as base path, flows, policies and, the default route rule.
-
-    > ### Sample Code:  
-    > ```
-    > <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-    > <ProxyEndPoint default="true">
-    >     <name>default</name>
-    >     <base_path>/multitargets</base_path>
-    >     <properties/>
-    >     <routeRules>
-    >         <routeRule>
-    >             <name>default</name>
-    >             <targetEndPointName>default</targetEndPointName>
-    >             <sequence>1</sequence>
-    >             <faultRules/>
-    >         </routeRule>
-    >     </routeRules>
-    >     <faultRules/>
-    >     <preFlow>
-    >         <name>PreFlow</name>
-    >     </preFlow>
-    >     <postFlow>
-    >         <name>PostFlow</name>
-    >     </postFlow>
-    >     <conditionalFlows/>
-    > </ProxyEndPoint>
-    > 
-    > 
-    > ```
-
-17. Update the value of the `<sequence>` attribute to 2.
-
-    > ### Sample Code:  
-    > ```
-    > <routeRule>
-    >             <name>default</name>
-    >             <targetEndPointName>default</targetEndPointName>
-    >             <sequence>2</sequence>
-    >             <faultRules/>
-    >         </routeRule>
-    > 
-    > ```
-
-    The resulting default.xml file must reflect the following content.
-
-    > ### Sample Code:  
-    > ```
-    > <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-    > <ProxyEndPoint default="true">
-    >     <name>default</name>
-    >     <base_path>/multitargets</base_path>
-    >     <properties/>
-    >     <routeRules>
-    >             <routeRule>
-    >             <name>default</name>
-    >             <targetEndPointName>default</targetEndPointName>
-    >             <sequence>2</sequence>
-    >             <faultRules/>
-    >         </routeRule>
-    >     </routeRules>
-    >     <faultRules/>
-    >     <preFlow>
-    >         <name>PreFlow</name>
-    >     </preFlow>
-    >     <postFlow>
-    >         <name>PostFlow</name>
-    >     </postFlow>
-    >     <conditionalFlows/>
-    > </ProxyEndPoint>
-    > 
-    > ```
-
-18. Define a new route rule named `Target_EndPoint_2` by adding the following content to the `default.xml` file.
-
-    > ### Sample Code:  
-    > ```
-    > <routeRule>
-    >             <name>Target_EndPoint_2</name>
-    >              <targetEndPointName>Target_EndPoint_2</targetEndPointName>
-    >             <sequence>1</sequence>
-    > 	<faultRules/>
-    > </routeRule>
-    > 
-    > ```
-
-    The resulting default.xml file must reflect the following content.
-
-    > ### Sample Code:  
-    > ```
-    > <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-    > <ProxyEndPoint default="true">
-    >     <name>default</name>
-    >     <base_path>/multitargets</base_path>
-    >     <properties/>
-    >     <routeRules>
-    >         <routeRule>
-    >             <name>Target_EndPoint_2</name>
-    >             <targetEndPointName>Target_EndPoint_2</targetEndPointName>
-    >             <sequence>1</sequence>
-    >             <faultRules/>
-    >         </routeRule>
-    >         <routeRule>
-    >             <name>default</name>
-    >             <targetEndPointName>default</targetEndPointName>
-    >             <sequence>2</sequence>
-    >             <faultRules/>
-    >         </routeRule>
-    >     </routeRules>
-    >     <faultRules/>
-    >     <preFlow>
-    >         <name>PreFlow</name>
-    >     </preFlow>
-    >     <postFlow>
-    >         <name>PostFlow</name>
-    >     </postFlow>
-    >     <conditionalFlows/>
-    > </ProxyEndPoint>
-    > 
-    > ```
-
-19. Define a condition based on which you want to route the request dynamically. In this case, let’s add a `proxy.pathsuffix MatchesPath` condition under the Target\_EndPoint\_2 Route Rule and set it to the path called `/Categories`.
-
-    > ### Sample Code:  
-    > ```
-    > <routeRule>
-    >             <name>Target_EndPoint_2</name>
-    > 		  <conditions>proxy.pathsuffix MatchesPath "/Categories"</conditions>
-    >             <targetEndPointName>Target_EndPoint_2</targetEndPointName>
-    >             <sequence>1</sequence>
-    >             <faultRules/>
-    > 
-    > ```
-
-    The resulting default.xml file must reflect the following content.
-
-    > ### Sample Code:  
-    > ```
-    > <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-    > <ProxyEndPoint default="true">
-    >     <name>default</name>
-    >     <base_path>/multitargets</base_path>
-    >     <properties/>
-    >     <routeRules>
-    >         <routeRule>
-    >             <name>Target_EndPoint_2</name>
-    >             <conditions>proxy.pathsuffix MatchesPath "/Categories"</conditions>
-    >             <targetEndPointName>Target_EndPoint_2</targetEndPointName>
-    >             <sequence>1</sequence>
-    >             <faultRules/>
-    >         </routeRule>
-    >         <routeRule>
-    >             <name>default</name>
-    >             <targetEndPointName>default</targetEndPointName>
-    >             <sequence>2</sequence>
-    >             <faultRules/>
-    >         </routeRule>
-    >     </routeRules>
-    >     <faultRules/>
-    >     <preFlow>
-    >         <name>PreFlow</name>
-    >     </preFlow>
-    >     <postFlow>
-    >         <name>PostFlow</name>
-    >     </postFlow>
-    >     <conditionalFlows/>
-    > </ProxyEndPoint>
-    > 
-    > ```
+    Define a condition based on which you want to route the request dynamically. In this case, let’s add a `proxy.pathsuffix MatchesPath` condition under the default route rule and set it to the path called `/Categories` as shown below:![](images/Route_Rule_e896664.png)
 
     > ### Note:  
-    > If you have defined more than one route rule in the proxy endpoint as shown in the above codeblock, their sequence in the XML configuration is important. The first Route Rule to match gets executed. \(Route rules with no condition always match\). In the above codebloack, if the `default` route rule appeared first, it would be executed even if the condition of the `Target_EndPoint_2` route rule would have matched. Hence, it is always recommended to list your conditional route rules before an unconditional route rule.
+    > If you have defined more than one route rule in the proxy endpoint as shown in the above codeblock, their sequence in the XML configuration is important. The first router rule to match gets executed. \(Route rules with no condition always match\) Hence, it is always recommended to list your conditional route rules before an unconditional route rule.
 
-20. Open the `<API_Proxy_Name>.xml` file. In this case, `Dynamic_Routing.xml` file.
+18. Choose *Save*.
 
-21. Add the new target endpoint name that you defined.
-
-    > ### Sample Code:  
-    > ```
-    > <targetEndPoints>
-    >         <targetEndPoint>Target_EndPoint_2</targetEndPoint>
-    >         <targetEndPoint>default</targetEndPoint>
-    >     </targetEndPoints>
-    > 
-    > ```
-
-
-**Steps for viewing dynamic routing**
-
-22. Compress the `APIProxy` parent folder.
-
-23. Navigate to API portal and import the compressed `APIProxy.zip` file. For more information, see [Import an API Definition](import-an-api-definition-9342a93.md).
-
-24. Choose the imported API proxy.
-
-25. Under *Proxy EndPoint* tab, in the *Route Rules* section, you must see two Route Rules that you defined earlier.
-
-    > ### Note:  
-    > You can also add route conditions directly in API portal User Interface instead of adding it manually in the API proxy EndPoint definition file as shown in step 19.
-
-26. Click on the API proxy URL.
+19. Now, click on the API proxy URL.
 
     The request must be routed to the default target endpoint.
 
-27. Append `/Categories` to the API proxy URL in your browser.
+20. Append `/Categories` to the API proxy URL in your browser.
 
     The request must be routed dynamically to the new target endpoint.
-
-    To validate the response, copy and paste the actual URL of the backend service with path suffix `/Categories`.
-
-    The response obtained must match the response obtained in step 27.
 
     > ### Note:  
     > All the policies that you attach in the target endpoint via the API portal user interface are applied only to the default target endpoint. In case, if you need to enforce policies on the non-default target endpoint, then you must import the API proxy bundle and manually add the policies in the required target endpoint definition file.
 
-
-**Related Information**  
-
-
-[https://blogs.sap.com/2019/06/03/building-a-loopback-api-using-sap-cloud-platform-api-management/](https://blogs.sap.com/2019/06/03/building-a-loopback-api-using-sap-cloud-platform-api-management/)
 

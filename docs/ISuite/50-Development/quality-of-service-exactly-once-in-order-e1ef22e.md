@@ -31,4 +31,5 @@ The following scenarios exist:
 -   Scenario with SAP RM sender and XI receiver using an exclusive JMS queue \(see [Sender with SAP RM Protocol and Receiver with XI Protocol](sender-with-sap-rm-protocol-and-receiver-with-xi-protocol-5f35b5c.md)\)
 -   Scenario with SFTP sender adapter using an exclusive JMS queue \(see [SFTP Sender Scenario](sftp-sender-scenario-3d7fd37.md)\)
 -   Scenario using either an exclusive or a partitioned queue on SAP Integration Suite, advance event mesh \(see [Decoupling Using SAP Integration Suite, Advanced Event Mesh](decoupling-using-sap-integration-suite-advanced-event-mesh-df7b472.md)\)
+-   Scenario with IDoc sender and SAP RM receiver using an exclusive JMS queue \(see  <?sap-ot O2O class="- topic/xref " href="72666281f7a14e4786d7522170e4dafd.xml" text="" desc="" xtrc="xref:11" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/e1ef22e3f5d84cbea7dc30400352e942.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> \)
 

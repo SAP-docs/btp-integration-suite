@@ -109,8 +109,6 @@ Follow these general guidelines when using the *Script* step.
 
         See also: [Define a Local Script Step](define-a-local-script-step-03b32eb.md)
 
-    -   APIs from the Cloud Integration stack, that means, jar files that are bundled in the Cloud Integration software assembly
-
 
     We don’t recommend to consume external code \(uploaded as integration flow resource\). If you do so, a warning is raised.
 

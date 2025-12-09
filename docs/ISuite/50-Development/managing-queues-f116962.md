@@ -116,7 +116,7 @@ Triggers a retry of all messages in the selected queue.
 <tr>
 <td valign="top">
 
-*Status*
+*Usage*
 
 </td>
 <td valign="top">
@@ -190,7 +190,7 @@ During the operation of your scenarios, you may find that messages are piling up
 <tr>
 <td valign="top">
 
-*Move* \(only for non-exclusive queues\)
+*Move*
 
 </td>
 <td valign="top">

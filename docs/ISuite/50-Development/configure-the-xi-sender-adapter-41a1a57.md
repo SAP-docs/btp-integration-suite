@@ -22,7 +22,7 @@ The XI sender adapter allows you to connect a tenant to a local Integration Engi
 
 ## Use
 
-With this adapter, you can connect an on-premise backend system to SAP Cloud Integration. The XI sender adapter communicates \(receive messages\) over the XI 3.0 protocol.
+With this adapter, you can connect an on-premise back end system to SAP Cloud Integration. The XI sender adapter communicates \(receive messages\) over the XI 3.0 protocol.
 
 
 
@@ -57,7 +57,7 @@ Consider the following when using the XI adapter.
 > ### Note:  
 > -   The XI adapter doesn't support acknowledgments.
 > 
-> -   The XI adapter does not support the Exactly Once In Order \(EOIO\) delivery assurance option by default. However, you can model Exactly Once In Order by selecting the *Handled by Integration Flow* delivery assurance option. See: [Sender with XI Protocol and Receiver with SAP RM Protocol](sender-with-xi-protocol-and-receiver-with-sap-rm-protocol-090abf3.md).
+> -   The XI adapter doesn't support the Exactly Once In Order \(EOIO\) Delivery Assurance option by default. However, you can model Exactly Once In Order by selecting the *Handled by Integration Flow* Delivery Assurance option. See: [Sender with XI Protocol and Receiver with SAP RM Protocol](sender-with-xi-protocol-and-receiver-with-sap-rm-protocol-090abf3.md).
 > 
 > -   For XI packaging, the incoming package message appears in the MPL.
 

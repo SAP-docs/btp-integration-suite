@@ -1897,3 +1897,5 @@ Read message processing log attachment
 
 [Audit Logging in the Neo Environment](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/02c39712c1064c96b37c1ea5bc9420dc.html)
 
+[Auditing and Logging Information for Edge Integration Cell](https://help.sap.com/docs/integration-suite/sap-integration-suite/auditing-and-logging-information-for-edge-integration-cell?version=CLOUD)
+

@@ -4,7 +4,9 @@
 
 Get onboarded to Edge Integration Cell.
 
-The Edge Integration Cell deployment involves several stages. Start by ensuring that the required roles are assigned for successful deployment and management before continuing with environment preparation and deployment steps.
+Watch the following video to see the necessary steps required for the initial set up of Edge Integration Cell.
+
+
 
 **The following table shows which persona takes on which tasks.**
 

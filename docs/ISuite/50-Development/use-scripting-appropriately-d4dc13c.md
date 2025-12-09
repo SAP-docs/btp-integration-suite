@@ -2,7 +2,7 @@
 
 # Use Scripting Appropriately
 
-You can use the Script step to apply script operations on the message content.
+You can use the script step to apply script operations on the message content.
 
 
 
@@ -16,6 +16,8 @@ The Script step type supports the following script languages:
 
 -   JavaScript
 
+
+Upgrade your groovy script step to version 2.0 to ensure your groovy scripts are clean, consistent, and prepared for future software and runtime version upgrades. See [Upgrading Groovy Script](upgrading-groovy-script-917e014.md) and [Ensure Upgrade Readiness](ensure-upgrade-readiness-6adb0ca.md).
 
 For more information on this feature, see [Define a Local Script Step](define-a-local-script-step-03b32eb.md).
 

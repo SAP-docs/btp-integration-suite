@@ -31,7 +31,12 @@ Edge Integration Cell requires different kinds of persistent storage:
 
 ## Which external services are required?
 
-For a production environment, you need to provide a PostgreSQL database and a Redis data store outside the Edge Integration Cell deployment.
+For a production environment, you need to provide a database \(PostgreSQL or SAP HANA database\) and a datastore \(Redis or SAP HANA datastore\) that are deployed separately from the Edge Integration Cell.
+
+When using SAP HANA database, both the database and datastore can share the same SAP HANA database instance.
+
+> ### Note:  
+> The SAP HANA database license is not included with the Edge Integration Cell.
 
 For test and demo purposes, you can deploy an internal PostgreSQL database and a Redis data store as part of Edge Integration Cell, but these built-in services aren't highly available, nor scalable as required for a production environment.
 
@@ -67,9 +72,11 @@ On AWS, you can configure cluster endpoint access to enable private access to th
 
 ## Can the Kubernetes cluster be shared with other applications?
 
-Each Edge Integration Cell solution must be deployed on a K8s cluster. For future productive setups, we strongly recommend using this K8s cluster exclusively for this purpose. Don't coinstall any other applications with higher resource requirements on this cluster. Joint deployment can only be done if mechanisms are used to ensure that the Edge Integration Cell is carefully isolated from other applications in terms of resources \(for example, by using dedicated node pools for each application\). A shared usage can be problematic, as Edge Lifecycle Management requires high-privileged Kubernetes access for deploying custom resource definitions and shared resources like Istio. You can deploy the required PostgreSQL database and Redis data store into the same Kubernetes cluster \(as explained in the external services section\).
+Each Edge Integration Cell is deployed on a K8s cluster. For standard onboarding of a K8s cluster as an Edge Node, Edge LM requires a high-privileged kubeconfig, because cluster admin privileges are required to perform CRUD operations on namespaces, CRDs, and admission webhooks. This must be taken into account when the cluster is shared with other applications. Workloads should be carefully isolated, for example by assigning dedicated nodes or node pools to each application. Different applications may have different Kubernetes version requirements, which needs to be considered during onboarding.
 
-It's possible to deploy the required PostgreSQL database and Redis data store into the same Kubernetes cluster \(see external services before\).
+The alternative onboarding method, the Restricted Access to Kubernetes Cluster option, uses a security model that requires fewer privileges than the standard onboarding process. For more information, see SAP Note [3618713](https://me.sap.com/notes/3618713) and section [Provide Edge Node Details](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/0a222b9c99d94f56abdcfe27f5be0afa.html#1---provide-edge-node-details).
+
+It's possible to deploy the required PostgreSQL database and Redis data store on the same Kubernetes cluster \(as explained in the External Services section\).
 
 
 

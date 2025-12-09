@@ -4,7 +4,7 @@
 
 # Copying a Trading Partner Agreement
 
-Follow the procedure below to copy a trading partner agreement.
+Learn how to copy a trading partner agreement.
 
 
 
@@ -21,15 +21,15 @@ There can be scenarios where you might want to reuse an existing agreement . You
 
 ## Procedure
 
-1.  Log on to SAP Integration Suite .
+1.  Log on to SAP Integration Suite.
 
 2.  Choose *Design* \> *B2B Scenarios*.
 
 3.  Navigate to the *Agreements* tab.
 
-4.  Choose the Copy <span class="SAP-icons-V5"></span> button provided under the *Actions* column of the agreement that you wish to copy.
+4.  Choose <span class="SAP-icons-V5"></span> Copy under the *Actions* column of the agreement that you wish to copy.
 
-    You can also open an agreement and select the *Copy* button.
+    You can also open an agreement and choose *Copy*.
 
 5.  This will open the *Copy Agreement* dialog box with a field displaying the name of the copied agreement. Provide a name for the agreement and choose *Save*.
 

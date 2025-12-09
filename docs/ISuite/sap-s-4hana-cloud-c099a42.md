@@ -133,13 +133,13 @@ The SAP S/4HANA Cloud Administrator configured the communication between Graph a
 -   Provider name for the communication system in SAP S/4HANA Cloud
 
 
-For more information, see [Principal Propogation Scenario: Cloud to Cloud](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/scenario-cloud-to-cloud).
+For more information, see [Principal Propagation Scenario: Cloud to Cloud](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/scenario-cloud-to-cloud).
 
 **Procedure**
 
 Create an *OAuth2SAMLBearerAssertion* HTTP destination and configure its settings as follows:
 
-1.  Go to SAP BTP cockpit *Connectivity* \> *Destinations* and choose *New Destination*. Enter the following:
+1.  Go to SAP BTP cockpit *Connectivity* \> *Destinations* and choose *Create* \> *From Scratch* \> *Create*. Enter the following:
 
 
     <table>

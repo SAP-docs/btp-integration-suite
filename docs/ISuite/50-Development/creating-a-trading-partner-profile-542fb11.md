@@ -47,5 +47,5 @@ A trading partner profile provides information about a company, organization, or
 **Related Information**  
 
 
-[Creating an Agreement Template](creating-an-agreement-template-9692cb1.md "An agreement template is a template of a semantical choreography definition consisting of one or more business transactions. The configurations at the template level serve as defaults that can then be reused and overridden when creating the trading partner agreement.")
+[Creating an Agreement Template](creating-an-agreement-template-9692cb1.md "An agreement template is a template of a semantic choreography definition consisting of one or more business transactions. The configurations at the template level serve as defaults that can then be reused and overridden when creating the trading partner agreement.")
 

@@ -250,12 +250,12 @@ Enter the number of days after which the system deletes diagnostic data and heap
 </td>
 <td valign="top">
 
-*Consolidate MPL Aggregation Data Newer Than \(ISO-8601\)*
+*Consolidation Period for MPL Statistics Data*
 
 </td>
 <td valign="top">
 
-Enter a specific timeframe. The default is set to PT6H, which corresponds to a 6-hour timeframe.
+Enter a specific time frame to consolidate MPL statistics data. The default is set to the last 6 hours.
 
 </td>
 </tr>

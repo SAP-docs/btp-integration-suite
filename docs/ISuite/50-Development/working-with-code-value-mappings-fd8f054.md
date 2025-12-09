@@ -40,7 +40,7 @@ Furthermore, in these two cases, you can set a **default value**. This allows yo
 
 **Code value mappings** are created within a specific MAG, accessible only by a particular node of that MAG. They're stored as part of the MAG and follow its versioning control. See [Code Value Mapping](code-value-mapping-eb6dad8.md).
 
-In contrast, **global code value mappings** are created independently, outside of any MAG, and can be utilized by multiple MAGs. They have their own version controlling and each version can be reused across multiple nodes within a MAG. See [Global Code Value Mapping](global-code-value-mapping-fd1d3ff.md).
+In contrast, **global code value mappings** are created independently, outside of any MAG, and can be utilized by multiple MAGs. They have their own version controlling and each version can be reused across multiple nodes within a MAG. See [Global Code Value Mappings](global-code-value-mappings-fd1d3ff.md).
 
 You can convert a local code value mapping into a global code value mapping, whether it's a 1:1 or an n:1 code value mapping.
 
@@ -49,5 +49,5 @@ You can convert a local code value mapping into a global code value mapping, whe
 
 [Code Value Mapping](code-value-mapping-eb6dad8.md "Code value mappings represent the transformation of a code value that is set at the source element into a code value that is required at the target element. They're created within a specific MAG, accessible only by a particular node of that MAG, and are stored them as well.")
 
-[Global Code Value Mapping](global-code-value-mapping-fd1d3ff.md "Know more about the Code Value Mapping tab in the Mapping Guidelines page.")
+[Global Code Value Mappings](global-code-value-mappings-fd1d3ff.md "Learn more about the Code Value Mappings tab in the Mapping Guidelines page.")
 

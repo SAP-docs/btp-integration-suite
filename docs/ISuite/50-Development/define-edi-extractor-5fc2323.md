@@ -639,6 +639,48 @@ SAP\_EDI\_GS\_Control\_Number
 <tr>
 <td valign="top">
 
+SAP\_EDI\_997\_Interchange\_Acknowledgement\_Code
+
+\(Available for verison 2.2 and above\)
+
+</td>
+<td valign="top">
+
+A
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_997\_Interchange\_Note\_Code
+
+\(Available for verison 2.2 and above\)
+
+</td>
+<td valign="top">
+
+000
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDI\_Is\_TA1\_Present
+
+\(Available for verison 2.2 and above\)
+
+</td>
+<td valign="top">
+
+True
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SAP\_GS\_Functional\_Id\_Code
 
 </td>

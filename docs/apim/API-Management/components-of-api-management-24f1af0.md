@@ -8,8 +8,6 @@ API Management component overview
 
 The API Management infrastructure consists of five components: API Runtime, API Portal, Developer Hub, API Analytics, and API Designer.
 
-![](images/components_api_management_127274b.png)
-
 
 
 ### API Runtime
@@ -24,7 +22,7 @@ The one-stop-shop to create, secure, and publish API Proxies. This is the place 
 
 
 
-### API Business Hub Enterprise
+### Developer Hub
 
 Self-service for application developers to discover, browse, and explore APIs, subscribe to rate plans, and build apps. To know more about using the Developer Hub, see [Consume APIs](consume-apis-ea561e4.md).
 
@@ -46,5 +44,5 @@ You can use API Management with one of SAP's numerous in-house API providers as 
 
 The following image shows how different stakeholders interact with the various API Management components, and how API Management in turn interacts with the different cloud and on-premise systems.
 
-![](images/api_sources_686d456.png)
+![](images/Concepts_APIM_Block_f631379.png)
 

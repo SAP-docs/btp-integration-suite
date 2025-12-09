@@ -97,7 +97,7 @@ Use the relative path to write the file to a directory.
 
 Example: `parentdirectory/childdirectory`
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -111,7 +111,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Name of the file to be written.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 > ### Note:  
 > If you do not enter a file name and the parameter remains blank, the content of the `CamelFileName` header is used as file name. If this header is not specified, the Exchange ID is used as file name.
@@ -162,7 +162,7 @@ The appended timestamp relates to Greenwich Mean Time \(GMT\) time zone.
 
 Host name or IP address of the SFTP server and an optional port, for example, `my.host.org:22`.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -274,7 +274,7 @@ Enter the referenced credential name used for proxy authentication.
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -290,7 +290,7 @@ ID of the user performing the file transfer.
 
 Make sure that the user name contains no other characters than `A-z`, `0-9`, `_` \(underscore\), `-` \(hyphen\), `/` \(slash\), `?` \(question mark\), `@` \(at\), `!` \(exclamation mark\), `$` \(dollar sign \), `'` \(apostrophe\), `(`, `)` \(brackets\), `*` \(asterisk\), `+` \(plus sign\), `,` \(comma\), `;` \(semicolon\), `=` \(equality sign\), `.` \(dot\), or `~` \(tilde\). Otherwise, an attempt for anonymous login is made which results in an error.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -306,7 +306,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Alias to identify the private key in the keystore used for the communication with the SFTP server.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>

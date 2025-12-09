@@ -29,6 +29,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     > -   Use *EDIFACT* tab to convert XML file to ODETTE document. XML to EDI Converter version 1.2 and above supports EDIFACT Syntax versions 2, 3, and 4, while version 2.5 and above additionally supports EDIFACT Syntax versions 1 and x.
     > 
     > -   For X12 format, XML to EDI converter v1.3.0 and v2.1.0 onwards support same group name with different definition in XSD.
+    > -   For XML to EDI Converter version 2.6 and above, you can use the same XSDs in your SAP Integration Suite tenant as in your SAP Process Integration and SAP Process Orchestration system.
 
 
     <table>
@@ -136,20 +137,29 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     > ### Note:  
     > -   You can add XSD files to the integration flow. For more details, please refer to the topic **Validating Message Payload against XML Schema**, in developer's guide.
     > 
-    > -   The file name of the xml schema for **EDIFACT/ODETTE** should have the following format:
+    > -   The file name must have the following format:
     > 
-    >     -   EDIFACT: `UN-EDIFACT_ORDERS_D96A.xsd`
+    >     -   SAP Process Integration/SAP Process Orchestration XSDs:
     > 
-    >     -   ODETTE: `ODETTE_ORDERR_2.xsd`
+    >         -   EDIFACT: `<MessageType><MessageRelease>.xsd`
     > 
-    >     -   ODETTE EDIFACT: `UN-EDIFACT_ORDERS_D96A_A18051.xsd`
+    >             -   Example: `DESADV96A.xsd (MessageType = DESADV, Release = 96A)`
     > 
     > 
-    >     Consider the EDIFACT filename as a sample to understand its constituents. The file name comprises of following parts separated by '\_':
     > 
-    >     -   First part "UN-EDIFACT" refers to the EDI standard with organization name. This value is fixed and cannot be customised.
-    >     -   Second part "ORDERS" refers to the message type.
-    >     -   Third part "D96A" refers to the version .
+    >     -   Integration Advisor XSDs:
+    > 
+    >         -   EDIFACT: `UN-EDIFACT_<MessageType>_<Version>.xsd`
+    > 
+    >             Example: `UN-EDIFACT_ORDERS_D96A.xsd`
+    > 
+    >         -   ODETTE: `ODETTE_<MessageType>_<Version>.xsd`
+    > 
+    >             Example: `ODETTE_ORDERR_2.xsd`
+    > 
+    >         -   ODETTE EDIFACT: `UN-EDIFACT_<MessageType>_<Version>_<Subset>.xsd`
+    > 
+    >             Example: `UN-EDIFACT_ORDERS_D96A_A18051.xsd`
 
 
     
@@ -169,6 +179,29 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     > This header name is fetched from Camel header. The header is added in script element. This script element is added before the converter element. You can add value for this header in the script element.
     > 
     > For example, you can add the value, `/xsd/UN-EDIFACT_ORDERS_D96A.xsd`.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Empty Segment*
+
+    \(Available from version 2.8 and above\)
+    
+    </td>
+    <td valign="top">
+    
+    These are the following options:
+
+    -   *Dynamic*: If you select this option, you must define the value in `SAP_XMLTOEDI_EDIFACT_EMPTY_SEGMENT` exchange header.
+
+    -   *Exclude*: This option excludes the empty tags in the outgoing converted payload.
+
+    -   *Include*: This option includes the empty tags in the outgoing converted payload.
+
 
 
     
@@ -253,13 +286,29 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
 
     > ### Note:  
     > -   You can add XSD files to the integration flow. For more details, please refer to the topic *Validating Message Payload against XML Schema*, in developer's guide.
-    > -   The file name of the xml schema for ASC-X12 should have the format, *ASC-X12\_810\_004010.xsd*. It contains three parts separated by *\_*:
-    >     -   First part *ASC-X12* refers to the ASC-X12 standard with organization name. This value is fixed and cannot be customised.
-    >     -   Second part *810* refers to the message type.
-    >     -   Third part *004010* refers to the version.
+    > 
+    > -   The file name must have the following format:
+    > 
+    >     -   SAP Process Integration/SAP Process Orchestration XSDs:
+    > 
+    >         -   *ASC\_<EDI\_Message\_Type\><EDI\_Message\_Version\>.xsd*
+    > 
+    >             -   Example: *ASC\_850004010.xsd \(Message Type=850 and Message Version=004010\)*
+    > 
+    >                 > ### Note:  
+    >                 > If the *EDI\_Message\_Version* length is more than 6 characters \(This is extended version\), then first 6 characters will be taken.
+    > 
+    > 
+    > 
+    >     -   Integration Advisor XSDs:
+    >         -   *ASC-X12\_<Message\_Type\>\_<Version\>.xsd*
+    > 
+    >             -   Example: *ASC-X12\_810\_004010.xsd*
+    > 
+    > 
+    > 
     > 
     > -   The aforementioned values should match with the schema content.
-    > -   During runtime only XSD’s from Integration Advisor \(IA\) are supported.
 
 
     
@@ -279,6 +328,29 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     > This header name is fetched from camel header. The header is added in script element. This script element is added before converter element. You can add value for this header in the script element.
     > 
     > For example, you can add the value, `/xsd/ASC-X12_810_004010.xsd`.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Empty Segment*
+
+    \(Available from version 2.8 and above\)
+    
+    </td>
+    <td valign="top">
+    
+    These are the following options:
+
+    -   *Dynamic*: If you select this option, you must define the value in `SAP_XMLTOEDI_X12_EMPTY_SEGMENT` exchange header.
+
+    -   *Exclude*: This option excludes the empty tags in the outgoing converted payload.
+
+    -   *Include*: This option includes the empty tags in the outgoing converted payload.
+
 
 
     
@@ -452,6 +524,29 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     > Apply the following naming convention for the file name of the XML schema:
     > 
     > `TRADACOMS: TRADACOMS_ORDHDR_FILE_9.xsd`
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Empty Segment*
+
+    \(Available from version 2.8 and above\)
+    
+    </td>
+    <td valign="top">
+    
+    These are the following options:
+
+    -   *Dynamic*: If you select this option, you must define the value in `SAP_XMLTOEDI_TRADACOMS_EMPTY_SEGMENT` exchange header.
+
+    -   *Exclude*: This option excludes the empty tags in the outgoing converted payload.
+
+    -   *Include*: This option includes the empty tags in the outgoing converted payload.
+
 
 
     

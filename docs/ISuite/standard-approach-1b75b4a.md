@@ -119,7 +119,16 @@ Handle the dependent message mapping objects and its resources in an efficient w
 
 13. Choose *Next Step*.
 
-14. In the *Integration Flow* tab, provide a *Name* and *ID* for the integration flow that is about to be created in SAP Integration Suite.
+14. In the *Scenario* tab, provide a *Name* and *ID* for the integration flow that is about to be created in SAP Integration Suite.
+
+    Following details are automatically populated:
+
+    -   *ID* based on on the scenario name.
+
+    -   The Runtime is preset as Cloud Integration.
+
+    -   *Sender Details*: If the object being migrated includes multiple sender channels, each channel is listed here. An individual integration flow is created for every sender channel. You can edit the corresponding sender integration flow name in this view.
+
 
 15. Choose *Review*.
 

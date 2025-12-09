@@ -92,6 +92,497 @@ API Management
 </td>
 <td valign="top">
 
+Intelligent Recommendations for Faster Anomaly Analysis
+
+</td>
+<td valign="top">
+
+Intelligent Recommendations is a new AI-driven enhancement in anomaly detection that helps you quickly understand anomalies and take corrective action. The feature provides three key capabilities: Insights, Causes, and Recommendations. This improves troubleshooting efficiency and reduces manual investigation time. For more information, see [Enabling Anomaly Detection, Intelligent Recommendations, and API Call Predictions](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-anomaly-detection?version=CLOUD) and [Working with Detected Anomalies](https://help.sap.com/docs/integration-suite/sap-integration-suite/working-with-detected-anomalies?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-12-07
+
+</td>
+<td valign="top">
+
+2025-12-07
+
+</td>
+<td valign="top">
+
+2510
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+External Governance in Developer Hub
+
+</td>
+<td valign="top">
+
+You can now approve or reject product subscriptions created by developers through an external process. This gives organizations greater flexibility and control over subscription handling, ensuring proper governance and secure API access. For more information, see [Setting Up External Governance](https://help.sap.com/docs/integration-suite/sap-integration-suite/setting-up-external-governance-992512e5bec0405b8e0791f86216908c?version=CLOUD).
+
+SAP API Management customers choose: [Setting Up External Governance](https://help.sap.com/docs/sap-api-management/sap-api-management/setting-up-external-governance?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-12-07
+
+</td>
+<td valign="top">
+
+2025-12-07
+
+</td>
+<td valign="top">
+
+2510
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+API Management Migrating to the DigiCert TLS RSA4096 Root G5 Certificate
+
+</td>
+<td valign="top">
+
+API Management is switching from cross-signed Root G5 certificate to the self-singed Root G5 certificate to further strengthen secure communication. All client systems must trust the DigiCert TLS RSA4096 Root G5 root certificate to ensure successful connectivity to API Management endpoints. For timelines and required actions, refer to [SAP Note 3682598](https://me.sap.com/notes/3682598).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-12-07
+
+</td>
+<td valign="top">
+
+2025-12-07
+
+</td>
+<td valign="top">
+
+2510
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Generate Credentials for Developer Hub Using BTP CLI Command
+
+</td>
+<td valign="top">
+
+With the deprecation of the apiaccess plan for XSUAA, you can now use the BTP CLI Command to generate credentials for Developer Hub to access the XSUAA APIs. For more information, [Accessing Developer Hub APIs Programmatically](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-access-plan-for-developer-hub?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-10-26
+
+</td>
+<td valign="top">
+
+2025-10-26
+
+</td>
+<td valign="top">
+
+2509
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Design Guidelines in API Management
+
+</td>
+<td valign="top">
+
+API Management on Edge Integration Cell now supports up to 31 predefined design guidelines to help enforce best practices during API development. These guidelines promote consistency, scalability, security, and maintainability across API artifacts covering areas such as naming conventions, versioning, documentation, and policy enforcement. This enhancement ensures improved API quality and governance throughout the lifecycle. For more information, [Design Guidelines for API Artifact](https://help.sap.com/docs/integration-suite/sap-integration-suite/design-guidelines-for-api-artifact?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-10-26
+
+</td>
+<td valign="top">
+
+2025-10-26
+
+</td>
+<td valign="top">
+
+2509
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Enhanced Analytics Metrics for Applications
+
+</td>
+<td valign="top">
+
+New UI enhancements have been made to improve API monitoring. A new chart *API Calls* has been added to provide better insights. We have also renamed several charts for clarity, such as *Top Applications* to *Top Subscriptions for Applications*, *Top Agents* to *Top User Agents*, and *API Error Calls* to *Proxy Error Call Count*.
+
+Filter options on Health and Usage pages now use *Subscriptions for Applications* for more targeted filtering, and the date range selector features clearer arrow controls for easier navigation.
+
+[Find Your Way around Advanced API Analytics Dashboard](https://help.sap.com/docs/integration-suite/sap-integration-suite/find-your-way-around-advanced-api-analytics-dashboard?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-10-26
+
+</td>
+<td valign="top">
+
+2025-10-26
+
+</td>
+<td valign="top">
+
+2509
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Clean Up Unused Virtual Hosts for Enhanced Platform Performance
+
+</td>
+<td valign="top">
+
+You can now delete existing virtual hosts to manage and clean up unused virtual hosts. This helps maintain platform stability and ensures correct proxy routing. For more information, see [Configuring Additional Virtual Host in Cloud Foundry Environment](https://help.sap.com/docs/integration-suite/sap-integration-suite/requesting-additional-virtual-host-in-cloud-foundry-environment?version=CLOUD).
+
+SAP API Management customers choose: [Configuring Additional Virtual Host in Cloud Foundry Environment](https://help.sap.com/docs/sap-api-management/sap-api-management/requesting-additional-virtual-host-in-cloud-foundry-environment?version=Cloud).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-10-26
+
+</td>
+<td valign="top">
+
+2025-10-26
+
+</td>
+<td valign="top">
+
+2509
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 XML Threat Protection Policy
 
 </td>

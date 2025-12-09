@@ -9,7 +9,7 @@ To efficiently monitor message processing and analyze runtime errors, you can fo
 **Related Information**  
 
 
-[Checking Out the Message Processing Log](checking-out-the-message-processing-log-5612032.md "In the Operations section, you can check out the status of processed messages.")
+[Checking Out the Message Processing Log](checking-out-the-message-processing-log-5612032.md "In the Monitor section, you can check out the status of processed messages.")
 
 [Tracing the Execution of an Integration Flow](tracing-the-execution-of-an-integration-flow-4ec27d3.md "If you like to find out in detail how a message is processed and transformed at runtime, you can run the related integration flow with the Trace log level.")
 

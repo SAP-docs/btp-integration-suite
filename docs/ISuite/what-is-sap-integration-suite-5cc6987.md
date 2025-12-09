@@ -10,14 +10,14 @@ SAP Integration Suite is an industry-leading and enterprise-grade integration pl
 
 ![](images/Integration_Suite_Block_e0692f1.png)
 
-This figure illustrates the reach of  SAP Integration Suite.
+This figure illustrates the reach of SAP Integration Suite.
 
 SAP Integration Suite is built to support a wide range of integration scenarios across cloud, on-premise, and hybrid environments. Its rich set of capabilities ensures that businesses can connect systems, applications, and data with speed, intelligence, and control.
 
 -   **Cloud Integration** enables seamless, end-to-end business processes, helping organizations connect applications across cloud and on-premise landscapes.
 -   **Open Connectors** simplify and accelerate integration with third-party applications and growing business networks.
--   **Dataspaces Integration** supports the exchange of data across new and emerging platforms, enabling greater collaboration and ecosystem connectivity.
--   **Integration Advisor** and **Trading Partner Management** bring intelligence to B2B integrations, using AI to simplify mappings, agreements, and partner configurations..
+-   **Data Space Integration** supports the exchange of data across new and emerging platforms, enabling greater collaboration and ecosystem connectivity.
+-   **Integration Advisor** and **Trading Partner Management** bring intelligence to B2B integrations, using AI to simplify mappings, agreements, and partner configurations.
 -   **API Management** and **Graph** offer secure, scalable ways to create, manage, and govern APIs, making data and services easily accessible.
 -   **Advanced Event Mesh** supports distributed, event-driven architectures, allowing for real-time responsiveness across the enterprise.
 -   **Migration Assessment** helps organizations transition from legacy SAP Process Orchestration environments, easing the path to modernization.

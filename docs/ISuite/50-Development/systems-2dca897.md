@@ -4,7 +4,7 @@
 
 # Systems
 
-Create and maintain system related configuration for your company/subsidiary.
+Create and maintain system-related configurations for your company or subsidiary.
 
 
 
@@ -61,9 +61,7 @@ In this tab, you will create a system and each system will have Type System to d
     Enter an alias for the system.
 
     > ### Note:  
-    > An Alias is a user provided, tenant independent identifier for artifacts, that can be used to maintain referential integrity in cross tenant use cases like transport. To know more, see [Understanding the Basic Concepts](../understanding-the-basic-concepts-74c068d.md)
-    > 
-    > .
+    > An Alias is a user provided, tenant independent identifier for artifacts, that can be used to maintain referential integrity in cross tenant use cases like transport. To know more, see [Understanding the Basic Concepts](../understanding-the-basic-concepts-74c068d.md).
 
 
     
@@ -79,9 +77,9 @@ In this tab, you will create a system and each system will have Type System to d
     
     Select the type of the system from the drop-down list.
 
-    If you want to modify the system type details, choose the edit icon :pencil2:
+    If you want to modify the system type details, choose :pencil2:.
 
-    If your system type is not available in the list, choose add :heavy_plus_sign: and enter the details of the new system and choose *Apply*. The newly created system will be selected now in the *Type* field.
+    If your system type is not available in the list, choose :heavy_plus_sign: and enter the details of the new system, then choose *Apply*. The newly created system will be selected now in the *Type* field.
     
     </td>
     </tr>
@@ -95,7 +93,7 @@ In this tab, you will create a system and each system will have Type System to d
     
     Select the purpose of the type system from the drop-down list. You can choose *Dev*, *Test* or *Prod*. The value that you set here will be picked up during the agreement activation to denote in the payload the purpose of the transaction.
 
-    To know more, see [Payload Indicator in Integration Flow Message Processing](payload-indicator-in-integration-flow-message-processing-7f322c0.md).
+    See [Payload Indicator in Integration Flow Message Processing](payload-indicator-in-integration-flow-message-processing-7f322c0.md).
     
     </td>
     </tr>
@@ -137,7 +135,7 @@ In this tab, you will create a system and each system will have Type System to d
 6.  In the *Create Type System* dialog, select the *Name* and *Version* of the type system from the drop-down list.
 
     > ### Note:  
-    > For **SOAP** and **IDOC** type systems, you can enter versions manually by selecting the checkbox *Input Version Manually* and maintaing the *Version* field.
+    > For **SOAP** and **IDOC** type systems, you can enter versions manually by selecting the checkbox *Input Version Manually* and maintaining the *Version* field.
 
 7.  Choose *Save*. The type system is added successfully. Choose *Save* to update the system.
 
@@ -255,7 +253,7 @@ In this tab, you will create a system and each system will have Type System to d
     </td>
     <td valign="top">
     
-    Enter the user account that you have configured in Cloud Integration tenant for authorisation.
+    Enter the user account that you have configured in Cloud Integration tenant for authorization.
 
     To know more, see [Partner Authorization](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/c0c9950003674d198e9e7ceda098053d.html).
     
@@ -374,7 +372,7 @@ In this tab, you will create a system and each system will have Type System to d
     <tr>
     <td valign="top">
     
-    Receipient URL
+    Recipient URL
     
     </td>
     <td valign="top">
@@ -441,7 +439,7 @@ In this tab, you will create a system and each system will have Type System to d
     
     Private Key Alias
 
-    Only if you choose *Client Certificate* for aunthentication
+    Only if you choose *Client Certificate* for authentication
     
     </td>
     <td valign="top">

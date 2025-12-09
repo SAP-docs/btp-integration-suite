@@ -11,5 +11,5 @@ You can now use SAP Integration Suite to develop integration content with Messag
 
 [Message Implementation Guidelines \(MIGs\)](message-implementation-guidelines-migs-f9f2bab.md "")
 
-[Mapping Guidelines \(MAGs\)](mapping-guidelines-mags-42124f4.md "")
+[Mapping Guidelines \(MAGs\)](mapping-guidelines-mags-42124f4.md "Learn what mapping guidelines are and how to work with the mapping guideline page.")
 

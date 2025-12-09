@@ -191,7 +191,7 @@ The supported file types for source and target messages are:
 
     2.  Specify a name for the mmap file and choose *Create*.
 
-    3.  Add source and target messages. If you want to consume Message Types, see [Consuming Message Types in Message Mapping](consuming-message-types-in-message-mapping-34f6345.md).
+    3.  Add source and target messages.If you want to consume Message Types, see [Consuming Message Types in Message Mapping](consuming-message-types-in-message-mapping-34f6345.md)
 
     4.  Drag fields from the source to the required field in the target to create a mapping.
 

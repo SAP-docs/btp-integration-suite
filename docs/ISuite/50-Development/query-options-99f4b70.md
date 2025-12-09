@@ -15,6 +15,17 @@ This section provides a summary of the supported query options.
 > ### Caution:  
 > Not all query options listed below are always supported by each entity type of the Cloud Integration OData API.
 > 
+> For example, The DataStore and Variables APIs do not support the following query options:
+> 
+> -   -   `$filter`
+> -   `$inlinecount`
+> -   `$orderby`
+> -   `$skip`
+> -   `$top`
+> -   `$expand`
+> -   `$select`
+> 
+> 
 > For more information on the supported query options, check out the description of the individual resources on SAP Business Accelerator Hub.
 
 **Supported System Query Options**

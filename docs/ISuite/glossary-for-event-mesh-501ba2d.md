@@ -62,7 +62,7 @@ Message Client
 </td>
 <td valign="top">
 
-A gateway that authenticates all the events publishing and consuming applications via OAuth client credentials for all technical commnications.
+A gateway that uses OAuth client-credentials authentication to validate all applications publishing or consuming events, ensuring secure technical communication.
 
 </td>
 </tr>

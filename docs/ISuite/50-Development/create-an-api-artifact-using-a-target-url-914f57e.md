@@ -13,7 +13,7 @@ The method allows you to quickly create an API artifact by specifying the HTTP e
 -   Create a content package. See, [Creating an Integration Package](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-integration-package?version=CLOUD).
 -   Activate Cloud Integration capability. See, [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities?version=CLOUD).
 
--   Activate API Management capability. See, [Activate and Configure the API Management Capability and Access Developer Hub](../activate-and-configure-the-api-management-capability-and-access-developer-hub-f6eb433.md).
+-   Activate API Management capability. See, [Activate and Configure the API Management Capability](../activate-and-configure-the-api-management-capability-f6eb433.md).
 
 -   Activate Edge Integration Cell runtime. See, [Activate Edge Integration Cell](https://help.sap.com/docs/integration-suite/sap-integration-suite/activate-edge-integration-cell?version=CLOUD&q=Activate+Edge+Inte)
 
@@ -44,7 +44,7 @@ You deploy the API on a virtual host, which acts as the public-facing entry poin
 
     The *Create API* artifact wizard opens.
 
-5.  Select the *Runtime Profile* Edge Integration Celland choose *Next*. This profile determines the runtime on which you will model an deploy your API artifact.
+5.  Select the *Runtime Profile* Edge Integration Cell and choose *Next*. This profile determines the runtime on which you will model an deploy your API artifact.
 
 6.  To create an API artifact using an HTTPS target URL, select *URL* from the given options and choose *Next*.
 
@@ -96,10 +96,10 @@ You deploy the API on a virtual host, which acts as the public-facing entry poin
     </td>
     <td valign="top">
     
-    The target HTTP endpoint URL of the service. For example, `HTTP(s): //<host>:<port>/SFlight..`
+    The target HTTPS endpoint URL of the service. For example, `https://www.sap.com`
 
     > ### Note:  
-    > In a REST API, it is recommended not to include query parameters in the URL field. For example, the URL should be in the format `https://httpbing.org/anything` instead of `https://httpbing.org/anything?$format=json`. Including query parameters in the URL can cause the validation of the artifact to fail during deployment.
+    > In a REST API, it is recommended not to include query parameters in the URL field. For example, the URL should be in the format `https://abc.org/anything` instead of `https://abc.org/anything?$format=json`. Including query parameters in the URL can cause the validation of the artifact to fail during deployment.
     > 
     > If you need to use query parameters, it is best to append them during the execution of the API rather than including them in the URL.
 
@@ -204,6 +204,18 @@ You deploy the API on a virtual host, which acts as the public-facing entry poin
     For example, even if your backend service is hosted at `https://internal.services.local/orders`, you can expose it externally as `https://api.yourdomain.com/v1/orders` using a virtual host.
 
     This helps in the proxification of the internal URL, improving security and allowing for more flexible deployment configurations.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Expose as MCP Server
+    
+    </td>
+    <td valign="top">
+    
+    Enable this option to allow AI agents to access the API via the Model Context Protocol \(MCP\).
     
     </td>
     </tr>

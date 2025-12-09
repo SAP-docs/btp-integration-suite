@@ -189,6 +189,19 @@ Represents a data store.
 
 A data store entry is created by a Data Store Write step of an integration flow \(see [Define Data Store Write Operations](define-data-store-write-operations-46260ee.md)\).
 
+> ### Note:  
+> The DataStore API does not support the following query options:
+> 
+> -   -   `$filter`
+> -   `$inlinecount`
+> -   `$orderby`
+> -   `$skip`
+> -   `$top`
+> -   `$expand`
+> -   `$select`
+
+
+
 </td>
 </tr>
 <tr>
@@ -216,6 +229,20 @@ Variables
 Represents a variable.
 
 A variable is created by a Write Variables step of an integration flow \(see [Define Write Variables](define-write-variables-de04b75.md)\).
+
+> ### Note:  
+> > ### Note:  
+> > The Variables API does not support the following query options:
+> > 
+> > -   -   `$filter`
+> > -   `$inlinecount`
+> > -   `$orderby`
+> > -   `$skip`
+> > -   `$top`
+> > -   `$expand`
+> > -   `$select`
+
+
 
 </td>
 </tr>

@@ -48,9 +48,7 @@ To maintain privacy and security, you can grant access to**Authorized Users** wh
 
 1.  Log on to **Developer Hub**.
 
-2.  Choose *Admin Center* \> *Manage Access* from the top navigation bar.
-
-    ![](images/96aa36f2cf404c70b3f1f5189cba5f97.image)
+2.  Choose *Admin Center* \> *Manage Governance Settings* from the top navigation bar, and choose *Access*.
 
 3.  Choose *Edit Access* to manage the level of access for different kinds of users.
 

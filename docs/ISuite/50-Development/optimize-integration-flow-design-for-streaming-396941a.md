@@ -239,7 +239,7 @@ HTTP
 </td>
 <td valign="top">
 
-No
+Yes
 
 </td>
 </tr>

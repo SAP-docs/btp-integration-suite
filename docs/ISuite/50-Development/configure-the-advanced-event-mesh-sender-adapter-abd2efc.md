@@ -405,8 +405,7 @@ When enabled, the consumer is bound to only one of the available worker nodes. I
 
 -   When consuming in *Direct* mode to avoid the processing of the same message on all the worker nodes due to fanout.
 
--   To successfully bind to an Exclusive access type *Durable Topic Endpoint*, as it only allows one consumer binding.
-
+-   To successfully bind to an Exclusive access type Durable Topic Endpoint, as it only allows one consumer binding.
 
 
 

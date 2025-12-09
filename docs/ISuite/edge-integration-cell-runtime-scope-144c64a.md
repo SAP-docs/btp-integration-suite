@@ -128,7 +128,7 @@ For more information, refer to the SAP Community blog: [Content Size Limits](htt
 > </tr>
 > </table>
 > 
-> Use the `JBP_CONFIG_JAVA_OPTS` parameter configuration to update the metaspace size. See: [Runtime Parameters](runtime-parameters-63c5276.md).
+> Use the `JAVA_OPTS` parameter configuration to update the metaspace size. See: [Runtime Parameters](runtime-parameters-63c5276.md).
 
 
 

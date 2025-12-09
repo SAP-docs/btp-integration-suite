@@ -558,6 +558,58 @@ If source entity-specific rules aren't provided for composite custom entities wi
 
 
 
+<a name="loioe93d38c976b147b390df68b06d1a461d__section_jkd_f4w_fgc"/>
+
+## OData Containment \(Optional\)
+
+OData containment controls how contained entities appear in a business data graph. It reduces the number of entry points in the Business Data Graph API by requiring you to access contained entities through their parent entities. This approach follows the standard way of structuring URLs in OData v4. However, it may differ from the entry points in your underlying data source.
+
+The following example is without containment:
+
+> ### Sample Code:  
+> ```
+> <EntityContainer Name="EntityContainer">
+>   <EntitySet Name="Orders" EntityType="Sue.Orders">
+>     <NavigationPropertyBinding Path="Items" Target="Orders_Items"/>
+>   </EntitySet>
+>   <EntitySet Name="Orders_Items" EntityType="Sue.Orders_Items">
+>     <NavigationPropertyBinding Path="up_" Target="Orders"/>
+>   </EntitySet>
+> </EntityContainer>
+> 
+> <EntityType Name="Orders"> ...
+>   <NavigationProperty Name="Items" Type="Collection(Sue.Orders_Items)" Partner="up_">
+>     <OnDelete Action="Cascade"/>
+>   </NavigationProperty>
+> </EntityType>
+> 
+> <EntityType Name="Orders_Items"> ... </EntityType>
+> ```
+
+An entity is contained when a `NavigationProperty` from another entity exists in the business data graph with the annotation `ContainsTarget=True`. With containment switched on, only `Orders` is exposed as an entity set:
+
+> ### Sample Code:  
+> ```
+> 
+>    <EntityContainer Name="EntityContainer">
+>   <EntitySet Name="Orders" EntityType="Sue.Orders"/>
+> </EntityContainer>
+> 
+> <EntityType Name="Orders"> ...
+>   <NavigationProperty Name="Items" Type="Collection(Sue.Orders_Items)" Partner="up_"
+>     ContainsTarget="true"
+>   />
+> </EntityType>
+> 
+> <EntityType Name="Orders_Items"> ... </EntityType>
+> ```
+
+The business data graph mirrors the data model of the underlying data source. Using OData containment, you choose how these contained entities are accessed in the Business Data Graph API.
+
+When OData Containment is enabled as a default setting, contained entities are not exposed independently. You can access them only through a navigation property from their parent entity. If you disable OData Containment, contained entities are exposed separately. This provides distinct entry points in the API.
+
+
+
 <a name="loioe93d38c976b147b390df68b06d1a461d__section_yds_qkz_2zb"/>
 
 ## Exclude Mirror Entities

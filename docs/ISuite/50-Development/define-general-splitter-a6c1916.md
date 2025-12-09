@@ -214,7 +214,7 @@ If you use a Splitter step in a local integration process, the following limitat
     > 
     > -   Processing of the 10 elements that are currently in processing continues until processing is finished.
     > 
-    >     However, these 10 messages are used in the *Gather* step.
+    >     However, these 10 messages aren't used in the *Gather* step.
     > 
     > -   The remaining 80 messages are ignored.
 

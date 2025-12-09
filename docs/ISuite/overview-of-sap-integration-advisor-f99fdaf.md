@@ -68,7 +68,7 @@ A Mapping Guideline \(MAG\) is based on a source and a target message implementa
 
 Here are the next steps for you:
 
--   [Creating a New Mapping Guideline](50-Development/creating-a-new-mapping-guideline-a42920e.md)
+-   [Creating Standard Graphical Mapping Guidelines](50-Development/creating-standard-graphical-mapping-guidelines-a42920e.md)
 
 -   [Working with Mapping Guidelines \(MAGs\)](50-Development/working-with-mapping-guidelines-mags-0803ca6.md)
 

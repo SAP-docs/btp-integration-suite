@@ -546,6 +546,6 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
         -   A link to the associated event \(for further reference\)
 
 
-12. If you want to resend or restart failed interchanges, see [Resend/Retry Interchanges](resend-retry-interchanges-8626727.md).
+12. If you want to resend or restart failed interchanges, see [Restart/Retry Interchanges](restart-retry-interchanges-8626727.md).
 
 

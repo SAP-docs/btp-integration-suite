@@ -63,3 +63,5 @@ The parameter value set from the configure view.
 
 [Deploy an API Artifact](deploy-an-api-artifact-b70e7ec.md "After creating an API artifact, it is necessary to deploy it on the chosen runtime in order to make it executable and ready for use.")
 
+[Design Guidelines for API Artifact](design-guidelines-for-api-artifact-7e704f7.md "A set of best practices to ensure that APIs are designed for consistency, scalability, security, and ease of maintenance within SAP Integration Suite.")
+

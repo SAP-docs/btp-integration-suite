@@ -41,6 +41,9 @@ Ensure that Script Optimization feature is enabled in your SAP Integration Suite
 > ### Note:  
 > If the AI doesn't detect any issues and there are no further recommendations, the report confirms this with the following message: "The provided Groovy script is well structured and follows best practices for memory and CPU optimization. No further improvements are necessary."
 
+> ### Tip:  
+> Choose *Download* to save the AI report to your local file system.
+
 4.  Review the recommendations and improved script that the AI suggested.
 
 5.  Apply the recommended changes to the original script. You can copy the respective snippets from the *Recommended Changes* section and paste them into the correct lines in the script editor. Alternatively, copy the full script from the report and paste it into the editor to completely replace the original script.
@@ -48,7 +51,7 @@ Ensure that Script Optimization feature is enabled in your SAP Integration Suite
 6.  Once you're satisfied with your changes, choose *Apply*.
 
     > ### Remember:  
-    > You can use *Optimize* repeatedly, but there's a limit on usage to avoid exceeding token limits
+    > You can use *Optimize* repeatedly, but there's a limit on usage to avoid exceeding token limits.
 
     > ### Caution:  
     > Don't expose sensitive information in your scripts when using *Optimize*. For more information, see SAP Note [3542713](https://me.sap.com/notes/3542713).

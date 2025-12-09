@@ -149,7 +149,7 @@ Edge Deploy Controller accesses the platform’s object store where credentials 
 > ### Caution:  
 > If service key rotation is not performed then connectivity to the respective Cloud services stops working. This will impact functionality like content synchronization or specific runtime features.
 
-Edge Local Authentication and Authorization provides inbound local authentication and authorization for Integration Flows and API proxies. It removes the real-time dependency on SAP Business Technology Platform for inbound authentication and authorization. Currently only service keys of type Certificate/External Certificate are supported for local authentication and authorization. For more information, see [Edge Local Authentication and Authorization](edge-local-authentication-and-authorization-510d447.md).
+Edge Local Authentication and Authorization provides inbound local authentication and authorization for Integration Flows and API proxies. It removes the real-time dependency on SAP Business Technology Platform for inbound authentication and authorization. For more information, see [Edge Local Authentication and Authorization](edge-local-authentication-and-authorization-510d447.md).
 
 
 
@@ -364,7 +364,7 @@ Used for asynchronous messaging and system internal event integration.
 </tr>
 </table>
 
-Edge Integration Cell requires external services for managing persistence and policies.A Load Balancer is required to expose Edge Integration Cell endpoints and load balance traffic across K8s nodes and services.
+Edge Integration Cell requires external services for managing persistence and policies.A load balancer is required to expose Edge Integration Cell endpoints and load balance traffic across K8s nodes and services.
 
 ****
 
@@ -385,24 +385,24 @@ Description
 <tr>
 <td valign="top">
 
-PostgreSQL
+Database
 
 </td>
 <td valign="top">
 
-A relational database system.
+A relational database system. It can be PostgreSQL or SAP HANA database.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Redis
+Datastore
 
 </td>
 <td valign="top">
 
-An in-memory data store used for caching.
+A datastore used for key-value storage. It can be Redis or SAP HANA database.
 
 </td>
 </tr>
@@ -414,7 +414,7 @@ Load Balancer
 </td>
 <td valign="top">
 
-External Load Balancer integrated with K8s infrastructure.
+External load balancer integrated with K8s infrastructure.
 
 </td>
 </tr>

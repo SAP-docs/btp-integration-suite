@@ -220,8 +220,12 @@ Header
 
 HTTPS Sender adapter
 
+HTTP Receiver adapter
+
 </td>
 <td valign="top">
+
+Overrides the existing path set directly in the Http based receiver endpoint.
 
 Refers to the dynamic part of the URL path of the integration flow endpoint.
 
@@ -1444,7 +1448,7 @@ AS2 Receiver adapter
 </td>
 <td valign="top">
 
-Use it to specify the public key alias to encrypt the AS2 message.
+Use it to specify the public key certificate to encrypt the AS2 message.
 
 </td>
 </tr>

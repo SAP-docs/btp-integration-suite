@@ -4,20 +4,16 @@
 
 The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.
 
-You open the message monitor by clicking a tile in the *Monitor Message Processing* area.
-
-Messages are displayed according to the filter settings of the tile.
+To access the message monitor, choose a tile in the *Monitor Message Processing* area. The system displays messages based on the filter settings of the tile.
 
 > ### Note:  
-> In high-load scenarios, it is possible that the number of messages is still being determined while the list of messages is already being displayed. The determination of the message count is independent of the message search. This ensures that the message monitor does not encounter a timeout situation when determining a long list of messages.
+> In high-load scenarios, the system may still determine the number of messages while it already displays the list of messages. The determination of the message count is independent of the message search. This ensures that the message monitor doesn't encounter a timeout situation when determining a long list of messages.
 
 
 
 ## Filter Settings
 
-You can control which messages are displayed by changing the filter.
-
-You can filter messages by *Time*, *Status*, and *Artifact*.
+You can control which messages appear by changing the filter. You can filter messages by the following categories:
 
 **Filter Attributes**
 
@@ -43,7 +39,7 @@ Description
 </td>
 <td valign="top">
 
-Allows you to select from the following predefined time intervals:
+Select from the following predefined time intervals:
 
 -   *All*
 
@@ -59,12 +55,11 @@ Allows you to select from the following predefined time intervals:
 
 -   *Custom*
 
-    When you've selected the option *Custom*, you can select date and time with a graphical element with two components: a calendar element and a circular watch element. To select the date, interact with the calendar element and choose a specific day. To select the time, manipulate two separate circles on the watch element to set the desired hour and minute, respectively..
+    > ### Note:  
+    > When you select the *Custom* option, you can select a specific start and end time. Choose a specific date and time using a graphical element with two components: a calendar element and a circular watch element.
 
 
-You can select the start and end time of the interval.
-
-The specified time interval is displayed above the message list. When you browse different pages of the message monitor, the time interval stays the same. You can only modify the time interval by changing the filter settings or by refreshing the message monitor \(applies to all-time intervals except for *Custom*\).
+The specified time interval appears above the message list. When you browse different pages in the message monitor, the time interval remains the same. To change the time interval, adjust the filter settings or refresh the message monitor. This applies to all time intervals except for *Custom*.
 
 </td>
 </tr>
@@ -76,9 +71,7 @@ The specified time interval is displayed above the message list. When you browse
 </td>
 <td valign="top">
 
-Allows you to filter messages according to their status.
-
-In the dropdown list you can select one of the following values as the status:
+Filter messages according to their status:
 
 -   *All*
 
@@ -109,7 +102,7 @@ See: [Message Status](message-status-733a57b.md)
 </td>
 <td valign="top">
 
-Allows you to filter for all artifacts with a dedicated type. The following filter options are available:
+Filter all artifacts by a specific type:
 
 -   *All*
 
@@ -136,9 +129,9 @@ Allows you to filter for all artifacts with a dedicated type. The following filt
 </td>
 <td valign="top">
 
-Allows you to display all messages belonging to a specific package .
+Display all messages that belong to a specific package .
 
-If you select a package, you can also filter for the different types or artifacts belonging to that package. If you change the package or type selected in the filter, however, the artifact selection is cleared as well.
+If you select a package, you can also filter for the different types or artifacts that belong to that package. If you change the package or type in the filter, the system clears the artifact selection as well.
 
 </td>
 </tr>
@@ -150,11 +143,11 @@ If you select a package, you can also filter for the different types or artifact
 </td>
 <td valign="top">
 
-Allows you to display messages associated with specific artifacts. You can select multiple artifacts for which you want to display messages. By default, all artifacts are shown.
+Display messages related to specific artifacts. You can select multiple artifacts to display their messages. By default, the system shows all artifacts.
 
-The list contains all artifacts for which message processing logs exist. When you position the cursor on an artifact in the list, the tooltip shows the artifact ID.
+The list includes all artifacts that have message processing logs. When you place the cursor on an artifact in the list, a tooltip displays the artifact ID.
 
-You can filter for artifacts with a specific sequence of characters in their name or ID. The search is case insensitive.
+You can filter artifacts by entering a specific sequence of characters in their name or ID. The search does not consider case sensitivity.
 
 </td>
 </tr>
@@ -166,7 +159,7 @@ You can filter for artifacts with a specific sequence of characters in their nam
 </td>
 <td valign="top">
 
-Allows you to filter for messages using different IDs.
+Filter messages using different IDs.
 
 See: [Using IDs to Filter Messages](using-ids-to-filter-messages-a820752.md)
 
@@ -182,11 +175,9 @@ See: [Using Additional Filter Criteria](using-additional-filter-criteria-6891f9e
 
 ## Messages Table
 
-The messages for the selected filter settings are displayed in a table under *Messages*. If the number of filtered messages exceeds 50, the list is split over several pages \(each page containing a maximum of 50 messages\). You can browse through the different pages by selecting the corresponding navigation options \(*Show first data page*, *Show last data page*, *Show previous data page*, and *Show next data page*\).
+After you select the filters, a list of all relevant messages appears under *Messages*. If the number of filtered messages exceeds 50, the list is divided across multiple pages. You can browse the different pages by selecting the navigation options. You can also enter a page number to go directly to a specific page in the list.
 
-Alternatively, you can enter a page number to navigate to a specific page of the list.
-
-The following attributes are displayed for each message:
+The following attributes appear for each message:
 
 **Message Attributes in Message Overview**
 
@@ -212,7 +203,7 @@ Description
 </td>
 <td valign="top">
 
-Display name of the artifact \(for example, the name of the integration flow that specifies the message processing\).
+The name of the artifact. For example, this is the name of the integration flow that specifies message processing.
 
 The tooltip shows the technical name, the artifact, and the package name.
 
@@ -226,7 +217,7 @@ The tooltip shows the technical name, the artifact, and the package name.
 </td>
 <td valign="top">
 
-Status of end-to-end message processing.
+The status of end-to-end message processing. If messages have a critical status, you can open them to view error details.
 
 </td>
 </tr>
@@ -238,7 +229,7 @@ Status of end-to-end message processing.
 </td>
 <td valign="top">
 
-Time at which the message processing log was last updated.
+The time at which the message processing log was last updated.
 
 </td>
 </tr>
@@ -250,91 +241,87 @@ Time at which the message processing log was last updated.
 </td>
 <td valign="top">
 
-Total message processing time.
+The total message processing time.
 
 </td>
 </tr>
 </table>
 
-For a selected message, the details are displayed to the right of the message table. The header area provides the following information about the selected message: *Artifact Name* and *Last Updated at*.
 
-After the header, the following sections contain detailed information about the selected message:
 
--   *Status*
+<a name="loio314df3f8f4334dd8829c62e865cc6d02__section_s3m_wqz_wgc"/>
 
-    Contains status information about the message such as the `Processing Time`. If the message is **NOT** in status COMPLETED, the last error message is displayed \(if available\).
+## Message Details
 
--   *Properties*
+You can select a message from the list to view more information about it.
 
-    Contains
+In the new pane that opens, select one of the following tabs to view more details about the selected message:
 
-    -   The **Message ID**
+-   *Status*. This section contains status information about the message, such as the `Processing Time`. If the message does not have the status COMPLETED, the system displays the last error message if one is available.
 
-    -   The *Correlation ID*
-    -   The *Sender*
-    -   The *Receiver*
-    -   The *Application Message ID*
-    -   The *Application Message Type*
-    -   The *Custom Status*
-    -   The *Retention Periods* for completed and uncompleted messages.
+-   *Properties*:
+
+    -   **Message ID**
+
+    -   *Correlation ID*
+    -   *Application Message ID*
+    -   *Predecessor ID*
+
+        For more information, see: [Using IDs to Filter Messages](using-ids-to-filter-messages-a820752.md).
+
+    -   *Sender*
+    -   *Receiver*
+    -   *Application Message Type*
+    -   *Custom Status*
+    -   *Retention Periods* for completed and uncompleted messages.
 
     > ### Note:  
     > *Sender*, *Receiver*, *Application Message ID*, *Application Message Type*, and *Custom Status* are optional and can be set via the Content Modifier. They're only shown if they aren’t empty.
     > 
     > The *Custom Status* is only visible if it differs from the overall processing status.
 
--   *Custom Header Properties*
-
-    The properties can be set using the script step. If they’re set, they’re displayed in this section.
+-   *Custom Header Properties*. You can set these properties using the script step. If set, the system displays them in this section.
 
     For more information, see: [Use Custom Header Properties to Search for Message Processing Logs](use-custom-header-properties-to-search-for-message-processing-logs-d4b5839.md)
 
--   *Logs*
+-   *Logs*. This section displays the *Log Level* and the *Runtime Node*. Select the log level link to view the message processing log in a visual format. For more information, see [Message Processing Log](message-processing-log-b32f8cd.md).
 
-    Displays the *Log Level* and the *Runtime Node*. Choosing the log level link takes you to the message processing log displayed in table form. You access the textual representation by selecting *Open Text View*.
+    To access the text version, select *Open Text View*, see [Message Processing Log – Text View](message-processing-log-text-view-718309a.md).
 
-    If the processing of an integration flow failed and retry runs were performed, the runs are displayed in a table \(up to 50 retries\) in the *Logs*section.
+    If the processing of an integration flow fails and the retry runs are performed, these runs appear in a table in the *Logs* section. The table displays up to 50 retries.
 
-    If Data Archiving is activated for logs of an integration artifact, the archiving status is displayed in this section. The status are:
+    If you activate *Data Archiving* for the logs of an integration artifact, the system displays the archiving status in this section. The possible statuses are:
 
     -   **Not Archived**:
 
-        -   Data Archiving is not activated for logs of this integration artifact.
+        -   *Data Archiving* is not activated for logs of this integration artifact.
 
-        -   Data Archiving does not consider logs of discarded message processing.
-        -   Data Archiving is configured to consider logs of successfully completed messages only.
+        -   *Data Archiving* does not consider logs of discarded message processing.
+        -   *Data Archiving* is configured to consider logs of successfully completed messages only.
 
-    -   **Archiving Pending**: Data Archiving is activated for logs of this integration artifact.
-    -   **Archived**: Data Archiving is completed for this log.
+    -   **Archiving Pending**: *Data Archiving* is activated for logs of this integration artifact.
+    -   **Archived**: *Data Archiving* is completed for this log.
 
--   *Attachments*
+-   *Attachments*.This section appears only when the message processing log includes attachments. The system displays a list of all attachments that can be displayed as text. You can browse the different pages to view the complete list of attachments. Select the relevant navigation options to do so.
 
-    This section is only displayed if the message processing log contains attachments.
-
-    Any type of attachment that can be displayed as text is supported. In particular, the following types of content can be displayed:
+    The following attachment formats are supported:
 
     -   Plain text
 
-    -   XML
-
-        XML attachments are displayed as formatted plain text \(including tags\).
+    -   XML. XML attachments are displayed as formatted plain text \(including tags\).
 
     -   Text files with comma-separated values
 
-    -   Text files with tab-separated values
+    -   Text files with tab-separated values. In these files, each entry appears as a single line in the text file.
 
-        In these files, each entry is represented as one line of the text file.
-
-    -   HTML
-
-        HTML attachments are displayed as plain text \(including tags\).
+    -   HTML. HTML attachments are displayed as plain text \(including tags\).
 
 
--   *Artifact Details*
+    You can open the attachments on a new screen and download them to your local file system.
 
-    This section displays the artifact *Name*, *ID*, *Type*, and *Package*, if available.
+-   *Artifact Details*. This section displays the artifact *Name*, *ID*, *Type*, and *Package*, if available.
 
-    There are the following hyperlinks:
+    You can also use any of the following navigation links to continue working with your artifacts:
 
 
     <table>
@@ -358,9 +345,9 @@ After the header, the following sections contain detailed information about the 
     </td>
     <td valign="top">
     
-    Opens the integration content monitor.
+    Navigate to the integration content monitor.
 
-    When navigating to the integration content monitor, the active artifact that is currently deployed will be opened.
+    When you navigate to the integration content monitor, the system opens the active artifact that is currently deployed.
 
     See: [Manage Integration Content](manage-integration-content-09a7223.md)
     
@@ -374,7 +361,7 @@ After the header, the following sections contain detailed information about the 
     </td>
     <td valign="top">
     
-    Opens the deployed artifact \(if it's an integration flow, the model corresponding to the deployed integration flow is shown, but editing is not possible\).
+    Navigate to the deployed artifact. If the artifact is an integration flow, the system displays the model for the deployed integration flow. You can't edit this model.
     
     </td>
     </tr>
@@ -386,7 +373,7 @@ After the header, the following sections contain detailed information about the 
     </td>
     <td valign="top">
     
-    Opens the artifact editor and allows you to edit the artifact \(if it's an integration flow, you can edit the integration flow model\).
+    Navigate to the artifact editor which allows you to edit the artifact. If the artifact is an integration flow, you can edit the integration flow model.
     
     </td>
     </tr>
@@ -399,9 +386,11 @@ After the header, the following sections contain detailed information about the 
 
 ## Message Status Overview
 
-You can quickly navigate to the Message Status Overview page with the button *Message Status Overview*.
+You can quickly navigate to the *Message Status Overview* page by choosing the *Message Status Overview* button.
 
 ![](images/Message_Status_Overview_Button_782b507.png)
+
+This view offers a detailed summary of the statuses of messages for various artifacts over a specified time period. For more information, see [Monitor Message Status Overview](monitor-message-status-overview-0cde046.md).
 
 **Related Information**  
 

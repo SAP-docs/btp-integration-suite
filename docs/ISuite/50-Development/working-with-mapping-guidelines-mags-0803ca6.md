@@ -12,7 +12,7 @@ Learn how to work with mapping guidelines, also known as MAGs.
 
 ## Prerequisites
 
--   You've created a mapping guideline \(MAG\). For more information on creating a new MAG, see [Creating a New Mapping Guideline](creating-a-new-mapping-guideline-a42920e.md).
+-   You've created a mapping guideline \(MAG\). For more information on creating a new MAG, see [Creating Standard Graphical Mapping Guidelines](creating-standard-graphical-mapping-guidelines-a42920e.md).
 
 -   You've opened the MAG that you want to work with, either after creating a new MAG or by choosing one from the *Mapping Guidelines \(MAGs\)* section of the Integration Advisor home page.
 
@@ -25,7 +25,7 @@ Learn how to work with mapping guidelines, also known as MAGs.
 
 Once you've created a mapping guideline \(MAG\), you can edit it to change the mapping details to suit your scenario. Additionally, you can also add documentation that provides the users of the MAG with more information on its relevance.
 
-In some scenarios, significant differences between the message implementation guidelines, such as different node hierarchies, difference in the message structure, and so on, can complicate the mapping. To overcome this, the application provides you with an approach that helps transform the structure of a source MIG to ensure that its content can be mapped easily with the target MIG structure. To learn more, see [Pretransformation of a Message Implementation Guideline](pretransformation-of-a-message-implementation-guideline-b287e5e.md).
+In some scenarios, significant differences between the message implementation guidelines, such as different node hierarchies, difference in the message structure, and so on, can complicate the mapping. To overcome this issue, the application provides you with an approach that helps transform the structure of a source MIG to ensure that its content can be mapped easily with the target MIG structure. To learn more, see [Pretransforming a Message Implementation Guideline](pretransforming-a-message-implementation-guideline-b287e5e.md).
 
 
 
@@ -46,13 +46,12 @@ In some scenarios, significant differences between the message implementation gu
 
     -   To create a **mapping**, drag the field from *Source* to the field on *Target* that you want to map to.
     -   You can also use the *Proposal Service* to get a proposal on fields that might be most relevant for you.
-
-        -   Choose Proposals: Get Proposals to activate a proposal indicator that displays which fields might be most relevant for you. This is calculated based on the other available MAGs.
+        -   Choose Proposals: Get Proposals to activate a proposal indicator that displays which fields might be most relevant for you. This proposal is calculated based on the other available MAGs.
         -   Choose Proposals: Select *Best Proposal* to automatically select all proposed mapping entities or select single proposed mapping entities by clicking on the checkboxes within the mapping list.
 
-        The mapping list displays all the relevant information of the source and target nodes such as source nodes, target nodes, their cardinality and so on. The *Type* column displays the type of each entry in the mapping list. You can filter and view the mappings that are erroneous and mappings that have proposals using the drop-down filter available above the mapping list table.
+    -   The *mapping list* displays all the relevant information of the source and target nodes such as source nodes, target nodes, their cardinality and so on. The *Type* column displays the type of each entry in the mapping list. You can filter and view the mappings that are erroneous and mappings that have proposals using the drop-down filter available above the mapping list table.
 
-    -   To **search** for a particular value in the *Mapping List* tab, selecting one of the following column headers and entering the search value in the upcoming filter <span class="SAP-icons-V5"></span>.
+    -   To **search** for a particular value in the *Mapping List* tab, select one of the following column headers and enter the search value in the upcoming filter <span class="SAP-icons-V5"></span>.
 
         -   Source
         -   Source Name

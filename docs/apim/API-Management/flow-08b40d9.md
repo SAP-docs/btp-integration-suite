@@ -81,3 +81,8 @@ Adding a policy to an API proxy involves the following two steps:
 
 The above graphic illustrates the relationship between policies and Flows. A policy is attached to a Flow as a processing **Step**. Each Step can contain one policy. A flow can contain zero or many steps. Each step has a condition, which decides whether the policy has to be executed.
 
+**Related Information**  
+
+
+[Policies](policies-7e4f3e5.md "Policy definition and types of policies supported by .")
+

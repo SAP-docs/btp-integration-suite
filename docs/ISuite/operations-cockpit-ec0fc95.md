@@ -39,6 +39,10 @@ After making your selection, the dashboard displays the most critical resources 
 
         For more information, see [Diagnostics](diagnostics-80f3050.md).
 
+    -   *Connection Status*: Monitor periods of disconnection from the cloud.
+
+        For more information, see [Connection Status](connection-status-1f60cf8.md).
+
 
 -   *RFC Adapter*: Monitor the underlying JCo entities of the integration flows deployed with the RFC adapter.
 

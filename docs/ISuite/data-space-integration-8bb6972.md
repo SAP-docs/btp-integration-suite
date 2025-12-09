@@ -16,7 +16,7 @@ The following is an overview of what you can learn about Data Space Integration:
 
 -   [Consuming Data Space Assets](consuming-data-space-assets-5c0cdb8.md): Find out how you can work with the assets of another participant of a data space.
 
--   [Data Spaces - Providing Assets, Policies, and Contract Definitions](50-Development/data-spaces-providing-assets-policies-and-contract-definitions-079b342.md): Get started creating assets, policies, and contract definitions, and offer them to others.
+-   [Data Spaces](50-Development/data-spaces-079b342.md): Get started creating assets, policies, and contract definitions, and offer them to others.
 
 -   [Configure in Data Spaces](50-Development/configure-in-data-spaces-7b65115.md): Create company policies to define rules for requesting and accepting offers made by another participant of a data space.
 

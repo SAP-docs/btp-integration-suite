@@ -128,7 +128,7 @@ Description
 
 Enter the MDI host address to which you want to connect to. For example, `https://one-mds.cfapps.sap.hana.ondemand.com`.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -142,7 +142,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Enter the fully qualified name of a One Data Model \(ODM\) entity type. For example, `sap.odm.businesspartner.BusinessPartner`.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -156,7 +156,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Enter the ODM entity version. For example, `2.1.1`.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>

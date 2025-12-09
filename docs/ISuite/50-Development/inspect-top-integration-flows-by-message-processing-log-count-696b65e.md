@@ -6,6 +6,9 @@ Inspect the count of message processing logs by integration flows for a given ti
 
 Integration flows are sorted top-down according to the count of message processing logs.
 
+> ### Tip:  
+> You can use the *Top Integration Flows* filter to adjust the number of integration flows shown on the chart. The default is six, and the maximum is 15.
+
 The color shade of a cell reflects the count of message processing logs.
 
 Using the *Message Processing Status* combo box, you can filter the count of message processing logs by status. The default value is *All*. That means, the total count of message processing logs is displayed.

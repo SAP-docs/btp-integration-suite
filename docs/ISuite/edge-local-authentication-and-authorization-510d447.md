@@ -4,7 +4,7 @@
 
 Edge Local Authentication and Authorization enables operations of integration flows and API proxies without relying on SAP Business Technology Platform \(SAP BTP\) for authentication and authorization in real time.
 
-Edge Local Authentication and Authorization provides inbound local authentication and authorization for integration flow scenarios and API proxies, removing the real-time dependency on SAP Business Technology Platform. It supports offline authentication and authorization without SAP BTP dependency for client certificate authentication during integration flow processing, and API artifacts invocations.
+Edge Local Authentication and Authorization provides inbound local authentication and authorization for integration flow scenarios and API proxies, removing the real-time dependency on SAP Business Technology Platform. It supports offline authentication and authorization without SAP BTP dependency for client certificate and basic authentication \(clientId and clientsecret\) during integration flow processing, and API artifacts invocations.
 
 
 

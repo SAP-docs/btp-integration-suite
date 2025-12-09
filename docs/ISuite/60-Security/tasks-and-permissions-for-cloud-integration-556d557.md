@@ -242,6 +242,8 @@ WebToolingWorkspace.Read
 
 WebTooling.IntegrationFlowConfigure
 
+WebToolingWorkspace.RuntimeConfigure
+
 </td>
 <td valign="top">
 
@@ -274,6 +276,8 @@ NodeManager.read
 GenerationAndBuild.generationandbuildcontent
 
 NodeManager.deploycontent
+
+WebToolingWorkspace.RuntimeConfigure
 
 </td>
 <td valign="top">
@@ -2401,6 +2405,8 @@ Provides permission for the tenant administrator persona \(see [Personas for Clo
 <td valign="top">
 
 AuthGroup.Administrator
+
+WebToolingWorkspace.RuntimeConfigure
 
 </td>
 <td valign="top">

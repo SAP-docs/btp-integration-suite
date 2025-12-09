@@ -4,7 +4,7 @@
 
 # Creating an Agreement Template
 
-An agreement template is a template of a semantical choreography definition consisting of one or more business transactions. The configurations at the template level serve as defaults that can then be reused and overridden when creating the trading partner agreement.
+An agreement template is a template of a semantic choreography definition consisting of one or more business transactions. The configurations at the template level serve as defaults that can then be reused and overridden when creating the trading partner agreement.
 
 
 
@@ -32,7 +32,7 @@ Follow the next procedure to create an agreement template.
 
 4.  In the *Create Agreement Template* dialog, enable *Create with Company Subsidiary* toggle button if you want to create the template using the subsidiary.
 
-    1.  If selected, the field *Company Subsidiary* gets enabled. Select a subsidiary from the drop-down list..
+    1.  If selected, the field *Company Subsidiary* gets enabled. Select a subsidiary from the drop-down list.
 
 
 5.  In the same dialog, enable *Include Communication Partner* toggle button if you want to include a communication partner in the agreement template.
@@ -90,16 +90,16 @@ Follow the next procedure to create an agreement template.
     </td>
     <td valign="top">
     
-    It is set to *1.0* by default. You can modify this value according to your requirement.
+    It's set to *1.0* by default. You can modify this value according to your requirement.
     
     </td>
     </tr>
     </table>
     
-8.  Maintain the following fields under *My Company Details* section. The field *Company Name* is autofilled by default.
+8.  Maintain the following fields in the *My Company Details* section. The field *Company Name* is autofilled by default.
 
     > ### Note:  
-    > If you selected a Subsidiary during the Template creation step \(refer Step 4\), the *Company Name* field will display the respective Subsidiary's name. Otherwise, it will default to the Company Profile name.
+    > If you selected a Subsidiary during the Template creation step \(refer Step 4\), the *Company Name* field displays the respective Subsidiary's name. Otherwise, it defaults to the Company Profile name.
 
 
     <table>
@@ -199,7 +199,7 @@ Follow the next procedure to create an agreement template.
 9.  Under *Common Details* fill in the following details:
 
     > ### Note:  
-    > If you had opted for a communication partner during template creation \(refer Step 5\), then the *Name* field will be populated with the communication partner name.
+    > If you had opted for a communication partner during template creation \(refer Step 5\), then the *Name* field is populated with the communication partner name.
 
 
     <table>
@@ -283,7 +283,7 @@ Follow the next procedure to create an agreement template.
     </td>
     <td valign="top">
     
-    Enter an alias identifier that will be used for the trading partner in the type system of Trading Partner.
+    Enter an alias identifier that is used for the trading partner in the type system of Trading Partner.
     
     </td>
     </tr>
@@ -295,7 +295,7 @@ Follow the next procedure to create an agreement template.
     </td>
     <td valign="top">
     
-    Enter an alias identifier that will be used for the trading partner in the type system of Company.
+    Enter an alias identifier that is used for the trading partner in the type system of Company.
     
     </td>
     </tr>
@@ -303,9 +303,9 @@ Follow the next procedure to create an agreement template.
     
 10. Choose *Save*. Once you save the agreement template, the template also displays the *Purpose* of the type system you chose.
 
-11. Now you need to create a B2B transaction. To do so, follow the procedure mentioned in [Creating a B2B Transaction](creating-a-b2b-transaction-e1de659.md).
+11. Now, you need to create a B2B transaction. To do so, follow the procedure mentioned in [Creating a B2B Transaction](creating-a-b2b-transaction-e1de659.md).
 
-    If you want to create a pass-through transaction, see [.](creating-a-pass-through-b2b-transaction-6dd03a4.md)
+    If you want to create a pass-through transaction, see [Creating a Pass-Through B2B Transaction](creating-a-pass-through-b2b-transaction-6dd03a4.md).
 
 
 
@@ -314,7 +314,7 @@ Follow the next procedure to create an agreement template.
 
 ## Results
 
-You have now successfully created an agreement template and you can view the template details under the *Agreement Templates* tab. You can also view the administrative information under the tab. To enable those fields, choose *Settings* :gear: icon and select the following fields and choose *OK*:
+You have now successfully created an agreement template and you can view the template details under the *Agreement Templates* tab. You can also view the administrative information under the tab. To enable those fields, choose :gear:, select the following fields, and choose *OK*:
 
 -   Created By
 

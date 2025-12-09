@@ -28,7 +28,7 @@ Enable API Management Capability
 </td>
 <td valign="top">
 
-Set up the API Management capability from SAP Integration Suite. For more information, see [Activate and Configure the API Management Capability and Access Developer Hub](activate-and-configure-the-api-management-capability-and-access-developer-hub-f6eb433.md).
+Set up the API Management capability from SAP Integration Suite. For more information, see [Activate and Configure the API Management Capability](activate-and-configure-the-api-management-capability-f6eb433.md).
 
 </td>
 </tr>

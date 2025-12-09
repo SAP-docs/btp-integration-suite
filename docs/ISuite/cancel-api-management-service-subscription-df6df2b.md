@@ -44,5 +44,3 @@ If you've enabled the API Management capability via SAP Integration Suite, perfo
 
 [Shadow Users](shadow-users-a0f5fe5.md "Whenever a user authenticates at an application in your subaccount using any identity provider, it’s essential that user-related data provided by the identity provider is stored in the form of shadow users.")
 
-[Setting Up API Management with SAP Cloud Identity Services](setting-up-api-management-with-sap-cloud-identity-services-1e88d9c.md "SAP Cloud Platform allows customers to connect their SAP Cloud Identity Services with the BTP offerings.")
-

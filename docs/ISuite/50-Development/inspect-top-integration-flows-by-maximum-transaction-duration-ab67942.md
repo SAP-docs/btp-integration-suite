@@ -6,6 +6,9 @@ Inspect maximum duration of database transactions per integration flow for a giv
 
 Only those integration flows that are identified as top consumers of database connections are shown \(sorted top-down by average usage\).
 
+> ### Tip:  
+> You can use the *Top Integration Flows* filter to adjust the number of integration flows shown on the chart. The default is six, and the maximum is 15.
+
 The color shade of a cell reflects the maximum duration of database transactions. The darkest shade reflects the longest duration observed during the selected time period.
 
 Click a cell to display the percent value of connection usage and to access one of the following functions for the selected integration flow \(results are filtered according to the setting of the *Time* parameter\):

@@ -4,28 +4,30 @@
 
 # Exporting Documentation
 
-You can export your Message Implementation Guideline\(MIG\) or Mapping Guidelin\(MAG\) in the documentation format.
+You can export message implementation guidelines \(MIGs\) and mapping guidelines \(MAGs\) in a documentation format.
 
-You can export your MIG or MAG in the following supported documentation format:
+
+
+## Context
+
+You can export your MIG or MAG in the following supported documentation formats:
 
 -   PDF
 
 -   RTF
 -   Excel
 
-You can use the document file as a reference to implement the messages and mappings in the integration solution also as reference documentation for bookkeeping purposes.
+After the export, you can use the document file as a reference to implement the messages and mappings in the integration solution, and also as reference documentation for bookkeeping purposes.
 
 
-
-<a name="loiof7dbd2da10be484eb20ac6cb21e548fd__section_lyr_qtj_4tb"/>
 
 ## Procedure
 
-1.  Access the Message Implementation Guideline \(MIG\) or the Mapping Guideline \(MAG\) section.
+1.  Access the message implementation guideline \(MIG\) or the mapping guideline \(MAG\) section.
 
-2.  Select the MIG or MAG that you want to export as documentation.
-3.  Choose <span class="SAP-icons-V5"></span> and then choose *Export*.
-4.  Choose the appropriate option based on your requirement
+2.  Open the MIG or MAG that you want to export as documentation and choose <span class="SAP-icons-V5"></span> Additional Options.
+
+3.  Choose *Export*, followed by one of the following options, based on your requirements:
 
     **Documentation Export**
 
@@ -51,7 +53,7 @@ You can use the document file as a reference to implement the messages and mappi
     </td>
     <td valign="top">
     
-    A PDF document of the MIG/MAG will be exported.
+    A PDF document of the MIG/MAG is exported.
     
     </td>
     </tr>
@@ -63,7 +65,7 @@ You can use the document file as a reference to implement the messages and mappi
     </td>
     <td valign="top">
     
-    The MIG/MAG in RTF format will be exported. RTF documents can be edited by MS Word.
+    The MIG/MAG in RTF format is exported. RTF documents can be edited by MS Word.
     
     </td>
     </tr>
@@ -75,7 +77,7 @@ You can use the document file as a reference to implement the messages and mappi
     </td>
     <td valign="top">
     
-    An Excel document of the MIG/MAG will be exported.
+    An Excel document of the MIG/MAG is exported.
     
     </td>
     </tr>

@@ -130,7 +130,7 @@ The integration engine address is composed in the following way:
 > ### Note:  
 > You can find out the constituents \(HTTPS port\) of the URL by choosing transaction `SMICM` in the receiver system and choosing *Goto* \> *Services*.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 The endpoint URL that has been used at runtime is displayed in the message processing log \(MPL\) in the message monitoring application \(MPL property `RealDestinationUrl`\).
 
@@ -224,7 +224,7 @@ There are the following options:
 
 Name of the *User Credentials* artifact that needs to be deployed separately on the tenant \(it contains user name and password for the user to be authenticated\).
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -240,7 +240,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Optional entry to specify the alias of the private key to be used for authentication. If you leave this field empty, the system checks at runtime for any valid key pair in the tenant keystore.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -368,7 +368,7 @@ Description
 
     A communication party typically represents a larger unit involved in an integration scenario. You usually use a communication party to address a company.
 
-    You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+    You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 -   *Communication Component*
 
@@ -376,7 +376,7 @@ Description
 
     You typically use a communication component to address a business system as the sender or receiver of messages.
 
-    You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+    You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
     > ### Note:  
     > To get this information, go to the receiver system and choose transaction `SLDCHECK`. In section *LCR\_GET\_OWN\_BUSINESS\_SYSTEM*, you find the business system ID \(which typically has the form `<SID>_<client>`\).
@@ -387,7 +387,7 @@ Description
 
     The receiver interface is described according to how interfaces are defined in the Enterprise Services Repository, that means, with a name and a namespace.
 
-    You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+    You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
     > ### Caution:  
     > Currently, you can only configure both parameters dynamically or hard-coded. A combination of dynamic configuration and hard-coding is not supported.
@@ -740,6 +740,60 @@ Which header you can use, depends on the kind of temporary storage chosen.
 > `${header.SAP_DataStoreRetries} > '5'`
 > 
 > In this example, the message is routed to the related receiver after 5 retries.
+
+
+
+<a name="loio5d2670fdfed640db8fd43991440d6da7__section_b2r_xlc_fhc"/>
+
+## Dynamic Headers
+
+The XI sender and receiver adapters handle dynamic headers within XI messages. The `DynamicConfiguration` tag is converted from the incoming message into exchange properties in the XI sender adapter which can be accessed in the integration flow. Each record from this tag has two exchange properties with the `SapDynamicConfiguration` prefix as seen in following table:
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Name
+
+</th>
+<th valign="top">
+
+Value
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`SapDynamicConfiguration_<Name of the Record>`
+
+</td>
+<td valign="top">
+
+Value of the record
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`SapDynamicConfiguration_<Name of the Record>_Namespace`
+
+</td>
+<td valign="top">
+
+Namespace of the record
+
+</td>
+</tr>
+</table>
+
+You can read or modify these properties via content modifier or script.
+
+The receiver adapter checks for these properties and adds them as records within the `DynamicConfiguration` tag for the outgoing message.
 
 **Related Information**  
 

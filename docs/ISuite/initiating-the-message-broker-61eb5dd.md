@@ -19,7 +19,7 @@ Initiate the message broker before you get started with the Event Mesh capabilit
 
 ## Context
 
-This task is a one-time activity. Before getting started with the actions associated with the Event Mesh capability, you must initiate the Event Mesh's broker. While doing so, you get to know the specifications of the broker, such as the spool size, maximum message size, and more.
+This task is a one-time activity. Before getting started with the actions associated with the Event Mesh capability, you must initiate the Event Mesh message broker. While doing so, you get to know the specifications of the broker, such as the spool size, maximum message size, and more.
 
 
 

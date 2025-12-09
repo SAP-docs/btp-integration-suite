@@ -14,7 +14,7 @@ To create APIs, build API proxies as a service provider, or use APIs and other c
 
 The following role collections must be assigned to you:
 
--   The API Management capability must be enabled in SAP Integration Suite. For more information, see [Activate and Configure the API Management Capability and Access Developer Hub](../activate-and-configure-the-api-management-capability-and-access-developer-hub-f6eb433.md).
+-   The API Management capability must be enabled in SAP Integration Suite. For more information, see [Activate and Configure the API Management Capability](../activate-and-configure-the-api-management-capability-f6eb433.md).
 
 -   To access the *Settings* page, the *APIManagement.Selfservice.Administrator* role collection must be assigned to you
 

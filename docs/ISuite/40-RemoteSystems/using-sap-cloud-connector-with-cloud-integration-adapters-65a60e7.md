@@ -33,4 +33,5 @@ You can now connect to on premise systems using Cloud Integration adapters by se
 > -   Always use *Basic Authentication* as the *<Authentication Type\>*.
 > -   Ensure that you deploy the credentials that enables access to the backend system that you are trying to connect to.
 > -   Ensure that you use the correct *Location ID* of the cloud connector that you want to establish a connection to. You can find this in the configuration of the cloud connector in the target system. For more information, you can also see this blog: [Connecting multiple Cloud Connectors to an account in SAP BTP](https://blogs.sap.com/2017/02/06/connecting-multiple-cloud-connectors-to-an-account-in-hana-cloud-platform/)
+> -   Ensure that the hostname has a period within it if *Session Reuse* is enabled for the integration flow. See SAP Note [0003502167](https://me.sap.com/notes/0003502167)
 

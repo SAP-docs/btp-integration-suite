@@ -24,7 +24,7 @@ As a foundational step, ensure you have Kubernetes backups available to facilita
 
 2.  Check the state of restored K8s resources to verify that all required pods are available. Open the Edge LM UI and check the status of Edge Nodes and solutions. This may require a recovery of the Edge Node. For more information, see [Performing Emergency Operations on an Edge Node.](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/94b35056bbf94a73a6716a8d194a78d6.html)
 
-3.  If needed, restore and recover the external databases, such as PostgreSQL and Redis.
+3.  If needed, restore and recover the external database and/or datastore.
 
 4.  As the Message Service does not support restore and recovery of persistent volumes, you need to recreate the Message Service. To do so, perform the following steps:
 
@@ -40,7 +40,7 @@ As a foundational step, ensure you have Kubernetes backups available to facilita
     -   To edit custom resource, perform the following command: `kubectl -n edge-icell-services edit solacesoftwarebroker solace`. This opens an editor showing the custom resource definition in the section spec. In the spec section, look for the field `statusRevisionCount`. If the `statusRevisionCount` field exists, increase its value; otherwise set it to 1. Save the changes and exit the editor.
 
     -   To restart the deployment, execute the following commands:
-        -   `kubectl -n edge-icell rollout restart deploy solops`
+        -   `kubectl -n edge-icell rollout restart deploy message service operations`
         -   `kubectl -n edge-icell rollout restart deploy mdc`
         -   `kubectl -n edge-icell rollout restart deploy worker`
 

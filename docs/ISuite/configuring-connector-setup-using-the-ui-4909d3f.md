@@ -44,22 +44,20 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 
     5.  Fill in the *Offer Management User* information. You can retrieve these details from the *Offer Management* user that you created in the landscape portal.
 
-    6.  Fill in the *Decentral Identity Verification* information with your *IATP STS OAuth Token URL* and the corresponding *Client ID* and *Client Secret*. you can retrieve the client details from the *Identity Wallet Management* user located in the landscape portal.
+    6.  Fill in the *Decentral Identity Verification* information with your *IATP STS OAuth Token URL* and the corresponding *Client ID* and *Client Secret*. You can retrieve the client details from the *Identity Wallet Management* user located in the landscape portal.
 
         You can find the *IATP STS OAuth Token URL* in the landscape portal:
 
         1.  For Catena-X, go to *Your Profile* \> *Connector Management* and choose your connector configuration details to view a dialog with all your details. Copy the *iatp.sts.oauth.token\_url*.
 
-        2.  For Cofinity-X, go to *Technical Setup* \> *Technical User Management*. Open the technical user details for the user with the Identity Wallet Management permission, and copy the URL you find under *Service Endpoint*.
-
-
+        2.  For Cofinity-X, go to *Technical Setup* \> *Technical User Management*. Open the technical user details for the user with the Identity Wallet Management permission and copy the URL you find under *Service Endpoint*. Now, add the suffix `/oauth/token` to the URL \(after `.com`\), otherwise the onboarding runs into an error.
 
 
         The other information in this section is filled in automatically. If you're using a custom landscape, you must enter these details manually as well.
 
     7.  Choose *Save*.
 
-        You can now move on to the next tab, *Prepare Connection to Cloud Integration*.
+        Wait for 5 minutes before continuing while the control planes of Data Space Integration are being restarted. You can then move on to the next tab, *Prepare Connection to Cloud Integration*.
 
 
 2.  In the *Prepare Connection to Cloud Integration* tab, you're preparing the connection to Cloud Integration, for which you need to enter two service keys.
@@ -76,7 +74,7 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 
     Simply choose *Onboard*. Data Space Integration then starts deploying the integration package in Cloud Integration using the parameters that you provided in the previous steps.
 
-    The onboarding of Data Space Integration can take up to 20 minutes.
+    The onboarding of Data Space Integration can take up to 20 minutes. Wait until it reaches a final status \(`Error` or `Success`\).
 
 
 
@@ -95,7 +93,7 @@ You can now use Data Space Integration.
 
 Depending on your role, you can now get started with one of the following tasks:
 
--   Learn how to work with assets, policies, and contract definitions as a provider. See [Data Spaces - Providing Assets, Policies, and Contract Definitions](50-Development/data-spaces-providing-assets-policies-and-contract-definitions-079b342.md).
+-   Learn how to work with assets, policies, and contract definitions as a provider. See [Data Spaces](50-Development/data-spaces-079b342.md).
 
 -   Learn how to discover offers and consume assets provided by other participants of a data space. See [Consuming Data Space Assets](consuming-data-space-assets-5c0cdb8.md).
 

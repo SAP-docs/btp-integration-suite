@@ -117,14 +117,14 @@ Use this service in tenant-aware applications.
 
 ## Getting Started
 
-You can provision the API Management capability from theSAP Integration Suite launchpad. For the detailed steps, see [Activate and Configure the API Management Capability and Access Developer Hub](activate-and-configure-the-api-management-capability-and-access-developer-hub-f6eb433.md).
+You can provision the API Management capability from theSAP Integration Suite launchpad. For the detailed steps, see [Activate and Configure the API Management Capability](activate-and-configure-the-api-management-capability-f6eb433.md).
 
 **Related Information**  
 
 
 [Working with API Management](working-with-api-management-321fb4d.md "Get an understanding of API Management within SAP Integration Suite and leverage its capabilities effectively.")
 
-[API Lifecycle](api-lifecycle-5e8ea7d.md "The API lifecycle, starts from API planning, creation and implementation by company developers and other API creators and composers, to the consumption of these APIs by other employees, partners or users of the company’s products and services.")
+[API Lifecycle](api-lifecycle-5e8ea7d.md "The API lifecycle in API Management encompasses a series of well-defined stages that enable organizations to securely expose, manage, consume, and analyze APIs. SAP provides a comprehensive platform for managing APIs throughout their lifecycle—from design and deployment to monetization and analysis.")
 
 [Developer Hub](developer-hub-41f7c45.md "Developer Hub is a web-based platform designed for developers to discover, explore, and utilize APIs offered by an organization.")
 

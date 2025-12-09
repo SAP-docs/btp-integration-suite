@@ -32,6 +32,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
 > -   EDI to XML converter version 1.6 and above supports LS/LE segments.
 > -   Cloud Integration does not support repetition characters. Repetition character is a single character which separates the instances of a repeating data element. For example, *^* \(caret sign\) is a repetition character.
 > -   For X12 format, EDI to XML converter v1.8.0 and v2.2.0 onwards support same group name with different definition in XSD.
+> -   From EDI to XML Converter version 2.6 and above, you can use the same XSDs in your SAP Integration Suite tenant as in your SAP Process Integration and SAP Process Orchestration system.
 
 
 
@@ -149,24 +150,33 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     > ### Note:  
     > -   You can add XSD files to the integration flow. For more details, please refer to [Validating Message Payload against XML Schema](validating-message-payload-against-xml-schema-360dc70.md).
     > 
-    > -   The file name of the xml schema for **EDIFACT/ODETTE** should have the following format:
+    > -   The file name must have the following format:
     > 
-    >     -   EDIFACT: `UN-EDIFACT_ORDERS_D96A.xsd`
+    >     -   SAP Process Integration/SAP Process Orchestration XSDs:
     > 
-    >     -   ODETTE: `ODETTE_ORDERR_2.xsd`
+    >         -   EDIFACT: `<MessageType><MessageRelease>.xsd`
     > 
-    >     -   ODETTE EDIFACT: `UN-EDIFACT_ORDERS_D96A_A18051.xsd`
+    >             -   Example: `DESADV96A.xsd (MessageType = DESADV, Release = 96A)`
     > 
     > 
-    >     Consider the EDIFACT filename as a sample to understand its constituents. The file name comprises of following parts separated by '\_':
     > 
-    >     -   First part "UN-EDIFACT" refers to the EDI standard with organization name. This value is fixed and cannot be customised.
-    >     -   Second part "ORDERS" refers to the message type.
-    >     -   Third part "D96A" refers to the version .
+    >     -   Integration Advisor XSDs:
+    > 
+    >         -   EDIFACT: `UN-EDIFACT_<MessageType>_<Version>.xsd`
+    > 
+    >             Example: `UN-EDIFACT_ORDERS_D96A.xsd`
+    > 
+    >         -   ODETTE: `ODETTE_<MessageType>_<Version>.xsd`
+    > 
+    >             Example: `ODETTE_ORDERR_2.xsd`
+    > 
+    >         -   ODETTE EDIFACT: `UN-EDIFACT_<MessageType>_<Version>_<Other>.xsd`
+    > 
+    >             Example: `UN-EDIFACT_ORDERS_D96A_A18051.xsd`
+    > 
+    > 
     > 
     > -   The above mentioned values should match with schema content.
-    > 
-    > -   During runtime only XSD’s from Integration Advisor are supported.
 
 
     
@@ -188,6 +198,29 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     > For example, you can add the value, `/xsd/UN-EDIFACT_ORDERS_D96A.xsd` for EDIFACT.
     > 
     > For example, you can add the value, `/xsd/ASC-X12_810_004010.xsd` for ASC-X12.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Empty Segment*
+
+    \(Available from version 2.8 and above\)
+    
+    </td>
+    <td valign="top">
+    
+    These are the following options:
+
+    -   *Dynamic*: If you select this option, you must define the value in `SAP_EDITOXML_EDIFACT_EMPTY_SEGMENT` exchange header.
+
+    -   *Exclude*: This option excludes the empty tags in the outgoing converted payload.
+
+    -   *Include*: This option includes the empty tags in the outgoing converted payload.
+
 
 
     
@@ -280,10 +313,28 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
 
     > ### Note:  
     > -   You can add XSD files to the integration flow. For more details, please refer to the topic *Validating Message Payload against XML Schema*, in developer's guide.
-    > -   The file name of the xml schema for ASC-X12 should have the format, *ASC-X12\_810\_004010.xsd*. It contains three parts separated by *\_*:
-    >     -   First part *ASC-X12* refers to the ASC-X12 standard with organization name. This value is fixed and cannot be customised.
-    >     -   Second part *810* refers to the message type.
-    >     -   Third part *004010* refers to the version.
+    > 
+    > -   The file name must have the following format:
+    > 
+    >     -   SAP Process Integration/SAP Process Orchestration XSDs:
+    > 
+    >         -   *ASC\_<EDI\_Message\_Type\><EDI\_Message\_Version\>.xsd*
+    > 
+    >             -   Example: *ASC\_850004010.xsd \(Message Type=850 and Message Version=004010\)*
+    > 
+    >                 > ### Note:  
+    >                 > If the *EDI\_Message\_Version* length is more than 6 characters \(This is extended version\), then first 6 characters will be taken.
+    > 
+    > 
+    > 
+    >     -   Integration Advisor XSDs:
+    >         -   *ASC-X12\_<Message\_Type\>\_<Version\>.xsd*
+    > 
+    >             -   Example: *ASC-X12\_810\_004010.xsd*
+    > 
+    > 
+    > 
+    > 
     > 
     > -   The aforementioned values should match with the schema content.
     > -   During runtime only XSD’s from Integration Advisor \(IA\) are supported.
@@ -306,6 +357,29 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     > This header name is fetched from camel header. The header is added in script element. This script element is added before converter element. You can add value for this header in the script element.
     > 
     > For example, you can add the value, `/xsd/ASC-X12_810_004010.xsd`.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Empty Segment*
+
+    \(Available from version 2.8 and above\)
+    
+    </td>
+    <td valign="top">
+    
+    These are the following options:
+
+    -   *Dynamic*: If you select this option, you must define the value in `SAP_EDITOXML_X12_EMPTY_SEGMENT` exchange header.
+
+    -   *Exclude*: This option excludes the empty tags in the outgoing converted payload.
+
+    -   *Include*: This option includes the empty tags in the outgoing converted payload.
+
 
 
     
@@ -503,6 +577,29 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    *Empty Segment*
+
+    \(Available from version 2.8 and above\)
+    
+    </td>
+    <td valign="top">
+    
+    These are the following options:
+
+    -   *Dynamic*: If you select this option, you must define the value in `SAP_EDITOXML_TRADACOMS_EMPTY_SEGMENT` exchange header.
+
+    -   *Exclude*: This option excludes the empty tags in the outgoing converted payload.
+
+    -   *Include*: This option includes the empty tags in the outgoing converted payload.
+
+
+
+    
+    </td>
+    </tr>
     </table>
     
 3.  If you want to continue editing the integration package without exiting, choose *Save*
@@ -664,7 +761,215 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     Output sample ASC-X12 XML Message
 
     ```
-
+    <?xml version="1.0" encoding="UTF-8"?><ns0:Interchange xmlns:ns0="urn:sap.com:typesystem:b2b:116:asc-x12:850:004010">
+    
+    <S_ISA>
+    
+    <D_I01>00</D_I01>
+    
+    <D_I02> </D_I02>
+    
+    <D_I03>00</D_I03>
+    
+    <D_I04> </D_I04>
+    
+    <D_I05_1>01</D_I05_1>
+    
+    <D_I06>784849291 </D_I06>
+    
+    <D_I05_2>01</D_I05_2>
+    
+    <D_I07>315029991 </D_I07>
+    
+    <D_I08>051007</D_I08>
+    
+    <D_I09>0928</D_I09>
+    
+    <D_I10>/</D_I10>
+    
+    <D_I11>4010 </D_I11>
+    
+    <D_I12>000000001</D_I12>
+    
+    <D_I13>0</D_I13>
+    
+    <D_I14>P</D_I14>
+    
+    <D_I15>^</D_I15>
+    
+    </S_ISA>
+    
+    <S_GS>
+    
+    <D_479>PO</D_479>
+    
+    <D_142>784849291</D_142>
+    
+    <D_124>315029991</D_124>
+    
+    <D_373>20051007</D_373>
+    
+    <D_337>0928</D_337>
+    
+    <D_28>1</D_28>
+    
+    <D_455>U</D_455>
+    
+    <D_480>004010</D_480>
+    
+    </S_GS>
+    
+    <M_850>
+    
+    <S_ST>
+    
+    <D_143>850</D_143>
+    
+    <D_329>10001</D_329>
+    
+    </S_ST>
+    
+    <S_BEG>
+    
+    <D_353>00</D_353>
+    
+    <D_92>NE</D_92>
+    
+    <D_324>228914</D_324>
+    
+    <D_373>20051006</D_373>
+    
+    </S_BEG>
+    
+    <S_CUR>
+    
+    <D_98_1>BY</D_98_1>
+    
+    <D_100_1>EUR</D_100_1>
+    
+    <D_280>0100</D_280>
+    
+    </S_CUR>
+    
+    <G_N1>
+    
+    <S_N1>
+    
+    <D_98_1>SF</D_98_1>
+    
+    <D_93>BEHR SERVICE GMBH</D_93>
+    
+    <D_66>92</D_66>
+    
+    <D_67>1939</D_67>
+    
+    </S_N1>
+    
+    </G_N1>
+    
+    <G_N1>
+    
+    <S_N1>
+    
+    <D_98_1>ST</D_98_1>
+    
+    <D_93>BEHR SERVICE AMERICA</D_93>
+    
+    <D_66>92</D_66>
+    
+    <D_67>1939</D_67>
+    
+    </S_N1>
+    
+    </G_N1>
+    
+    <G_PO1>
+    
+    <S_PO1>
+    
+    <D_350>10000</D_350>
+    
+    <D_330>17</D_330>
+    
+    <D_355>EA</D_355>
+    
+    <D_212>91.8074</D_212>
+    
+    <D_639>EA</D_639>
+    
+    <D_235_1>BP</D_235_1>
+    
+    <D_234_1>2112910003</D_234_1>
+    
+    <D_235_2>PD</D_235_2>
+    
+    <D_234_2>Radiator</D_234_2>
+    
+    </S_PO1>
+    
+    <S_LIN>
+    
+    <D_235_1>MF</D_235_1>
+    
+    <D_234_1>2109308</D_234_1>
+    
+    </S_LIN>
+    
+    <G_SCH>
+    
+    <S_SCH>
+    
+    <D_380>17</D_380>
+    
+    <D_355>EA</D_355>
+    
+    <D_374_1>002</D_374_1>
+    
+    <D_373_1>20060401</D_373_1>
+    
+    </S_SCH>
+    
+    </G_SCH>
+    
+    </G_PO1>
+    
+    <G_CTT>
+    
+    <S_CTT>
+    
+    <D_354>1</D_354>
+    
+    </S_CTT>
+    
+    </G_CTT>
+    
+    <S_SE>
+    
+    <D_96>10</D_96>
+    
+    <D_329>10001</D_329>
+    
+    </S_SE>
+    
+    </M_850>
+    
+    <S_GE>
+    
+    <D_97>1</D_97>
+    
+    <D_28>1</D_28>
+    
+    </S_GE>
+    
+    <S_IEA>
+    
+    <D_I16>1</D_I16>
+    
+    <D_I12>000000001</D_I12>
+    
+    </S_IEA>
+    
+    </ns0:Interchange>
     ```
 
 

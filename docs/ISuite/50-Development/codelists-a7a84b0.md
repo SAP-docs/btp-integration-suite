@@ -4,7 +4,7 @@
 
 A codelist is a collection of acronyms and their meaningful descriptions that provide a common understanding of the code values between business partners, reducing the risks associated with business collaboration.
 
-Codelists are developed and maintained by international Standards Developing Organizations\(SDO\). For example, the codelist ISO 3166-1 that is published by the International Organization for Standardization \(ISO\) includes values for the identification of the name of the country or other geographical entity.
+Codelists are developed and maintained by international Standards Developing Organizations \(SDO\). For example, the codelist ISO 3166-1 that is published by the International Organization for Standardization \(ISO\) includes values for the identification of the name of the country or other geographical entity.
 
 Code values provide a more precise meaning to semantically generic elements in a Message Implementation Guideline \(MIG\). For example, code values can be used to qualify a generic element such as "Party" to mean either a "seller party" or a "buyer party".
 

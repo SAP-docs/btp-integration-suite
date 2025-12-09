@@ -8,14 +8,7 @@ A typical type system in the library is comprised of a collection of messages, a
 
 ![The graphic gives an overview of a typical type system in your library.](images/ICA_-_Library_of_Type_Systems_3ea131a.png)
 
-These agencies provide message templates that you can use as the starting point for creating your own message implementation guideline \(MIG\). You can tailor the MIG to suit your scenario-specific requirements. You can then use the MIG in a mapping guideline \(MAG\) and create a mapping that allows integration with your business partner/s.
+These agencies provide message templates that you can use as the starting point for creating your own message implementation guideline \(MIG\). You can tailor the MIG to suit your scenario-specific requirements. You can then use the MIG in a mapping guideline \(MAG\) and create a mapping that allows integration with your business partners.
 
-For more information on library of type systems, their representation and uses in the application, please refer to this blog:[integration content advisor: Discover B2B/A2A standard libraries](https://blogs.sap.com/2018/02/07/integration-content-advisor-display-and-review-b2ba2a-standard-libraries/).
-
-Here's a short video on YouTube that gives you a quick overview of SAP Integration Suite.
-
-> ### Note:  
-> This video was created before our branding changes related to SAP technology were announced in January 2021.
-
-
+For more information on library of type systems, their representation and uses in the application, see the blog [Integration Content Advisor: Discover B2B/A2A standard libraries](https://blogs.sap.com/2018/02/07/integration-content-advisor-display-and-review-b2ba2a-standard-libraries/).
 

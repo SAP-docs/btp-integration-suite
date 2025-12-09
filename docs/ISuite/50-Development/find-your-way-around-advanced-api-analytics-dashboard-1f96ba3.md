@@ -12,6 +12,8 @@ Familiarize yourself with the main features and controls of the Advanced API Ana
 
 ## Help and Notifications Menu
 
+45678
+
 Every page in Analytics dashboard gives you access to notifications, help documentation, and lets you manage your account. This menu is available at the top-right corner of the analytics dashboard.
 
 Click :bell: to know about the latest news and updates for SAP Integration Suite.
@@ -42,7 +44,7 @@ The Overview page provides a summarized report about your most important and key
 
 At the top of the Overview report page, the following key API metrics are represented in a tile format:
 
-![](images/Analytics_tiles_7effecc.png)
+![](images/Overview_Tiles_5de87bc.png)
 
 -   **Total API Calls**: Total number of API requests made over a specified period.
 -   **API Response Time**: Total time in milliseconds to respond to an API request. This round-trip time includes the API proxy overhead and the target server time.
@@ -78,6 +80,18 @@ Description
 <tr>
 <td valign="top">
 
+API Calls
+
+</td>
+<td valign="top">
+
+Displays the number of API calls per day. You can view the data for all APIs or select specific APIs from the list.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Top APIs of the Week
 
 </td>
@@ -102,12 +116,12 @@ Displays the top 5 products of the week based on the number of calls received fo
 <tr>
 <td valign="top">
 
-Top Applications of the Week
+Top Subscriptions for Applications of the Week
 
 </td>
 <td valign="top">
 
-Displays the top 5 applications based on the number of calls made during the week.
+Displays the top 5 subscriptions based on the number of calls made during the week.
 
 </td>
 </tr>
@@ -150,24 +164,24 @@ Displays the daily call frequency for each API, highlighting the most frequently
 <tr>
 <td valign="top">
 
-Top Applications
-
-</td>
-<td valign="top">
-
-Displays the daily average number of API calls per application, highlighting the top applications.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Top Products
 
 </td>
 <td valign="top">
 
 Displays the daily call volume for each product, highlighting the top-performing products based on call volume.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Top Subscriptions for Applications
+
+</td>
+<td valign="top">
+
+Displays the daily call volume for each subscription.
 
 </td>
 </tr>
@@ -294,9 +308,9 @@ Displays the slowest APIs based on the average daily response time.
 
 The Health page provides reports about key metrics related to the performance of your APIs. By default, it shows data for the last seven days.
 
-At the top of the Health page, there is a date-range selector. This date-range selector lets you set the time period for which you want to analyze the reports. To set a new time period, click and drag the bubble-like endpoints on the date-range selector.
+At the top of the Health page, there is a date-range selector. This date-range selector lets you set the time period for which you want to analyze the reports. To set a new time period, click and drag the arrow controls on either end of the blue slider.
 
-![](images/date_range_selector_health_5a38025.png)
+![](images/Health_date_range_selector_41ec274.png)
 
 Above the date-range selector, select **Day**, **Hour**, or **Minutes** tabs to see daily, hourly, or 30-minute aggregate data.
 
@@ -306,7 +320,7 @@ The **Hour** option displays 24 touch points, one for each hour of the day.
 
 The **Minutes** option displays 48 touch points, one for every 30 minutes of the day.
 
-At the top right corner of the Health page, click <span class="SAP-icons-V5"></span> to view advanced filter menu and options. The filter menu and options appear below the date-range selector and you can filter your reports by API, Applications, Products and Developers. Once you apply the filter options, the applied filters are displayed under *Active Filters*.
+At the top right corner of the Health page, click <span class="SAP-icons-V5"></span> to view advanced filter menu and options. The filter menu and options appear below the date-range selector and you can filter your reports by APIs, Products, Subscriptions for Applications, and Developers. Once you apply the filter options, the applied filters are displayed under *Active Filters*.
 
 The rest of the Health page displays a graphical view of key API metrics, as outlined in the table below:
 
@@ -353,7 +367,7 @@ Displays the number of calls categorized by each response code.
 <tr>
 <td valign="top">
 
-Cache Responses
+Cache Response
 
 </td>
 <td valign="top">
@@ -389,24 +403,24 @@ Displays the average response time of the backend.
 <tr>
 <td valign="top">
 
-API Error Calls
+Proxy Error Call Count
 
 </td>
 <td valign="top">
 
-Displays the count of error calls for each API.
+Displays the number of policy error calls per proxy.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-API Response Time
+Proxy Response Time
 
 </td>
 <td valign="top">
 
-Displays the average response time of an API.
+Displays the average policy response time per proxy in milliseconds.
 
 </td>
 </tr>
@@ -442,9 +456,9 @@ Displays the average response time for cache operations.
 
 The Usage report page provides reports on key metrics related to user-engagement. You can obtain information about the sources or medium from where you are acquiring users and traffic to your APIs, your most popular developers applications, and request verbs. By default, it displays data for the last two months and present month until the current date.
 
-At the top of the Usage report page, there is a date-range selector. This date-range selector lets you set the time period for which you want to analyze the reports. To set a new time period, click and drag the bubble-like endpoints available on the date-range selector.
+At the top of the Usage report page, there is a date-range selector. This date-range selector lets you set the time period for which you want to analyze the reports. To set a new time period, click and drag the arrow controls on either end of the blue slider.
 
-![](images/date_range_selector_usage_1b526c5.png)
+![](images/usage_date_range_selector_516ebc6.png)
 
 Above the date-range selector, you can select **Month**, **Week**, or **Day** tabs to see data by month, week, or day.
 
@@ -454,7 +468,7 @@ The **Week** option displays one touch point for each week of the last three mon
 
 The **Day** option displays one touch point for each day. The number of touch points displayed here varies depending upon the time range you have selected under Month or Week tabs.
 
-At the top right corner of the Usage page, click <span class="SAP-icons-V5"></span> to view advanced filter menu and options. The filter menu and options appear below the date-range selector and you can filter your reports by API, Applications, Products and Developers. Once you apply the filter options, the applied filters are displayed under *Active Filters*.
+At the top right corner of the Usage page, click <span class="SAP-icons-V5"></span> to view advanced filter menu and options. The filter menu and options appear below the date-range selector and you can filter your reports by APIs, Products, Subscriptions for Applications, and Developers. Once you apply the filter options, the applied filters are displayed under *Active Filters*.
 
 The rest of the Usage page displays a graphical view of key API metrics, as outlined in the table below:
 
@@ -506,19 +520,19 @@ New Developers
 </td>
 <td valign="top">
 
-Lists the developers who have recently joined the team, including their names and the dates they were added.
+Lists the developers who have recently joined the team and initiated API activity, including their names and the dates they were added.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-New Applications
+New Subscriptions for Applications
 
 </td>
 <td valign="top">
 
-Displays newly created applications.
+Displays newly created subscriptions for applications that have triggered API interactions.
 
 </td>
 </tr>
@@ -537,12 +551,12 @@ Displays the most used web browsers for API calls.
 <tr>
 <td valign="top">
 
-Top Agents
+Top User Agents
 
 </td>
 <td valign="top">
 
-Displays the most used agents for API calls.
+Displays the most used user agents for API calls.
 
 </td>
 </tr>
@@ -585,12 +599,12 @@ Displays the number of calls made using different web browsers.
 <tr>
 <td valign="top">
 
-Agent Call Count
+User Agent Call Count
 
 </td>
 <td valign="top">
 
-Displays the total number of calls handled by each agent.
+Displays the total number of calls handled by each user agent.
 
 </td>
 </tr>
@@ -649,9 +663,9 @@ Displays the count of API calls categorized by request verb \(e.g., GET, POST, P
 
 ## Date-Range Selector
 
-In the **Health** and **Usage** report pages, there is a date-range selector. This date-range selector lets you set the time period for which you want to analyze the reports. To set a new time period, click and drag the bubble-like endpoints available on the date-range selector.
+In the **Health** and **Usage** report pages, there is a date-range selector. This date-range selector lets you set the time period for which you want to analyze the reports. To set a new time period, click and drag the arrow controls on either end of the blue slider.
 
-![](images/date_range_selector_health_5a38025.png)
+![](images/date_range_selector_9488487.png)
 
 At the top-right corner of the date-range selector, there is a small action bar with options to hide the date-range selector and refresh the reports.
 

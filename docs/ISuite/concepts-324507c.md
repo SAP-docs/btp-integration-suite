@@ -28,9 +28,17 @@ Assessment categories
 
 A classification that indicates if your integration scenarios are ready to be migrated to SAP Integration Suite and how you can proceed.
 
--   **Ready to migrate**: These integration scenarios match to the scenarios offered in SAP Integration Suite. They can be moved to SAP Integration Suite manually or semi-automatically. Additional configuration steps might be required.
--   **Adjustment required**: These integration scenarios partially match to the scenarios offered in SAP Integration Suite. They can be moved to SAP Integration Suite manually or semi-automatically. Further adjustments to the end-to-end integration process based on best practices are required.
--   **Evaluation required**: For these integration scenarios, some items require further evaluation before the scenario can be moved to SAP Integration Suite.
+-   **Ready to migrate**: These integration scenarios match the scenarios offered in SAP Integration Suite. They can be moved to SAP Integration Suite manually or semi-automatically. After the migration, manual adaptations or configuration activities may still be required to ensure full functional compatibility and compliance with SAP best practices. Such activities can be performed directly within SAP Integration Suite and don't require changes to the end-to-end integration design. A few examples include adjusting custom code dependencies that rely on features that are not directly supported by SAP Integration Suite or performing fine-tuning configuration settings such as connectivity parameters.
+-   **Adjustment required**: These integration scenarios partially match the scenarios offered in SAP Integration Suite. They can be moved to SAP Integration Suite manually or semi-automatically. However, further adjustments to the end-to-end integration design are required to ensure functional equivalence and compliance with SAP best practices. Adjustments may include a protocol conversion or changes in the source or target system.
+-   **Evaluation required**: These integration scenarios cannot be directly migrated to SAP Integration Suite and need further evaluation. The *Evaluation required* assessment category can indicate that certain functionalities are limited or currently unavailable in SAP Integration Suite, or that Migration Assessment couldn't fully determine the scenario’s purpose, usage, or dependencies. This category can also indicate that custom code is present \(for example, custom adapter module\), and its behavior can't be automatically analyzed or evaluated by Migration Assessment.
+
+    A manual analysis is required to determine whether the scenario remains business-relevant and, if applicable, how it can be redesigned or re-implemented to operate effectively within the cloud environment.
+
+
+> ### Note:  
+> The Migration Assessment categories classify integration scenarios according to the degree of implementation possible in SAP Integration Suite based on the features used. These categories don't indicate the level of automation or support provided by the Migration Tooling, which is a feature in the Cloud Integration capability of SAP Integration Suite that helps you migrate integration scenarios from SAP Process Orchestration to SAP Integration Suite.
+> 
+> For example, the *Ready to Migrate* assessment category means that all features currently used in your Process Orchestration environment are available in SAP Integration Suite. It does not mean that the Migration Tooling will automatically handle the migration process. For details on using the Migration Tooling, see [Migration Tooling](migration-tooling-6061016.md).
 
 
 

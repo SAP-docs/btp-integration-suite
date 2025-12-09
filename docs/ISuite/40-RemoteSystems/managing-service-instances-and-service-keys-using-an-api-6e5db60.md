@@ -101,7 +101,7 @@ Using Postman, set up the API call in the following way:
     </td>
     <td valign="top">
     
-    Enter the address of the token server that issues tha access token to request the API endpoint.
+    Enter the address of the token server that issues the access token to request the API endpoint.
 
     Assume that your API endpoint address has the following form:
 
@@ -146,6 +146,11 @@ Using Postman, set up the API call in the following way:
     <td valign="top">
     
     Enter the password of the user.
+
+    > ### Note:  
+    > For 2 factor authentication users, enter the password and second factor authentication in the following format: `<password>:<pin><rsa-code>`.
+
+
     
     </td>
     </tr>

@@ -25,7 +25,7 @@ Learn how to delete Edge Integration Cell solution from an Edge Node.
 
 ## Results
 
-The Edge Integration Cell solution is deleted first. After completion, the dependent `Istio` solution is deleted automatically.
+The Edge Integration Cell solution is deleted first. After completion, the dependent solutions are deleted automatically.
 
 The runtime location in SAP Integration Suite is removed automatically.
 

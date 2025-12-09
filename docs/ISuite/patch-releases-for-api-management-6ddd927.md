@@ -6,6 +6,48 @@ This topic provides information on patch releases for API Management that are pr
 
 
 
+## October 2025
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+2.5.3
+
+</td>
+<td valign="top">
+
+This patch fixes the issue where long-running ALTER commands during Product Publish significantly increased API response times. These delays caused health checks to fail, incorrectly marking the application as crashed.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio6ddd927cbeaa42e384dc903e6002e269__section_wz4_hd1_hgc"/>
 
 ## August 2025

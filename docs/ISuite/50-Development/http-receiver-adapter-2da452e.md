@@ -624,7 +624,7 @@ In case of failed HTTP requests where the target system itself provides Retry-Af
 > ### Remember:  
 > The feature is available from software version 8.x \(Cloud Foundry environment\).
 
-For detailed information, read this blog.
+For detailed information, see [Inbuilt Retry option for HTTP Receiver Adapter](https://blogs.sap.com/2023/10/25/sap-integration-suite-inbuilt-retry-option-for-http-receiver-adapter/)
 
 </td>
 </tr>

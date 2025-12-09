@@ -128,7 +128,7 @@ To create a request to connect the API Management tenant to the centralized Deve
     ```
 
     > ### Note:  
-    > These credentials will remain valid for a period of 65 days. Please make sure to regenerate them and reestablish the connection within this timeframe.
+    > The credentials required to establish the connection will be valid for 365 days. Please remember to regenerate them and reestablish the connection within this timeframe. However, any credentials generated prior to February 2024 with a validity of 65 days will remain valid for that specific duration. The 365-day timeframe will apply to all newly generated credentials.
 
 
     

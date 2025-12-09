@@ -10,18 +10,20 @@ Create destination **APIManagement** in your source subaccount to make API calls
 
 ## Prerequisites
 
-Create an instance of API portal, API Management service and fetch the service keys from the service instance as shown in the samplecode. For more information, see[Creating an Instance of API portal, API Management](creating-an-instance-of-api-portal-api-management-6129172.md).
+-   You already have created a service instance and service key in SAP API Management, API portal. For more information, see[Creating an Instance of API portal, API Management](creating-an-instance-of-api-portal-api-management-6129172.md).
 
-> ### Sample Code:  
-> ```
-> {
-> 	"url": "https://<apiportal application name>.cfapps.sap.hana.ondemand.com",
-> 	"tokenUrl": "https://<Space name>.authentication.sap.hana.ondemand.com/oauth/token",
-> 	"clientId": "sb-apiaccessxxxxxxxx!xxxx|api-portal-xsuaa!bxxxx",
-> 	"clientSecret": "xxxxxxxxxxxxxxxxxxxxxxx="
-> }
-> 
-> ```
+    > ### Sample Code:  
+    > ```
+    > {
+    > 	"url": "https://<apiportal application name>.cfapps.sap.hana.ondemand.com",
+    > 	"tokenUrl": "https://<Space name>.authentication.sap.hana.ondemand.com/oauth/token",
+    > 	"clientId": "sb-apiaccessxxxxxxxx!xxxx|api-portal-xsuaa!bxxxx",
+    > 	"clientSecret": "xxxxxxxxxxxxxxxxxxxxxxx="
+    > }
+    > 
+    > ```
+
+-   You already have the APIPortal.Administrator role added to the service instance.
 
 
 
@@ -38,7 +40,7 @@ Create an instance of API portal, API Management service and fetch the service k
 4.  In *Destination Details* section, fill in all the required details according to the descriptions provided in the table.
 
     > ### Note:  
-    > Use the Client ID, Client Secret, and the Token Service URL from the Prerequisite section.
+    > Use the Client ID, Client Secret, and the Token Service URL from the **Prerequisite** section.
 
 
     <table>
@@ -62,7 +64,9 @@ Create an instance of API portal, API Management service and fetch the service k
     </td>
     <td valign="top">
     
-    Enter `TransportManagementService` as the destination name.
+    Enter `APIManagement` as the destination name.
+
+    This value is case-sensitive.
     
     </td>
     </tr>
@@ -86,7 +90,7 @@ Create an instance of API portal, API Management service and fetch the service k
     </td>
     <td valign="top">
     
-    Enter a brief description stating the purpose of creating a new destination in the *Description* field.
+    Enter a brief description stating the purpose of creating a new destination in the *Description* field. This field is optional.
     
     </td>
     </tr>
@@ -98,7 +102,9 @@ Create an instance of API portal, API Management service and fetch the service k
     </td>
     <td valign="top">
     
-    Provide the URL from the service key details of the SAP Cloud Transport Management service plan.
+    Provide the URL from the service key details and add the following sufix: `/api/1.0/transportmodule/Transport`.
+
+    The format is: `<url>/api/1.0/transportmodule/Transport`
     
     </td>
     </tr>
@@ -134,7 +140,7 @@ Create an instance of API portal, API Management service and fetch the service k
     </td>
     <td valign="top">
     
-    Provide the client ID from the service key details of the SAP Cloud Transport Management service plan.
+    Provide the value of the clientid field from the service key details.
     
     </td>
     </tr>
@@ -146,7 +152,7 @@ Create an instance of API portal, API Management service and fetch the service k
     </td>
     <td valign="top">
     
-    Enter the client secret.
+    Provide the value of the clientsecret field from the service key details.
     
     </td>
     </tr>
@@ -158,7 +164,7 @@ Create an instance of API portal, API Management service and fetch the service k
     </td>
     <td valign="top">
     
-    Navigate to the SAP Cloud Transport Management Service instance and copy the token service URL from the service key details and append `/oauth/token` to it.
+    Navigate to the API portal, API Management service instance and copy the token service URL from the service key details and append `/oauth/token` to it.
     
     </td>
     </tr>

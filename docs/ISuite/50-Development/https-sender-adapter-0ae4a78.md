@@ -60,6 +60,14 @@ The following HTTPS request headers for the sample HTTPS endpoint `https://test.
 
     For example, if the address in the channel is*/abcd/1234*, then *CamelServletContextPath* is */abcd/1234*.
 
+-   **CamelHttpPath**
+
+    Overrides the existing path set directly in the endpoint.
+
+    Refers to the dynamic part of the URL path of the integration flow endpoint.
+
+    For example, if you specify the endpoint address \(in the sender adapter\) as `/myEndpoint/*`, a sender system calls this integration flow using the address `/myEndpoint/abc/def`. In this case, header `CamelHttpPath` gets the value `abc/def`.
+
 
 > ### Note:  
 > -   Adapter tracing is supported for HTTPS adapter. For more information, see [Message Processing Log - Adapter Tracing](message-processing-log-adapter-tracing-a9db4ea.md).
@@ -178,7 +186,7 @@ Body Size \(in MB\)
 </td>
 <td valign="top">
 
-Define the allowable size limit for processing the message body.
+
 
 </td>
 </tr>

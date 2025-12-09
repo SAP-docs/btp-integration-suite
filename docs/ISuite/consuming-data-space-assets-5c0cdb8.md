@@ -7,7 +7,7 @@ In Data Space Integration, as a consumer, you want to consume data assets provid
 
 
 > ### Note:  
-> This section focuses on working with Data Space Integration as a **consumer**. If you're a provider who wants to create assets, policies, and contract definitions, see [Data Spaces - Providing Assets, Policies, and Contract Definitions](50-Development/data-spaces-providing-assets-policies-and-contract-definitions-079b342.md).
+> This section focuses on working with Data Space Integration as a **consumer**. If you're a provider who wants to create assets, policies, and contract definitions, see [Data Spaces](50-Development/data-spaces-079b342.md).
 
 
 
@@ -26,6 +26,9 @@ To consume assets, your user requires the `DataspaceConsumer` role collection. S
 In Data Space Integration, providers and consumers of assets can define data exchange via contract agreements in a sovereign and secure way. See [Concepts in Data Space Integration](concepts-in-data-space-integration-fcf96b2.md).
 
 If you want to consume assets provided by another member of a data space, you must do so under their conditions, or policies. The provider drafts an offer that can be checked publicly after publication through the provider's catalog. The consumer then needs to start the negotiations. If both agree, an agreement is formed between the two of them. You, as the consumer, can now consume the asset under the conditions you and the provider agreed upon.
+
+> ### Note:  
+> You can also use the integration package [Convenient Interaction with Data Space Integration](https://hub.sap.com/package/ConvenientInteractionwithDataSpaceIntegration/overview) to work with Data Space Integration. The integration flow included in the package allows you to negotiate a contract between data space participants, receive endpoint data references \(EDR\), and access the asset using the data plane of the data provider, or initiate the transfer process.
 
 
 

@@ -291,6 +291,18 @@ Example: `folder\subfolder1`
 <tr>
 <td valign="top">
 
+*Create Directories*
+
+</td>
+<td valign="top">
+
+Enable to create missing directories mentioned in *Directory*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *File Name*
 
 </td>

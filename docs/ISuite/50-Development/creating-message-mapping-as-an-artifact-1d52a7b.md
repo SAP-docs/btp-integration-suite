@@ -161,6 +161,9 @@ Use this option to upload a message mapping artifact stored on your computer. On
 
 6.  In the *Dependent Resources* tab, provide a name, ID, and an optional description for the message mapping artifact. You also see a list of dependent objects like function library, message type, archives, andWSDL files that are to be imported too. Choose *Next*.
 
+    > ### Note:  
+    > If the message mapping is unsupported because it uses JDBC or RFC lookup functions, etc. and you still wish to import the message mapping, choose *Import Selected Message Mapping* checkbox.
+
     1.  Optional: If there are dependent message type objects, choose *Import Message Types as WDSLs* to convert the message type objects as WSDL files during the import.
 
         > ### Note:  
@@ -171,6 +174,9 @@ Use this option to upload a message mapping artifact stored on your computer. On
 
 
 7.  Optional, only if the source message mapping object has dependent function library objects or imported archives objects: In the *Import Function Libraries* tab or *Imported Archives* tab, select one or more function libraries or imported archives artifacts, respectively, to contain all dependent objects of the source mapping object.
+
+    > ### Note:  
+    > If you wish to only list and import the supported function libraries, choose *Include Only Supported Function Libraries* checkbox.
 
     In SAP Integration Suite, a function library or imported archives object from the ES Repository must be imported to a function libraries artifact or an imported archives artifact, respectively. You can't add a function library or imported archives object directly to a message mapping or an integration package. See: [Working with Function Libraries](working-with-function-libraries-dd8c30d.md) and [Working with Imported Archives](working-with-imported-archives-e00e81d.md).
 

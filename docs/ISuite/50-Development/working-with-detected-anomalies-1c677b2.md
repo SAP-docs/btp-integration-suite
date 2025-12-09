@@ -40,7 +40,7 @@ You can see a list of detected anomalies based on the anomaly type. The detected
 
 Each anomaly is accompanied by the following details:
 
--   Type: Displays the anomaly type. The following table describes the possible anomaly types:
+-   *Type*: Displays the anomaly type. The following table describes the possible anomaly types:
 
 
     <table>
@@ -108,13 +108,13 @@ Each anomaly is accompanied by the following details:
     </tr>
     </table>
     
--   Time Stamp: Displays the date and time of the issue detection.
--   Affected Entity: Displays the name of the affected API. If there are multiple affected APIs, it will be shown as **Multiple APIs**.
--   Scope: Indicates whether the anomaly is detected at the system level or the API level.
+-   *Time Stamp*: Displays the date and time of the issue detection.
+-   *Affected Entity*: Displays the name of the affected API. If there are multiple affected APIs, it will be shown as **Multiple APIs**.
+-   *Scope*: Indicates whether the anomaly is detected at the system level or the API level.
     -   **System Level Anomaly**: System level anomaly detection for API calls monitors and analyzes unusual or abnormal behavior across all APIs collectively within the entire tenant, rather than focusing on individual APIs. This check is enabled by default in the backend.
     -   **API Level Anomaly**: API level anomaly checks focus on monitoring and analyzing specific APIs for unexpected or abnormal behavior. Unlike system level detection, API level checks require selecting the particular APIs to be monitored for anomalies.
 
--   Details: This field describes the issue detected by the system.
+-   *Details*: This field describes the issue detected by the system.
 
 Choose an anomaly to view more in-depth information on the next screen.
 
@@ -156,21 +156,34 @@ In this screen, you can view the anomaly type that describes the issue, along wi
 
 In this screen, you can access the following information:
 
--   Evaluation: Displays the status of an anomaly whether it has been evaluated or not. To evaluate, click on the *Evaluate* button.
+-   *Evaluation*: Displays the status of an anomaly whether it has been evaluated or not. To evaluate, click on the *Evaluate* button.
 
--   API Anomaly Type: A red arrow is displayed to indicate a surge or drop, depending on the anomaly type. The possible anomaly types include API Traffic \(Increase or Decrease\), API Response Time \(Increase\), or API Error Count Increase \(client or server errors\).
--   Description: Displays the observed percentage variation.
--   Time Stamp: Displays the date and time of issue detection.
--   Details:
-    -   API\(s\) causing this anomaly: Lists the names of the APIs responsible for the anomaly.
+-   *API Anomaly Type*: A red arrow is displayed to indicate a surge or drop, depending on the anomaly type. The possible anomaly types include API Traffic \(Increase or Decrease\), API Response Time \(Increase\), or API Error Count Increase \(client or server errors\).
+-   *Description*: Displays the observed percentage variation.
+-   *Time Stamp*: Displays the date and time of issue detection.
+-   *Overview*:
+    -   *API\(s\) causing this anomaly*: Lists the names of the APIs responsible for the anomaly.
 
-    -   Associated Target: Lists the name of the affected target host.
-    -   Associated Developers: Lists the names of the developers.
+    -   *Associated Target*: Lists the name of the affected target host.
+    -   *Associated Developers*: Lists the names of the developers.
+    -   *Associated Subscriptions for Applications*: Lists the names of the subscribed applications.
+    -   *Associated Subscriptions for Agents*: Lists the names of the subscribed agents.
 
--   Suggestions: In this tab, you can view suggestions to help resolve the anomaly. Choose *View APIs* to be redirected to the *Configure* \> *APIs* page, where you can review the API that is causing the anomaly and conduct further investigation to resolve it.
+-   *Intelligent Recommendations*: Displays AI-generated insights derived from system analysis of your API monitoring data to help identify the root cause of the detected anomalies and suggest corrective actions.
+    -   *Insights*: Provides a deeper analysis of abnormal API traffic behavior, the system state at the time of occurrence, and the potential impact of the anomaly on API performance or stability.
+    -   *Causes*: Identifies the potential factors that may have triggered the anomaly by analyzing API usage trends, traffic fluctuations, and system conditions.
+    -   *Recommendations*: Provides actionable steps or configuration changes that might help mitigate the issue, optimize API performance, and implement preventive measures to avoid similar occurrences in the future.
+
 
 > ### Note:  
-> Anomaly Detection is an AI-based feature, and there is a possibility of receiving inaccurate responses. If you encounter any discrepancies, please share your valuable feedback by clicking on the <span class="SAP-icons-V5"></span> \(**Give feedback**\) icon.
+> *Intelligent Recommendations* is available under a free and fair usage model. You can generate a limited number of intelligent recommendations per tenant each calendar month until June 30, 2026. The number of generative AI transactions \(token quota\) varies based on the anomalies identified in your tenant, and the exact token quota limit cannot be determined in advance.
+> 
+> You can also provide feedback on each generated insight, cause, and recommendation by selecting the :thumbsup: or :thumbsdown: option. This feedback helps improve the quality and relevance of your intelligent recommendations.
+
+> ### Caution:  
+> *Anomaly Detection,* including the *Intelligent Recommendations* feature, is an AI-based capability, and may occasionally produce inaccurate results. SAP does not assume responsibility for the quality or accuracy of the output produced by the underlying generative AI models, including, but not limited to, potential bias, hallucinations, or incorrect information.
+> 
+> Users are responsible for verifying the generated content before use. If you encounter any discrepancies, please share your feedback by clicking on the <span class="SAP-icons-V5"></span> \(**Give feedback**\) icon.
 
 
 
@@ -227,7 +240,7 @@ Choose <span class="SAP-icons-V5"></span> or <span class="SAP-icons-V5"></
 **Related Information**  
 
 
-[Enabling Anomaly Detection and Predictions](enabling-anomaly-detection-and-predictions-98534a0.md "Activate the anomaly detection and prediction features for API calls to enhance monitoring and forecasting capabilities.")
+[Enabling Anomaly Detection, Intelligent Recommendations, and API Call Predictions](enabling-anomaly-detection-intelligent-recommendations-and-api-call-predictions-98534a0.md "Activate anomaly detection, intelligent recommendations, and API call prediction to enhance monitoring and forecasting capabilities for API calls.")
 
 [Configuring APIs for Anomaly Detection](configuring-apis-for-anomaly-detection-9e7e5d1.md "View or configure APIs for anomaly detection.")
 

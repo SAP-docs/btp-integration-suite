@@ -32,7 +32,7 @@ For more information, see [Configure OAuth Identity Provider in SAP Sales Cloud]
 
 Create an *OAuth2SAMLBearerAssertion* HTTP destination and configure its settings as follows:
 
-1.  Go to SAP BTP cockpit*Connectivity* \> *Destinations* and choose *New Destination*. Enter the following:
+1.  Go to SAP BTP cockpit *Connectivity* \> *Destinations* and choose *Create* \> *From Scratch* \> *Create*. Enter the following:
 
 
     <table>
@@ -365,7 +365,7 @@ As the SAP BTP administrator, you must create and configure an HTTP destination 
 
 Create a *BasicAuthentication* HTTP destination and configure its settings as follows:
 
-1.  Go to SAP BTP cockpit*Connectivity* \> *Destinations* and choose *New Destination*. Enter the following:
+1.  Go to SAP BTP cockpit *Connectivity* \> *Destinations* and choose *Create* \> *From Scratch* \> *Create*. Enter the following:
 
 
     <table>

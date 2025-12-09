@@ -96,6 +96,25 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     <tr>
     <td valign="top">
     
+    Grant Type
+    
+    </td>
+    <td valign="top">
+    
+    Allows you to use grant type as one of the following.
+
+    -   *Send as part of URL*: This includes grant type as part of the URL and is set by default for credentials that are already deployed or existing.
+
+    -   *Send as part of body*: This includes grant type in the request body sent to the token authentication server.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Client ID
     
     </td>

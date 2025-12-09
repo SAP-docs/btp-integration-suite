@@ -23,7 +23,7 @@ Learn how to activate the Data Space Integration capability within SAP Integrati
 
 3.  In the *Capabilities* section, choose *Manage Capabilities* or *Add Capabilities*.
 
-4.  In the *Select Capabilities* step, select *Connect within Data Spaces*. Choose *Next*.
+4.  In the *Select Capabilities* step, select *Exchange Data within Data Spaces*. Choose *Next*.
 
     A list of the capabilities that can be activated is displayed.
 

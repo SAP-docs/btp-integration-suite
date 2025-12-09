@@ -85,6 +85,8 @@ URL of the SuccessFactors data center that you want to connect to. You can brows
 
 You can also dynamically define the address using a header or property in the message exchange.
 
+You can edit and add the URL. For information on SuccessFactors URL list, see [List of SAP SuccessFactors API Servers](https://help.sap.com/docs/successfactors-platform/sap-successfactors-api-reference-guide-odata-v2/list-of-sap-successfactors-api-servers?version=2505)
+
 </td>
 </tr>
 <tr>
@@ -396,7 +398,5 @@ To use *Process in Pages*, you must use the adapter in a *Local Integration Proc
 > 
 > 2.  X-SF-Client-Tenant-Id: Client/Tenant ID
 > 
-> 3.  X-SF-Process-Name: iFlow Name
-> 
-> 4.  X-Agent-Name: SAP Cloud Integration
+> 3.  4.  X-Agent-Name: SAP Cloud Integration
 

@@ -58,7 +58,7 @@ K8sContainerLimits
 </td>
 <td valign="top">
 
-edc, edge-api, edge-event-controller, esac, mdc, policyengine, solops, ssb-operator-manager, ssb-solace, worker
+edc, edge-api, edge-event-controller, esac, mdc, policyengine, messsage service operations, ssb-operator-manager, ssb-solace, worker
 
 internal: postgres, redis
 
@@ -83,7 +83,7 @@ K8sContainerRatios
 </td>
 <td valign="top">
 
-edc, edge-api, edge-event-controller, ela-server, esac, mdc, policyengine, solops, ssb-operator-manager, ssb-solace, worker
+edc, edge-api, edge-event-controller, ela-server, esac, mdc, policyengine, messsage service operations, ssb-operator-manager, ssb-solace, worker
 
 istio-init, istio-proxy
 
@@ -159,7 +159,7 @@ K8sPSPAutomountServiceAccountTokenPod
 </td>
 <td valign="top">
 
-edc, edge-api, ela-server, solops, ssb-operator-manager, ssb-solace
+edc, edge-api, ela-server, messsage service operations, ssb-operator-manager, ssb-solace
 
 </td>
 <td valign="top">

@@ -4,7 +4,7 @@
 
 # Simulating a Message Implementation Guideline
 
-This chapter shows you how to simulate a message implementation guideline.
+Learn how to simulate a message implementation guideline.
 
 1.  Open your message implementation guideline and navigate to the *Structure* tab.
 
@@ -35,7 +35,7 @@ This chapter shows you how to simulate a message implementation guideline.
 
 <a name="loio42b45c56d36245c991598718f488da11__section_ikh_cbb_gqb"/>
 
-## How does Simulation work
+## How Does Simulation Work?
 
 
 
@@ -75,7 +75,9 @@ The data corresponding to each leaf node is fetched in the following order:
 
 4.  *Dummy Value*
 
-    If none of the above are defined for the node, then a dummy value gets generated for the node based on the node identifier.
+    If none of the above values are defined for the node, a dummy value is generated.
+
+    For **text** nodes, the dummy value is based on the node identifier. For nodes containing **numbers**, like integers or decimals, a fitting number is produced. And for nodes containing **date or time information**, an appropriate date or time value is produced if the required format is known.
 
 
 
@@ -88,6 +90,4 @@ The payload data should be uploaded in the XML or a flat file \(EDI text files s
 
 > ### Note:  
 > -   The payload file should not have any qualifiers added to it. MIG simulation converts your payload file automatically into the ICA format including those qualifiers.
-
-
 

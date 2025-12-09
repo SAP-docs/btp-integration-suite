@@ -70,3 +70,5 @@ After deploying the API artifact, you can check the runtime logs and the status 
 
 [Externalize Parameter for API Artifact](externalize-parameter-for-api-artifact-ce0a468.md "You can use the externalization feature to define API policies and integration flows that can retrieve externalized configuration values during runtime. These parameters can be utilized later without modifying the standard API artifact.")
 
+[Design Guidelines for API Artifact](design-guidelines-for-api-artifact-7e704f7.md "A set of best practices to ensure that APIs are designed for consistency, scalability, security, and ease of maintenance within SAP Integration Suite.")
+

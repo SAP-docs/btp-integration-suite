@@ -165,7 +165,11 @@ The type of proxy that you are using to connect to the target system.
 
 -   Select *On-Premise* if you are connecting to an on-premise system.
 
-    See [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
+    For more informaiton, see [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md)
+
+-   Select *Manual* to manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry field\).
+
+    This option is only available if *Edge* has been selected as runtime.
 
 
 

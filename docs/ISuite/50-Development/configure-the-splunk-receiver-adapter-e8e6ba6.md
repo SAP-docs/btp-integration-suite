@@ -520,7 +520,7 @@ Value of the property.
 
 You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}`.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>

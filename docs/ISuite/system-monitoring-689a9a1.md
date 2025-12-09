@@ -1506,7 +1506,7 @@ The analysis of Message Service's load/traffic
 <tr>
 <td valign="top">
 
-Deployed Artifacts Count
+**Deployed Artifacts Count**
 
 </td>
 <td valign="top">
@@ -1518,7 +1518,7 @@ The number of artifacts deployed. The count is divided by ARTIFACT\_TYPE.
 <tr>
 <td valign="top">
 
-Snapshot Failure Count
+**Snapshot Failure Count**
 
 </td>
 <td valign="top">
@@ -1530,7 +1530,7 @@ The number of snapshot failures. This includes an aggregated count of generation
 <tr>
 <td valign="top">
 
-Runtime Communication Failure Count
+**Runtime Communication Failure Count**
 
 </td>
 <td valign="top">
@@ -1542,7 +1542,7 @@ The number of communication failures from EDC to runtime. The count is divided b
 <tr>
 <td valign="top">
 
-Object Store Connectivity
+**Object Store Connectivity**
 
 </td>
 <td valign="top">
@@ -1560,19 +1560,19 @@ The status of the connection between EDC and the object store.
 <tr>
 <th valign="top">
 
-Metric
+**Metric**
 
 </th>
 <th valign="top">
 
-Description
+**Description**
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-Database Connections
+**Database Connections**
 
 </td>
 <td valign="top">
@@ -1584,7 +1584,7 @@ The number of maximum, idle, and used connections in the same panel.
 <tr>
 <td valign="top">
 
-Waiting Connections
+**Waiting Connections**
 
 </td>
 <td valign="top">
@@ -1602,24 +1602,359 @@ The number of waiting connections.
 <tr>
 <th valign="top">
 
-Metric
+**Metric**
 
 </th>
 <th valign="top">
 
-Description
+**Description**
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-Message Service Connectivity
+**Message Service Connectivity**
 
 </td>
 <td valign="top">
 
 The status of the connection between EDC and Message Service.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio689a9a126580475c9d0b810a813a60d6__section_xzb_h2n_3hc"/>
+
+## Audit Log
+
+**Audit Log Agent Metrics**
+
+
+<table>
+<tr>
+<th valign="top">
+
+**Metric**
+
+</th>
+<th valign="top">
+
+**Unit**
+
+</th>
+<th valign="top">
+
+**Description**
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+**CPU Usage**
+
+</td>
+<td valign="top">
+
+Fraction
+
+</td>
+<td valign="top">
+
+Proportion of CPU resources that the Java process currently uses. A value of 0.0 means no usage, and a value of 1.0 means full usage of a single core. Values greater than 1.0 can occur on multi-core systems. Sustained high usage indicates performance issues or resource bottlenecks.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Memory Usage**
+
+</td>
+<td valign="top">
+
+Bytes
+
+</td>
+<td valign="top">
+
+Total memory \(heap + non-heap\) currently used by the JVM process. High or growing usage indicates memory leaks, excessive object retention, or insufficient heap configuration.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Garbage Collection \(GC\) Pause Time**
+
+</td>
+<td valign="top">
+
+Seconds
+
+</td>
+<td valign="top">
+
+Maximum pause time caused by garbage collection events since the last measurement. Long pauses increase application latency and affect performance.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Messages By Topic**
+
+</td>
+<td valign="top">
+
+Number of messages
+
+</td>
+<td valign="top">
+
+Current number of messages waiting in each queue topic and pending re-encryption. Use this metric to identify topic backlogs, processing delays, and to make sure that all messages comply with the encryption policy.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Processed Messages Rate**
+
+</td>
+<td valign="top">
+
+Messages per second
+
+</td>
+<td valign="top">
+
+Per-second rate of successfully processed, rate-limited, and failed export messages over 5 minutes. Use this metric to monitor export pipeline health, detect bottlenecks, failures, and throttling events.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Server Requests Rate**
+
+</td>
+<td valign="top">
+
+Requests per second
+
+</td>
+<td valign="top">
+
+Per-second rate of successful and unsuccessful HTTP server requests over 5 minutes. Use this metric to assess server health, client experience and to detect performance degradation or errors.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Client Requests Rate**
+
+</td>
+<td valign="top">
+
+Requests per second
+
+</td>
+<td valign="top">
+
+Per-second rate of successful and unsuccessful HTTP client requests over 5 minutes. Use this metric to monitor reliability of external service calls and detect connectivity issues.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Server Response Average Latency**
+
+</td>
+<td valign="top">
+
+Seconds \(average per request\)
+
+</td>
+<td valign="top">
+
+Average time to serve HTTP requests, grouped by URL \(excluding requests to /actuator/prometheus\). Use this metric to identify slow endpoints, performance bottlenecks, and user experience issues.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Server Requests Per Sec \[1m\]**
+
+</td>
+<td valign="top">
+
+Seconds
+
+</td>
+<td valign="top">
+
+Per-second rate of HTTP requests over one minute, grouped by URL. Use this metric to detect spikes or drops and to identify heavily used endpoints.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Client Requests Average Latency**
+
+</td>
+<td valign="top">
+
+Seconds \(average per request\)
+
+</td>
+<td valign="top">
+
+Average response time for outgoing HTTP client requests, grouped by URL. Use this metric to identify slow dependencies, external service issues, and network bottlenecks.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Client Requests Per Sec \[1m\]**
+
+</td>
+<td valign="top">
+
+Requests per second
+
+</td>
+<td valign="top">
+
+Per-second rate of outgoing HTTP client requests over one minute, grouped by URL. Use this metric to understand external service usage patterns and optimize API call frequency.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Server P99 Response Latency \[5m\]**
+
+</td>
+<td valign="top">
+
+Seconds \(P99 latency\)
+
+</td>
+<td valign="top">
+
+The 99th percentile response latency for incoming HTTP requests over five minutes, grouped by URL. Use this metric to detect tail performance issues that affect the slowest one percent of requests.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Server P95 Response Latency \[5m\]**
+
+</td>
+<td valign="top">
+
+Seconds \(P95 latency\)
+
+</td>
+<td valign="top">
+
+The 95th percentile response latency for incoming HTTP requests over five minutes, grouped by URL. Use this metric to monitor high-percentile performance that affects five percent of requests.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Client P99 Request Latency \[5m\]**
+
+</td>
+<td valign="top">
+
+Seconds \(P99 latency\)
+
+</td>
+<td valign="top">
+
+The 99th percentile latency for outgoing HTTP client requests over 5 minutes, grouped by URL. Use this metric to detect network bottlenecks and extreme latency spikes in external calls.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Client P95 Request Latency \[5m\]**
+
+</td>
+<td valign="top">
+
+Seconds \(P95 latency\)
+
+</td>
+<td valign="top">
+
+The 95th percentile latency of outgoing HTTP client requests over 5 minutes, grouped by URL. use this metric to detect performance degradation affecting a significant portion of client calls.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**P99 Message Processing Duration \[5m\]**
+
+</td>
+<td valign="top">
+
+Seconds \(P99 duration\)
+
+</td>
+<td valign="top">
+
+The 99th percentile processing duration for messages that take more than five minutes, grouped by category. Use this metric to identify rare but critical performance bottlenecks in message processing.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**P95 Total Message Processing Duration \[5m\]**
+
+</td>
+<td valign="top">
+
+Seconds \(P95 duration\)
+
+</td>
+<td valign="top">
+
+The 95th percentile of message processing duration over five minutes, grouped by category. Use this metric to monitor typical upper-bound processing times without including extreme outliers.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Queue Operations Latency**
+
+</td>
+<td valign="top">
+
+Seconds \(max. duration\)
+
+</td>
+<td valign="top">
+
+The maximum latency for various queue operations \(poll, ack, nack, deadletter, requeue, reencryption polling\). Use this metric to detect performance bottlenecks leading to processing delays, message buildup, or system instability.
 
 </td>
 </tr>

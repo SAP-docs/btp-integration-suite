@@ -100,6 +100,8 @@ URL of the SuccessFactors data center that you're connecting to.
 
 You can browse and select a SuccessFactors data center URL by using the *Select* option.
 
+You can edit and add the URL. For information on SuccessFactors URL list, see [List of SAP SuccessFactors API Servers](https://help.sap.com/docs/successfactors-platform/sap-successfactors-api-reference-guide-odata-v2/list-of-sap-successfactors-api-servers?version=2505)
+
 </td>
 </tr>
 <tr>

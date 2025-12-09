@@ -2,24 +2,68 @@
 
 # API Lifecycle
 
-The API lifecycle, starts from API planning, creation and implementation by company developers and other API creators and composers, to the consumption of these APIs by other employees, partners or users of the company’s products and services.
+The API lifecycle in API Management encompasses a series of well-defined stages that enable organizations to securely expose, manage, consume, and analyze APIs. SAP provides a comprehensive platform for managing APIs throughout their lifecycle—from design and deployment to monetization and analysis.
 
-API Management in SAP Integration Suite is used to discover, shape, compose, integrate, manage, and secure APIs in the entire landscape. APIs are ultimately published in the form of a catalog \(developer portal\), and exposed for consumption by developers, who develop multi-experience applications
+API Management in SAP Integration Suite is used to discover, shape, compose, integrate, manage, and secure APIs in the entire landscape. APIs are ultimately published in the form of a catalog \(developer portal\), and exposed for consumption by developers, who develop multi-experience applications. Below are the key stages of the API lifecycle in SAP API Management:
 
 ![](images/API_Lifecycle_b3ecd4a.png)
 
-**Related Information**  
+1.  **Build API Proxies**
 
+    As the API admin, your first step is to create API proxies that securely expose backend services to external or internal consumers. You define how APIs are presented, configure routing to the backend, and apply essential policies for:
 
-[Build API Proxies](50-Development/build-api-proxies-74c042b.md "SAP Integration Suite provides a common platform for API designers to define and publish APIs. Every SAP Integration Suite customer is provided with their own SAP Integration Suite application on cloud. The SAP Integration Suite offers capabilities to configure systems, build and publish APIs, analyze and test APIs.")
+    -   Security \(OAuth, API Key, JWT validation\)
+    -   Traffic control \(quotas, rate limiting\)
 
-[Test API Proxies](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of the API proxies.") :arrow_upper_right:
+    This layer decouples the backend systems from the consumers and gives you the control needed for governance and standardization. See, [Build API Proxies](50-Development/build-api-proxies-74c042b.md).
 
-[Publish API Proxies](50-Development/publish-api-proxies-75a4a11.md "To make your API consumable by external application developers, it is necessary to publish API proxies. Publishing allows you to expose the API proxies in a structured manner, presenting them as a product. To publish API proxies effectively, it is important to understand how to bundle them together and present them as a cohesive product.")
+2.  **Test API Proxies**
 
-[Monetize APIs](50-Development/monetize-apis-fcdc89b.md "SAP Integration Suite provides monetization feature to all API providers to generate revenue for using the APIs.")
+    Before APIs go live, it's your responsibility to test the API proxies to validate their behavior and enforce the applied policies. Using the built-in testing tools, you:
 
-[Consume APIs](50-Development/consume-apis-ea561e4.md "You can consume APIs via Developer Hub. In Developer Hub, an application developer registers, explores the APIs exposed by customers, creates applications, and tests API proxies.")
+    -   Simulate API calls and examine responses
+    -   Verify authentication mechanisms
+    -   Ensure policy execution behaves as expected
 
-[Analyze API Proxies](50-Development/analyze-api-proxies-7712c61.md "Use the capabilities of API Analytics to analyze API proxy usage and performance.")
+    This phase is crucial to prevent downstream issues and ensure APIs meet SLA and security standards. See, [Test API Proxies](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/3ba6151391bc474b9f1fa69455f65e3b.html "Use the API Test Console to test the runtime behavior of the API proxies.") :arrow_upper_right:.
+
+3.  **Publish API Proxies**
+
+    Once tested, you publish the API proxies to the Developer Hub. As the admin, you decide:
+
+    -   Which APIs are exposed
+    -   Which developer roles or groups can access them
+
+    This is also where you group APIs into API Products and define access tiers, laying the foundation for usage control and monetization. See, [Publish API Proxies](50-Development/publish-api-proxies-75a4a11.md).
+
+4.  **Monetize APIs**
+
+    If your organization supports API monetization, you configure usage plans, rate limits, and pricing models. As an API admin, your tasks include:
+
+    -   Create a rate plan
+    -   Link the rate plan to specific API products to control and monetize access
+    -   Monitor consumption and billing data per developer/application for transparency and reporting
+
+    See, [Monetize APIs](50-Development/monetize-apis-fcdc89b.md).
+
+5.  **Consume APIs**
+
+    You support and manage the environment where developers and partners consume APIs. Your responsibilities here include:
+
+    -   Managing developer onboarding via the Developer Hub
+    -   Approving application registrations and access requests
+    -   Ensure that consumers have a smooth experience while maintaining security and governance over who can access what
+
+    See, [Consume APIs](50-Development/consume-apis-ea561e4.md).
+
+6.  **Analyze API Proxies**
+
+    Finally, you monitor API usage using analytics and reporting tools. This is key to maintaining quality and ensuring business alignment. You track:
+
+    -   API performance \(latency, error rates\)
+    -   Usage metrics \(top APIs, consumers, regions\)
+    -   Identify anomalies
+
+    See, [Analyze API Proxies](50-Development/analyze-api-proxies-7712c61.md).
+
 

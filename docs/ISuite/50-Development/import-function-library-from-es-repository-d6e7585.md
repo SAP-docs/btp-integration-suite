@@ -46,9 +46,6 @@ There are certain limitations while importing and consuming the function library
 
 5.  Choose a function library object of your choice and choose *Select*.
 
-    > ### Note:  
-    > You can't import functional library with parameter type Adapter/Channel Type.
-
     The selected function library object gets imported to the resource pane.
 
 6.  Choose the imported object.

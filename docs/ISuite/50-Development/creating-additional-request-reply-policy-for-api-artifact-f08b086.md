@@ -142,7 +142,7 @@ By default, only one request reply policy is created when you create an API arti
     > 
     > Adapters that can be used with additional request reply is:
     > 
-    > -   HTTP — For more information, see [HTTP Receiver Adapter](http-receiver-adapter-2da452e.md)
+    > -   HTTP — For more information, see [HTTP Receiver Adapter](https://help.sap.com/docs/integration-suite/sap-integration-suite/http-receiver-adapter?version=CLOUD).
 
     > ### Note:  
     > By default, headers present in the pipeline before the additional request reply policy are not propagated to the external callout.

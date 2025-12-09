@@ -102,12 +102,13 @@ A namespace must:
 
 -   be unique within a subaccount
 -   contain exactly 3 segments, for example, a/b/c
--   follow the construction rule <region\>/<applicationNamespace\>/<instanceId\>. The following values are recommended:
-    -   Region: default
-    -   Application namespace: <vendor.<application\>\>, for example, `mycompany.myapp.mysubapp` without the top-level domain, in sap.com remove the .com.
-    -   Instance ID: a fixed number, for example, default/sap.myapp/1. For multiple instances or message clients of the same type, use <region\>/<applicationNamespace\>/\*
-
 -   be prefixed for each queue name handled by the message client.
+
+We recommend using this construction rule: <region\>/<applicationNamespace\>/<instanceId\>. The following values are recommended:
+
+-   Region: default
+-   Application namespace: <vendor.<application\>\>, for example, `mycompany.myapp.mysubapp` without the top-level domain. For instance in sap.com remove the .com.
+-   Instance ID: a fixed number, for example, default/sap.myapp/1. For multiple instances or message clients of the same type, use <region\>/<applicationNamespace\>/\*
 
 
 

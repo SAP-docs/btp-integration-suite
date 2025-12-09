@@ -133,7 +133,7 @@ You can watch a short video about activating capabilities, and getting access to
     *Manage Business Events*
 
     > ### Remember:  
-    > If you're an exisitng customer of the standalone SAP Event Mesh service \(default plan\), you can't subscribe to the Event Mesh capability in the same subaccount. In such cases, you must subscribe to SAP Integration Suite in a different subaccount.
+    > If you're an existing customer of the standalone SAP Event Mesh service \(default plan\) or if you've subscribed to SAP S/4HANA Cloud Extensibility service, you can't subscribe to the Event Mesh capability in the same subaccount. In such cases, you must subscribe to SAP Integration Suite in a different subaccount.
 
 
     

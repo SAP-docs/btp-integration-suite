@@ -57,7 +57,7 @@ As the SAP BTP administrator, you need to create an HTTP destination to be able 
 
 1.  In the SAP BTP cockpit, go to your subaccount in the SAP BTP, Cloud Foundry environment.
 2.  Choose *Connectivity* \> *Destinations*.
-3.  Choose *New Destination* and fill in the following parameters:
+3.  Choose *Create* \> *From Scratch* \> *Create* and fill in the following parameters:
 
 
     <table>

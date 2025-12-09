@@ -147,6 +147,17 @@ To keep the load on the network manageable, we therefore recommend that you use 
 -   Note that when you use the OData API, you navigate to MessageStore entities starting from the MessageProcessingLog entity. Apply filter options to the MessageProcessingLog rather than the MessageStore entities.
 
 
+> ### Note:  
+> The DataStore and Variables APIs do not support the following query options:
+> 
+> -   -   `$filter`
+> -   `$inlinecount`
+> -   `$orderby`
+> -   `$skip`
+> -   `$top`
+> -   `$expand`
+> -   `$select`
+
 **Related Information**  
 
 

@@ -21,6 +21,8 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 > -   EDI Splitter version 1.9 and above supports LS/LE segments.
 > -   Using the EDI Splitter in combination with the Gather, Join, or Aggregator steps in the integration flow is not supported.
 > -   EDI Splitter version 2.0 and above supports the TRADACOMS standard \(*TRADACOMS* tab; available only for dedicated service plans, see [2903776](https://me.sap.com/notes/2903776)\).
+> 
+> -   For EDI Splitter version 2.9 and above, you can use the same XSDs in your SAP Integration Suite tenant as in your SAP Process Integration and SAP Process Orchestration system.
 
 ![](images/EDI_Splitter_e5180a1.png)
 
@@ -245,19 +247,34 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
     3.  Choose *Select*, to add a file from the XSD folder found in the same integration project.
 
-        > ### Note:  
-        > During runtime only XSD’s from Integration Advisor \(IA\) are supported.
+
+    -   You can add XSD files to the integration flow. For more details, please refer to [Validating Message Payload against XML Schema](validating-message-payload-against-xml-schema-360dc70.md).
+
+    -   The file name must have the following format:
+
+        -   SAP Process Integration/SAP Process Orchestration XSDs:
+
+            -   EDIFACT: `<MessageType><MessageRelease>.xsd`
+
+                -   Example: `DESADV96A.xsd (MessageType = DESADV, Release = 96A)`
 
 
-    The file name of the xml schema for **EDI** payloads should have the following format:
 
-    -   EDIFACT: `UN-EDIFACT_ORDERS_D96A.xsd`
+        -   Integration Advisor XSDs:
 
-    -   ODETTE: `ODETTE_ORDERR_2.xsd`
+            -   EDIFACT: `UN-EDIFACT_<MessageType>_<Version>.xsd`
 
-    -   ODETTE EDIFACT: `UN-EDIFACT_ORDERS_D96A_A18051.xsd`
+                Example: `UN-EDIFACT_ORDERS_D96A.xsd`
 
-    -   EANCOM: `UN-EDIFACT_ORDERS_D96A_EAN008.xsd`
+            -   ODETTE: `ODETTE_<MessageType>_<Version>.xsd`
+
+                Example:`ODETTE_ORDERR_2.xsd`
+
+            -   ODETTE EDIFACT: `UN-EDIFACT_<MessageType>_<Version>_<Other>.xsd`
+
+                Example: `UN-EDIFACT_ORDERS_D96A_A18051.xsd`
+
+
 
 
     You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_SCHEMA_SOURCE`. The values for the headers can be one of the following:

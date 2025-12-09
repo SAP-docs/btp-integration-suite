@@ -4,7 +4,7 @@
 
 # Consume API Management Service Instance from Kyma
 
-Kyma environment provides a fully managed Kubernetes runtime based on the open-source project "Kyma". You can use the Kyma environment to search and discover API Portal and API business hub enterprise applications.
+Kyma environment provides a fully managed Kubernetes runtime based on the open-source project "Kyma". You can use the Kyma environment to search and discover API Portal andDeveloper Hub applications.
 
 
 
@@ -12,12 +12,12 @@ Kyma environment provides a fully managed Kubernetes runtime based on the open-s
 
 ## Prerequisites
 
--   You already have a subaccount and have the required entitlements for *API Management, API Portal* and *API Management, API Business Hub Enterprise*.
+-   You already have a subaccount and have the required entitlements for *API Management, API Portal* and *API Management, Developer Hub*Developer Hub.
 
--   You’ve subscribed to *Integration Suite*, and have enabled *API Management, API Portal* and *API business hub enterprise* capability.
+-   You’ve subscribed to *Integration Suite*, and have enabled *API Management, API Portal* and **Developer Hub** capability.
 
     > ### Note:  
-    > If you’re using the API Management stand-alone service, ensure that you’ve already subscribed to API Management, API portal and API business hub enterprise.
+    > If you’re using the API Management stand-alone service, ensure that you’ve already subscribed to API Management, API portal and Developer Hub.
 
 -   Ensure that the Kyma environment has already been enabled. For more information, see [Getting Started in the Kyma Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/getting-started-in-kyma-environment?version=Cloud).
 
@@ -29,7 +29,7 @@ Kyma environment provides a fully managed Kubernetes runtime based on the open-s
 
 **Discover and Consume API Management Service Instance from Kyma**
 
-Before creating the service key, the **API Management, API Portal** and the **API Management, API Business Hub Enterprise** cluster services must be provisioned in the default namespace.
+Before creating the service key, the **API Management, API Portal** and the **API Management, Developer Hub** cluster services must be provisioned in the default namespace.
 
 1.  Log on to SAP BTP Cockpit.
 
@@ -43,20 +43,20 @@ Before creating the service key, the **API Management, API Portal** and the **AP
 
     -   *Name*: Provide a name or generate it by choosing :arrows_clockwise:
 
-    -   *Offering Name*: You can find the SAP BTP service offering name in the*Service Marketplace* of the SAP BTP cockpit. Search for the API Management, API Portal/ API Management, API business hub enterprise service and copy the name of the service instance.
+    -   *Offering Name*: You can find the SAP BTP service offering name in the*Service Marketplace* of the SAP BTP cockpit. Search for the API Management, API Portal/ API Management, Developer Hub service and copy the name of the service instance.
 
-    -   *Plan Name*: Similarly, you can find the relevant plan for the respective API Management, API Portal/ API Management, API business hub enterprise services in the*Service Marketplace* of the SAP BTP cockpit.
+    -   *Plan Name*: Similarly, you can find the relevant plan for the respective API Management, API Portal/ API Management,Developer Hub services in the*Service Marketplace* of the SAP BTP cockpit.
 
 
 6.  Choose *Advance* tab on the *Create Service Instance* dialog and expand *Instance Parameters*.
 
     To create an instance of *API Management, API Portal*, enter `role` as the key in the first textbox and `APIPortal.Administrator` as the value in the second textbox.
 
-    Similarly, to create an instance of *API Management, API Business Hub Enterprise*, enter `role` in the first textbox and `AuthGroup.API.Admin` in the second textbox.
+    Similarly, to create an instance of *API Management, Developer Hub*, enter `role` in the first textbox and `AuthGroup.API.Admin` in the second textbox.
 
 7.  Choose *Create*.
 
-    You're directed to the *Service Management* \> *Instances* page, where an instance of the newly provisioned *API Management, API Portal* or *API Management, API Business Hub Enterprise* service appears.
+    You're directed to the *Service Management* \> *Instances* page, where an instance of the newly provisioned *API Management, API Portal* or *API Management, Developer Hub* service appears.
 
 
 

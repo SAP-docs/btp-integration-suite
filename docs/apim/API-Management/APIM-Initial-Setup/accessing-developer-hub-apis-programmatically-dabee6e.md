@@ -31,33 +31,10 @@ This topic explains how to enable API access for Developer Hub.
 
 <a name="loiodabee6e347f645a6805ec5b29f5d578c__section_mvm_2bw_m2c"/>
 
-## Accessing the SAP Authorization and Trust Management service \(XSUAA\) APIs
+## Providing SAP Authorization and Trust Management service \(XSUAA\) to Developer Hub
 
--   To get access to the APIs of the SAP Authorization and Trust Management service, see [Get Access to the APIs](https://help.sap.com/docs/btp/sap-business-technology-platform/get-access-to-apis).
--   Create a XSUAA service instance:
-
-    1.  In your web browser, open the *SAP BTP Cockpit* - [https://account.hana.ondemand.com/cockpit](https://account.hana.ondemand.com/cockpit).
-    2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
-    3.  Choose *Authorization & Trust Management \(xsuaa \)*.
-    4.  Choose *Instances* \> *New Instance*.
-    5.  In *Create Instance* dialog that opens, select *Authorization & Trust Management Service,* choose *apiaccess* plan, provide an instance name, and choose *Next*.
-    6.  Choose *Create.*
-
--   Create the service key by executing the following steps:
-
-    1.  Choose the service instance that you created above.
-
-    2.  In the left-hand pane, navigate to *Service Keys* \> *Create Service Key*.
-    3.  In the *Create Service Key* dialog that opens, provide a name.
-    4.  Click *Save*.
-
-        The client credentials like url, clientId, and clientSecret details appear for the given service key.
-
-        > ### Note:  
-        > Use this service key to create the destination as mentioned below.
-
-
--   Create a destination of type `OAuth2Credentials` for the XSUAA APIs using the credentials obtained from the service key you generated. This is required to access the XSUAA APIs for authorization and trust mangement services.
+1.  To get access to the APIs of the SAP Authorization and Trust Management service, see [Get Access to the APIs](https://help.sap.com/docs/btp/sap-business-technology-platform/get-access-to-apis).
+2.  Create a destination of type `OAuth2Credentials` for the XSUAA APIs using the credentials obtained from the previous step. This is required to access the XSUAA APIs for authorization and trust mangement services.
     1.  From your *Subaccount*, navigate to *Connectivity* \> *Destinations* \> *New Destination*.
     2.  Choose the service instance that you created above.
     3.  In the *Destination Configuration* window, provide the details.
@@ -68,25 +45,17 @@ This topic explains how to enable API access for Developer Hub.
         ```
         Name: apimgmt-platform-access
         Type: HTTP
-        Description: 
-        URL: https://yourxsuua.authentication.sap.hana.ondemand.com (Provide the value of the url field from the service key you created above.)
+        Description: <Destination for accessing the SAP Authorization and Trust Management service (XSUAA) APIs for developer Hub>
+        URL: <"API URL" obtained from BTP CLI command in step 1> 
         Proxy Type: Internet
         Authentication: Oauth2ClientCredentials
-        Client ID: apiacess-client_id (Provide the value of the "clientid" field from the service key you created above.)
-        Client Secret: xxxxxxxxxxxxxxxxxxxxxxxxxx (Provide the value of the "clientsecret" field from the service key you created above.)
-        Token Service URL: https://yourxsuua.authentication.sap.hana.ondemand.com (Provide the value of the url field from the service key you created above.)
-        Token Service User:
-        Token Service Password:
-        
+        Client ID: <"Client ID" obtained from BTP CLI command in step 1> 
+        Client Secret: <"Client Secret" obtained from BTP CLI command in step 1> 
+         Token Service URL: <"Token URL" obtained from BTP CLI command in step 1> 
         ```
 
-        -   For URL, provide the value of the `url` field from the service key you created above.
-        -   For Client ID, provide the value of the `clientid` field from the service key you created above.
-        -   For Client Secret, provide the value of the `clientsecret` field from the service key you created above.
-        -   For the Token Service URL, provide the value of the `url` field from the service key you created above.
 
-    4.  Click *Save*.
-
+3.  Click *Save*.
 
 
 

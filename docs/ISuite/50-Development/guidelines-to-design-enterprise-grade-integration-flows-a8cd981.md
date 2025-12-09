@@ -146,5 +146,5 @@ SAP SuccessFactors
 
 [Use the Partner Directory Appropriately](use-the-partner-directory-appropriately-6e00412.md "When designing business-to-business scenarios, you can use the Partner Directory to store information on business partners that are connected to the tenant in the context of a larger business network.")
 
-[Use Scripting Appropriately](use-scripting-appropriately-d4dc13c.md "You can use the Script step to apply script operations on the message content.")
+[Use Scripting Appropriately](use-scripting-appropriately-d4dc13c.md "You can use the script step to apply script operations on the message content.")
 

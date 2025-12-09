@@ -42,30 +42,6 @@ For the patterns that support CSV to XML or XML to CSV converter, the following 
 <tr>
 <td valign="top">
 
-File-based adapters with encryption/decryption
-
-</td>
-<td valign="top">
-
-For File-based adapter scenarios in SAP Process Integration/SAP Process Orchestration that require decryption, the migration tool does not automatically map the adapter module properties to the corresponding encryptor/decryptor step in the integration flow. You must manually add the PGP Encryptor/PGP Decryptor flow step in the migrated integration flow to maintain the same configuration as in the respective adapter's communication channel.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SuccessFactors Adapter
-
-</td>
-<td valign="top">
-
-For integration scenarios in SAP Process Integration/SAP Process Orchestration that use SFSF adapter channels, the migration tool does not automatically map the SuccessFactors adapter in SAP Integration Suite. You must manually add it.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Standard Adapter Module
 
 </td>

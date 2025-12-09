@@ -2,5 +2,5 @@
 
 # Certificate-Based Authentication \(Inbound\)
 
-Certificate-based outbound authentication involves the usage of X.509 SSL certificates both at client and server side.
+Certificate-based inbound authentication involves the usage of X.509 SSL certificates both at client and server side.
 

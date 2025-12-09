@@ -22,7 +22,7 @@ To view and access the SAP Cloud Transport Management service, assign TMS\_ADMIN
 
 1.  Create a service instance for SAP Cloud Transport Management service.
 
-    To create the service instance, follow step 9 described in [Set Up the Environment to Transport Content Archives directly in an Application](https://help.sap.com/viewer/7f7160ec0d8546c6b3eab72fb5ad6fd8/Cloud/en-US/8d9490792ed14f1bbf8a6ac08a6bca64.html).
+    To create the service instance, see [Creating a Service Instance and a Service Key](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/creating-service-instance-and-service-key).
 
     > ### Note:  
     > If you don't see the *Cloud Transport Management*, instance under the *Instances* tab on the *Instances and Subscription* page, then you must add the entitlement.
@@ -37,11 +37,11 @@ To view and access the SAP Cloud Transport Management service, assign TMS\_ADMIN
     > 
     > 4.  On the *Entitlements* page, choose *Save*.
 
-2.  Create a service key for SAP Cloud Transport Management service. To create the service key, follow step 10 described in [Set Up the Environment to Transport Content Archives directly in an Application](https://help.sap.com/viewer/7f7160ec0d8546c6b3eab72fb5ad6fd8/Cloud/en-US/8d9490792ed14f1bbf8a6ac08a6bca64.html).
+2.  Create a service key for SAP Cloud Transport Management service. To create the service key, see [Creating a Service Instance and a Service Key](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/creating-service-instance-and-service-key).
 
     Once the service key is created, make a note of the url, clientid, clientsecret, and token as these details would be needed while creating HTTP destination *TransportManagement*. To copy the details, perform the following steps:
 
-    1.  Choose the service instance *<API Portal, API Management\>* that you created recently, to expand the right-pane.
+    1.  Choose the service instance *Cloud Transport Management* that you created recently, to expand the right-pane.
 
     2.  To view the credentials, choose the *<Service Key Name\>*.
 

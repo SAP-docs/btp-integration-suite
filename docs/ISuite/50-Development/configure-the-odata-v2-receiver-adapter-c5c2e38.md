@@ -275,6 +275,8 @@ The operation that you want to perform on the selected OData entity or resource.
 
 -   Function Import
 
+-   Dynamic
+
 
 To leverage all operations, always use the latest version of the adapter.
 
@@ -292,6 +294,20 @@ For the *POST* operation, the automatic Primary Key generation is handled in two
 
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Expression*
+
+\(Applicable only if you select *Dynamic* option from the *Operation Details*\)
+
+</td>
+<td valign="top">
+
+The expression field allows you to enter a simple expression that specifies the dynamic operation for the OData V2 call. For example, you can define that the method is determined dynamically by reading a value from a message header or property such as `${header.abc}` or `${property.abc}`. If the header or property doesn’t exist or its value is empty, the **POST** method is used by default.
 
 </td>
 </tr>

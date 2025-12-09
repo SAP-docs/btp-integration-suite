@@ -30,7 +30,14 @@ This section covers the following errors on Migration Assessment:
 
 For more resources, check the [SAP Integration Suite Community](https://pages.community.sap.com/topics/integration-suite), or use the built-in support on Migration Assessment by selecting <span class="SAP-icons-V5"></span> Get Support from the top toolbar.
 
-Use the following component to allow the correct ticket routing: `BC-CP-IS-PIMAS`.
+Use the following component to allow the correct ticket routing: `BC-CP-IS-PIMAS` and provide as much of the following information as possible to improve the analysis of your support ticket:
+
+-   Screenshot of the system configuration in *Migration Assessment*.
+-   Screenshots of your Cloud Connector configurations.
+-   Screenshot of test connection output dialog.
+-   Screenshots of the extraction error logs or Process Orchestration system logs you got while following the troubleshooting steps.
+-   If the API calls failed while following the troubleshooting steps, provide screenshots of the API call response of the HEAD operation.
+-   If destinations test connection fails, provide screenshots of the destinations configurations with names `PO_<system name>_DIR` and `PO_<system name>_ESR`, where `<system name>` is the name you provided during the system configuration in *Migration Assessment*.
 
 
 
@@ -40,9 +47,9 @@ Use the following component to allow the correct ticket routing: `BC-CP-IS-PIMAS
 
 503 Service Unavailable error means that BTP is not able to reach the SAP Process Orchestration system. Possible reasons for this error include the following:
 
--   Wrong host name or use of virtual host in the system configuration.
+-   Wrong host or port. Make sure that you maintained virtual host and port in system configuration.
 
--   Two cloud connectors are configured for the same subaccount and the *Location Id* field is not maintained in the system configuration.
+-   If two cloud connectors are configured for the same subaccount, it's mandatory to maintain the *Location Id* field in the system configuration.
 
 
 Perform the following steps to solve this error:
@@ -74,7 +81,7 @@ Perform the following steps to solve this error:
 
     You may move to the next step if the responses of the previous two API calls are empty and the response code is 200. Otherwise, raise a support ticket with screenshots of the error response of the call.
 
-5.  To ensure bidirectional firewall configurations for the SAP Process Orchestration system and Cloud Connector for traffic initiated by the Migration Assessment app, make you allow the Migration Assessment app domain URL or IP in outbound and inbound proxy/firewall on the SAP Process Orchestration and Cloud Connector servers. For more details, see [Cloud Connector Installation Network Prerequisites](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/prerequisites#loioe23f776e4d594fdbaeeb1196d47bbcc0__cf).
+5.  To ensure proper connectivity for the Migration Assessment app to access the SAP Process Orchestration system through Cloud Connector, configure the firewall rules to allow outbound traffic from the Cloud Connector server to the BTP subaccount endpoint. For more details, see [Cloud Connector Installation Network Prerequisites](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/prerequisites#loioe23f776e4d594fdbaeeb1196d47bbcc0__cf).
 
 6.  Check if Cloud connector and JVM versions are outdated as per the SAP Note [3302250](https://me.sap.com/notes/3302250).
 
@@ -141,14 +148,14 @@ Make sure you maintain `<host_url>:<port>` in the system configuration address f
 
 If you get this error in your extraction logs, perform the following steps:
 
-1.  Test the system connection on *Settings* \> *Test Connection*.
+1.  Check the Cloud Connector logs to identify connectivity issues by following the instructions on the SAP note [2452568](https://me.sap.com/notes/2452568).
+2.  If the Cloud Connector logs are unclear, check the SAP Process Orchestration system logs:
+    -   Log in to your SAP Process Orchestration system.
+    -   Navigate to NetWeaver Administrator.
+    -   Go to *Troubleshooting* \> *Logs and Traces* \> *Log Viewer*.
+    -   Select *Log Viewer* from the monitoring section and look for exceptions related to the POST calls to `/IntegratedConfiguration750InService/IntegratedConfiguration750InImplBean`.
 
-    If the test connection fails, your system is incorrectly configured. Pease, validate your Cloud Connector configuration and system setting properties.
-
-    If your connection test is successful, there could be an issue with the API call to extract the ICO list from your SAP Process Orchestration system. In this case, proceed to the next step.
-
-2.  Check your SAP Process Orchestration system logs for any exceptions that occurred during the POST call to the endpoint `/IntegratedConfiguration750InService/IntegratedConfiguration750InImplBean`. When you raise a support ticket, please share this log.
-
+3.  If the issue persists after checking the logs, raise a support ticket with screenshots of the logs from Cloud Connector and/or SAP Process Orchestration.
 
 
 

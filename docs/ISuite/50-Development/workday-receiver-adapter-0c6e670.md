@@ -25,8 +25,6 @@ Workday receiver adapter enables SAP Cloud Integration and SAP Integration Suite
 
 The Workday adapter supports the Workday SOAP API with basic authentication. Once you've created a receiver channel and selected the Workday adapter, you can configure its attributes.
 
-The General tab shows general information such as the adapter type, its direction \(receiver\), the transport protocol, and the message protocol.
-
 **Connection**
 
 
@@ -51,7 +49,9 @@ Description
 </td>
 <td valign="top">
 
-Specify the recipient's endpoint URL, the Workday login base URL, for user authentication. This value can also be specified dynamically. Example: https://wd2-impl-services1.workday.com
+Specify the recipient's endpoint URL or Workday login base URL for user authentication. This value can also be specified dynamically.
+
+Example:`https://wd2-impl-services1.workday.com`
 
 </td>
 </tr>
@@ -63,7 +63,26 @@ Specify the recipient's endpoint URL, the Workday login base URL, for user authe
 </td>
 <td valign="top">
 
-Specify the ID of your Workday Tenant. For example: myTenant1.
+Specify the ID of your Workday Tenant.
+
+Example:`myTenant` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+Select the required authentication type to connect to Workday:
+
+-   *Basic*
+-   *Certificate Based Authentication*
+
+
 
 </td>
 </tr>
@@ -75,7 +94,61 @@ Specify the ID of your Workday Tenant. For example: myTenant1.
 </td>
 <td valign="top">
 
-Specify the name of the **User Credentials** artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Workday. This property enables the system to fetch the User Credential security material deployed in your SAP Cloud Integration tenant.
+Specify the name of the *User Credentials* artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Workday. This property enables the system to fetch the User Credential security material deployed in your SAP Cloud Integration tenant.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Username*
+
+</td>
+<td valign="top">
+
+Specify the Workday username specific to your tenant.
+
+Example: `workday_user@workdaytenant`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key Alias*
+
+</td>
+<td valign="top">
+
+Specify the alias to identify the private key used for authentication using a certificate based authentication.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Connection Timeout \(in ms\)*
+
+</td>
+<td valign="top">
+
+Specify the maximum waiting time \(in milliseconds\) for the connection to be established.
+
+Example: `60000`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Response Timeout \(in ms\)*
+
+</td>
+<td valign="top">
+
+Specify the maximum waiting time \(in milliseconds\) for a response message.
+
+Example: `60000`
 
 </td>
 </tr>
@@ -100,16 +173,32 @@ Description
 <tr>
 <td valign="top">
 
+*Configuration Type*
+
+</td>
+<td valign="top">
+
+Select the configuration type:
+
+-   *Basic* to use the dropdowns and parameter text fields.
+-   *Advanced* to specify the relative URL.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *API Version*
 
 </td>
 <td valign="top">
 
-Specify the version of the Workday SOAP API to be used for calling Workday. Select one of the following versions:
+Specify the version of the Workday API.
 
--   v32.0
--   v34.1
--   v34.2
+> ### Note:  
+> Currently, API versions up to v45.0 are supported by the adapter.
 
 
 
@@ -123,94 +212,58 @@ Specify the version of the Workday SOAP API to be used for calling Workday. Sele
 </td>
 <td valign="top">
 
-To access and exchange data with Workday, you can choose among the following service options:
+To access and exchange data with Workday, you can choose from the following service options:
 
--   Absence Management
-
--   Academic Advising
-
--   Academic Foundation
-
--   Admissions
-
--   Adoption
-
--   Benefit Administration
-
--   Cash Management
-
--   Campus Engagement
-
--   Compensation
-
--   Compensation Review
-
--   Dynamic Document Generation
-
--   External Integrations
-
--   Financial Management
-
--   Financial Aid
-
--   Human Resources
-
--   Identity Management
-
--   Integrations
-
--   Inventory
-
--   Learning
-
--   Moments
-
--   Notification
-
--   Payroll
-
--   Payroll CAN
-
--   Payroll FRA
-
--   Payroll GBR
-
--   Payroll Interface
-
--   Performance Management
-
--   Professional Services Automation
-
--   Recruiting
-
--   Resource Management
-
--   Revenue Management
-
--   Settlement Services
-
--   Staffing
-
--   Student Core
-
--   Student Finance
-
--   Student Records
-
--   Student Recruiting
-
--   Talent
-
--   Tenant Data Translation
-
--   Time Tracking
-
--   Workday Connect
-
--   Workday Extensibility
-
--   Workforce Planning
-
+-   *Absence\_Management* 
+-   *ACA\_Partner\_Integrations* 
+-   *Academic\_Advising* 
+-   *Academic\_Foundation* 
+-   *Admissions* 
+-   *Adoption* 
+-   *Benefit\_Administration* 
+-   *Benefits\_Partner\_Program\_Integrations* 
+-   *Cash\_Management* 
+-   *Campus\_Engagement* 
+-   *Compensation* 
+-   *Compensation\_Review* 
+-   *Dynamic\_Document\_Generation* 
+-   *External\_Integrations* 
+-   *Financial\_Management* 
+-   *Flex\_Team* 
+-   *Financial\_Aid* 
+-   *Human\_Resources* 
+-   *Identity\_Management* 
+-   *Integrations* 
+-   *Inventory* 
+-   *Learning* 
+-   *Moments* 
+-   *Notification* 
+-   *Payroll* 
+-   *Payroll\_CAN* 
+-   *Payroll\_FRA* 
+-   *Payroll\_GBR* 
+-   *Payroll\_Interface* 
+-   *Payroll\_AUS* 
+-   *Performance\_Management* 
+-   *Prism\_Analytics* 
+-   *Professional\_Services\_Automation* 
+-   *Recruiting* 
+-   *Requests* 
+-   *Resource\_Management* 
+-   *Revenue\_Management* 
+-   *Scheduling* 
+-   *Settlement\_Services* 
+-   *Staffing* 
+-   *Student\_Core* 
+-   *Student\_Finance* 
+-   *Student\_Records* 
+-   *Student\_Recruiting* 
+-   *Talent* 
+-   *Tenant\_Data\_Translation* 
+-   *Time\_Tracking* 
+-   *Workday\_Connect* 
+-   *Workday\_Extensibility* 
+-   *Workforce\_Planning* 
 
 
 
@@ -224,7 +277,54 @@ To access and exchange data with Workday, you can choose among the following ser
 </td>
 <td valign="top">
 
-Specify the operation tag of your payload. Example: Put\_Cost\_Center\_Request.
+Specify the operation tag of your payload.
+
+Example: `Put_Cost_Center_Request`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Relative URL*
+
+</td>
+<td valign="top">
+
+Specify the endpoint path, excluding the Host.
+
+Example: `/ccx/service/{tenant}/v32.0/Staffing`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Throw Exception on Failure*
+
+</td>
+<td valign="top">
+
+Enable to throw an exception in case of a failed response from the remote server.
+
+> ### Note:  
+> Throw Exception on Failure checkbox is enabled by default.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Request Headers*
+
+</td>
+<td valign="top">
+
+Enter a list of custom headers, separated by a pipe \(|\), to be sent to the target system. Use an asterisk \(\*\) to send all custom headers to the target system. All Camel-specific headers and HTTP protocol headers except "date" are excluded by default even if you specify them.
+
+You can use this field to propagate a header in a request.
 
 </td>
 </tr>

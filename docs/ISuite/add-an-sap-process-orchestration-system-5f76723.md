@@ -50,6 +50,12 @@ Establish a connection between your SAP Process Orchestration system and Migrati
     -   Message Monitoring
         -   `/mdt`
 
+    -   Communication Channel Monitoring
+        -   /AdapterFramework/ChannelAdminServlet
+
+    -   Cache
+        -   `/CPACache`
+
 
     The endpoints are constructed according to the pattern `<protocol>://<hostname>:<port><endpoint>`, for example, `https://po75-systema.sap:443/CommunicationChannelInService`.
 

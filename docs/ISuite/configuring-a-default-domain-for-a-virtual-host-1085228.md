@@ -24,6 +24,12 @@ After successful onboarding, API proxies are assigned a default virtual host URL
 
 If you want to configure a mutual TLS, see [Configuring Mutual TLS for Default Domain Virtual Host](configuring-mutual-tls-for-default-domain-virtual-host-9faf7ce.md). This process enables you to establish a more secure connection between your API proxy and the client, ensuring that both parties can trust each other's identities.
 
+Using the procedure below, you can perform the following operations:
+
+-   Create a new virtual host with a default domain.
+-   Update the alias, keystore, key alias, and truststore for an existing virtual host.
+-   Delete an existing virtual host.
+
 To request a custom domain with one-way TLS, perform the following steps:
 
 
@@ -34,7 +40,7 @@ To request a custom domain with one-way TLS, perform the following steps:
 
 1.  Run the service using a standard REST client or test console.
 
-    Execute the following steps to create a new virtual host:
+    To create a virtual host:
 
     1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
 
@@ -122,9 +128,7 @@ To request a custom domain with one-way TLS, perform the following steps:
         > ```
 
 
-2.  Run the service using a standard REST client or test console.
-
-    Execute the following steps to update a virtual host:
+2.  To update a virtual host:
 
     1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
 
@@ -219,10 +223,99 @@ To request a custom domain with one-way TLS, perform the following steps:
         >  
         > ```
 
-    -   Response: 201
 
     > ### Note:  
     > After the virtual host is updated, APIs associated to a product using the updated virtual host must be redeployed and republished.
+
+3.  To delete a virtual host:
+
+    > ### Note:  
+    > Before deleting a virtual host, ensure the following conditions are met:
+    > 
+    > -   No proxies are deployed on the virtual host targeted for deletion.
+    > -   No proxies \(including those in draft state\) refer to the virtual host.
+    > -   No existing proxy revisions are linked to the virtual host.
+    > -   The virtual host is not marked as the **Default**.
+
+    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+
+    2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
+
+    3.  Create a service key for the instance.
+
+    4.  From the service key, retrieve the base URL and append the following path to it:`/apiportal/operations/1.0/Configuration.svc/VirtualHostRequests`
+
+
+    You can now use this full URL along with the below details to invoke the service using a standard REST client. For detailed instructions on how to create a service instance and a service key, see[Accessing API Management APIs Programmatically](accessing-api-management-apis-programmatically-24a2c37.md).
+
+    -   Service URL: https://<url-from-service-key\>/apiportal/operations/1.0/Configuration.svc/VirtualHostRequests
+    -   Method: POST
+    -   Request Header: Authentication Bearer <token\>
+    -   Content Type: application/json
+    -   Request Body:
+
+        > ### Sample Code:  
+        > ```
+        > {     "virtualHostId":"fa90e5ab-287f-466a-ba9e-5f6f4becc74c",
+        >      "operation" : "DELETE"
+        > }
+        > 
+        > ```
+
+        > ### Note:  
+        > virtualHostId: This is the unique ID of the virtual host you are trying to delete.
+        > 
+        > The `virtualHostId` can be retrieved from the following API endpoint: https://<url-from-service-key\>/apiportal/api/1.0/Management.svc/VirtualHosts
+
+
+    -   Response: 201
+
+        > ### Sample Code:  
+        > ```
+        > <?xml version="1.0" encoding="utf-8"?>
+        > <entry
+        >        xmlns="http://www.w3.org/2005/Atom"
+        > xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+        > xmlns:d="http://schems.microsoft.com/ado/2007/08dataservics" xml:base="https://apiportalurl:443/apiportal/operations/1.0/Configuration.svc">
+        >        <id>htps://apiportalurl:443/apiportal/operations/1.0/Configuration.svc/VirualHostRequests('9406b886-4dba-4931-8bd9-972070162821')</id>
+        >        <title type="text">VirtualHostRequests</title>
+        >        <updated>2025-09-18T05:07:18.571Z</updated>
+        >        <category term="apimgmtconfiguration.VirtualHostRequest" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"></category>
+        >        <link href="VirtualHostRequests('9406b886-4dba-493-8bd9-972070162821')" rel="edit" title="VirtualHostRequest">/link>
+        >        <content type="application/xml">
+        >                       <m:properties>
+        >                                     <d:accountId>parsec</d:accountId>
+        >                                     <d:allocatedPort>0</d:allocatedPort>
+        >                                     <d:allocationStatus m:null="true"></d:allocationStatus>
+        >                              <d:clusterName>APIRUNTIME_TEST</d:clusterName>
+        >                                     <d:id>9406b886-4dba-4931-8bd9-972070162821</d:id>
+        >                              <d:isClientAuthEnabled>false</d:isClientAuthEnabled>
+        >                       <d:isDefaultVirtualHostRequest>false</d:isDefaultVirtualHostRequest>
+        >                              <d:isForCustomDomain>false</d:isForCustomDomain>
+        >                                     <d:isForNonSni>false</d:isForNonSni>
+        >                                     <d:isTLS>false</d:isTLS>
+        >                                     <d:keyStoreAlias m:null="true"></d:keyStoreAlias>
+        >                                     <d:keyStoreName m:null="true"></d:keyStoreName>
+        >                                     <d:life_cycle m:type="apimgmtconfiguration.History">
+        >                                                   <d:changed_at>2025-09-18T05:07:17.976</d:changed_at>
+        >                                                   <d:changed_by>sb-apiaccess_1710353586252!b86999|api-portal-xsuaa!b11864</d:changed_by>
+        >                                                   <d:created_at>2025-09-18T05:07:17.976</d:created_at>
+        >                                                   <d:created_by>sb-apiaccess_1710353586252!b86999|api-portal-xsuaa!b11864</d:created_by>
+        >                                     </d:life_cycle>
+        >                                     <d:operation>DELETE</d:operation>
+        >                                     <d:trustStore m:null="true"></d:trustStore>
+        >                                     <d:virtualHostId>262553bf-8d37-4619-9014-761ae184de66</d:virtualHostId>
+        >                                     <d:virtualHostUrl m:null="true"></d:virtualHostUrl>
+        >                                     <d:lbHost m:null="true"></d:lbHost>
+        >                       </m:properties>
+        >        </content>
+        > </entry>
+        > 
+        > ```
+
+        > ### Note:  
+        > To enable client authentication \(mutual TLS\) while configuring the virtual host with default domain, see [Configuring Mutual TLS for Default Domain Virtual Host](configuring-mutual-tls-for-default-domain-virtual-host-9faf7ce.md).
+
 
 
 **Related Information**  

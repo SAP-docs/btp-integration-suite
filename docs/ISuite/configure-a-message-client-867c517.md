@@ -34,7 +34,7 @@ Create a service instance:
 
 1.  In the SAP BTP cockpit, in your subaccount, from the left panel, navigate to *Services*, then choose *Instances and Subscriptions* \> *Create*.
 
-2.  In the *New Instance or Subscription* dialog box, select the *Event Mesh Message Client* service.
+2.  In the *New Instance or Subscription* dialog box, select the *SAP Integration Suite, Event Mesh* service.
 
 3.  Choose the *message-client* plan, and then choose *Next*
 
@@ -47,27 +47,30 @@ Create a service instance:
     > ### Sample Code:  
     > ```
     > {
-    >     
-    >     "rules": {
-    >         "topicRules": {
-    >             "publishFilter": [
-    >                 "${namespace}/*"
-    >             ],
-    >             "subscribeFilter": [
-    >                 "${namespace}/*"
-    >             ]
-    >         },
-    >         "queueRules": {
-    >             "publishFilter": [
-    >                 "${namespace}/*"
-    >             ],
-    >             "subscribeFilter": [
-    >                 "${namespace}/*"
-    >             ]
-    >         }
+    >   "rules": {
+    >     "topicRules": {
+    >       "publishFilter": [
+    >         "${namespace}/*"
+    >       ],
+    >       "subscribeFilter": [
+    >         "${namespace}/*"
+    >       ]
     >     },
-    >     "namespace": "sap/em/opshealthcheck"
+    >     "queueRules": {
+    >       "publishFilter": [
+    >         "${namespace}/*"
+    >       ],
+    >       "subscribeFilter": [
+    >         "${namespace}/*"
+    >       ]
+    >     }
+    >   },
+    >   "namespace": "sap/em/opshealthcheck",
+    >   "resources": {
+    >     "units": 10
+    >   }
     > }
+    > 
     > ```
 
     > ### Note:  

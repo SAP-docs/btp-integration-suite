@@ -29,7 +29,9 @@ Service keys for connectivity to SAP Integration Suite and BTP services are rota
     > ### Note:  
     > If the new Edge Integration Cell version requires newer Edge Integration Cell Services or a newer Istio version, then both are upgraded automatically before the upgrade of Edge Integration Cell starts.
     > 
-    > Upgrading dependent solutions only, such as Edge Integration Cell Service or Istio, is possible and follows the same process.
+    > The appropriate versions of the dependent solutions are selected automatically, because each Edge Integration Cell solution version defines which versions of the dependent solutions are supported. The supported version ranges can be viewed in the Edge LM UI.
+    > 
+    > Upgrading only the dependent solutions \(for example, Edge Integration Cell Services or Istio\) is possible and follows the same process; however, this is required only for installing software patches.
 
 5.  Click *Upgrade*.
 

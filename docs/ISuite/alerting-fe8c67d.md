@@ -138,7 +138,7 @@ Message Service Connections usage is above 80%
 
 Connections usage is quite high
 
-Connection limit is defined by Message Service Tier or Solops Runtime Parameter
+Connection limit is defined by Message Service Tier or Message Service Operations runtime parameter
 
 </td>
 <td valign="top">
@@ -162,7 +162,7 @@ Message Service Connections usage is above 95%
 
 Connections usage is very high
 
-Connection limit is defined by Message Service Tier or Solops Runtime Parameter
+Connection limit is defined by Message Service Tier or Message Service Operations runtime parameter
 
 </td>
 <td valign="top">
@@ -186,7 +186,7 @@ Message Service Queues and Topic Endpoints usage is above 80%
 
 Queues and Topic Endpoints usage is quite high
 
-Endpoints limit is defined by Message Service Tier or Solops Runtime Parameter
+Endpoints limit is defined by Message Service Tier or Message Service Operations runtime parameter
 
 </td>
 <td valign="top">
@@ -210,7 +210,7 @@ Message Service Queues and Topic Endpoints usage is above 95%
 
 Queues and Topic Endpoints usage is very high
 
-Endpoints limit is defined by Message Service Tier or Solops Runtime Parameter
+Endpoints limit is defined by Message Service Tier or Message Service Operations runtime parameter
 
 </td>
 <td valign="top">
@@ -282,7 +282,7 @@ Message Service Producers usage is above 80%
 
 Producers \(Ingress Flows\) usage is quite high
 
-Producers limit is defined by Message Service Tier or Solops Runtime Parameter
+Producers limit is defined by Message Service Tier or Message Service Operations runtime parameter
 
 </td>
 <td valign="top">
@@ -306,7 +306,7 @@ Message Service Producers usage is above 95%
 
 Producers \(Ingress Flows\) usage is very high
 
-Producers limit is defined by Message Service Tier or Solops Runtime Parameter
+Producers limit is defined by Message Service Tier or Message Service Operations runtime parameter
 
 </td>
 <td valign="top">
@@ -330,7 +330,7 @@ Message Service Consumers usage is above 80%
 
 Consumers \(Egress Flows\) usage is quite high
 
-Consumers limit is defined by Message Service Tier or Solops Runtime Parameter
+Consumers limit is defined by Message Service Tier or Message Service Operations runtime parameter
 
 </td>
 <td valign="top">
@@ -354,7 +354,7 @@ Message Service Consumers usage is above 95%
 
 Consumers \(Egress Flows\) usage is very high
 
-Consumers limit is defined by Message Service Tier or Solops Runtime Parameter
+Consumers limit is defined by Message Service Tier or Message Service Operations runtime parameter
 
 </td>
 <td valign="top">
@@ -378,7 +378,7 @@ Message Service Transacted Sessions usage is above 80%
 
 Transacted Sessions usage is quite high
 
-Transacted Sessions limit is defined by Message Service Tier or Solops Runtime Parameter
+Transacted Sessions limit is defined by Message Service Tier or Message Service Operations runtime parameter
 
 </td>
 <td valign="top">
@@ -402,7 +402,7 @@ Message Service Transacted Sessions usage is above 95%
 
 Transacted Sessions usage is very high
 
-Transacted Sessions limit is defined by Message Service Tier or Solops Runtime Parameter
+Transacted Sessions limit is defined by Message Service Tier or Message Service Operations runtime parameter
 
 </td>
 <td valign="top">
@@ -426,7 +426,7 @@ Message Service Transactions usage is above 80%
 
 Transactions usage is quite high
 
-Transactions limit is defined by Message Service Tier or Solops Runtime Parameter
+Transactions limit is defined by Message Service Tier or Message Service Operations runtime parameter
 
 </td>
 <td valign="top">
@@ -450,7 +450,7 @@ Message Service Transactions usage is above 95%
 
 Transactions usage is very high
 
-Transactions limit is defined by Message Service Tier or Solops Runtime Parameter
+Transactions limit is defined by Message Service Tier or Message Service Operations runtime parameter
 
 </td>
 <td valign="top">
@@ -508,7 +508,7 @@ CPU usage of the Worker Pod exceeds 95%
 
 The CPU usage of the Worker Pod is significantly high.
 
-The CPU limit is determined by the Worker's Runtime Parameter.
+The CPU limit is determined by the Worker's runtime parameter.
 
 </td>
 <td valign="top">
@@ -580,7 +580,7 @@ Java Memory usage of the Worker Pod exceeds 95%
 
 The Java Memory usage of the Worker Pod is significantly high.
 
-The Java Memory limit is determined by the Worker's Runtime Parameter.
+The Java Memory limit is determined by the Worker's runtime parameter.
 
 </td>
 <td valign="top">

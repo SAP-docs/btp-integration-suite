@@ -6,5 +6,5 @@ An event broker is middleware that mediates the communication of event messages 
 
 Event-driven architecture \(EDA\) uses event brokers to provide the messaging infrastructure. Applications that produce and consume events are clients of an event broker. When an application publishes an event message, the event is sent to an event broker, which then routes the event on to subscribing clients.
 
-An event broker can be a hardware appliance, software, or software-as-a-service \(SaaS\). SAP Integration Suite provides event broker services.
+An event broker can be a hardware appliance, software, or software-as-a-service \(SaaS\). SAP Integration Suite provides event broker services, with message broker capabilities.
 

@@ -40,7 +40,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
 
     On accepting the request, an approval email is sent to the requester. On rejecting a request, you need to provide a reason for rejection; an email notification is sent to the requester.
 
-    You can also view the registered users by choosing *Manage Connections* \> *Registered Users*.
+    You can also view the registered users by choosing *Manage Users* \> *Registered Users*.
 
     On the *Registered Users* page, you can:
 

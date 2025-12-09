@@ -62,17 +62,17 @@ When inspecting the SOAP sender adapter \(tab *Connection*\), you notice that an
 
 ![](images/WSDL_SOAP_Adapter_50ee4cb.png)
 
-When inspecting the *Resources* tab of the integration flow, you notice the uploaded `ApplySecurity_UploadWSDLsAsResource.wsdl` file that is also selected in the SOAP sender adapter.
+When inspecting the *References* tab of the integration flow, you notice the uploaded `ApplySecurity_UploadWSDLsAsResource.wsdl` file that is also selected in the SOAP sender adapter.
 
 > ### Note:  
 > When you design your own integration flow, you can upload a WSDL file in the following ways:
 > 
 > -   When configuring the adapter, choose *Select* and in the following dialog choose *Upload from File System* to browse for the WSDL file on your local disk.
 > 
-> -   Upload the WSDL in the *Resources* view and then select the resource when configuring the adapter.
+> -   Upload the WSDL in the *References* view and then select the resource when configuring the adapter.
 > 
 > 
-> Note that in this example a WSDL is used that includes an external `Types.xsd` file. In this case, both files must first be uploaded in the *Resource* view \(in one single `.zip` file\). Make sure that the import of the `Types.xsd` is specified with a relative path in the WSDL file.
+> Note that in this example a WSDL is used that includes an external `Types.xsd` file. In this case, both files must first be uploaded in the *References* view \(in one single `.zip` file\). Make sure that the import of the `Types.xsd` is specified with a relative path in the WSDL file.
 
 The WSDL file \(`ApplySecurity_UploadWSDLsAsResource.wsdl`\) has the following structure:
 
@@ -125,11 +125,15 @@ For the mapping definition \(in the *WSDL Mapping* step\), the source and target
 The mapping step concatenates 2 elements from the source message \(`FirstName` and `LastName`\) to a single element in the target message \(`PersonSingleName`\).
 
 > ### Note:  
-> When designing your own integration flow, you need to upload the schema definitions for source and target message structure in any case.
+> When designing your own integration flow, you must upload the schema definitions for the source and target message structures in all cases. External references from uploaded WSDLs to other files are supported.
 > 
-> However, it's also supported to have external references from uploaded WSDLs to other files. Make sure to either also upload such external content with relative paths or to resolve all definitions in one single WSDL file. The latter method applied for the target message WSDL schema definition of the example flow.
-> 
-> Note that in a productive scenario you usually don't use a WSDL resource uploaded in a SOAP sender adapter for a mapping definition. This design has been chosen for this example scenario for purposes of simplicity.
+> > ### Caution:  
+> > External references introduces security risks, such as XML External Entity \(XXE\) vulnerabilities. To ensure secure and reliable behaviour, avoid external dependencies whenever possible. If you still use external references, ensure either of these:
+> > 
+> > -   All referenced content is uploaded using relative paths, for example `<xsd:import schemaLocation=“http://www.sample.url/schema.xsd"/>` or `<xsd:import schemaLocation=”schema.xsd”/>` should be replaced with `<xsd:import schemaLocation=“../xsd/schema.xsd"/>`
+> > -   Resolve all definitions within a single WSDL file. This method is applied for the target message WSDL schema definition of the example flow.
+> > 
+> > Note that in a productive scenario you usually don't use a WSDL resource uploaded in a SOAP sender adapter for a mapping definition. This design has been chosen for this example scenario for purposes of simplicity.
 
 To execute the integration flow, you send the following example message body from the HTTP client \(Postman\) to the integration flow endpoint:
 

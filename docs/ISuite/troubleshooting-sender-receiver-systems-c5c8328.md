@@ -94,7 +94,7 @@ Error: HTTP 401
 </td>
 <td valign="top">
 
-[Load Balancer Root Certificates Supported by SAP](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/load-balancer-root-certificates-supported-by-sap?state=DRAFT&version=DEV)
+[Load Balancer Root Certificates Supported by SAP](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/load-balancer-root-certificates-supported-by-sap?version=Cloud)
 
 For more information, see [2583567](https://me.sap.com/notes/2583567) - Authorization error on connection test to CPI Tenant.
 

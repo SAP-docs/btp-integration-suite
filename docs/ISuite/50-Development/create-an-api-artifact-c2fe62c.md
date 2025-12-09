@@ -13,7 +13,7 @@ Create an API artifact to securely expose backend services, apply consistent gov
 -   Create a content package. See, [Creating an Integration Package](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-integration-package?version=CLOUD).
 -   Activate Cloud Integration capability. See, [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities?version=CLOUD).
 
--   Activate API Management capability. See, [Activate and Configure the API Management Capability and Access Developer Hub](../activate-and-configure-the-api-management-capability-and-access-developer-hub-f6eb433.md).
+-   Activate API Management capability. See, [Activate and Configure the API Management Capability](../activate-and-configure-the-api-management-capability-f6eb433.md).
 
 -   Activate Edge Integration Cell runtime. See, [Activate Edge Integration Cell](https://help.sap.com/docs/integration-suite/sap-integration-suite/activate-edge-integration-cell?version=CLOUD&q=Activate+Edge+Inte)
 
@@ -58,4 +58,6 @@ SAP Integration Suite provides several methods to model API artifact to be deplo
 [Deploy an API Artifact](deploy-an-api-artifact-b70e7ec.md "After creating an API artifact, it is necessary to deploy it on the chosen runtime in order to make it executable and ready for use.")
 
 [Externalize Parameter for API Artifact](externalize-parameter-for-api-artifact-ce0a468.md "You can use the externalization feature to define API policies and integration flows that can retrieve externalized configuration values during runtime. These parameters can be utilized later without modifying the standard API artifact.")
+
+[Design Guidelines for API Artifact](design-guidelines-for-api-artifact-7e704f7.md "A set of best practices to ensure that APIs are designed for consistency, scalability, security, and ease of maintenance within SAP Integration Suite.")
 

@@ -69,7 +69,7 @@ This row illustrates the remaining resources:
 <tr>
 <td valign="top">
 
-*Queue Status* 
+*Queue Usage* 
 
 </td>
 <td valign="top">

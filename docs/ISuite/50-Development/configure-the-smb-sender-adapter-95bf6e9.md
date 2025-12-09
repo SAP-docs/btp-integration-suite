@@ -74,7 +74,7 @@ Example:
 If required, specify the domain used for authentication.
 
 > ### Note:  
-> This is an optional field.
+> Ensure that you provide the domain name here. Avoid mentioning domain as part of the User Credential.
 
 
 
@@ -107,7 +107,7 @@ Select the proxy type:
 
 Specify the Location ID from Cloud Connector.
 
-To learn more about Cloud Connector Connectivity, see [Configure Access Control.](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/configure-access-control-tcp)
+To learn more about Cloud Connector Connectivity, see [Configure Access Control](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/configure-access-control-tcp).
 
 </td>
 </tr>
@@ -150,12 +150,7 @@ Example: Assuming the mount path is `\\ServerName\ShareName`, you must specify *
 </td>
 <td valign="top">
 
-Select the authentication type for connecting to the SMB server.
-
--   *Basic Authentication*
-
-
-
+Select the authentication type for connecting to the SMB server. Currently only *Basic Authentication* is supported.
 
 </td>
 </tr>
@@ -236,15 +231,11 @@ Enable SMB Signing between the client and the server..
 
 Specify the maximum number of retries permissible for reconnection to the SMB server before message processing starts.
 
-Default: `3`
+Default: 3
 
 </td>
 </tr>
 </table>
-
-Switch to the *Processing* tab.
-
-The *Processing* tab contains all operation related configurations for the SMB sender adapter.
 
 **Processing**
 
@@ -309,6 +300,54 @@ Example: `readfile.txt`
 <tr>
 <td valign="top">
 
+*Empty File Handling*
+
+</td>
+<td valign="top">
+
+Select option to handle empty files:
+
+-   *Ignore*: Completely skip empty files without any processing.
+-   *Proceed with Empty File*: Process Empty File.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Read Lock Strategy*
+
+</td>
+<td valign="top">
+
+Select the read lock strategy for polling:
+
+-   *Content Change*: Detect modifications to the file for a duration specified by *Content Change Duration field.* 
+-   *None*: No read lock strategy applicable.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Content Change Duration \(in secs\)*
+
+\(Only available if *Read Lock Strategy* is set to *Content Change*\)
+
+</td>
+<td valign="top">
+
+Specify the minimum time \(in seconds\) during which the file must remain unchanged before it can be processed.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Post Processing*
 
 </td>
@@ -353,6 +392,18 @@ Example: If the file name is `myfile.xml`, \(for example, Mar 2, 1999, 09:07:05\
 Specify the target directory for the file to be archived.
 
 Example: `folder\archive`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Execute Post-Processing when Message Successfully Processed*
+
+</td>
+<td valign="top">
+
+Enable to perform post processing actions after successful execution of Iflow.
 
 </td>
 </tr>

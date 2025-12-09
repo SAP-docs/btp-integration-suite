@@ -25,5 +25,3 @@ You can also use the[User Management \(System for Cross-domain Identity Manageme
 
 [Cancel API Management Service Subscription](cancel-api-management-service-subscription-df6df2b.md "You can deactivate your API Management capability from SAP Integration Suite to disable your account from the API Management service.")
 
-[Setting Up API Management with SAP Cloud Identity Services](setting-up-api-management-with-sap-cloud-identity-services-1e88d9c.md "SAP Cloud Platform allows customers to connect their SAP Cloud Identity Services with the BTP offerings.")
-

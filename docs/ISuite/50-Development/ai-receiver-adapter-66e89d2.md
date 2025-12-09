@@ -58,7 +58,7 @@ AI Adapter functions as a receiver adapter, after configuring the AI Adapter, da
 
 Specify the GenAIHub Address.
 
-Example: `https://api.ai.{tenant_name}.{datacenter}.ml.hana.ondemand.com`
+Example: `https://api.ai.{tenant_name}.ml.hana.ondemand.com`
 
 </td>
 </tr>

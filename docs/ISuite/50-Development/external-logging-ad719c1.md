@@ -6,7 +6,7 @@ The external logging feature enables customers to send message processing logs t
 
 The major customer use cases for the external logging feature are the integration into existing monitoring solutions in Splunk, or the consolidation of logs of multiple tenants. You can use it for high-throughput scenarios \(currently limited by our systems and databases\) and high volume queries. And it also suitable for advanced analysis, as well as for correlation with business data and long-term archiving.
 
-> ### Recommendation:  
+> ### Caution:  
 > Avoid transmitting message payloads or other large data volumes to an external logging system through custom headers. This may affect the performance of the data replication to the external logging system.
 
 If you've already set up Splunk as your external logging destination, you can enable the external logging feature.

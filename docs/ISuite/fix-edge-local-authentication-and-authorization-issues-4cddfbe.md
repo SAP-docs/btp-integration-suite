@@ -10,7 +10,7 @@ Check and fix issues related to local authentication and authorization.
 
 ## Context
 
-Local authentication and authorization removes the real-time dependency on the SAP Business Technology Platform SAP BTP for inbound authentication and authorization. Currently, only certificate authentication is supported. Authentication and authorization errors may occur after the solution is upgraded, or after a new service instance of the Process Integration Runtime type is created/modified. Additionally, creating a service key for an existing Process Integration Runtime service instance may also lead to authentication and authorization errors. The following errors occur upon invocation of integration flow or API artefact.
+Local authentication and authorization removes the real-time dependency on the SAP Business Technology Platform SAP BTP for inbound authentication and authorization. Currently, only client certificate and basic authentication \(clientId and clientsecret\) are supported. Authentication and authorization errors may occur after the solution is upgraded, or after a new service instance of the Process Integration Runtime type is created/modified. Additionally, creating a service key for an existing Process Integration Runtime service instance may also lead to authentication and authorization errors. The following errors occur upon invocation of integration flow or API artefact.
 
 > ### Output Code:  
 > ```
@@ -81,6 +81,25 @@ To resolve the authentication error, perform the following steps:
     For service keys of type *External Certificate*, where the *Pin Certificate* setting is disabled, check whether the external client certificate is renewed. After using a renewed certificate for authentication purposes, the system no longer accepts the previously used certificate with an older issue date.
 
     Your newly created service key should synchronize with the Edge Local Authentication and Authorization component within a matter of minutes. Additionally, every 170 minutes a snapshot synchronization job runs, to ensure the consistency of the security material between the cloud and Edge Integration Cell. Once synchronization is complete, attempt to run the integration flow/API artefact function again. Make sure to use the certificate and key from your new service key.
+
+    If you still encounter the error, create a support ticket on the component *BC-CP-IS-EDG-ELA*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **\#error: no valid credentials found for provided client\_id!**
+    
+    </td>
+    <td valign="top">
+    
+    If you're unsure whether a certain key has been recreated, create a new one. After doing so, use this new clientId/secret key to run the iFlow/API artifact function.
+
+    > ### Note:  
+    > If your service key was created before May 17, 2024 \(Edge Integration Cell release 2404\), perform a one-time activity to regenerate your credentials. For more information, see [3472645](https://me.sap.com/notes/3472645).
+
+    Your newly created service key should synchronize with the Edge Local Authentication and Authorization component within minutes. Additionally, every 170 minutes, a snapshot synchronization job runs to ensure the consistency of the security material between the cloud and Edge Integration Cell. Once synchronization is complete, try running the integration flow/API artifact function again. Make sure to use the certificate and key from your new service key.
 
     If you still encounter the error, create a support ticket on the component *BC-CP-IS-EDG-ELA*
     

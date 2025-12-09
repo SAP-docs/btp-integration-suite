@@ -6,23 +6,26 @@ To minimize the risk of data loss, backup of business data needs to be performed
 
 Edge Integration Cell stores configuration in the cloud where the data are secured as part of SAP Integration Suite services. Configuration data are automatically synchronized to Edge Integration Cell.
 
+> ### Remember:  
+> You should have a defined backup and recovery procedure for your Kubernetes environment that follows the best practices of its underlying platform.
+
 
 
 <a name="loio61cf37b704b3466f990696472f6fdc27__section_gw1_wvh_yyb"/>
 
-## PostgreSQL Database and Redis Data Store
+## Database and Datastore
 
-Runtime and monitoring data are stored in PostgreSQL database and Redis data store on the edge. For production environments, these services are deployed outside of Edge Integration Cell. Hence, backup and recovery of these stores is part of the external services provisioning. For more information about external services persistence options, see [3247839](https://me.sap.com/notes/3247839).
+Runtime and monitoring data are stored in a PostgreSQL database and a Redis data store at the edge—that is, within the customer’s own IT environment and not in the cloud. For production environments, these services are deployed outside of Edge Integration Cell. Hence, backup and recovery of these stores is part of the external services provisioning. For more information about external services persistence options, see [3247839](https://me.sap.com/notes/3247839).
 
 > ### Caution:  
-> Restoring PostgreSQL database or Redis data store leads to service interruption for Edge Integration Cell.
+> Restoring a database or datastore results in service interruption for the Edge Integration Cell.
 
 > ### Note:  
 > In some environments, such as Azure or AWS, when you use platform provided services, a restore may result in a new PostgreSQL DB or Redis instance. In these cases, you can change the connection properties using Edge Lifecycle Management and there's no need to follow the manual procedures described below. For more information, see [Modify Edge Integration Cell Solution Deployment Properties](modify-edge-integration-cell-solution-deployment-properties-6a060ff.md).
 
 
 
-### Restore PostgreSQL Procedure
+### Restore Database Procedure
 
 -   Stop Edge Integration Cell components.
 
@@ -34,10 +37,13 @@ Runtime and monitoring data are stored in PostgreSQL database and Redis data sto
 
     -   worker
 
+    -   auditlog-agent
+    -   destination-configuration
+    -   destination-db-management
 
     Components can be stopped using: `kubectl scale deployment <name> --replicas=0 -n edge-icell`.
 
--   Restore PostgreSQL database.
+-   Restore Database.
 
 -   Start Edge Integration Cell components.
 
@@ -49,6 +55,9 @@ Runtime and monitoring data are stored in PostgreSQL database and Redis data sto
 
     -   worker
 
+    -   auditlog-agent
+    -   destination-configuration
+    -   destination-db-management
 
     Components can be started using: `kubectl scale deployment <name> --replicas=<n> -n edge-icell`
 
@@ -58,13 +67,13 @@ Runtime and monitoring data are stored in PostgreSQL database and Redis data sto
 
 
 
-### Restore Redis Procedure
+### Restore Datastore Procedure
 
 -   Stop Edge Integration Cell component `policyengine`.
 
     `policyengine` can be stopped using : `kubectl scale deployment policyengine --replicas=0 -n edge-icell`.
 
--   Restore Redis data store.
+-   Restore Datastore.
 -   Start Edge Integration Cell component `policyengine`.
 
     `policyengine` can be started using : `kubectl scale deployment policyengine --replicas=<n> -n edge-icell`.

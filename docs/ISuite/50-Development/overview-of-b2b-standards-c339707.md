@@ -5898,9 +5898,13 @@ Envelope – Envelope with Functional Groups of Messages
 
 ## UN/EDIFACT
 
-SAP Integration Suite supports the libraries for syntax version 3\(S3\) and all versions starting from 92.1 are available under this syntax version only.
+SAP Integration Suite supports the libraries for syntax version 2 \(S2\) and syntax version 3 \(S3\).
 
-**Versions List \(60\)**
+
+
+### Versions
+
+**Versions List \(63\)**
 
 
 <table>
@@ -5910,6 +5914,27 @@ SAP Integration Suite supports the libraries for syntax version 3\(S3\) and all 
 Version
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+90.2 S2
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+91.1 S2
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+91.2 S2
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -6333,7 +6358,11 @@ D.21B S3
 </tr>
 </table>
 
-**Message Types \(199\)**
+
+
+### Message Types
+
+**Message Types Since Version D.93A S3 \(200\)**
 
 
 <table>
@@ -6357,7 +6386,7 @@ Last Version \(if discontinued\)
 <tr>
 <td valign="top">
 
-APERAK - Application error and acknowledgement message
+APERAK - Application error and acknowledgment message
 
 </td>
 <td valign="top">
@@ -6413,12 +6442,12 @@ BANSTA - Banking status message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -6430,7 +6459,7 @@ BAPLIE - Bayplan/stowage plan occupied and empty locations message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -6447,7 +6476,7 @@ BAPLTE - Bayplan/stowage plan total numbers message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -6838,12 +6867,12 @@ CONDPV - Direct payment valuation message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -6889,12 +6918,12 @@ CONEST - Establishment of contract message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -6906,12 +6935,12 @@ CONITT - Invitation to tender message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -6923,12 +6952,12 @@ CONPVA - Payment valuation message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -6940,12 +6969,12 @@ CONQVA - Quantity valuation message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -6974,12 +7003,12 @@ CONTEN - Tender message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -7144,7 +7173,7 @@ CREADV - Credit advice message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -7161,7 +7190,7 @@ CREEXT - Extended credit advice message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -7195,7 +7224,7 @@ CUSCAR - Customs cargo report message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -7212,7 +7241,7 @@ CUSDEC - Customs declaration message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -7263,7 +7292,7 @@ CUSREP - Customs conveyance report message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -7280,7 +7309,7 @@ CUSRES - Customs response message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -7314,7 +7343,7 @@ DEBADV - Debit advice message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -7365,12 +7394,12 @@ DELFOR - Delivery schedule message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -7382,7 +7411,7 @@ DELJIT - Delivery just in time message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -7399,12 +7428,12 @@ DESADV - Despatch advice message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -7450,12 +7479,12 @@ DIRDEB - Direct debit message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -7518,12 +7547,12 @@ DOCADV - Documentary credit advice message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -7586,12 +7615,12 @@ DOCAPP - Documentary credit application message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -7603,7 +7632,7 @@ DOCARE - Response to an amendment of a documentary credit message
 </td>
 <td valign="top">
 
- 
+D.95A S3
 
 </td>
 <td valign="top">
@@ -7620,12 +7649,12 @@ DOCINF - Documentary credit issuance information message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -7659,7 +7688,7 @@ EnvelopeForMessagesS3 – Envelope for Messages \(Syntax Versions 1/2/3\)
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -7681,7 +7710,7 @@ EnvelopeWithFunctionalGroupsS3 – Envelope with Functional Groups of Messages \
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -7851,7 +7880,7 @@ IFCSUM - Forwarding and consolidation summary message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -7953,7 +7982,7 @@ IFTMAN - Arrival notice message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -7970,7 +7999,7 @@ IFTMBC - Booking confirmation message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -7987,7 +8016,7 @@ IFTMBF - Firm booking message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -8004,7 +8033,7 @@ IFTMBP - Provisional booking message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -8038,7 +8067,7 @@ IFTMCS - Instruction contract status message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -8050,29 +8079,12 @@ IFTMCS - Instruction contract status message
 <tr>
 <td valign="top">
 
-IFTMFR - International forwarding and transport message framework
-
-</td>
-<td valign="top">
-
-92.1 S3
-
-</td>
-<td valign="top">
-
-92.1 S3
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 IFTMIN - Instruction message
 
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -8123,12 +8135,12 @@ IFTSTA - International multimodal status report message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -8276,7 +8288,7 @@ INVOIC - Invoice message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -8293,12 +8305,12 @@ INVRPT - Inventory report message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -8684,12 +8696,12 @@ ORDCHG - Purchase order change request message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -8701,7 +8713,7 @@ ORDERS - Purchase order message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -8718,12 +8730,12 @@ ORDRSP - Purchase order response message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -8769,7 +8781,7 @@ PARTIN - Party information message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -8786,12 +8798,12 @@ PAXLST - Passenger list message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -8803,7 +8815,7 @@ PAYDUC - Payroll deductions advice message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -8820,7 +8832,7 @@ PAYEXT - Extended payment order message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -8837,12 +8849,12 @@ PAYMUL - Multiple payment order message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -8854,7 +8866,7 @@ PAYORD - Payment order message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -8871,12 +8883,12 @@ PRICAT - Price/sales catalogue message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -9024,7 +9036,7 @@ QALITY - Quality data message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -9041,7 +9053,7 @@ QUOTES - Quote message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -9211,7 +9223,7 @@ REMADV - Remittance advice message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -9262,7 +9274,7 @@ REQOTE - Request for quote message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -9432,12 +9444,12 @@ SLSRPT - Sales data report message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -9517,7 +9529,7 @@ STATAC - Statement of account message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
@@ -9551,12 +9563,12 @@ SUPCOT - Superannuation contributions advice message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -9568,12 +9580,12 @@ SUPMAN - Superannuation maintenance message
 </td>
 <td valign="top">
 
-92.1 S3
+D.93A S3
 
 </td>
 <td valign="top">
 
-Not included in Edifact version *93.2 S3*.
+ 
 
 </td>
 </tr>
@@ -9782,6 +9794,1785 @@ D.95B S3
 </td>
 </tr>
 </table>
+
+**Message Types Before Version D.93A S3 \(54\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Message
+
+</th>
+<th valign="top">
+
+90.2 S2
+
+</th>
+<th valign="top">
+
+91.1 S2
+
+</th>
+<th valign="top">
+
+91.2 S2
+
+</th>
+<th valign="top">
+
+92.1 S3
+
+</th>
+<th valign="top">
+
+93.2 S3
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+BANSTA - Banking status message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+BAPLIE - Bayplan/stowage plan occupied and empty locations message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+BAPLTE - Bayplan/stowage plan total numbers message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CONDPV - Construction direct payment valuation
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CONEST - Construction establishment of contract
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CONITT - Construction invitation to tender
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CONPVA - Construction payment valuation
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CONQVA - Construction quantity valuation
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CONTEN - Construction tender
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CREADV - Credit advice
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CREEXT - Extended credit advice
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CUSCAR - Customs cargo report message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CUSDEC - Customs declaration message
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CUSREP - Customs conveyance report message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CUSRES - Customs response message
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DEBADV - Debit advice
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DELFOR - Delivery schedule message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DELJIT - Delivery just-in-time message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DESADV - Despatch advice message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DIRDEB - Direct debit message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DOCADV - Documentary credit advice message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DOCAPP - Application for a documentary credit
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DOCINF - Documentary credit issuance information message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EnvelopeForMessagesS3 - Envelope for Messages \(Syntax Versions 1/2/3\)
+
+> ### Note:  
+> This message is specifically designed to capture and define the envelope structure.
+
+
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EnvelopeWithFunctionalGroupsS3 - Envelope with Functional Groups of Messages \(Syntax Versions 1/2/3\)
+
+> ### Note:  
+> This message is specifically designed to capture and define the envelope structure.
+
+
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IFCSUM - International forwarding and consolidation summary message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IFTMAN - Arrival notice message
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IFTMBC - Booking confirmation message
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IFTMBF - Firm booking message
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IFTMBP - Provisional booking message
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IFTMCS - Instruction contract status message
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IFTMFR - International forwarding and transport message framework
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IFTMIN - Instruction message
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IFTSTA - International multimodal status report message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INVOIC - Invoice message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INVRPT - Inventory report message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ORDCHG - Purchase order change message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ORDERS - Purchase order message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ORDRSP - Purchase order response message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PARTIN - Party information message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PAXLST - Passenger list message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PAYDUC - Payroll Deductions Advice
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PAYEXT - Extended payment order
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PAYMUL - Multiple payment order
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PAYORD - Payment order
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PRICAT - Price sales catalogue message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+QALITY - Quality data message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+QUOTES - Quote message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+REMADV - Remittance advice message
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+REQOTE - Request for quote message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SLSRPT - Sales data report message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+STATAC - Statement of account message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SUPCOT - Superannuation Contribution Advice
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SUPMAN - Superannuation Maintenance Message
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+</table>
+
+> ### Note:  
+> Edifact versions are always shown together with the syntax version that was used at the time the Edifact version was published \(for example, *91.1 S2* and *D.01B S3*\). However, syntax versions 2 and 3 are almost identical and only differ in the allowed code pages \(UNOA-UNOB and UNOA-UNOF\). Therefore, you can also use later Edifact versions together with syntax version 2 or use earlier Edifact versions together with syntax version 3.
 
 
 
@@ -27166,4 +28957,5 @@ Codelist
 -   [Tradacoms Message Standard](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-tradacoms-message-standard/ba-p/13574197)
 -   [EDI Envelopes in Integration Advisor](https://community.sap.com/t5/technology-blogs-by-sap/using-edi-envelopes-in-integration-advisor/ba-p/13915328)
 -   [xCBL Messages](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-support-of-xcbl-messages/ba-p/13945779)
+-   [Integration Advisor: Early UN/EDIFACT Versions with Syntax Version 2 Now Available](https://community.sap.com/t5/integration-blog-posts/integration-advisor-early-un-edifact-versions-with-syntax-version-2-now/ba-p/14233189)
 

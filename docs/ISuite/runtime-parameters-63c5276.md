@@ -96,7 +96,7 @@ Details
 </th>
 </tr>
 <tr>
-<td valign="top" rowspan="3">
+<td valign="top" rowspan="6">
 
 *Edge Deploy Controller* 
 
@@ -135,6 +135,42 @@ Sets the minimum number of replicas for this Deployment using HorizontalPodAutos
 <td valign="top">
 
 Sets the maximum number of replicas for this Deployment using HorizontalPodAutoscaler \(HPA\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`CPU_LIMIT` 
+
+</td>
+<td valign="top">
+
+Sets CPU limit for this component. The default value is 600 Mi.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`MEMORY_LIMIT` 
+
+</td>
+<td valign="top">
+
+Sets memory limit for this component. The default value is 512 Mi.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`EPHEMERAL_STORAGE_LIMIT` 
+
+</td>
+<td valign="top">
+
+Sets ephemeral storage limit for this component. The default value is 300 Mi.
 
 </td>
 </tr>
@@ -235,7 +271,7 @@ Sets the number of replicas for this component.
 </td>
 <td valign="top">
 
-Additional JVM parameters. Can be set either via env var JAVA\_OPTS in configmap edge-api or Helm value java.opts
+Additional JVM parameters.
 
 </td>
 </tr>
@@ -348,7 +384,7 @@ Sets the maximum number of replicas for this Deployment using HorizontalPodAutos
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="8">
+<td valign="top" rowspan="18">
 
 *Worker* 
 
@@ -408,9 +444,14 @@ Sets the number of replicas for this component.
 </td>
 <td valign="top">
 
-Additional JVM parameters for this component\).
+Additional JVM parameters for this component.
 
-Same for the other REPLICAS, MIN\_REPLICAS, etc.
+You can update the metaspace size based on your content and container size.
+
+> ### Example:  
+> \-XX:MaxMetaspaceSize=750M
+
+See: [Edge Integration Cell Runtime Scope](edge-integration-cell-runtime-scope-144c64a.md).
 
 </td>
 </tr>
@@ -453,12 +494,132 @@ Sets ephemeral storage limit for this component. Default value: 10 Gi
 <tr>
 <td valign="top">
 
+`ISTIO_CPU_LIMIT`
+
+</td>
+<td valign="top">
+
+Sets CPU limit for Istio proxy sidecar.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ISTIO_CPU_REQUEST`
+
+</td>
+<td valign="top">
+
+Sets CPU request for Istio proxy sidecar.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ISTIO_MEMORY_LIMIT`
+
+</td>
+<td valign="top">
+
+Sets memory limits for Istio proxy sidecar.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ISTIO_MEMORY_REQUEST`
+
+</td>
+<td valign="top">
+
+Sets memory request for Istio proxy sidecar.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`RFC_ADAPTER_POOL_CHECK_RATE`
+
+</td>
+<td valign="top">
+
+The RFC adapter creates a pool of connections for each sender channel based on the initial connection count. This property specifies how often the system checks the connection utilization in the pool. It can also resize the pool by increasing the number of connections. A check rate of zero means no check is performed. The default value is 3,600 seconds.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`RFC_ADAPTER_POOL_LOAD_THRESHOLD`
+
+</td>
+<td valign="top">
+
+A new connection in the pool starts only when a threshold is reached. If the current pool size \(available connections\) minus the value of this property is less than or equal to the number of currently working connections, a new connection starts. A value of zero means a new connection starts only if all available connections are working. If the value is larger, a new connection starts before all available connections are working. The default value is zero.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`RFC_ADAPTER_POOL_MAX_SIZE` 
+
+</td>
+<td valign="top">
+
+The global adapter limit for the connection pool size. The default value is 50.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`RFC_ADAPTER_XML_IGNORE_BASE64_CONSTRAINTS` 
+
+</td>
+<td valign="top">
+
+The default value is "false". If set to true, base64 incompatible characters can be decoded from RFC-XML.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`RFC_ADAPTER_XML_INVALID_CHARACTERS` 
+
+</td>
+<td valign="top">
+
+The default value is "ignore". This means that there's no handling of invalid XML characters. The value "substitute" means invalid characters are replaced with character "\#".
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`RFC_ADAPTER_XML_WRITE_XML_PREAMBLE_TO_PAYLOAD` 
+
+</td>
+<td valign="top">
+
+Determines whether an XML preamble is added to the RFC-XML. The default value is "true".
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Message Service* 
 
 </td>
 <td valign="top">
 
-`Solace_TIER` 
+`SOLACE_TIER` 
 
 </td>
 <td valign="top">
@@ -472,7 +633,7 @@ For more information on Message Service Tiers, see [Message Service Tiers](runti
 <tr>
 <td valign="top" rowspan="7">
 
-*Solops* 
+*Message Service Operations* 
 
 </td>
 <td valign="top">
@@ -499,7 +660,7 @@ Possible values are *error*, *warn*, *info*, *debug*.
 Sets maximum number of queues and topic endpoints
 
 > ### Note:  
-> Note that the configuration parameters for Solops' MAX may be limited by the chosen Message Service Tier. The Message Service Tier sets system boundaries for configuration parameters such as Max Endpoints \(which includes Max Queues, with the JMS Adapter requiring three internal queues for each JMS Queue\), Max Egress Flows, Max Ingress Flows, Max Transacted Sessions \(which shares the same system limit value as Max Connections\) and Max Transactions \(which is five times the system limit value of Max Connections\).
+> Note that the configuration parameters for MAX may be limited by the chosen Message Service Tier. The Message Service Tier sets system boundaries for configuration parameters such as Max Endpoints \(which includes Max Queues, with the JMS Adapter requiring three internal queues for each JMS Queue\), Max Egress Flows, Max Ingress Flows, Max Transacted Sessions \(which shares the same system limit value as Max Connections\) and Max Transactions \(which is five times the system limit value of Max Connections\).
 
 
 
@@ -566,9 +727,9 @@ Sets maximum number of client subscriptions.
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="3">
+<td valign="top" rowspan="4">
 
-Auditlog Agent
+*Auditlog Agent*
 
 </td>
 <td valign="top">
@@ -603,6 +764,18 @@ Sets memory limit for this component.
 <td valign="top">
 
 Sets the number of replicas for this component.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`JAVA_OPTS`
+
+</td>
+<td valign="top">
+
+Additional JVM parameters for this component.
 
 </td>
 </tr>

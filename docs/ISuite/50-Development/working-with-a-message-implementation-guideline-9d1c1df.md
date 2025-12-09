@@ -69,7 +69,7 @@ Here are a few considerations to be mindful of before you work with MIG:
 
 [Primitive Data Types](primitive-data-types-72a8e9e.md "Primitive data types are the basic building blocks that you use to define entities or structure types within a MIG.")
 
-[Simulating a Message Implementation Guideline](simulating-a-message-implementation-guideline-42b45c5.md "This chapter shows you how to simulate a message implementation guideline.")
+[Simulating a Message Implementation Guideline](simulating-a-message-implementation-guideline-42b45c5.md "Learn how to simulate a message implementation guideline.")
 
 [Versioning a Message Implementation Guideline](versioning-a-message-implementation-guideline-12784f9.md "This chapter covers the lifecycle of a message implementation guideline, the purpose of each status that a MIG goes through and the procedure to activate the MIG.")
 

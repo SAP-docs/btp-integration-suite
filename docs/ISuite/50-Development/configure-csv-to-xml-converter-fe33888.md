@@ -115,6 +115,25 @@ You’re editing the integration flow in the editor.
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Configure CSV Headers to Match
+    
+    </td>
+    <td valign="top">
+    
+    You can select one of the following options:
+
+    -   *CSV Fields Sequence*: Select this option to configure the order of output XML elements to match the CSV fields sequence.
+
+    -   *XSD Elements*: Select this option to configure the order of output XML elements to match the XSD elements.
+
+
+
+    
+    </td>
+    </tr>
     </table>
     
     > ### Note:  

@@ -43,7 +43,7 @@ If we think of topics as destinations, then Event Mesh can be thought of as the 
     -   **Queues** are both a destination that clients can publish messages to and an endpoint that clients can consume messages from. For more information, see [Queues](queues-99b7501.md).
 
 
--   Consumers are consuming applications that connect to Event Mesh. Any of the consumers that have been configured with topic subscriptions receive messages with matching topics.
+-   Consumers are applications that connect to Event Mesh. Any of the consumers that have been configured with topic subscriptions receive messages with matching topics.
 
 
 **Related Information**  
