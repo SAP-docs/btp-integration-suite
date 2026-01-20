@@ -129,7 +129,7 @@ Name of the file to be written.
 You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 > ### Note:  
-> If you don’t enter a file name and the parameter remains blank, the content of the `CamelFileName` header isn’tused as file name. If this header is specified, the Exchange ID is used as file name.
+> If you don’t enter a file name and the parameter remains blank, the content of the `CamelFileName` header is used as file name. If this header is specified, the Exchange ID is used as file name.
 
 The endpoint URL that is actually used at runtime is displayed in the message processing log \(MPL\) in the message monitoring application \(MPL property `ProduceFile`\). Note that you can manually configure the endpoint URL using the *FileName* attribute of the FTP adapter. However, you can dynamically override the value of this attribute by using the Camel header `CamelFileName`.
 
