@@ -30,7 +30,7 @@ Consider the following when using the XI adapter.
 
 -   Avoid changing the temporary storage location for operative scenarios \(or do it carefully\).
 
-    Such an action can result in data loss. The reason is that outdated messages \(which won't be retried anymore\) can still be stored there, even if you've changed the *Temporary Storage* attribute in the meantime. When you plan to change this attribute, make sure that there are no mire messages in the temporary storage originally configured.
+    Such an action can result in data loss. The reason is that outdated messages \(which won't be retried anymore\) can still be stored there, even if you've changed the *Temporary Storage* attribute in the meantime. When you plan to change this attribute, make sure that there are no more messages in the temporary storage originally configured.
 
 -   If possible, as *Temporary Storage* use the *JMS Queue* option as it comes with a better performance and reduced database load.
 
