@@ -123,7 +123,7 @@ https://<Account Short Name\>-iflmap.hcisbt.<Landscape Host\>
 </table>
 
 > ### Note:  
-> -   In the URL, account short name refers to account detail mentioned in SAP email. You receive this emial after onboarding the tenant. Also,you can access the following link to see the list of available landscapes and respective IP addresses: [Landscape Hosts](https://help.hana.ondemand.com/help/frameset.htm?350356d1dc314d3199dca15bd2ab9b0e.html).
+> -   In the URL, account short name refers to account detail mentioned in SAP email. You receive this email after onboarding the tenant. Also,you can access the following link to see the list of available landscapes and respective IP addresses: [Landscape Hosts](https://help.hana.ondemand.com/help/frameset.htm?350356d1dc314d3199dca15bd2ab9b0e.html).
 > 
 > -   In SAP email, account short names begin with an alaphabet followed by 4-5 digits. For example, **A0001**.
 
