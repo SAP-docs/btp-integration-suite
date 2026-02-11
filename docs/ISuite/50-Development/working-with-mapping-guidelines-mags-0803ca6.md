@@ -62,6 +62,15 @@ In some scenarios, significant differences between the message implementation gu
 
     -   To **search** for all XSLT snippets and XPath expressions for a certain text pattern and filter the list of mapping elements by those elements that contain the search pattern, use the *Search* field provided above the *Mapping List* table. Enter the function pattern and choose :mag: . This displays the list of mapping elements pertaining to that function pattern.
     -   To **mass validate** all mapping elements that include an XSLT snippet, choose *Validate XSLT Snippets* in the header of the mapping list table. Any mapping element with invalid XSLT snippets is then marked as erroneous in the mapping list. The validation applies to the whole mapping list, independent of any active selection. For more details on the error, check the tool tip in the *Status* column or navigate to the details of the erroneous mapping element.
+    -   You can automatically **create mappings between identical nodes** using the *Create 1:1 Mappings* function:
+
+        1.  Choose *Edit*.
+        2.  In the *Mapping* tab, select a group node in the source MIG and then select a group node in the target MIG, either by clicking or drawing a mapping line between them.
+        3.  In the header of the *Mapping List* section, choose *Create 1:1 Mappings* and confirm the upcoming dialog with *Create*.
+
+            For all identical nodes in the selected subtrees, 1:1 mapping elements are created and added to the mapping list. Existing mapping elements are not modified or removed.
+
+
     -   You can add or manage **additional information or functions** about each element by selecting the mapping entity line.
 
         The mapping also supports various value transformations. To know about these features, see [Value Transformations](value-transformations-19f8374.md).
@@ -87,4 +96,6 @@ In some scenarios, significant differences between the message implementation gu
 [Simulating a Mapping Guideline](simulating-a-mapping-guideline-b18178b.md "Learn how to simulate a mapping guideline.")
 
 [Versioning a Mapping Guideline](versioning-a-mapping-guideline-1891fea.md "This chapter shows you how to activate a mapping guideline")
+
+[Integration Advisor - Create 1:1 Mapping Elements in MAG Editor](https://community.sap.com/t5/integration-blog-posts/integration-advisor-create-1-1-mapping-elements-in-mag-editor/ba-p/14300369)
 

@@ -42,7 +42,7 @@ There are certain limitations while importing and consuming the function library
 
 4.  Choose *Connect*.
 
-    You see a list of available function library objects.
+    You see a list of available function library objects. This list also includes the Function Library with parameter type Simple Type.
 
 5.  Choose a function library object of your choice and choose *Select*.
 

@@ -250,8 +250,9 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
     -   You can add XSD files to the integration flow. For more details, please refer to [Validating Message Payload against XML Schema](validating-message-payload-against-xml-schema-360dc70.md).
 
-    -   The file name must have the following format:
+    -   To retrieve the XSD file from Integration Advisor, see [Exporting XSD File from EDI Type System](exporting-runtime-artifacts-5ab4cfe.md#loio5ab4cfe5ec724adda074c9773ea6b895__section_kzc_1zj_32c) or [Exporting Runtime Artifacts from MIG or MAG](exporting-runtime-artifacts-5ab4cfe.md#loio5ab4cfe5ec724adda074c9773ea6b895__section_ggv_f2f_zhb).
 
+    -   The XSD file must come from either SAP Process Integration/SAP Process Orchestration or Integration Advisor, and the file name must adhere to one of the following formats:
         -   SAP Process Integration/SAP Process Orchestration XSDs:
 
             -   EDIFACT: `<MessageType><MessageRelease>.xsd`
@@ -499,12 +500,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     
     **X12**
 
-    > ### Note:  
-    > -   Any X12 message is an interchange. An interchange can have functional group, which in-turn can have transactional sets. The EDI Splitter supports only one functional group with multiple homogeneous transactional sets.
-    > -   EDI Splitter v1.12.0 and v2.2.0 onwards support same group name with different definition in XSD.
-
-    ****
-
 
     <table>
     <tr>
@@ -518,6 +513,17 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     Description
     
     </th>
+    </tr>
+    <tr>
+    <td valign="top" colspan="2">
+    
+    > ### Note:  
+    > -   Any X12 message is an interchange. An interchange can have functional group, which in-turn can have transactional sets. The EDI Splitter supports only one functional group with multiple homogeneous transactional sets.
+    > -   EDI Splitter v1.12.0 and v2.2.0 onwards support same group name with different definition in XSD.
+
+
+    
+    </td>
     </tr>
     <tr>
     <td valign="top">
@@ -917,11 +923,6 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     
     **TRADACOMS**
 
-    > ### Note:  
-    > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
-
-    ****
-
 
     <table>
     <tr>
@@ -935,6 +936,16 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     Description
     
     </th>
+    </tr>
+    <tr>
+    <td valign="top" colspan="2">
+    
+    > ### Note:  
+    > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
+
+    
+    </td>
     </tr>
     <tr>
     <td valign="top">

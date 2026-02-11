@@ -347,7 +347,7 @@ Depending on the chosen authentication, the following is checked by the test:
     > 
     > See:
     > 
-    > -   [Maintaining the Known Hosts File for SFTP Connectivity](../40-RemoteSystems/maintaining-the-known-hosts-file-for-sftp-connectivity-514e383.md)
+    > -   [Maintaining SSH Known Hosts for SFTP Connectivity](../40-RemoteSystems/maintaining-ssh-known-hosts-for-sftp-connectivity-514e383.md)
     > 
     > -   [Deploying an SSH Known Hosts Artifact](deploying-an-ssh-known-hosts-artifact-46da324.md)
 

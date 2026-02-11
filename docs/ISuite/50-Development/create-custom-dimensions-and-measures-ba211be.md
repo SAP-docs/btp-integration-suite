@@ -12,17 +12,20 @@ Advanced API Analytics provides a set of default dimensions and measures to trac
 
 With a custom dimension or a custom measure, you collect and analyze data that analytics don't automatically track. For instance, you want to capture API calls or API errors based on an API Key. Advanced API Analytics doesn't provide an out-of-the-box dimension that allows you to track data based on an API key. In such cases, you can define a custom dimension for capturing API-Key-based data. Similarly, you want to track the number of headers passed in an API call. In such cases, you can create a custom measure to track the total or average number of headers passed in an API call.
 
-Perform the step-by-step instructions in this topic to create custom dimensions and measures. For visual instructions, you can also refer the following tutorial: [Create Custom Dimensions and Measures](https://developers.sap.com/tutorials/api-mgmt-analytics-custom-metrics.html)
+> ### Note:  
+> The recommended maximum size for values of custom metrics and dimensions is 1,000 characters. Values that exceed 5,000 characters are automatically truncated after 5,000 characters.
+
+Perform the step-by-step instructions in this topic to create custom dimensions and measures.
 
 
 
 ## Procedure
 
-1.  In the analytics dashboard, choose *Custom Metric* from the *\+Add* dropdown menu.
+1.  In the analytics dashboard, choose *Create* to open the Create Chart dialog.
 
-2.  In the *Add Custom Metric* window, enter the name of the custom dimension or the custom measure that you want to add for tracking data. In this step, you enter just the names of custom dimensions and measures. However, for enabling data collection with them, you must reuse the names of custom dimensions or measures in the Statistics Collector policy of your API proxy. This procedure is explained in further steps.
+2.  In the Dimensions and Measures section, select the dimension or measure you want to use for tracking data. Custom dimensions and measures that are enabled through the Statistics Collector policy of your API proxy appear in these dropdown lists and can be used while creating charts. This procedure is explained in further steps.
 
-3.  Choose *OK*.
+3.  Enter the required chart details and choose *Save*.
 
 4.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 
@@ -65,7 +68,7 @@ Perform the step-by-step instructions in this topic to create custom dimensions 
     > </StatisticsCollector>
     > ```
 
-9.  After you've created the custom dimension or measure, navigate to the analytics dashboard. Add a custom view and create custom charts using the custom dimensions or measures you created.
+9.  After enabling the custom dimension or measure in the Statistics Collector policy, navigate to the analytics dashboard and use Create to build charts using these dimensions or measures.
 
     > ### Note:  
     > After creating a chart with custom dimension or custom measure, you'll experience a delay of 20-30 minutes before data starts appearing in the charts.

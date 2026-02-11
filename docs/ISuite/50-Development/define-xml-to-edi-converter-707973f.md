@@ -4,10 +4,6 @@
 
 The XML to EDI converter transforms a single XML message from XML format to EDI format.
 
-
-
-## Context
-
 Use the converter to convert XML message either to EDIFACT, ODETTE, TRADACOMS, or ASC-X12 format.
 
 XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TRADACOMS* tab; available only for dedicated service plans, see [2903776](https://me.sap.com/notes/2903776)\).
@@ -15,14 +11,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
 > ### Note:  
 > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
-
-
-<a name="loio707973f9bfb1419eb80628755494b962__steps_i3z_mpn_35"/>
-
-## Procedure
-
 1.  In the graphical editor of integration flow, choose the *XML to EDI Converter* element.
-
 2.  Define the parameters to convert the XML data format to EDI data format.
 
     > ### Note:  
@@ -30,6 +19,11 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     > 
     > -   For X12 format, XML to EDI converter v1.3.0 and v2.1.0 onwards support same group name with different definition in XSD.
     > -   For XML to EDI Converter version 2.6 and above, you can use the same XSDs in your SAP Integration Suite tenant as in your SAP Process Integration and SAP Process Orchestration system.
+
+    > ### Note:  
+    > -   The converter supports flexible cross-structure conversions across different XML structures and XSD schema types. When both PI/PO and IA XSDs are uploaded as input, the converter automatically prioritizes IA XSDs for processing.
+
+    **EDIFACT**
 
 
     <table>
@@ -135,9 +129,11 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     If you select `Integration Flow` as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Choose *Add* \> *Select* to select the valid schemas against which the conversion will take place.
 
     > ### Note:  
-    > -   You can add XSD files to the integration flow. For more details, please refer to the topic **Validating Message Payload against XML Schema**, in developer's guide.
+    > -   You can add XSD files to the integration flow. For more details, please refer to [Validating Message Payload against XML Schema](validating-message-payload-against-xml-schema-360dc70.md).
     > 
-    > -   The file name must have the following format:
+    > -   To retrieve the XSD file from Integration Advisor, see [Exporting XSD File from EDI Type System](exporting-runtime-artifacts-5ab4cfe.md#loio5ab4cfe5ec724adda074c9773ea6b895__section_kzc_1zj_32c) or [Exporting Runtime Artifacts from MIG or MAG](exporting-runtime-artifacts-5ab4cfe.md#loio5ab4cfe5ec724adda074c9773ea6b895__section_ggv_f2f_zhb).
+    > 
+    > -   The XSD file must come from either SAP Process Integration/SAP Process Orchestration or Integration Advisor, and the file name must adhere to one of the following formats:
     > 
     >     -   SAP Process Integration/SAP Process Orchestration XSDs:
     > 
@@ -233,6 +229,24 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     
     </td>
     </tr>
+    </table>
+    
+    **X12**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
     <tr>
     <td valign="top" colspan="2">
     
@@ -285,9 +299,12 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     If you select Integration Flow as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Choose *Add* \> *Select* to select the valid schemas against which the conversion will take place.
 
     > ### Note:  
-    > -   You can add XSD files to the integration flow. For more details, please refer to the topic *Validating Message Payload against XML Schema*, in developer's guide.
+    > -   You can add XSD files to the integration flow. For more details, please refer to [Validating Message Payload against XML Schema](validating-message-payload-against-xml-schema-360dc70.md).
     > 
-    > -   The file name must have the following format:
+    > -   To retrieve the XSD file from Integration Advisor, see [Exporting XSD File from EDI Type System](exporting-runtime-artifacts-5ab4cfe.md#loio5ab4cfe5ec724adda074c9773ea6b895__section_kzc_1zj_32c) or [Exporting Runtime Artifacts from MIG or MAG](exporting-runtime-artifacts-5ab4cfe.md#loio5ab4cfe5ec724adda074c9773ea6b895__section_ggv_f2f_zhb).
+    > 
+    > 
+    > -   The XSD file must come from either SAP Process Integration/SAP Process Orchestration or Integration Advisor, and the file name must adhere to one of the following formats:
     > 
     >     -   SAP Process Integration/SAP Process Orchestration XSDs:
     > 
@@ -370,7 +387,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     > You can also manually specify the custom separator.
     > 
     > -   Enter the hexadecimal value for the separator you want to use in the respective field. For example, enter `#x2b` to use *\+* as the separator.
-    > -   Enter the header value to fetch the sepatator from header. For example, `${header.HEADER_NAME}`
+    > -   Enter the header value to fetch the separator from header. For example, `${header.HEADER_NAME}`
 
 
     
@@ -379,9 +396,6 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </table>
     
     **TRADACOMS**
-
-    > ### Note:  
-    > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 
     <table>
@@ -396,6 +410,23 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     Description
     
     </th>
+    </tr>
+    <tr>
+    <td valign="top" colspan="2">
+    
+    > ### Note:  
+    > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" colspan="2">
+    
+    **TRADACOMS**
+    
+    </td>
     </tr>
     <tr>
     <td valign="top">
@@ -555,9 +586,7 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     </table>
     
 3.  If you want to continue editing the integration package without exiting, choose *Save*.
-
 4.  Choose *Save as version* to retain a copy of the current artifact.
-
 5.  If you want to terminate the creation of package, choose *Cancel* before saving it.
 
     > ### Note:  
@@ -588,249 +617,249 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard \(*TR
     > ### Note:  
     > `SAP_EDI_Document_Number` header contains document number for the single incoming EDI file.
 
-    -   The following example shows the transformation from *XML to EDI* format of EDIFACT message.
-
-        Input sample EDIFACT XML Message
-
-        ```
-        
-        <?xml version="1.0" encoding="UTF-8"?><Interchange>
-            <S_UNA>:+.? '</S_UNA>
-            <S_UNB>
-                <C_S001>
-                    <D_0001>UNOC</D_0001>
-                    <D_0002>3</D_0002>
-                </C_S001>
-                <C_S002>
-                    <D_0004>SENDERABC</D_0004>
-                    <D_0007>14</D_0007>
-                    <D_0008>XXXX</D_0008>
-                </C_S002>
-                <C_S003>
-                    <D_0010>ReceiverXYZ</D_0010>
-                    <D_0007>14</D_0007>
-                    <D_0014>YYYYY</D_0014>
-                </C_S003>
-                <C_S004>
-                    <D_0017>150831</D_0017>
-                    <D_0019>1530</D_0019>
-                </C_S004>
-                <D_0020>1</D_0020>
-                <C_S005>
-                    <D_0022>HELLO WORLD</D_0022>
-                </C_S005>
-                <D_0029>A</D_0029>
-                <D_0035>1</D_0035>
-            </S_UNB>
-            <M_ORDERS>
-                <S_UNH>
-                    <D_0062>1</D_0062>
-                    <C_S009>
-                        <D_0065>ORDERS</D_0065>
-                        <D_0052>D</D_0052>
-                        <D_0054>96A</D_0054>
-                        <D_0051>UN</D_0051>
-                    </C_S009>
-                    <C_S010>
-                        <D_0070>2</D_0070>
-                    </C_S010>
-                </S_UNH>
-                <S_BGM>
-                    <C_C002>
-                        <D_1001>220</D_1001>
-                    </C_C002>
-                    <D_1004>MY_ID</D_1004>
-                    <D_1225>9</D_1225>
-                    <D_4343>NA</D_4343>
-                </S_BGM>
-                <S_DTM>
-                    <C_C507>
-                        <D_2005>137</D_2005>
-                        <D_2380>201507311500</D_2380>
-                        <D_2379>203</D_2379>
-                    </C_C507>
-                </S_DTM>
-                <S_DTM>
-                    <C_C507>
-                        <D_2005>2</D_2005>
-                        <D_2380>201508010930</D_2380>
-                        <D_2379>203</D_2379>
-                    </C_C507>
-                </S_DTM>
-                <S_CNT>
-                    <C_C270>
-                        <D_6069>16</D_6069>
-                        <D_6066>10</D_6066>
-                    </C_C270>
-                </S_CNT>
-                <S_UNT>
-                    <D_0074>5</D_0074>
-                    <D_0062>1</D_0062>
-                </S_UNT>
-            </M_ORDERS>
-            <S_UNZ>
-                <D_0036>1</D_0036>
-                <D_0020>1</D_0020>
-            </S_UNZ>
-        </Interchange>
-        
-        
-        ```
-
-        Output sample EDIFACT EDI Message
-
-        ```
-        
-        UNA:+.? '
-        UNB+UNOC:3+SENDERABC:14:XXXX+ReceiverXYZ:14:YYYYY+150831:1530+1+HELLO WORLD++A+++1'
-        UNH+1+ORDERS:D:96A:UN++2'
-        BGM+220+MY_ID+9+NA'
-        DTM+137:201507311500:203'
-        DTM+2:201508010930:203'
-        CNT+16:10'
-        UNT+5+1'
-        UNZ+1+1'
-        
-        ```
-
-    -   The following example shows the transformation from *XML to EDI* format of ASC-X12 message.
-
-        Input sample ASC-X12 XML Message
-
-        ```
-        
-        <?xml version="1.0" encoding="UTF-8"?><ns0:Interchange xmlns:ns0="urn:sap.com:typesystem:b2b:116:asc-x12:850:004010">
-            <S_ISA>
-                <D_I01>00</D_I01>
-                <D_I02>          </D_I02>
-                <D_I03>00</D_I03>
-                <D_I04>          </D_I04>
-                <D_I05_1>01</D_I05_1>
-                <D_I06>784849291      </D_I06>
-                <D_I05_2>01</D_I05_2>
-                <D_I07>315029991      </D_I07>
-                <D_I08>051007</D_I08>
-                <D_I09>0928</D_I09>
-                <D_I10>/</D_I10>
-                <D_I11>4010 </D_I11>
-                <D_I12>000000001</D_I12>
-                <D_I13>0</D_I13>
-                <D_I14>P</D_I14>
-                <D_I15>^</D_I15>
-            </S_ISA>
-            <S_GS>
-                <D_479>PO</D_479>
-                <D_142>784849291</D_142>
-                <D_124>315029991</D_124>
-                <D_373>20051007</D_373>
-                <D_337>0928</D_337>
-                <D_28>1</D_28>
-                <D_455>U</D_455>
-                <D_480>004010</D_480>
-            </S_GS>
-            <M_850>
-                <S_ST>
-                    <D_143>850</D_143>
-                    <D_329>10001</D_329>
-                </S_ST>
-                <S_BEG>
-                    <D_353>00</D_353>
-                    <D_92>NE</D_92>
-                    <D_324>228914</D_324>
-                    <D_373>20051006</D_373>
-                </S_BEG>
-                <S_CUR>
-                    <D_98_1>BY</D_98_1>
-                    <D_100_1>EUR</D_100_1>
-                    <D_280>0100</D_280>
-                </S_CUR>
-                <G_N1>
-                    <S_N1>
-                        <D_98_1>SF</D_98_1>
-                        <D_93>BEHR SERVICE GMBH</D_93>
-                        <D_66>92</D_66>
-                        <D_67>1939</D_67>
-                    </S_N1>
-                </G_N1>
-                <G_N1>
-                    <S_N1>
-                        <D_98_1>ST</D_98_1>
-                        <D_93>BEHR SERVICE AMERICA</D_93>
-                        <D_66>92</D_66>
-                        <D_67>1939</D_67>
-                    </S_N1>
-                </G_N1>
-                <G_PO1>
-                    <S_PO1>
-                        <D_350>10000</D_350>
-                        <D_330>17</D_330>
-                        <D_355>EA</D_355>
-                        <D_212>91.8074</D_212>
-                        <D_639>EA</D_639>
-                        <D_235_1>BP</D_235_1>
-                        <D_234_1>2112910003</D_234_1>
-                        <D_235_2>PD</D_235_2>
-                        <D_234_2>Radiator</D_234_2>
-                    </S_PO1>
-                    <S_LIN>
-                        <D_235_1>MF</D_235_1>
-                        <D_234_1>2109308</D_234_1>
-                    </S_LIN>
-                    <G_SCH>
-                        <S_SCH>
-                            <D_380>17</D_380>
-                            <D_355>EA</D_355>
-                            <D_374_1>002</D_374_1>
-                            <D_373_1>20060401</D_373_1>
-                        </S_SCH>
-                    </G_SCH>
-                </G_PO1>
-                <G_CTT>
-                    <S_CTT>
-                        <D_354>1</D_354>
-                    </S_CTT>
-                </G_CTT>
-                <S_SE>
-                    <D_96>10</D_96>
-                    <D_329>10001</D_329>
-                </S_SE>
-            </M_850>
-            <S_GE>
-                <D_97>1</D_97>
-                <D_28>1</D_28>
-            </S_GE>
-            <S_IEA>
-                <D_I16>1</D_I16>
-                <D_I12>000000001</D_I12>
-            </S_IEA>
-        </ns0:Interchange>
-        
-        
-        
-        ```
-
-        Output sample ASC-X12 EDI Message
-
-        ```
-        
-        ISA*00*          *00*          *01*784849291      *01*315029991      *051007*0928*/*4010 *000000001*0*P*^~
-        GS*PO*784849291*315029991*20051007*0928*1*U*004010~
-        ST*850*10001~
-        BEG*00*NE*228914**20051006~
-        CUR*BY*EUR*0100~
-        N1*SF*BEHR SERVICE GMBH*92*1939~
-        N1*ST*BEHR SERVICE AMERICA*92*1939~
-        PO1*10000*17*EA*91.8074*EA*BP*2112910003*PD*Radiator~
-        LIN**MF*2109308~
-        SCH*17*EA***002*20060401~
-        CTT*1~
-        SE*10*10001~
-        GE*1*1~
-        IEA*1*000000001~
-        
-        
-        ```
-
+    > ### Example:  
+    > -   The following example shows the transformation from *XML to EDI* format of EDIFACT message.
+    > 
+    >     Input sample EDIFACT XML Message
+    > 
+    >     ```
+    >     
+    >     <?xml version="1.0" encoding="UTF-8"?><Interchange>
+    >         <S_UNA>:+.? '</S_UNA>
+    >         <S_UNB>
+    >             <C_S001>
+    >                 <D_0001>UNOC</D_0001>
+    >                 <D_0002>3</D_0002>
+    >             </C_S001>
+    >             <C_S002>
+    >                 <D_0004>SENDERABC</D_0004>
+    >                 <D_0007>14</D_0007>
+    >                 <D_0008>XXXX</D_0008>
+    >             </C_S002>
+    >             <C_S003>
+    >                 <D_0010>ReceiverXYZ</D_0010>
+    >                 <D_0007>14</D_0007>
+    >                 <D_0014>YYYYY</D_0014>
+    >             </C_S003>
+    >             <C_S004>
+    >                 <D_0017>150831</D_0017>
+    >                 <D_0019>1530</D_0019>
+    >             </C_S004>
+    >             <D_0020>1</D_0020>
+    >             <C_S005>
+    >                 <D_0022>HELLO WORLD</D_0022>
+    >             </C_S005>
+    >             <D_0029>A</D_0029>
+    >             <D_0035>1</D_0035>
+    >         </S_UNB>
+    >         <M_ORDERS>
+    >             <S_UNH>
+    >                 <D_0062>1</D_0062>
+    >                 <C_S009>
+    >                     <D_0065>ORDERS</D_0065>
+    >                     <D_0052>D</D_0052>
+    >                     <D_0054>96A</D_0054>
+    >                     <D_0051>UN</D_0051>
+    >                 </C_S009>
+    >                 <C_S010>
+    >                     <D_0070>2</D_0070>
+    >                 </C_S010>
+    >             </S_UNH>
+    >             <S_BGM>
+    >                 <C_C002>
+    >                     <D_1001>220</D_1001>
+    >                 </C_C002>
+    >                 <D_1004>MY_ID</D_1004>
+    >                 <D_1225>9</D_1225>
+    >                 <D_4343>NA</D_4343>
+    >             </S_BGM>
+    >             <S_DTM>
+    >                 <C_C507>
+    >                     <D_2005>137</D_2005>
+    >                     <D_2380>201507311500</D_2380>
+    >                     <D_2379>203</D_2379>
+    >                 </C_C507>
+    >             </S_DTM>
+    >             <S_DTM>
+    >                 <C_C507>
+    >                     <D_2005>2</D_2005>
+    >                     <D_2380>201508010930</D_2380>
+    >                     <D_2379>203</D_2379>
+    >                 </C_C507>
+    >             </S_DTM>
+    >             <S_CNT>
+    >                 <C_C270>
+    >                     <D_6069>16</D_6069>
+    >                     <D_6066>10</D_6066>
+    >                 </C_C270>
+    >             </S_CNT>
+    >             <S_UNT>
+    >                 <D_0074>5</D_0074>
+    >                 <D_0062>1</D_0062>
+    >             </S_UNT>
+    >         </M_ORDERS>
+    >         <S_UNZ>
+    >             <D_0036>1</D_0036>
+    >             <D_0020>1</D_0020>
+    >         </S_UNZ>
+    >     </Interchange>
+    >     
+    >     
+    >     ```
+    > 
+    >     Output sample EDIFACT EDI Message
+    > 
+    >     ```
+    >     
+    >     UNA:+.? '
+    >     UNB+UNOC:3+SENDERABC:14:XXXX+ReceiverXYZ:14:YYYYY+150831:1530+1+HELLO WORLD++A+++1'
+    >     UNH+1+ORDERS:D:96A:UN++2'
+    >     BGM+220+MY_ID+9+NA'
+    >     DTM+137:201507311500:203'
+    >     DTM+2:201508010930:203'
+    >     CNT+16:10'
+    >     UNT+5+1'
+    >     UNZ+1+1'
+    >     
+    >     ```
+    > 
+    > -   The following example shows the transformation from *XML to EDI* format of ASC-X12 message.
+    > 
+    >     Input sample ASC-X12 XML Message
+    > 
+    >     ```
+    >     
+    >     <?xml version="1.0" encoding="UTF-8"?><ns0:Interchange xmlns:ns0="urn:sap.com:typesystem:b2b:116:asc-x12:850:004010">
+    >         <S_ISA>
+    >             <D_I01>00</D_I01>
+    >             <D_I02>          </D_I02>
+    >             <D_I03>00</D_I03>
+    >             <D_I04>          </D_I04>
+    >             <D_I05_1>01</D_I05_1>
+    >             <D_I06>784849291      </D_I06>
+    >             <D_I05_2>01</D_I05_2>
+    >             <D_I07>315029991      </D_I07>
+    >             <D_I08>051007</D_I08>
+    >             <D_I09>0928</D_I09>
+    >             <D_I10>/</D_I10>
+    >             <D_I11>4010 </D_I11>
+    >             <D_I12>000000001</D_I12>
+    >             <D_I13>0</D_I13>
+    >             <D_I14>P</D_I14>
+    >             <D_I15>^</D_I15>
+    >         </S_ISA>
+    >         <S_GS>
+    >             <D_479>PO</D_479>
+    >             <D_142>784849291</D_142>
+    >             <D_124>315029991</D_124>
+    >             <D_373>20051007</D_373>
+    >             <D_337>0928</D_337>
+    >             <D_28>1</D_28>
+    >             <D_455>U</D_455>
+    >             <D_480>004010</D_480>
+    >         </S_GS>
+    >         <M_850>
+    >             <S_ST>
+    >                 <D_143>850</D_143>
+    >                 <D_329>10001</D_329>
+    >             </S_ST>
+    >             <S_BEG>
+    >                 <D_353>00</D_353>
+    >                 <D_92>NE</D_92>
+    >                 <D_324>228914</D_324>
+    >                 <D_373>20051006</D_373>
+    >             </S_BEG>
+    >             <S_CUR>
+    >                 <D_98_1>BY</D_98_1>
+    >                 <D_100_1>EUR</D_100_1>
+    >                 <D_280>0100</D_280>
+    >             </S_CUR>
+    >             <G_N1>
+    >                 <S_N1>
+    >                     <D_98_1>SF</D_98_1>
+    >                     <D_93>BEHR SERVICE GMBH</D_93>
+    >                     <D_66>92</D_66>
+    >                     <D_67>1939</D_67>
+    >                 </S_N1>
+    >             </G_N1>
+    >             <G_N1>
+    >                 <S_N1>
+    >                     <D_98_1>ST</D_98_1>
+    >                     <D_93>BEHR SERVICE AMERICA</D_93>
+    >                     <D_66>92</D_66>
+    >                     <D_67>1939</D_67>
+    >                 </S_N1>
+    >             </G_N1>
+    >             <G_PO1>
+    >                 <S_PO1>
+    >                     <D_350>10000</D_350>
+    >                     <D_330>17</D_330>
+    >                     <D_355>EA</D_355>
+    >                     <D_212>91.8074</D_212>
+    >                     <D_639>EA</D_639>
+    >                     <D_235_1>BP</D_235_1>
+    >                     <D_234_1>2112910003</D_234_1>
+    >                     <D_235_2>PD</D_235_2>
+    >                     <D_234_2>Radiator</D_234_2>
+    >                 </S_PO1>
+    >                 <S_LIN>
+    >                     <D_235_1>MF</D_235_1>
+    >                     <D_234_1>2109308</D_234_1>
+    >                 </S_LIN>
+    >                 <G_SCH>
+    >                     <S_SCH>
+    >                         <D_380>17</D_380>
+    >                         <D_355>EA</D_355>
+    >                         <D_374_1>002</D_374_1>
+    >                         <D_373_1>20060401</D_373_1>
+    >                     </S_SCH>
+    >                 </G_SCH>
+    >             </G_PO1>
+    >             <G_CTT>
+    >                 <S_CTT>
+    >                     <D_354>1</D_354>
+    >                 </S_CTT>
+    >             </G_CTT>
+    >             <S_SE>
+    >                 <D_96>10</D_96>
+    >                 <D_329>10001</D_329>
+    >             </S_SE>
+    >         </M_850>
+    >         <S_GE>
+    >             <D_97>1</D_97>
+    >             <D_28>1</D_28>
+    >         </S_GE>
+    >         <S_IEA>
+    >             <D_I16>1</D_I16>
+    >             <D_I12>000000001</D_I12>
+    >         </S_IEA>
+    >     </ns0:Interchange>
+    >     
+    >     
+    >     
+    >     ```
+    > 
+    >     Output sample ASC-X12 EDI Message
+    > 
+    >     ```
+    >     
+    >     ISA*00*          *00*          *01*784849291      *01*315029991      *051007*0928*/*4010 *000000001*0*P*^~
+    >     GS*PO*784849291*315029991*20051007*0928*1*U*004010~
+    >     ST*850*10001~
+    >     BEG*00*NE*228914**20051006~
+    >     CUR*BY*EUR*0100~
+    >     N1*SF*BEHR SERVICE GMBH*92*1939~
+    >     N1*ST*BEHR SERVICE AMERICA*92*1939~
+    >     PO1*10000*17*EA*91.8074*EA*BP*2112910003*PD*Radiator~
+    >     LIN**MF*2109308~
+    >     SCH*17*EA***002*20060401~
+    >     CTT*1~
+    >     SE*10*10001~
+    >     GE*1*1~
+    >     IEA*1*000000001~
+    >     
+    >     
+    >     ```
 
 
 

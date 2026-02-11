@@ -92,6 +92,144 @@ API Management
 </td>
 <td valign="top">
 
+Edit and Reupload OpenAPI and AsyncAPI Specifications
+
+</td>
+<td valign="top">
+
+Previously, API specification files could only be uploaded during creation. You can now edit an existing API or Event and reupload updated OpenAPI or AsyncAPI specification files directly, without recreating the product. For more nformation, see [Make APIs Imported from External Gateways Available in Developer Hub](https://help.sap.com/docs/integration-suite/sap-integration-suite/registering-api-manually?version=CLOUD) and [Import Events as AsyncAPI Specification on Developer Hub](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-products-by-importing-asyncapi-specifications?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-02-08
+
+</td>
+<td valign="top">
+
+2026-02-08
+
+</td>
+<td valign="top">
+
+2513
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Discover and Publish Events from Advanced Event Mesh in Developer Hub
+
+</td>
+<td valign="top">
+
+As a content administrator, you can discover and publish events from Advanced Event Mesh business system on Developer Hub. For more information, see [Discover and Publish Events from Advanced Event Mesh in Developer Hub](https://help.sap.com/docs/integration-suite/sap-integration-suite/discover-and-publish-events-from-advanced-event-mesh-in-developer-hub?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-01-18
+
+</td>
+<td valign="top">
+
+2026-01-18
+
+</td>
+<td valign="top">
+
+2512
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Intelligent Recommendations for Faster Anomaly Analysis
 
 </td>
@@ -132,7 +270,7 @@ Not applicable
 </td>
 <td valign="top">
 
-2025-12-07
+2025-01-07
 
 </td>
 <td valign="top">
@@ -932,7 +1070,7 @@ API Management
 </td>
 <td valign="top">
 
-Security Schemes for API Artifact on
+Security Schemes for API Artifact
 
 </td>
 <td valign="top">

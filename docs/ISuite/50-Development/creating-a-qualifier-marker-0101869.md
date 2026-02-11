@@ -16,7 +16,7 @@ Create qualifier markers that can be used to qualify a node.
 -   You've selected both the qualifying node and the node that you want to qualify to include them in your MIG.
 -   A qualifier marker from the qualifying node to the node you want to qualify isn't available in the *Constraint* column.
 -   The cardinality of the qualifying node must be either \[1..1\] or \[0..1\].
--   The qualifying node has a codelist assigned to it. For more information, see [Assigning Codelists to Leaf Nodes](assigning-codelists-to-leaf-nodes-770f7be.md).
+-   The qualifying node has a codelist assigned to it. For more information, see [Working with Codelists](working-with-codelists-770f7be.md).
 
 
 

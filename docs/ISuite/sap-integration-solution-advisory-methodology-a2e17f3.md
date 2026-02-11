@@ -45,13 +45,10 @@ The assessment process is composed of the following main steps:
 > 
 > See: [Create a Business Solution Request and Interface Request](create-a-business-solution-request-and-interface-request-f3d983a.md)
 
-> ### Note:  
-> If you are interested in getting the newest ISA-M template from SAP, send an email to: `isam@sap.com`.
-
 **Related Information**  
 
 
-[Integration Architecture Guide for Cloud and Hybrid Landscapes Based on SAP Integration Solution Advisory Methodology](https://www.sap.com/documents/2020/11/400ae14b-bf7d-0010-87a3-c30de2ffd8ff.html)
+[SAP Integration Solution Advisory Methodology Overview](https://help.sap.com/docs/sap-btp-guidance-framework/sap-integration-solution-advisory-methodology/sap-integration-solution-advisory-methodology-overview)
 
-[SAP Integration Solution Advisory Methodology](https://www.sap.com/services-support/integration-solution-advisory-methodology.html?url_id=text-glo-404-reclink)
+[Integration Architecture Guide](https://help.sap.com/docs/sap-btp-guidance-framework/integration-architecture-guide/summary)
 

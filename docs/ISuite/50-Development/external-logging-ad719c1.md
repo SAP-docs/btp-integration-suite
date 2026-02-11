@@ -25,8 +25,9 @@ To access APIs clients, see [Setting Up Inbound HTTP connections \(for API Clien
 To create a destination:
 
 1.  Go to your subaccount, and under *Connectivity*, choose *Destinations.*
-
-2.  Choose *New Destination* and configure the parameters as listed in the following table.
+2.  Select the context level where you want to create destinations.
+3.  Choose *Create*, and then choose *From Scratch* to create a new destination.
+4.  Configure the following parameters:
 
 
 <table>
@@ -123,7 +124,7 @@ Specify the value "Splunk".
 <tr>
 <td valign="top">
 
-*Password*\*
+*Password*
 
 </td>
 <td valign="top">

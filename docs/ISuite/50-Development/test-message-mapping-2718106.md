@@ -31,13 +31,13 @@ When you create message mappings, you need to check whether or not they function
 
     The name of the mapping is displayed under the **Mapping**section.
 
-4.  If you want to test the mapping, choose *Simulate* \> *Upload Input*.
+4.  If you want to test the mapping, choose *Simulate* \> *Browse*.
 
 5.  Select the input XML file that you want to test from the file system, and choose *Open*.
 
     The input XML file data is displayed on the source message table.
 
-6.  Choose *Test*.
+6.  Choose *Generate XML* \> *Test*.
 
     The output XML file data is displayed on the target message table.
 

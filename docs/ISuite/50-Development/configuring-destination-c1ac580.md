@@ -519,19 +519,22 @@ We recommend using this parameter only if the performance observed, isn't accept
 </tr>
 </table>
 
-The screenshots are for illustrative purposes only. You can use all additional properties independently from the authentication type.
-
-Example of an archiving destination with OAuth2ClientCredentials with required properties, without mTLS:
-
-![](images/Destination_OAUTH2Client_f42c852.png)
-
-Example of an archiving destination with required properties with OAuth2ClientCredentials with required properties, with mTLS
-
-![](images/CI_OAuth2ClientCred_mTLS_01877d7.png)
-
-Example of an archiving destination with BasicAuthentication and all additional properties:
-
-![](images/ArchivingDestination1_571a411.png)
+> ### Example:  
+> These screenshots are for illustrative purposes only. You can use all additional properties independently from the authentication type.
+> 
+> -   This example shows an archiving destination that uses OAuth2 client credentials with the required properties \(without mTLS\):
+> 
+>     ![](images/destination_conf_1_bf0cadf.png)
+> 
+> -   This example shows an archiving destination that uses OAuth 2.0 client credentials and includes the required properties with mTLS:
+> 
+>     ![](images/destination_conf_2_1280dbe.png)
+> 
+> -   Example of an archiving destination with BasicAuthentication and all additional properties:
+> 
+>     ![](images/Destination_3_e66347f.png)
+> 
+>     ![](images/destination_conf_3_1_b456c89.png)
 
 **Related Information**  
 

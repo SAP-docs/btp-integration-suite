@@ -7,7 +7,9 @@ In addition to anomaly detection, we have now introduced *Predictions*, an AI-ba
 The **Predictions** feature is associated with Anomaly Detection. To activate it, see [Enabling Anomaly Detection, Intelligent Recommendations, and API Call Predictions](enabling-anomaly-detection-intelligent-recommendations-and-api-call-predictions-98534a0.md).
 
 > ### Note:  
-> The availability of the anomaly detection and prediction features depends on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620).
+> AI features are accessible only with the Premium Edition. They are provided as a free promotion through June 2026 and will be commercialized afterward as Premium AI features using AI Units.
+> 
+> For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620)
 
 For example, take a look at the **API Call Predictions** graph below. In this chart, the frequency is set to the default option, which is *Every Day*, with dates ranging from February 4, 2025 to May 4, 2025 \(a maximum of 90 days can be selected, starting from the day after the current date\). The chart displays the aggregated data for all APIs. As you can see, the expected call traffic on Saturday, February 15, 2025, is relatively low. In contrast, on Tuesday, February 18, 2025, the expected call traffic is approximately 3 million.
 

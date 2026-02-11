@@ -85,6 +85,18 @@ Follow the next procedure to create an agreement template.
     <tr>
     <td valign="top">
     
+    **Initiator**
+    
+    </td>
+    <td valign="top">
+    
+    The initiator triggers the first business transaction of this agreement. To change the initiator, select a company or trading partner from the drop-down list, according to your business needs.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     **Version**
     
     </td>

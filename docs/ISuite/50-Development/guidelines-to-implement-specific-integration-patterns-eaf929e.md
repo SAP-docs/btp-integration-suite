@@ -4,7 +4,7 @@
 
 Cloud Integration supports the implementation of enterprise integration patterns that are also referred to as *integration patterns* or *messaging patterns*.
 
-For more information about enterprise integration patterns, see [https://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html](https://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html)
+For more information about enterprise integration patterns, see [https://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html](https://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html).
 
 An example of an enterprise integration pattern is the content-based router. As an example, assume that a sender is connected to multiple receiver systems. The business process requires that a message from the sender is forwarded to a particular receiver system depending on the content of the message \(for example, a customer ID\). The content-based router makes such forwarding possible.
 
@@ -12,12 +12,8 @@ Another example is the splitter, which defines that a single message is split in
 
 This section provides simple example integration flows to show how to implement enterprise integration patterns.
 
-You can find the integration flows in the following integration package published on SAP Business Accelerator Hub:
-
 > ### Note:  
-> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP Business Accelerator Hub:
-> 
-> [Integration Flow Design Guidelines - Enterprise Integration Patterns](https://api.sap.com/package/DesignGuidelinesPatterns?section=Overview) 
+> You can find the example integration flows that illustrate the guidelines explained in this section in the following integration package published on SAP Business Accelerator Hub: [Integration Flow Design Guidelines - Enterprise Integration Patterns](https://api.sap.com/package/DesignGuidelinesPatterns?section=Overview)
 > 
 > For more information, see [Copying the Integration Package and Deploying the Integration Flows](copying-the-integration-package-and-deploying-the-integration-flows-2cb1d31.md).
 
@@ -38,6 +34,8 @@ You can find the integration flows in the following integration package publishe
 [Content Filter](content-filter-6fd4a86.md "Assume that you get an order from a partner in a standard format that you've agreed upon. The message contains numerous fields that are required for communicating with your partner, however your backend system only needs a small fraction of the fields.")
 
 [Message Filter](message-filter-bd52346.md "You can use the Message Filter pattern to remove any data from a channel that you aren't interested in.")
+
+ <?sap-ot O2O class="- topic/link " href="058df115a7974005a1e33337717e6921.xml" text="" desc="" xtrc="link:7" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/eaf929e1e9ac4185b18b545df104f50f.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Recipient List](recipient-list-06594b9.md "")
 

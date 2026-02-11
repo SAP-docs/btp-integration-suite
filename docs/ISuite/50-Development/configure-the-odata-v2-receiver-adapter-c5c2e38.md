@@ -225,7 +225,7 @@ Keep this option selected \(default setting\). It ensures that your integration 
 </td>
 <td valign="top">
 
-The option is enabled by default. This option enables the reuse of connection objects from the internal connection pool, which in turn improves the network turnaround time for multiple communications to a same end point.
+This option enables the reuse of connection objects from the internal connection pool, which improves network turnaround time for multiple communications to the same endpoint. This option is enabled by default with a connection lifetime of 5 minutes. You can configure the maximum connection live time using the `SAP_connMaxLiveMinutes` property.
 
 </td>
 </tr>

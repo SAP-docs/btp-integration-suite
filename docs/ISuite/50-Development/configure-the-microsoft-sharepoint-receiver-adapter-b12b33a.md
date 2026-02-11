@@ -521,7 +521,20 @@ Enter the name of content type, for example, `Item/Document Set/Folder`.
 </td>
 <td valign="top" colspan="2">
 
-Enter the search term, for example, `searchindex=indexname`.
+Enter the query parameter to filter the search results. Syntax: `searchindex=indexname`.
+
+> ### Example:  
+> -   To return only 10 records: `$top=10`
+> 
+> -   To skip first 5 seconds: `$skip=5`
+> 
+> -   To fetch only Name and Id fields: `$select=Name,Id`
+> 
+> -   To get records where Status is Active: `$filter=Status eq 'Active'`
+> 
+> -   For combined query: `$top=10&$skip=5&$select=Name,Id&$filter=Status eq 'Active'`
+
+
 
 </td>
 </tr>
@@ -946,6 +959,25 @@ Select one of the values:
 
     You must define the value ‘JSON’ or ‘XML’ in the message exchange using the property `SAP_SharePointOutboundResponseFormat`.
 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Additional Arguments*
+
+</td>
+<td valign="top" colspan="2">
+
+You can pass additional arguments as key-value pair in this section.
+
+> ### Example:  
+> -   *Key*: $top *Value*: 10
+> 
+> -   *Key*: $skip *Value*: 10
 
 
 

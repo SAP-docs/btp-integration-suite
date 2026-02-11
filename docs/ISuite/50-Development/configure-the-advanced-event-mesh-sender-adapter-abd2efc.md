@@ -330,6 +330,52 @@ The alias of the OAuth2 Refresh token URL, stored as Secure Parameter.
 <tr>
 <td valign="top">
 
+*Proxy Type*
+
+</td>
+<td valign="top">
+
+Proxy connection is used for connecting to the advanced event mesh.
+
+These are the available options:
+
+-   Internet \(Default\): Direct connection to advanced event mesh without proxy.
+
+-   On-Premise: Connection through SAP Cloud Connector for on-premise systems.
+
+    > ### Note:  
+    > Ensure that SAP Cloud Connector is configured correctly and the advanced event mesh host is accessible through it. The adapter uses TCP protocol for communication with the advanced event mesh broker, which utilizes the SOCKS5 proxy endpoint provided by the Cloud Connector for all TCP communications.
+
+
+> ### Caution:  
+> Do not mix proxy configurations within the same tenant. If any adapter instance uses on-premise proxy type, it may affect other adapter instances configured for internet connectivity and causes unexpected routing behavior. For consistent results, use the same proxy configuration across all adapter instances.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Location ID*
+
+</td>
+<td valign="top">
+
+This is an optional parameter, if your SAP Cloud Connector uses the default location.
+
+To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud.
+
+> ### Note:  
+> Location ID must match with the location ID configured in your SAP Cloud Connector and the corresponding destination in the SAP BTP Cockpit.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *JCSMP Properties* 
 
 </td>
@@ -396,7 +442,7 @@ The adapter's consumer mode. The available options are:
 <tr>
 <td valign="top">
 
-*Run on a single worker node?* 
+*Run on a single worker node?*
 
 </td>
 <td valign="top">
@@ -405,7 +451,11 @@ When enabled, the consumer is bound to only one of the available worker nodes. I
 
 -   When consuming in *Direct* mode to avoid the processing of the same message on all the worker nodes due to fanout.
 
--   To successfully bind to an Exclusive access type Durable Topic Endpoint, as it only allows one consumer binding.
+-   When using exclusive access type, durable topic endpoints with AEM broker versions prior to 10.12.0, or when you want to ensure only one active consumer flow for exclusive durable topic endpoints.
+
+    > ### Note:  
+    > For AEM broker version 10.12.0 and above, exclusive durable topic endpoints support multiple consumer bindings in a fault-tolerant setup. The first consumer receives all messages, and additional consumers take over automatically if the primary consumer becomes unavailable.
+
 
 
 
@@ -469,7 +519,9 @@ A durable topic endpoint has an access type that determines how messages are del
 
 -   Exclusive
 
-    Specifies that only one client can bind to and be serviced by the topic endpoint. If other consumers attempt to bind, they are rejected.
+    Specifies that multiple clients can bind to the topic endpoint, but only the first consumer receives messages in a fault-tolerant manner. If the primary consumer becomes unavailable, the next consumer takes over \(AEM broker version 10.12.0 and above\).
+
+    For previous AEM broker versions, only one consumer binding is allowed.
 
 -   Non-exclusive
 

@@ -16,16 +16,21 @@ You can model the steps that write into the data store and those that consume me
 
 If multiple worker nodes are set up, there's no parallel processing of the same data store entry by these multiple worker nodes.
 
+For more information on the data store, see:
+
+-   [Define Data Store Operations](define-data-store-operations-79f63a4.md)
+
+-   [Using Data Storage Features When Designing Integration Flows](using-data-storage-features-when-designing-integration-flows-a836b4e.md)
+
+
 > ### Tip:  
-> You can use this feature to implement scenarios with quality of service Exactly Once for cases when the sender hasn't any mechanism in place to retry messages.
+> You can use this feature to implement scenarios with quality of service Exactly Once for cases when the sender doesn't have any mechanism in place to retry messages.
 > 
 > See: [Quality of Service Exactly Once](quality-of-service-exactly-once-f96cf27.md)
 > 
-> For more information on the data store, see:
+> [Explicit Retry Configuration Using Specific Headers](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/configure-xi-sender-adapter#explicit-retry-configuration-using-specific-headers)
 > 
-> -   [Define Data Store Operations](define-data-store-operations-79f63a4.md)
-> 
-> -   [Using Data Storage Features When Designing Integration Flows](using-data-storage-features-when-designing-integration-flows-a836b4e.md)
+> [Apply the Retry Pattern](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/apply-retry-pattern)
 
 > ### Note:  
 > Availability of this feature:
@@ -200,4 +205,11 @@ Enter a value for the timeout of the in-progress repository. After this time, a 
 </td>
 </tr>
 </table>
+
+**Related Information**  
+
+
+[Blog: Automating Message Retries in SAP CPI with the Data Store Channel](https://community.sap.com/t5/technology-blog-posts-by-members/automating-message-retries-in-sap-cpi-with-the-data-store-channel/ba-p/14024305)
+
+[Decoupling via Data Store](decoupling-via-data-store-d115669.md "")
 

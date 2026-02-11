@@ -85,7 +85,7 @@ Once external governance is enabled, subscription requests are processed differe
 
     In this model, products are managed outside of SAP, and their APIs are maintained and governed by an external API management system. However, these APIs can still be cataloged in Developer Hub by manually uploading their API specification in a product, allowing developers to discover them in the catalog.
 
-    -   **Publishing APIs from External Systems**: The content administrator \(assigned the AuthGroup.Content.Admin role collection\) imports APIs from the external gateway, adds them to a product, and publishes the product in Developer Hub. For detailed instructions, see[Make APIs Imported from External Gateways Available in Developer Hub](make-apis-imported-from-external-gateways-available-in-developer-hub-961d39e.md).
+    -   **Publishing APIs from External Systems**: The content administrator \(assigned the AuthGroup.Content.Admin role collection\) imports APIs from the external gateway, adds them to a product, and publishes the product in Developer Hub. For detailed instructions, see[Import APIs from External Gateways and Publish on Developer Hub](import-apis-from-external-gateways-and-publish-on-developer-hub-961d39e.md).
     -   During this process, the content administrator must mark the product as subscribable by selecting the *Allow Subscription* checkbox.
 
         This can be done either during product creation, or later, by editing the product details.

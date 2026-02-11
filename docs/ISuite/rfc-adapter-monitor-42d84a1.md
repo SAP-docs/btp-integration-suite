@@ -1,5 +1,7 @@
 <!-- loio42d84a1f578e422a949c5ef0b045cb35 -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # RFC Adapter Monitor
 
 Monitor the underlying JCo entities of the integration flows deployed with the RFC adapter.
@@ -14,6 +16,8 @@ The *RFC Adapter* card shows four different entities, and the number of items as
 You can select any of these entities to navigate to a more detailed view.
 
 Some entities may include navigation links. These links lead you to the detailed view of the entity where a filter is already applied. For example, you can select *Alive* on *JCo Server*, and the servers view opens, filtering for servers in the *Alive* state.
+
+At the bottom of the card, you find a link named :wrench: *Global RFC Adapter Properties*. Use this link to view and configure global properties for the RFC adapter. For more information, see [Global RFC Adapter Properties](rfc-adapter-monitor-42d84a1.md#loio42d84a1f578e422a949c5ef0b045cb35__section_hrn_pdk_y2w).
 
 > ### Note:  
 > The *RFC Adapter* card only displays information if there's at least one integration flow deployed on Edge Integration Cell using the RFC sender or receiver adapter. If there's no data to show, a message appears in the card, and you can’t interact with it.
@@ -425,6 +429,166 @@ In the*Metadata Cache* section, you have the option to reset the cache of the se
 > Resetting the cache requires administrative permissions, so only administrators can use this function.
 
 You can further drill down into JCo destination details by selecting a destination from the table. From there, you can navigate to JCo connection and view the JCo connection details.
+
+
+
+<a name="loio42d84a1f578e422a949c5ef0b045cb35__section_hrn_pdk_y2w"/>
+
+## Global RFC Adapter Properties
+
+This view provides a simplified representation of the RFC adapter properties, which appear as runtime parameters for worker in *Component Monitor*. For more information, see [Runtime Parameters](runtime-parameters-63c5276.md).
+
+Choose *Edit* to configure the global properties of the RFC adapter.
+
+The following properties are available:
+
+**Connection Pool**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Default Value
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Pool Check Interval \(s\)*
+
+</td>
+<td valign="top">
+
+3,600
+
+</td>
+<td valign="top">
+
+The RFC adapter creates a pool of connections for each sender channel based on the initial connection count. This property specifies how often the system checks the connection utilization in the pool. It can also resize the pool by increasing the number of connections. A check rate of zero means no check is performed.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Connection Load Threshold*
+
+</td>
+<td valign="top">
+
+0
+
+</td>
+<td valign="top">
+
+A new connection in the pool starts only when a threshold is reached. If the current pool size \(available connections\) minus the value of this property is less than or equal to the number of currently working connections, a new connection starts. A value of zero means a new connection starts only if all available connections are working. If the value is larger, a new connection starts before all available connections are working.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Maximum Pool Size*
+
+</td>
+<td valign="top">
+
+50
+
+</td>
+<td valign="top">
+
+The global adapter limit for the connection pool size.
+
+</td>
+</tr>
+</table>
+
+**RFC to XML Conversion**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Default Value
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Include XML Preamble*
+
+</td>
+<td valign="top">
+
+True
+
+</td>
+<td valign="top">
+
+Determines whether an XML preamble is added to the RFC-XML.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Ignore Base64 Validation*
+
+</td>
+<td valign="top">
+
+False
+
+</td>
+<td valign="top">
+
+If set to true, base64 incompatible characters can be decoded from RFC-XML.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Invalid Characters Handling*
+
+</td>
+<td valign="top">
+
+Ignore
+
+</td>
+<td valign="top">
+
+This means that there's no handling of invalid XML characters. The value "substitute" means invalid characters are replaced with character "\#".
+
+</td>
+</tr>
+</table>
 
 **Related Information**  
 

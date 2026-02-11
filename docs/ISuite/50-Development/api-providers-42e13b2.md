@@ -24,6 +24,9 @@ If you want to configure the Integration Suite, solution to access data from a s
 
 -   Discover services/interfaces.
 
+    > ### Note:  
+    > You can discover services and interfaces only when the provider is a **Cloud Integration** or **SAP Gateway** system.
+
 -   Simplifies on-premise connectivity.
 
 -   Simplifies configuration if the backend system changes.

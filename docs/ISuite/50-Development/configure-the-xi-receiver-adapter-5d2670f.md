@@ -167,6 +167,18 @@ If you are using SAP Cloud Integration runtime profile:
 <tr>
 <td valign="top">
 
+*Location ID*only in case *On-Premise* is selected for *Proxy Type.*
+
+</td>
+<td valign="top">
+
+To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the Cloud Connector side. You can also enter `${header.headername}` or `${property.propertyname}` to dynamically read the value from a header or a property.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Authentication Type*
 
 </td>
@@ -302,6 +314,18 @@ This feature is disabled by default.
 > You can't use the header to change the return code since the return code is defined in the adapter and can't be changed.
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Clean Up Request Headers.* 
+
+</td>
+<td valign="top">
+
+Select this option to clean up the adapter-specific headers after the receiver call.
 
 </td>
 </tr>
@@ -675,6 +699,9 @@ In such cases, a lock entry is created which you can view and release in the *Mo
 
 Use this option to avoid out-of-memory situations \(caused in many cases by large messages\).
 
+> ### Note:  
+> This option does not work for normal integration errors, only for node crashes or similar scenarios.
+
 For more information, read the SAP Community blog [Cloud Integration – Configure Dead Letter Handling in JMS Adapter](https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/).
 
 </td>
@@ -723,9 +750,9 @@ Enter the number of days after which the stored messages are deleted \(default i
 
 ## Explicit Retry Configuration Using Specific Headers
 
-When as *Quality of Service* you have selected *Exactly Once*, you can use certain headers to specify that after a defined number of message retries the message processing is changed in a specific way. For example, you can configure the integration flow so that after 5 retries the message is routed to a specific receiver \(who will then receive an alert email\). You can do this by using one of the following headers in a dynamic expression.
+When as *Quality of Service* you have selected *Exactly Once*, you can use certain headers to specify that after a defined number of message retries the message processing is changed in a specific way. For example, you can configure the integration flow so that after 5 retries the message is routed to a specific receiver \(which will then receive an alert email\). You can do this by using one of the following headers in a dynamic expression.
 
-Which header you can use, depends on the kind of temporary storage chosen.
+The kind of header you use will depend on the chosen kind of temporary storage:
 
 -   If as *Temporary Storage* you have chosen the option *Data Store*, you can use the header `SAP_DataStoreRetries`.
 
@@ -740,6 +767,10 @@ Which header you can use, depends on the kind of temporary storage chosen.
 > `${header.SAP_DataStoreRetries} > '5'`
 > 
 > In this example, the message is routed to the related receiver after 5 retries.
+
+For more information on the retry pattern, see[Apply the Retry Pattern](apply-the-retry-pattern-97789c9.md).
+
+Find a description of each header at [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md).
 
 
 
@@ -804,13 +835,13 @@ The receiver adapter checks for these properties and adds them as records within
 
 [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md "")
 
-[https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-receiver-adapter/](https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-receiver-adapter/)
+[Blog:Configuring Scenario Using the XI Receiver Adapter](https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-receiver-adapter/)
 
-[https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-sender-adapter/](https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-sender-adapter/)
+[Blog: Configuring Scenario Using the XI Sender Adapter](https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-sender-adapter/)
 
-[https://blogs.sap.com/2018/08/15/cloud-integration-configuring-explicit-retry-in-exception-sub-process-for-xi-adapter-scenarios/](https://blogs.sap.com/2018/08/15/cloud-integration-configuring-explicit-retry-in-exception-sub-process-for-xi-adapter-scenarios/)
+[Blog: Configuring Explicit Retry in Exception Sub-Process for XI Adapter Scenarios](https://blogs.sap.com/2018/08/15/cloud-integration-configuring-explicit-retry-in-exception-sub-process-for-xi-adapter-scenarios/)
 
-[https://blogs.sap.com/2018/09/21/cloud-integration-usage-of-xi-adapter-in-send-and-request-reply-step/](https://blogs.sap.com/2018/09/21/cloud-integration-usage-of-xi-adapter-in-send-and-request-reply-step/)
+[Blog: Usage of XI Adapter in Send and Request Reply Step](https://blogs.sap.com/2018/09/21/cloud-integration-usage-of-xi-adapter-in-send-and-request-reply-step/)
 
-[https://blogs.sap.com/2018/11/16/cloud-integration-configuring-id-mapping-in-xi-receiver-adapter/](https://blogs.sap.com/2018/11/16/cloud-integration-configuring-id-mapping-in-xi-receiver-adapter/)
+[Blog: Configuring Id Mapping in XI Receiver Adapter](https://blogs.sap.com/2018/11/16/cloud-integration-configuring-id-mapping-in-xi-receiver-adapter/)
 

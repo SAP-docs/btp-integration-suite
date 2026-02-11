@@ -157,6 +157,18 @@ The type of proxy that you are using to connect to the target system:
 <tr>
 <td valign="top">
 
+*Location ID* \(only available if you have selected *On-Premise* for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+To connect to a Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side. You can also enter `${header.headername}` or `${property.propertyname}` to dynamically read the value from a header or a property.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *URL to WSDL* 
 
 </td>
@@ -168,7 +180,7 @@ To select the WSDL from a source, you have the following options:
 
 -   Select a WSDL from your file system.
 
--   Select a WSDL from your integration flow resources \(see: [Manage Resources](manage-resources-b5968b2.md)\).
+-   Select a WSDL from your integration flow resources \(see: [Manage References](manage-references-b5968b2.md)\).
 
     In the *Resources* view, you can upload an individual WSDL file or an archive file \(file ending with `.zip`\) that contains multiple WSDLs or XSDs, or both. For example, you can upload a WSDL that contains an imported XSD referenced by an `xsd:import` statement. This means that if you want to upload a WSDL and dependent resources, you need to add the parent file along with its dependencies in a single archive \(`.zip` file\).
 
@@ -234,12 +246,83 @@ Name of the operation of a selected service \(that you provide in the *Service N
 <tr>
 <td valign="top">
 
+*Authentication*
+
+</td>
+<td valign="top">
+
+You can select one of the following authentication methods:
+
+-   *None*
+
+    No authentication.
+
+-   *Basic*
+
+    The tenant authenticates itself against the receiver using user credentials \(user name and password\).
+
+    It is a prerequisite that user credentials are specified in a *User Credentials* artifact and deployed on the related tenant. Enter the name of this artifact in the *Credential Name* field of the adapter.
+
+-   *Client Certificate* \(only if *Proxy Type* is set to *Internet*\)
+
+    The tenant authenticates itself against the receiver using a client certificate.
+
+    This option is only available if you have selected *Internet* for the *Proxy Type* parameter.
+
+    It is a prerequisite that the required key pair is installed and added to a keystore. This keystore has to be deployed on the related tenant. The receiver side has to be configured appropriately.
+
+-   *Principal Propagation* \(only if *Proxy Type* is set to *On-Premise*\)
+
+    The tenant authenticates itself against the receiver by forwarding the principal of the inbound user to the cloud connector, and from there to the back end of the relevant on-premise system.
+
+    > ### Remember:  
+    > When you want to use Principal Propagation as the authentication method to connect with an on-premise system, don't pass any authorization headers. Follow the approach recommended by SAP BTP Connectivity. See: [Authentication to the On-Premise System](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/67b0b94f09f2446598787eea0855e56b.html).
+
+    > ### Note:  
+    > This authentication method can only be used with the following sender adapters: HTTP, SOAP, IDoc, AS2.
+
+    > ### Note:  
+    > The token for principal propagation expires after 30 minutes.
+    > 
+    > If it takes longer than 30 minutes to process the data between the sender and receiver channel, the token for principal propagation expires, which leads to errors in message processing.
+
+-   *OAuth 2.0 SAML Bearer Assertion Grant*
+
+    If you want to connect to a system that uses OAuth 2.0 authentication supporting OAuth 2.0 SAML Bearer Assertion Grant Type, you need to deploy an OAuth2 Credential. For more information, see: [OAuth 2.0](../40-RemoteSystems/oauth-2-0-3823134.md#loio382313443b8d4453b0fd536b82b9e15d).
+
+    > ### Note:  
+    > This authentication method can only be used with *Target System Type* `SuccessFactors` and *User ID* `Key Pair Common Name (CN)`.
+
+
+> ### Note:  
+> You can externalize all attributes related to the configuration of the authentication option. This includes the attributes with which you specify the authentication option as such, as well as all attributes with which you specify further security artifacts that are required for any configurable authentication option \(*Private Key Alias* or *Credential Name*\).
+> 
+> Apply **one** of the following recommendations when externalizing such attributes.
+> 
+> -   Externalize **all attributes** related to the configuration of all options, for example, *Authentication* and *Credential Name* and *Private Key Alias*.
+> 
+> -   Externalize only one of the following attributes: *Private Key Alias* **or** *Credential Name*.
+> 
+> 
+> **Avoid incomplete externalization**, for example, only externalizing the attribute for the *Authentication* parameter but not the related *Credential Name* parameter. In such cases, the integration flow configuration \(based on the externalized parameters\) cannot work properly.
+> 
+> The reason for this is the following: If you have externalized the *Authentication* parameter and only the *Private Key Alias* parameter \(but not *Credential Name*\), all authentication options in the integration flow configuration dialog \(*Basic*, *Client Certificate*, and *None*\) are selectable in a dropdown list. However, if you now select *Basic* from the dropdown list, no *Credential Name* can be configured.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Credential Name* \(only available if you have selected *Basic* or *OAuth 2.0 SAML Bearer Assertion Grant* for the *Authentication* parameter\)
 
 </td>
 <td valign="top">
 
 Name of the *User Credentials* artifact that contains the credentials for basic authentication or OAuth 2.0 SAML Bearer Assertion Grant.
+
+You can dynamically configure the *Credential Name* field of the adapter by using a Simple Expression \(see [http://camel.apache.org/simple.html](http://camel.apache.org/simple.html). For example, you can dynamically define the *Credential Name* of the receiver adapter by referencing a message header `${header.MyCredentialName}` or a message property `${property.MyCredentialName}`.
 
 </td>
 </tr>
@@ -467,6 +550,8 @@ If you have selected the option *Plain Text Password* or *Hashed Password*, ente
 
 Alias that was assigned to the authorized user and password during tenant deployment.
 
+You can dynamically configure the *Credential Name* field of the adapter by using a Simple Expression \(see [http://camel.apache.org/simple.html](http://camel.apache.org/simple.html). For example, you can dynamically define the *Credential Name* of the receiver adapter by referencing a message header `${header.MyCredentialName}` or a message property `${property.MyCredentialName}`.
+
 </td>
 </tr>
 <tr>
@@ -508,6 +593,8 @@ Specifies the combination of message protection methods that are to be applied. 
 
 Specify an alias for the tenant private key that is to be used to sign the message.
 
+You can also enter $\{header.headername\} or $\{property.propertyname\} to read the name dynamically from a header or exchange property.
+
 The tenant private key is used to sign the request message \(that is sent to the WS provider \(receiver\)\). The tenant private key has to be part of the tenant keystore.
 
 More information: [WS-Security Configuration for the Receiver SOAP 1.x Adapter](ws-security-configuration-for-the-receiver-soap-1-x-adapter-e9f42bf.md)
@@ -526,9 +613,34 @@ More information: [WS-Security Configuration for the Receiver SOAP 1.x Adapter](
 
 Specify an alias for the public key that is to be used to encrypt the message.
 
+You can also enter `${header.headername}` or `${property.propertyname}` to read the name dynamically from a header or exchange property.
+
 The receiver \(WS provider\) public key is used to encrypt the request message \(that is sent to the receiver\). This key has to be part of the tenant keystore.
 
 More information: [WS-Security Configuration for the Receiver SOAP 1.x Adapter](ws-security-configuration-for-the-receiver-soap-1-x-adapter-e9f42bf.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Signature Algorithm* 
+
+</td>
+<td valign="top">
+
+Specify a signature algorithm to be applied when signing the request message.
+
+Possible values:
+
+-   SHA1 \(default value\)
+
+-   SHA256
+
+-   SHA512
+
+
+
 
 </td>
 </tr>

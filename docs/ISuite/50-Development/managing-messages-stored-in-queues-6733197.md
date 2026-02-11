@@ -140,7 +140,7 @@ Number of retries of the message.
 </td>
 <td valign="top">
 
-Date when the next retry is scheduled.
+The date when the next retry is scheduled.
 
 </td>
 </tr>
@@ -188,7 +188,7 @@ Move up to 100 selected messages to any Exclusive or Non-Exclusive queue.
 > When you select more than 100 messages, only the first 100 messages are moved.
 
 > ### Note:  
-> The message order won't be maintained when moving messages from an Exclusive queue.
+> The message order is not maintained when moving messages from an Exclusive queue.
 
 
 

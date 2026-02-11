@@ -12,7 +12,7 @@ The result list differentiates between messages that are exclusively exchanged b
 
 ## Prerequisite
 
-To utilize this feature the following role collections must be assigned to the user:
+To utilize this feature, one of the following role collections must be assigned to the user:
 
 -   *PI\_Business\_Expert*
 -   *PI\_Administrator*

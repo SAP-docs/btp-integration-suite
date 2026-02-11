@@ -58,6 +58,29 @@ To import an AsyncAPI specification, you must first create a product. Then, use 
     > ### Note:  
     > You can also remove events from the draft product if needed. To remove an event from the product draft, select the event and choose *Remove*.
 
+8.  To make the imported events available for consumption, publish the product:
+
+    1.  Choose *Publish*.
+
+    2.  In the confirmation dialog, choose *Publish* to make the product available in the catalog for public viewing.
+
+    If you need to update the metadata or replace the AsyncAPI Specification file for an event imported from an external gateway after publishing, proceed as follows:
+
+    -   Choose *Edit* for the product to move it back to the *Draft* state.
+    -   Ensure the product is in *Draft* state, as events can be edited only in draft products.
+
+    Then, optionally, perform the following steps to edit the API:
+
+    1.  In the *Events* tab, select the event you want to modify.
+    2.  Choose *Edit*.
+    3.  Re-upload the AsyncAPI Specification file using *Browse Files* or drag-and-drop.
+    4.  When prompted, choose whether to override the existing metadata fields \(Name, Short Text, Description\) with values from the uploaded AsyncAPI Specification file.
+    5.  Confirm to apply the changes.
+
+        You can update the metadata to match your requirements.
+
+    6.  Choose *Save*.
+
 
 
 

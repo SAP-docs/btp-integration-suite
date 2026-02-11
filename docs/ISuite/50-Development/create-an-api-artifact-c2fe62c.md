@@ -44,20 +44,20 @@ SAP Integration Suite provides several methods to model API artifact to be deplo
 
     See, [Create an API Artifact Using an API Specification](create-an-api-artifact-using-an-api-specification-39c2b30.md).
 
--   *Reusable API Artifact*: The reusable API artifact feature enables you to encapsulate a standardized set of API policies and mediation logic—such as authentication, transformation, and validation—into modular units that can be centrally defined and invoked across multiple API artifacts. For more information, see [Create a Reusable API Artifact](create-a-reusable-api-artifact-0112688.md).
+-   *Reusable API Artifact*: The reusable API artifact feature enables you to encapsulate a standardized set of API policies and mediation logic—such as authentication, transformation, and validation—into modular units that can be centrally defined and invoked across multiple API artifacts. For more information, see  <?sap-ot O2O class="- topic/xref " href="0112688ab000469f9939f8f53fcb2ff6.xml" text="" desc="" xtrc="xref:11" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/c2fe62c32855435f8b64e0fd10c8507e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 **Related Information**  
 
 
 [Add Resources to an API Artifact](add-resources-to-an-api-artifact-b5d0e4c.md "Add a resource to refer to individual endpoints or services.")
 
-[Copy an API Artifact](copy-an-api-artifact-820c9e8.md "You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API artifact but with some modifications or variations.")
-
 [Policy Definition and Types of Policies](policy-definition-and-types-of-policies-c744df5.md "You can define the behavior of an API by using policies.")
 
-[Deploy an API Artifact](deploy-an-api-artifact-b70e7ec.md "After creating an API artifact, it is necessary to deploy it on the chosen runtime in order to make it executable and ready for use.")
+[Design Guidelines for API Artifact](design-guidelines-for-api-artifact-7e704f7.md "A set of best practices to ensure that APIs are designed for consistency, scalability, security, and ease of maintenance within SAP Integration Suite.")
 
 [Externalize Parameter for API Artifact](externalize-parameter-for-api-artifact-ce0a468.md "You can use the externalization feature to define API policies and integration flows that can retrieve externalized configuration values during runtime. These parameters can be utilized later without modifying the standard API artifact.")
 
-[Design Guidelines for API Artifact](design-guidelines-for-api-artifact-7e704f7.md "A set of best practices to ensure that APIs are designed for consistency, scalability, security, and ease of maintenance within SAP Integration Suite.")
+[Deploy an API Artifact](deploy-an-api-artifact-b70e7ec.md "After creating an API artifact, it is necessary to deploy it on the chosen runtime in order to make it executable and ready for use.")
+
+[Copy an API Artifact](copy-an-api-artifact-820c9e8.md "You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API artifact but with some modifications or variations.")
 

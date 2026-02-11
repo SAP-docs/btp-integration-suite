@@ -41,7 +41,7 @@ After making your selection, the dashboard displays the most critical resources 
 
     -   *Connection Status*: Monitor periods of disconnection from the cloud.
 
-        For more information, see [Connection Status](connection-status-1f60cf8.md).
+        For more information, see [Offline Mode Overview](offline-mode-overview-1f60cf8.md).
 
 
 -   *RFC Adapter*: Monitor the underlying JCo entities of the integration flows deployed with the RFC adapter.

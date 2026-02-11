@@ -219,6 +219,7 @@ Create and maintain system-related configurations for your partner profile.
     > -   IDOC
     > -   SOAP 1.x
     > -   Process\_Direct
+    > -   SFTP
     > 
     > The supported adapters for *Receiver* communication are:
     > 
@@ -228,6 +229,7 @@ Create and maintain system-related configurations for your partner profile.
     > -   SAP RM
     > -   SOAP\_1.x
     > -   Process\_Direct
+    > -   SFTP
 
 
     
@@ -1037,13 +1039,506 @@ Create and maintain system-related configurations for your partner profile.
     </tr>
     </table>
     
-14. Choose *Save*.
+14. The following tabs appear if you choose the SFTP sender adapter. Maintain the following fields:
+
+    ****
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Name
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Directory
+    
+    </td>
+    <td valign="top">
+    
+    Enter the file path at which the files should be read. The relative path is used to read the file from a directory.
+
+    Example: `parentdirectory/childdirectory`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    File Name
+    
+    </td>
+    <td valign="top">
+    
+    Enter the name of the file that should be read. You can use wildcards to specify which file in the specified directory is read.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Address
+    
+    </td>
+    <td valign="top">
+    
+    Enter the host name or IP address and port of the SFTP server.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Proxy Type
+    
+    </td>
+    <td valign="top">
+    
+    Defines the proxy type to be used to connect to SFTP server. Select one of the following:
+
+    -   Select *Internet* to connect directly to the SFTP server.
+    -   Select *On-Premise* to connect to an on-premise SFTP server.
+
+    See [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
+
+    For more information on how to use the **On-Premise** option to connect to an on-premise SFTP server, see the SAP Community blog [Cloud Integration – How to Connect to an On-Premise SFTP Server via Cloud Connector](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fblogs.sap.com%2F2018%2F11%2F16%2Fcloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector%2F).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Location ID
+    
+    </td>
+    <td valign="top">
+    
+    This option is available if the proxy type is **On-Premise**.
+
+    To connect to a Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration of SAP BTP cockpit.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Authentication
+    
+    </td>
+    <td valign="top">
+    
+    This field specifies how Cloud Integration is authenticated when connecting to the SFTP server. Enter the ID of the user performing the file transfer.
+
+    > ### Caution:  
+    > The user name must only consists of the following characters:
+    > 
+    > `A-z`, `0-9`, `_` \(underscore\), `-` \(hyphen\), `/` \(slash\), `?` \(question mark\), `@` \(at\), `!` \(exclamation mark\), `$` \(dollar sign\), `'` \(apostrophe\), `( )` \(brackets\), `*` \(asterisk\), `+` \(plus sign\), `,` \(comma\), `;` \(semicolon\), `=` \(equality sign\), `.` \(dot\), `~` \(tilde\)
+    > 
+    > If any other characters are used, an attempt for anonymous login is made, which results in an error.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Credential Name
+    
+    </td>
+    <td valign="top">
+    
+    If the authentication method is *User Name/Password* or *Dual*: Referenced credential name
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    User Name
+    
+    </td>
+    <td valign="top">
+    
+    If the authentication method is *Public Key*: ID of the user performing the file transfer .
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Private Key Alias
+    
+    </td>
+    <td valign="top">
+    
+    If the authentication method is *Public Key* or *Dual*: The alias used to identify the private key in the key store and communicate with the SFTP server.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Timeout \(in ms\)
+    
+    </td>
+    <td valign="top">
+    
+    Maximum waiting time \(in milliseconds\) to contact the SFTP server while establishing a connection or performing a read operation.
+
+    Default value: `10000`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Maximum Reconnect Attempts
+    
+    </td>
+    <td valign="top">
+    
+    Maximum number of attempts allowed to reconnect to the SFTP server.
+
+    Default value: `3`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Reconnect Delay \(in ms\)
+    
+    </td>
+    <td valign="top">
+    
+    Waiting time \(in milliseconds\) that before attempting to reconnect to the remote SFTP server. Default value: 1000
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Automatically Disconnect
+    
+    </td>
+    <td valign="top">
+    
+    Disconnects from the server after each poll.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Change Directory Stepwise
+    
+    </td>
+    <td valign="top">
+    
+    Changes the directory levels one at a time.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Use Fast Exists Check
+    
+    </td>
+    <td valign="top">
+    
+    If selected, the file exists check is performed on the SFTP server. If your server doesn't support this operation, switch back to client side check.
+    
+    </td>
+    </tr>
+    </table>
+    
+15. The following tabs appear if you choose **SFTP receiver adapter**. Maintain the following fields:
+
+    ****
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Name
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Directory
+    
+    </td>
+    <td valign="top">
+    
+    File path to where the file should be written.
+
+    Example: `parentdirectory/childdirectory`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    File Name
+    
+    </td>
+    <td valign="top">
+    
+    Name of the file to be written. The filename can be composed of string constants and simple expressions like `${header.<header-name>}`, `${property.<property-name>}`, the predefined placeholder `${TIMESTAMP}` \(current timestamp\) and `${TIMESTAMP_WITH_MS}` \(current timestamp with milliseconds\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Address
+    
+    </td>
+    <td valign="top">
+    
+    Host name or IP address and port of the SFTP server
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Proxy Type
+    
+    </td>
+    <td valign="top">
+    
+    Specify the proxy type to be used:
+
+    -   Select *Internet* to connect directly to the SFTP server.
+    -   Select *On-Premise* to connect to on-premise system.
+
+    See [Using SAP Cloud Connector with Cloud Integration Adapters](../40-RemoteSystems/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
+
+    For more information on how to use the **On-Premise** option to connect to an on-premise SFTP server, see the SAP Community blog [Cloud Integration – How to Connect to an On-Premise SFTP Server via Cloud Connector](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fblogs.sap.com%2F2018%2F11%2F16%2Fcloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector%2F).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Location ID
+    
+    </td>
+    <td valign="top">
+    
+    This option is available if the proxy type is *On-Premise*.
+
+    To connect to a Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration of SAP BTP cockpit.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Authentication
+    
+    </td>
+    <td valign="top">
+    
+    This field specifies how the user is authenticated. Enter the ID of the user performing the file transfer.
+
+    > ### Caution:  
+    > The user name must only consists of the following characters:
+    > 
+    > `A-z`, `0-9`, `_` \(underscore\), `-` \(hyphen\), `/` \(slash\), `?` \(question mark\), `@` \(at\), `!` \(exclamation mark\), `$` \(dollar sign\), `'` \(apostrophe\), `( )` \(brackets\), `*` \(asterisk\), `+` \(plus sign\), `,` \(comma\), `;` \(semicolon\), `=` \(equality sign\), `.` \(dot\), `~` \(tilde\)
+    > 
+    > If any other characters are used, an attempt for anonymous login is made, which results in an error.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Credential name
+    
+    </td>
+    <td valign="top">
+    
+    If the authentication method is **User Name/Password** or **Dual**: Referenced credential name
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    User Name
+    
+    </td>
+    <td valign="top">
+    
+    If the authentication method is **Public Key**: ID of the user performing the file transfer
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Private Key Alias
+    
+    </td>
+    <td valign="top">
+    
+    If the authentication method is **Public Key** or **Dual**: The alias used to identify the private key in the keystore to communicate with the SFTP server
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Timeout \(in ms\)
+    
+    </td>
+    <td valign="top">
+    
+    Maximum waiting time taken to contact the SFTP server while establishing connection or performing a read operation.
+
+    Default value: `10000`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Maximum Reconnect Attempts
+    
+    </td>
+    <td valign="top">
+    
+    Maximum number of attempts allowed to reconnect to the SFTP server.
+
+    Default value: `3`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Reconnect Delay \(in ms\)
+    
+    </td>
+    <td valign="top">
+    
+    Time period to wait before attempting to reconnect to the remote SFTP server.
+
+    Default value: `1000`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Automatically Disconnect
+    
+    </td>
+    <td valign="top">
+    
+    Disconnect from the SFTP server after each message processing
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Change Directories Stepwise
+    
+    </td>
+    <td valign="top">
+    
+    Changes directory levels one at a time.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Create Directories
+    
+    </td>
+    <td valign="top">
+    
+    Creates missing directory levels automatically as provided in the file's path name.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Flatten File names
+    
+    </td>
+    <td valign="top">
+    
+    Flattens the file path by removing the directory levels. If specified, only the file names are considered, and the files are written into a single directory.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Handling for Existing Files
+    
+    </td>
+    <td valign="top">
+    
+    If a file already exists in the target, allows to:
+
+    -   **Override**: Replace the existing file content with the new one.
+    -   **Append**: Add the new file content to the end of the existing one.
+    -   **Fail**: Do not perform any action and raise a failure.
+    -   **Ignore**: Do not perform any action
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Use Fast Exists Check
+    
+    </td>
+    <td valign="top">
+    
+    If selected, the file exists check is performed on the SFTP server. If your server doesn't support this operation, switch back to client side check.
+    
+    </td>
+    </tr>
+    </table>
+    
+16. Choose *Save*.
 
     > ### Note:  
     > You need to maintain both *Sender* and *Receiver* communication channel details to complete the system set-up.
     > 
     > After maintaining the necessary details, the *Status* of the System is set to *Completed*.
 
-15. Next, you need to maintain the certificates. See [Certificates](certificates-5c4a01a.md).
+17. Next, you need to maintain the certificates. See [Certificates](certificates-5c4a01a.md).
 
 

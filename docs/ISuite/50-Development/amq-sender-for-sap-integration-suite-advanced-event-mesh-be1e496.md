@@ -335,9 +335,7 @@ Don't select *MODIFIED\_FAILED\_UNDELIVERABLE*.
 > ### Note:  
 > See this [general information on AMQP](http://docs.oasis-open.org/amqp/core/v1.0/amqp-core-complete-v1.0.pdf) on delivery statuses and their meaning.
 > 
-> You can use the `JMSRedelivered` header to configure a delay in retry processing. For more information, see the SAP Community blog [Cloud Integration – Connecting to Messaging Systems using the AMQP Adapter](https://community.sap.com/t5/technology-blogs-by-sap/cloud-integration-connecting-to-messaging-systems-using-the-amqp-adapter/ba-p/13419906).
-> 
-> This blog also contains an overview of the recommended settings for different message brokers.
+> For most message brokers, you can use the `JMSRedelivered` and `JMSXDeliveryCount`headers to configure a delay in retry processing. For more information, see the SAP Community blog [Cloud Integration – Connecting to Messaging Systems using the AMQP Adapter](https://community.sap.com/t5/technology-blogs-by-sap/cloud-integration-connecting-to-messaging-systems-using-the-amqp-adapter/ba-p/13419906). This blog also contains an overview of the recommended settings for different message brokers. For a description of the mentioned headers, see [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md).
 
 
 

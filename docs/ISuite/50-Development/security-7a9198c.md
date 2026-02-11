@@ -116,7 +116,7 @@ Stateless mediation
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="2">
+<td valign="top" rowspan="3">
 
 Data exposure control
 
@@ -141,6 +141,18 @@ Creation of different business data graphs for different data sets.
 <td valign="top">
 
 Dedicated business data graph per business scenario
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Disabling of the destinations in the activated business data graph.
+
+</td>
+<td valign="top">
+
+The access of the activated business data graph to a specific destination can only be disabled by deleting the destination in the SAP BTP cockpit.
 
 </td>
 </tr>

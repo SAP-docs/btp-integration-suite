@@ -102,6 +102,8 @@ Import request is delegated to deploy-service using destination D4.
     </td>
     <td valign="top">
     
+    You must get the the org name and space name f the target subaccount where the Transport Management Service subscribed.
+
     Enter `https://deploy-service.cfapps.<default-domain>/slprot/<myorg>/<myspace>/slp` in the URL field.
 
     For `<myorg>` details navigate to your subaccount in BTP cockpit and choose *Overview* on the left pane. Choose *Cloud Foundry Environment* on the *Overview* page and copy the *Org Name* that appears in this section.

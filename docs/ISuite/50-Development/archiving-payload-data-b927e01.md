@@ -12,16 +12,16 @@ The feature *Archive Sender/Receiver Payload Data* allows you to archive your in
     -   Send a **POST** call to the URL: `https://path-to-odata-api/api/v1/activateB2BArchivingConfiguration` where `path-to-odata-api` is specific to the user's environment.
 
     -   This call is sent to enable the archiving function. If successful, the call returns a 200 response code with a message stating the activation was successful. You can then enable the checkbox *Archive Sender Payload*/*Archive Receiver Payload* field provided in your agreement for the sender/receiver interchange respectively under *B2B Scenarios* tab.
-    -   To check whether archiving is currently configured on a tenant, use the OData API that allows you to query the message processing logs. You can do this by sending a **GET** call to te URL: `https://path-to-odata-api/api/v1/B2BArchivingConfigurations('tenant-name')` where `path-to-odata-api` is specific to the user's environment.
+    -   To check whether archiving is currently configured on a tenant, use the OData API that allows you to query the message processing logs. You can do this by sending a **GET** call to the URL `https://path-to-odata-api/api/v1/B2BArchivingConfigurations('tenant-name')` where `path-to-odata-api` is specific to the user's environment.
 
--   The archiving job will be executed once a day and the status of the archiving job can be monitored in the *Monitor* tab. You can also check the overall status of an archiving schedule job execution by calling the KPI OData API `https://path-to-odata-api/api/v1/B2BArchivingKeyPerformanceIndicators` where `path-to-odata-api` is specific to your environment.
+-   The archiving job will be executed once a day. You can check the overall status of an archiving schedule job execution by calling the KPI OData API `https://path-to-odata-api/api/v1/B2BArchivingKeyPerformanceIndicators` where `path-to-odata-api` is specific to your environment.
 -   Each archived interchange will be compressed to one zip file with the naming convention `Business_Document_Data_Content<Interchange ID>.zip`.
--   The archiving job, once activated will archive the payload data upto 7 days before the date of activation. Other payload data created before this time period will not be archived.
+-   The archiving job, once activated will archive the payload data up to 7 days before the date of activation. Other payload data created before this time period will not be archived.
 -   Each archived interchange is sent to CMIS system in one transaction.
 -   There is no retry mechanism for the failed archived interchanges. These interchanges have to wait for the next archiving schedule job execution.
 -   Once the archiving job is completed, you need to check your CMIS system to check the archived data as the tenant does not display this information.
 -   The archiving feature is supported by the generic integration flow from version 2.3.0 and above.
--   Once the interchange arhive is completed, the monitor backend database will store the data for 90 days post which the data will be deleted automatically. To monitor the archiving status, see [Update Agreements](update-agreements-b5e1fc9.md)
+-   Once the interchange archive is completed, the monitor backend database will store the data for 90 days post which the data will be deleted automatically. To monitor the archiving status, see [Update Agreements](update-agreements-b5e1fc9.md)
 
 
 
@@ -111,7 +111,7 @@ ProcessingStatus
 <tr>
 <td valign="top">
 
-Receiver Functional Acknowledgement Status
+Receiver Functional Acknowledgment Status
 
 </td>
 <td valign="top">
@@ -135,7 +135,7 @@ DocumentCreationTime
 <tr>
 <td valign="top">
 
-Receiver Technical Acknwoledgement Status
+Receiver Technical Acknowledgment Status
 
 </td>
 <td valign="top">
@@ -283,7 +283,7 @@ SenderMessageType
 <tr>
 <td valign="top">
 
-Gourp Control Number
+Group Control Number
 
 </td>
 <td valign="top">
@@ -457,7 +457,7 @@ RecieverMessageType
 <tr>
 <td valign="top">
 
-Gourp Control Number
+Group Control Number
 
 </td>
 <td valign="top">
@@ -505,7 +505,7 @@ RecieverMessageNumber
 <tr>
 <td valign="top">
 
-Reciever Name
+Receiver Name
 
 </td>
 <td valign="top">
@@ -589,7 +589,7 @@ AgreedReceiverIdentifierQualifierAtRecieverSide
 <tr>
 <td valign="top">
 
-Reciever Communication Partner Name
+Receiver Communication Partner Name
 
 </td>
 <td valign="top">

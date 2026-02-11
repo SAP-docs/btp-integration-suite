@@ -55,7 +55,7 @@ This service supports multitenancy. It can be used in tenant-aware applications.
 
 Data Space Integration allows data space participants to exchange data with other participants of the same data space. The following graphic illustrated the different steps and interactions involved in this exchange:
 
-![The diagram shows how the participants of a data space interact with each other. First, the provider creates both assets and policies, which come together to form a contract definition. Based on the contract definition, the provider creates a contract offer. At this point, the provider and consumer together begin the contract negotiation based on the contract offer. This process of negotating and creating offers can take multiple interations. After successful negotiations between provider and consumer, a contract agreement is reached.](images/Dataspace_Interaction_Process_a605456.jpg)
+![The diagram shows how the participants of a data space interact with each other. First, the provider creates both assets and policies, which come together to form a contract definition. Based on the contract definition, the provider creates a contract offer. At this point, the provider and consumer together begin the contract negotiation based on the contract offer. This process of negotiating and creating offers can take multiple integrations. After successful negotiations between provider and consumer, a contract agreement is reached.](images/Dataspace_Interaction_Process_a605456.jpg)
 
 For more information, see [Concepts in Data Space Integration](concepts-in-data-space-integration-fcf96b2.md).
 
@@ -89,7 +89,7 @@ SAP BTP cockpit
 
 The central point for managing all activities associated with your SAP BTP subaccount.
 
-See: [Tools](https://help.sap.com/docs/btp/sap-business-technology-platform/tools?version=Cloud&q=tools) 
+See [Tools](https://help.sap.com/docs/btp/sap-business-technology-platform/tools?version=Cloud&q=tools).
 
 </td>
 </tr>
@@ -103,7 +103,23 @@ Cloud Integration
 
 Integrate SAP and non-SAP, cloud, and on-premise applications and process messages in real-time scenarios spanning different companies, organizations, or departments within one organization.
 
-See: [Cloud Integration](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/sap-cloud-integration?version=Cloud&locale=en-US) 
+See [Cloud Integration](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/sap-cloud-integration?version=Cloud&locale=en-US).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Decentralized Identity Verification
+
+</td>
+<td valign="top">
+
+Decentralized Identity Verification is a service on SAP BTP based on self-sovereign identity \(SSI\) to manage digital identities. By using Decentralized Identity Verification, you have the sole ownership over your identities and personal data and can share them securely with others. The control over those identities is divided among three personas: The issuer, the verifier, and the holder.
+
+During the activation of Data Space Integration, you can enable Decentralized Identity Verification and later use the wallet from it during the onboarding. See [Onboarding With a Wallet in Decentralized Identity Verification](onboarding-with-a-wallet-in-decentralized-identity-verification-afb114e.md).
+
+See [What Is Decentralized identity Verification?](https://help.sap.com/docs/DECENTRALIZED_IDENTITY_VERIFICATION/a1fc8fb2d89041b3849442692b2504b0/7339437b59eb4b1e99115e004f31b71b.html).
 
 </td>
 </tr>

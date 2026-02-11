@@ -159,7 +159,7 @@ The supported file types for source and target messages are:
 
 2.  If you want to assign an existing mapping definition \(.mmap file\) which is fixed, do the following substeps:
 
-    1.  From [Manage Resources](manage-resources-b5968b2.md), add or refer existing mapping resources to your integration flow.
+    1.  From [Manage References](manage-references-b5968b2.md), add or refer existing mapping resources to your integration flow.
 
     2.  In the property sheet of the message mapping step, choose the *Processing* tab.
 
@@ -217,6 +217,8 @@ Now that you've defined the mapping, proceed with further actions.
     3.  Enter the script for the custom function you want to create and choose *OK*.
 
     4.  To assign a function library object as an user-defined function, see: [Consuming Function Library in Message Mapping](consuming-function-library-in-message-mapping-d4dcb4a.md).
+
+    5.  Choose <span class="SAP-icons-V5"></span> and select *Edit Script* to view and edit the user-defined function. You can also choose *Delete* to remove it.
 
 
 6.  Configure the settings of the message mapping to handle basic data type and externally referenced schema in the target JSON schema.

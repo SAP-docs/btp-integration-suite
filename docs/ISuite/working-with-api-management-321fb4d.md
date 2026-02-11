@@ -166,7 +166,7 @@ Limits in API Management
 </td>
 <td valign="top">
 
-There are certain boundary conditions to consider when building, managing, and reviewing APIs. API Management is designed to perform at its best when configured within these specified conditions. For more information, see [Limits in API Management](limits-in-api-management-f70f425.md).
+There are certain boundary conditions to consider when building, managing, and reviewing APIs. API Management is designed to perform at its best when configured within these specified conditions. For more information, see [Limits in API Management](https://help.sap.com/docs/integration-suite/sap-integration-suite/limits-in-api-management?version=CLOUD).
 
 </td>
 </tr>

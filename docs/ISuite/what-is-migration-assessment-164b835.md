@@ -38,7 +38,7 @@ Learn more about Migration Assessment.
 > ### Note:  
 > Migration Assessment focuses on the extraction and assessment of your data.
 > 
-> The actual migration tooling, which migrates your integration scenarios from SAP Process Orchestration to integration flows in SAP Integration Suite, is part of the Cloud Integration capability. See [Migration Tooling](migration-tooling-6061016.md).
+> The actual migration tooling, which migrates your integration scenarios from SAP Process Orchestration to integration flows in SAP Integration Suite, is part of the Cloud Integration capability. See [Migration Tooling](50-Development/migration-tooling-6061016.md).
 
 
 

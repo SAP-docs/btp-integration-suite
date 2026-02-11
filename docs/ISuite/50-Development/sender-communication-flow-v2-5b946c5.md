@@ -8,11 +8,11 @@ Configure the sender side integration flow.
 
 The integration flows receive and extract messages sent using the AS2, AS2 MDN, IDoc, SOAP and ProcessDirect adapter. In 2.1.0 version, the error messages are persisted in the JMS Queue and also during retry, the error messages will be persisted again in the queue. You need to monitor the JMS queue in order to resolve the issues.
 
-The image below shows the default configuration of the JMS *Connection* tab in 2.0.
+The following image shows the default configuration of the JMS *Connection* tab in 2.0.
 
 ![](images/JMS_Connection_Tab_2_0_576820a.jpg)
 
-Follow the procedure below to configure these integration flows.
+Follow the following procedure to configure these integration flows.
 
 > ### Note:  
 > If you have a custom integration flow calling the sender side integration flow, it has to hand over the type system in header, and avoid using the header name reserved by the application\(TPM\).
@@ -25,11 +25,11 @@ Follow the procedure below to configure these integration flows.
 > 
 >     -   If Decryption is enabled but a plain-text message is received, the integration flow will process it with no error.
 > 
-> -   If your agreements contain any transaction scenarios with AS2 adapter, it is recommended to reactivate the agreements before delpoying the integration flows to avoid any errors. This is also to ensure that the value of *SAP\_AS2\_Pid\_Resolution\_Mode* and *SAP\_AS2\_MDN\_Inbound\_Pid\_Resolution\_Mode* is pushed into the Partner Directory before deploying the integration flows.
+> -   If your agreements contain any transaction scenarios with AS2 adapter, it is recommended to reactivate the agreements before deploying the integration flows to avoid any errors. This is also to ensure that the value of *SAP\_AS2\_Pid\_Resolution\_Mode* and *SAP\_AS2\_MDN\_Inbound\_Pid\_Resolution\_Mode* is pushed into the Partner Directory before deploying the integration flows.
 > 
->     The activation will create two new PD entries for the values above and these entries are specific to an user account. So, if there are multiple agreements that use the AS2 Sender Communication of the same user account with no changes made to the *Security* or *Processing*, then you need to activate only one agreement so that the entries are created for this user account.
+>     The activation will create two new PD entries for the preceding values and these entries are specific to a user account. So, if there are multiple agreements that use the AS2 Sender Communication of the same user account with no changes made to the *Security* or *Processing*, then you need to activate only one agreement so that the entries are created for this user account.
 > 
-> -   If you have configured AS2 Partner ID based security configurations in the *Security* tab of the partner profile, then on activation of agreements using these configurations can potentially overwrite similar AS2 Partner ID based configurations done outside of Trading Partner Management solution. To know more about the IDs that could be potentially impacted, see [Creating a Trading Partner Profile](creating-a-trading-partner-profile-542fb11.md).
+> -   If you have configured AS2 Partner ID-based security configurations in the *Security* tab of the partner profile, then on activation of agreements using these configurations can potentially overwrite similar AS2 Partner ID-based configurations done outside of Trading Partner Management solution. To know more about the IDs that could be potentially impacted, see [Creating a Trading Partner Profile](creating-a-trading-partner-profile-542fb11.md).
 > -   If you have an active agreement that consists of the AS2 adapter but is not compatible with 2.0 version of the integration flow, you need to deactivate the agreement and follow few more steps to make it work with this version. To know more, see [Migration Steps for 2.0 Compatibility](migration-steps-for-2-0-compatibility-8631960.md)
 
 
@@ -127,7 +127,7 @@ Follow the procedure below to configure these integration flows.
     </td>
     <td valign="top">
     
-    Role authorisation needed to trigger the integration flow. *ESBMessaging.send* is selected by default.
+    Role authorization needed to trigger the integration flow. *ESBMessaging.send* is selected by default.
 
     Choose *Select* if you want to change the user role.
     
@@ -242,7 +242,7 @@ Follow the procedure below to configure these integration flows.
 
 ## Sender AS2 MDN Flow V2
 
-This integration flow is used to capture the Technical Acknowledgement through the AS2 adapter. You can also view the Technical Acknowledgement in the *B2B Monitoring* tab.
+This integration flow is used to capture the Technical Acknowledgment through the AS2 adapter. You can also view the Technical Acknowledgment in the *B2B Monitoring* tab.
 
 1.  In the *Artifacts* tab, choose the *Action* <span class="SAP-icons-V5"></span> button of the integration flow *Step 1 - Sender AS2 MDN Flow V2* and select *Deploy*.
 
@@ -342,7 +342,7 @@ This integration flow is used to capture the Technical Acknowledgement through t
     </td>
     <td valign="top">
     
-    Role authorisation needed to trigger the integration flow.
+    Role authorization needed to trigger the integration flow.
 
     Choose *Select* to change the user role.
     
@@ -524,7 +524,7 @@ This integration flow is used to capture the Technical Acknowledgement through t
     </td>
     <td valign="top">
     
-    Role authorisation needed to trigger the integration flow.
+    Role authorization needed to trigger the integration flow.
 
     Choose *Select* if you want to change the user role.
     
@@ -713,4 +713,60 @@ This integration flow writes the incoming message into the message queue.
     
 3.  Choose *Save*.
 4.  Choose *Deploy*.
+
+
+
+## Sender SFTP Communication Flow V2
+
+For the integration flow `Step 1 - Sender SFTP Communication Flow V2`, the following configurable parameters are available:
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+SFTP\_Sender Parameter
+
+</th>
+<th valign="top">
+
+Default Value
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+SFTP Inbound Scheduler
+
+</td>
+<td valign="top">
+
+-   Basic
+
+-   Enter As: Simple Schedule
+
+-   Repeat: None
+
+-   Schedule: On Deployment
+
+
+
+</td>
+<td valign="top">
+
+Defines the time at which the SFTP Sender is triggered to read files from SFTP Servers. In each trigger, at most 1000 files are read from each server.
+
+</td>
+</tr>
+</table>
+
+For details on the timer configuration, see [Define a Timer Start Event](define-a-timer-start-event-ae14ad7.md).
 

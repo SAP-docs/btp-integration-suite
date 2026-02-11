@@ -46,5 +46,5 @@ The following is the list of prebuilt policies supported by :
 -   Response Cache
 -   Statistics Collector Policy
 
-For more information on Security policies, see [https://blogs.sap.com/2017/08/22/sap-cloud-platform-api-management-api-security-best-practices/](https://blogs.sap.com/2017/08/22/sap-cloud-platform-api-management-api-security-best-practices/)
+For more information on Security policies, see [SAP Cloud Platform API Management - API Security Best Practices Blog Series](https://blogs.sap.com/2017/08/22/sap-cloud-platform-api-management-api-security-best-practices/).
 

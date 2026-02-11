@@ -10,7 +10,10 @@ Before you can perform the onboarding steps that are specific to Data Space Inte
 
 ## Prerequisites
 
-You've set up your global account and at least one subaccount on SAP BTP. For an overview of the required steps, see [Getting Started in the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/getting-started-in-cloud-foundry-environment?version=Cloud).
+-   You've set up your global account and at least one subaccount on SAP BTP. For an overview of the required steps, see [Getting Started in the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/getting-started-in-cloud-foundry-environment?version=Cloud).
+
+-   Not all service plans for SAP Integration Suite include Data Space Integration. Before you get started, review SAP note [2903776](https://me.sap.com/notes/2903776) to check if your current SAP Integration Suite service plan includes Data Space Integration or if you require additional licenses.
+
 
 
 

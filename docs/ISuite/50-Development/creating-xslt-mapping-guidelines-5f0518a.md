@@ -12,6 +12,8 @@ Learn how to create a new mapping guideline that uses an XSLT file as its source
 
 Besides the graphical mapping guidelines, which you define by drawing lines, you can also create XSLT mapping guidelines, which use XSLT files as source.
 
+To learn more, see the blog [Integration Advisor - Use Custom XSLT as MAG](https://community.sap.com/t5/integration-blog-posts/integration-advisor-use-custom-xslt-as-mag/ba-p/14280963).
+
 
 
 ## Procedure
@@ -26,11 +28,13 @@ Besides the graphical mapping guidelines, which you define by drawing lines, you
 
 5.  Finally, in the tab *MAG Creation*, enter a name for the new mapping guideline and choose *Create*. The new mapping guideline opens in edit mode, with unresolved errors due to a missing XSLT file.
 
-6.  To add an XSLT file, go to the *Mapping Details* and choose *Browse*, next to *New XSLT File*.
+6.  To add an XSLT file, go to *Mapping Details* and choose *Browse*, next to *New XSLT File*.
 
 7.  Select an XSLT file from your file system. To upload it to the MAG, choose *Save*.
 
-    After saving, you can review the content of the XSLT file by choosing :eye: and you can download the file by choosing <span class="SAP-icons-V5"></span> Download XSLT File.
+    After saving, the custom XSLT file is automatically validated. If there are any errors, you can review them in the *Mapping Details* section. Until you fix the file, the mapping guideline is considered erroneous.
+
+    If your XSLT file is valid, you can review its content by choosing :eye: and you can download the file by choosing <span class="SAP-icons-V5"></span> Download XSLT File.
 
     To update the file, simply choose *Browse* again and upload a new file, thereby replacing and overwriting the previous file.
 
@@ -51,6 +55,6 @@ You've created a new XSLT mapping guideline and uploaded an XSLT file as its sou
 
 After activating a MAG, you can perform the following actions:
 
--   To edit a MAG after activating it, you have to create a new draft version of the MAG by choosing *Edit*. You can then upload a new XSLT file by choosing Browse in the *Mapping Details* section, and contuining as described previously.
+-   To edit a MAG after activating it, you have to create a new draft version of the MAG by choosing *Edit*. You can then upload a new XSLT file by choosing Browse in the *Mapping Details* section, and continuing as described previously.
 -   Copy a mapping guideline: While your mapping guideline is in draft or active status, you can create a copy of it by choosing *Copy*. You can then attach an XSLT file to the new copy.
 

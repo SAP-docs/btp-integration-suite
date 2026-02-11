@@ -60,7 +60,7 @@ The *AuthGroup.Content.Admin* role collection should be assigned to you.
 **Related Information**  
 
 
-[Make APIs Available in the Catalog](make-apis-available-in-the-catalog-f148690.md "As a content administrator, make your APIs available to developers in your organization by publishing them on Developer Hub.")
+ <?sap-ot O2O class="- topic/link " href="f148690b1f7f45e894edaab3c29c701b.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/08aff917402e4abd8dba2d03e369c12e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Manage Products](manage-products-4dd3d90.md "As a content administrator, you have the ability to manage a product once it has been created.")
 

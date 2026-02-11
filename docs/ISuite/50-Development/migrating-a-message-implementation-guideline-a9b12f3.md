@@ -12,7 +12,7 @@ You can migrate your Message Implementation Guideline \(MIG\) to a different ver
 
 MIGs are developed based on predefined message definitions of a specific type system version. A MIG derives its structure definition, properties, documentation, and codelists from the underlying message template. The message structure can then be customized to meet specific business requirements.
 
-Let’s consider a scenario where, you and your Business Partner 1 agreed on using an UN/EDIFACT D.01B S3 version ORDER message. You've created a MIG based on this specific version of the message from the type system library. You've also customized your MIG definition to meet your business needs. Later, you realize that you need to build another MIG for Business Partner 2 who is also using the same message of the same type system but a different version, say, D.16A S3. However, messages from two different versions of the same type system have similar settings except for a few variations. Earlier, you had to create a new MIG based on the new version and redo the customizations that you had done in the existing MIG. Instead, you can now migrate your existing MIG to a different version of the same type system. After migration, a new MIG is created based on the chosen version including the customizations done in the existing MIG.
+Let’s consider a scenario in which you and your business partner 1 agreed on using an UN/EDIFACT D.01B S3 version ORDER message. You've created a MIG based on this specific version of the message from the type system library. You've also customized your MIG definition to meet your business needs. Later, you realize that you need to build another MIG for Business Partner 2 who is also using the same message of the same type system but a different version, say, D.16A S3. However, messages from two different versions of the same type system have similar settings except for a few variations. Earlier, you had to create a new MIG based on the new version and redo the customizations that you had done in the existing MIG. Instead, you can now migrate your existing MIG to a different version of the same type system. After migration, a new MIG is created based on the chosen version including the customizations done in the existing MIG.
 
 > ### Note:  
 > Customizations or nodes that are incompatible with the new version aren’t migrated. They're notified through error messages.
@@ -65,11 +65,15 @@ A new MIG is created.
 > -   Nodes and their properties are migrated only if they're selected in the original MIG. Unselected mandatory nodes and their properties are not migrated.
 > 
 > -   Since mandatory nodes are preselected based on the underlying message template when a MIG is created, MIG migration does not actively unselect such mandatory nodes.
-> -   For each selected node of the original MIG -
+> -   For each selected node of the original MIG, the following applies:
 > 
->     -   If a matching node is available in the new message structure, details such as properties, code values, and documentation associated with this node gets migrated to the matched node in the new MIG.
+>     -   If a matching node is available in the new message structure, details such as properties, code values, and documentation associated with this node are migrated to the matched node in the new MIG.
 > 
->     -   There can be situations where a node can't be fully matched but where the migration finds an alternative match. For example, say Node1 in namespace1 is not present in the new message but there is a Node1 in namespace2 available. In such case, migration will be done for this alternative match and you will be notified through a status notification to review this decision.
+>     -   In the following situations a node can't be fully matched, so the migration finds an alternative match:
+> 
+>         -   Example 1 \(relaxed namespace handling\): `Node1` in `namespace1` is not present in the new message, but there's a `Node1` in `namespace2` available. In such a case, this alternative match is migrated and you're notified through a status notification to review this decision.
+>         -   Example 2 \(segment group handling for UN/EDIFACT\): If `SGnn` of the old message has become `SGmm` in the new message, with the same trigger segment, then segment group `SGnn` is automatically migrated to segment group `SGmm`.
+> 
 >     -   If a matching node isn't present in the new message structure, you're notified through status notifications.
 > 
 >     > ### Note:  
@@ -85,7 +89,7 @@ This section contains the recommended follow-up steps for review and verificatio
 
     1.  Select the required cell in the *Status* column to view more details in the *Notifications* section.
 
-    2.  Choose *Edit* to add comments and set a status for the node in the *User Review* section. You can also choose to *Discard*any status notifications that you have reviewed and no longer need it.
+    2.  Choose *Edit* to add comments and set a status for the node in the *User Review* section. You can also choose to *Discard* any status notifications that you have reviewed and no longer need it.
 
     3.  Choose *Save*.
 

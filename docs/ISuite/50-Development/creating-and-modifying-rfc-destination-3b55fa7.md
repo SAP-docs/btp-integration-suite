@@ -19,7 +19,7 @@ This section outlines on how to create or modify a RFC Destination for your runt
 
 1.  Log into the SAP BTP cockpit and navigate to your subaccount.
 
-2.  Choose *Connectivity* \> *Destinations \(Legacy\)*. For using the adapter in Edge Integration Cell runtime, choose *Destinations*.
+2.  Choose *Connectivity* \> *Destinations*.
 
     > ### Note:  
     > Synchronization of the new destination from the BTP Cockpit to the Edge Integration Cell runtime typically takes two minutes.

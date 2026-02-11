@@ -196,6 +196,11 @@ Select this option if you want to allow the chunking of the data.
 
 Keep this option selected \(default setting\). It ensures that your integration flow is protected against Cross-Site-Request-Forgery, a kind of attack where a malicious party can perform harmful actions by masquerading as the logged in user.
 
+> ### Note:  
+> CSRF Protection requires HTTP Session Reuse. Set an appropriate HTTP Session Reuse value in the runtime configuration of the integration flow to avoid runtime failures.
+
+
+
 </td>
 </tr>
 <tr>
@@ -259,7 +264,7 @@ The operation that you want to perform on the selected OData entity or resource.
 
 -   Create\(POST\)
 
--   Query\(GET
+-   Query\(GET\)
 
 -   Update\(PUT\)
 
@@ -267,8 +272,24 @@ The operation that you want to perform on the selected OData entity or resource.
 
 -   Patch\(PATCH\)
 
+-   Dynamic
+
 
 To leverage all operations, always use the latest version of the adapter.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Expression*
+
+\(Applicable only if you select *Dynamic* option from the *Operation Details*\)
+
+</td>
+<td valign="top">
+
+The expression field allows you to enter a simple expression that specifies the Dynamic operation for the OData V4 call . For example, you can define that the method is determined dynamically by reading a value from a message header or property such as `${header.abc}` or `${property.abc}`. If the header or property doesn’t exist or its value is empty, the **POST** method is used by default.
 
 </td>
 </tr>
@@ -294,9 +315,7 @@ Enter a valid resource path.
 <tr>
 <td valign="top">
 
-*Query Options*
-
-\(enabled for *Query\(GET\)* operation\).
+*Query Options* 
 
 </td>
 <td valign="top">

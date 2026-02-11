@@ -69,12 +69,12 @@ Description
 <tr>
 <td valign="top">
 
-*OAuth Credential Name* 
+*Authentication Type* 
 
 </td>
 <td valign="top">
 
-Name of the credential artifact deployed on the tenant and used to connect to Dropbox account.
+*OAuth2 Authorization Code*: Name of the credential artifact deployed on the tenant and used to connect to Dropbox account using OAuth Authorization Code.
 
 </td>
 </tr>

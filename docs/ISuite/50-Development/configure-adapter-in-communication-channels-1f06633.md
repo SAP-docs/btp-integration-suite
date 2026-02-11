@@ -739,6 +739,22 @@ See [BigCommerce Receiver REST Adapter](bigcommerce-receiver-rest-adapter-f36aab
 <tr>
 <td valign="top">
 
+*BambooHR*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to communicate with BambooHR. The BambooHR adapter enables you to connect to BambooHR to access APIs related to employee, organizational, time off data etc.
+
+See [BambooHR Receiver Adapter](bamboohr-receiver-adapter-4f52e62.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Box*
 
 Receiver adapter
@@ -2372,6 +2388,22 @@ Receiver adapter
 Connects SAP Integration Suite to a remote receiver system that can process the XI message protocol.
 
 See: [Configure the XI Receiver Adapter](configure-the-xi-receiver-adapter-5d2670f.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Zendesk*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to connect to Zendesk.
+
+See: [Zendesk Receiver Adapter](zendesk-receiver-adapter-01bd8bb.md)
 
 </td>
 </tr>

@@ -16,7 +16,7 @@ You’re assigned the admin role.
 
 ## Procedure
 
-1.  Log on to the Integration Suite.
+1.  Log on to SAP Integration Suite.
 
 2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 

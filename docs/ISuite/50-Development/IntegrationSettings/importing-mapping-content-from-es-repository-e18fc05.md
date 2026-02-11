@@ -35,7 +35,6 @@ After you've configured the connection to ES Repository, you can import content 
 > 
 >     -   It contains XSLT references.
 > 
->     -   The interfaces contain more than one cardinality.
 >     -   The interfaces are asynchronous in type.
 > 
 > -   Importing, viewing, and editing of Java UDF is supported.
@@ -54,7 +53,7 @@ Here's how you can do it:
 
     If you can't find the *References* tab, choose the empty space in the integration flow editor. You will find the *References* tab at the end of the integration flow editor.
 
-2.  Choose *Add* and select a supported resource. See the supported sources here: [Manage Resources](../manage-resources-b5968b2.md).
+2.  Choose *Add* and select a supported resource. See the supported sources here: [Manage References](../manage-references-b5968b2.md).
 
 3.  Choose *ES Repository* as the source.
 

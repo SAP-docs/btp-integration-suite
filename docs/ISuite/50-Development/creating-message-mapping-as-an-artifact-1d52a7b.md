@@ -196,12 +196,16 @@ Use this option to upload a message mapping artifact stored on your computer. On
 
     If there are dependent objects, they are imported appropriately. References to the dependent objects are also created.
 
-    Cloud Integration supports the import of PI/PO message mapping objects with simple type parameters of the kind import. The imported parameters are used as message properties and are automatically pre-filled in the standard built-in functions wherever they are defined in the PI/PO message mapping object. For more information, see [Parameterized Mapping Programs](https://help.sap.com/docs/SAP_NETWEAVER_750/0b9668e854374d8fa3fc8ec327ff3693/4bf4190deaca4c86e10000000a42189e.html).
+    Cloud Integration supports the import of PI/PO message mapping objects with simple type and adapter type parameters of the kind import. The imported parameters are used as message properties and are automatically pre-filled in the standard built-in functions wherever they are defined in the PI/PO message mapping object. Although export and adapter \(channel\) type parameters are shown, they are not used or rendered within the message-mapping expression editor. For more information, see [Parameterized Mapping Programs](https://help.sap.com/docs/SAP_NETWEAVER_750/0b9668e854374d8fa3fc8ec327ff3693/4bf4190deaca4c86e10000000a42189e.html).
 
     > ### Note:  
-    > Import type parameters are now supported and are used or rendered in the expression editor for built-in functions. Although export and adapter \(channel\) type parameters are shown, they are not used or rendered within the message mapping expression editor in Integration Suite.
+    > Importing message mappings with parameters is not supported for local message mappings.
     > 
-    > The import functionality for message mapping with parameters is not supported for local message mappings in integration flows.
+    > If an imported mapping uses objects like JDBC lookups, Simple Type or Adapter‑type parameters, or functional libraries with Simple Type parameters, the integration flow must be manually adjusted to ensure correct execution.
+    > 
+    > > ### Example:  
+    > > -   JDBC Lookup: If the imported mapping uses a JDBC lookup, the integration flow must include a JDBC adapter. The lookup response must be written to a header or property and then consumed inside the message mapping according to your use case.
+    > > -   Function Library: If the imported mapping references a Function Library, only the supported parts of the library are imported. For unsupported Function Library functions or dependent archive logic, you must manually import the required archive objects, update the Function Libraries artifact accordingly, and adapt the message mapping or integration flow so the logic is implemented as required.
 
 11. Open the message mapping artifact and choose *Edit* to change the source and target messages, create mappings, and perform operations. Choose *Save*.
 

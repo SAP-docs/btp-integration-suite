@@ -5,7 +5,9 @@
 Receive real-time alerts for anomaly detection services, delivered to your preferred communication channel.
 
 > ### Note:  
-> The availability of the anomaly detection and prediction features depends on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620).
+> AI features are accessible only with the Premium Edition. They are provided as a free promotion through June 2026 and will be commercialized afterward as Premium AI features using AI Units.
+> 
+> For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620)
 
 Subscribe to the **SAP Alert Notification Service** and start receiving automated alerts for anomaly detection.
 

@@ -44,16 +44,25 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
 
     5.  Fill in the *Offer Management User* information. You can retrieve these details from the *Offer Management* user that you created in the landscape portal.
 
-    6.  Fill in the *Decentral Identity Verification* information with your *IATP STS OAuth Token URL* and the corresponding *Client ID* and *Client Secret*. You can retrieve the client details from the *Identity Wallet Management* user located in the landscape portal.
+    6.  In the section *Identity Wallet Management*, select the source of the *Wallet* you're using: *Landscape Portal*, *Third Party* \(for example, self-hosted\), or *Decentralized Identity Verification*. Depending on your choice, some fields in this section come prefilled.
 
-        You can find the *IATP STS OAuth Token URL* in the landscape portal:
+        > ### Note:  
+        > Before you can use Decentralized Identity Verification here, you must have activated it in the capability management. The activation automatically creates a wallet for you, and you can find its details, such as the dashboard URL of the newly created instance, in your SAP BTP subaccount.
+        > 
+        > For the setup process with a wallet in Decentralized Identity Verification, see [Onboarding With a Wallet in Decentralized Identity Verification](onboarding-with-a-wallet-in-decentralized-identity-verification-afb114e.md). See also [Activating the Capability](activating-the-capability-b49ad35.md) and, to learn more about Decentralized Identity Verification, see [What Is Decentralized Identity Verification?](https://help.sap.com/docs/DECENTRALIZED_IDENTITY_VERIFICATION/a1fc8fb2d89041b3849442692b2504b0/7339437b59eb4b1e99115e004f31b71b.html).
 
-        1.  For Catena-X, go to *Your Profile* \> *Connector Management* and choose your connector configuration details to view a dialog with all your details. Copy the *iatp.sts.oauth.token\_url*.
+        Provide the following information:
 
-        2.  For Cofinity-X, go to *Technical Setup* \> *Technical User Management*. Open the technical user details for the user with the Identity Wallet Management permission and copy the URL you find under *Service Endpoint*. Now, add the suffix `/oauth/token` to the URL \(after `.com`\), otherwise the onboarding runs into an error.
+        -   Find the *IATP STS OAuth Token URL* in your landscape portal as follows:
+
+            1.  For Catena-X, go to *Your Profile* \> *Connector Management* and choose your connector configuration details to view a dialog with all your details. Copy the *iatp.sts.oauth.token\_url*.
+
+            2.  For Cofinity-X, go to *Technical Setup* \> *Technical User Management*. Open the technical user details for the user with the Identity Wallet Management permission and copy the URL you find under *Service Endpoint*. Now, add the suffix `/oauth/token` to the URL \(after `.com`\), otherwise the onboarding runs into an error.
 
 
-        The other information in this section is filled in automatically. If you're using a custom landscape, you must enter these details manually as well.
+        -   Retrieve the corresponding *Client ID* and *Client Secret* from the *Identity Wallet Management* user located in the landscape portal.
+
+        -   If you use a third party wallet, you must enter the remaining details manually as well.
 
     7.  Choose *Save*.
 

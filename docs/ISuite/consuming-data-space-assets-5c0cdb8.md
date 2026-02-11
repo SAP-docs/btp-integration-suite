@@ -51,7 +51,7 @@ To consume assets using the consumer API, perform the following steps for **S3 a
 
 1.  [Discovering Offers Through a Catalog](discovering-offers-through-a-catalog-90f3619.md)
 
-2.  [Consuming S3 and Azure Assets](consuming-s3-and-azure-assets-4afdf5c.md)
+2.  [Consuming Assets Into Amazon S3 Storage](consuming-assets-into-amazon-s3-storage-4afdf5c.md)
 
 
 Perform the following steps for **HTTP assets**:

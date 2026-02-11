@@ -26,7 +26,7 @@ You are deleting a key value map.
 
 ## Procedure
 
-1.  Log on to the .
+1.  Log on to .
 
 2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 

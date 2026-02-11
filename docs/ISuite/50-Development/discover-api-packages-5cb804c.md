@@ -2,7 +2,7 @@
 
 # Discover API Packages
 
-API packages supported by the API Management are available in SAP Business Accelerator Hub. You can discover these API packages on Integration Suite.
+API packages supported by the API Management are available in SAP Business Accelerator Hub. You can discover these API packages on SAP Integration Suite.
 
 
 
@@ -10,7 +10,7 @@ API packages supported by the API Management are available in SAP Business Accel
 
 ## Discover
 
-Log on to the Integration Suite, and choose *Discover* \> *APIs* to explore the packages under the following sections:
+Log on to the SAP Integration Suite, and choose *Discover* \> *APIs* to explore the packages under the following sections:
 
 -   **Highlights**: Showcased packages are displayed in the *Featured* section. Recently published packages are displayed in the *Latest* section.
 
@@ -21,5 +21,8 @@ Each package is displayed as an individual tile, along with the name of the pack
 
 If the content has been developed by a partner, the package also displays a **Partner** label.
 
-To find out more about the features of the packages on the Integration Suite, see [Package Details](package-details-f0bf802.md).
+To find out more about the features of the packages on the SAP Integration Suite, see [Package Details](package-details-f0bf802.md).
+
+> ### Note:  
+> During the discovery of API packages from SAP Business Accelerator Hub, copying API of the type OData V4 is not supported. The supported types are REST, OData, and Policy Template.
 

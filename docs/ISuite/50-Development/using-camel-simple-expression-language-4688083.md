@@ -328,7 +328,7 @@ Refers to foo \(forward declaration\) in system \(runtime container\)
 </td>
 <td valign="top">
 
-Refers to foo \(forward declaration\) in system enviroment
+Refers to foo \(forward declaration\) in system environment
 
 </td>
 <td valign="top">
@@ -352,7 +352,7 @@ Creates date specified in command and uses `SimpleDateFormat` notation
 
 `Processed at ${date:now-2h}`
 
-Othe rexample: To write the current timestamp into a message header, define a header with the following value \(and *Type* set to *Expression*\):
+Other example: To write the current timestamp into a message header, define a header with the following value \(and *Type* set to *Expression*\):
 
 `${date:now:yyyy-MM-dd HH:mm:ss}`
 

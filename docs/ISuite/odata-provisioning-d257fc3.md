@@ -49,3 +49,7 @@ OData Provisioning functionality has previously been offered as a service on Neo
 
 [Transitioning Guide](https://help.sap.com/docs/integration-suite/transitioning-to-odata-provisioning-capability-in-sap-integration-suite/transitioning-to-odata-provisioning-capability-in-sap-integration-suite?version=CLOUD)
 
+[Multiple-Origin Composition](50-Development/multiple-origin-composition-d16fd96.md "Multiple-Origin Composition (MOC) is the ability to collect data from different back-end systems, aggregate them in a single service, and update different back-end systems, while using the same user. You can also execute a $batch request with MOC.")
+
+[Manage Metadata Validation and Cache Settings for OData Services](50-Development/manage-metadata-validation-and-cache-settings-for-odata-services-dd4df7a.md "Enable or disable metadata validation for a registered OData service. You can also allow caching of metadata, which significantly improves performance of the OData service calls. Additionally, you can view the list of services which has cached metadata. You can clear the metadata cache of the selected service or all the services.")
+

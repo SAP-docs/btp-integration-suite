@@ -30,7 +30,7 @@ Access to different features on Developer Hub depends on the service plan you've
     </th>
     </tr>
     <tr>
-    <td valign="top" rowspan="6">
+    <td valign="top" rowspan="5">
     
     An *API Admin*, you already have the *AuthGroup.API.Admin* role collection assigned to you.
     
@@ -69,18 +69,6 @@ Access to different features on Developer Hub depends on the service plan you've
     <td valign="top">
     
     [Creating a Subscription with Developer Hub Administrator Role](50-Development/creating-a-subscription-with-developer-hub-administrator-role-df4f777.md) 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Admin Center* \> *Manage Content* to adjust the visibility of the Graph navigator on Developer Hub.
-    
-    </td>
-    <td valign="top">
-    
-    [Manage Content](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-external-content-new-design?version=CLOUD&q=Exyternal%20Content) 
     
     </td>
     </tr>
@@ -164,28 +152,6 @@ Access to different features on Developer Hub depends on the service plan you've
     </td>
     <td valign="top">
     
-    *Admin Center* \> *Manage Domain Categories* to create domain categories and add the related products into relevant categories.
-
-    > ### Note:  
-    > Additinally, the *AuthGroup.API.Admin* role must be assigned to you to perform the above actions.
-
-
-    
-    </td>
-    <td valign="top">
-    
-    [Manage Domain Categories](50-Development/manage-domain-categories-bd9691d.md) 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top" rowspan="2">
-    
-    A *Content Admin* you already have the *AuthGroup.Content.Admin* role collection assigned to you.
-    
-    </td>
-    <td valign="top">
-    
     *Admin Center* \> *Manage Content* to create products that includes APIs from different business systems and manage the content that application developers can view on the catalog.
     
     </td>
@@ -198,12 +164,56 @@ Access to different features on Developer Hub depends on the service plan you've
     <tr>
     <td valign="top">
     
-    *Admin Center* \> *Manage Content* to monitor and manage all requests for product creation and updates.
+    A *Content Admin* you already have the *AuthGroup.Content.Admin* role collection assigned to you.
+    
+    </td>
+    <td valign="top">
+    
+    *Admin Center* \> *Manage Scheduled Requests* to monitor and manage all requests for product creation and updates.
     
     </td>
     <td valign="top">
     
     [Manage Scheduled Requests](50-Development/manage-scheduled-requests-7236981.md) 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    A *Content Admin* you already have the *AuthGroup.Content.Admin* role collection assigned to you.
+    
+    </td>
+    <td valign="top">
+    
+    *Admin Center* \> *Manage Content* \> *Configurations* to adjust the visibility of the Graph navigator on Developer Hub.
+    
+    </td>
+    <td valign="top">
+    
+    [Configure the Visibility of Graph Navigator](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-external-content-new-design?version=CLOUD) 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    A *Content Admin* you already have the *AuthGroup.Content.Admin* role collection assigned to you.
+    
+    </td>
+    <td valign="top">
+    
+    *Admin Center* \> *Manage Domain Categories* to create domain categories and add the related products into relevant categories.
+
+    > ### Note:  
+    > Additinally, the *AuthGroup.API.Admin* role must be assigned to you to perform the above actions.
+
+
+    
+    </td>
+    <td valign="top">
+    
+    [Manage Domain Categories](50-Development/manage-domain-categories-bd9691d.md) 
     
     </td>
     </tr>

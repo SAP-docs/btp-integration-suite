@@ -67,7 +67,7 @@ If you don't consider the proposed guidelines during integration design, there's
 
 ## Script Collection
 
-A script collection is a bundle of scripts which can be used by all the integration artifacts belonging to the same integration package. See [Developing Script and Script Collection](developing-script-and-script-collection-e60f706.md) for information on how to create and use a script collection.
+A script collection is a bundle of scripts which can be used by all the integration artifacts belonging to the same integration package. See [Working with Script and Script Collection](working-with-script-and-script-collection-e60f706.md) for information on how to create and use a script collection.
 
 The advantages of using script collections instead of local scripts are:
 

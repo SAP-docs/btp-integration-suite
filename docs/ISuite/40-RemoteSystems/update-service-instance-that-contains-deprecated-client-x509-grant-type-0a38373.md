@@ -2,12 +2,12 @@
 
 # Update Service Instance that Contains Deprecated client\_x509 Grant Type
 
-This information is relevant for you when you operate scenarios using Cloud Integration inbound authentication with client certificates and service instances with `client_x509` grant type.
+This information is relevant for you when you operate scenarios using Cloud Integration inbound authentication with client certificates and service instances that currently use the `client_x509` grant type.
 
-The `client_x509` grant type will reach its end of life in January 2026. It will be replaced by the `client_credentials`grant type. Instances currently using `client_x509` must be updated to the new grant type. Instructions for updating the service instance are provided below.
+The `client_x509` grant type is deprecated and should be replaced by the `client_credentials` grant type. Client certificate-based inbound authentication continues to be supported. Instructions for updating the service instance are provided next.
 
 > ### Caution:  
-> If the `client_x509` grant type is configured for affected service instances, updates will fail, and new service keys cannot be created. To prevent these issues, make sure to update the grant type to `client_credentials`.
+> If the `client_x509` grant type is configured for affected service instances, updates fail, and new service keys cannot be created. To avoid disruption, update the grant type to `client_credentials`.
 
 
 
@@ -34,7 +34,7 @@ To find out if a service instance is affected, perform the following steps:
 
     ![](images/grant-type-02_0e87127.png)
 
-6.  Replace the entry `client_x509` by `client_credentials`.
+6.  Replace the entry `client_x509` with `client_credentials`.
 
 7.  Update instance.
 

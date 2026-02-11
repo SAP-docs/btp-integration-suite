@@ -6,7 +6,7 @@ Access specific monitoring and logging dashboards for Edge Integration Cell.
 
 You can access the monitoring and logging functions for Edge Integration Cell in Edge Lifecycle Management. Navigate to the *Edge Nodes* tab and select the *Edge Node* for which you want to view metrics and logs. In the *General Data* column, choose one of the monitoring and logging*Quick links*. For information about system monitoring and logging stacks, see [Monitoring and Logging](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/373e1688aff8462dbcdd7b28c830639e.html).
 
-There are five preconfigured Grafana dashboards. One dashboard displays general system metrics, including CPU, memory, and disk usage. The other four dashboards focus on the following Edge Integration Cell components:
+There are different preconfigured Grafana dashboards. One of them displays general system metrics, including CPU, memory, and disk usage. The other dashboards focus on the following Edge Integration Cell components:
 
 
 
@@ -1478,11 +1478,6 @@ The analysis of Message Service's load/traffic
 
 
 
-> ### Note:  
-> You can download a PostgreSQL metrics dashboard from note [3312134](https://me.sap.com/notes/3312134) and import it into Grafana manually. However, this only works for internal PostgreSQL deployments.
-
-
-
 <a name="loio689a9a126580475c9d0b810a813a60d6__section_qgq_qd4_xfc"/>
 
 ## Edge Deploy Controller
@@ -1651,6 +1646,23 @@ The status of the connection between EDC and Message Service.
 **Description**
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+**Connection to SAP Audit Log Service**
+
+</td>
+<td valign="top">
+
+Boolean
+
+</td>
+<td valign="top">
+
+The status of the connection to the cloud. It can be connected or disconnected. If the status is disconnected, replication to the cloud is not possible, and audit log entries remain in the local database.
+
+</td>
 </tr>
 <tr>
 <td valign="top">

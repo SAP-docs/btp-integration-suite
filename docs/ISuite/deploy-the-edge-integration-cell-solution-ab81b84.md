@@ -171,6 +171,133 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
+    **SAP Monitoring Integration**
+    
+    </td>
+    <td valign="top">
+    
+    Select the SAP Monitoring Integration:
+
+    -   None
+    -   SAP Cloud ALM \(CALM\)
+    -   SAP Cloud ALM \(CALM\) mTLS
+    -   SAP Focused Run \(FRUN\)
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **CALM Data Center \(only visible if CALM is selected\)**
+    
+    </td>
+    <td valign="top">
+    
+    CALM Data Center
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **CALM OAuth URL \(only visible if CALM is selected\)**
+    
+    </td>
+    <td valign="top">
+    
+    Enter the CALM OAuth URL
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **CALM Client ID \(only visible if CALM is selected\)**
+    
+    </td>
+    <td valign="top">
+    
+    Enter the CALM Client ID
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **CALM Client Secret \(only visible if CALM is selected\)**
+    
+    </td>
+    <td valign="top">
+    
+    Enter the CALM Client Secret
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **CALM Data Center \(only visible if CALM mTLS is selected\)**
+    
+    </td>
+    <td valign="top">
+    
+    CALM Data Center
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **CALM Client Certificate \(only visible if CALM mTLS is selected\)**
+    
+    </td>
+    <td valign="top">
+    
+    Upload the CALM Client Certificate
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **FRUN Endpoint URL \( only visible if FRUN is selected\)**
+    
+    </td>
+    <td valign="top">
+    
+    Enter the FRUN Endpoint URL
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **FRUN Username \(only visible if FRUN is selected\)**
+    
+    </td>
+    <td valign="top">
+    
+    Enter the FRUN Username
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **FRUN Password \(only visible if FRUN is selected\)**
+    
+    </td>
+    <td valign="top">
+    
+    Enter the FRUN Password
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     **Enable SNC for RFC Adapter**
     
     </td>
@@ -290,15 +417,21 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    Enable External DB
+    Database Type
     
     </td>
     <td valign="top">
     
-    Select this option for production environments. You need to provide a new, empty database schema for each new deployment.
+    Select the database type:
+
+    -   Internal
+    -   PostgreSQL
+    -   HANA DB
 
     > ### Note:  
-    > You can't change this property after the initial deployment.
+    > The Internal option is for non-production environments only.
+    > 
+    > PostgreSQL and HANA DB refer to external databases.
 
 
     
@@ -422,6 +555,20 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
+    HANA DB Schema \(visible if HANA DB is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the HANA DB schema
+
+    By specifying the schema separately from the database user, you enable secure credential rotation.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     HANA DB Username \(visible if HANA DB is selected\)
     
     </td>
@@ -454,18 +601,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     Upload Trust CA certificate to connect to the SAP HANA database using TLS.
 
     A CA certificate in PEM format \(Base64 ASCII\) should include only the necessary Root CAs for connection, with a size limit of 5 kB.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Enable External Redis
-    
-    </td>
-    <td valign="top">
-    
-    Select this option for production environments.
     
     </td>
     </tr>
@@ -611,7 +746,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    HANA DB Node \(visible if HANA DB is selected as Datastore\)
+    HANA DB Node \(only visible if HANA DB is selected as Datastore\)
     
     </td>
     <td valign="top">
@@ -623,7 +758,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    HANA DB Name \(visible if HANA DB is selected as Datastore\)
+    HANA DB Name \(only visible if HANA DB is selected as Datastore\)
     
     </td>
     <td valign="top">
@@ -635,7 +770,19 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    HANA DB Username \(visible if HANA DB is selected as Datastore\)
+    HANA DB Schema \(only visible if HANA DB is selected as Datastore\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the HANA DB schema. By specifying the schema separately from the database user, you enable secure credential rotation.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    HANA DB Username \(only visible if HANA DB is selected as Datastore\)
     
     </td>
     <td valign="top">
@@ -647,7 +794,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    HANA DB Password \(visible if HANA DB is selected as Datastore\)
+    HANA DB Password \(only visible if HANA DB is selected as Datastore\)
     
     </td>
     <td valign="top">
@@ -741,6 +888,30 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Choose this option to enable port 80 on the Istio Ingress Gateway, necessary when the *Enable Default Virtual Host HTTP* setting is enabled.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Additional Ports
+    
+    </td>
+    <td valign="top">
+    
+    Additional ports to be opened on the Istio ingress gateway. This setting is currently not used by Edge Integration Cell.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Additional Ports TLS
+    
+    </td>
+    <td valign="top">
+    
+    Additional TLS ports to be opened on the Istio ingress gateway. This setting is currently not used by Edge Integration Cell.
     
     </td>
     </tr>

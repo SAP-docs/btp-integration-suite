@@ -4,6 +4,8 @@
 
 # Creating a New Message Implementation Guideline
 
+Learn how to create new message implementation guidelines.
+
 
 
 <a name="loiob894de00d93f4f58bfe5fb6ae9d35430__prereq_z41_qfr_gcb"/>
@@ -34,7 +36,12 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
 
 5.  The *Versions* step displays the available versions of the message. Choose the desired version from the list.
 
-6.  In the *Envelopes* step, select an envelope for the type system from the list. If you want to continue without any envelope, choose *None*.
+6.  In the *Envelopes* step, select an envelope for the type system from the list.
+
+    > ### Note:  
+    > To see the messages allowed for an envelope, go to *Discover* \> *Type Systems* and open the relevant type system. In the tab *Messages*, search for the envelope and open the relevant version. In the *Structure* tab, find the message placeholder and check the codelist assigned to it. The list of code values represents the allowed messages.
+
+    To continue **without an envelope**, choose *None*.
 
 7.  In the optional *Sample Payload* step, you can provide sample payload files that automatically enrich your newly created MIG. Any elements or attributes in the message structure are then auto-selected if they're present in a sample payload file.
 

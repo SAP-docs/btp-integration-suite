@@ -489,6 +489,9 @@ In such cases, a lock entry is created which you can view and release in the *Mo
 
 Use this option to avoid out-of-memory situations \(caused in many cases by large messages\).
 
+> ### Note:  
+> This option does not work for normal integration errors, only for node crashes or similar scenarios.
+
 For more information, read the SAP Community blog [Cloud Integration – Configure Dead Letter Handling in JMS Adapter](https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/).
 
 </td>
@@ -535,30 +538,6 @@ Enter the number of days after which the stored messages are deleted \(default i
 
 
 
-<a name="loio41a1a57bf54644d1bd351ca689cf531d__section_xr3_vpw_q2b"/>
-
-## Explicit Retry Configuration Using Specific Headers
-
-When as *Quality of Service* you have selected *Exactly Once*, you can use certain headers to specify that after a defined number of message retries message processing is changed in a specific way. For example, you can configure the integration flow so that after 5 retries the message is routed to a specific receiver \(who will then receive an alert email\). You can do this by using one of the following mentioned headers in a dynamic expression.
-
-Which header you can use, depends on the chosen kind of temporary storage.
-
--   If as *Temporary Storage* you have chosen the option *Data Store*, you can use header `SAP_DataStoreRetries`.
-
--   If as *Temporary Storage* you have chosen the option *JMS Queue*, you can use header `SAPJMSRetries`.
-
-
-> ### Tip:  
-> Example
-> 
-> When as *Temporary Storage* you have chosen the option *Data Store*, you can use the following expression in the route that is supposed to forward the message to the receiver of the alert email:
-> 
-> `${header.SAP_DataStoreRetries} > '5'`
-> 
-> In this example, the message is routed to the related receiver after 5 retries.
-
-
-
 Select the *Conditions* tab and specify the following parameter.
 
 **Conditions**
@@ -599,6 +578,34 @@ If a message is rejected because it exceeds the configured limit, the sender rec
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio41a1a57bf54644d1bd351ca689cf531d__section_xr3_vpw_q2b"/>
+
+## Explicit Retry Configuration Using Specific Headers
+
+When as *Quality of Service* you have selected *Exactly Once*, you can use certain headers to specify that after a defined number of message retries, message processing is changed in a specific way. For example, you can configure the integration flow so that after 5 retries the message is routed to a specific receiver \(which will then receive an alert email\). You can do this by using one of the following mentioned headers in a dynamic expression.
+
+The kind of header you use will depend on the chosen kind of temporary storage:
+
+-   If as *Temporary Storage* you have chosen the option *Data Store*, you can use header `SAP_DataStoreRetries`.
+
+-   If as *Temporary Storage* you have chosen the option *JMS Queue*, you can use header `SAPJMSRetries`.
+
+
+> ### Tip:  
+> Example
+> 
+> When as *Temporary Storage* you have chosen the option *Data Store*, you can use the following expression in the route that is supposed to forward the message to the receiver of the alert email:
+> 
+> `${header.SAP_DataStoreRetries} > '5'`
+> 
+> In this example, the message is routed to the related receiver after 5 retries.
+
+For more information on the retry pattern, see [Apply the Retry Pattern](apply-the-retry-pattern-97789c9.md).
+
+Find a description of each header at [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md).
 
 **Related Information**  
 

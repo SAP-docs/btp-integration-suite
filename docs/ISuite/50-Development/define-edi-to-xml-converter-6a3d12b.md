@@ -44,6 +44,8 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
 
     Use *EDIFACT* tab to convert the ODETTE payload to XML format.
 
+    **EDIFACT**
+
 
     <table>
     <tr>
@@ -150,7 +152,9 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     > ### Note:  
     > -   You can add XSD files to the integration flow. For more details, please refer to [Validating Message Payload against XML Schema](validating-message-payload-against-xml-schema-360dc70.md).
     > 
-    > -   The file name must have the following format:
+    > -   To retrieve the XSD file from Integration Advisor, see [Exporting XSD File from EDI Type System](exporting-runtime-artifacts-5ab4cfe.md#loio5ab4cfe5ec724adda074c9773ea6b895__section_kzc_1zj_32c) or [Exporting Runtime Artifacts from MIG or MAG](exporting-runtime-artifacts-5ab4cfe.md#loio5ab4cfe5ec724adda074c9773ea6b895__section_ggv_f2f_zhb).
+    > 
+    > -   The XSD file must come from either SAP Process Integration/SAP Process Orchestration or Integration Advisor, and the file name must adhere to one of the following formats:
     > 
     >     -   SAP Process Integration/SAP Process Orchestration XSDs:
     > 
@@ -423,10 +427,7 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     </tr>
     </table>
     
-    **TRADACOMS**
-
-    > ### Note:  
-    > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+    **X12**
 
 
     <table>
@@ -441,6 +442,195 @@ Use this procedure to convert EDIFACT, ODETTE, TRADACOMS, and ASC-X12 format int
     Description
     
     </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Source Encoding* 
+    
+    </td>
+    <td valign="top">
+    
+    Select encoding format for the incoming payload. The following encoding formats are available:
+
+    -   UTF-8
+    -   ISO-8859-1
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *EDI Schema Definition*
+    
+    </td>
+    <td valign="top">
+    
+    Select the source of schema definition. To specify the schema definition, there are the following options:
+
+    -   Integration Flow
+    -   Header
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Schemas* 
+    
+    </td>
+    <td valign="top">
+    
+    If you select Integration Flow as *EDI Schema Definition*, then you can see the table *Schemas*, in *Properties* view. Choose *Add* \> *Select* to select the valid schemas against which the conversion will take place.
+
+    > ### Note:  
+    > -   You can add XSD files to the integration flow. For more details, please refer to the topic *Validating Message Payload against XML Schema*, in developer's guide.
+    > 
+    > -   The file name must have the following format:
+    > 
+    >     -   SAP Process Integration/SAP Process Orchestration XSDs:
+    > 
+    >         -   *ASC\_<EDI\_Message\_Type\><EDI\_Message\_Version\>.xsd*
+    > 
+    >             -   Example: *ASC\_850004010.xsd \(Message Type=850 and Message Version=004010\)*
+    > 
+    >                 > ### Note:  
+    >                 > If the *EDI\_Message\_Version* length is more than 6 characters \(This is extended version\), then first 6 characters will be taken.
+    > 
+    > 
+    > 
+    >     -   Integration Advisor XSDs:
+    >         -   *ASC-X12\_<Message\_Type\>\_<Version\>.xsd*
+    > 
+    >             -   Example: *ASC-X12\_810\_004010.xsd*
+    > 
+    > 
+    > 
+    > 
+    > 
+    > -   The aforementioned values should match with the schema content.
+    > -   During runtime only XSD’s from Integration Advisor \(IA\) are supported.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Header Name* 
+    
+    </td>
+    <td valign="top">
+    
+    If you select Header as *EDI Schema Definition*, then you can see the field *HeaderName*. Enter a valid header name for the field.
+
+    > ### Note:  
+    > This header name is fetched from camel header. The header is added in script element. This script element is added before converter element. You can add value for this header in the script element.
+    > 
+    > For example, you can add the value, `/xsd/ASC-X12_810_004010.xsd`.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Empty Segment*
+
+    \(Available from version 2.8 and above\)
+    
+    </td>
+    <td valign="top">
+    
+    These are the following options:
+
+    -   *Dynamic*: If you select this option, you must define the value in `SAP_EDITOXML_X12_EMPTY_SEGMENT` exchange header.
+
+    -   *Exclude*: This option excludes the empty tags in the outgoing converted payload.
+
+    -   *Include*: This option includes the empty tags in the outgoing converted payload.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Exclude Interchange and Group envelopes*
+    
+    </td>
+    <td valign="top">
+    
+    If selected the feature notifies the converter to exclude the interchange and group envelopes found in an EDI document.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Target Root Element*
+
+    \(only available if *Exclude Interchange and Group envelopes* is not selected\)
+
+    \(Available from version 2.7 and above\)
+    
+    </td>
+    <td valign="top">
+    
+    Select to determine the target root element of the outgoing payload.
+
+    These are the following options:
+
+    -   Dynamic: If you select Dynamic, you must define the value for `interchange` or `fromIncomingPayload` in `SAP_EDITOXML_X12_TARGET_ROOT_ELEMENT` header.
+    -   Interchange: Select to use the root element from the incoming interchange.
+    -   Message Specification from Incoming Payload: Select to use the same root element as the incoming payload in the outgoing payload.
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+    **TRADACOMS**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top" colspan="2">
+    
+    > ### Note:  
+    > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" colspan="2">
+    
+    **TRADACOMS**
+    
+    </td>
     </tr>
     <tr>
     <td valign="top">

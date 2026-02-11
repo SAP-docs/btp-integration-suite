@@ -27,7 +27,7 @@ You are updating a key value map to either add an entry, delete an entry, or upd
 
 ## Procedure
 
-1.  Log on to the Integration Suite.
+1.  Log on to SAP Integration Suite.
 
 2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 

@@ -54,6 +54,22 @@ Additionally, as a best practice unused imports shouldn't be used as they create
 
 **How to Fix?**: In the script editor’s *Problems* view, navigate to the *Upgrade Readiness Check* tab, locate the problem description for unused import statements, and select *Fix* from the *Actions* column to automatically remove the unused imports. See [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md)
 
+
+
+<a name="loiofa29f02c19e744528b50fd721959f337__section_fcm_tdp_hhc"/>
+
+## Access resources appropriately
+
+When writing Groovy scripts in an integration flow, always reference design‑time resources \(such as XML, XSD, WSDL, or script files\) using their relative root path. This ensures that your scripts remain future‑ready and continue to work reliably as the underlying packaging structure of the integration flow evolves.
+
+You should access the resources from their relative root path, not from folders like `src/main/resources`. For example, instead of `src/main/resources/xsd/customer.xsd` reference the resource as `/xsd/customer.xsd`.
+
+**Benefits:**
+
+-   Your scripts become future‑proof, ensuring optimal performance while still having full access to the assets required at runtime.
+-   Resource loading becomes consistent and predictable across environments.
+-   Integration flows remain simpler to maintain, since scripts always refer to a clear, stable location.
+
 **Related Information**  
 
 

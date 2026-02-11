@@ -38,7 +38,7 @@ A classification that indicates if your integration scenarios are ready to be mi
 > ### Note:  
 > The Migration Assessment categories classify integration scenarios according to the degree of implementation possible in SAP Integration Suite based on the features used. These categories don't indicate the level of automation or support provided by the Migration Tooling, which is a feature in the Cloud Integration capability of SAP Integration Suite that helps you migrate integration scenarios from SAP Process Orchestration to SAP Integration Suite.
 > 
-> For example, the *Ready to Migrate* assessment category means that all features currently used in your Process Orchestration environment are available in SAP Integration Suite. It does not mean that the Migration Tooling will automatically handle the migration process. For details on using the Migration Tooling, see [Migration Tooling](migration-tooling-6061016.md).
+> For example, the *Ready to Migrate* assessment category means that all features currently used in your Process Orchestration environment are available in SAP Integration Suite. It does not mean that the Migration Tooling will automatically handle the migration process. For details on using the Migration Tooling, see [Migration Tooling](50-Development/migration-tooling-6061016.md).
 
 
 

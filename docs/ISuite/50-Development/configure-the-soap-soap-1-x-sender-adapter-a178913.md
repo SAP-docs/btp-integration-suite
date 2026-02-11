@@ -121,6 +121,33 @@ Relative endpoint address on which the integration runtime expects incoming requ
 <tr>
 <td valign="top">
 
+*Service Definition* 
+
+</td>
+<td valign="top">
+
+The service definition consists of a service, an endpoint, and the exchange pattern. For one-way services, you can additionally specify the runtime behavior.
+
+You can select the following options:
+
+-   *Manual*: Set this option to use the service definition provided by the system and define the message exchange pattern manually. The default service definition provides a generic message format.
+
+-   *WSDL*: Set this option to use a service definition from a WSDL provided in the adapter configuration. This will also include the message formats.
+
+    > ### Caution:  
+    > Policies contained in the WSDL aren't considered, that is, the configuration of WSS and other policies must be done via the adapter configuration.
+
+
+> ### Note:  
+> You access the WSDL via *Operations View* \> *Manage Integration Content*.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Use WS-Addressing* 
 
 </td>
@@ -133,7 +160,35 @@ Select this option to accept addressing information from message information hea
 <tr>
 <td valign="top">
 
-*URL to WSDL* 
+*Message Exchange Pattern*
+
+\(only if *Service Definition*: *Manual* is selected\)
+
+</td>
+<td valign="top">
+
+Specifies the kind of messages that are processed by the adapter.
+
+-   *Request-Reply*: When selected, the adapter processes both request and response \(synchronous message exchange\).
+
+    > ### Tip:  
+    > When using this option, the response code can accidentally be overwritten by a called receiver. Assume that, for example the integration flow contains an SOAP sender adapter \(with a *Request-Reply* pattern\) and an HTTP receiver adapter. Let's furthermore assume that the HTTP receiver returns an HTTP response code 202 \(as it has accepted the call\). In this case, the SOAP sender adapter returns in the reply also HTTP response code 202 instead of 200 \(OK\). To overcome this situation, you've to remove the header `CamelHttpResponseCode` before the message reply is sent back to the sender.
+
+-   *One-Way*
+
+    When selected, the message is processed asynchronously. Use this option if in your scenario the sender just needs to initiate the request without being interested in getting to know if the request is processed successfully.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*URL to WSDL*
+
+\(only if as *Service Definition* the option *WSDL* is selected\)
 
 </td>
 <td valign="top">
@@ -147,7 +202,7 @@ To select the WSDL from a source, you've the following options:
 
 -   Select a WSDL from your file system.
 
--   Select a WSDL from your integration flow resources \(see [Manage Resources](manage-resources-b5968b2.md)\).
+-   Select a WSDL from your integration flow resources \(see [Manage References](manage-references-b5968b2.md)\).
 
     In the *Resources* view, you can upload an individual WSDL file or an archive file \(file ending with `.zip`\) that contains multiple WSDLs or XSDs, or both. For example, you can upload a WSDL that contains an imported XSD referenced by an `xsd:import` statement. This means that if you want to upload a WSDL and dependent resources, you need to add the parent file along with its dependencies in a single archive \(`.zip` file\).
 
@@ -178,6 +233,8 @@ For more information on how to work with WSDL resources, refer to the following 
 
 *Service* 
 
+\(only if as *Service Definition* the option *WSDL* is selected\)
+
 </td>
 <td valign="top">
 
@@ -189,6 +246,8 @@ Name of the selected service contained in the referenced WSDL.
 <td valign="top">
 
 *Endpoint* 
+
+\(only if as *Service Definition* the option *WSDL* is selected\)
 
 </td>
 <td valign="top">
@@ -209,6 +268,67 @@ Name of the selected endpoint of  a selected service \(that you provide in the 
 
 -   *WS Standard*: Message is executed with WS standard processing mechanism. Errors aren't returned to the consumer.
 -   *Robust*: WSDL provider invokes service synchronously and the processing errors are returned to the consumer.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Authorization* 
+
+</td>
+<td valign="top">
+
+Specifies the authorization option for the sender.
+
+> ### Note:  
+> The option *client certificate* is not recommended. Instead, it is recommended to use the more secure option *role-based authorization with certificate-to-user mapping*.
+
+You can select one of the following options:
+
+-   *Client Certificate*: Sender authorization is checked on the tenant by evaluating the subject/issuer distinguished name \(DN\) of the certificate \(sent together with the inbound request\). You can use this option together with the following authentication option: *Client-certificate authentication \(without certificate-to-user mapping\)*.
+
+-   *User Role*: Sender authorization is checked based on roles defined on the tenant for the user associated with the inbound request. You can use this option together with the following authentication options:
+
+    -   *Basic authentication* \(using the credentials of the user\)
+
+        The authorizations for the user are checked based on user-to-role assignments defined on the tenant.
+
+    -   *Client-certificate authentication and certificate-to-user mapping*
+
+        The authorizations for the user derived from the certificate-to-user mapping are checked based on user-to-role assignments defined on the tenant.
+
+
+
+Depending on your choice, you can also specify one of the following properties:
+
+-   *Client Certificate*
+
+    Allows you to select one or more client certificates \(based on which the inbound authorization is checked\).
+
+    Choose *Add* to add a new certificate for inbound authorization for the selected adapter. You can then select a certificate stored locally on your computer. You can also delete certificates from the list.
+
+    For each certificate, the following attributes are displayed: *Subject DN* \(information used to authorize the sender\) and *Issuer DN* \(information about the certificate authority that issues the certificate\).
+
+-   *User Role*
+
+    Allows you to select a role based on which the inbound authorization is checked.
+
+    Choose *Select* to get a list of all available roles.
+
+    The role *ESBMessaging.send* is provided by default. It is a predefined role provided by SAP that authorizes a sender system to process messages on a tenant. However, using SAP BTP Cockpit, you can also define *custom roles* for the runtime node as well. When you choose *Select*, a selection of all custom roles defined that way is offered.
+
+    > ### Note:  
+    > Note the following:
+    > 
+    > -   You can also type in a role name. This has the same result as selecting the role from the value help: Whether the inbound request is authenticated depends on the correct user-to-role assignment defined in SAP BTP Cockpit.
+    > 
+    > -   When you externalize the user role, the value help for roles is offered in the integration flow configuration as well.
+    > 
+    > -   If you have selected a product profile for SAP Process Orchestration, the value help will only show the default role *ESBMessaging.send*.
+
 
 
 
@@ -326,6 +446,8 @@ More information: [WS-Security Configuration for the Sender SOAP 1.x Adapter](ws
 
 Specify an alias for the private key that is to be used to sign the response message.
 
+You can also enter `${header.headername}` or`${property.propertyname}`to read the name dynamically from a header or exchange property.
+
 The tenant private key is used to sign the response message \(that is sent back to the sender/WS consumer\). The tenant private key has to be part of the tenant keystore.
 
 </td>
@@ -340,9 +462,32 @@ The tenant private key is used to sign the response message \(that is sent back 
 </td>
 <td valign="top">
 
-Specify an alias for the public key that is to be used to encrypt the response message \(that is sent back to the sender/WS consumer\)..
+Specify an alias for the public key that is to be used to encrypt the response message \(that is sent back to the sender/WS consumer\).You can also enter $\{header.headername\} or $\{property.propertyname\} to read the name dynamically from a header or exchange property.
 
 The sender public key is used to sign the response message. This key has to be part of the tenant keystore.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Signature Algorithm* 
+
+</td>
+<td valign="top">
+
+Specify a signature algorithm to be applied when signing the response message.
+
+Possible values:
+
+-   SHA1 \(default value\)
+
+-   SHA256
+
+-   SHA512
+
+
+
 
 </td>
 </tr>

@@ -132,12 +132,37 @@ Enter the Base URL of your Shopify store.
 <tr>
 <td valign="top">
 
-*Shopify Secure Parameter*
+*Authentication Type* 
 
 </td>
 <td valign="top">
 
-Enter the alias name of the deployed Secure Parameter artifact that contains the access token needed to connect to Shopify.
+Select one of the following authentication methods:
+
+-   Access Token: Choose this method, if you are authenticating with a Shopify Legacy App.
+
+-   OAuth 2 Client Credentials: Choose this method, if you are authenticating with a Shopify Custom App.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Shopify Security Material* 
+
+</td>
+<td valign="top">
+
+Provide the name of the deployed security material that contains the primary credential for your chosen method.
+
+> ### Note:  
+> -   This must be the name of the deployed Security Parameter for Access Token Authentication.
+> -   This must be the name of the deployed OAuth2 Client Credentials for OAuth2 Client Credentials authentication.
+
+
 
 </td>
 </tr>

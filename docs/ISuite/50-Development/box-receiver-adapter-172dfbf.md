@@ -193,6 +193,23 @@ Select the operation to be performed.
 <tr>
 <td valign="top">
 
+*Request Payload Source*
+
+</td>
+<td valign="top">
+
+Select an option to specify the source for request payload:
+
+-   *UI Configurable* provides user-friendly fields to create the payload automatically.
+-   *Exchange Body* allows you to specify required structure and values as part of the payload.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *File Name*
 
 </td>

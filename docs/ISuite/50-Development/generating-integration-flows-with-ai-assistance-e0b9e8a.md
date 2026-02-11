@@ -10,6 +10,9 @@
 
 ## Prerequisites
 
+> ### Note:  
+> AI features are accessible only with the Premium Edition. They are provided as a free promotion through June 2026 and will be commercialized afterward as Premium AI features using AI Units.
+
 You have activated the AI feature, Generation of Integrations for your SAP Integration Suite tenant. See [Artificial Intelligence](artificial-intelligence-6a6727c.md)
 
 For more information on region level availability of this feature, see SAP Note [0003656393](https://me.sap.com/notes/0003656393)

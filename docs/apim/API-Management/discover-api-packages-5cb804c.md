@@ -23,3 +23,6 @@ If the content has been developed by a partner, the package also displays a **Pa
 
 To find out more about the features of the packages on the , see [Package Details](package-details-f0bf802.md).
 
+> ### Note:  
+> During the discovery of API packages from SAP Business Accelerator Hub, copying API of the type OData V4 is not supported. The supported types are REST, OData, and Policy Template.
+

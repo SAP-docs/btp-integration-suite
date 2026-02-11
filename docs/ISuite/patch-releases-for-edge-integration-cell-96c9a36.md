@@ -77,6 +77,57 @@ Patches for different components are associated with different major software ve
 
 
 
+## December 2025
+
+Software Increment: 2510
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.36.18
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   It handles PostgreSQL uppercase catalog names after v42.7.5 driver changes.
+-   An issue that occurs when X12 payloads contain a data element that ends with the TA1 keyword, and they aren't processed correctly in EDI SAP Dictionary Electronic Data Interchange flow steps.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio96c9a3664b054d34813ef07e9a82f25d__section_m21_tqk_fhc"/>
 
 ## November 2025

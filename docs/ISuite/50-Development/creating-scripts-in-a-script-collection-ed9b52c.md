@@ -18,6 +18,11 @@
 
     The resource pane and editor comes up on the left and right sides respectively.
 
+    The script collection artifact consists of the following tabs:
+
+    -   *Script Collection*: Used to create and update scripts.
+    -   *Design Guidelines*: Used to view and execute the design guidelines applicable to this artifact.
+
 2.  In the resource pane, perform one of the following tasks:
 
 
@@ -33,7 +38,7 @@
 
 ## Procedure
 
-1.  In the resource pane, choose *Create* \> *Groovy Script* or *Create* \> *JavaScript* based on your requirement.
+1.  In the resource pane of the *Script Collection* tab, choose *Create* \> *Groovy Script* or *Create* \> *JavaScript* based on your requirement.
 
 2.  Enter a name for the script resource and choose *Create*.
 
@@ -56,9 +61,28 @@
 
 ## Procedure
 
-1.  In the resource pane, choose *Upload*
+1.  In the resource pane of the *Script Collection* tab, choose *Upload*
 
-2.  In the *Source* list, select one of the following options:
+2.  Choose one of the following:
+
+    -   *Archive*
+
+    -   *Groovy Script*
+
+        1.  *Script 1.x*
+
+        2.  *Script 2.x*: Groovy script 2.x is a future ready script which uses advanced groovy features and utilizes Groovy runtime 4.0.29. For more information about upgrading scripts from 1.x to 2.x see [Upgrading Groovy Script](upgrading-groovy-script-917e014.md)
+
+            > ### Caution:  
+            > -   Ensure that you are upgrading correct versions to avoid any runtime failures.
+            > 
+            > -   When referencing Groovy scripts in a Groovy Script step, always ensure the selected script version matches the step version, else the step may be upgraded or downgraded automatically. For example, if the Groovy script step version is 1.0 and you select the version 2.x of the script resource, the step will be upgraded and vice versa.
+
+
+    -   *JavaScript*
+
+
+3.  In the *Source* list, select one of the following options:
 
     1.  *File System* – upload a file from your local machine.
 
@@ -87,15 +111,12 @@
 
 ## Procedure
 
-1.  Choose the script you want to improve from the resource pane.
+1.  On the *Script Collection* tab, choose the script you want to improve from the resource pane.
 
-2.  Improve the script with the available tools in the editor:
+2.  Include the guidelines highlighted in the *Problems* view to improve your script. For more information, see [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md).
 
-    -   Include the guidelines provided in the *Problems* view. For more information, see [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md).
-    -   Use *Optimize* to enhance the script with AI. For more information, see [Optimize Groovy Scripts](optimize-groovy-scripts-3b7a5a1.md).
+    **Related Information**
 
-        > ### Note:  
-        > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://me.sap.com/notes/2903776).
-
+    [Optimize Groovy Scripts with AI](https://help.sap.com/docs/integration-suite/sap-integration-suite/optimize-groovy-scripts-ai?version=CLOUD)
 
 

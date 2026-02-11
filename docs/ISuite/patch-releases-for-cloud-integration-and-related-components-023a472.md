@@ -79,6 +79,402 @@ Patches for different components are associated with different major software ve
 
 
 
+## February 2026
+
+Software Increment: 2512
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.74.44
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Fixed tenant migration failures caused by a duplicate Liquibase changeset ID.
+-   Resolved UCL formation creation, deletion, and synchronization failures with Integration Suite caused by Provisioning App callbacks not working. Updated configuration has restored successful callback.
+-   Fixed an OSS vulnerability in the transitive dependency qs by updating the affected component.
+-   Optimized database query handling by reducing the number of update operations, improving efficiency and overall interaction stability.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.38.13
+
+</td>
+<td valign="top">
+
+This patch optimized database query handling by reducing the number of update operations, improving efficiency and overall interaction stability.
+
+</td>
+</tr>
+</table>
+
+
+
+## January 2026
+
+Software Increment: 2512
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.74.39
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Resolved an MTMS scaling configuration issue where the instance count of `it-ai-service-java` was left at 1 instead of the expected 3.
+-   Fixed an issue in API creation where menu options were incorrectly displayed for Edge Integration Cell integrations due to profile matching logic. Strict detection now ensures only relevant options are shown.
+-   Resolved frequent not-found errors when loading individual TPM resources.
+-   Improved performance of Config Service APIs to handle higher request volumes efficiently.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.38.12
+
+</td>
+<td valign="top">
+
+This patch improved the performance of Config Service APIs to handle higher request volumes efficiently.
+
+</td>
+</tr>
+</table>
+
+
+
+## December 2025
+
+Software Increment: 2510
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.36.29
+
+</td>
+<td valign="top">
+
+This patch added the `MALLOC_ARENA_MAX` environment variable to optimize memory allocation. This improves garbage collection behavior in the old generation heap.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.72.69
+
+</td>
+<td valign="top">
+
+This patch added the `MALLOC_ARENA_MAX` environment variable to optimize memory allocation. This improves garbage collection behavior in the old generation heap.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.72.67
+
+</td>
+<td valign="top">
+
+This patch enhances the Metabase information and also improves the efficiency of the ObjectStoreCleanupTask by limiting the cleanup scan to the /tasks folder instead of scanning the entire object store.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.72.65
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Improved Azure Shared File System lock handling to prevent frequent 404 errors
+
+-   Resolved intermittent issues when saving API artifacts and importing OpenAPI definitions, improving overall reliability and user experience.
+
+-   Enhanced the CXF library with a scheduled cleanup mechanism to ensure temporary files created during message processing are properly removed after a configurable delay.
+
+-   Fixed a NullPointerException in the Xi Sender Adapter that could occur when payload attachments were missing from the Xi manifest, preventing message processing failures in this scenario.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.36.29
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Improved Azure Shared File System lock handling to prevent frequent 404 errors
+
+-   Enhanced the CXF library with a scheduled cleanup mechanism to ensure temporary files created during message processing are properly removed after a configurable delay.
+
+-   Fixed a NullPointerException in the Xi Sender Adapter that could occur when payload attachments were missing from the Xi manifest, preventing message processing failures in this scenario.
+
+-   Improved the efficiency of the ObjectStoreCleanupTask by limiting the cleanup scan to the /tasks folder instead of scanning the entire object store.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.72.61
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Added enhanced logging to help investigate an edge case where the jMS retry interval behaved differently from the configured value, even without a worker crash
+
+-   Updated the list of supported database drivers to include the IBM DB2 z/OS driver with the required license, enabling customers to use the approved driver provided by IBM.
+
+-   Fixed an issue with identifying Camel temporary files after a file-naming change introduced in newer Camel versions, preventing duplicate reporting of the same files.
+
+-   Fixed an issue in EDI flow steps where X12 payloads ending with the **TA1** keyword were not processed correctly, ensuring such payloads are now processed as expected.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.36.26
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Updated the list of supported database drivers to include the IBM DB2 z/OS driver with the required license, enabling customers to use the approved driver provided by IBM.
+
+-   Fixed an issue in EDI flow steps where X12 payloads ending with the **TA1** keyword were not processed correctly, ensuring such payloads are now processed as expected.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.72.59
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Closed a gap in the PGP Decryptor related to checksum handling.
+
+-   Fixed an issue where the Virtual Host was shown incorrectly as the default.
+
+-   Upgraded the Eric library to versions 43.2.6 and 43.3.2.
+
+-   Added malloc-arena-max in the worker configuration to reduce crashes.
+
+-   Fixed an issue in the IDoc Receiver Adapter where MessageId determination using the Map option did not work as expected.
+
+-   Fixed a cache-related issue.
+
+-   Fixed permission management errors for TPM dedicated roles.
+
+-   Removed the time restriction on archived data to ensure all data is archived when the job is triggered.
+
+-   Fixed ConcurrentModificationException issue in message processing flow.
+
+-   Made the ConnectorInstance artifact type available in the itco service.
+
+-   Applied memory optimization parameters to reduce micro service crashes.
+
+-   Fixed some errors for the UI and DBSL context fix.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.36.23
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Upgraded the Eric library to version 43.2.6.
+
+-   Fixed ConcurrentModificationException issue in message processing flow.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 ## December 2025
 
 Software Increment: 2509

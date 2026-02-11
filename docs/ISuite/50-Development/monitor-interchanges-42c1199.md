@@ -114,7 +114,7 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
     <tr>
     <th valign="top">
 
-    Attirbute
+    Attribute
     
     </th>
     <th valign="top">
@@ -133,15 +133,15 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
     
     Allows you to filter messages according to their status.
 
-    In the dropdown list you can select one of the following values as the status:
+    In the drop-down list you can select one of the following values as the status:
 
     -   Failed
 
     -   Retry
     -   Processing
     -   Completed
-    -   Waiting for Acknowledgement
-    -   Acknowledgement Overdue
+    -   Waiting for Acknowledgment
+    -   Acknowledgment Overdue
     -   Canceled
 
 
@@ -156,7 +156,7 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
     </td>
     <td valign="top">
     
-    Allows you to select from the following predefined time intervals during which the intechanges were created:
+    Allows you to select from the following predefined time intervals during which the interchanges were created:
 
     -   All
 
@@ -185,7 +185,7 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
     </td>
     <td valign="top">
     
-    You can set the interchange creation start date and time using the date-time <span class="SAP-icons-V5"></span> button provided in the field. To select the date, interact with the calendar element and choose a specific day. To select the time, manipulate two separate circles on the watch element to set the desired hour and minute, respectively..
+    You can set the interchange creation start date and time using the <span class="SAP-icons-V5"></span> Open Picker button provided in the field. To select the date, interact with the calendar element and choose a specific day. To select the time, manipulate two separate circles on the watch element to set the desired hour and minute, respectively.
     
     </td>
     </tr>
@@ -202,7 +202,7 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
     </td>
     <td valign="top">
     
-    You can set the interchange creation end date and time using the date-time <span class="SAP-icons-V5"></span> button provided in the field. To select the date, interact with the calendar element and choose a specific day. To select the time, manipulate two separate circles on the watch element to set the desired hour and minute, respectively..
+    You can set the interchange creation end date and time using the <span class="SAP-icons-V5"></span> Open Picker button provided in the field. To select the date, interact with the calendar element and choose a specific day. To select the time, manipulate two separate circles on the watch element to set the desired hour and minute, respectively.
     
     </td>
     </tr>
@@ -223,7 +223,7 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
     -   Interchange Validation Failed
     -   Interchange Mapping Failed
     -   Interchange Transmission Failed
-    -   Acknowledgement Overdue
+    -   Acknowledgment Overdue
     -   Unspecified Error
 
 
@@ -366,6 +366,42 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    **Agreement Name**
+    
+    </td>
+    <td valign="top">
+    
+    Allows you to filter for an interchange using the agreement name.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Sender AS2 Message ID**
+    
+    </td>
+    <td valign="top">
+    
+    Allows you to filter for an interchange using the AS2 message ID of the sender.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Receiver AS2 Message ID**
+    
+    </td>
+    <td valign="top">
+    
+    Allows you to filter for an interchange using the AS2 message ID of the receiver.
+    
+    </td>
+    </tr>
     </table>
     
 3.  Choose *Go* after setting the necessary filter to view the filtered interchanges.
@@ -408,7 +444,7 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
     </td>
     <td valign="top">
     
-    The category due to which the intechange processing failed
+    The category due to which the interchange processing failed
     
     </td>
     </tr>
@@ -497,21 +533,20 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
 
 8.  Choose the sort <span class="SAP-icons-V5"></span> button to sort the table values in ascending/descending order based on a particular column header.
 
-9.  You can also export the interchanges in Excel format using the <span class="SAP-icons-V5"></span> icon provided proceeding the list.
+9.  To export the interchanges in Excel format, select the relevant entries and choose <span class="SAP-icons-V5"></span> Export to Spreadsheet.
 
 10. Select an interchange from the table to view it in detail. The interchange information is displayed to the right of the interchange table. The header area provides the following information about the interchange:
 
     -   *Status*
-
     -   *Processing Status*
-    -   *Sender Technical Acknowledgment Status*\(appears only if it applies to the interchange\)
-    -   *Sender Functional Acknowledgment Status*\(appears only if it applies to the interchange\)
-    -   *Receiver Functional Acknowledgment Status*\(appears only if it applies to the interchange\)
+    -   *Sender Technical Acknowledgment Status* \(appears only if it applies to the interchange\)
+    -   *Sender Functional Acknowledgment Status* \(appears only if it applies to the interchange\)
+    -   *Receiver Functional Acknowledgment Status* \(appears only if it applies to the interchange\)
     -   *Interchange Creation Time*
 
 11. After the header section, the following sections are displayed:
 
-    1.  *Error Information*: This section appears only for innterchanges with the *Failed* status. Choose *Details* to access more information about the error.
+    1.  *Error Information*: This section appears only for interchanges with the *Failed* status. Choose *Details* to access more information about the error.
 
         Choose *Check Agreements* to review the agreement details.
 
@@ -521,6 +556,10 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
 
         -   *Sender*: The sender details such as message type, sender/receiver identifier, sender/receiver identifier qualifier, document standard, adapter type are displayed here.
         -   *Receiver*: The receiver details such as message type, sender/receiver identifier, sender/receiver identifier qualifier, document standard, adapter type are displayed here.
+        -   *Agreement Name*: The name of the agreement.
+        -   *Usage Indicator*: This flag classifies the type of business transaction being processed. It either indicates whether the transaction is for test purposes \(*Test*\) or production-level \(*Production*\).
+        -   *Sender AS2 Message ID*: The unique identifier is assigned to each message sent by the sender using the AS2 protocol.
+        -   *Receiver AS2 Message ID*: Similar to the Sender AS2 Message ID, this unique identifier is assigned to each message received using the AS2 protocol.
 
     3.  *Events*: The events section displays the *Monitoring Reference* link for the following messages:
 
@@ -533,13 +572,13 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
         -   Error \(applicable only for interchanges with *Failed* and *Retry* statuses\)
         -   Interchange is canceled \(applicable only for interchanges with *Canceled* and does not contain any reference link\)
 
-        Select the link provided under *Monitoring Reference* to view the respective message processing details of the intergration flow involved in the transaction in a new window.
+        Select the link provided under *Monitoring Reference* to view the respective message processing details of the integration flow involved in the transaction in a new window.
 
     4.  *Interchange Payload*: View the payload information of *Sender Interchange Received* and *Receiver Interchange Assembled* here. You can switch between these two payload using the drop-down <span class="SAP-icons-V5"></span> provided for the *Version* field. Choose the download <span class="SAP-icons-V5"></span> button to download your payload information.
 
     5.  *Notes*: This section is only visible for interchanges that have been **Canceled**. The section mentions details of the cancelation, including:
 
-        -   Email address of the user who initated the cancelation
+        -   Email address of the user who initiated the cancelation
 
         -   The reason for cancelation \(as entered by the user\)
         -   The timestamp of when the cancellation occurred

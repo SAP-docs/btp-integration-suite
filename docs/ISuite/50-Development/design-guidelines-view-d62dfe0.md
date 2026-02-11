@@ -2,7 +2,7 @@
 
 # Design Guidelines View
 
-Use this view to validate your integration flow against the design guidelines enabled by the integration leads of your organization.
+Use this view to validate your artifact against the design guidelines enabled by the integration leads of your organization. Artifacts include integration flows, APIs and script collection artifacts.
 
 
 
@@ -10,21 +10,21 @@ Use this view to validate your integration flow against the design guidelines en
 
 ### What Are Design Guidelines
 
-Design guidelines are checks that help you design robust integration flows. Your tenant administrators or integration leads have enabled all or a subset of available design guidelines that they think are appropriate for your organization's business needs. For more information, see [Design Guidelines](IntegrationSettings/design-guidelines-4d1c84f.md)
+Design guidelines are checks that help you design robust artifacts. Your tenant administrators or integration leads have enabled all or a subset of available design guidelines that they think are appropriate for your organization's business needs. For more information, see [Design Guidelines](IntegrationSettings/design-guidelines-4d1c84f.md)
 
 
 
 ### What Are The Implications
 
-All integration flows designed in this tenant must abide by the enabled design guidelines.
+All artifacts designed in this tenant must abide by the enabled design guidelines.
 
 
 
-### Validate Your Integration Flow
+### Validate Your Artifact
 
-Run the design guidelines after you've designed your integration flow. Your integration flow must comply with all applicable design guidelines. Remember that not all enabled design guidelines are applicable for every integration flow that you create. The integration flow editor intelligently identifies the design guidelines that are applicable and validates the integration flow only against the applicable ones.
+Run the design guidelines after you've designed your artifact. Your artifact must comply with all applicable design guidelines. Remember that not all enabled design guidelines are applicable for every artifact that you create. The artifact editor intelligently identifies the design guidelines that are applicable and validates the artifact only against the applicable ones.
 
-Follow these simple steps to run the design guidelines and validate your integration flow:
+Follow these simple steps to run the design guidelines and validate your artifact:
 
 1.  In the *Design Guidelines* view, choose *Execute Guidelines*.
 
@@ -32,9 +32,9 @@ Follow these simple steps to run the design guidelines and validate your integra
 
     In the *Severity* column - you get to know the importance of the guideline, indicating how strongly it should be followed.
 
-    In the *Applicability* column – you get to know the applicable design guidelines against which your integration flow is validated.
+    In the *Applicability* column – you get to know the applicable design guidelines against which your artifact is validated.
 
-    In the *Compliance* column – you find if your integration flow is compliant with all the applicable design guidelines.
+    In the *Compliance* column – you find if your artifact is compliant with all the applicable design guidelines.
 
     In the *Skipped Status* column – you get to know the skipped status of the non-compliant design guidelines.
 
@@ -42,7 +42,7 @@ Follow these simple steps to run the design guidelines and validate your integra
 
 2.  Based on the analysis, do one of the following:
 
-    -   Update your integration flow and resolve the non-compliant design guidelines. To resolve non-compliant guidelines of the script, see [Fix Script Incompatibilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/fix-script-incompatibilities?state)
+    -   Update your artifact and resolve the non-compliant design guidelines. To resolve non-compliant guidelines of the script, see [Fix Script Incompatibilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/fix-script-incompatibilities?state)
 
     -   Skip the non-compliant design guidelines – You can skip a non-compliant design guideline by providing a reason and consent to this operation. You can revert any skipped guidelines at any time and reapply them.
 
@@ -51,18 +51,18 @@ Follow these simple steps to run the design guidelines and validate your integra
         You can reapply any skipped design guideline by reverting the skip action. To revert, switch the toggle button, provide your consent by enabling the checkbox, and choose *Revert*.
 
 
-3.  Run the design guidelines again to verify if your integration flow is fully compliant.
+3.  Run the design guidelines again to verify if your artifact is fully compliant.
 
 
 
 
-### Assess Your Integration Flow
+### Assess Your Artifact
 
 In the *Design Guidelines* view, choose *Download Report* to download the last execution report. In the compliance report, you can also see the non-compliance guidelines that were skipped, along with details such as skipped status, reason for skipping, and who skipped them.
 
 You can download the report multiple times. You can download the report with compliance errors too.
 
-As a best practice, you can share the report with your integration leads to assess your integration flow before deployment.
+As a best practice, you can share the report with your integration leads to assess your artifact before deployment.
 
 **Related Information**  
 

@@ -6,6 +6,48 @@ This topic provides information on patch releases for API Management that are pr
 
 
 
+## January 2026
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+2.5.4
+
+</td>
+<td valign="top">
+
+This patch resolves an issue where API Management deployments failed across all SAP Cloud regions due to NPM authentication errors.
+
+</td>
+</tr>
+</table>
+
+
+
 ## October 2025
 
 

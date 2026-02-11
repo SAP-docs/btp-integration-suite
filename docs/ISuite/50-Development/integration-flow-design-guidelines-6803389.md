@@ -71,7 +71,7 @@ The integration flows are designed to meet the following requirements:
 **Related Information**  
 
 
-[Design Guidelines](IntegrationSettings/design-guidelines-4d1c84f.md "As the integration lead for your organization, help your integration developers design enterprise-grade integration flows.")
+[Design Guidelines](IntegrationSettings/design-guidelines-4d1c84f.md "As the integration lead for your organization, help your integration developers design enterprise-grade artifacts.")
 
-[Design Guidelines View](design-guidelines-view-d62dfe0.md "Use this view to validate your integration flow against the design guidelines enabled by the integration leads of your organization.")
+[Design Guidelines View](design-guidelines-view-d62dfe0.md "Use this view to validate your artifact against the design guidelines enabled by the integration leads of your organization. Artifacts include integration flows, APIs and script collection artifacts.")
 

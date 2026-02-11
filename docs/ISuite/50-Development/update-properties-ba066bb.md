@@ -10,8 +10,9 @@ Update the properties in your agreements.
 
 *Update Properties* allows you to update the following properties of an agreement:
 
-1.  Type System version
-2.  Payload archive settings
+-   Payload Archive
+-   Activity Parameters
+-   Type System Version
 
 
 
@@ -19,9 +20,11 @@ Update the properties in your agreements.
 
 ## Procedure
 
-1.  To update properties, see [Update Type System Version](update-type-system-version-586ddc4.md).
+1.  To update the payload archive settings, see [Update Payload Archive Settings](update-payload-archive-settings-5e0ddbb.md).
 
-2.  To update the payload archive settings, see [Update Payload Archive Settings](update-payload-archive-settings-5e0ddbb.md).
+2.  To update the activity parameters, see [Update Activity Parameters](update-activity-parameters-ffad2f9.md).
+
+3.  To update properties, see [Update Type System Version](update-type-system-version-586ddc4.md).
 
 
 **Related Information**  

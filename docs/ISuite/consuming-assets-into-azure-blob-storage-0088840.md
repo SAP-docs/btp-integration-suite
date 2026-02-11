@@ -16,7 +16,7 @@ You've completed the steps described in [Discovering Offers Through a Catalog](d
 
 ## Context
 
-This topic describes the recommended process to trigger a contract negotiation and transfer both S3 and Azure assets to your Azure Blob Storage. For the process of transferring assets to your Amazon S3 storage, see [Consuming S3 and Azure Assets](consuming-s3-and-azure-assets-4afdf5c.md). For HTTP assets, see [Consuming HTTP Assets](consuming-http-assets-735300c.md).
+This topic describes the recommended process to trigger a contract negotiation and transfer both S3 and Azure assets to your Azure Blob Storage. For the process of transferring assets to your Amazon S3 storage, see [Consuming Assets Into Amazon S3 Storage](consuming-assets-into-amazon-s3-storage-4afdf5c.md). For HTTP assets, see [Consuming HTTP Assets](consuming-http-assets-735300c.md).
 
 
 

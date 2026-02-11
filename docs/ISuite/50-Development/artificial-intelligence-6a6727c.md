@@ -7,6 +7,9 @@ As a tenant administrator, you can activate and manage artificial intelligence f
 > ### Note:  
 > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
+> ### Note:  
+> AI features are accessible only with the Premium Edition. They are provided as a free promotion through June 2026 and will be commercialized afterward as Premium AI features using AI Units.
+
 You can activate the following features depending upon the capabilities you've activated in your SAP Integration Suite tenant. See [Activating and Managing Capabilities](../activating-and-managing-capabilities-2ffb343.md).
 
 **AI Features**
@@ -88,7 +91,7 @@ Upon activation, you can create integration flows with assistance from Generativ
 You can activate these features together. See
 
 -   [Generate Integrations with AI Assistance](creating-an-integration-flow-da53d93.md#loioda53d93cd8fb47ff9ea55b6b278cd85e__steps_sh3_tcl_jt)
--   [Optimize Groovy Scripts](optimize-groovy-scripts-3b7a5a1.md) 
+-   [Optimize Groovy Scripts with AI](optimize-groovy-scripts-with-ai-3b7a5a1.md) 
 
 > ### Remember:  
 > Currently, the feature is available only on few BTP regions. If your SAP Integration Suite tenant is hosted on one of these regions, you can use the feature:

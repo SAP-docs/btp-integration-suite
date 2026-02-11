@@ -24,5 +24,5 @@ While [executing](design-guidelines-view-d62dfe0.md) the design guidelines from 
 
 [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md "Fix the incompatibilities in the scripts that are automatically identified by the script editor.")
 
-[Design Guidelines](IntegrationSettings/design-guidelines-4d1c84f.md "As the integration lead for your organization, help your integration developers design enterprise-grade integration flows.")
+[Design Guidelines](IntegrationSettings/design-guidelines-4d1c84f.md "As the integration lead for your organization, help your integration developers design enterprise-grade artifacts.")
 

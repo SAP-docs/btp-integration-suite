@@ -178,7 +178,7 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing an OData API Project](../50-Development/developing-an-odata-api-project-d961654.md)
 
-[Developing Script and Script Collection](../50-Development/developing-script-and-script-collection-e60f706.md)
+[Working with Script and Script Collection](../50-Development/working-with-script-and-script-collection-e60f706.md)
 
 [Creating Message Mapping as an Artifact](../50-Development/creating-message-mapping-as-an-artifact-1d52a7b.md)
 
@@ -235,7 +235,7 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing an OData API Project](../50-Development/developing-an-odata-api-project-d961654.md)
 
-[Developing Script and Script Collection](../50-Development/developing-script-and-script-collection-e60f706.md)
+[Working with Script and Script Collection](../50-Development/working-with-script-and-script-collection-e60f706.md)
 
 [Creating Message Mapping as an Artifact](../50-Development/creating-message-mapping-as-an-artifact-1d52a7b.md)
 
@@ -274,7 +274,7 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing an OData API Project](../50-Development/developing-an-odata-api-project-d961654.md)
 
-[Developing Script and Script Collection](../50-Development/developing-script-and-script-collection-e60f706.md)
+[Working with Script and Script Collection](../50-Development/working-with-script-and-script-collection-e60f706.md)
 
 [Creating Message Mapping as an Artifact](../50-Development/creating-message-mapping-as-an-artifact-1d52a7b.md)
 
@@ -340,7 +340,7 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing an OData API Project](../50-Development/developing-an-odata-api-project-d961654.md)
 
-[Developing Script and Script Collection](../50-Development/developing-script-and-script-collection-e60f706.md)
+[Working with Script and Script Collection](../50-Development/working-with-script-and-script-collection-e60f706.md)
 
 [Creating Message Mapping as an Artifact](../50-Development/creating-message-mapping-as-an-artifact-1d52a7b.md)
 
@@ -401,7 +401,7 @@ Covers the following kinds of integration artifacts: integration flow, value map
 
 [Developing an OData API Project](../50-Development/developing-an-odata-api-project-d961654.md)
 
-[Developing Script and Script Collection](../50-Development/developing-script-and-script-collection-e60f706.md)
+[Working with Script and Script Collection](../50-Development/working-with-script-and-script-collection-e60f706.md)
 
 [Creating Message Mapping as an Artifact](../50-Development/creating-message-mapping-as-an-artifact-1d52a7b.md)
 

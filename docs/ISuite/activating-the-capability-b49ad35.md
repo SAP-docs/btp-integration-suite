@@ -25,9 +25,13 @@ Learn how to activate the Data Space Integration capability within SAP Integrati
 
 4.  In the *Select Capabilities* step, select *Exchange Data within Data Spaces*. Choose *Next*.
 
-    A list of the capabilities that can be activated is displayed.
+5.  If you want to use a wallet located in Decentralized Identity Verification, mark the checkbox to *Enable Decentralized Identity Verification*. A wallet is then automatically created for you. If you want to use a wallet from your landscape portal or a third party, leave the checkbox empty.
 
-5.  Choose *Activate*.
+    To learn more about Decentralized Identity Verification, see [Onboarding With a Wallet in Decentralized Identity Verification](onboarding-with-a-wallet-in-decentralized-identity-verification-afb114e.md) and [What Is Decentralized Identity Verification?](https://help.sap.com/docs/DECENTRALIZED_IDENTITY_VERIFICATION/a1fc8fb2d89041b3849442692b2504b0/7339437b59eb4b1e99115e004f31b71b.html).
+
+    Choose *Next*.
+
+6.  In the summary, review your selection, then choose *Activate*.
 
     The *Overview* tab displays the progress until the capability is activated.
 

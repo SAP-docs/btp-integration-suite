@@ -62,9 +62,6 @@ You’ve created an integration package and opened it in edit mode. For more inf
 
 4.  Select the service interfaces that you wish to import.
 
-    > ### Recommendation:  
-    > To avoid conflicts while proxy generation, maintain one to one mapping that is, you must import only one service interface in a package to avoid duplicate objects.
-
 5.  Choose *Next Step*.
 
 6.  Select the *Dependent Resources* to include the dependent objects like data type, message type etc while importing the selected service interface.

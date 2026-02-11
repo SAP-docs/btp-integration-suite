@@ -19,7 +19,23 @@ Establish a connection between your SAP Process Orchestration system and Migrati
 
 -   You've set up the relevant access rights for yourself and your users as described in [Configuring User Access to SAP Integration Suite](configuring-user-access-to-sap-integration-suite-2c6214a.md).
 
--   To include performance details such as message size and processing time in your data extraction, ensure that performance data collection is enabled as described in [Monitoring Performance](https://help.sap.com/docs/SAP_NETWEAVER_750/5cf7d2de571a45cc81f91261668b7361/48b2dfe86b156ff4e10000000a42189b.html).
+-   Performance data collection:
+
+    -   To include performance details such as message size and processing time in your data extraction, activate performance data collection following the instructions from the SAP Note [3300008](https://me.sap.com/notes/3300008). For more information, see [Monitoring Performance](https://help.sap.com/docs/SAP_NETWEAVER_750/5cf7d2de571a45cc81f91261668b7361/48b2dfe86b156ff4e10000000a42189b.html).
+
+        > ### Note:  
+        > Migration Assessment cannot collect performance data for Integration Engine Components through an API. Therefore, performance data for these components isn't available through the automated data collection process.
+
+
+-   Synchronous message logging:
+
+    -   To obtain general message throughput counts for synchronous messages, enable synchronous message logging in the SAP NetWeaver Administrator \(NWA\).
+
+        > ### Remember:  
+        > Enabling message logging results in additional overhead on the database server as described by the SAP Note [2442373](https://me.sap.com/notes/2442373).
+
+        If you agree to proceed, follow the instructions on the SAP Note [2442344](https://me.sap.com/notes/2442344) to enable message logging.
+
 
 -   As API endpoints and subpaths are used to extract data from your SAP Process Orchestration system, make sure that the SAP Destination service can access the endpoints listed in the following. See [Destination Service](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/eeb0ec2318fb4dda87830a09ac7a02fa.html).
 

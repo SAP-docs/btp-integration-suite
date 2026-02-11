@@ -26,7 +26,7 @@ The following measures can help to optimize the usage of tenant storage capacity
 
         [Creating Message Mapping as an Artifact](creating-message-mapping-as-an-artifact-1d52a7b.md)
 
-        [Developing Script and Script Collection](developing-script-and-script-collection-e60f706.md)
+        [Working with Script and Script Collection](working-with-script-and-script-collection-e60f706.md)
 
 
 -   Reuse custom libraries.

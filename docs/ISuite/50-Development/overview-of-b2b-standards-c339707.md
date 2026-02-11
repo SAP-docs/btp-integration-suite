@@ -19581,7 +19581,7 @@ UTLHDR\_FILE: 3 - Utility Bill File \(Version 3\)
 
 GS1 uses XML to create a set of standard messages for the GS1 EDI \(Electronic Data Interchange\). GS1 XML messages can be exchanged using any technical solution or internet transport protocol.
 
-**Versions \(8\)**
+**Versions \(18\)**
 
 
 <table>
@@ -19591,6 +19591,76 @@ GS1 uses XML to create a set of standard messages for the GS1 EDI \(Electronic D
 Version
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+2.0.2
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2.1
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2.1.1
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2.2
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2.3
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2.4
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2.6
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2.7
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2.8
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -19650,7 +19720,7 @@ Version
 </tr>
 </table>
 
-**Message Types \(59\)**
+**Message Types for Versions 3.x \(59\)**
 
 
 <table>
@@ -20666,6 +20736,6109 @@ warehousingOutboundNotificationMessage - Warehousing Outbound Notification Messa
 <td valign="top">
 
 3.1
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+</table>
+
+**Message Types for Versions 2.x \(90\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Message
+
+</th>
+<th valign="top">
+
+Namespace
+
+</th>
+<th valign="top">
+
+Message Name
+
+</th>
+<th valign="top">
+
+2.0.2
+
+</th>
+<th valign="top">
+
+2.1
+
+</th>
+<th valign="top">
+
+2.1.1
+
+</th>
+<th valign="top">
+
+2.2
+
+</th>
+<th valign="top">
+
+2.3
+
+</th>
+<th valign="top">
+
+2.4
+
+</th>
+<th valign="top">
+
+2.5
+
+</th>
+<th valign="top">
+
+2.6
+
+</th>
+<th valign="top">
+
+2.7
+
+</th>
+<th valign="top">
+
+2.8
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+applicationReceiptAcknowledgement
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:2
+
+</td>
+<td valign="top">
+
+Application Receipt Acknowledgement
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+basicPartyRegistration
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Basic Party Registration
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+buyerReconciliationOfRequestForPayment
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:pay:2
+
+</td>
+<td valign="top">
+
+Buyer Reconciliation Of Request For Payment
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+carrierRoutingInstruction
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+Carrier Routing Instruction
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+catalogueItemAuthorisation
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Catalogue Item Authorisation
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+catalogueItemAuthorisationResponse
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Catalogue Item Authorisation Response
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+catalogueItemConfirmation
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Catalogue Item Confirmation
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+catalogueItemLink
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Catalogue Item Link
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+catalogueItemNotification
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Catalogue Item Notification
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+catalogueItemPublication
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Catalogue Item Publication
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+catalogueItemRegistrationResponse
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Catalogue Item Registration Response
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+catalogueItemSubscription
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Catalogue Item Subscription
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+conditionDocument
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:align:2
+
+</td>
+<td valign="top">
+
+Condition Document
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+configureToOrder
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:order:2
+
+</td>
+<td valign="top">
+
+Configure To Order
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+confirmationOfSettlementInstructions
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:pay:2
+
+</td>
+<td valign="top">
+
+Confirmation Of Settlement Instructions
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+consumptionReport
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+Consumption Report
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+controlTotal
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:pay:2
+
+</td>
+<td valign="top">
+
+Control Total
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+dataSynchronisationDataPoolProfile
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Data Synchronisation Data Pool Profile
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+debitCreditAdvice
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:pay:2
+
+</td>
+<td valign="top">
+
+Debit Credit Advice
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+despatchAdvice
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+Despatch Advice
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+eANUCCResponse
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+EANUCC Response
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Envelope1
+
+</td>
+<td valign="top">
+
+http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader
+
+</td>
+<td valign="top">
+
+Envelope for a 1-level hierarchy
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Envelope2
+
+</td>
+<td valign="top">
+
+http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader
+
+</td>
+<td valign="top">
+
+Envelope for a 2-level hierarchy
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Envelope3
+
+</td>
+<td valign="top">
+
+http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader
+
+</td>
+<td valign="top">
+
+Envelope for a 3-level hierarchy
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Envelope4
+
+</td>
+<td valign="top">
+
+http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader
+
+</td>
+<td valign="top">
+
+Envelope for a 4-level hierarchy
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+event
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Event
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+exceptionCriteria
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Exception Criteria
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+exceptionNotification
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Exception Notification
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+financialInstitutionControlTotal
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:pay:2
+
+</td>
+<td valign="top">
+
+Financial Institution Control Total
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+forecast
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Forecast
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+forecastBulkData
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Forecast Bulk Data
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+forecastRevision
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Forecast Revision
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+fTLLTLShipmentStatus
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+FTLLTL Shipment Status
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+fTLLTLShipmentStatusInquiry
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+FTLLTL Shipment Status Inquiry
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+fullTruckloadFreightInvoice
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+Full Truckload Freight Invoice
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+fullTruckloadLoadTender
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+Full Truckload Load Tender
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+gDSNException
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+GDSN Exception
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+goodsRequirements
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Goods Requirements
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+goodsRequirementsResponse
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Goods Requirements Response
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+inventoryActivityOrInventoryStatus
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+Inventory Activity Or Inventory Status
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+invoice
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:pay:2
+
+</td>
+<td valign="top">
+
+Invoice
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+invoiceResponse
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:pay:2
+
+</td>
+<td valign="top">
+
+Invoice Response
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+itemDataNotification
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:align:cpg:cpg\_direct\_materials:2
+
+</td>
+<td valign="top">
+
+Item Data Notification
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+lessThanTruckloadFreightInvoice
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+Less Than Truckload Freight Invoice
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+lTLCarrierBillOfLading
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+LTL Carrier Bill Of Lading
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+monetaryDocument
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:align:2
+
+</td>
+<td valign="top">
+
+Monetary Document
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+motorFuelCarrierBillOfLading
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+Motor Fuel Carrier Bill Of Lading
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+multiShipmentOrder
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:order:2
+
+</td>
+<td valign="top">
+
+Multi Shipment Order
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+multiShipToOrder
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:order:2
+
+</td>
+<td valign="top">
+
+Multi Ship To Order
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+order
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:order:2
+
+</td>
+<td valign="top">
+
+Order
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+orderResponse
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:order:2
+
+</td>
+<td valign="top">
+
+Order Response
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+partyConfirmation
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Party Confirmation
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+partyDocument
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:align:2
+
+</td>
+<td valign="top">
+
+Party Document
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+partyNotification
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Party Notification
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+partyPublication
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Party Publication
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+partyRegistration
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Party Registration
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+partyRegistrationResponse
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Party Registration Response
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+partySubscription
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Party Subscription
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+performanceHistory
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Performance History
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+pickupNotificationLTL
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+Pickup Notification LTL
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+priceBracketDocument
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:align:2
+
+</td>
+<td valign="top">
+
+Price Bracket Document
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+priceDocument
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:align:2
+
+</td>
+<td valign="top">
+
+Price Document
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+priceSynchronisationConfirmation
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Price Synchronisation Confirmation
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+priceSynchronisationDocument
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Price Synchronisation Document
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+productActivity
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Product Activity
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+productActivityBulkData
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Product Activity Bulk Data
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+purchaseConditions
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Purchase Conditions
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+receivingAdvice
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+Receiving Advice
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+registryCatalogueItem
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Registry Catalogue Item
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+registryPartyDataDump
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Registry Party Data Dump
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+replenishmentProposal
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Replenishment Proposal
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+replenishmentRequest
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Replenishment Request
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+requestForCatalogueItemNotification
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Request For Catalogue Item Notification
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+requestForPartyNotification
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Request For Party Notification
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+requestForPayment
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:pay:2
+
+</td>
+<td valign="top">
+
+Request For Payment
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+retailEvent
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Retail Event
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+searchRequest
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Search Request
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+searchResult
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Search Result
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+settlement
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:pay:2
+
+</td>
+<td valign="top">
+
+Settlement
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+simpleInvoice
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:pay:2
+
+</td>
+<td valign="top">
+
+Simple Invoice
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+smallPackageCarrierFreightInvoice
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+Small Package Carrier Freight Invoice
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+smallPackagePickupManifest
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+Small Package Pickup Manifest
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+sPCShipmentStatus
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+SPC Shipment Status
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+sPCShipmentStatusInquiry
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+SPC Shipment Status Inquiry
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+tradeItemDocument
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:align:2
+
+</td>
+<td valign="top">
+
+Trade Item Document
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+tradeItemDocument
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:gdsn:2
+
+</td>
+<td valign="top">
+
+Trade Item Document
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+tradeItemInformationRequest
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Trade Item Information Request
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+tradeItemLocationProfile
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:plan:2
+
+</td>
+<td valign="top">
+
+Trade Item Location Profile
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+tradingPartnerProfileDocument
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:align:2
+
+</td>
+<td valign="top">
+
+Trading Partner Profile Document
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+warehouseShippingOrder
+
+</td>
+<td valign="top">
+
+urn:ean.ucc:deliver:2
+
+</td>
+<td valign="top">
+
+Warehouse Shipping Order
+
+</td>
+<td valign="top">
+
+X
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 <td valign="top">
@@ -28949,13 +35122,13 @@ Codelist
 ## Further Reading
 
 -   [GS1 EANCOM Library in Integration Advisor](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-now-gs1-eancom-library-available/ba-p/13427011)
-
 -   [Automotive Edifact Subsets](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-automotive-edifact-subsets-jaif-odette-vda-now/ba-p/13501082)
 -   [Odette Message Standard](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-odette-message-standard/ba-p/13478984)
--   [GS1 XML Messages](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-gs1-xml-messages-and-namespace-support/ba-p/13570459)
+-   [GS1 XML 3.x Messages](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-gs1-xml-messages-and-namespace-support/ba-p/13570459)
 -   [GS1 Codelists](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-now-gs1-global-codelists-library-available/ba-p/13534622)
 -   [Tradacoms Message Standard](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-tradacoms-message-standard/ba-p/13574197)
 -   [EDI Envelopes in Integration Advisor](https://community.sap.com/t5/technology-blogs-by-sap/using-edi-envelopes-in-integration-advisor/ba-p/13915328)
 -   [xCBL Messages](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-support-of-xcbl-messages/ba-p/13945779)
 -   [Integration Advisor: Early UN/EDIFACT Versions with Syntax Version 2 Now Available](https://community.sap.com/t5/integration-blog-posts/integration-advisor-early-un-edifact-versions-with-syntax-version-2-now/ba-p/14233189)
+-   [Integration Advisor: GS1 XML Messages of the Version 2.X Series \(EAN.UCC\)](https://community.sap.com/t5/integration-blog-posts/integration-advisor-gs1-xml-messages-of-the-version-2-x-series-ean-ucc/ba-p/14295817)
 

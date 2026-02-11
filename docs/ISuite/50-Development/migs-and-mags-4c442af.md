@@ -6,7 +6,7 @@
 
 You can maintain a template for documentation export which is later picked by the system whenever you export a Message Implementation Guideline \(MIG\) or a Mapping Guideline \(MAG\).
 
-The admnistrative settings allows you to opt-in/opt out of the Proposal service.
+The administrative settings allow you to opt-in/opt out of the Proposal service.
 
 
 
@@ -42,7 +42,7 @@ The admnistrative settings allows you to opt-in/opt out of the Proposal service.
     </td>
     <td valign="top">
     
-    Enter a title that you would like to see in your MIG document
+    Enter a title that you want to see in your MIG document
     
     </td>
     </tr>
@@ -54,7 +54,7 @@ The admnistrative settings allows you to opt-in/opt out of the Proposal service.
     </td>
     <td valign="top">
     
-    Enter a title that you would like to see in your MAG document
+    Enter a title that you want to see in your MAG document
     
     </td>
     </tr>
@@ -202,6 +202,9 @@ The admnistrative settings allows you to opt-in/opt out of the Proposal service.
 
 ## Administrative Settings
 
+> ### Note:  
+> AI features are accessible only with the premium edition. They're provided as a free promotion through June 2026, after which they're commercialized as premium AI features using AI units.
+
 1.  Navigate to the *Administrative Settings* tab.
 
 2.  Choose *Edit* and enable or disable the *Enable Proposal Service* toggle button.
@@ -209,19 +212,19 @@ The admnistrative settings allows you to opt-in/opt out of the Proposal service.
     Users who wish to revoke consent for data collection related to proposal services may select this option to discontinue data sharing.
 
     > ### Remember:  
-    > Disabling the proposal service will lead to the following consequences:
+    > **Disabling** the proposal service has the following consequences:
     > 
-    > -   The proposal service will cease collecting Integration Advisor data, such as MIG and MAG data.
+    > -   The proposal service stops collecting Integration Advisor data, such as MIG and MAG data.
     > 
-    > -   MIG and MAG proposals will no longer be accessible to this tenant.
+    > -   MIG and MAG proposals are no longer accessible to this tenant.
     > 
-    > The change to this setting will take effect in the future, but it won't have any impact on previously collected data.
+    > The change to this setting takes effect in the future, but it won't have any impact on previously collected data.
     > 
-    > Enabling the proposal service will have the following impact:
+    > **Enabling** the proposal service has the following impact:
     > 
-    > -   The proposal service will gather Integration Advisor data, such as MIGs and MAGs from both past and future sources.
+    > -   The proposal service starts gathering Integration Advisor data, such as MIGs and MAGs from both past and future sources.
     > 
-    > -   MIG and MAG proposals will be accessible to this tenant.
+    > -   MIG and MAG proposals are accessible to this tenant.
 
 3.  Choose *Save*.
 

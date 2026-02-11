@@ -23,6 +23,36 @@ Description
 <tr>
 <td valign="top">
 
+1.7
+
+</td>
+<td valign="top">
+
+Updated guidance for data integration
+
+This version introduces SAP Business Data Cloud as a recommended technology for sharing data using data products, Additionally, integration policies for selected data integration technologies from SAP have been updated.
+
+This content update also includes a Data Integration style questionnaire with an example question related to the use case pattern *Data Product Sharing*. The questionnaire is added in Draft status. To consider SAP Business Data Cloud in the technology proposals, either activate the new questionnaire as a whole or update your existing questionnaire accordingly.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1.6
+
+</td>
+<td valign="top">
+
+Updated recommendations related to SAP Integrated Business Planning \(IBP\) for Supply Chain
+
+This version introduces SAP Integration Suite, Cloud Integration, as a general recommendation for integration scenarios where master data and orders are not supported by the Real-Time Integration option of SAP Integrated Business Planning \(IBP\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 1.5
 
 </td>

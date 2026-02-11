@@ -6,6 +6,9 @@ A set of best practices to ensure that APIs are designed for consistency, scalab
 
 By following a defined set of design guidelines, developers can build scalable and efficient API artifacts that are easier to manage, monitor, and extend over time. These guidelines cover key areas such as modular design, error handling, security, and performance optimization—ensuring best practices are consistently applied across all components of an API artifact.
 
+> ### Note:  
+> Only sub-categories marked as Yes are shown under Design Guidelines in the API artifact property sheet.
+
 ****
 
 
@@ -412,7 +415,7 @@ Use CSRF Protection
 </td>
 <td valign="top">
 
-Yes
+No
 
 </td>
 </tr>
@@ -536,7 +539,7 @@ Externalize Volatile Configurations for Receiver Adapters
 </td>
 <td valign="top">
 
-Yes
+No
 
 </td>
 </tr>
@@ -548,7 +551,7 @@ Externalize Volatile Configurations for Sender Adapters
 </td>
 <td valign="top">
 
-Yes
+No
 
 </td>
 </tr>
@@ -575,11 +578,11 @@ For more detailed guidance, refer to the [Integrations and API Design Guidelines
 
 [Add Resources to an API Artifact](add-resources-to-an-api-artifact-b5d0e4c.md "Add a resource to refer to individual endpoints or services.")
 
-[Copy an API Artifact](copy-an-api-artifact-820c9e8.md "You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API artifact but with some modifications or variations.")
-
 [Policy Definition and Types of Policies](policy-definition-and-types-of-policies-c744df5.md "You can define the behavior of an API by using policies.")
+
+[Externalize Parameter for API Artifact](externalize-parameter-for-api-artifact-ce0a468.md "You can use the externalization feature to define API policies and integration flows that can retrieve externalized configuration values during runtime. These parameters can be utilized later without modifying the standard API artifact.")
 
 [Deploy an API Artifact](deploy-an-api-artifact-b70e7ec.md "After creating an API artifact, it is necessary to deploy it on the chosen runtime in order to make it executable and ready for use.")
 
-[Externalize Parameter for API Artifact](externalize-parameter-for-api-artifact-ce0a468.md "You can use the externalization feature to define API policies and integration flows that can retrieve externalized configuration values during runtime. These parameters can be utilized later without modifying the standard API artifact.")
+[Copy an API Artifact](copy-an-api-artifact-820c9e8.md "You may want to create a copy of an existing API artifact with all its configurations and policies intact. This can be useful when you want to create a similar API artifact but with some modifications or variations.")
 

@@ -9,7 +9,7 @@ Export runtime artifacts for integration solutions.
 > ### Note:  
 > Currently, SAP Integration Suite supports exporting runtime artifacts for and SAP Process Orchestration.
 > 
-> To know more about these runtime artifacts, refer to the blog [The Mapping Artifacts and their Purpose](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-the-mapping-runtime-artifacts-and-their-purpose/ba-p/13426356).
+> To learn more about these runtime artifacts, see the blog [The Mapping Artifacts and their Purpose](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-the-mapping-runtime-artifacts-and-their-purpose/ba-p/13426356).
 
 By exporting the runtime artifacts, the application automatically generates a number of schemes, scripts, and examples from a mapping guideline, including:
 
@@ -39,26 +39,26 @@ You can then import these runtime artifacts in either of these integration solut
 
 <a name="loio5ab4cfe5ec724adda074c9773ea6b895__section_kzc_1zj_32c"/>
 
-## How to Export XSD File from EDI Type System
+## Exporting XSD File from EDI Type System
 
 You can now directly export Message Types of EDI Type Systems as an XSD file, eliminating the need to create a Message Implementation Guideline \(MIG\). This streamlined process saves time and effort. Follow the following procedure to know more:
 
 1.  Log in to your application.
 2.  Navigate to the *Type Systems* tab from the left pane.
 3.  Open the Type System containing the Message Type that you want to export as an XSD file.
-4.  Navigate to the *Messages* tab and open the specific version of the message type you want to export .
+4.  Navigate to the *Messages* tab and open the specific version of the message type you want to export.
 5.  Choose *Download XSD* to download this message type in an XSD file format.
 
 
 
 <a name="loio5ab4cfe5ec724adda074c9773ea6b895__section_ggv_f2f_zhb"/>
 
-## How to Export Runtime Artifacts?
+## Exporting Runtime Artifacts from MIG or MAG
 
-1.  Access the Message Implementation Guideline \(MIG\) or the Mapping Guideline \(MAG\) section.
+1.  Access the message implementation guideline \(MIG\) or the mapping guideline \(MAG\) section.
 2.  Select the MIG or MAG in which you want to export the runtime artifacts.
-3.  Choose <span class="SAP-icons-V5"></span> and then choose *Export*.
-4.  You see the following options for exporting the artifacts. Choose the appropriate option based on your needs.
+3.  Choose <span class="SAP-icons-V5"></span> Additional Options and then choose *Export*.
+4.  Based on your needs, choose one of the following options:
 
 
     <table>
@@ -100,12 +100,14 @@ You can now directly export Message Types of EDI Type Systems as an XSD file, el
     </tr>
     </table>
     
+    The automatically downloaded ZIP file contains the runtime artifacts as XSD, XSL, HTML and text files.
+
 
 
 
 <a name="loio5ab4cfe5ec724adda074c9773ea6b895__section_gp5_4mt_plb"/>
 
-## How to consume Runtime Artifacts?
+## Consuming Runtime Artifacts
 
 The SAP Integration Suite works with any kind of interface/API format; its automatically generated artifacts can be used in a variety of runtimes or implementations. Each different runtime has specific approaches, formats, pre-conditions, and implementation instructions. These must be considered, if the generated runtime artifacts are implemented into these runtimes and if the involved applications are connected. SAP’s intention is to provide templates and mechanisms that accelerate the onboarding of the runtime artifacts into the diverse supported runtime systems such as
 
@@ -115,7 +117,7 @@ The SAP Integration Suite works with any kind of interface/API format; its autom
 
 <a name="loio5ab4cfe5ec724adda074c9773ea6b895__section_sxj_qxd_mmb"/>
 
-## Change of XSD file name for EANCOM
+## Changing XSD file name for EANCOM
 
 There's now a unified naming convention for these Message XSDs for all messages from EDIFACT and EDIFACT subsets. Therefore, Message XSDs for an EANCOM MIG have a new file name which will comply to this naming convention. The details of this naming convention is:
 
@@ -245,7 +247,7 @@ You might come across the following scenarios while trying to update your integr
 
 <a name="loio5ab4cfe5ec724adda074c9773ea6b895__section_jpx_kgq_1fc"/>
 
-## Use Full or Reduced Message XSD File
+## Using Full or Reduced Message XSD File
 
 You can decide if you want to use the full or the reduced message XSD file in our message implementation guideline.
 
@@ -276,25 +278,109 @@ You can decide if you want to use the full or the reduced message XSD file in ou
 
 <a name="loio5ab4cfe5ec724adda074c9773ea6b895__section_srj_gp3_hgc"/>
 
-## Set UN/EDIFACT Message Version \(Field 0052\) for Older UN/EDIFACT Versions
+## Setting UN/EDIFACT Message Version \(Field 0052\) for Older UN/EDIFACT Versions
 
-In your MIG, you can define the expected value for message version \(field UNH \> S009 \> 0052\). The default value `D` is automatically applied, but you can change it to a different value if needed, like `1` or `2`. This setting influences the file name of the message XSD used in the EDI flow steps of Cloud Integration.
+In your MIG, you can define the expected value for message version \(field UNH \> S009 \> 0052\). A default value is automatically applied, but you can change it to a different value if needed, like `1` or `2`. This setting influences the file name of the message XSD used in the EDI flow steps of Cloud Integration.
 
 > ### Note:  
 > This property only applies to type systems UN/EDIFACT and its subsets, like GS1 EANCOM or Odette EDIFACT.
 
-In all **releases since 1993**, UN/EDIFACT has been using the value `D` for field 0052. As a result, the EDI flow steps expect a file name like <code>UN-EDIFACT_ORDERS_<b>D</b>96A.xsd</code>. But for **releases before 1993**, other values \(like `1` or `2`\) were used for field 0052. In those cases, the EDI flow steps expect a file name like <code>UN-EDIFACT_ORDERS_<b>2</b>911.xsd</code>.
+In all **releases since 1993**, UN/EDIFACT has been using the value `D` for field 0052. As a result, the EDI flow steps expect a file name like <code>UN-EDIFACT_ORDERS_<b>D</b>96A.xsd</code>. But for **releases before 1993**, other values \(like `1` or `2`\) were used for field 0052. In those cases, the EDI flow steps expect a file name like <code>UN-EDIFACT_ORDERS_<b>2</b>912.xsd</code>.
+
+For new message implementation guidelines, Integration Advisor automatically assigns a default value according to the following rules:
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Default Value
+
+</th>
+<th valign="top">
+
+Versions
+
+</th>
+<th valign="top">
+
+Applies to
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`D`
+
+</td>
+<td valign="top">
+
+Edifact versions starting with D
+
+</td>
+<td valign="top">
+
+All versions starting from D.93A S3
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`1`
+
+</td>
+<td valign="top">
+
+Edifact versions not starting with D and having minor version 1
+
+</td>
+<td valign="top">
+
+-   Version 91.1 S2
+-   Version 92.1 S3
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`2`
+
+</td>
+<td valign="top">
+
+Edifact versions not starting with D and having minor version 2
+
+</td>
+<td valign="top">
+
+-   Version 90.2 S2
+-   Version 91.2 S2
+-   Version 93.2 S3
+
+
+
+</td>
+</tr>
+</table>
+
+> ### Note:  
+> For subsets of UN/EDIFACT \(like GS1 EANCOM\) the same logic is applied based on the underlying UN/EDIFACT version.
+
+> ### Note:  
+> For all message implementation guidelines created before September 2025, `D` is the default value.
 
 To change this value for older UN/EDIFACT releases, perform the following steps:
 
 1.  Open your message implementation guideline and go to the tab *Runtime Context*.
 2.  Choose *Edit*.
-3.  In the section *EDI Flat File*, you can choose between the following options for the property *Configure EDIFACT Message Version*:
-
-    `1`, `2`, `88`, `89`, `90`, `D (Default)`, and `S`
-
-    > ### Note:  
-    > For all new message implementation guidelines, the default value of this property is `D`. Value D is also used for all message implementation guidelines created before September 2025.
+3.  In the section *EDI Flat File*, choose one of the following options for the property *Configure EDIFACT Message Version*: `1`, `2`, `88`, `89`, `90`, `D`, or `S`.
 
 4.  Save your changes.
 

@@ -50,7 +50,7 @@ To get access to Data Space Integration using APIs, you must first create a serv
 
 1.  Go to the SAP BTP cockpit and navigate to your subaccount that has SAP Integration Suite enabled. From there, go to *Cloud Foundry* \> *Spaces* \> *Your space* \> *Services* \> *Instances*.
 2.  Select **Create** to create a new service instance and select `Data Space Integration API Access`. In the **Plan** field, enter `api`, and add an instance name. Then, choose **Next**.
-3.  Next, select the applicable role to enforce authorization, `DataspaceConsumer` or `DataspaceProvider`, or both, depending on the needs of the business application that wants to exchange data within the data space. For an overview of the available roles and their authorizations, see [Personas and Roles](60-Security/identity-and-access-management-for-data-space-integration-211c66a.md#loio211c66a2f65e4bf0ad0e93e68cfff984__section_cxz_vsk_pcc).
+3.  Next, select the applicable role to enforce authorization, `AuthGroup_DataspaceConsumer` or `AuthGroup_DataspaceProvider`, or both, depending on the needs of the business application that wants to exchange data within the data space. For an overview of the available roles and their authorizations, see [Personas and Roles](60-Security/identity-and-access-management-for-data-space-integration-211c66a.md#loio211c66a2f65e4bf0ad0e93e68cfff984__section_cxz_vsk_pcc).
 
     Once you've selected the role, select `client_credentials` as the grant type and choose **Next**.
 
@@ -73,7 +73,7 @@ Now that you've created a new service key, you can start interacting with Data S
 
 [Discovering Offers Through a Catalog](discovering-offers-through-a-catalog-90f3619.md "Before you can consume an asset of another data space participant, you must discover their catalog and decide on an offer.")
 
-[Consuming S3 and Azure Assets](consuming-s3-and-azure-assets-4afdf5c.md "Learn how to trigger a contract negotiation, agree with a provider on the conditions for using their assets, and transfer assets to your desired location.")
+[Consuming Assets Into Amazon S3 Storage](consuming-assets-into-amazon-s3-storage-4afdf5c.md "Learn how to trigger a contract negotiation, agree with a provider on the conditions for using their assets, and transfer assets to your desired location.")
 
 [Consuming HTTP Assets](consuming-http-assets-735300c.md "Learn how to initiate contract negotiations and transfer HTTP assets from a provider's catalog.")
 

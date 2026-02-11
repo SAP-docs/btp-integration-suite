@@ -27,7 +27,7 @@ You are updating a key value map to either add an entry, delete an entry, or upd
 
 ## Procedure
 
-1.  Log on to the .
+1.  Log on to .
 
 2.  Choose the navigation icon on the left and choose *Configure* \> *APIs*.
 

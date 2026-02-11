@@ -11,7 +11,9 @@ View or configure APIs for anomaly detection.
 ## Context
 
 > ### Note:  
-> The availability of the anomaly detection and prediction features depends on your SAP Integration Suite service plan. For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620).
+> AI features are accessible only with the Premium Edition. They are provided as a free promotion through June 2026 and will be commercialized afterward as Premium AI features using AI Units.
+> 
+> For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620)
 
 To view or modify the APIs for anomaly detection, follow the steps below:
 
@@ -37,12 +39,12 @@ To view or modify the APIs for anomaly detection, follow the steps below:
     The *Modify APIs* dialog will display the list of APIs that meet the minimum data requirement \(at least 3 months' worth of API data\) and are available for AI model training.
 
     > ### Note:  
-    > Currently, you can select up to five individual APIs for anomaly detection.
+    > Currently, you can select up to 50 individual APIs for anomaly detection.
 
 6.  Choose *Confirm* to save your changes.
 
     > ### Note:  
-    > Each time you modify the configuration, the AI model needs to be retrained to effectively detect anomalies. On average, the training process takes approximately 3 hours to complete. Therefore, it is not recommended to make frequent configuration changes.
+    > Each time you modify the configuration, the AI model needs to be retrained to effectively detect anomalies. On average, the training process takes approximately 4 hours to complete. Therefore, it is not recommended to make frequent configuration changes.
 
 
 **Related Information**  

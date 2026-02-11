@@ -117,7 +117,7 @@ We recommend using this construction rule: <region\>/<applicationNamespace\>/<in
 Resource units are a collection of messaging resources, such as queues, connections, and so on, required for a message client. You can specify this value in the service descriptor to allocate messaging resources based on a specific business scenario.
 
 > ### Example:  
-> For example, if you create a service instance with 12 resource units, you can have 12 queues, 12 webhooks, 12 connections, 36 consumers, 36 producers, and 180 queue subscriptions. There's no limit on message spooling.
+> For example, if you create a service instance with 12 resource units, you can have 12 queues, 12 webhooks, 12 connections, 36 consumers, 36 producers, and 180 queue subscriptions. 120MB message spooling.
 
 If you don't define resource units, all messaging resources can be used based on the general limits applicable to a message client.
 

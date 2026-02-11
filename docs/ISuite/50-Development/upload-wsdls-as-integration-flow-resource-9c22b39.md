@@ -171,7 +171,7 @@ You can verify the concatenated single name by inspecting the entry of the is ma
 
 [Configure the SOAP \(SOAP 1.x\) Receiver Adapter](configure-the-soap-soap-1-x-receiver-adapter-57f7b34.md "The SOAP (SOAP 1.x) receiver adapter enables a SAP BTP tenant to exchange messages with a receiver system that supports Simple Object Access Protocol (SOAP) 1.1.")
 
-[Manage Resources](manage-resources-b5968b2.md "")
+[Manage References](manage-references-b5968b2.md "")
 
 [Creating Message Mapping as a Flow Step](creating-message-mapping-as-a-flow-step-3d5cb7f.md "")
 

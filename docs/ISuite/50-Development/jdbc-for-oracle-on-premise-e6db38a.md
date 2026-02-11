@@ -84,7 +84,7 @@ jdbc:oracle:thin:@myoracle:1521:my\_sid
 Before connecting to this database, you must upload the drivers and then, add the Data Source. For more details, see [Configure JDBC Drivers](configure-jdbc-drivers-77c7d95.md) and [Managing JDBC Data Sources](managing-jdbc-data-sources-4c873fa.md)
 
 > ### Note:  
-> Oracle RAC setup is not supported.
+> Oracle RAC setup is supported for the Edge Integration Cell runtime profile, but not for the Cloud Integration runtime profile. 
 
 **Related Information**  
 
