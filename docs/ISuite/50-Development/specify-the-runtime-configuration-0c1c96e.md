@@ -113,7 +113,7 @@ Specify the runtime properties of the integration flow.
     > 
     >     Note that contants separated with the pipe character \(`|`\) \(as mentioned above\) is also a regular expression.
     > 
-    >     You can also combine contant values with regular expressions, separated by the pipe character \(`|`\).
+    >     You can also combine constant values with regular expressions, separated by the pipe character \(`|`\).
     > 
     >     Example: `AB_[0-9]|ABC`
     > 
