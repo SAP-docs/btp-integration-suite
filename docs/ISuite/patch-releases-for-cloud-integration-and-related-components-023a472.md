@@ -79,6 +79,368 @@ Patches for different components are associated with different major software ve
 
 
 
+## March 2026
+
+Software Increment: 2601
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.40.27
+
+</td>
+<td valign="top">
+
+This patch fixes the issue of network errors in the OData V2 receiver, caused by stale connections remaining in the pool after a timeout, by implementing a background job that periodically clears these stale connections when the system variable `SAP_ODATA2_CONNECTION_POOL_CLEANUP_ENABLED` is set to `True`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.76.46
+
+</td>
+<td valign="top">
+
+This patch fixes the issue of network errors in the OData V2 receiver, caused by stale connections remaining in the pool after a timeout, by implementing a background job that periodically clears these stale connections when the system variable `SAP_ODATA2_CONNECTION_POOL_CLEANUP_ENABLED` is set to `True`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.40.26
+
+</td>
+<td valign="top">
+
+This patch fixed an issue that prevented the deletion of service keys for Process Integration Runtime service instances.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.76.45
+
+</td>
+<td valign="top">
+
+This patch fixed an issue that prevented the deletion of service keys for Process Integration Runtime service instances.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.40.25
+
+</td>
+<td valign="top">
+
+This patch includes the following:
+
+-   It enhances partner `Delete` for PD in Edge Integration Cell \(EIC\).
+-   Ensures that the exception subprocess functionality for API artifacts in EIC works correctly, preventing deployment failures in environments running older worker versions.
+-   Improves the reliability of the HTTP Receiver Adapter by introducing configurable retry support for I/O-related connection errors, reducing message failures caused by intermittent network connection resets. \(Retry is disabled by default and can be enabled by SAP operations\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.76.44
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   It enhances the JDBC adapter with additional loggers and Retry mechanisms to resolve Service Reference Null issues.
+-   Stale artifact metadata in the microservice database is now automatically cleaned up, fixing issues where artifacts were incorrectly displayed as *Starting* during rapid deploy/undeploy or redeploy actions. This ensures accurate monitoring status.
+-   The cleanup expiry configuration was reduced from 7 to 3 days to prevent the buildup of outdated artifacts.
+-   Calling integration flow endpoints with an expired OAuth token now returns the correct `HTTP 401` response code instead of `HTTP 500`, ensuring accurate authentication error reporting.
+-   Partner `Delete` enhancement for PD in EIC.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.76.36
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Resolves issues with software updates getting stuck by fixing the deployment automation script.
+-   Fixes an issue with the generation of the evaluation report.
+-   It enhances the JDBC adapter with additional loggers and Retry mechanisms to resolve Service Reference Null issues.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+## March 2026
+
+Software Increment: 2513
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.75.51
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   It fixes an issue with the generation of the evaluation report.
+-   Resolves errors with the OData V4 adapter failing to parse `202 Accepted` responses when the `Prefer: respond-async` header is included. This patch ensures successful processing of async requests.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.75.48
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Ensures that Exception Subprocess functionality for API artifacts in Edge Integration Cell \(EIC\) works correctly, preventing deployment failures in environments running older worker versions.
+-   Fixes a data conversion issue during data extraction that could cause the extraction process to fail.
+-   Updates third-party dependencies identified by the OSS security scanner as vulnerable to denial-of-service attacks.
+-   Introduces a retry mechanism in the JDBC adapter to improve resilience during temporary connectivity service interruptions or database outages. Retry behavior can be configured using tenant-level environment variables.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+## February 2026
+
+Software Increment: 2513
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.39.12
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Ensures headers configured under Metadata Details are sent only for metadata and service document calls across all message processing logs, preventing unintended header propagation.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.75.44
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Ensures headers configured under Metadata Details are sent only for metadata and service document calls across all message processing logs, preventing unintended header propagation.
+-   Improves the reliability of the HTTP Receiver Adapter by introducing configurable retry support for I/O-related connection errors, reducing message failures caused by intermittent network connection resets. \(Retry is disabled by default and can be enabled by SAP operations.\)
+-   Enhances HTTP runtime resilience and Java compatibility by enabling configurable retries for I/O exceptions, supporting both Kafka client 3 and Kafka client 4, and extending compatibility with JDK 17 and higher.
+-   Enables visibility of the API Provider option for the Edge Integration Cell \(EIC\) profile, improving configuration consistency for EIC scenarios.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.75.38
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Ensures recently created or updated artifacts are displayed correctly on the home page.
+-   Fixes health check failures that caused incorrect system status across multiple landscapes.
+-   Resolves issues loading *Company Profile* \> *Security Configurations* in the UI and during Agreement exports.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.75.36
+
+</td>
+<td valign="top">
+
+This patch does the following:
+
+-   Corrects the release version for Migration Assessment and Integration Assessment to 1.50.
+-   Deactivates the script to create custom domains.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 ## February 2026
 
 Software Increment: 2512
@@ -836,7 +1198,7 @@ Cloud Integration
 </td>
 <td valign="top">
 
-This patch fixes deployment issues for integration flows using XI adapters, ensuring successful execution for version 1.15 and above. It supports Quality of Service settings: At Least Once \(ALO\), Exactly Once \(EO\), and High Business Impact \(HBI\).
+This patch fixes deployment issues for integration flows using XI adapters, ensuring successful execution for version 1.15 and above. It supports Quality of Service settings: At Least Once \(ALO\), Exactly Once \(EO\), and Handled by Integration Flow \(HBI\).
 
 </td>
 </tr>
@@ -853,7 +1215,7 @@ Cloud Integration
 </td>
 <td valign="top">
 
-This patch fixes deployment issues for integration flows using XI adapters, ensuring successful execution for version 1.15 and above. It supports Quality of Service settings: At Least Once \(ALO\), Exactly Once \(EO\), and High Business Impact \(HBI\).
+This patch fixes deployment issues for integration flows using XI adapters, ensuring successful execution for version 1.15 and above. It supports Quality of Service settings: At Least Once \(ALO\), Exactly Once \(EO\), and Handled by Integration Flow \(HBI\).
 
 </td>
 </tr>

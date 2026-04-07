@@ -107,7 +107,7 @@ By enabling this feature, you can explicitly clone the API proxies mentioned in 
 
     Ensure that you don’t modify the name of the `apim-tct-input.json` file.
 
-    For more information on how to create the service key, refer the [Accessing API Management APIs Programmatically](../accessing-api-management-apis-programmatically-24a2c37.md) and [Accessing Developer Hub APIs Programmatically](../accessing-developer-hub-apis-programmatically-dabee6e.md).
+    For more information on how to create the service key, refer the [Accessing API Management APIs Programmatically](../accessing-api-management-apis-programmatically-24a2c37.md) and [Accessing Developer Hub APIs Programmatically](../50-Development/accessing-developer-hub-apis-programmatically-dabee6e.md).
 
     **Structure of the apim-tct-input.json file:**
 

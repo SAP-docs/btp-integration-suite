@@ -54,7 +54,7 @@ API Management in SAP Integration Suite is used to discover, shape, compose, int
     -   Approving application registrations and access requests
     -   Ensure that consumers have a smooth experience while maintaining security and governance over who can access what
 
-    See, [Consume APIs](50-Development/consume-apis-ea561e4.md).
+    See, [Developer Hub: The Central Catalog for All Your APIs and Events](50-Development/developer-hub-the-central-catalog-for-all-your-apis-and-events-41f7c45.md).
 
 6.  **Analyze API Proxies**
 

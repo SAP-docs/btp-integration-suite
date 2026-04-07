@@ -80,7 +80,7 @@ To configure the retry behavior, the JMS sender adapter provides a set of attrib
     > This attribute is only configurable when *Exponential Backoff* is selected.
 
     > ### Note:  
-    > For exclusive queues, the value should be between 1 to 180 minutes, inclusive.
+    > For exclusive queues, the value should be between 10 to 180 minutes, inclusive.
 
 -   *Dead-Letter Queue* 
 

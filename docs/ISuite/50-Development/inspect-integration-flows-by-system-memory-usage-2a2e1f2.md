@@ -11,12 +11,12 @@ The chart shows memory allocation and allows you to do a relative comparison of 
 > 
 > However, it's usual for an integration flow to have high throughput and allocate a lot of memory, as long as the memory is reclaimed fast enough. This is the normal mode of operation for high-throughput scenarios.
 
-Only those integration flows that are identified as top consumers of memory in terms of allocation are shown \(sorted top-down by average usage\).
+The top chart displays only those integration flows that are identified as the top consumers of memory in terms of allocation. The bottom chart shows the integration flows with the largest message sizes.
 
 > ### Tip:  
 > -   Use the *Top Integration Flows* filter to adjust the number of integration flows shown on the chart. The default is six, and the maximum is 15.
 > 
-> -   Use the *Memory Allocation* filter to display the top integration flows with the maximum detected memory consumption.
+> -   Use the *Aggregation* filter to display the top integration flows with the maximum detected memory consumption.
 
 The color shade of a cell reflects the level of memory allocation. The darkest shade reflects the highest usage observed during the selected time period.
 

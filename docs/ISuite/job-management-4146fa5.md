@@ -24,6 +24,7 @@ You can perform the following types of jobs, also refereed to as *Actions*:
 -   *Consolidate MPL Aggregation Data*. Consolidate the statistics data used to display the *Message Status Overview* page. This helps preserve the database quota. The system adjusts data within the timeframe specified in the job parameter to eliminate unnecessary detail.
 -   *Update Expiring OAuth2 Refresh Tokens*. Update refresh tokens for OAuth2 credentials that use the Authorization Code grant type before they expire.
 -   *MPL Status Update*. Update message processing log statuses. For example, it changes message processing logs to *Abandoned* status if they remain in *Processing* status for an extended period without any further updates.
+-   *CALM Data Transfer*. Periodically push message processing log data to FRUN systems.
 
 > ### Note:  
 > Per default, *Cleanup Data Store Entries*, *Cleanup Monitoring Data*, and *Cleanup Trace Entries* are scheduled during the installation time. However, you must schedule *Cleanup Diagnostic Data* manually.

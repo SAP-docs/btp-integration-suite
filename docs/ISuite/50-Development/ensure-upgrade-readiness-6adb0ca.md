@@ -15,12 +15,12 @@ The Cloud Integration capability of SAP Integration Suite currently provides the
 
 ## Implications
 
-While [executing](design-guidelines-view-d62dfe0.md) the design guidelines from your integration flow, unlike other [design guidelines](IntegrationSettings/design-guidelines-4d1c84f.md) this guidelines can't be skipped. If the non-compliace is highlighted regarding the underlying [Groovy Script](groovy-script-fa29f02.md) guidelines, you must navigate to the respective Groovy Script and [fix the incompatibilities](fix-script-incompatibilities-7397c42.md). To help compatibility with future runtime and software upgrades, and receive resolution support for violations, you should also upgrade your Groovy Script step to the latest version, which utilizes Groovy runtime 4.0.29. See [Upgrading Groovy Script](upgrading-groovy-script-917e014.md)
+While [executing](design-guidelines-view-d62dfe0.md) the design guidelines from your integration flow, unlike other [design guidelines](IntegrationSettings/design-guidelines-4d1c84f.md) this guidelines can't be skipped. If the non-compliace is highlighted regarding the underlying [Groovy Script](scripts-fa29f02.md) guidelines, you must navigate to the respective Groovy Script and [fix the incompatibilities](fix-script-incompatibilities-7397c42.md). To help compatibility with future runtime and software upgrades, and receive resolution support for violations, you should also upgrade your Groovy Script step to the latest version, which utilizes Groovy runtime 4.0.29. See [Upgrading Groovy Script](upgrading-groovy-script-917e014.md)
 
 **Related Information**  
 
 
-[Groovy Script](groovy-script-fa29f02.md "A Groovy script step can be used in an integration flow for script operations on the message content.")
+[Scripts](scripts-fa29f02.md "A Groovy or Java script step can be used in an integration flow for script operations on the message content.")
 
 [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md "Fix the incompatibilities in the scripts that are automatically identified by the script editor.")
 

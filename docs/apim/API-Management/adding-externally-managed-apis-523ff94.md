@@ -14,7 +14,7 @@ To add an externally managed API, you must import the API definition of an exter
 
 -   To import an externally managed API, you need to have or create an OpenAPI file for it.
 
-    The OpenAPI file should specify the URL of the API. If you don't have an OpenAPI specification for your API, you can create one using various open-source editors or the API Designer included within . For more information, see [Create an API Using the API Designer](https://help.sap.com/docs/integration-suite/sap-integration-suite/create-api-from-api-designer?q=API%20Designer). Also, refer to the "Prerequisites" section in [Import an API Definition](import-an-api-definition-9342a93.md).
+    The OpenAPI file should specify the URL of the API. If you don't have an OpenAPI specification for your API, you can create one using various open-source editors or the API Designer included within . For more information, see [Create an API Proxy Using the API Designer](create-an-api-proxy-using-the-api-designer-26e1bbd.md). Also, refer to the "Prerequisites" section in [Import an API Definition](import-an-api-definition-9342a93.md).
 
 
 
@@ -37,7 +37,7 @@ To add an externally managed API, you must import the API definition of an exter
 
     This API will only be listed in , and it's lifecycle will not be managed.
 
-    In order to access externally managed APIs in the Developer Hub, you need to add these APIs to a product and then publish the product. For more information on how to create a product, see [Create a Product](https://help.sap.com/docs/integration-suite/sap-integration-suite/create-product?q=import%20an%20APi&version=CLOUD).
+    In order to access externally managed APIs in the Developer Hub, you need to add these APIs to a product and then publish the product. For more information on how to create a product, see [Create a Product](create-a-product-d769622.md).
 
     > ### Note:  
     > While you can add externally managed APIs to a product, you will not be able to include rate plans or add custom attributes for them.

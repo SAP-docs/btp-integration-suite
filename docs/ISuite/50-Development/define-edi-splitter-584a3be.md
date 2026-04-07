@@ -1740,7 +1740,7 @@ A
 <tr>
 <td valign="top">
 
-SAP\_EDI\_Receiver\_ID
+SAP\_EDI\_GS\_Receiver\_ID
 
 </td>
 <td valign="top">

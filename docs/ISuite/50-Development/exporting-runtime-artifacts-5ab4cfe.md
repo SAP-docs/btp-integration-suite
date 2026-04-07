@@ -384,3 +384,23 @@ To change this value for older UN/EDIFACT releases, perform the following steps:
 
 4.  Save your changes.
 
+
+
+## Improved and Unified MIG Preprocessing for MIGs without Envelope
+
+Integration Advisor provides unified MIG preprocessing for MIGs without envelope.
+
+Some type systems \(`ASC X12`, `UN/EDIFACT` and its subsets like `GS1 EANCOM`, `Odette`, `cXML` and `GS1 XML` \(2.x series\)\) require an envelope structure around the actual message structure. When a payload arrives from the business partner, it typically includes both envelope and message parts.
+
+Originally, if your message implementation guideline was defined without an envelope, the actual MIG preprocessing assumed a payload without envelope parts. For **EDI messages**, the envelope could be removed as part of the EDI flow step "EDI-To-XML-Converter". For **XML messages**, you needed a separate content modifier step in your integration flow to extract the message part from the payload.
+
+For **EDI messages** \(ASC X12, UN/EDIFACT and its subsets like GS1 EANCOM, Odette\), the MIG preprocessing already included additional logic to remove the envelope part if it was still part of the payload. But for **XML messages** \(cXML and GS1 XML\), the MIG preprocessing was not working correctly if mismatches between payload and MIG occurred. This logic is now unified.
+
+For any MIG preprocessing XSLT created after March 2026, the following applies to type systems with envelopes:
+
+-   If your MIG is **defined without envelope**, the MIG preprocessing automatically removes any existing envelope part because the following processing steps \(like validation or mapping\) expect the payload to have no envelope.
+-   If your MIG is **defined with envelope**, the MIG preprocessing keeps the envelope because the following processing steps \(like validation or mapping\) expect the payload to have an envelope.
+
+> ### Note:  
+> If your integration flow in Cloud Integration implements any **special handling** on these payloads, check if it continues to work as expected.
+

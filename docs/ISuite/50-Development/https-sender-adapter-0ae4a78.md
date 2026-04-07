@@ -40,7 +40,7 @@ The following HTTPS request headers for the sample HTTPS endpoint `https://test.
 
     Refers to the complete URL called, without query parameters.
 
-    For example, `CamelHttpUrl=https://test.bsn.neo.ondemand.com/http/hello`.
+    For example, `CamelHttpUrl=http://test.bsn.neo.ondemand.com/http/hello`.
 
 -   **CamelHttpQuery**
 

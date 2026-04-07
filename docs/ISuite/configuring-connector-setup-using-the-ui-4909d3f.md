@@ -34,15 +34,17 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
         > ### Note:  
         > If *Settings* \> *Data Spaces* isn't visible to you, you might not have the correct role assigned to your user. Only users with the role `DataspaceTechnicalAdmin` can perform the onboarding.
 
-    2.  In the first tab *Connect to a Data Space*, select the *Landscape* you want to onboard to. It must be the same landscape in which you've created the *Identity Wallet Management* and *Offer Management* role in [Creating Technical Users in Landscape Portal](creating-technical-users-in-landscape-portal-b95f0ef.md).
+    2.  In the first tab *Connect to a Data Space*, select the *Landscape* you want to onboard to. It must be the same landscape in which you've created the *Identity Wallet Management* and *Connector Management* role in [Creating Technical Users in Landscape Portal](creating-technical-users-in-landscape-portal-b95f0ef.md).
 
     3.  Enter the *Business Partner Number* of the company account.
 
     4.  Choose a *Connector Name* under which you want the connector to be registered in the portal. The *Default Connector URL* is prefilled automatically.
 
+        The default connector URL is listed in the data space discovery API. If your business partner uses the discovery API to get your connector URL, they must **add the suffix `/api/v1/dsp` to the URL** to reach your catalog.
+
         If you want to overwrite the *Default Connector URL*, you can enter a *Custom Connector URL*. This URL then replaces the default connector externally. If you don't require a custom connector URL, leave this field empty.
 
-    5.  Fill in the *Offer Management User* information. You can retrieve these details from the *Offer Management* user that you created in the landscape portal.
+    5.  Fill in the *Offer Management User* information. You can retrieve these details from the *Connector Management* user that you created in the landscape portal.
 
     6.  In the section *Identity Wallet Management*, select the source of the *Wallet* you're using: *Landscape Portal*, *Third Party* \(for example, self-hosted\), or *Decentralized Identity Verification*. Depending on your choice, some fields in this section come prefilled.
 
@@ -76,7 +78,8 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
         To get these parameters, access the SAP BTP cockpit, go to *Instances and Subscriptions*, and select the relevant service key. In the expanding details view, choose *key* and then *Copy JSON*. See also [Preparing Cloud Integration](preparing-cloud-integration-07f81f2.md).
 
     2.  Repeat the previous step for the *Runtime Parameters*, with service key *Process Integration Runtime*, plan `integration-flow`.
-    3.  Choose *Save*.
+
+    3.  Choose *Save* and again, wait for 5 minutes before continuing.
 
 
 3.  Finally, continue to the tab *Onboard the Data Plane*.

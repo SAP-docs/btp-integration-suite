@@ -4,6 +4,9 @@
 
 The IP filter policy allows or denies calls from specific IP addresses or address ranges.
 
+> ### Note:  
+> This feature and the information is relevant only if you have activated Edge Integration Cell in your SAP Integration Suite tenant. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
 This policy is used to selectively allow or deny access for an IP address or group of IP addresses. Use this policy when you want to limit access to APIs to only a specific IP address or group of IP addresses. For example, if you only want systems \(computers, mobile, etc\) under the control of your enterprise to access the APIs exposed in your test environment, you can allow \(allowlist\) the IP address range for your internal network. Developers working from home can access these APIs using VPN.
 
 > ### Note:  

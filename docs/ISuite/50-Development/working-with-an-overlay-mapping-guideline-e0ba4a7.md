@@ -38,7 +38,18 @@ An Overlay MAG automatically includes all mapping elements from the underlying B
     4.  **Overwrite a Base Mapping Element**: If you want to replace/overwrite a base mapping element with overlay mapping element, select the existing mapping line and choose *Create Editable Copy*. This deletes the base mapping and allow you to create a new overlay mapping.
 
 
-5.  You can also use the *Proposal* Service to get a proposal on fields that might be most relevant for you.
+5.  Overlay MAGs automatically inherit **global parameters** and **shared code** from their base MAG. You can't modify or delete these inherited elements.
+
+    You can **define additional, overlay-specific global parameters and shared code**. Make sure that they have different identifiers compared with their base MAGs.
+
+6.  Overlay MAGs automatically inherit **target node duplication rules** from their base MAG. You can't modify or delete these inherited rules.
+
+    You can **define additional, overlay-specific target node duplication rules**. If both base MAG and overlay MAG duplicate the same target node, the base duplicates are shown first and the overlay duplicates afterwards.
+
+    > ### Note:  
+    > The behavior of duplicate target nodes in base MAGs and overlay MAGs changed with release 2601. As a result, all impacted overlay MAGs created before that release were migrated. For details, see [Duplicate Target Nodes in Overlay MAGs](limitations-73bec5f.md#loio73bec5f173ae4d27a1d23908a9da62cd__Limitations_DuplicateTargetNodes).
+
+7.  You can also use the *Proposal* Service to get a proposal on fields that might be most relevant for you.
 
     1.  Choose Proposals: Get Proposals to activate a proposal indicator that displays which fields might be most relevant for you. This is calculated based on the other available MAGs.
 
@@ -47,7 +58,7 @@ An Overlay MAG automatically includes all mapping elements from the underlying B
 
     The mapping list displays all the relevant information of the source and target nodes such as source nodes, target nodes, their cardinality and so on. The *Type* column displays the type of each entry in the mapping list. You can filter and view the mappings that are erroneous and mappings that have proposals using the drop-down filter available above the mapping list table.
 
-6.  You can also search for a particular value in the*Mapping List* tab by selecting the following column headers and entering the search value in the <span class="SAP-icons-V5"></span> Filter.
+8.  You can also search for a particular value in the*Mapping List* tab by selecting the following column headers and entering the search value in the <span class="SAP-icons-V5"></span> Filter.
 
     -   Source
     -   Source Name
@@ -56,9 +67,9 @@ An Overlay MAG automatically includes all mapping elements from the underlying B
 
     This filter option is also available for the *Code Value Mapping* tab.
 
-7.  If you want to search for all XSLT snippets and XPath expressions for a certain text pattern and want the list of mapping elements to be filtered by those elements that contain the search pattern, you can use the *Search* field provided above the *Mapping List* table. Use the search field to enter the function pattern and select :mag: . This displays the list of mapping elements pertaining to that function pattern.
+9.  If you want to search for all XSLT snippets and XPath expressions for a certain text pattern and want the list of mapping elements to be filtered by those elements that contain the search pattern, you can use the *Search* field provided above the *Mapping List* table. Use the search field to enter the function pattern and select :mag: . This displays the list of mapping elements pertaining to that function pattern.
 
-8.  For overlay MAGs, there are search options provided above the mappings table that allow you to filter the mappings in the *Mapping List* table on various criteria:
+10. For overlay MAGs, there are search options provided above the mappings table that allow you to filter the mappings in the *Mapping List* table on various criteria:
 
     1.  *Resultant Mappings*: Displays the mappings that are executed for this overlaid MAG.
 
@@ -69,11 +80,11 @@ An Overlay MAG automatically includes all mapping elements from the underlying B
     4.  *Excluded Base Mappings*: Displays the deleted base MAG mappings inherited by this overlay MAG. To restore a deleted base mapping, select the :heavy_plus_sign: button next to the specific mapping.
 
 
-9.  You can add or manage additional information or functions about each element by selecting the mapping entity line.
+11. You can add or manage additional information or functions about each element by selecting the mapping entity line.
 
     The mapping also supports various value transformations. To learn about these features, see [Value Transformations](value-transformations-19f8374.md)
 
-10. You can combine an Overlay MAG with pretransformation \(PTS\). For this, you have the following options:
+12. You can combine an Overlay MAG with pretransformation \(PTS\). For this, you have the following options:
 
     -   **Option 1: Base MAG with PTS and Overlay MAG without PTS**
 

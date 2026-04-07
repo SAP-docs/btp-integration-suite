@@ -12,20 +12,29 @@ The B2B monitoring system consists of two primary components:
 
 -   **Monitor Unassigned Interchanges**: This tile enables you to monitor interchanges that have not been assigned to a specific partner or transaction. This includes interchanges that are pending, rejected, or require manual intervention.
 
-Follow the procedure below to access your B2B monitoring:
+The **retention period** of interchanges is 90 days.
 
-1.  Log on to SAP Integration Suite .
-2.  Choose *Monitor* \> *B2B Scenarios*
-3.  The monitoring section opens with two tiles
+
+
+## Accessing B2B Monitoring
+
+To access your B2B monitoring, follow the following procedure:
+
+1.  Log on to SAP Integration Suite.
+2.  Go to *Monitor* \> *B2B Scenarios*.
+3.  The monitoring section opens with two tiles:
 
     -   Interchanges
 
     -   Unassigned Interchanges
 
-    Both the tiles display the interchange messages that were processed in the last 24 hours.
+
+    Both tiles display the interchange messages that were processed in the last 24 hours.
 
 4.  To monitor your interchanges, see [Monitor Interchanges](monitor-interchanges-42c1199.md).
 5.  To monitor your unassigned interchanges, see [Monitor Unassigned Interchanges](monitor-unassigned-interchanges-c86bd69.md).
+
+![Trading Partner Management monitor showing B2B scenarios with interchange message tiles.](images/SUI_B2B_Monitoring_0407f6a.png)
 
 **Related Information**  
 

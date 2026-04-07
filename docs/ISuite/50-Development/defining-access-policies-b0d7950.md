@@ -14,7 +14,7 @@ Define an access policy to specify which artifacts are to be protected.
 
 To create and edit access policies, your user must be assigned the role collection *PI\_Administrator*.
 
-To view and define access policies, go to **Monitor** **\>** **Integrations and APIs** **\>** **Manage Security** and select the **Access Policies** tile.
+To view and define access policies, go to *Monitor* \> *Integrations and APIs* \> *Manage Security* and select the *Access Policies* tile.
 
 You can use the *Runtime* dropdown to view a list of all available policies in specific runtimes. For more information about access policies, see [Access Policies](access-policies-e0009f3.md).
 
@@ -171,6 +171,9 @@ To create new access policies, perform the following procedure:
 
     -   *SOAP API*
 
+        > ### Note:  
+        > Access policies apply to the listed API artifact types in the same way that they apply to integration flows.
+
     -   *Script Collection*
 
     -   *Value Mapping*
@@ -227,7 +230,7 @@ To create new access policies, perform the following procedure:
     <td valign="top">
     
     -   If you select *Equals*, you must enter the exact name or ID of the integration artifact.
-    -   If you select *Matches*, the value has to be a valid Java regular expression \(not available for *Integration Package* type\).
+    -   If you select *Matches*, the value has to be a valid Java regular expression \(not available for *Integration Package* type\). For more information about Java regular expressions, see [Pattern \(Java SE 23 & JDK 23\)](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/regex/Pattern.html).
 
 
 
@@ -256,10 +259,8 @@ To create new access policies, perform the following procedure:
     
     Enter a regular expression for *ID* or *Name*.
 
-    > ### Note:  
-    > Example:
-    > 
-    > The regular expression `myName.*` translates to: all values starting with `myName`.
+    > ### Example:  
+    > For the regular expression `myName.*`, the period \(.\) means any character, and the asterisk \(\*\) means zero or more times. This expression matches any value that begins with the exact text `myName` and can have any characters after it, including none. For example: `myName`, `myName2`, `myName_report`.
 
     > ### Note:  
     > JMS queues, global variables, and global data stores support only names.

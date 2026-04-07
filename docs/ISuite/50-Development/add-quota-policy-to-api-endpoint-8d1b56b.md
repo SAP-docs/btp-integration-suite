@@ -237,22 +237,10 @@ Define the number of request messages an application can submit to an API endpoi
     
     </td>
     </tr>
-    <tr>
-    <td valign="top">
-    
-    $\{request.query.<queryParamName\>\}
-    
-    </td>
-    <td valign="top">
-    
-    This expression represents a query parameter in the incoming request message where the name of the query parameter is denoted by <queryParamName\>. For example, you can use the clientID, or username as the <queryParamName\>.
-    
-    </td>
-    </tr>
     </table>
     
     > ### Note:  
-    > If you are using special characters in <headerName\> or <queryParamName\>, please ensure that you use bracket notation. For example, $\{request.header\['X-Forwarded-For'\]\}
+    > If you are using special characters in <headerName\>, please ensure that you use bracket notation. For example, $\{request.header\['X-Forwarded-For'\]\}
 
     > ### Note:  
     > When the quota limit specified in the policy is reached, the subsequent requests to the API artifact are rejected with the response code 429 \(request limit exceeded\). The rejection period lasts until the end of the quota window. Let's illustrate this with the following example:

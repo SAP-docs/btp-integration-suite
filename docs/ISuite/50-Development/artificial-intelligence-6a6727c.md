@@ -46,6 +46,35 @@ Required Role Collection
 <tr>
 <td valign="top">
 
+AI-assisted Error Resolution
+
+</td>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+Use artificial intelligence to analyze and resolve message processing errors.
+
+</td>
+<td valign="top">
+
+[AI-assisted Error Resolution](ai-assisted-error-resolution-f27f95d.md)
+
+</td>
+<td valign="top">
+
+[PI\_Administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/persona-2937e5ca6ef448cfb21451a2461cc2a6?locale=en-US)
+
+[PI\_Integration\_Developer](https://help.sap.com/docs/integration-suite/sap-integration-suite/persona-2937e5ca6ef448cfb21451a2461cc2a6?locale=en-US)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Flow Step Recommendations
 
 </td>

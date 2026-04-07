@@ -22,10 +22,13 @@ You want to edit an existing asset by changing information about properties or t
 
     ![The screenshot shows a detail screen for an asset, with the Edit button highlighted.](images/Edit_Asset_45c66a0.png)
 
-4.  You can now make your changes, for instance, adding properties or providing a new description.
+4.  You can now make your changes, for instance, updating the data address or providing a new description.
 
     > ### Note:  
     > You can't change the unique ID. To change the unique ID, you need to create an entirely new asset.
+
+    > ### Caution:  
+    > Don't edit an asset's properties in case the asset is currently used in an active agreement.
 
 5.  Choose *Save* to confirm your changes. Your asset is now listed in the table view. See [Working with Assets](working-with-assets-fa84319.md).
 

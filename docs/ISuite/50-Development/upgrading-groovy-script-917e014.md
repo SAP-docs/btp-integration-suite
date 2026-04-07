@@ -12,7 +12,7 @@ Learn how to upgrade your Groovy script to the latest version to utilize advance
 
 Upgrading the Groovy script to the latest version will yield following benefits:
 
--   Future-ready scripts: Receive automatic fixes for incompatible libraries and classes. This helps prepare your scripts for a seamless migration during runtime and software upgrades. See [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md) and [Use recommended libraries and classes](groovy-script-fa29f02.md#loiofa29f02c19e744528b50fd721959f337__proxy-usecase)
+-   Future-ready scripts: Receive automatic fixes for incompatible libraries and classes. This helps prepare your scripts for a seamless migration during runtime and software upgrades. See [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md) and [Use recommended libraries and classes](scripts-fa29f02.md#loiofa29f02c19e744528b50fd721959f337__proxy-usecase)
 
 -   Advance Groovy Features: With the Groovy runtime 4.0.29, stay compliant with the product standards and use modern language elements such as switch expressions and other capabilities. See Groovy release notes
 
@@ -42,7 +42,7 @@ You can upgrade your Groovy script step to the latest version 2.0, which utilize
 
 3.  In the confirmation dialog box, choose *Upgrade*.
 
-    A copy of your older version of script is retained in Scripts folder if you wish to revert to the older version and the updated version doesn't meet your requirements. See [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md) and [Groovy Script](groovy-script-fa29f02.md)
+    A copy of your older version of script is retained in Scripts folder if you wish to revert to the older version and the updated version doesn't meet your requirements. See [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md) and [Scripts](scripts-fa29f02.md)
 
     You can now receive automatic fixes for incompatibilities like unused import statements, unsupported libraries, and proxy-based classes.
 

@@ -7,6 +7,9 @@ A virtual host allows you to host multiple domain names on the API Management ca
 Create a new virtual host with default domain or custom domain and update alias, keystore, keyalias, and truststore for an existing virtual host in the Cloud Foundry environment. You can also delete existing virtual hosts to manage and clean up unused ones. This helps maintain platform stability and ensures correct proxy routing.
 
 > ### Note:  
+> If you are creating or renewing SSL \(mTLS\) certificate to connect to virtual hosts of your tenant, you must ensure that your client certificates include the Client Authentication Extended Key Usage \(EKU\) attribute.
+
+> ### Note:  
 > When updating the truststore or keystore during certificate renewal, ensure you also update the associated virtual host.
 
 **Related Information**  

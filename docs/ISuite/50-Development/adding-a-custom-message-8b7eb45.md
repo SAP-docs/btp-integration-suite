@@ -18,18 +18,28 @@ You can add a custom message to a custom type system library.
 
 3.  To upload a custom message, choose *Create* or *Create* \> *Custom Message*. A wizard opens.
 
-4.  In the *XSD File*/*WSDL File* step, choose *Browse* and upload the XSD/WSDL file.
+4.  In the *XSD File*/*ZIP*/*WSDL File* step, choose *Browse* and upload the XSD/ZIP/WSDL file.
 
     > ### Note:  
     > The following applies:
     > 
     > -   XSD files are intended for XML and IDoc custom type systems and WSDL files for SOA type system.
     > 
+    > -   For **custom messages**, use either a single **XSD** file or a **ZIP of multiple XSD files**.
+    > 
+    >     For **custom IDocs**, use a single **XSD** file.
+    > 
+    >     For **custom SOA messages**, use a **WSDL** file.
+    > 
     > -   The maximum file size that you can upload is 10 MB, with a maximum limit of 20000 nodes.
     > 
     > -   Uploading custom IDocs requires an XSD in the format as downloaded from the Enterprise Service Repository \(ESR\) or from the transaction *WE60* of your SAP S/4HANA backend system.
+    > 
+    > -   If you use a ZIP file, it can contain multiple related XSD files \(for different `targetNamespaces`\) that refer to each other using the `xsd:import` feature.
+    > 
+    >     Please note the existing [Limitations](limitations-496a7d9.md).
 
-5.  The next step shows you all the messages present in your XSD/WSDL. Choose the required message from the *Messages* step.
+5.  The next step shows you all the messages present in your XSD/ZIP/WSDL. Choose the required message from the *Messages* step.
 
 6.  The details of the message are auto-filled under the *Message Creation* step. You can verify and modify the details.
 

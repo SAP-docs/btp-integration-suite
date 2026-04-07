@@ -18,8 +18,6 @@ The table summarizes the required security artifacts required to set up this inb
 
 -   For more information on how this authentication option works at runtime, check out: [Client Certificate Authentication \(Outbound\)](client-certificate-authentication-outbound-c4e4a15.md)
 
--   For an end-to-end description of the procedure, check out the following blog: [Cloud Integration – How to Setup Secure Outbound HTTP Connection using Keystore Monitor](https://blogs.sap.com/2017/06/19/cloud-integration-how-to-setup-secure-outbound-http-connection-using-keystore-monitor/) 
-
 
 
 <table>
@@ -54,6 +52,11 @@ At runtime, the identity of the Cloud Integration tenant is checked by the recei
 
 > ### Note:  
 > In many cases, there is a multilevel setup of CAs so that a certificate is signed by an intermediate CA. The trustability of the intermediate CA is guaranteed by another intermediate CA one level higher, and so on, up to the root CA at the top of the **certificate chain**. In this case, it is necessary to assign the certificate chain to the certificate, to enable the connected component \(which has imported only the root CA into its keystore\) to evaluate the chain of trust.
+
+> ### Note:  
+> Outbound client certificate authentication uses a certificate chain based on **SAP Cloud Root CA** to**SAP Cloud Platform Client CA**. Receiver systems that validate the certificate chain must ensure that the **SAP Cloud Root CA** is trusted otherwise outbound connectivity may fail after certificate renewal.
+> 
+> Public CAs started excluding the Client Authentication EKU from newly issued certificates in September 2025. By May 2026 it may no longer be included by default.
 
 
 
@@ -234,6 +237,4 @@ In the related receiver adapter, as *Authentication* choose *Client Certificate*
 
 
 [Client Certificate Authentication \(Outbound\)](client-certificate-authentication-outbound-c4e4a15.md "")
-
-[Blog: Cloud Integration – How to Setup Secure Outbound HTTP Connection using Keystore Monitor](https://blogs.sap.com/2017/06/19/cloud-integration-how-to-setup-secure-outbound-http-connection-using-keystore-monitor/)
 

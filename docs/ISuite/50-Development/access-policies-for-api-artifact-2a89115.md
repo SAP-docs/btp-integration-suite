@@ -4,7 +4,7 @@
 
 Access policies for API artifacts enable you to control who can access and interact with your APIs and their data.
 
-By defining these policies, you gain precise control over which users or systems can perform specific actions—such as creating/editing, or executing other operations—on the API. For example, unauthorized users might be granted permission only to view protected resources, such as integration flows, but restricted from performing actions like editing, copying, downloading, deleting, simulating flows, or monitoring message content. For more information, see [Managing Access Policies](managing-access-policies-318d107.md).
+By defining these policies, you gain precise control over which users or systems can perform specific actions—such as creating/editing, or executing other operations—on the API. For example, unauthorized users might be granted permission only to view protected resources, but restricted from performing actions like editing, copying, downloading, deleting, simulating flows, or monitoring message content. For more information, see [Managing Access Policies](managing-access-policies-318d107.md).
 
 Access policies enable you to manage:
 

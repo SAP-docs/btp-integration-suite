@@ -107,7 +107,7 @@ Checks to be completed before you start migrating your API Management content no
 
     -   Create a service instance with the *AuthGroup.API.Admin* role to access theDeveloper Hub APIs.
 
-        To perform the above steps, see [Accessing Developer Hub APIs Programmatically](../accessing-developer-hub-apis-programmatically-dabee6e.md).
+        To perform the above steps, see [Accessing Developer Hub APIs Programmatically](../50-Development/accessing-developer-hub-apis-programmatically-dabee6e.md).
 
 
 -   When you have API products protected by the custom roles permission in the source Neo system, ensure that custom roles creation and assignments are done in the target system within the multi-cloud foundation before starting the migration.

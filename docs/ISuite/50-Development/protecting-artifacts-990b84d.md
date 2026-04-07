@@ -26,6 +26,10 @@ You can protect the following artifacts in Integration Advisor:
 
 -   Mapping guidelines \(MAGs\)
 
+-   Global code value mappings \(GCVMs\)
+
+-   Custom codelists
+
 
 
 
@@ -35,14 +39,16 @@ You can protect the following artifacts in Integration Advisor:
 
     -   Message implementation guideline: *Design* \> *MIGs*
     -   Mapping guideline: *Design* \> *MAGs*
+    -   Global code value mapping: *Design* \> *MAGs* \> *Code Value Mappings*
+    -   Custom codelist: *Design* \> *Custom Type Systems* \> *Custom Codelists* and expand a codelist entry to see all versions.
 
-2.  For the relevant artifact, choose <span class="SAP-icons-V5"></span> More Options, then choose *Protect MIG*/*Protect MAG*.
+2.  For the relevant artifact, choose <span class="SAP-icons-V5"></span> More Options, then choose *Protect MIG*/*Protect MAG**/Protect GCVM**/Protect Codelist*.
 
-    You can also open the artifact in the detail view and choose <span class="SAP-icons-V5"></span> More Options, then choose *Protect MIG*/*Protect MAG*.
+    You can also open the artifact in the detail view and choose <span class="SAP-icons-V5"></span> More Options, then choose *Protect MIG*/*Protect MAG**/Protect GCVM**/Protect Codelist*.
 
 3.  In the overview and on the detail screen of the artifact, the protection status is now shown through the :shield: icon.
 
-    To reverse the protection, choose <span class="SAP-icons-V5"></span> More Options, and then *Unprotect MIG*/*Unprotect MAG*.
+    To reverse the protection, choose <span class="SAP-icons-V5"></span> More Options, and then *Unprotect MIG*/*Unprotect MAG**/Unprotect GCVM**/Unprotect Codelist*.
 
 
 
@@ -64,7 +70,7 @@ Users **with** the role `ExtendedContentDeveloper` have the following rights:
     Note that if you protect an artifact and then activate it, the activated artifact is protected as well.
 
 
-Users **without** the role `ExtendedContentDeveloper`:
+For users **without** the role `ExtendedContentDeveloper`, the following applies:
 
 -   Unprotected artifacts: Full write access
 

@@ -2,7 +2,7 @@
 
 # Creating Transport Management Destination
 
-Create destination **TransportManagement** in your source subaccount to make API calls to the SAP Cloud Transport Management service \(TMS\).
+Create destination **TransportManagementService** in your source subaccount to make API calls to the SAP Cloud Transport Management service \(TMS\).
 
 
 

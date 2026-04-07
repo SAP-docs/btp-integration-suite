@@ -42,9 +42,11 @@ The adapter does two actions: submit change requests to master data objects in S
 
 
 > ### Remember:  
-> The adapter uses the v1 version of MDI APIs. If you would like to recreate similar scenarios by directly communicating with the MDI service, we recommend using the v1 version of the MDI APIs.
+> -   The adapter uses the v1 version of MDI APIs. If you would like to recreate similar scenarios by directly communicating with the MDI service, we recommend using the v1 version of the MDI APIs.
 > 
-> Don't make parallel calls to SAP MDI using the adapter that could lead to data inconsistencies.
+> -   Don't make parallel calls to SAP MDI using the adapter that could lead to data inconsistencies.
+> 
+> -   The receiver adapter supports only one ODM entity instance per request. Multiple entities in a single payload are not supported.
 
 For scenario-specific detailed information, refer to the [blog](https://blogs.sap.com/2022/05/20/sap-integration-suite-integration-with-sap-master-data-integration-mdi-service/).
 

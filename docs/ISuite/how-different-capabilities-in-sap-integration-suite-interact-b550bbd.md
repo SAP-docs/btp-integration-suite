@@ -82,7 +82,7 @@ You can use API Management capability to manage the lifecycle of APIs. This incl
 
 The Graph component, under the API Composition module, enables you to expose all your business data in the form of a semantically connected data graph, accessed via a single unified and powerful API. See [Graph](50-Development/graph-7d19a62.md).
 
-Additionally, you can utilize Developer Hub, which serves as a centralized catalog where developers can discover and consume APIs. See [Developer Hub](developer-hub-41f7c45.md).
+Additionally, you can utilize Developer Hub, which serves as a centralized catalog where developers can discover and consume APIs. See [Developer Hub: The Central Catalog for All Your APIs and Events](50-Development/developer-hub-the-central-catalog-for-all-your-apis-and-events-41f7c45.md).
 
 There's also API-centric integration that involves using APIs as the primary means of connecting and integrating different applications, services, and data sources. Here's a simplified breakdown of how it works:
 

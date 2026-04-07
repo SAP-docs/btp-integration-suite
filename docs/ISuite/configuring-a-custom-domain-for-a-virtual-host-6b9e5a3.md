@@ -174,7 +174,7 @@ To request a custom domain with one-way TLS, perform the following steps:
         >     "keyStoreName": "ref://<reference_name>" or "<key_store_name>",
         >     "keyStoreAlias": "key_store_alias",
         >     "operation" : "UPDATE",
-        >     "virtualHostId":"1F02AD6A-A53C-43F4-BF95-F053A8A1469A"
+        >     "virtualHostId":"<virtual host ID>"
         > }
         > 
         > ```
@@ -193,6 +193,10 @@ To request a custom domain with one-way TLS, perform the following steps:
         > -   keyStoreAlias: The keyStoreAlias parameter refers to the name of the keystore certificate containing the custom domain's public and private key. To learn how to create a keystore certificate and upload certificates, see [Manage Certificates](50-Development/manage-certificates-c665875.md).
         > 
         > -   virtualHostId: This is the unique ID of the virtual host you are trying to update.
+        > 
+        >     Example: c269915f-7adc-4f78-bdd0-dd39ffcb079f
+        > 
+        >     The `virtualHostId` can be retrieved from the following API endpoint: https://<url-from-service-key\>/apiportal/api/1.0/Management.svc/VirtualHosts
 
         > ### Note:  
         > To enable client authentication \(mutual TLS\) while configuring the virtual host with custom domain, see [Configuring Mutual TLS for Custom Domain Virtual Host](configuring-mutual-tls-for-custom-domain-virtual-host-2453233.md).
@@ -276,13 +280,15 @@ To request a custom domain with one-way TLS, perform the following steps:
 
         > ### Sample Code:  
         > ```
-        > {     "virtualHostId":"fa90e5ab-287f-466a-ba9e-5f6f4becc74c",
+        > {     "virtualHostId":"<virtual host ID>",
         >      "operation" : "DELETE"
         > }
         > ```
 
         > ### Note:  
         > virtualHostId: This is the unique ID of the virtual host you are trying to delete.
+        > 
+        > Example: fa90e5ab-287f-466a-ba9e-5f6f4becc74c
         > 
         > The `virtualHostId` can be retrieved from the following API endpoint: https://<url-from-service-key\>/apiportal/api/1.0/Management.svc/VirtualHosts
 

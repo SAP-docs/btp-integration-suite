@@ -31,7 +31,7 @@ Edge Integration Cell requires different kinds of persistent storage:
 
 ## Which external services are required?
 
-For a production environment, you need to provide a database \(PostgreSQL or SAP HANA database\) and a datastore \(Redis or SAP HANA datastore\) that are deployed separately from the Edge Integration Cell.
+For a production environment, you need to provide a database \(PostgreSQL or SAP HANA database\) and a data store \(Redis, Valkey or SAP HANA data store\) that are deployed separately from the Edge Integration Cell.
 
 When using SAP HANA database, both the database and datastore can share the same SAP HANA database instance.
 
@@ -76,7 +76,7 @@ Each Edge Integration Cell is deployed on a K8s cluster. For standard onboarding
 
 The alternative onboarding method, the Restricted Access to Kubernetes Cluster option, uses a security model that requires fewer privileges than the standard onboarding process. For more information, see SAP Note [3618713](https://me.sap.com/notes/3618713) and section [Provide Edge Node Details](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/0a222b9c99d94f56abdcfe27f5be0afa.html#1---provide-edge-node-details).
 
-It's possible to deploy the required PostgreSQL database and Redis data store on the same Kubernetes cluster \(as explained in the External Services section\).
+It's possible to deploy the required PostgreSQL database and a Redis or Valkey data store on the same Kubernetes cluster \(as explained in the External Services section\).
 
 
 

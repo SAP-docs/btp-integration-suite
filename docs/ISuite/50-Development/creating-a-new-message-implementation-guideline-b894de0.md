@@ -38,6 +38,14 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
 
 6.  In the *Envelopes* step, select an envelope for the type system from the list.
 
+    For **cXML**, the envelope must fit the message type as follows:
+
+    -   For cXML requests, like `InvoiceRequest`, choose *EnvelopeForRequests*.
+    -   For cXML responses, like `SearchResponse`, choose *EnvelopeForResponses*.
+    -   For cXML messages, like `QuoteMessage`, choose *EnvelopeForMessages*.
+
+    For **ASC X12** and **UN/EDIFACT**, no limitations apply.
+
     > ### Note:  
     > To see the messages allowed for an envelope, go to *Discover* \> *Type Systems* and open the relevant type system. In the tab *Messages*, search for the envelope and open the relevant version. In the *Structure* tab, find the message placeholder and check the codelist assigned to it. The list of code values represents the allowed messages.
 

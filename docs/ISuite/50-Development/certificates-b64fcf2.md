@@ -10,13 +10,15 @@ Create and maintain certificates.
 
 ## Context
 
-Certificates aid in authenticating and verifying the incoming and outgoing payloads. Follow the procedure below to maintain certificates for your company profile/subsidiary.
+Certificates aid in authenticating and verifying the incoming and outgoing payloads. Follow the following procedure to maintain certificates for your company profile/subsidiary.
+
+The *Certificate Status* is displayed in both the *Company Profile* tab and the *Partner Profiles* tab.
 
 
 
 ## Procedure
 
-1.  In the *Certificates* tab, choose *Create Certificate*.
+1.  In the *Certificates* tab, choose *Create*.
 
 2.  Maintain the following details:
 
@@ -62,8 +64,12 @@ Certificates aid in authenticating and verifying the incoming and outgoing paylo
     </tr>
     </table>
     
-3.  Choose *Add*. The certificate gets added successfully. You can perform other actions on this certificate using the <span class="SAP-icons-V5"></span> button.
+3.  To add the certificate, choose *Add*. You can perform other actions on this certificate by choosing <span class="SAP-icons-V5"></span> Additional Options.
 
-4.  As a next step, maintain your security parameters by following the steps mentioned here: [Parameters](parameters-ec72fcf.md)
 
+
+
+## Next Steps
+
+Next, maintain your security parameters as described in [Parameters](parameters-ec72fcf.md).
 

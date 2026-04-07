@@ -38,6 +38,11 @@ APIPortal.Tester
 </th>
 <th valign="top">
 
+APIPortal.Guest
+
+</th>
+<th valign="top">
+
 Notes
 
 </th>
@@ -98,6 +103,17 @@ Can perform:
 
 -   Read
 -   Debug
+-   Export
+
+
+
+</td>
+<td valign="top">
+
+Can perform:
+
+-   Read
+-   Export
 
 
 
@@ -166,6 +182,15 @@ Can perform:
 </td>
 <td valign="top">
 
+Can perform:
+
+-   Read
+
+
+
+</td>
+<td valign="top">
+
  
 
 </td>
@@ -174,6 +199,15 @@ Can perform:
 <td valign="top">
 
 Applications
+
+</td>
+<td valign="top">
+
+Can perform:
+
+-   Read
+
+
 
 </td>
 <td valign="top">
@@ -275,6 +309,15 @@ Can perform:
 </td>
 <td valign="top">
 
+Can perform:
+
+-   Read
+
+
+
+</td>
+<td valign="top">
+
  
 
 </td>
@@ -307,6 +350,15 @@ Can perform:
 -   Update
 -   Delete
 -   Transport
+
+
+
+</td>
+<td valign="top">
+
+Can perform:
+
+-   Read
 
 
 
@@ -393,6 +445,15 @@ Can perform:
 </td>
 <td valign="top">
 
+Can perform:
+
+-   Read
+
+
+
+</td>
+<td valign="top">
+
  
 
 </td>
@@ -447,6 +508,15 @@ Can perform:
 </td>
 <td valign="top">
 
+Can perform:
+
+-   Read
+
+
+
+</td>
+<td valign="top">
+
  
 
 </td>
@@ -455,6 +525,15 @@ Can perform:
 <td valign="top">
 
 Bills
+
+</td>
+<td valign="top">
+
+Can perform:
+
+-   Read
+
+
 
 </td>
 <td valign="top">
@@ -543,6 +622,15 @@ Can perform:
 </td>
 <td valign="top">
 
+Can perform:
+
+-   Read
+
+
+
+</td>
+<td valign="top">
+
  
 
 </td>
@@ -591,6 +679,15 @@ Can perform:
 </td>
 <td valign="top">
 
+Can perform:
+
+-   Read
+
+
+
+</td>
+<td valign="top">
+
  
 
 </td>
@@ -599,6 +696,15 @@ Can perform:
 <td valign="top">
 
 Virtual hosts
+
+</td>
+<td valign="top">
+
+Can perform:
+
+-   Read
+
+
 
 </td>
 <td valign="top">
@@ -693,6 +799,15 @@ Can perform:
 </td>
 <td valign="top">
 
+Can perform:
+
+-   Read
+
+
+
+</td>
+<td valign="top">
+
  
 
 </td>
@@ -735,6 +850,15 @@ Can perform:
 -   Read
 -   Update
 -   Delete
+
+
+
+</td>
+<td valign="top">
+
+Can perform:
+
+-   Read
 
 
 

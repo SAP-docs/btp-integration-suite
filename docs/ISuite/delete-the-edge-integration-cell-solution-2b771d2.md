@@ -30,5 +30,5 @@ The Edge Integration Cell solution is deleted first. After completion, the depen
 The runtime location in SAP Integration Suite is removed automatically.
 
 > ### Note:  
-> If you are using an external database or Redis instance, you need to manually clean up the Edge Integration Cell data by deleting the database schema or Redis instance.
+> If you are using an external database or a Redis/Valkey instance, you need to manually clean up the Edge Integration Cell data by deleting the database schema or the Redis/Valkey instance.
 

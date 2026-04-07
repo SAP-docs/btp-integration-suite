@@ -20,6 +20,13 @@ You've created at least one data extraction request as described in [Create a Da
 > ### Tip:  
 > Do you prefer hands-on instructions? Check out the tutorial [Use the Migration Assessment Application](https://developers.sap.com/tutorials/migration-assessment.html).
 
+> ### Restriction:  
+> The total physical disk storage is limited. As each evaluation request consumes physical disk storage, future evaluations can fail with an error message once the limit is reached.
+> 
+> Before starting a scenario evaluation request, make sure that enough storage space is available. If you've reached the limit, free up space by deleting old extractions.
+> 
+> See [Error - Unable to Create Request](troubleshooting-for-migration-assessment-63430e2.md#loio63430e2bee434c17858331f109777a3a__section_rcw_vfm_k3c) for detailed troubleshooting instructions.
+
 
 
 ## Procedure
@@ -49,6 +56,7 @@ You've created at least one data extraction request as described in [Create a Da
     -   Create a report to access the latest evaluation run details by using one of the following two options:
 
         -   <span style="font-size:16px;"><span style="color:#346187;"><span class="SAP-icons-V5"></span></span></span> *Export*: Use this option to download an in-depth analysis report. This option lists all integration scenarios that were part of the request. It includes comprehensive details necessary for migration, such as:
+
             -   Migration assessment category and effort estimation
             -   Modernization recommendations
             -   Rules applied to the integration scenarios
@@ -57,7 +65,11 @@ You've created at least one data extraction request as described in [Create a Da
             -   Message throughput and mappings usage
             -   Performance data: Message size and processing time
 
+            > ### Note:  
+            > Values that exceed the maximum length of 32767 characters for a single cell won't be displayed in the export.
+
         -   <span style="font-size:16px;"><span style="color:#346187;"><span class="SAP-icons-V5"></span></span></span> *Generate Report*: Select this option to download a summarized overview of the evaluation, which includes the following:
+
             -   A summary of the evaluation with charts and tables as visual aids
             -   Number of integration scenarios per category, size, modernization recommendation, etc.
             -   The top 10 most active scenarios in terms of processed messages
@@ -65,9 +77,8 @@ You've created at least one data extraction request as described in [Create a Da
             -   Migration effort estimation
             -   Modernization recommendations for your scenarios
 
-                > ### Note:  
-                > Custom adapters details are only included in the *Export* file.
-
+            > ### Note:  
+            > Custom adapters details are only included in the *Export* file.
 
 
 

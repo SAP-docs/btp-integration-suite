@@ -7,9 +7,9 @@
 Analyze potential API call traffic and identify trends.
 
 > ### Note:  
-> AI features are accessible only with the Premium Edition. They are provided as a free promotion through June 2026 and will be commercialized afterward as Premium AI features using AI Units.
+> AI features are accessible only in the Enhanced and Premium Editions. They are provided as a free promotion through June 2026 and will be commercialized afterward as Premium AI features using AI Units.
 > 
-> For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620)
+> For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620).
 
 After enabling the feature setting, you can view API call predictions and trends in the analytics dashboard.
 

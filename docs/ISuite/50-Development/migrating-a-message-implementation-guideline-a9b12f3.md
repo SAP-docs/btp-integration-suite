@@ -4,7 +4,7 @@
 
 # Migrating a Message Implementation Guideline
 
-You can migrate your Message Implementation Guideline \(MIG\) to a different version \(newer or older\) of the same message or even to a different message \(of the same or a different type system\). A new MIG is created based on the new message you have chosen and customizations done in your previous MIG are copied over to the new MIG based on a best-effort strategy.
+You can migrate your message implementation guideline \(MIG\) to a different version \(newer or older\) of the same message or even to a different message \(of the same or a different type system\). A new MIG is created based on the new message that you have chosen and customizations done in your previous MIG are copied over to the new MIG based on a best-effort strategy.
 
 
 
@@ -17,9 +17,11 @@ Let’s consider a scenario in which you and your business partner 1 agreed on u
 > ### Note:  
 > Customizations or nodes that are incompatible with the new version aren’t migrated. They're notified through error messages.
 
-After migrating your MIG, you can use the status review section available in the MIG editor to view notifications, add comments, and mark review status for all the selected nodes that are part of the MIG. You can identify nodes needing further rework or discussion by reviewing the icons in the Status column on the Structure tab. You can also compare the MIGs after migration to review them. Comparisons are made across the structure definition, properties, documentation, code values, and example values of the MIGs. This allows easy identification of similarities and variations across MIGs.
+After migrating your MIG, you can use the status review section available in the MIG editor to view the system report, add comments, and mark review status for all the selected nodes that are part of the MIG. You can identify nodes needing further rework or discussion by reviewing the icons in the *Status* column on the *Structure* tab. You can also compare the MIGs after migration to review them. Comparisons are made across the structure definition, properties, documentation, code values, and example values of the MIGs. This allows easy identification of similarities and variations across MIGs.
 
-**Other Supported Scenarios**
+
+
+### Other Supported Scenarios
 
 -   When a newer revision for a specific type system version is available, you're notified of it during migration. You can choose to migrate your existing MIG, in this case, to a newer revision of the type system version so that you can use the already customized MIG in the newest revision.
 
@@ -27,13 +29,13 @@ After migrating your MIG, you can use the status review section available in the
 
 -   You can also migrate your MIG to a different message such as from ORDERS05 to ORDERS03 in IDoc version 1809 FPS02 if the underlying message structure is similar enough. The compatibility is determined on a case-to-case basis.
 
--   You can also migrate your MIG to a different message type with different root node. The migration will be done on a best-effort strategy for the subnodes that are present in the old and new message structure.
+-   You can also migrate your MIG to a different message type with different root node. The migration is done on a best-effort strategy for the subnodes that are present in the old and new message structure.
 
 
 
 ## Procedure
 
-1.  On the *Message Implementation Guidelines* screen, choose <span class="SAP-icons-V5"></span> \(More Options\) on the MIG that you want to migrate and then choose *Migrate*.
+1.  On the *Message Implementation Guidelines* screen, choose <span class="SAP-icons-V5"></span> More Options on the MIG that you want to migrate and then choose *Migrate*.
 
     > ### Tip:  
     > The *Migrate* option is also available on both the *Overview* tab and the *History* link of the MIG that you want to migrate.
@@ -56,12 +58,12 @@ After migrating your MIG, you can use the status review section available in the
 
 ## Results
 
-A new MIG is created.
+A new message implementation guideline is created.
 
 > ### Tip:  
 > A few pointers to keep in mind while you review and verify your MIG after migration:
 > 
-> -   The migration works on a best-effort strategy and considers frequently occurring situations. But there can be situations \(when it comes to considering all three of previous message, previous MIG and new message\) which can't be easily resolved and might need user interaction. In such cases a node or property can't be migrated and you will be notified of this through a status notification.
+> -   The migration works on a best-effort strategy and considers frequently occurring situations. But there can be situations \(when it comes to considering all three of previous message, previous MIG and new message\) which can't be easily resolved and might need user interaction. In such cases a node or property can't be migrated and you're notified of this through the system report.
 > -   Nodes and their properties are migrated only if they're selected in the original MIG. Unselected mandatory nodes and their properties are not migrated.
 > 
 > -   Since mandatory nodes are preselected based on the underlying message template when a MIG is created, MIG migration does not actively unselect such mandatory nodes.
@@ -71,35 +73,39 @@ A new MIG is created.
 > 
 >     -   In the following situations a node can't be fully matched, so the migration finds an alternative match:
 > 
->         -   Example 1 \(relaxed namespace handling\): `Node1` in `namespace1` is not present in the new message, but there's a `Node1` in `namespace2` available. In such a case, this alternative match is migrated and you're notified through a status notification to review this decision.
+>         -   Example 1 \(relaxed namespace handling\): `Node1` in `namespace1` is not present in the new message, but there's a `Node1` in `namespace2` available. In such a case, this alternative match is migrated and you're notified through the system report to review this decision.
 >         -   Example 2 \(segment group handling for UN/EDIFACT\): If `SGnn` of the old message has become `SGmm` in the new message, with the same trigger segment, then segment group `SGnn` is automatically migrated to segment group `SGmm`.
 > 
->     -   If a matching node isn't present in the new message structure, you're notified through status notifications.
+>     -   If a matching node isn't present in the new message structure, you're notified through the system report.
 > 
 >     > ### Note:  
 >     > If a matching group node isn't available in the new message structure, its subnodes aren't migrated as well.
 > 
 > -   Any modification done to an element's property, code value, or documentation in your original MIG remains intact even after MIG migration. For example, if a node's standard maximum length property of 10 was changed to 5 in the original MIG, the chosen value of 5 is retained in the new migrated MIG irrespective of the new MIG version's standard value.
 > -   However, if you retained the standard values for an element's property, code value, or documentation in your original MIG, MIG migration keeps the standard setting in the new MIG as well. For example, if a node's standard maximum length property of 10 was unchanged in the original MIG, the matching node's standard maximum length property of 20 is retained in the new migrated MIG reflecting the new MIG version's standard value.
-> -   In case of conflicts, an element's property, code value, or documentation might not get migrated. They are notified via status notifications.
+> -   In case of conflicts, an element's property, code value, or documentation might not get migrated. They are notified through the system report.
 
-This section contains the recommended follow-up steps for review and verification after migration.
 
-1.  To review status notifications, on the *Structure* tab, review the message structure and filter for any notification on the *Status* column to display the number of errors, warnings, informational messages, and comments.
 
-    1.  Select the required cell in the *Status* column to view more details in the *Notifications* section.
+## Next Steps
 
-    2.  Choose *Edit* to add comments and set a status for the node in the *User Review* section. You can also choose to *Discard* any status notifications that you have reviewed and no longer need it.
+After the migration, the following steps are recommended for review and verification:
+
+1.  To review the system report, on the *Structure* tab, review the message structure and filter for any entry on the *Status* column to display the number of errors, warnings, informational messages, and comments.
+
+    1.  Select the required cell in the *Status* column to view more details in the *System Report* section.
+
+    2.  Choose *Edit* to add comments and set a status for the node in the *User Review* section. You can also choose to *Discard* any system report entries that you have reviewed and no longer need it.
 
     3.  Choose *Save*.
 
 
     > ### Tip:  
-    > -   On the *Structure* tab, choose *Show Status Comments* <span class="SAP-icons-V5"></span> to hide some of the columns for the prominent visibility of *Status* and *Comment*.
+    > -   On the *Structure* tab, choose <span class="SAP-icons-V5"></span> Show Status Comments to hide some of the columns for the prominent visibility of *Status* and *Comment*.
     > 
-    > -   On the *Structure* tab, choose *Settings* :gear: to customize column visibility of the properties.
+    > -   On the *Structure* tab, choose :gear: to customize column visibility of the properties.
 
-2.  Choose *Show Changes Mode* <span class="SAP-icons-V5"></span> to see differences between the MIG and its underlying message template.
+2.  Choose <span class="SAP-icons-V5"></span> Show Changes Mode to see differences between the MIG and its underlying message template.
 
 3.  Choose *Edit* to customize your MIG as per your business needs.
 

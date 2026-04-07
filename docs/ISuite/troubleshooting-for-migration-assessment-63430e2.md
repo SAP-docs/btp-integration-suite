@@ -27,6 +27,7 @@ This section covers the following errors on Migration Assessment:
 -   [ICO List Empty](troubleshooting-for-migration-assessment-63430e2.md#loio63430e2bee434c17858331f109777a3a__section_fby_gqy_ffc)
 -   [Technical Error with Unique ID](troubleshooting-for-migration-assessment-63430e2.md#loio63430e2bee434c17858331f109777a3a__section_vl2_jc5_jcc)
 -   [Network Issue Between Cloud Connector and SAP Process Orchestration](troubleshooting-for-migration-assessment-63430e2.md#loio63430e2bee434c17858331f109777a3a__section_vn4_lc5_jcc)
+-   [Error - Unable to Create Request](troubleshooting-for-migration-assessment-63430e2.md#loio63430e2bee434c17858331f109777a3a__section_rcw_vfm_k3c)
 
 For more resources, check the [SAP Integration Suite Community](https://pages.community.sap.com/topics/integration-suite), or use the built-in support on Migration Assessment by selecting <span class="SAP-icons-V5"></span> Get Support from the top toolbar.
 
@@ -183,4 +184,17 @@ curl –I --insecure --user user:pwd <system_address>/IntegratedConfiguration750
 
 
 If the response of the command is not 200, look into the SAP Process Orchestration system logs for the configured user and check if the request is reaching the SAP Process Orchestration system.
+
+
+
+<a name="loio63430e2bee434c17858331f109777a3a__section_rcw_vfm_k3c"/>
+
+## Error - Unable to Create Request
+
+You can get this error while requesting a data extraction or a scenario evaluation. It indicates that the maximum number of allowed entries has been reached, and you’ve exceeded the system limit for data extractions or scenario evaluations. No additional request can be created until you’ve freed up space by removing existing entries. We recommend that you save existing data before deleting it. Take the following steps to solve the issue:
+
+1.  Review the existing data extractions and scenario evaluations and identify entries that are no longer needed.
+2.  Before deleting evaluations, consider downloading their available spreadsheets and PDF reports for your future reference.
+3.  Delete the selected data extractions or scenario evaluations.
+4.  After the entries have been removed, create a new data extraction or scenario evaluation as usual.
 

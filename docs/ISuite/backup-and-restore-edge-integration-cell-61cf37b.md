@@ -15,13 +15,13 @@ Edge Integration Cell stores configuration in the cloud where the data are secur
 
 ## Database and Datastore
 
-Runtime and monitoring data are stored in a PostgreSQL database and a Redis data store at the edge—that is, within the customer’s own IT environment and not in the cloud. For production environments, these services are deployed outside of Edge Integration Cell. Hence, backup and recovery of these stores is part of the external services provisioning. For more information about external services persistence options, see [3247839](https://me.sap.com/notes/3247839).
+Runtime and monitoring data are stored in a PostgreSQL database and a Redis or Valkey data store at the edge—that is, within the customer’s own IT environment and not in the cloud. For production environments, these services are deployed outside of Edge Integration Cell. Hence, backup and recovery of these stores is part of the external services provisioning. For more information about external services persistence options, see [3247839](https://me.sap.com/notes/3247839).
 
 > ### Caution:  
 > Restoring a database or datastore results in service interruption for the Edge Integration Cell.
 
 > ### Note:  
-> In some environments, such as Azure or AWS, when you use platform provided services, a restore may result in a new PostgreSQL DB or Redis instance. In these cases, you can change the connection properties using Edge Lifecycle Management and there's no need to follow the manual procedures described below. For more information, see [Modify Edge Integration Cell Solution Deployment Properties](modify-edge-integration-cell-solution-deployment-properties-6a060ff.md).
+> In some environments, such as Azure or AWS, when you use platform provided services, a restore may result in a new PostgreSQL DB or Redis/Valkey instance. In these cases, you can change the connection properties using Edge Lifecycle Management and there's no need to follow the manual procedures described below. For more information, see [Modify Edge Integration Cell Solution Deployment Properties](modify-edge-integration-cell-solution-deployment-properties-6a060ff.md).
 
 
 
@@ -86,7 +86,7 @@ Runtime and monitoring data are stored in a PostgreSQL database and a Redis data
 
 ### Built-In Service Procedure
 
-For non-production environments, the built-in deployment options for PostgreSQL database and Redis data store can be used. Currently, backup and restore aren't supported for these built-in services.
+For non-production environments, the built-in deployment options for PostgreSQL database and a Redis or Valkey data store can be used. Currently, backup and restore aren't supported for these built-in services.
 
 
 

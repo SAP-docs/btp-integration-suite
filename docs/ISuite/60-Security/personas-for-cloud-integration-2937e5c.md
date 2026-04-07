@@ -253,9 +253,6 @@ In order to enable a sender system to process messages on Cloud Integration Usin
 > 
 > -   [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 > 
-> -   [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
-> -   [Client Certificate Authentication for Integration Flow Processing](../40-RemoteSystems/client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
-> -   [OAuth with Client Credentials Grant for Integration Flow Processing](../40-RemoteSystems/oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md)
 > 
 > 
 > 

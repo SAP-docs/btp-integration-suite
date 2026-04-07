@@ -11,13 +11,16 @@ You can configure mutual TLS \(mTLS\) for a custom domain virtual host, which va
 ## Context
 
 > ### Note:  
-> Since client certificate chains are used in the authentication process to establish the identity of clients accessing the API Management service, it is important to ensure that these chains have sufficient security measures in place. Weak client certificate chains lack the necessary security measures and are therefore vulnerable to attacks. As a result, weak client certificate chains have been deprecated. For more detailed information, please [3418201 - Deprecation of Weak Client Certificate Chains in API Management \(sap.corp\)](https://i7p.wdf.sap.corp/sap(bD1lbiZjPTAwMQ==)/bc/bsp/sno/ui_entry/entry.htm?param=69765F6D6F64653D3030312669765F7361706E6F7465735F6E756D6265723D3334313832303126).
+> Since client certificate chains are used in the authentication process to establish the identity of clients accessing the API Management service, it is important to ensure that these chains have sufficient security measures in place. Weak client certificate chains lack the necessary security measures and are therefore vulnerable to attacks. As a result, weak client certificate chains have been deprecated. For more information, see [3418201 - Deprecation of Weak Client Certificate Chains in API Management \(sap.corp\)](https://i7p.wdf.sap.corp/sap(bD1lbiZjPTAwMQ==)/bc/bsp/sno/ui_entry/entry.htm?param=69765F6D6F64653D3030312669765F7361706E6F7465735F6E756D6265723D3334313832303126).
 
 Using the procedure below, you can perform the following operations:
 
 -   Create a new virtual host with a custom domain.
--   Update the alias, keystore, key alias, and truststore for an existing virtual host.
+-   Update the alias, keystore name, key alias, and truststore for an existing virtual host.
 -   Delete an existing virtual host.
+
+> ### Note:  
+> If you are creating or renewing SSL \(mTLS\) certificate to connect to virtual hosts of your tenant, you must ensure that your client certificates include the Client Authentication Extended Key Usage \(EKU\) attribute. For more information, see SAP Note [3725252 - Client Authentication EKU Deprecation - Impact to Inbound API Management scenarios](https://me.sap.com/notes/3725252).
 
 To configure mutual TLS for custom domain virtual host, perform the following steps:
 
@@ -56,12 +59,34 @@ To configure mutual TLS for custom domain virtual host, perform the following st
         >     "virtualHostUrl": "prod-apis",
         >     "isDefaultVirtualHostRequest" : false,
         >     "isClientAuthEnabled": true,
-        >     "keyStore": "ref://<reference_name>" or "<key_store_name>",
+        >     "isForCustomDomain": true,
+        >     "keyStoreName": "ref://<reference_name>" or "<key_store_name>",
+        >     "keyStoreAlias": "key_store_alias",
         >     "trustStore": "ref://<reference_name>" or "<trust_store_name>",
         >     "operation" : "CREATE"
         > }
         > 
         > ```
+
+        > ### Note:  
+        > -   accountId: This is the subdomain of your subaccount.
+        > 
+        > -   virtualHostUrl: This is your virtual host alias, for example, prod-apis, testapi.
+        > 
+        >     > ### Note:  
+        >     > The virtual host alias allows a maximum of 63 characters.
+        > 
+        > -   isDefaultVirtualHostRequest: If you want the new virtual host to be the default virtual host, set the value to "true", else set it to "false".
+        > 
+        > -   isClientAuthEnabled: This field must be set to "true" to enable mutual TLS.
+        > 
+        > -   keyStoreName: This refers to the name of the keystore that should contain the custom domain's public and private key, or the name of the certificate store reference pointing to the keystore. To learn how to create a keystore and upload certificates, see [Manage Certificates](../manage-certificates-c665875.md). Alternatively, you can use a certificate store reference name that points to the keystore containing the custom domain's public and private keys. For more information, see [Working with References](../working-with-references-6f96b64.md).
+        > 
+        > -   keyStoreAlias: The keyStoreAlias parameter refers to the name of the keystore certificate containing the custom domain's public and private key. To learn how to create a keystore certificate and upload certificates, see [Manage Certificates](../manage-certificates-c665875.md).
+        > 
+        > -   trustStore: This refers to the name of the truststore that holds the client certificate, or name of the certificate store reference that points to the trust store. To learn how to create a truststore and upload certificates, see [Manage Certificates](../manage-certificates-c665875.md). Alternatively, you can use a certificate store reference name instead of the truststore name. This reference name points to the truststore that contains the client certificate. For detailed instructions, see [Working with References](../working-with-references-6f96b64.md).
+        > 
+        >     Please ensure that all your client, intermediate, and root certificates are uploaded to the trustStore.
 
 
 2.  To update a virtual host:
@@ -91,22 +116,41 @@ To configure mutual TLS for custom domain virtual host, perform the following st
         >     "virtualHostUrl": "prod-apis",
         >     "isDefaultVirtualHostRequest" : false,
         >     "isClientAuthEnabled": true,
-        >     "keyStore": "ref://<reference_name>" or "<key_store_name>",
+        >     "isForCustomDomain": true,
+        >     "keyStoreName": "ref://<reference_name>" or "<key_store_name>",
+        >     "keyStoreAlias": "key_store_alias",
         >     "trustStore": "ref://<reference_name>" or "<trust_store_name>",
-        >     "virtualHostId":"c269915f-7adc-4f78-bdd0-dd39ffcb079f",
+        >     "virtualHostId":"<virtual host ID>",
         >     "operation" : "UPDATE"
         > }
         > 
         > ```
 
         > ### Note:  
+        > -   accountId: This is the subdomain of your subaccount.
+        > 
+        > -   virtualHostUrl: This is your virtual host alias, for example, prod-apis, testapi.
+        > 
+        >     > ### Note:  
+        >     > The virtual host alias allows a maximum of 63 characters.
+        > 
+        > -   isDefaultVirtualHostRequest: If you want the new virtual host to be the default virtual host, set the value to "true", else set it to "false".
+        > 
         > -   isClientAuthEnabled: This field must be set to "true" to enable mutual TLS.
         > 
-        > -   keyStore: This refers to the name of the keystore that should contain the custom domain's public and private key, or the name of the certificate store reference pointing to the keystore. To learn how to create a keystore and upload certificates, see [Manage Certificates](../manage-certificates-c665875.md). Alternatively, you can use a certificate store reference name that points to the keystore containing the custom domain's public and private keys. For more information, see [Working with References](../working-with-references-6f96b64.md).
+        > -   keyStoreName: This refers to the name of the keystore that should contain the custom domain's public and private key, or the name of the certificate store reference pointing to the keystore. To learn how to create a keystore and upload certificates, see [Manage Certificates](../manage-certificates-c665875.md). Alternatively, you can use a certificate store reference name that points to the keystore containing the custom domain's public and private keys. For more information, see [Working with References](../working-with-references-6f96b64.md).
+        > 
+        > -   keyStoreAlias: The keyStoreAlias parameter refers to the name of the keystore certificate containing the custom domain's public and private key. To learn how to create a keystore certificate and upload certificates, see [Manage Certificates](../manage-certificates-c665875.md).
         > 
         > -   trustStore: This refers to the name of the truststore that holds the client certificate, or name of the certificate store reference that points to the trust store. To learn how to create a truststore and upload certificates, see [Manage Certificates](../manage-certificates-c665875.md). Alternatively, you can use a certificate store reference name instead of the truststore name. This reference name points to the truststore that contains the client certificate. For detailed instructions, see [Working with References](../working-with-references-6f96b64.md).
         > 
         >     Please ensure that all your client, intermediate, and root certificates are uploaded to the trustStore.
+        > 
+        > -   virtualHostId: This is the unique ID of the virtual host you are trying to update.
+        > 
+        >     Example: c269915f-7adc-4f78-bdd0-dd39ffcb079f
+        > 
+        >     The `virtualHostId` can be retrieved from the following API endpoint: https://<url-from-service-key\>/apiportal/api/1.0/Management.svc/VirtualHosts
 
 
     > ### Note:  
@@ -142,13 +186,15 @@ To configure mutual TLS for custom domain virtual host, perform the following st
 
         > ### Sample Code:  
         > ```
-        > {     "virtualHostId":"fa90e5ab-287f-466a-ba9e-5f6f4becc74c",
+        > {     "virtualHostId":"<virtual host ID>",
         >      "operation" : "DELETE"
         > }
         > ```
 
         > ### Note:  
         > virtualHostId: This is the unique ID of the virtual host you are trying to delete.
+        > 
+        > Example: fa90e5ab-287f-466a-ba9e-5f6f4becc74c
         > 
         > The `virtualHostId` can be retrieved from the following API endpoint: https://<url-from-service-key\>/apiportal/api/1.0/Management.svc/VirtualHosts
 

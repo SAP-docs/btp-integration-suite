@@ -27,7 +27,7 @@ Custom search attributes allow you to search for interchanges based on the user-
 1.  Navigate to the *Custom Search Attributes* tab and choose *Add*.
 
     > ### Note:  
-    > To know how to create a custom search attribute, see [Configuration Manager](configuration-manager-7daf06c.md).
+    > To learn how to create custom search attributes, see [Configuration Manager](configuration-manager-7daf06c.md).
 
 2.  In the resulting dialog, maintain the following fields:
 
@@ -99,7 +99,7 @@ Custom search attributes allow you to search for interchanges based on the user-
     
     Select whether you want the data source in *Sender Interchange* or *Receiver Interchange*.
 
-    If you *Header* as your source type, this field is disabled.
+    If you chose *Header* as your source type, this field is disabled.
     
     </td>
     </tr>

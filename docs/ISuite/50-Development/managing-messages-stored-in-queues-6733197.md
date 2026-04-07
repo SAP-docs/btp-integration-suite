@@ -156,6 +156,66 @@ Date until which the message is retained. Once this date is reached, the message
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Sender* 
+
+</td>
+<td valign="top">
+
+Name of the sender made available by the `SAP_Sender` header.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Receiver* 
+
+</td>
+<td valign="top">
+
+Name of the receiver made available by the `SAP_Receiver` header.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Application Message Type* 
+
+</td>
+<td valign="top">
+
+Application-specific Message Type set by the `SAP_MessageType` header.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Application Message ID* 
+
+</td>
+<td valign="top">
+
+The identifier set by the `SAP_ApplicationID` header.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Correlation ID* 
+
+</td>
+<td valign="top">
+
+The identifier used to correlate different messages with each other that are processed jointly in the context of an integration scenario.
+
+</td>
+</tr>
 </table>
 
 You can perform the following actions for the messages you select:

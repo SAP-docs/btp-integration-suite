@@ -11,7 +11,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
 ## Prerequisites
 
 > ### Note:  
-> Edge Integration Cell exposes API and Integration Flow endpoints for access by clients. The URL to be used is defined by a Virtual Host. A Virtual Host holds all information required to handle \(m\)TLS handshakes, the actual domain name, TLS key, server, and Trust CA certificates. For Edge Integration Cell, a Default Virtual Host name has to be chosen. Additionally, a key pair needs to be provided, referenced via a Default Virtual Host Key Alias. Currently, a predefined list of Trust CAs is supported. For more information on extending the list of supported CAs, see [3396200/E](https://me.sap.com/notes/3396200/E).
+> Edge Integration Cell exposes API and Integration Flow endpoints for access by clients. The URL to be used is defined by a Virtual Host. A Virtual Host holds all information required to handle \(m\)TLS handshakes, the actual domain name, TLS key, server, and Trust CA certificates. For Edge Integration Cell, a Default Virtual Host name has to be chosen. Additionally, a key pair needs to be provided, referenced via a Default Virtual Host Key Alias. Currently, a predefined list of Trust CAs is supported. For more information on extending the list of supported CAs, see [3725196](https://me.sap.com/notes/3725196).
 > 
 > The approach is comparable to the configuring custom domains approach for SAP Cloud Integration. Custom Domains are used if you don't wish to expose the default domain provided by SAP Cloud Integration. In such a scenario, you can construct custom domain names and TLS settings for a specific Cloud Integration instance. For more information, see [Configuring Custom Domains](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/7230b9ff41914cc0969223e6a020104b.html "Allows you to customize the default tenant URL or domain as per your needs and access the tenant using your own the domain.") :arrow_upper_right:.
 > 
@@ -171,6 +171,18 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
+    **Cloud Connector Virtual Host**
+    
+    </td>
+    <td valign="top">
+    
+    Enter the virtual host \(host:port\) used for the Operations APIs. This property is only relevant if you use an external Cloud Connector.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     **SAP Monitoring Integration**
     
     </td>
@@ -180,7 +192,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
 
     -   None
     -   SAP Cloud ALM \(CALM\)
-    -   SAP Cloud ALM \(CALM\) mTLS
     -   SAP Focused Run \(FRUN\)
 
 
@@ -232,30 +243,6 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Enter the CALM Client Secret
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **CALM Data Center \(only visible if CALM mTLS is selected\)**
-    
-    </td>
-    <td valign="top">
-    
-    CALM Data Center
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **CALM Client Certificate \(only visible if CALM mTLS is selected\)**
-    
-    </td>
-    <td valign="top">
-    
-    Upload the CALM Client Certificate
     
     </td>
     </tr>
@@ -376,6 +363,9 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     Option to use a dedicated storage class \(access mode `ReadWriteOnce`\).
 
     If this field is left empty, the default storage class is used.
+
+    > ### Note:  
+    > You can't change this property after the initial deployment.
 
     For more information, see [3247839](https://me.sap.com/notes/3247839).
     
@@ -618,6 +608,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     -   Redis
     -   Reuse HANA DB
     -   HANA DB
+    -   Valkey
 
     > ### Note:  
     > The Internal option is for non-production environments only. Redis and HANA DB refer to external datastores.
@@ -641,7 +632,10 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     
     Option to use a dedicated storage class \(access mode `ReadWriteOnce`\).
 
-    If this field is left empty, the default storage class isn't used.
+    If this field is left empty, the default storage class is used.
+
+    > ### Note:  
+    > You can't change this property after the initial deployment.
 
     For more information, see [3247839](https://me.sap.com/notes/3247839).
     
@@ -817,6 +811,102 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Valkey Address \(only visible if Valkey is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter the fully qualified domain name \(FQDN\) and port of the Valkey endpoint that your Edge Integration Cell node connects to, in the format `Hostname:Port`.
+
+    Example: `my-valkey.xxxxxx.ng.0001.use1.cache.amazonaws.com:6379`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Valkey Mode \(only visible if Valkey is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Select Valkey mode \(Cluster, Standalone\).
+
+    Topology of the Valkey deployment:
+
+    -   *Standalone:* Node-based cluster with Cluster Mode disabled.
+    -   *Cluster:* Node-based cluster with Cluster Mode enabled.
+
+    > ### Note:  
+    > Sentinel and Serverless deployments are not supported.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Valkey Username \(only visible if Valkey is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Optional ACL username used for authentication.
+
+    For AWS-managed Valkey, this is typically `default` unless custom users are configured. You can leave this field empty if your deployment authenticates only with a password or token for the default user.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Valkey Password \(only visible if Valkey is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter password or authentication token for the Valkey user.
+
+    This is mandatory for AWS ElastiCache Valkey and it should match the auth token configured for the cluster.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Valkey TLS Certificate \(only visible if Valkey is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Upload Trust Root CA bundle in PEM format \(Base64 ASCII\) used to validate the Valkey server certificate.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Valkey Server Name \(only visible if Valkey is selected\)
+    
+    </td>
+    <td valign="top">
+    
+    Hostname sent as the TLS Server Name Indication \(SNI\) and used for certificate hostname verification.
+
+    Guidance:
+
+    -   *Direct AWS connection:* Usually the same hostname as the *Valkey Address*.
+    -   *Private DNS/CNAME or a proxy \(for example, Istio\):* Set this to the original AWS endpoint hostname \(the `*.cache.amazonaws.com` address\) to ensure correct TLS validation and routing.
+
+
+
+    
+    </td>
+    </tr>
     </table>
     
 9.  Choose *Next Step*.
@@ -899,7 +989,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </td>
     <td valign="top">
     
-    Additional ports to be opened on the Istio ingress gateway. This setting is currently not used by Edge Integration Cell.
+    Additional ports to be opened on the Istio ingress gateway.
     
     </td>
     </tr>
@@ -911,7 +1001,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </td>
     <td valign="top">
     
-    Additional TLS ports to be opened on the Istio ingress gateway. This setting is currently not used by Edge Integration Cell.
+    Additional TLS ports to be opened on the Istio ingress gateway.
     
     </td>
     </tr>

@@ -46,6 +46,9 @@ To be archived, all the MPLs have to fulfill the following conditions:
     > ### Note:  
     > Message Processing Logs with all other status values are archived if they fulfill conditions 1 and 2.
 
+    > ### Note:  
+    > The archived values of `mpl:sender` and `mpl:receiver` have a maximum length of 40 character. If the sender or receiver value of a message processing log exceeds 40 characters, the system truncates the value to 40 characters in the archive.
+
     > ### Caution:  
     > If you've selected the optional parameter `ArchiveCompletedMessagesOnly`, and set its value to `TRUE`, or `true`, only archiving relevant MPLs with status COMPLETED is archived. See: [Configuring Destination](configuring-destination-c1ac580.md)
 

@@ -125,7 +125,7 @@ Enter the Base URL of your Shopify store.
 > ### Example:  
 > `https://xxxxxx.myshopify.com`
 
-
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}`. See [Dynamically Configure Integration Flow Parameters](https://help.sap.com/docs/integration-suite/sap-integration-suite/dynamically-configure-integration-flow-parameters?version=CLOUD)
 
 </td>
 </tr>
@@ -162,7 +162,7 @@ Provide the name of the deployed security material that contains the primary cre
 > -   This must be the name of the deployed Security Parameter for Access Token Authentication.
 > -   This must be the name of the deployed OAuth2 Client Credentials for OAuth2 Client Credentials authentication.
 
-
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}`. See [Dynamically Configure Integration Flow Parameters](https://help.sap.com/docs/integration-suite/sap-integration-suite/dynamically-configure-integration-flow-parameters?version=CLOUD)
 
 </td>
 </tr>

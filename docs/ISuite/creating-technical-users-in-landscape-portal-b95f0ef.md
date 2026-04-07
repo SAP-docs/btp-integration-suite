@@ -23,7 +23,7 @@ Prepare your technical users in the landscape portal of your chosen data space.
 
 ## Context
 
-As part of the preparation in your onboarding, you must create two technical users in the landscape portal of the Catena-X or Cofinity-X network. The first technical user must have the *Identity Wallet Management* role and the second technical user must have the *Offer Management* role.
+As part of the preparation in your onboarding, you must create two technical users in the landscape portal of the Catena-X or Cofinity-X network. The first technical user must have the *Identity Wallet Management* role and the second technical user must have the *Connector Management* role.
 
 The following instructions outline the process of creating technical users in the landscape portal of either **Catena-X** or **Cofinity-X**.
 
@@ -37,11 +37,6 @@ Follow the steps for the landscape to which you want to onboard: either **Cofini
 
 -   Creating technical users in the **Cofinity-X** portal
 
-    > ### Note:  
-    > Due to the role concept of Cofinity-X, you may not have sufficient privileges to create users yourself. To create the users yourself, you can assign the company role `Service Provider` to yourself in the portal of Cofinity-X. For details on the creation of the roles, you can then refer to the instructions for the Catena-X landscape portal.
-    > 
-    > Alternatively, follow these steps and SAP will create the users for you:
-
     1.  Open the portal of your landscape and log in with your account. Log in to the portal to which the connector must be onboarded.
     2.  Choose the company account that you want to use. You're redirected to authenticate yourself with the underlying identity provider. Log in with your credentials.
     3.  Navigate to the *App Marketplace* and search for `Data Space Integration`. Once found, subscribe to it.
@@ -49,9 +44,18 @@ Follow the steps for the landscape to which you want to onboard: either **Cofini
     5.  Navigate to *Technical Setup* \> *Technical User Management*, which is where you manage all users assigned to the company.
     6.  Scroll down. The technical users that were created for you are now visible in the technical user list.
 
-        ![](images/Creating_Technical_Users_in_the_Cofinity-X_Portal_8551429.png)
+        ![Technical User Management page showing a list of technical users and their details.](images/Creating_Technical_Users_in_the_Cofinity-X_Portal_8551429.png)
 
-        The user *Data Space Integration* has the *Offer Management* role, the user *dim-Data Space Integration* has the *Identity Wallet Management* role.
+        The user *Data Space Integration* has the *Connector Management* role and the user *dim-Data Space Integration* has the *Identity Wallet Management* role.
+
+    7.  Additionally, you need to request an additional credential that enables cross-company connector communication.
+
+        1.  Go to your profile and choose *Company Wallet*.
+        2.  On the upcoming page, choose *Request New Credential*.
+        3.  Select the credential *DataExchangeGovernance* and finish by choosing *Proceed*.
+
+            After a short wait, the credential appears in your list of credentials.
+
 
 
 -   Creating technical users in the **Catena-X** portal
@@ -64,7 +68,7 @@ Follow the steps for the landscape to which you want to onboard: either **Cofini
 
     4.  Enter a *Username* and *Description*, then select the *Identity Wallet Management* technical user role.
     5.  Select *Confirm*. The technical user that you created \(usually prefixed with `-dim`\) is now visible in the technical user list.
-    6.  Repeat steps 3–6 for the *Offer Management* role.
+    6.  Repeat steps 3–6 for the *Connector Management* role.
 
 
 
@@ -73,7 +77,7 @@ Follow the steps for the landscape to which you want to onboard: either **Cofini
 
 ## Results
 
-You've created two technical users in the landscape portal of your data space, one user with the role *Identity Wallet Management* and one with the role *Offer Management*, and their credentials.
+You've created two technical users in the landscape portal of your data space, one user with the role *Identity Wallet Management* and one with the role *Connector Management*, and their credentials.
 
 
 

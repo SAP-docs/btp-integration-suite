@@ -111,7 +111,7 @@ Specify the runtime properties of the integration flow.
     > 
     > -   The expression `AB_[0-9]|CD_[0-9]` matches `AB_` followed by one digit or `CD_` followed by one digit, for example: `AB_1`, `AB_2`, `CD_9`.
     > 
-    >     Note that contants separated with the pipe character \(`|`\) \(as mentioned above\) is also a regular expression.
+    >     Note that constants separated with the pipe character \(`|`\) \(as mentioned above\) is also a regular expression.
     > 
     >     You can also combine constant values with regular expressions, separated by the pipe character \(`|`\).
     > 

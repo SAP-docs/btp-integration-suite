@@ -644,6 +644,23 @@ Specify the maximum number of messages to be returned for this request. This mus
 <tr>
 <td valign="top">
 
+*Decode Data*
+
+</td>
+<td valign="top">
+
+Enable to decode incoming data.
+
+> ### Note:  
+> The data field in the incoming message will be decoded as per Base64 format.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Post-Processing*
 
 </td>

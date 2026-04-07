@@ -44,10 +44,12 @@ SAP Integration Suite provides several methods to model API artifact to be deplo
 
     See, [Create an API Artifact Using an API Specification](create-an-api-artifact-using-an-api-specification-39c2b30.md).
 
--   *Reusable API Artifact*: The reusable API artifact feature enables you to encapsulate a standardized set of API policies and mediation logic—such as authentication, transformation, and validation—into modular units that can be centrally defined and invoked across multiple API artifacts. For more information, see  <?sap-ot O2O class="- topic/xref " href="0112688ab000469f9939f8f53fcb2ff6.xml" text="" desc="" xtrc="xref:11" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/c2fe62c32855435f8b64e0fd10c8507e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+-   *Reusable API Artifact*: The reusable API artifact feature enables you to encapsulate a standardized set of API policies and mediation logic—such as authentication, transformation, and validation—into modular units that can be centrally defined and invoked across multiple API artifacts. For more information, see [Create a Reusable API Artifact](create-a-reusable-api-artifact-0112688.md).
 
 **Related Information**  
 
+
+[Generate OpenAPI Specification with AI Assistance](generate-openapi-specification-with-ai-assistance-5ec68db.md "You can use AI assistance to automatically generate an OpenAPI specification while creating an API artifact. The AI analyzes your API design inputs and helps you quickly create a well-structured specification. This reduces manual effort and maintains consistency with OpenAPI standards.")
 
 [Add Resources to an API Artifact](add-resources-to-an-api-artifact-b5d0e4c.md "Add a resource to refer to individual endpoints or services.")
 

@@ -22,7 +22,7 @@ Whenever you create a product or edit a draft product, permissions can be added 
 > ### Note:  
 > Currently, we do not support assigning of permissions to the products defined in the remote API portals that are connected to a centralised Developer Hub.
 > 
-> \*Remote API portals are those that are not in the same subaccount as the centralised Developer Hub and are configured via the manage connections. For more information, [Centralized Developer Hub](../centralized-developer-hub-38422de.md).
+> \*Remote API portals are those that are not in the same subaccount as the centralised Developer Hub and are configured via the manage connections. For more information, [Centralized Developer Hub](centralized-developer-hub-38422de.md).
 
 
 

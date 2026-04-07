@@ -8,12 +8,12 @@ Create and maintain parameters for your company profile/subsidiary.
 
 ## Context
 
-The application also allows you to maintain Dynamic Parameters for the company profile. These parameters can be helpful when:
+The application also allows you to maintain dynamic parameters for the company profile. These parameters can be helpful when:
 
--   You use custom integration flow.
+-   You use a custom integration flow.
 
--   You need to provide parameters for the main mapping step in a integration flow.
--   When you use GS1 XML type system in your agreement and that requires dynamic parameters. These are the following parameters that you can define for GS1 XML type system:
+-   You need to provide parameters for the main mapping step in an integration flow.
+-   When you use a GS1 XML type system in your agreement and that requires dynamic parameters. For GS1 XML type systems, you can define the following parameters:
     -   SAP\_EDI\_REC\_Sender\_Partner\_Type
 
     -   SAP\_EDI\_REC\_Receiver\_Partner\_Type
@@ -30,25 +30,30 @@ To do so, you need to create/upload the parameters to your company profile.
 
 ## Procedure
 
-1.  Navigate to the *Parameters* tab of the company profile.
+1.  Go to *Design* \> *B2B Scenarios* and open the relevant company profile.
 
-2.  You can create or import dynamic parameters in the system.
+2.  Navigate to the *Parameters* tab of the company profile.
 
-3.  If you choose *Create*:
+3.  You can **create** or **import** dynamic parameters in the system.
 
-    -   Enter a key in the *Parameter Key* field.
+    -   If you choose *Create*, maintain the following fields:
 
-    -   Enter the value for the key in the *Value* field.
-    -   Choose *Save*. The parameter is now successfully added to the list.
+        -   Enter a key in the *Parameter Key* field.
 
-4.  If you choose *Import*:
+        -   Enter the value for the key in the *Value* field.
+        -   Optionally, enter a description for the key in the *Description* field.
 
-    -   In the *Import File* dialog, choose *Browse* to select and upload a csv file.
-    -   Choose a type of the csv file under the *Type* field.
-    -   Select the field seperator of the csv file from the drop-down list of the field *Field Seperator in CSV*.
-    -   Choose *Next*. The next screen displays a preview of the parameters in the csv file.
-    -   Choose *Import*. The parameters are now successfully added to the company profile.
+        When you're done, choose *Save*. The parameter is added to the list.
 
-5.  As the next step, maintain your security related configurations by following the steps mentioned here: [Security](security-08f956a.md).
+    -   If you choose *Import*, maintain the following fields:
+
+        -   In the *Import File* dialog, choose *Browse* to select and upload a CSV file.
+        -   Choose a type of the CSV file under the *Type* field.
+        -   Select the field separator of the CSV file from the drop-down list of the field *Field Separator in CSV*.
+
+        Choose *Next* and review the preview of the parameters in the CSV file. If you're satisfied, choose *Import*. The parameters are added to the company profile.
+
+
+4.  As the next step, maintain your security-related configurations by following the steps mentioned under [Security](security-08f956a.md).
 
 

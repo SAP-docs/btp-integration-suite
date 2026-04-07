@@ -7,7 +7,7 @@ The message monitor provides an overview of the messages processed on a tenant a
 To access the message monitor, choose a tile in the *Monitor Message Processing* area. The system displays messages based on the filter settings of the tile.
 
 > ### Note:  
-> In high-load scenarios, the system may still determine the number of messages while it already displays the list of messages. The determination of the message count is independent of the message search. This ensures that the message monitor doesn't encounter a timeout situation when determining a long list of messages.
+> The system separates message counting from message retrieval. It loads the message list \(up to 50 messages at once\) first and computes the message count in the background. During high load scenarios, the system displays three dots instead of the message count to indicate that counting is in progress. This way, you can see all retrieved messages even if counting fails. This reduces the risk of timeouts when the number of messages in the selected time interval is too high.
 
 
 
@@ -56,7 +56,10 @@ Select from the following predefined time intervals:
 -   *Custom*
 
     > ### Note:  
-    > When you select the *Custom* option, you can select a specific start and end time. Choose a specific date and time using a graphical element with two components: a calendar element and a circular watch element.
+    > When you select the *Custom* option, you can display messages based on when their status last changed within a specific time period. Define this period with the *From* and *To* filters. Select *Last Updated* to load the message list more quickly and avoid timeouts.
+
+    > ### Tip:  
+    > If you encounter timeouts, reduce the time period to hours or minutes.
 
 
 The specified time interval appears above the message list. When you browse different pages in the message monitor, the time interval remains the same. To change the time interval, adjust the filter settings or refresh the message monitor. This applies to all time intervals except for *Custom*.

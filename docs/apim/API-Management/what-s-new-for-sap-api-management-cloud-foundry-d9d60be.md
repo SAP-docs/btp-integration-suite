@@ -80,6 +80,286 @@ Version
 <tr>
 <td valign="top">
 
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Generate OpenAPI Specification with AI Assistance
+
+</td>
+<td valign="top">
+
+You can leverage AI assistance to automatically generate an OpenAPI Specification while creating an API artifact. The AI analyzes your API design inputs and helps you quickly produce a well-structured specification, reducing manual effort and ensuring consistency with OpenAPI standards. See, [Generate OpenAPI Specification with AI Assistance](https://help.sap.com/docs/integration-suite/sap-integration-suite/generate-openapi-specification-with-ai-assistence?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-04-04
+
+</td>
+<td valign="top">
+
+2026-04-04
+
+</td>
+<td valign="top">
+
+2602
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Update to Create New Subscription for Application Wizard
+
+</td>
+<td valign="top">
+
+The *Create New Subscription for Application* wizard, accessed from *My Workspace*, has been updated to improve usability and ensure that subscription details align with the selected product. In the updated flow, you first select a product and then enter the subscription details. Previously, the wizard followed the sequence *Subscription Details* \> *Product* \> *Review*; this has now been changed to *Product* \> *Subscription Details* \> *Review*
+
+Reordering the steps ensures that relevant and accurate information is displayed based on the product selection. See,[Subscribe to Consume APIs from an Application](https://help.sap.com/docs/integration-suite/sap-integration-suite/subscribe-to-consume-apis?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-04-04
+
+</td>
+<td valign="top">
+
+2026-04-04
+
+</td>
+<td valign="top">
+
+2602
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Authenticate APIs Using External OIDC Tokens
+
+</td>
+<td valign="top">
+
+You can now authenticate APIs using tokens issued by external OpenID Connect \(OIDC\)–compliant Identity Providers \(IDPs\) in addition to SAP XSUAA.
+
+This enhancement allows you to validate externally generated JWT tokens—such as those issued by Microsoft Entra ID or Google Identity—directly within an API artifact deployed on the Edge Integration Cell. This update enhances flexibility in identity integration while ensuring secure and precise access control for APIs on the Edge Integration Cell. For more information, see [Authentication](https://help.sap.com/docs/integration-suite/sap-integration-suite/authentication-fa6eec4f9ffc45aa89f8a2155b855ca4?version=CLOUD) and [Authorization](https://help.sap.com/docs/integration-suite/sap-integration-suite/authorization?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-03-08
+
+</td>
+<td valign="top">
+
+2026-03-08
+
+</td>
+<td valign="top">
+
+2601
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Valkey support for Edge Integration Cell
+
+</td>
+<td valign="top">
+
+Valkey is now supported for Edge Integration Cell. In addition to the existing datastore types, such as Redis and HANA DB, you can now select Valkey as your preferred datastore for Edge Integration Cell deployments. For more information, see [Deploy the Edge Integration Cell Solution](https://help.sap.com/docs/integration-suite/sap-integration-suite/deploy-edge-integration-cell-solution?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-03-08
+
+</td>
+<td valign="top">
+
+2026-03-08
+
+</td>
+<td valign="top">
+
+2601
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 API Management
 
 </td>
@@ -2006,6 +2286,17 @@ Not applicable
 <td valign="top">
 
 2412
+
+</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<td valign="top">
+
+c
 
 </td>
 </tr>

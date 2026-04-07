@@ -87,7 +87,16 @@ Understand how to create webhook subscriptions.
 
 7.  Turn on the toggle *On Premise* if you want to connect your webhook that is hosted on an on-premises landscape.
 
-    1.  Enter the *Location ID* that you used in Cloud Connector to configure connectivity to your on-premise system.
+    1.  Enter the *Location ID* that you used in [Cloud Connector](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector?version=Cloud) to configure connectivity to your on-premise system.
+
+        > ### Note:  
+        > On‑Premise firewall and connectivity requirement
+        > 
+        > -   When you enable the On‑Premise toggle, your Cloud Connector must be able to establish an outbound HTTPS connections to SAP Integration Suite’s Event Mesh endpoints. Ensure your corporate firewall and DNS allow:
+        >     -   Hostname: \*.eventmesh.integration.cloud.sap
+        >     -   Protocol/Port: HTTPS / TCP 443 \(outbound\)
+        > 
+        > -   Without this host entry and outbound access, the Cloud Connector cannot form the secure tunnel and webhook delivery will fail. After applying these rules, verify DNS resolution and connectivity from the Cloud Connector host and confirm the Cloud Connector shows as Connected in SAP Integration Suite.
 
 
 8.  Enter the URL of your webhook.

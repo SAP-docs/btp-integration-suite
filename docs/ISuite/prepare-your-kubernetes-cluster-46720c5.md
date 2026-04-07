@@ -10,9 +10,9 @@ The following infrastructures are required for installing Edge Integration Cell:
 
 -   \(Mandatory\) A Kubernetes cluster
 
--   \(Mandatory\) A PostgreSQL database
+-   \(Mandatory\) A SAP HANA database or PostgreSQL database
 
--   \(Mandatory\) A Redis data store
+-   \(Mandatory\) A SAP HANA database, or a Redis or Valkey data store
 
 -   \(Mandatory\) A Load Balancer
 
@@ -51,6 +51,20 @@ Your Kubernetes cluster must meet certain requirements before you can set up Edg
 
 
 
+## SAP HANA Database Requirements
+
+Your SAP HANA database must meet the following requirements before you set up Edge Integration Cell:
+
+-   The SAP HANA database server must have TLS/SSL enabled.
+-   The server must provide a single endpoint \(host and port pair\). For failover, use a network-based approach.
+
+> ### Note:  
+> Client certificates are currently not supported.
+
+For more information about SAP HANA database, see SAP Note [3247839](https://me.sap.com/notes/3247839).
+
+
+
 <a name="loio46720c5f00494102b4d1b036045dc20a__section_gm2_l11_yyb"/>
 
 ## PostgreSQL Database Requirements
@@ -83,7 +97,7 @@ Your PostgreSQL database must meet certain requirements before you can set up Ed
 The requirements are fulfilled when using cloud platform offerings like Azure Database for PostgreSQL, or Amazon RDS for PostgreSQL.
 
 > ### Note:  
-> For more information about PostgreSQL, see [3247839](https://me.sap.com/notes/3247839).
+> For more information about PostgreSQL, see SAP Note [3247839](https://me.sap.com/notes/3247839).
 
 
 
@@ -100,7 +114,13 @@ Your Redis data store must meet certain requirements before you can set up Edge 
 -   Using client certificates is currently not supported.
 
 > ### Note:  
-> For more information about Redis, see [3247839](https://me.sap.com/notes/3247839).
+> For more information about Redis, see SAP Note [3247839](https://me.sap.com/notes/3247839).
+
+
+
+## Valkey Data Store Requirements
+
+For information about supported Valkey versions and requirements, see SAP Note [3247839](https://me.sap.com/notes/3247839).
 
 **Related Information**  
 

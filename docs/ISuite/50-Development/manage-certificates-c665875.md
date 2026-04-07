@@ -41,9 +41,16 @@ The following are the supported file format for certificates: .cer, .jar \(signe
     -   *Trust Store* - A truststore contains certificates used to verify certificates received as part of SSL handshaking. If the certificate received by an SSL client is signed by a valid certificate authority \(CA\), then the client makes a request to the CA to authenticate the certificate else self-signed certificate can be uploaded in the truststore.
 
         > ### Note:  
-        > Since client certificate chains are used in the authentication process to establish the identity of clients accessing the API Management service, it is important to ensure that these chains have sufficient security measures in place. Weak client certificate chains lack the necessary security measures and are therefore vulnerable to attacks. As a result, weak client certificate chains have been deprecated. For more detailed information, please [3418201 - Deprecation of Weak Client Certificate Chains in API Management \(sap.corp\)](https://i7p.wdf.sap.corp/sap(bD1lbiZjPTAwMQ==)/bc/bsp/sno/ui_entry/entry.htm?param=69765F6D6F64653D3030312669765F7361706E6F7465735F6E756D6265723D3334313832303126).
+        > If you are creating or renewing SSL \(mTLS\) certificate to connect to virtual hosts of your tenant, you must ensure that your client certificates include the Client Authentication Extended Key Usage \(EKU\) attribute. For more information, see SAP Note [3725252 - Client Authentication EKU Deprecation - Impact to Inbound API Management scenarios](https://me.sap.com/notes/3725252).
+
+        > ### Note:  
+        > Since client certificate chains are used in the authentication process to establish the identity of clients accessing the API Management service, it is important to ensure that these chains have sufficient security measures in place. Weak client certificate chains lack the necessary security measures and are therefore vulnerable to attacks. As a result, weak client certificate chains have been deprecated. For more information, see [3418201 - Deprecation of Weak Client Certificate Chains in API Management \(sap.corp\)](https://i7p.wdf.sap.corp/sap(bD1lbiZjPTAwMQ==)/bc/bsp/sno/ui_entry/entry.htm?param=69765F6D6F64653D3030312669765F7361706E6F7465735F6E756D6265723D3334313832303126).
 
     -   *Key Store* - A keystore contains an SSL certificate and private key used to validate the server during SSL handshaking.
+
+        > ### Note:  
+        > Effective *July 1, 2026*, the only supported format for uploading private keys \(or private key/certificate pairs\) will be PKCS12/PFX \(.p12\).
+
 
     The examples in this document show the SSL cert and key defined as PEM files, which comply with the X.509 format. If your cert or private key isn’t defined by a PEM file, you can convert it to a PEM file by using utilities such as openssl. However, many .crt files and .key files are already in the PEM format. If these files are text files, and are enclosed in:
 

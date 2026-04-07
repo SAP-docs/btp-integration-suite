@@ -197,10 +197,10 @@ During the operation of your scenarios, you may find that messages are piling up
 
 Use to manually trigger the process of moving all messages from the source queue to another target queue.
 
-> ### Caution:  
-> If new messages are written to the source queue during the moving process, these new messages will also be moved to the selected target queue – even if they weren't part of the queue when the move process was triggered manually. This function can lead to an endless loop in which the messages are constantly moved to the target queue.
+> ### Remember:  
+> This operation moves the messages that are currently in the source queue and a limited number of messages that arrive while the move is in progress. The move is bounded and stops when that limit is reached, preventing it from running indefinitely during a fast inflow of messages. Any messages remaining in the source queue after the operation are not moved automatically.
 > 
-> Once triggered, the move process is only stopped if no new messages are written to the queue for a certain amount of time.
+> After the move completes, refresh the *Queues* table to confirm whether messages remain in the original queue. Trigger a new move if needed.
 
 
 

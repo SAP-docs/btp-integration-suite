@@ -335,7 +335,7 @@ HTTP Receiver adapter
 
 Refers to the complete URL called, without query parameters.
 
-For example, `CamelHttpUrl=https://test.bsn.neo.ondemand.com/http/hello`.
+For example, `CamelHttpUrl=http://test.bsn.neo.ondemand.com/http/hello`.
 
 </td>
 </tr>
@@ -4535,6 +4535,116 @@ Looping Process Call
 <td valign="top">
 
 Provides the index of the currently processed loop \(starting with 0\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SSAP\_OFTP\_Inbound\_Virtual\_File\_Dataset\_Name
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+OFTP Sender Adapter
+
+</td>
+<td valign="top">
+
+The name of the inbound virtual file dataset.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_OFTP\_Inbound\_SFID\_Origin
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+OFTP Sender Adapter
+
+</td>
+<td valign="top">
+
+The file originator \(SFIDORIG\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_OFTP\_Inbound\_SFID\_Destination
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+OFTP Sender Adapter
+
+</td>
+<td valign="top">
+
+The final file destination \(SFIDDEST\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_OFTP\_Inbound\_Own\_Id
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+OFTP Sender Adapter
+
+</td>
+<td valign="top">
+
+Your own Odette identifier.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_OFTP\_Inbound\_Partner\_Id
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+OFTP Sender Adapter
+
+</td>
+<td valign="top">
+
+The expected partners' Odette identifier.
 
 </td>
 </tr>

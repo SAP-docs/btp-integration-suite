@@ -16,6 +16,9 @@ The Ariba sender adapter connects SAP Integration Suite to the Ariba Network. Us
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
+> ### Note:  
+> If the data is not retrieved, ensure that endpoint support for the pending queue is disabled in SAP Business Network \(Ariba\).
+
 Once you have created a sender channel and selected the Ariba sender adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 Select the *General* tab and provide values in the fields as follows.

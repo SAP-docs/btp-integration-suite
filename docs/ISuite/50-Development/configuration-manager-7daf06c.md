@@ -12,7 +12,7 @@
 
 The *B2B Scenarios* tab under the *Monitor* section allows you to monitor the interchanges that are created during a B2B transaction. The interchanges are displayed in a list with a list of filters using which helps you find a specific interchange easily. These search filters are provided in a standard format. There could be scenarios where you need to search for an interchange using a filter that is not provided in general. In such cases, the *Configuration Manager* allows you to create and use custom search fields. To do so, follow the following procedure:
 
-1.  Login to your application and navigate to *Design* \> *B2B Scenarios*.
+1.  Log in to your application and navigate to *Design* \> *B2B Scenarios*.
 
 2.  Select the *Configuration Manager* tab and choose *Create* to create your custom search attribute.
 
@@ -60,7 +60,7 @@ Follow the following procedure to set the maximum waiting time for the acknowled
 
 2.  In the *Acknowledgement Configuration* section, choose *Edit*.
 3.  Set the maximum waiting time for the fields *Technical Acknowledgement* and *Functional Acknowledgement*. The waiting time is recorded in minutes.
-4.  Choose *Save*. Saving the data will push it to the Partner Directory. In the *Save Acknowledgement Configuration* dialog, choose *OK*.
+4.  Choose *Save*. Saving the data pushes it to the Partner Directory. In the *Save Acknowledgement Configuration* dialog, choose *OK*.
 
 
 
@@ -175,4 +175,58 @@ In most cases, **editing** a custom rule that's used in an agreement means you h
 > If the XPath contains a namespace prefix, this prefix must be declared in the incoming payload with the same prefix value. For example, if your custom key XPath value is `//sh:StandardBusinessDocumentHeader/sh:DocumentIdentification`, your incoming payload must contain its declaration as follows: `xmlns:sh=“http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader”`
 > 
 > You must always use the same namespace prefix for the same namespace. For example, if your XPath uses `//sh1:StandardBusinessDocumentHeader` while your incoming payload’s namespace prefix is `sh`, errors occur.
+
+
+
+### Show Where-Used List
+
+For every custom rule, you can review the **where-used list**, which lists all agreement templates and agreements in which the custom rule is currently used. Display the where-used list as follows:
+
+1.  Go to *Design* \> *B2B Scenarios* and choose the *Configuration Manager* tab.
+2.  Go to the *Custom Rules* section.
+
+3.  For the relevant custom rule, go to the column *Actions* and choose <span class="SAP-icons-V5"></span> Show Where-Used List.
+
+    The upcoming dialog lists the agreement templates and agreements that currently use the selected custom rule.
+
+
+
+
+## Certificate Alert Configuration
+
+In the section *Certificate Alert Configuration*, you can configure alerts for your certificates. When you create a new certificate, it has an expiration date \(*Valid Until*\). Before a certificate expires, you should replace it. Configuring an alert can help you notice and replace expiring certificates early. See also [Certificates](certificates-b64fcf2.md).
+
+
+
+### Configure Certificate Alerts
+
+To configure an expiration alert for all of your certificates, perform the following steps:
+
+1.  Go to *Design* \> *B2B Scenarios* and open the *Configuration Manager*.
+2.  Go to the section *Certificate Alert Configuration* and choose *Edit*.
+3.  To define when the system raises a certificate alert, maintain a number of days for *Generate Alert for Expiry \(Days Before\)*. The default is `30 days`. You can enter a number between `1` and `999`.
+
+    During that period before a certificate expires, the alert tag and relevant company and partner profile show the status *Expiring Soon*. Once the expiration date has been reached, this status changes to *Expired*.
+
+    > ### Example:  
+    > If you set *Generate Alert for Expiry \(Days Before\)* to `30` days, you receive an expiration alert 30 days before the expiration date of a certificate is reached and the certificate expires.
+
+4.  Save your changes.
+
+
+
+### Alert Tag
+
+If there's an active alert, the alert tag is displayed on all pages under *Design* \> *B2B Scenarios*.
+
+![A red alert tag shows 'Certificates: 4 Expired' in Trading Partner Management.](images/TPM-Alert-Tag-SUI_126e9c1.png)
+
+The alert tag shows up as follows:
+
+-   If at least one certificate has expired.
+-   If at least one certificate is expiring soon, as defined in the *Certificate Alert Configuration*. However, if there's also an expired certificate, the alert tag shows *Expired*.
+
+If no certificates have expired or are expiring soon, there's no alert tag.
+
+Choose the tag to expand the *Certificate Expiration Overview*. This overview lists all certificates that have expired or are expiring soon. To navigate to the affected profile and certificate, choose <span class="SAP-icons-V5"></span> Go to Profile. You can then upload a new certificate.
 

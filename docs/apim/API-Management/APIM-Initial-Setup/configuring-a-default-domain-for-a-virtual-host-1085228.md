@@ -74,12 +74,12 @@ To request a custom domain with one-way TLS, perform the following steps:
         > ### Note:  
         > -   accountId: This is the subdomain of your subaccount.
         > 
-        > -   virtualHostUrl - This is your virtual host alias, for example, prod-apis, testapi.
+        > -   virtualHostUrl: This is your virtual host alias, for example, prod-apis, testapi.
         > 
         >     > ### Note:  
         >     > The virtual host alias allows a maximum of 63 characters.
         > 
-        > -   isDefaultVirtualHostRequest -if you want the new virtual host to be the default virtual host, set the value to "true", else set it to "false".
+        > -   isDefaultVirtualHostRequest: If you want the new virtual host to be the default virtual host, set the value to "true", else set it to "false".
 
         > ### Note:  
         > To enable client authentication \(mutual TLS\) while configuring the virtual host with default domain, see [Configuring Mutual TLS for Default Domain Virtual Host](configuring-mutual-tls-for-default-domain-virtual-host-9faf7ce.md).
@@ -158,7 +158,7 @@ To request a custom domain with one-way TLS, perform the following steps:
         >     "virtualHostUrl": "prod-apis-updated",
         >     "isDefaultVirtualHostRequest" : false,
         >     "operation" : "UPDATE",
-        >     "virtualHostId":"c269915f-7adc-4f78-bdd0-dd39ffcb079f"
+        >     "virtualHostId": "<virtual host ID>"
         > }
         > <!–– 
         > -->
@@ -176,6 +176,10 @@ To request a custom domain with one-way TLS, perform the following steps:
         > -   isDefaultVirtualHostRequest -if you want the new virtual host to be the default virtual host, set the value to "true", else set it to "false".
         > 
         > -   virtualHostId: This is the unique ID of the virtual host you are trying to update.
+        > 
+        >     Example: c269915f-7adc-4f78-bdd0-dd39ffcb079f
+        > 
+        >     The `virtualHostId` can be retrieved from the following API endpoint: https://<url-from-service-key\>/apiportal/api/1.0/Management.svc/VirtualHosts
 
         > ### Note:  
         > To enable client authentication \(mutual TLS\) while configuring the virtual host with default domain, see [Configuring Mutual TLS for Default Domain Virtual Host](configuring-mutual-tls-for-default-domain-virtual-host-9faf7ce.md).
@@ -256,7 +260,7 @@ To request a custom domain with one-way TLS, perform the following steps:
 
         > ### Sample Code:  
         > ```
-        > {     "virtualHostId":"fa90e5ab-287f-466a-ba9e-5f6f4becc74c",
+        > {     "virtualHostId": "<virtual host ID>",
         >      "operation" : "DELETE"
         > }
         > 
@@ -264,6 +268,8 @@ To request a custom domain with one-way TLS, perform the following steps:
 
         > ### Note:  
         > virtualHostId: This is the unique ID of the virtual host you are trying to delete.
+        > 
+        > Example: fa90e5ab-287f-466a-ba9e-5f6f4becc74c
         > 
         > The `virtualHostId` can be retrieved from the following API endpoint: https://<url-from-service-key\>/apiportal/api/1.0/Management.svc/VirtualHosts
 

@@ -201,11 +201,12 @@ Use this option to upload a message mapping artifact stored on your computer. On
     > ### Note:  
     > Importing message mappings with parameters is not supported for local message mappings.
     > 
-    > If an imported mapping uses objects like JDBC lookups, Simple Type or Adapter‑type parameters, or functional libraries with Simple Type parameters, the integration flow must be manually adjusted to ensure correct execution.
+    > If an imported mapping uses objects like JDBC lookups, Simple Type or Adapter‑type parameters, or functional libraries with Simple Type parameters, Dynamic Configuration APIs for accessing Adapter-Specific Message Attributes, the integration flow must be manually adjusted to ensure correct execution.
     > 
     > > ### Example:  
     > > -   JDBC Lookup: If the imported mapping uses a JDBC lookup, the integration flow must include a JDBC adapter. The lookup response must be written to a header or property and then consumed inside the message mapping according to your use case.
     > > -   Function Library: If the imported mapping references a Function Library, only the supported parts of the library are imported. For unsupported Function Library functions or dependent archive logic, you must manually import the required archive objects, update the Function Libraries artifact accordingly, and adapt the message mapping or integration flow so the logic is implemented as required.
+    > > -   Adapter‑Specific Metadata \(ASM\): If the imported mapping uses ASM, you must manually create equivalent headers or properties in a Content Modifier or a Groovy script. These values should then be stored in the message headers/properties and used later in the message mapping or Groovy logic as required.
 
 11. Open the message mapping artifact and choose *Edit* to change the source and target messages, create mappings, and perform operations. Choose *Save*.
 

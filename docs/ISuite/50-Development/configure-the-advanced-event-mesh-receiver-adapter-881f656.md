@@ -4,6 +4,9 @@
 
 The AdvancedEventMesh receiver adapter allows SAP Integration Suite to send messages to queues or topics in SAP Integration Suite, advanced event mesh.
 
+> ### Remember:  
+> During Cloud Integration blue-green deployment of worker nodes, connection counts may temporarily double due to the nature of the deployment strategy. This occurs because both old and new worker nodes establish connections simultaneously during the switchover phase. Plan your SAP Integration Suite, advanced event mesh service connection thresholds accordingly to avoid JCSMPErrorResponseException: 503: Too Many Connections errors during new node startup. To proactively manage this, configure connection count alerts on your broker service and ensure your service plan's connection limits can accommodate the temporary spike.
+
 > ### Note:  
 > This adapter is available on SAP Business Accelerator Hub.
 > 
@@ -398,6 +401,16 @@ For example:
 
 -   `CLIENT_CHANNEL_PROPERTIES.ReconnectRetries` \(JCSMP channel property\)
 
+
+The adapter version V1.4.1, supports the following custom properties for enhanced functionality:
+
+-   ADAPTER.CUSTOM\_PROP.RECEIVER\_CONNECTION\_REUSE: Enable connection pooling for Receiver adapters \(default: false\)
+
+-   ADAPTER.CUSTOM\_PROP.USE\_CPI\_TRUSTSTORE: Automatically configure truststore from SAP CPI keystore service \(default: false\)
+
+
+> ### Note:  
+> For v1.4.1 and above, all receiver connections include automatic inactivity-based eviction \(5-8 minutes of inactivity\) to optimize resource usage. Connections are recreated automatically on demand. When connection pooling is enabled, shared connections persist across individual integration flow undeployments.
 
 
 
@@ -796,4 +809,481 @@ The adapter accepts headers on both sender and receiver side.
 The receiver can support the following headers on the message being published to the broker: ApplicationMessageId, ApplicationMessageType, CoS, CorrelationId, DeliveryCount, Destination, DestinationEndpointType, Expiration, HttpContentEncoding, HttpContentType, IsDiscardIndication, IsDMQEligible, IsElidingEligible, IsRedelivered, IsReplyMessage, Priority, ReceiveTimestamp, ReplicationGroupMessageId, ReplyToEndpointType, ReplyToDestination, SenderId, SenderTimestamp, SequenceNumber, TimeToLive, UserProperties. When setting up the integration flow, add them to the allowlist via Integration Flow -\> Runtime Configuration -\> Allowed Header\(s\), if required. See [Specify the Runtime Configuration](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/specify-runtime-configuration). Some of these headers can be defined at design-time via the *Message Properties* tab and the rest could be defined using a Content Modifier.
 
 Additionally, the header `SAP_MplCorrelationId` is propagated in every outgoing message as an entry in the UserProperties.
+
+
+
+## Performance Optimization
+
+*Connection Pooling for Receiver Adapters* \(applicable to v1.4.1\)
+
+The Advanced Event Mesh adapter includes intelligent connection pooling exclusively for Receiver \(Producer\) adapters to optimize resource utilization in scenarios with multiple receiver endpoints sharing similar connection parameters. This feature is not available for Sender adapters.
+
+**How Connection Pooling Works**: When multiple Receiver adapters within the same tenant have identical connection parameters \(host, authentication, proxy settings, etc.\), the adapter can share pooled connections instead of creating separate connections for each adapter instance.
+
+**Configuration**: Connection pooling is controlled by the ADAPTER.CUSTOM\_PROP.RECEIVER\_CONNECTION\_REUSE property in the JCSMP Properties configuration
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Configuration
+
+</th>
+<th valign="top">
+
+Behavior
+
+</th>
+<th valign="top">
+
+Use Case
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+ADAPTER.CUSTOM\_PROP.RECEIVER\_CONNECTION\_REUSE=true
+
+</td>
+<td valign="top">
+
+**Enabled**: Multiple receivers with identical connection parameters share pooled connections
+
+</td>
+<td valign="top">
+
+Multi-receiver scenarios with same broker, authentication, and proxy settings
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ADAPTER.CUSTOM\_PROP.RECEIVER\_CONNECTION\_REUSE=false
+
+</td>
+<td valign="top">
+
+**Disabled \(Default\)**: Each receiver gets a unique connection with auto-generated unique identifier
+
+</td>
+<td valign="top">
+
+Independent receivers or when connection isolation is required
+
+</td>
+</tr>
+</table>
+
+**Pool Characteristics**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Characteristic
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Expiration
+
+</td>
+<td valign="top">
+
+Connections expire after 5 minutes of inactivity \(NEW in v1.4.1 - applies to all receiver connections regardless of pooling setting\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cleanup
+
+</td>
+<td valign="top">
+
+Automatic cleanup every 2 minutes. Connections are cleaned up 5-8 minutes after expiry \(5-minute expiry + up to 2-minute delay for cleanup job cycle\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+On-Demand Creation
+
+</td>
+<td valign="top">
+
+Connections are automatically recreated when needed after eviction.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Flow Undeployment
+
+</td>
+<td valign="top">
+
+-   When connection reuse is disabled \(Default\): Connection is removed immediately on integration flow undeployment \(unchanged behavior\).
+
+-   When connection reuse is enabled \(New in v1.4.1\): Shared connections remain active after individual integration flow undeployments since other integration flows may be using the same connection. Connection is only removed after 5-8 minutes of inactivity across all sharing integration flows.
+
+
+
+
+</td>
+</tr>
+</table>
+
+**Configuration – Single Broker, Multiple Receivers**
+
+Scenario: Three receiver adapters publishing to different queues using the same Advanced Event Mesh broker.
+
+-   **With Connection Reuse Enabled**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Value
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Host
+
+</td>
+<td valign="top">
+
+`tcps://mr-connection-abc123.messaging.solace.cloud:55443` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Message VPN
+
+</td>
+<td valign="top">
+
+my-vpn
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Authentication Type
+
+</td>
+<td valign="top">
+
+Basic
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Username
+
+</td>
+<td valign="top">
+
+solace-cloud-client
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JCSMP Properties
+
+</td>
+<td valign="top">
+
+ADAPTER.CUSTOM\_PROP.RECEIVER\_CONNECTION\_REUSE=true
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Result
+
+</td>
+<td valign="top">
+
+All three receivers share a single pooled connection.
+
+</td>
+</tr>
+</table>
+
+-   **With Connection Reuse Disabled \(Default\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Value
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Host
+
+</td>
+<td valign="top">
+
+`tcps://mr-connection-abc123.messaging.solace.cloud:55443` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Message VPN
+
+</td>
+<td valign="top">
+
+my-vpn
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Authentication Type
+
+</td>
+<td valign="top">
+
+Basic
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Username
+
+</td>
+<td valign="top">
+
+solace-cloud-client
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JCSMP Properties
+
+</td>
+<td valign="top">
+
+ADAPTER.CUSTOM\_PROP.RECEIVER\_CONNECTION\_REUSE=false or property not set.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Result
+
+</td>
+<td valign="top">
+
+Each receiver gets its own dedicated connection.
+
+</td>
+</tr>
+</table>
+
+
+**Advanced: Multiple Connection Pools for High Throughput**
+
+For high-throughput scenarios using Persistent \(Guaranteed\) messaging, you can create multiple connection pools by using different CLIENT\_NAME values while keeping connection reuse enabled. This balances resource optimization with performance scaling.
+
+Scenario: 60 receivers, Persistent \(Guaranteed\) delivery, \>10,000 msg/sec total throughput.
+
+**Configuration Strategy**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Pool
+
+</th>
+<th valign="top">
+
+Parameters
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Pool 1 \(Receivers 1-20\)
+
+</td>
+<td valign="top">
+
+-   Host: `tcps://mr-connection-abc123.messaging.solace.cloud:55443`
+
+-   Message VPN: my-vpn
+
+-   Authentication Type: Basic
+
+-   Username: solace-cloud-client
+
+-   Delivery Mode: Persistent \(Guaranteed\)
+-   JCSMP Properties:
+    -   CLIENT\_NAME: high-throughput-pool-1
+    -   PUB\_ACK\_WINDOW\_SIZE: 50
+    -   ADAPTER.CUSTOM\_PROP.RECEIVER\_CONNECTION\_REUSE: true
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Pool 2 \(Receivers 21-40\)
+
+</td>
+<td valign="top">
+
+-   Host: `tcps://mr-connection-abc123.messaging.solace.cloud:55443`
+
+-   Message VPN: my-vpn
+
+-   Authentication Type: Basic
+
+-   Username: solace-cloud-client
+
+-   Delivery Mode: Persistent \(Guaranteed\)
+-   JCSMP Properties:
+    -   CLIENT\_NAME: high-throughput-pool-2
+    -   PUB\_ACK\_WINDOW\_SIZE: 50
+    -   ADAPTER.CUSTOM\_PROP.RECEIVER\_CONNECTION\_REUSE: true
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Pool 3 \(Receivers 41-60\)
+
+</td>
+<td valign="top">
+
+-   Host: `tcps://mr-connection-abc123.messaging.solace.cloud:55443`
+
+-   Message VPN: my-vpn
+
+-   Authentication Type: Basic
+
+-   Username: solace-cloud-client
+
+-   Delivery Mode: Persistent \(Guaranteed\)
+-   JCSMP Properties:
+    -   CLIENT\_NAME: high-throughput-pool-3
+    -   PUB\_ACK\_WINDOW\_SIZE: 50
+    -   ADAPTER.CUSTOM\_PROP.RECEIVER\_CONNECTION\_REUSE: true
+
+
+
+
+</td>
+</tr>
+</table>
+
+**Result**
+
+-   3 pooled connections \(different CLIENT\_NAME creates separate pools\)
+
+-   20 receivers share each connection \(same CLIENT\_NAME within each pool\)
+
+-   Broker sees 3 client connections vs 60 without pooling \(95% reduction\)
+
+
+**Key Insights**
+
+-   Same CLIENT\_NAME = shared connection within that pool.
+
+    Different CLIENT\_NAME = separate connection pools.
+
+-   PUB\_ACK\_WINDOW\_SIZE: Controls the maximum number of messages that can be published without waiting for acknowledgment from the broker \(range: 1-255, default: 1\). Higher values \(50-255\) significantly improve throughput for Persistent messaging by allowing the publisher to send multiple messages in flight before blocking for acknowledgments. This reduces round-trip latency overhead and maximizes network utilization. Note: Only applicable to Persistent \(Guaranteed\) messages; Direct messages do not use publisher acknowledgments.
+
+
+
+
+### Best Practices
+
+-   **Enable for similar configurations**: Use connection pooling when multiple receivers have identical connection parameters.
+
+-   **Consider authentication impact**: Pooled connections share the same authentication context.
+
+-   **Ensure identical parameters**: All connection parameters \(host, VPN, authentication, proxy settings\) must match for successful connection reuse.
+
+
+> ### Caution:  
+> When passwords or credentials change in SAP Integration Suite Secure Parameters, affected integration flows must be redeployed to pick up the new credentials. Running integration flows will continue using their existing connection with the old credentials until redeployment.
+
+Avoid connection pooling in the following cases:
+
+-   When each receiver requires unique monitoring or client identification
+
+-   When compliance/auditing requires connection-level isolation
+
+-   Single receiver deployments \(no benefit\)
+
+
+If Connection pool is not working:
+
+-   Verify that ADAPTER.CUSTOM\_PROP.RECEIVER\_CONNECTION\_REUSE is set to true on all receivers
+-   Ensure identical connection parameters \(host, VPN, authentication, proxy settings\)
+-   Check that all connection-related JCSMP properties match across receivers
 

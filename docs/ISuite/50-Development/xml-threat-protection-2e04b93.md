@@ -4,6 +4,9 @@
 
 An XML Threat Protection policy safeguards XML-based applications and APIs from malicious attacks. It enforces rules on XML data to prevent threats such as recursive payloads, excessive node depth, and oversized payloads.
 
+> ### Note:  
+> This feature and the information is relevant only if you have activated Edge Integration Cell in your SAP Integration Suite tenant. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
 **Policy Settings**
 
 
@@ -295,7 +298,7 @@ Defines a limit on the maximum number of characters allowed in the value length 
 **Related Information**  
 
 
-[Authentication](authentication-fa6eec4.md "Different API may have various authentication mechanisms. The authentication mechanisms that are currently supported are Basic authentication, Client Certificate, and oAuth.")
+[Authentication](authentication-fa6eec4.md "Different APIs may have various authentication mechanisms. The Authentication policy supports both external OAuth-based identity providers (OIDC) and the SAP internal identity provider (IDP).")
 
 [Authorization](authorization-6658409.md "This policy evaluates whether a user should be permitted to access a protected API.")
 

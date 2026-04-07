@@ -9,7 +9,6 @@ You want to work with Data Space Integration and have decided to use a wallet lo
 ## Prerequisites
 
 -   You've onboarded to SAP Integration Suite with a service plan that includes Data Space Integration and, by default, Decentralized Identity Verification.
--   Entitlements DSI
 -   Your global account admin has added entitlements for Decentralized Identity Verification to your subaccount using the plan `integration-suite-bundle`. See [Configure Entitlements and Quotas for Subaccounts](https://help.sap.com/docs/btp/sap-business-technology-platform/configure-entitlements-and-quotas-for-subaccounts?version=Cloud#configure-entitlements-and-quotas-from-your-subaccount).
 -   The role `Integration_Provisioner` is assigned to your user in SAP BTP cockpit. See [Configuring User Access to SAP Integration Suite](configuring-user-access-to-sap-integration-suite-2c6214a.md).
 -   You've activated the Cloud Integration capability of SAP Integration Suite.
@@ -23,10 +22,10 @@ If you want to work with Data Space Integration, you have to authenticate yourse
 
 The verification happens using a wallet, which can have the following different sources:
 
--   **Bring Your Own Wallet \(BYOW\)**: You want to use a wallet hosted by a **third party**, or the SAP BTP service **Decentralized Identity Verification**, which you can use to manage your digital identities.
+-   **Bring Your Own Wallet \(BYOW\)**: You want to use a wallet hosted by a **third party**, or the SAP BTP service **Decentralized Identity Verification**, which you can use to manage your digital identities. The latter method is described in this topic.
 -   **Landscape**: Your wallet is hosted by the **company that operates your data space**, for example, Cofinity-X.
 
-The following procedure describes how to set up and use your wallet located in Decentralized Identity Verification for onboarding to Data Space Integration. For the other use cases, follow the procedures described under [Initial Setup](initial-setup-b2bdea7.md).
+The following procedure describes how to set up and use your own wallet \(**BYOW**\) located in **Decentralized Identity Verification** for onboarding to Data Space Integration. For the other use cases, follow the procedures described under [Initial Setup](initial-setup-b2bdea7.md).
 
 > ### Note:  
 > Parts of this procedure can take 24–48 hours to complete.
@@ -66,9 +65,9 @@ The following procedure describes how to set up and use your wallet located in D
 
 4.  Go back to **SAP Integration Suite** and do the following:
 
-    1.  Start the onboarding to Data Space Integration by going to *Settings* \> *Data Spaces*. Fill in all information except for the offer management user and the section *Identity Wallet Management*. For instructions, see [Configuring Connector Setup Using the UI](configuring-connector-setup-using-the-ui-4909d3f.md).
+    1.  Skip to the section *Identity Wallet Management*. You'll fill out all other information on that page in a later step.
 
-    2.  In the section *Identity Wallet Management*, select *Decentralized Identity Verification* from the drop-down list of wallet sources. The *Admin URL*, which is specific to your tenant, appears.
+    2.  From the drop-down list of wallet sources, select *Decentralized Identity Verification*. The *Admin URL*, which is specific to your tenant, appears.
 
     3.  To go to the Decentralized Identity Verification application, open the *Admin URL*.
 
@@ -87,7 +86,9 @@ The following procedure describes how to set up and use your wallet located in D
 
         Cofinity-X uses this DID to push your verifiable credentials into your wallet in Decentralized Identity Verification. **This process can take 24–48 hours**. To find out whether your wallet is ready to be used, check either the Cofinity-X portal or your wallet to confirm that you see your verifiable credentials. Only then is your wallet ready.
 
-    3.  Finish by creating an offer management user. See [Creating Technical Users in Landscape Portal](creating-technical-users-in-landscape-portal-b95f0ef.md). Have the details of that user ready for the next steps.
+    3.  Next, you need to request an additional credential that enables cross-company connector communication. Go to your profile and choose *Company Wallet*. On the upcoming page, choose *Request New Credential*, select the credential *DataExchangeGovernance*, and finish by choosing *Proceed*. After a short wait, the credential appears in your list of credentials.
+
+    4.  Finish by creating an connector management user. See [Creating Technical Users in Landscape Portal](creating-technical-users-in-landscape-portal-b95f0ef.md). Have the details of that user ready for the next steps.
 
 
 7.  In your subaccount in the **SAP BTP cockpit**, do the following:
@@ -108,7 +109,7 @@ The following procedure describes how to set up and use your wallet located in D
         {
           "applicationAccess": ["connector1"],
           "xs-security": {
-            "authorities": ["$XSMASTERAPPNAME.ReadApplication", "$XSMASTERAPPNAME.ReadVerifiableCredential", "$XSMASTERAPPNAME.ReadCompanyIdentity", "$XSMASTERAPPNAME.ResolveDID", "$XSMASTERAPPNAME.VerifiablePresentation"]
+            "authorities": ["$XSMASTERAPPNAME.ReadApplication", "$XSMASTERAPPNAME.ReadVerifiableCredential", "$XSMASTERAPPNAME.ReadCompanyIdentity", "$XSMASTERAPPNAME.ResolveDID", "$XSMASTERAPPNAME.VerifiablePresentation", "$XSMASTERAPPNAME.DcpOperations", "$XSMASTERAPPNAME.DcpHolderOperations", "$XSMASTERAPPNAME.DcpIssuerOperations", "$XSMASTERAPPNAME.ModifyVerifiableCredential"]
           }
         }
         ```
@@ -118,20 +119,16 @@ The following procedure describes how to set up and use your wallet located in D
     5.  Wait for the creation to finish, then create a key as described in [Creating Service Key](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/creating-service-instance-and-service-key-for-inbound-authentication#creating-service-key). Copy its JSON to use in the next step.
 
 
-8.  Finally, go back to **SAP Integration Suite** and return to *Settings* \> *Data Spaces*, where you paused in the *Identity Wallet Management* section.
-
-    You don't need to enter your DID. It's retrieved automatically once Data Space Integration has verified your wallet.
+8.  Finally, go back to **SAP Integration Suite** and return to *Settings* \> *Data Spaces*, where you skipped to the *Identity Wallet Management* section in step 4.
 
     > ### Caution:  
-    > Before you can complete the onboarding, **your wallet must be ready to use**. That means your verifiable credentials have been procured, which takes Cofinity-X 24-48 hours to do. Please check your wallet or the Cofinity-X portal and make sure that your wallet is ready before continuing, or your onboarding fails.
+    > Before you can complete the onboarding, **your wallet must be ready to use**. That means your verifiable credentials have been procured, which takes Cofinity-X 24–48 hours to do. Please check your wallet or the Cofinity-X portal and make sure that your wallet is ready before continuing, or your onboarding fails.
 
-    1.  Under *Offer Management User*, paste the details from the offer management user you created in Cofinity-X.
+    1.  Continue the onboarding to Data Space Integration by filling in all information that you skipped earlier. For instructions, see step 1 of [Configuring Connector Setup Using the UI](configuring-connector-setup-using-the-ui-4909d3f.md).
 
-    2.  Choose *Paste Service Key* and paste the service key of the instance you created in the previous step.
+    2.  Save the changes that you made in the tab *Connect to a Data Space*.
 
-    3.  Save the changes that you made in the tab *Connect to a Data Space*.
-
-        If saving fails, Cofinity-X probably hasn’t finished pushing your verifiable credentials to your wallet yet, so Data Space Integration couldn’t check them with your business partner number. Your changes were saved though, except for any passwords or credentials. Check your wallet or the Cofinity-X portal and wait for your verifiable credentials to be available, then try again here. You'll have to enter the credentials from both the service key and the offer management user again, and save again.
+        If saving fails, Cofinity-X probably hasn’t finished pushing your verifiable credentials to your wallet yet, so Data Space Integration couldn’t check them with your business partner number. Your changes were saved though, except for any passwords or credentials. Check your wallet or the Cofinity-X portal and wait for your verifiable credentials to be available, then try again here. You'll have to enter the credentials from both the service key and the connector management user again, and save again.
 
 
 9.  Continue the onboarding as described in step 2 of [Configuring Connector Setup Using the UI](configuring-connector-setup-using-the-ui-4909d3f.md).

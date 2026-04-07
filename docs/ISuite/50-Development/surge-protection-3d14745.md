@@ -4,6 +4,9 @@
 
 The surge protection policy is designed to protect against traffic surges by controlling the rate at which requests are processed by an API during runtime. This policy acts as a safeguard, reducing the likelihood of downtime and performance issues.
 
+> ### Note:  
+> This feature and the information is relevant only if you have activated Edge Integration Cell in your SAP Integration Suite tenant. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
 Let us consider a use case where an API admin or a developer wants to allow only 2000 calls per minute from the clients. To do this, the admin/developer needs to configure the surge protection policy on the request flow to restrict the sudden surge in traffic irrespective of the clients. Unlike the quota policy, the surge protection policy is not client specific.
 
 **Policy Settings**

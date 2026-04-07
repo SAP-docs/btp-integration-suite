@@ -130,7 +130,7 @@ Developer Hub
 </td>
 <td valign="top">
 
-Discover, explore, and utilize APIs offered by an organization. For more information, [Developer Hub](developer-hub-41f7c45.md).
+Discover, explore, and utilize APIs offered by an organization. For more information, [Developer Hub: The Central Catalog for All Your APIs and Events](50-Development/developer-hub-the-central-catalog-for-all-your-apis-and-events-41f7c45.md).
 
 </td>
 </tr>

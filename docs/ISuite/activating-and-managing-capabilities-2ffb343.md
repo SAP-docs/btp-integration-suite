@@ -266,5 +266,5 @@ You can watch a short video about activating capabilities, and getting access to
 **Related Information**  
 
 
-[Centralized Developer Hub](centralized-developer-hub-38422de.md "Developer Hub is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
+[Centralized Developer Hub](50-Development/centralized-developer-hub-38422de.md "Developer Hub is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
 

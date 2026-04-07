@@ -23,3 +23,5 @@ The adapter uses the Solace Message Format \(SMF\) message protocol.
 
 [Configure the Advanced Event Mesh Receiver Adapter](configure-the-advanced-event-mesh-receiver-adapter-881f656.md "The AdvancedEventMesh receiver adapter allows SAP Integration Suite to send messages to queues or topics in SAP Integration Suite, advanced event mesh.")
 
+[3723969 - AEM Adapter in SAP Integration Suite](https://me.sap.com/notes/3723969)
+

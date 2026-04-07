@@ -218,3 +218,6 @@ If the type of the variable specified by the ref attribute in the `<Statistic>` 
 </tr>
 </table>
 
+> ### Note:  
+> The maximum supported length for custom metric and dimension values is **1,000** characters. Values that exceed this limit are automatically truncated to 1,000 characters.
+

@@ -126,5 +126,5 @@ You can provision the API Management capability from theSAP Integration Suite la
 
 [API Lifecycle](api-lifecycle-5e8ea7d.md "The API lifecycle in API Management encompasses a series of well-defined stages that enable organizations to securely expose, manage, consume, and analyze APIs. SAP provides a comprehensive platform for managing APIs throughout their lifecycle—from design and deployment to monetization and analysis.")
 
-[Developer Hub](developer-hub-41f7c45.md "Developer Hub is a web-based platform designed for developers to discover, explore, and utilize APIs offered by an organization.")
+[Developer Hub: The Central Catalog for All Your APIs and Events](50-Development/developer-hub-the-central-catalog-for-all-your-apis-and-events-41f7c45.md "The Developer Hub is a web-based platform that serves as a centralized catalog of APIs and events, empowering developers to discover, explore, and consume the integration capabilities offered by your organization. Acting as a unified, curated “storefront,” the catalog consolidates all APIs and events in one place, enabling application developers to easily navigate available assets, test them interactively, and confidently integrate them into their applications.")
 

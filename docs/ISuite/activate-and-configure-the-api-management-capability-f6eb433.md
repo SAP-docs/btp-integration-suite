@@ -98,7 +98,7 @@ Access Developer Hub
 From the Integration suite home page, choose the <span class="SAP-icons-V5"></span> product switcher icon and select *Developer Hub*.
 
 > ### Note:  
-> Please be aware that the *Authgroup.API.Admin* role is required for onboarding into Developer Hub. This role will be automatically assigned to your scope once you have been assigned the *AuthGroup.SelfService.Admin* role. After the onboarding process is completed, it is necessary for an admin to assign the *AuthGroup.Content.Admin* role to a user in order to access and discover the APIs from different business systems in Developer Hub. For more information, see [User Roles and Responsibilities in Developer Hub](user-roles-and-responsibilities-in-developer-hub-54b4607.md).
+> Please be aware that the *Authgroup.API.Admin* role is required for onboarding into Developer Hub. This role will be automatically assigned to your scope once you have been assigned the *AuthGroup.SelfService.Admin* role. After the onboarding process is completed, it is necessary for an admin to assign the *AuthGroup.Content.Admin* role to a user in order to access and discover the APIs from different business systems in Developer Hub. For more information, see [User Roles and Responsibilities in Developer Hub](50-Development/user-roles-and-responsibilities-in-developer-hub-54b4607.md).
 
 
 

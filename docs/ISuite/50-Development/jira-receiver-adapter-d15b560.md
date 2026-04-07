@@ -106,7 +106,7 @@ Enable to reuse the connection. This option enables the reuse of connection obje
 
 Specify the maximum waiting time \(in milliseconds\) for the connection to be established.
 
-Example: 6000
+Example: `6000`
 
 </td>
 </tr>
@@ -120,7 +120,7 @@ Example: 6000
 
 Specify the maximum waiting time \(in milliseconds\) for a response message.
 
-Example: 6000
+Example: `6000`
 
 </td>
 </tr>
@@ -147,7 +147,26 @@ Description
 <tr>
 <td valign="top">
 
+*Configuration Type*
+
+</td>
+<td valign="top">
+
+Select the required configuration type:
+
+-   *Basic* for convenient processing capability using dropdowns and parameter text fields..
+-   *Advanced* enables proficient users to perform calls with greater control while connecting to any API endpoint.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *API Version*
+
+\(Only available when the *Configuration Type* is *Basic*\)
 
 </td>
 <td valign="top">
@@ -161,6 +180,8 @@ Select the API version of the Jira Adapter.
 
 *Entity*
 
+\(Only available when *Configuration Type* is *Basic*\)
+
 </td>
 <td valign="top">
 
@@ -173,10 +194,50 @@ Select the type of entity in Jira.
 
 *Operation*
 
+\(Only available when *Configuration Type* is *Basic*\)
+
 </td>
 <td valign="top">
 
 Select the operation to be performed.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*HTTP Method*
+
+\(Only available when *Configuration Type* is *Advanced*\)
+
+</td>
+<td valign="top">
+
+Select the required method from the available dropdown:
+
+-   *DELETE*
+-   *GET*
+-   *PATCH*
+-   *POST*
+-   *PUT*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Relative URL*
+
+\(Only available when *Configuration Type* is *Advanced*\)
+
+</td>
+<td valign="top">
+
+Specify the relative endpoint, excluding the Host.
+
+Example: `rest/api/2/issue/${header.var1}`
 
 </td>
 </tr>

@@ -384,7 +384,7 @@ Sets the maximum number of replicas for this Deployment using HorizontalPodAutos
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="18">
+<td valign="top" rowspan="26">
 
 *Worker* 
 
@@ -608,6 +608,102 @@ The default value is "ignore". This means that there's no handling of invalid XM
 <td valign="top">
 
 Determines whether an XML preamble is added to the RFC-XML. The default value is "true".
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`OFTP_ADAPTER_COMPRESSION_INDICATOR`
+
+</td>
+<td valign="top">
+
+The compression indicator for OFTP data buffers. The default value is "true".
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`OFTP_ADAPTER_SENDER_CARRIAGE_RETURN`
+
+</td>
+<td valign="top">
+
+The hexadecimal value that represents a carriage return for sender channels. The default value is 0D, but you can also set it to 8D. The value isn't case-sensitive.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`OFTP_ADAPTER_SENDER_MAX_CREDIT_COUNT`
+
+</td>
+<td valign="top">
+
+The credit count for all sender channels. It defines how many data buffers can be sent before waiting for acknowledgment. The default value is 15, but you can set any value from 1 to 199.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`OFTP_ADAPTER_SENDER_MAX_EXCHANGE_BUFFER_SIZE` 
+
+</td>
+<td valign="top">
+
+The maximum exchange buffer size for all sender channels. The default value is 1024, but you can set any value from 128 to 99999.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`OFTP_ADAPTER_SENDER_MAX_THREAD_POOL_SIZE` 
+
+</td>
+<td valign="top">
+
+The maximum thread pool size for sender operations. The default value is 50, but you can set any value from 1 to 200.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`OFTP_ADAPTER_TCP_BACKLOG`
+
+</td>
+<td valign="top">
+
+The maximum queue length for incoming connection requests. If the queue is full when a new request arrives, the system refuses the connection. The default value is 125, but you can set any value from 1 to 65535.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`OFTP_ADAPTER_TCPIP_TIMEOUT_S`
+
+</td>
+<td valign="top">
+
+The timeout period in seconds before a TCP command is received. The default value is 300, but you can set any value from 5 to 3600.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`OFTP_ADAPTER_TRY_LOCK_MS`
+
+</td>
+<td valign="top">
+
+The timeframe to obtain a lock for a particular timestamp. This is used for cluster-wide unique timestamp generation. The default value is 15000, but you can set any value greater than or equal to 1000.
 
 </td>
 </tr>

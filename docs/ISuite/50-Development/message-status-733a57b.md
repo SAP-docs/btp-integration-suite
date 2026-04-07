@@ -56,6 +56,11 @@ RETRY
 
 Status retry is set if an error occurred during message processing, and a retry was automatically started.
 
+> ### Note:  
+> If an external broker delivers the message and then the message is removed, the MPL remains in this status since the system doesn't attempt to deliver it again.
+
+
+
 </td>
 </tr>
 <tr>

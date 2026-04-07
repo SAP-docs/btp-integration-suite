@@ -4,6 +4,9 @@
 
 The API validation policy enables you to validate incoming request messages against an OpenAPI 3.0 Specification.
 
+> ### Note:  
+> This feature and the information is relevant only if you have activated Edge Integration Cell in your SAP Integration Suite tenant. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
 This policy supports validation of the request body \(limited to application/json\), headers, and query parameters for incoming request messages. The validation process is based on an OpenAPI 3.0 Specification, provided in either JSON or YAML format. This validation functionality is applicable to both OData and REST API artifacts.
 
 In the OpenAPI Specification, you can define the expected headers and query parameters for each API endpoint. The specification allows you to mark certain headers and query parameters as required \(mandatory\) or optional.
@@ -108,7 +111,7 @@ Determines whether the headers need to be validated against the provided API spe
 **Related Information**  
 
 
-[Authentication](authentication-fa6eec4.md "Different API may have various authentication mechanisms. The authentication mechanisms that are currently supported are Basic authentication, Client Certificate, and oAuth.")
+[Authentication](authentication-fa6eec4.md "Different APIs may have various authentication mechanisms. The Authentication policy supports both external OAuth-based identity providers (OIDC) and the SAP internal identity provider (IDP).")
 
 [Authorization](authorization-6658409.md "This policy evaluates whether a user should be permitted to access a protected API.")
 

@@ -6,6 +6,65 @@ This topic provides information on patch releases for API Management that are pr
 
 
 
+## February 2026
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+2.13.2
+
+</td>
+<td valign="top">
+
+Added a message strip to display the Client EKU information on the *Certificate* tab and in the *Create Certificate* dialog.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+2.13.2
+
+</td>
+<td valign="top">
+
+This patch fixes the issue that caused the application deployment to fail in the Concourse pipeline. The Node.js version has been upgraded from 18.x to 22.x.
+
+</td>
+</tr>
+</table>
+
+
+
 ## January 2026
 
 
@@ -35,7 +94,7 @@ API Management
 </td>
 <td valign="top">
 
-2.5.4
+2.13.0
 
 </td>
 <td valign="top">

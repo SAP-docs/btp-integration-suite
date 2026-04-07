@@ -55,5 +55,8 @@ In the request body, provide the new properties of the Number Ranges object \(ex
 > "FieldLength":"4"}
 > ```
 
+> ### Note:  
+> The **Current Value** returned by the API corresponds to the **Next Value** shown in the Monitoring tab of the UI. The difference is only in terminology.
+
 You find the updated *Number Ranges* object using the *Monitor* application \(*Number Ranges* tile under *Manage Stores*\).
 

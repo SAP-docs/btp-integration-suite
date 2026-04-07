@@ -89,12 +89,18 @@ Message Mapping
 
 -   Parameterized message mappings from ES Repository can be imported with certain limitations. Only message mapping objects with *Simple Type* parameter category of the type *Import* are supported during migration. For more information, see [Designing and Configuring Parameterized Mapping Programs](https://help.sap.com/docs/SAP_NETWEAVER_750/bbd7c67c5eb14835843976b790024ec6/c47b8d9349e143a2b62e9b747eae4bce.html?version=latest).
 
--   Multi-message: scenarios involving multiple source or target messages \(1:N, N:1, or M:N\) are not supported by the migration tool. These cases require additional enhancements in the Integration Flow to replicate the behaviour in Cloud Integration.
+-   Multi-message: scenarios involving multiple source or target messages \(1:N, N:1, or M:N\) are not supported by the migration tool.
+
+    1:N mappings can be imported. However, message splitting is not supported by the migration tool.
+
+    N:1 and N:M scenarios, typically implemented using business process management in SAP Process Integration/SAP Process Orchestration, are not supported.
+
+    These cases require additional enhancements in the Integration Flow to replicate the behaviour in Cloud Integration.
 
     > ### Example:  
     > -   To model a scenario with 1:N mapping with one target message type, see [Pipeline v2 Template Step07 - Outbound Processing One-to-Many with One Message Type](https://hub.sap.com/integrationflow/com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mo)
     > 
-    > -   To model a scenario with 1:N mapping with one target message type, see [Pipeline v2 Template Step07 - Outbound Processing One-to-Many with Multiple Message Types](https://hub.sap.com/integrationflow/com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mm)
+    > -   To model a scenario with 1:N mapping with multiple target message types, see [Pipeline v2 Template Step07 - Outbound Processing One-to-Many with Multiple Message Types](https://hub.sap.com/integrationflow/com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mm)
 
 -   JDBC lookup: Migration of message mappings using the standard JDBC lookup function is not supported. In Cloud Integration, JDBC lookups must be implemented using either XSLT mapping or Process Direct. For more information, see [JDBC Lookup Tutorial](https://developers.sap.com/tutorials/ci-jdbc-lookup.html)
 -   RFC lookup: Message mappings using the standard RFC lookup function are not supported by the migration tool. In Cloud Integration, this functionality must be recreated using Groovy scripts or user-defined functions. For more information, see [RFC Lookup Tutorial](https://developers.sap.com/tutorials/ci-rfclookup.html).

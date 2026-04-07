@@ -29,7 +29,7 @@ You can monitor the health of centralized Developer Hub certificates by integrat
 > To enable access, go to the SAP BTP Cockpit, create a service instance with the *devportal-apiaccess* plan, and assign the *AuthGroup.API.Admin* role. Once the instance is created, generate a service key, which includes the base URL—append */api/1.0/Health* to this URL to access the API. For secure access from SAP Cloud ALM, use *OAuth* authentication.
 
 > ### Note:  
-> You can monitor the health of centralized Developer Hub certificates either directly from the Centralized Developer Hub or from each individual API Portal connected to it. For more information, see [Centralized Developer Hub](centralized-developer-hub-38422de.md).
+> You can monitor the health of centralized Developer Hub certificates either directly from the Centralized Developer Hub or from each individual API Portal connected to it. For more information, see [Centralized Developer Hub](50-Development/centralized-developer-hub-38422de.md).
 
 **Related Information**  
 

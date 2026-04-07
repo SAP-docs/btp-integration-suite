@@ -16,6 +16,14 @@ The IDoc sender adapter enables SAP Integration Suite to receive Intermediate Do
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
+The IDoc sender adapter in Cloud Integration supports both Exactly Once and Exactly Once In Order. Which Quality of Service is used depends on how the IDoc communication is configured in the sending system.
+
+-   For Exactly Once In Order, the IDoc sender adapter sets the headers `SapPlainSoapQoS` and `SapPlainSoapQueueId` based on the IDoc control header `ARCKEY`, which can be used within the integration flow to model the message orchestration. Note that these headers are not set for the Exactly Once quality of service.
+-   The IDoc sender adapter saves the protocol-specific ID in the header `SapMessageId`.
+
+> ### Note:  
+> For Exactly Once In Order delivery, ensure that IDocs are sent in the sequence in which they were created and that the sequence is preserved when a message goes into an error. As a prerequisite, apply the SAP note [3519275](https://me.sap.com/notes/3519275) in the sending system.
+
 
 
 <a name="loiobf769d68d95b458d87290dd2d37024b3__section_ef4_zd1_sgb"/>
@@ -26,12 +34,14 @@ Header `SapAuthenticatedUserName` contains the user name of the client that call
 
 The following specific headers are set by the IDoc sender adapter and can be used in the subsequent steps of the integration flow.
 
--   SapIDocType
+-   `SapIDocType`
 
--   SapIDocTransferId
+-   `SapIDocTransferId` 
 
--   SapIDocDbId
+-   `SapIDocDbId` 
 
+-   `SapIDocContentType`
+-   `SapIdocSoapNamespace`
 
 More information: [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md)
 
@@ -153,12 +163,55 @@ If this configuration option is not available \(because your are using an older 
 
 Select the *Conditions* tab and provide values in the fields as follows.
 
+**Conditions**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Maximum Message Size
+
+</td>
+<td valign="top">
+
+This parameter allows you to configure a maximum size for inbound messages \(smallest value for a size limit is 1 MB\). All inbound messages that exceed the specified size \(per integration flow and on the runtime node where the integration flow is deployed\) are blocked.
+
+To configure the maximum message size, you can specify the following parameters:
+
+-   Body Size
+
+-   Attachment Size
+
+
+If a message is rejected because it exceeds the configured limit, the sender receives an error message.
+
+</td>
+</tr>
+</table>
+
 **Related Information**  
 
+
+[Blog: Ensuring Exactly Once In Order Quality of Service in Cloud Integration](https://community.sap.com/t5/integration-blog-posts/ensuring-exactly-once-in-order-quality-of-service-in-cloud-integration/ba-p/14180026)
 
 [Defining Permissions for Senders to Process Messages on a Runtime Node](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/24585cc503334e6c917ef383efb5558a.html "") :arrow_upper_right:
 
 [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md "")
 
 [Setting Up Inbound HTTP Connections (Integration Flow Processing), Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/778c7e7835ff46408aafe0d499720dc7.html "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.") :arrow_upper_right:
+
+[IDoc Sender Scenario](idoc-sender-scenario-7266628.md "")
 

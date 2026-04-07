@@ -330,7 +330,7 @@ Sample payload to create a custom attribute \(application\)
     -   Request Header: Authorization:Bearer <Token for API access\>
     -   Response: bearer-token value
 
-    To know how to retrieve this token, see [Accessing Developer Hub APIs Programmatically](../accessing-developer-hub-apis-programmatically-dabee6e.md).
+    To know how to retrieve this token, see [Accessing Developer Hub APIs Programmatically](accessing-developer-hub-apis-programmatically-dabee6e.md).
 
 
 > ### Sample Code:  
@@ -389,7 +389,7 @@ Sample payload to create a custom attribute via navigation \(application\)
     -   Request Header: Authorization:Bearer <Token for API access\>
     -   Response: bearer-token value
 
-    To know how to retrieve this token, see [Accessing Developer Hub APIs Programmatically](../accessing-developer-hub-apis-programmatically-dabee6e.md).
+    To know how to retrieve this token, see [Accessing Developer Hub APIs Programmatically](accessing-developer-hub-apis-programmatically-dabee6e.md).
 
 
 > ### Sample Code:  

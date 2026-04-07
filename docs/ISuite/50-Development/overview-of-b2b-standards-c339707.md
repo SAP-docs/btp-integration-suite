@@ -12056,7 +12056,7 @@ Version
 </tr>
 </table>
 
-**Message Types \(102\)**
+**Message Types \(105\)**
 
 
 <table>
@@ -12333,6 +12333,42 @@ DataSyncDataResponse
 <td valign="top">
 
 1.2.043
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EnvelopeForMessages
+
+</td>
+<td valign="top">
+
+1.2.044
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EnvelopeForRequests
+
+</td>
+<td valign="top">
+
+1.2.044
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EnvelopeForResponses
+
+</td>
+<td valign="top">
+
+1.2.044
 
 </td>
 </tr>

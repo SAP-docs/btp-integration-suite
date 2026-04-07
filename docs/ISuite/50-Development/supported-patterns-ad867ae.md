@@ -63,5 +63,7 @@ SAP recommends using this pattern for conditions based scenarios where you know 
 
 Content-Based Routing pattern is used to migrate condition-based integration scenarios where messages are routed to a single receiver. Based on the scenario, the migration tooling applies the Content-Based Routing pattern and dynamically adds the flow steps.
 
+For Standard approach, both synchronous and asynchronous content-based routing is supported, but for the pipeline approach, only asynchronous content-based routing is supported.
+
 SAP recommends using this pattern for conditions based scenarios where you know that only one of the conditions can be true at runtime. That is, only one receiver receives the message or payload.
 

@@ -19,6 +19,8 @@ You've configured a source system as described in [Add an SAP Process Orchestrat
 > The total physical disk storage is limited. As each extraction consumes physical disk storage, future extractions can fail with an error message once the limit is reached.
 > 
 > Before extracting new data, make sure that enough storage space is available. If you've reached the limit, free up space by deleting old extractions.
+> 
+> See [Error - Unable to Create Request](troubleshooting-for-migration-assessment-63430e2.md#loio63430e2bee434c17858331f109777a3a__section_rcw_vfm_k3c) for detailed troubleshooting instructions.
 
 
 

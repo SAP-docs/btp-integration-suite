@@ -427,6 +427,11 @@ The keys in the JSON are the names as provided by SAP, the values are the names 
 
 The name of the type you create is the value of `mpl:message` in the JSON. In the sample code, the type name is `sapcpi_mpl_message`.
 
+> ### Note:  
+> The archived values of `mpl:sender` and `mpl:receiver` have a maximum length of 40 character. If the sender or receiver value of a message processing log exceeds 40 characters, the system truncates the value to 40 characters in the archive.
+
+
+
 </td>
 </tr>
 <tr>

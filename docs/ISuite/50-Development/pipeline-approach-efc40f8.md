@@ -140,7 +140,9 @@ You can watch a short video to understand the pipeline approach in a nutshell:
 
     -   *ID* based on the scenario name.
     -   The Runtime is preset as Cloud Integration.
-    -   **Sender Details**: Enter the combination of *Sender Component* and *Sender Interface* to be used to create the Alternative Partner in the Partner Directory. The former maps to *Agency* and latter to the *ID* of the Alternative Partner of the partner directory. For more information, see [Managing Partner Directory Entries](managing-partner-directory-entries-3d6eee7.md).
+    -   *Sender Details*: For a *Sender Interface* if the object that is being migrated includes multiple *Sender Components*, each component will be listed here and a *Sender Integration Flow Name* corresponding to each component is created. You can edit the sender integration flow name in this view.
+
+        Enter the combination of *Sender Component* and *Sender Interface* to be used to create the Alternative Partner in the Partner Directory. The former maps to *Agency* and latter to the *ID* of the Alternative Partner of the partner directory. For more information, see [Managing Partner Directory Entries](managing-partner-directory-entries-3d6eee7.md).
 
         > ### Remember:  
         > -   Scenario name is used to create a partner in the partner directory. If a partner with an identical name already exists, you will need to either rename the scenario or consider deleting the existing partner from the Partner Directory. See [Managing Partner Directory Entries](managing-partner-directory-entries-3d6eee7.md).

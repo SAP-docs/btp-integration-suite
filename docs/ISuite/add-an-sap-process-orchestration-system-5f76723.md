@@ -53,6 +53,8 @@ Establish a connection between your SAP Process Orchestration system and Migrati
         -   `/ReceiverRuleInService`
         -   `/ReceiverDeterminationInService`
         -   `/InterfaceDeterminationInService`
+        -   `/BusinessComponentInService`
+        -   `/IntegrationProcessInService`
 
     -   ESR Content
 

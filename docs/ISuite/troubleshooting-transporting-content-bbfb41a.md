@@ -155,9 +155,9 @@ Solution
 </th>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" rowspan="4">
 
-com.sap.it.spc.ondemand.storage.exception.UniquenessViolationException
+UniquenessViolationException
 
 </td>
 <td valign="top">
@@ -167,7 +167,7 @@ Uniqueness Violation Exception error occurred while importing MTAR content to SA
 </td>
 <td valign="top">
 
-Perform he following steps:
+Perform the following steps:
 
 1.  Open the package in the source tenant.
 2.  Open the developer tools of the browser and open the *Network* tab.
@@ -176,6 +176,98 @@ Perform he following steps:
 5.  Save its contents to a text-editing tool.
 6.  Repeat the steps 1-5 in the target tenant.
 7.  Compare the contents of both the tenants to identify the resource with same name or display name.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Package-Level reg\_id Mismatch**:
+
+When a package with the same technical name exists in both tenant but was created independently, each environment receives a different reg\_id. This mismatch leads to a UniquenessViolationException during transport deployment.
+
+</td>
+<td valign="top">
+
+Perform the following steps:
+
+1.  Open Browser ***Inspect \(F12\)* \> *Network* tab.
+2.  Navigate to the package listing page:
+
+    `https:///shell/design`
+
+3.  Locate the API request:
+
+    `ContentEntities.ContentPackages?$format=json`
+
+4.  Inspect the response and identify the package entry.
+5.  Compare the reg\_id values between the source and target tenants.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Artifact-Level reg\_id Mismatch**:
+
+Even if the package name matches, individual artifacts within the package may have conflicting reg\_id values if they were created independently in different environments. This causes the deployment failure.
+
+</td>
+<td valign="top">
+
+Perform the following steps:
+
+1.  Open the package in Integration Suite.
+2.  Navigate to the *Artifacts* tab.
+3.  Open Browser ***Inspect \(F12\)* \> *Network* tab.
+4.  Monitor the API call:
+
+    `ContentEntities.ContentPackages('Testtransport')/Artifacts?&$format=json`
+
+5.  Inspect the response containing all artifacts.
+6.  Compare the following fields across source and target tenants:
+
+    -   reg\_id
+    -   Artifact Type
+    -   Version
+    -   Artifact Name
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Hidden Artifact Conflict**:
+
+A uniqueness violation can occur even when no conflicting artifacts are visible in the transported package.
+
+This happens when an artifact with the same name and type exists in another package in the target tenant with a different reg\_id.
+
+Observations:
+
+-   Package artifacts appear clean in the target
+-   Deployment still fails with UniquenessViolationException
+-   The conflicting artifact exists in another package in the target tenant
+
+
+
+</td>
+<td valign="top">
+
+Delete the conflicting resource \(package or individual artifact\) from the target tenant and re-transport the resource \(package or artifacts\).
+
+**Best Practices**:
+
+-   Do not mix manual export/import of artifacts with cTMS transport.
+-   Do not recreate artifacts in source or target tenants after cTMS setup is enabled.
+-   If manual export/import is mandatory, perform it for the complete package instead of individual artifacts.
 
 
 

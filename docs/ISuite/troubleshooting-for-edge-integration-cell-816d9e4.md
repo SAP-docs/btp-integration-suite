@@ -206,6 +206,42 @@ LOD-HCI-PI-CON-RFC
 <tr>
 <td valign="top">
 
+RFC Sender
+
+</td>
+<td valign="top">
+
+BC-CP-IS-EDG-RFC  
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OFTP Adapter
+
+</td>
+<td valign="top">
+
+BC-CP-IS-OFTP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+NFS Adapter
+
+</td>
+<td valign="top">
+
+LOD-HCI-PI-CON-TPRO
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Issues with the Ariba adapter.
 
 </td>

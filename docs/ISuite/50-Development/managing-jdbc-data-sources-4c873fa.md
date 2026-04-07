@@ -82,7 +82,7 @@ After you complete the above configuration, now create a JDBC data source for yo
     Define a name for the data source.
 
     > ### Note:  
-    > You allowed to enter only alphanumeric characters. Special characters and white space aren’t supported.
+    > You are allowed to enter only alphanumeric characters. Special characters and white space aren’t supported.
 
 
     
@@ -211,6 +211,104 @@ After you complete the above configuration, now create a JDBC data source for yo
     Identifies the location of this Cloud Connector for a specific subaccount. The location ID must be unique per subaccount and should be an identifier that can be used in a URI. To route requests to a Cloud Connector with a location ID, the location ID must be configured in the respective destinations.
 
     If you don't specify any value for Location ID, the default is used.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Enable Connection Pool*
+    
+    </td>
+    <td valign="top">
+    
+    Select to activate connection pooling and configure connection pool settings.
+
+    > ### Note:  
+    > The **Maximum number of JDBC data sources** that can be created depends on whether connection pooling is enabled. Without connection pooling, up to **49 data sources** can be created. When **Connection Pooling** is enabled, up to **500 data sources** can be created in total across both cloud and on-premise databases, with a maximum of **200 data sources** allowed for **on-premise database connections.**
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" colspan="2">
+    
+    > ### Note:  
+    > The following fields appear only when "Enable Connection Pool" is checked.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Maximum Pool Size*
+    
+    </td>
+    <td valign="top">
+    
+    The upper limit on the number of database connections maintained by the connection pool, including active and idle connections. It controls peak resource usage and prevents database server overload.
+
+    -   Default value: 10
+    -   Valid range: 1 to database-supported connection limit
+
+    > ### Note:  
+    > Configure this value based on your database connection limits and system capacity. Ensure that your database is configured to support the connection limits you intend to use, and that these settings are aligned with the valid value ranges provided for this field.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Minimum Idle Connections*
+    
+    </td>
+    <td valign="top">
+    
+    The minimum number of database connections kept idle in the connection pool, ensuring immediate availability for new requests.
+
+    -   Default value: 1
+    -   Valid range: 0 to maximum pool size
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Idle Timeout*
+    
+    </td>
+    <td valign="top">
+    
+    The maximum duration a database connection may remain idle in the pool before being eligible for cleanup.
+
+    -   Default value: 600000 ms
+    -   Valid range: 10000 ms to unlimited
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Connection Timeout*
+    
+    </td>
+    <td valign="top">
+    
+    The maximum wait time to obtain a database connection from the pool when all connections are in use.
+
+    -   Default value: 30000 ms
+    -   Valid range: 250 ms to unlimited
+
+
     
     </td>
     </tr>

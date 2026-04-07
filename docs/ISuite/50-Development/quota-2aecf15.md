@@ -4,6 +4,9 @@
 
 The Quota policy defines the number of requests an application can submit to an API endpoint over a given period of time.
 
+> ### Note:  
+> This feature and the information is relevant only if you have activated Edge Integration Cell in your SAP Integration Suite tenant. Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
 Quota policy limits the total number of requests allowed over a defined time period to manage overall usage, whereas Surge Protection policy regulates the rate of incoming requests in real time to prevent sudden traffic spikes from overwhelming the system.
 
 The period of time can be an hour, a day, or a month and so on. You can apply this policy on the context of requests.

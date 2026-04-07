@@ -168,6 +168,25 @@ Specify the name of the Snowflake warehouse. If the warehouse provided is not fo
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Connection Parameters*
+
+</td>
+<td valign="top">
+
+Specify the optional connection parameters in a query format.
+
+> ### Note:  
+> If you need to set parameter values that use spaces, ampersands, equals signs, or other special characters, you should URL-encode the special characters.
+> 
+> Example: `"?query_tag='folder%3Dfolder1%20folder2%26"`
+
+
+
+</td>
+</tr>
 </table>
 
 **Processing**
@@ -194,58 +213,166 @@ Description
 </td>
 <td valign="top">
 
-Specify the type of operation to be executed in Snowflake. Sample payloads for Insert and Update operation is given below.
+Specify the type of operation to be executed in Snowflake.
 
 > ### Example:  
-> -   Insert Payload
->     -   It is mandatory to include datatype attribute for fieldname in the INSERT payload. metadata/row tags are case sensitive and must be in lower case.
+> *Insert*
 > 
->         ```
->         <root>
->         	<metadata>
->         		<fieldname datatype="NUMBER">ID</fieldname>
->         		<fieldname datatype="VARCHAR">FIRST_NAME</fieldname>
->         		<fieldname datatype="VARCHAR">LAST_NAME</fieldname>
->         		<fieldname datatype="VARIANT">EMAIL</fieldname>
->         	</metadata>
->         	<row>
->         		<ID>10002</ID>
->         		<FIRST_NAME>Mark</FIRST_NAME>
->         		<LAST_NAME>Adams<LAST_NAME>
->         		<EMAIL>{"subject":"Message","emailContent":"Old Content"}<EMAIL>
->         	</row>
->                <row>
->         		<ID>10003</ID>
->         		<FIRST_NAME>James</FIRST_NAME>
->         		<LAST_NAME>Castor<LAST_NAME>
->         		<EMAIL>{"subject":"Message","emailContent":"New Content"}<EMAIL>
->         	</row>
->         </root>
->         
->         ```
+> -   If you choose to use an XML payload, some guidelines must be followed. You must include the datatype attribute for the fieldname in the Insert payload. Ensure that metadata/row tags are case sensitive and must be in lower case.
+> 
+>     ```
+>     <root>
+>     	<metadata>
+>     		<fieldname datatype="NUMBER">ID</fieldname>
+>     		<fieldname datatype="VARCHAR">FIRST_NAME</fieldname>
+>     		<fieldname datatype="VARCHAR">LAST_NAME</fieldname>
+>     		<fieldname datatype="VARIANT">EMAIL</fieldname>
+>     	</metadata>
+>     	<rows>
+>     		<row>
+>     		<ID>10002</ID>
+>     		<FIRST_NAME>Mark</FIRST_NAME>
+>     		<LAST_NAME>Adams</LAST_NAME>
+>     		<EMAIL>{"subject":"Message","emailContent":"Old Content"}</EMAIL>
+>     		</row>
+>     		<row>
+>     		<ID>10003</ID>
+>     		<FIRST_NAME>James</FIRST_NAME>
+>     		<LAST_NAME>Castor</LAST_NAME>
+>     		<EMAIL>{"subject":"Message","emailContent":"New Content"}</EMAIL>
+>     		</row>
+>     	</rows>
+>     </root>									
+>     ```
+> 
+> -   For XSDs, a structure has been outlined below:
+> 
+>     > ### Code Syntax:  
+>     > ```
+>     > <?xml version="1.0" encoding="utf-8"?>
+>     > 
+>     > <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+>     >   <xs:element name="root">
+>     >     <xs:complexType>
+>     >       <xs:sequence>
+>     >         <xs:element name="metadata">
+>     >           <xs:complexType>
+>     >             <xs:sequence>
+>     >               <xs:element maxOccurs="unbounded" name="fieldname">
+>     >                 <xs:complexType>
+>     >                   <xs:simpleContent>
+>     >                     <xs:extension base="xs:string">
+>     >                       <xs:attribute name="datatype" type="xs:string" use="required" />
+>     >                     </xs:extension>
+>     >                   </xs:simpleContent>
+>     >                 </xs:complexType>
+>     >               </xs:element>
+>     >             </xs:sequence>
+>     >           </xs:complexType>
+>     >         </xs:element>
+>     >         <xs:element name="rows">
+>     >           <xs:complexType>
+>     >             <xs:sequence>
+>     >               <xs:element maxOccurs="unbounded" name="row">
+>     >                 <xs:complexType>
+>     >                   <xs:sequence>
+>     >                     <xs:element name="ID" type="xs:unsignedShort" />
+>     >                     <xs:element name="FIRST_NAME" type="xs:string" />
+>     >                     <xs:element name="LAST_NAME" type="xs:string" />
+>     >                     <xs:element name="EMAIL" type="xs:string" />
+>     >                   </xs:sequence>
+>     >                 </xs:complexType>
+>     >               </xs:element>
+>     >             </xs:sequence>
+>     >           </xs:complexType>
+>     >         </xs:element>
+>     >       </xs:sequence>
+>     >     </xs:complexType>
+>     >   </xs:element>
+>     > </xs:schema>
+>     > ```
 > 
 > 
-> -   Insert Payload
->     -   The metadata/row tags are case sensitive and must be in lower case.
+> *Update* 
 > 
->     -   For Update, ensure metadata fieldname exists for your row data entry. In case your payload does not contain row entry for a metadata fieldname, update will still work. However, the opposite is not true, without specifying metadata fieldname for a column, you cannot update a row entry
+> -   If you choose to use an XML payload, remember the metadata/row tags are case sensitive and must be used in lowercase.
 > 
->         ```
->         <root>
->         	<metadata>
->         		<fieldname datatype="NUMBER">ID</fieldname>
->         		<fieldname datatype="VARCHAR">FIRST_NAME</fieldname>
->         		<fieldname datatype="VARCHAR">LAST_NAME</fieldname>
->         		<fieldname datatype="VARIANT">EMAIL</fieldname>
->         	</metadata>
->         	<row>
->         		<ID>10002</ID>
->         		<LAST_NAME>Adams<LAST_NAME>
->         		<EMAIL>{"subject":"Message","emailContent":"New Content"}<EMAIL>
->         		<where>ID=10001</where>
->         	</row>
->         </root>
->         ```
+>     > ### Note:  
+>     > For Update, if your XML payload only contains the metadata \(and fieldname\) entries, the datatype will be updated. To update data, include both the metadata and row tags.
+> 
+>     ```
+>     <root>
+>     	<metadata>
+>     		<fieldname datatype="NUMBER">PERSON_ID</fieldname>
+>     		<fieldname datatype="VARCHAR">FIRST_NAME</fieldname>
+>     		<fieldname datatype="VARCHAR">LAST_NAME</fieldname>
+>     		<fieldname datatype="VARCHAR">EMAIL</fieldname>
+>     	</metadata>
+>     	<rows>
+>     		<row>
+>     			<PERSON_ID>1023000</PERSON_ID>
+>     			<FIRST_NAME>James</FIRST_NAME>
+>     			<LAST_NAME>Ben</LAST_NAME>
+>     			<EMAIL>Quarterly Update</EMAIL>
+>     			<WHERE>PERSON_ID=1023</WHERE>
+>     		</row>
+>     		<row>
+>     			<PERSON_ID>1011000</PERSON_ID>
+>     			<FIRST_NAME>Mark</FIRST_NAME>
+>     			<LAST_NAME>Davies</LAST_NAME>
+>     			<EMAIL>Quarterly</EMAIL>
+>     			<WHERE>PERSON_ID=1011</WHERE>
+>     		</row>
+>     	</rows>
+>     </root>	
+>     ```
+> 
+> -   For XSDs, a structure has been outlined below:
+> 
+>     > ### Code Syntax:  
+>     > ```
+>     > <?xml version="1.0" encoding="utf-8"?>
+>     > <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+>     >   <xs:element name="root">
+>     >     <xs:complexType>
+>     >       <xs:sequence>
+>     >         <xs:element name="metadata">
+>     >           <xs:complexType>
+>     >             <xs:sequence>
+>     >               <xs:element maxOccurs="unbounded" name="fieldname">
+>     >                 <xs:complexType>
+>     >                   <xs:simpleContent>
+>     >                     <xs:extension base="xs:string">
+>     >                       <xs:attribute name="datatype" type="xs:string" use="required" />
+>     >                     </xs:extension>
+>     >                   </xs:simpleContent>
+>     >                 </xs:complexType>
+>     >               </xs:element>
+>     >             </xs:sequence>
+>     >           </xs:complexType>
+>     >         </xs:element>
+>     >         <xs:element name="rows">
+>     >           <xs:complexType>
+>     >             <xs:sequence>
+>     >               <xs:element maxOccurs="unbounded" name="row">
+>     >                 <xs:complexType>
+>     >                   <xs:sequence>
+>     >                     <xs:element name="PERSON_ID" type="xs:unsignedInt" />
+>     >                     <xs:element name="FIRST_NAME" type="xs:string" />
+>     >                     <xs:element name="LAST_NAME" type="xs:string" />
+>     >                     <xs:element name="EMAIL" type="xs:string" />
+>     >                     <xs:element name="WHERE" type="xs:string" />
+>     >                   </xs:sequence>
+>     >                 </xs:complexType>
+>     >               </xs:element>
+>     >             </xs:sequence>
+>     >           </xs:complexType>
+>     >         </xs:element>
+>     >       </xs:sequence>
+>     >     </xs:complexType>
+>     >   </xs:element>
+>     > </xs:schema>											
+>     > ```
 
 
 
@@ -290,7 +417,9 @@ Select the response output format:
 <tr>
 <td valign="top">
 
-*Response Fields* 
+*Response Fields*
+
+\(Only available when *Operation* is *Select*\)
 
 </td>
 <td valign="top">
@@ -323,7 +452,9 @@ Example: `age >= 25`
 <tr>
 <td valign="top">
 
-*Orderby Statement* 
+*Orderby Statement*
+
+\(Only available when *Operation* is *Select*\)
 
 </td>
 <td valign="top">
@@ -339,7 +470,9 @@ Example: `id` DESC
 <tr>
 <td valign="top">
 
-*Limit* 
+*Limit*
+
+\(Only available when *Operation* is *Select*\)
 
 </td>
 <td valign="top">
@@ -353,7 +486,9 @@ Example: `50`
 <tr>
 <td valign="top">
 
-*Offset* 
+*Offset*
+
+\(Only available when *Operation* is *Select*\)
 
 </td>
 <td valign="top">
@@ -370,14 +505,37 @@ Specify the offset value for the rows to be fetched. Essentially, the number of 
 <tr>
 <td valign="top">
 
-*Staging Location* 
+*Access Type*
+
+\(Only available when *Operation* is *Bulk Upsert* or *Unload*\)
+
+</td>
+<td valign="top">
+
+Select the access type for *Bulk Upsert*/*Unload*:
+
+-   *External Stage* references a stage referencing an external cloud storage location.
+-   *External Location*uses an external cloud storage location
+-   *Internal Stage* references a stage inside your Snowflake environment.
+-   *Storage Integration* is a Snowflake object that stores a generated identity and access management \(IAM\) entity for your external cloud storage.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Location*
+
+\(Only available when *Access Type* is *External Location*\)
 
 </td>
 <td valign="top">
 
 Select the location for storing data files \(stage\) for loading and unloading data:
 
--   *Amazon S3*,
+-   *Amazon S3* 
 -   *Google Cloud Storage*
 -   *Microsoft Azure*
 
@@ -388,19 +546,43 @@ Select the location for storing data files \(stage\) for loading and unloading d
 <tr>
 <td valign="top">
 
-*Access Type* 
+*URI*
+
+\(Only available when *Access Type* is *External Location* or *Storage Integration*\)
 
 </td>
 <td valign="top">
 
-The access type for external staging location:
+Specify the relative path to be linked to Stage.
 
--   *Storage Integration*
--   *AWS IAM User Credentials*
+Example: `s3://staging-bucket/`
 
-    > ### Note:  
-    > Access Type displays *AWS IAM User Credentials* even when you change the *AWS IAM User Credentials* from *Amazon S3* to *Google Cloud*. Select again to load the correct options.
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+*Storage Integration*
+
+\(Only available when *Access Type* is *Storage Integration*\)
+
+</td>
+<td valign="top">
+
+Specify the name of the Storage Integration object in Snowflake.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Path*
+
+</td>
+<td valign="top">
+
+-   For *File Staging* operation, specify the path for file staging.
+-   For *Unload* or *Bulk Upsert* operation, specify the path which is a prefix for files being referenced in stage.
 
 
 
@@ -409,32 +591,53 @@ The access type for external staging location:
 <tr>
 <td valign="top">
 
-*Stage* 
+*Stage*
 
 </td>
 <td valign="top">
 
-Specify the name of stage that stores the file.
-
-Example: `INTER_STAGE`
+Specify the name of internal or external stage in Snowflake.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*File* 
+*File Name* 
 
 </td>
 <td valign="top">
 
-Specify the name of the files to be stored in the *Stage*. Enclose the filenames in single quotes separated by a comma.
+Specify the name of the file.
 
-Example: `'file.json','file2.json'`
+Example: `'data.csv'`
 
 > ### Note:  
-> -   All the file extensions must be the same. JSON, CSV, and XML are currently supported. If left empty, all the files are picked up and a single file is created in *Stage*.
+> -   *Bulk Upsert* operation allows you to specify more than one file. Enclose the filenames in single quotes separated by a comma.
+> 
+>     Example: `'file.json','file2.json'`
+> 
+> -   All the file extensions must be the same. If left empty, all the files are picked up.
 > -   Avoid using this parameter in conjunction with `FILES` option under *Optional Parameters*. Using both will result into two `FILES` cvalues that result in an invalid query.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*File Name Prefix*
+
+\(Only available when *Operation* is *Unload*\)
+
+</td>
+<td valign="top">
+
+Specify the name of the file to be unloaded \(without an extension\). The extension will be appended to the filename as a suffix depending on the file format of the stage.
+
+> ### Note:  
+> If you use this in combination with Optional Parameters `SINGLE = TRUE`, you can unload your data into a single file, the filename in this case is exactly what you specify here without any additional suffixes.
 
 
 
@@ -497,7 +700,7 @@ Specify the SQL statement to be executed.
 Example:
 
 ```
-CREATE TABLE PERSON;DROP TABLE DEPARTMENT.
+CREATE TABLE PERSON;DROP TABLE DEPARTMENT
 ```
 
 
@@ -531,7 +734,9 @@ Specify the number of SQL queries to be executed. If left at the default value o
 <tr>
 <td valign="top">
 
-*AWS Key ID Alias* 
+*AWS Key ID Alias*
+
+\(Only available when *Location* is *Amazon S3*\)
 
 </td>
 <td valign="top">
@@ -545,7 +750,9 @@ This is the name of the *User Credentials* artifact \(to be deployed in the *Mon
 <tr>
 <td valign="top">
 
-*AWS Secret Key Alias* 
+*AWS Secret Key Alias*
+
+\(Only available when *Location* is *Amazon S3*\)
 
 </td>
 <td valign="top">
@@ -557,7 +764,9 @@ Specify the AWS Secret Key Alias.
 <tr>
 <td valign="top">
 
-*AWS S3 URI* 
+*AWS S3 URI*
+
+\(Only available when *Location* is *Amazon S3*\)
 
 </td>
 <td valign="top">
@@ -571,12 +780,44 @@ Example: `s3://staging-bucket/`
 <tr>
 <td valign="top">
 
+*Azure SAS Token Alias*
+
+\(Only available when *Location* is *Microsoft Azure*\)
+
+</td>
+<td valign="top">
+
+Specify the alias that stores Azure SAS Token to connect to Microsoft Azure cloud storage.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Schema* 
 
 </td>
 <td valign="top">
 
 Specify the schema of the tables. If left empty, all the tables are returned.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Command*
+
+</td>
+<td valign="top">
+
+Specify the response output format:
+
+-   *Put*
+-   *Get*
+-   *List*
+
+
 
 </td>
 </tr>

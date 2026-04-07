@@ -78,6 +78,8 @@ You can access the API artifact in view mode, allowing you to download, deploy, 
 
 [Create an API Artifact](create-an-api-artifact-c2fe62c.md "Create an API artifact to securely expose backend services, apply consistent governance by adding security and traffic management policies, and gain better visibility and control over how your APIs are accessed and used.")
 
+[Generate OpenAPI Specification with AI Assistance](generate-openapi-specification-with-ai-assistance-5ec68db.md "You can use AI assistance to automatically generate an OpenAPI specification while creating an API artifact. The AI analyzes your API design inputs and helps you quickly create a well-structured specification. This reduces manual effort and maintains consistency with OpenAPI standards.")
+
 [Add Resources to an API Artifact](add-resources-to-an-api-artifact-b5d0e4c.md "Add a resource to refer to individual endpoints or services.")
 
 [Policy Definition and Types of Policies](policy-definition-and-types-of-policies-c744df5.md "You can define the behavior of an API by using policies.")

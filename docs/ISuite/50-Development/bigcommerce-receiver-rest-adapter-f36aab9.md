@@ -119,7 +119,7 @@ Enter the Base URL of your BigCommerce store.
 > ### Example:  
 > `https://api.bigcommerce.com/stores/xxxxxx`
 
-
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}`. See [Dynamically Configure Integration Flow Parameters](https://help.sap.com/docs/integration-suite/sap-integration-suite/dynamically-configure-integration-flow-parameters?version=CLOUD)
 
 </td>
 </tr>
@@ -132,6 +132,8 @@ Enter the Base URL of your BigCommerce store.
 <td valign="top">
 
 Enter the alias name of the deployed Secure Parameter artifact that contains the access token needed to connect to BigCommerce.
+
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}`. See [Dynamically Configure Integration Flow Parameters](https://help.sap.com/docs/integration-suite/sap-integration-suite/dynamically-configure-integration-flow-parameters?version=CLOUD)
 
 </td>
 </tr>

@@ -152,6 +152,8 @@ Select the required configuration type:
 
 *Entity*
 
+\(Only available when *Configuration Type* is *Basic*\)
+
 </td>
 <td valign="top">
 
@@ -163,6 +165,8 @@ Select the entity based on which the operation will be performed.
 <td valign="top">
 
 *Operation*
+
+\(Only available when *Configuration Type* is *Basic*\)
 
 </td>
 <td valign="top">
@@ -259,6 +263,8 @@ Example:
 
 *HTTP Method*
 
+\(Only available when *Configuration Type* is *Advanced*\)
+
 </td>
 <td valign="top">
 
@@ -266,7 +272,6 @@ Select the required method from the available dropdown:
 
 -   *DELETE*
 -   *GET*
--   *HEAD*
 -   *PATCH*
 -   *POST*
 -   *PUT*
@@ -279,6 +284,8 @@ Select the required method from the available dropdown:
 <td valign="top">
 
 *Relative URL*
+
+\(Only available when *Configuration Type* is *Advanced*\)
 
 </td>
 <td valign="top">

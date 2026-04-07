@@ -50,6 +50,9 @@ Once you enable the API Management capability, you’ll need to configure the se
     -   Select *Non-Production* account type for, nonbusiness critical activities, integrating test systems, testing new scenarios, performance testing, and sandbox activities.
     -   Select *Production* account type for business critical usage, integrating production systems, and productive APIs.
 
+    > ### Caution:  
+    > The *Account Type* is defined at the time of creation and cannot be changed later. Ensure you select the correct type when configuring the subaccount. Changing a subaccount flag \(for example, marking it as Production from Non-Production\) will not automatically update or reclassify the tenant. Reclassification requires shutting down and recreating the tenant with the correct settings.
+
 4.  In the *Virtual Host* section, enter the *Host Alias*.
 
     > ### Note:  
@@ -98,7 +101,7 @@ To publish the Integration Suite API portal content on the **Developer Hub**, In
 > ### Note:  
 > If you've activated Developer Hub while enabling API Management capability, the connection to Developer Hub is established automatically. You can test the connection using *Test Connection*.
 > 
-> If you want to connect Integration Suite to a centralized Developer Hub, you must create a connection request. For more information, see [Create a Connection Request for the Centralized Developer Hub](../create-a-connection-request-for-the-centralized-developer-hub-c7bda8c.md).
+> If you want to connect Integration Suite to a centralized Developer Hub, you must create a connection request. For more information, see [Create a Connection Request for the Centralized Developer Hub](create-a-connection-request-for-the-centralized-developer-hub-c7bda8c.md).
 
 > ### Note:  
 > You can navigate to the **Developer Hub** by choosing the <span class="SAP-icons-V5"></span> Explore our Ecosystem icon on the header bar.

@@ -320,7 +320,7 @@ Example:
 </td>
 <td valign="top">
 
-[Create New Product Subscription for Application](../50-Development/create-new-product-subscription-for-application-a501a6d.md) 
+[Create New Product Subscription for Application](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/a501a6d6c5ee466d99de270b07771126.html "To manage API consumption, create a new product subscription for application. This will provide you with the credentials needed for secure access and allow you to catogorize and analyze data for APIs used by applications.") :arrow_upper_right: 
 
 </td>
 </tr>

@@ -25,6 +25,22 @@ At runtime, the system checks if a service key is available that contains the cl
 > ### Note:  
 > This option is a recommended and secure way to set up HTTP inbound connections.
 
+> ### Note:  
+> The client certificate is validated at the SAP BTP platform load balancer before the request reaches the Cloud Integration runtime. The certificate must include the Client Authentication Extended Key Usage \(EKU\) with `OID 1.3.6.1.5.5.7.3.2`.
+> 
+> Certificates without this EKU are rejected during the TLS handshake.
+> 
+> Ensure that the required EKU is present while renewing certificates from public Certificate Authorities. Some public CAs no longer include this EKU in newly issued TLS certificates.
+> 
+> Use certificates issued via SAP Cloud Root CA \(for example via SAP BTP Destination Service\) or configure a custom domain with a customer-managed certificate trust model.
+
+Public CAs started excluding the Client Authentication EKU from newly issued certificates in September 2025. By May 2026 it may no longer be included by default.
+
+> ### Note:  
+> Ensure that you have the required service keys and access configured. To generate SAP Cloud Root CA based certificates via the Destination Service REST API using a locally generated CSR \(Certificate Signing Request\), see [Manage Certificates Issued by the SAP Cloud Root CA](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/manage-certificates-issued-by-sap-cloud-root-ca?version=Cloud) and the video below.
+
+
+
 **More Information:**
 
 -   How to configure: [Client Certificate Authentication for Integration Flow Processing](client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
@@ -148,9 +164,6 @@ Sender is authenticated based on user credentials associated with a user registe
 > 
 > -   [Basic Authentication with clientId and clientsecret for Integration Flow Processing](basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
 > 
-> -   [Basic Authentication with clientId and clientsecret for Integration Flow Processing](basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
-> -   [Client Certificate Authentication for Integration Flow Processing](client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
-> -   [OAuth with Client Credentials Grant for Integration Flow Processing](oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md)
 > 
 > 
 > 

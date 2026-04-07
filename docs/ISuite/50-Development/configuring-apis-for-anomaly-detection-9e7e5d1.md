@@ -11,9 +11,15 @@ View or configure APIs for anomaly detection.
 ## Context
 
 > ### Note:  
-> AI features are accessible only with the Premium Edition. They are provided as a free promotion through June 2026 and will be commercialized afterward as Premium AI features using AI Units.
+> AI features are accessible only in the Enhanced and Premium Editions. They are provided as a free promotion through June 2026 and will be commercialized afterward as Premium AI features using AI Units.
 > 
-> For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620)
+> For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620).
+
+The Anomaly Detection feature can monitor API behavior both at the tenant level and for individual API proxies. Monitoring individual APIs allows you to detect unusual traffic patterns, latency changes, or error spikes for specific APIs.
+
+Before you can monitor individual APIs, you must enable them for anomaly detection.
+
+Only API proxies that meet the required historical data prerequisites are available for selection. These prerequisites ensure that sufficient historical data exists to train the anomaly detection model. For more information about these requirements, see [Prerequisites for API Selection](anomaly-detection-7a4fe7d.md#loio7a4fe7d85e10416e9dd63f98ccd780b2__section_qp4_nms_p3c) section in the [Anomaly Detection](anomaly-detection-7a4fe7d.md) topic.
 
 To view or modify the APIs for anomaly detection, follow the steps below:
 
@@ -34,18 +40,29 @@ To view or modify the APIs for anomaly detection, follow the steps below:
 
 4.  To modify the list of pre-selected APIs, choose *Modify*.
 
-5.  Check or uncheck the desired APIs, and then choose *Modify* in the **Modify APIs** dialog.
+5.  Check or uncheck the desired APIs, and then choose *Modify* in the *Modify APIs* dialog.
 
-    The *Modify APIs* dialog will display the list of APIs that meet the minimum data requirement \(at least 3 months' worth of API data\) and are available for AI model training.
+    The *Modify APIs* dialog displays the list of API proxies that meet the minimum historical data requirements for anomaly detection.
 
     > ### Note:  
     > Currently, you can select up to 50 individual APIs for anomaly detection.
 
+    > ### Note:  
+    > If an API proxy does not meet the minimum historical data prerequisites, it will not appear in the API selection list in the *Modify APIs* dialog.
+
 6.  Choose *Confirm* to save your changes.
 
-    > ### Note:  
-    > Each time you modify the configuration, the AI model needs to be retrained to effectively detect anomalies. On average, the training process takes approximately 4 hours to complete. Therefore, it is not recommended to make frequent configuration changes.
+    The selected APIs are now enabled for anomaly detection.
 
+    > ### Note:  
+    > Each time you modify the configuration, the AI model needs to be retrained to effectively detect anomalies. On average, the training process takes approximately four hours to complete. Therefore, it is not recommended to make frequent configuration changes.
+
+
+
+
+## Results
+
+After enabling APIs for anomaly detection, the system begins monitoring the selected API proxies and analyzing their traffic patterns. The anomaly detection model uses historical API call data to identify deviations from expected behavior.
 
 **Related Information**  
 

@@ -88,6 +88,22 @@ See: [Configure the Advanced Event Mesh Receiver Adapter](50-Development/configu
 <tr>
 <td valign="top">
 
+*Adobe Sign*
+
+Receiver Adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Integration Suite to connect to Adobe Sign to access APIs related to Agreement, Library Documents, and Message Templates etc.
+
+See: [Adobe Sign Receiver Adapter](50-Development/adobe-sign-receiver-adapter-e73852e.md) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *AI* 
 
 Receiver adapter
@@ -1608,6 +1624,38 @@ See: [Configure the Microsoft SharePoint Receiver Adapter](50-Development/config
 <tr>
 <td valign="top">
 
+*Microsoft Outlook* 
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to read and process mail messages from Microsoft Outlook mailbox.
+
+See: [Microsoft Outlook Sender Adapter](50-Development/microsoft-outlook-sender-adapter-47704aa.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Microsoft Outlook* 
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite to Microsoft Outlook to manage resources such as Calendar, Mail Folders, Attachments, and Messages etc.
+
+See: [Microsoft Outlook Receiver Adapter](50-Development/microsoft-outlook-receiver-adapter-0d61459.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Microsoft Teams* 
 
 Receiver adapter
@@ -1650,6 +1698,44 @@ Receiver adapter
 Connects SAP Integration Suite to NetSuite.
 
 See: [NetSuite Receiver Adapter](50-Development/netsuite-receiver-adapter-618127a.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*NFS*
+
+Sender Adapter
+
+</td>
+<td valign="top">
+
+Use the NFS\(Network File System\) adapter to read files on NFS Server.
+
+> ### Remember:  
+> This adapter is only available for Edge Integration Cell.
+
+See: [Configure the NFS Sender Adapter](https://help.sap.com/docs/integration-suite/sap-integration-suite/nfs-sender-adapter?version=CLOUD)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*NFS*
+
+Receiver Adapter
+
+</td>
+<td valign="top">
+
+Use the NFS\(Network File System\) adapter to write to files on NFS Server.
+
+> ### Remember:  
+> This adapter is only available for Edge Integration Cell.
+
+See: [Configure the NFS Receiver Adapter](https://help.sap.com/docs/integration-suite/sap-integration-suite/nfs-receiver-adapter?version=CLOUD)
 
 </td>
 </tr>
@@ -1729,6 +1815,48 @@ Connects SAP Integration Suite to SAP Gateway OData Channel \(through transport 
 Supported operations: Create \(POST\), Delete \(DELETE\), Merge \(MERGE\), Query \(GET\), Read \(GET\), Update \(PUT\)
 
 See: [ODC Receiver Adapter](50-Development/odc-receiver-adapter-3cdbc29.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OFTP*
+
+Sender Adapter
+
+</td>
+<td valign="top">
+
+Use the Odette File Transfer Protocol \(OFTP\) adapter to exchange EDI and business files with partners on your Edge Integration Cell.
+
+The OFTP sender adapter receives files from partners and act as a Transmission Control Protocol \(TCP\) server.
+
+> ### Remember:  
+> This adapter is only available for Edge Integration Cell.
+
+See: [Configure the OFTP Sender Adapter](https://help.sap.com/docs/integration-suite/sap-integration-suite/oftp-sender-adapter?version=CLOUD)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OFTP*
+
+Receiver Adapter
+
+</td>
+<td valign="top">
+
+Use the Odette File Transfer Protocol \(OFTP\) adapter to exchange EDI and business files with partners on your Edge Integration Cell.
+
+The OFTP Receiver Adapter sends files to partners and act as a Transmission Control Protocol \(TCP\) client.
+
+> ### Remember:  
+> This adapter is only available for Edge Integration Cell.
+
+See: [Configure the OFTP Receiver Adapter](https://help.sap.com/docs/integration-suite/sap-integration-suite/oftp-receiver-adapter?version=CLOUD)
 
 </td>
 </tr>
@@ -1846,6 +1974,25 @@ RFC is the standard interface used for integrating on-premise ABAP systems to th
 The adapter supports SAP NetWeaver, version 7.31 or higher.
 
 See: [RFC Receiver Adapter](50-Development/rfc-receiver-adapter-5c76048.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*RFC*
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+The RFC sender adapter for Edge Integration Cell enables direct, on-premise communication with SAP and third-party systems without relying on the SAP Cloud Connector using Remote Function Call \(RFC\).
+
+> ### Remember:  
+> This adapter is only available for Edge Integration Cell.
+
+See: [RFC Sender Adapter for Edge Integration Cell](https://help.sap.com/docs/integration-suite/sap-integration-suite/rfc-sender-adapter?version=CLOUD)
 
 </td>
 </tr>

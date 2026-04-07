@@ -254,7 +254,7 @@ Check out [2589823](https://me.sap.com/notes/2589823).
 
 The JMS sender or receiver adapter generates a message queue during deployment.
 
-Unused message queues are not deleted automatically. Since queues are limited \(and paid\) resources, you should manually delete any queues which are not used by your integration flows any more.
+Unused message queues are not deleted automatically. Since queues are limited resources, you should manually delete any queues which are not used by your integration flows any more.
 
 Information on deleted message queues is available in the audit log.
 

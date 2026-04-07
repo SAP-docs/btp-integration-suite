@@ -4,6 +4,9 @@
 
 The AdvancedEventMesh sender adapter allows SAP Integration Suite to consume messages from queues or subscriptions in SAP Integration Suite, advanced event mesh.
 
+> ### Remember:  
+> During Cloud Integration blue-green deployment of worker nodes, connection counts may temporarily double due to the nature of the deployment strategy. This occurs because both old and new worker nodes establish connections simultaneously during the switchover phase. Plan your SAP Integration Suite, advanced event mesh service connection thresholds accordingly to avoid JCSMPErrorResponseException: 503: Too Many Connections errors during new node startup. To proactively manage this, configure connection count alerts on your broker service and ensure your service plan's connection limits can accommodate the temporary spike.
+
 > ### Note:  
 > This adapter is available on SAP Business Accelerator Hub.
 > 
@@ -393,6 +396,11 @@ For example, if the provided value is `iflow_x_sender`, the client\_name is `ifl
 > -   \`GENERATE\_SENDER\_ID\` \(regular JCSMP property\)
 > 
 > -   \`CLIENT\_CHANNEL\_PROPERTIES.ReconnectRetries\` \(JCSMP channel property\)
+
+The adapter version V1.4.1, supports the following custom property for enhanced functionality:
+
+-   ADAPTER.CUSTOM\_PROP.USE\_CPI\_TRUSTSTORE: Automatically configures truststore from SAP CPI keystore service \(default: false\)
+
 
 
 

@@ -15,7 +15,9 @@ The following limitation applies to all custom messages:
 
 ## Custom Type System - Custom Messages
 
-**XSD Features with limited support**
+
+
+### XSD Features with Limited Support
 
 The following XSD features are currently only supported in a limited way. You can upload your XSD as custom message, but you might not be able to use the full scope of the XSD feature in your MIGs.
 
@@ -34,6 +36,11 @@ Limitation
 Detail
 
 </th>
+<th valign="top">
+
+Resolution / Workaround
+
+</th>
 </tr>
 <tr>
 <td valign="top">
@@ -44,6 +51,11 @@ Only native-XML messages supported
 <td valign="top">
 
 Full support is only given to messages that are natively XML \(all messages are imported with *SyntaxType = XML*.\) You can still import XSDs representing non-XML messages and SAP Integration Suite will support standard XML-handling. But extended special features such as XSD creation for EDI Flow Steps are not supported.
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -60,10 +72,36 @@ Recursion \(limited support\)
 **Chain recursion** occurs when a child node refers to an ancestor *complexType*. This scenario is not supported and such elements will be removed automatically when imported into the tenant .
 
 </td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Global `xml:lang` attribute must be declared explicitly
+
+</td>
+<td valign="top">
+
+If your message definition includes `xml:lang` attributes, you must explicitly declare the XML namespace.
+
+</td>
+<td valign="top">
+
+Before the upload, add an appropriate `xml.xsd` file to your ZIP file. This `xml.xsd` file should only declare the required global `xml:lang` attribute without using more complex, unsupported XSD features.
+
+This workaround requires intermediate XSD knowledge.
+
+</td>
 </tr>
 </table>
 
-**Unsupported XSD features**
+
+
+### Unsupported XSD Features
 
 The following XSD features are not supported. If they are present in your XSD, XSD validation will fail and the custom message will not be uploaded. In certain cases you can resolve the situation by manually modifying the XSD before upload.
 
@@ -91,12 +129,26 @@ Resolution / Workaround
 <tr>
 <td valign="top">
 
-*xsd:import* not supported
+Multiple XSD files for same target namespace not supported
 
 </td>
 <td valign="top">
 
-Import of another XSD \(different namespace\) is not supported. This also implies that only one namespace is allowed across the message.
+Your message definition can't be based on multiple XSD files for the same target namespace.
+
+</td>
+<td valign="top">
+
+Merge all XSD files of the same namespace into one XSD file.
+
+This workaround requires basic XSD knowledge.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Multiple namespace prefixes for the same namespace in the same XSD file
 
 </td>
 <td valign="top">
@@ -104,11 +156,18 @@ Import of another XSD \(different namespace\) is not supported. This also implie
  
 
 </td>
+<td valign="top">
+
+Use only one namespace prefix for every namespace within the same XSD file.
+
+This workaround requires intermediate XSD knowledge.
+
+</td>
 </tr>
 <tr>
 <td valign="top">
 
-*xsd:include* not supported
+`xsd:include` not supported
 
 </td>
 <td valign="top">
@@ -127,9 +186,8 @@ Merge all XSD files of the same namespace into one XSD file. \(Basic XSD knowled
 
 No support for schema extension via:
 
--   xsd:any
-
--   xsd:anyType
+-   `xsd:any`
+-   `xsd:anyType`
 
 
 
@@ -144,7 +202,7 @@ SAP Integration Suite always works on specific message structures and not on gen
 
 Firstly, ensure whether you need any extension of your custom message structure.
 
-If yes, extend your XSD file before the upload: replace the **xsd:any** with element\(s\) you want to use and replace the **xsd:anyType** with the specific type you want to use.
+If yes, extend your XSD file before the upload: replace the **xsd:any** with element\(s\) you want to use and replace the `xsd:anyType` with the specific type you want to use.
 
 If not, restrict your XSD file before the upload: simply remove the respective elements or attributes from the xsd file.
 
@@ -157,11 +215,11 @@ If not, restrict your XSD file before the upload: simply remove the respective e
 
 No support for advanced XSD features like:
 
--   xsd:complexContent
+-   `xsd:complexContent`
 
 -   mixed content
--   xsd:extension \(of Complex or Simple Types\)
--   xsd:substitutionGroup
+-   `xsd:extension` \(of complex or simple types\)
+-   `xsd:substitutionGroup`
 
 
 
@@ -187,7 +245,9 @@ Some of these missing advanced XSD features can be replaced by semantically equi
 
 ## Custom Type System - SOA Messages
 
-**Unsupported WSDL features**
+
+
+### Unsupported WSDL Features
 
 The following WSDL features are not supported. If they are present in your WSDL, it cannot be uploaded. In some cases you can resolve the situation by manually modifying the WSDL before upload.
 
@@ -247,9 +307,11 @@ All messages within one WSDL file must refer to different global elements and it
 </tr>
 </table>
 
-**XSD features unsupported or with limited support**
 
-For all the XSD Schemas declared within the *wsdl:types* section of your WSDL file, the same restrictions and limitations apply as described in section for *Custom Messages*. The only exception to this is, that multiple XSD Schemas are allowed within one WSDL file and that they are allowed to reference each other via *xsd:import*.
+
+### XSD Features Unsupported or with Limited Support
+
+For all the XSD Schemas declared within the *wsdl:types* section of your WSDL file, the same restrictions and limitations apply as described in section for *Custom Messages*.
 
 
 
@@ -257,7 +319,9 @@ For all the XSD Schemas declared within the *wsdl:types* section of your WSDL fi
 
 ## Custom Type System - Custom IDocs
 
-For Custom IDocs, an IDoc-XSD file is expected as it can be downloaded from the SAP S/4HANA System \(transaction WE60\).
+For custom IDocs, an IDoc-XSD file is expected as it can be downloaded from the SAP S/4HANA system \(transaction WE60\).
 
 In principle the same restrictions and limitations apply as described in section for *Custom Messages*, however, none of the advanced XSD features are used in the IDoc-XSDs.
+
+Integration Advisor message types don't support the slash character "/" as part of their identifier. This means that IDoc types with a slash "/" in its identifier can't be uploaded.
 

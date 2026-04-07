@@ -13,6 +13,19 @@ Proxy generation converts non-language-specific interface descriptions in Web Se
 -   All service interface artifacts must already be imported in SAP Integration Suite tenant. An integration package must not contain duplicate artifacts relevant for proxy generation.
 -   You've the `PI_Integration_Developer` role collection assigned. This role collection already has the required `AuthGroup_IntegrationDeveloper` role. See [Managing User Roles](https://help.sap.com/docs/integration-suite/sap-integration-suite/managing-user-roles?version) and [Tasks and Permissions for Cloud Integration](https://help.sap.com/docs/integration-suite/sap-integration-suite/tasks-and-permissions-556d5575d4b0483e85d4f3251f21d0ec?)
 
+-   A new service instance must be created. See [Creating Service Instance and Service Key for Inbound Authentication](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-service-instance-and-service-key-for-inbound-authentication?version=CLOUD)
+
+-   Ensure that you've access to SAP S/4HANA or SAP Backend and authorization for transactions SE80, OA2C\_CONFIG and SM59.
+
+    > ### Note:  
+    > For OAuth 2.0 setting, you've to create a client profile and assign it to a client.
+    > 
+    > -   **Configuration for client profile**: In transaction SE80, create a new OAuth 2.0 Client Profile with the Name and Type parameters and save the profile.
+    > 
+    > -   **Configuration for client**: In transaction OA2C\_CONFIG, create a new OAuth 2.0 Client and select previously created profile and enter the Client ID, Client Secret, Token Endpoint values from the BTP service key, see [Creating Service Instance and Service Key for Inbound Authentication](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-service-instance-and-service-key-for-inbound-authentication?version=CLOUD). Set the Grant Type to Client Credentials and save the configuration.
+    > 
+    >     For more information, see [Configuring OAuth 2.0 Account Client](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-oauth-2-0-account-client?version=CLOUD)
+
 
 
 
@@ -142,7 +155,7 @@ The procedure to generate ABAP proxies is essentially the same for each type of 
         </tr>
         </table>
         
-    5.  On the *Logon & Security* tab, specify the following:
+    5.  On the *Logon & Security* tab, choose the authentication method:
 
         **Logon & Security**
 
@@ -175,6 +188,18 @@ The procedure to generate ABAP proxies is essentially the same for each type of 
         <tr>
         <td valign="top">
         
+        OAuth 2.0 Settings
+        
+        </td>
+        <td valign="top">
+        
+        Choose the previously created [O Auth 2.0 Client](generating-abap-proxy-c6fcf31.md#loioc6fcf31776ff42f98ac45734b00aadf6__li_rtb_dkk_k3c).
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
         User
         
         </td>
@@ -193,6 +218,49 @@ The procedure to generate ABAP proxies is essentially the same for each type of 
         <td valign="top">
         
         Enter your SAP Integration Suite tenant password
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top" colspan="2">
+        
+        OAuth 2.0 Authentication
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        Logon Procedure
+        
+        </td>
+        <td valign="top">
+        
+        Don't use a user
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        Logon Ticket
+        
+        </td>
+        <td valign="top">
+        
+        Don't send logon ticket
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        Certificate Logon
+        
+        </td>
+        <td valign="top">
+        
+        Don't use a certificate for logon
         
         </td>
         </tr>

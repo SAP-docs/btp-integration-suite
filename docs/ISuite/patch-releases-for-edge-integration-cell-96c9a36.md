@@ -77,6 +77,201 @@ Patches for different components are associated with different major software ve
 
 
 
+## March 2026
+
+Software Increment: 2601
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.40.20
+
+</td>
+<td valign="top">
+
+This patch addresses the following issues:
+
+-   When calling integration flow endpoints with an expired OAuth token for authentication, the system now returns an HTTP 401 response code instead of HTTP 500.
+-   This patch includes an enhancement for the Partner Delete operation.
+-   This patch ensures automatic recovery from Ready-For-Mission \(RFM\) check failures.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+## February 2026
+
+Software Increment: 2513
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.39.11
+
+</td>
+<td valign="top">
+
+EIC Solution deployment and upgrade issues are resolved. The liquibase library is upgraded from version 4.23 to 4.33. This upgrade fixes a bug where the database names appear in lowercase.
+
+</td>
+</tr>
+</table>
+
+
+
+## February 2026
+
+Software Increment: 2512
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.38.12
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   EIC Solution deployment and upgrade issues are resolved. The liquibase library is upgraded from version 4.23 to 4.33. This upgrade fixes a bug where the database names appear in lowercase.
+-   An issue that occurs with selecting the metadata version for Solace topic lists.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+## January 2026
+
+Software Increment: 2512
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.38.10
+
+</td>
+<td valign="top">
+
+This patch fixes the issue of possible skipped MPLS processes for CALM and FRUN during periods of high load.
+
+</td>
+</tr>
+</table>
+
+
+
 ## December 2025
 
 Software Increment: 2510
@@ -216,7 +411,7 @@ Edge Integration Cell
 </td>
 <td valign="top">
 
-This patch fixes deployment issues for integration flows using XI adapters, ensuring successful execution for version 1.15 and above. It supports Quality of Service settings: At Least Once \(ALO\), Exactly Once \(EO\), and High Business Impact \(HBI\).
+This patch fixes deployment issues for integration flows using XI adapters, ensuring successful execution for version 1.15 and above. It supports Quality of Service settings: At Least Once \(ALO\), Exactly Once \(EO\), and Handled by Integration Flow \(HBI\).
 
 </td>
 </tr>

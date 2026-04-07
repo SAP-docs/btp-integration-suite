@@ -416,11 +416,15 @@ The creation modes apply only for the agreements you newly create. The agreement
     > ### Note:  
     > The application now provides you with the *ProcessDirect* adapter that allows you to use your customized integration flow within the generic integration flow. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md).
 
-26. The *Enable Payload Validation* checkbox allows the system to validate the incoming payload. Check/Uncheck the option if you want to enable or disable the payload validation.
+26. In the ​​*Integration Flow Link* field, open the integration flow dialog to select a custom integration flow. After you choose the relevant package and artifact, the corresponding SAP Integration Suite URL is auto-populated in the URL field. Alternatively, you can manually enter or paste the URL.
+
+    Once the link is configured and you're in display mode, the *Process Direct Address* field becomes clickable. Choose it to open the associated custom integration flow in a new window. 
+
+27. The *Enable Payload Validation* checkbox allows the system to validate the incoming payload. Check/Uncheck the option if you want to enable or disable the payload validation.
 
     If enabled, the generic integration flow performs a validation check for the sender interchange. And regardless of the outcome, the interchange processing continues to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
 
-27. The *Enable Syntax Validation* checkbox allows the system to validate the syntax using EDI splitter and this option is selected by default. Check/Uncheck the option if you want to enable or disable the syntax validation.
+28. The *Enable Syntax Validation* checkbox allows the system to validate the syntax using EDI splitter and this option is selected by default. Check/Uncheck the option if you want to enable or disable the syntax validation.
 
     > ### Note:  
     > This option applies only to the following sender type systems:
@@ -433,61 +437,69 @@ The creation modes apply only for the agreements you newly create. The agreement
     > 
     > This option isn't editable if you've created the agreement with reference mode \(created using *Bind with Template* option\).
 
-28. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
+29. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
 
-29. Choose the *Mapping* step.
+30. Choose the *Mapping* step.
 
-30. Select a mapping guideline using the value help provided for the field *Mapping Guideline\(MAG\)*.
+31. Select a mapping guideline using the value help provided for the field *Mapping Guideline\(MAG\)*.
 
     If you want to view the details of the MAG that you chose, you can use the link provided under the *Version* field.
 
-31. If you want to use custom integration flow for the Mapping process, enable the checkbox for *Customized Mapping Processing* and provide the address of the integration flow under the field *Process Direct Address* field.
+32. If you want to use custom integration flow for the Mapping process, enable the checkbox for *Customized Mapping Processing* and provide the address of the integration flow under the field *Process Direct Address* field.
 
     > ### Note:  
     > Enabling custom message processing disables the *Mapping Guideline \(MAG\)* field.
     > 
     > The application now provides you with the *ProcessDirect* adapter that allows you to use your customized integration flow within the generic integration flow. To learn more about it, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
 
-32. Choose the *Communication Channel* on the receiver side and select a value from the drop-down list for the field *Communication*.
+33. In the ​​*Integration Flow Link* field, open the integration flow dialog to select a custom integration flow. After you choose the relevant package and artifact, the corresponding SAP Integration Suite URL is auto-populated in the URL field. Alternatively, you can manually enter or paste the URL.
 
-33. Select the value for the field *Receiver Functional Acknowledgement Channel*.
+    Once the link is configured and you're in display mode, the *Process Direct Address* field becomes clickable. Choose it to open the associated custom integration flow in a new window. 
+
+34. Choose the *Communication Channel* on the receiver side and select a value from the drop-down list for the field *Communication*.
+
+35. Select the value for the field *Receiver Functional Acknowledgement Channel*.
 
     > ### Note:  
     > This field appears only for the AS2 adapter.
     > 
     > You can view the status of the functional acknowledgment through the *Monitor* tab. See [Update Agreements](update-agreements-b5e1fc9.md).
 
-34. Select the *Interchange* shape on the receiver side.
+36. Select the *Interchange* shape on the receiver side.
 
-35. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
+37. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
 
     > ### Note:  
     > If you want to view the details of the MIG that you chose, you can use the link provided under the *Version* field.
 
-36. Select a value from the drop-down list for the field *Number Range*.
+38. Select a value from the drop-down list for the field *Number Range*.
 
     > ### Note:  
     > A number range is used to insert unique sequence numbers.
     > 
     > You need to configure this number range in the Cloud Integration tenant. To do so, see [Number Ranges](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b6e17fa17a70491da4a54216db298f84.html).
 
-37. Similar to the Sender, if you want to use custom integration flows for your Pre/Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
+39. Similar to the Sender, if you want to use custom integration flows for your Pre/Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
 
     > ### Note:  
     > The application now provides you with the *ProcessDirect* adapter that allows you to use your customized integration flow within the generic integration flow. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md).
 
-38. Provide the address path of your custom integration flow in the *Process Direct Address* field.
+40. Provide the address path of your custom integration flow in the *Process Direct Address* field.
 
     > ### Note:  
     > To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md).
 
-39. The *Enable Payload Validation* checkbox allows the system to validate the outgoing payload. It is selected by default. Uncheck the option if you want to disable the payload validation.
+41. In the ​​*Integration Flow Link* field, open the integration flow dialog to select a custom integration flow. After you choose the relevant package and artifact, the corresponding SAP Integration Suite URL is auto-populated in the URL field. Alternatively, you can manually enter or paste the URL.
+
+    Once the link is configured and you're in display mode, the *Process Direct Address* field becomes clickable. Choose it to open the associated custom integration flow in a new window. 
+
+42. The *Enable Payload Validation* checkbox allows the system to validate the outgoing payload. It is selected by default. Uncheck the option if you want to disable the payload validation.
 
     If enabled, the generic integration flow performs a validation check for the receiver interchange. And regardless of the outcome, the interchange processing continues to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
 
-40. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
+43. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
 
-41. If you want to use custom separators for your payload, enable the *Use Custom Separators* checkbox and maintain the values for the following fields:
+44. If you want to use custom separators for your payload, enable the *Use Custom Separators* checkbox and maintain the values for the following fields:
 
     > ### Note:  
     > This option is available only for UN/EDIFACT and ASC X12 type systems.
@@ -498,7 +510,7 @@ The creation modes apply only for the agreements you newly create. The agreement
     -   Data Element Separator
     -   Escape Character
 
-42. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgment for the receiver.
+45. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgment for the receiver.
 
     > ### Note:  
     > This option is available only for the following type systems:
@@ -509,14 +521,14 @@ The creation modes apply only for the agreements you newly create. The agreement
     > 
     > You also need to maintain the functional acknowledgment in the receiver side.
 
-43. If you've enabled *Receiver Functional Acknowledgement*, choose *Communication* on the receiver side and set the following values:
+46. If you've enabled *Receiver Functional Acknowledgement*, choose *Communication* on the receiver side and set the following values:
 
     1.  *Communication*: It should be of type AS2. This detail has to be maintained in the trading partner profile. To know more, see [Creating a Trading Partner Profile](creating-a-trading-partner-profile-542fb11.md).
 
     2.  *Receiver Functional Acknowledgement Channel*: Select a value from the drop-down list.
 
 
-44. If you want to specify which separators to be used in the interchange message payload, select the checkbox for the field *Use Custom Separators*. This enables the following fields. Set the character from the drop-down list for each of the separator.
+47. If you want to specify which separators to be used in the interchange message payload, select the checkbox for the field *Use Custom Separators*. This enables the following fields. Set the character from the drop-down list for each of the separator.
 
     -   *Segment Terminator*
 
@@ -527,7 +539,7 @@ The creation modes apply only for the agreements you newly create. The agreement
     > ### Note:  
     > You can also manually specify the custom separator for these fields. Enter the hexadecimal value for the separator that you want to use in the respective field. For example, enter `#x2b` to use **\+** as the separator.
 
-45. Choose *Save*.
+48. Choose *Save*.
 
 
 

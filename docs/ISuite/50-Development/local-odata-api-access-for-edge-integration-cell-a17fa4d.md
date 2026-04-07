@@ -60,7 +60,10 @@ For information on how to get to the *Modify Configuration* dialogue box, see: [
 
 ## Authentication
 
-Only a certificate-based authentication is supported. You need to use a public and a private key for a TLS connection. See [Client Certificate Authentication for API Clients](../40-RemoteSystems/client-certificate-authentication-for-api-clients-d9ca0ac.md) for more details on this type of authentication.
+The following authentication methods are supported:
+
+-   **Certificate-based authentication**. You need to use a public and a private key for a TLS connection. See [Client Certificate Authentication for API Clients](../40-RemoteSystems/client-certificate-authentication-for-api-clients-d9ca0ac.md) for more details.
+-   **ClientId/clientsecret** authentication. Use OAuth client credentials for authentication. See [OAuth with Client Credentials Grant for API Clients](../40-RemoteSystems/oauth-with-client-credentials-grant-for-api-clients-20e26a8.md) for more details.
 
 
 
@@ -113,6 +116,10 @@ A subset of the OData APIs is exposed for local access, including:
 
 -   `/Variables`
 
+-   `/StringParameters`
+-   `/BinaryParameters`
+-   `/AlternativePartners`
+-   `/AuthorizedUsers`
 
 > ### Note:  
 > Not all APIs are exposed for local access. If you use an endpoint not listed here, an 403 Error will occur.
