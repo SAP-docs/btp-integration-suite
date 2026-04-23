@@ -231,7 +231,12 @@ Select the type of protocol for connecting to IBM MQ:
 
 Specify the Character Set ID for Non-ASCII Names for the JMS connection.
 
-Example: `819`
+Example: `819` 
+
+> ### Note:  
+> To override CCSID at Message Level, use JMS Message Property \(JMS\_IBM\_Character\_Set\), the message property will have higher precedence than the CCSID specified here in the Connection Tab.
+
+
 
 </td>
 </tr>
@@ -323,7 +328,7 @@ Specify the name of the queue from where the message is read.
 <tr>
 <td valign="top">
 
-*Topic Name/String*
+*Topic String*
 
 \(only available when *Message Destination Type* is set to *Topic*\)
 

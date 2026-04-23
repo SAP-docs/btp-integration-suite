@@ -77,6 +77,69 @@ Patches for different components are associated with different major software ve
 
 
 
+## April 2026
+
+Software Increment: 2601
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.40.22
+
+</td>
+<td valign="top">
+
+This patch fixes an issue where the Destination Service Data Maintainer could enter an error state during startup, ensuring reliable operation in Edge Integration Cell environments using SAP HANA.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+8.40.21
+
+</td>
+<td valign="top">
+
+This patch fixes an issue where an incorrect cache invalidation behavior caused empty cache data to be used.
+
+</td>
+</tr>
+</table>
+
+
+
 ## March 2026
 
 Software Increment: 2601

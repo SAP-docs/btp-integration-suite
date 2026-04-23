@@ -1096,6 +1096,265 @@ australia-southeast1
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+SAP Cloud Infrastructure
+
+</td>
+<td valign="top">
+
+ae01
+
+</td>
+<td valign="top">
+
+UAE \(Dubai\)
+
+</td>
+<td valign="top">
+
+cf-ae01
+
+</td>
+<td valign="top">
+
+ap-ae-1
+
+</td>
+<td valign="top">
+
+130.214.250.100, 130.214.250.87
+
+</td>
+<td valign="top">
+
+130.214.250.86, 130.214.250.76
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Cloud Infrastructure
+
+</td>
+<td valign="top">
+
+eu01
+
+</td>
+<td valign="top">
+
+Europe \(Frankfurt\) - EU Access Only
+
+</td>
+<td valign="top">
+
+cf-eu01
+
+</td>
+<td valign="top">
+
+eu-de-2
+
+</td>
+<td valign="top">
+
+130.214.91.8, 130.214.91.61
+
+</td>
+<td valign="top">
+
+130.214.91.187, 130.214.91.163
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Cloud Infrastructure
+
+</td>
+<td valign="top">
+
+eu02
+
+</td>
+<td valign="top">
+
+Europe \(Rot\) - SAP EU Access
+
+</td>
+<td valign="top">
+
+cf-eu02
+
+</td>
+<td valign="top">
+
+eu-de-1
+
+</td>
+<td valign="top">
+
+130.214.90.213, 130.214.91.148
+
+</td>
+<td valign="top">
+
+130.214.90.209, 130.214.91.168
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Cloud Infrastructure
+
+</td>
+<td valign="top">
+
+ap01
+
+</td>
+<td valign="top">
+
+Australia \(Sydney\)
+
+</td>
+<td valign="top">
+
+cf-ap01
+
+</td>
+<td valign="top">
+
+cf-ap01
+
+</td>
+<td valign="top">
+
+130.214.240.164, 130.214.240.130
+
+</td>
+<td valign="top">
+
+130.214.240.160, 130.214.240.181
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Cloud Infrastructure
+
+</td>
+<td valign="top">
+
+jp01
+
+</td>
+<td valign="top">
+
+Japan \(Tokyo\)
+
+</td>
+<td valign="top">
+
+cf-jp01
+
+</td>
+<td valign="top">
+
+ap-jp-1
+
+</td>
+<td valign="top">
+
+130.214.244.123, 130.214.244.87
+
+</td>
+<td valign="top">
+
+130.214.244.83, 130.214.244.82
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Cloud Infrastructure
+
+</td>
+<td valign="top">
+
+us02
+
+</td>
+<td valign="top">
+
+US West \(Colorado\)
+
+</td>
+<td valign="top">
+
+cf-us02
+
+</td>
+<td valign="top">
+
+na-us-2
+
+</td>
+<td valign="top">
+
+130.214.206.54, 130.214.206.49
+
+</td>
+<td valign="top">
+
+130.214.206.38, 130.214.206.51
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Cloud Infrastructure
+
+</td>
+<td valign="top">
+
+us01
+
+</td>
+<td valign="top">
+
+US \(Sterling\)
+
+</td>
+<td valign="top">
+
+cf-us01
+
+</td>
+<td valign="top">
+
+na-us-1
+
+</td>
+<td valign="top">
+
+130.214.234.170, 130.214.234.190
+
+</td>
+<td valign="top">
+
+130.214.234.134, 130.214.234.159
+
+</td>
+</tr>
 </table>
 
 > ### Note:  

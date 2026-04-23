@@ -12,7 +12,7 @@ For outbound communication through HTTPS \(when the tenant sends a message to a 
 
     The calling entity \(tenant\) is authenticated based on a certificate.
 
--   OAuth
+-   **OAuth**
 
 
 **Related Information**  

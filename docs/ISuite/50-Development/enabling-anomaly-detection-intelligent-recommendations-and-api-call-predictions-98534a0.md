@@ -15,9 +15,10 @@ The role collection *APIPortal.Administrator* must be assigned to you.
 The role collection *APIManagement.SelfService.Administrator* must be assigned to you to enable intelligent recommendations.
 
 > ### Note:  
-> AI features are accessible only in the Enhanced and Premium Editions. They are provided as a free promotion through June 2026 and will be commercialized afterward as Premium AI features using AI Units.
-> 
-> For more information about different service plans and their supported feature set, see SAP Notes [2903776](https://me.sap.com/notes/2903776) and [3463620](https://me.sap.com/notes/3463620).
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
+> ### Note:  
+> AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion through June 2026 and will be commercialized later as AI features using AI Units. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620).
 
 
 

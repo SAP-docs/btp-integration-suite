@@ -116,10 +116,6 @@ A subset of the OData APIs is exposed for local access, including:
 
 -   `/Variables`
 
--   `/StringParameters`
--   `/BinaryParameters`
--   `/AlternativePartners`
--   `/AuthorizedUsers`
 
 > ### Note:  
 > Not all APIs are exposed for local access. If you use an endpoint not listed here, an 403 Error will occur.

@@ -98,3 +98,27 @@ Quality of service is managed within the integration flow itself, and the adapte
 </tr>
 </table>
 
+When designing integration flows, consider that any component in the communication path can fail. Communication lines may be interrupted, and applications \(including Cloud Integration\) may crash while processing messages. If your business scenario requires a specific quality of service for message delivery, ensure that potential failure scenarios are accounted for in your flow design.
+
+> ### Note:  
+> Some adapters provide a quality-of-service setting. This setting applies only to processing within the adapter and does not extend to the entire integration flow.
+
+The integration flow developer is responsible for the quality of service realized by the end-to-end message flow. This includes, but is not limited to:
+
+-   Handling non-delivery to the BTP platform by implementing retry mechanisms in the sender application to address intermittent processing failures in the Cloud Integration runtime.
+-   Designing for resilience during platform updates, such as rolling software upgrades in the BTP platform, which may terminate running integration flows or cause errors in dependent network components such as Cloud Connector.
+-   Preventing side effects from duplicate messages at the receiver application by implementing idempotency on the same.
+
+For example, an XI sender adapter configured with the quality of service "Exactly Once" stores the message and retries delivery until it succeeds. The XI protocol also handles duplicate messages. However, this setting does not protect against message loss that occurs before the message reaches the adapter.
+
+Quality of service for the end-to-end flow can be complex and depends on the protocols used and the capabilities of the participating sender and receiver systems. While Cloud Integration provides building blocks to design resilient integration flows, it remains the responsibility of the integration flow designer to ensure that the flow meets the required business quality-of-service requirements.
+
+The [Integration Flow Design Guidelines](integration-flow-design-guidelines-6803389.md) provide some recommendations on how to achieve this.
+
+References:
+
+-   [Retry](https://help.sap.com/docs/btp/developing-resilient-apps-on-sap-btp/retry)
+-   [Resilience Recommendations](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/resilience-recommendations?version=Cloud)
+-   [Apply the Retry Pattern in the Sender Applications](apply-the-retry-pattern-in-the-sender-applications-0e27ac9.md)
+-   [Resilient Protocols](https://help.sap.com/docs/btp/developing-resilient-apps-on-sap-btp/message-driven#loio79f49eb49cdd4d0bb8de44cbc9a6a7ec)
+

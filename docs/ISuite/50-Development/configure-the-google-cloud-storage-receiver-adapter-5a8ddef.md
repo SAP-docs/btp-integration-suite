@@ -282,7 +282,7 @@ Specify the comma-separated sequence of service accounts in a delegation chain.
 <tr>
 <td valign="top">
 
-*Proxy*
+*Proxy Type*
 
 </td>
 <td valign="top">
@@ -291,6 +291,25 @@ Specify the proxy type:
 
 -   *Internet*
 -   *On-Premise*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Location ID* 
+
+\(only when *Proxy Type* is set to *On-Premise*\)
+
+</td>
+<td valign="top">
+
+Specify the Location ID from Cloud Connector.
+
+> ### Note:  
+> This is an optional field based on your configuration.
 
 
 

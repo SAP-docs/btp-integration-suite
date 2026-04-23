@@ -149,7 +149,7 @@ You can select one of the following options:
 
 -   *Client Certificate*: Sender authorization is checked on the tenant by evaluating the subject/issuer distinguished name \(DN\) of the certificate \(sent together with the inbound request\). You can use this option together with the following authentication option: *Client-certificate authentication \(without certificate-to-user mapping\)*.
 
--   *User Role*: Sender authorization is checked based on roles defined on the tenant for the user associated with the inbound request. You can use this option together with the following authentication options:
+-   *User Role*: Sender authorization is checked based on roles defined on the tenant for the user associated with the inbound request. You can use this option with different authentication options, such as:
 
     -   *Basic authentication* \(using the credentials of the user\)
 
@@ -159,6 +159,9 @@ You can select one of the following options:
 
         The authorizations for the user derived from the certificate-to-user mapping are checked based on user-to-role assignments defined on the tenant.
 
+
+    > ### Note:  
+    > These examples are not the only supported options. For a list of supported authentication methods for HTTP-based outbound communication, refer to [Authentication Options \(Outbound\)](../40-RemoteSystems/authentication-options-outbound-58a7537.md).
 
 
 Depending on your choice, you can also specify one of the following properties:

@@ -7,7 +7,7 @@ OAuth 2.0 defines an authorization protocol for protected API resources.
 To ensure that applications are allowed to act on behalf of users, OAuth 2.0 relies on 'access tokens'. To access protected resources, consumer applications must obtain 'access tokens'. The OAuth 2.0 specification defines the various ways that applications can request and use access tokens. API Management provides a policy type that enables you to configure OAuth 2.0 authorization for your APIs.
 
 > ### Note:  
-> The OAuthV2 policy returns certain non-RFC-compliant response elements. For example, the policy returns a token property, **"token\_type":"BearerToken"**, where the compliant token property is **"token\_type":"Bearer"**. For details on these non-compliant response elements, see [Non-RFC\_compliant Behaviour](non-rfc-compliant-behaviour-7a98cc9.md).
+> The OAuthV2 policy returns certain non-RFC-compliant response elements. For example, the policy returns a token property, **"token\_type":"BearerToken"**, where the compliant token property is **"token\_type":"Bearer"**. For details on these non-compliant response elements, see [Non-RFC-compliant Behaviour](non-rfc-compliant-behaviour-7a98cc9.md).
 
 Setting up OAuth 2.0 authorization for your API is a three step process:
 

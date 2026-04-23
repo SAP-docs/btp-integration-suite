@@ -1,8 +1,8 @@
 <!-- loio7a98cc92d6a249d7b556e594f7676cd5 -->
 
-# Non-RFC\_compliant Behaviour
+# Non-RFC-compliant Behaviour
 
-The OAuthV2 policy generates a token response that includes certain properties that are not RFC-compliant.
+The OAuthV2 policy generates a token response that includes certain properties that are not Remote Function Call \(RFC\)-compliant.
 
 The table below lists these non-compliant properties and their corresponding compliant counterparts.
 

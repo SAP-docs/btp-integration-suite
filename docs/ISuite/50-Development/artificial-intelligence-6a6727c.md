@@ -8,7 +8,7 @@ As a tenant administrator, you can activate and manage artificial intelligence f
 > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 > ### Note:  
-> AI features are accessible only with the Premium Edition. They are provided as a free promotion through June 2026 and will be commercialized afterward as Premium AI features using AI Units.
+> AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion through June 2026 and will be commercialized later as AI features using AI Units. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620).
 
 You can activate the following features depending upon the capabilities you've activated in your SAP Integration Suite tenant. See [Activating and Managing Capabilities](../activating-and-managing-capabilities-2ffb343.md).
 
@@ -122,17 +122,6 @@ You can activate these features together. See
 -   [Generate Integrations with AI Assistance](creating-an-integration-flow-da53d93.md#loioda53d93cd8fb47ff9ea55b6b278cd85e__steps_sh3_tcl_jt)
 -   [Optimize Groovy Scripts with AI](optimize-groovy-scripts-with-ai-3b7a5a1.md) 
 
-> ### Remember:  
-> Currently, the feature is available only on few BTP regions. If your SAP Integration Suite tenant is hosted on one of these regions, you can use the feature:
-> 
-> -   Amazon Web Services – Japan \(Tokyo\)
-> 
-> -   Amazon Web Services – Europe \(Frankfurt\)
-> 
-> -   Amazon Web Services – Australia \(Sydney\)
-> 
-> -   Amazon Web Services – U.S. East \(VA\)
-
 
 
 </td>
@@ -215,6 +204,33 @@ Upon activation, identifies API traffic trends and provides predictions for upco
 <td valign="top">
 
 [APIPortal.Administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/roles-collections-in-api-management-draft?version=CLOUD)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Generation of OpenAPI Specification
+
+</td>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+Upon activation, you can leverage AI assistance to automatically generate an OpenAPI Specification while creating an API artifact.
+
+</td>
+<td valign="top">
+
+[Generate OpenAPI Specification with AI Assistance](generate-openapi-specification-with-ai-assistance-5ec68db.md) 
+
+</td>
+<td valign="top">
+
+[PI\_Administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/persona-2937e5ca6ef448cfb21451a2461cc2a6?locale=en-US)
 
 </td>
 </tr>

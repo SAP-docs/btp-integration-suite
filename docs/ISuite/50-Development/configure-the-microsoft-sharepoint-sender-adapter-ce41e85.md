@@ -332,7 +332,7 @@ Only if for *Post Processing* you select *Move File*.
 </td>
 <td valign="top">
 
-Specify the directory and a file name to use when moving the file into an archive directory after processing. The format must be in the following format: *<archive-directory/folder-name/filename\>*.
+Specify the archive directory path to be used while moving the file into this archive directory after processing. The format must be *<archive-directory/folder\_name\>*.
 
 </td>
 </tr>

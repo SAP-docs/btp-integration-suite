@@ -10,17 +10,17 @@ Create and maintain system-related configurations for your company or subsidiary
 
 ## Context
 
-*Systems* tab allows you to maintain the B2B standard details. You need this information to create agreements. Each agreement contains a specific B2B standard and conducts transactions based on the protocols provided by this B2B standard. In order to maintain the type systems in your agreement, you need to create and define them in the Company Profile/Subsidiary.
+*Systems* tab allows you to maintain the B2B standard details. You need this information to create agreements. Each agreement contains a specific B2B standard and conducts transactions based on the protocols provided by this B2B standard. To maintain the type systems in your agreement, you need to create and define them in the company profile or subsidiary.
 
-In this tab, you create a system and each system has a type system to define the B2B standard and communication information to define your communication and adapter details for the system. Follow the procedure to maintain your system details.
+In this tab, you create a system. Each system has a type system to define the B2B standard, and communication information to define your communication and adapter details for the system. Follow the procedure to maintain your system details.
 
 
 
 ## Procedure
 
-1.  In the *System* tab, choose *Create System* to add the following system details:
+1.  In your company profile, go to the *Systems* tab and choose *Create*.
 
-2.  Choose *Create System* to add the following system details:
+2.  In the upcoming dialog, add the following system details:
 
     **System**
 
@@ -61,7 +61,7 @@ In this tab, you create a system and each system has a type system to define the
     Enter an alias for the system.
 
     > ### Note:  
-    > An alias is a user provided, tenant-independent identifier for artifacts that can be used to maintain referential integrity in cross tenant use cases like transport. To know more, see [Understanding the Basic Concepts](../understanding-the-basic-concepts-74c068d.md).
+    > An alias is a user provided, tenant-independent identifier for artifacts that can be used to maintain referential integrity in cross-tenant use cases like transport. To know more, see [Understanding the Basic Concepts](../understanding-the-basic-concepts-74c068d.md).
 
 
     
@@ -91,7 +91,7 @@ In this tab, you create a system and each system has a type system to define the
     </td>
     <td valign="top">
     
-    Select the purpose of the type system from the drop-down list. You can choose *Dev*, *Test* or *Prod*. The value that you set here is picked up during the agreement activation to denote in the payload the purpose of the transaction.
+    Select the purpose of the type system from the drop-down list. You can choose *Dev*, *Test*, or *Prod*. The value that you set here is picked up during the agreement activation to denote in the payload the purpose of the transaction.
 
     See [Payload Indicator in Integration Flow Message Processing](payload-indicator-in-integration-flow-message-processing-7f322c0.md).
     
@@ -123,25 +123,27 @@ In this tab, you create a system and each system has a type system to define the
     </tr>
     </table>
     
-3.  Choose *Save*. The system gets created successfully.
+3.  Choose *Save* to create the system.
 
 4.  You also need to configure the type system and communication channel details for the newly created company profile and hence its *Status* is set to *Incomplete*.
 
     > ### Note:  
     > To know more about type systems, see [Terminology for SAP Integration Advisor](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/9c221b48799a4ce59367b0e3367f5a8f.html).
 
-5.  To do so, select the newly created system and under the *Type Systems* tab, choose *Create Type System*.
+    To do so, select the newly created system and under the *Type Systems* tab, choose *Create Type System*.
 
-6.  In the *Create Type System* dialog, select the *Name* and *Version* of the type system from the drop-down list.
+5.  In the *Assign Type System Version\(s\)* dialog, select the *Name* and *Version* of the type system from the drop-down list.
 
     > ### Note:  
-    > For **SOAP** and **IDOC** type systems, you can enter versions manually by selecting the checkbox *Input Version Manually* and maintaining the *Version* field.
+    > For **SOAP** and **IDoc** type systems, enter versions manually by selecting the checkbox *Input Version Manually* and maintaining the *Version* field.
+    > 
+    > For **cXML** type systems, the version you select must be the same as the value maintained for the `/cXML/@version` attribute in the incoming cXML payload. If the `/cXML/@version` attribute doesn’t exist, leave the version empty.
 
-7.  Choose *Save*. The type system is added successfully. Choose *Save* to update the system.
+6.  Choose *Save*. The type system is added. Choose *Save* to update the system.
 
-8.  Navigate to the *Communications* tab and choose *Create Communication*.
+7.  Navigate to the *Communications* tab and choose *Create Communication*.
 
-9.  Maintain the following fields:
+8.  Maintain the following fields:
 
     **Communication Details**
 
@@ -167,7 +169,7 @@ In this tab, you create a system and each system has a type system to define the
     </td>
     <td valign="top">
     
-    Enter a valid name for your communication
+    Enter a valid name for your communication.
     
     </td>
     </tr>
@@ -179,7 +181,7 @@ In this tab, you create a system and each system has a type system to define the
     </td>
     <td valign="top">
     
-    Enter an alias for the communication
+    Enter an alias for the communication.
     
     </td>
     </tr>
@@ -191,7 +193,7 @@ In this tab, you create a system and each system has a type system to define the
     </td>
     <td valign="top">
     
-    Provide a description
+    Provide a description.
     
     </td>
     </tr>
@@ -203,7 +205,7 @@ In this tab, you create a system and each system has a type system to define the
     </td>
     <td valign="top">
     
-    Choose whether the communication channel is a *Sender* or *Receiver*
+    Choose whether the communication channel is a *Sender* or *Receiver*.
     
     </td>
     </tr>
@@ -218,7 +220,7 @@ In this tab, you create a system and each system has a type system to define the
     Select an adapter from the drop-down list.
 
     > ### Note:  
-    > The supported adapters for *Sender* communication are:
+    > The following adapters are supported for *Sender* communication:
     > 
     > -   AS2
     > 
@@ -228,7 +230,7 @@ In this tab, you create a system and each system has a type system to define the
     > -   Process\_Direct
     > -   SFTP
     > 
-    > The supported adapters for *Receiver* communication are:
+    > The following adapters are supported adapters for *Receiver* communication:
     > 
     > -   AS2
     > 
@@ -263,7 +265,7 @@ In this tab, you create a system and each system has a type system to define the
     </tr>
     </table>
     
-10. The *Connection* tab appears when you choose *SOAP\_1.x* or *SAP RM* or *IDOC* as the receiver adapter. Maintain the following fields:
+9.  The *Connection* tab appears when you choose *SOAP\_1.x* or *SAP RM* or *IDOC* as the receiver adapter. Maintain the following fields:
 
     **Connection**
 
@@ -289,7 +291,7 @@ In this tab, you create a system and each system has a type system to define the
     </td>
     <td valign="top">
     
-    Endpoint address at which Cloud Integration posts the outgoing message.
+    Enter the endpoint address at which Cloud Integration posts the outgoing message.
     
     </td>
     </tr>
@@ -365,7 +367,7 @@ In this tab, you create a system and each system has a type system to define the
     </tr>
     </table>
     
-11. The following tabs appear when you choose AS2 as the receiver adapter. Maintain the following fields:
+10. The following tabs appear when you choose AS2 as the receiver adapter. Maintain the following fields:
 
     **Connection**
 
@@ -765,9 +767,9 @@ In this tab, you create a system and each system has a type system to define the
     </tr>
     </table>
     
-12. If you chose **Process Direct** as the receiver adapter, the *Connection* tab appears. Maintain the address for the adapter in the *Address* field.
+11. If you chose **Process Direct** as the receiver adapter, the *Connection* tab appears. Maintain the address for the adapter in the *Address* field.
 
-13. If you select AS2 as the *Sender* adapter, two new fields appear:
+12. If you select AS2 as the *Sender* adapter, two new fields appear:
 
     -   *Security Configuration Mode*: The value is set as *Channel* by default and cannot be edited.
 
@@ -973,7 +975,7 @@ In this tab, you create a system and each system has a type system to define the
     </tr>
     </table>
     
-14. The following tabs appear if you choose the SFTP sender adapter. Maintain the following fields:
+13. The following tabs appear if you choose the SFTP sender adapter. Maintain the following fields:
 
     ****
 
@@ -1191,13 +1193,13 @@ In this tab, you create a system and each system has a type system to define the
     </td>
     <td valign="top">
     
-    If selected, the file exists check is performed on the SFTP server. If your server doesn't support this operation, switch back to client side check.
+    If selected, the file exists check is performed on the SFTP server. If your server doesn't support this operation, switch back to client-side check.
     
     </td>
     </tr>
     </table>
     
-15. The following tabs appear if you choose **SFTP receiver adapter**. Maintain the following fields:
+14. The following tabs appear if you choose **SFTP receiver adapter**. Maintain the following fields:
 
     ****
 
@@ -1441,12 +1443,12 @@ In this tab, you create a system and each system has a type system to define the
     </td>
     <td valign="top">
     
-    If a file already exists in the target, allows to:
+    If a file already exists in the target, it allows to:
 
     -   **Override**: Replace the existing file content with the new one.
     -   **Append**: Add the new file content to the end of the existing one.
     -   **Fail**: Do not perform any action and raise a failure.
-    -   **Ignore**: Do not perform any action
+    -   **Ignore**: Do not perform any action.
 
 
     
@@ -1460,19 +1462,23 @@ In this tab, you create a system and each system has a type system to define the
     </td>
     <td valign="top">
     
-    If selected, the file exists check is performed on the SFTP server. If your server doesn't support this operation, switch back to client side check.
+    If selected, the file exists check is performed on the SFTP server. If your server doesn't support this operation, switch back to client-side check.
     
     </td>
     </tr>
     </table>
     
-16. Choose *Save*.
+15. Choose *Save*.
 
     > ### Note:  
-    > You need to maintain both *Sender* and *Receiver* communication channel details to complete the system set-up.
+    > To complete the system setup, you need to maintain both *Sender* and *Receiver* communication channel details.
     > 
-    > After maintaining the necessary details, the *Status* of the System is set to *Completed*.
+    > After you maintained the necessary details, the *Status* of the system is set to *Completed*.
 
-17. You need to maintain the Certificates for your profile. Navigate to the *Certificates* tab and follow the procedure mentioned here: [Certificates](certificates-b64fcf2.md) 
 
+
+
+## Next Steps
+
+Next, you need to maintain the certificates for your profile. Navigate to the *Certificates* tab and follow the procedure mentioned in [Certificates](certificates-b64fcf2.md).
 

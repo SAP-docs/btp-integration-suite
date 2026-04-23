@@ -433,7 +433,7 @@ Select to specify behaviour in case the file to be created is empty.
 
 *Read Lock Strategy*
 
-\(Only available if parameter *Existing File Handling* has option *Override* selected\).
+\(Only available if parameter *Existing File Handling* is set to *Override*, *Fail*, *Ignore*\).
 
 </td>
 <td valign="top">
@@ -456,7 +456,7 @@ Default:*None*
 
 *Temporary File Name*
 
-\(Only available if parameter *ReadLock Strategy* has option *Rename* selected\).
+\(Only available if parameter *Read Lock Strategy* is set to *Rename*\).
 
 </td>
 <td valign="top">
@@ -470,6 +470,9 @@ Select the unique temporary filename pattern.
 
 -   *target\_$\{exchangeId\}.temp*
 
+
+> ### Note:  
+> This is a mandatory and editable field.
 
 
 

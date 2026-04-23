@@ -51,7 +51,7 @@ Authorize Cloud Integration to call receiver.
 At runtime, the identity of the Cloud Integration tenant is checked by the receiver by evaluating the client certificate chain of the tenant.
 
 > ### Note:  
-> In many cases, there is a multilevel setup of CAs so that a certificate is signed by an intermediate CA. The trustability of the intermediate CA is guaranteed by another intermediate CA one level higher, and so on, up to the root CA at the top of the **certificate chain**. In this case, it is necessary to assign the certificate chain to the certificate, to enable the connected component \(which has imported only the root CA into its keystore\) to evaluate the chain of trust.
+> In many cases, there is a multilevel setup of Certification Authorities \(CAs\) so that a certificate is signed by an intermediate CA. The trustability of the intermediate CA is guaranteed by another intermediate CA one level higher, and so on, up to the root CA at the top of the **certificate chain**. In this case, it is necessary to assign the certificate chain to the certificate, to enable the connected component \(which has imported only the root CA into its keystore\) to evaluate the chain of trust.
 
 > ### Note:  
 > Outbound client certificate authentication uses a certificate chain based on **SAP Cloud Root CA** to**SAP Cloud Platform Client CA**. Receiver systems that validate the certificate chain must ensure that the **SAP Cloud Root CA** is trusted otherwise outbound connectivity may fail after certificate renewal.

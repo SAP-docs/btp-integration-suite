@@ -464,6 +464,9 @@ When enabled, the consumer is bound to only one of the available worker nodes. I
     > ### Note:  
     > For AEM broker version 10.12.0 and above, exclusive durable topic endpoints support multiple consumer bindings in a fault-tolerant setup. The first consumer receives all messages, and additional consumers take over automatically if the primary consumer becomes unavailable.
 
+    > ### Remember:  
+    > When this feature is enabled, it leaves only a single node available at any time, creating a risk of downtime. Integration flows may experience approximately 10-15 minutes of consumer downtime during platform updates or recovery events, as the consumer needs to reconnect and resume processing on another worker node. This feature is therefore not recommended for scenarios that require high availability or cannot tolerate interruptions in message consumption. Evaluate whether the potential downtime is acceptable for your use case before enabling this feature. For more information, refer to [SAP Note 3603502](https://me.sap.com/notes/3603502).
+
 
 
 

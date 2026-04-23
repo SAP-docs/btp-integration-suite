@@ -93,7 +93,7 @@ How to use SAP API Management
                         -   [Designing OAuth v2.0 Policies](API-Management/designing-oauth-v2-0-policies-68f0246.md)
                         -   [OAuth 2.0 Grant Types](API-Management/oauth-2-0-grant-types-308a18a.md)
                         -   [Third-Party OAuth Token Usage](API-Management/third-party-oauth-token-usage-cccc881.md)
-                        -   [Non-RFC\_compliant Behaviour](API-Management/non-rfc-compliant-behaviour-7a98cc9.md)
+                        -   [Non-RFC-compliant Behaviour](API-Management/non-rfc-compliant-behaviour-7a98cc9.md)
                     -   [OAuth v2.0 GET](API-Management/oauth-v2-0-get-2e507ea.md)
                     -   [OAuth v2.0 SET](API-Management/oauth-v2-0-set-161c1e3.md)
                     -   [Python Script](API-Management/python-script-8703aa8.md)

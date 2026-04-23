@@ -4,9 +4,9 @@
 
 # MIGs and MAGs
 
-You can maintain a template for documentation export which is later picked by the system whenever you export a Message Implementation Guideline \(MIG\) or a Mapping Guideline \(MAG\).
+You can maintain a template for documentation export which is later picked by the system whenever you export a message implementation guideline \(MIG\) or a mapping guideline \(MAG\).
 
-The administrative settings allow you to opt-in/opt out of the Proposal service.
+The administrative settings allow you to opt-in/opt out of the proposal service.
 
 
 
@@ -14,9 +14,9 @@ The administrative settings allow you to opt-in/opt out of the Proposal service.
 
 ## Documentation Export
 
-1.  Navigate to the *Settings* \> *MIGs and MAGs*.
+1.  Navigate to *Settings* \> *MIGs and MAGs*.
 
-2.  Choose *Edit* to edit your document template. There are 3 sections to be filled
+2.  Choose *Edit* to edit your document template. Fill out the sections as follows:
 
     **Front Cover Page**
 
@@ -42,7 +42,7 @@ The administrative settings allow you to opt-in/opt out of the Proposal service.
     </td>
     <td valign="top">
     
-    Enter a title that you want to see in your MIG document
+    Enter a title that you want to see in your MIG document.
     
     </td>
     </tr>
@@ -54,7 +54,7 @@ The administrative settings allow you to opt-in/opt out of the Proposal service.
     </td>
     <td valign="top">
     
-    Enter a title that you want to see in your MAG document
+    Enter a title that you want to see in your MAG document.
     
     </td>
     </tr>
@@ -66,7 +66,7 @@ The administrative settings allow you to opt-in/opt out of the Proposal service.
     </td>
     <td valign="top">
     
-    Provide a description for the front cover
+    Provide a description for the front cover.
     
     </td>
     </tr>
@@ -78,7 +78,7 @@ The administrative settings allow you to opt-in/opt out of the Proposal service.
     </td>
     <td valign="top">
     
-    Provide a description for the front cover
+    Provide a description for the front cover.
     
     </td>
     </tr>
@@ -90,7 +90,7 @@ The administrative settings allow you to opt-in/opt out of the Proposal service.
     </td>
     <td valign="top">
     
-    Browse <span class="SAP-icons-V5"></span> and add a splash image for the front cover.
+    Use <span class="SAP-icons-V5"></span> Browse or drop a file to add a splash image for the front cover.
     
     </td>
     </tr>
@@ -102,7 +102,7 @@ The administrative settings allow you to opt-in/opt out of the Proposal service.
     </td>
     <td valign="top">
     
-    Browse <span class="SAP-icons-V5"></span> and add a logo image for the front cover.
+    Use <span class="SAP-icons-V5"></span> Browse or drop a file to add a logo image for the front cover.
     
     </td>
     </tr>
@@ -138,7 +138,7 @@ The administrative settings allow you to opt-in/opt out of the Proposal service.
     </tr>
     </table>
     
-    Select the checkbox for *Show Administrative Data* if you want the administrative data of MIGs and MAGs to be displayed in the documentation.
+    If you want the administrative data of MIGs and MAGs to be displayed in the documentation, select the checkbox *Show Administrative Data*.
 
     **Back Cover Page**
 
@@ -164,7 +164,7 @@ The administrative settings allow you to opt-in/opt out of the Proposal service.
     </td>
     <td valign="top">
     
-    Provide your contact details
+    Provide your contact details.
     
     </td>
     </tr>
@@ -176,7 +176,7 @@ The administrative settings allow you to opt-in/opt out of the Proposal service.
     </td>
     <td valign="top">
     
-    You can add a copyright link to the back cover of your document
+    You can add a copyright link to the back cover of your document.
     
     </td>
     </tr>
@@ -202,14 +202,13 @@ The administrative settings allow you to opt-in/opt out of the Proposal service.
 
 ## Administrative Settings
 
-> ### Note:  
-> AI features are accessible only with the premium edition. They're provided as a free promotion through June 2026, after which they're commercialized as premium AI features using AI units.
+Change your administrative settings as follows:
 
 1.  Navigate to the *Administrative Settings* tab.
 
 2.  Choose *Edit* and enable or disable the *Enable Proposal Service* toggle button.
 
-    Users who wish to revoke consent for data collection related to proposal services may select this option to discontinue data sharing.
+    If you want to revoke consent for data collection related to proposal services, select this option to discontinue data sharing.
 
     > ### Remember:  
     > **Disabling** the proposal service has the following consequences:

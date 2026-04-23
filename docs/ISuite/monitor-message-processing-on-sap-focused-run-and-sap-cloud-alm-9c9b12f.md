@@ -75,9 +75,11 @@ Edge Lifecycle Management collects data and transfers it to the SAP Focused Run/
 
 6.  The jobs run in the background and send MPL data to the SAP Focused Run or SAP Cloud ALM services. You can check the status of the jobs in *Job Management* in the Operations cockpit. See: [Job Management](job-management-4146fa5.md).
 
-7.  When the job completes, go to the respective *SAP Focused Run* or *SAP Cloud ALM* systems, and open the *Integration and Exception Monitoring* application.
+7.  When the job completes, the registration process finishes. The service registers as **SAP Edge Integration Cell** in the **Landscape Management** of **SAP Focused Run** or **SAP Cloud ALM**.
 
-8.  In the scope selection, add Edge Integration Cell as the *Cloud Service Type*, and find your edge node in the services list.
+8.  Go to the respective *SAP Focused Run* or *SAP Cloud ALM* systems, and open the *Integration and Exception Monitoring* application.
+
+9.  In the scope selection, add SAP Edge Integration Cell as the *Cloud Service Type*, and find your edge node in the services list.
 
 
 

@@ -28,7 +28,7 @@ Supported Objects
 </td>
 <td valign="top">
 
-HTTP, REST, SOAP, IDOC, Java Web Service, FTP, SFTP, XI, RFC, JDBC, Mail, OData Sender, OData V2 Receiver, AS2 adapters
+HTTP, REST, SOAP, IDOC, Java Web Service, FTP, SFTP, SFSF, XI, RFC, JDBC, Mail, OData Sender, OData V2 Receiver, AS2 adapters
 
 </td>
 </tr>

@@ -117,7 +117,6 @@ Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B tra
     > 
     > -   Trading Partner Management only supports the following type systems:
     >     -   Edifact
-    > 
     >     -   GS1 EANCOM
     >     -   Odette EDIFACT
     >     -   VDA EDIFACT
@@ -128,9 +127,18 @@ Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B tra
     >     -   GS1 XML
     >     -   Tradacoms
     > 
-    >         Tradacoms is supported only in the 2.0 version of the integration package *Cloud Integration - Trading Partner Management V2*
+    >         Tradacoms is supported only in the 2.0 version of the integration package *Cloud Integration - Trading Partner Management V2*.
+    > 
+    >     -   cXML
+    > 
+    >         Note that cXML only supports message implementation guidelines with envelopes, and no assembly is applied to cXML outbound payloads. In mapping guidelines, you can consume the Trading Partner Management runtime properties in the mapping logic using global parameters in the mapping guidelines of Integration Advisor. The following properties are used frequently:
+    > 
+    >         -   `SAP_EDI_REC_Sender_ID` can be used for `/cXML/Header[1]/From[1]/Credential[1]/Identity[1]`.
+    >         -   `SAP_EDI_REC_Receiver_ID` can be used for `/cXML/Header[1]/To[1]/Credential[1]/Identity[1]`.
+    >         -   `SAP_EDI_REC_Interchange_Control_Number` can be used for `/cXML/@payloadID`.
+    >         -   `SAP_EDI_REC_Usage_Indicator` can be used for `/cXML/Request[1]/@deploymentMode`.
 
-13. For Type Systems *ASC X12*, *UN/EDIFACT*, *GS1 EANCOM*, *Odette EDIFACT*, and *VDA EDIFACT*, you can edit their version numbers in the *Type System Version* field.
+13. For type systems *ASC X12*, *UN/EDIFACT*, *GS1 EANCOM*, *Odette EDIFACT*, and *VDA EDIFACT*, you can edit their version numbers in the *Type System Version* field.
 
 14. For the type systems *UN/EDIFACT*, *GS1 EANCOM*, *Odette EDIFACT*, *VDA EDIFACT*, and *ASC X12*, you can select a value for *Send Test Interchange to Target System*:
 
@@ -178,12 +186,12 @@ Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B tra
     
     *Interchange Number*
 
-    \(only configurable if you select *Create Functional Acknowledgement*, either with the option *Check EDI Envelop* or *Required*\)
+    \(only configurable if you select *Create Functional Acknowledgment*, either with the option *Check EDI Envelop* or *Required*\)
     
     </td>
     <td valign="top">
     
-    Trading Partner Management adds the interchange number in the functional acknowledgement of an EDI message. Select one of the following options:
+    Trading Partner Management adds the interchange number in the functional acknowledgment of an EDI message. Select one of the following options:
 
     -   *Use from EDI Message*: Reads the interchange number from the EDI message
 

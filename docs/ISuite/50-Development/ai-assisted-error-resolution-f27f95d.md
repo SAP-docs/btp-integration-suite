@@ -9,9 +9,9 @@ Use artificial intelligence to analyze and resolve message processing errors eff
 ## Prerequisites
 
 > ### Note:  
-> AI features are available only with the Premium Edition. They are offered as a free promotion through June 2026. Afterward, they will be commercialized as Premium AI features that use AI Units.
+> AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion through June 2026 and will be commercialized later as AI features using AI Units. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620).
 
--   Enable the *Analyze* feature in your SAP Integration Suite tenant. For more information, see [Artificial Intelligence](https://help.sap.com/docs/integration-suite/sap-integration-suite/artificial-intelligence?locale=en-US&state=DRAFT&version=DEV).
+-   Enable the *AI-assisted Error Resolution* feature in your SAP Integration Suite tenant. For more information, see [Artificial Intelligence](https://help.sap.com/docs/integration-suite/sap-integration-suite/artificial-intelligence?locale=en-US&state=DRAFT&version=DEV).
 -   Ensure that you have the role PI\_Integration\_Developer or PI\_Administrator assigned.
 
 
@@ -36,7 +36,7 @@ To access the message monitor, select a tile in the *Monitor Message Processing*
     ![Monitor Message Processing UI showing failed message processing status and the Analyze button.](images/Analyze_button_2_7d6d96f.png)
 
     > ### Note:  
-    > AI analysis may not run if the usage quota is reached. A limited number of tokens is available each month, and every AI analysis request uses tokens. The quota resets monthly.
+    > AI analysis may not run if users reach the usage quota. A fair usage limit is available each month. Every AI analysis request uses quota, and this quota resets monthly.
 
 3.  The AI agent analyzes the error and displays the following results:
 
@@ -116,12 +116,12 @@ During dependency checking, the system found related artifacts \(e.g. correlated
 <tr>
 <td valign="top">
 
-AI analysis is temporarily unavailable because you reached the monthly token limit. Try again after the limit resets.
+AI analysis is temporarily unavailable because you reached the monthly usage limit. Try again after the limit resets.
 
 </td>
 <td valign="top">
 
-AI analysis can't run because you reached the token usage quota. Try again after the quota resets.
+AI analysis can't run because you reached the fair usage limit. Try again after the quota resets.
 
 > ### Note:  
 > The quota resets each month.

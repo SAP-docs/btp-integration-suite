@@ -79,6 +79,125 @@ Patches for different components are associated with different major software ve
 
 
 
+## April 2026
+
+Software Increment: 2602
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.77.38
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Removes unnecessary explicit transactions \(BEGIN/COMMIT\) for read-only \(SELECT\) queries in the StatementExecutor, preventing database connection retention and avoiding connection pool exhaustion under load.
+-   Prevents out-of-memory conditions that caused the IT-TPM application to crash intermittently, improving overall application stability.
+-   Adds additional logging and retry mechanisms in the JDBC Adapter to address intermittent service reference null issues and improve stability.
+-   Fixes an issue where re-adding alternative partner agencies after recreating a Partner Directory \(PID\) entry could result in duplicate entry errors. All agencies can now be added successfully without errors in EIC.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.41.15
+
+</td>
+<td valign="top">
+
+This patch adds additional logging and retry mechanisms in the JDBC Adapter to address intermittent service reference null issues and improve stability.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.77.32
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Configures the thread pool size of the RFM poller to enhance resiliency by increasing the pool size from 5 to 10, reducing the risk of thread unavailability for RFM poller tasks.
+-   Fixes an issue where CMS encryption and signing were always disabled on the OFTP Receiver channel.
+-   Resolves a metering processing failure caused by missing mandatory MPL IDs after enabling the new metering database structure, especially when the log level was set to None. This ensures proper handling of records in the metering database.
+-   Removes an additional logger that was unnecessarily logging database details, improving logging efficiency.
+-   Fixes failures in Script Optimization requests observed in Canary due to rejection by the Azure content filter.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.41.14
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Configures the thread pool size of the RFM poller to enhance resiliency by increasing the pool size from 5 to 10, reducing the risk of thread unavailability for RFM poller tasks.
+-   Fixes an issue where CMS encryption and signing were always disabled on the OFTP Receiver channel.
+-   Removes an additional logger that was unnecessarily logging database details, improving logging efficiency.
+-   Fixes failures in Script Optimization requests observed in Canary due to rejection by the Azure content filter.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 ## March 2026
 
 Software Increment: 2601

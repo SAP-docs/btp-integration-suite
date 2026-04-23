@@ -68,7 +68,7 @@ In the API portal, at the top-right corner, choose *Navigation Links* \(![](imag
 
 For more information, see [SAP API Management Client SDK 2.0.1](https://help.sap.com/doc/sap-api-management-client-sdk/Cloud/en-US/Client%20SDK_2.0.1.pdf).
 
-You can also download the package from [https://int.repositories.cloud.sap/artifactory/deploy-releases/com/sap/apimgmt/client/sdk/apim-client-sdk/2.0.1/apim-client-sdk-2.0.1.zip](https://int.repositories.cloud.sap/artifactory/deploy-releases/com/sap/apimgmt/client/sdk/apim-client-sdk/2.0.1/apim-client-sdk-2.0.1.zip). On navigating to this link, select the latest version and choose *View All*.
+You can also download the package from [here](https://repo1.maven.org/maven2/com/sap/apimgmt/client/sdk/apim-client-sdk/2.0.1/apim-client-sdk-2.0.1.zip) . On navigating to this link, select the latest version and choose *View All*.
 
 > ### Note:  
 > We will always offer support for the latest version of the SDK.

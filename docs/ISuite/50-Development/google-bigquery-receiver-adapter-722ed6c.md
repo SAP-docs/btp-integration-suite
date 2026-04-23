@@ -288,7 +288,7 @@ Specify the comma-separated sequence of service accounts in a delegation chain.
 <tr>
 <td valign="top">
 
-*Proxy*
+*Proxy Type*
 
 </td>
 <td valign="top">

@@ -112,7 +112,7 @@ BC-CP-IS-EDG-ELA
 
 -   Issues with worker nodes.
 
--   Issues with content deployment \(integration flow deployment\).
+-   Issues with content deployment \(integration flow and API artifact deployment\).
 
 
 
