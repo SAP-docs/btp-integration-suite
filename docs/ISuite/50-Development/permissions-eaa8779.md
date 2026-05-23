@@ -8,7 +8,7 @@
 
 ## Permissions
 
-The the role template `AuthGroup_TenantPartnerDirectoryConfigurator` grants permissions to access \(read and write\) the Partner Directory.
+The role template `AuthGroup_TenantPartnerDirectoryConfigurator` grants permissions to access \(read and write\) the Partner Directory.
 
 More information:
 
